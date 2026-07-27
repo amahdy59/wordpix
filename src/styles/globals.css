@@ -1,0 +1,120 @@
+/* ─── WordPix Typography Utilities ──────────────────────────────────────────
+   Named type styles matching the Untitled UI v8 / WordPix token sheet.
+   ONLY Inter and Noto Sans Arabic are used — set via --wp-font-base / --wp-font-arabic.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+@layer utilities {
+  /* Raw size helpers */
+  .wp-text-xs  { font-size: var(--wp-text-xs);  line-height: 1.5; } /* 12px */
+  .wp-text-sm  { font-size: var(--wp-text-sm);  line-height: 1.5; } /* 14px */
+  .wp-text-md  { font-size: var(--wp-text-md);  line-height: 1.5; } /* 16px */
+  .wp-text-lg  { font-size: var(--wp-text-lg);  line-height: 1.4; } /* 18px */
+  .wp-text-xl  { font-size: var(--wp-text-xl);  line-height: 1.4; } /* 20px */
+  .wp-text-2xl { font-size: var(--wp-text-2xl); line-height: 1.3; } /* 24px */
+  .wp-text-3xl { font-size: var(--wp-text-3xl); line-height: 1.3; } /* 28px */
+  .wp-text-4xl { font-size: var(--wp-text-4xl); line-height: 1.2; } /* 32px */
+  .wp-text-5xl { font-size: var(--wp-text-5xl); line-height: 1.1; } /* 40px */
+
+  /* Named type styles from the design system token sheet */
+
+  /* text-xl/bold (20px) — Page titles, section headers */
+  .wp-type-page-title {
+    font-family: var(--wp-font-base);
+    font-size: var(--wp-text-xl);
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--wp-text);
+  }
+
+  /* text-lg/semibold (18px) — Card titles, subheaders */
+  .wp-type-card-title {
+    font-family: var(--wp-font-base);
+    font-size: var(--wp-text-lg);
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--wp-text);
+  }
+
+  /* text-md/semibold (16px) — Button text, emphasized body */
+  .wp-type-body-emphasis {
+    font-family: var(--wp-font-base);
+    font-size: var(--wp-text-md);
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--wp-text);
+  }
+
+  /* text-sm/medium (14px) — Body text, descriptions */
+  .wp-type-body {
+    font-family: var(--wp-font-base);
+    font-size: var(--wp-text-sm);
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--wp-text);
+  }
+
+  /* text-xs/medium (12px) — Captions, hints, metadata */
+  .wp-type-caption {
+    font-family: var(--wp-font-base);
+    font-size: var(--wp-text-xs);
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--wp-text-secondary);
+  }
+
+  /* Arabic body — Noto Sans Arabic, rose color */
+  .wp-type-arabic {
+    font-family: var(--wp-font-arabic);
+    font-size: var(--wp-text-sm);
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--wp-brand);
+    direction: rtl;
+  }
+
+  /* Display — large bold inter for splash/celebration */
+  .wp-type-display {
+    font-family: var(--wp-font-base);
+    font-size: var(--wp-text-5xl);
+    font-weight: 900;
+    line-height: 1.1;
+    color: var(--wp-brand);
+  }
+
+  /* ─── Surface utilities ─────────────────────────────────────────────────── */
+
+  /* Default card surface */
+  .wp-card {
+    background: var(--wp-card);
+    border: 1px solid var(--wp-border);
+    border-radius: var(--wp-radius-lg);
+    box-shadow: var(--wp-shadow-xs);
+  }
+
+  /* Selected / active card */
+  .wp-card-selected {
+    background: var(--wp-brand-light);
+    border: 2px solid var(--wp-brand);
+    border-radius: var(--wp-radius-lg);
+  }
+
+  /* ─── Interaction utilities ─────────────────────────────────────────────── */
+
+  /* Accessible focus ring — WCAG 2.4.13 AAA
+     3px outline + 2px offset; brand color gives 3.6:1 contrast on white.
+     Satisfies minimum area requirement (perimeter × 2px) for AAA. */
+  .wp-focus {
+    @apply focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary;
+  }
+
+  /* Minimum 44px touch target (WCAG 2.5.5) */
+  .wp-touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* ─── Shadow utilities ──────────────────────────────────────────────────── */
+  .shadow-wp-xs { box-shadow: var(--wp-shadow-xs); }
+  .shadow-wp-sm { box-shadow: var(--wp-shadow-sm); }
+  .shadow-wp-md { box-shadow: var(--wp-shadow-md); }
+}

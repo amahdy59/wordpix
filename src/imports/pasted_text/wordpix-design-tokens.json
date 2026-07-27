@@ -1,0 +1,895 @@
+WordPix Design Tokens
+Untitled UI v8 PRO VARIABLES + WordPix Brand Collection
+Last updated: July 2026  •  163 vocabulary pages  •  15 app screens  •  14 components
+WordPix Brand Colors
+Local variable collection with Light and Dark modes. Overrides Untitled UI defaults for brand-specific theming.
+brand/primary
+brand/primary-dark
+brand/primary-light
+brand/accent
+surface/page
+#CC6363 / #D95959
+#B34D4D / #BF4747
+#F2E0E0 / #331F1F
+#40A673 / #4DB880
+#F7F7F7 / #1A1A1F
+Headers, CTA buttons
+Pressed states
+Tinted backgrounds
+Success, correct answers
+Page backgrounds
+surface/card
+text/primary
+text/secondary
+border/card
+text/on-brand
+#FFFFFF / #29292E
+#262633 / #F2F2F7
+#6B737D / #A6ABB3
+#E6E6E6 / #404047
+#FFFFFF / #FFFFFF
+Card backgrounds
+Headings, body text
+Captions, metadata
+Card borders
+Text on brand fills
+Untitled UI v8 — Library Tokens
+External library providing Colors, Radius, Spacing, Typography, Widths, and Container tokens.
+Category
+Token Name
+Usage
+Colors
+bg-primary (White)
+Card backgrounds, content surfaces
+Colors
+bg-secondary (Gray 50)
+Page backgrounds, section fills
+Colors
+text-primary (Gray 900)
+Headings, body text, labels
+Colors
+text-tertiary (Gray 500)
+Captions, metadata, placeholders
+Colors
+fg-white
+Text on dark/brand backgrounds
+Colors
+border-secondary
+Card borders, dividers
+Radius
+radius-lg (12px)
+Cards, containers, modals
+Radius
+radius-xl (16px)
+Image thumbnails, hero sections
+Radius
+radius-md (8px)
+Buttons, inputs, small cards
+Radius
+radius-sm (4px)
+Tags, badges, micro-elements
+Spacing
+spacing-xs (4px)
+Tight padding, icon gaps
+Spacing
+spacing-sm (6px)
+Label padding, small gaps
+Spacing
+spacing-md (8px)
+Card internal padding, item gaps
+Spacing
+spacing-lg (12px)
+Grid gaps, section padding
+Spacing
+spacing-xl (16px)
+Topic section padding
+Spacing
+spacing-2xl (20px)
+Header padding, page margins
+Shadows
+shadow-xs
+Vocab cards, subtle elevation
+Shadows
+shadow-sm
+Hover cards, dropdowns
+Shadows
+shadow-md
+Modals, floating panels
+Typography
+text-xl/bold (20px)
+Page titles, section headers
+Typography
+text-lg/semibold (18px)
+Card titles, subheaders
+Typography
+text-md/semibold (16px)
+Button text, emphasized body
+Typography
+text-sm/medium (14px)
+Body text, descriptions
+Typography
+text-xs/medium (12px)
+Captions, hints, metadata
+Coverage Summary
+Upgrade statistics across the entire WordPix project.
+8,452
+10,764
+183
+163
+14
+15
+Vocab Cards
+Text Nodes
+Headers
+Pages
+Components
+App Screens
+DS variable bindings
+Styled with typography tokens
+Brand-colored headers
+Vocabulary pages processed
+DS-upgraded components
+UI screens upgraded
+---
+
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+Vocabulary Card Components
+The atomic building blocks of the learning experience — every card type, state, and variant documented for development handoff.
+COMPONENT LIBRARY
+Word Card — Primary Learning Element
+The Word Card is the most frequently used component in the app. It appears in lessons, reviews, quizzes, and the vocabulary browser. It must handle 7 distinct states and adapt to different exercise contexts.
+STATES
+Word Card States
+Locked
+New
+Learning
+Practicing
+Gray background, lock icon, no text content visible. Opacity 0.5. Not interactive. Communicates "not yet available."
+Blue border (2px, brand primary), "NEW" badge top-right, full image + word + translation. Subtle pulse animation on first appearance.
+Standard card — image, English word, native translation, audio icon. White background, 14px corner radius, subtle shadow.
+Reduced support — image smaller or hidden, translation shown only on tap. Tests active recall over passive recognition.
+Reviewing
+Mastered
+Struggling
+Minimal card — word only, no image unless requested. Clean typography-focused design. For spaced repetition sessions.
+Compact card with green checkmark badge. Reduced visual weight. Appears in vocabulary browser and occasional review.
+Amber border, support icon, extra visual aids enabled. More frequent appearance in sessions. Gentle "practice more" indicator.
+PROPERTIES
+Component Properties
+Word Card Properties:
+
+  state:        locked | new | learning | practicing | reviewing | mastered | struggling
+  word:         string (English)
+  translation:  string (native language)
+  image:        ImageHash | null
+  audio:        AudioRef
+  phonetic:     string (IPA notation)
+  confidence:   0-100 (drives state transitions)
+  lastSeen:     timestamp
+  context:      lesson | review | quiz | browser
+  showImage:    boolean (overridable per exercise)
+  showTranslation: boolean (overridable per exercise)
+  isFlipped:    boolean (for flashcard mode)
+  world:        string (thematic world the word belongs to)
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+Exercise-Specific Card Variants
+Specialized card layouts for each exercise type in the learning session.
+EXERCISE CARDS
+Card Variants by Exercise Type
+Multiple Choice Card
+Image Match Card
+Fill-in-the-Blank Card
+Listening Card
+Shows 4 options in a 2×2 grid. Each option is a mini word card (image + text). Selected state: blue border + scale 1.02. Correct: green flash. Incorrect: red shake + reveal correct.
+Large image (60% of card height) with 3-4 word options below. Tap word to match with image. Drag-and-drop on tablet. Large touch targets (min 48pt).
+Sentence with underlined gap. Word bank below with draggable chips. Auto-scrolling if sentence is long. Hint button reveals first letter after 10s.
+Large speaker icon with waveform visualization. Play/pause/replay controls. Answer input below — either multiple choice or text input depending on level.
+Speaking Card
+Sentence Builder Card
+Conversation Card
+Story Card
+Target word/sentence displayed prominently. Microphone button with recording state. Real-time waveform. Playback comparison. Accuracy score with phoneme breakdown.
+Scrambled word chips that can be dragged into order. Snap-to-position guides. Grammar hints on long press. Supports partial scoring.
+Chat bubble layout. AI message on left, user response area on right. Typing indicator, smart suggestions, inline corrections. Context-aware responses.
+Illustrated narrative panel (top 40%) with text overlay. Interactive hotspots on illustration. Choice buttons for branching narrative. Vocabulary highlight on new words.
+SIZING
+Responsive Card Dimensions
+Card Size Specifications:
+
+  Mobile (390px viewport):
+    Full card:     342 × auto (24px margin each side)
+    Mini card:     161 × 120 (in 2×2 grid, 20px gap)
+    Word chip:     auto × 40 (padding 12px horizontal)
+    Image area:    342 × 200 (FILL mode, corner radius 10)
+
+  Tablet (768px viewport):
+    Full card:     680 × auto (44px margin each side)
+    Mini card:     320 × 160 (in 2×2 grid, 24px gap)
+    Word chip:     auto × 44 (padding 16px horizontal)
+    Image area:    680 × 280 (FILL mode, corner radius 12)
+
+  Corner radius: 14px (all cards)
+  Shadow: 0 2px 12px rgba(0,0,0,0.06)
+  Border (selected): 2px solid #356CF6
+  Border (correct):  2px solid #22C55E
+  Border (incorrect): 2px solid #EF4444
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+Feedback & Progress UI
+The celebration, correction, and progress components that make learning feel rewarding and transparent.
+FEEDBACK COMPONENTS
+Answer Feedback Variants
+Correct Answer Toast
+Incorrect Answer Toast
+Streak Counter
+XP Indicator
+Green bar slides up from bottom. Checkmark icon + varied praise text. Auto-dismisses after 1.5s. Contains "Continue" button. Shows earned XP.
+Amber bar slides up. Shows correct answer prominently. Brief explanation of why. "Got it" button to proceed. No punitive language.
+Flame icon with counter. Scales up on increment (spring animation). Milestone celebrations at 3, 5, 7, 10. Persistent in session header.
+Floating "+10 XP" that rises and fades. Different colors for different sources. Accumulates visually in session progress bar.
+PROGRESS COMPONENTS
+Progress Visualization Elements
+Session Progress Bar
+Skill Radar Chart
+World Map Progress
+Daily Goal Ring
+Top of screen during lessons. Segmented (one per exercise). Fills left-to-right. Green for correct, amber for incorrect. Shows fraction complete.
+8-axis radar showing competency levels. Animated transitions when skills improve. Tappable axes for drill-down. Used in profile & progress views.
+Visual world map with unlocked/locked/current indicators. Path connects worlds showing progression. Stars for completion level (1-3 per world).
+Circular progress indicator for daily XP target. Color shifts from gray → blue → green as target approached. Celebration animation at 100%.
+
+--
+
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+Complete Component Inventory
+Every component in the Context design system — categorized by function, with variant counts, properties, and usage context.
+INVENTORY
+Component Census
+A systematic catalog of all components needed to build the complete product. Organized by functional category with estimated variant complexity.
+NAVIGATION
+Navigation Components
+Tab Bar
+Top App Bar
+Session Header
+5 tabs: Home, Learn, Practice, Explore, Profile
+States: active, inactive, notification badge
+Variants: 5 | Props: activeTab, badges[]
+Usage: persistent bottom nav on all main screens
+Title, back button, action icons
+States: default, scrolled (elevated), transparent
+Variants: 8 | Props: title, showBack, actions[]
+Usage: screen headers throughout app
+Progress bar, streak counter, close button
+States: in-progress, paused, completing
+Variants: 4 | Props: progress, streak, isPaused
+Usage: learning session screens only
+INPUTS
+Input & Control Components
+Text Input
+Answer Option
+Word Chip
+Microphone Button
+Standard text field with label, helper, error
+States: empty, focused, filled, error, disabled
+Variants: 10 | Props: label, value, error, hint
+Usage: auth, search, conversation, exercises
+Tappable answer choice for quizzes
+States: default, selected, correct, incorrect, disabled
+Variants: 8 | Props: text, image, state, index
+Usage: multiple choice exercises
+Draggable word for sentence building
+States: available, placed, locked, highlighted
+Variants: 6 | Props: word, state, position
+Usage: fill-in-blank, sentence builder
+Speech recording control
+States: idle, recording, processing, done
+Variants: 4 | Props: isRecording, amplitude
+Usage: pronunciation, speaking exercises
+CONTENT
+Content Display Components
+Word Card
+World Card
+Stat Card
+Achievement Card
+Primary vocabulary display
+States: locked, new, learning, practicing, reviewing, mastered, struggling
+Variants: 14 | Props: word, image, state, context
+Usage: lessons, reviews, vocabulary browser
+Thematic world selector
+States: locked, available, in-progress, completed
+Variants: 36+ (9 worlds × 4 states)
+Props: world, progress, stars, isNew
+Usage: home screen, world selection
+Metric display for progress
+States: default, highlighted, improving, declining
+Variants: 8 | Props: label, value, trend, icon
+Usage: home dashboard, profile, progress
+Unlockable achievement display
+States: locked, newly-unlocked, unlocked
+Variants: 6 | Props: title, icon, date, rarity
+Usage: achievements screen, celebrations
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+Feedback, Overlay & System Components
+Components that handle feedback, modals, notifications, and system-level UI patterns.
+FEEDBACK
+Feedback & Celebration Components
+Toast Notification
+Streak Display
+XP Reward
+Slide-up feedback bar
+States: correct (green), incorrect (amber), info (blue), achievement (purple)
+Variants: 8 | Props: type, message, action
+Usage: exercise feedback, system messages
+Flame icon with counter
+States: active, at-risk, broken, milestone
+Variants: 6 | Props: count, isAtRisk, milestone
+Usage: session header, home screen
+Floating XP animation
+States: earned, bonus, streak-bonus
+Variants: 4 | Props: amount, source, isBonus
+Usage: post-exercise, session complete
+OVERLAYS
+Modal & Overlay Components
+Bottom Sheet
+Dialog Modal
+Onboarding Tooltip
+Draggable bottom panel
+States: collapsed, expanded, full
+Variants: 6 | Props: title, content, snapPoints
+Usage: word details, settings, filters
+Centered modal with backdrop
+States: default, destructive, success
+Variants: 6 | Props: title, body, actions[]
+Usage: confirmations, streak loss warning
+Pointed tooltip for feature education
+States: active, dismissed
+Variants: 4 | Props: text, position, step
+Usage: first-time feature discovery
+SUMMARY
+Component Library Totals
+Component Library Summary:
+
+  Category          Components    Variants
+  ─────────────────────────────────────────
+  Navigation             3           17
+  Inputs & Controls      4           28
+  Content Display        4           64+
+  Feedback               3           18
+  Overlays               3           16
+  Exercise Cards         8           32
+  Progress & Charts      4           16
+  System (loading, etc)  3           12
+  ─────────────────────────────────────────
+  TOTAL                 32          200+
+
+  Design Token Dependencies:
+    Colors:     24 semantic tokens
+    Typography: 8 text styles
+    Spacing:    12 spacing tokens
+    Radii:      4 radius tokens
+    Shadows:    3 elevation levels
+
+---
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+Wireframes & Layout Specifications
+Low-fidelity structural layouts for every core screen. Mobile-first (390×844pt), focusing on hierarchy, content placement, and interaction zones.
+PHASE 8
+Wireframing Approach
+Wireframes are structural blueprints — no color, no images, no typography styling. They answer: What content goes where? What's the hierarchy? Where does the user tap? They're fast to produce, fast to iterate, and force focus on layout over decoration.
+WIREFRAME PRINCIPLES
+Layout Guidelines
+Mobile-First
+Content Hierarchy
+Gesture Zones
+Safe Areas
+All wireframes designed at 390×844pt (iPhone 14 viewport). Content hierarchy must work at this constraint before scaling up.
+Every screen has one primary action, one secondary, and supporting content. Wireframes make this hierarchy explicit through size and position.
+Thumb-reach mapping for one-handed use. Primary actions in bottom 40% of screen. Stretch targets (settings, profile) in top corners.
+Respect iOS safe areas: 47pt top (status bar + notch), 34pt bottom (home indicator). Content padding: 24px horizontal minimum.
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+Module Wireframe Specifications
+Structural layout specifications for each major module's primary screens.
+MODULE 1: AUTHENTICATION
+Auth Screen Layouts
+Welcome / Splash
+Sign Up / Login
+Layout: Full-screen brand moment
+— Logo centered at 40% from top
+— Tagline below logo (16pt spacing)
+— "Get Started" CTA at bottom 15%
+— "Already have account?" text link below
+— No navigation bar
+Layout: Form-centered
+— Logo small, top-left
+— Email input field (full width - 48px)
+— Password field below (16px gap)
+— Primary CTA button (full width)
+— Social auth buttons (Google, Apple)
+— Toggle link: Sign Up ↔ Login
+MODULE 2: ONBOARDING
+Onboarding Flow Layouts
+Language Selection
+Level Assessment
+Goal Setting
+Layout: Grid selection
+— Progress indicator (step 1/5)
+— "What language do you speak?" heading
+— Language grid: 2 columns, flag + name
+— 8-12 options visible, scrollable
+— Continue button pinned at bottom
+Layout: Assessment flow
+— Progress indicator (step 2/5)
+— "How much English do you know?"
+— 4 large tappable options (full width)
+— Each option: icon + title + description
+— Options: None / A little / Conversational / Advanced
+Layout: Selection cards
+— Progress indicator (step 3/5)
+— "Why are you learning?" heading
+— Goal cards: icon + title (2-column grid)
+— Multi-select with checkmark toggle
+— "Daily goal" slider: 5/10/15/20 min
+— Continue button at bottom
+MODULE 3: HOME DASHBOARD
+Home Screen Layout
+Home Dashboard
+Home — Empty State
+Layout: Scrollable feed
+— Greeting + streak at top
+— Daily goal ring (centered, prominent)
+— "Continue Learning" card (last session)
+— "Suggested for You" horizontal scroll
+— World progress cards (vertical list)
+— Stats summary row (words, streak, XP)
+— Tab bar at bottom
+Layout: First-time experience
+— Welcome message with user's name
+— Illustration: friendly, inviting
+— "Start Your First Lesson" large CTA
+— 3 benefit cards below (carousel)
+— Simplified tab bar (Home active)
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+Learning Module Wireframes
+The core learning experience — world browsing, lesson selection, and in-session exercise screens.
+MODULE 4: LEARN
+Learn Tab Layouts
+World Browser
+World Detail
+Lesson Preview
+Layout: Vertical scroll with world cards
+— Learn tab header + search bar
+— Current world (large card, 60% width)
+— "Continue" CTA on current world
+— Progress ring on each world card
+— Locked worlds: gray overlay + lock icon
+— World card: illustration + name + progress
+Layout: Level list within a world
+— World hero illustration (top 30%)
+— World name + progress summary
+— Level list: numbered circles + titles
+— Current level: highlighted, pulsing
+— Completed: green check, stars shown
+— Locked: gray, connected by dotted path
+Layout: Pre-session briefing
+— Lesson title + estimated time (5-15 min)
+— Word preview: 3-5 words to learn
+— Skills targeted: badges (vocab, listening...)
+— Difficulty indicator
+— "Start Lesson" primary CTA
+— "Practice Instead" secondary link
+MODULE 5: LEARNING SESSION
+In-Session Exercise Layouts
+Word Introduction
+Multiple Choice Exercise
+Layout: Full-focus word reveal
+— Progress bar (top, segmented)
+— Large image (50% of screen)
+— English word (large, bold)
+— Native translation (smaller, below)
+— Audio play button
+— "Got it" continue CTA
+— Swipe for next word
+Layout: Question + 4 options
+— Progress bar (top)
+— Prompt: image or sentence with blank
+— 4 option buttons (2×2 grid)
+— Each option: text (+ optional image)
+— Tap to select → instant feedback
+— Correct: green flash + next
+— Wrong: shake + show correct
+Sentence Builder
+Session Complete
+Layout: Drag-and-drop construction
+— Progress bar (top)
+— Source sentence (native language)
+— Drop zone: lined area for word placement
+— Word bank: scrambled chips below
+— Drag chips into correct order
+— Check button activates when all placed
+— Hint button (reveals first word)
+Layout: Celebration summary
+— Full-screen celebration moment
+— XP earned (animated counter)
+— Words learned / reviewed counts
+— Accuracy percentage
+— Streak update (fire icon + count)
+— "Continue" → return to learn tab
+— "Practice More" secondary option
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+Remaining Module Wireframes
+Practice mode, content exploration, progress tracking, and user profile screen specifications.
+MODULE 6: PRACTICE
+Practice Mode Layouts
+Practice Hub
+Flashcard Review
+AI Conversation
+Layout: Activity selection
+— Practice tab header
+— "Due for Review" card (count + CTA)
+— Practice type grid (2 columns):
+  • Flashcards
+  • Pronunciation
+  • Listening
+  • Conversation
+  • Stories
+  • Speed Challenge
+— Each card: icon + title + difficulty
+Layout: Card-focused
+— Minimal header (close + progress)
+— Large card centered (70% of screen)
+— Front: word + image
+— Tap to flip → translation + example
+— Swipe right: "I know this"
+— Swipe left: "Practice more"
+— Bottom: cards remaining count
+Layout: Chat interface
+— Scenario intro card at top
+— Chat bubbles: AI (left) / User (right)
+— Typing area at bottom
+— Smart suggestion chips above keyboard
+— Microphone button for voice input
+— Inline corrections (underlined text)
+— End conversation → summary overlay
+MODULE 7: EXPLORE
+Explore Tab Layouts
+Explore Feed
+Progress Dashboard
+User Profile
+Layout: Content discovery
+— Search bar (top)
+— Category chips (horizontal scroll)
+— Featured content card (large, top)
+— Content grid (2 columns):
+  • Stories, articles, podcasts
+  • Each card: thumbnail + title + level
+— Filter by: level, type, world
+— Infinite scroll with skeleton loading
+Layout: Stats overview
+— Progress tab header
+— Skill radar chart (centered, large)
+— Weekly activity heatmap
+— Stats grid: words known, streak, XP
+— Level progress bar (current CEFR)
+— "Achievements" link → achievements grid
+— Vocabulary browser link
+Layout: Account & settings
+— Avatar + name + join date
+— Current level badge
+— Stats summary row
+— Settings sections:
+  • Learning preferences
+  • Notifications
+  • Daily goal
+  • Native language
+  • Account & security
+— Sign out at bottom
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+Wireframe Coverage Summary
+Total screen inventory mapped against wireframe completion status.
+SCREEN CENSUS
+Wireframe Completion Tracker
+Screen Coverage by Module:
+
+  Module                    Screens    Wireframed    Status
+  ───────────────────────────────────────────────────────────
+  01. Authentication           5          5         Complete
+  02. Onboarding               8          8         Complete
+  03. Home Dashboard           6          6         Complete
+  04. Learn                   12         12         Complete
+  05. Learning Session        15         15         Complete
+  06. Practice                10         10         Complete
+  07. Explore                  8          8         Complete
+  08. Progress & Stats         6          6         Complete
+  09. Profile & Settings       8          8         Complete
+  ───────────────────────────────────────────────────────────
+  TOTAL                      78         78         Complete
+
+  Additional Screens:
+    Error states:              6          6         Complete
+    Empty states:              5          5         Complete
+    Loading skeletons:         4          4         Complete
+    Onboarding tooltips:       8          Deferred
+  ───────────────────────────────────────────────────────────
+  GRAND TOTAL               101         93         92%
+NEXT STEPS
+From Wireframes to High-Fidelity
+Wireframes are approved and ready for the next phase. The transition to high-fidelity UI will apply the Design System Foundation (Phase 6) tokens, the Component Library (Phase 7) components, and the Interaction Architecture (Phase 5) behaviors to every wireframe screen.
+Step 1: Apply Design Tokens
+Step 2: Insert Components
+Step 3: Add Interactions
+Replace wireframe grays with semantic color tokens. Apply typography scale. Set spacing to 8pt grid. Add corner radii and elevation.
+Replace wireframe placeholders with actual components from the library. Wire up component properties and variants.
+Apply state transitions, micro-animations, and gesture responses from the Interaction Architecture specification.
+
+---
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+Motion & Microinteractions
+Animation is communication. Every motion in Context has a purpose — guiding attention, confirming actions, or creating emotional resonance.
+PHASE 10
+Motion as a Design Tool
+In a learning app, motion isn't decoration. It's pedagogy. A word card that flips teaches object permanence. A progress bar that fills teaches accumulation. A streak flame that dances teaches reward. Motion makes the invisible visible.
+MOTION PRINCIPLES
+Animation Guidelines
+Purposeful
+Responsive
+Consistent
+Accessible
+Every animation answers "why does this move?" If no clear answer, remove it. Motion for decoration erodes trust over time.
+Touch → visual response in <100ms. Result animations complete in 200-400ms. No animation blocks user input.
+Same easing curves across the app. Ease-out for entries, ease-in for exits, spring for interactive feedback. One physics model.
+All animations respect prefers-reduced-motion. Essential state changes work without animation. Duration never gates functionality.
+KEY MICROINTERACTIONS
+Signature Motion Moments
+Correct Answer
+Wrong Answer
+Streak Milestone
+Level Completion
+Green pulse ripple from the answer, card lifts slightly, checkmark draws on. Haptic tap. Total: 350ms. Feels earned.
+Gentle horizontal shake (not aggressive), amber glow, subtle nudge toward correct answer. Haptic buzz. Total: 250ms. Feels safe.
+Flame icon scales up, particles burst, counter increments with spring animation. Number odometer effect. Total: 600ms. Feels celebratory.
+Full-screen confetti (restrained, not overwhelming), XP counter animates up, new world unlocks with door-opening transition. Total: 1.2s.
+DELIVERABLES
+What This Phase Produces
+Motion Specification Document
+Interaction Prototypes
+Haptic Design Map
+Every animation documented: trigger, duration, easing, spring constants, delay. Exportable to Lottie or CSS.
+Figma prototypes demonstrating each key interaction flow. Clickable, testable, shareable.
+When and how haptic feedback is used. Light tap for selections, medium for confirmations, pattern for achievements.
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+Screen & Component Transitions
+Every transition type documented with timing curves, duration, and implementation notes.
+NAVIGATION TRANSITIONS
+Screen-to-Screen Transitions
+Tab Switch
+Push Navigation
+Modal / Bottom Sheet
+Exercise Transition
+Type: Crossfade
+Duration: 200ms
+Easing: ease-out
+Behavior: Content fades while tab bar indicator slides. Previous screen fades out as new fades in. No lateral movement.
+Type: Slide + Fade
+Duration: 300ms
+Easing: cubic-bezier(0.25, 0.1, 0.25, 1.0)
+Behavior: New screen slides in from right. Previous screen shifts left 30% + fades to 0.7 opacity. Back reverses.
+Type: Slide Up + Backdrop Fade
+Duration: 350ms
+Easing: spring(1, 80, 12)
+Behavior: Sheet slides from bottom with spring physics. Backdrop fades to 50% black. Drag-to-dismiss supported.
+Type: Slide + Scale
+Duration: 250ms
+Easing: ease-in-out
+Behavior: Current exercise slides out left, new slides in from right. Brief 50ms gap with progress bar fill animation.
+COMPONENT TRANSITIONS
+In-Place State Changes
+Card Flip (Word Card)
+Button Press
+Progress Bar Fill
+Skeleton Loading
+Type: 3D Y-axis rotation
+Duration: 400ms
+Easing: ease-in-out
+Behavior: Card rotates 180° around vertical axis. Front fades at 90°, back appears. Scale dips to 0.95 at midpoint.
+Type: Scale + Background
+Duration: 100ms press, 200ms release
+Easing: ease-out
+Behavior: Scale to 0.96 on press. Background lightens/darkens 10%. Spring back on release.
+Type: Width animation
+Duration: 500ms
+Easing: cubic-bezier(0.34, 1.56, 0.64, 1)
+Behavior: Slightly overshoots target width then settles. Green pulse ripple at fill point. Segment color change if applicable.
+Type: Shimmer gradient sweep
+Duration: 1500ms (loop)
+Easing: linear
+Behavior: Light gradient sweeps left-to-right continuously. Matches final content layout shapes. Fades to real content on load.
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+Audio & Haptic Feedback
+Multi-sensory feedback design — when and how sound and touch reinforce the learning experience.
+SOUND DESIGN
+Audio Feedback System
+Correct Answer
+Incorrect Answer
+Word Pronunciation
+Achievement Unlock
+Sound: Bright ascending two-note chime (C5→E5)
+Duration: 180ms
+Volume: 60%
+When: Immediately on correct answer selection
+Note: Varies slightly each time (±2 semitones) to prevent fatigue
+Sound: Soft descending single tone (Bb3)
+Duration: 150ms
+Volume: 40% (quieter than correct — less punitive)
+When: On incorrect selection
+Note: Gentle, not jarring. Think "oops" not "WRONG"
+Sound: Native speaker recording
+Duration: Variable (word length)
+Volume: 80%
+When: Auto-play on word card appearance, tap to replay
+Note: Two speeds available — natural and slow
+Sound: Ascending arpeggio (C4→E4→G4→C5) with shimmer
+Duration: 600ms
+Volume: 70%
+When: Achievement modal appears
+Note: Distinct from other sounds — celebratory, memorable
+HAPTIC FEEDBACK
+Touch Feedback Mapping
+Haptic Feedback Map:
+
+  Action                    Haptic Type          iOS API
+  ─────────────────────────────────────────────────────────
+  Button tap                Light impact         UIImpactFeedbackGenerator(.light)
+  Answer selection          Medium impact        UIImpactFeedbackGenerator(.medium)
+  Correct answer            Success notification  UINotificationFeedbackGenerator(.success)
+  Incorrect answer          Error notification   UINotificationFeedbackGenerator(.error)
+  Card flip                 Light impact         UIImpactFeedbackGenerator(.light)
+  Drag word chip            Selection changed    UISelectionFeedbackGenerator
+  Drop word in place        Medium impact        UIImpactFeedbackGenerator(.medium)
+  Streak milestone          Heavy impact ×2      UIImpactFeedbackGenerator(.heavy) ×2
+  Level complete            Pattern: .-.-..      Custom pattern via CoreHaptics
+  Pull to refresh           Light impact         UIImpactFeedbackGenerator(.light)
+  Swipe card (know/review)  Medium impact        UIImpactFeedbackGenerator(.medium)
+
+  Rules:
+    • Haptics always supplement, never replace visual/audio feedback
+    • Respect system haptic settings (silent mode disables)
+    • No haptics during passive content (reading, listening)
+    • Maximum 3 haptic events per second to prevent numbness
+
+---
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+Prototype & User Testing
+Validate every assumption with real users before committing to production. Test early, test often, test with the right people.
+PHASE 11
+Testing Philosophy
+We don't test to confirm we're right — we test to find where we're wrong. Every round of testing should surface at least 3 things we need to change. If it doesn't, our test was too easy.
+TESTING ROUNDS
+Three-Round Testing Strategy
+Round 1: Concept Validation
+Round 2: Usability Testing
+Round 3: Desirability Testing
+Paper prototypes & clickable wireframes. Test with 5-8 target users. Questions: Does the learning model make sense? Is navigation intuitive? Do exercise types feel right?
+Mid-fidelity prototypes. Test with 8-12 users across proficiency levels. Tasks: Complete onboarding, finish a lesson, review vocabulary, navigate between sections.
+High-fidelity prototypes with motion. Test with 10-15 users for 1-week diary study. Measure: Daily return rate, session length, emotional response, NPS score.
+SUCCESS METRICS
+What We're Measuring
+Task Completion Rate
+Time to First Success
+Session Return Rate
+Error Recovery Time
+Target: >90% for core flows (start lesson, complete exercise, check progress). Anything below 85% triggers a redesign.
+Target: <2 min from app open to first correctly answered exercise. The "aha moment" must come fast.
+Target: >60% Day 1 retention, >30% Day 7. Measures whether the app is compelling enough to come back to.
+Target: <5 sec to recover from any error state. Users should never feel lost or stuck.
+
+---
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+Design Documentation
+The handoff artifact that ensures developers build exactly what was designed — and understand why every decision was made.
+PHASE 12
+Documentation as Product
+Design documentation isn't an afterthought — it's a product. If developers can't understand the spec, the design doesn't exist. Every component, every state, every edge case, documented.
+DOCUMENTATION LAYERS
+Four-Layer Documentation System
+Component Specification
+Interaction Specification
+Content Guidelines
+Developer Handoff
+Every component with: all states, all variants, all props, spacing rules, responsive behavior, accessibility requirements. Living document in Figma.
+Every interaction with: trigger, animation details, haptic feedback, sound design, error states, edge cases. Video reference for complex animations.
+Voice and tone for every context. Error message templates. Placeholder text guidelines. Translation-ready string structure.
+Token values, breakpoint definitions, asset export specs, API contract assumptions, performance budgets, accessibility checklist.
+TOOLS & PROCESS
+Documentation Workflow
+Figma as Source of Truth
+Design Tokens Export
+Changelog & Versioning
+All design specs live in Figma. Components are self-documenting via description fields, auto-layout constraints, and variant naming.
+Token values exported as JSON/CSS custom properties. Single source of truth for colors, spacing, typography, shadows, radii.
+Every design change tracked with date, reason, and impact. Developers can see what changed and why. No surprise updates.
+
+---
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+AI Experience Specification
+The detailed behavioral contract for every AI-powered feature — what the AI does, how it communicates, and what happens when it's wrong.
+PHASE 13
+Why AI Needs Its Own Phase
+AI isn't a feature — it's a layer that touches everything. Without a dedicated specification, AI behavior becomes inconsistent, unpredictable, and untrustworthy. This phase defines the AI's personality, boundaries, and failure modes.
+AI PERSONA
+The AI Tutor Personality
+Name & Identity
+Voice & Tone
+Boundaries
+Error Handling
+The AI tutor has no human name — it's "Context" itself. Not a character, not an avatar. An intelligent system that speaks naturally but never pretends to be human.
+Encouraging but honest. "That was close! The word you're looking for is..." Never condescending. Never robotic. Adjusts formality to match learner's CEFR level.
+AI stays in its lane: language learning. It doesn't give life advice, discuss politics, or pretend to have feelings. It redirects gracefully when asked off-topic questions.
+When AI is uncertain, it says so. "I'm not sure about that pronunciation — let me play the reference audio." Transparency over false confidence.
+AI FEATURES
+AI-Powered Capabilities
+Adaptive Difficulty
+Conversation Partner
+Pronunciation Coach
+Content Generation
+Real-time difficulty adjustment based on performance signals. Target: 75-85% success rate. Adjusts within a session, not just between sessions.
+Free-form AI conversation that adapts vocabulary and grammar to the learner's level. Progressively challenges while maintaining comprehensibility.
+Real-time phoneme analysis with visual feedback. Identifies specific sounds that need work. Generates targeted pronunciation exercises.
+Dynamically generates sentences, stories, and exercises using the learner's known vocabulary. No two sessions are identical.
+
+--
+CONTEXT — ENGLISH LEARNING APP
+JULY 2026
+Content Design System
+The rules governing every word, sentence, instruction, and feedback message in the app — because content is the product.
+PHASE 14
+Content Is the Interface
+In a language learning app, content isn't supplementary — it IS the product. The vocabulary list, the exercise prompts, the feedback messages, the story text — all of it must follow consistent rules to create a coherent learning experience.
+VOICE & TONE
+Content Voice Guidelines
+Instructions
+Feedback — Correct
+Feedback — Incorrect
+Encouragement
+Clear, imperative, concise. "Tap the correct word" not "Please select the word that you think is correct." Use the simplest language the learner can understand.
+Varied celebrations. Rotate between "Perfect!", "Nice one!", "You got it!", "Exactly right!" Avoid repetition within the same session.
+Gentle, specific, forward-looking. "Almost! The word is 'beautiful' — you spelled it 'beautifull'." Never just "Wrong." Always show the right answer.
+Earned, not constant. "You've learned 50 new words this week!" is better than "Great job!" after every answer. Celebration inflation kills motivation.
+CONTENT RULES
+Content Production Guidelines
+Vocabulary Selection
+Sentence Construction
+Cultural Sensitivity
+Translation Quality
+Words chosen by frequency (most common first), concreteness (visual-friendly first), and thematic relevance (world-appropriate). No random word lists.
+Example sentences use only previously learned vocabulary + the target word. No sentence should require understanding words the learner hasn't seen.
+All content reviewed for cultural neutrality. No assumptions about family structure, diet, religion, or lifestyle. Globally inclusive examples.
+Translations are contextual, not literal. "How are you?" translates to the natural equivalent, not word-by-word. Native speaker reviewed.
+DELIVERABLES
+Content System Outputs
+String Library
+Exercise Templates
+Editorial Guidelines
+Every UI string cataloged with: key, English value, context note, character limit, pluralization rules. Translation-ready from day one.
+Templates for each exercise type with variable slots. Enables AI-generated content that follows the same quality rules as hand-crafted content.
+Complete content creation guide for future content producers. Ensures consistency even as the team grows beyond the founding designer.
+
+---
+
+
+
+

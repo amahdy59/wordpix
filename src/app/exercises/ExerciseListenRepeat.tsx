@@ -1,0 +1,143 @@
+import { memo, useEffect, useRef } from "react";
+import type { Action } from "../types";
+import { LessonHeader } from "../shared/LessonHeader";
+import { HomeIndicator } from "../shared/HomeIndicator";
+import { PrimaryButton } from "../shared/PrimaryButton";
+import { SecondaryButton } from "../shared/SecondaryButton";
+import { AudioButton } from "../shared/AudioButton";
+import { useAudio } from "../shared/useAudio";
+
+const PILLOW_IMG = "https://images.unsplash.com/photo-1623944436679-5412c658a358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&q=80";
+
+interface Props {
+  step: number;
+  dispatch: React.Dispatch<Action>;
+}
+
+const WORD = {
+  en: "Pillow",
+  ar: "وسادة",
+  phonetic: "wi - sa - dah",
+  description: "a soft cushion used for sleeping",
+};
+
+export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({ step, dispatch }: Props) {
+  const { speak, stop, isPlaying, isSupported, isError } = useAudio({ lang: "en-US", rate: 0.75 });
+  const mountedRef = useRef(false);
+
+  // Auto-play on first mount for immersive learning
+  useEffect(() => {
+    if (!mountedRef.current && isSupported) {
+      mountedRef.current = true;
+      const t = setTimeout(() => speak(WORD.en), 700);
+      return () => clearTimeout(t);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isSupported]);
+
+  // Stop audio when leaving screen
+  useEffect(() => () => stop(), [stop]);
+
+  const handleToggle = () => {
+    if (isPlaying) stop();
+    else speak(WORD.en);
+  };
+
+  const handleListenAgain = () => {
+    stop();
+    setTimeout(() => speak(WORD.en), 80);
+  };
+
+  return (
+    <div className="bg-background flex flex-col min-h-full relative">
+      <LessonHeader
+        title="Listen & Repeat"
+        step={step}
+        onBack={() => dispatch({ type: "LESSON_NEXT" })}
+        onClose={() => dispatch({ type: "GO", to: "home" })}
+      />
+
+      {/* Polite live region — announces playback state to screen readers */}
+      <div role="status" aria-live="polite" aria-atomic="true" className="sr-only">
+        {isPlaying ? `Now playing: ${WORD.en}` : ""}
+      </div>
+
+      <main
+        id="exercise-listen-main"
+        tabIndex={-1}
+        className="flex-1 flex flex-col items-center justify-center w-full px-5 gap-5"
+        aria-label="Listen and Repeat exercise"
+      >
+        {/* Word card */}
+        <section
+          aria-label={`Word: ${WORD.en} — ${WORD.ar}`}
+          className="bg-wp-card rounded-3xl border border-border p-5 flex flex-col items-center gap-4 w-full shadow-wp-xs"
+        >
+          <div className="h-44 relative rounded-xl w-full overflow-hidden">
+            <img
+              alt={`${WORD.en} — ${WORD.description}`}
+              className="absolute inset-0 object-cover size-full"
+              src={PILLOW_IMG}
+            />
+          </div>
+
+          <div className="flex flex-col items-center gap-1.5">
+            <h2 className="font-sans font-black text-foreground text-[32px] leading-none">
+              {WORD.en}
+            </h2>
+            <p
+              className="font-arabic font-bold text-primary text-[22px]"
+              dir="auto"
+              lang="ar"
+            >
+              {WORD.ar}
+            </p>
+            <p
+              className="font-sans text-muted-foreground text-sm tracking-widest"
+              aria-label={`Phonetic pronunciation: ${WORD.phonetic.replace(/ - /g, " ")}`}
+            >
+              {WORD.phonetic}
+            </p>
+          </div>
+        </section>
+
+        {/* Instruction + speaker */}
+        <div className="flex flex-col items-center gap-4">
+          <p
+            className="font-sans font-semibold text-accent text-base text-center"
+            aria-live="polite"
+          >
+            {isPlaying ? "🔊 Listening…" : "Say it out loud! 🎙️"}
+          </p>
+
+          <AudioButton
+            onPlay={handleToggle}
+            isPlaying={isPlaying}
+            isError={isError}
+            label={`Listen to pronunciation of ${WORD.en}`}
+            size="lg"
+          />
+
+          {!isSupported && (
+            <p className="font-sans text-muted-foreground text-sm text-center">
+              Audio is not supported in this browser.
+            </p>
+          )}
+        </div>
+      </main>
+
+      <footer className="w-full px-5 pb-10 pt-3 flex flex-col gap-2.5">
+        <PrimaryButton
+          label="Got It! ✓"
+          onClick={() => { stop(); dispatch({ type: "LESSON_NEXT" }); }}
+        />
+        <SecondaryButton
+          label="Listen Again"
+          onClick={handleListenAgain}
+        />
+      </footer>
+
+      <HomeIndicator />
+    </div>
+  );
+});
