@@ -9,10 +9,11 @@ interface Props {
 export const SecondaryButton = memo(function SecondaryButton({ label, onClick }: Props) {
   return (
     <button
+      type="button"
       onClick={onClick}
-      className="bg-wp-card border border-border text-foreground content-stretch flex h-[52px] items-center justify-center relative rounded-2xl shrink-0 w-full motion-safe:transition-opacity active:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+      className="bg-wp-card border border-border text-foreground content-stretch flex h-[52px] items-center justify-center relative rounded-xl shrink-0 w-full motion-safe:transition-all active:opacity-80 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-xs hover:border-primary/40"
     >
-      <span className="font-sans font-semibold leading-[20px] not-italic text-[14px]">
+      <span className="font-sans font-bold leading-[20px] text-[14px]">
         {label}
       </span>
     </button>

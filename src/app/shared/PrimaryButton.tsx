@@ -15,11 +15,12 @@ export const PrimaryButton = memo(function PrimaryButton({ label, onClick, disab
 
   return (
     <button
+      type="button"
       disabled={disabled}
       onClick={onClick}
-      className={`${colorClass} content-stretch flex h-[56px] items-center justify-center relative rounded-lg shrink-0 w-full motion-safe:transition-opacity active:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-40 disabled:cursor-not-allowed`}
+      className={`${colorClass} content-stretch flex h-[56px] items-center justify-center relative rounded-xl shrink-0 w-full motion-safe:transition-all active:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 disabled:opacity-40 disabled:cursor-not-allowed shadow-wp-xs`}
     >
-      <span className="font-sans font-semibold leading-[24px] not-italic text-[16px] text-white">
+      <span className="font-sans font-bold leading-[24px] text-[16px] text-white">
         {label}
       </span>
     </button>
