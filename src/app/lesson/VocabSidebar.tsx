@@ -38,11 +38,11 @@ export const VocabSidebar = memo(function VocabSidebar({
           <div>
             <h2 className="font-sans font-bold text-foreground text-base">The Bedroom Vocabulary</h2>
             <p className="font-sans text-muted-foreground text-xs mt-0.5">
-              {filteredVocabulary.length} words · Select to hear pronunciation &amp; view image
+              {filteredVocabulary.length} words · Select to view &amp; listen
             </p>
           </div>
           <span className="font-sans font-semibold text-xs px-2.5 py-1 rounded-full bg-secondary text-primary">
-            L1 · A1
+            Level 1 · A1
           </span>
         </div>
 
@@ -132,15 +132,8 @@ export const VocabSidebar = memo(function VocabSidebar({
                     </span>
                   )}
                 </div>
-                <p
-                  className="font-arabic font-semibold text-primary text-sm leading-none"
-                  dir="auto"
-                  lang="ar"
-                >
-                  {word.ar}
-                </p>
-                <p className="font-sans text-muted-foreground text-xs mt-0.5">
-                  {word.phonetic}
+                <p className="font-sans text-muted-foreground text-xs">
+                  /{word.phonetic}/
                 </p>
               </div>
 
@@ -171,9 +164,7 @@ export const VocabSidebar = memo(function VocabSidebar({
           </div>
           <div className="flex-1 min-w-0">
             <p className="font-sans font-black text-foreground text-xl leading-none">{activeWord.label}</p>
-            <p className="font-arabic font-bold text-primary text-base mt-0.5" dir="auto" lang="ar">
-              {activeWord.ar}
-            </p>
+            <p className="font-sans font-medium text-muted-foreground text-xs mt-1">/{activeWord.phonetic}/</p>
           </div>
         </div>
         <button

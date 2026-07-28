@@ -60,7 +60,7 @@ export const LessonSceneDiscovery = memo(function LessonSceneDiscovery({ dispatc
     <div className="bg-background flex flex-col md:flex-row min-h-svh">
       {/* Accessible live region */}
       <div role="status" aria-live="polite" aria-atomic="true" className="sr-only">
-        {isPlaying ? `Now playing: ${activeWord.label}` : `Selected: ${activeWord.label}, ${activeWord.ar}`}
+        {isPlaying ? `Now playing: ${activeWord.label}` : `Selected: ${activeWord.label}`}
       </div>
 
       {/* Interactive Scene Canvas */}

@@ -1,10 +1,10 @@
 import { memo } from "react";
+import { Flame, BookOpen, ArrowRight } from "lucide-react";
 import type { Action } from "../types";
-import svgLesson from "@/imports/FlowLessonExercises/svg-2zwti0wuib";
 
-const imgThumb  = "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200&q=80";
-const imgThumb1 = "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200&q=80";
-const imgThumb2 = "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200&q=80";
+const imgThumb  = "https://images.unsplash.com/photo-1623944436679-5412c658a358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200&q=80";
+const imgThumb1 = "https://images.unsplash.com/photo-1776476269609-c41ae855bb8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200&q=80";
+const imgThumb2 = "https://images.unsplash.com/photo-1600369672770-985fd30004eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200&q=80";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -15,7 +15,6 @@ type Mastery = "mastered" | "practiced" | "recognized";
 interface WordCard {
   id: string;
   word: string;
-  ar: string;
   daysAgo: string;
   mastery: Mastery;
   img: string;
@@ -23,9 +22,9 @@ interface WordCard {
 }
 
 const WORD_CARDS: WordCard[] = [
-  { id: "pillow",  word: "Pillow",  ar: "وسادة",  daysAgo: "2 days ago", mastery: "recognized", img: imgThumb,  urgent: true },
-  { id: "lamp",    word: "Lamp",    ar: "مصباح",  daysAgo: "3 days ago", mastery: "practiced",  img: imgThumb1               },
-  { id: "blanket", word: "Blanket", ar: "بطانية", daysAgo: "5 days ago", mastery: "mastered",   img: imgThumb2               },
+  { id: "pillow",  word: "Pillow",  daysAgo: "2 days ago", mastery: "recognized", img: imgThumb,  urgent: true },
+  { id: "lamp",    word: "Lamp",    daysAgo: "3 days ago", mastery: "practiced",  img: imgThumb1               },
+  { id: "blanket", word: "Blanket", daysAgo: "5 days ago", mastery: "mastered",   img: imgThumb2               },
 ];
 
 const MASTERY_BARS: Record<Mastery, { filled: number; color: string; label: string }> = {
@@ -45,7 +44,7 @@ function MasteryMeter({ mastery }: { mastery: Mastery }) {
       {[1, 2, 3].map((bar) => (
         <div
           key={bar}
-          className="rounded-sm h-3 w-2"
+          className="rounded-sm h-3.5 w-2 transition-all"
           style={{ background: bar <= filled ? color : "var(--wp-border)" }}
           aria-hidden
         />
@@ -56,43 +55,37 @@ function MasteryMeter({ mastery }: { mastery: Mastery }) {
 
 export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch }: Props) {
   return (
-    <div className="flex flex-col gap-6 p-5 md:p-8 pb-8">
+    <div className="flex flex-col gap-6 p-5 md:p-8 pb-8 max-w-xl mx-auto">
       {/* Page header */}
-      <header className="flex items-center gap-3">
-        <div className="flex-1">
+      <header className="flex items-center justify-between gap-4">
+        <div>
+          <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider mb-1">
+            <BookOpen className="size-4" />
+            <span>Spaced Repetition Review</span>
+          </div>
           <h1 className="font-sans font-black text-foreground text-2xl md:text-3xl leading-tight">
-            Review Time!
+            Daily Vocabulary Review
           </h1>
-          <p
-            className="font-arabic font-bold text-primary text-lg"
-            dir="auto"
-            lang="ar"
-          >
-            وقت المراجعة!
+          <p className="font-sans font-medium text-muted-foreground text-sm mt-0.5">
+            3 words scheduled for review today based on memory strength
           </p>
         </div>
 
         {/* Streak badge */}
-        <div className="bg-secondary rounded-xl px-3 py-2 flex items-center gap-2 border border-primary/20 shrink-0">
-          <svg fill="none" height="20" viewBox="0 0 24 24" width="20" aria-hidden>
-            <path d={svgLesson.p38bc1900} fill="var(--wp-brand)" />
-          </svg>
-          <span className="font-sans font-bold text-primary text-base">7</span>
+        <div className="bg-secondary rounded-xl px-3 py-2 flex items-center gap-1.5 border border-primary/20 shrink-0 shadow-wp-xs">
+          <Flame className="size-4 text-wp-amber" />
+          <span className="font-sans font-bold text-foreground text-sm">7 Day Streak</span>
         </div>
       </header>
-
-      <p className="font-sans font-medium text-muted-foreground text-sm -mt-4">
-        3 words ready for review
-      </p>
 
       {/* Word card list */}
       <section aria-label="Words to review" className="flex flex-col gap-3">
         {WORD_CARDS.map((card) => (
           <div
             key={card.id}
-            className="bg-wp-card rounded-xl border border-border p-4 flex items-center gap-4 shadow-wp-xs"
+            className="bg-wp-card rounded-2xl border border-border p-4 flex items-center gap-4 shadow-wp-xs hover:border-primary/40 transition-all"
           >
-            <div className="relative rounded-xl shrink-0 size-14 overflow-hidden">
+            <div className="relative rounded-xl shrink-0 size-14 overflow-hidden border border-border bg-muted">
               <img
                 alt={card.word}
                 className="absolute inset-0 object-cover size-full"
@@ -104,19 +97,12 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
               <div className="flex items-center gap-2 flex-wrap">
                 <p className="font-sans font-bold text-foreground text-base">{card.word}</p>
                 {card.urgent && (
-                  <span className="font-sans font-semibold text-primary text-[9px] bg-secondary rounded-full px-2 py-0.5 border border-primary/20 whitespace-nowrap">
-                    REVIEW TODAY
+                  <span className="font-sans font-bold text-primary text-[10px] bg-secondary rounded-full px-2.5 py-0.5 border border-primary/20 uppercase tracking-wide">
+                    DUE TODAY
                   </span>
                 )}
               </div>
-              <p
-                className="font-arabic text-muted-foreground text-xs"
-                dir="auto"
-                lang="ar"
-              >
-                {card.ar}
-              </p>
-              <p className="font-sans text-muted-foreground text-xs">{card.daysAgo}</p>
+              <p className="font-sans text-muted-foreground text-xs font-medium">Last reviewed {card.daysAgo}</p>
             </div>
 
             <MasteryMeter mastery={card.mastery} />
@@ -127,10 +113,12 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
       {/* Start review CTA */}
       <footer>
         <button
+          type="button"
           onClick={() => dispatch({ type: "START_LESSON" })}
-          className="bg-wp-blue rounded-xl py-4 w-full font-sans font-bold text-white text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wp-blue min-h-[56px] motion-safe:transition-opacity active:opacity-90"
+          className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 w-full font-sans font-bold text-white text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue min-h-[52px] shadow-wp-xs transition-all flex items-center justify-center gap-2"
         >
-          Start Review
+          <span>Start Review Session (+15 XP)</span>
+          <ArrowRight className="size-5" />
         </button>
       </footer>
     </div>

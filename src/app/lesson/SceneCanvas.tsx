@@ -31,13 +31,11 @@ export const SceneCanvas = memo(function SceneCanvas({
 }: Props) {
   const [viewMode, setViewMode] = useState<"word" | "scene">("word");
 
-  // Determine main image based on view mode
   const currentImage = (viewMode === "word" && activeWord.img) ? activeWord.img : imgDefaultScene;
   const isSceneMode = viewMode === "scene";
 
   const handleSelectWordLocal = (id: string) => {
     onSelectWord(id);
-    // Automatically focus on word image when selected from hotspots
     setViewMode("word");
   };
 
@@ -57,7 +55,7 @@ export const SceneCanvas = memo(function SceneCanvas({
           <div>
             <h1 className="font-sans font-bold text-foreground text-base leading-none">Bedroom Lesson</h1>
             <p className="font-sans text-muted-foreground text-xs mt-0.5">
-              {isSceneMode ? "Tap hotspots to explore scene" : `Viewing ${activeWord.label}`}
+              {isSceneMode ? "Select hotspots to explore room features" : `Exploring ${activeWord.label}`}
             </p>
           </div>
         </div>
@@ -98,7 +96,6 @@ export const SceneCanvas = memo(function SceneCanvas({
           <div className="flex items-center gap-2 bg-secondary px-3.5 py-1.5 rounded-full border border-primary/20 shadow-wp-xs">
             <Sparkles className="size-3.5 text-primary animate-pulse" aria-hidden />
             <span className="font-sans font-bold text-foreground text-sm">{activeWord.label}</span>
-            <span className="font-arabic font-bold text-primary text-sm" dir="auto" lang="ar">{activeWord.ar}</span>
           </div>
         </div>
       </div>
@@ -106,16 +103,16 @@ export const SceneCanvas = memo(function SceneCanvas({
       {/* Main Display Container */}
       <div className="relative flex-1 overflow-hidden flex items-center justify-center bg-slate-900/95 p-4 md:p-6" style={{ minHeight: "340px" }}>
         
-        {/* Main Displayed Image (Un-cropped, object-contain) */}
+        {/* Main Displayed Image */}
         <div className="relative max-w-full max-h-full flex items-center justify-center overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
           <img
             key={activeWord.id + viewMode}
-            alt={isSceneMode ? "Interactive bedroom scene" : `${activeWord.label} — ${activeWord.ar}`}
+            alt={isSceneMode ? "Interactive bedroom scene" : activeWord.label}
             className="max-h-[68vh] w-auto max-w-full object-contain rounded-2xl motion-safe:transition-all motion-safe:duration-300"
             src={currentImage}
           />
 
-          {/* Hotspot buttons on scene view */}
+          {/* Hotspots on scene view */}
           {isSceneMode && (
             <div role="group" aria-label="Scene vocabulary hotspots" className="absolute inset-0 z-10 pointer-events-auto">
               {hotspotWords.map((word) => {
@@ -128,8 +125,8 @@ export const SceneCanvas = memo(function SceneCanvas({
                     aria-pressed={isActive}
                     aria-label={
                       isActive
-                        ? `Currently selected: ${word.label} — ${word.ar}`
-                        : `Explore: ${word.label} — ${word.ar}`
+                        ? `Currently selected: ${word.label}`
+                        : `Explore: ${word.label}`
                     }
                     className={[
                       "absolute transform -translate-x-1/2 -translate-y-1/2",
@@ -184,17 +181,12 @@ export const SceneCanvas = memo(function SceneCanvas({
                 />
               </div>
 
-              <div className="flex items-center gap-2">
-                <p className="font-arabic font-bold text-primary text-lg md:text-xl" dir="auto" lang="ar">
-                  {activeWord.ar}
-                </p>
-                <span className="font-sans text-muted-foreground text-xs font-medium truncate">
-                  • {activeWord.phonetic}
-                </span>
-              </div>
+              <span className="font-sans text-muted-foreground text-xs font-medium truncate">
+                Pronunciation: /{activeWord.phonetic}/
+              </span>
 
               {activeWord.topic && (
-                <span className="inline-flex self-start text-[10px] font-sans font-semibold text-primary bg-secondary px-2 py-0.5 rounded-full border border-primary/10">
+                <span className="inline-flex self-start text-[10px] font-sans font-semibold text-primary bg-secondary px-2 py-0.5 rounded-full border border-primary/10 capitalize">
                   {activeWord.topic.replace("-", " ")}
                 </span>
               )}

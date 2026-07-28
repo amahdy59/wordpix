@@ -1,4 +1,5 @@
 import { memo } from "react";
+import { Flame, Sparkles, BookOpen, Compass, Target, Calendar, Trophy, Award, CheckCircle2 } from "lucide-react";
 import type { Action } from "../types";
 
 const imgAvatar = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
@@ -8,21 +9,21 @@ interface Props {
 }
 
 const STATS = [
-  { value: "7",   label: "Day Streak",    ar: "أيام متتالية", emoji: "🔥" },
-  { value: "240", label: "XP Points",     ar: "نقاط XP",      emoji: "⭐" },
-  { value: "45",  label: "Words Learned", ar: "كلمة متعلمة",  emoji: "📚" },
-  { value: "3",   label: "Worlds Done",   ar: "عوالم مكتملة",  emoji: "🌍" },
-  { value: "92%", label: "Accuracy",      ar: "دقة الإجابات",  emoji: "🎯" },
-  { value: "18",  label: "Days Active",   ar: "أيام نشطة",    emoji: "📅" },
+  { value: "7",   label: "Day Streak", icon: Flame, color: "text-wp-amber" },
+  { value: "240", label: "XP Points",  icon: Sparkles, color: "text-primary" },
+  { value: "45",  label: "Words Learned", icon: BookOpen, color: "text-wp-green" },
+  { value: "3",   label: "Worlds Done", icon: Compass, color: "text-wp-blue" },
+  { value: "92%", label: "Accuracy",   icon: Target, color: "text-wp-rose" },
+  { value: "18",  label: "Days Active", icon: Calendar, color: "text-wp-slate" },
 ];
 
 const ACHIEVEMENTS = [
-  { emoji: "🔥", label: "7-Day Streak",   ar: "سلسلة 7 أيام",  earned: true  },
-  { emoji: "⭐", label: "First Lesson",   ar: "الدرس الأول",    earned: true  },
-  { emoji: "🏆", label: "World Complete", ar: "عالم مكتمل",    earned: true  },
-  { emoji: "📖", label: "50 Words",       ar: "50 كلمة",        earned: false },
-  { emoji: "🌍", label: "Explorer",       ar: "مستكشف",         earned: false },
-  { emoji: "💎", label: "30-Day Streak",  ar: "سلسلة 30 يوم",  earned: false },
+  { icon: Flame, label: "7-Day Streak", earned: true },
+  { icon: Sparkles, label: "First Lesson", earned: true },
+  { icon: Trophy, label: "World Complete", earned: true },
+  { icon: BookOpen, label: "50 Words", earned: false },
+  { icon: Compass, label: "Explorer", earned: false },
+  { icon: Award, label: "30-Day Streak", earned: false },
 ];
 
 export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: Props) {
@@ -31,8 +32,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
       {/* Profile header */}
       <header className="flex flex-col md:flex-row md:items-center gap-6">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
-          {/* Avatar */}
-          <div className="relative size-20 md:size-24 shrink-0 rounded-full overflow-hidden border-[3px] border-primary">
+          <div className="relative size-20 md:size-24 shrink-0 rounded-full overflow-hidden border-[3px] border-primary shadow-wp-xs">
             <img
               alt="Profile avatar"
               className="absolute inset-0 object-cover size-full"
@@ -40,20 +40,13 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
             />
           </div>
 
-          {/* Name + level */}
           <div className="flex flex-col items-center md:items-start gap-1">
-            <h1 className="font-sans font-black text-foreground text-2xl md:text-3xl">Ahmad</h1>
-            <p className="font-sans font-medium text-muted-foreground text-sm">Level 3 Explorer</p>
-            <p
-              className="font-arabic font-medium text-primary text-sm"
-              dir="auto"
-              lang="ar"
-            >
-              مستكشف المستوى 3
-            </p>
+            <h1 className="font-sans font-black text-foreground text-2xl md:text-3xl">Learner Profile</h1>
+            <p className="font-sans font-medium text-muted-foreground text-sm">Level 3 Visual Explorer</p>
             <div className="flex items-center gap-2 mt-1">
-              <span className="bg-secondary text-primary font-sans font-semibold text-xs px-3 py-1 rounded-full border border-primary/20">
-                🔥 7-day streak
+              <span className="bg-secondary text-primary font-sans font-semibold text-xs px-3 py-1 rounded-full border border-primary/20 flex items-center gap-1.5">
+                <Flame className="size-3.5 text-wp-amber" />
+                7-day streak active
               </span>
             </div>
           </div>
@@ -62,23 +55,18 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
 
       {/* Stats grid */}
       <section aria-label="Learning statistics">
-        <h2 className="font-sans font-bold text-foreground text-lg mb-3">Statistics</h2>
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-3">
-          {STATS.map(({ value, label, ar, emoji }) => (
+        <h2 className="font-sans font-bold text-foreground text-lg mb-3">Lifetime Performance</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+          {STATS.map(({ value, label, icon: Icon, color }) => (
             <div
               key={label}
-              className="bg-wp-card rounded-2xl border border-border p-3 flex flex-col items-center gap-1 text-center shadow-wp-xs"
+              className="bg-wp-card rounded-2xl border border-border p-3.5 flex flex-col items-center gap-1.5 text-center shadow-wp-xs"
             >
-              <span className="text-xl leading-none" aria-hidden>{emoji}</span>
+              <div className="size-9 rounded-xl bg-secondary flex items-center justify-center">
+                <Icon className={`size-4 ${color}`} />
+              </div>
               <p className="font-sans font-black text-foreground text-xl leading-none mt-0.5">{value}</p>
-              <p className="font-sans font-medium text-muted-foreground text-[10px] text-center leading-tight">{label}</p>
-              <p
-                className="font-arabic text-primary text-[10px]"
-                dir="auto"
-                lang="ar"
-              >
-                {ar}
-              </p>
+              <p className="font-sans font-medium text-muted-foreground text-xs text-center leading-tight">{label}</p>
             </div>
           ))}
         </div>
@@ -86,36 +74,29 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
 
       {/* Achievements */}
       <section aria-label="Achievements" className="flex flex-col gap-3">
-        <h2 className="font-sans font-bold text-foreground text-lg">Achievements</h2>
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-3">
-          {ACHIEVEMENTS.map(({ emoji, label, ar, earned }) => (
+        <h2 className="font-sans font-bold text-foreground text-lg">Badges &amp; Achievements</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+          {ACHIEVEMENTS.map(({ icon: Icon, label, earned }) => (
             <div
               key={label}
-              className={`bg-wp-card rounded-2xl border p-3 flex flex-col items-center gap-1 text-center ${
-                earned ? "border-primary shadow-wp-xs" : "border-border opacity-50"
+              className={`bg-wp-card rounded-2xl border p-4 flex flex-col items-center gap-2 text-center transition-all ${
+                earned ? "border-primary/40 shadow-wp-xs" : "border-border opacity-50"
               }`}
               aria-label={`${label}: ${earned ? "earned" : "not yet earned"}`}
             >
-              <span className={`text-2xl leading-none ${!earned ? "grayscale" : ""}`} aria-hidden>
-                {emoji}
-              </span>
-              <p className="font-sans font-semibold text-foreground text-[10px] text-center leading-tight mt-0.5">
+              <div className={`size-10 rounded-xl flex items-center justify-center ${earned ? "bg-secondary" : "bg-muted"}`}>
+                <Icon className={`size-5 ${earned ? "text-primary" : "text-muted-foreground"}`} />
+              </div>
+              <p className="font-sans font-semibold text-foreground text-xs text-center leading-tight">
                 {label}
               </p>
-              <p
-                className="font-arabic text-muted-foreground text-[9px] text-center"
-                dir="auto"
-                lang="ar"
-              >
-                {ar}
-              </p>
-              {earned && (
-                <div
-                  className="bg-accent rounded-full size-4 flex items-center justify-center mt-0.5"
-                  aria-hidden
-                >
-                  <span className="font-sans font-black text-primary-foreground text-[8px]">✓</span>
-                </div>
+              {earned ? (
+                <span className="inline-flex items-center gap-1 text-[10px] font-sans font-bold text-wp-green bg-wp-green-light px-2 py-0.5 rounded-full">
+                  <CheckCircle2 className="size-3" />
+                  Earned
+                </span>
+              ) : (
+                <span className="text-[10px] font-sans font-medium text-muted-foreground">Locked</span>
               )}
             </div>
           ))}

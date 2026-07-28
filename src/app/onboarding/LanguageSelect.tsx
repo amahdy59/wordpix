@@ -2,88 +2,109 @@ import { useState } from "react";
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
-import { PrimaryButton } from "../shared/PrimaryButton";
-
-const imgFlagAr = "https://images.unsplash.com/photo-1541872703-74c5e44368f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
-const imgFlagEn = "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
+import { Target, Clock, ArrowRight, Check } from "lucide-react";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
-type LangId = "ar" | "en";
+const LEVELS = [
+  { id: "a1", name: "Beginner A1", desc: "First time learning English vocabulary" },
+  { id: "a2", name: "Elementary A2", desc: "Know basic words, want to expand vocabulary" },
+  { id: "b1", name: "Intermediate B1", desc: "Fluent in basics, target practical words" },
+];
 
-const LANGUAGES: { id: LangId; label: string; sublabel: string; img: string }[] = [
-  { id: "ar", label: "العربية", sublabel: "Arabic", img: imgFlagAr },
-  { id: "en", label: "English", sublabel: "الإنجليزية", img: imgFlagEn },
+const GOALS = [
+  { id: "5min", name: "Casual", time: "5 mins / day", xp: "+50 XP" },
+  { id: "10min", name: "Regular", time: "10 mins / day", xp: "+100 XP" },
+  { id: "15min", name: "Intense", time: "15 mins / day", xp: "+150 XP" },
 ];
 
 export function LanguageSelect({ dispatch }: Props) {
-  const [sel, setSel] = useState<LangId>("ar");
+  const [level, setLevel] = useState<string>("a1");
+  const [goal, setGoal] = useState<string>("10min");
 
   return (
-    <div className="bg-background content-stretch flex flex-col items-start justify-between min-h-full relative">
+    <div className="bg-background content-stretch flex flex-col items-center justify-between min-h-svh relative overflow-hidden">
       <StatusBar />
 
-      <main className="flex-1 w-full">
-        <div className="content-stretch flex flex-col gap-[24px] items-start px-[24px] py-[20px] relative size-full">
-          <h1 className="font-sans font-bold leading-[30px] not-italic text-foreground text-[20px] text-center w-full">
-            What language do you speak?
-          </h1>
-          <p
-            className="font-arabic font-bold leading-normal not-italic text-primary text-[22px] text-center w-full"
-            dir="auto"
-            lang="ar"
-          >
-            ما هي لغتك الأم؟
-          </p>
+      {/* Header step indicator */}
+      <header className="w-full max-w-md px-6 pt-4 flex items-center justify-between z-10">
+        <span className="font-sans font-bold text-foreground text-sm">Set Your Goal</span>
+        <span className="text-xs font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full border border-border">
+          Step 2 of 3
+        </span>
+      </header>
 
-          <div
-            role="radiogroup"
-            aria-label="Select your native language"
-            className="content-stretch flex gap-[16px] items-start justify-center relative shrink-0 w-full"
-          >
-            {LANGUAGES.map((lang) => {
-              const isSelected = sel === lang.id;
-              const isArabic = lang.id === "ar";
+      {/* Main content */}
+      <main className="flex-1 flex flex-col items-center w-full max-w-md px-6 py-4 overflow-y-auto gap-6 z-10">
+        {/* Section 1: Proficiency Level */}
+        <div className="w-full flex flex-col gap-3">
+          <div className="flex items-center gap-2">
+            <Target className="size-4 text-primary" />
+            <h2 className="font-sans font-bold text-foreground text-base">Select Your Starting Level</h2>
+          </div>
+
+          <div role="radiogroup" aria-label="Select proficiency level" className="flex flex-col gap-2">
+            {LEVELS.map((item) => {
+              const isSelected = level === item.id;
               return (
                 <button
-                  key={lang.id}
+                  key={item.id}
                   type="button"
                   role="radio"
                   aria-checked={isSelected}
-                  onClick={() => setSel(lang.id)}
-                  className="bg-wp-card flex-[1_0_0] min-w-px min-h-[44px] relative rounded-2xl
-                    focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  onClick={() => setLevel(item.id)}
+                  className={`w-full text-left p-3.5 rounded-xl border transition-all flex items-center justify-between min-h-[52px] ${
+                    isSelected
+                      ? "bg-secondary border-primary border-[2px] shadow-wp-xs"
+                      : "bg-wp-card border-border hover:border-primary/40"
+                  } focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary`}
                 >
-                  <div
-                    aria-hidden
-                    className={`absolute ${
-                      isSelected ? "border-[3px] border-primary" : "border border-border"
-                    } border-solid inset-0 pointer-events-none rounded-2xl`}
-                  />
-                  <div className="content-stretch flex flex-col gap-[12px] items-center p-[16px] relative size-full">
-                    <div className="h-[60px] relative rounded-md shrink-0 w-[80px]">
-                      <img
-                        alt={isArabic ? "Arabic flag" : "English flag"}
-                        className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-md size-full"
-                        src={lang.img}
-                      />
-                    </div>
-                    <p
-                      className="font-sans font-semibold leading-[20px] text-foreground text-[14px] whitespace-nowrap"
-                      dir={isArabic ? "rtl" : "ltr"}
-                      lang={isArabic ? "ar" : "en"}
-                    >
-                      {lang.label}
+                  <div>
+                    <p className={`font-sans font-bold text-sm ${isSelected ? "text-primary" : "text-foreground"}`}>
+                      {item.name}
                     </p>
-                    <p
-                      className="font-sans font-normal leading-normal text-muted-foreground text-[12px] whitespace-nowrap"
-                      dir={isArabic ? "ltr" : "rtl"}
-                    >
-                      {lang.sublabel}
-                    </p>
+                    <p className="font-sans text-muted-foreground text-xs mt-0.5">{item.desc}</p>
                   </div>
+                  {isSelected && (
+                    <div className="size-6 rounded-full bg-primary flex items-center justify-center shrink-0">
+                      <Check className="size-3.5 text-primary-foreground" />
+                    </div>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Section 2: Daily Commitment Goal */}
+        <div className="w-full flex flex-col gap-3">
+          <div className="flex items-center gap-2">
+            <Clock className="size-4 text-wp-amber" />
+            <h2 className="font-sans font-bold text-foreground text-base">Choose Daily Practice Goal</h2>
+          </div>
+
+          <div role="radiogroup" aria-label="Select daily commitment goal" className="grid grid-cols-3 gap-2">
+            {GOALS.map((item) => {
+              const isSelected = goal === item.id;
+              return (
+                <button
+                  key={item.id}
+                  type="button"
+                  role="radio"
+                  aria-checked={isSelected}
+                  onClick={() => setGoal(item.id)}
+                  className={`p-3 rounded-xl border text-center transition-all flex flex-col items-center gap-1 min-h-[64px] ${
+                    isSelected
+                      ? "bg-secondary border-primary border-[2px] shadow-wp-xs"
+                      : "bg-wp-card border-border hover:border-primary/40"
+                  } focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary`}
+                >
+                  <span className={`font-sans font-bold text-xs ${isSelected ? "text-primary" : "text-foreground"}`}>
+                    {item.name}
+                  </span>
+                  <span className="font-sans text-muted-foreground text-[11px]">{item.time}</span>
                 </button>
               );
             })}
@@ -91,10 +112,18 @@ export function LanguageSelect({ dispatch }: Props) {
         </div>
       </main>
 
-      <footer className="w-full">
-        <div className="content-stretch flex flex-col gap-[12px] items-start px-[24px] pb-[40px] relative size-full">
-          <PrimaryButton label="Continue" onClick={() => dispatch({ type: "ONBOARD_NEXT" })} />
-        </div>
+      {/* Footer CTA */}
+      <footer className="w-full max-w-md px-6 pb-8 pt-2 flex flex-col gap-3 z-10">
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "ONBOARD_NEXT" })}
+          className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 font-sans font-bold text-white text-base min-h-[52px]
+            focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
+            shadow-wp-xs transition-all flex items-center justify-center gap-2"
+        >
+          <span>Continue</span>
+          <ArrowRight className="size-5" />
+        </button>
       </footer>
 
       <HomeIndicator />

@@ -6,6 +6,7 @@ import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
 import { AudioButton } from "../shared/AudioButton";
 import { useAudio } from "../shared/useAudio";
+import { Volume2, Mic } from "lucide-react";
 
 const PILLOW_IMG = "https://images.unsplash.com/photo-1623944436679-5412c658a358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&q=80";
 
@@ -16,8 +17,7 @@ interface Props {
 
 const WORD = {
   en: "Pillow",
-  ar: "وسادة",
-  phonetic: "wi - sa - dah",
+  phonetic: "pil - low",
   description: "a soft cushion used for sleeping",
 };
 
@@ -25,7 +25,6 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({ step, d
   const { speak, stop, isPlaying, isSupported, isError } = useAudio({ lang: "en-US", rate: 0.75 });
   const mountedRef = useRef(false);
 
-  // Auto-play on first mount for immersive learning
   useEffect(() => {
     if (!mountedRef.current && isSupported) {
       mountedRef.current = true;
@@ -33,10 +32,8 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({ step, d
       return () => clearTimeout(t);
     }
     return undefined;
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isSupported]);
+  }, [isSupported, speak]);
 
-  // Stop audio when leaving screen
   useEffect(() => () => stop(), [stop]);
 
   const handleToggle = () => {
@@ -58,7 +55,6 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({ step, d
         onClose={() => dispatch({ type: "GO", to: "home" })}
       />
 
-      {/* Polite live region — announces playback state to screen readers */}
       <div role="status" aria-live="polite" aria-atomic="true" className="sr-only">
         {isPlaying ? `Now playing: ${WORD.en}` : ""}
       </div>
@@ -71,10 +67,10 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({ step, d
       >
         {/* Word card */}
         <section
-          aria-label={`Word: ${WORD.en} — ${WORD.ar}`}
-          className="bg-wp-card rounded-3xl border border-border p-5 flex flex-col items-center gap-4 w-full shadow-wp-xs"
+          aria-label={`Word: ${WORD.en}`}
+          className="bg-wp-card rounded-3xl border border-border p-5 flex flex-col items-center gap-4 w-full shadow-wp-xs max-w-md"
         >
-          <div className="h-44 relative rounded-xl w-full overflow-hidden">
+          <div className="h-44 relative rounded-xl w-full overflow-hidden bg-muted">
             <img
               alt={`${WORD.en} — ${WORD.description}`}
               className="absolute inset-0 object-cover size-full"
@@ -86,30 +82,27 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({ step, d
             <h2 className="font-sans font-black text-foreground text-[32px] leading-none">
               {WORD.en}
             </h2>
-            <p
-              className="font-arabic font-bold text-primary text-[22px]"
-              dir="auto"
-              lang="ar"
-            >
-              {WORD.ar}
-            </p>
-            <p
-              className="font-sans text-muted-foreground text-sm tracking-widest"
-              aria-label={`Phonetic pronunciation: ${WORD.phonetic.replace(/ - /g, " ")}`}
-            >
-              {WORD.phonetic}
+            <p className="font-sans text-muted-foreground text-sm tracking-widest mt-1">
+              /{WORD.phonetic}/
             </p>
           </div>
         </section>
 
         {/* Instruction + speaker */}
         <div className="flex flex-col items-center gap-4">
-          <p
-            className="font-sans font-semibold text-accent text-base text-center"
-            aria-live="polite"
-          >
-            {isPlaying ? "🔊 Listening…" : "Say it out loud! 🎙️"}
-          </p>
+          <div className="flex items-center gap-2 text-primary font-sans font-bold text-base" aria-live="polite">
+            {isPlaying ? (
+              <>
+                <Volume2 className="size-5 animate-pulse text-wp-blue" />
+                <span>Listening…</span>
+              </>
+            ) : (
+              <>
+                <Mic className="size-5 text-wp-green" />
+                <span>Say it out loud!</span>
+              </>
+            )}
+          </div>
 
           <AudioButton
             onPlay={handleToggle}
@@ -127,9 +120,9 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({ step, d
         </div>
       </main>
 
-      <footer className="w-full px-5 pb-10 pt-3 flex flex-col gap-2.5">
+      <footer className="w-full max-w-md mx-auto px-5 pb-10 pt-3 flex flex-col gap-2.5">
         <PrimaryButton
-          label="Got It! ✓"
+          label="Got It!"
           onClick={() => { stop(); dispatch({ type: "LESSON_NEXT" }); }}
         />
         <SecondaryButton
