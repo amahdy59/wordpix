@@ -3,8 +3,8 @@ import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { PrimaryButton } from "../shared/PrimaryButton";
 
-import imgMascot from "@/imports/FlowOnboardingCoreNavigation-1/ddef533e320d6bd56dd7f984308508eb3a9d2d4e.png";
-import imgIllustration from "@/imports/FlowOnboardingCoreNavigation-1/5a83af8fd769c0a4d4fe19848405048f59c1677d.png";
+const imgMascot = "https://images.unsplash.com/photo-1544717305-2782549b5136?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
+const imgIllustration = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&q=80";
 
 interface Props {
   dispatch: React.Dispatch<Action>;

@@ -1,10 +1,10 @@
 import { memo } from "react";
 import type { Action } from "../types";
 
-import imgBedroom  from "@/imports/FlowOnboardingCoreNavigation-1/bca64c80583aadd7c951cd61795a275ea4f47a1f.png";
-import imgBathroom from "@/imports/FlowOnboardingCoreNavigation-1/bed8732059923a7b53431ce0e7038f489e831c43.png";
-import imgKitchen  from "@/imports/FlowOnboardingCoreNavigation-1/aeaf5c57d398002797733c2a38e5bda540787f32.png";
-import imgLiving   from "@/imports/FlowOnboardingCoreNavigation-1/8b22e4629aeb706ae3eee56ea4229f88b7af9b1c.png";
+const imgBedroom  = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
+const imgBathroom = "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
+const imgKitchen  = "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
+const imgLiving   = "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -39,10 +39,6 @@ const STATUS_CONFIG: Record<World["status"], StatusCfg> = {
   locked:   { label: "Locked",      textClass: "text-muted-foreground", bgClass: "bg-muted"         },
 };
 
-/**
- * Explore worlds screen — rendered inside AppShell.
- * Grid: 2 cols mobile → 3 cols tablet → 4 cols desktop.
- */
 export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
   return (
     <div className="flex flex-col gap-6 p-5 md:p-8">
@@ -71,7 +67,6 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
             const cfg = STATUS_CONFIG[world.status];
 
             return (
-              /* using <button> instead of a kit Card component: needs disabled + onClick dispatch */
               <button
                 key={world.id}
                 onClick={() => !isLocked && dispatch({ type: "GO", to: "lesson-entry" })}
@@ -80,7 +75,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                 className={`bg-wp-card rounded-2xl border border-border overflow-hidden text-left shadow-wp-xs ${
                   isLocked
                     ? "opacity-60 cursor-not-allowed"
-                    : "hover:shadow-wp-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:transition-shadow"
+                    : "hover:shadow-wp-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:transition-shadow"
                 }`}
               >
                 {/* World thumbnail */}

@@ -4,7 +4,7 @@ import { LessonHeader } from "../shared/LessonHeader";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { SENTENCE_FIXED_WORDS, SENTENCE_POOL_INITIAL } from "../constants";
 
-import imgLampDesk from "@/imports/FlowLessonExercises/721329bd75e4bbf10288efde368471b90071bfab.png";
+const imgLampDesk = "https://images.unsplash.com/photo-1776476269609-c41ae855bb8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
 
 interface Props {
   step: number;
@@ -80,7 +80,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({ s
               onClick={() => removeWord(w)}
               aria-label={`Remove "${w}" from sentence`}
               disabled={checked}
-              className="bg-primary rounded-md px-[12px] py-[6px] font-sans font-semibold text-white text-[15px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed"
+              className="bg-primary rounded-md px-[12px] py-[6px] font-sans font-semibold text-white text-[15px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed"
             >
               {w}
             </button>
@@ -107,7 +107,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({ s
               onClick={() => placeWord(word)}
               aria-label={`Add "${word}" to sentence`}
               disabled={checked}
-              className="bg-wp-card rounded-lg border border-border px-[16px] py-[8px] font-sans font-semibold text-foreground text-[15px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed"
+              className="bg-wp-card rounded-lg border border-border px-[16px] py-[8px] font-sans font-semibold text-foreground text-[15px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed"
             >
               {word}
             </button>
@@ -119,7 +119,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({ s
         <button
           onClick={handleCheck}
           disabled={placed.length === 0 || checked}
-          className={`rounded-xl py-[16px] w-full font-sans font-bold text-white text-[17px] min-h-[56px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-40 disabled:cursor-not-allowed motion-safe:transition-colors motion-safe:duration-300 ${
+          className={`rounded-xl py-[16px] w-full font-sans font-bold text-white text-[17px] min-h-[56px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 disabled:opacity-40 disabled:cursor-not-allowed motion-safe:transition-colors motion-safe:duration-300 ${
             checked ? (isCorrect ? "bg-accent focus-visible:outline-accent" : "bg-primary focus-visible:outline-primary") : "bg-wp-blue focus-visible:outline-wp-blue"
           }`}
         >

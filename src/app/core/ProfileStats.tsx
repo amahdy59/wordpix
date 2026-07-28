@@ -1,7 +1,7 @@
 import { memo } from "react";
 import type { Action } from "../types";
 
-import imgAvatar from "@/imports/FlowOnboardingCoreNavigation-1/f55881555ef83554c4e38c9b207dabcaee8dafbf.png";
+const imgAvatar = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -25,15 +25,9 @@ const ACHIEVEMENTS = [
   { emoji: "💎", label: "30-Day Streak",  ar: "سلسلة 30 يوم",  earned: false },
 ];
 
-/**
- * Profile and statistics screen — rendered inside AppShell.
- * Layout: stacked on mobile, side-by-side profile header on md+.
- * Stats: 3-col on mobile → 6-col on desktop.
- */
 export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: Props) {
   return (
     <div className="flex flex-col gap-6 p-5 md:p-8 pb-8">
-
       {/* Profile header */}
       <header className="flex flex-col md:flex-row md:items-center gap-6">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-4">

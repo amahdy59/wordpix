@@ -4,7 +4,7 @@ import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { BackButton } from "../shared/BackButton";
 
-import imgBedroom from "@/imports/FlowLessonExercises/f411eef2ec377eccc68c6aac19dbead822b0265e.png";
+const imgBedroom = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&q=80";
 
 interface Props {
   dispatch: React.Dispatch<Action>;

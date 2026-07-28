@@ -4,8 +4,8 @@ import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { PrimaryButton } from "../shared/PrimaryButton";
 
-import imgFlagAr from "@/imports/FlowOnboardingCoreNavigation-1/016a21d5fc2f3bf5fbf545c3a030d6e5c8330443.png";
-import imgFlagEn from "@/imports/FlowOnboardingCoreNavigation-1/58e9c68fd7f805180d881d60341adad27ff8a07b.png";
+const imgFlagAr = "https://images.unsplash.com/photo-1541872703-74c5e44368f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
+const imgFlagEn = "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
 
 interface Props {
   dispatch: React.Dispatch<Action>;

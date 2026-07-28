@@ -3,7 +3,7 @@ import type { Action } from "../types";
 import { LessonHeader } from "../shared/LessonHeader";
 import { HomeIndicator } from "../shared/HomeIndicator";
 
-import imgClue from "@/imports/FlowLessonExercises/c671a908cb680b90c365222b2c54c47cf545dddb.png";
+const imgClue = "https://images.unsplash.com/photo-1623944436679-5412c658a358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
 
 interface Props {
   step: number;
@@ -98,7 +98,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({ step, dis
                 aria-pressed={isSelected}
                 disabled={checked}
                 onClick={() => !checked && setSel(isSelected ? null : chip)}
-                className={`rounded-lg px-[16px] py-[8px] font-sans font-semibold text-[15px] border focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed motion-safe:transition-colors ${
+                className={`rounded-lg px-[16px] py-[8px] font-sans font-semibold text-[15px] border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed motion-safe:transition-colors ${
                   isSelected
                     ? "bg-primary border-primary text-white"
                     : "bg-wp-card border-border text-foreground"
@@ -115,7 +115,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({ step, dis
         <button
           onClick={handleCheck}
           disabled={!sel || checked}
-          className={`rounded-xl py-[16px] w-full font-sans font-bold text-white text-[17px] min-h-[56px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-40 disabled:cursor-not-allowed motion-safe:transition-colors motion-safe:duration-300 ${
+          className={`rounded-xl py-[16px] w-full font-sans font-bold text-white text-[17px] min-h-[56px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 disabled:opacity-40 disabled:cursor-not-allowed motion-safe:transition-colors motion-safe:duration-300 ${
             checked ? (isCorrect ? "bg-accent focus-visible:outline-accent" : "bg-primary focus-visible:outline-primary") : "bg-wp-blue focus-visible:outline-wp-blue"
           }`}
         >

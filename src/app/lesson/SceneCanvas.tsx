@@ -6,7 +6,7 @@ import { CloseButton } from "../shared/CloseButton";
 import { AudioButton } from "../shared/AudioButton";
 import type { VocabWord } from "../data/lessons";
 
-import imgScene from "@/imports/FlowLessonExercises/5a1564d371eaf16d42bd6410fe9570da379f3ec4.png";
+const imgScene = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1000&q=80";
 
 interface Props {
   activeWord: VocabWord;

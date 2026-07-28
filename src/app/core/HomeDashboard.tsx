@@ -1,8 +1,8 @@
 import { memo } from "react";
 import type { Action } from "../types";
 
-import imgMascot      from "@/imports/FlowOnboardingCoreNavigation-1/1d21ec27d82f3fa6a1cd16fe375d4034615191e1.png";
-import imgWorldPreview from "@/imports/FlowOnboardingCoreNavigation-1/745b97e47aba4b5113f01e8d5f6e8f771bb27fd5.png";
+const imgMascot = "https://images.unsplash.com/photo-1544717305-2782549b5136?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
+const imgWorldPreview = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&q=80";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -14,11 +14,6 @@ const STATS = [
   { emoji: "📚", value: "45",  label: "Words",         ar: "كلمة"         },
 ];
 
-/**
- * Home dashboard screen.
- * Rendered inside AppShell — no StatusBar / BottomTabBar / HomeIndicator here.
- * Layout: single column on mobile, two-column on md+ with world card + sidebar widgets.
- */
 export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
   return (
     <div className="flex flex-col gap-6 p-5 md:p-8 pb-8">
@@ -64,9 +59,8 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         ))}
       </div>
 
-      {/* ── Active world + side widgets — responsive two-col on desktop ────── */}
+      {/* ── Active world + side widgets ──────────────────────────────────── */}
       <div className="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-4 items-start">
-
         {/* Active world card */}
         <section aria-labelledby="active-world-heading">
           <div className="bg-wp-card rounded-2xl border border-border overflow-hidden shadow-wp-xs">
@@ -116,10 +110,9 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                   style={{ width: "40%" }}
                 />
               </div>
-              {/* using <button> instead of <PrimaryButton>: needs dispatch-specific onClick */}
               <button
                 onClick={() => dispatch({ type: "GO", to: "lesson-entry" })}
-                className="bg-wp-blue rounded-xl py-3 w-full font-sans font-bold text-white text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wp-blue min-h-[44px] motion-safe:transition-opacity active:opacity-90"
+                className="bg-wp-blue rounded-xl py-3 w-full font-sans font-bold text-white text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue min-h-[44px] motion-safe:transition-opacity active:opacity-90"
               >
                 Continue Learning
               </button>
@@ -129,10 +122,9 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
 
         {/* Right column: review CTA + gamification widget */}
         <div className="flex flex-col gap-4">
-          {/* Daily review */}
           <button
             onClick={() => dispatch({ type: "GO", to: "practice" })}
-            className="bg-wp-card rounded-2xl border border-border p-4 w-full text-left flex items-center gap-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary min-h-[44px] shadow-wp-xs hover:shadow-wp-sm motion-safe:transition-shadow"
+            className="bg-wp-card rounded-2xl border border-border p-4 w-full text-left flex items-center gap-3 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary min-h-[44px] shadow-wp-xs hover:shadow-wp-sm motion-safe:transition-shadow"
             aria-label="Open daily review: 3 words ready"
           >
             <div
@@ -153,7 +145,6 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
             </div>
           </button>
 
-          {/* Streak / gamification nudge */}
           <div className="bg-secondary rounded-2xl p-4 flex flex-col gap-2 border border-primary/20">
             <p className="font-sans font-bold text-primary text-sm">🏆 Keep it up!</p>
             <p className="font-sans font-medium text-foreground text-xs leading-relaxed">

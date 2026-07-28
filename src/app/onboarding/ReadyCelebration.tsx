@@ -3,7 +3,7 @@ import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { PrimaryButton } from "../shared/PrimaryButton";
 
-import imgMascotCelebration from "@/imports/FlowOnboardingCoreNavigation-1/1af0b5b8bf8cd3a072d6f128b20099eba250dca3.png";
+const imgMascotCelebration = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
 
 interface Props {
   dispatch: React.Dispatch<Action>;

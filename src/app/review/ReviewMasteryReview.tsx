@@ -2,9 +2,9 @@ import { memo } from "react";
 import type { Action } from "../types";
 import svgLesson from "@/imports/FlowLessonExercises/svg-2zwti0wuib";
 
-import imgThumb  from "@/imports/FlowLessonExercises/0a139d976e52f612dd5d5dbb8fcbf18926b4f179.png";
-import imgThumb1 from "@/imports/FlowLessonExercises/f31b545ac50307d36e3be5bcb74b599a485e5566.png";
-import imgThumb2 from "@/imports/FlowLessonExercises/910c992196ce105171d84eaf99f6dfd041757724.png";
+const imgThumb  = "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200&q=80";
+const imgThumb1 = "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200&q=80";
+const imgThumb2 = "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200&q=80";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -54,11 +54,6 @@ function MasteryMeter({ mastery }: { mastery: Mastery }) {
   );
 }
 
-/**
- * Review / Practice screen — rendered inside AppShell (Practice tab).
- * No StatusBar / BottomTabBar / HomeIndicator — AppShell provides those.
- * Layout: single column with word cards + CTA; two-column on xl.
- */
 export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch }: Props) {
   return (
     <div className="flex flex-col gap-6 p-5 md:p-8 pb-8">
