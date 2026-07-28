@@ -29,40 +29,49 @@ export function AgeSelect({ dispatch }: Props) {
             كم عمرك؟
           </p>
 
-          <fieldset className="border-none p-0 m-0 w-full">
-            <legend className="sr-only">Select your age</legend>
-            <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full">
-              {AGE_ITEMS.map(({ n, ar }) => {
-                const isActive = sel === n;
-                return (
-                  <button
-                    key={n}
-                    role="radio"
-                    aria-checked={isActive}
-                    onClick={() => setSel(n)}
-                    className={`${isActive ? "bg-secondary" : "bg-wp-card"} content-stretch flex flex-col gap-[4px] items-center justify-center p-[16px] relative rounded-3xl shrink-0 w-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary`}
+          <div
+            role="radiogroup"
+            aria-label="Select your age"
+            className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full"
+          >
+            {AGE_ITEMS.map(({ n, ar }) => {
+              const isActive = sel === n;
+              return (
+                <button
+                  key={n}
+                  type="button"
+                  role="radio"
+                  aria-checked={isActive}
+                  onClick={() => setSel(n)}
+                  className={`${
+                    isActive ? "bg-secondary" : "bg-wp-card"
+                  } content-stretch flex flex-col gap-[4px] items-center justify-center p-[16px] relative rounded-3xl shrink-0 w-full min-h-[56px]
+                  focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary`}
+                >
+                  <div
+                    aria-hidden
+                    className={`absolute ${
+                      isActive ? "border-[3px] border-primary" : "border border-border"
+                    } border-solid inset-0 pointer-events-none rounded-3xl`}
+                  />
+                  <span
+                    className={`font-sans font-black leading-normal not-italic relative shrink-0 ${
+                      isActive ? "text-primary" : "text-foreground"
+                    } text-[28px]`}
                   >
-                    <div
-                      aria-hidden
-                      className={`absolute ${isActive ? "border-3 border-primary" : "border border-border"} border-solid inset-0 pointer-events-none rounded-3xl`}
-                    />
-                    <span
-                      className={`font-sans font-black leading-normal not-italic relative shrink-0 ${isActive ? "text-primary" : "text-foreground"} text-[28px]`}
-                    >
-                      {n}
-                    </span>
-                    <span
-                      className="font-arabic font-medium leading-normal not-italic relative shrink-0 text-muted-foreground text-[11px]"
-                      dir="auto"
-                      lang="ar"
-                    >
-                      {ar}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-          </fieldset>
+                    {n}
+                  </span>
+                  <span
+                    className="font-arabic font-medium leading-normal not-italic relative shrink-0 text-muted-foreground text-[11px]"
+                    dir="auto"
+                    lang="ar"
+                  >
+                    {ar}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
         </div>
       </main>
 

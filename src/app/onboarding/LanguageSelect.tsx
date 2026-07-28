@@ -14,7 +14,7 @@ interface Props {
 type LangId = "ar" | "en";
 
 const LANGUAGES: { id: LangId; label: string; sublabel: string; img: string }[] = [
-  { id: "ar", label: "العربية", sublabel: "Arabic",     img: imgFlagAr },
+  { id: "ar", label: "العربية", sublabel: "Arabic", img: imgFlagAr },
   { id: "en", label: "English", sublabel: "الإنجليزية", img: imgFlagEn },
 ];
 
@@ -38,51 +38,56 @@ export function LanguageSelect({ dispatch }: Props) {
             ما هي لغتك الأم؟
           </p>
 
-          <fieldset className="border-none p-0 m-0 w-full">
-            <legend className="sr-only">Select your native language</legend>
-            <div className="content-stretch flex gap-[16px] items-start justify-center relative shrink-0 w-full">
-              {LANGUAGES.map((lang) => {
-                const isSelected = sel === lang.id;
-                const isArabic = lang.id === "ar";
-                return (
-                  <button
-                    key={lang.id}
-                    role="radio"
-                    aria-checked={isSelected}
-                    onClick={() => setSel(lang.id)}
-                    className="bg-wp-card flex-[1_0_0] min-w-px relative rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                  >
-                    <div
-                      aria-hidden
-                      className={`absolute ${isSelected ? "border-3 border-primary" : "border border-border"} border-solid inset-0 pointer-events-none rounded-2xl`}
-                    />
-                    <div className="content-stretch flex flex-col gap-[12px] items-center p-[16px] relative size-full">
-                      <div className="h-[60px] relative rounded-md shrink-0 w-[80px]">
-                        <img
-                          alt={isArabic ? "Arabic flag" : "English flag"}
-                          className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-md size-full"
-                          src={lang.img}
-                        />
-                      </div>
-                      <p
-                        className="font-sans font-semibold leading-[20px] text-foreground text-[14px] whitespace-nowrap"
-                        dir={isArabic ? "rtl" : "ltr"}
-                        lang={isArabic ? "ar" : "en"}
-                      >
-                        {lang.label}
-                      </p>
-                      <p
-                        className="font-sans font-normal leading-normal text-muted-foreground text-[12px] whitespace-nowrap"
-                        dir={isArabic ? "ltr" : "rtl"}
-                      >
-                        {lang.sublabel}
-                      </p>
+          <div
+            role="radiogroup"
+            aria-label="Select your native language"
+            className="content-stretch flex gap-[16px] items-start justify-center relative shrink-0 w-full"
+          >
+            {LANGUAGES.map((lang) => {
+              const isSelected = sel === lang.id;
+              const isArabic = lang.id === "ar";
+              return (
+                <button
+                  key={lang.id}
+                  type="button"
+                  role="radio"
+                  aria-checked={isSelected}
+                  onClick={() => setSel(lang.id)}
+                  className="bg-wp-card flex-[1_0_0] min-w-px min-h-[44px] relative rounded-2xl
+                    focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                >
+                  <div
+                    aria-hidden
+                    className={`absolute ${
+                      isSelected ? "border-[3px] border-primary" : "border border-border"
+                    } border-solid inset-0 pointer-events-none rounded-2xl`}
+                  />
+                  <div className="content-stretch flex flex-col gap-[12px] items-center p-[16px] relative size-full">
+                    <div className="h-[60px] relative rounded-md shrink-0 w-[80px]">
+                      <img
+                        alt={isArabic ? "Arabic flag" : "English flag"}
+                        className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-md size-full"
+                        src={lang.img}
+                      />
                     </div>
-                  </button>
-                );
-              })}
-            </div>
-          </fieldset>
+                    <p
+                      className="font-sans font-semibold leading-[20px] text-foreground text-[14px] whitespace-nowrap"
+                      dir={isArabic ? "rtl" : "ltr"}
+                      lang={isArabic ? "ar" : "en"}
+                    >
+                      {lang.label}
+                    </p>
+                    <p
+                      className="font-sans font-normal leading-normal text-muted-foreground text-[12px] whitespace-nowrap"
+                      dir={isArabic ? "ltr" : "rtl"}
+                    >
+                      {lang.sublabel}
+                    </p>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
         </div>
       </main>
 

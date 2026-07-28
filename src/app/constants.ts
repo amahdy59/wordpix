@@ -17,28 +17,9 @@ export const COLORS = {
 export const ONBOARD_STEPS = [
   "splash",
   "language",
-  "age",
   "interests",
   "ready",
 ] as const;
-
-export const AGE_ITEMS: { n: number; ar: string }[] = [
-  { n: 6, ar: "٦ سنوات" },
-  { n: 7, ar: "٧ سنوات" },
-  { n: 8, ar: "٨ سنوات" },
-  { n: 9, ar: "٩ سنوات" },
-  { n: 10, ar: "١٠ سنوات" },
-  { n: 11, ar: "١١ سنة" },
-  { n: 12, ar: "١٢ سنة" },
-  { n: 14, ar: "١٤ سنة" },
-  { n: 16, ar: "١٦ سنة" },
-  { n: 18, ar: "١٨ سنة" },
-  { n: 20, ar: "٢٠ سنة" },
-  { n: 25, ar: "٢٥ سنة" },
-  { n: 30, ar: "٣٠ سنة" },
-  { n: 35, ar: "٣٥ سنة" },
-  { n: 40, ar: "٤٠+ سنة" },
-];
 
 export const SCENE_HOTSPOTS: {
   id: string;

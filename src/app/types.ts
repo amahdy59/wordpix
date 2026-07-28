@@ -1,6 +1,6 @@
 // Shared TypeScript types for the WordPix app state machine
 
-export type OnboardStep = "splash" | "language" | "age" | "interests" | "ready";
+export type OnboardStep = "splash" | "language" | "interests" | "ready";
 export type TabId = "home" | "explore" | "practice" | "profile";
 
 export type Screen =
