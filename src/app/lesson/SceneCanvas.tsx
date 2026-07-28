@@ -1,4 +1,4 @@
-import { memo, useState } from "react";
+import { memo, useState, useCallback } from "react";
 import { BookOpen, Volume2, Sparkles, Image as ImageIcon, MapPin } from "lucide-react";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
@@ -7,6 +7,7 @@ import { AudioButton } from "../shared/AudioButton";
 import type { VocabItem } from "../data/lessons";
 
 const imgDefaultScene = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1200&q=80";
+const imgFallbackWord  = "https://images.unsplash.com/photo-1595428774223-ef52624120d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&q=80";
 
 interface Props {
   activeWord: VocabItem;
@@ -30,17 +31,25 @@ export const SceneCanvas = memo(function SceneCanvas({
   onClose,
 }: Props) {
   const [viewMode, setViewMode] = useState<"word" | "scene">("word");
+  const [imgSrc, setImgSrc] = useState<string | null>(null);
 
-  const currentImage = (viewMode === "word" && activeWord.img) ? activeWord.img : imgDefaultScene;
-  const isSceneMode = viewMode === "scene";
+  // Determine main display image with fallback
+  const isWordView = viewMode === "word";
+  const targetImage = (isWordView && activeWord.img) ? activeWord.img : imgDefaultScene;
+  const displayImage = imgSrc ?? targetImage;
+
+  const handleImageError = useCallback(() => {
+    setImgSrc(imgFallbackWord);
+  }, []);
 
   const handleSelectWordLocal = (id: string) => {
     onSelectWord(id);
+    setImgSrc(null); // Reset image state on new selection
     setViewMode("word");
   };
 
   return (
-    <div className="relative flex-1 md:flex-[3] flex flex-col bg-background" style={{ minHeight: "55vmin" }}>
+    <div className="relative flex-1 md:flex-[3] flex flex-col bg-background min-h-svh md:min-h-0">
       {/* Mobile status bar */}
       <div className="md:hidden shrink-0">
         <StatusBar />
@@ -55,18 +64,18 @@ export const SceneCanvas = memo(function SceneCanvas({
           <div>
             <h1 className="font-sans font-bold text-foreground text-base leading-none">Bedroom Lesson</h1>
             <p className="font-sans text-muted-foreground text-xs mt-0.5">
-              {isSceneMode ? "Select hotspots to explore room features" : `Exploring ${activeWord.label}`}
+              {!isWordView ? "Select hotspots to explore room features" : `Viewing ${activeWord.label}`}
             </p>
           </div>
         </div>
 
-        {/* View Mode Toggle & Active Word Pill */}
+        {/* View Mode Toggle & Active Word Badge */}
         <div className="flex items-center gap-3">
           {/* View Toggle */}
           <div className="flex items-center bg-muted p-1 rounded-xl border border-border">
             <button
               type="button"
-              onClick={() => setViewMode("word")}
+              onClick={() => { setViewMode("word"); setImgSrc(null); }}
               aria-pressed={viewMode === "word"}
               className={`flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-sans font-bold transition-all ${
                 viewMode === "word"
@@ -79,7 +88,7 @@ export const SceneCanvas = memo(function SceneCanvas({
             </button>
             <button
               type="button"
-              onClick={() => setViewMode("scene")}
+              onClick={() => { setViewMode("scene"); setImgSrc(null); }}
               aria-pressed={viewMode === "scene"}
               className={`flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-sans font-bold transition-all ${
                 viewMode === "scene"
@@ -100,20 +109,21 @@ export const SceneCanvas = memo(function SceneCanvas({
         </div>
       </div>
 
-      {/* Main Display Container */}
-      <div className="relative flex-1 overflow-hidden flex items-center justify-center bg-slate-900/95 p-4 md:p-6" style={{ minHeight: "340px" }}>
+      {/* Main Display Canvas Container */}
+      <div className="relative flex-1 flex flex-col items-center justify-between bg-slate-950 p-4 md:p-6 overflow-hidden min-h-[420px]">
         
-        {/* Main Displayed Image */}
-        <div className="relative max-w-full max-h-full flex items-center justify-center overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+        {/* Main Displayed Picture (Guaranteed Fit & Un-cropped) */}
+        <div className="relative w-full flex-1 flex items-center justify-center overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-slate-900/60 p-2 my-auto">
           <img
-            key={activeWord.id + viewMode}
-            alt={isSceneMode ? "Interactive bedroom scene" : activeWord.label}
-            className="max-h-[68vh] w-auto max-w-full object-contain rounded-2xl motion-safe:transition-all motion-safe:duration-300"
-            src={currentImage}
+            key={activeWord.id + viewMode + (imgSrc ?? "")}
+            alt={!isWordView ? "Interactive bedroom scene" : activeWord.label}
+            className="max-h-[60vh] max-w-full w-auto h-auto object-contain rounded-xl shadow-lg transition-all duration-300"
+            src={displayImage}
+            onError={handleImageError}
           />
 
-          {/* Hotspots on scene view */}
-          {isSceneMode && (
+          {/* Hotspots on Scene View */}
+          {!isWordView && (
             <div role="group" aria-label="Scene vocabulary hotspots" className="absolute inset-0 z-10 pointer-events-auto">
               {hotspotWords.map((word) => {
                 const isActive = word.id === activeId;
@@ -156,14 +166,15 @@ export const SceneCanvas = memo(function SceneCanvas({
           )}
         </div>
 
-        {/* Floating Active Word Info Overlay */}
-        <div className="absolute inset-x-4 md:inset-x-8 bottom-6 z-20 flex justify-center pointer-events-none">
-          <div className="bg-wp-card/95 backdrop-blur-xl border border-border/80 rounded-2xl p-4 shadow-wp-md flex items-center gap-4 max-w-xl w-full pointer-events-auto motion-safe:transition-all">
-            <div className="size-16 md:size-20 rounded-xl overflow-hidden shrink-0 border border-border bg-muted flex items-center justify-center">
+        {/* Floating Active Word Detail Overlay */}
+        <div className="w-full max-w-xl z-20 mt-4 pointer-events-auto">
+          <div className="bg-wp-card/95 backdrop-blur-xl border border-border/80 rounded-2xl p-4 shadow-wp-md flex items-center gap-4 w-full">
+            <div className="size-16 rounded-xl overflow-hidden shrink-0 border border-border bg-muted flex items-center justify-center">
               <img
                 src={activeWord.img}
                 alt={activeWord.label}
                 className="size-full object-contain p-1"
+                onError={handleImageError}
               />
             </div>
 
