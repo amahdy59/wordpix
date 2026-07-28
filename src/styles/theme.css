@@ -1,72 +1,57 @@
 @custom-variant dark (&:is(.dark *));
 
-/* ─── WordPix Brand Tokens ──────────────────────────────────────────────────
-   Edit values here to restyle the entire app.
-   Light / Dark mode pairs are defined in :root and .dark blocks below.
+/* ─── WordPix Semantic Color Tokens (Light & Dark Modes) ────────────────────
+   Brand: Violet (#7C3AED / #A78BFA) — smart & inviting for A0-B1 learners
+   Streaks: Amber (#F59E0B / #FBBF24) — universal reward signal
+   Immerse/Scene: Teal (#0D9488 / #2DD4BF) — distinct visual break from drills
+   Correct: Green (#10B981 / #34D399) — universal success state
+   Wrong: Rose (#F43F5E / #FB7185) — universal error state
    ─────────────────────────────────────────────────────────────────────────── */
 
 :root {
-  /* WordPix brand palette */
-  --wp-brand:           #CC6363;   /* headers, CTA buttons, active states */
-  --wp-brand-dark:      #B34D4D;   /* pressed / hover states */
-  --wp-brand-light:     #F2E0E0;   /* tinted backgrounds, selected chip bg */
-  --wp-green:           #40A673;   /* success, correct answers, mastered */
-  --wp-blue:            #4A90FF;   /* primary action buttons */
-  --wp-amber:           #FFD600;   /* practiced/in-progress, celebration */
-  --wp-slate:           #94A3B8;   /* inactive icons, tertiary elements */
+  /* Brand Tokens (Violet) */
+  --wp-brand:           #7C3AED;   /* violet-600 */
+  --wp-brand-dark:      #6D28D9;   /* violet-700 */
+  --wp-brand-light:     #F5F3FF;   /* violet-50 */
 
-  /* Surface tokens */
-  --wp-surface:         #F7F7F7;   /* page background */
-  --wp-card:            #FFFFFF;   /* card surfaces */
-  --wp-green-light:     #E8F7F0;   /* green-tinted backgrounds */
+  /* Gamification & Phase Tokens */
+  --wp-amber:           #F59E0B;   /* amber-500: Streaks & XP */
+  --wp-teal:            #0D9488;   /* teal-600: Immerse/Scene mode */
+  --wp-teal-light:      #CCFBF1;   /* teal-100 */
+  --wp-green:           #10B981;   /* emerald-500: Correct / Mastered */
+  --wp-green-light:     #D1FAE5;   /* emerald-100 */
+  --wp-rose:            #F43F5E;   /* rose-500: Wrong answer */
+  --wp-rose-light:      #FFE4E6;   /* rose-100 */
+  --wp-blue:            #3B82F6;   /* blue-500: Primary actions */
+  --wp-slate:           #64748B;   /* slate-500: Muted details */
 
-  /* Text tokens */
-  --wp-text:            #262633;   /* headings, body text */
-  --wp-text-secondary:  #575757;   /* captions, metadata — #575757 gives 7.1:1 on white (WCAG AAA) */
-  --wp-text-on-brand:   #FFFFFF;   /* text on brand-colored fills */
+  /* Surface & Neutral Tokens */
+  --wp-surface:         #F8FAFC;   /* slate-50 background */
+  --wp-card:            #FFFFFF;   /* card background */
+  --wp-border:          #E2E8F0;   /* slate-200 border */
+  --wp-text:            #0F172A;   /* slate-900 foreground */
+  --wp-text-secondary:  #475569;   /* slate-600 secondary text (7.1:1 AAA) */
+  --wp-text-on-brand:   #FFFFFF;
 
-  /* Border tokens */
-  --wp-border:          #E6E6E6;   /* card borders, dividers */
+  /* Radius scale */
+  --wp-radius-sm:       4px;
+  --wp-radius-md:       8px;
+  --wp-radius-lg:       12px;
+  --wp-radius-xl:       16px;
+  --wp-radius-2xl:      20px;
+  --wp-radius-3xl:      24px;
+  --wp-radius-pill:     9999px;
 
-  /* Radius tokens (Untitled UI v8 scale) */
-  --wp-radius-sm:       4px;       /* tags, badges, micro-elements */
-  --wp-radius-md:       8px;       /* buttons, inputs, small cards */
-  --wp-radius-lg:       12px;      /* cards, containers, modals */
-  --wp-radius-xl:       16px;      /* image thumbnails, hero sections */
-  --wp-radius-2xl:      20px;      /* large modals, bottom sheets */
-  --wp-radius-3xl:      24px;      /* full-bleed panels */
-  --wp-radius-pill:     9999px;    /* pills, tags */
-
-  /* Spacing tokens */
-  --wp-space-xs:        4px;
-  --wp-space-sm:        6px;
-  --wp-space-md:        8px;
-  --wp-space-lg:        12px;
-  --wp-space-xl:        16px;
-  --wp-space-2xl:       20px;
-  --wp-space-3xl:       24px;
-
-  /* Shadow tokens */
+  /* Shadow scale */
   --wp-shadow-xs:       0 1px 3px rgba(0, 0, 0, 0.06);
   --wp-shadow-sm:       0 2px 8px rgba(0, 0, 0, 0.08);
   --wp-shadow-md:       0 4px 16px rgba(0, 0, 0, 0.10);
 
-  /* Typography scale */
-  --wp-text-xs:         12px;
-  --wp-text-sm:         14px;
-  --wp-text-md:         16px;
-  --wp-text-lg:         18px;
-  --wp-text-xl:         20px;
-  --wp-text-2xl:        24px;
-  --wp-text-3xl:        28px;
-  --wp-text-4xl:        32px;
-  --wp-text-5xl:        40px;
+  /* Font families */
+  --wp-font-base:       'Inter', 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --wp-font-arabic:     'Noto Sans Arabic', 'Cairo', sans-serif;
 
-  /* Font families — only these two fonts are used in the app */
-  --wp-font-base:       'Inter', ui-sans-serif, system-ui, sans-serif;
-  --wp-font-arabic:     'Noto Sans Arabic', sans-serif;
-
-  /* ─── Semantic bridge: WordPix → Untitled UI v8 / Tailwind utilities ──── */
+  /* Semantic Bridge Tokens */
   --background:         var(--wp-surface);
   --foreground:         var(--wp-text);
   --card:               var(--wp-card);
@@ -81,24 +66,15 @@
   --muted-foreground:   var(--wp-text-secondary);
   --accent:             var(--wp-green);
   --accent-foreground:  var(--wp-text-on-brand);
-  --destructive:        #EF4444;
+  --destructive:        var(--wp-rose);
   --destructive-foreground: #FFFFFF;
   --border:             var(--wp-border);
   --input:              transparent;
   --input-background:   var(--wp-surface);
   --ring:               var(--wp-brand);
-  --font-weight-medium: 500;
-  --font-weight-normal: 400;
-  --radius:             var(--wp-radius-lg);       /* base radius = 12px */
+  --radius:             var(--wp-radius-lg);
 
-  /* Chart colours reuse brand palette */
-  --chart-1: var(--wp-brand);
-  --chart-2: var(--wp-green);
-  --chart-3: var(--wp-blue);
-  --chart-4: var(--wp-amber);
-  --chart-5: var(--wp-brand-dark);
-
-  /* Sidebar (keep UUI sidebar tokens neutral) */
+  /* Sidebar Tokens */
   --sidebar:                    var(--wp-card);
   --sidebar-foreground:         var(--wp-text);
   --sidebar-primary:            var(--wp-brand);
@@ -110,25 +86,29 @@
 }
 
 .dark {
-  --wp-brand:           #D95959;
-  --wp-brand-dark:      #BF4747;
-  --wp-brand-light:     #331F1F;
-  --wp-green:           #4DB880;
-  --wp-blue:            #5A9BFF;
-  --wp-amber:           #FFE033;
-  --wp-slate:           #64748B;
-  --wp-surface:         #1A1A1F;
-  --wp-card:            #29292E;
-  --wp-green-light:     #1A3328;
-  --wp-text:            #F2F2F7;
-  --wp-text-secondary:  #A6ABB3;
-  --wp-text-on-brand:   #FFFFFF;
-  --wp-border:          #404047;
+  --wp-brand:           #A78BFA;   /* violet-400 */
+  --wp-brand-dark:      #8B5CF6;   /* violet-500 */
+  --wp-brand-light:     #2E1065;   /* violet-950 */
+
+  --wp-amber:           #FBBF24;   /* amber-400 */
+  --wp-teal:            #2DD4BF;   /* teal-400 */
+  --wp-teal-light:      #134E4A;   /* teal-900 */
+  --wp-green:           #34D399;   /* emerald-400 */
+  --wp-green-light:     #064E3B;   /* emerald-950 */
+  --wp-rose:            #FB7185;   /* rose-400 */
+  --wp-rose-light:      #4C0519;   /* rose-950 */
+  --wp-blue:            #60A5FA;   /* blue-400 */
+  --wp-slate:           #94A3B8;   /* slate-400 */
+
+  --wp-surface:         #0F172A;   /* slate-900 */
+  --wp-card:            #1E293B;   /* slate-800 */
+  --wp-border:          #334155;   /* slate-700 */
+  --wp-text:            #F8FAFC;   /* slate-50 */
+  --wp-text-secondary:  #94A3B8;   /* slate-400 */
+  --wp-text-on-brand:   #0F172A;
 }
 
-/* ─── @theme inline: register CSS vars as Tailwind v4 utility tokens ─────── */
 @theme inline {
-  /* Standard semantic tokens */
   --color-background:             var(--background);
   --color-foreground:             var(--foreground);
   --color-card:                   var(--card);
@@ -146,39 +126,26 @@
   --color-destructive:            var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border:                 var(--border);
-  --color-input:                  var(--input);
-  --color-input-background:       var(--input-background);
   --color-ring:                   var(--ring);
-  --color-chart-1:                var(--chart-1);
-  --color-chart-2:                var(--chart-2);
-  --color-chart-3:                var(--chart-3);
-  --color-chart-4:                var(--chart-4);
-  --color-chart-5:                var(--chart-5);
-  --color-sidebar:                var(--sidebar);
-  --color-sidebar-foreground:     var(--sidebar-foreground);
-  --color-sidebar-primary:        var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent:         var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border:         var(--sidebar-border);
-  --color-sidebar-ring:           var(--sidebar-ring);
 
-  /* WordPix brand utilities: bg-wp-brand, text-wp-blue, border-wp-green, etc. */
   --color-wp-brand:               var(--wp-brand);
   --color-wp-brand-dark:          var(--wp-brand-dark);
   --color-wp-brand-light:         var(--wp-brand-light);
-  --color-wp-green:               var(--wp-green);
-  --color-wp-blue:                var(--wp-blue);
   --color-wp-amber:               var(--wp-amber);
+  --color-wp-teal:                var(--wp-teal);
+  --color-wp-teal-light:          var(--wp-teal-light);
+  --color-wp-green:               var(--wp-green);
+  --color-wp-green-light:         var(--wp-green-light);
+  --color-wp-rose:                var(--wp-rose);
+  --color-wp-rose-light:          var(--wp-rose-light);
+  --color-wp-blue:                var(--wp-blue);
   --color-wp-slate:               var(--wp-slate);
   --color-wp-surface:             var(--wp-surface);
   --color-wp-card:                var(--wp-card);
-  --color-wp-green-light:         var(--wp-green-light);
+  --color-wp-border:              var(--wp-border);
   --color-wp-text:                var(--wp-text);
   --color-wp-text-secondary:      var(--wp-text-secondary);
-  --color-wp-border:              var(--wp-border);
 
-  /* Radius utilities: rounded-sm, rounded-md, rounded-lg, rounded-xl, rounded-2xl, rounded-3xl */
   --radius-sm:   var(--wp-radius-sm);
   --radius-md:   var(--wp-radius-md);
   --radius-lg:   var(--wp-radius-lg);
@@ -186,12 +153,10 @@
   --radius-2xl:  var(--wp-radius-2xl);
   --radius-3xl:  var(--wp-radius-3xl);
 
-  /* Shadow utilities: shadow-wp-xs, shadow-wp-sm, shadow-wp-md */
   --shadow-wp-xs: var(--wp-shadow-xs);
   --shadow-wp-sm: var(--wp-shadow-sm);
   --shadow-wp-md: var(--wp-shadow-md);
 
-  /* Font utilities: font-sans → Inter, font-arabic → Noto Sans Arabic */
   --font-sans:    var(--wp-font-base);
   --font-arabic:  var(--wp-font-arabic);
 }
@@ -201,14 +166,11 @@
     @apply border-border;
   }
 
-  /* WCAG 2.4.13 AAA — global focus-visible baseline: 2px brand outline, offset 2px.
-     Components may override with their own focus-visible utilities. */
   *:focus-visible {
     outline: 2px solid var(--wp-brand);
     outline-offset: 2px;
   }
 
-  /* Remove default :focus outline so only :focus-visible shows */
   *:focus:not(:focus-visible) {
     outline: none;
   }
