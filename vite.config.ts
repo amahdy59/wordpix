@@ -16,7 +16,6 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
-  // Explicit GitHub Pages subpath to ensure assets load correctly with or without trailing slash
   base: '/wordpix/',
   plugins: [
     figmaAssetResolver(),
@@ -26,6 +25,11 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
+      '@features': path.resolve(__dirname, './src/features'),
+      '@shared': path.resolve(__dirname, './src/shared'),
+      '@i18n': path.resolve(__dirname, './src/i18n'),
+      '@types': path.resolve(__dirname, './src/types'),
+      '@constants': path.resolve(__dirname, './src/constants'),
     },
   },
   assetsInclude: ['**/*.svg', '**/*.csv'],
