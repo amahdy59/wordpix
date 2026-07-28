@@ -29,7 +29,7 @@ export const VocabSidebar = memo(function VocabSidebar({
 
   return (
     <aside
-      className="hidden md:flex flex-col w-80 lg:w-96 xl:w-[420px] bg-wp-card border-l border-border"
+      className="hidden md:flex flex-col w-80 lg:w-96 xl:w-[420px] bg-wp-card border-l border-border h-full overflow-hidden shrink-0"
       aria-label="Bedroom vocabulary list"
     >
       {/* Panel header */}
@@ -80,7 +80,7 @@ export const VocabSidebar = memo(function VocabSidebar({
         </div>
       </div>
 
-      {/* Scrollable vocabulary word list */}
+      {/* Scrollable vocabulary word list — isolated scrolling */}
       <div
         className="flex-1 overflow-y-auto py-3 px-3 flex flex-col gap-1.5"
         role="list"
