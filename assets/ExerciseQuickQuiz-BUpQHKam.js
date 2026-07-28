@@ -1,4 +1,4 @@
-import{c as v,r as i,j as e,H as M}from"./index-BEcPIchK.js";import{L as _}from"./LessonHeader-BQAUHzF3.js";import"./BackButton-CghdGJ8t.js";import"./CloseButton-hER0Ia2F.js";/**
+import{c as v,r as i,j as e,H as M}from"./index-Co8Kvahg.js";import{L as _}from"./LessonHeader-CdTg79It.js";import"./BackButton-CC9dOYyY.js";import"./CloseButton-Cmvw-lYU.js";/**
  * @license lucide-react v0.487.0 - ISC
  *
  * This source code is licensed under the ISC license.
