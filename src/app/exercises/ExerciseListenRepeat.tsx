@@ -32,6 +32,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({ step, d
       const t = setTimeout(() => speak(WORD.en), 700);
       return () => clearTimeout(t);
     }
+    return undefined;
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isSupported]);
 

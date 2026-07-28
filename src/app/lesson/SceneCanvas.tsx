@@ -4,13 +4,13 @@ import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { CloseButton } from "../shared/CloseButton";
 import { AudioButton } from "../shared/AudioButton";
-import type { VocabWord } from "../data/lessons";
+import type { VocabItem } from "../data/lessons";
 
 const imgDefaultScene = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1000&q=80";
 
 interface Props {
-  activeWord: VocabWord;
-  hotspotWords: VocabWord[];
+  activeWord: VocabItem;
+  hotspotWords: VocabItem[];
   activeId: string;
   isPlaying: boolean;
   isError: boolean;

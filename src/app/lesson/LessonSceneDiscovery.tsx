@@ -23,6 +23,7 @@ export const LessonSceneDiscovery = memo(function LessonSceneDiscovery({ dispatc
       const t = setTimeout(() => speak("Pillow"), 900);
       return () => clearTimeout(t);
     }
+    return undefined;
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
