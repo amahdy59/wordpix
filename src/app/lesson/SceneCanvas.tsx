@@ -6,8 +6,8 @@ import { CloseButton } from "../shared/CloseButton";
 import { AudioButton } from "../shared/AudioButton";
 import type { VocabItem } from "../data/lessons";
 
-const imgDefaultScene = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1200&q=80";
-const imgFallbackWord  = "https://images.unsplash.com/photo-1595428774223-ef52624120d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&q=80";
+const imgDefaultScene = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=85";
+const imgFallbackWord  = "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1200&q=85";
 
 interface Props {
   activeWord: VocabItem;
@@ -114,7 +114,7 @@ export const SceneCanvas = memo(function SceneCanvas({
       {/* Main Display Canvas Container */}
       <div className="relative flex-1 flex flex-col items-center justify-between bg-slate-950 p-4 md:p-6 overflow-hidden min-h-[420px]">
         
-        {/* Main Displayed Picture (Fills dark blue area completely & matches selected word) */}
+        {/* Main Displayed Picture (HD 1200px+ resolution, un-cropped & un-distorted) */}
         <div className="relative w-full h-full flex-1 flex items-center justify-center overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-slate-900/60 p-0 my-auto">
           <img
             key={activeWord.id + viewMode}
