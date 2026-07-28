@@ -38,7 +38,7 @@ export const VocabSidebar = memo(function VocabSidebar({
           <div>
             <h2 className="font-sans font-bold text-foreground text-base">The Bedroom Vocabulary</h2>
             <p className="font-sans text-muted-foreground text-xs mt-0.5">
-              {filteredVocabulary.length} words · Select to hear pronunciation
+              {filteredVocabulary.length} words · Select to hear pronunciation &amp; view image
             </p>
           </div>
           <span className="font-sans font-semibold text-xs px-2.5 py-1 rounded-full bg-secondary text-primary">
@@ -90,20 +90,22 @@ export const VocabSidebar = memo(function VocabSidebar({
           const isActive = word.id === activeId;
           const isAudioPlaying = isPlaying && isActive;
           return (
-            <div
+            <button
               key={word.id}
+              type="button"
               role="listitem"
+              aria-selected={isActive}
+              onClick={() => onSelectWord(word.id)}
               className={[
-                "rounded-xl border p-3 flex items-center gap-3 cursor-pointer",
-                "motion-safe:transition-all group",
+                "w-full text-left rounded-xl border p-3 flex items-center gap-3 cursor-pointer",
+                "motion-safe:transition-all group focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary",
                 isActive
-                  ? "bg-secondary border-primary border-[2px]"
+                  ? "bg-secondary border-primary border-[2px] shadow-wp-xs"
                   : "bg-background border-border hover:border-primary/40 hover:bg-secondary/40",
               ].join(" ")}
-              onClick={() => onSelectWord(word.id)}
             >
               {/* Thumbnail */}
-              <div className="size-[56px] rounded-lg overflow-hidden shrink-0 border border-border">
+              <div className="size-[56px] rounded-lg overflow-hidden shrink-0 border border-border bg-muted flex items-center justify-center">
                 <img
                   src={word.img}
                   alt={word.label}
@@ -152,7 +154,7 @@ export const VocabSidebar = memo(function VocabSidebar({
                   size="sm"
                 />
               </div>
-            </div>
+            </button>
           );
         })}
       </div>
@@ -160,7 +162,7 @@ export const VocabSidebar = memo(function VocabSidebar({
       {/* Active word detail card + CTA */}
       <div className="shrink-0 border-t border-border p-4 bg-secondary/30">
         <div className="flex items-center gap-3 mb-4">
-          <div className="size-12 rounded-xl overflow-hidden border border-border shrink-0">
+          <div className="size-12 rounded-xl overflow-hidden border border-border shrink-0 bg-muted">
             <img
               src={activeWord.img}
               alt={activeWord.label}
@@ -179,7 +181,7 @@ export const VocabSidebar = memo(function VocabSidebar({
           onClick={onLearnWord}
           className="w-full bg-wp-blue rounded-xl py-3.5 font-sans font-bold text-white text-base min-h-[52px]
             focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
-            motion-safe:transition-opacity hover:opacity-90 active:opacity-80"
+            motion-safe:transition-opacity hover:opacity-90 active:opacity-80 shadow-wp-xs"
         >
           Learn &ldquo;{activeWord.label}&rdquo; →
         </button>
