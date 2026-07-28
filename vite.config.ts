@@ -16,8 +16,8 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
-  // Set relative base path so assets load correctly on GitHub Pages
-  base: './',
+  // Repository base path for GitHub Pages deployment
+  base: '/wordpix/',
   plugins: [
     figmaAssetResolver(),
     react(),
