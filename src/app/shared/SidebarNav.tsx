@@ -1,19 +1,18 @@
 import { memo } from "react";
-import { Home, Globe, RotateCcw, UserCircle } from "lucide-react";
+import { Home, Globe, RotateCcw, UserCircle, BookOpen } from "lucide-react";
 import type { TabId, Action } from "../types";
 
 interface NavItem {
   id: TabId;
   label: string;
-  labelAr: string;
   icon: React.ElementType;
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { id: "home",     label: "Home",     labelAr: "الرئيسية", icon: Home       },
-  { id: "explore",  label: "Explore",  labelAr: "استكشف",   icon: Globe      },
-  { id: "practice", label: "Practice", labelAr: "تدرّب",     icon: RotateCcw  },
-  { id: "profile",  label: "Profile",  labelAr: "الملف",    icon: UserCircle },
+  { id: "home",     label: "Home Dashboard", icon: Home       },
+  { id: "explore",  label: "Explore Worlds", icon: Globe      },
+  { id: "practice", label: "Daily Practice", icon: RotateCcw  },
+  { id: "profile",  label: "User Profile",   icon: UserCircle },
 ];
 
 interface Props {
@@ -22,94 +21,80 @@ interface Props {
 }
 
 /**
- * Desktop / tablet sidebar navigation.
+ * 72px Icon-Only Desktop & Tablet Sidebar Navigation
  *
- * Tablet (md):  64px wide — icon only.
- * Desktop (lg): 220px wide — icon + label + Arabic subtitle.
- * Mobile:       hidden — BottomTabBar handles mobile navigation.
+ * Modeled after modern workspace tools (Linear, Notion, Figma).
+ * Uses semantic tokens with active brand violet tint.
  */
 export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Props) {
   return (
     <aside
-      className="hidden md:flex flex-col bg-wp-card border-r border-border
-                 w-16 lg:w-[220px] shrink-0"
+      className="hidden md:flex flex-col items-center bg-wp-card border-r border-border
+                 w-[72px] shrink-0 py-4 justify-between select-none z-30"
       aria-label="Sidebar navigation"
     >
-      {/* Brand header */}
-      <div className="flex items-center gap-3 px-3 py-4 lg:px-5 lg:py-5 border-b border-border">
-        {/* using <div> instead of a kit brand component: no kit logo/brand-mark component exists */}
-        <div
-          className="size-9 rounded-xl bg-primary flex items-center justify-center shrink-0"
-          aria-hidden
+      {/* Top Brand Logo */}
+      <div className="flex flex-col items-center gap-4">
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "GO", to: "home" })}
+          title="WordPix Home"
+          aria-label="WordPix Home"
+          className="size-11 rounded-2xl bg-primary flex items-center justify-center shadow-wp-xs
+                     focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary
+                     hover:opacity-90 transition-all"
         >
-          <span className="font-sans font-black text-primary-foreground text-base leading-none">W</span>
-        </div>
-        <div className="hidden lg:flex flex-col leading-none gap-0.5">
-          <span className="font-sans font-black text-foreground text-lg leading-none">WordPix</span>
-          <span
-            className="font-arabic text-primary text-xs"
-            dir="auto"
-            lang="ar"
-          >
-            تعلّم الإنجليزية
-          </span>
-        </div>
+          <BookOpen className="size-5 text-primary-foreground" />
+        </button>
+
+        {/* Navigation Items */}
+        <nav
+          className="flex flex-col items-center gap-2 mt-4"
+          aria-label="Main navigation"
+        >
+          {NAV_ITEMS.map(({ id, label, icon: Icon }) => {
+            const isActive = activeTab === id;
+            return (
+              <button
+                key={id}
+                type="button"
+                onClick={() => dispatch({ type: "GO", to: id })}
+                aria-current={isActive ? "page" : undefined}
+                aria-label={label}
+                title={label}
+                className={`
+                  relative size-12 rounded-xl flex items-center justify-center
+                  focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2
+                  focus-visible:outline-primary transition-all group
+                  ${isActive
+                    ? "bg-secondary text-primary border border-primary/20 shadow-wp-xs"
+                    : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                  }
+                `}
+              >
+                <Icon className="size-5 shrink-0" aria-hidden />
+
+                {/* Tooltip on hover */}
+                <span className="absolute left-full ml-3 px-2.5 py-1 bg-slate-900 text-white font-sans text-xs font-semibold rounded-lg shadow-wp-md whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-50">
+                  {label}
+                </span>
+              </button>
+            );
+          })}
+        </nav>
       </div>
 
-      {/* Navigation items */}
-      <nav
-        className="flex-1 flex flex-col gap-1 p-2 lg:p-3"
-        aria-label="Main navigation"
-      >
-        {NAV_ITEMS.map(({ id, label, labelAr, icon: Icon }) => {
-          const isActive = activeTab === id;
-          return (
-            /* using <button> instead of a kit NavButton: no sidebar navigation component exists in the kit */
-            <button
-              key={id}
-              onClick={() => dispatch({ type: "GO", to: id })}
-              aria-current={isActive ? "page" : undefined}
-              aria-label={label}
-              title={label}
-              className={`
-                flex items-center gap-3 px-3 py-2.5 rounded-xl w-full
-                min-h-[44px] font-sans
-                focus-visible:outline focus-visible:outline-2
-                focus-visible:outline-offset-2 focus-visible:outline-primary
-                motion-safe:transition-colors
-                ${isActive
-                  ? "bg-secondary text-primary"
-                  : "text-muted-foreground hover:bg-muted hover:text-foreground"
-                }
-              `}
-            >
-              <Icon className="size-5 shrink-0" aria-hidden />
-              <div className="hidden lg:flex flex-col items-start leading-none gap-0.5">
-                <span className="font-semibold text-sm">{label}</span>
-                <span
-                  className="font-arabic text-[10px] opacity-70"
-                  dir="auto"
-                  lang="ar"
-                >
-                  {labelAr}
-                </span>
-              </div>
-            </button>
-          );
-        })}
-      </nav>
-
-      {/* Footer brand mark */}
-      <div className="border-t border-border p-3 lg:p-4">
-        <div className="hidden lg:block">
-          <p className="font-sans font-semibold text-muted-foreground text-xs">
-            WordPix · v1.0
-          </p>
-        </div>
-        {/* Tablet: small brand dot */}
-        <div className="flex lg:hidden items-center justify-center">
-          <div className="size-2 rounded-full bg-primary opacity-40" aria-hidden />
-        </div>
+      {/* Footer Profile Shortcut */}
+      <div className="flex flex-col items-center">
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "GO", to: "profile" })}
+          title="User Profile"
+          aria-label="User Profile"
+          className="size-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
+        >
+          <UserCircle className="size-6" />
+        </button>
       </div>
     </aside>
   );

@@ -12,12 +12,8 @@ interface Props {
 /**
  * Responsive application shell for all main tabbed screens.
  *
- * Mobile  (<768px): bottom tab bar pinned at the viewport bottom.
- * Tablet (768px+):  collapsible icon-only sidebar on the left.
- * Desktop (1024px+): expanded sidebar with icons + labels.
- *
- * Core screens (HomeDashboard, ExploreWorlds, etc.) render as children
- * and should NOT include their own StatusBar / BottomTabBar / HomeIndicator.
+ * Mobile  (<768px): bottom tab bar pinned at viewport bottom.
+ * Desktop (768px+): 72px icon-only sidebar on the left.
  */
 export const AppShell = memo(function AppShell({ activeTab, dispatch, children }: Props) {
   return (
@@ -28,11 +24,10 @@ export const AppShell = memo(function AppShell({ activeTab, dispatch, children }
       {/* Scrollable content area */}
       <main
         id="main-content"
-        className="flex-1 overflow-y-auto
-                   pb-[88px] md:pb-0"
+        className="flex-1 overflow-y-auto pb-[88px] md:pb-0"
         tabIndex={-1}
       >
-        <div className="mx-auto max-w-4xl w-full">
+        <div className="mx-auto max-w-6xl w-full">
           {children}
         </div>
       </main>
