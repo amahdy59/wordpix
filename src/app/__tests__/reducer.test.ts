@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import type { Screen, Action, OnboardStep } from "../types";
 
-const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "interests", "ready"];
+const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "ready"];
 
 function reducer(state: Screen, action: Action): Screen {
   if (action.type === "ONBOARD_NEXT") {
@@ -25,14 +25,11 @@ function reducer(state: Screen, action: Action): Screen {
 }
 
 describe("WordPix Navigation Reducer State Machine", () => {
-  it("should advance through adult onboarding steps correctly", () => {
+  it("should advance through streamlined onboarding steps correctly", () => {
     let state: Screen = { id: "onboarding", step: "splash" };
 
     state = reducer(state, { type: "ONBOARD_NEXT" });
     expect(state).toEqual({ id: "onboarding", step: "language" });
-
-    state = reducer(state, { type: "ONBOARD_NEXT" });
-    expect(state).toEqual({ id: "onboarding", step: "interests" });
 
     state = reducer(state, { type: "ONBOARD_NEXT" });
     expect(state).toEqual({ id: "onboarding", step: "ready" });

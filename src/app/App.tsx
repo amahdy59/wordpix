@@ -5,7 +5,6 @@ import { ErrorBoundary } from "./shared/ErrorBoundary";
 // Synchronous core onboarding screens
 import { SplashWelcome } from "./onboarding/SplashWelcome";
 import { LanguageSelect } from "./onboarding/LanguageSelect";
-import { InterestSelect } from "./onboarding/InterestSelect";
 import { ReadyCelebration } from "./onboarding/ReadyCelebration";
 
 // Synchronous core tab views
@@ -29,7 +28,7 @@ const ExerciseQuickQuiz = lazy(() => import("./exercises/ExerciseQuickQuiz").the
 
 // ── State machine ─────────────────────────────────────────────────────────────
 
-const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "interests", "ready"];
+const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "ready"];
 const TABBED_IDS: ReadonlySet<string> = new Set(["home", "explore", "practice", "profile"]);
 
 function reducer(state: Screen, action: Action): Screen {
@@ -83,7 +82,6 @@ export default function App() {
     if (state.id === "onboarding") {
       if (state.step === "splash") return <SplashWelcome dispatch={dispatch} />;
       if (state.step === "language") return <LanguageSelect dispatch={dispatch} />;
-      if (state.step === "interests") return <InterestSelect dispatch={dispatch} />;
       if (state.step === "ready") return <ReadyCelebration dispatch={dispatch} />;
     }
     if (state.id === "home") return <HomeDashboard dispatch={dispatch} />;

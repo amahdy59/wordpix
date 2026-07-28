@@ -32,7 +32,7 @@ export function LanguageSelect({ dispatch }: Props) {
       <header className="w-full max-w-md px-6 pt-4 flex items-center justify-between z-10">
         <span className="font-sans font-bold text-foreground text-sm">Set Your Goal</span>
         <span className="text-xs font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full border border-border">
-          Step 2 of 3
+          Step 2 of 2
         </span>
       </header>
 
@@ -121,7 +121,7 @@ export function LanguageSelect({ dispatch }: Props) {
             focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
             shadow-wp-xs transition-all flex items-center justify-center gap-2"
         >
-          <span>Continue</span>
+          <span>Complete Setup</span>
           <ArrowRight className="size-5" />
         </button>
       </footer>

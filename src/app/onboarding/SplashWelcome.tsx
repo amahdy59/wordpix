@@ -25,7 +25,7 @@ export function SplashWelcome({ dispatch }: Props) {
           <span className="font-sans font-bold text-foreground text-base tracking-tight">WordPix</span>
         </div>
         <span className="text-xs font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full border border-border">
-          Step 1 of 3
+          Step 1 of 2
         </span>
       </header>
 
