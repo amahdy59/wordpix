@@ -61,7 +61,7 @@ export const LessonSceneDiscovery = memo(function LessonSceneDiscovery({ selecte
   }, [stop, dispatch]);
 
   return (
-    <div className="bg-background flex flex-col md:flex-row h-svh md:overflow-hidden">
+    <div className="fixed inset-0 z-40 bg-background flex flex-col md:flex-row overflow-hidden overscroll-none">
       {/* Accessible live region */}
       <div role="status" aria-live="polite" aria-atomic="true" className="sr-only">
         {isPlaying ? `Now playing: ${activeWord.label}` : `Selected: ${activeWord.label}`}

@@ -6,6 +6,7 @@ import { HomeIndicator } from "../shared/HomeIndicator";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
 import { AudioButton } from "../shared/AudioButton";
+import { WordImage } from "../shared/WordImage";
 import { useAudio } from "../shared/useAudio";
 import { Volume2, Mic } from "lucide-react";
 
@@ -56,7 +57,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({ step, w
       <main className="flex-1 flex flex-col items-center justify-center w-full px-5 gap-5" aria-label="Listen and practice exercise">
         <section aria-label={`Word: ${word.label}`} className="bg-wp-card rounded-3xl border border-border p-5 flex flex-col items-center gap-4 w-full shadow-wp-xs max-w-md">
           <div className="h-44 relative rounded-xl w-full overflow-hidden bg-muted">
-            <img alt={word.label} className="absolute inset-0 object-cover size-full" src={word.img} width="600" height="400" />
+            <WordImage word={word} loading="eager" width="600" height="400" className="absolute inset-0 object-cover size-full" />
           </div>
           <div className="flex flex-col items-center gap-1.5">
             <h2 className="font-sans font-black text-foreground text-[32px] leading-none">{word.label}</h2>

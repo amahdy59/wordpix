@@ -16,6 +16,8 @@ export interface TopicCategory {
   itemsCount: number;
 }
 
+const LOCAL_WORD_IMAGES = "./word-images";
+
 export const BEDROOM_TOPICS: TopicCategory[] = [
   { id: "furniture", name: "Furniture", itemsCount: 10 },
   { id: "bedding", name: "Bedding & Linen", itemsCount: 10 },
@@ -32,7 +34,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     label: "Bed",
     phonetic: "bed",
     topic: "furniture",
-    img: "https://images.unsplash.com/photo-1540518614846-7ede433c517a?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/bed.jpg`,
     hotspot: { x: "28%", y: "58%" },
   },
   {
@@ -40,14 +42,14 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     label: "Nightstand",
     phonetic: "night-stand",
     topic: "furniture",
-    img: "https://images.unsplash.com/photo-1532323544230-7191fd51bc1b?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/nightstand.jpg`,
   },
   {
     id: "dresser",
     label: "Dresser",
     phonetic: "dres-ser",
     topic: "furniture",
-    img: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/dresser.jpg`,
   },
   {
     id: "wardrobe",
