@@ -3,6 +3,7 @@ import type { Action } from "../types";
 import type { VocabItem } from "../data/lessons";
 import { LessonHeader } from "../shared/LessonHeader";
 import { HomeIndicator } from "../shared/HomeIndicator";
+import { WordImage } from "../shared/WordImage";
 import { articleFor, getWordOptions } from "./exerciseContent";
 
 interface Props {
@@ -38,7 +39,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({ step, wor
       <main className="flex-1 flex flex-col items-center w-full px-5 gap-5 pt-4 max-w-md mx-auto">
         <h2 className="font-sans font-bold text-foreground text-xl text-center">Complete the sentence</h2>
         <div className="h-40 relative rounded-2xl w-full overflow-hidden border border-border bg-muted">
-          <img alt={word.label} className="absolute inset-0 object-cover size-full" src={word.img} width="800" height="500" />
+          <WordImage word={word} loading="eager" width="800" height="500" className="absolute inset-0 object-cover size-full" />
         </div>
         <p className="font-sans font-bold text-foreground text-xl text-center">
           This is {articleFor(word.label)} <span className="inline-block min-w-24 border-b-2 border-primary text-primary">{selectedWord?.label.toLowerCase() ?? "_______"}</span>.

@@ -5,6 +5,7 @@ import { LessonHeader } from "../shared/LessonHeader";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { Timer, TimerOff } from "lucide-react";
 import { getWordOptions } from "./exerciseContent";
+import { WordImage } from "../shared/WordImage";
 
 interface Props {
   step: number;
@@ -77,7 +78,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({ step, word, d
             const resultClass = checked && selected ? isCorrect ? "border-wp-green border-[3px]" : "border-wp-rose border-[3px]" : selected ? "border-primary border-[3px]" : "border-border";
             return (
               <button key={option.id} type="button" role="radio" aria-checked={selected} disabled={checked} onClick={() => setSelectedId(option.id)} className={`bg-wp-card rounded-xl border overflow-hidden focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary ${resultClass}`}>
-                <img alt={option.label} className="h-32 w-full object-cover" src={option.img} loading="lazy" width="400" height="300" />
+                <WordImage word={option} width="400" height="300" className="h-32 w-full object-cover" />
               </button>
             );
           })}

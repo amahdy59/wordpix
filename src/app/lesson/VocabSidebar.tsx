@@ -1,5 +1,6 @@
 import { memo, useState } from "react";
 import { AudioButton } from "../shared/AudioButton";
+import { WordImage } from "../shared/WordImage";
 import { BEDROOM_TOPICS, type VocabItem } from "../data/lessons";
 import { X } from "lucide-react";
 
@@ -34,7 +35,7 @@ export const VocabSidebar = memo(function VocabSidebar({
 
   return (
     <aside
-      className={`${mobileOpen ? "fixed inset-0 z-50 flex" : "hidden"} md:static md:flex flex-col w-full md:w-80 lg:w-96 xl:w-[420px] bg-wp-card border-l border-border h-full overflow-hidden shrink-0`}
+      className={`${mobileOpen ? "fixed inset-0 z-50 flex" : "hidden"} md:static md:flex flex-col min-h-0 max-h-svh w-full md:w-80 lg:w-96 xl:w-[420px] bg-wp-card border-l border-border h-full overflow-hidden overscroll-none shrink-0`}
       aria-label="Bedroom vocabulary list"
       aria-modal={mobileOpen || undefined}
       role={mobileOpen ? "dialog" : undefined}
@@ -99,7 +100,7 @@ export const VocabSidebar = memo(function VocabSidebar({
 
       {/* Scrollable vocabulary word list — isolated scrolling */}
       <div
-        className="flex-1 overflow-y-auto py-3 px-3 flex flex-col gap-1.5"
+        className="flex-1 min-h-0 overflow-y-auto overscroll-contain py-3 px-3 flex flex-col gap-1.5"
         role="list"
         aria-label="Vocabulary words"
       >
@@ -125,7 +126,7 @@ export const VocabSidebar = memo(function VocabSidebar({
                 className="flex flex-1 items-center gap-3 min-w-0 text-left rounded-lg focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
               >
                 <div className="size-[56px] rounded-lg overflow-hidden shrink-0 border border-border bg-muted flex items-center justify-center">
-                  <img src={word.img} alt={word.label} loading="lazy" width="56" height="56" className="size-full object-cover" />
+                  <WordImage word={word} width="56" height="56" className="size-full object-cover" />
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-1.5 mb-0.5">
@@ -151,14 +152,7 @@ export const VocabSidebar = memo(function VocabSidebar({
       <div className="shrink-0 border-t border-border p-4 bg-secondary/30">
         <div className="flex items-center gap-3 mb-4">
           <div className="size-12 rounded-xl overflow-hidden border border-border shrink-0 bg-muted">
-            <img
-              src={activeWord.img}
-              alt={activeWord.label}
-              loading="lazy"
-              width="48"
-              height="48"
-              className="size-full object-cover"
-            />
+            <WordImage word={activeWord} width="48" height="48" className="size-full object-cover" />
           </div>
           <div className="flex-1 min-w-0">
             <p className="font-sans font-black text-foreground text-xl leading-none">{activeWord.label}</p>

@@ -1,13 +1,13 @@
-import { memo, useState, useCallback } from "react";
-import { BookOpen, Volume2, Sparkles, Image as ImageIcon, MapPin, List } from "lucide-react";
+import { memo, useState } from "react";
+import { ArrowLeft, BookOpen, Volume2, Sparkles, Image as ImageIcon, MapPin, List } from "lucide-react";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { CloseButton } from "../shared/CloseButton";
 import { AudioButton } from "../shared/AudioButton";
+import { WordImage } from "../shared/WordImage";
 import type { VocabItem } from "../data/lessons";
 
 const imgDefaultScene = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=85";
-const imgFallbackWord  = "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1200&q=85";
 
 interface Props {
   activeWord: VocabItem;
@@ -33,19 +33,8 @@ export const SceneCanvas = memo(function SceneCanvas({
   onBrowseWords,
 }: Props) {
   const [viewMode, setViewMode] = useState<"word" | "scene">("word");
-  const [failedImgs, setFailedImgs] = useState<Record<string, boolean>>({});
 
-  // Determine main display image per active word ID
   const isWordView = viewMode === "word";
-  const targetImage = (isWordView && activeWord.img) ? activeWord.img : imgDefaultScene;
-  const isFailed = isWordView && failedImgs[activeWord.id];
-  const displayImage = isFailed ? imgFallbackWord : targetImage;
-
-  const handleImageError = useCallback(() => {
-    if (isWordView) {
-      setFailedImgs((prev) => ({ ...prev, [activeWord.id]: true }));
-    }
-  }, [isWordView, activeWord.id]);
 
   const handleSelectWordLocal = (id: string) => {
     onSelectWord(id);
@@ -53,13 +42,21 @@ export const SceneCanvas = memo(function SceneCanvas({
   };
 
   return (
-    <div className="relative flex-1 md:flex-[3] flex flex-col bg-background h-full overflow-hidden">
+    <section className="relative flex-1 md:flex-[3] min-w-0 min-h-0 flex flex-col bg-background h-full overflow-hidden" aria-label="Vocabulary scene">
       {/* Mobile status bar */}
       <div className="md:hidden shrink-0">
         <StatusBar />
       </div>
 
-      <div className="md:hidden flex items-center gap-2 px-4 py-2 bg-wp-card border-b border-border">
+      <div className="md:hidden flex items-center gap-2 px-3 py-2 bg-wp-card border-b border-border shrink-0">
+        <button
+          type="button"
+          onClick={onClose}
+          className="size-11 shrink-0 rounded-xl border border-border bg-wp-card text-foreground flex items-center justify-center"
+          aria-label="Back to lesson overview"
+        >
+          <ArrowLeft className="size-5" aria-hidden />
+        </button>
         <div className="flex flex-1 items-center bg-muted p-1 rounded-xl border border-border">
           {(["word", "scene"] as const).map((mode) => (
             <button
@@ -87,8 +84,17 @@ export const SceneCanvas = memo(function SceneCanvas({
       </div>
 
       {/* Desktop header bar */}
-      <div className="hidden md:flex items-center justify-between px-5 py-3.5 bg-wp-card border-b border-border shrink-0 z-10">
+      <header className="hidden md:flex items-center justify-between gap-4 px-5 py-3 bg-wp-card border-b border-border shrink-0 z-10">
         <div className="flex items-center gap-3">
+          <button
+            type="button"
+            onClick={onClose}
+            className="min-h-[44px] px-3 rounded-xl border border-border bg-wp-card text-foreground flex items-center gap-2 font-sans font-bold text-sm hover:bg-muted"
+            aria-label="Back to lesson overview"
+          >
+            <ArrowLeft className="size-4" aria-hidden />
+            Back
+          </button>
           <div className="size-9 rounded-xl bg-primary flex items-center justify-center shadow-wp-xs" aria-hidden>
             <BookOpen className="size-5 text-primary-foreground" />
           </div>
@@ -138,20 +144,27 @@ export const SceneCanvas = memo(function SceneCanvas({
             <span className="font-sans font-bold text-foreground text-sm">{activeWord.label}</span>
           </div>
         </div>
-      </div>
+      </header>
 
       {/* Main Display Canvas Container */}
-      <div className="relative flex-1 flex flex-col items-center justify-between bg-slate-950 p-4 md:p-6 overflow-hidden min-h-[420px]">
+      <div className="relative flex-1 min-h-0 flex flex-col items-center bg-slate-950 p-3 md:p-4 overflow-hidden">
         
         {/* Main Displayed Picture (HD 1200px+ resolution, un-cropped & un-distorted) */}
-        <div className="relative w-full h-full flex-1 flex items-center justify-center overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-slate-900/60 p-0 my-auto">
-          <img
-            key={activeWord.id + viewMode}
-            alt={!isWordView ? "Interactive bedroom scene" : activeWord.label}
-            className="size-full object-contain rounded-2xl shadow-lg motion-safe:transition-all motion-safe:duration-300"
-            src={displayImage}
-            onError={handleImageError}
-          />
+        <div className="relative w-full flex-1 min-h-0 flex items-center justify-center overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-slate-900/60">
+          {isWordView ? (
+            <WordImage
+              key={activeWord.id}
+              word={activeWord}
+              loading="eager"
+              className="size-full object-contain rounded-2xl shadow-lg motion-safe:transition-all motion-safe:duration-300"
+            />
+          ) : (
+            <img
+              alt="Interactive bedroom scene"
+              className="size-full object-contain rounded-2xl shadow-lg motion-safe:transition-all motion-safe:duration-300"
+              src={imgDefaultScene}
+            />
+          )}
 
           {/* Hotspots on Scene View */}
           {!isWordView && (
@@ -198,17 +211,10 @@ export const SceneCanvas = memo(function SceneCanvas({
         </div>
 
         {/* Floating Active Word Detail Overlay */}
-        <div className="w-full max-w-xl z-20 mt-4 pointer-events-auto shrink-0">
-          <div className="bg-wp-card/95 backdrop-blur-xl border border-border/80 rounded-2xl p-4 shadow-wp-md flex items-center gap-4 w-full">
-            <div className="size-16 rounded-xl overflow-hidden shrink-0 border border-border bg-muted flex items-center justify-center">
-              <img
-                src={activeWord.img}
-                alt={activeWord.label}
-                loading="lazy"
-                width="64"
-                height="64"
-                className="size-full object-cover"
-              />
+        <div className="w-full max-w-2xl z-20 mt-3 pointer-events-auto shrink-0">
+          <div className="bg-wp-card/95 backdrop-blur-xl border border-border/80 rounded-2xl p-3 md:p-4 shadow-wp-md flex items-center gap-3 md:gap-4 w-full">
+            <div className="size-14 md:size-16 rounded-xl overflow-hidden shrink-0 border border-border bg-muted flex items-center justify-center">
+              <WordImage word={activeWord} width="64" height="64" className="size-full object-cover" />
             </div>
 
             <div className="flex-1 min-w-0 flex flex-col gap-1">
@@ -246,8 +252,7 @@ export const SceneCanvas = memo(function SceneCanvas({
           </div>
         </div>
 
-        {/* Top-right close button */}
-        <div className="absolute top-4 right-4 z-30">
+        <div className="absolute top-3 right-3 z-30 md:hidden">
           <CloseButton onClick={onClose} aria-label="Close lesson and return to lesson overview" />
         </div>
       </div>
@@ -268,6 +273,6 @@ export const SceneCanvas = memo(function SceneCanvas({
       <div className="md:hidden shrink-0">
         <HomeIndicator />
       </div>
-    </div>
+    </section>
   );
 });
