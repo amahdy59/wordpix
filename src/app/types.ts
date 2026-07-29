@@ -3,6 +3,13 @@
 export type OnboardStep = "splash" | "language" | "ready";
 export type TabId = "home" | "explore" | "practice" | "profile";
 
+export interface AnswerAttempt {
+  exerciseStep: number;
+  wordId: string;
+  correct: boolean;
+  answeredAt: string;
+}
+
 export type Screen =
   | { id: "onboarding"; step: OnboardStep }
   | { id: "home" }
@@ -10,11 +17,20 @@ export type Screen =
   | { id: "practice" }
   | { id: "profile" }
   | { id: "lesson-entry" }
-  | { id: "lesson"; step: number }
-  | { id: "lesson-complete" };
+  | {
+      id: "lesson";
+      step: number;
+      selectedWordId: string;
+      attempts: AnswerAttempt[];
+      startedAt: string;
+    }
+  | { id: "lesson-complete"; selectedWordId: string; attempts: AnswerAttempt[] };
 
 export type Action =
   | { type: "ONBOARD_NEXT" }
   | { type: "GO"; to: TabId | "lesson-entry" | "lesson-complete" }
-  | { type: "START_LESSON" }
-  | { type: "LESSON_NEXT" };
+  | { type: "START_LESSON"; wordId?: string }
+  | { type: "LESSON_SELECT_WORD"; wordId: string }
+  | { type: "LESSON_ATTEMPT"; correct: boolean }
+  | { type: "LESSON_NEXT" }
+  | { type: "LESSON_PREVIOUS" };

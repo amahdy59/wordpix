@@ -1,6 +1,7 @@
-import { useReducer, lazy, Suspense } from "react";
+import { useEffect, useReducer, lazy, Suspense } from "react";
 import type { Screen, Action, OnboardStep, TabId } from "./types";
 import { ErrorBoundary } from "./shared/ErrorBoundary";
+import { BEDROOM_VOCABULARY } from "./data/lessons";
 
 // Synchronous core onboarding screens
 import { SplashWelcome } from "./onboarding/SplashWelcome";
@@ -31,7 +32,10 @@ const ExerciseQuickQuiz = lazy(() => import("./exercises/ExerciseQuickQuiz").the
 const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "ready"];
 const TABBED_IDS: ReadonlySet<string> = new Set(["home", "explore", "practice", "profile"]);
 
-function reducer(state: Screen, action: Action): Screen {
+const STORAGE_KEY = "wordpix:learner-state:v1";
+const DEFAULT_WORD_ID = "pillow";
+
+export function reducer(state: Screen, action: Action): Screen {
   if (action.type === "ONBOARD_NEXT") {
     if (state.id !== "onboarding") return state;
     const i = ONBOARD_STEPS.indexOf(state.step);
@@ -41,13 +45,59 @@ function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "GO") {
     if (action.to === "lesson-entry") return { id: "lesson-entry" };
-    if (action.to === "lesson-complete") return { id: "lesson-complete" };
+    if (action.to === "lesson-complete") {
+      if (state.id === "lesson") {
+        return {
+          id: "lesson-complete",
+          selectedWordId: state.selectedWordId,
+          attempts: state.attempts,
+        };
+      }
+      return state;
+    }
     return { id: action.to };
   }
-  if (action.type === "START_LESSON") return { id: "lesson", step: 0 };
+  if (action.type === "START_LESSON") {
+    return {
+      id: "lesson",
+      step: 0,
+      selectedWordId: action.wordId ?? DEFAULT_WORD_ID,
+      attempts: [],
+      startedAt: new Date().toISOString(),
+    };
+  }
+  if (action.type === "LESSON_SELECT_WORD") {
+    if (state.id !== "lesson" || state.step !== 0) return state;
+    return { ...state, selectedWordId: action.wordId };
+  }
+  if (action.type === "LESSON_ATTEMPT") {
+    if (state.id !== "lesson") return state;
+    return {
+      ...state,
+      attempts: [
+        ...state.attempts,
+        {
+          exerciseStep: state.step,
+          wordId: state.selectedWordId,
+          correct: action.correct,
+          answeredAt: new Date().toISOString(),
+        },
+      ],
+    };
+  }
   if (action.type === "LESSON_NEXT") {
     if (state.id !== "lesson") return state;
-    return state.step >= 5 ? { id: "lesson-complete" } : { id: "lesson", step: state.step + 1 };
+    return state.step >= 5
+      ? {
+          id: "lesson-complete",
+          selectedWordId: state.selectedWordId,
+          attempts: state.attempts,
+        }
+      : { ...state, step: state.step + 1 };
+  }
+  if (action.type === "LESSON_PREVIOUS") {
+    if (state.id !== "lesson") return state;
+    return { ...state, step: Math.max(0, state.step - 1) };
   }
   return state;
 }
@@ -76,7 +126,31 @@ const SkipLink = () => (
 );
 
 export default function App() {
-  const [state, dispatch] = useReducer(reducer, { id: "onboarding", step: "splash" });
+  const [state, dispatch] = useReducer(
+    reducer,
+    { id: "onboarding", step: "splash" },
+    (fallback): Screen => {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (!saved) return fallback;
+        const parsed = JSON.parse(saved) as Screen;
+        if (!parsed || typeof parsed !== "object" || typeof parsed.id !== "string") return fallback;
+        if (
+          parsed.id === "lesson" &&
+          !BEDROOM_VOCABULARY.some((word) => word.id === parsed.selectedWordId)
+        ) {
+          return fallback;
+        }
+        return parsed;
+      } catch {
+        return fallback;
+      }
+    }
+  );
+
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  }, [state]);
 
   function renderContent() {
     if (state.id === "onboarding") {
@@ -91,14 +165,17 @@ export default function App() {
     if (state.id === "lesson-entry") return <LessonWorldEntry dispatch={dispatch} />;
     if (state.id === "lesson") {
       const ex: ExStep = EX_STEPS[state.step] ?? "scene";
-      if (ex === "scene") return <LessonSceneDiscovery dispatch={dispatch} />;
-      if (ex === "listen") return <ExerciseListenRepeat step={state.step} dispatch={dispatch} />;
-      if (ex === "recall") return <ExerciseRecallMatch step={state.step} dispatch={dispatch} />;
-      if (ex === "fill") return <ExerciseContextFill step={state.step} dispatch={dispatch} />;
-      if (ex === "builder") return <ExerciseSentenceBuilder step={state.step} dispatch={dispatch} />;
-      if (ex === "quiz") return <ExerciseQuickQuiz step={state.step} dispatch={dispatch} />;
+      const word = BEDROOM_VOCABULARY.find((item) => item.id === state.selectedWordId) ?? BEDROOM_VOCABULARY[0];
+      if (ex === "scene") return <LessonSceneDiscovery selectedWordId={word.id} dispatch={dispatch} />;
+      if (ex === "listen") return <ExerciseListenRepeat word={word} step={state.step} dispatch={dispatch} />;
+      if (ex === "recall") return <ExerciseRecallMatch word={word} step={state.step} dispatch={dispatch} />;
+      if (ex === "fill") return <ExerciseContextFill word={word} step={state.step} dispatch={dispatch} />;
+      if (ex === "builder") return <ExerciseSentenceBuilder word={word} step={state.step} dispatch={dispatch} />;
+      if (ex === "quiz") return <ExerciseQuickQuiz word={word} step={state.step} dispatch={dispatch} />;
     }
-    if (state.id === "lesson-complete") return <LessonCompleteResults dispatch={dispatch} />;
+    if (state.id === "lesson-complete") {
+      return <LessonCompleteResults attempts={state.attempts} selectedWordId={state.selectedWordId} dispatch={dispatch} />;
+    }
     return null;
   }
 

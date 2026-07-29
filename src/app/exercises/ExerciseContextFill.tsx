@@ -1,152 +1,62 @@
-import { memo, useState } from "react";
+import { memo, useMemo, useState } from "react";
 import type { Action } from "../types";
+import type { VocabItem } from "../data/lessons";
 import { LessonHeader } from "../shared/LessonHeader";
 import { HomeIndicator } from "../shared/HomeIndicator";
-import { Check, X, ArrowRight } from "lucide-react";
-
-const imgClue = "https://images.unsplash.com/photo-1623944436679-5412c658a358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
+import { articleFor, getWordOptions } from "./exerciseContent";
 
 interface Props {
   step: number;
+  word: VocabItem;
   dispatch: React.Dispatch<Action>;
 }
 
-const CHIPS = ["pillow", "blanket", "lamp", "curtain"];
-const CORRECT = "pillow";
-
-export const ExerciseContextFill = memo(function ExerciseContextFill({ step, dispatch }: Props) {
-  const [sel, setSel] = useState<string | null>(null);
+export const ExerciseContextFill = memo(function ExerciseContextFill({ step, word, dispatch }: Props) {
+  const options = useMemo(() => getWordOptions(word), [word]);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
   const [checked, setChecked] = useState(false);
+  const isCorrect = selectedId === word.id;
+  const selectedWord = options.find((item) => item.id === selectedId);
 
-  const isCorrect = sel === CORRECT;
-
-  const handleCheck = () => {
-    if (!sel) return;
+  const handleAction = () => {
+    if (checked) {
+      if (isCorrect) dispatch({ type: "LESSON_NEXT" });
+      else {
+        setSelectedId(null);
+        setChecked(false);
+      }
+      return;
+    }
+    if (!selectedId) return;
     setChecked(true);
-    setTimeout(() => dispatch({ type: "LESSON_NEXT" }), 1200);
+    dispatch({ type: "LESSON_ATTEMPT", correct: isCorrect });
   };
 
   return (
-    <div className="bg-background content-stretch flex flex-col items-start justify-between min-h-full relative">
-      <LessonHeader
-        title="Complete the Sentence"
-        step={step}
-        onBack={() => dispatch({ type: "LESSON_NEXT" })}
-        onClose={() => dispatch({ type: "GO", to: "home" })}
-      />
-
-      <main className="flex-1 flex flex-col items-center w-full px-5 gap-4 pt-4 max-w-md mx-auto">
-        <h2 className="font-sans font-bold text-foreground text-xl text-center w-full">
-          Complete the Sentence
-        </h2>
-
-        {/* Clue image */}
-        <div className="h-36 relative rounded-2xl w-full overflow-hidden border border-border bg-muted shadow-wp-xs">
-          <img
-            alt="A bedroom with a pillow on the bed"
-            className="absolute inset-0 object-cover size-full"
-            src={imgClue}
-          />
+    <div className="bg-background flex flex-col justify-between min-h-full relative">
+      <LessonHeader title="Complete the Sentence" step={step} onBack={() => dispatch({ type: "LESSON_PREVIOUS" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <main className="flex-1 flex flex-col items-center w-full px-5 gap-5 pt-4 max-w-md mx-auto">
+        <h2 className="font-sans font-bold text-foreground text-xl text-center">Complete the sentence</h2>
+        <div className="h-40 relative rounded-2xl w-full overflow-hidden border border-border bg-muted">
+          <img alt={word.label} className="absolute inset-0 object-cover size-full" src={word.img} width="800" height="500" />
         </div>
-
-        {/* Sentence with blank */}
-        <div className="flex flex-wrap items-center justify-center gap-2 w-full my-2">
-          {["She", "sleeps", "on", "the"].map((word) => (
-            <span
-              key={word}
-              className="font-sans font-bold text-foreground text-xl"
-            >
-              {word}
-            </span>
+        <p className="font-sans font-bold text-foreground text-xl text-center">
+          This is {articleFor(word.label)} <span className="inline-block min-w-24 border-b-2 border-primary text-primary">{selectedWord?.label.toLowerCase() ?? "_______"}</span>.
+        </p>
+        <div role="group" aria-label="Word choices" className="flex flex-wrap gap-2.5 justify-center">
+          {options.map((option) => (
+            <button key={option.id} type="button" aria-pressed={selectedId === option.id} disabled={checked} onClick={() => setSelectedId(option.id)} className={`rounded-xl px-4 py-2.5 font-sans font-bold text-sm border min-h-[44px] ${selectedId === option.id ? "bg-primary border-primary text-primary-foreground" : "bg-wp-card border-border text-foreground"}`}>
+              {option.label.toLowerCase()}
+            </button>
           ))}
-          <div
-            className={`inline-flex items-center justify-center rounded-xl min-w-[90px] h-10 px-3 border-2 transition-all ${
-              sel
-                ? checked
-                  ? isCorrect
-                    ? "border-wp-green bg-wp-green-light"
-                    : "border-wp-rose bg-wp-rose-light"
-                  : "border-primary bg-secondary"
-                : "border-dashed border-primary/50"
-            }`}
-            aria-live="polite"
-            aria-label={sel ? `Selected: ${sel}` : "Blank to fill"}
-          >
-            {sel && (
-              <span
-                className={`font-sans font-bold text-base ${
-                  checked ? (isCorrect ? "text-wp-green" : "text-wp-rose") : "text-primary"
-                }`}
-              >
-                {sel}
-              </span>
-            )}
-          </div>
-          <span className="font-sans font-bold text-foreground text-xl">.</span>
         </div>
-
-        {/* Word choices */}
-        <div
-          role="group"
-          aria-label="Word choices"
-          className="flex flex-wrap gap-2.5 justify-center mt-2"
-        >
-          {CHIPS.map((chip) => {
-            const isSelected = sel === chip;
-            return (
-              <button
-                key={chip}
-                type="button"
-                aria-pressed={isSelected}
-                disabled={checked}
-                onClick={() => !checked && setSel(isSelected ? null : chip)}
-                className={`rounded-xl px-4 py-2.5 font-sans font-bold text-sm border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed motion-safe:transition-all shadow-wp-xs ${
-                  isSelected
-                    ? "bg-primary border-primary text-white"
-                    : "bg-wp-card border-border text-foreground hover:border-primary/40"
-                }`}
-              >
-                {chip}
-              </button>
-            );
-          })}
-        </div>
+        {checked && <p role="status" aria-live="polite" className={`w-full rounded-xl p-3 text-sm font-sans font-semibold ${isCorrect ? "bg-wp-green-light text-wp-green" : "bg-wp-rose-light text-wp-rose"}`}>{isCorrect ? "Correct. The sentence now matches the picture." : `Try again — the picture shows ${articleFor(word.label)} ${word.label.toLowerCase()}.`}</p>}
       </main>
-
       <footer className="w-full max-w-md mx-auto px-5 pb-10 pt-3">
-        <button
-          type="button"
-          onClick={handleCheck}
-          disabled={!sel || checked}
-          className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 disabled:opacity-40 disabled:cursor-not-allowed motion-safe:transition-all shadow-wp-xs flex items-center justify-center gap-2 ${
-            checked
-              ? isCorrect
-                ? "bg-wp-green focus-visible:outline-wp-green"
-                : "bg-wp-rose focus-visible:outline-wp-rose"
-              : "bg-wp-blue focus-visible:outline-wp-blue"
-          }`}
-        >
-          {checked ? (
-            isCorrect ? (
-              <>
-                <Check className="size-5" />
-                <span>Correct!</span>
-              </>
-            ) : (
-              <>
-                <X className="size-5" />
-                <span>Try Again</span>
-              </>
-            )
-          ) : (
-            <>
-              <span>Check Answer</span>
-              <ArrowRight className="size-5" />
-            </>
-          )}
+        <button type="button" onClick={handleAction} disabled={!selectedId} className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] disabled:opacity-40 ${checked ? isCorrect ? "bg-wp-green" : "bg-wp-rose" : "bg-wp-blue"}`}>
+          {checked ? isCorrect ? "Continue" : "Try Again" : "Check Answer"}
         </button>
       </footer>
-
       <HomeIndicator />
     </div>
   );

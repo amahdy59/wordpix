@@ -24,6 +24,19 @@ export function LanguageSelect({ dispatch }: Props) {
   const [level, setLevel] = useState<string>("a1");
   const [goal, setGoal] = useState<string>("10min");
 
+  const handleStart = () => {
+    localStorage.setItem(
+      "wordpix:learner-profile:v1",
+      JSON.stringify({
+        englishLevel: level.toUpperCase(),
+        dailyGoalMinutes: Number.parseInt(goal, 10),
+        onboardingCompleted: true,
+        updatedAt: new Date().toISOString(),
+      })
+    );
+    dispatch({ type: "ONBOARD_NEXT" });
+  };
+
   return (
     <div className="bg-background content-stretch flex flex-col items-center justify-between min-h-svh relative overflow-hidden">
       <StatusBar />
@@ -125,7 +138,7 @@ export function LanguageSelect({ dispatch }: Props) {
       <footer className="w-full max-w-md px-6 pb-8 pt-2 flex flex-col gap-3 z-10">
         <button
           type="button"
-          onClick={() => dispatch({ type: "ONBOARD_NEXT" })}
+          onClick={handleStart}
           className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 font-sans font-bold text-white text-base min-h-[52px]
             focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
             shadow-wp-xs transition-all flex items-center justify-center gap-2"

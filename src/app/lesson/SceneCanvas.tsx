@@ -1,5 +1,5 @@
 import { memo, useState, useCallback } from "react";
-import { BookOpen, Volume2, Sparkles, Image as ImageIcon, MapPin } from "lucide-react";
+import { BookOpen, Volume2, Sparkles, Image as ImageIcon, MapPin, List } from "lucide-react";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { CloseButton } from "../shared/CloseButton";
@@ -18,6 +18,7 @@ interface Props {
   onSelectWord: (id: string) => void;
   onLearnWord: () => void;
   onClose: () => void;
+  onBrowseWords: () => void;
 }
 
 export const SceneCanvas = memo(function SceneCanvas({
@@ -29,6 +30,7 @@ export const SceneCanvas = memo(function SceneCanvas({
   onSelectWord,
   onLearnWord,
   onClose,
+  onBrowseWords,
 }: Props) {
   const [viewMode, setViewMode] = useState<"word" | "scene">("word");
   const [failedImgs, setFailedImgs] = useState<Record<string, boolean>>({});
@@ -55,6 +57,33 @@ export const SceneCanvas = memo(function SceneCanvas({
       {/* Mobile status bar */}
       <div className="md:hidden shrink-0">
         <StatusBar />
+      </div>
+
+      <div className="md:hidden flex items-center gap-2 px-4 py-2 bg-wp-card border-b border-border">
+        <div className="flex flex-1 items-center bg-muted p-1 rounded-xl border border-border">
+          {(["word", "scene"] as const).map((mode) => (
+            <button
+              key={mode}
+              type="button"
+              onClick={() => setViewMode(mode)}
+              aria-pressed={viewMode === mode}
+              className={`flex-1 min-h-[44px] rounded-lg text-xs font-sans font-bold capitalize ${
+                viewMode === mode ? "bg-wp-card text-primary shadow-wp-xs" : "text-muted-foreground"
+              }`}
+            >
+              {mode}
+            </button>
+          ))}
+        </div>
+        <button
+          type="button"
+          onClick={onBrowseWords}
+          className="min-h-[44px] px-3 rounded-xl border border-border bg-wp-card text-foreground flex items-center gap-1.5 text-xs font-sans font-bold"
+          aria-label="Browse all 56 bedroom words"
+        >
+          <List className="size-4" aria-hidden />
+          Words
+        </button>
       </div>
 
       {/* Desktop header bar */}
@@ -119,7 +148,7 @@ export const SceneCanvas = memo(function SceneCanvas({
           <img
             key={activeWord.id + viewMode}
             alt={!isWordView ? "Interactive bedroom scene" : activeWord.label}
-            className="size-full object-cover rounded-2xl shadow-lg transition-all duration-300"
+            className="size-full object-contain rounded-2xl shadow-lg motion-safe:transition-all motion-safe:duration-300"
             src={displayImage}
             onError={handleImageError}
           />
@@ -150,7 +179,7 @@ export const SceneCanvas = memo(function SceneCanvas({
                     style={{ left: word.hotspot!.x, top: word.hotspot!.y }}
                   >
                     {isActive ? (
-                      <div className="bg-wp-amber/95 backdrop-blur-md rounded-full px-3 py-1.5 flex items-center gap-1.5 shadow-wp-md border border-white/40 animate-bounce">
+                      <div className="bg-wp-amber/95 backdrop-blur-md rounded-full px-3 py-1.5 flex items-center gap-1.5 shadow-wp-md border border-white/40 motion-safe:animate-bounce">
                         <Volume2 className="size-3.5 text-foreground shrink-0" aria-hidden />
                         <span className="font-sans font-bold text-foreground text-xs whitespace-nowrap">
                           {word.label}
@@ -175,6 +204,9 @@ export const SceneCanvas = memo(function SceneCanvas({
               <img
                 src={activeWord.img}
                 alt={activeWord.label}
+                loading="lazy"
+                width="64"
+                height="64"
                 className="size-full object-cover"
               />
             </div>

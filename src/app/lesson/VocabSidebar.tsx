@@ -1,6 +1,7 @@
 import { memo, useState } from "react";
 import { AudioButton } from "../shared/AudioButton";
 import { BEDROOM_TOPICS, type VocabItem } from "../data/lessons";
+import { X } from "lucide-react";
 
 interface Props {
   vocabulary: VocabItem[];
@@ -10,6 +11,8 @@ interface Props {
   isError: boolean;
   onSelectWord: (id: string) => void;
   onLearnWord: () => void;
+  mobileOpen?: boolean;
+  onMobileClose?: () => void;
 }
 
 export const VocabSidebar = memo(function VocabSidebar({
@@ -20,6 +23,8 @@ export const VocabSidebar = memo(function VocabSidebar({
   isError,
   onSelectWord,
   onLearnWord,
+  mobileOpen = false,
+  onMobileClose,
 }: Props) {
   const [selectedTopic, setSelectedTopic] = useState<string>("all");
 
@@ -29,8 +34,10 @@ export const VocabSidebar = memo(function VocabSidebar({
 
   return (
     <aside
-      className="hidden md:flex flex-col w-80 lg:w-96 xl:w-[420px] bg-wp-card border-l border-border h-full overflow-hidden shrink-0"
+      className={`${mobileOpen ? "fixed inset-0 z-50 flex" : "hidden"} md:static md:flex flex-col w-full md:w-80 lg:w-96 xl:w-[420px] bg-wp-card border-l border-border h-full overflow-hidden shrink-0`}
       aria-label="Bedroom vocabulary list"
+      aria-modal={mobileOpen || undefined}
+      role={mobileOpen ? "dialog" : undefined}
     >
       {/* Panel header */}
       <div className="px-5 py-4 border-b border-border shrink-0">
@@ -41,17 +48,28 @@ export const VocabSidebar = memo(function VocabSidebar({
               {filteredVocabulary.length} words · Select to view &amp; listen
             </p>
           </div>
-          <span className="font-sans font-semibold text-xs px-2.5 py-1 rounded-full bg-secondary text-primary">
-            Level 1 · A1
-          </span>
+          <div className="flex items-center gap-2">
+            <span className="font-sans font-semibold text-xs px-2.5 py-1 rounded-full bg-secondary text-primary">
+              Level 1 · A1
+            </span>
+            {mobileOpen && (
+              <button
+                type="button"
+                onClick={onMobileClose}
+                aria-label="Close vocabulary browser"
+                className="md:hidden size-11 rounded-xl border border-border flex items-center justify-center"
+              >
+                <X className="size-5" aria-hidden />
+              </button>
+            )}
+          </div>
         </div>
 
         {/* Topic Filter Chips */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar" role="tablist" aria-label="Vocabulary Topics">
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar" aria-label="Filter vocabulary by topic">
           <button
             type="button"
-            role="tab"
-            aria-selected={selectedTopic === "all"}
+            aria-pressed={selectedTopic === "all"}
             onClick={() => setSelectedTopic("all")}
             className={`px-3 py-1 rounded-full text-xs font-sans font-semibold shrink-0 transition-colors ${
               selectedTopic === "all"
@@ -65,8 +83,7 @@ export const VocabSidebar = memo(function VocabSidebar({
             <button
               key={topic.id}
               type="button"
-              role="tab"
-              aria-selected={selectedTopic === topic.id}
+              aria-pressed={selectedTopic === topic.id}
               onClick={() => setSelectedTopic(topic.id)}
               className={`px-3 py-1 rounded-full text-xs font-sans font-semibold shrink-0 transition-colors ${
                 selectedTopic === topic.id
@@ -90,64 +107,42 @@ export const VocabSidebar = memo(function VocabSidebar({
           const isActive = word.id === activeId;
           const isAudioPlaying = isPlaying && isActive;
           return (
-            <button
+            <div
               key={word.id}
-              type="button"
               role="listitem"
-              aria-selected={isActive}
-              onClick={() => onSelectWord(word.id)}
               className={[
-                "w-full text-left rounded-xl border p-3 flex items-center gap-3 cursor-pointer",
-                "motion-safe:transition-all group focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary",
+                "w-full rounded-xl border p-2 flex items-center gap-2",
+                "motion-safe:transition-all group",
                 isActive
                   ? "bg-secondary border-primary border-[2px] shadow-wp-xs"
                   : "bg-background border-border hover:border-primary/40 hover:bg-secondary/40",
               ].join(" ")}
             >
-              {/* Thumbnail */}
-              <div className="size-[56px] rounded-lg overflow-hidden shrink-0 border border-border bg-muted flex items-center justify-center">
-                <img
-                  src={word.img}
-                  alt={word.label}
-                  className="size-full object-cover"
-                />
-              </div>
-
-              {/* Word information */}
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-1.5 mb-0.5">
-                  <span
-                    className={`font-sans font-bold text-base truncate ${
-                      isActive ? "text-primary" : "text-foreground"
-                    }`}
-                  >
-                    {word.label}
-                  </span>
-                  {word.hotspot && (
-                    <span
-                      className="text-[10px] font-sans font-semibold text-wp-green bg-wp-green-light rounded-full px-1.5 py-0.5 shrink-0"
-                      aria-label="Visible in scene"
-                    >
-                      in scene
-                    </span>
-                  )}
+              <button
+                type="button"
+                aria-pressed={isActive}
+                onClick={() => onSelectWord(word.id)}
+                className="flex flex-1 items-center gap-3 min-w-0 text-left rounded-lg focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+              >
+                <div className="size-[56px] rounded-lg overflow-hidden shrink-0 border border-border bg-muted flex items-center justify-center">
+                  <img src={word.img} alt={word.label} loading="lazy" width="56" height="56" className="size-full object-cover" />
                 </div>
-                <p className="font-sans text-muted-foreground text-xs">
-                  /{word.phonetic}/
-                </p>
-              </div>
-
-              {/* Audio button */}
-              <div onClick={(e) => e.stopPropagation()} className="shrink-0">
-                <AudioButton
-                  onPlay={() => onSelectWord(word.id)}
-                  isPlaying={isAudioPlaying}
-                  isError={isError}
-                  label={`Play pronunciation of ${word.label}`}
-                  size="sm"
-                />
-              </div>
-            </button>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-1.5 mb-0.5">
+                    <span className={`font-sans font-bold text-base truncate ${isActive ? "text-primary" : "text-foreground"}`}>{word.label}</span>
+                    {word.hotspot && <span className="text-[10px] font-sans font-semibold text-wp-green bg-wp-green-light rounded-full px-1.5 py-0.5 shrink-0" aria-label="Visible in scene">in scene</span>}
+                  </div>
+                  <p className="font-sans text-muted-foreground text-xs">/{word.phonetic}/</p>
+                </div>
+              </button>
+              <AudioButton
+                onPlay={() => onSelectWord(word.id)}
+                isPlaying={isAudioPlaying}
+                isError={isError}
+                label={`Play pronunciation of ${word.label}`}
+                size="sm"
+              />
+            </div>
           );
         })}
       </div>
@@ -159,6 +154,9 @@ export const VocabSidebar = memo(function VocabSidebar({
             <img
               src={activeWord.img}
               alt={activeWord.label}
+              loading="lazy"
+              width="48"
+              height="48"
               className="size-full object-cover"
             />
           </div>

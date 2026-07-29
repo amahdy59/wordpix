@@ -38,9 +38,9 @@ export function ReadyCelebration({ dispatch }: Props) {
 
         {/* Decorative Highlights */}
         <div aria-hidden className="flex items-center justify-center gap-3 text-primary">
-          <Sparkles className="size-5 animate-pulse" />
+          <Sparkles className="size-5 motion-safe:animate-pulse" />
           <span className="font-sans font-bold text-xs text-foreground uppercase tracking-widest">Level 1 · The Bedroom</span>
-          <Sparkles className="size-5 animate-pulse" />
+          <Sparkles className="size-5 motion-safe:animate-pulse" />
         </div>
       </main>
 
