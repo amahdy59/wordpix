@@ -10,7 +10,7 @@
 
 :root {
   /* Brand Tokens (Violet) */
-  --wp-brand:           #7C3AED;   /* violet-600 */
+  --wp-brand:           #5B21B6;   /* violet-800: AAA with white text */
   --wp-brand-dark:      #6D28D9;   /* violet-700 */
   --wp-brand-light:     #F5F3FF;   /* violet-50 */
 
@@ -22,7 +22,7 @@
   --wp-green-light:     #D1FAE5;   /* emerald-100 */
   --wp-rose:            #F43F5E;   /* rose-500: Wrong answer */
   --wp-rose-light:      #FFE4E6;   /* rose-100 */
-  --wp-blue:            #3B82F6;   /* blue-500: Primary actions */
+  --wp-blue:            #1D4ED8;   /* blue-700: AAA with white text */
   --wp-slate:           #64748B;   /* slate-500: Muted details */
 
   /* Surface & Neutral Tokens */
@@ -97,7 +97,7 @@
   --wp-green-light:     #064E3B;   /* emerald-950 */
   --wp-rose:            #FB7185;   /* rose-400 */
   --wp-rose-light:      #4C0519;   /* rose-950 */
-  --wp-blue:            #60A5FA;   /* blue-400 */
+  --wp-blue:            #1E40AF;   /* blue-800: high contrast with white text */
   --wp-slate:           #94A3B8;   /* slate-400 */
 
   --wp-surface:         #0F172A;   /* slate-900 */
@@ -105,7 +105,7 @@
   --wp-border:          #334155;   /* slate-700 */
   --wp-text:            #F8FAFC;   /* slate-50 */
   --wp-text-secondary:  #94A3B8;   /* slate-400 */
-  --wp-text-on-brand:   #0F172A;
+  --wp-text-on-brand:   #FFFFFF;
 }
 
 @theme inline {

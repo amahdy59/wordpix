@@ -32,7 +32,7 @@ export function SplashWelcome({ dispatch }: Props) {
       {/* Main content */}
       <main className="flex-1 flex flex-col items-center justify-center w-full max-w-md px-6 py-6 text-center gap-6 z-10">
         <div className="flex items-center gap-2 bg-secondary px-3.5 py-1.5 rounded-full border border-primary/20 shadow-wp-xs">
-          <Sparkles className="size-3.5 text-primary animate-pulse" />
+          <Sparkles className="size-3.5 text-primary motion-safe:animate-pulse" />
           <span className="font-sans font-semibold text-xs text-foreground">Visual English Learning Engine</span>
         </div>
 
@@ -75,11 +75,13 @@ export function SplashWelcome({ dispatch }: Props) {
 
         <button
           type="button"
-          onClick={advance}
+          disabled
+          aria-disabled="true"
+          title="Account sign-in is coming soon"
           className="w-full bg-transparent hover:bg-muted rounded-xl py-3 font-sans font-semibold text-muted-foreground text-sm min-h-[44px]
-            focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary transition-colors"
+            focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary transition-colors disabled:cursor-not-allowed disabled:opacity-70"
         >
-          Already have an account? Sign In
+          Account sign-in coming soon
         </button>
       </footer>
 

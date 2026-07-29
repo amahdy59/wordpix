@@ -6,11 +6,13 @@ import { SceneCanvas } from "./SceneCanvas";
 import { VocabSidebar } from "./VocabSidebar";
 
 interface Props {
+  selectedWordId: string;
   dispatch: React.Dispatch<Action>;
 }
 
-export const LessonSceneDiscovery = memo(function LessonSceneDiscovery({ dispatch }: Props) {
-  const [activeId, setActiveId] = useState<string>("pillow");
+export const LessonSceneDiscovery = memo(function LessonSceneDiscovery({ selectedWordId, dispatch }: Props) {
+  const [activeId, setActiveId] = useState<string>(selectedWordId);
+  const [isMobileBrowseOpen, setIsMobileBrowseOpen] = useState(false);
   const { speak, stop, isPlaying, isError } = useAudio({ lang: "en-US", rate: 0.8 });
   const mountedRef = useRef(false);
 
@@ -20,7 +22,8 @@ export const LessonSceneDiscovery = memo(function LessonSceneDiscovery({ dispatc
   useEffect(() => {
     if (!mountedRef.current) {
       mountedRef.current = true;
-      const t = setTimeout(() => speak("Pillow"), 900);
+      const initialWord = BEDROOM_VOCABULARY.find((word) => word.id === selectedWordId);
+      const t = setTimeout(() => speak(initialWord?.label ?? "Pillow"), 900);
       return () => clearTimeout(t);
     }
     return undefined;
@@ -48,8 +51,9 @@ export const LessonSceneDiscovery = memo(function LessonSceneDiscovery({ dispatc
 
   const handleLearnWord = useCallback(() => {
     stop();
+    dispatch({ type: "LESSON_SELECT_WORD", wordId: activeId });
     dispatch({ type: "LESSON_NEXT" });
-  }, [stop, dispatch]);
+  }, [stop, dispatch, activeId]);
 
   const handleClose = useCallback(() => {
     stop();
@@ -73,6 +77,7 @@ export const LessonSceneDiscovery = memo(function LessonSceneDiscovery({ dispatc
         onSelectWord={handleSelectWord}
         onLearnWord={handleLearnWord}
         onClose={handleClose}
+        onBrowseWords={() => setIsMobileBrowseOpen(true)}
       />
 
       {/* Desktop Vocabulary Sidebar */}
@@ -84,6 +89,8 @@ export const LessonSceneDiscovery = memo(function LessonSceneDiscovery({ dispatc
         isError={isError}
         onSelectWord={handleSelectWord}
         onLearnWord={handleLearnWord}
+        mobileOpen={isMobileBrowseOpen}
+        onMobileClose={() => setIsMobileBrowseOpen(false)}
       />
     </div>
   );

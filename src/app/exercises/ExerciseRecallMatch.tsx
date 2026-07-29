@@ -1,111 +1,68 @@
-import { memo, useState } from "react";
+import { memo, useMemo, useState } from "react";
 import type { Action } from "../types";
+import type { VocabItem } from "../data/lessons";
 import { LessonHeader } from "../shared/LessonHeader";
 import { HomeIndicator } from "../shared/HomeIndicator";
-
-const PILLOW_IMG = "https://images.unsplash.com/photo-1623944436679-5412c658a358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&q=80";
+import { getWordOptions } from "./exerciseContent";
 
 interface Props {
   step: number;
+  word: VocabItem;
   dispatch: React.Dispatch<Action>;
 }
 
-const OPTIONS = [
-  { id: "a", en: "Blanket",  ar: "بطانية" },
-  { id: "b", en: "Pillow",   ar: "وسادة",  correct: true },
-  { id: "c", en: "Curtain",  ar: "ستارة" },
-  { id: "d", en: "Lamp",     ar: "مصباح" },
-];
-
-export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({ step, dispatch }: Props) {
-  const [sel, setSel] = useState<string | null>(null);
+export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({ step, word, dispatch }: Props) {
+  const options = useMemo(() => getWordOptions(word), [word]);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
   const [checked, setChecked] = useState(false);
+  const isCorrect = selectedId === word.id;
 
-  const correct = OPTIONS.find((o) => o.correct);
-  const isCorrect = sel === correct?.id;
-
-  const handleCheck = () => {
-    if (!sel) return;
+  const handleAction = () => {
+    if (checked) {
+      if (isCorrect) dispatch({ type: "LESSON_NEXT" });
+      else {
+        setSelectedId(null);
+        setChecked(false);
+      }
+      return;
+    }
+    if (!selectedId) return;
     setChecked(true);
-    setTimeout(() => dispatch({ type: "LESSON_NEXT" }), 1200);
+    dispatch({ type: "LESSON_ATTEMPT", correct: isCorrect });
   };
 
   return (
-    <div className="bg-background content-stretch flex flex-col items-start justify-between min-h-full relative">
-      <LessonHeader
-        title="Recall & Match"
-        step={step}
-        onBack={() => dispatch({ type: "LESSON_NEXT" })}
-        onClose={() => dispatch({ type: "GO", to: "home" })}
-      />
-
-      <main className="flex-1 flex flex-col items-center w-full px-[20px] gap-[16px] pt-[16px]">
-        <h2 className="font-sans font-bold text-foreground text-[20px] text-center w-full">
-          What is this?
-        </h2>
-
-        <div className="h-[180px] relative rounded-2xl w-full overflow-hidden border border-border">
-          <img
-            alt="White pillows on a bed — identify this object"
-            className="absolute inset-0 object-cover size-full"
-            src={PILLOW_IMG}
-          />
+    <div className="bg-background flex flex-col justify-between min-h-full relative">
+      <LessonHeader title="Recall & Match" step={step} onBack={() => dispatch({ type: "LESSON_PREVIOUS" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <main className="flex-1 flex flex-col items-center w-full px-5 gap-4 pt-4">
+        <h2 className="font-sans font-bold text-foreground text-xl text-center">What is this?</h2>
+        <div className="h-48 relative rounded-2xl w-full overflow-hidden border border-border bg-muted">
+          <img alt={`Identify the pictured ${word.label.toLowerCase()}`} className="absolute inset-0 object-cover size-full" src={word.img} width="800" height="500" />
         </div>
-
-        {/* 2x2 option grid */}
-        <div
-          role="radiogroup"
-          aria-label="Choose the correct word"
-          className="grid grid-cols-2 gap-[10px] w-full"
-        >
-          {OPTIONS.map((opt) => {
-            const isSelected = sel === opt.id;
-            let borderClass = "border-border bg-wp-card";
-            if (checked && isSelected) {
-              borderClass = isCorrect
-                ? "border-accent bg-accent/10"
-                : "border-primary bg-secondary";
-            } else if (isSelected) {
-              borderClass = "border-3 border-primary bg-secondary";
-            }
-
+        <div role="radiogroup" aria-label="Choose the correct word" className="grid grid-cols-2 gap-2.5 w-full">
+          {options.map((option) => {
+            const selected = selectedId === option.id;
+            const resultClass = checked && selected
+              ? isCorrect ? "border-wp-green bg-wp-green-light" : "border-wp-rose bg-wp-rose-light"
+              : selected ? "border-primary bg-secondary border-2" : "border-border bg-wp-card";
             return (
-              <button
-                key={opt.id}
-                role="radio"
-                aria-checked={isSelected}
-                disabled={checked}
-                onClick={() => !checked && setSel(opt.id)}
-                className={`rounded-xl border p-[14px] flex flex-col items-center gap-[4px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${borderClass}`}
-              >
-                <span className="font-sans font-semibold text-foreground text-[16px]">
-                  {opt.en}
-                </span>
-                <span
-                  className="font-arabic text-muted-foreground text-[12px]"
-                  dir="auto"
-                  lang="ar"
-                >
-                  {opt.ar}
-                </span>
+              <button key={option.id} type="button" role="radio" aria-checked={selected} disabled={checked} onClick={() => setSelectedId(option.id)} className={`rounded-xl border p-4 min-h-[60px] font-sans font-semibold text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${resultClass}`}>
+                {option.label}
               </button>
             );
           })}
         </div>
+        {checked && (
+          <p role="status" aria-live="polite" className={`w-full rounded-xl p-3 text-sm font-sans font-semibold ${isCorrect ? "bg-wp-green-light text-wp-green" : "bg-wp-rose-light text-wp-rose"}`}>
+            {isCorrect ? `Correct — this is ${word.label}.` : `Not quite. Look closely, then try ${word.label} again.`}
+          </p>
+        )}
       </main>
-
-      <footer className="w-full px-[20px] pb-[40px] pt-[12px]">
-        <button
-          onClick={handleCheck}
-          disabled={!sel || checked}
-          className={`rounded-xl py-[16px] w-full font-sans font-bold text-white text-[17px] min-h-[56px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-40 disabled:cursor-not-allowed motion-safe:transition-colors motion-safe:duration-300 ${
-            checked ? (isCorrect ? "bg-accent focus-visible:outline-accent" : "bg-primary focus-visible:outline-primary") : "bg-wp-blue focus-visible:outline-wp-blue"
-          }`}
-        >
-          {checked ? (isCorrect ? "Correct! ✓" : "Try Again") : "Check Answer"}
+      <footer className="w-full px-5 pb-10 pt-3">
+        <button type="button" onClick={handleAction} disabled={!selectedId} className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] disabled:opacity-40 ${checked ? isCorrect ? "bg-wp-green" : "bg-wp-rose" : "bg-wp-blue"}`}>
+          {checked ? isCorrect ? "Continue" : "Try Again" : "Check Answer"}
         </button>
       </footer>
-
       <HomeIndicator />
     </div>
   );

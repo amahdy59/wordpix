@@ -1,65 +1,52 @@
-import { describe, it, expect } from "vitest";
-import type { Screen, Action, OnboardStep } from "../types";
+import { describe, expect, it } from "vitest";
+import { reducer } from "../App";
+import type { Screen } from "../types";
 
-const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "ready"];
-
-function reducer(state: Screen, action: Action): Screen {
-  if (action.type === "ONBOARD_NEXT") {
-    if (state.id !== "onboarding") return state;
-    const i = ONBOARD_STEPS.indexOf(state.step);
-    return i < ONBOARD_STEPS.length - 1
-      ? { id: "onboarding", step: ONBOARD_STEPS[i + 1] }
-      : { id: "home" };
-  }
-  if (action.type === "GO") {
-    if (action.to === "lesson-entry") return { id: "lesson-entry" };
-    if (action.to === "lesson-complete") return { id: "lesson-complete" };
-    return { id: action.to };
-  }
-  if (action.type === "START_LESSON") return { id: "lesson", step: 0 };
-  if (action.type === "LESSON_NEXT") {
-    if (state.id !== "lesson") return state;
-    return state.step >= 5 ? { id: "lesson-complete" } : { id: "lesson", step: state.step + 1 };
-  }
-  return state;
-}
-
-describe("WordPix Navigation Reducer State Machine", () => {
-  it("should advance through streamlined onboarding steps correctly", () => {
+describe("WordPix navigation and lesson reducer", () => {
+  it("advances through onboarding", () => {
     let state: Screen = { id: "onboarding", step: "splash" };
-
     state = reducer(state, { type: "ONBOARD_NEXT" });
     expect(state).toEqual({ id: "onboarding", step: "language" });
-
     state = reducer(state, { type: "ONBOARD_NEXT" });
     expect(state).toEqual({ id: "onboarding", step: "ready" });
-
     state = reducer(state, { type: "ONBOARD_NEXT" });
     expect(state).toEqual({ id: "home" });
   });
 
-  it("should transition tabs on GO action", () => {
-    const initialState: Screen = { id: "home" };
-
-    const exploreState = reducer(initialState, { type: "GO", to: "explore" });
-    expect(exploreState).toEqual({ id: "explore" });
-
-    const profileState = reducer(exploreState, { type: "GO", to: "profile" });
-    expect(profileState).toEqual({ id: "profile" });
+  it("moves between tabs", () => {
+    expect(reducer({ id: "home" }, { type: "GO", to: "explore" })).toEqual({ id: "explore" });
   });
 
-  it("should start and advance through lesson steps", () => {
-    let state: Screen = { id: "lesson-entry" };
-
-    state = reducer(state, { type: "START_LESSON" });
-    expect(state).toEqual({ id: "lesson", step: 0 });
-
-    for (let step = 0; step < 5; step++) {
-      state = reducer(state, { type: "LESSON_NEXT" });
-      expect(state).toEqual({ id: "lesson", step: step + 1 });
-    }
+  it("preserves the selected word while moving forward and backward", () => {
+    let state = reducer({ id: "lesson-entry" }, { type: "START_LESSON", wordId: "lamp" });
+    expect(state).toMatchObject({ id: "lesson", step: 0, selectedWordId: "lamp", attempts: [] });
 
     state = reducer(state, { type: "LESSON_NEXT" });
-    expect(state).toEqual({ id: "lesson-complete" });
+    expect(state).toMatchObject({ id: "lesson", step: 1, selectedWordId: "lamp" });
+
+    state = reducer(state, { type: "LESSON_PREVIOUS" });
+    expect(state).toMatchObject({ id: "lesson", step: 0, selectedWordId: "lamp" });
+
+    state = reducer(state, { type: "LESSON_PREVIOUS" });
+    expect(state).toMatchObject({ id: "lesson", step: 0 });
+  });
+
+  it("records attempts and carries them into real completion results", () => {
+    let state = reducer({ id: "lesson-entry" }, { type: "START_LESSON", wordId: "wardrobe" });
+    state = reducer(state, { type: "LESSON_NEXT" });
+    state = reducer(state, { type: "LESSON_ATTEMPT", correct: false });
+    state = reducer(state, { type: "LESSON_ATTEMPT", correct: true });
+
+    expect(state).toMatchObject({
+      id: "lesson",
+      attempts: [
+        { exerciseStep: 1, wordId: "wardrobe", correct: false },
+        { exerciseStep: 1, wordId: "wardrobe", correct: true },
+      ],
+    });
+
+    for (let step = 1; step <= 5; step += 1) state = reducer(state, { type: "LESSON_NEXT" });
+    expect(state).toMatchObject({ id: "lesson-complete", selectedWordId: "wardrobe" });
+    if (state.id === "lesson-complete") expect(state.attempts).toHaveLength(2);
   });
 });
