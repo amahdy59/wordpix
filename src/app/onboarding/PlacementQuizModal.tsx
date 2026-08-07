@@ -1,7 +1,7 @@
-import { memo, useState } from "react";
+import { memo, useState, useEffect, useRef } from "react";
 import { WordImage } from "../shared/WordImage";
 import { BEDROOM_VOCABULARY } from "../data/lessons";
-import { Sparkles, CheckCircle2, X } from "lucide-react";
+import { Sparkles, X } from "lucide-react";
 
 interface Props {
   isOpen: boolean;
@@ -34,6 +34,21 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
 }: Props) {
   const [stepIndex, setStepIndex] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
+  const closeBtnRef = useRef<HTMLButtonElement | null>(null);
+
+  // Auto-focus and handle Escape key
+  useEffect(() => {
+    if (!isOpen) return undefined;
+    closeBtnRef.current?.focus();
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
@@ -65,10 +80,11 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
     >
       <div className="bg-wp-card border border-border rounded-3xl p-6 w-full max-w-md shadow-2xl flex flex-col gap-5 relative">
         <button
+          ref={closeBtnRef}
           type="button"
           onClick={onClose}
           aria-label="Close level placement check"
-          className="absolute top-4 right-4 size-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground"
+          className="absolute top-4 right-4 size-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
         >
           <X className="size-5" />
         </button>
@@ -100,7 +116,7 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
               key={opt.id}
               type="button"
               onClick={() => handleSelectOption(opt.id)}
-              className="bg-background border border-border rounded-2xl p-2 flex flex-col items-center gap-1.5 hover:border-primary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary transition-all"
+              className="bg-background border border-border rounded-2xl p-2 flex flex-col items-center gap-1.5 hover:border-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all min-h-[44px]"
             >
               <div className="h-24 w-full rounded-xl overflow-hidden bg-muted">
                 <WordImage word={opt} width="200" height="150" className="size-full object-cover" altMode="assessment" optionIndex={idx} />

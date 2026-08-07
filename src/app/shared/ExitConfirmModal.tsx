@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { memo, useEffect, useRef } from "react";
 import { AlertTriangle } from "lucide-react";
 
 interface Props {
@@ -8,6 +8,22 @@ interface Props {
 }
 
 export const ExitConfirmModal = memo(function ExitConfirmModal({ isOpen, onCancel, onConfirm }: Props) {
+  const primaryBtnRef = useRef<HTMLButtonElement | null>(null);
+
+  // Auto-focus primary button and handle Escape key
+  useEffect(() => {
+    if (!isOpen) return undefined;
+    primaryBtnRef.current?.focus();
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        onCancel();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen, onCancel]);
+
   if (!isOpen) return null;
 
   return (
@@ -33,6 +49,7 @@ export const ExitConfirmModal = memo(function ExitConfirmModal({ isOpen, onCance
 
         <div className="flex flex-col w-full gap-2.5 mt-2">
           <button
+            ref={primaryBtnRef}
             type="button"
             onClick={onCancel}
             className="w-full bg-primary hover:opacity-90 active:opacity-80 rounded-xl py-3.5 font-sans font-bold text-primary-foreground text-base min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all shadow-sm"
