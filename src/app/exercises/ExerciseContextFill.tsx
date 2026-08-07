@@ -5,6 +5,7 @@ import { ExerciseShell } from "../shared/ExerciseShell";
 import { articleFor } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
 import { shuffleArray } from "../../utils/shuffle";
+import { useSound } from "../shared/useSound";
 
 interface Props {
   step: number;
@@ -23,6 +24,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [checked, setChecked] = useState(false);
   const [shaking, setShaking] = useState(false);
+  const { playCorrect, playIncorrect, playClick } = useSound();
 
   const currentTargetWord = words[questionIndex] || words[0];
 
@@ -35,6 +37,12 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
 
   const isCorrect = selectedId === currentTargetWord.id;
   const selectedWord = options.find((item) => item.id === selectedId);
+
+  const handleSelect = (id: string) => {
+    if (checked) return;
+    playClick();
+    setSelectedId(id);
+  };
 
   const handleAction = () => {
     if (checked) {
@@ -58,6 +66,8 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       return;
     }
     setChecked(true);
+    if (isCorrect) playCorrect();
+    else playIncorrect();
     dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct: isCorrect });
   };
 
@@ -74,13 +84,13 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         <div className="flex flex-col gap-1.5">
           {!selectedId && !checked && (
             <p className="text-[11px] font-sans font-semibold text-center text-amber-600 dark:text-amber-400">
-              Select a word to complete the sentence
+              Select a word below to complete the sentence
             </p>
           )}
           <button
             type="button"
             onClick={handleAction}
-            className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] transition-all ${
+            className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] transition-all shadow-wp-xs ${
               shaking ? "animate-bounce" : ""
             } ${
               checked
@@ -99,65 +109,91 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         </div>
       }
     >
-      <div className="flex flex-col gap-5 w-full max-w-lg">
-        {/* Question Counter */}
-        <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground">
+      <div className="flex flex-col gap-5 w-full">
+        {/* Question Counter Header */}
+        <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
           <span>Sentence {questionIndex + 1} of {words.length}</span>
-          <span className="text-primary font-semibold">Group context drill</span>
+          <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full">
+            Group context drill
+          </span>
         </div>
 
-        {/* Target Image Preview */}
-        <div className="bg-wp-card border border-border rounded-2xl p-4 flex items-center gap-4 shadow-sm">
+        {/* Target Image Preview Card */}
+        <div className="bg-wp-card border border-border rounded-2xl p-4 flex items-center gap-4 shadow-wp-xs">
           <div className="size-20 rounded-xl overflow-hidden shrink-0 border border-border bg-muted">
             <WordImage word={currentTargetWord} width="80" height="80" className="size-full object-cover" />
           </div>
           <div>
             <h2 className="font-sans font-bold text-foreground text-xl">Fill in the blank</h2>
-            <p className="font-sans text-muted-foreground text-xs mt-0.5">Match the image to the sentence.</p>
+            <p className="font-sans text-muted-foreground text-xs mt-0.5">Match the image context to complete the sentence.</p>
           </div>
         </div>
 
-        {/* Sentence display */}
-        <div className="bg-wp-card rounded-2xl border border-border p-5 text-center shadow-xs">
-          <p className="font-sans font-bold text-foreground text-xl leading-relaxed">
-            This is {articleFor(currentTargetWord.label)}{" "}
-            <span className="inline-block min-w-28 border-b-2 border-primary text-primary px-1">
-              {selectedWord?.label.toLowerCase() ?? "_______"}
+        {/* Beautiful Centered Sentence Display Box */}
+        <div className="bg-wp-card rounded-2xl border border-border p-6 text-center shadow-wp-xs flex flex-col items-center justify-center gap-2">
+          <span className="font-sans font-bold text-[11px] text-primary uppercase tracking-wider">
+            Sentence Context
+          </span>
+          <p className="font-sans font-black text-foreground text-2xl md:text-3xl leading-relaxed flex items-center justify-center flex-wrap gap-2 py-2">
+            <span>This is {articleFor(currentTargetWord.label)}</span>
+            <span
+              className={`inline-flex items-center justify-center min-w-[140px] h-12 px-4 rounded-xl border-2 transition-all font-sans font-black text-xl shadow-xs ${
+                selectedWord
+                  ? checked
+                    ? isCorrect
+                      ? "bg-wp-green text-white border-wp-green"
+                      : "bg-wp-rose text-white border-wp-rose"
+                    : "bg-primary text-primary-foreground border-primary"
+                  : "bg-secondary/80 border-dashed border-primary/50 text-muted-foreground"
+              }`}
+            >
+              {selectedWord ? selectedWord.label.toLowerCase() : "_______"}
             </span>
-            .
+            <span>.</span>
           </p>
         </div>
 
-        {/* Word options */}
-        <div role="group" aria-label="Word choices" className="flex flex-wrap gap-3 justify-center">
-          {options.map((option) => (
-            <button
-              key={option.id}
-              type="button"
-              aria-pressed={selectedId === option.id}
-              disabled={checked}
-              onClick={() => setSelectedId(option.id)}
-              className={`rounded-xl px-5 py-3 font-sans font-bold text-sm border min-h-[48px] transition-all ${
-                selectedId === option.id
-                  ? "bg-primary border-primary text-primary-foreground shadow-sm"
-                  : "bg-wp-card border-border text-foreground hover:border-primary/40"
-              } focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary`}
-            >
-              {option.label.toLowerCase()}
-            </button>
-          ))}
+        {/* Word Options Grid (2x2 Grid) */}
+        <div role="radiogroup" aria-label="Word choices" className="grid grid-cols-2 gap-3.5 w-full">
+          {options.map((option, idx) => {
+            const isSelected = selectedId === option.id;
+            return (
+              <button
+                key={option.id}
+                type="button"
+                role="radio"
+                aria-checked={isSelected}
+                disabled={checked}
+                onClick={() => handleSelect(option.id)}
+                className={`rounded-2xl p-4 font-sans font-bold text-base border min-h-[56px] transition-all flex items-center justify-between shadow-wp-xs ${
+                  isSelected
+                    ? "bg-primary border-primary text-primary-foreground ring-4 ring-primary/20 scale-102"
+                    : "bg-wp-card border-border text-foreground hover:border-primary/40 hover:shadow-md"
+                } focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary`}
+              >
+                <span className="capitalize">{option.label.toLowerCase()}</span>
+                <span className={`text-xs px-2 py-0.5 rounded-md font-bold ${isSelected ? "bg-white/20 text-white" : "bg-muted text-muted-foreground"}`}>
+                  [{idx + 1}]
+                </span>
+              </button>
+            );
+          })}
         </div>
 
         {checked && (
-          <p
+          <div
             role="status"
             aria-live="polite"
-            className={`w-full rounded-xl p-4 text-sm font-sans font-semibold ${isCorrect ? "bg-wp-green-light text-wp-green" : "bg-wp-rose-light text-wp-rose"}`}
+            className={`w-full rounded-2xl p-4 text-sm font-sans font-bold text-center border shadow-xs transition-all ${
+              isCorrect
+                ? "bg-wp-green text-white border-wp-green"
+                : "bg-wp-rose text-white border-wp-rose"
+            }`}
           >
             {isCorrect
-              ? "Correct. The sentence matches the target image."
+              ? "✓ Excellent! The sentence matches the picture perfectly."
               : `Try again — the picture shows ${articleFor(currentTargetWord.label)} ${currentTargetWord.label.toLowerCase()}.`}
-          </p>
+          </div>
         )}
       </div>
     </ExerciseShell>
