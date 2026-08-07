@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { Lock, Compass, ArrowRight, Sparkles, BookOpen } from "lucide-react";
+import { Lock, Compass, ArrowRight, Sparkles, BookOpen, Layers } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { BEDROOM_VOCABULARY } from "../data/lessons";
@@ -34,6 +34,40 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
           Master every word and exercise in our flagship world before advancing.
         </p>
       </header>
+
+      {/* 35 Multimodal Exercises Hub Banner */}
+      <section aria-label="35 Skill Exercises Hub">
+        <div className="bg-slate-900 text-white rounded-3xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4 border border-slate-800 shadow-wp-md">
+          <div className="flex items-center gap-4">
+            <div className="size-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center shrink-0 shadow-md">
+              <Layers className="size-7" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="font-sans font-bold text-xs text-wp-amber bg-amber-500/10 px-2.5 py-0.5 rounded-full border border-amber-500/20">
+                  New Exercise Suite
+                </span>
+                <span className="font-sans text-xs text-white/70">35 Interactive Screens</span>
+              </div>
+              <h2 className="font-sans font-black text-white text-xl md:text-2xl mt-1">
+                Listening, Reading, Speaking &amp; Writing Hub
+              </h2>
+              <p className="font-sans text-xs text-white/70 mt-0.5 max-w-lg">
+                Explore dictation sprints, dialogue role-plays, category sorts, photo journals, and speed typing.
+              </p>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            onClick={() => dispatch({ type: "GO", to: "skill-hub" })}
+            className="w-full sm:w-auto bg-primary hover:opacity-90 active:opacity-80 rounded-xl py-3.5 px-6 font-sans font-bold text-primary-foreground text-sm flex items-center justify-center gap-2 shrink-0 min-h-[48px] shadow-sm transition-all"
+          >
+            <span>Open 35-Exercise Hub</span>
+            <ArrowRight className="size-4" />
+          </button>
+        </div>
+      </section>
 
       {/* Primary Active Flagship World Card */}
       <section aria-label="Active World">
