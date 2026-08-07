@@ -1,4 +1,4 @@
-import { memo, useEffect, useMemo, useRef, useState } from "react";
+import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
 import type { Action } from "../types";
 import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
@@ -28,6 +28,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
   const [timerOn, setTimerOn] = useState(false);
   const [timeLeft, setTimeLeft] = useState(TIMER_SECONDS);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const radioRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   const currentTargetWord = words[questionIndex] || words[0];
 
@@ -52,6 +53,26 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
   }, [timerOn, checked]);
 
   const toggleTimer = () => { if (!timerOn) setTimeLeft(TIMER_SECONDS); setTimerOn((v) => !v); };
+
+  // Keyboard Arrow key navigation across radio options
+  const handleKeyDown = useCallback(
+    (e: React.KeyboardEvent, index: number) => {
+      if (checked) return;
+      let nextIndex = index;
+      if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+        e.preventDefault();
+        nextIndex = (index + 1) % options.length;
+      } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+        e.preventDefault();
+        nextIndex = (index - 1 + options.length) % options.length;
+      }
+      if (nextIndex !== index) {
+        setSelectedId(options[nextIndex].id);
+        radioRefs.current[nextIndex]?.focus();
+      }
+    },
+    [checked, options]
+  );
 
   const handleAction = () => {
     if (checked) {
@@ -99,7 +120,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
             type="button"
             onClick={handleAction}
             className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] transition-all ${
-              shaking ? "animate-bounce" : ""
+              shaking ? "animate-bounce motion-reduce:animate-none" : ""
             } ${
               checked
                 ? isCorrect ? "bg-wp-green" : "bg-wp-rose"
@@ -117,7 +138,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         </div>
       }
     >
-      <div className="flex flex-col gap-4 w-full max-w-lg">
+      <div className="flex flex-col gap-4 w-full max-w-lg mx-auto">
         {/* Question counter & timer header */}
         <div className="flex items-start justify-between gap-3">
           <div className="flex flex-col">
@@ -131,7 +152,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
             onClick={toggleTimer}
             aria-label={timerOn ? "Turn optional timer off" : "Turn optional timer on"}
             aria-pressed={timerOn}
-            className="min-h-[44px] px-3 rounded-xl border border-border bg-wp-card text-muted-foreground hover:text-foreground flex items-center gap-2 shrink-0 transition-colors"
+            className="min-h-[44px] min-w-[44px] px-3 rounded-xl border border-border bg-wp-card text-muted-foreground hover:text-foreground flex items-center gap-2 shrink-0 transition-colors"
           >
             {timerOn ? <Timer className="size-4" /> : <TimerOff className="size-4" />}
             <span className="text-xs font-bold font-sans">
@@ -154,14 +175,25 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
             return (
               <button
                 key={option.id}
+                ref={(el) => { radioRefs.current[idx] = el; }}
                 type="button"
                 role="radio"
                 aria-checked={selected}
+                tabIndex={selected || (!selectedId && idx === 0) ? 0 : -1}
                 disabled={checked}
                 onClick={() => setSelectedId(option.id)}
-                className={`bg-wp-card rounded-2xl border overflow-hidden focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all ${resultClass}`}
+                onKeyDown={(e) => handleKeyDown(e, idx)}
+                className={`bg-wp-card rounded-2xl border overflow-hidden min-h-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all ${resultClass}`}
               >
-                <WordImage word={option} width="400" height="300" className="h-36 w-full object-cover" />
+                <WordImage
+                  word={option}
+                  width="400"
+                  height="300"
+                  className="h-36 w-full object-cover"
+                  altMode="assessment"
+                  optionIndex={idx}
+                  checked={checked}
+                />
                 <p className="font-sans font-semibold text-foreground text-sm px-3 py-2 text-left truncate">
                   {checked ? option.label : `Option ${["A", "B", "C", "D"][idx]}`}
                 </p>

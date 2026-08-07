@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { shuffleArray } from "../../utils/shuffle";
-import { INITIAL_ZERO_PROGRESS } from "../data/progress";
+import { INITIAL_LEARNER_STATE } from "../context/LearnerContext";
 import type { AnswerAttempt } from "../types";
 
 describe("Phase 1 Acceptance Criteria Verification", () => {
@@ -15,12 +15,12 @@ describe("Phase 1 Acceptance Criteria Verification", () => {
   });
 
   it("AC 2: New learners start at zero (0 XP, 0 streak, 0 sessions, empty mastery)", () => {
-    expect(INITIAL_ZERO_PROGRESS.xp).toBe(0);
-    expect(INITIAL_ZERO_PROGRESS.streak).toBe(0);
-    expect(INITIAL_ZERO_PROGRESS.sessionsCompleted).toBe(0);
-    expect(INITIAL_ZERO_PROGRESS.daysActive).toBe(0);
-    expect(INITIAL_ZERO_PROGRESS.wordMastery).toEqual({});
-    expect(INITIAL_ZERO_PROGRESS.lastStudiedDate).toBeNull();
+    expect(INITIAL_LEARNER_STATE.learnerProgress.xp).toBe(0);
+    expect(INITIAL_LEARNER_STATE.learnerProgress.streak).toBe(0);
+    expect(INITIAL_LEARNER_STATE.learnerProgress.sessionsCompleted).toBe(0);
+    expect(INITIAL_LEARNER_STATE.learnerProgress.daysActive).toBe(0);
+    expect(INITIAL_LEARNER_STATE.wordMemory).toEqual({});
+    expect(INITIAL_LEARNER_STATE.learnerProgress.lastStudiedDate).toBeNull();
   });
 
   it("AC 3: 0 attempts = 0% accuracy & 0 correct answers = 0 XP (no minimum 30 XP)", () => {

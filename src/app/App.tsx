@@ -1,7 +1,9 @@
-import { useEffect, useReducer, lazy, Suspense } from "react";
+import { useEffect, useReducer, lazy, Suspense, useCallback } from "react";
 import type { Screen, Action, OnboardStep, TabId } from "./types";
 import { ErrorBoundary } from "./shared/ErrorBoundary";
 import { BEDROOM_VOCABULARY, BEDROOM_GROUPS } from "./data/lessons";
+import { LearnerProvider } from "./context/LearnerContext";
+import { useHashRouter, hashToScreen } from "./router/useHashRouter";
 
 // Synchronous core onboarding screens
 import { SplashWelcome } from "./onboarding/SplashWelcome";
@@ -31,7 +33,7 @@ const ExerciseQuickQuiz = lazy(() => import("./exercises/ExerciseQuickQuiz").the
 const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "ready"];
 const TABBED_IDS: ReadonlySet<string> = new Set(["home", "explore", "practice", "profile"]);
 
-const STORAGE_KEY = "wordpix:learner-state:v3";
+const STORAGE_KEY = "wordpix:learner-state:v4";
 
 export function reducer(state: Screen, action: Action): Screen {
   if (action.type === "ONBOARD_NEXT") {
@@ -125,8 +127,6 @@ function ariaLiveAnnounce(msg: string) {
 const EX_STEPS = ["scene", "listen", "recall", "fill", "builder", "quiz"] as const;
 type ExStep = (typeof EX_STEPS)[number];
 
-// ── Loading Fallback Component ───────────────────────────────────────────────
-
 const LoadingFallback = () => (
   <div className="flex-1 flex items-center justify-center min-h-[300px] p-6 text-center" aria-live="polite">
     <div className="flex flex-col items-center gap-3">
@@ -145,11 +145,16 @@ const SkipLink = () => (
   </a>
 );
 
-export default function App() {
+function AppInner() {
   const [state, dispatch] = useReducer(
     reducer,
     { id: "onboarding", step: "splash" },
     (fallback): Screen => {
+      // Check initial URL hash first for deep-link survival on refresh
+      if (typeof window !== "undefined" && window.location.hash) {
+        const routeMatch = hashToScreen(window.location.hash);
+        if (routeMatch) return routeMatch.screen;
+      }
       try {
         const saved = localStorage.getItem(STORAGE_KEY);
         if (!saved) return fallback;
@@ -161,6 +166,13 @@ export default function App() {
       }
     }
   );
+
+  const handleRouteScreenChange = useCallback((newScreen: Screen) => {
+    dispatch({ type: "GO", to: newScreen.id as TabId });
+  }, []);
+
+  // Hook into URL Hash Router
+  useHashRouter(state, handleRouteScreenChange);
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
@@ -177,6 +189,7 @@ export default function App() {
     if (state.id === "practice") return <ReviewMasteryReview dispatch={dispatch} />;
     if (state.id === "profile") return <ProfileStats dispatch={dispatch} />;
     if (state.id === "lesson-entry") return <LessonWorldEntry dispatch={dispatch} />;
+
     if (state.id === "lesson") {
       const ex: ExStep = EX_STEPS[state.step] ?? "scene";
       const groupWords = state.wordQueue
@@ -208,7 +221,8 @@ export default function App() {
             <SkipLink />
             <div
               id="main-content"
-              className="min-h-svh md:min-h-0 w-full max-w-5xl md:rounded-3xl md:overflow-hidden md:shadow-wp-md md:border md:border-border"
+              tabIndex={-1}
+              className="min-h-svh md:min-h-0 w-full max-w-5xl md:rounded-3xl md:overflow-hidden md:shadow-wp-md md:border md:border-border outline-none"
             >
               {renderContent()}
             </div>
@@ -229,7 +243,7 @@ export default function App() {
         {state.id === "lesson" && EX_STEPS[state.step] === "scene" && (
           <div className="min-h-svh bg-background">
             <SkipLink />
-            <div id="main-content" className="w-full min-h-svh flex flex-col">
+            <div id="main-content" tabIndex={-1} className="w-full min-h-svh flex flex-col outline-none">
               {renderContent()}
             </div>
           </div>
@@ -241,12 +255,20 @@ export default function App() {
           !(state.id === "lesson" && EX_STEPS[state.step] === "scene") && (
             <div className="min-h-svh bg-background">
               <SkipLink />
-              <div id="main-content" className="w-full min-h-svh flex flex-col">
+              <div id="main-content" tabIndex={-1} className="w-full min-h-svh flex flex-col outline-none">
                 {renderContent()}
               </div>
             </div>
           )}
       </Suspense>
     </ErrorBoundary>
+  );
+}
+
+export default function App() {
+  return (
+    <LearnerProvider>
+      <AppInner />
+    </LearnerProvider>
   );
 }
