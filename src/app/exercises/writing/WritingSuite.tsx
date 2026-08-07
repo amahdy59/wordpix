@@ -26,7 +26,7 @@ export const ExWritingCaptionBuilder = memo(function ExWritingCaptionBuilder({ d
 
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Caption Builder (Word Bank)" step={1} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Caption Builder (Word Bank)" current={1} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="h-56 w-full rounded-3xl overflow-hidden border border-border shadow-wp-xs">
           <WordImage word={BEDROOM_VOCABULARY[0]} width="600" height="400" className="size-full object-cover" />
@@ -67,7 +67,7 @@ export const ExWritingCaptionBuilder = memo(function ExWritingCaptionBuilder({ d
 export const ExWritingSentenceAssembly = memo(function ExWritingSentenceAssembly({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Sentence Assembly Arcade" step={2} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Sentence Assembly Arcade" current={2} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="flex justify-between items-center bg-slate-900 text-white rounded-2xl p-4">
           <span className="font-sans font-black text-wp-amber text-xl">x4 COMBO</span>
@@ -85,7 +85,7 @@ export const ExWritingPhotoJournal = memo(function ExWritingPhotoJournal({ dispa
 
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Photo Journal Free Writing" step={3} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Photo Journal Free Writing" current={3} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <textarea
           value={text}
@@ -107,7 +107,7 @@ export const ExWritingPhotoJournal = memo(function ExWritingPhotoJournal({ dispa
 export const ExWritingVideoSummary = memo(function ExWritingVideoSummary({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Video Summary Academic Writing" step={4} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Video Summary Academic Writing" current={4} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-slate-950 text-white rounded-3xl p-6 flex flex-col items-center justify-center h-48">
           <span className="font-sans font-black text-2xl">Academic Video Player</span>
@@ -122,7 +122,7 @@ export const ExWritingVideoSummary = memo(function ExWritingVideoSummary({ dispa
 export const ExWritingErrorCorrection = memo(function ExWritingErrorCorrection({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Error Correction Paragraph" step={5} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Error Correction Paragraph" current={5} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-wp-card border border-border rounded-2xl p-5">
           <p className="font-sans text-base text-foreground leading-relaxed">
@@ -139,7 +139,7 @@ export const ExWritingErrorCorrection = memo(function ExWritingErrorCorrection({
 export const ExWritingParaphraseChallenge = memo(function ExWritingParaphraseChallenge({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Paraphrase Challenge" step={6} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Paraphrase Challenge" current={6} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-wp-card border border-border rounded-2xl p-5 flex flex-col gap-2">
           <span className="font-sans font-bold text-xs text-muted-foreground">Original Sentence</span>
@@ -156,7 +156,7 @@ export const ExWritingParaphraseChallenge = memo(function ExWritingParaphraseCha
 export const ExWritingImageStoryChain = memo(function ExWritingImageStoryChain({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Image Story Chain Narrative" step={7} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Image Story Chain Narrative" current={7} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="flex gap-2">
           {["Meanwhile...", "Later that day...", "Unexpectedly..."].map((c) => (
@@ -191,7 +191,7 @@ export const ExWritingResults = memo(function ExWritingResults({ dispatch }: Pro
 export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Timed Speed Writing Sprint" step={9} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Timed Speed Writing Sprint" current={9} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-slate-900 text-white rounded-3xl p-6 flex flex-col items-center gap-3">
           <span className="font-sans font-black text-wp-amber text-3xl">0:30 SPRINT</span>

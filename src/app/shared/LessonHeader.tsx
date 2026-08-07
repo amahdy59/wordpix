@@ -4,9 +4,17 @@ import { CloseButton } from "./CloseButton";
 
 interface Props {
   title: string;
-  /** 0-based current step index */
-  step: number;
-  /** Total number of exercise steps (default 6) */
+  /**
+   * 1-based position in the flow, e.g. 3 for "step 3 of 9".
+   *
+   * This was previously `step`, documented as a 0-based index but passed
+   * 1-based by all 35 suite screens. The result was `step={9} total={9}` ->
+   * aria-valuenow=111 against aria-valuemax=100, and every suite opening at
+   * 22% instead of 11%. Renamed so the compiler forces each call site to be
+   * re-read rather than silently inheriting the wrong convention.
+   */
+  current: number;
+  /** Total number of steps in the flow (default 6) */
   total?: number;
   onBack: () => void;
   onClose: () => void;
@@ -14,16 +22,18 @@ interface Props {
 
 /**
  * Reusable header for all lesson/exercise screens.
- * Contains back arrow, centred title, ✕ close, and a rose progress bar.
+ * Contains back arrow, centred title, ✕ close, and a progress bar.
  */
 export const LessonHeader = memo(function LessonHeader({
   title,
-  step,
+  current,
   total = 6,
   onBack,
   onClose,
 }: Props) {
-  const pct = Math.round(((step + 1) / total) * 100);
+  const safeTotal = Math.max(1, total);
+  const safeCurrent = Math.min(Math.max(current, 0), safeTotal);
+  const pct = Math.round((safeCurrent / safeTotal) * 100);
 
   return (
     <div className="content-stretch flex flex-col gap-[12px] px-5 py-3 md:px-8 md:py-4 relative shrink-0 w-full">
@@ -46,6 +56,7 @@ export const LessonHeader = memo(function LessonHeader({
         aria-valuenow={pct}
         aria-valuemin={0}
         aria-valuemax={100}
+        aria-valuetext={`Step ${safeCurrent} of ${safeTotal}`}
         className="bg-muted h-[8px] relative rounded-full shrink-0 w-full overflow-hidden"
       >
         <div

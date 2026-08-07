@@ -38,6 +38,10 @@ const STEP_LABELS = [
   "Quick Quiz",
 ];
 
+/** Number of steps in a lesson flow, derived so the two cannot drift apart. */
+const EXERCISE_STEP_COUNT = STEP_LABELS.length;
+const LAST_STEP_INDEX = EXERCISE_STEP_COUNT - 1;
+
 export const ExerciseShell = memo(function ExerciseShell({
   step,
   title,
@@ -55,7 +59,7 @@ export const ExerciseShell = memo(function ExerciseShell({
 
   const group = BEDROOM_GROUPS.find((g) => g.id === groupId) ?? BEDROOM_GROUPS[0];
   const currentWord = activeWord || words[0];
-  const nextStepLabel = step < 5 ? STEP_LABELS[step + 1] : "Session Completion";
+  const nextStepLabel = step < LAST_STEP_INDEX ? STEP_LABELS[step + 1] : "Session Completion";
 
   const isTesting = mode === "retrieval" || mode === "assessment";
 
@@ -103,7 +107,7 @@ export const ExerciseShell = memo(function ExerciseShell({
           </div>
           <div className="bg-primary/90 text-primary-foreground backdrop-blur-md rounded-full px-3 py-1">
             <span className="font-sans font-semibold text-xs">
-              Step {step} of 5
+              Step {step + 1} of {EXERCISE_STEP_COUNT}
             </span>
           </div>
         </div>
@@ -175,7 +179,10 @@ export const ExerciseShell = memo(function ExerciseShell({
       <div className="flex-1 flex flex-col min-h-svh lg:h-svh lg:min-h-0 lg:overflow-hidden">
         <LessonHeader
           title={`${group.name}: ${title}`}
-          step={step}
+          /* `step` is a 0-based index into the 6-step lesson flow (0 = scene),
+             so position in the flow is step + 1. */
+          current={step + 1}
+          total={EXERCISE_STEP_COUNT}
           onBack={() => dispatch({ type: "LESSON_PREVIOUS" })}
           onClose={() => setShowExitModal(true)}
         />

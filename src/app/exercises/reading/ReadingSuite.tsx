@@ -28,7 +28,7 @@ export const ExReadingVisualContext = memo(function ExReadingVisualContext({ dis
 
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Visual Context & Clues" step={1} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Visual Context & Clues" current={1} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="h-64 w-full rounded-3xl overflow-hidden border border-border shadow-wp-xs">
           <WordImage word={target} width="600" height="400" className="size-full object-cover" />
@@ -84,7 +84,7 @@ export const ExReadingProgressiveReveal = memo(function ExReadingProgressiveReve
 
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Progressive Reveal Reading" step={2} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Progressive Reveal Reading" current={2} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col gap-3 shadow-wp-xs">
           <span className="font-sans font-bold text-xs text-primary bg-secondary px-3 py-1 rounded-full w-fit">
@@ -122,7 +122,7 @@ export const ExReadingErrorDetection = memo(function ExReadingErrorDetection({ d
 
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Error Detection Proofreading" step={3} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Error Detection Proofreading" current={3} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col gap-3">
           <h2 className="font-sans font-bold text-foreground text-lg">Tap on the grammatical error in the paragraph:</h2>
@@ -150,7 +150,7 @@ export const ExReadingErrorDetection = memo(function ExReadingErrorDetection({ d
 export const ExReadingComicStrip = memo(function ExReadingComicStrip({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Comic Strip Narrative Sequencing" step={4} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Comic Strip Narrative Sequencing" current={4} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="grid grid-cols-2 gap-3">
           <div className="bg-slate-900 text-white rounded-2xl p-4 flex flex-col items-center justify-center text-center gap-2 h-40">
@@ -173,7 +173,7 @@ export const ExReadingComicStrip = memo(function ExReadingComicStrip({ dispatch 
 export const ExReadingInfographic = memo(function ExReadingInfographic({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Infographic Data Reading" step={5} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Infographic Data Reading" current={5} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-wp-card border-2 border-primary/30 rounded-3xl p-6 flex flex-col gap-3 shadow-wp-xs">
           <span className="font-sans font-bold text-xs text-primary bg-secondary px-3 py-1 rounded-full w-fit">
@@ -195,7 +195,7 @@ export const ExReadingInfographic = memo(function ExReadingInfographic({ dispatc
 export const ExReadingCategorySort = memo(function ExReadingCategorySort({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Category Sort Classification" step={6} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Category Sort Classification" current={6} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="grid grid-cols-2 gap-4">
           <div className="bg-wp-card border-2 border-dashed border-primary/40 rounded-2xl p-4 min-h-[160px] flex flex-col items-center justify-center text-center">
@@ -234,7 +234,7 @@ export const ExReadingResults = memo(function ExReadingResults({ dispatch }: Pro
 export const ExReadingSubtitleCorrection = memo(function ExReadingSubtitleCorrection({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Subtitle Correction" step={8} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Subtitle Correction" current={8} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-slate-900 text-white rounded-3xl p-6 flex flex-col gap-3">
           <span className="font-sans font-bold text-xs text-wp-rose">Fix Highlighted Error</span>
@@ -250,7 +250,7 @@ export const ExReadingSubtitleCorrection = memo(function ExReadingSubtitleCorrec
 export const ExReadingConfidenceCheck = memo(function ExReadingConfidenceCheck({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Pre-Lesson Confidence Check" step={9} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Pre-Lesson Confidence Check" current={9} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-wp-card border border-border rounded-3xl p-8 flex flex-col items-center text-center gap-3">
           <h2 className="font-sans font-black text-foreground text-3xl">Ephemeral</h2>

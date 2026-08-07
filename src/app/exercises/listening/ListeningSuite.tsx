@@ -38,7 +38,7 @@ export const ExListeningWordMatch = memo(function ExListeningWordMatch({ dispatc
 
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Word Match: Listening Definition" step={1} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Word Match: Listening Definition" current={1} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col items-center text-center gap-3 shadow-wp-xs">
           <button type="button" onClick={() => speak(target.label)} className="size-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md hover:scale-105 transition-transform">
@@ -106,7 +106,7 @@ export const ExListeningAudioSceneMatch = memo(function ExListeningAudioSceneMat
 
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Audio Scene Match & Confidence" step={2} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Audio Scene Match & Confidence" current={2} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-slate-900 text-white rounded-3xl p-6 flex flex-col items-center text-center gap-3 shadow-md">
           <Volume2 className="size-10 text-wp-amber animate-pulse" />
@@ -174,7 +174,7 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
 
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Dictation Sprint (Cloze Input)" step={3} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Dictation Sprint (Cloze Input)" current={3} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="flex items-center justify-between bg-wp-card border border-border rounded-2xl p-4">
           <div className="flex items-center gap-2 text-rose-600 font-sans font-bold text-sm">
@@ -221,7 +221,7 @@ export const ExListeningVocabSpotting = memo(function ExListeningVocabSpotting({
 
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Continuous Vocabulary Spotting" step={4} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Continuous Vocabulary Spotting" current={4} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-slate-900 text-white rounded-3xl p-6 flex flex-col items-center gap-3">
           <Sparkles className="size-8 text-wp-amber animate-pulse" />
@@ -259,7 +259,7 @@ export const ExListeningDialogueRolePlay = memo(function ExListeningDialogueRole
 
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Dialogue Role-Play" step={5} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Dialogue Role-Play" current={5} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-4">
         <div className="bg-wp-card border border-border rounded-2xl p-4 flex flex-col gap-3">
           <div className="bg-secondary p-3 rounded-xl self-start max-w-[80%]">
@@ -293,7 +293,7 @@ export const ExListeningDialogueRolePlay = memo(function ExListeningDialogueRole
 export const ExListeningSelectiveShadowing = memo(function ExListeningSelectiveShadowing({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Selective Shadowing & Phoneme Analysis" step={6} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Selective Shadowing & Phoneme Analysis" current={6} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col gap-4">
           <h2 className="font-sans font-black text-foreground text-xl">
@@ -355,7 +355,7 @@ export const ExListeningResults = memo(function ExListeningResults({ dispatch }:
 export const ExListeningWarmupReview = memo(function ExListeningWarmupReview({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="30-Second Warm-up Refresher" step={8} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="30-Second Warm-up Refresher" current={8} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-wp-card border-2 border-primary/40 rounded-3xl p-8 flex flex-col items-center text-center gap-4 shadow-wp-md">
           <span className="font-sans font-bold text-xs text-primary bg-secondary px-3 py-1 rounded-full border border-primary/20">
@@ -387,7 +387,7 @@ export const ExListeningPodcastComprehension = memo(function ExListeningPodcastC
 
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Podcast Comprehension (Multi-Select)" step={9} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Podcast Comprehension (Multi-Select)" current={9} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-slate-900 text-white rounded-3xl p-6 flex flex-col gap-3">
           <span className="font-sans font-bold text-xs text-wp-amber">Episode 14 · Bedroom Comfort</span>

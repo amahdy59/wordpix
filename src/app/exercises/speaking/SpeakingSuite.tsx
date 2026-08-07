@@ -36,7 +36,7 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
 
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Echo Practice: Say It Aloud" step={1} total={8} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Echo Practice: Say It Aloud" current={1} total={8} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col items-center text-center gap-3">
           <button
@@ -100,7 +100,7 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
 export const ExSpeakingScenarioResponse = memo(function ExSpeakingScenarioResponse({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Scenario Response (Situational)" step={2} total={8} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Scenario Response (Situational)" current={2} total={8} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-slate-900 text-white rounded-3xl p-6 flex flex-col gap-3">
           <span className="font-sans font-bold text-xs text-wp-amber uppercase">B1 · Hotel Scenario</span>
@@ -117,7 +117,7 @@ export const ExSpeakingScenarioResponse = memo(function ExSpeakingScenarioRespon
 export const ExSpeakingPhotoNarration = memo(function ExSpeakingPhotoNarration({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Photo Narration (Descriptive)" step={3} total={8} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Photo Narration (Descriptive)" current={3} total={8} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="h-64 w-full rounded-3xl overflow-hidden border border-border shadow-wp-xs">
           <WordImage word={BEDROOM_VOCABULARY[0]} width="600" height="400" className="size-full object-cover" />
@@ -136,7 +136,7 @@ export const ExSpeakingPhotoNarration = memo(function ExSpeakingPhotoNarration({
 export const ExSpeakingVideoRoleplay = memo(function ExSpeakingVideoRoleplay({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Video Roleplay Conversation" step={4} total={8} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Video Roleplay Conversation" current={4} total={8} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-slate-950 text-white rounded-3xl p-8 flex flex-col items-center justify-center text-center gap-3 h-64">
           <span className="font-sans font-black text-wp-amber text-xl">YOUR TURN — SPEAK NOW!</span>
@@ -152,7 +152,7 @@ export const ExSpeakingVideoRoleplay = memo(function ExSpeakingVideoRoleplay({ d
 export const ExSpeakingCompareContrast = memo(function ExSpeakingCompareContrast({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Compare & Contrast Argumentation" step={5} total={8} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Compare & Contrast Argumentation" current={5} total={8} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="grid grid-cols-2 gap-3">
           <div className="h-40 rounded-2xl overflow-hidden border border-border">
@@ -177,7 +177,7 @@ export const ExSpeakingWordChain = memo(function ExSpeakingWordChain({ dispatch 
 
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Word Chain Arcade Game" step={6} total={8} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Word Chain Arcade Game" current={6} total={8} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="flex items-center justify-between bg-wp-card border border-border rounded-2xl p-4">
           <div className="flex items-center gap-1.5 text-wp-rose font-sans font-bold text-sm" aria-label={`${lives} of ${MAX_LIVES} lives remaining`}>
@@ -199,7 +199,7 @@ export const ExSpeakingWordChain = memo(function ExSpeakingWordChain({ dispatch 
 export const ExSpeakingSelfRepair = memo(function ExSpeakingSelfRepair({ dispatch }: Props) {
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Self-Repair Error Correction" step={7} total={8} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader title="Self-Repair Error Correction" current={7} total={8} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="bg-wp-card border border-wp-rose/30 rounded-2xl p-5 flex flex-col gap-2">
           <span className="font-sans font-bold text-xs text-wp-rose uppercase">Detected Error</span>
