@@ -4,7 +4,7 @@ import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { BEDROOM_GROUPS } from "../data/lessons";
 import { calculateDaysBetween, getLocalDateString, getWeekActivity } from "../../features/gamification/streak";
-import { isOfflineAvailable } from "../../pwa";
+import { useOfflineReadiness } from "../shared/useOfflineReadiness";
 
 const imgAvatar = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
 
@@ -52,7 +52,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
   );
   const estimatedMinutes = Math.max(1, Math.round((activeGroup.wordIds.length * SECONDS_PER_WORD) / 60));
 
-  const isOfflineReady = isOfflineAvailable("bedroom");
+  const offline = useOfflineReadiness("bedroom");
 
   return (
     <div className="flex flex-col gap-6 p-5 md:p-8 pb-10 max-w-6xl mx-auto w-full">
@@ -77,10 +77,18 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           </div>
         </div>
 
-        {isOfflineReady && (
+        {offline && offline.ready && (
           <div className="hidden sm:flex items-center gap-1.5 text-[11px] font-sans font-semibold text-wp-teal bg-teal-500/10 px-3 py-1.5 rounded-full border border-teal-500/20">
-            <WifiOff className="size-3.5" />
+            <WifiOff className="size-3.5" aria-hidden />
             <span>Bedroom available offline</span>
+          </div>
+        )}
+        {offline && !offline.ready && offline.cached > 0 && (
+          <div className="hidden sm:flex items-center gap-1.5 text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-3 py-1.5 rounded-full border border-border">
+            <WifiOff className="size-3.5" aria-hidden />
+            <span>
+              Saving for offline: {offline.cached} of {offline.total}
+            </span>
           </div>
         )}
       </header>

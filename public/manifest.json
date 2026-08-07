@@ -1,0 +1,28 @@
+{
+  "name": "WordPix — Learn English Through Pictures",
+  "short_name": "WordPix",
+  "description": "Interactive English vocabulary learning through picture exploration, audio pronunciation, and exercises.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#F8FAFC",
+  "theme_color": "#5B21B6",
+  "lang": "en",
+  "dir": "auto",
+  "categories": ["education"],
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
