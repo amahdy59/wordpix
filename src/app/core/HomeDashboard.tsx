@@ -80,7 +80,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         </div>
 
         {offline && offline.ready && (
-          <div className="hidden sm:flex items-center gap-1.5 text-[11px] font-sans font-semibold text-wp-teal bg-teal-500/10 px-3 py-1.5 rounded-full border border-teal-500/20">
+          <div className="hidden sm:flex items-center gap-1.5 text-[11px] font-sans font-semibold text-wp-teal bg-wp-teal/10 px-3 py-1.5 rounded-full border border-wp-teal/20">
             <WifiOff className="size-3.5" aria-hidden />
             <span>{t("dashboard.offlineReady")}</span>
           </div>
@@ -95,13 +95,13 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
 
       {/* 35 Specialized Skill Exercises Quick Hub Card */}
       <section aria-label="35 Specialized Skill Drills">
-        <div className="bg-slate-900 text-white rounded-3xl p-5 md:p-6 flex flex-col md:flex-row items-center justify-between gap-4 border border-slate-800 shadow-wp-md">
+        <div className="bg-wp-panel text-wp-text-on-panel rounded-3xl p-5 md:p-6 flex flex-col md:flex-row items-center justify-between gap-4 border border-wp-panel-border shadow-wp-md">
           <div className="flex items-center gap-4">
             <div className="size-12 md:size-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center shrink-0 shadow-md">
               <Layers className="size-6 md:size-7" />
             </div>
             <div>
-              <span className="font-sans font-bold text-xs text-wp-amber bg-amber-500/10 px-2.5 py-0.5 rounded-full border border-amber-500/20">
+              <span className="font-sans font-bold text-xs text-wp-amber bg-wp-amber/10 px-2.5 py-0.5 rounded-full border border-wp-amber/20">
                 35 Specialized Screens
               </span>
               <h2 className="font-sans font-black text-white text-lg md:text-xl mt-1">
@@ -174,7 +174,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                   <RotateCcw className="size-4 text-primary" />
                   <span>Spaced Repetition</span>
                 </div>
-                <span className="font-sans font-bold text-xs text-wp-amber bg-amber-500/10 px-2.5 py-0.5 rounded-full border border-amber-500/20">
+                <span className="font-sans font-bold text-xs text-wp-amber bg-wp-amber/10 px-2.5 py-0.5 rounded-full border border-wp-amber/20">
                   {dueCount} words ready · ~3 min
                 </span>
               </div>
@@ -206,12 +206,12 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                   <span className="font-sans font-black text-wp-green text-2xl">{strongCount}</span>
                   <span className="font-sans font-semibold text-muted-foreground text-xs mt-1">{t("dashboard.strong")}</span>
                 </div>
-                <div className="bg-amber-500/10 border border-amber-500/20 rounded-2xl p-3.5 flex flex-col items-center">
-                  <span className="font-sans font-black text-amber-600 dark:text-wp-amber text-2xl">{learningCount}</span>
+                <div className="bg-wp-amber/10 border border-wp-amber/20 rounded-2xl p-3.5 flex flex-col items-center">
+                  <span className="font-sans font-black text-wp-amber text-2xl">{learningCount}</span>
                   <span className="font-sans font-semibold text-muted-foreground text-xs mt-1">{t("dashboard.learning")}</span>
                 </div>
-                <div className="bg-rose-500/10 border border-rose-500/20 rounded-2xl p-3.5 flex flex-col items-center">
-                  <span className="font-sans font-black text-rose-600 dark:text-rose-400 text-2xl">{dueCount}</span>
+                <div className="bg-wp-rose/10 border border-wp-rose/20 rounded-2xl p-3.5 flex flex-col items-center">
+                  <span className="font-sans font-black text-wp-rose text-2xl">{dueCount}</span>
                   <span className="font-sans font-semibold text-muted-foreground text-xs mt-1">{t("dashboard.due")}</span>
                 </div>
               </div>

@@ -69,7 +69,7 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
                 <Icon className="size-5 shrink-0" aria-hidden />
 
                 {/* Tooltip on hover */}
-                <span className="absolute start-full ms-3 px-2.5 py-1 bg-slate-900 text-white font-sans text-xs font-semibold rounded-lg shadow-wp-md whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-50">
+                <span className="absolute start-full ms-3 px-2.5 py-1 bg-wp-panel text-wp-text-on-panel font-sans text-xs font-semibold rounded-lg shadow-wp-md whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-50">
                   {label}
                 </span>
               </button>

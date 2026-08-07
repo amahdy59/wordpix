@@ -168,11 +168,11 @@ export const ExReadingComicStrip = memo(function ExReadingComicStrip({ dispatch 
       <LessonHeader title="Comic Strip Narrative Sequencing" current={4} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="grid grid-cols-2 gap-3">
-          <div className="bg-slate-900 text-white rounded-2xl p-4 flex flex-col items-center justify-center text-center gap-2 h-40">
+          <div className="bg-wp-panel text-wp-text-on-panel rounded-2xl p-4 flex flex-col items-center justify-center text-center gap-2 h-40">
             <span className="text-3xl">🖼️ Panel 1</span>
             <p className="font-sans text-xs text-white/80">&ldquo;I need to organize my bedroom today.&rdquo;</p>
           </div>
-          <div className="bg-slate-900 text-white rounded-2xl p-4 flex flex-col items-center justify-center text-center gap-2 h-40">
+          <div className="bg-wp-panel text-wp-text-on-panel rounded-2xl p-4 flex flex-col items-center justify-center text-center gap-2 h-40">
             <span className="text-3xl">🖼️ Panel 2</span>
             <p className="font-sans text-xs text-white/80">&ldquo;First, I will fold blankets into the dresser.&rdquo;</p>
           </div>
@@ -251,7 +251,7 @@ export const ExReadingSubtitleCorrection = memo(function ExReadingSubtitleCorrec
     <div className="min-h-svh bg-background flex flex-col">
       <LessonHeader title="Subtitle Correction" current={8} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
-        <div className="bg-slate-900 text-white rounded-3xl p-6 flex flex-col gap-3">
+        <div className="bg-wp-panel text-wp-text-on-panel rounded-3xl p-6 flex flex-col gap-3">
           <span className="font-sans font-bold text-xs text-wp-rose">Fix Highlighted Error</span>
           <p className="font-sans text-lg font-bold text-white">&ldquo;There are thousands of <span className="underline decoration-wp-rose decoration-2 text-wp-rose font-black">mile</span> to travel.&rdquo;</p>
         </div>

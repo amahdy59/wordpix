@@ -36,6 +36,16 @@
   /* Surface & Neutral Tokens */
   --wp-surface:         #F8FAFC;   /* slate-50 background */
   --wp-card:            #FFFFFF;   /* card background */
+
+  /* Immersive dark panel — the "cinema" surface behind scene canvases, audio
+     bars, and hero cards. Components hardcoded bg-slate-950/900 for this, which
+     meant those regions never responded to the theme at all. It stays dark in
+     both modes by design, but as a named token with a checked foreground. */
+  --wp-panel:           #0F172A;   /* slate-900 */
+  --wp-panel-raised:    #1E293B;   /* slate-800 — nested panel surfaces */
+  --wp-panel-border:    #334155;   /* slate-700 */
+  --wp-text-on-panel:   #F8FAFC;   /* 17.06:1 */
+  --wp-text-on-panel-muted: #CBD5E1; /* 12.03:1 */
   --wp-border:          #E2E8F0;   /* slate-200 border */
   --wp-text:            #0F172A;   /* slate-900 foreground */
   --wp-text-secondary:  #475569;   /* slate-600 secondary text (7.1:1 AAA) */
@@ -171,6 +181,11 @@
   --color-wp-slate:               var(--wp-slate);
   --color-wp-surface:             var(--wp-surface);
   --color-wp-card:                var(--wp-card);
+  --color-wp-panel:               var(--wp-panel);
+  --color-wp-panel-raised:        var(--wp-panel-raised);
+  --color-wp-panel-border:        var(--wp-panel-border);
+  --color-wp-text-on-panel:       var(--wp-text-on-panel);
+  --color-wp-text-on-panel-muted: var(--wp-text-on-panel-muted);
   --color-wp-border:              var(--wp-border);
   --color-wp-text:                var(--wp-text);
   --color-wp-text-secondary:      var(--wp-text-secondary);

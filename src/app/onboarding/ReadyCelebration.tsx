@@ -13,7 +13,7 @@ export function ReadyCelebration({ dispatch }: Props) {
       <StatusBar />
 
       {/* ── Desktop Left Hero Column ────────────────────────────────────────── */}
-      <div className="hidden md:flex md:w-1/2 bg-slate-950 text-white relative overflow-hidden flex-col justify-between p-8 xl:p-12">
+      <div className="hidden md:flex md:w-1/2 bg-wp-panel text-wp-text-on-panel relative overflow-hidden flex-col justify-between p-8 xl:p-12">
         <div className="relative z-10 flex items-center gap-3">
           <div className="size-10 rounded-2xl bg-primary flex items-center justify-center shadow-md">
             <BookOpen className="size-5 text-primary-foreground" />
@@ -24,7 +24,7 @@ export function ReadyCelebration({ dispatch }: Props) {
         <div className="relative z-10 flex flex-col items-center text-center gap-6 my-auto">
           <div aria-hidden className="relative rounded-full shrink-0 size-32 border-4 border-primary/30 bg-secondary/10 flex items-center justify-center shadow-2xl">
             <UserCircle className="size-20 text-primary" />
-            <div className="absolute bottom-1 end-1 size-8 rounded-full bg-wp-green text-wp-text-on-green flex items-center justify-center border-2 border-slate-950">
+            <div className="absolute bottom-1 end-1 size-8 rounded-full bg-wp-green text-wp-text-on-green flex items-center justify-center border-2 border-wp-panel">
               <CheckCircle2 className="size-4" />
             </div>
           </div>

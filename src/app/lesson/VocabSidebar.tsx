@@ -22,9 +22,9 @@ interface Props {
 
 const MASTERY_BADGES: Record<MasteryLevel, { label: string; bg: string; text: string } | null> = {
   0: null,
-  1: { label: "Recognized", bg: "bg-violet-500/10", text: "text-primary border-violet-500/20" },
-  2: { label: "Practiced", bg: "bg-amber-500/10", text: "text-amber-600 dark:text-wp-amber border-amber-500/20" },
-  3: { label: "Mastered", bg: "bg-teal-500/10", text: "text-wp-teal border-teal-500/20" },
+  1: { label: "Recognized", bg: "bg-wp-brand/10", text: "text-primary border-wp-brand/20" },
+  2: { label: "Practiced", bg: "bg-wp-amber/10", text: "text-wp-amber border-wp-amber/20" },
+  3: { label: "Mastered", bg: "bg-wp-teal/10", text: "text-wp-teal border-wp-teal/20" },
 };
 
 export const VocabSidebar = memo(function VocabSidebar({

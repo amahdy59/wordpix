@@ -106,7 +106,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       dispatch={dispatch}
       footer={
         <div className="w-full flex items-center justify-between text-xs font-sans font-semibold text-muted-foreground px-1">
-          <div className="flex items-center gap-1.5 text-amber-600 dark:text-amber-400 font-bold">
+          <div className="flex items-center gap-1.5 text-wp-amber font-bold">
             <Keyboard className="size-4" aria-hidden />
             <span>Press 1–{options.length} to choose an option</span>
           </div>
@@ -183,7 +183,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 {/* Physical Keyboard Badge */}
                 <span
                   aria-hidden
-                  className="absolute top-2.5 start-2.5 z-10 bg-slate-900/90 text-white text-[11px] font-mono font-bold px-2.5 py-1 rounded-lg border border-white/20 shadow-md backdrop-blur-md pointer-events-none"
+                  className="absolute top-2.5 start-2.5 z-10 bg-wp-panel/90 text-wp-text-on-panel text-[11px] font-mono font-bold px-2.5 py-1 rounded-lg border border-white/20 shadow-md backdrop-blur-md pointer-events-none"
                 >
                   Key [{idx + 1}]
                 </span>

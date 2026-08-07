@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { readFileSync } from "node:fs";
-import { resolve } from "node:path";
+import { readdirSync, readFileSync, statSync } from "node:fs";
+import { join, relative, resolve } from "node:path";
 
 const stylesDir = resolve(__dirname, "../../styles");
 const readStyle = (file: string) => readFileSync(resolve(stylesDir, file), "utf8");
@@ -88,6 +88,51 @@ describe("Reduced motion (WCAG 2.2.2, 2.3.3)", () => {
     const block = globalsCss.slice(globalsCss.indexOf("@media (prefers-reduced-motion: reduce)"));
     expect(block).toContain(".animate-wp-shake");
     expect(block).toMatch(/outline:\s*2px solid/);
+  });
+});
+
+describe("Components use tokens, not raw palette values", () => {
+  const componentFiles = (function collect(dir: string, found: string[] = []): string[] {
+    for (const entry of readdirSync(dir)) {
+      if (entry === "__tests__") continue;
+      const full = join(dir, entry);
+      if (statSync(full).isDirectory()) collect(full, found);
+      else if (entry.endsWith(".tsx")) found.push(full);
+    }
+    return found;
+  })(resolve(__dirname, ".."));
+
+  /**
+   * Raw Tailwind palette utilities bypass the token layer, so those regions
+   * never respond to the theme. The dark "cinema" panels behind scene canvases
+   * and audio bars were hardcoded bg-slate-950/900 and stayed fixed in both
+   * light and dark mode; accent tints used bg-amber-500/10 alongside the
+   * --wp-amber they duplicated.
+   */
+  const FORBIDDEN = /\b(?:bg|text|border|fill|from|via|to)-(?:slate|amber|rose|teal|violet|emerald|indigo)-\d/;
+
+  it.each(componentFiles.map((f) => [relative(resolve(__dirname, ".."), f), f]))(
+    "%s uses only semantic colour tokens",
+    (_name, file) => {
+      const source = readFileSync(file, "utf8")
+        .replace(/\{\s*\/\*[\s\S]*?\*\/\s*\}/g, "")
+        .replace(/\/\*[\s\S]*?\*\//g, "")
+        .replace(/^\s*\/\/.*$/gm, "");
+
+      const offenders = source
+        .split("\n")
+        .map((line, i) => (FORBIDDEN.test(line) ? `line ${i + 1}` : null))
+        .filter(Boolean);
+
+      expect(offenders, offenders.join(", ")).toEqual([]);
+    }
+  );
+
+  it("declares the immersive panel surface as a token with a paired foreground", () => {
+    const declared = declaredCustomProperties(themeCss);
+    ["--wp-panel", "--wp-panel-raised", "--wp-panel-border", "--wp-text-on-panel"].forEach((token) => {
+      expect(declared.has(token), `missing ${token}`).toBe(true);
+    });
   });
 });
 

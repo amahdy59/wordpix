@@ -64,11 +64,11 @@ export const FeedbackModal = memo(function FeedbackModal({
         {/* Title & XP Badge */}
         <div className="flex flex-col items-center gap-1.5">
           {isCorrect && (
-            <div className="flex items-center gap-2 bg-amber-500/10 text-wp-amber px-3 py-1 rounded-full border border-amber-500/20 text-xs font-sans font-bold shadow-xs">
+            <div className="flex items-center gap-2 bg-wp-amber/10 text-wp-amber px-3 py-1 rounded-full border border-wp-amber/20 text-xs font-sans font-bold shadow-xs">
               <Sparkles className="size-3.5" aria-hidden />
               <span>+{xpBonus} XP Earned</span>
               {streakCount && streakCount > 1 && (
-                <span className="flex items-center gap-1 text-wp-amber border-s border-amber-500/30 ps-2">
+                <span className="flex items-center gap-1 text-wp-amber border-s border-wp-amber/30 ps-2">
                   <Flame className="size-3" aria-hidden />
                   {streakCount} Streak!
                 </span>

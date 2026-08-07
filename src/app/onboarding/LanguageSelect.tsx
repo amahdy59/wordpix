@@ -54,7 +54,7 @@ export function LanguageSelect({ dispatch }: Props) {
       />
 
       {/* ── Desktop Left Hero Column ────────────────────────────────────────── */}
-      <div className="hidden md:flex md:w-1/2 bg-slate-950 text-white relative overflow-hidden flex-col justify-between p-8 xl:p-12">
+      <div className="hidden md:flex md:w-1/2 bg-wp-panel text-wp-text-on-panel relative overflow-hidden flex-col justify-between p-8 xl:p-12">
         <div className="relative z-10 flex items-center gap-3">
           <div className="size-10 rounded-2xl bg-primary flex items-center justify-center shadow-md">
             <BookOpen className="size-5 text-primary-foreground" />

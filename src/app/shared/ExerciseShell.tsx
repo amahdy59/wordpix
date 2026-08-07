@@ -76,7 +76,7 @@ export const ExerciseShell = memo(function ExerciseShell({
 
       {/* ── DESKTOP LEFT PANEL: Rosetta Stone Group Visual Panel ────────────── */}
       <aside
-        className="hidden lg:flex lg:flex-col lg:w-[34%] xl:w-[32%] shrink-0 bg-slate-950 relative overflow-hidden h-full"
+        className="hidden lg:flex lg:flex-col lg:w-[34%] xl:w-[32%] shrink-0 bg-wp-panel relative overflow-hidden h-full"
         aria-label={`Group learning: ${group.name}`}
       >
         {/* Visual Background */}
@@ -90,7 +90,7 @@ export const ExerciseShell = memo(function ExerciseShell({
               className="size-full object-cover transition-all duration-300"
             />
           ) : (
-            <div className="size-full bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 flex flex-col items-center justify-center p-8">
+            <div className="size-full bg-gradient-to-br from-wp-panel via-wp-panel to-wp-panel flex flex-col items-center justify-center p-8">
               <div className="size-24 rounded-3xl bg-primary/10 border border-primary/20 flex items-center justify-center shadow-2xl">
                 <HelpCircle className="size-12 text-primary animate-pulse" />
               </div>
@@ -117,7 +117,7 @@ export const ExerciseShell = memo(function ExerciseShell({
           {/* Active Word Label or Testing Prompt */}
           {!isTesting && currentWord ? (
             <div>
-              <span className="font-sans font-bold text-[11px] text-wp-amber bg-amber-500/10 px-2.5 py-0.5 rounded-full border border-amber-500/20 uppercase tracking-wide">
+              <span className="font-sans font-bold text-[11px] text-wp-amber bg-wp-amber/10 px-2.5 py-0.5 rounded-full border border-wp-amber/20 uppercase tracking-wide">
                 Target Word
               </span>
               <h2 className="font-sans font-black text-white text-3xl xl:text-4xl leading-tight tracking-tight mt-0.5">

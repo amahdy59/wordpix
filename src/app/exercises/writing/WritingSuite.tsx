@@ -69,7 +69,7 @@ export const ExWritingSentenceAssembly = memo(function ExWritingSentenceAssembly
     <div className="min-h-svh bg-background flex flex-col">
       <LessonHeader title="Sentence Assembly Arcade" current={2} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
-        <div className="flex justify-between items-center bg-slate-900 text-white rounded-2xl p-4">
+        <div className="flex justify-between items-center bg-wp-panel text-wp-text-on-panel rounded-2xl p-4">
           <span className="font-sans font-black text-wp-amber text-xl">x4 COMBO</span>
           <span className="font-sans font-bold text-sm">340 Points</span>
         </div>
@@ -109,7 +109,7 @@ export const ExWritingVideoSummary = memo(function ExWritingVideoSummary({ dispa
     <div className="min-h-svh bg-background flex flex-col">
       <LessonHeader title="Video Summary Academic Writing" current={4} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
-        <div className="bg-slate-950 text-white rounded-3xl p-6 flex flex-col items-center justify-center h-48">
+        <div className="bg-wp-panel text-wp-text-on-panel rounded-3xl p-6 flex flex-col items-center justify-center h-48">
           <span className="font-sans font-black text-2xl">Academic Video Player</span>
         </div>
         <PrimaryButton label="Submit Summary" onClick={() => dispatch({ type: "GO", to: "explore" })} />
@@ -193,7 +193,7 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
     <div className="min-h-svh bg-background flex flex-col">
       <LessonHeader title="Timed Speed Writing Sprint" current={9} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
-        <div className="bg-slate-900 text-white rounded-3xl p-6 flex flex-col items-center gap-3">
+        <div className="bg-wp-panel text-wp-text-on-panel rounded-3xl p-6 flex flex-col items-center gap-3">
           <span className="font-sans font-black text-wp-amber text-3xl">0:30 SPRINT</span>
           <p className="font-sans text-xs text-white/70">Type the English word as fast as possible!</p>
         </div>

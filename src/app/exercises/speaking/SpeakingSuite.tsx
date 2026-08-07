@@ -102,7 +102,7 @@ export const ExSpeakingScenarioResponse = memo(function ExSpeakingScenarioRespon
     <div className="min-h-svh bg-background flex flex-col">
       <LessonHeader title="Scenario Response (Situational)" current={2} total={8} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
-        <div className="bg-slate-900 text-white rounded-3xl p-6 flex flex-col gap-3">
+        <div className="bg-wp-panel text-wp-text-on-panel rounded-3xl p-6 flex flex-col gap-3">
           <span className="font-sans font-bold text-xs text-wp-amber uppercase">B1 · Hotel Scenario</span>
           <h2 className="font-sans font-black text-2xl">Ask the hotel staff for an extra pillow</h2>
           <p className="font-sans text-white/70 text-xs">Cultural Tip: Use &ldquo;Could I please have...&rdquo; for polite requests.</p>
@@ -138,7 +138,7 @@ export const ExSpeakingVideoRoleplay = memo(function ExSpeakingVideoRoleplay({ d
     <div className="min-h-svh bg-background flex flex-col">
       <LessonHeader title="Video Roleplay Conversation" current={4} total={8} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
-        <div className="bg-slate-950 text-white rounded-3xl p-8 flex flex-col items-center justify-center text-center gap-3 h-64">
+        <div className="bg-wp-panel text-wp-text-on-panel rounded-3xl p-8 flex flex-col items-center justify-center text-center gap-3 h-64">
           <span className="font-sans font-black text-wp-amber text-xl">YOUR TURN — SPEAK NOW!</span>
           <p className="font-sans text-white/70 text-xs">Say: &ldquo;I would like to purchase a lamp.&rdquo;</p>
         </div>

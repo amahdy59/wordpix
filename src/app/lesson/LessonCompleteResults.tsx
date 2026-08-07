@@ -54,7 +54,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   return (
     <div className="bg-secondary min-h-svh flex flex-col lg:flex-row lg:overflow-hidden relative">
       {/* ── Desktop Left: Celebration visual ────────────────────────────────── */}
-      <div className="hidden lg:flex lg:flex-col lg:items-center lg:justify-center lg:w-1/2 bg-slate-900 relative overflow-hidden px-12">
+      <div className="hidden lg:flex lg:flex-col lg:items-center lg:justify-center lg:w-1/2 bg-wp-panel relative overflow-hidden px-12">
         <div className="absolute -top-24 -right-24 size-72 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
         <div className="absolute -bottom-24 -left-24 size-72 rounded-full bg-wp-amber/20 blur-3xl pointer-events-none" />
         <div className="relative z-10 flex flex-col items-center gap-6 text-center">
@@ -62,7 +62,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             <Trophy className="size-16 text-wp-amber" aria-hidden />
           </div>
           <div>
-            <span className="font-sans font-bold text-xs text-wp-amber bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full uppercase tracking-wider">
+            <span className="font-sans font-bold text-xs text-wp-amber bg-wp-amber/10 border border-wp-amber/20 px-3 py-1 rounded-full uppercase tracking-wider">
               {isMastered ? "Group Mastered" : "Session Complete"}
             </span>
             <h1 className="font-sans font-black text-white text-4xl xl:text-5xl leading-tight tracking-tight mt-2">

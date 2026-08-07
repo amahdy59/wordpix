@@ -48,7 +48,7 @@ export const ExListeningWordMatch = memo(function ExListeningWordMatch({ dispatc
             <h2 className="font-sans font-black text-foreground text-3xl">{target.label}</h2>
             <p className="font-sans text-muted-foreground text-sm font-medium">/{target.phonetic}/</p>
           </div>
-          <span className="font-sans text-xs font-bold text-wp-amber bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
+          <span className="font-sans text-xs font-bold text-wp-amber bg-wp-amber/10 px-3 py-1 rounded-full border border-wp-amber/20">
             🔥 5 Correct in a row! (+15 XP)
           </span>
         </div>
@@ -108,7 +108,7 @@ export const ExListeningAudioSceneMatch = memo(function ExListeningAudioSceneMat
     <div className="min-h-svh bg-background flex flex-col">
       <LessonHeader title="Audio Scene Match & Confidence" current={2} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
-        <div className="bg-slate-900 text-white rounded-3xl p-6 flex flex-col items-center text-center gap-3 shadow-md">
+        <div className="bg-wp-panel text-wp-text-on-panel rounded-3xl p-6 flex flex-col items-center text-center gap-3 shadow-md">
           <Volume2 className="size-10 text-wp-amber animate-pulse" />
           <h2 className="font-sans font-black text-2xl">Listen to Scene Soundscape</h2>
           <p className="font-sans text-white/70 text-xs">Identify which room or ambiance matches the audio clip.</p>
@@ -177,7 +177,7 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
       <LessonHeader title="Dictation Sprint (Cloze Input)" current={3} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="flex items-center justify-between bg-wp-card border border-border rounded-2xl p-4">
-          <div className="flex items-center gap-2 text-rose-600 font-sans font-bold text-sm">
+          <div className="flex items-center gap-2 text-wp-rose font-sans font-bold text-sm">
             <Clock className="size-4" />
             <span>0:42 Remaining</span>
           </div>
@@ -223,7 +223,7 @@ export const ExListeningVocabSpotting = memo(function ExListeningVocabSpotting({
     <div className="min-h-svh bg-background flex flex-col">
       <LessonHeader title="Continuous Vocabulary Spotting" current={4} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
-        <div className="bg-slate-900 text-white rounded-3xl p-6 flex flex-col items-center gap-3">
+        <div className="bg-wp-panel text-wp-text-on-panel rounded-3xl p-6 flex flex-col items-center gap-3">
           <Sparkles className="size-8 text-wp-amber animate-pulse" />
           <h2 className="font-sans font-black text-2xl">Tap as you hear target words</h2>
           <p className="font-sans text-white/70 text-xs">Continuous Narration · {spotted.length}/{targetWords.length} Spotted</p>
@@ -276,7 +276,7 @@ export const ExListeningDialogueRolePlay = memo(function ExListeningDialogueRole
           type="button"
           onClick={() => setRecording(!recording)}
           className={`py-4 rounded-2xl font-sans font-bold text-white flex items-center justify-center gap-2 transition-all ${
-            recording ? "bg-rose-600 animate-pulse" : "bg-wp-blue"
+            recording ? "bg-wp-rose animate-pulse" : "bg-wp-blue"
           }`}
         >
           <Mic className="size-5" />
@@ -300,7 +300,7 @@ export const ExListeningSelectiveShadowing = memo(function ExListeningSelectiveS
             Repeat ONLY the highlighted target word:
           </h2>
           <p className="font-sans text-lg text-foreground leading-relaxed">
-            The bedroom features an <span className="bg-wp-amber/20 text-amber-700 dark:text-wp-amber px-2 py-1 rounded-lg font-black border border-amber-500/30">impeccable</span> wooden wardrobe.
+            The bedroom features an <span className="bg-wp-amber/20 text-wp-amber px-2 py-1 rounded-lg font-black border border-wp-amber/30">impeccable</span> wooden wardrobe.
           </p>
         </div>
 
@@ -389,7 +389,7 @@ export const ExListeningPodcastComprehension = memo(function ExListeningPodcastC
     <div className="min-h-svh bg-background flex flex-col">
       <LessonHeader title="Podcast Comprehension (Multi-Select)" current={9} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
-        <div className="bg-slate-900 text-white rounded-3xl p-6 flex flex-col gap-3">
+        <div className="bg-wp-panel text-wp-text-on-panel rounded-3xl p-6 flex flex-col gap-3">
           <span className="font-sans font-bold text-xs text-wp-amber">Episode 14 · Bedroom Comfort</span>
           <h2 className="font-sans font-black text-2xl">Which topics were mentioned?</h2>
           <p className="font-sans text-white/70 text-xs">Select all topics discussed in the podcast audio snippet.</p>

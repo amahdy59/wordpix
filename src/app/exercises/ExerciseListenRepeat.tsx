@@ -112,7 +112,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               <><Mic className="size-4 text-wp-green" /><span>Listen &amp; repeat out loud</span></>
             )}
           </div>
-          <div className="flex items-center gap-1.5 text-xs font-sans font-semibold text-wp-amber bg-amber-500/10 px-2.5 py-0.5 rounded-full border border-amber-500/20">
+          <div className="flex items-center gap-1.5 text-xs font-sans font-semibold text-wp-amber bg-wp-amber/10 px-2.5 py-0.5 rounded-full border border-wp-amber/20">
             <Sparkles className="size-3" />
             <span>Speaking Skill</span>
           </div>

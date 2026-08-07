@@ -124,7 +124,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       dispatch={dispatch}
       footer={
         <div className="w-full flex items-center justify-between text-xs font-sans font-semibold text-muted-foreground px-1">
-          <div className="flex items-center gap-1.5 text-amber-600 dark:text-amber-400 font-bold">
+          <div className="flex items-center gap-1.5 text-wp-amber font-bold">
             <Keyboard className="size-4" aria-hidden />
             <span>Press 1–{words.length} to choose · R to replay audio</span>
           </div>
@@ -149,7 +149,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
 
       <div className="flex flex-col gap-3.5 sm:gap-4 w-full">
         {/* Sleek, Compact Target Audio Play Bar */}
-        <div className="bg-slate-950 text-white rounded-2xl p-3 sm:p-3.5 flex items-center justify-between shadow-wp-sm border border-slate-800 shrink-0">
+        <div className="bg-wp-panel text-wp-text-on-panel rounded-2xl p-3 sm:p-3.5 flex items-center justify-between shadow-wp-sm border border-wp-panel-border shrink-0">
           <button
             type="button"
             onClick={replayAudio}
@@ -162,7 +162,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             <div>
               <h2 className="font-sans font-black text-sm sm:text-base text-white leading-tight flex items-center gap-2">
                 <span>Listen &amp; Match Picture</span>
-                {isPlaying && <span className="text-[10px] bg-amber-500/20 text-wp-amber px-2 py-0.5 rounded-full border border-amber-500/30">Playing sound…</span>}
+                {isPlaying && <span className="text-[10px] bg-wp-amber/20 text-wp-amber px-2 py-0.5 rounded-full border border-wp-amber/30">Playing sound…</span>}
               </h2>
               <p className="font-sans text-white/60 text-xs">Tap image card matching the spoken word.</p>
             </div>
@@ -214,7 +214,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 {/* Physical Key Badge */}
                 <span
                   aria-hidden
-                  className="absolute top-2.5 start-2.5 z-10 bg-slate-900/90 text-white text-[11px] font-mono font-bold px-2 py-0.5 rounded-lg border border-white/20 shadow-md backdrop-blur-md pointer-events-none"
+                  className="absolute top-2.5 start-2.5 z-10 bg-wp-panel/90 text-wp-text-on-panel text-[11px] font-mono font-bold px-2 py-0.5 rounded-lg border border-white/20 shadow-md backdrop-blur-md pointer-events-none"
                 >
                   Key [{idx + 1}]
                 </span>

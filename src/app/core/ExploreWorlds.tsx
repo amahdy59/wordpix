@@ -37,14 +37,14 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
 
       {/* 35 Multimodal Exercises Hub Banner */}
       <section aria-label="35 Skill Exercises Hub">
-        <div className="bg-slate-900 text-white rounded-3xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4 border border-slate-800 shadow-wp-md">
+        <div className="bg-wp-panel text-wp-text-on-panel rounded-3xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4 border border-wp-panel-border shadow-wp-md">
           <div className="flex items-center gap-4">
             <div className="size-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center shrink-0 shadow-md">
               <Layers className="size-7" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="font-sans font-bold text-xs text-wp-amber bg-amber-500/10 px-2.5 py-0.5 rounded-full border border-amber-500/20">
+                <span className="font-sans font-bold text-xs text-wp-amber bg-wp-amber/10 px-2.5 py-0.5 rounded-full border border-wp-amber/20">
                   New Exercise Suite
                 </span>
                 <span className="font-sans text-xs text-white/70">35 Interactive Screens</span>
@@ -91,7 +91,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
           <div className="flex-1 flex flex-col justify-between gap-4">
             <div className="flex flex-col gap-2">
               <div className="flex items-center justify-between">
-                <span className="font-sans font-bold text-xs text-wp-amber bg-amber-500/10 px-2.5 py-0.5 rounded-full border border-amber-500/20">
+                <span className="font-sans font-bold text-xs text-wp-amber bg-wp-amber/10 px-2.5 py-0.5 rounded-full border border-wp-amber/20">
                   Level 1 · A1 Beginner
                 </span>
                 <span className="font-sans text-xs text-muted-foreground font-semibold">{totalBedroomWords} Vocabulary Words</span>

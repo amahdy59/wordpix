@@ -93,7 +93,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
       footer={
         <div className="w-full flex flex-col gap-1">
           {placed.length < answer.length && (
-            <p className="text-[11px] font-sans font-semibold text-center text-amber-600 dark:text-amber-400">
+            <p className="text-[11px] font-sans font-semibold text-center text-wp-amber">
               Tap tiles below in correct order to build the sentence
             </p>
           )}

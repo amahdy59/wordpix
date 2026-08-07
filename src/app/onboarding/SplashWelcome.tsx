@@ -17,14 +17,14 @@ export function SplashWelcome({ dispatch }: Props) {
       <StatusBar />
 
       {/* ── Desktop Left Hero Column ────────────────────────────────────────── */}
-      <div className="hidden md:flex md:w-1/2 bg-slate-950 text-white relative overflow-hidden flex-col justify-between p-8 xl:p-12">
+      <div className="hidden md:flex md:w-1/2 bg-wp-panel text-wp-text-on-panel relative overflow-hidden flex-col justify-between p-8 xl:p-12">
         <div className="absolute inset-0 opacity-40">
           <img
             alt="Preview of WordPix visual scenes"
             className="object-cover size-full"
             src={imgHero}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-wp-panel via-wp-panel/70 to-transparent" />
         </div>
 
         {/* Brand Header Left */}

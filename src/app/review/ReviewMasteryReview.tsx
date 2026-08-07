@@ -107,7 +107,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
           {/* OVERDUE SECTION */}
           {overdueList.length > 0 && (
             <section aria-label="Overdue words" className="flex flex-col gap-3">
-              <div className="flex items-center gap-2 text-rose-600 dark:text-rose-400 font-sans font-bold text-sm">
+              <div className="flex items-center gap-2 text-wp-rose font-sans font-bold text-sm">
                 <AlertCircle className="size-4" />
                 <span>OVERDUE ({overdueList.length})</span>
               </div>
@@ -115,7 +115,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
                 {overdueList.map(({ word, daysDiff, mastery }) => (
                   <div
                     key={word.id}
-                    className="bg-wp-card rounded-2xl border border-rose-500/30 p-4 flex items-center gap-4 shadow-wp-xs"
+                    className="bg-wp-card rounded-2xl border border-wp-rose/30 p-4 flex items-center gap-4 shadow-wp-xs"
                   >
                     <div className="relative rounded-xl shrink-0 size-14 overflow-hidden border border-border bg-muted">
                       <WordImage word={word} width="56" height="56" className="size-full object-cover" />
@@ -123,7 +123,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
                     <div className="flex flex-col gap-1 flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
                         <p className="font-sans font-bold text-foreground text-base">{word.label}</p>
-                        <span className="font-sans font-bold text-rose-600 bg-rose-500/10 rounded-full px-2 py-0.5 text-[10px]">
+                        <span className="font-sans font-bold text-wp-rose bg-wp-rose/10 rounded-full px-2 py-0.5 text-[10px]">
                           {daysDiff}d overdue
                         </span>
                       </div>
@@ -138,7 +138,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
           {/* DUE TODAY SECTION */}
           {dueTodayList.length > 0 && (
             <section aria-label="Due today words" className="flex flex-col gap-3">
-              <div className="flex items-center gap-2 text-amber-600 dark:text-wp-amber font-sans font-bold text-sm">
+              <div className="flex items-center gap-2 text-wp-amber font-sans font-bold text-sm">
                 <Clock className="size-4" />
                 <span>DUE TODAY ({dueTodayList.length})</span>
               </div>
@@ -146,7 +146,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
                 {dueTodayList.map(({ word, mastery }) => (
                   <div
                     key={word.id}
-                    className="bg-wp-card rounded-2xl border border-amber-500/30 p-4 flex items-center gap-4 shadow-wp-xs"
+                    className="bg-wp-card rounded-2xl border border-wp-amber/30 p-4 flex items-center gap-4 shadow-wp-xs"
                   >
                     <div className="relative rounded-xl shrink-0 size-14 overflow-hidden border border-border bg-muted">
                       <WordImage word={word} width="56" height="56" className="size-full object-cover" />
@@ -154,7 +154,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
                     <div className="flex flex-col gap-1 flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
                         <p className="font-sans font-bold text-foreground text-base">{word.label}</p>
-                        <span className="font-sans font-bold text-amber-600 bg-amber-500/10 rounded-full px-2 py-0.5 text-[10px]">
+                        <span className="font-sans font-bold text-wp-amber bg-wp-amber/10 rounded-full px-2 py-0.5 text-[10px]">
                           Due now
                         </span>
                       </div>
@@ -169,7 +169,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
           {/* UPCOMING SECTION */}
           {upcomingList.length > 0 && (
             <section aria-label="Upcoming words" className="flex flex-col gap-3">
-              <div className="flex items-center gap-2 text-teal-600 dark:text-wp-teal font-sans font-bold text-sm">
+              <div className="flex items-center gap-2 text-wp-teal font-sans font-bold text-sm">
                 <CheckCircle2 className="size-4" />
                 <span>UPCOMING ({upcomingList.length})</span>
               </div>

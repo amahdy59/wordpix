@@ -156,10 +156,10 @@ export const SceneCanvas = memo(function SceneCanvas({
       </header>
 
       {/* Main Display Canvas Container */}
-      <div className="relative flex-1 min-h-0 flex flex-col items-center bg-slate-950 p-3 md:p-4 overflow-hidden">
+      <div className="relative flex-1 min-h-0 flex flex-col items-center bg-wp-panel p-3 md:p-4 overflow-hidden">
         
         {/* Main Displayed Picture (HD 1200px+ resolution, un-cropped & un-distorted) */}
-        <div className="relative w-full flex-1 min-h-0 flex items-center justify-center overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-slate-900/60">
+        <div className="relative w-full flex-1 min-h-0 flex items-center justify-center overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-wp-panel/60">
           {isWordView ? (
             <WordImage
               key={activeWord.id}

@@ -312,9 +312,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
 
           {/* SECTION 5: DATA MANAGEMENT */}
           <section className="flex flex-col gap-3 pt-2">
-            <div className="bg-rose-500/10 border border-rose-500/20 rounded-2xl p-4 flex items-center justify-between gap-4">
+            <div className="bg-wp-rose/10 border border-wp-rose/20 rounded-2xl p-4 flex items-center justify-between gap-4">
               <div>
-                <span className="font-sans font-bold text-rose-700 dark:text-rose-400 text-sm">Reset Progress Data</span>
+                <span className="font-sans font-bold text-wp-rose text-sm">Reset Progress Data</span>
                 <p className="font-sans text-xs text-muted-foreground">Reset local memory progress and streak data back to zero.</p>
               </div>
 
@@ -339,7 +339,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 <button
                   type="button"
                   onClick={() => setConfirmReset(true)}
-                  className="px-3 py-1.5 rounded-xl bg-wp-card text-rose-600 border border-rose-500/30 font-sans font-bold text-xs hover:bg-rose-500/20 transition-all shrink-0"
+                  className="px-3 py-1.5 rounded-xl bg-wp-card text-wp-rose border border-wp-rose/30 font-sans font-bold text-xs hover:bg-wp-rose/20 transition-all shrink-0"
                 >
                   Reset Data
                 </button>
