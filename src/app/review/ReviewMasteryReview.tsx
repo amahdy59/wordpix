@@ -52,7 +52,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
   };
 
   return (
-    <div className="flex flex-col gap-6 p-5 md:p-8 pb-8 max-w-xl mx-auto">
+    <div className="flex flex-col gap-6 p-5 md:p-8 pb-8 max-w-4xl w-full mx-auto">
       {/* Page header */}
       <header className="flex items-center justify-between gap-4">
         <div>
@@ -77,7 +77,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
       </header>
 
       {/* Word card list */}
-      <section aria-label="Words to review" className="flex flex-col gap-3">
+      <section aria-label="Words to review" className="w-full">
         {reviewWords.length === 0 ? (
           <div className="bg-wp-card rounded-2xl border border-border p-8 flex flex-col items-center gap-3 text-center">
             <div className="size-14 rounded-2xl bg-secondary text-primary flex items-center justify-center">
@@ -91,7 +91,8 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
             </div>
           </div>
         ) : (
-          reviewWords.map((word) => {
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {reviewWords.map((word) => {
             const level = progress.wordMastery[word!.id] || 1;
             return (
               <div
@@ -115,7 +116,8 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
                 <MasteryMeter level={level} />
               </div>
             );
-          })
+          })}
+          </div>
         )}
       </section>
 

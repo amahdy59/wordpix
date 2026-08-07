@@ -8,15 +8,14 @@ import { SplashWelcome } from "./onboarding/SplashWelcome";
 import { LanguageSelect } from "./onboarding/LanguageSelect";
 import { ReadyCelebration } from "./onboarding/ReadyCelebration";
 
-// Synchronous core tab views
+// Synchronous core tab views for instant (<1ms) tab switching
 import { HomeDashboard } from "./core/HomeDashboard";
+import { ExploreWorlds } from "./core/ExploreWorlds";
+import { ReviewMasteryReview } from "./review/ReviewMasteryReview";
+import { ProfileStats } from "./core/ProfileStats";
 import { AppShell } from "./shared/AppShell";
 
-// Lazy-loaded routes & heavy exercises (Code-splitting)
-const ExploreWorlds = lazy(() => import("./core/ExploreWorlds").then((m) => ({ default: m.ExploreWorlds })));
-const ProfileStats = lazy(() => import("./core/ProfileStats").then((m) => ({ default: m.ProfileStats })));
-const ReviewMasteryReview = lazy(() => import("./review/ReviewMasteryReview").then((m) => ({ default: m.ReviewMasteryReview })));
-
+// Lazy-loaded heavy lesson sessions (Code-splitting)
 const LessonWorldEntry = lazy(() => import("./lesson/LessonWorldEntry").then((m) => ({ default: m.LessonWorldEntry })));
 const LessonSceneDiscovery = lazy(() => import("./lesson/LessonSceneDiscovery").then((m) => ({ default: m.LessonSceneDiscovery })));
 const LessonCompleteResults = lazy(() => import("./lesson/LessonCompleteResults").then((m) => ({ default: m.LessonCompleteResults })));

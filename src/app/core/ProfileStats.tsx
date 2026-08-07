@@ -63,7 +63,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
       {/* Stats grid */}
       <section aria-label="Learning statistics">
         <h2 className="font-sans font-bold text-foreground text-lg mb-3">Your Progress Statistics</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
           {STATS.map(({ value, label, icon: Icon, color }) => (
             <div
               key={label}
@@ -82,7 +82,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
       {/* Achievements */}
       <section aria-label="Achievements" className="flex flex-col gap-3">
         <h2 className="font-sans font-bold text-foreground text-lg">Badges &amp; Achievements</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
           {ACHIEVEMENTS.map(({ icon: Icon, label, earned }) => (
             <div
               key={label}

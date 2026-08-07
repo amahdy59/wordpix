@@ -26,7 +26,7 @@ export const AppShell = memo(function AppShell({ activeTab, dispatch, children }
         {/* Scrollable content area */}
         <main
           id="main-content"
-          className="flex-1 overflow-y-auto pb-[88px] md:pb-0"
+          className="flex-1 overflow-y-auto pb-28 md:pb-6"
           tabIndex={-1}
         >
           <div className="mx-auto max-w-5xl w-full">
