@@ -7,13 +7,22 @@ import { articleFor, getWordOptions } from "./exerciseContent";
 interface Props {
   step: number;
   word: VocabItem;
+  currentWordIndex?: number;
+  totalWordsQueue?: number;
   dispatch: React.Dispatch<Action>;
 }
 
-export const ExerciseContextFill = memo(function ExerciseContextFill({ step, word, dispatch }: Props) {
+export const ExerciseContextFill = memo(function ExerciseContextFill({
+  step,
+  word,
+  currentWordIndex = 0,
+  totalWordsQueue = 5,
+  dispatch,
+}: Props) {
   const options = useMemo(() => getWordOptions(word), [word]);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [checked, setChecked] = useState(false);
+  const [shaking, setShaking] = useState(false);
   const isCorrect = selectedId === word.id;
   const selectedWord = options.find((item) => item.id === selectedId);
 
@@ -23,7 +32,11 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({ step, wor
       else { setSelectedId(null); setChecked(false); }
       return;
     }
-    if (!selectedId) return;
+    if (!selectedId) {
+      setShaking(true);
+      setTimeout(() => setShaking(false), 500);
+      return;
+    }
     setChecked(true);
     dispatch({ type: "LESSON_ATTEMPT", correct: isCorrect });
   };
@@ -33,18 +46,30 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({ step, wor
       step={step}
       title="Complete the Sentence"
       word={word}
+      currentWordIndex={currentWordIndex}
+      totalWordsQueue={totalWordsQueue}
       dispatch={dispatch}
       footer={
-        <button
-          type="button"
-          onClick={handleAction}
-          disabled={!selectedId}
-          className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] disabled:opacity-40 transition-colors ${
-            checked ? isCorrect ? "bg-wp-green" : "bg-wp-rose" : "bg-wp-blue"
-          }`}
-        >
-          {checked ? isCorrect ? "Continue" : "Try Again" : "Check Answer"}
-        </button>
+        <div className="flex flex-col gap-1.5">
+          {!selectedId && !checked && (
+            <p className="text-[11px] font-sans font-semibold text-center text-amber-600 dark:text-amber-400">
+              Select a word to complete the sentence
+            </p>
+          )}
+          <button
+            type="button"
+            onClick={handleAction}
+            className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] transition-all ${
+              shaking ? "animate-bounce" : ""
+            } ${
+              checked
+                ? isCorrect ? "bg-wp-green" : "bg-wp-rose"
+                : selectedId ? "bg-wp-blue opacity-100" : "bg-wp-blue opacity-50"
+            }`}
+          >
+            {checked ? isCorrect ? "Continue" : "Try Again" : "Check Answer"}
+          </button>
+        </div>
       }
     >
       <div className="flex flex-col gap-5 w-full max-w-lg">

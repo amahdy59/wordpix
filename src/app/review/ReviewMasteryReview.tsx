@@ -1,40 +1,22 @@
 import { memo } from "react";
-import { Flame, BookOpen, ArrowRight } from "lucide-react";
+import { Flame, BookOpen, ArrowRight, RotateCcw } from "lucide-react";
 import type { Action } from "../types";
-
-const imgThumb  = "https://images.unsplash.com/photo-1623944436679-5412c658a358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200&q=80";
-const imgThumb1 = "https://images.unsplash.com/photo-1776476269609-c41ae855bb8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200&q=80";
-const imgThumb2 = "https://images.unsplash.com/photo-1600369672770-985fd30004eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200&q=80";
+import { useProgress } from "../data/progress";
+import { BEDROOM_VOCABULARY } from "../data/lessons";
+import { WordImage } from "../shared/WordImage";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
-type Mastery = "mastered" | "practiced" | "recognized";
-
-interface WordCard {
-  id: string;
-  word: string;
-  daysAgo: string;
-  mastery: Mastery;
-  img: string;
-  urgent?: boolean;
-}
-
-const WORD_CARDS: WordCard[] = [
-  { id: "pillow",  word: "Pillow",  daysAgo: "2 days ago", mastery: "recognized", img: imgThumb,  urgent: true },
-  { id: "lamp",    word: "Lamp",    daysAgo: "3 days ago", mastery: "practiced",  img: imgThumb1               },
-  { id: "blanket", word: "Blanket", daysAgo: "5 days ago", mastery: "mastered",   img: imgThumb2               },
-];
-
-const MASTERY_BARS: Record<Mastery, { filled: number; color: string; label: string }> = {
-  mastered:   { filled: 3, color: "var(--wp-green)", label: "Mastered"   },
-  practiced:  { filled: 2, color: "var(--wp-amber)", label: "Practiced"  },
-  recognized: { filled: 1, color: "var(--wp-brand)", label: "Recognized" },
+const MASTERY_BARS: Record<number, { filled: number; color: string; label: string }> = {
+  1: { filled: 1, color: "var(--wp-brand)", label: "Recognized" },
+  2: { filled: 2, color: "var(--wp-amber)", label: "Practiced" },
+  3: { filled: 3, color: "var(--wp-green)", label: "Mastered" },
 };
 
-function MasteryMeter({ mastery }: { mastery: Mastery }) {
-  const { filled, color, label } = MASTERY_BARS[mastery];
+function MasteryMeter({ level }: { level: number }) {
+  const { filled, color, label } = MASTERY_BARS[level] || { filled: 1, color: "var(--wp-brand)", label: "Learning" };
   return (
     <div
       className="flex gap-1 items-center shrink-0"
@@ -54,6 +36,21 @@ function MasteryMeter({ mastery }: { mastery: Mastery }) {
 }
 
 export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch }: Props) {
+  const { progress } = useProgress();
+
+  const practicedWordIds = Object.keys(progress.wordMastery);
+  const reviewWords = practicedWordIds
+    .map((id) => BEDROOM_VOCABULARY.find((v) => v.id === id))
+    .filter(Boolean);
+
+  const startReviewSession = () => {
+    const queue = reviewWords.length >= 5
+      ? reviewWords.slice(0, 5).map((w) => w!.id)
+      : BEDROOM_VOCABULARY.slice(0, 5).map((w) => w.id);
+    
+    dispatch({ type: "START_LESSON", wordQueue: queue });
+  };
+
   return (
     <div className="flex flex-col gap-6 p-5 md:p-8 pb-8 max-w-xl mx-auto">
       {/* Page header */}
@@ -67,57 +64,69 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
             Daily Vocabulary Review
           </h1>
           <p className="font-sans font-medium text-muted-foreground text-sm mt-0.5">
-            3 words scheduled for review today based on memory strength
+            {reviewWords.length > 0
+              ? `${reviewWords.length} words scheduled for review based on memory decay`
+              : "Review schedule is empty. Complete your first lesson to add words!"}
           </p>
         </div>
 
-        {/* Streak badge */}
         <div className="bg-secondary rounded-xl px-3 py-2 flex items-center gap-1.5 border border-primary/20 shrink-0 shadow-wp-xs">
           <Flame className="size-4 text-wp-amber" />
-          <span className="font-sans font-bold text-foreground text-sm">7 Day Streak</span>
+          <span className="font-sans font-bold text-foreground text-sm">{progress.streak} Day Streak</span>
         </div>
       </header>
 
       {/* Word card list */}
       <section aria-label="Words to review" className="flex flex-col gap-3">
-        {WORD_CARDS.map((card) => (
-          <div
-            key={card.id}
-            className="bg-wp-card rounded-2xl border border-border p-4 flex items-center gap-4 shadow-wp-xs hover:border-primary/40 transition-all"
-          >
-            <div className="relative rounded-xl shrink-0 size-14 overflow-hidden border border-border bg-muted">
-              <img
-                alt={card.word}
-                className="absolute inset-0 object-cover size-full"
-                src={card.img}
-              />
+        {reviewWords.length === 0 ? (
+          <div className="bg-wp-card rounded-2xl border border-border p-8 flex flex-col items-center gap-3 text-center">
+            <div className="size-14 rounded-2xl bg-secondary text-primary flex items-center justify-center">
+              <RotateCcw className="size-7" />
             </div>
-
-            <div className="flex flex-col gap-1 flex-1 min-w-0">
-              <div className="flex items-center gap-2 flex-wrap">
-                <p className="font-sans font-bold text-foreground text-base">{card.word}</p>
-                {card.urgent && (
-                  <span className="font-sans font-bold text-primary text-[10px] bg-secondary rounded-full px-2.5 py-0.5 border border-primary/20 uppercase tracking-wide">
-                    DUE TODAY
-                  </span>
-                )}
-              </div>
-              <p className="font-sans text-muted-foreground text-xs font-medium">Last reviewed {card.daysAgo}</p>
+            <div>
+              <h2 className="font-sans font-bold text-foreground text-lg">No Words Due for Review Yet</h2>
+              <p className="font-sans text-muted-foreground text-sm mt-1 max-w-xs mx-auto">
+                Start a Bedroom lesson session to discover words and add them to your memory queue.
+              </p>
             </div>
-
-            <MasteryMeter mastery={card.mastery} />
           </div>
-        ))}
+        ) : (
+          reviewWords.map((word) => {
+            const level = progress.wordMastery[word!.id] || 1;
+            return (
+              <div
+                key={word!.id}
+                className="bg-wp-card rounded-2xl border border-border p-4 flex items-center gap-4 shadow-wp-xs hover:border-primary/40 transition-all"
+              >
+                <div className="relative rounded-xl shrink-0 size-14 overflow-hidden border border-border bg-muted">
+                  <WordImage word={word!} width="56" height="56" className="size-full object-cover" />
+                </div>
+
+                <div className="flex flex-col gap-1 flex-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <p className="font-sans font-bold text-foreground text-base">{word!.label}</p>
+                    <span className="font-sans font-bold text-primary text-[10px] bg-secondary rounded-full px-2.5 py-0.5 border border-primary/20 uppercase tracking-wide">
+                      Due Today
+                    </span>
+                  </div>
+                  <p className="font-sans text-muted-foreground text-xs font-medium">/{word!.phonetic}/</p>
+                </div>
+
+                <MasteryMeter level={level} />
+              </div>
+            );
+          })
+        )}
       </section>
 
       {/* Start review CTA */}
       <footer>
         <button
           type="button"
-          onClick={() => dispatch({ type: "START_LESSON" })}
+          onClick={startReviewSession}
           className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 w-full font-sans font-bold text-white text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue min-h-[52px] shadow-wp-xs transition-all flex items-center justify-center gap-2"
         >
-          <span>Start Review Session (+15 XP)</span>
+          <span>Start 5-Word Review Session (+25 XP)</span>
           <ArrowRight className="size-5" />
         </button>
       </footer>

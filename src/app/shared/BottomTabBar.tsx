@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { Home, Globe, RotateCcw, UserCircle } from "lucide-react";
+import { Home, Compass, RotateCcw, UserCircle } from "lucide-react";
 import type { TabId, Action } from "../types";
 import { HomeIndicator } from "./HomeIndicator";
 
@@ -10,8 +10,8 @@ interface Props {
 
 const TABS: { id: TabId; label: string; icon: React.ElementType }[] = [
   { id: "home",     label: "Home",     icon: Home       },
-  { id: "explore",  label: "Explore",  icon: Globe      },
-  { id: "practice", label: "Practice", icon: RotateCcw  },
+  { id: "explore",  label: "Lessons",  icon: Compass    },
+  { id: "practice", label: "Review",   icon: RotateCcw  },
   { id: "profile",  label: "Profile",  icon: UserCircle },
 ];
 

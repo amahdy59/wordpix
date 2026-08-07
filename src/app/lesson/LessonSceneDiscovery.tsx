@@ -51,7 +51,9 @@ export const LessonSceneDiscovery = memo(function LessonSceneDiscovery({ selecte
 
   const handleLearnWord = useCallback(() => {
     stop();
-    dispatch({ type: "LESSON_SELECT_WORD", wordId: activeId });
+    const otherWords = BEDROOM_VOCABULARY.filter((w) => w.id !== activeId).map((w) => w.id);
+    const queue = [activeId, ...otherWords.slice(0, 4)];
+    dispatch({ type: "START_LESSON", wordQueue: queue });
     dispatch({ type: "LESSON_NEXT" });
   }, [stop, dispatch, activeId]);
 

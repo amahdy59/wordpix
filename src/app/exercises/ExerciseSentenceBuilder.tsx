@@ -7,14 +7,23 @@ import { articleFor } from "./exerciseContent";
 interface Props {
   step: number;
   word: VocabItem;
+  currentWordIndex?: number;
+  totalWordsQueue?: number;
   dispatch: React.Dispatch<Action>;
 }
 
-export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({ step, word, dispatch }: Props) {
+export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
+  step,
+  word,
+  currentWordIndex = 0,
+  totalWordsQueue = 5,
+  dispatch,
+}: Props) {
   const answer = useMemo(() => ["This", "is", articleFor(word.label), word.label.toLowerCase()], [word.label]);
   const shuffled = useMemo(() => [answer[3], answer[0], answer[2], answer[1]], [answer]);
   const [placed, setPlaced] = useState<string[]>([]);
   const [checked, setChecked] = useState(false);
+  const [shaking, setShaking] = useState(false);
   const isCorrect = placed.join(" ") === answer.join(" ");
 
   const handleAction = () => {
@@ -23,7 +32,11 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({ s
       else { setPlaced([]); setChecked(false); }
       return;
     }
-    if (placed.length !== answer.length) return;
+    if (placed.length !== answer.length) {
+      setShaking(true);
+      setTimeout(() => setShaking(false), 500);
+      return;
+    }
     setChecked(true);
     dispatch({ type: "LESSON_ATTEMPT", correct: isCorrect });
   };
@@ -33,18 +46,30 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({ s
       step={step}
       title="Build a Sentence"
       word={word}
+      currentWordIndex={currentWordIndex}
+      totalWordsQueue={totalWordsQueue}
       dispatch={dispatch}
       footer={
-        <button
-          type="button"
-          onClick={handleAction}
-          disabled={placed.length !== answer.length}
-          className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] disabled:opacity-40 transition-colors ${
-            checked ? isCorrect ? "bg-wp-green" : "bg-wp-rose" : "bg-wp-blue"
-          }`}
-        >
-          {checked ? isCorrect ? "Continue" : "Try Again" : "Check Sentence"}
-        </button>
+        <div className="flex flex-col gap-1.5">
+          {placed.length < answer.length && !checked && (
+            <p className="text-[11px] font-sans font-semibold text-center text-amber-600 dark:text-amber-400">
+              Tap tiles below to build the sentence
+            </p>
+          )}
+          <button
+            type="button"
+            onClick={handleAction}
+            className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] transition-all ${
+              shaking ? "animate-bounce" : ""
+            } ${
+              checked
+                ? isCorrect ? "bg-wp-green" : "bg-wp-rose"
+                : placed.length === answer.length ? "bg-wp-blue opacity-100" : "bg-wp-blue opacity-50"
+            }`}
+          >
+            {checked ? isCorrect ? "Continue" : "Try Again" : "Check Sentence"}
+          </button>
+        </div>
       }
     >
       <div className="flex flex-col gap-5 w-full max-w-lg">

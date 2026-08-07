@@ -2,7 +2,8 @@ import { memo, useState } from "react";
 import { AudioButton } from "../shared/AudioButton";
 import { WordImage } from "../shared/WordImage";
 import { BEDROOM_TOPICS, type VocabItem } from "../data/lessons";
-import { X } from "lucide-react";
+import { useProgress, type MasteryLevel } from "../data/progress";
+import { X, CheckCircle2 } from "lucide-react";
 
 interface Props {
   vocabulary: VocabItem[];
@@ -16,6 +17,13 @@ interface Props {
   onMobileClose?: () => void;
 }
 
+const MASTERY_BADGES: Record<MasteryLevel, { label: string; bg: string; text: string } | null> = {
+  0: null,
+  1: { label: "Recognized", bg: "bg-violet-500/10", text: "text-primary border-violet-500/20" },
+  2: { label: "Practiced", bg: "bg-amber-500/10", text: "text-amber-600 dark:text-wp-amber border-amber-500/20" },
+  3: { label: "Mastered", bg: "bg-teal-500/10", text: "text-wp-teal border-teal-500/20" },
+};
+
 export const VocabSidebar = memo(function VocabSidebar({
   vocabulary,
   activeWord,
@@ -28,6 +36,7 @@ export const VocabSidebar = memo(function VocabSidebar({
   onMobileClose,
 }: Props) {
   const [selectedTopic, setSelectedTopic] = useState<string>("all");
+  const { progress } = useProgress();
 
   const filteredVocabulary = selectedTopic === "all"
     ? vocabulary
@@ -98,7 +107,7 @@ export const VocabSidebar = memo(function VocabSidebar({
         </div>
       </div>
 
-      {/* Scrollable vocabulary word list — isolated scrolling */}
+      {/* Scrollable vocabulary word list */}
       <div
         className="flex-1 min-h-0 overflow-y-auto overscroll-contain py-3 px-3 flex flex-col gap-1.5"
         role="list"
@@ -107,6 +116,9 @@ export const VocabSidebar = memo(function VocabSidebar({
         {filteredVocabulary.map((word) => {
           const isActive = word.id === activeId;
           const isAudioPlaying = isPlaying && isActive;
+          const masteryLevel = progress.wordMastery[word.id] || 0;
+          const badge = MASTERY_BADGES[masteryLevel];
+
           return (
             <div
               key={word.id}
@@ -125,13 +137,22 @@ export const VocabSidebar = memo(function VocabSidebar({
                 onClick={() => onSelectWord(word.id)}
                 className="flex flex-1 items-center gap-3 min-w-0 text-left rounded-lg focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
               >
-                <div className="size-[56px] rounded-lg overflow-hidden shrink-0 border border-border bg-muted flex items-center justify-center">
+                <div className="size-[56px] rounded-lg overflow-hidden shrink-0 border border-border bg-muted flex items-center justify-center relative">
                   <WordImage word={word} width="56" height="56" className="size-full object-cover" />
+                  {masteryLevel === 3 && (
+                    <div className="absolute top-1 right-1 bg-wp-green text-white p-0.5 rounded-full shadow-sm">
+                      <CheckCircle2 className="size-3" />
+                    </div>
+                  )}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-1.5 mb-0.5">
+                  <div className="flex items-center gap-1.5 mb-0.5 flex-wrap">
                     <span className={`font-sans font-bold text-base truncate ${isActive ? "text-primary" : "text-foreground"}`}>{word.label}</span>
-                    {word.hotspot && <span className="text-[10px] font-sans font-semibold text-wp-green bg-wp-green-light rounded-full px-1.5 py-0.5 shrink-0" aria-label="Visible in scene">in scene</span>}
+                    {badge && (
+                      <span className={`text-[10px] font-sans font-semibold border rounded-full px-1.5 py-0.5 shrink-0 ${badge.bg} ${badge.text}`}>
+                        {badge.label}
+                      </span>
+                    )}
                   </div>
                   <p className="font-sans text-muted-foreground text-xs">/{word.phonetic}/</p>
                 </div>
@@ -166,7 +187,7 @@ export const VocabSidebar = memo(function VocabSidebar({
             focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
             motion-safe:transition-opacity hover:opacity-90 active:opacity-80 shadow-wp-xs"
         >
-          Learn &ldquo;{activeWord.label}&rdquo; →
+          Learn &ldquo;{activeWord.label}&rdquo; Session →
         </button>
       </div>
     </aside>

@@ -4,6 +4,8 @@ import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { BackButton } from "../shared/BackButton";
 import { Sparkles, RotateCcw, CheckCircle2, ArrowRight, BookOpen } from "lucide-react";
+import { useProgress } from "../data/progress";
+import { BEDROOM_VOCABULARY } from "../data/lessons";
 
 const imgBedroom = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=85";
 
@@ -11,34 +13,40 @@ interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
-const PROGRESS_ITEMS = [
-  {
-    id: "new",
-    label: "New Words",
-    count: 4,
-    desc: "4 remaining to learn",
-    icon: Sparkles,
-    iconBg: "bg-violet-500/10 text-primary border-violet-500/20",
-  },
-  {
-    id: "practice",
-    label: "Practice",
-    count: 4,
-    desc: "4 words due for review",
-    icon: RotateCcw,
-    iconBg: "bg-amber-500/10 text-wp-amber border-amber-500/20",
-  },
-  {
-    id: "mastered",
-    label: "Mastered",
-    count: 4,
-    desc: "4 words mastered so far",
-    icon: CheckCircle2,
-    iconBg: "bg-teal-500/10 text-wp-teal border-teal-500/20",
-  },
-];
-
 export const LessonWorldEntry = memo(function LessonWorldEntry({ dispatch }: Props) {
+  const { progress } = useProgress();
+
+  const masteredCount = BEDROOM_VOCABULARY.filter((w) => progress.wordMastery[w.id] === 3).length;
+  const practicedCount = BEDROOM_VOCABULARY.filter((w) => (progress.wordMastery[w.id] || 0) === 1 || progress.wordMastery[w.id] === 2).length;
+  const newCount = BEDROOM_VOCABULARY.length - masteredCount - practicedCount;
+
+  const PROGRESS_ITEMS = [
+    {
+      id: "new",
+      label: "New Words",
+      count: newCount,
+      desc: `${newCount} remaining to learn`,
+      icon: Sparkles,
+      iconBg: "bg-violet-500/10 text-primary border-violet-500/20",
+    },
+    {
+      id: "practice",
+      label: "Practiced",
+      count: practicedCount,
+      desc: `${practicedCount} words in review queue`,
+      icon: RotateCcw,
+      iconBg: "bg-amber-500/10 text-wp-amber border-amber-500/20",
+    },
+    {
+      id: "mastered",
+      label: "Mastered",
+      count: masteredCount,
+      desc: `${masteredCount} words mastered so far`,
+      icon: CheckCircle2,
+      iconBg: "bg-teal-500/10 text-wp-teal border-teal-500/20",
+    },
+  ];
+
   return (
     <div className="bg-background flex flex-col min-h-svh lg:flex-row lg:overflow-hidden relative">
       <StatusBar />
@@ -50,11 +58,9 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ dispatch }: Pro
           className="absolute inset-0 object-cover size-full"
           src={imgBedroom}
         />
-        {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/60" aria-hidden />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" aria-hidden />
 
-        {/* Overlay badge */}
         <div className="absolute bottom-8 left-8">
           <span className="font-sans font-bold text-xs text-white bg-black/40 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20">
             Bedroom Furniture &amp; Accessories
@@ -133,7 +139,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ dispatch }: Pro
           </section>
         </main>
 
-        {/* Pinned CTA — always visible, never scrolls off */}
+        {/* Pinned CTA */}
         <footer className="w-full px-5 lg:px-8 pb-8 pt-4 shrink-0 bg-background border-t border-border/60">
           <button
             type="button"
@@ -142,7 +148,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ dispatch }: Pro
               focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
               shadow-sm transition-all flex items-center justify-center gap-2"
           >
-            <span>Start Lesson</span>
+            <span>Start 5-Word Lesson Session</span>
             <ArrowRight className="size-5" />
           </button>
         </footer>

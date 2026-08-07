@@ -3,6 +3,7 @@ import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { ArrowRight, Check } from "lucide-react";
+import { useProgress } from "../data/progress";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -15,25 +16,18 @@ const LEVELS = [
 ];
 
 const GOALS = [
-  { id: "5min", label: "5 mins / day" },
-  { id: "10min", label: "10 mins / day" },
-  { id: "15min", label: "15 mins / day" },
+  { id: "5min", label: "5 mins / day", minutes: 5 },
+  { id: "10min", label: "10 mins / day", minutes: 10 },
+  { id: "15min", label: "15 mins / day", minutes: 15 },
 ];
 
 export function LanguageSelect({ dispatch }: Props) {
-  const [level, setLevel] = useState<string>("a1");
-  const [goal, setGoal] = useState<string>("10min");
+  const [level, setLevel] = useState<"A1" | "A2" | "B1">("A1");
+  const [goal, setGoal] = useState<number>(10);
+  const { setPreferences } = useProgress();
 
   const handleStart = () => {
-    localStorage.setItem(
-      "wordpix:learner-profile:v1",
-      JSON.stringify({
-        englishLevel: level.toUpperCase(),
-        dailyGoalMinutes: Number.parseInt(goal, 10),
-        onboardingCompleted: true,
-        updatedAt: new Date().toISOString(),
-      })
-    );
+    setPreferences(level, goal);
     dispatch({ type: "ONBOARD_NEXT" });
   };
 
@@ -63,14 +57,14 @@ export function LanguageSelect({ dispatch }: Props) {
         {/* Level Cards */}
         <div role="radiogroup" aria-label="Select proficiency level" className="w-full flex flex-col gap-2.5">
           {LEVELS.map((item) => {
-            const isSelected = level === item.id;
+            const isSelected = level === item.tag;
             return (
               <button
                 key={item.id}
                 type="button"
                 role="radio"
                 aria-checked={isSelected}
-                onClick={() => setLevel(item.id)}
+                onClick={() => setLevel(item.tag as "A1" | "A2" | "B1")}
                 className={`w-full text-left p-4 rounded-2xl border transition-all flex items-center justify-between min-h-[60px] ${
                   isSelected
                     ? "bg-secondary border-primary border-[2px] shadow-wp-xs"
@@ -112,14 +106,14 @@ export function LanguageSelect({ dispatch }: Props) {
           </label>
           <div role="radiogroup" aria-label="Select daily practice goal" className="grid grid-cols-3 gap-2">
             {GOALS.map((item) => {
-              const isSelected = goal === item.id;
+              const isSelected = goal === item.minutes;
               return (
                 <button
                   key={item.id}
                   type="button"
                   role="radio"
                   aria-checked={isSelected}
-                  onClick={() => setGoal(item.id)}
+                  onClick={() => setGoal(item.minutes)}
                   className={`py-3 px-2 rounded-xl border text-center transition-all min-h-[48px] flex items-center justify-center ${
                     isSelected
                       ? "bg-secondary border-primary border-[2px] text-primary font-bold shadow-wp-xs"

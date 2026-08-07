@@ -9,15 +9,24 @@ import { WordImage } from "../shared/WordImage";
 interface Props {
   step: number;
   word: VocabItem;
+  currentWordIndex?: number;
+  totalWordsQueue?: number;
   dispatch: React.Dispatch<Action>;
 }
 
 const TIMER_SECONDS = 45;
 
-export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({ step, word, dispatch }: Props) {
+export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
+  step,
+  word,
+  currentWordIndex = 0,
+  totalWordsQueue = 5,
+  dispatch,
+}: Props) {
   const options = useMemo(() => getWordOptions(word), [word]);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [checked, setChecked] = useState(false);
+  const [shaking, setShaking] = useState(false);
   const [timerOn, setTimerOn] = useState(false);
   const [timeLeft, setTimeLeft] = useState(TIMER_SECONDS);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -42,7 +51,11 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({ step, word, d
       else { setSelectedId(null); setChecked(false); }
       return;
     }
-    if (!selectedId) return;
+    if (!selectedId) {
+      setShaking(true);
+      setTimeout(() => setShaking(false), 500);
+      return;
+    }
     setChecked(true);
     setTimerOn(false);
     dispatch({ type: "LESSON_ATTEMPT", correct: isCorrect });
@@ -53,18 +66,36 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({ step, word, d
       step={step}
       title="Quick Quiz"
       word={word}
+      currentWordIndex={currentWordIndex}
+      totalWordsQueue={totalWordsQueue}
       dispatch={dispatch}
       footer={
-        <button
-          type="button"
-          onClick={handleAction}
-          disabled={!selectedId}
-          className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] disabled:opacity-40 transition-colors ${
-            checked ? isCorrect ? "bg-wp-green" : "bg-wp-rose" : "bg-wp-blue"
-          }`}
-        >
-          {checked ? isCorrect ? "Finish Lesson" : "Try Again" : "Check Answer"}
-        </button>
+        <div className="flex flex-col gap-1.5">
+          {!selectedId && !checked && (
+            <p className="text-[11px] font-sans font-semibold text-center text-amber-600 dark:text-amber-400">
+              Tap an image option to select
+            </p>
+          )}
+          <button
+            type="button"
+            onClick={handleAction}
+            className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] transition-all ${
+              shaking ? "animate-bounce" : ""
+            } ${
+              checked
+                ? isCorrect ? "bg-wp-green" : "bg-wp-rose"
+                : selectedId ? "bg-wp-blue opacity-100" : "bg-wp-blue opacity-50"
+            }`}
+          >
+            {checked
+              ? isCorrect
+                ? currentWordIndex + 1 >= totalWordsQueue
+                  ? "Finish Lesson Session"
+                  : "Next Word in Queue →"
+                : "Try Again"
+              : "Check Answer"}
+          </button>
+        </div>
       }
     >
       <div className="flex flex-col gap-4 w-full max-w-lg">
@@ -92,7 +123,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({ step, word, d
           aria-label={`Choose the image that shows ${word.label}`}
           className="grid grid-cols-2 gap-3"
         >
-          {options.map((option) => {
+          {options.map((option, idx) => {
             const selected = selectedId === option.id;
             const resultClass = checked && selected
               ? isCorrect ? "border-wp-green border-[3px] ring-2 ring-wp-green/30" : "border-wp-rose border-[3px] ring-2 ring-wp-rose/30"
@@ -109,7 +140,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({ step, word, d
               >
                 <WordImage word={option} width="400" height="300" className="h-36 w-full object-cover" />
                 <p className="font-sans font-semibold text-foreground text-sm px-3 py-2 text-left truncate">
-                  {option.label}
+                  {checked ? option.label : `Option ${["A", "B", "C", "D"][idx]}`}
                 </p>
               </button>
             );

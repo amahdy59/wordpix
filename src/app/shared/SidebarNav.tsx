@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { Home, Globe, RotateCcw, UserCircle, BookOpen } from "lucide-react";
+import { Home, Compass, RotateCcw, UserCircle, BookOpen } from "lucide-react";
 import type { TabId, Action } from "../types";
 
 interface NavItem {
@@ -10,9 +10,9 @@ interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { id: "home",     label: "Home Dashboard", icon: Home       },
-  { id: "explore",  label: "Explore Worlds", icon: Globe      },
-  { id: "practice", label: "Daily Practice", icon: RotateCcw  },
-  { id: "profile",  label: "User Profile",   icon: UserCircle },
+  { id: "explore",  label: "Lessons & Worlds", icon: Compass  },
+  { id: "practice", label: "Daily Review",   icon: RotateCcw  },
+  { id: "profile",  label: "Learner Profile", icon: UserCircle },
 ];
 
 interface Props {
@@ -20,12 +20,6 @@ interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
-/**
- * 72px Icon-Only Desktop & Tablet Sidebar Navigation
- *
- * Modeled after modern workspace tools (Linear, Notion, Figma).
- * Uses semantic tokens with active brand violet tint.
- */
 export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Props) {
   return (
     <aside
@@ -89,8 +83,8 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "profile" })}
-          title="User Profile"
-          aria-label="User Profile"
+          title="Learner Profile"
+          aria-label="Learner Profile"
           className="size-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
         >
           <UserCircle className="size-6" />

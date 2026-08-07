@@ -1,6 +1,8 @@
 import { memo } from "react";
 import { Lock, Compass, ArrowRight, Sparkles, BookOpen } from "lucide-react";
 import type { Action } from "../types";
+import { useProgress } from "../data/progress";
+import { BEDROOM_VOCABULARY } from "../data/lessons";
 
 const imgBedroom  = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=85";
 const imgBathroom = "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=85";
@@ -11,13 +13,19 @@ interface Props {
 }
 
 export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
+  const { progress } = useProgress();
+
+  const wordsPracticedCount = Object.keys(progress.wordMastery).length;
+  const totalBedroomWords = BEDROOM_VOCABULARY.length;
+  const progressPercent = Math.round((wordsPracticedCount / totalBedroomWords) * 100);
+
   return (
     <div className="flex flex-col gap-6 p-5 md:p-8">
       {/* Page header */}
       <header className="flex flex-col gap-1">
         <div className="flex items-center gap-2 text-primary">
           <Compass className="size-5" />
-          <span className="font-sans font-bold text-xs uppercase tracking-wider">Flagship Learning World</span>
+          <span className="font-sans font-bold text-xs uppercase tracking-wider">Lessons &amp; Course Worlds</span>
         </div>
         <h1 className="font-sans font-black text-foreground text-2xl md:text-3xl leading-tight">
           Level 1 Vocabulary Worlds
@@ -52,7 +60,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                 <span className="font-sans font-bold text-xs text-wp-amber bg-amber-500/10 px-2.5 py-0.5 rounded-full border border-amber-500/20">
                   Level 1 · A1 Beginner
                 </span>
-                <span className="font-sans text-xs text-muted-foreground font-semibold">56 Vocabulary Words</span>
+                <span className="font-sans text-xs text-muted-foreground font-semibold">{totalBedroomWords} Vocabulary Words</span>
               </div>
 
               <h2 className="font-sans font-black text-foreground text-2xl md:text-3xl leading-tight">
@@ -67,19 +75,19 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
             <div className="flex flex-col gap-1.5">
               <div className="flex justify-between items-center text-xs font-sans font-semibold">
                 <span className="text-muted-foreground">World Mastery Progress</span>
-                <span className="text-primary font-bold">40% Complete</span>
+                <span className="text-primary font-bold">{progressPercent}% Complete ({wordsPracticedCount}/{totalBedroomWords})</span>
               </div>
               <div
                 className="bg-muted rounded-full h-3 w-full overflow-hidden border border-border"
                 role="progressbar"
-                aria-valuenow={40}
+                aria-valuenow={progressPercent}
                 aria-valuemin={0}
                 aria-valuemax={100}
-                aria-label="The Bedroom progress: 40%"
+                aria-label={`The Bedroom progress: ${progressPercent}%`}
               >
                 <div
-                  className="bg-gradient-to-r from-primary to-wp-teal h-full rounded-full"
-                  style={{ width: "40%" }}
+                  className="bg-gradient-to-r from-primary to-wp-teal h-full rounded-full transition-all duration-500"
+                  style={{ width: `${progressPercent}%` }}
                 />
               </div>
             </div>

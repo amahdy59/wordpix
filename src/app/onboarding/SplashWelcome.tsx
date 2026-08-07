@@ -72,17 +72,6 @@ export function SplashWelcome({ dispatch }: Props) {
           <span>Get Started</span>
           <ArrowRight className="size-5" />
         </button>
-
-        <button
-          type="button"
-          disabled
-          aria-disabled="true"
-          title="Account sign-in is coming soon"
-          className="w-full bg-transparent hover:bg-muted rounded-xl py-3 font-sans font-semibold text-muted-foreground text-sm min-h-[44px]
-            focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary transition-colors disabled:cursor-not-allowed disabled:opacity-70"
-        >
-          Account sign-in coming soon
-        </button>
       </footer>
 
       <HomeIndicator />

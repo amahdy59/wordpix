@@ -1,6 +1,8 @@
 import { memo } from "react";
-import { Flame, Sparkles, BookOpen, Compass, Target, Calendar, Trophy, Award, CheckCircle2 } from "lucide-react";
+import { Flame, Sparkles, BookOpen, Calendar, Trophy, Award, CheckCircle2, Layers } from "lucide-react";
 import type { Action } from "../types";
+import { useProgress } from "../data/progress";
+import { BEDROOM_VOCABULARY } from "../data/lessons";
 
 const imgAvatar = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
 
@@ -8,25 +10,30 @@ interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
-const STATS = [
-  { value: "7",   label: "Day Streak", icon: Flame, color: "text-wp-amber" },
-  { value: "240", label: "XP Points",  icon: Sparkles, color: "text-primary" },
-  { value: "45",  label: "Words Learned", icon: BookOpen, color: "text-wp-green" },
-  { value: "3",   label: "Worlds Done", icon: Compass, color: "text-wp-blue" },
-  { value: "92%", label: "Accuracy",   icon: Target, color: "text-wp-rose" },
-  { value: "18",  label: "Days Active", icon: Calendar, color: "text-wp-slate" },
-];
-
-const ACHIEVEMENTS = [
-  { icon: Flame, label: "7-Day Streak", earned: true },
-  { icon: Sparkles, label: "First Lesson", earned: true },
-  { icon: Trophy, label: "World Complete", earned: true },
-  { icon: BookOpen, label: "50 Words", earned: false },
-  { icon: Compass, label: "Explorer", earned: false },
-  { icon: Award, label: "30-Day Streak", earned: false },
-];
-
 export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: Props) {
+  const { progress } = useProgress();
+
+  const wordsLearnedCount = Object.keys(progress.wordMastery).length;
+  const totalBedroomWords = BEDROOM_VOCABULARY.length;
+
+  const STATS = [
+    { value: `${progress.streak}`, label: "Day Streak", icon: Flame, color: "text-wp-amber" },
+    { value: `${progress.xp}`, label: "XP Points", icon: Sparkles, color: "text-primary" },
+    { value: `${wordsLearnedCount}`, label: "Words Practiced", icon: BookOpen, color: "text-wp-green" },
+    { value: `${progress.sessionsCompleted}`, label: "Sessions Completed", icon: Layers, color: "text-wp-blue" },
+    { value: `${progress.dailyGoalMinutes} min`, label: "Daily Goal", icon: Calendar, color: "text-wp-teal" },
+    { value: `${progress.daysActive}`, label: "Days Active", icon: Calendar, color: "text-wp-slate" },
+  ];
+
+  const ACHIEVEMENTS = [
+    { icon: Sparkles, label: "First Session", earned: progress.sessionsCompleted >= 1 },
+    { icon: Flame, label: "3-Day Streak", earned: progress.streak >= 3 },
+    { icon: BookOpen, label: "10 Words Learned", earned: wordsLearnedCount >= 10 },
+    { icon: Trophy, label: "5 Sessions Completed", earned: progress.sessionsCompleted >= 5 },
+    { icon: Award, label: "Bedroom Master", earned: wordsLearnedCount >= totalBedroomWords },
+    { icon: Flame, label: "7-Day Streak", earned: progress.streak >= 7 },
+  ];
+
   return (
     <div className="flex flex-col gap-6 p-5 md:p-8 pb-8">
       {/* Profile header */}
@@ -42,11 +49,11 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
 
           <div className="flex flex-col items-center md:items-start gap-1">
             <h1 className="font-sans font-black text-foreground text-2xl md:text-3xl">Learner Profile</h1>
-            <p className="font-sans font-medium text-muted-foreground text-sm">Level 3 Visual Explorer</p>
+            <p className="font-sans font-medium text-muted-foreground text-sm">Level {progress.englishLevel} Visual Explorer</p>
             <div className="flex items-center gap-2 mt-1">
               <span className="bg-secondary text-primary font-sans font-semibold text-xs px-3 py-1 rounded-full border border-primary/20 flex items-center gap-1.5">
                 <Flame className="size-3.5 text-wp-amber" />
-                7-day streak active
+                {progress.streak}-day streak active
               </span>
             </div>
           </div>
@@ -55,7 +62,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
 
       {/* Stats grid */}
       <section aria-label="Learning statistics">
-        <h2 className="font-sans font-bold text-foreground text-lg mb-3">Lifetime Performance</h2>
+        <h2 className="font-sans font-bold text-foreground text-lg mb-3">Your Progress Statistics</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
           {STATS.map(({ value, label, icon: Icon, color }) => (
             <div

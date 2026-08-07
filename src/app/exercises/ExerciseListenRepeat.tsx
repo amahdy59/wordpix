@@ -10,12 +10,20 @@ import { Volume2, Mic, Sparkles } from "lucide-react";
 interface Props {
   step: number;
   word: VocabItem;
+  currentWordIndex?: number;
+  totalWordsQueue?: number;
   dispatch: React.Dispatch<Action>;
 }
 
 const SPEEDS = [0.5, 0.75, 1.0, 1.25];
 
-export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({ step, word, dispatch }: Props) {
+export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
+  step,
+  word,
+  currentWordIndex = 0,
+  totalWordsQueue = 5,
+  dispatch,
+}: Props) {
   const [speed, setSpeed] = useState<number>(0.75);
   const { speak, stop, isPlaying, isSupported, isError } = useAudio({ lang: "en-US", rate: speed });
   const mountedRef = useRef(false);
@@ -67,6 +75,8 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({ step, w
       step={step}
       title="Listen & Practice"
       word={word}
+      currentWordIndex={currentWordIndex}
+      totalWordsQueue={totalWordsQueue}
       dispatch={dispatch}
       leftPanelExtra={leftExtra}
       footer={
@@ -118,7 +128,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({ step, w
           </div>
         </button>
 
-        {/* Speed controls — mobile only (desktop shows in left panel) */}
+        {/* Speed controls — mobile only */}
         <div className="lg:hidden flex items-center justify-center gap-2 flex-wrap" role="group" aria-label="Playback speed">
           <span className="font-sans text-xs text-muted-foreground font-medium">Speed:</span>
           {SPEEDS.map((s) => (
