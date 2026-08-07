@@ -29,7 +29,7 @@ export const AppShell = memo(function AppShell({ activeTab, dispatch, children }
           className="flex-1 overflow-y-auto pb-28 md:pb-6"
           tabIndex={-1}
         >
-          <div className="mx-auto max-w-5xl w-full">
+          <div className="mx-auto max-w-7xl w-full px-4 md:px-8">
             {children}
           </div>
         </main>

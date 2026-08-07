@@ -42,7 +42,7 @@ export const SceneCanvas = memo(function SceneCanvas({
   };
 
   return (
-    <section className="relative flex-1 md:flex-[3] min-w-0 min-h-0 flex flex-col bg-background h-full overflow-hidden max-w-[1100px]" aria-label="Vocabulary scene">
+    <section className="relative flex-1 md:flex-[3] min-w-0 min-h-0 flex flex-col bg-background h-full overflow-hidden" aria-label="Vocabulary scene">
       {/* Mobile status bar */}
       <div className="md:hidden shrink-0">
         <StatusBar />
@@ -245,7 +245,7 @@ export const SceneCanvas = memo(function SceneCanvas({
             <button
               type="button"
               onClick={onLearnWord}
-              className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl px-5 py-3 font-sans font-bold text-white text-sm shrink-0 min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all hidden sm:block"
+              className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl px-5 py-3 font-sans font-bold text-white text-sm shrink-0 min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all hidden sm:block md:hidden"
             >
               Start Group Practice →
             </button>

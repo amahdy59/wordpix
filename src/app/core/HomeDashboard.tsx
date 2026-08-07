@@ -182,16 +182,22 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           <section aria-label="Course Worlds" className="flex flex-col gap-3">
             <h3 className="font-sans font-bold text-foreground text-lg">Course Worlds</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-wp-card border border-primary/40 rounded-2xl p-4 flex items-center gap-4">
+              <button
+                type="button"
+                onClick={() => dispatch({ type: "GO", to: "explore" })}
+                className="bg-wp-card border border-primary/40 rounded-2xl p-4 flex items-center gap-4 text-left hover:border-primary hover:bg-secondary/30 transition-all focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer shadow-wp-xs"
+              >
                 <div className="size-16 rounded-xl overflow-hidden shrink-0 border border-border relative">
                   <img alt="The Bedroom" className="absolute inset-0 object-cover size-full" src={imgBedroom} />
                 </div>
                 <div>
                   <p className="font-sans font-bold text-foreground text-base">The Bedroom</p>
                   <p className="font-sans text-muted-foreground text-xs">{wordsPracticedCount} / {totalBedroomWords} words learned</p>
-                  <span className="font-sans text-[10px] font-semibold text-primary bg-secondary px-2 py-0.5 rounded-full inline-block mt-1">Active</span>
+                  <span className="font-sans text-[10px] font-semibold text-primary bg-secondary px-2 py-0.5 rounded-full inline-block mt-1">
+                    Explore World →
+                  </span>
                 </div>
-              </div>
+              </button>
 
               <div className="bg-wp-card border border-border rounded-2xl p-4 flex items-center gap-4 opacity-60">
                 <div className="size-16 rounded-xl overflow-hidden shrink-0 border border-border relative">
