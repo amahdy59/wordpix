@@ -2,7 +2,7 @@ import { memo, useMemo, useState } from "react";
 import type { Action } from "../types";
 import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { articleFor } from "./exerciseContent";
+import { getRichSentence } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
 import { PenTool, Sparkles } from "lucide-react";
 import { shuffleArray } from "../../utils/shuffle";
@@ -28,12 +28,10 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
   const { playCorrect, playIncorrect, playClick } = useSound();
 
   const currentTargetWord = words[questionIndex] || words[0];
+  const richSentence = useMemo(() => getRichSentence(currentTargetWord), [currentTargetWord]);
 
-  const answer = useMemo(
-    () => ["This", "is", articleFor(currentTargetWord.label), currentTargetWord.label.toLowerCase()],
-    [currentTargetWord.label]
-  );
-  const shuffled = useMemo(() => shuffleArray([answer[3], answer[0], answer[2], answer[1]]), [answer]);
+  const answer = useMemo(() => richSentence.words, [richSentence]);
+  const shuffled = useMemo(() => shuffleArray([...answer]), [answer]);
 
   const isCorrect = placed.join(" ") === answer.join(" ");
 
@@ -117,7 +115,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
       <div className="flex flex-col gap-5 w-full">
         {/* Question Counter & Skill Badge */}
         <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
-          <span>Writing Item {questionIndex + 1} of {words.length}</span>
+          <span>Sentence {questionIndex + 1} of {words.length}</span>
           <span className="flex items-center gap-1 text-primary bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full">
             <PenTool className="size-3" />
             <span>Spelling &amp; Sentence Skill</span>
@@ -191,7 +189,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
                 : "bg-wp-rose text-white border-wp-rose"
             }`}
           >
-            {isCorrect ? "✓ Great sentence structure!" : `Try this order: ${answer.join(" ")}.`}
+            {isCorrect ? `✓ Great sentence! "${richSentence.full}"` : `Try this order: ${answer.join(" ")}.`}
           </div>
         )}
       </div>

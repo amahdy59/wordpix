@@ -1,14 +1,11 @@
 import { memo, useMemo } from "react";
-import { Flame, BookOpen, ArrowRight, RotateCcw, ShieldCheck, Brain, WifiOff, CheckCircle2 } from "lucide-react";
+import { Flame, ArrowRight, RotateCcw, WifiOff, Layers, Headphones, BookOpen, Mic, PenTool } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { BEDROOM_VOCABULARY } from "../data/lessons";
 import { calculateDaysBetween, getLocalDateString } from "../../features/gamification/streak";
 import { isOfflineAvailable } from "../../pwa";
-import { WordImage } from "../shared/WordImage";
 
 const imgAvatar = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
-const imgBedroom  = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -73,6 +70,37 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           </div>
         )}
       </header>
+
+      {/* 35 Specialized Skill Exercises Quick Hub Card */}
+      <section aria-label="35 Specialized Skill Drills">
+        <div className="bg-slate-900 text-white rounded-3xl p-5 md:p-6 flex flex-col md:flex-row items-center justify-between gap-4 border border-slate-800 shadow-wp-md">
+          <div className="flex items-center gap-4">
+            <div className="size-12 md:size-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center shrink-0 shadow-md">
+              <Layers className="size-6 md:size-7" />
+            </div>
+            <div>
+              <span className="font-sans font-bold text-xs text-wp-amber bg-amber-500/10 px-2.5 py-0.5 rounded-full border border-amber-500/20">
+                35 Specialized Screens
+              </span>
+              <h2 className="font-sans font-black text-white text-lg md:text-xl mt-1">
+                Multimodal Skill Exercises Suite
+              </h2>
+              <p className="font-sans text-xs text-white/70 mt-0.5">
+                Practice Listening, Reading, Speaking, and Writing drills.
+              </p>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            onClick={() => dispatch({ type: "GO", to: "skill-hub" })}
+            className="w-full md:w-auto bg-primary hover:opacity-90 active:opacity-80 rounded-xl py-3 px-5 font-sans font-bold text-primary-foreground text-sm flex items-center justify-center gap-2 shrink-0 min-h-[44px] shadow-sm transition-all"
+          >
+            <span>Open Exercise Hub (35)</span>
+            <ArrowRight className="size-4" />
+          </button>
+        </div>
+      </section>
 
       {/* Main Grid: TODAY + REVIEW (Left) | YOUR LEARNING + THIS WEEK (Right) */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">

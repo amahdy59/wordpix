@@ -2,7 +2,7 @@ import { memo, useMemo, useState } from "react";
 import type { Action } from "../types";
 import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { articleFor } from "./exerciseContent";
+import { getRichSentence } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
@@ -28,6 +28,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
   const { playCorrect, playIncorrect, playClick } = useSound();
 
   const currentTargetWord = words[questionIndex] || words[0];
+  const richSentence = useMemo(() => getRichSentence(currentTargetWord), [currentTargetWord]);
 
   const options = useMemo(() => {
     const otherWords = words.filter((w) => w.id !== currentTargetWord.id);
@@ -115,7 +116,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
           <span>Sentence {questionIndex + 1} of {words.length}</span>
           <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full">
-            Group context drill
+            Context Drill · {currentTargetWord.label}
           </span>
         </div>
 
@@ -124,17 +125,17 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
           <WordImage word={currentTargetWord} width="800" height="600" className="size-full object-cover" />
           <div className="absolute top-3.5 left-3.5 bg-black/65 backdrop-blur-md text-white font-sans font-bold text-xs px-3.5 py-1.5 rounded-xl border border-white/20 shadow-md flex items-center gap-2">
             <Sparkles className="size-4 text-wp-amber animate-pulse" />
-            <span>Target Visual Clue</span>
+            <span>Target Visual: {currentTargetWord.label}</span>
           </div>
         </div>
 
-        {/* Centered Sentence Display Box */}
-        <div className="bg-wp-card rounded-2xl border border-border p-5 text-center shadow-wp-xs flex flex-col items-center justify-center gap-2">
+        {/* Centered Rich Sentence Display Box */}
+        <div className="bg-wp-card rounded-2xl border border-border p-6 text-center shadow-wp-xs flex flex-col items-center justify-center gap-2">
           <span className="font-sans font-bold text-[11px] text-primary uppercase tracking-wider">
-            Sentence Context
+            Sentence Context Clue
           </span>
-          <p className="font-sans font-black text-foreground text-2xl md:text-3xl leading-relaxed flex items-center justify-center flex-wrap gap-2 py-1">
-            <span>This is {articleFor(currentTargetWord.label)}</span>
+          <p className="font-sans font-bold text-foreground text-xl md:text-2xl leading-relaxed flex items-center justify-center flex-wrap gap-2 py-1">
+            <span>{richSentence.clozeBefore}</span>
             <span
               className={`inline-flex items-center justify-center min-w-[140px] h-12 px-4 rounded-xl border-2 transition-all font-sans font-black text-xl shadow-xs ${
                 selectedWord
@@ -148,7 +149,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
             >
               {selectedWord ? selectedWord.label.toLowerCase() : "_______"}
             </span>
-            <span>.</span>
+            <span>{richSentence.clozeAfter}</span>
           </p>
         </div>
 
@@ -190,8 +191,8 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
             }`}
           >
             {isCorrect
-              ? "✓ Excellent! The sentence matches the picture perfectly."
-              : `Try again — the picture shows ${articleFor(currentTargetWord.label)} ${currentTargetWord.label.toLowerCase()}.`}
+              ? `✓ Excellent! "${richSentence.full}"`
+              : `Try again — correct sentence: "${richSentence.full}".`}
           </div>
         )}
       </div>
