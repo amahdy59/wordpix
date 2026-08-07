@@ -1,6 +1,8 @@
-import { memo, useState, useEffect, useRef } from "react";
+import { memo, useState } from "react";
+import { createPortal } from "react-dom";
 import { WordImage } from "../shared/WordImage";
 import { BEDROOM_VOCABULARY } from "../data/lessons";
+import { useModalA11y } from "../shared/useModalA11y";
 import { Sparkles, X } from "lucide-react";
 
 interface Props {
@@ -34,21 +36,7 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
 }: Props) {
   const [stepIndex, setStepIndex] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
-  const closeBtnRef = useRef<HTMLButtonElement | null>(null);
-
-  // Auto-focus and handle Escape key
-  useEffect(() => {
-    if (!isOpen) return undefined;
-    closeBtnRef.current?.focus();
-
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        onClose();
-      }
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, onClose]);
+  const containerRef = useModalA11y({ isOpen, onDismiss: onClose });
 
   if (!isOpen) return null;
 
@@ -71,22 +59,23 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
     }
   };
 
-  return (
-    <div
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="placement-modal-title"
-      className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4"
-    >
-      <div className="bg-wp-card border border-border rounded-3xl p-6 w-full max-w-md shadow-2xl flex flex-col gap-5 relative">
+  return createPortal(
+    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+      <div
+        ref={containerRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="placement-modal-title"
+        tabIndex={-1}
+        className="bg-wp-card border border-border rounded-3xl p-6 w-full max-w-md shadow-2xl flex flex-col gap-5 relative outline-none"
+      >
         <button
-          ref={closeBtnRef}
           type="button"
           onClick={onClose}
           aria-label="Close level placement check"
-          className="absolute top-4 right-4 size-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+          className="absolute top-4 end-4 size-10 min-h-[44px] min-w-[44px] rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
         >
-          <X className="size-5" />
+          <X className="size-5" aria-hidden />
         </button>
 
         <div>
@@ -121,11 +110,17 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
               <div className="h-24 w-full rounded-xl overflow-hidden bg-muted">
                 <WordImage word={opt} width="200" height="150" className="size-full object-cover" altMode="assessment" optionIndex={idx} />
               </div>
-              <span className="font-sans font-semibold text-xs text-foreground">{opt.label}</span>
+              {/* No word label here: this is a graded placement question, and
+                  printing the answer under each picture makes it unanswerable
+                  as an assessment. */}
+              <span className="font-sans font-semibold text-xs text-muted-foreground">
+                Option {idx + 1}
+              </span>
             </button>
           ))}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 });
