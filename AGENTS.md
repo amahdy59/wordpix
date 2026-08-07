@@ -12,4 +12,5 @@ WordPix is an accessible, bilingual, gamified visual English learning applicatio
 ## Guidance Documents
 Detailed production guidance docs are located in `docs/`:
 - [`docs/00_README_FIRST.md`](file:///c:/Users/AhmedMahdy/OneDrive%20-%20Advansys%20IS/Documents/Antigravity/WordPix/docs/00_README_FIRST.md) — How to use the guidance pack, status labels, and core references.
+- [`docs/01_PRODUCT_CONTEXT_AND_NON_NEGOTIABLES.md`](file:///c:/Users/AhmedMahdy/OneDrive%20-%20Advansys%20IS/Documents/Antigravity/WordPix/docs/01_PRODUCT_CONTEXT_AND_NON_NEGOTIABLES.md) — Product promise, learner modes (child/adult), core loop, and non-negotiable guardrails.
 - [`docs/ADR.md`](file:///c:/Users/AhmedMahdy/OneDrive%20-%20Advansys%20IS/Documents/Antigravity/WordPix/docs/ADR.md) — Architecture Decision Records.
