@@ -116,7 +116,8 @@ export function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "LESSON_PREVIOUS") {
     if (state.id !== "lesson") return state;
-    return { ...state, step: Math.max(0, state.step - 1) };
+    if (state.step === 0) return { id: "lesson-entry" };
+    return { ...state, step: state.step - 1 };
   }
   return state;
 }

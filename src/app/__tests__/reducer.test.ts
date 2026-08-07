@@ -17,7 +17,7 @@ describe("WordPix navigation and group lesson reducer", () => {
     expect(reducer({ id: "home" }, { type: "GO", to: "explore" })).toEqual({ id: "explore" });
   });
 
-  it("starts a group lesson and advances step-by-step", () => {
+  it("starts a group lesson and advances/regresses step-by-step", () => {
     let state = reducer({ id: "lesson-entry" }, { type: "START_LESSON", groupId: "essential-furniture" });
     expect(state).toMatchObject({ id: "lesson", groupId: "essential-furniture", step: 0, attempts: [] });
 
@@ -26,6 +26,10 @@ describe("WordPix navigation and group lesson reducer", () => {
 
     state = reducer(state, { type: "LESSON_PREVIOUS" });
     expect(state).toMatchObject({ id: "lesson", step: 0, groupId: "essential-furniture" });
+
+    // Calling LESSON_PREVIOUS on step 0 returns to lesson-entry overview
+    state = reducer(state, { type: "LESSON_PREVIOUS" });
+    expect(state).toEqual({ id: "lesson-entry" });
   });
 
   it("records attempts and carries them into group completion results", () => {

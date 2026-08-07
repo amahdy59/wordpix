@@ -1,5 +1,5 @@
 import { useEffect, useCallback } from "react";
-import type { Screen, TabId } from "../types";
+import type { Screen } from "../types";
 
 export interface RouteMapping {
   hash: string;
@@ -46,7 +46,11 @@ export function useHashRouter(
   useEffect(() => {
     const { hash, title } = screenToHash(currentScreen);
     if (window.location.hash !== hash) {
-      window.history.replaceState(null, "", hash);
+      if (!window.location.hash || window.location.hash === "#/") {
+        window.history.replaceState(null, "", hash);
+      } else {
+        window.history.pushState(null, "", hash);
+      }
     }
     document.title = title;
 
