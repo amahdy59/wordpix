@@ -59,7 +59,7 @@ export const ExListeningWordMatch = memo(function ExListeningWordMatch({ dispatc
               key={idx}
               type="button"
               onClick={() => setSelectedIdx(idx)}
-              className={`p-4 rounded-2xl border text-left font-sans font-semibold text-sm transition-all min-h-[52px] ${
+              className={`p-4 rounded-2xl border text-start font-sans font-semibold text-sm transition-all min-h-[52px] ${
                 checked
                   ? opt.correct
                     ? "bg-wp-green-light border-wp-green text-wp-green"
@@ -71,7 +71,7 @@ export const ExListeningWordMatch = memo(function ExListeningWordMatch({ dispatc
                   : "bg-wp-card border-border text-foreground hover:border-primary/40"
               }`}
             >
-              <span className="font-bold mr-2">[{idx + 1}]</span> {opt.label}
+              <span className="font-bold me-2">[{idx + 1}]</span> {opt.label}
             </button>
           ))}
         </div>
@@ -403,7 +403,7 @@ export const ExListeningPodcastComprehension = memo(function ExListeningPodcastC
                 key={t}
                 type="button"
                 onClick={() => toggleTopic(t)}
-                className={`p-4 rounded-2xl border text-left font-sans font-bold text-sm transition-all ${
+                className={`p-4 rounded-2xl border text-start font-sans font-bold text-sm transition-all ${
                   isSel ? "bg-secondary border-primary border-[2px] text-primary shadow-xs" : "bg-wp-card border-border text-foreground"
                 }`}
               >

@@ -117,7 +117,7 @@ export function LanguageSelect({ dispatch }: Props) {
                   role="radio"
                   aria-checked={isSelected}
                   onClick={() => setLevel(item.tag as "A1" | "A2" | "B1")}
-                  className={`w-full text-left p-4 rounded-2xl border transition-all flex items-center justify-between min-h-[60px] ${
+                  className={`w-full text-start p-4 rounded-2xl border transition-all flex items-center justify-between min-h-[60px] ${
                     isSelected
                       ? "bg-secondary border-primary border-[2px] shadow-wp-xs"
                       : "bg-wp-card border-border hover:border-primary/40"

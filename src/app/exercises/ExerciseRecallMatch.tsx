@@ -151,7 +151,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             type="button"
             onClick={replayAudio}
             aria-label="Replay target audio prompt"
-            className="flex items-center gap-3 hover:opacity-90 transition-opacity text-left"
+            className="flex items-center gap-3 hover:opacity-90 transition-opacity text-start"
           >
             <div className="size-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md shrink-0">
               <Volume2 className={`size-5 ${isPlaying ? "animate-pulse text-wp-amber" : ""}`} />

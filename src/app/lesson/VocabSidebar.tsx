@@ -47,7 +47,7 @@ export const VocabSidebar = memo(function VocabSidebar({
 
   return (
     <aside
-      className={`${mobileOpen ? "fixed inset-0 z-50 flex" : "hidden"} md:static md:flex flex-col min-h-0 max-h-svh w-full md:w-80 lg:w-96 xl:w-[420px] bg-wp-card border-l border-border h-full overflow-hidden overscroll-none shrink-0`}
+      className={`${mobileOpen ? "fixed inset-0 z-50 flex" : "hidden"} md:static md:flex flex-col min-h-0 max-h-svh w-full md:w-80 lg:w-96 xl:w-[420px] bg-wp-card border-s border-border h-full overflow-hidden overscroll-none shrink-0`}
       aria-label="Bedroom vocabulary list"
       aria-modal={mobileOpen || undefined}
       role={mobileOpen ? "dialog" : undefined}
@@ -132,7 +132,7 @@ export const VocabSidebar = memo(function VocabSidebar({
               <div className="relative rounded-xl shrink-0 size-12 overflow-hidden border border-border bg-muted">
                 <WordImage word={word} width="48" height="48" className="size-full object-cover" />
                 {levelNum === 3 && (
-                  <div className="absolute top-1 right-1 bg-wp-green text-wp-text-on-green p-0.5 rounded-full">
+                  <div className="absolute top-1 end-1 bg-wp-green text-wp-text-on-green p-0.5 rounded-full">
                     <CheckCircle2 className="size-3" />
                   </div>
                 )}

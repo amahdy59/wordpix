@@ -100,7 +100,7 @@ export const ExerciseShell = memo(function ExerciseShell({
         </div>
 
         {/* Group Badges & Title top-left */}
-        <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
+        <div className="absolute top-4 inset-x-4 flex items-center justify-between z-10">
           <div className="flex items-center gap-2 bg-black/60 backdrop-blur-md border border-white/15 rounded-full px-3 py-1 text-white">
             <Layers className="size-3.5 text-wp-amber" />
             <span className="font-sans font-bold text-xs">{group.name}</span>
@@ -113,7 +113,7 @@ export const ExerciseShell = memo(function ExerciseShell({
         </div>
 
         {/* Group Items Grid / Info at Bottom */}
-        <div className="absolute bottom-0 left-0 right-0 p-5 flex flex-col gap-3.5 z-10">
+        <div className="absolute bottom-0 inset-x-0 p-5 flex flex-col gap-3.5 z-10">
           {/* Active Word Label or Testing Prompt */}
           {!isTesting && currentWord ? (
             <div>

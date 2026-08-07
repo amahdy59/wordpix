@@ -81,7 +81,7 @@ export function SplashWelcome({ dispatch }: Props) {
         </header>
 
         {/* Main Content */}
-        <main className="flex-1 flex flex-col items-center md:items-start justify-center w-full max-w-md mx-auto md:mx-0 py-6 text-center md:text-left gap-6 z-10">
+        <main className="flex-1 flex flex-col items-center md:items-start justify-center w-full max-w-md mx-auto md:mx-0 py-6 text-center md:text-start gap-6 z-10">
           <div className="hidden md:flex items-center justify-between w-full">
             <span className="text-xs font-sans font-bold text-primary bg-secondary px-3 py-1 rounded-full border border-primary/20">
               Welcome to WordPix
@@ -111,7 +111,7 @@ export function SplashWelcome({ dispatch }: Props) {
               src={imgHero}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-            <div className="absolute bottom-3 left-4 flex items-center gap-2 text-white">
+            <div className="absolute bottom-3 start-4 flex items-center gap-2 text-white">
               <Layers className="size-4" />
               <span className="font-sans font-bold text-xs">56 Bedroom Words Ready</span>
             </div>

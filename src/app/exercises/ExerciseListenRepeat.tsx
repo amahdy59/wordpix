@@ -138,7 +138,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                 <div className="size-9 sm:size-10 rounded-lg overflow-hidden shrink-0 border border-border bg-muted relative">
                   <WordImage word={w} width="40" height="40" className="size-full object-cover" />
                   {isSelected && (
-                    <div className="absolute top-0.5 right-0.5 bg-primary text-white p-0.5 rounded-full shadow-xs">
+                    <div className="absolute top-0.5 end-0.5 bg-primary text-white p-0.5 rounded-full shadow-xs">
                       <CheckCircle2 className="size-2.5" />
                     </div>
                   )}
@@ -154,7 +154,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         {/* Fluid Target Image Banner (Responsive max-h) */}
         <div className="h-40 sm:h-48 md:h-52 max-h-[28vh] w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-md bg-muted shrink-0">
           <WordImage word={currentWord} width="800" height="500" className="size-full object-cover" />
-          <div className="absolute top-3 left-3 bg-black/65 backdrop-blur-md text-white font-sans font-bold text-xs px-3 py-1 rounded-xl border border-white/20 shadow-md flex items-center gap-1.5">
+          <div className="absolute top-3 start-3 bg-black/65 backdrop-blur-md text-white font-sans font-bold text-xs px-3 py-1 rounded-xl border border-white/20 shadow-md flex items-center gap-1.5">
             <Sparkles className="size-3.5 text-wp-amber animate-pulse" />
             <span>Target Visual: {currentWord.label}</span>
           </div>

@@ -38,7 +38,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ dispatch }: Pro
         <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/60" aria-hidden />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" aria-hidden />
 
-        <div className="absolute bottom-8 left-8 flex flex-col gap-2">
+        <div className="absolute bottom-8 start-8 flex flex-col gap-2">
           <span className="font-sans font-bold text-xs text-white bg-black/50 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20 self-start">
             Rosetta Stone Group Learning
           </span>
@@ -77,7 +77,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ dispatch }: Pro
               src={imgBedroom}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" aria-hidden />
-            <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-white">
+            <div className="absolute bottom-3 inset-x-4 flex items-center justify-between text-white">
               <span className="font-sans font-bold text-sm">Bedroom Word Groups</span>
               <span className="font-sans text-xs bg-white/20 backdrop-blur-md px-2.5 py-0.5 rounded-full font-semibold">
                 {BEDROOM_GROUPS.length} Groups
@@ -114,7 +114,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ dispatch }: Pro
                   role="radio"
                   aria-checked={isSelected}
                   onClick={() => setSelectedGroupId(g.id)}
-                  className={`bg-wp-card rounded-2xl border p-4 text-left transition-all flex items-center justify-between min-h-[72px] ${
+                  className={`bg-wp-card rounded-2xl border p-4 text-start transition-all flex items-center justify-between min-h-[72px] ${
                     isSelected
                       ? "border-primary border-[2px] bg-secondary shadow-sm"
                       : "border-border hover:border-primary/40"

@@ -81,7 +81,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
               className="absolute inset-0 object-cover size-full"
               src={imgBedroom}
             />
-            <div className="absolute top-3 left-3 bg-secondary text-primary font-sans font-bold text-xs px-3 py-1 rounded-full border border-primary/20 shadow-wp-xs flex items-center gap-1.5">
+            <div className="absolute top-3 start-3 bg-secondary text-primary font-sans font-bold text-xs px-3 py-1 rounded-full border border-primary/20 shadow-wp-xs flex items-center gap-1.5">
               <Sparkles className="size-3.5" />
               <span>Ready &amp; Fully Unlocked</span>
             </div>

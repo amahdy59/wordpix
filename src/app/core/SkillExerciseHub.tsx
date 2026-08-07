@@ -110,7 +110,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               key={ex.id}
               type="button"
               onClick={() => dispatch({ type: "OPEN_SKILL_EXERCISE", exerciseId: ex.id })}
-              className="bg-wp-card border border-border hover:border-primary rounded-2xl p-5 text-left flex flex-col justify-between gap-3 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all group shadow-wp-xs hover:shadow-md"
+              className="bg-wp-card border border-border hover:border-primary rounded-2xl p-5 text-start flex flex-col justify-between gap-3 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all group shadow-wp-xs hover:shadow-md"
             >
               <div>
                 <h2 className="font-sans font-bold text-foreground text-base group-hover:text-primary transition-colors">
