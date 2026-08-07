@@ -238,7 +238,7 @@ export const ExListeningVocabSpotting = memo(function ExListeningVocabSpotting({
                 type="button"
                 onClick={() => handleSpot(w)}
                 className={`px-4 py-3 rounded-2xl border font-sans font-bold text-sm transition-all ${
-                  isDone ? "bg-wp-green text-white border-wp-green scale-105" : "bg-wp-card border-border text-foreground hover:border-primary"
+                  isDone ? "bg-wp-green text-wp-text-on-green border-wp-green scale-105" : "bg-wp-card border-border text-foreground hover:border-primary"
                 }`}
               >
                 {isDone ? `✓ ${w}` : `Tap when hearing "${w}"`}

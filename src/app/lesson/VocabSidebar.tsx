@@ -132,7 +132,7 @@ export const VocabSidebar = memo(function VocabSidebar({
               <div className="relative rounded-xl shrink-0 size-12 overflow-hidden border border-border bg-muted">
                 <WordImage word={word} width="48" height="48" className="size-full object-cover" />
                 {levelNum === 3 && (
-                  <div className="absolute top-1 right-1 bg-wp-green text-white p-0.5 rounded-full">
+                  <div className="absolute top-1 right-1 bg-wp-green text-wp-text-on-green p-0.5 rounded-full">
                     <CheckCircle2 className="size-3" />
                   </div>
                 )}
@@ -167,7 +167,7 @@ export const VocabSidebar = memo(function VocabSidebar({
         <button
           type="button"
           onClick={onLearnWord}
-          className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 font-sans font-bold text-white text-sm min-h-[48px]
+          className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 font-sans font-bold text-wp-text-on-blue text-sm min-h-[48px]
             focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
             shadow-wp-xs transition-all flex items-center justify-center gap-2"
         >

@@ -227,7 +227,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                     className="size-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   {isTargetCompleted && (
-                    <div className="absolute top-2 end-2 bg-wp-green text-white p-1 rounded-full shadow-md">
+                    <div className="absolute top-2 end-2 bg-wp-green text-wp-text-on-green p-1 rounded-full shadow-md">
                       <CheckCircle2 className="size-3.5" aria-hidden />
                     </div>
                   )}

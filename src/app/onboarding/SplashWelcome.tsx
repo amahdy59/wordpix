@@ -123,7 +123,7 @@ export function SplashWelcome({ dispatch }: Props) {
           <button
             type="button"
             onClick={advance}
-            className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 font-sans font-bold text-white text-base min-h-[52px]
+            className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 font-sans font-bold text-wp-text-on-blue text-base min-h-[52px]
               focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
               shadow-sm transition-all flex items-center justify-center gap-2"
           >

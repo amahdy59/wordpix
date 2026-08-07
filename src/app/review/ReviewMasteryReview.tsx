@@ -206,7 +206,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
         <button
           type="button"
           onClick={startReviewSession}
-          className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 w-full font-sans font-bold text-white text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue min-h-[52px] shadow-wp-xs transition-all flex items-center justify-center gap-2"
+          className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 w-full font-sans font-bold text-wp-text-on-blue text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue min-h-[52px] shadow-wp-xs transition-all flex items-center justify-center gap-2"
         >
           <span>Start Adaptive Review Session ({totalDue} due)</span>
           <ArrowRight className="size-5" />

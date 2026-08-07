@@ -130,7 +130,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
             <button
               type="button"
               onClick={() => dispatch({ type: "GO", to: "lesson-entry" })}
-              className="w-full sm:w-auto bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 px-6 font-sans font-bold text-white text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all flex items-center justify-center gap-2 self-start mt-2 min-h-[48px]"
+              className="w-full sm:w-auto bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 px-6 font-sans font-bold text-wp-text-on-blue text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all flex items-center justify-center gap-2 self-start mt-2 min-h-[48px]"
             >
               <BookOpen className="size-4" />
               <span>Enter The Bedroom Lesson</span>

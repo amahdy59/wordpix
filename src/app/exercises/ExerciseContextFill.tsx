@@ -145,8 +145,8 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
                 selectedWord
                   ? checked
                     ? isCorrect
-                      ? "bg-wp-green text-white border-wp-green"
-                      : "bg-wp-rose text-white border-wp-rose"
+                      ? "bg-wp-green text-wp-text-on-green border-wp-green"
+                      : "bg-wp-rose text-wp-text-on-rose border-wp-rose"
                     : "bg-primary text-primary-foreground border-primary"
                   : "bg-secondary/80 border-dashed border-primary/50 text-muted-foreground"
               }`}

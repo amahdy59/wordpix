@@ -155,7 +155,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
               <button
                 type="button"
                 onClick={() => dispatch({ type: "START_LESSON" })}
-                className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 font-sans font-bold text-white text-base min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-sm transition-all flex items-center justify-center gap-2"
+                className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 font-sans font-bold text-wp-text-on-blue text-base min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-sm transition-all flex items-center justify-center gap-2"
               >
                 <span>Continue Session</span>
                 <ArrowRight className="size-5" />
@@ -240,7 +240,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     </span>
                     <div
                       className={`size-8 rounded-xl flex items-center justify-center font-sans text-xs font-bold ${
-                        d.done ? "bg-wp-amber text-white shadow-sm" : "bg-muted text-muted-foreground"
+                        d.done ? "bg-wp-amber text-wp-text-on-amber shadow-sm" : "bg-muted text-muted-foreground"
                       } ${d.isToday ? "ring-2 ring-primary ring-offset-2 ring-offset-wp-card" : ""}`}
                     >
                       <span className="sr-only">

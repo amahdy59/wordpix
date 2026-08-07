@@ -94,7 +94,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   type="button"
                   onClick={() => setHighContrast((v) => !v)}
                   className={`px-3 py-1.5 rounded-full font-sans font-bold text-xs transition-all border ${
-                    highContrast ? "bg-wp-green text-white border-wp-green" : "bg-muted text-muted-foreground border-border"
+                    highContrast ? "bg-wp-green text-wp-text-on-green border-wp-green" : "bg-muted text-muted-foreground border-border"
                   }`}
                 >
                   {highContrast ? "Enabled (7:1)" : "Disabled"}
@@ -204,7 +204,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     type="button"
                     onClick={() => setEnableSpeaking((v) => !v)}
                     className={`px-3 py-1.5 rounded-full font-sans font-bold text-xs transition-all border ${
-                      enableSpeaking ? "bg-wp-green text-white border-wp-green" : "bg-muted text-muted-foreground border-border"
+                      enableSpeaking ? "bg-wp-green text-wp-text-on-green border-wp-green" : "bg-muted text-muted-foreground border-border"
                     }`}
                   >
                     {enableSpeaking ? "Enabled" : "Disabled"}
@@ -220,7 +220,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     type="button"
                     onClick={() => setEnableListening((v) => !v)}
                     className={`px-3 py-1.5 rounded-full font-sans font-bold text-xs transition-all border ${
-                      enableListening ? "bg-wp-green text-white border-wp-green" : "bg-muted text-muted-foreground border-border"
+                      enableListening ? "bg-wp-green text-wp-text-on-green border-wp-green" : "bg-muted text-muted-foreground border-border"
                     }`}
                   >
                     {enableListening ? "Enabled" : "Disabled"}
@@ -274,7 +274,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   <button
                     type="button"
                     onClick={() => { resetToZero(); setConfirmReset(false); onClose(); }}
-                    className="px-3 py-1.5 rounded-xl bg-wp-rose text-white text-xs font-sans font-bold shadow-xs"
+                    className="px-3 py-1.5 rounded-xl bg-wp-rose text-wp-text-on-rose text-xs font-sans font-bold shadow-xs"
                   >
                     Confirm Reset
                   </button>

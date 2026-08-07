@@ -51,7 +51,7 @@ export const FeedbackModal = memo(function FeedbackModal({
         <div
           aria-hidden
           className={`size-16 sm:size-20 rounded-full flex items-center justify-center shadow-lg ${
-            isCorrect ? "bg-wp-green text-white" : "bg-wp-rose text-white"
+            isCorrect ? "bg-wp-green text-wp-text-on-green" : "bg-wp-rose text-wp-text-on-rose"
           }`}
         >
           {isCorrect ? (
@@ -102,7 +102,7 @@ export const FeedbackModal = memo(function FeedbackModal({
             <button
               type="button"
               onClick={onContinue}
-              className="w-full py-4 px-6 rounded-2xl bg-wp-green text-white font-sans font-black text-base sm:text-lg shadow-lg hover:bg-wp-green/90 transition-all flex items-center justify-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-green"
+              className="w-full py-4 px-6 rounded-2xl bg-wp-green text-wp-text-on-green font-sans font-black text-base sm:text-lg shadow-lg hover:bg-wp-green/90 transition-all flex items-center justify-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-green"
             >
               <span>Continue</span>
               <ArrowRight className="size-5" aria-hidden />
@@ -111,7 +111,7 @@ export const FeedbackModal = memo(function FeedbackModal({
             <button
               type="button"
               onClick={onTryAgain || onContinue}
-              className="w-full py-4 px-6 rounded-2xl bg-wp-rose text-white font-sans font-black text-base sm:text-lg shadow-lg hover:bg-wp-rose/90 transition-all flex items-center justify-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-rose"
+              className="w-full py-4 px-6 rounded-2xl bg-wp-rose text-wp-text-on-rose font-sans font-black text-base sm:text-lg shadow-lg hover:bg-wp-rose/90 transition-all flex items-center justify-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-rose"
             >
               <RotateCcw className="size-5" aria-hidden />
               <span>Try Again</span>

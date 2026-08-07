@@ -24,7 +24,7 @@ export function ReadyCelebration({ dispatch }: Props) {
         <div className="relative z-10 flex flex-col items-center text-center gap-6 my-auto">
           <div aria-hidden className="relative rounded-full shrink-0 size-32 border-4 border-primary/30 bg-secondary/10 flex items-center justify-center shadow-2xl">
             <UserCircle className="size-20 text-primary" />
-            <div className="absolute bottom-1 right-1 size-8 rounded-full bg-wp-green text-white flex items-center justify-center border-2 border-slate-950">
+            <div className="absolute bottom-1 right-1 size-8 rounded-full bg-wp-green text-wp-text-on-green flex items-center justify-center border-2 border-slate-950">
               <CheckCircle2 className="size-4" />
             </div>
           </div>
@@ -49,7 +49,7 @@ export function ReadyCelebration({ dispatch }: Props) {
         <main className="flex-1 flex flex-col items-center justify-center w-full max-w-md mx-auto md:mx-0 text-center md:text-left gap-6 z-10">
           <div aria-hidden className="md:hidden relative rounded-full shrink-0 size-36 border-4 border-primary/20 bg-secondary flex items-center justify-center shadow-wp-md">
             <UserCircle className="size-20 text-primary" />
-            <div className="absolute bottom-1 right-1 size-9 rounded-full bg-wp-green text-white flex items-center justify-center border-2 border-background">
+            <div className="absolute bottom-1 right-1 size-9 rounded-full bg-wp-green text-wp-text-on-green flex items-center justify-center border-2 border-background">
               <CheckCircle2 className="size-5" />
             </div>
           </div>
@@ -81,7 +81,7 @@ export function ReadyCelebration({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "ONBOARD_NEXT" })}
-            className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 font-sans font-bold text-white text-base min-h-[52px]
+            className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 font-sans font-bold text-wp-text-on-blue text-base min-h-[52px]
               focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
               shadow-sm transition-all flex items-center justify-center gap-2"
           >

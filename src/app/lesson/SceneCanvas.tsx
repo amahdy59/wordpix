@@ -245,7 +245,7 @@ export const SceneCanvas = memo(function SceneCanvas({
             <button
               type="button"
               onClick={onLearnWord}
-              className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl px-5 py-3 font-sans font-bold text-white text-sm shrink-0 min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all hidden sm:block md:hidden"
+              className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl px-5 py-3 font-sans font-bold text-wp-text-on-blue text-sm shrink-0 min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all hidden sm:block md:hidden"
             >
               Start Group Practice →
             </button>
@@ -262,7 +262,7 @@ export const SceneCanvas = memo(function SceneCanvas({
         <button
           type="button"
           onClick={onLearnWord}
-          className="w-full bg-wp-blue rounded-xl py-3.5 font-sans font-bold text-white text-base min-h-[48px]
+          className="w-full bg-wp-blue rounded-xl py-3.5 font-sans font-bold text-wp-text-on-blue text-base min-h-[48px]
             focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
             motion-safe:transition-opacity hover:opacity-90 active:opacity-80"
         >
