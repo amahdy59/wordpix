@@ -89,6 +89,11 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   useEffect(() => {
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
       if (feedback === "correct") return;
+      if (e.code === "Space" || e.key === "0") {
+        e.preventDefault();
+        replayAudio();
+        return;
+      }
       if (["1", "2", "3", "4", "5"].includes(e.key)) {
         const idx = parseInt(e.key, 10) - 1;
         if (displayCards[idx]) {
@@ -99,7 +104,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
     };
     window.addEventListener("keydown", handleGlobalKeyDown);
     return () => window.removeEventListener("keydown", handleGlobalKeyDown);
-  }, [feedback, displayCards, handleCardClick, playClick]);
+  }, [feedback, displayCards, handleCardClick, playClick, replayAudio]);
 
   return (
     <ExerciseShell
@@ -112,12 +117,12 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       dispatch={dispatch}
       footer={
         <div className="w-full flex flex-col gap-2">
-          {/* Pinned Footer Feedback Banner (Option A: Zero Layout Shift) */}
+          {/* Pinned Footer Feedback Banner */}
           {feedback ? (
             <div
               role="status"
               aria-live="polite"
-              className={`w-full rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-md transition-all ${
+              className={`w-full rounded-2xl p-3.5 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-md transition-all ${
                 feedback === "correct"
                   ? "bg-wp-green text-white border border-wp-green"
                   : "bg-wp-rose text-white border border-wp-rose"
@@ -125,12 +130,12 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             >
               <div className="flex items-center gap-3">
                 {feedback === "correct" ? (
-                  <CheckCircle2 className="size-7 shrink-0 text-white animate-in zoom-in" />
+                  <CheckCircle2 className="size-6 shrink-0 text-white animate-in zoom-in" />
                 ) : (
-                  <XCircle className="size-7 shrink-0 text-white animate-in zoom-in" />
+                  <XCircle className="size-6 shrink-0 text-white animate-in zoom-in" />
                 )}
                 <div>
-                  <h3 className="font-sans font-black text-base leading-tight">
+                  <h3 className="font-sans font-black text-sm sm:text-base leading-tight">
                     {feedback === "correct" ? "✓ Excellent Audio Match!" : "Listen Carefully"}
                   </h3>
                   <p className="font-sans text-xs text-white/95 mt-0.5">
@@ -145,7 +150,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 <button
                   type="button"
                   onClick={advanceNext}
-                  className="w-full sm:w-auto px-6 py-3 rounded-xl bg-white text-wp-green hover:bg-white/90 font-sans font-bold text-sm flex items-center justify-center gap-2 shrink-0 shadow-sm transition-all"
+                  className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-white text-wp-green hover:bg-white/90 font-sans font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shrink-0 shadow-sm transition-all"
                 >
                   <span>{targetIndex + 1 < words.length ? "Next Item →" : "Continue →"}</span>
                   <ArrowRight className="size-4" />
@@ -153,55 +158,53 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
               )}
             </div>
           ) : (
-            <div className="flex flex-col gap-1.5">
-              <div className="flex items-center justify-center gap-1.5 text-xs font-sans font-bold text-amber-600 dark:text-amber-400">
+            <div className="flex items-center justify-between text-xs font-sans font-semibold text-muted-foreground px-1">
+              <div className="flex items-center gap-1.5 text-amber-600 dark:text-amber-400 font-bold">
                 <Keyboard className="size-4" />
                 <span>Press 1–5 on keyboard or tap image card</span>
               </div>
-              <div className="flex items-center justify-between text-xs font-sans font-semibold text-muted-foreground px-1">
-                <span>Group Progress: {completedWordIds.size} of {words.length} matched</span>
-                <span>Item {targetIndex + 1} of {words.length}</span>
-              </div>
+              <span>Progress: {completedWordIds.size} of {words.length} matched</span>
             </div>
           )}
         </div>
       }
     >
-      <div className="flex flex-col gap-5 w-full">
-        {/* Decluttered Prompter Bar */}
-        <div className="bg-slate-900 text-white rounded-3xl p-5 flex items-center justify-between shadow-wp-md border border-slate-800">
-          <div className="flex items-center gap-4">
-            <button
-              type="button"
-              onClick={replayAudio}
-              aria-label="Replay target audio prompt"
-              className="size-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md hover:scale-105 transition-transform shrink-0"
-            >
-              <Volume2 className={`size-6 ${isPlaying ? "animate-pulse text-wp-amber" : ""}`} />
-            </button>
-            <div>
-              <h2 className="font-sans font-black text-xl text-white whitespace-nowrap truncate leading-tight">Listen &amp; Match Picture</h2>
-              <p className="font-sans text-white/70 text-xs mt-0.5">
-                Tap the matching image card or press 1–5 on keyboard.
-              </p>
+      <div className="flex flex-col gap-3.5 sm:gap-4 w-full">
+        {/* Sleek, Compact Target Audio Play Bar */}
+        <div className="bg-slate-950 text-white rounded-2xl p-3 sm:p-3.5 flex items-center justify-between shadow-wp-sm border border-slate-800 shrink-0">
+          <button
+            type="button"
+            onClick={replayAudio}
+            aria-label="Replay target audio prompt"
+            className="flex items-center gap-3 hover:opacity-90 transition-opacity text-left"
+          >
+            <div className="size-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md shrink-0">
+              <Volume2 className={`size-5 ${isPlaying ? "animate-pulse text-wp-amber" : ""}`} />
             </div>
-          </div>
+            <div>
+              <h2 className="font-sans font-black text-sm sm:text-base text-white leading-tight flex items-center gap-2">
+                <span>Listen &amp; Match Picture</span>
+                {isPlaying && <span className="text-[10px] bg-amber-500/20 text-wp-amber px-2 py-0.5 rounded-full border border-amber-500/30">Playing sound…</span>}
+              </h2>
+              <p className="font-sans text-white/60 text-xs">Tap image card matching the spoken word.</p>
+            </div>
+          </button>
 
           <button
             type="button"
             onClick={replayAudio}
-            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/10 text-white/90 hover:text-white text-xs font-sans font-bold border border-white/15 backdrop-blur-md transition-colors shrink-0"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/10 text-white/90 hover:text-white text-xs font-sans font-bold border border-white/15 backdrop-blur-md transition-colors shrink-0"
           >
             <RefreshCw className="size-3.5" />
-            <span>Replay</span>
+            <span className="hidden sm:inline">Replay</span>
           </button>
         </div>
 
-        {/* Card Image Selection Grid (Zero Layout Shift Content Area) */}
+        {/* Card Image Selection Grid (Decluttered & Fluid Sizing) */}
         <div
           role="radiogroup"
           aria-label="Choose matching picture for audio prompt"
-          className="grid grid-cols-2 sm:grid-cols-3 gap-4 w-full"
+          className="grid grid-cols-2 sm:grid-cols-3 gap-3.5 w-full"
         >
           {displayCards.map((card, idx) => {
             const isSelected = selectedId === card.id;
@@ -223,28 +226,20 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 aria-checked={isSelected}
                 disabled={feedback === "correct"}
                 onClick={() => handleCardClick(card)}
-                className={`group relative rounded-3xl overflow-hidden p-2 flex flex-col items-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 min-h-[200px] shadow-wp-xs ${cardStateStyle}`}
+                className={`group relative rounded-2xl overflow-hidden p-1.5 flex flex-col items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-xs ${cardStateStyle}`}
               >
-                {/* Single Clean Physical Key Badge */}
-                <span className="absolute top-3 left-3 z-10 bg-slate-900/90 text-white text-xs font-mono font-bold px-2.5 py-1 rounded-xl border border-white/20 shadow-md backdrop-blur-md pointer-events-none">
+                {/* Physical Key Badge */}
+                <span className="absolute top-2.5 left-2.5 z-10 bg-slate-900/90 text-white text-[11px] font-mono font-bold px-2 py-0.5 rounded-lg border border-white/20 shadow-md backdrop-blur-md pointer-events-none">
                   Key [{idx + 1}]
                 </span>
 
-                <div className="h-40 sm:h-48 w-full relative rounded-2xl overflow-hidden bg-muted border border-border/60 shrink-0">
-                  <WordImage word={card} width="500" height="400" className="size-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                <div className="h-28 sm:h-36 md:h-40 max-h-[22vh] w-full relative rounded-xl overflow-hidden bg-muted border border-border/60 shrink-0">
+                  <WordImage word={card} width="400" height="300" className="size-full object-cover group-hover:scale-105 transition-transform duration-300" />
                   {isTargetCompleted && (
-                    <div className="absolute top-3 right-3 bg-wp-green text-white p-1.5 rounded-full shadow-md">
-                      <CheckCircle2 className="size-4" />
+                    <div className="absolute top-2 right-2 bg-wp-green text-white p-1 rounded-full shadow-md">
+                      <CheckCircle2 className="size-3.5" />
                     </div>
                   )}
-                </div>
-
-                <div className="w-full px-2 py-1 flex items-center justify-between">
-                  <p className="font-sans font-bold text-foreground text-sm truncate">
-                    {isTargetCompleted || (isSelected && feedback === "correct")
-                      ? card.label
-                      : `Option ${idx + 1}`}
-                  </p>
                 </div>
               </button>
             );
