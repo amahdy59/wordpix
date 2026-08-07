@@ -7,7 +7,16 @@ import { AudioButton } from "../shared/AudioButton";
 import { WordImage } from "../shared/WordImage";
 import type { VocabItem } from "../data/lessons";
 
-const imgDefaultScene = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=85";
+/**
+ * Hotspot coordinates in lessons.ts are percentages of the scene image. The
+ * width AND height are pinned here so the delivered image has a known, fixed
+ * aspect ratio — the overlay box below depends on it.
+ */
+const SCENE_IMAGE_WIDTH = 1600;
+const SCENE_IMAGE_HEIGHT = 1000;
+const SCENE_ASPECT_RATIO = `${SCENE_IMAGE_WIDTH} / ${SCENE_IMAGE_HEIGHT}`;
+
+const imgDefaultScene = `https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=${SCENE_IMAGE_WIDTH}&h=${SCENE_IMAGE_HEIGHT}&q=85`;
 
 interface Props {
   activeWord: VocabItem;
@@ -159,53 +168,75 @@ export const SceneCanvas = memo(function SceneCanvas({
               className="size-full object-contain rounded-2xl shadow-lg motion-safe:transition-all motion-safe:duration-300"
             />
           ) : (
-            <img
-              alt="Interactive bedroom scene"
-              className="size-full object-contain rounded-2xl shadow-lg motion-safe:transition-all motion-safe:duration-300"
-              src={imgDefaultScene}
-            />
-          )}
+            /*
+              Aspect-locked box.
 
-          {/* Hotspots on Scene View */}
-          {!isWordView && (
-            <div role="group" aria-label="Scene vocabulary hotspots" className="absolute inset-0 z-10 pointer-events-auto">
-              {hotspotWords.map((word) => {
-                const isActive = word.id === activeId;
-                return (
-                  <button
-                    key={word.id}
-                    type="button"
-                    onClick={() => handleSelectWordLocal(word.id)}
-                    aria-pressed={isActive}
-                    aria-label={
-                      isActive
-                        ? `Currently selected: ${word.label}`
-                        : `Explore: ${word.label}`
-                    }
-                    className={[
-                      "absolute transform -translate-x-1/2 -translate-y-1/2",
-                      "min-h-[44px] min-w-[44px] flex items-center justify-center",
-                      "rounded-full focus-visible:outline focus-visible:outline-[3px]",
-                      "focus-visible:outline-white focus-visible:outline-offset-2",
-                      "motion-safe:transition-all",
-                    ].join(" ")}
-                    style={{ left: word.hotspot!.x, top: word.hotspot!.y }}
-                  >
-                    {isActive ? (
-                      <div className="bg-wp-amber/95 backdrop-blur-md rounded-full px-3 py-1.5 flex items-center gap-1.5 shadow-wp-md border border-white/40 motion-safe:animate-bounce">
-                        <Volume2 className="size-3.5 text-foreground shrink-0" aria-hidden />
-                        <span className="font-sans font-bold text-foreground text-xs whitespace-nowrap">
-                          {word.label}
-                        </span>
-                      </div>
-                    ) : (
-                      <div className="size-8 bg-wp-card/90 backdrop-blur-md rounded-full border-2 border-primary shadow-wp-xs flex items-center justify-center motion-safe:animate-pulse hover:scale-110">
-                        <div className="size-2.5 bg-primary rounded-full" aria-hidden />
-                      </div>
-                    )}
-                  </button>
-                );
-              })}
+              Hotspot coordinates are percentages of the scene photo, but they
+              used to be applied to an `absolute inset-0` overlay on this flex
+              container while the image itself was object-contain. object-contain
+              letterboxes, so the image box and the container box only coincided
+              when the viewport happened to match the photo's aspect ratio — at
+              every other size the pins slid off the objects they label.
+
+              Giving the wrapper the photo's exact ratio means the image fills it
+              precisely, so `inset-0` on the overlay is the image.
+            */
+            <div
+              className="relative h-full max-h-full max-w-full"
+              style={{ aspectRatio: SCENE_ASPECT_RATIO }}
+            >
+              <img
+                alt="Interactive bedroom scene"
+                width={SCENE_IMAGE_WIDTH}
+                height={SCENE_IMAGE_HEIGHT}
+                className="size-full object-cover rounded-2xl shadow-lg motion-safe:transition-all motion-safe:duration-300"
+                src={imgDefaultScene}
+              />
+
+              <div
+                role="group"
+                aria-label="Scene vocabulary hotspots"
+                className="absolute inset-0 z-10 pointer-events-auto"
+              >
+                {hotspotWords.map((word) => {
+                  const isActive = word.id === activeId;
+                  const hotspot = word.hotspot;
+                  if (!hotspot) return null;
+
+                  return (
+                    <button
+                      key={word.id}
+                      type="button"
+                      onClick={() => handleSelectWordLocal(word.id)}
+                      aria-pressed={isActive}
+                      aria-label={
+                        isActive ? `Currently selected: ${word.label}` : `Explore: ${word.label}`
+                      }
+                      className={[
+                        "absolute transform -translate-x-1/2 -translate-y-1/2",
+                        "min-h-[44px] min-w-[44px] flex items-center justify-center",
+                        "rounded-full focus-visible:outline focus-visible:outline-[3px]",
+                        "focus-visible:outline-white focus-visible:outline-offset-2",
+                        "motion-safe:transition-all",
+                      ].join(" ")}
+                      style={{ left: hotspot.x, top: hotspot.y }}
+                    >
+                      {isActive ? (
+                        <div className="bg-wp-amber/95 backdrop-blur-md rounded-full px-3 py-1.5 flex items-center gap-1.5 shadow-wp-md border border-white/40 motion-safe:animate-bounce">
+                          <Volume2 className="size-3.5 text-wp-text-on-amber shrink-0" aria-hidden />
+                          <span className="font-sans font-bold text-wp-text-on-amber text-xs whitespace-nowrap">
+                            {word.label}
+                          </span>
+                        </div>
+                      ) : (
+                        <div className="size-8 bg-wp-card/90 backdrop-blur-md rounded-full border-2 border-primary shadow-wp-xs flex items-center justify-center motion-safe:animate-pulse hover:scale-110">
+                          <div className="size-2.5 bg-primary rounded-full" aria-hidden />
+                        </div>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           )}
         </div>
@@ -242,17 +273,25 @@ export const SceneCanvas = memo(function SceneCanvas({
               )}
             </div>
 
+            {/*
+              Was `hidden sm:block md:hidden` — visible only between 640px and
+              767px. Below 640px and at 768px+ it was gone, and the mobile
+              bottom card (md:hidden) already covers everything under 768px. So
+              it duplicated that card in a 128px window and left desktop with no
+              way to start practice at all. It is now the desktop control, and
+              the bottom card is the mobile one, with no overlap and no gap.
+            */}
             <button
               type="button"
               onClick={onLearnWord}
-              className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl px-5 py-3 font-sans font-bold text-wp-text-on-blue text-sm shrink-0 min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all hidden sm:block md:hidden"
+              className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl px-5 py-3 font-sans font-bold text-wp-text-on-blue text-sm shrink-0 min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all hidden md:block"
             >
-              Start Group Practice →
+              Start Group Practice
             </button>
           </div>
         </div>
 
-        <div className="absolute top-3 right-3 z-30 md:hidden">
+        <div className="absolute top-3 end-3 z-30 md:hidden">
           <CloseButton onClick={onClose} aria-label="Close lesson and return to lesson overview" />
         </div>
       </div>

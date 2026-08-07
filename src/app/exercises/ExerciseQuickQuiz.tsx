@@ -128,12 +128,18 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
 
       <div className="flex flex-col gap-3.5 sm:gap-4 w-full">
         {/* Single-Line Question Heading */}
-        <div className="bg-wp-card border border-border rounded-2xl p-3.5 sm:p-4 text-center shadow-wp-xs shrink-0 flex items-center justify-between gap-3">
+        {/*
+          The question itself must never be clipped. It previously carried
+          `truncate` while wedged between two shrink-0 siblings, so on narrow
+          screens the one string the learner has to read got cut off. The row
+          now wraps instead.
+        */}
+        <div className="bg-wp-card border border-border rounded-2xl p-3.5 sm:p-4 shadow-wp-xs shrink-0 flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
           <div className="flex items-center gap-2 text-primary font-bold text-xs shrink-0">
-            <HelpCircle className="size-4 text-wp-blue" />
+            <HelpCircle className="size-4 text-wp-blue" aria-hidden />
             <span>Quiz Q{questionIndex + 1}</span>
           </div>
-          <h2 className="font-sans font-black text-foreground text-base sm:text-lg md:text-xl truncate text-center flex-1">
+          <h2 className="font-sans font-black text-foreground text-base sm:text-lg md:text-xl text-center flex-1 min-w-[12rem] text-balance">
             Which picture shows &ldquo;<span className="text-primary">{currentTargetWord.label}</span>&rdquo;?
           </h2>
           <span className="text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full shrink-0">
