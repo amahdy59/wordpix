@@ -25,6 +25,50 @@ export function calculateDaysBetween(dateStr1: string, dateStr2: string): number
   return Math.round(diffTime / (1000 * 60 * 60 * 24));
 }
 
+export interface WeekDayActivity {
+  /** Single-letter weekday initial, e.g. "M" */
+  initial: string;
+  /** Full weekday name for screen readers, e.g. "Monday" */
+  name: string;
+  /** YYYY-MM-DD local date */
+  date: string;
+  /** True when at least one session was completed on this date */
+  done: boolean;
+  isToday: boolean;
+}
+
+const WEEKDAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+/**
+ * Builds the trailing 7-day activity strip ending today, from real session
+ * completion timestamps. Never reports a day as done without a session on it.
+ */
+export function getWeekActivity(
+  completedAtIsoDates: string[],
+  today: Date = new Date()
+): WeekDayActivity[] {
+  const activeDates = new Set<string>();
+  completedAtIsoDates.forEach((iso) => {
+    const parsed = new Date(iso);
+    if (!Number.isNaN(parsed.getTime())) activeDates.add(getLocalDateString(parsed));
+  });
+
+  const todayStr = getLocalDateString(today);
+
+  return Array.from({ length: 7 }, (_, offset) => {
+    const d = new Date(today.getFullYear(), today.getMonth(), today.getDate() - (6 - offset));
+    const dateStr = getLocalDateString(d);
+    const name = WEEKDAY_NAMES[d.getDay()];
+    return {
+      initial: name.charAt(0),
+      name,
+      date: dateStr,
+      done: activeDates.has(dateStr),
+      isToday: dateStr === todayStr,
+    };
+  });
+}
+
 /**
  * Canonical streak updater using local calendar date.
  */

@@ -2,7 +2,8 @@ import { memo, useMemo } from "react";
 import { Flame, ArrowRight, RotateCcw, WifiOff, Layers, Headphones, BookOpen, Mic, PenTool } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { calculateDaysBetween, getLocalDateString } from "../../features/gamification/streak";
+import { BEDROOM_GROUPS } from "../data/lessons";
+import { calculateDaysBetween, getLocalDateString, getWeekActivity } from "../../features/gamification/streak";
 import { isOfflineAvailable } from "../../pwa";
 
 const imgAvatar = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
@@ -11,20 +12,20 @@ interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
-const WEEK_DAYS = [
-  { day: "M", done: true },
-  { day: "T", done: true },
-  { day: "W", done: true },
-  { day: "T", done: true },
-  { day: "F", done: true },
-  { day: "S", done: true },
-  { day: "S", done: false },
-];
+/** Rough pacing estimate used for the session-length hint on the Today card. */
+const SECONDS_PER_WORD = 48;
+
+function getGreeting(hour: number): string {
+  if (hour < 12) return "Good morning";
+  if (hour < 18) return "Good afternoon";
+  return "Good evening";
+}
 
 export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
   const { progress } = useProgress();
 
   const todayStr = getLocalDateString(new Date());
+  const greeting = getGreeting(new Date().getHours());
 
   const memoryValues = useMemo(() => Object.values(progress.wordMemory), [progress.wordMemory]);
   const strongCount = useMemo(() => memoryValues.filter((w) => w.mastery === "strong").length, [memoryValues]);
@@ -37,6 +38,19 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
       return calculateDaysBetween(todayStr, nextDateStr) <= 0;
     }).length;
   }, [memoryValues, todayStr]);
+
+  const weekActivity = useMemo(
+    () => getWeekActivity(progress.sessionHistory.map((s) => s.completedAt)),
+    [progress.sessionHistory]
+  );
+
+  // The Today card resumes the first group; report its real coverage, not a constant.
+  const activeGroup = BEDROOM_GROUPS[0];
+  const groupWordsSeen = useMemo(
+    () => activeGroup.wordIds.filter((id) => progress.wordMemory[id]).length,
+    [activeGroup.wordIds, progress.wordMemory]
+  );
+  const estimatedMinutes = Math.max(1, Math.round((activeGroup.wordIds.length * SECONDS_PER_WORD) / 60));
 
   const isOfflineReady = isOfflineAvailable("bedroom");
 
@@ -55,7 +69,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           </div>
           <div>
             <h1 className="font-sans font-black text-foreground text-xl md:text-2xl leading-tight">
-              Good morning, Learner!
+              {greeting}, Learner!
             </h1>
             <p className="font-sans font-medium text-muted-foreground text-xs md:text-sm mt-0.5">
               Level {progress.englishLevel} · Goal: {progress.dailyGoalMinutes} min/day
@@ -114,9 +128,11 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
             <div className="bg-wp-card rounded-3xl border border-primary/30 p-6 flex flex-col gap-4 shadow-wp-xs hover:border-primary/50 transition-all">
               <div className="flex items-center justify-between">
                 <span className="font-sans font-semibold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full">
-                  Essential Furniture · ~4 min
+                  {activeGroup.name} · ~{estimatedMinutes} min
                 </span>
-                <span className="font-sans text-xs font-bold text-muted-foreground">4 of 5 words</span>
+                <span className="font-sans text-xs font-bold text-muted-foreground">
+                  {groupWordsSeen} of {activeGroup.wordIds.length} words
+                </span>
               </div>
 
               <div>
@@ -208,16 +224,26 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                 <span className="font-sans font-bold text-xs text-wp-amber">{progress.streak} Day Streak</span>
               </div>
 
-              <div className="grid grid-cols-7 gap-2 text-center">
-                {WEEK_DAYS.map((d, i) => (
-                  <div key={i} className="flex flex-col items-center gap-1.5">
-                    <span className="font-sans text-[11px] text-muted-foreground font-medium">{d.day}</span>
-                    <div className={`size-8 rounded-xl flex items-center justify-center font-sans text-xs font-bold ${d.done ? "bg-wp-amber text-white shadow-sm" : "bg-muted text-muted-foreground"}`}>
-                      {d.done ? "✓" : ""}
+              <ul className="grid grid-cols-7 gap-2 text-center list-none">
+                {weekActivity.map((d) => (
+                  <li key={d.date} className="flex flex-col items-center gap-1.5">
+                    <span className="font-sans text-[11px] text-muted-foreground font-medium" aria-hidden>
+                      {d.initial}
+                    </span>
+                    <div
+                      className={`size-8 rounded-xl flex items-center justify-center font-sans text-xs font-bold ${
+                        d.done ? "bg-wp-amber text-white shadow-sm" : "bg-muted text-muted-foreground"
+                      } ${d.isToday ? "ring-2 ring-primary ring-offset-2 ring-offset-wp-card" : ""}`}
+                    >
+                      <span className="sr-only">
+                        {d.name}
+                        {d.isToday ? " (today)" : ""}: {d.done ? "practiced" : "no session"}
+                      </span>
+                      <span aria-hidden>{d.done ? "✓" : ""}</span>
                     </div>
-                  </div>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </section>
         </div>

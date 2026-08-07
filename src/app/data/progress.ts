@@ -1,4 +1,4 @@
-import { useLearner, type LearnerGoal, type LearnerStateSchema } from "../context/LearnerContext";
+import { useLearner, type LearnerGoal, type SessionRecord } from "../context/LearnerContext";
 import type { WordLearningState, MasteryCategory } from "../../features/gamification/sm2";
 
 export type { WordLearningState, MasteryCategory, LearnerGoal };
@@ -14,6 +14,7 @@ export interface LearnerProgress {
   wordMemory: Record<string, WordLearningState>;
   wordMastery: Record<string, number>; // Legacy numeric mapping: 0, 1, 2, 3 for UI components
   sessionsCompleted: number;
+  sessionHistory: SessionRecord[];
 }
 
 export function useProgress() {
@@ -39,6 +40,7 @@ export function useProgress() {
     wordMemory: state.wordMemory,
     wordMastery: legacyMasteryMap,
     sessionsCompleted: state.learnerProgress.sessionsCompleted,
+    sessionHistory: state.sessionHistory,
   };
 
   return {
