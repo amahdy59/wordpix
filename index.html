@@ -15,6 +15,27 @@
     <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)" />
 
     <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
+
+    <!--
+      Applies the stored theme before first paint. Without this the class is
+      only added once React mounts, so every dark-mode user gets a white flash
+      on each load. Must stay inline and blocking — a deferred module runs too
+      late to prevent it.
+    -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("wordpix:theme");
+          var mode = stored === "light" || stored === "dark" || stored === "system" ? stored : "system";
+          var isDark =
+            mode === "dark" ||
+            (mode === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          document.documentElement.classList.toggle("dark", isDark);
+        } catch (e) {
+          /* Blocked storage: fall through to the light default. */
+        }
+      })();
+    </script>
   </head>
 
   <body>

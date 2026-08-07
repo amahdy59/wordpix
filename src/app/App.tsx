@@ -6,6 +6,7 @@ import { LearnerProvider } from "./context/LearnerContext";
 import { I18nProvider } from "./context/I18nContext";
 import { useHashRouter, hashToScreen } from "./router/useHashRouter";
 import { registerServiceWorker } from "../pwa";
+import { startSystemThemeSync } from "./shared/themeStore";
 
 // Synchronous core onboarding screens
 import { SplashWelcome } from "./onboarding/SplashWelcome";
@@ -231,6 +232,9 @@ function AppInner() {
   useEffect(() => {
     registerServiceWorker();
   }, []);
+
+  // Keeps "system" theme honest when the OS switches while the app is open.
+  useEffect(() => startSystemThemeSync(), []);
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));

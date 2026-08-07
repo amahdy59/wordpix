@@ -13,7 +13,7 @@ interface Props {
 
 export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: Props) {
   const { progress } = useProgress();
-  const { theme, toggleTheme } = useTheme();
+  const { theme, resolvedTheme, toggleTheme } = useTheme();
   const [showSettingsModal, setShowSettingsModal] = useState(false);
 
   const memoryValues = useMemo(() => Object.values(progress.wordMemory), [progress.wordMemory]);
@@ -84,11 +84,17 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
           <button
             type="button"
             onClick={toggleTheme}
-            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
-            className="p-3 rounded-2xl bg-wp-card border border-border text-foreground hover:bg-muted transition-colors shadow-wp-xs flex items-center gap-2 font-sans font-bold text-xs"
+            aria-label={`Theme: ${theme}. Activate to change theme.`}
+            className="p-3 min-h-[44px] rounded-2xl bg-wp-card border border-border text-foreground hover:bg-muted transition-colors shadow-wp-xs flex items-center gap-2 font-sans font-bold text-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            {theme === "dark" ? <Sun className="size-4 text-wp-amber" /> : <Moon className="size-4 text-wp-blue" />}
-            <span>{theme === "dark" ? "Light Mode" : "Dark Mode"}</span>
+            {/* resolvedTheme, not theme: in "system" mode `theme === "dark"` is
+                false even when the OS is dark, which mislabelled the control. */}
+            {resolvedTheme === "dark" ? (
+              <Sun className="size-4 text-wp-amber" aria-hidden />
+            ) : (
+              <Moon className="size-4 text-wp-blue" aria-hidden />
+            )}
+            <span className="capitalize">{theme}</span>
           </button>
           <button
             type="button"

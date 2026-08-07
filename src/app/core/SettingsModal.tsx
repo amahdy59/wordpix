@@ -10,7 +10,7 @@ interface Props {
 
 export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Props) {
   const { state, setPreferences, resetToZero } = useLearner();
-  const { theme, toggleTheme } = useTheme();
+  const { theme, resolvedTheme, toggleTheme } = useTheme();
 
   const [highContrast, setHighContrast] = useState(false);
   const [textSize, setTextSize] = useState<"standard" | "large" | "xlarge">("standard");
@@ -70,15 +70,22 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">Theme Mode</span>
-                  <p className="font-sans text-xs text-muted-foreground">Switch between sleek Dark Mode and high-legibility Light Mode.</p>
+                  <p className="font-sans text-xs text-muted-foreground">Cycle between Dark, Light, and following your system setting.</p>
                 </div>
                 <button
                   type="button"
                   onClick={toggleTheme}
-                  className="px-4 py-2.5 rounded-xl bg-wp-card border border-border hover:border-primary font-sans font-bold text-xs text-foreground flex items-center gap-2 shadow-xs transition-all shrink-0"
+                  aria-label={`Theme: ${theme}. Activate to change theme.`}
+                  className="px-4 py-2.5 min-h-[44px] rounded-xl bg-wp-card border border-border hover:border-primary font-sans font-bold text-xs text-foreground flex items-center gap-2 shadow-xs transition-all shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
-                  {theme === "dark" ? <Sun className="size-4 text-wp-amber" /> : <Moon className="size-4 text-wp-blue" />}
-                  <span>{theme === "dark" ? "Dark Mode" : "Light Mode"}</span>
+                  {/* resolvedTheme, not theme: "system" is neither "dark" nor
+                      "light", so the old ternary always claimed Light Mode. */}
+                  {resolvedTheme === "dark" ? (
+                    <Sun className="size-4 text-wp-amber" aria-hidden />
+                  ) : (
+                    <Moon className="size-4 text-wp-blue" aria-hidden />
+                  )}
+                  <span className="capitalize">{theme}</span>
                 </button>
               </div>
 
