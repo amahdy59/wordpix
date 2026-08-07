@@ -84,12 +84,12 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       dispatch={dispatch}
       footer={
         <div className="w-full flex flex-col gap-2">
-          {/* Pinned Footer Feedback Banner (Option A: Zero Layout Shift) */}
+          {/* Pinned Footer Feedback Banner */}
           {checked ? (
             <div
               role="status"
               aria-live="polite"
-              className={`w-full rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-md transition-all ${
+              className={`w-full rounded-2xl p-3.5 sm:p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-md transition-all ${
                 isCorrect
                   ? "bg-wp-green text-white border border-wp-green"
                   : "bg-wp-rose text-white border border-wp-rose"
@@ -97,12 +97,12 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
             >
               <div className="flex items-center gap-3">
                 {isCorrect ? (
-                  <CheckCircle2 className="size-7 shrink-0 text-white animate-in zoom-in" />
+                  <CheckCircle2 className="size-6 shrink-0 text-white animate-in zoom-in" />
                 ) : (
-                  <XCircle className="size-7 shrink-0 text-white animate-in zoom-in" />
+                  <XCircle className="size-6 shrink-0 text-white animate-in zoom-in" />
                 )}
                 <div>
-                  <h3 className="font-sans font-black text-base leading-tight">
+                  <h3 className="font-sans font-black text-sm sm:text-base leading-tight">
                     {isCorrect ? "✓ Sentence Completed!" : "Check Sentence Context"}
                   </h3>
                   <p className="font-sans text-xs text-white/95 mt-0.5">
@@ -116,7 +116,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
               <button
                 type="button"
                 onClick={handleAction}
-                className={`w-full sm:w-auto px-6 py-3 rounded-xl font-sans font-bold text-sm flex items-center justify-center gap-2 shrink-0 shadow-sm transition-all ${
+                className={`w-full sm:w-auto px-5 py-2.5 rounded-xl font-sans font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shrink-0 shadow-sm transition-all ${
                   isCorrect
                     ? "bg-white text-wp-green hover:bg-white/90"
                     : "bg-white text-wp-rose hover:bg-white/90"
@@ -133,7 +133,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
               </button>
             </div>
           ) : (
-            <div className="flex flex-col gap-1.5">
+            <div className="flex flex-col gap-1">
               {!selectedId && (
                 <p className="text-[11px] font-sans font-semibold text-center text-amber-600 dark:text-amber-400">
                   Select a word below to complete the sentence
@@ -142,7 +142,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
               <button
                 type="button"
                 onClick={handleAction}
-                className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] transition-all shadow-wp-xs ${
+                className={`rounded-xl py-3.5 w-full font-sans font-bold text-white text-sm sm:text-base min-h-[48px] transition-all shadow-wp-xs ${
                   shaking ? "animate-wp-shake" : ""
                 } ${selectedId ? "bg-wp-blue opacity-100" : "bg-wp-blue opacity-50"}`}
               >
@@ -153,7 +153,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         </div>
       }
     >
-      <div className="flex flex-col gap-5 w-full">
+      <div className="flex flex-col gap-3.5 sm:gap-4 w-full">
         {/* Question Counter Header */}
         <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
           <span>Sentence {questionIndex + 1} of {words.length}</span>
@@ -162,24 +162,24 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
           </span>
         </div>
 
-        {/* Large Prominent Hero Target Image Display */}
-        <div className="h-56 sm:h-64 w-full relative rounded-3xl overflow-hidden border border-border shadow-wp-md bg-muted shrink-0">
-          <WordImage word={currentTargetWord} width="800" height="600" className="size-full object-cover" />
-          <div className="absolute top-3.5 left-3.5 bg-black/65 backdrop-blur-md text-white font-sans font-bold text-xs px-3.5 py-1.5 rounded-xl border border-white/20 shadow-md flex items-center gap-2">
-            <Sparkles className="size-4 text-wp-amber animate-pulse" />
+        {/* Fluid Hero Target Image Display */}
+        <div className="h-40 sm:h-48 md:h-52 max-h-[28vh] w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-md bg-muted shrink-0">
+          <WordImage word={currentTargetWord} width="800" height="500" className="size-full object-cover" />
+          <div className="absolute top-3 left-3 bg-black/65 backdrop-blur-md text-white font-sans font-bold text-xs px-3 py-1 rounded-xl border border-white/20 shadow-md flex items-center gap-1.5">
+            <Sparkles className="size-3.5 text-wp-amber animate-pulse" />
             <span>Target Visual: {currentTargetWord.label}</span>
           </div>
         </div>
 
         {/* Centered Rich Sentence Display Box */}
-        <div className="bg-wp-card rounded-2xl border border-border p-6 text-center shadow-wp-xs flex flex-col items-center justify-center gap-2">
-          <span className="font-sans font-bold text-[11px] text-primary uppercase tracking-wider">
+        <div className="bg-wp-card rounded-2xl border border-border p-4 text-center shadow-wp-xs flex flex-col items-center justify-center gap-1">
+          <span className="font-sans font-bold text-[10px] text-primary uppercase tracking-wider">
             Sentence Context Clue
           </span>
-          <p className="font-sans font-bold text-foreground text-xl md:text-2xl leading-relaxed flex items-center justify-center flex-wrap gap-2 py-1">
+          <p className="font-sans font-bold text-foreground text-lg sm:text-xl leading-relaxed flex items-center justify-center flex-wrap gap-2 py-0.5">
             <span>{richSentence.clozeBefore}</span>
             <span
-              className={`inline-flex items-center justify-center min-w-[140px] h-12 px-4 rounded-xl border-2 transition-all font-sans font-black text-xl shadow-xs ${
+              className={`inline-flex items-center justify-center min-w-[120px] h-10 px-3 rounded-xl border-2 transition-all font-sans font-black text-lg shadow-xs ${
                 selectedWord
                   ? checked
                     ? isCorrect
@@ -196,7 +196,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         </div>
 
         {/* Word Options Grid (2x2 Grid) */}
-        <div role="radiogroup" aria-label="Word choices" className="grid grid-cols-2 gap-3.5 w-full">
+        <div role="radiogroup" aria-label="Word choices" className="grid grid-cols-2 gap-3 w-full">
           {options.map((option, idx) => {
             const isSelected = selectedId === option.id;
             return (
@@ -207,14 +207,14 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
                 aria-checked={isSelected}
                 disabled={checked}
                 onClick={() => handleSelect(option.id)}
-                className={`rounded-2xl p-4 font-sans font-bold text-base border-2 min-h-[56px] transition-colors duration-200 flex items-center justify-between shadow-wp-xs ${
+                className={`rounded-xl p-3 sm:p-3.5 font-sans font-bold text-sm sm:text-base border-2 min-h-[48px] transition-colors duration-200 flex items-center justify-between shadow-wp-xs ${
                   isSelected
                     ? "bg-primary border-primary text-primary-foreground shadow-md"
                     : "bg-wp-card border-border text-foreground hover:border-primary/50 hover:shadow-md"
                 } focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary`}
               >
                 <span className="capitalize">{option.label.toLowerCase()}</span>
-                <span className={`text-xs px-2 py-0.5 rounded-md font-bold ${isSelected ? "bg-white/20 text-white" : "bg-muted text-muted-foreground"}`}>
+                <span className={`text-[11px] px-2 py-0.5 rounded-md font-bold ${isSelected ? "bg-white/20 text-white" : "bg-muted text-muted-foreground"}`}>
                   [{idx + 1}]
                 </span>
               </button>
