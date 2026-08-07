@@ -27,12 +27,16 @@ export const LessonHeader = memo(function LessonHeader({
 
   return (
     <div className="content-stretch flex flex-col gap-[12px] px-5 py-3 md:px-8 md:py-4 relative shrink-0 w-full">
-      <div className="content-stretch flex items-center justify-between relative shrink-0 w-full">
-        <BackButton onClick={onBack} />
-        <h1 className="font-sans font-semibold leading-[24px] not-italic text-foreground text-[16px] whitespace-nowrap">
+      <div className="content-stretch flex items-center justify-between relative shrink-0 w-full gap-3">
+        <div className="shrink-0">
+          <BackButton onClick={onBack} />
+        </div>
+        <h1 className="font-sans font-semibold leading-[24px] not-italic text-foreground text-[16px] truncate text-center flex-1 min-w-0 px-2">
           {title}
         </h1>
-        <CloseButton onClick={onClose} />
+        <div className="shrink-0">
+          <CloseButton onClick={onClose} />
+        </div>
       </div>
 
       {/* Progress bar */}

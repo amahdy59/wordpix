@@ -42,7 +42,7 @@ export const SceneCanvas = memo(function SceneCanvas({
   };
 
   return (
-    <section className="relative flex-1 md:flex-[3] min-w-0 min-h-0 flex flex-col bg-background h-full overflow-hidden" aria-label="Vocabulary scene">
+    <section className="relative flex-1 md:flex-[3] min-w-0 min-h-0 flex flex-col bg-background h-full overflow-hidden max-w-[1100px]" aria-label="Vocabulary scene">
       {/* Mobile status bar */}
       <div className="md:hidden shrink-0">
         <StatusBar />

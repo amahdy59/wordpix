@@ -1,9 +1,7 @@
 import { memo, useMemo, useState } from "react";
 import type { Action } from "../types";
 import type { VocabItem } from "../data/lessons";
-import { LessonHeader } from "../shared/LessonHeader";
-import { HomeIndicator } from "../shared/HomeIndicator";
-import { WordImage } from "../shared/WordImage";
+import { ExerciseShell } from "../shared/ExerciseShell";
 import { articleFor, getWordOptions } from "./exerciseContent";
 
 interface Props {
@@ -22,10 +20,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({ step, wor
   const handleAction = () => {
     if (checked) {
       if (isCorrect) dispatch({ type: "LESSON_NEXT" });
-      else {
-        setSelectedId(null);
-        setChecked(false);
-      }
+      else { setSelectedId(null); setChecked(false); }
       return;
     }
     if (!selectedId) return;
@@ -34,31 +29,70 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({ step, wor
   };
 
   return (
-    <div className="bg-background flex flex-col justify-between min-h-full relative">
-      <LessonHeader title="Complete the Sentence" step={step} onBack={() => dispatch({ type: "LESSON_PREVIOUS" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
-      <main className="flex-1 flex flex-col items-center w-full px-5 gap-5 pt-4 max-w-md mx-auto">
-        <h2 className="font-sans font-bold text-foreground text-xl text-center">Complete the sentence</h2>
-        <div className="h-40 relative rounded-2xl w-full overflow-hidden border border-border bg-muted">
-          <WordImage word={word} loading="eager" width="800" height="500" className="absolute inset-0 object-cover size-full" />
+    <ExerciseShell
+      step={step}
+      title="Complete the Sentence"
+      word={word}
+      dispatch={dispatch}
+      footer={
+        <button
+          type="button"
+          onClick={handleAction}
+          disabled={!selectedId}
+          className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] disabled:opacity-40 transition-colors ${
+            checked ? isCorrect ? "bg-wp-green" : "bg-wp-rose" : "bg-wp-blue"
+          }`}
+        >
+          {checked ? isCorrect ? "Continue" : "Try Again" : "Check Answer"}
+        </button>
+      }
+    >
+      <div className="flex flex-col gap-5 w-full max-w-lg">
+        <h2 className="font-sans font-bold text-foreground text-xl">Complete the sentence</h2>
+
+        {/* Sentence display */}
+        <div className="bg-wp-card rounded-2xl border border-border p-5 text-center">
+          <p className="font-sans font-bold text-foreground text-xl leading-relaxed">
+            This is {articleFor(word.label)}{" "}
+            <span className="inline-block min-w-28 border-b-2 border-primary text-primary px-1">
+              {selectedWord?.label.toLowerCase() ?? "_______"}
+            </span>
+            .
+          </p>
         </div>
-        <p className="font-sans font-bold text-foreground text-xl text-center">
-          This is {articleFor(word.label)} <span className="inline-block min-w-24 border-b-2 border-primary text-primary">{selectedWord?.label.toLowerCase() ?? "_______"}</span>.
-        </p>
-        <div role="group" aria-label="Word choices" className="flex flex-wrap gap-2.5 justify-center">
+
+        {/* Word options */}
+        <div role="group" aria-label="Word choices" className="flex flex-wrap gap-3 justify-center">
           {options.map((option) => (
-            <button key={option.id} type="button" aria-pressed={selectedId === option.id} disabled={checked} onClick={() => setSelectedId(option.id)} className={`rounded-xl px-4 py-2.5 font-sans font-bold text-sm border min-h-[44px] ${selectedId === option.id ? "bg-primary border-primary text-primary-foreground" : "bg-wp-card border-border text-foreground"}`}>
+            <button
+              key={option.id}
+              type="button"
+              aria-pressed={selectedId === option.id}
+              disabled={checked}
+              onClick={() => setSelectedId(option.id)}
+              className={`rounded-xl px-5 py-3 font-sans font-bold text-sm border min-h-[48px] transition-all ${
+                selectedId === option.id
+                  ? "bg-primary border-primary text-primary-foreground shadow-sm"
+                  : "bg-wp-card border-border text-foreground hover:border-primary/40"
+              } focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary`}
+            >
               {option.label.toLowerCase()}
             </button>
           ))}
         </div>
-        {checked && <p role="status" aria-live="polite" className={`w-full rounded-xl p-3 text-sm font-sans font-semibold ${isCorrect ? "bg-wp-green-light text-wp-green" : "bg-wp-rose-light text-wp-rose"}`}>{isCorrect ? "Correct. The sentence now matches the picture." : `Try again — the picture shows ${articleFor(word.label)} ${word.label.toLowerCase()}.`}</p>}
-      </main>
-      <footer className="w-full max-w-md mx-auto px-5 pb-10 pt-3">
-        <button type="button" onClick={handleAction} disabled={!selectedId} className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] disabled:opacity-40 ${checked ? isCorrect ? "bg-wp-green" : "bg-wp-rose" : "bg-wp-blue"}`}>
-          {checked ? isCorrect ? "Continue" : "Try Again" : "Check Answer"}
-        </button>
-      </footer>
-      <HomeIndicator />
-    </div>
+
+        {checked && (
+          <p
+            role="status"
+            aria-live="polite"
+            className={`w-full rounded-xl p-4 text-sm font-sans font-semibold ${isCorrect ? "bg-wp-green-light text-wp-green" : "bg-wp-rose-light text-wp-rose"}`}
+          >
+            {isCorrect
+              ? "Correct. The sentence now matches the picture."
+              : `Try again — the picture shows ${articleFor(word.label)} ${word.label.toLowerCase()}.`}
+          </p>
+        )}
+      </div>
+    </ExerciseShell>
   );
 });

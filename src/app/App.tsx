@@ -221,7 +221,7 @@ export default function App() {
           !(state.id === "lesson" && EX_STEPS[state.step] === "scene") && (
             <div className="min-h-svh bg-background">
               <SkipLink />
-              <div id="main-content" className="w-full max-w-2xl mx-auto min-h-svh flex flex-col">
+              <div id="main-content" className="w-full min-h-svh flex flex-col">
                 {renderContent()}
               </div>
             </div>

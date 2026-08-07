@@ -1,9 +1,7 @@
 import { memo, useMemo, useState } from "react";
 import type { Action } from "../types";
 import type { VocabItem } from "../data/lessons";
-import { LessonHeader } from "../shared/LessonHeader";
-import { HomeIndicator } from "../shared/HomeIndicator";
-import { WordImage } from "../shared/WordImage";
+import { ExerciseShell } from "../shared/ExerciseShell";
 import { articleFor } from "./exerciseContent";
 
 interface Props {
@@ -22,10 +20,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({ s
   const handleAction = () => {
     if (checked) {
       if (isCorrect) dispatch({ type: "LESSON_NEXT" });
-      else {
-        setPlaced([]);
-        setChecked(false);
-      }
+      else { setPlaced([]); setChecked(false); }
       return;
     }
     if (placed.length !== answer.length) return;
@@ -34,37 +29,80 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({ s
   };
 
   return (
-    <div className="bg-background flex flex-col justify-between min-h-full relative">
-      <LessonHeader title="Build a Sentence" step={step} onBack={() => dispatch({ type: "LESSON_PREVIOUS" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
-      <main className="flex-1 flex flex-col items-center w-full px-5 gap-4 pt-4 max-w-md mx-auto">
-        <h2 className="font-sans font-bold text-foreground text-xl text-center">Describe the picture</h2>
-        <div className="h-40 relative rounded-2xl w-full overflow-hidden border border-border bg-muted">
-          <WordImage word={word} loading="eager" width="800" height="500" className="absolute inset-0 object-cover size-full" />
-        </div>
-        <div className="bg-wp-card rounded-2xl border border-border p-4 w-full flex flex-wrap gap-2 items-center min-h-[72px]" aria-label="Built sentence">
+    <ExerciseShell
+      step={step}
+      title="Build a Sentence"
+      word={word}
+      dispatch={dispatch}
+      footer={
+        <button
+          type="button"
+          onClick={handleAction}
+          disabled={placed.length !== answer.length}
+          className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] disabled:opacity-40 transition-colors ${
+            checked ? isCorrect ? "bg-wp-green" : "bg-wp-rose" : "bg-wp-blue"
+          }`}
+        >
+          {checked ? isCorrect ? "Continue" : "Try Again" : "Check Sentence"}
+        </button>
+      }
+    >
+      <div className="flex flex-col gap-5 w-full max-w-lg">
+        <h2 className="font-sans font-bold text-foreground text-xl">Describe the picture</h2>
+
+        {/* Sentence assembly area */}
+        <div
+          className="bg-wp-card rounded-2xl border border-border p-4 w-full flex flex-wrap gap-2 items-center min-h-[72px]"
+          aria-label="Built sentence"
+        >
           {placed.map((item, index) => (
-            <button key={`${item}-${index}`} type="button" disabled={checked} onClick={() => setPlaced((items) => items.filter((_, itemIndex) => itemIndex !== index))} className="bg-primary rounded-lg px-3 py-2 font-sans font-bold text-primary-foreground text-sm">
+            <button
+              key={`${item}-${index}`}
+              type="button"
+              disabled={checked}
+              onClick={() => setPlaced((items) => items.filter((_, i) => i !== index))}
+              className="bg-primary rounded-lg px-4 py-2.5 font-sans font-bold text-primary-foreground text-sm hover:bg-primary/80 transition-colors focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
               {item}
             </button>
           ))}
-          {placed.length === 0 && <span className="text-muted-foreground text-sm">Choose words in the correct order.</span>}
+          {placed.length === 0 && (
+            <span className="text-muted-foreground text-sm font-sans">
+              Choose words in the correct order below.
+            </span>
+          )}
         </div>
-        <div role="group" aria-label="Available words" className="flex flex-wrap gap-2 justify-center">
+
+        {/* Available word tiles */}
+        <div role="group" aria-label="Available words" className="flex flex-wrap gap-2.5 justify-center">
           {shuffled.map((item, index) => {
-            const usedCount = placed.filter((placedItem) => placedItem === item).length;
-            const availableCount = shuffled.slice(0, index + 1).filter((poolItem) => poolItem === item).length;
+            const usedCount = placed.filter((p) => p === item).length;
+            const availableCount = shuffled.slice(0, index + 1).filter((t) => t === item).length;
             const used = usedCount >= availableCount;
-            return <button key={`${item}-${index}`} type="button" disabled={checked || used} onClick={() => setPlaced((items) => [...items, item])} className="bg-wp-card rounded-xl border border-border px-4 py-2.5 font-sans font-bold text-foreground text-sm disabled:opacity-35 min-h-[44px]">{item}</button>;
+            return (
+              <button
+                key={`${item}-${index}`}
+                type="button"
+                disabled={checked || used}
+                onClick={() => setPlaced((items) => [...items, item])}
+                className="bg-wp-card rounded-xl border border-border px-5 py-3 font-sans font-bold text-foreground text-sm disabled:opacity-35 min-h-[48px] hover:border-primary/40 hover:bg-secondary/50 transition-all focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+              >
+                {item}
+              </button>
+            );
           })}
         </div>
-        {checked && <p role="status" aria-live="polite" className={`w-full rounded-xl p-3 text-sm font-sans font-semibold ${isCorrect ? "bg-wp-green-light text-wp-green" : "bg-wp-rose-light text-wp-rose"}`}>{isCorrect ? "Great sentence!" : `Try this order: ${answer.join(" ")}.`}</p>}
-      </main>
-      <footer className="w-full max-w-md mx-auto px-5 pb-10 pt-3">
-        <button type="button" onClick={handleAction} disabled={placed.length !== answer.length} className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] disabled:opacity-40 ${checked ? isCorrect ? "bg-wp-green" : "bg-wp-rose" : "bg-wp-blue"}`}>
-          {checked ? isCorrect ? "Continue" : "Try Again" : "Check Sentence"}
-        </button>
-      </footer>
-      <HomeIndicator />
-    </div>
+
+        {checked && (
+          <p
+            role="status"
+            aria-live="polite"
+            className={`w-full rounded-xl p-4 text-sm font-sans font-semibold ${isCorrect ? "bg-wp-green-light text-wp-green" : "bg-wp-rose-light text-wp-rose"}`}
+          >
+            {isCorrect ? "Great sentence!" : `Try this order: ${answer.join(" ")}.`}
+          </p>
+        )}
+      </div>
+    </ExerciseShell>
   );
 });

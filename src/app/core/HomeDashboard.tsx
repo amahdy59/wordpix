@@ -119,7 +119,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
       </div>
 
       {/* ── Main Layout Grid: Hero + Worlds & Right Rail ────────────────────── */}
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_300px] lg:grid-cols-[1fr_320px] gap-6 items-start">
         {/* Left Column: Hero Lesson Card + Worlds Grid */}
         <div className="flex flex-col gap-6">
           {/* Hero Active Lesson Card (Depth via radial gradient, no raw photo overlays) */}
