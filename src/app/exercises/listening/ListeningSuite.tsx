@@ -8,6 +8,7 @@ import { SecondaryButton } from "../../shared/SecondaryButton";
 import { Volume2, Sparkles, Trophy, CheckCircle2, ShieldCheck, Flame, Mic, Play, RefreshCw, HelpCircle, Lightbulb, Clock } from "lucide-react";
 import { useAudio } from "../../shared/useAudio";
 import { useSound } from "../../shared/useSound";
+import { useProgress } from "../../data/progress";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -303,13 +304,11 @@ export const ExListeningSelectiveShadowing = memo(function ExListeningSelectiveS
           </p>
         </div>
 
-        <div className="bg-wp-card border border-wp-green/30 rounded-2xl p-5 flex flex-col gap-2">
-          <div className="flex justify-between items-center">
-            <span className="font-sans font-bold text-sm text-wp-green">Phoneme Analysis Score</span>
-            <span className="font-sans font-black text-wp-green text-xl">94% Accuracy</span>
-          </div>
+        <div className="bg-wp-card border border-border rounded-2xl p-5 flex flex-col gap-2">
+          <span className="font-sans font-bold text-sm text-foreground">Check your own stress pattern</span>
           <p className="font-sans text-xs text-muted-foreground">
-            im·pec·ca·ble (94%) — Clear stressed syllable articulation!
+            im·<strong className="text-foreground">pec</strong>·ca·ble — the stress falls on the second syllable. Replay
+            the model and compare. WordPix does not listen to your voice, so this one is on your ear.
           </p>
         </div>
 
@@ -321,6 +320,9 @@ export const ExListeningSelectiveShadowing = memo(function ExListeningSelectiveS
 
 // 7. Lesson Results (Listening)
 export const ExListeningResults = memo(function ExListeningResults({ dispatch }: Props) {
+  const { progress } = useProgress();
+  const strongWords = Object.values(progress.wordMemory).filter((w) => w.mastery === "strong").length;
+
   return (
     <div className="min-h-svh bg-secondary flex flex-col items-center justify-center p-6 text-center">
       <div className="size-24 rounded-3xl bg-wp-amber/20 border border-wp-amber/30 flex items-center justify-center shadow-2xl mb-4">
@@ -328,20 +330,20 @@ export const ExListeningResults = memo(function ExListeningResults({ dispatch }:
       </div>
       <h1 className="font-sans font-black text-foreground text-3xl">Listening Module Complete!</h1>
       <p className="font-sans text-muted-foreground text-sm mt-1 max-w-md">
-        You scored higher than 84% of A1 learners on visual audio listening today!
+        Skill drills are practice, not graded work. Your totals below come from your lesson sessions.
       </p>
       <div className="grid grid-cols-3 gap-3 w-full max-w-md my-6">
         <div className="bg-wp-card border border-border p-3 rounded-2xl">
-          <p className="font-sans font-black text-2xl text-primary">92%</p>
-          <p className="font-sans text-[11px] text-muted-foreground">Accuracy</p>
+          <p className="font-sans font-black text-2xl text-primary">{progress.xp}</p>
+          <p className="font-sans text-[11px] text-muted-foreground">Total XP</p>
         </div>
         <div className="bg-wp-card border border-border p-3 rounded-2xl">
-          <p className="font-sans font-black text-2xl text-wp-blue">3:40</p>
-          <p className="font-sans text-[11px] text-muted-foreground">Time</p>
+          <p className="font-sans font-black text-2xl text-wp-blue">{progress.streak}</p>
+          <p className="font-sans text-[11px] text-muted-foreground">Day Streak</p>
         </div>
         <div className="bg-wp-card border border-border p-3 rounded-2xl">
-          <p className="font-sans font-black text-2xl text-wp-green">+65</p>
-          <p className="font-sans text-[11px] text-muted-foreground">XP Earned</p>
+          <p className="font-sans font-black text-2xl text-wp-green">{strongWords}</p>
+          <p className="font-sans text-[11px] text-muted-foreground">Words Strong</p>
         </div>
       </div>
       <PrimaryButton label="Return to Explore Worlds" onClick={() => dispatch({ type: "GO", to: "explore" })} />

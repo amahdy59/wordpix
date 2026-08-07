@@ -223,7 +223,7 @@ export const ExReadingResults = memo(function ExReadingResults({ dispatch }: Pro
       </div>
       <h1 className="font-sans font-black text-foreground text-3xl">Reading Module Complete!</h1>
       <p className="font-sans text-muted-foreground text-sm mt-1 max-w-md">
-        You beat 88% of intermediate readers this session!
+        Reading drills are untimed practice and are not scored. Head back to a lesson to earn XP toward your streak.
       </p>
       <PrimaryButton label="Continue" onClick={() => dispatch({ type: "GO", to: "explore" })} />
     </div>

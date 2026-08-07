@@ -179,7 +179,9 @@ export const ExWritingResults = memo(function ExWritingResults({ dispatch }: Pro
         <PenTool className="size-12 text-primary" />
       </div>
       <h1 className="font-sans font-black text-foreground text-3xl">Writing Complete!</h1>
-      <p className="font-sans text-muted-foreground text-sm mt-1 max-w-md">Your writing accuracy improved 14% this week!</p>
+      <p className="font-sans text-muted-foreground text-sm mt-1 max-w-md">
+        Writing drills are self-checked practice and are not scored. Head back to a lesson to earn XP toward your streak.
+      </p>
       <PrimaryButton label="Return to Explore" onClick={() => dispatch({ type: "GO", to: "explore" })} />
     </div>
   );
