@@ -187,7 +187,7 @@ export const VocabSidebar = memo(function VocabSidebar({
             focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
             motion-safe:transition-opacity hover:opacity-90 active:opacity-80 shadow-wp-xs"
         >
-          Learn &ldquo;{activeWord.label}&rdquo; Session →
+          Start Group Practice →
         </button>
       </div>
     </aside>

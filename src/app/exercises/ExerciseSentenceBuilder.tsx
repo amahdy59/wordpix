@@ -4,6 +4,7 @@ import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { articleFor } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
+import { PenTool } from "lucide-react";
 
 interface Props {
   step: number;
@@ -61,7 +62,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
   return (
     <ExerciseShell
       step={step}
-      title="Build a Sentence"
+      title="Writing & Sentence Construction"
       words={words}
       activeWord={currentTargetWord}
       groupId={groupId}
@@ -87,19 +88,22 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
             {checked
               ? isCorrect
                 ? questionIndex + 1 < words.length
-                  ? `Next Item (${questionIndex + 2}/${words.length}) →`
-                  : "Complete Step →"
+                  ? `Next Sentence (${questionIndex + 2}/${words.length}) →`
+                  : "Continue to Quick Quiz →"
                 : "Try Again"
               : "Check Sentence"}
           </button>
         </div>
       }
     >
-      <div className="flex flex-col gap-5 w-full max-w-lg">
-        {/* Question Counter */}
+      <div className="flex flex-col gap-5 w-full max-w-lg mx-auto">
+        {/* Question Counter & Skill Badge */}
         <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground">
-          <span>Item {questionIndex + 1} of {words.length}</span>
-          <span className="text-primary font-semibold">Group sentence assembly</span>
+          <span>Writing Item {questionIndex + 1} of {words.length}</span>
+          <span className="flex items-center gap-1 text-primary bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full">
+            <PenTool className="size-3" />
+            <span>Spelling &amp; Sentence Skill</span>
+          </span>
         </div>
 
         {/* Target Image Preview */}
@@ -115,7 +119,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
 
         {/* Sentence assembly area */}
         <div
-          className="bg-wp-card rounded-2xl border border-border p-4 w-full flex flex-wrap gap-2 items-center min-h-[72px]"
+          className="bg-wp-card rounded-2xl border border-border p-4 w-full flex flex-wrap gap-2 items-center min-h-[72px] shadow-xs"
           aria-label="Built sentence"
         >
           {placed.map((item, index) => (

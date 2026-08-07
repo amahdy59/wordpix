@@ -1,9 +1,9 @@
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
-import { Sparkles, ArrowRight, BookOpen, Layers } from "lucide-react";
+import { Sparkles, ArrowRight, BookOpen, Layers, CheckCircle2, Globe } from "lucide-react";
 
-const imgHero = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&q=80";
+const imgHero = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&q=85";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -13,68 +13,129 @@ export function SplashWelcome({ dispatch }: Props) {
   const advance = () => dispatch({ type: "ONBOARD_NEXT" });
 
   return (
-    <div className="bg-background content-stretch flex flex-col items-center justify-between min-h-svh relative overflow-hidden">
+    <div className="bg-background flex flex-col md:flex-row min-h-svh md:min-h-[560px] relative overflow-hidden">
       <StatusBar />
 
-      {/* Header step indicator */}
-      <header className="w-full max-w-md px-6 pt-4 flex items-center justify-between z-10">
-        <div className="flex items-center gap-2">
-          <div className="size-8 rounded-xl bg-primary flex items-center justify-center shadow-wp-xs">
-            <BookOpen className="size-4 text-primary-foreground" />
-          </div>
-          <span className="font-sans font-bold text-foreground text-base tracking-tight">WordPix</span>
-        </div>
-        <span className="text-xs font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full border border-border">
-          Step 1 of 2
-        </span>
-      </header>
-
-      {/* Main content */}
-      <main className="flex-1 flex flex-col items-center justify-center w-full max-w-md px-6 py-6 text-center gap-6 z-10">
-        <div className="flex items-center gap-2 bg-secondary px-3.5 py-1.5 rounded-full border border-primary/20 shadow-wp-xs">
-          <Sparkles className="size-3.5 text-primary motion-safe:animate-pulse" />
-          <span className="font-sans font-semibold text-xs text-foreground">Visual English Learning Engine</span>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <h1 className="font-sans font-black text-foreground text-3xl md:text-4xl leading-tight tracking-tight">
-            Learn English Through Pictures
-          </h1>
-          <p className="font-sans font-medium text-muted-foreground text-base leading-relaxed max-w-sm mx-auto">
-            Master real-world vocabulary with interactive visual scenes and spaced-repetition memory drills.
-          </p>
-        </div>
-
-        {/* Hero Illustration */}
-        <div className="w-full h-52 md:h-60 relative rounded-2xl overflow-hidden border border-border shadow-wp-md bg-muted">
+      {/* ── Desktop Left Hero Column ────────────────────────────────────────── */}
+      <div className="hidden md:flex md:w-1/2 bg-slate-950 text-white relative overflow-hidden flex-col justify-between p-8 xl:p-12">
+        <div className="absolute inset-0 opacity-40">
           <img
-            alt="Preview of WordPix picture learning visual scenes"
-            className="absolute inset-0 object-cover size-full"
+            alt="Preview of WordPix visual scenes"
+            className="object-cover size-full"
             src={imgHero}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-          <div className="absolute bottom-3 left-4 flex items-center gap-2 text-white">
-            <Layers className="size-4" />
-            <span className="font-sans font-bold text-xs">56+ Bedroom Words Ready</span>
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent" />
+        </div>
+
+        {/* Brand Header Left */}
+        <div className="relative z-10 flex items-center gap-3">
+          <div className="size-10 rounded-2xl bg-primary flex items-center justify-center shadow-md">
+            <BookOpen className="size-5 text-primary-foreground" />
+          </div>
+          <span className="font-sans font-black text-white text-xl tracking-tight">WordPix</span>
+        </div>
+
+        {/* Center Feature Highlights */}
+        <div className="relative z-10 flex flex-col gap-4 my-auto">
+          <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 px-3.5 py-1.5 rounded-full border border-white/15 backdrop-blur-md self-start text-xs font-sans font-semibold">
+            <Sparkles className="size-3.5 text-wp-amber" />
+            <span>Visual English Learning Engine</span>
+          </div>
+          <h2 className="font-sans font-black text-3xl xl:text-4xl text-white leading-tight">
+            Learn English Through Real-World Pictures
+          </h2>
+          <div className="flex flex-col gap-2.5 mt-2">
+            {[
+              "Interactive 2D scene discovery & audio pronunciation",
+              "Rosetta Stone & Duolingo group matching drills",
+              "Spaced repetition memory decay tracking",
+            ].map((text, i) => (
+              <div key={i} className="flex items-center gap-2.5 text-white/80 text-sm font-sans font-medium">
+                <CheckCircle2 className="size-4 text-wp-green shrink-0" />
+                <span>{text}</span>
+              </div>
+            ))}
           </div>
         </div>
-      </main>
 
-      {/* Footer CTA */}
-      <footer className="w-full max-w-md px-6 pb-8 flex flex-col gap-3 z-10">
-        <button
-          type="button"
-          onClick={advance}
-          className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 font-sans font-bold text-white text-base min-h-[52px]
-            focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
-            shadow-wp-xs transition-all flex items-center justify-center gap-2"
-        >
-          <span>Get Started</span>
-          <ArrowRight className="size-5" />
-        </button>
-      </footer>
+        {/* Footer Left */}
+        <div className="relative z-10 flex items-center gap-2 text-white/60 text-xs font-sans font-semibold">
+          <Globe className="size-4" />
+          <span>Flagship World 1: The Bedroom (56 Words Ready)</span>
+        </div>
+      </div>
 
-      <HomeIndicator />
+      {/* ── Right Column / Mobile Layout ────────────────────────────────────── */}
+      <div className="flex-1 flex flex-col justify-between p-6 md:p-8 xl:p-12 min-h-svh md:min-h-0">
+        {/* Mobile Header (Hidden on Desktop) */}
+        <header className="md:hidden w-full flex items-center justify-between z-10 shrink-0">
+          <div className="flex items-center gap-2">
+            <div className="size-8 rounded-xl bg-primary flex items-center justify-center shadow-wp-xs">
+              <BookOpen className="size-4 text-primary-foreground" />
+            </div>
+            <span className="font-sans font-bold text-foreground text-base tracking-tight">WordPix</span>
+          </div>
+          <span className="text-xs font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full border border-border">
+            Step 1 of 2
+          </span>
+        </header>
+
+        {/* Main Content */}
+        <main className="flex-1 flex flex-col items-center md:items-start justify-center w-full max-w-md mx-auto md:mx-0 py-6 text-center md:text-left gap-6 z-10">
+          <div className="hidden md:flex items-center justify-between w-full">
+            <span className="text-xs font-sans font-bold text-primary bg-secondary px-3 py-1 rounded-full border border-primary/20">
+              Welcome to WordPix
+            </span>
+            <span className="text-xs font-sans font-semibold text-muted-foreground">Step 1 of 2</span>
+          </div>
+
+          <div className="md:hidden inline-flex items-center gap-2 bg-secondary px-3.5 py-1.5 rounded-full border border-primary/20 shadow-wp-xs">
+            <Sparkles className="size-3.5 text-primary motion-safe:animate-pulse" />
+            <span className="font-sans font-semibold text-xs text-foreground">Visual English Learning Engine</span>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <h1 className="font-sans font-black text-foreground text-3xl md:text-4xl leading-tight tracking-tight">
+              Master Vocabulary Faster
+            </h1>
+            <p className="font-sans font-medium text-muted-foreground text-base leading-relaxed">
+              Connect words directly to pictures without translation. Practice listening, speaking, spelling, and sentence building.
+            </p>
+          </div>
+
+          {/* Mobile Hero Illustration (Hidden on Desktop) */}
+          <div className="md:hidden w-full h-48 relative rounded-2xl overflow-hidden border border-border shadow-wp-md bg-muted">
+            <img
+              alt="Preview of WordPix picture learning visual scenes"
+              className="absolute inset-0 object-cover size-full"
+              src={imgHero}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            <div className="absolute bottom-3 left-4 flex items-center gap-2 text-white">
+              <Layers className="size-4" />
+              <span className="font-sans font-bold text-xs">56 Bedroom Words Ready</span>
+            </div>
+          </div>
+        </main>
+
+        {/* Footer CTA */}
+        <footer className="w-full max-w-md mx-auto md:mx-0 pt-4 shrink-0 z-10">
+          <button
+            type="button"
+            onClick={advance}
+            className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 font-sans font-bold text-white text-base min-h-[52px]
+              focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
+              shadow-sm transition-all flex items-center justify-center gap-2"
+          >
+            <span>Get Started</span>
+            <ArrowRight className="size-5" />
+          </button>
+        </footer>
+
+        <div className="md:hidden shrink-0">
+          <HomeIndicator />
+        </div>
+      </div>
     </div>
   );
 }

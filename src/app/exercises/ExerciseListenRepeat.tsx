@@ -5,7 +5,7 @@ import { ExerciseShell } from "../shared/ExerciseShell";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
 import { useAudio } from "../shared/useAudio";
-import { Volume2, Mic, Sparkles, ChevronRight, ChevronLeft } from "lucide-react";
+import { Volume2, Mic, Sparkles, ChevronRight, ChevronLeft, CheckCircle2 } from "lucide-react";
 import { WordImage } from "../shared/WordImage";
 
 interface Props {
@@ -59,7 +59,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
   const leftExtra = (
     <div className="flex items-center gap-2 flex-wrap">
-      <span className="font-sans text-white/50 text-sm font-medium">Listen at:</span>
+      <span className="font-sans text-white/50 text-sm font-medium">Listen speed:</span>
       {SPEEDS.map((s) => (
         <button
           key={s}
@@ -81,7 +81,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   return (
     <ExerciseShell
       step={step}
-      title="Group Pronunciation & Audio"
+      title="Pronunciation & Audio Drill"
       words={words}
       activeWord={currentWord}
       onSelectWord={(w) => {
@@ -93,7 +93,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
       leftPanelExtra={leftExtra}
       footer={
         <div className="flex flex-col gap-2.5">
-          <PrimaryButton label="Continue to Recall & Match →" onClick={() => { stop(); dispatch({ type: "LESSON_NEXT" }); }} />
+          <PrimaryButton label="Continue to Context Sentences →" onClick={() => { stop(); dispatch({ type: "LESSON_NEXT" }); }} />
           <SecondaryButton label="Listen to Current Word Again" onClick={handleToggle} />
         </div>
       }
@@ -102,24 +102,24 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         {isPlaying ? `Now playing: ${currentWord.label}` : ""}
       </div>
 
-      <div className="flex flex-col gap-5 w-full max-w-lg">
+      <div className="flex flex-col gap-5 w-full max-w-lg mx-auto">
         {/* Header note */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2 text-primary font-sans font-bold text-sm">
             {isPlaying ? (
               <><Volume2 className="size-5 animate-pulse text-wp-blue" /><span>Listening to &ldquo;{currentWord.label}&rdquo;…</span></>
             ) : (
-              <><Mic className="size-5 text-wp-green" /><span>Listen &amp; repeat all {words.length} group words</span></>
+              <><Mic className="size-5 text-wp-green" /><span>Listen &amp; repeat out loud</span></>
             )}
           </div>
           <div className="flex items-center gap-1.5 text-xs font-sans font-semibold text-wp-amber bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/20">
             <Sparkles className="size-3.5" />
-            <span>Group Audio</span>
+            <span>Speaking Skill</span>
           </div>
         </div>
 
-        {/* Group Word Cards Carousel / Grid */}
-        <div className="grid grid-cols-5 gap-2" role="tablist" aria-label="Group vocabulary words">
+        {/* Group Word Cards Selector Grid */}
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-2" role="tablist" aria-label="Group vocabulary words">
           {words.map((w, index) => {
             const isSelected = index === activeWordIndex;
             return (
@@ -135,8 +135,13 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                     : "bg-wp-card border-border hover:border-primary/40"
                 }`}
               >
-                <div className="size-12 rounded-xl overflow-hidden shrink-0 border border-border bg-muted">
+                <div className="size-12 rounded-xl overflow-hidden shrink-0 border border-border bg-muted relative">
                   <WordImage word={w} width="48" height="48" className="size-full object-cover" />
+                  {isSelected && (
+                    <div className="absolute top-0.5 right-0.5 bg-primary text-white p-0.5 rounded-full shadow-xs">
+                      <CheckCircle2 className="size-3" />
+                    </div>
+                  )}
                 </div>
                 <span className={`font-sans text-[11px] font-bold truncate max-w-full ${isSelected ? "text-primary" : "text-muted-foreground"}`}>
                   {w.label}
@@ -159,8 +164,8 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               <ChevronLeft className="size-5" />
             </button>
             <div className="flex flex-col">
-              <span className="font-sans font-black text-foreground text-2xl">{currentWord.label}</span>
-              <span className="font-sans text-muted-foreground text-xs">/{currentWord.phonetic}/</span>
+              <span className="font-sans font-black text-foreground text-2xl md:text-3xl">{currentWord.label}</span>
+              <span className="font-sans text-muted-foreground text-sm mt-0.5">/{currentWord.phonetic}/</span>
             </div>
             <button
               type="button"

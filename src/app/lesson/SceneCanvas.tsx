@@ -247,7 +247,7 @@ export const SceneCanvas = memo(function SceneCanvas({
               onClick={onLearnWord}
               className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl px-5 py-3 font-sans font-bold text-white text-sm shrink-0 min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all hidden sm:block"
             >
-              Learn →
+              Start Group Practice →
             </button>
           </div>
         </div>

@@ -204,7 +204,7 @@ export default function App() {
             <SkipLink />
             <div
               id="main-content"
-              className="min-h-svh md:min-h-0 w-full md:max-w-[420px] md:rounded-3xl md:overflow-hidden md:shadow-wp-md"
+              className="min-h-svh md:min-h-0 w-full max-w-5xl md:rounded-3xl md:overflow-hidden md:shadow-wp-md md:border md:border-border"
             >
               {renderContent()}
             </div>
