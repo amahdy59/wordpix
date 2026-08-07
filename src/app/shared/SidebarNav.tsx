@@ -1,7 +1,8 @@
-import { memo } from "react";
-import { Home, Compass, RotateCcw, UserCircle, BookOpen } from "lucide-react";
+import { memo, useState } from "react";
+import { Home, Compass, RotateCcw, UserCircle, BookOpen, Sliders } from "lucide-react";
 import type { TabId, Action } from "../types";
 import { ThemeToggle } from "./ThemeToggle";
+import { SettingsModal } from "../core/SettingsModal";
 
 interface NavItem {
   id: TabId;
@@ -22,12 +23,16 @@ interface Props {
 }
 
 export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Props) {
+  const [showSettingsModal, setShowSettingsModal] = useState(false);
+
   return (
     <aside
       className="hidden md:flex flex-col items-center bg-wp-card border-r border-border
                  w-[80px] shrink-0 py-4 justify-between select-none z-30"
       aria-label="Sidebar navigation"
     >
+      <SettingsModal isOpen={showSettingsModal} onClose={() => setShowSettingsModal(false)} />
+
       {/* Top Brand Logo */}
       <div className="flex flex-col items-center gap-4">
         <button
@@ -79,8 +84,17 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
         </nav>
       </div>
 
-      {/* Theme Toggle & Profile Shortcut */}
+      {/* Settings, Theme Toggle & Profile Shortcut */}
       <div className="flex flex-col items-center gap-3">
+        <button
+          type="button"
+          onClick={() => setShowSettingsModal(true)}
+          title="Settings & Accessibility"
+          aria-label="Settings & Accessibility"
+          className="size-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
+        >
+          <Sliders className="size-5" />
+        </button>
         <ThemeToggle />
         <button
           type="button"

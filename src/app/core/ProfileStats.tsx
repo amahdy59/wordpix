@@ -1,8 +1,9 @@
-import { memo, useMemo } from "react";
-import { Flame, Sparkles, BookOpen, Calendar, Trophy, Award, CheckCircle2, Layers, Brain, Target, ShieldCheck } from "lucide-react";
+import { memo, useMemo, useState } from "react";
+import { Flame, Sparkles, BookOpen, Trophy, Award, CheckCircle2, ShieldCheck, Target, Brain, Sliders, Moon, Sun } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { BEDROOM_VOCABULARY } from "../data/lessons";
+import { SettingsModal } from "./SettingsModal";
+import { useTheme } from "../shared/ThemeToggle";
 
 const imgAvatar = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
 
@@ -12,6 +13,8 @@ interface Props {
 
 export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: Props) {
   const { progress } = useProgress();
+  const { theme, toggleTheme } = useTheme();
+  const [showSettingsModal, setShowSettingsModal] = useState(false);
 
   const memoryValues = useMemo(() => Object.values(progress.wordMemory), [progress.wordMemory]);
 
@@ -51,8 +54,10 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
 
   return (
     <div className="flex flex-col gap-6 p-5 md:p-8 pb-8">
-      {/* Profile header */}
-      <header className="flex flex-col md:flex-row md:items-center gap-6">
+      <SettingsModal isOpen={showSettingsModal} onClose={() => setShowSettingsModal(false)} />
+
+      {/* Profile header with Settings Button */}
+      <header className="flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
           <div className="relative size-20 md:size-24 shrink-0 rounded-full overflow-hidden border-[3px] border-primary shadow-wp-xs">
             <img
@@ -72,6 +77,27 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
               </span>
             </div>
           </div>
+        </div>
+
+        {/* Quick Settings & Theme Action Bar */}
+        <div className="flex items-center gap-2.5">
+          <button
+            type="button"
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+            className="p-3 rounded-2xl bg-wp-card border border-border text-foreground hover:bg-muted transition-colors shadow-wp-xs flex items-center gap-2 font-sans font-bold text-xs"
+          >
+            {theme === "dark" ? <Sun className="size-4 text-wp-amber" /> : <Moon className="size-4 text-wp-blue" />}
+            <span>{theme === "dark" ? "Light Mode" : "Dark Mode"}</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setShowSettingsModal(true)}
+            className="px-4 py-3 rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-xs flex items-center gap-2 shadow-wp-xs hover:opacity-90 transition-all"
+          >
+            <Sliders className="size-4" />
+            <span>Settings &amp; Accessibility</span>
+          </button>
         </div>
       </header>
 

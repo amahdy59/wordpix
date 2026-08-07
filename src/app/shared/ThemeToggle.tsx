@@ -1,12 +1,12 @@
-import { memo, useState, useEffect } from "react";
+import { memo, useState, useEffect, useCallback } from "react";
 import { Sun, Moon, Monitor } from "lucide-react";
 
 export type ThemeMode = "light" | "dark" | "system";
 
 const STORAGE_KEY = "wordpix:theme";
 
-export const ThemeToggle = memo(function ThemeToggle() {
-  const [theme, setTheme] = useState<ThemeMode>(() => {
+export function useTheme() {
+  const [theme, setThemeState] = useState<ThemeMode>(() => {
     if (typeof window === "undefined") return "system";
     return (localStorage.getItem(STORAGE_KEY) as ThemeMode) || "system";
   });
@@ -26,15 +26,20 @@ export const ThemeToggle = memo(function ThemeToggle() {
     }
   }, [theme]);
 
-  const toggleNext = () => {
-    const next: ThemeMode = theme === "system" ? "dark" : theme === "dark" ? "light" : "system";
-    setTheme(next);
-  };
+  const toggleTheme = useCallback(() => {
+    setThemeState((prev) => (prev === "system" ? "dark" : prev === "dark" ? "light" : "system"));
+  }, []);
+
+  return { theme, setTheme: setThemeState, toggleTheme };
+}
+
+export const ThemeToggle = memo(function ThemeToggle() {
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <button
       type="button"
-      onClick={toggleNext}
+      onClick={toggleTheme}
       aria-label={`Current theme: ${theme}. Click to switch theme.`}
       className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-border bg-wp-card text-foreground hover:bg-muted text-xs font-sans font-bold transition-all min-h-[40px]"
     >
