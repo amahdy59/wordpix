@@ -5,7 +5,9 @@ import { LessonHeader } from "./LessonHeader";
 import { HomeIndicator } from "./HomeIndicator";
 import { WordImage } from "./WordImage";
 import { ExitConfirmModal } from "./ExitConfirmModal";
-import { Layers } from "lucide-react";
+import { Layers, HelpCircle, Sparkles } from "lucide-react";
+
+export type ExerciseMode = "teach" | "guided" | "retrieval" | "assessment";
 
 interface Props {
   /** 0-based step index (1-5) */
@@ -16,6 +18,8 @@ interface Props {
   words: VocabItem[];
   /** Active word currently highlighted / focused in exercise */
   activeWord?: VocabItem;
+  /** Exercise interaction mode (determines answer masking) */
+  mode?: ExerciseMode;
   /** Optional callback when user clicks a word chip in the group bar */
   onSelectWord?: (word: VocabItem) => void;
   groupId?: string;
@@ -39,6 +43,7 @@ export const ExerciseShell = memo(function ExerciseShell({
   title,
   words,
   activeWord,
+  mode = "teach",
   onSelectWord,
   groupId = "essential-furniture",
   dispatch,
@@ -50,7 +55,9 @@ export const ExerciseShell = memo(function ExerciseShell({
 
   const group = BEDROOM_GROUPS.find((g) => g.id === groupId) ?? BEDROOM_GROUPS[0];
   const currentWord = activeWord || words[0];
-  const nextStepLabel = step < 5 ? STEP_LABELS[step + 1] : "Group Completion";
+  const nextStepLabel = step < 5 ? STEP_LABELS[step + 1] : "Session Completion";
+
+  const isTesting = mode === "retrieval" || mode === "assessment";
 
   return (
     <div className="bg-background flex flex-col min-h-svh lg:flex-row lg:min-h-svh lg:overflow-hidden relative">
@@ -68,9 +75,9 @@ export const ExerciseShell = memo(function ExerciseShell({
         className="hidden lg:flex lg:flex-col lg:w-[42%] xl:w-[40%] shrink-0 bg-slate-950 relative overflow-hidden"
         aria-label={`Group learning: ${group.name}`}
       >
-        {/* Full-bleed active word image with background wash */}
+        {/* Visual Background */}
         <div className="absolute inset-0">
-          {currentWord && (
+          {!isTesting && currentWord ? (
             <WordImage
               word={currentWord}
               loading="eager"
@@ -78,8 +85,14 @@ export const ExerciseShell = memo(function ExerciseShell({
               height="900"
               className="size-full object-cover transition-all duration-300"
             />
+          ) : (
+            <div className="size-full bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 flex flex-col items-center justify-center p-8">
+              <div className="size-28 rounded-3xl bg-primary/10 border border-primary/20 flex items-center justify-center shadow-2xl">
+                <HelpCircle className="size-14 text-primary animate-pulse" />
+              </div>
+            </div>
           )}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent pointer-events-none" />
         </div>
 
         {/* Group Badges & Title top-left */}
@@ -95,10 +108,10 @@ export const ExerciseShell = memo(function ExerciseShell({
           </div>
         </div>
 
-        {/* Group Items Grid / Carousel Bar at Bottom */}
+        {/* Group Items Grid / Info at Bottom */}
         <div className="absolute bottom-0 left-0 right-0 p-6 flex flex-col gap-4 z-10">
-          {/* Active Word Label */}
-          {currentWord && (
+          {/* Active Word Label or Testing Prompt */}
+          {!isTesting && currentWord ? (
             <div>
               <span className="font-sans font-bold text-xs text-wp-amber bg-amber-500/10 px-2.5 py-0.5 rounded-full border border-amber-500/20 uppercase tracking-wide">
                 Target Word
@@ -108,31 +121,49 @@ export const ExerciseShell = memo(function ExerciseShell({
               </h2>
               <p className="font-sans text-white/60 text-sm font-medium">/{currentWord.phonetic}/</p>
             </div>
+          ) : (
+            <div>
+              <span className="font-sans font-bold text-xs text-primary bg-primary/20 px-2.5 py-0.5 rounded-full border border-primary/30 uppercase tracking-wide flex items-center gap-1.5 w-fit">
+                <Sparkles className="size-3.5" />
+                <span>{mode === "retrieval" ? "Memory Recall Drill" : "Knowledge Assessment"}</span>
+              </span>
+              <h2 className="font-sans font-black text-white text-3xl xl:text-4xl leading-tight tracking-tight mt-2">
+                {mode === "retrieval" ? "Listen & Match" : "Select Correct Image"}
+              </h2>
+              <p className="font-sans text-white/60 text-sm font-medium mt-1">
+                Identify the correct item from your group memory.
+              </p>
+            </div>
           )}
 
           {/* Group Words Selector Strip */}
           <div className="flex flex-col gap-2">
             <span className="text-white/50 text-[11px] font-sans font-bold uppercase tracking-wider">
-              Words in this Group ({words.length})
+              Group Items ({words.length})
             </span>
             <div className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
-              {words.map((w) => {
+              {words.map((w, idx) => {
                 const isActive = currentWord?.id === w.id;
                 return (
                   <button
                     key={w.id}
                     type="button"
+                    disabled={isTesting}
                     onClick={() => onSelectWord?.(w)}
                     className={`flex items-center gap-2 px-3 py-1.5 rounded-xl border transition-all shrink-0 ${
-                      isActive
+                      isActive && !isTesting
                         ? "bg-primary text-primary-foreground border-white/40 shadow-md font-bold scale-105"
-                        : "bg-black/40 text-white/70 border-white/10 hover:bg-black/60 hover:text-white"
+                        : "bg-black/40 text-white/70 border-white/10 hover:bg-black/60 hover:text-white disabled:opacity-50"
                     }`}
                   >
-                    <div className="size-6 rounded-lg overflow-hidden shrink-0 border border-white/20">
-                      <WordImage word={w} width="32" height="32" className="size-full object-cover" />
-                    </div>
-                    <span className="font-sans text-xs">{w.label}</span>
+                    {!isTesting && (
+                      <div className="size-6 rounded-lg overflow-hidden shrink-0 border border-white/20">
+                        <WordImage word={w} width="32" height="32" className="size-full object-cover" />
+                      </div>
+                    )}
+                    <span className="font-sans text-xs">
+                      {isTesting ? `Item ${idx + 1}` : w.label}
+                    </span>
                   </button>
                 );
               })}
@@ -156,26 +187,29 @@ export const ExerciseShell = memo(function ExerciseShell({
         <div className="lg:hidden px-5 pt-2 shrink-0 flex flex-col gap-2">
           <div className="flex items-center justify-between text-xs font-sans font-semibold">
             <span className="text-primary font-bold">{group.name} Group</span>
-            <span className="text-muted-foreground">{words.length} Words</span>
+            <span className="text-muted-foreground">{words.length} Items</span>
           </div>
           <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar">
-            {words.map((w) => {
+            {words.map((w, idx) => {
               const isActive = currentWord?.id === w.id;
               return (
                 <button
                   key={w.id}
                   type="button"
+                  disabled={isTesting}
                   onClick={() => onSelectWord?.(w)}
                   className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-xs font-sans shrink-0 transition-all ${
-                    isActive
+                    isActive && !isTesting
                       ? "bg-primary text-primary-foreground border-primary font-bold"
-                      : "bg-wp-card text-muted-foreground border-border"
+                      : "bg-wp-card text-muted-foreground border-border disabled:opacity-60"
                   }`}
                 >
-                  <div className="size-5 rounded overflow-hidden shrink-0 border border-border">
-                    <WordImage word={w} width="24" height="24" className="size-full object-cover" />
-                  </div>
-                  <span>{w.label}</span>
+                  {!isTesting && (
+                    <div className="size-5 rounded overflow-hidden shrink-0 border border-border">
+                      <WordImage word={w} width="24" height="24" className="size-full object-cover" />
+                    </div>
+                  )}
+                  <span>{isTesting ? `Item ${idx + 1}` : w.label}</span>
                 </button>
               );
             })}

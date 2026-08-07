@@ -4,6 +4,7 @@ import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { Timer, TimerOff } from "lucide-react";
 import { WordImage } from "../shared/WordImage";
+import { shuffleArray } from "../../utils/shuffle";
 
 interface Props {
   step: number;
@@ -32,9 +33,9 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
 
   const options = useMemo(() => {
     const otherWords = words.filter((w) => w.id !== currentTargetWord.id);
-    const shuffled = [...otherWords].sort(() => 0.5 - Math.random()).slice(0, 3);
-    const pool = [currentTargetWord, ...shuffled];
-    return pool.sort(() => 0.5 - Math.random());
+    const shuffledDistractors = shuffleArray(otherWords).slice(0, 3);
+    const pool = [currentTargetWord, ...shuffledDistractors];
+    return shuffleArray(pool);
   }, [currentTargetWord, words]);
 
   const isCorrect = selectedId === currentTargetWord.id;
@@ -75,7 +76,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
     }
     setChecked(true);
     setTimerOn(false);
-    dispatch({ type: "LESSON_ATTEMPT", correct: isCorrect });
+    dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct: isCorrect });
   };
 
   return (
@@ -84,6 +85,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       title="Group Quick Quiz"
       words={words}
       activeWord={currentTargetWord}
+      mode="assessment"
       groupId={groupId}
       dispatch={dispatch}
       footer={
@@ -179,7 +181,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
             aria-live="polite"
             className={`w-full rounded-xl p-4 text-sm font-sans font-semibold ${isCorrect ? "bg-wp-green-light text-wp-green" : "bg-wp-rose-light text-wp-rose"}`}
           >
-            {isCorrect ? "Correct — great visual recall." : `Not yet. Find the image labelled ${currentTargetWord.label}.`}
+            {isCorrect ? "Correct — great visual recall." : `Not yet. Find the image showing ${currentTargetWord.label}.`}
           </p>
         )}
       </div>

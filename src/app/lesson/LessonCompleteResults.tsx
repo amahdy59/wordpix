@@ -8,6 +8,7 @@ import { BEDROOM_GROUPS, BEDROOM_VOCABULARY } from "../data/lessons";
 import { useProgress } from "../data/progress";
 
 interface Props {
+  sessionId?: string;
   attempts: AnswerAttempt[];
   groupId?: string;
   wordQueue?: string[];
@@ -15,23 +16,27 @@ interface Props {
 }
 
 export const LessonCompleteResults = memo(function LessonCompleteResults({
+  sessionId = "sess_default",
   attempts,
   groupId = "essential-furniture",
   wordQueue = ["bed", "nightstand", "dresser", "wardrobe", "desk"],
   dispatch,
 }: Props) {
-  const { recordCompletedBatch } = useProgress();
+  const { recordSessionCompletion } = useProgress();
 
   const group = BEDROOM_GROUPS.find((g) => g.id === groupId) ?? BEDROOM_GROUPS[0];
 
   const correct = attempts.filter((a) => a.correct).length;
-  const accuracy = attempts.length === 0 ? 100 : Math.round((correct / attempts.length) * 100);
+  // 0 attempts = 0% accuracy (never 100%)
+  const accuracy = attempts.length === 0 ? 0 : Math.round((correct / attempts.length) * 100);
   const stars = [accuracy >= 50, accuracy >= 75, accuracy >= 90];
-  const xp = Math.max(30, correct * 10);
+  // XP: 10 XP per correct attempt (0 correct = 0 XP, no minimum 30 XP)
+  const xp = correct * 10;
+  const isMastered = accuracy >= 80 && attempts.length > 0;
 
   useEffect(() => {
-    recordCompletedBatch(wordQueue, xp);
-  }, [wordQueue, xp, recordCompletedBatch]);
+    recordSessionCompletion(sessionId, attempts, wordQueue);
+  }, [sessionId, attempts, wordQueue, recordSessionCompletion]);
 
   const groupWords = wordQueue
     .map((id) => BEDROOM_VOCABULARY.find((v) => v.id === id))
@@ -49,13 +54,15 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
           </div>
           <div>
             <span className="font-sans font-bold text-xs text-wp-amber bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full uppercase tracking-wider">
-              Group Mastered
+              {isMastered ? "Group Mastered" : "Session Complete"}
             </span>
             <h1 className="font-sans font-black text-white text-4xl xl:text-5xl leading-tight tracking-tight mt-2">
-              {group.name} Complete!
+              {group.name} {isMastered ? "Mastered!" : "Completed!"}
             </h1>
             <p className="font-sans font-semibold text-white/60 text-base mt-2">
-              You mastered all {groupWords.length} words in this learning group.
+              {isMastered
+                ? `You mastered all ${groupWords.length} words in this learning group.`
+                : `You completed practice for ${groupWords.length} words.`}
             </p>
           </div>
           <div className="flex gap-3 items-center" aria-label={`${stars.filter(Boolean).length} out of 3 stars`}>
@@ -80,12 +87,14 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             </div>
             <div>
               <span className="font-sans font-bold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full uppercase tracking-wider">
-                Group Complete
+                {isMastered ? "Group Mastered" : "Session Complete"}
               </span>
               <h1 className="font-sans font-black text-foreground text-3xl mt-1">{group.name}</h1>
             </div>
             <p className="font-sans font-semibold text-muted-foreground text-sm">
-              Mastered all {groupWords.length} vocabulary words in this group.
+              {isMastered
+                ? `Mastered all ${groupWords.length} vocabulary words in this group.`
+                : `Completed session for ${groupWords.length} words.`}
             </p>
             <div className="flex gap-2 items-center" aria-label={`${stars.filter(Boolean).length} out of 3 stars`}>
               {stars.map((filled, i) => (
@@ -95,7 +104,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
           </div>
 
           <div className="hidden lg:block text-center">
-            <h2 className="font-sans font-bold text-foreground text-2xl">Group Mastery Breakdown</h2>
+            <h2 className="font-sans font-bold text-foreground text-2xl">Session Results Breakdown</h2>
             <p className="font-sans text-muted-foreground text-sm mt-1">Here is your performance for the {group.name} group.</p>
           </div>
 
@@ -113,11 +122,11 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             ))}
           </div>
 
-          {/* Mastered Group Words List */}
+          {/* Group Words List */}
           <div className="w-full flex flex-col gap-2">
             <div className="flex items-center gap-2 text-foreground font-sans font-bold text-sm">
               <Layers className="size-4 text-primary" />
-              <span>Mastered Words in Group</span>
+              <span>Words in Session</span>
             </div>
             <div className="flex flex-col gap-1.5 w-full">
               {groupWords.map((w) => (

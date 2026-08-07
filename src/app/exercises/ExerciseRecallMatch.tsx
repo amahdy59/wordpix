@@ -5,6 +5,7 @@ import { ExerciseShell } from "../shared/ExerciseShell";
 import { WordImage } from "../shared/WordImage";
 import { useAudio } from "../shared/useAudio";
 import { Volume2, CheckCircle2, Sparkles, RefreshCw } from "lucide-react";
+import { shuffleArray } from "../../utils/shuffle";
 
 interface Props {
   step: number;
@@ -28,6 +29,11 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   const { speak, stop, isPlaying } = useAudio({ lang: "en-US", rate: 0.85 });
   const hasSpokenRef = useRef<Record<number, boolean>>({});
 
+  // Shuffled display order generated once
+  const displayCards = useMemo(() => {
+    return shuffleArray(words);
+  }, [words]);
+
   // Auto-play audio when prompt target changes
   useEffect(() => {
     stop();
@@ -44,11 +50,6 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
     speak(currentTargetWord.label);
   };
 
-  // 6 Image cards drawn from current group (or extended to 6 items)
-  const displayCards = useMemo(() => {
-    return [...words].sort((a, b) => a.label.localeCompare(b.label));
-  }, [words]);
-
   const handleCardClick = (card: VocabItem) => {
     if (feedback === "correct") return;
 
@@ -56,13 +57,13 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
 
     if (card.id === currentTargetWord.id) {
       setFeedback("correct");
-      dispatch({ type: "LESSON_ATTEMPT", correct: true });
+      dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct: true });
 
       const newCompleted = new Set(completedWordIds);
       newCompleted.add(card.id);
       setCompletedWordIds(newCompleted);
 
-      // Auto-advance to next audio prompt after 600ms
+      // Auto-advance to next audio prompt after 700ms
       setTimeout(() => {
         if (targetIndex + 1 < words.length) {
           setTargetIndex((i) => i + 1);
@@ -75,7 +76,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       }, 700);
     } else {
       setFeedback("incorrect");
-      dispatch({ type: "LESSON_ATTEMPT", correct: false });
+      dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct: false });
       setTimeout(() => {
         setSelectedId(null);
         setFeedback(null);
@@ -89,13 +90,14 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       title="Audio & Image Matching"
       words={words}
       activeWord={currentTargetWord}
+      mode="retrieval"
       groupId={groupId}
       dispatch={dispatch}
       footer={
         <div className="flex flex-col gap-2">
           <div className="flex items-center justify-between text-xs font-sans font-semibold text-muted-foreground px-1">
             <span>Group Progress: {completedWordIds.size} of {words.length} matched</span>
-            <span>Target: {currentTargetWord.label}</span>
+            <span>Item {targetIndex + 1} of {words.length}</span>
           </div>
         </div>
       }
@@ -107,7 +109,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             <button
               type="button"
               onClick={replayAudio}
-              aria-label={`Replay audio for ${currentTargetWord.label}`}
+              aria-label="Replay target audio prompt"
               className="size-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md hover:scale-105 transition-transform shrink-0"
             >
               <Volume2 className={`size-6 ${isPlaying ? "animate-pulse text-wp-amber" : ""}`} />
@@ -118,7 +120,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 <Sparkles className="size-4 text-wp-amber animate-pulse" />
               </div>
               <p className="font-sans text-white/70 text-xs mt-0.5">
-                Tap the picture below that matches what you hear.
+                Tap the image that matches the audio prompt.
               </p>
             </div>
           </div>
@@ -139,7 +141,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
           aria-label="Choose matching picture for audio prompt"
           className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4"
         >
-          {displayCards.map((card) => {
+          {displayCards.map((card, idx) => {
             const isSelected = selectedId === card.id;
             const isTargetCompleted = completedWordIds.has(card.id);
 
@@ -171,7 +173,9 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 </div>
 
                 <p className="font-sans font-bold text-foreground text-sm truncate w-full text-center px-1">
-                  {card.label}
+                  {isTargetCompleted || (isSelected && feedback === "correct")
+                    ? card.label
+                    : `Option ${idx + 1}`}
                 </p>
               </button>
             );

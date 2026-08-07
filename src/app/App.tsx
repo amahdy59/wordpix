@@ -48,6 +48,7 @@ export function reducer(state: Screen, action: Action): Screen {
       if (state.id === "lesson") {
         return {
           id: "lesson-complete",
+          sessionId: state.sessionId,
           groupId: state.groupId,
           wordQueue: state.wordQueue,
           attempts: state.attempts,
@@ -60,9 +61,11 @@ export function reducer(state: Screen, action: Action): Screen {
   if (action.type === "START_LESSON") {
     const group = BEDROOM_GROUPS.find((g) => g.id === action.groupId) ?? BEDROOM_GROUPS[0];
     const queue = action.wordQueue && action.wordQueue.length > 0 ? action.wordQueue : group.wordIds;
-    
+    const sessionId = "sess_" + Date.now() + "_" + Math.random().toString(36).slice(2, 7);
+
     return {
       id: "lesson",
+      sessionId,
       groupId: group.id,
       wordQueue: queue,
       step: 0,
@@ -80,13 +83,14 @@ export function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "LESSON_ATTEMPT") {
     if (state.id !== "lesson") return state;
+    const wordId = action.wordId || state.wordQueue[0] || "bed";
     return {
       ...state,
       attempts: [
         ...state.attempts,
         {
           exerciseStep: state.step,
-          wordId: state.wordQueue[0] || "bed",
+          wordId,
           correct: action.correct,
           answeredAt: new Date().toISOString(),
         },
@@ -98,6 +102,7 @@ export function reducer(state: Screen, action: Action): Screen {
     if (state.step >= 5) {
       return {
         id: "lesson-complete",
+        sessionId: state.sessionId,
         groupId: state.groupId,
         wordQueue: state.wordQueue,
         attempts: state.attempts,
@@ -188,7 +193,7 @@ export default function App() {
       if (ex === "quiz") return <ExerciseQuickQuiz words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;
     }
     if (state.id === "lesson-complete") {
-      return <LessonCompleteResults groupId={state.groupId} attempts={state.attempts} wordQueue={state.wordQueue} dispatch={dispatch} />;
+      return <LessonCompleteResults sessionId={state.sessionId} groupId={state.groupId} attempts={state.attempts} wordQueue={state.wordQueue} dispatch={dispatch} />;
     }
     return null;
   }

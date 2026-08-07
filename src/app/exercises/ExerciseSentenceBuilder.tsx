@@ -5,6 +5,7 @@ import { ExerciseShell } from "../shared/ExerciseShell";
 import { articleFor } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
 import { PenTool } from "lucide-react";
+import { shuffleArray } from "../../utils/shuffle";
 
 interface Props {
   step: number;
@@ -30,7 +31,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
     () => ["This", "is", articleFor(currentTargetWord.label), currentTargetWord.label.toLowerCase()],
     [currentTargetWord.label]
   );
-  const shuffled = useMemo(() => [answer[3], answer[0], answer[2], answer[1]], [answer]);
+  const shuffled = useMemo(() => shuffleArray([answer[3], answer[0], answer[2], answer[1]]), [answer]);
 
   const isCorrect = placed.join(" ") === answer.join(" ");
 
@@ -56,7 +57,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
       return;
     }
     setChecked(true);
-    dispatch({ type: "LESSON_ATTEMPT", correct: isCorrect });
+    dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct: isCorrect });
   };
 
   return (
@@ -65,6 +66,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
       title="Writing & Sentence Construction"
       words={words}
       activeWord={currentTargetWord}
+      mode="guided"
       groupId={groupId}
       dispatch={dispatch}
       footer={

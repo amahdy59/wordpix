@@ -19,6 +19,7 @@ export type Screen =
   | { id: "lesson-entry" }
   | {
       id: "lesson";
+      sessionId: string;
       groupId: string;
       wordQueue: string[];
       step: number;
@@ -27,6 +28,7 @@ export type Screen =
     }
   | {
       id: "lesson-complete";
+      sessionId: string;
       groupId: string;
       wordQueue: string[];
       attempts: AnswerAttempt[];
@@ -37,6 +39,6 @@ export type Action =
   | { type: "GO"; to: TabId | "lesson-entry" | "lesson-complete" }
   | { type: "START_LESSON"; groupId?: string; wordId?: string; wordQueue?: string[] }
   | { type: "LESSON_SELECT_WORD"; wordId: string }
-  | { type: "LESSON_ATTEMPT"; correct: boolean }
+  | { type: "LESSON_ATTEMPT"; wordId?: string; correct: boolean }
   | { type: "LESSON_NEXT" }
   | { type: "LESSON_PREVIOUS" };

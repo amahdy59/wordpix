@@ -4,6 +4,7 @@ import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { articleFor } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
+import { shuffleArray } from "../../utils/shuffle";
 
 interface Props {
   step: number;
@@ -27,9 +28,9 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
 
   const options = useMemo(() => {
     const otherWords = words.filter((w) => w.id !== currentTargetWord.id);
-    const shuffled = [...otherWords].sort(() => 0.5 - Math.random()).slice(0, 3);
+    const shuffled = shuffleArray(otherWords).slice(0, 3);
     const pool = [currentTargetWord, ...shuffled];
-    return pool.sort(() => 0.5 - Math.random());
+    return shuffleArray(pool);
   }, [currentTargetWord, words]);
 
   const isCorrect = selectedId === currentTargetWord.id;
@@ -57,7 +58,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       return;
     }
     setChecked(true);
-    dispatch({ type: "LESSON_ATTEMPT", correct: isCorrect });
+    dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct: isCorrect });
   };
 
   return (
@@ -66,6 +67,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       title="Complete the Sentence"
       words={words}
       activeWord={currentTargetWord}
+      mode="guided"
       groupId={groupId}
       dispatch={dispatch}
       footer={
