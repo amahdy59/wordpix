@@ -79,12 +79,18 @@ export type Screen =
       attempts: AnswerAttempt[];
     };
 
+/** Every destination GO can reach. Previously widened by an `as TabId` cast. */
+export type GoTarget = TabId | "lesson-entry" | "lesson-complete" | "skill-hub" | "onboarding";
+
 export type Action =
   | { type: "ONBOARD_NEXT" }
-  | { type: "GO"; to: TabId | "lesson-entry" | "lesson-complete" | "skill-hub" }
+  | { type: "GO"; to: GoTarget }
   | { type: "OPEN_SKILL_EXERCISE"; exerciseId: SkillExerciseId }
   | { type: "START_LESSON"; groupId?: string; wordId?: string; wordQueue?: string[] }
   | { type: "LESSON_SELECT_WORD"; wordId: string }
   | { type: "LESSON_ATTEMPT"; wordId?: string; correct: boolean }
   | { type: "LESSON_NEXT" }
-  | { type: "LESSON_PREVIOUS" };
+  | { type: "LESSON_PREVIOUS" }
+  /** Jump to a specific 0-based step, used when the browser Back/Forward
+      buttons move through the lesson's own history entries. */
+  | { type: "LESSON_GOTO_STEP"; step: number };

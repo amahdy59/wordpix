@@ -1,10 +1,12 @@
 import { useEffect, useReducer, Suspense, useCallback } from "react";
 import type { Screen, Action, OnboardStep, TabId } from "./types";
+import type { RouteIntent } from "./router/useHashRouter";
 import { ErrorBoundary } from "./shared/ErrorBoundary";
 import { BEDROOM_VOCABULARY, BEDROOM_GROUPS } from "./data/lessons";
 import { LearnerProvider } from "./context/LearnerContext";
 import { I18nProvider, useI18n } from "./context/I18nContext";
 import { useHashRouter, hashToScreen } from "./router/useHashRouter";
+
 import { registerServiceWorker } from "../pwa";
 import { startSystemThemeSync } from "./shared/themeStore";
 
@@ -91,7 +93,9 @@ export function reducer(state: Screen, action: Action): Screen {
   if (action.type === "ONBOARD_NEXT") {
     if (state.id !== "onboarding") return state;
     const i = ONBOARD_STEPS.indexOf(state.step);
-    ariaLiveAnnounce(i < ONBOARD_STEPS.length - 1 ? `Onboarding step ${i + 2}` : "Main Dashboard");
+    // No DOM writes here: reducers must stay pure. React double-invokes them in
+    // StrictMode and may replay them, so announcing from inside one produced
+    // duplicate announcements. The announcement now happens in an effect.
     return i < ONBOARD_STEPS.length - 1
       ? { id: "onboarding", step: ONBOARD_STEPS[i + 1] }
       : { id: "home" };
@@ -99,6 +103,9 @@ export function reducer(state: Screen, action: Action): Screen {
   if (action.type === "GO") {
     if (action.to === "lesson-entry") return { id: "lesson-entry" };
     if (action.to === "skill-hub") return { id: "skill-hub" };
+    // Onboarding is the one screen that carries required state of its own;
+    // `{ id: "onboarding" }` without a step renders nothing at all.
+    if (action.to === "onboarding") return { id: "onboarding", step: "splash" };
     if (action.to === "lesson-complete") {
       if (state.id === "lesson") {
         return {
@@ -173,12 +180,49 @@ export function reducer(state: Screen, action: Action): Screen {
     if (state.step === 0) return { id: "lesson-entry" };
     return { ...state, step: state.step - 1 };
   }
+  if (action.type === "LESSON_GOTO_STEP") {
+    // Browser Back/Forward moving through the lesson's history entries. The
+    // session, queue, and recorded attempts are preserved — only the step
+    // moves, which is why the URL cannot simply be replayed as a whole Screen.
+    if (state.id !== "lesson") return state;
+    if (action.step < 0 || action.step > 5) return state;
+    if (action.step === state.step) return state;
+    return { ...state, step: action.step };
+  }
   return state;
 }
 
 function ariaLiveAnnounce(msg: string) {
   const el = document.getElementById("a11y-live-region");
   if (el) el.textContent = msg;
+}
+
+/** Human-readable name of the current screen, for the live region. */
+function describeScreen(screen: Screen, t: (key: string) => string): string {
+  switch (screen.id) {
+    case "onboarding":
+      return `${t("app.title")}: ${screen.step}`;
+    case "home":
+      return t("nav.home");
+    case "explore":
+      return t("nav.explore");
+    case "practice":
+      return t("nav.practice");
+    case "profile":
+      return t("nav.profile");
+    case "lesson":
+      return `Lesson step ${screen.step + 1} of 6`;
+    case "lesson-complete":
+      return "Session complete";
+    case "lesson-entry":
+      return "The Bedroom";
+    case "skill-hub":
+      return "Skill exercises";
+    case "skill-exercise":
+      return screen.exerciseId;
+    default:
+      return "";
+  }
 }
 
 const EX_STEPS = ["scene", "listen", "recall", "fill", "builder", "quiz"] as const;
@@ -212,6 +256,7 @@ const SkipLink = () => {
 };
 
 function AppInner() {
+  const { t } = useI18n();
   const [state, dispatch] = useReducer(
     reducer,
     { id: "onboarding", step: "splash" },
@@ -232,11 +277,39 @@ function AppInner() {
     }
   );
 
-  const handleRouteScreenChange = useCallback((newScreen: Screen) => {
-    dispatch({ type: "GO", to: newScreen.id as TabId });
+  /**
+   * Applies a URL change to the state machine.
+   *
+   * This used to be `dispatch({ type: "GO", to: newScreen.id as TabId })`,
+   * which threw away the resolved screen's payload. Navigating to #/onboarding
+   * produced `{ id: "onboarding" }` with no `step`, so renderContent fell
+   * through every branch and rendered a blank page. The `as TabId` cast is what
+   * let that compile.
+   */
+  const handleRoute = useCallback((intent: RouteIntent) => {
+    if (intent.kind === "lesson-step") {
+      dispatch({ type: "LESSON_GOTO_STEP", step: intent.step });
+      return;
+    }
+    if (intent.kind === "lesson-complete") {
+      dispatch({ type: "GO", to: "lesson-complete" });
+      return;
+    }
+
+    const { screen } = intent;
+    if (screen.id === "onboarding") {
+      dispatch({ type: "GO", to: "onboarding" });
+      return;
+    }
+    if (screen.id === "skill-exercise") {
+      dispatch({ type: "OPEN_SKILL_EXERCISE", exerciseId: screen.exerciseId });
+      return;
+    }
+    if (screen.id === "lesson") return; // Not reachable from a URL alone.
+    dispatch({ type: "GO", to: screen.id });
   }, []);
 
-  useHashRouter(state, handleRouteScreenChange);
+  useHashRouter(state, handleRoute);
 
   useEffect(() => {
     registerServiceWorker();
@@ -246,8 +319,20 @@ function AppInner() {
   useEffect(() => startSystemThemeSync(), []);
 
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    } catch (error) {
+      // Safari private mode and quota exhaustion both throw here. This was
+      // previously unguarded inside an effect, so it took the app down.
+      // LearnerContext already wrapped its own writes; this one did not.
+      console.warn("Could not persist navigation state.", error);
+    }
   }, [state]);
+
+  // Announce navigation changes from an effect, not from the reducer.
+  useEffect(() => {
+    ariaLiveAnnounce(describeScreen(state, t));
+  }, [state, t]);
 
   function renderContent() {
     if (state.id === "onboarding") {
