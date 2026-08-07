@@ -2,8 +2,10 @@ import { useState } from "react";
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
-import { ArrowRight, Check, BookOpen, Target, Sparkles, Layers } from "lucide-react";
+import { ArrowRight, Check, BookOpen, Target, Sparkles, Layers, HelpCircle } from "lucide-react";
 import { useProgress } from "../data/progress";
+import { PlacementQuizModal } from "./PlacementQuizModal";
+import type { LearnerGoal } from "../context/LearnerContext";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -15,25 +17,39 @@ const LEVELS = [
   { id: "b1", title: "Intermediate", subtitle: "Expanding everyday vocabulary", tag: "B1" },
 ];
 
-const GOALS = [
-  { id: "5min", label: "5 mins / day", minutes: 5 },
-  { id: "10min", label: "10 mins / day", minutes: 10 },
-  { id: "15min", label: "15 mins / day", minutes: 15 },
+const GOAL_OPTIONS: Array<{ id: LearnerGoal; label: string }> = [
+  { id: "everyday", label: "Everyday English" },
+  { id: "travel", label: "Travel & Vacations" },
+  { id: "work", label: "Work & Career" },
+  { id: "school", label: "School & Studies" },
+  { id: "conversation", label: "Fluency & Chat" },
+  { id: "kids", label: "Children's English" },
 ];
 
 export function LanguageSelect({ dispatch }: Props) {
   const [level, setLevel] = useState<"A1" | "A2" | "B1">("A1");
-  const [goal, setGoal] = useState<number>(10);
+  const [goalMinutes, setGoalMinutes] = useState<number>(10);
+  const [selectedGoal, setSelectedGoal] = useState<LearnerGoal>("everyday");
+  const [isPlacementOpen, setIsPlacementOpen] = useState(false);
   const { setPreferences } = useProgress();
 
   const handleStart = () => {
-    setPreferences(level, goal);
+    setPreferences(level, goalMinutes, selectedGoal);
     dispatch({ type: "ONBOARD_NEXT" });
+  };
+
+  const handlePlacementComplete = (recommendedLevel: "A1" | "A2" | "B1") => {
+    setLevel(recommendedLevel);
   };
 
   return (
     <div className="bg-background flex flex-col md:flex-row min-h-svh md:min-h-[560px] relative overflow-hidden">
       <StatusBar />
+      <PlacementQuizModal
+        isOpen={isPlacementOpen}
+        onClose={() => setIsPlacementOpen(false)}
+        onCompleteLevel={handlePlacementComplete}
+      />
 
       {/* ── Desktop Left Hero Column ────────────────────────────────────────── */}
       <div className="hidden md:flex md:w-1/2 bg-slate-950 text-white relative overflow-hidden flex-col justify-between p-8 xl:p-12">
@@ -59,7 +75,7 @@ export function LanguageSelect({ dispatch }: Props) {
           <div className="bg-white/10 rounded-2xl p-4 border border-white/15 backdrop-blur-md flex items-center gap-3">
             <Sparkles className="size-6 text-wp-amber shrink-0" />
             <div className="text-xs font-sans text-white/90">
-              <span className="font-bold">Daily Streak Goal:</span> Just {goal} minutes per day keeps your vocabulary memory fresh!
+              <span className="font-bold">Daily Goal:</span> {goalMinutes} minutes per day keeps your vocabulary memory fresh!
             </div>
           </div>
         </div>
@@ -133,33 +149,37 @@ export function LanguageSelect({ dispatch }: Props) {
                 </button>
               );
             })}
+
+            <button
+              type="button"
+              onClick={() => setIsPlacementOpen(true)}
+              className="w-full py-2.5 px-4 rounded-xl border border-primary/30 bg-primary/5 hover:bg-primary/10 text-primary font-sans font-bold text-xs flex items-center justify-center gap-2 transition-colors min-h-[44px]"
+            >
+              <HelpCircle className="size-4" />
+              <span>I&apos;m not sure — test my level</span>
+            </button>
           </div>
 
-          {/* Daily Goal Segment Control */}
+          {/* Learning Goal Selector */}
           <div className="w-full flex flex-col gap-2">
             <label className="font-sans font-bold text-foreground text-sm">
-              Daily Goal
+              Why are you learning?
             </label>
-            <div role="radiogroup" aria-label="Select daily practice goal" className="grid grid-cols-3 gap-2">
-              {GOALS.map((item) => {
-                const isSelected = goal === item.minutes;
-                return (
-                  <button
-                    key={item.id}
-                    type="button"
-                    role="radio"
-                    aria-checked={isSelected}
-                    onClick={() => setGoal(item.minutes)}
-                    className={`py-3 px-2 rounded-xl border text-center transition-all min-h-[48px] flex items-center justify-center ${
-                      isSelected
-                        ? "bg-secondary border-primary border-[2px] text-primary font-bold shadow-wp-xs"
-                        : "bg-wp-card border-border text-muted-foreground font-semibold hover:border-primary/40"
-                    } focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary`}
-                  >
-                    <span className="font-sans text-xs">{item.label}</span>
-                  </button>
-                );
-              })}
+            <div className="grid grid-cols-2 gap-2">
+              {GOAL_OPTIONS.map((g) => (
+                <button
+                  key={g.id}
+                  type="button"
+                  onClick={() => setSelectedGoal(g.id)}
+                  className={`py-2.5 px-3 rounded-xl border text-xs font-sans font-semibold transition-all min-h-[44px] text-center ${
+                    selectedGoal === g.id
+                      ? "bg-secondary border-primary border-[2px] text-primary font-bold shadow-xs"
+                      : "bg-wp-card border-border text-muted-foreground hover:border-primary/40"
+                  }`}
+                >
+                  {g.label}
+                </button>
+              ))}
             </div>
           </div>
         </main>

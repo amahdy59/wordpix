@@ -2,7 +2,9 @@ import { memo, useState } from "react";
 import { AudioButton } from "../shared/AudioButton";
 import { WordImage } from "../shared/WordImage";
 import { BEDROOM_TOPICS, type VocabItem } from "../data/lessons";
-import { useProgress, type MasteryLevel } from "../data/progress";
+import { useProgress } from "../data/progress";
+import { type MasteryLevel } from "../context/LearnerContext";
+import { useAudio } from "../shared/useAudio";
 import { X, CheckCircle2 } from "lucide-react";
 
 interface Props {
@@ -37,6 +39,7 @@ export const VocabSidebar = memo(function VocabSidebar({
 }: Props) {
   const [selectedTopic, setSelectedTopic] = useState<string>("all");
   const { progress } = useProgress();
+  const { speak } = useAudio();
 
   const filteredVocabulary = selectedTopic === "all"
     ? vocabulary
@@ -69,125 +72,106 @@ export const VocabSidebar = memo(function VocabSidebar({
                 aria-label="Close vocabulary browser"
                 className="md:hidden size-11 rounded-xl border border-border flex items-center justify-center"
               >
-                <X className="size-5" aria-hidden />
+                <X className="size-5" />
               </button>
             )}
           </div>
         </div>
 
         {/* Topic Filter Chips */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar" aria-label="Filter vocabulary by topic">
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar">
           <button
             type="button"
-            aria-pressed={selectedTopic === "all"}
             onClick={() => setSelectedTopic("all")}
-            className={`px-3 py-1 rounded-full text-xs font-sans font-semibold shrink-0 transition-colors ${
+            className={`px-3 py-1 rounded-lg text-xs font-sans font-semibold shrink-0 transition-all ${
               selectedTopic === "all"
-                ? "bg-primary text-primary-foreground"
-                : "bg-secondary text-muted-foreground hover:text-foreground"
+                ? "bg-primary text-primary-foreground shadow-xs"
+                : "bg-muted text-muted-foreground hover:text-foreground"
             }`}
           >
             All ({vocabulary.length})
           </button>
-          {BEDROOM_TOPICS.map((topic) => (
-            <button
-              key={topic.id}
-              type="button"
-              aria-pressed={selectedTopic === topic.id}
-              onClick={() => setSelectedTopic(topic.id)}
-              className={`px-3 py-1 rounded-full text-xs font-sans font-semibold shrink-0 transition-colors ${
-                selectedTopic === topic.id
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              {topic.name}
-            </button>
-          ))}
+          {BEDROOM_TOPICS.map((topic) => {
+            const count = vocabulary.filter((v) => v.topic === topic.id).length;
+            const isSelected = selectedTopic === topic.id;
+            return (
+              <button
+                key={topic.id}
+                type="button"
+                onClick={() => setSelectedTopic(topic.id)}
+                className={`px-3 py-1 rounded-lg text-xs font-sans font-semibold shrink-0 transition-all ${
+                  isSelected
+                    ? "bg-primary text-primary-foreground shadow-xs"
+                    : "bg-muted text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {topic.name} ({count})
+              </button>
+            );
+          })}
         </div>
       </div>
 
-      {/* Scrollable vocabulary word list */}
-      <div
-        className="flex-1 min-h-0 overflow-y-auto overscroll-contain py-3 px-3 flex flex-col gap-1.5"
-        role="list"
-        aria-label="Vocabulary words"
-      >
+      {/* Vocabulary items list */}
+      <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-2">
         {filteredVocabulary.map((word) => {
-          const isActive = word.id === activeId;
-          const isAudioPlaying = isPlaying && isActive;
-          const masteryLevel = progress.wordMastery[word.id] || 0;
-          const badge = MASTERY_BADGES[masteryLevel];
+          const isSelected = word.id === activeId;
+          const levelNum = progress.wordMastery[word.id] || 0;
+          const badge = MASTERY_BADGES[levelNum as MasteryLevel];
 
           return (
             <div
               key={word.id}
-              role="listitem"
-              className={[
-                "w-full rounded-xl border p-2 flex items-center gap-2",
-                "motion-safe:transition-all group",
-                isActive
+              onClick={() => onSelectWord(word.id)}
+              className={`p-3 rounded-2xl border transition-all flex items-center gap-3 cursor-pointer ${
+                isSelected
                   ? "bg-secondary border-primary border-[2px] shadow-wp-xs"
-                  : "bg-background border-border hover:border-primary/40 hover:bg-secondary/40",
-              ].join(" ")}
+                  : "bg-wp-card border-border hover:border-primary/40"
+              }`}
             >
-              <button
-                type="button"
-                aria-pressed={isActive}
-                onClick={() => onSelectWord(word.id)}
-                className="flex flex-1 items-center gap-3 min-w-0 text-left rounded-lg focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
-              >
-                <div className="size-[56px] rounded-lg overflow-hidden shrink-0 border border-border bg-muted flex items-center justify-center relative">
-                  <WordImage word={word} width="56" height="56" className="size-full object-cover" />
-                  {masteryLevel === 3 && (
-                    <div className="absolute top-1 right-1 bg-wp-green text-white p-0.5 rounded-full shadow-sm">
-                      <CheckCircle2 className="size-3" />
-                    </div>
+              <div className="relative rounded-xl shrink-0 size-12 overflow-hidden border border-border bg-muted">
+                <WordImage word={word} width="48" height="48" className="size-full object-cover" />
+                {levelNum === 3 && (
+                  <div className="absolute top-1 right-1 bg-wp-green text-white p-0.5 rounded-full">
+                    <CheckCircle2 className="size-3" />
+                  </div>
+                )}
+              </div>
+
+              <div className="flex flex-col gap-0.5 flex-1 min-w-0">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="font-sans font-bold text-foreground text-sm">{word.label}</span>
+                  {badge && (
+                    <span className={`font-sans font-semibold text-[10px] px-2 py-0.5 rounded-full border ${badge.bg} ${badge.text}`}>
+                      {badge.label}
+                    </span>
                   )}
                 </div>
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-1.5 mb-0.5 flex-wrap">
-                    <span className={`font-sans font-bold text-base truncate ${isActive ? "text-primary" : "text-foreground"}`}>{word.label}</span>
-                    {badge && (
-                      <span className={`text-[10px] font-sans font-semibold border rounded-full px-1.5 py-0.5 shrink-0 ${badge.bg} ${badge.text}`}>
-                        {badge.label}
-                      </span>
-                    )}
-                  </div>
-                  <p className="font-sans text-muted-foreground text-xs">/{word.phonetic}/</p>
-                </div>
-              </button>
+                <span className="font-sans text-muted-foreground text-xs font-medium">/{word.phonetic}/</span>
+              </div>
+
               <AudioButton
-                onPlay={() => onSelectWord(word.id)}
-                isPlaying={isAudioPlaying}
-                isError={isError}
-                label={`Play pronunciation of ${word.label}`}
+                onPlay={() => speak(word.label)}
+                label={word.label}
                 size="sm"
+                isPlaying={isSelected && isPlaying}
+                isError={isSelected && isError}
               />
             </div>
           );
         })}
       </div>
 
-      {/* Active word detail card + CTA */}
-      <div className="shrink-0 border-t border-border p-4 bg-secondary/30">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="size-12 rounded-xl overflow-hidden border border-border shrink-0 bg-muted">
-            <WordImage word={activeWord} width="48" height="48" className="size-full object-cover" />
-          </div>
-          <div className="flex-1 min-w-0">
-            <p className="font-sans font-black text-foreground text-xl leading-none">{activeWord.label}</p>
-            <p className="font-sans font-medium text-muted-foreground text-xs mt-1">/{activeWord.phonetic}/</p>
-          </div>
-        </div>
+      {/* Panel footer CTA */}
+      <div className="p-4 border-t border-border shrink-0 bg-wp-card">
         <button
           type="button"
           onClick={onLearnWord}
-          className="w-full bg-wp-blue rounded-xl py-3.5 font-sans font-bold text-white text-base min-h-[52px]
+          className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 font-sans font-bold text-white text-sm min-h-[48px]
             focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
-            motion-safe:transition-opacity hover:opacity-90 active:opacity-80 shadow-wp-xs"
+            shadow-wp-xs transition-all flex items-center justify-center gap-2"
         >
-          Start Group Practice →
+          <span>Start Group Practice →</span>
         </button>
       </div>
     </aside>

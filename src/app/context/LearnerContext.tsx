@@ -1,12 +1,15 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from "react";
 import type { AnswerAttempt } from "../types";
 import { updateStreak, getLocalDateString } from "../../features/gamification/streak";
+import { calculateSM2State, createInitialWordState, type WordLearningState } from "../../features/gamification/sm2";
 
 export type MasteryLevel = 0 | 1 | 2 | 3;
+export type LearnerGoal = "everyday" | "travel" | "work" | "school" | "conversation" | "kids";
 
 export interface LearnerPreferences {
   englishLevel: "A1" | "A2" | "B1";
   dailyGoalMinutes: number;
+  goal: LearnerGoal;
 }
 
 export interface LearnerProgressStats {
@@ -29,17 +32,18 @@ export interface LearnerStateSchema {
   version: number;
   preferences: LearnerPreferences;
   learnerProgress: LearnerProgressStats;
-  wordMemory: Record<string, MasteryLevel>;
+  wordMemory: Record<string, WordLearningState>;
   sessionHistory: SessionRecord[];
 }
 
-const STORAGE_KEY = "wordpix:learner:v1";
+const STORAGE_KEY = "wordpix:learner:v2";
 
 export const INITIAL_LEARNER_STATE: LearnerStateSchema = {
   version: 1,
   preferences: {
     englishLevel: "A1",
     dailyGoalMinutes: 10,
+    goal: "everyday",
   },
   learnerProgress: {
     xp: 0,
@@ -53,47 +57,38 @@ export const INITIAL_LEARNER_STATE: LearnerStateSchema = {
   sessionHistory: [],
 };
 
-/**
- * Migration engine: converts older storage schemas to current version safely.
- */
-
 function migrateState(savedData: any): LearnerStateSchema {
   if (!savedData || typeof savedData !== "object") return INITIAL_LEARNER_STATE;
 
-  // If unversioned v2/v3 legacy data exists from early prototypes
-  if (!savedData.version) {
-    const legacyXP = typeof savedData.xp === "number" ? savedData.xp : 0;
-    const legacyStreak = typeof savedData.streak === "number" ? savedData.streak : 0;
-    const legacyMastery = savedData.wordMastery && typeof savedData.wordMastery === "object" ? savedData.wordMastery : {};
-    return {
-      ...INITIAL_LEARNER_STATE,
-      learnerProgress: {
-        ...INITIAL_LEARNER_STATE.learnerProgress,
-        xp: legacyXP,
-        streak: legacyStreak,
-      },
-      wordMemory: legacyMastery,
-    };
-  }
+  const rawMemory = savedData.wordMemory && typeof savedData.wordMemory === "object" ? savedData.wordMemory : {};
+  const normalizedMemory: Record<string, WordLearningState> = {};
 
-  // Current Version 1 Schema Validation
-  if (savedData.version === 1) {
-    return {
-      version: 1,
-      preferences: {
-        ...INITIAL_LEARNER_STATE.preferences,
-        ...savedData.preferences,
-      },
-      learnerProgress: {
-        ...INITIAL_LEARNER_STATE.learnerProgress,
-        ...savedData.learnerProgress,
-      },
-      wordMemory: savedData.wordMemory && typeof savedData.wordMemory === "object" ? savedData.wordMemory : {},
-      sessionHistory: Array.isArray(savedData.sessionHistory) ? savedData.sessionHistory : [],
-    };
-  }
+  Object.keys(rawMemory).forEach((wordId) => {
+    const val = rawMemory[wordId];
+    if (typeof val === "object" && val.wordId) {
+      normalizedMemory[wordId] = val;
+    } else if (typeof val === "number") {
+      // Migrate legacy numeric mastery levels (1, 2, 3) to SM-2 WordLearningState
+      const base = createInitialWordState(wordId);
+      base.intervalDays = val === 3 ? 14 : val === 2 ? 6 : 1;
+      base.mastery = val === 3 ? "strong" : val === 2 ? "familiar" : "learning";
+      normalizedMemory[wordId] = base;
+    }
+  });
 
-  return INITIAL_LEARNER_STATE;
+  return {
+    version: 1,
+    preferences: {
+      ...INITIAL_LEARNER_STATE.preferences,
+      ...savedData.preferences,
+    },
+    learnerProgress: {
+      ...INITIAL_LEARNER_STATE.learnerProgress,
+      ...savedData.learnerProgress,
+    },
+    wordMemory: normalizedMemory,
+    sessionHistory: Array.isArray(savedData.sessionHistory) ? savedData.sessionHistory : [],
+  };
 }
 
 function loadLearnerState(): LearnerStateSchema {
@@ -119,9 +114,8 @@ function saveLearnerState(state: LearnerStateSchema) {
 interface LearnerContextType {
   state: LearnerStateSchema;
   addXP: (amount: number) => void;
-  setWordMastery: (wordId: string, level: MasteryLevel) => void;
   recordSessionCompletion: (sessionId: string, attempts: AnswerAttempt[], wordQueue: string[]) => void;
-  setPreferences: (level: "A1" | "A2" | "B1", dailyGoalMinutes: number) => void;
+  setPreferences: (level: "A1" | "A2" | "B1", dailyGoalMinutes: number, goal?: LearnerGoal) => void;
   resetToZero: () => void;
 }
 
@@ -141,16 +135,6 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
       learnerProgress: {
         ...prev.learnerProgress,
         xp: prev.learnerProgress.xp + amount,
-      },
-    }));
-  }, []);
-
-  const setWordMastery = useCallback((wordId: string, level: MasteryLevel) => {
-    setState((prev) => ({
-      ...prev,
-      wordMemory: {
-        ...prev.wordMemory,
-        [wordId]: level,
       },
     }));
   }, []);
@@ -183,7 +167,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
       const correctAttempts = attempts.filter((a) => a.correct);
       const xpEarned = correctAttempts.length * 10;
 
-      // Group attempts by wordId to calculate per-word accuracy
+      // Group attempts by wordId to calculate SM-2 recall quality
       const wordAttempts: Record<string, { correct: number; total: number }> = {};
       attempts.forEach((a) => {
         if (!wordAttempts[a.wordId]) {
@@ -197,19 +181,21 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
 
       wordQueue.forEach((wordId) => {
         const perf = wordAttempts[wordId];
-        const currentLevel = updatedMemory[wordId] || 0;
+        const existingState = updatedMemory[wordId] || createInitialWordState(wordId);
 
         if (!perf || perf.total === 0) {
-          updatedMemory[wordId] = Math.max(currentLevel, 1) as MasteryLevel;
+          // Unanswered word: mark exposed once
+          updatedMemory[wordId] = {
+            ...existingState,
+            exposures: existingState.exposures + 1,
+            lastSeenAt: new Date().toISOString(),
+          };
         } else {
+          // Convert accuracy to SM-2 quality rating (0 to 5)
           const accuracy = perf.correct / perf.total;
-          if (accuracy >= 0.8) {
-            updatedMemory[wordId] = Math.min(3, Math.max(1, currentLevel + 1)) as MasteryLevel;
-          } else if (accuracy >= 0.5) {
-            updatedMemory[wordId] = Math.max(currentLevel, 2) as MasteryLevel;
-          } else {
-            updatedMemory[wordId] = Math.min(currentLevel, 1) as MasteryLevel;
-          }
+          const quality = accuracy >= 0.9 ? 5 : accuracy >= 0.7 ? 4 : accuracy >= 0.5 ? 3 : 1;
+
+          updatedMemory[wordId] = calculateSM2State(existingState, quality);
         }
       });
 
@@ -237,12 +223,13 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     });
   }, []);
 
-  const setPreferences = useCallback((level: "A1" | "A2" | "B1", dailyGoalMinutes: number) => {
+  const setPreferences = useCallback((level: "A1" | "A2" | "B1", dailyGoalMinutes: number, goal: LearnerGoal = "everyday") => {
     setState((prev) => ({
       ...prev,
       preferences: {
         englishLevel: level,
         dailyGoalMinutes,
+        goal,
       },
     }));
   }, []);
@@ -256,7 +243,6 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
       value={{
         state,
         addXP,
-        setWordMastery,
         recordSessionCompletion,
         setPreferences,
         resetToZero,

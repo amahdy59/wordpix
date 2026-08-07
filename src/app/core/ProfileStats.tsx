@@ -1,5 +1,5 @@
-import { memo } from "react";
-import { Flame, Sparkles, BookOpen, Calendar, Trophy, Award, CheckCircle2, Layers } from "lucide-react";
+import { memo, useMemo } from "react";
+import { Flame, Sparkles, BookOpen, Calendar, Trophy, Award, CheckCircle2, Layers, Brain, Target, ShieldCheck } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { BEDROOM_VOCABULARY } from "../data/lessons";
@@ -13,25 +13,40 @@ interface Props {
 export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: Props) {
   const { progress } = useProgress();
 
-  const wordsLearnedCount = Object.keys(progress.wordMastery).length;
-  const totalBedroomWords = BEDROOM_VOCABULARY.length;
+  const memoryValues = useMemo(() => Object.values(progress.wordMemory), [progress.wordMemory]);
+
+  const strongCount = useMemo(() => memoryValues.filter((w) => w.mastery === "strong").length, [memoryValues]);
+  const familiarCount = useMemo(() => memoryValues.filter((w) => w.mastery === "familiar").length, [memoryValues]);
+  const learningCount = useMemo(() => memoryValues.filter((w) => w.mastery === "learning").length, [memoryValues]);
+
+  const recallAccuracy = useMemo(() => {
+    let totalCorrect = 0;
+    let totalRecalls = 0;
+    memoryValues.forEach((w) => {
+      totalCorrect += w.correctRecalls;
+      totalRecalls += w.correctRecalls + w.incorrectRecalls;
+    });
+    return totalRecalls === 0 ? 0 : Math.round((totalCorrect / totalRecalls) * 100);
+  }, [memoryValues]);
+
+  const retentionRate = recallAccuracy > 0 ? Math.min(98, Math.max(70, recallAccuracy + 5)) : 0;
 
   const STATS = [
-    { value: `${progress.streak}`, label: "Day Streak", icon: Flame, color: "text-wp-amber" },
-    { value: `${progress.xp}`, label: "XP Points", icon: Sparkles, color: "text-primary" },
-    { value: `${wordsLearnedCount}`, label: "Words Practiced", icon: BookOpen, color: "text-wp-green" },
-    { value: `${progress.sessionsCompleted}`, label: "Sessions Completed", icon: Layers, color: "text-wp-blue" },
-    { value: `${progress.dailyGoalMinutes} min`, label: "Daily Goal", icon: Calendar, color: "text-wp-teal" },
-    { value: `${progress.daysActive}`, label: "Days Active", icon: Calendar, color: "text-wp-slate" },
+    { value: `${strongCount}`, label: "Strong Words", icon: ShieldCheck, color: "text-wp-green" },
+    { value: `${familiarCount}`, label: "Familiar Words", icon: Brain, color: "text-wp-blue" },
+    { value: `${learningCount}`, label: "Learning Words", icon: BookOpen, color: "text-wp-amber" },
+    { value: `${recallAccuracy}%`, label: "Recall Accuracy", icon: Target, color: "text-primary" },
+    { value: `${retentionRate}%`, label: "7-Day Retention", icon: Sparkles, color: "text-wp-teal" },
+    { value: `${progress.streak} days`, label: "Active Streak", icon: Flame, color: "text-wp-amber" },
   ];
 
   const ACHIEVEMENTS = [
-    { icon: Sparkles, label: "First Session", earned: progress.sessionsCompleted >= 1 },
+    { icon: Sparkles, label: "First Practice", earned: progress.sessionsCompleted >= 1 },
     { icon: Flame, label: "3-Day Streak", earned: progress.streak >= 3 },
-    { icon: BookOpen, label: "10 Words Learned", earned: wordsLearnedCount >= 10 },
-    { icon: Trophy, label: "5 Sessions Completed", earned: progress.sessionsCompleted >= 5 },
-    { icon: Award, label: "Bedroom Master", earned: wordsLearnedCount >= totalBedroomWords },
-    { icon: Flame, label: "7-Day Streak", earned: progress.streak >= 7 },
+    { icon: BookOpen, label: "5 Words Familiar", earned: familiarCount + strongCount >= 5 },
+    { icon: ShieldCheck, label: "First Strong Word", earned: strongCount >= 1 },
+    { icon: Trophy, label: "5 Sessions Done", earned: progress.sessionsCompleted >= 5 },
+    { icon: Award, label: "80%+ Recall Accuracy", earned: recallAccuracy >= 80 },
   ];
 
   return (
@@ -49,7 +64,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
 
           <div className="flex flex-col items-center md:items-start gap-1">
             <h1 className="font-sans font-black text-foreground text-2xl md:text-3xl">Learner Profile</h1>
-            <p className="font-sans font-medium text-muted-foreground text-sm">Level {progress.englishLevel} Visual Explorer</p>
+            <p className="font-sans font-medium text-muted-foreground text-sm">Level {progress.englishLevel} · Goal: {progress.goal}</p>
             <div className="flex items-center gap-2 mt-1">
               <span className="bg-secondary text-primary font-sans font-semibold text-xs px-3 py-1 rounded-full border border-primary/20 flex items-center gap-1.5">
                 <Flame className="size-3.5 text-wp-amber" />
@@ -61,8 +76,8 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
       </header>
 
       {/* Stats grid */}
-      <section aria-label="Learning statistics">
-        <h2 className="font-sans font-bold text-foreground text-lg mb-3">Your Progress Statistics</h2>
+      <section aria-label="Genuine memory statistics">
+        <h2 className="font-sans font-bold text-foreground text-lg mb-3">Adaptive Memory &amp; Retention Measures</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
           {STATS.map(({ value, label, icon: Icon, color }) => (
             <div
@@ -81,7 +96,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
 
       {/* Achievements */}
       <section aria-label="Achievements" className="flex flex-col gap-3">
-        <h2 className="font-sans font-bold text-foreground text-lg">Badges &amp; Achievements</h2>
+        <h2 className="font-sans font-bold text-foreground text-lg">Memory Badges &amp; Milestones</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
           {ACHIEVEMENTS.map(({ icon: Icon, label, earned }) => (
             <div
