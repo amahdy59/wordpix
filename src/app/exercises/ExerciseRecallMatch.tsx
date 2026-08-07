@@ -154,7 +154,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
           </button>
         </div>
 
-        {/* Expansive Card Image Selection Grid */}
+        {/* Expansive Card Image Selection Grid (Zero Layout Shift Microinteractions) */}
         <div
           role="radiogroup"
           aria-label="Choose matching picture for audio prompt"
@@ -164,12 +164,13 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             const isSelected = selectedId === card.id;
             const isTargetCompleted = completedWordIds.has(card.id);
 
-            let cardStyle = "border-border bg-wp-card hover:border-primary/50 hover:shadow-md";
+            // Constant border thickness (border-2) prevents pixel expansion/layout shift
+            let cardStateStyle = "border-2 border-border bg-wp-card hover:border-primary/50 hover:shadow-md";
             if (isSelected) {
-              if (feedback === "correct") cardStyle = "border-wp-green border-[3px] bg-wp-green-light/40 ring-4 ring-wp-green/20 scale-102";
-              if (feedback === "incorrect") cardStyle = "border-wp-rose border-[3px] bg-wp-rose-light/40 animate-bounce";
+              if (feedback === "correct") cardStateStyle = "border-2 border-wp-green bg-wp-green-light/40 shadow-md";
+              if (feedback === "incorrect") cardStateStyle = "border-2 border-wp-rose bg-wp-rose-light/40 shadow-md animate-wp-shake";
             } else if (isTargetCompleted) {
-              cardStyle = "border-wp-green/40 bg-wp-green-light/10 opacity-75";
+              cardStateStyle = "border-2 border-wp-green/40 bg-wp-green-light/10 opacity-75";
             }
 
             return (
@@ -180,10 +181,10 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 aria-checked={isSelected}
                 disabled={feedback === "correct"}
                 onClick={() => handleCardClick(card)}
-                className={`group relative rounded-3xl border overflow-hidden p-2 flex flex-col items-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all min-h-[220px] shadow-wp-xs ${cardStyle}`}
+                className={`group relative rounded-3xl overflow-hidden p-2 flex flex-col items-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 min-h-[220px] shadow-wp-xs ${cardStateStyle}`}
               >
-                {/* Physical Key Badge */}
-                <div className="absolute top-3 left-3 z-10 bg-slate-900/90 text-white text-xs font-mono font-black px-2.5 py-1 rounded-xl border border-white/20 shadow-md backdrop-blur-md flex items-center gap-1.5">
+                {/* Physical Key Cap Badge */}
+                <div className="absolute top-3 left-3 z-10 bg-slate-900/90 text-white text-xs font-mono font-black px-2.5 py-1 rounded-xl border border-white/20 shadow-md backdrop-blur-md flex items-center gap-1.5 pointer-events-none">
                   <kbd className="bg-white/20 text-white px-1.5 py-0.5 rounded text-[11px] font-mono font-bold">Key [{idx + 1}]</kbd>
                 </div>
 

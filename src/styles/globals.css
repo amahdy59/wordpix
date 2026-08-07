@@ -1,9 +1,19 @@
-/* ─── WordPix Typography Utilities ──────────────────────────────────────────
+/* ─── WordPix Typography & Animation Utilities ──────────────────────────────────
    Named type styles matching the Untitled UI v8 / WordPix token sheet.
    ONLY Inter and Noto Sans Arabic are used — set via --wp-font-base / --wp-font-arabic.
    ─────────────────────────────────────────────────────────────────────────── */
 
+@keyframes wp-shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-4px); }
+  40%, 80% { transform: translateX(4px); }
+}
+
 @layer utilities {
+  .animate-wp-shake {
+    animation: wp-shake 0.35s ease-in-out;
+  }
+
   /* Raw size helpers */
   .wp-text-xs  { font-size: var(--wp-text-xs);  line-height: 1.5; } /* 12px */
   .wp-text-sm  { font-size: var(--wp-text-sm);  line-height: 1.5; } /* 14px */
@@ -100,9 +110,6 @@
 
   /* ─── Interaction utilities ─────────────────────────────────────────────── */
 
-  /* Accessible focus ring — WCAG 2.4.13 AAA
-     3px outline + 2px offset; brand color gives 3.6:1 contrast on white.
-     Satisfies minimum area requirement (perimeter × 2px) for AAA. */
   .wp-focus {
     @apply focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary;
   }
