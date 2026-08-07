@@ -102,9 +102,9 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         {isPlaying ? `Now playing: ${currentWord.label}` : ""}
       </div>
 
-      <div className="flex flex-col gap-5 w-full max-w-lg mx-auto">
+      <div className="flex flex-col gap-5 w-full">
         {/* Header note */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between px-1">
           <div className="flex items-center gap-2 text-primary font-sans font-bold text-sm">
             {isPlaying ? (
               <><Volume2 className="size-5 animate-pulse text-wp-blue" /><span>Listening to &ldquo;{currentWord.label}&rdquo;…</span></>
@@ -149,6 +149,15 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               </button>
             );
           })}
+        </div>
+
+        {/* Large Hero Target Image Display */}
+        <div className="h-56 sm:h-64 w-full relative rounded-3xl overflow-hidden border border-border shadow-wp-md bg-muted shrink-0">
+          <WordImage word={currentWord} width="800" height="600" className="size-full object-cover" />
+          <div className="absolute top-3.5 left-3.5 bg-black/65 backdrop-blur-md text-white font-sans font-bold text-xs px-3.5 py-1.5 rounded-xl border border-white/20 shadow-md flex items-center gap-2">
+            <Sparkles className="size-4 text-wp-amber animate-pulse" />
+            <span>Target Visual: {currentWord.label}</span>
+          </div>
         </div>
 
         {/* Active Audio Waveform Play Card */}

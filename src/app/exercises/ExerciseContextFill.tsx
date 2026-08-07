@@ -6,6 +6,7 @@ import { articleFor } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
+import { Sparkles } from "lucide-react";
 
 interface Props {
   step: number;
@@ -118,23 +119,21 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
           </span>
         </div>
 
-        {/* Target Image Preview Card */}
-        <div className="bg-wp-card border border-border rounded-2xl p-4 flex items-center gap-4 shadow-wp-xs">
-          <div className="size-20 rounded-xl overflow-hidden shrink-0 border border-border bg-muted">
-            <WordImage word={currentTargetWord} width="80" height="80" className="size-full object-cover" />
-          </div>
-          <div>
-            <h2 className="font-sans font-bold text-foreground text-xl">Fill in the blank</h2>
-            <p className="font-sans text-muted-foreground text-xs mt-0.5">Match the image context to complete the sentence.</p>
+        {/* Large Prominent Hero Target Image Display */}
+        <div className="h-56 sm:h-64 w-full relative rounded-3xl overflow-hidden border border-border shadow-wp-md bg-muted shrink-0">
+          <WordImage word={currentTargetWord} width="800" height="600" className="size-full object-cover" />
+          <div className="absolute top-3.5 left-3.5 bg-black/65 backdrop-blur-md text-white font-sans font-bold text-xs px-3.5 py-1.5 rounded-xl border border-white/20 shadow-md flex items-center gap-2">
+            <Sparkles className="size-4 text-wp-amber animate-pulse" />
+            <span>Target Visual Clue</span>
           </div>
         </div>
 
-        {/* Beautiful Centered Sentence Display Box */}
-        <div className="bg-wp-card rounded-2xl border border-border p-6 text-center shadow-wp-xs flex flex-col items-center justify-center gap-2">
+        {/* Centered Sentence Display Box */}
+        <div className="bg-wp-card rounded-2xl border border-border p-5 text-center shadow-wp-xs flex flex-col items-center justify-center gap-2">
           <span className="font-sans font-bold text-[11px] text-primary uppercase tracking-wider">
             Sentence Context
           </span>
-          <p className="font-sans font-black text-foreground text-2xl md:text-3xl leading-relaxed flex items-center justify-center flex-wrap gap-2 py-2">
+          <p className="font-sans font-black text-foreground text-2xl md:text-3xl leading-relaxed flex items-center justify-center flex-wrap gap-2 py-1">
             <span>This is {articleFor(currentTargetWord.label)}</span>
             <span
               className={`inline-flex items-center justify-center min-w-[140px] h-12 px-4 rounded-xl border-2 transition-all font-sans font-black text-xl shadow-xs ${

@@ -4,7 +4,7 @@ import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { articleFor } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
-import { PenTool } from "lucide-react";
+import { PenTool, Sparkles } from "lucide-react";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
 
@@ -124,18 +124,16 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
           </span>
         </div>
 
-        {/* Target Image Preview Card */}
-        <div className="bg-wp-card border border-border rounded-2xl p-4 flex items-center gap-4 shadow-wp-xs">
-          <div className="size-20 rounded-xl overflow-hidden shrink-0 border border-border bg-muted">
-            <WordImage word={currentTargetWord} width="80" height="80" className="size-full object-cover" />
-          </div>
-          <div>
-            <h2 className="font-sans font-bold text-foreground text-xl">Describe the picture</h2>
-            <p className="font-sans text-muted-foreground text-xs mt-0.5">Build a complete sentence for this item.</p>
+        {/* Large Prominent Hero Target Image Display */}
+        <div className="h-56 sm:h-64 w-full relative rounded-3xl overflow-hidden border border-border shadow-wp-md bg-muted shrink-0">
+          <WordImage word={currentTargetWord} width="800" height="600" className="size-full object-cover" />
+          <div className="absolute top-3.5 left-3.5 bg-black/65 backdrop-blur-md text-white font-sans font-bold text-xs px-3.5 py-1.5 rounded-xl border border-white/20 shadow-md flex items-center gap-2">
+            <Sparkles className="size-4 text-wp-amber animate-pulse" />
+            <span>Target Image: {currentTargetWord.label}</span>
           </div>
         </div>
 
-        {/* Sentence Assembly Area */}
+        {/* Sentence Assembly Canvas */}
         <div className="bg-wp-card rounded-2xl border-2 border-primary/30 p-5 w-full flex flex-col gap-2 shadow-wp-xs">
           <span className="font-sans font-bold text-[11px] text-primary uppercase tracking-wider">
             Sentence Assembly Canvas
