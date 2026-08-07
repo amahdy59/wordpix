@@ -59,6 +59,20 @@
   --wp-font-base:       'Inter', 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
   --wp-font-arabic:     'Noto Sans Arabic', 'Cairo', sans-serif;
 
+  /* Type scale — consumed by the .wp-text-* and .wp-type-* utilities in
+     globals.css. These were referenced there from the start but never actually
+     declared, so every `font-size: var(--wp-text-lg)` resolved invalid and the
+     element silently fell back to its inherited size. */
+  --wp-text-xs:         0.75rem;   /* 12px */
+  --wp-text-sm:         0.875rem;  /* 14px */
+  --wp-text-md:         1rem;      /* 16px */
+  --wp-text-lg:         1.125rem;  /* 18px */
+  --wp-text-xl:         1.25rem;   /* 20px */
+  --wp-text-2xl:        1.5rem;    /* 24px */
+  --wp-text-3xl:        1.75rem;   /* 28px */
+  --wp-text-4xl:        2rem;      /* 32px */
+  --wp-text-5xl:        2.5rem;    /* 40px */
+
   /* Semantic Bridge Tokens */
   --background:         var(--wp-surface);
   --foreground:         var(--wp-text);

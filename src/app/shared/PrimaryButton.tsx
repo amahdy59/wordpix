@@ -9,9 +9,11 @@ interface Props {
 
 /** Full-width CTA button — 56 px tall, meets 44 px minimum touch target. */
 export const PrimaryButton = memo(function PrimaryButton({ label, onClick, disabled, variant = "blue" }: Props) {
+  // Each fill carries its own checked foreground. A bare text-white here
+  // measured 2.72:1 against the dark-mode brand.
   const colorClass = variant === "brand"
-    ? "bg-primary focus-visible:outline-primary"
-    : "bg-wp-blue focus-visible:outline-wp-blue";
+    ? "bg-primary text-wp-text-on-brand focus-visible:outline-primary"
+    : "bg-wp-blue text-wp-text-on-blue focus-visible:outline-wp-blue";
 
   return (
     <button
@@ -20,7 +22,7 @@ export const PrimaryButton = memo(function PrimaryButton({ label, onClick, disab
       onClick={onClick}
       className={`${colorClass} content-stretch flex h-[56px] items-center justify-center relative rounded-xl shrink-0 w-full motion-safe:transition-all active:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 disabled:opacity-40 disabled:cursor-not-allowed shadow-wp-xs`}
     >
-      <span className="font-sans font-bold leading-[24px] text-[16px] text-white">
+      <span className="wp-type-body-emphasis text-current font-bold">
         {label}
       </span>
     </button>

@@ -9,6 +9,35 @@
   40%, 80% { transform: translateX(4px); }
 }
 
+/* ─── Reduced motion (WCAG 2.2.2, 2.3.3) ────────────────────────────────────
+   The codebase guards motion per-class with Tailwind's `motion-safe:` variant,
+   which was applied inconsistently — most animate-pulse, every animate-wp-shake,
+   and the modal's animate-bounce ran unguarded. wp-shake in particular is a
+   horizontal oscillation fired on every wrong answer, which is a vestibular
+   trigger.
+
+   This is the backstop: opting out is now the default for anyone who asks for
+   it, and a missing `motion-safe:` can no longer put motion on screen.
+   ─────────────────────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Keep state changes legible: replace the shake with a static emphasis
+     rather than simply removing the only signal that an answer was wrong. */
+  .animate-wp-shake {
+    animation: none !important;
+    outline: 2px solid var(--wp-rose);
+    outline-offset: 2px;
+  }
+}
+
 @layer utilities {
   .animate-wp-shake {
     animation: wp-shake 0.35s ease-in-out;

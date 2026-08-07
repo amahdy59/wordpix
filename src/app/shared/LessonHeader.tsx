@@ -31,7 +31,7 @@ export const LessonHeader = memo(function LessonHeader({
         <div className="shrink-0">
           <BackButton onClick={onBack} />
         </div>
-        <h1 className="font-sans font-semibold leading-[24px] not-italic text-foreground text-[16px] truncate text-center flex-1 min-w-0 px-2">
+        <h1 className="wp-type-body-emphasis truncate text-center flex-1 min-w-0 px-2">
           {title}
         </h1>
         <div className="shrink-0">
