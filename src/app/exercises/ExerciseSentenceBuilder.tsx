@@ -4,7 +4,7 @@ import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getRichSentence } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
-import { PenTool, Sparkles } from "lucide-react";
+import { PenTool, Sparkles, CheckCircle2, XCircle, ArrowRight, RotateCcw } from "lucide-react";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
 
@@ -84,31 +84,75 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
       groupId={groupId}
       dispatch={dispatch}
       footer={
-        <div className="flex flex-col gap-1.5">
-          {placed.length < answer.length && !checked && (
-            <p className="text-[11px] font-sans font-semibold text-center text-amber-600 dark:text-amber-400">
-              Tap tiles below in correct order to build the sentence
-            </p>
+        <div className="w-full flex flex-col gap-2">
+          {/* Pinned Footer Feedback Banner (Option A: Zero Layout Shift) */}
+          {checked ? (
+            <div
+              role="status"
+              aria-live="polite"
+              className={`w-full rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-md transition-all ${
+                isCorrect
+                  ? "bg-wp-green text-white border border-wp-green"
+                  : "bg-wp-rose text-white border border-wp-rose"
+              }`}
+            >
+              <div className="flex items-center gap-3">
+                {isCorrect ? (
+                  <CheckCircle2 className="size-7 shrink-0 text-white animate-in zoom-in" />
+                ) : (
+                  <XCircle className="size-7 shrink-0 text-white animate-in zoom-in" />
+                )}
+                <div>
+                  <h3 className="font-sans font-black text-base leading-tight">
+                    {isCorrect ? "✓ Great Sentence Structure!" : "Try Re-ordering"}
+                  </h3>
+                  <p className="font-sans text-xs text-white/95 mt-0.5">
+                    {isCorrect
+                      ? `"${richSentence.full}"`
+                      : `Correct order: "${answer.join(" ")}"`}
+                  </p>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                onClick={handleAction}
+                className={`w-full sm:w-auto px-6 py-3 rounded-xl font-sans font-bold text-sm flex items-center justify-center gap-2 shrink-0 shadow-sm transition-all ${
+                  isCorrect
+                    ? "bg-white text-wp-green hover:bg-white/90"
+                    : "bg-white text-wp-rose hover:bg-white/90"
+                }`}
+              >
+                <span>
+                  {isCorrect
+                    ? questionIndex + 1 < words.length
+                      ? "Next Sentence →"
+                      : "Continue to Quick Quiz →"
+                    : "Try Again"}
+                </span>
+                {isCorrect ? <ArrowRight className="size-4" /> : <RotateCcw className="size-4" />}
+              </button>
+            </div>
+          ) : (
+            <div className="flex flex-col gap-1.5">
+              {placed.length < answer.length && (
+                <p className="text-[11px] font-sans font-semibold text-center text-amber-600 dark:text-amber-400">
+                  Tap tiles below in correct order to build the sentence
+                </p>
+              )}
+              <button
+                type="button"
+                onClick={handleAction}
+                className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] transition-all shadow-wp-xs ${
+                  shaking ? "animate-wp-shake" : ""
+                } ${
+                  placed.length === answer.length ? "bg-wp-blue opacity-100" : "bg-wp-blue opacity-50"
+                }`}
+              >
+                Check Sentence
+              </button>
+            </div>
           )}
-          <button
-            type="button"
-            onClick={handleAction}
-            className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] transition-all shadow-wp-xs ${
-              shaking ? "animate-bounce" : ""
-            } ${
-              checked
-                ? isCorrect ? "bg-wp-green" : "bg-wp-rose"
-                : placed.length === answer.length ? "bg-wp-blue opacity-100" : "bg-wp-blue opacity-50"
-            }`}
-          >
-            {checked
-              ? isCorrect
-                ? questionIndex + 1 < words.length
-                  ? `Next Sentence (${questionIndex + 2}/${words.length}) →`
-                  : "Continue to Quick Quiz →"
-                : "Try Again"
-              : "Check Sentence"}
-          </button>
         </div>
       }
     >
@@ -171,27 +215,13 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
                 type="button"
                 disabled={checked || used}
                 onClick={() => handleTileClick(item)}
-                className="bg-wp-card rounded-2xl border border-border px-6 py-3.5 font-sans font-bold text-foreground text-base disabled:opacity-30 min-h-[52px] hover:border-primary hover:bg-secondary/50 transition-all shadow-wp-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+                className="bg-wp-card rounded-2xl border-2 border-border px-6 py-3.5 font-sans font-bold text-foreground text-base disabled:opacity-30 min-h-[52px] hover:border-primary hover:bg-secondary/50 transition-colors duration-200 shadow-wp-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
               >
                 {item}
               </button>
             );
           })}
         </div>
-
-        {checked && (
-          <div
-            role="status"
-            aria-live="polite"
-            className={`w-full rounded-2xl p-4 text-sm font-sans font-bold text-center border shadow-xs transition-all ${
-              isCorrect
-                ? "bg-wp-green text-white border-wp-green"
-                : "bg-wp-rose text-white border-wp-rose"
-            }`}
-          >
-            {isCorrect ? `✓ Great sentence! "${richSentence.full}"` : `Try this order: ${answer.join(" ")}.`}
-          </div>
-        )}
       </div>
     </ExerciseShell>
   );

@@ -4,7 +4,7 @@ import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { WordImage } from "../shared/WordImage";
 import { useAudio } from "../shared/useAudio";
-import { Volume2, CheckCircle2, RefreshCw, Keyboard } from "lucide-react";
+import { Volume2, CheckCircle2, XCircle, RefreshCw, Keyboard, ArrowRight } from "lucide-react";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
 
@@ -50,6 +50,16 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
     speak(currentTargetWord.label);
   }, [stop, speak, currentTargetWord.label]);
 
+  const advanceNext = useCallback(() => {
+    if (targetIndex + 1 < words.length) {
+      setTargetIndex((i) => i + 1);
+      setSelectedId(null);
+      setFeedback(null);
+    } else {
+      dispatch({ type: "LESSON_NEXT" });
+    }
+  }, [targetIndex, words.length, dispatch]);
+
   const handleCardClick = useCallback((card: VocabItem) => {
     if (feedback === "correct") return;
 
@@ -64,15 +74,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       newCompleted.add(card.id);
       setCompletedWordIds(newCompleted);
 
-      setTimeout(() => {
-        if (targetIndex + 1 < words.length) {
-          setTargetIndex((i) => i + 1);
-          setSelectedId(null);
-          setFeedback(null);
-        } else {
-          dispatch({ type: "LESSON_NEXT" });
-        }
-      }, 700);
+      setTimeout(() => advanceNext(), 900);
     } else {
       setFeedback("incorrect");
       playIncorrect();
@@ -80,9 +82,9 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       setTimeout(() => {
         setSelectedId(null);
         setFeedback(null);
-      }, 800);
+      }, 900);
     }
-  }, [feedback, currentTargetWord.id, playCorrect, playIncorrect, dispatch, completedWordIds, targetIndex, words.length]);
+  }, [feedback, currentTargetWord.id, playCorrect, playIncorrect, dispatch, completedWordIds, advanceNext]);
 
   useEffect(() => {
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
@@ -109,15 +111,59 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       groupId={groupId}
       dispatch={dispatch}
       footer={
-        <div className="flex flex-col gap-1">
-          <div className="flex items-center justify-center gap-1.5 text-xs font-sans font-bold text-amber-600 dark:text-amber-400">
-            <Keyboard className="size-4" />
-            <span>Press 1–5 on keyboard or tap image card</span>
-          </div>
-          <div className="flex items-center justify-between text-xs font-sans font-semibold text-muted-foreground px-1">
-            <span>Group Progress: {completedWordIds.size} of {words.length} matched</span>
-            <span>Item {targetIndex + 1} of {words.length}</span>
-          </div>
+        <div className="w-full flex flex-col gap-2">
+          {/* Pinned Footer Feedback Banner (Option A: Zero Layout Shift) */}
+          {feedback ? (
+            <div
+              role="status"
+              aria-live="polite"
+              className={`w-full rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-md transition-all ${
+                feedback === "correct"
+                  ? "bg-wp-green text-white border border-wp-green"
+                  : "bg-wp-rose text-white border border-wp-rose"
+              }`}
+            >
+              <div className="flex items-center gap-3">
+                {feedback === "correct" ? (
+                  <CheckCircle2 className="size-7 shrink-0 text-white animate-in zoom-in" />
+                ) : (
+                  <XCircle className="size-7 shrink-0 text-white animate-in zoom-in" />
+                )}
+                <div>
+                  <h3 className="font-sans font-black text-base leading-tight">
+                    {feedback === "correct" ? "✓ Excellent Audio Match!" : "Listen Carefully"}
+                  </h3>
+                  <p className="font-sans text-xs text-white/95 mt-0.5">
+                    {feedback === "correct"
+                      ? `That is ${currentTargetWord.label}.`
+                      : "Try again — tap the matching image for the sound!"}
+                  </p>
+                </div>
+              </div>
+
+              {feedback === "correct" && (
+                <button
+                  type="button"
+                  onClick={advanceNext}
+                  className="w-full sm:w-auto px-6 py-3 rounded-xl bg-white text-wp-green hover:bg-white/90 font-sans font-bold text-sm flex items-center justify-center gap-2 shrink-0 shadow-sm transition-all"
+                >
+                  <span>{targetIndex + 1 < words.length ? "Next Item →" : "Continue →"}</span>
+                  <ArrowRight className="size-4" />
+                </button>
+              )}
+            </div>
+          ) : (
+            <div className="flex flex-col gap-1.5">
+              <div className="flex items-center justify-center gap-1.5 text-xs font-sans font-bold text-amber-600 dark:text-amber-400">
+                <Keyboard className="size-4" />
+                <span>Press 1–5 on keyboard or tap image card</span>
+              </div>
+              <div className="flex items-center justify-between text-xs font-sans font-semibold text-muted-foreground px-1">
+                <span>Group Progress: {completedWordIds.size} of {words.length} matched</span>
+                <span>Item {targetIndex + 1} of {words.length}</span>
+              </div>
+            </div>
+          )}
         </div>
       }
     >
@@ -151,7 +197,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
           </button>
         </div>
 
-        {/* Decluttered Card Image Selection Grid (No Redundant Badges) */}
+        {/* Card Image Selection Grid (Zero Layout Shift Content Area) */}
         <div
           role="radiogroup"
           aria-label="Choose matching picture for audio prompt"
@@ -204,24 +250,6 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             );
           })}
         </div>
-
-        {feedback && (
-          <div
-            role="status"
-            aria-live="polite"
-            className={`w-full rounded-2xl p-4 text-center text-sm font-sans font-bold shadow-xs transition-all ${
-              feedback === "correct"
-                ? "bg-wp-green text-white border border-wp-green animate-in fade-in"
-                : "bg-wp-rose text-white border border-wp-rose animate-in fade-in"
-            }`}
-          >
-            {feedback === "correct" ? (
-              <span>✓ Excellent! That is {currentTargetWord.label}.</span>
-            ) : (
-              <span>Try again — listen carefully to the sound!</span>
-            )}
-          </div>
-        )}
       </div>
     </ExerciseShell>
   );

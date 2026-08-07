@@ -6,7 +6,7 @@ import { getRichSentence } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
-import { Sparkles } from "lucide-react";
+import { Sparkles, CheckCircle2, XCircle, ArrowRight, RotateCcw } from "lucide-react";
 
 interface Props {
   step: number;
@@ -83,31 +83,73 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       groupId={groupId}
       dispatch={dispatch}
       footer={
-        <div className="flex flex-col gap-1.5">
-          {!selectedId && !checked && (
-            <p className="text-[11px] font-sans font-semibold text-center text-amber-600 dark:text-amber-400">
-              Select a word below to complete the sentence
-            </p>
+        <div className="w-full flex flex-col gap-2">
+          {/* Pinned Footer Feedback Banner (Option A: Zero Layout Shift) */}
+          {checked ? (
+            <div
+              role="status"
+              aria-live="polite"
+              className={`w-full rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-md transition-all ${
+                isCorrect
+                  ? "bg-wp-green text-white border border-wp-green"
+                  : "bg-wp-rose text-white border border-wp-rose"
+              }`}
+            >
+              <div className="flex items-center gap-3">
+                {isCorrect ? (
+                  <CheckCircle2 className="size-7 shrink-0 text-white animate-in zoom-in" />
+                ) : (
+                  <XCircle className="size-7 shrink-0 text-white animate-in zoom-in" />
+                )}
+                <div>
+                  <h3 className="font-sans font-black text-base leading-tight">
+                    {isCorrect ? "✓ Sentence Completed!" : "Check Sentence Context"}
+                  </h3>
+                  <p className="font-sans text-xs text-white/95 mt-0.5">
+                    {isCorrect
+                      ? `"${richSentence.full}"`
+                      : `Correct sentence: "${richSentence.full}"`}
+                  </p>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                onClick={handleAction}
+                className={`w-full sm:w-auto px-6 py-3 rounded-xl font-sans font-bold text-sm flex items-center justify-center gap-2 shrink-0 shadow-sm transition-all ${
+                  isCorrect
+                    ? "bg-white text-wp-green hover:bg-white/90"
+                    : "bg-white text-wp-rose hover:bg-white/90"
+                }`}
+              >
+                <span>
+                  {isCorrect
+                    ? questionIndex + 1 < words.length
+                      ? "Next Sentence →"
+                      : "Complete Step →"
+                    : "Try Again"}
+                </span>
+                {isCorrect ? <ArrowRight className="size-4" /> : <RotateCcw className="size-4" />}
+              </button>
+            </div>
+          ) : (
+            <div className="flex flex-col gap-1.5">
+              {!selectedId && (
+                <p className="text-[11px] font-sans font-semibold text-center text-amber-600 dark:text-amber-400">
+                  Select a word below to complete the sentence
+                </p>
+              )}
+              <button
+                type="button"
+                onClick={handleAction}
+                className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] transition-all shadow-wp-xs ${
+                  shaking ? "animate-wp-shake" : ""
+                } ${selectedId ? "bg-wp-blue opacity-100" : "bg-wp-blue opacity-50"}`}
+              >
+                Check Answer
+              </button>
+            </div>
           )}
-          <button
-            type="button"
-            onClick={handleAction}
-            className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] transition-all shadow-wp-xs ${
-              shaking ? "animate-bounce" : ""
-            } ${
-              checked
-                ? isCorrect ? "bg-wp-green" : "bg-wp-rose"
-                : selectedId ? "bg-wp-blue opacity-100" : "bg-wp-blue opacity-50"
-            }`}
-          >
-            {checked
-              ? isCorrect
-                ? questionIndex + 1 < words.length
-                  ? `Next Sentence (${questionIndex + 2}/${words.length}) →`
-                  : "Complete Step →"
-                : "Try Again"
-              : "Check Answer"}
-          </button>
         </div>
       }
     >
@@ -165,10 +207,10 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
                 aria-checked={isSelected}
                 disabled={checked}
                 onClick={() => handleSelect(option.id)}
-                className={`rounded-2xl p-4 font-sans font-bold text-base border min-h-[56px] transition-all flex items-center justify-between shadow-wp-xs ${
+                className={`rounded-2xl p-4 font-sans font-bold text-base border-2 min-h-[56px] transition-colors duration-200 flex items-center justify-between shadow-wp-xs ${
                   isSelected
-                    ? "bg-primary border-primary text-primary-foreground ring-4 ring-primary/20 scale-102"
-                    : "bg-wp-card border-border text-foreground hover:border-primary/40 hover:shadow-md"
+                    ? "bg-primary border-primary text-primary-foreground shadow-md"
+                    : "bg-wp-card border-border text-foreground hover:border-primary/50 hover:shadow-md"
                 } focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary`}
               >
                 <span className="capitalize">{option.label.toLowerCase()}</span>
@@ -179,22 +221,6 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
             );
           })}
         </div>
-
-        {checked && (
-          <div
-            role="status"
-            aria-live="polite"
-            className={`w-full rounded-2xl p-4 text-sm font-sans font-bold text-center border shadow-xs transition-all ${
-              isCorrect
-                ? "bg-wp-green text-white border-wp-green"
-                : "bg-wp-rose text-white border-wp-rose"
-            }`}
-          >
-            {isCorrect
-              ? `✓ Excellent! "${richSentence.full}"`
-              : `Try again — correct sentence: "${richSentence.full}".`}
-          </div>
-        )}
       </div>
     </ExerciseShell>
   );

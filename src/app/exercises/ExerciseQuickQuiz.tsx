@@ -2,7 +2,7 @@ import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
 import type { Action } from "../types";
 import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { Timer, TimerOff, HelpCircle, Lightbulb, Keyboard } from "lucide-react";
+import { Timer, TimerOff, HelpCircle, Lightbulb, Keyboard, CheckCircle2, XCircle, ArrowRight, RotateCcw } from "lucide-react";
 import { WordImage } from "../shared/WordImage";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
@@ -150,37 +150,79 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       groupId={groupId}
       dispatch={dispatch}
       footer={
-        <div className="flex flex-col gap-1.5">
-          {!selectedId && !checked && (
-            <div className="flex items-center justify-center gap-1.5 text-xs font-sans font-bold text-amber-600 dark:text-amber-400">
-              <Keyboard className="size-4" />
-              <span>Press 1, 2, 3, or 4 on keyboard or tap image card</span>
+        <div className="w-full flex flex-col gap-2">
+          {/* Pinned Footer Feedback Banner (Option A: Zero Layout Shift) */}
+          {checked ? (
+            <div
+              role="status"
+              aria-live="polite"
+              className={`w-full rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-md transition-all ${
+                isCorrect
+                  ? "bg-wp-green text-white border border-wp-green"
+                  : "bg-wp-rose text-white border border-wp-rose"
+              }`}
+            >
+              <div className="flex items-center gap-3">
+                {isCorrect ? (
+                  <CheckCircle2 className="size-7 shrink-0 text-white animate-in zoom-in" />
+                ) : (
+                  <XCircle className="size-7 shrink-0 text-white animate-in zoom-in" />
+                )}
+                <div>
+                  <h3 className="font-sans font-black text-base leading-tight">
+                    {isCorrect ? "✨ Excellent Visual Recall!" : "Not Quite"}
+                  </h3>
+                  <p className="font-sans text-xs text-white/95 mt-0.5">
+                    {isCorrect
+                      ? `That is indeed ${currentTargetWord.label}.`
+                      : `Target item is ${currentTargetWord.label} (/${currentTargetWord.phonetic}/).`}
+                  </p>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                onClick={handleAction}
+                className={`w-full sm:w-auto px-6 py-3 rounded-xl font-sans font-bold text-sm flex items-center justify-center gap-2 shrink-0 shadow-sm transition-all ${
+                  isCorrect
+                    ? "bg-white text-wp-green hover:bg-white/90"
+                    : "bg-white text-wp-rose hover:bg-white/90"
+                }`}
+              >
+                <span>
+                  {isCorrect
+                    ? questionIndex + 1 < words.length
+                      ? "Next Question →"
+                      : "Finish Session 🎉"
+                    : "Try Again"}
+                </span>
+                {isCorrect ? <ArrowRight className="size-4" /> : <RotateCcw className="size-4" />}
+              </button>
+            </div>
+          ) : (
+            <div className="flex flex-col gap-2">
+              {!selectedId && (
+                <div className="flex items-center justify-center gap-1.5 text-xs font-sans font-bold text-amber-600 dark:text-amber-400">
+                  <Keyboard className="size-4" />
+                  <span>Press 1, 2, 3, or 4 on keyboard or tap image card</span>
+                </div>
+              )}
+              <button
+                type="button"
+                onClick={handleAction}
+                className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] transition-colors duration-200 shadow-wp-xs ${
+                  shaking ? "animate-wp-shake" : ""
+                } ${selectedId ? "bg-wp-blue opacity-100" : "bg-wp-blue opacity-50"}`}
+              >
+                Check Answer
+              </button>
             </div>
           )}
-          <button
-            type="button"
-            onClick={handleAction}
-            className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] transition-colors duration-200 shadow-wp-xs ${
-              shaking ? "animate-wp-shake" : ""
-            } ${
-              checked
-                ? isCorrect ? "bg-wp-green" : "bg-wp-rose"
-                : selectedId ? "bg-wp-blue opacity-100" : "bg-wp-blue opacity-50"
-            }`}
-          >
-            {checked
-              ? isCorrect
-                ? questionIndex + 1 < words.length
-                  ? `Next Quiz Question (${questionIndex + 2}/${words.length}) →`
-                  : "Finish Group Session 🎉"
-                : "Try Again"
-              : "Check Answer"}
-          </button>
         </div>
       }
     >
       <div className="flex flex-col gap-5 w-full">
-        {/* Question Counter & Decluttered Single-Line Header Bar */}
+        {/* Question Counter & Header Bar */}
         <div className="flex items-center justify-between gap-4 w-full">
           <div className="flex flex-col flex-1 min-w-0">
             <span className="text-xs font-sans font-bold text-muted-foreground">Quiz Question {questionIndex + 1} of {words.length}</span>
@@ -219,7 +261,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
           </div>
         </div>
 
-        {/* Decluttered Image Option Grid (No Redundant Option Badges) */}
+        {/* Expansive Image Option Grid (Zero Layout Shift Content) */}
         <div
           role="radiogroup"
           aria-label={`Choose the image that shows ${currentTargetWord.label}`}
@@ -287,25 +329,6 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
             );
           })}
         </div>
-
-        {checked && (
-          <div
-            role="status"
-            aria-live="polite"
-            className={`w-full rounded-2xl p-4 flex flex-col gap-1 shadow-xs transition-all ${
-              isCorrect ? "bg-wp-green text-white border border-wp-green" : "bg-wp-rose text-white border border-wp-rose"
-            }`}
-          >
-            <p className="font-sans font-bold text-sm">
-              {isCorrect ? "✨ Correct — excellent visual recall!" : `Not quite.`}
-            </p>
-            {!isCorrect && (
-              <p className="font-sans text-xs text-white/90 leading-relaxed mt-0.5">
-                The target item is <strong>{currentTargetWord.label}</strong> (/{currentTargetWord.phonetic}/). Keep building your vocabulary memory!
-              </p>
-            )}
-          </div>
-        )}
       </div>
     </ExerciseShell>
   );
