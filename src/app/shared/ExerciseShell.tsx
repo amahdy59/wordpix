@@ -60,7 +60,7 @@ export const ExerciseShell = memo(function ExerciseShell({
   const isTesting = mode === "retrieval" || mode === "assessment";
 
   return (
-    <div className="bg-background flex flex-col min-h-svh lg:h-svh lg:min-h-0 lg:overflow-hidden relative">
+    <div className="bg-background flex flex-col lg:flex-row min-h-svh lg:h-svh lg:min-h-0 lg:overflow-hidden relative">
       <ExitConfirmModal
         isOpen={showExitModal}
         onCancel={() => setShowExitModal(false)}
@@ -171,7 +171,7 @@ export const ExerciseShell = memo(function ExerciseShell({
         </div>
       </aside>
 
-      {/* ── RIGHT PANEL: Fluid Responsive Layout ───────────────────────────── */}
+      {/* ── RIGHT PANEL: Desktop & Mobile Exercise Main View ────────────────── */}
       <div className="flex-1 flex flex-col min-h-svh lg:h-svh lg:min-h-0 lg:overflow-hidden">
         <LessonHeader
           title={`${group.name}: ${title}`}
@@ -213,7 +213,7 @@ export const ExerciseShell = memo(function ExerciseShell({
           </div>
         </div>
 
-        {/* Expansive, Fluid & Centered Main Content Area */}
+        {/* Expansive Main Content Area */}
         <main
           className="flex-1 overflow-y-auto overscroll-contain px-4 sm:px-6 lg:px-10 py-3 sm:py-5 flex flex-col items-center justify-center min-h-0 w-full"
           aria-label={`${title} exercise`}
@@ -223,7 +223,7 @@ export const ExerciseShell = memo(function ExerciseShell({
           </div>
         </main>
 
-        {/* Pinned Footer (Always Fits Viewport) */}
+        {/* Pinned Footer */}
         <footer className="shrink-0 px-4 sm:px-6 lg:px-10 pb-5 sm:pb-6 pt-3 border-t border-border/60 bg-background flex flex-col gap-1.5 max-w-4xl mx-auto w-full">
           {footer}
           <div className="flex items-center justify-between text-[11px] font-sans font-medium text-muted-foreground px-1">
