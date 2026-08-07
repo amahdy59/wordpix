@@ -1,4 +1,4 @@
-import { useEffect, useReducer, lazy, Suspense, useCallback } from "react";
+import { useEffect, useReducer, Suspense, useCallback } from "react";
 import type { Screen, Action, OnboardStep, TabId } from "./types";
 import { ErrorBoundary } from "./shared/ErrorBoundary";
 import { BEDROOM_VOCABULARY, BEDROOM_GROUPS } from "./data/lessons";
@@ -19,6 +19,17 @@ import { ReviewMasteryReview } from "./review/ReviewMasteryReview";
 import { ProfileStats } from "./core/ProfileStats";
 import { AppShell } from "./shared/AppShell";
 import { SkillExerciseHub } from "./core/SkillExerciseHub";
+
+// Synchronous core lesson & exercise components for instant zero-blank rendering
+import { LessonWorldEntry } from "./lesson/LessonWorldEntry";
+import { LessonSceneDiscovery } from "./lesson/LessonSceneDiscovery";
+import { LessonCompleteResults } from "./lesson/LessonCompleteResults";
+
+import { ExerciseListenRepeat } from "./exercises/ExerciseListenRepeat";
+import { ExerciseRecallMatch } from "./exercises/ExerciseRecallMatch";
+import { ExerciseContextFill } from "./exercises/ExerciseContextFill";
+import { ExerciseSentenceBuilder } from "./exercises/ExerciseSentenceBuilder";
+import { ExerciseQuickQuiz } from "./exercises/ExerciseQuickQuiz";
 
 // Multimodal exercise suites
 import {
@@ -67,17 +78,6 @@ import {
   ExWritingResults,
   ExWritingTimedSprint,
 } from "./exercises/writing/WritingSuite";
-
-// Lazy-loaded heavy lesson sessions (Code-splitting)
-const LessonWorldEntry = lazy(() => import("./lesson/LessonWorldEntry").then((m) => ({ default: m.LessonWorldEntry })));
-const LessonSceneDiscovery = lazy(() => import("./lesson/LessonSceneDiscovery").then((m) => ({ default: m.LessonSceneDiscovery })));
-const LessonCompleteResults = lazy(() => import("./lesson/LessonCompleteResults").then((m) => ({ default: m.LessonCompleteResults })));
-
-const ExerciseListenRepeat = lazy(() => import("./exercises/ExerciseListenRepeat").then((m) => ({ default: m.ExerciseListenRepeat })));
-const ExerciseRecallMatch = lazy(() => import("./exercises/ExerciseRecallMatch").then((m) => ({ default: m.ExerciseRecallMatch })));
-const ExerciseContextFill = lazy(() => import("./exercises/ExerciseContextFill").then((m) => ({ default: m.ExerciseContextFill })));
-const ExerciseSentenceBuilder = lazy(() => import("./exercises/ExerciseSentenceBuilder").then((m) => ({ default: m.ExerciseSentenceBuilder })));
-const ExerciseQuickQuiz = lazy(() => import("./exercises/ExerciseQuickQuiz").then((m) => ({ default: m.ExerciseQuickQuiz })));
 
 // ── State machine ─────────────────────────────────────────────────────────────
 
