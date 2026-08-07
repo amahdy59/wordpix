@@ -1,5 +1,5 @@
 import { memo, useState } from "react";
-import { X, Sun, Moon, Volume2, Type, Globe, Sliders, ShieldCheck, RefreshCw, Eye, Sparkles } from "lucide-react";
+import { X, Sun, Moon, Volume2, Type, Sliders, ShieldCheck, Eye } from "lucide-react";
 import { useLearner } from "../context/LearnerContext";
 import { useTheme } from "../shared/ThemeToggle";
 

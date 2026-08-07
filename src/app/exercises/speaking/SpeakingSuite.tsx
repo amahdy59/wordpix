@@ -4,7 +4,7 @@ import { BEDROOM_VOCABULARY } from "../../data/lessons";
 import { WordImage } from "../../shared/WordImage";
 import { LessonHeader } from "../../shared/LessonHeader";
 import { PrimaryButton } from "../../shared/PrimaryButton";
-import { SecondaryButton } from "../../shared/SecondaryButton";
+
 import { Mic, Volume2, Trophy, Heart } from "lucide-react";
 import { useAudio } from "../../shared/useAudio";
 import { useSound } from "../../shared/useSound";

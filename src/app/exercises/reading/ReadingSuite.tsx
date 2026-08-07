@@ -5,7 +5,8 @@ import { WordImage } from "../../shared/WordImage";
 import { LessonHeader } from "../../shared/LessonHeader";
 import { PrimaryButton } from "../../shared/PrimaryButton";
 import { SecondaryButton } from "../../shared/SecondaryButton";
-import { BookOpen, Sparkles, Trophy, CheckCircle2, AlertTriangle, Lightbulb, HelpCircle } from "lucide-react";
+
+import { BookOpen } from "lucide-react";
 import { useSound } from "../../shared/useSound";
 
 interface Props {
@@ -127,7 +128,21 @@ export const ExReadingErrorDetection = memo(function ExReadingErrorDetection({ d
         <div className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col gap-3">
           <h2 className="font-sans font-bold text-foreground text-lg">Tap on the grammatical error in the paragraph:</h2>
           <p className="font-sans text-base text-foreground leading-loose">
-            The bedroom <span onClick={() => handleTapWord("have", true)} className={`cursor-pointer px-1 py-0.5 rounded font-bold underline ${found.includes("have") ? "bg-wp-rose text-wp-text-on-rose" : "hover:bg-muted"}`}>have</span> two large windows and a soft carpet.
+            {/* Was a <span onClick>: unreachable by keyboard, and announced as
+                plain text. A word the learner must select is a control. */}
+            The bedroom{" "}
+            <button
+              type="button"
+              onClick={() => handleTapWord("have", true)}
+              aria-pressed={found.includes("have")}
+              aria-label='Select the word "have" as the grammatical error'
+              className={`cursor-pointer px-1 py-0.5 rounded font-bold underline focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                found.includes("have") ? "bg-wp-rose text-wp-text-on-rose" : "hover:bg-muted"
+              }`}
+            >
+              have
+            </button>{" "}
+            two large windows and a soft carpet.
           </p>
         </div>
 

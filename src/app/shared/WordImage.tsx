@@ -120,8 +120,17 @@ export const WordImage = memo(function WordImage({
 
   const altText = getImageAltText(word, altMode, optionIndex, checked);
 
+  // React 18 does not type the camelCase form, and the component accepted this
+  // prop while never forwarding it — every caller asking for a priority hint
+  // was silently ignored.
+  const priorityAttr = { fetchpriority: fetchPriority } as Record<string, string>;
+
   return (
+    // onError is an image lifecycle event, not a user interaction; it drives
+    // the SVG fallback when a remote photo fails to load.
+    // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
     <img
+      {...priorityAttr}
       src={failed ? fallback : optimizedUrl}
       alt={altText}
       className={className}

@@ -35,10 +35,8 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
 
       const diff = calculateDaysBetween(todayStr, nextDateStr);
 
-      let status: "overdue" | "today" | "upcoming" = "today";
-      if (diff < 0) status = "overdue";
-      else if (diff === 0) status = "today";
-      else status = "upcoming";
+      const status: "overdue" | "today" | "upcoming" =
+        diff < 0 ? "overdue" : diff === 0 ? "today" : "upcoming";
 
       items.push({
         word: wordObj,

@@ -1,5 +1,5 @@
 import { memo, useMemo } from "react";
-import { Flame, ArrowRight, RotateCcw, WifiOff, Layers, Headphones, BookOpen, Mic, PenTool } from "lucide-react";
+import { Flame, ArrowRight, RotateCcw, WifiOff, Layers } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { BEDROOM_GROUPS } from "../data/lessons";

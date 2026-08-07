@@ -26,21 +26,24 @@ export function useAudio({
   pitch = 1,
   volume = 1,
 }: Options = {}) {
-  const [status, setStatus] = useState<AudioStatus>("idle");
-  const synthRef = useRef<SpeechSynthesis | null>(null);
-  const activeUtteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
+  // Support is knowable at first render, so it is the initial state rather than
+  // a setState fired from inside an effect (which causes a cascading render).
+  const [status, setStatus] = useState<AudioStatus>(() =>
+    typeof window === "undefined" || !window.speechSynthesis ? "unsupported" : "idle"
+  );
+  const synthRef = useRef<SpeechSynthesis | null>(
+    typeof window !== "undefined" && window.speechSynthesis ? window.speechSynthesis : null
+  );
 
   useEffect(() => {
-    if (typeof window === "undefined" || !window.speechSynthesis) {
-      setStatus("unsupported");
-      return;
-    }
-    synthRef.current = window.speechSynthesis;
-    // Trigger async voice load on browsers that need it (Chrome)
-    window.speechSynthesis.getVoices();
-    const onVoicesChanged = () => window.speechSynthesis.getVoices();
-    window.speechSynthesis.addEventListener("voiceschanged", onVoicesChanged);
-    return () => window.speechSynthesis.removeEventListener("voiceschanged", onVoicesChanged);
+    const synth = synthRef.current;
+    if (!synth) return undefined;
+
+    // Chrome populates voices asynchronously; the first call primes that load.
+    synth.getVoices();
+    const onVoicesChanged = () => synth.getVoices();
+    synth.addEventListener("voiceschanged", onVoicesChanged);
+    return () => synth.removeEventListener("voiceschanged", onVoicesChanged);
   }, []);
 
   const speak = useCallback(
@@ -75,7 +78,6 @@ export function useAudio({
         }
       };
 
-      activeUtteranceRef.current = utterance;
       synth.speak(utterance);
     },
     [lang, rate, pitch, volume]

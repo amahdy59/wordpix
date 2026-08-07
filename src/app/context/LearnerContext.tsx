@@ -60,16 +60,23 @@ export const INITIAL_LEARNER_STATE: LearnerStateSchema = {
   sessionHistory: [],
 };
 
-function migrateState(savedData: any): LearnerStateSchema {
+/** Shape of whatever came out of localStorage: unknown until validated. */
+type PersistedShape = Partial<Record<keyof LearnerStateSchema, unknown>>;
+
+function migrateState(savedData: unknown): LearnerStateSchema {
   if (!savedData || typeof savedData !== "object") return INITIAL_LEARNER_STATE;
 
-  const rawMemory = savedData.wordMemory && typeof savedData.wordMemory === "object" ? savedData.wordMemory : {};
+  const saved = savedData as PersistedShape;
+  const rawMemory: Record<string, unknown> =
+    saved.wordMemory && typeof saved.wordMemory === "object"
+      ? (saved.wordMemory as Record<string, unknown>)
+      : {};
   const normalizedMemory: Record<string, WordLearningState> = {};
 
   Object.keys(rawMemory).forEach((wordId) => {
     const val = rawMemory[wordId];
-    if (typeof val === "object" && val.wordId) {
-      normalizedMemory[wordId] = val;
+    if (val && typeof val === "object" && "wordId" in val) {
+      normalizedMemory[wordId] = val as WordLearningState;
     } else if (typeof val === "number") {
       // Migrate legacy numeric mastery levels (1, 2, 3) to SM-2 WordLearningState
       const base = createInitialWordState(wordId);
@@ -83,14 +90,14 @@ function migrateState(savedData: any): LearnerStateSchema {
     version: 1,
     preferences: {
       ...INITIAL_LEARNER_STATE.preferences,
-      ...savedData.preferences,
+      ...(saved.preferences as Partial<LearnerPreferences> | undefined),
     },
     learnerProgress: {
       ...INITIAL_LEARNER_STATE.learnerProgress,
-      ...savedData.learnerProgress,
+      ...(saved.learnerProgress as Partial<LearnerProgressStats> | undefined),
     },
     wordMemory: normalizedMemory,
-    sessionHistory: Array.isArray(savedData.sessionHistory) ? savedData.sessionHistory : [],
+    sessionHistory: Array.isArray(saved.sessionHistory) ? (saved.sessionHistory as SessionRecord[]) : [],
   };
 }
 

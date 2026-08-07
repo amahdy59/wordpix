@@ -17,6 +17,8 @@ const LEVELS = [
   { id: "b1", title: "Intermediate", subtitle: "Expanding everyday vocabulary", tag: "B1" },
 ];
 
+const DAILY_GOAL_OPTIONS = [5, 10, 20] as const;
+
 const GOAL_OPTIONS: Array<{ id: LearnerGoal; label: string }> = [
   { id: "everyday", label: "Everyday English" },
   { id: "travel", label: "Travel & Vacations" },
@@ -161,10 +163,44 @@ export function LanguageSelect({ dispatch }: Props) {
           </div>
 
           {/* Learning Goal Selector */}
-          <div className="w-full flex flex-col gap-2">
-            <label className="font-sans font-bold text-foreground text-sm">
+          {/*
+            Daily goal selector. dailyGoalMinutes was already persisted and
+            already shown on the dashboard ("Goal: 10 min/day"), but nothing
+            could ever change it — setGoalMinutes was declared and never called,
+            so the value was permanently the initial 10.
+          */}
+          <div className="w-full flex flex-col gap-2" role="group" aria-labelledby="daily-goal-heading">
+            <h2 id="daily-goal-heading" className="font-sans font-bold text-foreground text-sm">
+              How long per day?
+            </h2>
+            <div className="grid grid-cols-3 gap-2">
+              {DAILY_GOAL_OPTIONS.map((minutes) => {
+                const isSelected = goalMinutes === minutes;
+                return (
+                  <button
+                    key={minutes}
+                    type="button"
+                    onClick={() => setGoalMinutes(minutes)}
+                    aria-pressed={isSelected}
+                    className={`min-h-[52px] rounded-2xl border font-sans font-bold text-sm transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                      isSelected
+                        ? "bg-secondary border-primary border-[2px] text-primary"
+                        : "bg-wp-card border-border text-foreground hover:border-primary/50"
+                    }`}
+                  >
+                    {minutes} min
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* A <label> with no control is meaningless to assistive tech. This
+              is a group of buttons, so it needs a group name, not a label. */}
+          <div className="w-full flex flex-col gap-2" role="group" aria-labelledby="goal-group-heading">
+            <h2 id="goal-group-heading" className="font-sans font-bold text-foreground text-sm">
               Why are you learning?
-            </label>
+            </h2>
             <div className="grid grid-cols-2 gap-2">
               {GOAL_OPTIONS.map((g) => (
                 <button

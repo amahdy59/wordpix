@@ -1,11 +1,11 @@
 import { memo, useState } from "react";
 import type { Action } from "../../types";
 import { BEDROOM_VOCABULARY } from "../../data/lessons";
-import { WordImage } from "../../shared/WordImage";
+
 import { LessonHeader } from "../../shared/LessonHeader";
 import { PrimaryButton } from "../../shared/PrimaryButton";
 import { SecondaryButton } from "../../shared/SecondaryButton";
-import { Volume2, Sparkles, Trophy, CheckCircle2, ShieldCheck, Flame, Mic, Play, RefreshCw, HelpCircle, Lightbulb, Clock } from "lucide-react";
+import { Volume2, Sparkles, Trophy, Mic, Clock } from "lucide-react";
 import { useAudio } from "../../shared/useAudio";
 import { useSound } from "../../shared/useSound";
 import { useProgress } from "../../data/progress";

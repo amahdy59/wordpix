@@ -106,7 +106,7 @@ export function SplashWelcome({ dispatch }: Props) {
           {/* Mobile Hero Illustration (Hidden on Desktop) */}
           <div className="md:hidden w-full h-48 relative rounded-2xl overflow-hidden border border-border shadow-wp-md bg-muted">
             <img
-              alt="Preview of WordPix picture learning visual scenes"
+              alt="A bedroom scene as shown in a WordPix lesson"
               className="absolute inset-0 object-cover size-full"
               src={imgHero}
             />

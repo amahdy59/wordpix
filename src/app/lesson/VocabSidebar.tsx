@@ -9,7 +9,8 @@ import { X, CheckCircle2 } from "lucide-react";
 
 interface Props {
   vocabulary: VocabItem[];
-  activeWord: VocabItem;
+  /** Reserved for callers that pass the active word; the list renders from activeId. */
+  activeWord?: VocabItem;
   activeId: string;
   isPlaying: boolean;
   isError: boolean;
@@ -28,7 +29,7 @@ const MASTERY_BADGES: Record<MasteryLevel, { label: string; bg: string; text: st
 
 export const VocabSidebar = memo(function VocabSidebar({
   vocabulary,
-  activeWord,
+  activeWord: _activeWord,
   activeId,
   isPlaying,
   isError,
@@ -120,35 +121,50 @@ export const VocabSidebar = memo(function VocabSidebar({
           const badge = MASTERY_BADGES[levelNum as MasteryLevel];
 
           return (
+            /*
+              The row was a <div onClick>: not focusable, not keyboard-operable,
+              and invisible to assistive tech as a control. It cannot simply
+              become a <button> because it contains AudioButton, and nesting
+              buttons is invalid HTML. So the row stays a container and the
+              word-selection area becomes its own button, with the audio control
+              as a sibling — two distinct actions, two distinct controls.
+            */
             <div
               key={word.id}
-              onClick={() => onSelectWord(word.id)}
-              className={`p-3 rounded-2xl border transition-all flex items-center gap-3 cursor-pointer ${
+              className={`p-3 rounded-2xl border transition-all flex items-center gap-3 ${
                 isSelected
                   ? "bg-secondary border-primary border-[2px] shadow-wp-xs"
                   : "bg-wp-card border-border hover:border-primary/40"
               }`}
             >
-              <div className="relative rounded-xl shrink-0 size-12 overflow-hidden border border-border bg-muted">
-                <WordImage word={word} width="48" height="48" className="size-full object-cover" />
-                {levelNum === 3 && (
-                  <div className="absolute top-1 end-1 bg-wp-green text-wp-text-on-green p-0.5 rounded-full">
-                    <CheckCircle2 className="size-3" />
-                  </div>
-                )}
-              </div>
-
-              <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span className="font-sans font-bold text-foreground text-sm">{word.label}</span>
-                  {badge && (
-                    <span className={`font-sans font-semibold text-[10px] px-2 py-0.5 rounded-full border ${badge.bg} ${badge.text}`}>
-                      {badge.label}
-                    </span>
+              <button
+                type="button"
+                onClick={() => onSelectWord(word.id)}
+                aria-pressed={isSelected}
+                aria-label={`Select ${word.label}`}
+                className="flex items-center gap-3 flex-1 min-w-0 text-start min-h-[44px] rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                <div className="relative rounded-xl shrink-0 size-12 overflow-hidden border border-border bg-muted">
+                  <WordImage word={word} width="48" height="48" className="size-full object-cover" />
+                  {levelNum === 3 && (
+                    <div className="absolute top-1 end-1 bg-wp-green text-wp-text-on-green p-0.5 rounded-full">
+                      <CheckCircle2 className="size-3" aria-hidden />
+                    </div>
                   )}
                 </div>
-                <span className="font-sans text-muted-foreground text-xs font-medium">/{word.phonetic}/</span>
-              </div>
+
+                <div className="flex flex-col gap-0.5 flex-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="font-sans font-bold text-foreground text-sm">{word.label}</span>
+                    {badge && (
+                      <span className={`font-sans font-semibold text-[10px] px-2 py-0.5 rounded-full border ${badge.bg} ${badge.text}`}>
+                        {badge.label}
+                      </span>
+                    )}
+                  </div>
+                  <span className="font-sans text-muted-foreground text-xs font-medium">/{word.phonetic}/</span>
+                </div>
+              </button>
 
               <AudioButton
                 onPlay={() => speak(word.label)}
