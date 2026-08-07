@@ -206,15 +206,26 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 className={`group relative rounded-2xl overflow-hidden p-1.5 flex flex-col items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-xs ${cardStateStyle}`}
               >
                 {/* Physical Key Badge */}
-                <span className="absolute top-2.5 left-2.5 z-10 bg-slate-900/90 text-white text-[11px] font-mono font-bold px-2 py-0.5 rounded-lg border border-white/20 shadow-md backdrop-blur-md pointer-events-none">
+                <span
+                  aria-hidden
+                  className="absolute top-2.5 start-2.5 z-10 bg-slate-900/90 text-white text-[11px] font-mono font-bold px-2 py-0.5 rounded-lg border border-white/20 shadow-md backdrop-blur-md pointer-events-none"
+                >
                   Key [{idx + 1}]
                 </span>
 
                 <div className="h-28 sm:h-36 md:h-40 max-h-[22vh] w-full relative rounded-xl overflow-hidden bg-muted border border-border/60 shrink-0">
-                  <WordImage word={card} width="400" height="300" className="size-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <WordImage
+                    word={card}
+                    width="400"
+                    height="300"
+                    altMode="assessment"
+                    optionIndex={idx}
+                    checked={isSelected || isTargetCompleted}
+                    className="size-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                   {isTargetCompleted && (
-                    <div className="absolute top-2 right-2 bg-wp-green text-white p-1 rounded-full shadow-md">
-                      <CheckCircle2 className="size-3.5" />
+                    <div className="absolute top-2 end-2 bg-wp-green text-white p-1 rounded-full shadow-md">
+                      <CheckCircle2 className="size-3.5" aria-hidden />
                     </div>
                   )}
                 </div>

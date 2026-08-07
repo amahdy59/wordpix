@@ -147,7 +147,10 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 }`}
               >
                 {/* Physical Keyboard Badge */}
-                <span className="absolute top-2.5 left-2.5 z-10 bg-slate-900/90 text-white text-[11px] font-mono font-bold px-2.5 py-1 rounded-lg border border-white/20 shadow-md backdrop-blur-md pointer-events-none">
+                <span
+                  aria-hidden
+                  className="absolute top-2.5 start-2.5 z-10 bg-slate-900/90 text-white text-[11px] font-mono font-bold px-2.5 py-1 rounded-lg border border-white/20 shadow-md backdrop-blur-md pointer-events-none"
+                >
                   Key [{idx + 1}]
                 </span>
 
@@ -156,6 +159,9 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                     word={option}
                     width="600"
                     height="450"
+                    altMode="assessment"
+                    optionIndex={idx}
+                    checked={isSelected}
                     className="size-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>

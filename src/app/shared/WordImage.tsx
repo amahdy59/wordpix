@@ -77,6 +77,28 @@ export function getWordFallbackDataUrl(word: VocabItem, altMode: ImageAltMode = 
   return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
 }
 
+/**
+ * Alt text for a vocabulary image.
+ *
+ * "assessment" is the mode used by graded exercises: the learner is being asked
+ * to identify the word, so the alt text must NOT contain it — otherwise a
+ * screen reader reads the answer aloud. The label is revealed only once the
+ * option has been chosen (`checked`), which is the teaching moment.
+ */
+export function getImageAltText(
+  word: VocabItem,
+  altMode: ImageAltMode,
+  optionIndex = 0,
+  checked = false
+): string {
+  if (altMode === "decorative") return "";
+  if (altMode === "assessment") {
+    const letter = OPTION_LABELS[optionIndex] ?? String(optionIndex + 1);
+    return checked ? `Picture option ${letter}: ${word.label}` : `Picture option ${letter}`;
+  }
+  return word.label;
+}
+
 export const WordImage = memo(function WordImage({
   word,
   className,
@@ -96,13 +118,7 @@ export const WordImage = memo(function WordImage({
 
   useEffect(() => setFailed(false), [word.id, word.img]);
 
-  let altText = word.label;
-  if (altMode === "decorative") {
-    altText = "";
-  } else if (altMode === "assessment") {
-    const letter = OPTION_LABELS[optionIndex] ?? String(optionIndex + 1);
-    altText = checked ? `Picture option ${letter}: ${word.label}` : `Picture option ${letter}`;
-  }
+  const altText = getImageAltText(word, altMode, optionIndex, checked);
 
   return (
     <img
