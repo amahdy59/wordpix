@@ -180,7 +180,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       }
     >
       <div className="flex flex-col gap-5 w-full">
-        {/* Question Counter & Header Bar (Guaranteed Single Line Heading) */}
+        {/* Question Counter & Decluttered Single-Line Header Bar */}
         <div className="flex items-center justify-between gap-4 w-full">
           <div className="flex flex-col flex-1 min-w-0">
             <span className="text-xs font-sans font-bold text-muted-foreground">Quiz Question {questionIndex + 1} of {words.length}</span>
@@ -219,7 +219,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
           </div>
         </div>
 
-        {/* Expansive Image Option Grid (Zero Layout Shift Microinteractions) */}
+        {/* Decluttered Image Option Grid (No Redundant Option Badges) */}
         <div
           role="radiogroup"
           aria-label={`Choose the image that shows ${currentTargetWord.label}`}
@@ -229,7 +229,6 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
             const selected = selectedId === option.id;
             const isEliminated = eliminatedIds.includes(option.id);
 
-            // Constant border thickness (border-2) prevents pixel expansion/layout shift
             let resultClass = "border-2 border-border bg-wp-card hover:border-primary/50 hover:shadow-md";
             if (selected) {
               if (checked) {
@@ -243,7 +242,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
 
             if (isEliminated) {
               return (
-                <div key={option.id} className="bg-muted/40 border-2 border-border/40 rounded-3xl p-6 flex flex-col items-center justify-center text-center opacity-40 min-h-[220px]">
+                <div key={option.id} className="bg-muted/40 border-2 border-border/40 rounded-3xl p-6 flex flex-col items-center justify-center text-center opacity-40 min-h-[200px]">
                   <HelpCircle className="size-10 text-muted-foreground mb-2" />
                   <span className="font-sans text-xs font-semibold text-muted-foreground">Eliminated Option {idx + 1}</span>
                 </div>
@@ -261,12 +260,12 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 disabled={checked}
                 onClick={() => { setSelectedId(option.id); playClick(); }}
                 onKeyDown={(e) => handleKeyDown(e, idx)}
-                className={`group relative rounded-3xl overflow-hidden min-h-[220px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 flex flex-col shadow-wp-xs ${resultClass}`}
+                className={`group relative rounded-3xl overflow-hidden min-h-[200px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 flex flex-col shadow-wp-xs ${resultClass}`}
               >
-                {/* Physical Keyboard Key Cap Badge */}
-                <div className="absolute top-3 left-3 z-10 bg-slate-900/90 text-white text-xs font-mono font-black px-2.5 py-1 rounded-xl border border-white/20 shadow-md backdrop-blur-md flex items-center gap-1.5 pointer-events-none">
-                  <kbd className="bg-white/20 text-white px-1.5 py-0.5 rounded text-[11px] font-mono font-bold">Key [{idx + 1}]</kbd>
-                </div>
+                {/* Single Clean Physical Key Badge */}
+                <span className="absolute top-3 left-3 z-10 bg-slate-900/90 text-white text-xs font-mono font-bold px-2.5 py-1 rounded-xl border border-white/20 shadow-md backdrop-blur-md pointer-events-none">
+                  Key [{idx + 1}]
+                </span>
 
                 <div className="h-44 sm:h-52 md:h-60 w-full relative bg-muted overflow-hidden shrink-0">
                   <WordImage
@@ -279,13 +278,10 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                     checked={checked}
                   />
                 </div>
-                <div className="p-3.5 bg-wp-card flex items-center justify-between border-t border-border/60 flex-1">
+                <div className="p-3 bg-wp-card flex items-center justify-between border-t border-border/60 flex-1">
                   <p className="font-sans font-bold text-foreground text-sm truncate">
                     {checked ? option.label : `Option ${["A", "B", "C", "D"][idx]}`}
                   </p>
-                  <span className="text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-2 py-0.5 rounded-md">
-                    [{idx + 1}]
-                  </span>
                 </div>
               </button>
             );

@@ -4,7 +4,7 @@ import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { WordImage } from "../shared/WordImage";
 import { useAudio } from "../shared/useAudio";
-import { Volume2, CheckCircle2, Sparkles, RefreshCw, Keyboard } from "lucide-react";
+import { Volume2, CheckCircle2, RefreshCw, Keyboard } from "lucide-react";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
 
@@ -109,7 +109,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       groupId={groupId}
       dispatch={dispatch}
       footer={
-        <div className="flex flex-col gap-1.5">
+        <div className="flex flex-col gap-1">
           <div className="flex items-center justify-center gap-1.5 text-xs font-sans font-bold text-amber-600 dark:text-amber-400">
             <Keyboard className="size-4" />
             <span>Press 1–5 on keyboard or tap image card</span>
@@ -122,24 +122,21 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       }
     >
       <div className="flex flex-col gap-5 w-full">
-        {/* Prompter Bar with Auto-Audio */}
-        <div className="bg-slate-900 text-white rounded-3xl p-5 md:p-6 flex items-center justify-between shadow-wp-md border border-slate-800">
+        {/* Decluttered Prompter Bar */}
+        <div className="bg-slate-900 text-white rounded-3xl p-5 flex items-center justify-between shadow-wp-md border border-slate-800">
           <div className="flex items-center gap-4">
             <button
               type="button"
               onClick={replayAudio}
               aria-label="Replay target audio prompt"
-              className="size-14 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md hover:scale-105 transition-transform shrink-0"
+              className="size-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md hover:scale-105 transition-transform shrink-0"
             >
-              <Volume2 className={`size-7 ${isPlaying ? "animate-pulse text-wp-amber" : ""}`} />
+              <Volume2 className={`size-6 ${isPlaying ? "animate-pulse text-wp-amber" : ""}`} />
             </button>
             <div>
-              <div className="flex items-center gap-2">
-                <h2 className="font-sans font-black text-xl md:text-2xl text-white whitespace-nowrap truncate">Listen &amp; Match Picture</h2>
-                <Sparkles className="size-4 text-wp-amber animate-pulse" />
-              </div>
+              <h2 className="font-sans font-black text-xl text-white whitespace-nowrap truncate leading-tight">Listen &amp; Match Picture</h2>
               <p className="font-sans text-white/70 text-xs mt-0.5">
-                Tap the matching image card or press 1–5 on your keyboard.
+                Tap the matching image card or press 1–5 on keyboard.
               </p>
             </div>
           </div>
@@ -147,14 +144,14 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
           <button
             type="button"
             onClick={replayAudio}
-            className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/10 text-white/80 hover:text-white text-xs font-sans font-bold border border-white/15 backdrop-blur-md transition-colors shrink-0"
+            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/10 text-white/90 hover:text-white text-xs font-sans font-bold border border-white/15 backdrop-blur-md transition-colors shrink-0"
           >
-            <RefreshCw className="size-4" />
-            <span>Replay Audio</span>
+            <RefreshCw className="size-3.5" />
+            <span>Replay</span>
           </button>
         </div>
 
-        {/* Expansive Card Image Selection Grid (Zero Layout Shift Microinteractions) */}
+        {/* Decluttered Card Image Selection Grid (No Redundant Badges) */}
         <div
           role="radiogroup"
           aria-label="Choose matching picture for audio prompt"
@@ -164,7 +161,6 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             const isSelected = selectedId === card.id;
             const isTargetCompleted = completedWordIds.has(card.id);
 
-            // Constant border thickness (border-2) prevents pixel expansion/layout shift
             let cardStateStyle = "border-2 border-border bg-wp-card hover:border-primary/50 hover:shadow-md";
             if (isSelected) {
               if (feedback === "correct") cardStateStyle = "border-2 border-wp-green bg-wp-green-light/40 shadow-md";
@@ -181,31 +177,28 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 aria-checked={isSelected}
                 disabled={feedback === "correct"}
                 onClick={() => handleCardClick(card)}
-                className={`group relative rounded-3xl overflow-hidden p-2 flex flex-col items-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 min-h-[220px] shadow-wp-xs ${cardStateStyle}`}
+                className={`group relative rounded-3xl overflow-hidden p-2 flex flex-col items-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 min-h-[200px] shadow-wp-xs ${cardStateStyle}`}
               >
-                {/* Physical Key Cap Badge */}
-                <div className="absolute top-3 left-3 z-10 bg-slate-900/90 text-white text-xs font-mono font-black px-2.5 py-1 rounded-xl border border-white/20 shadow-md backdrop-blur-md flex items-center gap-1.5 pointer-events-none">
-                  <kbd className="bg-white/20 text-white px-1.5 py-0.5 rounded text-[11px] font-mono font-bold">Key [{idx + 1}]</kbd>
-                </div>
+                {/* Single Clean Physical Key Badge */}
+                <span className="absolute top-3 left-3 z-10 bg-slate-900/90 text-white text-xs font-mono font-bold px-2.5 py-1 rounded-xl border border-white/20 shadow-md backdrop-blur-md pointer-events-none">
+                  Key [{idx + 1}]
+                </span>
 
-                <div className="h-44 sm:h-52 w-full relative rounded-2xl overflow-hidden bg-muted border border-border/60 shrink-0">
+                <div className="h-40 sm:h-48 w-full relative rounded-2xl overflow-hidden bg-muted border border-border/60 shrink-0">
                   <WordImage word={card} width="500" height="400" className="size-full object-cover group-hover:scale-105 transition-transform duration-300" />
                   {isTargetCompleted && (
                     <div className="absolute top-3 right-3 bg-wp-green text-white p-1.5 rounded-full shadow-md">
-                      <CheckCircle2 className="size-5" />
+                      <CheckCircle2 className="size-4" />
                     </div>
                   )}
                 </div>
 
-                <div className="w-full p-2 flex items-center justify-between">
+                <div className="w-full px-2 py-1 flex items-center justify-between">
                   <p className="font-sans font-bold text-foreground text-sm truncate">
                     {isTargetCompleted || (isSelected && feedback === "correct")
                       ? card.label
                       : `Option ${idx + 1}`}
                   </p>
-                  <span className="text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-2 py-0.5 rounded-md">
-                    [{idx + 1}]
-                  </span>
                 </div>
               </button>
             );
