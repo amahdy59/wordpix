@@ -2,6 +2,17 @@
   "app": {
     "title": "وورد بيكس",
     "tagline": "تعلم الإنجليزية عبر الصور",
+    "skipToContent": "تخطَّ إلى المحتوى",
+    "loading": "جارٍ التحميل…"
+  },
+  "nav": {
+    "label": "التنقل الرئيسي",
+    "home": "الرئيسية",
+    "explore": "الدروس",
+    "practice": "المراجعة",
+    "profile": "الملف الشخصي"
+  },
+  "action": {
     "getStarted": "ابدأ الآن",
     "continue": "متابعة",
     "letsBegin": "هيا نبدأ!",
@@ -9,33 +20,36 @@
     "close": "إغلاق",
     "next": "التالي",
     "submit": "إرسال",
+    "tryAgain": "حاول مرة أخرى",
     "listenAgain": "استمع مرة أخرى",
-    "gotIt": "فهمت ذلك! ✓"
+    "gotIt": "فهمت"
   },
   "onboarding": {
     "languageTitle": "ما هي لغتك الأم؟",
     "languageSubtitle": "اختر لغتك الأم للمتابعة",
-    "interestTitle": "ما هي الموضوعات التي تهمك؟",
-    "interestSubtitle": "اختر موضوعاً أو أكثر لتخصيص دروسك",
     "readyTitle": "أنت جاهز تماماً!",
     "readySubtitle": "لنبدأ رحلتك في تعلم الإنجليزية بالصور!"
   },
   "dashboard": {
-    "greeting": "صباح الخير! 👋",
+    "greetingMorning": "صباح الخير",
+    "greetingAfternoon": "مساء الخير",
+    "greetingEvening": "مساء الخير",
+    "today": "اليوم",
+    "review": "المراجعة",
+    "yourLearning": "تقدمك في التعلم",
+    "thisWeek": "هذا الأسبوع",
     "dayStreak": "أيام متتالية",
-    "xpPoints": "نقاط XP",
-    "wordsLearned": "كلمة",
-    "progress": "التقدم",
-    "activeWorldTitle": "غرفة النوم",
-    "continueLearning": "متابعة التعلم",
-    "dailyReview": "المراجعة اليومية",
-    "reviewReady": "3 كلمات جاهزة للمراجعة",
-    "keepItUp": "استمر على هذا الأداء!",
-    "streakMessage": "أنت في سلسلة 7 أيام. راجع 3 كلمات للاستمرار!"
+    "xpPoints": "نقاط الخبرة",
+    "strong": "متقن",
+    "learning": "قيد التعلم",
+    "due": "مستحق",
+    "continueSession": "متابعة الجلسة",
+    "startReview": "بدء المراجعة",
+    "offlineReady": "غرفة النوم متاحة بدون اتصال",
+    "offlineSaving": "جارٍ الحفظ للاستخدام دون اتصال: {cached} من {total}"
   },
   "explore": {
     "title": "استكشف العوالم",
-    "subtitle": "المستوى 1 — اختر عالماً لبدء رحلتك",
     "complete": "مكتمل",
     "inProgress": "قيد التقدم",
     "locked": "مغلق",
@@ -45,6 +59,13 @@
     "mastered": "متقن",
     "practiced": "متدرب",
     "recognized": "معروف",
-    "streak": "سلسلة"
+    "streak": "سلسلة",
+    "xpEarned": "+{amount} نقطة خبرة"
+  },
+  "settings": {
+    "interfaceLanguage": "لغة الواجهة",
+    "interfaceLanguageHint": "اختر لغة القوائم والتسميات. تبقى الدروس بالإنجليزية.",
+    "english": "English",
+    "arabic": "العربية"
   }
 }

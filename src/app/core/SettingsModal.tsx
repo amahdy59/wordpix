@@ -2,6 +2,7 @@ import { memo, useState } from "react";
 import { X, Sun, Moon, Volume2, Type, Sliders, ShieldCheck, Eye } from "lucide-react";
 import { useLearner } from "../context/LearnerContext";
 import { useTheme } from "../shared/ThemeToggle";
+import { useI18n, SUPPORTED_LANGS } from "../context/I18nContext";
 
 interface Props {
   isOpen: boolean;
@@ -11,6 +12,7 @@ interface Props {
 export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Props) {
   const { state, setPreferences, resetToZero } = useLearner();
   const { theme, resolvedTheme, toggleTheme } = useTheme();
+  const { t, interfaceLang, setInterfaceLang } = useI18n();
 
   const [highContrast, setHighContrast] = useState(false);
   const [textSize, setTextSize] = useState<"standard" | "large" | "xlarge">("standard");
@@ -87,6 +89,46 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   )}
                   <span className="capitalize">{theme}</span>
                 </button>
+              </div>
+
+              <hr className="border-border/60" />
+
+              {/*
+                Interface language. I18nProvider was mounted from the start but
+                purely decorative: setInterfaceLang and t() had zero consumers,
+                so there was no way to reach Arabic or RTL from the UI.
+              */}
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <span className="font-sans font-bold text-foreground text-sm">
+                    {t("settings.interfaceLanguage")}
+                  </span>
+                  <p className="font-sans text-xs text-muted-foreground">
+                    {t("settings.interfaceLanguageHint")}
+                  </p>
+                </div>
+                <div
+                  className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl shrink-0"
+                  role="group"
+                  aria-label={t("settings.interfaceLanguage")}
+                >
+                  {SUPPORTED_LANGS.map((lang) => (
+                    <button
+                      key={lang}
+                      type="button"
+                      onClick={() => setInterfaceLang(lang)}
+                      aria-pressed={interfaceLang === lang}
+                      lang={lang}
+                      className={`px-3 py-1.5 min-h-[44px] rounded-lg text-xs font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                        interfaceLang === lang
+                          ? "bg-primary text-primary-foreground shadow-xs"
+                          : "text-muted-foreground hover:text-foreground"
+                      }`}
+                    >
+                      {lang === "ar" ? t("settings.arabic") : t("settings.english")}
+                    </button>
+                  ))}
+                </div>
               </div>
 
               <hr className="border-border/60" />

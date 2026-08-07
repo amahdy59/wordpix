@@ -1,21 +1,10 @@
 import { memo, useState } from "react";
-import { Home, Compass, RotateCcw, UserCircle, BookOpen, Sliders } from "lucide-react";
+import { UserCircle, BookOpen, Sliders } from "lucide-react";
 import type { TabId, Action } from "../types";
 import { ThemeToggle } from "./ThemeToggle";
 import { SettingsModal } from "../core/SettingsModal";
-
-interface NavItem {
-  id: TabId;
-  label: string;
-  icon: React.ElementType;
-}
-
-const NAV_ITEMS: NavItem[] = [
-  { id: "home",     label: "Home Dashboard", icon: Home       },
-  { id: "explore",  label: "Lessons & Worlds", icon: Compass  },
-  { id: "practice", label: "Daily Review",   icon: RotateCcw  },
-  { id: "profile",  label: "Learner Profile", icon: UserCircle },
-];
+import { TABS } from "./BottomTabBar";
+import { useI18n } from "../context/I18nContext";
 
 interface Props {
   activeTab: TabId;
@@ -24,6 +13,7 @@ interface Props {
 
 export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Props) {
   const [showSettingsModal, setShowSettingsModal] = useState(false);
+  const { t } = useI18n();
 
   return (
     <aside
@@ -48,12 +38,16 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
         </button>
 
         {/* Navigation Items */}
+        {/* Shares TABS with BottomTabBar: the two navs previously carried
+            different wording for the same destinations ("Lessons & Worlds" vs
+            "Lessons", "Daily Review" vs "Review"). */}
         <nav
           className="flex flex-col items-center gap-2 mt-4"
-          aria-label="Main navigation"
+          aria-label={t("nav.label")}
         >
-          {NAV_ITEMS.map(({ id, label, icon: Icon }) => {
+          {TABS.map(({ id, labelKey, icon: Icon }) => {
             const isActive = activeTab === id;
+            const label = t(labelKey);
             return (
               <button
                 key={id}

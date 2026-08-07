@@ -5,6 +5,7 @@ import { useProgress } from "../data/progress";
 import { BEDROOM_GROUPS } from "../data/lessons";
 import { calculateDaysBetween, getLocalDateString, getWeekActivity } from "../../features/gamification/streak";
 import { useOfflineReadiness } from "../shared/useOfflineReadiness";
+import { useI18n } from "../context/I18nContext";
 
 const imgAvatar = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
 
@@ -15,17 +16,18 @@ interface Props {
 /** Rough pacing estimate used for the session-length hint on the Today card. */
 const SECONDS_PER_WORD = 48;
 
-function getGreeting(hour: number): string {
-  if (hour < 12) return "Good morning";
-  if (hour < 18) return "Good afternoon";
-  return "Good evening";
+function getGreetingKey(hour: number): string {
+  if (hour < 12) return "dashboard.greetingMorning";
+  if (hour < 18) return "dashboard.greetingAfternoon";
+  return "dashboard.greetingEvening";
 }
 
 export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
   const { progress } = useProgress();
 
+  const { t } = useI18n();
   const todayStr = getLocalDateString(new Date());
-  const greeting = getGreeting(new Date().getHours());
+  const greeting = t(getGreetingKey(new Date().getHours()));
 
   const memoryValues = useMemo(() => Object.values(progress.wordMemory), [progress.wordMemory]);
   const strongCount = useMemo(() => memoryValues.filter((w) => w.mastery === "strong").length, [memoryValues]);
@@ -80,15 +82,13 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         {offline && offline.ready && (
           <div className="hidden sm:flex items-center gap-1.5 text-[11px] font-sans font-semibold text-wp-teal bg-teal-500/10 px-3 py-1.5 rounded-full border border-teal-500/20">
             <WifiOff className="size-3.5" aria-hidden />
-            <span>Bedroom available offline</span>
+            <span>{t("dashboard.offlineReady")}</span>
           </div>
         )}
         {offline && !offline.ready && offline.cached > 0 && (
           <div className="hidden sm:flex items-center gap-1.5 text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-3 py-1.5 rounded-full border border-border">
             <WifiOff className="size-3.5" aria-hidden />
-            <span>
-              Saving for offline: {offline.cached} of {offline.total}
-            </span>
+            <span>{t("dashboard.offlineSaving", { cached: offline.cached, total: offline.total })}</span>
           </div>
         )}
       </header>
@@ -131,7 +131,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           {/* SECTION 1: TODAY */}
           <section aria-labelledby="section-today" className="flex flex-col gap-3">
             <span id="section-today" className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground">
-              TODAY
+              {t("dashboard.today")}
             </span>
             <div className="bg-wp-card rounded-3xl border border-primary/30 p-6 flex flex-col gap-4 shadow-wp-xs hover:border-primary/50 transition-all">
               <div className="flex items-center justify-between">
@@ -157,7 +157,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                 onClick={() => dispatch({ type: "START_LESSON" })}
                 className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 font-sans font-bold text-wp-text-on-blue text-base min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-sm transition-all flex items-center justify-center gap-2"
               >
-                <span>Continue Session</span>
+                <span>{t("dashboard.continueSession")}</span>
                 <ArrowRight className="size-5" />
               </button>
             </div>
@@ -166,7 +166,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           {/* SECTION 2: REVIEW */}
           <section aria-labelledby="section-review" className="flex flex-col gap-3">
             <span id="section-review" className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground">
-              REVIEW
+              {t("dashboard.review")}
             </span>
             <div className="bg-wp-card rounded-3xl border border-border p-6 flex flex-col gap-4 shadow-wp-xs">
               <div className="flex items-center justify-between">
@@ -186,7 +186,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                 onClick={() => dispatch({ type: "GO", to: "practice" })}
                 className="w-full bg-secondary hover:bg-primary/10 text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-sm min-h-[44px] transition-all flex items-center justify-center gap-2"
               >
-                <span>Start Review</span>
+                <span>{t("dashboard.startReview")}</span>
                 <ArrowRight className="size-4" />
               </button>
             </div>
@@ -198,21 +198,21 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           {/* SECTION 3: YOUR LEARNING */}
           <section aria-labelledby="section-learning" className="flex flex-col gap-3">
             <span id="section-learning" className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground">
-              YOUR LEARNING
+              {t("dashboard.yourLearning")}
             </span>
             <div className="bg-wp-card rounded-3xl border border-border p-6 flex flex-col gap-4 shadow-wp-xs">
               <div className="grid grid-cols-3 gap-3 text-center">
                 <div className="bg-wp-green-light/40 border border-wp-green/20 rounded-2xl p-3.5 flex flex-col items-center">
                   <span className="font-sans font-black text-wp-green text-2xl">{strongCount}</span>
-                  <span className="font-sans font-semibold text-muted-foreground text-xs mt-1">Strong</span>
+                  <span className="font-sans font-semibold text-muted-foreground text-xs mt-1">{t("dashboard.strong")}</span>
                 </div>
                 <div className="bg-amber-500/10 border border-amber-500/20 rounded-2xl p-3.5 flex flex-col items-center">
                   <span className="font-sans font-black text-amber-600 dark:text-wp-amber text-2xl">{learningCount}</span>
-                  <span className="font-sans font-semibold text-muted-foreground text-xs mt-1">Learning</span>
+                  <span className="font-sans font-semibold text-muted-foreground text-xs mt-1">{t("dashboard.learning")}</span>
                 </div>
                 <div className="bg-rose-500/10 border border-rose-500/20 rounded-2xl p-3.5 flex flex-col items-center">
                   <span className="font-sans font-black text-rose-600 dark:text-rose-400 text-2xl">{dueCount}</span>
-                  <span className="font-sans font-semibold text-muted-foreground text-xs mt-1">Due</span>
+                  <span className="font-sans font-semibold text-muted-foreground text-xs mt-1">{t("dashboard.due")}</span>
                 </div>
               </div>
             </div>
@@ -221,7 +221,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           {/* SECTION 4: THIS WEEK */}
           <section aria-labelledby="section-this-week" className="flex flex-col gap-3">
             <span id="section-this-week" className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground">
-              THIS WEEK
+              {t("dashboard.thisWeek")}
             </span>
             <div className="bg-wp-card rounded-3xl border border-border p-6 flex flex-col gap-4 shadow-wp-xs">
               <div className="flex items-center justify-between">

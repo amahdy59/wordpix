@@ -3,7 +3,7 @@ import type { Screen, Action, OnboardStep, TabId } from "./types";
 import { ErrorBoundary } from "./shared/ErrorBoundary";
 import { BEDROOM_VOCABULARY, BEDROOM_GROUPS } from "./data/lessons";
 import { LearnerProvider } from "./context/LearnerContext";
-import { I18nProvider } from "./context/I18nContext";
+import { I18nProvider, useI18n } from "./context/I18nContext";
 import { useHashRouter, hashToScreen } from "./router/useHashRouter";
 import { registerServiceWorker } from "../pwa";
 import { startSystemThemeSync } from "./shared/themeStore";
@@ -184,23 +184,32 @@ function ariaLiveAnnounce(msg: string) {
 const EX_STEPS = ["scene", "listen", "recall", "fill", "builder", "quiz"] as const;
 type ExStep = (typeof EX_STEPS)[number];
 
-const LoadingFallback = () => (
-  <div className="flex-1 flex items-center justify-center min-h-[300px] p-6 text-center" aria-live="polite">
-    <div className="flex flex-col items-center gap-3">
-      <div className="size-10 rounded-full border-4 border-primary border-t-transparent animate-spin" aria-hidden />
-      <p className="font-sans font-semibold text-muted-foreground text-sm">Loading screen…</p>
+const LoadingFallback = () => {
+  const { t } = useI18n();
+  return (
+    <div className="flex-1 flex items-center justify-center min-h-[300px] p-6 text-center" aria-live="polite">
+      <div className="flex flex-col items-center gap-3">
+        <div
+          className="size-10 rounded-full border-4 border-primary border-t-transparent motion-safe:animate-spin"
+          aria-hidden
+        />
+        <p className="font-sans font-semibold text-muted-foreground text-sm">{t("app.loading")}</p>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
-const SkipLink = () => (
-  <a
-    href="#main-content"
-    className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:start-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg font-sans font-semibold text-sm z-50 motion-safe:transition-none"
-  >
-    Skip to content
-  </a>
-);
+const SkipLink = () => {
+  const { t } = useI18n();
+  return (
+    <a
+      href="#main-content"
+      className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:start-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg font-sans font-semibold text-sm z-50 motion-safe:transition-none"
+    >
+      {t("app.skipToContent")}
+    </a>
+  );
+};
 
 function AppInner() {
   const [state, dispatch] = useReducer(

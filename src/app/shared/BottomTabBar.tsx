@@ -2,28 +2,34 @@ import { memo } from "react";
 import { Home, Compass, RotateCcw, UserCircle } from "lucide-react";
 import type { TabId, Action } from "../types";
 import { HomeIndicator } from "./HomeIndicator";
+import { useI18n } from "../context/I18nContext";
 
 interface Props {
   activeTab: TabId;
   dispatch: React.Dispatch<Action>;
 }
 
-const TABS: { id: TabId; label: string; icon: React.ElementType }[] = [
-  { id: "home",     label: "Home",     icon: Home       },
-  { id: "explore",  label: "Lessons",  icon: Compass    },
-  { id: "practice", label: "Review",   icon: RotateCcw  },
-  { id: "profile",  label: "Profile",  icon: UserCircle },
+/** Labels come from the i18n bundle so the tab bar mirrors the sidebar exactly. */
+export const TABS: { id: TabId; labelKey: string; icon: React.ElementType }[] = [
+  { id: "home",     labelKey: "nav.home",     icon: Home       },
+  { id: "explore",  labelKey: "nav.explore",  icon: Compass    },
+  { id: "practice", labelKey: "nav.practice", icon: RotateCcw  },
+  { id: "profile",  labelKey: "nav.profile",  icon: UserCircle },
 ];
 
 export const BottomTabBar = memo(function BottomTabBar({ activeTab, dispatch }: Props) {
+  const { t } = useI18n();
+
   return (
-    <nav aria-label="Main navigation" className="bg-wp-card border-t border-border">
+    <nav aria-label={t("nav.label")} className="bg-wp-card border-t border-border">
       <div className="flex items-start justify-around px-4 pt-2">
-        {TABS.map(({ id, label, icon: Icon }) => {
+        {TABS.map(({ id, labelKey, icon: Icon }) => {
           const isActive = id === activeTab;
+          const label = t(labelKey);
           return (
             <button
               key={id}
+              type="button"
               aria-label={label}
               aria-current={isActive ? "page" : undefined}
               onClick={() => dispatch({ type: "GO", to: id })}
