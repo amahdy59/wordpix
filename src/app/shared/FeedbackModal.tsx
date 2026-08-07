@@ -1,5 +1,6 @@
 import { memo } from "react";
 import { CheckCircle2, XCircle, ArrowRight, RotateCcw, Sparkles, Flame } from "lucide-react";
+import { XP_RULES } from "../../features/gamification/xp";
 
 interface Props {
   isOpen: boolean;
@@ -19,7 +20,9 @@ export const FeedbackModal = memo(function FeedbackModal({
   title,
   explanation,
   wordLabel,
-  xpBonus = 15,
+  // Single source of truth: this must match what LearnerContext actually
+  // credits per correct attempt, or the running XP total will not add up.
+  xpBonus = XP_RULES.PER_CORRECT_ANSWER,
   streakCount,
   onContinue,
   onTryAgain,

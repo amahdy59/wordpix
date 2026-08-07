@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
 import type { AnswerAttempt } from "../types";
 import { updateStreak, getLocalDateString } from "../../features/gamification/streak";
 import { calculateSM2State, createInitialWordState, type WordLearningState } from "../../features/gamification/sm2";
+import { XP_RULES } from "../../features/gamification/xp";
 
 export type MasteryLevel = 0 | 1 | 2 | 3;
 export type LearnerGoal = "everyday" | "travel" | "work" | "school" | "conversation" | "kids";
@@ -163,9 +164,11 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
 
       const isFirstSessionToday = prev.learnerProgress.lastStudiedDate !== todayStr;
 
-      // XP calculation: 10 XP per correct attempt (0 correct = 0 XP)
+      // XP calculation (0 correct = 0 XP). Rate lives in XP_RULES so the
+      // per-answer figure shown in FeedbackModal cannot drift from what is
+      // actually credited here.
       const correctAttempts = attempts.filter((a) => a.correct);
-      const xpEarned = correctAttempts.length * 10;
+      const xpEarned = correctAttempts.length * XP_RULES.PER_CORRECT_ANSWER;
 
       // Group attempts by wordId to calculate SM-2 recall quality
       const wordAttempts: Record<string, { correct: number; total: number }> = {};
