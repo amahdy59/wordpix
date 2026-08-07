@@ -16,6 +16,14 @@ export interface TopicCategory {
   itemsCount: number;
 }
 
+export interface WordGroup {
+  id: string;
+  name: string;
+  topicId: string;
+  wordIds: string[];
+  description: string;
+}
+
 const LOCAL_WORD_IMAGES = "./word-images";
 
 export const BEDROOM_TOPICS: TopicCategory[] = [
@@ -25,6 +33,37 @@ export const BEDROOM_TOPICS: TopicCategory[] = [
   { id: "objects", name: "Bedroom Objects", itemsCount: 10 },
   { id: "personal", name: "Personal Items", itemsCount: 8 },
   { id: "electronics", name: "Electronics", itemsCount: 8 },
+];
+
+export const BEDROOM_GROUPS: WordGroup[] = [
+  {
+    id: "essential-furniture",
+    name: "Essential Furniture",
+    topicId: "furniture",
+    wordIds: ["bed", "nightstand", "dresser", "wardrobe", "desk"],
+    description: "Core furniture pieces found in every bedroom.",
+  },
+  {
+    id: "bedding-comfort",
+    name: "Bedding & Comfort",
+    topicId: "bedding",
+    wordIds: ["pillow", "blanket", "sheet", "mattress", "duvet"],
+    description: "Linens and bedding items for a cozy sleep.",
+  },
+  {
+    id: "lighting-objects",
+    name: "Lighting & Objects",
+    topicId: "objects",
+    wordIds: ["lamp", "chair", "mirror", "bookshelf", "stool"],
+    description: "Essential bedroom accessories and furniture.",
+  },
+  {
+    id: "bedding-linens-2",
+    name: "Pillows & Covers",
+    topicId: "bedding",
+    wordIds: ["pillowcase", "comforter", "cushion", "quilt", "bedspread"],
+    description: "Bed covers, cushions, and pillowcases.",
+  },
 ];
 
 export const BEDROOM_VOCABULARY: VocabItem[] = [

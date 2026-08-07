@@ -2,34 +2,53 @@ import { memo, useMemo, useState } from "react";
 import type { Action } from "../types";
 import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { articleFor, getWordOptions } from "./exerciseContent";
+import { articleFor } from "./exerciseContent";
+import { WordImage } from "../shared/WordImage";
 
 interface Props {
   step: number;
-  word: VocabItem;
-  currentWordIndex?: number;
-  totalWordsQueue?: number;
+  words: VocabItem[];
+  groupId?: string;
   dispatch: React.Dispatch<Action>;
 }
 
 export const ExerciseContextFill = memo(function ExerciseContextFill({
   step,
-  word,
-  currentWordIndex = 0,
-  totalWordsQueue = 5,
+  words,
+  groupId,
   dispatch,
 }: Props) {
-  const options = useMemo(() => getWordOptions(word), [word]);
+  const [questionIndex, setQuestionIndex] = useState<number>(0);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [checked, setChecked] = useState(false);
   const [shaking, setShaking] = useState(false);
-  const isCorrect = selectedId === word.id;
+
+  const currentTargetWord = words[questionIndex] || words[0];
+
+  const options = useMemo(() => {
+    const otherWords = words.filter((w) => w.id !== currentTargetWord.id);
+    const shuffled = [...otherWords].sort(() => 0.5 - Math.random()).slice(0, 3);
+    const pool = [currentTargetWord, ...shuffled];
+    return pool.sort(() => 0.5 - Math.random());
+  }, [currentTargetWord, words]);
+
+  const isCorrect = selectedId === currentTargetWord.id;
   const selectedWord = options.find((item) => item.id === selectedId);
 
   const handleAction = () => {
     if (checked) {
-      if (isCorrect) dispatch({ type: "LESSON_NEXT" });
-      else { setSelectedId(null); setChecked(false); }
+      if (isCorrect) {
+        if (questionIndex + 1 < words.length) {
+          setQuestionIndex((i) => i + 1);
+          setSelectedId(null);
+          setChecked(false);
+        } else {
+          dispatch({ type: "LESSON_NEXT" });
+        }
+      } else {
+        setSelectedId(null);
+        setChecked(false);
+      }
       return;
     }
     if (!selectedId) {
@@ -45,9 +64,9 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
     <ExerciseShell
       step={step}
       title="Complete the Sentence"
-      word={word}
-      currentWordIndex={currentWordIndex}
-      totalWordsQueue={totalWordsQueue}
+      words={words}
+      activeWord={currentTargetWord}
+      groupId={groupId}
       dispatch={dispatch}
       footer={
         <div className="flex flex-col gap-1.5">
@@ -67,18 +86,39 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
                 : selectedId ? "bg-wp-blue opacity-100" : "bg-wp-blue opacity-50"
             }`}
           >
-            {checked ? isCorrect ? "Continue" : "Try Again" : "Check Answer"}
+            {checked
+              ? isCorrect
+                ? questionIndex + 1 < words.length
+                  ? `Next Sentence (${questionIndex + 2}/${words.length}) →`
+                  : "Complete Step →"
+                : "Try Again"
+              : "Check Answer"}
           </button>
         </div>
       }
     >
       <div className="flex flex-col gap-5 w-full max-w-lg">
-        <h2 className="font-sans font-bold text-foreground text-xl">Complete the sentence</h2>
+        {/* Question Counter */}
+        <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground">
+          <span>Sentence {questionIndex + 1} of {words.length}</span>
+          <span className="text-primary font-semibold">Group context drill</span>
+        </div>
+
+        {/* Target Image Preview */}
+        <div className="bg-wp-card border border-border rounded-2xl p-4 flex items-center gap-4 shadow-sm">
+          <div className="size-20 rounded-xl overflow-hidden shrink-0 border border-border bg-muted">
+            <WordImage word={currentTargetWord} width="80" height="80" className="size-full object-cover" />
+          </div>
+          <div>
+            <h2 className="font-sans font-bold text-foreground text-xl">Fill in the blank</h2>
+            <p className="font-sans text-muted-foreground text-xs mt-0.5">Match the image to the sentence.</p>
+          </div>
+        </div>
 
         {/* Sentence display */}
-        <div className="bg-wp-card rounded-2xl border border-border p-5 text-center">
+        <div className="bg-wp-card rounded-2xl border border-border p-5 text-center shadow-xs">
           <p className="font-sans font-bold text-foreground text-xl leading-relaxed">
-            This is {articleFor(word.label)}{" "}
+            This is {articleFor(currentTargetWord.label)}{" "}
             <span className="inline-block min-w-28 border-b-2 border-primary text-primary px-1">
               {selectedWord?.label.toLowerCase() ?? "_______"}
             </span>
@@ -113,8 +153,8 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
             className={`w-full rounded-xl p-4 text-sm font-sans font-semibold ${isCorrect ? "bg-wp-green-light text-wp-green" : "bg-wp-rose-light text-wp-rose"}`}
           >
             {isCorrect
-              ? "Correct. The sentence now matches the picture."
-              : `Try again — the picture shows ${articleFor(word.label)} ${word.label.toLowerCase()}.`}
+              ? "Correct. The sentence matches the target image."
+              : `Try again — the picture shows ${articleFor(currentTargetWord.label)} ${currentTargetWord.label.toLowerCase()}.`}
           </p>
         )}
       </div>

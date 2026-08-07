@@ -3,33 +3,50 @@ import type { Action } from "../types";
 import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { articleFor } from "./exerciseContent";
+import { WordImage } from "../shared/WordImage";
 
 interface Props {
   step: number;
-  word: VocabItem;
-  currentWordIndex?: number;
-  totalWordsQueue?: number;
+  words: VocabItem[];
+  groupId?: string;
   dispatch: React.Dispatch<Action>;
 }
 
 export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
   step,
-  word,
-  currentWordIndex = 0,
-  totalWordsQueue = 5,
+  words,
+  groupId,
   dispatch,
 }: Props) {
-  const answer = useMemo(() => ["This", "is", articleFor(word.label), word.label.toLowerCase()], [word.label]);
-  const shuffled = useMemo(() => [answer[3], answer[0], answer[2], answer[1]], [answer]);
+  const [questionIndex, setQuestionIndex] = useState<number>(0);
   const [placed, setPlaced] = useState<string[]>([]);
   const [checked, setChecked] = useState(false);
   const [shaking, setShaking] = useState(false);
+
+  const currentTargetWord = words[questionIndex] || words[0];
+
+  const answer = useMemo(
+    () => ["This", "is", articleFor(currentTargetWord.label), currentTargetWord.label.toLowerCase()],
+    [currentTargetWord.label]
+  );
+  const shuffled = useMemo(() => [answer[3], answer[0], answer[2], answer[1]], [answer]);
+
   const isCorrect = placed.join(" ") === answer.join(" ");
 
   const handleAction = () => {
     if (checked) {
-      if (isCorrect) dispatch({ type: "LESSON_NEXT" });
-      else { setPlaced([]); setChecked(false); }
+      if (isCorrect) {
+        if (questionIndex + 1 < words.length) {
+          setQuestionIndex((i) => i + 1);
+          setPlaced([]);
+          setChecked(false);
+        } else {
+          dispatch({ type: "LESSON_NEXT" });
+        }
+      } else {
+        setPlaced([]);
+        setChecked(false);
+      }
       return;
     }
     if (placed.length !== answer.length) {
@@ -45,9 +62,9 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
     <ExerciseShell
       step={step}
       title="Build a Sentence"
-      word={word}
-      currentWordIndex={currentWordIndex}
-      totalWordsQueue={totalWordsQueue}
+      words={words}
+      activeWord={currentTargetWord}
+      groupId={groupId}
       dispatch={dispatch}
       footer={
         <div className="flex flex-col gap-1.5">
@@ -67,13 +84,34 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
                 : placed.length === answer.length ? "bg-wp-blue opacity-100" : "bg-wp-blue opacity-50"
             }`}
           >
-            {checked ? isCorrect ? "Continue" : "Try Again" : "Check Sentence"}
+            {checked
+              ? isCorrect
+                ? questionIndex + 1 < words.length
+                  ? `Next Item (${questionIndex + 2}/${words.length}) →`
+                  : "Complete Step →"
+                : "Try Again"
+              : "Check Sentence"}
           </button>
         </div>
       }
     >
       <div className="flex flex-col gap-5 w-full max-w-lg">
-        <h2 className="font-sans font-bold text-foreground text-xl">Describe the picture</h2>
+        {/* Question Counter */}
+        <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground">
+          <span>Item {questionIndex + 1} of {words.length}</span>
+          <span className="text-primary font-semibold">Group sentence assembly</span>
+        </div>
+
+        {/* Target Image Preview */}
+        <div className="bg-wp-card border border-border rounded-2xl p-4 flex items-center gap-4 shadow-sm">
+          <div className="size-20 rounded-xl overflow-hidden shrink-0 border border-border bg-muted">
+            <WordImage word={currentTargetWord} width="80" height="80" className="size-full object-cover" />
+          </div>
+          <div>
+            <h2 className="font-sans font-bold text-foreground text-xl">Describe the picture</h2>
+            <p className="font-sans text-muted-foreground text-xs mt-0.5">Build a complete sentence for this item.</p>
+          </div>
+        </div>
 
         {/* Sentence assembly area */}
         <div

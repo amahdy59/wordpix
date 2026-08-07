@@ -3,14 +3,12 @@ import type { Action } from "../types";
 import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { Timer, TimerOff } from "lucide-react";
-import { getWordOptions } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
 
 interface Props {
   step: number;
-  word: VocabItem;
-  currentWordIndex?: number;
-  totalWordsQueue?: number;
+  words: VocabItem[];
+  groupId?: string;
   dispatch: React.Dispatch<Action>;
 }
 
@@ -18,19 +16,28 @@ const TIMER_SECONDS = 45;
 
 export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
   step,
-  word,
-  currentWordIndex = 0,
-  totalWordsQueue = 5,
+  words,
+  groupId,
   dispatch,
 }: Props) {
-  const options = useMemo(() => getWordOptions(word), [word]);
+  const [questionIndex, setQuestionIndex] = useState<number>(0);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [checked, setChecked] = useState(false);
   const [shaking, setShaking] = useState(false);
   const [timerOn, setTimerOn] = useState(false);
   const [timeLeft, setTimeLeft] = useState(TIMER_SECONDS);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const isCorrect = selectedId === word.id;
+
+  const currentTargetWord = words[questionIndex] || words[0];
+
+  const options = useMemo(() => {
+    const otherWords = words.filter((w) => w.id !== currentTargetWord.id);
+    const shuffled = [...otherWords].sort(() => 0.5 - Math.random()).slice(0, 3);
+    const pool = [currentTargetWord, ...shuffled];
+    return pool.sort(() => 0.5 - Math.random());
+  }, [currentTargetWord, words]);
+
+  const isCorrect = selectedId === currentTargetWord.id;
 
   useEffect(() => {
     if (!timerOn || checked) return undefined;
@@ -47,8 +54,18 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
 
   const handleAction = () => {
     if (checked) {
-      if (isCorrect) dispatch({ type: "LESSON_NEXT" });
-      else { setSelectedId(null); setChecked(false); }
+      if (isCorrect) {
+        if (questionIndex + 1 < words.length) {
+          setQuestionIndex((i) => i + 1);
+          setSelectedId(null);
+          setChecked(false);
+        } else {
+          dispatch({ type: "LESSON_NEXT" });
+        }
+      } else {
+        setSelectedId(null);
+        setChecked(false);
+      }
       return;
     }
     if (!selectedId) {
@@ -64,10 +81,10 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
   return (
     <ExerciseShell
       step={step}
-      title="Quick Quiz"
-      word={word}
-      currentWordIndex={currentWordIndex}
-      totalWordsQueue={totalWordsQueue}
+      title="Group Quick Quiz"
+      words={words}
+      activeWord={currentTargetWord}
+      groupId={groupId}
       dispatch={dispatch}
       footer={
         <div className="flex flex-col gap-1.5">
@@ -89,9 +106,9 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
           >
             {checked
               ? isCorrect
-                ? currentWordIndex + 1 >= totalWordsQueue
-                  ? "Finish Lesson Session"
-                  : "Next Word in Queue →"
+                ? questionIndex + 1 < words.length
+                  ? `Next Quiz Question (${questionIndex + 2}/${words.length}) →`
+                  : "Finish Group Session 🎉"
                 : "Try Again"
               : "Check Answer"}
           </button>
@@ -99,10 +116,14 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       }
     >
       <div className="flex flex-col gap-4 w-full max-w-lg">
+        {/* Question counter & timer header */}
         <div className="flex items-start justify-between gap-3">
-          <h2 className="font-sans font-bold text-foreground text-xl flex-1">
-            Which image shows &ldquo;{word.label.toLowerCase()}&rdquo;?
-          </h2>
+          <div className="flex flex-col">
+            <span className="text-xs font-sans font-bold text-muted-foreground">Quiz Question {questionIndex + 1} of {words.length}</span>
+            <h2 className="font-sans font-bold text-foreground text-xl leading-tight">
+              Which image shows &ldquo;{currentTargetWord.label.toLowerCase()}&rdquo;?
+            </h2>
+          </div>
           <button
             type="button"
             onClick={toggleTimer}
@@ -120,7 +141,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         {/* Image option grid */}
         <div
           role="radiogroup"
-          aria-label={`Choose the image that shows ${word.label}`}
+          aria-label={`Choose the image that shows ${currentTargetWord.label}`}
           className="grid grid-cols-2 gap-3"
         >
           {options.map((option, idx) => {
@@ -158,7 +179,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
             aria-live="polite"
             className={`w-full rounded-xl p-4 text-sm font-sans font-semibold ${isCorrect ? "bg-wp-green-light text-wp-green" : "bg-wp-rose-light text-wp-rose"}`}
           >
-            {isCorrect ? "Correct — great visual recall." : `Not yet. Find the image labelled ${word.label}.`}
+            {isCorrect ? "Correct — great visual recall." : `Not yet. Find the image labelled ${currentTargetWord.label}.`}
           </p>
         )}
       </div>

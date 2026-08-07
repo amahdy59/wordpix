@@ -1,11 +1,11 @@
-import { memo } from "react";
+import { memo, useState } from "react";
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { BackButton } from "../shared/BackButton";
-import { Sparkles, RotateCcw, CheckCircle2, ArrowRight, BookOpen } from "lucide-react";
+import { ArrowRight, BookOpen, Layers, CheckCircle2 } from "lucide-react";
+import { BEDROOM_GROUPS, BEDROOM_VOCABULARY } from "../data/lessons";
 import { useProgress } from "../data/progress";
-import { BEDROOM_VOCABULARY } from "../data/lessons";
 
 const imgBedroom = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=85";
 
@@ -14,38 +14,15 @@ interface Props {
 }
 
 export const LessonWorldEntry = memo(function LessonWorldEntry({ dispatch }: Props) {
+  const [selectedGroupId, setSelectedGroupId] = useState<string>("essential-furniture");
   const { progress } = useProgress();
 
-  const masteredCount = BEDROOM_VOCABULARY.filter((w) => progress.wordMastery[w.id] === 3).length;
-  const practicedCount = BEDROOM_VOCABULARY.filter((w) => (progress.wordMastery[w.id] || 0) === 1 || progress.wordMastery[w.id] === 2).length;
-  const newCount = BEDROOM_VOCABULARY.length - masteredCount - practicedCount;
+  const selectedGroup = BEDROOM_GROUPS.find((g) => g.id === selectedGroupId) ?? BEDROOM_GROUPS[0];
 
-  const PROGRESS_ITEMS = [
-    {
-      id: "new",
-      label: "New Words",
-      count: newCount,
-      desc: `${newCount} remaining to learn`,
-      icon: Sparkles,
-      iconBg: "bg-violet-500/10 text-primary border-violet-500/20",
-    },
-    {
-      id: "practice",
-      label: "Practiced",
-      count: practicedCount,
-      desc: `${practicedCount} words in review queue`,
-      icon: RotateCcw,
-      iconBg: "bg-amber-500/10 text-wp-amber border-amber-500/20",
-    },
-    {
-      id: "mastered",
-      label: "Mastered",
-      count: masteredCount,
-      desc: `${masteredCount} words mastered so far`,
-      icon: CheckCircle2,
-      iconBg: "bg-teal-500/10 text-wp-teal border-teal-500/20",
-    },
-  ];
+  const handleStartGroup = (gId: string) => {
+    const group = BEDROOM_GROUPS.find((g) => g.id === gId) ?? BEDROOM_GROUPS[0];
+    dispatch({ type: "START_LESSON", groupId: group.id, wordQueue: group.wordIds });
+  };
 
   return (
     <div className="bg-background flex flex-col min-h-svh lg:flex-row lg:overflow-hidden relative">
@@ -61,14 +38,18 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ dispatch }: Pro
         <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/60" aria-hidden />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" aria-hidden />
 
-        <div className="absolute bottom-8 left-8">
-          <span className="font-sans font-bold text-xs text-white bg-black/40 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20">
-            Bedroom Furniture &amp; Accessories
+        <div className="absolute bottom-8 left-8 flex flex-col gap-2">
+          <span className="font-sans font-bold text-xs text-white bg-black/50 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20 self-start">
+            Rosetta Stone Group Learning
           </span>
+          <h2 className="font-sans font-black text-white text-3xl">The Bedroom World</h2>
+          <p className="font-sans text-white/70 text-sm max-w-sm">
+            Learn thematic word groups through visual discovery, audio drills, and interactive sentence building.
+          </p>
         </div>
       </div>
 
-      {/* ── Right / Mobile: Lesson info + CTA ───────────────────────────────── */}
+      {/* ── Right / Mobile: Group Selector + Info + CTA ────────────────────── */}
       <div className="flex-1 flex flex-col justify-between min-h-svh lg:min-h-0">
         {/* Header Bar */}
         <header className="flex items-center justify-between px-5 py-3 border-b border-border bg-wp-card shrink-0">
@@ -78,7 +59,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ dispatch }: Pro
               <h1 className="font-sans font-black text-foreground text-lg leading-none">
                 The Bedroom
               </h1>
-              <p className="font-sans text-muted-foreground text-xs mt-0.5">Visual Scene Discovery</p>
+              <p className="font-sans text-muted-foreground text-xs mt-0.5">Select a Group to Learn</p>
             </div>
           </div>
           <span className="font-sans font-semibold text-xs bg-secondary text-primary px-3 py-1 rounded-full border border-primary/20">
@@ -87,9 +68,9 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ dispatch }: Pro
         </header>
 
         {/* Main content */}
-        <main className="flex-1 flex flex-col gap-4 p-5 lg:p-8 overflow-y-auto">
-          {/* Mobile-only hero image */}
-          <div className="lg:hidden h-44 sm:h-56 relative rounded-2xl w-full overflow-hidden border border-border shadow-sm shrink-0">
+        <main className="flex-1 flex flex-col gap-5 p-5 lg:p-8 overflow-y-auto">
+          {/* Mobile hero image */}
+          <div className="lg:hidden h-40 sm:h-48 relative rounded-2xl w-full overflow-hidden border border-border shadow-sm shrink-0">
             <img
               alt="The Bedroom visual scene"
               className="absolute inset-0 object-cover size-full"
@@ -97,58 +78,92 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ dispatch }: Pro
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" aria-hidden />
             <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-white">
-              <span className="font-sans font-bold text-sm">Bedroom Furniture &amp; Accessories</span>
-              <span className="font-sans text-xs bg-white/20 backdrop-blur-md px-2.5 py-0.5 rounded-full font-semibold">56 Words</span>
+              <span className="font-sans font-bold text-sm">Bedroom Word Groups</span>
+              <span className="font-sans text-xs bg-white/20 backdrop-blur-md px-2.5 py-0.5 rounded-full font-semibold">
+                {BEDROOM_GROUPS.length} Groups
+              </span>
             </div>
           </div>
 
-          {/* Desktop lesson summary heading */}
-          <div className="hidden lg:block">
-            <div className="flex items-center gap-3 mb-1">
-              <div className="size-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                <BookOpen className="size-5" />
-              </div>
-              <div>
-                <h2 className="font-sans font-black text-foreground text-2xl leading-none">Lesson Overview</h2>
-                <p className="font-sans text-muted-foreground text-sm mt-0.5">56 vocabulary items across 6 interactive exercises</p>
-              </div>
+          <div className="flex flex-col gap-1">
+            <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider">
+              <Layers className="size-4" />
+              <span>Rosetta Stone Group Learning</span>
             </div>
+            <h2 className="font-sans font-black text-foreground text-2xl leading-tight">
+              Select a Word Group
+            </h2>
+            <p className="font-sans text-muted-foreground text-sm">
+              Each group teaches 5 related vocabulary words across all 5 exercise steps.
+            </p>
           </div>
 
-          {/* Progress breakdown cards */}
-          <section aria-label="Lesson progress" className="flex flex-col gap-2.5 w-full">
-            {PROGRESS_ITEMS.map(({ id, label, count, desc, icon: Icon, iconBg }) => (
-              <div
-                key={id}
-                className="bg-wp-card rounded-2xl border border-border p-4 flex items-center justify-between shadow-sm hover:border-primary/30 transition-all"
-              >
-                <div className="flex items-center gap-3.5">
-                  <div className={`size-11 rounded-xl flex items-center justify-center shrink-0 border ${iconBg}`}>
-                    <Icon className="size-5" />
+          {/* Group Selection Cards */}
+          <div role="radiogroup" aria-label="Select word group" className="flex flex-col gap-3">
+            {BEDROOM_GROUPS.map((g) => {
+              const isSelected = selectedGroupId === g.id;
+
+              // Calc group progress from useProgress
+              const groupWords = g.wordIds.map((id) => BEDROOM_VOCABULARY.find((v) => v.id === id)).filter(Boolean);
+              const masteredInGroup = groupWords.filter((w) => (progress.wordMastery[w!.id] || 0) >= 2).length;
+
+              return (
+                <button
+                  key={g.id}
+                  type="button"
+                  role="radio"
+                  aria-checked={isSelected}
+                  onClick={() => setSelectedGroupId(g.id)}
+                  className={`bg-wp-card rounded-2xl border p-4 text-left transition-all flex items-center justify-between min-h-[72px] ${
+                    isSelected
+                      ? "border-primary border-[2px] bg-secondary shadow-sm"
+                      : "border-border hover:border-primary/40"
+                  }`}
+                >
+                  <div className="flex items-center gap-3.5">
+                    <div
+                      className={`size-11 rounded-xl flex items-center justify-center font-sans font-bold text-sm shrink-0 border ${
+                        isSelected
+                          ? "bg-primary text-primary-foreground border-primary"
+                          : "bg-muted text-muted-foreground border-border"
+                      }`}
+                    >
+                      <Layers className="size-5" />
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <p className="font-sans font-bold text-foreground text-base leading-tight">{g.name}</p>
+                        {masteredInGroup === g.wordIds.length && (
+                          <span className="inline-flex items-center gap-1 text-[10px] font-sans font-bold text-wp-green bg-wp-green-light px-2 py-0.5 rounded-full">
+                            <CheckCircle2 className="size-3" />
+                            Completed
+                          </span>
+                        )}
+                      </div>
+                      <p className="font-sans text-muted-foreground text-xs mt-0.5">{g.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-sans font-bold text-foreground text-base leading-tight">{label}</p>
-                    <p className="font-sans text-muted-foreground text-xs mt-0.5">{desc}</p>
-                  </div>
-                </div>
-                <div className="size-9 rounded-full bg-secondary flex items-center justify-center font-sans font-black text-primary text-sm border border-primary/20">
-                  {count}
-                </div>
-              </div>
-            ))}
-          </section>
+
+                  <span className="font-sans font-bold text-xs text-primary bg-secondary border border-primary/20 px-2.5 py-1 rounded-full shrink-0">
+                    {g.wordIds.length} Words
+                  </span>
+                </button>
+              );
+            })}
+          </div>
         </main>
 
         {/* Pinned CTA */}
         <footer className="w-full px-5 lg:px-8 pb-8 pt-4 shrink-0 bg-background border-t border-border/60">
           <button
             type="button"
-            onClick={() => dispatch({ type: "START_LESSON" })}
+            onClick={() => handleStartGroup(selectedGroupId)}
             className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 font-sans font-bold text-white text-base min-h-[52px]
               focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
               shadow-sm transition-all flex items-center justify-center gap-2"
           >
-            <span>Start 5-Word Lesson Session</span>
+            <BookOpen className="size-5" />
+            <span>Start Learning &ldquo;{selectedGroup.name}&rdquo; Group</span>
             <ArrowRight className="size-5" />
           </button>
         </footer>

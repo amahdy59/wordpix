@@ -1,21 +1,24 @@
 import { memo, useState } from "react";
 import type { Action } from "../types";
-import type { VocabItem } from "../data/lessons";
+import { BEDROOM_GROUPS, type VocabItem } from "../data/lessons";
 import { LessonHeader } from "./LessonHeader";
 import { HomeIndicator } from "./HomeIndicator";
 import { WordImage } from "./WordImage";
 import { ExitConfirmModal } from "./ExitConfirmModal";
+import { Layers } from "lucide-react";
 
 interface Props {
   /** 0-based step index (1-5) */
   step: number;
   /** Title shown in LessonHeader */
   title: string;
-  /** The active vocabulary word (shown in the left panel on desktop) */
-  word: VocabItem;
-  /** Batch word progress */
-  currentWordIndex?: number;
-  totalWordsQueue?: number;
+  /** Group vocabulary words */
+  words: VocabItem[];
+  /** Active word currently highlighted / focused in exercise */
+  activeWord?: VocabItem;
+  /** Optional callback when user clicks a word chip in the group bar */
+  onSelectWord?: (word: VocabItem) => void;
+  groupId?: string;
   dispatch: React.Dispatch<Action>;
   leftPanelExtra?: React.ReactNode;
   children: React.ReactNode;
@@ -23,7 +26,7 @@ interface Props {
 }
 
 const STEP_LABELS = [
-  "Scene Discovery",
+  "Scene Overview",
   "Listen & Practice",
   "Recall & Match",
   "Complete Sentence",
@@ -34,9 +37,10 @@ const STEP_LABELS = [
 export const ExerciseShell = memo(function ExerciseShell({
   step,
   title,
-  word,
-  currentWordIndex = 0,
-  totalWordsQueue = 5,
+  words,
+  activeWord,
+  onSelectWord,
+  groupId = "essential-furniture",
   dispatch,
   leftPanelExtra,
   children,
@@ -44,7 +48,9 @@ export const ExerciseShell = memo(function ExerciseShell({
 }: Props) {
   const [showExitModal, setShowExitModal] = useState(false);
 
-  const nextStepLabel = step < 5 ? STEP_LABELS[step + 1] : "Next Word";
+  const group = BEDROOM_GROUPS.find((g) => g.id === groupId) ?? BEDROOM_GROUPS[0];
+  const currentWord = activeWord || words[0];
+  const nextStepLabel = step < 5 ? STEP_LABELS[step + 1] : "Group Completion";
 
   return (
     <div className="bg-background flex flex-col min-h-svh lg:flex-row lg:min-h-svh lg:overflow-hidden relative">
@@ -57,43 +63,30 @@ export const ExerciseShell = memo(function ExerciseShell({
         }}
       />
 
-      {/* ── DESKTOP LEFT PANEL ───────────────────────────────────────────────── */}
+      {/* ── DESKTOP LEFT PANEL: Rosetta Stone Group Visual Panel ────────────── */}
       <aside
         className="hidden lg:flex lg:flex-col lg:w-[42%] xl:w-[40%] shrink-0 bg-slate-950 relative overflow-hidden"
-        aria-label={`Word image: ${word.label}`}
+        aria-label={`Group learning: ${group.name}`}
       >
+        {/* Full-bleed active word image with background wash */}
         <div className="absolute inset-0">
-          <WordImage
-            word={word}
-            loading="eager"
-            width="800"
-            height="900"
-            className="size-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
-        </div>
-
-        <div className="absolute bottom-0 left-0 right-0 p-8 flex flex-col gap-2">
-          {word.topic && (
-            <span className="self-start font-sans font-semibold text-xs text-white/70 bg-white/10 backdrop-blur-sm border border-white/20 px-2.5 py-0.5 rounded-full capitalize">
-              {word.topic.replace("-", " ")}
-            </span>
+          {currentWord && (
+            <WordImage
+              word={currentWord}
+              loading="eager"
+              width="800"
+              height="900"
+              className="size-full object-cover transition-all duration-300"
+            />
           )}
-          <h2 className="font-sans font-black text-white text-4xl xl:text-5xl leading-none tracking-tight">
-            {word.label}
-          </h2>
-          <p className="font-sans text-white/60 text-base font-medium">
-            /{word.phonetic}/
-          </p>
-          {leftPanelExtra && <div className="mt-2">{leftPanelExtra}</div>}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent pointer-events-none" />
         </div>
 
-        {/* Batch & step indicator top-left */}
-        <div className="absolute top-5 left-5 flex items-center gap-2">
-          <div className="bg-black/50 backdrop-blur-md border border-white/15 rounded-full px-3 py-1">
-            <span className="font-sans font-semibold text-white/80 text-xs">
-              Word {currentWordIndex + 1} of {totalWordsQueue}
-            </span>
+        {/* Group Badges & Title top-left */}
+        <div className="absolute top-5 left-5 right-5 flex items-center justify-between z-10">
+          <div className="flex items-center gap-2 bg-black/60 backdrop-blur-md border border-white/15 rounded-full px-3.5 py-1.5 text-white">
+            <Layers className="size-4 text-wp-amber" />
+            <span className="font-sans font-bold text-xs">{group.name} Group</span>
           </div>
           <div className="bg-primary/90 text-primary-foreground backdrop-blur-md rounded-full px-3 py-1">
             <span className="font-sans font-semibold text-xs">
@@ -101,36 +94,92 @@ export const ExerciseShell = memo(function ExerciseShell({
             </span>
           </div>
         </div>
+
+        {/* Group Items Grid / Carousel Bar at Bottom */}
+        <div className="absolute bottom-0 left-0 right-0 p-6 flex flex-col gap-4 z-10">
+          {/* Active Word Label */}
+          {currentWord && (
+            <div>
+              <span className="font-sans font-bold text-xs text-wp-amber bg-amber-500/10 px-2.5 py-0.5 rounded-full border border-amber-500/20 uppercase tracking-wide">
+                Target Word
+              </span>
+              <h2 className="font-sans font-black text-white text-4xl xl:text-5xl leading-tight tracking-tight mt-1">
+                {currentWord.label}
+              </h2>
+              <p className="font-sans text-white/60 text-sm font-medium">/{currentWord.phonetic}/</p>
+            </div>
+          )}
+
+          {/* Group Words Selector Strip */}
+          <div className="flex flex-col gap-2">
+            <span className="text-white/50 text-[11px] font-sans font-bold uppercase tracking-wider">
+              Words in this Group ({words.length})
+            </span>
+            <div className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
+              {words.map((w) => {
+                const isActive = currentWord?.id === w.id;
+                return (
+                  <button
+                    key={w.id}
+                    type="button"
+                    onClick={() => onSelectWord?.(w)}
+                    className={`flex items-center gap-2 px-3 py-1.5 rounded-xl border transition-all shrink-0 ${
+                      isActive
+                        ? "bg-primary text-primary-foreground border-white/40 shadow-md font-bold scale-105"
+                        : "bg-black/40 text-white/70 border-white/10 hover:bg-black/60 hover:text-white"
+                    }`}
+                  >
+                    <div className="size-6 rounded-lg overflow-hidden shrink-0 border border-white/20">
+                      <WordImage word={w} width="32" height="32" className="size-full object-cover" />
+                    </div>
+                    <span className="font-sans text-xs">{w.label}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {leftPanelExtra && <div className="mt-1">{leftPanelExtra}</div>}
+        </div>
       </aside>
 
       {/* ── RIGHT PANEL ──────────────────────────────────────────────────────── */}
       <div className="flex-1 flex flex-col min-h-svh lg:min-h-0 lg:overflow-hidden">
         <LessonHeader
-          title={title}
+          title={`${group.name}: ${title}`}
           step={step}
           onBack={() => dispatch({ type: "LESSON_PREVIOUS" })}
           onClose={() => setShowExitModal(true)}
         />
 
-        {/* Mobile-only word image */}
-        <div className="lg:hidden px-5 pt-1 pb-0 shrink-0">
-          <div className="h-44 sm:h-52 relative rounded-2xl w-full overflow-hidden border border-border bg-muted">
-            <WordImage
-              word={word}
-              loading="eager"
-              width="800"
-              height="600"
-              className="absolute inset-0 object-cover size-full"
-            />
-            <div className="absolute top-3 left-3 bg-black/50 backdrop-blur-md text-white/90 px-2.5 py-0.5 rounded-full font-sans font-semibold text-xs">
-              Word {currentWordIndex + 1} of {totalWordsQueue}
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 px-4 py-3 bg-gradient-to-t from-black/70 to-transparent">
-              <p className="font-sans font-black text-white text-2xl leading-none">{word.label}</p>
-              <p className="font-sans text-white/70 text-sm">/{word.phonetic}/</p>
-            </div>
+        {/* Mobile Group Items Bar */}
+        <div className="lg:hidden px-5 pt-2 shrink-0 flex flex-col gap-2">
+          <div className="flex items-center justify-between text-xs font-sans font-semibold">
+            <span className="text-primary font-bold">{group.name} Group</span>
+            <span className="text-muted-foreground">{words.length} Words</span>
           </div>
-          {leftPanelExtra && <div className="mt-3">{leftPanelExtra}</div>}
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar">
+            {words.map((w) => {
+              const isActive = currentWord?.id === w.id;
+              return (
+                <button
+                  key={w.id}
+                  type="button"
+                  onClick={() => onSelectWord?.(w)}
+                  className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-xs font-sans shrink-0 transition-all ${
+                    isActive
+                      ? "bg-primary text-primary-foreground border-primary font-bold"
+                      : "bg-wp-card text-muted-foreground border-border"
+                  }`}
+                >
+                  <div className="size-5 rounded overflow-hidden shrink-0 border border-border">
+                    <WordImage word={w} width="24" height="24" className="size-full object-cover" />
+                  </div>
+                  <span>{w.label}</span>
+                </button>
+              );
+            })}
+          </div>
         </div>
 
         {/* Scrollable exercise content */}
@@ -145,7 +194,7 @@ export const ExerciseShell = memo(function ExerciseShell({
         <footer className="shrink-0 px-5 pb-8 pt-3 lg:px-8 lg:pb-8 border-t border-border/60 bg-background flex flex-col gap-2">
           {footer}
           <div className="flex items-center justify-between text-[11px] font-sans font-medium text-muted-foreground px-1 pt-1">
-            <span>Word {currentWordIndex + 1} / {totalWordsQueue}</span>
+            <span>Group: {group.name}</span>
             <span>Next up: {nextStepLabel}</span>
           </div>
         </footer>

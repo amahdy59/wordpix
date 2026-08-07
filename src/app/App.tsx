@@ -1,7 +1,7 @@
 import { useEffect, useReducer, lazy, Suspense } from "react";
 import type { Screen, Action, OnboardStep, TabId } from "./types";
 import { ErrorBoundary } from "./shared/ErrorBoundary";
-import { BEDROOM_VOCABULARY } from "./data/lessons";
+import { BEDROOM_VOCABULARY, BEDROOM_GROUPS } from "./data/lessons";
 
 // Synchronous core onboarding screens
 import { SplashWelcome } from "./onboarding/SplashWelcome";
@@ -32,8 +32,7 @@ const ExerciseQuickQuiz = lazy(() => import("./exercises/ExerciseQuickQuiz").the
 const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "ready"];
 const TABBED_IDS: ReadonlySet<string> = new Set(["home", "explore", "practice", "profile"]);
 
-const STORAGE_KEY = "wordpix:learner-state:v2";
-const DEFAULT_QUEUE = ["pillow", "bed", "nightstand", "dresser", "blanket"];
+const STORAGE_KEY = "wordpix:learner-state:v3";
 
 export function reducer(state: Screen, action: Action): Screen {
   if (action.type === "ONBOARD_NEXT") {
@@ -50,6 +49,7 @@ export function reducer(state: Screen, action: Action): Screen {
       if (state.id === "lesson") {
         return {
           id: "lesson-complete",
+          groupId: state.groupId,
           wordQueue: state.wordQueue,
           attempts: state.attempts,
         };
@@ -59,26 +59,23 @@ export function reducer(state: Screen, action: Action): Screen {
     return { id: action.to };
   }
   if (action.type === "START_LESSON") {
-    const queue = action.wordQueue && action.wordQueue.length > 0
-      ? action.wordQueue
-      : (action.wordId ? [action.wordId, ...DEFAULT_QUEUE.filter(id => id !== action.wordId).slice(0, 4)] : DEFAULT_QUEUE);
+    const group = BEDROOM_GROUPS.find((g) => g.id === action.groupId) ?? BEDROOM_GROUPS[0];
+    const queue = action.wordQueue && action.wordQueue.length > 0 ? action.wordQueue : group.wordIds;
     
     return {
       id: "lesson",
+      groupId: group.id,
       wordQueue: queue,
-      currentWordIndex: 0,
       step: 0,
-      selectedWordId: queue[0],
       attempts: [],
       startedAt: new Date().toISOString(),
     };
   }
   if (action.type === "LESSON_SELECT_WORD") {
     if (state.id !== "lesson" || state.step !== 0) return state;
-    const newQueue = [action.wordId, ...state.wordQueue.filter((id) => id !== action.wordId).slice(0, 4)];
+    const newQueue = [action.wordId, ...state.wordQueue.filter((id) => id !== action.wordId)];
     return {
       ...state,
-      selectedWordId: action.wordId,
       wordQueue: newQueue,
     };
   }
@@ -90,7 +87,7 @@ export function reducer(state: Screen, action: Action): Screen {
         ...state.attempts,
         {
           exerciseStep: state.step,
-          wordId: state.selectedWordId,
+          wordId: state.wordQueue[0] || "bed",
           correct: action.correct,
           answeredAt: new Date().toISOString(),
         },
@@ -99,23 +96,10 @@ export function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "LESSON_NEXT") {
     if (state.id !== "lesson") return state;
-    
-    // If completed 5 exercise steps for current word (step 5 is quiz)
     if (state.step >= 5) {
-      // Check if more words remain in batch queue
-      if (state.currentWordIndex + 1 < state.wordQueue.length) {
-        const nextIndex = state.currentWordIndex + 1;
-        const nextWordId = state.wordQueue[nextIndex];
-        return {
-          ...state,
-          currentWordIndex: nextIndex,
-          step: 1, // Start step 1 (listen) for next word in queue
-          selectedWordId: nextWordId,
-        };
-      }
-      // Completed full batch session!
       return {
         id: "lesson-complete",
+        groupId: state.groupId,
         wordQueue: state.wordQueue,
         attempts: state.attempts,
       };
@@ -124,15 +108,6 @@ export function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "LESSON_PREVIOUS") {
     if (state.id !== "lesson") return state;
-    if (state.step === 1 && state.currentWordIndex > 0) {
-      const prevIndex = state.currentWordIndex - 1;
-      return {
-        ...state,
-        currentWordIndex: prevIndex,
-        step: 5,
-        selectedWordId: state.wordQueue[prevIndex],
-      };
-    }
     return { ...state, step: Math.max(0, state.step - 1) };
   }
   return state;
@@ -200,16 +175,21 @@ export default function App() {
     if (state.id === "lesson-entry") return <LessonWorldEntry dispatch={dispatch} />;
     if (state.id === "lesson") {
       const ex: ExStep = EX_STEPS[state.step] ?? "scene";
-      const word = BEDROOM_VOCABULARY.find((item) => item.id === state.selectedWordId) ?? BEDROOM_VOCABULARY[0];
-      if (ex === "scene") return <LessonSceneDiscovery selectedWordId={word.id} dispatch={dispatch} />;
-      if (ex === "listen") return <ExerciseListenRepeat word={word} step={state.step} dispatch={dispatch} currentWordIndex={state.currentWordIndex} totalWordsQueue={state.wordQueue.length} />;
-      if (ex === "recall") return <ExerciseRecallMatch word={word} step={state.step} dispatch={dispatch} currentWordIndex={state.currentWordIndex} totalWordsQueue={state.wordQueue.length} />;
-      if (ex === "fill") return <ExerciseContextFill word={word} step={state.step} dispatch={dispatch} currentWordIndex={state.currentWordIndex} totalWordsQueue={state.wordQueue.length} />;
-      if (ex === "builder") return <ExerciseSentenceBuilder word={word} step={state.step} dispatch={dispatch} currentWordIndex={state.currentWordIndex} totalWordsQueue={state.wordQueue.length} />;
-      if (ex === "quiz") return <ExerciseQuickQuiz word={word} step={state.step} dispatch={dispatch} currentWordIndex={state.currentWordIndex} totalWordsQueue={state.wordQueue.length} />;
+      const groupWords = state.wordQueue
+        .map((id) => BEDROOM_VOCABULARY.find((item) => item.id === id))
+        .filter(Boolean) as typeof BEDROOM_VOCABULARY;
+      
+      const activeGroupWords = groupWords.length > 0 ? groupWords : BEDROOM_VOCABULARY.slice(0, 5);
+
+      if (ex === "scene") return <LessonSceneDiscovery selectedWordId={activeGroupWords[0].id} dispatch={dispatch} />;
+      if (ex === "listen") return <ExerciseListenRepeat words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;
+      if (ex === "recall") return <ExerciseRecallMatch words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;
+      if (ex === "fill") return <ExerciseContextFill words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;
+      if (ex === "builder") return <ExerciseSentenceBuilder words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;
+      if (ex === "quiz") return <ExerciseQuickQuiz words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;
     }
     if (state.id === "lesson-complete") {
-      return <LessonCompleteResults attempts={state.attempts} wordQueue={state.wordQueue} dispatch={dispatch} />;
+      return <LessonCompleteResults groupId={state.groupId} attempts={state.attempts} wordQueue={state.wordQueue} dispatch={dispatch} />;
     }
     return null;
   }

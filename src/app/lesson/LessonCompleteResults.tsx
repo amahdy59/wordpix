@@ -3,33 +3,37 @@ import type { Action, AnswerAttempt } from "../types";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
-import { Trophy, Star, CheckCircle2 } from "lucide-react";
-import { BEDROOM_VOCABULARY } from "../data/lessons";
+import { Trophy, Star, CheckCircle2, Layers } from "lucide-react";
+import { BEDROOM_GROUPS, BEDROOM_VOCABULARY } from "../data/lessons";
 import { useProgress } from "../data/progress";
 
 interface Props {
   attempts: AnswerAttempt[];
+  groupId?: string;
   wordQueue?: string[];
   dispatch: React.Dispatch<Action>;
 }
 
 export const LessonCompleteResults = memo(function LessonCompleteResults({
   attempts,
-  wordQueue = ["pillow", "bed", "nightstand", "dresser", "blanket"],
+  groupId = "essential-furniture",
+  wordQueue = ["bed", "nightstand", "dresser", "wardrobe", "desk"],
   dispatch,
 }: Props) {
   const { recordCompletedBatch } = useProgress();
 
+  const group = BEDROOM_GROUPS.find((g) => g.id === groupId) ?? BEDROOM_GROUPS[0];
+
   const correct = attempts.filter((a) => a.correct).length;
   const accuracy = attempts.length === 0 ? 100 : Math.round((correct / attempts.length) * 100);
   const stars = [accuracy >= 50, accuracy >= 75, accuracy >= 90];
-  const xp = Math.max(25, correct * 10);
+  const xp = Math.max(30, correct * 10);
 
   useEffect(() => {
     recordCompletedBatch(wordQueue, xp);
   }, [wordQueue, xp, recordCompletedBatch]);
 
-  const batchWords = wordQueue
+  const groupWords = wordQueue
     .map((id) => BEDROOM_VOCABULARY.find((v) => v.id === id))
     .filter(Boolean);
 
@@ -44,11 +48,14 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             <Trophy className="size-16 text-wp-amber" aria-hidden />
           </div>
           <div>
-            <h1 className="font-sans font-black text-white text-4xl xl:text-5xl leading-tight tracking-tight">
-              Session Complete!
+            <span className="font-sans font-bold text-xs text-wp-amber bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full uppercase tracking-wider">
+              Group Mastered
+            </span>
+            <h1 className="font-sans font-black text-white text-4xl xl:text-5xl leading-tight tracking-tight mt-2">
+              {group.name} Complete!
             </h1>
-            <p className="font-sans font-semibold text-white/60 text-lg mt-2">
-              You practiced {batchWords.length} words in this session.
+            <p className="font-sans font-semibold text-white/60 text-base mt-2">
+              You mastered all {groupWords.length} words in this learning group.
             </p>
           </div>
           <div className="flex gap-3 items-center" aria-label={`${stars.filter(Boolean).length} out of 3 stars`}>
@@ -63,7 +70,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
         </div>
       </div>
 
-      {/* ── Right / Mobile: Stats + Practiced Words ────────────────────────── */}
+      {/* ── Right / Mobile: Stats + Group Words ───────────────────────────── */}
       <div className="flex-1 flex flex-col justify-between min-h-svh lg:min-h-0">
         <main className="flex-1 flex flex-col items-center justify-center w-full max-w-md mx-auto px-6 gap-6 py-8 overflow-y-auto">
           {/* Mobile header */}
@@ -71,9 +78,14 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             <div className="size-20 rounded-3xl bg-wp-amber/20 border border-wp-amber/30 flex items-center justify-center">
               <Trophy className="size-10 text-wp-amber" aria-hidden />
             </div>
-            <h1 className="font-sans font-black text-primary text-3xl">Session Complete!</h1>
-            <p className="font-sans font-semibold text-foreground text-sm">
-              Great job practicing {batchWords.length} vocabulary words.
+            <div>
+              <span className="font-sans font-bold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full uppercase tracking-wider">
+                Group Complete
+              </span>
+              <h1 className="font-sans font-black text-foreground text-3xl mt-1">{group.name}</h1>
+            </div>
+            <p className="font-sans font-semibold text-muted-foreground text-sm">
+              Mastered all {groupWords.length} vocabulary words in this group.
             </p>
             <div className="flex gap-2 items-center" aria-label={`${stars.filter(Boolean).length} out of 3 stars`}>
               {stars.map((filled, i) => (
@@ -83,14 +95,14 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
           </div>
 
           <div className="hidden lg:block text-center">
-            <h2 className="font-sans font-bold text-foreground text-2xl">Session Performance</h2>
-            <p className="font-sans text-muted-foreground text-sm mt-1">Here is your summary for this batch.</p>
+            <h2 className="font-sans font-bold text-foreground text-2xl">Group Mastery Breakdown</h2>
+            <p className="font-sans text-muted-foreground text-sm mt-1">Here is your performance for the {group.name} group.</p>
           </div>
 
           {/* Stats grid */}
           <div className="grid grid-cols-3 gap-3 w-full">
             {[
-              { value: `${batchWords.length}`, label: "Words Practiced", color: "text-primary", bg: "bg-secondary" },
+              { value: `${groupWords.length}`, label: "Group Words", color: "text-primary", bg: "bg-secondary" },
               { value: `${accuracy}%`, label: "Accuracy", color: "text-wp-blue", bg: "bg-wp-blue/10" },
               { value: `+${xp}`, label: "XP Earned", color: "text-wp-green", bg: "bg-wp-green-light" },
             ].map(({ value, label, color, bg }) => (
@@ -101,11 +113,14 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             ))}
           </div>
 
-          {/* Batch Words List */}
+          {/* Mastered Group Words List */}
           <div className="w-full flex flex-col gap-2">
-            <h3 className="font-sans font-bold text-foreground text-sm">Words in this Session</h3>
+            <div className="flex items-center gap-2 text-foreground font-sans font-bold text-sm">
+              <Layers className="size-4 text-primary" />
+              <span>Mastered Words in Group</span>
+            </div>
             <div className="flex flex-col gap-1.5 w-full">
-              {batchWords.map((w) => (
+              {groupWords.map((w) => (
                 <div key={w?.id} className="bg-wp-card border border-border rounded-xl px-3.5 py-2.5 flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="size-4 text-wp-green" />
@@ -120,7 +135,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
 
         <footer className="w-full max-w-md mx-auto px-6 pb-8 pt-4 flex flex-col gap-2.5 shrink-0 border-t border-border/60 bg-secondary/50">
           <PrimaryButton label="Continue to Lessons" onClick={() => dispatch({ type: "GO", to: "explore" })} />
-          <SecondaryButton label="Start Another Session" onClick={() => dispatch({ type: "START_LESSON" })} />
+          <SecondaryButton label="Practice Next Group" onClick={() => dispatch({ type: "GO", to: "lesson-entry" })} />
         </footer>
         <HomeIndicator />
       </div>
