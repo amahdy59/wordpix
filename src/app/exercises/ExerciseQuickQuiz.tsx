@@ -8,6 +8,7 @@ import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
 import { FeedbackModal } from "../shared/FeedbackModal";
+import { useProgress } from "../data/progress";
 import { HelpCircle, Keyboard } from "lucide-react";
 
 interface Props {
@@ -27,6 +28,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
   const [showModal, setShowModal] = useState(false);
+  const { progress } = useProgress();
   const { playCorrect, playIncorrect, playClick } = useSound();
 
   const currentTargetWord = words[questionIndex] || words[0];
@@ -113,6 +115,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       }
     >
       <FeedbackModal
+        streakCount={progress.streak}
         isOpen={showModal}
         isCorrect={isCorrect}
         title={isCorrect ? "✓ Mastered Visual Recall!" : "Not Quite"}

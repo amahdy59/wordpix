@@ -8,6 +8,7 @@ import { PenTool } from "lucide-react";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
 import { FeedbackModal } from "../shared/FeedbackModal";
+import { useProgress } from "../data/progress";
 
 interface Props {
   step: number;
@@ -27,6 +28,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
   const [checked, setChecked] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [shaking, setShaking] = useState(false);
+  const { progress } = useProgress();
   const { playCorrect, playIncorrect, playClick } = useSound();
 
   const currentTargetWord = words[questionIndex] || words[0];
@@ -110,6 +112,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
       }
     >
       <FeedbackModal
+        streakCount={progress.streak}
         isOpen={showModal}
         isCorrect={isCorrect}
         title={isCorrect ? "✓ Great Sentence Structure!" : "Try Re-ordering"}

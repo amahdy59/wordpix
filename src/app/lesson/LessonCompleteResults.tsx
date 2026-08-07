@@ -23,7 +23,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   wordQueue = ["bed", "nightstand", "dresser", "wardrobe", "desk"],
   dispatch,
 }: Props) {
-  const { recordSessionCompletion } = useProgress();
+  const { progress, recordSessionCompletion } = useProgress();
   const { playLevelUp } = useSound();
 
   const group = BEDROOM_GROUPS.find((g) => g.id === groupId) ?? BEDROOM_GROUPS[0];
@@ -32,14 +32,20 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   // 0 attempts = 0% accuracy (never 100%)
   const accuracy = attempts.length === 0 ? 0 : Math.round((correct / attempts.length) * 100);
   const stars = [accuracy >= 50, accuracy >= 75, accuracy >= 90];
-  // XP: 10 XP per correct attempt (0 correct = 0 XP, no minimum 30 XP)
-  const xp = correct * 10;
   const isMastered = accuracy >= 80 && attempts.length > 0;
 
   useEffect(() => {
     recordSessionCompletion(sessionId, attempts, wordQueue);
     playLevelUp();
   }, [sessionId, attempts, wordQueue, recordSessionCompletion, playLevelUp]);
+
+  // Read the credited amount back out of the ledger rather than recomputing it.
+  // This screen used to run its own `correct * 10`, which was a fourth
+  // independent XP formula in the codebase and could not stay in step with the
+  // bonuses.
+  const sessionRecord = progress.sessionHistory.find((s) => s.sessionId === sessionId);
+  const xpBreakdown = sessionRecord?.xp;
+  const xp = xpBreakdown?.total ?? 0;
 
   const groupWords = wordQueue
     .map((id) => BEDROOM_VOCABULARY.find((v) => v.id === id))
@@ -125,10 +131,36 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             ))}
           </div>
 
+          {/* XP breakdown — every line here is a real credit from XP_RULES,
+              so the total above is explainable rather than an opaque number. */}
+          {xpBreakdown && xp > 0 && (
+            <div className="w-full bg-wp-card border border-border rounded-2xl p-4 flex flex-col gap-1.5 shadow-wp-xs">
+              <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider mb-0.5">
+                <Sparkles className="size-4 text-wp-amber" aria-hidden />
+                <span>How you earned {xp} XP</span>
+              </div>
+              <dl className="flex flex-col gap-1">
+                {[
+                  { label: `${correct} correct answer${correct === 1 ? "" : "s"}`, value: xpBreakdown.correctAnswers },
+                  { label: "Lesson completed", value: xpBreakdown.lessonComplete },
+                  { label: "Perfect session", value: xpBreakdown.perfectSession },
+                  { label: `${progress.streak}-day streak`, value: xpBreakdown.streak },
+                ]
+                  .filter((row) => row.value > 0)
+                  .map((row) => (
+                    <div key={row.label} className="flex items-center justify-between font-sans text-xs">
+                      <dt className="text-muted-foreground font-medium">{row.label}</dt>
+                      <dd className="text-foreground font-bold">+{row.value}</dd>
+                    </div>
+                  ))}
+              </dl>
+            </div>
+          )}
+
           {/* Mastery Level Upgrades Card */}
           <div className="w-full bg-wp-card border border-primary/30 rounded-2xl p-4 flex flex-col gap-2 shadow-wp-xs">
             <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider">
-              <Sparkles className="size-4 text-wp-amber" />
+              <Sparkles className="size-4 text-wp-amber" aria-hidden />
               <span>Word Memory Progress</span>
             </div>
             <div className="flex items-center justify-between">

@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { calculateSM2, createInitialSM2Item } from "../features/gamification/sm2";
-import { calculateXP } from "../features/gamification/xp";
+import { calculateXP, calculateXPBreakdown, XP_RULES } from "../features/gamification/xp";
 import { updateStreak, getWeekActivity, getLocalDateString } from "../features/gamification/streak";
 
 describe("SM-2 Spaced Repetition Engine", () => {
@@ -47,6 +47,54 @@ describe("XP Calculation Engine", () => {
   it("adds perfect session bonus", () => {
     const xp = calculateXP(5, 5, 0);
     expect(xp).toBe(95); // (5 * 10) + 20 complete + 25 perfect
+  });
+
+  it("itemises every credit so the total is explainable", () => {
+    const breakdown = calculateXPBreakdown(5, 5, 3);
+    expect(breakdown).toEqual({
+      correctAnswers: 50,
+      lessonComplete: 20,
+      perfectSession: 25,
+      streak: 45,
+      total: 140,
+    });
+  });
+
+  it("pays the streak bonus per streak day", () => {
+    expect(calculateXPBreakdown(0, 5, 4).streak).toBe(60);
+  });
+
+  it("caps the streak bonus so a long streak cannot dwarf the session", () => {
+    expect(calculateXPBreakdown(0, 5, 50).streak).toBe(XP_RULES.STREAK_BONUS_CAP);
+  });
+
+  it("pays no streak bonus when the streak is zero", () => {
+    expect(calculateXPBreakdown(3, 5, 0).streak).toBe(0);
+  });
+
+  it("withholds the perfect bonus for an empty session", () => {
+    expect(calculateXPBreakdown(0, 0, 0).perfectSession).toBe(0);
+  });
+
+  it("withholds the perfect bonus when any answer was wrong", () => {
+    expect(calculateXPBreakdown(4, 5, 0).perfectSession).toBe(0);
+  });
+
+  it("never returns negative credit for a negative count", () => {
+    expect(calculateXPBreakdown(-3, 5, 0).correctAnswers).toBe(0);
+  });
+
+  it("total always equals the sum of its parts", () => {
+    const cases: [number, number, number][] = [
+      [0, 0, 0],
+      [3, 5, 1],
+      [5, 5, 12],
+      [1, 9, 40],
+    ];
+    cases.forEach(([correct, total, streak]) => {
+      const b = calculateXPBreakdown(correct, total, streak);
+      expect(b.total).toBe(b.correctAnswers + b.lessonComplete + b.perfectSession + b.streak);
+    });
   });
 });
 

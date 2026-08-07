@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
 import type { AnswerAttempt } from "../types";
 import { updateStreak, getLocalDateString } from "../../features/gamification/streak";
 import { calculateSM2State, createInitialWordState, type WordLearningState } from "../../features/gamification/sm2";
-import { XP_RULES } from "../../features/gamification/xp";
+import { calculateXPBreakdown, type XPBreakdown } from "../../features/gamification/xp";
 
 export type MasteryLevel = 0 | 1 | 2 | 3;
 export type LearnerGoal = "everyday" | "travel" | "work" | "school" | "conversation" | "kids";
@@ -27,6 +27,8 @@ export interface SessionRecord {
   completedAt: string;
   score: number;
   totalWords: number;
+  /** Itemised XP actually credited for this session. */
+  xp: XPBreakdown;
 }
 
 export interface LearnerStateSchema {
@@ -164,11 +166,20 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
 
       const isFirstSessionToday = prev.learnerProgress.lastStudiedDate !== todayStr;
 
-      // XP calculation (0 correct = 0 XP). Rate lives in XP_RULES so the
-      // per-answer figure shown in FeedbackModal cannot drift from what is
-      // actually credited here.
+      // XP now runs through the shared calculator, so the completion, perfect
+      // session, and streak bonuses defined in XP_RULES are actually paid out.
+      // Previously this inlined `correct * 10` and calculateXP was dead code
+      // referenced only by its own test.
+      //
+      // The streak bonus is a *daily* bonus, so it is only offered on the first
+      // session of the day — otherwise replaying a lesson would farm it.
       const correctAttempts = attempts.filter((a) => a.correct);
-      const xpEarned = correctAttempts.length * XP_RULES.PER_CORRECT_ANSWER;
+      const xpBreakdown = calculateXPBreakdown(
+        correctAttempts.length,
+        attempts.length,
+        isFirstSessionToday ? streakRes.currentStreak : 0
+      );
+      const xpEarned = xpBreakdown.total;
 
       // Group attempts by wordId to calculate SM-2 recall quality
       const wordAttempts: Record<string, { correct: number; total: number }> = {};
@@ -207,6 +218,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
         completedAt: new Date().toISOString(),
         score: correctAttempts.length,
         totalWords: wordQueue.length,
+        xp: xpBreakdown,
       };
 
       return {

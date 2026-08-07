@@ -9,6 +9,7 @@ import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
 import { FeedbackModal } from "../shared/FeedbackModal";
+import { useProgress } from "../data/progress";
 
 interface Props {
   step: number;
@@ -31,6 +32,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
 
   const currentTargetWord = words[targetIndex] || words[0];
   const { speak, stop, isPlaying } = useAudio({ lang: "en-US", rate: 0.85 });
+  const { progress } = useProgress();
   const { playCorrect, playIncorrect, playClick } = useSound();
   const hasSpokenRef = useRef<Record<number, boolean>>({});
 
@@ -131,6 +133,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       }
     >
       <FeedbackModal
+        streakCount={progress.streak}
         isOpen={showModal}
         isCorrect={feedback === "correct"}
         title={feedback === "correct" ? "✓ Excellent Audio Match!" : "Listen Carefully"}
