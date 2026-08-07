@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, useCallback } from "react";
+import React, { createContext, useContext, useState, useEffect, useCallback, useMemo } from "react";
 import type { AnswerAttempt } from "../types";
 import { updateStreak, getLocalDateString } from "../../features/gamification/streak";
 import { calculateSM2State, createInitialWordState, type WordLearningState } from "../../features/gamification/sm2";
@@ -260,19 +260,15 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     setState(INITIAL_LEARNER_STATE);
   }, []);
 
-  return (
-    <LearnerContext.Provider
-      value={{
-        state,
-        addXP,
-        recordSessionCompletion,
-        setPreferences,
-        resetToZero,
-      }}
-    >
-      {children}
-    </LearnerContext.Provider>
+  // Memoised: an inline object literal here is a new reference on every render,
+  // which pushes a re-render through every consumer and defeats the memo() on
+  // components downstream of it.
+  const value = useMemo<LearnerContextType>(
+    () => ({ state, addXP, recordSessionCompletion, setPreferences, resetToZero }),
+    [state, addXP, recordSessionCompletion, setPreferences, resetToZero]
   );
+
+  return <LearnerContext.Provider value={value}>{children}</LearnerContext.Provider>;
 }
 
 export function useLearner() {

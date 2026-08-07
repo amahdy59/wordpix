@@ -34,53 +34,7 @@ import { ExerciseContextFill } from "./exercises/ExerciseContextFill";
 import { ExerciseSentenceBuilder } from "./exercises/ExerciseSentenceBuilder";
 import { ExerciseQuickQuiz } from "./exercises/ExerciseQuickQuiz";
 
-// Multimodal exercise suites
-import {
-  ExListeningWordMatch,
-  ExListeningAudioSceneMatch,
-  ExListeningDictationSprint,
-  ExListeningVocabSpotting,
-  ExListeningDialogueRolePlay,
-  ExListeningSelectiveShadowing,
-  ExListeningResults,
-  ExListeningWarmupReview,
-  ExListeningPodcastComprehension,
-} from "./exercises/listening/ListeningSuite";
-
-import {
-  ExReadingVisualContext,
-  ExReadingProgressiveReveal,
-  ExReadingErrorDetection,
-  ExReadingComicStrip,
-  ExReadingInfographic,
-  ExReadingCategorySort,
-  ExReadingResults,
-  ExReadingSubtitleCorrection,
-  ExReadingConfidenceCheck,
-} from "./exercises/reading/ReadingSuite";
-
-import {
-  ExSpeakingEchoPractice,
-  ExSpeakingScenarioResponse,
-  ExSpeakingPhotoNarration,
-  ExSpeakingVideoRoleplay,
-  ExSpeakingCompareContrast,
-  ExSpeakingWordChain,
-  ExSpeakingSelfRepair,
-  ExSpeakingResults,
-} from "./exercises/speaking/SpeakingSuite";
-
-import {
-  ExWritingCaptionBuilder,
-  ExWritingSentenceAssembly,
-  ExWritingPhotoJournal,
-  ExWritingVideoSummary,
-  ExWritingErrorCorrection,
-  ExWritingParaphraseChallenge,
-  ExWritingImageStoryChain,
-  ExWritingResults,
-  ExWritingTimedSprint,
-} from "./exercises/writing/WritingSuite";
+import { SKILL_EXERCISES } from "./exercises/registry";
 
 // ── State machine ─────────────────────────────────────────────────────────────
 
@@ -348,51 +302,11 @@ function AppInner() {
     if (state.id === "skill-hub") return <SkillExerciseHub dispatch={dispatch} />;
 
     if (state.id === "skill-exercise") {
-      switch (state.exerciseId) {
-        // Listening (9)
-        case "listen-word-match": return <ExListeningWordMatch dispatch={dispatch} />;
-        case "listen-audio-scene-match": return <ExListeningAudioSceneMatch dispatch={dispatch} />;
-        case "listen-dictation-sprint": return <ExListeningDictationSprint dispatch={dispatch} />;
-        case "listen-vocab-spotting": return <ExListeningVocabSpotting dispatch={dispatch} />;
-        case "listen-dialogue-roleplay": return <ExListeningDialogueRolePlay dispatch={dispatch} />;
-        case "listen-selective-shadowing": return <ExListeningSelectiveShadowing dispatch={dispatch} />;
-        case "listen-results": return <ExListeningResults dispatch={dispatch} />;
-        case "listen-warmup-review": return <ExListeningWarmupReview dispatch={dispatch} />;
-        case "listen-podcast-comprehension": return <ExListeningPodcastComprehension dispatch={dispatch} />;
-
-        // Reading (9)
-        case "read-visual-context": return <ExReadingVisualContext dispatch={dispatch} />;
-        case "read-progressive-reveal": return <ExReadingProgressiveReveal dispatch={dispatch} />;
-        case "read-error-detection": return <ExReadingErrorDetection dispatch={dispatch} />;
-        case "read-comic-strip": return <ExReadingComicStrip dispatch={dispatch} />;
-        case "read-infographic": return <ExReadingInfographic dispatch={dispatch} />;
-        case "read-category-sort": return <ExReadingCategorySort dispatch={dispatch} />;
-        case "read-results": return <ExReadingResults dispatch={dispatch} />;
-        case "read-subtitle-correction": return <ExReadingSubtitleCorrection dispatch={dispatch} />;
-        case "read-confidence-check": return <ExReadingConfidenceCheck dispatch={dispatch} />;
-
-        // Speaking (8)
-        case "speak-echo-practice": return <ExSpeakingEchoPractice dispatch={dispatch} />;
-        case "speak-scenario-response": return <ExSpeakingScenarioResponse dispatch={dispatch} />;
-        case "speak-photo-narration": return <ExSpeakingPhotoNarration dispatch={dispatch} />;
-        case "speak-video-roleplay": return <ExSpeakingVideoRoleplay dispatch={dispatch} />;
-        case "speak-compare-contrast": return <ExSpeakingCompareContrast dispatch={dispatch} />;
-        case "speak-word-chain": return <ExSpeakingWordChain dispatch={dispatch} />;
-        case "speak-self-repair": return <ExSpeakingSelfRepair dispatch={dispatch} />;
-        case "speak-results": return <ExSpeakingResults dispatch={dispatch} />;
-
-        // Writing (9)
-        case "write-caption-builder": return <ExWritingCaptionBuilder dispatch={dispatch} />;
-        case "write-sentence-assembly": return <ExWritingSentenceAssembly dispatch={dispatch} />;
-        case "write-photo-journal": return <ExWritingPhotoJournal dispatch={dispatch} />;
-        case "write-video-summary": return <ExWritingVideoSummary dispatch={dispatch} />;
-        case "write-error-correction": return <ExWritingErrorCorrection dispatch={dispatch} />;
-        case "write-paraphrase-challenge": return <ExWritingParaphraseChallenge dispatch={dispatch} />;
-        case "write-image-story-chain": return <ExWritingImageStoryChain dispatch={dispatch} />;
-        case "write-results": return <ExWritingResults dispatch={dispatch} />;
-        case "write-timed-sprint": return <ExWritingTimedSprint dispatch={dispatch} />;
-        default: return <ExploreWorlds dispatch={dispatch} />;
-      }
+      const SkillExercise = SKILL_EXERCISES[state.exerciseId];
+      // Unknown id (e.g. a stale persisted state) falls back rather than
+      // rendering nothing.
+      if (!SkillExercise) return <ExploreWorlds dispatch={dispatch} />;
+      return <SkillExercise dispatch={dispatch} />;
     }
 
     if (state.id === "lesson") {

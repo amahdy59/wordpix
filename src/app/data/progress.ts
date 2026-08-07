@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { useLearner, type LearnerGoal, type SessionRecord } from "../context/LearnerContext";
 import type { WordLearningState, MasteryCategory } from "../../features/gamification/sm2";
 
@@ -17,37 +18,46 @@ export interface LearnerProgress {
   sessionHistory: SessionRecord[];
 }
 
+const MASTERY_TO_LEGACY_LEVEL: Record<MasteryCategory, number> = {
+  new: 0,
+  learning: 1,
+  familiar: 2,
+  strong: 3,
+};
+
 export function useProgress() {
   const { state, addXP, recordSessionCompletion, setPreferences, resetToZero } = useLearner();
 
-  // Legacy numeric mastery map (1=learning, 2=familiar, 3=strong) for backwards-compatible UI widgets
-  const legacyMasteryMap: Record<string, number> = {};
-  Object.keys(state.wordMemory).forEach((wordId) => {
-    const item = state.wordMemory[wordId];
-    if (item) {
-      legacyMasteryMap[wordId] = item.mastery === "strong" ? 3 : item.mastery === "familiar" ? 2 : 1;
-    }
-  });
+  // Both of these were rebuilt on every render, so `progress` was a fresh
+  // object each time and every memo() downstream of it was defeated. They only
+  // change when the underlying state does.
+  const wordMastery = useMemo(() => {
+    const legacy: Record<string, number> = {};
+    Object.entries(state.wordMemory).forEach(([wordId, item]) => {
+      if (item) legacy[wordId] = MASTERY_TO_LEGACY_LEVEL[item.mastery] ?? 0;
+    });
+    return legacy;
+  }, [state.wordMemory]);
 
-  const progress: LearnerProgress = {
-    xp: state.learnerProgress.xp,
-    streak: state.learnerProgress.streak,
-    lastStudiedDate: state.learnerProgress.lastStudiedDate,
-    daysActive: state.learnerProgress.daysActive,
-    englishLevel: state.preferences.englishLevel,
-    dailyGoalMinutes: state.preferences.dailyGoalMinutes,
-    goal: state.preferences.goal,
-    wordMemory: state.wordMemory,
-    wordMastery: legacyMasteryMap,
-    sessionsCompleted: state.learnerProgress.sessionsCompleted,
-    sessionHistory: state.sessionHistory,
-  };
+  const progress = useMemo<LearnerProgress>(
+    () => ({
+      xp: state.learnerProgress.xp,
+      streak: state.learnerProgress.streak,
+      lastStudiedDate: state.learnerProgress.lastStudiedDate,
+      daysActive: state.learnerProgress.daysActive,
+      englishLevel: state.preferences.englishLevel,
+      dailyGoalMinutes: state.preferences.dailyGoalMinutes,
+      goal: state.preferences.goal,
+      wordMemory: state.wordMemory,
+      wordMastery,
+      sessionsCompleted: state.learnerProgress.sessionsCompleted,
+      sessionHistory: state.sessionHistory,
+    }),
+    [state, wordMastery]
+  );
 
-  return {
-    progress,
-    addXP,
-    recordSessionCompletion,
-    setPreferences,
-    resetToZero,
-  };
+  return useMemo(
+    () => ({ progress, addXP, recordSessionCompletion, setPreferences, resetToZero }),
+    [progress, addXP, recordSessionCompletion, setPreferences, resetToZero]
+  );
 }
