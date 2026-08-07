@@ -7,6 +7,7 @@ import { useAudio } from "../shared/useAudio";
 import { Volume2, CheckCircle2, RefreshCw, Keyboard } from "lucide-react";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
+import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
 import { FeedbackModal } from "../shared/FeedbackModal";
 
 interface Props {
@@ -93,25 +94,22 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
     }
   };
 
-  useEffect(() => {
-    const handleGlobalKeyDown = (e: KeyboardEvent) => {
-      if (showModal) return;
-      if (e.code === "Space" || e.key === "0") {
-        e.preventDefault();
-        replayAudio();
-        return;
-      }
-      if (["1", "2", "3", "4", "5"].includes(e.key)) {
-        const idx = parseInt(e.key, 10) - 1;
-        if (displayCards[idx]) {
-          playClick();
-          handleCardClick(displayCards[idx]);
-        }
-      }
-    };
-    window.addEventListener("keydown", handleGlobalKeyDown);
-    return () => window.removeEventListener("keydown", handleGlobalKeyDown);
-  }, [showModal, displayCards, handleCardClick, playClick, replayAudio]);
+  const selectByIndex = useCallback(
+    (index: number) => {
+      const card = displayCards[index];
+      if (!card) return;
+      playClick();
+      handleCardClick(card);
+    },
+    [displayCards, playClick, handleCardClick]
+  );
+
+  useExerciseHotkeys({
+    optionCount: displayCards.length,
+    onSelectIndex: selectByIndex,
+    onReplayAudio: replayAudio,
+    disabled: showModal,
+  });
 
   return (
     <ExerciseShell
@@ -125,8 +123,8 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       footer={
         <div className="w-full flex items-center justify-between text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-amber-600 dark:text-amber-400 font-bold">
-            <Keyboard className="size-4" />
-            <span>Press 1–5 on keyboard or tap image card</span>
+            <Keyboard className="size-4" aria-hidden />
+            <span>Press 1–{words.length} to choose · R to replay audio</span>
           </div>
           <span>Progress: {completedWordIds.size} of {words.length} matched</span>
         </div>
@@ -178,8 +176,13 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         </div>
 
         {/* Card Image Selection Grid */}
+        {/*
+          These are actions, not form values: choosing an option commits the
+          answer immediately. role="radio" implied arrow-key navigation that was
+          never wired up and that would submit on arrow press if it were.
+        */}
         <div
-          role="radiogroup"
+          role="group"
           aria-label="Choose matching picture for audio prompt"
           className="grid grid-cols-2 sm:grid-cols-3 gap-3.5 w-full"
         >
@@ -199,8 +202,8 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
               <button
                 key={card.id}
                 type="button"
-                role="radio"
-                aria-checked={isSelected}
+                aria-label={`Option ${idx + 1} of ${displayCards.length}. Shortcut: press ${idx + 1}`}
+                aria-pressed={isSelected}
                 disabled={feedback === "correct"}
                 onClick={() => handleCardClick(card)}
                 className={`group relative rounded-2xl overflow-hidden p-1.5 flex flex-col items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-xs ${cardStateStyle}`}

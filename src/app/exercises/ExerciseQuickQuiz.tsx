@@ -1,4 +1,4 @@
-import { memo, useMemo, useState } from "react";
+import { memo, useCallback, useMemo, useState } from "react";
 import type { Action } from "../types";
 import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
@@ -6,6 +6,7 @@ import { getRichSentence } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
+import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
 import { FeedbackModal } from "../shared/FeedbackModal";
 import { HelpCircle, Keyboard } from "lucide-react";
 
@@ -40,22 +41,41 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
 
   const isCorrect = selectedId === currentTargetWord.id;
 
-  const handleSelect = (id: string) => {
-    if (feedback) return;
-    playClick();
-    setSelectedId(id);
+  const handleSelect = useCallback(
+    (id: string) => {
+      if (feedback) return;
+      playClick();
+      setSelectedId(id);
 
-    const correct = id === currentTargetWord.id;
-    if (correct) {
-      setFeedback("correct");
-      playCorrect();
-    } else {
-      setFeedback("incorrect");
-      playIncorrect();
-    }
-    setShowModal(true);
-    dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
-  };
+      const correct = id === currentTargetWord.id;
+      if (correct) {
+        setFeedback("correct");
+        playCorrect();
+      } else {
+        setFeedback("incorrect");
+        playIncorrect();
+      }
+      setShowModal(true);
+      dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
+    },
+    [feedback, playClick, playCorrect, playIncorrect, currentTargetWord.id, dispatch]
+  );
+
+  // The footer has always advertised number-key selection; until now nothing
+  // listened for it.
+  const selectByIndex = useCallback(
+    (index: number) => {
+      const option = options[index];
+      if (option) handleSelect(option.id);
+    },
+    [options, handleSelect]
+  );
+
+  useExerciseHotkeys({
+    optionCount: options.length,
+    onSelectIndex: selectByIndex,
+    disabled: showModal,
+  });
 
   const handleModalContinue = () => {
     setShowModal(false);
@@ -85,8 +105,8 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       footer={
         <div className="w-full flex items-center justify-between text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-amber-600 dark:text-amber-400 font-bold">
-            <Keyboard className="size-4" />
-            <span>Press 1–4 on keyboard to select option</span>
+            <Keyboard className="size-4" aria-hidden />
+            <span>Press 1–{options.length} to choose an option</span>
           </div>
           <span>Question {questionIndex + 1} of {words.length}</span>
         </div>
@@ -122,8 +142,13 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         </div>
 
         {/* 2x2 Grid Layout */}
+        {/*
+          Actions, not form values: choosing an option commits the answer, so
+          radiogroup semantics (which imply arrow-key navigation between
+          uncommitted values) would be wrong even if they were implemented.
+        */}
         <div
-          role="radiogroup"
+          role="group"
           aria-label={`Which image matches ${currentTargetWord.label}?`}
           className="grid grid-cols-2 gap-3.5 w-full"
         >
@@ -134,8 +159,8 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
               <button
                 key={option.id}
                 type="button"
-                role="radio"
-                aria-checked={isSelected}
+                aria-label={`Option ${idx + 1} of ${options.length}. Shortcut: press ${idx + 1}`}
+                aria-pressed={isSelected}
                 disabled={feedback !== null}
                 onClick={() => handleSelect(option.id)}
                 className={`group relative rounded-2xl overflow-hidden p-1.5 border-2 flex flex-col items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all duration-200 shadow-wp-xs ${
