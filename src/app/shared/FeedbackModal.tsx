@@ -1,0 +1,111 @@
+import { memo } from "react";
+import { CheckCircle2, XCircle, ArrowRight, RotateCcw, Sparkles, Flame } from "lucide-react";
+
+interface Props {
+  isOpen: boolean;
+  isCorrect: boolean;
+  title?: string;
+  explanation?: string;
+  wordLabel?: string;
+  xpBonus?: number;
+  streakCount?: number;
+  onContinue: () => void;
+  onTryAgain?: () => void;
+}
+
+export const FeedbackModal = memo(function FeedbackModal({
+  isOpen,
+  isCorrect,
+  title,
+  explanation,
+  wordLabel,
+  xpBonus = 15,
+  streakCount,
+  onContinue,
+  onTryAgain,
+}: Props) {
+  if (!isOpen) return null;
+
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="feedback-title"
+      className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-200"
+    >
+      <div
+        className={`w-full max-w-md rounded-3xl border-2 p-6 sm:p-7 shadow-2xl flex flex-col gap-5 items-center text-center animate-in zoom-in-95 duration-200 bg-wp-card ${
+          isCorrect ? "border-wp-green shadow-wp-green/20" : "border-wp-rose shadow-wp-rose/20"
+        }`}
+      >
+        {/* Status Icon Header */}
+        <div
+          className={`size-16 sm:size-20 rounded-full flex items-center justify-center shadow-lg ${
+            isCorrect ? "bg-wp-green text-white" : "bg-wp-rose text-white"
+          }`}
+        >
+          {isCorrect ? (
+            <CheckCircle2 className="size-10 sm:size-12 animate-bounce" />
+          ) : (
+            <XCircle className="size-10 sm:size-12 animate-wp-shake" />
+          )}
+        </div>
+
+        {/* Title & XP Badge */}
+        <div className="flex flex-col items-center gap-1.5">
+          {isCorrect && (
+            <div className="flex items-center gap-2 bg-amber-500/10 text-wp-amber px-3 py-1 rounded-full border border-amber-500/20 text-xs font-sans font-bold shadow-xs">
+              <Sparkles className="size-3.5" />
+              <span>+{xpBonus} XP Earned</span>
+              {streakCount && streakCount > 1 && (
+                <span className="flex items-center gap-1 text-wp-amber border-l border-amber-500/30 pl-2">
+                  <Flame className="size-3" />
+                  {streakCount} Streak!
+                </span>
+              )}
+            </div>
+          )}
+
+          <h2 id="feedback-title" className="font-sans font-black text-foreground text-2xl sm:text-3xl leading-tight mt-1">
+            {title || (isCorrect ? "Excellent!" : "Not Quite")}
+          </h2>
+
+          {wordLabel && (
+            <p className="font-sans text-xs font-bold text-primary bg-secondary px-3 py-0.5 rounded-full border border-primary/20">
+              Word: {wordLabel}
+            </p>
+          )}
+
+          {explanation && (
+            <p className="font-sans text-sm sm:text-base text-muted-foreground font-medium max-w-sm mt-1 leading-relaxed">
+              {explanation}
+            </p>
+          )}
+        </div>
+
+        {/* Primary Action Button */}
+        <div className="w-full pt-2">
+          {isCorrect ? (
+            <button
+              type="button"
+              onClick={onContinue}
+              className="w-full py-4 px-6 rounded-2xl bg-wp-green text-white font-sans font-black text-base sm:text-lg shadow-lg hover:bg-wp-green/90 transition-all flex items-center justify-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-green"
+            >
+              <span>Continue →</span>
+              <ArrowRight className="size-5" />
+            </button>
+          ) : (
+            <button
+              type="button"
+              onClick={onTryAgain || onContinue}
+              className="w-full py-4 px-6 rounded-2xl bg-wp-rose text-white font-sans font-black text-base sm:text-lg shadow-lg hover:bg-wp-rose/90 transition-all flex items-center justify-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-rose"
+            >
+              <RotateCcw className="size-5" />
+              <span>Try Again</span>
+            </button>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+});

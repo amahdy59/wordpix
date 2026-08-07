@@ -4,9 +4,10 @@ import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getRichSentence } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
-import { PenTool, Sparkles, CheckCircle2, XCircle, ArrowRight, RotateCcw } from "lucide-react";
+import { PenTool } from "lucide-react";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
+import { FeedbackModal } from "../shared/FeedbackModal";
 
 interface Props {
   step: number;
@@ -24,6 +25,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
   const [questionIndex, setQuestionIndex] = useState<number>(0);
   const [placed, setPlaced] = useState<string[]>([]);
   const [checked, setChecked] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const [shaking, setShaking] = useState(false);
   const { playCorrect, playIncorrect, playClick } = useSound();
 
@@ -48,21 +50,6 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
   };
 
   const handleAction = () => {
-    if (checked) {
-      if (isCorrect) {
-        if (questionIndex + 1 < words.length) {
-          setQuestionIndex((i) => i + 1);
-          setPlaced([]);
-          setChecked(false);
-        } else {
-          dispatch({ type: "LESSON_NEXT" });
-        }
-      } else {
-        setPlaced([]);
-        setChecked(false);
-      }
-      return;
-    }
     if (placed.length !== answer.length) {
       setShaking(true);
       setTimeout(() => setShaking(false), 500);
@@ -71,7 +58,25 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
     setChecked(true);
     if (isCorrect) playCorrect();
     else playIncorrect();
+
+    setShowModal(true);
     dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct: isCorrect });
+  };
+
+  const handleModalContinue = () => {
+    setShowModal(false);
+    if (isCorrect) {
+      if (questionIndex + 1 < words.length) {
+        setQuestionIndex((i) => i + 1);
+        setPlaced([]);
+        setChecked(false);
+      } else {
+        dispatch({ type: "LESSON_NEXT" });
+      }
+    } else {
+      setPlaced([]);
+      setChecked(false);
+    }
   };
 
   return (
@@ -84,78 +89,40 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
       groupId={groupId}
       dispatch={dispatch}
       footer={
-        <div className="w-full flex flex-col gap-2">
-          {/* Pinned Footer Feedback Banner */}
-          {checked ? (
-            <div
-              role="status"
-              aria-live="polite"
-              className={`w-full rounded-2xl p-3.5 sm:p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-md transition-all ${
-                isCorrect
-                  ? "bg-wp-green text-white border border-wp-green"
-                  : "bg-wp-rose text-white border border-wp-rose"
-              }`}
-            >
-              <div className="flex items-center gap-3">
-                {isCorrect ? (
-                  <CheckCircle2 className="size-6 shrink-0 text-white animate-in zoom-in" />
-                ) : (
-                  <XCircle className="size-6 shrink-0 text-white animate-in zoom-in" />
-                )}
-                <div>
-                  <h3 className="font-sans font-black text-sm sm:text-base leading-tight">
-                    {isCorrect ? "✓ Great Sentence Structure!" : "Try Re-ordering"}
-                  </h3>
-                  <p className="font-sans text-xs text-white/95 mt-0.5">
-                    {isCorrect
-                      ? `"${richSentence.full}"`
-                      : `Correct order: "${answer.join(" ")}"`}
-                  </p>
-                </div>
-              </div>
-
-              <button
-                type="button"
-                onClick={handleAction}
-                className={`w-full sm:w-auto px-5 py-2.5 rounded-xl font-sans font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shrink-0 shadow-sm transition-all ${
-                  isCorrect
-                    ? "bg-white text-wp-green hover:bg-white/90"
-                    : "bg-white text-wp-rose hover:bg-white/90"
-                }`}
-              >
-                <span>
-                  {isCorrect
-                    ? questionIndex + 1 < words.length
-                      ? "Next Sentence →"
-                      : "Continue to Quick Quiz →"
-                    : "Try Again"}
-                </span>
-                {isCorrect ? <ArrowRight className="size-4" /> : <RotateCcw className="size-4" />}
-              </button>
-            </div>
-          ) : (
-            <div className="flex flex-col gap-1">
-              {placed.length < answer.length && (
-                <p className="text-[11px] font-sans font-semibold text-center text-amber-600 dark:text-amber-400">
-                  Tap tiles below in correct order to build the sentence
-                </p>
-              )}
-              <button
-                type="button"
-                onClick={handleAction}
-                className={`rounded-xl py-3.5 w-full font-sans font-bold text-white text-sm sm:text-base min-h-[48px] transition-all shadow-wp-xs ${
-                  shaking ? "animate-wp-shake" : ""
-                } ${
-                  placed.length === answer.length ? "bg-wp-blue opacity-100" : "bg-wp-blue opacity-50"
-                }`}
-              >
-                Check Sentence
-              </button>
-            </div>
+        <div className="w-full flex flex-col gap-1">
+          {placed.length < answer.length && (
+            <p className="text-[11px] font-sans font-semibold text-center text-amber-600 dark:text-amber-400">
+              Tap tiles below in correct order to build the sentence
+            </p>
           )}
+          <button
+            type="button"
+            onClick={handleAction}
+            className={`rounded-xl py-3.5 w-full font-sans font-bold text-white text-sm sm:text-base min-h-[48px] transition-all shadow-wp-xs ${
+              shaking ? "animate-wp-shake" : ""
+            } ${
+              placed.length === answer.length ? "bg-wp-blue opacity-100" : "bg-wp-blue opacity-50"
+            }`}
+          >
+            Check Sentence
+          </button>
         </div>
       }
     >
+      <FeedbackModal
+        isOpen={showModal}
+        isCorrect={isCorrect}
+        title={isCorrect ? "✓ Great Sentence Structure!" : "Try Re-ordering"}
+        wordLabel={currentTargetWord.label}
+        explanation={
+          isCorrect
+            ? `"${richSentence.full}"`
+            : `Correct sentence order: "${answer.join(" ")}"`
+        }
+        onContinue={handleModalContinue}
+        onTryAgain={handleModalContinue}
+      />
+
       <div className="flex flex-col gap-3.5 sm:gap-4 w-full">
         {/* Question Counter & Skill Badge */}
         <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
@@ -169,10 +136,6 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
         {/* Fluid Hero Target Image Display */}
         <div className="h-40 sm:h-48 md:h-52 max-h-[28vh] w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-md bg-muted shrink-0">
           <WordImage word={currentTargetWord} width="800" height="500" className="size-full object-cover" />
-          <div className="absolute top-3 left-3 bg-black/65 backdrop-blur-md text-white font-sans font-bold text-xs px-3 py-1 rounded-xl border border-white/20 shadow-md flex items-center gap-1.5">
-            <Sparkles className="size-3.5 text-wp-amber animate-pulse" />
-            <span>Target Image: {currentTargetWord.label}</span>
-          </div>
         </div>
 
         {/* Sentence Assembly Canvas */}
