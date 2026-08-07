@@ -3,7 +3,9 @@ import type { Screen, Action, OnboardStep, TabId } from "./types";
 import { ErrorBoundary } from "./shared/ErrorBoundary";
 import { BEDROOM_VOCABULARY, BEDROOM_GROUPS } from "./data/lessons";
 import { LearnerProvider } from "./context/LearnerContext";
+import { I18nProvider } from "./context/I18nContext";
 import { useHashRouter, hashToScreen } from "./router/useHashRouter";
+import { registerServiceWorker } from "../pwa";
 
 // Synchronous core onboarding screens
 import { SplashWelcome } from "./onboarding/SplashWelcome";
@@ -175,6 +177,10 @@ function AppInner() {
   useHashRouter(state, handleRouteScreenChange);
 
   useEffect(() => {
+    registerServiceWorker();
+  }, []);
+
+  useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   }, [state]);
 
@@ -268,7 +274,9 @@ function AppInner() {
 export default function App() {
   return (
     <LearnerProvider>
-      <AppInner />
+      <I18nProvider>
+        <AppInner />
+      </I18nProvider>
     </LearnerProvider>
   );
 }

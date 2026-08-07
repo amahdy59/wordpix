@@ -2,14 +2,18 @@ import { memo, useEffect, useMemo, useState } from "react";
 import type { VocabItem } from "../data/lessons";
 
 export type ImageAltMode = "learning" | "assessment" | "decorative";
+export type ImageSizePreset = "thumb" | "card" | "hero";
 
 interface Props {
   word: VocabItem;
   className?: string;
   loading?: "eager" | "lazy";
+  decoding?: "async" | "auto" | "sync";
+  fetchPriority?: "high" | "low" | "auto";
   width?: number | string;
   height?: number | string;
   altMode?: ImageAltMode;
+  sizePreset?: ImageSizePreset;
   optionIndex?: number;
   checked?: boolean;
 }
@@ -24,6 +28,16 @@ const TOPIC_COLORS: Record<string, [string, string]> = {
   personal: ["#fce7f3", "#9d174d"],
   electronics: ["#e2e8f0", "#334155"],
 };
+
+function getResponsiveImageUrl(url: string, preset: ImageSizePreset = "card"): string {
+  if (!url || !url.includes("unsplash.com")) return url;
+  const targetWidth = preset === "thumb" ? 160 : preset === "hero" ? 800 : 400;
+  // Replace existing w= parameter or append
+  if (url.includes("w=")) {
+    return url.replace(/w=\d+/, `w=${targetWidth}`);
+  }
+  return `${url}&w=${targetWidth}`;
+}
 
 function escapeXml(value: string) {
   return value.replace(/[<>&"']/g, (character) => {
@@ -43,7 +57,6 @@ export function getWordFallbackDataUrl(word: VocabItem, altMode: ImageAltMode = 
   const label = escapeXml(word.label);
   const topic = escapeXml(word.topic.replace("-", " ").toUpperCase());
   
-  // In assessment mode, hide text label inside fallback SVG to prevent answer leakage
   const centerText = altMode === "assessment" ? "?" : label.slice(0, 1).toUpperCase();
   const bottomText = altMode === "assessment" ? "VISUAL OPTION" : label;
 
@@ -68,18 +81,21 @@ export const WordImage = memo(function WordImage({
   word,
   className,
   loading = "lazy",
+  decoding = "async",
+  fetchPriority = "auto",
   width,
   height,
   altMode = "learning",
+  sizePreset = "card",
   optionIndex = 0,
   checked = false,
 }: Props) {
   const [failed, setFailed] = useState(false);
   const fallback = useMemo(() => getWordFallbackDataUrl(word, altMode), [word, altMode]);
+  const optimizedUrl = useMemo(() => getResponsiveImageUrl(word.img, sizePreset), [word.img, sizePreset]);
 
   useEffect(() => setFailed(false), [word.id, word.img]);
 
-  // Assessment-safe alt text resolution
   let altText = word.label;
   if (altMode === "decorative") {
     altText = "";
@@ -90,10 +106,11 @@ export const WordImage = memo(function WordImage({
 
   return (
     <img
-      src={failed ? fallback : word.img}
+      src={failed ? fallback : optimizedUrl}
       alt={altText}
       className={className}
       loading={loading}
+      decoding={decoding}
       width={width}
       height={height}
       onError={() => setFailed(true)}
