@@ -19,11 +19,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
+      "@app/*": ["src/app/*"],
       "@features/*": ["src/features/*"],
-      "@shared/*": ["src/shared/*"],
+      "@shared/*": ["src/app/shared/*"],
       "@i18n/*": ["src/i18n/*"],
-      "@types/*": ["src/types/*"],
-      "@constants/*": ["src/constants/*"]
+      "@utils/*": ["src/utils/*"]
     }
   },
   "include": ["src"]

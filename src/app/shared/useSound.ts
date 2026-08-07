@@ -1,8 +1,50 @@
-function getAudioContext() {
-  if (typeof window === "undefined") return null;
-  const AudioContextClass = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
-  if (!AudioContextClass) return null;
-  return new AudioContextClass();
+/**
+ * One shared AudioContext for the whole app.
+ *
+ * This used to construct `new AudioContext()` on every single sound call and
+ * never close any of them. Browsers cap concurrent contexts (Chrome at ~6), so
+ * after roughly six answers the constructor threw, the empty catch swallowed
+ * it, and audio feedback silently stopped for the rest of the session — in the
+ * middle of a gamified feedback loop, with no error surfaced.
+ */
+let sharedContext: AudioContext | null = null;
+let contextUnavailable = false;
+
+function getAudioContext(): AudioContext | null {
+  if (typeof window === "undefined" || contextUnavailable) return null;
+
+  if (!sharedContext) {
+    const AudioContextClass =
+      window.AudioContext ||
+      (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+
+    if (!AudioContextClass) {
+      contextUnavailable = true;
+      return null;
+    }
+
+    try {
+      sharedContext = new AudioContextClass();
+    } catch {
+      contextUnavailable = true;
+      return null;
+    }
+  }
+
+  // Autoplay policy suspends contexts created before a user gesture; every
+  // caller here runs from a click or keypress, so resuming is safe.
+  if (sharedContext.state === "suspended") {
+    void sharedContext.resume().catch(() => {});
+  }
+
+  return sharedContext;
+}
+
+/** Test seam: drops the shared context so the next call rebuilds it. */
+export function resetAudioContextForTests() {
+  sharedContext?.close().catch(() => {});
+  sharedContext = null;
+  contextUnavailable = false;
 }
 
 export function playCorrectSound() {

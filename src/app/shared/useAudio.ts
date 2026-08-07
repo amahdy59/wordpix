@@ -9,6 +9,9 @@ interface Options {
   volume?: number;
 }
 
+/** How long to wait for onstart before treating the utterance as failed. */
+const SPEECH_START_TIMEOUT_MS = 4000;
+
 function pickVoice(synth: SpeechSynthesis, targetLang: string): SpeechSynthesisVoice | null {
   const voices = synth.getVoices();
   const prefix = targetLang.split("-")[0];
@@ -34,6 +37,7 @@ export function useAudio({
   const synthRef = useRef<SpeechSynthesis | null>(
     typeof window !== "undefined" && window.speechSynthesis ? window.speechSynthesis : null
   );
+  const stallTimerRef = useRef<number | null>(null);
 
   useEffect(() => {
     const synth = synthRef.current;
@@ -67,9 +71,23 @@ export function useAudio({
       const voice = pickVoice(synth, targetLang);
       if (voice) utterance.voice = voice;
 
-      utterance.onstart = () => setStatus("playing");
-      utterance.onend = () => setStatus("idle");
+      const clearStall = () => {
+        if (stallTimerRef.current !== null) {
+          clearTimeout(stallTimerRef.current);
+          stallTimerRef.current = null;
+        }
+      };
+
+      utterance.onstart = () => {
+        clearStall();
+        setStatus("playing");
+      };
+      utterance.onend = () => {
+        clearStall();
+        setStatus("idle");
+      };
       utterance.onerror = (e) => {
+        clearStall();
         // "interrupted" / "canceled" are expected on cancel(); not real errors
         if (e.error !== "interrupted" && e.error !== "canceled") {
           setStatus("error");
@@ -78,17 +96,36 @@ export function useAudio({
         }
       };
 
+      // If no voice is installed, speak() can resolve to silence: onstart never
+      // fires, nor does onerror. Without this the hook stays "loading" forever,
+      // and isPlaying (which counts "loading") leaves the UI showing a
+      // permanent "Playing sound…" state.
+      clearStall();
+      stallTimerRef.current = window.setTimeout(() => {
+        setStatus((current) => (current === "loading" ? "error" : current));
+      }, SPEECH_START_TIMEOUT_MS);
+
       synth.speak(utterance);
     },
     [lang, rate, pitch, volume]
   );
 
   const stop = useCallback(() => {
+    if (stallTimerRef.current !== null) {
+      clearTimeout(stallTimerRef.current);
+      stallTimerRef.current = null;
+    }
     synthRef.current?.cancel();
     setStatus("idle");
   }, []);
 
-  useEffect(() => () => { synthRef.current?.cancel(); }, []);
+  useEffect(
+    () => () => {
+      if (stallTimerRef.current !== null) clearTimeout(stallTimerRef.current);
+      synthRef.current?.cancel();
+    },
+    []
+  );
 
   return {
     speak,
