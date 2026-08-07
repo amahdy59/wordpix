@@ -1,4 +1,4 @@
-import { memo, useEffect, useMemo, useRef, useState } from "react";
+import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
 import type { Action } from "../types";
 import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
@@ -6,6 +6,7 @@ import { WordImage } from "../shared/WordImage";
 import { useAudio } from "../shared/useAudio";
 import { Volume2, CheckCircle2, Sparkles, RefreshCw } from "lucide-react";
 import { shuffleArray } from "../../utils/shuffle";
+import { useSound } from "../shared/useSound";
 
 interface Props {
   step: number;
@@ -27,6 +28,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
 
   const currentTargetWord = words[targetIndex] || words[0];
   const { speak, stop, isPlaying } = useAudio({ lang: "en-US", rate: 0.85 });
+  const { playCorrect, playIncorrect, playClick } = useSound();
   const hasSpokenRef = useRef<Record<number, boolean>>({});
 
   // Shuffled display order generated once
@@ -45,18 +47,19 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
     return undefined;
   }, [targetIndex, currentTargetWord.label, speak, stop]);
 
-  const replayAudio = () => {
+  const replayAudio = useCallback(() => {
     stop();
     speak(currentTargetWord.label);
-  };
+  }, [stop, speak, currentTargetWord.label]);
 
-  const handleCardClick = (card: VocabItem) => {
+  const handleCardClick = useCallback((card: VocabItem) => {
     if (feedback === "correct") return;
 
     setSelectedId(card.id);
 
     if (card.id === currentTargetWord.id) {
       setFeedback("correct");
+      playCorrect();
       dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct: true });
 
       const newCompleted = new Set(completedWordIds);
@@ -76,13 +79,30 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       }, 700);
     } else {
       setFeedback("incorrect");
+      playIncorrect();
       dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct: false });
       setTimeout(() => {
         setSelectedId(null);
         setFeedback(null);
       }, 800);
     }
-  };
+  }, [feedback, currentTargetWord.id, currentTargetWord.label, playCorrect, playIncorrect, dispatch, completedWordIds, targetIndex, words.length]);
+
+  // Keyboard 1-5 number shortcuts
+  useEffect(() => {
+    const handleGlobalKeyDown = (e: KeyboardEvent) => {
+      if (feedback === "correct") return;
+      if (["1", "2", "3", "4", "5"].includes(e.key)) {
+        const idx = parseInt(e.key, 10) - 1;
+        if (displayCards[idx]) {
+          playClick();
+          handleCardClick(displayCards[idx]);
+        }
+      }
+    };
+    window.addEventListener("keydown", handleGlobalKeyDown);
+    return () => window.removeEventListener("keydown", handleGlobalKeyDown);
+  }, [feedback, displayCards, handleCardClick, playClick]);
 
   return (
     <ExerciseShell
@@ -120,7 +140,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 <Sparkles className="size-4 text-wp-amber animate-pulse" />
               </div>
               <p className="font-sans text-white/70 text-xs mt-0.5">
-                Tap the image that matches the audio prompt.
+                Tap the image or press 1–5 on keyboard that matches the audio prompt.
               </p>
             </div>
           </div>
@@ -135,7 +155,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
           </button>
         </div>
 
-        {/* 6-Card Image Selection Grid */}
+        {/* Card Image Selection Grid */}
         <div
           role="radiogroup"
           aria-label="Choose matching picture for audio prompt"
@@ -163,6 +183,9 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 onClick={() => handleCardClick(card)}
                 className={`group relative rounded-2xl border overflow-hidden p-2 flex flex-col items-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all ${cardStyle}`}
               >
+                <div className="absolute top-2 left-2 z-10 bg-black/60 text-white text-[10px] font-sans font-bold px-2 py-0.5 rounded-md backdrop-blur-xs">
+                  Key [{idx + 1}]
+                </div>
                 <div className="h-28 sm:h-32 w-full relative rounded-xl overflow-hidden bg-muted border border-border/60 shrink-0">
                   <WordImage word={card} width="300" height="240" className="size-full object-cover group-hover:scale-105 transition-transform duration-300" />
                   {isTargetCompleted && (

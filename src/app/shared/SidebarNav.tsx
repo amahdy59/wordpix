@@ -1,6 +1,7 @@
 import { memo } from "react";
 import { Home, Compass, RotateCcw, UserCircle, BookOpen } from "lucide-react";
 import type { TabId, Action } from "../types";
+import { ThemeToggle } from "./ThemeToggle";
 
 interface NavItem {
   id: TabId;
@@ -24,7 +25,7 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
   return (
     <aside
       className="hidden md:flex flex-col items-center bg-wp-card border-r border-border
-                 w-[72px] shrink-0 py-4 justify-between select-none z-30"
+                 w-[80px] shrink-0 py-4 justify-between select-none z-30"
       aria-label="Sidebar navigation"
     >
       {/* Top Brand Logo */}
@@ -78,8 +79,9 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
         </nav>
       </div>
 
-      {/* Footer Profile Shortcut */}
-      <div className="flex flex-col items-center">
+      {/* Theme Toggle & Profile Shortcut */}
+      <div className="flex flex-col items-center gap-3">
+        <ThemeToggle />
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "profile" })}

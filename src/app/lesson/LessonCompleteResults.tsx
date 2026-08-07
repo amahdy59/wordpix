@@ -3,9 +3,10 @@ import type { Action, AnswerAttempt } from "../types";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
-import { Trophy, Star, CheckCircle2, Layers } from "lucide-react";
+import { Trophy, Star, CheckCircle2, Layers, Sparkles, ShieldCheck } from "lucide-react";
 import { BEDROOM_GROUPS, BEDROOM_VOCABULARY } from "../data/lessons";
 import { useProgress } from "../data/progress";
+import { useSound } from "../shared/useSound";
 
 interface Props {
   sessionId?: string;
@@ -23,6 +24,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   dispatch,
 }: Props) {
   const { recordSessionCompletion } = useProgress();
+  const { playLevelUp } = useSound();
 
   const group = BEDROOM_GROUPS.find((g) => g.id === groupId) ?? BEDROOM_GROUPS[0];
 
@@ -36,7 +38,8 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
 
   useEffect(() => {
     recordSessionCompletion(sessionId, attempts, wordQueue);
-  }, [sessionId, attempts, wordQueue, recordSessionCompletion]);
+    playLevelUp();
+  }, [sessionId, attempts, wordQueue, recordSessionCompletion, playLevelUp]);
 
   const groupWords = wordQueue
     .map((id) => BEDROOM_VOCABULARY.find((v) => v.id === id))
@@ -120,6 +123,21 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
                 <p className="font-sans font-medium text-muted-foreground text-[11px] text-center leading-tight">{label}</p>
               </div>
             ))}
+          </div>
+
+          {/* Mastery Level Upgrades Card */}
+          <div className="w-full bg-wp-card border border-primary/30 rounded-2xl p-4 flex flex-col gap-2 shadow-wp-xs">
+            <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider">
+              <Sparkles className="size-4 text-wp-amber" />
+              <span>Word Memory Progress</span>
+            </div>
+            <div className="flex items-center justify-between">
+              <span className="font-sans font-bold text-foreground text-sm">Words Practiced</span>
+              <span className="font-sans font-bold text-wp-green text-xs bg-wp-green-light px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                <ShieldCheck className="size-3.5" />
+                SM-2 Scheduled
+              </span>
+            </div>
           </div>
 
           {/* Group Words List */}
