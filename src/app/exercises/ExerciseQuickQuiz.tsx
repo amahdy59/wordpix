@@ -2,7 +2,7 @@ import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
 import type { Action } from "../types";
 import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { Timer, TimerOff, HelpCircle, Lightbulb } from "lucide-react";
+import { Timer, TimerOff, HelpCircle, Lightbulb, Keyboard } from "lucide-react";
 import { WordImage } from "../shared/WordImage";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
@@ -85,7 +85,6 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
     playClick();
   };
 
-  // Keyboard Arrow key navigation across radio options
   const handleKeyDown = useCallback(
     (e: React.KeyboardEvent, index: number) => {
       if (checked) return;
@@ -153,14 +152,15 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       footer={
         <div className="flex flex-col gap-1.5">
           {!selectedId && !checked && (
-            <p className="text-[11px] font-sans font-semibold text-center text-amber-600 dark:text-amber-400">
-              Tap an image option or press 1–4 on keyboard
-            </p>
+            <div className="flex items-center justify-center gap-1.5 text-xs font-sans font-bold text-amber-600 dark:text-amber-400">
+              <Keyboard className="size-4" />
+              <span>Press 1, 2, 3, or 4 on keyboard or tap image card</span>
+            </div>
           )}
           <button
             type="button"
             onClick={handleAction}
-            className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] transition-all ${
+            className={`rounded-xl py-4 w-full font-sans font-bold text-white text-base min-h-[52px] transition-all shadow-wp-xs ${
               shaking ? "animate-bounce motion-reduce:animate-none" : ""
             } ${
               checked
@@ -179,12 +179,12 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         </div>
       }
     >
-      <div className="flex flex-col gap-4 w-full max-w-lg mx-auto">
-        {/* Question counter & header actions */}
-        <div className="flex items-start justify-between gap-3">
-          <div className="flex flex-col">
+      <div className="flex flex-col gap-5 w-full">
+        {/* Question Counter & Header Bar (Guaranteed Single Line Heading) */}
+        <div className="flex items-center justify-between gap-4 w-full">
+          <div className="flex flex-col flex-1 min-w-0">
             <span className="text-xs font-sans font-bold text-muted-foreground">Quiz Question {questionIndex + 1} of {words.length}</span>
-            <h2 className="font-sans font-bold text-foreground text-xl leading-tight">
+            <h2 className="font-sans font-black text-foreground text-xl md:text-2xl whitespace-nowrap truncate leading-tight">
               Which image shows &ldquo;{currentTargetWord.label.toLowerCase()}&rdquo;?
             </h2>
           </div>
@@ -195,10 +195,10 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
               disabled={hintUsed || checked}
               aria-label="50/50 Hint: Eliminate two wrong choices"
               aria-expanded={hintUsed}
-              className={`min-h-[44px] px-3 rounded-xl border flex items-center gap-1.5 text-xs font-bold font-sans transition-all ${
+              className={`min-h-[44px] px-3.5 rounded-xl border flex items-center gap-1.5 text-xs font-bold font-sans transition-all ${
                 hintUsed
                   ? "bg-amber-500/20 text-amber-600 border-amber-500/30"
-                  : "bg-wp-card border-border text-muted-foreground hover:text-foreground"
+                  : "bg-wp-card border-border text-muted-foreground hover:text-foreground shadow-xs"
               }`}
             >
               <Lightbulb className="size-4 text-wp-amber" />
@@ -209,7 +209,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
               onClick={toggleTimer}
               aria-label={timerOn ? "Turn optional timer off" : "Turn optional timer on"}
               aria-pressed={timerOn}
-              className="min-h-[44px] min-w-[44px] px-3 rounded-xl border border-border bg-wp-card text-muted-foreground hover:text-foreground flex items-center gap-2 shrink-0 transition-colors"
+              className="min-h-[44px] min-w-[44px] px-3.5 rounded-xl border border-border bg-wp-card text-muted-foreground hover:text-foreground flex items-center gap-2 shrink-0 transition-colors shadow-xs"
             >
               {timerOn ? <Timer className="size-4" /> : <TimerOff className="size-4" />}
               <span className="text-xs font-bold font-sans">
@@ -219,23 +219,23 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
           </div>
         </div>
 
-        {/* Image option grid */}
+        {/* Expansive Image Option Grid (Large Picture Cards) */}
         <div
           role="radiogroup"
           aria-label={`Choose the image that shows ${currentTargetWord.label}`}
-          className="grid grid-cols-2 gap-3"
+          className="grid grid-cols-2 gap-4 w-full"
         >
           {options.map((option, idx) => {
             const selected = selectedId === option.id;
             const isEliminated = eliminatedIds.includes(option.id);
             const resultClass = checked && selected
-              ? isCorrect ? "border-wp-green border-[3px] ring-2 ring-wp-green/30" : "border-wp-rose border-[3px] ring-2 ring-wp-rose/30"
-              : selected ? "border-primary border-[3px] ring-2 ring-primary/20" : "border-border hover:border-primary/40";
+              ? isCorrect ? "border-wp-green border-[3px] ring-4 ring-wp-green/20 scale-102" : "border-wp-rose border-[3px] ring-4 ring-wp-rose/20 animate-bounce"
+              : selected ? "border-primary border-[3px] ring-4 ring-primary/20 scale-102" : "border-border hover:border-primary/50 hover:shadow-md";
 
             if (isEliminated) {
               return (
-                <div key={option.id} className="bg-muted/40 border border-border/40 rounded-2xl p-4 flex flex-col items-center justify-center text-center opacity-40 min-h-[160px]">
-                  <HelpCircle className="size-8 text-muted-foreground mb-1" />
+                <div key={option.id} className="bg-muted/40 border border-border/40 rounded-3xl p-6 flex flex-col items-center justify-center text-center opacity-40 min-h-[220px]">
+                  <HelpCircle className="size-10 text-muted-foreground mb-2" />
                   <span className="font-sans text-xs font-semibold text-muted-foreground">Eliminated Option {idx + 1}</span>
                 </div>
               );
@@ -252,23 +252,32 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 disabled={checked}
                 onClick={() => { setSelectedId(option.id); playClick(); }}
                 onKeyDown={(e) => handleKeyDown(e, idx)}
-                className={`bg-wp-card rounded-2xl border overflow-hidden min-h-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all relative ${resultClass}`}
+                className={`bg-wp-card rounded-3xl border overflow-hidden min-h-[220px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all relative flex flex-col shadow-wp-xs ${resultClass}`}
               >
-                <div className="absolute top-2 left-2 z-10 bg-black/60 text-white text-[10px] font-sans font-bold px-2 py-0.5 rounded-md backdrop-blur-xs">
-                  Key [{idx + 1}]
+                {/* Physical Keyboard Key Cap Badge */}
+                <div className="absolute top-3 left-3 z-10 bg-slate-900/90 text-white text-xs font-mono font-black px-2.5 py-1 rounded-xl border border-white/20 shadow-md backdrop-blur-md flex items-center gap-1.5">
+                  <kbd className="bg-white/20 text-white px-1.5 py-0.5 rounded text-[11px] font-mono font-bold">Key [{idx + 1}]</kbd>
                 </div>
-                <WordImage
-                  word={option}
-                  width="400"
-                  height="300"
-                  className="h-36 w-full object-cover"
-                  altMode="assessment"
-                  optionIndex={idx}
-                  checked={checked}
-                />
-                <p className="font-sans font-semibold text-foreground text-sm px-3 py-2 text-left truncate">
-                  {checked ? option.label : `Option ${["A", "B", "C", "D"][idx]}`}
-                </p>
+
+                <div className="h-44 sm:h-52 md:h-60 w-full relative bg-muted overflow-hidden shrink-0">
+                  <WordImage
+                    word={option}
+                    width="600"
+                    height="450"
+                    className="size-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    altMode="assessment"
+                    optionIndex={idx}
+                    checked={checked}
+                  />
+                </div>
+                <div className="p-3.5 bg-wp-card flex items-center justify-between border-t border-border/60">
+                  <p className="font-sans font-bold text-foreground text-sm truncate">
+                    {checked ? option.label : `Option ${["A", "B", "C", "D"][idx]}`}
+                  </p>
+                  <span className="text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-2 py-0.5 rounded-md">
+                    Press [{idx + 1}]
+                  </span>
+                </div>
               </button>
             );
           })}
@@ -278,15 +287,15 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
           <div
             role="status"
             aria-live="polite"
-            className={`w-full rounded-2xl p-4 flex flex-col gap-1 ${
-              isCorrect ? "bg-wp-green-light/40 border border-wp-green/30 text-wp-green" : "bg-wp-rose-light/40 border border-wp-rose/30 text-wp-rose"
+            className={`w-full rounded-2xl p-4 flex flex-col gap-1 shadow-xs transition-all ${
+              isCorrect ? "bg-wp-green text-white border border-wp-green" : "bg-wp-rose text-white border border-wp-rose"
             }`}
           >
             <p className="font-sans font-bold text-sm">
               {isCorrect ? "✨ Correct — excellent visual recall!" : `Not quite.`}
             </p>
             {!isCorrect && (
-              <p className="font-sans text-xs text-foreground/80 leading-relaxed mt-0.5">
+              <p className="font-sans text-xs text-white/90 leading-relaxed mt-0.5">
                 The target item is <strong>{currentTargetWord.label}</strong> (/{currentTargetWord.phonetic}/). Keep building your vocabulary memory!
               </p>
             )}

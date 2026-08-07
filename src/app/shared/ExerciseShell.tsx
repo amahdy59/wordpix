@@ -72,7 +72,7 @@ export const ExerciseShell = memo(function ExerciseShell({
 
       {/* ── DESKTOP LEFT PANEL: Rosetta Stone Group Visual Panel ────────────── */}
       <aside
-        className="hidden lg:flex lg:flex-col lg:w-[40%] xl:w-[38%] shrink-0 bg-slate-950 relative overflow-hidden"
+        className="hidden lg:flex lg:flex-col lg:w-[36%] xl:w-[34%] shrink-0 bg-slate-950 relative overflow-hidden"
         aria-label={`Group learning: ${group.name}`}
       >
         {/* Visual Background */}
@@ -216,18 +216,18 @@ export const ExerciseShell = memo(function ExerciseShell({
           </div>
         </div>
 
-        {/* Centered & Balanced Scrollable exercise content */}
+        {/* Expansive, Centered & Responsive Main Content Container */}
         <main
-          className="flex-1 overflow-y-auto overscroll-contain px-5 py-6 lg:px-10 lg:py-8 flex flex-col items-center justify-center min-h-0 w-full"
+          className="flex-1 overflow-y-auto overscroll-contain px-4 sm:px-6 lg:px-12 py-6 flex flex-col items-center justify-center min-h-0 w-full"
           aria-label={`${title} exercise`}
         >
-          <div className="w-full max-w-2xl mx-auto flex flex-col gap-6 my-auto">
+          <div className="w-full max-w-4xl mx-auto flex flex-col gap-6 my-auto">
             {children}
           </div>
         </main>
 
         {/* Pinned footer */}
-        <footer className="shrink-0 px-5 pb-8 pt-3 lg:px-8 lg:pb-8 border-t border-border/60 bg-background flex flex-col gap-2 max-w-2xl mx-auto w-full">
+        <footer className="shrink-0 px-4 sm:px-6 lg:px-12 pb-8 pt-3 border-t border-border/60 bg-background flex flex-col gap-2 max-w-4xl mx-auto w-full">
           {footer}
           <div className="flex items-center justify-between text-[11px] font-sans font-medium text-muted-foreground px-1 pt-1">
             <span>Group: {group.name}</span>

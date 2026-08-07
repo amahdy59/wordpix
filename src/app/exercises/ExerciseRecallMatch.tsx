@@ -4,7 +4,7 @@ import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { WordImage } from "../shared/WordImage";
 import { useAudio } from "../shared/useAudio";
-import { Volume2, CheckCircle2, Sparkles, RefreshCw } from "lucide-react";
+import { Volume2, CheckCircle2, Sparkles, RefreshCw, Keyboard } from "lucide-react";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
 
@@ -31,12 +31,10 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   const { playCorrect, playIncorrect, playClick } = useSound();
   const hasSpokenRef = useRef<Record<number, boolean>>({});
 
-  // Shuffled display order generated once
   const displayCards = useMemo(() => {
     return shuffleArray(words);
   }, [words]);
 
-  // Auto-play audio when prompt target changes
   useEffect(() => {
     stop();
     if (!hasSpokenRef.current[targetIndex]) {
@@ -66,14 +64,12 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       newCompleted.add(card.id);
       setCompletedWordIds(newCompleted);
 
-      // Auto-advance to next audio prompt after 700ms
       setTimeout(() => {
         if (targetIndex + 1 < words.length) {
           setTargetIndex((i) => i + 1);
           setSelectedId(null);
           setFeedback(null);
         } else {
-          // All group words matched! Advance to next skill step
           dispatch({ type: "LESSON_NEXT" });
         }
       }, 700);
@@ -86,9 +82,8 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         setFeedback(null);
       }, 800);
     }
-  }, [feedback, currentTargetWord.id, currentTargetWord.label, playCorrect, playIncorrect, dispatch, completedWordIds, targetIndex, words.length]);
+  }, [feedback, currentTargetWord.id, playCorrect, playIncorrect, dispatch, completedWordIds, targetIndex, words.length]);
 
-  // Keyboard 1-5 number shortcuts
   useEffect(() => {
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
       if (feedback === "correct") return;
@@ -114,7 +109,11 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       groupId={groupId}
       dispatch={dispatch}
       footer={
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1.5">
+          <div className="flex items-center justify-center gap-1.5 text-xs font-sans font-bold text-amber-600 dark:text-amber-400">
+            <Keyboard className="size-4" />
+            <span>Press 1–5 on keyboard or tap image card</span>
+          </div>
           <div className="flex items-center justify-between text-xs font-sans font-semibold text-muted-foreground px-1">
             <span>Group Progress: {completedWordIds.size} of {words.length} matched</span>
             <span>Item {targetIndex + 1} of {words.length}</span>
@@ -122,25 +121,25 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         </div>
       }
     >
-      <div className="flex flex-col gap-4 w-full max-w-2xl mx-auto">
+      <div className="flex flex-col gap-5 w-full">
         {/* Prompter Bar with Auto-Audio */}
-        <div className="bg-slate-900 text-white rounded-2xl p-4 md:p-5 flex items-center justify-between shadow-wp-md border border-slate-800">
-          <div className="flex items-center gap-3">
+        <div className="bg-slate-900 text-white rounded-3xl p-5 md:p-6 flex items-center justify-between shadow-wp-md border border-slate-800">
+          <div className="flex items-center gap-4">
             <button
               type="button"
               onClick={replayAudio}
               aria-label="Replay target audio prompt"
-              className="size-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md hover:scale-105 transition-transform shrink-0"
+              className="size-14 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md hover:scale-105 transition-transform shrink-0"
             >
-              <Volume2 className={`size-6 ${isPlaying ? "animate-pulse text-wp-amber" : ""}`} />
+              <Volume2 className={`size-7 ${isPlaying ? "animate-pulse text-wp-amber" : ""}`} />
             </button>
             <div>
               <div className="flex items-center gap-2">
-                <span className="font-sans font-black text-xl md:text-2xl text-white">Listen to the word</span>
+                <h2 className="font-sans font-black text-xl md:text-2xl text-white whitespace-nowrap truncate">Listen &amp; Match Picture</h2>
                 <Sparkles className="size-4 text-wp-amber animate-pulse" />
               </div>
               <p className="font-sans text-white/70 text-xs mt-0.5">
-                Tap the image or press 1–5 on keyboard that matches the audio prompt.
+                Tap the matching image card or press 1–5 on your keyboard.
               </p>
             </div>
           </div>
@@ -148,26 +147,26 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
           <button
             type="button"
             onClick={replayAudio}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/10 text-white/80 hover:text-white text-xs font-sans font-bold border border-white/15 backdrop-blur-md transition-colors shrink-0"
+            className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/10 text-white/80 hover:text-white text-xs font-sans font-bold border border-white/15 backdrop-blur-md transition-colors shrink-0"
           >
-            <RefreshCw className="size-3.5" />
-            <span>Replay</span>
+            <RefreshCw className="size-4" />
+            <span>Replay Audio</span>
           </button>
         </div>
 
-        {/* Card Image Selection Grid */}
+        {/* Expansive Card Image Selection Grid */}
         <div
           role="radiogroup"
           aria-label="Choose matching picture for audio prompt"
-          className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4"
+          className="grid grid-cols-2 sm:grid-cols-3 gap-4 w-full"
         >
           {displayCards.map((card, idx) => {
             const isSelected = selectedId === card.id;
             const isTargetCompleted = completedWordIds.has(card.id);
 
-            let cardStyle = "border-border bg-wp-card hover:border-primary/50 hover:shadow-wp-xs";
+            let cardStyle = "border-border bg-wp-card hover:border-primary/50 hover:shadow-md";
             if (isSelected) {
-              if (feedback === "correct") cardStyle = "border-wp-green border-[3px] bg-wp-green-light/40 ring-4 ring-wp-green/20 scale-105";
+              if (feedback === "correct") cardStyle = "border-wp-green border-[3px] bg-wp-green-light/40 ring-4 ring-wp-green/20 scale-102";
               if (feedback === "incorrect") cardStyle = "border-wp-rose border-[3px] bg-wp-rose-light/40 animate-bounce";
             } else if (isTargetCompleted) {
               cardStyle = "border-wp-green/40 bg-wp-green-light/10 opacity-75";
@@ -181,36 +180,42 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 aria-checked={isSelected}
                 disabled={feedback === "correct"}
                 onClick={() => handleCardClick(card)}
-                className={`group relative rounded-2xl border overflow-hidden p-2 flex flex-col items-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all ${cardStyle}`}
+                className={`group relative rounded-3xl border overflow-hidden p-2 flex flex-col items-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all min-h-[220px] shadow-wp-xs ${cardStyle}`}
               >
-                <div className="absolute top-2 left-2 z-10 bg-black/60 text-white text-[10px] font-sans font-bold px-2 py-0.5 rounded-md backdrop-blur-xs">
-                  Key [{idx + 1}]
+                {/* Physical Key Badge */}
+                <div className="absolute top-3 left-3 z-10 bg-slate-900/90 text-white text-xs font-mono font-black px-2.5 py-1 rounded-xl border border-white/20 shadow-md backdrop-blur-md flex items-center gap-1.5">
+                  <kbd className="bg-white/20 text-white px-1.5 py-0.5 rounded text-[11px] font-mono font-bold">Key [{idx + 1}]</kbd>
                 </div>
-                <div className="h-28 sm:h-32 w-full relative rounded-xl overflow-hidden bg-muted border border-border/60 shrink-0">
-                  <WordImage word={card} width="300" height="240" className="size-full object-cover group-hover:scale-105 transition-transform duration-300" />
+
+                <div className="h-44 sm:h-52 w-full relative rounded-2xl overflow-hidden bg-muted border border-border/60 shrink-0">
+                  <WordImage word={card} width="500" height="400" className="size-full object-cover group-hover:scale-105 transition-transform duration-300" />
                   {isTargetCompleted && (
-                    <div className="absolute top-2 right-2 bg-wp-green text-white p-1 rounded-full shadow-sm">
-                      <CheckCircle2 className="size-4" />
+                    <div className="absolute top-3 right-3 bg-wp-green text-white p-1.5 rounded-full shadow-md">
+                      <CheckCircle2 className="size-5" />
                     </div>
                   )}
                 </div>
 
-                <p className="font-sans font-bold text-foreground text-sm truncate w-full text-center px-1">
-                  {isTargetCompleted || (isSelected && feedback === "correct")
-                    ? card.label
-                    : `Option ${idx + 1}`}
-                </p>
+                <div className="w-full p-2 flex items-center justify-between">
+                  <p className="font-sans font-bold text-foreground text-sm truncate">
+                    {isTargetCompleted || (isSelected && feedback === "correct")
+                      ? card.label
+                      : `Option ${idx + 1}`}
+                  </p>
+                  <span className="text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-2 py-0.5 rounded-md">
+                    [{idx + 1}]
+                  </span>
+                </div>
               </button>
             );
           })}
         </div>
 
-        {/* Feedback Message Banner */}
         {feedback && (
           <div
             role="status"
             aria-live="polite"
-            className={`w-full rounded-2xl p-4 text-center text-sm font-sans font-bold shadow-sm transition-all ${
+            className={`w-full rounded-2xl p-4 text-center text-sm font-sans font-bold shadow-xs transition-all ${
               feedback === "correct"
                 ? "bg-wp-green text-white border border-wp-green animate-in fade-in"
                 : "bg-wp-rose text-white border border-wp-rose animate-in fade-in"
