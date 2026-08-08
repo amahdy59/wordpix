@@ -80,10 +80,18 @@ export function getWordFallbackDataUrl(word: VocabItem, altMode: ImageAltMode = 
 /**
  * Alt text for a vocabulary image.
  *
- * "assessment" is the mode used by graded exercises: the learner is being asked
- * to identify the word, so the alt text must NOT contain it — otherwise a
- * screen reader reads the answer aloud. The label is revealed only once the
- * option has been chosen (`checked`), which is the teaching moment.
+ * "assessment" is the mode used by graded exercises. Two competing constraints
+ * meet here:
+ *
+ *   1. The alt text must not contain the word, or a screen reader reads the
+ *      answer aloud before the learner can attempt the question.
+ *   2. It must still describe what the picture shows, or the question is
+ *      unanswerable without sight — "Picture option A" is safe but useless,
+ *      which is what this returned before descriptions existed.
+ *
+ * VocabItem.description satisfies both: it describes the object without naming
+ * it, verified by lessons_content.test.ts. The label itself is revealed only
+ * once the option has been chosen (`checked`), which is the teaching moment.
  */
 export function getImageAltText(
   word: VocabItem,
@@ -94,7 +102,8 @@ export function getImageAltText(
   if (altMode === "decorative") return "";
   if (altMode === "assessment") {
     const letter = OPTION_LABELS[optionIndex] ?? String(optionIndex + 1);
-    return checked ? `Picture option ${letter}: ${word.label}` : `Picture option ${letter}`;
+    if (checked) return `Picture option ${letter}: ${word.label}. ${word.description}`;
+    return `Picture option ${letter}: ${word.description}`;
   }
   return word.label;
 }

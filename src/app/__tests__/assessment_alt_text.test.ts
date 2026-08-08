@@ -13,12 +13,25 @@ describe("Assessment image alt text", () => {
 
   it("never leaks the word before the option is chosen", () => {
     const alt = getImageAltText(word, "assessment", 0, false);
-    expect(alt).toBe("Picture option A");
+    expect(alt).toBe(`Picture option A: ${word.description}`);
     expect(alt.toLowerCase()).not.toContain(word.label.toLowerCase());
   });
 
+  /**
+   * The alt text used to be a bare "Picture option A" — safe, but identical
+   * for every option, so the question was unanswerable without sight. It now
+   * carries VocabItem.description, which identifies the object without naming
+   * it (enforced by lessons_content.test.ts).
+   */
+  it("describes the picture so the question can actually be answered", () => {
+    const alt = getImageAltText(word, "assessment", 0, false);
+    expect(alt).toContain(word.description);
+    expect(alt.length).toBeGreaterThan(30);
+  });
+
   it("reveals the word once the option is chosen", () => {
-    expect(getImageAltText(word, "assessment", 1, true)).toBe(`Picture option B: ${word.label}`);
+    const alt = getImageAltText(word, "assessment", 1, true);
+    expect(alt).toBe(`Picture option B: ${word.label}. ${word.description}`);
   });
 
   it("gives every option in a set a distinct label", () => {
@@ -27,7 +40,9 @@ describe("Assessment image alt text", () => {
   });
 
   it("falls back to a number past the letter table", () => {
-    expect(getImageAltText(word, "assessment", 99, false)).toBe("Picture option 100");
+    expect(getImageAltText(word, "assessment", 99, false)).toBe(
+      `Picture option 100: ${word.description}`
+    );
   });
 
   it("returns empty alt for decorative images", () => {
