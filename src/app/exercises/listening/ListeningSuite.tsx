@@ -48,8 +48,8 @@ export const ExListeningWordMatch = memo(function ExListeningWordMatch({ dispatc
             <h2 className="font-sans font-black text-foreground text-3xl">{target.label}</h2>
             <p className="font-sans text-muted-foreground text-sm font-medium">/{target.phonetic}/</p>
           </div>
-          <span className="font-sans text-xs font-bold text-wp-amber bg-wp-amber/10 px-3 py-1 rounded-full border border-wp-amber/20">
-            🔥 5 Correct in a row! (+15 XP)
+          <span className="font-sans text-xs font-bold text-muted-foreground bg-muted px-3 py-1 rounded-full border border-border">
+            Listen, then choose the definition
           </span>
         </div>
 
@@ -181,7 +181,7 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
             <Clock className="size-4" />
             <span>0:42 Remaining</span>
           </div>
-          <button type="button" onClick={handleReplay} disabled={replays === 0} className="px-3 py-1.5 rounded-xl bg-secondary text-primary font-sans font-bold text-xs border border-primary/20 disabled:opacity-50">
+          <button type="button" onClick={handleReplay} disabled={replays === 0} className="px-3 min-h-[44px] rounded-xl bg-secondary text-primary font-sans font-bold text-xs border border-primary/20 disabled:opacity-50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
             Replays Left: {replays}/3
           </button>
         </div>

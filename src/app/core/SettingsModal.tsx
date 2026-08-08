@@ -56,7 +56,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
             type="button"
             onClick={onClose}
             aria-label="Close settings"
-            className="size-10 rounded-full border border-border bg-wp-card text-muted-foreground hover:text-foreground flex items-center justify-center transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+            className="size-11 min-h-[44px] min-w-[44px] rounded-full border border-border bg-wp-card text-muted-foreground hover:text-foreground flex items-center justify-center transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
           >
             <X className="size-5" />
           </button>
@@ -364,7 +364,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
           <button
             type="button"
             onClick={onClose}
-            className="w-full sm:w-auto px-6 py-3 rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm transition-all"
+            className="w-full sm:w-auto px-6 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             Done
           </button>

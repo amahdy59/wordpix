@@ -32,14 +32,22 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
     return totalRecalls === 0 ? 0 : Math.round((totalCorrect / totalRecalls) * 100);
   }, [memoryValues]);
 
-  const retentionRate = recallAccuracy > 0 ? Math.min(98, Math.max(70, recallAccuracy + 5)) : 0;
+  // Words the scheduler currently considers due. Replaces a "7-Day Retention"
+  // tile whose value was `min(98, max(70, recallAccuracy + 5))` — not a
+  // retention measurement at all, just accuracy nudged up and floored at 70%,
+  // sitting under a heading that called these genuine statistics.
+  const dueCount = useMemo(() => {
+    const now = Date.now();
+    return memoryValues.filter((w) => !w.nextReviewAt || new Date(w.nextReviewAt).getTime() <= now)
+      .length;
+  }, [memoryValues]);
 
   const STATS = [
     { value: `${strongCount}`, label: "Strong Words", icon: ShieldCheck, color: "text-wp-green" },
     { value: `${familiarCount}`, label: "Familiar Words", icon: Brain, color: "text-wp-blue" },
     { value: `${learningCount}`, label: "Learning Words", icon: BookOpen, color: "text-wp-amber" },
     { value: `${recallAccuracy}%`, label: "Recall Accuracy", icon: Target, color: "text-primary" },
-    { value: `${retentionRate}%`, label: "7-Day Retention", icon: Sparkles, color: "text-wp-teal" },
+    { value: `${dueCount}`, label: "Due for Review", icon: Sparkles, color: "text-wp-teal" },
     { value: `${progress.streak} days`, label: "Active Streak", icon: Flame, color: "text-wp-amber" },
   ];
 
@@ -99,7 +107,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
           <button
             type="button"
             onClick={() => setShowSettingsModal(true)}
-            className="px-4 py-3 rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-xs flex items-center gap-2 shadow-wp-xs hover:opacity-90 transition-all"
+            className="px-4 min-h-[44px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-xs flex items-center gap-2 shadow-wp-xs hover:opacity-90 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <Sliders className="size-4" />
             <span>Settings &amp; Accessibility</span>

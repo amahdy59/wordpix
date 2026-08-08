@@ -84,7 +84,7 @@ export const VocabSidebar = memo(function VocabSidebar({
           <button
             type="button"
             onClick={() => setSelectedTopic("all")}
-            className={`px-3 py-1 rounded-lg text-xs font-sans font-semibold shrink-0 transition-all ${
+            className={`px-3 min-h-[44px] rounded-lg text-xs font-sans font-semibold shrink-0 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
               selectedTopic === "all"
                 ? "bg-primary text-primary-foreground shadow-xs"
                 : "bg-muted text-muted-foreground hover:text-foreground"
@@ -100,7 +100,7 @@ export const VocabSidebar = memo(function VocabSidebar({
                 key={topic.id}
                 type="button"
                 onClick={() => setSelectedTopic(topic.id)}
-                className={`px-3 py-1 rounded-lg text-xs font-sans font-semibold shrink-0 transition-all ${
+                className={`px-3 min-h-[44px] rounded-lg text-xs font-sans font-semibold shrink-0 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                   isSelected
                     ? "bg-primary text-primary-foreground shadow-xs"
                     : "bg-muted text-muted-foreground hover:text-foreground"

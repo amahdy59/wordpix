@@ -85,7 +85,7 @@ export const SceneCanvas = memo(function SceneCanvas({
           type="button"
           onClick={onBrowseWords}
           className="min-h-[44px] px-3 rounded-xl border border-border bg-wp-card text-foreground flex items-center gap-1.5 text-xs font-sans font-bold"
-          aria-label="Browse all 56 bedroom words"
+          aria-label="Browse all bedroom words"
         >
           <List className="size-4" aria-hidden />
           Words
@@ -93,7 +93,7 @@ export const SceneCanvas = memo(function SceneCanvas({
       </div>
 
       {/* Desktop header bar */}
-      <header className="hidden md:flex items-center justify-between gap-4 px-5 py-3 bg-wp-card border-b border-border shrink-0 z-10">
+      <header className="hidden md:flex flex-wrap items-center justify-between gap-x-4 gap-y-2 px-5 py-3 bg-wp-card border-b border-border shrink-0 z-10">
         <div className="flex items-center gap-3">
           <button
             type="button"
@@ -123,7 +123,7 @@ export const SceneCanvas = memo(function SceneCanvas({
               type="button"
               onClick={() => setViewMode("word")}
               aria-pressed={viewMode === "word"}
-              className={`flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-sans font-bold transition-all ${
+              className={`flex items-center gap-1.5 px-3 min-h-[44px] rounded-lg text-xs font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                 viewMode === "word"
                   ? "bg-wp-card text-primary shadow-wp-xs"
                   : "text-muted-foreground hover:text-foreground"
@@ -136,7 +136,7 @@ export const SceneCanvas = memo(function SceneCanvas({
               type="button"
               onClick={() => setViewMode("scene")}
               aria-pressed={viewMode === "scene"}
-              className={`flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-sans font-bold transition-all ${
+              className={`flex items-center gap-1.5 px-3 min-h-[44px] rounded-lg text-xs font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                 viewMode === "scene"
                   ? "bg-wp-card text-primary shadow-wp-xs"
                   : "text-muted-foreground hover:text-foreground"
@@ -147,9 +147,12 @@ export const SceneCanvas = memo(function SceneCanvas({
             </button>
           </div>
 
-          {/* Active Word Badge */}
-          <div className="flex items-center gap-2 bg-secondary px-3.5 py-1.5 rounded-full border border-primary/20 shadow-wp-xs">
-            <Sparkles className="size-3.5 text-primary animate-pulse" aria-hidden />
+          {/* Active word badge — lg and up only. At md this header needed 507px
+              of content inside 448px, which clipped the Scene View control off
+              the right edge. The same word already appears in the detail card
+              directly below, so hiding it here loses nothing. */}
+          <div className="hidden lg:flex items-center gap-2 bg-secondary px-3.5 py-1.5 rounded-full border border-primary/20 shadow-wp-xs">
+            <Sparkles className="size-3.5 text-primary motion-safe:animate-pulse" aria-hidden />
             <span className="font-sans font-bold text-foreground text-sm">{activeWord.label}</span>
           </div>
         </div>

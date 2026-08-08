@@ -85,17 +85,17 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
           onClick={() => setShowSettingsModal(true)}
           title="Settings & Accessibility"
           aria-label="Settings & Accessibility"
-          className="size-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
+          className="size-11 min-h-[44px] min-w-[44px] rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <Sliders className="size-5" />
         </button>
-        <ThemeToggle />
+        <ThemeToggle compact />
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "profile" })}
           title="Learner Profile"
           aria-label="Learner Profile"
-          className="size-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
+          className="size-11 min-h-[44px] min-w-[44px] rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           <UserCircle className="size-6" />
         </button>

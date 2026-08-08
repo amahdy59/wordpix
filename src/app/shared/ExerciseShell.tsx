@@ -151,7 +151,7 @@ export const ExerciseShell = memo(function ExerciseShell({
                     type="button"
                     disabled={isTesting}
                     onClick={() => onSelectWord?.(w)}
-                    className={`flex items-center gap-1.5 px-2.5 py-1 rounded-xl border transition-all shrink-0 ${
+                    className={`flex items-center gap-1.5 px-2.5 min-h-[44px] rounded-xl border transition-all shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-white ${
                       isActive && !isTesting
                         ? "bg-primary text-primary-foreground border-white/40 shadow-md font-bold scale-105"
                         : "bg-black/40 text-white/70 border-white/10 hover:bg-black/60 hover:text-white disabled:opacity-50"
@@ -202,7 +202,7 @@ export const ExerciseShell = memo(function ExerciseShell({
                   type="button"
                   disabled={isTesting}
                   onClick={() => onSelectWord?.(w)}
-                  className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-xs font-sans shrink-0 transition-all ${
+                  className={`flex items-center gap-1.5 px-2.5 min-h-[44px] rounded-lg border text-xs font-sans shrink-0 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                     isActive && !isTesting
                       ? "bg-primary text-primary-foreground border-primary font-bold"
                       : "bg-wp-card text-muted-foreground border-border disabled:opacity-60"

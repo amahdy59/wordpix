@@ -1,5 +1,12 @@
 import { useEffect, useCallback } from "react";
-import type { Screen } from "../types";
+import type { Screen, SkillExerciseId } from "../types";
+import { SKILL_EXERCISE_IDS } from "../exercises/registry";
+
+const SKILL_EXERCISE_ID_SET = new Set<string>(SKILL_EXERCISE_IDS);
+
+function isSkillExerciseId(value: string): value is SkillExerciseId {
+  return SKILL_EXERCISE_ID_SET.has(value);
+}
 
 /** Number of steps in a lesson flow (scene + 5 exercises). */
 const LESSON_STEP_COUNT = 6;
@@ -37,6 +44,7 @@ const STATIC_ROUTES: Record<string, { title: string; getScreen: () => Screen }> 
 };
 
 const LESSON_STEP_PATTERN = /^#\/learn\/bedroom\/step-(\d+)$/;
+const SKILL_EXERCISE_PATTERN = /^#\/skills\/([a-z-]+)$/;
 
 export function screenToHash(screen: Screen): { hash: string; title: string } {
   if (screen.id === "onboarding") return { hash: "#/onboarding", title: "WordPix — Onboarding" };
@@ -79,6 +87,21 @@ export function hashToRoute(hash: string): RouteIntent | null {
 
   if (normalized === "#/learn/bedroom/complete") {
     return { kind: "lesson-complete", title: "WordPix — Session Complete" };
+  }
+
+  // screenToHash writes #/skills/<id>; without a matching reader the URL and
+  // the rendered screen silently disagreed after a reload or a Back press.
+  const skillMatch = normalized.match(SKILL_EXERCISE_PATTERN);
+  if (skillMatch) {
+    const exerciseId = skillMatch[1];
+    if (isSkillExerciseId(exerciseId)) {
+      return {
+        kind: "screen",
+        screen: { id: "skill-exercise", exerciseId },
+        title: `WordPix — ${exerciseId}`,
+      };
+    }
+    return null;
   }
 
   const match = STATIC_ROUTES[normalized];

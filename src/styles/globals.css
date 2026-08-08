@@ -149,6 +149,26 @@
     min-width: 44px;
   }
 
+  /*
+    Horizontal chip strips. `.no-scrollbar` was applied in six places and never
+    defined anywhere, so it did nothing at all. Hiding the scrollbar removes the
+    only signal that content continues off-screen, so the fade mask replaces it.
+  */
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    mask-image: linear-gradient(to right, #000 calc(100% - 2rem), transparent 100%);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  [dir="rtl"] .no-scrollbar {
+    mask-image: linear-gradient(to left, #000 calc(100% - 2rem), transparent 100%);
+  }
+
   /* ─── Shadow utilities ──────────────────────────────────────────────────── */
   .shadow-wp-xs { box-shadow: var(--wp-shadow-xs); }
   .shadow-wp-sm { box-shadow: var(--wp-shadow-sm); }

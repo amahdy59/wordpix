@@ -70,8 +70,8 @@ export const ExWritingSentenceAssembly = memo(function ExWritingSentenceAssembly
       <LessonHeader title="Sentence Assembly Arcade" current={2} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="flex justify-between items-center bg-wp-panel text-wp-text-on-panel rounded-2xl p-4">
-          <span className="font-sans font-black text-wp-amber text-xl">x4 COMBO</span>
-          <span className="font-sans font-bold text-sm">340 Points</span>
+          <span className="font-sans font-black text-wp-amber text-xl">Sentence Assembly</span>
+          <span className="font-sans font-bold text-sm">Drag the tiles into order</span>
         </div>
         <PrimaryButton label="Assembly Complete" onClick={() => dispatch({ type: "GO", to: "explore" })} />
       </main>
@@ -93,9 +93,14 @@ export const ExWritingPhotoJournal = memo(function ExWritingPhotoJournal({ dispa
           placeholder="Write 3 sentences describing your bedroom..."
           className="w-full h-40 bg-wp-card border border-border rounded-2xl p-4 font-sans text-foreground text-sm focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
         />
+        {/* Was an "Assessment Rubric" showing fixed ●●●○○ ratings for Grammar,
+            Vocabulary, and Coherence. Nothing evaluated the learner's text, so
+            the dots were identical no matter what they wrote. */}
         <div className="bg-wp-card border border-border rounded-2xl p-4 flex flex-col gap-1">
-          <span className="font-sans font-bold text-xs text-primary uppercase">Assessment Rubric</span>
-          <p className="font-sans text-xs text-muted-foreground">Grammar: ●●●○○ | Vocabulary: ●●●●○ | Coherence: ●●●○○</p>
+          <span className="font-sans font-bold text-xs text-primary uppercase">What to aim for</span>
+          <p className="font-sans text-xs text-muted-foreground">
+            Three sentences, each naming one object and saying where it is. WordPix does not grade free writing.
+          </p>
         </div>
         <PrimaryButton label="Submit Photo Journal Entry" onClick={() => dispatch({ type: "GO", to: "explore" })} />
       </main>

@@ -5,6 +5,7 @@ import { ExerciseShell } from "../shared/ExerciseShell";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
 import { useAudio } from "../shared/useAudio";
+import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { Volume2, Mic, Sparkles, ChevronRight, ChevronLeft, CheckCircle2 } from "lucide-react";
 import { WordImage } from "../shared/WordImage";
 
@@ -24,7 +25,10 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   dispatch,
 }: Props) {
   const [activeWordIndex, setActiveWordIndex] = useState<number>(0);
-  const [speed, setSpeed] = useState<number>(0.75);
+  // Seeded from the learner's Settings speech rate rather than a constant,
+  // so the global preference is the starting point here too.
+  const { accessibility } = useAccessibility();
+  const [speed, setSpeed] = useState<number>(accessibility.speechRate);
   const { speak, stop, isPlaying, isSupported, isError } = useAudio({ lang: "en-US", rate: speed });
   const mountedRef = useRef(false);
 
@@ -66,7 +70,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           type="button"
           onClick={() => handleSpeedChange(s)}
           aria-pressed={speed === s}
-          className={`px-2.5 py-0.5 rounded-lg text-xs font-sans font-bold transition-all min-h-[32px] ${
+          className={`px-2.5 py-0.5 rounded-lg text-xs font-sans font-bold transition-all min-h-[44px] min-w-[44px] ${
             speed === s
               ? "bg-primary text-primary-foreground shadow-sm"
               : "bg-white/10 text-white/60 hover:text-white"
@@ -135,7 +139,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                     : "bg-wp-card border-border hover:border-primary/40"
                 }`}
               >
-                <div className="size-9 sm:size-10 rounded-lg overflow-hidden shrink-0 border border-border bg-muted relative">
+                <div className="size-11 min-h-[44px] min-w-[44px] sm:size-10 rounded-lg overflow-hidden shrink-0 border border-border bg-muted relative">
                   <WordImage word={w} width="40" height="40" className="size-full object-cover" />
                   {isSelected && (
                     <div className="absolute top-0.5 end-0.5 bg-primary text-white p-0.5 rounded-full shadow-xs">
@@ -167,7 +171,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               type="button"
               disabled={activeWordIndex === 0}
               onClick={() => handleSelectWordIndex(activeWordIndex - 1)}
-              className="size-9 rounded-xl border border-border flex items-center justify-center text-foreground hover:bg-muted disabled:opacity-30"
+              className="size-11 min-h-[44px] min-w-[44px] rounded-xl border border-border flex items-center justify-center text-foreground hover:bg-muted disabled:opacity-30"
               aria-label="Previous word in group"
             >
               <ChevronLeft className="size-4" />
@@ -180,7 +184,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               type="button"
               disabled={activeWordIndex === words.length - 1}
               onClick={() => handleSelectWordIndex(activeWordIndex + 1)}
-              className="size-9 rounded-xl border border-border flex items-center justify-center text-foreground hover:bg-muted disabled:opacity-30"
+              className="size-11 min-h-[44px] min-w-[44px] rounded-xl border border-border flex items-center justify-center text-foreground hover:bg-muted disabled:opacity-30"
               aria-label="Next word in group"
             >
               <ChevronRight className="size-4" />
@@ -191,7 +195,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
             type="button"
             onClick={handleToggle}
             aria-label={`Play audio pronunciation for ${currentWord.label}`}
-            className="w-full bg-secondary hover:bg-primary/15 rounded-xl p-3 flex items-center justify-center gap-3 border border-primary/20 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all group"
+            className="w-full min-h-[44px] bg-secondary hover:bg-primary/15 rounded-xl p-3 flex items-center justify-center gap-3 border border-primary/20 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all group"
           >
             <div className="size-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform shrink-0">
               <Volume2 className="size-5" />

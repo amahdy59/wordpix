@@ -154,7 +154,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             type="button"
             onClick={replayAudio}
             aria-label="Replay target audio prompt"
-            className="flex items-center gap-3 hover:opacity-90 transition-opacity text-start"
+            className="flex items-center gap-3 min-h-[44px] hover:opacity-90 transition-opacity text-start rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-white"
           >
             <div className="size-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md shrink-0">
               <Volume2 className={`size-5 ${isPlaying ? "animate-pulse text-wp-amber" : ""}`} />
@@ -171,7 +171,8 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
           <button
             type="button"
             onClick={replayAudio}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/10 text-white/90 hover:text-white text-xs font-sans font-bold border border-white/15 backdrop-blur-md transition-colors shrink-0"
+            aria-label="Replay audio"
+            className="flex items-center gap-1.5 px-3 min-h-[44px] min-w-[44px] justify-center rounded-xl bg-white/10 text-white/90 hover:text-white text-xs font-sans font-bold border border-white/15 backdrop-blur-md transition-colors shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-white"
           >
             <RefreshCw className="size-3.5" />
             <span className="hidden sm:inline">Replay</span>
