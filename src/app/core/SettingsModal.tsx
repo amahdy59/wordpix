@@ -3,6 +3,10 @@ import { X, Sun, Moon, Volume2, Type, Sliders, ShieldCheck, Eye } from "lucide-r
 import { useLearner } from "../context/LearnerContext";
 import { useTheme } from "../shared/ThemeToggle";
 import { useI18n, SUPPORTED_LANGS } from "../context/I18nContext";
+import { useAccessibility } from "../shared/useAccessibilityPreferences";
+
+/** Speech rates offered in Settings, slowest first. */
+const SPEECH_RATES = [0.5, 0.75, 1] as const;
 
 interface Props {
   isOpen: boolean;
@@ -14,12 +18,12 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
   const { theme, resolvedTheme, toggleTheme } = useTheme();
   const { t, interfaceLang, setInterfaceLang } = useI18n();
 
-  const [highContrast, setHighContrast] = useState(false);
-  const [textSize, setTextSize] = useState<"standard" | "large" | "xlarge">("standard");
-  const [audioSpeed, setAudioSpeed] = useState<"0.5" | "0.75" | "1.0">("0.75");
-  const [numeralSystem, setNumeralSystem] = useState<"western" | "arabic">("western");
-  const [enableSpeaking, setEnableSpeaking] = useState(true);
-  const [enableListening, setEnableListening] = useState(true);
+  // These six were local useState that nothing read: the controls moved when
+  // clicked and changed nothing, then discarded the value on close. They are
+  // now the persisted accessibility slice, applied by real consumers.
+  const { accessibility, setAccessibility } = useAccessibility();
+  const { textSize, highContrast, speechRate, numeralSystem, includeSpeaking, includeListening } =
+    accessibility;
   const [confirmReset, setConfirmReset] = useState(false);
 
   if (!isOpen) return null;
@@ -141,7 +145,8 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 </div>
                 <button
                   type="button"
-                  onClick={() => setHighContrast((v) => !v)}
+                  onClick={() => setAccessibility({ highContrast: !highContrast })}
+                  aria-pressed={highContrast}
                   className={`px-3 py-1.5 rounded-full font-sans font-bold text-xs transition-all border ${
                     highContrast ? "bg-wp-green text-wp-text-on-green border-wp-green" : "bg-muted text-muted-foreground border-border"
                   }`}
@@ -171,7 +176,8 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <button
                       key={sz}
                       type="button"
-                      onClick={() => setTextSize(sz)}
+                      onClick={() => setAccessibility({ textSize: sz })}
+                      aria-pressed={textSize === sz}
                       className={`px-2.5 py-1 rounded-lg text-xs font-sans font-bold transition-all ${
                         textSize === sz ? "bg-primary text-primary-foreground shadow-xs" : "text-muted-foreground hover:text-foreground"
                       }`}
@@ -193,14 +199,16 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 <div className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl">
                   <button
                     type="button"
-                    onClick={() => setNumeralSystem("western")}
+                    onClick={() => setAccessibility({ numeralSystem: "western" })}
+                    aria-pressed={numeralSystem === "western"}
                     className={`px-3 py-1 rounded-lg text-xs font-sans font-bold ${numeralSystem === "western" ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}
                   >
                     1, 2, 3
                   </button>
                   <button
                     type="button"
-                    onClick={() => setNumeralSystem("arabic")}
+                    onClick={() => setAccessibility({ numeralSystem: "arabic" })}
+                    aria-pressed={numeralSystem === "arabic"}
                     className={`px-3 py-1 rounded-lg text-xs font-sans font-bold ${numeralSystem === "arabic" ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}
                   >
                     ١, ٢, ٣
@@ -225,13 +233,14 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   <p className="font-sans text-xs text-muted-foreground">Control audio playback speed for learning clarity.</p>
                 </div>
                 <div className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl">
-                  {(["0.5", "0.75", "1.0"] as const).map((sp) => (
+                  {SPEECH_RATES.map((sp) => (
                     <button
                       key={sp}
                       type="button"
-                      onClick={() => setAudioSpeed(sp)}
+                      onClick={() => setAccessibility({ speechRate: sp })}
+                      aria-pressed={speechRate === sp}
                       className={`px-2.5 py-1 rounded-lg text-xs font-sans font-bold transition-all ${
-                        audioSpeed === sp ? "bg-primary text-primary-foreground shadow-xs" : "text-muted-foreground hover:text-foreground"
+                        speechRate === sp ? "bg-primary text-primary-foreground shadow-xs" : "text-muted-foreground hover:text-foreground"
                       }`}
                     >
                       {sp}x
@@ -251,12 +260,13 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   </div>
                   <button
                     type="button"
-                    onClick={() => setEnableSpeaking((v) => !v)}
+                    onClick={() => setAccessibility({ includeSpeaking: !includeSpeaking })}
+                    aria-pressed={includeSpeaking}
                     className={`px-3 py-1.5 rounded-full font-sans font-bold text-xs transition-all border ${
-                      enableSpeaking ? "bg-wp-green text-wp-text-on-green border-wp-green" : "bg-muted text-muted-foreground border-border"
+                      includeSpeaking ? "bg-wp-green text-wp-text-on-green border-wp-green" : "bg-muted text-muted-foreground border-border"
                     }`}
                   >
-                    {enableSpeaking ? "Enabled" : "Disabled"}
+                    {includeSpeaking ? "Enabled" : "Disabled"}
                   </button>
                 </div>
 
@@ -267,12 +277,13 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   </div>
                   <button
                     type="button"
-                    onClick={() => setEnableListening((v) => !v)}
+                    onClick={() => setAccessibility({ includeListening: !includeListening })}
+                    aria-pressed={includeListening}
                     className={`px-3 py-1.5 rounded-full font-sans font-bold text-xs transition-all border ${
-                      enableListening ? "bg-wp-green text-wp-text-on-green border-wp-green" : "bg-muted text-muted-foreground border-border"
+                      includeListening ? "bg-wp-green text-wp-text-on-green border-wp-green" : "bg-muted text-muted-foreground border-border"
                     }`}
                   >
-                    {enableListening ? "Enabled" : "Disabled"}
+                    {includeListening ? "Enabled" : "Disabled"}
                   </button>
                 </div>
               </div>
@@ -355,7 +366,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
             onClick={onClose}
             className="w-full sm:w-auto px-6 py-3 rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm transition-all"
           >
-            Save &amp; Close Settings
+            Done
           </button>
         </div>
       </div>

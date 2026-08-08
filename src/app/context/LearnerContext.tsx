@@ -13,6 +13,43 @@ export interface LearnerPreferences {
   goal: LearnerGoal;
 }
 
+export type TextSize = "standard" | "large" | "xlarge";
+export type NumeralSystem = "western" | "arabic";
+
+/**
+ * Accessibility settings.
+ *
+ * Every one of these was previously a `useState` local to SettingsModal that
+ * nothing read: the controls looked functional, moved when clicked, and did
+ * absolutely nothing — and were discarded the moment the modal closed. They now
+ * live in persisted state and are applied by real consumers.
+ */
+export interface AccessibilityPreferences {
+  textSize: TextSize;
+  highContrast: boolean;
+  /** SpeechSynthesis rate for vocabulary playback. */
+  speechRate: number;
+  numeralSystem: NumeralSystem;
+  includeSpeaking: boolean;
+  includeListening: boolean;
+}
+
+export const DEFAULT_ACCESSIBILITY: AccessibilityPreferences = {
+  textSize: "standard",
+  highContrast: false,
+  speechRate: 0.75,
+  numeralSystem: "western",
+  includeSpeaking: true,
+  includeListening: true,
+};
+
+/** Root font-size multiplier per text-size step. */
+export const TEXT_SIZE_SCALE: Record<TextSize, number> = {
+  standard: 1,
+  large: 1.25,
+  xlarge: 1.5,
+};
+
 export interface LearnerProgressStats {
   xp: number;
   streak: number;
@@ -34,6 +71,7 @@ export interface SessionRecord {
 export interface LearnerStateSchema {
   version: number;
   preferences: LearnerPreferences;
+  accessibility: AccessibilityPreferences;
   learnerProgress: LearnerProgressStats;
   wordMemory: Record<string, WordLearningState>;
   sessionHistory: SessionRecord[];
@@ -48,6 +86,7 @@ export const INITIAL_LEARNER_STATE: LearnerStateSchema = {
     dailyGoalMinutes: 10,
     goal: "everyday",
   },
+  accessibility: DEFAULT_ACCESSIBILITY,
   learnerProgress: {
     xp: 0,
     streak: 0,
@@ -92,6 +131,10 @@ function migrateState(savedData: unknown): LearnerStateSchema {
       ...INITIAL_LEARNER_STATE.preferences,
       ...(saved.preferences as Partial<LearnerPreferences> | undefined),
     },
+    accessibility: {
+      ...DEFAULT_ACCESSIBILITY,
+      ...(saved.accessibility as Partial<AccessibilityPreferences> | undefined),
+    },
     learnerProgress: {
       ...INITIAL_LEARNER_STATE.learnerProgress,
       ...(saved.learnerProgress as Partial<LearnerProgressStats> | undefined),
@@ -126,6 +169,7 @@ interface LearnerContextType {
   addXP: (amount: number) => void;
   recordSessionCompletion: (sessionId: string, attempts: AnswerAttempt[], wordQueue: string[]) => void;
   setPreferences: (level: "A1" | "A2" | "B1", dailyGoalMinutes: number, goal?: LearnerGoal) => void;
+  setAccessibility: (patch: Partial<AccessibilityPreferences>) => void;
   resetToZero: () => void;
 }
 
@@ -256,16 +300,26 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     }));
   }, []);
 
+  const setAccessibility = useCallback((patch: Partial<AccessibilityPreferences>) => {
+    setState((prev) => ({
+      ...prev,
+      accessibility: { ...prev.accessibility, ...patch },
+    }));
+  }, []);
+
   const resetToZero = useCallback(() => {
-    setState(INITIAL_LEARNER_STATE);
+    // Accessibility settings are assistive, not progress. Wiping someone's text
+    // size or contrast preference because they reset their streak would be a
+    // hostile surprise.
+    setState((prev) => ({ ...INITIAL_LEARNER_STATE, accessibility: prev.accessibility }));
   }, []);
 
   // Memoised: an inline object literal here is a new reference on every render,
   // which pushes a re-render through every consumer and defeats the memo() on
   // components downstream of it.
   const value = useMemo<LearnerContextType>(
-    () => ({ state, addXP, recordSessionCompletion, setPreferences, resetToZero }),
-    [state, addXP, recordSessionCompletion, setPreferences, resetToZero]
+    () => ({ state, addXP, recordSessionCompletion, setPreferences, setAccessibility, resetToZero }),
+    [state, addXP, recordSessionCompletion, setPreferences, setAccessibility, resetToZero]
   );
 
   return <LearnerContext.Provider value={value}>{children}</LearnerContext.Provider>;

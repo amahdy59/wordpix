@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useLearner } from "../context/LearnerContext";
 
 export type AudioStatus = "idle" | "loading" | "playing" | "error" | "unsupported";
 
@@ -23,12 +24,11 @@ function pickVoice(synth: SpeechSynthesis, targetLang: string): SpeechSynthesisV
   );
 }
 
-export function useAudio({
-  lang = "en-US",
-  rate = 0.82,
-  pitch = 1,
-  volume = 1,
-}: Options = {}) {
+export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Options = {}) {
+  // The learner's Settings speech rate is the default; an explicit `rate` prop
+  // still wins so individual drills can slow playback further.
+  const { state } = useLearner();
+  const effectiveRate = rate ?? state.accessibility.speechRate;
   // Support is knowable at first render, so it is the initial state rather than
   // a setState fired from inside an effect (which causes a cascading render).
   const [status, setStatus] = useState<AudioStatus>(() =>
@@ -64,7 +64,7 @@ export function useAudio({
       const targetLang = overrideLang ?? lang;
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = targetLang;
-      utterance.rate = rate;
+      utterance.rate = effectiveRate;
       utterance.pitch = pitch;
       utterance.volume = volume;
 
@@ -107,7 +107,7 @@ export function useAudio({
 
       synth.speak(utterance);
     },
-    [lang, rate, pitch, volume]
+    [lang, effectiveRate, pitch, volume]
   );
 
   const stop = useCallback(() => {

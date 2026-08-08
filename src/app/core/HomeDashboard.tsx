@@ -6,6 +6,8 @@ import { BEDROOM_GROUPS } from "../data/lessons";
 import { calculateDaysBetween, getLocalDateString, getWeekActivity } from "../../features/gamification/streak";
 import { useOfflineReadiness } from "../shared/useOfflineReadiness";
 import { useI18n } from "../context/I18nContext";
+import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
+import { countAvailableExercises } from "./skillExerciseCatalog";
 
 const imgAvatar = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
 
@@ -26,6 +28,8 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
   const { progress } = useProgress();
 
   const { t } = useI18n();
+  const { accessibility } = useAccessibility();
+  const num = (v: number) => formatNumber(v, accessibility.numeralSystem);
   const todayStr = getLocalDateString(new Date());
   const greeting = t(getGreetingKey(new Date().getHours()));
 
@@ -54,6 +58,12 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
   );
   const estimatedMinutes = Math.max(1, Math.round((activeGroup.wordIds.length * SECONDS_PER_WORD) / 60));
 
+  // Mirrors the hub's own filtering so the two cannot disagree on the count.
+  const availableExerciseCount = useMemo(
+    () => countAvailableExercises(accessibility.includeSpeaking, accessibility.includeListening),
+    [accessibility.includeSpeaking, accessibility.includeListening]
+  );
+
   const offline = useOfflineReadiness("bedroom");
 
   return (
@@ -74,7 +84,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
               {greeting}, Learner!
             </h1>
             <p className="font-sans font-medium text-muted-foreground text-xs md:text-sm mt-0.5">
-              Level {progress.englishLevel} · Goal: {progress.dailyGoalMinutes} min/day
+              Level {progress.englishLevel} · Goal: {num(progress.dailyGoalMinutes)} min/day
             </p>
           </div>
         </div>
@@ -94,7 +104,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
       </header>
 
       {/* 35 Specialized Skill Exercises Quick Hub Card */}
-      <section aria-label="35 Specialized Skill Drills">
+      <section aria-label="Specialized skill drills">
         <div className="bg-wp-panel text-wp-text-on-panel rounded-3xl p-5 md:p-6 flex flex-col md:flex-row items-center justify-between gap-4 border border-wp-panel-border shadow-wp-md">
           <div className="flex items-center gap-4">
             <div className="size-12 md:size-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center shrink-0 shadow-md">
@@ -102,12 +112,12 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
             </div>
             <div>
               <span className="font-sans font-bold text-xs text-wp-amber bg-wp-amber/10 px-2.5 py-0.5 rounded-full border border-wp-amber/20">
-                35 Specialized Screens
+                {num(availableExerciseCount)} Specialized Screens
               </span>
-              <h2 className="font-sans font-black text-white text-lg md:text-xl mt-1">
+              <h2 className="font-sans font-black text-wp-text-on-panel text-lg md:text-xl mt-1">
                 Multimodal Skill Exercises Suite
               </h2>
-              <p className="font-sans text-xs text-white/70 mt-0.5">
+              <p className="font-sans text-xs text-wp-text-on-panel-muted mt-0.5">
                 Practice Listening, Reading, Speaking, and Writing drills.
               </p>
             </div>
@@ -118,7 +128,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
             onClick={() => dispatch({ type: "GO", to: "skill-hub" })}
             className="w-full md:w-auto bg-primary hover:opacity-90 active:opacity-80 rounded-xl py-3 px-5 font-sans font-bold text-primary-foreground text-sm flex items-center justify-center gap-2 shrink-0 min-h-[44px] shadow-sm transition-all"
           >
-            <span>Open Exercise Hub (35)</span>
+            <span>Open Exercise Hub</span>
             <ArrowRight className="size-4" />
           </button>
         </div>
@@ -136,10 +146,10 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
             <div className="bg-wp-card rounded-3xl border border-primary/30 p-6 flex flex-col gap-4 shadow-wp-xs hover:border-primary/50 transition-all">
               <div className="flex items-center justify-between">
                 <span className="font-sans font-semibold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full">
-                  {activeGroup.name} · ~{estimatedMinutes} min
+                  {activeGroup.name} · ~{num(estimatedMinutes)} min
                 </span>
                 <span className="font-sans text-xs font-bold text-muted-foreground">
-                  {groupWordsSeen} of {activeGroup.wordIds.length} words
+                  {num(groupWordsSeen)} of {num(activeGroup.wordIds.length)} words
                 </span>
               </div>
 
@@ -175,7 +185,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                   <span>Spaced Repetition</span>
                 </div>
                 <span className="font-sans font-bold text-xs text-wp-amber bg-wp-amber/10 px-2.5 py-0.5 rounded-full border border-wp-amber/20">
-                  {dueCount} words ready · ~3 min
+                  {num(dueCount)} words ready · ~3 min
                 </span>
               </div>
               <p className="font-sans text-muted-foreground text-xs leading-relaxed">
@@ -203,15 +213,15 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
             <div className="bg-wp-card rounded-3xl border border-border p-6 flex flex-col gap-4 shadow-wp-xs">
               <div className="grid grid-cols-3 gap-3 text-center">
                 <div className="bg-wp-green-light/40 border border-wp-green/20 rounded-2xl p-3.5 flex flex-col items-center">
-                  <span className="font-sans font-black text-wp-green text-2xl">{strongCount}</span>
+                  <span className="font-sans font-black text-wp-green text-2xl">{num(strongCount)}</span>
                   <span className="font-sans font-semibold text-muted-foreground text-xs mt-1">{t("dashboard.strong")}</span>
                 </div>
                 <div className="bg-wp-amber/10 border border-wp-amber/20 rounded-2xl p-3.5 flex flex-col items-center">
-                  <span className="font-sans font-black text-wp-amber text-2xl">{learningCount}</span>
+                  <span className="font-sans font-black text-wp-amber text-2xl">{num(learningCount)}</span>
                   <span className="font-sans font-semibold text-muted-foreground text-xs mt-1">{t("dashboard.learning")}</span>
                 </div>
                 <div className="bg-wp-rose/10 border border-wp-rose/20 rounded-2xl p-3.5 flex flex-col items-center">
-                  <span className="font-sans font-black text-wp-rose text-2xl">{dueCount}</span>
+                  <span className="font-sans font-black text-wp-rose text-2xl">{num(dueCount)}</span>
                   <span className="font-sans font-semibold text-muted-foreground text-xs mt-1">{t("dashboard.due")}</span>
                 </div>
               </div>
@@ -229,7 +239,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                   <Flame className="size-4 text-wp-amber" />
                   <span>Streak Activity</span>
                 </div>
-                <span className="font-sans font-bold text-xs text-wp-amber">{progress.streak} Day Streak</span>
+                <span className="font-sans font-bold text-xs text-wp-amber">{num(progress.streak)} Day Streak</span>
               </div>
 
               <ul className="grid grid-cols-7 gap-2 text-center list-none">

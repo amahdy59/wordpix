@@ -147,6 +147,58 @@
   --wp-text-on-brand:   #2E1065;   /* 8.28:1 */
 }
 
+/* ─── High contrast mode ─────────────────────────────────────────────────────
+   Toggled from Settings. The default palette already clears AAA 7:1 for text;
+   this pushes the remaining surfaces to maximum separation — pure black/white
+   text, solid borders, and no translucent chrome — for learners who need more
+   than the baseline. Applied via a class on <html>, so it composes with both
+   light and dark mode.
+   ─────────────────────────────────────────────────────────────────────────── */
+.high-contrast {
+  --wp-text:            #000000;
+  --wp-text-secondary:  #1F2937;   /* 15.3:1 on white */
+  --wp-border:          #000000;
+  --wp-card:            #FFFFFF;
+  --wp-surface:         #FFFFFF;
+  --wp-brand:           #3B0764;   /* violet-950 — 15.1:1 on white */
+  --wp-brand-light:     #FFFFFF;
+  --wp-blue:            #0B2A80;
+  --wp-green:           #04372A;
+  --wp-rose:            #6B0620;
+  --wp-teal:            #04322F;
+}
+
+.dark.high-contrast {
+  --wp-text:            #FFFFFF;
+  --wp-text-secondary:  #F1F5F9;
+  --wp-border:          #FFFFFF;
+  --wp-card:            #000000;
+  --wp-surface:         #000000;
+  --wp-panel:           #000000;
+  --wp-panel-raised:    #000000;
+  --wp-panel-border:    #FFFFFF;
+  --wp-brand:           #DDD6FE;   /* violet-200 */
+  --wp-text-on-brand:   #000000;
+  --wp-green:           #A7F3D0;
+  --wp-text-on-green:   #000000;
+  --wp-rose:            #FECDD3;
+  --wp-text-on-rose:    #000000;
+  --wp-teal:            #99F6E4;
+  --wp-amber:           #FDE68A;
+  --wp-text-on-amber:   #000000;
+}
+
+/* Borders must be visible, not hairline-faint, when contrast is boosted. */
+.high-contrast * {
+  border-color: var(--wp-border);
+}
+
+.high-contrast .backdrop-blur-md,
+.high-contrast .backdrop-blur-xl,
+.high-contrast .backdrop-blur-sm {
+  backdrop-filter: none;
+}
+
 @theme inline {
   --color-background:             var(--background);
   --color-foreground:             var(--foreground);

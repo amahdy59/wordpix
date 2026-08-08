@@ -9,6 +9,7 @@ import { useHashRouter, hashToScreen } from "./router/useHashRouter";
 
 import { registerServiceWorker } from "../pwa";
 import { startSystemThemeSync } from "./shared/themeStore";
+import { useApplyAccessibilityPreferences } from "./shared/useAccessibilityPreferences";
 
 // Synchronous core onboarding screens
 import { SplashWelcome } from "./onboarding/SplashWelcome";
@@ -271,6 +272,9 @@ function AppInner() {
 
   // Keeps "system" theme honest when the OS switches while the app is open.
   useEffect(() => startSystemThemeSync(), []);
+
+  // Applies text scaling and high-contrast mode to <html>.
+  useApplyAccessibilityPreferences();
 
   useEffect(() => {
     try {
