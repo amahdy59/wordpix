@@ -1,40 +1,55 @@
 import { describe, it, expect } from "vitest";
-import { calculateSM2, createInitialSM2Item } from "../features/gamification/sm2";
+import { calculateSM2State, createInitialWordState } from "../features/gamification/sm2";
 import { calculateXP, calculateXPBreakdown, XP_RULES } from "../features/gamification/xp";
 import { updateStreak, getWeekActivity, getLocalDateString } from "../features/gamification/streak";
 
+/**
+ * These previously ran against SM2Item / createInitialSM2Item / calculateSM2 —
+ * a legacy-shape adapter whose only caller was this test, exactly the pattern
+ * calculateXP had. The adapter is gone; these now exercise the WordLearningState
+ * API that LearnerContext actually uses.
+ */
 describe("SM-2 Spaced Repetition Engine", () => {
-  it("creates initial SM-2 item", () => {
-    const item = createInitialSM2Item("pillow");
+  it("creates an initial word state", () => {
+    const item = createInitialWordState("pillow");
     expect(item.wordId).toBe("pillow");
-    expect(item.repetition).toBe(0);
-    expect(item.interval).toBe(0);
-    expect(item.easinessFactor).toBe(2.5);
+    expect(item.currentStreak).toBe(0);
+    expect(item.intervalDays).toBe(0);
+    expect(item.easeFactor).toBe(2.5);
+    expect(item.mastery).toBe("new");
   });
 
   it("increases interval on successful recall (quality >= 3)", () => {
-    const initial = createInitialSM2Item("bed");
-    const step1 = calculateSM2(initial, 4);
-    expect(step1.repetition).toBe(1);
-    expect(step1.interval).toBe(1);
+    const step1 = calculateSM2State(createInitialWordState("bed"), 4);
+    expect(step1.currentStreak).toBe(1);
+    expect(step1.intervalDays).toBe(1);
 
-    const step2 = calculateSM2(step1, 5);
-    expect(step2.repetition).toBe(2);
-    expect(step2.interval).toBe(6);
+    const step2 = calculateSM2State(step1, 5);
+    expect(step2.currentStreak).toBe(2);
+    expect(step2.intervalDays).toBe(6);
   });
 
-  it("resets repetition and interval on failed recall (quality < 3)", () => {
-    const item = {
-      wordId: "desk",
-      repetition: 3,
-      interval: 15,
-      easinessFactor: 2.5,
-      lastReviewed: new Date().toISOString(),
-      nextReview: new Date().toISOString(),
-    };
-    const failed = calculateSM2(item, 1);
-    expect(failed.repetition).toBe(0);
-    expect(failed.interval).toBe(1);
+  it("resets streak and interval on failed recall (quality < 3)", () => {
+    const strong = calculateSM2State(calculateSM2State(createInitialWordState("desk"), 5), 5);
+    const failed = calculateSM2State(strong, 1);
+
+    expect(failed.currentStreak).toBe(0);
+    expect(failed.intervalDays).toBe(1);
+    expect(failed.lapses).toBe(1);
+  });
+
+  it("never lets the ease factor fall below the SM-2 floor of 1.3", () => {
+    let state = createInitialWordState("wardrobe");
+    for (let i = 0; i < 12; i += 1) state = calculateSM2State(state, 0);
+    expect(state.easeFactor).toBeGreaterThanOrEqual(1.3);
+  });
+
+  it("schedules the next review interval days out", () => {
+    const now = new Date(2026, 0, 10);
+    const state = calculateSM2State(createInitialWordState("lamp"), 4, now);
+    const next = new Date(state.nextReviewAt as string);
+    const days = Math.round((next.getTime() - now.getTime()) / 86_400_000);
+    expect(days).toBe(state.intervalDays);
   });
 });
 

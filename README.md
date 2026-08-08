@@ -6,14 +6,20 @@ An interactive, visual-first English vocabulary learning application tailored fo
 
 ## 🌟 Core Features
 
-- 🏞️ **Interactive Scene Discovery**: Tap hotspots on high-res room scenes to explore vocabulary with native SpeechSynthesis audio.
-- 🎮 **Gamified Mini-Games**: 5 distinct exercise modes including Listen & Repeat, Context Fill, Sentence Builder, Recall Match, and Quick Quiz.
-- ♿ **WCAG 2.2 AAA Accessibility**:
-  - Minimum 44x44px touch targets.
-  - Accessible contrast ratios (7:1+ for text elements).
-  - WCAG 2.2.3 timer controls (users can pause or disable exercise countdowns).
-  - ARIA live region announcements for SpeechSynthesis.
-- 🌐 **Bilingual & RTL Design**: Native Arabic support with `Noto Sans Arabic` font styling and explicit direction controls.
+- 🏞️ **Interactive Scene Discovery**: Tap hotspots on room scenes to explore vocabulary with native SpeechSynthesis audio.
+- 🎮 **Gamified Lesson Loop**: A 6-step flow — Scene Discovery, Listen & Repeat, Recall Match, Context Fill, Sentence Builder, Quick Quiz — with SM-2 spaced repetition, streaks, and an itemised XP economy.
+- ♿ **WCAG 2.2 AAA Accessibility**, enforced by tests rather than asserted:
+  - Minimum 44×44px touch targets — verified per component.
+  - 7:1 contrast on every text and accent pairing, in light and dark, computed from the theme tokens.
+  - Full keyboard operation, focus-trapped dialogs, and `prefers-reduced-motion` support.
+  - Adjustable text scaling (100/125/150%), a high-contrast mode, speech-rate control, Arabic-Indic numerals, and per-modality drill toggles.
+  - ARIA live region announcements on navigation and SpeechSynthesis.
+- 🌐 **Bilingual & RTL**: Interface language switcher (English / العربية) with `dir` mirroring throughout via CSS logical properties. Lesson content is currently English-only.
+
+> **Scope note:** the 35 screens in the Skill Exercise Hub are largely
+> presentational previews. WordPix has no speech recognition and does not grade
+> free writing, so speaking and writing drills are self-assessed and report no
+> score.
 
 ---
 
@@ -33,7 +39,7 @@ WordPix/
 │   │   ├── onboarding/        # User onboarding flow
 │   │   ├── review/            # Daily mastery review
 │   │   ├── shared/            # Reusable buttons, AppShell, ErrorBoundary, hooks
-│   │   ├── App.tsx            # Navigation state machine & code-split routes
+│   │   ├── App.tsx            # Navigation state machine & route rendering
 │   │   ├── types.ts           # Shared TypeScript interfaces
 │   │   └── constants.ts       # App constants
 │   ├── styles/                # Tailwind CSS v4 theme tokens & typography utilities

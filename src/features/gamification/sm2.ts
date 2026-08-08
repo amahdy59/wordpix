@@ -15,16 +15,6 @@ export interface WordLearningState {
   mastery: MasteryCategory;
 }
 
-// Legacy type alias for backwards compatibility
-export interface SM2Item {
-  wordId: string;
-  repetition: number;
-  interval: number;
-  easinessFactor: number;
-  lastReviewed: string;
-  nextReview: string;
-}
-
 export function getMasteryCategory(
   correctRecalls: number,
   incorrectRecalls: number,
@@ -53,35 +43,6 @@ export function createInitialWordState(wordId: string): WordLearningState {
     intervalDays: 0,
     easeFactor: 2.5,
     mastery: "new",
-  };
-}
-
-export function createInitialSM2Item(wordId: string): SM2Item {
-  const now = new Date().toISOString();
-  return {
-    wordId,
-    repetition: 0,
-    interval: 0,
-    easinessFactor: 2.5,
-    lastReviewed: now,
-    nextReview: now,
-  };
-}
-
-export function calculateSM2(item: SM2Item, quality: number): SM2Item {
-  const state = createInitialWordState(item.wordId);
-  state.intervalDays = item.interval;
-  state.easeFactor = item.easinessFactor;
-  state.currentStreak = item.repetition;
-
-  const res = calculateSM2State(state, quality);
-  return {
-    wordId: item.wordId,
-    repetition: res.currentStreak,
-    interval: res.intervalDays,
-    easinessFactor: res.easeFactor,
-    lastReviewed: res.lastReviewedAt || new Date().toISOString(),
-    nextReview: res.nextReviewAt || new Date().toISOString(),
   };
 }
 
