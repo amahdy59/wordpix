@@ -63,10 +63,33 @@ describe("LessonHeader call sites", () => {
     const source = readFileSync(resolve(__dirname, "../exercises", file), "utf8");
     const pairs = [...source.matchAll(/current=\{(\d+)\}\s+total=\{(\d+)\}/g)];
 
-    expect(pairs.length).toBeGreaterThan(0);
+    // Most screens moved to the data-driven runner, so a suite may legitimately
+    // have no literal call sites left. Any that remain must still be in range.
     pairs.forEach(([, current, total]) => {
       expect(Number(current)).toBeLessThanOrEqual(Number(total));
       expect(Number(current)).toBeGreaterThan(0);
+    });
+  });
+});
+
+describe("Exercise definitions declare a valid position", () => {
+  it("keeps every step within its own total", async () => {
+    const { EXERCISE_DEFINITIONS } = await import("../exercises/content");
+    const entries = Object.values(EXERCISE_DEFINITIONS);
+
+    expect(entries.length).toBeGreaterThan(0);
+    entries.forEach((definition) => {
+      expect(definition!.step, `${definition!.id} step is below 1`).toBeGreaterThan(0);
+      expect(definition!.step, `${definition!.id} step exceeds its total`).toBeLessThanOrEqual(
+        definition!.totalSteps
+      );
+    });
+  });
+
+  it("gives every definition at least one task", async () => {
+    const { EXERCISE_DEFINITIONS } = await import("../exercises/content");
+    Object.values(EXERCISE_DEFINITIONS).forEach((definition) => {
+      expect(definition!.tasks.length, `${definition!.id} has no tasks`).toBeGreaterThan(0);
     });
   });
 });
