@@ -13,6 +13,7 @@ import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { useProgress } from "../data/progress";
+import { usePrefetchImage } from "../shared/usePrefetchImage";
 
 interface Props {
   step: number;
@@ -33,6 +34,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
 
   const queue = useDrillQueue(words);
   const currentTargetWord = queue.current ?? words[0];
+  usePrefetchImage(queue.next);
   const { speak, stop, isPlaying } = useAudio({ lang: "en-US", rate: 0.85 });
   const { progress } = useProgress();
   const { accessibility } = useAccessibility();

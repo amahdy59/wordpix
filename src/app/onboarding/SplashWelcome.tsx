@@ -1,6 +1,7 @@
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
+import { useProgress } from "../data/progress";
 import { Sparkles, ArrowRight, BookOpen, Layers, CheckCircle2, Globe } from "lucide-react";
 
 const imgHero = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&q=85";
@@ -10,7 +11,17 @@ interface Props {
 }
 
 export function SplashWelcome({ dispatch }: Props) {
+  const { setPreferences } = useProgress();
   const advance = () => dispatch({ type: "ONBOARD_NEXT" });
+
+  // Bypasses the level/goal picker for a learner who just wants in. Sets the
+  // same defaults LanguageSelect would submit unchanged (A1, 10 min/day,
+  // everyday English), so skipping leaves preferences in the same state as
+  // clicking through without changing anything — just faster.
+  const skip = () => {
+    setPreferences("A1", 10, "everyday");
+    dispatch({ type: "GO", to: "home" });
+  };
 
   return (
     <div className="bg-background flex flex-col md:flex-row min-h-svh md:min-h-[560px] relative overflow-hidden">
@@ -129,6 +140,13 @@ export function SplashWelcome({ dispatch }: Props) {
           >
             <span>Get Started</span>
             <ArrowRight className="size-5" />
+          </button>
+          <button
+            type="button"
+            onClick={skip}
+            className="w-full mt-2 py-2.5 font-sans font-semibold text-muted-foreground hover:text-foreground text-sm min-h-[44px] rounded-lg transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            Skip setup — use default settings
           </button>
         </footer>
 

@@ -569,6 +569,9 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
 
 export const BEDROOM_HOTSPOT_WORDS = BEDROOM_VOCABULARY.filter((v) => v.hotspot);
 
+/** O(1) id lookup instead of scanning the vocabulary array per word, per render. */
+const VOCAB_BY_ID = new Map(BEDROOM_VOCABULARY.map((item) => [item.id, item]));
+
 /**
  * The group id used by a spaced-repetition session, whose words are chosen by
  * the review schedule rather than by a fixed thematic group.
@@ -604,7 +607,7 @@ export function resolveGroup(groupId: string, wordIds: string[] = []): WordGroup
 /** Looks up vocabulary items by id, preserving the order of `wordIds`. */
 export function getWords(wordIds: string[]): VocabItem[] {
   return wordIds
-    .map((id) => BEDROOM_VOCABULARY.find((item) => item.id === id))
+    .map((id) => VOCAB_BY_ID.get(id))
     .filter((item): item is VocabItem => Boolean(item));
 }
 

@@ -1,4 +1,4 @@
-import { useEffect, useReducer, Suspense, useCallback } from "react";
+import { useEffect, useReducer, Suspense, useCallback, lazy } from "react";
 import type { Screen, Action, OnboardStep, TabId } from "./types";
 import type { RouteIntent } from "./router/useHashRouter";
 import { ErrorBoundary } from "./shared/ErrorBoundary";
@@ -24,16 +24,34 @@ import { ProfileStats } from "./core/ProfileStats";
 import { AppShell } from "./shared/AppShell";
 import { SkillExerciseHub } from "./core/SkillExerciseHub";
 
-// Synchronous core lesson & exercise components for instant zero-blank rendering
-import { LessonWorldEntry } from "./lesson/LessonWorldEntry";
-import { LessonSceneDiscovery } from "./lesson/LessonSceneDiscovery";
-import { LessonCompleteResults } from "./lesson/LessonCompleteResults";
+// Lesson & exercise screens are only needed once a lesson actually starts, not
+// on first paint, so — like the 35-screen skill-exercise registry — they are
+// code-split behind React.lazy instead of shipping in the initial bundle.
+const LessonWorldEntry = lazy(() =>
+  import("./lesson/LessonWorldEntry").then((m) => ({ default: m.LessonWorldEntry }))
+);
+const LessonSceneDiscovery = lazy(() =>
+  import("./lesson/LessonSceneDiscovery").then((m) => ({ default: m.LessonSceneDiscovery }))
+);
+const LessonCompleteResults = lazy(() =>
+  import("./lesson/LessonCompleteResults").then((m) => ({ default: m.LessonCompleteResults }))
+);
 
-import { ExerciseListenRepeat } from "./exercises/ExerciseListenRepeat";
-import { ExerciseRecallMatch } from "./exercises/ExerciseRecallMatch";
-import { ExerciseContextFill } from "./exercises/ExerciseContextFill";
-import { ExerciseSentenceBuilder } from "./exercises/ExerciseSentenceBuilder";
-import { ExerciseQuickQuiz } from "./exercises/ExerciseQuickQuiz";
+const ExerciseListenRepeat = lazy(() =>
+  import("./exercises/ExerciseListenRepeat").then((m) => ({ default: m.ExerciseListenRepeat }))
+);
+const ExerciseRecallMatch = lazy(() =>
+  import("./exercises/ExerciseRecallMatch").then((m) => ({ default: m.ExerciseRecallMatch }))
+);
+const ExerciseContextFill = lazy(() =>
+  import("./exercises/ExerciseContextFill").then((m) => ({ default: m.ExerciseContextFill }))
+);
+const ExerciseSentenceBuilder = lazy(() =>
+  import("./exercises/ExerciseSentenceBuilder").then((m) => ({ default: m.ExerciseSentenceBuilder }))
+);
+const ExerciseQuickQuiz = lazy(() =>
+  import("./exercises/ExerciseQuickQuiz").then((m) => ({ default: m.ExerciseQuickQuiz }))
+);
 
 import { SKILL_EXERCISES } from "./exercises/registry";
 

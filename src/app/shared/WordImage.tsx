@@ -1,4 +1,4 @@
-import { memo, useEffect, useMemo, useState } from "react";
+import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { VocabItem } from "../data/lessons";
 
 export type ImageAltMode = "learning" | "assessment" | "decorative";
@@ -29,14 +29,30 @@ const TOPIC_COLORS: Record<string, [string, string]> = {
   electronics: ["#e2e8f0", "#334155"],
 };
 
+const PRESET_WIDTH: Record<ImageSizePreset, number> = { thumb: 160, hero: 800, card: 400 };
+
+function withWidth(url: string, width: number): string {
+  return url.includes("w=") ? url.replace(/w=\d+/, `w=${width}`) : `${url}&w=${width}`;
+}
+
 function getResponsiveImageUrl(url: string, preset: ImageSizePreset = "card"): string {
   if (!url || !url.includes("unsplash.com")) return url;
-  const targetWidth = preset === "thumb" ? 160 : preset === "hero" ? 800 : 400;
-  // Replace existing w= parameter or append
-  if (url.includes("w=")) {
-    return url.replace(/w=\d+/, `w=${targetWidth}`);
-  }
-  return `${url}&w=${targetWidth}`;
+  return withWidth(url, PRESET_WIDTH[preset]);
+}
+
+/** The URL a `WordImage` would request for this word, for a prefetch warm-up. */
+export function getWordImageSrc(word: VocabItem, preset: ImageSizePreset = "card"): string {
+  return getResponsiveImageUrl(word.img, preset);
+}
+
+/**
+ * A 2x variant alongside the base width, so retina displays get real pixel
+ * density instead of a 1x image stretched over more device pixels.
+ */
+function getResponsiveSrcSet(url: string, preset: ImageSizePreset = "card"): string | undefined {
+  if (!url || !url.includes("unsplash.com")) return undefined;
+  const base = PRESET_WIDTH[preset];
+  return `${withWidth(url, base)} 1x, ${withWidth(url, base * 2)} 2x`;
 }
 
 function escapeXml(value: string) {
@@ -122,10 +138,30 @@ export const WordImage = memo(function WordImage({
   checked = false,
 }: Props) {
   const [failed, setFailed] = useState(false);
+  // One retry with a cache-busting param before giving up: a transient network
+  // blip on a third-party CDN shouldn't permanently swap a lesson's picture
+  // for a generic placeholder.
+  const [retryToken, setRetryToken] = useState(0);
   const fallback = useMemo(() => getWordFallbackDataUrl(word, altMode), [word, altMode]);
   const optimizedUrl = useMemo(() => getResponsiveImageUrl(word.img, sizePreset), [word.img, sizePreset]);
+  const srcSet = useMemo(() => getResponsiveSrcSet(word.img, sizePreset), [word.img, sizePreset]);
 
-  useEffect(() => setFailed(false), [word.id, word.img]);
+  useEffect(() => {
+    setFailed(false);
+    setRetryToken(0);
+  }, [word.id, word.img]);
+
+  const handleError = useCallback(() => {
+    setRetryToken((current) => {
+      if (current >= 1) {
+        setFailed(true);
+        return current;
+      }
+      return current + 1;
+    });
+  }, []);
+
+  const withRetryParam = (url: string) => (retryToken > 0 ? `${url}${url.includes("?") ? "&" : "?"}retry=${retryToken}` : url);
 
   const altText = getImageAltText(word, altMode, optionIndex, checked);
 
@@ -136,18 +172,21 @@ export const WordImage = memo(function WordImage({
 
   return (
     // onError is an image lifecycle event, not a user interaction; it drives
-    // the SVG fallback when a remote photo fails to load.
+    // one retry and then the SVG fallback when a remote photo keeps failing.
     // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
     <img
       {...priorityAttr}
-      src={failed ? fallback : optimizedUrl}
+      src={failed ? fallback : withRetryParam(optimizedUrl)}
+      // Suppressed while retrying: srcSet candidates would otherwise win over
+      // the cache-busted src and keep requesting the same failing URL.
+      srcSet={failed || retryToken > 0 ? undefined : srcSet}
       alt={altText}
       className={className}
       loading={loading}
       decoding={decoding}
       width={width}
       height={height}
-      onError={() => setFailed(true)}
+      onError={handleError}
     />
   );
 });

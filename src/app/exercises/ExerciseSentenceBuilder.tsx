@@ -4,7 +4,7 @@ import type { VocabItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getRichSentence } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
-import { PenTool, Undo2 } from "lucide-react";
+import { PenTool, Undo2, CheckCircle2, XCircle } from "lucide-react";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
 import { AnswerFeedback } from "../shared/AnswerFeedback";
@@ -12,6 +12,7 @@ import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { useProgress } from "../data/progress";
+import { usePrefetchImage } from "../shared/usePrefetchImage";
 
 interface Props {
   step: number;
@@ -34,6 +35,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
 
   const queue = useDrillQueue(words);
   const currentTargetWord = queue.current ?? words[0];
+  usePrefetchImage(queue.next);
   const richSentence = useMemo(() => getRichSentence(currentTargetWord), [currentTargetWord]);
 
   const answer = useMemo(() => richSentence.words, [richSentence]);
@@ -94,6 +96,23 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
     [feedback, playClick]
   );
 
+  // Tile-based UIs train the same muscle memory as Duolingo's, where Backspace
+  // undoes the last placement without reaching for the mouse.
+  useEffect(() => {
+    if (feedback !== null || placed.length === 0) return undefined;
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== "Backspace") return;
+      const target = event.target as HTMLElement | null;
+      if (target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable)) return;
+      event.preventDefault();
+      handleRemoveTile(placed.length - 1);
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [feedback, placed.length, handleRemoveTile]);
+
   const handleContinue = useCallback(() => {
     autoAdvance.cancel();
     advanceNext();
@@ -123,7 +142,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
         {/* Question Counter & Skill Badge */}
         <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
           <span>{queue.isRetry ? "Once more" : "Build the sentence"}</span>
-          <span className="flex items-center gap-1 text-primary bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full">
+          <span className="flex items-center gap-1 text-muted-foreground bg-muted border border-border px-2.5 py-0.5 rounded-full">
             <PenTool className="size-3" aria-hidden />
             <span>Spelling &amp; Sentence Skill</span>
           </span>
@@ -132,27 +151,41 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
         {/* Fluid Hero Target Image Display */}
         <div className="h-40 sm:h-48 md:h-52 max-h-[28vh] w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-md bg-muted shrink-0">
           <WordImage word={currentTargetWord} width="800" height="500" className="size-full object-cover" />
+          {/* Ties the picture to the word it illustrates instead of leaving it
+              a disconnected decorative photo. */}
+          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-3 pt-6 pb-2.5 pointer-events-none">
+            <span className="font-sans font-bold text-white text-xs sm:text-sm tracking-wide drop-shadow-sm">
+              {currentTargetWord.label}
+            </span>
+          </div>
         </div>
 
         {/* Sentence Assembly Canvas */}
         <div className="bg-wp-card rounded-2xl border-2 border-primary/30 p-3.5 sm:p-4 w-full flex flex-col gap-1.5 shadow-wp-xs">
           <div className="flex items-center justify-between">
-            <span className="font-sans font-bold text-[10px] text-primary uppercase tracking-wider">
+            <span className="font-sans font-bold text-[10px] text-primary uppercase tracking-wider flex items-center gap-1.5">
               Sentence Assembly Canvas
+              {/* Correctness is never color-only: an icon carries the same
+                  signal for colorblind learners. */}
+              {feedback === "correct" && <CheckCircle2 className="size-3.5 text-wp-green" aria-hidden />}
+              {feedback === "incorrect" && <XCircle className="size-3.5 text-wp-rose" aria-hidden />}
             </span>
             {placed.length > 0 && feedback === null && (
               <button
                 type="button"
                 onClick={() => handleRemoveTile(placed.length - 1)}
-                className="flex items-center gap-1 text-[11px] font-sans font-bold text-muted-foreground hover:text-foreground min-h-[44px] px-2 rounded-lg focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+                className="flex items-center gap-1.5 text-[11px] font-sans font-bold text-muted-foreground hover:text-foreground hover:bg-secondary/60 bg-wp-card border border-border min-h-[44px] px-2.5 rounded-lg transition-colors focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
               >
                 <Undo2 className="size-3.5" aria-hidden />
                 <span>Undo</span>
+                <kbd className="hidden sm:inline font-sans font-semibold text-muted-foreground/70 border border-border rounded px-1 ms-0.5">
+                  ⌫
+                </kbd>
               </button>
             )}
           </div>
           <div
-            className={`flex flex-wrap gap-2 items-center min-h-[56px] p-2.5 rounded-xl border border-dashed transition-colors ${
+            className={`flex flex-wrap gap-2 items-center min-h-[76px] sm:min-h-[84px] p-2.5 rounded-xl border border-dashed transition-colors ${
               feedback === "correct"
                 ? "bg-wp-green-light/30 border-wp-green"
                 : feedback === "incorrect"
@@ -174,10 +207,24 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
             ))}
             {placed.length === 0 && (
               <span className="text-muted-foreground text-xs sm:text-sm font-sans font-medium px-2">
-                Tap word tiles below in the correct order...
+                Your sentence will appear here
               </span>
             )}
           </div>
+          {/* Off-screen progress announcement: tile buttons appearing inside a
+              live region get read out as new interactive controls, which is
+              noisy, so the built sentence is narrated separately instead. */}
+          <span aria-live="polite" aria-atomic="true" className="sr-only">
+            {feedback === "correct"
+              ? `Correct. ${answer.join(" ")}`
+              : feedback === "incorrect"
+                ? `Incorrect. Correct order: ${answer.join(" ")}`
+                : placed.length === 0
+                  ? "No words placed yet."
+                  : `${placed.join(" ")}. ${answer.length - placed.length} word${
+                      answer.length - placed.length === 1 ? "" : "s"
+                    } remaining.`}
+          </span>
 
           {/* On a wrong answer the correct order is spelled out, rather than
               wiping the canvas and asking the learner to guess again. */}

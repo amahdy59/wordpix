@@ -57,6 +57,9 @@ function reducer(state: QueueState, action: QueueAction): QueueState {
 export interface DrillQueue {
   /** The word being asked, or null once the drill is finished. */
   current: VocabItem | null;
+  /** The word after this one, or null on the last question — lets a caller
+   *  warm its image in the background instead of loading it cold. */
+  next: VocabItem | null;
   /** 1-based position of the current question. */
   position: number;
   /** Questions asked so far, including re-asks already scheduled. */
@@ -84,9 +87,14 @@ export function useDrillQueue(words: VocabItem[]): DrillQueue {
   );
 
   const currentId = state.pending[0];
+  const nextId = state.pending[1];
   const current = useMemo(
     () => words.find((w) => w.id === currentId) ?? null,
     [words, currentId]
+  );
+  const next = useMemo(
+    () => (nextId ? words.find((w) => w.id === nextId) ?? null : null),
+    [words, nextId]
   );
 
   const submit = useCallback((correct: boolean) => {
@@ -95,6 +103,7 @@ export function useDrillQueue(words: VocabItem[]): DrillQueue {
 
   return {
     current,
+    next,
     position: state.answered + 1,
     total: state.answered + state.pending.length,
     masteredCount: state.correctIds.length,

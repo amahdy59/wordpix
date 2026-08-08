@@ -12,6 +12,7 @@ import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { useProgress } from "../data/progress";
+import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { Keyboard } from "lucide-react";
 
 interface Props {
@@ -36,6 +37,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
   const queue = useDrillQueue(words);
   const currentTargetWord = queue.current ?? words[0];
   const richSentence = useMemo(() => getRichSentence(currentTargetWord), [currentTargetWord]);
+  usePrefetchImage(queue.next);
 
   const options = useMemo(() => {
     const otherWords = words.filter((w) => w.id !== currentTargetWord.id);

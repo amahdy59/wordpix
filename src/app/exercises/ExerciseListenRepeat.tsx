@@ -8,6 +8,7 @@ import { useAudio } from "../shared/useAudio";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { Volume2, Mic, Sparkles, ChevronRight, ChevronLeft, CheckCircle2, Pause, Play } from "lucide-react";
 import { WordImage } from "../shared/WordImage";
+import { usePrefetchImage } from "../shared/usePrefetchImage";
 
 interface Props {
   step: number;
@@ -44,6 +45,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
   const currentWord = words[activeWordIndex] || words[0];
   const isLastWord = activeWordIndex === words.length - 1;
+  usePrefetchImage(isLastWord ? null : words[activeWordIndex + 1]);
 
   const playWord = useCallback(() => speak(currentWord.label), [speak, currentWord.label]);
 

@@ -7,6 +7,11 @@
     <meta name="description" content="Interactive English vocabulary learning app through picture exploration, audio pronunciation, and interactive exercises for adult learners." />
     <meta name="robots" content="index, follow" />
 
+    <!-- Most vocabulary photos are hotlinked from Unsplash's CDN; the first
+         hero image on every screen otherwise pays a cold DNS+TLS handshake. -->
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+
     <link rel="manifest" href="./manifest.json" />
     <link rel="icon" type="image/svg+xml" href="./icon.svg" />
     <link rel="apple-touch-icon" href="./icon.svg" />
