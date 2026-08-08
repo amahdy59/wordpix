@@ -1,6 +1,6 @@
 import { memo, useState } from "react";
 import type { Action } from "../types";
-import { BEDROOM_GROUPS, type VocabItem } from "../data/lessons";
+import { resolveGroup, type VocabItem } from "../data/lessons";
 import { LessonHeader } from "./LessonHeader";
 import { HomeIndicator } from "./HomeIndicator";
 import { WordImage } from "./WordImage";
@@ -22,7 +22,7 @@ interface Props {
   mode?: ExerciseMode;
   /** Optional callback when user clicks a word chip in the group bar */
   onSelectWord?: (word: VocabItem) => void;
-  groupId?: string;
+  groupId: string;
   dispatch: React.Dispatch<Action>;
   leftPanelExtra?: React.ReactNode;
   children: React.ReactNode;
@@ -49,7 +49,7 @@ export const ExerciseShell = memo(function ExerciseShell({
   activeWord,
   mode = "teach",
   onSelectWord,
-  groupId = "essential-furniture",
+  groupId,
   dispatch,
   leftPanelExtra,
   children,
@@ -57,7 +57,10 @@ export const ExerciseShell = memo(function ExerciseShell({
 }: Props) {
   const [showExitModal, setShowExitModal] = useState(false);
 
-  const group = BEDROOM_GROUPS.find((g) => g.id === groupId) ?? BEDROOM_GROUPS[0];
+  // `groupId` used to default to "essential-furniture" and fall back to the
+  // first group on an unknown id, so a review session — or any lesson whose id
+  // went missing — was confidently labelled with the wrong group's name.
+  const group = resolveGroup(groupId, words.map((w) => w.id));
   const currentWord = activeWord || words[0];
   const nextStepLabel = step < LAST_STEP_INDEX ? STEP_LABELS[step + 1] : "Session Completion";
 

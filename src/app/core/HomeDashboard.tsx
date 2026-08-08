@@ -1,13 +1,12 @@
 import { memo, useMemo } from "react";
-import { Flame, ArrowRight, RotateCcw, WifiOff, Layers } from "lucide-react";
+import { Flame, ArrowRight, RotateCcw, WifiOff } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { BEDROOM_GROUPS } from "../data/lessons";
+import { nextGroupToStudy } from "../data/lessons";
 import { calculateDaysBetween, getLocalDateString, getWeekActivity } from "../../features/gamification/streak";
 import { useOfflineReadiness } from "../shared/useOfflineReadiness";
 import { useI18n } from "../context/I18nContext";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
-import { countAvailableExercises } from "./skillExerciseCatalog";
 
 const imgAvatar = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
 
@@ -50,19 +49,18 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
     [progress.sessionHistory]
   );
 
-  // The Today card resumes the first group; report its real coverage, not a constant.
-  const activeGroup = BEDROOM_GROUPS[0];
+  // The Today card used to hardcode BEDROOM_GROUPS[0], so "Continue Bedroom"
+  // restarted Essential Furniture forever no matter how much had been learned.
+  // It now resumes the first group still holding a word that is not yet strong.
+  const activeGroup = useMemo(
+    () => nextGroupToStudy((wordId) => progress.wordMemory[wordId]?.mastery === "strong"),
+    [progress.wordMemory]
+  );
   const groupWordsSeen = useMemo(
     () => activeGroup.wordIds.filter((id) => progress.wordMemory[id]).length,
     [activeGroup.wordIds, progress.wordMemory]
   );
   const estimatedMinutes = Math.max(1, Math.round((activeGroup.wordIds.length * SECONDS_PER_WORD) / 60));
-
-  // Mirrors the hub's own filtering so the two cannot disagree on the count.
-  const availableExerciseCount = useMemo(
-    () => countAvailableExercises(accessibility.includeSpeaking, accessibility.includeListening),
-    [accessibility.includeSpeaking, accessibility.includeListening]
-  );
 
   const offline = useOfflineReadiness("bedroom");
 
@@ -103,36 +101,12 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         )}
       </header>
 
-      {/* 35 Specialized Skill Exercises Quick Hub Card */}
-      <section aria-label="Specialized skill drills">
-        <div className="bg-wp-panel text-wp-text-on-panel rounded-3xl p-5 md:p-6 flex flex-col md:flex-row items-center justify-between gap-4 border border-wp-panel-border shadow-wp-md">
-          <div className="flex items-center gap-4">
-            <div className="size-12 md:size-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center shrink-0 shadow-md">
-              <Layers className="size-6 md:size-7" />
-            </div>
-            <div>
-              <span className="font-sans font-bold text-xs text-wp-amber bg-wp-amber/10 px-2.5 py-0.5 rounded-full border border-wp-amber/20">
-                {num(availableExerciseCount)} Specialized Screens
-              </span>
-              <h2 className="font-sans font-black text-wp-text-on-panel text-lg md:text-xl mt-1">
-                Multimodal Skill Exercises Suite
-              </h2>
-              <p className="font-sans text-xs text-wp-text-on-panel-muted mt-0.5">
-                Practice Listening, Reading, Speaking, and Writing drills.
-              </p>
-            </div>
-          </div>
-
-          <button
-            type="button"
-            onClick={() => dispatch({ type: "GO", to: "skill-hub" })}
-            className="w-full md:w-auto bg-primary hover:opacity-90 active:opacity-80 rounded-xl py-3 px-5 font-sans font-bold text-primary-foreground text-sm flex items-center justify-center gap-2 shrink-0 min-h-[44px] shadow-sm transition-all"
-          >
-            <span>Open Exercise Hub</span>
-            <ArrowRight className="size-4" />
-          </button>
-        </div>
-      </section>
+      {/*
+        The skill-exercise hub used to be promoted here *and* on Explore, above
+        the lesson itself in both places — so the loudest thing on the home
+        screen was a 35-item catalogue rather than the one lesson the learner
+        was part-way through. It now lives in one place, under Practice.
+      */}
 
       {/* Main Grid: TODAY + REVIEW (Left) | YOUR LEARNING + THIS WEEK (Right) */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
@@ -145,26 +119,39 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
             </span>
             <div className="bg-wp-card rounded-3xl border border-primary/30 p-6 flex flex-col gap-4 shadow-wp-xs hover:border-primary/50 transition-all">
               <div className="flex items-center justify-between">
+                {/* The world and the estimate. The group's own name is the
+                    heading below, so repeating it here just said it twice. */}
                 <span className="font-sans font-semibold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full">
-                  {activeGroup.name} · ~{num(estimatedMinutes)} min
+                  The Bedroom · ~{num(estimatedMinutes)} min
                 </span>
                 <span className="font-sans text-xs font-bold text-muted-foreground">
                   {num(groupWordsSeen)} of {num(activeGroup.wordIds.length)} words
                 </span>
               </div>
 
+              {/*
+                Both of these were fixed strings describing the furniture group,
+                which stayed on screen even once the card had moved on to a
+                different group. They now describe the group actually queued up.
+              */}
               <div>
                 <h2 className="font-sans font-black text-foreground text-2xl md:text-3xl">
-                  Continue Bedroom
+                  {activeGroup.name}
                 </h2>
                 <p className="font-sans text-muted-foreground text-sm mt-1 leading-relaxed">
-                  Master key furniture &amp; bedroom items through visual discovery and active recall.
+                  {activeGroup.description}
                 </p>
               </div>
 
               <button
                 type="button"
-                onClick={() => dispatch({ type: "START_LESSON" })}
+                onClick={() =>
+                  dispatch({
+                    type: "START_LESSON",
+                    groupId: activeGroup.id,
+                    wordQueue: activeGroup.wordIds,
+                  })
+                }
                 className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 font-sans font-bold text-wp-text-on-blue text-base min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-sm transition-all flex items-center justify-center gap-2"
               >
                 <span>{t("dashboard.continueSession")}</span>

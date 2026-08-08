@@ -86,7 +86,13 @@ export type Action =
   | { type: "ONBOARD_NEXT" }
   | { type: "GO"; to: GoTarget }
   | { type: "OPEN_SKILL_EXERCISE"; exerciseId: SkillExerciseId }
-  | { type: "START_LESSON"; groupId?: string; wordId?: string; wordQueue?: string[] }
+  /**
+   * `groupId` is required, and deliberately so. It was optional, and three of
+   * the four call sites omitted it — so the reducer fell back to the first
+   * group and every lesson in the app collapsed onto the same five words.
+   * Making it required turns that class of bug into a compile error.
+   */
+  | { type: "START_LESSON"; groupId: string; wordQueue?: string[] }
   | { type: "LESSON_SELECT_WORD"; wordId: string }
   | { type: "LESSON_ATTEMPT"; wordId?: string; correct: boolean }
   | { type: "LESSON_NEXT" }

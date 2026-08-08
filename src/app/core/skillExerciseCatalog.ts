@@ -15,49 +15,61 @@ export interface ExerciseDef {
   description: string;
 }
 
+/**
+ * The drills a learner can start.
+ *
+ * Two things changed here, both about the hub reading as a design catalogue
+ * rather than a place to practise:
+ *
+ * Titles no longer carry a leading number. "7. Listening Results" numbered the
+ * screens in the order they were designed, implying a sequence that does not
+ * exist — nothing unlocks anything else, and the list is filtered by the
+ * learner's modality settings, so the numbers skipped anyway.
+ *
+ * The four "Results" screens are gone from the list. They are summary screens
+ * belonging to a completed drill, not drills; offering "Writing Results" as
+ * something to start showed a summary of work nobody had done. Their ids and
+ * routes still exist, so a drill can navigate to its own summary.
+ */
 export const EXERCISES: ExerciseDef[] = [
-  // Listening (9)
-  { id: "listen-word-match", category: "listening", title: "1. Word Match (Definition)", description: "Listen to pronunciation and match definition with root etymology." },
-  { id: "listen-audio-scene-match", category: "listening", title: "2. Audio Scene Match", description: "Match soundscape to 2x2 illustrated scenes with SM-2 confidence calibration." },
-  { id: "listen-dictation-sprint", category: "listening", title: "3. Dictation Sprint", description: "Cloze text input with countdown timer and limited replays." },
-  { id: "listen-vocab-spotting", category: "listening", title: "4. Vocabulary Spotting", description: "Tap target words as you hear continuous narration." },
-  { id: "listen-dialogue-roleplay", category: "listening", title: "5. Dialogue Role-Play", description: "Chat-bubble model conversation with native speaker accent labels." },
-  { id: "listen-selective-shadowing", category: "listening", title: "6. Selective Shadowing", description: "Waveform scrubber with phoneme accuracy scoring per word." },
-  { id: "listen-results", category: "listening", title: "7. Listening Results", description: "Lesson completion summary with percentile leaderboard ranking." },
-  { id: "listen-warmup-review", category: "listening", title: "8. Warm-up Refresher", description: "30-second flashcard review with memory strength indicators." },
-  { id: "listen-podcast-comprehension", category: "listening", title: "9. Podcast Comprehension", description: "Multi-select topic chips based on podcast audio snippet." },
+  // Listening
+  { id: "listen-word-match", category: "listening", title: "Word Match", description: "Listen to pronunciation and match definition with root etymology." },
+  { id: "listen-audio-scene-match", category: "listening", title: "Audio Scene Match", description: "Match soundscape to 2x2 illustrated scenes with SM-2 confidence calibration." },
+  { id: "listen-dictation-sprint", category: "listening", title: "Dictation Sprint", description: "Cloze text input with countdown timer and limited replays." },
+  { id: "listen-vocab-spotting", category: "listening", title: "Vocabulary Spotting", description: "Tap target words as you hear continuous narration." },
+  { id: "listen-dialogue-roleplay", category: "listening", title: "Dialogue Role-Play", description: "Chat-bubble model conversation with native speaker accent labels." },
+  { id: "listen-selective-shadowing", category: "listening", title: "Selective Shadowing", description: "Waveform scrubber with phoneme accuracy scoring per word." },
+  { id: "listen-warmup-review", category: "listening", title: "Warm-up Refresher", description: "30-second flashcard review with memory strength indicators." },
+  { id: "listen-podcast-comprehension", category: "listening", title: "Podcast Comprehension", description: "Multi-select topic chips based on podcast audio snippet." },
 
-  // Reading (9)
-  { id: "read-visual-context", category: "reading", title: "1. Visual Context", description: "Photo scene with multiple choice context clues and why-this-matters rationale." },
-  { id: "read-progressive-reveal", category: "reading", title: "2. Progressive Reveal", description: "Sentence-by-sentence reading with tap-to-translate XP tooltips." },
-  { id: "read-error-detection", category: "reading", title: "3. Error Detection", description: "Proofreading paragraph with tappable grammar errors." },
-  { id: "read-comic-strip", category: "reading", title: "4. Comic Strip", description: "Sequential visual panel narrative with speech bubbles." },
-  { id: "read-infographic", category: "reading", title: "5. Infographic Reading", description: "Data visualizations and charts with inline vocabulary definitions." },
-  { id: "read-category-sort", category: "reading", title: "6. Category Sort", description: "Drag-and-drop word chips into category buckets." },
-  { id: "read-results", category: "reading", title: "7. Reading Results", description: "Vocabulary gained cards and spaced repetition countdown." },
-  { id: "read-subtitle-correction", category: "reading", title: "8. Subtitle Correction", description: "Video subtitle grammar error fixing." },
-  { id: "read-confidence-check", category: "reading", title: "9. Confidence Check", description: "Pre-lesson self-assessment vocabulary pre-check." },
+  // Reading
+  { id: "read-visual-context", category: "reading", title: "Visual Context", description: "Photo scene with multiple choice context clues and why-this-matters rationale." },
+  { id: "read-progressive-reveal", category: "reading", title: "Progressive Reveal", description: "Sentence-by-sentence reading with tap-to-translate XP tooltips." },
+  { id: "read-error-detection", category: "reading", title: "Error Detection", description: "Proofreading paragraph with tappable grammar errors." },
+  { id: "read-comic-strip", category: "reading", title: "Comic Strip", description: "Sequential visual panel narrative with speech bubbles." },
+  { id: "read-infographic", category: "reading", title: "Infographic Reading", description: "Data visualizations and charts with inline vocabulary definitions." },
+  { id: "read-category-sort", category: "reading", title: "Category Sort", description: "Drag-and-drop word chips into category buckets." },
+  { id: "read-subtitle-correction", category: "reading", title: "Subtitle Correction", description: "Video subtitle grammar error fixing." },
+  { id: "read-confidence-check", category: "reading", title: "Confidence Check", description: "Pre-lesson self-assessment vocabulary pre-check." },
 
-  // Speaking (8)
-  { id: "speak-echo-practice", category: "speaking", title: "1. Echo Practice", description: "Side-by-side waveform comparison and syllable phoneme accuracy." },
-  { id: "speak-scenario-response", category: "speaking", title: "2. Scenario Response", description: "Situational speaking prompt with cultural tips." },
-  { id: "speak-photo-narration", category: "speaking", title: "3. Photo Narration", description: "Descriptive photo speaking guide with real-time vocabulary tracker." },
-  { id: "speak-video-roleplay", category: "speaking", title: "4. Video Roleplay", description: "Interactive video roleplay with YOUR TURN voice recording." },
-  { id: "speak-compare-contrast", category: "speaking", title: "5. Compare & Contrast", description: "Side-by-side photo comparison with live grammar structure detection." },
-  { id: "speak-word-chain", category: "speaking", title: "6. Word Chain Arcade", description: "Fast-paced memory chain game with combo streaks and hearts." },
-  { id: "speak-self-repair", category: "speaking", title: "7. Self-Repair", description: "Audio comparison of detected errors (❌ vs ✓) and re-recording." },
-  { id: "speak-results", category: "speaking", title: "8. Speaking Results", description: "Lesson summary with fluency metrics and hesitation counts." },
+  // Speaking
+  { id: "speak-echo-practice", category: "speaking", title: "Echo Practice", description: "Say the word and have it checked against what you meant to say." },
+  { id: "speak-scenario-response", category: "speaking", title: "Scenario Response", description: "Situational speaking prompt with cultural tips." },
+  { id: "speak-photo-narration", category: "speaking", title: "Photo Narration", description: "Descriptive photo speaking guide with real-time vocabulary tracker." },
+  { id: "speak-video-roleplay", category: "speaking", title: "Video Roleplay", description: "Interactive video roleplay with YOUR TURN voice recording." },
+  { id: "speak-compare-contrast", category: "speaking", title: "Compare & Contrast", description: "Side-by-side photo comparison with live grammar structure detection." },
+  { id: "speak-word-chain", category: "speaking", title: "Word Chain Arcade", description: "Fast-paced memory chain game with combo streaks and hearts." },
+  { id: "speak-self-repair", category: "speaking", title: "Self-Repair", description: "Audio comparison of detected errors (❌ vs ✓) and re-recording." },
 
-  // Writing (9)
-  { id: "write-caption-builder", category: "writing", title: "1. Caption Builder", description: "Guided image caption writing using word bank chips." },
-  { id: "write-sentence-assembly", category: "writing", title: "2. Sentence Assembly Arcade", description: "Timed word tile ordering with combo multipliers." },
-  { id: "write-photo-journal", category: "writing", title: "3. Photo Journal", description: "Free-form writing with real-time error underlines and rubric dot ratings." },
-  { id: "write-video-summary", category: "writing", title: "4. Video Summary", description: "Academic summary writing with register style tips." },
-  { id: "write-error-correction", category: "writing", title: "5. Error Correction", description: "Find & fix grammar paragraph with rule cards." },
-  { id: "write-paraphrase-challenge", category: "writing", title: "6. Paraphrase Challenge", description: "Sentence rewriting with target word constraints." },
-  { id: "write-image-story-chain", category: "writing", title: "7. Image Story Chain", description: "Sequential narrative writing with transition connectors." },
-  { id: "write-results", category: "writing", title: "8. Writing Results", description: "Lesson summary with recurring mistakes flag list." },
-  { id: "write-timed-sprint", category: "writing", title: "9. Timed Writing Sprint", description: "Arcade speed vocabulary typing with live score and streak fire." },
+  // Writing
+  { id: "write-caption-builder", category: "writing", title: "Caption Builder", description: "Guided image caption writing using word bank chips." },
+  { id: "write-sentence-assembly", category: "writing", title: "Sentence Assembly Arcade", description: "Timed word tile ordering with combo multipliers." },
+  { id: "write-photo-journal", category: "writing", title: "Photo Journal", description: "Free-form writing with guidance. Not marked — this app cannot grade prose." },
+  { id: "write-video-summary", category: "writing", title: "Video Summary", description: "Academic summary writing with register style tips." },
+  { id: "write-error-correction", category: "writing", title: "Error Correction", description: "Find & fix grammar paragraph with rule cards." },
+  { id: "write-paraphrase-challenge", category: "writing", title: "Paraphrase Challenge", description: "Sentence rewriting with target word constraints." },
+  { id: "write-image-story-chain", category: "writing", title: "Image Story Chain", description: "Sequential narrative writing with transition connectors." },
+  { id: "write-timed-sprint", category: "writing", title: "Timed Writing Sprint", description: "Arcade speed vocabulary typing with live score and streak fire." },
 ];
 
 export const ALL_CATEGORIES = [

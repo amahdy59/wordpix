@@ -21,6 +21,8 @@ const imgDefaultScene = `https://images.unsplash.com/photo-1618221195710-dd6b41f
 interface Props {
   activeWord: VocabItem;
   hotspotWords: VocabItem[];
+  /** Name of the word group this session teaches, shown in the header. */
+  groupName: string;
   activeId: string;
   isPlaying: boolean;
   isError: boolean;
@@ -33,6 +35,7 @@ interface Props {
 export const SceneCanvas = memo(function SceneCanvas({
   activeWord,
   hotspotWords,
+  groupName,
   activeId,
   isPlaying,
   isError,
@@ -43,7 +46,11 @@ export const SceneCanvas = memo(function SceneCanvas({
 }: Props) {
   const [viewMode, setViewMode] = useState<"word" | "scene">("word");
 
-  const isWordView = viewMode === "word";
+  // Most groups have no words pinned to the room photo, and a scene with no
+  // hotspots is a dead end: it offers nothing to tap and no way back except the
+  // toggle. Only offer the view when there is something on it.
+  const hasScene = hotspotWords.length > 0;
+  const isWordView = viewMode === "word" || !hasScene;
 
   const handleSelectWordLocal = (id: string) => {
     onSelectWord(id);
@@ -66,21 +73,25 @@ export const SceneCanvas = memo(function SceneCanvas({
         >
           <ArrowLeft className="size-5" aria-hidden />
         </button>
-        <div className="flex flex-1 items-center bg-muted p-1 rounded-xl border border-border">
-          {(["word", "scene"] as const).map((mode) => (
-            <button
-              key={mode}
-              type="button"
-              onClick={() => setViewMode(mode)}
-              aria-pressed={viewMode === mode}
-              className={`flex-1 min-h-[44px] rounded-lg text-xs font-sans font-bold capitalize ${
-                viewMode === mode ? "bg-wp-card text-primary shadow-wp-xs" : "text-muted-foreground"
-              }`}
-            >
-              {mode}
-            </button>
-          ))}
-        </div>
+        {hasScene ? (
+          <div className="flex flex-1 items-center bg-muted p-1 rounded-xl border border-border">
+            {(["word", "scene"] as const).map((mode) => (
+              <button
+                key={mode}
+                type="button"
+                onClick={() => setViewMode(mode)}
+                aria-pressed={viewMode === mode}
+                className={`flex-1 min-h-[44px] rounded-lg text-xs font-sans font-bold capitalize ${
+                  viewMode === mode ? "bg-wp-card text-primary shadow-wp-xs" : "text-muted-foreground"
+                }`}
+              >
+                {mode}
+              </button>
+            ))}
+          </div>
+        ) : (
+          <p className="flex-1 font-sans font-bold text-foreground text-sm truncate px-1">{groupName}</p>
+        )}
         <button
           type="button"
           onClick={onBrowseWords}
@@ -108,7 +119,7 @@ export const SceneCanvas = memo(function SceneCanvas({
             <BookOpen className="size-5 text-primary-foreground" />
           </div>
           <div>
-            <h1 className="font-sans font-bold text-foreground text-base leading-none">Bedroom Lesson</h1>
+            <h1 className="font-sans font-bold text-foreground text-base leading-none">{groupName}</h1>
             <p className="font-sans text-muted-foreground text-xs mt-0.5">
               {!isWordView ? "Select hotspots to explore room features" : `Viewing ${activeWord.label}`}
             </p>
@@ -118,7 +129,7 @@ export const SceneCanvas = memo(function SceneCanvas({
         {/* View Mode Toggle & Active Word Badge */}
         <div className="flex items-center gap-3">
           {/* View Toggle */}
-          <div className="flex items-center bg-muted p-1 rounded-xl border border-border">
+          <div className={`items-center bg-muted p-1 rounded-xl border border-border ${hasScene ? "flex" : "hidden"}`}>
             <button
               type="button"
               onClick={() => setViewMode("word")}

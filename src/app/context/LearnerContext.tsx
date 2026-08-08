@@ -40,6 +40,16 @@ export interface AccessibilityPreferences {
    * met separately by the pause and extend controls on the timer itself.
    */
   timedExercises: boolean;
+  /**
+   * When true, a drill moves to the next question by itself a moment after
+   * each answer, instead of waiting to be told to.
+   *
+   * The delay before it moves on is a time limit on reading the feedback, so
+   * WCAG 2.2.1 (Timing Adjustable) requires it be possible to switch off before
+   * it is ever encountered — which is what this does. Turning it off puts a
+   * Next button on the feedback instead.
+   */
+  autoAdvance: boolean;
 }
 
 export const DEFAULT_ACCESSIBILITY: AccessibilityPreferences = {
@@ -50,6 +60,7 @@ export const DEFAULT_ACCESSIBILITY: AccessibilityPreferences = {
   includeSpeaking: true,
   includeListening: true,
   timedExercises: true,
+  autoAdvance: true,
 };
 
 /** Root font-size multiplier per text-size step. */

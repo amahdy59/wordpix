@@ -9,6 +9,8 @@ import { X, CheckCircle2 } from "lucide-react";
 
 interface Props {
   vocabulary: VocabItem[];
+  /** Name of the word group being taught, used as the panel heading. */
+  groupName: string;
   /** Reserved for callers that pass the active word; the list renders from activeId. */
   activeWord?: VocabItem;
   activeId: string;
@@ -27,8 +29,15 @@ const MASTERY_BADGES: Record<MasteryLevel, { label: string; bg: string; text: st
   3: { label: "Mastered", bg: "bg-wp-teal/10", text: "text-wp-teal border-wp-teal/20" },
 };
 
+/**
+ * Below this many words a topic filter costs more than it saves: a lesson group
+ * is five words, and six filter chips over a five-item list is noise.
+ */
+const TOPIC_FILTER_MIN_WORDS = 12;
+
 export const VocabSidebar = memo(function VocabSidebar({
   vocabulary,
+  groupName,
   activeWord: _activeWord,
   activeId,
   isPlaying,
@@ -42,7 +51,9 @@ export const VocabSidebar = memo(function VocabSidebar({
   const { progress } = useProgress();
   const { speak } = useAudio();
 
-  const filteredVocabulary = selectedTopic === "all"
+  const showTopicFilter = vocabulary.length >= TOPIC_FILTER_MIN_WORDS;
+
+  const filteredVocabulary = selectedTopic === "all" || !showTopicFilter
     ? vocabulary
     : vocabulary.filter((v) => v.topic === selectedTopic);
 
@@ -57,7 +68,7 @@ export const VocabSidebar = memo(function VocabSidebar({
       <div className="px-5 py-4 border-b border-border shrink-0">
         <div className="flex items-center justify-between mb-3">
           <div>
-            <h2 className="font-sans font-bold text-foreground text-base">The Bedroom Vocabulary</h2>
+            <h2 className="font-sans font-bold text-foreground text-base">{groupName}</h2>
             <p className="font-sans text-muted-foreground text-xs mt-0.5">
               {filteredVocabulary.length} words · Select to view &amp; listen
             </p>
@@ -80,7 +91,7 @@ export const VocabSidebar = memo(function VocabSidebar({
         </div>
 
         {/* Topic Filter Chips */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar">
+        <div className={`${showTopicFilter ? "flex" : "hidden"} items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar`}>
           <button
             type="button"
             onClick={() => setSelectedTopic("all")}

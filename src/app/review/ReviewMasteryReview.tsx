@@ -1,8 +1,11 @@
 import { memo, useMemo } from "react";
-import { Flame, BookOpen, ArrowRight, RotateCcw, Clock, AlertCircle, CheckCircle2 } from "lucide-react";
+import { Flame, BookOpen, ArrowRight, RotateCcw, Clock, AlertCircle, CheckCircle2, Layers } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { BEDROOM_VOCABULARY, type VocabItem } from "../data/lessons";
+import { BEDROOM_VOCABULARY, REVIEW_GROUP_ID, type VocabItem } from "../data/lessons";
+
+/** Words per review session. */
+const REVIEW_SESSION_SIZE = 5;
 import { WordImage } from "../shared/WordImage";
 import { calculateDaysBetween, getLocalDateString } from "../../features/gamification/streak";
 
@@ -55,14 +58,29 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
 
   const totalDue = overdueList.length + dueTodayList.length;
 
+  /**
+   * Builds the review queue from what is actually due.
+   *
+   * A short queue used to be padded from `BEDROOM_VOCABULARY.slice(0, 5)` —
+   * bed, nightstand, dresser, wardrobe, desk — so a review with two due words
+   * became three furniture words the learner had not asked to review. Padding
+   * now draws on the words with the weakest memory instead, and the session
+   * carries the review group id rather than inheriting the furniture one.
+   */
   const startReviewSession = () => {
     const dueQueue = [...overdueList, ...dueTodayList].map((i) => i.word.id);
-    const queue = dueQueue.length >= 5
-      ? dueQueue.slice(0, 5)
-      : [...dueQueue, ...BEDROOM_VOCABULARY.slice(0, 5).map((w) => w.id)].slice(0, 5);
+    const weakestFirst = memoryItems
+      .filter((i) => !dueQueue.includes(i.word.id))
+      .sort((a, b) => a.daysDiff - b.daysDiff)
+      .map((i) => i.word.id);
 
-    dispatch({ type: "START_LESSON", wordQueue: queue });
+    const queue = [...dueQueue, ...weakestFirst].slice(0, REVIEW_SESSION_SIZE);
+    if (queue.length === 0) return;
+
+    dispatch({ type: "START_LESSON", groupId: REVIEW_GROUP_ID, wordQueue: queue });
   };
+
+  const canStartReview = memoryItems.length > 0;
 
   return (
     <div className="flex flex-col gap-6 p-5 md:p-8 pb-8 max-w-4xl w-full mx-auto">
@@ -199,15 +217,52 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
         </div>
       )}
 
-      {/* Start review CTA */}
+      {/*
+        The one route to the skill-exercise hub.
+        It sits below the review queue because spaced repetition is the point of
+        this tab and the drills are the optional extra — not the other way
+        round, which is how it read when this card was the first thing on both
+        Home and Explore.
+      */}
+      <section aria-label="Skill drills" className="border-t border-border pt-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="flex items-center gap-3.5">
+            <div className="size-11 rounded-xl bg-secondary text-primary flex items-center justify-center shrink-0 border border-primary/20">
+              <Layers className="size-5" aria-hidden />
+            </div>
+            <div>
+              <h2 className="font-sans font-bold text-foreground text-base">Skill Drills</h2>
+              <p className="font-sans text-muted-foreground text-xs mt-0.5 max-w-md">
+                Standalone listening, reading, speaking and writing practice, separate from your lesson progress.
+              </p>
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={() => dispatch({ type: "GO", to: "skill-hub" })}
+            className="shrink-0 bg-secondary hover:bg-primary/10 text-primary border border-primary/20 rounded-xl py-3 px-5 font-sans font-bold text-sm min-h-[44px] transition-all flex items-center justify-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            <span>Browse drills</span>
+            <ArrowRight className="size-4" aria-hidden />
+          </button>
+        </div>
+      </section>
+
+      {/* Start review CTA — nothing to review means nothing to start, rather
+          than quietly launching a furniture lesson instead. */}
       <footer>
         <button
           type="button"
           onClick={startReviewSession}
-          className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 w-full font-sans font-bold text-wp-text-on-blue text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue min-h-[52px] shadow-wp-xs transition-all flex items-center justify-center gap-2"
+          disabled={!canStartReview}
+          className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 w-full font-sans font-bold text-wp-text-on-blue text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue min-h-[52px] shadow-wp-xs transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          <span>Start Adaptive Review Session ({totalDue} due)</span>
-          <ArrowRight className="size-5" />
+          <span>
+            {canStartReview
+              ? `Start Review Session (${totalDue} due)`
+              : "Nothing to review yet"}
+          </span>
+          <ArrowRight className="size-5" aria-hidden />
         </button>
       </footer>
     </div>

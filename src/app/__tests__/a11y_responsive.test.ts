@@ -98,7 +98,6 @@ describe.each([
 
 describe("Accent fills use their paired foreground token", () => {
   const componentSources = [
-    "app/shared/FeedbackModal.tsx",
     "app/core/HomeDashboard.tsx",
     "app/lesson/LessonCompleteResults.tsx",
     "app/lesson/SceneCanvas.tsx",

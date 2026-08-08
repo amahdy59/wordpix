@@ -2,7 +2,7 @@ import { useEffect, useReducer, Suspense, useCallback } from "react";
 import type { Screen, Action, OnboardStep, TabId } from "./types";
 import type { RouteIntent } from "./router/useHashRouter";
 import { ErrorBoundary } from "./shared/ErrorBoundary";
-import { BEDROOM_VOCABULARY, BEDROOM_GROUPS } from "./data/lessons";
+import { getWords, resolveGroup } from "./data/lessons";
 import { LearnerProvider } from "./context/LearnerContext";
 import { I18nProvider, useI18n } from "./context/I18nContext";
 import { useHashRouter, hashToScreen } from "./router/useHashRouter";
@@ -79,14 +79,19 @@ export function reducer(state: Screen, action: Action): Screen {
     return { id: "skill-exercise", exerciseId: action.exerciseId };
   }
   if (action.type === "START_LESSON") {
-    const group = BEDROOM_GROUPS.find((g) => g.id === action.groupId) ?? BEDROOM_GROUPS[0];
-    const queue = action.wordQueue && action.wordQueue.length > 0 ? action.wordQueue : group.wordIds;
+    const queue =
+      action.wordQueue && action.wordQueue.length > 0
+        ? action.wordQueue
+        : resolveGroup(action.groupId).wordIds;
     const sessionId = "sess_" + Date.now() + "_" + Math.random().toString(36).slice(2, 7);
 
     return {
       id: "lesson",
       sessionId,
-      groupId: group.id,
+      // The caller's group id is kept verbatim. It used to be replaced by
+      // whichever group the lookup happened to resolve to, which is how a
+      // review session ended up labelled "Essential Furniture".
+      groupId: action.groupId,
       wordQueue: queue,
       step: 0,
       attempts: [],
@@ -315,13 +320,25 @@ function AppInner() {
 
     if (state.id === "lesson") {
       const ex: ExStep = EX_STEPS[state.step] ?? "scene";
-      const groupWords = state.wordQueue
-        .map((id) => BEDROOM_VOCABULARY.find((item) => item.id === id))
-        .filter(Boolean) as typeof BEDROOM_VOCABULARY;
-      
-      const activeGroupWords = groupWords.length > 0 ? groupWords : BEDROOM_VOCABULARY.slice(0, 5);
+      const groupWords = getWords(state.wordQueue);
 
-      if (ex === "scene") return <LessonSceneDiscovery selectedWordId={activeGroupWords[0].id} dispatch={dispatch} />;
+      // An empty queue means the session was built from an unknown id, which
+      // should be impossible now that groupId is required. Recovering with the
+      // group's own words keeps a corrupted persisted state from rendering a
+      // lesson with nothing in it.
+      const activeGroupWords =
+        groupWords.length > 0 ? groupWords : getWords(resolveGroup(state.groupId).wordIds);
+
+      if (activeGroupWords.length === 0) return <ExploreWorlds dispatch={dispatch} />;
+
+      if (ex === "scene")
+        return (
+          <LessonSceneDiscovery
+            words={activeGroupWords}
+            groupId={state.groupId}
+            dispatch={dispatch}
+          />
+        );
       if (ex === "listen") return <ExerciseListenRepeat words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;
       if (ex === "recall") return <ExerciseRecallMatch words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;
       if (ex === "fill") return <ExerciseContextFill words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;

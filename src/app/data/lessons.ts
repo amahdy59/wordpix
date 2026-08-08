@@ -568,3 +568,57 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
 ];
 
 export const BEDROOM_HOTSPOT_WORDS = BEDROOM_VOCABULARY.filter((v) => v.hotspot);
+
+/**
+ * The group id used by a spaced-repetition session, whose words are chosen by
+ * the review schedule rather than by a fixed thematic group.
+ *
+ * Review sessions used to start with no group id at all, which meant the
+ * reducer fell back to BEDROOM_GROUPS[0] and every review was labelled
+ * "Essential Furniture" no matter which words it actually contained.
+ */
+export const REVIEW_GROUP_ID = "daily-review";
+
+/**
+ * Resolves a group id to the group it names.
+ *
+ * The `?? BEDROOM_GROUPS[0]` fallback that used to be inlined at four separate
+ * call sites is the reason every lesson claimed to be "Essential Furniture":
+ * an absent or unknown id silently became the first group instead of failing
+ * loudly. It survives here as a single last resort, but `groupId` is now
+ * required on START_LESSON so nothing reaches it by omission.
+ */
+export function resolveGroup(groupId: string, wordIds: string[] = []): WordGroup {
+  if (groupId === REVIEW_GROUP_ID) {
+    return {
+      id: REVIEW_GROUP_ID,
+      name: "Daily Review",
+      topicId: "review",
+      wordIds,
+      description: "Words your memory schedule says are due today.",
+    };
+  }
+  return BEDROOM_GROUPS.find((g) => g.id === groupId) ?? BEDROOM_GROUPS[0];
+}
+
+/** Looks up vocabulary items by id, preserving the order of `wordIds`. */
+export function getWords(wordIds: string[]): VocabItem[] {
+  return wordIds
+    .map((id) => BEDROOM_VOCABULARY.find((item) => item.id === id))
+    .filter((item): item is VocabItem => Boolean(item));
+}
+
+/**
+ * The group a learner should be taken to when they ask to carry on.
+ *
+ * The Home dashboard used to hardcode `BEDROOM_GROUPS[0]`, so "Continue
+ * Bedroom" replayed Essential Furniture forever however much progress had been
+ * made. Picks the first group with any word not yet strong, and falls back to
+ * the last group once everything is mastered.
+ */
+export function nextGroupToStudy(isMastered: (wordId: string) => boolean): WordGroup {
+  return (
+    BEDROOM_GROUPS.find((g) => g.wordIds.some((id) => !isMastered(id))) ??
+    BEDROOM_GROUPS[BEDROOM_GROUPS.length - 1]
+  );
+}

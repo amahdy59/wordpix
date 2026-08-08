@@ -105,6 +105,48 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
     full: "He arranged his novel collection neatly on the wooden bookshelf.",
     words: ["He", "arranged", "books", "on", "the", "bookshelf"],
   },
+
+  // ── The six group words that had no sentence of their own ─────────────────
+  // Without these, getRichSentence fell back to "This is a quilt." — so the
+  // Pillows & Covers group, all five words of it, taught nothing but the
+  // article. A context drill whose every sentence is "This is a ___" is not a
+  // context drill.
+  stool: {
+    clozeBefore: "She perched on the small wooden",
+    clozeAfter: "to reach the top shelf.",
+    full: "She perched on the small wooden stool to reach the top shelf.",
+    words: ["She", "sat", "on", "the", "wooden", "stool"],
+  },
+  pillowcase: {
+    clozeBefore: "He slipped a clean cotton",
+    clozeAfter: "over the pillow.",
+    full: "He slipped a clean cotton pillowcase over the pillow.",
+    words: ["He", "changed", "the", "cotton", "pillowcase"],
+  },
+  comforter: {
+    clozeBefore: "She pulled the thick",
+    clozeAfter: "up to her chin on the cold night.",
+    full: "She pulled the thick comforter up to her chin on the cold night.",
+    words: ["She", "pulled", "up", "the", "thick", "comforter"],
+  },
+  cushion: {
+    clozeBefore: "He propped a soft",
+    clozeAfter: "behind his back while reading.",
+    full: "He propped a soft cushion behind his back while reading.",
+    words: ["He", "leaned", "on", "a", "soft", "cushion"],
+  },
+  quilt: {
+    clozeBefore: "Her grandmother sewed the patterned",
+    clozeAfter: "by hand.",
+    full: "Her grandmother sewed the patterned quilt by hand.",
+    words: ["Grandmother", "sewed", "the", "patterned", "quilt"],
+  },
+  bedspread: {
+    clozeBefore: "She smoothed the embroidered",
+    clozeAfter: "over the whole bed.",
+    full: "She smoothed the embroidered bedspread over the whole bed.",
+    words: ["She", "smoothed", "the", "embroidered", "bedspread"],
+  },
 };
 
 export function getRichSentence(word: VocabItem): RichSentence {
