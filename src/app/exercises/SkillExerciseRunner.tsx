@@ -422,7 +422,7 @@ function TaskBody({
                 disabled={disabled}
                 onClick={() => setArrangement(arrangement.filter((_, j) => j !== i))}
                 aria-label={`Remove ${token} from position ${i + 1}`}
-                className="bg-primary text-primary-foreground px-3 min-h-[44px] rounded-xl font-sans font-bold text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                className="bg-primary text-primary-foreground px-3 min-h-[44px] min-w-[44px] rounded-xl font-sans font-bold text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 {token}
               </button>
@@ -438,7 +438,7 @@ function TaskBody({
               disabled={disabled}
               onClick={() => setArrangement([...arrangement, token])}
               aria-label={`Add ${token}`}
-              className="bg-wp-card border border-border px-3.5 min-h-[44px] rounded-xl font-sans font-semibold text-sm hover:border-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="bg-wp-card border border-border px-3.5 min-h-[44px] min-w-[44px] rounded-xl font-sans font-semibold text-sm hover:border-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               {token}
             </button>
