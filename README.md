@@ -16,10 +16,27 @@ An interactive, visual-first English vocabulary learning application tailored fo
   - ARIA live region announcements on navigation and SpeechSynthesis.
 - 🌐 **Bilingual & RTL**: Interface language switcher (English / العربية) with `dir` mirroring throughout via CSS logical properties. Lesson content is currently English-only.
 
-> **Scope note:** the 35 screens in the Skill Exercise Hub are largely
-> presentational previews. WordPix has no speech recognition and does not grade
-> free writing, so speaking and writing drills are self-assessed and report no
-> score.
+### Skill Exercise Hub
+
+27 of the 35 hub screens are defined as data in `src/app/exercises/content/`
+and rendered by a shared runner, over six interaction patterns: single choice,
+text entry, multi-select, sentence ordering, category sorting, and open
+practice. Every question carries an explanation, so a wrong answer teaches
+something.
+
+**What is and is not graded.** Choice, entry, ordering, and sorting are marked
+exactly. Open work — photo narration, roleplay, free writing, video summary —
+is modelled as `practice`: it gives concrete guidance and states plainly that
+nothing is marked, because this app cannot grade it.
+
+**Pronunciation.** Echo Practice uses the Web Speech API to check *which word*
+you said. It does not score pronunciation quality: the API exposes no
+phoneme-level detail, so any percentage would be invented. Recognition is
+unavailable in Firefox and when the microphone is blocked; those cases fall
+back to self-assessment and say so.
+
+**Timing.** Timed exercises use a pausable, extendable countdown, and time
+limits can be switched off entirely in Settings.
 
 ---
 
