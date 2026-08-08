@@ -32,6 +32,14 @@ export interface AccessibilityPreferences {
   numeralSystem: NumeralSystem;
   includeSpeaking: boolean;
   includeListening: boolean;
+  /**
+   * When false, no exercise imposes a time limit at all.
+   *
+   * This is the control that satisfies WCAG 2.2.3 (No Timing, AAA): the limit
+   * can be turned off before it is ever encountered. WCAG 2.2.1 (Level A) is
+   * met separately by the pause and extend controls on the timer itself.
+   */
+  timedExercises: boolean;
 }
 
 export const DEFAULT_ACCESSIBILITY: AccessibilityPreferences = {
@@ -41,6 +49,7 @@ export const DEFAULT_ACCESSIBILITY: AccessibilityPreferences = {
   numeralSystem: "western",
   includeSpeaking: true,
   includeListening: true,
+  timedExercises: true,
 };
 
 /** Root font-size multiplier per text-size step. */

@@ -22,7 +22,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
   // clicked and changed nothing, then discarded the value on close. They are
   // now the persisted accessibility slice, applied by real consumers.
   const { accessibility, setAccessibility } = useAccessibility();
-  const { textSize, highContrast, speechRate, numeralSystem, includeSpeaking, includeListening } =
+  const { textSize, highContrast, speechRate, numeralSystem, includeSpeaking, includeListening, timedExercises } =
     accessibility;
   const [confirmReset, setConfirmReset] = useState(false);
 
@@ -267,6 +267,23 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     }`}
                   >
                     {includeSpeaking ? "Enabled" : "Disabled"}
+                  </button>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <div>
+                    <span className="font-sans font-bold text-foreground text-sm">Timed Exercises</span>
+                    <p className="font-sans text-xs text-muted-foreground">Turn off to remove every countdown. Timers can also be paused or extended while running.</p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setAccessibility({ timedExercises: !timedExercises })}
+                    aria-pressed={timedExercises}
+                    className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                      timedExercises ? "bg-wp-green text-wp-text-on-green border-wp-green" : "bg-muted text-muted-foreground border-border"
+                    }`}
+                  >
+                    {timedExercises ? "On" : "Off"}
                   </button>
                 </div>
 
