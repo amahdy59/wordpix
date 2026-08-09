@@ -9,19 +9,19 @@ export type { ThemeMode };
 export function useTheme() {
   const { state, setPreferences } = useLearner();
   const theme = state.preferences.theme;
-  const [resolvedTheme, setResolvedTheme] = useState<"light" | "dark">(theme === "dark" ? "dark" : "light");
+  const [systemIsDark, setSystemIsDark] = useState<boolean>(() => {
+    if (typeof window === "undefined") return false;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  });
 
   useEffect(() => {
-    if (theme !== "system") {
-      setResolvedTheme(theme);
-      return;
-    }
     const media = window.matchMedia("(prefers-color-scheme: dark)");
-    setResolvedTheme(media.matches ? "dark" : "light");
-    const listener = (e: MediaQueryListEvent) => setResolvedTheme(e.matches ? "dark" : "light");
+    const listener = (e: MediaQueryListEvent) => setSystemIsDark(e.matches);
     media.addEventListener("change", listener);
     return () => media.removeEventListener("change", listener);
-  }, [theme]);
+  }, []);
+
+  const resolvedTheme = theme === "system" ? (systemIsDark ? "dark" : "light") : theme;
 
   const toggleTheme = () => {
     const nextTheme: ThemeMode = theme === "system" ? "dark" : theme === "dark" ? "light" : "system";
