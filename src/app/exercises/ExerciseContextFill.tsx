@@ -1,6 +1,6 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { Action } from "../types";
-import type { VocabItem } from "../data/lessons";
+import type { VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getRichSentence } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
@@ -17,15 +17,15 @@ import { Keyboard } from "lucide-react";
 
 interface Props {
   step: number;
-  words: VocabItem[];
-  groupId: string;
+  words: VocabularyItem[];
+  lessonId: string;
   dispatch: React.Dispatch<Action>;
 }
 
 export const ExerciseContextFill = memo(function ExerciseContextFill({
   step,
   words,
-  groupId,
+  lessonId,
   dispatch,
 }: Props) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -110,7 +110,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       step={step}
       title="Context Fill"
       words={words}
-      groupId={groupId}
+      lessonId={lessonId}
       dispatch={dispatch}
       footer={
         <div className="w-full flex items-center justify-between text-xs font-sans font-semibold text-muted-foreground px-1">

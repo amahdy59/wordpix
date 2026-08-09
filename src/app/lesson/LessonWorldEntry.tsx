@@ -4,16 +4,16 @@ import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { BackButton } from "../shared/BackButton";
 import { ArrowRight, BookOpen, Layers, CheckCircle2 } from "lucide-react";
-import { LESSON_WORLDS, DEFAULT_WORLD_ID } from "../data/lessons";
+import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/lessons";
 import { useProgress } from "../data/progress";
 
 interface Props {
-  worldId?: string;
+  unitId?: string;
   dispatch: React.Dispatch<Action>;
 }
 
-export const LessonWorldEntry = memo(function LessonWorldEntry({ worldId, dispatch }: Props) {
-  const world = LESSON_WORLDS[worldId ?? DEFAULT_WORLD_ID];
+export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatch }: Props) {
+  const world = COURSE_UNITS[unitId ?? DEFAULT_UNIT_ID];
   const [selectedGroupId, setSelectedGroupId] = useState<string>(world.groups[0].id);
   const { progress } = useProgress();
 
@@ -21,7 +21,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ worldId, dispat
 
   const handleStartGroup = (gId: string) => {
     const group = world.groups.find((g) => g.id === gId) ?? world.groups[0];
-    dispatch({ type: "START_LESSON", groupId: group.id, wordQueue: group.wordIds });
+    dispatch({ type: "START_LESSON", lessonId: group.id, mode: "NEW_LESSON", wordQueue: group.wordIds });
   };
 
   return (

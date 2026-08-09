@@ -1,4 +1,4 @@
-import { BEDROOM_VOCABULARY, type VocabItem } from "../data/lessons";
+import { BEDROOM_VOCABULARY, type VocabularyItem } from "../data/lessons";
 
 export const CONFUSION_PAIRS: Record<string, string[]> = {
   pillow: ["blanket", "nightstand", "bed", "dresser"],
@@ -149,7 +149,7 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
   },
 };
 
-export function getRichSentence(word: VocabItem): RichSentence {
+export function getRichSentence(word: VocabularyItem): RichSentence {
   if (RICH_CONTEXT_SENTENCES[word.id]) {
     return RICH_CONTEXT_SENTENCES[word.id];
   }
@@ -165,11 +165,11 @@ export function getRichSentence(word: VocabItem): RichSentence {
 /**
  * Generates semantically and visually related distractors instead of purely random picks.
  */
-export function getSemanticDistractors(word: VocabItem, count = 3): VocabItem[] {
+export function getSemanticDistractors(word: VocabularyItem, count = 3): VocabularyItem[] {
   const confusionIds = CONFUSION_PAIRS[word.id] ?? [];
   const confusionWords = confusionIds
     .map((id) => BEDROOM_VOCABULARY.find((item) => item.id === id))
-    .filter(Boolean) as VocabItem[];
+    .filter(Boolean) as VocabularyItem[];
 
   const sameTopic = BEDROOM_VOCABULARY.filter(
     (item) => item.id !== word.id && item.topic === word.topic && !confusionIds.includes(item.id)
@@ -183,7 +183,7 @@ export function getSemanticDistractors(word: VocabItem, count = 3): VocabItem[] 
   return pool.slice(0, count);
 }
 
-export function getDistractors(word: VocabItem, count = 3): VocabItem[] {
+export function getDistractors(word: VocabularyItem, count = 3): VocabularyItem[] {
   return getSemanticDistractors(word, count);
 }
 

@@ -6,8 +6,9 @@ import type { Screen } from "../types";
 function lessonAt(step: number): Screen {
   return {
     id: "lesson",
+    mode: "NEW_LESSON",
     sessionId: "sess_1",
-    groupId: "essential-furniture",
+    lessonId: "essential-furniture",
     wordQueue: ["bed", "lamp"],
     step,
     attempts: [{ exerciseStep: 0, wordId: "bed", correct: true, answeredAt: "2026-01-01T00:00:00Z" }],
@@ -34,7 +35,7 @@ describe("Hash round-tripping", () => {
       lessonAt(0),
       lessonAt(3),
       lessonAt(4),
-      { id: "lesson-complete", sessionId: "s", groupId: "g", wordQueue: [], attempts: [] },
+      { id: "lesson-complete", mode: "NEW_LESSON", sessionId: "s", lessonId: "g", wordQueue: [], attempts: [] },
     ];
 
     screens.forEach((screen) => {

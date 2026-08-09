@@ -20,7 +20,7 @@ describe("Assessment image alt text", () => {
   /**
    * The alt text used to be a bare "Picture option A" — safe, but identical
    * for every option, so the question was unanswerable without sight. It now
-   * carries VocabItem.description, which identifies the object without naming
+   * carries VocabularyItem.description, which identifies the object without naming
    * it (enforced by lessons_content.test.ts).
    */
   it("describes the picture so the question can actually be answered", () => {

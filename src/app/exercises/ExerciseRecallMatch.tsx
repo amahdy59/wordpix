@@ -1,7 +1,7 @@
 import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
 import type { Action } from "../types";
-import type { VocabItem } from "../data/lessons";
-import { resolveWorldForGroup } from "../data/lessons";
+import type { VocabularyItem } from "../data/lessons";
+import { resolveUnitForLesson } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { WordImage } from "../shared/WordImage";
 import { useAudio } from "../shared/useAudio";
@@ -18,15 +18,15 @@ import { usePrefetchImage } from "../shared/usePrefetchImage";
 
 interface Props {
   step: number;
-  words: VocabItem[];
-  groupId: string;
+  words: VocabularyItem[];
+  lessonId: string;
   dispatch: React.Dispatch<Action>;
 }
 
 export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   step,
   words,
-  groupId,
+  lessonId,
   dispatch,
 }: Props) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -44,7 +44,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
 
   const displayCards = useMemo(() => {
     // Generate 6 cards total: the group's words + necessary distractors
-    const worldVocab = resolveWorldForGroup(groupId).vocabulary;
+    const worldVocab = resolveUnitForLesson(lessonId).vocabulary;
     const wordIds = new Set(words.map((w) => w.id));
     const distractorsPool = worldVocab.filter((w) => !wordIds.has(w.id));
     
@@ -52,7 +52,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
     const shuffledDistractors = shuffleArray(distractorsPool).slice(0, distractorsNeeded);
     
     return shuffleArray([...words, ...shuffledDistractors]);
-  }, [words, groupId]);
+  }, [words, lessonId]);
 
   /** Clears the result and lets the queue's next question render. */
   const advanceNext = useCallback(() => {
@@ -89,7 +89,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   }, [stop, speak, currentTargetWord.label]);
 
   const handleCardClick = useCallback(
-    (card: VocabItem) => {
+    (card: VocabularyItem) => {
       // One answer per question. Extra taps while the result is on screen used
       // to be recorded as further attempts against the same word.
       if (feedback !== null) return;
@@ -140,7 +140,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       step={step}
       title="Audio Recall Match"
       words={words}
-      groupId={groupId}
+      lessonId={lessonId}
       dispatch={dispatch}
       footer={
         <div className="w-full flex items-center justify-between text-xs font-sans font-semibold text-muted-foreground px-1">

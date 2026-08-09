@@ -1,12 +1,12 @@
 import { memo, useState, useEffect, useCallback, useRef, useMemo } from "react";
 import type { Action } from "../types";
 import { useAudio } from "../shared/useAudio";
-import { resolveGroup, resolveWorldForGroup, getWords } from "../data/lessons";
+import { resolveGroup, resolveUnitForLesson, getWords } from "../data/lessons";
 import { SceneCanvas } from "./SceneCanvas";
 import { VocabSidebar } from "./VocabSidebar";
 
 interface Props {
-  groupId: string;
+  lessonId: string;
   dispatch: React.Dispatch<Action>;
 }
 
@@ -17,10 +17,10 @@ interface Props {
  * Mode (the five auto-advancing drills) is for. A learner can enter this
  * screen, or Game Mode, independently from group selection.
  */
-export const LearnWordsScreen = memo(function LearnWordsScreen({ groupId, dispatch }: Props) {
-  const group = useMemo(() => resolveGroup(groupId), [groupId]);
+export const LearnWordsScreen = memo(function LearnWordsScreen({ lessonId, dispatch }: Props) {
+  const group = useMemo(() => resolveGroup(lessonId), [lessonId]);
   const words = useMemo(() => getWords(group.wordIds), [group.wordIds]);
-  const topics = useMemo(() => resolveWorldForGroup(groupId).topics, [groupId]);
+  const topics = useMemo(() => resolveUnitForLesson(lessonId).topics, [lessonId]);
 
   const [activeId, setActiveId] = useState<string>(words[0].id);
   const [isMobileBrowseOpen, setIsMobileBrowseOpen] = useState(false);
@@ -69,8 +69,8 @@ export const LearnWordsScreen = memo(function LearnWordsScreen({ groupId, dispat
   const handlePlayGame = useCallback(() => {
     stop();
     const wordQueue = [activeId, ...group.wordIds.filter((id) => id !== activeId)];
-    dispatch({ type: "START_LESSON", groupId, wordQueue });
-  }, [stop, dispatch, activeId, group.wordIds, groupId]);
+    dispatch({ type: "START_LESSON", lessonId, mode: "SKILL_PRACTICE", wordQueue });
+  }, [stop, dispatch, activeId, group.wordIds, lessonId]);
 
   const handleClose = useCallback(() => {
     stop();

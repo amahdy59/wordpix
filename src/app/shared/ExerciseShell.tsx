@@ -1,6 +1,6 @@
 import { memo, useState } from "react";
 import type { Action } from "../types";
-import { resolveGroup, type VocabItem } from "../data/lessons";
+import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { LessonHeader } from "./LessonHeader";
 import { HomeIndicator } from "./HomeIndicator";
 import { ExitConfirmModal } from "./ExitConfirmModal";
@@ -14,9 +14,9 @@ interface Props {
   /** Title shown in LessonHeader */
   title: string;
   /** Group vocabulary words */
-  words: VocabItem[];
+  words: VocabularyItem[];
 
-  groupId: string;
+  lessonId: string;
   dispatch: React.Dispatch<Action>;
   children: React.ReactNode;
   footer: React.ReactNode;
@@ -40,17 +40,17 @@ export const ExerciseShell = memo(function ExerciseShell({
   title,
   words,
 
-  groupId,
+  lessonId,
   dispatch,
   children,
   footer,
 }: Props) {
   const [showExitModal, setShowExitModal] = useState(false);
 
-  // `groupId` used to default to "essential-furniture" and fall back to the
+  // `lessonId` used to default to "essential-furniture" and fall back to the
   // first group on an unknown id, so a review session — or any lesson whose id
   // went missing — was confidently labelled with the wrong group's name.
-  const group = resolveGroup(groupId, words.map((w) => w.id));
+  const group = resolveGroup(lessonId, words.map((w) => w.id));
   const nextStepLabel = step < LAST_STEP_INDEX ? STEP_LABELS[step + 1] : "Session Completion";
 
   return (

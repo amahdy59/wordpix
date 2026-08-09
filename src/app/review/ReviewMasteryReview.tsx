@@ -2,7 +2,7 @@ import { memo, useMemo } from "react";
 import { Flame, BookOpen, ArrowRight, RotateCcw, Clock, AlertCircle, CheckCircle2, Layers } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { getWords, REVIEW_GROUP_ID, type VocabItem } from "../data/lessons";
+import { getWords, REVIEW_GROUP_ID, type VocabularyItem } from "../data/lessons";
 
 /** Words per review session. */
 const REVIEW_SESSION_SIZE = 5;
@@ -21,7 +21,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
   const memoryItems = useMemo(() => {
     const memory = progress.wordMemory;
     const items: Array<{
-      word: VocabItem;
+      word: VocabularyItem;
       status: "overdue" | "today" | "upcoming";
       daysDiff: number;
       mastery: string;
@@ -77,7 +77,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
     const queue = [...dueQueue, ...weakestFirst].slice(0, REVIEW_SESSION_SIZE);
     if (queue.length === 0) return;
 
-    dispatch({ type: "START_LESSON", groupId: REVIEW_GROUP_ID, wordQueue: queue });
+    dispatch({ type: "START_LESSON", lessonId: REVIEW_GROUP_ID, mode: "SMART_REVIEW", wordQueue: queue });
   };
 
   const canStartReview = memoryItems.length > 0;

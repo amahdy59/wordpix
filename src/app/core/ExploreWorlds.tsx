@@ -2,7 +2,8 @@ import { memo } from "react";
 import { Lock, Compass, ArrowRight, Sparkles, BookOpen } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { LESSON_WORLDS } from "../data/lessons";
+import { COURSE_UNITS } from "../data/lessons";
+import { Badge, ProgressBar } from "../shared";
 
 const imgBathroom = "/images/core/bathroom-scene.webp";
 const imgKitchen  = "/images/core/kitchen-scene.webp";
@@ -16,7 +17,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
 
   // Only "bedroom" is real today, but rendering from the registry rather than
   // a hardcoded card means a second registered world shows up here for free.
-  const activeWorlds = Object.values(LESSON_WORLDS);
+  const activeWorlds = Object.values(COURSE_UNITS);
 
   return (
     <div className="flex flex-col gap-6 p-5 lg:p-8">
@@ -59,19 +60,19 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                   className="absolute inset-0 object-cover size-full"
                   src={world.heroImage}
                 />
-                <div className="absolute top-3 start-3 bg-secondary text-primary font-sans font-bold text-xs px-3 py-1 rounded-full border border-primary/20 shadow-wp-xs flex items-center gap-1.5">
+                <Badge variant="primary" size="md" className="absolute top-3 start-3 shadow-wp-xs">
                   <Sparkles className="size-3.5" />
                   <span>Ready &amp; Fully Unlocked</span>
-                </div>
+                </Badge>
               </div>
 
               {/* World Info & Details */}
               <div className="flex-1 flex flex-col justify-between gap-4">
                 <div className="flex flex-col gap-2">
                   <div className="flex items-center justify-between">
-                    <span className="font-sans font-bold text-xs text-wp-amber bg-wp-amber/10 px-2.5 py-0.5 rounded-full border border-wp-amber/20">
+                    <Badge variant="amber" size="sm">
                       Level 1 · A1 Beginner
-                    </span>
+                    </Badge>
                     <span className="font-sans text-xs text-muted-foreground font-semibold">{totalWords} Vocabulary Words</span>
                   </div>
 
@@ -84,30 +85,17 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                 </div>
 
                 {/* Progress bar */}
-                <div className="flex flex-col gap-1.5">
-                  <div className="flex justify-between items-center text-xs font-sans font-semibold">
-                    <span className="text-muted-foreground">Unit Completed</span>
-                    <span className="text-primary font-bold">{progressPercent}% ({wordsPracticedCount}/{totalWords})</span>
-                  </div>
-                  <div
-                    className="bg-muted rounded-full h-3 w-full overflow-hidden border border-border"
-                    role="progressbar"
-                    aria-valuenow={progressPercent}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                    aria-label={`${world.name} progress: ${progressPercent}%`}
-                  >
-                    <div
-                      className="bg-gradient-to-r from-primary to-wp-teal h-full rounded-full transition-all duration-500"
-                      style={{ width: `${progressPercent}%` }}
-                    />
-                  </div>
-                </div>
+                <ProgressBar
+                  progressPercent={progressPercent}
+                  label="Unit Completed"
+                  labelRight={`${progressPercent}% (${wordsPracticedCount}/${totalWords})`}
+                  ariaLabel={`${world.name} progress: ${progressPercent}%`}
+                />
 
                 {/* Start CTA */}
                 <button
                   type="button"
-                  onClick={() => dispatch({ type: "GO", to: "lesson-entry", worldId: world.id })}
+                  onClick={() => dispatch({ type: "GO", to: "lesson-entry", unitId: world.id })}
                   className="w-full sm:w-auto bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 px-6 font-sans font-bold text-wp-text-on-blue text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all flex items-center justify-center gap-2 self-start mt-2 min-h-[48px]"
                 >
                   <BookOpen className="size-4" />
@@ -142,9 +130,9 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
             <div>
               <p className="font-sans font-bold text-foreground text-base">Bathroom</p>
               <p className="font-sans text-muted-foreground text-xs mt-0.5">30 Vocabulary Items</p>
-              <span className="font-sans text-[10px] font-semibold text-muted-foreground bg-muted px-2 py-0.5 rounded-full inline-block mt-1">
+              <Badge variant="muted" size="sm" className="inline-flex mt-1">
                 Unlocks at 100% Bedroom Mastery
-              </span>
+              </Badge>
             </div>
           </div>
 

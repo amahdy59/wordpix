@@ -2,11 +2,12 @@ import { memo, useMemo } from "react";
 import { Flame, ArrowRight, RotateCcw, WifiOff } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { nextGroupToStudy, resolveWorldForGroup } from "../data/lessons";
+import { nextGroupToStudy, resolveUnitForLesson } from "../data/lessons";
 import { calculateDaysBetween, getLocalDateString, getWeekActivity } from "../../features/gamification/streak";
 import { useOfflineReadiness } from "../shared/useOfflineReadiness";
 import { useI18n } from "../context/I18nContext";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
+import { PageContainer, Section, Card, Badge } from "../shared";
 
 const imgAvatar = "/images/core/learner-avatar.webp";
 
@@ -52,21 +53,21 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
   // The Today card used to hardcode BEDROOM_GROUPS[0], so "Continue Bedroom"
   // restarted Essential Furniture forever no matter how much had been learned.
   // It now resumes the first group still holding a word that is not yet strong.
-  const activeGroup = useMemo(
+  const activeLesson = useMemo(
     () => nextGroupToStudy((wordId) => progress.wordMemory[wordId]?.mastery === "strong"),
     [progress.wordMemory]
   );
-  const groupWordsSeen = useMemo(
-    () => activeGroup.wordIds.filter((id) => progress.wordMemory[id]).length,
-    [activeGroup.wordIds, progress.wordMemory]
+  const lessonWordsSeen = useMemo(
+    () => activeLesson.wordIds.filter((id) => progress.wordMemory[id]).length,
+    [activeLesson.wordIds, progress.wordMemory]
   );
-  const estimatedMinutes = Math.max(1, Math.round((activeGroup.wordIds.length * SECONDS_PER_WORD) / 60));
-  const activeWorld = useMemo(() => resolveWorldForGroup(activeGroup.id), [activeGroup.id]);
+  const estimatedMinutes = Math.max(1, Math.round((activeLesson.wordIds.length * SECONDS_PER_WORD) / 60));
+  const activeUnit = useMemo(() => resolveUnitForLesson(activeLesson.id), [activeLesson.id]);
 
-  const offline = useOfflineReadiness(activeWorld.id);
+  const offline = useOfflineReadiness(activeUnit.id);
 
   return (
-    <div className="flex flex-col gap-6 w-full max-w-6xl mx-auto">
+    <PageContainer>
       {/* Top Learner Greeting */}
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-3.5">
@@ -89,16 +90,16 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         </div>
 
         {offline && offline.ready && (
-          <div className="hidden sm:flex items-center gap-1.5 text-[11px] font-sans font-semibold text-wp-teal bg-wp-teal/10 px-3 py-1.5 rounded-full border border-wp-teal/20">
+          <Badge variant="teal" size="md" className="hidden sm:flex">
             <WifiOff className="size-3.5" aria-hidden />
             <span>{t("dashboard.offlineReady")}</span>
-          </div>
+          </Badge>
         )}
         {offline && !offline.ready && offline.cached > 0 && (
-          <div className="hidden sm:flex items-center gap-1.5 text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-3 py-1.5 rounded-full border border-border">
+          <Badge variant="muted" size="md" className="hidden sm:flex">
             <WifiOff className="size-3.5" aria-hidden />
             <span>{t("dashboard.offlineSaving", { cached: offline.cached, total: offline.total })}</span>
-          </div>
+          </Badge>
         )}
       </header>
 
@@ -114,19 +115,16 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         {/* ── LEFT COLUMN ─────────────────────────────────────────────────────── */}
         <div className="flex flex-col gap-6">
           {/* SECTION 1: TODAY */}
-          <section aria-labelledby="section-today" className="flex flex-col gap-3">
-            <span id="section-today" className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground">
-              {t("dashboard.today")}
-            </span>
-            <div className="bg-wp-card rounded-3xl border border-primary/30 p-6 flex flex-col gap-4 shadow-wp-xs hover:border-primary/50 transition-all">
+          <Section id="section-today" title={t("dashboard.today")}>
+            <Card variant="primary">
               <div className="flex items-center justify-between">
                 {/* The world and the estimate. The group's own name is the
                     heading below, so repeating it here just said it twice. */}
                 <span className="font-sans font-semibold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full">
-                  {activeWorld.name} · ~{num(estimatedMinutes)} min
+                  {activeUnit.name} · ~{num(estimatedMinutes)} min
                 </span>
                 <span className="font-sans text-xs font-bold text-muted-foreground">
-                  {num(groupWordsSeen)} of {num(activeGroup.wordIds.length)} words
+                  {num(lessonWordsSeen)} of {num(activeLesson.wordIds.length)} words
                 </span>
               </div>
 
@@ -137,10 +135,10 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
               */}
               <div>
                 <h2 className="font-sans font-black text-foreground text-2xl lg:text-3xl">
-                  {activeGroup.name}
+                  {activeLesson.name}
                 </h2>
                 <p className="font-sans text-muted-foreground text-sm mt-1 leading-relaxed">
-                  {activeGroup.description}
+                  {activeLesson.description}
                 </p>
               </div>
 
@@ -149,8 +147,9 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                 onClick={() =>
                   dispatch({
                     type: "START_LESSON",
-                    groupId: activeGroup.id,
-                    wordQueue: activeGroup.wordIds,
+                    lessonId: activeLesson.id,
+                    mode: "NEW_LESSON",
+                    wordQueue: activeLesson.wordIds,
                   })
                 }
                 className="w-full bg-primary hover:opacity-90 active:opacity-80 rounded-2xl py-4 font-sans font-black text-primary-foreground text-lg min-h-[56px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-md transition-all flex items-center justify-center gap-2 mt-2"
@@ -158,15 +157,12 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                 <span>{t("dashboard.continueSession")}</span>
                 <ArrowRight className="size-5" />
               </button>
-            </div>
-          </section>
+            </Card>
+          </Section>
 
           {/* SECTION 2: REVIEW */}
-          <section aria-labelledby="section-review" className="flex flex-col gap-3">
-            <span id="section-review" className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground">
-              {t("dashboard.review")}
-            </span>
-            <div className="bg-wp-card rounded-3xl border border-border p-6 flex flex-col gap-4 shadow-wp-xs">
+          <Section id="section-review" title={t("dashboard.review")}>
+            <Card variant="default">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2 text-foreground font-sans font-bold text-sm">
                   <RotateCcw className="size-4 text-primary" />
@@ -187,18 +183,15 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                 <span>{t("dashboard.startReview")}</span>
                 <ArrowRight className="size-4" />
               </button>
-            </div>
-          </section>
+            </Card>
+          </Section>
         </div>
 
         {/* ── RIGHT COLUMN ────────────────────────────────────────────────────── */}
         <div className="flex flex-col gap-6">
           {/* SECTION 3: YOUR LEARNING */}
-          <section aria-labelledby="section-learning" className="flex flex-col gap-3">
-            <span id="section-learning" className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground">
-              {t("dashboard.yourLearning")}
-            </span>
-            <div className="bg-wp-card rounded-3xl border border-border p-6 flex flex-col gap-4 shadow-wp-xs">
+          <Section id="section-learning" title={t("dashboard.yourLearning")}>
+            <Card>
               <div className="grid grid-cols-3 gap-3 text-center">
                 <div className="bg-wp-green-light/40 border border-wp-green/20 rounded-2xl p-3.5 flex flex-col items-center">
                   <span className="font-sans font-black text-wp-green text-2xl">{num(strongCount)}</span>
@@ -213,15 +206,12 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                   <span className="font-sans font-semibold text-muted-foreground text-xs mt-1">{t("dashboard.due")}</span>
                 </div>
               </div>
-            </div>
-          </section>
+            </Card>
+          </Section>
 
           {/* SECTION 4: THIS WEEK */}
-          <section aria-labelledby="section-this-week" className="flex flex-col gap-3">
-            <span id="section-this-week" className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground">
-              {t("dashboard.thisWeek")}
-            </span>
-            <div className="bg-wp-card rounded-3xl border border-border p-6 flex flex-col gap-4 shadow-wp-xs">
+          <Section id="section-this-week" title={t("dashboard.thisWeek")}>
+            <Card>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2 font-sans font-bold text-sm text-foreground">
                   <Flame className="size-4 text-wp-amber" />
@@ -250,10 +240,10 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                   </li>
                 ))}
               </ul>
-            </div>
-          </section>
+            </Card>
+          </Section>
         </div>
       </div>
-    </div>
+    </PageContainer>
   );
 });

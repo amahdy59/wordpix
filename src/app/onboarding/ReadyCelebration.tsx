@@ -1,7 +1,7 @@
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
-import { LESSON_WORLDS, DEFAULT_WORLD_ID } from "../data/lessons";
+import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/lessons";
 import { Sparkles, CheckCircle2, ArrowRight, UserCircle, BookOpen, Layers } from "lucide-react";
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
 }
 
 export function ReadyCelebration({ dispatch }: Props) {
-  const flagshipWorld = LESSON_WORLDS[DEFAULT_WORLD_ID];
+  const flagshipWorld = COURSE_UNITS[DEFAULT_UNIT_ID];
   return (
     <div className="bg-background flex flex-col md:flex-row min-h-svh md:min-h-[560px] relative overflow-hidden">
       <StatusBar />

@@ -34,23 +34,23 @@ const LESSON_STEP_COUNT = 5;
 describe("a lesson teaches the group it was started for", () => {
   it.each(BEDROOM_GROUPS.map((g) => [g.id, g.name] as const))(
     "keeps %s's own words end to end",
-    (groupId) => {
-      const group = resolveGroup(groupId);
+    (lessonId) => {
+      const group = resolveGroup(lessonId);
       let state = reducer(
         { id: "lesson-entry" },
-        { type: "START_LESSON", groupId, wordQueue: group.wordIds }
+        { type: "START_LESSON", lessonId, wordQueue: group.wordIds }
       );
 
       // Walk the whole flow; the queue must survive every step.
       for (let step = 0; step < LESSON_STEP_COUNT; step += 1) {
-        expect(state).toMatchObject({ id: "lesson", groupId });
+        expect(state).toMatchObject({ id: "lesson", lessonId });
         if (state.id === "lesson") {
           expect(state.wordQueue).toEqual(group.wordIds);
         }
         state = reducer(state, { type: "LESSON_NEXT" });
       }
 
-      expect(state).toMatchObject({ id: "lesson-complete", groupId });
+      expect(state).toMatchObject({ id: "lesson-complete", lessonId });
       if (state.id === "lesson-complete") {
         expect(state.wordQueue).toEqual(group.wordIds);
       }
@@ -61,7 +61,7 @@ describe("a lesson teaches the group it was started for", () => {
     const pillows = resolveGroup("bedding-linens-2");
     const state = reducer(
       { id: "lesson-entry" },
-      { type: "START_LESSON", groupId: pillows.id, wordQueue: pillows.wordIds }
+      { type: "START_LESSON", lessonId: pillows.id, wordQueue: pillows.wordIds }
     );
 
     expect(state.id).toBe("lesson");
@@ -95,8 +95,8 @@ describe("resolveGroup", () => {
 describe("every group's words exist", () => {
   it.each(BEDROOM_GROUPS.map((g) => [g.id] as const))(
     "%s resolves all of its word ids",
-    (groupId) => {
-      const group = resolveGroup(groupId);
+    (lessonId) => {
+      const group = resolveGroup(lessonId);
       // getWords silently drops unknown ids, which is how the "Pillows &
       // Covers" group once shrank from five words to three without anyone
       // noticing. A length mismatch means an id has no vocabulary entry.

@@ -1,7 +1,7 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { Action } from "../types";
-import type { VocabItem } from "../data/lessons";
-import { resolveWorldForGroup } from "../data/lessons";
+import type { VocabularyItem } from "../data/lessons";
+import { resolveUnitForLesson } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getRichSentence } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
@@ -18,15 +18,15 @@ import { HelpCircle, Keyboard } from "lucide-react";
 
 interface Props {
   step: number;
-  words: VocabItem[];
-  groupId: string;
+  words: VocabularyItem[];
+  lessonId: string;
   dispatch: React.Dispatch<Action>;
 }
 
 export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
   step,
   words,
-  groupId,
+  lessonId,
   dispatch,
 }: Props) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -41,7 +41,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
   usePrefetchImage(queue.next);
 
   const options = useMemo(() => {
-    const worldVocab = resolveWorldForGroup(groupId).vocabulary;
+    const worldVocab = resolveUnitForLesson(lessonId).vocabulary;
     const distractorsPool = worldVocab.filter((w) => w.id !== currentTargetWord.id);
     const shuffledDistractors = shuffleArray(distractorsPool).slice(0, 5);
     
@@ -53,7 +53,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
     finalOptions.splice(correctIndex, 0, currentTargetWord);
     
     return finalOptions;
-  }, [currentTargetWord, groupId]);
+  }, [currentTargetWord, lessonId]);
 
   const advanceNext = useCallback(() => {
     setSelectedId(null);
@@ -113,7 +113,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       step={step}
       title="Mastery Quick Quiz"
       words={words}
-      groupId={groupId}
+      lessonId={lessonId}
       dispatch={dispatch}
       footer={
         <div className="w-full flex items-center justify-between text-xs font-sans font-semibold text-muted-foreground px-1">

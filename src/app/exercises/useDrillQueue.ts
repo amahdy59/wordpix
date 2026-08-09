@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useReducer } from "react";
-import type { VocabItem } from "../data/lessons";
+import type { VocabularyItem } from "../data/lessons";
 
 /**
  * The order in which a drill asks its words, including words it re-asks.
@@ -56,10 +56,10 @@ function reducer(state: QueueState, action: QueueAction): QueueState {
 
 export interface DrillQueue {
   /** The word being asked, or null once the drill is finished. */
-  current: VocabItem | null;
+  current: VocabularyItem | null;
   /** The word after this one, or null on the last question — lets a caller
    *  warm its image in the background instead of loading it cold. */
-  next: VocabItem | null;
+  next: VocabularyItem | null;
   /** 1-based position of the current question. */
   position: number;
   /** Questions asked so far, including re-asks already scheduled. */
@@ -74,7 +74,7 @@ export interface DrillQueue {
   submit: (correct: boolean) => void;
 }
 
-export function useDrillQueue(words: VocabItem[]): DrillQueue {
+export function useDrillQueue(words: VocabularyItem[]): DrillQueue {
   const [state, dispatch] = useReducer(
     reducer,
     words,

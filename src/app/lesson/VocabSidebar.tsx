@@ -1,20 +1,20 @@
 import { memo, useState } from "react";
 import { AudioButton } from "../shared/AudioButton";
 import { WordImage } from "../shared/WordImage";
-import type { TopicCategory, VocabItem } from "../data/lessons";
+import type { TopicCategory, VocabularyItem } from "../data/lessons";
 import { useProgress } from "../data/progress";
 import { type MasteryLevel } from "../context/LearnerContext";
 import { useAudio } from "../shared/useAudio";
 import { X, CheckCircle2 } from "lucide-react";
 
 interface Props {
-  vocabulary: VocabItem[];
+  vocabulary: VocabularyItem[];
   /** Name of the word group being taught, used as the panel heading. */
   groupName: string;
   /** The active world's topic categories, for the filter chips below. */
   topics: TopicCategory[];
   /** Reserved for callers that pass the active word; the list renders from activeId. */
-  activeWord?: VocabItem;
+  activeWord?: VocabularyItem;
   activeId: string;
   isPlaying: boolean;
   isError: boolean;

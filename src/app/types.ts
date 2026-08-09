@@ -3,6 +3,7 @@
 export type OnboardStep = "splash" | "language" | "ready";
 export type TabId = "home" | "explore" | "practice" | "profile";
 
+export type LearnerMode = "NEW_LESSON" | "SMART_REVIEW" | "SKILL_PRACTICE";
 export type SkillCategory = "listening" | "reading" | "speaking" | "writing";
 
 export type SkillExerciseId =
@@ -59,15 +60,16 @@ export type Screen =
   | { id: "explore" }
   | { id: "practice" }
   | { id: "profile" }
-  | { id: "lesson-entry"; worldId?: string }
+  | { id: "lesson-entry"; unitId?: string }
   /** Self-paced word browsing for one group — no session, no scoring. */
-  | { id: "learn-words"; groupId: string }
+  | { id: "learn-words"; lessonId: string }
   | { id: "skill-hub" }
   | { id: "skill-exercise"; exerciseId: SkillExerciseId }
   | {
       id: "lesson";
+      mode: LearnerMode;
       sessionId: string;
-      groupId: string;
+      lessonId: string;
       wordQueue: string[];
       step: number;
       attempts: AnswerAttempt[];
@@ -75,8 +77,9 @@ export type Screen =
     }
   | {
       id: "lesson-complete";
+      mode: LearnerMode;
       sessionId: string;
-      groupId: string;
+      lessonId: string;
       wordQueue: string[];
       attempts: AnswerAttempt[];
     };
@@ -87,17 +90,17 @@ export type GoTarget = TabId | "lesson-entry" | "lesson-complete" | "skill-hub" 
 export type Action =
   | { type: "ONBOARD_NEXT" }
   | { type: "GO"; to: Exclude<GoTarget, "lesson-entry"> }
-  | { type: "GO"; to: "lesson-entry"; worldId?: string }
+  | { type: "GO"; to: "lesson-entry"; unitId?: string }
   | { type: "OPEN_SKILL_EXERCISE"; exerciseId: SkillExerciseId }
   /** Enters self-paced word browsing for one group. */
-  | { type: "GO_LEARN_WORDS"; groupId: string }
+  | { type: "GO_LEARN_WORDS"; lessonId: string }
   /**
-   * `groupId` is required, and deliberately so. It was optional, and three of
+   * `lessonId` is required, and deliberately so. It was optional, and three of
    * the four call sites omitted it — so the reducer fell back to the first
    * group and every lesson in the app collapsed onto the same five words.
    * Making it required turns that class of bug into a compile error.
    */
-  | { type: "START_LESSON"; groupId: string; wordQueue?: string[] }
+  | { type: "START_LESSON"; lessonId: string; mode?: LearnerMode; wordQueue?: string[] }
   | { type: "LESSON_ATTEMPT"; wordId?: string; correct: boolean }
   | { type: "LESSON_NEXT" }
   | { type: "LESSON_PREVIOUS" }

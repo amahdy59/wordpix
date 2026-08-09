@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import type { VocabItem } from "../data/lessons";
+import type { VocabularyItem } from "../data/lessons";
 import { getWordImageSrc } from "./WordImage";
 
 /**
@@ -10,7 +10,7 @@ import { getWordImageSrc } from "./WordImage";
  * catches up. The current question already has its own `<img>` loading
  * eagerly, so only the *next* word needs a background nudge here.
  */
-export function usePrefetchImage(word: VocabItem | null | undefined, sizePreset: "thumb" | "card" | "hero" = "card") {
+export function usePrefetchImage(word: VocabularyItem | null | undefined, sizePreset: "thumb" | "card" | "hero" = "card") {
   useEffect(() => {
     if (!word) return;
     const img = new Image();

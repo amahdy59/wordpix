@@ -2,7 +2,7 @@ import { useEffect, useReducer, Suspense, useCallback, lazy } from "react";
 import type { Screen, Action, OnboardStep, TabId } from "./types";
 import type { RouteIntent } from "./router/useHashRouter";
 import { ErrorBoundary } from "./shared/ErrorBoundary";
-import { getWords, resolveGroup, LESSON_WORLDS, DEFAULT_WORLD_ID } from "./data/lessons";
+import { getWords, resolveGroup, COURSE_UNITS, DEFAULT_UNIT_ID } from "./data/lessons";
 import { LearnerProvider } from "./context/LearnerContext";
 import { I18nProvider, useI18n } from "./context/I18nContext";
 import { useHashRouter, hashToScreen } from "./router/useHashRouter";
@@ -74,7 +74,7 @@ export function reducer(state: Screen, action: Action): Screen {
       : { id: "home" };
   }
   if (action.type === "GO") {
-    if (action.to === "lesson-entry") return { id: "lesson-entry", worldId: action.worldId };
+    if (action.to === "lesson-entry") return { id: "lesson-entry", unitId: action.unitId };
     if (action.to === "skill-hub") return { id: "skill-hub" };
     // Onboarding is the one screen that carries required state of its own;
     // `{ id: "onboarding" }` without a step renders nothing at all.
@@ -83,8 +83,9 @@ export function reducer(state: Screen, action: Action): Screen {
       if (state.id === "lesson") {
         return {
           id: "lesson-complete",
+          mode: state.mode,
           sessionId: state.sessionId,
-          groupId: state.groupId,
+          lessonId: state.lessonId,
           wordQueue: state.wordQueue,
           attempts: state.attempts,
         };
@@ -97,22 +98,23 @@ export function reducer(state: Screen, action: Action): Screen {
     return { id: "skill-exercise", exerciseId: action.exerciseId };
   }
   if (action.type === "GO_LEARN_WORDS") {
-    return { id: "learn-words", groupId: action.groupId };
+    return { id: "learn-words", lessonId: action.lessonId };
   }
   if (action.type === "START_LESSON") {
     const queue =
       action.wordQueue && action.wordQueue.length > 0
         ? action.wordQueue
-        : resolveGroup(action.groupId).wordIds;
+        : resolveGroup(action.lessonId).wordIds;
     const sessionId = "sess_" + Date.now() + "_" + Math.random().toString(36).slice(2, 7);
 
     return {
       id: "lesson",
+      mode: action.mode || "NEW_LESSON",
       sessionId,
-      // The caller's group id is kept verbatim. It used to be replaced by
-      // whichever group the lookup happened to resolve to, which is how a
+      // The caller's lesson id is kept verbatim. It used to be replaced by
+      // whichever lesson the lookup happened to resolve to, which is how a
       // review session ended up labelled "Essential Furniture".
-      groupId: action.groupId,
+      lessonId: action.lessonId,
       wordQueue: queue,
       step: 0,
       attempts: [],
@@ -140,8 +142,9 @@ export function reducer(state: Screen, action: Action): Screen {
     if (state.step >= 4) {
       return {
         id: "lesson-complete",
+        mode: state.mode,
         sessionId: state.sessionId,
-        groupId: state.groupId,
+        lessonId: state.lessonId,
         wordQueue: state.wordQueue,
         attempts: state.attempts,
       };
@@ -188,7 +191,7 @@ function describeScreen(screen: Screen, t: (key: string) => string): string {
     case "lesson-complete":
       return "Session complete";
     case "lesson-entry":
-      return LESSON_WORLDS[screen.worldId ?? DEFAULT_WORLD_ID].name;
+      return COURSE_UNITS[screen.unitId ?? DEFAULT_UNIT_ID].name;
     case "skill-hub":
       return "Skill exercises";
     case "skill-exercise":
@@ -280,7 +283,7 @@ function AppInner() {
     }
     if (screen.id === "lesson") return; // Not reachable from a URL alone.
     if (screen.id === "learn-words") {
-      dispatch({ type: "GO_LEARN_WORDS", groupId: screen.groupId });
+      dispatch({ type: "GO_LEARN_WORDS", lessonId: screen.lessonId });
       return;
     }
     dispatch({ type: "GO", to: screen.id });
@@ -325,8 +328,8 @@ function AppInner() {
     if (state.id === "practice") return <ReviewMasteryReview dispatch={dispatch} />;
     if (state.id === "profile") return <ProfileStats dispatch={dispatch} />;
     if (state.id === "lesson-entry")
-      return <LessonWorldEntry worldId={state.worldId ?? DEFAULT_WORLD_ID} dispatch={dispatch} />;
-    if (state.id === "learn-words") return <LearnWordsScreen groupId={state.groupId} dispatch={dispatch} />;
+      return <LessonWorldEntry unitId={state.unitId ?? DEFAULT_UNIT_ID} dispatch={dispatch} />;
+    if (state.id === "learn-words") return <LearnWordsScreen lessonId={state.lessonId} dispatch={dispatch} />;
     if (state.id === "skill-hub") return <SkillExerciseHub dispatch={dispatch} />;
 
     if (state.id === "skill-exercise") {
@@ -342,22 +345,22 @@ function AppInner() {
       const groupWords = getWords(state.wordQueue);
 
       // An empty queue means the session was built from an unknown id, which
-      // should be impossible now that groupId is required. Recovering with the
+      // should be impossible now that lessonId is required. Recovering with the
       // group's own words keeps a corrupted persisted state from rendering a
       // lesson with nothing in it.
       const activeGroupWords =
-        groupWords.length > 0 ? groupWords : getWords(resolveGroup(state.groupId).wordIds);
+        groupWords.length > 0 ? groupWords : getWords(resolveGroup(state.lessonId).wordIds);
 
       if (activeGroupWords.length === 0) return <ExploreWorlds dispatch={dispatch} />;
 
-      if (ex === "listen") return <ExerciseListenRepeat words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;
-      if (ex === "recall") return <ExerciseRecallMatch words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;
-      if (ex === "fill") return <ExerciseContextFill words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;
-      if (ex === "builder") return <ExerciseSentenceBuilder words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;
-      if (ex === "quiz") return <ExerciseQuickQuiz words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;
+      if (ex === "listen") return <ExerciseListenRepeat words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
+      if (ex === "recall") return <ExerciseRecallMatch words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
+      if (ex === "fill") return <ExerciseContextFill words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
+      if (ex === "builder") return <ExerciseSentenceBuilder words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
+      if (ex === "quiz") return <ExerciseQuickQuiz words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
     }
     if (state.id === "lesson-complete") {
-      return <LessonCompleteResults sessionId={state.sessionId} groupId={state.groupId} attempts={state.attempts} wordQueue={state.wordQueue} dispatch={dispatch} />;
+      return <LessonCompleteResults sessionId={state.sessionId} lessonId={state.lessonId} attempts={state.attempts} wordQueue={state.wordQueue} dispatch={dispatch} />;
     }
     return null;
   }

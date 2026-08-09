@@ -1,11 +1,11 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
-import type { VocabItem } from "../data/lessons";
+import type { VocabularyItem } from "../data/lessons";
 
 export type ImageAltMode = "learning" | "assessment" | "decorative";
 export type ImageSizePreset = "thumb" | "card" | "hero";
 
 interface Props {
-  word: VocabItem;
+  word: VocabularyItem;
   className?: string;
   loading?: "eager" | "lazy";
   decoding?: "async" | "auto" | "sync";
@@ -41,7 +41,7 @@ function getResponsiveImageUrl(url: string, preset: ImageSizePreset = "card"): s
 }
 
 /** The URL a `WordImage` would request for this word, for a prefetch warm-up. */
-export function getWordImageSrc(word: VocabItem, preset: ImageSizePreset = "card"): string {
+export function getWordImageSrc(word: VocabularyItem, preset: ImageSizePreset = "card"): string {
   return getResponsiveImageUrl(word.img, preset);
 }
 
@@ -68,7 +68,7 @@ function escapeXml(value: string) {
   });
 }
 
-export function getWordFallbackDataUrl(word: VocabItem, altMode: ImageAltMode = "learning") {
+export function getWordFallbackDataUrl(word: VocabularyItem, altMode: ImageAltMode = "learning") {
   const [background, foreground] = TOPIC_COLORS[word.topic] ?? ["#f1f5f9", "#0f172a"];
   const label = escapeXml(word.label);
   const topic = escapeXml(word.topic.replace("-", " ").toUpperCase());
@@ -105,12 +105,12 @@ export function getWordFallbackDataUrl(word: VocabItem, altMode: ImageAltMode = 
  *      unanswerable without sight — "Picture option A" is safe but useless,
  *      which is what this returned before descriptions existed.
  *
- * VocabItem.description satisfies both: it describes the object without naming
+ * VocabularyItem.description satisfies both: it describes the object without naming
  * it, verified by lessons_content.test.ts. The label itself is revealed only
  * once the option has been chosen (`checked`), which is the teaching moment.
  */
 export function getImageAltText(
-  word: VocabItem,
+  word: VocabularyItem,
   altMode: ImageAltMode,
   optionIndex = 0,
   checked = false

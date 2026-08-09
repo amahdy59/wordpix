@@ -5,10 +5,10 @@ import { HomeIndicator } from "../shared/HomeIndicator";
 import { CloseButton } from "../shared/CloseButton";
 import { AudioButton } from "../shared/AudioButton";
 import { WordImage } from "../shared/WordImage";
-import type { VocabItem } from "../data/lessons";
+import type { VocabularyItem } from "../data/lessons";
 
 interface Props {
-  activeWord: VocabItem;
+  activeWord: VocabularyItem;
   /** Name of the word group this session teaches, shown in the header. */
   groupName: string;
   activeId: string;

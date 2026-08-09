@@ -1,7 +1,7 @@
 import { useEffect, useCallback } from "react";
 import type { Screen, SkillExerciseId } from "../types";
 import { SKILL_EXERCISE_IDS } from "../exercises/registry";
-import { LESSON_WORLDS, DEFAULT_WORLD_ID, resolveWorldForGroup } from "../data/lessons";
+import { COURSE_UNITS, DEFAULT_UNIT_ID, resolveUnitForLesson } from "../data/lessons";
 
 const SKILL_EXERCISE_ID_SET = new Set<string>(SKILL_EXERCISE_IDS);
 
@@ -47,9 +47,9 @@ const STATIC_ROUTES: Record<string, { title: string; getScreen: () => Screen }> 
  * `#/learn/<world>[/step-N|/complete]` used to hardcode the literal "bedroom"
  * segment, so a second registered world would have needed a router code
  * change instead of a data-only addition. Matches any id actually registered
- * in `LESSON_WORLDS` — today that is still only "bedroom".
+ * in `COURSE_UNITS` — today that is still only "bedroom".
  */
-const WORLD_ID_GROUP = Object.keys(LESSON_WORLDS)
+const WORLD_ID_GROUP = Object.keys(COURSE_UNITS)
   .map((id) => id.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
   .join("|");
 const LESSON_ENTRY_PATTERN = new RegExp(`^#\\/learn\\/(${WORLD_ID_GROUP})$`);
@@ -64,7 +64,7 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
   if (screen.id === "practice") return { hash: "#/practice", title: "WordPix — Daily Review" };
   if (screen.id === "profile") return { hash: "#/profile", title: "WordPix — Learner Profile" };
   if (screen.id === "lesson-entry") {
-    const world = LESSON_WORLDS[screen.worldId ?? DEFAULT_WORLD_ID];
+    const world = COURSE_UNITS[screen.unitId ?? DEFAULT_UNIT_ID];
     return { hash: `#/learn/${world.id}`, title: `WordPix — ${world.name}` };
   }
   if (screen.id === "skill-hub") return { hash: "#/skills", title: "WordPix — Skill Exercises" };
@@ -72,14 +72,14 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
     return { hash: `#/skills/${screen.exerciseId}`, title: `WordPix — ${screen.exerciseId}` };
   }
   if (screen.id === "lesson") {
-    const world = resolveWorldForGroup(screen.groupId);
+    const world = resolveUnitForLesson(screen.lessonId);
     return {
       hash: `#/learn/${world.id}/step-${screen.step + 1}`,
       title: `WordPix — ${world.name} Lesson (${screen.step + 1}/${LESSON_STEP_COUNT})`,
     };
   }
   if (screen.id === "lesson-complete") {
-    const world = resolveWorldForGroup(screen.groupId);
+    const world = resolveUnitForLesson(screen.lessonId);
     return { hash: `#/learn/${world.id}/complete`, title: "WordPix — Session Complete" };
   }
   return { hash: "#/home", title: "WordPix" };
@@ -90,7 +90,7 @@ export function hashToRoute(hash: string): RouteIntent | null {
 
   const stepMatch = normalized.match(LESSON_STEP_PATTERN);
   if (stepMatch) {
-    const world = LESSON_WORLDS[stepMatch[1]];
+    const world = COURSE_UNITS[stepMatch[1]];
     const oneBased = Number(stepMatch[2]);
     if (world && oneBased >= 1 && oneBased <= LESSON_STEP_COUNT) {
       return {
@@ -108,11 +108,11 @@ export function hashToRoute(hash: string): RouteIntent | null {
 
   const entryMatch = normalized.match(LESSON_ENTRY_PATTERN);
   if (entryMatch) {
-    const world = LESSON_WORLDS[entryMatch[1]];
+    const world = COURSE_UNITS[entryMatch[1]];
     if (!world) return null;
     return {
       kind: "screen",
-      screen: { id: "lesson-entry", worldId: world.id },
+      screen: { id: "lesson-entry", unitId: world.id },
       title: `WordPix — ${world.name}`,
     };
   }

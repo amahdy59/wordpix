@@ -1,6 +1,6 @@
 import { memo, useEffect, useRef, useState, useCallback } from "react";
 import type { Action } from "../types";
-import type { VocabItem } from "../data/lessons";
+import type { VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
@@ -12,8 +12,8 @@ import { usePrefetchImage } from "../shared/usePrefetchImage";
 
 interface Props {
   step: number;
-  words: VocabItem[];
-  groupId: string;
+  words: VocabularyItem[];
+  lessonId: string;
   dispatch: React.Dispatch<Action>;
 }
 
@@ -29,7 +29,7 @@ const WORD_DWELL_MS = 3800;
 export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   step,
   words,
-  groupId,
+  lessonId,
   dispatch,
 }: Props) {
   const [activeWordIndex, setActiveWordIndex] = useState<number>(0);
@@ -100,7 +100,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
       step={step}
       title="Pronunciation & Audio Drill"
       words={words}
-      groupId={groupId}
+      lessonId={lessonId}
       dispatch={dispatch}
       footer={
         <div className="flex flex-col gap-2">

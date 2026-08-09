@@ -1,7 +1,7 @@
 // Centralized Lesson Vocabulary Data Layer for WordPix
 // Synchronized from Figma Design (Node 44:2 — The Bedroom)
 
-export interface VocabItem {
+export interface VocabularyItem {
   id: string;
   label: string;
   phonetic: string;
@@ -30,7 +30,7 @@ export interface TopicCategory {
   itemsCount: number;
 }
 
-export interface WordGroup {
+export interface Lesson {
   id: string;
   name: string;
   topicId: string;
@@ -44,14 +44,14 @@ export interface WordGroup {
  * "Bathroom"/"Kitchen" previews; this is the data shape they'd need to become
  * real).
  */
-export interface LessonWorld {
+export interface CourseUnit {
   id: string;
   name: string;
   description: string;
   heroImage: string;
   topics: TopicCategory[];
-  groups: WordGroup[];
-  vocabulary: VocabItem[];
+  groups: Lesson[];
+  vocabulary: VocabularyItem[];
 }
 
 const LOCAL_WORD_IMAGES = "./word-images";
@@ -66,7 +66,7 @@ export const BEDROOM_TOPICS: TopicCategory[] = [
   { id: "electronics", name: "Electronics", itemsCount: 8 },
 ];
 
-export const BEDROOM_GROUPS: WordGroup[] = [
+export const BEDROOM_GROUPS: Lesson[] = [
   {
     id: "essential-furniture",
     name: "Essential Furniture",
@@ -97,7 +97,7 @@ export const BEDROOM_GROUPS: WordGroup[] = [
   },
 ];
 
-export const BEDROOM_VOCABULARY: VocabItem[] = [
+export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   // ── Furniture ─────────────────────────────────────────────────────────────
   {
     id: "bed",
@@ -589,7 +589,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
  * `BEDROOM_GROUPS`/`BEDROOM_VOCABULARY` stay exported as-is below — this is an
  * index over them, not a replacement.
  */
-export const LESSON_WORLDS: Record<string, LessonWorld> = {
+export const COURSE_UNITS: Record<string, CourseUnit> = {
   bedroom: {
     id: "bedroom",
     name: "The Bedroom",
@@ -603,11 +603,11 @@ export const LESSON_WORLDS: Record<string, LessonWorld> = {
 };
 
 /** The world a learner lands in when nothing else specifies one. */
-export const DEFAULT_WORLD_ID = "bedroom";
+export const DEFAULT_UNIT_ID = "bedroom";
 
 /** O(1) id lookup across every world's vocabulary, not just one. */
 const VOCAB_BY_ID = new Map(
-  Object.values(LESSON_WORLDS).flatMap((world) => world.vocabulary.map((item) => [item.id, item] as const))
+  Object.values(COURSE_UNITS).flatMap((world) => world.vocabulary.map((item) => [item.id, item] as const))
 );
 
 /**
@@ -621,7 +621,7 @@ const VOCAB_BY_ID = new Map(
 export const REVIEW_GROUP_ID = "daily-review";
 
 /** Every group across every registered world. */
-const ALL_GROUPS = Object.values(LESSON_WORLDS).flatMap((world) => world.groups);
+const ALL_GROUPS = Object.values(COURSE_UNITS).flatMap((world) => world.groups);
 
 /**
  * Resolves a group id to the group it names, searching every world rather
@@ -630,11 +630,11 @@ const ALL_GROUPS = Object.values(LESSON_WORLDS).flatMap((world) => world.groups)
  * The `?? ALL_GROUPS[0]` fallback that used to be inlined at four separate
  * call sites is the reason every lesson claimed to be "Essential Furniture":
  * an absent or unknown id silently became the first group instead of failing
- * loudly. It survives here as a single last resort, but `groupId` is now
+ * loudly. It survives here as a single last resort, but `lessonId` is now
  * required on START_LESSON so nothing reaches it by omission.
  */
-export function resolveGroup(groupId: string, wordIds: string[] = []): WordGroup {
-  if (groupId === REVIEW_GROUP_ID) {
+export function resolveGroup(lessonId: string, wordIds: string[] = []): Lesson {
+  if (lessonId === REVIEW_GROUP_ID) {
     return {
       id: REVIEW_GROUP_ID,
       name: "Daily Review",
@@ -643,11 +643,11 @@ export function resolveGroup(groupId: string, wordIds: string[] = []): WordGroup
       description: "Words your memory schedule says are due today.",
     };
   }
-  const group = ALL_GROUPS.find((g) => g.id === groupId);
+  const group = ALL_GROUPS.find((g) => g.id === lessonId);
   if (!group) {
-    // @ts-ignore
+    // @ts-expect-error: TypeScript doesn't know about Vite's import.meta.env
     if (import.meta.env?.DEV) {
-      throw new Error(`UNKNOWN_GROUP: Could not resolve group ID "${groupId}"`);
+      throw new Error(`UNKNOWN_GROUP: Could not resolve group ID "${lessonId}"`);
     }
     return ALL_GROUPS[0];
   }
@@ -656,19 +656,19 @@ export function resolveGroup(groupId: string, wordIds: string[] = []): WordGroup
 
 /**
  * The world that owns a given group id, for building a world-scoped route or
- * label from state that only carries a `groupId`. Falls back to the default
+ * label from state that only carries a `lessonId`. Falls back to the default
  * world, mirroring `resolveGroup`'s fallback posture.
  */
-export function resolveWorldForGroup(groupId: string): LessonWorld {
-  const owner = Object.values(LESSON_WORLDS).find((world) => world.groups.some((g) => g.id === groupId));
-  return owner ?? LESSON_WORLDS[DEFAULT_WORLD_ID];
+export function resolveUnitForLesson(lessonId: string): CourseUnit {
+  const owner = Object.values(COURSE_UNITS).find((world) => world.groups.some((g) => g.id === lessonId));
+  return owner ?? COURSE_UNITS[DEFAULT_UNIT_ID];
 }
 
 /** Looks up vocabulary items by id, preserving the order of `wordIds`. */
-export function getWords(wordIds: string[]): VocabItem[] {
+export function getWords(wordIds: string[]): VocabularyItem[] {
   return wordIds
     .map((id) => VOCAB_BY_ID.get(id))
-    .filter((item): item is VocabItem => Boolean(item));
+    .filter((item): item is VocabularyItem => Boolean(item));
 }
 
 /**
@@ -679,7 +679,7 @@ export function getWords(wordIds: string[]): VocabItem[] {
  * made. Picks the first group with any word not yet strong, and falls back to
  * the last group once everything is mastered.
  */
-export function nextGroupToStudy(isMastered: (wordId: string) => boolean): WordGroup {
+export function nextGroupToStudy(isMastered: (wordId: string) => boolean): Lesson {
   return (
     ALL_GROUPS.find((g) => g.wordIds.some((id) => !isMastered(id))) ??
     ALL_GROUPS[ALL_GROUPS.length - 1]

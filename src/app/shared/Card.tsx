@@ -23,19 +23,22 @@ export const Card = memo(function Card({ children, variant = "default", classNam
   const interactiveStyles = onClick && variant !== "primary" ? "cursor-pointer hover:border-border/80" : "";
 
   return (
-    <div 
-      className={`${baseStyles} ${variantStyles} ${interactiveStyles} ${className}`}
-      onClick={onClick}
-      role={onClick ? "button" : undefined}
-      tabIndex={onClick ? 0 : undefined}
-      onKeyDown={onClick ? (e) => {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          onClick();
-        }
-      } : undefined}
-    >
-      {children}
-    </div>
+    <>
+      {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
+      <div 
+        className={`${baseStyles} ${variantStyles} ${interactiveStyles} ${className}`}
+        onClick={onClick}
+        role={onClick ? "button" : undefined}
+        tabIndex={onClick ? 0 : undefined}
+        onKeyDown={onClick ? (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            onClick();
+          }
+        } : undefined}
+      >
+        {children}
+      </div>
+    </>
   );
 });

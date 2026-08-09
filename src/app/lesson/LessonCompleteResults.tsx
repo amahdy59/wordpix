@@ -11,7 +11,7 @@ import { useSound } from "../shared/useSound";
 interface Props {
   sessionId?: string;
   attempts: AnswerAttempt[];
-  groupId?: string;
+  lessonId?: string;
   wordQueue?: string[];
   dispatch: React.Dispatch<Action>;
 }
@@ -19,14 +19,14 @@ interface Props {
 export const LessonCompleteResults = memo(function LessonCompleteResults({
   sessionId = "sess_default",
   attempts,
-  groupId = "essential-furniture",
+  lessonId = "essential-furniture",
   wordQueue = ["bed", "nightstand", "dresser", "wardrobe", "desk"],
   dispatch,
 }: Props) {
   const { progress, recordSessionCompletion } = useProgress();
   const { playLevelUp } = useSound();
 
-  const group = resolveGroup(groupId, wordQueue);
+  const group = resolveGroup(lessonId, wordQueue);
 
   const correct = attempts.filter((a) => a.correct).length;
   // 0 attempts = 0% accuracy (never 100%)

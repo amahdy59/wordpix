@@ -36,7 +36,7 @@ export const BottomTabBar = memo(function BottomTabBar({ activeTab, dispatch }: 
               className={`flex flex-col gap-1 items-center justify-center h-14 w-[72px] rounded-xl min-h-[48px] min-w-[48px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:transition-colors ${isActive ? "text-primary bg-primary/10" : "text-muted-foreground hover:bg-muted/50"}`}
             >
               <Icon className="size-[22px]" aria-hidden />
-              <span className="font-sans font-bold text-[11px] leading-none">{label}</span>
+              <span className="font-sans font-bold text-[11px] leading-tight px-1 text-balance text-center min-w-0">{label}</span>
             </button>
           );
         })}

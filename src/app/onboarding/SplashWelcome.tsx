@@ -2,7 +2,7 @@ import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { useProgress } from "../data/progress";
-import { LESSON_WORLDS, DEFAULT_WORLD_ID } from "../data/lessons";
+import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/lessons";
 import { Sparkles, ArrowRight, BookOpen, Layers, CheckCircle2, Globe } from "lucide-react";
 
 const imgHero = "./scene-images/splash-hero.jpg";
@@ -13,7 +13,7 @@ interface Props {
 
 export function SplashWelcome({ dispatch }: Props) {
   const { setPreferences } = useProgress();
-  const flagshipWorld = LESSON_WORLDS[DEFAULT_WORLD_ID];
+  const flagshipWorld = COURSE_UNITS[DEFAULT_UNIT_ID];
   const advance = () => dispatch({ type: "ONBOARD_NEXT" });
 
   // Bypasses the level/goal picker for a learner who just wants in. Sets the

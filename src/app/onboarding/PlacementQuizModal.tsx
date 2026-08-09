@@ -1,11 +1,11 @@
 import { memo, useState } from "react";
 import { createPortal } from "react-dom";
 import { WordImage } from "../shared/WordImage";
-import { LESSON_WORLDS, DEFAULT_WORLD_ID } from "../data/lessons";
+import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/lessons";
 
 // Placement always starts from the default world's vocabulary — there is only
 // one world to place a learner into today.
-const PLACEMENT_VOCABULARY = LESSON_WORLDS[DEFAULT_WORLD_ID].vocabulary;
+const PLACEMENT_VOCABULARY = COURSE_UNITS[DEFAULT_UNIT_ID].vocabulary;
 import { useModalA11y } from "../shared/useModalA11y";
 import { Sparkles, X } from "lucide-react";
 
