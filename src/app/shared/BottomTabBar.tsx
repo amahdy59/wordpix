@@ -21,7 +21,7 @@ export const BottomTabBar = memo(function BottomTabBar({ activeTab, dispatch }: 
   const { t } = useI18n();
 
   return (
-    <nav aria-label={t("nav.label")} className="bg-background/85 backdrop-blur-xl border-t border-border/50 pb-[env(safe-area-inset-bottom)]">
+    <nav aria-label={t("nav.label")} className="bg-background/85 backdrop-blur-xl border-t border-border/50 pb-[env(safe-area-inset-bottom)] lg:hidden">
       <div className="flex items-start justify-around px-2 pt-2 pb-1">
         {TABS.map(({ id, labelKey, icon: Icon }) => {
           const isActive = id === activeTab;

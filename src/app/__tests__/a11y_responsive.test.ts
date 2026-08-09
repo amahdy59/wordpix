@@ -148,7 +148,7 @@ describe("Focus visibility (WCAG 2.4.7)", () => {
 });
 
 describe("Skip link (WCAG 2.4.1)", () => {
-  const appSource = read("app/App.tsx");
+  const appSource = readFileSync(resolve(__dirname, "../router/RouterView.tsx"), "utf8");
 
   it("renders a skip link targeting the main landmark", () => {
     expect(appSource).toContain('href="#main-content"');

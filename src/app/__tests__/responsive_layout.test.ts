@@ -51,3 +51,20 @@ describe("Quiz question legibility", () => {
     expect(source).toMatch(/flex flex-wrap items-center justify-between/);
   });
 });
+
+describe("AppShell responsive components", () => {
+  it("uses lg:flex-row to switch from mobile column to desktop row", () => {
+    const source = stripComments(read("shared/AppShell.tsx"));
+    expect(source).toMatch(/lg:flex-row/);
+  });
+
+  it("SidebarNav is hidden on mobile and visible on desktop", () => {
+    const source = stripComments(read("shared/SidebarNav.tsx"));
+    expect(source).toMatch(/hidden\s+lg:flex/);
+  });
+
+  it("BottomTabBar is visible on mobile and hidden on desktop", () => {
+    const source = stripComments(read("shared/BottomTabBar.tsx"));
+    expect(source).toMatch(/lg:hidden/);
+  });
+});

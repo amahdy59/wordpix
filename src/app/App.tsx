@@ -1,8 +1,7 @@
-import { useEffect, useReducer, Suspense, useCallback, lazy } from "react";
-import type { Screen, Action, OnboardStep, TabId } from "./types";
+import { useEffect, useReducer, useCallback } from "react";
+import type { Screen } from "./types";
 import type { RouteIntent } from "./router/useHashRouter";
 import { ErrorBoundary } from "./shared/ErrorBoundary";
-import { getWords, resolveGroup, COURSE_UNITS, DEFAULT_UNIT_ID } from "./data/lessons";
 import { LearnerProvider } from "./context/LearnerContext";
 import { I18nProvider, useI18n } from "./context/I18nContext";
 import { useHashRouter, hashToScreen } from "./router/useHashRouter";
@@ -11,225 +10,8 @@ import { registerServiceWorker } from "../pwa";
 import { startSystemThemeSync } from "./shared/themeStore";
 import { useApplyAccessibilityPreferences } from "./shared/useAccessibilityPreferences";
 
-// Synchronous core onboarding screens
-import { SplashWelcome } from "./onboarding/SplashWelcome";
-import { LanguageSelect } from "./onboarding/LanguageSelect";
-import { ReadyCelebration } from "./onboarding/ReadyCelebration";
-
-// Synchronous core tab views for instant (<1ms) tab switching
-import { HomeDashboard } from "./core/HomeDashboard";
-import { ExploreWorlds } from "./core/ExploreWorlds";
-import { ReviewMasteryReview } from "./review/ReviewMasteryReview";
-import { ProfileStats } from "./core/ProfileStats";
-import { AppShell } from "./shared/AppShell";
-import { SkillExerciseHub } from "./core/SkillExerciseHub";
-
-// Lesson & exercise screens are only needed once a lesson actually starts, not
-// on first paint, so — like the 35-screen skill-exercise registry — they are
-// code-split behind React.lazy instead of shipping in the initial bundle.
-const LessonWorldEntry = lazy(() =>
-  import("./lesson/LessonWorldEntry").then((m) => ({ default: m.LessonWorldEntry }))
-);
-const LearnWordsScreen = lazy(() =>
-  import("./lesson/LearnWordsScreen").then((m) => ({ default: m.LearnWordsScreen }))
-);
-const LessonCompleteResults = lazy(() =>
-  import("./lesson/LessonCompleteResults").then((m) => ({ default: m.LessonCompleteResults }))
-);
-
-const ExerciseListenRepeat = lazy(() =>
-  import("./exercises/ExerciseListenRepeat").then((m) => ({ default: m.ExerciseListenRepeat }))
-);
-const ExerciseRecallMatch = lazy(() =>
-  import("./exercises/ExerciseRecallMatch").then((m) => ({ default: m.ExerciseRecallMatch }))
-);
-const ExerciseContextFill = lazy(() =>
-  import("./exercises/ExerciseContextFill").then((m) => ({ default: m.ExerciseContextFill }))
-);
-const ExerciseSentenceBuilder = lazy(() =>
-  import("./exercises/ExerciseSentenceBuilder").then((m) => ({ default: m.ExerciseSentenceBuilder }))
-);
-const ExerciseQuickQuiz = lazy(() =>
-  import("./exercises/ExerciseQuickQuiz").then((m) => ({ default: m.ExerciseQuickQuiz }))
-);
-
-import { SKILL_EXERCISES } from "./exercises/registry";
-
-// ── State machine ─────────────────────────────────────────────────────────────
-
-const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "ready"];
-const TABBED_IDS: ReadonlySet<string> = new Set(["home", "explore", "practice", "profile"]);
-
-const STORAGE_KEY = "wordpix:learner-state:v4";
-
-export function reducer(state: Screen, action: Action): Screen {
-  if (action.type === "ONBOARD_NEXT") {
-    if (state.id !== "onboarding") return state;
-    const i = ONBOARD_STEPS.indexOf(state.step);
-    // No DOM writes here: reducers must stay pure. React double-invokes them in
-    // StrictMode and may replay them, so announcing from inside one produced
-    // duplicate announcements. The announcement now happens in an effect.
-    return i < ONBOARD_STEPS.length - 1
-      ? { id: "onboarding", step: ONBOARD_STEPS[i + 1] }
-      : { id: "home" };
-  }
-  if (action.type === "GO") {
-    if (action.to === "lesson-entry") return { id: "lesson-entry", unitId: action.unitId };
-    if (action.to === "skill-hub") return { id: "skill-hub" };
-    // Onboarding is the one screen that carries required state of its own;
-    // `{ id: "onboarding" }` without a step renders nothing at all.
-    if (action.to === "onboarding") return { id: "onboarding", step: "splash" };
-    if (action.to === "lesson-complete") {
-      if (state.id === "lesson") {
-        return {
-          id: "lesson-complete",
-          mode: state.mode,
-          sessionId: state.sessionId,
-          lessonId: state.lessonId,
-          wordQueue: state.wordQueue,
-          attempts: state.attempts,
-        };
-      }
-      return state;
-    }
-    return { id: action.to };
-  }
-  if (action.type === "OPEN_SKILL_EXERCISE") {
-    return { id: "skill-exercise", exerciseId: action.exerciseId };
-  }
-  if (action.type === "GO_LEARN_WORDS") {
-    return { id: "learn-words", lessonId: action.lessonId };
-  }
-  if (action.type === "START_LESSON") {
-    const queue =
-      action.wordQueue && action.wordQueue.length > 0
-        ? action.wordQueue
-        : resolveGroup(action.lessonId).wordIds;
-    const sessionId = "sess_" + Date.now() + "_" + Math.random().toString(36).slice(2, 7);
-
-    return {
-      id: "lesson",
-      mode: action.mode || "NEW_LESSON",
-      sessionId,
-      // The caller's lesson id is kept verbatim. It used to be replaced by
-      // whichever lesson the lookup happened to resolve to, which is how a
-      // review session ended up labelled "Essential Furniture".
-      lessonId: action.lessonId,
-      wordQueue: queue,
-      step: 0,
-      attempts: [],
-      startedAt: new Date().toISOString(),
-    };
-  }
-  if (action.type === "LESSON_ATTEMPT") {
-    if (state.id !== "lesson") return state;
-    const wordId = action.wordId || state.wordQueue[0] || "bed";
-    return {
-      ...state,
-      attempts: [
-        ...state.attempts,
-        {
-          exerciseStep: state.step,
-          wordId,
-          correct: action.correct,
-          answeredAt: new Date().toISOString(),
-        },
-      ],
-    };
-  }
-  if (action.type === "LESSON_NEXT") {
-    if (state.id !== "lesson") return state;
-    if (state.step >= 4) {
-      return {
-        id: "lesson-complete",
-        mode: state.mode,
-        sessionId: state.sessionId,
-        lessonId: state.lessonId,
-        wordQueue: state.wordQueue,
-        attempts: state.attempts,
-      };
-    }
-    return { ...state, step: state.step + 1 };
-  }
-  if (action.type === "LESSON_PREVIOUS") {
-    if (state.id !== "lesson") return state;
-    if (state.step === 0) return { id: "lesson-entry" };
-    return { ...state, step: state.step - 1 };
-  }
-  if (action.type === "LESSON_GOTO_STEP") {
-    // Browser Back/Forward moving through the lesson's history entries. The
-    // session, queue, and recorded attempts are preserved — only the step
-    // moves, which is why the URL cannot simply be replayed as a whole Screen.
-    if (state.id !== "lesson") return state;
-    if (action.step < 0 || action.step > 4) return state;
-    if (action.step === state.step) return state;
-    return { ...state, step: action.step };
-  }
-  return state;
-}
-
-function ariaLiveAnnounce(msg: string) {
-  const el = document.getElementById("a11y-live-region");
-  if (el) el.textContent = msg;
-}
-
-/** Human-readable name of the current screen, for the live region. */
-function describeScreen(screen: Screen, t: (key: string) => string): string {
-  switch (screen.id) {
-    case "onboarding":
-      return `${t("app.title")}: ${screen.step}`;
-    case "home":
-      return t("nav.home");
-    case "explore":
-      return t("nav.explore");
-    case "practice":
-      return t("nav.practice");
-    case "profile":
-      return t("nav.profile");
-    case "lesson":
-      return `Lesson step ${screen.step + 1} of 6`;
-    case "lesson-complete":
-      return "Session complete";
-    case "lesson-entry":
-      return COURSE_UNITS[screen.unitId ?? DEFAULT_UNIT_ID].name;
-    case "skill-hub":
-      return "Skill exercises";
-    case "skill-exercise":
-      return screen.exerciseId;
-    default:
-      return "";
-  }
-}
-
-const EX_STEPS = ["listen", "recall", "fill", "builder", "quiz"] as const;
-type ExStep = (typeof EX_STEPS)[number];
-
-const LoadingFallback = () => {
-  const { t } = useI18n();
-  return (
-    <div className="flex-1 flex items-center justify-center min-h-[300px] p-6 text-center" aria-live="polite">
-      <div className="flex flex-col items-center gap-3">
-        <div
-          className="size-10 rounded-full border-4 border-primary border-t-transparent motion-safe:animate-spin"
-          aria-hidden
-        />
-        <p className="font-sans font-semibold text-muted-foreground text-sm">{t("app.loading")}</p>
-      </div>
-    </div>
-  );
-};
-
-const SkipLink = () => {
-  const { t } = useI18n();
-  return (
-    <a
-      href="#main-content"
-      className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:start-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg font-sans font-semibold text-sm z-50 motion-safe:transition-none"
-    >
-      {t("app.skipToContent")}
-    </a>
-  );
-};
+import { reducer, ariaLiveAnnounce, describeScreen, STORAGE_KEY } from "./store/reducer";
+import { RouterView } from "./router/RouterView";
 
 function AppInner() {
   const { t } = useI18n();
@@ -253,15 +35,6 @@ function AppInner() {
     }
   );
 
-  /**
-   * Applies a URL change to the state machine.
-   *
-   * This used to be `dispatch({ type: "GO", to: newScreen.id as TabId })`,
-   * which threw away the resolved screen's payload. Navigating to #/onboarding
-   * produced `{ id: "onboarding" }` with no `step`, so renderContent fell
-   * through every branch and rendered a blank page. The `as TabId` cast is what
-   * let that compile.
-   */
   const handleRoute = useCallback((intent: RouteIntent) => {
     if (intent.kind === "lesson-step") {
       dispatch({ type: "LESSON_GOTO_STEP", step: intent.step });
@@ -295,122 +68,26 @@ function AppInner() {
     registerServiceWorker();
   }, []);
 
-  // Keeps "system" theme honest when the OS switches while the app is open.
   useEffect(() => startSystemThemeSync(), []);
 
-  // Applies text scaling and high-contrast mode to <html>.
   useApplyAccessibilityPreferences();
 
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
     } catch (error) {
-      // Safari private mode and quota exhaustion both throw here. This was
-      // previously unguarded inside an effect, so it took the app down.
-      // LearnerContext already wrapped its own writes; this one did not.
       console.warn("Could not persist navigation state.", error);
     }
   }, [state]);
 
-  // Announce navigation changes from an effect, not from the reducer.
   useEffect(() => {
     ariaLiveAnnounce(describeScreen(state, t));
   }, [state, t]);
 
-  function renderContent() {
-    if (state.id === "onboarding") {
-      if (state.step === "splash") return <SplashWelcome dispatch={dispatch} />;
-      if (state.step === "language") return <LanguageSelect dispatch={dispatch} />;
-      if (state.step === "ready") return <ReadyCelebration dispatch={dispatch} />;
-    }
-    if (state.id === "home") return <HomeDashboard dispatch={dispatch} />;
-    if (state.id === "explore") return <ExploreWorlds dispatch={dispatch} />;
-    if (state.id === "practice") return <ReviewMasteryReview dispatch={dispatch} />;
-    if (state.id === "profile") return <ProfileStats dispatch={dispatch} />;
-    if (state.id === "lesson-entry")
-      return <LessonWorldEntry unitId={state.unitId ?? DEFAULT_UNIT_ID} dispatch={dispatch} />;
-    if (state.id === "learn-words") return <LearnWordsScreen lessonId={state.lessonId} dispatch={dispatch} />;
-    if (state.id === "skill-hub") return <SkillExerciseHub dispatch={dispatch} />;
-
-    if (state.id === "skill-exercise") {
-      const SkillExercise = SKILL_EXERCISES[state.exerciseId];
-      // Unknown id (e.g. a stale persisted state) falls back rather than
-      // rendering nothing.
-      if (!SkillExercise) return <ExploreWorlds dispatch={dispatch} />;
-      return <SkillExercise dispatch={dispatch} />;
-    }
-
-    if (state.id === "lesson") {
-      const ex: ExStep = EX_STEPS[state.step] ?? "listen";
-      const groupWords = getWords(state.wordQueue);
-
-      // An empty queue means the session was built from an unknown id, which
-      // should be impossible now that lessonId is required. Recovering with the
-      // group's own words keeps a corrupted persisted state from rendering a
-      // lesson with nothing in it.
-      const activeGroupWords =
-        groupWords.length > 0 ? groupWords : getWords(resolveGroup(state.lessonId).wordIds);
-
-      if (activeGroupWords.length === 0) return <ExploreWorlds dispatch={dispatch} />;
-
-      if (ex === "listen") return <ExerciseListenRepeat words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
-      if (ex === "recall") return <ExerciseRecallMatch words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
-      if (ex === "fill") return <ExerciseContextFill words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
-      if (ex === "builder") return <ExerciseSentenceBuilder words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
-      if (ex === "quiz") return <ExerciseQuickQuiz words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
-    }
-    if (state.id === "lesson-complete") {
-      return <LessonCompleteResults sessionId={state.sessionId} lessonId={state.lessonId} attempts={state.attempts} wordQueue={state.wordQueue} dispatch={dispatch} />;
-    }
-    return null;
-  }
-
   return (
     <ErrorBoundary>
       <div id="a11y-live-region" className="sr-only" aria-live="polite" aria-atomic="true" />
-      <Suspense fallback={<LoadingFallback />}>
-        {state.id === "onboarding" && (
-          <div className="min-h-svh bg-secondary flex items-center justify-center p-0 md:p-8">
-            <SkipLink />
-            <div
-              id="main-content"
-              tabIndex={-1}
-              className="min-h-svh md:min-h-0 w-full max-w-5xl md:rounded-3xl md:overflow-hidden md:shadow-wp-md md:border md:border-border outline-none"
-            >
-              {renderContent()}
-            </div>
-          </div>
-        )}
-
-        {TABBED_IDS.has(state.id) && (
-          <>
-            <SkipLink />
-            <AppShell activeTab={state.id as TabId} dispatch={dispatch}>
-              {renderContent()}
-            </AppShell>
-          </>
-        )}
-
-        {state.id === "learn-words" && (
-          <div className="min-h-svh bg-background">
-            <SkipLink />
-            <div id="main-content" tabIndex={-1} className="w-full min-h-svh flex flex-col outline-none">
-              {renderContent()}
-            </div>
-          </div>
-        )}
-
-        {state.id !== "onboarding" &&
-          !TABBED_IDS.has(state.id) &&
-          state.id !== "learn-words" && (
-            <div className="min-h-svh bg-background">
-              <SkipLink />
-              <div id="main-content" tabIndex={-1} className="w-full min-h-svh flex flex-col outline-none">
-                {renderContent()}
-              </div>
-            </div>
-          )}
-      </Suspense>
+      <RouterView state={state} dispatch={dispatch} />
     </ErrorBoundary>
   );
 }

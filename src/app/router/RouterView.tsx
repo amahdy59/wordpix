@@ -1,0 +1,172 @@
+import { lazy, Suspense } from "react";
+import type { Screen, Action, TabId } from "../types";
+import { getWords, resolveGroup, DEFAULT_UNIT_ID } from "../data/lessons";
+import { useI18n } from "../context/I18nContext";
+import { AppShell } from "../shared/AppShell";
+import { TABBED_IDS } from "../store/reducer";
+
+// Synchronous core onboarding screens
+import { SplashWelcome } from "../onboarding/SplashWelcome";
+import { LanguageSelect } from "../onboarding/LanguageSelect";
+import { ReadyCelebration } from "../onboarding/ReadyCelebration";
+
+// Synchronous core tab views
+import { HomeDashboard } from "../core/HomeDashboard";
+import { ExploreWorlds } from "../core/ExploreWorlds";
+import { ReviewMasteryReview } from "../review/ReviewMasteryReview";
+import { ProfileStats } from "../core/ProfileStats";
+import { SkillExerciseHub } from "../core/SkillExerciseHub";
+
+// Lazy-loaded lesson and exercise screens
+const LessonWorldEntry = lazy(() =>
+  import("../lesson/LessonWorldEntry").then((m) => ({ default: m.LessonWorldEntry }))
+);
+const LearnWordsScreen = lazy(() =>
+  import("../lesson/LearnWordsScreen").then((m) => ({ default: m.LearnWordsScreen }))
+);
+const LessonCompleteResults = lazy(() =>
+  import("../lesson/LessonCompleteResults").then((m) => ({ default: m.LessonCompleteResults }))
+);
+
+const ExerciseListenRepeat = lazy(() =>
+  import("../exercises/ExerciseListenRepeat").then((m) => ({ default: m.ExerciseListenRepeat }))
+);
+const ExerciseRecallMatch = lazy(() =>
+  import("../exercises/ExerciseRecallMatch").then((m) => ({ default: m.ExerciseRecallMatch }))
+);
+const ExerciseContextFill = lazy(() =>
+  import("../exercises/ExerciseContextFill").then((m) => ({ default: m.ExerciseContextFill }))
+);
+const ExerciseSentenceBuilder = lazy(() =>
+  import("../exercises/ExerciseSentenceBuilder").then((m) => ({ default: m.ExerciseSentenceBuilder }))
+);
+const ExerciseQuickQuiz = lazy(() =>
+  import("../exercises/ExerciseQuickQuiz").then((m) => ({ default: m.ExerciseQuickQuiz }))
+);
+
+import { SKILL_EXERCISES } from "../exercises/registry";
+
+const EX_STEPS = ["listen", "recall", "fill", "builder", "quiz"] as const;
+type ExStep = (typeof EX_STEPS)[number];
+
+const LoadingFallback = () => {
+  const { t } = useI18n();
+  return (
+    <div className="flex-1 flex items-center justify-center min-h-[300px] p-6 text-center" aria-live="polite">
+      <div className="flex flex-col items-center gap-3">
+        <div
+          className="size-10 rounded-full border-4 border-primary border-t-transparent motion-safe:animate-spin"
+          aria-hidden
+        />
+        <p className="font-sans font-semibold text-muted-foreground text-sm">{t("app.loading")}</p>
+      </div>
+    </div>
+  );
+};
+
+export const SkipLink = () => {
+  const { t } = useI18n();
+  return (
+    <a
+      href="#main-content"
+      className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:start-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg font-sans font-semibold text-sm z-50 motion-safe:transition-none"
+    >
+      {t("app.skipToContent")}
+    </a>
+  );
+};
+
+export interface RouterViewProps {
+  state: Screen;
+  dispatch: React.Dispatch<Action>;
+}
+
+export function RouterView({ state, dispatch }: RouterViewProps) {
+  function renderContent() {
+    if (state.id === "onboarding") {
+      if (state.step === "splash") return <SplashWelcome dispatch={dispatch} />;
+      if (state.step === "language") return <LanguageSelect dispatch={dispatch} />;
+      if (state.step === "ready") return <ReadyCelebration dispatch={dispatch} />;
+    }
+    if (state.id === "home") return <HomeDashboard dispatch={dispatch} />;
+    if (state.id === "explore") return <ExploreWorlds dispatch={dispatch} />;
+    if (state.id === "practice") return <ReviewMasteryReview dispatch={dispatch} />;
+    if (state.id === "profile") return <ProfileStats dispatch={dispatch} />;
+    if (state.id === "lesson-entry")
+      return <LessonWorldEntry unitId={state.unitId ?? DEFAULT_UNIT_ID} dispatch={dispatch} />;
+    if (state.id === "learn-words") return <LearnWordsScreen lessonId={state.lessonId} dispatch={dispatch} />;
+    if (state.id === "skill-hub") return <SkillExerciseHub dispatch={dispatch} />;
+
+    if (state.id === "skill-exercise") {
+      const SkillExercise = SKILL_EXERCISES[state.exerciseId];
+      if (!SkillExercise) return <ExploreWorlds dispatch={dispatch} />;
+      return <SkillExercise dispatch={dispatch} />;
+    }
+
+    if (state.id === "lesson") {
+      const ex: ExStep = EX_STEPS[state.step] ?? "listen";
+      const groupWords = getWords(state.wordQueue);
+
+      const activeGroupWords =
+        groupWords.length > 0 ? groupWords : getWords(resolveGroup(state.lessonId).wordIds);
+
+      if (activeGroupWords.length === 0) return <ExploreWorlds dispatch={dispatch} />;
+
+      if (ex === "listen") return <ExerciseListenRepeat words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
+      if (ex === "recall") return <ExerciseRecallMatch words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
+      if (ex === "fill") return <ExerciseContextFill words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
+      if (ex === "builder") return <ExerciseSentenceBuilder words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
+      if (ex === "quiz") return <ExerciseQuickQuiz words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
+    }
+    if (state.id === "lesson-complete") {
+      return <LessonCompleteResults sessionId={state.sessionId} lessonId={state.lessonId} attempts={state.attempts} wordQueue={state.wordQueue} dispatch={dispatch} />;
+    }
+    return null;
+  }
+
+  return (
+    <Suspense fallback={<LoadingFallback />}>
+      {state.id === "onboarding" && (
+        <div className="min-h-svh bg-secondary flex items-center justify-center p-0 md:p-8">
+          <SkipLink />
+          <div
+            id="main-content"
+            tabIndex={-1}
+            className="min-h-svh md:min-h-0 w-full max-w-5xl md:rounded-3xl md:overflow-hidden md:shadow-wp-md md:border md:border-border outline-none"
+          >
+            {renderContent()}
+          </div>
+        </div>
+      )}
+
+      {TABBED_IDS.has(state.id) && (
+        <>
+          <SkipLink />
+          <AppShell activeTab={state.id as TabId} dispatch={dispatch}>
+            {renderContent()}
+          </AppShell>
+        </>
+      )}
+
+      {state.id === "learn-words" && (
+        <div className="min-h-svh bg-background">
+          <SkipLink />
+          <div id="main-content" tabIndex={-1} className="w-full min-h-svh flex flex-col outline-none">
+            {renderContent()}
+          </div>
+        </div>
+      )}
+
+      {state.id !== "onboarding" &&
+        !TABBED_IDS.has(state.id) &&
+        state.id !== "learn-words" && (
+          <div className="min-h-svh bg-background">
+            <SkipLink />
+            <div id="main-content" tabIndex={-1} className="w-full min-h-svh flex flex-col outline-none">
+              {renderContent()}
+            </div>
+          </div>
+        )}
+    </Suspense>
+  );
+}

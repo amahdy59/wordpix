@@ -11,7 +11,7 @@ const appDir = resolve(__dirname, "..");
 const read = (relativePath: string) => readFileSync(resolve(appDir, relativePath), "utf8");
 
 describe("Skill exercise registry", () => {
-  const appSource = read("App.tsx");
+  const appSource = read("router/RouterView.tsx");
   const typesSource = read("types.ts");
 
   it("covers every declared SkillExerciseId", () => {

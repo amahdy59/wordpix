@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { hashToRoute, screenToHash, hashToScreen } from "../router/useHashRouter";
-import { reducer } from "../App";
+import { reducer } from "../store/reducer";
 import type { Screen } from "../types";
 
 function lessonAt(step: number): Screen {

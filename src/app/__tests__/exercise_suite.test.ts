@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { reducer } from "../App";
+import { reducer } from "../store/reducer";
 import type { Screen } from "../types";
 
 describe("35 Multimodal Skill Exercises Suite", () => {
