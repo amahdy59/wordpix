@@ -199,7 +199,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
                 className={`rounded-xl p-3 sm:p-3.5 font-sans font-bold text-sm sm:text-base border-2 min-h-[48px] transition-colors duration-200 flex items-center justify-between shadow-wp-xs ${stateStyle} focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary`}
               >
                 <span className="capitalize">{option.label.toLowerCase()}</span>
-                <span className={`text-[11px] px-2 py-0.5 rounded-md font-bold ${isSelected || isRevealedAnswer ? "bg-white/20" : "bg-muted text-muted-foreground"}`}>
+                <span className={`hidden sm:inline-block text-[11px] px-2 py-0.5 rounded-md font-bold ${isSelected || isRevealedAnswer ? "bg-white/20" : "bg-muted text-muted-foreground"}`}>
                   [{idx + 1}]
                 </span>
               </motion.button>
