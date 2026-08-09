@@ -645,7 +645,6 @@ export function resolveGroup(lessonId: string, wordIds: string[] = []): Lesson {
   }
   const group = ALL_GROUPS.find((g) => g.id === lessonId);
   if (!group) {
-    // @ts-expect-error: TypeScript doesn't know about Vite's import.meta.env
     if (import.meta.env?.DEV) {
       throw new Error(`UNKNOWN_GROUP: Could not resolve group ID "${lessonId}"`);
     }
