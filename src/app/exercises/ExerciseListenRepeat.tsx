@@ -111,7 +111,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         {isPlaying ? `Now playing: ${currentWord.label}` : ""}
       </div>
 
-      <div className="flex flex-col gap-4 sm:gap-5 w-full">
+      <div className="flex flex-col gap-4 sm:gap-6 w-full">
         {/* Header note */}
         <div className="flex items-center justify-between px-1 gap-2 flex-wrap">
           <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs sm:text-sm">
@@ -168,50 +168,50 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           })}
         </div>
 
-        {/* Active Word & Audio Card */}
-        <div className="bg-wp-card border border-border rounded-2xl p-2.5 sm:p-3 flex flex-row items-center justify-between gap-2 sm:gap-3 shadow-sm">
+        {/* Fluid Target Image Banner */}
+        <div className="w-full aspect-video max-h-[50vh] sm:max-h-[60vh] relative rounded-3xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2">
+          <WordImage word={currentWord} width="1200" height="800" className="size-full object-cover" />
+          <div className="absolute top-3 start-3 sm:top-4 sm:start-4 bg-black/65 backdrop-blur-md text-white font-sans font-bold text-[11px] sm:text-xs px-3 py-1.5 rounded-xl border border-white/20 shadow-md flex items-center gap-1.5">
+            <Sparkles className="size-3.5 text-wp-amber animate-pulse" />
+            <span>Target Visual</span>
+          </div>
+
+          {/* Floating Arrows */}
           <button
             type="button"
             disabled={activeWordIndex === 0}
             onClick={() => handleSelectWordIndex(activeWordIndex - 1)}
-            className="size-11 min-h-[44px] min-w-[44px] shrink-0 rounded-xl border border-border flex items-center justify-center text-foreground hover:bg-muted disabled:opacity-30 transition-colors"
-            aria-label="Previous word in group"
+            className="absolute start-3 sm:start-4 top-1/2 -translate-y-1/2 size-10 sm:size-12 rounded-full bg-black/40 hover:bg-black/60 text-white backdrop-blur-sm flex items-center justify-center transition-all disabled:opacity-0 disabled:pointer-events-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            aria-label="Previous word"
           >
-            <ChevronLeft className="size-5" />
+            <ChevronLeft className="size-5 sm:size-6" />
           </button>
-
-          <button
-            type="button"
-            onClick={handleToggle}
-            aria-label={`Play audio pronunciation for ${currentWord.label}`}
-            className="flex-1 min-h-[44px] bg-secondary hover:bg-primary/10 rounded-xl px-4 py-2.5 flex items-center justify-center gap-3 border border-primary/20 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all group"
-          >
-            <div className="size-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform shrink-0">
-              <Volume2 className="size-5" />
-            </div>
-            <div className="flex flex-col items-start min-w-0">
-              <span className="font-sans font-black text-foreground text-lg sm:text-xl truncate">{currentWord.label}</span>
-              <span className="font-sans text-muted-foreground text-xs truncate">/{currentWord.phonetic}/</span>
-            </div>
-          </button>
-
           <button
             type="button"
             disabled={activeWordIndex === words.length - 1}
             onClick={() => handleSelectWordIndex(activeWordIndex + 1)}
-            className="size-11 min-h-[44px] min-w-[44px] shrink-0 rounded-xl border border-border flex items-center justify-center text-foreground hover:bg-muted disabled:opacity-30 transition-colors"
-            aria-label="Next word in group"
+            className="absolute end-3 sm:end-4 top-1/2 -translate-y-1/2 size-10 sm:size-12 rounded-full bg-black/40 hover:bg-black/60 text-white backdrop-blur-sm flex items-center justify-center transition-all disabled:opacity-0 disabled:pointer-events-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            aria-label="Next word"
           >
-            <ChevronRight className="size-5" />
+            <ChevronRight className="size-5 sm:size-6" />
           </button>
         </div>
 
-        {/* Fluid Target Image Banner (Larger, responsive max-h) */}
-        <div className="h-56 sm:h-72 md:h-80 max-h-[45vh] w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-md bg-muted shrink-0 mt-1">
-          <WordImage word={currentWord} width="800" height="500" className="size-full object-cover" />
-          <div className="absolute top-3 start-3 bg-black/65 backdrop-blur-md text-white font-sans font-bold text-[11px] sm:text-xs px-3 py-1.5 rounded-xl border border-white/20 shadow-md flex items-center gap-1.5">
-            <Sparkles className="size-3.5 text-wp-amber animate-pulse" />
-            <span>Target Visual</span>
+        {/* Word Info & Audio Action (No Container) */}
+        <div className="flex flex-col items-center justify-center mt-2 mb-2">
+          <div className="flex items-center justify-center gap-4 sm:gap-5 flex-wrap text-center">
+            <button
+              type="button"
+              onClick={handleToggle}
+              aria-label={`Play audio pronunciation for ${currentWord.label}`}
+              className="size-14 sm:size-16 rounded-full bg-primary hover:scale-105 active:scale-95 transition-transform text-primary-foreground flex items-center justify-center shadow-wp-md focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary group"
+            >
+              <Volume2 className={`size-6 sm:size-7 ${isPlaying ? "animate-pulse" : ""}`} />
+            </button>
+            <div className="flex items-baseline gap-2 sm:gap-3">
+              <span className="font-sans font-black text-foreground text-3xl sm:text-4xl lg:text-5xl">{currentWord.label}</span>
+              <span className="font-sans font-medium text-muted-foreground text-lg sm:text-xl lg:text-2xl">/{currentWord.phonetic}/</span>
+            </div>
           </div>
         </div>
 
