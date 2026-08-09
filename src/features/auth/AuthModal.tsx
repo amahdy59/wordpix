@@ -49,8 +49,12 @@ export function AuthModal({ onClose }: AuthModalProps) {
       // or at least to reflect the logged in state cleanly without complex re-renders.
       window.location.reload();
       onClose();
-    } catch (err: any) {
-      setError(err.message || "An error occurred during authentication.");
+    } catch (err) {
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError("An unknown error occurred.");
+      }
     } finally {
       setLoading(false);
     }

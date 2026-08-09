@@ -238,7 +238,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
       updater: (prev: LearnerStateSchema) => {
         nextState: LearnerStateSchema;
         mutationType?: MutationType;
-        mutationPayload?: any;
+        mutationPayload?: unknown;
       }
     ) => {
       setState((prev) => {

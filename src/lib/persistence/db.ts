@@ -4,7 +4,7 @@ import type { LearnerStateSchema } from "../../app/context/LearnerContext";
 export interface SyncOperation {
   id: string; // unique operation ID
   type: "update_preferences" | "update_accessibility" | "session_completed" | "add_xp" | "reset";
-  payload: any;
+  payload: unknown;
   createdAt: string;
   status: "pending" | "syncing" | "failed";
   retryCount: number;
@@ -79,7 +79,7 @@ export async function saveLearnerState(state: LearnerStateSchema): Promise<void>
  */
 export async function queueMutation(
   type: SyncOperation["type"],
-  payload: any
+  payload: unknown
 ): Promise<void> {
   try {
     const db = await getDB();

@@ -36,10 +36,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const signIn = async () => {
-    // Basic OAuth sign-in flow for demo, could be Google, etc.
-    // In a real app we'd have a UI for email/password or OAuth.
-    // For now, this is a placeholder where AuthModal would be invoked.
-    console.log("Sign In triggered");
+    // This will open a modal for real auth soon
   };
 
   const signOut = async () => {
