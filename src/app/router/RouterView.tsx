@@ -136,13 +136,15 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
         transition={{ duration: 0.2, ease: "easeInOut" }}
         className="flex-1 flex flex-col w-full min-h-full"
       >
-        {renderContent()}
+        <Suspense fallback={<LoadingFallback />}>
+          {renderContent()}
+        </Suspense>
       </motion.div>
     </AnimatePresence>
   );
 
   return (
-    <Suspense fallback={<LoadingFallback />}>
+    <>
       {state.id === "onboarding" && (
         <div className="min-h-svh bg-secondary flex items-center justify-center p-0 md:p-8">
           <SkipLink />
@@ -184,6 +186,6 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
             </div>
           </div>
         )}
-    </Suspense>
+    </>
   );
 }
