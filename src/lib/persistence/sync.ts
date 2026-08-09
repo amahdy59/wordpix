@@ -6,6 +6,7 @@ import { supabase } from "../supabase/client";
  */
 export async function syncQueue() {
   const db = await getDB();
+  if (!db) return;
   const tx = db.transaction("mutation_queue", "readwrite");
   const store = tx.objectStore("mutation_queue");
   const pendingOps = await store.index("by-status").getAll("pending");
@@ -157,10 +158,103 @@ async function processOperation(op: SyncOperation, userId: string) {
 }
 
 // Start a background sync loop
-if (typeof window !== "undefined") {
+if (typeof window !== "undefined" && typeof process === "undefined") {
   // Sync every 30 seconds
   setInterval(syncQueue, 30000);
   
   // Also attempt sync when coming back online
   window.addEventListener("online", syncQueue);
+}
+
+/**
+ * Migrates local guest data to a newly authenticated account.
+ * Follows the "preserve guest XP/mastery on top of remote, deduplicate progression" policy.
+ */
+export async function migrateGuestToAccount(userId: string) {
+  const db = await getDB();
+  if (!db) return;
+  const tx = db.transaction("learner_state", "readonly");
+  const store = tx.objectStore("learner_state");
+  const localState = await store.get("local_user");
+  await tx.done;
+
+  if (!localState) return;
+  if (localState.learnerProgress.xp === 0 && localState.sessionHistory.length === 0) {
+    // Nothing to migrate
+    return;
+  }
+
+  // 1. Fetch remote profile to merge
+  const { data: remoteProfile, error: profileError } = await supabase
+    .from("profiles")
+    .select("*")
+    .eq("id", userId)
+    .single();
+
+  if (profileError && profileError.code !== "PGRST116") {
+    console.error("Failed to fetch remote profile for migration", profileError);
+    throw profileError;
+  }
+
+  // 2. Merge logic
+  // XP/Streak: Add local progress to remote progress, because the user did this work while offline/guest.
+  const remoteXp = remoteProfile?.xp || 0;
+  const remoteSessionsCompleted = remoteProfile?.sessions_completed || 0;
+  
+  const mergedXp = remoteXp + localState.learnerProgress.xp;
+  const mergedSessions = remoteSessionsCompleted + localState.learnerProgress.sessionsCompleted;
+  // For streak and days_active, picking the max is safest without complex calendar math.
+  const mergedStreak = Math.max(remoteProfile?.streak || 0, localState.learnerProgress.streak);
+  const mergedDaysActive = Math.max(remoteProfile?.days_active || 0, localState.learnerProgress.daysActive);
+
+  // 3. Upsert Profile
+  await supabase.from("profiles").upsert({
+    id: userId,
+    xp: mergedXp,
+    streak: mergedStreak,
+    days_active: mergedDaysActive,
+    sessions_completed: mergedSessions,
+    // Prefer local preferences as the most recent user intent
+    preferences: localState.preferences,
+    accessibility: localState.accessibility,
+    updated_at: new Date().toISOString()
+  });
+
+  // 4. Push session history (append-only, idempotently deduplicated by session_id in DB)
+  for (const record of localState.sessionHistory) {
+    await supabase.from("session_history").upsert({
+      user_id: userId,
+      session_id: record.sessionId,
+      completed_at: record.completedAt,
+      score: record.score,
+      total_words: record.totalWords,
+      xp_breakdown: record.xp,
+    });
+  }
+
+  // 5. Push word memory (idempotent upsert)
+  for (const [wordId, state] of Object.entries(localState.wordMemory)) {
+    await supabase.from("word_memory").upsert({
+      user_id: userId,
+      word_id: wordId,
+      state: state,
+      updated_at: new Date().toISOString()
+    });
+  }
+
+  // 6. Overwrite local IDB with merged progress so UI is immediately correct upon reload
+  const mergedState = {
+    ...localState,
+    learnerProgress: {
+      ...localState.learnerProgress,
+      xp: mergedXp,
+      streak: mergedStreak,
+      daysActive: mergedDaysActive,
+      sessionsCompleted: mergedSessions,
+    }
+  };
+  
+  const writeTx = db.transaction("learner_state", "readwrite");
+  await writeTx.objectStore("learner_state").put(mergedState, "local_user");
+  await writeTx.done;
 }

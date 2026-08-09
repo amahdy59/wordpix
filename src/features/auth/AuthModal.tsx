@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { supabase } from "../../lib/supabase/client";
-import { getLearnerState } from "../../lib/persistence/db";
+import { migrateGuestToAccount } from "../../lib/persistence/sync";
 import { User } from "lucide-react";
 
 interface AuthModalProps {
@@ -22,44 +22,32 @@ export function AuthModal({ onClose }: AuthModalProps) {
     setSuccess(null);
 
     try {
-      if (isLogin) {
-        const { error } = await supabase.auth.signInWithPassword({ email, password });
-        if (error) throw error;
-      } else {
-        const { error, data } = await supabase.auth.signUp({ email, password });
-        if (error) throw error;
-        
-        // Guest to Account Migration
-        if (data.user) {
-          const localState = await getLearnerState();
-          if (localState && (localState.learnerProgress.xp > 0 || localState.sessionHistory.length > 0)) {
-            // Push guest state to Supabase since they just created an account
-            await supabase.from("profiles").upsert({
-              id: data.user.id,
-              xp: localState.learnerProgress.xp,
-              streak: localState.learnerProgress.streak,
-              days_active: localState.learnerProgress.daysActive,
-              sessions_completed: localState.learnerProgress.sessionsCompleted,
-              preferences: localState.preferences,
-              accessibility: localState.accessibility,
-              updated_at: new Date().toISOString()
-            });
+      let authUserId: string | undefined;
 
-            // Also push session history and word memory (simplified migration for MVP)
-            for (const record of localState.sessionHistory) {
-              await supabase.from("session_history").upsert({
-                user_id: data.user.id,
-                session_id: record.sessionId,
-                completed_at: record.completedAt,
-                score: record.score,
-                total_words: record.totalWords,
-                xp_breakdown: record.xp,
-              });
-            }
-          }
-        }
+      if (isLogin) {
+        const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+        if (error) throw error;
+        authUserId = data.user?.id;
+        setSuccess("Signed in successfully!");
+      } else {
+        const { data, error } = await supabase.auth.signUp({ email, password });
+        if (error) throw error;
+        authUserId = data.user?.id;
         setSuccess("Account created successfully!");
       }
+      
+      // Guest to Account Migration
+      if (authUserId) {
+        try {
+          await migrateGuestToAccount(authUserId);
+        } catch (e) {
+          console.error("Failed to migrate guest data", e);
+        }
+      }
+      
+      // For MVP, reload to re-initialize contexts and pull fresh data if needed, 
+      // or at least to reflect the logged in state cleanly without complex re-renders.
+      window.location.reload();
       onClose();
     } catch (err: any) {
       setError(err.message || "An error occurred during authentication.");

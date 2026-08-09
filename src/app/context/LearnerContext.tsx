@@ -165,25 +165,7 @@ function migrateState(savedData: unknown): LearnerStateSchema {
   };
 }
 
-function loadLearnerState(): LearnerStateSchema {
-  try {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (!saved) return INITIAL_LEARNER_STATE;
-    const parsed = JSON.parse(saved);
-    return migrateState(parsed);
-  } catch (e) {
-    console.error("Corrupted local storage detected. Falling back safely.", e);
-    return INITIAL_LEARNER_STATE;
-  }
-}
 
-function saveLearnerStateSync(state: LearnerStateSchema) {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-  } catch (e) {
-    console.error("Failed to save learner state to localStorage.", e);
-  }
-}
 
 interface LearnerContextType {
   state: LearnerStateSchema;
@@ -215,14 +197,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     return null;
   });
 
-  // Reset test state cache between tests when localStorage.clear() runs in beforeEach
-  useEffect(() => {
-    if (typeof process !== "undefined" && process.env.NODE_ENV === "test") {
-      const handleClear = () => { testStateCache = null; };
-      window.addEventListener('storage', handleClear); // mock trigger
-      return () => window.removeEventListener('storage', handleClear);
-    }
-  }, []);
+
 
   useEffect(() => {
     let mounted = true;
@@ -236,7 +211,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
           try {
             const ls = localStorage.getItem(STORAGE_KEY);
             if (ls) {
-              dbState = migrateLegacyState(JSON.parse(ls));
+              dbState = migrateState(JSON.parse(ls));
               localStorage.removeItem(STORAGE_KEY);
             }
           } catch(e) {
