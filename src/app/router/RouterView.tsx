@@ -48,8 +48,7 @@ const ExerciseQuickQuiz = lazy(() =>
 
 import { SKILL_EXERCISES } from "../exercises/registry";
 
-const EX_STEPS = ["listen", "recall", "fill", "builder", "quiz"] as const;
-type ExStep = (typeof EX_STEPS)[number];
+type ExStep = "listen" | "recall" | "fill" | "builder" | "quiz";
 
 const LoadingFallback = () => {
   const { t } = useI18n();
