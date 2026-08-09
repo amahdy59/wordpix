@@ -44,10 +44,8 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
   const options = useMemo(() => {
     const worldVocab = resolveUnitForLesson(lessonId).vocabulary;
     const distractorsPool = worldVocab.filter((w) => w.id !== currentTargetWord.id);
-    const shuffledDistractors = shuffleArray(distractorsPool).slice(0, 5);
+    const shuffledDistractors = shuffleArray(distractorsPool).slice(0, 3);
     
-    // Pick a random index between 0 and 3 for the correct answer
-    // so it's always visible on mobile where only 4 are shown.
     const correctIndex = Math.floor(Math.random() * 4);
     
     const finalOptions = [...shuffledDistractors];
@@ -156,10 +154,9 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         <div
           role="group"
           aria-label={`Which image matches ${currentTargetWord.label}?`}
-          className="grid grid-cols-2 lg:grid-cols-3 gap-3.5 w-full"
+          className="grid grid-cols-2 gap-2 sm:gap-3.5 w-full flex-1 min-h-0"
         >
           {options.map((option, idx) => {
-            const isHiddenOnMobile = idx >= 4;
             const isSelected = selectedId === option.id;
             const isRevealedAnswer = feedback === "incorrect" && option.id === currentTargetWord.id;
 
@@ -167,37 +164,31 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
             if (isSelected) {
               stateStyle =
                 feedback === "correct"
-                  ? "border-wp-green bg-wp-green-light/40"
-                  : "border-wp-rose bg-wp-rose-light/40 animate-wp-shake";
+                  ? "border-wp-green bg-wp-green-light/40 shadow-md"
+                  : "border-wp-rose bg-wp-rose-light/40 shadow-md animate-wp-shake";
             } else if (isRevealedAnswer) {
-              stateStyle = "border-wp-green bg-wp-green-light/40";
+              stateStyle = "border-wp-green bg-wp-green-light/40 shadow-md";
             }
 
             return (
               <motion.button
                 key={option.id}
                 type="button"
-                whileTap={feedback === null ? { scale: 0.98 } : {}}
-                transition={{ duration: 0.1 }}
+                whileTap={feedback === null ? { scale: 0.95 } : {}}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 aria-label={`Option ${idx + 1} of ${options.length}. Shortcut: press ${idx + 1}`}
                 aria-pressed={isSelected}
-                /*
-                  aria-disabled, not disabled. A disabled button loses focus to
-                  <body>, so a keyboard learner was dumped out of the exercise
-                  the instant they answered. This keeps focus where it is and
-                  still tells assistive tech the option is no longer actionable;
-                  handleSelect ignores the click either way.
-                */
                 aria-disabled={feedback !== null}
                 onClick={() => handleSelect(option.id)}
-                className={`group relative rounded-2xl overflow-hidden aspect-[4/3] w-full border-2 block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-xs ${stateStyle} ${isHiddenOnMobile ? "hidden lg:block" : "block"}`}
+                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full h-full border-2 block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-sm ${stateStyle}`}
               >
-                {/* Physical Keyboard Badge */}
                 <span
                   aria-hidden
-                  className="absolute top-2.5 start-2.5 z-10 bg-wp-panel/90 text-wp-text-on-panel text-[11px] font-mono font-bold px-2.5 py-1 rounded-lg border border-white/20 shadow-md backdrop-blur-md pointer-events-none"
+                  className="absolute top-2 start-2 sm:top-2.5 sm:start-2.5 z-10 bg-black/60 text-white text-[10px] sm:text-[11px] font-mono font-bold px-2 py-0.5 rounded border border-white/20 shadow-sm backdrop-blur-md pointer-events-none"
                 >
-                  Key [{idx + 1}]
+                  [{idx + 1}]
                 </span>
 
                 <div className="h-full w-full relative bg-muted shrink-0">
@@ -208,8 +199,18 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                     altMode="assessment"
                     optionIndex={idx}
                     checked={isSelected || isRevealedAnswer}
-                    className="size-full object-cover object-center block"
+                    className="size-full object-cover object-center block hover:scale-105 transition-transform duration-500"
                   />
+                  {isRevealedAnswer && (
+                    <motion.div 
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      transition={{ type: "spring", bounce: 0.5 }}
+                      className="absolute top-2 end-2 bg-wp-green text-wp-text-on-green p-1 rounded-full shadow-md"
+                    >
+                      <HelpCircle className="size-4 sm:size-5" aria-hidden />
+                    </motion.div>
+                  )}
                 </div>
               </motion.button>
             );

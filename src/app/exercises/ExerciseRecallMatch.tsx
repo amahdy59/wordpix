@@ -32,7 +32,6 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
 }: Props) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
-  const [completedWordIds, setCompletedWordIds] = useState<Set<string>>(new Set());
 
   const queue = useDrillQueue(words);
   const currentTargetWord = queue.current ?? words[0];
@@ -44,16 +43,19 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   const hasSpokenRef = useRef<Record<string, boolean>>({});
 
   const displayCards = useMemo(() => {
-    // Generate 6 cards total: the group's words + necessary distractors
     const worldVocab = resolveUnitForLesson(lessonId).vocabulary;
-    const wordIds = new Set(words.map((w) => w.id));
-    const distractorsPool = worldVocab.filter((w) => !wordIds.has(w.id));
+    const distractorsPool = worldVocab.filter((w) => w.id !== currentTargetWord.id);
     
-    const distractorsNeeded = Math.max(0, 6 - words.length);
-    const shuffledDistractors = shuffleArray(distractorsPool).slice(0, distractorsNeeded);
+    // Choose 3 random distractors
+    const shuffledDistractors = shuffleArray(distractorsPool).slice(0, 3);
     
-    return shuffleArray([...words, ...shuffledDistractors]);
-  }, [words, lessonId]);
+    // Insert the correct answer at a random position (0-3)
+    const finalOptions = [...shuffledDistractors];
+    const correctIndex = Math.floor(Math.random() * 4);
+    finalOptions.splice(correctIndex, 0, currentTargetWord);
+    
+    return finalOptions;
+  }, [currentTargetWord, lessonId]);
 
   /** Clears the result and lets the queue's next question render. */
   const advanceNext = useCallback(() => {
@@ -101,7 +103,6 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       if (correct) {
         setFeedback("correct");
         playCorrect();
-        setCompletedWordIds((prev) => new Set(prev).add(card.id));
       } else {
         setFeedback("incorrect");
         playIncorrect();
@@ -150,7 +151,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             <span>Press 1–{displayCards.length} to choose · R to replay audio</span>
           </div>
           <span>
-            Question {queue.position} of {queue.total} · {completedWordIds.size} of {words.length} matched
+            Question {queue.position} of {queue.total}
           </span>
         </div>
       }
@@ -198,14 +199,10 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         <div
           role="group"
           aria-label="Choose matching picture for audio prompt"
-          className="grid grid-cols-2 lg:grid-cols-3 gap-3.5 w-full pb-8 lg:pb-0"
+          className="grid grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3.5 w-full flex-1 min-h-0"
         >
           {displayCards.map((card, idx) => {
             const isSelected = selectedId === card.id;
-            const isTargetCompleted = completedWordIds.has(card.id);
-            // On a wrong answer the right card is highlighted, so the learner
-            // finds out what they should have picked without being made to
-            // guess again.
             const isRevealedAnswer = feedback === "incorrect" && card.id === currentTargetWord.id;
 
             let cardStateStyle = "border-2 border-border bg-wp-card hover:border-primary/50 hover:shadow-md";
@@ -214,30 +211,27 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
               if (feedback === "incorrect") cardStateStyle = "border-2 border-wp-rose bg-wp-rose-light/40 shadow-md animate-wp-shake";
             } else if (isRevealedAnswer) {
               cardStateStyle = "border-2 border-wp-green bg-wp-green-light/40 shadow-md";
-            } else if (isTargetCompleted) {
-              cardStateStyle = "border-2 border-wp-green/40 bg-wp-green-light/10 opacity-75";
             }
 
             return (
               <motion.button
                 key={card.id}
                 type="button"
-                whileTap={feedback === null ? { scale: 0.98 } : {}}
-                transition={{ duration: 0.1 }}
+                whileTap={feedback === null ? { scale: 0.95 } : {}}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 aria-label={`Option ${idx + 1} of ${displayCards.length}. Shortcut: press ${idx + 1}`}
                 aria-pressed={isSelected}
-                /* aria-disabled keeps keyboard focus on the card the learner
-                   just chose; `disabled` would send it to <body>. */
                 aria-disabled={feedback !== null}
                 onClick={() => handleCardClick(card)}
-                className={`group relative rounded-2xl overflow-hidden aspect-[4/3] w-full block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-xs ${cardStateStyle}`}
+                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full h-full block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary shadow-wp-sm ${cardStateStyle}`}
               >
-                {/* Physical Key Badge */}
                 <span
                   aria-hidden
-                  className="absolute top-2.5 start-2.5 z-10 bg-wp-panel/90 text-wp-text-on-panel text-[11px] font-mono font-bold px-2 py-0.5 rounded-lg border border-white/20 shadow-md backdrop-blur-md pointer-events-none"
+                  className="absolute top-2 start-2 sm:top-2.5 sm:start-2.5 z-10 bg-black/60 text-white text-[10px] sm:text-[11px] font-mono font-bold px-2 py-0.5 rounded border border-white/20 shadow-sm backdrop-blur-md pointer-events-none"
                 >
-                  Key [{idx + 1}]
+                  [{idx + 1}]
                 </span>
 
                 <div className="h-full w-full relative bg-muted shrink-0">
@@ -247,13 +241,18 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                     height="300"
                     altMode="assessment"
                     optionIndex={idx}
-                    checked={isSelected || isTargetCompleted || isRevealedAnswer}
-                    className="size-full object-cover object-center block"
+                    checked={isSelected || isRevealedAnswer}
+                    className="size-full object-cover object-center block hover:scale-105 transition-transform duration-500"
                   />
-                  {(isTargetCompleted || isRevealedAnswer) && (
-                    <div className="absolute top-2 end-2 bg-wp-green text-wp-text-on-green p-1 rounded-full shadow-md">
-                      <CheckCircle2 className="size-3.5" aria-hidden />
-                    </div>
+                  {isRevealedAnswer && (
+                    <motion.div 
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      transition={{ type: "spring", bounce: 0.5 }}
+                      className="absolute top-2 end-2 bg-wp-green text-wp-text-on-green p-1 rounded-full shadow-md"
+                    >
+                      <CheckCircle2 className="size-4 sm:size-5" aria-hidden />
+                    </motion.div>
                   )}
                 </div>
               </motion.button>
