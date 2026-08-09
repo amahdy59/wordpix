@@ -51,7 +51,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
         return (
           <section aria-label={`Active Unit: ${world.name}`} key={world.id}>
             <div className="bg-wp-card rounded-3xl border-2 border-primary/40 p-6 flex flex-col lg:flex-row gap-6 shadow-wp-md relative overflow-hidden">
-              <div className="absolute -top-12 -right-12 size-48 rounded-full bg-primary/10 blur-2xl pointer-events-none" />
+              <div className="absolute -top-12 -end-12 size-48 rounded-full bg-primary/10 blur-2xl pointer-events-none" />
 
               {/* World Image Banner */}
               <div className="h-48 lg:h-64 lg:w-80 relative rounded-2xl overflow-hidden shrink-0 border border-border shadow-wp-xs">

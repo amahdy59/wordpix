@@ -8,10 +8,15 @@ import { getLearnerState, saveLearnerState, queueMutation } from "../../lib/pers
 export type MasteryLevel = 0 | 1 | 2 | 3;
 export type LearnerGoal = "everyday" | "travel" | "work" | "school" | "conversation" | "kids";
 
+export type ThemePreference = "system" | "light" | "dark";
+export type LearnerExpression = "child" | "adult";
+
 export interface LearnerPreferences {
   englishLevel: "A1" | "A2" | "B1";
   dailyGoalMinutes: number;
   goal: LearnerGoal;
+  theme: ThemePreference;
+  expression: LearnerExpression;
 }
 
 export type TextSize = "standard" | "large" | "xlarge";
@@ -106,6 +111,8 @@ export const INITIAL_LEARNER_STATE: LearnerStateSchema = {
     englishLevel: "A1",
     dailyGoalMinutes: 10,
     goal: "everyday",
+    theme: "system",
+    expression: "adult",
   },
   accessibility: DEFAULT_ACCESSIBILITY,
   learnerProgress: {
@@ -149,8 +156,11 @@ function migrateState(savedData: unknown): LearnerStateSchema {
   return {
     version: 1,
     preferences: {
-      ...INITIAL_LEARNER_STATE.preferences,
-      ...(saved.preferences as Partial<LearnerPreferences> | undefined),
+      englishLevel: (saved.preferences as any)?.englishLevel ?? "A1",
+      dailyGoalMinutes: (saved.preferences as any)?.dailyGoalMinutes ?? 10,
+      goal: (saved.preferences as any)?.goal ?? "everyday",
+      theme: (saved.preferences as any)?.theme ?? "system",
+      expression: (saved.preferences as any)?.expression ?? "adult",
     },
     accessibility: {
       ...DEFAULT_ACCESSIBILITY,
@@ -171,7 +181,7 @@ interface LearnerContextType {
   state: LearnerStateSchema;
   addXP: (amount: number) => void;
   recordSessionCompletion: (sessionId: string, attempts: AnswerAttempt[], wordQueue: string[]) => void;
-  setPreferences: (level: "A1" | "A2" | "B1", dailyGoalMinutes: number, goal?: LearnerGoal) => void;
+  setPreferences: (patch: Partial<LearnerPreferences>) => void;
   setAccessibility: (patch: Partial<AccessibilityPreferences>) => void;
   resetToZero: () => void;
 }
@@ -381,9 +391,9 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     });
   }, [updateStateAndPersist]);
 
-  const setPreferences = useCallback((level: "A1" | "A2" | "B1", dailyGoalMinutes: number, goal: LearnerGoal = "everyday") => {
+  const setPreferences = useCallback((patch: Partial<LearnerPreferences>) => {
     updateStateAndPersist((prev) => {
-      const prefs = { englishLevel: level, dailyGoalMinutes, goal };
+      const prefs = { ...prev.preferences, ...patch };
       return {
         nextState: { ...prev, preferences: prefs },
         mutationType: "update_preferences",

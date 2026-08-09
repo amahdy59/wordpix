@@ -137,6 +137,38 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
 
               <hr className="border-border/60" />
 
+              {/* Learner Expression (Child / Adult Mode) */}
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <span className="font-sans font-bold text-foreground text-sm">Learner Mode (UI Expression)</span>
+                  <p className="font-sans text-xs text-muted-foreground">Adjust density, typography, and illustration style based on age.</p>
+                </div>
+                <div className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl">
+                  <button
+                    type="button"
+                    onClick={() => setPreferences({ expression: "child" })}
+                    aria-pressed={state.preferences.expression === "child"}
+                    className={`px-3 py-1 rounded-lg text-xs font-sans font-bold ${
+                      state.preferences.expression === "child" ? "bg-primary text-primary-foreground shadow-xs" : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    Child
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setPreferences({ expression: "adult" })}
+                    aria-pressed={state.preferences.expression === "adult"}
+                    className={`px-3 py-1 rounded-lg text-xs font-sans font-bold ${
+                      state.preferences.expression === "adult" ? "bg-primary text-primary-foreground shadow-xs" : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    Adult
+                  </button>
+                </div>
+              </div>
+
+              <hr className="border-border/60" />
+
               {/* High Contrast Mode */}
               <div className="flex items-center justify-between gap-4">
                 <div>
@@ -342,7 +374,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <button
                       key={lvl}
                       type="button"
-                      onClick={() => setPreferences(lvl, state.preferences.dailyGoalMinutes, state.preferences.goal)}
+                      onClick={() => setPreferences({ englishLevel: lvl })}
                       className={`px-3 py-1 rounded-lg text-xs font-sans font-bold ${
                         state.preferences.englishLevel === lvl ? "bg-primary text-primary-foreground shadow-xs" : "text-muted-foreground"
                       }`}

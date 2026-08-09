@@ -1,31 +1,22 @@
-import { memo, useSyncExternalStore } from "react";
+import { memo } from "react";
 import { Sun, Moon, Monitor } from "lucide-react";
-import {
-  cycleTheme,
-  getServerTheme,
-  getTheme,
-  resolveTheme,
-  setTheme,
-  subscribeToTheme,
-  type ThemeMode,
-} from "./themeStore";
+import { useLearner } from "../context/LearnerContext";
+import { useI18n } from "../context/I18nContext";
+import type { ThemePreference as ThemeMode } from "../context/LearnerContext";
 
 export type { ThemeMode };
 
-/**
- * Reads the shared theme store. Every consumer sees the same value, so
- * switching the theme in Settings immediately updates the toggle in Profile.
- */
 export function useTheme() {
-  const theme = useSyncExternalStore(subscribeToTheme, getTheme, getServerTheme);
-  return { theme, resolvedTheme: resolveTheme(theme), setTheme, toggleTheme: cycleTheme };
-}
+  const { state, setPreferences } = useLearner();
+  const theme = state.preferences.theme;
 
-const THEME_LABEL: Record<ThemeMode, string> = {
-  light: "Light",
-  dark: "Dark",
-  system: "System",
-};
+  const toggleTheme = () => {
+    const nextTheme: ThemeMode = theme === "system" ? "dark" : theme === "dark" ? "light" : "system";
+    setPreferences({ theme: nextTheme });
+  };
+
+  return { theme, setTheme: (mode: ThemeMode) => setPreferences({ theme: mode }), toggleTheme };
+}
 
 interface ThemeToggleProps {
   /**
@@ -38,7 +29,10 @@ interface ThemeToggleProps {
 
 export const ThemeToggle = memo(function ThemeToggle({ compact = false }: ThemeToggleProps) {
   const { theme, toggleTheme } = useTheme();
-  const label = `Theme: ${THEME_LABEL[theme]}. Activate to change theme.`;
+  const { t } = useI18n();
+
+  const themeLabel = t(`settings.theme.${theme}`);
+  const label = `${t("settings.themeLabel")}: ${themeLabel}. ${t("settings.themeActivate")}`;
 
   const icon =
     theme === "dark" ? (
@@ -71,7 +65,7 @@ export const ThemeToggle = memo(function ThemeToggle({ compact = false }: ThemeT
       </div>
       {!isCompact && (
         <span className={isResponsive ? "hidden lg:block ms-1 font-semibold text-sm text-muted-foreground group-hover:text-foreground transition-colors" : ""}>
-          {THEME_LABEL[theme]}
+          {themeLabel}
         </span>
       )}
     </button>

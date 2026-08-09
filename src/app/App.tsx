@@ -8,7 +8,7 @@ import { AuthProvider } from "./context/AuthContext";
 import { useHashRouter, hashToScreen } from "./router/useHashRouter";
 
 import { registerServiceWorker } from "../pwa";
-import { startSystemThemeSync } from "./shared/themeStore";
+
 import { useApplyAccessibilityPreferences } from "./shared/useAccessibilityPreferences";
 
 import { reducer, ariaLiveAnnounce, describeScreen, STORAGE_KEY } from "./store/reducer";
@@ -69,7 +69,7 @@ function AppInner() {
     registerServiceWorker();
   }, []);
 
-  useEffect(() => startSystemThemeSync(), []);
+
 
   useApplyAccessibilityPreferences();
 

@@ -113,7 +113,7 @@ describe("useProgress referential stability", () => {
     const before = result.current.progress;
 
     act(() => {
-      result.current.setPreferences("B1", 20, "work");
+      result.current.setPreferences({ englishLevel: "B1", dailyGoalMinutes: 20, goal: "work" });
     });
 
     expect(result.current.progress).not.toBe(before);

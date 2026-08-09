@@ -26,8 +26,9 @@ export function formatNumber(value: number | string, system: NumeralSystem): str
  * without loss of function" while doing nothing at all.
  */
 export function useApplyAccessibilityPreferences() {
-  const { state } = useLearner();
+  const { state, setAccessibility } = useLearner();
   const { textSize, highContrast } = state.accessibility;
+  const { theme, expression } = state.preferences;
 
   useEffect(() => {
     const root = document.documentElement;
@@ -43,6 +44,24 @@ export function useApplyAccessibilityPreferences() {
   useEffect(() => {
     document.documentElement.classList.toggle("high-contrast", highContrast);
   }, [highContrast]);
+
+  useEffect(() => {
+    document.documentElement.dataset.learnerMode = expression;
+  }, [expression]);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const applyTheme = () => {
+      const isDark =
+        theme === "dark" ||
+        (theme === "system" && mediaQuery.matches);
+      document.documentElement.classList.toggle("dark", isDark);
+    };
+
+    applyTheme();
+    mediaQuery.addEventListener("change", applyTheme);
+    return () => mediaQuery.removeEventListener("change", applyTheme);
+  }, [theme]);
 }
 
 /** Convenience accessor for the accessibility slice. */

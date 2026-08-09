@@ -64,8 +64,15 @@
   },
   "settings": {
     "interfaceLanguage": "لغة الواجهة",
-    "interfaceLanguageHint": "اختر لغة القوائم والتسميات. تبقى الدروس بالإنجليزية.",
+    "interfaceLanguageHint": "اختر لغة القوائم والتسميات. الدروس ستبقى باللغة الإنجليزية.",
     "english": "English",
-    "arabic": "العربية"
+    "arabic": "العربية",
+    "themeLabel": "المظهر",
+    "themeActivate": "تفعيل لتغيير المظهر",
+    "theme": {
+      "light": "فاتح",
+      "dark": "داكن",
+      "system": "النظام"
+    }
   }
 }
