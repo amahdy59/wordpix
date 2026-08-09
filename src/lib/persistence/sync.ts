@@ -153,7 +153,7 @@ async function processOperation(op: SyncOperation, userId: string) {
       break;
     }
     default:
-      console.warn(`Unknown operation type: ${op.type}`);
+      console.warn(`Unknown operation type: ${(op as SyncOperation).type}`);
   }
 }
 

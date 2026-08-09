@@ -1,14 +1,13 @@
 import { openDB, type DBSchema } from "idb";
-import type { LearnerStateSchema } from "../../app/context/LearnerContext";
+import type { LearnerStateSchema, SessionRecord, LearnerProgressStats } from "../../app/context/LearnerContext";
+import type { WordLearningState } from "../../features/gamification/sm2";
 
-export interface SyncOperation {
-  id: string; // unique operation ID
-  type: "update_preferences" | "update_accessibility" | "session_completed" | "add_xp" | "reset";
-  payload: unknown;
-  createdAt: string;
-  status: "pending" | "syncing" | "failed";
-  retryCount: number;
-}
+export type SyncOperation = 
+  | { id: string; type: "update_preferences"; payload: Record<string, unknown>; createdAt: string; status: "pending" | "syncing" | "failed"; retryCount: number; }
+  | { id: string; type: "update_accessibility"; payload: Record<string, unknown>; createdAt: string; status: "pending" | "syncing" | "failed"; retryCount: number; }
+  | { id: string; type: "session_completed"; payload: SessionRecord & { learnerProgress: LearnerProgressStats; wordMemory: Record<string, WordLearningState> }; createdAt: string; status: "pending" | "syncing" | "failed"; retryCount: number; }
+  | { id: string; type: "add_xp"; payload: { xp: number }; createdAt: string; status: "pending" | "syncing" | "failed"; retryCount: number; }
+  | { id: string; type: "reset"; payload: Record<string, never>; createdAt: string; status: "pending" | "syncing" | "failed"; retryCount: number; };
 
 interface WordPixDB extends DBSchema {
   learner_state: {
@@ -77,21 +76,21 @@ export async function saveLearnerState(state: LearnerStateSchema): Promise<void>
 /**
  * Pushes a new operation to the mutation queue.
  */
-export async function queueMutation(
-  type: SyncOperation["type"],
-  payload: unknown
+export async function queueMutation<T extends SyncOperation["type"]>(
+  type: T,
+  payload: Extract<SyncOperation, { type: T }>["payload"]
 ): Promise<void> {
   try {
     const db = await getDB();
     if (!db) return;
-    const op: SyncOperation = {
+    const op = {
       id: crypto.randomUUID(),
       type,
       payload,
       createdAt: new Date().toISOString(),
       status: "pending",
       retryCount: 0,
-    };
+    } as SyncOperation;
     await db.put("mutation_queue", op);
   } catch (e) {
     console.error("Failed to queue mutation", e);

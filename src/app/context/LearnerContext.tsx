@@ -255,6 +255,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
         saveLearnerState(nextState).catch(e => console.error("Failed to persist state", e));
         
         if (mutationType && mutationPayload) {
+          // @ts-expect-error TS2345: TypeScript cannot infer that mutationPayload matches mutationType here
           queueMutation(mutationType, mutationPayload).catch(e => console.error("Failed to queue mutation", e));
         }
         
