@@ -20,7 +20,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
   const activeWorlds = Object.values(COURSE_UNITS);
 
   return (
-    <div className="flex flex-col gap-6 p-5 lg:p-8">
+    <div className="flex flex-col gap-6 max-w-3xl mx-auto w-full p-5 lg:p-8">
       {/* Page header */}
       <header className="flex flex-col gap-1">
         <div className="flex items-center gap-2 text-primary">

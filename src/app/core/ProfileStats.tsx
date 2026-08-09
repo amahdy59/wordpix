@@ -1,5 +1,5 @@
 import { memo, useMemo, useState } from "react";
-import { Flame, Sparkles, BookOpen, Trophy, Award, CheckCircle2, ShieldCheck, Target, Brain, Sliders, Moon, Sun, User as UserIcon, LogOut } from "lucide-react";
+import { Flame, Sparkles, BookOpen, ShieldCheck, Target, Brain, Sliders, Moon, Sun, User as UserIcon, LogOut } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { SettingsModal } from "./SettingsModal";
@@ -52,17 +52,8 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
     { value: `${progress.streak} days`, label: "Active Streak", icon: Flame, color: "text-wp-amber" },
   ];
 
-  const ACHIEVEMENTS = [
-    { icon: Sparkles, label: "First Practice", earned: progress.sessionsCompleted >= 1 },
-    { icon: Flame, label: "3-Day Streak", earned: progress.streak >= 3 },
-    { icon: BookOpen, label: "5 Words Familiar", earned: familiarCount + strongCount >= 5 },
-    { icon: ShieldCheck, label: "First Strong Word", earned: strongCount >= 1 },
-    { icon: Trophy, label: "5 Sessions Done", earned: progress.sessionsCompleted >= 5 },
-    { icon: Award, label: "80%+ Recall Accuracy", earned: recallAccuracy >= 80 },
-  ];
-
   return (
-    <div className="flex flex-col gap-6 p-5 md:p-8 pb-8">
+    <div className="flex flex-col gap-6 max-w-3xl mx-auto w-full p-5 md:p-8 pb-8">
       <SettingsModal isOpen={showSettingsModal} onClose={() => setShowSettingsModal(false)} />
       {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
 
@@ -149,37 +140,6 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
               </div>
               <p className="font-sans font-black text-foreground text-xl leading-none mt-0.5">{value}</p>
               <p className="font-sans font-medium text-muted-foreground text-xs text-center leading-tight">{label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Achievements */}
-      <section aria-label="Achievements" className="flex flex-col gap-3">
-        <h2 className="font-sans font-bold text-foreground text-lg">Memory Badges &amp; Milestones</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-          {ACHIEVEMENTS.map(({ icon: Icon, label, earned }) => (
-            <div
-              key={label}
-              className={`bg-wp-card rounded-2xl border p-4 flex flex-col items-center gap-2 text-center transition-all ${
-                earned ? "border-primary/40 shadow-wp-xs" : "border-border opacity-50"
-              }`}
-              aria-label={`${label}: ${earned ? "earned" : "not yet earned"}`}
-            >
-              <div className={`size-10 rounded-xl flex items-center justify-center ${earned ? "bg-secondary" : "bg-muted"}`}>
-                <Icon className={`size-5 ${earned ? "text-primary" : "text-muted-foreground"}`} />
-              </div>
-              <p className="font-sans font-semibold text-foreground text-xs text-center leading-tight">
-                {label}
-              </p>
-              {earned ? (
-                <span className="inline-flex items-center gap-1 text-[10px] font-sans font-bold text-wp-green bg-wp-green-light px-2 py-0.5 rounded-full">
-                  <CheckCircle2 className="size-3" />
-                  Earned
-                </span>
-              ) : (
-                <span className="text-[10px] font-sans font-medium text-muted-foreground">Locked</span>
-              )}
             </div>
           ))}
         </div>

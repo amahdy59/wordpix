@@ -1,9 +1,9 @@
 import { memo, useMemo } from "react";
-import { Flame, ArrowRight, RotateCcw, WifiOff } from "lucide-react";
+import { ArrowRight, RotateCcw, WifiOff } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { nextGroupToStudy, resolveUnitForLesson } from "../data/lessons";
-import { calculateDaysBetween, getLocalDateString, getWeekActivity } from "../../features/gamification/streak";
+
 import { useOfflineReadiness } from "../shared/useOfflineReadiness";
 import { useI18n } from "../context/I18nContext";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
@@ -30,29 +30,8 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
   const { t } = useI18n();
   const { accessibility } = useAccessibility();
   const num = (v: number) => formatNumber(v, accessibility.numeralSystem);
-  const todayStr = getLocalDateString(new Date());
   const greeting = t(getGreetingKey(new Date().getHours()));
 
-  const memoryValues = useMemo(() => Object.values(progress.wordMemory), [progress.wordMemory]);
-  const strongCount = useMemo(() => memoryValues.filter((w) => w.mastery === "strong").length, [memoryValues]);
-  const learningCount = useMemo(() => memoryValues.filter((w) => w.mastery === "learning" || w.mastery === "familiar").length, [memoryValues]);
-
-  const dueCount = useMemo(() => {
-    return memoryValues.filter((w) => {
-      if (!w.nextReviewAt) return true;
-      const nextDateStr = getLocalDateString(new Date(w.nextReviewAt));
-      return calculateDaysBetween(todayStr, nextDateStr) <= 0;
-    }).length;
-  }, [memoryValues, todayStr]);
-
-  const weekActivity = useMemo(
-    () => getWeekActivity(progress.sessionHistory.map((s) => s.completedAt)),
-    [progress.sessionHistory]
-  );
-
-  // The Today card used to hardcode BEDROOM_GROUPS[0], so "Continue Bedroom"
-  // restarted Essential Furniture forever no matter how much had been learned.
-  // It now resumes the first group still holding a word that is not yet strong.
   const activeLesson = useMemo(
     () => nextGroupToStudy((wordId) => progress.wordMemory[wordId]?.mastery === "strong"),
     [progress.wordMemory]
@@ -110,139 +89,69 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         was part-way through. It now lives in one place, under Practice.
       */}
 
-      {/* Main Grid: TODAY + REVIEW (Left) | YOUR LEARNING + THIS WEEK (Right) */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-        {/* ── LEFT COLUMN ─────────────────────────────────────────────────────── */}
-        <div className="flex flex-col gap-6">
-          {/* SECTION 1: TODAY */}
-          <Section id="section-today" title={t("dashboard.today")}>
-            <Card variant="primary">
-              <div className="flex items-center justify-between">
-                {/* The world and the estimate. The group's own name is the
-                    heading below, so repeating it here just said it twice. */}
-                <span className="font-sans font-semibold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full">
-                  {activeUnit.name} · ~{num(estimatedMinutes)} min
-                </span>
-                <span className="font-sans text-xs font-bold text-muted-foreground">
-                  {num(lessonWordsSeen)} of {num(activeLesson.wordIds.length)} words
-                </span>
-              </div>
+      {/* Main Content (Single Centered Column for maximum clarity) */}
+      <div className="flex flex-col gap-6 max-w-2xl mx-auto w-full mt-4">
+        {/* SECTION 1: TODAY */}
+        <Section id="section-today" title={t("dashboard.today")}>
+          <Card variant="primary">
+            <div className="flex items-center justify-between">
+              <span className="font-sans font-semibold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full">
+                {activeUnit.name} · ~{num(estimatedMinutes)} min
+              </span>
+              <span className="font-sans text-xs font-bold text-muted-foreground">
+                {num(lessonWordsSeen)} of {num(activeLesson.wordIds.length)} words
+              </span>
+            </div>
 
-              {/*
-                Both of these were fixed strings describing the furniture group,
-                which stayed on screen even once the card had moved on to a
-                different group. They now describe the group actually queued up.
-              */}
-              <div>
-                <h2 className="font-sans font-black text-foreground text-2xl lg:text-3xl">
-                  {activeLesson.name}
-                </h2>
-                <p className="font-sans text-muted-foreground text-sm mt-1 leading-relaxed">
-                  {activeLesson.description}
-                </p>
-              </div>
-
-              <button
-                type="button"
-                onClick={() =>
-                  dispatch({
-                    type: "START_LESSON",
-                    lessonId: activeLesson.id,
-                    mode: "NEW_LESSON",
-                    wordQueue: activeLesson.wordIds,
-                  })
-                }
-                className="w-full bg-primary hover:opacity-90 active:opacity-80 rounded-2xl py-4 font-sans font-black text-primary-foreground text-lg min-h-[56px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-md transition-all flex items-center justify-center gap-2 mt-2"
-              >
-                <span>{t("dashboard.continueSession")}</span>
-                <ArrowRight className="size-5" />
-              </button>
-            </Card>
-          </Section>
-
-          {/* SECTION 2: REVIEW */}
-          <Section id="section-review" title={t("dashboard.review")}>
-            <Card variant="default">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2 text-foreground font-sans font-bold text-sm">
-                  <RotateCcw className="size-4 text-primary" />
-                  <span>Smart Review</span>
-                </div>
-                <span className="font-sans font-bold text-xs text-wp-amber bg-wp-amber/10 px-2.5 py-0.5 rounded-full border border-wp-amber/20">
-                  {num(dueCount)} words ready · ~3 min
-                </span>
-              </div>
-              <p className="font-sans text-muted-foreground text-xs leading-relaxed">
-                Review words scheduled for memory retention before decay occurs.
+            <div>
+              <h2 className="font-sans font-black text-foreground text-2xl lg:text-3xl mt-4">
+                {activeLesson.name}
+              </h2>
+              <p className="font-sans text-muted-foreground text-sm mt-1 leading-relaxed">
+                {activeLesson.description}
               </p>
-              <button
-                type="button"
-                onClick={() => dispatch({ type: "GO", to: "practice" })}
-                className="w-full bg-secondary hover:bg-primary/10 text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-sm min-h-[44px] transition-all flex items-center justify-center gap-2"
-              >
-                <span>{t("dashboard.startReview")}</span>
-                <ArrowRight className="size-4" />
-              </button>
-            </Card>
-          </Section>
-        </div>
+            </div>
 
-        {/* ── RIGHT COLUMN ────────────────────────────────────────────────────── */}
-        <div className="flex flex-col gap-6">
-          {/* SECTION 3: YOUR LEARNING */}
-          <Section id="section-learning" title={t("dashboard.yourLearning")}>
-            <Card>
-              <div className="grid grid-cols-3 gap-3 text-center">
-                <div className="bg-wp-green-light/40 border border-wp-green/20 rounded-2xl p-3.5 flex flex-col items-center">
-                  <span className="font-sans font-black text-wp-green text-2xl">{num(strongCount)}</span>
-                  <span className="font-sans font-semibold text-muted-foreground text-xs mt-1">{t("dashboard.strong")}</span>
-                </div>
-                <div className="bg-wp-amber/10 border border-wp-amber/20 rounded-2xl p-3.5 flex flex-col items-center">
-                  <span className="font-sans font-black text-wp-amber text-2xl">{num(learningCount)}</span>
-                  <span className="font-sans font-semibold text-muted-foreground text-xs mt-1">{t("dashboard.learning")}</span>
-                </div>
-                <div className="bg-wp-rose/10 border border-wp-rose/20 rounded-2xl p-3.5 flex flex-col items-center">
-                  <span className="font-sans font-black text-wp-rose text-2xl">{num(dueCount)}</span>
-                  <span className="font-sans font-semibold text-muted-foreground text-xs mt-1">{t("dashboard.due")}</span>
-                </div>
+            <button
+              type="button"
+              onClick={() =>
+                dispatch({
+                  type: "START_LESSON",
+                  lessonId: activeLesson.id,
+                  mode: "NEW_LESSON",
+                  wordQueue: activeLesson.wordIds,
+                })
+              }
+              className="w-full bg-primary hover:opacity-90 active:opacity-80 rounded-2xl py-4 font-sans font-black text-primary-foreground text-lg min-h-[56px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-md transition-all flex items-center justify-center gap-2 mt-4"
+            >
+              <span>{t("dashboard.continueSession")}</span>
+              <ArrowRight className="size-5" />
+            </button>
+          </Card>
+        </Section>
+
+        {/* SECTION 2: REVIEW */}
+        <Section id="section-review" title={t("dashboard.review")}>
+          <Card variant="default">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2 text-foreground font-sans font-bold text-sm">
+                <RotateCcw className="size-4 text-primary" />
+                <span>Smart Review</span>
               </div>
-            </Card>
-          </Section>
-
-          {/* SECTION 4: THIS WEEK */}
-          <Section id="section-this-week" title={t("dashboard.thisWeek")}>
-            <Card>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2 font-sans font-bold text-sm text-foreground">
-                  <Flame className="size-4 text-wp-amber" />
-                  <span>Streak Activity</span>
-                </div>
-                <span className="font-sans font-bold text-xs text-wp-amber">{num(progress.streak)} Day Streak</span>
-              </div>
-
-              <ul className="grid grid-cols-7 gap-2 text-center list-none">
-                {weekActivity.map((d) => (
-                  <li key={d.date} className="flex flex-col items-center gap-1.5">
-                    <span className="font-sans text-[11px] text-muted-foreground font-medium" aria-hidden>
-                      {d.initial}
-                    </span>
-                    <div
-                      className={`size-8 rounded-xl flex items-center justify-center font-sans text-xs font-bold ${
-                        d.done ? "bg-wp-amber text-wp-text-on-amber shadow-sm" : "bg-muted text-muted-foreground"
-                      } ${d.isToday ? "ring-2 ring-primary ring-offset-2 ring-offset-wp-card" : ""}`}
-                    >
-                      <span className="sr-only">
-                        {d.name}
-                        {d.isToday ? " (today)" : ""}: {d.done ? "practiced" : "no session"}
-                      </span>
-                      <span aria-hidden>{d.done ? "✓" : ""}</span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </Card>
-          </Section>
-        </div>
+            </div>
+            <p className="font-sans text-muted-foreground text-xs leading-relaxed mt-2">
+              Review words scheduled for memory retention before decay occurs.
+            </p>
+            <button
+              type="button"
+              onClick={() => dispatch({ type: "GO", to: "practice" })}
+              className="w-full bg-secondary hover:bg-primary/10 text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-sm min-h-[44px] transition-all flex items-center justify-center gap-2 mt-4"
+            >
+              <span>{t("dashboard.startReview")}</span>
+              <ArrowRight className="size-4" />
+            </button>
+          </Card>
+        </Section>
       </div>
     </PageContainer>
   );
