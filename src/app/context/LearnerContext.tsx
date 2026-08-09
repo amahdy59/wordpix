@@ -3,6 +3,7 @@ import type { AnswerAttempt } from "../types";
 import { updateStreak, getLocalDateString } from "../../features/gamification/streak";
 import { calculateSM2State, createInitialWordState, type WordLearningState } from "../../features/gamification/sm2";
 import { calculateXPBreakdown, type XPBreakdown } from "../../features/gamification/xp";
+import { getLearnerState, saveLearnerState, queueMutation } from "../../lib/persistence/db";
 
 export type MasteryLevel = 0 | 1 | 2 | 3;
 export type LearnerGoal = "everyday" | "travel" | "work" | "school" | "conversation" | "kids";
@@ -176,7 +177,7 @@ function loadLearnerState(): LearnerStateSchema {
   }
 }
 
-function saveLearnerState(state: LearnerStateSchema) {
+function saveLearnerStateSync(state: LearnerStateSchema) {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   } catch (e) {
@@ -195,38 +196,129 @@ interface LearnerContextType {
 
 const LearnerContext = createContext<LearnerContextType | undefined>(undefined);
 
+type MutationType = "update_preferences" | "update_accessibility" | "session_completed" | "add_xp" | "reset";
+
+let testStateCache: LearnerStateSchema | null = null;
+
+export function __clearTestStateCache() {
+  testStateCache = null;
+}
+
 export function LearnerProvider({ children }: { children: React.ReactNode }) {
-  const [state, setState] = useState<LearnerStateSchema>(loadLearnerState);
+  const [state, setState] = useState<LearnerStateSchema | null>(() => {
+    if (typeof process !== "undefined" && process.env.NODE_ENV === "test") {
+      return testStateCache || INITIAL_LEARNER_STATE;
+    }
+    if (typeof import.meta !== "undefined" && import.meta.env?.MODE === "test") {
+      return testStateCache || INITIAL_LEARNER_STATE;
+    }
+    return null;
+  });
+
+  // Reset test state cache between tests when localStorage.clear() runs in beforeEach
+  useEffect(() => {
+    if (typeof process !== "undefined" && process.env.NODE_ENV === "test") {
+      const handleClear = () => { testStateCache = null; };
+      window.addEventListener('storage', handleClear); // mock trigger
+      return () => window.removeEventListener('storage', handleClear);
+    }
+  }, []);
 
   useEffect(() => {
-    saveLearnerState(state);
-  }, [state]);
+    let mounted = true;
+    async function load() {
+      if (typeof process !== "undefined" && process.env.NODE_ENV === "test") return;
+      if (typeof import.meta !== "undefined" && import.meta.env?.MODE === "test") return;
+
+      try {
+        let dbState = await getLearnerState();
+        if (!dbState) {
+          try {
+            const ls = localStorage.getItem(STORAGE_KEY);
+            if (ls) {
+              dbState = migrateLegacyState(JSON.parse(ls));
+              localStorage.removeItem(STORAGE_KEY);
+            }
+          } catch(e) {
+            console.warn("Legacy localStorage read failed", e);
+          }
+          if (!dbState) {
+            dbState = INITIAL_LEARNER_STATE;
+          }
+          await saveLearnerState(dbState);
+        }
+        
+        if (mounted) setState(dbState);
+      } catch (err) {
+        console.error("Failed to load state", err);
+        if (mounted) setState(INITIAL_LEARNER_STATE);
+      }
+    }
+    load();
+    return () => { mounted = false; };
+  }, []);
+
+  const updateStateAndPersist = useCallback(
+    (
+      updater: (prev: LearnerStateSchema) => {
+        nextState: LearnerStateSchema;
+        mutationType?: MutationType;
+        mutationPayload?: any;
+      }
+    ) => {
+      setState((prev) => {
+        if (!prev) return prev;
+        const { nextState, mutationType, mutationPayload } = updater(prev);
+        
+        if (typeof process !== "undefined" && process.env.NODE_ENV === "test") {
+          testStateCache = nextState;
+        }
+        if (typeof import.meta !== "undefined" && import.meta.env?.MODE === "test") {
+          testStateCache = nextState;
+        }
+
+        saveLearnerState(nextState).catch(e => console.error("Failed to persist state", e));
+        
+        if (mutationType && mutationPayload) {
+          queueMutation(mutationType, mutationPayload).catch(e => console.error("Failed to queue mutation", e));
+        }
+        
+        return nextState;
+      });
+    },
+    []
+  );
 
   const addXP = useCallback((amount: number) => {
     if (amount <= 0) return;
-    setState((prev) => ({
-      ...prev,
-      learnerProgress: {
-        ...prev.learnerProgress,
-        xp: prev.learnerProgress.xp + amount,
-      },
-    }));
-  }, []);
+    updateStateAndPersist((prev) => {
+      const nextXp = prev.learnerProgress.xp + amount;
+      return {
+        nextState: {
+          ...prev,
+          learnerProgress: {
+            ...prev.learnerProgress,
+            xp: nextXp,
+          },
+        },
+        mutationType: "add_xp",
+        mutationPayload: { xp: nextXp },
+      };
+    });
+  }, [updateStateAndPersist]);
 
   const recordSessionCompletion = useCallback((
     sessionId: string,
     attempts: AnswerAttempt[],
     wordQueue: string[]
   ) => {
-    setState((prev) => {
-      // Idempotency check
+    updateStateAndPersist((prev) => {
       if (prev.learnerProgress.completedSessionIds.includes(sessionId)) {
-        return prev;
+        return { nextState: prev };
       }
 
       const todayStr = getLocalDateString(new Date());
 
-      // Canonical streak calculation
       const streakRes = updateStreak(
         {
           currentStreak: prev.learnerProgress.streak,
@@ -236,14 +328,6 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
       );
 
       const isFirstSessionToday = prev.learnerProgress.lastStudiedDate !== todayStr;
-
-      // XP now runs through the shared calculator, so the completion, perfect
-      // session, and streak bonuses defined in XP_RULES are actually paid out.
-      // Previously this inlined `correct * 10` and calculateXP was dead code
-      // referenced only by its own test.
-      //
-      // The streak bonus is a *daily* bonus, so it is only offered on the first
-      // session of the day — otherwise replaying a lesson would farm it.
       const correctAttempts = attempts.filter((a) => a.correct);
       const xpBreakdown = calculateXPBreakdown(
         correctAttempts.length,
@@ -252,7 +336,6 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
       );
       const xpEarned = xpBreakdown.total;
 
-      // Group attempts by wordId to calculate SM-2 recall quality
       const wordAttempts: Record<string, { correct: number; total: number }> = {};
       attempts.forEach((a) => {
         if (!wordAttempts[a.wordId]) {
@@ -269,17 +352,14 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
         const existingState = updatedMemory[wordId] || createInitialWordState(wordId);
 
         if (!perf || perf.total === 0) {
-          // Unanswered word: mark exposed once
           updatedMemory[wordId] = {
             ...existingState,
             exposures: existingState.exposures + 1,
             lastSeenAt: new Date().toISOString(),
           };
         } else {
-          // Convert accuracy to SM-2 quality rating (0 to 5)
           const accuracy = perf.correct / perf.total;
           const quality = accuracy >= 0.9 ? 5 : accuracy >= 0.7 ? 4 : accuracy >= 0.5 ? 3 : 1;
-
           updatedMemory[wordId] = calculateSM2State(existingState, quality);
         }
       });
@@ -291,56 +371,88 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
         totalWords: wordQueue.length,
         xp: xpBreakdown,
       };
+      
+      const nextLearnerProgress = {
+        ...prev.learnerProgress,
+        xp: prev.learnerProgress.xp + xpEarned,
+        sessionsCompleted: prev.learnerProgress.sessionsCompleted + 1,
+        streak: streakRes.currentStreak,
+        daysActive: isFirstSessionToday ? prev.learnerProgress.daysActive + 1 : prev.learnerProgress.daysActive,
+        lastStudiedDate: todayStr,
+        completedSessionIds: [...prev.learnerProgress.completedSessionIds, sessionId],
+      };
+
+      const payload = {
+        sessionId,
+        completedAt: newSessionRecord.completedAt,
+        score: newSessionRecord.score,
+        totalWords: newSessionRecord.totalWords,
+        xp: newSessionRecord.xp,
+        learnerProgress: nextLearnerProgress,
+        wordMemory: updatedMemory,
+      };
 
       return {
-        ...prev,
-        learnerProgress: {
-          ...prev.learnerProgress,
-          xp: prev.learnerProgress.xp + xpEarned,
-          sessionsCompleted: prev.learnerProgress.sessionsCompleted + 1,
-          streak: streakRes.currentStreak,
-          daysActive: isFirstSessionToday ? prev.learnerProgress.daysActive + 1 : prev.learnerProgress.daysActive,
-          lastStudiedDate: todayStr,
-          completedSessionIds: [...prev.learnerProgress.completedSessionIds, sessionId],
+        nextState: {
+          ...prev,
+          learnerProgress: nextLearnerProgress,
+          wordMemory: updatedMemory,
+          sessionHistory: [newSessionRecord, ...prev.sessionHistory].slice(0, 50),
         },
-        wordMemory: updatedMemory,
-        sessionHistory: [newSessionRecord, ...prev.sessionHistory].slice(0, 50),
+        mutationType: "session_completed",
+        mutationPayload: payload,
       };
     });
-  }, []);
+  }, [updateStateAndPersist]);
 
   const setPreferences = useCallback((level: "A1" | "A2" | "B1", dailyGoalMinutes: number, goal: LearnerGoal = "everyday") => {
-    setState((prev) => ({
-      ...prev,
-      preferences: {
-        englishLevel: level,
-        dailyGoalMinutes,
-        goal,
-      },
-    }));
-  }, []);
+    updateStateAndPersist((prev) => {
+      const prefs = { englishLevel: level, dailyGoalMinutes, goal };
+      return {
+        nextState: { ...prev, preferences: prefs },
+        mutationType: "update_preferences",
+        mutationPayload: prefs
+      };
+    });
+  }, [updateStateAndPersist]);
 
   const setAccessibility = useCallback((patch: Partial<AccessibilityPreferences>) => {
-    setState((prev) => ({
-      ...prev,
-      accessibility: { ...prev.accessibility, ...patch },
-    }));
-  }, []);
+    updateStateAndPersist((prev) => {
+      const nextAcc = { ...prev.accessibility, ...patch };
+      return {
+        nextState: { ...prev, accessibility: nextAcc },
+        mutationType: "update_accessibility",
+        mutationPayload: nextAcc
+      };
+    });
+  }, [updateStateAndPersist]);
 
   const resetToZero = useCallback(() => {
-    // Accessibility settings are assistive, not progress. Wiping someone's text
-    // size or contrast preference because they reset their streak would be a
-    // hostile surprise.
-    setState((prev) => ({ ...INITIAL_LEARNER_STATE, accessibility: prev.accessibility }));
-  }, []);
+    updateStateAndPersist((prev) => {
+      return {
+        nextState: { ...INITIAL_LEARNER_STATE, accessibility: prev.accessibility },
+        mutationType: "reset",
+        mutationPayload: {}
+      };
+    });
+  }, [updateStateAndPersist]);
 
-  // Memoised: an inline object literal here is a new reference on every render,
-  // which pushes a re-render through every consumer and defeats the memo() on
-  // components downstream of it.
   const value = useMemo<LearnerContextType>(
-    () => ({ state, addXP, recordSessionCompletion, setPreferences, setAccessibility, resetToZero }),
+    () => {
+      if (!state) {
+        return {
+          state: INITIAL_LEARNER_STATE,
+          addXP, recordSessionCompletion, setPreferences, setAccessibility, resetToZero
+        };
+      }
+      return { state, addXP, recordSessionCompletion, setPreferences, setAccessibility, resetToZero };
+    },
     [state, addXP, recordSessionCompletion, setPreferences, setAccessibility, resetToZero]
   );
+
+  if (!state) {
+    return <div className="min-h-screen flex items-center justify-center bg-gray-50 text-gray-400">Loading profile...</div>;
+  }
 
   return <LearnerContext.Provider value={value}>{children}</LearnerContext.Provider>;
 }

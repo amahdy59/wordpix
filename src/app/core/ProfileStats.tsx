@@ -1,9 +1,11 @@
 import { memo, useMemo, useState } from "react";
-import { Flame, Sparkles, BookOpen, Trophy, Award, CheckCircle2, ShieldCheck, Target, Brain, Sliders, Moon, Sun } from "lucide-react";
+import { Flame, Sparkles, BookOpen, Trophy, Award, CheckCircle2, ShieldCheck, Target, Brain, Sliders, Moon, Sun, User as UserIcon, LogOut } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { SettingsModal } from "./SettingsModal";
 import { useTheme } from "../shared/ThemeToggle";
+import { useAuth } from "../context/AuthContext";
+import { AuthModal } from "../../features/auth/AuthModal";
 
 const imgAvatar = "/images/core/learner-avatar.webp";
 
@@ -14,7 +16,10 @@ interface Props {
 export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: Props) {
   const { progress } = useProgress();
   const { theme, resolvedTheme, toggleTheme } = useTheme();
+  const { user, signOut } = useAuth();
+  
   const [showSettingsModal, setShowSettingsModal] = useState(false);
+  const [showAuthModal, setShowAuthModal] = useState(false);
 
   const memoryValues = useMemo(() => Object.values(progress.wordMemory), [progress.wordMemory]);
 
@@ -32,10 +37,6 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
     return totalRecalls === 0 ? 0 : Math.round((totalCorrect / totalRecalls) * 100);
   }, [memoryValues]);
 
-  // Words the scheduler currently considers due. Replaces a "7-Day Retention"
-  // tile whose value was `min(98, max(70, recallAccuracy + 5))` — not a
-  // retention measurement at all, just accuracy nudged up and floored at 70%,
-  // sitting under a heading that called these genuine statistics.
   const dueCount = useMemo(() => {
     const now = Date.now();
     return memoryValues.filter((w) => !w.nextReviewAt || new Date(w.nextReviewAt).getTime() <= now)
@@ -63,6 +64,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
   return (
     <div className="flex flex-col gap-6 p-5 md:p-8 pb-8">
       <SettingsModal isOpen={showSettingsModal} onClose={() => setShowSettingsModal(false)} />
+      {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
 
       {/* Profile header with Settings Button */}
       <header className="flex flex-col md:flex-row md:items-center justify-between gap-6">
@@ -88,15 +90,13 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
         </div>
 
         {/* Quick Settings & Theme Action Bar */}
-        <div className="flex items-center gap-2.5">
+        <div className="flex flex-wrap items-center gap-2.5">
           <button
             type="button"
             onClick={toggleTheme}
             aria-label={`Theme: ${theme}. Activate to change theme.`}
             className="p-3 min-h-[44px] rounded-2xl bg-wp-card border border-border text-foreground hover:bg-muted transition-colors shadow-wp-xs flex items-center gap-2 font-sans font-bold text-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            {/* resolvedTheme, not theme: in "system" mode `theme === "dark"` is
-                false even when the OS is dark, which mislabelled the control. */}
             {resolvedTheme === "dark" ? (
               <Sun className="size-4 text-wp-amber" aria-hidden />
             ) : (
@@ -107,11 +107,31 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
           <button
             type="button"
             onClick={() => setShowSettingsModal(true)}
-            className="px-4 min-h-[44px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-xs flex items-center gap-2 shadow-wp-xs hover:opacity-90 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="p-3 min-h-[44px] rounded-2xl bg-wp-card border border-border text-foreground hover:bg-muted transition-colors shadow-wp-xs flex items-center gap-2 font-sans font-bold text-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            <Sliders className="size-4" />
-            <span>Settings &amp; Accessibility</span>
+            <Sliders className="size-4 text-muted-foreground" />
+            <span>Settings</span>
           </button>
+
+          {user ? (
+            <button
+              type="button"
+              onClick={signOut}
+              className="px-4 min-h-[44px] rounded-2xl bg-primary/10 text-primary font-sans font-bold text-xs flex items-center gap-2 shadow-wp-xs hover:bg-primary/20 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              <LogOut className="size-4" />
+              <span className="hidden md:inline">{user.email}</span>
+            </button>
+          ) : (
+            <button
+              type="button"
+              onClick={() => setShowAuthModal(true)}
+              className="px-4 min-h-[44px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-xs flex items-center gap-2 shadow-wp-xs hover:opacity-90 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              <UserIcon className="size-4" />
+              <span>Sign In / Sync</span>
+            </button>
+          )}
         </div>
       </header>
 

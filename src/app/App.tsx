@@ -4,6 +4,7 @@ import type { RouteIntent } from "./router/useHashRouter";
 import { ErrorBoundary } from "./shared/ErrorBoundary";
 import { LearnerProvider } from "./context/LearnerContext";
 import { I18nProvider, useI18n } from "./context/I18nContext";
+import { AuthProvider } from "./context/AuthContext";
 import { useHashRouter, hashToScreen } from "./router/useHashRouter";
 
 import { registerServiceWorker } from "../pwa";
@@ -94,10 +95,12 @@ function AppInner() {
 
 export default function App() {
   return (
-    <LearnerProvider>
-      <I18nProvider>
-        <AppInner />
-      </I18nProvider>
-    </LearnerProvider>
+    <AuthProvider>
+      <LearnerProvider>
+        <I18nProvider>
+          <AppInner />
+        </I18nProvider>
+      </LearnerProvider>
+    </AuthProvider>
   );
 }
