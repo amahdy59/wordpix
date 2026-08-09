@@ -222,7 +222,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
               <motion.button
                 key={card.id}
                 type="button"
-                whileTap={feedback === null ? { scale: 0.96 } : {}}
+                whileTap={feedback === null ? { scale: 0.98 } : {}}
                 transition={{ duration: 0.1 }}
                 aria-label={`Option ${idx + 1} of ${displayCards.length}. Shortcut: press ${idx + 1}`}
                 aria-pressed={isSelected}
@@ -230,7 +230,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                    just chose; `disabled` would send it to <body>. */
                 aria-disabled={feedback !== null}
                 onClick={() => handleCardClick(card)}
-                className={`group relative rounded-2xl overflow-hidden p-1.5 flex flex-col items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-xs ${cardStateStyle}`}
+                className={`group relative rounded-2xl overflow-hidden aspect-[4/3] w-full flex flex-col items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-xs ${cardStateStyle}`}
               >
                 {/* Physical Key Badge */}
                 <span
@@ -240,7 +240,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                   Key [{idx + 1}]
                 </span>
 
-                <div className="h-32 sm:h-40 md:h-44 max-h-[24vh] lg:max-h-[30vh] w-full relative rounded-xl overflow-hidden bg-muted border border-border/60 shrink-0">
+                <div className="h-full w-full relative bg-muted shrink-0">
                   <WordImage
                     word={card}
                     width="400"
@@ -248,7 +248,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                     altMode="assessment"
                     optionIndex={idx}
                     checked={isSelected || isTargetCompleted || isRevealedAnswer}
-                    className="size-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="size-full object-cover"
                   />
                   {(isTargetCompleted || isRevealedAnswer) && (
                     <div className="absolute top-2 end-2 bg-wp-green text-wp-text-on-green p-1 rounded-full shadow-md">

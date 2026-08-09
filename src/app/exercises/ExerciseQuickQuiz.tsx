@@ -177,7 +177,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
               <motion.button
                 key={option.id}
                 type="button"
-                whileTap={feedback === null ? { scale: 0.96 } : {}}
+                whileTap={feedback === null ? { scale: 0.98 } : {}}
                 transition={{ duration: 0.1 }}
                 aria-label={`Option ${idx + 1} of ${options.length}. Shortcut: press ${idx + 1}`}
                 aria-pressed={isSelected}
@@ -190,7 +190,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 */
                 aria-disabled={feedback !== null}
                 onClick={() => handleSelect(option.id)}
-                className={`group relative rounded-2xl overflow-hidden p-1.5 border-2 flex flex-col items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-xs ${stateStyle} ${isHiddenOnMobile ? "hidden lg:flex" : "flex"}`}
+                className={`group relative rounded-2xl overflow-hidden aspect-[4/3] w-full border-2 flex flex-col items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-xs ${stateStyle} ${isHiddenOnMobile ? "hidden lg:flex" : "flex"}`}
               >
                 {/* Physical Keyboard Badge */}
                 <span
@@ -200,7 +200,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                   Key [{idx + 1}]
                 </span>
 
-                <div className="h-32 sm:h-40 md:h-44 max-h-[24vh] w-full relative rounded-xl overflow-hidden bg-muted border border-border/60 shrink-0">
+                <div className="h-full w-full relative bg-muted shrink-0">
                   <WordImage
                     word={option}
                     width="600"
@@ -208,7 +208,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                     altMode="assessment"
                     optionIndex={idx}
                     checked={isSelected || isRevealedAnswer}
-                    className="size-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="size-full object-cover"
                   />
                 </div>
               </motion.button>
