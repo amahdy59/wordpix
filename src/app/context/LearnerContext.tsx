@@ -156,11 +156,11 @@ function migrateState(savedData: unknown): LearnerStateSchema {
   return {
     version: 1,
     preferences: {
-      englishLevel: (saved.preferences as any)?.englishLevel ?? "A1",
-      dailyGoalMinutes: (saved.preferences as any)?.dailyGoalMinutes ?? 10,
-      goal: (saved.preferences as any)?.goal ?? "everyday",
-      theme: (saved.preferences as any)?.theme ?? "system",
-      expression: (saved.preferences as any)?.expression ?? "adult",
+      englishLevel: (saved.preferences as Partial<LearnerPreferences>)?.englishLevel ?? "A1",
+      dailyGoalMinutes: (saved.preferences as Partial<LearnerPreferences>)?.dailyGoalMinutes ?? 10,
+      goal: (saved.preferences as Partial<LearnerPreferences>)?.goal ?? "everyday",
+      theme: (saved.preferences as Partial<LearnerPreferences>)?.theme ?? "system",
+      expression: (saved.preferences as Partial<LearnerPreferences>)?.expression ?? "adult",
     },
     accessibility: {
       ...DEFAULT_ACCESSIBILITY,

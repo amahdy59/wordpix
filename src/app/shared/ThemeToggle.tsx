@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { memo, useState, useEffect } from "react";
 import { Sun, Moon, Monitor } from "lucide-react";
 import { useLearner } from "../context/LearnerContext";
 import { useI18n } from "../context/I18nContext";
@@ -9,13 +9,26 @@ export type { ThemeMode };
 export function useTheme() {
   const { state, setPreferences } = useLearner();
   const theme = state.preferences.theme;
+  const [resolvedTheme, setResolvedTheme] = useState<"light" | "dark">(theme === "dark" ? "dark" : "light");
+
+  useEffect(() => {
+    if (theme !== "system") {
+      setResolvedTheme(theme);
+      return;
+    }
+    const media = window.matchMedia("(prefers-color-scheme: dark)");
+    setResolvedTheme(media.matches ? "dark" : "light");
+    const listener = (e: MediaQueryListEvent) => setResolvedTheme(e.matches ? "dark" : "light");
+    media.addEventListener("change", listener);
+    return () => media.removeEventListener("change", listener);
+  }, [theme]);
 
   const toggleTheme = () => {
     const nextTheme: ThemeMode = theme === "system" ? "dark" : theme === "dark" ? "light" : "system";
     setPreferences({ theme: nextTheme });
   };
 
-  return { theme, setTheme: (mode: ThemeMode) => setPreferences({ theme: mode }), toggleTheme };
+  return { theme, resolvedTheme, setTheme: (mode: ThemeMode) => setPreferences({ theme: mode }), toggleTheme };
 }
 
 interface ThemeToggleProps {

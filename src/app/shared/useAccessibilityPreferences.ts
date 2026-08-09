@@ -26,7 +26,7 @@ export function formatNumber(value: number | string, system: NumeralSystem): str
  * without loss of function" while doing nothing at all.
  */
 export function useApplyAccessibilityPreferences() {
-  const { state, setAccessibility } = useLearner();
+  const { state } = useLearner();
   const { textSize, highContrast } = state.accessibility;
   const { theme, expression } = state.preferences;
 

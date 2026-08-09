@@ -21,7 +21,7 @@ export function SplashWelcome({ dispatch }: Props) {
   // everyday English), so skipping leaves preferences in the same state as
   // clicking through without changing anything — just faster.
   const skip = () => {
-    setPreferences("A1", 10, "everyday");
+    setPreferences({ englishLevel: "A1", dailyGoalMinutes: 10, goal: "everyday" });
     dispatch({ type: "GO", to: "home" });
   };
 

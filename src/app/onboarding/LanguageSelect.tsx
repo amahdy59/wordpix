@@ -36,7 +36,7 @@ export function LanguageSelect({ dispatch }: Props) {
   const { setPreferences } = useProgress();
 
   const handleStart = () => {
-    setPreferences(level, goalMinutes, selectedGoal);
+    setPreferences({ englishLevel: level, dailyGoalMinutes: goalMinutes, goal: selectedGoal });
     dispatch({ type: "ONBOARD_NEXT" });
   };
 
