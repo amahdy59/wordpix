@@ -5,7 +5,7 @@ import { ExerciseShell } from "../shared/ExerciseShell";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { useAudio } from "../shared/useAudio";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
-import { Volume2, Mic, Sparkles, ChevronRight, ChevronLeft, Pause, Play } from "lucide-react";
+import { Volume2, Sparkles, ChevronRight, ChevronLeft } from "lucide-react";
 import { WordImage } from "../shared/WordImage";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 
@@ -16,15 +16,6 @@ interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
-/**
- * How long each word stays on screen before the drill moves to the next.
- *
- * Long enough to hear the word and say it back once. This screen previously
- * required a tap per word and then a final "Continue" — five taps to be shown
- * five words, which is not how a listen-and-repeat drill should feel.
- */
-const WORD_DWELL_MS = 3800;
-
 export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   step,
   words,
@@ -34,7 +25,6 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   const [activeWordIndex, setActiveWordIndex] = useState<number>(0);
   const { accessibility } = useAccessibility();
   const speed = accessibility.speechRate;
-  const [isPaused, setIsPaused] = useState(false);
   const { speak, stop, isPlaying, isSupported, isError } = useAudio({ lang: "en-US", rate: speed });
   const mountedRef = useRef(false);
 
@@ -55,25 +45,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
   useEffect(() => () => stop(), [stop]);
 
-  /**
-   * Walks the group by itself, one word at a time, and moves on to the first
-   * drill after the last one — so the learner listens and repeats rather than
-   * clicking through a list.
-   */
-  useEffect(() => {
-    if (!accessibility.autoAdvance || isPaused) return undefined;
 
-    const timer = setTimeout(() => {
-      if (isLastWord) {
-        stop();
-        dispatch({ type: "LESSON_NEXT" });
-      } else {
-        setActiveWordIndex((i) => i + 1);
-      }
-    }, WORD_DWELL_MS);
-
-    return () => clearTimeout(timer);
-  }, [activeWordIndex, isLastWord, isPaused, accessibility.autoAdvance, dispatch, stop]);
 
   // Speaks whichever word becomes active, however it was reached — the timer
   // above, an arrow, or the group strip.
@@ -85,8 +57,6 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   }, [activeWordIndex, currentWord.label, speak, stop]);
 
   const handleSelectWordIndex = useCallback((index: number) => {
-    // Touching the controls means taking over the pacing.
-    setIsPaused(true);
     setActiveWordIndex(index);
   }, []);
 
@@ -111,35 +81,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         {isPlaying ? `Now playing: ${currentWord.label}` : ""}
       </div>
 
-      <div className="flex flex-col gap-4 sm:gap-6 w-full">
-        {/* Header note */}
-        <div className="flex items-center justify-between px-1 gap-2 flex-wrap">
-          <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs sm:text-sm">
-            {isPlaying ? (
-              <><Volume2 className="size-4 animate-pulse text-wp-blue" /><span>Listening to &ldquo;{currentWord.label}&rdquo;…</span></>
-            ) : (
-              <><Mic className="size-4 text-wp-green" /><span>Listen &amp; repeat out loud</span></>
-            )}
-          </div>
-
-          <div className="flex items-center gap-2">
-            {accessibility.autoAdvance && (
-              <button
-                type="button"
-                onClick={() => setIsPaused((p) => !p)}
-                aria-pressed={isPaused}
-                className="flex items-center gap-1.5 min-h-[44px] px-3 rounded-full border border-border bg-wp-card text-xs font-sans font-bold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-              >
-                {isPaused ? <Play className="size-3.5" aria-hidden /> : <Pause className="size-3.5" aria-hidden />}
-                <span>{isPaused ? "Resume" : "Pause"}</span>
-              </button>
-            )}
-            <div className="flex items-center gap-1.5 text-xs font-sans font-semibold text-wp-amber bg-wp-amber/10 px-2.5 py-0.5 rounded-full border border-wp-amber/20">
-              <Sparkles className="size-3" aria-hidden />
-              <span>Word {activeWordIndex + 1} of {words.length}</span>
-            </div>
-          </div>
-        </div>
+      <div className="flex flex-col gap-4 sm:gap-6 w-full mt-2 sm:mt-4">
 
         {/* Compact Word Selector Grid (No text, tight bounding box) */}
         <div className="flex justify-center gap-2 sm:gap-3" role="tablist" aria-label="Group vocabulary words">
