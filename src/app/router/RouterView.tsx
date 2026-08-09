@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import type { Screen, Action, TabId } from "../types";
 import { getWords, resolveGroup, DEFAULT_UNIT_ID } from "../data/lessons";
 import { useI18n } from "../context/I18nContext";
+import { useLearner } from "../context/LearnerContext";
 import { AppShell } from "../shared/AppShell";
 import { TABBED_IDS } from "../store/reducer";
 
@@ -83,6 +84,8 @@ export interface RouterViewProps {
 }
 
 export function RouterView({ state, dispatch }: RouterViewProps) {
+  const { state: learnerState } = useLearner();
+
   function renderContent() {
     if (state.id === "onboarding") {
       if (state.step === "splash") return <SplashWelcome dispatch={dispatch} />;
@@ -105,7 +108,27 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
     }
 
     if (state.id === "lesson") {
-      const ex: ExStep = EX_STEPS[state.step] ?? "listen";
+      const isBeginner =
+        learnerState.preferences.englishLevel === "A1" ||
+        learnerState.preferences.englishLevel === "A2";
+
+      const exSequence = isBeginner
+        ? (["listen", "recall", "fill", "quiz"] as const)
+        : (["listen", "recall", "fill", "builder", "quiz"] as const);
+
+      if (state.step >= exSequence.length) {
+        return (
+          <LessonCompleteResults
+            sessionId={state.sessionId}
+            lessonId={state.lessonId}
+            attempts={state.attempts}
+            wordQueue={state.wordQueue}
+            dispatch={dispatch}
+          />
+        );
+      }
+
+      const ex: ExStep = exSequence[state.step];
       const groupWords = getWords(state.wordQueue);
 
       const activeGroupWords =
