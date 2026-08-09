@@ -230,7 +230,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                    just chose; `disabled` would send it to <body>. */
                 aria-disabled={feedback !== null}
                 onClick={() => handleCardClick(card)}
-                className={`group relative rounded-2xl overflow-hidden aspect-[4/3] w-full flex flex-col items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-xs ${cardStateStyle}`}
+                className={`group relative rounded-2xl overflow-hidden aspect-[4/3] w-full block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-xs ${cardStateStyle}`}
               >
                 {/* Physical Key Badge */}
                 <span
@@ -248,7 +248,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                     altMode="assessment"
                     optionIndex={idx}
                     checked={isSelected || isTargetCompleted || isRevealedAnswer}
-                    className="size-full object-cover"
+                    className="size-full object-cover object-center block"
                   />
                   {(isTargetCompleted || isRevealedAnswer) && (
                     <div className="absolute top-2 end-2 bg-wp-green text-wp-text-on-green p-1 rounded-full shadow-md">

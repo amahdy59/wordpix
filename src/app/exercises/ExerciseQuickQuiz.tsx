@@ -190,7 +190,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 */
                 aria-disabled={feedback !== null}
                 onClick={() => handleSelect(option.id)}
-                className={`group relative rounded-2xl overflow-hidden aspect-[4/3] w-full border-2 flex flex-col items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-xs ${stateStyle} ${isHiddenOnMobile ? "hidden lg:flex" : "flex"}`}
+                className={`group relative rounded-2xl overflow-hidden aspect-[4/3] w-full border-2 block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-xs ${stateStyle} ${isHiddenOnMobile ? "hidden lg:block" : "block"}`}
               >
                 {/* Physical Keyboard Badge */}
                 <span
@@ -208,7 +208,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                     altMode="assessment"
                     optionIndex={idx}
                     checked={isSelected || isRevealedAnswer}
-                    className="size-full object-cover"
+                    className="size-full object-cover object-center block"
                   />
                 </div>
               </motion.button>
