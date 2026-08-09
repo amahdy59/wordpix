@@ -13,6 +13,7 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { useProgress } from "../data/progress";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
+import { motion } from "framer-motion";
 
 interface Props {
   step: number;
@@ -193,15 +194,17 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
             aria-label="Built sentence"
           >
             {placed.map((item, index) => (
-              <button
+              <motion.button
                 key={`${item}-${index}`}
                 type="button"
+                whileTap={feedback === null ? { scale: 0.95 } : {}}
+                transition={{ duration: 0.1 }}
                 aria-disabled={feedback !== null || undefined}
                 onClick={() => handleRemoveTile(index)}
                 className="bg-primary rounded-xl px-3.5 py-2 font-sans font-black text-primary-foreground text-sm sm:text-base shadow-xs hover:bg-primary/90 transition-all focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary min-h-[44px]"
               >
                 {item}
-              </button>
+              </motion.button>
             ))}
             {placed.length === 0 && (
               <span className="text-muted-foreground text-xs sm:text-sm font-sans font-medium px-2">
@@ -240,9 +243,11 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
             const availableCount = shuffled.slice(0, index + 1).filter((t) => t === item).length;
             const used = usedCount >= availableCount;
             return (
-              <button
+              <motion.button
                 key={`${item}-${index}`}
                 type="button"
+                whileTap={!used && feedback === null ? { scale: 0.95 } : {}}
+                transition={{ duration: 0.1 }}
                 // A consumed tile is genuinely unavailable, so it is disabled.
                 // A tile that is merely waiting out the feedback is only
                 // aria-disabled, so focus is not thrown to <body> between
@@ -255,7 +260,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
                 }`}
               >
                 {item}
-              </button>
+              </motion.button>
             );
           })}
         </div>

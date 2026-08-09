@@ -15,6 +15,7 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { useProgress } from "../data/progress";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
+import { motion } from "framer-motion";
 
 interface Props {
   step: number;
@@ -218,9 +219,11 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             }
 
             return (
-              <button
+              <motion.button
                 key={card.id}
                 type="button"
+                whileTap={feedback === null ? { scale: 0.96 } : {}}
+                transition={{ duration: 0.1 }}
                 aria-label={`Option ${idx + 1} of ${displayCards.length}. Shortcut: press ${idx + 1}`}
                 aria-pressed={isSelected}
                 /* aria-disabled keeps keyboard focus on the card the learner
@@ -253,7 +256,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                     </div>
                   )}
                 </div>
-              </button>
+              </motion.button>
             );
           })}
         </div>

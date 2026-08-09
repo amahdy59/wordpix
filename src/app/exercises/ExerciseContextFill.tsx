@@ -14,6 +14,7 @@ import { useDrillQueue } from "./useDrillQueue";
 import { useProgress } from "../data/progress";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { Keyboard } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface Props {
   step: number;
@@ -185,9 +186,11 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
             }
 
             return (
-              <button
+              <motion.button
                 key={option.id}
                 type="button"
+                whileTap={feedback === null ? { scale: 0.95 } : {}}
+                transition={{ duration: 0.1 }}
                 aria-pressed={isSelected}
                 /* aria-disabled keeps keyboard focus on the chosen option;
                    `disabled` would send it to <body> mid-drill. */
@@ -199,7 +202,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
                 <span className={`text-[11px] px-2 py-0.5 rounded-md font-bold ${isSelected || isRevealedAnswer ? "bg-white/20" : "bg-muted text-muted-foreground"}`}>
                   [{idx + 1}]
                 </span>
-              </button>
+              </motion.button>
             );
           })}
         </div>

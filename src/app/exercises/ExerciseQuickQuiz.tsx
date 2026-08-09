@@ -15,6 +15,7 @@ import { useDrillQueue } from "./useDrillQueue";
 import { useProgress } from "../data/progress";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { HelpCircle, Keyboard } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface Props {
   step: number;
@@ -173,9 +174,11 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
             }
 
             return (
-              <button
+              <motion.button
                 key={option.id}
                 type="button"
+                whileTap={feedback === null ? { scale: 0.96 } : {}}
+                transition={{ duration: 0.1 }}
                 aria-label={`Option ${idx + 1} of ${options.length}. Shortcut: press ${idx + 1}`}
                 aria-pressed={isSelected}
                 /*
@@ -187,7 +190,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 */
                 aria-disabled={feedback !== null}
                 onClick={() => handleSelect(option.id)}
-                className={`group relative rounded-2xl overflow-hidden p-1.5 border-2 flex flex-col items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all duration-200 shadow-wp-xs ${stateStyle} ${isHiddenOnMobile ? "hidden lg:flex" : "flex"}`}
+                className={`group relative rounded-2xl overflow-hidden p-1.5 border-2 flex flex-col items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-xs ${stateStyle} ${isHiddenOnMobile ? "hidden lg:flex" : "flex"}`}
               >
                 {/* Physical Keyboard Badge */}
                 <span
@@ -208,7 +211,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                     className="size-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-              </button>
+              </motion.button>
             );
           })}
         </div>
