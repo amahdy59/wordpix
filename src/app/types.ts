@@ -86,7 +86,8 @@ export type GoTarget = TabId | "lesson-entry" | "lesson-complete" | "skill-hub" 
 
 export type Action =
   | { type: "ONBOARD_NEXT" }
-  | { type: "GO"; to: GoTarget }
+  | { type: "GO"; to: Exclude<GoTarget, "lesson-entry"> }
+  | { type: "GO"; to: "lesson-entry"; worldId?: string }
   | { type: "OPEN_SKILL_EXERCISE"; exerciseId: SkillExerciseId }
   /** Enters self-paced word browsing for one group. */
   | { type: "GO_LEARN_WORDS"; groupId: string }

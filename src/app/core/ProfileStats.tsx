@@ -5,7 +5,7 @@ import { useProgress } from "../data/progress";
 import { SettingsModal } from "./SettingsModal";
 import { useTheme } from "../shared/ThemeToggle";
 
-const imgAvatar = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
+const imgAvatar = "/images/core/learner-avatar.webp";
 
 interface Props {
   dispatch: React.Dispatch<Action>;

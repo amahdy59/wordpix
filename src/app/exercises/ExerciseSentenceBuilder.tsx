@@ -121,10 +121,8 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
   return (
     <ExerciseShell
       step={step}
-      title="Writing & Sentence Construction"
+      title="Sentence Builder"
       words={words}
-      activeWord={currentTargetWord}
-      mode="guided"
       groupId={groupId}
       dispatch={dispatch}
       footer={

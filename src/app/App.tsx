@@ -74,7 +74,7 @@ export function reducer(state: Screen, action: Action): Screen {
       : { id: "home" };
   }
   if (action.type === "GO") {
-    if (action.to === "lesson-entry") return { id: "lesson-entry" };
+    if (action.to === "lesson-entry") return { id: "lesson-entry", worldId: action.worldId };
     if (action.to === "skill-hub") return { id: "skill-hub" };
     // Onboarding is the one screen that carries required state of its own;
     // `{ id: "onboarding" }` without a step renders nothing at all.

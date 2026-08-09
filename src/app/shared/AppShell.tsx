@@ -18,7 +18,7 @@ interface Props {
  */
 export const AppShell = memo(function AppShell({ activeTab, dispatch, children }: Props) {
   return (
-    <div className="min-h-svh bg-background flex flex-col md:flex-row">
+    <div className="min-h-svh bg-background flex flex-col lg:flex-row">
       {/* Centered container — caps layout width on ultra-wide screens */}
       <div className="min-h-svh flex w-full max-w-screen-2xl mx-auto relative">
         {/* Left sidebar — visible on md+ only */}
@@ -26,24 +26,24 @@ export const AppShell = memo(function AppShell({ activeTab, dispatch, children }
 
         {/* Main Content Column */}
         <div className="flex-1 flex flex-col min-w-0 h-svh relative">
-          {/* Mobile Header - hidden on md+ */}
+          {/* Mobile Header - hidden on lg+ */}
           <MobileHeader dispatch={dispatch} />
 
           {/* Scrollable content area */}
           <main
             id="main-content"
-            className="flex-1 overflow-y-auto pb-[calc(env(safe-area-inset-bottom)+96px)] md:pb-6 pt-6 -webkit-overflow-scrolling-touch"
+            className="flex-1 overflow-y-auto pb-[calc(env(safe-area-inset-bottom)+96px)] lg:pb-6 pt-6 -webkit-overflow-scrolling-touch"
             tabIndex={-1}
           >
-            <div className="mx-auto max-w-7xl w-full px-4 md:px-8">
+            <div className="mx-auto max-w-7xl w-full px-4 lg:px-8">
               {children}
             </div>
           </main>
         </div>
 
-        {/* Mobile bottom bar — hidden on md+ */}
+        {/* Mobile bottom bar — hidden on lg+ */}
         <div
-          className="md:hidden fixed bottom-0 inset-x-0 z-40"
+          className="lg:hidden fixed bottom-0 inset-x-0 z-40"
           aria-hidden="false"
         >
           <BottomTabBar activeTab={activeTab} dispatch={dispatch} />

@@ -89,7 +89,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
         <div>
           <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider mb-1">
             <BookOpen className="size-4" />
-            <span>SM-2 Spaced Repetition Review</span>
+            <span>Smart Daily Review</span>
           </div>
           <h1 className="font-sans font-black text-foreground text-2xl md:text-3xl leading-tight">
             Daily Vocabulary Review

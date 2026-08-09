@@ -108,10 +108,8 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
   return (
     <ExerciseShell
       step={step}
-      title="Complete the Sentence"
+      title="Context Fill"
       words={words}
-      activeWord={currentTargetWord}
-      mode="guided"
       groupId={groupId}
       dispatch={dispatch}
       footer={

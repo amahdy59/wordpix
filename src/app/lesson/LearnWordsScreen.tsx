@@ -78,7 +78,7 @@ export const LearnWordsScreen = memo(function LearnWordsScreen({ groupId, dispat
   }, [stop, dispatch]);
 
   return (
-    <div className="fixed inset-0 z-40 bg-background flex flex-col md:flex-row overflow-hidden overscroll-none">
+    <div className="fixed inset-0 z-40 bg-background flex flex-col lg:flex-row overflow-hidden overscroll-none">
       {/* Accessible live region */}
       <div role="status" aria-live="polite" aria-atomic="true" className="sr-only">
         {isPlaying ? `Now playing: ${activeWord.label}` : `Selected: ${activeWord.label}`}

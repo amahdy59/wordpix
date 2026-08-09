@@ -17,7 +17,7 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
 
   return (
     <aside
-      className="hidden md:flex flex-col items-center lg:items-stretch bg-wp-card border-e border-border
+      className="hidden lg:flex flex-col items-center lg:items-stretch bg-wp-card border-e border-border
                  w-[80px] lg:w-[240px] shrink-0 py-6 lg:py-8 justify-between select-none z-30 transition-all duration-300"
       aria-label="Sidebar navigation"
     >

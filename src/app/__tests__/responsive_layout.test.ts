@@ -31,8 +31,8 @@ describe("Responsive visibility has no dead zones", () => {
   });
 
   it("offers exactly one start-practice control per breakpoint", () => {
-    const desktopControl = /hidden md:block[\s\S]{0,200}Play Game/;
-    const mobileControl = /md:hidden[\s\S]*?Play Game/;
+    const desktopControl = /hidden lg:block[\s\S]{0,200}Play Game/;
+    const mobileControl = /lg:hidden[\s\S]*?Play Game/;
     expect(source).toMatch(desktopControl);
     expect(source).toMatch(mobileControl);
   });

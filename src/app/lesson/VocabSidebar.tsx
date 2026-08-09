@@ -62,7 +62,7 @@ export const VocabSidebar = memo(function VocabSidebar({
 
   return (
     <aside
-      className={`${mobileOpen ? "fixed inset-0 z-50 flex" : "hidden"} md:static md:flex flex-col min-h-0 max-h-svh w-full md:w-80 lg:w-96 xl:w-[420px] bg-wp-card border-s border-border h-full overflow-hidden overscroll-none shrink-0`}
+      className={`${mobileOpen ? "fixed inset-0 z-50 flex" : "hidden"} lg:static lg:flex flex-col min-h-0 max-h-svh w-full lg:w-96 xl:w-[420px] bg-wp-card border-s border-border h-full overflow-hidden overscroll-none shrink-0`}
       aria-label={`${groupName} vocabulary list`}
       aria-modal={mobileOpen || undefined}
       role={mobileOpen ? "dialog" : undefined}
@@ -85,7 +85,7 @@ export const VocabSidebar = memo(function VocabSidebar({
                 type="button"
                 onClick={onMobileClose}
                 aria-label="Close vocabulary browser"
-                className="md:hidden size-11 rounded-xl border border-border flex items-center justify-center"
+                className="lg:hidden size-11 rounded-xl border border-border flex items-center justify-center"
               >
                 <X className="size-5" />
               </button>

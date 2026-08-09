@@ -643,7 +643,15 @@ export function resolveGroup(groupId: string, wordIds: string[] = []): WordGroup
       description: "Words your memory schedule says are due today.",
     };
   }
-  return ALL_GROUPS.find((g) => g.id === groupId) ?? ALL_GROUPS[0];
+  const group = ALL_GROUPS.find((g) => g.id === groupId);
+  if (!group) {
+    // @ts-ignore
+    if (import.meta.env?.DEV) {
+      throw new Error(`UNKNOWN_GROUP: Could not resolve group ID "${groupId}"`);
+    }
+    return ALL_GROUPS[0];
+  }
+  return group;
 }
 
 /**

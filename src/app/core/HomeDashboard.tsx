@@ -8,7 +8,7 @@ import { useOfflineReadiness } from "../shared/useOfflineReadiness";
 import { useI18n } from "../context/I18nContext";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 
-const imgAvatar = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80";
+const imgAvatar = "/images/core/learner-avatar.webp";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -66,11 +66,11 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
   const offline = useOfflineReadiness(activeWorld.id);
 
   return (
-    <div className="flex flex-col gap-6 p-5 md:p-8 pb-10 max-w-6xl mx-auto w-full">
+    <div className="flex flex-col gap-6 w-full max-w-6xl mx-auto">
       {/* Top Learner Greeting */}
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-3.5">
-          <div className="relative size-12 md:size-14 shrink-0 rounded-full overflow-hidden border-2 border-primary/20 shadow-wp-xs">
+          <div className="relative size-12 lg:size-14 shrink-0 rounded-full overflow-hidden border-2 border-primary/20 shadow-wp-xs">
             <img
               alt="WordPix learner profile"
               className="absolute inset-0 object-cover size-full"
@@ -79,10 +79,10 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
             />
           </div>
           <div>
-            <h1 className="font-sans font-black text-foreground text-xl md:text-2xl leading-tight">
+            <h1 className="font-sans font-black text-foreground text-xl lg:text-2xl leading-tight">
               {greeting}, Learner!
             </h1>
-            <p className="font-sans font-medium text-muted-foreground text-xs md:text-sm mt-0.5">
+            <p className="font-sans font-medium text-muted-foreground text-xs lg:text-sm mt-0.5">
               Level {progress.englishLevel} · Goal: {num(progress.dailyGoalMinutes)} min/day
             </p>
           </div>
@@ -110,7 +110,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
       */}
 
       {/* Main Grid: TODAY + REVIEW (Left) | YOUR LEARNING + THIS WEEK (Right) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
         {/* ── LEFT COLUMN ─────────────────────────────────────────────────────── */}
         <div className="flex flex-col gap-6">
           {/* SECTION 1: TODAY */}
@@ -136,7 +136,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                 different group. They now describe the group actually queued up.
               */}
               <div>
-                <h2 className="font-sans font-black text-foreground text-2xl md:text-3xl">
+                <h2 className="font-sans font-black text-foreground text-2xl lg:text-3xl">
                   {activeGroup.name}
                 </h2>
                 <p className="font-sans text-muted-foreground text-sm mt-1 leading-relaxed">
@@ -153,7 +153,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     wordQueue: activeGroup.wordIds,
                   })
                 }
-                className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 font-sans font-bold text-wp-text-on-blue text-base min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-sm transition-all flex items-center justify-center gap-2"
+                className="w-full bg-primary hover:opacity-90 active:opacity-80 rounded-2xl py-4 font-sans font-black text-primary-foreground text-lg min-h-[56px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-md transition-all flex items-center justify-center gap-2 mt-2"
               >
                 <span>{t("dashboard.continueSession")}</span>
                 <ArrowRight className="size-5" />
@@ -170,7 +170,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2 text-foreground font-sans font-bold text-sm">
                   <RotateCcw className="size-4 text-primary" />
-                  <span>Spaced Repetition</span>
+                  <span>Smart Review</span>
                 </div>
                 <span className="font-sans font-bold text-xs text-wp-amber bg-wp-amber/10 px-2.5 py-0.5 rounded-full border border-wp-amber/20">
                   {num(dueCount)} words ready · ~3 min

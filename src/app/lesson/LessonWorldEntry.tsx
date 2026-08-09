@@ -40,7 +40,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ worldId, dispat
 
         <div className="absolute bottom-8 start-8 flex flex-col gap-2">
           <span className="font-sans font-bold text-xs text-white bg-black/50 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20 self-start">
-            Rosetta Stone Group Learning
+            WordPix Immersion
           </span>
           <h2 className="font-sans font-black text-white text-3xl">{world.name} World</h2>
           <p className="font-sans text-white/70 text-sm max-w-sm">
@@ -88,7 +88,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ worldId, dispat
           <div className="flex flex-col gap-1">
             <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider">
               <Layers className="size-4" />
-              <span>Rosetta Stone Group Learning</span>
+              <span>WordPix Immersion</span>
             </div>
             <h2 className="font-sans font-black text-foreground text-2xl leading-tight">
               Select a Word Group
@@ -105,7 +105,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ worldId, dispat
 
               // Calc group progress from useProgress
               const groupWords = g.wordIds.map((id) => world.vocabulary.find((v) => v.id === id)).filter(Boolean);
-              const masteredInGroup = groupWords.filter((w) => (progress.wordMastery[w!.id] || 0) >= 2).length;
+              const masteredInGroup = groupWords.filter((w) => (progress.wordMastery[w!.id] || 0) >= 3).length;
 
               return (
                 <button

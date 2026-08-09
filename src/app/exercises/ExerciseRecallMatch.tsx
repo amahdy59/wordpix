@@ -1,6 +1,7 @@
 import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
 import type { Action } from "../types";
 import type { VocabItem } from "../data/lessons";
+import { resolveWorldForGroup } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { WordImage } from "../shared/WordImage";
 import { useAudio } from "../shared/useAudio";
@@ -41,7 +42,17 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   const { playCorrect, playIncorrect, playClick } = useSound();
   const hasSpokenRef = useRef<Record<string, boolean>>({});
 
-  const displayCards = useMemo(() => shuffleArray(words), [words]);
+  const displayCards = useMemo(() => {
+    // Generate 6 cards total: the group's words + necessary distractors
+    const worldVocab = resolveWorldForGroup(groupId).vocabulary;
+    const wordIds = new Set(words.map((w) => w.id));
+    const distractorsPool = worldVocab.filter((w) => !wordIds.has(w.id));
+    
+    const distractorsNeeded = Math.max(0, 6 - words.length);
+    const shuffledDistractors = shuffleArray(distractorsPool).slice(0, distractorsNeeded);
+    
+    return shuffleArray([...words, ...shuffledDistractors]);
+  }, [words, groupId]);
 
   /** Clears the result and lets the queue's next question render. */
   const advanceNext = useCallback(() => {
@@ -127,10 +138,8 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   return (
     <ExerciseShell
       step={step}
-      title="Audio & Image Matching"
+      title="Audio Recall Match"
       words={words}
-      activeWord={currentTargetWord}
-      mode="retrieval"
       groupId={groupId}
       dispatch={dispatch}
       footer={
@@ -188,7 +197,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         <div
           role="group"
           aria-label="Choose matching picture for audio prompt"
-          className="grid grid-cols-2 sm:grid-cols-3 gap-3.5 w-full"
+          className="grid grid-cols-2 lg:grid-cols-3 gap-3.5 w-full pb-8 lg:pb-0"
         >
           {displayCards.map((card, idx) => {
             const isSelected = selectedId === card.id;
@@ -228,7 +237,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                   Key [{idx + 1}]
                 </span>
 
-                <div className="h-28 sm:h-36 md:h-40 max-h-[22vh] w-full relative rounded-xl overflow-hidden bg-muted border border-border/60 shrink-0">
+                <div className="h-32 sm:h-40 md:h-44 max-h-[24vh] lg:max-h-[30vh] w-full relative rounded-xl overflow-hidden bg-muted border border-border/60 shrink-0">
                   <WordImage
                     word={card}
                     width="400"

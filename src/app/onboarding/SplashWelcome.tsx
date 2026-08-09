@@ -60,8 +60,8 @@ export function SplashWelcome({ dispatch }: Props) {
           <div className="flex flex-col gap-2.5 mt-2">
             {[
               "Interactive 2D scene discovery & audio pronunciation",
-              "Rosetta Stone & Duolingo group matching drills",
-              "Spaced repetition memory decay tracking",
+              "Visual language immersion matching drills",
+              "Adaptive memory reviews",
             ].map((text, i) => (
               <div key={i} className="flex items-center gap-2.5 text-white/80 text-sm font-sans font-medium">
                 <CheckCircle2 className="size-4 text-wp-green shrink-0" />

@@ -17,8 +17,6 @@ interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
-const SPEEDS = [0.5, 0.75, 1.0, 1.25];
-
 /**
  * How long each word stays on screen before the drill moves to the next.
  *
@@ -35,10 +33,8 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   dispatch,
 }: Props) {
   const [activeWordIndex, setActiveWordIndex] = useState<number>(0);
-  // Seeded from the learner's Settings speech rate rather than a constant,
-  // so the global preference is the starting point here too.
   const { accessibility } = useAccessibility();
-  const [speed, setSpeed] = useState<number>(accessibility.speechRate);
+  const speed = accessibility.speechRate;
   const [isPaused, setIsPaused] = useState(false);
   const { speak, stop, isPlaying, isSupported, isError } = useAudio({ lang: "en-US", rate: speed });
   const mountedRef = useRef(false);
@@ -97,46 +93,15 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
   const handleToggle = () => { if (isPlaying) stop(); else playWord(); };
 
-  const handleSpeedChange = (s: number) => {
-    setSpeed(s);
-    stop();
-    setTimeout(() => speak(currentWord.label), 120);
-  };
 
-  const leftExtra = (
-    <div className="flex items-center gap-2 flex-wrap">
-      <span className="font-sans text-white/50 text-xs font-medium">Listen speed:</span>
-      {SPEEDS.map((s) => (
-        <button
-          key={s}
-          type="button"
-          onClick={() => handleSpeedChange(s)}
-          aria-pressed={speed === s}
-          className={`px-2.5 py-0.5 rounded-lg text-xs font-sans font-bold transition-all min-h-[44px] min-w-[44px] ${
-            speed === s
-              ? "bg-primary text-primary-foreground shadow-sm"
-              : "bg-white/10 text-white/60 hover:text-white"
-          } focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary`}
-        >
-          {s}x
-        </button>
-      ))}
-    </div>
-  );
 
   return (
     <ExerciseShell
       step={step}
       title="Pronunciation & Audio Drill"
       words={words}
-      activeWord={currentWord}
-      onSelectWord={(w) => {
-        const idx = words.findIndex((item) => item.id === w.id);
-        if (idx !== -1) handleSelectWordIndex(idx);
-      }}
       groupId={groupId}
       dispatch={dispatch}
-      leftPanelExtra={leftExtra}
       footer={
         <div className="flex flex-col gap-2">
           <PrimaryButton label="Continue to Context Sentences →" onClick={() => { stop(); dispatch({ type: "LESSON_NEXT" }); }} />

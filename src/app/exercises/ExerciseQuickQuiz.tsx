@@ -1,6 +1,7 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { Action } from "../types";
 import type { VocabItem } from "../data/lessons";
+import { resolveWorldForGroup } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getRichSentence } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
@@ -40,10 +41,19 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
   usePrefetchImage(queue.next);
 
   const options = useMemo(() => {
-    const otherWords = words.filter((w) => w.id !== currentTargetWord.id);
-    const shuffled = shuffleArray(otherWords).slice(0, 3);
-    return shuffleArray([currentTargetWord, ...shuffled]);
-  }, [currentTargetWord, words]);
+    const worldVocab = resolveWorldForGroup(groupId).vocabulary;
+    const distractorsPool = worldVocab.filter((w) => w.id !== currentTargetWord.id);
+    const shuffledDistractors = shuffleArray(distractorsPool).slice(0, 5);
+    
+    // Pick a random index between 0 and 3 for the correct answer
+    // so it's always visible on mobile where only 4 are shown.
+    const correctIndex = Math.floor(Math.random() * 4);
+    
+    const finalOptions = [...shuffledDistractors];
+    finalOptions.splice(correctIndex, 0, currentTargetWord);
+    
+    return finalOptions;
+  }, [currentTargetWord, groupId]);
 
   const advanceNext = useCallback(() => {
     setSelectedId(null);
@@ -103,8 +113,6 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       step={step}
       title="Mastery Quick Quiz"
       words={words}
-      activeWord={currentTargetWord}
-      mode="assessment"
       groupId={groupId}
       dispatch={dispatch}
       footer={
@@ -147,9 +155,10 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         <div
           role="group"
           aria-label={`Which image matches ${currentTargetWord.label}?`}
-          className="grid grid-cols-2 gap-3.5 w-full"
+          className="grid grid-cols-2 lg:grid-cols-3 gap-3.5 w-full"
         >
           {options.map((option, idx) => {
+            const isHiddenOnMobile = idx >= 4;
             const isSelected = selectedId === option.id;
             const isRevealedAnswer = feedback === "incorrect" && option.id === currentTargetWord.id;
 
@@ -178,7 +187,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 */
                 aria-disabled={feedback !== null}
                 onClick={() => handleSelect(option.id)}
-                className={`group relative rounded-2xl overflow-hidden p-1.5 border-2 flex flex-col items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all duration-200 shadow-wp-xs ${stateStyle}`}
+                className={`group relative rounded-2xl overflow-hidden p-1.5 border-2 flex flex-col items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all duration-200 shadow-wp-xs ${stateStyle} ${isHiddenOnMobile ? "hidden lg:flex" : "flex"}`}
               >
                 {/* Physical Keyboard Badge */}
                 <span

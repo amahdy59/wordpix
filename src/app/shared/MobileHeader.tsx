@@ -21,7 +21,7 @@ export const MobileHeader = memo(function MobileHeader({ dispatch }: Props) {
       <SettingsModal isOpen={showSettingsModal} onClose={() => setShowSettingsModal(false)} />
       
       <header
-        className="md:hidden sticky top-0 z-40 w-full flex items-center justify-between px-4 h-14 bg-background/85 backdrop-blur-xl border-b border-border pt-[env(safe-area-inset-top)] box-content"
+        className="lg:hidden sticky top-0 z-40 w-full flex items-center justify-between px-4 h-14 bg-background/85 backdrop-blur-xl border-b border-border pt-[env(safe-area-inset-top)] box-content"
         aria-label="Mobile top navigation"
       >
         {/* Brand / Home Shortcut */}

@@ -32,13 +32,13 @@ export const SceneCanvas = memo(function SceneCanvas({
   onBrowseWords,
 }: Props) {
   return (
-    <section className="relative flex-1 md:flex-[3] min-w-0 min-h-0 flex flex-col bg-background h-full overflow-hidden" aria-label="Vocabulary word view">
+    <section className="relative flex-1 lg:flex-[3] min-w-0 min-h-0 flex flex-col bg-background h-full overflow-hidden" aria-label="Vocabulary word view">
       {/* Mobile status bar */}
-      <div className="md:hidden shrink-0">
+      <div className="lg:hidden shrink-0">
         <StatusBar />
       </div>
 
-      <div className="md:hidden flex items-center gap-2 px-3 py-2 bg-wp-card border-b border-border shrink-0">
+      <div className="lg:hidden flex items-center gap-2 px-3 py-2 bg-wp-card border-b border-border shrink-0">
         <button
           type="button"
           onClick={onClose}
@@ -60,7 +60,7 @@ export const SceneCanvas = memo(function SceneCanvas({
       </div>
 
       {/* Desktop header bar */}
-      <header className="hidden md:flex flex-wrap items-center justify-between gap-x-4 gap-y-2 px-5 py-3 bg-wp-card border-b border-border shrink-0 z-10">
+      <header className="hidden lg:flex flex-wrap items-center justify-between gap-x-4 gap-y-2 px-5 py-3 bg-wp-card border-b border-border shrink-0 z-10">
         <div className="flex items-center gap-3">
           <button
             type="button"
@@ -93,7 +93,7 @@ export const SceneCanvas = memo(function SceneCanvas({
       </header>
 
       {/* Main Display Canvas Container */}
-      <div className="relative flex-1 min-h-0 flex flex-col items-center bg-wp-panel p-3 md:p-4 overflow-hidden">
+      <div className="relative flex-1 min-h-0 flex flex-col items-center bg-wp-panel p-3 lg:p-4 overflow-hidden">
         {/* Main Displayed Picture (HD 1200px+ resolution, un-cropped & un-distorted) */}
         <div className="relative w-full flex-1 min-h-0 flex items-center justify-center overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-wp-panel/60">
           <WordImage
@@ -106,14 +106,14 @@ export const SceneCanvas = memo(function SceneCanvas({
 
         {/* Floating Active Word Detail Overlay */}
         <div className="w-full max-w-2xl z-20 mt-3 pointer-events-auto shrink-0">
-          <div className="bg-wp-card/95 backdrop-blur-xl border border-border/80 rounded-2xl p-3 md:p-4 shadow-wp-md flex items-center gap-3 md:gap-4 w-full">
-            <div className="size-14 md:size-16 rounded-xl overflow-hidden shrink-0 border border-border bg-muted flex items-center justify-center">
+          <div className="bg-wp-card/95 backdrop-blur-xl border border-border/80 rounded-2xl p-3 lg:p-4 shadow-wp-md flex items-center gap-3 lg:gap-4 w-full">
+            <div className="size-14 lg:size-16 rounded-xl overflow-hidden shrink-0 border border-border bg-muted flex items-center justify-center">
               <WordImage word={activeWord} width="64" height="64" className="size-full object-cover" />
             </div>
 
             <div className="flex-1 min-w-0 flex flex-col gap-1">
               <div className="flex items-center gap-2">
-                <h2 className="font-sans font-black text-foreground text-xl md:text-2xl leading-none truncate">
+                <h2 className="font-sans font-black text-foreground text-xl lg:text-2xl leading-none truncate">
                   {activeWord.label}
                 </h2>
                 <AudioButton
@@ -147,20 +147,20 @@ export const SceneCanvas = memo(function SceneCanvas({
             <button
               type="button"
               onClick={onPlayGame}
-              className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl px-5 py-3 font-sans font-bold text-wp-text-on-blue text-sm shrink-0 min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all hidden md:block"
+              className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl px-5 py-3 font-sans font-bold text-wp-text-on-blue text-sm shrink-0 min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all hidden lg:block"
             >
               Play Game
             </button>
           </div>
         </div>
 
-        <div className="absolute top-3 end-3 z-30 md:hidden">
+        <div className="absolute top-3 end-3 z-30 lg:hidden">
           <CloseButton onClick={onClose} aria-label="Close lesson and return to lesson overview" />
         </div>
       </div>
 
       {/* Mobile bottom card */}
-      <div className="md:hidden bg-wp-card rounded-t-[28px] px-5 pt-4 pb-3 flex flex-col gap-3 shadow-wp-md shrink-0 border-t border-border z-20">
+      <div className="lg:hidden bg-wp-card rounded-t-[28px] px-5 pt-4 pb-3 flex flex-col gap-3 shadow-wp-md shrink-0 border-t border-border z-20">
         <button
           type="button"
           onClick={onPlayGame}
@@ -172,7 +172,7 @@ export const SceneCanvas = memo(function SceneCanvas({
         </button>
       </div>
 
-      <div className="md:hidden shrink-0">
+      <div className="lg:hidden shrink-0">
         <HomeIndicator />
       </div>
     </section>
