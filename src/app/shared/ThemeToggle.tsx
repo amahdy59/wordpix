@@ -31,8 +31,9 @@ interface ThemeToggleProps {
   /**
    * Icon-only rendering for the 80px icon rail. With the label the control is
    * 92px wide, which overflowed the sidebar by 7px on each side.
+   * If "responsive", it is compact below lg, and expanded on lg+.
    */
-  compact?: boolean;
+  compact?: boolean | "responsive";
 }
 
 export const ThemeToggle = memo(function ThemeToggle({ compact = false }: ThemeToggleProps) {
@@ -48,18 +49,31 @@ export const ThemeToggle = memo(function ThemeToggle({ compact = false }: ThemeT
       <Monitor className="size-4 text-primary" aria-hidden />
     );
 
+  const isCompact = compact === true;
+  const isResponsive = compact === "responsive";
+
   return (
     <button
       type="button"
       onClick={toggleTheme}
       aria-label={label}
-      title={compact ? label : undefined}
+      title={isCompact ? label : undefined}
       className={`flex items-center justify-center rounded-xl border border-border bg-wp-card text-foreground hover:bg-muted text-xs font-sans font-bold transition-all min-h-[44px] min-w-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-        compact ? "size-11 shrink-0" : "gap-1.5 px-3 py-1.5"
+        isCompact 
+          ? "size-11 shrink-0" 
+          : isResponsive 
+            ? "size-11 shrink-0 lg:w-full lg:h-auto lg:gap-3 lg:px-3 lg:py-3 lg:justify-start lg:border-transparent lg:bg-transparent"
+            : "gap-1.5 px-3 py-1.5"
       }`}
     >
-      {icon}
-      {!compact && <span>{THEME_LABEL[theme]}</span>}
+      <div className={isResponsive ? "shrink-0 flex items-center justify-center size-5" : ""}>
+        {icon}
+      </div>
+      {!isCompact && (
+        <span className={isResponsive ? "hidden lg:block ms-1 font-semibold text-sm text-muted-foreground group-hover:text-foreground transition-colors" : ""}>
+          {THEME_LABEL[theme]}
+        </span>
+      )}
     </button>
   );
 });

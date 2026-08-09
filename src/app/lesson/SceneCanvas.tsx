@@ -1,5 +1,5 @@
-import { memo, useState } from "react";
-import { ArrowLeft, BookOpen, Volume2, Sparkles, Image as ImageIcon, MapPin, List } from "lucide-react";
+import { memo } from "react";
+import { ArrowLeft, BookOpen, Sparkles, List } from "lucide-react";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { CloseButton } from "../shared/CloseButton";
@@ -7,58 +7,32 @@ import { AudioButton } from "../shared/AudioButton";
 import { WordImage } from "../shared/WordImage";
 import type { VocabItem } from "../data/lessons";
 
-/**
- * Hotspot coordinates in lessons.ts are percentages of the scene image. The
- * width AND height are pinned here so the delivered image has a known, fixed
- * aspect ratio — the overlay box below depends on it.
- */
-const SCENE_IMAGE_WIDTH = 1600;
-const SCENE_IMAGE_HEIGHT = 1000;
-const SCENE_ASPECT_RATIO = `${SCENE_IMAGE_WIDTH} / ${SCENE_IMAGE_HEIGHT}`;
-
-const imgDefaultScene = "./scene-images/bedroom-scene.jpg";
-
 interface Props {
   activeWord: VocabItem;
-  hotspotWords: VocabItem[];
   /** Name of the word group this session teaches, shown in the header. */
   groupName: string;
   activeId: string;
   isPlaying: boolean;
   isError: boolean;
   onSelectWord: (id: string) => void;
-  onLearnWord: () => void;
+  onPlayGame: () => void;
   onClose: () => void;
   onBrowseWords: () => void;
 }
 
 export const SceneCanvas = memo(function SceneCanvas({
   activeWord,
-  hotspotWords,
   groupName,
   activeId,
   isPlaying,
   isError,
   onSelectWord,
-  onLearnWord,
+  onPlayGame,
   onClose,
   onBrowseWords,
 }: Props) {
-  const [viewMode, setViewMode] = useState<"word" | "scene">("word");
-
-  // Most groups have no words pinned to the room photo, and a scene with no
-  // hotspots is a dead end: it offers nothing to tap and no way back except the
-  // toggle. Only offer the view when there is something on it.
-  const hasScene = hotspotWords.length > 0;
-  const isWordView = viewMode === "word" || !hasScene;
-
-  const handleSelectWordLocal = (id: string) => {
-    onSelectWord(id);
-    setViewMode("word");
-  };
-
   return (
-    <section className="relative flex-1 md:flex-[3] min-w-0 min-h-0 flex flex-col bg-background h-full overflow-hidden" aria-label="Vocabulary scene">
+    <section className="relative flex-1 md:flex-[3] min-w-0 min-h-0 flex flex-col bg-background h-full overflow-hidden" aria-label="Vocabulary word view">
       {/* Mobile status bar */}
       <div className="md:hidden shrink-0">
         <StatusBar />
@@ -73,25 +47,7 @@ export const SceneCanvas = memo(function SceneCanvas({
         >
           <ArrowLeft className="size-5" aria-hidden />
         </button>
-        {hasScene ? (
-          <div className="flex flex-1 items-center bg-muted p-1 rounded-xl border border-border">
-            {(["word", "scene"] as const).map((mode) => (
-              <button
-                key={mode}
-                type="button"
-                onClick={() => setViewMode(mode)}
-                aria-pressed={viewMode === mode}
-                className={`flex-1 min-h-[44px] rounded-lg text-xs font-sans font-bold capitalize ${
-                  viewMode === mode ? "bg-wp-card text-primary shadow-wp-xs" : "text-muted-foreground"
-                }`}
-              >
-                {mode}
-              </button>
-            ))}
-          </div>
-        ) : (
-          <p className="flex-1 font-sans font-bold text-foreground text-sm truncate px-1">{groupName}</p>
-        )}
+        <p className="flex-1 font-sans font-bold text-foreground text-sm truncate px-1">{groupName}</p>
         <button
           type="button"
           onClick={onBrowseWords}
@@ -121,138 +77,31 @@ export const SceneCanvas = memo(function SceneCanvas({
           <div>
             <h1 className="font-sans font-bold text-foreground text-base leading-none">{groupName}</h1>
             <p className="font-sans text-muted-foreground text-xs mt-0.5">
-              {!isWordView ? "Select hotspots to explore room features" : `Viewing ${activeWord.label}`}
+              Viewing {activeWord.label}
             </p>
           </div>
         </div>
 
-        {/* View Mode Toggle & Active Word Badge */}
-        <div className="flex items-center gap-3">
-          {/* View Toggle */}
-          <div className={`items-center bg-muted p-1 rounded-xl border border-border ${hasScene ? "flex" : "hidden"}`}>
-            <button
-              type="button"
-              onClick={() => setViewMode("word")}
-              aria-pressed={viewMode === "word"}
-              className={`flex items-center gap-1.5 px-3 min-h-[44px] rounded-lg text-xs font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                viewMode === "word"
-                  ? "bg-wp-card text-primary shadow-wp-xs"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              <ImageIcon className="size-3.5" />
-              Word View
-            </button>
-            <button
-              type="button"
-              onClick={() => setViewMode("scene")}
-              aria-pressed={viewMode === "scene"}
-              className={`flex items-center gap-1.5 px-3 min-h-[44px] rounded-lg text-xs font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                viewMode === "scene"
-                  ? "bg-wp-card text-primary shadow-wp-xs"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              <MapPin className="size-3.5" />
-              Scene View
-            </button>
-          </div>
-
-          {/* Active word badge — lg and up only. At md this header needed 507px
-              of content inside 448px, which clipped the Scene View control off
-              the right edge. The same word already appears in the detail card
-              directly below, so hiding it here loses nothing. */}
-          <div className="hidden lg:flex items-center gap-2 bg-secondary px-3.5 py-1.5 rounded-full border border-primary/20 shadow-wp-xs">
-            <Sparkles className="size-3.5 text-primary motion-safe:animate-pulse" aria-hidden />
-            <span className="font-sans font-bold text-foreground text-sm">{activeWord.label}</span>
-          </div>
+        {/* Active word badge — lg and up only. At md this header needed 507px
+            of content inside 448px, which clipped controls off the right
+            edge. The same word already appears in the detail card directly
+            below, so hiding it here loses nothing. */}
+        <div className="hidden lg:flex items-center gap-2 bg-secondary px-3.5 py-1.5 rounded-full border border-primary/20 shadow-wp-xs">
+          <Sparkles className="size-3.5 text-primary motion-safe:animate-pulse" aria-hidden />
+          <span className="font-sans font-bold text-foreground text-sm">{activeWord.label}</span>
         </div>
       </header>
 
       {/* Main Display Canvas Container */}
       <div className="relative flex-1 min-h-0 flex flex-col items-center bg-wp-panel p-3 md:p-4 overflow-hidden">
-        
         {/* Main Displayed Picture (HD 1200px+ resolution, un-cropped & un-distorted) */}
         <div className="relative w-full flex-1 min-h-0 flex items-center justify-center overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-wp-panel/60">
-          {isWordView ? (
-            <WordImage
-              key={activeWord.id}
-              word={activeWord}
-              loading="eager"
-              className="size-full object-contain rounded-2xl shadow-lg motion-safe:transition-all motion-safe:duration-300"
-            />
-          ) : (
-            /*
-              Aspect-locked box.
-
-              Hotspot coordinates are percentages of the scene photo, but they
-              used to be applied to an `absolute inset-0` overlay on this flex
-              container while the image itself was object-contain. object-contain
-              letterboxes, so the image box and the container box only coincided
-              when the viewport happened to match the photo's aspect ratio — at
-              every other size the pins slid off the objects they label.
-
-              Giving the wrapper the photo's exact ratio means the image fills it
-              precisely, so `inset-0` on the overlay is the image.
-            */
-            <div
-              className="relative h-full max-h-full max-w-full"
-              style={{ aspectRatio: SCENE_ASPECT_RATIO }}
-            >
-              <img
-                alt={`Interactive ${groupName} scene`}
-                width={SCENE_IMAGE_WIDTH}
-                height={SCENE_IMAGE_HEIGHT}
-                className="size-full object-cover rounded-2xl shadow-lg motion-safe:transition-all motion-safe:duration-300"
-                src={imgDefaultScene}
-              />
-
-              <div
-                role="group"
-                aria-label="Scene vocabulary hotspots"
-                className="absolute inset-0 z-10 pointer-events-auto"
-              >
-                {hotspotWords.map((word) => {
-                  const isActive = word.id === activeId;
-                  const hotspot = word.hotspot;
-                  if (!hotspot) return null;
-
-                  return (
-                    <button
-                      key={word.id}
-                      type="button"
-                      onClick={() => handleSelectWordLocal(word.id)}
-                      aria-pressed={isActive}
-                      aria-label={
-                        isActive ? `Currently selected: ${word.label}` : `Explore: ${word.label}`
-                      }
-                      className={[
-                        "absolute transform -translate-x-1/2 -translate-y-1/2",
-                        "min-h-[44px] min-w-[44px] flex items-center justify-center",
-                        "rounded-full focus-visible:outline focus-visible:outline-[3px]",
-                        "focus-visible:outline-white focus-visible:outline-offset-2",
-                        "motion-safe:transition-all",
-                      ].join(" ")}
-                      style={{ left: hotspot.x, top: hotspot.y }}
-                    >
-                      {isActive ? (
-                        <div className="bg-wp-amber/95 backdrop-blur-md rounded-full px-3 py-1.5 flex items-center gap-1.5 shadow-wp-md border border-white/40 motion-safe:animate-bounce">
-                          <Volume2 className="size-3.5 text-wp-text-on-amber shrink-0" aria-hidden />
-                          <span className="font-sans font-bold text-wp-text-on-amber text-xs whitespace-nowrap">
-                            {word.label}
-                          </span>
-                        </div>
-                      ) : (
-                        <div className="size-8 bg-wp-card/90 backdrop-blur-md rounded-full border-2 border-primary shadow-wp-xs flex items-center justify-center motion-safe:animate-pulse hover:scale-110">
-                          <div className="size-2.5 bg-primary rounded-full" aria-hidden />
-                        </div>
-                      )}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          )}
+          <WordImage
+            key={activeWord.id}
+            word={activeWord}
+            loading="eager"
+            className="size-full object-contain rounded-2xl shadow-lg motion-safe:transition-all motion-safe:duration-300"
+          />
         </div>
 
         {/* Floating Active Word Detail Overlay */}
@@ -297,10 +146,10 @@ export const SceneCanvas = memo(function SceneCanvas({
             */}
             <button
               type="button"
-              onClick={onLearnWord}
+              onClick={onPlayGame}
               className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl px-5 py-3 font-sans font-bold text-wp-text-on-blue text-sm shrink-0 min-h-[48px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all hidden md:block"
             >
-              Start Group Practice
+              Play Game
             </button>
           </div>
         </div>
@@ -314,12 +163,12 @@ export const SceneCanvas = memo(function SceneCanvas({
       <div className="md:hidden bg-wp-card rounded-t-[28px] px-5 pt-4 pb-3 flex flex-col gap-3 shadow-wp-md shrink-0 border-t border-border z-20">
         <button
           type="button"
-          onClick={onLearnWord}
+          onClick={onPlayGame}
           className="w-full bg-wp-blue rounded-xl py-3.5 font-sans font-bold text-wp-text-on-blue text-base min-h-[48px]
             focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
             motion-safe:transition-opacity hover:opacity-90 active:opacity-80"
         >
-          Learn &ldquo;{activeWord.label}&rdquo; →
+          Play Game →
         </button>
       </div>
 

@@ -19,7 +19,7 @@ interface Props {
   isPlaying: boolean;
   isError: boolean;
   onSelectWord: (id: string) => void;
-  onLearnWord: () => void;
+  onPlayGame: () => void;
   mobileOpen?: boolean;
   onMobileClose?: () => void;
 }
@@ -46,7 +46,7 @@ export const VocabSidebar = memo(function VocabSidebar({
   isPlaying,
   isError,
   onSelectWord,
-  onLearnWord,
+  onPlayGame,
   mobileOpen = false,
   onMobileClose,
 }: Props) {
@@ -196,12 +196,12 @@ export const VocabSidebar = memo(function VocabSidebar({
       <div className="p-4 border-t border-border shrink-0 bg-wp-card">
         <button
           type="button"
-          onClick={onLearnWord}
+          onClick={onPlayGame}
           className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 font-sans font-bold text-wp-text-on-blue text-sm min-h-[48px]
             focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
             shadow-wp-xs transition-all flex items-center justify-center gap-2"
         >
-          <span>Start Group Practice →</span>
+          <span>Play Game →</span>
         </button>
       </div>
     </aside>

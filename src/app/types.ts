@@ -60,6 +60,8 @@ export type Screen =
   | { id: "practice" }
   | { id: "profile" }
   | { id: "lesson-entry"; worldId?: string }
+  /** Self-paced word browsing for one group — no session, no scoring. */
+  | { id: "learn-words"; groupId: string }
   | { id: "skill-hub" }
   | { id: "skill-exercise"; exerciseId: SkillExerciseId }
   | {
@@ -86,6 +88,8 @@ export type Action =
   | { type: "ONBOARD_NEXT" }
   | { type: "GO"; to: GoTarget }
   | { type: "OPEN_SKILL_EXERCISE"; exerciseId: SkillExerciseId }
+  /** Enters self-paced word browsing for one group. */
+  | { type: "GO_LEARN_WORDS"; groupId: string }
   /**
    * `groupId` is required, and deliberately so. It was optional, and three of
    * the four call sites omitted it — so the reducer fell back to the first
@@ -93,7 +97,6 @@ export type Action =
    * Making it required turns that class of bug into a compile error.
    */
   | { type: "START_LESSON"; groupId: string; wordQueue?: string[] }
-  | { type: "LESSON_SELECT_WORD"; wordId: string }
   | { type: "LESSON_ATTEMPT"; wordId?: string; correct: boolean }
   | { type: "LESSON_NEXT" }
   | { type: "LESSON_PREVIOUS" }

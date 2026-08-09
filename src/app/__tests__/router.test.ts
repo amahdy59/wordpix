@@ -33,7 +33,7 @@ describe("Hash round-tripping", () => {
       { id: "skill-hub" },
       lessonAt(0),
       lessonAt(3),
-      lessonAt(5),
+      lessonAt(4),
       { id: "lesson-complete", sessionId: "s", groupId: "g", wordQueue: [], attempts: [] },
     ];
 
@@ -48,13 +48,13 @@ describe("Hash round-tripping", () => {
     expect(route).toEqual({
       kind: "lesson-step",
       step: 3,
-      title: expect.stringContaining("4/6"),
+      title: expect.stringContaining("4/5"),
     });
   });
 
   it("rejects an out-of-range step rather than jumping somewhere wrong", () => {
     expect(hashToRoute("#/learn/bedroom/step-0")).toBeNull();
-    expect(hashToRoute("#/learn/bedroom/step-7")).toBeNull();
+    expect(hashToRoute("#/learn/bedroom/step-6")).toBeNull();
     expect(hashToRoute("#/learn/bedroom/step-abc")).toBeNull();
   });
 
@@ -86,7 +86,7 @@ describe("LESSON_GOTO_STEP", () => {
   it("rejects out-of-range steps", () => {
     const state = lessonAt(2);
     expect(reducer(state, { type: "LESSON_GOTO_STEP", step: -1 })).toBe(state);
-    expect(reducer(state, { type: "LESSON_GOTO_STEP", step: 6 })).toBe(state);
+    expect(reducer(state, { type: "LESSON_GOTO_STEP", step: 5 })).toBe(state);
   });
 
   it("returns the same object when already on that step", () => {

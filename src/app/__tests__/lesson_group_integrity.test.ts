@@ -28,8 +28,8 @@ import { RICH_CONTEXT_SENTENCES } from "../exercises/exerciseContent";
 /** The four words the broken build always fell back to. */
 const REGRESSION_WORDS = ["bed", "nightstand", "dresser", "wardrobe"];
 
-/** Scene discovery plus five drills. */
-const LESSON_STEP_COUNT = 6;
+/** Five drills. */
+const LESSON_STEP_COUNT = 5;
 
 describe("a lesson teaches the group it was started for", () => {
   it.each(BEDROOM_GROUPS.map((g) => [g.id, g.name] as const))(
@@ -73,21 +73,6 @@ describe("a lesson teaches the group it was started for", () => {
     }
   });
 
-  it("moving a word to the front reorders the queue without changing its membership", () => {
-    const group = resolveGroup("lighting-objects");
-    let state = reducer(
-      { id: "lesson-entry" },
-      { type: "START_LESSON", groupId: group.id, wordQueue: group.wordIds }
-    );
-
-    const chosen = group.wordIds[3];
-    state = reducer(state, { type: "LESSON_SELECT_WORD", wordId: chosen });
-
-    expect(state.id).toBe("lesson");
-    if (state.id !== "lesson") return;
-    expect(state.wordQueue[0]).toBe(chosen);
-    expect([...state.wordQueue].sort()).toEqual([...group.wordIds].sort());
-  });
 });
 
 describe("resolveGroup", () => {

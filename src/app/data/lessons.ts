@@ -22,7 +22,6 @@ export interface VocabItem {
    * contain its own label or a stem of it.
    */
   description: string;
-  hotspot?: { x: string; y: string };
 }
 
 export interface TopicCategory {
@@ -107,7 +106,6 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     topic: "furniture",
     description: "A large rectangular platform with a soft top, where a person lies down to sleep.",
     img: `${LOCAL_WORD_IMAGES}/bed.jpg`,
-    hotspot: { x: "28%", y: "58%" },
   },
   {
     id: "nightstand",
@@ -132,7 +130,6 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     topic: "furniture",
     description: "A tall cupboard with doors, where clothes hang from a rail inside.",
     img: `${LOCAL_WORD_IMAGES}/wardrobe.jpg`,
-    hotspot: { x: "72%", y: "36%" },
   },
   {
     id: "desk",
@@ -191,7 +188,6 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     topic: "bedding",
     description: "A soft rectangular pad that supports your head while you sleep.",
     img: `${LOCAL_WORD_IMAGES}/pillow.jpg`,
-    hotspot: { x: "44%", y: "66%" },
   },
   {
     id: "blanket",
@@ -274,7 +270,6 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     topic: "features",
     description: "A small light on a base that stands on a table.",
     img: `${LOCAL_WORD_IMAGES}/lamp.jpg`,
-    hotspot: { x: "72%", y: "62%" },
   },
   {
     id: "curtain",
@@ -583,8 +578,6 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     img: `${LOCAL_WORD_IMAGES}/bedspread.jpg`,
   },
 ];
-
-export const BEDROOM_HOTSPOT_WORDS = BEDROOM_VOCABULARY.filter((v) => v.hotspot);
 
 /**
  * Every lesson world the app knows about, keyed by id.

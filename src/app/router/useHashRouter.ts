@@ -9,8 +9,8 @@ function isSkillExerciseId(value: string): value is SkillExerciseId {
   return SKILL_EXERCISE_ID_SET.has(value);
 }
 
-/** Number of steps in a lesson flow (scene + 5 exercises). */
-const LESSON_STEP_COUNT = 6;
+/** Number of steps in a lesson flow (5 exercises, scene removed). */
+const LESSON_STEP_COUNT = 5;
 
 /**
  * What a URL asks the app to do.

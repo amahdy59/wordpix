@@ -30,8 +30,8 @@ import { SkillExerciseHub } from "./core/SkillExerciseHub";
 const LessonWorldEntry = lazy(() =>
   import("./lesson/LessonWorldEntry").then((m) => ({ default: m.LessonWorldEntry }))
 );
-const LessonSceneDiscovery = lazy(() =>
-  import("./lesson/LessonSceneDiscovery").then((m) => ({ default: m.LessonSceneDiscovery }))
+const LearnWordsScreen = lazy(() =>
+  import("./lesson/LearnWordsScreen").then((m) => ({ default: m.LearnWordsScreen }))
 );
 const LessonCompleteResults = lazy(() =>
   import("./lesson/LessonCompleteResults").then((m) => ({ default: m.LessonCompleteResults }))
@@ -96,6 +96,9 @@ export function reducer(state: Screen, action: Action): Screen {
   if (action.type === "OPEN_SKILL_EXERCISE") {
     return { id: "skill-exercise", exerciseId: action.exerciseId };
   }
+  if (action.type === "GO_LEARN_WORDS") {
+    return { id: "learn-words", groupId: action.groupId };
+  }
   if (action.type === "START_LESSON") {
     const queue =
       action.wordQueue && action.wordQueue.length > 0
@@ -116,14 +119,6 @@ export function reducer(state: Screen, action: Action): Screen {
       startedAt: new Date().toISOString(),
     };
   }
-  if (action.type === "LESSON_SELECT_WORD") {
-    if (state.id !== "lesson" || state.step !== 0) return state;
-    const newQueue = [action.wordId, ...state.wordQueue.filter((id) => id !== action.wordId)];
-    return {
-      ...state,
-      wordQueue: newQueue,
-    };
-  }
   if (action.type === "LESSON_ATTEMPT") {
     if (state.id !== "lesson") return state;
     const wordId = action.wordId || state.wordQueue[0] || "bed";
@@ -142,7 +137,7 @@ export function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "LESSON_NEXT") {
     if (state.id !== "lesson") return state;
-    if (state.step >= 5) {
+    if (state.step >= 4) {
       return {
         id: "lesson-complete",
         sessionId: state.sessionId,
@@ -163,7 +158,7 @@ export function reducer(state: Screen, action: Action): Screen {
     // session, queue, and recorded attempts are preserved — only the step
     // moves, which is why the URL cannot simply be replayed as a whole Screen.
     if (state.id !== "lesson") return state;
-    if (action.step < 0 || action.step > 5) return state;
+    if (action.step < 0 || action.step > 4) return state;
     if (action.step === state.step) return state;
     return { ...state, step: action.step };
   }
@@ -203,7 +198,7 @@ function describeScreen(screen: Screen, t: (key: string) => string): string {
   }
 }
 
-const EX_STEPS = ["scene", "listen", "recall", "fill", "builder", "quiz"] as const;
+const EX_STEPS = ["listen", "recall", "fill", "builder", "quiz"] as const;
 type ExStep = (typeof EX_STEPS)[number];
 
 const LoadingFallback = () => {
@@ -284,6 +279,10 @@ function AppInner() {
       return;
     }
     if (screen.id === "lesson") return; // Not reachable from a URL alone.
+    if (screen.id === "learn-words") {
+      dispatch({ type: "GO_LEARN_WORDS", groupId: screen.groupId });
+      return;
+    }
     dispatch({ type: "GO", to: screen.id });
   }, []);
 
@@ -327,6 +326,7 @@ function AppInner() {
     if (state.id === "profile") return <ProfileStats dispatch={dispatch} />;
     if (state.id === "lesson-entry")
       return <LessonWorldEntry worldId={state.worldId ?? DEFAULT_WORLD_ID} dispatch={dispatch} />;
+    if (state.id === "learn-words") return <LearnWordsScreen groupId={state.groupId} dispatch={dispatch} />;
     if (state.id === "skill-hub") return <SkillExerciseHub dispatch={dispatch} />;
 
     if (state.id === "skill-exercise") {
@@ -338,7 +338,7 @@ function AppInner() {
     }
 
     if (state.id === "lesson") {
-      const ex: ExStep = EX_STEPS[state.step] ?? "scene";
+      const ex: ExStep = EX_STEPS[state.step] ?? "listen";
       const groupWords = getWords(state.wordQueue);
 
       // An empty queue means the session was built from an unknown id, which
@@ -350,14 +350,6 @@ function AppInner() {
 
       if (activeGroupWords.length === 0) return <ExploreWorlds dispatch={dispatch} />;
 
-      if (ex === "scene")
-        return (
-          <LessonSceneDiscovery
-            words={activeGroupWords}
-            groupId={state.groupId}
-            dispatch={dispatch}
-          />
-        );
       if (ex === "listen") return <ExerciseListenRepeat words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;
       if (ex === "recall") return <ExerciseRecallMatch words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;
       if (ex === "fill") return <ExerciseContextFill words={activeGroupWords} step={state.step} groupId={state.groupId} dispatch={dispatch} />;
@@ -396,7 +388,7 @@ function AppInner() {
           </>
         )}
 
-        {state.id === "lesson" && EX_STEPS[state.step] === "scene" && (
+        {state.id === "learn-words" && (
           <div className="min-h-svh bg-background">
             <SkipLink />
             <div id="main-content" tabIndex={-1} className="w-full min-h-svh flex flex-col outline-none">
@@ -407,7 +399,7 @@ function AppInner() {
 
         {state.id !== "onboarding" &&
           !TABBED_IDS.has(state.id) &&
-          !(state.id === "lesson" && EX_STEPS[state.step] === "scene") && (
+          state.id !== "learn-words" && (
             <div className="min-h-svh bg-background">
               <SkipLink />
               <div id="main-content" tabIndex={-1} className="w-full min-h-svh flex flex-col outline-none">
