@@ -88,11 +88,7 @@ function AppInner() {
   return (
     <ErrorBoundary>
       <div id="a11y-live-region" className="sr-only" aria-live="polite" aria-atomic="true" />
-      <div className="min-h-svh bg-wp-panel/5 md:bg-wp-panel/10 flex flex-col items-center justify-center">
-        <div className="w-full h-svh md:max-w-[390px] md:h-[844px] md:max-h-[95vh] md:rounded-[40px] md:shadow-2xl md:border-[8px] border-wp-panel/20 overflow-hidden relative bg-background flex flex-col isolate">
-          <RouterView state={state} dispatch={dispatch} />
-        </div>
-      </div>
+      <RouterView state={state} dispatch={dispatch} />
     </ErrorBoundary>
   );
 }
