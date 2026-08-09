@@ -2,7 +2,7 @@ import { useEffect, useReducer, Suspense, useCallback, lazy } from "react";
 import type { Screen, Action, OnboardStep, TabId } from "./types";
 import type { RouteIntent } from "./router/useHashRouter";
 import { ErrorBoundary } from "./shared/ErrorBoundary";
-import { getWords, resolveGroup } from "./data/lessons";
+import { getWords, resolveGroup, LESSON_WORLDS, DEFAULT_WORLD_ID } from "./data/lessons";
 import { LearnerProvider } from "./context/LearnerContext";
 import { I18nProvider, useI18n } from "./context/I18nContext";
 import { useHashRouter, hashToScreen } from "./router/useHashRouter";
@@ -193,7 +193,7 @@ function describeScreen(screen: Screen, t: (key: string) => string): string {
     case "lesson-complete":
       return "Session complete";
     case "lesson-entry":
-      return "The Bedroom";
+      return LESSON_WORLDS[screen.worldId ?? DEFAULT_WORLD_ID].name;
     case "skill-hub":
       return "Skill exercises";
     case "skill-exercise":
@@ -325,7 +325,8 @@ function AppInner() {
     if (state.id === "explore") return <ExploreWorlds dispatch={dispatch} />;
     if (state.id === "practice") return <ReviewMasteryReview dispatch={dispatch} />;
     if (state.id === "profile") return <ProfileStats dispatch={dispatch} />;
-    if (state.id === "lesson-entry") return <LessonWorldEntry dispatch={dispatch} />;
+    if (state.id === "lesson-entry")
+      return <LessonWorldEntry worldId={state.worldId ?? DEFAULT_WORLD_ID} dispatch={dispatch} />;
     if (state.id === "skill-hub") return <SkillExerciseHub dispatch={dispatch} />;
 
     if (state.id === "skill-exercise") {

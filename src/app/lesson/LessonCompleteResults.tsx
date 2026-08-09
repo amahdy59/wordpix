@@ -4,7 +4,7 @@ import { HomeIndicator } from "../shared/HomeIndicator";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
 import { Trophy, Star, CheckCircle2, Layers, Sparkles, ShieldCheck } from "lucide-react";
-import { BEDROOM_GROUPS, BEDROOM_VOCABULARY } from "../data/lessons";
+import { resolveGroup, getWords } from "../data/lessons";
 import { useProgress } from "../data/progress";
 import { useSound } from "../shared/useSound";
 
@@ -26,7 +26,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   const { progress, recordSessionCompletion } = useProgress();
   const { playLevelUp } = useSound();
 
-  const group = BEDROOM_GROUPS.find((g) => g.id === groupId) ?? BEDROOM_GROUPS[0];
+  const group = resolveGroup(groupId, wordQueue);
 
   const correct = attempts.filter((a) => a.correct).length;
   // 0 attempts = 0% accuracy (never 100%)
@@ -47,9 +47,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   const xpBreakdown = sessionRecord?.xp;
   const xp = xpBreakdown?.total ?? 0;
 
-  const groupWords = wordQueue
-    .map((id) => BEDROOM_VOCABULARY.find((v) => v.id === id))
-    .filter(Boolean);
+  const groupWords = getWords(wordQueue);
 
   return (
     <div className="bg-secondary min-h-svh flex flex-col lg:flex-row lg:overflow-hidden relative">

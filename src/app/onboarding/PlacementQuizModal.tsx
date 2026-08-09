@@ -1,7 +1,11 @@
 import { memo, useState } from "react";
 import { createPortal } from "react-dom";
 import { WordImage } from "../shared/WordImage";
-import { BEDROOM_VOCABULARY } from "../data/lessons";
+import { LESSON_WORLDS, DEFAULT_WORLD_ID } from "../data/lessons";
+
+// Placement always starts from the default world's vocabulary — there is only
+// one world to place a learner into today.
+const PLACEMENT_VOCABULARY = LESSON_WORLDS[DEFAULT_WORLD_ID].vocabulary;
 import { useModalA11y } from "../shared/useModalA11y";
 import { Sparkles, X } from "lucide-react";
 
@@ -41,8 +45,8 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
   if (!isOpen) return null;
 
   const currentQ = QUESTIONS[stepIndex];
-  const targetWord = BEDROOM_VOCABULARY.find((v) => v.id === currentQ.targetId) ?? BEDROOM_VOCABULARY[0];
-  const options = BEDROOM_VOCABULARY.slice(0, 4);
+  const targetWord = PLACEMENT_VOCABULARY.find((v) => v.id === currentQ.targetId) ?? PLACEMENT_VOCABULARY[0];
+  const options = PLACEMENT_VOCABULARY.slice(0, 4);
 
   const handleSelectOption = (wordId: string) => {
     const isCorrect = wordId === targetWord.id;

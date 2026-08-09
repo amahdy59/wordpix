@@ -16,7 +16,7 @@ const SCENE_IMAGE_WIDTH = 1600;
 const SCENE_IMAGE_HEIGHT = 1000;
 const SCENE_ASPECT_RATIO = `${SCENE_IMAGE_WIDTH} / ${SCENE_IMAGE_HEIGHT}`;
 
-const imgDefaultScene = `https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=${SCENE_IMAGE_WIDTH}&h=${SCENE_IMAGE_HEIGHT}&q=85`;
+const imgDefaultScene = "./scene-images/bedroom-scene.jpg";
 
 interface Props {
   activeWord: VocabItem;
@@ -96,7 +96,7 @@ export const SceneCanvas = memo(function SceneCanvas({
           type="button"
           onClick={onBrowseWords}
           className="min-h-[44px] px-3 rounded-xl border border-border bg-wp-card text-foreground flex items-center gap-1.5 text-xs font-sans font-bold"
-          aria-label="Browse all bedroom words"
+          aria-label={`Browse all ${groupName} words`}
         >
           <List className="size-4" aria-hidden />
           Words
@@ -200,7 +200,7 @@ export const SceneCanvas = memo(function SceneCanvas({
               style={{ aspectRatio: SCENE_ASPECT_RATIO }}
             >
               <img
-                alt="Interactive bedroom scene"
+                alt={`Interactive ${groupName} scene`}
                 width={SCENE_IMAGE_WIDTH}
                 height={SCENE_IMAGE_HEIGHT}
                 className="size-full object-cover rounded-2xl shadow-lg motion-safe:transition-all motion-safe:duration-300"

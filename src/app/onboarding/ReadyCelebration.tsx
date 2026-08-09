@@ -1,6 +1,7 @@
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
+import { LESSON_WORLDS, DEFAULT_WORLD_ID } from "../data/lessons";
 import { Sparkles, CheckCircle2, ArrowRight, UserCircle, BookOpen, Layers } from "lucide-react";
 
 interface Props {
@@ -8,6 +9,7 @@ interface Props {
 }
 
 export function ReadyCelebration({ dispatch }: Props) {
+  const flagshipWorld = LESSON_WORLDS[DEFAULT_WORLD_ID];
   return (
     <div className="bg-background flex flex-col md:flex-row min-h-svh md:min-h-[560px] relative overflow-hidden">
       <StatusBar />
@@ -40,7 +42,7 @@ export function ReadyCelebration({ dispatch }: Props) {
 
         <div className="relative z-10 flex items-center gap-2 text-white/60 text-xs font-sans font-semibold">
           <Layers className="size-4" />
-          <span>Ready to Learn: The Bedroom World</span>
+          <span>Ready to Learn: {flagshipWorld.name} World</span>
         </div>
       </div>
 
@@ -72,7 +74,7 @@ export function ReadyCelebration({ dispatch }: Props) {
           {/* Decorative Highlights */}
           <div aria-hidden className="flex items-center justify-center md:justify-start gap-3 text-primary">
             <Sparkles className="size-5 motion-safe:animate-pulse" />
-            <span className="font-sans font-bold text-xs text-foreground uppercase tracking-widest">Level 1 · The Bedroom</span>
+            <span className="font-sans font-bold text-xs text-foreground uppercase tracking-widest">Level 1 · {flagshipWorld.name}</span>
             <Sparkles className="size-5 motion-safe:animate-pulse" />
           </div>
         </main>

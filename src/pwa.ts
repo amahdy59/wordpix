@@ -1,4 +1,4 @@
-import { BEDROOM_VOCABULARY } from "./app/data/lessons";
+import { LESSON_WORLDS, DEFAULT_WORLD_ID } from "./app/data/lessons";
 
 const CACHE_NAME = "wordpix-cache-v2";
 
@@ -21,21 +21,23 @@ export interface OfflineReadiness {
 }
 
 function imageUrlsForWorld(worldId: string): string[] {
-  // Only the bedroom world ships today; scoped this way so adding a world does
-  // not silently inherit a "ready" claim.
-  if (worldId !== "bedroom") return [];
-  return BEDROOM_VOCABULARY.map((word) => word.img);
+  // Looks the world up in the registry rather than special-casing a literal
+  // id, so an unregistered world correctly reports nothing cacheable instead
+  // of silently inheriting bedroom's "ready" claim.
+  return LESSON_WORLDS[worldId]?.vocabulary.map((word) => word.img) ?? [];
 }
 
 /**
  * Reports how much of a world is actually cached.
  *
  * This used to be a synchronous `return worldId === "bedroom"` — it claimed
- * offline availability unconditionally while 54 of the 57 vocabulary images
+ * offline availability unconditionally while 55 of the 58 vocabulary images
  * were loaded from images.unsplash.com at runtime. The badge was simply untrue
- * on a cold cache.
+ * on a cold cache. Every vocabulary image is self-hosted now, so a fully warm
+ * cache genuinely means offline-ready rather than "ready except for the
+ * pictures."
  */
-export async function getOfflineReadiness(worldId = "bedroom"): Promise<OfflineReadiness> {
+export async function getOfflineReadiness(worldId = DEFAULT_WORLD_ID): Promise<OfflineReadiness> {
   const urls = imageUrlsForWorld(worldId);
   const total = urls.length;
 

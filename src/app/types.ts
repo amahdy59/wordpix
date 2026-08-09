@@ -59,7 +59,7 @@ export type Screen =
   | { id: "explore" }
   | { id: "practice" }
   | { id: "profile" }
-  | { id: "lesson-entry" }
+  | { id: "lesson-entry"; worldId?: string }
   | { id: "skill-hub" }
   | { id: "skill-exercise"; exerciseId: SkillExerciseId }
   | {

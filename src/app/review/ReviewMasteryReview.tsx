@@ -2,7 +2,7 @@ import { memo, useMemo } from "react";
 import { Flame, BookOpen, ArrowRight, RotateCcw, Clock, AlertCircle, CheckCircle2, Layers } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { BEDROOM_VOCABULARY, REVIEW_GROUP_ID, type VocabItem } from "../data/lessons";
+import { getWords, REVIEW_GROUP_ID, type VocabItem } from "../data/lessons";
 
 /** Words per review session. */
 const REVIEW_SESSION_SIZE = 5;
@@ -29,7 +29,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
 
     Object.keys(memory).forEach((wordId) => {
       const wordState = memory[wordId];
-      const wordObj = BEDROOM_VOCABULARY.find((v) => v.id === wordId);
+      const wordObj = getWords([wordId])[0];
       if (!wordObj || !wordState) return;
 
       const nextDateStr = wordState.nextReviewAt

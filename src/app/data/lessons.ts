@@ -39,7 +39,24 @@ export interface WordGroup {
   description: string;
 }
 
+/**
+ * A themed collection of groups sharing one vocabulary set — "The Bedroom"
+ * today, with room for more (`ExploreWorlds` already mocks up locked
+ * "Bathroom"/"Kitchen" previews; this is the data shape they'd need to become
+ * real).
+ */
+export interface LessonWorld {
+  id: string;
+  name: string;
+  description: string;
+  heroImage: string;
+  topics: TopicCategory[];
+  groups: WordGroup[];
+  vocabulary: VocabItem[];
+}
+
 const LOCAL_WORD_IMAGES = "./word-images";
+const LOCAL_SCENE_IMAGES = "./scene-images";
 
 export const BEDROOM_TOPICS: TopicCategory[] = [
   { id: "furniture", name: "Furniture", itemsCount: 10 },
@@ -114,7 +131,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "ward-robe",
     topic: "furniture",
     description: "A tall cupboard with doors, where clothes hang from a rail inside.",
-    img: "https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/wardrobe.jpg`,
     hotspot: { x: "72%", y: "36%" },
   },
   {
@@ -123,7 +140,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "desk",
     topic: "furniture",
     description: "A flat work surface on legs, where you sit to write or use a computer.",
-    img: "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/desk.jpg`,
   },
   {
     id: "chair",
@@ -131,7 +148,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "chair",
     topic: "furniture",
     description: "A single seat with a back and four legs, for one person.",
-    img: "https://images.unsplash.com/photo-1580481072645-022f9a6d8310?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/chair.jpg`,
   },
   {
     id: "bookshelf",
@@ -139,7 +156,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "book-shelf",
     topic: "furniture",
     description: "An upright frame of horizontal boards for storing reading material.",
-    img: "https://images.unsplash.com/photo-1594620302200-9a762244a156?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/bookshelf.jpg`,
   },
   {
     id: "mirror",
@@ -147,7 +164,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "mir-ror",
     topic: "furniture",
     description: "A flat glass panel that shows your own reflection.",
-    img: "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/mirror.jpg`,
   },
   {
     id: "stool",
@@ -155,7 +172,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "stool",
     topic: "furniture",
     description: "A small backless seat raised on three or four legs.",
-    img: "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/stool.jpg`,
   },
   {
     id: "chest-of-drawers",
@@ -163,7 +180,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "chest-of-drawers",
     topic: "furniture",
     description: "A tall, narrow tower of stacked sliding compartments for storing clothes.",
-    img: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/chest-of-drawers.jpg`,
   },
 
   // ── Bedding & Linen ────────────────────────────────────────────────────────
@@ -173,7 +190,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "pil-low",
     topic: "bedding",
     description: "A soft rectangular pad that supports your head while you sleep.",
-    img: "https://images.unsplash.com/photo-1623944436679-5412c658a358?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/pillow.jpg`,
     hotspot: { x: "44%", y: "66%" },
   },
   {
@@ -182,7 +199,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "blan-ket",
     topic: "bedding",
     description: "A thick woven cover, often wool, laid over you for warmth.",
-    img: "https://images.unsplash.com/photo-1600369672770-985fd30004eb?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/blanket.jpg`,
   },
   {
     id: "sheet",
@@ -190,7 +207,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "sheet",
     topic: "bedding",
     description: "A large, thin, flat piece of fabric that lies directly against your skin.",
-    img: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/sheet.jpg`,
   },
   {
     id: "mattress",
@@ -198,7 +215,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "mat-tress",
     topic: "bedding",
     description: "The thick padded slab you lie directly on top of.",
-    img: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/mattress.jpg`,
   },
   {
     id: "duvet",
@@ -206,7 +223,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "doo-vay",
     topic: "bedding",
     description: "A soft filled bag stuffed with feathers, used as a single thick top cover.",
-    img: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/duvet.jpg`,
   },
   {
     id: "pillowcase",
@@ -214,7 +231,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "pil-low-case",
     topic: "bedding",
     description: "A fabric sleeve that slips over the soft pad under your head.",
-    img: "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/pillowcase.jpg`,
   },
   {
     id: "comforter",
@@ -222,7 +239,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "com-fort-er",
     topic: "bedding",
     description: "A thick fluffy top cover, stitched into sections, needing no separate cover.",
-    img: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/comforter.jpg`,
   },
   {
     id: "cushion",
@@ -230,7 +247,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "cush-ion",
     topic: "bedding",
     description: "A small soft square pad for sitting on or leaning against.",
-    img: "https://images.unsplash.com/photo-1579656592043-a2e727a0062a?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/cushion.jpg`,
   },
   {
     id: "bed-frame",
@@ -238,7 +255,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "bed-frame",
     topic: "bedding",
     description: "The wooden or metal structure that holds a mattress up off the floor.",
-    img: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/bed-frame.jpg`,
   },
   {
     id: "headboard",
@@ -246,7 +263,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "head-board",
     topic: "bedding",
     description: "The upright panel at the top end of a sleeping platform, behind your head.",
-    img: "https://images.unsplash.com/photo-1613940512699-fc9150817bb2?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/headboard.jpg`,
   },
 
   // ── Room Features ──────────────────────────────────────────────────────────
@@ -256,7 +273,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "lamp",
     topic: "features",
     description: "A small light on a base that stands on a table.",
-    img: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/lamp.jpg`,
     hotspot: { x: "72%", y: "62%" },
   },
   {
@@ -265,7 +282,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "cur-tain",
     topic: "features",
     description: "A long piece of hanging fabric drawn across a window at night.",
-    img: "https://images.unsplash.com/photo-1528822855841-e8bf3134cdc9?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/curtain.jpg`,
   },
   {
     id: "window",
@@ -273,7 +290,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "win-dow",
     topic: "features",
     description: "A glass opening in the wall that lets daylight into the room.",
-    img: "https://images.unsplash.com/photo-1509644851169-2acc08aa25b5?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/window.jpg`,
   },
   {
     id: "door",
@@ -281,7 +298,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "door",
     topic: "features",
     description: "A hinged panel you open to enter or leave a room.",
-    img: "https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/door.jpg`,
   },
   {
     id: "rug",
@@ -289,7 +306,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "rug",
     topic: "features",
     description: "A small soft floor covering that lies loose on top of the floor.",
-    img: "https://images.unsplash.com/photo-1652634213812-f0deeb1de78e?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/rug.jpg`,
   },
   {
     id: "carpet",
@@ -297,7 +314,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "car-pet",
     topic: "features",
     description: "A soft floor covering fixed down permanently, reaching from wall to wall.",
-    img: "https://images.unsplash.com/photo-1562584082-823908f972b2?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/carpet.jpg`,
   },
   {
     id: "ceiling-light",
@@ -305,7 +322,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "cei-ling-light",
     topic: "features",
     description: "A fixture mounted overhead that brightens the whole room from above.",
-    img: "https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/ceiling-light.jpg`,
   },
   {
     id: "light-switch",
@@ -313,7 +330,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "light-switch",
     topic: "features",
     description: "A small plate on the wall you press to make the room bright or dark.",
-    img: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/light-switch.jpg`,
   },
   {
     id: "blinds",
@@ -321,7 +338,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "blinds",
     topic: "features",
     description: "Horizontal slats across a window that tilt to control the daylight.",
-    img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/blinds.jpg`,
   },
   {
     id: "outlet",
@@ -329,7 +346,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "out-let",
     topic: "features",
     description: "A small socket in the wall where you plug in electrical devices.",
-    img: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/outlet.jpg`,
   },
 
   // ── Bedroom Objects ────────────────────────────────────────────────────────
@@ -339,7 +356,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "a-larm-clock",
     topic: "objects",
     description: "A small bedside device that shows the time and wakes you with a sound.",
-    img: "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/alarm-clock.jpg`,
   },
   {
     id: "picture-frame",
@@ -347,7 +364,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "pic-ture-frame",
     topic: "objects",
     description: "A decorative border that holds a photograph upright on a surface.",
-    img: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/picture-frame.jpg`,
   },
   {
     id: "clock",
@@ -355,7 +372,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "clock",
     topic: "objects",
     description: "A round face with moving hands that shows the time.",
-    img: "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/clock.jpg`,
   },
   {
     id: "plant",
@@ -363,7 +380,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "plant",
     topic: "objects",
     description: "A living green thing growing in a pot of soil.",
-    img: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/plant.jpg`,
   },
   {
     id: "vase",
@@ -371,7 +388,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "vase",
     topic: "objects",
     description: "A tall narrow container that holds cut flowers in water.",
-    img: "https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/vase.jpg`,
   },
   {
     id: "candle",
@@ -379,7 +396,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "can-dle",
     topic: "objects",
     description: "A wax cylinder with a wick that gives light when it burns.",
-    img: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/candle.jpg`,
   },
   {
     id: "calendar",
@@ -387,7 +404,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "cal-en-dar",
     topic: "objects",
     description: "A grid of numbered days used to keep track of dates.",
-    img: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/calendar.jpg`,
   },
   {
     id: "tissue-box",
@@ -395,7 +412,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "tis-sue-box",
     topic: "objects",
     description: "A small carton that dispenses soft disposable paper, one sheet at a time.",
-    img: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/tissue-box.jpg`,
   },
   {
     id: "laundry-basket",
@@ -403,7 +420,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "laun-dry-bas-ket",
     topic: "objects",
     description: "An open woven container holding dirty clothes waiting to be washed.",
-    img: "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/laundry-basket.jpg`,
   },
   {
     id: "hanger",
@@ -411,7 +428,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "hang-er",
     topic: "objects",
     description: "A shaped hook that keeps a shirt or coat suspended in a cupboard.",
-    img: "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/hanger.jpg`,
   },
 
   // ── Personal Items ─────────────────────────────────────────────────────────
@@ -421,7 +438,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "pa-ja-mas",
     topic: "personal",
     description: "Soft, loose two-piece clothing worn only for sleeping.",
-    img: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/pajamas.jpg`,
   },
   {
     id: "slippers",
@@ -429,7 +446,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "slip-pers",
     topic: "personal",
     description: "Soft indoor shoes you slide your feet into without fastening.",
-    img: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/slippers.jpg`,
   },
   {
     id: "robe",
@@ -437,7 +454,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "robe",
     topic: "personal",
     description: "A loose belted garment worn over sleepwear, often after a bath.",
-    img: "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/robe.jpg`,
   },
   {
     id: "poster",
@@ -445,7 +462,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "pos-ter",
     topic: "personal",
     description: "A large printed sheet fixed flat against a wall for decoration.",
-    img: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/poster.jpg`,
   },
   {
     id: "books",
@@ -453,7 +470,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "books",
     topic: "personal",
     description: "Bound stacks of printed pages that you read.",
-    img: "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/books.jpg`,
   },
   {
     id: "photo-album",
@@ -461,7 +478,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "pho-to-al-bum",
     topic: "personal",
     description: "A bound book of pages holding printed family pictures behind plastic.",
-    img: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/photo-album.jpg`,
   },
   {
     id: "glasses",
@@ -469,7 +486,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "glas-ses",
     topic: "personal",
     description: "Two lenses held in a frame, worn on the face to see clearly.",
-    img: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/glasses.jpg`,
   },
   {
     id: "backpack",
@@ -477,7 +494,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "back-pack",
     topic: "personal",
     description: "A bag with two shoulder straps, carried on your back.",
-    img: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/backpack.jpg`,
   },
 
   // ── Electronics ───────────────────────────────────────────────────────────
@@ -487,7 +504,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "phone",
     topic: "electronics",
     description: "A small handheld device used for calls and messages.",
-    img: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/phone.jpg`,
   },
   {
     id: "charger",
@@ -495,7 +512,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "char-ger",
     topic: "electronics",
     description: "A cable and plug that restores battery power to a device.",
-    img: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/charger.jpg`,
   },
   {
     id: "laptop",
@@ -503,7 +520,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "lap-top",
     topic: "electronics",
     description: "A portable computer that folds shut like a book.",
-    img: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/laptop.jpg`,
   },
   {
     id: "headphones",
@@ -511,7 +528,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "head-phones",
     topic: "electronics",
     description: "Two padded cups joined by a band, worn over the ears.",
-    img: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/headphones.jpg`,
   },
   {
     id: "tablet",
@@ -519,7 +536,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "tab-let",
     topic: "electronics",
     description: "A flat touchscreen slab, larger than a handheld, with no keyboard.",
-    img: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/tablet.jpg`,
   },
   {
     id: "speaker",
@@ -527,7 +544,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "speak-er",
     topic: "electronics",
     description: "A box that plays sound out loud into the room.",
-    img: "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/speaker.jpg`,
   },
   {
     id: "reading-light",
@@ -535,7 +552,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "read-ing-light",
     topic: "electronics",
     description: "A small adjustable lamp on a flexible arm, aimed down at a page.",
-    img: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/reading-light.jpg`,
   },
   {
     id: "remote-control",
@@ -543,7 +560,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "re-mote-con-trol",
     topic: "electronics",
     description: "A handheld bar of buttons that operates a device from across the room.",
-    img: "https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/remote-control.jpg`,
   },
 
   // ── Bedding, continued ────────────────────────────────────────────────────
@@ -555,7 +572,7 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "kwilt",
     topic: "bedding",
     description: "A cover made from small fabric patches sewn together in a repeating pattern.",
-    img: "https://images.unsplash.com/photo-1616627561950-9f746e330187?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/quilt.jpg`,
   },
   {
     id: "bedspread",
@@ -563,14 +580,42 @@ export const BEDROOM_VOCABULARY: VocabItem[] = [
     phonetic: "bed-spread",
     topic: "bedding",
     description: "A large decorative cloth laid over everything, hanging down towards the floor.",
-    img: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=85",
+    img: `${LOCAL_WORD_IMAGES}/bedspread.jpg`,
   },
 ];
 
 export const BEDROOM_HOTSPOT_WORDS = BEDROOM_VOCABULARY.filter((v) => v.hotspot);
 
-/** O(1) id lookup instead of scanning the vocabulary array per word, per render. */
-const VOCAB_BY_ID = new Map(BEDROOM_VOCABULARY.map((item) => [item.id, item]));
+/**
+ * Every lesson world the app knows about, keyed by id.
+ *
+ * Only one world is real today — the router, the PWA offline-readiness check,
+ * and `LessonWorldEntry` used to hardcode the literal string "bedroom" instead
+ * of reading it from here, which meant supporting a second world required
+ * editing routing code rather than adding a registry entry. `BEDROOM_TOPICS`/
+ * `BEDROOM_GROUPS`/`BEDROOM_VOCABULARY` stay exported as-is below — this is an
+ * index over them, not a replacement.
+ */
+export const LESSON_WORLDS: Record<string, LessonWorld> = {
+  bedroom: {
+    id: "bedroom",
+    name: "The Bedroom",
+    description:
+      "Explore real-life bedroom furniture, bedding, and accessories through 2D scene discovery, audio practice, recall matching, and sentence building.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/bedroom-hero.jpg`,
+    topics: BEDROOM_TOPICS,
+    groups: BEDROOM_GROUPS,
+    vocabulary: BEDROOM_VOCABULARY,
+  },
+};
+
+/** The world a learner lands in when nothing else specifies one. */
+export const DEFAULT_WORLD_ID = "bedroom";
+
+/** O(1) id lookup across every world's vocabulary, not just one. */
+const VOCAB_BY_ID = new Map(
+  Object.values(LESSON_WORLDS).flatMap((world) => world.vocabulary.map((item) => [item.id, item] as const))
+);
 
 /**
  * The group id used by a spaced-repetition session, whose words are chosen by
@@ -582,10 +627,14 @@ const VOCAB_BY_ID = new Map(BEDROOM_VOCABULARY.map((item) => [item.id, item]));
  */
 export const REVIEW_GROUP_ID = "daily-review";
 
+/** Every group across every registered world. */
+const ALL_GROUPS = Object.values(LESSON_WORLDS).flatMap((world) => world.groups);
+
 /**
- * Resolves a group id to the group it names.
+ * Resolves a group id to the group it names, searching every world rather
+ * than just one.
  *
- * The `?? BEDROOM_GROUPS[0]` fallback that used to be inlined at four separate
+ * The `?? ALL_GROUPS[0]` fallback that used to be inlined at four separate
  * call sites is the reason every lesson claimed to be "Essential Furniture":
  * an absent or unknown id silently became the first group instead of failing
  * loudly. It survives here as a single last resort, but `groupId` is now
@@ -601,7 +650,17 @@ export function resolveGroup(groupId: string, wordIds: string[] = []): WordGroup
       description: "Words your memory schedule says are due today.",
     };
   }
-  return BEDROOM_GROUPS.find((g) => g.id === groupId) ?? BEDROOM_GROUPS[0];
+  return ALL_GROUPS.find((g) => g.id === groupId) ?? ALL_GROUPS[0];
+}
+
+/**
+ * The world that owns a given group id, for building a world-scoped route or
+ * label from state that only carries a `groupId`. Falls back to the default
+ * world, mirroring `resolveGroup`'s fallback posture.
+ */
+export function resolveWorldForGroup(groupId: string): LessonWorld {
+  const owner = Object.values(LESSON_WORLDS).find((world) => world.groups.some((g) => g.id === groupId));
+  return owner ?? LESSON_WORLDS[DEFAULT_WORLD_ID];
 }
 
 /** Looks up vocabulary items by id, preserving the order of `wordIds`. */
@@ -621,7 +680,7 @@ export function getWords(wordIds: string[]): VocabItem[] {
  */
 export function nextGroupToStudy(isMastered: (wordId: string) => boolean): WordGroup {
   return (
-    BEDROOM_GROUPS.find((g) => g.wordIds.some((id) => !isMastered(id))) ??
-    BEDROOM_GROUPS[BEDROOM_GROUPS.length - 1]
+    ALL_GROUPS.find((g) => g.wordIds.some((id) => !isMastered(id))) ??
+    ALL_GROUPS[ALL_GROUPS.length - 1]
   );
 }

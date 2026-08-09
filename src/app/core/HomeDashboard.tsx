@@ -2,7 +2,7 @@ import { memo, useMemo } from "react";
 import { Flame, ArrowRight, RotateCcw, WifiOff } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { nextGroupToStudy } from "../data/lessons";
+import { nextGroupToStudy, resolveWorldForGroup } from "../data/lessons";
 import { calculateDaysBetween, getLocalDateString, getWeekActivity } from "../../features/gamification/streak";
 import { useOfflineReadiness } from "../shared/useOfflineReadiness";
 import { useI18n } from "../context/I18nContext";
@@ -61,8 +61,9 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
     [activeGroup.wordIds, progress.wordMemory]
   );
   const estimatedMinutes = Math.max(1, Math.round((activeGroup.wordIds.length * SECONDS_PER_WORD) / 60));
+  const activeWorld = useMemo(() => resolveWorldForGroup(activeGroup.id), [activeGroup.id]);
 
-  const offline = useOfflineReadiness("bedroom");
+  const offline = useOfflineReadiness(activeWorld.id);
 
   return (
     <div className="flex flex-col gap-6 p-5 md:p-8 pb-10 max-w-6xl mx-auto w-full">
@@ -122,7 +123,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                 {/* The world and the estimate. The group's own name is the
                     heading below, so repeating it here just said it twice. */}
                 <span className="font-sans font-semibold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full">
-                  The Bedroom · ~{num(estimatedMinutes)} min
+                  {activeWorld.name} · ~{num(estimatedMinutes)} min
                 </span>
                 <span className="font-sans text-xs font-bold text-muted-foreground">
                   {num(groupWordsSeen)} of {num(activeGroup.wordIds.length)} words

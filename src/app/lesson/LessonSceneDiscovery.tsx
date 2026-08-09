@@ -1,7 +1,7 @@
 import { memo, useState, useEffect, useCallback, useRef, useMemo } from "react";
 import type { Action } from "../types";
 import { useAudio } from "../shared/useAudio";
-import { resolveGroup, type VocabItem } from "../data/lessons";
+import { resolveGroup, resolveWorldForGroup, type VocabItem } from "../data/lessons";
 import { SceneCanvas } from "./SceneCanvas";
 import { VocabSidebar } from "./VocabSidebar";
 
@@ -22,6 +22,7 @@ export const LessonSceneDiscovery = memo(function LessonSceneDiscovery({ words, 
     () => resolveGroup(groupId, words.map((w) => w.id)),
     [groupId, words]
   );
+  const topics = useMemo(() => resolveWorldForGroup(groupId).topics, [groupId]);
   const activeWord = words.find((v) => v.id === activeId) ?? words[0];
 
   // Only this group's words can be pinned on the room photo. Passing the whole
@@ -107,6 +108,7 @@ export const LessonSceneDiscovery = memo(function LessonSceneDiscovery({ words, 
       <VocabSidebar
         vocabulary={words}
         groupName={group.name}
+        topics={topics}
         activeWord={activeWord}
         activeId={activeId}
         isPlaying={isPlaying}

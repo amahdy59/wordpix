@@ -2,9 +2,10 @@ import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { useProgress } from "../data/progress";
+import { LESSON_WORLDS, DEFAULT_WORLD_ID } from "../data/lessons";
 import { Sparkles, ArrowRight, BookOpen, Layers, CheckCircle2, Globe } from "lucide-react";
 
-const imgHero = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&q=85";
+const imgHero = "./scene-images/splash-hero.jpg";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -12,6 +13,7 @@ interface Props {
 
 export function SplashWelcome({ dispatch }: Props) {
   const { setPreferences } = useProgress();
+  const flagshipWorld = LESSON_WORLDS[DEFAULT_WORLD_ID];
   const advance = () => dispatch({ type: "ONBOARD_NEXT" });
 
   // Bypasses the level/goal picker for a learner who just wants in. Sets the
@@ -72,7 +74,7 @@ export function SplashWelcome({ dispatch }: Props) {
         {/* Footer Left */}
         <div className="relative z-10 flex items-center gap-2 text-white/60 text-xs font-sans font-semibold">
           <Globe className="size-4" />
-          <span>Flagship World 1: The Bedroom (56 Words Ready)</span>
+          <span>Flagship World 1: {flagshipWorld.name} ({flagshipWorld.vocabulary.length} Words Ready)</span>
         </div>
       </div>
 
@@ -117,14 +119,14 @@ export function SplashWelcome({ dispatch }: Props) {
           {/* Mobile Hero Illustration (Hidden on Desktop) */}
           <div className="md:hidden w-full h-48 relative rounded-2xl overflow-hidden border border-border shadow-wp-md bg-muted">
             <img
-              alt="A bedroom scene as shown in a WordPix lesson"
+              alt={`${flagshipWorld.name} scene as shown in a WordPix lesson`}
               className="absolute inset-0 object-cover size-full"
               src={imgHero}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             <div className="absolute bottom-3 start-4 flex items-center gap-2 text-white">
               <Layers className="size-4" />
-              <span className="font-sans font-bold text-xs">56 Bedroom Words Ready</span>
+              <span className="font-sans font-bold text-xs">{flagshipWorld.vocabulary.length} {flagshipWorld.name} Words Ready</span>
             </div>
           </div>
         </main>

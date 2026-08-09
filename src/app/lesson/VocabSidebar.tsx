@@ -1,7 +1,7 @@
 import { memo, useState } from "react";
 import { AudioButton } from "../shared/AudioButton";
 import { WordImage } from "../shared/WordImage";
-import { BEDROOM_TOPICS, type VocabItem } from "../data/lessons";
+import type { TopicCategory, VocabItem } from "../data/lessons";
 import { useProgress } from "../data/progress";
 import { type MasteryLevel } from "../context/LearnerContext";
 import { useAudio } from "../shared/useAudio";
@@ -11,6 +11,8 @@ interface Props {
   vocabulary: VocabItem[];
   /** Name of the word group being taught, used as the panel heading. */
   groupName: string;
+  /** The active world's topic categories, for the filter chips below. */
+  topics: TopicCategory[];
   /** Reserved for callers that pass the active word; the list renders from activeId. */
   activeWord?: VocabItem;
   activeId: string;
@@ -38,6 +40,7 @@ const TOPIC_FILTER_MIN_WORDS = 12;
 export const VocabSidebar = memo(function VocabSidebar({
   vocabulary,
   groupName,
+  topics,
   activeWord: _activeWord,
   activeId,
   isPlaying,
@@ -60,7 +63,7 @@ export const VocabSidebar = memo(function VocabSidebar({
   return (
     <aside
       className={`${mobileOpen ? "fixed inset-0 z-50 flex" : "hidden"} md:static md:flex flex-col min-h-0 max-h-svh w-full md:w-80 lg:w-96 xl:w-[420px] bg-wp-card border-s border-border h-full overflow-hidden overscroll-none shrink-0`}
-      aria-label="Bedroom vocabulary list"
+      aria-label={`${groupName} vocabulary list`}
       aria-modal={mobileOpen || undefined}
       role={mobileOpen ? "dialog" : undefined}
     >
@@ -103,7 +106,7 @@ export const VocabSidebar = memo(function VocabSidebar({
           >
             All ({vocabulary.length})
           </button>
-          {BEDROOM_TOPICS.map((topic) => {
+          {topics.map((topic) => {
             const count = vocabulary.filter((v) => v.topic === topic.id).length;
             const isSelected = selectedTopic === topic.id;
             return (
