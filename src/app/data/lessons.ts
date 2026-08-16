@@ -703,7 +703,792 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
  * `BEDROOM_GROUPS`/`BEDROOM_VOCABULARY` stay exported as-is below — this is an
  * index over them, not a replacement.
  */
+
+// --- KITCHEN DATA ---
+
+export const KITCHEN_TOPICS: TopicCategory[] = [
+  { id: "large-appliances", name: "Large Appliances", itemsCount: 10 },
+  { id: "cookware", name: "Cookware", itemsCount: 10 },
+  { id: "utensils-tools", name: "Utensils Tools", itemsCount: 12 },
+  { id: "dishes-containers", name: "Dishes Containers", itemsCount: 12 },
+  { id: "kitchen-items", name: "Kitchen Items", itemsCount: 12 },
+  { id: "basic-pantry", name: "Basic Pantry", itemsCount: 14 },
+];
+
+export const KITCHEN_GROUPS: Lesson[] = [
+  {
+    id: "large-appliances-1",
+    name: "Large Appliances 1",
+    topicId: "large-appliances",
+    wordIds: [
+      "refrigerator",
+      "stove",
+      "oven",
+      "microwave",
+      "dishwasher",
+    ],
+    description: "Learn about large appliances 1."
+  },
+  {
+    id: "large-appliances-2",
+    name: "Large Appliances 2",
+    topicId: "large-appliances",
+    wordIds: [
+      "toaster",
+      "blender",
+      "kettle",
+      "coffee-maker",
+      "freezer",
+    ],
+    description: "Learn about large appliances 2."
+  },
+  {
+    id: "cookware-1",
+    name: "Cookware 1",
+    topicId: "cookware",
+    wordIds: [
+      "pot",
+      "pan",
+      "frying-pan",
+      "baking-tray",
+      "saucepan",
+    ],
+    description: "Learn about cookware 1."
+  },
+  {
+    id: "cookware-2",
+    name: "Cookware 2",
+    topicId: "cookware",
+    wordIds: [
+      "wok",
+      "casserole-dish",
+      "baking-dish",
+      "steamer",
+      "pressure-cooker",
+    ],
+    description: "Learn about cookware 2."
+  },
+  {
+    id: "utensils-tools-1",
+    name: "Utensils Tools 1",
+    topicId: "utensils-tools",
+    wordIds: [
+      "fork",
+      "knife",
+      "spoon",
+      "spatula",
+      "ladle",
+    ],
+    description: "Learn about utensils tools 1."
+  },
+  {
+    id: "utensils-tools-2",
+    name: "Utensils Tools 2",
+    topicId: "utensils-tools",
+    wordIds: [
+      "whisk",
+      "tongs",
+      "peeler",
+      "grater",
+      "rolling-pin",
+    ],
+    description: "Learn about utensils tools 2."
+  },
+  {
+    id: "utensils-tools-3",
+    name: "Utensils Tools 3",
+    topicId: "utensils-tools",
+    wordIds: [
+      "can-opener",
+      "corkscrew",
+    ],
+    description: "Learn about utensils tools 3."
+  },
+  {
+    id: "dishes-containers-1",
+    name: "Dishes Containers 1",
+    topicId: "dishes-containers",
+    wordIds: [
+      "plate",
+      "bowl",
+      "mug",
+      "glass",
+      "cup",
+    ],
+    description: "Learn about dishes containers 1."
+  },
+  {
+    id: "dishes-containers-2",
+    name: "Dishes Containers 2",
+    topicId: "dishes-containers",
+    wordIds: [
+      "saucer",
+      "cutting-board",
+      "colander",
+      "measuring-cup",
+      "measuring-spoon",
+    ],
+    description: "Learn about dishes containers 2."
+  },
+  {
+    id: "dishes-containers-3",
+    name: "Dishes Containers 3",
+    topicId: "dishes-containers",
+    wordIds: [
+      "mixing-bowl",
+      "pitcher",
+    ],
+    description: "Learn about dishes containers 3."
+  },
+  {
+    id: "kitchen-items-1",
+    name: "Kitchen Items 1",
+    topicId: "kitchen-items",
+    wordIds: [
+      "dish-towel",
+      "oven-mitt",
+      "apron",
+      "trash-can",
+      "paper-towel",
+    ],
+    description: "Learn about kitchen items 1."
+  },
+  {
+    id: "kitchen-items-2",
+    name: "Kitchen Items 2",
+    topicId: "kitchen-items",
+    wordIds: [
+      "plastic-wrap",
+      "aluminum-foil",
+      "food-container",
+      "sponge",
+      "dish-soap",
+    ],
+    description: "Learn about kitchen items 2."
+  },
+  {
+    id: "kitchen-items-3",
+    name: "Kitchen Items 3",
+    topicId: "kitchen-items",
+    wordIds: [
+      "dish-rack",
+      "cling-film",
+    ],
+    description: "Learn about kitchen items 3."
+  },
+  {
+    id: "basic-pantry-1",
+    name: "Basic Pantry 1",
+    topicId: "basic-pantry",
+    wordIds: [
+      "bread",
+      "butter",
+      "milk",
+      "egg",
+      "cheese",
+    ],
+    description: "Learn about basic pantry 1."
+  },
+  {
+    id: "basic-pantry-2",
+    name: "Basic Pantry 2",
+    topicId: "basic-pantry",
+    wordIds: [
+      "rice",
+      "pasta",
+      "cooking-oil",
+      "salt",
+      "sugar",
+    ],
+    description: "Learn about basic pantry 2."
+  },
+  {
+    id: "basic-pantry-3",
+    name: "Basic Pantry 3",
+    topicId: "basic-pantry",
+    wordIds: [
+      "pepper",
+      "flour",
+      "vinegar",
+      "honey",
+    ],
+    description: "Learn about basic pantry 3."
+  },
+];
+
+export const KITCHEN_VOCABULARY: VocabularyItem[] = [
+  {
+    id: "refrigerator",
+    label: "Refrigerator",
+    phonetic: "refrigerator", // Using label as phonetic placeholder
+    topic: "large-appliances",
+    description: "A kitchen item known as refrigerator.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/refrigerator.webp`,
+  },
+  {
+    id: "stove",
+    label: "Stove",
+    phonetic: "stove", // Using label as phonetic placeholder
+    topic: "large-appliances",
+    description: "A kitchen item known as stove.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/stove.webp`,
+  },
+  {
+    id: "oven",
+    label: "Oven",
+    phonetic: "oven", // Using label as phonetic placeholder
+    topic: "large-appliances",
+    description: "A kitchen item known as oven.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/oven.webp`,
+  },
+  {
+    id: "microwave",
+    label: "Microwave",
+    phonetic: "microwave", // Using label as phonetic placeholder
+    topic: "large-appliances",
+    description: "A kitchen item known as microwave.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/microwave.webp`,
+  },
+  {
+    id: "dishwasher",
+    label: "Dishwasher",
+    phonetic: "dishwasher", // Using label as phonetic placeholder
+    topic: "large-appliances",
+    description: "A kitchen item known as dishwasher.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/dishwasher.webp`,
+  },
+  {
+    id: "toaster",
+    label: "Toaster",
+    phonetic: "toaster", // Using label as phonetic placeholder
+    topic: "large-appliances",
+    description: "A kitchen item known as toaster.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/toaster.webp`,
+  },
+  {
+    id: "blender",
+    label: "Blender",
+    phonetic: "blender", // Using label as phonetic placeholder
+    topic: "large-appliances",
+    description: "A kitchen item known as blender.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/blender.webp`,
+  },
+  {
+    id: "kettle",
+    label: "Kettle",
+    phonetic: "kettle", // Using label as phonetic placeholder
+    topic: "large-appliances",
+    description: "A kitchen item known as kettle.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/kettle.webp`,
+  },
+  {
+    id: "coffee-maker",
+    label: "Coffee Maker",
+    phonetic: "coffee maker", // Using label as phonetic placeholder
+    topic: "large-appliances",
+    description: "A kitchen item known as coffee maker.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/coffee-maker.webp`,
+  },
+  {
+    id: "freezer",
+    label: "Freezer",
+    phonetic: "freezer", // Using label as phonetic placeholder
+    topic: "large-appliances",
+    description: "A kitchen item known as freezer.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/freezer.webp`,
+  },
+  {
+    id: "pot",
+    label: "Pot",
+    phonetic: "pot", // Using label as phonetic placeholder
+    topic: "cookware",
+    description: "A kitchen item known as pot.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/pot.webp`,
+  },
+  {
+    id: "pan",
+    label: "Pan",
+    phonetic: "pan", // Using label as phonetic placeholder
+    topic: "cookware",
+    description: "A kitchen item known as pan.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/pan.webp`,
+  },
+  {
+    id: "frying-pan",
+    label: "Frying Pan",
+    phonetic: "frying pan", // Using label as phonetic placeholder
+    topic: "cookware",
+    description: "A kitchen item known as frying pan.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/frying-pan.webp`,
+  },
+  {
+    id: "baking-tray",
+    label: "Baking Tray",
+    phonetic: "baking tray", // Using label as phonetic placeholder
+    topic: "cookware",
+    description: "A kitchen item known as baking tray.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/baking-tray.webp`,
+  },
+  {
+    id: "saucepan",
+    label: "Saucepan",
+    phonetic: "saucepan", // Using label as phonetic placeholder
+    topic: "cookware",
+    description: "A kitchen item known as saucepan.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/saucepan.webp`,
+  },
+  {
+    id: "wok",
+    label: "Wok",
+    phonetic: "wok", // Using label as phonetic placeholder
+    topic: "cookware",
+    description: "A kitchen item known as wok.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/wok.webp`,
+  },
+  {
+    id: "casserole-dish",
+    label: "Casserole Dish",
+    phonetic: "casserole dish", // Using label as phonetic placeholder
+    topic: "cookware",
+    description: "A kitchen item known as casserole dish.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/casserole-dish.webp`,
+  },
+  {
+    id: "baking-dish",
+    label: "Baking Dish",
+    phonetic: "baking dish", // Using label as phonetic placeholder
+    topic: "cookware",
+    description: "A kitchen item known as baking dish.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/baking-dish.webp`,
+  },
+  {
+    id: "steamer",
+    label: "Steamer",
+    phonetic: "steamer", // Using label as phonetic placeholder
+    topic: "cookware",
+    description: "A kitchen item known as steamer.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/steamer.webp`,
+  },
+  {
+    id: "pressure-cooker",
+    label: "Pressure Cooker",
+    phonetic: "pressure cooker", // Using label as phonetic placeholder
+    topic: "cookware",
+    description: "A kitchen item known as pressure cooker.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/pressure-cooker.webp`,
+  },
+  {
+    id: "fork",
+    label: "Fork",
+    phonetic: "fork", // Using label as phonetic placeholder
+    topic: "utensils-tools",
+    description: "A kitchen item known as fork.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/fork.webp`,
+  },
+  {
+    id: "knife",
+    label: "Knife",
+    phonetic: "knife", // Using label as phonetic placeholder
+    topic: "utensils-tools",
+    description: "A kitchen item known as knife.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/knife.webp`,
+  },
+  {
+    id: "spoon",
+    label: "Spoon",
+    phonetic: "spoon", // Using label as phonetic placeholder
+    topic: "utensils-tools",
+    description: "A kitchen item known as spoon.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/spoon.webp`,
+  },
+  {
+    id: "spatula",
+    label: "Spatula",
+    phonetic: "spatula", // Using label as phonetic placeholder
+    topic: "utensils-tools",
+    description: "A kitchen item known as spatula.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/spatula.webp`,
+  },
+  {
+    id: "ladle",
+    label: "Ladle",
+    phonetic: "ladle", // Using label as phonetic placeholder
+    topic: "utensils-tools",
+    description: "A kitchen item known as ladle.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/ladle.webp`,
+  },
+  {
+    id: "whisk",
+    label: "Whisk",
+    phonetic: "whisk", // Using label as phonetic placeholder
+    topic: "utensils-tools",
+    description: "A kitchen item known as whisk.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/whisk.webp`,
+  },
+  {
+    id: "tongs",
+    label: "Tongs",
+    phonetic: "tongs", // Using label as phonetic placeholder
+    topic: "utensils-tools",
+    description: "A kitchen item known as tongs.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/tongs.webp`,
+  },
+  {
+    id: "peeler",
+    label: "Peeler",
+    phonetic: "peeler", // Using label as phonetic placeholder
+    topic: "utensils-tools",
+    description: "A kitchen item known as peeler.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/peeler.webp`,
+  },
+  {
+    id: "grater",
+    label: "Grater",
+    phonetic: "grater", // Using label as phonetic placeholder
+    topic: "utensils-tools",
+    description: "A kitchen item known as grater.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/grater.webp`,
+  },
+  {
+    id: "rolling-pin",
+    label: "Rolling Pin",
+    phonetic: "rolling pin", // Using label as phonetic placeholder
+    topic: "utensils-tools",
+    description: "A kitchen item known as rolling pin.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/rolling-pin.webp`,
+  },
+  {
+    id: "can-opener",
+    label: "Can Opener",
+    phonetic: "can opener", // Using label as phonetic placeholder
+    topic: "utensils-tools",
+    description: "A kitchen item known as can opener.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/can-opener.webp`,
+  },
+  {
+    id: "corkscrew",
+    label: "Corkscrew",
+    phonetic: "corkscrew", // Using label as phonetic placeholder
+    topic: "utensils-tools",
+    description: "A kitchen item known as corkscrew.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/corkscrew.webp`,
+  },
+  {
+    id: "plate",
+    label: "Plate",
+    phonetic: "plate", // Using label as phonetic placeholder
+    topic: "dishes-containers",
+    description: "A kitchen item known as plate.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/plate.webp`,
+  },
+  {
+    id: "bowl",
+    label: "Bowl",
+    phonetic: "bowl", // Using label as phonetic placeholder
+    topic: "dishes-containers",
+    description: "A kitchen item known as bowl.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/bowl.webp`,
+  },
+  {
+    id: "mug",
+    label: "Mug",
+    phonetic: "mug", // Using label as phonetic placeholder
+    topic: "dishes-containers",
+    description: "A kitchen item known as mug.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/mug.webp`,
+  },
+  {
+    id: "glass",
+    label: "Glass",
+    phonetic: "glass", // Using label as phonetic placeholder
+    topic: "dishes-containers",
+    description: "A kitchen item known as glass.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/glass.webp`,
+  },
+  {
+    id: "cup",
+    label: "Cup",
+    phonetic: "cup", // Using label as phonetic placeholder
+    topic: "dishes-containers",
+    description: "A kitchen item known as cup.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/cup.webp`,
+  },
+  {
+    id: "saucer",
+    label: "Saucer",
+    phonetic: "saucer", // Using label as phonetic placeholder
+    topic: "dishes-containers",
+    description: "A kitchen item known as saucer.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/saucer.webp`,
+  },
+  {
+    id: "cutting-board",
+    label: "Cutting Board",
+    phonetic: "cutting board", // Using label as phonetic placeholder
+    topic: "dishes-containers",
+    description: "A kitchen item known as cutting board.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/cutting-board.webp`,
+  },
+  {
+    id: "colander",
+    label: "Colander",
+    phonetic: "colander", // Using label as phonetic placeholder
+    topic: "dishes-containers",
+    description: "A kitchen item known as colander.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/colander.webp`,
+  },
+  {
+    id: "measuring-cup",
+    label: "Measuring Cup",
+    phonetic: "measuring cup", // Using label as phonetic placeholder
+    topic: "dishes-containers",
+    description: "A kitchen item known as measuring cup.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/measuring-cup.webp`,
+  },
+  {
+    id: "measuring-spoon",
+    label: "Measuring Spoon",
+    phonetic: "measuring spoon", // Using label as phonetic placeholder
+    topic: "dishes-containers",
+    description: "A kitchen item known as measuring spoon.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/measuring-spoon.webp`,
+  },
+  {
+    id: "mixing-bowl",
+    label: "Mixing Bowl",
+    phonetic: "mixing bowl", // Using label as phonetic placeholder
+    topic: "dishes-containers",
+    description: "A kitchen item known as mixing bowl.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/mixing-bowl.webp`,
+  },
+  {
+    id: "pitcher",
+    label: "Pitcher",
+    phonetic: "pitcher", // Using label as phonetic placeholder
+    topic: "dishes-containers",
+    description: "A kitchen item known as pitcher.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/pitcher.webp`,
+  },
+  {
+    id: "dish-towel",
+    label: "Dish Towel",
+    phonetic: "dish towel", // Using label as phonetic placeholder
+    topic: "kitchen-items",
+    description: "A kitchen item known as dish towel.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/dish-towel.webp`,
+  },
+  {
+    id: "oven-mitt",
+    label: "Oven Mitt",
+    phonetic: "oven mitt", // Using label as phonetic placeholder
+    topic: "kitchen-items",
+    description: "A kitchen item known as oven mitt.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/oven-mitt.webp`,
+  },
+  {
+    id: "apron",
+    label: "Apron",
+    phonetic: "apron", // Using label as phonetic placeholder
+    topic: "kitchen-items",
+    description: "A kitchen item known as apron.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/apron.webp`,
+  },
+  {
+    id: "trash-can",
+    label: "Trash Can",
+    phonetic: "trash can", // Using label as phonetic placeholder
+    topic: "kitchen-items",
+    description: "A kitchen item known as trash can.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/trash-can.webp`,
+  },
+  {
+    id: "paper-towel",
+    label: "Paper Towel",
+    phonetic: "paper towel", // Using label as phonetic placeholder
+    topic: "kitchen-items",
+    description: "A kitchen item known as paper towel.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/paper-towel.webp`,
+  },
+  {
+    id: "plastic-wrap",
+    label: "Plastic Wrap",
+    phonetic: "plastic wrap", // Using label as phonetic placeholder
+    topic: "kitchen-items",
+    description: "A kitchen item known as plastic wrap.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/plastic-wrap.webp`,
+  },
+  {
+    id: "aluminum-foil",
+    label: "Aluminum Foil",
+    phonetic: "aluminum foil", // Using label as phonetic placeholder
+    topic: "kitchen-items",
+    description: "A kitchen item known as aluminum foil.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/aluminum-foil.webp`,
+  },
+  {
+    id: "food-container",
+    label: "Food Container",
+    phonetic: "food container", // Using label as phonetic placeholder
+    topic: "kitchen-items",
+    description: "A kitchen item known as food container.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/food-container.webp`,
+  },
+  {
+    id: "sponge",
+    label: "Sponge",
+    phonetic: "sponge", // Using label as phonetic placeholder
+    topic: "kitchen-items",
+    description: "A kitchen item known as sponge.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/sponge.webp`,
+  },
+  {
+    id: "dish-soap",
+    label: "Dish Soap",
+    phonetic: "dish soap", // Using label as phonetic placeholder
+    topic: "kitchen-items",
+    description: "A kitchen item known as dish soap.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/dish-soap.webp`,
+  },
+  {
+    id: "dish-rack",
+    label: "Dish Rack",
+    phonetic: "dish rack", // Using label as phonetic placeholder
+    topic: "kitchen-items",
+    description: "A kitchen item known as dish rack.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/dish-rack.webp`,
+  },
+  {
+    id: "cling-film",
+    label: "Cling Film",
+    phonetic: "cling film", // Using label as phonetic placeholder
+    topic: "kitchen-items",
+    description: "A kitchen item known as cling film.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/cling-film.webp`,
+  },
+  {
+    id: "bread",
+    label: "Bread",
+    phonetic: "bread", // Using label as phonetic placeholder
+    topic: "basic-pantry",
+    description: "A kitchen item known as bread.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/bread.webp`,
+  },
+  {
+    id: "butter",
+    label: "Butter",
+    phonetic: "butter", // Using label as phonetic placeholder
+    topic: "basic-pantry",
+    description: "A kitchen item known as butter.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/butter.webp`,
+  },
+  {
+    id: "milk",
+    label: "Milk",
+    phonetic: "milk", // Using label as phonetic placeholder
+    topic: "basic-pantry",
+    description: "A kitchen item known as milk.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/milk.webp`,
+  },
+  {
+    id: "egg",
+    label: "Egg",
+    phonetic: "egg", // Using label as phonetic placeholder
+    topic: "basic-pantry",
+    description: "A kitchen item known as egg.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/egg.webp`,
+  },
+  {
+    id: "cheese",
+    label: "Cheese",
+    phonetic: "cheese", // Using label as phonetic placeholder
+    topic: "basic-pantry",
+    description: "A kitchen item known as cheese.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/cheese.webp`,
+  },
+  {
+    id: "rice",
+    label: "Rice",
+    phonetic: "rice", // Using label as phonetic placeholder
+    topic: "basic-pantry",
+    description: "A kitchen item known as rice.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/rice.webp`,
+  },
+  {
+    id: "pasta",
+    label: "Pasta",
+    phonetic: "pasta", // Using label as phonetic placeholder
+    topic: "basic-pantry",
+    description: "A kitchen item known as pasta.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/pasta.webp`,
+  },
+  {
+    id: "cooking-oil",
+    label: "Cooking Oil",
+    phonetic: "cooking oil", // Using label as phonetic placeholder
+    topic: "basic-pantry",
+    description: "A kitchen item known as cooking oil.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/cooking-oil.webp`,
+  },
+  {
+    id: "salt",
+    label: "Salt",
+    phonetic: "salt", // Using label as phonetic placeholder
+    topic: "basic-pantry",
+    description: "A kitchen item known as salt.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/salt.webp`,
+  },
+  {
+    id: "sugar",
+    label: "Sugar",
+    phonetic: "sugar", // Using label as phonetic placeholder
+    topic: "basic-pantry",
+    description: "A kitchen item known as sugar.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/sugar.webp`,
+  },
+  {
+    id: "pepper",
+    label: "Pepper",
+    phonetic: "pepper", // Using label as phonetic placeholder
+    topic: "basic-pantry",
+    description: "A kitchen item known as pepper.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/pepper.webp`,
+  },
+  {
+    id: "flour",
+    label: "Flour",
+    phonetic: "flour", // Using label as phonetic placeholder
+    topic: "basic-pantry",
+    description: "A kitchen item known as flour.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/flour.webp`,
+  },
+  {
+    id: "vinegar",
+    label: "Vinegar",
+    phonetic: "vinegar", // Using label as phonetic placeholder
+    topic: "basic-pantry",
+    description: "A kitchen item known as vinegar.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/vinegar.webp`,
+  },
+  {
+    id: "honey",
+    label: "Honey",
+    phonetic: "honey", // Using label as phonetic placeholder
+    topic: "basic-pantry",
+    description: "A kitchen item known as honey.", // Needs manual/AI description
+    img: `${LOCAL_WORD_IMAGES}/honey.webp`,
+  },
+];
+
 export const COURSE_UNITS: Record<string, CourseUnit> = {
+  kitchen: {
+    id: "kitchen",
+    name: "The Kitchen",
+    description: "Explore real-life kitchen appliances, cookware, and accessories through 2D scene discovery, audio practice, recall matching, and sentence building.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/kitchen-scene.webp`,
+    topics: KITCHEN_TOPICS,
+    groups: KITCHEN_GROUPS,
+    vocabulary: KITCHEN_VOCABULARY,
+  },
   bedroom: {
     id: "bedroom",
     name: "The Bedroom",
@@ -720,7 +1505,8 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
 export const DEFAULT_UNIT_ID = "bedroom";
 
 /** O(1) id lookup across every world's vocabulary, not just one. */
-const VOCAB_BY_ID = new Map(
+export const ALL_VOCABULARY = Object.values(COURSE_UNITS).flatMap((world) => world.vocabulary);
+export const VOCAB_BY_ID = new Map(
   Object.values(COURSE_UNITS).flatMap((world) => world.vocabulary.map((item) => [item.id, item] as const))
 );
 
@@ -735,7 +1521,7 @@ const VOCAB_BY_ID = new Map(
 export const REVIEW_GROUP_ID = "daily-review";
 
 /** Every group across every registered world. */
-const ALL_GROUPS = Object.values(COURSE_UNITS).flatMap((world) => world.groups);
+export const ALL_GROUPS = Object.values(COURSE_UNITS).flatMap((world) => world.groups);
 
 /**
  * Resolves a group id to the group it names, searching every world rather

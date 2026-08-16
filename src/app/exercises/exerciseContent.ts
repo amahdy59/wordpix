@@ -1,4 +1,4 @@
-import { BEDROOM_VOCABULARY, type VocabularyItem } from "../data/lessons";
+import { ALL_VOCABULARY, type VocabularyItem } from "../data/lessons";
 
 export const CONFUSION_PAIRS: Record<string, string[]> = {
   pillow: ["blanket", "nightstand", "bed", "dresser"],
@@ -432,10 +432,10 @@ export function getRichSentence(word: VocabularyItem): RichSentence {
 export function getSemanticDistractors(word: VocabularyItem, count = 3): VocabularyItem[] {
   const confusionIds = CONFUSION_PAIRS[word.id] ?? [];
   const confusionWords = confusionIds
-    .map((id) => BEDROOM_VOCABULARY.find((item) => item.id === id))
+    .map((id) => ALL_VOCABULARY.find((item) => item.id === id))
     .filter((item): item is VocabularyItem => item !== undefined && !item.hasWoman);
 
-  const sameTopic = BEDROOM_VOCABULARY.filter(
+  const sameTopic = ALL_VOCABULARY.filter(
     (item) => item.id !== word.id && item.topic === word.topic && !confusionIds.includes(item.id) && !item.hasWoman
   );
 
