@@ -19,9 +19,9 @@ describe("lesson image mapping", () => {
     (wordId) => {
       const word = BEDROOM_VOCABULARY.find((item) => item.id === wordId);
       expect(word).toBeDefined();
-      expect(word?.img).toContain(`/word-images/${wordId}.jpg`);
+      expect(word?.img).toContain(`/word-images/${wordId}.webp`);
       expect(word?.img).not.toContain("images.unsplash.com");
-      expect(existsSync(resolve(publicDir, "word-images", `${wordId}.jpg`))).toBe(true);
+      expect(existsSync(resolve(publicDir, "word-images", `${wordId}.webp`))).toBe(true);
     }
   );
 
