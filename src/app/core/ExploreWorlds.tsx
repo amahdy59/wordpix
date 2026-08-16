@@ -136,22 +136,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
             </div>
           </div>
 
-          {/* Kitchen preview */}
-          <div className="bg-wp-card rounded-2xl border border-border p-4 flex items-center gap-4">
-            <div className="size-16 rounded-xl overflow-hidden shrink-0 border border-border bg-muted relative">
-              <img alt="Kitchen unit" className="absolute inset-0 object-cover size-full" src={imgKitchen} />
-              <div className="absolute inset-0 bg-black/40 flex items-center justify-center text-white">
-                <Lock className="size-5" />
-              </div>
-            </div>
-            <div>
-              <p className="font-sans font-bold text-foreground text-base">Kitchen</p>
-              <p className="font-sans text-muted-foreground text-xs mt-0.5">45 Vocabulary Items</p>
-              <span className="font-sans text-[10px] font-semibold text-muted-foreground bg-muted px-2 py-0.5 rounded-full inline-block mt-1">
-                Unlocks at 100% Bedroom Mastery
-              </span>
-            </div>
-          </div>
+
         </div>
       </section>
     </div>

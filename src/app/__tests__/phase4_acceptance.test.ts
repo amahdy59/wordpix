@@ -45,9 +45,9 @@ describe("Phase 4 Acceptance Criteria Verification", () => {
 
   it("AC 1d: an unshipped world is never claimed as offline-ready", async () => {
     stubCacheStorage([]);
-    const kitchen = await getOfflineReadiness("kitchen");
-    expect(kitchen.total).toBe(0);
-    expect(kitchen.ready).toBe(false);
+    const bathroom = await getOfflineReadiness("bathroom");
+    expect(bathroom.total).toBe(0);
+    expect(bathroom.ready).toBe(false);
   });
 
   it("AC 2: WordImage fallback SVG rendering adapts to assessment mode without leaking text", () => {

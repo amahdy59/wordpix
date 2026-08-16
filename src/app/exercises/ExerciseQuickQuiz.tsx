@@ -150,7 +150,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         <div
           role="group"
           aria-label={`Which image matches ${currentTargetWord.label}?`}
-          className="grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-2 sm:gap-3.5 w-full flex-1 min-h-0"
+          className="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3.5 w-full flex-1 min-h-0"
         >
           {options.map((option, idx) => {
             const isSelected = selectedId === option.id;
