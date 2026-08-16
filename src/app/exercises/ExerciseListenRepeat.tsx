@@ -146,7 +146,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               type="button"
               onClick={handleToggle}
               aria-label={`Play audio pronunciation for ${currentWord.label}`}
-              className="size-14 sm:size-16 rounded-full bg-primary hover:scale-105 active:scale-95 transition-transform text-primary-foreground flex items-center justify-center shadow-wp-md focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary group"
+              className="size-14 sm:size-16 rounded-full bg-primary transition-transform text-primary-foreground flex items-center justify-center shadow-wp-md focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary group"
             >
               <Volume2 className={`size-6 sm:size-7 ${isPlaying ? "animate-pulse" : ""}`} />
             </button>

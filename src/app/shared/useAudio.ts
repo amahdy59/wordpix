@@ -171,10 +171,10 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
           },
           body: JSON.stringify({
             text,
-            model_id: "eleven_monolingual_v1",
+            model_id: "eleven_turbo_v2_5",
             voice_settings: {
-              stability: 0.5,
-              similarity_boost: 0.5
+              stability: 0.7,
+              similarity_boost: 0.75
             }
           })
         })

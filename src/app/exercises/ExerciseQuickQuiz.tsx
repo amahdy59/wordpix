@@ -1,11 +1,9 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { Action } from "../types";
 import type { VocabularyItem } from "../data/lessons";
-import { resolveUnitForLesson } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { getRichSentence } from "./exerciseContent";
+import { getRichSentence, getDistractors } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
-import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
 import { AnswerFeedback } from "../shared/AnswerFeedback";
@@ -42,17 +40,15 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
   usePrefetchImage(queue.next);
 
   const options = useMemo(() => {
-    const worldVocab = resolveUnitForLesson(lessonId).vocabulary;
-    const distractorsPool = worldVocab.filter((w) => w.id !== currentTargetWord.id);
-    const shuffledDistractors = shuffleArray(distractorsPool).slice(0, 3);
+    const distractors = getDistractors(currentTargetWord, 3);
     
     const correctIndex = Math.floor(Math.random() * 4);
     
-    const finalOptions = [...shuffledDistractors];
+    const finalOptions = [...distractors];
     finalOptions.splice(correctIndex, 0, currentTargetWord);
     
     return finalOptions;
-  }, [currentTargetWord, lessonId]);
+  }, [currentTargetWord]);
 
   const advanceNext = useCallback(() => {
     if (feedback !== null) queue.submit(feedback === "correct");
@@ -165,7 +161,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
               stateStyle =
                 feedback === "correct"
                   ? "border-wp-green bg-wp-green-light/40 shadow-md"
-                  : "border-wp-rose bg-wp-rose-light/40 shadow-md animate-wp-shake";
+                  : "border-wp-rose bg-wp-rose-light/40 shadow-md";
             } else if (isRevealedAnswer) {
               stateStyle = "border-wp-green bg-wp-green-light/40 shadow-md";
             }
@@ -174,7 +170,6 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
               <motion.button
                 key={option.id}
                 type="button"
-                whileTap={feedback === null ? { scale: 0.95 } : {}}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

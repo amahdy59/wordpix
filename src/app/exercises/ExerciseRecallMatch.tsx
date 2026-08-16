@@ -1,12 +1,11 @@
 import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
 import type { Action } from "../types";
 import type { VocabularyItem } from "../data/lessons";
-import { resolveUnitForLesson } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
+import { getDistractors } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
 import { useAudio } from "../shared/useAudio";
 import { Volume2, CheckCircle2, RefreshCw, Keyboard } from "lucide-react";
-import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
 import { AnswerFeedback } from "../shared/AnswerFeedback";
@@ -43,14 +42,11 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   const hasSpokenRef = useRef<Record<string, boolean>>({});
 
   const displayCards = useMemo(() => {
-    const worldVocab = resolveUnitForLesson(lessonId).vocabulary;
-    const distractorsPool = worldVocab.filter((w) => w.id !== currentTargetWord.id);
-    
-    // Choose 3 random distractors
-    const shuffledDistractors = shuffleArray(distractorsPool).slice(0, 3);
+    // Choose 3 semantic distractors
+    const distractors = getDistractors(currentTargetWord, 3);
     
     // Insert the correct answer at a random position (0-3)
-    const finalOptions = [...shuffledDistractors];
+    const finalOptions = [...distractors];
     const correctIndex = Math.floor(Math.random() * 4);
     finalOptions.splice(correctIndex, 0, currentTargetWord);
     
@@ -173,7 +169,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 <span>Listen &amp; Match Picture</span>
                 {isPlaying && <span className="text-[10px] bg-wp-amber/20 text-wp-amber px-2 py-0.5 rounded-full border border-wp-amber/30">Playing sound…</span>}
               </h2>
-              <p className="font-sans text-white/60 text-xs">
+              <p className="font-sans text-white/80 text-xs">
                 {queue.isRetry ? "One more time — tap the picture you hear." : "Tap image card matching the spoken word."}
               </p>
             </div>
@@ -208,7 +204,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             let cardStateStyle = "border-2 border-border bg-wp-card hover:border-primary/50 hover:shadow-md";
             if (isSelected) {
               if (feedback === "correct") cardStateStyle = "border-2 border-wp-green bg-wp-green-light/40 shadow-md";
-              if (feedback === "incorrect") cardStateStyle = "border-2 border-wp-rose bg-wp-rose-light/40 shadow-md animate-wp-shake";
+              if (feedback === "incorrect") cardStateStyle = "border-2 border-wp-rose bg-wp-rose-light/40 shadow-md";
             } else if (isRevealedAnswer) {
               cardStateStyle = "border-2 border-wp-green bg-wp-green-light/40 shadow-md";
             }
@@ -217,7 +213,6 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
               <motion.button
                 key={card.id}
                 type="button"
-                whileTap={feedback === null ? { scale: 0.95 } : {}}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
