@@ -90,7 +90,8 @@ describe("Lesson data integrity", () => {
 
   it("gives every group the full set of words it claims", () => {
     BEDROOM_GROUPS.forEach((group) => {
-      expect(group.wordIds.length, `${group.id} is short`).toBe(5);
+      const expectedLength = group.id === "starter-vocabulary" ? 12 : 5;
+      expect(group.wordIds.length, `${group.id} is short`).toBe(expectedLength);
       expect(new Set(group.wordIds).size, `${group.id} repeats a word`).toBe(group.wordIds.length);
     });
   });

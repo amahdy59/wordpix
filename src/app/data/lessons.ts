@@ -59,15 +59,35 @@ const LOCAL_WORD_IMAGES = "./word-images";
 const LOCAL_SCENE_IMAGES = "./scene-images";
 
 export const BEDROOM_TOPICS: TopicCategory[] = [
-  { id: "furniture", name: "Furniture", itemsCount: 10 },
+  { id: "furniture", name: "Furniture", itemsCount: 11 },
   { id: "bedding", name: "Bedding & Linen", itemsCount: 12 },
   { id: "features", name: "Room Features", itemsCount: 10 },
-  { id: "objects", name: "Bedroom Objects", itemsCount: 10 },
-  { id: "personal", name: "Personal Items", itemsCount: 8 },
+  { id: "objects", name: "Bedroom Objects", itemsCount: 12 },
+  { id: "personal", name: "Personal Items", itemsCount: 10 },
   { id: "electronics", name: "Electronics", itemsCount: 8 },
 ];
 
 export const BEDROOM_GROUPS: Lesson[] = [
+  {
+    id: "starter-vocabulary",
+    name: "Starter Vocabulary",
+    topicId: "furniture",
+    wordIds: [
+      "bed",
+      "pillow",
+      "blanket",
+      "lamp",
+      "wardrobe",
+      "window",
+      "rug",
+      "mirror",
+      "curtain",
+      "shelf",
+      "clock",
+      "toy-box",
+    ],
+    description: "The 12 essential words to start your bedroom vocabulary.",
+  },
   {
     id: "essential-furniture",
     name: "Essential Furniture",
@@ -179,6 +199,14 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     topic: "furniture",
     description: "A tall, narrow tower of stacked sliding compartments for storing clothes.",
     img: `${LOCAL_WORD_IMAGES}/chest-of-drawers.jpg`,
+  },
+  {
+    id: "shelf",
+    label: "Shelf",
+    phonetic: "shelf",
+    topic: "furniture",
+    description: "A flat board fixed horizontally to a wall for holding objects.",
+    img: `${LOCAL_WORD_IMAGES}/shelf.jpg`,
   },
 
   // ── Bedding & Linen ────────────────────────────────────────────────────────
@@ -426,6 +454,22 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     description: "A shaped hook that keeps a shirt or coat suspended in a cupboard.",
     img: `${LOCAL_WORD_IMAGES}/hanger.jpg`,
   },
+  {
+    id: "toy-box",
+    label: "Toy Box",
+    phonetic: "toy-box",
+    topic: "objects",
+    description: "A large chest or container designed for storing playthings.",
+    img: `${LOCAL_WORD_IMAGES}/toy-box.jpg`,
+  },
+  {
+    id: "wastebasket",
+    label: "Wastebasket",
+    phonetic: "waste-bas-ket",
+    topic: "objects",
+    description: "A small open container for discarding paper and light trash.",
+    img: `${LOCAL_WORD_IMAGES}/wastebasket.jpg`,
+  },
 
   // ── Personal Items ─────────────────────────────────────────────────────────
   {
@@ -491,6 +535,22 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     topic: "personal",
     description: "A bag with two shoulder straps, carried on your back.",
     img: `${LOCAL_WORD_IMAGES}/backpack.jpg`,
+  },
+  {
+    id: "teddy-bear",
+    label: "Teddy Bear",
+    phonetic: "ted-dy-bear",
+    topic: "personal",
+    description: "A soft, stuffed toy animal shaped like a small cub.",
+    img: `${LOCAL_WORD_IMAGES}/teddy-bear.jpg`,
+  },
+  {
+    id: "jewelry-box",
+    label: "Jewelry Box",
+    phonetic: "jew-el-ry-box",
+    topic: "personal",
+    description: "A small decorative container for storing rings, necklaces, and valuables.",
+    img: `${LOCAL_WORD_IMAGES}/jewelry-box.jpg`,
   },
 
   // ── Electronics ───────────────────────────────────────────────────────────
@@ -684,4 +744,16 @@ export function nextGroupToStudy(isMastered: (wordId: string) => boolean): Lesso
     ALL_GROUPS.find((g) => g.wordIds.some((id) => !isMastered(id))) ??
     ALL_GROUPS[ALL_GROUPS.length - 1]
   );
+}
+
+/**
+ * Returns the strictly next group in the curriculum sequence after the given lessonId.
+ * Used when a user explicitly requests to move to the next group.
+ */
+export function getNextGroupChronological(lessonId: string): Lesson {
+  const currentIndex = ALL_GROUPS.findIndex((g) => g.id === lessonId);
+  if (currentIndex === -1 || currentIndex === ALL_GROUPS.length - 1) {
+    return ALL_GROUPS[ALL_GROUPS.length - 1]; // stay on the last group if there's no next
+  }
+  return ALL_GROUPS[currentIndex + 1];
 }

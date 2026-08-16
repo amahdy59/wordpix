@@ -4,7 +4,7 @@ import { HomeIndicator } from "../shared/HomeIndicator";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
 import { Trophy, Star, CheckCircle2, Layers, Sparkles, ShieldCheck } from "lucide-react";
-import { resolveGroup, getWords, nextGroupToStudy } from "../data/lessons";
+import { resolveGroup, getWords, getNextGroupChronological } from "../data/lessons";
 import { useProgress } from "../data/progress";
 import { useSound } from "../shared/useSound";
 
@@ -48,7 +48,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   const xp = xpBreakdown?.total ?? 0;
 
   const groupWords = getWords(wordQueue);
-  const nextGroup = nextGroupToStudy((id) => (progress.wordMastery[id] || 0) >= 3);
+  const nextGroup = getNextGroupChronological(lessonId);
 
   return (
     <div className="bg-secondary min-h-svh flex flex-col lg:flex-row lg:overflow-hidden relative">

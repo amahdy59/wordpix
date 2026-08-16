@@ -147,6 +147,42 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
     full: "She smoothed the embroidered bedspread over the whole bed.",
     words: ["She", "smoothed", "the", "embroidered", "bedspread"],
   },
+  window: {
+    clozeBefore: "She opened the glass",
+    clozeAfter: "to let some fresh air into the room.",
+    full: "She opened the glass window to let some fresh air into the room.",
+    words: ["She", "opened", "the", "glass", "window"],
+  },
+  rug: {
+    clozeBefore: "He stepped out of bed onto the soft wool",
+    clozeAfter: ".",
+    full: "He stepped out of bed onto the soft wool rug.",
+    words: ["He", "stepped", "on", "the", "wool", "rug"],
+  },
+  curtain: {
+    clozeBefore: "She drew the heavy fabric",
+    clozeAfter: "across to block the morning sunlight.",
+    full: "She drew the heavy fabric curtain across to block the morning sunlight.",
+    words: ["She", "drew", "the", "heavy", "fabric", "curtain"],
+  },
+  shelf: {
+    clozeBefore: "He placed his collection of small wooden figures on the top",
+    clozeAfter: ".",
+    full: "He placed his collection of small wooden figures on the top shelf.",
+    words: ["He", "placed", "figures", "on", "the", "shelf"],
+  },
+  clock: {
+    clozeBefore: "She glanced at the round wall",
+    clozeAfter: "to see if it was time to leave.",
+    full: "She glanced at the round wall clock to see if it was time to leave.",
+    words: ["She", "checked", "the", "round", "wall", "clock"],
+  },
+  "toy-box": {
+    clozeBefore: "The child tossed all the colorful blocks back into the large wooden",
+    clozeAfter: ".",
+    full: "The child tossed all the colorful blocks back into the large wooden toy box.",
+    words: ["The", "child", "filled", "the", "wooden", "toy box"],
+  },
 };
 
 export function getRichSentence(word: VocabularyItem): RichSentence {
