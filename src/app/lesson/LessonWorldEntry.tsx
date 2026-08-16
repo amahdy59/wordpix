@@ -34,7 +34,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
       <StatusBar />
 
       {/* Header Bar */}
-      <header className="flex items-center justify-between px-5 py-4 border-b border-border bg-wp-card shrink-0">
+      <header className="sticky top-0 z-40 flex items-center justify-between px-5 py-4 border-b border-border bg-wp-card shrink-0 shadow-sm">
         <div className="flex items-center gap-3">
           <BackButton onClick={() => dispatch({ type: "GO", to: "explore" })} />
           <div>
