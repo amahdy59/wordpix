@@ -59,9 +59,10 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
 
   /** Clears the result and lets the queue's next question render. */
   const advanceNext = useCallback(() => {
+    if (feedback !== null) queue.submit(feedback === "correct");
     setSelectedId(null);
     setFeedback(null);
-  }, []);
+  }, [feedback, queue]);
 
   const autoAdvance = useAutoAdvance({
     enabled: accessibility.autoAdvance,
@@ -109,10 +110,9 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       }
 
       dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
-      queue.submit(correct);
       autoAdvance.schedule(correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect);
     },
-    [feedback, currentTargetWord.id, playCorrect, playIncorrect, dispatch, queue, autoAdvance]
+    [feedback, currentTargetWord.id, playCorrect, playIncorrect, dispatch, autoAdvance]
   );
 
   const handleContinue = useCallback(() => {
@@ -234,7 +234,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                   [{idx + 1}]
                 </span>
 
-                <div className="h-full w-full relative bg-muted shrink-0">
+                <div className="h-full w-full relative bg-muted shrink-0 after:absolute after:inset-0 after:border-[4px] after:border-transparent group-hover:after:border-primary/20 after:rounded-2xl sm:after:rounded-3xl after:transition-colors">
                   <WordImage
                     word={card}
                     width="400"
@@ -242,7 +242,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                     altMode="assessment"
                     optionIndex={idx}
                     checked={isSelected || isRevealedAnswer}
-                    className="size-full object-cover object-center block hover:scale-105 transition-transform duration-500"
+                    className="size-full object-cover object-center block"
                   />
                   {isRevealedAnswer && (
                     <motion.div 

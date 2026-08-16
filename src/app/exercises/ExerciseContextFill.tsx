@@ -49,9 +49,10 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
   const selectedWord = options.find((item) => item.id === selectedId);
 
   const advanceNext = useCallback(() => {
+    if (feedback !== null) queue.submit(feedback === "correct");
     setSelectedId(null);
     setFeedback(null);
-  }, []);
+  }, [feedback, queue]);
 
   const autoAdvance = useAutoAdvance({
     enabled: accessibility.autoAdvance,
@@ -81,10 +82,9 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       else playIncorrect();
 
       dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
-      queue.submit(correct);
       autoAdvance.schedule(correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect);
     },
-    [feedback, playClick, playCorrect, playIncorrect, currentTargetWord.id, dispatch, queue, autoAdvance]
+    [feedback, playClick, playCorrect, playIncorrect, currentTargetWord.id, dispatch, autoAdvance]
   );
 
   const handleContinue = useCallback(() => {

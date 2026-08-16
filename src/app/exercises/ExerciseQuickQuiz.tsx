@@ -55,9 +55,10 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
   }, [currentTargetWord, lessonId]);
 
   const advanceNext = useCallback(() => {
+    if (feedback !== null) queue.submit(feedback === "correct");
     setSelectedId(null);
     setFeedback(null);
-  }, []);
+  }, [feedback, queue]);
 
   const autoAdvance = useAutoAdvance({
     enabled: accessibility.autoAdvance,
@@ -80,10 +81,9 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       else playIncorrect();
 
       dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
-      queue.submit(correct);
       autoAdvance.schedule(correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect);
     },
-    [feedback, playClick, playCorrect, playIncorrect, currentTargetWord.id, dispatch, queue, autoAdvance]
+    [feedback, playClick, playCorrect, playIncorrect, currentTargetWord.id, dispatch, autoAdvance]
   );
 
   const handleContinue = useCallback(() => {
@@ -191,7 +191,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                   [{idx + 1}]
                 </span>
 
-                <div className="h-full w-full relative bg-muted shrink-0">
+                <div className="h-full w-full relative bg-muted shrink-0 after:absolute after:inset-0 after:border-[4px] after:border-transparent group-hover:after:border-primary/20 after:rounded-2xl sm:after:rounded-3xl after:transition-colors">
                   <WordImage
                     word={option}
                     width="600"
@@ -199,7 +199,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                     altMode="assessment"
                     optionIndex={idx}
                     checked={isSelected || isRevealedAnswer}
-                    className="size-full object-cover object-center block hover:scale-105 transition-transform duration-500"
+                    className="size-full object-cover object-center block"
                   />
                   {isRevealedAnswer && (
                     <motion.div 

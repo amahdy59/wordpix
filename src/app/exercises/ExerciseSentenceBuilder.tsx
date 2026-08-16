@@ -43,9 +43,10 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
   const shuffled = useMemo(() => shuffleArray([...answer]), [answer]);
 
   const advanceNext = useCallback(() => {
+    if (feedback !== null) queue.submit(feedback === "correct");
     setPlaced([]);
     setFeedback(null);
-  }, []);
+  }, [feedback, queue]);
 
   const autoAdvance = useAutoAdvance({
     enabled: accessibility.autoAdvance,
@@ -71,10 +72,9 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
       else playIncorrect();
 
       dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
-      queue.submit(correct);
       autoAdvance.schedule(correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect);
     },
-    [answer, playCorrect, playIncorrect, dispatch, currentTargetWord.id, queue, autoAdvance]
+    [answer, playCorrect, playIncorrect, dispatch, currentTargetWord.id, autoAdvance]
   );
 
   const handleTileClick = useCallback(
