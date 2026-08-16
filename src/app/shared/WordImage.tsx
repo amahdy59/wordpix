@@ -181,7 +181,7 @@ export const WordImage = memo(function WordImage({
       // the cache-busted src and keep requesting the same failing URL.
       srcSet={failed || retryToken > 0 ? undefined : srcSet}
       alt={altText}
-      className={className}
+      className={className ? className + " object-center" : "object-center"}
       loading={loading}
       decoding={decoding}
       width={width}

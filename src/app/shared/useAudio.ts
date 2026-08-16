@@ -16,7 +16,17 @@ const SPEECH_START_TIMEOUT_MS = 4000;
 function pickVoice(synth: SpeechSynthesis, targetLang: string): SpeechSynthesisVoice | null {
   const voices = synth.getVoices();
   const prefix = targetLang.split("-")[0];
+  
+  // Prefer "Google" voices (they are usually higher quality neural TTS)
+  const googleVoice = voices.find(v => v.name.includes("Google") && v.lang.startsWith(prefix));
+  if (googleVoice) return googleVoice;
+  
+  // Prefer premium Apple/Microsoft voices
+  const premiumVoice = voices.find(v => (v.name.includes("Premium") || v.name.includes("Enhanced")) && v.lang.startsWith(prefix));
+  if (premiumVoice) return premiumVoice;
+
   return (
+    voices.find((v) => v.lang === targetLang && !v.localService) ??
     voices.find((v) => v.lang === targetLang) ??
     voices.find((v) => v.lang.startsWith(prefix) && !v.localService) ??
     voices.find((v) => v.lang.startsWith(prefix)) ??

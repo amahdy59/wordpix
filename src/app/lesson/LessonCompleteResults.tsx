@@ -4,7 +4,7 @@ import { HomeIndicator } from "../shared/HomeIndicator";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
 import { Trophy, Star, CheckCircle2, Layers, Sparkles, ShieldCheck } from "lucide-react";
-import { resolveGroup, getWords } from "../data/lessons";
+import { resolveGroup, getWords, nextGroupToStudy } from "../data/lessons";
 import { useProgress } from "../data/progress";
 import { useSound } from "../shared/useSound";
 
@@ -48,6 +48,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   const xp = xpBreakdown?.total ?? 0;
 
   const groupWords = getWords(wordQueue);
+  const nextGroup = nextGroupToStudy((id) => (progress.wordMastery[id] || 0) >= 3);
 
   return (
     <div className="bg-secondary min-h-svh flex flex-col lg:flex-row lg:overflow-hidden relative">
@@ -192,7 +193,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
 
         <footer className="w-full max-w-md mx-auto px-6 pb-8 pt-4 flex flex-col gap-2.5 shrink-0 border-t border-border/60 bg-secondary/50">
           <PrimaryButton label="Continue to Lessons" onClick={() => dispatch({ type: "GO", to: "explore" })} />
-          <SecondaryButton label="Practice Next Group" onClick={() => dispatch({ type: "GO", to: "lesson-entry" })} />
+          <SecondaryButton label="Practice Next Group" onClick={() => dispatch({ type: "START_LESSON", lessonId: nextGroup.id, mode: "NEW_LESSON", wordQueue: nextGroup.wordIds })} />
         </footer>
         <HomeIndicator />
       </div>
