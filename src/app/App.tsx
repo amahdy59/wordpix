@@ -13,6 +13,7 @@ import { useApplyAccessibilityPreferences } from "./shared/useAccessibilityPrefe
 
 import { reducer, ariaLiveAnnounce, describeScreen, STORAGE_KEY } from "./store/reducer";
 import { RouterView } from "./router/RouterView";
+import { UpdatePrompt } from "./shared/UpdatePrompt";
 
 function AppInner() {
   const { t } = useI18n();
@@ -87,6 +88,7 @@ function AppInner() {
 
   return (
     <ErrorBoundary>
+      <UpdatePrompt />
       <div id="a11y-live-region" className="sr-only" aria-live="polite" aria-atomic="true" />
       <RouterView state={state} dispatch={dispatch} />
     </ErrorBoundary>

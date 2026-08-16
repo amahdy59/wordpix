@@ -14,12 +14,13 @@ interface Props {
 
 export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatch }: Props) {
   const world = COURSE_UNITS[unitId ?? DEFAULT_UNIT_ID];
+  const { progress } = useProgress();
+
   const [selectedGroupId, setSelectedGroupId] = useState<string>(() => {
     const isMastered = (id: string) => (progress.wordMastery[id] || 0) >= 3;
     const nextGroup = world.groups.find((g) => g.wordIds.some((id) => !isMastered(id)));
     return nextGroup ? nextGroup.id : world.groups[world.groups.length - 1].id;
   });
-  const { progress } = useProgress();
 
   const selectedGroup = world.groups.find((g) => g.id === selectedGroupId) ?? world.groups[0];
 

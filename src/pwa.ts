@@ -6,9 +6,36 @@ export function registerServiceWorker() {
   if (typeof window === "undefined" || !("serviceWorker" in navigator)) return;
 
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js").catch((err) => {
-      console.error("PWA ServiceWorker registration failed:", err);
-    });
+    navigator.serviceWorker
+      .register("./sw.js")
+      .then((registration) => {
+        registration.addEventListener("updatefound", () => {
+          const newWorker = registration.installing;
+          if (!newWorker) return;
+
+          newWorker.addEventListener("statechange", async () => {
+            if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
+              try {
+                const res = await fetch("./release-notes.json?t=" + Date.now());
+                const releaseNotes = await res.json();
+
+                const event = new CustomEvent("wp-update-available", {
+                  detail: {
+                    worker: newWorker,
+                    notes: releaseNotes.notes,
+                  },
+                });
+                window.dispatchEvent(event);
+              } catch (err) {
+                console.error("Failed to fetch release notes:", err);
+              }
+            }
+          });
+        });
+      })
+      .catch((err) => {
+        console.error("PWA ServiceWorker registration failed:", err);
+      });
   });
 }
 
