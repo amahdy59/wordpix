@@ -56,6 +56,7 @@ export interface AccessibilityPreferences {
    * Next button on the feedback instead.
    */
   autoAdvance: boolean;
+  reduceMotion: boolean;
 }
 
 export const DEFAULT_ACCESSIBILITY: AccessibilityPreferences = {
@@ -67,6 +68,7 @@ export const DEFAULT_ACCESSIBILITY: AccessibilityPreferences = {
   includeListening: true,
   timedExercises: true,
   autoAdvance: true,
+  reduceMotion: false,
 };
 
 /** Root font-size multiplier per text-size step. */

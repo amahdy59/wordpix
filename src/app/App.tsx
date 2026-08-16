@@ -2,7 +2,7 @@ import { useEffect, useReducer, useCallback } from "react";
 import type { Screen } from "./types";
 import type { RouteIntent } from "./router/useHashRouter";
 import { ErrorBoundary } from "./shared/ErrorBoundary";
-import { LearnerProvider } from "./context/LearnerContext";
+import { LearnerProvider, useLearner } from "./context/LearnerContext";
 import { I18nProvider, useI18n } from "./context/I18nContext";
 import { AuthProvider } from "./context/AuthContext";
 import { useHashRouter, hashToScreen } from "./router/useHashRouter";
@@ -14,9 +14,13 @@ import { useApplyAccessibilityPreferences } from "./shared/useAccessibilityPrefe
 import { reducer, ariaLiveAnnounce, describeScreen, STORAGE_KEY } from "./store/reducer";
 import { RouterView } from "./router/RouterView";
 import { UpdatePrompt } from "./shared/UpdatePrompt";
+import { MotionConfig } from "framer-motion";
 
 function AppInner() {
   const { t } = useI18n();
+  const { state: learnerState } = useLearner();
+  const reduceMotion = learnerState.accessibility.reduceMotion;
+  
   const [state, dispatch] = useReducer(
     reducer,
     { id: "onboarding", step: "splash" },
@@ -88,9 +92,14 @@ function AppInner() {
 
   return (
     <ErrorBoundary>
-      <UpdatePrompt />
-      <div id="a11y-live-region" className="sr-only" aria-live="polite" aria-atomic="true" />
-      <RouterView state={state} dispatch={dispatch} />
+      <MotionConfig 
+        reducedMotion={reduceMotion ? "always" : "user"}
+        transition={{ type: "spring", bounce: 0, duration: 0.4 }}
+      >
+        <UpdatePrompt />
+        <div id="a11y-live-region" className="sr-only" aria-live="polite" aria-atomic="true" />
+        <RouterView state={state} dispatch={dispatch} />
+      </MotionConfig>
     </ErrorBoundary>
   );
 }

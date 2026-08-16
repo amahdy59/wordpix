@@ -22,7 +22,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
   // clicked and changed nothing, then discarded the value on close. They are
   // now the persisted accessibility slice, applied by real consumers.
   const { accessibility, setAccessibility } = useAccessibility();
-  const { textSize, highContrast, speechRate, numeralSystem, includeSpeaking, includeListening, timedExercises, autoAdvance } =
+  const { textSize, highContrast, speechRate, numeralSystem, includeSpeaking, includeListening, timedExercises, autoAdvance, reduceMotion } =
     accessibility;
   const [confirmReset, setConfirmReset] = useState(false);
 
@@ -184,6 +184,26 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   }`}
                 >
                   {highContrast ? "Enabled (7:1)" : "Disabled"}
+                </button>
+              </div>
+
+              <hr className="border-border/60" />
+
+              {/* Reduce Motion */}
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <span className="font-sans font-bold text-foreground text-sm">Reduce Motion</span>
+                  <p className="font-sans text-xs text-muted-foreground">Minimize or disable animations across the app.</p>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setAccessibility({ reduceMotion: !reduceMotion })}
+                  aria-pressed={reduceMotion}
+                  className={`px-3 py-1.5 rounded-full font-sans font-bold text-xs transition-all border ${
+                    reduceMotion ? "bg-wp-green text-wp-text-on-green border-wp-green" : "bg-muted text-muted-foreground border-border"
+                  }`}
+                >
+                  {reduceMotion ? "Enabled" : "Disabled"}
                 </button>
               </div>
             </div>
