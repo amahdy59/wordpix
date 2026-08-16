@@ -51,7 +51,7 @@ export function UpdatePrompt() {
           >
             <button
               onClick={handleDismiss}
-              className="absolute top-4 end-4 text-muted-foreground hover:text-foreground transition-colors p-1"
+              className="absolute top-2 end-2 text-muted-foreground hover:text-foreground transition-colors p-3 min-w-[44px] min-h-[44px] flex items-center justify-center"
               aria-label="Dismiss update"
             >
               <X className="size-5" />
