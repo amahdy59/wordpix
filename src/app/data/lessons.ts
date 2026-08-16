@@ -22,6 +22,7 @@ export interface VocabularyItem {
    * contain its own label or a stem of it.
    */
   description: string;
+  hasWoman?: boolean;
 }
 
 export interface TopicCategory {

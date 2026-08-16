@@ -169,14 +169,14 @@ export function getSemanticDistractors(word: VocabularyItem, count = 3): Vocabul
   const confusionIds = CONFUSION_PAIRS[word.id] ?? [];
   const confusionWords = confusionIds
     .map((id) => BEDROOM_VOCABULARY.find((item) => item.id === id))
-    .filter(Boolean) as VocabularyItem[];
+    .filter((item): item is VocabularyItem => item !== undefined && !item.hasWoman);
 
   const sameTopic = BEDROOM_VOCABULARY.filter(
-    (item) => item.id !== word.id && item.topic === word.topic && !confusionIds.includes(item.id)
+    (item) => item.id !== word.id && item.topic === word.topic && !confusionIds.includes(item.id) && !item.hasWoman
   );
 
   const otherTopics = BEDROOM_VOCABULARY.filter(
-    (item) => item.id !== word.id && item.topic !== word.topic && !confusionIds.includes(item.id)
+    (item) => item.id !== word.id && item.topic !== word.topic && !confusionIds.includes(item.id) && !item.hasWoman
   );
 
   const pool = [...confusionWords, ...sameTopic, ...otherTopics];

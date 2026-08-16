@@ -24,6 +24,8 @@ function pickVoice(synth: SpeechSynthesis, targetLang: string): SpeechSynthesisV
   );
 }
 
+const audioCache = new Map<string, string>();
+
 export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Options = {}) {
   // The learner's Settings speech rate is the default; an explicit `rate` prop
   // still wins so individual drills can slow playback further.
@@ -38,6 +40,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
     typeof window !== "undefined" && window.speechSynthesis ? window.speechSynthesis : null
   );
   const stallTimerRef = useRef<number | null>(null);
+  const currentAudioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     const synth = synthRef.current;
@@ -52,24 +55,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
 
   const speak = useCallback(
     (text: string, overrideLang?: string) => {
-      const synth = synthRef.current;
-      if (!synth) {
-        setStatus("unsupported");
-        return;
-      }
-
-      synth.cancel();
-      setStatus("loading");
-
       const targetLang = overrideLang ?? lang;
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = targetLang;
-      utterance.rate = effectiveRate;
-      utterance.pitch = pitch;
-      utterance.volume = volume;
-
-      const voice = pickVoice(synth, targetLang);
-      if (voice) utterance.voice = voice;
 
       const clearStall = () => {
         if (stallTimerRef.current !== null) {
@@ -78,34 +64,128 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
         }
       };
 
-      utterance.onstart = () => {
-        clearStall();
-        setStatus("playing");
-      };
-      utterance.onend = () => {
-        clearStall();
-        setStatus("idle");
-      };
-      utterance.onerror = (e) => {
-        clearStall();
-        // "interrupted" / "canceled" are expected on cancel(); not real errors
-        if (e.error !== "interrupted" && e.error !== "canceled") {
-          setStatus("error");
-        } else {
-          setStatus("idle");
+      const fallbackToSynthesis = (fallbackText: string, fallbackLang: string) => {
+        const synth = synthRef.current;
+        if (!synth) {
+          setStatus("unsupported");
+          return;
         }
+
+        synth.cancel();
+        setStatus("loading");
+
+        const utterance = new SpeechSynthesisUtterance(fallbackText);
+        utterance.lang = fallbackLang;
+        utterance.rate = effectiveRate;
+        utterance.pitch = pitch;
+        utterance.volume = volume;
+
+        const voice = pickVoice(synth, fallbackLang);
+        if (voice) utterance.voice = voice;
+
+        utterance.onstart = () => {
+          clearStall();
+          setStatus("playing");
+        };
+        utterance.onend = () => {
+          clearStall();
+          setStatus("idle");
+        };
+        utterance.onerror = (e) => {
+          clearStall();
+          if (e.error !== "interrupted" && e.error !== "canceled") {
+            setStatus("error");
+          } else {
+            setStatus("idle");
+          }
+        };
+
+        clearStall();
+        stallTimerRef.current = window.setTimeout(() => {
+          setStatus((current) => (current === "loading" ? "error" : current));
+        }, SPEECH_START_TIMEOUT_MS);
+
+        synth.speak(utterance);
       };
 
-      // If no voice is installed, speak() can resolve to silence: onstart never
-      // fires, nor does onerror. Without this the hook stays "loading" forever,
-      // and isPlaying (which counts "loading") leaves the UI showing a
-      // permanent "Playing sound…" state.
-      clearStall();
-      stallTimerRef.current = window.setTimeout(() => {
-        setStatus((current) => (current === "loading" ? "error" : current));
-      }, SPEECH_START_TIMEOUT_MS);
+      if (currentAudioRef.current) {
+        currentAudioRef.current.pause();
+        currentAudioRef.current = null;
+      }
+      
+      const apiKey = import.meta.env?.VITE_ELEVENLABS_API_KEY;
+      if (apiKey) {
+        const voiceId = import.meta.env?.VITE_ELEVENLABS_VOICE_ID || "pNInz6obbfDQGcgMyIGC";
+        const cacheKey = `${voiceId}:${text}`;
 
-      synth.speak(utterance);
+        const playBlobUrl = (blobUrl: string) => {
+          const audio = new Audio(blobUrl);
+          audio.onplay = () => {
+            clearStall();
+            setStatus("playing");
+          };
+          audio.onended = () => {
+            clearStall();
+            setStatus("idle");
+          };
+          audio.onerror = () => {
+            clearStall();
+            setStatus("error");
+          };
+          
+          currentAudioRef.current = audio;
+          audio.play().catch(() => {
+            clearStall();
+            setStatus("error");
+          });
+        };
+
+        if (audioCache.has(cacheKey)) {
+          setStatus("loading");
+          playBlobUrl(audioCache.get(cacheKey)!);
+          return;
+        }
+
+        setStatus("loading");
+        
+        clearStall();
+        stallTimerRef.current = window.setTimeout(() => {
+          setStatus((current) => (current === "loading" ? "error" : current));
+        }, SPEECH_START_TIMEOUT_MS * 2); // Give API more time than local TTS
+
+        fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "xi-api-key": apiKey
+          },
+          body: JSON.stringify({
+            text,
+            model_id: "eleven_monolingual_v1",
+            voice_settings: {
+              stability: 0.5,
+              similarity_boost: 0.5
+            }
+          })
+        })
+          .then(res => {
+            if (!res.ok) throw new Error(`ElevenLabs API error: ${res.status}`);
+            return res.blob();
+          })
+          .then(blob => {
+            const url = URL.createObjectURL(blob);
+            audioCache.set(cacheKey, url);
+            playBlobUrl(url);
+          })
+          .catch(err => {
+            console.error("ElevenLabs error, falling back to synthesis", err);
+            fallbackToSynthesis(text, targetLang);
+          });
+          
+        return;
+      }
+
+      fallbackToSynthesis(text, targetLang);
     },
     [lang, effectiveRate, pitch, volume]
   );
@@ -114,6 +194,10 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
     if (stallTimerRef.current !== null) {
       clearTimeout(stallTimerRef.current);
       stallTimerRef.current = null;
+    }
+    if (currentAudioRef.current) {
+      currentAudioRef.current.pause();
+      currentAudioRef.current = null;
     }
     synthRef.current?.cancel();
     setStatus("idle");
