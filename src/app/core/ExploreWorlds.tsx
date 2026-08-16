@@ -6,7 +6,6 @@ import { COURSE_UNITS } from "../data/lessons";
 import { Badge, ProgressBar } from "../shared";
 
 const imgBathroom = "/images/core/bathroom-scene.webp";
-const imgKitchen  = "/images/core/kitchen-scene.webp";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
