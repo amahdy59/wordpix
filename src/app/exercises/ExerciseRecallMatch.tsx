@@ -152,7 +152,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         </div>
       }
     >
-      <div className="flex flex-col gap-3.5 sm:gap-4 w-full">
+      <div className="flex flex-col gap-3.5 sm:gap-4 w-full h-full min-h-0">
         {/* Sleek, Compact Target Audio Play Bar */}
         <div className="bg-wp-panel text-wp-text-on-panel rounded-2xl p-3 sm:p-3.5 flex items-center justify-between shadow-wp-sm border border-wp-panel-border shrink-0">
           <button

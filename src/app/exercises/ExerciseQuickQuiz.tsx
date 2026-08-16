@@ -120,7 +120,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         </div>
       }
     >
-      <div className="flex flex-col gap-3.5 sm:gap-4 w-full">
+      <div className="flex flex-col gap-3.5 sm:gap-4 w-full h-full min-h-0">
         {/* Single-Line Question Heading */}
         {/*
           The question itself must never be clipped. It previously carried

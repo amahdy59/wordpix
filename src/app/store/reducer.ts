@@ -1,5 +1,5 @@
 import type { Screen, Action, OnboardStep } from "../types";
-import { COURSE_UNITS, DEFAULT_UNIT_ID, resolveGroup } from "../data/lessons";
+import { COURSE_UNITS, DEFAULT_UNIT_ID, resolveGroup, resolveUnitForLesson } from "../data/lessons";
 
 export const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "ready"];
 export const TABBED_IDS: ReadonlySet<string> = new Set(["home", "explore", "practice", "profile"]);
@@ -89,7 +89,10 @@ export function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "LESSON_PREVIOUS") {
     if (state.id !== "lesson") return state;
-    if (state.step === 0) return { id: "lesson-entry" };
+    if (state.step === 0) {
+      const unit = resolveUnitForLesson(state.lessonId);
+      return { id: "lesson-entry", unitId: unit.id };
+    }
     return { ...state, step: state.step - 1 };
   }
   if (action.type === "LESSON_GOTO_STEP") {
