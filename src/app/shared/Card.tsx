@@ -25,7 +25,6 @@ export const Card = memo(function Card({ children, variant = "default", classNam
 
   return (
     <>
-      {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
       <motion.div 
         className={`${baseStyles} ${variantStyles} ${interactiveStyles} ${className}`}
         onClick={onClick}
