@@ -112,7 +112,8 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
         </div>
 
         <div className="h-48 w-full rounded-3xl overflow-hidden border border-border shadow-wp-xs bg-muted">
-          <WordImage word={current} width="600" height="400" altMode="assessment" optionIndex={index} className="size-full object-contain" />
+          <WordImage word={current} width="600" height="400" altMode="assessment" optionIndex={index} className="absolute inset-0 size-full object-cover blur-xl opacity-40 scale-110 pointer-events-none" aria-hidden="true" />
+          <WordImage word={current} width="600" height="400" altMode="assessment" optionIndex={index} className="size-full relative size-full object-contain drop-shadow-2xl" />
         </div>
 
         <form onSubmit={submit} className="flex flex-col gap-3">

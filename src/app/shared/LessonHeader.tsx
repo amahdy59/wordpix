@@ -57,7 +57,7 @@ export const LessonHeader = memo(function LessonHeader({
         aria-valuemin={0}
         aria-valuemax={100}
         aria-valuetext={`Step ${safeCurrent} of ${safeTotal}`}
-        className="bg-muted h-[8px] relative rounded-full shrink-0 w-full overflow-hidden"
+        className="bg-primary/20 h-[8px] relative rounded-full shrink-0 w-full overflow-hidden"
       >
         <div
           className="bg-primary h-full rounded-full motion-safe:transition-all motion-safe:duration-500"

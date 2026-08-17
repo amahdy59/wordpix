@@ -112,7 +112,8 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
         {/* Fluid Target Image Banner */}
         <div className="w-full aspect-video max-h-[50vh] sm:max-h-[60vh] relative rounded-3xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2">
-          <WordImage word={currentWord} width="1200" height="800" className="size-full object-contain" />
+          <WordImage word={currentWord} width="1200" height="800" className="absolute inset-0 size-full object-cover blur-xl opacity-40 scale-110 pointer-events-none" aria-hidden="true" />
+          <WordImage word={currentWord} width="1200" height="800" className="size-full relative size-full object-contain drop-shadow-2xl" />
           <div className="absolute top-3 start-3 sm:top-4 sm:start-4 bg-black/65 backdrop-blur-md text-white font-sans font-bold text-[11px] sm:text-xs px-3 py-1.5 rounded-xl border border-white/20 shadow-md flex items-center gap-1.5">
             <Sparkles className="size-3.5 text-wp-amber animate-pulse" />
             <span>Target Visual</span>
