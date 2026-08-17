@@ -183,6 +183,7 @@ interface LearnerContextType {
   state: LearnerStateSchema;
   addXP: (amount: number) => void;
   recordSessionCompletion: (sessionId: string, attempts: AnswerAttempt[], wordQueue: string[]) => void;
+  recordUnitAssessmentCompletion: (passed: boolean, unitWordIds: string[]) => void;
   setPreferences: (patch: Partial<LearnerPreferences>) => void;
   setAccessibility: (patch: Partial<AccessibilityPreferences>) => void;
   resetToZero: () => void;
@@ -393,6 +394,45 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     });
   }, [updateStateAndPersist]);
 
+  const recordUnitAssessmentCompletion = useCallback((
+    passed: boolean,
+    unitWordIds: string[]
+  ) => {
+    if (!passed) return; // If failed, we could record standard XP, but let's keep it simple and just exit or just let them get XP from the normal `recordSessionCompletion`?
+    // Wait, if they pass, we want to force all words in the unit to 'strong'.
+    updateStateAndPersist((prev) => {
+      const updatedMemory = { ...prev.wordMemory };
+      
+      unitWordIds.forEach((wordId) => {
+        const existingState = updatedMemory[wordId] || createInitialWordState(wordId);
+        updatedMemory[wordId] = {
+          ...existingState,
+          exposures: existingState.exposures + 1,
+          lastSeenAt: new Date().toISOString(),
+          mastery: "strong",
+          intervalDays: 14,
+        };
+      });
+
+      // Add a bonus XP for testing out?
+      const bonusXp = 50;
+      const nextXp = prev.learnerProgress.xp + bonusXp;
+
+      return {
+        nextState: {
+          ...prev,
+          learnerProgress: {
+            ...prev.learnerProgress,
+            xp: nextXp,
+          },
+          wordMemory: updatedMemory,
+        },
+        mutationType: "session_completed", // Reusing this mutation type for sync
+        mutationPayload: { wordMemory: updatedMemory, xp: nextXp },
+      };
+    });
+  }, [updateStateAndPersist]);
+
   const setPreferences = useCallback((patch: Partial<LearnerPreferences>) => {
     updateStateAndPersist((prev) => {
       const prefs = { ...prev.preferences, ...patch };
@@ -430,12 +470,17 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
       if (!state) {
         return {
           state: INITIAL_LEARNER_STATE,
-          addXP, recordSessionCompletion, setPreferences, setAccessibility, resetToZero
+          addXP,
+          recordSessionCompletion,
+          recordUnitAssessmentCompletion,
+          setPreferences,
+          setAccessibility,
+          resetToZero
         };
       }
-      return { state, addXP, recordSessionCompletion, setPreferences, setAccessibility, resetToZero };
+      return { state, addXP, recordSessionCompletion, recordUnitAssessmentCompletion, setPreferences, setAccessibility, resetToZero };
     },
-    [state, addXP, recordSessionCompletion, setPreferences, setAccessibility, resetToZero]
+    [state, addXP, recordSessionCompletion, recordUnitAssessmentCompletion, setPreferences, setAccessibility, resetToZero]
   );
 
   if (!state) {

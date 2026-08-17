@@ -26,7 +26,7 @@ const MASTERY_TO_LEGACY_LEVEL: Record<MasteryCategory, number> = {
 };
 
 export function useProgress() {
-  const { state, addXP, recordSessionCompletion, setPreferences, resetToZero } = useLearner();
+  const { state, addXP, recordSessionCompletion, recordUnitAssessmentCompletion, setPreferences, resetToZero } = useLearner();
 
   // Both of these were rebuilt on every render, so `progress` was a fresh
   // object each time and every memo() downstream of it was defeated. They only
@@ -57,7 +57,7 @@ export function useProgress() {
   );
 
   return useMemo(
-    () => ({ progress, addXP, recordSessionCompletion, setPreferences, resetToZero }),
-    [progress, addXP, recordSessionCompletion, setPreferences, resetToZero]
+    () => ({ progress, addXP, recordSessionCompletion, recordUnitAssessmentCompletion, setPreferences, resetToZero }),
+    [progress, addXP, recordSessionCompletion, recordUnitAssessmentCompletion, setPreferences, resetToZero]
   );
 }

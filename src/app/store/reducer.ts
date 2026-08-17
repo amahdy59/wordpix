@@ -25,6 +25,7 @@ export function reducer(state: Screen, action: Action): Screen {
           mode: state.mode,
           sessionId: state.sessionId,
           lessonId: state.lessonId,
+          unitId: state.unitId,
           wordQueue: state.wordQueue,
           attempts: state.attempts,
         };
@@ -51,6 +52,7 @@ export function reducer(state: Screen, action: Action): Screen {
       mode: action.mode || "NEW_LESSON",
       sessionId,
       lessonId: action.lessonId,
+      unitId: action.unitId,
       wordQueue: queue,
       step: 0,
       attempts: [],
@@ -81,6 +83,7 @@ export function reducer(state: Screen, action: Action): Screen {
         mode: state.mode,
         sessionId: state.sessionId,
         lessonId: state.lessonId,
+        unitId: state.unitId,
         wordQueue: state.wordQueue,
         attempts: state.attempts,
       };
@@ -90,8 +93,8 @@ export function reducer(state: Screen, action: Action): Screen {
   if (action.type === "LESSON_PREVIOUS") {
     if (state.id !== "lesson") return state;
     if (state.step === 0) {
-      const unit = resolveUnitForLesson(state.lessonId);
-      return { id: "lesson-entry", unitId: unit.id };
+      const unitId = state.unitId || resolveUnitForLesson(state.lessonId).id;
+      return { id: "lesson-entry", unitId };
     }
     return { ...state, step: state.step - 1 };
   }

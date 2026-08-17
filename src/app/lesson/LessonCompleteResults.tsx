@@ -1,10 +1,10 @@
 import { memo, useEffect } from "react";
-import type { Action, AnswerAttempt } from "../types";
+import type { Action, AnswerAttempt, LearnerMode } from "../types";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
 import { Trophy, Star, CheckCircle2, Layers, Sparkles, ShieldCheck } from "lucide-react";
-import { resolveGroup, getWords, getNextGroupChronological } from "../data/lessons";
+import { COURSE_UNITS, resolveGroup, getWords, getNextGroupChronological } from "../data/lessons";
 import { useProgress } from "../data/progress";
 import { useSound } from "../shared/useSound";
 
@@ -12,6 +12,8 @@ interface Props {
   sessionId?: string;
   attempts: AnswerAttempt[];
   lessonId?: string;
+  unitId?: string;
+  mode?: LearnerMode;
   wordQueue?: string[];
   dispatch: React.Dispatch<Action>;
 }
@@ -20,10 +22,12 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   sessionId = "sess_default",
   attempts,
   lessonId = "essential-furniture",
+  unitId,
+  mode = "NEW_LESSON",
   wordQueue = ["bed", "nightstand", "dresser", "wardrobe", "desk"],
   dispatch,
 }: Props) {
-  const { progress, recordSessionCompletion } = useProgress();
+  const { progress, recordSessionCompletion, recordUnitAssessmentCompletion } = useProgress();
   const { playLevelUp } = useSound();
 
   const group = resolveGroup(lessonId, wordQueue);
@@ -34,10 +38,32 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   const stars = [accuracy >= 50, accuracy >= 75, accuracy >= 90];
   const isMastered = accuracy >= 80 && attempts.length > 0;
 
+  const isAssessment = mode === "UNIT_ASSESSMENT";
+  const assessmentPassed = isAssessment && accuracy === 100 && attempts.length === wordQueue.length;
+
   useEffect(() => {
-    recordSessionCompletion(sessionId, attempts, wordQueue);
-    playLevelUp();
-  }, [sessionId, attempts, wordQueue, recordSessionCompletion, playLevelUp]);
+    if (isAssessment) {
+      if (unitId && assessmentPassed) {
+        // Find all word IDs in the entire unit
+        const unit = Object.values(COURSE_UNITS).find(u => u.id === unitId) || COURSE_UNITS[unitId || ""];
+        if (unit) {
+          const allWordIds = unit.vocabulary.map(v => v.id);
+          recordUnitAssessmentCompletion(true, allWordIds);
+        }
+      }
+      // If failed, we could also record the session normally to grant XP, but for an assessment, let's just record it as a normal session so they still get XP for what they got right.
+      recordSessionCompletion(sessionId, attempts, wordQueue);
+    } else {
+      recordSessionCompletion(sessionId, attempts, wordQueue);
+    }
+    
+    if (isAssessment && !assessmentPassed) {
+      // Play a different sound if they fail the assessment?
+      // playIncorrect(); // Maybe not, just no level up sound
+    } else {
+      playLevelUp();
+    }
+  }, [sessionId, attempts, wordQueue, recordSessionCompletion, recordUnitAssessmentCompletion, playLevelUp, isAssessment, assessmentPassed, unitId]);
 
   // Read the credited amount back out of the ledger rather than recomputing it.
   // This screen used to run its own `correct * 10`, which was a fourth
@@ -62,15 +88,23 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
           </div>
           <div>
             <span className="font-sans font-bold text-xs text-wp-amber bg-wp-amber/10 border border-wp-amber/20 px-3 py-1 rounded-full uppercase tracking-wider">
-              {isMastered ? "Group Mastered" : "Session Complete"}
+              {isAssessment 
+                ? (assessmentPassed ? "Unit Mastered" : "Test Failed") 
+                : (isMastered ? "Group Mastered" : "Session Complete")}
             </span>
             <h1 className="font-sans font-black text-white text-4xl xl:text-5xl leading-tight tracking-tight mt-2">
-              {group.name} {isMastered ? "Mastered!" : "Completed!"}
+              {isAssessment 
+                ? (assessmentPassed ? "Passed!" : "Keep Practicing!") 
+                : `${group.name} ${isMastered ? "Mastered!" : "Completed!"}`}
             </h1>
             <p className="font-sans font-semibold text-white/60 text-base mt-2">
-              {isMastered
-                ? `You mastered all ${groupWords.length} words in this learning group.`
-                : `You completed practice for ${groupWords.length} words.`}
+              {isAssessment
+                ? (assessmentPassed 
+                  ? `You mastered all words in this unit!` 
+                  : `You need 100% to test out of this unit.`)
+                : (isMastered
+                  ? `You mastered all ${groupWords.length} words in this learning group.`
+                  : `You completed practice for ${groupWords.length} words.`)}
             </p>
           </div>
           <div className="flex gap-3 items-center" aria-label={`${stars.filter(Boolean).length} out of 3 stars`}>
@@ -95,14 +129,22 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             </div>
             <div>
               <span className="font-sans font-bold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full uppercase tracking-wider">
-                {isMastered ? "Group Mastered" : "Session Complete"}
+                {isAssessment 
+                  ? (assessmentPassed ? "Unit Mastered" : "Test Failed") 
+                  : (isMastered ? "Group Mastered" : "Session Complete")}
               </span>
-              <h1 className="font-sans font-black text-foreground text-3xl mt-1">{group.name}</h1>
+              <h1 className="font-sans font-black text-foreground text-3xl mt-1">
+                {isAssessment ? (assessmentPassed ? "Passed!" : "Keep Practicing!") : group.name}
+              </h1>
             </div>
             <p className="font-sans font-semibold text-muted-foreground text-sm">
-              {isMastered
-                ? `Mastered all ${groupWords.length} vocabulary words in this group.`
-                : `Completed session for ${groupWords.length} words.`}
+              {isAssessment
+                ? (assessmentPassed 
+                  ? `Mastered all words in this unit.` 
+                  : `You need 100% to test out of this unit.`)
+                : (isMastered
+                  ? `Mastered all ${groupWords.length} vocabulary words in this group.`
+                  : `Completed session for ${groupWords.length} words.`)}
             </p>
             <div className="flex gap-2 items-center" aria-label={`${stars.filter(Boolean).length} out of 3 stars`}>
               {stars.map((filled, i) => (
@@ -192,8 +234,10 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
         </main>
 
         <footer className="w-full max-w-md mx-auto px-6 pb-8 pt-4 flex flex-col gap-2.5 shrink-0 border-t border-border/60 bg-secondary/50">
-          <PrimaryButton label="Continue to Lessons" onClick={() => dispatch({ type: "GO", to: "explore" })} />
-          <SecondaryButton label="Practice Next Group" onClick={() => dispatch({ type: "START_LESSON", lessonId: nextGroup.id, mode: "NEW_LESSON", wordQueue: nextGroup.wordIds })} />
+          <PrimaryButton label={isAssessment ? "Return to Unit" : "Continue to Lessons"} onClick={() => dispatch({ type: "GO", to: isAssessment ? "lesson-entry" : "explore", unitId })} />
+          {!isAssessment && (
+            <SecondaryButton label="Practice Next Group" onClick={() => dispatch({ type: "START_LESSON", lessonId: nextGroup.id, mode: "NEW_LESSON", wordQueue: nextGroup.wordIds })} />
+          )}
         </footer>
         <HomeIndicator />
       </div>

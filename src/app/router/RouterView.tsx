@@ -110,8 +110,11 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       const isBeginner =
         learnerState.preferences.englishLevel === "A1" ||
         learnerState.preferences.englishLevel === "A2";
+      const isAssessment = state.mode === "UNIT_ASSESSMENT";
 
-      const exSequence = isBeginner
+      const exSequence = isAssessment
+        ? (["quiz"] as const)
+        : isBeginner
         ? (["listen", "recall", "fill", "quiz"] as const)
         : (["listen", "recall", "fill", "builder", "quiz"] as const);
 
@@ -120,6 +123,8 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
           <LessonCompleteResults
             sessionId={state.sessionId}
             lessonId={state.lessonId}
+            unitId={state.unitId}
+            mode={state.mode}
             attempts={state.attempts}
             wordQueue={state.wordQueue}
             dispatch={dispatch}
@@ -142,7 +147,7 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       if (ex === "quiz") return <ExerciseQuickQuiz words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
     }
     if (state.id === "lesson-complete") {
-      return <LessonCompleteResults sessionId={state.sessionId} lessonId={state.lessonId} attempts={state.attempts} wordQueue={state.wordQueue} dispatch={dispatch} />;
+      return <LessonCompleteResults sessionId={state.sessionId} lessonId={state.lessonId} unitId={state.unitId} mode={state.mode} attempts={state.attempts} wordQueue={state.wordQueue} dispatch={dispatch} />;
     }
     return null;
   }

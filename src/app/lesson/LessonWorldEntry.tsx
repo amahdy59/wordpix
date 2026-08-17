@@ -3,7 +3,7 @@ import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { BackButton } from "../shared/BackButton";
-import { ArrowRight, BookOpen, Layers, CheckCircle2 } from "lucide-react";
+import { ArrowRight, BookOpen, Layers, CheckCircle2, GraduationCap } from "lucide-react";
 import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/lessons";
 import { useProgress } from "../data/progress";
 
@@ -26,7 +26,22 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
 
   const handleStartGroup = (gId: string) => {
     const group = world.groups.find((g) => g.id === gId) ?? world.groups[0];
-    dispatch({ type: "START_LESSON", lessonId: group.id, mode: "NEW_LESSON", wordQueue: group.wordIds });
+    dispatch({ type: "START_LESSON", lessonId: group.id, unitId: world.id, mode: "NEW_LESSON", wordQueue: group.wordIds });
+  };
+
+  const handleTakeAssessment = () => {
+    // Select up to 20 random words from the unit
+    const allWordIds = world.vocabulary.map(v => v.id);
+    const shuffled = [...allWordIds].sort(() => 0.5 - Math.random());
+    const selected = shuffled.slice(0, 20);
+    
+    dispatch({ 
+      type: "START_LESSON", 
+      lessonId: world.groups[0].id, // fallback lessonId
+      unitId: world.id, 
+      mode: "UNIT_ASSESSMENT", 
+      wordQueue: selected 
+    });
   };
 
   return (
@@ -59,9 +74,30 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
           <h2 className="font-sans font-black text-foreground text-3xl leading-tight">
             Select a Word Group
           </h2>
-          <p className="font-sans text-muted-foreground text-sm max-w-md mt-1">
+          <p className="font-sans text-muted-foreground text-sm max-w-md mt-1 mb-4">
             Follow the learning path. Each group teaches a set of related vocabulary words across interactive exercises.
           </p>
+
+          <button
+            type="button"
+            onClick={handleTakeAssessment}
+            className="group min-h-[60px] relative overflow-hidden rounded-2xl border-2 border-primary/20 bg-primary/5 p-4 text-start transition-all duration-300 hover:border-primary/50 hover:bg-primary/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+          >
+            <div className="flex items-start sm:items-center gap-4">
+              <div className="size-12 rounded-xl bg-primary/20 text-primary flex items-center justify-center shrink-0">
+                <GraduationCap className="size-6" />
+              </div>
+              <div>
+                <p className="font-sans font-bold text-lg text-primary leading-tight">
+                  Test out of this unit
+                </p>
+                <p className="font-sans text-muted-foreground text-sm mt-1">
+                  Already know these words? Pass a 20-word test to skip ahead.
+                </p>
+              </div>
+            </div>
+            <ArrowRight className="size-5 text-primary shrink-0 transition-transform group-hover:translate-x-1" />
+          </button>
         </div>
 
         {/* Timeline container */}
