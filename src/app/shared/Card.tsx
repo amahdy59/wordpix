@@ -1,4 +1,5 @@
 import { memo } from "react";
+import { motion } from "framer-motion";
 
 interface Props {
   children: React.ReactNode;
@@ -25,9 +26,11 @@ export const Card = memo(function Card({ children, variant = "default", classNam
   return (
     <>
       {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
-      <div 
+      <motion.div 
         className={`${baseStyles} ${variantStyles} ${interactiveStyles} ${className}`}
         onClick={onClick}
+        whileHover={onClick ? { scale: 1.015, y: -2 } : {}}
+        whileTap={onClick ? { scale: 0.98 } : {}}
         role={onClick ? "button" : undefined}
         tabIndex={onClick ? 0 : undefined}
         onKeyDown={onClick ? (e) => {
@@ -38,7 +41,7 @@ export const Card = memo(function Card({ children, variant = "default", classNam
         } : undefined}
       >
         {children}
-      </div>
+      </motion.div>
     </>
   );
 });

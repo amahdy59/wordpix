@@ -1,11 +1,13 @@
 import { memo, useMemo, useState } from "react";
 import { Flame, Sparkles, BookOpen, ShieldCheck, Target, Brain, Sliders, Moon, Sun, User as UserIcon, LogOut } from "lucide-react";
+import { motion } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { SettingsModal } from "./SettingsModal";
 import { useTheme } from "../shared/ThemeToggle";
 import { useAuth } from "../context/AuthContext";
 import { AuthModal } from "../../features/auth/AuthModal";
+import { staggerContainer, staggerItem } from "../shared/animations";
 
 const imgAvatar = "/images/core/learner-avatar.webp";
 
@@ -53,13 +55,18 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
   ];
 
   return (
-    <div className="flex flex-col gap-6 max-w-3xl mx-auto w-full p-5 md:p-8 pb-8">
+    <motion.div 
+      variants={staggerContainer}
+      initial="hidden"
+      animate="visible"
+      className="flex flex-col gap-6 max-w-3xl mx-auto w-full p-5 md:p-8 pb-8"
+    >
       <SettingsModal isOpen={showSettingsModal} onClose={() => setShowSettingsModal(false)} />
       {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
 
       {/* Profile header with Settings Button */}
       <header className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
+        <motion.div variants={staggerItem} className="flex flex-col md:flex-row items-center md:items-start gap-4">
           <div className="relative size-20 md:size-24 shrink-0 rounded-full overflow-hidden border-[3px] border-primary shadow-wp-xs">
             <img
               alt="Profile avatar"
@@ -78,11 +85,13 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
               </span>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Quick Settings & Theme Action Bar */}
-        <div className="flex flex-wrap items-center gap-2.5">
-          <button
+        <motion.div variants={staggerItem} className="flex flex-wrap items-center gap-2.5">
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.95 }}
             type="button"
             onClick={toggleTheme}
             aria-label={`Theme: ${theme}. Activate to change theme.`}
@@ -94,56 +103,63 @@ export const ProfileStats = memo(function ProfileStats({ dispatch: _dispatch }: 
               <Moon className="size-4 text-wp-blue" aria-hidden />
             )}
             <span className="capitalize">{theme}</span>
-          </button>
-          <button
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.95 }}
             type="button"
             onClick={() => setShowSettingsModal(true)}
             className="p-3 min-h-[44px] rounded-2xl bg-wp-card border border-border text-foreground hover:bg-muted transition-colors shadow-wp-xs flex items-center gap-2 font-sans font-bold text-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <Sliders className="size-4 text-muted-foreground" />
             <span>Settings</span>
-          </button>
+          </motion.button>
 
           {user ? (
-            <button
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.95 }}
               type="button"
               onClick={signOut}
               className="px-4 min-h-[44px] rounded-2xl bg-primary/10 text-primary font-sans font-bold text-xs flex items-center gap-2 shadow-wp-xs hover:bg-primary/20 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               <LogOut className="size-4" />
               <span className="hidden md:inline">{user.email}</span>
-            </button>
+            </motion.button>
           ) : (
-            <button
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.95 }}
               type="button"
               onClick={() => setShowAuthModal(true)}
               className="px-4 min-h-[44px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-xs flex items-center gap-2 shadow-wp-xs hover:opacity-90 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               <UserIcon className="size-4" />
               <span>Sign In / Sync</span>
-            </button>
+            </motion.button>
           )}
-        </div>
+        </motion.div>
       </header>
 
       {/* Stats grid */}
-      <section aria-label="Genuine memory statistics">
+      <motion.section variants={staggerItem} aria-label="Genuine memory statistics">
         <h2 className="font-sans font-bold text-foreground text-lg mb-3">Adaptive Memory &amp; Retention Measures</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
           {STATS.map(({ value, label, icon: Icon, color }) => (
-            <div
+            <motion.div
+              whileHover={{ scale: 1.03, y: -2 }}
               key={label}
-              className="bg-wp-card rounded-2xl border border-border p-3.5 flex flex-col items-center gap-1.5 text-center shadow-wp-xs"
+              className="bg-wp-card rounded-2xl border border-border p-3.5 flex flex-col items-center gap-1.5 text-center shadow-wp-xs transition-colors"
             >
               <div className="size-9 rounded-xl bg-secondary flex items-center justify-center">
                 <Icon className={`size-4 ${color}`} />
               </div>
               <p className="font-sans font-black text-foreground text-xl leading-none mt-0.5">{value}</p>
               <p className="font-sans font-medium text-muted-foreground text-xs text-center leading-tight">{label}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
-      </section>
-    </div>
+      </motion.section>
+    </motion.div>
   );
 });

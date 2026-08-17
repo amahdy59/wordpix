@@ -1,5 +1,6 @@
 import { memo, useMemo } from "react";
 import { ArrowRight, RotateCcw, WifiOff } from "lucide-react";
+import { motion } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { nextGroupToStudy, resolveUnitForLesson } from "../data/lessons";
@@ -9,6 +10,7 @@ import { useI18n } from "../context/I18nContext";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { PageContainer, Section, Card, Badge } from "../shared";
 import { ReleaseNotesCard } from "./ReleaseNotesCard";
+import { staggerContainer, staggerItem } from "../shared/animations";
 
 const imgAvatar = "/images/core/learner-avatar.webp";
 
@@ -85,77 +87,83 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         )}
       </header>
 
-      {/*
-        The skill-exercise hub used to be promoted here *and* on Explore, above
-        the lesson itself in both places — so the loudest thing on the home
-        screen was a 35-item catalogue rather than the one lesson the learner
-        was part-way through. It now lives in one place, under Practice.
-      */}
-
       {/* Main Content (Single Centered Column for maximum clarity) */}
-      <div className="flex flex-col gap-6 max-w-2xl mx-auto w-full mt-4">
+      <motion.div 
+        variants={staggerContainer}
+        initial="hidden"
+        animate="visible"
+        className="flex flex-col gap-6 max-w-2xl mx-auto w-full mt-4"
+      >
         {/* SECTION 1: TODAY */}
-        <Section id="section-today" title={t("dashboard.today")}>
-          <Card variant="primary">
-            <div className="flex items-center justify-between">
-              <span className="font-sans font-semibold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full">
-                {activeUnit.name} · ~{num(estimatedMinutes)} min
-              </span>
-              <span className="font-sans text-xs font-bold text-muted-foreground">
-                {num(lessonWordsSeen)} of {num(activeLesson.wordIds.length)} words
-              </span>
-            </div>
+        <motion.div variants={staggerItem}>
+          <Section id="section-today" title={t("dashboard.today")}>
+            <Card variant="primary">
+              <div className="flex items-center justify-between">
+                <span className="font-sans font-semibold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full">
+                  {activeUnit.name} · ~{num(estimatedMinutes)} min
+                </span>
+                <span className="font-sans text-xs font-bold text-muted-foreground">
+                  {num(lessonWordsSeen)} of {num(activeLesson.wordIds.length)} words
+                </span>
+              </div>
 
-            <div>
-              <h2 className="font-sans font-black text-foreground text-2xl lg:text-3xl mt-4">
-                {activeLesson.name}
-              </h2>
-              <p className="font-sans text-muted-foreground text-sm mt-1 leading-relaxed">
-                {activeLesson.description}
-              </p>
-            </div>
+              <div>
+                <h2 className="font-sans font-black text-foreground text-2xl lg:text-3xl mt-4">
+                  {activeLesson.name}
+                </h2>
+                <p className="font-sans text-muted-foreground text-sm mt-1 leading-relaxed">
+                  {activeLesson.description}
+                </p>
+              </div>
 
-            <button
-              type="button"
-              onClick={() =>
-                dispatch({
-                  type: "START_LESSON",
-                  lessonId: activeLesson.id,
-                  mode: "NEW_LESSON",
-                  wordQueue: activeLesson.wordIds,
-                })
-              }
-              className="w-full bg-primary hover:opacity-90 active:opacity-80 rounded-2xl py-4 font-sans font-black text-primary-foreground text-lg min-h-[56px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-md transition-all flex items-center justify-center gap-2 mt-4"
-            >
-              <span>{t("dashboard.continueSession")}</span>
-              <ArrowRight className="size-5" />
-            </button>
-          </Card>
-        </Section>
+              <motion.button
+                whileHover={{ scale: 1.015 }}
+                whileTap={{ scale: 0.98 }}
+                type="button"
+                onClick={() =>
+                  dispatch({
+                    type: "START_LESSON",
+                    lessonId: activeLesson.id,
+                    mode: "NEW_LESSON",
+                    wordQueue: activeLesson.wordIds,
+                  })
+                }
+                className="w-full bg-primary hover:opacity-90 active:opacity-80 rounded-2xl py-4 font-sans font-black text-primary-foreground text-lg min-h-[56px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-md transition-colors flex items-center justify-center gap-2 mt-4"
+              >
+                <span>{t("dashboard.continueSession")}</span>
+                <ArrowRight className="size-5" />
+              </motion.button>
+            </Card>
+          </Section>
+        </motion.div>
 
         {/* SECTION 2: REVIEW */}
-        <Section id="section-review" title={t("dashboard.review")}>
-          <Card variant="default">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2 text-foreground font-sans font-bold text-sm">
-                <RotateCcw className="size-4 text-primary" />
-                <span>Smart Review</span>
+        <motion.div variants={staggerItem}>
+          <Section id="section-review" title={t("dashboard.review")}>
+            <Card variant="default">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2 text-foreground font-sans font-bold text-sm">
+                  <RotateCcw className="size-4 text-primary" />
+                  <span>Smart Review</span>
+                </div>
               </div>
-            </div>
-            <p className="font-sans text-muted-foreground text-xs leading-relaxed mt-2">
-              Review words scheduled for memory retention before decay occurs.
-            </p>
-            <button
-              type="button"
-              onClick={() => dispatch({ type: "GO", to: "practice" })}
-              className="w-full bg-secondary hover:bg-primary/10 text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-sm min-h-[44px] transition-all flex items-center justify-center gap-2 mt-4"
-            >
-              <span>{t("dashboard.startReview")}</span>
-              <ArrowRight className="size-4" />
-            </button>
-          </Card>
-        </Section>
-      </div>
+              <p className="font-sans text-muted-foreground text-xs leading-relaxed mt-2">
+                Review words scheduled for memory retention before decay occurs.
+              </p>
+              <motion.button
+                whileHover={{ scale: 1.015 }}
+                whileTap={{ scale: 0.98 }}
+                type="button"
+                onClick={() => dispatch({ type: "GO", to: "practice" })}
+                className="w-full bg-secondary hover:bg-primary/10 text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-sm min-h-[44px] transition-colors flex items-center justify-center gap-2 mt-4"
+              >
+                <span>{t("dashboard.startReview")}</span>
+                <ArrowRight className="size-4" />
+              </motion.button>
+            </Card>
+          </Section>
+        </motion.div>
+      </motion.div>
     </PageContainer>
   );
 });

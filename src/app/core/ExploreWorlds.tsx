@@ -1,9 +1,11 @@
 import { memo } from "react";
 import { Lock, Compass, ArrowRight, Sparkles, BookOpen } from "lucide-react";
+import { motion } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { COURSE_UNITS } from "../data/lessons";
 import { Badge, ProgressBar } from "../shared";
+import { staggerContainer, staggerItem } from "../shared/animations";
 
 const imgBathroom = "/images/core/bathroom-scene.webp";
 
@@ -19,9 +21,14 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
   const activeWorlds = Object.values(COURSE_UNITS);
 
   return (
-    <div className="flex flex-col gap-6 max-w-3xl mx-auto w-full p-5 lg:p-8">
+    <motion.div 
+      variants={staggerContainer}
+      initial="hidden"
+      animate="visible"
+      className="flex flex-col gap-6 max-w-3xl mx-auto w-full p-5 lg:p-8"
+    >
       {/* Page header */}
-      <header className="flex flex-col gap-1">
+      <motion.header variants={staggerItem} className="flex flex-col gap-1">
         <div className="flex items-center gap-2 text-primary">
           <Compass className="size-5" />
           <span className="font-sans font-bold text-xs uppercase tracking-wider">Learning Path</span>
@@ -32,23 +39,16 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
         <p className="font-sans font-medium text-muted-foreground text-sm">
           Master every unit and lesson in our flagship course before advancing.
         </p>
-      </header>
+      </motion.header>
 
-      {/* The skill-exercise hub banner used to sit here, above the world it was
-          meant to support, duplicating the identical card on Home. Explore is
-          for worlds; the hub is reached from Practice. */}
-
-      {/* Active World Card(s) — one per registered world; only "bedroom" is
-          real today, so this renders exactly as it used to, but a second
-          registered world would get a real card here instead of a code
-          change. */}
+      {/* Active World Card(s) */}
       {activeWorlds.map((world) => {
         const wordsPracticedCount = world.vocabulary.filter((w) => (progress.wordMastery[w.id] || 0) >= 3).length;
         const totalWords = world.vocabulary.length;
         const progressPercent = Math.round((wordsPracticedCount / totalWords) * 100);
 
         return (
-          <section aria-label={`Active Unit: ${world.name}`} key={world.id}>
+          <motion.section variants={staggerItem} aria-label={`Active Unit: ${world.name}`} key={world.id}>
             <div className="bg-wp-card rounded-3xl border-2 border-primary/40 p-6 flex flex-col lg:flex-row gap-6 shadow-wp-md relative overflow-hidden">
               <div className="absolute -top-12 -end-12 size-48 rounded-full bg-primary/10 blur-2xl pointer-events-none" />
 
@@ -92,23 +92,25 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                 />
 
                 {/* Start CTA */}
-                <button
+                <motion.button
+                  whileHover={{ scale: 1.015 }}
+                  whileTap={{ scale: 0.98 }}
                   type="button"
                   onClick={() => dispatch({ type: "GO", to: "lesson-entry", unitId: world.id })}
-                  className="w-full sm:w-auto bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 px-6 font-sans font-bold text-wp-text-on-blue text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-all flex items-center justify-center gap-2 self-start mt-2 min-h-[48px]"
+                  className="w-full sm:w-auto bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3.5 px-6 font-sans font-bold text-wp-text-on-blue text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-colors flex items-center justify-center gap-2 self-start mt-2 min-h-[48px]"
                 >
                   <BookOpen className="size-4" />
                   <span>Enter Unit: {world.name}</span>
                   <ArrowRight className="size-4" />
-                </button>
+                </motion.button>
               </div>
             </div>
-          </section>
+          </motion.section>
         );
       })}
 
       {/* Upcoming Expansion Preview Section */}
-      <section aria-label="Upcoming Worlds" className="flex flex-col gap-3 mt-4">
+      <motion.section variants={staggerItem} aria-label="Upcoming Worlds" className="flex flex-col gap-3 mt-4">
         <div className="flex items-center gap-2 text-muted-foreground">
           <Lock className="size-4" />
           <h3 className="font-sans font-bold text-foreground text-base">Upcoming Expansion Units</h3>
@@ -134,10 +136,8 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
               </Badge>
             </div>
           </div>
-
-
         </div>
-      </section>
-    </div>
+      </motion.section>
+    </motion.div>
   );
 });

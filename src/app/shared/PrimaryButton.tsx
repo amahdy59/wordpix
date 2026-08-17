@@ -33,8 +33,8 @@ export const PrimaryButton = memo(function PrimaryButton({
       type={type}
       disabled={disabled}
       onClick={onClick}
-      whileTap={!disabled ? { scale: 0.98 } : {}}
-      transition={{ duration: 0.1 }}
+      whileHover={!disabled ? { scale: 1.015 } : {}}
+      whileTap={!disabled ? { scale: 0.96 } : {}}
       className={`${colorClass} content-stretch flex h-[56px] items-center justify-center relative rounded-xl shrink-0 w-full active:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 disabled:opacity-40 disabled:cursor-not-allowed shadow-wp-xs`}
     >
       <span className="wp-type-body-emphasis text-current font-bold">
