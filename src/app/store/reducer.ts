@@ -41,15 +41,28 @@ export function reducer(state: Screen, action: Action): Screen {
     return { id: "learn-words", lessonId: action.lessonId };
   }
   if (action.type === "START_LESSON") {
-    const queue =
+    let queue =
       action.wordQueue && action.wordQueue.length > 0
         ? action.wordQueue
         : resolveGroup(action.lessonId).wordIds;
+
+    const mode = action.mode || "NEW_LESSON";
+
+    if (mode === "PRE_LESSON_ASSESSMENT") {
+      // Generate a 20-word queue by duplicating and shuffling the base queue
+      const shuffled = [];
+      while (shuffled.length < 20) {
+        const pool = [...queue].sort(() => Math.random() - 0.5);
+        shuffled.push(...pool);
+      }
+      queue = shuffled.slice(0, 20);
+    }
+
     const sessionId = "sess_" + Date.now() + "_" + Math.random().toString(36).slice(2, 7);
 
     return {
       id: "lesson",
-      mode: action.mode || "NEW_LESSON",
+      mode,
       sessionId,
       lessonId: action.lessonId,
       unitId: action.unitId,
@@ -77,7 +90,7 @@ export function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "LESSON_NEXT") {
     if (state.id !== "lesson") return state;
-    if (state.step >= 4) {
+    if (state.step >= 5) {
       return {
         id: "lesson-complete",
         mode: state.mode,

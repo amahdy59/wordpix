@@ -29,8 +29,8 @@ import { RICH_CONTEXT_SENTENCES } from "../exercises/exerciseContent";
 /** The four words the broken build always fell back to. */
 const REGRESSION_WORDS = ["bed", "nightstand", "dresser", "wardrobe"];
 
-/** Five drills. */
-const LESSON_STEP_COUNT = 5;
+/** Six drills (including story). */
+const LESSON_STEP_COUNT = 6;
 
 describe("a lesson teaches the group it was started for", () => {
   it.each(BEDROOM_GROUPS.map((g) => [g.id, g.name] as const))(

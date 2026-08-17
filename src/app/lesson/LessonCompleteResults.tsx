@@ -39,7 +39,8 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   const isMastered = accuracy >= 80 && attempts.length > 0;
 
   const isAssessment = mode === "UNIT_ASSESSMENT";
-  const assessmentPassed = isAssessment && accuracy === 100 && attempts.length === wordQueue.length;
+  const isPreLessonAssessment = mode === "PRE_LESSON_ASSESSMENT";
+  const assessmentPassed = (isAssessment || isPreLessonAssessment) && accuracy === 100 && attempts.length === wordQueue.length;
 
   useEffect(() => {
     if (isAssessment) {
@@ -51,19 +52,23 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
           recordUnitAssessmentCompletion(true, allWordIds);
         }
       }
-      // If failed, we could also record the session normally to grant XP, but for an assessment, let's just record it as a normal session so they still get XP for what they got right.
+      recordSessionCompletion(sessionId, attempts, wordQueue);
+    } else if (isPreLessonAssessment) {
+      if (assessmentPassed) {
+        // Instantly master the words in this group
+        recordUnitAssessmentCompletion(true, group.wordIds);
+      }
       recordSessionCompletion(sessionId, attempts, wordQueue);
     } else {
       recordSessionCompletion(sessionId, attempts, wordQueue);
     }
     
-    if (isAssessment && !assessmentPassed) {
-      // Play a different sound if they fail the assessment?
-      // playIncorrect(); // Maybe not, just no level up sound
+    if ((isAssessment || isPreLessonAssessment) && !assessmentPassed) {
+      // Did not pass the assessment
     } else {
       playLevelUp();
     }
-  }, [sessionId, attempts, wordQueue, recordSessionCompletion, recordUnitAssessmentCompletion, playLevelUp, isAssessment, assessmentPassed, unitId]);
+  }, [sessionId, attempts, wordQueue, recordSessionCompletion, recordUnitAssessmentCompletion, playLevelUp, isAssessment, isPreLessonAssessment, assessmentPassed, unitId, group.wordIds]);
 
   // Read the credited amount back out of the ledger rather than recomputing it.
   // This screen used to run its own `correct * 10`, which was a fourth

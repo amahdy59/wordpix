@@ -37,6 +37,7 @@ export interface Lesson {
   topicId: string;
   wordIds: string[];
   description: string;
+  story?: string;
 }
 
 /**
@@ -79,7 +80,8 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "wardrobe",
       "desk",
     ],
-    description: "Learn about furniture 1."
+    description: "Learn about furniture 1.",
+    story: 'When moving into the new bedroom, the heavy bed was placed first. Next to it went the small nightstand for a lamp. The tall dresser was moved near the wall, while the large wardrobe held all the hanging clothes. Finally, a sturdy desk was added in the corner for studying.'
   },
   {
     id: "furniture-2",
@@ -92,7 +94,8 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "stool",
       "chest-of-drawers",
     ],
-    description: "Learn about furniture 2."
+    description: "Learn about furniture 2.",
+    story: 'Sarah sat on her comfortable chair by the window. She organized her favorite novels on the wooden bookshelf. Glancing at the shiny mirror on the wall, she decided to pull up a small stool to reach the top shelf of the old chest-of-drawers.'
   },
   {
     id: "bedding-linen-1",
@@ -105,7 +108,8 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "mattress",
       "duvet",
     ],
-    description: "Learn about bedding & linen 1."
+    description: "Learn about bedding & linen 1.",
+    story: 'Before sleeping, he fluffed his soft pillow and pulled up the warm blanket. The fresh, crisp sheet felt wonderful after a long day. The thick duvet kept the winter chill away, and the patterned bedspread added a pop of color to the room.'
   },
   {
     id: "bedding-linen-2",
@@ -118,7 +122,8 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "bed-frame",
       "headboard",
     ],
-    description: "Learn about bedding & linen 2."
+    description: "Learn about bedding & linen 2.",
+    story: 'She washed the pillowcase along with the rest of the laundry. The new mattress was incredibly supportive, and the soft mattress-pad made it even cozier. She draped a decorative throw-blanket over the edge and added a fluffy cushion for extra comfort.'
   },
   {
     id: "room-features-1",
@@ -131,7 +136,8 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "door",
       "rug",
     ],
-    description: "Learn about room features 1."
+    description: "Learn about room features 1.",
+    story: 'Sunlight streamed through the open window, warming the wooden floor. The thick door was closed for privacy. A bright light illuminated the space, reflecting off the white wall.'
   },
   {
     id: "room-features-2",
@@ -144,7 +150,8 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "blinds",
       "outlet",
     ],
-    description: "Learn about room features 2."
+    description: "Learn about room features 2.",
+    story: 'The smooth ceiling was painted white to make the room look taller. A small rug covered the center of the room. The cozy carpet was soft underfoot, and the closed curtain kept the streetlights out at night. He reached for the switch to turn off the overhead light.'
   },
   {
     id: "bedroom-objects-1",
@@ -157,7 +164,8 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "plant",
       "vase",
     ],
-    description: "Learn about bedroom objects 1."
+    description: "Learn about bedroom objects 1.",
+    story: 'In the Bedroom Objects 1 lesson, we learned about some very useful things. For example, we saw the alarm-clock and the picture-frame. We also explored how the clock works. Finally, we looked at the plant and the vase to complete our understanding.'
   },
   {
     id: "bedroom-objects-2",
@@ -170,7 +178,8 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "wastebasket",
       "hanger",
     ],
-    description: "Learn about bedroom objects 2."
+    description: "Learn about bedroom objects 2.",
+    story: 'In the Bedroom Objects 2 lesson, we learned about some very useful things. For example, we saw the candle and the calendar. We also explored how the tissue-box works. Finally, we looked at the wastebasket and the hanger to complete our understanding.'
   },
   {
     id: "personal-items-1",
@@ -183,7 +192,8 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "teddy-bear",
       "poster",
     ],
-    description: "Learn about personal items 1."
+    description: "Learn about personal items 1.",
+    story: 'He tossed his heavy backpack onto the floor. The new clothes were neatly folded. A warm sweater was left on the chair, next to a clean shirt and a pair of blue jeans.'
   },
   {
     id: "personal-items-2",
@@ -196,7 +206,8 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "backpack",
       "jewelry-box",
     ],
-    description: "Learn about personal items 2."
+    description: "Learn about personal items 2.",
+    story: 'His left shoe was missing, so he checked under the bed. He found a clean sock and a warm jacket hanging in the closet. His winter coat was draped over a chair, next to a comfortable hat.'
   },
   {
     id: "electronics-1",
@@ -209,7 +220,8 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "headphones",
       "tablet",
     ],
-    description: "Learn about electronics 1."
+    description: "Learn about electronics 1.",
+    story: 'The television was turned on to watch the morning news. His laptop was charging on the desk. He answered the ringing phone while listening to the radio and adjusting his loud alarm.'
   },
   {
     id: "electronics-2",
@@ -222,7 +234,8 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "phone",
       "charger",
     ],
-    description: "Learn about electronics 2."
+    description: "Learn about electronics 2.",
+    story: 'He plugged his charger into the wall socket. The small fan kept the room cool during the summer. A bright lightbulb illuminated the desk, and he left his tablet next to his favorite video-game.'
   },
 ];
 
@@ -727,7 +740,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "microwave",
       "dishwasher",
     ],
-    description: "Learn about large appliances 1."
+    description: "Learn about large appliances 1.",
+    story: 'In the Large Appliances lesson, we learned about some very useful things. For example, we saw the refrigerator and the stove. We also explored how the oven works. Finally, we looked at the microwave and the dishwasher to complete our understanding.'
   },
   {
     id: "large-appliances-2",
@@ -740,7 +754,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "coffee-maker",
       "freezer",
     ],
-    description: "Learn about large appliances 2."
+    description: "Learn about large appliances 2.",
+    story: 'In the Large Appliances 2 lesson, we learned about some very useful things. For example, we saw the toaster and the blender. We also explored how the kettle works. Finally, we looked at the coffee-maker and the freezer to complete our understanding.'
   },
   {
     id: "cookware-1",
@@ -753,7 +768,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "baking-tray",
       "saucepan",
     ],
-    description: "Learn about cookware 1."
+    description: "Learn about cookware 1.",
+    story: 'She placed the heavy pot on the stove to boil water. A large pan was perfect for frying eggs, while a deep saucepan held the simmering tomato sauce. The curved wok was ready for a quick stir-fry, and the iron skillet gave the steak a perfect sear.'
   },
   {
     id: "cookware-2",
@@ -766,7 +782,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "steamer",
       "pressure-cooker",
     ],
-    description: "Learn about cookware 2."
+    description: "Learn about cookware 2.",
+    story: 'The deep baking-dish was filled with a rich lasagna. Cookies were arranged on the flat baking-tray before entering the oven. She used a round cake-pan for the birthday dessert, a versatile roasting-pan for the Sunday chicken, and a large casserole-dish for the family dinner.'
   },
   {
     id: "utensils-tools-1",
@@ -779,7 +796,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "spatula",
       "ladle",
     ],
-    description: "Learn about utensils tools 1."
+    description: "Learn about utensils tools 1.",
+    story: 'In the Utensils Tools 1 lesson, we learned about some very useful things. For example, we saw the fork and the knife. We also explored how the spoon works. Finally, we looked at the spatula and the ladle to complete our understanding.'
   },
   {
     id: "utensils-tools-2",
@@ -792,7 +810,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "grater",
       "rolling-pin",
     ],
-    description: "Learn about utensils tools 2."
+    description: "Learn about utensils tools 2.",
+    story: 'In the Utensils Tools 2 lesson, we learned about some very useful things. For example, we saw the whisk and the tongs. We also explored how the peeler works. Finally, we looked at the grater and the rolling-pin to complete our understanding.'
   },
   {
     id: "utensils-tools-3",
@@ -802,7 +821,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "can-opener",
       "corkscrew",
     ],
-    description: "Learn about utensils tools 3."
+    description: "Learn about utensils tools 3.",
+    story: 'In the Utensils Tools 3 lesson, we learned about some very useful things. For example, we saw the can-opener and the corkscrew. We also explored how the undefined works. Finally, we looked at the undefined and the undefined to complete our understanding.'
   },
   {
     id: "dishes-containers-1",
@@ -815,7 +835,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "glass",
       "cup",
     ],
-    description: "Learn about dishes containers 1."
+    description: "Learn about dishes containers 1.",
+    story: 'In the Dishes Containers 1 lesson, we learned about some very useful things. For example, we saw the plate and the bowl. We also explored how the mug works. Finally, we looked at the glass and the cup to complete our understanding.'
   },
   {
     id: "dishes-containers-2",
@@ -828,7 +849,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "measuring-cup",
       "measuring-spoon",
     ],
-    description: "Learn about dishes containers 2."
+    description: "Learn about dishes containers 2.",
+    story: 'In the Dishes Containers 2 lesson, we learned about some very useful things. For example, we saw the saucer and the cutting-board. We also explored how the colander works. Finally, we looked at the measuring-cup and the measuring-spoon to complete our understanding.'
   },
   {
     id: "dishes-containers-3",
@@ -838,7 +860,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "mixing-bowl",
       "pitcher",
     ],
-    description: "Learn about dishes containers 3."
+    description: "Learn about dishes containers 3.",
+    story: 'In the Dishes Containers 3 lesson, we learned about some very useful things. For example, we saw the mixing-bowl and the pitcher. We also explored how the undefined works. Finally, we looked at the undefined and the undefined to complete our understanding.'
   },
   {
     id: "kitchen-items-1",
@@ -851,7 +874,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "trash-can",
       "paper-towel",
     ],
-    description: "Learn about kitchen items 1."
+    description: "Learn about kitchen items 1.",
+    story: 'In the Kitchen Items 1 lesson, we learned about some very useful things. For example, we saw the dish-towel and the oven-mitt. We also explored how the apron works. Finally, we looked at the trash-can and the paper-towel to complete our understanding.'
   },
   {
     id: "kitchen-items-2",
@@ -864,7 +888,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "sponge",
       "dish-soap",
     ],
-    description: "Learn about kitchen items 2."
+    description: "Learn about kitchen items 2.",
+    story: 'In the Kitchen Items 2 lesson, we learned about some very useful things. For example, we saw the plastic-wrap and the aluminum-foil. We also explored how the food-container works. Finally, we looked at the sponge and the dish-soap to complete our understanding.'
   },
   {
     id: "kitchen-items-3",
@@ -874,7 +899,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "dish-rack",
       "cling-film",
     ],
-    description: "Learn about kitchen items 3."
+    description: "Learn about kitchen items 3.",
+    story: 'In the Kitchen Items 3 lesson, we learned about some very useful things. For example, we saw the dish-rack and the cling-film. We also explored how the undefined works. Finally, we looked at the undefined and the undefined to complete our understanding.'
   },
   {
     id: "basic-pantry-1",
@@ -887,7 +913,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "egg",
       "cheese",
     ],
-    description: "Learn about basic pantry 1."
+    description: "Learn about basic pantry 1.",
+    story: 'In the Basic Pantry 1 lesson, we learned about some very useful things. For example, we saw the bread and the butter. We also explored how the milk works. Finally, we looked at the egg and the cheese to complete our understanding.'
   },
   {
     id: "basic-pantry-2",
@@ -900,7 +927,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "salt",
       "sugar",
     ],
-    description: "Learn about basic pantry 2."
+    description: "Learn about basic pantry 2.",
+    story: 'In the Basic Pantry 2 lesson, we learned about some very useful things. For example, we saw the rice and the pasta. We also explored how the cooking-oil works. Finally, we looked at the salt and the sugar to complete our understanding.'
   },
   {
     id: "basic-pantry-3",
@@ -912,7 +940,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "vinegar",
       "honey",
     ],
-    description: "Learn about basic pantry 3."
+    description: "Learn about basic pantry 3.",
+    story: 'In the Basic Pantry 3 lesson, we learned about some very useful things. For example, we saw the pepper and the flour. We also explored how the vinegar works. Finally, we looked at the honey and the undefined to complete our understanding.'
   },
 ];
 
@@ -1537,6 +1566,7 @@ export const LIVING_ROOM_GROUPS: Lesson[] = [
     name: "Storage & Display",
     topicId: "storage-display",
     description: "Learn vocabulary related to storage & display.",
+    story: 'In the Seating & Tables lesson, we learned about some very useful things. For example, we saw the sofa and the armchair. We also explored how the coffee-table works. Finally, we looked at the side-table and the ottoman to complete our understanding.',
     wordIds: [
       "bookshelf",
       "tv-stand",
@@ -1573,6 +1603,7 @@ export const LIVING_ROOM_GROUPS: Lesson[] = [
     name: "Lighting & Decor",
     topicId: "lighting-decor",
     description: "Learn vocabulary related to lighting & decor.",
+    story: 'In the Electronics & Media lesson, we learned about some very useful things. For example, we saw the television and the remote-control. We also explored how the speaker works. Finally, we looked at the game-console and the dvd-player to complete our understanding.',
     wordIds: [
       "floor-lamp",
       "table-lamp",
@@ -1609,6 +1640,7 @@ export const LIVING_ROOM_GROUPS: Lesson[] = [
     name: "Living Room Objects",
     topicId: "living-room-objects",
     description: "Learn vocabulary related to living room objects.",
+    story: 'In the Soft & Furnishings lesson, we learned about some very useful things. For example, we saw the cushion and the throw-blanket. We also explored how the rug works. Finally, we looked at the carpet and the curtain to complete our understanding.',
     wordIds: [
       "plant",
       "vase",
@@ -2551,77 +2583,88 @@ export const FARM_GROUPS: Lesson[] = [
     name: 'Farm Animals 1',
     topicId: 'farm-farm-animals',
     wordIds: ['cow', 'pig', 'sheep', 'chicken', 'horse'],
-    description: 'Learn about farm animals 1.'
+    description: 'Learn about farm animals 1.',
+    story: 'The farmer milked the cow early in the morning while the muddy pig rolled in the pen. A fluffy sheep grazed peacefully in the meadow. A loud chicken pecked at the ground, and a fast horse galloped across the open field.'
   },
   {
     id: 'farm-farm-animals-2',
     name: 'Farm Animals 2',
     topicId: 'farm-farm-animals',
     wordIds: ['goat', 'duck', 'rooster', 'turkey', 'donkey'],
-    description: 'Learn about farm animals 2.'
+    description: 'Learn about farm animals 2.',
+    story: 'A curious goat chewed on the wooden fence. The white duck swam across the pond, followed by a proud rooster that crowed loudly. A large turkey strutted proudly near the barn, and a stubborn donkey refused to move.'
   },
   {
     id: 'farm-farm-animals-3',
     name: 'Farm Animals 3',
     topicId: 'farm-farm-animals',
     wordIds: ['rabbit', 'goose'],
-    description: 'Learn about farm animals 3.'
+    description: 'Learn about farm animals 3.',
+    story: 'A quick rabbit hopped past the vegetable garden. The white goose chased away the stray dog that wandered too close to the nest.'
   },
   {
     id: 'farm-farm-buildings-1',
     name: 'Farm Buildings 1',
     topicId: 'farm-farm-buildings',
     wordIds: ['barn', 'farmhouse', 'stable', 'hen-house', 'silo'],
-    description: 'Learn about farm buildings 1.'
+    description: 'Learn about farm buildings 1.',
+    story: 'The animals slept safely in the large red barn. The farmer\'s family lived in the cozy farmhouse nearby. The horses were kept warm in the stable, the hens laid eggs in the hen-house, and the tall silo stored all the winter grain.'
   },
   {
     id: 'farm-farm-buildings-2',
     name: 'Farm Buildings 2',
     topicId: 'farm-farm-buildings',
     wordIds: ['greenhouse', 'shed', 'windmill', 'well', 'fence'],
-    description: 'Learn about farm buildings 2.'
+    description: 'Learn about farm buildings 2.',
+    story: 'Delicate plants thrived inside the warm greenhouse. Tools were locked safely in the wooden shed. The spinning windmill pumped water from the deep well, and a sturdy fence kept the animals from wandering away.'
   },
   {
     id: 'farm-farm-equipment-1',
     name: 'Farm Equipment 1',
     topicId: 'farm-farm-equipment',
     wordIds: ['tractor', 'plow', 'trailer', 'wheelbarrow', 'pitchfork'],
-    description: 'Learn about farm equipment 1.'
+    description: 'Learn about farm equipment 1.',
+    story: 'The heavy green tractor rumbled across the field, pulling a sharp plow to turn the soil. A loaded trailer carried the harvest back to the barn. He pushed a full wheelbarrow of dirt and used a pitchfork to move the hay.'
   },
   {
     id: 'farm-farm-equipment-2',
     name: 'Farm Equipment 2',
     topicId: 'farm-farm-equipment',
     wordIds: ['shovel', 'hoe', 'rake', 'bucket', 'watering-can'],
-    description: 'Learn about farm equipment 2.'
+    description: 'Learn about farm equipment 2.',
+    story: 'A sturdy shovel was used to dig the deep holes. She grabbed the hoe to clear the weeds and a rake to gather the fallen leaves. The heavy metal bucket was filled with water from the well using a small watering-can.'
   },
   {
     id: 'farm-farm-products-1',
     name: 'Farm Products 1',
     topicId: 'farm-farm-products',
     wordIds: ['milk', 'egg', 'wool', 'cheese', 'butter'],
-    description: 'Learn about farm products 1.'
+    description: 'Learn about farm products 1.',
+    story: 'Every morning, fresh milk was collected from the cows. The children gathered a brown egg from the coop. Warm wool was sheared from the sheep, then processed to make cheese and churned into creamy butter.'
   },
   {
     id: 'farm-farm-products-2',
     name: 'Farm Products 2',
     topicId: 'farm-farm-products',
     wordIds: ['honey', 'hay', 'straw', 'flour', 'jam'],
-    description: 'Learn about farm products 2.'
+    description: 'Learn about farm products 2.',
+    story: 'Sweet golden honey was harvested from the buzzing hives. The dry hay was stacked high for winter feed. Bundles of straw were used for animal bedding, while fresh flour was milled and sweet fruit jam was preserved in jars.'
   },
   {
     id: 'farm-farm-life-1',
     name: 'Farm Life 1',
     topicId: 'farm-farm-life',
     wordIds: ['farmer', 'scarecrow', 'dog', 'cat', 'pond'],
-    description: 'Learn about farm life 1.'
+    description: 'Learn about farm life 1.',
+    story: 'The hardworking farmer woke up before dawn. A scary scarecrow stood guard in the cornfield. The loyal dog herded the sheep while a sleepy cat napped in the barn. Frogs croaked loudly from the muddy pond.'
   },
   {
     id: 'farm-farm-life-2',
     name: 'Farm Life 2',
     topicId: 'farm-farm-life',
     wordIds: ['mud', 'sunrise', 'sunset', 'rain', 'harvest'],
-    description: 'Learn about farm life 2.'
+    description: 'Learn about farm life 2.',
+    story: 'Thick mud covered the tractor tires after the storm. The beautiful sunrise marked the beginning of a long day, and the colorful sunset signaled time for rest. The heavy rain nourished the crops, ensuring a plentiful harvest.'
   },
 ];
 

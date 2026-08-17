@@ -3,7 +3,7 @@
 export type OnboardStep = "splash" | "language" | "ready";
 export type TabId = "home" | "explore" | "practice" | "profile";
 
-export type LearnerMode = "NEW_LESSON" | "SMART_REVIEW" | "SKILL_PRACTICE" | "UNIT_ASSESSMENT";
+export type LearnerMode = "NEW_LESSON" | "SMART_REVIEW" | "SKILL_PRACTICE" | "UNIT_ASSESSMENT" | "PRE_LESSON_ASSESSMENT";
 export type SkillCategory = "listening" | "reading" | "speaking" | "writing";
 
 export type SkillExerciseId =

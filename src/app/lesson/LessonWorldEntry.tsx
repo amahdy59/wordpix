@@ -142,13 +142,23 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                 >
                   <div className="flex items-start sm:items-center gap-4">
                     <div
-                      className={`hidden sm:flex size-12 rounded-xl items-center justify-center font-sans font-bold text-sm shrink-0 border transition-colors ${
+                      className={`hidden sm:flex size-12 rounded-xl overflow-hidden shrink-0 border transition-colors ${
                         isSelected
-                          ? "bg-primary text-primary-foreground border-primary"
-                          : "bg-muted/50 text-muted-foreground border-border/50"
+                          ? "border-primary"
+                          : "border-border/50 bg-muted/50"
                       }`}
                     >
-                      <Layers className="size-5" />
+                      {(() => {
+                        const firstWordId = g.wordIds[0];
+                        const firstWord = world.vocabulary.find(v => v.id === firstWordId);
+                        return firstWord?.img ? (
+                          <img src={firstWord.img} alt="" className="size-full object-cover" />
+                        ) : (
+                          <div className="size-full flex items-center justify-center text-muted-foreground">
+                            <Layers className="size-5" />
+                          </div>
+                        );
+                      })()}
                     </div>
                     <div>
                       <div className="flex items-center gap-2">
@@ -178,22 +188,37 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
       </main>
 
       {/* Pinned CTA in center layout */}
-      <div className="fixed bottom-0 inset-x-0 pointer-events-none z-50 pb-safe">
-        <div className="max-w-3xl mx-auto px-5 lg:px-8 pb-5 pt-12 bg-gradient-to-t from-background via-background/90 to-transparent flex flex-col pointer-events-auto">
-          <button
-            type="button"
-            onClick={() => handleStartGroup(selectedGroupId)}
-            className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-2xl py-4 font-sans font-bold text-wp-text-on-blue text-lg min-h-[60px]
-              focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
-              shadow-lg shadow-wp-blue/20 transition-all flex items-center justify-center gap-3 transform hover:scale-[1.01] active:scale-[0.99]"
-          >
-            <BookOpen className="size-5" />
-            <span>Start Learning &ldquo;{selectedGroup.name}&rdquo;</span>
-            <ArrowRight className="size-5" />
-          </button>
-          <HomeIndicator />
+        <div className="fixed bottom-0 start-0 end-0 z-40 sm:relative sm:z-auto bg-background/80 backdrop-blur-md sm:bg-transparent sm:backdrop-blur-none border-t border-border sm:border-none">
+          <div className="max-w-3xl mx-auto px-5 lg:px-8 pb-5 pt-12 bg-gradient-to-t from-background via-background/90 to-transparent flex flex-col gap-3 pointer-events-auto">
+            <button
+              type="button"
+              onClick={() => handleStartGroup(selectedGroupId)}
+              className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-2xl py-4 font-sans font-bold text-wp-text-on-blue text-lg min-h-[60px]
+                focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
+                shadow-lg shadow-wp-blue/20 transition-all flex items-center justify-center gap-3 transform hover:scale-[1.01] active:scale-[0.99]"
+            >
+              <BookOpen className="size-5" />
+              <span>Start Learning &ldquo;{selectedGroup.name}&rdquo;</span>
+              <ArrowRight className="size-5" />
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                dispatch({ 
+                  type: "START_LESSON", 
+                  lessonId: selectedGroupId, 
+                  unitId: world.id, 
+                  mode: "PRE_LESSON_ASSESSMENT" 
+                });
+              }}
+              className="w-full bg-secondary hover:bg-primary/10 text-primary border border-primary/20 rounded-2xl py-3 font-sans font-bold text-sm min-h-[50px] transition-all flex items-center justify-center gap-2"
+            >
+              <GraduationCap className="size-4" />
+              <span>Test Out (Pre-lesson Assessment)</span>
+            </button>
+            <HomeIndicator />
+          </div>
         </div>
-      </div>
     </div>
   );
 });

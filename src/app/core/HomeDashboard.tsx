@@ -8,6 +8,7 @@ import { useOfflineReadiness } from "../shared/useOfflineReadiness";
 import { useI18n } from "../context/I18nContext";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { PageContainer, Section, Card, Badge } from "../shared";
+import { ReleaseNotesCard } from "./ReleaseNotesCard";
 
 const imgAvatar = "/images/core/learner-avatar.webp";
 
@@ -47,6 +48,8 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
 
   return (
     <PageContainer>
+      <ReleaseNotesCard />
+
       {/* Top Learner Greeting */}
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-3.5">

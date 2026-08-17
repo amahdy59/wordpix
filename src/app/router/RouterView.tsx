@@ -45,10 +45,13 @@ const ExerciseSentenceBuilder = lazy(() =>
 const ExerciseQuickQuiz = lazy(() =>
   import("../exercises/ExerciseQuickQuiz").then((m) => ({ default: m.ExerciseQuickQuiz }))
 );
+const ExerciseStory = lazy(() =>
+  import("../exercises/ExerciseStory").then((m) => ({ default: m.ExerciseStory }))
+);
 
 import { SKILL_EXERCISES } from "../exercises/registry";
 
-type ExStep = "listen" | "recall" | "fill" | "builder" | "quiz";
+type ExStep = "listen" | "recall" | "fill" | "builder" | "quiz" | "story";
 
 const LoadingFallback = () => {
   const { t } = useI18n();
@@ -110,13 +113,13 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       const isBeginner =
         learnerState.preferences.englishLevel === "A1" ||
         learnerState.preferences.englishLevel === "A2";
-      const isAssessment = state.mode === "UNIT_ASSESSMENT";
+      const isAssessment = state.mode === "UNIT_ASSESSMENT" || state.mode === "PRE_LESSON_ASSESSMENT";
 
       const exSequence = isAssessment
         ? (["quiz"] as const)
         : isBeginner
-        ? (["listen", "recall", "fill", "quiz"] as const)
-        : (["listen", "recall", "fill", "builder", "quiz"] as const);
+        ? (["listen", "recall", "fill", "quiz", "story"] as const)
+        : (["listen", "recall", "fill", "builder", "quiz", "story"] as const);
 
       if (state.step >= exSequence.length) {
         return (
@@ -145,6 +148,7 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       if (ex === "fill") return <ExerciseContextFill words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
       if (ex === "builder") return <ExerciseSentenceBuilder words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
       if (ex === "quiz") return <ExerciseQuickQuiz words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
+      if (ex === "story") return <ExerciseStory words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
     }
     if (state.id === "lesson-complete") {
       return <LessonCompleteResults sessionId={state.sessionId} lessonId={state.lessonId} unitId={state.unitId} mode={state.mode} attempts={state.attempts} wordQueue={state.wordQueue} dispatch={dispatch} />;
