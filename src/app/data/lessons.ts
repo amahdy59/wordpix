@@ -2098,8 +2098,8 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   },
 ];
 
-export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
-  'cow': {
+export const FARM_VOCABULARY: VocabularyItem[] = [
+  {
     id: 'cow',
     label: 'Cow',
     phonetic: '',
@@ -2107,7 +2107,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
-  'pig': {
+  {
     id: 'pig',
     label: 'Pig',
     phonetic: '',
@@ -2115,7 +2115,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
-  'sheep': {
+  {
     id: 'sheep',
     label: 'Sheep',
     phonetic: '',
@@ -2123,7 +2123,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
-  'chicken': {
+  {
     id: 'chicken',
     label: 'Chicken',
     phonetic: '',
@@ -2131,7 +2131,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
-  'horse': {
+  {
     id: 'horse',
     label: 'Horse',
     phonetic: '',
@@ -2139,7 +2139,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
-  'goat': {
+  {
     id: 'goat',
     label: 'Goat',
     phonetic: '',
@@ -2147,7 +2147,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
-  'duck': {
+  {
     id: 'duck',
     label: 'Duck',
     phonetic: '',
@@ -2155,7 +2155,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
-  'rooster': {
+  {
     id: 'rooster',
     label: 'Rooster',
     phonetic: '',
@@ -2163,7 +2163,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
-  'turkey': {
+  {
     id: 'turkey',
     label: 'Turkey',
     phonetic: '',
@@ -2171,7 +2171,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
-  'donkey': {
+  {
     id: 'donkey',
     label: 'Donkey',
     phonetic: '',
@@ -2179,7 +2179,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
-  'rabbit': {
+  {
     id: 'rabbit',
     label: 'Rabbit',
     phonetic: '',
@@ -2187,7 +2187,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
-  'goose': {
+  {
     id: 'goose',
     label: 'Goose',
     phonetic: '',
@@ -2195,7 +2195,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
-  'barn': {
+  {
     id: 'barn',
     label: 'Barn',
     phonetic: '',
@@ -2203,7 +2203,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
-  'farmhouse': {
+  {
     id: 'farmhouse',
     label: 'Farmhouse',
     phonetic: '',
@@ -2211,7 +2211,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
-  'stable': {
+  {
     id: 'stable',
     label: 'Stable',
     phonetic: '',
@@ -2219,7 +2219,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
-  'hen-house': {
+  {
     id: 'hen-house',
     label: 'Hen House',
     phonetic: '',
@@ -2227,7 +2227,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
-  'silo': {
+  {
     id: 'silo',
     label: 'Silo',
     phonetic: '',
@@ -2235,7 +2235,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
-  'greenhouse': {
+  {
     id: 'greenhouse',
     label: 'Greenhouse',
     phonetic: '',
@@ -2243,7 +2243,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
-  'shed': {
+  {
     id: 'shed',
     label: 'Shed',
     phonetic: '',
@@ -2251,7 +2251,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
-  'windmill': {
+  {
     id: 'windmill',
     label: 'Windmill',
     phonetic: '',
@@ -2259,7 +2259,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
-  'well': {
+  {
     id: 'well',
     label: 'Well',
     phonetic: '',
@@ -2267,7 +2267,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
-  'fence': {
+  {
     id: 'fence',
     label: 'Fence',
     phonetic: '',
@@ -2275,7 +2275,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
-  'tractor': {
+  {
     id: 'tractor',
     label: 'Tractor',
     phonetic: '',
@@ -2283,7 +2283,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
-  'plow': {
+  {
     id: 'plow',
     label: 'Plow',
     phonetic: '',
@@ -2291,7 +2291,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
-  'trailer': {
+  {
     id: 'trailer',
     label: 'Trailer',
     phonetic: '',
@@ -2299,7 +2299,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
-  'wheelbarrow': {
+  {
     id: 'wheelbarrow',
     label: 'Wheelbarrow',
     phonetic: '',
@@ -2307,7 +2307,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
-  'pitchfork': {
+  {
     id: 'pitchfork',
     label: 'Pitchfork',
     phonetic: '',
@@ -2315,7 +2315,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
-  'shovel': {
+  {
     id: 'shovel',
     label: 'Shovel',
     phonetic: '',
@@ -2323,7 +2323,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
-  'hoe': {
+  {
     id: 'hoe',
     label: 'Hoe',
     phonetic: '',
@@ -2331,7 +2331,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
-  'rake': {
+  {
     id: 'rake',
     label: 'Rake',
     phonetic: '',
@@ -2339,7 +2339,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
-  'bucket': {
+  {
     id: 'bucket',
     label: 'Bucket',
     phonetic: '',
@@ -2347,7 +2347,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
-  'watering-can': {
+  {
     id: 'watering-can',
     label: 'Watering Can',
     phonetic: '',
@@ -2355,7 +2355,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
-  'milk': {
+  {
     id: 'milk',
     label: 'Milk',
     phonetic: '',
@@ -2363,7 +2363,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
-  'egg': {
+  {
     id: 'egg',
     label: 'Egg',
     phonetic: '',
@@ -2371,7 +2371,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
-  'wool': {
+  {
     id: 'wool',
     label: 'Wool',
     phonetic: '',
@@ -2379,7 +2379,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
-  'cheese': {
+  {
     id: 'cheese',
     label: 'Cheese',
     phonetic: '',
@@ -2387,7 +2387,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
-  'butter': {
+  {
     id: 'butter',
     label: 'Butter',
     phonetic: '',
@@ -2395,7 +2395,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
-  'honey': {
+  {
     id: 'honey',
     label: 'Honey',
     phonetic: '',
@@ -2403,7 +2403,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
-  'hay': {
+  {
     id: 'hay',
     label: 'Hay',
     phonetic: '',
@@ -2411,7 +2411,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
-  'straw': {
+  {
     id: 'straw',
     label: 'Straw',
     phonetic: '',
@@ -2419,7 +2419,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
-  'flour': {
+  {
     id: 'flour',
     label: 'Flour',
     phonetic: '',
@@ -2427,7 +2427,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
-  'jam': {
+  {
     id: 'jam',
     label: 'Jam',
     phonetic: '',
@@ -2435,7 +2435,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
-  'farmer': {
+  {
     id: 'farmer',
     label: 'Farmer',
     phonetic: '',
@@ -2443,7 +2443,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
-  'scarecrow': {
+  {
     id: 'scarecrow',
     label: 'Scarecrow',
     phonetic: '',
@@ -2451,7 +2451,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
-  'dog': {
+  {
     id: 'dog',
     label: 'Dog',
     phonetic: '',
@@ -2459,7 +2459,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
-  'cat': {
+  {
     id: 'cat',
     label: 'Cat',
     phonetic: '',
@@ -2467,7 +2467,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
-  'pond': {
+  {
     id: 'pond',
     label: 'Pond',
     phonetic: '',
@@ -2475,7 +2475,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
-  'mud': {
+  {
     id: 'mud',
     label: 'Mud',
     phonetic: '',
@@ -2483,7 +2483,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
-  'sunrise': {
+  {
     id: 'sunrise',
     label: 'Sunrise',
     phonetic: '',
@@ -2491,7 +2491,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
-  'sunset': {
+  {
     id: 'sunset',
     label: 'Sunset',
     phonetic: '',
@@ -2499,7 +2499,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
-  'rain': {
+  {
     id: 'rain',
     label: 'Rain',
     phonetic: '',
@@ -2507,7 +2507,7 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
-  'harvest': {
+  {
     id: 'harvest',
     label: 'Harvest',
     phonetic: '',
@@ -2515,35 +2515,35 @@ export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
-};
+];
 
-export const FARM_TOPICS: Record<string, TopicCategory> = {
-  'farm-farm-animals': {
+export const FARM_TOPICS: TopicCategory[] = [
+  {
     id: 'farm-farm-animals',
     name: 'Farm Animals',
     itemsCount: 12
   },
-  'farm-farm-buildings': {
+  {
     id: 'farm-farm-buildings',
     name: 'Farm Buildings',
     itemsCount: 10
   },
-  'farm-farm-equipment': {
+  {
     id: 'farm-farm-equipment',
     name: 'Farm Equipment',
     itemsCount: 10
   },
-  'farm-farm-products': {
+  {
     id: 'farm-farm-products',
     name: 'Farm Products',
     itemsCount: 10
   },
-  'farm-farm-life': {
+  {
     id: 'farm-farm-life',
     name: 'Farm Life',
     itemsCount: 10
   },
-};
+];
 
 export const FARM_GROUPS: Lesson[] = [
   {
@@ -2650,10 +2650,19 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
     id: "living-room",
     name: "The Living Room",
     description: "Explore real-life living room furniture and electronics through 2D scene discovery, audio practice, recall matching, and sentence building.",
-    heroImage: `${LOCAL_SCENE_IMAGES}/kitchen-scene.webp`, // Reusing image since we don't have a hero image for living room yet
+    heroImage: `${LOCAL_SCENE_IMAGES}/living-room-hero.webp`,
     topics: LIVING_ROOM_TOPICS,
     groups: LIVING_ROOM_GROUPS,
     vocabulary: LIVING_ROOM_VOCABULARY,
+  },
+  farm: {
+    id: "farm",
+    name: "The Farm",
+    description: "Explore real-life farm animals, tools, and elements through 2D scene discovery, audio practice, recall matching, and sentence building.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/farm-hero.webp`,
+    topics: FARM_TOPICS,
+    groups: FARM_GROUPS,
+    vocabulary: FARM_VOCABULARY,
   },
 };
 
