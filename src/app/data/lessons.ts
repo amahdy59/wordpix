@@ -123,7 +123,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "bed",
     label: "Bed",
-    phonetic: "bed",
+    phonetic: "bɛd",
     topic: "furniture",
     description: "A large rectangular platform with a soft top, where a person lies down to sleep.",
     img: `${LOCAL_WORD_IMAGES}/bed.webp`,
@@ -131,7 +131,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "nightstand",
     label: "Nightstand",
-    phonetic: "nightstand",
+    phonetic: "ˈnaɪtˌstænd",
     topic: "furniture",
     description: "A small low table beside the place you sleep, holding a lamp or a book.",
     img: `${LOCAL_WORD_IMAGES}/nightstand.webp`,
@@ -139,7 +139,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "dresser",
     label: "Dresser",
-    phonetic: "dresser",
+    phonetic: "ˈdɹɛsɚ",
     topic: "furniture",
     description: "A wide, low piece of furniture with several sliding compartments for folded clothes.",
     img: `${LOCAL_WORD_IMAGES}/dresser.webp`,
@@ -147,7 +147,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "wardrobe",
     label: "Wardrobe",
-    phonetic: "wardrobe",
+    phonetic: " ˈwɔːdɹəʊb",
     topic: "furniture",
     description: "A tall cupboard with doors, where clothes hang from a rail inside.",
     img: `${LOCAL_WORD_IMAGES}/wardrobe.webp`,
@@ -155,7 +155,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "desk",
     label: "Desk",
-    phonetic: "desk",
+    phonetic: "dɛsk",
     topic: "furniture",
     description: "A flat work surface on legs, where you sit to write or use a computer.",
     img: `${LOCAL_WORD_IMAGES}/desk.webp`,
@@ -163,7 +163,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "chair",
     label: "Chair",
-    phonetic: "chair",
+    phonetic: "tʃɛɹ",
     topic: "furniture",
     description: "A single seat with a back and four legs, for one person.",
     img: `${LOCAL_WORD_IMAGES}/chair.webp`,
@@ -171,7 +171,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "bookshelf",
     label: "Bookshelf",
-    phonetic: "bookshelf",
+    phonetic: "ˈbʊkˌʃɛlf",
     topic: "furniture",
     description: "An upright frame of horizontal boards for storing reading material.",
     img: `${LOCAL_WORD_IMAGES}/bookshelf.webp`,
@@ -179,7 +179,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "mirror",
     label: "Mirror",
-    phonetic: "mirror",
+    phonetic: "ˈmɘ.ɹɘ",
     topic: "furniture",
     description: "A flat glass panel that shows your own reflection.",
     img: `${LOCAL_WORD_IMAGES}/mirror.webp`,
@@ -187,7 +187,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "stool",
     label: "Stool",
-    phonetic: "stool",
+    phonetic: "stul",
     topic: "furniture",
     description: "A small backless seat raised on three or four legs.",
     img: `${LOCAL_WORD_IMAGES}/stool.webp`,
@@ -195,7 +195,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "chest-of-drawers",
     label: "Chest Of Drawers",
-    phonetic: "chest of drawers",
+    phonetic: "tʃɛst ʌv dɹɔɹz",
     topic: "furniture",
     description: "A tall, narrow tower of stacked sliding compartments for storing clothes.",
     img: `${LOCAL_WORD_IMAGES}/chest-of-drawers.webp`,
@@ -203,7 +203,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "pillow",
     label: "Pillow",
-    phonetic: "pillow",
+    phonetic: "ˈpɪloʊ",
     topic: "bedding",
     description: "A soft rectangular pad that supports your head while you sleep.",
     img: `${LOCAL_WORD_IMAGES}/pillow.webp`,
@@ -211,7 +211,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "blanket",
     label: "Blanket",
-    phonetic: "blanket",
+    phonetic: "ˈblæŋkɪt",
     topic: "bedding",
     description: "A thick woven cover, often wool, laid over you for warmth.",
     img: `${LOCAL_WORD_IMAGES}/blanket.webp`,
@@ -219,7 +219,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "sheet",
     label: "Sheet",
-    phonetic: "sheet",
+    phonetic: "ʃiːt",
     topic: "bedding",
     description: "A large, thin, flat piece of fabric that lies directly against your skin.",
     img: `${LOCAL_WORD_IMAGES}/sheet.webp`,
@@ -227,7 +227,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "mattress",
     label: "Mattress",
-    phonetic: "mattress",
+    phonetic: "ˈmætɹəs",
     topic: "bedding",
     description: "The thick padded slab you lie directly on top of.",
     img: `${LOCAL_WORD_IMAGES}/mattress.webp`,
@@ -235,7 +235,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "duvet",
     label: "Duvet",
-    phonetic: "duvet",
+    phonetic: "ˈduːveɪ",
     topic: "bedding",
     description: "A soft filled bag stuffed with feathers, used as a single thick top cover.",
     img: `${LOCAL_WORD_IMAGES}/duvet.webp`,
@@ -243,7 +243,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "pillowcase",
     label: "Pillowcase",
-    phonetic: "pillowcase",
+    phonetic: "ˈpɪloʊˌkeɪs",
     topic: "bedding",
     description: "A fabric sleeve that slips over the soft pad under your head.",
     img: `${LOCAL_WORD_IMAGES}/pillowcase.webp`,
@@ -251,7 +251,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "comforter",
     label: "Comforter",
-    phonetic: "comforter",
+    phonetic: "ˈkʌmfɚtɚ",
     topic: "bedding",
     description: "A thick fluffy top cover, stitched into sections, needing no separate cover.",
     img: `${LOCAL_WORD_IMAGES}/comforter.webp`,
@@ -259,7 +259,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "cushion",
     label: "Cushion",
-    phonetic: "cushion",
+    phonetic: "ˈkʊʃən",
     topic: "bedding",
     description: "A small soft square pad for sitting on or leaning against.",
     img: `${LOCAL_WORD_IMAGES}/cushion.webp`,
@@ -267,7 +267,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "bed-frame",
     label: "Bed Frame",
-    phonetic: "bed frame",
+    phonetic: "bɛd fɹeɪm",
     topic: "bedding",
     description: "The wooden or metal structure that holds a mattress up off the floor.",
     img: `${LOCAL_WORD_IMAGES}/bed-frame.webp`,
@@ -275,7 +275,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "headboard",
     label: "Headboard",
-    phonetic: "headboard",
+    phonetic: "ˈhɛdˌbɔɹd",
     topic: "bedding",
     description: "The upright panel at the top end of a sleeping platform, behind your head.",
     img: `${LOCAL_WORD_IMAGES}/headboard.webp`,
@@ -283,7 +283,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "lamp",
     label: "Lamp",
-    phonetic: "lamp",
+    phonetic: "læmp",
     topic: "features",
     description: "A small light on a base that stands on a table.",
     img: `${LOCAL_WORD_IMAGES}/lamp.webp`,
@@ -291,7 +291,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "curtain",
     label: "Curtain",
-    phonetic: "curtain",
+    phonetic: "ˈkɝtən",
     topic: "features",
     description: "A long piece of hanging fabric drawn across a window at night.",
     img: `${LOCAL_WORD_IMAGES}/curtain.webp`,
@@ -299,7 +299,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "window",
     label: "Window",
-    phonetic: "window",
+    phonetic: "ˈwɪndəʊ",
     topic: "features",
     description: "A glass opening in the wall that lets daylight into the room.",
     img: `${LOCAL_WORD_IMAGES}/window.webp`,
@@ -307,7 +307,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "door",
     label: "Door",
-    phonetic: "door",
+    phonetic: "dɔː",
     topic: "features",
     description: "A hinged panel you open to enter or leave a room.",
     img: `${LOCAL_WORD_IMAGES}/door.webp`,
@@ -315,7 +315,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "rug",
     label: "Rug",
-    phonetic: "rug",
+    phonetic: "ɹʌɡ",
     topic: "features",
     description: "A small soft floor covering that lies loose on top of the floor.",
     img: `${LOCAL_WORD_IMAGES}/rug.webp`,
@@ -323,7 +323,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "carpet",
     label: "Carpet",
-    phonetic: "carpet",
+    phonetic: "ˈkɑː(ɹ)pɪt",
     topic: "features",
     description: "A soft floor covering fixed down permanently, reaching from wall to wall.",
     img: `${LOCAL_WORD_IMAGES}/carpet.webp`,
@@ -331,7 +331,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "ceiling-light",
     label: "Ceiling Light",
-    phonetic: "ceiling light",
+    phonetic: "ˈsilɪŋ laɪt",
     topic: "features",
     description: "A fixture mounted overhead that brightens the whole room from above.",
     img: `${LOCAL_WORD_IMAGES}/ceiling-light.webp`,
@@ -339,7 +339,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "light-switch",
     label: "Light Switch",
-    phonetic: "light switch",
+    phonetic: "laɪt swɪtʃ",
     topic: "features",
     description: "A small plate on the wall you press to make the room bright or dark.",
     img: `${LOCAL_WORD_IMAGES}/light-switch.webp`,
@@ -347,7 +347,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "blinds",
     label: "Blinds",
-    phonetic: "blinds",
+    phonetic: "blaɪndz",
     topic: "features",
     description: "Horizontal slats across a window that tilt to control the daylight.",
     img: `${LOCAL_WORD_IMAGES}/blinds.webp`,
@@ -355,7 +355,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "outlet",
     label: "Outlet",
-    phonetic: "outlet",
+    phonetic: "ˈaʊtlət",
     topic: "features",
     description: "A small socket in the wall where you plug in electrical devices.",
     img: `${LOCAL_WORD_IMAGES}/outlet.webp`,
@@ -363,7 +363,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "alarm-clock",
     label: "Alarm Clock",
-    phonetic: "alarm clock",
+    phonetic: "əˈlɑːm klɒk",
     topic: "objects",
     description: "A small bedside device that shows the time and wakes you with a sound.",
     img: `${LOCAL_WORD_IMAGES}/alarm-clock.webp`,
@@ -371,7 +371,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "picture-frame",
     label: "Picture Frame",
-    phonetic: "picture frame",
+    phonetic: "ˈpɪktʃɚ fɹeɪm",
     topic: "objects",
     description: "A decorative border that holds a photograph upright on a surface.",
     img: `${LOCAL_WORD_IMAGES}/picture-frame.webp`,
@@ -379,7 +379,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "clock",
     label: "Clock",
-    phonetic: "clock",
+    phonetic: "klɒk",
     topic: "objects",
     description: "A round face with moving hands that shows the time.",
     img: `${LOCAL_WORD_IMAGES}/clock.webp`,
@@ -387,7 +387,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "plant",
     label: "Plant",
-    phonetic: "plant",
+    phonetic: "plænt",
     topic: "objects",
     description: "A living green thing growing in a pot of soil.",
     img: `${LOCAL_WORD_IMAGES}/plant.webp`,
@@ -395,7 +395,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "vase",
     label: "Vase",
-    phonetic: "vase",
+    phonetic: "veɪs",
     topic: "objects",
     description: "A tall narrow container that holds cut flowers in water.",
     img: `${LOCAL_WORD_IMAGES}/vase.webp`,
@@ -403,7 +403,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "candle",
     label: "Candle",
-    phonetic: "candle",
+    phonetic: "ˈkændl̩",
     topic: "objects",
     description: "A wax cylinder with a wick that gives light when it burns.",
     img: `${LOCAL_WORD_IMAGES}/candle.webp`,
@@ -411,7 +411,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "calendar",
     label: "Calendar",
-    phonetic: "calendar",
+    phonetic: "ˈkæləndɚ",
     topic: "objects",
     description: "A grid of numbered days used to keep track of dates.",
     img: `${LOCAL_WORD_IMAGES}/calendar.webp`,
@@ -419,7 +419,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "tissue-box",
     label: "Tissue Box",
-    phonetic: "tissue box",
+    phonetic: "ˈtɪʃu bɑks",
     topic: "objects",
     description: "A small carton that dispenses soft disposable paper, one sheet at a time.",
     img: `${LOCAL_WORD_IMAGES}/tissue-box.webp`,
@@ -427,7 +427,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "wastebasket",
     label: "Wastebasket",
-    phonetic: "wastebasket",
+    phonetic: "ˈweɪstˌbæskɪt",
     topic: "objects",
     description: "A small open container for discarding paper and light trash.",
     img: `${LOCAL_WORD_IMAGES}/wastebasket.webp`,
@@ -435,7 +435,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "hanger",
     label: "Hanger",
-    phonetic: "hanger",
+    phonetic: "ˈhæŋɚ",
     topic: "objects",
     description: "A shaped hook that keeps a shirt or coat suspended in a cupboard.",
     img: `${LOCAL_WORD_IMAGES}/hanger.webp`,
@@ -443,7 +443,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "pajamas",
     label: "Pajamas",
-    phonetic: "pajamas",
+    phonetic: "pəˈdʒɑməz",
     topic: "personal",
     description: "Soft, loose two-piece clothing worn only for sleeping.",
     img: `${LOCAL_WORD_IMAGES}/pajamas.webp`,
@@ -451,7 +451,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "slippers",
     label: "Slippers",
-    phonetic: "slippers",
+    phonetic: "ˈslɪpɚz",
     topic: "personal",
     description: "Soft indoor shoes you slide your feet into without fastening.",
     img: `${LOCAL_WORD_IMAGES}/slippers.webp`,
@@ -459,7 +459,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "robe",
     label: "Robe",
-    phonetic: "robe",
+    phonetic: "ɹoʊb",
     topic: "personal",
     description: "A loose belted garment worn over sleepwear, often after a bath.",
     img: `${LOCAL_WORD_IMAGES}/robe.webp`,
@@ -467,7 +467,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "teddy-bear",
     label: "Teddy Bear",
-    phonetic: "teddy bear",
+    phonetic: "ˈtɛdi bɛɹ",
     topic: "personal",
     description: "A soft, stuffed toy animal shaped like a small cub.",
     img: `${LOCAL_WORD_IMAGES}/teddy-bear.webp`,
@@ -475,7 +475,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "poster",
     label: "Poster",
-    phonetic: "poster",
+    phonetic: "ˈpoʊstɚ",
     topic: "personal",
     description: "A large printed sheet fixed flat against a wall for decoration.",
     img: `${LOCAL_WORD_IMAGES}/poster.webp`,
@@ -483,7 +483,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "books",
     label: "Books",
-    phonetic: "books",
+    phonetic: "bʊks",
     topic: "personal",
     description: "Bound stacks of printed pages that you read.",
     img: `${LOCAL_WORD_IMAGES}/books.webp`,
@@ -491,7 +491,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "photo-album",
     label: "Photo Album",
-    phonetic: "photo album",
+    phonetic: "ˈfoʊˌtoʊ ˈælbəm",
     topic: "personal",
     description: "A bound book of pages holding printed family pictures behind plastic.",
     img: `${LOCAL_WORD_IMAGES}/photo-album.webp`,
@@ -499,7 +499,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "glasses",
     label: "Glasses",
-    phonetic: "glasses",
+    phonetic: "ˈglæsəz",
     topic: "personal",
     description: "Two lenses held in a frame, worn on the face to see clearly.",
     img: `${LOCAL_WORD_IMAGES}/glasses.webp`,
@@ -507,7 +507,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "backpack",
     label: "Backpack",
-    phonetic: "backpack",
+    phonetic: "ˈbækˌpæk",
     topic: "personal",
     description: "A bag with two shoulder straps, carried on your back.",
     img: `${LOCAL_WORD_IMAGES}/backpack.webp`,
@@ -515,7 +515,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "jewelry-box",
     label: "Jewelry Box",
-    phonetic: "jewelry box",
+    phonetic: "ˈdʒuəlɹi bɑks",
     topic: "personal",
     description: "A small decorative container for storing rings, necklaces, and valuables.",
     img: `${LOCAL_WORD_IMAGES}/jewelry-box.webp`,
@@ -523,7 +523,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "phone",
     label: "Phone",
-    phonetic: "phone",
+    phonetic: "foʊn",
     topic: "electronics",
     description: "A small handheld device used for calls and messages.",
     img: `${LOCAL_WORD_IMAGES}/phone.webp`,
@@ -531,7 +531,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "charger",
     label: "Charger",
-    phonetic: "charger",
+    phonetic: "ˈtʃɑɹdʒɚ",
     topic: "electronics",
     description: "A cable and plug that restores battery power to a device.",
     img: `${LOCAL_WORD_IMAGES}/charger.webp`,
@@ -539,7 +539,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "laptop",
     label: "Laptop",
-    phonetic: "laptop",
+    phonetic: "ˈlæpˌtɑp",
     topic: "electronics",
     description: "A portable computer that folds shut like a book.",
     img: `${LOCAL_WORD_IMAGES}/laptop.webp`,
@@ -547,7 +547,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "headphones",
     label: "Headphones",
-    phonetic: "headphones",
+    phonetic: "ˈhɛdˌfoʊnz",
     topic: "electronics",
     description: "Two padded cups joined by a band, worn over the ears.",
     img: `${LOCAL_WORD_IMAGES}/headphones.webp`,
@@ -555,7 +555,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "tablet",
     label: "Tablet",
-    phonetic: "tablet",
+    phonetic: "ˈtæblət",
     topic: "electronics",
     description: "A flat touchscreen slab, larger than a handheld, with no keyboard.",
     img: `${LOCAL_WORD_IMAGES}/tablet.webp`,
@@ -563,7 +563,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "speaker",
     label: "Speaker",
-    phonetic: "speaker",
+    phonetic: "ˈspikɚ",
     topic: "electronics",
     description: "A box that plays sound out loud into the room.",
     img: `${LOCAL_WORD_IMAGES}/speaker.webp`,
@@ -571,7 +571,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "reading-light",
     label: "Reading Light",
-    phonetic: "reading light",
+    phonetic: "ˈɹɛdɪŋ laɪt",
     topic: "electronics",
     description: "A small adjustable lamp on a flexible arm, aimed down at a page.",
     img: `${LOCAL_WORD_IMAGES}/reading-light.webp`,
@@ -579,7 +579,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "remote-control",
     label: "Remote Control",
-    phonetic: "remote control",
+    phonetic: "ɹɪˈmoʊt kənˈtɹoʊl",
     topic: "electronics",
     description: "A handheld bar of buttons that operates a device from across the room.",
     img: `${LOCAL_WORD_IMAGES}/remote-control.webp`,
@@ -663,7 +663,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "refrigerator",
     label: "Refrigerator",
-    phonetic: "refrigerator", // Using label as phonetic placeholder
+    phonetic: "ɹɪˈfɹɪdʒəˌɹeɪtɚ", // Using label as phonetic placeholder
     topic: "large-appliances",
     description: "A kitchen item known as refrigerator.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/refrigerator.webp`,
@@ -671,7 +671,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "stove",
     label: "Stove",
-    phonetic: "stove", // Using label as phonetic placeholder
+    phonetic: "stoʊv", // Using label as phonetic placeholder
     topic: "large-appliances",
     description: "A kitchen item known as stove.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/stove.webp`,
@@ -679,7 +679,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "oven",
     label: "Oven",
-    phonetic: "oven", // Using label as phonetic placeholder
+    phonetic: "ˈʌvən", // Using label as phonetic placeholder
     topic: "large-appliances",
     description: "A kitchen item known as oven.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/oven.webp`,
@@ -687,7 +687,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "microwave",
     label: "Microwave",
-    phonetic: "microwave", // Using label as phonetic placeholder
+    phonetic: "ˈmaɪkɹəˌweɪv", // Using label as phonetic placeholder
     topic: "large-appliances",
     description: "A kitchen item known as microwave.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/microwave.webp`,
@@ -695,7 +695,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "dishwasher",
     label: "Dishwasher",
-    phonetic: "dishwasher", // Using label as phonetic placeholder
+    phonetic: "ˈdɪʃˌwɑʃɚ", // Using label as phonetic placeholder
     topic: "large-appliances",
     description: "A kitchen item known as dishwasher.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/dishwasher.webp`,
@@ -703,7 +703,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "toaster",
     label: "Toaster",
-    phonetic: "toaster", // Using label as phonetic placeholder
+    phonetic: "ˈtoʊstɚ", // Using label as phonetic placeholder
     topic: "large-appliances",
     description: "A kitchen item known as toaster.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/toaster.webp`,
@@ -711,7 +711,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "blender",
     label: "Blender",
-    phonetic: "blender", // Using label as phonetic placeholder
+    phonetic: "ˈblɛndɚ", // Using label as phonetic placeholder
     topic: "large-appliances",
     description: "A kitchen item known as blender.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/blender.webp`,
@@ -719,7 +719,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "kettle",
     label: "Kettle",
-    phonetic: "kettle", // Using label as phonetic placeholder
+    phonetic: "ˈkɛtəl", // Using label as phonetic placeholder
     topic: "large-appliances",
     description: "A kitchen item known as kettle.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/kettle.webp`,
@@ -727,7 +727,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "coffee-maker",
     label: "Coffee Maker",
-    phonetic: "coffee maker", // Using label as phonetic placeholder
+    phonetic: "ˈkɑfi ˈmeɪkɚ", // Using label as phonetic placeholder
     topic: "large-appliances",
     description: "A kitchen item known as coffee maker.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/coffee-maker.webp`,
@@ -735,7 +735,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "freezer",
     label: "Freezer",
-    phonetic: "freezer", // Using label as phonetic placeholder
+    phonetic: "ˈfɹizɚ", // Using label as phonetic placeholder
     topic: "large-appliances",
     description: "A kitchen item known as freezer.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/freezer.webp`,
@@ -743,7 +743,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "pot",
     label: "Pot",
-    phonetic: "pot", // Using label as phonetic placeholder
+    phonetic: "pɑt", // Using label as phonetic placeholder
     topic: "cookware",
     description: "A kitchen item known as pot.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/pot.webp`,
@@ -751,7 +751,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "pan",
     label: "Pan",
-    phonetic: "pan", // Using label as phonetic placeholder
+    phonetic: "pæn", // Using label as phonetic placeholder
     topic: "cookware",
     description: "A kitchen item known as pan.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/pan.webp`,
@@ -759,7 +759,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "frying-pan",
     label: "Frying Pan",
-    phonetic: "frying pan", // Using label as phonetic placeholder
+    phonetic: "ˈfɹaɪɪŋ pæn", // Using label as phonetic placeholder
     topic: "cookware",
     description: "A kitchen item known as frying pan.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/frying-pan.webp`,
@@ -767,7 +767,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "baking-tray",
     label: "Baking Tray",
-    phonetic: "baking tray", // Using label as phonetic placeholder
+    phonetic: "ˈbeɪkɪŋ tɹeɪ", // Using label as phonetic placeholder
     topic: "cookware",
     description: "A kitchen item known as baking tray.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/baking-tray.webp`,
@@ -775,7 +775,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "saucepan",
     label: "Saucepan",
-    phonetic: "saucepan", // Using label as phonetic placeholder
+    phonetic: "ˈsɔsˌpæn", // Using label as phonetic placeholder
     topic: "cookware",
     description: "A kitchen item known as saucepan.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/saucepan.webp`,
@@ -783,7 +783,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "wok",
     label: "Wok",
-    phonetic: "wok", // Using label as phonetic placeholder
+    phonetic: "wɑk", // Using label as phonetic placeholder
     topic: "cookware",
     description: "A kitchen item known as wok.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/wok.webp`,
@@ -791,7 +791,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "casserole-dish",
     label: "Casserole Dish",
-    phonetic: "casserole dish", // Using label as phonetic placeholder
+    phonetic: "ˈkæsəˌɹoʊl dɪʃ", // Using label as phonetic placeholder
     topic: "cookware",
     description: "A kitchen item known as casserole dish.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/casserole-dish.webp`,
@@ -799,7 +799,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "baking-dish",
     label: "Baking Dish",
-    phonetic: "baking dish", // Using label as phonetic placeholder
+    phonetic: "ˈbeɪkɪŋ dɪʃ", // Using label as phonetic placeholder
     topic: "cookware",
     description: "A kitchen item known as baking dish.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/baking-dish.webp`,
@@ -807,7 +807,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "steamer",
     label: "Steamer",
-    phonetic: "steamer", // Using label as phonetic placeholder
+    phonetic: "ˈstimɚ", // Using label as phonetic placeholder
     topic: "cookware",
     description: "A kitchen item known as steamer.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/steamer.webp`,
@@ -815,7 +815,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "pressure-cooker",
     label: "Pressure Cooker",
-    phonetic: "pressure cooker", // Using label as phonetic placeholder
+    phonetic: "ˈpɹɛʃɚ ˈkʊkɚ", // Using label as phonetic placeholder
     topic: "cookware",
     description: "A kitchen item known as pressure cooker.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/pressure-cooker.webp`,
@@ -823,7 +823,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "fork",
     label: "Fork",
-    phonetic: "fork", // Using label as phonetic placeholder
+    phonetic: "fɔɹk", // Using label as phonetic placeholder
     topic: "utensils-tools",
     description: "A kitchen item known as fork.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/fork.webp`,
@@ -831,7 +831,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "knife",
     label: "Knife",
-    phonetic: "knife", // Using label as phonetic placeholder
+    phonetic: "naɪf", // Using label as phonetic placeholder
     topic: "utensils-tools",
     description: "A kitchen item known as knife.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/knife.webp`,
@@ -839,7 +839,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "spoon",
     label: "Spoon",
-    phonetic: "spoon", // Using label as phonetic placeholder
+    phonetic: "spun", // Using label as phonetic placeholder
     topic: "utensils-tools",
     description: "A kitchen item known as spoon.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/spoon.webp`,
@@ -847,7 +847,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "spatula",
     label: "Spatula",
-    phonetic: "spatula", // Using label as phonetic placeholder
+    phonetic: "ˈspætʃələ", // Using label as phonetic placeholder
     topic: "utensils-tools",
     description: "A kitchen item known as spatula.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/spatula.webp`,
@@ -855,7 +855,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "ladle",
     label: "Ladle",
-    phonetic: "ladle", // Using label as phonetic placeholder
+    phonetic: "ˈleɪdəl", // Using label as phonetic placeholder
     topic: "utensils-tools",
     description: "A kitchen item known as ladle.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/ladle.webp`,
@@ -863,7 +863,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "whisk",
     label: "Whisk",
-    phonetic: "whisk", // Using label as phonetic placeholder
+    phonetic: "wɪsk", // Using label as phonetic placeholder
     topic: "utensils-tools",
     description: "A kitchen item known as whisk.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/whisk.webp`,
@@ -871,7 +871,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "tongs",
     label: "Tongs",
-    phonetic: "tongs", // Using label as phonetic placeholder
+    phonetic: "tɑŋz", // Using label as phonetic placeholder
     topic: "utensils-tools",
     description: "A kitchen item known as tongs.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/tongs.webp`,
@@ -879,7 +879,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "peeler",
     label: "Peeler",
-    phonetic: "peeler", // Using label as phonetic placeholder
+    phonetic: "ˈpilɚ", // Using label as phonetic placeholder
     topic: "utensils-tools",
     description: "A kitchen item known as peeler.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/peeler.webp`,
@@ -887,7 +887,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "grater",
     label: "Grater",
-    phonetic: "grater", // Using label as phonetic placeholder
+    phonetic: "ˈgɹeɪtɚ", // Using label as phonetic placeholder
     topic: "utensils-tools",
     description: "A kitchen item known as grater.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/grater.webp`,
@@ -895,7 +895,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "rolling-pin",
     label: "Rolling Pin",
-    phonetic: "rolling pin", // Using label as phonetic placeholder
+    phonetic: "ˈɹoʊlɪŋ pɪn", // Using label as phonetic placeholder
     topic: "utensils-tools",
     description: "A kitchen item known as rolling pin.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/rolling-pin.webp`,
@@ -903,7 +903,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "can-opener",
     label: "Can Opener",
-    phonetic: "can opener", // Using label as phonetic placeholder
+    phonetic: "kæn ˈoʊpənɚ", // Using label as phonetic placeholder
     topic: "utensils-tools",
     description: "A kitchen item known as can opener.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/can-opener.webp`,
@@ -911,7 +911,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "corkscrew",
     label: "Corkscrew",
-    phonetic: "corkscrew", // Using label as phonetic placeholder
+    phonetic: "ˈkɔɹkˌskɹu", // Using label as phonetic placeholder
     topic: "utensils-tools",
     description: "A kitchen item known as corkscrew.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/corkscrew.webp`,
@@ -919,7 +919,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "plate",
     label: "Plate",
-    phonetic: "plate", // Using label as phonetic placeholder
+    phonetic: "pleɪt", // Using label as phonetic placeholder
     topic: "dishes-containers",
     description: "A kitchen item known as plate.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/plate.webp`,
@@ -927,7 +927,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "bowl",
     label: "Bowl",
-    phonetic: "bowl", // Using label as phonetic placeholder
+    phonetic: "boʊl", // Using label as phonetic placeholder
     topic: "dishes-containers",
     description: "A kitchen item known as bowl.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/bowl.webp`,
@@ -935,7 +935,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "mug",
     label: "Mug",
-    phonetic: "mug", // Using label as phonetic placeholder
+    phonetic: "mʌg", // Using label as phonetic placeholder
     topic: "dishes-containers",
     description: "A kitchen item known as mug.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/mug.webp`,
@@ -943,7 +943,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "glass",
     label: "Glass",
-    phonetic: "glass", // Using label as phonetic placeholder
+    phonetic: "glæs", // Using label as phonetic placeholder
     topic: "dishes-containers",
     description: "A kitchen item known as glass.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/glass.webp`,
@@ -951,7 +951,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "cup",
     label: "Cup",
-    phonetic: "cup", // Using label as phonetic placeholder
+    phonetic: "kʌp", // Using label as phonetic placeholder
     topic: "dishes-containers",
     description: "A kitchen item known as cup.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/cup.webp`,
@@ -959,7 +959,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "saucer",
     label: "Saucer",
-    phonetic: "saucer", // Using label as phonetic placeholder
+    phonetic: "ˈsɔsɚ", // Using label as phonetic placeholder
     topic: "dishes-containers",
     description: "A kitchen item known as saucer.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/saucer.webp`,
@@ -967,7 +967,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "cutting-board",
     label: "Cutting Board",
-    phonetic: "cutting board", // Using label as phonetic placeholder
+    phonetic: "ˈkʌtɪŋ bɔɹd", // Using label as phonetic placeholder
     topic: "dishes-containers",
     description: "A kitchen item known as cutting board.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/cutting-board.webp`,
@@ -975,7 +975,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "colander",
     label: "Colander",
-    phonetic: "colander", // Using label as phonetic placeholder
+    phonetic: "ˈkɑləndɚ", // Using label as phonetic placeholder
     topic: "dishes-containers",
     description: "A kitchen item known as colander.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/colander.webp`,
@@ -983,7 +983,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "measuring-cup",
     label: "Measuring Cup",
-    phonetic: "measuring cup", // Using label as phonetic placeholder
+    phonetic: "ˈmɛʒɚɪŋ kʌp", // Using label as phonetic placeholder
     topic: "dishes-containers",
     description: "A kitchen item known as measuring cup.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/measuring-cup.webp`,
@@ -991,7 +991,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "measuring-spoon",
     label: "Measuring Spoon",
-    phonetic: "measuring spoon", // Using label as phonetic placeholder
+    phonetic: "ˈmɛʒɚɪŋ spun", // Using label as phonetic placeholder
     topic: "dishes-containers",
     description: "A kitchen item known as measuring spoon.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/measuring-spoon.webp`,
@@ -999,7 +999,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "mixing-bowl",
     label: "Mixing Bowl",
-    phonetic: "mixing bowl", // Using label as phonetic placeholder
+    phonetic: "ˈmɪksɪŋ boʊl", // Using label as phonetic placeholder
     topic: "dishes-containers",
     description: "A kitchen item known as mixing bowl.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/mixing-bowl.webp`,
@@ -1007,7 +1007,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "pitcher",
     label: "Pitcher",
-    phonetic: "pitcher", // Using label as phonetic placeholder
+    phonetic: "ˈpɪtʃɚ", // Using label as phonetic placeholder
     topic: "dishes-containers",
     description: "A kitchen item known as pitcher.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/pitcher.webp`,
@@ -1015,7 +1015,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "dish-towel",
     label: "Dish Towel",
-    phonetic: "dish towel", // Using label as phonetic placeholder
+    phonetic: "dɪʃ ˈtaʊəl", // Using label as phonetic placeholder
     topic: "kitchen-items",
     description: "A kitchen item known as dish towel.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/dish-towel.webp`,
@@ -1023,7 +1023,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "oven-mitt",
     label: "Oven Mitt",
-    phonetic: "oven mitt", // Using label as phonetic placeholder
+    phonetic: "ˈʌvən mɪt", // Using label as phonetic placeholder
     topic: "kitchen-items",
     description: "A kitchen item known as oven mitt.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/oven-mitt.webp`,
@@ -1031,7 +1031,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "apron",
     label: "Apron",
-    phonetic: "apron", // Using label as phonetic placeholder
+    phonetic: "ˈeɪpɹən", // Using label as phonetic placeholder
     topic: "kitchen-items",
     description: "A kitchen item known as apron.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/apron.webp`,
@@ -1039,7 +1039,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "trash-can",
     label: "Trash Can",
-    phonetic: "trash can", // Using label as phonetic placeholder
+    phonetic: "tɹæʃ kæn", // Using label as phonetic placeholder
     topic: "kitchen-items",
     description: "A kitchen item known as trash can.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/trash-can.webp`,
@@ -1047,7 +1047,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "paper-towel",
     label: "Paper Towel",
-    phonetic: "paper towel", // Using label as phonetic placeholder
+    phonetic: "ˈpeɪpɚ ˈtaʊəl", // Using label as phonetic placeholder
     topic: "kitchen-items",
     description: "A kitchen item known as paper towel.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/paper-towel.webp`,
@@ -1055,7 +1055,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "plastic-wrap",
     label: "Plastic Wrap",
-    phonetic: "plastic wrap", // Using label as phonetic placeholder
+    phonetic: "ˈplæstɪk ɹæp", // Using label as phonetic placeholder
     topic: "kitchen-items",
     description: "A kitchen item known as plastic wrap.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/plastic-wrap.webp`,
@@ -1063,7 +1063,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "aluminum-foil",
     label: "Aluminum Foil",
-    phonetic: "aluminum foil", // Using label as phonetic placeholder
+    phonetic: "əˈlumənəm fɔɪl", // Using label as phonetic placeholder
     topic: "kitchen-items",
     description: "A kitchen item known as aluminum foil.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/aluminum-foil.webp`,
@@ -1071,7 +1071,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "food-container",
     label: "Food Container",
-    phonetic: "food container", // Using label as phonetic placeholder
+    phonetic: "fud kənˈteɪnɚ", // Using label as phonetic placeholder
     topic: "kitchen-items",
     description: "A kitchen item known as food container.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/food-container.webp`,
@@ -1079,7 +1079,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "sponge",
     label: "Sponge",
-    phonetic: "sponge", // Using label as phonetic placeholder
+    phonetic: "spʌndʒ", // Using label as phonetic placeholder
     topic: "kitchen-items",
     description: "A kitchen item known as sponge.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/sponge.webp`,
@@ -1087,7 +1087,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "dish-soap",
     label: "Dish Soap",
-    phonetic: "dish soap", // Using label as phonetic placeholder
+    phonetic: "dɪʃ soʊp", // Using label as phonetic placeholder
     topic: "kitchen-items",
     description: "A kitchen item known as dish soap.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/dish-soap.webp`,
@@ -1095,7 +1095,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "dish-rack",
     label: "Dish Rack",
-    phonetic: "dish rack", // Using label as phonetic placeholder
+    phonetic: "dɪʃ ɹæk", // Using label as phonetic placeholder
     topic: "kitchen-items",
     description: "A kitchen item known as dish rack.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/dish-rack.webp`,
@@ -1103,7 +1103,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "cling-film",
     label: "Cling Film",
-    phonetic: "cling film", // Using label as phonetic placeholder
+    phonetic: "klɪŋ fɪlm", // Using label as phonetic placeholder
     topic: "kitchen-items",
     description: "A kitchen item known as cling film.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/cling-film.webp`,
@@ -1111,7 +1111,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "bread",
     label: "Bread",
-    phonetic: "bread", // Using label as phonetic placeholder
+    phonetic: "bɹɛd", // Using label as phonetic placeholder
     topic: "basic-pantry",
     description: "A kitchen item known as bread.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/bread.webp`,
@@ -1119,7 +1119,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "butter",
     label: "Butter",
-    phonetic: "butter", // Using label as phonetic placeholder
+    phonetic: "ˈbʌtɚ", // Using label as phonetic placeholder
     topic: "basic-pantry",
     description: "A kitchen item known as butter.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/butter.webp`,
@@ -1127,7 +1127,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "milk",
     label: "Milk",
-    phonetic: "milk", // Using label as phonetic placeholder
+    phonetic: "mɪlk", // Using label as phonetic placeholder
     topic: "basic-pantry",
     description: "A kitchen item known as milk.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/milk.webp`,
@@ -1135,7 +1135,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "egg",
     label: "Egg",
-    phonetic: "egg", // Using label as phonetic placeholder
+    phonetic: "ɛg", // Using label as phonetic placeholder
     topic: "basic-pantry",
     description: "A kitchen item known as egg.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/egg.webp`,
@@ -1143,7 +1143,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "cheese",
     label: "Cheese",
-    phonetic: "cheese", // Using label as phonetic placeholder
+    phonetic: "tʃiz", // Using label as phonetic placeholder
     topic: "basic-pantry",
     description: "A kitchen item known as cheese.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/cheese.webp`,
@@ -1151,7 +1151,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "rice",
     label: "Rice",
-    phonetic: "rice", // Using label as phonetic placeholder
+    phonetic: "ɹaɪs", // Using label as phonetic placeholder
     topic: "basic-pantry",
     description: "A kitchen item known as rice.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/rice.webp`,
@@ -1159,7 +1159,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "pasta",
     label: "Pasta",
-    phonetic: "pasta", // Using label as phonetic placeholder
+    phonetic: "ˈpɑstə", // Using label as phonetic placeholder
     topic: "basic-pantry",
     description: "A kitchen item known as pasta.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/pasta.webp`,
@@ -1167,7 +1167,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "cooking-oil",
     label: "Cooking Oil",
-    phonetic: "cooking oil", // Using label as phonetic placeholder
+    phonetic: "ˈkʊkɪŋ ɔɪl", // Using label as phonetic placeholder
     topic: "basic-pantry",
     description: "A kitchen item known as cooking oil.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/cooking-oil.webp`,
@@ -1175,7 +1175,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "salt",
     label: "Salt",
-    phonetic: "salt", // Using label as phonetic placeholder
+    phonetic: "sɔlt", // Using label as phonetic placeholder
     topic: "basic-pantry",
     description: "A kitchen item known as salt.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/salt.webp`,
@@ -1183,7 +1183,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "sugar",
     label: "Sugar",
-    phonetic: "sugar", // Using label as phonetic placeholder
+    phonetic: "ˈʃʊgɚ", // Using label as phonetic placeholder
     topic: "basic-pantry",
     description: "A kitchen item known as sugar.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/sugar.webp`,
@@ -1191,7 +1191,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "pepper",
     label: "Pepper",
-    phonetic: "pepper", // Using label as phonetic placeholder
+    phonetic: "ˈpɛpɚ", // Using label as phonetic placeholder
     topic: "basic-pantry",
     description: "A kitchen item known as pepper.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/pepper.webp`,
@@ -1199,7 +1199,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "flour",
     label: "Flour",
-    phonetic: "flour", // Using label as phonetic placeholder
+    phonetic: "ˈflaʊɚ", // Using label as phonetic placeholder
     topic: "basic-pantry",
     description: "A kitchen item known as flour.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/flour.webp`,
@@ -1207,7 +1207,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "vinegar",
     label: "Vinegar",
-    phonetic: "vinegar", // Using label as phonetic placeholder
+    phonetic: "ˈvɪnəgɚ", // Using label as phonetic placeholder
     topic: "basic-pantry",
     description: "A kitchen item known as vinegar.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/vinegar.webp`,
@@ -1215,7 +1215,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "honey",
     label: "Honey",
-    phonetic: "honey", // Using label as phonetic placeholder
+    phonetic: "ˈhʌni", // Using label as phonetic placeholder
     topic: "basic-pantry",
     description: "A kitchen item known as honey.", // Needs manual/AI description
     img: `${LOCAL_WORD_IMAGES}/honey.webp`,
@@ -1311,7 +1311,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "sofa",
     label: "Sofa",
-    phonetic: "sofa",
+    phonetic: "ˈsəʊfə",
     img: `${LOCAL_WORD_IMAGES}/living-room/sofa.webp`,
     topic: "seating-tables",
     description: "An object found in the living room.",
@@ -1319,7 +1319,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "armchair",
     label: "Armchair",
-    phonetic: "armchair",
+    phonetic: "ˈɑɹmˌtʃɛɹ",
     img: `${LOCAL_WORD_IMAGES}/living-room/armchair.webp`,
     topic: "seating-tables",
     description: "An object found in the living room.",
@@ -1327,7 +1327,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "coffee-table",
     label: "Coffee Table",
-    phonetic: "coffee table",
+    phonetic: "ˈkɑfi ˈteɪbəl",
     img: `${LOCAL_WORD_IMAGES}/living-room/coffee-table.webp`,
     topic: "seating-tables",
     description: "An object found in the living room.",
@@ -1335,7 +1335,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "side-table",
     label: "Side Table",
-    phonetic: "side table",
+    phonetic: "saɪd ˈteɪbəl",
     img: `${LOCAL_WORD_IMAGES}/living-room/side-table.webp`,
     topic: "seating-tables",
     description: "An object found in the living room.",
@@ -1343,7 +1343,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "ottoman",
     label: "Ottoman",
-    phonetic: "ottoman",
+    phonetic: "ˈɑtəmən",
     img: `${LOCAL_WORD_IMAGES}/living-room/ottoman.webp`,
     topic: "seating-tables",
     description: "An object found in the living room.",
@@ -1351,7 +1351,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "rocking-chair",
     label: "Rocking Chair",
-    phonetic: "rocking chair",
+    phonetic: "ˈɹɑkɪŋ tʃɛɹ",
     img: `${LOCAL_WORD_IMAGES}/living-room/rocking-chair.webp`,
     topic: "seating-tables",
     description: "An object found in the living room.",
@@ -1359,7 +1359,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "dining-table",
     label: "Dining Table",
-    phonetic: "dining table",
+    phonetic: "ˈdaɪnɪŋ(ɡ) ˈteɪbəl",
     img: `${LOCAL_WORD_IMAGES}/living-room/dining-table.webp`,
     topic: "seating-tables",
     description: "An object found in the living room.",
@@ -1367,7 +1367,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "dining-chair",
     label: "Dining Chair",
-    phonetic: "dining chair",
+    phonetic: "ˈdaɪnɪŋ(ɡ) t͡ʃɛə(ɹ)",
     img: `${LOCAL_WORD_IMAGES}/living-room/dining-chair.webp`,
     topic: "seating-tables",
     description: "An object found in the living room.",
@@ -1375,7 +1375,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "bench",
     label: "Bench",
-    phonetic: "bench",
+    phonetic: "bɛntʃ",
     img: `${LOCAL_WORD_IMAGES}/living-room/bench.webp`,
     topic: "seating-tables",
     description: "An object found in the living room.",
@@ -1383,7 +1383,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "stool",
     label: "Stool",
-    phonetic: "stool",
+    phonetic: "stuːl",
     img: `${LOCAL_WORD_IMAGES}/living-room/stool.webp`,
     topic: "seating-tables",
     description: "An object found in the living room.",
@@ -1391,7 +1391,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "bookshelf",
     label: "Bookshelf",
-    phonetic: "bookshelf",
+    phonetic: "ˈbʊkˌʃɛlf",
     img: `${LOCAL_WORD_IMAGES}/living-room/bookshelf.webp`,
     topic: "storage-display",
     description: "An object found in the living room.",
@@ -1399,7 +1399,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "tv-stand",
     label: "TV Stand",
-    phonetic: "tv stand",
+    phonetic: "ti-vi stænd",
     img: `${LOCAL_WORD_IMAGES}/living-room/tv-stand.webp`,
     topic: "storage-display",
     description: "An object found in the living room.",
@@ -1407,7 +1407,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "cabinet",
     label: "Cabinet",
-    phonetic: "cabinet",
+    phonetic: "ˈkæbənət",
     img: `${LOCAL_WORD_IMAGES}/living-room/cabinet.webp`,
     topic: "storage-display",
     description: "An object found in the living room.",
@@ -1415,7 +1415,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "sideboard",
     label: "Sideboard",
-    phonetic: "sideboard",
+    phonetic: "ˈsaɪdˌbɔɹd",
     img: `${LOCAL_WORD_IMAGES}/living-room/sideboard.webp`,
     topic: "storage-display",
     description: "An object found in the living room.",
@@ -1423,7 +1423,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "shelf",
     label: "Shelf",
-    phonetic: "shelf",
+    phonetic: "ʃɛlf",
     img: `${LOCAL_WORD_IMAGES}/living-room/shelf.webp`,
     topic: "storage-display",
     description: "An object found in the living room.",
@@ -1431,7 +1431,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "drawer",
     label: "Drawer",
-    phonetic: "drawer",
+    phonetic: "dɹɔː(ɹ)",
     img: `${LOCAL_WORD_IMAGES}/living-room/drawer.webp`,
     topic: "storage-display",
     description: "An object found in the living room.",
@@ -1439,7 +1439,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "magazine-rack",
     label: "Magazine Rack",
-    phonetic: "magazine rack",
+    phonetic: "mæɡəˈziːn ɹæk",
     img: `${LOCAL_WORD_IMAGES}/living-room/magazine-rack.webp`,
     topic: "storage-display",
     description: "An object found in the living room.",
@@ -1447,7 +1447,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "display-case",
     label: "Display Case",
-    phonetic: "display case",
+    phonetic: "dɪsˈpleɪ keɪs",
     img: `${LOCAL_WORD_IMAGES}/living-room/display-case.webp`,
     topic: "storage-display",
     description: "An object found in the living room.",
@@ -1455,7 +1455,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "coat-rack",
     label: "Coat Rack",
-    phonetic: "coat rack",
+    phonetic: "koʊt ɹæk",
     img: `${LOCAL_WORD_IMAGES}/living-room/coat-rack.webp`,
     topic: "storage-display",
     description: "An object found in the living room.",
@@ -1463,7 +1463,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "shoe-rack",
     label: "Shoe Rack",
-    phonetic: "shoe rack",
+    phonetic: "ʃuː ɹæk",
     img: `${LOCAL_WORD_IMAGES}/living-room/shoe-rack.webp`,
     topic: "storage-display",
     description: "An object found in the living room.",
@@ -1471,7 +1471,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "television",
     label: "Television",
-    phonetic: "television",
+    phonetic: "ˈtɛləˌvɪʒən",
     img: `${LOCAL_WORD_IMAGES}/living-room/television.webp`,
     topic: "electronics-media",
     description: "An object found in the living room.",
@@ -1479,7 +1479,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "remote-control",
     label: "Remote Control",
-    phonetic: "remote control",
+    phonetic: "ɹɪˈmoʊt kənˈtɹoʊl",
     img: `${LOCAL_WORD_IMAGES}/living-room/remote-control.webp`,
     topic: "electronics-media",
     description: "An object found in the living room.",
@@ -1487,7 +1487,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "speaker",
     label: "Speaker",
-    phonetic: "speaker",
+    phonetic: "ˈspikɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/speaker.webp`,
     topic: "electronics-media",
     description: "An object found in the living room.",
@@ -1495,7 +1495,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "game-console",
     label: "Game Console",
-    phonetic: "game console",
+    phonetic: "geɪm kənˈsoʊl",
     img: `${LOCAL_WORD_IMAGES}/living-room/game-console.webp`,
     topic: "electronics-media",
     description: "An object found in the living room.",
@@ -1503,7 +1503,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "dvd-player",
     label: "DVD Player",
-    phonetic: "dvd player",
+    phonetic: "di-vi-di ˈpleɪɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/dvd-player.webp`,
     topic: "electronics-media",
     description: "An object found in the living room.",
@@ -1511,7 +1511,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "sound-bar",
     label: "Sound Bar",
-    phonetic: "sound bar",
+    phonetic: "saʊnd bɑɹ",
     img: `${LOCAL_WORD_IMAGES}/living-room/sound-bar.webp`,
     topic: "electronics-media",
     description: "An object found in the living room.",
@@ -1519,7 +1519,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "wi-fi-router",
     label: "Wi-Fi Router",
-    phonetic: "wi-fi router",
+    phonetic: "waɪ-faɪ ˈɹaʊtɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/wi-fi-router.webp`,
     topic: "electronics-media",
     description: "An object found in the living room.",
@@ -1527,7 +1527,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "power-strip",
     label: "Power Strip",
-    phonetic: "power strip",
+    phonetic: "ˈpaʊɚ stɹɪp",
     img: `${LOCAL_WORD_IMAGES}/living-room/power-strip.webp`,
     topic: "electronics-media",
     description: "An object found in the living room.",
@@ -1535,7 +1535,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "cable",
     label: "Cable",
-    phonetic: "cable",
+    phonetic: "ˈkeɪbəl",
     img: `${LOCAL_WORD_IMAGES}/living-room/cable.webp`,
     topic: "electronics-media",
     description: "An object found in the living room.",
@@ -1543,7 +1543,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "plug",
     label: "Plug",
-    phonetic: "plug",
+    phonetic: "plʌg",
     img: `${LOCAL_WORD_IMAGES}/living-room/plug.webp`,
     topic: "electronics-media",
     description: "An object found in the living room.",
@@ -1551,7 +1551,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "floor-lamp",
     label: "Floor Lamp",
-    phonetic: "floor lamp",
+    phonetic: "flɔɹ læmp",
     img: `${LOCAL_WORD_IMAGES}/living-room/floor-lamp.webp`,
     topic: "lighting-decor",
     description: "An object found in the living room.",
@@ -1559,7 +1559,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "table-lamp",
     label: "Table Lamp",
-    phonetic: "table lamp",
+    phonetic: "ˈteɪbəl læmp",
     img: `${LOCAL_WORD_IMAGES}/living-room/table-lamp.webp`,
     topic: "lighting-decor",
     description: "An object found in the living room.",
@@ -1567,7 +1567,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "ceiling-light",
     label: "Ceiling Light",
-    phonetic: "ceiling light",
+    phonetic: "ˈsilɪŋ laɪt",
     img: `${LOCAL_WORD_IMAGES}/living-room/ceiling-light.webp`,
     topic: "lighting-decor",
     description: "An object found in the living room.",
@@ -1575,7 +1575,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "chandelier",
     label: "Chandelier",
-    phonetic: "chandelier",
+    phonetic: "ˌʃændəˈlɪɹ",
     img: `${LOCAL_WORD_IMAGES}/living-room/chandelier.webp`,
     topic: "lighting-decor",
     description: "An object found in the living room.",
@@ -1583,7 +1583,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "light-bulb",
     label: "Light Bulb",
-    phonetic: "light bulb",
+    phonetic: "laɪt bʌlb",
     img: `${LOCAL_WORD_IMAGES}/living-room/light-bulb.webp`,
     topic: "lighting-decor",
     description: "An object found in the living room.",
@@ -1599,7 +1599,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "candle-holder",
     label: "Candle Holder",
-    phonetic: "candle holder",
+    phonetic: "ˈkændəl ˈhoʊldɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/candle-holder.webp`,
     topic: "lighting-decor",
     description: "An object found in the living room.",
@@ -1607,7 +1607,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "string-lights",
     label: "String Lights",
-    phonetic: "string lights",
+    phonetic: "stɹɪŋ laɪts",
     img: `${LOCAL_WORD_IMAGES}/living-room/string-lights.webp`,
     topic: "lighting-decor",
     description: "An object found in the living room.",
@@ -1615,7 +1615,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "picture-frame",
     label: "Picture Frame",
-    phonetic: "picture frame",
+    phonetic: "ˈpɪktʃɚ fɹeɪm",
     img: `${LOCAL_WORD_IMAGES}/living-room/picture-frame.webp`,
     topic: "lighting-decor",
     description: "An object found in the living room.",
@@ -1623,7 +1623,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "wall-clock",
     label: "Wall Clock",
-    phonetic: "wall clock",
+    phonetic: "wɔl klɑk",
     img: `${LOCAL_WORD_IMAGES}/living-room/wall-clock.webp`,
     topic: "lighting-decor",
     description: "An object found in the living room.",
@@ -1639,7 +1639,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "throw-blanket",
     label: "Throw Blanket",
-    phonetic: "throw blanket",
+    phonetic: "θɹoʊ ˈblæŋkɪt",
     img: `${LOCAL_WORD_IMAGES}/living-room/throw-blanket.webp`,
     topic: "soft-furnishings",
     description: "An object found in the living room.",
@@ -1663,7 +1663,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "curtain",
     label: "Curtain",
-    phonetic: "curtain",
+    phonetic: "ˈkɝtən",
     img: `${LOCAL_WORD_IMAGES}/living-room/curtain.webp`,
     topic: "soft-furnishings",
     description: "An object found in the living room.",
@@ -1671,7 +1671,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "tablecloth",
     label: "Tablecloth",
-    phonetic: "tablecloth",
+    phonetic: "ˈteɪbəlˌklɔθ",
     img: `${LOCAL_WORD_IMAGES}/living-room/tablecloth.webp`,
     topic: "soft-furnishings",
     description: "An object found in the living room.",
@@ -1679,7 +1679,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "placemat",
     label: "Placemat",
-    phonetic: "placemat",
+    phonetic: "ˈpleɪsˌmæt",
     img: `${LOCAL_WORD_IMAGES}/living-room/placemat.webp`,
     topic: "soft-furnishings",
     description: "An object found in the living room.",
@@ -1687,7 +1687,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "coaster",
     label: "Coaster",
-    phonetic: "coaster",
+    phonetic: "ˈkoʊstɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/coaster.webp`,
     topic: "soft-furnishings",
     description: "An object found in the living room.",
@@ -1695,7 +1695,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "doormat",
     label: "Doormat",
-    phonetic: "doormat",
+    phonetic: "ˈdɔɹˌmæt",
     img: `${LOCAL_WORD_IMAGES}/living-room/doormat.webp`,
     topic: "soft-furnishings",
     description: "An object found in the living room.",
@@ -1703,7 +1703,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "tapestry",
     label: "Tapestry",
-    phonetic: "tapestry",
+    phonetic: "ˈtæpəstɹi",
     img: `${LOCAL_WORD_IMAGES}/living-room/tapestry.webp`,
     topic: "soft-furnishings",
     description: "An object found in the living room.",
@@ -1711,7 +1711,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "plant",
     label: "Plant",
-    phonetic: "plant",
+    phonetic: "plænt",
     img: `${LOCAL_WORD_IMAGES}/living-room/plant.webp`,
     topic: "living-room-objects",
     description: "An object found in the living room.",
@@ -1719,7 +1719,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "vase",
     label: "Vase",
-    phonetic: "vase",
+    phonetic: "veɪs",
     img: `${LOCAL_WORD_IMAGES}/living-room/vase.webp`,
     topic: "living-room-objects",
     description: "An object found in the living room.",
@@ -1727,7 +1727,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "photo-frame",
     label: "Photo Frame",
-    phonetic: "photo frame",
+    phonetic: "ˈfoʊˌtoʊ fɹeɪm",
     img: `${LOCAL_WORD_IMAGES}/living-room/photo-frame.webp`,
     topic: "living-room-objects",
     description: "An object found in the living room.",
@@ -1735,7 +1735,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "painting",
     label: "Painting",
-    phonetic: "painting",
+    phonetic: "ˈpeɪntɪŋ",
     img: `${LOCAL_WORD_IMAGES}/living-room/painting.webp`,
     topic: "living-room-objects",
     description: "An object found in the living room.",
@@ -1743,7 +1743,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "book",
     label: "Book",
-    phonetic: "book",
+    phonetic: "bʊk",
     img: `${LOCAL_WORD_IMAGES}/living-room/book.webp`,
     topic: "living-room-objects",
     description: "An object found in the living room.",
@@ -1751,7 +1751,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "magazine",
     label: "Magazine",
-    phonetic: "magazine",
+    phonetic: "ˈmægəˌzin",
     img: `${LOCAL_WORD_IMAGES}/living-room/magazine.webp`,
     topic: "living-room-objects",
     description: "An object found in the living room.",
@@ -1759,7 +1759,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "newspaper",
     label: "Newspaper",
-    phonetic: "newspaper",
+    phonetic: "ˈnuzˌpeɪpɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/newspaper.webp`,
     topic: "living-room-objects",
     description: "An object found in the living room.",
@@ -1767,7 +1767,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "board-game",
     label: "Board Game",
-    phonetic: "board game",
+    phonetic: "bɔɹd geɪm",
     img: `${LOCAL_WORD_IMAGES}/living-room/board-game.webp`,
     topic: "living-room-objects",
     description: "An object found in the living room.",
@@ -1775,7 +1775,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "puzzle",
     label: "Puzzle",
-    phonetic: "puzzle",
+    phonetic: "ˈpʌzəl",
     img: `${LOCAL_WORD_IMAGES}/living-room/puzzle.webp`,
     topic: "living-room-objects",
     description: "An object found in the living room.",

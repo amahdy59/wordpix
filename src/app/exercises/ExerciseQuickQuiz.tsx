@@ -120,7 +120,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         </div>
       }
     >
-      <div className="flex flex-col gap-3.5 sm:gap-4 w-full h-full min-h-0">
+      <div className="flex flex-col gap-4 sm:gap-6 w-full">
         {/* Single-Line Question Heading */}
         {/*
           The question itself must never be clipped. It previously carried
@@ -150,7 +150,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         <div
           role="group"
           aria-label={`Which image matches ${currentTargetWord.label}?`}
-          className="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3.5 w-full flex-1 min-h-0"
+          className="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3.5 w-full"
         >
           {options.map((option, idx) => {
             const isSelected = selectedId === option.id;
@@ -177,7 +177,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 aria-pressed={isSelected}
                 aria-disabled={feedback !== null}
                 onClick={() => handleSelect(option.id)}
-                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full h-full border-2 block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-sm ${stateStyle}`}
+                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full border-2 block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-sm ${stateStyle}`}
               >
                 <span
                   aria-hidden
@@ -186,15 +186,13 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                   [{idx + 1}]
                 </span>
 
-                <div className="h-full w-full relative bg-muted shrink-0 after:absolute after:inset-0 after:border-[4px] after:border-transparent group-hover:after:border-primary/20 after:rounded-2xl sm:after:rounded-3xl after:transition-colors">
+                <div className="w-full aspect-square relative bg-muted shrink-0 after:absolute after:inset-0 after:border-[4px] after:border-transparent group-hover:after:border-primary/20 after:rounded-2xl sm:after:rounded-3xl after:transition-colors">
                   <WordImage
                     word={option}
-                    width="600"
-                    height="450"
                     altMode="assessment"
                     optionIndex={idx}
                     checked={isSelected || isRevealedAnswer}
-                    className="size-full object-contain object-center block"
+                    className="size-full object-cover block"
                   />
                   {isRevealedAnswer && (
                     <motion.div 

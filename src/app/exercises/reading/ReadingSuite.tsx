@@ -30,9 +30,8 @@ export const ExReadingVisualContext = memo(function ExReadingVisualContext({ dis
     <div className="min-h-svh bg-background flex flex-col">
       <LessonHeader title="Visual Context & Clues" current={1} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
-        <div className="h-64 w-full rounded-3xl overflow-hidden border border-border shadow-wp-xs">
-          <WordImage word={target} width="600" height="400" className="absolute inset-0 size-full object-cover blur-xl opacity-40 scale-110 pointer-events-none" aria-hidden="true" />
-          <WordImage word={target} width="600" height="400" className="size-full relative size-full object-contain drop-shadow-2xl" />
+        <div className="w-full rounded-3xl overflow-hidden border border-border shadow-wp-xs bg-muted">
+          <WordImage word={target} className="w-full h-auto block object-contain" />
         </div>
 
         <div className="grid grid-cols-2 gap-3">

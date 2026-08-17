@@ -208,13 +208,11 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({ definitio
         </div>
 
         {imageWord && (
-          <div className="h-48 w-full rounded-3xl overflow-hidden border border-border bg-muted shadow-wp-xs">
+          <div className="w-full rounded-3xl overflow-hidden border border-border shadow-wp-xs bg-muted">
             <WordImage
               word={imageWord}
-              width="600"
-              height="400"
               altMode={task.kind === "choice" && !task.optionsAreImages ? "assessment" : "learning"}
-              className="size-full object-contain"
+              className="w-full h-auto block object-contain"
             />
           </div>
         )}
