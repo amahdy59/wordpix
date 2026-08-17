@@ -79,7 +79,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
           <button
             type="button"
             onClick={handleTakeAssessment}
-            className="group min-h-[60px] relative overflow-hidden rounded-2xl border-2 border-primary/20 bg-primary/5 p-4 text-start transition-all duration-300 hover:border-primary/50 hover:bg-primary/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+            className="group cursor-pointer min-h-[60px] relative overflow-hidden rounded-2xl border-2 border-primary/20 bg-primary/5 p-4 text-start transition-all duration-300 hover:border-primary/50 hover:bg-primary/10 hover:-translate-y-1 active:translate-y-0 active:scale-[0.98] shadow-sm hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary flex flex-col sm:flex-row sm:items-center justify-between gap-4"
           >
             <div className="flex items-start sm:items-center gap-4">
               <div className="size-12 rounded-xl bg-primary/20 text-primary flex items-center justify-center shrink-0">
@@ -101,7 +101,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
         {/* Timeline container */}
         <div className="relative flex flex-col gap-6 ps-2 pb-16">
           {/* Continuous vertical line */}
-          <div className="absolute top-4 bottom-4 start-[21px] w-[2px] bg-border" aria-hidden />
+          <div className="absolute top-4 bottom-4 start-[27px] w-[2px] bg-border" aria-hidden />
 
           {world.groups.map((g, index) => {
             const isNextToStudy = nextGroupId === g.id;
@@ -127,11 +127,13 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                 </div>
 
                 {/* Group Card */}
-                <div
-                  className={`flex-1 bg-wp-card rounded-2xl border p-5 text-start transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-4 min-h-[88px] ${
+                <button
+                  type="button"
+                  onClick={() => handleStartGroup(g.id)}
+                  className={`cursor-pointer flex-1 bg-wp-card rounded-2xl border p-5 text-start transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-4 min-h-[88px] outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${
                     isNextToStudy
-                      ? "border-primary border-[2px] bg-secondary shadow-md lg:scale-[1.02]"
-                      : "border-border hover:border-primary/50 hover:bg-secondary/50"
+                      ? "border-primary border-[2px] bg-secondary shadow-md hover:scale-[1.02] active:scale-[0.98]"
+                      : "border-border hover:border-primary/50 hover:bg-secondary/50 hover:-translate-y-1 active:translate-y-0 shadow-sm hover:shadow-md"
                   }`}
                 >
                   <div className="flex items-start sm:items-center gap-4">
@@ -139,14 +141,14 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                       className={`hidden sm:flex size-12 rounded-xl overflow-hidden shrink-0 border transition-colors ${
                         isNextToStudy
                           ? "border-primary"
-                          : "border-border/50 bg-muted/50"
+                          : "border-border/50 bg-muted/50 group-hover:border-primary/30"
                       }`}
                     >
                       {(() => {
                         const firstWordId = g.wordIds[0];
                         const firstWord = world.vocabulary.find(v => v.id === firstWordId);
                         return firstWord?.img ? (
-                          <img src={firstWord.img} alt="" className="size-full object-cover" />
+                          <img src={firstWord.img} alt="" className="size-full object-cover transition-transform duration-500 group-hover:scale-110" />
                         ) : (
                           <div className="size-full flex items-center justify-center text-muted-foreground">
                             <Layers className="size-5" />
@@ -156,7 +158,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                     </div>
                     <div>
                       <div className="flex items-center gap-2">
-                        <p className={`font-sans font-bold text-lg leading-tight transition-colors ${isNextToStudy ? 'text-primary' : 'text-foreground'}`}>
+                        <p className={`font-sans font-bold text-lg leading-tight transition-colors ${isNextToStudy ? 'text-primary' : 'text-foreground group-hover:text-primary'}`}>
                           {g.name}
                         </p>
                         {isCompleted && (
@@ -171,21 +173,19 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
 
                   <div className="flex flex-wrap items-center gap-3 shrink-0 mt-3 sm:mt-0">
                     <span className={`font-sans font-bold text-xs px-3.5 py-1.5 rounded-full border transition-colors ${
-                      isNextToStudy ? 'bg-primary text-primary-foreground border-primary' : 'bg-background text-primary border-primary/20'
+                      isNextToStudy ? 'bg-primary text-primary-foreground border-primary' : 'bg-background text-primary border-primary/20 group-hover:bg-primary/10'
                     }`}>
                       {g.wordIds.length} Words
                     </span>
-                    <button
-                      onClick={() => handleStartGroup(g.id)}
-                      className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl px-5 py-2.5 font-sans font-bold text-wp-text-on-blue text-sm
-                        focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
-                        shadow-md shadow-wp-blue/20 transition-all flex items-center gap-2"
+                    <div
+                      className="bg-wp-blue group-hover:bg-wp-blue/90 group-active:scale-95 rounded-xl px-5 py-2.5 font-sans font-bold text-wp-text-on-blue text-sm
+                        shadow-md shadow-wp-blue/20 transition-all flex items-center gap-2 group-hover:shadow-lg group-hover:-translate-y-0.5"
                     >
                       {isCompleted ? "Review" : "Start"}
-                      <ArrowRight className="size-4" />
-                    </button>
+                      <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                    </div>
                   </div>
-                </div>
+                </button>
               </div>
             );
           })}
