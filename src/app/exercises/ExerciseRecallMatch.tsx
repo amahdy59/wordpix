@@ -152,7 +152,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         </div>
       }
     >
-      <div className="flex flex-col gap-3.5 sm:gap-4 w-full">
+      <div className="flex flex-col gap-3.5 sm:gap-4 w-full h-full min-h-0">
         {/* Sleek, Compact Target Audio Play Bar */}
         <div className="bg-wp-panel text-wp-text-on-panel rounded-2xl p-3 sm:p-3.5 flex items-center justify-between shadow-wp-sm border border-wp-panel-border shrink-0">
           <button
@@ -195,7 +195,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         <div
           role="group"
           aria-label="Choose matching picture for audio prompt"
-          className="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3.5 w-full"
+          className="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3.5 w-full flex-1 min-h-0"
         >
           {displayCards.map((card, idx) => {
             const isSelected = selectedId === card.id;
@@ -220,7 +220,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 aria-pressed={isSelected}
                 aria-disabled={feedback !== null}
                 onClick={() => handleCardClick(card)}
-                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary shadow-wp-sm ${cardStateStyle}`}
+                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full h-full block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary shadow-wp-sm ${cardStateStyle}`}
               >
                 <span
                   aria-hidden
@@ -229,7 +229,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                   [{idx + 1}]
                 </span>
 
-                <div className="w-full aspect-square relative bg-muted shrink-0 after:absolute after:inset-0 after:border-[4px] after:border-transparent group-hover:after:border-primary/20 after:rounded-2xl sm:after:rounded-3xl after:transition-colors">
+                <div className="size-full relative bg-muted after:absolute after:inset-0 after:border-[4px] after:border-transparent group-hover:after:border-primary/20 after:rounded-2xl sm:after:rounded-3xl after:transition-colors">
                   <WordImage
                     word={card}
                     altMode="assessment"
