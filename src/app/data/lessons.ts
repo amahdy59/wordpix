@@ -70,172 +70,52 @@ export const BEDROOM_TOPICS: TopicCategory[] = [
 
 export const BEDROOM_GROUPS: Lesson[] = [
   {
-    id: "furniture-1",
-    name: "Furniture 1",
+    id: "furniture",
+    name: "Furniture",
     topicId: "furniture",
-    wordIds: [
-      "bed",
-      "nightstand",
-      "dresser",
-      "wardrobe",
-      "desk",
-    ],
-    description: "Learn about furniture 1.",
-    story: 'When moving into the new bedroom, the heavy bed was placed first. Next to it went the small nightstand for a lamp. The tall dresser was moved near the wall, while the large wardrobe held all the hanging clothes. Finally, a sturdy desk was added in the corner for studying.'
+    wordIds: ['bed','nightstand','dresser','wardrobe','desk','chair','bookshelf','mirror','stool','chest-of-drawers'],
+    description: "Learn about furniture.",
+    story: "When moving into the new bedroom, the heavy bed was placed first. Next to it went the small nightstand for a lamp. The tall dresser was moved near the wall, while the large wardrobe held all the hanging clothes. Finally, a sturdy desk was added in the corner for studying. Sarah sat on her comfortable chair by the window. She organized her favorite novels on the wooden bookshelf. Glancing at the shiny mirror on the wall, she decided to pull up a small stool to reach the top shelf of the old chest-of-drawers."
   },
   {
-    id: "furniture-2",
-    name: "Furniture 2",
-    topicId: "furniture",
-    wordIds: [
-      "chair",
-      "bookshelf",
-      "mirror",
-      "stool",
-      "chest-of-drawers",
-    ],
-    description: "Learn about furniture 2.",
-    story: 'Sarah sat on her comfortable chair by the window. She organized her favorite novels on the wooden bookshelf. Glancing at the shiny mirror on the wall, she decided to pull up a small stool to reach the top shelf of the old chest-of-drawers.'
-  },
-  {
-    id: "bedding-linen-1",
-    name: "Bedding & Linen 1",
+    id: "bedding",
+    name: "Bedding & Linen",
     topicId: "bedding",
-    wordIds: [
-      "pillow",
-      "blanket",
-      "sheet",
-      "mattress",
-      "duvet",
-    ],
-    description: "Learn about bedding & linen 1.",
-    story: 'Before sleeping, he fluffed his soft pillow and pulled up the warm blanket. The fresh, crisp sheet felt wonderful after a long day. The thick duvet kept the winter chill away, and the patterned bedspread added a pop of color to the room.'
+    wordIds: ['pillow','blanket','sheet','mattress','duvet','pillowcase','comforter','cushion','bed-frame','headboard'],
+    description: "Learn about bedding & linen.",
+    story: "Before sleeping, he fluffed his soft pillow and pulled up the warm blanket. The fresh, crisp sheet felt wonderful after a long day. The thick duvet kept the winter chill away, and the patterned bedspread added a pop of color to the room. She washed the pillowcase along with the rest of the laundry. The new mattress was incredibly supportive, and the soft mattress-pad made it even cozier. She draped a decorative throw-blanket over the edge and added a fluffy cushion for extra comfort."
   },
   {
-    id: "bedding-linen-2",
-    name: "Bedding & Linen 2",
-    topicId: "bedding",
-    wordIds: [
-      "pillowcase",
-      "comforter",
-      "cushion",
-      "bed-frame",
-      "headboard",
-    ],
-    description: "Learn about bedding & linen 2.",
-    story: 'She washed the pillowcase along with the rest of the laundry. The new mattress was incredibly supportive, and the soft mattress-pad made it even cozier. She draped a decorative throw-blanket over the edge and added a fluffy cushion for extra comfort.'
-  },
-  {
-    id: "room-features-1",
-    name: "Room Features 1",
+    id: "features",
+    name: "Room Features",
     topicId: "features",
-    wordIds: [
-      "lamp",
-      "curtain",
-      "window",
-      "door",
-      "rug",
-    ],
-    description: "Learn about room features 1.",
-    story: 'Sunlight streamed through the open window, warming the wooden floor. The thick door was closed for privacy. A bright light illuminated the space, reflecting off the white wall.'
+    wordIds: ['lamp','curtain','window','door','rug','carpet','ceiling-light','light-switch','blinds','outlet'],
+    description: "Learn about room features.",
+    story: "Sunlight streamed through the open window, warming the wooden floor. The thick door was closed for privacy. A bright light illuminated the space, reflecting off the white wall. The smooth ceiling was painted white to make the room look taller. A small rug covered the center of the room. The cozy carpet was soft underfoot, and the closed curtain kept the streetlights out at night. He reached for the switch to turn off the overhead light."
   },
   {
-    id: "room-features-2",
-    name: "Room Features 2",
-    topicId: "features",
-    wordIds: [
-      "carpet",
-      "ceiling-light",
-      "light-switch",
-      "blinds",
-      "outlet",
-    ],
-    description: "Learn about room features 2.",
-    story: 'The smooth ceiling was painted white to make the room look taller. A small rug covered the center of the room. The cozy carpet was soft underfoot, and the closed curtain kept the streetlights out at night. He reached for the switch to turn off the overhead light.'
-  },
-  {
-    id: "bedroom-objects-1",
-    name: "Bedroom Objects 1",
+    id: "objects",
+    name: "Bedroom Objects",
     topicId: "objects",
-    wordIds: [
-      "alarm-clock",
-      "picture-frame",
-      "clock",
-      "plant",
-      "vase",
-    ],
-    description: "Learn about bedroom objects 1.",
-    story: 'In the Bedroom Objects 1 lesson, we learned about some very useful things. For example, we saw the alarm-clock and the picture-frame. We also explored how the clock works. Finally, we looked at the plant and the vase to complete our understanding.'
+    wordIds: ['alarm-clock','picture-frame','clock','plant','vase','candle','calendar','tissue-box','wastebasket','hanger'],
+    description: "Learn about bedroom objects.",
+    story: "In the Bedroom Objects 1 lesson, we learned about some very useful things. For example, we saw the alarm-clock and the picture-frame. We also explored how the clock works. Finally, we looked at the plant and the vase to complete our understanding. In the Bedroom Objects 2 lesson, we learned about some very useful things. For example, we saw the candle and the calendar. We also explored how the tissue-box works. Finally, we looked at the wastebasket and the hanger to complete our understanding."
   },
   {
-    id: "bedroom-objects-2",
-    name: "Bedroom Objects 2",
-    topicId: "objects",
-    wordIds: [
-      "candle",
-      "calendar",
-      "tissue-box",
-      "wastebasket",
-      "hanger",
-    ],
-    description: "Learn about bedroom objects 2.",
-    story: 'In the Bedroom Objects 2 lesson, we learned about some very useful things. For example, we saw the candle and the calendar. We also explored how the tissue-box works. Finally, we looked at the wastebasket and the hanger to complete our understanding.'
-  },
-  {
-    id: "personal-items-1",
-    name: "Personal Items 1",
+    id: "personal",
+    name: "Personal Items",
     topicId: "personal",
-    wordIds: [
-      "pajamas",
-      "slippers",
-      "robe",
-      "teddy-bear",
-      "poster",
-    ],
-    description: "Learn about personal items 1.",
-    story: 'He tossed his heavy backpack onto the floor. The new clothes were neatly folded. A warm sweater was left on the chair, next to a clean shirt and a pair of blue jeans.'
+    wordIds: ['pajamas','slippers','robe','teddy-bear','poster','books','photo-album','glasses','backpack','jewelry-box'],
+    description: "Learn about personal items.",
+    story: "He tossed his heavy backpack onto the floor. The new clothes were neatly folded. A warm sweater was left on the chair, next to a clean shirt and a pair of blue jeans. His left shoe was missing, so he checked under the bed. He found a clean sock and a warm jacket hanging in the closet. His winter coat was draped over a chair, next to a comfortable hat."
   },
   {
-    id: "personal-items-2",
-    name: "Personal Items 2",
-    topicId: "personal",
-    wordIds: [
-      "books",
-      "photo-album",
-      "glasses",
-      "backpack",
-      "jewelry-box",
-    ],
-    description: "Learn about personal items 2.",
-    story: 'His left shoe was missing, so he checked under the bed. He found a clean sock and a warm jacket hanging in the closet. His winter coat was draped over a chair, next to a comfortable hat.'
-  },
-  {
-    id: "electronics-1",
-    name: "Electronics 1",
+    id: "electronics",
+    name: "Electronics",
     topicId: "electronics",
-    wordIds: [
-      "phone",
-      "charger",
-      "laptop",
-      "headphones",
-      "tablet",
-    ],
-    description: "Learn about electronics 1.",
-    story: 'The television was turned on to watch the morning news. His laptop was charging on the desk. He answered the ringing phone while listening to the radio and adjusting his loud alarm.'
-  },
-  {
-    id: "electronics-2",
-    name: "Electronics 2",
-    topicId: "electronics",
-    wordIds: [
-      "speaker",
-      "reading-light",
-      "remote-control",
-      "phone",
-      "charger",
-    ],
-    description: "Learn about electronics 2.",
-    story: 'He plugged his charger into the wall socket. The small fan kept the room cool during the summer. A bright lightbulb illuminated the desk, and he left his tablet next to his favorite video-game.'
+    wordIds: ['phone','charger','laptop','headphones','tablet','speaker','reading-light','remote-control'],
+    description: "Learn about electronics.",
+    story: "The television was turned on to watch the morning news. His laptop was charging on the desk. He answered the ringing phone while listening to the radio and adjusting his loud alarm. He plugged his charger into the wall socket. The small fan kept the room cool during the summer. A bright lightbulb illuminated the desk, and he left his tablet next to his favorite video-game."
   },
 ];
 
@@ -730,218 +610,52 @@ export const KITCHEN_TOPICS: TopicCategory[] = [
 
 export const KITCHEN_GROUPS: Lesson[] = [
   {
-    id: "large-appliances-1",
-    name: "Large Appliances 1",
+    id: "large-appliances",
+    name: "Large Appliances",
     topicId: "large-appliances",
-    wordIds: [
-      "refrigerator",
-      "stove",
-      "oven",
-      "microwave",
-      "dishwasher",
-    ],
-    description: "Learn about large appliances 1.",
-    story: 'In the Large Appliances lesson, we learned about some very useful things. For example, we saw the refrigerator and the stove. We also explored how the oven works. Finally, we looked at the microwave and the dishwasher to complete our understanding.'
+    wordIds: ['refrigerator','stove','oven','microwave','dishwasher','toaster','blender','kettle','coffee-maker','freezer'],
+    description: "Learn about large appliances.",
+    story: "In the Large Appliances lesson, we learned about some very useful things. For example, we saw the refrigerator and the stove. We also explored how the oven works. Finally, we looked at the microwave and the dishwasher to complete our understanding. In the Large Appliances 2 lesson, we learned about some very useful things. For example, we saw the toaster and the blender. We also explored how the kettle works. Finally, we looked at the coffee-maker and the freezer to complete our understanding."
   },
   {
-    id: "large-appliances-2",
-    name: "Large Appliances 2",
-    topicId: "large-appliances",
-    wordIds: [
-      "toaster",
-      "blender",
-      "kettle",
-      "coffee-maker",
-      "freezer",
-    ],
-    description: "Learn about large appliances 2.",
-    story: 'In the Large Appliances 2 lesson, we learned about some very useful things. For example, we saw the toaster and the blender. We also explored how the kettle works. Finally, we looked at the coffee-maker and the freezer to complete our understanding.'
-  },
-  {
-    id: "cookware-1",
-    name: "Cookware 1",
+    id: "cookware",
+    name: "Cookware",
     topicId: "cookware",
-    wordIds: [
-      "pot",
-      "pan",
-      "frying-pan",
-      "baking-tray",
-      "saucepan",
-    ],
-    description: "Learn about cookware 1.",
-    story: 'She placed the heavy pot on the stove to boil water. A large pan was perfect for frying eggs, while a deep saucepan held the simmering tomato sauce. The curved wok was ready for a quick stir-fry, and the iron skillet gave the steak a perfect sear.'
+    wordIds: ['pot','pan','frying-pan','baking-tray','saucepan','wok','casserole-dish','baking-dish','steamer','pressure-cooker'],
+    description: "Learn about cookware.",
+    story: "She placed the heavy pot on the stove to boil water. A large pan was perfect for frying eggs, while a deep saucepan held the simmering tomato sauce. The curved wok was ready for a quick stir-fry, and the iron skillet gave the steak a perfect sear. The deep baking-dish was filled with a rich lasagna. Cookies were arranged on the flat baking-tray before entering the oven. She used a round cake-pan for the birthday dessert, a versatile roasting-pan for the Sunday chicken, and a large casserole-dish for the family dinner."
   },
   {
-    id: "cookware-2",
-    name: "Cookware 2",
-    topicId: "cookware",
-    wordIds: [
-      "wok",
-      "casserole-dish",
-      "baking-dish",
-      "steamer",
-      "pressure-cooker",
-    ],
-    description: "Learn about cookware 2.",
-    story: 'The deep baking-dish was filled with a rich lasagna. Cookies were arranged on the flat baking-tray before entering the oven. She used a round cake-pan for the birthday dessert, a versatile roasting-pan for the Sunday chicken, and a large casserole-dish for the family dinner.'
-  },
-  {
-    id: "utensils-tools-1",
-    name: "Utensils Tools 1",
+    id: "utensils-tools",
+    name: "Utensils Tools",
     topicId: "utensils-tools",
-    wordIds: [
-      "fork",
-      "knife",
-      "spoon",
-      "spatula",
-      "ladle",
-    ],
-    description: "Learn about utensils tools 1.",
-    story: 'In the Utensils Tools 1 lesson, we learned about some very useful things. For example, we saw the fork and the knife. We also explored how the spoon works. Finally, we looked at the spatula and the ladle to complete our understanding.'
+    wordIds: ['fork','knife','spoon','spatula','ladle','whisk','tongs','peeler','grater','rolling-pin','can-opener','corkscrew'],
+    description: "Learn about utensils tools.",
+    story: "In the Utensils Tools 1 lesson, we learned about some very useful things. For example, we saw the fork and the knife. We also explored how the spoon works. Finally, we looked at the spatula and the ladle to complete our understanding. In the Utensils Tools 2 lesson, we learned about some very useful things. For example, we saw the whisk and the tongs. We also explored how the peeler works. Finally, we looked at the grater and the rolling-pin to complete our understanding. In the Utensils Tools 3 lesson, we learned about some very useful things. For example, we saw the can-opener and the corkscrew. We also explored how the undefined works. Finally, we looked at the undefined and the undefined to complete our understanding."
   },
   {
-    id: "utensils-tools-2",
-    name: "Utensils Tools 2",
-    topicId: "utensils-tools",
-    wordIds: [
-      "whisk",
-      "tongs",
-      "peeler",
-      "grater",
-      "rolling-pin",
-    ],
-    description: "Learn about utensils tools 2.",
-    story: 'In the Utensils Tools 2 lesson, we learned about some very useful things. For example, we saw the whisk and the tongs. We also explored how the peeler works. Finally, we looked at the grater and the rolling-pin to complete our understanding.'
-  },
-  {
-    id: "utensils-tools-3",
-    name: "Utensils Tools 3",
-    topicId: "utensils-tools",
-    wordIds: [
-      "can-opener",
-      "corkscrew",
-    ],
-    description: "Learn about utensils tools 3.",
-    story: 'In the Utensils Tools 3 lesson, we learned about some very useful things. For example, we saw the can-opener and the corkscrew. We also explored how the undefined works. Finally, we looked at the undefined and the undefined to complete our understanding.'
-  },
-  {
-    id: "dishes-containers-1",
-    name: "Dishes Containers 1",
+    id: "dishes-containers",
+    name: "Dishes Containers",
     topicId: "dishes-containers",
-    wordIds: [
-      "plate",
-      "bowl",
-      "mug",
-      "glass",
-      "cup",
-    ],
-    description: "Learn about dishes containers 1.",
-    story: 'In the Dishes Containers 1 lesson, we learned about some very useful things. For example, we saw the plate and the bowl. We also explored how the mug works. Finally, we looked at the glass and the cup to complete our understanding.'
+    wordIds: ['plate','bowl','mug','glass','cup','saucer','cutting-board','colander','measuring-cup','measuring-spoon','mixing-bowl','pitcher'],
+    description: "Learn about dishes containers.",
+    story: "In the Dishes Containers 1 lesson, we learned about some very useful things. For example, we saw the plate and the bowl. We also explored how the mug works. Finally, we looked at the glass and the cup to complete our understanding. In the Dishes Containers 2 lesson, we learned about some very useful things. For example, we saw the saucer and the cutting-board. We also explored how the colander works. Finally, we looked at the measuring-cup and the measuring-spoon to complete our understanding. In the Dishes Containers 3 lesson, we learned about some very useful things. For example, we saw the mixing-bowl and the pitcher. We also explored how the undefined works. Finally, we looked at the undefined and the undefined to complete our understanding."
   },
   {
-    id: "dishes-containers-2",
-    name: "Dishes Containers 2",
-    topicId: "dishes-containers",
-    wordIds: [
-      "saucer",
-      "cutting-board",
-      "colander",
-      "measuring-cup",
-      "measuring-spoon",
-    ],
-    description: "Learn about dishes containers 2.",
-    story: 'In the Dishes Containers 2 lesson, we learned about some very useful things. For example, we saw the saucer and the cutting-board. We also explored how the colander works. Finally, we looked at the measuring-cup and the measuring-spoon to complete our understanding.'
-  },
-  {
-    id: "dishes-containers-3",
-    name: "Dishes Containers 3",
-    topicId: "dishes-containers",
-    wordIds: [
-      "mixing-bowl",
-      "pitcher",
-    ],
-    description: "Learn about dishes containers 3.",
-    story: 'In the Dishes Containers 3 lesson, we learned about some very useful things. For example, we saw the mixing-bowl and the pitcher. We also explored how the undefined works. Finally, we looked at the undefined and the undefined to complete our understanding.'
-  },
-  {
-    id: "kitchen-items-1",
-    name: "Kitchen Items 1",
+    id: "kitchen-items",
+    name: "Kitchen Items",
     topicId: "kitchen-items",
-    wordIds: [
-      "dish-towel",
-      "oven-mitt",
-      "apron",
-      "trash-can",
-      "paper-towel",
-    ],
-    description: "Learn about kitchen items 1.",
-    story: 'In the Kitchen Items 1 lesson, we learned about some very useful things. For example, we saw the dish-towel and the oven-mitt. We also explored how the apron works. Finally, we looked at the trash-can and the paper-towel to complete our understanding.'
+    wordIds: ['dish-towel','oven-mitt','apron','trash-can','paper-towel','plastic-wrap','aluminum-foil','food-container','sponge','dish-soap','dish-rack','cling-film'],
+    description: "Learn about kitchen items.",
+    story: "In the Kitchen Items 1 lesson, we learned about some very useful things. For example, we saw the dish-towel and the oven-mitt. We also explored how the apron works. Finally, we looked at the trash-can and the paper-towel to complete our understanding. In the Kitchen Items 2 lesson, we learned about some very useful things. For example, we saw the plastic-wrap and the aluminum-foil. We also explored how the food-container works. Finally, we looked at the sponge and the dish-soap to complete our understanding. In the Kitchen Items 3 lesson, we learned about some very useful things. For example, we saw the dish-rack and the cling-film. We also explored how the undefined works. Finally, we looked at the undefined and the undefined to complete our understanding."
   },
   {
-    id: "kitchen-items-2",
-    name: "Kitchen Items 2",
-    topicId: "kitchen-items",
-    wordIds: [
-      "plastic-wrap",
-      "aluminum-foil",
-      "food-container",
-      "sponge",
-      "dish-soap",
-    ],
-    description: "Learn about kitchen items 2.",
-    story: 'In the Kitchen Items 2 lesson, we learned about some very useful things. For example, we saw the plastic-wrap and the aluminum-foil. We also explored how the food-container works. Finally, we looked at the sponge and the dish-soap to complete our understanding.'
-  },
-  {
-    id: "kitchen-items-3",
-    name: "Kitchen Items 3",
-    topicId: "kitchen-items",
-    wordIds: [
-      "dish-rack",
-      "cling-film",
-    ],
-    description: "Learn about kitchen items 3.",
-    story: 'In the Kitchen Items 3 lesson, we learned about some very useful things. For example, we saw the dish-rack and the cling-film. We also explored how the undefined works. Finally, we looked at the undefined and the undefined to complete our understanding.'
-  },
-  {
-    id: "basic-pantry-1",
-    name: "Basic Pantry 1",
+    id: "basic-pantry",
+    name: "Basic Pantry",
     topicId: "basic-pantry",
-    wordIds: [
-      "bread",
-      "butter",
-      "milk",
-      "egg",
-      "cheese",
-    ],
-    description: "Learn about basic pantry 1.",
-    story: 'In the Basic Pantry 1 lesson, we learned about some very useful things. For example, we saw the bread and the butter. We also explored how the milk works. Finally, we looked at the egg and the cheese to complete our understanding.'
-  },
-  {
-    id: "basic-pantry-2",
-    name: "Basic Pantry 2",
-    topicId: "basic-pantry",
-    wordIds: [
-      "rice",
-      "pasta",
-      "cooking-oil",
-      "salt",
-      "sugar",
-    ],
-    description: "Learn about basic pantry 2.",
-    story: 'In the Basic Pantry 2 lesson, we learned about some very useful things. For example, we saw the rice and the pasta. We also explored how the cooking-oil works. Finally, we looked at the salt and the sugar to complete our understanding.'
-  },
-  {
-    id: "basic-pantry-3",
-    name: "Basic Pantry 3",
-    topicId: "basic-pantry",
-    wordIds: [
-      "pepper",
-      "flour",
-      "vinegar",
-      "honey",
-    ],
-    description: "Learn about basic pantry 3.",
-    story: 'In the Basic Pantry 3 lesson, we learned about some very useful things. For example, we saw the pepper and the flour. We also explored how the vinegar works. Finally, we looked at the honey and the undefined to complete our understanding.'
+    wordIds: ['bread','butter','milk','egg','cheese','rice','pasta','cooking-oil','salt','sugar','pepper','flour','vinegar','honey'],
+    description: "Learn about basic pantry.",
+    story: "In the Basic Pantry 1 lesson, we learned about some very useful things. For example, we saw the bread and the butter. We also explored how the milk works. Finally, we looked at the egg and the cheese to complete our understanding. In the Basic Pantry 2 lesson, we learned about some very useful things. For example, we saw the rice and the pasta. We also explored how the cooking-oil works. Finally, we looked at the salt and the sugar to complete our understanding. In the Basic Pantry 3 lesson, we learned about some very useful things. For example, we saw the pepper and the flour. We also explored how the vinegar works. Finally, we looked at the honey and the undefined to complete our understanding."
   },
 ];
 
@@ -1544,114 +1258,52 @@ export const LIVING_ROOM_TOPICS: TopicCategory[] = [
 
 export const LIVING_ROOM_GROUPS: Lesson[] = [
   {
-    id: "living-room-seating-tables",
+    id: "seating-tables",
     name: "Seating & Tables",
     topicId: "seating-tables",
-    description: "Learn vocabulary related to seating & tables.",
-    wordIds: [
-      "sofa",
-      "armchair",
-      "coffee-table",
-      "side-table",
-      "ottoman",
-      "rocking-chair",
-      "dining-table",
-      "dining-chair",
-      "bench",
-      "stool",
-    ],
+    wordIds: ['sofa','armchair','coffee-table','side-table','ottoman','rocking-chair','dining-table','dining-chair','bench','stool'],
+    description: "Learn about seating & tables.",
+    story: undefined
   },
   {
-    id: "living-room-storage-display",
+    id: "storage-display",
     name: "Storage & Display",
     topicId: "storage-display",
-    description: "Learn vocabulary related to storage & display.",
-    story: 'In the Seating & Tables lesson, we learned about some very useful things. For example, we saw the sofa and the armchair. We also explored how the coffee-table works. Finally, we looked at the side-table and the ottoman to complete our understanding.',
-    wordIds: [
-      "bookshelf",
-      "tv-stand",
-      "cabinet",
-      "sideboard",
-      "shelf",
-      "drawer",
-      "magazine-rack",
-      "display-case",
-      "coat-rack",
-      "shoe-rack",
-    ],
+    wordIds: ['bookshelf','tv-stand','cabinet','sideboard','shelf','drawer','magazine-rack','display-case','coat-rack','shoe-rack'],
+    description: "Learn about storage & display.",
+    story: "In the Seating & Tables lesson, we learned about some very useful things. For example, we saw the sofa and the armchair. We also explored how the coffee-table works. Finally, we looked at the side-table and the ottoman to complete our understanding."
   },
   {
-    id: "living-room-electronics-media",
+    id: "electronics-media",
     name: "Electronics & Media",
     topicId: "electronics-media",
-    description: "Learn vocabulary related to electronics & media.",
-    wordIds: [
-      "television",
-      "remote-control",
-      "speaker",
-      "game-console",
-      "dvd-player",
-      "sound-bar",
-      "wi-fi-router",
-      "power-strip",
-      "cable",
-      "plug",
-    ],
+    wordIds: ['television','remote-control','speaker','game-console','dvd-player','sound-bar','wi-fi-router','power-strip','cable','plug'],
+    description: "Learn about electronics & media.",
+    story: undefined
   },
   {
-    id: "living-room-lighting-decor",
+    id: "lighting-decor",
     name: "Lighting & Decor",
     topicId: "lighting-decor",
-    description: "Learn vocabulary related to lighting & decor.",
-    story: 'In the Electronics & Media lesson, we learned about some very useful things. For example, we saw the television and the remote-control. We also explored how the speaker works. Finally, we looked at the game-console and the dvd-player to complete our understanding.',
-    wordIds: [
-      "floor-lamp",
-      "table-lamp",
-      "ceiling-light",
-      "chandelier",
-      "light-bulb",
-      "candle",
-      "candle-holder",
-      "string-lights",
-      "picture-frame",
-      "wall-clock",
-    ],
+    wordIds: ['floor-lamp','table-lamp','ceiling-light','chandelier','light-bulb','candle','candle-holder','string-lights','picture-frame','wall-clock'],
+    description: "Learn about lighting & decor.",
+    story: "In the Electronics & Media lesson, we learned about some very useful things. For example, we saw the television and the remote-control. We also explored how the speaker works. Finally, we looked at the game-console and the dvd-player to complete our understanding."
   },
   {
-    id: "living-room-soft-furnishings",
+    id: "soft-furnishings",
     name: "Soft & Furnishings",
     topicId: "soft-furnishings",
-    description: "Learn vocabulary related to soft & furnishings.",
-    wordIds: [
-      "cushion",
-      "throw-blanket",
-      "rug",
-      "carpet",
-      "curtain",
-      "tablecloth",
-      "placemat",
-      "coaster",
-      "doormat",
-      "tapestry",
-    ],
+    wordIds: ['cushion','throw-blanket','rug','carpet','curtain','tablecloth','placemat','coaster','doormat','tapestry'],
+    description: "Learn about soft & furnishings.",
+    story: undefined
   },
   {
-    id: "living-room-living-room-objects",
+    id: "living-room-objects",
     name: "Living Room Objects",
     topicId: "living-room-objects",
-    description: "Learn vocabulary related to living room objects.",
-    story: 'In the Soft & Furnishings lesson, we learned about some very useful things. For example, we saw the cushion and the throw-blanket. We also explored how the rug works. Finally, we looked at the carpet and the curtain to complete our understanding.',
-    wordIds: [
-      "plant",
-      "vase",
-      "photo-frame",
-      "painting",
-      "book",
-      "magazine",
-      "newspaper",
-      "board-game",
-      "puzzle",
-    ],
+    wordIds: ['plant','vase','photo-frame','painting','book','magazine','newspaper','board-game','puzzle'],
+    description: "Learn about living room objects.",
+    story: "In the Soft & Furnishings lesson, we learned about some very useful things. For example, we saw the cushion and the throw-blanket. We also explored how the rug works. Finally, we looked at the carpet and the curtain to complete our understanding."
   },
 ];
 
@@ -2135,7 +1787,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'cow',
     label: 'Cow',
     phonetic: '',
-    img: '/word-images/farm/cow.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/cow.webp`,
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
@@ -2143,7 +1795,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'pig',
     label: 'Pig',
     phonetic: '',
-    img: '/word-images/farm/pig.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/pig.webp`,
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
@@ -2151,7 +1803,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'sheep',
     label: 'Sheep',
     phonetic: '',
-    img: '/word-images/farm/sheep.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/sheep.webp`,
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
@@ -2159,7 +1811,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'chicken',
     label: 'Chicken',
     phonetic: '',
-    img: '/word-images/farm/chicken.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/chicken.webp`,
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
@@ -2167,7 +1819,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'horse',
     label: 'Horse',
     phonetic: '',
-    img: '/word-images/farm/horse.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/horse.webp`,
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
@@ -2175,7 +1827,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'goat',
     label: 'Goat',
     phonetic: '',
-    img: '/word-images/farm/goat.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/goat.webp`,
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
@@ -2183,7 +1835,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'duck',
     label: 'Duck',
     phonetic: '',
-    img: '/word-images/farm/duck.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/duck.webp`,
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
@@ -2191,7 +1843,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'rooster',
     label: 'Rooster',
     phonetic: '',
-    img: '/word-images/farm/rooster.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/rooster.webp`,
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
@@ -2199,7 +1851,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'turkey',
     label: 'Turkey',
     phonetic: '',
-    img: '/word-images/farm/turkey.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/turkey.webp`,
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
@@ -2207,7 +1859,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'donkey',
     label: 'Donkey',
     phonetic: '',
-    img: '/word-images/farm/donkey.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/donkey.webp`,
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
@@ -2215,7 +1867,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'rabbit',
     label: 'Rabbit',
     phonetic: '',
-    img: '/word-images/farm/rabbit.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/rabbit.webp`,
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
@@ -2223,7 +1875,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'goose',
     label: 'Goose',
     phonetic: '',
-    img: '/word-images/farm/goose.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/goose.webp`,
     topic: 'farm-farm-animals',
     description: 'An entity found in the agricultural area.'
   },
@@ -2231,7 +1883,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'barn',
     label: 'Barn',
     phonetic: '',
-    img: '/word-images/farm/barn.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/barn.webp`,
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
@@ -2239,7 +1891,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'farmhouse',
     label: 'Farmhouse',
     phonetic: '',
-    img: '/word-images/farm/farmhouse.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/farmhouse.webp`,
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
@@ -2247,7 +1899,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'stable',
     label: 'Stable',
     phonetic: '',
-    img: '/word-images/farm/stable.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/stable.webp`,
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
@@ -2255,7 +1907,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'hen-house',
     label: 'Hen House',
     phonetic: '',
-    img: '/word-images/farm/hen-house.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/hen-house.webp`,
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
@@ -2263,7 +1915,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'silo',
     label: 'Silo',
     phonetic: '',
-    img: '/word-images/farm/silo.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/silo.webp`,
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
@@ -2271,7 +1923,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'greenhouse',
     label: 'Greenhouse',
     phonetic: '',
-    img: '/word-images/farm/greenhouse.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/greenhouse.webp`,
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
@@ -2279,7 +1931,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'shed',
     label: 'Shed',
     phonetic: '',
-    img: '/word-images/farm/shed.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/shed.webp`,
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
@@ -2287,7 +1939,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'windmill',
     label: 'Windmill',
     phonetic: '',
-    img: '/word-images/farm/windmill.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/windmill.webp`,
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
@@ -2295,7 +1947,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'well',
     label: 'Well',
     phonetic: '',
-    img: '/word-images/farm/well.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/well.webp`,
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
@@ -2303,7 +1955,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'fence',
     label: 'Fence',
     phonetic: '',
-    img: '/word-images/farm/fence.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/fence.webp`,
     topic: 'farm-farm-buildings',
     description: 'An entity found in the agricultural area.'
   },
@@ -2311,7 +1963,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'tractor',
     label: 'Tractor',
     phonetic: '',
-    img: '/word-images/farm/tractor.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/tractor.webp`,
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
@@ -2319,7 +1971,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'plow',
     label: 'Plow',
     phonetic: '',
-    img: '/word-images/farm/plow.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/plow.webp`,
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
@@ -2327,7 +1979,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'trailer',
     label: 'Trailer',
     phonetic: '',
-    img: '/word-images/farm/trailer.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/trailer.webp`,
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
@@ -2335,7 +1987,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'wheelbarrow',
     label: 'Wheelbarrow',
     phonetic: '',
-    img: '/word-images/farm/wheelbarrow.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/wheelbarrow.webp`,
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
@@ -2343,7 +1995,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'pitchfork',
     label: 'Pitchfork',
     phonetic: '',
-    img: '/word-images/farm/pitchfork.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/pitchfork.webp`,
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
@@ -2351,7 +2003,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'shovel',
     label: 'Shovel',
     phonetic: '',
-    img: '/word-images/farm/shovel.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/shovel.webp`,
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
@@ -2359,7 +2011,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'hoe',
     label: 'Hoe',
     phonetic: '',
-    img: '/word-images/farm/hoe.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/hoe.webp`,
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
@@ -2367,7 +2019,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'rake',
     label: 'Rake',
     phonetic: '',
-    img: '/word-images/farm/rake.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/rake.webp`,
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
@@ -2375,7 +2027,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'bucket',
     label: 'Bucket',
     phonetic: '',
-    img: '/word-images/farm/bucket.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/bucket.webp`,
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
@@ -2383,7 +2035,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'watering-can',
     label: 'Watering Can',
     phonetic: '',
-    img: '/word-images/farm/watering-can.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/watering-can.webp`,
     topic: 'farm-farm-equipment',
     description: 'An entity found in the agricultural area.'
   },
@@ -2391,7 +2043,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'milk',
     label: 'Milk',
     phonetic: '',
-    img: '/word-images/farm/milk.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/milk.webp`,
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
@@ -2399,7 +2051,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'egg',
     label: 'Egg',
     phonetic: '',
-    img: '/word-images/farm/egg.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/egg.webp`,
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
@@ -2407,7 +2059,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'wool',
     label: 'Wool',
     phonetic: '',
-    img: '/word-images/farm/wool.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/wool.webp`,
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
@@ -2415,7 +2067,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'cheese',
     label: 'Cheese',
     phonetic: '',
-    img: '/word-images/farm/cheese.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/cheese.webp`,
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
@@ -2423,7 +2075,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'butter',
     label: 'Butter',
     phonetic: '',
-    img: '/word-images/farm/butter.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/butter.webp`,
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
@@ -2431,7 +2083,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'honey',
     label: 'Honey',
     phonetic: '',
-    img: '/word-images/farm/honey.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/honey.webp`,
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
@@ -2439,7 +2091,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'hay',
     label: 'Hay',
     phonetic: '',
-    img: '/word-images/farm/hay.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/hay.webp`,
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
@@ -2447,7 +2099,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'straw',
     label: 'Straw',
     phonetic: '',
-    img: '/word-images/farm/straw.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/straw.webp`,
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
@@ -2455,7 +2107,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'flour',
     label: 'Flour',
     phonetic: '',
-    img: '/word-images/farm/flour.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/flour.webp`,
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
@@ -2463,7 +2115,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'jam',
     label: 'Jam',
     phonetic: '',
-    img: '/word-images/farm/jam.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/jam.webp`,
     topic: 'farm-farm-products',
     description: 'An entity found in the agricultural area.'
   },
@@ -2471,7 +2123,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'farmer',
     label: 'Farmer',
     phonetic: '',
-    img: '/word-images/farm/farmer.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/farmer.webp`,
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
@@ -2479,7 +2131,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'scarecrow',
     label: 'Scarecrow',
     phonetic: '',
-    img: '/word-images/farm/scarecrow.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/scarecrow.webp`,
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
@@ -2487,7 +2139,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'dog',
     label: 'Dog',
     phonetic: '',
-    img: '/word-images/farm/dog.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/dog.webp`,
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
@@ -2495,7 +2147,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'cat',
     label: 'Cat',
     phonetic: '',
-    img: '/word-images/farm/cat.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/cat.webp`,
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
@@ -2503,7 +2155,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'pond',
     label: 'Pond',
     phonetic: '',
-    img: '/word-images/farm/pond.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/pond.webp`,
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
@@ -2511,7 +2163,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'mud',
     label: 'Mud',
     phonetic: '',
-    img: '/word-images/farm/mud.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/mud.webp`,
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
@@ -2519,7 +2171,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'sunrise',
     label: 'Sunrise',
     phonetic: '',
-    img: '/word-images/farm/sunrise.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/sunrise.webp`,
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
@@ -2527,7 +2179,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'sunset',
     label: 'Sunset',
     phonetic: '',
-    img: '/word-images/farm/sunset.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/sunset.webp`,
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
@@ -2535,7 +2187,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'rain',
     label: 'Rain',
     phonetic: '',
-    img: '/word-images/farm/rain.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/rain.webp`,
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
@@ -2543,7 +2195,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     id: 'harvest',
     label: 'Harvest',
     phonetic: '',
-    img: '/word-images/farm/harvest.webp',
+    img: `${LOCAL_WORD_IMAGES}/farm/harvest.webp`,
     topic: 'farm-farm-life',
     description: 'An entity found in the agricultural area.'
   },
@@ -2579,92 +2231,44 @@ export const FARM_TOPICS: TopicCategory[] = [
 
 export const FARM_GROUPS: Lesson[] = [
   {
-    id: 'farm-farm-animals-1',
-    name: 'Farm Animals 1',
-    topicId: 'farm-farm-animals',
-    wordIds: ['cow', 'pig', 'sheep', 'chicken', 'horse'],
-    description: 'Learn about farm animals 1.',
-    story: 'The farmer milked the cow early in the morning while the muddy pig rolled in the pen. A fluffy sheep grazed peacefully in the meadow. A loud chicken pecked at the ground, and a fast horse galloped across the open field.'
+    id: "farm-farm-animals",
+    name: "Farm Animals",
+    topicId: "farm-farm-animals",
+    wordIds: ['cow','pig','sheep','chicken','horse','goat','duck','rooster','turkey','donkey','rabbit','goose'],
+    description: "Learn about farm animals.",
+    story: "The farmer milked the cow early in the morning while the muddy pig rolled in the pen. A fluffy sheep grazed peacefully in the meadow. A loud chicken pecked at the ground, and a fast horse galloped across the open field. A curious goat chewed on the wooden fence. The white duck swam across the pond, followed by a proud rooster that crowed loudly. A large turkey strutted proudly near the barn, and a stubborn donkey refused to move. A quick rabbit hopped past the vegetable garden. The white goose chased away the stray dog that wandered too close to the nest."
   },
   {
-    id: 'farm-farm-animals-2',
-    name: 'Farm Animals 2',
-    topicId: 'farm-farm-animals',
-    wordIds: ['goat', 'duck', 'rooster', 'turkey', 'donkey'],
-    description: 'Learn about farm animals 2.',
-    story: 'A curious goat chewed on the wooden fence. The white duck swam across the pond, followed by a proud rooster that crowed loudly. A large turkey strutted proudly near the barn, and a stubborn donkey refused to move.'
+    id: "farm-farm-buildings",
+    name: "Farm Buildings",
+    topicId: "farm-farm-buildings",
+    wordIds: ['barn','farmhouse','stable','hen-house','silo','greenhouse','shed','windmill','well','fence'],
+    description: "Learn about farm buildings.",
+    story: "The animals slept safely in the large red barn. The farmer's family lived in the cozy farmhouse nearby. The horses were kept warm in the stable, the hens laid eggs in the hen-house, and the tall silo stored all the winter grain. Delicate plants thrived inside the warm greenhouse. Tools were locked safely in the wooden shed. The spinning windmill pumped water from the deep well, and a sturdy fence kept the animals from wandering away."
   },
   {
-    id: 'farm-farm-animals-3',
-    name: 'Farm Animals 3',
-    topicId: 'farm-farm-animals',
-    wordIds: ['rabbit', 'goose'],
-    description: 'Learn about farm animals 3.',
-    story: 'A quick rabbit hopped past the vegetable garden. The white goose chased away the stray dog that wandered too close to the nest.'
+    id: "farm-farm-equipment",
+    name: "Farm Equipment",
+    topicId: "farm-farm-equipment",
+    wordIds: ['tractor','plow','trailer','wheelbarrow','pitchfork','shovel','hoe','rake','bucket','watering-can'],
+    description: "Learn about farm equipment.",
+    story: "The heavy green tractor rumbled across the field, pulling a sharp plow to turn the soil. A loaded trailer carried the harvest back to the barn. He pushed a full wheelbarrow of dirt and used a pitchfork to move the hay. A sturdy shovel was used to dig the deep holes. She grabbed the hoe to clear the weeds and a rake to gather the fallen leaves. The heavy metal bucket was filled with water from the well using a small watering-can."
   },
   {
-    id: 'farm-farm-buildings-1',
-    name: 'Farm Buildings 1',
-    topicId: 'farm-farm-buildings',
-    wordIds: ['barn', 'farmhouse', 'stable', 'hen-house', 'silo'],
-    description: 'Learn about farm buildings 1.',
-    story: 'The animals slept safely in the large red barn. The farmer\'s family lived in the cozy farmhouse nearby. The horses were kept warm in the stable, the hens laid eggs in the hen-house, and the tall silo stored all the winter grain.'
+    id: "farm-farm-products",
+    name: "Farm Products",
+    topicId: "farm-farm-products",
+    wordIds: ['milk','egg','wool','cheese','butter','honey','hay','straw','flour','jam'],
+    description: "Learn about farm products.",
+    story: "Every morning, fresh milk was collected from the cows. The children gathered a brown egg from the coop. Warm wool was sheared from the sheep, then processed to make cheese and churned into creamy butter. Sweet golden honey was harvested from the buzzing hives. The dry hay was stacked high for winter feed. Bundles of straw were used for animal bedding, while fresh flour was milled and sweet fruit jam was preserved in jars."
   },
   {
-    id: 'farm-farm-buildings-2',
-    name: 'Farm Buildings 2',
-    topicId: 'farm-farm-buildings',
-    wordIds: ['greenhouse', 'shed', 'windmill', 'well', 'fence'],
-    description: 'Learn about farm buildings 2.',
-    story: 'Delicate plants thrived inside the warm greenhouse. Tools were locked safely in the wooden shed. The spinning windmill pumped water from the deep well, and a sturdy fence kept the animals from wandering away.'
-  },
-  {
-    id: 'farm-farm-equipment-1',
-    name: 'Farm Equipment 1',
-    topicId: 'farm-farm-equipment',
-    wordIds: ['tractor', 'plow', 'trailer', 'wheelbarrow', 'pitchfork'],
-    description: 'Learn about farm equipment 1.',
-    story: 'The heavy green tractor rumbled across the field, pulling a sharp plow to turn the soil. A loaded trailer carried the harvest back to the barn. He pushed a full wheelbarrow of dirt and used a pitchfork to move the hay.'
-  },
-  {
-    id: 'farm-farm-equipment-2',
-    name: 'Farm Equipment 2',
-    topicId: 'farm-farm-equipment',
-    wordIds: ['shovel', 'hoe', 'rake', 'bucket', 'watering-can'],
-    description: 'Learn about farm equipment 2.',
-    story: 'A sturdy shovel was used to dig the deep holes. She grabbed the hoe to clear the weeds and a rake to gather the fallen leaves. The heavy metal bucket was filled with water from the well using a small watering-can.'
-  },
-  {
-    id: 'farm-farm-products-1',
-    name: 'Farm Products 1',
-    topicId: 'farm-farm-products',
-    wordIds: ['milk', 'egg', 'wool', 'cheese', 'butter'],
-    description: 'Learn about farm products 1.',
-    story: 'Every morning, fresh milk was collected from the cows. The children gathered a brown egg from the coop. Warm wool was sheared from the sheep, then processed to make cheese and churned into creamy butter.'
-  },
-  {
-    id: 'farm-farm-products-2',
-    name: 'Farm Products 2',
-    topicId: 'farm-farm-products',
-    wordIds: ['honey', 'hay', 'straw', 'flour', 'jam'],
-    description: 'Learn about farm products 2.',
-    story: 'Sweet golden honey was harvested from the buzzing hives. The dry hay was stacked high for winter feed. Bundles of straw were used for animal bedding, while fresh flour was milled and sweet fruit jam was preserved in jars.'
-  },
-  {
-    id: 'farm-farm-life-1',
-    name: 'Farm Life 1',
-    topicId: 'farm-farm-life',
-    wordIds: ['farmer', 'scarecrow', 'dog', 'cat', 'pond'],
-    description: 'Learn about farm life 1.',
-    story: 'The hardworking farmer woke up before dawn. A scary scarecrow stood guard in the cornfield. The loyal dog herded the sheep while a sleepy cat napped in the barn. Frogs croaked loudly from the muddy pond.'
-  },
-  {
-    id: 'farm-farm-life-2',
-    name: 'Farm Life 2',
-    topicId: 'farm-farm-life',
-    wordIds: ['mud', 'sunrise', 'sunset', 'rain', 'harvest'],
-    description: 'Learn about farm life 2.',
-    story: 'Thick mud covered the tractor tires after the storm. The beautiful sunrise marked the beginning of a long day, and the colorful sunset signaled time for rest. The heavy rain nourished the crops, ensuring a plentiful harvest.'
+    id: "farm-farm-life",
+    name: "Farm Life",
+    topicId: "farm-farm-life",
+    wordIds: ['farmer','scarecrow','dog','cat','pond','mud','sunrise','sunset','rain','harvest'],
+    description: "Learn about farm life.",
+    story: "The hardworking farmer woke up before dawn. A scary scarecrow stood guard in the cornfield. The loyal dog herded the sheep while a sleepy cat napped in the barn. Frogs croaked loudly from the muddy pond. Thick mud covered the tractor tires after the storm. The beautiful sunrise marked the beginning of a long day, and the colorful sunset signaled time for rest. The heavy rain nourished the crops, ensuring a plentiful harvest."
   },
 ];
 
