@@ -2098,6 +2098,466 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
   },
 ];
 
+export const FARM_VOCABULARY: Record<string, VocabularyItem> = {
+  'cow': {
+    id: 'cow',
+    label: 'Cow',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/cow.webp'
+  },
+  'pig': {
+    id: 'pig',
+    label: 'Pig',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/pig.webp'
+  },
+  'sheep': {
+    id: 'sheep',
+    label: 'Sheep',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/sheep.webp'
+  },
+  'chicken': {
+    id: 'chicken',
+    label: 'Chicken',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/chicken.webp'
+  },
+  'horse': {
+    id: 'horse',
+    label: 'Horse',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/horse.webp'
+  },
+  'goat': {
+    id: 'goat',
+    label: 'Goat',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/goat.webp'
+  },
+  'duck': {
+    id: 'duck',
+    label: 'Duck',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/duck.webp'
+  },
+  'rooster': {
+    id: 'rooster',
+    label: 'Rooster',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/rooster.webp'
+  },
+  'turkey': {
+    id: 'turkey',
+    label: 'Turkey',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/turkey.webp'
+  },
+  'donkey': {
+    id: 'donkey',
+    label: 'Donkey',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/donkey.webp'
+  },
+  'rabbit': {
+    id: 'rabbit',
+    label: 'Rabbit',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/rabbit.webp'
+  },
+  'goose': {
+    id: 'goose',
+    label: 'Goose',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/goose.webp'
+  },
+  'barn': {
+    id: 'barn',
+    label: 'Barn',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/barn.webp'
+  },
+  'farmhouse': {
+    id: 'farmhouse',
+    label: 'Farmhouse',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/farmhouse.webp'
+  },
+  'stable': {
+    id: 'stable',
+    label: 'Stable',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/stable.webp'
+  },
+  'hen-house': {
+    id: 'hen-house',
+    label: 'Hen House',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/hen-house.webp'
+  },
+  'silo': {
+    id: 'silo',
+    label: 'Silo',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/silo.webp'
+  },
+  'greenhouse': {
+    id: 'greenhouse',
+    label: 'Greenhouse',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/greenhouse.webp'
+  },
+  'shed': {
+    id: 'shed',
+    label: 'Shed',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/shed.webp'
+  },
+  'windmill': {
+    id: 'windmill',
+    label: 'Windmill',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/windmill.webp'
+  },
+  'well': {
+    id: 'well',
+    label: 'Well',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/well.webp'
+  },
+  'fence': {
+    id: 'fence',
+    label: 'Fence',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/fence.webp'
+  },
+  'tractor': {
+    id: 'tractor',
+    label: 'Tractor',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/tractor.webp'
+  },
+  'plow': {
+    id: 'plow',
+    label: 'Plow',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/plow.webp'
+  },
+  'trailer': {
+    id: 'trailer',
+    label: 'Trailer',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/trailer.webp'
+  },
+  'wheelbarrow': {
+    id: 'wheelbarrow',
+    label: 'Wheelbarrow',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/wheelbarrow.webp'
+  },
+  'pitchfork': {
+    id: 'pitchfork',
+    label: 'Pitchfork',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/pitchfork.webp'
+  },
+  'shovel': {
+    id: 'shovel',
+    label: 'Shovel',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/shovel.webp'
+  },
+  'hoe': {
+    id: 'hoe',
+    label: 'Hoe',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/hoe.webp'
+  },
+  'rake': {
+    id: 'rake',
+    label: 'Rake',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/rake.webp'
+  },
+  'bucket': {
+    id: 'bucket',
+    label: 'Bucket',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/bucket.webp'
+  },
+  'watering-can': {
+    id: 'watering-can',
+    label: 'Watering Can',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/watering-can.webp'
+  },
+  'milk': {
+    id: 'milk',
+    label: 'Milk',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/milk.webp'
+  },
+  'egg': {
+    id: 'egg',
+    label: 'Egg',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/egg.webp'
+  },
+  'wool': {
+    id: 'wool',
+    label: 'Wool',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/wool.webp'
+  },
+  'cheese': {
+    id: 'cheese',
+    label: 'Cheese',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/cheese.webp'
+  },
+  'butter': {
+    id: 'butter',
+    label: 'Butter',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/butter.webp'
+  },
+  'honey': {
+    id: 'honey',
+    label: 'Honey',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/honey.webp'
+  },
+  'hay': {
+    id: 'hay',
+    label: 'Hay',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/hay.webp'
+  },
+  'straw': {
+    id: 'straw',
+    label: 'Straw',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/straw.webp'
+  },
+  'flour': {
+    id: 'flour',
+    label: 'Flour',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/flour.webp'
+  },
+  'jam': {
+    id: 'jam',
+    label: 'Jam',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/jam.webp'
+  },
+  'farmer': {
+    id: 'farmer',
+    label: 'Farmer',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/farmer.webp'
+  },
+  'scarecrow': {
+    id: 'scarecrow',
+    label: 'Scarecrow',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/scarecrow.webp'
+  },
+  'dog': {
+    id: 'dog',
+    label: 'Dog',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/dog.webp'
+  },
+  'cat': {
+    id: 'cat',
+    label: 'Cat',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/cat.webp'
+  },
+  'pond': {
+    id: 'pond',
+    label: 'Pond',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/pond.webp'
+  },
+  'mud': {
+    id: 'mud',
+    label: 'Mud',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/mud.webp'
+  },
+  'sunrise': {
+    id: 'sunrise',
+    label: 'Sunrise',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/sunrise.webp'
+  },
+  'sunset': {
+    id: 'sunset',
+    label: 'Sunset',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/sunset.webp'
+  },
+  'rain': {
+    id: 'rain',
+    label: 'Rain',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/rain.webp'
+  },
+  'harvest': {
+    id: 'harvest',
+    label: 'Harvest',
+    phonetic: '',
+    description: 'An entity found in the agricultural area.',
+    category: 'noun',
+    image: '/word-images/farm/harvest.webp'
+  },
+};
+
+export const FARM_TOPICS: Record<string, TopicCategory> = {
+  'farm-farm-animals': {
+    id: 'farm-farm-animals',
+    title: 'Farm Animals',
+    words: ['cow', 'pig', 'sheep', 'chicken', 'horse', 'goat', 'duck', 'rooster', 'turkey', 'donkey', 'rabbit', 'goose']
+  },
+  'farm-farm-buildings': {
+    id: 'farm-farm-buildings',
+    title: 'Farm Buildings',
+    words: ['barn', 'farmhouse', 'stable', 'hen-house', 'silo', 'greenhouse', 'shed', 'windmill', 'well', 'fence']
+  },
+  'farm-farm-equipment': {
+    id: 'farm-farm-equipment',
+    title: 'Farm Equipment',
+    words: ['tractor', 'plow', 'trailer', 'wheelbarrow', 'pitchfork', 'shovel', 'hoe', 'rake', 'bucket', 'watering-can']
+  },
+  'farm-farm-products': {
+    id: 'farm-farm-products',
+    title: 'Farm Products',
+    words: ['milk', 'egg', 'wool', 'cheese', 'butter', 'honey', 'hay', 'straw', 'flour', 'jam']
+  },
+  'farm-farm-life': {
+    id: 'farm-farm-life',
+    title: 'Farm Life',
+    words: ['farmer', 'scarecrow', 'dog', 'cat', 'pond', 'mud', 'sunrise', 'sunset', 'rain', 'harvest']
+  },
+};
+
+export const FARM_GROUPS: Lesson[] = [
+  {
+    id: 'farm-group-1',
+    title: 'Farm Part 1',
+    topics: ['farm-farm-animals', 'farm-farm-buildings', 'farm-farm-equipment']
+  },
+  {
+    id: 'farm-group-2',
+    title: 'Farm Part 2',
+    topics: ['farm-farm-products', 'farm-farm-life']
+  },
+];
+
 export const COURSE_UNITS: Record<string, CourseUnit> = {
   kitchen: {
     id: "kitchen",
