@@ -237,7 +237,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                     altMode="assessment"
                     optionIndex={idx}
                     checked={isSelected || isRevealedAnswer}
-                    className="size-full object-cover object-center block"
+                    className="size-full object-contain object-center block"
                   />
                   {isRevealedAnswer && (
                     <motion.div 

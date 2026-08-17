@@ -134,7 +134,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
 
         {/* Fluid Hero Target Image Display */}
         <div className="h-80 sm:h-96 md:h-[400px] max-h-[50vh] w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-md bg-muted shrink-0">
-          <WordImage word={currentTargetWord} width="800" height="500" className="size-full object-cover" />
+          <WordImage word={currentTargetWord} width="800" height="500" className="size-full object-contain" />
         </div>
 
         {/* Centered Rich Sentence Display Box */}

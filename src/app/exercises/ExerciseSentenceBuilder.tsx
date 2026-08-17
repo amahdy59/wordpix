@@ -149,7 +149,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
 
         {/* Fluid Hero Target Image Display */}
         <div className="h-80 sm:h-96 md:h-[400px] max-h-[50vh] w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-md bg-muted shrink-0">
-          <WordImage word={currentTargetWord} width="800" height="500" className="size-full object-cover" />
+          <WordImage word={currentTargetWord} width="800" height="500" className="size-full object-contain" />
           {/* Ties the picture to the word it illustrates instead of leaving it
               a disconnected decorative photo. */}
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-3 pt-6 pb-2.5 pointer-events-none">

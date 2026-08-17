@@ -194,7 +194,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                     altMode="assessment"
                     optionIndex={idx}
                     checked={isSelected || isRevealedAnswer}
-                    className="size-full object-cover object-center block"
+                    className="size-full object-contain object-center block"
                   />
                   {isRevealedAnswer && (
                     <motion.div 

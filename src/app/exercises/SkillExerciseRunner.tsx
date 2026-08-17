@@ -214,7 +214,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({ definitio
               width="600"
               height="400"
               altMode={task.kind === "choice" && !task.optionsAreImages ? "assessment" : "learning"}
-              className="size-full object-cover"
+              className="size-full object-contain"
             />
           </div>
         )}
