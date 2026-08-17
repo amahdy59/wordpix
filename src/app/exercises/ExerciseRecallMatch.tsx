@@ -51,7 +51,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
     finalOptions.splice(correctIndex, 0, currentTargetWord);
     
     return finalOptions;
-  }, [currentTargetWord, lessonId]);
+  }, [currentTargetWord]);
 
   /** Clears the result and lets the queue's next question render. */
   const advanceNext = useCallback(() => {

@@ -29,7 +29,7 @@ describe("WordPix navigation and group lesson reducer", () => {
 
     // Calling LESSON_PREVIOUS on step 0 returns to lesson-entry overview
     state = reducer(state, { type: "LESSON_PREVIOUS" });
-    expect(state).toEqual({ id: "lesson-entry" });
+    expect(state).toEqual({ id: "lesson-entry", unitId: "bedroom" });
   });
 
   it("records attempts and carries them into group completion results", () => {
