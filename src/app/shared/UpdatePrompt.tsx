@@ -73,7 +73,7 @@ export function UpdatePrompt() {
                 <span className="font-sans font-bold text-xs uppercase tracking-wider">What's New</span>
               </div>
               <ul className="flex flex-col gap-2">
-                {updateData.notes.slice(0, 4).map((note, idx) => (
+                {updateData.notes.slice(0, 3).map((note, idx) => (
                   <li key={idx} className="font-sans text-sm text-foreground flex items-start gap-2">
                     <span className="text-wp-blue shrink-0 mt-0.5">•</span>
                     <span className="leading-tight">{note}</span>
