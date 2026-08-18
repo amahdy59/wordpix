@@ -45,8 +45,6 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
   useEffect(() => () => stop(), [stop]);
 
-
-
   // Speaks whichever word becomes active, however it was reached — the timer
   // above, an arrow, or the group strip.
   useEffect(() => {
@@ -60,9 +58,10 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
     setActiveWordIndex(index);
   }, []);
 
-  const handleToggle = () => { if (isPlaying) stop(); else playWord(); };
-
-
+  const handleToggle = () => {
+    if (isPlaying) stop();
+    else playWord();
+  };
 
   return (
     <ExerciseShell
@@ -73,7 +72,13 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
       dispatch={dispatch}
       footer={
         <div className="flex flex-col gap-2">
-          <PrimaryButton label="Continue to Context Sentences →" onClick={() => { stop(); dispatch({ type: "LESSON_NEXT" }); }} />
+          <PrimaryButton
+            label="Continue to Context Sentences →"
+            onClick={() => {
+              stop();
+              dispatch({ type: "LESSON_NEXT" });
+            }}
+          />
         </div>
       }
     >
@@ -82,9 +87,12 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
       </div>
 
       <div className="flex flex-col gap-4 sm:gap-6 w-full mt-2 sm:mt-4">
-
         {/* Compact Word Selector Grid (No text, tight bounding box) */}
-        <div className="flex justify-center gap-2 sm:gap-3" role="tablist" aria-label="Group vocabulary words">
+        <div
+          className="flex justify-center gap-2 sm:gap-3"
+          role="tablist"
+          aria-label="Group vocabulary words"
+        >
           {words.map((w, index) => {
             const isSelected = index === activeWordIndex;
             return (
@@ -111,8 +119,8 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         </div>
 
         {/* Fluid Target Image Banner */}
-        <div className="w-full relative rounded-3xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2">
-          <WordImage word={currentWord} className="w-full h-auto block object-contain" />
+        <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2">
+          <WordImage word={currentWord} className="w-full h-auto block object-contain rounded-xl" />
           <div className="absolute top-3 start-3 sm:top-4 sm:start-4 bg-black/65 backdrop-blur-md text-white font-sans font-bold text-[11px] sm:text-xs px-3 py-1.5 rounded-xl border border-white/20 shadow-md flex items-center gap-1.5">
             <Sparkles className="size-3.5 text-wp-amber animate-pulse" />
             <span>Target Visual</span>
@@ -151,8 +159,12 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               <Volume2 className={`size-6 sm:size-7 ${isPlaying ? "animate-pulse" : ""}`} />
             </button>
             <div className="flex items-baseline gap-2 sm:gap-3">
-              <span className="font-sans font-black text-foreground text-3xl sm:text-4xl lg:text-5xl">{currentWord.label}</span>
-              <span className="font-sans font-medium text-muted-foreground text-lg sm:text-xl lg:text-2xl">/{currentWord.phonetic}/</span>
+              <span className="font-sans font-black text-foreground text-3xl sm:text-4xl lg:text-5xl">
+                {currentWord.label}
+              </span>
+              <span className="font-sans font-medium text-muted-foreground text-lg sm:text-xl lg:text-2xl">
+                /{currentWord.phonetic}/
+              </span>
             </div>
           </div>
         </div>

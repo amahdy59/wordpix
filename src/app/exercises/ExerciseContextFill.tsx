@@ -119,7 +119,9 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
             <Keyboard className="size-4" aria-hidden />
             <span>Press 1–{options.length} to choose a word</span>
           </div>
-          <span>Sentence {queue.position} of {queue.total}</span>
+          <span>
+            Sentence {queue.position} of {queue.total}
+          </span>
         </div>
       }
     >
@@ -132,9 +134,12 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
           </span>
         </div>
 
-        {/* Fluid Hero Target Image Display */}
-        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-md bg-muted shrink-0">
-          <WordImage word={currentTargetWord} className="w-full h-auto block object-contain" />
+        {/* Fluid Target Image Banner */}
+        <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2">
+          <WordImage
+            word={currentTargetWord}
+            className="w-full h-auto block object-contain rounded-xl"
+          />
         </div>
 
         {/* Centered Rich Sentence Display Box */}
@@ -175,7 +180,8 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
             const isSelected = selectedId === option.id;
             const isRevealedAnswer = feedback === "incorrect" && option.id === currentTargetWord.id;
 
-            let stateStyle = "bg-wp-card border-border text-foreground hover:border-primary/50 hover:shadow-md";
+            let stateStyle =
+              "bg-wp-card border-border text-foreground hover:border-primary/50 hover:shadow-md";
             if (isSelected) {
               stateStyle =
                 feedback === "correct"
@@ -199,7 +205,9 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
                 className={`rounded-xl p-3 sm:p-3.5 font-sans font-bold text-sm sm:text-base border-2 min-h-[48px] transition-colors duration-200 flex items-center justify-between shadow-wp-xs ${stateStyle} focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary`}
               >
                 <span className="capitalize">{option.label.toLowerCase()}</span>
-                <span className={`hidden sm:inline-block text-[11px] px-2 py-0.5 rounded-md font-bold ${isSelected || isRevealedAnswer ? "bg-white/20" : "bg-muted text-muted-foreground"}`}>
+                <span
+                  className={`hidden sm:inline-block text-[11px] px-2 py-0.5 rounded-md font-bold ${isSelected || isRevealedAnswer ? "bg-white/20" : "bg-muted text-muted-foreground"}`}
+                >
                   [{idx + 1}]
                 </span>
               </motion.button>

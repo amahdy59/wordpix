@@ -105,7 +105,11 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key !== "Backspace") return;
       const target = event.target as HTMLElement | null;
-      if (target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable)) return;
+      if (
+        target &&
+        (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable)
+      )
+        return;
       event.preventDefault();
       handleRemoveTile(placed.length - 1);
     };
@@ -133,7 +137,9 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
               ? `Tap tiles in order — ${answer.length - placed.length} to go`
               : "Next sentence coming up"}
           </span>
-          <span>Sentence {queue.position} of {queue.total}</span>
+          <span>
+            Sentence {queue.position} of {queue.total}
+          </span>
         </div>
       }
     >
@@ -147,9 +153,12 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
           </span>
         </div>
 
-        {/* Fluid Hero Target Image Display */}
-        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-md bg-muted shrink-0">
-          <WordImage word={currentTargetWord} className="w-full h-auto block object-contain" />
+        {/* Fluid Target Image Banner */}
+        <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2">
+          <WordImage
+            word={currentTargetWord}
+            className="w-full h-auto block object-contain rounded-xl"
+          />
           {/* Ties the picture to the word it illustrates instead of leaving it
               a disconnected decorative photo. */}
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-3 pt-6 pb-2.5 pointer-events-none">
@@ -166,8 +175,12 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
               Sentence Assembly Canvas
               {/* Correctness is never color-only: an icon carries the same
                   signal for colorblind learners. */}
-              {feedback === "correct" && <CheckCircle2 className="size-3.5 text-wp-green" aria-hidden />}
-              {feedback === "incorrect" && <XCircle className="size-3.5 text-wp-rose" aria-hidden />}
+              {feedback === "correct" && (
+                <CheckCircle2 className="size-3.5 text-wp-green" aria-hidden />
+              )}
+              {feedback === "incorrect" && (
+                <XCircle className="size-3.5 text-wp-rose" aria-hidden />
+              )}
             </span>
             {placed.length > 0 && feedback === null && (
               <button
@@ -237,7 +250,11 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
         </div>
 
         {/* Available Word Tiles */}
-        <div role="group" aria-label="Available words" className="flex flex-wrap gap-2.5 justify-center w-full">
+        <div
+          role="group"
+          aria-label="Available words"
+          className="flex flex-wrap gap-2.5 justify-center w-full"
+        >
           {shuffled.map((item, index) => {
             const usedCount = placed.filter((p) => p === item).length;
             const availableCount = shuffled.slice(0, index + 1).filter((t) => t === item).length;

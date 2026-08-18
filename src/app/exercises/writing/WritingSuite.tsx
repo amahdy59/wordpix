@@ -25,9 +25,13 @@ export const ExWritingResults = memo(function ExWritingResults({ dispatch }: Pro
       </div>
       <h1 className="font-sans font-black text-foreground text-3xl">Writing Complete!</h1>
       <p className="font-sans text-muted-foreground text-sm mt-1 max-w-md">
-        Writing drills are self-checked practice and are not scored. Head back to a lesson to earn XP toward your streak.
+        Writing drills are self-checked practice and are not scored. Head back to a lesson to earn
+        XP toward your streak.
       </p>
-      <PrimaryButton label="Return to Explore" onClick={() => dispatch({ type: "GO", to: "explore" })} />
+      <PrimaryButton
+        label="Return to Explore"
+        onClick={() => dispatch({ type: "GO", to: "explore" })}
+      />
     </div>
   );
 });
@@ -53,7 +57,12 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
   const [finished, setFinished] = useState(false);
 
   const finish = useCallback(() => setFinished(true), []);
-  const countdown = useCountdown({ seconds: SPRINT_SECONDS, enabled: timed, autoStart: timed, onExpire: finish });
+  const countdown = useCountdown({
+    seconds: SPRINT_SECONDS,
+    enabled: timed,
+    autoStart: timed,
+    onExpire: finish,
+  });
 
   const current = words[index];
   const isLast = index >= words.length - 1;
@@ -79,9 +88,18 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
   if (finished) {
     return (
       <div className="min-h-svh bg-background flex flex-col">
-        <LessonHeader title="Timed Speed Writing Sprint" current={9} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+        <LessonHeader
+          title="Timed Speed Writing Sprint"
+          current={9}
+          total={9}
+          onBack={() => dispatch({ type: "GO", to: "explore" })}
+          onClose={() => dispatch({ type: "GO", to: "home" })}
+        />
         <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
-          <div role="status" className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col items-center gap-2 text-center">
+          <div
+            role="status"
+            className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col items-center gap-2 text-center"
+          >
             <span className="font-sans font-black text-foreground text-3xl">
               {correct.length} of {correct.length + missed.length} spelled correctly
             </span>
@@ -94,7 +112,10 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
                     .join(", ")}`}
             </p>
           </div>
-          <PrimaryButton label="Back to Exercises" onClick={() => dispatch({ type: "GO", to: "explore" })} />
+          <PrimaryButton
+            label="Back to Exercises"
+            onClick={() => dispatch({ type: "GO", to: "explore" })}
+          />
         </main>
       </div>
     );
@@ -102,7 +123,13 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
 
   return (
     <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Timed Speed Writing Sprint" current={9} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+      <LessonHeader
+        title="Timed Speed Writing Sprint"
+        current={9}
+        total={9}
+        onBack={() => dispatch({ type: "GO", to: "explore" })}
+        onClose={() => dispatch({ type: "GO", to: "home" })}
+      />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <span className="font-sans font-bold text-sm text-foreground">
@@ -111,8 +138,13 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
           <ExerciseTimer countdown={countdown} enabled={timed} label="Sprint time remaining" />
         </div>
 
-        <div className="w-full rounded-3xl overflow-hidden border border-border shadow-wp-xs bg-muted">
-          <WordImage word={current} altMode="assessment" optionIndex={index} className="w-full h-auto block object-contain" />
+        <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2 mb-4">
+          <WordImage
+            word={current}
+            altMode="assessment"
+            optionIndex={index}
+            className="w-full h-auto block object-contain rounded-xl"
+          />
         </div>
 
         <form onSubmit={submit} className="flex flex-col gap-3">
