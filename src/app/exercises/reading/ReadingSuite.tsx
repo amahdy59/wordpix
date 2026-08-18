@@ -36,8 +36,11 @@ export const ExReadingVisualContext = memo(function ExReadingVisualContext({ dis
         onClose={() => dispatch({ type: "GO", to: "home" })}
       />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
-        <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0">
-          <WordImage word={target} className="w-full h-auto block object-contain rounded-xl" />
+        <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 flex flex-col justify-center">
+          <WordImage
+            word={target}
+            className="w-full h-auto max-h-[35vh] sm:max-h-[45vh] block object-contain rounded-xl"
+          />
         </div>
 
         <div className="grid grid-cols-2 gap-3">

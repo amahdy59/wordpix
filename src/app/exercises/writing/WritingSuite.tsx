@@ -138,12 +138,12 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
           <ExerciseTimer countdown={countdown} enabled={timed} label="Sprint time remaining" />
         </div>
 
-        <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2 mb-4">
+        <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2 mb-4 flex flex-col justify-center">
           <WordImage
             word={current}
             altMode="assessment"
             optionIndex={index}
-            className="w-full h-auto block object-contain rounded-xl"
+            className="w-full h-auto max-h-[30vh] sm:max-h-[40vh] block object-contain rounded-xl"
           />
         </div>
 

@@ -135,10 +135,10 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         </div>
 
         {/* Fluid Target Image Banner */}
-        <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2">
+        <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2 flex flex-col justify-center">
           <WordImage
             word={currentTargetWord}
-            className="w-full h-auto block object-contain rounded-xl"
+            className="w-full h-auto max-h-[35vh] sm:max-h-[45vh] block object-contain rounded-xl"
           />
         </div>
 
