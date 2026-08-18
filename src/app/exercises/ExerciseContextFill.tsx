@@ -125,7 +125,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         </div>
       }
     >
-      <div className="flex flex-col gap-3.5 sm:gap-4 w-full">
+      <div className="relative flex flex-col gap-3.5 sm:gap-4 w-full">
         {/* Question Counter Header */}
         <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
           <span>{queue.isRetry ? "Once more" : "Choose the missing word"}</span>

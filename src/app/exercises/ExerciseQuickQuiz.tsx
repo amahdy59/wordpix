@@ -41,12 +41,12 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
 
   const options = useMemo(() => {
     const distractors = getDistractors(currentTargetWord, 3);
-    
+
     const correctIndex = Math.floor(Math.random() * 4);
-    
+
     const finalOptions = [...distractors];
     finalOptions.splice(correctIndex, 0, currentTargetWord);
-    
+
     return finalOptions;
   }, [currentTargetWord]);
 
@@ -116,11 +116,13 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
             <Keyboard className="size-4" aria-hidden />
             <span>Press 1–{options.length} to choose an option</span>
           </div>
-          <span>Question {queue.position} of {queue.total}</span>
+          <span>
+            Question {queue.position} of {queue.total}
+          </span>
         </div>
       }
     >
-      <div className="flex flex-col gap-3.5 sm:gap-4 w-full h-full min-h-0">
+      <div className="relative flex flex-col gap-3.5 sm:gap-4 w-full h-full min-h-0">
         {/* Single-Line Question Heading */}
         {/*
           The question itself must never be clipped. It previously carried
@@ -134,7 +136,8 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
             <span>{queue.isRetry ? "Once more" : `Quiz Q${queue.position}`}</span>
           </div>
           <h2 className="font-sans font-black text-foreground text-base sm:text-lg md:text-xl text-center flex-1 min-w-[12rem] text-balance">
-            Which picture shows &ldquo;<span className="text-primary">{currentTargetWord.label}</span>&rdquo;?
+            Which picture shows &ldquo;
+            <span className="text-primary">{currentTargetWord.label}</span>&rdquo;?
           </h2>
           <span className="text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full shrink-0">
             /{currentTargetWord.phonetic}/
@@ -195,7 +198,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                     className="size-full object-cover block"
                   />
                   {isRevealedAnswer && (
-                    <motion.div 
+                    <motion.div
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ type: "spring", bounce: 0.5 }}

@@ -45,9 +45,9 @@ export const AnswerFeedback = memo(function AnswerFeedback({
       role="status"
       aria-live="polite"
       aria-atomic="true"
-      // Reserves its own height so the options above do not jump when feedback
-      // appears — a layout shift under the pointer is how mis-taps happen.
-      className="min-h-[76px] w-full flex items-center"
+      // Positioned absolutely so it overlays content instead of reserving height
+      // and squishing the exercise UI.
+      className="absolute bottom-0 inset-x-0 z-50 w-full"
     >
       {result && (
         <div
@@ -73,8 +73,7 @@ export const AnswerFeedback = memo(function AnswerFeedback({
               </span>
               {isCorrect && (
                 <span className="inline-flex items-center gap-1 text-[11px] font-sans font-bold text-wp-amber bg-wp-amber/10 px-2 py-0.5 rounded-full border border-wp-amber/20">
-                  <Sparkles className="size-3" aria-hidden />
-                  +{XP_RULES.PER_CORRECT_ANSWER} XP
+                  <Sparkles className="size-3" aria-hidden />+{XP_RULES.PER_CORRECT_ANSWER} XP
                   {streakCount && streakCount > 1 ? (
                     <span className="flex items-center gap-0.5 border-s border-wp-amber/30 ps-1.5 ms-0.5">
                       <Flame className="size-3" aria-hidden />

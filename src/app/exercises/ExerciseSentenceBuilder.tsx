@@ -143,7 +143,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
         </div>
       }
     >
-      <div className="flex flex-col gap-3.5 sm:gap-4 w-full">
+      <div className="relative flex flex-col gap-3.5 sm:gap-4 w-full">
         {/* Question Counter & Skill Badge */}
         <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
           <span>{queue.isRetry ? "Once more" : "Build the sentence"}</span>

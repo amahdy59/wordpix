@@ -44,12 +44,12 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   const displayCards = useMemo(() => {
     // Choose 3 semantic distractors
     const distractors = getDistractors(currentTargetWord, 3);
-    
+
     // Insert the correct answer at a random position (0-3)
     const finalOptions = [...distractors];
     const correctIndex = Math.floor(Math.random() * 4);
     finalOptions.splice(correctIndex, 0, currentTargetWord);
-    
+
     return finalOptions;
   }, [currentTargetWord]);
 
@@ -152,7 +152,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         </div>
       }
     >
-      <div className="flex flex-col gap-3.5 sm:gap-4 w-full h-full min-h-0">
+      <div className="relative flex flex-col gap-3.5 sm:gap-4 w-full h-full min-h-0">
         {/* Sleek, Compact Target Audio Play Bar */}
         <div className="bg-wp-panel text-wp-text-on-panel rounded-2xl p-3 sm:p-3.5 flex items-center justify-between shadow-wp-sm border border-wp-panel-border shrink-0">
           <button
@@ -167,10 +167,16 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             <div>
               <h2 className="font-sans font-black text-sm sm:text-base text-white leading-tight flex items-center gap-2">
                 <span>Listen &amp; Match Picture</span>
-                {isPlaying && <span className="text-[10px] bg-wp-amber/20 text-wp-amber px-2 py-0.5 rounded-full border border-wp-amber/30">Playing sound…</span>}
+                {isPlaying && (
+                  <span className="text-[10px] bg-wp-amber/20 text-wp-amber px-2 py-0.5 rounded-full border border-wp-amber/30">
+                    Playing sound…
+                  </span>
+                )}
               </h2>
               <p className="font-sans text-white/80 text-xs">
-                {queue.isRetry ? "One more time — tap the picture you hear." : "Tap image card matching the spoken word."}
+                {queue.isRetry
+                  ? "One more time — tap the picture you hear."
+                  : "Tap image card matching the spoken word."}
               </p>
             </div>
           </button>
@@ -201,10 +207,13 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             const isSelected = selectedId === card.id;
             const isRevealedAnswer = feedback === "incorrect" && card.id === currentTargetWord.id;
 
-            let cardStateStyle = "border-2 border-border bg-wp-card hover:border-primary/50 hover:shadow-md";
+            let cardStateStyle =
+              "border-2 border-border bg-wp-card hover:border-primary/50 hover:shadow-md";
             if (isSelected) {
-              if (feedback === "correct") cardStateStyle = "border-2 border-wp-green bg-wp-green-light/40 shadow-md";
-              if (feedback === "incorrect") cardStateStyle = "border-2 border-wp-rose bg-wp-rose-light/40 shadow-md";
+              if (feedback === "correct")
+                cardStateStyle = "border-2 border-wp-green bg-wp-green-light/40 shadow-md";
+              if (feedback === "incorrect")
+                cardStateStyle = "border-2 border-wp-rose bg-wp-rose-light/40 shadow-md";
             } else if (isRevealedAnswer) {
               cardStateStyle = "border-2 border-wp-green bg-wp-green-light/40 shadow-md";
             }
@@ -238,7 +247,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                     className="size-full object-cover block"
                   />
                   {isRevealedAnswer && (
-                    <motion.div 
+                    <motion.div
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ type: "spring", bounce: 0.5 }}
