@@ -6,6 +6,7 @@ import { LearnerProvider, useLearner } from "./context/LearnerContext";
 import { I18nProvider, useI18n } from "./context/I18nContext";
 import { AuthProvider } from "./context/AuthContext";
 import { useHashRouter, hashToScreen } from "./router/useHashRouter";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import { registerServiceWorker } from "../pwa";
 
@@ -20,7 +21,7 @@ function AppInner() {
   const { t } = useI18n();
   const { state: learnerState } = useLearner();
   const reduceMotion = learnerState.accessibility.reduceMotion;
-  
+
   const [state, dispatch] = useReducer(
     reducer,
     { id: "onboarding", step: "splash" },
@@ -74,8 +75,6 @@ function AppInner() {
     registerServiceWorker();
   }, []);
 
-
-
   useApplyAccessibilityPreferences();
 
   useEffect(() => {
@@ -92,7 +91,7 @@ function AppInner() {
 
   return (
     <ErrorBoundary>
-      <MotionConfig 
+      <MotionConfig
         reducedMotion={reduceMotion ? "always" : "user"}
         transition={{ type: "spring", bounce: 0, duration: 0.4 }}
       >
@@ -104,14 +103,25 @@ function AppInner() {
   );
 }
 
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 1000 * 60 * 5, // 5 minutes
+      retry: 2,
+    },
+  },
+});
+
 export default function App() {
   return (
-    <AuthProvider>
-      <LearnerProvider>
-        <I18nProvider>
-          <AppInner />
-        </I18nProvider>
-      </LearnerProvider>
-    </AuthProvider>
+    <QueryClientProvider client={queryClient}>
+      <AuthProvider>
+        <LearnerProvider>
+          <I18nProvider>
+            <AppInner />
+          </I18nProvider>
+        </LearnerProvider>
+      </AuthProvider>
+    </QueryClientProvider>
   );
 }
