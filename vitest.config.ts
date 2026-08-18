@@ -1,4 +1,4 @@
-import { defineConfig } from "vitest/config";
+import { defineConfig, configDefaults } from "vitest/config";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
@@ -8,6 +8,7 @@ export default defineConfig({
     environment: "happy-dom",
     globals: true,
     setupFiles: ["./src/test/setup.ts"],
+    exclude: [...configDefaults.exclude, "tests/**"],
   },
   // Kept identical to vite.config.ts and tsconfig.json; a test-only alias set
   // that drifts is how "works in tests, fails in build" happens.
