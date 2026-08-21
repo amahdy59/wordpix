@@ -5,9 +5,22 @@ import { ExerciseShell } from "../shared/ExerciseShell";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { useAudio } from "../shared/useAudio";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
-import { Keyboard, Volume2, Sparkles, ChevronRight, ChevronLeft } from "lucide-react";
+import {
+  Keyboard,
+  Volume2,
+  Sparkles,
+  ChevronRight,
+  ChevronLeft,
+  Mic,
+  MicOff,
+  CheckCircle2,
+  Info,
+} from "lucide-react";
 import { WordImage } from "../shared/WordImage";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
+import { useSpeechRecognition } from "../shared/useSpeechRecognition";
+import { getLexiconEntry } from "../data/lexiconDictionary";
+import { WordInspectorModal } from "../shared/WordInspectorModal";
 
 interface Props {
   step: number;
@@ -23,6 +36,8 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   dispatch,
 }: Props) {
   const [activeWordIndex, setActiveWordIndex] = useState<number>(0);
+  const [inspectedWord, setInspectedWord] = useState<VocabularyItem | null>(null);
+  const [speechSuccess, setSpeechSuccess] = useState<boolean>(false);
   const { accessibility } = useAccessibility();
   const speed = accessibility.speechRate;
   const { speak, stop, isPlaying, isSupported, isError } = useAudio({ lang: "en-US", rate: speed });
@@ -31,6 +46,25 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   const currentWord = words[activeWordIndex] || words[0];
   const isLastWord = activeWordIndex === words.length - 1;
   usePrefetchImage(isLastWord ? null : words[activeWordIndex + 1]);
+
+  const {
+    listen,
+    stop: stopListening,
+    status: speechStatus,
+    isListening,
+    attempt,
+  } = useSpeechRecognition({ lang: "en-US" });
+
+  useEffect(() => {
+    if (attempt?.matched) {
+      setSpeechSuccess(true);
+    }
+  }, [attempt]);
+
+  // Reset speech success when switching words
+  useEffect(() => {
+    setSpeechSuccess(false);
+  }, [activeWordIndex]);
 
   const playWord = useCallback(() => speak(currentWord.label), [speak, currentWord.label]);
 
@@ -172,26 +206,103 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           </button>
         </div>
 
-        {/* Word Info & Audio Action (No Container) */}
-        <div className="flex flex-col items-center justify-center mt-2 mb-2">
+        {/* Word Info, Audio & Speech Production */}
+        <div className="flex flex-col items-center justify-center gap-3 mt-1 mb-2">
           <div className="flex items-center justify-center gap-4 sm:gap-5 flex-wrap text-center">
+            {/* Audio Listen Button */}
             <button
               type="button"
               onClick={handleToggle}
               aria-label={`Play audio pronunciation for ${currentWord.label}`}
-              className="size-14 sm:size-16 rounded-full bg-primary transition-transform text-primary-foreground flex items-center justify-center shadow-wp-md focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary group"
+              className="size-14 sm:size-16 rounded-full bg-primary transition-transform text-primary-foreground flex items-center justify-center shadow-wp-md focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary group hover:scale-105"
             >
               <Volume2 className={`size-6 sm:size-7 ${isPlaying ? "animate-pulse" : ""}`} />
             </button>
-            <div className="flex items-baseline gap-2 sm:gap-3">
-              <span className="font-sans font-black text-foreground text-3xl sm:text-4xl lg:text-5xl">
-                {currentWord.label}
-              </span>
-              <span className="font-sans font-medium text-muted-foreground text-lg sm:text-xl lg:text-2xl">
-                /{currentWord.phonetic}/
-              </span>
+
+            {/* Microphone Speaking Practice Button */}
+            {speechStatus !== "unsupported" && (
+              <button
+                type="button"
+                onClick={() => (isListening ? stopListening() : listen(currentWord.label))}
+                aria-label={
+                  isListening ? "Stop recording speech" : `Practice speaking ${currentWord.label}`
+                }
+                className={`size-14 sm:size-16 rounded-full transition-all flex items-center justify-center shadow-wp-md focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary group ${
+                  speechSuccess
+                    ? "bg-wp-green text-wp-text-on-green scale-105"
+                    : isListening
+                      ? "bg-wp-rose text-white animate-pulse"
+                      : "bg-secondary text-foreground hover:bg-muted border border-border"
+                }`}
+              >
+                {speechSuccess ? (
+                  <CheckCircle2 className="size-6 sm:size-7" />
+                ) : isListening ? (
+                  <MicOff className="size-6 sm:size-7" />
+                ) : (
+                  <Mic className="size-6 sm:size-7 text-primary" />
+                )}
+              </button>
+            )}
+
+            {/* Word Label, Phonetics & Details */}
+            <div className="flex flex-col items-start sm:items-center">
+              <div className="flex items-baseline gap-2 sm:gap-3">
+                <span className="font-sans font-black text-foreground text-3xl sm:text-4xl lg:text-5xl">
+                  {currentWord.label}
+                </span>
+                <span className="font-sans font-medium text-muted-foreground text-base sm:text-xl">
+                  /{currentWord.phonetic.replace(/^\/|\/$/g, "")}/
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setInspectedWord(currentWord)}
+                  aria-label={`Inspect full dictionary entry for ${currentWord.label}`}
+                  className="size-9 rounded-xl bg-secondary text-muted-foreground hover:text-foreground border border-border flex items-center justify-center transition-colors ms-1"
+                >
+                  <Info className="size-4" />
+                </button>
+              </div>
+
+              {/* Arabic Meaning & Collocation hint */}
+              <div className="flex items-center gap-2 mt-1">
+                <span
+                  className="font-arabic font-bold text-primary text-base sm:text-lg"
+                  dir="rtl"
+                  lang="ar"
+                >
+                  {getLexiconEntry(currentWord.id, currentWord.label).arabic}
+                </span>
+                <span className="text-xs text-muted-foreground font-sans">·</span>
+                <button
+                  type="button"
+                  onClick={() => setInspectedWord(currentWord)}
+                  className="text-xs font-sans font-semibold text-muted-foreground hover:text-primary underline"
+                >
+                  View Details &amp; Collocations
+                </button>
+              </div>
             </div>
           </div>
+
+          {/* Real-Time Speech Feedback Banner */}
+          {speechStatus === "listening" && (
+            <div className="bg-primary/10 border border-primary/30 rounded-2xl px-4 py-2 flex items-center gap-2 animate-pulse">
+              <Mic className="size-4 text-primary" />
+              <span className="font-sans text-xs font-bold text-primary">
+                Listening... Say &ldquo;{currentWord.label}&rdquo; clearly into your mic!
+              </span>
+            </div>
+          )}
+
+          {speechSuccess && (
+            <div className="bg-wp-green/10 border border-wp-green/30 rounded-2xl px-4 py-2 flex items-center gap-2">
+              <CheckCircle2 className="size-4 text-wp-green" />
+              <span className="font-sans text-xs font-bold text-wp-green">
+                Excellent pronunciation! Word recognized. 🎉
+              </span>
+            </div>
+          )}
         </div>
 
         {!isSupported && (
@@ -205,6 +316,12 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           </p>
         )}
       </div>
+
+      <WordInspectorModal
+        word={inspectedWord}
+        isOpen={!!inspectedWord}
+        onClose={() => setInspectedWord(null)}
+      />
     </ExerciseShell>
   );
 });

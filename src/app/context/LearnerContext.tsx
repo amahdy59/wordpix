@@ -530,14 +530,12 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
 
 const DEFAULT_FALLBACK_CONTEXT: LearnerContextType = {
   state: INITIAL_LEARNER_STATE,
-  isHydrated: true,
-  syncStatus: "idle",
-  recordAttempt: () => {},
+  addXP: () => {},
   recordSessionCompletion: () => {},
+  recordUnitAssessmentCompletion: () => {},
   setPreferences: () => {},
-  setAccessibilityPreferences: () => {},
+  setAccessibility: () => {},
   resetToZero: () => {},
-  syncWithCloud: async () => {},
 };
 
 export function useLearner() {
