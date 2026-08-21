@@ -7,14 +7,12 @@ import { WordImage } from "../shared/WordImage";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
-import { AnswerFeedback } from "../shared/AnswerFeedback";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
-import { useProgress } from "../data/progress";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
-import { Keyboard } from "lucide-react";
-import { motion } from "framer-motion";
+import { Keyboard, CheckCircle2, XCircle, ArrowRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface Props {
   step: number;
@@ -31,7 +29,6 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
 }: Props) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
-  const { progress } = useProgress();
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
 
@@ -63,13 +60,6 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
     if (queue.isComplete && feedback === null) dispatch({ type: "LESSON_NEXT" });
   }, [queue.isComplete, feedback, dispatch]);
 
-  /**
-   * Choosing a word commits it.
-   *
-   * This screen used to need two taps for every question — pick a word, then
-   * press "Check Answer" — and a third to dismiss the modal that followed. The
-   * choice is unambiguous on its own, so it is the answer.
-   */
   const handleSelect = useCallback(
     (id: string) => {
       if (feedback !== null) return;
@@ -126,13 +116,13 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-wp-amber font-bold">
             <Keyboard className="size-4" aria-hidden />
-            <span>Press 1–{options.length} to choose a word</span>
+            <span>Press 1&#8211;{options.length} to choose a word</span>
           </div>
         </div>
       }
     >
-      <div className="relative flex flex-col gap-4 sm:gap-6 w-full max-w-2xl mx-auto">
-        {/* Question Counter Header */}
+      <div className="relative flex flex-col gap-3 sm:gap-4 w-full max-w-2xl mx-auto">
+        {/* Group & progress header */}
         <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
           <span className="uppercase tracking-wider">{group.name}</span>
           <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full">
@@ -140,99 +130,121 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
           </span>
         </div>
 
-        {/* Fluid Target Image Banner with Overlay Sentence */}
-        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2 sm:mt-0 aspect-[4/3] sm:aspect-[16/9]">
+        {/* Sentence card � ABOVE the image */}
+        <div className="bg-wp-card rounded-2xl border border-border px-5 py-3.5 text-center shadow-wp-xs flex items-center justify-center">
+          <p className="font-sans font-bold text-foreground text-xl sm:text-2xl leading-relaxed whitespace-nowrap overflow-hidden text-ellipsis w-full">
+            {richSentence.clozeBefore}{" "}
+            <span
+              className={`inline-flex items-center justify-center min-w-[120px] sm:min-w-[140px] h-10 sm:h-12 px-3 sm:px-4 rounded-xl border-2 transition-all duration-300 font-sans font-black text-lg sm:text-xl align-middle mx-1 ${
+                feedback !== null
+                  ? "bg-wp-green text-wp-text-on-green border-wp-green"
+                  : "bg-secondary/80 border-dashed border-primary/50 text-muted-foreground"
+              }`}
+            >
+              {feedback !== null
+                ? currentTargetWord.label.toLowerCase()
+                : selectedWord
+                  ? selectedWord.label.toLowerCase()
+                  : "_______"}
+            </span>{" "}
+            {richSentence.clozeAfter}
+          </p>
+        </div>
+
+        {/* Image with centered feedback overlay */}
+        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[4/3] sm:aspect-[16/9]">
           <WordImage
             word={currentTargetWord}
             className="w-full h-full absolute inset-0 object-cover"
           />
-          {/* Sentence overlay */}
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-5 sm:p-6 text-center flex items-center justify-center pt-16">
-            <p className="font-sans font-bold text-white text-xl sm:text-2xl leading-relaxed py-0.5 whitespace-nowrap overflow-hidden text-ellipsis w-full drop-shadow-md">
-              {richSentence.clozeBefore}{" "}
-              <span
-                className={`inline-flex items-center justify-center min-w-[120px] sm:min-w-[140px] h-10 sm:h-12 px-3 sm:px-4 rounded-xl border-2 transition-all font-sans font-black text-lg sm:text-xl shadow-xs align-middle mx-1 backdrop-blur-sm ${
-                  feedback === "incorrect"
-                    ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                    : selectedWord
-                      ? feedback === "correct"
-                        ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                        : "bg-primary text-primary-foreground border-primary"
-                      : "bg-white/20 border-dashed border-white/60 text-white"
-                }`}
+
+          <AnimatePresence>
+            {feedback !== null && (
+              <motion.div
+                key="feedback-overlay"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-black/45 backdrop-blur-[2px]"
               >
-                {/* On a wrong answer the blank fills with the right word, so the
-                    learner reads the true sentence rather than their mistake. */}
-                {feedback === "incorrect"
-                  ? currentTargetWord.label.toLowerCase()
-                  : selectedWord
-                    ? selectedWord.label.toLowerCase()
-                    : "_______"}
-              </span>{" "}
-              {richSentence.clozeAfter}
-            </p>
-          </div>
+                <motion.div
+                  initial={{ scale: 0.4, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ type: "spring", stiffness: 420, damping: 18, delay: 0.05 }}
+                  className={`rounded-full p-3 shadow-xl ${
+                    feedback === "correct" ? "bg-wp-green" : "bg-wp-rose"
+                  }`}
+                >
+                  {feedback === "correct" ? (
+                    <CheckCircle2 className="size-10 sm:size-12 text-white" aria-hidden />
+                  ) : (
+                    <XCircle className="size-10 sm:size-12 text-white" aria-hidden />
+                  )}
+                </motion.div>
+
+                <motion.p
+                  initial={{ y: 10, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.18 }}
+                  className="font-sans font-black text-white text-lg sm:text-xl drop-shadow-lg text-center px-6"
+                >
+                  This is a{" "}
+                  <span className="text-wp-amber capitalize">
+                    {currentTargetWord.label.toLowerCase()}
+                  </span>
+                </motion.p>
+
+                {!accessibility.autoAdvance && (
+                  <motion.button
+                    initial={{ y: 10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.3 }}
+                    type="button"
+                    onClick={handleContinue}
+                    className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-white text-foreground font-sans font-bold text-sm shadow-lg hover:bg-white/90 transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white"
+                  >
+                    Continue
+                    <ArrowRight className="size-4" aria-hidden />
+                  </motion.button>
+                )}
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          <span aria-live="polite" aria-atomic="true" className="sr-only">
+            {feedback === "correct"
+              ? `Correct. This is a ${currentTargetWord.label}.`
+              : feedback === "incorrect"
+                ? `Incorrect. The answer is ${currentTargetWord.label}.`
+                : ""}
+          </span>
         </div>
 
-        {/* Word Options Grid (2x2 Grid) */}
-        {/* Choosing commits the answer, so these are actions rather than radio
-            values waiting on a separate submit. */}
+        {/* Word choice buttons � always neutral styling, no feedback colours */}
         <div
           role="group"
           aria-label="Word choices"
           className="grid grid-cols-2 gap-3 sm:gap-4 w-full"
         >
-          {options.map((option, idx) => {
-            const isSelected = selectedId === option.id;
-            const isRevealedAnswer = feedback === "incorrect" && option.id === currentTargetWord.id;
-
-            let stateStyle =
-              "bg-wp-card border-border text-foreground hover:border-primary/50 hover:shadow-md";
-            if (isSelected) {
-              stateStyle =
-                feedback === "correct"
-                  ? "bg-wp-green border-wp-green text-wp-text-on-green shadow-md"
-                  : "bg-wp-rose border-wp-rose text-wp-text-on-rose shadow-md animate-wp-shake";
-            } else if (isRevealedAnswer) {
-              stateStyle = "bg-wp-green border-wp-green text-wp-text-on-green shadow-md";
-            }
-
-            return (
-              <motion.button
-                key={option.id}
-                type="button"
-                whileTap={feedback === null ? { scale: 0.95 } : {}}
-                transition={{ duration: 0.1 }}
-                aria-pressed={isSelected}
-                /* aria-disabled keeps keyboard focus on the chosen option;
-                   `disabled` would send it to <body> mid-drill. */
-                aria-disabled={feedback !== null}
-                onClick={() => handleSelect(option.id)}
-                className={`rounded-xl p-3 sm:p-4 font-sans font-bold text-base sm:text-lg border-2 min-h-[48px] sm:min-h-[56px] transition-colors duration-200 flex items-center justify-between shadow-wp-xs ${stateStyle} focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary`}
-              >
-                <span className="capitalize">{option.label.toLowerCase()}</span>
-                <span
-                  className={`hidden sm:inline-block text-[11px] px-2 py-0.5 rounded-md font-bold ${isSelected || isRevealedAnswer ? "bg-white/20" : "bg-muted text-muted-foreground"}`}
-                >
-                  [{idx + 1}]
-                </span>
-              </motion.button>
-            );
-          })}
+          {options.map((option, idx) => (
+            <motion.button
+              key={option.id}
+              type="button"
+              whileTap={feedback === null ? { scale: 0.95 } : {}}
+              transition={{ duration: 0.1 }}
+              aria-pressed={selectedId === option.id}
+              aria-disabled={feedback !== null}
+              onClick={() => handleSelect(option.id)}
+              className="rounded-xl p-3 sm:p-4 font-sans font-bold text-base sm:text-lg border-2 min-h-[48px] sm:min-h-[56px] flex items-center justify-between shadow-wp-xs bg-wp-card border-border text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+            >
+              <span className="capitalize">{option.label.toLowerCase()}</span>
+              <span className="hidden sm:inline-block text-[11px] px-2 py-0.5 rounded-md font-bold bg-muted text-muted-foreground">
+                [{idx + 1}]
+              </span>
+            </motion.button>
+          ))}
         </div>
-
-        <AnswerFeedback
-          result={feedback}
-          wordLabel={currentTargetWord.label}
-          explanation={
-            feedback === "correct"
-              ? `"${richSentence.full}"`
-              : `The sentence reads: "${richSentence.full}"`
-          }
-          streakCount={progress.streak}
-          autoAdvancing={accessibility.autoAdvance}
-          onContinue={handleContinue}
-        />
       </div>
     </ExerciseShell>
   );
