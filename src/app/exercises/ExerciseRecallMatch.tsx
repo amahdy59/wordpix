@@ -3,6 +3,7 @@ import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getDistractors } from "./exerciseContent";
+import { shuffleArray } from "../../utils/shuffle";
 import { WordImage } from "../shared/WordImage";
 import { useAudio } from "../shared/useAudio";
 import { Volume2, CheckCircle2, XCircle, RefreshCw, Keyboard, ArrowRight } from "lucide-react";
@@ -39,15 +40,8 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   const hasSpokenRef = useRef<Record<string, boolean>>({});
 
   const displayCards = useMemo(() => {
-    // Choose 3 semantic distractors
     const distractors = getDistractors(currentTargetWord, 3);
-
-    // Insert the correct answer at a random position (0-3)
-    const finalOptions = [...distractors];
-    const correctIndex = Math.floor(Math.random() * 4);
-    finalOptions.splice(correctIndex, 0, currentTargetWord);
-
-    return finalOptions;
+    return shuffleArray([currentTargetWord, ...distractors]);
   }, [currentTargetWord]);
 
   /** Clears the result and lets the queue's next question render. */

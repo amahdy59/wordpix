@@ -1,8 +1,9 @@
-import { memo, useCallback, useEffect, useMemo, useState } from "react";
+﻿import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getRichSentence, getDistractors } from "./exerciseContent";
+import { shuffleArray } from "../../utils/shuffle";
 import { WordImage } from "../shared/WordImage";
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
@@ -38,10 +39,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
 
   const options = useMemo(() => {
     const distractors = getDistractors(currentTargetWord, 3);
-    const correctIndex = Math.floor(Math.random() * 4);
-    const finalOptions = [...distractors];
-    finalOptions.splice(correctIndex, 0, currentTargetWord);
-    return finalOptions;
+    return shuffleArray([currentTargetWord, ...distractors]);
   }, [currentTargetWord]);
 
   const advanceNext = useCallback(() => {
@@ -126,7 +124,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-wp-amber font-bold">
             <Keyboard className="size-4" aria-hidden />
-            <span>Press 1–{options.length} to choose an option</span>
+            <span>Press 1â€“{options.length} to choose an option</span>
           </div>
         </div>
       }
@@ -143,7 +141,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
           </span>
         </div>
 
-        {/* 2×2 image grid */}
+        {/* 2Ã—2 image grid */}
         <div
           role="group"
           aria-label={`Which image matches ${currentTargetWord.label}?`}
@@ -196,7 +194,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                   />
                 </div>
 
-                {/* ── Per-image feedback overlay ── */}
+                {/* â”€â”€ Per-image feedback overlay â”€â”€ */}
                 <AnimatePresence>
                   {(showCorrectOverlay || showIncorrectOverlay) && (
                     <motion.div
@@ -254,7 +252,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
               : ""}
         </span>
 
-        {/* Continue strip — appears below grid after answer, replaces old AnswerFeedback bar */}
+        {/* Continue strip â€” appears below grid after answer, replaces old AnswerFeedback bar */}
         <AnimatePresence>
           {feedback !== null && !accessibility.autoAdvance && (
             <motion.div
@@ -271,8 +269,8 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
             >
               <span className="font-sans font-semibold text-foreground text-sm">
                 {feedback === "correct"
-                  ? `✓ This is a ${currentTargetWord.label}.`
-                  : `✗ The answer is "${currentTargetWord.label}".`}
+                  ? `âœ“ This is a ${currentTargetWord.label}.`
+                  : `âœ— The answer is "${currentTargetWord.label}".`}
               </span>
               <button
                 type="button"

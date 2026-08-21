@@ -1,4 +1,5 @@
-import { ALL_VOCABULARY, type VocabularyItem } from "../data/lessons";
+﻿import { ALL_VOCABULARY, type VocabularyItem } from "../data/lessons";
+import { shuffleArray } from "../../utils/shuffle";
 
 export const CONFUSION_PAIRS: Record<string, string[]> = {
   pillow: ["blanket", "nightstand", "bed", "dresser"],
@@ -21,395 +22,395 @@ export interface RichSentence {
 }
 
 export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
-  "bed": {
+  bed: {
     clozeBefore: "I rest comfortably on my wooden",
     clozeAfter: "after a long day.",
     full: "I rest comfortably on my wooden bed after a long day.",
-    words: ["I","rest","comfortably","on","my","bed"],
+    words: ["I", "rest", "comfortably", "on", "my", "bed"],
   },
-  "nightstand": {
+  nightstand: {
     clozeBefore: "The brass lamp sits on the small wooden",
     clozeAfter: "beside the bed.",
     full: "The brass lamp sits on the small wooden nightstand beside the bed.",
-    words: ["The","lamp","sits","on","the","nightstand"],
+    words: ["The", "lamp", "sits", "on", "the", "nightstand"],
   },
-  "dresser": {
+  dresser: {
     clozeBefore: "She keeps her folded sweaters inside the top drawer of the",
     clozeAfter: ".",
     full: "She keeps her folded sweaters inside the top drawer of the dresser.",
-    words: ["She","keeps","sweaters","in","the","dresser"],
+    words: ["She", "keeps", "sweaters", "in", "the", "dresser"],
   },
-  "wardrobe": {
+  wardrobe: {
     clozeBefore: "He hung his winter coats neatly inside the tall wooden",
     clozeAfter: ".",
     full: "He hung his winter coats neatly inside the tall wooden wardrobe.",
-    words: ["He","hung","coats","inside","the","wardrobe"],
+    words: ["He", "hung", "coats", "inside", "the", "wardrobe"],
   },
-  "desk": {
+  desk: {
     clozeBefore: "The student organized her notebook and pens on the study",
     clozeAfter: ".",
     full: "The student organized her notebook and pens on the study desk.",
-    words: ["The","student","organized","her","study","desk"],
+    words: ["The", "student", "organized", "her", "study", "desk"],
   },
-  "pillow": {
+  pillow: {
     clozeBefore: "She fluffed the soft feather",
     clozeAfter: "before going to sleep.",
     full: "She fluffed the soft feather pillow before going to sleep.",
-    words: ["She","fluffed","the","soft","feather","pillow"],
+    words: ["She", "fluffed", "the", "soft", "feather", "pillow"],
   },
-  "blanket": {
+  blanket: {
     clozeBefore: "He pulled the warm wool",
     clozeAfter: "over his shoulders.",
     full: "He pulled the warm wool blanket over his shoulders.",
-    words: ["He","pulled","the","warm","wool","blanket"],
+    words: ["He", "pulled", "the", "warm", "wool", "blanket"],
   },
-  "sheet": {
+  sheet: {
     clozeBefore: "She smoothed the crisp white",
     clozeAfter: "over the mattress.",
     full: "She smoothed the crisp white sheet over the mattress.",
-    words: ["She","smoothed","the","crisp","white","sheet"],
+    words: ["She", "smoothed", "the", "crisp", "white", "sheet"],
   },
-  "mattress": {
+  mattress: {
     clozeBefore: "The thick memory foam",
     clozeAfter: "is very comfortable to sleep on.",
     full: "The thick memory foam mattress is very comfortable to sleep on.",
-    words: ["The","memory foam","mattress","is","very","comfortable"],
+    words: ["The", "memory foam", "mattress", "is", "very", "comfortable"],
   },
-  "quilt": {
+  quilt: {
     clozeBefore: "Her grandmother made this beautiful patchwork",
     clozeAfter: "by hand.",
     full: "Her grandmother made this beautiful patchwork quilt by hand.",
-    words: ["She","made","this","beautiful","patchwork","quilt"],
+    words: ["She", "made", "this", "beautiful", "patchwork", "quilt"],
   },
-  "chair": {
+  chair: {
     clozeBefore: "He sat in the comfortable cushioned",
     clozeAfter: "to read a book.",
     full: "He sat in the comfortable cushioned chair to read a book.",
-    words: ["He","sat","in","the","cushioned","chair"],
+    words: ["He", "sat", "in", "the", "cushioned", "chair"],
   },
   "bedroom-bench": {
     clozeBefore: "They placed a padded",
     clozeAfter: "at the foot of the bed.",
     full: "They placed a padded bedroom bench at the foot of the bed.",
-    words: ["They","placed","a","padded","bedroom bench","there"],
+    words: ["They", "placed", "a", "padded", "bedroom bench", "there"],
   },
-  "bookshelf": {
+  bookshelf: {
     clozeBefore: "He arranged his novel collection neatly on the wooden",
     clozeAfter: ".",
     full: "He arranged his novel collection neatly on the wooden bookshelf.",
-    words: ["He","arranged","books","on","the","bookshelf"],
+    words: ["He", "arranged", "books", "on", "the", "bookshelf"],
   },
-  "stool": {
+  stool: {
     clozeBefore: "She perched on the small wooden",
     clozeAfter: "to reach the top shelf.",
     full: "She perched on the small wooden stool to reach the top shelf.",
-    words: ["She","sat","on","the","wooden","stool"],
+    words: ["She", "sat", "on", "the", "wooden", "stool"],
   },
-  "pillowcase": {
+  pillowcase: {
     clozeBefore: "He slipped a clean cotton",
     clozeAfter: "over the pillow.",
     full: "He slipped a clean cotton pillowcase over the pillow.",
-    words: ["He","put","a","clean","pillowcase","on"],
+    words: ["He", "put", "a", "clean", "pillowcase", "on"],
   },
-  "duvet": {
+  duvet: {
     clozeBefore: "The thick down",
     clozeAfter: "kept her warm during the blizzard.",
     full: "The thick down duvet kept her warm during the blizzard.",
-    words: ["The","thick","duvet","kept","her","warm"],
+    words: ["The", "thick", "duvet", "kept", "her", "warm"],
   },
   "bed-sheet": {
     clozeBefore: "She washed the fitted",
     clozeAfter: "and put it back on the bed.",
     full: "She washed the fitted bed sheet and put it back on the bed.",
-    words: ["She","washed","the","fitted","bed sheet"],
+    words: ["She", "washed", "the", "fitted", "bed sheet"],
   },
-  "clock": {
+  clock: {
     clozeBefore: "She checked the round wall",
     clozeAfter: "to see if it was time for bed.",
     full: "She checked the round wall clock to see if it was time for bed.",
-    words: ["She","checked","the","round","wall","clock"],
+    words: ["She", "checked", "the", "round", "wall", "clock"],
   },
   "toy-box": {
     clozeBefore: "The child tossed all the colorful blocks back into the large wooden",
     clozeAfter: ".",
     full: "The child tossed all the colorful blocks back into the large wooden toy box.",
-    words: ["The","child","filled","the","wooden","toy box"],
+    words: ["The", "child", "filled", "the", "wooden", "toy box"],
   },
-  "door": {
+  door: {
     clozeBefore: "She closed the bedroom",
     clozeAfter: "quietly to keep the noise out.",
     full: "She closed the bedroom door quietly to keep the noise out.",
-    words: ["She","closed","the","bedroom","door","quietly"],
+    words: ["She", "closed", "the", "bedroom", "door", "quietly"],
   },
-  "blinds": {
+  blinds: {
     clozeBefore: "He lowered the",
     clozeAfter: "to block out the morning sun.",
     full: "He lowered the blinds to block out the morning sun.",
-    words: ["He","lowered","the","blinds","to","block","the","sun"],
+    words: ["He", "lowered", "the", "blinds", "to", "block", "the", "sun"],
   },
-  "outlet": {
+  outlet: {
     clozeBefore: "She plugged her charger into the",
     clozeAfter: "near the bed.",
     full: "She plugged her charger into the outlet near the bed.",
-    words: ["She","plugged","her","charger","into","the","outlet"],
+    words: ["She", "plugged", "her", "charger", "into", "the", "outlet"],
   },
-  "carpet": {
+  carpet: {
     clozeBefore: "The thick",
     clozeAfter: "kept his feet warm in winter.",
     full: "The thick carpet kept his feet warm in winter.",
-    words: ["The","thick","carpet","kept","his","feet","warm"],
+    words: ["The", "thick", "carpet", "kept", "his", "feet", "warm"],
   },
   "ceiling-light": {
     clozeBefore: "He turned on the",
     clozeAfter: "to brighten up the whole room.",
     full: "He turned on the ceiling light to brighten up the whole room.",
-    words: ["He","turned","on","the","ceiling light","to","brighten","it"],
+    words: ["He", "turned", "on", "the", "ceiling light", "to", "brighten", "it"],
   },
   "light-switch": {
     clozeBefore: "She flipped the",
     clozeAfter: "before leaving the room.",
     full: "She flipped the light switch before leaving the room.",
-    words: ["She","flipped","the","light switch","before","leaving","the","room"],
+    words: ["She", "flipped", "the", "light switch", "before", "leaving", "the", "room"],
   },
   "reading-light": {
     clozeBefore: "He clicked on his",
     clozeAfter: "to read a few chapters.",
     full: "He clicked on his reading light to read a few chapters.",
-    words: ["He","clicked","on","his","reading light","to","read"],
+    words: ["He", "clicked", "on", "his", "reading light", "to", "read"],
   },
   "picture-frame": {
     clozeBefore: "There is a silver",
     clozeAfter: "sitting on her nightstand.",
     full: "There is a silver picture frame sitting on her nightstand.",
-    words: ["There","is","a","silver","picture frame","on","the","nightstand"],
+    words: ["There", "is", "a", "silver", "picture frame", "on", "the", "nightstand"],
   },
-  "plant": {
+  plant: {
     clozeBefore: "She watered the green",
     clozeAfter: "growing by the window.",
     full: "She watered the green plant growing by the window.",
-    words: ["She","watered","the","green","plant","by","the","window"],
+    words: ["She", "watered", "the", "green", "plant", "by", "the", "window"],
   },
-  "vase": {
+  vase: {
     clozeBefore: "He arranged the fresh flowers in a glass",
     clozeAfter: "on the dresser.",
     full: "He arranged the fresh flowers in a glass vase on the dresser.",
-    words: ["He","arranged","the","flowers","in","a","glass","vase"],
+    words: ["He", "arranged", "the", "flowers", "in", "a", "glass", "vase"],
   },
-  "candle": {
+  candle: {
     clozeBefore: "She lit a scented",
     clozeAfter: "to relax before sleeping.",
     full: "She lit a scented candle to relax before sleeping.",
-    words: ["She","lit","a","scented","candle","to","relax"],
+    words: ["She", "lit", "a", "scented", "candle", "to", "relax"],
   },
-  "poster": {
+  poster: {
     clozeBefore: "He hung a large movie",
     clozeAfter: "on his bedroom wall.",
     full: "He hung a large movie poster on his bedroom wall.",
-    words: ["He","hung","a","movie","poster","on","his","wall"],
+    words: ["He", "hung", "a", "movie", "poster", "on", "his", "wall"],
   },
   "alarm-clock": {
     clozeBefore: "The loud",
     clozeAfter: "woke him up at six sharp.",
     full: "The loud alarm clock woke him up at six sharp.",
-    words: ["The","loud","alarm clock","woke","him","up","early"],
+    words: ["The", "loud", "alarm clock", "woke", "him", "up", "early"],
   },
-  "calendar": {
+  calendar: {
     clozeBefore: "She marked the date on her wall",
     clozeAfter: "with a red pen.",
     full: "She marked the date on her wall calendar with a red pen.",
-    words: ["She","marked","the","date","on","her","wall","calendar"],
+    words: ["She", "marked", "the", "date", "on", "her", "wall", "calendar"],
   },
-  "hanger": {
+  hanger: {
     clozeBefore: "He placed his clean shirt on a wooden",
     clozeAfter: "in the closet.",
     full: "He placed his clean shirt on a wooden hanger in the closet.",
-    words: ["He","placed","his","shirt","on","a","wooden","hanger"],
+    words: ["He", "placed", "his", "shirt", "on", "a", "wooden", "hanger"],
   },
   "chest-of-drawers": {
     clozeBefore: "She folded her sweaters and put them in the",
     clozeAfter: ".",
     full: "She folded her sweaters and put them in the chest of drawers.",
-    words: ["She","put","her","sweaters","in","the","chest of drawers"],
+    words: ["She", "put", "her", "sweaters", "in", "the", "chest of drawers"],
   },
   "laundry-basket": {
     clozeBefore: "He tossed his dirty clothes into the tall",
     clozeAfter: "in the corner.",
     full: "He tossed his dirty clothes into the tall laundry basket in the corner.",
-    words: ["He","tossed","his","clothes","into","the","laundry basket"],
+    words: ["He", "tossed", "his", "clothes", "into", "the", "laundry basket"],
   },
-  "wastebasket": {
+  wastebasket: {
     clozeBefore: "She threw the crumpled paper into the small",
     clozeAfter: ".",
     full: "She threw the crumpled paper into the small wastebasket.",
-    words: ["She","threw","the","paper","into","the","small","wastebasket"],
+    words: ["She", "threw", "the", "paper", "into", "the", "small", "wastebasket"],
   },
   "jewelry-box": {
     clozeBefore: "She carefully placed her rings into the velvet",
     clozeAfter: ".",
     full: "She carefully placed her rings into the velvet jewelry box.",
-    words: ["She","placed","her","rings","into","the","velvet","jewelry box"],
+    words: ["She", "placed", "her", "rings", "into", "the", "velvet", "jewelry box"],
   },
-  "pajamas": {
+  pajamas: {
     clozeBefore: "He put on his warm flannel",
     clozeAfter: "before getting into bed.",
     full: "He put on his warm flannel pajamas before getting into bed.",
-    words: ["He","put","on","his","flannel","pajamas","before","bed"],
+    words: ["He", "put", "on", "his", "flannel", "pajamas", "before", "bed"],
   },
-  "slippers": {
+  slippers: {
     clozeBefore: "She slid her feet into soft",
     clozeAfter: "on the cold floor.",
     full: "She slid her feet into soft slippers on the cold floor.",
-    words: ["She","slid","her","feet","into","soft","slippers"],
+    words: ["She", "slid", "her", "feet", "into", "soft", "slippers"],
   },
-  "robe": {
+  robe: {
     clozeBefore: "He wrapped a thick bath",
     clozeAfter: "around himself after the shower.",
     full: "He wrapped a thick bath robe around himself after the shower.",
-    words: ["He","wrapped","a","thick","bath","robe","around","himself"],
+    words: ["He", "wrapped", "a", "thick", "bath", "robe", "around", "himself"],
   },
   "teddy-bear": {
     clozeBefore: "The child hugged their fluffy",
     clozeAfter: "tightly all night.",
     full: "The child hugged their fluffy teddy bear tightly all night.",
-    words: ["The","child","hugged","their","fluffy","teddy bear","tightly"],
+    words: ["The", "child", "hugged", "their", "fluffy", "teddy bear", "tightly"],
   },
   "bed-frame": {
     clozeBefore: "They bought a sturdy wooden",
     clozeAfter: "to support the new mattress.",
     full: "They bought a sturdy wooden bed frame to support the new mattress.",
-    words: ["They","bought","a","wooden","bed frame","for","the","mattress"],
+    words: ["They", "bought", "a", "wooden", "bed frame", "for", "the", "mattress"],
   },
-  "books": {
+  books: {
     clozeBefore: "She keeps a stack of interesting",
     clozeAfter: "on her nightstand to read.",
     full: "She keeps a stack of interesting books on her nightstand to read.",
-    words: ["She","keeps","some","interesting","books","on","her","nightstand"],
+    words: ["She", "keeps", "some", "interesting", "books", "on", "her", "nightstand"],
   },
   "photo-album": {
     clozeBefore: "They looked through an old",
     clozeAfter: "filled with childhood memories.",
     full: "They looked through an old photo album filled with childhood memories.",
-    words: ["They","looked","through","an","old","photo album"],
+    words: ["They", "looked", "through", "an", "old", "photo album"],
   },
-  "backpack": {
+  backpack: {
     clozeBefore: "He packed his school",
     clozeAfter: "and left it by the bedroom door.",
     full: "He packed his school backpack and left it by the bedroom door.",
-    words: ["He","packed","his","school","backpack","and","left","it"],
+    words: ["He", "packed", "his", "school", "backpack", "and", "left", "it"],
   },
-  "headboard": {
+  headboard: {
     clozeBefore: "She leaned against the padded",
     clozeAfter: "to read her book.",
     full: "She leaned against the padded headboard to read her book.",
-    words: ["She","leaned","against","the","padded","headboard","to","read"],
+    words: ["She", "leaned", "against", "the", "padded", "headboard", "to", "read"],
   },
-  "glasses": {
+  glasses: {
     clozeBefore: "He took off his reading",
     clozeAfter: "and placed them on the desk.",
     full: "He took off his reading glasses and placed them on the desk.",
-    words: ["He","took","off","his","reading","glasses","and","rested"],
+    words: ["He", "took", "off", "his", "reading", "glasses", "and", "rested"],
   },
-  "phone": {
+  phone: {
     clozeBefore: "She plugged her mobile",
     clozeAfter: "in to charge overnight.",
     full: "She plugged her mobile phone in to charge overnight.",
-    words: ["She","plugged","her","mobile","phone","in","to","charge"],
+    words: ["She", "plugged", "her", "mobile", "phone", "in", "to", "charge"],
   },
-  "charger": {
+  charger: {
     clozeBefore: "He needs a new phone",
     clozeAfter: "because the old cable broke.",
     full: "He needs a new phone charger because the old cable broke.",
-    words: ["He","needs","a","new","phone","charger","for","his","phone"],
+    words: ["He", "needs", "a", "new", "phone", "charger", "for", "his", "phone"],
   },
-  "laptop": {
+  laptop: {
     clozeBefore: "She closed her",
     clozeAfter: "after finishing her homework at the desk.",
     full: "She closed her laptop after finishing her homework at the desk.",
-    words: ["She","closed","her","laptop","after","finishing","her","homework"],
+    words: ["She", "closed", "her", "laptop", "after", "finishing", "her", "homework"],
   },
-  "headphones": {
+  headphones: {
     clozeBefore: "He put on his noise-canceling",
     clozeAfter: "to listen to music.",
     full: "He put on his noise-canceling headphones to listen to music.",
-    words: ["He","put","on","his","noise-canceling","headphones"],
+    words: ["He", "put", "on", "his", "noise-canceling", "headphones"],
   },
-  "tablet": {
+  tablet: {
     clozeBefore: "She watched a movie on her",
     clozeAfter: "while lying in bed.",
     full: "She watched a movie on her tablet while lying in bed.",
-    words: ["She","watched","a","movie","on","her","tablet"],
+    words: ["She", "watched", "a", "movie", "on", "her", "tablet"],
   },
-  "speaker": {
+  speaker: {
     clozeBefore: "He played loud music from the wireless",
     clozeAfter: "on the shelf.",
     full: "He played loud music from the wireless speaker on the shelf.",
-    words: ["He","played","loud","music","from","the","wireless","speaker"],
+    words: ["He", "played", "loud", "music", "from", "the", "wireless", "speaker"],
   },
   "remote-control": {
     clozeBefore: "She used the",
     clozeAfter: "to turn off the television from her bed.",
     full: "She used the remote control to turn off the television from her bed.",
-    words: ["She","used","the","remote control","to","turn","off","the","TV"],
+    words: ["She", "used", "the", "remote control", "to", "turn", "off", "the", "TV"],
   },
   "tissue-box": {
     clozeBefore: "He grabbed a tissue from the",
     clozeAfter: "when he sneezed.",
     full: "He grabbed a tissue from the tissue box when he sneezed.",
-    words: ["He","grabbed","a","tissue","from","the","tissue box"],
+    words: ["He", "grabbed", "a", "tissue", "from", "the", "tissue box"],
   },
-  "lamp": {
+  lamp: {
     clozeBefore: "He turned on the bedside",
     clozeAfter: "to read in the dark.",
     full: "He turned on the bedside lamp to read in the dark.",
-    words: ["He","turned","on","the","bedside","lamp"],
+    words: ["He", "turned", "on", "the", "bedside", "lamp"],
   },
-  "mirror": {
+  mirror: {
     clozeBefore: "She checked her outfit in the full-length",
     clozeAfter: "before leaving.",
     full: "She checked her outfit in the full-length mirror before leaving.",
-    words: ["She","checked","her","outfit","in","the","mirror"],
+    words: ["She", "checked", "her", "outfit", "in", "the", "mirror"],
   },
-  "comforter": {
+  comforter: {
     clozeBefore: "He pulled the thick",
     clozeAfter: "up to his chin to stay warm.",
     full: "He pulled the thick comforter up to his chin to stay warm.",
-    words: ["He","pulled","the","thick","comforter","up"],
+    words: ["He", "pulled", "the", "thick", "comforter", "up"],
   },
-  "cushion": {
+  cushion: {
     clozeBefore: "She placed a decorative",
     clozeAfter: "on the bedroom chair.",
     full: "She placed a decorative cushion on the bedroom chair.",
-    words: ["She","placed","a","decorative","cushion"],
+    words: ["She", "placed", "a", "decorative", "cushion"],
   },
-  "bedspread": {
+  bedspread: {
     clozeBefore: "He smoothed the patterned",
     clozeAfter: "over the made bed.",
     full: "He smoothed the patterned bedspread over the made bed.",
-    words: ["He","smoothed","the","patterned","bedspread"],
+    words: ["He", "smoothed", "the", "patterned", "bedspread"],
   },
-  "window": {
+  window: {
     clozeBefore: "She opened the",
     clozeAfter: "to let some fresh air into the room.",
     full: "She opened the window to let some fresh air into the room.",
-    words: ["She","opened","the","window","for","fresh air"],
+    words: ["She", "opened", "the", "window", "for", "fresh air"],
   },
-  "curtain": {
+  curtain: {
     clozeBefore: "He pulled the heavy",
     clozeAfter: "shut to block the streetlights.",
     full: "He pulled the heavy curtain shut to block the streetlights.",
-    words: ["He","pulled","the","heavy","curtain","shut"],
+    words: ["He", "pulled", "the", "heavy", "curtain", "shut"],
   },
-  "rug": {
+  rug: {
     clozeBefore: "She stepped out of bed onto the soft, fuzzy",
     clozeAfter: ".",
     full: "She stepped out of bed onto the soft, fuzzy rug.",
-    words: ["She","stepped","onto","the","soft","rug"],
+    words: ["She", "stepped", "onto", "the", "soft", "rug"],
   },
-  "shelf": {
+  shelf: {
     clozeBefore: "He put his trophies on the wooden wall",
     clozeAfter: "above his desk.",
     full: "He put his trophies on the wooden wall shelf above his desk.",
-    words: ["He","put","trophies","on","the","wall","shelf"],
+    words: ["He", "put", "trophies", "on", "the", "wall", "shelf"],
   },
 };
 
@@ -436,11 +437,15 @@ export function getSemanticDistractors(word: VocabularyItem, count = 3): Vocabul
     .filter((item): item is VocabularyItem => item !== undefined && !item.hasWoman);
 
   const sameTopic = ALL_VOCABULARY.filter(
-    (item) => item.id !== word.id && item.topic === word.topic && !confusionIds.includes(item.id) && !item.hasWoman
+    (item) =>
+      item.id !== word.id &&
+      item.topic === word.topic &&
+      !confusionIds.includes(item.id) &&
+      !item.hasWoman
   );
 
   const pool = [...confusionWords, ...sameTopic];
-  return pool.slice(0, count);
+  return shuffleArray(pool).slice(0, count);
 }
 
 export function getDistractors(word: VocabularyItem, count = 3): VocabularyItem[] {
