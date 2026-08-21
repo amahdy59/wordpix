@@ -155,7 +155,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-wp-amber font-bold">
             <Keyboard className="size-4" aria-hidden />
-            <span>Press 1â€“{displayCards.length} to choose Â· R to replay audio</span>
+            <span>Press 1-{displayCards.length} to choose · R to replay audio</span>
           </div>
         </div>
       }

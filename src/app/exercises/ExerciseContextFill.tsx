@@ -1,8 +1,8 @@
-import { memo, useCallback, useEffect, useMemo, useState } from "react";
+﻿import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { getRichSentence } from "./exerciseContent";
+import { getRichSentence, articleFor } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
@@ -129,9 +129,9 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         </div>
       }
     >
-      <div className="relative flex flex-col gap-3 sm:gap-4 w-full max-w-2xl mx-auto">
+      <div className="relative flex flex-col gap-2 sm:gap-3 w-full max-w-2xl mx-auto">
         {/* Sentence card — the only question element, above the image */}
-        <div className="bg-wp-card rounded-2xl border border-border px-5 py-3.5 text-center shadow-wp-xs flex items-center justify-center">
+        <div className="bg-wp-card rounded-2xl border border-border px-4 py-2.5 text-center shadow-wp-xs flex items-center justify-center">
           <p className="font-sans font-bold text-foreground text-xl sm:text-2xl leading-relaxed whitespace-nowrap overflow-hidden text-ellipsis w-full">
             {richSentence.clozeBefore}{" "}
             <span
@@ -152,7 +152,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         </div>
 
         {/* Image with centered feedback overlay */}
-        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[4/3] sm:aspect-[16/9]">
+        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[3/2] sm:aspect-[16/9]">
           <WordImage
             word={currentTargetWord}
             className="w-full h-full absolute inset-0 object-cover"
@@ -189,7 +189,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
                   transition={{ delay: 0.18 }}
                   className="font-sans font-black text-white text-lg sm:text-xl drop-shadow-lg text-center px-6"
                 >
-                  This is a{" "}
+                  This is {articleFor(currentTargetWord.label)}{" "}
                   <span className="text-wp-amber capitalize">
                     {currentTargetWord.label.toLowerCase()}
                   </span>
@@ -225,7 +225,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         <div
           role="group"
           aria-label="Word choices"
-          className="grid grid-cols-2 gap-3 sm:gap-4 w-full"
+          className="grid grid-cols-2 gap-2 sm:gap-3 w-full"
         >
           {options.map((option, idx) => (
             <motion.button
@@ -236,7 +236,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
               aria-pressed={selectedId === option.id}
               aria-disabled={feedback !== null}
               onClick={() => handleSelect(option.id)}
-              className="rounded-xl p-3 sm:p-4 font-sans font-bold text-base sm:text-lg border-2 min-h-[48px] sm:min-h-[56px] flex items-center justify-between shadow-wp-xs bg-wp-card border-border text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+              className="rounded-xl p-2.5 sm:p-3 font-sans font-bold text-base sm:text-lg border-2 min-h-[48px] sm:min-h-[52px] flex items-center justify-between shadow-wp-xs bg-wp-card border-border text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
             >
               <span className="capitalize">{option.label.toLowerCase()}</span>
               <span className="hidden sm:inline-block text-[11px] px-2 py-0.5 rounded-md font-bold bg-muted text-muted-foreground">

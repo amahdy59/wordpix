@@ -124,7 +124,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-wp-amber font-bold">
             <Keyboard className="size-4" aria-hidden />
-            <span>Press 1â€“{options.length} to choose an option</span>
+            <span>Press 1-{options.length} to choose an option</span>
           </div>
         </div>
       }
