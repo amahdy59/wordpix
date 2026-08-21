@@ -1,19 +1,17 @@
-import { memo, useCallback, useEffect, useMemo, useState } from "react";
+﻿import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getRichSentence } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
-import { PenTool, Undo2, CheckCircle2, XCircle } from "lucide-react";
+import { PenTool, Undo2, CheckCircle2, XCircle, ArrowRight } from "lucide-react";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
-import { AnswerFeedback } from "../shared/AnswerFeedback";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
-import { useProgress } from "../data/progress";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface Props {
   step: number;
@@ -30,7 +28,6 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
 }: Props) {
   const [placed, setPlaced] = useState<string[]>([]);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
-  const { progress } = useProgress();
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
 
@@ -154,7 +151,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
         <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <span className="text-wp-amber font-bold">
             {feedback === null
-              ? `Tap tiles in order — ${answer.length - placed.length} to go`
+              ? `Tap tiles in order â€” ${answer.length - placed.length} to go`
               : "Next sentence coming up"}
           </span>
         </div>
@@ -199,7 +196,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
                 <Undo2 className="size-3.5" aria-hidden />
                 <span>Undo</span>
                 <kbd className="hidden sm:inline font-sans font-semibold text-muted-foreground/70 border border-border rounded px-1 ms-0.5">
-                  ⌫
+                  âŒ«
                 </kbd>
               </button>
             )}
@@ -290,22 +287,37 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
           })}
         </div>
 
-        <AnswerFeedback
-          result={feedback}
-          wordLabel={currentTargetWord.label}
-          explanation={
-            feedback === "correct"
-              ? // The sentence they actually built, not richSentence.full.
-                // `full` is the longer cloze sentence from the previous step,
-                // so praising a correct build with it showed the learner a
-                // different sentence from the one they had just assembled.
-                `"${answer.join(" ")}"`
-              : "Read the correct order above — this one comes back later."
-          }
-          streakCount={progress.streak}
-          autoAdvancing={accessibility.autoAdvance}
-          onContinue={handleContinue}
-        />
+        {/* Continue strip */}
+        <AnimatePresence>
+          {feedback !== null && !accessibility.autoAdvance && (
+            <motion.div
+              key="continue-strip"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ delay: 0.1 }}
+              className={`shrink-0 rounded-2xl px-5 py-3 mt-2 flex items-center justify-between gap-3 border ${
+                feedback === "correct"
+                  ? "bg-wp-green/10 border-wp-green/30"
+                  : "bg-wp-rose/10 border-wp-rose/30"
+              }`}
+            >
+              <span className="font-sans font-semibold text-foreground text-sm">
+                {feedback === "correct"
+                  ? `✓ "${answer.join(" ")}"`
+                  : `✗ The correct order is above.`}
+              </span>
+              <button
+                type="button"
+                onClick={handleContinue}
+                className="flex items-center gap-1.5 px-4 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shrink-0"
+              >
+                Continue
+                <ArrowRight className="size-4" aria-hidden />
+              </button>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </ExerciseShell>
   );

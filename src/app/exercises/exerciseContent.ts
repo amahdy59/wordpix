@@ -1,4 +1,4 @@
-﻿import { ALL_VOCABULARY, type VocabularyItem } from "../data/lessons";
+import { ALL_VOCABULARY, type VocabularyItem } from "../data/lessons";
 import { shuffleArray } from "../../utils/shuffle";
 
 export const CONFUSION_PAIRS: Record<string, string[]> = {
@@ -444,8 +444,10 @@ export function getSemanticDistractors(word: VocabularyItem, count = 3): Vocabul
       !item.hasWoman
   );
 
-  const pool = [...confusionWords, ...sameTopic];
-  return shuffleArray(pool).slice(0, count);
+  // Shuffle within each tier so we get variety, but preserve tier priority:
+  // confusion pairs always fill slots first, same-topic fills any remainder.
+  const pool = [...shuffleArray(confusionWords), ...shuffleArray(sameTopic)];
+  return pool.slice(0, count);
 }
 
 export function getDistractors(word: VocabularyItem, count = 3): VocabularyItem[] {
