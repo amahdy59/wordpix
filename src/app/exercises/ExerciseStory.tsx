@@ -1,10 +1,9 @@
-import React, { memo, useRef, useEffect } from "react";
+import React, { memo, useRef, useEffect, useMemo } from "react";
 import type { Action } from "../types";
 import type { VocabularyItem } from "../data/lessons";
 import { resolveGroup } from "../data/lessons";
-import { PrimaryButton } from "../shared/PrimaryButton";
-import { LessonHeader } from "../shared/LessonHeader";
-import { BookOpen } from "lucide-react";
+import { ExerciseShell } from "../shared/ExerciseShell";
+import { BookOpen, ArrowRight } from "lucide-react";
 
 interface Props {
   step: number;
@@ -22,71 +21,109 @@ export const ExerciseStory = memo(function ExerciseStory({
   const group = resolveGroup(lessonId);
   const storyText = group.story || "No reading material available for this lesson yet. Stay tuned!";
 
-  const onNext = () => {
-    dispatch({ type: "LESSON_NEXT" });
-  };
-
-  const onBack = () => {
-    dispatch({ type: "LESSON_PREVIOUS" });
-  };
-
   const btnRef = useRef<HTMLButtonElement>(null);
-
   useEffect(() => {
-    if (btnRef.current) {
-      btnRef.current.focus();
-    }
+    btnRef.current?.focus();
   }, []);
 
-  // Highlight vocabulary words in the story
-  const renderStory = () => {
-    let html = storyText;
-    words.forEach((word) => {
-      // Create a regex to match the word case-insensitively, keeping punctuation intact
-      const regex = new RegExp(`\\b(${word.label})\\b`, "gi");
-      html = html.replace(regex, `<span class="font-bold text-[var(--color-primary-600)] bg-[var(--color-primary-50)] px-1 rounded-sm">$1</span>`);
-    });
-    return html;
-  };
+  /**
+   * Safely highlight vocabulary words without dangerouslySetInnerHTML.
+   * Splits the plain text into segments and wraps matching words in <mark>.
+   */
+  const segments = useMemo(() => {
+    // Build a sorted-longest-first regex so multi-word labels match before
+    // their individual tokens (e.g. "bed frame" before "bed").
+    const labels = words.map((w) => w.label).sort((a, b) => b.length - a.length);
+    const escaped = labels.map((l) => l.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+    const pattern = new RegExp(`(${escaped.join("|")})`, "gi");
+
+    return storyText.split(pattern);
+  }, [storyText, words]);
+
+  const wordSet = useMemo(() => new Set(words.map((w) => w.label.toLowerCase())), [words]);
 
   return (
-    <div className="flex flex-col h-[100dvh] bg-[var(--color-surface)]">
-      <LessonHeader 
-        title="Reading Time" 
-        current={step + 1}
-        total={6}
-        onBack={onBack}
-        onClose={() => dispatch({ type: "GO", to: "lesson-entry" })} 
-      />
-
-      <main className="flex-1 overflow-y-auto flex flex-col p-4 sm:p-6 lg:p-8 max-w-3xl mx-auto w-full">
-        <div className="bg-[var(--color-surface-raised)] rounded-3xl shadow-sm border border-[var(--color-border-subtle)] p-6 sm:p-10 w-full mb-8">
-          <div className="flex items-center gap-4 mb-8 pb-6 border-b border-[var(--color-border-subtle)]">
-            <div className="w-14 h-14 rounded-2xl bg-[var(--color-primary-100)] text-[var(--color-primary-600)] flex items-center justify-center shrink-0">
-              <BookOpen className="w-7 h-7" />
-            </div>
-            <div>
-              <h2 className="text-2xl font-bold text-[var(--color-text-strong)]">{group.name} in Context</h2>
-              <p className="text-[var(--color-text-subtle)] text-base mt-1">Read the story below to see how these words are used.</p>
-            </div>
+    <ExerciseShell
+      step={step}
+      title="Reading Time"
+      words={words}
+      lessonId={lessonId}
+      dispatch={dispatch}
+      subtitle={
+        <>
+          <span className="uppercase tracking-wider">{group.name}</span>
+          <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
+            <BookOpen className="size-3" aria-hidden />
+            <span>Reading</span>
+          </span>
+        </>
+      }
+      footer={
+        <button
+          ref={btnRef}
+          type="button"
+          onClick={() => dispatch({ type: "LESSON_NEXT" })}
+          className="flex items-center justify-center gap-2 w-full min-h-[56px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+        >
+          Continue
+          <ArrowRight className="size-5" aria-hidden />
+        </button>
+      }
+    >
+      <div className="w-full max-w-2xl mx-auto flex flex-col gap-4">
+        {/* Header row */}
+        <div className="flex items-center gap-3 px-1">
+          <div className="size-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+            <BookOpen className="size-5" aria-hidden />
           </div>
-
-          <div
-            className="text-xl text-[var(--color-text-base)] leading-relaxed space-y-6"
-            dangerouslySetInnerHTML={{ __html: renderStory().replace(/\n/g, '<br/>') }}
-            aria-live="polite"
-          />
+          <div>
+            <h2 className="font-sans font-black text-foreground text-lg leading-tight">
+              {group.name} in Context
+            </h2>
+            <p className="font-sans text-muted-foreground text-xs">
+              See how these words are used in a real sentence.
+            </p>
+          </div>
         </div>
-      </main>
 
-      <div className="p-4 sm:p-6 bg-[var(--color-surface)] border-t border-[var(--color-border-subtle)] shrink-0">
-        <div className="max-w-3xl mx-auto flex justify-end">
-          <PrimaryButton
-            label="Continue"
-            onClick={onNext}
-          />
+        {/* Story card */}
+        <article
+          className="bg-wp-card border border-border rounded-3xl p-6 sm:p-8 shadow-wp-xs"
+          aria-label="Story passage"
+        >
+          <p className="font-sans text-foreground text-lg sm:text-xl leading-relaxed">
+            {segments.map((seg, i) =>
+              wordSet.has(seg.toLowerCase()) ? (
+                <mark
+                  key={i}
+                  className="bg-primary/10 text-primary font-bold rounded-sm px-0.5 not-italic"
+                >
+                  {seg}
+                </mark>
+              ) : (
+                <React.Fragment key={i}>{seg}</React.Fragment>
+              )
+            )}
+          </p>
+        </article>
+
+        {/* Vocabulary reference */}
+        <div className="bg-secondary/60 border border-border rounded-2xl p-4">
+          <p className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground mb-3">
+            Words in this passage
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {words.map((w) => (
+              <span
+                key={w.id}
+                className="font-sans font-semibold text-sm bg-primary/10 text-primary border border-primary/20 px-3 py-1 rounded-full"
+              >
+                {w.label}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </ExerciseShell>
   );
 });
