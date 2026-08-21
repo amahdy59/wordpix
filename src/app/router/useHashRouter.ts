@@ -64,7 +64,7 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
   if (screen.id === "practice") return { hash: "#/practice", title: "WordPix — Daily Review" };
   if (screen.id === "profile") return { hash: "#/profile", title: "WordPix — Learner Profile" };
   if (screen.id === "lesson-entry") {
-    const world = COURSE_UNITS[screen.unitId ?? DEFAULT_UNIT_ID];
+    const world = COURSE_UNITS[screen.unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
     return { hash: `#/learn/${world.id}`, title: `WordPix — ${world.name}` };
   }
   if (screen.id === "skill-hub") return { hash: "#/skills", title: "WordPix — Skill Exercises" };
@@ -144,10 +144,7 @@ export function hashToScreen(hash: string): { screen: Screen; title: string } | 
   return route?.kind === "screen" ? { screen: route.screen, title: route.title } : null;
 }
 
-export function useHashRouter(
-  currentScreen: Screen,
-  onRoute: (intent: RouteIntent) => void
-) {
+export function useHashRouter(currentScreen: Screen, onRoute: (intent: RouteIntent) => void) {
   useEffect(() => {
     const { hash, title } = screenToHash(currentScreen);
 

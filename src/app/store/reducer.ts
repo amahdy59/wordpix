@@ -141,8 +141,10 @@ export function describeScreen(screen: Screen, t: (key: string) => string): stri
       return `Lesson step ${screen.step + 1} of 6`;
     case "lesson-complete":
       return "Session complete";
-    case "lesson-entry":
-      return COURSE_UNITS[screen.unitId ?? DEFAULT_UNIT_ID].name;
+    case "lesson-entry": {
+      const unit = COURSE_UNITS[screen.unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
+      return unit.name;
+    }
     case "skill-hub":
       return "Skill exercises";
     case "skill-exercise":

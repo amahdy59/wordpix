@@ -31,16 +31,22 @@ export const ExerciseStory = memo(function ExerciseStory({
    * Splits the plain text into segments and wraps matching words in <mark>.
    */
   const segments = useMemo(() => {
-    // Build a sorted-longest-first regex so multi-word labels match before
-    // their individual tokens (e.g. "bed frame" before "bed").
-    const labels = words.map((w) => w.label).sort((a, b) => b.length - a.length);
+    if (!words || words.length === 0) return [storyText];
+    const labels = words
+      .map((w) => w?.label)
+      .filter(Boolean)
+      .sort((a, b) => b.length - a.length);
+    if (labels.length === 0) return [storyText];
     const escaped = labels.map((l) => l.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
     const pattern = new RegExp(`(${escaped.join("|")})`, "gi");
 
     return storyText.split(pattern);
   }, [storyText, words]);
 
-  const wordSet = useMemo(() => new Set(words.map((w) => w.label.toLowerCase())), [words]);
+  const wordSet = useMemo(
+    () => new Set((words || []).map((w) => w?.label?.toLowerCase()).filter(Boolean)),
+    [words]
+  );
 
   return (
     <ExerciseShell

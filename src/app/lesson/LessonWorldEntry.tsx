@@ -13,16 +13,20 @@ interface Props {
 }
 
 export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatch }: Props) {
-  const world = COURSE_UNITS[unitId ?? DEFAULT_UNIT_ID];
+  const world = COURSE_UNITS[unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
   const { progress } = useProgress();
 
   const isWordLearned = (id: string) => {
-    return (progress.wordMemory[id]?.exposures || 0) > 0 || (progress.wordMastery[id] || 0) > 0;
+    return (
+      (progress?.wordMemory?.[id]?.exposures || 0) > 0 || (progress?.wordMastery?.[id] || 0) > 0
+    );
   };
 
   const [nextGroupId] = useState<string>(() => {
     const nextGroup = world.groups.find((g) => g.wordIds.some((id) => !isWordLearned(id)));
-    return nextGroup ? nextGroup.id : world.groups[world.groups.length - 1].id;
+    return nextGroup
+      ? nextGroup.id
+      : (world.groups[world.groups.length - 1]?.id ?? world.groups[0]?.id ?? "group_default");
   });
 
   const handleStartGroup = (gId: string) => {

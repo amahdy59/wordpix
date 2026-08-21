@@ -34,6 +34,18 @@ export class ErrorBoundary extends Component<Props, State> {
     window.location.reload();
   };
 
+  private handleClearAndReload = (): void => {
+    try {
+      localStorage.removeItem("wordpix:learner-state:v4");
+      sessionStorage.clear();
+      window.location.hash = "#/home";
+    } catch {
+      // ignore
+    }
+    this.setState({ hasError: false, error: null });
+    window.location.reload();
+  };
+
   public render(): ReactNode {
     if (this.state.hasError) {
       if (this.props.fallback) {
@@ -47,7 +59,10 @@ export class ErrorBoundary extends Component<Props, State> {
           className="min-h-svh bg-background flex items-center justify-center p-6 text-center"
         >
           <div className="bg-wp-card border border-border rounded-2xl p-8 max-w-md w-full shadow-wp-md flex flex-col items-center gap-4">
-            <div className="size-14 rounded-full bg-destructive/10 text-destructive flex items-center justify-center" aria-hidden>
+            <div
+              className="size-14 rounded-full bg-destructive/10 text-destructive flex items-center justify-center"
+              aria-hidden
+            >
               <AlertTriangle className="size-7" />
             </div>
 
@@ -59,19 +74,42 @@ export class ErrorBoundary extends Component<Props, State> {
             </div>
 
             <p className="font-sans text-muted-foreground text-xs leading-relaxed">
-              An unexpected error occurred while loading this view. Please try reloading the application.
+              An unexpected error occurred while loading this view. Please try reloading the
+              application.
             </p>
 
-            <button
-              type="button"
-              onClick={this.handleReset}
-              className="bg-primary text-primary-foreground font-sans font-semibold rounded-xl px-6 py-3 min-h-[44px]
-                flex items-center justify-center gap-2 w-full motion-safe:transition-opacity hover:opacity-90
-                focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-            >
-              <RefreshCw className="size-4" aria-hidden />
-              Reload App
-            </button>
+            {this.state.error?.message && (
+              <details className="w-full text-start text-xs bg-muted/60 border border-border rounded-xl p-3">
+                <summary className="font-sans font-semibold text-muted-foreground cursor-pointer select-none">
+                  Error Details
+                </summary>
+                <code className="block mt-2 font-mono text-[11px] text-destructive break-all whitespace-pre-wrap">
+                  {this.state.error.message}
+                </code>
+              </details>
+            )}
+
+            <div className="flex flex-col gap-2.5 w-full">
+              <button
+                type="button"
+                onClick={this.handleReset}
+                className="bg-primary text-primary-foreground font-sans font-semibold rounded-xl px-6 py-3 min-h-[44px]
+                  flex items-center justify-center gap-2 w-full motion-safe:transition-opacity hover:opacity-90
+                  focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                <RefreshCw className="size-4" aria-hidden />
+                Reload App
+              </button>
+
+              <button
+                type="button"
+                onClick={this.handleClearAndReload}
+                className="bg-secondary text-foreground font-sans font-medium rounded-xl px-6 py-2.5 min-h-[44px]
+                  flex items-center justify-center gap-2 w-full text-xs hover:bg-muted transition-colors"
+              >
+                Reset App &amp; Go Home
+              </button>
+            </div>
           </div>
         </div>
       );
