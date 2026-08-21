@@ -125,7 +125,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         </div>
       }
     >
-      <div className="relative flex flex-col gap-3.5 sm:gap-4 w-full">
+      <div className="relative flex flex-col gap-4 sm:gap-6 w-full max-w-2xl mx-auto">
         {/* Question Counter Header */}
         <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
           <span>{queue.isRetry ? "Once more" : "Choose the missing word"}</span>
@@ -135,22 +135,19 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         </div>
 
         {/* Fluid Target Image Banner */}
-        <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2 flex flex-col justify-center">
+        <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2 sm:mt-0 flex flex-col justify-center">
           <WordImage
             word={currentTargetWord}
-            className="w-full h-auto max-h-[35vh] sm:max-h-[45vh] block object-contain rounded-xl"
+            className="w-full h-auto max-h-[35vh] sm:max-h-[40vh] block object-contain rounded-xl"
           />
         </div>
 
         {/* Centered Rich Sentence Display Box */}
-        <div className="bg-wp-card rounded-2xl border border-border p-4 text-center shadow-wp-xs flex flex-col items-center justify-center gap-1">
-          <span className="font-sans font-bold text-[10px] text-primary uppercase tracking-wider">
-            Sentence Context Clue
-          </span>
-          <p className="font-sans font-bold text-foreground text-lg sm:text-xl leading-relaxed flex items-center justify-center flex-wrap gap-2 py-0.5">
-            <span>{richSentence.clozeBefore}</span>
+        <div className="bg-wp-card rounded-2xl border border-border p-5 sm:p-6 text-center shadow-wp-xs flex items-center justify-center">
+          <p className="font-sans font-bold text-foreground text-xl sm:text-2xl leading-relaxed py-0.5 whitespace-nowrap overflow-hidden text-ellipsis w-full">
+            {richSentence.clozeBefore}{" "}
             <span
-              className={`inline-flex items-center justify-center min-w-[120px] h-10 px-3 rounded-xl border-2 transition-all font-sans font-black text-lg shadow-xs ${
+              className={`inline-flex items-center justify-center min-w-[120px] sm:min-w-[140px] h-10 sm:h-12 px-3 sm:px-4 rounded-xl border-2 transition-all font-sans font-black text-lg sm:text-xl shadow-xs align-middle mx-1 ${
                 feedback === "incorrect"
                   ? "bg-wp-green text-wp-text-on-green border-wp-green"
                   : selectedWord
@@ -167,15 +164,19 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
                 : selectedWord
                   ? selectedWord.label.toLowerCase()
                   : "_______"}
-            </span>
-            <span>{richSentence.clozeAfter}</span>
+            </span>{" "}
+            {richSentence.clozeAfter}
           </p>
         </div>
 
         {/* Word Options Grid (2x2 Grid) */}
         {/* Choosing commits the answer, so these are actions rather than radio
             values waiting on a separate submit. */}
-        <div role="group" aria-label="Word choices" className="grid grid-cols-2 gap-3 w-full">
+        <div
+          role="group"
+          aria-label="Word choices"
+          className="grid grid-cols-2 gap-3 sm:gap-4 w-full"
+        >
           {options.map((option, idx) => {
             const isSelected = selectedId === option.id;
             const isRevealedAnswer = feedback === "incorrect" && option.id === currentTargetWord.id;
@@ -202,7 +203,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
                    `disabled` would send it to <body> mid-drill. */
                 aria-disabled={feedback !== null}
                 onClick={() => handleSelect(option.id)}
-                className={`rounded-xl p-3 sm:p-3.5 font-sans font-bold text-sm sm:text-base border-2 min-h-[48px] transition-colors duration-200 flex items-center justify-between shadow-wp-xs ${stateStyle} focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary`}
+                className={`rounded-xl p-3 sm:p-4 font-sans font-bold text-base sm:text-lg border-2 min-h-[48px] sm:min-h-[56px] transition-colors duration-200 flex items-center justify-between shadow-wp-xs ${stateStyle} focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary`}
               >
                 <span className="capitalize">{option.label.toLowerCase()}</span>
                 <span
