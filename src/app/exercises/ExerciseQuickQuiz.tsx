@@ -163,7 +163,6 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
             // Overlay type for this cell
             const showCorrectOverlay = isSelected && feedback === "correct";
             const showIncorrectOverlay = isSelected && feedback === "incorrect";
-            const showRevealOverlay = isRevealedAnswer;
 
             return (
               <motion.button
@@ -199,7 +198,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
 
                 {/* ── Per-image feedback overlay ── */}
                 <AnimatePresence>
-                  {(showCorrectOverlay || showIncorrectOverlay || showRevealOverlay) && (
+                  {(showCorrectOverlay || showIncorrectOverlay) && (
                     <motion.div
                       key={`overlay-${option.id}`}
                       initial={{ opacity: 0 }}
@@ -236,11 +235,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                         transition={{ delay: 0.15 }}
                         className="font-sans font-black text-white text-sm sm:text-base drop-shadow text-center px-2"
                       >
-                        {showIncorrectOverlay
-                          ? "Wrong"
-                          : showRevealOverlay
-                            ? currentTargetWord.label
-                            : "Correct!"}
+                        {showIncorrectOverlay ? "Wrong" : "Correct!"}
                       </motion.span>
                     </motion.div>
                   )}
