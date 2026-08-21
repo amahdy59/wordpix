@@ -139,6 +139,17 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
       words={words}
       lessonId={lessonId}
       dispatch={dispatch}
+      subtitle={
+        <>
+          <span className="uppercase tracking-wider">{group.name}</span>
+          <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
+            <PenTool className="size-3" aria-hidden />
+            <span>
+              Sentence {queue.position} of {queue.total}
+            </span>
+          </span>
+        </>
+      }
       footer={
         <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <span className="text-wp-amber font-bold">
@@ -150,17 +161,6 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
       }
     >
       <div className="relative flex flex-col gap-4 sm:gap-6 w-full max-w-2xl mx-auto">
-        {/* Question Counter & Skill Badge Header */}
-        <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
-          <span className="uppercase tracking-wider">{group.name}</span>
-          <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
-            <PenTool className="size-3" aria-hidden />
-            <span>
-              Sentence {queue.position} of {queue.total}
-            </span>
-          </span>
-        </div>
-
         {/* Fluid Target Image Banner */}
         <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2 sm:mt-0 aspect-[4/3] sm:aspect-[16/9]">
           <WordImage

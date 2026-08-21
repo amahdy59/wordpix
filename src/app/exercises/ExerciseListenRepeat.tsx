@@ -78,6 +78,17 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
       words={words}
       lessonId={lessonId}
       dispatch={dispatch}
+      subtitle={
+        <>
+          <span className="uppercase tracking-wider">{group.name}</span>
+          <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
+            <Volume2 className="size-3" aria-hidden />
+            <span>
+              Word {activeWordIndex + 1} of {words.length}
+            </span>
+          </span>
+        </>
+      }
       footer={
         <div className="flex flex-col gap-2">
           <PrimaryButton
@@ -101,17 +112,6 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
       </div>
 
       <div className="relative flex flex-col gap-4 sm:gap-6 w-full max-w-2xl mx-auto h-full min-h-0 justify-center">
-        {/* Header */}
-        <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
-          <span className="uppercase tracking-wider">{group.name}</span>
-          <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
-            <Volume2 className="size-3" aria-hidden />
-            <span>
-              Word {activeWordIndex + 1} of {words.length}
-            </span>
-          </span>
-        </div>
-
         {/* Compact Word Selector Grid (No text, tight bounding box) */}
         <div
           className="flex justify-center gap-2 sm:gap-3"

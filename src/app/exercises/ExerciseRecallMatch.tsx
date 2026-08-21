@@ -149,6 +149,17 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       words={words}
       lessonId={lessonId}
       dispatch={dispatch}
+      subtitle={
+        <>
+          <span className="uppercase tracking-wider">{group.name}</span>
+          <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
+            <Volume2 className="size-3" aria-hidden />
+            <span>
+              Question {queue.position} of {queue.total}
+            </span>
+          </span>
+        </>
+      }
       footer={
         <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-wp-amber font-bold">
@@ -159,17 +170,6 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       }
     >
       <div className="relative flex flex-col gap-3.5 sm:gap-4 w-full max-w-2xl mx-auto h-full min-h-0">
-        {/* Question Counter Header */}
-        <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
-          <span className="uppercase tracking-wider">{group.name}</span>
-          <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
-            <Volume2 className="size-3" aria-hidden />
-            <span>
-              Question {queue.position} of {queue.total}
-            </span>
-          </span>
-        </div>
-
         {/* Sleek, Compact Target Audio Play Bar */}
         <div className="bg-wp-panel text-wp-text-on-panel rounded-2xl p-3 sm:p-3.5 flex items-center justify-between shadow-wp-sm border border-wp-panel-border shrink-0">
           <button
