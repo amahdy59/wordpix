@@ -1,7 +1,11 @@
 import React, { createContext, useContext, useState, useEffect, useCallback, useMemo } from "react";
 import type { AnswerAttempt } from "../types";
 import { updateStreak, getLocalDateString } from "../../features/gamification/streak";
-import { calculateSM2State, createInitialWordState, type WordLearningState } from "../../features/gamification/sm2";
+import {
+  calculateSM2State,
+  createInitialWordState,
+  type WordLearningState,
+} from "../../features/gamification/sm2";
 import { calculateXPBreakdown, type XPBreakdown } from "../../features/gamification/xp";
 import { getLearnerState, saveLearnerState, queueMutation } from "../../lib/persistence/db";
 
@@ -173,16 +177,20 @@ function migrateState(savedData: unknown): LearnerStateSchema {
       ...(saved.learnerProgress as Partial<LearnerProgressStats> | undefined),
     },
     wordMemory: normalizedMemory,
-    sessionHistory: Array.isArray(saved.sessionHistory) ? (saved.sessionHistory as SessionRecord[]) : [],
+    sessionHistory: Array.isArray(saved.sessionHistory)
+      ? (saved.sessionHistory as SessionRecord[])
+      : [],
   };
 }
-
-
 
 interface LearnerContextType {
   state: LearnerStateSchema;
   addXP: (amount: number) => void;
-  recordSessionCompletion: (sessionId: string, attempts: AnswerAttempt[], wordQueue: string[]) => void;
+  recordSessionCompletion: (
+    sessionId: string,
+    attempts: AnswerAttempt[],
+    wordQueue: string[]
+  ) => void;
   recordUnitAssessmentCompletion: (passed: boolean, unitWordIds: string[]) => void;
   setPreferences: (patch: Partial<LearnerPreferences>) => void;
   setAccessibility: (patch: Partial<AccessibilityPreferences>) => void;
@@ -191,7 +199,8 @@ interface LearnerContextType {
 
 const LearnerContext = createContext<LearnerContextType | undefined>(undefined);
 
-type MutationType = "update_preferences" | "update_accessibility" | "session_completed" | "add_xp" | "reset";
+type MutationType =
+  "update_preferences" | "update_accessibility" | "session_completed" | "add_xp" | "reset";
 
 let testStateCache: LearnerStateSchema | null = null;
 
@@ -210,8 +219,6 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     return null;
   });
 
-
-
   useEffect(() => {
     let mounted = true;
     async function load() {
@@ -227,7 +234,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
               dbState = migrateState(JSON.parse(ls));
               localStorage.removeItem(STORAGE_KEY);
             }
-          } catch(e) {
+          } catch (e) {
             console.warn("Legacy localStorage read failed", e);
           }
           if (!dbState) {
@@ -235,7 +242,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
           }
           await saveLearnerState(dbState);
         }
-        
+
         if (mounted) setState(dbState);
       } catch (err) {
         console.error("Failed to load state", err);
@@ -243,7 +250,9 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
       }
     }
     load();
-    return () => { mounted = false; };
+    return () => {
+      mounted = false;
+    };
   }, []);
 
   const updateStateAndPersist = useCallback(
@@ -257,7 +266,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
       setState((prev) => {
         if (!prev) return prev;
         const { nextState, mutationType, mutationPayload } = updater(prev);
-        
+
         if (typeof process !== "undefined" && process.env.NODE_ENV === "test") {
           testStateCache = nextState;
         }
@@ -265,235 +274,273 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
           testStateCache = nextState;
         }
 
-        saveLearnerState(nextState).catch(e => console.error("Failed to persist state", e));
-        
+        saveLearnerState(nextState).catch((e) => console.error("Failed to persist state", e));
+
         if (mutationType && mutationPayload) {
           // @ts-expect-error TS2345: TypeScript cannot infer that mutationPayload matches mutationType here
-          queueMutation(mutationType, mutationPayload).catch(e => console.error("Failed to queue mutation", e));
+          queueMutation(mutationType, mutationPayload).catch((e) =>
+            console.error("Failed to queue mutation", e)
+          );
         }
-        
+
         return nextState;
       });
     },
     []
   );
 
-  const addXP = useCallback((amount: number) => {
-    if (amount <= 0) return;
-    updateStateAndPersist((prev) => {
-      const nextXp = prev.learnerProgress.xp + amount;
-      return {
-        nextState: {
-          ...prev,
-          learnerProgress: {
-            ...prev.learnerProgress,
-            xp: nextXp,
+  const addXP = useCallback(
+    (amount: number) => {
+      if (amount <= 0) return;
+      updateStateAndPersist((prev) => {
+        const nextXp = prev.learnerProgress.xp + amount;
+        return {
+          nextState: {
+            ...prev,
+            learnerProgress: {
+              ...prev.learnerProgress,
+              xp: nextXp,
+            },
           },
-        },
-        mutationType: "add_xp",
-        mutationPayload: { xp: nextXp },
-      };
-    });
-  }, [updateStateAndPersist]);
-
-  const recordSessionCompletion = useCallback((
-    sessionId: string,
-    attempts: AnswerAttempt[],
-    wordQueue: string[]
-  ) => {
-    updateStateAndPersist((prev) => {
-      if (prev.learnerProgress.completedSessionIds.includes(sessionId)) {
-        return { nextState: prev };
-      }
-
-      const todayStr = getLocalDateString(new Date());
-
-      const streakRes = updateStreak(
-        {
-          currentStreak: prev.learnerProgress.streak,
-          lastActiveDate: prev.learnerProgress.lastStudiedDate,
-        },
-        new Date()
-      );
-
-      const isFirstSessionToday = prev.learnerProgress.lastStudiedDate !== todayStr;
-      const correctAttempts = attempts.filter((a) => a.correct);
-      const xpBreakdown = calculateXPBreakdown(
-        correctAttempts.length,
-        attempts.length,
-        isFirstSessionToday ? streakRes.currentStreak : 0
-      );
-      const xpEarned = xpBreakdown.total;
-
-      const wordAttempts: Record<string, { correct: number; total: number }> = {};
-      attempts.forEach((a) => {
-        if (!wordAttempts[a.wordId]) {
-          wordAttempts[a.wordId] = { correct: 0, total: 0 };
-        }
-        wordAttempts[a.wordId].total += 1;
-        if (a.correct) wordAttempts[a.wordId].correct += 1;
+          mutationType: "add_xp",
+          mutationPayload: { xp: nextXp },
+        };
       });
+    },
+    [updateStateAndPersist]
+  );
 
-      const updatedMemory = { ...prev.wordMemory };
+  const recordSessionCompletion = useCallback(
+    (sessionId: string, attempts: AnswerAttempt[], wordQueue: string[]) => {
+      updateStateAndPersist((prev) => {
+        if (prev.learnerProgress.completedSessionIds.includes(sessionId)) {
+          return { nextState: prev };
+        }
 
-      wordQueue.forEach((wordId) => {
-        const perf = wordAttempts[wordId];
-        const existingState = updatedMemory[wordId] || createInitialWordState(wordId);
+        const todayStr = getLocalDateString(new Date());
 
-        if (!perf || perf.total === 0) {
+        const streakRes = updateStreak(
+          {
+            currentStreak: prev.learnerProgress.streak,
+            lastActiveDate: prev.learnerProgress.lastStudiedDate,
+          },
+          new Date()
+        );
+
+        const isFirstSessionToday = prev.learnerProgress.lastStudiedDate !== todayStr;
+        const correctAttempts = attempts.filter((a) => a.correct);
+        const xpBreakdown = calculateXPBreakdown(
+          correctAttempts.length,
+          attempts.length,
+          isFirstSessionToday ? streakRes.currentStreak : 0
+        );
+        const xpEarned = xpBreakdown.total;
+
+        const wordAttempts: Record<string, { correct: number; total: number }> = {};
+        attempts.forEach((a) => {
+          if (!wordAttempts[a.wordId]) {
+            wordAttempts[a.wordId] = { correct: 0, total: 0 };
+          }
+          wordAttempts[a.wordId].total += 1;
+          if (a.correct) wordAttempts[a.wordId].correct += 1;
+        });
+
+        const updatedMemory = { ...prev.wordMemory };
+
+        wordQueue.forEach((wordId) => {
+          const perf = wordAttempts[wordId];
+          const existingState = updatedMemory[wordId] || createInitialWordState(wordId);
+
+          if (!perf || perf.total === 0) {
+            updatedMemory[wordId] = {
+              ...existingState,
+              exposures: existingState.exposures + 1,
+              lastSeenAt: new Date().toISOString(),
+            };
+          } else {
+            const accuracy = perf.correct / perf.total;
+            const quality = accuracy >= 0.9 ? 5 : accuracy >= 0.7 ? 4 : accuracy >= 0.5 ? 3 : 1;
+            updatedMemory[wordId] = calculateSM2State(existingState, quality);
+          }
+        });
+
+        const newSessionRecord: SessionRecord = {
+          sessionId,
+          completedAt: new Date().toISOString(),
+          score: correctAttempts.length,
+          totalWords: wordQueue.length,
+          xp: xpBreakdown,
+        };
+
+        const nextLearnerProgress = {
+          ...prev.learnerProgress,
+          xp: prev.learnerProgress.xp + xpEarned,
+          sessionsCompleted: prev.learnerProgress.sessionsCompleted + 1,
+          streak: streakRes.currentStreak,
+          daysActive: isFirstSessionToday
+            ? prev.learnerProgress.daysActive + 1
+            : prev.learnerProgress.daysActive,
+          lastStudiedDate: todayStr,
+          completedSessionIds: [...prev.learnerProgress.completedSessionIds, sessionId],
+        };
+
+        const payload = {
+          sessionId,
+          completedAt: newSessionRecord.completedAt,
+          score: newSessionRecord.score,
+          totalWords: newSessionRecord.totalWords,
+          xp: newSessionRecord.xp,
+          learnerProgress: nextLearnerProgress,
+          wordMemory: updatedMemory,
+        };
+
+        return {
+          nextState: {
+            ...prev,
+            learnerProgress: nextLearnerProgress,
+            wordMemory: updatedMemory,
+            sessionHistory: [newSessionRecord, ...prev.sessionHistory].slice(0, 50),
+          },
+          mutationType: "session_completed",
+          mutationPayload: payload,
+        };
+      });
+    },
+    [updateStateAndPersist]
+  );
+
+  const recordUnitAssessmentCompletion = useCallback(
+    (passed: boolean, unitWordIds: string[]) => {
+      if (!passed) return; // If failed, we could record standard XP, but let's keep it simple and just exit or just let them get XP from the normal `recordSessionCompletion`?
+      // Wait, if they pass, we want to force all words in the unit to 'strong'.
+      updateStateAndPersist((prev) => {
+        const updatedMemory = { ...prev.wordMemory };
+
+        unitWordIds.forEach((wordId) => {
+          const existingState = updatedMemory[wordId] || createInitialWordState(wordId);
           updatedMemory[wordId] = {
             ...existingState,
             exposures: existingState.exposures + 1,
             lastSeenAt: new Date().toISOString(),
+            mastery: "strong",
+            intervalDays: 14,
           };
-        } else {
-          const accuracy = perf.correct / perf.total;
-          const quality = accuracy >= 0.9 ? 5 : accuracy >= 0.7 ? 4 : accuracy >= 0.5 ? 3 : 1;
-          updatedMemory[wordId] = calculateSM2State(existingState, quality);
-        }
-      });
+        });
 
-      const newSessionRecord: SessionRecord = {
-        sessionId,
-        completedAt: new Date().toISOString(),
-        score: correctAttempts.length,
-        totalWords: wordQueue.length,
-        xp: xpBreakdown,
-      };
-      
-      const nextLearnerProgress = {
-        ...prev.learnerProgress,
-        xp: prev.learnerProgress.xp + xpEarned,
-        sessionsCompleted: prev.learnerProgress.sessionsCompleted + 1,
-        streak: streakRes.currentStreak,
-        daysActive: isFirstSessionToday ? prev.learnerProgress.daysActive + 1 : prev.learnerProgress.daysActive,
-        lastStudiedDate: todayStr,
-        completedSessionIds: [...prev.learnerProgress.completedSessionIds, sessionId],
-      };
+        // Add a bonus XP for testing out?
+        const bonusXp = 50;
+        const nextXp = prev.learnerProgress.xp + bonusXp;
 
-      const payload = {
-        sessionId,
-        completedAt: newSessionRecord.completedAt,
-        score: newSessionRecord.score,
-        totalWords: newSessionRecord.totalWords,
-        xp: newSessionRecord.xp,
-        learnerProgress: nextLearnerProgress,
-        wordMemory: updatedMemory,
-      };
-
-      return {
-        nextState: {
-          ...prev,
-          learnerProgress: nextLearnerProgress,
-          wordMemory: updatedMemory,
-          sessionHistory: [newSessionRecord, ...prev.sessionHistory].slice(0, 50),
-        },
-        mutationType: "session_completed",
-        mutationPayload: payload,
-      };
-    });
-  }, [updateStateAndPersist]);
-
-  const recordUnitAssessmentCompletion = useCallback((
-    passed: boolean,
-    unitWordIds: string[]
-  ) => {
-    if (!passed) return; // If failed, we could record standard XP, but let's keep it simple and just exit or just let them get XP from the normal `recordSessionCompletion`?
-    // Wait, if they pass, we want to force all words in the unit to 'strong'.
-    updateStateAndPersist((prev) => {
-      const updatedMemory = { ...prev.wordMemory };
-      
-      unitWordIds.forEach((wordId) => {
-        const existingState = updatedMemory[wordId] || createInitialWordState(wordId);
-        updatedMemory[wordId] = {
-          ...existingState,
-          exposures: existingState.exposures + 1,
-          lastSeenAt: new Date().toISOString(),
-          mastery: "strong",
-          intervalDays: 14,
+        return {
+          nextState: {
+            ...prev,
+            learnerProgress: {
+              ...prev.learnerProgress,
+              xp: nextXp,
+            },
+            wordMemory: updatedMemory,
+          },
+          mutationType: "session_completed", // Reusing this mutation type for sync
+          mutationPayload: { wordMemory: updatedMemory, xp: nextXp },
         };
       });
+    },
+    [updateStateAndPersist]
+  );
 
-      // Add a bonus XP for testing out?
-      const bonusXp = 50;
-      const nextXp = prev.learnerProgress.xp + bonusXp;
+  const setPreferences = useCallback(
+    (patch: Partial<LearnerPreferences>) => {
+      updateStateAndPersist((prev) => {
+        const prefs = { ...prev.preferences, ...patch };
+        return {
+          nextState: { ...prev, preferences: prefs },
+          mutationType: "update_preferences",
+          mutationPayload: prefs,
+        };
+      });
+    },
+    [updateStateAndPersist]
+  );
 
-      return {
-        nextState: {
-          ...prev,
-          learnerProgress: {
-            ...prev.learnerProgress,
-            xp: nextXp,
-          },
-          wordMemory: updatedMemory,
-        },
-        mutationType: "session_completed", // Reusing this mutation type for sync
-        mutationPayload: { wordMemory: updatedMemory, xp: nextXp },
-      };
-    });
-  }, [updateStateAndPersist]);
-
-  const setPreferences = useCallback((patch: Partial<LearnerPreferences>) => {
-    updateStateAndPersist((prev) => {
-      const prefs = { ...prev.preferences, ...patch };
-      return {
-        nextState: { ...prev, preferences: prefs },
-        mutationType: "update_preferences",
-        mutationPayload: prefs
-      };
-    });
-  }, [updateStateAndPersist]);
-
-  const setAccessibility = useCallback((patch: Partial<AccessibilityPreferences>) => {
-    updateStateAndPersist((prev) => {
-      const nextAcc = { ...prev.accessibility, ...patch };
-      return {
-        nextState: { ...prev, accessibility: nextAcc },
-        mutationType: "update_accessibility",
-        mutationPayload: nextAcc
-      };
-    });
-  }, [updateStateAndPersist]);
+  const setAccessibility = useCallback(
+    (patch: Partial<AccessibilityPreferences>) => {
+      updateStateAndPersist((prev) => {
+        const nextAcc = { ...prev.accessibility, ...patch };
+        return {
+          nextState: { ...prev, accessibility: nextAcc },
+          mutationType: "update_accessibility",
+          mutationPayload: nextAcc,
+        };
+      });
+    },
+    [updateStateAndPersist]
+  );
 
   const resetToZero = useCallback(() => {
     updateStateAndPersist((prev) => {
       return {
         nextState: { ...INITIAL_LEARNER_STATE, accessibility: prev.accessibility },
         mutationType: "reset",
-        mutationPayload: {}
+        mutationPayload: {},
       };
     });
   }, [updateStateAndPersist]);
 
-  const value = useMemo<LearnerContextType>(
-    () => {
-      if (!state) {
-        return {
-          state: INITIAL_LEARNER_STATE,
-          addXP,
-          recordSessionCompletion,
-          recordUnitAssessmentCompletion,
-          setPreferences,
-          setAccessibility,
-          resetToZero
-        };
-      }
-      return { state, addXP, recordSessionCompletion, recordUnitAssessmentCompletion, setPreferences, setAccessibility, resetToZero };
-    },
-    [state, addXP, recordSessionCompletion, recordUnitAssessmentCompletion, setPreferences, setAccessibility, resetToZero]
-  );
+  const value = useMemo<LearnerContextType>(() => {
+    if (!state) {
+      return {
+        state: INITIAL_LEARNER_STATE,
+        addXP,
+        recordSessionCompletion,
+        recordUnitAssessmentCompletion,
+        setPreferences,
+        setAccessibility,
+        resetToZero,
+      };
+    }
+    return {
+      state,
+      addXP,
+      recordSessionCompletion,
+      recordUnitAssessmentCompletion,
+      setPreferences,
+      setAccessibility,
+      resetToZero,
+    };
+  }, [
+    state,
+    addXP,
+    recordSessionCompletion,
+    recordUnitAssessmentCompletion,
+    setPreferences,
+    setAccessibility,
+    resetToZero,
+  ]);
 
   if (!state) {
-    return <div className="min-h-screen flex items-center justify-center bg-gray-50 text-gray-400">Loading profile...</div>;
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-50 text-gray-400">
+        Loading profile...
+      </div>
+    );
   }
 
   return <LearnerContext.Provider value={value}>{children}</LearnerContext.Provider>;
 }
 
+const DEFAULT_FALLBACK_CONTEXT: LearnerContextType = {
+  state: INITIAL_LEARNER_STATE,
+  isHydrated: true,
+  syncStatus: "idle",
+  recordAttempt: () => {},
+  recordSessionCompletion: () => {},
+  setPreferences: () => {},
+  setAccessibilityPreferences: () => {},
+  resetToZero: () => {},
+  syncWithCloud: async () => {},
+};
+
 export function useLearner() {
   const context = useContext(LearnerContext);
-  if (!context) {
-    throw new Error("useLearner must be used within a LearnerProvider");
-  }
-  return context;
+  return context ?? DEFAULT_FALLBACK_CONTEXT;
 }

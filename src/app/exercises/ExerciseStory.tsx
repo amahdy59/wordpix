@@ -14,7 +14,10 @@ import {
   MessageSquare,
   Layers,
   Play,
+  Info,
 } from "lucide-react";
+import { WordInspectorModal } from "../shared/WordInspectorModal";
+import { getLexiconEntry } from "../data/lexiconDictionary";
 
 interface Props {
   step: number;
@@ -35,6 +38,7 @@ export const ExerciseStory = memo(function ExerciseStory({
   const storyText = group.story || "No reading material available for this lesson yet. Stay tuned!";
   const [viewMode, setViewMode] = useState<ContextViewMode>("passage");
   const [activeWordId, setActiveWordId] = useState<string | null>(null);
+  const [inspectedWord, setInspectedWord] = useState<VocabularyItem | null>(null);
 
   const { speak, stop, isPlaying } = useAudio();
   const btnRef = useRef<HTMLButtonElement>(null);
@@ -331,33 +335,82 @@ export const ExerciseStory = memo(function ExerciseStory({
               </span>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
               {words.map((word) => {
                 const rich = RICH_CONTEXT_SENTENCES[word.id];
+                const entry = getLexiconEntry(word.id, word.label);
                 return (
                   <div
                     key={word.id}
                     className="bg-wp-card border border-border rounded-2xl p-4 shadow-wp-xs flex flex-col gap-3 hover:border-primary/40 transition-colors"
                   >
                     <div className="flex items-center gap-3">
-                      <div className="size-14 rounded-xl overflow-hidden shrink-0 border border-border bg-muted">
-                        <img src={word.img} alt="" className="size-full object-cover" />
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <h4 className="font-sans font-bold text-foreground text-base capitalize truncate">
-                          {word.label.toLowerCase()}
-                        </h4>
-                        <p className="font-sans text-xs text-muted-foreground">{word.phonetic}</p>
-                      </div>
                       <button
                         type="button"
-                        onClick={() => handlePlayWord(word.label, word.id)}
-                        aria-label={`Pronounce ${word.label}`}
-                        className="size-9 rounded-xl bg-secondary text-primary border border-primary/20 hover:bg-primary/10 flex items-center justify-center shrink-0 transition-colors"
+                        onClick={() => setInspectedWord(word)}
+                        aria-label={`Inspect ${word.label}`}
+                        className="size-16 rounded-xl overflow-hidden shrink-0 border border-border bg-muted relative group cursor-pointer"
                       >
-                        <Volume2 className="size-4" />
+                        <img
+                          src={word.img}
+                          alt=""
+                          className="size-full object-cover group-hover:scale-105 transition-transform"
+                        />
+                        <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+                          <Info className="size-4 text-white drop-shadow" />
+                        </div>
                       </button>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2">
+                          <h4 className="font-sans font-bold text-foreground text-base capitalize truncate">
+                            {word.label.toLowerCase()}
+                          </h4>
+                          <span
+                            className="text-[11px] font-arabic font-bold text-primary"
+                            dir="rtl"
+                          >
+                            {entry.arabic}
+                          </span>
+                        </div>
+                        <p className="font-sans text-xs text-muted-foreground">{word.phonetic}</p>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <button
+                          type="button"
+                          onClick={() => handlePlayWord(word.label, word.id)}
+                          aria-label={`Pronounce ${word.label}`}
+                          className="size-9 rounded-xl bg-secondary text-primary border border-primary/20 hover:bg-primary/10 flex items-center justify-center shrink-0 transition-colors"
+                        >
+                          <Volume2 className="size-4" />
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setInspectedWord(word)}
+                          aria-label={`Open details for ${word.label}`}
+                          className="size-9 rounded-xl bg-wp-card text-muted-foreground border border-border hover:text-foreground flex items-center justify-center shrink-0 transition-colors"
+                        >
+                          <Info className="size-4" />
+                        </button>
+                      </div>
                     </div>
+
+                    {/* Collocations badges */}
+                    {entry.collocations.length > 0 && (
+                      <div className="flex flex-wrap gap-1.5 pt-0.5">
+                        {entry.collocations.slice(0, 2).map((col, cIdx) => (
+                          <button
+                            key={cIdx}
+                            type="button"
+                            onClick={() => speak(col)}
+                            aria-label={`Listen to phrase: ${col}`}
+                            className="text-[11px] font-sans font-medium bg-secondary text-foreground px-2 py-0.5 rounded-lg border border-border hover:border-primary/40 flex items-center gap-1"
+                          >
+                            <span>{col}</span>
+                            <Volume2 className="size-2.5 text-muted-foreground" />
+                          </button>
+                        ))}
+                      </div>
+                    )}
 
                     {rich?.full && (
                       <p className="font-sans text-xs text-muted-foreground bg-muted/40 p-2.5 rounded-xl border border-border/50 leading-relaxed">
@@ -452,6 +505,12 @@ export const ExerciseStory = memo(function ExerciseStory({
           </div>
         )}
       </div>
+
+      <WordInspectorModal
+        word={inspectedWord}
+        isOpen={!!inspectedWord}
+        onClose={() => setInspectedWord(null)}
+      />
     </ExerciseShell>
   );
 });
