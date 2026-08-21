@@ -1,20 +1,18 @@
-import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
+﻿import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
 import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getDistractors } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
 import { useAudio } from "../shared/useAudio";
-import { Volume2, CheckCircle2, RefreshCw, Keyboard } from "lucide-react";
+import { Volume2, CheckCircle2, XCircle, RefreshCw, Keyboard, ArrowRight } from "lucide-react";
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
-import { AnswerFeedback } from "../shared/AnswerFeedback";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
-import { useProgress } from "../data/progress";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface Props {
   step: number;
@@ -36,7 +34,6 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   const currentTargetWord = queue.current ?? words[0];
   usePrefetchImage(queue.next);
   const { speak, stop, isPlaying } = useAudio({ lang: "en-US", rate: 0.85 });
-  const { progress } = useProgress();
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
   const hasSpokenRef = useRef<Record<string, boolean>>({});
@@ -66,7 +63,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   });
 
   // The drill ends on the answer that empties the queue, so leaving for the
-  // next step has to wait until that last piece of feedback has been cleared —
+  // next step has to wait until that last piece of feedback has been cleared â€”
   // otherwise the learner never sees the result of their final answer.
   useEffect(() => {
     if (queue.isComplete && feedback === null) dispatch({ type: "LESSON_NEXT" });
@@ -164,7 +161,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-wp-amber font-bold">
             <Keyboard className="size-4" aria-hidden />
-            <span>Press 1–{displayCards.length} to choose · R to replay audio</span>
+            <span>Press 1â€“{displayCards.length} to choose Â· R to replay audio</span>
           </div>
         </div>
       }
@@ -186,13 +183,13 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 <span>Listen &amp; Match Picture</span>
                 {isPlaying && (
                   <span className="text-[10px] bg-wp-amber/20 text-wp-amber px-2 py-0.5 rounded-full border border-wp-amber/30">
-                    Playing sound…
+                    Playing soundâ€¦
                   </span>
                 )}
               </h2>
               <p className="font-sans text-white/80 text-xs">
                 {queue.isRetry
-                  ? "One more time — tap the picture you hear."
+                  ? "One more time â€” tap the picture you hear."
                   : "Tap image card matching the spoken word."}
               </p>
             </div>
@@ -235,6 +232,10 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
               cardStateStyle = "border-2 border-wp-green bg-wp-green-light/40 shadow-md";
             }
 
+            // Overlay type for this cell
+            const showCorrectOverlay = isSelected && feedback === "correct";
+            const showIncorrectOverlay = isSelected && feedback === "incorrect";
+
             return (
               <motion.button
                 key={card.id}
@@ -263,34 +264,88 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                     checked={isSelected || isRevealedAnswer}
                     className="size-full object-cover block"
                   />
-                  {isRevealedAnswer && (
+                </div>
+
+                {/* -- Per-image feedback overlay -- */}
+                <AnimatePresence>
+                  {(showCorrectOverlay || showIncorrectOverlay) && (
                     <motion.div
-                      initial={{ scale: 0 }}
-                      animate={{ scale: 1 }}
-                      transition={{ type: "spring", bounce: 0.5 }}
-                      className="absolute top-2 end-2 bg-wp-green text-wp-text-on-green p-1 rounded-full shadow-md"
+                      key={`overlay-${card.id}`}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.18 }}
+                      className={`absolute inset-0 flex flex-col items-center justify-center gap-2 pointer-events-none ${
+                        showIncorrectOverlay
+                          ? "bg-wp-rose/70 backdrop-blur-[2px]"
+                          : "bg-wp-green/70 backdrop-blur-[2px]"
+                      }`}
                     >
-                      <CheckCircle2 className="size-4 sm:size-5" aria-hidden />
+                      <motion.div
+                        initial={{ scale: 0.3, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ type: "spring", stiffness: 450, damping: 20, delay: 0.05 }}
+                      >
+                        {showIncorrectOverlay ? (
+                          <XCircle
+                            className="size-10 sm:size-12 text-white drop-shadow-lg"
+                            aria-hidden
+                          />
+                        ) : (
+                          <CheckCircle2
+                            className="size-10 sm:size-12 text-white drop-shadow-lg"
+                            aria-hidden
+                          />
+                        )}
+                      </motion.div>
+
+                      <motion.span
+                        initial={{ y: 6, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ delay: 0.15 }}
+                        className="font-sans font-black text-white text-sm sm:text-base drop-shadow text-center px-2"
+                      >
+                        {showIncorrectOverlay ? "Wrong" : "Correct!"}
+                      </motion.span>
                     </motion.div>
                   )}
-                </div>
+                </AnimatePresence>
               </motion.button>
             );
           })}
         </div>
 
-        <AnswerFeedback
-          result={feedback}
-          wordLabel={currentTargetWord.label}
-          explanation={
-            feedback === "correct"
-              ? `That is "${currentTargetWord.label}".`
-              : `The picture you heard was "${currentTargetWord.label}". You will see it again shortly.`
-          }
-          streakCount={progress.streak}
-          autoAdvancing={accessibility.autoAdvance}
-          onContinue={handleContinue}
-        />
+        {/* Continue strip — replaces old AnswerFeedback bar */}
+        <AnimatePresence>
+          {feedback !== null && !accessibility.autoAdvance && (
+            <motion.div
+              key="continue-strip"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ delay: 0.3 }}
+              className={`shrink-0 rounded-2xl px-5 py-3 flex items-center justify-between gap-3 border ${
+                feedback === "correct"
+                  ? "bg-wp-green/10 border-wp-green/30"
+                  : "bg-wp-rose/10 border-wp-rose/30"
+              }`}
+            >
+              <span className="font-sans font-semibold text-foreground text-sm">
+                {feedback === "correct"
+                  ? `? That is "${currentTargetWord.label}".`
+                  : `? The picture you heard was "${currentTargetWord.label}".`}
+              </span>
+              <button
+                type="button"
+                onClick={handleContinue}
+                className="flex items-center gap-1.5 px-4 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shrink-0"
+              >
+                Continue
+                <ArrowRight className="size-4" aria-hidden />
+              </button>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </ExerciseShell>
   );
