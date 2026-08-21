@@ -119,6 +119,17 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       words={words}
       lessonId={lessonId}
       dispatch={dispatch}
+      subtitle={
+        <>
+          <span className="uppercase tracking-wider">{group.name}</span>
+          <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
+            <HelpCircle className="size-3" aria-hidden />
+            <span>
+              Question {queue.position} of {queue.total}
+            </span>
+          </span>
+        </>
+      }
       footer={
         <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-wp-amber font-bold">
@@ -129,26 +140,15 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       }
     >
       <div className="relative flex flex-col gap-3.5 sm:gap-4 w-full max-w-2xl mx-auto h-full min-h-0">
-        {/* Single-Line Question Heading */}
-        <div className="bg-wp-card border border-border rounded-2xl p-3.5 sm:p-4 shadow-wp-xs shrink-0 flex flex-col gap-3">
-          <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground w-full">
-            <span className="uppercase tracking-wider">{group.name}</span>
-            <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
-              <HelpCircle className="size-3" aria-hidden />
-              <span>
-                Question {queue.position} of {queue.total}
-              </span>
-            </span>
-          </div>
-          <div className="flex items-center justify-center gap-2">
-            <h2 className="font-sans font-black text-foreground text-base sm:text-lg md:text-xl text-center flex-1 min-w-[12rem] text-balance">
-              Which picture shows &ldquo;
-              <span className="text-primary">{currentTargetWord.label}</span>&rdquo;?
-            </h2>
-            <span className="text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full shrink-0">
-              /{currentTargetWord.phonetic}/
-            </span>
-          </div>
+        {/* Single-Line Question Card — group & counter moved to header */}
+        <div className="bg-wp-card border border-border rounded-2xl px-5 py-3.5 shadow-wp-xs shrink-0 flex items-center justify-between gap-3">
+          <h2 className="font-sans font-black text-foreground text-base sm:text-lg md:text-xl flex-1 text-balance">
+            Which picture shows &ldquo;
+            <span className="text-primary">{currentTargetWord.label}</span>&rdquo;?
+          </h2>
+          <span className="text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full shrink-0 whitespace-nowrap">
+            /{currentTargetWord.phonetic}/
+          </span>
         </div>
 
         {/* 2x2 Grid Layout */}

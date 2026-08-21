@@ -5,6 +5,11 @@ import { CloseButton } from "./CloseButton";
 interface Props {
   title: string;
   /**
+   * Optional one-line subtitle rendered between the title row and progress bar.
+   * Use for group name + question count so individual exercises don't need their own header row.
+   */
+  subtitle?: React.ReactNode;
+  /**
    * 1-based position in the flow, e.g. 3 for "step 3 of 9".
    *
    * This was previously `step`, documented as a 0-based index but passed
@@ -26,6 +31,7 @@ interface Props {
  */
 export const LessonHeader = memo(function LessonHeader({
   title,
+  subtitle,
   current,
   total = 6,
   onBack,
@@ -36,18 +42,23 @@ export const LessonHeader = memo(function LessonHeader({
   const pct = Math.round((safeCurrent / safeTotal) * 100);
 
   return (
-    <div className="content-stretch flex flex-col gap-[12px] px-5 py-3 md:px-8 md:py-4 relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col gap-[8px] px-5 py-3 md:px-8 md:py-4 relative shrink-0 w-full">
       <div className="content-stretch flex items-center justify-between relative shrink-0 w-full gap-3">
         <div className="shrink-0">
           <BackButton onClick={onBack} />
         </div>
-        <h1 className="wp-type-body-emphasis truncate text-center flex-1 min-w-0 px-2">
-          {title}
-        </h1>
+        <h1 className="wp-type-body-emphasis truncate text-center flex-1 min-w-0 px-2">{title}</h1>
         <div className="shrink-0">
           <CloseButton onClick={onClose} />
         </div>
       </div>
+
+      {/* Optional subtitle row — group name + question/sentence counter */}
+      {subtitle && (
+        <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
+          {subtitle}
+        </div>
+      )}
 
       {/* Progress bar */}
       <div

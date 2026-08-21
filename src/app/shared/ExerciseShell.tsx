@@ -15,7 +15,8 @@ interface Props {
   title: string;
   /** Group vocabulary words */
   words: VocabularyItem[];
-
+  /** Optional subtitle shown between title row and progress bar in LessonHeader */
+  subtitle?: React.ReactNode;
   lessonId: string;
   dispatch: React.Dispatch<Action>;
   children: React.ReactNode;
@@ -38,7 +39,7 @@ export const ExerciseShell = memo(function ExerciseShell({
   step,
   title,
   words,
-
+  subtitle,
   lessonId,
   dispatch,
   children,
@@ -69,6 +70,7 @@ export const ExerciseShell = memo(function ExerciseShell({
       <div className="flex-1 flex flex-col h-svh overflow-hidden relative">
         <LessonHeader
           title={`${group.name}: ${title}`}
+          subtitle={subtitle}
           /* `step` is a 0-based index into the 6-step lesson flow (0 = scene),
              so position in the flow is step + 1. */
           current={step + 1}

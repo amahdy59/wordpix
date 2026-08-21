@@ -112,6 +112,14 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       words={words}
       lessonId={lessonId}
       dispatch={dispatch}
+      subtitle={
+        <>
+          <span className="uppercase tracking-wider">{group.name}</span>
+          <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full">
+            Sentence {queue.position} of {queue.total}
+          </span>
+        </>
+      }
       footer={
         <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-wp-amber font-bold">
@@ -122,15 +130,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       }
     >
       <div className="relative flex flex-col gap-3 sm:gap-4 w-full max-w-2xl mx-auto">
-        {/* Group & progress header */}
-        <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
-          <span className="uppercase tracking-wider">{group.name}</span>
-          <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full">
-            Sentence {queue.position} of {queue.total}
-          </span>
-        </div>
-
-        {/* Sentence card � ABOVE the image */}
+        {/* Sentence card — the only question element, above the image */}
         <div className="bg-wp-card rounded-2xl border border-border px-5 py-3.5 text-center shadow-wp-xs flex items-center justify-center">
           <p className="font-sans font-bold text-foreground text-xl sm:text-2xl leading-relaxed whitespace-nowrap overflow-hidden text-ellipsis w-full">
             {richSentence.clozeBefore}{" "}
