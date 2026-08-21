@@ -6,14 +6,12 @@ import { getRichSentence, getDistractors } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
-import { AnswerFeedback } from "../shared/AnswerFeedback";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
-import { useProgress } from "../data/progress";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
-import { HelpCircle, Keyboard } from "lucide-react";
-import { motion } from "framer-motion";
+import { HelpCircle, Keyboard, CheckCircle2, XCircle, ArrowRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface Props {
   step: number;
@@ -30,7 +28,6 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
 }: Props) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
-  const { progress } = useProgress();
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
 
@@ -41,12 +38,9 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
 
   const options = useMemo(() => {
     const distractors = getDistractors(currentTargetWord, 3);
-
     const correctIndex = Math.floor(Math.random() * 4);
-
     const finalOptions = [...distractors];
     finalOptions.splice(correctIndex, 0, currentTargetWord);
-
     return finalOptions;
   }, [currentTargetWord]);
 
@@ -87,8 +81,6 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
     advanceNext();
   }, [autoAdvance, advanceNext]);
 
-  // The footer has always advertised number-key selection; until now nothing
-  // listened for it.
   const selectByIndex = useCallback(
     (index: number) => {
       const option = options[index];
@@ -140,7 +132,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       }
     >
       <div className="relative flex flex-col gap-3.5 sm:gap-4 w-full max-w-2xl mx-auto h-full min-h-0">
-        {/* Single-Line Question Card — group & counter moved to header */}
+        {/* Question card */}
         <div className="bg-wp-card border border-border rounded-2xl px-5 py-3.5 shadow-wp-xs shrink-0 flex items-center justify-between gap-3">
           <h2 className="font-sans font-black text-foreground text-base sm:text-lg md:text-xl flex-1 text-balance">
             Which picture shows &ldquo;
@@ -151,30 +143,27 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
           </span>
         </div>
 
-        {/* 2x2 Grid Layout */}
-        {/*
-          Actions, not form values: choosing an option commits the answer, so
-          radiogroup semantics (which imply arrow-key navigation between
-          uncommitted values) would be wrong even if they were implemented.
-        */}
+        {/* 2×2 image grid */}
         <div
           role="group"
           aria-label={`Which image matches ${currentTargetWord.label}?`}
-          className="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3.5 w-full flex-1 min-h-0"
+          className="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3 w-full flex-1 min-h-0"
         >
           {options.map((option, idx) => {
             const isSelected = selectedId === option.id;
-            const isRevealedAnswer = feedback === "incorrect" && option.id === currentTargetWord.id;
+            const isCorrectAnswer = option.id === currentTargetWord.id;
+            const isRevealedAnswer = feedback === "incorrect" && isCorrectAnswer;
 
-            let stateStyle = "border-border bg-wp-card hover:border-primary/60 hover:shadow-md";
-            if (isSelected) {
-              stateStyle =
-                feedback === "correct"
-                  ? "border-wp-green bg-wp-green-light/40 shadow-md"
-                  : "border-wp-rose bg-wp-rose-light/40 shadow-md";
-            } else if (isRevealedAnswer) {
-              stateStyle = "border-wp-green bg-wp-green-light/40 shadow-md";
-            }
+            // Border: correct=green, wrong-selected=red, revealed-correct=green, else neutral
+            let borderStyle = "border-border hover:border-primary/60";
+            if (isSelected && feedback === "correct") borderStyle = "border-wp-green";
+            else if (isSelected && feedback === "incorrect") borderStyle = "border-wp-rose";
+            else if (isRevealedAnswer) borderStyle = "border-wp-green";
+
+            // Overlay type for this cell
+            const showCorrectOverlay = isSelected && feedback === "correct";
+            const showIncorrectOverlay = isSelected && feedback === "incorrect";
+            const showRevealOverlay = isRevealedAnswer;
 
             return (
               <motion.button
@@ -187,16 +176,18 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 aria-pressed={isSelected}
                 aria-disabled={feedback !== null}
                 onClick={() => handleSelect(option.id)}
-                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full h-full border-2 block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-sm ${stateStyle}`}
+                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full h-full border-2 block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-sm ${borderStyle}`}
               >
+                {/* Keyboard shortcut badge */}
                 <span
                   aria-hidden
-                  className="hidden sm:block absolute top-2 start-2 sm:top-2.5 sm:start-2.5 z-10 bg-black/60 text-white text-[10px] sm:text-[11px] font-mono font-bold px-2 py-0.5 rounded border border-white/20 shadow-sm backdrop-blur-md pointer-events-none"
+                  className="hidden sm:block absolute top-2 start-2 z-10 bg-black/60 text-white text-[10px] sm:text-[11px] font-mono font-bold px-2 py-0.5 rounded border border-white/20 shadow-sm backdrop-blur-md pointer-events-none"
                 >
                   [{idx + 1}]
                 </span>
 
-                <div className="size-full relative bg-muted after:absolute after:inset-0 after:border-[4px] after:border-transparent group-hover:after:border-primary/20 after:rounded-2xl sm:after:rounded-3xl after:transition-colors">
+                {/* Image */}
+                <div className="size-full relative bg-muted">
                   <WordImage
                     word={option}
                     altMode="assessment"
@@ -204,34 +195,101 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                     checked={isSelected || isRevealedAnswer}
                     className="size-full object-cover block"
                   />
-                  {isRevealedAnswer && (
+                </div>
+
+                {/* ── Per-image feedback overlay ── */}
+                <AnimatePresence>
+                  {(showCorrectOverlay || showIncorrectOverlay || showRevealOverlay) && (
                     <motion.div
-                      initial={{ scale: 0 }}
-                      animate={{ scale: 1 }}
-                      transition={{ type: "spring", bounce: 0.5 }}
-                      className="absolute top-2 end-2 bg-wp-green text-wp-text-on-green p-1 rounded-full shadow-md"
+                      key={`overlay-${option.id}`}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.18 }}
+                      className={`absolute inset-0 flex flex-col items-center justify-center gap-2 pointer-events-none ${
+                        showIncorrectOverlay
+                          ? "bg-wp-rose/70 backdrop-blur-[2px]"
+                          : "bg-wp-green/70 backdrop-blur-[2px]"
+                      }`}
                     >
-                      <HelpCircle className="size-4 sm:size-5" aria-hidden />
+                      <motion.div
+                        initial={{ scale: 0.3, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ type: "spring", stiffness: 450, damping: 20, delay: 0.05 }}
+                      >
+                        {showIncorrectOverlay ? (
+                          <XCircle
+                            className="size-10 sm:size-12 text-white drop-shadow-lg"
+                            aria-hidden
+                          />
+                        ) : (
+                          <CheckCircle2
+                            className="size-10 sm:size-12 text-white drop-shadow-lg"
+                            aria-hidden
+                          />
+                        )}
+                      </motion.div>
+
+                      <motion.span
+                        initial={{ y: 6, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ delay: 0.15 }}
+                        className="font-sans font-black text-white text-sm sm:text-base drop-shadow text-center px-2"
+                      >
+                        {showIncorrectOverlay
+                          ? "Wrong"
+                          : showRevealOverlay
+                            ? currentTargetWord.label
+                            : "Correct!"}
+                      </motion.span>
                     </motion.div>
                   )}
-                </div>
+                </AnimatePresence>
               </motion.button>
             );
           })}
         </div>
 
-        <AnswerFeedback
-          result={feedback}
-          wordLabel={currentTargetWord.label}
-          explanation={
-            feedback === "correct"
-              ? `"${richSentence.full}"`
-              : `The correct picture is "${currentTargetWord.label}". You will see it again shortly.`
-          }
-          streakCount={progress.streak}
-          autoAdvancing={accessibility.autoAdvance}
-          onContinue={handleContinue}
-        />
+        {/* Screen-reader announcement */}
+        <span aria-live="polite" aria-atomic="true" className="sr-only">
+          {feedback === "correct"
+            ? `Correct! This is a ${currentTargetWord.label}. ${richSentence.full}`
+            : feedback === "incorrect"
+              ? `Incorrect. The correct answer is ${currentTargetWord.label}.`
+              : ""}
+        </span>
+
+        {/* Continue strip — appears below grid after answer, replaces old AnswerFeedback bar */}
+        <AnimatePresence>
+          {feedback !== null && !accessibility.autoAdvance && (
+            <motion.div
+              key="continue-strip"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ delay: 0.3 }}
+              className={`shrink-0 rounded-2xl px-5 py-3 flex items-center justify-between gap-3 border ${
+                feedback === "correct"
+                  ? "bg-wp-green/10 border-wp-green/30"
+                  : "bg-wp-rose/10 border-wp-rose/30"
+              }`}
+            >
+              <span className="font-sans font-semibold text-foreground text-sm">
+                {feedback === "correct"
+                  ? `✓ This is a ${currentTargetWord.label}.`
+                  : `✗ The answer is "${currentTargetWord.label}".`}
+              </span>
+              <button
+                type="button"
+                onClick={handleContinue}
+                className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shrink-0"
+              >
+                Continue
+                <ArrowRight className="size-4" aria-hidden />
+              </button>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </ExerciseShell>
   );
