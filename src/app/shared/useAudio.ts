@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useLearner } from "../context/LearnerContext";
+import { getCachedAudio, saveCachedAudio } from "../../lib/persistence/db";
 
 export type AudioStatus = "idle" | "loading" | "playing" | "error" | "unsupported";
 
@@ -16,13 +17,15 @@ const SPEECH_START_TIMEOUT_MS = 4000;
 function pickVoice(synth: SpeechSynthesis, targetLang: string): SpeechSynthesisVoice | null {
   const voices = synth.getVoices();
   const prefix = targetLang.split("-")[0];
-  
+
   // Prefer "Google" voices (they are usually higher quality neural TTS)
-  const googleVoice = voices.find(v => v.name.includes("Google") && v.lang.startsWith(prefix));
+  const googleVoice = voices.find((v) => v.name.includes("Google") && v.lang.startsWith(prefix));
   if (googleVoice) return googleVoice;
-  
+
   // Prefer premium Apple/Microsoft voices
-  const premiumVoice = voices.find(v => (v.name.includes("Premium") || v.name.includes("Enhanced")) && v.lang.startsWith(prefix));
+  const premiumVoice = voices.find(
+    (v) => (v.name.includes("Premium") || v.name.includes("Enhanced")) && v.lang.startsWith(prefix)
+  );
   if (premiumVoice) return premiumVoice;
 
   return (
@@ -122,7 +125,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
         currentAudioRef.current.pause();
         currentAudioRef.current = null;
       }
-      
+
       const apiKey = import.meta.env?.VITE_ELEVENLABS_API_KEY;
       if (apiKey) {
         const voiceId = import.meta.env?.VITE_ELEVENLABS_VOICE_ID || "pNInz6obbfDQGcgMyIGC";
@@ -142,7 +145,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
             clearStall();
             setStatus("error");
           };
-          
+
           currentAudioRef.current = audio;
           audio.play().catch(() => {
             clearStall();
@@ -157,41 +160,59 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
         }
 
         setStatus("loading");
-        
+
         clearStall();
         stallTimerRef.current = window.setTimeout(() => {
           setStatus((current) => (current === "loading" ? "error" : current));
         }, SPEECH_START_TIMEOUT_MS * 2); // Give API more time than local TTS
 
-        fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "xi-api-key": apiKey
-          },
-          body: JSON.stringify({
-            text,
-            model_id: "eleven_turbo_v2_5",
-            voice_settings: {
-              stability: 0.7,
-              similarity_boost: 0.75
+        // 1. Check permanent IndexedDB offline cache first
+        getCachedAudio(cacheKey)
+          .then((storedBlob) => {
+            if (storedBlob) {
+              const url = URL.createObjectURL(storedBlob);
+              audioCache.set(cacheKey, url);
+              playBlobUrl(url);
+              return;
             }
+
+            // 2. Not in IndexedDB cache, fetch from ElevenLabs API
+            fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                "xi-api-key": apiKey,
+              },
+              body: JSON.stringify({
+                text,
+                model_id: "eleven_turbo_v2_5",
+                voice_settings: {
+                  stability: 0.7,
+                  similarity_boost: 0.75,
+                },
+              }),
+            })
+              .then((res) => {
+                if (!res.ok) throw new Error(`ElevenLabs API error: ${res.status}`);
+                return res.blob();
+              })
+              .then((blob) => {
+                // Permanently persist to IndexedDB for future runs/offline use
+                saveCachedAudio(cacheKey, blob);
+                const url = URL.createObjectURL(blob);
+                audioCache.set(cacheKey, url);
+                playBlobUrl(url);
+              })
+              .catch((err) => {
+                console.error("ElevenLabs error, falling back to synthesis", err);
+                fallbackToSynthesis(text, targetLang);
+              });
           })
-        })
-          .then(res => {
-            if (!res.ok) throw new Error(`ElevenLabs API error: ${res.status}`);
-            return res.blob();
-          })
-          .then(blob => {
-            const url = URL.createObjectURL(blob);
-            audioCache.set(cacheKey, url);
-            playBlobUrl(url);
-          })
-          .catch(err => {
-            console.error("ElevenLabs error, falling back to synthesis", err);
+          .catch((err) => {
+            console.warn("IndexedDB audio cache lookup error", err);
             fallbackToSynthesis(text, targetLang);
           });
-          
+
         return;
       }
 
