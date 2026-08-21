@@ -126,9 +126,16 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
         currentAudioRef.current = null;
       }
 
-      const apiKey = import.meta.env?.VITE_ELEVENLABS_API_KEY;
+      const apiKey =
+        import.meta.env?.VITE_ELEVENLABS_API_KEY ||
+        (typeof window !== "undefined" ? localStorage.getItem("wordpix_elevenlabs_key") : null);
       if (apiKey) {
-        const voiceId = import.meta.env?.VITE_ELEVENLABS_VOICE_ID || "Xb7hH8MSUJpSbSDYk0k2";
+        const voiceId =
+          import.meta.env?.VITE_ELEVENLABS_VOICE_ID ||
+          (typeof window !== "undefined"
+            ? localStorage.getItem("wordpix_elevenlabs_voice_id")
+            : null) ||
+          "Xb7hH8MSUJpSbSDYk0k2";
         const cacheKey = `${voiceId}:${text}`;
 
         const playBlobUrl = (blobUrl: string) => {

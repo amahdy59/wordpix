@@ -1,9 +1,10 @@
 import { memo, useState } from "react";
-import { X, Sun, Moon, Volume2, Type, Sliders, ShieldCheck, Eye } from "lucide-react";
+import { X, Sun, Moon, Volume2, Type, Sliders, ShieldCheck, Eye, Sparkles } from "lucide-react";
 import { useLearner } from "../context/LearnerContext";
 import { useTheme } from "../shared/ThemeToggle";
 import { useI18n, SUPPORTED_LANGS } from "../context/I18nContext";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
+import { useAudio } from "../shared/useAudio";
 
 /** Speech rates offered in Settings, slowest first. */
 const SPEECH_RATES = [0.5, 0.75, 1] as const;
@@ -17,13 +18,23 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
   const { state, setPreferences, resetToZero } = useLearner();
   const { theme, resolvedTheme, toggleTheme } = useTheme();
   const { t, interfaceLang, setInterfaceLang } = useI18n();
+  const { speak } = useAudio();
 
   // These six were local useState that nothing read: the controls moved when
   // clicked and changed nothing, then discarded the value on close. They are
   // now the persisted accessibility slice, applied by real consumers.
   const { accessibility, setAccessibility } = useAccessibility();
-  const { textSize, highContrast, speechRate, numeralSystem, includeSpeaking, includeListening, timedExercises, autoAdvance, reduceMotion } =
-    accessibility;
+  const {
+    textSize,
+    highContrast,
+    speechRate,
+    numeralSystem,
+    includeSpeaking,
+    includeListening,
+    timedExercises,
+    autoAdvance,
+    reduceMotion,
+  } = accessibility;
   const [confirmReset, setConfirmReset] = useState(false);
 
   if (!isOpen) return null;
@@ -43,7 +54,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               <Sliders className="size-5" />
             </div>
             <div>
-              <h2 id="settings-dialog-title" className="font-sans font-black text-foreground text-xl md:text-2xl leading-tight">
+              <h2
+                id="settings-dialog-title"
+                className="font-sans font-black text-foreground text-xl md:text-2xl leading-tight"
+              >
                 Settings &amp; Accessibility
               </h2>
               <p className="font-sans text-xs text-muted-foreground mt-0.5">
@@ -76,7 +90,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">Theme Mode</span>
-                  <p className="font-sans text-xs text-muted-foreground">Cycle between Dark, Light, and following your system setting.</p>
+                  <p className="font-sans text-xs text-muted-foreground">
+                    Cycle between Dark, Light, and following your system setting.
+                  </p>
                 </div>
                 <button
                   type="button"
@@ -140,8 +156,12 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               {/* Learner Expression (Child / Adult Mode) */}
               <div className="flex items-center justify-between gap-4">
                 <div>
-                  <span className="font-sans font-bold text-foreground text-sm">Learner Mode (UI Expression)</span>
-                  <p className="font-sans text-xs text-muted-foreground">Adjust density, typography, and illustration style based on age.</p>
+                  <span className="font-sans font-bold text-foreground text-sm">
+                    Learner Mode (UI Expression)
+                  </span>
+                  <p className="font-sans text-xs text-muted-foreground">
+                    Adjust density, typography, and illustration style based on age.
+                  </p>
                 </div>
                 <div className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl">
                   <button
@@ -149,7 +169,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     onClick={() => setPreferences({ expression: "child" })}
                     aria-pressed={state.preferences.expression === "child"}
                     className={`px-3 py-1 rounded-lg text-xs font-sans font-bold ${
-                      state.preferences.expression === "child" ? "bg-primary text-primary-foreground shadow-xs" : "text-muted-foreground hover:text-foreground"
+                      state.preferences.expression === "child"
+                        ? "bg-primary text-primary-foreground shadow-xs"
+                        : "text-muted-foreground hover:text-foreground"
                     }`}
                   >
                     Child
@@ -159,7 +181,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     onClick={() => setPreferences({ expression: "adult" })}
                     aria-pressed={state.preferences.expression === "adult"}
                     className={`px-3 py-1 rounded-lg text-xs font-sans font-bold ${
-                      state.preferences.expression === "adult" ? "bg-primary text-primary-foreground shadow-xs" : "text-muted-foreground hover:text-foreground"
+                      state.preferences.expression === "adult"
+                        ? "bg-primary text-primary-foreground shadow-xs"
+                        : "text-muted-foreground hover:text-foreground"
                     }`}
                   >
                     Adult
@@ -172,15 +196,21 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               {/* High Contrast Mode */}
               <div className="flex items-center justify-between gap-4">
                 <div>
-                  <span className="font-sans font-bold text-foreground text-sm">High Contrast Mode (AAA 7:1)</span>
-                  <p className="font-sans text-xs text-muted-foreground">Boost contrast ratios to 7:1 for enhanced visual readability.</p>
+                  <span className="font-sans font-bold text-foreground text-sm">
+                    High Contrast Mode (AAA 7:1)
+                  </span>
+                  <p className="font-sans text-xs text-muted-foreground">
+                    Boost contrast ratios to 7:1 for enhanced visual readability.
+                  </p>
                 </div>
                 <button
                   type="button"
                   onClick={() => setAccessibility({ highContrast: !highContrast })}
                   aria-pressed={highContrast}
                   className={`px-3 py-1.5 rounded-full font-sans font-bold text-xs transition-all border ${
-                    highContrast ? "bg-wp-green text-wp-text-on-green border-wp-green" : "bg-muted text-muted-foreground border-border"
+                    highContrast
+                      ? "bg-wp-green text-wp-text-on-green border-wp-green"
+                      : "bg-muted text-muted-foreground border-border"
                   }`}
                 >
                   {highContrast ? "Enabled (7:1)" : "Disabled"}
@@ -193,14 +223,18 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm">Reduce Motion</span>
-                  <p className="font-sans text-xs text-muted-foreground">Minimize or disable animations across the app.</p>
+                  <p className="font-sans text-xs text-muted-foreground">
+                    Minimize or disable animations across the app.
+                  </p>
                 </div>
                 <button
                   type="button"
                   onClick={() => setAccessibility({ reduceMotion: !reduceMotion })}
                   aria-pressed={reduceMotion}
                   className={`px-3 py-1.5 rounded-full font-sans font-bold text-xs transition-all border ${
-                    reduceMotion ? "bg-wp-green text-wp-text-on-green border-wp-green" : "bg-muted text-muted-foreground border-border"
+                    reduceMotion
+                      ? "bg-wp-green text-wp-text-on-green border-wp-green"
+                      : "bg-muted text-muted-foreground border-border"
                   }`}
                 >
                   {reduceMotion ? "Enabled" : "Disabled"}
@@ -220,8 +254,12 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               {/* Text Size Scaler */}
               <div className="flex items-center justify-between gap-4">
                 <div>
-                  <span className="font-sans font-bold text-foreground text-sm">Text Size Scaling</span>
-                  <p className="font-sans text-xs text-muted-foreground">Resize text up to 150% without loss of function.</p>
+                  <span className="font-sans font-bold text-foreground text-sm">
+                    Text Size Scaling
+                  </span>
+                  <p className="font-sans text-xs text-muted-foreground">
+                    Resize text up to 150% without loss of function.
+                  </p>
                 </div>
                 <div className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl">
                   {(["standard", "large", "xlarge"] as const).map((sz) => (
@@ -231,7 +269,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       onClick={() => setAccessibility({ textSize: sz })}
                       aria-pressed={textSize === sz}
                       className={`px-2.5 py-1 rounded-lg text-xs font-sans font-bold transition-all ${
-                        textSize === sz ? "bg-primary text-primary-foreground shadow-xs" : "text-muted-foreground hover:text-foreground"
+                        textSize === sz
+                          ? "bg-primary text-primary-foreground shadow-xs"
+                          : "text-muted-foreground hover:text-foreground"
                       }`}
                     >
                       {sz === "standard" ? "100%" : sz === "large" ? "125%" : "150%"}
@@ -245,8 +285,12 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               {/* Numeral System */}
               <div className="flex items-center justify-between gap-4">
                 <div>
-                  <span className="font-sans font-bold text-foreground text-sm">Numeral System</span>
-                  <p className="font-sans text-xs text-muted-foreground">Switch between Western (1, 2, 3) and Arabic-Indic (١, ٢, ٣) numerals.</p>
+                  <span className="font-sans font-bold text-foreground text-sm">
+                    Numeral System
+                  </span>
+                  <p className="font-sans text-xs text-muted-foreground">
+                    Switch between Western (1, 2, 3) and Arabic-Indic (١, ٢, ٣) numerals.
+                  </p>
                 </div>
                 <div className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl">
                   <button
@@ -281,8 +325,12 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               {/* Audio Speed */}
               <div className="flex items-center justify-between gap-4">
                 <div>
-                  <span className="font-sans font-bold text-foreground text-sm">Pronunciation Speech Rate</span>
-                  <p className="font-sans text-xs text-muted-foreground">Control audio playback speed for learning clarity.</p>
+                  <span className="font-sans font-bold text-foreground text-sm">
+                    Pronunciation Speech Rate
+                  </span>
+                  <p className="font-sans text-xs text-muted-foreground">
+                    Control audio playback speed for learning clarity.
+                  </p>
                 </div>
                 <div className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl">
                   {SPEECH_RATES.map((sp) => (
@@ -292,7 +340,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       onClick={() => setAccessibility({ speechRate: sp })}
                       aria-pressed={speechRate === sp}
                       className={`px-2.5 py-1 rounded-lg text-xs font-sans font-bold transition-all ${
-                        speechRate === sp ? "bg-primary text-primary-foreground shadow-xs" : "text-muted-foreground hover:text-foreground"
+                        speechRate === sp
+                          ? "bg-primary text-primary-foreground shadow-xs"
+                          : "text-muted-foreground hover:text-foreground"
                       }`}
                     >
                       {sp}x
@@ -303,19 +353,51 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
 
               <hr className="border-border/60" />
 
+              {/* ElevenLabs HD Voice */}
+              <div className="flex flex-col gap-2.5">
+                <div className="flex items-center justify-between gap-2 flex-wrap">
+                  <div className="flex items-center gap-2">
+                    <Sparkles className="size-4 text-wp-amber" aria-hidden />
+                    <span className="font-sans font-bold text-foreground text-sm">
+                      ElevenLabs HD Neural Voice
+                    </span>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => speak("Hello! Welcome to WordPix.")}
+                    className="px-3 py-1.5 min-h-[36px] rounded-xl bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1.5 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+                  >
+                    <Volume2 className="size-3.5" aria-hidden />
+                    <span>Test Voice</span>
+                  </button>
+                </div>
+                <p className="font-sans text-xs text-muted-foreground">
+                  Using <strong>Alice</strong> (HD Educator Voice) with permanent offline IndexedDB
+                  caching.
+                </p>
+              </div>
+
+              <hr className="border-border/60" />
+
               {/* Inclusive Modalities (Enable/Disable Speaking & Listening for Quiet/Deaf environments) */}
               <div className="flex flex-col gap-3">
                 <div className="flex items-center justify-between">
                   <div>
-                    <span className="font-sans font-bold text-foreground text-sm">Include Speaking Drills</span>
-                    <p className="font-sans text-xs text-muted-foreground">Disable if practicing in quiet environments.</p>
+                    <span className="font-sans font-bold text-foreground text-sm">
+                      Include Speaking Drills
+                    </span>
+                    <p className="font-sans text-xs text-muted-foreground">
+                      Disable if practicing in quiet environments.
+                    </p>
                   </div>
                   <button
                     type="button"
                     onClick={() => setAccessibility({ includeSpeaking: !includeSpeaking })}
                     aria-pressed={includeSpeaking}
                     className={`px-3 py-1.5 rounded-full font-sans font-bold text-xs transition-all border ${
-                      includeSpeaking ? "bg-wp-green text-wp-text-on-green border-wp-green" : "bg-muted text-muted-foreground border-border"
+                      includeSpeaking
+                        ? "bg-wp-green text-wp-text-on-green border-wp-green"
+                        : "bg-muted text-muted-foreground border-border"
                     }`}
                   >
                     {includeSpeaking ? "Enabled" : "Disabled"}
@@ -324,15 +406,22 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
 
                 <div className="flex items-center justify-between">
                   <div>
-                    <span className="font-sans font-bold text-foreground text-sm">Timed Exercises</span>
-                    <p className="font-sans text-xs text-muted-foreground">Turn off to remove every countdown. Timers can also be paused or extended while running.</p>
+                    <span className="font-sans font-bold text-foreground text-sm">
+                      Timed Exercises
+                    </span>
+                    <p className="font-sans text-xs text-muted-foreground">
+                      Turn off to remove every countdown. Timers can also be paused or extended
+                      while running.
+                    </p>
                   </div>
                   <button
                     type="button"
                     onClick={() => setAccessibility({ timedExercises: !timedExercises })}
                     aria-pressed={timedExercises}
                     className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                      timedExercises ? "bg-wp-green text-wp-text-on-green border-wp-green" : "bg-muted text-muted-foreground border-border"
+                      timedExercises
+                        ? "bg-wp-green text-wp-text-on-green border-wp-green"
+                        : "bg-muted text-muted-foreground border-border"
                     }`}
                   >
                     {timedExercises ? "On" : "Off"}
@@ -341,15 +430,22 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
 
                 <div className="flex items-center justify-between">
                   <div>
-                    <span className="font-sans font-bold text-foreground text-sm">Move On Automatically</span>
-                    <p className="font-sans text-xs text-muted-foreground">Lessons advance a moment after each answer. Turn off to move on with a button instead.</p>
+                    <span className="font-sans font-bold text-foreground text-sm">
+                      Move On Automatically
+                    </span>
+                    <p className="font-sans text-xs text-muted-foreground">
+                      Lessons advance a moment after each answer. Turn off to move on with a button
+                      instead.
+                    </p>
                   </div>
                   <button
                     type="button"
                     onClick={() => setAccessibility({ autoAdvance: !autoAdvance })}
                     aria-pressed={autoAdvance}
                     className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                      autoAdvance ? "bg-wp-green text-wp-text-on-green border-wp-green" : "bg-muted text-muted-foreground border-border"
+                      autoAdvance
+                        ? "bg-wp-green text-wp-text-on-green border-wp-green"
+                        : "bg-muted text-muted-foreground border-border"
                     }`}
                   >
                     {autoAdvance ? "On" : "Off"}
@@ -358,15 +454,21 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
 
                 <div className="flex items-center justify-between">
                   <div>
-                    <span className="font-sans font-bold text-foreground text-sm">Include Listening Drills</span>
-                    <p className="font-sans text-xs text-muted-foreground">Disable if hard-of-hearing or without headphones.</p>
+                    <span className="font-sans font-bold text-foreground text-sm">
+                      Include Listening Drills
+                    </span>
+                    <p className="font-sans text-xs text-muted-foreground">
+                      Disable if hard-of-hearing or without headphones.
+                    </p>
                   </div>
                   <button
                     type="button"
                     onClick={() => setAccessibility({ includeListening: !includeListening })}
                     aria-pressed={includeListening}
                     className={`px-3 py-1.5 rounded-full font-sans font-bold text-xs transition-all border ${
-                      includeListening ? "bg-wp-green text-wp-text-on-green border-wp-green" : "bg-muted text-muted-foreground border-border"
+                      includeListening
+                        ? "bg-wp-green text-wp-text-on-green border-wp-green"
+                        : "bg-muted text-muted-foreground border-border"
                     }`}
                   >
                     {includeListening ? "Enabled" : "Disabled"}
@@ -386,8 +488,12 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
             <div className="bg-muted/30 rounded-2xl p-4 border border-border flex flex-col gap-4">
               <div className="flex items-center justify-between gap-4">
                 <div>
-                  <span className="font-sans font-bold text-foreground text-sm">Target English Level</span>
-                  <p className="font-sans text-xs text-muted-foreground">Current level: {state.preferences.englishLevel}</p>
+                  <span className="font-sans font-bold text-foreground text-sm">
+                    Target English Level
+                  </span>
+                  <p className="font-sans text-xs text-muted-foreground">
+                    Current level: {state.preferences.englishLevel}
+                  </p>
                 </div>
                 <div className="flex items-center gap-1 bg-wp-card border border-border p-1 rounded-xl">
                   {(["A1", "A2", "B1"] as const).map((lvl) => (
@@ -396,7 +502,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       type="button"
                       onClick={() => setPreferences({ englishLevel: lvl })}
                       className={`px-3 py-1 rounded-lg text-xs font-sans font-bold ${
-                        state.preferences.englishLevel === lvl ? "bg-primary text-primary-foreground shadow-xs" : "text-muted-foreground"
+                        state.preferences.englishLevel === lvl
+                          ? "bg-primary text-primary-foreground shadow-xs"
+                          : "text-muted-foreground"
                       }`}
                     >
                       {lvl}
@@ -411,15 +519,23 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
           <section className="flex flex-col gap-3 pt-2">
             <div className="bg-wp-rose/10 border border-wp-rose/20 rounded-2xl p-4 flex items-center justify-between gap-4">
               <div>
-                <span className="font-sans font-bold text-wp-rose text-sm">Reset Progress Data</span>
-                <p className="font-sans text-xs text-muted-foreground">Reset local memory progress and streak data back to zero.</p>
+                <span className="font-sans font-bold text-wp-rose text-sm">
+                  Reset Progress Data
+                </span>
+                <p className="font-sans text-xs text-muted-foreground">
+                  Reset local memory progress and streak data back to zero.
+                </p>
               </div>
 
               {confirmReset ? (
                 <div className="flex items-center gap-2">
                   <button
                     type="button"
-                    onClick={() => { resetToZero(); setConfirmReset(false); onClose(); }}
+                    onClick={() => {
+                      resetToZero();
+                      setConfirmReset(false);
+                      onClose();
+                    }}
                     className="px-3 py-1.5 rounded-xl bg-wp-rose text-wp-text-on-rose text-xs font-sans font-bold shadow-xs"
                   >
                     Confirm Reset

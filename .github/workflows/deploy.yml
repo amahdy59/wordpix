@@ -52,6 +52,9 @@ jobs:
 
       - name: Build project
         run: pnpm run build
+        env:
+          VITE_ELEVENLABS_API_KEY: ${{ secrets.VITE_ELEVENLABS_API_KEY }}
+          VITE_ELEVENLABS_VOICE_ID: "Xb7hH8MSUJpSbSDYk0k2"
 
       - name: Copy index.html to 404.html for SPA fallback
         run: cp dist/index.html dist/404.html
