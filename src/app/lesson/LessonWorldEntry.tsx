@@ -3,7 +3,7 @@ import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { BackButton } from "../shared/BackButton";
-import { ArrowRight, Layers, CheckCircle2, GraduationCap } from "lucide-react";
+import { ArrowRight, Layers, CheckCircle2, GraduationCap, Check } from "lucide-react";
 import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/lessons";
 import { useProgress } from "../data/progress";
 
@@ -16,9 +16,12 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
   const world = COURSE_UNITS[unitId ?? DEFAULT_UNIT_ID];
   const { progress } = useProgress();
 
+  const isWordLearned = (id: string) => {
+    return (progress.wordMemory[id]?.exposures || 0) > 0 || (progress.wordMastery[id] || 0) > 0;
+  };
+
   const [nextGroupId] = useState<string>(() => {
-    const isMastered = (id: string) => (progress.wordMastery[id] || 0) >= 3;
-    const nextGroup = world.groups.find((g) => g.wordIds.some((id) => !isMastered(id)));
+    const nextGroup = world.groups.find((g) => g.wordIds.some((id) => !isWordLearned(id)));
     return nextGroup ? nextGroup.id : world.groups[world.groups.length - 1].id;
   });
 
@@ -117,13 +120,11 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
             const groupWords = g.wordIds
               .map((id) => world.vocabulary.find((v) => v.id === id))
               .filter(Boolean);
-            const masteredInGroup = groupWords.filter(
-              (w) => (progress.wordMastery[w!.id] || 0) >= 3
-            ).length;
-            const isCompleted = masteredInGroup === g.wordIds.length;
+            const learnedCount = groupWords.filter((w) => isWordLearned(w!.id)).length;
+            const isCompleted = learnedCount === g.wordIds.length && g.wordIds.length > 0;
             const progressPct =
-              g.wordIds.length > 0 ? Math.round((masteredInGroup / g.wordIds.length) * 100) : 0;
-            const hasStarted = masteredInGroup > 0 && !isCompleted;
+              g.wordIds.length > 0 ? Math.round((learnedCount / g.wordIds.length) * 100) : 0;
+            const hasStarted = learnedCount > 0 && !isCompleted;
 
             return (
               <div key={g.id} className="relative flex items-stretch gap-5 lg:gap-8 group">
@@ -141,23 +142,23 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                       isCompleted
                         ? "border-wp-green bg-wp-green text-white shadow-md shadow-wp-green/30"
                         : isNextToStudy
-                          ? "border-primary bg-primary/10 text-primary shadow-sm shadow-primary/20"
+                          ? "border-primary bg-primary text-primary-foreground shadow-md shadow-primary/25 ring-4 ring-primary/20"
                           : hasStarted
-                            ? "border-wp-amber/60 bg-wp-amber/10 text-wp-amber"
-                            : "border-border bg-background text-muted-foreground group-hover:border-primary/50"
+                            ? "border-wp-amber bg-wp-amber/20 text-wp-amber shadow-sm"
+                            : "border-border bg-wp-card text-muted-foreground group-hover:border-primary/50 group-hover:text-foreground"
                     }`}
                     aria-label={
                       isCompleted
-                        ? `Group ${index + 1} – completed`
+                        ? `Group ${index + 1}: ${g.name} – Completed`
                         : hasStarted
-                          ? `Group ${index + 1} – ${progressPct}% done`
-                          : `Group ${index + 1}`
+                          ? `Group ${index + 1}: ${g.name} – ${progressPct}% completed`
+                          : `Group ${index + 1}: ${g.name}`
                     }
                   >
                     {isCompleted ? (
-                      <CheckCircle2 className="size-5 stroke-[2.5]" aria-hidden />
+                      <Check className="size-5.5 text-white stroke-[3]" aria-hidden />
                     ) : (
-                      <span className="font-sans font-bold text-sm leading-none">{index + 1}</span>
+                      <span className="font-sans font-black text-sm leading-none">{index + 1}</span>
                     )}
 
                     {/* Partial-progress arc indicator for in-progress groups */}
@@ -236,7 +237,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                         )}
                         {hasStarted && !isCompleted && (
                           <span className="inline-flex items-center gap-1 text-[10px] font-sans font-bold text-wp-amber bg-wp-amber/10 px-2 py-0.5 rounded-full border border-wp-amber/20">
-                            {masteredInGroup}/{g.wordIds.length} words
+                            {learnedCount}/{g.wordIds.length} words
                           </span>
                         )}
                       </div>
