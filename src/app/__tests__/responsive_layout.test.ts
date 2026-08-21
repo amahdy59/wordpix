@@ -16,7 +16,6 @@ const stripComments = (source: string) =>
     .replace(/\/\*[\s\S]*?\*\//g, "")
     .replace(/^\s*\/\/.*$/gm, "");
 
-
 describe("Responsive visibility has no dead zones", () => {
   const source = stripComments(read("lesson/SceneCanvas.tsx"));
 
@@ -48,7 +47,9 @@ describe("Quiz question legibility", () => {
   });
 
   it("lets the question row wrap instead of squeezing the heading", () => {
-    expect(source).toMatch(/flex flex-wrap items-center justify-between/);
+    // The question card now uses a two-row layout: group/counter on top,
+    // heading + phonetic below — so flex-col is correct, not flex-wrap.
+    expect(source).toMatch(/flex flex-col gap-3/);
   });
 });
 
