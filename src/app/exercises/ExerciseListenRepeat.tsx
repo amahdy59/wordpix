@@ -1,11 +1,11 @@
-import { memo, useEffect, useRef, useState, useCallback } from "react";
+import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
 import type { Action } from "../types";
-import type { VocabularyItem } from "../data/lessons";
+import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { useAudio } from "../shared/useAudio";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
-import { Volume2, Sparkles, ChevronRight, ChevronLeft } from "lucide-react";
+import { Keyboard, Volume2, Sparkles, ChevronRight, ChevronLeft } from "lucide-react";
 import { WordImage } from "../shared/WordImage";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 
