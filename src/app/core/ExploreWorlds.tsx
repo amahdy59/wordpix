@@ -1,13 +1,11 @@
 import { memo } from "react";
-import { Lock, Compass, ArrowRight, Sparkles, BookOpen } from "lucide-react";
+import { Compass, ArrowRight, Sparkles, BookOpen } from "lucide-react";
 import { motion } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { COURSE_UNITS } from "../data/lessons";
 import { Badge, ProgressBar } from "../shared";
 import { staggerContainer, staggerItem } from "../shared/animations";
-
-const imgBathroom = "/images/core/bathroom-scene.webp";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -21,7 +19,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
   const activeWorlds = Object.values(COURSE_UNITS);
 
   return (
-    <motion.div 
+    <motion.div
       variants={staggerContainer}
       initial="hidden"
       animate="visible"
@@ -31,24 +29,32 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
       <motion.header variants={staggerItem} className="flex flex-col gap-1">
         <div className="flex items-center gap-2 text-primary">
           <Compass className="size-5" />
-          <span className="font-sans font-bold text-xs uppercase tracking-wider">Learning Path</span>
+          <span className="font-sans font-bold text-xs uppercase tracking-wider">
+            Learning Path
+          </span>
         </div>
         <h1 className="font-sans font-black text-foreground text-2xl lg:text-3xl leading-tight">
           Level 1 Course: Foundations
         </h1>
         <p className="font-sans font-medium text-muted-foreground text-sm">
-          Master every unit and lesson in our flagship course before advancing.
+          Build practical vocabulary one short learning group at a time.
         </p>
       </motion.header>
 
       {/* Active World Card(s) */}
       {activeWorlds.map((world) => {
-        const wordsPracticedCount = world.vocabulary.filter((w) => (progress.wordMastery[w.id] || 0) >= 3).length;
+        const wordsPracticedCount = world.vocabulary.filter(
+          (w) => (progress.wordMastery[w.id] || 0) >= 3
+        ).length;
         const totalWords = world.vocabulary.length;
         const progressPercent = Math.round((wordsPracticedCount / totalWords) * 100);
 
         return (
-          <motion.section variants={staggerItem} aria-label={`Active Unit: ${world.name}`} key={world.id}>
+          <motion.section
+            variants={staggerItem}
+            aria-label={`Active Unit: ${world.name}`}
+            key={world.id}
+          >
             <div className="bg-wp-card rounded-3xl border-2 border-primary/40 p-6 flex flex-col lg:flex-row gap-6 shadow-wp-md relative overflow-hidden">
               <div className="absolute -top-12 -end-12 size-48 rounded-full bg-primary/10 blur-2xl pointer-events-none" />
 
@@ -72,7 +78,9 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                     <Badge variant="amber" size="sm">
                       Level 1 · A1 Beginner
                     </Badge>
-                    <span className="font-sans text-xs text-muted-foreground font-semibold">{totalWords} Vocabulary Words</span>
+                    <span className="font-sans text-xs text-muted-foreground font-semibold">
+                      {totalWords} Vocabulary Words
+                    </span>
                   </div>
 
                   <h2 className="font-sans font-black text-foreground text-2xl lg:text-3xl leading-tight">
@@ -86,7 +94,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                 {/* Progress bar */}
                 <ProgressBar
                   progressPercent={progressPercent}
-                  label="Unit Completed"
+                  label="Unit progress"
                   labelRight={`${progressPercent}% (${wordsPracticedCount}/${totalWords})`}
                   ariaLabel={`${world.name} progress: ${progressPercent}%`}
                 />
@@ -108,36 +116,6 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
           </motion.section>
         );
       })}
-
-      {/* Upcoming Expansion Preview Section */}
-      <motion.section variants={staggerItem} aria-label="Upcoming Worlds" className="flex flex-col gap-3 mt-4">
-        <div className="flex items-center gap-2 text-muted-foreground">
-          <Lock className="size-4" />
-          <h3 className="font-sans font-bold text-foreground text-base">Upcoming Expansion Units</h3>
-        </div>
-        <p className="font-sans text-muted-foreground text-xs">
-          These units will unlock automatically after you complete 100% of The Bedroom unit.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 opacity-75">
-          {/* Bathroom preview */}
-          <div className="bg-wp-card rounded-2xl border border-border p-4 flex items-center gap-4">
-            <div className="size-16 rounded-xl overflow-hidden shrink-0 border border-border bg-muted relative">
-              <img alt="Bathroom unit" className="absolute inset-0 object-cover size-full" src={imgBathroom} />
-              <div className="absolute inset-0 bg-black/40 flex items-center justify-center text-white">
-                <Lock className="size-5" />
-              </div>
-            </div>
-            <div>
-              <p className="font-sans font-bold text-foreground text-base">Bathroom</p>
-              <p className="font-sans text-muted-foreground text-xs mt-0.5">30 Vocabulary Items</p>
-              <Badge variant="muted" size="sm" className="inline-flex mt-1">
-                Unlocks at 100% Bedroom Mastery
-              </Badge>
-            </div>
-          </div>
-        </div>
-      </motion.section>
     </motion.div>
   );
 });

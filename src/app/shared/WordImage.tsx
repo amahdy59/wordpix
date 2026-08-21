@@ -71,8 +71,8 @@ function escapeXml(value: string) {
 export function getWordFallbackDataUrl(word: VocabularyItem, altMode: ImageAltMode = "learning") {
   const [background, foreground] = TOPIC_COLORS[word.topic] ?? ["#f1f5f9", "#0f172a"];
   const label = escapeXml(word.label);
-  const topic = escapeXml(word.topic.replace("-", " ").toUpperCase());
-  
+  const topic = escapeXml(word.topic.replace(/-/g, " ").toUpperCase());
+
   const centerText = altMode === "assessment" ? "?" : label.slice(0, 1).toUpperCase();
   const bottomText = altMode === "assessment" ? "VISUAL OPTION" : label;
 
@@ -143,7 +143,10 @@ export const WordImage = memo(function WordImage({
   // for a generic placeholder.
   const [retryToken, setRetryToken] = useState(0);
   const fallback = useMemo(() => getWordFallbackDataUrl(word, altMode), [word, altMode]);
-  const optimizedUrl = useMemo(() => getResponsiveImageUrl(word.img, sizePreset), [word.img, sizePreset]);
+  const optimizedUrl = useMemo(
+    () => getResponsiveImageUrl(word.img, sizePreset),
+    [word.img, sizePreset]
+  );
   const srcSet = useMemo(() => getResponsiveSrcSet(word.img, sizePreset), [word.img, sizePreset]);
 
   useEffect(() => {
@@ -161,7 +164,8 @@ export const WordImage = memo(function WordImage({
     });
   }, []);
 
-  const withRetryParam = (url: string) => (retryToken > 0 ? `${url}${url.includes("?") ? "&" : "?"}retry=${retryToken}` : url);
+  const withRetryParam = (url: string) =>
+    retryToken > 0 ? `${url}${url.includes("?") ? "&" : "?"}retry=${retryToken}` : url;
 
   const altText = getImageAltText(word, altMode, optionIndex, checked);
 

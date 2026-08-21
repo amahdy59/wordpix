@@ -2,7 +2,12 @@ import { describe, expect, it, beforeEach, vi } from "vitest";
 import { render, screen, renderHook, act } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import type { ReactNode } from "react";
-import { LearnerProvider, useLearner, DEFAULT_ACCESSIBILITY, TEXT_SIZE_SCALE } from "../context/LearnerContext";
+import {
+  LearnerProvider,
+  useLearner,
+  DEFAULT_ACCESSIBILITY,
+  TEXT_SIZE_SCALE,
+} from "../context/LearnerContext";
 import { I18nProvider } from "../context/I18nContext";
 import {
   formatNumber,
@@ -169,6 +174,13 @@ describe("Modality toggles filter the exercise catalogue", () => {
       (e) => e.category === "reading" || e.category === "writing"
     ).length;
     expect(countAvailableExercises(false, false)).toBe(remaining);
+  });
+
+  it("keeps advanced drills out of the A1 catalogue", () => {
+    expect(countAvailableExercises(true, true, "A1")).toBeLessThan(
+      countAvailableExercises(true, true, "B1")
+    );
+    expect(countAvailableExercises(true, true, "B1")).toBe(EXERCISES.length);
   });
 });
 

@@ -8,7 +8,7 @@ An interactive, visual-first English vocabulary learning application tailored fo
 
 - 🏞️ **Interactive Scene Discovery**: Tap hotspots on room scenes to explore vocabulary with native SpeechSynthesis audio.
 - 🎮 **Gamified Lesson Loop**: A 6-step flow — Scene Discovery, Listen & Repeat, Recall Match, Context Fill, Sentence Builder, Quick Quiz — with SM-2 spaced repetition, streaks, and an itemised XP economy.
-- ⏭️ **Continuous, Rosetta-Stone-style pacing**: Answering *is* the submit. Choosing an option commits it, feedback appears inline beside the question rather than in a modal, and the drill moves on by itself — roughly 0.9s after a correct answer, 2.2s after a wrong one so the correct answer can be read. Listen & Repeat walks through the group on its own, with a Pause control.
+- ⏭️ **Continuous, Rosetta-Stone-style pacing**: Answering _is_ the submit. Choosing an option commits it, feedback appears inline beside the question rather than in a modal, and the drill moves on by itself — roughly 0.9s after a correct answer, 2.2s after a wrong one so the correct answer can be read. Listen & Repeat walks through the group on its own, with a Pause control.
 - 🔁 **Missed words come back**: A wrong answer is not a wall. The correct option is revealed, the drill advances, and the missed word is re-queued to be asked again later in the same drill (once, so a drill always terminates).
 - ♿ **WCAG 2.2 AAA Accessibility**, enforced by tests rather than asserted:
   - Minimum 44×44px touch targets — verified per component.
@@ -27,15 +27,16 @@ feed lesson progress, so it sits below the review queue rather than being
 promoted above the lesson on both Home and Explore, which is where it used to
 appear — twice, in identical cards.
 
-31 drills are listed. Most are defined as data in `src/app/exercises/content/`
-and rendered by a shared runner, over six interaction patterns: single choice,
+31 drills are available across the full A1–B1 catalogue. The hub filters them
+to the learner's selected level and modality preferences. Most are defined as
+data in `src/app/exercises/content/` and rendered by a shared runner, over six interaction patterns: single choice,
 text entry, multi-select, sentence ordering, category sorting, and open
 practice. Every question carries an explanation, so a wrong answer teaches
 something.
 
 The four `*-results` screens are summary views belonging to a completed drill,
 not drills themselves. They keep their ids and routes but are no longer offered
-in the list, because "Writing Results" as something you *start* showed a summary
+in the list, because "Writing Results" as something you _start_ showed a summary
 of work nobody had done.
 
 **What is and is not graded.** Choice, entry, ordering, and sorting are marked
@@ -43,7 +44,7 @@ exactly. Open work — photo narration, roleplay, free writing, video summary �
 is modelled as `practice`: it gives concrete guidance and states plainly that
 nothing is marked, because this app cannot grade it.
 
-**Pronunciation.** Echo Practice uses the Web Speech API to check *which word*
+**Pronunciation.** Echo Practice uses the Web Speech API to check _which word_
 you said. It does not score pronunciation quality: the API exposes no
 phoneme-level detail, so any percentage would be invented. Recognition is
 unavailable in Firefox and when the microphone is blocked; those cases fall
@@ -85,6 +86,7 @@ WordPix/
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js 18+
 - npm or pnpm
 

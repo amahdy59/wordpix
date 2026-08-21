@@ -1,18 +1,24 @@
 import { memo, useMemo, useState } from "react";
 import type { Action, SkillCategory } from "../types";
-import { EXERCISES, availableCategories, countAvailableExercises } from "./skillExerciseCatalog";
+import {
+  EXERCISES,
+  availableCategories,
+  countAvailableExercises,
+  isExerciseAvailableForLevel,
+} from "./skillExerciseCatalog";
 import { Sparkles, ArrowRight } from "lucide-react";
 import { AppShell } from "../shared/AppShell";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
+import { useLearner } from "../context/LearnerContext";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
-
-
 export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Props) {
   const { accessibility } = useAccessibility();
+  const { state } = useLearner();
+  const learnerLevel = state.preferences.englishLevel;
   const { includeSpeaking, includeListening, numeralSystem } = accessibility;
 
   /*
@@ -33,8 +39,11 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
     ? requestedCategory
     : (categories[0]?.id ?? "reading");
 
-  const categoryExercises = EXERCISES.filter((e) => e.category === activeCategory);
-  const availableCount = countAvailableExercises(includeSpeaking, includeListening);
+  const availableExercises = EXERCISES.filter((exercise) =>
+    isExerciseAvailableForLevel(exercise, learnerLevel)
+  );
+  const categoryExercises = availableExercises.filter((e) => e.category === activeCategory);
+  const availableCount = countAvailableExercises(includeSpeaking, includeListening, learnerLevel);
 
   return (
     <AppShell activeTab="explore" dispatch={dispatch}>
@@ -49,27 +58,29 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
             Skill Exercise Hub
           </h1>
           <p className="font-sans text-muted-foreground text-sm max-w-xl">
-            Select a learning category below to launch any of the {formatNumber(availableCount, numeralSystem)} available exercises.
+            Select a learning category below to launch any of the{" "}
+            {formatNumber(availableCount, numeralSystem)} available exercises.
           </p>
         </div>
 
         {/* Category Tabs */}
         <div
-          role="tablist"
+          role="group"
           aria-label="Exercise categories"
           className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 bg-wp-card border border-border p-2 rounded-2xl"
         >
           {categories.map(({ id, labelBase, icon: Icon }) => {
-            const count = EXERCISES.filter((e) => e.category === id).length;
+            const count = availableExercises.filter((e) => e.category === id).length;
             return (
               <button
                 key={id}
                 type="button"
-                role="tab"
-                aria-selected={activeCategory === id}
+                aria-pressed={activeCategory === id}
                 onClick={() => setActiveCategory(id)}
                 className={`p-3 min-h-[44px] rounded-xl flex items-center justify-center gap-2 font-sans font-bold text-xs transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                  activeCategory === id ? "bg-primary text-primary-foreground shadow-xs" : "text-muted-foreground hover:bg-muted"
+                  activeCategory === id
+                    ? "bg-primary text-primary-foreground shadow-xs"
+                    : "text-muted-foreground hover:bg-muted"
                 }`}
               >
                 <Icon className="size-4 shrink-0" aria-hidden />
@@ -94,6 +105,9 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                 <h2 className="font-sans font-bold text-foreground text-base group-hover:text-primary transition-colors">
                   {ex.title}
                 </h2>
+                <span className="inline-flex mt-1 rounded-full bg-secondary px-2 py-0.5 font-sans text-[10px] font-bold text-primary">
+                  {ex.minimumLevel ?? "A1"}+
+                </span>
                 <p className="font-sans text-xs text-muted-foreground leading-relaxed mt-1.5">
                   {ex.description}
                 </p>

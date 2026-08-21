@@ -1,129 +1,149 @@
 import { describe, expect, it } from "vitest";
-import { BEDROOM_VOCABULARY, BEDROOM_GROUPS, BEDROOM_TOPICS } from "../data/lessons";
+import { BEDROOM_GROUPS, BEDROOM_VOCABULARY, COURSE_UNITS } from "../data/lessons";
 import { getImageAltText } from "../shared/WordImage";
 
-/** Words in a label that carry meaning, lowercased and de-pluralised. */
 function labelStems(label: string): string[] {
   return label
     .toLowerCase()
     .replace(/[^a-z ]/g, " ")
     .split(/\s+/)
-    .filter((w) => w.length > 2 && !["and", "the", "of"].includes(w))
-    .map((w) => w.replace(/e?s$/, ""));
+    .filter((word) => word.length > 2 && !["and", "the", "of"].includes(word))
+    .map((word) => word.replace(/e?s$/, ""));
 }
 
+function normalized(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+const units = Object.values(COURSE_UNITS);
+const vocabulary = units.flatMap((unit) => unit.vocabulary);
+
 describe("Vocabulary descriptions", () => {
-  it("every word has one", () => {
-    BEDROOM_VOCABULARY.forEach((w) => {
-      expect(w.description, `${w.id} has no description`).toBeTruthy();
+  it("gives every word a useful description", () => {
+    vocabulary.forEach((word) => {
+      expect(word.description, `${word.id} has no description`).toBeTruthy();
+      expect(word.description, `${word.id} contains placeholder copy`).not.toMatch(
+        /known as|needs manual|undefined/i
+      );
+      expect(word.description.length, `${word.id} too short`).toBeGreaterThan(25);
+      expect(word.description.length, `${word.id} too long to listen to`).toBeLessThan(130);
+      expect(word.description, `${word.id} should end with a period`).toMatch(/\.$/);
+      expect(word.description[0], `${word.id} should start capitalised`).toBe(
+        word.description[0].toUpperCase()
+      );
     });
   });
 
-  /**
-   * The load-bearing rule. A description that contains its own word turns the
-   * assessment alt text back into an answer key — the exact bug that made
-   * screen readers read the answer aloud.
-   */
   it("never names the word it describes", () => {
     const leaks: string[] = [];
-    BEDROOM_VOCABULARY.forEach((w) => {
-      labelStems(w.label).forEach((stem) => {
-        if (new RegExp(`\\b${stem}`, "i").test(w.description)) {
-          leaks.push(`${w.id} leaks "${stem}": ${w.description}`);
+    vocabulary.forEach((word) => {
+      labelStems(word.label).forEach((stem) => {
+        if (new RegExp(`\\b${stem}`, "i").test(word.description)) {
+          leaks.push(`${word.id} leaks "${stem}": ${word.description}`);
         }
       });
     });
     expect(leaks, leaks.join("\n")).toEqual([]);
   });
 
-  it("is long enough to identify the object, short enough to hear", () => {
-    BEDROOM_VOCABULARY.forEach((w) => {
-      expect(w.description.length, `${w.id} too short`).toBeGreaterThan(25);
-      expect(w.description.length, `${w.id} too long to listen to`).toBeLessThan(110);
+  it("distinguishes words within each learning group", () => {
+    units.forEach((unit) => {
+      unit.groups.forEach((group) => {
+        const descriptions = group.wordIds.map(
+          (id) => unit.vocabulary.find((word) => word.id === id)?.description
+        );
+        expect(new Set(descriptions).size, `${unit.id}/${group.id} repeats descriptions`).toBe(
+          descriptions.length
+        );
+      });
     });
   });
+});
 
-  it("reads as a sentence", () => {
-    BEDROOM_VOCABULARY.forEach((w) => {
-      expect(w.description, `${w.id} should end with a period`).toMatch(/\.$/);
-      expect(w.description[0], `${w.id} should start capitalised`).toBe(
-        w.description[0].toUpperCase()
-      );
+describe("Lesson story integrity", () => {
+  it("provides natural copy with every assigned word", () => {
+    units.forEach((unit) => {
+      unit.groups.forEach((group) => {
+        expect(group.story, `${unit.id}/${group.id} has no story`).toBeTruthy();
+        expect(group.story, `${unit.id}/${group.id} contains generated placeholders`).not.toMatch(
+          /undefined|we learned about some very useful things/i
+        );
+
+        const story = normalized(group.story ?? "");
+        group.wordIds.forEach((wordId) => {
+          const word = unit.vocabulary.find((item) => item.id === wordId);
+          expect(word, `${unit.id}/${group.id} references missing word ${wordId}`).toBeDefined();
+          expect(story, `${unit.id}/${group.id} story omits ${word?.label}`).toContain(
+            normalized(word?.label ?? "")
+          );
+        });
+      });
     });
-  });
-
-  /**
-   * Distractors are drawn from the same group, so two words a learner must
-   * choose between cannot share a description.
-   */
-  it("distinguishes every word within a group", () => {
-    BEDROOM_GROUPS.forEach((group) => {
-      const descriptions = group.wordIds
-        .map((id) => BEDROOM_VOCABULARY.find((w) => w.id === id)?.description)
-        .filter(Boolean);
-      expect(new Set(descriptions).size, `${group.name} has duplicate descriptions`).toBe(
-        descriptions.length
-      );
-    });
-  });
-
-  it("keeps descriptions unique across the whole vocabulary", () => {
-    const all = BEDROOM_VOCABULARY.map((w) => w.description);
-    expect(new Set(all).size).toBe(all.length);
   });
 });
 
 describe("Lesson data integrity", () => {
-  /**
-   * The "Pillows & Covers" group listed `quilt` and `bedspread`, neither of
-   * which existed. App.tsx filters unresolved ids out, so starting that lesson
-   * silently dropped it from five words to three with no error anywhere.
-   */
-  it("every group references words that exist", () => {
-    const ids = new Set(BEDROOM_VOCABULARY.map((w) => w.id));
-    BEDROOM_GROUPS.forEach((group) => {
-      group.wordIds.forEach((wordId) => {
-        expect(ids.has(wordId), `${group.id} references missing word "${wordId}"`).toBe(true);
+  it("keeps every group inside its owning unit", () => {
+    units.forEach((unit) => {
+      const ids = new Set(unit.vocabulary.map((word) => word.id));
+      unit.groups.forEach((group) => {
+        group.wordIds.forEach((wordId) => {
+          expect(
+            ids.has(wordId),
+            `${unit.id}/${group.id} references missing word "${wordId}"`
+          ).toBe(true);
+        });
       });
     });
   });
 
-  it("gives every group the full set of words it claims", () => {
-    BEDROOM_GROUPS.forEach((group) => {
-      expect(group.wordIds.length, `${group.id} is short`).toBeGreaterThanOrEqual(1);
-      expect(group.wordIds.length, `${group.id} is long`).toBeLessThanOrEqual(15);
-      expect(new Set(group.wordIds).size, `${group.id} repeats a word`).toBe(group.wordIds.length);
+  it("keeps learning groups short and free of duplicate words", () => {
+    units.forEach((unit) => {
+      unit.groups.forEach((group) => {
+        expect(group.wordIds.length, `${unit.id}/${group.id} is empty`).toBeGreaterThanOrEqual(1);
+        expect(group.wordIds.length, `${unit.id}/${group.id} is too long`).toBeLessThanOrEqual(15);
+        expect(new Set(group.wordIds).size, `${unit.id}/${group.id} repeats a word`).toBe(
+          group.wordIds.length
+        );
+      });
     });
   });
 
-  it("has no duplicate word ids", () => {
-    const ids = BEDROOM_VOCABULARY.map((w) => w.id);
-    expect(new Set(ids).size).toBe(ids.length);
-  });
-
-  it("assigns every word to a declared topic", () => {
-    const topics = new Set(BEDROOM_TOPICS.map((t) => t.id));
-    BEDROOM_VOCABULARY.forEach((w) => {
-      expect(topics.has(w.topic), `${w.id} has unknown topic "${w.topic}"`).toBe(true);
+  it("has no duplicate word ids within a unit", () => {
+    units.forEach((unit) => {
+      const ids = unit.vocabulary.map((word) => word.id);
+      expect(new Set(ids).size, `${unit.id} repeats a word id`).toBe(ids.length);
     });
   });
 
-  it("matches each topic's declared item count to reality", () => {
-    BEDROOM_TOPICS.forEach((topic) => {
-      const actual = BEDROOM_VOCABULARY.filter((w) => w.topic === topic.id).length;
-      expect(actual, `${topic.id} declares ${topic.itemsCount}`).toBe(topic.itemsCount);
+  it("assigns every word to a declared topic and keeps topic counts accurate", () => {
+    units.forEach((unit) => {
+      const topics = new Set(unit.topics.map((topic) => topic.id));
+      unit.vocabulary.forEach((word) => {
+        expect(
+          topics.has(word.topic),
+          `${unit.id}/${word.id} has unknown topic "${word.topic}"`
+        ).toBe(true);
+      });
+      unit.topics.forEach((topic) => {
+        const actual = unit.vocabulary.filter((word) => word.topic === topic.id).length;
+        expect(actual, `${unit.id}/${topic.id} declares ${topic.itemsCount}`).toBe(
+          topic.itemsCount
+        );
+      });
     });
   });
 
   it("gives every word a phonetic spelling", () => {
-    BEDROOM_VOCABULARY.forEach((w) => {
-      expect(w.phonetic, `${w.id} has no phonetic`).toBeTruthy();
-    });
+    vocabulary.forEach((word) => expect(word.phonetic, `${word.id} has no phonetic`).toBeTruthy());
   });
 });
 
-describe("Assessment alt text is now answerable", () => {
-  const lamp = BEDROOM_VOCABULARY.find((w) => w.id === "lamp")!;
+describe("Assessment alt text is answerable", () => {
+  const lamp = BEDROOM_VOCABULARY.find((word) => word.id === "lamp")!;
 
   it("describes the picture without naming it", () => {
     const alt = getImageAltText(lamp, "assessment", 0, false);
@@ -133,11 +153,9 @@ describe("Assessment alt text is now answerable", () => {
   });
 
   it("carries enough information to tell options apart", () => {
-    // The previous behaviour returned a bare "Picture option A", identical in
-    // content for every option — safe, but impossible to answer from.
-    const alts = BEDROOM_GROUPS[0].wordIds.map((id, i) => {
-      const word = BEDROOM_VOCABULARY.find((w) => w.id === id)!;
-      return getImageAltText(word, "assessment", i, false);
+    const alts = BEDROOM_GROUPS[0].wordIds.map((id, index) => {
+      const word = BEDROOM_VOCABULARY.find((item) => item.id === id)!;
+      return getImageAltText(word, "assessment", index, false);
     });
     expect(new Set(alts).size).toBe(alts.length);
     alts.forEach((alt) => expect(alt.length).toBeGreaterThan(30));
@@ -149,7 +167,7 @@ describe("Assessment alt text is now answerable", () => {
     expect(alt).toContain(lamp.description);
   });
 
-  it("still names the word directly in learning mode", () => {
+  it("names the word directly in learning mode", () => {
     expect(getImageAltText(lamp, "learning")).toBe(lamp.label);
   });
 });

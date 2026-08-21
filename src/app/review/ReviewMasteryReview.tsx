@@ -1,5 +1,14 @@
 import { memo, useMemo } from "react";
-import { Flame, BookOpen, ArrowRight, RotateCcw, Clock, AlertCircle, CheckCircle2, Layers } from "lucide-react";
+import {
+  Flame,
+  BookOpen,
+  ArrowRight,
+  RotateCcw,
+  Clock,
+  AlertCircle,
+  CheckCircle2,
+  Layers,
+} from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { getWords, REVIEW_GROUP_ID, type VocabularyItem } from "../data/lessons";
@@ -77,7 +86,12 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
     const queue = [...dueQueue, ...weakestFirst].slice(0, REVIEW_SESSION_SIZE);
     if (queue.length === 0) return;
 
-    dispatch({ type: "START_LESSON", lessonId: REVIEW_GROUP_ID, mode: "SMART_REVIEW", wordQueue: queue });
+    dispatch({
+      type: "START_LESSON",
+      lessonId: REVIEW_GROUP_ID,
+      mode: "SMART_REVIEW",
+      wordQueue: queue,
+    });
   };
 
   const canStartReview = memoryItems.length > 0;
@@ -96,14 +110,18 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
           </h1>
           <p className="font-sans font-medium text-muted-foreground text-sm mt-0.5">
             {totalDue > 0
-              ? `${totalDue} words ready for review based on memory decay`
-              : "All reviews complete for today! Keep up the great work."}
+              ? `${totalDue} words are ready for a memory review`
+              : memoryItems.length === 0
+                ? "Complete your first lesson to begin your memory review."
+                : "All reviews complete for today! Keep up the great work."}
           </p>
         </div>
 
         <div className="bg-secondary rounded-xl px-3 py-2 flex items-center gap-1.5 border border-primary/20 shrink-0 shadow-wp-xs">
           <Flame className="size-4 text-wp-amber" />
-          <span className="font-sans font-bold text-foreground text-sm">{progress.streak} Day Streak</span>
+          <span className="font-sans font-bold text-foreground text-sm">
+            {progress.streak} Day Streak
+          </span>
         </div>
       </header>
 
@@ -116,7 +134,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
           <div>
             <h2 className="font-sans font-bold text-foreground text-lg">No Memory Data Yet</h2>
             <p className="font-sans text-muted-foreground text-sm mt-1 max-w-xs mx-auto">
-              Start a Bedroom lesson session to discover words and build your personalized memory schedule.
+              Complete any lesson to discover words and build your personalized memory schedule.
             </p>
           </div>
         </div>
@@ -136,16 +154,25 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
                     className="bg-wp-card rounded-2xl border border-wp-rose/30 p-4 flex items-center gap-4 shadow-wp-xs"
                   >
                     <div className="relative rounded-xl shrink-0 size-14 overflow-hidden border border-border bg-muted">
-                      <WordImage word={word} width="56" height="56" className="size-full object-cover" />
+                      <WordImage
+                        word={word}
+                        width="56"
+                        height="56"
+                        className="size-full object-cover"
+                      />
                     </div>
                     <div className="flex flex-col gap-1 flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <p className="font-sans font-bold text-foreground text-base">{word.label}</p>
+                        <p className="font-sans font-bold text-foreground text-base">
+                          {word.label}
+                        </p>
                         <span className="font-sans font-bold text-wp-rose bg-wp-rose/10 rounded-full px-2 py-0.5 text-[10px]">
                           {daysDiff}d overdue
                         </span>
                       </div>
-                      <p className="font-sans text-muted-foreground text-xs font-medium">/{word.phonetic}/ · {mastery}</p>
+                      <p className="font-sans text-muted-foreground text-xs font-medium">
+                        /{word.phonetic}/ · {mastery}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -167,16 +194,25 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
                     className="bg-wp-card rounded-2xl border border-wp-amber/30 p-4 flex items-center gap-4 shadow-wp-xs"
                   >
                     <div className="relative rounded-xl shrink-0 size-14 overflow-hidden border border-border bg-muted">
-                      <WordImage word={word} width="56" height="56" className="size-full object-cover" />
+                      <WordImage
+                        word={word}
+                        width="56"
+                        height="56"
+                        className="size-full object-cover"
+                      />
                     </div>
                     <div className="flex flex-col gap-1 flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <p className="font-sans font-bold text-foreground text-base">{word.label}</p>
+                        <p className="font-sans font-bold text-foreground text-base">
+                          {word.label}
+                        </p>
                         <span className="font-sans font-bold text-wp-amber bg-wp-amber/10 rounded-full px-2 py-0.5 text-[10px]">
                           Due now
                         </span>
                       </div>
-                      <p className="font-sans text-muted-foreground text-xs font-medium">/{word.phonetic}/ · {mastery}</p>
+                      <p className="font-sans text-muted-foreground text-xs font-medium">
+                        /{word.phonetic}/ · {mastery}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -198,16 +234,25 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
                     className="bg-wp-card rounded-2xl border border-border p-4 flex items-center gap-4 opacity-75 shadow-wp-xs"
                   >
                     <div className="relative rounded-xl shrink-0 size-14 overflow-hidden border border-border bg-muted">
-                      <WordImage word={word} width="56" height="56" className="size-full object-cover" />
+                      <WordImage
+                        word={word}
+                        width="56"
+                        height="56"
+                        className="size-full object-cover"
+                      />
                     </div>
                     <div className="flex flex-col gap-1 flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <p className="font-sans font-bold text-foreground text-base">{word.label}</p>
+                        <p className="font-sans font-bold text-foreground text-base">
+                          {word.label}
+                        </p>
                         <span className="font-sans font-medium text-muted-foreground bg-muted rounded-full px-2 py-0.5 text-[10px]">
                           In {daysDiff}d
                         </span>
                       </div>
-                      <p className="font-sans text-muted-foreground text-xs font-medium">/{word.phonetic}/ · {mastery}</p>
+                      <p className="font-sans text-muted-foreground text-xs font-medium">
+                        /{word.phonetic}/ · {mastery}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -233,7 +278,8 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
             <div>
               <h2 className="font-sans font-bold text-foreground text-base">Skill Drills</h2>
               <p className="font-sans text-muted-foreground text-xs mt-0.5 max-w-md">
-                Standalone listening, reading, speaking and writing practice, separate from your lesson progress.
+                Standalone listening, reading, speaking and writing practice, separate from your
+                lesson progress.
               </p>
             </div>
           </div>
@@ -258,9 +304,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
           className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 w-full font-sans font-bold text-wp-text-on-blue text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue min-h-[52px] shadow-wp-xs transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <span>
-            {canStartReview
-              ? `Start Review Session (${totalDue} due)`
-              : "Nothing to review yet"}
+            {canStartReview ? `Start Review Session (${totalDue} due)` : "Nothing to review yet"}
           </span>
           <ArrowRight className="size-5" aria-hidden />
         </button>

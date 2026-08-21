@@ -36,19 +36,23 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   // 0 attempts = 0% accuracy (never 100%)
   const accuracy = attempts.length === 0 ? 0 : Math.round((correct / attempts.length) * 100);
   const stars = [accuracy >= 50, accuracy >= 75, accuracy >= 90];
-  const isMastered = accuracy >= 80 && attempts.length > 0;
+  const isStrongSession = accuracy >= 80 && attempts.length > 0;
 
   const isAssessment = mode === "UNIT_ASSESSMENT";
   const isPreLessonAssessment = mode === "PRE_LESSON_ASSESSMENT";
-  const assessmentPassed = (isAssessment || isPreLessonAssessment) && accuracy === 100 && attempts.length === wordQueue.length;
+  const assessmentPassed =
+    (isAssessment || isPreLessonAssessment) &&
+    accuracy === 100 &&
+    attempts.length === wordQueue.length;
 
   useEffect(() => {
     if (isAssessment) {
       if (unitId && assessmentPassed) {
         // Find all word IDs in the entire unit
-        const unit = Object.values(COURSE_UNITS).find(u => u.id === unitId) || COURSE_UNITS[unitId || ""];
+        const unit =
+          Object.values(COURSE_UNITS).find((u) => u.id === unitId) || COURSE_UNITS[unitId || ""];
         if (unit) {
-          const allWordIds = unit.vocabulary.map(v => v.id);
+          const allWordIds = unit.vocabulary.map((v) => v.id);
           recordUnitAssessmentCompletion(true, allWordIds);
         }
       }
@@ -62,13 +66,25 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
     } else {
       recordSessionCompletion(sessionId, attempts, wordQueue);
     }
-    
+
     if ((isAssessment || isPreLessonAssessment) && !assessmentPassed) {
       // Did not pass the assessment
     } else {
       playLevelUp();
     }
-  }, [sessionId, attempts, wordQueue, recordSessionCompletion, recordUnitAssessmentCompletion, playLevelUp, isAssessment, isPreLessonAssessment, assessmentPassed, unitId, group.wordIds]);
+  }, [
+    sessionId,
+    attempts,
+    wordQueue,
+    recordSessionCompletion,
+    recordUnitAssessmentCompletion,
+    playLevelUp,
+    isAssessment,
+    isPreLessonAssessment,
+    assessmentPassed,
+    unitId,
+    group.wordIds,
+  ]);
 
   // Read the credited amount back out of the ledger rather than recomputing it.
   // This screen used to run its own `correct * 10`, which was a fourth
@@ -93,26 +109,35 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
           </div>
           <div>
             <span className="font-sans font-bold text-xs text-wp-amber bg-wp-amber/10 border border-wp-amber/20 px-3 py-1 rounded-full uppercase tracking-wider">
-              {isAssessment 
-                ? (assessmentPassed ? "Unit Mastered" : "Test Failed") 
-                : (isMastered ? "Group Mastered" : "Session Complete")}
+              {isAssessment
+                ? assessmentPassed
+                  ? "Unit Test Passed"
+                  : "More Practice Needed"
+                : isStrongSession
+                  ? "Strong Session"
+                  : "Session Complete"}
             </span>
             <h1 className="font-sans font-black text-white text-4xl xl:text-5xl leading-tight tracking-tight mt-2">
-              {isAssessment 
-                ? (assessmentPassed ? "Passed!" : "Keep Practicing!") 
-                : `${group.name} ${isMastered ? "Mastered!" : "Completed!"}`}
+              {isAssessment
+                ? assessmentPassed
+                  ? "Passed!"
+                  : "Keep Practicing!"
+                : `${group.name} ${isStrongSession ? "Practiced Well!" : "Completed!"}`}
             </h1>
             <p className="font-sans font-semibold text-white/60 text-base mt-2">
               {isAssessment
-                ? (assessmentPassed 
-                  ? `You mastered all words in this unit!` 
-                  : `You need 100% to test out of this unit.`)
-                : (isMastered
-                  ? `You mastered all ${groupWords.length} words in this learning group.`
-                  : `You completed practice for ${groupWords.length} words.`)}
+                ? assessmentPassed
+                  ? `You answered every word correctly in this unit test.`
+                  : `You need 100% to test out of this unit.`
+                : isStrongSession
+                  ? `You recalled these ${groupWords.length} words well in this session.`
+                  : `You completed practice for ${groupWords.length} words.`}
             </p>
           </div>
-          <div className="flex gap-3 items-center" aria-label={`${stars.filter(Boolean).length} out of 3 stars`}>
+          <div
+            className="flex gap-3 items-center"
+            aria-label={`${stars.filter(Boolean).length} out of 3 stars`}
+          >
             {stars.map((filled, i) => (
               <Star
                 key={i}
@@ -134,9 +159,13 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             </div>
             <div>
               <span className="font-sans font-bold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full uppercase tracking-wider">
-                {isAssessment 
-                  ? (assessmentPassed ? "Unit Mastered" : "Test Failed") 
-                  : (isMastered ? "Group Mastered" : "Session Complete")}
+                {isAssessment
+                  ? assessmentPassed
+                    ? "Unit Test Passed"
+                    : "More Practice Needed"
+                  : isStrongSession
+                    ? "Strong Session"
+                    : "Session Complete"}
               </span>
               <h1 className="font-sans font-black text-foreground text-3xl mt-1">
                 {isAssessment ? (assessmentPassed ? "Passed!" : "Keep Practicing!") : group.name}
@@ -144,35 +173,66 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             </div>
             <p className="font-sans font-semibold text-muted-foreground text-sm">
               {isAssessment
-                ? (assessmentPassed 
-                  ? `Mastered all words in this unit.` 
-                  : `You need 100% to test out of this unit.`)
-                : (isMastered
-                  ? `Mastered all ${groupWords.length} vocabulary words in this group.`
-                  : `Completed session for ${groupWords.length} words.`)}
+                ? assessmentPassed
+                  ? `Answered every word correctly in this unit test.`
+                  : `You need 100% to test out of this unit.`
+                : isStrongSession
+                  ? `Recalled ${groupWords.length} vocabulary words well in this session.`
+                  : `Completed session for ${groupWords.length} words.`}
             </p>
-            <div className="flex gap-2 items-center" aria-label={`${stars.filter(Boolean).length} out of 3 stars`}>
+            <div
+              className="flex gap-2 items-center"
+              aria-label={`${stars.filter(Boolean).length} out of 3 stars`}
+            >
               {stars.map((filled, i) => (
-                <Star key={i} className={`size-8 ${filled ? "text-wp-amber fill-wp-amber" : "text-muted-foreground"}`} aria-hidden />
+                <Star
+                  key={i}
+                  className={`size-8 ${filled ? "text-wp-amber fill-wp-amber" : "text-muted-foreground"}`}
+                  aria-hidden
+                />
               ))}
             </div>
           </div>
 
           <div className="hidden lg:block text-center">
-            <h2 className="font-sans font-bold text-foreground text-2xl">Session Results Breakdown</h2>
-            <p className="font-sans text-muted-foreground text-sm mt-1">Here is your performance for the {group.name} group.</p>
+            <h2 className="font-sans font-bold text-foreground text-2xl">
+              Session Results Breakdown
+            </h2>
+            <p className="font-sans text-muted-foreground text-sm mt-1">
+              Here is your performance for the {group.name} group.
+            </p>
           </div>
 
           {/* Stats grid */}
           <div className="grid grid-cols-3 gap-3 w-full">
             {[
-              { value: `${groupWords.length}`, label: "Group Words", color: "text-primary", bg: "bg-secondary" },
-              { value: `${accuracy}%`, label: "Accuracy", color: "text-wp-blue", bg: "bg-wp-blue/10" },
-              { value: `+${xp}`, label: "XP Earned", color: "text-wp-green", bg: "bg-wp-green-light" },
+              {
+                value: `${groupWords.length}`,
+                label: "Group Words",
+                color: "text-primary",
+                bg: "bg-secondary",
+              },
+              {
+                value: `${accuracy}%`,
+                label: "Accuracy",
+                color: "text-wp-blue",
+                bg: "bg-wp-blue/10",
+              },
+              {
+                value: `+${xp}`,
+                label: "XP Earned",
+                color: "text-wp-green",
+                bg: "bg-wp-green-light",
+              },
             ].map(({ value, label, color, bg }) => (
-              <div key={label} className={`${bg} rounded-2xl border border-border p-3.5 flex flex-col items-center gap-1`}>
+              <div
+                key={label}
+                className={`${bg} rounded-2xl border border-border p-3.5 flex flex-col items-center gap-1`}
+              >
                 <p className={`font-sans font-black text-2xl ${color}`}>{value}</p>
-                <p className="font-sans font-medium text-muted-foreground text-[11px] text-center leading-tight">{label}</p>
+                <p className="font-sans font-medium text-muted-foreground text-[11px] text-center leading-tight">
+                  {label}
+                </p>
               </div>
             ))}
           </div>
@@ -187,14 +247,20 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
               </div>
               <dl className="flex flex-col gap-1">
                 {[
-                  { label: `${correct} correct answer${correct === 1 ? "" : "s"}`, value: xpBreakdown.correctAnswers },
+                  {
+                    label: `${correct} correct answer${correct === 1 ? "" : "s"}`,
+                    value: xpBreakdown.correctAnswers,
+                  },
                   { label: "Lesson completed", value: xpBreakdown.lessonComplete },
                   { label: "Perfect session", value: xpBreakdown.perfectSession },
                   { label: `${progress.streak}-day streak`, value: xpBreakdown.streak },
                 ]
                   .filter((row) => row.value > 0)
                   .map((row) => (
-                    <div key={row.label} className="flex items-center justify-between font-sans text-xs">
+                    <div
+                      key={row.label}
+                      className="flex items-center justify-between font-sans text-xs"
+                    >
                       <dt className="text-muted-foreground font-medium">{row.label}</dt>
                       <dd className="text-foreground font-bold">+{row.value}</dd>
                     </div>
@@ -226,7 +292,10 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             </div>
             <div className="flex flex-col gap-1.5 w-full">
               {groupWords.map((w) => (
-                <div key={w?.id} className="bg-wp-card border border-border rounded-xl px-3.5 py-2.5 flex items-center justify-between">
+                <div
+                  key={w?.id}
+                  className="bg-wp-card border border-border rounded-xl px-3.5 py-2.5 flex items-center justify-between"
+                >
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="size-4 text-wp-green" />
                     <span className="font-sans font-bold text-foreground text-sm">{w?.label}</span>
@@ -239,9 +308,24 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
         </main>
 
         <footer className="w-full max-w-md mx-auto px-6 pb-8 pt-4 flex flex-col gap-2.5 shrink-0 border-t border-border/60 bg-secondary/50">
-          <PrimaryButton label={isAssessment ? "Return to Unit" : "Continue to Lessons"} onClick={() => dispatch({ type: "GO", to: isAssessment ? "lesson-entry" : "explore", unitId })} />
+          <PrimaryButton
+            label={isAssessment ? "Return to Unit" : "Continue to Lessons"}
+            onClick={() =>
+              dispatch({ type: "GO", to: isAssessment ? "lesson-entry" : "explore", unitId })
+            }
+          />
           {!isAssessment && (
-            <SecondaryButton label="Practice Next Group" onClick={() => dispatch({ type: "START_LESSON", lessonId: nextGroup.id, mode: "NEW_LESSON", wordQueue: nextGroup.wordIds })} />
+            <SecondaryButton
+              label="Practice Next Group"
+              onClick={() =>
+                dispatch({
+                  type: "START_LESSON",
+                  lessonId: nextGroup.id,
+                  mode: "NEW_LESSON",
+                  wordQueue: nextGroup.wordIds,
+                })
+              }
+            />
           )}
         </footer>
         <HomeIndicator />

@@ -63,7 +63,10 @@ export function SplashWelcome({ dispatch }: Props) {
               "Visual language immersion matching drills",
               "Adaptive memory reviews",
             ].map((text, i) => (
-              <div key={i} className="flex items-center gap-2.5 text-white/80 text-sm font-sans font-medium">
+              <div
+                key={i}
+                className="flex items-center gap-2.5 text-white/80 text-sm font-sans font-medium"
+              >
                 <CheckCircle2 className="size-4 text-wp-green shrink-0" />
                 <span>{text}</span>
               </div>
@@ -74,7 +77,9 @@ export function SplashWelcome({ dispatch }: Props) {
         {/* Footer Left */}
         <div className="relative z-10 flex items-center gap-2 text-white/60 text-xs font-sans font-semibold">
           <Globe className="size-4" />
-          <span>Flagship World 1: {flagshipWorld.name} ({flagshipWorld.vocabulary.length} Words Ready)</span>
+          <span>
+            Start with {flagshipWorld.name} ({flagshipWorld.vocabulary.length} words)
+          </span>
         </div>
       </div>
 
@@ -86,7 +91,9 @@ export function SplashWelcome({ dispatch }: Props) {
             <div className="size-8 rounded-xl bg-primary flex items-center justify-center shadow-wp-xs">
               <BookOpen className="size-4 text-primary-foreground" />
             </div>
-            <span className="font-sans font-bold text-foreground text-base tracking-tight">WordPix</span>
+            <span className="font-sans font-bold text-foreground text-base tracking-tight">
+              WordPix
+            </span>
           </div>
           <span className="text-xs font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full border border-border">
             Step 1 of 2
@@ -99,12 +106,16 @@ export function SplashWelcome({ dispatch }: Props) {
             <span className="text-xs font-sans font-bold text-primary bg-secondary px-3 py-1 rounded-full border border-primary/20">
               Welcome to WordPix
             </span>
-            <span className="text-xs font-sans font-semibold text-muted-foreground">Step 1 of 2</span>
+            <span className="text-xs font-sans font-semibold text-muted-foreground">
+              Step 1 of 2
+            </span>
           </div>
 
           <div className="md:hidden inline-flex items-center gap-2 bg-secondary px-3.5 py-1.5 rounded-full border border-primary/20 shadow-wp-xs">
             <Sparkles className="size-3.5 text-primary motion-safe:animate-pulse" />
-            <span className="font-sans font-semibold text-xs text-foreground">Visual English Learning Engine</span>
+            <span className="font-sans font-semibold text-xs text-foreground">
+              Visual English Learning Engine
+            </span>
           </div>
 
           <div className="flex flex-col gap-2">
@@ -112,7 +123,8 @@ export function SplashWelcome({ dispatch }: Props) {
               Master Vocabulary Faster
             </h1>
             <p className="font-sans font-medium text-muted-foreground text-base leading-relaxed">
-              Connect words directly to pictures without translation. Practice listening, speaking, spelling, and sentence building.
+              Connect words directly to pictures without translation. Practice listening, speaking,
+              spelling, and sentence building.
             </p>
           </div>
 
@@ -126,7 +138,9 @@ export function SplashWelcome({ dispatch }: Props) {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             <div className="absolute bottom-3 start-4 flex items-center gap-2 text-white">
               <Layers className="size-4" />
-              <span className="font-sans font-bold text-xs">{flagshipWorld.vocabulary.length} {flagshipWorld.name} Words Ready</span>
+              <span className="font-sans font-bold text-xs">
+                {flagshipWorld.vocabulary.length} {flagshipWorld.name} Words Ready
+              </span>
             </div>
           </div>
         </main>

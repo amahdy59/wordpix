@@ -43,7 +43,10 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
     () => activeLesson.wordIds.filter((id) => progress.wordMemory[id]).length,
     [activeLesson.wordIds, progress.wordMemory]
   );
-  const estimatedMinutes = Math.max(1, Math.round((activeLesson.wordIds.length * SECONDS_PER_WORD) / 60));
+  const estimatedMinutes = Math.max(
+    1,
+    Math.round((activeLesson.wordIds.length * SECONDS_PER_WORD) / 60)
+  );
   const activeUnit = useMemo(() => resolveUnitForLesson(activeLesson.id), [activeLesson.id]);
 
   const offline = useOfflineReadiness(activeUnit.id);
@@ -82,13 +85,15 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         {offline && !offline.ready && offline.cached > 0 && (
           <Badge variant="muted" size="md" className="hidden sm:flex">
             <WifiOff className="size-3.5" aria-hidden />
-            <span>{t("dashboard.offlineSaving", { cached: offline.cached, total: offline.total })}</span>
+            <span>
+              {t("dashboard.offlineSaving", { cached: offline.cached, total: offline.total })}
+            </span>
           </Badge>
         )}
       </header>
 
       {/* Main Content (Single Centered Column for maximum clarity) */}
-      <motion.div 
+      <motion.div
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
@@ -148,7 +153,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                 </div>
               </div>
               <p className="font-sans text-muted-foreground text-xs leading-relaxed mt-2">
-                Review words scheduled for memory retention before decay occurs.
+                Review words at the right time to help them stay in memory.
               </p>
               <motion.button
                 whileHover={{ scale: 1.015 }}

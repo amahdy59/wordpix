@@ -73,49 +73,119 @@ export const BEDROOM_GROUPS: Lesson[] = [
     id: "furniture",
     name: "Furniture",
     topicId: "furniture",
-    wordIds: ['bed','nightstand','dresser','wardrobe','desk','chair','bookshelf','mirror','stool','chest-of-drawers'],
+    wordIds: [
+      "bed",
+      "nightstand",
+      "dresser",
+      "wardrobe",
+      "desk",
+      "chair",
+      "bookshelf",
+      "mirror",
+      "stool",
+      "chest-of-drawers",
+    ],
     description: "Learn about furniture.",
-    story: "When moving into the new bedroom, the heavy bed was placed first. Next to it went the small nightstand for a lamp. The tall dresser was moved near the wall, while the large wardrobe held all the hanging clothes. Finally, a sturdy desk was added in the corner for studying. Sarah sat on her comfortable chair by the window. She organized her favorite novels on the wooden bookshelf. Glancing at the shiny mirror on the wall, she decided to pull up a small stool to reach the top shelf of the old chest-of-drawers."
+    story:
+      "Maya placed the bed against the wall and set a nightstand beside it. She folded clothes into the dresser and hung jackets in the wardrobe. A desk and chair made a quiet study area, while a bookshelf held her books. She checked the mirror, sat on the stool, and put spare clothes in the chest of drawers.",
   },
   {
     id: "bedding",
     name: "Bedding & Linen",
     topicId: "bedding",
-    wordIds: ['pillow','blanket','sheet','mattress','duvet','pillowcase','comforter','cushion','bed-frame','headboard'],
+    wordIds: [
+      "pillow",
+      "blanket",
+      "sheet",
+      "mattress",
+      "duvet",
+      "pillowcase",
+      "comforter",
+      "cushion",
+      "bed-frame",
+      "headboard",
+    ],
     description: "Learn about bedding & linen.",
-    story: "Before sleeping, he fluffed his soft pillow and pulled up the warm blanket. The fresh, crisp sheet felt wonderful after a long day. The thick duvet kept the winter chill away, and the patterned bedspread added a pop of color to the room. She washed the pillowcase along with the rest of the laundry. The new mattress was incredibly supportive, and the soft mattress-pad made it even cozier. She draped a decorative throw-blanket over the edge and added a fluffy cushion for extra comfort."
+    story:
+      "Omar put a firm mattress on the bed frame and rested it against the headboard. He covered it with a clean sheet, a warm duvet, and a soft comforter. Then he added a pillow inside a pillowcase, pulled up a blanket, and placed a cushion near the wall.",
   },
   {
     id: "features",
     name: "Room Features",
     topicId: "features",
-    wordIds: ['lamp','curtain','window','door','rug','carpet','ceiling-light','light-switch','blinds','outlet'],
+    wordIds: [
+      "lamp",
+      "curtain",
+      "window",
+      "door",
+      "rug",
+      "carpet",
+      "ceiling-light",
+      "light-switch",
+      "blinds",
+      "outlet",
+    ],
     description: "Learn about room features.",
-    story: "Sunlight streamed through the open window, warming the wooden floor. The thick door was closed for privacy. A bright light illuminated the space, reflecting off the white wall. The smooth ceiling was painted white to make the room look taller. A small rug covered the center of the room. The cozy carpet was soft underfoot, and the closed curtain kept the streetlights out at night. He reached for the switch to turn off the overhead light."
+    story:
+      "Sunlight came through the window after Lina opened the curtain and raised the blinds. She walked through the door, stepped onto the rug, and felt the carpet under her feet. At night, she used the light switch to turn on the ceiling light and lamp, then plugged her charger into the outlet.",
   },
   {
     id: "objects",
     name: "Bedroom Objects",
     topicId: "objects",
-    wordIds: ['alarm-clock','picture-frame','clock','plant','vase','candle','calendar','tissue-box','wastebasket','hanger'],
+    wordIds: [
+      "alarm-clock",
+      "picture-frame",
+      "clock",
+      "plant",
+      "vase",
+      "candle",
+      "calendar",
+      "tissue-box",
+      "wastebasket",
+      "hanger",
+    ],
     description: "Learn about bedroom objects.",
-    story: "In the Bedroom Objects 1 lesson, we learned about some very useful things. For example, we saw the alarm-clock and the picture-frame. We also explored how the clock works. Finally, we looked at the plant and the vase to complete our understanding. In the Bedroom Objects 2 lesson, we learned about some very useful things. For example, we saw the candle and the calendar. We also explored how the tissue-box works. Finally, we looked at the wastebasket and the hanger to complete our understanding."
+    story:
+      "The alarm clock rang beside a picture frame and a small clock. A plant stood in a vase near a candle and a calendar. Sam took a tissue from the tissue box, dropped the used tissue into the wastebasket, and placed his shirt on a hanger.",
   },
   {
     id: "personal",
     name: "Personal Items",
     topicId: "personal",
-    wordIds: ['pajamas','slippers','robe','teddy-bear','poster','books','photo-album','glasses','backpack','jewelry-box'],
+    wordIds: [
+      "pajamas",
+      "slippers",
+      "robe",
+      "teddy-bear",
+      "poster",
+      "books",
+      "photo-album",
+      "glasses",
+      "backpack",
+      "jewelry-box",
+    ],
     description: "Learn about personal items.",
-    story: "He tossed his heavy backpack onto the floor. The new clothes were neatly folded. A warm sweater was left on the chair, next to a clean shirt and a pair of blue jeans. His left shoe was missing, so he checked under the bed. He found a clean sock and a warm jacket hanging in the closet. His winter coat was draped over a chair, next to a comfortable hat."
+    story:
+      "Nora put on her pajamas, slippers, and robe before bed. Her teddy bear sat below a colorful poster and a shelf of books. She opened a photo album, put her glasses beside it, emptied her backpack, and stored a necklace in the jewelry box.",
   },
   {
     id: "electronics",
     name: "Electronics",
     topicId: "electronics",
-    wordIds: ['phone','charger','laptop','headphones','tablet','speaker','reading-light','remote-control'],
+    wordIds: [
+      "phone",
+      "charger",
+      "laptop",
+      "headphones",
+      "tablet",
+      "speaker",
+      "reading-light",
+      "remote-control",
+    ],
     description: "Learn about electronics.",
-    story: "The television was turned on to watch the morning news. His laptop was charging on the desk. He answered the ringing phone while listening to the radio and adjusting his loud alarm. He plugged his charger into the wall socket. The small fan kept the room cool during the summer. A bright lightbulb illuminated the desk, and he left his tablet next to his favorite video-game."
+    story:
+      "Ali connected his phone to a charger beside the laptop. He put on his headphones and opened a lesson on the tablet. Music played through the speaker while a reading light lit the desk, and he used the remote control to lower the volume.",
   },
 ];
 
@@ -141,7 +211,8 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     label: "Dresser",
     phonetic: "ˈdɹɛsɚ",
     topic: "furniture",
-    description: "A wide, low piece of furniture with several sliding compartments for folded clothes.",
+    description:
+      "A wide, low piece of furniture with several sliding compartments for folded clothes.",
     img: `${LOCAL_WORD_IMAGES}/dresser.webp`,
   },
   {
@@ -613,49 +684,131 @@ export const KITCHEN_GROUPS: Lesson[] = [
     id: "large-appliances",
     name: "Large Appliances",
     topicId: "large-appliances",
-    wordIds: ['refrigerator','stove','oven','microwave','dishwasher','toaster','blender','kettle','coffee-maker','freezer'],
+    wordIds: [
+      "refrigerator",
+      "stove",
+      "oven",
+      "microwave",
+      "dishwasher",
+      "toaster",
+      "blender",
+      "kettle",
+      "coffee-maker",
+      "freezer",
+    ],
     description: "Learn about large appliances.",
-    story: "In the Large Appliances lesson, we learned about some very useful things. For example, we saw the refrigerator and the stove. We also explored how the oven works. Finally, we looked at the microwave and the dishwasher to complete our understanding. In the Large Appliances 2 lesson, we learned about some very useful things. For example, we saw the toaster and the blender. We also explored how the kettle works. Finally, we looked at the coffee-maker and the freezer to complete our understanding."
+    story:
+      "Rami took vegetables from the refrigerator and bread from the freezer. He heated soup on the stove, baked bread in the oven, and warmed leftovers in the microwave. After dinner, the dishwasher cleaned the plates. In the morning, he used the toaster, blender, kettle, and coffee maker.",
   },
   {
     id: "cookware",
     name: "Cookware",
     topicId: "cookware",
-    wordIds: ['pot','pan','frying-pan','baking-tray','saucepan','wok','casserole-dish','baking-dish','steamer','pressure-cooker'],
+    wordIds: [
+      "pot",
+      "pan",
+      "frying-pan",
+      "baking-tray",
+      "saucepan",
+      "wok",
+      "casserole-dish",
+      "baking-dish",
+      "steamer",
+      "pressure-cooker",
+    ],
     description: "Learn about cookware.",
-    story: "She placed the heavy pot on the stove to boil water. A large pan was perfect for frying eggs, while a deep saucepan held the simmering tomato sauce. The curved wok was ready for a quick stir-fry, and the iron skillet gave the steak a perfect sear. The deep baking-dish was filled with a rich lasagna. Cookies were arranged on the flat baking-tray before entering the oven. She used a round cake-pan for the birthday dessert, a versatile roasting-pan for the Sunday chicken, and a large casserole-dish for the family dinner."
+    story:
+      "Sara boiled soup in a pot and warmed sauce in a saucepan. She cooked vegetables in a pan, eggs in a frying pan, and noodles in a wok. A baking tray, casserole dish, and baking dish went into the oven. She cooked vegetables in a steamer and beans in a pressure cooker.",
   },
   {
     id: "utensils-tools",
     name: "Utensils Tools",
     topicId: "utensils-tools",
-    wordIds: ['fork','knife','spoon','spatula','ladle','whisk','tongs','peeler','grater','rolling-pin','can-opener','corkscrew'],
+    wordIds: [
+      "fork",
+      "knife",
+      "spoon",
+      "spatula",
+      "ladle",
+      "whisk",
+      "tongs",
+      "peeler",
+      "grater",
+      "rolling-pin",
+      "can-opener",
+      "corkscrew",
+    ],
     description: "Learn about utensils tools.",
-    story: "In the Utensils Tools 1 lesson, we learned about some very useful things. For example, we saw the fork and the knife. We also explored how the spoon works. Finally, we looked at the spatula and the ladle to complete our understanding. In the Utensils Tools 2 lesson, we learned about some very useful things. For example, we saw the whisk and the tongs. We also explored how the peeler works. Finally, we looked at the grater and the rolling-pin to complete our understanding. In the Utensils Tools 3 lesson, we learned about some very useful things. For example, we saw the can-opener and the corkscrew. We also explored how the undefined works. Finally, we looked at the undefined and the undefined to complete our understanding."
+    story:
+      "Yousef ate with a fork, knife, and spoon. While cooking, he turned food with a spatula, served soup with a ladle, mixed eggs with a whisk, and lifted hot pieces with tongs. He used a peeler, grater, and rolling pin to prepare vegetables and dough, then opened a tin with a can opener and a bottle with a corkscrew.",
   },
   {
     id: "dishes-containers",
     name: "Dishes Containers",
     topicId: "dishes-containers",
-    wordIds: ['plate','bowl','mug','glass','cup','saucer','cutting-board','colander','measuring-cup','measuring-spoon','mixing-bowl','pitcher'],
+    wordIds: [
+      "plate",
+      "bowl",
+      "mug",
+      "glass",
+      "cup",
+      "saucer",
+      "cutting-board",
+      "colander",
+      "measuring-cup",
+      "measuring-spoon",
+      "mixing-bowl",
+      "pitcher",
+    ],
     description: "Learn about dishes containers.",
-    story: "In the Dishes Containers 1 lesson, we learned about some very useful things. For example, we saw the plate and the bowl. We also explored how the mug works. Finally, we looked at the glass and the cup to complete our understanding. In the Dishes Containers 2 lesson, we learned about some very useful things. For example, we saw the saucer and the cutting-board. We also explored how the colander works. Finally, we looked at the measuring-cup and the measuring-spoon to complete our understanding. In the Dishes Containers 3 lesson, we learned about some very useful things. For example, we saw the mixing-bowl and the pitcher. We also explored how the undefined works. Finally, we looked at the undefined and the undefined to complete our understanding."
+    story:
+      "Mariam set a plate, bowl, mug, glass, cup, and saucer on the table. She chopped vegetables on a cutting board and drained them in a colander. She checked ingredients with a measuring cup and measuring spoon, combined them in a mixing bowl, and poured water from a pitcher.",
   },
   {
     id: "kitchen-items",
     name: "Kitchen Items",
     topicId: "kitchen-items",
-    wordIds: ['dish-towel','oven-mitt','apron','trash-can','paper-towel','plastic-wrap','aluminum-foil','food-container','sponge','dish-soap','dish-rack','cling-film'],
+    wordIds: [
+      "dish-towel",
+      "oven-mitt",
+      "apron",
+      "trash-can",
+      "paper-towel",
+      "plastic-wrap",
+      "aluminum-foil",
+      "food-container",
+      "sponge",
+      "dish-soap",
+      "dish-rack",
+      "cling-film",
+    ],
     description: "Learn about kitchen items.",
-    story: "In the Kitchen Items 1 lesson, we learned about some very useful things. For example, we saw the dish-towel and the oven-mitt. We also explored how the apron works. Finally, we looked at the trash-can and the paper-towel to complete our understanding. In the Kitchen Items 2 lesson, we learned about some very useful things. For example, we saw the plastic-wrap and the aluminum-foil. We also explored how the food-container works. Finally, we looked at the sponge and the dish-soap to complete our understanding. In the Kitchen Items 3 lesson, we learned about some very useful things. For example, we saw the dish-rack and the cling-film. We also explored how the undefined works. Finally, we looked at the undefined and the undefined to complete our understanding."
+    story:
+      "Karim dried a plate with a dish towel and protected his hand with an oven mitt. His apron kept his clothes clean, and he put scraps in the trash can. He wiped a spill with a paper towel, covered leftovers with plastic wrap and aluminum foil, and stored them in a food container. Then he cleaned the sink with a sponge and dish soap, placed plates in the dish rack, and covered another bowl with cling film.",
   },
   {
     id: "basic-pantry",
     name: "Basic Pantry",
     topicId: "basic-pantry",
-    wordIds: ['bread','butter','milk','egg','cheese','rice','pasta','cooking-oil','salt','sugar','pepper','flour','vinegar','honey'],
+    wordIds: [
+      "bread",
+      "butter",
+      "milk",
+      "egg",
+      "cheese",
+      "rice",
+      "pasta",
+      "cooking-oil",
+      "salt",
+      "sugar",
+      "pepper",
+      "flour",
+      "vinegar",
+      "honey",
+    ],
     description: "Learn about basic pantry.",
-    story: "In the Basic Pantry 1 lesson, we learned about some very useful things. For example, we saw the bread and the butter. We also explored how the milk works. Finally, we looked at the egg and the cheese to complete our understanding. In the Basic Pantry 2 lesson, we learned about some very useful things. For example, we saw the rice and the pasta. We also explored how the cooking-oil works. Finally, we looked at the salt and the sugar to complete our understanding. In the Basic Pantry 3 lesson, we learned about some very useful things. For example, we saw the pepper and the flour. We also explored how the vinegar works. Finally, we looked at the honey and the undefined to complete our understanding."
+    story:
+      "Salma made breakfast with bread, butter, milk, an egg, and cheese. For lunch, she cooked rice and pasta with cooking oil, salt, and pepper. Later, she mixed flour and sugar for a cake, added a little vinegar to a salad, and sweetened tea with honey.",
   },
 ];
 
@@ -663,565 +816,565 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
   {
     id: "refrigerator",
     label: "Refrigerator",
-    phonetic: "ɹɪˈfɹɪdʒəˌɹeɪtɚ", // Using label as phonetic placeholder
+    phonetic: "ɹɪˈfɹɪdʒəˌɹeɪtɚ",
     topic: "large-appliances",
-    description: "A kitchen item known as refrigerator.", // Needs manual/AI description
+    description: "A tall electric appliance that keeps fresh groceries cold.",
     img: `${LOCAL_WORD_IMAGES}/refrigerator.webp`,
   },
   {
     id: "stove",
     label: "Stove",
-    phonetic: "stoʊv", // Using label as phonetic placeholder
+    phonetic: "stoʊv",
     topic: "large-appliances",
-    description: "A kitchen item known as stove.", // Needs manual/AI description
+    description: "A cooking appliance with heated burners on its top surface.",
     img: `${LOCAL_WORD_IMAGES}/stove.webp`,
   },
   {
     id: "oven",
     label: "Oven",
-    phonetic: "ˈʌvən", // Using label as phonetic placeholder
+    phonetic: "ˈʌvən",
     topic: "large-appliances",
-    description: "A kitchen item known as oven.", // Needs manual/AI description
+    description: "An enclosed heated compartment used to roast or bake meals.",
     img: `${LOCAL_WORD_IMAGES}/oven.webp`,
   },
   {
     id: "microwave",
     label: "Microwave",
-    phonetic: "ˈmaɪkɹəˌweɪv", // Using label as phonetic placeholder
+    phonetic: "ˈmaɪkɹəˌweɪv",
     topic: "large-appliances",
-    description: "A kitchen item known as microwave.", // Needs manual/AI description
+    description: "An electric appliance that heats meals quickly inside a small compartment.",
     img: `${LOCAL_WORD_IMAGES}/microwave.webp`,
   },
   {
     id: "dishwasher",
     label: "Dishwasher",
-    phonetic: "ˈdɪʃˌwɑʃɚ", // Using label as phonetic placeholder
+    phonetic: "ˈdɪʃˌwɑʃɚ",
     topic: "large-appliances",
-    description: "A kitchen item known as dishwasher.", // Needs manual/AI description
+    description: "A machine that cleans plates, cups, and cutlery automatically.",
     img: `${LOCAL_WORD_IMAGES}/dishwasher.webp`,
   },
   {
     id: "toaster",
     label: "Toaster",
-    phonetic: "ˈtoʊstɚ", // Using label as phonetic placeholder
+    phonetic: "ˈtoʊstɚ",
     topic: "large-appliances",
-    description: "A kitchen item known as toaster.", // Needs manual/AI description
+    description: "A small electric appliance that browns slices until they are crisp.",
     img: `${LOCAL_WORD_IMAGES}/toaster.webp`,
   },
   {
     id: "blender",
     label: "Blender",
-    phonetic: "ˈblɛndɚ", // Using label as phonetic placeholder
+    phonetic: "ˈblɛndɚ",
     topic: "large-appliances",
-    description: "A kitchen item known as blender.", // Needs manual/AI description
+    description:
+      "An electric machine with spinning blades that mixes liquids and soft ingredients.",
     img: `${LOCAL_WORD_IMAGES}/blender.webp`,
   },
   {
     id: "kettle",
     label: "Kettle",
-    phonetic: "ˈkɛtəl", // Using label as phonetic placeholder
+    phonetic: "ˈkɛtəl",
     topic: "large-appliances",
-    description: "A kitchen item known as kettle.", // Needs manual/AI description
+    description: "A covered vessel with a handle and spout, used to boil water.",
     img: `${LOCAL_WORD_IMAGES}/kettle.webp`,
   },
   {
     id: "coffee-maker",
     label: "Coffee Maker",
-    phonetic: "ˈkɑfi ˈmeɪkɚ", // Using label as phonetic placeholder
+    phonetic: "ˈkɑfi ˈmeɪkɚ",
     topic: "large-appliances",
-    description: "A kitchen item known as coffee maker.", // Needs manual/AI description
+    description: "An electric appliance that brews a hot drink from ground beans.",
     img: `${LOCAL_WORD_IMAGES}/coffee-maker.webp`,
   },
   {
     id: "freezer",
     label: "Freezer",
-    phonetic: "ˈfɹizɚ", // Using label as phonetic placeholder
+    phonetic: "ˈfɹizɚ",
     topic: "large-appliances",
-    description: "A kitchen item known as freezer.", // Needs manual/AI description
+    description: "A very cold appliance that keeps groceries frozen for long storage.",
     img: `${LOCAL_WORD_IMAGES}/freezer.webp`,
   },
   {
     id: "pot",
     label: "Pot",
-    phonetic: "pɑt", // Using label as phonetic placeholder
+    phonetic: "pɑt",
     topic: "cookware",
-    description: "A kitchen item known as pot.", // Needs manual/AI description
+    description: "A deep round cooking vessel with handles, used for boiling or simmering.",
     img: `${LOCAL_WORD_IMAGES}/pot.webp`,
   },
   {
     id: "pan",
     label: "Pan",
-    phonetic: "pæn", // Using label as phonetic placeholder
+    phonetic: "pæn",
     topic: "cookware",
-    description: "A kitchen item known as pan.", // Needs manual/AI description
+    description: "A shallow round cooking vessel with a long handle.",
     img: `${LOCAL_WORD_IMAGES}/pan.webp`,
   },
   {
     id: "frying-pan",
     label: "Frying Pan",
-    phonetic: "ˈfɹaɪɪŋ pæn", // Using label as phonetic placeholder
+    phonetic: "ˈfɹaɪɪŋ pæn",
     topic: "cookware",
-    description: "A kitchen item known as frying pan.", // Needs manual/AI description
+    description: "A wide shallow cooking vessel used to cook ingredients in hot fat.",
     img: `${LOCAL_WORD_IMAGES}/frying-pan.webp`,
   },
   {
     id: "baking-tray",
     label: "Baking Tray",
-    phonetic: "ˈbeɪkɪŋ tɹeɪ", // Using label as phonetic placeholder
+    phonetic: "ˈbeɪkɪŋ tɹeɪ",
     topic: "cookware",
-    description: "A kitchen item known as baking tray.", // Needs manual/AI description
+    description: "A flat rectangular metal surface used to cook biscuits or vegetables.",
     img: `${LOCAL_WORD_IMAGES}/baking-tray.webp`,
   },
   {
     id: "saucepan",
     label: "Saucepan",
-    phonetic: "ˈsɔsˌpæn", // Using label as phonetic placeholder
+    phonetic: "ˈsɔsˌpæn",
     topic: "cookware",
-    description: "A kitchen item known as saucepan.", // Needs manual/AI description
+    description: "A deep round cooking vessel with one long handle and a lid.",
     img: `${LOCAL_WORD_IMAGES}/saucepan.webp`,
   },
   {
     id: "wok",
     label: "Wok",
-    phonetic: "wɑk", // Using label as phonetic placeholder
+    phonetic: "wɑk",
     topic: "cookware",
-    description: "A kitchen item known as wok.", // Needs manual/AI description
+    description: "A deep round cooking vessel with sloping sides, used for quick stir-frying.",
     img: `${LOCAL_WORD_IMAGES}/wok.webp`,
   },
   {
     id: "casserole-dish",
     label: "Casserole Dish",
-    phonetic: "ˈkæsəˌɹoʊl dɪʃ", // Using label as phonetic placeholder
+    phonetic: "ˈkæsəˌɹoʊl dɪʃ",
     topic: "cookware",
-    description: "A kitchen item known as casserole dish.", // Needs manual/AI description
+    description: "A deep heat-safe container used for slow meals served from the same container.",
     img: `${LOCAL_WORD_IMAGES}/casserole-dish.webp`,
   },
   {
     id: "baking-dish",
     label: "Baking Dish",
-    phonetic: "ˈbeɪkɪŋ dɪʃ", // Using label as phonetic placeholder
+    phonetic: "ˈbeɪkɪŋ dɪʃ",
     topic: "cookware",
-    description: "A kitchen item known as baking dish.", // Needs manual/AI description
+    description: "A deep heat-safe container used for cakes, pasta, or roasted meals.",
     img: `${LOCAL_WORD_IMAGES}/baking-dish.webp`,
   },
   {
     id: "steamer",
     label: "Steamer",
-    phonetic: "ˈstimɚ", // Using label as phonetic placeholder
+    phonetic: "ˈstimɚ",
     topic: "cookware",
-    description: "A kitchen item known as steamer.", // Needs manual/AI description
+    description: "A tiered cooking vessel that uses hot water vapor instead of direct heat.",
     img: `${LOCAL_WORD_IMAGES}/steamer.webp`,
   },
   {
     id: "pressure-cooker",
     label: "Pressure Cooker",
-    phonetic: "ˈpɹɛʃɚ ˈkʊkɚ", // Using label as phonetic placeholder
+    phonetic: "ˈpɹɛʃɚ ˈkʊkɚ",
     topic: "cookware",
-    description: "A kitchen item known as pressure cooker.", // Needs manual/AI description
+    description: "A sealed metal appliance that cooks meals quickly with trapped steam.",
     img: `${LOCAL_WORD_IMAGES}/pressure-cooker.webp`,
   },
   {
     id: "fork",
     label: "Fork",
-    phonetic: "fɔɹk", // Using label as phonetic placeholder
+    phonetic: "fɔɹk",
     topic: "utensils-tools",
-    description: "A kitchen item known as fork.", // Needs manual/AI description
+    description: "A handheld eating tool with several narrow pointed teeth.",
     img: `${LOCAL_WORD_IMAGES}/fork.webp`,
   },
   {
     id: "knife",
     label: "Knife",
-    phonetic: "naɪf", // Using label as phonetic placeholder
+    phonetic: "naɪf",
     topic: "utensils-tools",
-    description: "A kitchen item known as knife.", // Needs manual/AI description
+    description: "A handheld tool with a sharp blade used for slicing ingredients.",
     img: `${LOCAL_WORD_IMAGES}/knife.webp`,
   },
   {
     id: "spoon",
     label: "Spoon",
-    phonetic: "spun", // Using label as phonetic placeholder
+    phonetic: "spun",
     topic: "utensils-tools",
-    description: "A kitchen item known as spoon.", // Needs manual/AI description
+    description: "A handheld eating tool with a small rounded end for liquids or soft meals.",
     img: `${LOCAL_WORD_IMAGES}/spoon.webp`,
   },
   {
     id: "spatula",
     label: "Spatula",
-    phonetic: "ˈspætʃələ", // Using label as phonetic placeholder
+    phonetic: "ˈspætʃələ",
     topic: "utensils-tools",
-    description: "A kitchen item known as spatula.", // Needs manual/AI description
+    description: "A flat handheld tool used to lift, turn, or spread ingredients.",
     img: `${LOCAL_WORD_IMAGES}/spatula.webp`,
   },
   {
     id: "ladle",
     label: "Ladle",
-    phonetic: "ˈleɪdəl", // Using label as phonetic placeholder
+    phonetic: "ˈleɪdəl",
     topic: "utensils-tools",
-    description: "A kitchen item known as ladle.", // Needs manual/AI description
+    description: "A long-handled tool with a deep rounded end for serving soup.",
     img: `${LOCAL_WORD_IMAGES}/ladle.webp`,
   },
   {
     id: "whisk",
     label: "Whisk",
-    phonetic: "wɪsk", // Using label as phonetic placeholder
+    phonetic: "wɪsk",
     topic: "utensils-tools",
-    description: "A kitchen item known as whisk.", // Needs manual/AI description
+    description: "A wire kitchen tool used to beat ingredients and add air.",
     img: `${LOCAL_WORD_IMAGES}/whisk.webp`,
   },
   {
     id: "tongs",
     label: "Tongs",
-    phonetic: "tɑŋz", // Using label as phonetic placeholder
+    phonetic: "tɑŋz",
     topic: "utensils-tools",
-    description: "A kitchen item known as tongs.", // Needs manual/AI description
+    description: "A hinged tool with two arms used to grip and lift hot ingredients.",
     img: `${LOCAL_WORD_IMAGES}/tongs.webp`,
   },
   {
     id: "peeler",
     label: "Peeler",
-    phonetic: "ˈpilɚ", // Using label as phonetic placeholder
+    phonetic: "ˈpilɚ",
     topic: "utensils-tools",
-    description: "A kitchen item known as peeler.", // Needs manual/AI description
+    description: "A handheld tool with a narrow blade that removes skin from vegetables.",
     img: `${LOCAL_WORD_IMAGES}/peeler.webp`,
   },
   {
     id: "grater",
     label: "Grater",
-    phonetic: "ˈgɹeɪtɚ", // Using label as phonetic placeholder
+    phonetic: "ˈgɹeɪtɚ",
     topic: "utensils-tools",
-    description: "A kitchen item known as grater.", // Needs manual/AI description
+    description: "A rough metal tool with sharp holes that shreds ingredients into small pieces.",
     img: `${LOCAL_WORD_IMAGES}/grater.webp`,
   },
   {
     id: "rolling-pin",
     label: "Rolling Pin",
-    phonetic: "ˈɹoʊlɪŋ pɪn", // Using label as phonetic placeholder
+    phonetic: "ˈɹoʊlɪŋ pɪn",
     topic: "utensils-tools",
-    description: "A kitchen item known as rolling pin.", // Needs manual/AI description
+    description: "A smooth cylinder used to flatten dough evenly.",
     img: `${LOCAL_WORD_IMAGES}/rolling-pin.webp`,
   },
   {
     id: "can-opener",
     label: "Can Opener",
-    phonetic: "kæn ˈoʊpənɚ", // Using label as phonetic placeholder
+    phonetic: "kæn ˈoʊpənɚ",
     topic: "utensils-tools",
-    description: "A kitchen item known as can opener.", // Needs manual/AI description
+    description: "A handheld tool that cuts around the metal lid of a sealed tin.",
     img: `${LOCAL_WORD_IMAGES}/can-opener.webp`,
   },
   {
     id: "corkscrew",
     label: "Corkscrew",
-    phonetic: "ˈkɔɹkˌskɹu", // Using label as phonetic placeholder
+    phonetic: "ˈkɔɹkˌskɹu",
     topic: "utensils-tools",
-    description: "A kitchen item known as corkscrew.", // Needs manual/AI description
+    description: "A spiral metal tool used to pull a stopper from a bottle.",
     img: `${LOCAL_WORD_IMAGES}/corkscrew.webp`,
   },
   {
     id: "plate",
     label: "Plate",
-    phonetic: "pleɪt", // Using label as phonetic placeholder
+    phonetic: "pleɪt",
     topic: "dishes-containers",
-    description: "A kitchen item known as plate.", // Needs manual/AI description
+    description: "A flat round item used for serving a meal.",
     img: `${LOCAL_WORD_IMAGES}/plate.webp`,
   },
   {
     id: "bowl",
     label: "Bowl",
-    phonetic: "boʊl", // Using label as phonetic placeholder
+    phonetic: "boʊl",
     topic: "dishes-containers",
-    description: "A kitchen item known as bowl.", // Needs manual/AI description
+    description: "A deep round item used for serving soup, cereal, or salad.",
     img: `${LOCAL_WORD_IMAGES}/bowl.webp`,
   },
   {
     id: "mug",
     label: "Mug",
-    phonetic: "mʌg", // Using label as phonetic placeholder
+    phonetic: "mʌg",
     topic: "dishes-containers",
-    description: "A kitchen item known as mug.", // Needs manual/AI description
+    description: "A sturdy drinking vessel with a handle, often used for hot drinks.",
     img: `${LOCAL_WORD_IMAGES}/mug.webp`,
   },
   {
     id: "glass",
     label: "Glass",
-    phonetic: "glæs", // Using label as phonetic placeholder
+    phonetic: "glæs",
     topic: "dishes-containers",
-    description: "A kitchen item known as glass.", // Needs manual/AI description
+    description: "A clear drinking vessel without a handle.",
     img: `${LOCAL_WORD_IMAGES}/glass.webp`,
   },
   {
     id: "cup",
     label: "Cup",
-    phonetic: "kʌp", // Using label as phonetic placeholder
+    phonetic: "kʌp",
     topic: "dishes-containers",
-    description: "A kitchen item known as cup.", // Needs manual/AI description
+    description: "A small drinking vessel, usually with a handle.",
     img: `${LOCAL_WORD_IMAGES}/cup.webp`,
   },
   {
     id: "saucer",
     label: "Saucer",
-    phonetic: "ˈsɔsɚ", // Using label as phonetic placeholder
+    phonetic: "ˈsɔsɚ",
     topic: "dishes-containers",
-    description: "A kitchen item known as saucer.", // Needs manual/AI description
+    description: "A small shallow item placed beneath a drinking vessel.",
     img: `${LOCAL_WORD_IMAGES}/saucer.webp`,
   },
   {
     id: "cutting-board",
     label: "Cutting Board",
-    phonetic: "ˈkʌtɪŋ bɔɹd", // Using label as phonetic placeholder
+    phonetic: "ˈkʌtɪŋ bɔɹd",
     topic: "dishes-containers",
-    description: "A kitchen item known as cutting board.", // Needs manual/AI description
+    description: "A flat protective surface used when chopping ingredients.",
     img: `${LOCAL_WORD_IMAGES}/cutting-board.webp`,
   },
   {
     id: "colander",
     label: "Colander",
-    phonetic: "ˈkɑləndɚ", // Using label as phonetic placeholder
+    phonetic: "ˈkɑləndɚ",
     topic: "dishes-containers",
-    description: "A kitchen item known as colander.", // Needs manual/AI description
+    description: "A deep container with many holes, used to drain water from ingredients.",
     img: `${LOCAL_WORD_IMAGES}/colander.webp`,
   },
   {
     id: "measuring-cup",
     label: "Measuring Cup",
-    phonetic: "ˈmɛʒɚɪŋ kʌp", // Using label as phonetic placeholder
+    phonetic: "ˈmɛʒɚɪŋ kʌp",
     topic: "dishes-containers",
-    description: "A kitchen item known as measuring cup.", // Needs manual/AI description
+    description: "A marked vessel used to check the volume of liquid or dry ingredients.",
     img: `${LOCAL_WORD_IMAGES}/measuring-cup.webp`,
   },
   {
     id: "measuring-spoon",
     label: "Measuring Spoon",
-    phonetic: "ˈmɛʒɚɪŋ spun", // Using label as phonetic placeholder
+    phonetic: "ˈmɛʒɚɪŋ spun",
     topic: "dishes-containers",
-    description: "A kitchen item known as measuring spoon.", // Needs manual/AI description
+    description: "A small marked utensil used to check an exact amount of an ingredient.",
     img: `${LOCAL_WORD_IMAGES}/measuring-spoon.webp`,
   },
   {
     id: "mixing-bowl",
     label: "Mixing Bowl",
-    phonetic: "ˈmɪksɪŋ boʊl", // Using label as phonetic placeholder
+    phonetic: "ˈmɪksɪŋ boʊl",
     topic: "dishes-containers",
-    description: "A kitchen item known as mixing bowl.", // Needs manual/AI description
+    description: "A large deep container used to combine ingredients before cooking.",
     img: `${LOCAL_WORD_IMAGES}/mixing-bowl.webp`,
   },
   {
     id: "pitcher",
     label: "Pitcher",
-    phonetic: "ˈpɪtʃɚ", // Using label as phonetic placeholder
+    phonetic: "ˈpɪtʃɚ",
     topic: "dishes-containers",
-    description: "A kitchen item known as pitcher.", // Needs manual/AI description
+    description: "A large vessel with a handle and spout for serving drinks.",
     img: `${LOCAL_WORD_IMAGES}/pitcher.webp`,
   },
   {
     id: "dish-towel",
     label: "Dish Towel",
-    phonetic: "dɪʃ ˈtaʊəl", // Using label as phonetic placeholder
+    phonetic: "dɪʃ ˈtaʊəl",
     topic: "kitchen-items",
-    description: "A kitchen item known as dish towel.", // Needs manual/AI description
+    description: "A reusable cloth used to dry plates, cups, and kitchen surfaces.",
     img: `${LOCAL_WORD_IMAGES}/dish-towel.webp`,
   },
   {
     id: "oven-mitt",
     label: "Oven Mitt",
-    phonetic: "ˈʌvən mɪt", // Using label as phonetic placeholder
+    phonetic: "ˈʌvən mɪt",
     topic: "kitchen-items",
-    description: "A kitchen item known as oven mitt.", // Needs manual/AI description
+    description: "A thick protective glove used when holding hot cookware.",
     img: `${LOCAL_WORD_IMAGES}/oven-mitt.webp`,
   },
   {
     id: "apron",
     label: "Apron",
-    phonetic: "ˈeɪpɹən", // Using label as phonetic placeholder
+    phonetic: "ˈeɪpɹən",
     topic: "kitchen-items",
-    description: "A kitchen item known as apron.", // Needs manual/AI description
+    description: "A protective garment tied over clothes while preparing meals.",
     img: `${LOCAL_WORD_IMAGES}/apron.webp`,
   },
   {
     id: "trash-can",
     label: "Trash Can",
-    phonetic: "tɹæʃ kæn", // Using label as phonetic placeholder
+    phonetic: "tɹæʃ kæn",
     topic: "kitchen-items",
-    description: "A kitchen item known as trash can.", // Needs manual/AI description
+    description: "A container that holds waste until it is removed.",
     img: `${LOCAL_WORD_IMAGES}/trash-can.webp`,
   },
   {
     id: "paper-towel",
     label: "Paper Towel",
-    phonetic: "ˈpeɪpɚ ˈtaʊəl", // Using label as phonetic placeholder
+    phonetic: "ˈpeɪpɚ ˈtaʊəl",
     topic: "kitchen-items",
-    description: "A kitchen item known as paper towel.", // Needs manual/AI description
+    description: "A disposable absorbent sheet used to wipe spills.",
     img: `${LOCAL_WORD_IMAGES}/paper-towel.webp`,
   },
   {
     id: "plastic-wrap",
     label: "Plastic Wrap",
-    phonetic: "ˈplæstɪk ɹæp", // Using label as phonetic placeholder
+    phonetic: "ˈplæstɪk ɹæp",
     topic: "kitchen-items",
-    description: "A kitchen item known as plastic wrap.", // Needs manual/AI description
+    description: "A thin transparent sheet that covers and protects leftovers.",
     img: `${LOCAL_WORD_IMAGES}/plastic-wrap.webp`,
   },
   {
     id: "aluminum-foil",
     label: "Aluminum Foil",
-    phonetic: "əˈlumənəm fɔɪl", // Using label as phonetic placeholder
+    phonetic: "əˈlumənəm fɔɪl",
     topic: "kitchen-items",
-    description: "A kitchen item known as aluminum foil.", // Needs manual/AI description
+    description: "A thin flexible metal sheet used to cover or cook ingredients.",
     img: `${LOCAL_WORD_IMAGES}/aluminum-foil.webp`,
   },
   {
     id: "food-container",
     label: "Food Container",
-    phonetic: "fud kənˈteɪnɚ", // Using label as phonetic placeholder
+    phonetic: "fud kənˈteɪnɚ",
     topic: "kitchen-items",
-    description: "A kitchen item known as food container.", // Needs manual/AI description
+    description: "A reusable box with a lid that stores leftovers safely.",
     img: `${LOCAL_WORD_IMAGES}/food-container.webp`,
   },
   {
     id: "sponge",
     label: "Sponge",
-    phonetic: "spʌndʒ", // Using label as phonetic placeholder
+    phonetic: "spʌndʒ",
     topic: "kitchen-items",
-    description: "A kitchen item known as sponge.", // Needs manual/AI description
+    description: "A soft absorbent cleaning item used with water.",
     img: `${LOCAL_WORD_IMAGES}/sponge.webp`,
   },
   {
     id: "dish-soap",
     label: "Dish Soap",
-    phonetic: "dɪʃ soʊp", // Using label as phonetic placeholder
+    phonetic: "dɪʃ soʊp",
     topic: "kitchen-items",
-    description: "A kitchen item known as dish soap.", // Needs manual/AI description
+    description: "A liquid cleaner used to remove grease from plates and cookware.",
     img: `${LOCAL_WORD_IMAGES}/dish-soap.webp`,
   },
   {
     id: "dish-rack",
     label: "Dish Rack",
-    phonetic: "dɪʃ ɹæk", // Using label as phonetic placeholder
+    phonetic: "dɪʃ ɹæk",
     topic: "kitchen-items",
-    description: "A kitchen item known as dish rack.", // Needs manual/AI description
+    description: "A raised holder where washed plates and cups stand while drying.",
     img: `${LOCAL_WORD_IMAGES}/dish-rack.webp`,
   },
   {
     id: "cling-film",
     label: "Cling Film",
-    phonetic: "klɪŋ fɪlm", // Using label as phonetic placeholder
+    phonetic: "klɪŋ fɪlm",
     topic: "kitchen-items",
-    description: "A kitchen item known as cling film.", // Needs manual/AI description
+    description: "A thin clear sheet that sticks around leftovers to keep them fresh.",
     img: `${LOCAL_WORD_IMAGES}/cling-film.webp`,
   },
   {
     id: "bread",
     label: "Bread",
-    phonetic: "bɹɛd", // Using label as phonetic placeholder
+    phonetic: "bɹɛd",
     topic: "basic-pantry",
-    description: "A kitchen item known as bread.", // Needs manual/AI description
+    description: "A baked staple made from dough, commonly sliced for sandwiches.",
     img: `${LOCAL_WORD_IMAGES}/bread.webp`,
   },
   {
     id: "butter",
     label: "Butter",
-    phonetic: "ˈbʌtɚ", // Using label as phonetic placeholder
+    phonetic: "ˈbʌtɚ",
     topic: "basic-pantry",
-    description: "A kitchen item known as butter.", // Needs manual/AI description
+    description: "A soft yellow dairy product spread on toast or used in cooking.",
     img: `${LOCAL_WORD_IMAGES}/butter.webp`,
   },
   {
     id: "milk",
     label: "Milk",
-    phonetic: "mɪlk", // Using label as phonetic placeholder
+    phonetic: "mɪlk",
     topic: "basic-pantry",
-    description: "A kitchen item known as milk.", // Needs manual/AI description
+    description: "A white dairy drink that is also used in cereal and cooking.",
     img: `${LOCAL_WORD_IMAGES}/milk.webp`,
   },
   {
     id: "egg",
     label: "Egg",
-    phonetic: "ɛg", // Using label as phonetic placeholder
+    phonetic: "ɛg",
     topic: "basic-pantry",
-    description: "A kitchen item known as egg.", // Needs manual/AI description
+    description: "An oval food with a shell, white, and yellow center.",
     img: `${LOCAL_WORD_IMAGES}/egg.webp`,
   },
   {
     id: "cheese",
     label: "Cheese",
-    phonetic: "tʃiz", // Using label as phonetic placeholder
+    phonetic: "tʃiz",
     topic: "basic-pantry",
-    description: "A kitchen item known as cheese.", // Needs manual/AI description
+    description: "A solid dairy product available in slices, blocks, or grated pieces.",
     img: `${LOCAL_WORD_IMAGES}/cheese.webp`,
   },
   {
     id: "rice",
     label: "Rice",
-    phonetic: "ɹaɪs", // Using label as phonetic placeholder
+    phonetic: "ɹaɪs",
     topic: "basic-pantry",
-    description: "A kitchen item known as rice.", // Needs manual/AI description
+    description: "Small pale grains that become soft when boiled.",
     img: `${LOCAL_WORD_IMAGES}/rice.webp`,
   },
   {
     id: "pasta",
     label: "Pasta",
-    phonetic: "ˈpɑstə", // Using label as phonetic placeholder
+    phonetic: "ˈpɑstə",
     topic: "basic-pantry",
-    description: "A kitchen item known as pasta.", // Needs manual/AI description
+    description: "A dough-based food shaped into noodles, tubes, or other forms.",
     img: `${LOCAL_WORD_IMAGES}/pasta.webp`,
   },
   {
     id: "cooking-oil",
     label: "Cooking Oil",
-    phonetic: "ˈkʊkɪŋ ɔɪl", // Using label as phonetic placeholder
+    phonetic: "ˈkʊkɪŋ ɔɪl",
     topic: "basic-pantry",
-    description: "A kitchen item known as cooking oil.", // Needs manual/AI description
+    description: "A smooth liquid fat used to fry or prepare ingredients.",
     img: `${LOCAL_WORD_IMAGES}/cooking-oil.webp`,
   },
   {
     id: "salt",
     label: "Salt",
-    phonetic: "sɔlt", // Using label as phonetic placeholder
+    phonetic: "sɔlt",
     topic: "basic-pantry",
-    description: "A kitchen item known as salt.", // Needs manual/AI description
+    description: "Fine white crystals added in small amounts to make meals more savory.",
     img: `${LOCAL_WORD_IMAGES}/salt.webp`,
   },
   {
     id: "sugar",
     label: "Sugar",
-    phonetic: "ˈʃʊgɚ", // Using label as phonetic placeholder
+    phonetic: "ˈʃʊgɚ",
     topic: "basic-pantry",
-    description: "A kitchen item known as sugar.", // Needs manual/AI description
+    description: "Sweet white or brown crystals used in drinks and desserts.",
     img: `${LOCAL_WORD_IMAGES}/sugar.webp`,
   },
   {
     id: "pepper",
     label: "Pepper",
-    phonetic: "ˈpɛpɚ", // Using label as phonetic placeholder
+    phonetic: "ˈpɛpɚ",
     topic: "basic-pantry",
-    description: "A kitchen item known as pepper.", // Needs manual/AI description
+    description: "A dark ground spice added in small amounts for a sharp flavor.",
     img: `${LOCAL_WORD_IMAGES}/pepper.webp`,
   },
   {
     id: "flour",
     label: "Flour",
-    phonetic: "ˈflaʊɚ", // Using label as phonetic placeholder
+    phonetic: "ˈflaʊɚ",
     topic: "basic-pantry",
-    description: "A kitchen item known as flour.", // Needs manual/AI description
+    description: "A fine pale powder made from grain and used to make dough.",
     img: `${LOCAL_WORD_IMAGES}/flour.webp`,
   },
   {
     id: "vinegar",
     label: "Vinegar",
-    phonetic: "ˈvɪnəgɚ", // Using label as phonetic placeholder
+    phonetic: "ˈvɪnəgɚ",
     topic: "basic-pantry",
-    description: "A kitchen item known as vinegar.", // Needs manual/AI description
+    description: "A sharp sour liquid used in dressings, sauces, and preserving.",
     img: `${LOCAL_WORD_IMAGES}/vinegar.webp`,
   },
   {
     id: "honey",
     label: "Honey",
-    phonetic: "ˈhʌni", // Using label as phonetic placeholder
+    phonetic: "ˈhʌni",
     topic: "basic-pantry",
-    description: "A kitchen item known as honey.", // Needs manual/AI description
-    img: `${LOCAL_WORD_IMAGES}/honey.webp`,
+    description: "A thick sweet golden liquid made by bees.",
+    img: `${LOCAL_WORD_IMAGES}/farm/honey.webp`,
   },
 ];
-
 
 export const LIVING_ROOM_TOPICS: TopicCategory[] = [
   {
@@ -1261,49 +1414,120 @@ export const LIVING_ROOM_GROUPS: Lesson[] = [
     id: "seating-tables",
     name: "Seating & Tables",
     topicId: "seating-tables",
-    wordIds: ['sofa','armchair','coffee-table','side-table','ottoman','rocking-chair','dining-table','dining-chair','bench','stool'],
+    wordIds: [
+      "sofa",
+      "armchair",
+      "coffee-table",
+      "side-table",
+      "ottoman",
+      "rocking-chair",
+      "dining-table",
+      "dining-chair",
+      "bench",
+      "stool",
+    ],
     description: "Learn about seating & tables.",
-    story: undefined
+    story:
+      "The family relaxed on the sofa and armchair beside the coffee table and side table. A guest rested his feet on the ottoman while Grandma used the rocking chair. At dinner, everyone moved to the dining table and dining chair, while two children shared a bench and another sat on a stool.",
   },
   {
     id: "storage-display",
     name: "Storage & Display",
     topicId: "storage-display",
-    wordIds: ['bookshelf','tv-stand','cabinet','sideboard','shelf','drawer','magazine-rack','display-case','coat-rack','shoe-rack'],
+    wordIds: [
+      "bookshelf",
+      "tv-stand",
+      "cabinet",
+      "sideboard",
+      "shelf",
+      "drawer",
+      "magazine-rack",
+      "display-case",
+      "coat-rack",
+      "shoe-rack",
+    ],
     description: "Learn about storage & display.",
-    story: "In the Seating & Tables lesson, we learned about some very useful things. For example, we saw the sofa and the armchair. We also explored how the coffee-table works. Finally, we looked at the side-table and the ottoman to complete our understanding."
+    story:
+      "Books stood on the bookshelf above the TV stand and cabinet. Plates filled the sideboard, and a small shelf held a labeled drawer. A magazine rack stood beside the display case. Near the door, coats hung on the coat rack and shoes rested on the shoe rack.",
   },
   {
     id: "electronics-media",
     name: "Electronics & Media",
     topicId: "electronics-media",
-    wordIds: ['television','remote-control','speaker','game-console','dvd-player','sound-bar','wi-fi-router','power-strip','cable','plug'],
+    wordIds: [
+      "television",
+      "remote-control",
+      "speaker",
+      "game-console",
+      "dvd-player",
+      "sound-bar",
+      "wi-fi-router",
+      "power-strip",
+      "cable",
+      "plug",
+    ],
     description: "Learn about electronics & media.",
-    story: undefined
+    story:
+      "The television sat above a game console and DVD player. A remote control changed the program, while a speaker and sound bar played the audio. The Wi-Fi router connected the room, and a power strip held each cable and plug safely.",
   },
   {
     id: "lighting-decor",
     name: "Lighting & Decor",
     topicId: "lighting-decor",
-    wordIds: ['floor-lamp','table-lamp','ceiling-light','chandelier','light-bulb','candle','candle-holder','string-lights','picture-frame','wall-clock'],
+    wordIds: [
+      "floor-lamp",
+      "table-lamp",
+      "ceiling-light",
+      "chandelier",
+      "light-bulb",
+      "candle",
+      "candle-holder",
+      "string-lights",
+      "picture-frame",
+      "wall-clock",
+    ],
     description: "Learn about lighting & decor.",
-    story: "In the Electronics & Media lesson, we learned about some very useful things. For example, we saw the television and the remote-control. We also explored how the speaker works. Finally, we looked at the game-console and the dvd-player to complete our understanding."
+    story:
+      "A floor lamp stood beside the sofa, and a table lamp lit the reading corner. The ceiling light and chandelier brightened the room with a new light bulb. A candle rested in a candle holder below the string lights, while a picture frame and wall clock decorated the wall.",
   },
   {
     id: "soft-furnishings",
     name: "Soft & Furnishings",
     topicId: "soft-furnishings",
-    wordIds: ['cushion','throw-blanket','rug','carpet','curtain','tablecloth','placemat','coaster','doormat','tapestry'],
+    wordIds: [
+      "cushion",
+      "throw-blanket",
+      "rug",
+      "carpet",
+      "curtain",
+      "tablecloth",
+      "placemat",
+      "coaster",
+      "doormat",
+      "tapestry",
+    ],
     description: "Learn about soft & furnishings.",
-    story: undefined
+    story:
+      "A cushion and throw blanket made the sofa comfortable. A rug covered part of the carpet near the curtain. The dining table had a tablecloth, a placemat, and a coaster. A doormat lay by the entrance, and a tapestry added color to the wall.",
   },
   {
     id: "living-room-objects",
     name: "Living Room Objects",
     topicId: "living-room-objects",
-    wordIds: ['plant','vase','photo-frame','painting','book','magazine','newspaper','board-game','puzzle'],
+    wordIds: [
+      "plant",
+      "vase",
+      "photo-frame",
+      "painting",
+      "book",
+      "magazine",
+      "newspaper",
+      "board-game",
+      "puzzle",
+    ],
     description: "Learn about living room objects.",
-    story: "In the Soft & Furnishings lesson, we learned about some very useful things. For example, we saw the cushion and the throw-blanket. We also explored how the rug works. Finally, we looked at the carpet and the curtain to complete our understanding."
+    story:
+      "A plant and vase stood below a photo frame and painting. A book, magazine, and newspaper rested on the table. The family chose a board game, then finished a puzzle together.",
   },
 ];
 
@@ -1314,7 +1538,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈsəʊfə",
     img: `${LOCAL_WORD_IMAGES}/living-room/sofa.webp`,
     topic: "seating-tables",
-    description: "An object found in the living room.",
+    description: "A long upholstered seat with space for two or more people.",
   },
   {
     id: "armchair",
@@ -1322,7 +1546,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈɑɹmˌtʃɛɹ",
     img: `${LOCAL_WORD_IMAGES}/living-room/armchair.webp`,
     topic: "seating-tables",
-    description: "An object found in the living room.",
+    description: "A comfortable padded seat with arms, designed for one person.",
   },
   {
     id: "coffee-table",
@@ -1330,7 +1554,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈkɑfi ˈteɪbəl",
     img: `${LOCAL_WORD_IMAGES}/living-room/coffee-table.webp`,
     topic: "seating-tables",
-    description: "An object found in the living room.",
+    description: "A low surface placed in front of a couch for drinks and small items.",
   },
   {
     id: "side-table",
@@ -1338,7 +1562,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "saɪd ˈteɪbəl",
     img: `${LOCAL_WORD_IMAGES}/living-room/side-table.webp`,
     topic: "seating-tables",
-    description: "An object found in the living room.",
+    description: "A small surface placed beside a seat for a lamp or drink.",
   },
   {
     id: "ottoman",
@@ -1346,7 +1570,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈɑtəmən",
     img: `${LOCAL_WORD_IMAGES}/living-room/ottoman.webp`,
     topic: "seating-tables",
-    description: "An object found in the living room.",
+    description: "A low padded piece used as a seat or a place to rest your feet.",
   },
   {
     id: "rocking-chair",
@@ -1354,7 +1578,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈɹɑkɪŋ tʃɛɹ",
     img: `${LOCAL_WORD_IMAGES}/living-room/rocking-chair.webp`,
     topic: "seating-tables",
-    description: "An object found in the living room.",
+    description: "A seat on curved runners that moves gently backward and forward.",
   },
   {
     id: "dining-table",
@@ -1362,7 +1586,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈdaɪnɪŋ(ɡ) ˈteɪbəl",
     img: `${LOCAL_WORD_IMAGES}/living-room/dining-table.webp`,
     topic: "seating-tables",
-    description: "An object found in the living room.",
+    description: "A large raised surface where people sit together to eat meals.",
   },
   {
     id: "dining-chair",
@@ -1370,7 +1594,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈdaɪnɪŋ(ɡ) t͡ʃɛə(ɹ)",
     img: `${LOCAL_WORD_IMAGES}/living-room/dining-chair.webp`,
     topic: "seating-tables",
-    description: "An object found in the living room.",
+    description: "An upright single seat used beside the place where meals are served.",
   },
   {
     id: "bench",
@@ -1378,7 +1602,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "bɛntʃ",
     img: `${LOCAL_WORD_IMAGES}/living-room/bench.webp`,
     topic: "seating-tables",
-    description: "An object found in the living room.",
+    description: "A long simple seat that can hold several people.",
   },
   {
     id: "stool",
@@ -1386,7 +1610,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "stuːl",
     img: `${LOCAL_WORD_IMAGES}/living-room/stool.webp`,
     topic: "seating-tables",
-    description: "An object found in the living room.",
+    description: "A small backless seat supported by three or four legs.",
   },
   {
     id: "bookshelf",
@@ -1394,7 +1618,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈbʊkˌʃɛlf",
     img: `${LOCAL_WORD_IMAGES}/living-room/bookshelf.webp`,
     topic: "storage-display",
-    description: "An object found in the living room.",
+    description: "A tall open piece of furniture with levels for storing books.",
   },
   {
     id: "tv-stand",
@@ -1402,7 +1626,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ti-vi stænd",
     img: `${LOCAL_WORD_IMAGES}/living-room/tv-stand.webp`,
     topic: "storage-display",
-    description: "An object found in the living room.",
+    description: "A low cabinet designed to support a television and media devices.",
   },
   {
     id: "cabinet",
@@ -1410,7 +1634,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈkæbənət",
     img: `${LOCAL_WORD_IMAGES}/living-room/cabinet.webp`,
     topic: "storage-display",
-    description: "An object found in the living room.",
+    description: "A storage cupboard with doors and shelves inside.",
   },
   {
     id: "sideboard",
@@ -1418,7 +1642,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈsaɪdˌbɔɹd",
     img: `${LOCAL_WORD_IMAGES}/living-room/sideboard.webp`,
     topic: "storage-display",
-    description: "An object found in the living room.",
+    description: "A long low storage cupboard used for dishes and serving items.",
   },
   {
     id: "shelf",
@@ -1426,7 +1650,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ʃɛlf",
     img: `${LOCAL_WORD_IMAGES}/living-room/shelf.webp`,
     topic: "storage-display",
-    description: "An object found in the living room.",
+    description: "A flat horizontal surface attached to a wall or furniture for storage.",
   },
   {
     id: "drawer",
@@ -1434,7 +1658,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "dɹɔː(ɹ)",
     img: `${LOCAL_WORD_IMAGES}/living-room/drawer.webp`,
     topic: "storage-display",
-    description: "An object found in the living room.",
+    description: "A sliding storage compartment built into a piece of furniture.",
   },
   {
     id: "magazine-rack",
@@ -1442,7 +1666,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "mæɡəˈziːn ɹæk",
     img: `${LOCAL_WORD_IMAGES}/living-room/magazine-rack.webp`,
     topic: "storage-display",
-    description: "An object found in the living room.",
+    description: "A narrow holder that keeps periodicals upright and organized.",
   },
   {
     id: "display-case",
@@ -1450,7 +1674,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "dɪsˈpleɪ keɪs",
     img: `${LOCAL_WORD_IMAGES}/living-room/display-case.webp`,
     topic: "storage-display",
-    description: "An object found in the living room.",
+    description: "A glass-fronted cabinet that protects objects while keeping them visible.",
   },
   {
     id: "coat-rack",
@@ -1458,7 +1682,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "koʊt ɹæk",
     img: `${LOCAL_WORD_IMAGES}/living-room/coat-rack.webp`,
     topic: "storage-display",
-    description: "An object found in the living room.",
+    description: "A tall frame with hooks for hanging jackets near an entrance.",
   },
   {
     id: "shoe-rack",
@@ -1466,7 +1690,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ʃuː ɹæk",
     img: `${LOCAL_WORD_IMAGES}/living-room/shoe-rack.webp`,
     topic: "storage-display",
-    description: "An object found in the living room.",
+    description: "An open tiered holder that keeps footwear organized.",
   },
   {
     id: "television",
@@ -1474,7 +1698,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈtɛləˌvɪʒən",
     img: `${LOCAL_WORD_IMAGES}/living-room/television.webp`,
     topic: "electronics-media",
-    description: "An object found in the living room.",
+    description: "A screen that shows programs, films, and other video.",
   },
   {
     id: "remote-control",
@@ -1482,7 +1706,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ɹɪˈmoʊt kənˈtɹoʊl",
     img: `${LOCAL_WORD_IMAGES}/living-room/remote-control.webp`,
     topic: "electronics-media",
-    description: "An object found in the living room.",
+    description: "A handheld device with buttons that operates electronics from a distance.",
   },
   {
     id: "speaker",
@@ -1490,7 +1714,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈspikɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/speaker.webp`,
     topic: "electronics-media",
-    description: "An object found in the living room.",
+    description: "A box-shaped device that plays sound aloud.",
   },
   {
     id: "game-console",
@@ -1498,7 +1722,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "geɪm kənˈsoʊl",
     img: `${LOCAL_WORD_IMAGES}/living-room/game-console.webp`,
     topic: "electronics-media",
-    description: "An object found in the living room.",
+    description: "An electronic device connected to a screen for interactive digital play.",
   },
   {
     id: "dvd-player",
@@ -1506,7 +1730,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "di-vi-di ˈpleɪɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/dvd-player.webp`,
     topic: "electronics-media",
-    description: "An object found in the living room.",
+    description: "An electronic device that reads movie discs and sends video to a screen.",
   },
   {
     id: "sound-bar",
@@ -1514,7 +1738,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "saʊnd bɑɹ",
     img: `${LOCAL_WORD_IMAGES}/living-room/sound-bar.webp`,
     topic: "electronics-media",
-    description: "An object found in the living room.",
+    description: "A long narrow audio device placed below a television.",
   },
   {
     id: "wi-fi-router",
@@ -1522,7 +1746,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "waɪ-faɪ ˈɹaʊtɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/wi-fi-router.webp`,
     topic: "electronics-media",
-    description: "An object found in the living room.",
+    description: "A small electronic box that shares an internet connection wirelessly.",
   },
   {
     id: "power-strip",
@@ -1530,7 +1754,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈpaʊɚ stɹɪp",
     img: `${LOCAL_WORD_IMAGES}/living-room/power-strip.webp`,
     topic: "electronics-media",
-    description: "An object found in the living room.",
+    description: "A long electrical block with several sockets for multiple devices.",
   },
   {
     id: "cable",
@@ -1538,7 +1762,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈkeɪbəl",
     img: `${LOCAL_WORD_IMAGES}/living-room/cable.webp`,
     topic: "electronics-media",
-    description: "An object found in the living room.",
+    description: "A flexible covered wire that carries electricity or electronic signals.",
   },
   {
     id: "plug",
@@ -1546,7 +1770,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "plʌg",
     img: `${LOCAL_WORD_IMAGES}/living-room/plug.webp`,
     topic: "electronics-media",
-    description: "An object found in the living room.",
+    description: "The end of an electrical cord with metal pins that fits into a socket.",
   },
   {
     id: "floor-lamp",
@@ -1554,7 +1778,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "flɔɹ læmp",
     img: `${LOCAL_WORD_IMAGES}/living-room/floor-lamp.webp`,
     topic: "lighting-decor",
-    description: "An object found in the living room.",
+    description: "A tall freestanding light with its base on the ground.",
   },
   {
     id: "table-lamp",
@@ -1562,7 +1786,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈteɪbəl læmp",
     img: `${LOCAL_WORD_IMAGES}/living-room/table-lamp.webp`,
     topic: "lighting-decor",
-    description: "An object found in the living room.",
+    description: "A small portable light designed to sit on a raised surface.",
   },
   {
     id: "ceiling-light",
@@ -1570,7 +1794,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈsilɪŋ laɪt",
     img: `${LOCAL_WORD_IMAGES}/living-room/ceiling-light.webp`,
     topic: "lighting-decor",
-    description: "An object found in the living room.",
+    description: "An overhead fixture that brightens the room from above.",
   },
   {
     id: "chandelier",
@@ -1578,7 +1802,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˌʃændəˈlɪɹ",
     img: `${LOCAL_WORD_IMAGES}/living-room/chandelier.webp`,
     topic: "lighting-decor",
-    description: "An object found in the living room.",
+    description: "A decorative hanging fixture with several branches and bulbs.",
   },
   {
     id: "light-bulb",
@@ -1586,7 +1810,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "laɪt bʌlb",
     img: `${LOCAL_WORD_IMAGES}/living-room/light-bulb.webp`,
     topic: "lighting-decor",
-    description: "An object found in the living room.",
+    description: "A glass electrical globe that produces brightness inside a fixture.",
   },
   {
     id: "candle",
@@ -1594,7 +1818,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "candle",
     img: `${LOCAL_WORD_IMAGES}/living-room/candle.webp`,
     topic: "lighting-decor",
-    description: "An object found in the living room.",
+    description: "A wax cylinder with a wick that burns to provide a small flame.",
   },
   {
     id: "candle-holder",
@@ -1602,7 +1826,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈkændəl ˈhoʊldɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/candle-holder.webp`,
     topic: "lighting-decor",
-    description: "An object found in the living room.",
+    description: "A protective base that keeps a wax light upright.",
   },
   {
     id: "string-lights",
@@ -1610,7 +1834,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "stɹɪŋ laɪts",
     img: `${LOCAL_WORD_IMAGES}/living-room/string-lights.webp`,
     topic: "lighting-decor",
-    description: "An object found in the living room.",
+    description: "A row of small glowing bulbs connected along one flexible wire.",
   },
   {
     id: "picture-frame",
@@ -1618,7 +1842,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈpɪktʃɚ fɹeɪm",
     img: `${LOCAL_WORD_IMAGES}/living-room/picture-frame.webp`,
     topic: "lighting-decor",
-    description: "An object found in the living room.",
+    description: "A decorative border that holds an image upright or against a wall.",
   },
   {
     id: "wall-clock",
@@ -1626,7 +1850,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "wɔl klɑk",
     img: `${LOCAL_WORD_IMAGES}/living-room/wall-clock.webp`,
     topic: "lighting-decor",
-    description: "An object found in the living room.",
+    description: "A timekeeping device mounted vertically where everyone can see it.",
   },
   {
     id: "cushion",
@@ -1634,7 +1858,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "cushion",
     img: `${LOCAL_WORD_IMAGES}/living-room/cushion.webp`,
     topic: "soft-furnishings",
-    description: "An object found in the living room.",
+    description: "A small soft padded item used for comfort on a seat.",
   },
   {
     id: "throw-blanket",
@@ -1642,7 +1866,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "θɹoʊ ˈblæŋkɪt",
     img: `${LOCAL_WORD_IMAGES}/living-room/throw-blanket.webp`,
     topic: "soft-furnishings",
-    description: "An object found in the living room.",
+    description: "A light decorative cover placed over a couch or chair.",
   },
   {
     id: "rug",
@@ -1650,7 +1874,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "rug",
     img: `${LOCAL_WORD_IMAGES}/living-room/rug.webp`,
     topic: "soft-furnishings",
-    description: "An object found in the living room.",
+    description: "A small loose floor covering that can be moved easily.",
   },
   {
     id: "carpet",
@@ -1658,7 +1882,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "carpet",
     img: `${LOCAL_WORD_IMAGES}/living-room/carpet.webp`,
     topic: "soft-furnishings",
-    description: "An object found in the living room.",
+    description: "A soft floor covering fixed across most or all of a room.",
   },
   {
     id: "curtain",
@@ -1666,7 +1890,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈkɝtən",
     img: `${LOCAL_WORD_IMAGES}/living-room/curtain.webp`,
     topic: "soft-furnishings",
-    description: "An object found in the living room.",
+    description: "A hanging piece of fabric that covers a window.",
   },
   {
     id: "tablecloth",
@@ -1674,7 +1898,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈteɪbəlˌklɔθ",
     img: `${LOCAL_WORD_IMAGES}/living-room/tablecloth.webp`,
     topic: "soft-furnishings",
-    description: "An object found in the living room.",
+    description: "A large fabric covering spread across the surface used for meals.",
   },
   {
     id: "placemat",
@@ -1682,7 +1906,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈpleɪsˌmæt",
     img: `${LOCAL_WORD_IMAGES}/living-room/placemat.webp`,
     topic: "soft-furnishings",
-    description: "An object found in the living room.",
+    description: "A small protective mat placed beneath one person's dishes.",
   },
   {
     id: "coaster",
@@ -1690,7 +1914,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈkoʊstɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/coaster.webp`,
     topic: "soft-furnishings",
-    description: "An object found in the living room.",
+    description: "A small flat piece placed under a drink to protect furniture.",
   },
   {
     id: "doormat",
@@ -1698,7 +1922,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈdɔɹˌmæt",
     img: `${LOCAL_WORD_IMAGES}/living-room/doormat.webp`,
     topic: "soft-furnishings",
-    description: "An object found in the living room.",
+    description: "A rough floor covering at an entrance for cleaning footwear.",
   },
   {
     id: "tapestry",
@@ -1706,7 +1930,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈtæpəstɹi",
     img: `${LOCAL_WORD_IMAGES}/living-room/tapestry.webp`,
     topic: "soft-furnishings",
-    description: "An object found in the living room.",
+    description: "A decorative woven fabric artwork hung on a wall.",
   },
   {
     id: "plant",
@@ -1714,7 +1938,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "plænt",
     img: `${LOCAL_WORD_IMAGES}/living-room/plant.webp`,
     topic: "living-room-objects",
-    description: "An object found in the living room.",
+    description: "A living green organism grown indoors in a container of soil.",
   },
   {
     id: "vase",
@@ -1722,7 +1946,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "veɪs",
     img: `${LOCAL_WORD_IMAGES}/living-room/vase.webp`,
     topic: "living-room-objects",
-    description: "An object found in the living room.",
+    description: "A tall decorative container used to hold cut flowers.",
   },
   {
     id: "photo-frame",
@@ -1730,7 +1954,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈfoʊˌtoʊ fɹeɪm",
     img: `${LOCAL_WORD_IMAGES}/living-room/photo-frame.webp`,
     topic: "living-room-objects",
-    description: "An object found in the living room.",
+    description: "A border made to protect and present a printed family image.",
   },
   {
     id: "painting",
@@ -1738,7 +1962,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈpeɪntɪŋ",
     img: `${LOCAL_WORD_IMAGES}/living-room/painting.webp`,
     topic: "living-room-objects",
-    description: "An object found in the living room.",
+    description: "An artwork made with colored liquid applied to a surface.",
   },
   {
     id: "book",
@@ -1746,7 +1970,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "bʊk",
     img: `${LOCAL_WORD_IMAGES}/living-room/book.webp`,
     topic: "living-room-objects",
-    description: "An object found in the living room.",
+    description: "A bound set of printed pages read for information or enjoyment.",
   },
   {
     id: "magazine",
@@ -1754,7 +1978,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈmægəˌzin",
     img: `${LOCAL_WORD_IMAGES}/living-room/magazine.webp`,
     topic: "living-room-objects",
-    description: "An object found in the living room.",
+    description: "A thin publication with articles and photographs issued regularly.",
   },
   {
     id: "newspaper",
@@ -1762,7 +1986,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈnuzˌpeɪpɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/newspaper.webp`,
     topic: "living-room-objects",
-    description: "An object found in the living room.",
+    description: "A folded publication reporting recent events and public information.",
   },
   {
     id: "board-game",
@@ -1770,7 +1994,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "bɔɹd geɪm",
     img: `${LOCAL_WORD_IMAGES}/living-room/board-game.webp`,
     topic: "living-room-objects",
-    description: "An object found in the living room.",
+    description: "A tabletop activity played with pieces, cards, or dice on a marked surface.",
   },
   {
     id: "puzzle",
@@ -1778,454 +2002,454 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈpʌzəl",
     img: `${LOCAL_WORD_IMAGES}/living-room/puzzle.webp`,
     topic: "living-room-objects",
-    description: "An object found in the living room.",
+    description: "A game in which separate pieces are fitted together to form a complete image.",
   },
 ];
 
 export const FARM_VOCABULARY: VocabularyItem[] = [
   {
-    id: 'cow',
-    label: 'Cow',
-    phonetic: '',
+    id: "cow",
+    label: "Cow",
+    phonetic: "kaʊ",
     img: `${LOCAL_WORD_IMAGES}/farm/cow.webp`,
-    topic: 'farm-farm-animals',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-animals",
+    description: "A large female farm animal raised for dairy products and meat.",
   },
   {
-    id: 'pig',
-    label: 'Pig',
-    phonetic: '',
+    id: "pig",
+    label: "Pig",
+    phonetic: "pɪɡ",
     img: `${LOCAL_WORD_IMAGES}/farm/pig.webp`,
-    topic: 'farm-farm-animals',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-animals",
+    description: "A sturdy pink or dark farm animal with a broad snout and curled tail.",
   },
   {
-    id: 'sheep',
-    label: 'Sheep',
-    phonetic: '',
+    id: "sheep",
+    label: "Sheep",
+    phonetic: "ʃiːp",
     img: `${LOCAL_WORD_IMAGES}/farm/sheep.webp`,
-    topic: 'farm-farm-animals',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-animals",
+    description: "A woolly grazing animal raised for fleece, dairy products, and meat.",
   },
   {
-    id: 'chicken',
-    label: 'Chicken',
-    phonetic: '',
+    id: "chicken",
+    label: "Chicken",
+    phonetic: "ˈtʃɪkɪn",
     img: `${LOCAL_WORD_IMAGES}/farm/chicken.webp`,
-    topic: 'farm-farm-animals',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-animals",
+    description: "A common farm bird raised for eggs and meat.",
   },
   {
-    id: 'horse',
-    label: 'Horse',
-    phonetic: '',
+    id: "horse",
+    label: "Horse",
+    phonetic: "hɔːrs",
     img: `${LOCAL_WORD_IMAGES}/farm/horse.webp`,
-    topic: 'farm-farm-animals',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-animals",
+    description: "A large strong animal with a mane, used for riding or pulling loads.",
   },
   {
-    id: 'goat',
-    label: 'Goat',
-    phonetic: '',
+    id: "goat",
+    label: "Goat",
+    phonetic: "ɡoʊt",
     img: `${LOCAL_WORD_IMAGES}/farm/goat.webp`,
-    topic: 'farm-farm-animals',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-animals",
+    description: "A sure-footed animal with horns, raised for dairy products and meat.",
   },
   {
-    id: 'duck',
-    label: 'Duck',
-    phonetic: '',
+    id: "duck",
+    label: "Duck",
+    phonetic: "dʌk",
     img: `${LOCAL_WORD_IMAGES}/farm/duck.webp`,
-    topic: 'farm-farm-animals',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-animals",
+    description: "A water bird with a broad bill and webbed feet.",
   },
   {
-    id: 'rooster',
-    label: 'Rooster',
-    phonetic: '',
+    id: "rooster",
+    label: "Rooster",
+    phonetic: "ˈruːstər",
     img: `${LOCAL_WORD_IMAGES}/farm/rooster.webp`,
-    topic: 'farm-farm-animals',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-animals",
+    description: "An adult male farm bird known for crowing early in the morning.",
   },
   {
-    id: 'turkey',
-    label: 'Turkey',
-    phonetic: '',
+    id: "turkey",
+    label: "Turkey",
+    phonetic: "ˈtɜːrki",
     img: `${LOCAL_WORD_IMAGES}/farm/turkey.webp`,
-    topic: 'farm-farm-animals',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-animals",
+    description: "A large farm bird with a fan-shaped tail and bare head.",
   },
   {
-    id: 'donkey',
-    label: 'Donkey',
-    phonetic: '',
+    id: "donkey",
+    label: "Donkey",
+    phonetic: "ˈdɑːŋki",
     img: `${LOCAL_WORD_IMAGES}/farm/donkey.webp`,
-    topic: 'farm-farm-animals',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-animals",
+    description: "A strong working animal with long ears, used to carry loads.",
   },
   {
-    id: 'rabbit',
-    label: 'Rabbit',
-    phonetic: '',
+    id: "rabbit",
+    label: "Rabbit",
+    phonetic: "ˈræbɪt",
     img: `${LOCAL_WORD_IMAGES}/farm/rabbit.webp`,
-    topic: 'farm-farm-animals',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-animals",
+    description: "A small furry animal with long ears and powerful back legs.",
   },
   {
-    id: 'goose',
-    label: 'Goose',
-    phonetic: '',
+    id: "goose",
+    label: "Goose",
+    phonetic: "ɡuːs",
     img: `${LOCAL_WORD_IMAGES}/farm/goose.webp`,
-    topic: 'farm-farm-animals',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-animals",
+    description: "A large water bird with a long neck and webbed feet.",
   },
   {
-    id: 'barn',
-    label: 'Barn',
-    phonetic: '',
+    id: "barn",
+    label: "Barn",
+    phonetic: "bɑːrn",
     img: `${LOCAL_WORD_IMAGES}/farm/barn.webp`,
-    topic: 'farm-farm-buildings',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-buildings",
+    description: "A large farm building used to shelter animals or store crops.",
   },
   {
-    id: 'farmhouse',
-    label: 'Farmhouse',
-    phonetic: '',
+    id: "farmhouse",
+    label: "Farmhouse",
+    phonetic: "ˈfɑːrmhaʊs",
     img: `${LOCAL_WORD_IMAGES}/farm/farmhouse.webp`,
-    topic: 'farm-farm-buildings',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-buildings",
+    description: "The main home where an agricultural family lives.",
   },
   {
-    id: 'stable',
-    label: 'Stable',
-    phonetic: '',
+    id: "stable",
+    label: "Stable",
+    phonetic: "ˈsteɪbəl",
     img: `${LOCAL_WORD_IMAGES}/farm/stable.webp`,
-    topic: 'farm-farm-buildings',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-buildings",
+    description: "A building divided into stalls where horses are kept.",
   },
   {
-    id: 'hen-house',
-    label: 'Hen House',
-    phonetic: '',
+    id: "hen-house",
+    label: "Hen House",
+    phonetic: "ˈhɛn haʊs",
     img: `${LOCAL_WORD_IMAGES}/farm/hen-house.webp`,
-    topic: 'farm-farm-buildings',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-buildings",
+    description: "A small shelter where female birds nest and lay eggs.",
   },
   {
-    id: 'silo',
-    label: 'Silo',
-    phonetic: '',
+    id: "silo",
+    label: "Silo",
+    phonetic: "ˈsaɪloʊ",
     img: `${LOCAL_WORD_IMAGES}/farm/silo.webp`,
-    topic: 'farm-farm-buildings',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-buildings",
+    description: "A tall round structure used to store grain or animal feed.",
   },
   {
-    id: 'greenhouse',
-    label: 'Greenhouse',
-    phonetic: '',
+    id: "greenhouse",
+    label: "Greenhouse",
+    phonetic: "ˈɡriːnhaʊs",
     img: `${LOCAL_WORD_IMAGES}/farm/greenhouse.webp`,
-    topic: 'farm-farm-buildings',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-buildings",
+    description: "A transparent building that keeps crops warm while they grow.",
   },
   {
-    id: 'shed',
-    label: 'Shed',
-    phonetic: '',
+    id: "shed",
+    label: "Shed",
+    phonetic: "ʃɛd",
     img: `${LOCAL_WORD_IMAGES}/farm/shed.webp`,
-    topic: 'farm-farm-buildings',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-buildings",
+    description: "A small simple building used to store tools and equipment.",
   },
   {
-    id: 'windmill',
-    label: 'Windmill',
-    phonetic: '',
+    id: "windmill",
+    label: "Windmill",
+    phonetic: "ˈwɪndmɪl",
     img: `${LOCAL_WORD_IMAGES}/farm/windmill.webp`,
-    topic: 'farm-farm-buildings',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-buildings",
+    description: "A tall structure with blades turned by moving air to produce energy.",
   },
   {
-    id: 'well',
-    label: 'Well',
-    phonetic: '',
+    id: "well",
+    label: "Well",
+    phonetic: "wɛl",
     img: `${LOCAL_WORD_IMAGES}/farm/well.webp`,
-    topic: 'farm-farm-buildings',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-buildings",
+    description: "A deep hole built to bring groundwater up to the surface.",
   },
   {
-    id: 'fence',
-    label: 'Fence',
-    phonetic: '',
+    id: "fence",
+    label: "Fence",
+    phonetic: "fɛns",
     img: `${LOCAL_WORD_IMAGES}/farm/fence.webp`,
-    topic: 'farm-farm-buildings',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-buildings",
+    description: "A barrier of posts and wire or wood that surrounds a field.",
   },
   {
-    id: 'tractor',
-    label: 'Tractor',
-    phonetic: '',
+    id: "tractor",
+    label: "Tractor",
+    phonetic: "ˈtræktər",
     img: `${LOCAL_WORD_IMAGES}/farm/tractor.webp`,
-    topic: 'farm-farm-equipment',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-equipment",
+    description: "A powerful farm vehicle used to pull equipment across fields.",
   },
   {
-    id: 'plow',
-    label: 'Plow',
-    phonetic: '',
+    id: "plow",
+    label: "Plow",
+    phonetic: "plaʊ",
     img: `${LOCAL_WORD_IMAGES}/farm/plow.webp`,
-    topic: 'farm-farm-equipment',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-equipment",
+    description: "A heavy tool pulled through soil to turn it before planting.",
   },
   {
-    id: 'trailer',
-    label: 'Trailer',
-    phonetic: '',
+    id: "trailer",
+    label: "Trailer",
+    phonetic: "ˈtreɪlər",
     img: `${LOCAL_WORD_IMAGES}/farm/trailer.webp`,
-    topic: 'farm-farm-equipment',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-equipment",
+    description: "An unpowered wheeled container pulled behind a vehicle.",
   },
   {
-    id: 'wheelbarrow',
-    label: 'Wheelbarrow',
-    phonetic: '',
+    id: "wheelbarrow",
+    label: "Wheelbarrow",
+    phonetic: "ˈwiːlˌbæroʊ",
     img: `${LOCAL_WORD_IMAGES}/farm/wheelbarrow.webp`,
-    topic: 'farm-farm-equipment',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-equipment",
+    description: "A small hand-pushed carrier with one wheel and two handles.",
   },
   {
-    id: 'pitchfork',
-    label: 'Pitchfork',
-    phonetic: '',
+    id: "pitchfork",
+    label: "Pitchfork",
+    phonetic: "ˈpɪtʃfɔːrk",
     img: `${LOCAL_WORD_IMAGES}/farm/pitchfork.webp`,
-    topic: 'farm-farm-equipment',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-equipment",
+    description: "A long-handled tool with pointed metal prongs for lifting hay.",
   },
   {
-    id: 'shovel',
-    label: 'Shovel',
-    phonetic: '',
+    id: "shovel",
+    label: "Shovel",
+    phonetic: "ˈʃʌvəl",
     img: `${LOCAL_WORD_IMAGES}/farm/shovel.webp`,
-    topic: 'farm-farm-equipment',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-equipment",
+    description: "A long-handled tool with a broad blade for moving soil.",
   },
   {
-    id: 'hoe',
-    label: 'Hoe',
-    phonetic: '',
+    id: "hoe",
+    label: "Hoe",
+    phonetic: "hoʊ",
     img: `${LOCAL_WORD_IMAGES}/farm/hoe.webp`,
-    topic: 'farm-farm-equipment',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-equipment",
+    description: "A long-handled tool with a flat blade for breaking soil and removing weeds.",
   },
   {
-    id: 'rake',
-    label: 'Rake',
-    phonetic: '',
+    id: "rake",
+    label: "Rake",
+    phonetic: "reɪk",
     img: `${LOCAL_WORD_IMAGES}/farm/rake.webp`,
-    topic: 'farm-farm-equipment',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-equipment",
+    description: "A long-handled tool with teeth for gathering leaves or smoothing soil.",
   },
   {
-    id: 'bucket',
-    label: 'Bucket',
-    phonetic: '',
+    id: "bucket",
+    label: "Bucket",
+    phonetic: "ˈbʌkɪt",
     img: `${LOCAL_WORD_IMAGES}/farm/bucket.webp`,
-    topic: 'farm-farm-equipment',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-equipment",
+    description: "A deep round container with a handle for carrying liquids or materials.",
   },
   {
-    id: 'watering-can',
-    label: 'Watering Can',
-    phonetic: '',
+    id: "watering-can",
+    label: "Watering Can",
+    phonetic: "ˈwɔːtərɪŋ kæn",
     img: `${LOCAL_WORD_IMAGES}/farm/watering-can.webp`,
-    topic: 'farm-farm-equipment',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-equipment",
+    description: "A portable container with a handle and spout for giving water to crops.",
   },
   {
-    id: 'milk',
-    label: 'Milk',
-    phonetic: '',
+    id: "milk",
+    label: "Milk",
+    phonetic: "mɪlk",
     img: `${LOCAL_WORD_IMAGES}/farm/milk.webp`,
-    topic: 'farm-farm-products',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-products",
+    description: "A white dairy liquid collected from animals and used as food or drink.",
   },
   {
-    id: 'egg',
-    label: 'Egg',
-    phonetic: '',
+    id: "egg",
+    label: "Egg",
+    phonetic: "ɛɡ",
     img: `${LOCAL_WORD_IMAGES}/farm/egg.webp`,
-    topic: 'farm-farm-products',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-products",
+    description: "An oval food with a hard shell, white interior, and yellow center.",
   },
   {
-    id: 'wool',
-    label: 'Wool',
-    phonetic: '',
+    id: "wool",
+    label: "Wool",
+    phonetic: "wʊl",
     img: `${LOCAL_WORD_IMAGES}/farm/wool.webp`,
-    topic: 'farm-farm-products',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-products",
+    description: "The thick soft fleece removed from certain animals and made into fabric.",
   },
   {
-    id: 'cheese',
-    label: 'Cheese',
-    phonetic: '',
+    id: "cheese",
+    label: "Cheese",
+    phonetic: "tʃiːz",
     img: `${LOCAL_WORD_IMAGES}/farm/cheese.webp`,
-    topic: 'farm-farm-products',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-products",
+    description: "A solid dairy food made by separating and pressing curds.",
   },
   {
-    id: 'butter',
-    label: 'Butter',
-    phonetic: '',
+    id: "butter",
+    label: "Butter",
+    phonetic: "ˈbʌtər",
     img: `${LOCAL_WORD_IMAGES}/farm/butter.webp`,
-    topic: 'farm-farm-products',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-products",
+    description: "A soft yellow dairy product made by churning cream.",
   },
   {
-    id: 'honey',
-    label: 'Honey',
-    phonetic: '',
+    id: "honey",
+    label: "Honey",
+    phonetic: "ˈhʌni",
     img: `${LOCAL_WORD_IMAGES}/farm/honey.webp`,
-    topic: 'farm-farm-products',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-products",
+    description: "A thick sweet golden food produced by bees.",
   },
   {
-    id: 'hay',
-    label: 'Hay',
-    phonetic: '',
+    id: "hay",
+    label: "Hay",
+    phonetic: "heɪ",
     img: `${LOCAL_WORD_IMAGES}/farm/hay.webp`,
-    topic: 'farm-farm-products',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-products",
+    description: "Cut and dried grass stored as feed for animals.",
   },
   {
-    id: 'straw',
-    label: 'Straw',
-    phonetic: '',
+    id: "straw",
+    label: "Straw",
+    phonetic: "strɔː",
     img: `${LOCAL_WORD_IMAGES}/farm/straw.webp`,
-    topic: 'farm-farm-products',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-products",
+    description: "Dry pale stalks left after grain is collected, used for bedding.",
   },
   {
-    id: 'flour',
-    label: 'Flour',
-    phonetic: '',
+    id: "flour",
+    label: "Flour",
+    phonetic: "ˈflaʊər",
     img: `${LOCAL_WORD_IMAGES}/farm/flour.webp`,
-    topic: 'farm-farm-products',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-products",
+    description: "A fine powder made by grinding grain and used in baking.",
   },
   {
-    id: 'jam',
-    label: 'Jam',
-    phonetic: '',
+    id: "jam",
+    label: "Jam",
+    phonetic: "dʒæm",
     img: `${LOCAL_WORD_IMAGES}/farm/jam.webp`,
-    topic: 'farm-farm-products',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-products",
+    description: "A sweet spread made by cooking fruit with sugar.",
   },
   {
-    id: 'farmer',
-    label: 'Farmer',
-    phonetic: '',
+    id: "farmer",
+    label: "Farmer",
+    phonetic: "ˈfɑːrmər",
     img: `${LOCAL_WORD_IMAGES}/farm/farmer.webp`,
-    topic: 'farm-farm-life',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-life",
+    description: "A person who grows crops or raises animals for food and materials.",
   },
   {
-    id: 'scarecrow',
-    label: 'Scarecrow',
-    phonetic: '',
+    id: "scarecrow",
+    label: "Scarecrow",
+    phonetic: "ˈskɛrˌkroʊ",
     img: `${LOCAL_WORD_IMAGES}/farm/scarecrow.webp`,
-    topic: 'farm-farm-life',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-life",
+    description: "A human-shaped figure placed in a field to frighten birds away.",
   },
   {
-    id: 'dog',
-    label: 'Dog',
-    phonetic: '',
+    id: "dog",
+    label: "Dog",
+    phonetic: "dɔːɡ",
     img: `${LOCAL_WORD_IMAGES}/farm/dog.webp`,
-    topic: 'farm-farm-life',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-life",
+    description: "A loyal domesticated animal often trained to guard or herd livestock.",
   },
   {
-    id: 'cat',
-    label: 'Cat',
-    phonetic: '',
+    id: "cat",
+    label: "Cat",
+    phonetic: "kæt",
     img: `${LOCAL_WORD_IMAGES}/farm/cat.webp`,
-    topic: 'farm-farm-life',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-life",
+    description: "A small domesticated animal that may control mice around buildings.",
   },
   {
-    id: 'pond',
-    label: 'Pond',
-    phonetic: '',
+    id: "pond",
+    label: "Pond",
+    phonetic: "pɑːnd",
     img: `${LOCAL_WORD_IMAGES}/farm/pond.webp`,
-    topic: 'farm-farm-life',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-life",
+    description: "A small still body of water surrounded by land.",
   },
   {
-    id: 'mud',
-    label: 'Mud',
-    phonetic: '',
+    id: "mud",
+    label: "Mud",
+    phonetic: "mʌd",
     img: `${LOCAL_WORD_IMAGES}/farm/mud.webp`,
-    topic: 'farm-farm-life',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-life",
+    description: "Soft wet earth formed when soil mixes with water.",
   },
   {
-    id: 'sunrise',
-    label: 'Sunrise',
-    phonetic: '',
+    id: "sunrise",
+    label: "Sunrise",
+    phonetic: "ˈsʌnraɪz",
     img: `${LOCAL_WORD_IMAGES}/farm/sunrise.webp`,
-    topic: 'farm-farm-life',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-life",
+    description: "The time in the morning when the sun first appears above the horizon.",
   },
   {
-    id: 'sunset',
-    label: 'Sunset',
-    phonetic: '',
+    id: "sunset",
+    label: "Sunset",
+    phonetic: "ˈsʌnsɛt",
     img: `${LOCAL_WORD_IMAGES}/farm/sunset.webp`,
-    topic: 'farm-farm-life',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-life",
+    description: "The time in the evening when the sun disappears below the horizon.",
   },
   {
-    id: 'rain',
-    label: 'Rain',
-    phonetic: '',
+    id: "rain",
+    label: "Rain",
+    phonetic: "reɪn",
     img: `${LOCAL_WORD_IMAGES}/farm/rain.webp`,
-    topic: 'farm-farm-life',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-life",
+    description: "Drops of water that fall from clouds and help crops grow.",
   },
   {
-    id: 'harvest',
-    label: 'Harvest',
-    phonetic: '',
+    id: "harvest",
+    label: "Harvest",
+    phonetic: "ˈhɑːrvɪst",
     img: `${LOCAL_WORD_IMAGES}/farm/harvest.webp`,
-    topic: 'farm-farm-life',
-    description: 'An entity found in the agricultural area.'
+    topic: "farm-farm-life",
+    description: "The gathering of ripe crops from fields at the end of a growing season.",
   },
 ];
 
 export const FARM_TOPICS: TopicCategory[] = [
   {
-    id: 'farm-farm-animals',
-    name: 'Farm Animals',
-    itemsCount: 12
+    id: "farm-farm-animals",
+    name: "Farm Animals",
+    itemsCount: 12,
   },
   {
-    id: 'farm-farm-buildings',
-    name: 'Farm Buildings',
-    itemsCount: 10
+    id: "farm-farm-buildings",
+    name: "Farm Buildings",
+    itemsCount: 10,
   },
   {
-    id: 'farm-farm-equipment',
-    name: 'Farm Equipment',
-    itemsCount: 10
+    id: "farm-farm-equipment",
+    name: "Farm Equipment",
+    itemsCount: 10,
   },
   {
-    id: 'farm-farm-products',
-    name: 'Farm Products',
-    itemsCount: 10
+    id: "farm-farm-products",
+    name: "Farm Products",
+    itemsCount: 10,
   },
   {
-    id: 'farm-farm-life',
-    name: 'Farm Life',
-    itemsCount: 10
+    id: "farm-farm-life",
+    name: "Farm Life",
+    itemsCount: 10,
   },
 ];
 
@@ -2234,54 +2458,96 @@ export const FARM_GROUPS: Lesson[] = [
     id: "farm-farm-animals",
     name: "Farm Animals",
     topicId: "farm-farm-animals",
-    wordIds: ['cow','pig','sheep','chicken','horse','goat','duck','rooster','turkey','donkey','rabbit','goose'],
+    wordIds: [
+      "cow",
+      "pig",
+      "sheep",
+      "chicken",
+      "horse",
+      "goat",
+      "duck",
+      "rooster",
+      "turkey",
+      "donkey",
+      "rabbit",
+      "goose",
+    ],
     description: "Learn about farm animals.",
-    story: "The farmer milked the cow early in the morning while the muddy pig rolled in the pen. A fluffy sheep grazed peacefully in the meadow. A loud chicken pecked at the ground, and a fast horse galloped across the open field. A curious goat chewed on the wooden fence. The white duck swam across the pond, followed by a proud rooster that crowed loudly. A large turkey strutted proudly near the barn, and a stubborn donkey refused to move. A quick rabbit hopped past the vegetable garden. The white goose chased away the stray dog that wandered too close to the nest."
+    story:
+      "At sunrise, the cow and goat ate grass while the pig rolled in the mud. A sheep stood near the horse and donkey. The chicken, rooster, and turkey searched the ground for grain, while the duck and goose swam near the rabbit by the pond.",
   },
   {
     id: "farm-farm-buildings",
     name: "Farm Buildings",
     topicId: "farm-farm-buildings",
-    wordIds: ['barn','farmhouse','stable','hen-house','silo','greenhouse','shed','windmill','well','fence'],
+    wordIds: [
+      "barn",
+      "farmhouse",
+      "stable",
+      "hen-house",
+      "silo",
+      "greenhouse",
+      "shed",
+      "windmill",
+      "well",
+      "fence",
+    ],
     description: "Learn about farm buildings.",
-    story: "The animals slept safely in the large red barn. The farmer's family lived in the cozy farmhouse nearby. The horses were kept warm in the stable, the hens laid eggs in the hen-house, and the tall silo stored all the winter grain. Delicate plants thrived inside the warm greenhouse. Tools were locked safely in the wooden shed. The spinning windmill pumped water from the deep well, and a sturdy fence kept the animals from wandering away."
+    story:
+      "The farmer left the farmhouse and walked to the barn. The horse waited in the stable, and the chickens rested in the hen house. Grain filled the silo, plants grew in the greenhouse, and tools stayed in the shed. A windmill stood beside the well, and a fence surrounded the field.",
   },
   {
     id: "farm-farm-equipment",
     name: "Farm Equipment",
     topicId: "farm-farm-equipment",
-    wordIds: ['tractor','plow','trailer','wheelbarrow','pitchfork','shovel','hoe','rake','bucket','watering-can'],
+    wordIds: [
+      "tractor",
+      "plow",
+      "trailer",
+      "wheelbarrow",
+      "pitchfork",
+      "shovel",
+      "hoe",
+      "rake",
+      "bucket",
+      "watering-can",
+    ],
     description: "Learn about farm equipment.",
-    story: "The heavy green tractor rumbled across the field, pulling a sharp plow to turn the soil. A loaded trailer carried the harvest back to the barn. He pushed a full wheelbarrow of dirt and used a pitchfork to move the hay. A sturdy shovel was used to dig the deep holes. She grabbed the hoe to clear the weeds and a rake to gather the fallen leaves. The heavy metal bucket was filled with water from the well using a small watering-can."
+    story:
+      "The tractor pulled a plow and trailer across the field. The farmer moved soil in a wheelbarrow and lifted hay with a pitchfork. He dug with a shovel, cleared weeds with a hoe, and gathered leaves with a rake. A bucket and watering can carried water to the plants.",
   },
   {
     id: "farm-farm-products",
     name: "Farm Products",
     topicId: "farm-farm-products",
-    wordIds: ['milk','egg','wool','cheese','butter','honey','hay','straw','flour','jam'],
+    wordIds: ["milk", "egg", "wool", "cheese", "butter", "honey", "hay", "straw", "flour", "jam"],
     description: "Learn about farm products.",
-    story: "Every morning, fresh milk was collected from the cows. The children gathered a brown egg from the coop. Warm wool was sheared from the sheep, then processed to make cheese and churned into creamy butter. Sweet golden honey was harvested from the buzzing hives. The dry hay was stacked high for winter feed. Bundles of straw were used for animal bedding, while fresh flour was milled and sweet fruit jam was preserved in jars."
+    story:
+      "The farm produced milk, eggs, wool, cheese, butter, and honey. The animals ate dry hay, and clean straw covered the barn floor. Wheat became flour, while fresh fruit became jam.",
   },
   {
     id: "farm-farm-life",
     name: "Farm Life",
     topicId: "farm-farm-life",
-    wordIds: ['farmer','scarecrow','dog','cat','pond','mud','sunrise','sunset','rain','harvest'],
+    wordIds: [
+      "farmer",
+      "scarecrow",
+      "dog",
+      "cat",
+      "pond",
+      "mud",
+      "sunrise",
+      "sunset",
+      "rain",
+      "harvest",
+    ],
     description: "Learn about farm life.",
-    story: "The hardworking farmer woke up before dawn. A scary scarecrow stood guard in the cornfield. The loyal dog herded the sheep while a sleepy cat napped in the barn. Frogs croaked loudly from the muddy pond. Thick mud covered the tractor tires after the storm. The beautiful sunrise marked the beginning of a long day, and the colorful sunset signaled time for rest. The heavy rain nourished the crops, ensuring a plentiful harvest."
+    story:
+      "The farmer and dog walked past the scarecrow while the cat slept in the barn. Rain left mud beside the pond. The sunrise began the workday, and the sunset ended it after a successful harvest.",
   },
 ];
 
 export const COURSE_UNITS: Record<string, CourseUnit> = {
-  kitchen: {
-    id: "kitchen",
-    name: "The Kitchen",
-    description: "Explore real-life kitchen appliances, cookware, and accessories through 2D scene discovery, audio practice, recall matching, and sentence building.",
-    heroImage: `${LOCAL_SCENE_IMAGES}/kitchen-scene.webp`,
-    topics: KITCHEN_TOPICS,
-    groups: KITCHEN_GROUPS,
-    vocabulary: KITCHEN_VOCABULARY,
-  },
   bedroom: {
     id: "bedroom",
     name: "The Bedroom",
@@ -2292,11 +2558,22 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
     groups: BEDROOM_GROUPS,
     vocabulary: BEDROOM_VOCABULARY,
   },
+  kitchen: {
+    id: "kitchen",
+    name: "The Kitchen",
+    description:
+      "Explore real-life kitchen appliances, cookware, and accessories through 2D scene discovery, audio practice, recall matching, and sentence building.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/kitchen-scene.webp`,
+    topics: KITCHEN_TOPICS,
+    groups: KITCHEN_GROUPS,
+    vocabulary: KITCHEN_VOCABULARY,
+  },
 
   "living-room": {
     id: "living-room",
     name: "The Living Room",
-    description: "Explore real-life living room furniture and electronics through 2D scene discovery, audio practice, recall matching, and sentence building.",
+    description:
+      "Explore real-life living room furniture and electronics through 2D scene discovery, audio practice, recall matching, and sentence building.",
     heroImage: `${LOCAL_SCENE_IMAGES}/living-room-hero.webp`,
     topics: LIVING_ROOM_TOPICS,
     groups: LIVING_ROOM_GROUPS,
@@ -2305,7 +2582,8 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
   farm: {
     id: "farm",
     name: "The Farm",
-    description: "Explore real-life farm animals, tools, and elements through 2D scene discovery, audio practice, recall matching, and sentence building.",
+    description:
+      "Explore real-life farm animals, tools, and elements through 2D scene discovery, audio practice, recall matching, and sentence building.",
     heroImage: `${LOCAL_SCENE_IMAGES}/farm-hero.webp`,
     topics: FARM_TOPICS,
     groups: FARM_GROUPS,
@@ -2319,7 +2597,9 @@ export const DEFAULT_UNIT_ID = "bedroom";
 /** O(1) id lookup across every world's vocabulary, not just one. */
 export const ALL_VOCABULARY = Object.values(COURSE_UNITS).flatMap((world) => world.vocabulary);
 export const VOCAB_BY_ID = new Map(
-  Object.values(COURSE_UNITS).flatMap((world) => world.vocabulary.map((item) => [item.id, item] as const))
+  Object.values(COURSE_UNITS).flatMap((world) =>
+    world.vocabulary.map((item) => [item.id, item] as const)
+  )
 );
 
 /**
@@ -2371,7 +2651,9 @@ export function resolveGroup(lessonId: string, wordIds: string[] = []): Lesson {
  * world, mirroring `resolveGroup`'s fallback posture.
  */
 export function resolveUnitForLesson(lessonId: string): CourseUnit {
-  const owner = Object.values(COURSE_UNITS).find((world) => world.groups.some((g) => g.id === lessonId));
+  const owner = Object.values(COURSE_UNITS).find((world) =>
+    world.groups.some((g) => g.id === lessonId)
+  );
   return owner ?? COURSE_UNITS[DEFAULT_UNIT_ID];
 }
 
