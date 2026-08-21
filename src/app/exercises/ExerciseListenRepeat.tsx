@@ -57,6 +57,14 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   const handleSelectWordIndex = useCallback((index: number) => {
     setActiveWordIndex(index);
   }, []);
+  const group = useMemo(
+    () =>
+      resolveGroup(
+        lessonId,
+        words.map((w) => w.id)
+      ),
+    [lessonId, words]
+  );
 
   const handleToggle = () => {
     if (isPlaying) stop();
@@ -79,6 +87,12 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               dispatch({ type: "LESSON_NEXT" });
             }}
           />
+          <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1 mt-1">
+            <div className="flex items-center gap-1.5 text-wp-amber font-bold">
+              <Keyboard className="size-4" aria-hidden />
+              <span>Use Left/Right arrows to navigate · Space to play audio</span>
+            </div>
+          </div>
         </div>
       }
     >
@@ -86,7 +100,18 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         {isPlaying ? `Now playing: ${currentWord.label}` : ""}
       </div>
 
-      <div className="flex flex-col gap-4 sm:gap-6 w-full mt-2 sm:mt-4">
+      <div className="relative flex flex-col gap-4 sm:gap-6 w-full max-w-2xl mx-auto h-full min-h-0 justify-center">
+        {/* Header */}
+        <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
+          <span className="uppercase tracking-wider">{group.name}</span>
+          <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
+            <Volume2 className="size-3" aria-hidden />
+            <span>
+              Word {activeWordIndex + 1} of {words.length}
+            </span>
+          </span>
+        </div>
+
         {/* Compact Word Selector Grid (No text, tight bounding box) */}
         <div
           className="flex justify-center gap-2 sm:gap-3"
@@ -119,11 +144,8 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         </div>
 
         {/* Fluid Target Image Banner */}
-        <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2 flex flex-col justify-center">
-          <WordImage
-            word={currentWord}
-            className="w-full h-auto max-h-[40vh] sm:max-h-[45vh] block object-contain rounded-xl"
-          />
+        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[4/3] sm:aspect-[16/9]">
+          <WordImage word={currentWord} className="w-full h-full absolute inset-0 object-cover" />
           <div className="absolute top-3 start-3 sm:top-4 sm:start-4 bg-black/65 backdrop-blur-md text-white font-sans font-bold text-[11px] sm:text-xs px-3 py-1.5 rounded-xl border border-white/20 shadow-md flex items-center gap-1.5">
             <Sparkles className="size-3.5 text-wp-amber animate-pulse" />
             <span>Target Visual</span>

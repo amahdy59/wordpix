@@ -1,6 +1,6 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { Action } from "../types";
-import type { VocabularyItem } from "../data/lessons";
+import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getRichSentence } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
@@ -106,6 +106,15 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
     disabled: feedback !== null,
   });
 
+  const group = useMemo(
+    () =>
+      resolveGroup(
+        lessonId,
+        words.map((w) => w.id)
+      ),
+    [lessonId, words]
+  );
+
   return (
     <ExerciseShell
       step={step}
@@ -114,59 +123,55 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       lessonId={lessonId}
       dispatch={dispatch}
       footer={
-        <div className="w-full flex items-center justify-between text-xs font-sans font-semibold text-muted-foreground px-1">
+        <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-wp-amber font-bold">
             <Keyboard className="size-4" aria-hidden />
             <span>Press 1–{options.length} to choose a word</span>
           </div>
-          <span>
-            Sentence {queue.position} of {queue.total}
-          </span>
         </div>
       }
     >
       <div className="relative flex flex-col gap-4 sm:gap-6 w-full max-w-2xl mx-auto">
         {/* Question Counter Header */}
         <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
-          <span>{queue.isRetry ? "Once more" : "Choose the missing word"}</span>
+          <span className="uppercase tracking-wider">{group.name}</span>
           <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full">
-            {queue.masteredCount} of {words.length} done
+            Sentence {queue.position} of {queue.total}
           </span>
         </div>
 
-        {/* Fluid Target Image Banner */}
-        <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2 sm:mt-0 flex flex-col justify-center">
+        {/* Fluid Target Image Banner with Overlay Sentence */}
+        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2 sm:mt-0 aspect-[4/3] sm:aspect-[16/9]">
           <WordImage
             word={currentTargetWord}
-            className="w-full h-auto max-h-[35vh] sm:max-h-[40vh] block object-contain rounded-xl"
+            className="w-full h-full absolute inset-0 object-cover"
           />
-        </div>
-
-        {/* Centered Rich Sentence Display Box */}
-        <div className="bg-wp-card rounded-2xl border border-border p-5 sm:p-6 text-center shadow-wp-xs flex items-center justify-center">
-          <p className="font-sans font-bold text-foreground text-xl sm:text-2xl leading-relaxed py-0.5 whitespace-nowrap overflow-hidden text-ellipsis w-full">
-            {richSentence.clozeBefore}{" "}
-            <span
-              className={`inline-flex items-center justify-center min-w-[120px] sm:min-w-[140px] h-10 sm:h-12 px-3 sm:px-4 rounded-xl border-2 transition-all font-sans font-black text-lg sm:text-xl shadow-xs align-middle mx-1 ${
-                feedback === "incorrect"
-                  ? "bg-wp-green text-wp-text-on-green border-wp-green"
+          {/* Sentence overlay */}
+          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-5 sm:p-6 text-center flex items-center justify-center pt-16">
+            <p className="font-sans font-bold text-white text-xl sm:text-2xl leading-relaxed py-0.5 whitespace-nowrap overflow-hidden text-ellipsis w-full drop-shadow-md">
+              {richSentence.clozeBefore}{" "}
+              <span
+                className={`inline-flex items-center justify-center min-w-[120px] sm:min-w-[140px] h-10 sm:h-12 px-3 sm:px-4 rounded-xl border-2 transition-all font-sans font-black text-lg sm:text-xl shadow-xs align-middle mx-1 backdrop-blur-sm ${
+                  feedback === "incorrect"
+                    ? "bg-wp-green text-wp-text-on-green border-wp-green"
+                    : selectedWord
+                      ? feedback === "correct"
+                        ? "bg-wp-green text-wp-text-on-green border-wp-green"
+                        : "bg-primary text-primary-foreground border-primary"
+                      : "bg-white/20 border-dashed border-white/60 text-white"
+                }`}
+              >
+                {/* On a wrong answer the blank fills with the right word, so the
+                    learner reads the true sentence rather than their mistake. */}
+                {feedback === "incorrect"
+                  ? currentTargetWord.label.toLowerCase()
                   : selectedWord
-                    ? feedback === "correct"
-                      ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                      : "bg-primary text-primary-foreground border-primary"
-                    : "bg-secondary/80 border-dashed border-primary/50 text-muted-foreground"
-              }`}
-            >
-              {/* On a wrong answer the blank fills with the right word, so the
-                  learner reads the true sentence rather than their mistake. */}
-              {feedback === "incorrect"
-                ? currentTargetWord.label.toLowerCase()
-                : selectedWord
-                  ? selectedWord.label.toLowerCase()
-                  : "_______"}
-            </span>{" "}
-            {richSentence.clozeAfter}
-          </p>
+                    ? selectedWord.label.toLowerCase()
+                    : "_______"}
+              </span>{" "}
+              {richSentence.clozeAfter}
+            </p>
+          </div>
         </div>
 
         {/* Word Options Grid (2x2 Grid) */}

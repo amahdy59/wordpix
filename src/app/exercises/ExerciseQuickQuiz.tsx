@@ -1,6 +1,6 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { Action } from "../types";
-import type { VocabularyItem } from "../data/lessons";
+import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getRichSentence, getDistractors } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
@@ -103,6 +103,15 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
     disabled: feedback !== null,
   });
 
+  const group = useMemo(
+    () =>
+      resolveGroup(
+        lessonId,
+        words.map((w) => w.id)
+      ),
+    [lessonId, words]
+  );
+
   return (
     <ExerciseShell
       step={step}
@@ -111,37 +120,35 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       lessonId={lessonId}
       dispatch={dispatch}
       footer={
-        <div className="w-full flex items-center justify-between text-xs font-sans font-semibold text-muted-foreground px-1">
+        <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-wp-amber font-bold">
             <Keyboard className="size-4" aria-hidden />
             <span>Press 1–{options.length} to choose an option</span>
           </div>
-          <span>
-            Question {queue.position} of {queue.total}
-          </span>
         </div>
       }
     >
-      <div className="relative flex flex-col gap-3.5 sm:gap-4 w-full h-full min-h-0">
+      <div className="relative flex flex-col gap-3.5 sm:gap-4 w-full max-w-2xl mx-auto h-full min-h-0">
         {/* Single-Line Question Heading */}
-        {/*
-          The question itself must never be clipped. It previously carried
-          `truncate` while wedged between two shrink-0 siblings, so on narrow
-          screens the one string the learner has to read got cut off. The row
-          now wraps instead.
-        */}
-        <div className="bg-wp-card border border-border rounded-2xl p-3.5 sm:p-4 shadow-wp-xs shrink-0 flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
-          <div className="flex items-center gap-2 text-primary font-bold text-xs shrink-0">
-            <HelpCircle className="size-4 text-wp-blue" aria-hidden />
-            <span>{queue.isRetry ? "Once more" : `Quiz Q${queue.position}`}</span>
+        <div className="bg-wp-card border border-border rounded-2xl p-3.5 sm:p-4 shadow-wp-xs shrink-0 flex flex-col gap-3">
+          <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground w-full">
+            <span className="uppercase tracking-wider">{group.name}</span>
+            <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
+              <HelpCircle className="size-3" aria-hidden />
+              <span>
+                Question {queue.position} of {queue.total}
+              </span>
+            </span>
           </div>
-          <h2 className="font-sans font-black text-foreground text-base sm:text-lg md:text-xl text-center flex-1 min-w-[12rem] text-balance">
-            Which picture shows &ldquo;
-            <span className="text-primary">{currentTargetWord.label}</span>&rdquo;?
-          </h2>
-          <span className="text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full shrink-0">
-            /{currentTargetWord.phonetic}/
-          </span>
+          <div className="flex items-center justify-center gap-2">
+            <h2 className="font-sans font-black text-foreground text-base sm:text-lg md:text-xl text-center flex-1 min-w-[12rem] text-balance">
+              Which picture shows &ldquo;
+              <span className="text-primary">{currentTargetWord.label}</span>&rdquo;?
+            </h2>
+            <span className="text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full shrink-0">
+              /{currentTargetWord.phonetic}/
+            </span>
+          </div>
         </div>
 
         {/* 2x2 Grid Layout */}

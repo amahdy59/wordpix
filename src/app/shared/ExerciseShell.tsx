@@ -33,7 +33,6 @@ const STEP_LABELS = [
 
 /** Number of steps in a lesson flow, derived so the two cannot drift apart. */
 const EXERCISE_STEP_COUNT = STEP_LABELS.length;
-const LAST_STEP_INDEX = EXERCISE_STEP_COUNT - 1;
 
 export const ExerciseShell = memo(function ExerciseShell({
   step,
@@ -50,8 +49,10 @@ export const ExerciseShell = memo(function ExerciseShell({
   // `lessonId` used to default to "essential-furniture" and fall back to the
   // first group on an unknown id, so a review session — or any lesson whose id
   // went missing — was confidently labelled with the wrong group's name.
-  const group = resolveGroup(lessonId, words.map((w) => w.id));
-  const nextStepLabel = step < LAST_STEP_INDEX ? STEP_LABELS[step + 1] : "Session Completion";
+  const group = resolveGroup(
+    lessonId,
+    words.map((w) => w.id)
+  );
 
   return (
     <div className="bg-background flex flex-col lg:flex-row min-h-svh lg:h-svh lg:min-h-0 lg:overflow-hidden relative">
@@ -88,13 +89,7 @@ export const ExerciseShell = memo(function ExerciseShell({
 
         {/* Pinned Footer */}
         <footer className="shrink-0 px-4 sm:px-6 lg:px-10 pb-[env(safe-area-inset-bottom)] sm:pb-6 pt-3 border-t border-border/60 bg-background flex flex-col max-w-4xl mx-auto w-full">
-          <div className="flex flex-col gap-1.5 w-full mb-14 lg:mb-0">
-            {footer}
-            <div className="flex items-center justify-between text-[11px] font-sans font-medium text-muted-foreground px-1">
-              <span>Group: {group.name}</span>
-              <span>Next up: {nextStepLabel}</span>
-            </div>
-          </div>
+          <div className="flex flex-col gap-1.5 w-full mb-14 lg:mb-0">{footer}</div>
         </footer>
 
         {/* Mobile bottom bar — hidden on lg+ */}

@@ -1,6 +1,6 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { Action } from "../types";
-import type { VocabularyItem } from "../data/lessons";
+import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getRichSentence } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
@@ -123,6 +123,15 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
     advanceNext();
   }, [autoAdvance, advanceNext]);
 
+  const group = useMemo(
+    () =>
+      resolveGroup(
+        lessonId,
+        words.map((w) => w.id)
+      ),
+    [lessonId, words]
+  );
+
   return (
     <ExerciseShell
       step={step}
@@ -131,38 +140,37 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
       lessonId={lessonId}
       dispatch={dispatch}
       footer={
-        <div className="w-full flex items-center justify-between text-xs font-sans font-semibold text-muted-foreground px-1">
+        <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <span className="text-wp-amber font-bold">
             {feedback === null
               ? `Tap tiles in order — ${answer.length - placed.length} to go`
               : "Next sentence coming up"}
           </span>
-          <span>
-            Sentence {queue.position} of {queue.total}
-          </span>
         </div>
       }
     >
-      <div className="relative flex flex-col gap-3.5 sm:gap-4 w-full">
-        {/* Question Counter & Skill Badge */}
+      <div className="relative flex flex-col gap-4 sm:gap-6 w-full max-w-2xl mx-auto">
+        {/* Question Counter & Skill Badge Header */}
         <div className="flex items-center justify-between text-xs font-sans font-bold text-muted-foreground px-1">
-          <span>{queue.isRetry ? "Once more" : "Build the sentence"}</span>
-          <span className="flex items-center gap-1 text-muted-foreground bg-muted border border-border px-2.5 py-0.5 rounded-full">
+          <span className="uppercase tracking-wider">{group.name}</span>
+          <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
             <PenTool className="size-3" aria-hidden />
-            <span>Spelling &amp; Sentence Skill</span>
+            <span>
+              Sentence {queue.position} of {queue.total}
+            </span>
           </span>
         </div>
 
         {/* Fluid Target Image Banner */}
-        <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2 flex flex-col justify-center">
+        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2 sm:mt-0 aspect-[4/3] sm:aspect-[16/9]">
           <WordImage
             word={currentTargetWord}
-            className="w-full h-auto max-h-[35vh] sm:max-h-[45vh] block object-contain rounded-xl"
+            className="w-full h-full absolute inset-0 object-cover"
           />
           {/* Ties the picture to the word it illustrates instead of leaving it
               a disconnected decorative photo. */}
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-3 pt-6 pb-2.5 pointer-events-none">
-            <span className="font-sans font-bold text-white text-xs sm:text-sm tracking-wide drop-shadow-sm">
+          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent px-5 pt-12 pb-4 pointer-events-none flex items-end">
+            <span className="font-sans font-bold text-white text-lg sm:text-xl tracking-wide drop-shadow-md">
               {currentTargetWord.label}
             </span>
           </div>
