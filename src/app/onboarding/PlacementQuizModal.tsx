@@ -45,7 +45,8 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
   if (!isOpen) return null;
 
   const currentQ = QUESTIONS[stepIndex];
-  const targetWord = PLACEMENT_VOCABULARY.find((v) => v.id === currentQ.targetId) ?? PLACEMENT_VOCABULARY[0];
+  const targetWord =
+    PLACEMENT_VOCABULARY.find((v) => v.id === currentQ.targetId) ?? PLACEMENT_VOCABULARY[0];
   const options = PLACEMENT_VOCABULARY.slice(0, 4);
 
   const handleSelectOption = (wordId: string) => {
@@ -57,7 +58,8 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
       setStepIndex((i) => i + 1);
     } else {
       // Determine level recommendation
-      const assignedLevel: "A1" | "A2" | "B1" = newCorrect >= 3 ? "B1" : newCorrect >= 2 ? "A2" : "A1";
+      const assignedLevel: "A1" | "A2" | "B1" =
+        newCorrect >= 3 ? "B1" : newCorrect >= 2 ? "A2" : "A1";
       onCompleteLevel(assignedLevel);
       onClose();
     }
@@ -71,7 +73,7 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
         aria-modal="true"
         aria-labelledby="placement-modal-title"
         tabIndex={-1}
-        className="bg-wp-card border border-border rounded-3xl p-6 w-full max-w-md shadow-2xl flex flex-col gap-5 relative outline-none"
+        className="bg-wp-card border border-border rounded-3xl p-5 sm:p-6 w-full max-w-md shadow-2xl flex flex-col gap-4 sm:gap-5 relative outline-none max-h-[92vh] overflow-y-auto"
       >
         <button
           type="button"
@@ -112,7 +114,14 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
               className="bg-background border border-border rounded-2xl p-2 flex flex-col items-center gap-1.5 hover:border-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all min-h-[44px]"
             >
               <div className="h-24 w-full rounded-xl overflow-hidden bg-muted">
-                <WordImage word={opt} width="200" height="150" className="size-full object-cover" altMode="assessment" optionIndex={idx} />
+                <WordImage
+                  word={opt}
+                  width="200"
+                  height="150"
+                  className="size-full object-cover"
+                  altMode="assessment"
+                  optionIndex={idx}
+                />
               </div>
               {/* No word label here: this is a graded placement question, and
                   printing the answer under each picture makes it unanswerable

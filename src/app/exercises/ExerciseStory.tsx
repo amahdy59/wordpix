@@ -162,44 +162,44 @@ export const ExerciseStory = memo(function ExerciseStory({
     >
       <div className="w-full max-w-2xl mx-auto flex flex-col gap-4">
         {/* Top Context Mode Switcher */}
-        <div className="flex items-center justify-between gap-2 bg-secondary/80 p-1.5 rounded-2xl border border-border">
+        <div className="flex items-center justify-between gap-1.5 sm:gap-2 bg-secondary/80 p-1.5 rounded-2xl border border-border">
           <button
             type="button"
             onClick={() => setViewMode("passage")}
-            className={`flex-1 flex items-center justify-center gap-2 py-2 px-3 min-h-[44px] rounded-xl font-sans font-bold text-xs sm:text-sm transition-all ${
+            className={`flex-1 flex items-center justify-center gap-1 sm:gap-2 py-2 px-1.5 sm:px-3 min-h-[44px] min-w-0 rounded-xl font-sans font-bold text-xs sm:text-sm transition-all ${
               viewMode === "passage"
                 ? "bg-wp-card text-foreground shadow-sm border border-border"
                 : "text-muted-foreground hover:text-foreground"
             }`}
           >
-            <BookOpen className="size-4" aria-hidden />
-            <span>Story Passage</span>
+            <BookOpen className="size-3.5 sm:size-4 shrink-0" aria-hidden />
+            <span className="truncate">Story Passage</span>
           </button>
 
           <button
             type="button"
             onClick={() => setViewMode("visual-flow")}
-            className={`flex-1 flex items-center justify-center gap-2 py-2 px-3 min-h-[44px] rounded-xl font-sans font-bold text-xs sm:text-sm transition-all ${
+            className={`flex-1 flex items-center justify-center gap-1 sm:gap-2 py-2 px-1.5 sm:px-3 min-h-[44px] min-w-0 rounded-xl font-sans font-bold text-xs sm:text-sm transition-all ${
               viewMode === "visual-flow"
                 ? "bg-wp-card text-foreground shadow-sm border border-border"
                 : "text-muted-foreground hover:text-foreground"
             }`}
           >
-            <Layers className="size-4" aria-hidden />
-            <span>Visual Flow</span>
+            <Layers className="size-3.5 sm:size-4 shrink-0" aria-hidden />
+            <span className="truncate">Visual Flow</span>
           </button>
 
           <button
             type="button"
             onClick={() => setViewMode("dialogue")}
-            className={`flex-1 flex items-center justify-center gap-2 py-2 px-3 min-h-[44px] rounded-xl font-sans font-bold text-xs sm:text-sm transition-all ${
+            className={`flex-1 flex items-center justify-center gap-1 sm:gap-2 py-2 px-1.5 sm:px-3 min-h-[44px] min-w-0 rounded-xl font-sans font-bold text-xs sm:text-sm transition-all ${
               viewMode === "dialogue"
                 ? "bg-wp-card text-foreground shadow-sm border border-border"
                 : "text-muted-foreground hover:text-foreground"
             }`}
           >
-            <MessageSquare className="size-4" aria-hidden />
-            <span>Dialogue</span>
+            <MessageSquare className="size-3.5 sm:size-4 shrink-0" aria-hidden />
+            <span className="truncate">Dialogue</span>
           </button>
         </div>
 

@@ -1,4 +1,4 @@
-﻿import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
+import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
 import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
@@ -177,13 +177,13 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 <span>Listen &amp; Match Picture</span>
                 {isPlaying && (
                   <span className="text-[10px] bg-wp-amber/20 text-wp-amber px-2 py-0.5 rounded-full border border-wp-amber/30">
-                    Playing soundâ€¦
+                    Playing sound…
                   </span>
                 )}
               </h2>
               <p className="font-sans text-white/80 text-xs">
                 {queue.isRetry
-                  ? "One more time â€” tap the picture you hear."
+                  ? "One more time — tap the picture you hear."
                   : "Tap image card matching the spoken word."}
               </p>
             </div>
@@ -326,8 +326,8 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             >
               <span className="font-sans font-semibold text-foreground text-sm">
                 {feedback === "correct"
-                  ? `? That is "${currentTargetWord.label}".`
-                  : `? The picture you heard was "${currentTargetWord.label}".`}
+                  ? `✓ That is "${currentTargetWord.label}".`
+                  : `✕ The picture you heard was "${currentTargetWord.label}".`}
               </span>
               <button
                 type="button"

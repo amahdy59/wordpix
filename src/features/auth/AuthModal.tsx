@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { supabase } from "../../lib/supabase/client";
 import { migrateGuestToAccount } from "../../lib/persistence/sync";
-import { User } from "lucide-react";
+import { User, X } from "lucide-react";
 
 interface AuthModalProps {
   onClose: () => void;
@@ -35,7 +35,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
         authUserId = data.user?.id;
         setSuccess("Account created successfully!");
       }
-      
+
       // Guest to Account Migration
       if (authUserId) {
         try {
@@ -44,8 +44,8 @@ export function AuthModal({ onClose }: AuthModalProps) {
           console.error("Failed to migrate guest data", e);
         }
       }
-      
-      // For MVP, reload to re-initialize contexts and pull fresh data if needed, 
+
+      // For MVP, reload to re-initialize contexts and pull fresh data if needed,
       // or at least to reflect the logged in state cleanly without complex re-renders.
       window.location.reload();
       onClose();
@@ -62,7 +62,20 @@ export function AuthModal({ onClose }: AuthModalProps) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
-      <div className="bg-background rounded-xl p-6 w-full max-w-md shadow-xl border border-border" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+      <div
+        className="bg-background rounded-2xl p-6 w-full max-w-md shadow-xl border border-border relative max-h-[92vh] overflow-y-auto"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="auth-title"
+      >
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Close authentication modal"
+          className="absolute top-4 end-4 size-10 min-h-[44px] min-w-[44px] rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+        >
+          <X className="size-5" aria-hidden />
+        </button>
         <div className="flex flex-col items-center gap-2 mb-6">
           <div className="p-3 bg-primary/10 text-primary rounded-full mb-2">
             <User className="size-8" />
@@ -71,14 +84,17 @@ export function AuthModal({ onClose }: AuthModalProps) {
             {isLogin ? "Welcome Back" : "Create an Account"}
           </h2>
           <p className="text-sm text-muted-foreground text-center">
-            {isLogin 
-              ? "Sign in to sync your progress across devices." 
+            {isLogin
+              ? "Sign in to sync your progress across devices."
               : "Sign up to save your offline progress permanently."}
           </p>
         </div>
 
         {error && (
-          <div className="mb-4 p-3 bg-destructive/10 text-destructive text-sm rounded-lg" role="alert">
+          <div
+            className="mb-4 p-3 bg-destructive/10 text-destructive text-sm rounded-lg"
+            role="alert"
+          >
             {error}
           </div>
         )}
@@ -90,7 +106,9 @@ export function AuthModal({ onClose }: AuthModalProps) {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium mb-1 text-foreground" htmlFor="email">Email address</label>
+            <label className="block text-sm font-medium mb-1 text-foreground" htmlFor="email">
+              Email address
+            </label>
             <input
               id="email"
               type="email"
@@ -102,7 +120,9 @@ export function AuthModal({ onClose }: AuthModalProps) {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium mb-1 text-foreground" htmlFor="password">Password</label>
+            <label className="block text-sm font-medium mb-1 text-foreground" htmlFor="password">
+              Password
+            </label>
             <input
               id="password"
               type="password"
@@ -132,7 +152,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
           >
             {isLogin ? "Don't have an account? Sign up" : "Already have an account? Sign in"}
           </button>
-          
+
           <button
             type="button"
             className="text-sm text-muted-foreground font-medium hover:text-foreground transition-colors"

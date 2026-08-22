@@ -1,4 +1,4 @@
-﻿import { memo, useCallback, useEffect, useMemo, useState } from "react";
+import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
@@ -151,30 +151,30 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
         <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <span className="text-wp-amber font-bold">
             {feedback === null
-              ? `Tap tiles in order â€” ${answer.length - placed.length} to go`
+              ? `Tap tiles in order — ${answer.length - placed.length} to go`
               : "Next sentence coming up"}
           </span>
         </div>
       }
     >
-      <div className="relative flex flex-col gap-4 sm:gap-6 w-full max-w-2xl mx-auto">
+      <div className="relative flex flex-col gap-3 sm:gap-5 w-full max-w-2xl mx-auto">
         {/* Fluid Target Image Banner */}
-        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2 sm:mt-0 aspect-[4/3] sm:aspect-[16/9]">
+        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[16/10] sm:aspect-[16/9] max-h-[30vh] sm:max-h-[36vh]">
           <WordImage
             word={currentTargetWord}
             className="w-full h-full absolute inset-0 object-cover"
           />
           {/* Ties the picture to the word it illustrates instead of leaving it
               a disconnected decorative photo. */}
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent px-5 pt-12 pb-4 pointer-events-none flex items-end">
-            <span className="font-sans font-bold text-white text-lg sm:text-xl tracking-wide drop-shadow-md">
+          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent px-4 sm:px-5 pt-8 pb-3 pointer-events-none flex items-end">
+            <span className="font-sans font-bold text-white text-base sm:text-xl tracking-wide drop-shadow-md">
               {currentTargetWord.label}
             </span>
           </div>
         </div>
 
         {/* Sentence Assembly Canvas */}
-        <div className="bg-wp-card rounded-2xl border-2 border-primary/30 p-3.5 sm:p-4 w-full flex flex-col gap-1.5 shadow-wp-xs">
+        <div className="bg-wp-card rounded-2xl border-2 border-primary/30 p-3 sm:p-4 w-full flex flex-col gap-1.5 shadow-wp-xs">
           <div className="flex items-center justify-between">
             <span className="font-sans font-bold text-[10px] text-primary uppercase tracking-wider flex items-center gap-1.5">
               Sentence Assembly Canvas
@@ -196,7 +196,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
                 <Undo2 className="size-3.5" aria-hidden />
                 <span>Undo</span>
                 <kbd className="hidden sm:inline font-sans font-semibold text-muted-foreground/70 border border-border rounded px-1 ms-0.5">
-                  âŒ«
+                  ⌫
                 </kbd>
               </button>
             )}

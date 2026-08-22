@@ -74,19 +74,19 @@ export const WordInspectorModal = memo(function WordInspectorModal({
             </button>
 
             {/* Word Header on bottom of image */}
-            <div className="absolute bottom-3.5 start-4 end-4 flex items-end justify-between gap-3">
-              <div>
-                <span className="text-xs font-sans font-bold uppercase tracking-wider text-wp-amber flex items-center gap-1.5 drop-shadow">
-                  <Sparkles className="size-3.5" />
+            <div className="absolute bottom-3 start-3 end-3 sm:bottom-3.5 sm:start-4 sm:end-4 flex flex-wrap sm:flex-nowrap items-end justify-between gap-2 sm:gap-3">
+              <div className="min-w-0 flex-1">
+                <span className="text-[10px] sm:text-xs font-sans font-bold uppercase tracking-wider text-wp-amber flex items-center gap-1.5 drop-shadow">
+                  <Sparkles className="size-3 sm:size-3.5 shrink-0" />
                   <span>Oxford / Cambridge Lexicon</span>
                 </span>
                 <h2
                   id="word-inspector-title"
-                  className="font-sans font-black text-white text-2xl sm:text-3xl leading-tight capitalize drop-shadow"
+                  className="font-sans font-black text-white text-xl sm:text-2xl lg:text-3xl leading-tight capitalize drop-shadow truncate"
                 >
                   {word.label.toLowerCase()}
                 </h2>
-                <p className="font-sans text-white/90 text-sm drop-shadow font-mono">
+                <p className="font-sans text-white/90 text-xs sm:text-sm drop-shadow font-mono truncate">
                   {entry.phonetic || word.phonetic}
                 </p>
               </div>
@@ -96,9 +96,9 @@ export const WordInspectorModal = memo(function WordInspectorModal({
                 type="button"
                 onClick={() => speak(word.label)}
                 aria-label={`Pronounce ${word.label}`}
-                className="flex items-center gap-2 px-4 py-2 min-h-[44px] rounded-full bg-primary text-primary-foreground font-sans font-bold text-sm shadow-md hover:opacity-90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-white shrink-0"
+                className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 min-h-[44px] rounded-full bg-primary text-primary-foreground font-sans font-bold text-xs sm:text-sm shadow-md hover:opacity-90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-white shrink-0"
               >
-                <Volume2 className="size-4" />
+                <Volume2 className="size-3.5 sm:size-4" />
                 <span>Listen</span>
               </button>
             </div>

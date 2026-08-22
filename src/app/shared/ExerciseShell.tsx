@@ -4,7 +4,6 @@ import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { LessonHeader } from "./LessonHeader";
 import { HomeIndicator } from "./HomeIndicator";
 import { ExitConfirmModal } from "./ExitConfirmModal";
-import { BottomTabBar } from "./BottomTabBar";
 
 export type ExerciseMode = "teach" | "guided" | "retrieval" | "assessment";
 
@@ -90,14 +89,9 @@ export const ExerciseShell = memo(function ExerciseShell({
         </main>
 
         {/* Pinned Footer */}
-        <footer className="shrink-0 px-4 sm:px-6 lg:px-10 pb-[env(safe-area-inset-bottom)] sm:pb-6 pt-3 border-t border-border/60 bg-background flex flex-col max-w-4xl mx-auto w-full">
-          <div className="flex flex-col gap-1.5 w-full mb-14 lg:mb-0">{footer}</div>
+        <footer className="shrink-0 px-4 sm:px-6 lg:px-10 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] sm:pb-6 pt-3 border-t border-border/60 bg-background flex flex-col max-w-4xl mx-auto w-full">
+          <div className="flex flex-col gap-1.5 w-full">{footer}</div>
         </footer>
-
-        {/* Mobile bottom bar — hidden on lg+ */}
-        <div className="lg:hidden absolute bottom-0 inset-x-0 z-40" aria-hidden="false">
-          <BottomTabBar activeTab="practice" dispatch={dispatch} />
-        </div>
 
         <HomeIndicator />
       </div>

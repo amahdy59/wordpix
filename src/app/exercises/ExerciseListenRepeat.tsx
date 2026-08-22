@@ -236,11 +236,11 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           </button>
 
           {/* Bottom Integrated Overlay for Word Info & Interactive Controls */}
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/75 to-transparent pt-10 pb-3 px-3.5 sm:px-5 flex items-end justify-between gap-3 z-10">
+          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/75 to-transparent pt-10 pb-3 px-3 sm:px-5 flex flex-wrap sm:flex-nowrap items-end justify-between gap-2 sm:gap-3 z-10">
             {/* Left side: Word label, Phonetics, Arabic Translation, Info button */}
-            <div className="flex flex-col min-w-0">
-              <div className="flex items-baseline gap-2 flex-wrap">
-                <span className="font-sans font-black text-white text-xl sm:text-2xl lg:text-3xl leading-tight capitalize drop-shadow">
+            <div className="flex flex-col min-w-0 flex-1">
+              <div className="flex items-baseline gap-1.5 sm:gap-2 flex-wrap">
+                <span className="font-sans font-black text-white text-lg sm:text-2xl lg:text-3xl leading-tight capitalize drop-shadow">
                   {currentWord.label}
                 </span>
                 <span className="font-sans font-medium text-white/80 text-xs sm:text-sm drop-shadow font-mono">
@@ -264,9 +264,9 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               </div>
 
               {/* Arabic Translation with diacritics */}
-              <div className="flex items-center gap-2 mt-0.5">
+              <div className="flex items-center gap-1.5 sm:gap-2 mt-0.5 flex-wrap">
                 <span
-                  className="font-arabic font-bold text-wp-amber text-sm sm:text-base drop-shadow"
+                  className="font-arabic font-bold text-wp-amber text-xs sm:text-sm md:text-base drop-shadow"
                   dir="rtl"
                   lang="ar"
                 >
