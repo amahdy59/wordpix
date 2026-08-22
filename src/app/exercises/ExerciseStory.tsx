@@ -412,10 +412,27 @@ export const ExerciseStory = memo(function ExerciseStory({
                       </div>
                     )}
 
-                    {rich?.full && (
-                      <p className="font-sans text-xs text-muted-foreground bg-muted/40 p-2.5 rounded-xl border border-border/50 leading-relaxed">
-                        &ldquo;{rich.full}&rdquo;
-                      </p>
+                    {(rich?.full || entry.exampleSentence) && (
+                      <div className="flex flex-col gap-1 bg-muted/40 p-2.5 rounded-xl border border-border/50">
+                        <div className="flex items-center justify-between gap-2">
+                          <p className="font-sans text-xs text-foreground/90 leading-relaxed">
+                            &ldquo;{rich?.full || entry.exampleSentence}&rdquo;
+                          </p>
+                          <button
+                            type="button"
+                            onClick={() => speak(rich?.full || entry.exampleSentence)}
+                            aria-label="Listen to sentence"
+                            className="size-7 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 flex items-center justify-center shrink-0 transition-colors"
+                          >
+                            <Volume2 className="size-3" />
+                          </button>
+                        </div>
+                        {(entry.exampleArabic || entry.sentences[0]?.ar) && (
+                          <p className="font-arabic text-[11px] text-muted-foreground" dir="rtl">
+                            {entry.exampleArabic || entry.sentences[0]?.ar}
+                          </p>
+                        )}
+                      </div>
                     )}
                   </div>
                 );

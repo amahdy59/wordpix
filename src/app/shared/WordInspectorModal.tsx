@@ -1,5 +1,5 @@
 import { memo, useEffect, useRef } from "react";
-import { X, Volume2, Sparkles, BookOpen, Layers } from "lucide-react";
+import { X, Volume2, Sparkles, BookOpen, Layers, Zap } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { VocabularyItem } from "../data/lessons";
 import { getLexiconEntry } from "../data/lexiconDictionary";
@@ -43,7 +43,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/60 backdrop-blur-sm">
+      <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/70 backdrop-blur-sm">
         {/* Backdrop dismiss */}
         <div className="absolute inset-0" onClick={onClose} aria-hidden="true" />
 
@@ -55,12 +55,12 @@ export const WordInspectorModal = memo(function WordInspectorModal({
           role="dialog"
           aria-modal="true"
           aria-labelledby="word-inspector-title"
-          className="relative w-full max-w-lg bg-wp-card border border-border rounded-3xl shadow-wp-lg overflow-hidden flex flex-col max-h-[90vh] z-10"
+          className="relative w-full max-w-xl bg-wp-card border border-border rounded-3xl shadow-wp-lg overflow-hidden flex flex-col max-h-[92vh] z-10"
         >
           {/* Top Header with Image & Close Button */}
-          <div className="relative h-48 sm:h-56 w-full bg-muted overflow-hidden shrink-0">
+          <div className="relative h-44 sm:h-52 w-full bg-muted overflow-hidden shrink-0">
             <img src={word.img} alt="" className="size-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent" />
 
             {/* Close button */}
             <button
@@ -68,17 +68,17 @@ export const WordInspectorModal = memo(function WordInspectorModal({
               type="button"
               onClick={onClose}
               aria-label="Close word details"
-              className="absolute top-4 end-4 size-11 min-h-[44px] min-w-[44px] rounded-full bg-black/50 hover:bg-black/80 text-white flex items-center justify-center backdrop-blur-md transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white"
+              className="absolute top-3 end-3 size-11 min-h-[44px] min-w-[44px] rounded-full bg-black/60 hover:bg-black/90 text-white flex items-center justify-center backdrop-blur-md transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white"
             >
               <X className="size-5" />
             </button>
 
             {/* Word Header on bottom of image */}
-            <div className="absolute bottom-4 start-5 end-5 flex items-end justify-between gap-3">
+            <div className="absolute bottom-3.5 start-4 end-4 flex items-end justify-between gap-3">
               <div>
                 <span className="text-xs font-sans font-bold uppercase tracking-wider text-wp-amber flex items-center gap-1.5 drop-shadow">
                   <Sparkles className="size-3.5" />
-                  <span>Lexicon Inspector</span>
+                  <span>Oxford / Cambridge Lexicon</span>
                 </span>
                 <h2
                   id="word-inspector-title"
@@ -86,7 +86,9 @@ export const WordInspectorModal = memo(function WordInspectorModal({
                 >
                   {word.label.toLowerCase()}
                 </h2>
-                <p className="font-sans text-white/90 text-sm drop-shadow">{word.phonetic}</p>
+                <p className="font-sans text-white/90 text-sm drop-shadow font-mono">
+                  {entry.phonetic || word.phonetic}
+                </p>
               </div>
 
               {/* Fast Pronounce Button */}
@@ -94,7 +96,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
                 type="button"
                 onClick={() => speak(word.label)}
                 aria-label={`Pronounce ${word.label}`}
-                className="flex items-center gap-2 px-4 py-2 min-h-[44px] rounded-full bg-primary text-primary-foreground font-sans font-bold text-sm shadow-md hover:opacity-90 transition-all focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-white shrink-0"
+                className="flex items-center gap-2 px-4 py-2 min-h-[44px] rounded-full bg-primary text-primary-foreground font-sans font-bold text-sm shadow-md hover:opacity-90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-white shrink-0"
               >
                 <Volume2 className="size-4" />
                 <span>Listen</span>
@@ -103,12 +105,12 @@ export const WordInspectorModal = memo(function WordInspectorModal({
           </div>
 
           {/* Scrollable Content Body */}
-          <div className="p-5 sm:p-6 overflow-y-auto flex flex-col gap-4">
+          <div className="p-4 sm:p-6 overflow-y-auto flex flex-col gap-4">
             {/* Arabic Translation Card */}
             <div className="bg-primary/5 border border-primary/20 rounded-2xl p-4 flex items-center justify-between gap-3">
               <div>
                 <span className="font-sans text-xs font-bold text-muted-foreground uppercase tracking-wider">
-                  Arabic Meaning
+                  Verified Arabic Meaning
                 </span>
                 <p
                   className="font-arabic font-black text-foreground text-xl sm:text-2xl mt-0.5"
@@ -123,12 +125,23 @@ export const WordInspectorModal = memo(function WordInspectorModal({
               </span>
             </div>
 
-            {/* Natural Collocations */}
-            {entry.collocations.length > 0 && (
-              <div className="flex flex-col gap-2">
+            {/* Pronunciation Tip */}
+            {entry.pronunciationTip && (
+              <div className="bg-wp-amber/10 border border-wp-amber/25 rounded-2xl p-3.5 flex items-start gap-2.5">
+                <Sparkles className="size-4 text-wp-amber shrink-0 mt-0.5" />
+                <p className="font-sans text-xs text-foreground leading-relaxed">
+                  <strong className="font-bold">Pronunciation Guide: </strong>
+                  {entry.pronunciationTip}
+                </p>
+              </div>
+            )}
+
+            {/* Authentic Collocations (Up to 6) */}
+            {entry.collocations && entry.collocations.length > 0 && (
+              <div className="flex flex-col gap-2.5">
                 <span className="font-sans text-xs font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
                   <Layers className="size-3.5 text-primary" />
-                  <span>Common Word Partners (Collocations)</span>
+                  <span>Essential Collocations & Word Partners ({entry.collocations.length})</span>
                 </span>
                 <div className="flex flex-wrap gap-2">
                   {entry.collocations.map((col, idx) => (
@@ -136,55 +149,104 @@ export const WordInspectorModal = memo(function WordInspectorModal({
                       key={idx}
                       type="button"
                       onClick={() => speak(col)}
-                      aria-label={`Listen to phrase: ${col}`}
-                      className="flex items-center gap-1.5 px-3.5 py-2 min-h-[44px] rounded-xl bg-secondary text-foreground text-xs sm:text-sm font-sans font-semibold border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
+                      aria-label={`Listen to collocation: ${col}`}
+                      className="flex items-center gap-2 px-3.5 py-2 min-h-[44px] rounded-xl bg-secondary hover:bg-primary/10 text-foreground text-xs sm:text-sm font-sans font-semibold border border-border hover:border-primary/40 active:scale-95 transition-all cursor-pointer"
                     >
                       <span>{col}</span>
-                      <Volume2 className="size-3 text-muted-foreground" />
+                      <Volume2 className="size-3.5 text-muted-foreground" />
                     </button>
                   ))}
                 </div>
               </div>
             )}
 
-            {/* Real-World Context Example */}
-            <div className="bg-muted/40 border border-border rounded-2xl p-4 flex flex-col gap-2.5">
-              <div className="flex items-center justify-between">
+            {/* Related Phrasal Verbs (Up to 3) */}
+            {entry.phrasalVerbs && entry.phrasalVerbs.length > 0 && (
+              <div className="flex flex-col gap-2.5">
+                <span className="font-sans text-xs font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
+                  <Zap className="size-3.5 text-primary" />
+                  <span>Related Phrasal Verbs ({entry.phrasalVerbs.length})</span>
+                </span>
+                <div className="grid grid-cols-1 gap-2.5">
+                  {entry.phrasalVerbs.map((pv, idx) => (
+                    <div
+                      key={idx}
+                      className="bg-muted/30 border border-border/80 rounded-2xl p-3.5 flex flex-col gap-1.5"
+                    >
+                      <div className="flex items-center justify-between gap-2">
+                        <button
+                          type="button"
+                          onClick={() => speak(pv.phrase)}
+                          aria-label={`Pronounce phrasal verb: ${pv.phrase}`}
+                          className="flex items-center gap-1.5 text-primary font-sans font-bold text-sm hover:underline min-h-[44px] px-1"
+                        >
+                          <span>{pv.phrase}</span>
+                          <Volume2 className="size-3.5" />
+                        </button>
+                        <span
+                          className="font-arabic text-xs font-bold text-foreground bg-background/80 px-2.5 py-1 rounded-lg border border-border"
+                          dir="rtl"
+                          lang="ar"
+                        >
+                          {pv.arabic}
+                        </span>
+                      </div>
+                      <p className="font-sans text-xs text-muted-foreground italic">
+                        &ldquo;{pv.example}&rdquo;
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* 3+ Contextual Example Sentences */}
+            {entry.sentences && entry.sentences.length > 0 && (
+              <div className="flex flex-col gap-2.5">
                 <span className="font-sans text-xs font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
                   <BookOpen className="size-3.5 text-primary" />
-                  <span>Example Sentence</span>
+                  <span>Real-World Usage Contexts ({entry.sentences.length})</span>
                 </span>
-                <button
-                  type="button"
-                  onClick={() => speak(entry.exampleSentence)}
-                  aria-label="Listen to example sentence"
-                  className="flex items-center gap-1 text-xs font-sans font-bold text-primary hover:underline min-h-[44px] px-2"
-                >
-                  <Volume2 className="size-3.5" />
-                  <span>Play Sentence</span>
-                </button>
-              </div>
+                <div className="flex flex-col gap-3">
+                  {entry.sentences.map((sentence, idx) => (
+                    <div
+                      key={idx}
+                      className="bg-muted/40 border border-border rounded-2xl p-4 flex flex-col gap-2 transition-colors hover:border-primary/30"
+                    >
+                      <div className="flex items-center justify-between gap-2">
+                        {sentence.context ? (
+                          <span className="text-[11px] font-sans font-bold px-2.5 py-0.5 rounded-md bg-primary/10 text-primary uppercase tracking-wide">
+                            {sentence.context}
+                          </span>
+                        ) : (
+                          <span className="text-[11px] font-sans font-bold text-muted-foreground uppercase">
+                            Context {idx + 1}
+                          </span>
+                        )}
+                        <button
+                          type="button"
+                          onClick={() => speak(sentence.en)}
+                          aria-label={`Listen to example ${idx + 1}`}
+                          className="flex items-center gap-1 text-xs font-sans font-bold text-primary hover:underline min-h-[44px] px-2"
+                        >
+                          <Volume2 className="size-3.5" />
+                          <span>Play</span>
+                        </button>
+                      </div>
 
-              <p className="font-sans text-foreground text-sm sm:text-base leading-relaxed">
-                &ldquo;{entry.exampleSentence}&rdquo;
-              </p>
-              <p
-                className="font-arabic text-muted-foreground text-xs sm:text-sm"
-                dir="rtl"
-                lang="ar"
-              >
-                {entry.exampleArabic}
-              </p>
-            </div>
-
-            {/* Pronunciation Tip */}
-            {entry.pronunciationTip && (
-              <div className="bg-wp-amber/10 border border-wp-amber/20 rounded-2xl p-3.5 flex items-start gap-2.5">
-                <Sparkles className="size-4 text-wp-amber shrink-0 mt-0.5" />
-                <p className="font-sans text-xs text-foreground leading-relaxed">
-                  <strong className="font-bold">Pronunciation Tip: </strong>
-                  {entry.pronunciationTip}
-                </p>
+                      <p className="font-sans text-foreground text-sm sm:text-base leading-relaxed">
+                        &ldquo;{sentence.en}&rdquo;
+                      </p>
+                      <p
+                        className="font-arabic text-muted-foreground text-xs sm:text-sm"
+                        dir="rtl"
+                        lang="ar"
+                      >
+                        {sentence.ar}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
           </div>
@@ -194,7 +256,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
             <button
               type="button"
               onClick={onClose}
-              className="w-full sm:w-auto px-6 py-2.5 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-xs hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="w-full sm:w-auto px-6 py-2.5 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-xs hover:opacity-90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
             >
               Done
             </button>

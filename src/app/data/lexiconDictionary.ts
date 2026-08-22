@@ -1,579 +1,10440 @@
-﻿export interface LexiconEntry {
+// Centralized Lexicon Dictionary for WordPix
+// Rich vocabulary data researched from Cambridge Advanced Learner's Dictionary,
+// Oxford Advanced Learner's Dictionary, and Merriam-Webster.
+// Language level strictly capped at CEFR B2 for clarity and learner accessibility.
+
+export interface LexiconSentence {
+  context?: string;
+  en: string;
+  ar: string;
+}
+
+export interface LexiconPhrasalVerb {
+  phrase: string;
+  meaning: string;
+  arabic: string;
+  example: string;
+}
+
+export interface LexiconEntry {
   id: string;
   arabic: string;
   partOfSpeech: "noun" | "verb" | "adjective" | "phrase";
+  phonetic?: string;
+  pronunciationTip?: string;
   collocations: string[];
+  phrasalVerbs?: LexiconPhrasalVerb[];
+  sentences: LexiconSentence[];
   exampleSentence: string;
   exampleArabic: string;
-  pronunciationTip?: string;
 }
 
 export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
-  // --- THE BEDROOM: FURNITURE ---
-  bed: {
-    id: "bed",
-    arabic: "سَرِير",
+  "alarm-clock": {
+    id: "alarm-clock",
+    arabic: "سَاعَةُ المُنَبِّه (مُنَبِّه)",
     partOfSpeech: "noun",
-    collocations: ["make the bed", "go to bed", "comfortable bed"],
-    exampleSentence: "She made her bed neatly every morning.",
-    exampleArabic: "رتّبت سريرها بدقة كل صباح.",
-    pronunciationTip: "Short 'e' sound, like in 'red'.",
+    phonetic: "əˈlɑːrm ˌklɑːk",
+    pronunciationTip: "Second syllable of 'alarm' and 'clock' carry strong primary vowels.",
+    collocations: [
+      "set the alarm clock",
+      "alarm clock rings",
+      "digital alarm clock",
+      "turn off the alarm clock",
+      "snooze the alarm",
+      "bedside alarm clock",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "go off",
+        meaning: "ring or sound an alarm",
+        arabic: "يَرِنُّ المُنَبِّه",
+        example: "My alarm clock goes off at 6:30 every weekday morning.",
+      },
+      {
+        phrase: "wake up",
+        meaning: "stop sleeping due to an alarm",
+        arabic: "يَسْتَيْقِظُ",
+        example: "I woke up immediately when the alarm clock buzzed.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Morning Routine",
+        en: "He set his alarm clock for six o'clock to catch the early train.",
+        ar: "ضَبَطَ سَاعَةَ المُنَبِّهِ عَلَى السَّادِسَةِ صَبَاحاً لِيَلْحَقَ بِالقِطَارِ المُبَكِّرِ.",
+      },
+      {
+        context: "Waking Up",
+        en: "The alarm clock rang loudly on the nightstand, waking everyone up.",
+        ar: "رَنَّ المُنَبِّهُ بِصَوْتٍ عَالٍ عَلَى طَاوِلَةِ السَّرِيرِ، مُوقِظاً الجَمِيعَ.",
+      },
+      {
+        context: "Modern Living",
+        en: "She prefers a sunrise alarm clock that gradually fills the room with light.",
+        ar: "تُفَضِّلُ مُنَبِّهاً يُحَاكِي الشُّرُوقَ حَيْثُ يَمْلَأُ الغُرْفَةَ بِالضَّوْءِ تَدْرِيجِيّاً.",
+      },
+    ],
+    exampleSentence: "He set his alarm clock for six o'clock to catch the early train.",
+    exampleArabic:
+      "ضَبَطَ سَاعَةَ المُنَبِّهِ عَلَى السَّادِسَةِ صَبَاحاً لِيَلْحَقَ بِالقِطَارِ المُبَكِّرِ.",
   },
-  nightstand: {
-    id: "nightstand",
-    arabic: "طَاوِلَةُ السَّرِير (كُمودِينَة)",
+  "aluminum-foil": {
+    id: "aluminum-foil",
+    arabic: "وَرَقُ أَلُومِنْيُوم (سُولِيفَان / وَرَقُ قَصْدِير)",
     partOfSpeech: "noun",
-    collocations: ["on the nightstand", "beside the bed", "wooden nightstand"],
-    exampleSentence: "I keep a glass of water on my nightstand.",
-    exampleArabic: "أضع كوباً من الماء على طاولة السرير.",
-    pronunciationTip: "Compound word: NIGHT + STAND.",
+    phonetic: "əˈluː.mɪ.nəm ˌfɔɪl",
+    pronunciationTip: "American: /əˈluː.mɪ.nəm/ (stress on 'LU'). Diphthong 'oil' (/ɔɪl/) in foil.",
+    collocations: [
+      "roll of aluminum foil",
+      "wrap in aluminum foil",
+      "line with foil",
+      "heavy-duty foil",
+      "cover with foil",
+      "baking foil",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wrap up in",
+        meaning: "enclose food in foil for baking or grilling",
+        arabic: "يَلُفُّ فِي القَصْدِير",
+        example: "Wrap up baked potatoes in foil before roasting them in hot coals.",
+      },
+      {
+        phrase: "cover with",
+        meaning: "shield food with foil",
+        arabic: "يُغَطِّي بِالقَصْدِير",
+        example: "Cover the turkey with foil so the breast meat stays moist.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Roasting Meat",
+        en: "She covered the roasting pan with aluminum foil to keep the roast juicy and tender.",
+        ar: "غَطَّتْ صِينِيَّةَ الشَّيِّ بِوَرَقِ الأَلُومِنْيُوم لِلْحِفَاظِ عَلَى طَرَاوَةِ اللَّحْمِ.",
+      },
+      {
+        context: "Easy Cleanup",
+        en: "Line your baking sheet with heavy-duty aluminum foil for quick post-dinner cleanup.",
+        ar: "بَطِّنْ صِينِيَّةَ الخَبْزِ بِوَرَقِ القَصْدِيرِ السَّمِيكِ لِتَسْهِيلِ التَّنْظِيفِ بَعْدَ العَشَاءِ.",
+      },
+      {
+        context: "Outdoor Grilling",
+        en: "Wrap corn on the cob in buttered foil and place it directly on the hot grill.",
+        ar: "لُفَّ عِرْنَاسَ الذُّرَةِ المَدْهُونَ بِالزُّبْدَةِ فِي القَصْدِيرِ وَضَعْهُ عَلَى الشِّوَايَةِ.",
+      },
+    ],
+    exampleSentence:
+      "She covered the roasting pan with aluminum foil to keep the roast juicy and tender.",
+    exampleArabic:
+      "غَطَّتْ صِينِيَّةَ الشَّيِّ بِوَرَقِ الأَلُومِنْيُوم لِلْحِفَاظِ عَلَى طَرَاوَةِ اللَّحْمِ.",
   },
-  dresser: {
-    id: "dresser",
-    arabic: "خِزَانَةُ الأَدْرَاج (تَسْرِيحَة)",
+  apron: {
+    id: "apron",
+    arabic: "مِرْيَلَةُ مَطْبَخ (مِرْيَلَة)",
     partOfSpeech: "noun",
-    collocations: ["dresser drawer", "oak dresser", "mirror on the dresser"],
-    exampleSentence: "He stored his folded shirts inside the dresser.",
-    exampleArabic: "خزّن قمصانه المطوية داخل خزانة الأدراج.",
-  },
-  wardrobe: {
-    id: "wardrobe",
-    arabic: "خِزَانَةُ المَلابِس (دُولاب)",
-    partOfSpeech: "noun",
-    collocations: ["hang clothes in the wardrobe", "tall wardrobe", "wooden wardrobe"],
-    exampleSentence: "She hung her winter coat inside the wardrobe.",
-    exampleArabic: "علّقت معطفها الشتوي داخل خزانة الملابس.",
-  },
-  desk: {
-    id: "desk",
-    arabic: "مَكْتَب",
-    partOfSpeech: "noun",
-    collocations: ["study desk", "sit at the desk", "desk lamp"],
-    exampleSentence: "He sits at his desk to finish his homework.",
-    exampleArabic: "يجلس عند مكتبه لإنهاء واجباته المدرسية.",
-  },
-  chair: {
-    id: "chair",
-    arabic: "كُرْسِيّ",
-    partOfSpeech: "noun",
-    collocations: ["sit on a chair", "desk chair", "comfortable chair"],
-    exampleSentence: "Pull up a chair and join the discussion.",
-    exampleArabic: "اسحب كرسياً وانضم إلى المناقشة.",
-  },
-  bookshelf: {
-    id: "bookshelf",
-    arabic: "رَفُّ الكُتُب / مَكْتَبَةٌ خَشَبِيَّة",
-    partOfSpeech: "noun",
-    collocations: ["on the bookshelf", "organize the bookshelf", "wooden bookshelf"],
-    exampleSentence: "His bookshelf is packed with classic novels.",
-    exampleArabic: "رف كتبه مليء بالروايات الكلاسيكية.",
-  },
-  mirror: {
-    id: "mirror",
-    arabic: "مِرْآة",
-    partOfSpeech: "noun",
-    collocations: ["look in the mirror", "full-length mirror", "wall mirror"],
-    exampleSentence: "She checked her hair in the mirror before leaving.",
-    exampleArabic: "تفقدت شعرها في المرآة قبل المغادرة.",
-  },
-  stool: {
-    id: "stool",
-    arabic: "مِقْعَدٌ دُونَ ظَهْر (طَبْلِيَّة/كُرْسِيّ صَغِير)",
-    partOfSpeech: "noun",
-    collocations: ["sit on a stool", "wooden stool", "step stool"],
-    exampleSentence: "He stepped on the stool to reach the high shelf.",
-    exampleArabic: "وقف على المقعد الصغير للوصول إلى الرف العالي.",
-  },
-  "chest-of-drawers": {
-    id: "chest-of-drawers",
-    arabic: "خِزَانَةُ أَدْرَاج",
-    partOfSpeech: "noun",
-    collocations: ["top drawer of the chest", "wooden chest of drawers"],
-    exampleSentence: "She organized all her socks in the chest of drawers.",
-    exampleArabic: "نظّمت جميع جواربها في خزانة الأدراج.",
-  },
-
-  // --- THE BEDROOM: BEDDING & LINEN ---
-  pillow: {
-    id: "pillow",
-    arabic: "وِسَادَة / مِخَدَّة",
-    partOfSpeech: "noun",
-    collocations: ["fluff the pillow", "soft pillow", "feather pillow"],
-    exampleSentence: "She rested her head on the soft feather pillow.",
-    exampleArabic: "أسندت رأسها على الوسادة الريشية الناعمة.",
-  },
-  blanket: {
-    id: "blanket",
-    arabic: "بَطَّانِيَّة / غِطَاء",
-    partOfSpeech: "noun",
-    collocations: ["warm blanket", "wool blanket", "pull up the blanket"],
-    exampleSentence: "He wrapped himself in a warm wool blanket.",
-    exampleArabic: "لفّ نفسه ببطانية صوفية دافئة.",
-  },
-  sheet: {
-    id: "sheet",
-    arabic: "مِلْحَفَة / مِلَايَةُ السَّرِير",
-    partOfSpeech: "noun",
-    collocations: ["clean sheet", "fitted sheet", "cotton sheets"],
-    exampleSentence: "She smoothed the crisp white sheet over the mattress.",
-    exampleArabic: "فردت الملحفة البيضاء النظيفة على المرتبة.",
-  },
-  mattress: {
-    id: "mattress",
-    arabic: "مَرْتَبَة / فِرَاش",
-    partOfSpeech: "noun",
-    collocations: ["firm mattress", "memory foam mattress", "new mattress"],
-    exampleSentence: "A good mattress supports your back while you sleep.",
-    exampleArabic: "المرتبة الجيدة تدعم ظهرك أثناء النوم.",
-  },
-  duvet: {
-    id: "duvet",
-    arabic: "لِحَافٌ مَحْشُوّ",
-    partOfSpeech: "noun",
-    collocations: ["warm duvet", "duvet cover", "down duvet"],
-    exampleSentence: "The thick duvet kept them warm all winter.",
-    exampleArabic: "أبقاهم اللحاف السميك دافئين طوال الشتاء.",
-  },
-  pillowcase: {
-    id: "pillowcase",
-    arabic: "غِطَاءُ الوِسَادَة (كِيسُ المِخَدَّة)",
-    partOfSpeech: "noun",
-    collocations: ["silk pillowcase", "change the pillowcase", "cotton pillowcase"],
-    exampleSentence: "He slipped a fresh cotton pillowcase onto the pillow.",
-    exampleArabic: "وضع غطاء قطنياً جديداً على الوسادة.",
-  },
-  comforter: {
-    id: "comforter",
-    arabic: "لِحَافٌ خَفِيفٌ دَافِئ",
-    partOfSpeech: "noun",
-    collocations: ["fluffy comforter", "quilted comforter", "patterned comforter"],
-    exampleSentence: "She pulled the cozy comforter up to her chin.",
-    exampleArabic: "سحبت اللحاف المريح حتى ذقنها.",
-  },
-  cushion: {
-    id: "cushion",
-    arabic: "وِسَادَةُ زِينَة (خُدَّادِيَّة)",
-    partOfSpeech: "noun",
-    collocations: ["throw cushion", "decorative cushion", "soft cushion"],
-    exampleSentence: "The colorful cushions brightened up the room.",
-    exampleArabic: "أضفت وسائد الزينة الملونة بهجة على الغرفة.",
-  },
-  "bed-frame": {
-    id: "bed-frame",
-    arabic: "هَيْكَلُ السَّرِير",
-    partOfSpeech: "noun",
-    collocations: ["wooden bed frame", "metal bed frame", "sturdy bed frame"],
-    exampleSentence: "The solid oak bed frame was easy to assemble.",
-    exampleArabic: "كان هيكل السرير الخشبي المتين سهل التركيب.",
-  },
-  headboard: {
-    id: "headboard",
-    arabic: "لَوْحُ رَأْسِ السَّرِير (خَلْفِيَّةُ السَّرِير)",
-    partOfSpeech: "noun",
-    collocations: ["upholstered headboard", "wooden headboard", "lean against the headboard"],
-    exampleSentence: "He leaned back against the padded headboard to read.",
-    exampleArabic: "استند إلى خلفية السرير المبطنة للقراءة.",
-  },
-
-  // --- THE BEDROOM: FEATURES & LIGHTING ---
-  lamp: {
-    id: "lamp",
-    arabic: "مِصْبَاح / أَبَاجُورَة",
-    partOfSpeech: "noun",
-    collocations: ["turn on the lamp", "desk lamp", "bedside lamp"],
-    exampleSentence: "She switched on the bedside lamp to read her book.",
-    exampleArabic: "أضاءت مصباح السرير لتقرأ كتابها.",
-  },
-  curtain: {
-    id: "curtain",
-    arabic: "سِتَارَة",
-    partOfSpeech: "noun",
-    collocations: ["draw the curtains", "open the curtains", "heavy curtains"],
-    exampleSentence: "He drew the curtains to block out the morning sunlight.",
-    exampleArabic: "أسدل الستائر لحجب ضوء شمس الصباح.",
-  },
-  window: {
-    id: "window",
-    arabic: "نَافِذَة / شُبَّاك",
-    partOfSpeech: "noun",
-    collocations: ["open the window", "look through the window", "window frame"],
-    exampleSentence: "She opened the window to let in the fresh breeze.",
-    exampleArabic: "فتحت النافذة لتسمح بدخول النسيم العليل.",
-  },
-  door: {
-    id: "door",
-    arabic: "بَاب",
-    partOfSpeech: "noun",
-    collocations: ["close the door", "lock the door", "knock on the door"],
-    exampleSentence: "Please close the door quietly when you leave.",
-    exampleArabic: "يرجى إغلاق الباب بهدوء عند المغادرة.",
-  },
-  rug: {
-    id: "rug",
-    arabic: "سَجَّادَةٌ صَغِيرَة",
-    partOfSpeech: "noun",
-    collocations: ["area rug", "fluffy rug", "step onto the rug"],
-    exampleSentence: "A soft wool rug warmed the hardwood floor.",
-    exampleArabic: "سجادة صوفية ناعمة منحت الأرضية الخشبية دفئاً.",
-  },
-
-  // --- THE FARM: ANIMALS & NATURE ---
-  cow: {
-    id: "cow",
-    arabic: "بَقَرَة",
-    partOfSpeech: "noun",
-    collocations: ["dairy cow", "milk the cow", "grazing cow"],
-    exampleSentence: "The black and white cow grazed peacefully in the meadow.",
-    exampleArabic: "كانت البقرة ذات اللونين الأبيض والأسود ترعى بسلام في المرعى.",
-  },
-  horse: {
-    id: "horse",
-    arabic: "حِصَان / خَيْل",
-    partOfSpeech: "noun",
-    collocations: ["ride a horse", "wild horse", "horse in the stable"],
-    exampleSentence: "The brown horse galloped across the open field.",
-    exampleArabic: "عدا الحصان البني عبر الحقل المفتوح.",
-  },
-  sheep: {
-    id: "sheep",
-    arabic: "خَرُوف / نَعْجَة",
-    partOfSpeech: "noun",
-    collocations: ["flock of sheep", "shear the sheep", "white sheep"],
-    exampleSentence: "The shepherd guided the flock of sheep up the green hill.",
-    exampleArabic: "وجّه الراعي قطيع الخراف صعوداً إلى التل الأخضر.",
-  },
-  goat: {
-    id: "goat",
-    arabic: "مَاعِز / عَنْزَة",
-    partOfSpeech: "noun",
-    collocations: ["goat milk", "mountain goat", "feed the goat"],
-    exampleSentence: "The playful goat climbed on top of the wooden fence.",
-    exampleArabic: "تسلقت الماعز المرحة أعلى السياج الخشبي.",
-  },
-  pig: {
-    id: "pig",
-    arabic: "خِنْزِير",
-    partOfSpeech: "noun",
-    collocations: ["pig in the pen", "feed the pigs", "muddy pig"],
-    exampleSentence: "The pigs rested in the cool shade near the trough.",
-    exampleArabic: "استراحت الحيوانات في الظل البارد بالقرب من الحوض.",
-  },
-  chicken: {
-    id: "chicken",
-    arabic: "دَجَاجَة",
-    partOfSpeech: "noun",
-    collocations: ["raise chickens", "chicken coop", "fresh chicken eggs"],
-    exampleSentence: "The hens pecked at grain around the farmyard.",
-    exampleArabic: "نقرت الدجاجات الحبوب حول فناء المزرعة.",
-  },
-  rooster: {
-    id: "rooster",
-    arabic: "دِيك",
-    partOfSpeech: "noun",
-    collocations: ["crowing rooster", "early morning rooster", "rooster on the fence"],
-    exampleSentence: "The rooster crowed loudly as the sun rose.",
-    exampleArabic: "صاح الديك بصوت عالٍ مع شروق الشمس.",
-  },
-  duck: {
-    id: "duck",
-    arabic: "بَطَّة",
-    partOfSpeech: "noun",
-    collocations: ["duck in the pond", "swimming ducks", "feed the ducks"],
-    exampleSentence: "A family of ducks swam in a straight row across the pond.",
-    exampleArabic: "سبحت عائلة من البط في صف مستقيم عبر البركة.",
-  },
-  barn: {
-    id: "barn",
-    arabic: "حَظِيرَة / إِسْطَبْلٌ كَبِير",
-    partOfSpeech: "noun",
-    collocations: ["red barn", "inside the barn", "store hay in the barn"],
-    exampleSentence: "The farmer parked the tractor inside the spacious red barn.",
-    exampleArabic: "أوقف المزارع الجرار داخل الحظيرة الحمراء الفسيحة.",
-  },
-  farmhouse: {
-    id: "farmhouse",
-    arabic: "بَيْتُ المَزْرَعَة",
-    partOfSpeech: "noun",
-    collocations: ["old farmhouse", "cozy farmhouse", "live in a farmhouse"],
-    exampleSentence: "Smoke rose from the chimney of the quiet farmhouse.",
-    exampleArabic: "تصاعد الدخان من مدخنة بيت المزرعة الهادئ.",
-  },
-  stable: {
-    id: "stable",
-    arabic: "إِسْطَبْلُ الخُيُول",
-    partOfSpeech: "noun",
-    collocations: ["horse stable", "clean the stable", "wooden stable"],
-    exampleSentence: "He led the horse back to its clean stable for the night.",
-    exampleArabic: "قاد الحصان عائداً إلى إسطبله النظيف للمبيت.",
-  },
-  tractor: {
-    id: "tractor",
-    arabic: "جَرَّارٌ زِرَاعِيّ",
-    partOfSpeech: "noun",
-    collocations: ["drive a tractor", "green tractor", "plow with a tractor"],
-    exampleSentence: "The farmer used his tractor to plow the large field.",
-    exampleArabic: "استخدم المزارع جراره لحرث الحقل الكبير.",
-  },
-  windmill: {
-    id: "windmill",
-    arabic: "طَاحُونَةُ هَوَاء",
-    partOfSpeech: "noun",
-    collocations: ["spinning windmill", "tall windmill", "wooden windmill"],
-    exampleSentence: "The windmill pumped fresh water from deep underground.",
-    exampleArabic: "ضخت طاحونة الهواء مياهاً عذبة من أعماق الأرض.",
-  },
-  fence: {
-    id: "fence",
-    arabic: "سِيَاج / سُور",
-    partOfSpeech: "noun",
-    collocations: ["wooden fence", "white picket fence", "build a fence"],
-    exampleSentence: "A sturdy wooden fence enclosed the pasture.",
-    exampleArabic: "أحاط سياج خشبي متين بالمرعى.",
-  },
-  well: {
-    id: "well",
-    arabic: "بِئْرُ مَاء",
-    partOfSpeech: "noun",
-    collocations: ["draw water from the well", "stone well", "deep well"],
-    exampleSentence: "They drew a bucket of cool water from the stone well.",
-    exampleArabic: "سحبوا دلواً من الماء البارد من البئر الحجرية.",
-  },
-  silo: {
-    id: "silo",
-    arabic: "صَوْمَعَةُ حُبُوب",
-    partOfSpeech: "noun",
-    collocations: ["grain silo", "tall silver silo", "store corn in the silo"],
-    exampleSentence: "The tall silver silo was filled with freshly harvested corn.",
-    exampleArabic: "كانت صومعة الحبوب الفضية العالية ممتلئة بالذرة المحصودة حديثاً.",
-  },
-  greenhouse: {
-    id: "greenhouse",
-    arabic: "دَفِيئَةٌ زِرَاعِيَّة (صَوْبَة)",
-    partOfSpeech: "noun",
-    collocations: ["glass greenhouse", "grow tomatoes in the greenhouse"],
-    exampleSentence: "Delicate seedlings grew safely inside the warm greenhouse.",
-    exampleArabic: "نمت الشتلات الرقيقة بأمان داخل الدفيئة الدافئة.",
-  },
-  shed: {
-    id: "shed",
-    arabic: "سَقِيفَة / كُوخُ الأَدَوَات",
-    partOfSpeech: "noun",
-    collocations: ["tool shed", "garden shed", "wooden shed"],
-    exampleSentence: "He grabbed a shovel from the backyard tool shed.",
-    exampleArabic: "أخذ مجرفة من سقيفة الأدوات في الفناء الخلفي.",
-  },
-
-  // --- THE KITCHEN: APPLIANCES & COOKWARE ---
-  refrigerator: {
-    id: "refrigerator",
-    arabic: "ثَلَّاجَة (بَرَّاد)",
-    partOfSpeech: "noun",
-    collocations: ["open the refrigerator", "keep milk in the refrigerator"],
-    exampleSentence: "She put the fresh groceries into the refrigerator.",
-    exampleArabic: "وضعت البقالة الطازجة في الثلاجة.",
-  },
-  oven: {
-    id: "oven",
-    arabic: "فُرْن",
-    partOfSpeech: "noun",
-    collocations: ["bake in the oven", "preheat the oven", "hot oven"],
-    exampleSentence: "He baked a delicious loaf of bread in the oven.",
-    exampleArabic: "خبز رغيفاً لذيذاً من الخبز في الفرن.",
-  },
-  stove: {
-    id: "stove",
-    arabic: "مَوْقِدُ غَاز / بَوْتَاجَاز",
-    partOfSpeech: "noun",
-    collocations: ["cook on the stove", "gas stove", "turn off the stove"],
-    exampleSentence: "A pot of hot soup simmered on the stove.",
-    exampleArabic: "كان قدر الحساء الساخن يغلي بهدوء على الموقد.",
-  },
-  microwave: {
-    id: "microwave",
-    arabic: "مَايكْرُووِيف",
-    partOfSpeech: "noun",
-    collocations: ["warm up in the microwave", "microwave oven"],
-    exampleSentence: "She heated her lunch in the microwave for two minutes.",
-    exampleArabic: "سخّنت غداءها في المايكروويف لمدة دقيقتين.",
-  },
-  toaster: {
-    id: "toaster",
-    arabic: "مِحْمَصَةُ الخُبْز",
-    partOfSpeech: "noun",
-    collocations: ["pop out of the toaster", "slice of bread in the toaster"],
-    exampleSentence: "He toasted two slices of whole wheat bread in the toaster.",
-    exampleArabic: "حمّص شريحتين من خبز القمح الكامل في المحمصة.",
-  },
-  kettle: {
-    id: "kettle",
-    arabic: "غَلَّايَةُ مَاء (كَتْل)",
-    partOfSpeech: "noun",
-    collocations: ["boil the kettle", "electric kettle", "whistling kettle"],
-    exampleSentence: "She filled the electric kettle to make morning tea.",
-    exampleArabic: "ملأت الغلاية الكهربائية لإعداد شاي الصباح.",
-  },
-  blender: {
-    id: "blender",
-    arabic: "خَلَّاطٌ كَهْرَبَائِيّ",
-    partOfSpeech: "noun",
-    collocations: ["fruit in the blender", "smoothie blender"],
-    exampleSentence: "He blended fresh strawberries and bananas into a smoothie.",
-    exampleArabic: "خلط الفراولة الطازجة والموز في الخلاط لصنع عصير.",
-  },
-  sink: {
-    id: "sink",
-    arabic: "حَوْضُ الغَسِيل (مَجْلَى)",
-    partOfSpeech: "noun",
-    collocations: ["kitchen sink", "wash dishes in the sink"],
-    exampleSentence: "She rinsed the fresh vegetables in the kitchen sink.",
-    exampleArabic: "غسلت الخضروات الطازجة في حوض المطبخ.",
-  },
-  cabinet: {
-    id: "cabinet",
-    arabic: "خِزَانَةُ المَطْبَخ (دُولاب)",
-    partOfSpeech: "noun",
-    collocations: ["kitchen cabinet", "spices in the cabinet"],
-    exampleSentence: "He opened the cabinet to grab a clean coffee mug.",
-    exampleArabic: "فتح خزانة المطبخ ليأخذ كوب قهوة نظيفاً.",
-  },
-  pot: {
-    id: "pot",
-    arabic: "قِدْر / حَلَّةُ طَبْخ",
-    partOfSpeech: "noun",
-    collocations: ["cooking pot", "boil water in a pot", "soup pot"],
-    exampleSentence: "She stirred the tomato sauce simmering in the large pot.",
-    exampleArabic: "حرّكت صلصة الطماطم التي تغلي في القدر الكبير.",
-  },
-  pan: {
-    id: "pan",
-    arabic: "مِقْلَاة / طَاسَة",
-    partOfSpeech: "noun",
-    collocations: ["frying pan", "non-stick pan", "sizzle in the pan"],
-    exampleSentence: "He fried two eggs in the non-stick pan.",
-    exampleArabic: "قلى بيضتين في المقلاة غير اللاصقة.",
-  },
-  knife: {
-    id: "knife",
-    arabic: "سِكِّين",
-    partOfSpeech: "noun",
-    collocations: ["sharp knife", "cut with a knife", "chef's knife"],
-    exampleSentence: "Use a sharp knife to slice the ripe tomatoes.",
-    exampleArabic: "استخدم سكيناً حادة لتقطيع الطماطم الناضجة.",
-  },
-  spoon: {
-    id: "spoon",
-    arabic: "مِلْعَقَة",
-    partOfSpeech: "noun",
-    collocations: ["soup spoon", "stir with a spoon", "wooden spoon"],
-    exampleSentence: "He stirred the honey into his tea with a spoon.",
-    exampleArabic: "حرّك العسل في شايِه بالملعقة.",
-  },
-  fork: {
-    id: "fork",
-    arabic: "شَوْكَة",
-    partOfSpeech: "noun",
-    collocations: ["knife and fork", "eat with a fork"],
-    exampleSentence: "She picked up her fork and enjoyed the delicious salad.",
-    exampleArabic: "أمسكت شوكتها واستمتعت بالسلطة اللذيذة.",
-  },
-  plate: {
-    id: "plate",
-    arabic: "صَحْن / طَبَق",
-    partOfSpeech: "noun",
-    collocations: ["dinner plate", "place on a plate", "ceramic plate"],
-    exampleSentence: "He served the hot pasta onto a ceramic plate.",
-    exampleArabic: "قدّم المعكرونة الساخنة في طبق خزفي.",
-  },
-  cup: {
-    id: "cup",
-    arabic: "كُوب / فِنْجَان",
-    partOfSpeech: "noun",
-    collocations: ["cup of coffee", "tea cup", "measuring cup"],
-    exampleSentence: "She drank a warm cup of herbal tea before bed.",
-    exampleArabic: "شربت كوباً دافئاً من شاي الأعشاب قبل النوم.",
-  },
-
-  // --- THE LIVING ROOM: SEATING & MEDIA ---
-  sofa: {
-    id: "sofa",
-    arabic: "كَنَبَة / أَرِيكَة",
-    partOfSpeech: "noun",
-    collocations: ["sit on the sofa", "leather sofa", "comfortable sofa"],
-    exampleSentence: "The family gathered on the comfortable sofa to watch a movie.",
-    exampleArabic: "اجتمعت العائلة على الأريكة المريحة لمشاهدة فيلم.",
+    phonetic: "ˈeɪ.prən",
+    pronunciationTip: "Long 'a' vowel /eɪ/ as in 'April', followed by soft /prən/.",
+    collocations: [
+      "wear an apron",
+      "tie an apron",
+      "chef's apron",
+      "cotton apron",
+      "linen apron",
+      "apron pockets",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put on",
+        meaning: "wear an apron",
+        arabic: "يَرْتَدِي المِرْيَلَة",
+        example: "He put on his striped chef apron before preparing dinner.",
+      },
+      {
+        phrase: "tie up",
+        meaning: "fasten apron strings behind back",
+        arabic: "يَرْبِطُ حِبَالَ المِرْيَلَة",
+        example: "She tied up the apron straps neatly around her waist.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cooking Preparation",
+        en: "She tied on a heavy cotton apron to protect her clothes from flour and sauce.",
+        ar: "رَبَطَتْ مِرْيَلَةَ مَطْبَخٍ قُطْنِيَّةً سَمِيكَةً لِحِمَايَةِ مَلابِسِهَا مِنَ الطَّحِينِ وَالصَّلْصَةِ.",
+      },
+      {
+        context: "Professional Kitchen",
+        en: "All restaurant chefs wear clean white aprons with deep front utility pockets.",
+        ar: "يَرْتَدِي جَمِيعُ طُهَاةِ المَطْعَمِ مَرَايِلَ بَيْضَاءَ نَظِيفَةً ذَاتَ جُيُوبٍ أَمَامِيَّةٍ عَمِيقَةٍ.",
+      },
+      {
+        context: "Baking with Kids",
+        en: "The children wore mini aprons while decorating cupcakes on Saturday afternoon.",
+        ar: "ارْتَدَى الأَطْفَالُ مَرَايِلَ صَغِيرَةً أَثْنَاءَ تَزْيِينِ الكَبْ كِيك بَعْدَ ظُهْرِ السَّبْتِ.",
+      },
+    ],
+    exampleSentence:
+      "She tied on a heavy cotton apron to protect her clothes from flour and sauce.",
+    exampleArabic:
+      "رَبَطَتْ مِرْيَلَةَ مَطْبَخٍ قُطْنِيَّةً سَمِيكَةً لِحِمَايَةِ مَلابِسِهَا مِنَ الطَّحِينِ وَالصَّلْصَةِ.",
   },
   armchair: {
     id: "armchair",
     arabic: "كُرْسِيٌّ بِذِرَاعَيْن (فُوتِيه)",
     partOfSpeech: "noun",
-    collocations: ["cozy armchair", "leather armchair", "sit back in the armchair"],
-    exampleSentence: "Grandfather relaxed in his favorite leather armchair.",
-    exampleArabic: "استرخى الجد في كرسيه الجلدي المفضل ذي الذراعين.",
+    phonetic: "ˈɑːrm.tʃɛər",
+    pronunciationTip: "Compound noun: 'ARM' (/ɑːrm/) + 'CHAIR' (/tʃɛər/).",
+    collocations: [
+      "cozy armchair",
+      "leather armchair",
+      "sit in an armchair",
+      "reading armchair",
+      "armchair by the window",
+      "wingback armchair",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "settle into",
+        meaning: "sit comfortably in an armchair",
+        arabic: "يَسْتَقِرُّ بِرَاحَة",
+        example: "He settled into the leather armchair with a warm cup of coffee.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Reading Corner",
+        en: "She curled up in the velvet armchair beside the window with an absorbing novel.",
+        ar: "جَلَسَتْ مُسْتَرْخِيَةً فِي الكُرْسِيِّ المَخْمَلِيِّ بِجِوَارِ النَّافِذَةِ مَعَ رِوَايَةٍ شَيِّقَةٍ.",
+      },
+      {
+        context: "Home Styling",
+        en: "A pair of mid-century leather armchairs frames the living room fireplace.",
+        ar: "يُحِيطُ زَوْجٌ مِنْ الكَرَاسِي الجِلْدِيَّةِ الأَنِيقَةِ بِمِدْفَأَةِ غُرْفَةِ المَعِيشَةِ.",
+      },
+      {
+        context: "Comfort",
+        en: "The ergonomic high-back armchair provides exceptional lumbar support.",
+        ar: "يُوَفِّرُ الكُرْسِيُّ ذُو الذِّرَاعَيْنِ العَالِي دَعْماً مُمْتَازاً لِأَسْفَلِ الظَّهْرِ.",
+      },
+    ],
+    exampleSentence:
+      "She curled up in the velvet armchair beside the window with an absorbing novel.",
+    exampleArabic:
+      "جَلَسَتْ مُسْتَرْخِيَةً فِي الكُرْسِيِّ المَخْمَلِيِّ بِجِوَارِ النَّافِذَةِ مَعَ رِوَايَةٍ شَيِّقَةٍ.",
+  },
+  backpack: {
+    id: "backpack",
+    arabic: "حَقِيبَةُ ظَهْر",
+    partOfSpeech: "noun",
+    phonetic: "ˈbæk.pæk",
+    pronunciationTip: "Both syllables have the short 'a' vowel /æ/ as in 'back' and 'pack'.",
+    collocations: [
+      "school backpack",
+      "pack your backpack",
+      "heavy backpack",
+      "zip up the backpack",
+      "wear a backpack",
+      "leather backpack",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pack up",
+        meaning: "fill a backpack with supplies",
+        arabic: "يَحْزِمُ الحَقِيبَة",
+        example: "Pack up your textbooks and notebook into the backpack.",
+      },
+      {
+        phrase: "strap on",
+        meaning: "fasten a backpack onto your shoulders",
+        arabic: "يَشُدُّ حَقِيبَةَ الظَّهْر",
+        example: "He strapped on his backpack and headed out for the hike.",
+      },
+    ],
+    sentences: [
+      {
+        context: "School Routine",
+        en: "The boy packed his notebook, pencil case, and lunchbox into his backpack.",
+        ar: "حَزَمَ الفَتَى دَفْتَرَهُ وَمِقْلَمَتَهُ وَعُلْبَةَ غَدَائِهِ فِي حَقِيبَةِ ظَهْرِهِ.",
+      },
+      {
+        context: "Travel & Commute",
+        en: "A water-resistant backpack is perfect for daily commuting on a bicycle.",
+        ar: "حَقِيبَةُ الظَّهْرِ المُقَاوِمَةُ لِلْمَاءِ مِثَالِيَّةٌ لِلتَّنَقُّلِ اليَوْمِيِّ عَلَى الدَّرَّاجَةِ الهَوَائِيَّةِ.",
+      },
+      {
+        context: "Ergonomics",
+        en: "Adjust both shoulder straps evenly so the heavy backpack doesn't strain your back.",
+        ar: "اضْبِطْ حِزَامَيِ الكَتِفِ بِالتَّسَاوِي حَتَّى لا تُجْهِدَ الحَقِيبَةُ الثَّقِيلَةُ ظَهْرَكَ.",
+      },
+    ],
+    exampleSentence: "The boy packed his notebook, pencil case, and lunchbox into his backpack.",
+    exampleArabic:
+      "حَزَمَ الفَتَى دَفْتَرَهُ وَمِقْلَمَتَهُ وَعُلْبَةَ غَدَائِهِ فِي حَقِيبَةِ ظَهْرِهِ.",
+  },
+  "baking-dish": {
+    id: "baking-dish",
+    arabic: "صِينِيَّةُ طَهْيٍ بِالفُرْن (بَايْرِكْس)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbeɪ.kɪŋ ˌdɪʃ",
+    pronunciationTip: "Primary stress on 'BAKING' (/ˈbeɪ.kɪŋ/).",
+    collocations: [
+      "glass baking dish",
+      "rectangular baking dish",
+      "grease the baking dish",
+      "ovenproof baking dish",
+      "ceramic baking dish",
+      "deep baking dish",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pour into",
+        meaning: "transfer liquid mix into baking dish",
+        arabic: "يَصُبُّ فِي الصِّينِيَّة",
+        example: "Pour the seasoned vegetables into the baking dish.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Home Cooking",
+        en: "Grease the rectangular glass baking dish with butter before adding potatoes.",
+        ar: "ادْهَنِ الصِّينِيَّةَ الزُّجَاجِيَّةَ المُسْتَطِيلَةَ بِالزُّبْدَةِ قَبْلَ وَضْعِ البَطَاطِسِ.",
+      },
+      {
+        context: "Oven Roasting",
+        en: "He roasted seasoned chicken breasts and root vegetables in a ceramic baking dish.",
+        ar: "شَوَى صُدُورَ الدَّجَاجِ المُتَبَّلَةَ مَعَ الخُضْرَاوَاتِ فِي صِينِيَّةِ فُرْنٍ خَزَفِيَّةٍ.",
+      },
+      {
+        context: "Cleaning",
+        en: "Soak the stubborn baking dish in hot soapy water before scrubbing.",
+        ar: "انْقَعْ صِينِيَّةَ الفُرْنِ فِي مَاءٍ سَاخِنٍ وَصَابُونٍ قَبْلَ فَرْكِهَا.",
+      },
+    ],
+    exampleSentence: "Grease the rectangular glass baking dish with butter before adding potatoes.",
+    exampleArabic:
+      "ادْهَنِ الصِّينِيَّةَ الزُّجَاجِيَّةَ المُسْتَطِيلَةَ بِالزُّبْدَةِ قَبْلَ وَضْعِ البَطَاطِسِ.",
+  },
+  "baking-tray": {
+    id: "baking-tray",
+    arabic: "صِينِيَّةُ خَبْز (صَاج)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbeɪ.kɪŋ ˌtreɪ",
+    pronunciationTip: "Compound noun with primary stress on 'BAKING' (/ˈbeɪ.kɪŋ/).",
+    collocations: [
+      "line the baking tray",
+      "baking tray in the oven",
+      "grease the baking tray",
+      "non-stick baking tray",
+      "cookies on a baking tray",
+      "hot baking tray",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "line with",
+        meaning: "cover a baking tray with parchment",
+        arabic: "يُبَطِّنُ بِوَرَقِ الزِّبْدَة",
+        example: "Line the baking tray with parchment paper before placing cookie dough.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Baking Cookies",
+        en: "She arranged twelve scoops of chocolate chip dough across the baking tray.",
+        ar: "رَتَّبَتِ اثْنَتَيْ عَشْرَةَ قِطْعَةً مِنْ عَجِينَةِ الكُوكِيز بِالشُّوكُولاتَةِ عَلَى صِينِيَّةِ الخَبْزِ.",
+      },
+      {
+        context: "Roasting Vegetables",
+        en: "Toss carrots and zucchini with olive oil and spread them on the baking tray.",
+        ar: "تَبِّلِ الجَزَرَ وَالكُوسَا بِزَيْتِ الزَّيْتُونِ وَافْرِدْهُمَا عَلَى صِينِيَّةِ الخَبْزِ لِلشَّيِّ.",
+      },
+      {
+        context: "Safety",
+        en: "Always wear heavy insulated oven mitts when carrying a hot metal baking tray.",
+        ar: "ارْتَدِ دَائِماً قُفَّازَاتِ الفُرْنِ العَازِلَةَ عِنْدَ حَمْلِ صِينِيَّةِ الخَبْزِ المَعْدَنِيَّةِ السَّاخِنَةِ.",
+      },
+    ],
+    exampleSentence: "She arranged twelve scoops of chocolate chip dough across the baking tray.",
+    exampleArabic:
+      "رَتَّبَتِ اثْنَتَيْ عَشْرَةَ قِطْعَةً مِنْ عَجِينَةِ الكُوكِيز بِالشُّوكُولاتَةِ عَلَى صِينِيَّةِ الخَبْزِ.",
+  },
+  barn: {
+    id: "barn",
+    arabic: "حَظِيرَة (زَرِيبَة)",
+    partOfSpeech: "noun",
+    phonetic: "bɑːrn",
+    pronunciationTip: "Broad 'ar' vowel /ɑːr/ as in 'car' or 'farm'.",
+    collocations: [
+      "red barn",
+      "inside the barn",
+      "hay in the barn",
+      "barn doors",
+      "dairy barn",
+      "wooden barn",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "lead into",
+        meaning: "guide animals into the barn",
+        arabic: "يُدْخِلُ إِلَى الحَظِيرَة",
+        example: "Lead the milk cows into the barn before it begins to rain.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Farm Landmark",
+        en: "The classic red wooden barn stores golden hay bales and shelters cattle in winter.",
+        ar: "تَحْفَظُ الحَظِيرَةُ الخَشَبِيَّةُ الحَمْرَاءُ بَالاتِ القَشِّ وَتَأْوِي المَاشِيَةَ فِي الشِّتَاءِ.",
+      },
+      {
+        context: "Evening Chores",
+        en: "They closed the heavy wooden barn doors securely after feeding the animals.",
+        ar: "أَغْلَقُوا أَبْوَابَ الحَظِيرَةِ الخَشَبِيَّةِ الثَّقِيلَةَ بِإِحْكَامٍ بَعْدَ إِطْعَامِ الحَيَوَانَاتِ.",
+      },
+      {
+        context: "Hay Loft",
+        en: "Pigeons nested high up in the rafters of the historic timber barn.",
+        ar: "عَشَّشَ الحَمَامُ فِي الأَعَالِي بَيْنَ عَوَارِضِ الحَظِيرَةِ الخَشَبِيَّةِ التَّارِيخِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "The classic red wooden barn stores golden hay bales and shelters cattle in winter.",
+    exampleArabic:
+      "تَحْفَظُ الحَظِيرَةُ الخَشَبِيَّةُ الحَمْرَاءُ بَالاتِ القَشِّ وَتَأْوِي المَاشِيَةَ فِي الشِّتَاءِ.",
+  },
+  bed: {
+    id: "bed",
+    arabic: "سَرِير",
+    partOfSpeech: "noun",
+    phonetic: "bɛd",
+    pronunciationTip: "Short 'e' vowel sound, exactly as in 'red' or 'pen'.",
+    collocations: [
+      "make the bed",
+      "go to bed",
+      "double bed",
+      "single bed",
+      "comfortable bed",
+      "get into bed",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "turn in",
+        meaning: "go to bed for the night",
+        arabic: "يَخْلُدُ إِلَى النَّوْم",
+        example: "I am exhausted, so I will turn in early tonight.",
+      },
+      {
+        phrase: "sleep in",
+        meaning: "sleep later than usual",
+        arabic: "يَنَامُ لِوَقْتٍ مُتَأَخِّر",
+        example: "On weekends, I love to sleep in until nine.",
+      },
+      {
+        phrase: "tuck in",
+        meaning: "cover someone comfortably in bed",
+        arabic: "يُدَثِّرُ فِي السَّرِير",
+        example: "The mother tucked her child in with a warm blanket.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Daily Routine",
+        en: "She makes her bed neatly every morning after waking up.",
+        ar: "تُرَتِّبُ سَرِيرَهَا بِعِنَايَةٍ كُلَّ صَبَاحٍ بَعْدَ الاِسْتِيقَاظِ.",
+      },
+      {
+        context: "Evening Habit",
+        en: "After a long working day, he was happy to get into bed.",
+        ar: "بَعْدَ يَوْمِ عَمَلٍ طَوِيلٍ، كَانَ سَعِيداً بِالدُّخُولِ إِلَى السَّرِيرِ.",
+      },
+      {
+        context: "Furniture Choice",
+        en: "They bought a comfortable double bed for the master bedroom.",
+        ar: "اشْتَرَوْا سَرِيراً مُزْدَوَجاً مُرِيحاً لِغُرْفَةِ النَّوْمِ الرَّئِيسِيَّةِ.",
+      },
+    ],
+    exampleSentence: "She makes her bed neatly every morning after waking up.",
+    exampleArabic: "تُرَتِّبُ سَرِيرَهَا بِعِنَايَةٍ كُلَّ صَبَاحٍ بَعْدَ الاِسْتِيقَاظِ.",
+  },
+  "bed-frame": {
+    id: "bed-frame",
+    arabic: "هَيْكَلُ السَّرِير (شَاسِيه السَّرِير)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbɛd.freɪm",
+    pronunciationTip: "Compound noun with primary stress on 'BED'.",
+    collocations: [
+      "wooden bed frame",
+      "metal bed frame",
+      "sturdy bed frame",
+      "assemble the bed frame",
+      "king-size bed frame",
+      "platform bed frame",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put together",
+        meaning: "assemble the parts of a bed frame",
+        arabic: "يُجَمِّعُ / يُرَكِّبُ",
+        example: "It took them two hours to put together the wooden bed frame.",
+      },
+      {
+        phrase: "take apart",
+        meaning: "disassemble for moving",
+        arabic: "يُفَكِّكُ",
+        example: "They had to take apart the bed frame before moving houses.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Assembly",
+        en: "The solid oak bed frame supports the heavy mattress without squeaking.",
+        ar: "يَدْعَمُ هَيْكَلُ السَّرِيرِ المَصْنُوعُ مِنْ خَشَبِ البَلُّوطِ المَرْتَبَةَ الثَّقِيلَةَ دُونَ صَرِيرٍ.",
+      },
+      {
+        context: "Modern Living",
+        en: "Platform bed frames with built-in storage drawers save valuable space.",
+        ar: "تُوَفِّرُ هَيَاكِلُ الأَسِرَّةِ المِنَصِّيَّةُ ذَاتُ أَدْرَاجِ التَّخْزِينِ المَسَاحَةَ بِفَعَالِيَّةٍ.",
+      },
+      {
+        context: "Design",
+        en: "A matte black metal bed frame creates a clean industrial aesthetic.",
+        ar: "يَخْلُقُ هَيْكَلُ السَّرِيرِ المَعْدَنِيُّ الأَسْوَدُ المَطْفِيُّ طَابَعاً صِنَاعِيّاً عَصْرِيّاً.",
+      },
+    ],
+    exampleSentence: "The solid oak bed frame supports the heavy mattress without squeaking.",
+    exampleArabic:
+      "يَدْعَمُ هَيْكَلُ السَّرِيرِ المَصْنُوعُ مِنْ خَشَبِ البَلُّوطِ المَرْتَبَةَ الثَّقِيلَةَ دُونَ صَرِيرٍ.",
+  },
+  bench: {
+    id: "bench",
+    arabic: "مَقْعَدٌ طَوِيل (دِكَّة / بَانْك)",
+    partOfSpeech: "noun",
+    phonetic: "bɛntʃ",
+    pronunciationTip: "Short 'e' vowel /ɛ/ as in 'ten', ending in crisp 'ch' (/tʃ/).",
+    collocations: [
+      "wooden bench",
+      "sit on a bench",
+      "dining bench",
+      "entryway bench",
+      "garden bench",
+      "padded bench",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sit down on",
+        meaning: "take a seat on a bench",
+        arabic: "يَجْلِسُ عَلَى المَقْعَد",
+        example: "They sat down on the wooden bench to tie their running shoes.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Entryway Seating",
+        en: "An upholstered entryway bench gives guests a convenient spot to remove shoes.",
+        ar: "يَمْنَحُ المَقْعَدُ المُبَطَّنُ فِي المَدْخَلِ الضُّيُوفَ مَكَاناً مُرِيحاً لِخَلْعِ الأَحْذِيَةِ.",
+      },
+      {
+        context: "Dining Setup",
+        en: "Replacing three chairs with a long wooden bench saves space along the wall.",
+        ar: "يُوَفِّرُ اسْتِبْدَالُ ثَلاثَةِ كَرَاسٍ بِمَقْعَدٍ خَشَبِيٍّ طَوِيلٍ مَسَاحَةً مُمْتَازَةً.",
+      },
+      {
+        context: "Outdoor Park",
+        en: "They sat on a park bench under a blooming cherry blossom tree.",
+        ar: "جَلَسُوا عَلَى مَقْعَدِ الحَدِيقَةِ تَحْتَ شَجَرَةِ كَرَزٍ مُزْهِرَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "An upholstered entryway bench gives guests a convenient spot to remove shoes.",
+    exampleArabic:
+      "يَمْنَحُ المَقْعَدُ المُبَطَّنُ فِي المَدْخَلِ الضُّيُوفَ مَكَاناً مُرِيحاً لِخَلْعِ الأَحْذِيَةِ.",
+  },
+  blanket: {
+    id: "blanket",
+    arabic: "بَطَّانِيَّة",
+    partOfSpeech: "noun",
+    phonetic: "ˈblæŋ.kɪt",
+    pronunciationTip: "Contains the 'ng' sound (/ŋ/) followed by 'kit'.",
+    collocations: [
+      "warm blanket",
+      "wool blanket",
+      "wrap in a blanket",
+      "pull up the blanket",
+      "heavy blanket",
+      "throw blanket",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wrap up",
+        meaning: "cover oneself completely in a blanket",
+        arabic: "يَلْتَفُّ بِالبَطَّانِيَّة",
+        example: "On cold winter nights, we wrap up in thick blankets.",
+      },
+      {
+        phrase: "cover up",
+        meaning: "place a blanket over someone",
+        arabic: "يُغَطِّي",
+        example: "The father covered up his sleeping son with a warm quilt.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cold Weather",
+        en: "She pulled the warm wool blanket up to her chin on the chilly night.",
+        ar: "سَحَبَتِ البَطَّانِيَّةَ الصُّوفِيَّةَ الدَّافِئَةَ حَتَّى ذَقْنِهَا فِي تِلْكَ اللَّيْلَةِ البَارِدَةِ.",
+      },
+      {
+        context: "Living Room",
+        en: "A soft knit throw blanket is draped over the arm of the sofa.",
+        ar: "بَطَّانِيَّةٌ خَفِيفَةٌ نَاعِمَةٌ مُلْقَاةٌ عَلَى مِسْنَدِ الأَرِيكَةِ.",
+      },
+      {
+        context: "Hospitality",
+        en: "The hotel provided an extra blanket in the wardrobe for guests.",
+        ar: "وَفَّرَ الفُنْدُقُ بَطَّانِيَّةً إِضَافِيَّةً فِي الخِزَانَةِ لِلنُّزَلاءِ.",
+      },
+    ],
+    exampleSentence: "She pulled the warm wool blanket up to her chin on the chilly night.",
+    exampleArabic:
+      "سَحَبَتِ البَطَّانِيَّةَ الصُّوفِيَّةَ الدَّافِئَةَ حَتَّى ذَقْنِهَا فِي تِلْكَ اللَّيْلَةِ البَارِدَةِ.",
+  },
+  blender: {
+    id: "blender",
+    arabic: "خَلَّاطٌ كَهْرَبَائِيّ",
+    partOfSpeech: "noun",
+    phonetic: "ˈblɛn.dər",
+    pronunciationTip: "Short 'e' vowel /ɛ/ as in 'blend' or 'bend'.",
+    collocations: [
+      "smoothie in the blender",
+      "blend on high speed",
+      "blender jar",
+      "electric blender",
+      "crush ice in a blender",
+      "clean the blender",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "blend up",
+        meaning: "mix ingredients until smooth",
+        arabic: "يَخْلِطُ جَيِّداً",
+        example: "Blend up fresh strawberries, yogurt, and bananas.",
+      },
+      {
+        phrase: "whip up",
+        meaning: "prepare a drink quickly",
+        arabic: "يُحَضِّرُ سَرِيعاً",
+        example: "She whipped up a protein shake in the blender.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Healthy Drinks",
+        en: "She blended fresh spinach, frozen mango, and almond milk for breakfast.",
+        ar: "خَلَطَتِ السَّبَانِخَ الطَّازَجَةَ وَالمَانْجُو المُجَمَّدَ وَحَلِيبَ اللَّوْزِ لِفُطُورٍ صِحِّيٍّ.",
+      },
+      {
+        context: "Soup Preparation",
+        en: "Purée cooked pumpkin and vegetable broth in the blender until creamy.",
+        ar: "اخْفِقِ اليَقْطِينَ المَطْبُوخَ مَعَ مَرَقِ الخُضَارِ فِي الخَلَّاطِ حَتَّى يُصْبِحَ كَرِيمِيّاً.",
+      },
+      {
+        context: "Appliance Care",
+        en: "Add warm water and a drop of dish soap, then run the blender to clean it.",
+        ar: "أَضِفْ مَاءً دَافِئاً وَقَطْرَةَ صَابُونٍ ثُمَّ شَغِّلِ الخَلَّاطَ لِتَنْظِيفِهِ بِسُهُولَةٍ.",
+      },
+    ],
+    exampleSentence: "She blended fresh spinach, frozen mango, and almond milk for breakfast.",
+    exampleArabic:
+      "خَلَطَتِ السَّبَانِخَ الطَّازَجَةَ وَالمَانْجُو المُجَمَّدَ وَحَلِيبَ اللَّوْزِ لِفُطُورٍ صِحِّيٍّ.",
+  },
+  blinds: {
+    id: "blinds",
+    arabic: "سَتَائِرُ النَّافِذَة (شِيش / سَتَائِر مَعْدَنِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "blaɪndz",
+    pronunciationTip:
+      "Long 'i' diphthong /aɪ/ as in 'find' or 'mind'. Always plural in this meaning.",
+    collocations: [
+      "draw the blinds",
+      "open the blinds",
+      "close the blinds",
+      "roller blinds",
+      "venetian blinds",
+      "pull down the blinds",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pull down",
+        meaning: "lower the blinds to block daylight",
+        arabic: "يُنْزِلُ الشِّيشَ لِحَجْبِ الضَّوْء",
+        example: "Pull down the blinds to keep the afternoon sun out.",
+      },
+      {
+        phrase: "roll up",
+        meaning: "raise roller blinds",
+        arabic: "يَرْفَعُ السَّتَائِرَ المَلْفُوفَة",
+        example: "She rolled up the blinds to let in the morning breeze.",
+      },
+      {
+        phrase: "let in",
+        meaning: "allow light through by opening blinds",
+        arabic: "يَسْمَحُ بِدُخُولِ الضَّوْء",
+        example: "Adjust the slat angle to let in more daylight.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Privacy & Light",
+        en: "She closed the window blinds to block the harsh afternoon sun.",
+        ar: "أَغْلَقَتْ سَتَائِرَ النَّافِذَةِ لِحَجْبِ ضَوْءِ شَمْسِ الظَّهِيرَةِ الحَارِقِ.",
+      },
+      {
+        context: "Morning Routine",
+        en: "He pulled up the wooden blinds and looked out at the garden.",
+        ar: "رَفَعَ الشِّيشَ الخَشَبِيَّ وَنَظَرَ إِلَى الحَدِيقَةِ فِي الخَارِجِ.",
+      },
+      {
+        context: "Home Styling",
+        en: "Modern roller blinds offer clean lines and excellent light control.",
+        ar: "تُوَفِّرُ السَّتَائِرُ المَعْدَنِيَّةُ المَلْفُوفَةُ مَظْهَراً أَنِيقاً وَتَحَكُّماً مُمْتَازاً فِي الإِضَاءَةِ.",
+      },
+    ],
+    exampleSentence: "She closed the window blinds to block the harsh afternoon sun.",
+    exampleArabic:
+      "أَغْلَقَتْ سَتَائِرَ النَّافِذَةِ لِحَجْبِ ضَوْءِ شَمْسِ الظَّهِيرَةِ الحَارِقِ.",
+  },
+  "board-game": {
+    id: "board-game",
+    arabic: "لُعْبَةُ أَلْوَاح (لُعْبَةُ طَاوِلَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbɔːrd ˌɡeɪm",
+    pronunciationTip: "Compound noun: 'BOARD' (/bɔːrd/) + 'GAME' (/ɡeɪm/).",
+    collocations: [
+      "play a board game",
+      "strategy board game",
+      "family board game",
+      "board game pieces",
+      "roll the dice in a board game",
+      "board game night",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "set up",
+        meaning: "arrange board game pieces on table",
+        arabic: "يُرَتِّبُ قِطَعَ اللُّعْبَة",
+        example: "Set up the board game on the coffee table so we can begin playing.",
+      },
+      {
+        phrase: "pack away",
+        meaning: "store game pieces back into the box",
+        arabic: "يَحْفَظُ اللُّعْبَةَ فِي العُلْبَة",
+        example: "Pack away all the dice and tokens after finishing the game.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Family Game Night",
+        en: "Every Friday evening, the family gathers around the table to play a fun board game.",
+        ar: "تَجْتَمِعُ العَائِلَةُ مَسَاءَ كُلِّ جُمْعَةٍ حَوْلَ الطَّاوِلَةِ لِلَعِبِ لُعْبَةِ أَلْوَاحٍ مُسَلِّيَةٍ.",
+      },
+      {
+        context: "Strategy Fun",
+        en: "Strategic board games challenge your critical thinking and tactical planning skills.",
+        ar: "تَتَحَدَّى أَلْعَابُ الأَلْوَاحِ الاِسْتِرَاتِيجِيَّةُ التَّفْكِيرَ النَّقْدِيَّ وَمَهَارَاتِ التَّخْطِيطِ.",
+      },
+      {
+        context: "Rules",
+        en: "Read through the instruction booklet carefully before starting a new board game.",
+        ar: "اقْرَأْ كُتَيِّبَ التَّعْلِيمَاتِ بِعِنَايَةٍ قَبْلَ بَدْءِ لُعْبَةِ أَلْوَاحٍ جَدِيدَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "Every Friday evening, the family gathers around the table to play a fun board game.",
+    exampleArabic:
+      "تَجْتَمِعُ العَائِلَةُ مَسَاءَ كُلِّ جُمْعَةٍ حَوْلَ الطَّاوِلَةِ لِلَعِبِ لُعْبَةِ أَلْوَاحٍ مُسَلِّيَةٍ.",
+  },
+  book: {
+    id: "book",
+    arabic: "كِتَاب",
+    partOfSpeech: "noun",
+    phonetic: "bʊk",
+    pronunciationTip: "Short 'oo' vowel /ʊ/ as in 'look' or 'took'.",
+    collocations: [
+      "read a book",
+      "open a book",
+      "close the book",
+      "hardcover book",
+      "favorite book",
+      "book on the table",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "look through",
+        meaning: "browse pages of a book",
+        arabic: "يَتَصَفَّحُ الكِتَاب",
+        example: "She looked through the art book while waiting.",
+      },
+      {
+        phrase: "read through",
+        meaning: "read from beginning to end",
+        arabic: "يَقْرَأُ حَتَّى النِّهَايَة",
+        example: "He read through the entire novel in a single weekend.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Reading Habit",
+        en: "He loves curling up with an inspiring history book on quiet Sunday afternoons.",
+        ar: "يَعْشَقُ الاِسْتِرْخَاءَ مَعَ كِتَابِ تَارِيخٍ مُلْهِمٍ فِي أَمْسِيَاتِ الأَحَدِ الهَادِئَةِ.",
+      },
+      {
+        context: "Library & Study",
+        en: "She borrowed three fascinating science books from the city public library.",
+        ar: "اسْتَعَارَتْ ثَلاثَةَ كُتُبٍ عِلْمِيَّةٍ شَيِّقَةٍ مِنْ مَكْتَبَةِ المَدِينَةِ العَامَّةِ.",
+      },
+      {
+        context: "Coffee Table Decor",
+        en: "A large hardcover photography book adds elegance to the living room coffee table.",
+        ar: "يُضِيفُ كِتَابُ صُوَرٍ فُوتُوغرَافِيَّةٍ فَاخِرٌ أَنَاقَةً عَلَى طَاوِلَةِ القَهْوَةِ.",
+      },
+    ],
+    exampleSentence:
+      "He loves curling up with an inspiring history book on quiet Sunday afternoons.",
+    exampleArabic:
+      "يَعْشَقُ الاِسْتِرْخَاءَ مَعَ كِتَابِ تَارِيخٍ مُلْهِمٍ فِي أَمْسِيَاتِ الأَحَدِ الهَادِئَةِ.",
+  },
+  books: {
+    id: "books",
+    arabic: "كُتُب",
+    partOfSpeech: "noun",
+    phonetic: "bʊks",
+    pronunciationTip: "Short 'oo' vowel sound /ʊ/ as in 'look' or 'took'.",
+    collocations: [
+      "stack of books",
+      "read books",
+      "shelf of books",
+      "pile of books",
+      "open the book",
+      "fascinating books",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "look through",
+        meaning: "browse or flip through books",
+        arabic: "يَتَصَفَّحُ الكُتُب",
+        example: "He looked through several art books at the library.",
+      },
+      {
+        phrase: "read up on",
+        meaning: "learn about a topic by reading books",
+        arabic: "يَقْرَأُ لِيَسْتَفِيدَ عَنْ مَوْضُوع",
+        example: "She read up on astronomy before visiting the planetarium.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Reading Habit",
+        en: "She enjoys reading historical and science books for an hour before bedtime.",
+        ar: "تَسْتَمْتِعُ بِقِرَاءَةِ الكُتُبِ التَّارِيخِيَّةِ وَالعِلْمِيَّةِ لِمُدَّةِ سَاعَةٍ قَبْلَ النَّوْمِ.",
+      },
+      {
+        context: "Organization",
+        en: "A neat stack of hardback books is arranged alphabetically on the shelf.",
+        ar: "تَمَّ تَرْتِيبُ مَجْمُوعَةٍ أَنِيقَةٍ مِنَ الكُتُبِ ذَاتِ الأَغْلِفَةِ المُقَوَّاةِ أَبْجَدِيّاً عَلَى الرَّفِّ.",
+      },
+      {
+        context: "Learning",
+        en: "Good books open up new perspectives and expand your vocabulary.",
+        ar: "تَفْتَحُ الكُتُبُ الجَيِّدَةُ آفَاقاً جَدِيدَةً وَتُثْرِي حَصِيلَتَكَ اللُّغَوِيَّةَ.",
+      },
+    ],
+    exampleSentence: "She enjoys reading historical and science books for an hour before bedtime.",
+    exampleArabic:
+      "تَسْتَمْتِعُ بِقِرَاءَةِ الكُتُبِ التَّارِيخِيَّةِ وَالعِلْمِيَّةِ لِمُدَّةِ سَاعَةٍ قَبْلَ النَّوْمِ.",
+  },
+  bookshelf: {
+    id: "bookshelf",
+    arabic: "رَفُّ الكُتُب / مَكْتَبَةٌ حَائِطِيَّة",
+    partOfSpeech: "noun",
+    phonetic: "ˈbʊk.ʃɛlf",
+    pronunciationTip: "Compound word: 'BOOK' + 'SHELF'. Plural is 'bookshelves'.",
+    collocations: [
+      "fill the bookshelf",
+      "wooden bookshelf",
+      "on the bookshelf",
+      "organize the bookshelf",
+      "tall bookshelf",
+      "dust the bookshelf",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "look through",
+        meaning: "browse books on a shelf",
+        arabic: "يَتَصَفَّحُ",
+        example: "She looked through the bookshelf to find a dictionary.",
+      },
+      {
+        phrase: "take down",
+        meaning: "remove an item from a high shelf",
+        arabic: "يُنْزِلُ شَيْئاً مِنْ مَكَانٍ عَالٍ",
+        example: "He took down a heavy encyclopedia from the top bookshelf.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Reading Corner",
+        en: "The tall bookshelf holds hundreds of historical and science novels.",
+        ar: "تَحْمِلُ خِزَانَةُ الكُتُبِ الطَّوِيلَةُ مِئَاتِ الرِّوَايَاتِ التَّارِيخِيَّةِ وَالعِلْمِيَّةِ.",
+      },
+      {
+        context: "Maintenance",
+        en: "She spent Sunday afternoon dusting and organizing her bookshelf.",
+        ar: "قَضَتْ بَعْدَ ظُهْرِ يَوْمِ الأَحَدِ فِي تَنْظِيفِ وَتَرْتِيبِ رَفِّ الكُتُبِ.",
+      },
+      {
+        context: "Decor",
+        en: "A small green plant looks lovely sitting on the middle bookshelf.",
+        ar: "تَبْدُو النَّبْتَةُ الخَضْرَاءُ الصَّغِيرَةُ جَمِيلَةً عَلَى الرَّفِّ الأَوْسَطِ لِلْكُتُبِ.",
+      },
+    ],
+    exampleSentence: "The tall bookshelf holds hundreds of historical and science novels.",
+    exampleArabic:
+      "تَحْمِلُ خِزَانَةُ الكُتُبِ الطَّوِيلَةُ مِئَاتِ الرِّوَايَاتِ التَّارِيخِيَّةِ وَالعِلْمِيَّةِ.",
+  },
+  bowl: {
+    id: "bowl",
+    arabic: "زَبْدِيَّة / سُلْطَانِيَّة (وِعَاء / طَاسَة)",
+    partOfSpeech: "noun",
+    phonetic: "boʊl",
+    pronunciationTip: "Long 'o' vowel /oʊ/ as in 'grow' or 'soul'.",
+    collocations: [
+      "soup bowl",
+      "salad bowl",
+      "cereal bowl",
+      "mixing bowl",
+      "wooden bowl",
+      "deep bowl",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "fill up",
+        meaning: "fill a bowl to the top",
+        arabic: "يَمْلَأُ الوِعَاء",
+        example: "Fill up the bowl with fresh crunchy strawberries.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Breakfast",
+        en: "He poured crispy oat cereal and cold milk into a ceramic breakfast bowl.",
+        ar: "سَكَبَ رَقَائِقَ الشُّوفَانِ المُقَرْمَشَةَ وَالحَلِيبَ البَارِدَ فِي زَبْدِيَّةِ الإِفْطَارِ الخَزَفِيَّةِ.",
+      },
+      {
+        context: "Soup Serving",
+        en: "A steaming bowl of chicken noodle soup is comforting on a rainy day.",
+        ar: "زَبْدِيَّةُ حَسَاءِ الدَّجَاجِ بِالشَّعْرِيَّةِ السَّاخِنَةُ مَبْعَثٌ لِلدِّفْءِ فِي الأَيَّامِ المَاطِرَةِ.",
+      },
+      {
+        context: "Salad Prep",
+        en: "Toss the fresh garden greens in a large wooden salad bowl.",
+        ar: "قَلِّبِ الخُضَارَ الطَّازَجَةَ فِي سُلْطَانِيَّةِ سَلَطَةٍ خَشَبِيَّةٍ كَبِيرَةٍ.",
+      },
+    ],
+    exampleSentence: "He poured crispy oat cereal and cold milk into a ceramic breakfast bowl.",
+    exampleArabic:
+      "سَكَبَ رَقَائِقَ الشُّوفَانِ المُقَرْمَشَةَ وَالحَلِيبَ البَارِدَ فِي زَبْدِيَّةِ الإِفْطَارِ الخَزَفِيَّةِ.",
+  },
+  bread: {
+    id: "bread",
+    arabic: "خُبْز (عَيْش)",
+    partOfSpeech: "noun",
+    phonetic: "brɛd",
+    pronunciationTip: "Short 'e' vowel /ɛ/ as in 'red' or 'head'.",
+    collocations: [
+      "loaf of bread",
+      "slice of bread",
+      "fresh bread",
+      "whole wheat bread",
+      "crusty bread",
+      "bake bread",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "cut off",
+        meaning: "slice off a portion of a loaf",
+        arabic: "يَقْطَعُ شَرِيحَة",
+        example: "He cut off a thick slice of warm sourdough bread.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bakery",
+        en: "The aroma of freshly baked sourdough bread filled the entire kitchen.",
+        ar: "مَلَأَتْ رَائِحَةُ خُبْزِ السَّاوَرْدُو الطَّازَجِ المَخْبُوزِ المَطْبَخَ بِأَكْمَلِهِ.",
+      },
+      {
+        context: "Breakfast",
+        en: "She toasted two slices of whole grain bread and spread strawberry jam on top.",
+        ar: "حَمَّصَتْ شَرِيحَتَيْنِ مِنْ خُبْزِ الحُبُوبِ الكَامِلَةِ وَدَهَنَتْ فَوْقَهُمَا مُرَبَّى الفَرَاوِلَةِ.",
+      },
+      {
+        context: "Dinner Accompaniment",
+        en: "Serve warm crusty French bread alongside the homemade tomato soup.",
+        ar: "قَدِّمِ الخُبْزَ الفَرَنْسِيَّ المُقَرْمَشَ السَّاخِنَ بِجَانِبِ شُورْبَةِ الطَّمَاطِمِ المَنْزِلِيَّةِ.",
+      },
+    ],
+    exampleSentence: "The aroma of freshly baked sourdough bread filled the entire kitchen.",
+    exampleArabic:
+      "مَلَأَتْ رَائِحَةُ خُبْزِ السَّاوَرْدُو الطَّازَجِ المَخْبُوزِ المَطْبَخَ بِأَكْمَلِهِ.",
+  },
+  bucket: {
+    id: "bucket",
+    arabic: "دَلْو (جَرْدَل)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbʌk.ɪt",
+    pronunciationTip: "Short 'u' sound /ʌ/ as in 'cup', followed by short /ɪt/.",
+    collocations: [
+      "bucket of water",
+      "metal bucket",
+      "plastic bucket",
+      "fill the bucket",
+      "carry a bucket",
+      "milking bucket",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "fill up",
+        meaning: "fill a bucket with water or feed",
+        arabic: "يَمْلَأُ الدَّلْو",
+        example: "Fill up the bucket with clean tap water for the calves.",
+      },
+      {
+        phrase: "pour out",
+        meaning: "empty liquid from bucket",
+        arabic: "يَسْكُبُ مِنَ الجَرْدَل",
+        example: "Pour out the soapy water after washing the floor.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Feeding Animals",
+        en: "She carried two heavy plastic buckets filled with nutritious grain to the horse stalls.",
+        ar: "حَمَلَتْ دَلْوَيْنِ بَلاسْتِيكِيَّيْنِ ثَقِيلَيْنِ مَلِيئَيْنِ بِالحُبُوبِ المُغَذِّيَةِ لِلْخُيُولِ.",
+      },
+      {
+        context: "Milking",
+        en: "The farmer sat on a low stool and squeezed fresh milk into a stainless steel bucket.",
+        ar: "جَلَسَ المُزَارِعُ عَلَى مَقْعَدٍ قَصِيرٍ وَحَلَبَ الحَلِيبَ الطَّازَجَ فِي دَلْوٍ سْتَانْلِس.",
+      },
+      {
+        context: "Washing Vehicles",
+        en: "Fill the bucket with warm water and car soap to wash down the farm truck.",
+        ar: "امْلَأِ الدَّلْوَ بِمَاءٍ دَافِئٍ وَصَابُونٍ لِغَسْلِ شَاحِنَةِ المَزْرَعَةِ.",
+      },
+    ],
+    exampleSentence:
+      "She carried two heavy plastic buckets filled with nutritious grain to the horse stalls.",
+    exampleArabic:
+      "حَمَلَتْ دَلْوَيْنِ بَلاسْتِيكِيَّيْنِ ثَقِيلَيْنِ مَلِيئَيْنِ بِالحُبُوبِ المُغَذِّيَةِ لِلْخُيُولِ.",
+  },
+  butter: {
+    id: "butter",
+    arabic: "زُبْدَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈbʌt.ər",
+    pronunciationTip: "Short 'u' vowel /ʌ/ followed by 'ter' (/ˈbʌt.ər/).",
+    collocations: [
+      "spread butter",
+      "melted butter",
+      "salted butter",
+      "unsalted butter",
+      "stick of butter",
+      "softened butter",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "melt down",
+        meaning: "liquefy butter in a pan",
+        arabic: "يُذِيبُ الزُّبْدَة",
+        example: "Melt down two tablespoons of unsalted butter over low heat.",
+      },
+      {
+        phrase: "spread on",
+        meaning: "apply butter over bread",
+        arabic: "يَدْهَنُ عَلَى الخُبْز",
+        example: "Spread softened butter evenly across the warm toast.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Breakfast",
+        en: "He spread rich creamy butter across a warm slice of toasted bread.",
+        ar: "دَهَنَ زُبْدَةً كَرِيمِيَّةً غَنِيَّةً عَلَى شَرِيحَةِ خُبْزٍ مُحَمَّصٍ دَافِئَةٍ.",
+      },
+      {
+        context: "Baking",
+        en: "Cream room-temperature unsalted butter and white sugar together until pale and fluffy.",
+        ar: "اخْفِقِ الزُّبْدَةَ غَيْرَ المُمَلَّحَةِ فِي دَرَجَةِ حَرَارَةِ الغُرْفَةِ مَعَ السُّكَّرِ حَتَّى تُصْبِحَ هَشَّةً.",
+      },
+      {
+        context: "Cooking Sauce",
+        en: "Swirl a tablespoon of cold butter into the sauce right before serving for gloss.",
+        ar: "قَلِّبْ مِلْعَقَةً مِنْ الزُّبْدَةِ البَارِدَةِ فِي الصَّلْصَةِ قَبْلَ التَّقْدِيمِ لِإِعْطَائِهَا لَمَعَاناً.",
+      },
+    ],
+    exampleSentence: "He spread rich creamy butter across a warm slice of toasted bread.",
+    exampleArabic:
+      "دَهَنَ زُبْدَةً كَرِيمِيَّةً غَنِيَّةً عَلَى شَرِيحَةِ خُبْزٍ مُحَمَّصٍ دَافِئَةٍ.",
+  },
+  cabinet: {
+    id: "cabinet",
+    arabic: "دُولابٌ صَغِير (خِزَانَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkæb.ə.nət",
+    pronunciationTip: "Three syllables: 'CAB-i-net' (/ˈkæb.ə.nət/).",
+    collocations: [
+      "kitchen cabinet",
+      "wooden cabinet",
+      "medicine cabinet",
+      "store in the cabinet",
+      "cabinet doors",
+      "lock the cabinet",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put away in",
+        meaning: "store items inside a cabinet",
+        arabic: "يَحْفَظُ فِي الخِزَانَة",
+        example: "Put away the clean mugs and plates inside the kitchen cabinet.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Kitchen Storage",
+        en: "She organized all spices and canned beans inside the upper kitchen cabinet.",
+        ar: "رَتَّبَتِ البَهَارَاتِ وَالبُقُولِيَّاتِ المُعَلَّبَةَ دَاخِلَ خِزَانَةِ المَطْبَخِ العُلْوِيَّةِ.",
+      },
+      {
+        context: "Living Room Accent",
+        en: "An antique display cabinet with glass doors showcases vintage porcelain tea sets.",
+        ar: "تَعْرِضُ خِزَانَةُ عَرْضٍ كِلاسِيكِيَّةٌ ذَاتُ أَبْوَابٍ زُجَاجِيَّةٍ أَطْقُمَ شَايٍ خَزَفِيَّةً.",
+      },
+      {
+        context: "Safety",
+        en: "Keep medicines securely locked inside the wall-mounted bathroom cabinet.",
+        ar: "احْفَظِ الأَدْوِيَةَ مُقْفَلَةً بِأَمَانٍ دَاخِلَ خِزَانَةِ الحَمَّامِ الجِدَارِيَّةِ.",
+      },
+    ],
+    exampleSentence: "She organized all spices and canned beans inside the upper kitchen cabinet.",
+    exampleArabic:
+      "رَتَّبَتِ البَهَارَاتِ وَالبُقُولِيَّاتِ المُعَلَّبَةَ دَاخِلَ خِزَانَةِ المَطْبَخِ العُلْوِيَّةِ.",
+  },
+  cable: {
+    id: "cable",
+    arabic: "كَابِل / سِلْكُ كَهْرَبَاء",
+    partOfSpeech: "noun",
+    phonetic: "ˈkeɪ.bəl",
+    pronunciationTip: "Long 'a' vowel /eɪ/ as in 'able', followed by soft /bəl/.",
+    collocations: [
+      "HDMI cable",
+      "charging cable",
+      "power cable",
+      "tangled cables",
+      "connect the cable",
+      "cable management",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "plug in",
+        meaning: "connect a cable end to a port",
+        arabic: "يَصِلُ الكَابِل",
+        example: "Plug in the HDMI cable between the television and the console.",
+      },
+      {
+        phrase: "untangle",
+        meaning: "straighten knotted cords",
+        arabic: "يَفُكُّ تَشَابُكَ الأَسْلاك",
+        example: "He spent ten minutes untangling the mess of headphone cables.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Audio-Visual",
+        en: "Connect the high-speed HDMI cable between the game console and the television.",
+        ar: "صِلْ كَابِلَ HDMI عَالِي السُّرْعَةِ بَيْنَ جِهَازِ الأَلْعَابِ وَشَاشَةِ التِّلْفَازِ.",
+      },
+      {
+        context: "Cable Organization",
+        en: "Use Velcro cable ties to bundle computer wires neatly behind the desk.",
+        ar: "اسْتَخْدِمْ رَوَابِطَ الأَسْلاكِ لِتَجْمِيعِ كَابِلاتِ الكُمْبِيُوتَرِ بِتَرْتِيبٍ خَلْفَ المَكْتَبِ.",
+      },
+      {
+        context: "Wear & Tear",
+        en: "Replace any electrical cable immediately if the protective insulation becomes frayed.",
+        ar: "اسْتَبْدِلْ أَيَّ كَابِلٍ كَهْرَبَائِيٍّ فَوْراً إِذَا تَعَرَّضَ عَازِلُهُ لِلتَّآكُلِ أَوِ التَّلَفِ.",
+      },
+    ],
+    exampleSentence:
+      "Connect the high-speed HDMI cable between the game console and the television.",
+    exampleArabic:
+      "صِلْ كَابِلَ HDMI عَالِي السُّرْعَةِ بَيْنَ جِهَازِ الأَلْعَابِ وَشَاشَةِ التِّلْفَازِ.",
+  },
+  calendar: {
+    id: "calendar",
+    arabic: "تَقْوِيم (نَتِيجَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkæl.ən.dər",
+    pronunciationTip: "Three syllables with primary stress on 'CAL' (/ˈkæl.ən.dər/).",
+    collocations: [
+      "wall calendar",
+      "check the calendar",
+      "mark on the calendar",
+      "desk calendar",
+      "monthly calendar",
+      "turn the calendar page",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "mark off",
+        meaning: "cross off dates on a calendar",
+        arabic: "يَشْطُبُ أَيَّاماً فِي التَّقْوِيم",
+        example: "He marked off each day on the calendar until his holiday started.",
+      },
+      {
+        phrase: "write down",
+        meaning: "record an event on a calendar",
+        arabic: "يُسَجِّلُ مَوْعِداً",
+        example: "Write down the doctor's appointment on the kitchen calendar.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Scheduling",
+        en: "She marked her upcoming vacation dates in red on the wall calendar.",
+        ar: "حَدَّدَتْ مَوَاعِيدَ إِجَازَتِهَا القَادِمَةِ بِاللَّوْنِ الأَحْمَرِ عَلَى تَقْوِيمِ الحَائِطِ.",
+      },
+      {
+        context: "Daily Check",
+        en: "Check your calendar every morning to stay organized with meetings.",
+        ar: "تَفَقَّدْ تَقْوِيمَكَ كُلَّ صَبَاحٍ لِتَبْقَى مُنَظَّماً فِي مَوَاعِيدِ اجْتِمَاعَاتِكَ.",
+      },
+      {
+        context: "New Year",
+        en: "They hung a scenic photography calendar on the study room wall.",
+        ar: "عَلَّقُوا تَقْوِيماً يَحْمِلُ صُوَراً طَبِيعِيَّةً خَلابَةً عَلَى جِدَارِ غُرْفَةِ الدِّرَاسَةِ.",
+      },
+    ],
+    exampleSentence: "She marked her upcoming vacation dates in red on the wall calendar.",
+    exampleArabic:
+      "حَدَّدَتْ مَوَاعِيدَ إِجَازَتِهَا القَادِمَةِ بِاللَّوْنِ الأَحْمَرِ عَلَى تَقْوِيمِ الحَائِطِ.",
+  },
+  "can-opener": {
+    id: "can-opener",
+    arabic: "فَتَّاحَةُ عُلَب",
+    partOfSpeech: "noun",
+    phonetic: "ˈkæn ˌoʊ.pən.ər",
+    pronunciationTip: "Compound noun: 'CAN' (/kæn/) + 'OPENER' (/ˈoʊ.pən.ər/).",
+    collocations: [
+      "manual can opener",
+      "electric can opener",
+      "open with a can opener",
+      "turn the can opener",
+      "can opener wheel",
+      "kitchen can opener",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "open up",
+        meaning: "puncture and cut open a tin can",
+        arabic: "يَفْتَحُ العُلْبَة",
+        example: "Open up the can of crushed tomatoes for the sauce.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Canned Goods",
+        en: "He used the manual can opener to open a tin of tuna and sweet corn.",
+        ar: "اسْتَخْدَمَ فَتَّاحَةَ العُلَبِ اليَدَوِيَّةَ لِفَتْحِ عُلْبَةِ تَرْنَةٍ وَذُرَةٍ حُلْوَةٍ.",
+      },
+      {
+        context: "Smooth Edge",
+        en: "Modern safety can openers cut the outside rim leaving no sharp edges.",
+        ar: "تَقْطَعُ فَتَّاحَاتُ العُلَبِ الحَدِيثَةُ الحَافَّةَ الخَارِجِيَّةَ دُونَ تَرْكِ حَوَافَّ حَادَّةٍ.",
+      },
+      {
+        context: "Drawer Tool",
+        en: "Keep the can opener in the top kitchen utensil drawer for easy access.",
+        ar: "احْتَفِظْ بِفَتَّاحَةِ العُلَبِ فِي الدُّرْجِ العُلْوِيِّ لِأَدَوَاتِ المَطْبَخِ لِتَصِلَ إِلَيْهَا بِسُهُولَةٍ.",
+      },
+    ],
+    exampleSentence: "He used the manual can opener to open a tin of tuna and sweet corn.",
+    exampleArabic:
+      "اسْتَخْدَمَ فَتَّاحَةَ العُلَبِ اليَدَوِيَّةَ لِفَتْحِ عُلْبَةِ تَرْنَةٍ وَذُرَةٍ حُلْوَةٍ.",
+  },
+  candle: {
+    id: "candle",
+    arabic: "شَمْعَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈkæn.dəl",
+    pronunciationTip: "Short 'a' as in 'can' (/ˈkæn/), followed by a soft syllabic 'l'.",
+    collocations: [
+      "light a candle",
+      "scented candle",
+      "blow out the candle",
+      "candle flame",
+      "flickering candle",
+      "beeswax candle",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "blow out",
+        meaning: "extinguish a candle by blowing air",
+        arabic: "يُطْفِئُ الشَّمْعَةَ بِالنَّفْخ",
+        example: "He blew out the candle before going to sleep.",
+      },
+      {
+        phrase: "light up",
+        meaning: "ignite a candle to illuminate a room",
+        arabic: "يُشْعِلُ",
+        example: "She lit up three scented candles for a cozy evening.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cozy Ambiance",
+        en: "She lit a vanilla scented candle to create a relaxing evening atmosphere.",
+        ar: "أَشْعَلَتْ شَمْعَةً مُعَطَّرَةً بِالفَانِيلْيَا لِخَلْقِ أَجْوَاءِ اسْتِرْخَاءٍ مَسَائِيَّةٍ.",
+      },
+      {
+        context: "Safety",
+        en: "Always blow out burning candles before leaving the house or going to bed.",
+        ar: "احْرِصْ دَائِماً عَلَى إِطْفَاءِ الشُّمُوعِ المُشْتَعِلَةِ قَبْلَ مُغَادَرَةِ المَنْزِلِ أَوِ النَّوْمِ.",
+      },
+      {
+        context: "Emergency",
+        en: "When the power went out during the storm, they used candles for light.",
+        ar: "عِنْدَمَا انْقَطَعَتِ الكَهْرَبَاءُ خِلالَ العَاصِفَةِ، اسْتَخْدَمُوا الشُّمُوعَ لِلإِضَاءَةِ.",
+      },
+    ],
+    exampleSentence: "She lit a vanilla scented candle to create a relaxing evening atmosphere.",
+    exampleArabic:
+      "أَشْعَلَتْ شَمْعَةً مُعَطَّرَةً بِالفَانِيلْيَا لِخَلْقِ أَجْوَاءِ اسْتِرْخَاءٍ مَسَائِيَّةٍ.",
+  },
+  "candle-holder": {
+    id: "candle-holder",
+    arabic: "شَمْعَدَان (حَامِلُ الشُّمُوع)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkæn.dəl ˌhoʊl.dər",
+    pronunciationTip: "Compound noun: 'CANDLE' (/ˈkæn.dəl/) + 'HOLDER' (/ˈhoʊl.dər/).",
+    collocations: [
+      "brass candle holder",
+      "glass candle holder",
+      "pair of candle holders",
+      "taper candle holder",
+      "place on a candle holder",
+      "ceramic candle holder",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "set in",
+        meaning: "insert candle into holder securely",
+        arabic: "يُثَبِّتُ الشَّمْعَةَ فِي الشَّمْعَدَان",
+        example: "Set the tall beeswax candle securely into the brass holder.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Table Decor",
+        en: "A pair of antique brass candle holders framed the floral centerpiece on the dining table.",
+        ar: "أَحَاطَ زَوْجٌ مِنْ الشَّمْعَدَانَاتِ النُّحَاسِيَّةِ الأَثَرِيَّةِ بِبَاقَةِ الزُّهُورِ عَلَى الطَّاوِلَةِ.",
+      },
+      {
+        context: "Safety",
+        en: "Heavy glass candle holders catch melting wax drips and prevent fire hazards.",
+        ar: "تَمْنَعُ حَوَامِلُ الشُّمُوعِ الزُّجَاجِيَّةُ الثَّقِيلَةُ تَقَاطُرَ الشَّمْعِ المُذَابِ وَتُحَقِّقُ الأَمَانَ.",
+      },
+      {
+        context: "Mantel Styling",
+        en: "She arranged three pillar candle holders of varying heights along the fireplace mantel.",
+        ar: "رَتَّبَتْ ثَلاثَةَ حَوَامِلِ شُمُوعٍ بِارْتِفَاعَاتٍ مُتَفَاوِتَةٍ عَلَى رَفِّ المِدْفَأَةِ.",
+      },
+    ],
+    exampleSentence:
+      "A pair of antique brass candle holders framed the floral centerpiece on the dining table.",
+    exampleArabic:
+      "أَحَاطَ زَوْجٌ مِنْ الشَّمْعَدَانَاتِ النُّحَاسِيَّةِ الأَثَرِيَّةِ بِبَاقَةِ الزُّهُورِ عَلَى الطَّاوِلَةِ.",
+  },
+  carpet: {
+    id: "carpet",
+    arabic: "مَوْكِيت / سَجَّادٌ شَامِل",
+    partOfSpeech: "noun",
+    phonetic: "ˈkɑːr.pɪt",
+    pronunciationTip: "First syllable has the broad 'ar' sound as in 'car' or 'park'.",
+    collocations: [
+      "wall-to-wall carpet",
+      "vacuum the carpet",
+      "clean carpet",
+      "plush carpet",
+      "stain on the carpet",
+      "thick carpet",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "clean up",
+        meaning: "remove spills from carpet",
+        arabic: "يُنَظِّفُ",
+        example: "Clean up that coffee spill immediately so it doesn't stain the carpet.",
+      },
+      {
+        phrase: "rip up",
+        meaning: "remove old carpeting",
+        arabic: "يَقْلَعُ المَوْكِيت القَدِيم",
+        example: "They decided to rip up the old carpet and install hardwood.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Comfort & Acoustics",
+        en: "The plush bedroom carpet absorbs footsteps and keeps the room quiet.",
+        ar: "يَمْتَصُّ مَوْكِيتُ غُرْفَةِ النَّوْمِ الفَاخِرُ صَوْتَ الخُطُوَاتِ وَيُحَافِظُ عَلَى هُدُوءِ الغُرْفَةِ.",
+      },
+      {
+        context: "Cleaning Routine",
+        en: "He vacuums the living room carpet thoroughly every Saturday morning.",
+        ar: "يُنَظِّفُ سَجَّادَ غُرْفَةِ المَعِيشَةِ بِالمِكْنَسَةِ الكَهْرَبَائِيَّةِ كُلَّ صَبَاحِ سَبْتٍ.",
+      },
+      {
+        context: "Home Renovation",
+        en: "They chose a stain-resistant beige carpet for the children's playroom.",
+        ar: "اخْتَارُوا مَوْكِيتاً بَيْجِيّاً مُقَاوِماً لِلْبُقَعِ لِغُرْفَةِ أَلْعَابِ الأَطْفَالِ.",
+      },
+    ],
+    exampleSentence: "The plush bedroom carpet absorbs footsteps and keeps the room quiet.",
+    exampleArabic:
+      "يَمْتَصُّ مَوْكِيتُ غُرْفَةِ النَّوْمِ الفَاخِرُ صَوْتَ الخُطُوَاتِ وَيُحَافِظُ عَلَى هُدُوءِ الغُرْفَةِ.",
+  },
+  "casserole-dish": {
+    id: "casserole-dish",
+    arabic: "طَاجِنُ فُرْن (صِينِيَّةُ بَايْرِكْس / كَاسَرُول)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkæs.ə.roʊl ˌdɪʃ",
+    pronunciationTip: "Three syllables in 'casserole' (/ˈkæs.ə.roʊl/) + 'dish'.",
+    collocations: [
+      "ceramic casserole dish",
+      "glass casserole dish",
+      "bake in a casserole dish",
+      "covered casserole dish",
+      "casserole recipe",
+      "deep casserole dish",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "layer up",
+        meaning: "arrange ingredients in layers in dish",
+        arabic: "يُرَتِّبُ طَبَقَاتٍ",
+        example: "Layer up lasagna noodles, meat sauce, and cheese in the dish.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Baking Lasagna",
+        en: "She layered meat sauce and ricotta cheese in a deep ceramic casserole dish.",
+        ar: "رَتَّبَتْ صَلْصَةَ اللَّحْمِ وَجُبْنَ الرِّيكُوتَا فِي طَاجِنِ فُرْنٍ خَزَفِيٍّ عَمِيقٍ.",
+      },
+      {
+        context: "Comfort Food",
+        en: "Bake the creamy potato casserole dish until the cheese topping bubbles.",
+        ar: "اخْبِزْ صِينِيَّةَ البَطَاطِسِ بِالكْرِيمَةِ فِي الفُرْنِ حَتَّى تَفُورَ طَبَقَةُ الجُبْنِ.",
+      },
+      {
+        context: "Serving",
+        en: "The elegant glazed casserole dish can go straight from oven to dining table.",
+        ar: "يُمْكِنُ تَقْدِيمُ طَاجِنِ الفُرْنِ الأَنِيقِ مُبَاشَرَةً مِنَ الفُرْنِ إِلَى طَاوِلَةِ الطَّعَامِ.",
+      },
+    ],
+    exampleSentence: "She layered meat sauce and ricotta cheese in a deep ceramic casserole dish.",
+    exampleArabic:
+      "رَتَّبَتْ صَلْصَةَ اللَّحْمِ وَجُبْنَ الرِّيكُوتَا فِي طَاجِنِ فُرْنٍ خَزَفِيٍّ عَمِيقٍ.",
+  },
+  cat: {
+    id: "cat",
+    arabic: "قِطَّة (بِسَّة)",
+    partOfSpeech: "noun",
+    phonetic: "kæt",
+    pronunciationTip: "Short 'a' vowel /æ/ as in 'hat', 'mat', or 'bat'.",
+    collocations: [
+      "barn cat",
+      "purring cat",
+      "pet the cat",
+      "curled-up cat",
+      "catch mice",
+      "kitten",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "curl up",
+        meaning: "sleep in a rounded cozy ball",
+        arabic: "يَلْتَفُّ لِلنَّوْم",
+        example: "The tabby cat curled up in a sunny patch on the porch.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Barn Patrol",
+        en: "The nimble barn cat keeps the grain storage barn free of mice and rodents.",
+        ar: "تُحَافِظُ قِطَّةُ الحَظِيرَةِ الرَّشِيقَةُ عَلَى مَخْزَنِ الحُبُوبِ خَالِياً مِنَ القَوَارِضِ.",
+      },
+      {
+        context: "Sunny Spot",
+        en: "She smiled as the ginger cat purred softly while basking in the warm morning sun.",
+        ar: "ابْتَسَمَتْ بَيْنَمَا كَانَتِ القِطَّةُ تَخْرْخِرُ بِهُدُوءٍ تَحْتَ أَشِعَّةِ شَمْسِ الصَّبَاحِ.",
+      },
+      {
+        context: "Agility",
+        en: "The cat leaped gracefully onto the high wooden fence without making a sound.",
+        ar: "قَفَزَتِ القِطَّةُ بِرَشَاقَةٍ فَوْقَ السِّيَاجِ الخَشَبِيِّ العَالِي دُونَ إِصْدَارِ أَيِّ صَوْتٍ.",
+      },
+    ],
+    exampleSentence: "The nimble barn cat keeps the grain storage barn free of mice and rodents.",
+    exampleArabic:
+      "تُحَافِظُ قِطَّةُ الحَظِيرَةِ الرَّشِيقَةُ عَلَى مَخْزَنِ الحُبُوبِ خَالِياً مِنَ القَوَارِضِ.",
+  },
+  "ceiling-light": {
+    id: "ceiling-light",
+    arabic: "إِضَاءَةُ السَّقْف (نَجَفَة / مِصْبَاحُ السَّقْف)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsiː.lɪŋ ˌlaɪt",
+    pronunciationTip: "Primary stress on 'CEIL' in ceiling (/ˈsiː.lɪŋ/), secondary on 'light'.",
+    collocations: [
+      "turn on the ceiling light",
+      "bright ceiling light",
+      "dim the ceiling light",
+      "flush ceiling light",
+      "replace the ceiling light",
+      "ceiling light fixture",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "turn on",
+        meaning: "switch on overhead lighting",
+        arabic: "يُضِيءُ نُورَ السَّقْف",
+        example: "Turn on the ceiling light so we can see the whole room clearly.",
+      },
+      {
+        phrase: "dim down",
+        meaning: "reduce brightness",
+        arabic: "يُخَفِّفُ حِدَّةَ الإِضَاءَة",
+        example: "Dim down the ceiling light when it's time to watch a movie.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Illumination",
+        en: "The modern LED ceiling light brightens the entire bedroom evenly.",
+        ar: "يُضِيءُ مِصْبَاحُ السَّقْفِ الحَدِيثُ الغُرْفَةَ بِأَكْمَلِهَا بِشَكْلٍ مُتَجَانِسٍ.",
+      },
+      {
+        context: "Maintenance",
+        en: "He climbed the step stool to replace the burnt-out bulb in the ceiling light.",
+        ar: "صَعِدَ عَلَى المَقْعَدِ لِيَسْتَبْدِلَ اللَّمْبَةَ التَّالِفَةَ فِي إِضَاءَةِ السَّقْفِ.",
+      },
+      {
+        context: "Atmosphere",
+        en: "The dimmable ceiling light lets you adjust brightness to suit your mood.",
+        ar: "تُتِيحُ لَكَ إِضَاءَةُ السَّقْفِ القَابِلَةُ لِلتَّخْفِيفِ ضَبْطَ السُّطُوعِ حَسَبَ رَغْبَتِكَ.",
+      },
+    ],
+    exampleSentence: "The modern LED ceiling light brightens the entire bedroom evenly.",
+    exampleArabic:
+      "يُضِيءُ مِصْبَاحُ السَّقْفِ الحَدِيثُ الغُرْفَةَ بِأَكْمَلِهَا بِشَكْلٍ مُتَجَانِسٍ.",
+  },
+  chair: {
+    id: "chair",
+    arabic: "كُرْسِيّ",
+    partOfSpeech: "noun",
+    phonetic: "tʃɛər",
+    pronunciationTip: "Begins with the 'ch' sound as in 'church', rhyming with 'air'.",
+    collocations: [
+      "comfortable chair",
+      "sit on a chair",
+      "desk chair",
+      "pull up a chair",
+      "wooden chair",
+      "swivel chair",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sit back",
+        meaning: "relax in a seated position",
+        arabic: "يَسْتَنِدُ لِلخَلْفِ مُسْتَرْخِياً",
+        example: "Sit back in your chair and take a deep breath.",
+      },
+      {
+        phrase: "get up",
+        meaning: "rise from a seated position",
+        arabic: "يَقُومُ / يَنْهَضُ",
+        example: "She got up from the desk chair to stretch her legs.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Ergonomics",
+        en: "An ergonomic desk chair helps prevent back pain while working.",
+        ar: "يُسَاعِدُ كُرْسِيُّ المَكْتَبِ المُرِيحُ فِي مَنْعِ آلامِ الظَّهْرِ أَثْنَاءَ العَمَلِ.",
+      },
+      {
+        context: "Hospitality",
+        en: "Please pull up a chair and join us for dinner.",
+        ar: "تَفَضَّلْ بِسَحْبِ كُرْسِيٍّ وَانْضَمَّ إِلَيْنَا لِتَنَاوُلِ العَشَاءِ.",
+      },
+      {
+        context: "Relaxation",
+        en: "He sat in the soft armchair beside the window with a good book.",
+        ar: "جَلَسَ عَلَى الكُرْسِيِّ المُرِيحِ بِجَانِبِ النَّافِذَةِ مَعَ كِتَابٍ شَيِّقٍ.",
+      },
+    ],
+    exampleSentence: "An ergonomic desk chair helps prevent back pain while working.",
+    exampleArabic:
+      "يُسَاعِدُ كُرْسِيُّ المَكْتَبِ المُرِيحُ فِي مَنْعِ آلامِ الظَّهْرِ أَثْنَاءَ العَمَلِ.",
+  },
+  chandelier: {
+    id: "chandelier",
+    arabic: "نَجَفَةٌ فَاخِرَة (ثُرَيَّا)",
+    partOfSpeech: "noun",
+    phonetic: "ˌʃæn.dəˈlɪər",
+    pronunciationTip:
+      "Begins with 'sh' sound (/ʃæn/), stress on the final syllable 'LIER' (/ˈlɪər/).",
+    collocations: [
+      "crystal chandelier",
+      "dining room chandelier",
+      "sparkling chandelier",
+      "hang a chandelier",
+      "chandelier lights",
+      "modern chandelier",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hang down from",
+        meaning: "suspend chandelier from ceiling",
+        arabic: "يَتَدَلَّى مِنَ السَّقْف",
+        example: "A grand crystal chandelier hung down from the high cathedral ceiling.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Formal Dining",
+        en: "A glittering crystal chandelier hangs gracefully above the long dining room table.",
+        ar: "تَتَدَلَّى ثُرَيَّا كِرِيسْتَالِيَّةٌ بَرَّاقَةٌ بِأَنَاقَةٍ فَوْقَ طَاوِلَةِ غُرْفَةِ الطَّعَامِ الطَّوِيلَةِ.",
+      },
+      {
+        context: "Visual Impact",
+        en: "The modern geometric brass chandelier makes a bold statement in the entryway.",
+        ar: "تُشَكِّلُ النَّجَفَةُ النُّحَاسِيَّةُ الهَنْدَسِيَّةُ العَصْرِيَّةُ لَمْسَةً بَصَرِيَّةً قَوِيَّةً فِي المَدْخَلِ.",
+      },
+      {
+        context: "Cleaning Care",
+        en: "Dust each delicate crystal drop on the chandelier carefully with a lint-free cloth.",
+        ar: "نَظِّفْ حَبَّاتِ الكِرِيسْتَالِ الرَّقِيقَةَ فِي النَّجَفَةِ بِعِنَايَةٍ بِاسْتِخْدَامِ قُمَاشٍ خَالٍ مِنَ الوَبَرِ.",
+      },
+    ],
+    exampleSentence:
+      "A glittering crystal chandelier hangs gracefully above the long dining room table.",
+    exampleArabic:
+      "تَتَدَلَّى ثُرَيَّا كِرِيسْتَالِيَّةٌ بَرَّاقَةٌ بِأَنَاقَةٍ فَوْقَ طَاوِلَةِ غُرْفَةِ الطَّعَامِ الطَّوِيلَةِ.",
+  },
+  charger: {
+    id: "charger",
+    arabic: "شَاحِن",
+    partOfSpeech: "noun",
+    phonetic: "ˈtʃɑːr.dʒər",
+    pronunciationTip: "Starts with 'ch' (/tʃ/), broad 'ar' (/ɑːr/), and soft 'ger' (/dʒər/).",
+    collocations: [
+      "phone charger",
+      "plug in the charger",
+      "fast charger",
+      "wireless charger",
+      "laptop charger",
+      "portable charger",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "plug in",
+        meaning: "connect a charger to an outlet",
+        arabic: "يَصِلُ الشَّاحِنَ بِالكَهْرَبَاء",
+        example: "Plug in the charger so your tablet battery does not die.",
+      },
+      {
+        phrase: "unplug",
+        meaning: "disconnect a charger from power",
+        arabic: "يَفْصِلُ الشَّاحِن",
+        example: "Unplug the charger once the device reaches one hundred percent.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Daily Use",
+        en: "He forgot his phone charger at the office and had to borrow one.",
+        ar: "نَسِيَ شَاحِنَ هَاتِفِهِ فِي المَكْتَبِ وَاضْطُرَّ إِلَى اسْتِعَارَةِ وَاحِدٍ.",
+      },
+      {
+        context: "Technology",
+        en: "A fast USB-C charger can power up your battery in under thirty minutes.",
+        ar: "يُمْكِنُ لِشَاحِنِ USB-C السَّرِيعِ شَحْنَ بَطَّارِيَّتِكَ فِي أَقَلَّ مِنْ ثَلاثِينَ دَقِيقَةً.",
+      },
+      {
+        context: "Travel Checklist",
+        en: "Always pack an international travel adapter and your laptop charger.",
+        ar: "احْرِصْ دَائِماً عَلَى حَزْمِ مُحَوِّلِ قَابِسٍ دَوْلِيٍّ وَشَاحِنِ حَاسُوبِكَ المَحْمُولِ.",
+      },
+    ],
+    exampleSentence: "He forgot his phone charger at the office and had to borrow one.",
+    exampleArabic: "نَسِيَ شَاحِنَ هَاتِفِهِ فِي المَكْتَبِ وَاضْطُرَّ إِلَى اسْتِعَارَةِ وَاحِدٍ.",
+  },
+  cheese: {
+    id: "cheese",
+    arabic: "جُبْن / جُبْنَة",
+    partOfSpeech: "noun",
+    phonetic: "tʃiːz",
+    pronunciationTip: "Starts with 'ch' (/tʃ/), long 'ee' vowel /iː/, ending in voiced 'z'.",
+    collocations: [
+      "grated cheese",
+      "slice of cheese",
+      "melted cheese",
+      "cheddar cheese",
+      "goat cheese",
+      "block of cheese",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "melt down",
+        meaning: "liquefy cheese over food",
+        arabic: "يَذُوبُ الجُبْن",
+        example: "The mozzarella melted down over the crispy pizza crust.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Snack & Sandwiches",
+        en: "She prepared a grilled cheese sandwich using thick slices of mature cheddar.",
+        ar: "أَعَدَّتْ شَطِيرَةَ جُبْنٍ مَشْوِيَّةً بِاسْتِخْدَامِ شَرَائِحَ سَمِيكَةٍ مِنْ جُبْنِ التِّشِيدَرْ المُعَتَّقِ.",
+      },
+      {
+        context: "Pasta Topping",
+        en: "Sprinkle freshly grated Parmesan cheese over the hot bowl of spaghetti bolognese.",
+        ar: "رُشَّ جُبْنَ البَارْمِيزَان المَبْشُورَ طَازَجاً فَوْقَ طَبَقِ المَعْكَرُونَةِ السَّاخِنِ.",
+      },
+      {
+        context: "Entertaining",
+        en: "A gourmet cheese board featuring brie, gouda, and grapes impressed the dinner guests.",
+        ar: "أَبْهَرَتْ صِينِيَّةُ الأَجْبَانِ الفَاخِرَةُ المُحْتَوِيَةُ عَلَى البْرِي وَالجَوْدَا الضُّيُوفَ.",
+      },
+    ],
+    exampleSentence: "She prepared a grilled cheese sandwich using thick slices of mature cheddar.",
+    exampleArabic:
+      "أَعَدَّتْ شَطِيرَةَ جُبْنٍ مَشْوِيَّةً بِاسْتِخْدَامِ شَرَائِحَ سَمِيكَةٍ مِنْ جُبْنِ التِّشِيدَرْ المُعَتَّقِ.",
+  },
+  "chest-of-drawers": {
+    id: "chest-of-drawers",
+    arabic: "خِزَانَةُ أَدْرَاج",
+    partOfSpeech: "noun",
+    phonetic: "ˌtʃɛst əv ˈdrɔːrz",
+    pronunciationTip: "Pronounce 'of' as a weak unstressed schwa /əv/.",
+    collocations: [
+      "wooden chest of drawers",
+      "top drawer",
+      "slide open",
+      "bedroom chest of drawers",
+      "deep drawers",
+      "solid oak chest",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pull out",
+        meaning: "open a drawer outward",
+        arabic: "يَسْحَبُ الدُّرْجَ لِلْخَارِج",
+        example: "He pulled out the top drawer to find his passport.",
+      },
+      {
+        phrase: "sort through",
+        meaning: "examine items in a drawer",
+        arabic: "يَفْرِزُ وَيُفَتِّشُ",
+        example: "She sorted through the chest of drawers for warm socks.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Storage",
+        en: "The wooden chest of drawers holds all their winter sweaters.",
+        ar: "تَتَّسِعُ خِزَانَةُ الأَدْرَاجِ الخَشَبِيَّةُ لِجَمِيعِ كَنْزَاتِهِمُ الشَّتْوِيَّةِ.",
+      },
+      {
+        context: "Organization",
+        en: "Keep important documents safely in the locked top drawer.",
+        ar: "احْتَفِظْ بِالوِثَائِقِ الهَامَّةِ بِأَمَانٍ فِي الدُّرْجِ العُلْوِيِّ المُقْفَلِ.",
+      },
+      {
+        context: "Craftsmanship",
+        en: "This vintage chest of drawers was handcrafted from solid pine.",
+        ar: "صُنِعَتْ خِزَانَةُ الأَدْرَاجِ الكِلاسِيكِيَّةُ هَذِهِ يَدَوِيّاً مِنْ خَشَبِ الصَّنَوْبَرِ الصُّلْبِ.",
+      },
+    ],
+    exampleSentence: "The wooden chest of drawers holds all their winter sweaters.",
+    exampleArabic:
+      "تَتَّسِعُ خِزَانَةُ الأَدْرَاجِ الخَشَبِيَّةُ لِجَمِيعِ كَنْزَاتِهِمُ الشَّتْوِيَّةِ.",
+  },
+  chicken: {
+    id: "chicken",
+    arabic: "دَجَاجَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈtʃɪk.ɪn",
+    pronunciationTip: "Begins with 'ch' sound (/tʃ/), short 'i' in both syllables (/ˈtʃɪk.ɪn/).",
+    collocations: [
+      "chicken coop",
+      "free-range chicken",
+      "feed the chickens",
+      "lay eggs",
+      "clucking chicken",
+      "roast chicken",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "chicken out",
+        meaning: "(idiom) decide not to do something out of fear",
+        arabic: "يَتَرَاجَعُ جُبْناً",
+        example: "He was going to dive into the lake, but chickened out at the last second.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Egg Gathering",
+        en: "The children collect fresh brown eggs from the chicken coop every morning.",
+        ar: "يَجْمَعُ الأَطْفَالُ البَيْضَ البُنِّيَّ الطَّازَجَ مِنْ خُمِّ الدَّجَاجِ كُلَّ صَبَاحٍ.",
+      },
+      {
+        context: "Free-Range Life",
+        en: "Free-range chickens roam around the farmyard pecking at grass seeds and grains.",
+        ar: "تَتَجَوَّلُ الدَّجَاجَاتُ المَطْلُوقَةُ فِي فِنَاءِ المَزْرَعَةِ تَنْقُرُ الحُبُوبَ وَالأَعْشَابَ.",
+      },
+      {
+        context: "Farm Sounds",
+        en: "The cheerful clucking of hens echoed outside the barn at sunrise.",
+        ar: "تَرَدَّدَ صَوْتُ قَوْقَأَةِ الدَّجَاجِ البَهِيجِ خَارِجَ الحَظِيرَةِ عِنْدَ شُرُوقِ الشَّمْسِ.",
+      },
+    ],
+    exampleSentence: "The children collect fresh brown eggs from the chicken coop every morning.",
+    exampleArabic:
+      "يَجْمَعُ الأَطْفَالُ البَيْضَ البُنِّيَّ الطَّازَجَ مِنْ خُمِّ الدَّجَاجِ كُلَّ صَبَاحٍ.",
+  },
+  "cling-film": {
+    id: "cling-film",
+    arabic: "غِلَافٌ بَلاسْتِيكِيٌّ لَاصِق (كْلِينْغ فِيلْم)",
+    partOfSpeech: "noun",
+    phonetic: "ˈklɪŋ ˌfɪlm",
+    pronunciationTip: "Compound noun: 'CLING' (/klɪŋ/) + 'FILM' (/fɪlm/).",
+    collocations: [
+      "roll of cling film",
+      "wrap in cling film",
+      "seal with cling film",
+      "transparent cling film",
+      "stretch cling film",
+      "cover food with cling film",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wrap up in",
+        meaning: "enclose food tightly in cling film",
+        arabic: "يَلُفُّ بِالغِلافِ اللّاصِق",
+        example: "Wrap up the cheese tightly in cling film to stop it drying out.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cheese Storage",
+        en: "Wrap the block of cheddar tightly in cling film to preserve its moisture.",
+        ar: "لُفَّ قِطْعَةَ جُبْنِ التِّشِيدَرْ بِإِحْكَامٍ فِي الغِلافِ البَلاسْتِيكِيِّ لِلْحِفَاظِ عَلَى رُطُوبَتِهَا.",
+      },
+      {
+        context: "Party Prep",
+        en: "Cover sandwich platters with transparent cling film until guests arrive.",
+        ar: "غَطِّ صَوَانِي السَّنْدَوِيتْشَاتِ بِالغِلافِ اللّاصِقِ الشَّفَّافِ حَتَّى يَصِلَ الضُّيُوفُ.",
+      },
+      {
+        context: "Baking",
+        en: "Cover the rising yeast dough bowl with cling film and place it in a warm spot.",
+        ar: "غَطِّ وِعَاءَ عَجِينِ الخَمِيرَةِ بِالغِلافِ البَلاسْتِيكِيِّ وَضَعْهُ فِي مَكَانٍ دَافِئٍ لِيَخْتَمِرَ.",
+      },
+    ],
+    exampleSentence: "Wrap the block of cheddar tightly in cling film to preserve its moisture.",
+    exampleArabic:
+      "لُفَّ قِطْعَةَ جُبْنِ التِّشِيدَرْ بِإِحْكَامٍ فِي الغِلافِ البَلاسْتِيكِيِّ لِلْحِفَاظِ عَلَى رُطُوبَتِهَا.",
+  },
+  clock: {
+    id: "clock",
+    arabic: "سَاعَةُ حَائِط / سَاعَة",
+    partOfSpeech: "noun",
+    phonetic: "klɑːk",
+    pronunciationTip: "Short open 'o' sound /ɑː/ as in 'sock' or 'lock'.",
+    collocations: [
+      "wall clock",
+      "check the clock",
+      "tick of the clock",
+      "digital clock",
+      "clock on the wall",
+      "set the clock",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "look at",
+        meaning: "check the time on a clock",
+        arabic: "يَنْظُرُ إِلَى السَّاعَة",
+        example: "He looked at the clock and realized he was late.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Timekeeping",
+        en: "She glanced at the wall clock to check how much time remained.",
+        ar: "أَلْقَتْ نَظْرَةً عَلَى سَاعَةِ الحَائِطِ لِمَعْرِفَةِ الوَقْتِ المُتَبَقِّي.",
+      },
+      {
+        context: "Quiet Night",
+        en: "In the quiet bedroom, the gentle ticking of the clock was comforting.",
+        ar: "فِي غُرْفَةِ النَّوْمِ الهَادِئَةِ، كَانَتْ دَقَّاتُ السَّاعَةِ اللَّطِيفَةُ مَبْعَثاً لِلطُّمَأْنِينَةِ.",
+      },
+      {
+        context: "Decor",
+        en: "A vintage wooden clock hangs prominently in the kitchen area.",
+        ar: "تُعَلَّقُ سَاعَةٌ خَشَبِيَّةٌ أَنِيقَةٌ بِشَكْلٍ بَارِزٍ فِي مِسَاحَةِ المَطْبَخِ.",
+      },
+    ],
+    exampleSentence: "She glanced at the wall clock to check how much time remained.",
+    exampleArabic: "أَلْقَتْ نَظْرَةً عَلَى سَاعَةِ الحَائِطِ لِمَعْرِفَةِ الوَقْتِ المُتَبَقِّي.",
+  },
+  coaster: {
+    id: "coaster",
+    arabic: "قَاعِدَةُ كُوب (كُوسْتَر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkoʊ.stər",
+    pronunciationTip: "Long 'o' vowel /oʊ/ as in 'coast' or 'toast'.",
+    collocations: [
+      "cork coaster",
+      "wooden coaster",
+      "set of coasters",
+      "put your mug on a coaster",
+      "marble coaster",
+      "absorbent coaster",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "set down on",
+        meaning: "place a glass on a protective coaster",
+        arabic: "يَضَعُ الكُوبَ عَلَى الكُوسْتَر",
+        example: "Always set down your cold iced drink on a coaster.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Protecting Furniture",
+        en: "Always place cold drinks on a coaster to prevent water condensation rings on the wood.",
+        ar: "ضَعِ المَشْرُوبَاتِ البَارِدَةَ دَائِماً عَلَى قَاعِدَةِ كُوبٍ لِمَنْعِ آثَارِ الرُّطُوبَةِ عَلَى الخَشَبِ.",
+      },
+      {
+        context: "Tabletop Accessories",
+        en: "A neat stack of four marble and brass coasters rests on the coffee table.",
+        ar: "تَسْتَقِرُّ مَجْمُوعَةٌ أَنِيقَةٌ مِنْ 4 قَوَاعِدِ أَكْوَابٍ رُخَامِيَّةٍ عَلَى طَاوِلَةِ القَهْوَةِ.",
+      },
+      {
+        context: "Absorbency",
+        en: "Natural cork coasters absorb drips quickly without scratching delicate surfaces.",
+        ar: "تَمْتَصُّ قَوَاعِدُ الفِلِّينِ الطَّبِيعِيَّةُ القَطَرَاتِ سَرِيعاً دُونَ خَدْشِ الأَسْطُحِ الرَّقِيقَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Always place cold drinks on a coaster to prevent water condensation rings on the wood.",
+    exampleArabic:
+      "ضَعِ المَشْرُوبَاتِ البَارِدَةَ دَائِماً عَلَى قَاعِدَةِ كُوبٍ لِمَنْعِ آثَارِ الرُّطُوبَةِ عَلَى الخَشَبِ.",
+  },
+  "coat-rack": {
+    id: "coat-rack",
+    arabic: "شَمَّاعَةُ مَعَاطِف (عَلَّاقَةُ مَعَاطِف)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkoʊt ˌræk",
+    pronunciationTip: "Compound noun: 'COAT' (/koʊt/) + 'RACK' (/ræk/).",
+    collocations: [
+      "wooden coat rack",
+      "hang coats on the rack",
+      "entryway coat rack",
+      "standing coat rack",
+      "coat rack hooks",
+      "hallway coat rack",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hang up on",
+        meaning: "place a coat on a rack hook",
+        arabic: "يُعَلِّقُ عَلَى الشَّمَّاعَة",
+        example: "Hang up your wet raincoat on the entryway coat rack.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Entryway Welcome",
+        en: "Guests hung their heavy winter coats and wool scarves on the entryway coat rack.",
+        ar: "عَلَّقَ الضُّيُوفُ مَعَاطِفَهُمُ الشَّتْوِيَّةَ الثَّقِيلَةَ وَأَوْشِحَتَهُمْ عَلَى شَمَّاعَةِ المَدْخَلِ.",
+      },
+      {
+        context: "Hallway Organization",
+        en: "A freestanding wooden coat rack keeps jackets and umbrellas neatly organized.",
+        ar: "تُحَافِظُ شَمَّاعَةُ المَعَاطِفِ الخَشَبِيَّةُ القَائِمَةُ عَلَى تَرْتِيبِ السُّتْرَاتِ وَالمَظَلاَّتِ.",
+      },
+      {
+        context: "Space Saving",
+        en: "Wall-mounted coat racks with sturdy cast iron hooks save floor space.",
+        ar: "تُوَفِّرُ شَمَّاعَاتُ المَعَاطِفِ الجِدَارِيَّةُ ذَاتُ الخَطَّافَاتِ المَتِينَةِ مَسَاحَةَ الأَرْضِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "Guests hung their heavy winter coats and wool scarves on the entryway coat rack.",
+    exampleArabic:
+      "عَلَّقَ الضُّيُوفُ مَعَاطِفَهُمُ الشَّتْوِيَّةَ الثَّقِيلَةَ وَأَوْشِحَتَهُمْ عَلَى شَمَّاعَةِ المَدْخَلِ.",
+  },
+  "coffee-maker": {
+    id: "coffee-maker",
+    arabic: "مَاكِينَةُ القَهْوَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈkɑː.fi ˌmeɪ.kər",
+    pronunciationTip: "Compound noun: 'COFFEE' (/ˈkɑː.fi/) + 'MAKER' (/ˈmeɪ.kər/).",
+    collocations: [
+      "brew in the coffee maker",
+      "drip coffee maker",
+      "program the coffee maker",
+      "espresso coffee maker",
+      "clean the coffee maker",
+      "fresh coffee maker",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "brew up",
+        meaning: "prepare fresh coffee",
+        arabic: "يُعِدُّ / يُخَمِّرُ القَهْوَة",
+        example: "The automatic machine brewed up a rich pot of coffee.",
+      },
+      {
+        phrase: "pour out",
+        meaning: "dispense coffee into a cup",
+        arabic: "يَسْكُبُ القَهْوَة",
+        example: "She poured out a steaming mug of coffee.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Morning Routine",
+        en: "The programmable coffee maker starts brewing fresh coffee at seven every morning.",
+        ar: "تَبْدَأُ مَاكِينَةُ القَهْوَةِ المُبَرْمَجَةُ فِي إِعْدَادِ القَهْوَةِ الطَّازَجَةِ فِي السَّابِعَةِ صَبَاحاً.",
+      },
+      {
+        context: "Workplace",
+        en: "The office kitchen coffee maker is always busy during morning hours.",
+        ar: "مَاكِينَةُ قَهْوَةِ مَطْبَخِ المَكْتَبِ مُزْدَحِمَةٌ دَائِماً خِلالَ سَاعَاتِ الصَّبَاحِ.",
+      },
+      {
+        context: "Maintenance",
+        en: "Descale your coffee maker with vinegar solution every three months.",
+        ar: "قُمْ بِإِزَالَةِ التَّرَسُّبَاتِ الكِلْسِيَّةِ مِنْ مَاكِينَةِ القَهْوَةِ كُلَّ ثَلاثَةِ أَشْهُرٍ.",
+      },
+    ],
+    exampleSentence:
+      "The programmable coffee maker starts brewing fresh coffee at seven every morning.",
+    exampleArabic:
+      "تَبْدَأُ مَاكِينَةُ القَهْوَةِ المُبَرْمَجَةُ فِي إِعْدَادِ القَهْوَةِ الطَّازَجَةِ فِي السَّابِعَةِ صَبَاحاً.",
   },
   "coffee-table": {
     id: "coffee-table",
-    arabic: "طَاوِلَةُ القَهْوَة (طَاوِلَةُ المَعِيشَة)",
+    arabic: "طَاوِلَةُ قَهْوَة (تَرَابِيزَةُ الصَّالُون)",
     partOfSpeech: "noun",
-    collocations: ["magazines on the coffee table", "glass coffee table"],
-    exampleSentence: "She set down her mug on the glass coffee table.",
-    exampleArabic: "وضعت كوبها على طاولة القهوة الزجاجية.",
+    phonetic: "ˈkɑː.fi ˌteɪ.bəl",
+    pronunciationTip: "Compound noun: 'COFFEE' (/ˈkɑː.fi/) + 'TABLE' (/ˈteɪ.bəl/).",
+    collocations: [
+      "wooden coffee table",
+      "glass coffee table",
+      "on the coffee table",
+      "round coffee table",
+      "coffee table book",
+      "clear the coffee table",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "set down on",
+        meaning: "place drinks or books on the table",
+        arabic: "يَضَعُ عَلَى الطَّاوِلَة",
+        example: "Set down your teacup on a coaster on the coffee table.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Living Room Center",
+        en: "A handcrafted oak coffee table sits conveniently in front of the sofa.",
+        ar: "تَسْتَقِرُّ طَاوِلَةُ قَهْوَةٍ خَشَبِيَّةٌ يَدَوِيَّةُ الصُّنْعِ أَمَامَ الأَرِيكَةِ مُبَاشَرَةً.",
+      },
+      {
+        context: "Tabletop Styling",
+        en: "She arranged a decorative candle, a vase of tulips, and an art book on the coffee table.",
+        ar: "رَتَّبَتْ شَمْعَةً أَنِيقَةً وَزَهْرِيَّةَ تِيُولِيب وَكِتَابَ فَنٍّ عَلَى طَاوِلَةِ القَهْوَةِ.",
+      },
+      {
+        context: "Coaster Use",
+        en: "Always use wooden or cork coasters to prevent water rings on the coffee table.",
+        ar: "اسْتَخْدِمْ دَائِماً قَوَاعِدَ الأَكْوَابِ لِمَنْعِ آثَارِ المَاءِ عَلَى طَاوِلَةِ القَهْوَةِ.",
+      },
+    ],
+    exampleSentence: "A handcrafted oak coffee table sits conveniently in front of the sofa.",
+    exampleArabic:
+      "تَسْتَقِرُّ طَاوِلَةُ قَهْوَةٍ خَشَبِيَّةٌ يَدَوِيَّةُ الصُّنْعِ أَمَامَ الأَرِيكَةِ مُبَاشَرَةً.",
+  },
+  colander: {
+    id: "colander",
+    arabic: "مِصْفَاة (مِصْفَاةُ مَعْكَرُونَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkɑː.lən.dər",
+    pronunciationTip: "Three syllables: 'COL-an-der' (/ˈkɑː.lən.dər/).",
+    collocations: [
+      "drain in a colander",
+      "pasta colander",
+      "rinse in a colander",
+      "stainless steel colander",
+      "mesh colander",
+      "colander in the sink",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "drain off",
+        meaning: "pour off water using a colander",
+        arabic: "يُصَفِّي المَاء",
+        example: "Drain off the boiling cooking water through the colander.",
+      },
+      {
+        phrase: "rinse out",
+        meaning: "wash fruit with water in a colander",
+        arabic: "يَشْطُفُ",
+        example: "Rinse out the fresh berries under cold tap water in the colander.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cooking Pasta",
+        en: "He poured the cooked spaghetti into a stainless steel colander in the sink to drain.",
+        ar: "سَكَبَ المَعْكَرُونَةَ المَطْبُوخَةَ فِي مِصْفَاةِ سْتَانْلِس دَاخِلَ الحَوْضِ لِتَصْفِيَتِهَا.",
+      },
+      {
+        context: "Washing Produce",
+        en: "Wash fresh spinach and grapes thoroughly under cold running water in the colander.",
+        ar: "اغْسِلِ السَّبَانِخَ وَالعِنَبَ جَيِّداً تَحْتَ مَاءِ الصَّنْبُورِ البَارِدِ فِي المِصْفَاةِ.",
+      },
+      {
+        context: "Storage",
+        en: "Rest the colander over a large bowl to collect drained vegetable broth.",
+        ar: "ضَعِ المِصْفَاةَ فَوْقَ وِعَاءٍ كَبِيرٍ لِتَجْمِيعِ مَرَقِ الخُضَارِ المُصَفَّى.",
+      },
+    ],
+    exampleSentence:
+      "He poured the cooked spaghetti into a stainless steel colander in the sink to drain.",
+    exampleArabic:
+      "سَكَبَ المَعْكَرُونَةَ المَطْبُوخَةَ فِي مِصْفَاةِ سْتَانْلِس دَاخِلَ الحَوْضِ لِتَصْفِيَتِهَا.",
+  },
+  comforter: {
+    id: "comforter",
+    arabic: "لِحَافٌ مَحْشُوّ (كُوڤِرْتَه / لِحَاف)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkʌm.fər.tər",
+    pronunciationTip: "First syllable has the short 'u' sound /ʌ/ as in 'come'.",
+    collocations: [
+      "warm comforter",
+      "fluffy comforter",
+      "wash the comforter",
+      "bed comforter",
+      "quilted comforter",
+      "cozy comforter",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pull over",
+        meaning: "draw a comforter over yourself",
+        arabic: "يَسْحَبُ اللِّحَافَ فَوْقَهُ",
+        example: "He pulled the thick comforter over his shoulders.",
+      },
+      {
+        phrase: "snuggle in",
+        meaning: "get cozy under a comforter",
+        arabic: "يَسْتَكِينُ بِدِفْء",
+        example: "The children snuggled in under their soft comforter.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bed Setup",
+        en: "The quilted comforter gives the guest bed a welcoming, plush look.",
+        ar: "يَمْنَحُ اللِّحَافُ المَحْشُوُّ سَرِيرَ الضُّيُوفِ مَظْهَراً جَذَّاباً وَمُرِيحاً.",
+      },
+      {
+        context: "Comfort",
+        en: "A lightweight cotton comforter is ideal for warm summer evenings.",
+        ar: "اللِّحَافُ القُطْنِيُّ الخَفِيفُ مِثَالِيٌّ لِأَمْسِيَاتِ الصَّيْفِ الدَّافِئَةِ.",
+      },
+      {
+        context: "Care",
+        en: "Always check the label before washing your down comforter.",
+        ar: "تَحَقَّقْ دَائِماً مِنْ تَعْلِيمَاتِ الغَسِيلِ قَبْلَ غَسْلِ لِحَافِ الرِّيشِ.",
+      },
+    ],
+    exampleSentence: "The quilted comforter gives the guest bed a welcoming, plush look.",
+    exampleArabic:
+      "يَمْنَحُ اللِّحَافُ المَحْشُوُّ سَرِيرَ الضُّيُوفِ مَظْهَراً جَذَّاباً وَمُرِيحاً.",
+  },
+  "cooking-oil": {
+    id: "cooking-oil",
+    arabic: "زَيْتُ الطَّهْي (زَيْت)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkʊk.ɪŋ ˌɔɪl",
+    pronunciationTip: "Compound noun: 'COOKING' (/ˈkʊk.ɪŋ/) + 'OIL' (/ɔɪl/).",
+    collocations: [
+      "tablespoon of cooking oil",
+      "heat cooking oil",
+      "vegetable cooking oil",
+      "canola cooking oil",
+      "sunflower cooking oil",
+      "bottle of cooking oil",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "heat up",
+        meaning: "bring oil to frying temperature",
+        arabic: "يُسَخِّنُ الزَّيْت",
+        example: "Heat up the cooking oil in the wok before adding the spices.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Frying Prep",
+        en: "Heat two tablespoons of sunflower cooking oil in the frying pan over medium heat.",
+        ar: "سَخِّنْ مِلْعَقَتَيْنِ مِنْ زَيْتِ عَبَّادِ الشَّمْسِ لِلطَّهْيِ فِي المِقْلاةِ عَلَى نَارٍ مُتَوَسِّطَةٍ.",
+      },
+      {
+        context: "High Heat Cooking",
+        en: "Canola and avocado cooking oils have high smoke points, making them safe for searing.",
+        ar: "تَتَمَيَّزُ زُيُوتُ الكَانُولا وَالأَفُوكَادُو بِنُقْطَةِ دُخَانٍ عَالِيَةٍ مِمَّا يَجْعَلُهَا مِثَالِيَّةً لِلتَّحْمِيرِ.",
+      },
+      {
+        context: "Baking Substitute",
+        en: "You can substitute melted butter with vegetable cooking oil in most muffin recipes.",
+        ar: "يُمْكِنُكَ اسْتِبْدَالُ الزُّبْدَةِ المُذَابَةِ بِزَيْتِ الطَّهْيِ النَّبَاتِيِّ فِي مُعْظَمِ وَصَفَاتِ الكَعْكِ.",
+      },
+    ],
+    exampleSentence:
+      "Heat two tablespoons of sunflower cooking oil in the frying pan over medium heat.",
+    exampleArabic:
+      "سَخِّنْ مِلْعَقَتَيْنِ مِنْ زَيْتِ عَبَّادِ الشَّمْسِ لِلطَّهْيِ فِي المِقْلاةِ عَلَى نَارٍ مُتَوَسِّطَةٍ.",
+  },
+  corkscrew: {
+    id: "corkscrew",
+    arabic: "فَتَّاحَةُ زُجَاجَات (مِفْتَاحُ الفِلِّين)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkɔːrk.skruː",
+    pronunciationTip: "Compound noun: 'CORK' (/kɔːrk/) + 'SCREW' (/skruː/).",
+    collocations: [
+      "waiter's corkscrew",
+      "pull the cork with a corkscrew",
+      "screw the corkscrew",
+      "wine corkscrew",
+      "bottle corkscrew",
+      "lever corkscrew",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pull out",
+        meaning: "extract cork from bottle",
+        arabic: "يَسْحَبُ الفِلِّينَة",
+        example: "Twist the screw in and pull out the cork smoothly.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dinner Party",
+        en: "He twisted the corkscrew into the wine bottle and pulled the cork smoothly.",
+        ar: "لَفَّ فَتَّاحَةَ الفِلِّينِ دَاخِلَ الزُّجَاجَةِ وَسَحَبَ السِّدَادَةَ بِسَلاسَةٍ.",
+      },
+      {
+        context: "Tool Quality",
+        en: "A waiter's corkscrew with a built-in foil cutter is reliable and compact.",
+        ar: "تُعَدُّ فَتَّاحَةُ الفِلِّينِ المُمَيَّزَةُ بِقَاطِعِ قَصْدِيرٍ عَمَلِيَّةً وَمَوْثُوقَةً جِدّاً.",
+      },
+      {
+        context: "Kitchen Drawer",
+        en: "She retrieved the corkscrew from the drawer to open a bottle of sparkling juice.",
+        ar: "أَخْرَجَتْ مِفْتَاحَ الفِلِّينِ مِنَ الدُّرْجِ لِفَتْحِ زُجَاجَةِ عَصِيرٍ فَوَّارٍ.",
+      },
+    ],
+    exampleSentence: "He twisted the corkscrew into the wine bottle and pulled the cork smoothly.",
+    exampleArabic:
+      "لَفَّ فَتَّاحَةَ الفِلِّينِ دَاخِلَ الزُّجَاجَةِ وَسَحَبَ السِّدَادَةَ بِسَلاسَةٍ.",
+  },
+  cow: {
+    id: "cow",
+    arabic: "بَقَرَة",
+    partOfSpeech: "noun",
+    phonetic: "kaʊ",
+    pronunciationTip: "Diphthong 'ow' sound /aʊ/ as in 'now' or 'how'.",
+    collocations: [
+      "dairy cow",
+      "milk a cow",
+      "herd of cows",
+      "graze in the pasture",
+      "cow bell",
+      "spotted cow",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "milk",
+        meaning: "extract milk from a cow",
+        arabic: "يَحْلِبُ البَقَرَة",
+        example: "The farmer milks the dairy cows at dawn every day.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dairy Farming",
+        en: "The dairy cow produces over twenty liters of fresh milk each morning.",
+        ar: "تُنْتِجُ بَقَرَةُ الحَلِيبِ أَكْثَرَ مِنْ عِشْرِينَ لِتْراً مِنَ الحَلِيبِ الطَّازَجِ كُلَّ صَبَاحٍ.",
+      },
+      {
+        context: "Pasture Grazing",
+        en: "A peaceful herd of black-and-white cows grazed quietly across the green hillside.",
+        ar: "رَعَى قَطِيعٌ هَادِئٌ مِنَ الأَبْقَارِ ذَاتِ اللَّوْنَيْنِ الأَبْيَضِ وَالأَسْوَدِ عَلَى التَّلِّ الأَخْضَرِ.",
+      },
+      {
+        context: "Farm Routine",
+        en: "The farmer leads the cows back into the warm barn as the sun sets.",
+        ar: "يَقُودُ المُزَارِعُ الأَبْقَارَ إِلَى الحَظِيرَةِ الدَّافِئَةِ مَعَ غُرُوبِ الشَّمْسِ.",
+      },
+    ],
+    exampleSentence: "The dairy cow produces over twenty liters of fresh milk each morning.",
+    exampleArabic:
+      "تُنْتِجُ بَقَرَةُ الحَلِيبِ أَكْثَرَ مِنْ عِشْرِينَ لِتْراً مِنَ الحَلِيبِ الطَّازَجِ كُلَّ صَبَاحٍ.",
+  },
+  cup: {
+    id: "cup",
+    arabic: "فِنْجَان",
+    partOfSpeech: "noun",
+    phonetic: "kʌp",
+    pronunciationTip: "Short 'u' sound /ʌ/ as in 'up' or 'cut'.",
+    collocations: [
+      "cup of tea",
+      "teacup and saucer",
+      "coffee cup",
+      "measuring cup",
+      "paper cup",
+      "sip from a cup",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pour out",
+        meaning: "pour tea or coffee into a cup",
+        arabic: "يَسْكُبُ فِي الفِنْجَان",
+        example: "She poured out a delicate cup of English breakfast tea.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Afternoon Tea",
+        en: "She offered her guest a delicate porcelain cup of aromatic Earl Grey tea.",
+        ar: "قَدَّمَتْ لِضَيْفِهَا فِنْجَانَ خَزَفٍ أَنِيقاً مِنْ شَايِ إِيرْل جْرِي العَطِرِ.",
+      },
+      {
+        context: "Recipe Measurement",
+        en: "Add exactly one cup of granulated sugar and half a cup of melted butter.",
+        ar: "أَضِفْ كُوباً وَاحِداً تَمَاماً مِنْ السُّكَّرِ وَنِصْفَ كُوبٍ مِنْ الزُّبْدَةِ المُذَابَةِ.",
+      },
+      {
+        context: "Morning Routine",
+        en: "A hot cup of black coffee gives him the energy to start his workday.",
+        ar: "يَمْنَحُهُ فِنْجَانُ قَهْوَةٍ سَوْدَاءَ سَاخِنٌ الطَّاقَةَ لِبَدْءِ يَوْمِ عَمَلِهِ.",
+      },
+    ],
+    exampleSentence: "She offered her guest a delicate porcelain cup of aromatic Earl Grey tea.",
+    exampleArabic:
+      "قَدَّمَتْ لِضَيْفِهَا فِنْجَانَ خَزَفٍ أَنِيقاً مِنْ شَايِ إِيرْل جْرِي العَطِرِ.",
+  },
+  curtain: {
+    id: "curtain",
+    arabic: "سِتَارَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈkɜːr.tən",
+    pronunciationTip: "First syllable has the 'ur' vowel /ɜːr/, second is a weak schwa /tən/.",
+    collocations: [
+      "open the curtains",
+      "close the curtains",
+      "draw the curtains",
+      "sheer curtains",
+      "heavy curtains",
+      "window curtains",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "draw back",
+        meaning: "open curtains to let light in",
+        arabic: "يَفْتَحُ / يُزِيحُ السَّتَائِر",
+        example: "He drew back the curtains to let the morning sun flood the room.",
+      },
+      {
+        phrase: "pull shut",
+        meaning: "close curtains completely",
+        arabic: "يُغْلِقُ السَّتَائِرَ بِإِحْكَام",
+        example: "Pull the curtains shut to block the bright streetlights outside.",
+      },
+      {
+        phrase: "hang up",
+        meaning: "mount curtains on a rod",
+        arabic: "يُعَلِّقُ السَّتَائِر",
+        example: "They hung up new linen curtains in the guest room.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Morning Routine",
+        en: "She opened the bedroom curtains to enjoy the beautiful sunny view.",
+        ar: "فَتَحَتْ سَتَائِرَ غُرْفَةِ النَّوْمِ لِتَسْتَمْتِعَ بِالمَنْظَرِ المُشْمِسِ الجَمِيلِ.",
+      },
+      {
+        context: "Privacy & Sleep",
+        en: "Blackout curtains help block morning sunlight for shift workers.",
+        ar: "تُسَاعِدُ سَتَائِرُ التَّعْتِيمِ فِي حَجْبِ ضَوْءِ الصَّبَاحِ لِمَنْ يَعْمَلُونَ بِنِظَامِ النَّوْبَاتِ.",
+      },
+      {
+        context: "Interior Design",
+        en: "Long velvet curtains add elegance and warmth to the living area.",
+        ar: "تُضِيفُ السَّتَائِرُ المَخْمَلِيَّةُ الطَّوِيلَةُ أَنَاقَةً وَدِفْئاً عَلَى مِسَاحَةِ المَعِيشَةِ.",
+      },
+    ],
+    exampleSentence: "She opened the bedroom curtains to enjoy the beautiful sunny view.",
+    exampleArabic:
+      "فَتَحَتْ سَتَائِرَ غُرْفَةِ النَّوْمِ لِتَسْتَمْتِعَ بِالمَنْظَرِ المُشْمِسِ الجَمِيلِ.",
+  },
+  cushion: {
+    id: "cushion",
+    arabic: "وِسَادَةُ زِينَة (خُدَّادِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkʊʃ.ən",
+    pronunciationTip: "Short 'oo' sound /ʊ/ as in 'push' or 'book'.",
+    collocations: [
+      "soft cushion",
+      "velvet cushion",
+      "plump the cushion",
+      "decorative cushion",
+      "sofa cushion",
+      "seat cushion",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "lean against",
+        meaning: "rest your back against a cushion",
+        arabic: "يَسْتَنِدُ عَلَى",
+        example: "She leaned against the soft velvet cushion while watching TV.",
+      },
+      {
+        phrase: "plump up",
+        meaning: "fluff up a cushion",
+        arabic: "يَنْفُشُ الوِسَادَة",
+        example: "He plumped up the sofa cushions before the guests arrived.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Living Room Decor",
+        en: "Colorful velvet cushions brighten up the neutral grey sofa.",
+        ar: "تُضْفِي الخُدَّادِيَّاتُ المَخْمَلِيَّةُ المُلَوَّنَةُ حَيَوِيَّةً عَلَى الأَرِيكَةِ الرَّمَادِيَّةِ.",
+      },
+      {
+        context: "Comfort",
+        en: "Add a lumbar cushion to your office chair to relieve lower back pressure.",
+        ar: "أَضِفْ وِسَادَةَ دَعْمِ الظَّهْرِ إِلَى كُرْسِيِّ المَكْتَبِ لِتَخْفِيفِ ضَغْطِ العَمُودِ الفِقْرِيِّ.",
+      },
+      {
+        context: "Hospitality",
+        en: "He arranged the embroidered cushions neatly across the daybed.",
+        ar: "رَتَّبَ الوِسَادَاتِ المُطَرَّزَةَ بِأَنَاقَةٍ عَلَى سَرِيرِ الجُلُوسِ النَّهَارِيِّ.",
+      },
+    ],
+    exampleSentence: "Colorful velvet cushions brighten up the neutral grey sofa.",
+    exampleArabic:
+      "تُضْفِي الخُدَّادِيَّاتُ المَخْمَلِيَّةُ المُلَوَّنَةُ حَيَوِيَّةً عَلَى الأَرِيكَةِ الرَّمَادِيَّةِ.",
+  },
+  "cutting-board": {
+    id: "cutting-board",
+    arabic: "لَوْحُ التَّقْطِيع (قَرْمَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkʌt.ɪŋ ˌbɔːrd",
+    pronunciationTip: "Compound noun: 'CUTTING' (/ˈkʌt.ɪŋ/) + 'BOARD' (/bɔːrd/).",
+    collocations: [
+      "wooden cutting board",
+      "plastic cutting board",
+      "chop on a cutting board",
+      "clean the cutting board",
+      "bamboo cutting board",
+      "food prep cutting board",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "chop up on",
+        meaning: "cut food on a cutting board",
+        arabic: "يُقَطِّعُ عَلَى اللَّوْح",
+        example: "Chop up the onions and garlic on the wooden cutting board.",
+      },
+      {
+        phrase: "wipe down",
+        meaning: "sanitize the board surface",
+        arabic: "يُعَقِّمُ وَيَمْسَح",
+        example: "Wipe down the cutting board with lemon juice and coarse salt.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Food Prep",
+        en: "He sliced fresh red bell peppers and crisp celery on the heavy wooden cutting board.",
+        ar: "قَطَّعَ الفُلْفُلَ الرُّومِيَّ الأَحْمَرَ وَالكَرَفْسَ عَلَى لَوْحِ التَّقْطِيعِ الخَشَبِيِّ الثَّقِيلِ.",
+      },
+      {
+        context: "Food Safety",
+        en: "Use separate cutting boards for raw poultry and fresh vegetables to prevent cross-contamination.",
+        ar: "اسْتَخْدِمْ أَلْوَاحَ تَقْطِيعٍ مُنْفَصِلَةً لِلدَّوَاجِنِ النِّيئَةِ وَالخُضْرَاوَاتِ مَنْعاً لِلتَّلَوُّثِ.",
+      },
+      {
+        context: "Maintenance",
+        en: "Oil your wooden cutting boards periodically with mineral oil to prevent cracking.",
+        ar: "ادْهَنْ أَلْوَاحَ التَّقْطِيعِ الخَشَبِيَّةَ دَوْرِيّاً بِزَيْتٍ مُخَصَّصٍ لِمَنْعِ تَشَقُّقِهَا.",
+      },
+    ],
+    exampleSentence:
+      "He sliced fresh red bell peppers and crisp celery on the heavy wooden cutting board.",
+    exampleArabic:
+      "قَطَّعَ الفُلْفُلَ الرُّومِيَّ الأَحْمَرَ وَالكَرَفْسَ عَلَى لَوْحِ التَّقْطِيعِ الخَشَبِيِّ الثَّقِيلِ.",
+  },
+  desk: {
+    id: "desk",
+    arabic: "مَكْتَب",
+    partOfSpeech: "noun",
+    phonetic: "dɛsk",
+    pronunciationTip: "Pronounce the final 'sk' cluster clearly without adding a vowel.",
+    collocations: [
+      "study desk",
+      "sit at the desk",
+      "desk lamp",
+      "clear your desk",
+      "wooden desk",
+      "computer desk",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sit down",
+        meaning: "take a seat at a desk",
+        arabic: "يَجْلِسُ",
+        example: "He sat down at his desk to begin writing.",
+      },
+      {
+        phrase: "clear off",
+        meaning: "remove items from the surface",
+        arabic: "يُخْلِي السَّطْحَ",
+        example: "Please clear off your desk before leaving the room.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Studying",
+        en: "The student spends three hours every evening working at her desk.",
+        ar: "تَقْضِي الطَّالِبَةُ ثَلاثَ سَاعَاتٍ كُلَّ مَسَاءٍ فِي الدِّرَاسَةِ عِنْدَ مَكْتَبِهَا.",
+      },
+      {
+        context: "Workspace Setup",
+        en: "He positioned his study desk next to the window for natural light.",
+        ar: "وَضَعَ مَكْتَبَ الدِّرَاسَةِ بِجِوَارِ النَّافِذَةِ لِلاِسْتِفَادَةِ مِنَ الضَّوْءِ الطَّبِيعِيِّ.",
+      },
+      {
+        context: "Organization",
+        en: "A bright desk lamp and a laptop sit on the wooden desk.",
+        ar: "يَسْتَقِرُّ مِصْبَاحُ مَكْتَبٍ سَاطِعٌ وَحَاسُوبٌ مَحْمُولٌ عَلَى المَكْتَبِ الخَشَبِيِّ.",
+      },
+    ],
+    exampleSentence: "The student spends three hours every evening working at her desk.",
+    exampleArabic:
+      "تَقْضِي الطَّالِبَةُ ثَلاثَ سَاعَاتٍ كُلَّ مَسَاءٍ فِي الدِّرَاسَةِ عِنْدَ مَكْتَبِهَا.",
+  },
+  "dining-chair": {
+    id: "dining-chair",
+    arabic: "كُرْسِيُّ طَعَام (كُرْسِيُّ سُفْرَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdaɪ.nɪŋ ˌtʃɛər",
+    pronunciationTip: "Compound noun: 'DINING' + 'CHAIR'.",
+    collocations: [
+      "upholstered dining chair",
+      "set of dining chairs",
+      "wooden dining chair",
+      "comfortable dining chair",
+      "pull out a dining chair",
+      "high-back dining chair",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pull out",
+        meaning: "slide a chair away from table to sit",
+        arabic: "يَسْحَبُ الكُرْسِيّ",
+        example: "He pulled out the dining chair politely for his guest.",
+      },
+      {
+        phrase: "push in",
+        meaning: "tuck chair back under table",
+        arabic: "يُدْخِلُ الكُرْسِيّ",
+        example: "Remember to push in your dining chair when leaving the table.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dining Set",
+        en: "Six upholstered wooden dining chairs surround the rectangular dining table.",
+        ar: "تُحِيطُ سِتَّةُ كَرَاسِي سُفْرَةٍ خَشَبِيَّةٍ مُنَجَّدَةٍ بِطَاوِلَةِ الطَّعَامِ المُسْتَطِيلَةِ.",
+      },
+      {
+        context: "Comfort & Style",
+        en: "Padded fabric dining chairs make long dinner conversations relaxing and enjoyable.",
+        ar: "تَجْعَلُ كَرَاسِي السُّفْرَةِ القُمَاشِيَّةُ المُبَطَّنَةُ الأَحَادِيثَ الطَّوِيلَةَ مُرِيحَةً وَمُمْتِعَةً.",
+      },
+      {
+        context: "Table Courtesy",
+        en: "Always push your dining chair neatly under the table after finishing your meal.",
+        ar: "ادْفَعْ كُرْسِيَّ السُّفْرَةِ بِعِنَايَةٍ تَحْتَ الطَّاوِلَةِ بَعْدَ الاِنْتِهَاءِ مِنْ تَنَاوُلِ الطَّعَامِ.",
+      },
+    ],
+    exampleSentence: "Six upholstered wooden dining chairs surround the rectangular dining table.",
+    exampleArabic:
+      "تُحِيطُ سِتَّةُ كَرَاسِي سُفْرَةٍ خَشَبِيَّةٍ مُنَجَّدَةٍ بِطَاوِلَةِ الطَّعَامِ المُسْتَطِيلَةِ.",
+  },
+  "dining-table": {
+    id: "dining-table",
+    arabic: "طَاوِلَةُ الطَّعَام (سُفْرَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdaɪ.nɪŋ ˌteɪ.bəl",
+    pronunciationTip: "Compound noun: 'DINING' (/ˈdaɪ.nɪŋ/) + 'TABLE' (/ˈteɪ.bəl/).",
+    collocations: [
+      "wooden dining table",
+      "sit at the dining table",
+      "set the dining table",
+      "extendable dining table",
+      "clear the dining table",
+      "round dining table",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sit around",
+        meaning: "gather around the table",
+        arabic: "يَلْتَفُّ حَوْلَ الطَّاوِلَة",
+        example: "The family sat around the dining table to celebrate the holiday.",
+      },
+      {
+        phrase: "clear off",
+        meaning: "remove dishes from dining table",
+        arabic: "يُخْلِي السُّفْرَة",
+        example: "Help clear off the dining table after everyone has finished.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Family Dinner",
+        en: "They sat together at the large solid oak dining table to share Sunday lunch.",
+        ar: "جَلَسُوا مَعاً حَوْلَ طَاوِلَةِ الطَّعَامِ المَصْنُوعَةِ مِنْ خَشَبِ البَلُّوطِ لِتَنَاوُلِ الغَدَاءِ.",
+      },
+      {
+        context: "Holiday Hosting",
+        en: "The extendable dining table expands easily to seat up to twelve dinner guests.",
+        ar: "تَمْتَدُّ طَاوِلَةُ السُّفْرَةِ القَابِلَةُ لِلتَّوْسِعَةِ بِسُهُولَةٍ لِتَسْتَوْعِبَ 12 ضَيْفاً.",
+      },
+      {
+        context: "Table Setting",
+        en: "She laid a white linen runner and fresh flowers across the center of the dining table.",
+        ar: "فَرَشَتْ مَفْرَشاً كَتَّانِيّاً أَبْيَضَ وَأَزْهَاراً طَازَجَةً عَلَى طَاوِلَةِ الطَّعَامِ.",
+      },
+    ],
+    exampleSentence: "They sat together at the large solid oak dining table to share Sunday lunch.",
+    exampleArabic:
+      "جَلَسُوا مَعاً حَوْلَ طَاوِلَةِ الطَّعَامِ المَصْنُوعَةِ مِنْ خَشَبِ البَلُّوطِ لِتَنَاوُلِ الغَدَاءِ.",
+  },
+  "dish-rack": {
+    id: "dish-rack",
+    arabic: "مُجَفِّفُ الأَطْبَاق (مَطْبَقِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdɪʃ ˌræk",
+    pronunciationTip: "Compound noun: 'DISH' (/dɪʃ/) + 'RACK' (/ræk/).",
+    collocations: [
+      "stainless steel dish rack",
+      "air-dry in the dish rack",
+      "foldable dish rack",
+      "drain on the dish rack",
+      "dish rack tray",
+      "over-the-sink dish rack",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "stack up in",
+        meaning: "arrange washed plates in the rack",
+        arabic: "يَرُصُّ فِي المَطْبَقِيَّة",
+        example: "Stack up the clean plates in the dish rack to dry.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Air Drying",
+        en: "She stacked the clean plates and bowls neatly in the dish rack to air dry.",
+        ar: "رَصَّتِ الأَطْبَاقَ وَالأَوْعِيَةَ النَّظِيفَةَ فِي مَطْبَقِيَّةِ التَّجْفِيفِ لِتَجِفَّ فِي الهَوَاءِ.",
+      },
+      {
+        context: "Sink Space",
+        en: "The compact stainless steel dish rack drains directly into the kitchen sink.",
+        ar: "تَصْرِفُ مَطْبَقِيَّةُ السْتَانْلِس المُرِيحَةُ المِيَاهَ مُبَاشَرَةً إِلَى حَوْضِ المَطْبَخِ.",
+      },
+      {
+        context: "Utensil Holder",
+        en: "Place forks and spoons standing upright in the dish rack's cutlery basket.",
+        ar: "ضَعِ الشُّوَكَ وَالمَلاعِقَ وَاقِفَةً فِي سَلَّةِ أَدَوَاتِ المَائِدَةِ المُلْحَقَةِ بِمُجَفِّفِ الصُّحُونِ.",
+      },
+    ],
+    exampleSentence: "She stacked the clean plates and bowls neatly in the dish rack to air dry.",
+    exampleArabic:
+      "رَصَّتِ الأَطْبَاقَ وَالأَوْعِيَةَ النَّظِيفَةَ فِي مَطْبَقِيَّةِ التَّجْفِيفِ لِتَجِفَّ فِي الهَوَاءِ.",
+  },
+  "dish-soap": {
+    id: "dish-soap",
+    arabic: "صَابُونُ غَسِيلِ الأَطْبَاق (سَائِلُ جَلِي)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdɪʃ ˌsoʊp",
+    pronunciationTip: "Compound noun: 'DISH' (/dɪʃ/) + 'SOAP' (/soʊp/).",
+    collocations: [
+      "bottle of dish soap",
+      "liquid dish soap",
+      "squirt dish soap",
+      "degreasing dish soap",
+      "citrus dish soap",
+      "gentle dish soap",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "suds up",
+        meaning: "form foaming bubbles with water",
+        arabic: "يُرْغِي",
+        example: "The dish soap suds up quickly under warm running tap water.",
+      },
+      {
+        phrase: "cut through",
+        meaning: "dissolve grease easily",
+        arabic: "يُذِيبُ الدُّهُون",
+        example: "This concentrated dish soap cuts through thick cooking grease instantly.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Hand Washing",
+        en: "A small squirt of concentrated liquid dish soap easily cuts through greasy pans.",
+        ar: "قَطْرَةٌ صَغِيرَةٌ مِنْ سَائِلِ الجَلِي المُرَكَّزِ تُذِيبُ دُهُونَ المَقَالِي بِسُهُولَةٍ.",
+      },
+      {
+        context: "Skin Care",
+        en: "Choose a dish soap formulated with aloe vera to keep your hands soft while washing.",
+        ar: "اخْتَرْ صَابُونَ أَطْبَاقٍ مُدَعَّماً بِالصَّبَّارِ لِلْحِفَاظِ عَلَى نُعُومَةِ يَدَيْكَ أَثْنَاءَ الجَلِي.",
+      },
+      {
+        context: "Refill Routine",
+        en: "She refilled the ceramic sink soap dispenser from a large economy bottle of dish soap.",
+        ar: "أَعَادَتْ مَلْءَ مِضَخَّةِ الصَّابُونِ عَلَى الحَوْضِ مِنْ عَبْوَةِ سَائِلِ الجَلِي الكَبِيرَةِ.",
+      },
+    ],
+    exampleSentence:
+      "A small squirt of concentrated liquid dish soap easily cuts through greasy pans.",
+    exampleArabic:
+      "قَطْرَةٌ صَغِيرَةٌ مِنْ سَائِلِ الجَلِي المُرَكَّزِ تُذِيبُ دُهُونَ المَقَالِي بِسُهُولَةٍ.",
+  },
+  "dish-towel": {
+    id: "dish-towel",
+    arabic: "فُوطَةُ مَطْبَخ (مِنْشَفَةُ صُحُون)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdɪʃ ˌtaʊ.əl",
+    pronunciationTip: "Compound noun: 'DISH' (/dɪʃ/) + 'TOWEL' (/ˈtaʊ.əl/).",
+    collocations: [
+      "dry with a dish towel",
+      "clean dish towel",
+      "cotton dish towel",
+      "hang the dish towel",
+      "linen dish towel",
+      "damp dish towel",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wipe dry",
+        meaning: "dry clean dishes with a towel",
+        arabic: "يُجَفِّفُ بِالفُوطَة",
+        example: "She wiped dry all the wine glasses with a soft dish towel.",
+      },
+      {
+        phrase: "hang up",
+        meaning: "hang a dish towel to dry",
+        arabic: "يُعَلِّقُ الفُوطَة",
+        example: "Hang up the damp dish towel on the oven handle.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Drying Dishes",
+        en: "He dried the freshly washed porcelain plates using a clean cotton dish towel.",
+        ar: "جَفَّفَ الأَطْبَاقَ الخَزَفِيَّةَ المَغْسُولَةَ حَدِيثاً بِاسْتِخْدَامِ فُوطَةِ مَطْبَخٍ قُطْنِيَّةٍ نَظِيفَةٍ.",
+      },
+      {
+        context: "Kitchen Cleanliness",
+        en: "Replace dish towels daily to maintain strict hygiene standards in the kitchen.",
+        ar: "اسْتَبْدِلْ فُوَطَ المَطْبَخِ يَوْمِيّاً لِلْحِفَاظِ عَلَى أَعْلَى مَعَايِيرِ النَّظَافَةِ.",
+      },
+      {
+        context: "Baking Cover",
+        en: "Cover the resting bread dough with a damp dish towel to keep it moist.",
+        ar: "غَطِّ عَجِينَةَ الخُبْزِ بِفُوطَةِ مَطْبَخٍ رَطْبَةٍ لِلْحِفَاظِ عَلَى طَرَاوَتِهَا أَثْنَاءَ التَّخَمُّرِ.",
+      },
+    ],
+    exampleSentence:
+      "He dried the freshly washed porcelain plates using a clean cotton dish towel.",
+    exampleArabic:
+      "جَفَّفَ الأَطْبَاقَ الخَزَفِيَّةَ المَغْسُولَةَ حَدِيثاً بِاسْتِخْدَامِ فُوطَةِ مَطْبَخٍ قُطْنِيَّةٍ نَظِيفَةٍ.",
+  },
+  dishwasher: {
+    id: "dishwasher",
+    arabic: "غَسَّالَةُ الصُّحُون (جَلَّايَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdɪʃˌwɑː.ʃər",
+    pronunciationTip: "Compound word: 'DISH' + 'WASHER'.",
+    collocations: [
+      "load the dishwasher",
+      "unload the dishwasher",
+      "dishwasher detergent",
+      "run the dishwasher",
+      "dishwasher cycle",
+      "dishwasher safe",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "load up",
+        meaning: "fill dishwasher with dirty plates",
+        arabic: "يَمْلَأُ غَسَّالَةَ الصُّحُون",
+        example: "Load up all the dirty bowls into the dishwasher rack.",
+      },
+      {
+        phrase: "empty out",
+        meaning: "take out clean dishes",
+        arabic: "يُفْرِغُ الغَسَّالَة",
+        example: "He emptied out the clean dishes and put them in the cupboard.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Chore Routine",
+        en: "She loaded the dirty plates and cutlery into the dishwasher after dinner.",
+        ar: "وَضَعَتِ الأَطْبَاقَ وَأَدَوَاتِ المَائِدَةِ المُتَّسِخَةَ فِي غَسَّالَةِ الصُّحُونِ بَعْدَ العَشَاءِ.",
+      },
+      {
+        context: "Eco Living",
+        en: "Modern dishwashers use less water than washing dishes by hand.",
+        ar: "تَسْتَهْلِكُ غَسَّالاتُ الصُّحُونِ الحَدِيثَةُ مِيَاهاً أَقَلَّ مِنْ غَسِيلِ الأَطْبَاقِ يَدَوِيّاً.",
+      },
+      {
+        context: "Care Instructions",
+        en: "Make sure delicate crystal glasses are marked as dishwasher safe before loading.",
+        ar: "تَأَكَّدْ مِنْ أَنَّ الكُؤُوسَ الكِرِيسْتَالِيَّةَ آمِنَةٌ لِلْغَسِيلِ فِي الغَسَّالَةِ قَبْلَ وَضْعِهَا.",
+      },
+    ],
+    exampleSentence: "She loaded the dirty plates and cutlery into the dishwasher after dinner.",
+    exampleArabic:
+      "وَضَعَتِ الأَطْبَاقَ وَأَدَوَاتِ المَائِدَةِ المُتَّسِخَةَ فِي غَسَّالَةِ الصُّحُونِ بَعْدَ العَشَاءِ.",
+  },
+  "display-case": {
+    id: "display-case",
+    arabic: "خِزَانَةُ عَرْض (فَتْرِينَة)",
+    partOfSpeech: "noun",
+    phonetic: "dɪˈspleɪ ˌkeɪs",
+    pronunciationTip: "Compound noun: 'DISPLAY' (/dɪˈspleɪ/) + 'CASE' (/keɪs/).",
+    collocations: [
+      "glass display case",
+      "lighted display case",
+      "show in a display case",
+      "antique display case",
+      "trophy display case",
+      "lockable display case",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "show off",
+        meaning: "exhibit prized items in a display case",
+        arabic: "يَعْرِضُ بِفَخْر",
+        example: "The museum showed off ancient pottery in glass display cases.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Collectibles",
+        en: "He proudly displayed his vintage ceramic teacups inside the glass display case.",
+        ar: "عَرَضَ فَنَاجِينَ الشَّايِ الخَزَفِيَّةَ الكِلاسِيكِيَّةَ دَاخِلَ فَتْرِينَةِ العَرْضِ الزُّجَاجِيَّةِ.",
+      },
+      {
+        context: "Trophy Cabinet",
+        en: "All school athletic awards and gold trophies are secured in the illuminated display case.",
+        ar: "تُحْفَظُ جَمِيعُ الجَوَائِزِ وَالكُؤُوسِ الرِّيَاضِيَّةِ دَاخِلَ خِزَانَةِ عَرْضٍ مُضَاءَةٍ.",
+      },
+      {
+        context: "Dust Protection",
+        en: "Glass doors on the display case protect delicate porcelain figurines from dust.",
+        ar: "تَحْمِي الأَبْوَابُ الزُّجَاجِيَّةُ لِلْفَتْرِينَةِ التَّمَاثِيلَ الخَزَفِيَّةَ الرَّقِيقَةَ مِنَ الغُبَارِ.",
+      },
+    ],
+    exampleSentence:
+      "He proudly displayed his vintage ceramic teacups inside the glass display case.",
+    exampleArabic:
+      "عَرَضَ فَنَاجِينَ الشَّايِ الخَزَفِيَّةَ الكِلاسِيكِيَّةَ دَاخِلَ فَتْرِينَةِ العَرْضِ الزُّجَاجِيَّةِ.",
+  },
+  dog: {
+    id: "dog",
+    arabic: "كَلْب (كَلْبُ حِرَاسَة)",
+    partOfSpeech: "noun",
+    phonetic: "dɔːɡ",
+    pronunciationTip: "Open 'aw' vowel /ɔː/ in American English, short 'o' /ɒ/ in British English.",
+    collocations: [
+      "farm dog",
+      "barking dog",
+      "loyal dog",
+      "walk the dog",
+      "guard dog",
+      "wag its tail",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "bark at",
+        meaning: "sound alarm at strangers",
+        arabic: "يَنْبَحُ عَلَى",
+        example: "The loyal farm dog barked at the delivery van.",
+      },
+      {
+        phrase: "fetch",
+        meaning: "run and retrieve a thrown object",
+        arabic: "يَجْلِبُ الشَّيْء",
+        example: "The golden retriever loved to fetch sticks from the pond.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Faithful Companion",
+        en: "The loyal sheepdog accompanied the farmer on his daily rounds across the fields.",
+        ar: "رَافَقَ كَلْبُ الرِّعَايَةِ المُخْلِصُ المُزَارِعَ فِي جَوْلاتِهِ اليَوْمِيَّةِ عَبْرَ الحُقُولِ.",
+      },
+      {
+        context: "Herding Skill",
+        en: "With keen intelligence and speed, the farm dog safely gathered the stray lambs.",
+        ar: "بِذَكَاءٍ حَادٍّ وَسُرْعَةٍ خَاطِفَةٍ، جَمَعَ كَلْبُ المَزْرَعَةِ الحُمْلانَ الشَّارِدَةَ بِأَمَانٍ.",
+      },
+      {
+        context: "Welcoming Home",
+        en: "The golden retriever wagged its tail excitedly when the children returned from school.",
+        ar: "هَزَّ الكَلْبُ ذَيْلَهُ بِحَمَاسٍ كَبِيرٍ عِنْدَمَا عَادَ الأَطْفَالُ مِنَ المَدْرَسَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The loyal sheepdog accompanied the farmer on his daily rounds across the fields.",
+    exampleArabic:
+      "رَافَقَ كَلْبُ الرِّعَايَةِ المُخْلِصُ المُزَارِعَ فِي جَوْلاتِهِ اليَوْمِيَّةِ عَبْرَ الحُقُولِ.",
+  },
+  donkey: {
+    id: "donkey",
+    arabic: "حِمَار",
+    partOfSpeech: "noun",
+    phonetic: "ˈdɑːŋ.ki",
+    pronunciationTip: "First syllable has /dɑːŋ/ in American English, /ˈdɒŋ/ in British English.",
+    collocations: [
+      "bray of a donkey",
+      "stubborn donkey",
+      "pack donkey",
+      "gentle donkey",
+      "donkey cart",
+      "pet a donkey",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "carry on",
+        meaning: "transport loads steadily",
+        arabic: "يَحْمِلُ الأَثْقَالَ",
+        example: "The loyal donkey carried on with the heavy pack up the mountain.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Hard Worker",
+        en: "The sturdy donkey patiently carried baskets of harvested apples up the hillside.",
+        ar: "حَمَلَ الحِمَارُ المَتِينُ سِلالَ التُّفَّاحِ المَحْصُودِ بِصَبْرٍ صُعُوداً عَلَى التَّلِّ.",
+      },
+      {
+        context: "Gentle Nature",
+        en: "The friendly grey donkey loved having its long ears gently scratched by visitors.",
+        ar: "أَحَبَّ الحِمَارُ الرَّمَادِيُّ اللَّطِيفُ أَنْ يَمْسَحَ الزُّوَّارُ عَلَى أُذُنَيْهِ الطَّوِيلَتَيْنِ.",
+      },
+      {
+        context: "Farm Protection",
+        en: "Farmers often keep guard donkeys to protect vulnerable sheep from coyotes.",
+        ar: "يُرَبِّي المُزَارِعُونَ الحَمِيرَ لِحِرَاسَةِ الأَغْنَامِ وَحِمَايَتِهَا مِنَ الذِّئَابِ البَرِّيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "The sturdy donkey patiently carried baskets of harvested apples up the hillside.",
+    exampleArabic:
+      "حَمَلَ الحِمَارُ المَتِينُ سِلالَ التُّفَّاحِ المَحْصُودِ بِصَبْرٍ صُعُوداً عَلَى التَّلِّ.",
+  },
+  door: {
+    id: "door",
+    arabic: "بَاب",
+    partOfSpeech: "noun",
+    phonetic: "dɔːr",
+    pronunciationTip: "Rhymes with 'more', 'floor', and 'four'.",
+    collocations: [
+      "open the door",
+      "close the door",
+      "lock the door",
+      "knock on the door",
+      "bedroom door",
+      "front door",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "walk in",
+        meaning: "enter through a door",
+        arabic: "يَدْخُلُ",
+        example: "She knocked gently before walking in through the door.",
+      },
+      {
+        phrase: "lock up",
+        meaning: "secure doors with keys",
+        arabic: "يُقْفِلُ بِالمِفْتَاح",
+        example: "Don't forget to lock up the front door before going to sleep.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Privacy",
+        en: "Please close the bedroom door quietly so you don't wake the baby.",
+        ar: "يُرْجَى إِغْلاقُ بَابِ غُرْفَةِ النَّوْمِ بِهُدُوءٍ حَتَّى لا تُوقِظَ الرَّضِيعَ.",
+      },
+      {
+        context: "Security",
+        en: "Always lock the entrance door when leaving the house unattended.",
+        ar: "اقْفِلْ دَائِماً بَابَ المَدْخَلِ عِنْدَ مُغَادَرَةِ المَنْزِلِ دُونَ رَقِيبٍ.",
+      },
+      {
+        context: "Etiquette",
+        en: "He knocked three times on the office door and waited for an answer.",
+        ar: "طَرَقَ بَابَ المَكْتَبِ ثَلاثَ مَرَّاتٍ وَانْتَظَرَ الإِذْنَ بِالدُّخُولِ.",
+      },
+    ],
+    exampleSentence: "Please close the bedroom door quietly so you don't wake the baby.",
+    exampleArabic:
+      "يُرْجَى إِغْلاقُ بَابِ غُرْفَةِ النَّوْمِ بِهُدُوءٍ حَتَّى لا تُوقِظَ الرَّضِيعَ.",
+  },
+  doormat: {
+    id: "doormat",
+    arabic: "دَوَّاسَةُ بَاب (مَمْسَحَةُ أَرْجُل)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdɔːr.mæt",
+    pronunciationTip: "Compound noun: 'DOOR' (/dɔːr/) + 'MAT' (/mæt/).",
+    collocations: [
+      "welcome doormat",
+      "wipe feet on the doormat",
+      "coir doormat",
+      "outdoor doormat",
+      "front door mat",
+      "rubber doormat",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wipe off",
+        meaning: "clean shoe soles on a doormat",
+        arabic: "يَمْسَحُ قَدَمَيْهِ فِي الدَّوَّاسَة",
+        example: "Wipe off your muddy boots thoroughly on the heavy doormat.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Home Entrance",
+        en: "A natural coconut coir doormat with 'Welcome' printed on it greets visitors at the door.",
+        ar: "تَسْتَقْبِلُ دَوَّاسَةُ بَابٍ مَصْنُوعَةٌ مِنْ أَلْيَافِ جَوْزِ الهِنْدِ الزُّوَّارَ عِنْدَ المَدْخَلِ.",
+      },
+      {
+        context: "Cleanliness",
+        en: "Please wipe your boots on the outdoor rubber doormat before stepping inside the house.",
+        ar: "يُرْجَى مَسْحُ الأَحْذِيَةِ فِي مَمْسَحَةِ الأَرْجُلِ المَطَّاطِيَّةِ قَبْلَ الدُّخُولِ إِلَى المَنْزِلِ.",
+      },
+      {
+        context: "Weather Durability",
+        en: "Heavy-duty outdoor doormats withstand rain and trap mud before it reaches indoor floors.",
+        ar: "تَتَحَمَّلُ دَوَّاسَاتُ الأَبْوَابِ الخَارِجِيَّةُ الأَمْطَارَ وَتَحْتَجِزُ الطِّينَ عَنِ الأَرْضِيَّاتِ الدَّاخِلِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "A natural coconut coir doormat with 'Welcome' printed on it greets visitors at the door.",
+    exampleArabic:
+      "تَسْتَقْبِلُ دَوَّاسَةُ بَابٍ مَصْنُوعَةٌ مِنْ أَلْيَافِ جَوْزِ الهِنْدِ الزُّوَّارَ عِنْدَ المَدْخَلِ.",
+  },
+  drawer: {
+    id: "drawer",
+    arabic: "دُرْج",
+    partOfSpeech: "noun",
+    phonetic: "drɔːr",
+    pronunciationTip:
+      "Single syllable in standard English /drɔːr/, rhyming with 'door' and 'four'.",
+    collocations: [
+      "pull out a drawer",
+      "open the drawer",
+      "close the drawer",
+      "top drawer",
+      "locked drawer",
+      "desk drawer",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pull out",
+        meaning: "slide a drawer open",
+        arabic: "يَسْحَبُ الدُّرْج",
+        example: "He pulled out the desk drawer to look for a pen.",
+      },
+      {
+        phrase: "slide shut",
+        meaning: "close a drawer smoothly",
+        arabic: "يُغْلِقُ الدُّرْجَ بِسَلاسَة",
+        example: "The soft-close drawer slid shut silently.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Organization",
+        en: "He pulled open the top drawer to find his passport and house keys.",
+        ar: "فَتَحَ الدُّرْجَ العُلْوِيَّ لِلْعُثُورِ عَلَى جَوَازِ سَفَرِهِ وَمَفَاتِيحِ المَنْزِلِ.",
+      },
+      {
+        context: "Kitchen Storage",
+        en: "The cutlery drawer is divided into sections for spoons, forks, and knives.",
+        ar: "يَنْقَسِمُ دُرْجُ أَدَوَاتِ المَائِدَةِ إِلَى أَقْسَامٍ مُخَصَّصَةٍ لِلْمَلاعِقِ وَالشُّوَكِ وَالسَّكَاكِينِ.",
+      },
+      {
+        context: "Quality Furniture",
+        en: "Solid wood dovetail drawers glide smoothly on ball-bearing metal runners.",
+        ar: "تَنْزَلِقُ أَدْرَاجُ الخَشَبِ الصُّلْبِ بِسَلاسَةٍ عَلَى مَجَارٍ مَعْدَنِيَّةٍ عَالِيَةِ الجَوْدَةِ.",
+      },
+    ],
+    exampleSentence: "He pulled open the top drawer to find his passport and house keys.",
+    exampleArabic:
+      "فَتَحَ الدُّرْجَ العُلْوِيَّ لِلْعُثُورِ عَلَى جَوَازِ سَفَرِهِ وَمَفَاتِيحِ المَنْزِلِ.",
+  },
+  dresser: {
+    id: "dresser",
+    arabic: "خِزَانَةُ الأَدْرَاج (تَسْرِيحَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdrɛs.ər",
+    pronunciationTip: "Starts with a blended 'dr' sound followed by a soft 'er'.",
+    collocations: [
+      "dresser drawer",
+      "oak dresser",
+      "top of the dresser",
+      "mirror on the dresser",
+      "fill the dresser",
+      "bedroom dresser",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put away",
+        meaning: "store items in their proper place",
+        arabic: "يَضَعُ الشَّيْءَ فِي مَكَانِهِ",
+        example: "She put away all the clean laundry into the dresser.",
+      },
+      {
+        phrase: "fold up",
+        meaning: "fold clothes neatly",
+        arabic: "يَطْوِي المَلابِسَ",
+        example: "Fold up your t-shirts before placing them in the dresser.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Organizing",
+        en: "He arranged his socks and shirts neatly inside the dresser.",
+        ar: "رَتَّبَ جَوَارِبَهُ وَقُمْصَانَهُ بِعِنَايَةٍ دَاخِلَ خِزَانَةِ الأَدْرَاجِ.",
+      },
+      {
+        context: "Decor",
+        en: "She placed a jewelry box and a family photo on top of the dresser.",
+        ar: "وَضَعَتْ صُنْدُوقَ مَجَوْهَرَاتٍ وَصُورَةً عَائِلِيَّةً فَوْقَ التَّسْرِيحَةِ.",
+      },
+      {
+        context: "Purchasing",
+        en: "The vintage wooden dresser adds a classic charm to the bedroom.",
+        ar: "تُضِيفُ خِزَانَةُ الأَدْرَاجِ الخَشَبِيَّةُ الكِلاسِيكِيَّةُ سِحْراً عَلَى غُرْفَةِ النَّوْمِ.",
+      },
+    ],
+    exampleSentence: "He arranged his socks and shirts neatly inside the dresser.",
+    exampleArabic: "رَتَّبَ جَوَارِبَهُ وَقُمْصَانَهُ بِعِنَايَةٍ دَاخِلَ خِزَانَةِ الأَدْرَاجِ.",
+  },
+  duck: {
+    id: "duck",
+    arabic: "بَطَّة",
+    partOfSpeech: "noun",
+    phonetic: "dʌk",
+    pronunciationTip: "Short 'u' sound /ʌ/ as in 'luck' or 'truck'.",
+    collocations: [
+      "duck pond",
+      "quacking duck",
+      "feed the ducks",
+      "swim like a duck",
+      "duckling",
+      "duck feathers",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "duck out",
+        meaning: "(idiom) leave quietly or quickly",
+        arabic: "يَنْسَلُّ بِهُدُوء",
+        example: "He ducked out of the meeting ten minutes early.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Pond Life",
+        en: "A mother duck led her six fluffy ducklings across the calm pond.",
+        ar: "قَادَتْ أُمُّ البَطِّ صِغَارَهَا السِّتَّةَ ذَوِي الزَّغَبِ النَّاعِمِ عَبْرَ البِرْكَةِ الهَادِئَةِ.",
+      },
+      {
+        context: "Feeding Birds",
+        en: "The children threw chopped oats and lettuce leaves to the quacking ducks.",
+        ar: "أَلْقَى الأَطْفَالُ حُبُوبَ الشُّوفَانِ وَأَوْرَاقَ الخَسِّ لِلْبَطِّ المُتَجَمِّعِ.",
+      },
+      {
+        context: "Waterproofing",
+        en: "Duck feathers have a natural oil coating that keeps them dry while swimming.",
+        ar: "تَحْتَوِي رِيشَاتُ البَطِّ عَلَى زُيُوتٍ طَبِيعِيَّةٍ تَجْعَلُهَا مَانِعَةً لِلْمَاءِ أَثْنَاءَ السِّبَاحَةِ.",
+      },
+    ],
+    exampleSentence: "A mother duck led her six fluffy ducklings across the calm pond.",
+    exampleArabic:
+      "قَادَتْ أُمُّ البَطِّ صِغَارَهَا السِّتَّةَ ذَوِي الزَّغَبِ النَّاعِمِ عَبْرَ البِرْكَةِ الهَادِئَةِ.",
+  },
+  duvet: {
+    id: "duvet",
+    arabic: "لِحَاف (دُوفِيه)",
+    partOfSpeech: "noun",
+    phonetic: "ˈduː.veɪ",
+    pronunciationTip: "French loanword: silent 't' at the end, pronounced /duːveɪ/.",
+    collocations: [
+      "thick duvet",
+      "duvet cover",
+      "feather duvet",
+      "warm duvet",
+      "wash the duvet",
+      "sleep under a duvet",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "slip into",
+        meaning: "insert a duvet into its cover",
+        arabic: "يُدْخِلُ اللِّحَافَ فِي الغِطَاء",
+        example: "It takes patience to slip the thick duvet into its clean cover.",
+      },
+      {
+        phrase: "crawl under",
+        meaning: "get underneath a warm duvet",
+        arabic: "يَخْلُدُ تَحْتَ اللِّحَاف",
+        example: "She crawled under the duvet and fell asleep instantly.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Winter Comfort",
+        en: "The down-filled duvet kept them perfectly warm during the winter blizzard.",
+        ar: "أَبْقَاهُمُ اللِّحَافُ المَحْشُوُّ بِالرِّيشِ دَافِئِينَ خِلالَ العَاصِفَةِ الشَّتْوِيَّةِ.",
+      },
+      {
+        context: "Linen Care",
+        en: "She selected a blue floral duvet cover to brighten the bedroom.",
+        ar: "اخْتَارَتْ غِطَاءَ لِحَافٍ مُزَيَّناً بِزُهُورٍ زَرْقَاءَ لِإِضْفَاءِ بَهْجَةٍ عَلَى الغُرْفَةِ.",
+      },
+      {
+        context: "Everyday Use",
+        en: "Shake the duvet each morning to restore its natural fluffiness.",
+        ar: "انْفُضِ اللِّحَافَ كُلَّ صَبَاحٍ لِيَسْتَعِيدَ انْتِفَاخَهُ وَنُعُومَتَهُ الطَّبِيعِيَّةَ.",
+      },
+    ],
+    exampleSentence: "The down-filled duvet kept them perfectly warm during the winter blizzard.",
+    exampleArabic:
+      "أَبْقَاهُمُ اللِّحَافُ المَحْشُوُّ بِالرِّيشِ دَافِئِينَ خِلالَ العَاصِفَةِ الشَّتْوِيَّةِ.",
+  },
+  "dvd-player": {
+    id: "dvd-player",
+    arabic: "مُشَغِّلُ أَقْرَاصِ الدِّي فِي دِي",
+    partOfSpeech: "noun",
+    phonetic: "ˌdiː.viːˈdiː ˌpleɪ.ər",
+    pronunciationTip: "Letters D-V-D spoken individually + 'PLAYER' (/ˈpleɪ.ər/).",
+    collocations: [
+      "insert into the DVD player",
+      "compact DVD player",
+      "play on the DVD player",
+      "connect the DVD player",
+      "DVD player remote",
+      "eject from the DVD player",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pop in",
+        meaning: "insert a disc into a player",
+        arabic: "يُدْخِلُ القُرْص",
+        example: "Pop in the classic animated movie into the DVD player.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Movie Night",
+        en: "He inserted a classic film disc into the DVD player and dimmed the living room lights.",
+        ar: "أَدْخَلَ قُرْصَ فِيلْمٍ كِلاسِيكِيٍّ فِي مُشَغِّلِ الأَقْرَاصِ وَخَفَّضَ إِضَاءَةَ الغُرْفَةِ.",
+      },
+      {
+        context: "Home Cinema",
+        en: "Connect the high-definition DVD player to the receiver for surround audio.",
+        ar: "صِلْ مُشَغِّلَ الأَقْرَاصِ بِجِهَازِ الاِسْتِقْبَالِ لِلْحُصُولِ عَلَى صَوْتٍ مُحِيطِيٍّ مُجَسَّمٍ.",
+      },
+      {
+        context: "Preserving Classics",
+        en: "They still use their reliable DVD player to watch family home video recordings.",
+        ar: "لا يَزَالُونَ يَسْتَخْدِمُونَ مُشَغِّلَ الأَقْرَاصِ لِمُشَاهَدَةِ تَسْجِيلاتِ فِيدْيُو العَائِلَةِ القَدِيمَةِ.",
+      },
+    ],
+    exampleSentence:
+      "He inserted a classic film disc into the DVD player and dimmed the living room lights.",
+    exampleArabic:
+      "أَدْخَلَ قُرْصَ فِيلْمٍ كِلاسِيكِيٍّ فِي مُشَغِّلِ الأَقْرَاصِ وَخَفَّضَ إِضَاءَةَ الغُرْفَةِ.",
+  },
+  egg: {
+    id: "egg",
+    arabic: "بَيْضَة (بَيْض)",
+    partOfSpeech: "noun",
+    phonetic: "ɛɡ",
+    pronunciationTip: "Short 'e' vowel /ɛ/ as in 'leg' or 'beg'.",
+    collocations: [
+      "scrambled eggs",
+      "boiled egg",
+      "fried egg",
+      "crack an egg",
+      "carton of eggs",
+      "fresh eggs",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "crack open",
+        meaning: "break the shell of an egg",
+        arabic: "يَكْسِرُ البَيْضَة",
+        example: "Crack open two large eggs into the mixing bowl.",
+      },
+      {
+        phrase: "whip up",
+        meaning: "beat eggs quickly",
+        arabic: "يَخْفِقُ",
+        example: "Whip up the eggs with a pinch of salt for a light omelet.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Breakfast Cooking",
+        en: "He cracked two farm-fresh eggs into the hot buttered pan for sunny-side-up eggs.",
+        ar: "كَسَرَ بَيْضَتَيْنِ طَازَجَتَيْنِ فِي المِقْلاةِ المَدْهُونَةِ بِالزُّبْدَةِ لِقَلْيِهِمَا.",
+      },
+      {
+        context: "Baking Role",
+        en: "Eggs provide structure, richness, and moisture to baked cakes and pastries.",
+        ar: "يَمْنَحُ البَيْضُ القِوَامَ وَالغِنَى وَالرُّطُوبَةَ لِلْكَعْكِ وَالمَخْبُوزَاتِ.",
+      },
+      {
+        context: "Healthy Eating",
+        en: "Boiled eggs make a protein-packed, nutritious afternoon snack on the go.",
+        ar: "يُعَدُّ البَيْضُ المَسْلُوقُ وَجْبَةً خَفِيفَةً مُغَذِّيَةً وَغَنِيَّةً بِالبْرُوتِينِ.",
+      },
+    ],
+    exampleSentence:
+      "He cracked two farm-fresh eggs into the hot buttered pan for sunny-side-up eggs.",
+    exampleArabic:
+      "كَسَرَ بَيْضَتَيْنِ طَازَجَتَيْنِ فِي المِقْلاةِ المَدْهُونَةِ بِالزُّبْدَةِ لِقَلْيِهِمَا.",
+  },
+  farmer: {
+    id: "farmer",
+    arabic: "مُزَارِع (فَلَّاح)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfɑːr.mər",
+    pronunciationTip: "Broad 'ar' vowel /ɑːr/ in first syllable (/ˈfɑːr.mər/).",
+    collocations: [
+      "local farmer",
+      "organic farmer",
+      "dairy farmer",
+      "farmer's market",
+      "hardworking farmer",
+      "farmer in the field",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "work on",
+        meaning: "cultivate the land continuously",
+        arabic: "يَعْمَلُ فِي الأَرْض",
+        example: "The dedicated farmer worked on the land from dawn to dusk.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Daily Dedication",
+        en: "The hardworking farmer rises before sunrise every day to tend his crops and livestock.",
+        ar: "يَسْتَيْقِظُ المُزَارِعُ المُجِدُّ قَبْلَ شُرُوقِ الشَّمْسِ لِرِعَايَةِ مَحَاصِيلِهِ وَحَيَوَانَاتِهِ.",
+      },
+      {
+        context: "Local Market",
+        en: "Local farmers sell fresh organic vegetables and artisanal cheeses at the weekend market.",
+        ar: "يَبِيعُ المُزَارِعُونَ المَحَلِّيُّونَ خُضْرَاوَاتٍ عُضْوِيَّةً طَازَجَةً فِي سُوقِ عُطْلَةِ الأُسْبُوعِ.",
+      },
+      {
+        context: "Agricultural Expertise",
+        en: "Generations of knowledge help the farmer read soil health, rainfall, and seasonal weather patterns.",
+        ar: "تُمَكِّنُ الخِبْرَةُ المُتَوَارَثَةُ الفَلَّاحَ مِنْ مَعْرِفَةِ خُصُوبَةِ التُّرْبَةِ وَمَوَاعِيدِ الأَمْطَارِ.",
+      },
+    ],
+    exampleSentence:
+      "The hardworking farmer rises before sunrise every day to tend his crops and livestock.",
+    exampleArabic:
+      "يَسْتَيْقِظُ المُزَارِعُ المُجِدُّ قَبْلَ شُرُوقِ الشَّمْسِ لِرِعَايَةِ مَحَاصِيلِهِ وَحَيَوَانَاتِهِ.",
+  },
+  farmhouse: {
+    id: "farmhouse",
+    arabic: "بَيْتُ المَزْرَعَة (مَنْزِلٌ رِيفِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfɑːrm.haʊs",
+    pronunciationTip: "Compound noun: 'FARM' (/fɑːrm/) + 'HOUSE' (/haʊs/).",
+    collocations: [
+      "historic farmhouse",
+      "cozy farmhouse",
+      "farmhouse porch",
+      "farmhouse kitchen",
+      "white farmhouse",
+      "brick farmhouse",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "live in",
+        meaning: "reside in a country farmhouse",
+        arabic: "يَعِيشُ فِي بَيْتِ المَزْرَعَة",
+        example: "Three generations of farmers lived in the stone farmhouse.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Rural Home",
+        en: "Smoke drifted gently from the chimney of the cozy two-story white farmhouse.",
+        ar: "تَصَاعَدَ الدُّخَانُ بِرِفْقٍ مِنْ مَدْخَنَةِ بَيْتِ المَزْرَعَةِ الأَبْيَضِ المُؤَلَّفِ مِنْ طَابَقَيْنِ.",
+      },
+      {
+        context: "Country Kitchen",
+        en: "The spacious farmhouse kitchen features a large rustic table and stone hearth.",
+        ar: "يَتَمَيَّزُ مَطْبَخُ البَيْتِ الرِّيفِيِّ بِطَاوِلَةٍ رِيفِيَّةٍ ضَخْمَةٍ وَمَوْقِدٍ حَجَرِيٍّ دَافِئٍ.",
+      },
+      {
+        context: "Porch View",
+        en: "From the welcoming front porch of the farmhouse, one can overlook rolling wheat fields.",
+        ar: "مِنْ شُرْفَةِ بَيْتِ المَزْرَعَةِ الرَّئِيسِيَّةِ، يُمْكِنُكَ الإِطْلالُ عَلَى حُقُولِ القَمْحِ المُمْتَدَّةِ.",
+      },
+    ],
+    exampleSentence: "Smoke drifted gently from the chimney of the cozy two-story white farmhouse.",
+    exampleArabic:
+      "تَصَاعَدَ الدُّخَانُ بِرِفْقٍ مِنْ مَدْخَنَةِ بَيْتِ المَزْرَعَةِ الأَبْيَضِ المُؤَلَّفِ مِنْ طَابَقَيْنِ.",
+  },
+  fence: {
+    id: "fence",
+    arabic: "سِيَاج (سُور)",
+    partOfSpeech: "noun",
+    phonetic: "fɛns",
+    pronunciationTip: "Short 'e' vowel /ɛ/ as in 'pen', ending in soft 's' sound.",
+    collocations: [
+      "wooden fence",
+      "white picket fence",
+      "wire fence",
+      "build a fence",
+      "fence around the pasture",
+      "jump the fence",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "fence in",
+        meaning: "enclose an area with a fence",
+        arabic: "يُحِيطُ بِسِيَاج",
+        example: "The farmer fenced in the north pasture to keep the sheep safe.",
+      },
+      {
+        phrase: "mend",
+        meaning: "repair broken fence sections",
+        arabic: "يُصْلِحُ السِّيَاج",
+        example: "He spent Saturday mending broken fence rails along the road.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Pasture Boundary",
+        en: "A sturdy wooden split-rail fence encircles the entire thirty-acre horse pasture.",
+        ar: "يُحِيطُ سِيَاجٌ خَشَبِيٌّ مَتِينٌ بِمَرْعَى الخُيُولِ المُتَمَدِّدِ عَلَى 30 فَدَّاناً.",
+      },
+      {
+        context: "Cottage Charm",
+        en: "A classic white picket fence and flowering roses frame the front garden.",
+        ar: "يُؤَطِّرُ سِيَاجٌ أَبْيَضُ أَنِيقٌ مَعَ زُهُورِ الجُورِي حَدِيقَةَ المَنْزِلِ الأَمَامِيَّةَ.",
+      },
+      {
+        context: "Security",
+        en: "Regularly inspect the perimeter wire fence to prevent livestock from wandering onto roads.",
+        ar: "افْحَصِ السِّيَاجَ السِّلْكِيَّ بِانْتِظَامٍ لِمَنْعِ خُرُوجِ المَاشِيَةِ إِلَى الطَّرِيقِ.",
+      },
+    ],
+    exampleSentence:
+      "A sturdy wooden split-rail fence encircles the entire thirty-acre horse pasture.",
+    exampleArabic:
+      "يُحِيطُ سِيَاجٌ خَشَبِيٌّ مَتِينٌ بِمَرْعَى الخُيُولِ المُتَمَدِّدِ عَلَى 30 فَدَّاناً.",
+  },
+  "floor-lamp": {
+    id: "floor-lamp",
+    arabic: "مِصْبَاحٌ أَرْضِيّ (أَبَاجُورَةٌ طَوِيلَة / أَبَاجُورَةُ أَرْضِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈflɔːr ˌlæmp",
+    pronunciationTip: "Compound noun: 'FLOOR' (/flɔːr/) + 'LAMP' (/læmp/).",
+    collocations: [
+      "standing floor lamp",
+      "arc floor lamp",
+      "turn on the floor lamp",
+      "dimmable floor lamp",
+      "modern floor lamp",
+      "corner floor lamp",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "turn on",
+        meaning: "power on floor lamp",
+        arabic: "يُشْعِلُ المِصْبَاحَ الأَرْضِيّ",
+        example: "Turn on the floor lamp to illuminate the dark reading corner.",
+      },
+      {
+        phrase: "dim down",
+        meaning: "lower floor lamp light level",
+        arabic: "يُخَفِّفُ الإِضَاءَة",
+        example: "Dim down the floor lamp for a relaxing evening ambiance.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Living Room Lighting",
+        en: "A graceful arched floor lamp stands behind the sofa, casting light over the coffee table.",
+        ar: "يَقِفُ مِصْبَاحٌ أَرْضِيٌّ مُنْحَنٍ أَنِيقٌ خَلْفَ الأَرِيكَةِ لِيُضِيءَ طَاوِلَةَ القَهْوَةِ.",
+      },
+      {
+        context: "Reading Corner",
+        en: "The adjustable standing floor lamp provides glare-free light for evening book reading.",
+        ar: "يُوَفِّرُ المِصْبَاحُ الأَرْضِيُّ القَابِلُ لِلتَّعْدِيلِ إِضَاءَةً مُمَيَّزَةً لِقِرَاءَةِ الكُتُبِ.",
+      },
+      {
+        context: "Interior Ambiance",
+        en: "Pairing a floor lamp with table lamps creates layered, welcoming living room illumination.",
+        ar: "يَخْلُقُ تَنْسِيقُ المِصْبَاحِ الأَرْضِيِّ مَعَ مَصَابِيحِ الطَّاوِلَةِ إِضَاءَةً دَافِئَةً مُتَعَدِّدَةَ المُسْتَوَيَاتِ.",
+      },
+    ],
+    exampleSentence:
+      "A graceful arched floor lamp stands behind the sofa, casting light over the coffee table.",
+    exampleArabic:
+      "يَقِفُ مِصْبَاحٌ أَرْضِيٌّ مُنْحَنٍ أَنِيقٌ خَلْفَ الأَرِيكَةِ لِيُضِيءَ طَاوِلَةَ القَهْوَةِ.",
+  },
+  flour: {
+    id: "flour",
+    arabic: "طَحِين (دَقِيق)",
+    partOfSpeech: "noun",
+    phonetic: "flaʊ.ər",
+    pronunciationTip: "Pronounced identically to the word 'flower' (/flaʊ.ər/).",
+    collocations: [
+      "all-purpose flour",
+      "cup of flour",
+      "sift the flour",
+      "bread flour",
+      "whole wheat flour",
+      "flour the counter",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sift in",
+        meaning: "strain flour to aerate and remove lumps",
+        arabic: "يَنْخُلُ الطَّحِينَ",
+        example: "Sift in the flour and baking powder together into the batter.",
+      },
+      {
+        phrase: "dust with",
+        meaning: "sprinkle flour over work surface",
+        arabic: "يَرُشُّ بِالطَّحِين",
+        example: "Dust the marble counter with flour before kneading the dough.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Baking Bread",
+        en: "High-protein unbleached bread flour gives the sourdough loaf a chewy texture.",
+        ar: "يَمْنَحُ طَحِينُ الخُبْزِ عَالِي البْرُوتِينِ رَغِيفَ الخُبْزِ قِوَاماً مَرِناً وَمُمَيَّزاً.",
+      },
+      {
+        context: "Cake Prep",
+        en: "Sift two cups of fine cake flour to ensure a light and tender crumb.",
+        ar: "انْخُلْ كُوبَيْنِ مِنْ طَحِينِ الكَعْكِ النَّاعِمِ لِضَمَانِ قِوَامٍ خَفِيفٍ وَهَشٍّ.",
+      },
+      {
+        context: "Thickening Sauces",
+        en: "Whisk two tablespoons of all-purpose flour into melted butter to thicken the stew.",
+        ar: "اخْفِقْ مِلْعَقَتَيْنِ مِنْ الطَّحِينِ فِي الزُّبْدَةِ المُذَابَةِ لِتَكْثِيفِ قِوَامِ اليَخْنَةِ.",
+      },
+    ],
+    exampleSentence:
+      "High-protein unbleached bread flour gives the sourdough loaf a chewy texture.",
+    exampleArabic:
+      "يَمْنَحُ طَحِينُ الخُبْزِ عَالِي البْرُوتِينِ رَغِيفَ الخُبْزِ قِوَاماً مَرِناً وَمُمَيَّزاً.",
+  },
+  "food-container": {
+    id: "food-container",
+    arabic: "حَافِظَةُ طَعَام (عُلْبَةُ ثَلَّاجَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfuːd kənˌteɪ.nər",
+    pronunciationTip: "Compound noun: 'FOOD' (/fuːd/) + 'CONTAINER' (/kənˈteɪ.nər/).",
+    collocations: [
+      "airtight food container",
+      "glass food container",
+      "plastic food container",
+      "meal prep container",
+      "leak-proof container",
+      "stackable container",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pack away",
+        meaning: "store leftovers in food containers",
+        arabic: "يَحْفَظُ فِي الحَافِظَات",
+        example: "Pack away the leftover dinner into glass food containers.",
+      },
+      {
+        phrase: "snap shut",
+        meaning: "secure a container lid tightly",
+        arabic: "يُقْفِلُ بِإِحْكَام",
+        example: "Snap shut the four locking tabs on the food container.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Meal Prep",
+        en: "He packed five balanced lunches into glass food containers for the work week.",
+        ar: "حَضَّرَ خَمْسَ وَجَبَاتِ غَدَاءٍ مُتَوَازِنَةٍ فِي حَافِظَاتِ طَعَامٍ زُجَاجِيَّةٍ لِأُسْبُوعِ العَمَلِ.",
+      },
+      {
+        context: "Leak Prevention",
+        en: "A leak-proof silicone seal ensures your food container won't spill in your bag.",
+        ar: "يَضْمَنُ خَتْمُ السِّيلِيكُون المَانِعُ لِلتَّسَرُّبِ عَدَمَ انْسِكَابِ الطَّعَامِ فِي حَقِيبَتِكَ.",
+      },
+      {
+        context: "Storage Efficiency",
+        en: "Stackable rectangular food containers maximize available shelf space in the fridge.",
+        ar: "تُسَاعِدُ حَافِظَاتُ الطَّعَامِ المُسْتَطِيلَةُ القَابِلَةُ لِلرَّصِّ فِي تَوْفِيرِ مَسَاحَةِ الثَّلَّاجَةِ.",
+      },
+    ],
+    exampleSentence:
+      "He packed five balanced lunches into glass food containers for the work week.",
+    exampleArabic:
+      "حَضَّرَ خَمْسَ وَجَبَاتِ غَدَاءٍ مُتَوَازِنَةٍ فِي حَافِظَاتِ طَعَامٍ زُجَاجِيَّةٍ لِأُسْبُوعِ العَمَلِ.",
+  },
+  fork: {
+    id: "fork",
+    arabic: "شَوْكَة",
+    partOfSpeech: "noun",
+    phonetic: "fɔːrk",
+    pronunciationTip: "Rhymes with 'cork', 'pork', and 'park'.",
+    collocations: [
+      "dinner fork",
+      "knife and fork",
+      "dessert fork",
+      "salad fork",
+      "pick up with a fork",
+      "stainless steel fork",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pick at",
+        meaning: "eat small amounts without appetite using a fork",
+        arabic: "يَنْقُرُ فِي الطَّعَام",
+        example: "He picked at his food with his fork.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dining Table",
+        en: "Place the dinner fork to the left of the plate according to formal etiquette.",
+        ar: "ضَعْ شَوْكَةَ الطَّعَامِ إِلَى يَسَارِ الطَّبَقِ وِفْقاً لِقَوَاعِدِ الإِتِيكِيت.",
+      },
+      {
+        context: "Eating",
+        en: "She twirled the spaghetti around her fork before taking a bite.",
+        ar: "لَفَّتِ المَعْكَرُونَةَ الإِسْبَاغِيتِي حَوْلَ شَوْكَتِهَا قَبْلَ تَنَاوُلِ اللُّقْمَةِ.",
+      },
+      {
+        context: "Baking Prep",
+        en: "Prick the bottom of the pie crust with a fork to prevent air bubbles.",
+        ar: "اثْقُبْ قَاعِدَةَ الفَطِيرَةِ بِالشَّوْكَةِ لِمَنْعِ تَكَوُّنِ فَقَاعَاتِ الهَوَاءِ.",
+      },
+    ],
+    exampleSentence:
+      "Place the dinner fork to the left of the plate according to formal etiquette.",
+    exampleArabic:
+      "ضَعْ شَوْكَةَ الطَّعَامِ إِلَى يَسَارِ الطَّبَقِ وِفْقاً لِقَوَاعِدِ الإِتِيكِيت.",
+  },
+  freezer: {
+    id: "freezer",
+    arabic: "مُجَمِّد (فِرِيزَر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfriː.zər",
+    pronunciationTip: "Long 'ee' vowel /iː/ followed by voiced 'z' (/zər/).",
+    collocations: [
+      "deep freezer",
+      "keep in the freezer",
+      "freeze in the freezer",
+      "freezer bags",
+      "ice in the freezer",
+      "defrost the freezer",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "freeze up",
+        meaning: "become solid through freezing",
+        arabic: "يَتَجَمَّدُ",
+        example: "The homemade stock froze up into solid ice blocks.",
+      },
+      {
+        phrase: "thaw out",
+        meaning: "defrost frozen items",
+        arabic: "يُذِيبُ التَّجْمِيد",
+        example: "Take the chicken out of the freezer to thaw out before cooking.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Food Preservation",
+        en: "Store homemade soup and tomato sauce in airtight containers in the freezer.",
+        ar: "احْفَظِ الحَسَاءَ المَنْزِلِيَّ وَصَلْصَةَ الطَّمَاطِمِ فِي أَوْعِيَةٍ مُحْكَمَةٍ دَاخِلَ الفِرِيزَر.",
+      },
+      {
+        context: "Cool Treats",
+        en: "There is always a tub of creamy vanilla ice cream stored in the top freezer drawer.",
+        ar: "تُوجَدُ دَائِماً عُلْبَةُ آيْس كْرِيم بِالفَانِيلْيَا فِي الدُّرْجِ العُلْوِيِّ لِلْمُجَمِّدِ.",
+      },
+      {
+        context: "Meal Prep",
+        en: "Freezing fresh berries allows you to enjoy smoothies all year round.",
+        ar: "يُتِيحُ لَكَ تَجْمِيدُ التُّوتِ الطَّازَجِ الاِسْتِمْتَاعَ بِالعَصَائِرِ طَوَالَ العَامِ.",
+      },
+    ],
+    exampleSentence: "Store homemade soup and tomato sauce in airtight containers in the freezer.",
+    exampleArabic:
+      "احْفَظِ الحَسَاءَ المَنْزِلِيَّ وَصَلْصَةَ الطَّمَاطِمِ فِي أَوْعِيَةٍ مُحْكَمَةٍ دَاخِلَ الفِرِيزَر.",
+  },
+  "frying-pan": {
+    id: "frying-pan",
+    arabic: "مِقْلَاةُ القَلْي (طَاسَةُ قَلْي)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfraɪ.ɪŋ ˌpæn",
+    pronunciationTip: "Compound noun: 'FRYING' (/ˈfraɪ.ɪŋ/) + 'PAN' (/pæn/).",
+    collocations: [
+      "non-stick frying pan",
+      "sizzle in the frying pan",
+      "heavy frying pan",
+      "cast-iron frying pan",
+      "heat the frying pan",
+      "oil in the frying pan",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "fry up",
+        meaning: "cook food by frying",
+        arabic: "يَقْلِي",
+        example: "He fried up some crispy bacon and eggs.",
+      },
+      {
+        phrase: "flip over",
+        meaning: "turn food over in a frying pan",
+        arabic: "يَقْلِبُ عَلَى الوَجْهِ الآخَر",
+        example: "Carefully flip over the pancake when bubbles appear.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Breakfast Prep",
+        en: "He melted a knob of golden butter in the frying pan for the omelet.",
+        ar: "أَذَابَ قِطْعَةً مِنْ الزُّبْدَةِ الذَّهَبِيَّةِ فِي مِقْلاةِ القَلْيِ لِإِعْدَادِ الأُومْلِيت.",
+      },
+      {
+        context: "Cooking Fish",
+        en: "Sear the salmon fillet skin-side down in a smoking hot frying pan.",
+        ar: "قُمْ بِتَحْمِيرِ شَرِيحَةِ السَّلَمُونِ بِوَضْعِ الجِلْدِ لِأَسْفَلَ فِي مِقْلاةٍ سَاخِنَةٍ جِدّاً.",
+      },
+      {
+        context: "Utensil Care",
+        en: "Use wooden or silicone spatulas to avoid scratching the non-stick frying pan.",
+        ar: "اسْتَخْدِمْ مَلاعِقَ خَشَبِيَّةً أَوْ سِيلِيكُون لِتَفَادِي خَدْشِ مِقْلاةِ القَلْيِ.",
+      },
+    ],
+    exampleSentence: "He melted a knob of golden butter in the frying pan for the omelet.",
+    exampleArabic:
+      "أَذَابَ قِطْعَةً مِنْ الزُّبْدَةِ الذَّهَبِيَّةِ فِي مِقْلاةِ القَلْيِ لِإِعْدَادِ الأُومْلِيت.",
+  },
+  "game-console": {
+    id: "game-console",
+    arabic: "جِهَازُ أَلْعَابِ فِيدْيُو (بْلَايْ سْتِيشِن / كُونْسُول)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɡeɪm kənˌsoʊl",
+    pronunciationTip: "Compound noun: 'GAME' (/ɡeɪm/) + 'CONSOLE' (/kənˈsoʊl/).",
+    collocations: [
+      "video game console",
+      "play on a game console",
+      "connect the game console",
+      "game console controller",
+      "latest game console",
+      "multiplayer game console",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hook up",
+        meaning: "connect console to TV and power",
+        arabic: "يَصِلُ الجِهَازَ بِالشَّاشَة",
+        example: "Hook up the new game console to the HDMI port on the TV.",
+      },
+      {
+        phrase: "turn off",
+        meaning: "shut down console safely",
+        arabic: "يُغْلِقُ الجِهَاز",
+        example: "Save your game progress before turning off the console.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Gaming Fun",
+        en: "The teenagers played a thrilling cooperative adventure game on the new game console.",
+        ar: "لَعِبَ المُرَاهِقُونَ لُعْبَةَ مُغَامَرَاتٍ تَعَاوُنِيَّةً مُثِيرَةً عَلَى جِهَازِ الأَلْعَابِ الجَدِيدِ.",
+      },
+      {
+        context: "Media Center Setup",
+        en: "The game console sits neatly inside the ventilated compartment of the TV stand.",
+        ar: "يَسْتَقِرُّ جِهَازُ الأَلْعَابِ فِي القِسْمِ جَيِّدِ التَّهْوِيَةِ دَاخِلَ طَاوِلَةِ التِّلْفَازِ.",
+      },
+      {
+        context: "Controllers",
+        en: "Remember to place wireless game controllers on their charging dock after playing.",
+        ar: "تَذَكَّرْ وَضْعَ أَيْدِي التَّحَكُّمِ اللّاسِلْكِيَّةِ فِي قَاعِدَةِ الشَّحْنِ بَعْدَ اللَّعِبِ.",
+      },
+    ],
+    exampleSentence:
+      "The teenagers played a thrilling cooperative adventure game on the new game console.",
+    exampleArabic:
+      "لَعِبَ المُرَاهِقُونَ لُعْبَةَ مُغَامَرَاتٍ تَعَاوُنِيَّةً مُثِيرَةً عَلَى جِهَازِ الأَلْعَابِ الجَدِيدِ.",
+  },
+  glass: {
+    id: "glass",
+    arabic: "كَأْسُ زُجَاج (كُوبُ مَاء)",
+    partOfSpeech: "noun",
+    phonetic: "ɡlæs",
+    pronunciationTip:
+      "Short 'a' vowel /æ/ in American English, broad 'ah' /ɑː/ in British English.",
+    collocations: [
+      "glass of water",
+      "drinking glass",
+      "tall glass",
+      "fill the glass",
+      "crystal glass",
+      "shatter the glass",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "fill up",
+        meaning: "pour liquid into a glass until full",
+        arabic: "يَمْلَأُ الكَأْس",
+        example: "Fill up the glass with ice cubes and sparkling mineral water.",
+      },
+      {
+        phrase: "drink down",
+        meaning: "finish the drink in a glass",
+        arabic: "يَشْرَبُ حَتَّى القَاع",
+        example: "He drank down the entire glass of fresh orange juice.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Hydration",
+        en: "Doctors recommend drinking a tall glass of fresh water upon waking up.",
+        ar: "يُوصِي الأَطِبَّاءُ بِشُرْبِ كَأْسٍ كَبِيرٍ مِنَ المَاءِ النَّقِيِّ عِنْدَ الاِسْتِيقَاظِ.",
+      },
+      {
+        context: "Dining Setup",
+        en: "Set a water glass above the dinner knife on the right side of the placemat.",
+        ar: "ضَعْ كَأْسَ المَاءِ فَوْقَ سِكِّينِ الطَّعَامِ عَلَى الجَانِبِ الأَيْمَنِ لِمَفْرَشِ الطَّاوِلَةِ.",
+      },
+      {
+        context: "Safety",
+        en: "Be careful when handling thin glassware to prevent chipping the delicate rim.",
+        ar: "احْرِصْ عِنْدَ التَّعَامُلِ مَعَ الأَوَانِي الزُّجَاجِيَّةِ الرَّقِيقَةِ لِمَنْعِ كَسْرِ الحَافَّةِ.",
+      },
+    ],
+    exampleSentence: "Doctors recommend drinking a tall glass of fresh water upon waking up.",
+    exampleArabic:
+      "يُوصِي الأَطِبَّاءُ بِشُرْبِ كَأْسٍ كَبِيرٍ مِنَ المَاءِ النَّقِيِّ عِنْدَ الاِسْتِيقَاظِ.",
+  },
+  glasses: {
+    id: "glasses",
+    arabic: "نَظَّارَات (نَظَّارَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɡlæs.ɪz",
+    pronunciationTip:
+      "Short 'a' vowel in American English (/ɡlæs/), ending in /ɪz/. Always plural.",
+    collocations: [
+      "reading glasses",
+      "wear glasses",
+      "put on glasses",
+      "clean your glasses",
+      "prescription glasses",
+      "pair of glasses",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put on",
+        meaning: "wear glasses on your face",
+        arabic: "يَرْتَدِي النَّظَّارَة",
+        example: "He put on his reading glasses to inspect the fine print.",
+      },
+      {
+        phrase: "take off",
+        meaning: "remove glasses",
+        arabic: "يَخْلَعُ النَّظَّارَة",
+        example: "She took off her glasses and rubbed her tired eyes.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Reading",
+        en: "He cannot read small text clearly without his prescription reading glasses.",
+        ar: "لا يَسْتَطِيعُ قِرَاءَةَ النُّصُوصِ الصَّغِيرَةِ بِوُضُوحٍ دُونَ نَظَّارَةِ القِرَاءَةِ الطِّبِّيَّةِ.",
+      },
+      {
+        context: "Care & Maintenance",
+        en: "Use a soft microfiber cloth to clean smudges from your glasses lenses.",
+        ar: "اسْتَخْدِمْ قِطْعَةَ قُمَاشٍ نَاعِمَةً لِمَسْحِ البُقَعِ عَنْ عَدَسَاتِ نَظَّارَتِكَ.",
+      },
+      {
+        context: "Bedside Habit",
+        en: "She always places her glasses safely inside a hard case on the nightstand.",
+        ar: "تَضَعُ نَظَّارَتَهَا دَائِماً دَاخِلَ عُلْبَةٍ صَلْبَةٍ عَلَى طَاوِلَةِ السَّرِيرِ قَبْلَ النَّوْمِ.",
+      },
+    ],
+    exampleSentence: "He cannot read small text clearly without his prescription reading glasses.",
+    exampleArabic:
+      "لا يَسْتَطِيعُ قِرَاءَةَ النُّصُوصِ الصَّغِيرَةِ بِوُضُوحٍ دُونَ نَظَّارَةِ القِرَاءَةِ الطِّبِّيَّةِ.",
+  },
+  goat: {
+    id: "goat",
+    arabic: "مَاعِز (عَنْزَة)",
+    partOfSpeech: "noun",
+    phonetic: "ɡoʊt",
+    pronunciationTip: "Long 'o' vowel /oʊ/ as in 'boat' or 'coat'.",
+    collocations: [
+      "goat cheese",
+      "goat milk",
+      "herd of goats",
+      "curious goat",
+      "mountain goat",
+      "horns of a goat",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "butt in",
+        meaning: "interrupt (like a goat using horns)",
+        arabic: "يَتَدَخَّلُ بِفُضُول",
+        example: "Please don't butt into our conversation.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Farm Dairy",
+        en: "Fresh goat milk is crafted into delicious, tangy artisan cheeses.",
+        ar: "يُسْتَخْدَمُ حَلِيبُ المَاعِزِ الطَّازَجُ فِي صِنَاعَةِ أَجْبَانٍ شَهِيَّةٍ وَمُمَيَّزَةٍ.",
+      },
+      {
+        context: "Playful Nature",
+        en: "The playful young goats leaped playfully onto wooden bales of straw.",
+        ar: "قَفَزَتْ صِغَارُ المَاعِزِ بِمَرَحٍ فَوْقَ بَالاتِ القَشِّ الخَشَبِيَّةِ فِي المَزْرَعَةِ.",
+      },
+      {
+        context: "Agility",
+        en: "Goats are remarkably sure-footed and can easily climb steep rocky hillsides.",
+        ar: "يَتَمَيَّزُ المَاعِزُ بِثَبَاتِ خُطُوَاتِهِ وَقُدْرَتِهِ الفَائِقَةِ عَلَى تَسَلُّقِ المُنْحَدَرَاتِ الصَّخْرِيَّةِ.",
+      },
+    ],
+    exampleSentence: "Fresh goat milk is crafted into delicious, tangy artisan cheeses.",
+    exampleArabic:
+      "يُسْتَخْدَمُ حَلِيبُ المَاعِزِ الطَّازَجُ فِي صِنَاعَةِ أَجْبَانٍ شَهِيَّةٍ وَمُمَيَّزَةٍ.",
+  },
+  goose: {
+    id: "goose",
+    arabic: "إِوَزَّة (إِوَزّ)",
+    partOfSpeech: "noun",
+    phonetic: "ɡuːs",
+    pronunciationTip: "Long 'oo' vowel /uː/. Plural is 'geese' (/ɡiːs/).",
+    collocations: [
+      "flock of geese",
+      "honking goose",
+      "white goose",
+      "goose feathers",
+      "guard goose",
+      "goose down",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "fly south",
+        meaning: "migrate during autumn in V-formation",
+        arabic: "يُهَاجِرُ جَنُوباً",
+        example: "Flocks of Canada geese fly south for the winter.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Farm Sentry",
+        en: "The vocal white goose honked loudly whenever unfamiliar visitors arrived at the gate.",
+        ar: "صَاحَتِ الإِوَزَّةُ البَيْضَاءُ بِصَوْتٍ عَالٍ كُلَّمَا وَصَلَ زُوَّارٌ جُدُدٌ إِلَى البَوَّابَةِ.",
+      },
+      {
+        context: "Migration",
+        en: "A majestic V-formation of wild geese soared high across the crisp autumn sky.",
+        ar: "حَلَّقَ سِرْبٌ بَدِيعٌ مِنَ الإِوَزِّ البَرِّيِّ عَلَى شَكْلِ حَرْفِ V فِي سَمَاءِ الخَرِيفِ.",
+      },
+      {
+        context: "Soft Down",
+        en: "High-quality winter parkas and pillows are insulated with ultra-soft goose down.",
+        ar: "تُبَطَّنُ السُّتْرَاتُ الشَّتْوِيَّةُ الفَاخِرَةُ وَالوِسَادَاتُ بِزَغَبِ الإِوَزِّ النَّاعِمِ جِدّاً.",
+      },
+    ],
+    exampleSentence:
+      "The vocal white goose honked loudly whenever unfamiliar visitors arrived at the gate.",
+    exampleArabic:
+      "صَاحَتِ الإِوَزَّةُ البَيْضَاءُ بِصَوْتٍ عَالٍ كُلَّمَا وَصَلَ زُوَّارٌ جُدُدٌ إِلَى البَوَّابَةِ.",
+  },
+  grater: {
+    id: "grater",
+    arabic: "مِبْشَرَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈɡreɪ.tər",
+    pronunciationTip: "Long 'a' sound /eɪ/, exactly like the word 'greater'.",
+    collocations: [
+      "cheese grater",
+      "box grater",
+      "fine grater",
+      "grate on a grater",
+      "grate cheese",
+      "stainless steel grater",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "grate up",
+        meaning: "shred into small pieces",
+        arabic: "يَبْشُرُ",
+        example: "Grate up two cups of sharp cheddar for the macaroni.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cheese Grating",
+        en: "He grated a block of Parmesan cheese over the steaming bowl of pasta.",
+        ar: "بَشَرَ قِطْعَةً مِنْ جُبْنِ البَارْمِيزَان فَوْقَ طَبَقِ المَعْكَرُونَةِ السَّاخِنِ.",
+      },
+      {
+        context: "Baking Prep",
+        en: "Use the fine side of the box grater to zest fresh orange and lemon peel.",
+        ar: "اسْتَخْدِمِ الجَانِبَ النَّاعِمَ لِلْمِبْشَرَةِ لِبَشْرِ قِشْرِ البُرْتُقَالِ وَاللَّيْمُونِ.",
+      },
+      {
+        context: "Salad Making",
+        en: "Grate fresh carrots and cabbage on the coarse grater for homemade coleslaw.",
+        ar: "ابْشُرِ الجَزَرَ وَالمَلْفُوفَ الطَّازَجَ عَلَى المِبْشَرَةِ الخَشِنَةِ لِإِعْدَادِ سَلَطَةِ الكُولْسْلُو.",
+      },
+    ],
+    exampleSentence: "He grated a block of Parmesan cheese over the steaming bowl of pasta.",
+    exampleArabic:
+      "بَشَرَ قِطْعَةً مِنْ جُبْنِ البَارْمِيزَان فَوْقَ طَبَقِ المَعْكَرُونَةِ السَّاخِنِ.",
+  },
+  greenhouse: {
+    id: "greenhouse",
+    arabic: "صَوْبَةٌ زِرَاعِيَّة (بَيْتٌ زُجَاجِيّ / دَفِيئَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɡriːn.haʊs",
+    pronunciationTip: "Compound noun with primary stress on 'GREEN' (/ˈɡriːn.haʊs/).",
+    collocations: [
+      "glass greenhouse",
+      "grow in a greenhouse",
+      "warm greenhouse",
+      "greenhouse tomatoes",
+      "commercial greenhouse",
+      "greenhouse temperature",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "grow in",
+        meaning: "cultivate plants inside a greenhouse",
+        arabic: "يَزْرَعُ فِي الصَّوْبَة",
+        example: "They grow organic seedlings and herbs in the greenhouse all year.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Year-Round Growing",
+        en: "Tomatoes, cucumbers, and tender herbs thrive inside the warm, sunny glass greenhouse.",
+        ar: "تَزْدَهِرُ الطَّمَاطِمُ وَالخِيَارُ وَالأَعْشَابُ الرَّقِيقَةُ دَاخِلَ الصَّوْبَةِ الزُّجَاجِيَّةِ الدَّافِئَةِ.",
+      },
+      {
+        context: "Seedling Starting",
+        en: "In late February, the gardener starts pepper seeds in seedling trays in the greenhouse.",
+        ar: "يَبْدَأُ البُسْتَانِيُّ زِرَاعَةَ بُذُورِ الفُلْفُلِ دَاخِلَ الصَّوْبَةِ فِي أَوَاخِرِ فِبْرَايِر.",
+      },
+      {
+        context: "Climate Control",
+        en: "Automatic roof vents open to regulate internal humidity and temperature.",
+        ar: "تُفْتَحُ فَتَحَاتُ التَّهْوِيَةِ السَّقْفِيَّةُ تِلْقَائِيّاً لِضَبْطِ الرُّطُوبَةِ وَالحَرَارَةِ دَاخِلَ الدَّفِيئَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Tomatoes, cucumbers, and tender herbs thrive inside the warm, sunny glass greenhouse.",
+    exampleArabic:
+      "تَزْدَهِرُ الطَّمَاطِمُ وَالخِيَارُ وَالأَعْشَابُ الرَّقِيقَةُ دَاخِلَ الصَّوْبَةِ الزُّجَاجِيَّةِ الدَّافِئَةِ.",
+  },
+  hanger: {
+    id: "hanger",
+    arabic: "شَمَّاعَةُ مَلابِس",
+    partOfSpeech: "noun",
+    phonetic: "ˈhæŋ.ər",
+    pronunciationTip: "Soft 'ng' sound (/ŋ/) without a hard 'g' sound.",
+    collocations: [
+      "clothes hanger",
+      "wooden hanger",
+      "coat hanger",
+      "hang on a hanger",
+      "plastic hanger",
+      "wardrobe hanger",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hang up",
+        meaning: "put clothes on a hanger in a closet",
+        arabic: "يُعَلِّقُ المَلابِس",
+        example: "Hang up your freshly ironed shirt on a wooden hanger.",
+      },
+      {
+        phrase: "take off",
+        meaning: "remove an item from a hanger",
+        arabic: "يَنْزِعُ عَنِ الشَّمَّاعَة",
+        example: "She took her favorite dress off the hanger.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Laundry Care",
+        en: "Hang your jackets on sturdy wooden hangers to preserve their shoulder shape.",
+        ar: "عَلِّقْ سُتْرَاتِكَ عَلَى شَمَّاعَاتٍ خَشَبِيَّةٍ مَتِينَةٍ لِلْحِفَاظِ عَلَى شَكْلِ الأَكْتَافِ.",
+      },
+      {
+        context: "Closet Organization",
+        en: "She bought a pack of non-slip velvet hangers for her silk blouses.",
+        ar: "اشْتَرَتْ مَجْمُوعَةً مِنْ شَمَّاعَاتِ المَخْمَلِ المَانِعَةِ لِلاِنْزِلاقِ لِقُمْصَانِهَا الحَرِيرِيَّةِ.",
+      },
+      {
+        context: "Wardrobe Tidiness",
+        en: "Keep spare empty hangers neatly grouped at one side of the wardrobe.",
+        ar: "احْتَفِظْ بِالشَّمَّاعَاتِ الفَارِغَةِ مُرَتَّبَةً فِي جَانِبٍ وَاحِدٍ مِنْ خِزَانَةِ المَلابِسِ.",
+      },
+    ],
+    exampleSentence: "Hang your jackets on sturdy wooden hangers to preserve their shoulder shape.",
+    exampleArabic:
+      "عَلِّقْ سُتْرَاتِكَ عَلَى شَمَّاعَاتٍ خَشَبِيَّةٍ مَتِينَةٍ لِلْحِفَاظِ عَلَى شَكْلِ الأَكْتَافِ.",
+  },
+  harvest: {
+    id: "harvest",
+    arabic: "حَصَاد (مَوْسِمُ الحَصَاد)",
+    partOfSpeech: "noun",
+    phonetic: "ˈhɑːr.vɪst",
+    pronunciationTip: "Two syllables: 'HAR-vest' (/ˈhɑːr.vɪst/).",
+    collocations: [
+      "bountiful harvest",
+      "autumn harvest",
+      "harvest season",
+      "reap the harvest",
+      "harvest celebration",
+      "corn harvest",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "gather in",
+        meaning: "collect harvested crops for winter storage",
+        arabic: "يَجْمَعُ المَحْصُول",
+        example: "They worked late into the night to gather in the wheat harvest.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bountiful Season",
+        en: "The community celebrated a bountiful autumn harvest with pumpkin pies and fresh apple cider.",
+        ar: "احْتَفَلَ أَهْلُ القَرْيَةِ بِمَوْسِمِ الحَصَادِ الوَفِيرِ بِفَطَائِرِ اليَقْطِينِ وَعَصِيرِ التُّفَّاحِ.",
+      },
+      {
+        context: "Combine Harvesting",
+        en: "Giant combine harvesters rolled through the golden wheat fields from morning till night.",
+        ar: "تَحَرَّكَتْ حَصَّادَاتُ القَمْحِ العِمْلاقَةُ عَبْرَ الحُقُولِ الذَّهَبِيَّةِ طَوَالَ النَّهَارِ.",
+      },
+      {
+        context: "Fruit Picking",
+        en: "Orchard workers hand-picked thousands of ripe red apples during the peak apple harvest.",
+        ar: "قَطَفَ عُمَّالُ البَسَاتِينِ آلافَ التُّفَّاحِ الأَحْمَرِ النَّاضِجِ فِي ذِرْوَةِ مَوْسِمِ الحَصَادِ.",
+      },
+    ],
+    exampleSentence:
+      "The community celebrated a bountiful autumn harvest with pumpkin pies and fresh apple cider.",
+    exampleArabic:
+      "احْتَفَلَ أَهْلُ القَرْيَةِ بِمَوْسِمِ الحَصَادِ الوَفِيرِ بِفَطَائِرِ اليَقْطِينِ وَعَصِيرِ التُّفَّاحِ.",
+  },
+  hay: {
+    id: "hay",
+    arabic: "قَشّ / دْرِيس (عَلَفٌ مُجَفَّف)",
+    partOfSpeech: "noun",
+    phonetic: "heɪ",
+    pronunciationTip: "Long 'a' vowel /eɪ/ as in 'day' or 'say'.",
+    collocations: [
+      "bale of hay",
+      "hay stack",
+      "feed hay",
+      "fresh hay",
+      "sweet alfalfa hay",
+      "hay loft",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "bale up",
+        meaning: "compress dry grass into tight bales",
+        arabic: "يَحْزِمُ القَشَّ فِي بَالات",
+        example: "The baler baled up the cut grass into hundred-pound rectangular hay bales.",
+      },
+      {
+        phrase: "hit the hay",
+        meaning: "(idiom) go to bed for sleep",
+        arabic: "يَذْهَبُ لِلنَّوْم",
+        example: "I am exhausted after the harvest, so I'm going to hit the hay.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Livestock Feed",
+        en: "The horses happily munched on sweet, fragrant alfalfa hay inside the warm barn.",
+        ar: "تَنَاوَلَتِ الخُيُولُ بِسَعَادَةٍ دْرِيسَ البَرْسِيمِ الحِجَازِيِّ العَطِرَ فِي الحَظِيرَةِ.",
+      },
+      {
+        context: "Summer Harvesting",
+        en: "Farmers cut, sun-dry, and bale nutritious meadow hay during warm sunny July weeks.",
+        ar: "يَقُومُ المُزَارِعُونَ بِحَصْدِ وَتَجْفِيفِ وَحَزْمِ قَشِّ المُرُوجِ فِي شَهْرِ يُولْيُو المُشْمِسِ.",
+      },
+      {
+        context: "Storage",
+        en: "Keep hay stacked tightly in dry, ventilated lofts to prevent dampness and mold.",
+        ar: "احْفَظِ القَشَّ مَرْصُوصاً فِي أَمَاكِنَ جَافَّةٍ وَمُهَوَّاةٍ لِمَنْعِ العُفُونَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The horses happily munched on sweet, fragrant alfalfa hay inside the warm barn.",
+    exampleArabic:
+      "تَنَاوَلَتِ الخُيُولُ بِسَعَادَةٍ دْرِيسَ البَرْسِيمِ الحِجَازِيِّ العَطِرَ فِي الحَظِيرَةِ.",
+  },
+  headboard: {
+    id: "headboard",
+    arabic: "خَلْفِيَّةُ السَّرِير (ظَهْرُ السَّرِير)",
+    partOfSpeech: "noun",
+    phonetic: "ˈhɛd.bɔːrd",
+    pronunciationTip: "Compound word: 'HEAD' + 'BOARD'.",
+    collocations: [
+      "upholstered headboard",
+      "wooden headboard",
+      "padded headboard",
+      "lean against the headboard",
+      "tufted headboard",
+      "bed headboard",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "lean on",
+        meaning: "rest against the headboard while reading",
+        arabic: "يَسْتَنِدُ عَلَى ظَهْرِ السَّرِير",
+        example: "She propped a pillow to lean on the headboard while studying.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bedtime Reading",
+        en: "She leaned against the padded headboard to read her book comfortably.",
+        ar: "اسْتَنَدَتْ إِلَى ظَهْرِ السَّرِيرِ المَحْشُوِّ لِتَقْرَأَ كِتَابَهَا بِكُلِّ رَاحَةٍ.",
+      },
+      {
+        context: "Bedroom Decor",
+        en: "A tall velvet tufted headboard serves as the room's main focal point.",
+        ar: "تُعَدُّ خَلْفِيَّةُ السَّرِيرِ المَخْمَلِيَّةُ الطَّوِيلَةُ نُقْطَةَ الجَذْبِ الرَّئِيسِيَّةِ فِي الغُرْفَةِ.",
+      },
+      {
+        context: "Installation",
+        en: "The wooden headboard was securely bolted to the bed frame.",
+        ar: "تَمَّ تَثْبِيتُ ظَهْرِ السَّرِيرِ الخَشَبِيِّ بِإِحْكَامٍ فِي هَيْكَلِ السَّرِيرِ.",
+      },
+    ],
+    exampleSentence: "She leaned against the padded headboard to read her book comfortably.",
+    exampleArabic:
+      "اسْتَنَدَتْ إِلَى ظَهْرِ السَّرِيرِ المَحْشُوِّ لِتَقْرَأَ كِتَابَهَا بِكُلِّ رَاحَةٍ.",
+  },
+  headphones: {
+    id: "headphones",
+    arabic: "سَمَّاعَاتُ الرَّأْس (هَيْدْفُونْز)",
+    partOfSpeech: "noun",
+    phonetic: "ˈhɛd.foʊnz",
+    pronunciationTip: "Compound noun: 'HEAD' + 'PHONES'. Always plural for over-ear units.",
+    collocations: [
+      "wear headphones",
+      "wireless headphones",
+      "noise-canceling headphones",
+      "put on headphones",
+      "listen with headphones",
+      "take off headphones",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put on",
+        meaning: "place headphones over your ears",
+        arabic: "يَرْتَدِي السَّمَّاعَات",
+        example: "He put on his noise-canceling headphones to concentrate on work.",
+      },
+      {
+        phrase: "take off",
+        meaning: "remove headphones from head",
+        arabic: "يَنْزِعُ السَّمَّاعَات",
+        example: "She took off her headphones when her colleague spoke to her.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Studying & Focus",
+        en: "He wore wireless headphones to listen to classical music while studying.",
+        ar: "ارْتَدَى سَمَّاعَاتِ رَأْسٍ لاسِلْكِيَّةٍ لِلاِسْتِمَاعِ إِلَى المَسِيقَى الكِلاسِيكِيَّةِ أَثْنَاءَ الدِّرَاسَةِ.",
+      },
+      {
+        context: "Travel",
+        en: "Noise-canceling headphones make long airplane flights much more peaceful.",
+        ar: "تَجْعَلُ سَمَّاعَاتُ الرَّأْسِ العَازِلَةُ لِلضَّوْضَاءِ رِحَلاتِ الطَّيَرَانِ الطَّوِيلَةَ أَكْثَرَ هُدُوءاً.",
+      },
+      {
+        context: "Hearing Safety",
+        en: "Keep the headphone volume at a moderate level to protect your hearing.",
+        ar: "احْرِصْ عَلَى ضَبْطِ صَوْتِ السَّمَّاعَاتِ عِنْدَ مُسْتَوًى مُعْتَدِلٍ لِحِمَايَةِ سَمْعِكَ.",
+      },
+    ],
+    exampleSentence: "He wore wireless headphones to listen to classical music while studying.",
+    exampleArabic:
+      "ارْتَدَى سَمَّاعَاتِ رَأْسٍ لاسِلْكِيَّةٍ لِلاِسْتِمَاعِ إِلَى المَسِيقَى الكِلاسِيكِيَّةِ أَثْنَاءَ الدِّرَاسَةِ.",
+  },
+  "hen-house": {
+    id: "hen-house",
+    arabic: "خُمُّ الدَّجَاج (قُنُّ الدَّجَاج)",
+    partOfSpeech: "noun",
+    phonetic: "ˈhɛn ˌhaʊs",
+    pronunciationTip: "Compound noun: 'HEN' (/hɛn/) + 'HOUSE' (/haʊs/).",
+    collocations: [
+      "wooden hen house",
+      "clean the hen house",
+      "eggs in the hen house",
+      "hen house perch",
+      "lock the hen house",
+      "backyard hen house",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "lock up",
+        meaning: "secure hen house doors against predators",
+        arabic: "يُقْفِلُ الخُمَّ لَيْلاً",
+        example: "Always lock up the hen house at night to protect the chickens from foxes.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Daily Chores",
+        en: "The girl checked the nesting boxes inside the wooden hen house for fresh morning eggs.",
+        ar: "تَفَقَّدَتِ الفَتَاةُ صَنَادِيقَ الأَعْشَاشِ فِي خُمِّ الدَّجَاجِ لِجَمْعِ البَيْضِ الصَّبَاحِيِّ.",
+      },
+      {
+        context: "Night Security",
+        en: "The farmer securely latched the hen house door to keep out prowling night predators.",
+        ar: "أَقْفَلَ المُزَارِعُ بَابَ خُمِّ الدَّجَاجِ بِإِحْكَامٍ لِحِمَايَةِ الطُّيُورِ مِنَ الثَّعَالِبِ.",
+      },
+      {
+        context: "Cleaning",
+        en: "Spread fresh dry sawdust and straw across the floor of the hen house weekly.",
+        ar: "افْرِشْ نُشَارَةَ الخَشَبِ وَالقَشَّ النَّظِيفَ عَلَى أَرْضِيَّةِ خُمِّ الدَّجَاجِ أُسْبُوعِيّاً.",
+      },
+    ],
+    exampleSentence:
+      "The girl checked the nesting boxes inside the wooden hen house for fresh morning eggs.",
+    exampleArabic:
+      "تَفَقَّدَتِ الفَتَاةُ صَنَادِيقَ الأَعْشَاشِ فِي خُمِّ الدَّجَاجِ لِجَمْعِ البَيْضِ الصَّبَاحِيِّ.",
+  },
+  hoe: {
+    id: "hoe",
+    arabic: "مِسْحَاة (فَأْسٌ زِرَاعِيَّة / مِعْزَقَة)",
+    partOfSpeech: "noun",
+    phonetic: "hoʊ",
+    pronunciationTip: "Long 'o' vowel /oʊ/ as in 'toe' or 'go'.",
+    collocations: [
+      "garden hoe",
+      "weed with a hoe",
+      "draw hoe",
+      "sharp hoe",
+      "hoe between rows",
+      "metal hoe blade",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "chop down",
+        meaning: "sever weed roots with a hoe",
+        arabic: "يَعْزِقُ الحَشَائِش",
+        example: "Chop down stubborn weeds between the tomato rows with a sharp hoe.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Weeding Crops",
+        en: "She used a sharp garden hoe to clear unwanted weeds between the vegetable rows.",
+        ar: "اسْتَخْدَمَتْ مِعْزَقَةَ حَدِيقَةٍ حَادَّةً لِإِزَالَةِ الحَشَائِشِ الضَّارَّةِ بَيْنَ صُفُوفِ الخُضَارِ.",
+      },
+      {
+        context: "Soil Loosening",
+        en: "Hoeing the topsoil prevents weed germination and aerates the root zone.",
+        ar: "يَمْنَعُ عَزْقُ التُّرْبَةِ السَّطْحِيَّةِ نُمُوَّ الحَشَائِشِ وَيُهَوِّي جُذُورَ النَّبَاتَاتِ.",
+      },
+      {
+        context: "Making Furrows",
+        en: "Use the corner of the hoe blade to draw straight furrows for planting carrot seeds.",
+        ar: "اسْتَخْدِمْ طَرَفَ شَفْرَةِ الفَأْسِ لِرَسْمِ خُطُوطٍ مُسْتَقِيمَةٍ لِبَذْرِ الجَزَرِ.",
+      },
+    ],
+    exampleSentence:
+      "She used a sharp garden hoe to clear unwanted weeds between the vegetable rows.",
+    exampleArabic:
+      "اسْتَخْدَمَتْ مِعْزَقَةَ حَدِيقَةٍ حَادَّةً لِإِزَالَةِ الحَشَائِشِ الضَّارَّةِ بَيْنَ صُفُوفِ الخُضَارِ.",
+  },
+  honey: {
+    id: "honey",
+    arabic: "عَسَل (عَسَلُ نَحْل)",
+    partOfSpeech: "noun",
+    phonetic: "ˈhʌn.i",
+    pronunciationTip: "Short 'u' sound /ʌ/ as in 'love' or 'money'.",
+    collocations: [
+      "raw honey",
+      "spoonful of honey",
+      "jar of honey",
+      "drizzle honey",
+      "pure honey",
+      "honeycomb",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "drizzle over",
+        meaning: "pour thin stream of honey over food",
+        arabic: "يَسْكُبُ خَيْطاً مِنَ العَسَل",
+        example: "Drizzle pure honey over warm Greek yogurt and walnuts.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sweetening Drinks",
+        en: "She stirred a golden spoonful of raw wildflower honey into her chamomile tea.",
+        ar: "قَلَّبَتْ مِلْعَقَةً ذَهَبِيَّةً مِنْ عَسَلِ الزُّهُورِ البَرِّيَّةِ النَّقِيِّ فِي شَايِ البَابُونِجِ.",
+      },
+      {
+        context: "Breakfast Topping",
+        en: "Drizzle amber honey over a warm bowl of morning oatmeal and sliced almonds.",
+        ar: "اسْكُبْ خُيُوطاً مِنْ العَسَلِ الصَّافِي فَوْقَ الشُّوفَانِ الصَّبَاحِيِّ السَّاخِنِ وَاللَّوْزِ.",
+      },
+      {
+        context: "Baking & Glazing",
+        en: "A honey-mustard glaze gives roasted chicken wings a caramelized golden crust.",
+        ar: "يَمْنَحُ تَغْلِيفُ العَسَلِ وَالخَرْدَلِ أَجْنِحَةَ الدَّجَاجِ المَشْوِيَّةِ قِشْرَةً مُكَرْمَلَةً شَهِيَّةً.",
+      },
+    ],
+    exampleSentence:
+      "She stirred a golden spoonful of raw wildflower honey into her chamomile tea.",
+    exampleArabic:
+      "قَلَّبَتْ مِلْعَقَةً ذَهَبِيَّةً مِنْ عَسَلِ الزُّهُورِ البَرِّيَّةِ النَّقِيِّ فِي شَايِ البَابُونِجِ.",
+  },
+  horse: {
+    id: "horse",
+    arabic: "حِصَان (خَيْل)",
+    partOfSpeech: "noun",
+    phonetic: "hɔːrs",
+    pronunciationTip: "Broad 'or' sound /ɔːr/ as in 'door' or 'force'.",
+    collocations: [
+      "ride a horse",
+      "gallop of a horse",
+      "horse stable",
+      "brush the horse",
+      "wild horse",
+      "saddle a horse",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "horse around",
+        meaning: "(idiom) play roughly or foolishly",
+        arabic: "يَمْزَحُ بِخُشُونَة",
+        example: "Stop horsing around in the living room before you break the vase.",
+      },
+      {
+        phrase: "saddle up",
+        meaning: "put a saddle on a horse for riding",
+        arabic: "يُسْرِجُ الخَيْل",
+        example: "They saddled up their horses for an early morning trail ride.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Horseback Riding",
+        en: "She rode her chestnut horse along the scenic forest trail at dawn.",
+        ar: "رَكِبَتْ حِصَانَهَا الكَسْتَنَائِيَّ عَلَى طُولِ مَسَارِ الغَابَةِ الخَلابِ عِنْدَ الفَجْرِ.",
+      },
+      {
+        context: "Stable Care",
+        en: "The groom brushed the horse's glossy coat and cleaned its hooves thoroughly.",
+        ar: "نَظَّفَ السَّائِسُ فَرْوَةَ الحِصَانِ اللّامِعَةَ وَعَقَّمَ حَوَافِرَهُ بِعِنَايَةٍ.",
+      },
+      {
+        context: "Power & Grace",
+        en: "The magnificent black stallion galloped effortlessly across the open pasture.",
+        ar: "رَكَضَ الفَحْلُ الأَسْوَدُ البَدِيعُ بِسُرْعَةٍ وَرَشَاقَةٍ عَبْرَ المَرْعَى المَفْتُوحِ.",
+      },
+    ],
+    exampleSentence: "She rode her chestnut horse along the scenic forest trail at dawn.",
+    exampleArabic:
+      "رَكِبَتْ حِصَانَهَا الكَسْتَنَائِيَّ عَلَى طُولِ مَسَارِ الغَابَةِ الخَلابِ عِنْدَ الفَجْرِ.",
+  },
+  jam: {
+    id: "jam",
+    arabic: "مُرَبَّى",
+    partOfSpeech: "noun",
+    phonetic: "dʒæm",
+    pronunciationTip: "Short 'a' vowel /æ/ as in 'ham' or 'slam'.",
+    collocations: [
+      "strawberry jam",
+      "spread jam",
+      "jar of jam",
+      "homemade jam",
+      "sweet raspberry jam",
+      "toast with butter and jam",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "spread on",
+        meaning: "apply jam over bread or scones",
+        arabic: "يَدْهَنُ المُرَبَّى",
+        example: "Spread sweet blackberry jam over fresh warm scones.",
+      },
+      {
+        phrase: "jam-packed",
+        meaning: "(idiom) completely full",
+        arabic: "مُمْتَلِئٌ عَنْ آخِرِهِ",
+        example: "The farmer's market was jam-packed with shoppers.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Breakfast Treat",
+        en: "She spread a generous spoonful of homemade strawberry jam onto her buttered toast.",
+        ar: "دَهَنَتْ مِلْعَقَةً وَفِيرَةً مِنْ مُرَبَّى الفَرَاوِلَةِ المَنْزِلِيِّ عَلَى خُبْزِهَا المَحْمُوصِ بِالزُّبْدَةِ.",
+      },
+      {
+        context: "Canning & Preserves",
+        en: "Every summer, grandmother simmers fresh ripe berries and cane sugar into glossy jars of jam.",
+        ar: "فِي كُلِّ صَيْفٍ، تَطْبُخُ الجَدَّةُ التُّوتَ النَّاضِجَ مَعَ السُّكَّرِ لِعَمَلِ بَرَاِطِيمَ مُرَبَّى لامِعَةٍ.",
+      },
+      {
+        context: "Baking",
+        en: "Warm apricot jam is brushed over fruit tarts to give them a professional glossy finish.",
+        ar: "تُدْهَنُ فَطَائِرُ الفَوَاكِهِ بِمُرَبَّى المِشْمِشِ الدَّافِئِ لِإِعْطَائِهَا لَمَعَاناً رَائِعاً.",
+      },
+    ],
+    exampleSentence:
+      "She spread a generous spoonful of homemade strawberry jam onto her buttered toast.",
+    exampleArabic:
+      "دَهَنَتْ مِلْعَقَةً وَفِيرَةً مِنْ مُرَبَّى الفَرَاوِلَةِ المَنْزِلِيِّ عَلَى خُبْزِهَا المَحْمُوصِ بِالزُّبْدَةِ.",
+  },
+  "jewelry-box": {
+    id: "jewelry-box",
+    arabic: "صُنْدُوقُ المَجَوْهَرَات",
+    partOfSpeech: "noun",
+    phonetic: "ˈdʒuː.əl.ri ˌbɑːks",
+    pronunciationTip: "Primary stress on 'JEW' (/ˈdʒuː.əl.ri/), followed by 'box'.",
+    collocations: [
+      "wooden jewelry box",
+      "open the jewelry box",
+      "velvet jewelry box",
+      "store rings in a jewelry box",
+      "antique jewelry box",
+      "lock the jewelry box",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put away",
+        meaning: "store jewelry in its box",
+        arabic: "يَحْفَظُ فِي الصُّنْدُوق",
+        example: "She put away her gold necklace inside the velvet jewelry box.",
+      },
+      {
+        phrase: "take out",
+        meaning: "remove an item from a box",
+        arabic: "يُخْرِجُ مِنَ الصُّنْدُوق",
+        example: "He took out the diamond ring to prepare for the proposal.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Storage & Care",
+        en: "She organized her silver earrings and bracelets inside the velvet jewelry box.",
+        ar: "رَتَّبَتْ أَقْرَاطَهَا وَأَسَاوِرَهَا الفِضِّيَّةَ دَاخِلَ صُنْدُوقِ المَجَوْهَرَاتِ المَخْمَلِيِّ.",
+      },
+      {
+        context: "Heirloom",
+        en: "The antique wooden jewelry box was passed down from her great-grandmother.",
+        ar: "تَوَارَثَتْ صُنْدُوقَ المَجَوْهَرَاتِ الخَشَبِيَّ الأَثَرِيَّ عَنْ جَدَّتِهَا الكُبْرَى.",
+      },
+      {
+        context: "Security",
+        en: "Keep precious rings and necklaces securely locked inside a sturdy jewelry box.",
+        ar: "احْتَفِظْ بِالخَوَاتِمِ وَالقَلائِدِ الثَّمِينَةِ مُقْفَلَةً بِأَمَانٍ دَاخِلَ صُنْدُوقِ مَجَوْهَرَاتٍ مَتِينٍ.",
+      },
+    ],
+    exampleSentence:
+      "She organized her silver earrings and bracelets inside the velvet jewelry box.",
+    exampleArabic:
+      "رَتَّبَتْ أَقْرَاطَهَا وَأَسَاوِرَهَا الفِضِّيَّةَ دَاخِلَ صُنْدُوقِ المَجَوْهَرَاتِ المَخْمَلِيِّ.",
+  },
+  kettle: {
+    id: "kettle",
+    arabic: "غَلَّايَةُ مَاء (كَاتِل)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkɛt.əl",
+    pronunciationTip: "Short 'e' vowel /ɛ/, followed by a soft syllabic 'l'.",
+    collocations: [
+      "electric kettle",
+      "boil the kettle",
+      "fill the kettle",
+      "kettle whistle",
+      "kettle of water",
+      "tea kettle",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "boil up",
+        meaning: "heat water to boiling point",
+        arabic: "يَغْلِي المَاء",
+        example: "Boil up some water in the kettle to make fresh peppermint tea.",
+      },
+      {
+        phrase: "switch on",
+        meaning: "activate the electric kettle",
+        arabic: "يُشَغِّلُ الغَلَّايَة",
+        example: "She filled the kettle and switched it on.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Morning Tea",
+        en: "He filled the electric kettle with filtered water to brew morning green tea.",
+        ar: "مَلَأَ غَلَّايَةَ المَاءِ الكَهْرَبَائِيَّةَ بِمَاءٍ مُفَلْتَرٍ لِتَحْضِيرِ الشَّايِ الأَخْضَرِ الصَّبَاحِيِّ.",
+      },
+      {
+        context: "Rapid Heating",
+        en: "The cordless stainless steel kettle boils a liter of water in two minutes.",
+        ar: "تَغْلِي الغَلَّايَةُ اللّاسِلْكِيَّةُ لِتْراً مِنَ المَاءِ فِي دَقِيقَتَيْنِ فَقَطْ.",
+      },
+      {
+        context: "Hospitality",
+        en: "She boiled the kettle to serve hot herbal tea to her visiting neighbors.",
+        ar: "غَلَتِ المَاءَ فِي الغَلَّايَةِ لِتُقَدِّمَ شَايَ الأَعْشَابِ السَّاخِنَ لِجِيرَانِهَا الزَّائِرِينَ.",
+      },
+    ],
+    exampleSentence: "He filled the electric kettle with filtered water to brew morning green tea.",
+    exampleArabic:
+      "مَلَأَ غَلَّايَةَ المَاءِ الكَهْرَبَائِيَّةَ بِمَاءٍ مُفَلْتَرٍ لِتَحْضِيرِ الشَّايِ الأَخْضَرِ الصَّبَاحِيِّ.",
+  },
+  knife: {
+    id: "knife",
+    arabic: "سِكِّين",
+    partOfSpeech: "noun",
+    phonetic: "naɪf",
+    pronunciationTip: "Silent 'k' at the start: pronounced /naɪf/. Plural is 'knives' (/naɪvz/).",
+    collocations: [
+      "sharp knife",
+      "butter knife",
+      "chef's knife",
+      "bread knife",
+      "cut with a knife",
+      "sharpen the knife",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "cut up",
+        meaning: "divide food into smaller pieces",
+        arabic: "يُقَطِّعُ",
+        example: "Cut up the vegetables with a sharp chef's knife.",
+      },
+      {
+        phrase: "slice through",
+        meaning: "cut cleanly through food",
+        arabic: "يَشُقُّ بِسُهُولَة",
+        example: "The sharp blade sliced through the roast beef effortlessly.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Food Prep",
+        en: "A sharp chef's knife makes chopping onions and herbs fast and safe.",
+        ar: "تَجْعَلُ سِكِّينُ الطَّاهِي الحَادَّةُ تَقْطِيعَ البَصَلِ وَالأَعْشَابِ سَرِيعاً وَآمِناً.",
+      },
+      {
+        context: "Table Setting",
+        en: "Set the dinner knife on the right side of the plate with the blade facing in.",
+        ar: "ضَعْ سِكِّينَ الطَّعَامِ عَلَى يَمِينِ الطَّبَقِ مَعَ تَوْجِيهِ الحَدِّ لِلدَّاخِلِ.",
+      },
+      {
+        context: "Kitchen Safety",
+        en: "Never catch a falling knife; step back and let it hit the floor.",
+        ar: "لا تُحَاوِلْ أَبَداً الإِمْسَاكَ بِسِكِّينٍ سَاقِطٍ؛ بَلْ تَفَادَهُ وَدَعْهُ يَقَعُ عَلَى الأَرْضِ.",
+      },
+    ],
+    exampleSentence: "A sharp chef's knife makes chopping onions and herbs fast and safe.",
+    exampleArabic:
+      "تَجْعَلُ سِكِّينُ الطَّاهِي الحَادَّةُ تَقْطِيعَ البَصَلِ وَالأَعْشَابِ سَرِيعاً وَآمِناً.",
+  },
+  ladle: {
+    id: "ladle",
+    arabic: "مِغْرَفَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈleɪ.dəl",
+    pronunciationTip: "Long 'a' sound /eɪ/ as in 'table', followed by soft /dəl/.",
+    collocations: [
+      "soup ladle",
+      "deep ladle",
+      "ladle of soup",
+      "stainless steel ladle",
+      "serve with a ladle",
+      "wooden ladle",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "ladle out",
+        meaning: "serve soup or liquid with a ladle",
+        arabic: "يَغْرِفُ بِالمِغْرَفَة",
+        example: "She ladled out hot vegetable soup into ceramic bowls.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Serving Soup",
+        en: "The chef used a deep stainless steel ladle to fill every soup bowl evenly.",
+        ar: "اسْتَخْدَمَ الطَّاهِي مِغْرَفَةً سْتَانْلِسْ عَمِيقَةً لِمَلْءِ أَطْبَاقِ الحَسَاءِ بِالتَّسَاوِي.",
+      },
+      {
+        context: "Punch Bowl",
+        en: "Guests used the crystal ladle to serve fruit punch at the party.",
+        ar: "اسْتَخْدَمَ الضُّيُوفُ مِغْرَفَةَ الكِرِيسْتَالِ لِسَكْبِ عَصِيرِ الفَوَاكِهِ فِي الحَفْلَةِ.",
+      },
+      {
+        context: "Kitchen Organization",
+        en: "Hang your soup ladle on the wall hook near the cooking stove.",
+        ar: "عَلِّقْ مِغْرَفَةَ الشُّورْبَةِ عَلَى خَطَّافِ الجِدَارِ بِالقُرْبِ مِنْ مَوْقِدِ الطَّهْيِ.",
+      },
+    ],
+    exampleSentence: "The chef used a deep stainless steel ladle to fill every soup bowl evenly.",
+    exampleArabic:
+      "اسْتَخْدَمَ الطَّاهِي مِغْرَفَةً سْتَانْلِسْ عَمِيقَةً لِمَلْءِ أَطْبَاقِ الحَسَاءِ بِالتَّسَاوِي.",
+  },
+  lamp: {
+    id: "lamp",
+    arabic: "مِصْبَاح (أَبَاجُورَة)",
+    partOfSpeech: "noun",
+    phonetic: "læmp",
+    pronunciationTip: "Short 'a' vowel as in 'map' or 'cat', ending in crisp 'mp'.",
+    collocations: [
+      "table lamp",
+      "bedside lamp",
+      "desk lamp",
+      "turn on the lamp",
+      "turn off the lamp",
+      "dim the lamp",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "turn on",
+        meaning: "activate lighting",
+        arabic: "يُشْعِلُ / يُضِيءُ",
+        example: "Turn on the lamp so you don't strain your eyes in the dark.",
+      },
+      {
+        phrase: "turn off",
+        meaning: "switch off lighting",
+        arabic: "يُطْفِئُ",
+        example: "Remember to turn off the bedside lamp before you fall asleep.",
+      },
+      {
+        phrase: "switch on",
+        meaning: "press the switch to activate",
+        arabic: "يَضْغَطُ زِرَّ التَّشْغِيل",
+        example: "She switched on the desk lamp to start working.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Night Reading",
+        en: "He turned on the bedside lamp to read a few pages before sleeping.",
+        ar: "أَشْعَلَ أَبَاجُورَةَ السَّرِيرِ لِيَقْرَأَ بِضْعَ صَفَحَاتٍ قَبْلَ أَنْ يَنَامَ.",
+      },
+      {
+        context: "Ambiance",
+        en: "The ceramic table lamp casts a warm, soothing glow across the room.",
+        ar: "يَنْشُرُ مِصْبَاحُ الطَّاوِلَةِ الخَزَفِيُّ تَوَهُّجاً دَافِئاً وَمُرِيحاً فِي الغُرْفَةِ.",
+      },
+      {
+        context: "Energy Saving",
+        en: "Always turn off the lamp when leaving the study room.",
+        ar: "احْرِصْ دَائِماً عَلَى إِطْفَاءِ المِصْبَاحِ عِنْدَ مُغَادَرَةِ غُرْفَةِ الدِّرَاسَةِ.",
+      },
+    ],
+    exampleSentence: "He turned on the bedside lamp to read a few pages before sleeping.",
+    exampleArabic:
+      "أَشْعَلَ أَبَاجُورَةَ السَّرِيرِ لِيَقْرَأَ بِضْعَ صَفَحَاتٍ قَبْلَ أَنْ يَنَامَ.",
+  },
+  laptop: {
+    id: "laptop",
+    arabic: "حَاسُوبٌ مَحْمُول (لَابْتُوب)",
+    partOfSpeech: "noun",
+    phonetic: "ˈlæp.tɑːp",
+    pronunciationTip: "Compound word: 'LAP' (/læp/) + 'TOP' (/tɑːp/).",
+    collocations: [
+      "open the laptop",
+      "work on a laptop",
+      "laptop screen",
+      "close the laptop",
+      "portable laptop",
+      "powerful laptop",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "boot up",
+        meaning: "start a laptop operating system",
+        arabic: "يُقْلِعُ / يُشَغِّلُ الجِهَاز",
+        example: "Wait a few seconds for the laptop to boot up.",
+      },
+      {
+        phrase: "shut down",
+        meaning: "turn off a laptop completely",
+        arabic: "يُغْلِقُ الحَاسُوب",
+        example: "Remember to shut down your laptop before putting it in your bag.",
+      },
+      {
+        phrase: "log into",
+        meaning: "enter credentials to access computer",
+        arabic: "يُسَجِّلُ الدُّخُول",
+        example: "She logged into her laptop to join the morning video meeting.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Remote Work",
+        en: "She opened her laptop at the desk to review the project report.",
+        ar: "فَتَحَتْ حَاسُوبَهَا المَحْمُولَ عَلَى المَكْتَبِ لِمُرَاجَعَةِ تَقْرِيرِ المَشْرُوعِ.",
+      },
+      {
+        context: "Mobility",
+        en: "A lightweight laptop allows students to study easily anywhere on campus.",
+        ar: "يُتِيحُ الحَاسُوبُ المَحْمُولُ الخَفِيفُ لِلْطُّلاَّبِ الدِّرَاسَةَ بِسُهُولَةٍ فِي أَيِّ مَكَانٍ.",
+      },
+      {
+        context: "Maintenance",
+        en: "Close your laptop lid gently and keep liquids away from the keyboard.",
+        ar: "أَغْلِقْ غِطَاءَ حَاسُوبِكَ المَحْمُولِ بِرِفْقٍ وَأَبْعِدِ السَّوَائِلَ عَنْ لَوْحَةِ المَفَاتِيحِ.",
+      },
+    ],
+    exampleSentence: "She opened her laptop at the desk to review the project report.",
+    exampleArabic:
+      "فَتَحَتْ حَاسُوبَهَا المَحْمُولَ عَلَى المَكْتَبِ لِمُرَاجَعَةِ تَقْرِيرِ المَشْرُوعِ.",
+  },
+  "light-bulb": {
+    id: "light-bulb",
+    arabic: "مِصْبَاحٌ كَهْرَبَائِيّ (لَمْبَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈlaɪt ˌbʌlb",
+    pronunciationTip: "Compound noun: 'LIGHT' (/laɪt/) + 'BULB' (/bʌlb/).",
+    collocations: [
+      "LED light bulb",
+      "change the light bulb",
+      "energy-saving light bulb",
+      "burnt-out light bulb",
+      "screw in a light bulb",
+      "warm light bulb",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "screw in",
+        meaning: "install a new light bulb by turning",
+        arabic: "يَرْبِطُ / يُرَكِّبُ اللَّمْبَة",
+        example: "Screw in a warm white LED bulb into the desk lamp.",
+      },
+      {
+        phrase: "burn out",
+        meaning: "stop functioning after long use",
+        arabic: "تَحْتَرِقُ اللَّمْبَة",
+        example: "The old hallway light bulb burned out after two years of use.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Home Maintenance",
+        en: "He unscrewed the burnt-out incandescent bulb and installed an energy-efficient LED light bulb.",
+        ar: "فَكَّ اللَّمْبَةَ القَدِيمَةَ التَّالِفَةَ وَرَكَّبَ مِصْبَاحَ LED مُوَفِّراً لِلطَّاقَةِ.",
+      },
+      {
+        context: "Color Temperature",
+        en: "Warm white light bulbs create a cozy, welcoming atmosphere in living spaces.",
+        ar: "تَخْلُقُ المَصَابِيحُ ذَاتُ الضَّوْءِ الأَبْيَضِ الدَّافِئِ أَجْوَاءً مَنْزِلِيَّةً مُرِيحَةً وَجَذَّابَةً.",
+      },
+      {
+        context: "Safety",
+        en: "Always make sure the lamp is unplugged and cool before touching the light bulb.",
+        ar: "تَأَكَّدْ دَائِماً مِنْ فَصْلِ المِصْبَاحِ وَبُرُودَتِهِ قَبْلَ لَمْسِ اللَّمْبَةِ الكَهْرَبَائِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "He unscrewed the burnt-out incandescent bulb and installed an energy-efficient LED light bulb.",
+    exampleArabic:
+      "فَكَّ اللَّمْبَةَ القَدِيمَةَ التَّالِفَةَ وَرَكَّبَ مِصْبَاحَ LED مُوَفِّراً لِلطَّاقَةِ.",
+  },
+  "light-switch": {
+    id: "light-switch",
+    arabic: "مِفْتَاحُ الإِضَاءَة (زِرُّ النُّور)",
+    partOfSpeech: "noun",
+    phonetic: "ˈlaɪt ˌswɪtʃ",
+    pronunciationTip:
+      "Compound noun: Primary stress on 'LIGHT', secondary stress on 'SWITCH'. Crisp 'ch' ending.",
+    collocations: [
+      "flip the light switch",
+      "turn on the light switch",
+      "wall light switch",
+      "dimmer switch",
+      "flick the switch",
+      "locate the light switch",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "turn on",
+        meaning: "flip the switch to produce light",
+        arabic: "يُشْعِلُ النُّور",
+        example: "Flip the switch to turn on the room lights.",
+      },
+      {
+        phrase: "turn off",
+        meaning: "flip the switch to darken the room",
+        arabic: "يُطْفِئُ النُّور",
+        example: "Don't forget to turn off the lights before leaving.",
+      },
+      {
+        phrase: "switch off",
+        meaning: "deactivate the electrical switch",
+        arabic: "يَفْصِلُ المِفْتَاح",
+        example: "He switched off the hallway light from the wall panel.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Entering a Room",
+        en: "She reached out in the dark and flipped the light switch beside the door.",
+        ar: "مَدَّتْ يَدَهَا فِي الظَّلامِ وَضَغَطَتْ مِفْتَاحَ الإِضَاءَةِ بِجِوَارِ البَابِ.",
+      },
+      {
+        context: "Energy Conservation",
+        en: "Turn off the light switch whenever you leave an empty room.",
+        ar: "أَطْفِئْ زِرَّ النُّورِ دَائِماً عِنْدَمَا تُغَادِرُ غُرْفَةً فَارِغَةً.",
+      },
+      {
+        context: "Modern Home",
+        en: "The smart light switch connects to Wi-Fi so you can control it with your phone.",
+        ar: "يَتَّصِلُ مِفْتَاحُ الإِضَاءَةِ الذَّكِيُّ بِالشَّبَكَةِ لِلتَّحَكُّمِ فِيهِ عَبْرَ هَاتِفِكَ.",
+      },
+    ],
+    exampleSentence: "She reached out in the dark and flipped the light switch beside the door.",
+    exampleArabic:
+      "مَدَّتْ يَدَهَا فِي الظَّلامِ وَضَغَطَتْ مِفْتَاحَ الإِضَاءَةِ بِجِوَارِ البَابِ.",
+  },
+  magazine: {
+    id: "magazine",
+    arabic: "مَجَلَّة",
+    partOfSpeech: "noun",
+    phonetic: "ˌmæɡ.əˈziːn",
+    pronunciationTip: "Primary stress on the final syllable 'ZINE' (/ˌmæɡ.əˈziːn/).",
+    collocations: [
+      "read a magazine",
+      "glossy magazine",
+      "monthly magazine",
+      "flip through a magazine",
+      "magazine cover",
+      "fashion magazine",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "flip through",
+        meaning: "turn pages quickly",
+        arabic: "يُقَلِّبُ صَفَحَاتِ المَجَلَّة",
+        example: "She flipped through the interior design magazine for decoration ideas.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Leisure Reading",
+        en: "She flipped through a glossy architecture magazine while sipping her morning cappuccino.",
+        ar: "تَصَفَّحَتْ مَجَلَّةَ عِمَارَةٍ أَنِيقَةً وَهِيَ تَرْشُفُ الكَابُوتْشِينُو الصَّبَاحِيَّ.",
+      },
+      {
+        context: "Subscription",
+        en: "He subscribes to a monthly science magazine delivered directly to his door.",
+        ar: "يَشْتَرِكُ فِي مَجَلَّةٍ عِلْمِيَّةٍ شَهْرِيَّةٍ تَصِلُهُ مُبَاشَرَةً إِلَى بَابِ مَنْزِلِهِ.",
+      },
+      {
+        context: "Waiting Room",
+        en: "A selection of travel and lifestyle magazines rests on the waiting room table.",
+        ar: "تَسْتَقِرُّ تَشْكِيلَةٌ مِنْ مَجَلاَّتِ السَّفَرِ وَأَسْلُوبِ الحَيَاةِ عَلَى طَاوِلَةِ الاِنْتِظَارِ.",
+      },
+    ],
+    exampleSentence:
+      "She flipped through a glossy architecture magazine while sipping her morning cappuccino.",
+    exampleArabic:
+      "تَصَفَّحَتْ مَجَلَّةَ عِمَارَةٍ أَنِيقَةً وَهِيَ تَرْشُفُ الكَابُوتْشِينُو الصَّبَاحِيَّ.",
+  },
+  "magazine-rack": {
+    id: "magazine-rack",
+    arabic: "حَامِلُ مَجَلَّات",
+    partOfSpeech: "noun",
+    phonetic: "ˌmæɡ.əˈziːn ˌræk",
+    pronunciationTip: "Stress on 'ZINE' in magazine (/ˌmæɡ.əˈziːn/) + 'RACK' (/ræk/).",
+    collocations: [
+      "wooden magazine rack",
+      "leather magazine rack",
+      "magazines in the rack",
+      "bedside magazine rack",
+      "freestanding magazine rack",
+      "modern magazine rack",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "flip through",
+        meaning: "browse magazines from the rack",
+        arabic: "يُقَلِّبُ المَجَلاَّت",
+        example: "He selected a design magazine from the rack to flip through.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Living Room Corner",
+        en: "A stylish brass and leather magazine rack keeps reading materials organized by the sofa.",
+        ar: "يُحَافِظُ حَامِلُ المَجَلاَّتِ النُّحَاسِيُّ الجِلْدِيُّ عَلَى تَرْتِيبِ الكُتُبِ بِجِوَارِ الأَرِيكَةِ.",
+      },
+      {
+        context: "Waiting Area",
+        en: "Current issues of news and architecture periodicals are neatly stored in the magazine rack.",
+        ar: "تُحْفَظُ الأَعْدَادُ الجَدِيدَةُ مِنْ مَجَلاَّتِ الأَخْبَارِ وَالعِمَارَةِ فِي حَامِلِ المَجَلاَّتِ.",
+      },
+      {
+        context: "Tidiness",
+        en: "Keep newspapers and magazines off the coffee table by returning them to the rack.",
+        ar: "حَافِظْ عَلَى نَظَافَةِ الطَّاوِلَةِ بِإِعَادَةِ الجَرَائِدِ إِلَى حَامِلِ المَجَلاَّتِ.",
+      },
+    ],
+    exampleSentence:
+      "A stylish brass and leather magazine rack keeps reading materials organized by the sofa.",
+    exampleArabic:
+      "يُحَافِظُ حَامِلُ المَجَلاَّتِ النُّحَاسِيُّ الجِلْدِيُّ عَلَى تَرْتِيبِ الكُتُبِ بِجِوَارِ الأَرِيكَةِ.",
+  },
+  mattress: {
+    id: "mattress",
+    arabic: "مَرْتَبَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈmæt.rəs",
+    pronunciationTip: "First syllable has the short 'a' sound as in 'cat'.",
+    collocations: [
+      "firm mattress",
+      "memory foam mattress",
+      "comfortable mattress",
+      "spring mattress",
+      "flip the mattress",
+      "lie on the mattress",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "lie down on",
+        meaning: "recline on a mattress",
+        arabic: "يَسْتَلْقِي عَلَى المَرْتَبَة",
+        example: "He lay down on the new mattress to test its firmness.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sleep Quality",
+        en: "A supportive mattress is essential for getting a good night of sleep.",
+        ar: "المَرْتَبَةُ المُرِيحَةُ وَالدَّاعِمَةُ ضَرُورِيَّةٌ لِلْحُصُولِ عَلَى نَوْمٍ هَانِئٍ.",
+      },
+      {
+        context: "Care",
+        en: "Manufacturers recommend rotating your mattress every six months.",
+        ar: "يُوصِي المُصَنِّعُونَ بِتَدْوِيرِ المَرْتَبَةِ كُلَّ سِتَّةِ أَشْهُرٍ.",
+      },
+      {
+        context: "Shopping",
+        en: "They tried several mattresses at the store before picking a firm one.",
+        ar: "جَرَّبُوا عِدَّةَ مَرَاتِبَ فِي المَتْجَرِ قَبْلَ اخْتِيَارِ مَرْتَبَةٍ مَتِينَةٍ.",
+      },
+    ],
+    exampleSentence: "A supportive mattress is essential for getting a good night of sleep.",
+    exampleArabic:
+      "المَرْتَبَةُ المُرِيحَةُ وَالدَّاعِمَةُ ضَرُورِيَّةٌ لِلْحُصُولِ عَلَى نَوْمٍ هَانِئٍ.",
+  },
+  "measuring-cup": {
+    id: "measuring-cup",
+    arabic: "كُوبُ المِعْيَار (كُوبُ قِيَاس)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmɛʒ.ər.ɪŋ ˌkʌp",
+    pronunciationTip: "Compound noun: 'MEASURING' (/ˈmɛʒ.ər.ɪŋ/) + 'CUP' (/kʌp/).",
+    collocations: [
+      "glass measuring cup",
+      "liquid measuring cup",
+      "fill the measuring cup",
+      "measuring cup lines",
+      "pyrex measuring cup",
+      "dry measuring cup",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "measure out",
+        meaning: "gauge the exact volume of an ingredient",
+        arabic: "يَقِيسُ الكَمِّيَّة",
+        example: "Measure out two cups of whole milk for the pancake batter.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Baking Precision",
+        en: "She measured out exactly two cups of all-purpose flour using a clear glass measuring cup.",
+        ar: "قَاسَتْ كُوبَيْنِ تَمَاماً مِنَ الطَّحِينِ بِاسْتِخْدَامِ كُوبِ القِيَاسِ الزُّجَاجِيِّ الشَّفَّافِ.",
+      },
+      {
+        context: "Liquid Ingredients",
+        en: "Check liquid measurements at eye level on the markings of the measuring cup.",
+        ar: "تَحَقَّقْ مِنْ قِيَاسِ السَّوَائِلِ عِنْدَ مُسْتَوَى العَيْنِ عَلَى تَدْرِيجِ كُوبِ القِيَاسِ.",
+      },
+      {
+        context: "Microwave Use",
+        en: "A heatproof glass measuring cup is ideal for melting butter in the microwave.",
+        ar: "كُوبُ المِعْيَارِ الزُّجَاجِيُّ المُقَاوِمُ لِلْحَرَارَةِ مِثَالِيٌّ لِإِذَابَةِ الزُّبْدَةِ فِي المَايكْرُووِيفِ.",
+      },
+    ],
+    exampleSentence:
+      "She measured out exactly two cups of all-purpose flour using a clear glass measuring cup.",
+    exampleArabic:
+      "قَاسَتْ كُوبَيْنِ تَمَاماً مِنَ الطَّحِينِ بِاسْتِخْدَامِ كُوبِ القِيَاسِ الزُّجَاجِيِّ الشَّفَّافِ.",
+  },
+  "measuring-spoon": {
+    id: "measuring-spoon",
+    arabic: "مِلْعَقَةُ قِيَاس (مِلْعَقَةٌ مِعْيَارِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmɛʒ.ər.ɪŋ ˌspuːn",
+    pronunciationTip: "Compound noun: 'MEASURING' + 'SPOON'.",
+    collocations: [
+      "set of measuring spoons",
+      "tablespoon measuring spoon",
+      "teaspoon measuring spoon",
+      "stainless steel measuring spoon",
+      "level measuring spoon",
+      "measure with a spoon",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "level off",
+        meaning: "smooth flat the top of a dry measuring spoon",
+        arabic: "يُسَوِّي السَّطْح",
+        example: "Level off the baking powder with the back of a knife.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Baking Accuracy",
+        en: "Use a precise measuring spoon to add one teaspoon of baking powder to the dough.",
+        ar: "اسْتَخْدِمْ مِلْعَقَةَ قِيَاسٍ دَقِيقَةً لِإِضَافَةِ مِلْعَقَةِ شَايٍ مِنْ خَمِيرَةِ الحَلْوَيَاتِ.",
+      },
+      {
+        context: "Spices",
+        en: "Measure out half a teaspoon of ground cinnamon and ground nutmeg.",
+        ar: "قِسْ نِصْفَ مِلْعَقَةِ شَايٍ مِنْ القِرْفَةِ المَطْحُونَةِ وَجَوْزَةِ الطِّيبِ.",
+      },
+      {
+        context: "Kitchen Sets",
+        en: "A nested ring set of stainless steel measuring spoons keeps all sizes together.",
+        ar: "تُحَافِظُ حَلْقَةُ مَلاعِقِ القِيَاسِ المَعْدَنِيَّةِ عَلَى اجْتِمَاعِ كُلِّ الأَحْجَامِ مَعاً.",
+      },
+    ],
+    exampleSentence:
+      "Use a precise measuring spoon to add one teaspoon of baking powder to the dough.",
+    exampleArabic:
+      "اسْتَخْدِمْ مِلْعَقَةَ قِيَاسٍ دَقِيقَةً لِإِضَافَةِ مِلْعَقَةِ شَايٍ مِنْ خَمِيرَةِ الحَلْوَيَاتِ.",
+  },
+  microwave: {
+    id: "microwave",
+    arabic: "مَايكْرُووِيف (فُرْنُ المَوْجَات)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmaɪ.krə.weɪv",
+    pronunciationTip: "Three syllables: 'MI-cro-wave'. Primary stress on 'MI'.",
+    collocations: [
+      "microwave oven",
+      "heat in the microwave",
+      "microwave safe",
+      "reheat food in the microwave",
+      "microwave timer",
+      "microwave door",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "heat up",
+        meaning: "warm food quickly in a microwave",
+        arabic: "يُسَخِّنُ فِي المَايكْرُووِيف",
+        example: "Heat up the leftover soup for two minutes in the microwave.",
+      },
+      {
+        phrase: "warm over",
+        meaning: "reheat food",
+        arabic: "يُعِيدُ التَّسْخِين",
+        example: "She warmed over the coffee in the microwave.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Reheating",
+        en: "He heated up leftover rice in the microwave for a quick lunch.",
+        ar: "سَخَّنَ الأَرُزَّ المُتَبَقِّيَ فِي المَايكْرُووِيفِ لِتَنَاوُلِ وَجْبَةِ غَدَاءٍ سَرِيعَةٍ.",
+      },
+      {
+        context: "Safety",
+        en: "Never place metallic containers or aluminum foil inside a microwave.",
+        ar: "لا تَضَعْ أَبَداً أَوْعِيَةً مَعْدَنِيَّةً أَوْ وَرَقَ أَلُومِنْيُوم دَاخِلَ المَايكْرُووِيفِ.",
+      },
+      {
+        context: "Convenience",
+        en: "Defrost frozen meat quickly using the microwave's defrost setting.",
+        ar: "أَذِبْ تَجْمِيدَ اللُّحُومِ سَرِيعاً بِاسْتِخْدَامِ خَاصِّيَّةِ إِذَابَةِ التَّجْمِيدِ فِي المَايكْرُووِيفِ.",
+      },
+    ],
+    exampleSentence: "He heated up leftover rice in the microwave for a quick lunch.",
+    exampleArabic:
+      "سَخَّنَ الأَرُزَّ المُتَبَقِّيَ فِي المَايكْرُووِيفِ لِتَنَاوُلِ وَجْبَةِ غَدَاءٍ سَرِيعَةٍ.",
+  },
+  milk: {
+    id: "milk",
+    arabic: "حَلِيب (لَبَن)",
+    partOfSpeech: "noun",
+    phonetic: "mɪlk",
+    pronunciationTip: "Short 'i' sound /ɪ/ as in 'silk' or 'hill'.",
+    collocations: [
+      "glass of milk",
+      "cold milk",
+      "whole milk",
+      "skim milk",
+      "carton of milk",
+      "pour milk",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pour in",
+        meaning: "add milk to tea, coffee, or recipe",
+        arabic: "يَصُبُّ الحَلِيب",
+        example: "Pour in a splash of warm milk into your morning coffee.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Breakfast Routine",
+        en: "The children drank a tall glass of cold whole milk with their morning pancakes.",
+        ar: "شَرِبَ الأَطْفَالُ كَأْساً كَبِيراً مِنْ الحَلِيبِ الكَامِلِ الدَّسَمِ مَعَ البَانْ كِيك.",
+      },
+      {
+        context: "Baking",
+        en: "Warm one cup of whole milk gently before dissolving the active dry yeast.",
+        ar: "دَفِّئْ كُوباً مِنَ الحَلِيبِ الكَامِلِ بِرِفْقٍ قَبْلَ إِذَابَةِ خَمِيرَةِ الخَبْزِ فِيهِ.",
+      },
+      {
+        context: "Coffee Making",
+        en: "Steam whole milk until smooth microfoam forms for a creamy latte.",
+        ar: "سَخِّنِ الحَلِيبَ بِالبُخَارِ لِتَكْوِينِ رَغْوَةٍ نَاعِمَةٍ لِإِعْدَادِ قَهْوَةِ اللّاتِيه الكَرِيمِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "The children drank a tall glass of cold whole milk with their morning pancakes.",
+    exampleArabic:
+      "شَرِبَ الأَطْفَالُ كَأْساً كَبِيراً مِنْ الحَلِيبِ الكَامِلِ الدَّسَمِ مَعَ البَانْ كِيك.",
+  },
+  mirror: {
+    id: "mirror",
+    arabic: "مِرْآة",
+    partOfSpeech: "noun",
+    phonetic: "ˈmɪr.ər",
+    pronunciationTip: "Pronounced with two short syllables: 'MIR' + 'ror'.",
+    collocations: [
+      "look in the mirror",
+      "wall mirror",
+      "full-length mirror",
+      "mirror reflection",
+      "check the mirror",
+      "framed mirror",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "look at",
+        meaning: "direct your eyes toward your reflection",
+        arabic: "يَنْظُرُ إِلَى",
+        example: "He looked at himself in the mirror to fix his tie.",
+      },
+      {
+        phrase: "wipe down",
+        meaning: "clean the glass surface",
+        arabic: "يَمْسَحُ السَّطْحَ",
+        example: "She wiped down the bathroom mirror until it was spotless.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Morning Routine",
+        en: "He looked in the mirror while brushing his hair before work.",
+        ar: "نَظَرَ فِي المِرْآةِ أَثْنَاءَ تَمْشِيطِ شَعْرِهِ قَبْلَ الذَّهَابِ لِلْعَمَلِ.",
+      },
+      {
+        context: "Room Features",
+        en: "A full-length mirror is mounted on the inside of the wardrobe door.",
+        ar: "تُوجَدُ مِرْآةٌ طُولِيَّةٌ مُثَبَّتَةٌ عَلَى الجَانِبِ الدَّاخِلِيِّ لِبَابِ الخِزَانَةِ.",
+      },
+      {
+        context: "Interior Design",
+        en: "The large round mirror makes the small room feel much brighter.",
+        ar: "تَجْعَلُ المِرْآةُ الدَّائِرِيَّةُ الكَبِيرَةُ الغُرْفَةَ الصَّغِيرَةَ تَبْدُو أَكْثَرَ إِشْرَاقاً.",
+      },
+    ],
+    exampleSentence: "He looked in the mirror while brushing his hair before work.",
+    exampleArabic:
+      "نَظَرَ فِي المِرْآةِ أَثْنَاءَ تَمْشِيطِ شَعْرِهِ قَبْلَ الذَّهَابِ لِلْعَمَلِ.",
+  },
+  "mixing-bowl": {
+    id: "mixing-bowl",
+    arabic: "وِعَاءُ الخَلْط (طَاسَةُ عَجْن)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmɪk.sɪŋ ˌboʊl",
+    pronunciationTip: "Compound noun: 'MIXING' (/ˈmɪk.sɪŋ/) + 'BOWL' (/boʊl/).",
+    collocations: [
+      "large mixing bowl",
+      "stainless steel mixing bowl",
+      "glass mixing bowl",
+      "whisk in a mixing bowl",
+      "ceramic mixing bowl",
+      "batter in the mixing bowl",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "mix up",
+        meaning: "combine ingredients thoroughly in a bowl",
+        arabic: "يَخْلِطُ جَيِّداً",
+        example: "Mix up the flour, sugar, and cocoa in the large mixing bowl.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cake Batter",
+        en: "She combined flour, sugar, and baking cocoa inside the large stainless steel mixing bowl.",
+        ar: "خَلَطَتِ الطَّحِينَ وَالسُّكَّرَ وَالكَاكَاوَ دَاخِلَ وِعَاءِ الخَلْطِ السْتَانْلِس الكَبِيرِ.",
+      },
+      {
+        context: "Salad Tossing",
+        en: "A deep mixing bowl prevents lettuce leaves and dressing from spilling over.",
+        ar: "يَمْنَعُ وِعَاءُ الخَلْطِ العَمِيقُ تَنَاثُرَ أَوْرَاقِ الخَسِّ وَالتَّتْبِيلَةِ إِلَى الخَارِجِ.",
+      },
+      {
+        context: "Bread Making",
+        en: "Knead the yeast dough inside the oiled ceramic mixing bowl and cover it to rise.",
+        ar: "اعْجِنِ العَجِينَةَ دَاخِلَ وِعَاءِ الخَلْطِ المَدْهُونِ بِالزَّيْتِ وَغَطِّهَا لِتَخْتَمِرَ.",
+      },
+    ],
+    exampleSentence:
+      "She combined flour, sugar, and baking cocoa inside the large stainless steel mixing bowl.",
+    exampleArabic:
+      "خَلَطَتِ الطَّحِينَ وَالسُّكَّرَ وَالكَاكَاوَ دَاخِلَ وِعَاءِ الخَلْطِ السْتَانْلِس الكَبِيرِ.",
+  },
+  mud: {
+    id: "mud",
+    arabic: "طِين (وَحْل)",
+    partOfSpeech: "noun",
+    phonetic: "mʌd",
+    pronunciationTip: "Short 'u' sound /ʌ/ as in 'bud' or 'cup'.",
+    collocations: [
+      "thick mud",
+      "stuck in the mud",
+      "mud puddle",
+      "caked with mud",
+      "walk through mud",
+      "boots covered in mud",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "get stuck in",
+        meaning: "be trapped in deep mud",
+        arabic: "يَعْلَقُ فِي الوَحْل",
+        example: "The tractor tires got stuck in the wet spring mud.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Wet Weather",
+        en: "Heavy spring rains turned the farmyard dirt pathways into thick, slippery brown mud.",
+        ar: "حَوَّلَتْ أَمْطَارُ الرَّبِيعِ الغَزِيرَةُ مَسَارَاتِ المَزْرَعَةِ إِلَى طِينٍ بُنِّيٍّ لَزِجٍ وَزَلِقٍ.",
+      },
+      {
+        context: "Pigs Cooling",
+        en: "Pigs wallow in the cool wet mud to regulate their body temperature during hot summer days.",
+        ar: "تَتَمَرَّغُ الخَنَازِيرُ فِي الوَحْلِ البَارِدِ لِتَعْدِيلِ حَرَارَةِ أَجْسَامِهَا فِي أَيَّامِ الصَّيْفِ.",
+      },
+      {
+        context: "Boots",
+        en: "Rinse the caked mud off your rubber boots with the garden hose before entering the house.",
+        ar: "اغْسِلِ الطِّينَ الجَافَّ عَنْ حِذَائِكَ المَطَّاطِيِّ بِخُرْطُومِ المِيَاهِ قَبْلَ دُخُولِ المَنْزِلِ.",
+      },
+    ],
+    exampleSentence:
+      "Heavy spring rains turned the farmyard dirt pathways into thick, slippery brown mud.",
+    exampleArabic:
+      "حَوَّلَتْ أَمْطَارُ الرَّبِيعِ الغَزِيرَةُ مَسَارَاتِ المَزْرَعَةِ إِلَى طِينٍ بُنِّيٍّ لَزِجٍ وَزَلِقٍ.",
+  },
+  mug: {
+    id: "mug",
+    arabic: "كُوبٌ كَبِير (مَجّ)",
+    partOfSpeech: "noun",
+    phonetic: "mʌɡ",
+    pronunciationTip: "Short 'u' vowel /ʌ/ as in 'hug', 'plug', or 'cup'.",
+    collocations: [
+      "coffee mug",
+      "ceramic mug",
+      "steaming mug",
+      "hot chocolate in a mug",
+      "large mug",
+      "travel mug",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sip from",
+        meaning: "drink slowly from a mug",
+        arabic: "يَرْشُفُ مِنَ الكُوب",
+        example: "She sat by the window and sipped from her hot coffee mug.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Morning Coffee",
+        en: "He held the warm ceramic mug with both hands to savor the freshly brewed coffee.",
+        ar: "أَمْسَكَ الكُوبَ الخَزَفِيَّ الدَّافِئَ بِكِلْتَا يَدَيْهِ لِيَسْتَمْتِعَ بِالقَهْوَةِ الطَّازَجَةِ.",
+      },
+      {
+        context: "Winter Drink",
+        en: "The kids enjoyed hot chocolate topped with marshmallows in festive holiday mugs.",
+        ar: "اسْتَمْتَعَ الأَطْفَالُ بِالشُّوكُولاتَةِ السَّاخِنَةِ مَعَ المَارْشْمِيلُو فِي أَكْوَابِ الحَفَلاتِ.",
+      },
+      {
+        context: "Commute",
+        en: "Pour your morning tea into an insulated travel mug to keep it piping hot.",
+        ar: "اصْبُبْ شَايَكَ الصَّبَاحِيَّ فِي مَجٍّ حَرَارِيٍّ لِلتَّنَقُّلِ لِيَبْقَى سَاخِناً جِدّاً.",
+      },
+    ],
+    exampleSentence:
+      "He held the warm ceramic mug with both hands to savor the freshly brewed coffee.",
+    exampleArabic:
+      "أَمْسَكَ الكُوبَ الخَزَفِيَّ الدَّافِئَ بِكِلْتَا يَدَيْهِ لِيَسْتَمْتِعَ بِالقَهْوَةِ الطَّازَجَةِ.",
+  },
+  newspaper: {
+    id: "newspaper",
+    arabic: "جَرِيدَة (صَحِيفَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈnuːzˌpeɪ.pər",
+    pronunciationTip: "Compound noun: 'NEWS' (/nuːz/) + 'PAPER' (/ˈpeɪ.pər/).",
+    collocations: [
+      "daily newspaper",
+      "read the newspaper",
+      "morning newspaper",
+      "newspaper headline",
+      "fold the newspaper",
+      "Sunday newspaper",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "read through",
+        meaning: "read newspaper articles",
+        arabic: "يَقْرَأُ الجَرِيدَة",
+        example: "He read through the business section of the daily newspaper.",
+      },
+      {
+        phrase: "glance over",
+        meaning: "skim headlines quickly",
+        arabic: "يُلْقِي نَظْرَةً عَلَى العَنَاوِين",
+        example: "She glanced over the morning newspaper headlines before commuting.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Morning Routine",
+        en: "He sits at the breakfast table every morning reading the daily newspaper.",
+        ar: "يَجْلِسُ عِنْدَ طَاوِلَةِ الإِفْطَارِ كُلَّ صَبَاحٍ يَقْرَأُ الجَرِيدَةَ اليَوْمِيَّةَ.",
+      },
+      {
+        context: "Current Affairs",
+        en: "The front-page headline of the Sunday newspaper reported major economic developments.",
+        ar: "عَرَضَ المَانْشِيتُ الرَّئِيسِيُّ لِصَحِيفَةِ الأَحَدِ تَطَوُّرَاتٍ اقْتِصَادِيَّةً بَارِزَةً.",
+      },
+      {
+        context: "Delivery",
+        en: "The morning newspaper arrives fresh on the front doorstep before six o'clock.",
+        ar: "تَصِلُ جَرِيدَةُ الصَّبَاحِ طَازَجَةً إِلَى عَتَبَةِ البَابِ قَبْلَ السَّاعَةِ السَّادِسَةِ.",
+      },
+    ],
+    exampleSentence: "He sits at the breakfast table every morning reading the daily newspaper.",
+    exampleArabic:
+      "يَجْلِسُ عِنْدَ طَاوِلَةِ الإِفْطَارِ كُلَّ صَبَاحٍ يَقْرَأُ الجَرِيدَةَ اليَوْمِيَّةَ.",
+  },
+  nightstand: {
+    id: "nightstand",
+    arabic: "طَاوِلَةُ السَّرِير (كُمودِينَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈnaɪt.stænd",
+    pronunciationTip: "Compound noun with primary stress on the first syllable 'NIGHT'.",
+    collocations: [
+      "on the nightstand",
+      "beside the bed",
+      "wooden nightstand",
+      "reach for the nightstand",
+      "bedside nightstand",
+      "clear the nightstand",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put down",
+        meaning: "place an object on a surface",
+        arabic: "يَضَعُ شَيْئاً عَلَى سَطْح",
+        example: "He put down his book on the nightstand.",
+      },
+      {
+        phrase: "reach for",
+        meaning: "extend your hand to take something",
+        arabic: "يَمُدُّ يَدَهُ لِيَتَنَاوَلَ شَيْئاً",
+        example: "She reached for her glasses on the nightstand.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bedtime Habit",
+        en: "I always keep a bottle of fresh water on my nightstand.",
+        ar: "أَحْتَفِظُ دَائِماً بِزُجَاجَةِ مَاءٍ عِذْبٍ عَلَى طَاوِلَةِ السَّرِيرِ.",
+      },
+      {
+        context: "Room Layout",
+        en: "The small wooden nightstand matches the bedroom wardrobe.",
+        ar: "طَاوِلَةُ السَّرِيرِ الخَشَبِيَّةُ الصَّغِيرَةُ تَتَنَاسَقُ مَعَ خِزَانَةِ غُرْفَةِ النَّوْمِ.",
+      },
+      {
+        context: "Morning Routine",
+        en: "Her alarm clock buzzed loudly from the top of the nightstand.",
+        ar: "رَنَّ مُنَبِّهُهَا بِصَوْتٍ عَالٍ مِنْ أَعْلَى طَاوِلَةِ السَّرِيرِ.",
+      },
+    ],
+    exampleSentence: "I always keep a bottle of fresh water on my nightstand.",
+    exampleArabic: "أَحْتَفِظُ دَائِماً بِزُجَاجَةِ مَاءٍ عِذْبٍ عَلَى طَاوِلَةِ السَّرِيرِ.",
+  },
+  ottoman: {
+    id: "ottoman",
+    arabic: "مَقْعَدُ قَدَمَيْن (بَفّ / عُثْمَانِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɑː.tə.mən",
+    pronunciationTip: "Three syllables: 'OT-to-man' (/ˈɑː.tə.mən/).",
+    collocations: [
+      "leather ottoman",
+      "storage ottoman",
+      "rest feet on the ottoman",
+      "fabric ottoman",
+      "plush ottoman",
+      "round ottoman",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put up",
+        meaning: "rest feet on an ottoman",
+        arabic: "يَرْفَعُ قَدَمَيْهِ عَلَى البَفّ",
+        example: "He sat back and put his feet up on the soft leather ottoman.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Relaxation",
+        en: "He rested his feet comfortably on the tufted leather ottoman while reading the newspaper.",
+        ar: "أَرَاحَ قَدَمَيْهِ عَلَى مَقْعَدِ القَدَمَيْنِ الجِلْدِيِّ أَثْنَاءَ قِرَاءَةِ الجَرِيدَةِ.",
+      },
+      {
+        context: "Extra Seating",
+        en: "The large round ottoman doubles as extra seating when entertaining guests.",
+        ar: "يُسْتَخْدَمُ البَفُّ الدَّائِرِيُّ الكَبِيرُ كَمَقْعَدٍ إِضَافِيٍّ عِنْدَ اسْتِقْبَالِ الضُّيُوفِ.",
+      },
+      {
+        context: "Hidden Storage",
+        en: "The hinged storage ottoman provides plenty of space to tuck away spare blankets.",
+        ar: "يُوَفِّرُ مَقْعَدُ التَّخْزِينِ ذُو الغِطَاءِ المَفْصِلِيِّ مَسَاحَةً وَاسِعَةً لِحِفْظِ البَطَّانِيَّاتِ.",
+      },
+    ],
+    exampleSentence:
+      "He rested his feet comfortably on the tufted leather ottoman while reading the newspaper.",
+    exampleArabic:
+      "أَرَاحَ قَدَمَيْهِ عَلَى مَقْعَدِ القَدَمَيْنِ الجِلْدِيِّ أَثْنَاءَ قِرَاءَةِ الجَرِيدَةِ.",
+  },
+  outlet: {
+    id: "outlet",
+    arabic: "مِقْبَسُ الكَهْرَبَاء (فِيشَة / بَرِيزَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈaʊt.lɛt",
+    pronunciationTip: "Primary stress on 'OUT' (/ˈaʊt/).",
+    collocations: [
+      "wall outlet",
+      "plug into the outlet",
+      "electrical outlet",
+      "power outlet",
+      "unplug from the outlet",
+      "safety outlet",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "plug in",
+        meaning: "insert a plug into an electrical outlet",
+        arabic: "يَصِلُ بِالكَهْرَبَاء",
+        example: "Plug in your phone charger to the wall outlet.",
+      },
+      {
+        phrase: "unplug from",
+        meaning: "disconnect a device from an outlet",
+        arabic: "يَفْصِلُ عَنِ المِقْبَس",
+        example: "Unplug the iron from the outlet as soon as you finish.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Charging Devices",
+        en: "He plugged his laptop charger into the electrical wall outlet.",
+        ar: "وَصَلَ شَاحِنَ حَاسُوبِهِ المَحْمُولِ بِمِقْبَسِ الكَهْرَبَاءِ الجِدَارِيِّ.",
+      },
+      {
+        context: "Child Safety",
+        en: "Install plastic safety covers over all exposed low outlets.",
+        ar: "قُمْ بِتَرْكِيبِ أَغْطِيَةِ أَمَانٍ بَلاسْتِيكِيَّةٍ عَلَى مَقَابِسِ الكَهْرَبَاءِ المُنْخَفِضَةِ.",
+      },
+      {
+        context: "Convenience",
+        en: "The hotel room has convenient USB outlets right next to the bed.",
+        ar: "تَحْتَوِي غُرْفَةُ الفُنْدُقِ عَلَى مَقَابِسِ شَحْنٍ عَصْرِيَّةٍ بِجَانِبِ السَّرِيرِ مُبَاشَرَةً.",
+      },
+    ],
+    exampleSentence: "He plugged his laptop charger into the electrical wall outlet.",
+    exampleArabic: "وَصَلَ شَاحِنَ حَاسُوبِهِ المَحْمُولِ بِمِقْبَسِ الكَهْرَبَاءِ الجِدَارِيِّ.",
+  },
+  oven: {
+    id: "oven",
+    arabic: "فُرْن",
+    partOfSpeech: "noun",
+    phonetic: "ˈʌv.ən",
+    pronunciationTip: "Short 'u' sound /ʌ/ as in 'love' or 'up', not /oʊ/.",
+    collocations: [
+      "preheat the oven",
+      "bake in the oven",
+      "oven mitts",
+      "roast in the oven",
+      "oven temperature",
+      "gas oven",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put in",
+        meaning: "place a baking tray into the oven",
+        arabic: "يُدْخِلُ فِي الفُرْن",
+        example: "Put the cake batter in the preheated oven.",
+      },
+      {
+        phrase: "take out",
+        meaning: "remove hot food from the oven",
+        arabic: "يُخْرِجُ مِنَ الفُرْن",
+        example: "Use thick oven mitts to take out the hot roasting pan.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Baking",
+        en: "Preheat the oven to 180 degrees before baking the apple pie.",
+        ar: "سَخِّنِ الفُرْنَ مُسْبَقاً إِلَى 180 دَرَجَةٍ قَبْلَ خَبْزِ فَطِيرَةِ التُّفَّاحِ.",
+      },
+      {
+        context: "Roasting",
+        en: "The roasted chicken turned golden brown and crispy in the oven.",
+        ar: "تَحَوَّلَ الدَّجَاجُ المَشْوِيُّ إِلَى اللَّوْنِ الذَّهَبِيِّ المُقَرْمَشِ فِي الفُرْنِ.",
+      },
+      {
+        context: "Safety",
+        en: "Always wear heat-resistant mitts when reaching inside a hot oven.",
+        ar: "ارْتَدِ دَائِماً قُفَّازَاتٍ مُقَاوِمَةً لِلْحَرَارَةِ عِنْدَ التَّعَامُلِ مَعَ الفُرْنِ السَّاخِنِ.",
+      },
+    ],
+    exampleSentence: "Preheat the oven to 180 degrees before baking the apple pie.",
+    exampleArabic:
+      "سَخِّنِ الفُرْنَ مُسْبَقاً إِلَى 180 دَرَجَةٍ قَبْلَ خَبْزِ فَطِيرَةِ التُّفَّاحِ.",
+  },
+  "oven-mitt": {
+    id: "oven-mitt",
+    arabic: "قُفَّازُ الفُرْن (مَاسِكُ حَرَارَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈʌv.ən ˌmɪt",
+    pronunciationTip: "Compound noun: 'OVEN' (/ˈʌv.ən/) + 'MITT' (/mɪt/).",
+    collocations: [
+      "wear oven mitts",
+      "heat-resistant oven mitts",
+      "silicone oven mitts",
+      "pair of oven mitts",
+      "quilted oven mitts",
+      "hot pan with oven mitts",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put on",
+        meaning: "wear protective mitts",
+        arabic: "يَلْبَسُ قُفَّازَاتِ الفُرْن",
+        example: "Put on thick oven mitts before handling the hot cast-iron skillet.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Kitchen Safety",
+        en: "Always wear insulated silicone oven mitts when removing hot trays from the oven.",
+        ar: "ارْتَدِ دَائِماً قُفَّازَاتِ فُرْنٍ سِيلِيكُونِيَّةً عَازِلَةً عِنْدَ إِخْرَاجِ الصَّوَانِي السَّاخِنَةِ.",
+      },
+      {
+        context: "Handling Hot Pots",
+        en: "She gripped the hot casserole handles securely with padded quilted oven mitts.",
+        ar: "أَمْسَكَتْ بِمَقَابِضِ الطَّاجِنِ السَّاخِنِ بِإِحْكَامٍ بِاسْتِخْدَامِ قُفَّازَاتِ الفُرْنِ المُبَطَّنَةِ.",
+      },
+      {
+        context: "Storage",
+        en: "Hang the colorful oven mitts on hooks beside the stove for quick access.",
+        ar: "عَلِّقْ قُفَّازَاتِ الفُرْنِ المُلَوَّنَةَ عَلَى خَطَّافَاتٍ بِجَانِبِ المَوْقِدِ لِسُرْعَةِ تَنَاوُلِهَا.",
+      },
+    ],
+    exampleSentence:
+      "Always wear insulated silicone oven mitts when removing hot trays from the oven.",
+    exampleArabic:
+      "ارْتَدِ دَائِماً قُفَّازَاتِ فُرْنٍ سِيلِيكُونِيَّةً عَازِلَةً عِنْدَ إِخْرَاجِ الصَّوَانِي السَّاخِنَةِ.",
+  },
+  painting: {
+    id: "painting",
+    arabic: "لَوْحَةٌ فَنِّيَّة (رَسْمَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpeɪn.tɪŋ",
+    pronunciationTip: "Two syllables: 'PAINT-ing' (/ˈpeɪn.tɪŋ/).",
+    collocations: [
+      "oil painting",
+      "framed painting",
+      "hang a painting",
+      "landscape painting",
+      "abstract painting",
+      "original painting",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hang up",
+        meaning: "mount an art piece on a wall",
+        arabic: "يُعَلِّقُ اللَّوْحَة",
+        example: "They hung up the original oil painting above the living room sofa.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Art in the Home",
+        en: "A vibrant abstract oil painting in shades of blue and gold brightens the white wall.",
+        ar: "تُضْفِي لَوْحَةٌ زَيْتِيَّةٌ تَجْرِيدِيَّةٌ بَدِيعَةٌ بِدَرَجَاتِ الأَزْرَقِ وَالذَّهَبِ حَيَوِيَّةً عَلَى الجِدَارِ.",
+      },
+      {
+        context: "Gallery Exhibition",
+        en: "The art gallery displayed famous landscape paintings by local Impressionist artists.",
+        ar: "عَرَضَتْ صَالَةُ الفَنِّ لَوْحَاتٍ طَبِيعِيَّةً شَهِيرَةً لِفَنَّانِينَ تَأَثُّرِيِّينَ مَحَلِّيِّينَ.",
+      },
+      {
+        context: "Lighting Art",
+        en: "Install a dedicated brass picture light above the painting to highlight its brushstrokes.",
+        ar: "ثَبِّتْ إِضَاءَةً نُحَاسِيَّةً مُخَصَّصَةً فَوْقَ اللَّوْحَةِ لِإِبْرَازِ تَفَاصِيلِ رَسْمِهَا.",
+      },
+    ],
+    exampleSentence:
+      "A vibrant abstract oil painting in shades of blue and gold brightens the white wall.",
+    exampleArabic:
+      "تُضْفِي لَوْحَةٌ زَيْتِيَّةٌ تَجْرِيدِيَّةٌ بَدِيعَةٌ بِدَرَجَاتِ الأَزْرَقِ وَالذَّهَبِ حَيَوِيَّةً عَلَى الجِدَارِ.",
+  },
+  pajamas: {
+    id: "pajamas",
+    arabic: "بِي جَامَة / مَلابِسُ النَّوْم",
+    partOfSpeech: "noun",
+    phonetic: "pəˈdʒɑː.məz",
+    pronunciationTip: "Stress is on the middle syllable 'JA' (/ˈdʒɑː/).",
+    collocations: [
+      "put on pajamas",
+      "wear pajamas",
+      "cotton pajamas",
+      "silk pajamas",
+      "comfortable pajamas",
+      "change into pajamas",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put on",
+        meaning: "dress in pajamas",
+        arabic: "يَرْتَدِي مَلابِسَ النَّوْم",
+        example: "He put on his warm flannel pajamas before climbing into bed.",
+      },
+      {
+        phrase: "change into",
+        meaning: "switch into pajamas",
+        arabic: "يُبَدِّلُ إِلَى مَلابِسِ النَّوْم",
+        example: "After a hot shower, she changed into clean cotton pajamas.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Nighttime Routine",
+        en: "After taking a warm bath, the children changed into their cozy pajamas.",
+        ar: "بَعْدَ أَخْذِ حَمَّامٍ دَافِئٍ، ارْتَدَى الأَطْفَالُ بِي جَامَاتِهِمُ المُرِيحَةَ.",
+      },
+      {
+        context: "Comfort",
+        en: "Soft breathable cotton pajamas help you sleep comfortably through the night.",
+        ar: "تُسَاعِدُ مَلابِسُ النَّوْمِ القُطْنِيَّةُ النَّاعِمَةُ عَلَى النَّوْمِ بِرَاحَةٍ طَوَالَ اللَّيْلِ.",
+      },
+      {
+        context: "Weekend Morning",
+        en: "On lazy Sunday mornings, they enjoy breakfast while still wearing pajamas.",
+        ar: "فِي صَبَاحِ الأَحَدِ الهَادِئِ، يَسْتَمْتِعُونَ بِالإِفْطَارِ وَهُمْ لا يَزَالُونَ بِمَلابِسِ النَّوْمِ.",
+      },
+    ],
+    exampleSentence: "After taking a warm bath, the children changed into their cozy pajamas.",
+    exampleArabic:
+      "بَعْدَ أَخْذِ حَمَّامٍ دَافِئٍ، ارْتَدَى الأَطْفَالُ بِي جَامَاتِهِمُ المُرِيحَةَ.",
+  },
+  pan: {
+    id: "pan",
+    arabic: "مِقْلَاة / طَاسَة",
+    partOfSpeech: "noun",
+    phonetic: "pæn",
+    pronunciationTip: "Short 'a' vowel /æ/ as in 'man' or 'can'.",
+    collocations: [
+      "frying pan",
+      "sauté pan",
+      "hot pan",
+      "non-stick pan",
+      "heat oil in the pan",
+      "cast iron pan",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sizzle up",
+        meaning: "fry loudly in a hot pan",
+        arabic: "يَفِحُّ فِي المِقْلاة",
+        example: "The garlic and onions sizzled up in the hot olive oil.",
+      },
+      {
+        phrase: "toss in",
+        meaning: "add ingredients into a pan",
+        arabic: "يُضِيفُ فِي المِقْلاة",
+        example: "Toss in the sliced bell peppers to sauté.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sautéing",
+        en: "Heat olive oil in a wide pan before adding garlic and diced mushrooms.",
+        ar: "سَخِّنْ زَيْتَ الزَّيْتُونِ فِي مِقْلاةٍ وَاسِعَةٍ قَبْلَ إِضَافَةِ الثَّوْمِ وَالفِطْرِ.",
+      },
+      {
+        context: "Breakfast",
+        en: "She cooked two fluffy fried eggs in the non-stick pan.",
+        ar: "طَبَخَتْ بَيْضَتَيْنِ مَقْلِيَّتَيْنِ فِي المِقْلاةِ غَيْرِ اللّاصِقَةِ.",
+      },
+      {
+        context: "Pan Care",
+        en: "Season your cast-iron pan with vegetable oil after washing and drying.",
+        ar: "امْسَحْ مِقْلاتَكَ الزَّهْرِيَّةَ بِزَيْتٍ نَبَاتِيٍّ بَعْدَ غَسْلِهَا وَتَجْفِيفِهَا.",
+      },
+    ],
+    exampleSentence: "Heat olive oil in a wide pan before adding garlic and diced mushrooms.",
+    exampleArabic:
+      "سَخِّنْ زَيْتَ الزَّيْتُونِ فِي مِقْلاةٍ وَاسِعَةٍ قَبْلَ إِضَافَةِ الثَّوْمِ وَالفِطْرِ.",
+  },
+  "paper-towel": {
+    id: "paper-towel",
+    arabic: "مَنَادِيلُ مَطْبَخ (مَحَارِمُ وَرَقِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpeɪ.pər ˌtaʊ.əl",
+    pronunciationTip: "Compound noun: 'PAPER' (/ˈpeɪ.pər/) + 'TOWEL' (/ˈtaʊ.əl/).",
+    collocations: [
+      "roll of paper towels",
+      "tear a paper towel",
+      "absorbent paper towel",
+      "wipe with a paper towel",
+      "paper towel holder",
+      "clean spills with paper towels",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wipe up",
+        meaning: "clean liquid spills quickly",
+        arabic: "يَمْسَحُ السَّوَائِلَ بِالمَحَارِم",
+        example: "Wipe up the spilled milk with an absorbent paper towel.",
+      },
+      {
+        phrase: "tear off",
+        meaning: "detach a sheet from the roll",
+        arabic: "يَفْصِلُ مَنْدِيلاً وَرَقِيّاً",
+        example: "Tear off two sheets of paper towel to drain the fried bacon.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Spill Cleanup",
+        en: "She tore off two sheets of absorbent paper towels to clean up the spilled juice.",
+        ar: "فَصَلَتْ مَنْدِيلَيْنِ وَرَقِيَّيْنِ مَاصَّيْنِ لِمَسْحِ العَصِيرِ المَسْكُوبِ عَنِ الطَّاوِلَةِ.",
+      },
+      {
+        context: "Draining Oil",
+        en: "Place freshly fried onion rings on a paper towel to absorb excess cooking oil.",
+        ar: "ضَعْ حَلَقَاتِ البَصَلِ المَقْلِيَّةَ عَلَى مِنْدِيلٍ وَرَقِيٍّ لاِمْتِصَاصِ الزَّيْتِ الزَّائِدِ.",
+      },
+      {
+        context: "Kitchen Organization",
+        en: "The wall-mounted holder keeps the paper towel roll clean and easy to reach.",
+        ar: "يُحَافِظُ الحَامِلُ الجِدَارِيُّ عَلَى بَكْرَةِ مَنَادِيلِ المَطْبَخِ نَظِيفَةً وَسَهْلَةَ المَنَالِ.",
+      },
+    ],
+    exampleSentence:
+      "She tore off two sheets of absorbent paper towels to clean up the spilled juice.",
+    exampleArabic:
+      "فَصَلَتْ مَنْدِيلَيْنِ وَرَقِيَّيْنِ مَاصَّيْنِ لِمَسْحِ العَصِيرِ المَسْكُوبِ عَنِ الطَّاوِلَةِ.",
+  },
+  pasta: {
+    id: "pasta",
+    arabic: "مَعْكَرُونَة (بَاسْتَا)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpɑː.stə",
+    pronunciationTip:
+      "First syllable has the broad 'ah' sound /ɑː/ in American English, short 'a' /æ/ in British English.",
+    collocations: [
+      "cook pasta",
+      "fresh pasta",
+      "pasta sauce",
+      "drain the pasta",
+      "bowl of pasta",
+      "al dente pasta",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "boil up",
+        meaning: "cook pasta in salted boiling water",
+        arabic: "يَسْلُقُ المَعْكَرُونَة",
+        example: "Boil up the penne pasta for exactly nine minutes.",
+      },
+      {
+        phrase: "toss with",
+        meaning: "mix pasta thoroughly with sauce",
+        arabic: "يُقَلِّبُ مَعَ الصَّلْصَة",
+        example: "Toss the hot fettuccine with creamy Alfredo sauce.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Italian Cooking",
+        en: "Cook the spaghetti in well-salted boiling water until it is perfectly al dente.",
+        ar: "اطْبُخِ الإِسْبَاغِيتِي فِي مَاءٍ مُمَلَّحٍ يَغْلِي حَتَّى تَنْضَجَ بِقِوَامٍ مُتَمَاسِكٍ.",
+      },
+      {
+        context: "Dinner Service",
+        en: "She tossed the penne pasta with homemade basil pesto and toasted pine nuts.",
+        ar: "قَلَّبَتْ مَعْكَرُونَةَ البِنِّي مَعَ صَلْصَةِ الرَّيْحَانِ المَنْزِلِيَّةِ وَالصَّنَوْبَرِ المُحَمَّصِ.",
+      },
+      {
+        context: "Comfort Food",
+        en: "Baked pasta with ground meat and bubbling melted mozzarella is a family favorite.",
+        ar: "تُعَدُّ طَاجِنُ المَعْكَرُونَةِ بِاللَّحْمِ المَفْرُومِ وَالمُوزَارِيلّا المُذَابَةِ وَجْبَةَ العَائِلَةِ المُفَضَّلَةَ.",
+      },
+    ],
+    exampleSentence:
+      "Cook the spaghetti in well-salted boiling water until it is perfectly al dente.",
+    exampleArabic:
+      "اطْبُخِ الإِسْبَاغِيتِي فِي مَاءٍ مُمَلَّحٍ يَغْلِي حَتَّى تَنْضَجَ بِقِوَامٍ مُتَمَاسِكٍ.",
+  },
+  peeler: {
+    id: "peeler",
+    arabic: "قَشَّارَةُ خُضْرَاوَات",
+    partOfSpeech: "noun",
+    phonetic: "ˈpiː.lər",
+    pronunciationTip: "Long 'ee' vowel /iː/ as in 'peel'.",
+    collocations: [
+      "potato peeler",
+      "vegetable peeler",
+      "sharp peeler",
+      "swivel peeler",
+      "Y-peeler",
+      "peel with a peeler",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "peel off",
+        meaning: "remove the skin of a fruit or vegetable",
+        arabic: "يُقَشِّرُ القِشْرَة",
+        example: "Peel off the skin of the apples before slicing them for the pie.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Prepping Potatoes",
+        en: "She peeled five large russet potatoes quickly using a sharp swivel peeler.",
+        ar: "قَشَّرَتْ خَمْسَ حَبَّاتِ بَطَاطِسَ كَبِيرَةٍ سَرِيعاً بِاسْتِخْدَامِ قَشَّارَةٍ حَادَّةٍ.",
+      },
+      {
+        context: "Carrot Ribbons",
+        en: "Use a vegetable peeler to shave thin, elegant ribbons of carrot for salads.",
+        ar: "اسْتَخْدِمْ قَشَّارَةَ الخُضَارِ لِعَمَلِ شَرَائِطَ جَزَرٍ رَفِيعَةٍ وَأَنِيقَةٍ لِلسَّلَطَاتِ.",
+      },
+      {
+        context: "Citrus Zest",
+        en: "Remove wide strips of lemon peel with a peeler to infuse the syrup.",
+        ar: "انْزِعْ شَرَائِطَ عَرِيضَةً مِنْ قِشْرِ اللَّيْمُونِ بِالقَشَّارَةِ لِتَنْكِيهِ القَطْرِ.",
+      },
+    ],
+    exampleSentence: "She peeled five large russet potatoes quickly using a sharp swivel peeler.",
+    exampleArabic:
+      "قَشَّرَتْ خَمْسَ حَبَّاتِ بَطَاطِسَ كَبِيرَةٍ سَرِيعاً بِاسْتِخْدَامِ قَشَّارَةٍ حَادَّةٍ.",
+  },
+  pepper: {
+    id: "pepper",
+    arabic: "فُلْفُل (فُلْفُلٌ أَسْوَد)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpɛp.ər",
+    pronunciationTip: "Short 'e' vowel /ɛ/ as in 'pen', followed by soft /ər/.",
+    collocations: [
+      "black pepper",
+      "ground pepper",
+      "freshly cracked pepper",
+      "pepper mill",
+      "season with pepper",
+      "bell pepper",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "grind on",
+        meaning: "crush whole peppercorns over food",
+        arabic: "يَطْحَنُ الفُلْفُلَ فَوْقَ الطَّعَام",
+        example: "Grind fresh black pepper over the creamy Caesar salad.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Seasoning",
+        en: "Season the chicken breast evenly with fine sea salt and freshly cracked black pepper.",
+        ar: "تَبِّلْ صَدْرَ الدَّجَاجِ بِالتَّسَاوِي بِمِلْحِ البَحْرِ النَّاعِمِ وَالفُلْفُلِ الأَسْوَدِ المَطْحُونِ طَازَجاً.",
+      },
+      {
+        context: "Tabletop Mill",
+        en: "The tall wooden pepper mill grinds whole peppercorns with ease.",
+        ar: "تَطْحَنُ مَطْحَنَةُ الفُلْفُلِ الخَشَبِيَّةُ الطَّوِيلَةُ حَبَّاتِ الفُلْفُلِ الكَامِلَةِ بِسُهُولَةٍ.",
+      },
+      {
+        context: "Salad Ingredient",
+        en: "Dice crisp red and yellow bell peppers to add sweetness and crunch to the salad.",
+        ar: "قَطِّعِ الفُلْفُلَ الرُّومِيَّ الأَحْمَرَ وَالأَصْفَرَ لِإِضْفَاءِ حَلاوَةٍ وَقَرْمَشَةٍ عَلَى السَّلَطَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Season the chicken breast evenly with fine sea salt and freshly cracked black pepper.",
+    exampleArabic:
+      "تَبِّلْ صَدْرَ الدَّجَاجِ بِالتَّسَاوِي بِمِلْحِ البَحْرِ النَّاعِمِ وَالفُلْفُلِ الأَسْوَدِ المَطْحُونِ طَازَجاً.",
+  },
+  phone: {
+    id: "phone",
+    arabic: "هَاتِف (مُوبَايِل)",
+    partOfSpeech: "noun",
+    phonetic: "foʊn",
+    pronunciationTip: "Begins with 'f' sound, followed by long 'o' /oʊ/ as in 'bone'.",
+    collocations: [
+      "smartphone",
+      "answer the phone",
+      "check your phone",
+      "charge your phone",
+      "phone screen",
+      "phone call",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pick up",
+        meaning: "answer an incoming call",
+        arabic: "يَرُدُّ عَلَى الهَاتِف",
+        example: "Please pick up the phone when your manager calls.",
+      },
+      {
+        phrase: "hang up",
+        meaning: "end a telephone conversation",
+        arabic: "يُغْلِقُ الخَطّ",
+        example: "He said goodbye and hung up the phone.",
+      },
+      {
+        phrase: "call back",
+        meaning: "return a missed telephone call",
+        arabic: "يُعَاوِدُ الاِتِّصَال",
+        example: "I will call you back as soon as my meeting finishes.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Communication",
+        en: "She checked her phone for new messages as soon as she woke up.",
+        ar: "تَفَقَّدَتْ هَاتِفَهَا لِمَعْرِفَةِ الرَّسَائِلِ الجَدِيدَةِ بِمُجَرَّدِ اسْتِيقَاظِهَا.",
+      },
+      {
+        context: "Battery Care",
+        en: "Plug your phone into the charger overnight so the battery is full tomorrow.",
+        ar: "صِلْ هَاتِفَكَ بِالشَّاحِنِ طَوَالَ اللَّيْلِ لِتَكُونَ البَطَّارِيَّةُ مُمْتَلِئَةً غَداً.",
+      },
+      {
+        context: "Courtesy",
+        en: "Please silence your phone during the conference presentation.",
+        ar: "يُرْجَى كَتْمُ صَوْتِ هَاتِفِكَ أَثْنَاءَ عَرْضِ المُؤْتَمَرِ.",
+      },
+    ],
+    exampleSentence: "She checked her phone for new messages as soon as she woke up.",
+    exampleArabic:
+      "تَفَقَّدَتْ هَاتِفَهَا لِمَعْرِفَةِ الرَّسَائِلِ الجَدِيدَةِ بِمُجَرَّدِ اسْتِيقَاظِهَا.",
+  },
+  "photo-album": {
+    id: "photo-album",
+    arabic: "أَلْبُومُ صُوَر",
+    partOfSpeech: "noun",
+    phonetic: "ˈfoʊ.toʊ ˌæl.bəm",
+    pronunciationTip: "Compound word: 'PHOTO' (/ˈfoʊ.toʊ/) + 'ALBUM' (/ˈæl.bəm/).",
+    collocations: [
+      "family photo album",
+      "look through a photo album",
+      "wedding photo album",
+      "flip through the album",
+      "keepsake photo album",
+      "old photo album",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "look back on",
+        meaning: "remember past memories through photos",
+        arabic: "يَسْتَعِيدُ الذِّكْرَيَات",
+        example: "They looked back on their wedding day while viewing the photo album.",
+      },
+      {
+        phrase: "flip through",
+        meaning: "turn pages quickly",
+        arabic: "يُقَلِّبُ الصَّفَحَات",
+        example: "She flipped through the photo album to show her childhood pictures.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Family Memories",
+        en: "Grandmother pulled out the leather photo album to share old family stories.",
+        ar: "أَخْرَجَتِ الجَدَّةُ أَلْبُومَ الصُّوَرِ الجِلْدِيَّ لِتُشَارِكَ قِصَصَ العَائِلَةِ القَدِيمَةَ.",
+      },
+      {
+        context: "Preserving Moments",
+        en: "They created a beautiful photo album documenting their European holiday.",
+        ar: "صَنَعُوا أَلْبُومَ صُوَرٍ رَائِعاً يُوَثِّقُ عُطْلَتَهُمُ الأُورُوبِّيَّةَ.",
+      },
+      {
+        context: "Sentimental Keepsake",
+        en: "Keep precious printed photographs safely inside an acid-free photo album.",
+        ar: "احْفَظِ الصُّوَرَ المَطْبُوعَةَ الثَّمِينَةَ بِأَمَانٍ دَاخِلَ أَلْبُومِ صُوَرٍ مُخَصَّصٍ.",
+      },
+    ],
+    exampleSentence: "Grandmother pulled out the leather photo album to share old family stories.",
+    exampleArabic:
+      "أَخْرَجَتِ الجَدَّةُ أَلْبُومَ الصُّوَرِ الجِلْدِيَّ لِتُشَارِكَ قِصَصَ العَائِلَةِ القَدِيمَةَ.",
+  },
+  "photo-frame": {
+    id: "photo-frame",
+    arabic: "إِطَارُ صُورَة (بِرْوَازُ صُوَر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfoʊ.toʊ ˌfreɪm",
+    pronunciationTip: "Compound noun: 'PHOTO' (/ˈfoʊ.toʊ/) + 'FRAME' (/freɪm/).",
+    collocations: [
+      "silver photo frame",
+      "wooden photo frame",
+      "display in a photo frame",
+      "desk photo frame",
+      "hanging photo frame",
+      "digital photo frame",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put in",
+        meaning: "insert a photograph into a frame",
+        arabic: "يَضَعُ الصُّورَةَ فِي البِرْوَاز",
+        example: "She put her favorite holiday portrait in a silver photo frame.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sentimental Decor",
+        en: "A collection of silver photo frames showcasing family milestones lines the fireplace mantel.",
+        ar: "تَصْطَفُّ مَجْمُوعَةٌ مِنْ إِطَارَاتِ الصُّوَرِ الفِضِّيَّةِ التَّذْكَارِيَّةِ عَلَى رَفِّ المِدْفَأَةِ.",
+      },
+      {
+        context: "Modern Tech",
+        en: "A Wi-Fi digital photo frame displays rotating slideshows of recent vacation pictures.",
+        ar: "يَعْرِضُ إِطَارُ الصُّوَرِ الرَّقْمِيُّ شَرَائِحَ مُتَغَيِّرَةً لِصُوَرِ العُطْلَةِ الحَدِيثَةِ عَبْرَ الشَّبَكَةِ.",
+      },
+      {
+        context: "Gift Giving",
+        en: "He gifted his parents a custom engraved wooden photo frame for their wedding anniversary.",
+        ar: "أَهْدَى وَالِدَيْهِ إِطَارَ صُورَةٍ خَشَبِيّاً مَحْفُوراً خِصِّيصاً بِمُنَاسَبَةِ ذِكْرَى زَوَاجِهِمَا.",
+      },
+    ],
+    exampleSentence:
+      "A collection of silver photo frames showcasing family milestones lines the fireplace mantel.",
+    exampleArabic:
+      "تَصْطَفُّ مَجْمُوعَةٌ مِنْ إِطَارَاتِ الصُّوَرِ الفِضِّيَّةِ التَّذْكَارِيَّةِ عَلَى رَفِّ المِدْفَأَةِ.",
+  },
+  "picture-frame": {
+    id: "picture-frame",
+    arabic: "إِطَارُ الصُّورَة (بِرْوَاز)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpɪk.tʃər ˌfreɪm",
+    pronunciationTip: "Clear 'ch' sound in 'picture' (/ˈpɪk.tʃər/), stress on first word.",
+    collocations: [
+      "wooden picture frame",
+      "family picture frame",
+      "hang a picture frame",
+      "silver picture frame",
+      "photo frame on desk",
+      "glass picture frame",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hang up",
+        meaning: "mount a framed picture on a wall",
+        arabic: "يُعَلِّقُ الإِطَارَ عَلَى الجِدَار",
+        example: "They hung up the picture frame above the fireplace.",
+      },
+      {
+        phrase: "put in",
+        meaning: "insert a photograph into a frame",
+        arabic: "يَضَعُ الصُّورَةَ فِي البِرْوَاز",
+        example: "She put her graduation photo in a silver picture frame.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Family Memories",
+        en: "A silver picture frame holding a family portrait sits on the mantel.",
+        ar: "يَسْتَقِرُّ إِطَارُ صُورَةٍ فِضِّيٌّ يَحْمِلُ صُورَةً عَائِلِيَّةً عَلَى رَفِّ المِدْفَأَةِ.",
+      },
+      {
+        context: "Wall Decoration",
+        en: "She hung three matching black picture frames along the hallway wall.",
+        ar: "عَلَّقَتْ ثَلاثَةَ إِطَارَاتِ صُوَرٍ سَوْدَاءَ مُتَطَابِقَةٍ عَلَى جِدَارِ المَمَرِّ.",
+      },
+      {
+        context: "Gifting",
+        en: "He gave his grandmother a handcrafted wooden picture frame for her birthday.",
+        ar: "أَهْدَى جَدَّتَهُ إِطَارَ صُورَةٍ خَشَبِيّاً مَصْنُوعاً يَدَوِيّاً فِي عِيدِ مِيلادِهَا.",
+      },
+    ],
+    exampleSentence: "A silver picture frame holding a family portrait sits on the mantel.",
+    exampleArabic:
+      "يَسْتَقِرُّ إِطَارُ صُورَةٍ فِضِّيٌّ يَحْمِلُ صُورَةً عَائِلِيَّةً عَلَى رَفِّ المِدْفَأَةِ.",
+  },
+  pig: {
+    id: "pig",
+    arabic: "خِنْزِير",
+    partOfSpeech: "noun",
+    phonetic: "pɪɡ",
+    pronunciationTip: "Short 'i' vowel /ɪ/ as in 'big' or 'dig'.",
+    collocations: ["pig pen", "muddy pig", "feed the pigs", "piglet", "pig snout", "sow and pigs"],
+    phrasalVerbs: [
+      {
+        phrase: "pig out",
+        meaning: "(idiom) eat a large amount of food greedily",
+        arabic: "يَأْكُلُ بِشَرَاهَة",
+        example: "We pigged out on pizza and ice cream after the match.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Farm Life",
+        en: "The cheerful pig rolled happily in the cool mud to protect its skin from the sun.",
+        ar: "تَمَرَّغَ الخِنْزِيرُ فِي الطِّينِ البَارِدِ لِحِمَايَةِ جِلْدِهِ مِنْ حَرَارَةِ الشَّمْسِ.",
+      },
+      {
+        context: "Feeding Chores",
+        en: "The farmer poured a bucket of fresh grain and chopped vegetables into the pig pen.",
+        ar: "سَكَبَ المُزَارِعُ دَلْواً مِنَ الحُبُوبِ وَالخُضْرَاوَاتِ المَفْرُومَةِ فِي حَظِيرَةِ الخَنَازِيرِ.",
+      },
+      {
+        context: "Animal Behavior",
+        en: "Pigs are highly intelligent animals with a keen sense of curiosity and smell.",
+        ar: "تُعَدُّ الخَنَازِيرُ حَيَوَانَاتٍ ذَكِيَّةً جِدّاً وَتَمْتَلِكُ حَاسَّةَ شَمٍّ حَادَّةً.",
+      },
+    ],
+    exampleSentence:
+      "The cheerful pig rolled happily in the cool mud to protect its skin from the sun.",
+    exampleArabic:
+      "تَمَرَّغَ الخِنْزِيرُ فِي الطِّينِ البَارِدِ لِحِمَايَةِ جِلْدِهِ مِنْ حَرَارَةِ الشَّمْسِ.",
+  },
+  pillow: {
+    id: "pillow",
+    arabic: "وِسَادَة / مِخَدَّة",
+    partOfSpeech: "noun",
+    phonetic: "ˈpɪl.oʊ",
+    pronunciationTip: "Short 'i' sound followed by a soft 'low' (/oʊ/).",
+    collocations: [
+      "soft pillow",
+      "fluff the pillow",
+      "pillow fight",
+      "feather pillow",
+      "memory foam pillow",
+      "rest on a pillow",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "rest on",
+        meaning: "place one's head comfortably on a pillow",
+        arabic: "يَسْتَرِيحُ عَلَى",
+        example: "He rested his tired head on the soft feather pillow.",
+      },
+      {
+        phrase: "prop up",
+        meaning: "support with pillows",
+        arabic: "يَسْنِدُ بِالوِسَادَة",
+        example: "She propped herself up with two cushions to read in bed.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bedtime Comfort",
+        en: "He fluffed his pillow to get comfortable before falling asleep.",
+        ar: "نَفَشَ وِسَادَتَهُ لِيَشْعُرَ بِالرَّاحَةِ قَبْلَ أَنْ يَسْتَغْرِقَ فِي النَّوْمِ.",
+      },
+      {
+        context: "Sleep Health",
+        en: "An orthopedic memory foam pillow supports neck alignment.",
+        ar: "تُسَاعِدُ وِسَادَةُ الفُومِ الطِّبِّيَّةُ فِي دَعْمِ اسْتِقَامَةِ الرَّقَبَةِ.",
+      },
+      {
+        context: "Bed Dressing",
+        en: "Four decorative cushions and two sleeping pillows adorn the bed.",
+        ar: "تُزَيِّنُ السَّرِيرَ أَرْبَعُ وِسَادَاتِ زِينَةٍ وَوِسَادَتَا نَوْمٍ مَرِيحَتَانِ.",
+      },
+    ],
+    exampleSentence: "He fluffed his pillow to get comfortable before falling asleep.",
+    exampleArabic:
+      "نَفَشَ وِسَادَتَهُ لِيَشْعُرَ بِالرَّاحَةِ قَبْلَ أَنْ يَسْتَغْرِقَ فِي النَّوْمِ.",
+  },
+  pillowcase: {
+    id: "pillowcase",
+    arabic: "غِطَاءُ الوِسَادَة (كِيسُ المِخَدَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpɪl.oʊ.keɪs",
+    pronunciationTip: "Compound word: 'PILLOW' + 'CASE'.",
+    collocations: [
+      "cotton pillowcase",
+      "silk pillowcase",
+      "change the pillowcase",
+      "matching pillowcase",
+      "clean pillowcase",
+      "wash the pillowcase",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "slip on",
+        meaning: "put a pillowcase onto a pillow",
+        arabic: "يُلْبِسُ الغِطَاءَ لِلْوِسَادَة",
+        example: "She slipped a clean silk pillowcase onto her pillow.",
+      },
+      {
+        phrase: "pull off",
+        meaning: "remove the pillowcase",
+        arabic: "يَنْزِعُ كِيسَ الوِسَادَة",
+        example: "He pulled off the dirty pillowcase to wash it with the laundry.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Skincare & Sleep",
+        en: "Using a pure silk pillowcase is gentle on your hair and skin.",
+        ar: "اسْتِخْدَامُ كِيسِ وِسَادَةٍ حَرِيرِيٍّ نَقِيٍّ لَطِيفٌ جِدّاً عَلَى الشَّعْرِ وَالبَشَرَةِ.",
+      },
+      {
+        context: "Cleaning Routine",
+        en: "She washes her pillowcases every week in warm soapy water.",
+        ar: "تَغْسِلُ أَكْيَاسَ الوِسَادَاتِ أُسْبُوعِيّاً فِي مَاءٍ دَافِئٍ وَصَابُونٍ.",
+      },
+      {
+        context: "Bedding Set",
+        en: "The bed set includes a fitted sheet and two matching pillowcases.",
+        ar: "يَشْمَلُ طَقْمُ السَّرِيرِ شَرْشَفاً مُلائِمِاً وَغِطَاءَيْنِ مُتَطَابِقَيْنِ لِلْوِسَادَاتِ.",
+      },
+    ],
+    exampleSentence: "Using a pure silk pillowcase is gentle on your hair and skin.",
+    exampleArabic:
+      "اسْتِخْدَامُ كِيسِ وِسَادَةٍ حَرِيرِيٍّ نَقِيٍّ لَطِيفٌ جِدّاً عَلَى الشَّعْرِ وَالبَشَرَةِ.",
+  },
+  pitcher: {
+    id: "pitcher",
+    arabic: "إِبْرِيق (دَوْرَقُ مَاء / شَفْشَق)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpɪtʃ.ər",
+    pronunciationTip: "Short 'i' sound /ɪ/ followed by crisp 'ch' (/ˈpɪtʃ.ər/).",
+    collocations: [
+      "water pitcher",
+      "glass pitcher",
+      "pitcher of iced tea",
+      "pour from a pitcher",
+      "lemonade pitcher",
+      "fill the pitcher",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pour out",
+        meaning: "dispense drink from a pitcher",
+        arabic: "يَصُبُّ مِنَ الإِبْرِيق",
+        example: "He poured out cool lemonade from the pitcher into four glasses.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Summer Refreshment",
+        en: "She placed a glass pitcher filled with iced lemonade and mint leaves on the table.",
+        ar: "وَضَعَتْ دَوْرَقاً زُجَاجِيّاً مَمْلُوءاً بِاللَّيْمُونَادَةِ المُثَلَّجَةِ وَأَوْرَاقِ النَّعْنَاعِ عَلَى الطَّاوِلَةِ.",
+      },
+      {
+        context: "Dining Service",
+        en: "The waiter refilled all water glasses from a chilled stainless steel pitcher.",
+        ar: "أَعَادَ النَّادِلُ مَلْءَ كُؤُوسِ المَاءِ مِنْ دَوْرَقٍ سْتَانْلِس مُبَرَّدٍ.",
+      },
+      {
+        context: "Breakfast Table",
+        en: "A ceramic pitcher of freshly squeezed orange juice complements the morning brunch.",
+        ar: "يُتَمِّمُ إِبْرِيقُ عَصِيرِ البُرْتُقَالِ الطَّازَجِ الخَزَفِيُّ مَائِدَةَ الإِفْطَارِ الصَّبَاحِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "She placed a glass pitcher filled with iced lemonade and mint leaves on the table.",
+    exampleArabic:
+      "وَضَعَتْ دَوْرَقاً زُجَاجِيّاً مَمْلُوءاً بِاللَّيْمُونَادَةِ المُثَلَّجَةِ وَأَوْرَاقِ النَّعْنَاعِ عَلَى الطَّاوِلَةِ.",
+  },
+  pitchfork: {
+    id: "pitchfork",
+    arabic: "مِذْرَاة (مِذْرَاةُ قَشّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpɪtʃ.fɔːrk",
+    pronunciationTip: "Compound noun: 'PITCH' (/pɪtʃ/) + 'FORK' (/fɔːrk/).",
+    collocations: [
+      "steel pitchfork",
+      "lift hay with a pitchfork",
+      "three-prong pitchfork",
+      "pitchfork handle",
+      "toss with a pitchfork",
+      "barn pitchfork",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pitch up",
+        meaning: "toss hay or straw using a pitchfork",
+        arabic: "يَرْفَعُ القَشَّ بِالمِذْرَاة",
+        example: "Pitch up the dry straw into the animal bedding stalls.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Hay Handling",
+        en: "He used a long-handled steel pitchfork to toss fresh golden hay into the cattle mangers.",
+        ar: "اسْتَخْدَمَ مِذْرَاةً فُولاذِيَّةً طَوِيلَةَ المِقْبَضِ لِرَفْعِ القَشِّ الذَّهَبِيِّ لِمَعَالِفِ الأَبْقَارِ.",
+      },
+      {
+        context: "Barn Cleaning",
+        en: "The farmhand gathered loose straw across the barn floor with a four-prong pitchfork.",
+        ar: "جَمَعَ عَامِلُ المَزْرَعَةِ القَشَّ المُتَنَاثِرَ بِاسْتِخْدَامِ مِذْرَاةٍ رُبَاعِيَّةِ الأَسْنَانِ.",
+      },
+      {
+        context: "Tool Safety",
+        en: "Always stand pitchforks securely upright in tool racks when not in use.",
+        ar: "ثَبِّتِ المَذَارِيَ دَائِماً بِأَمَانٍ فِي حَوَامِلِ الأَدَوَاتِ عِنْدَ الاِنْتِهَاءِ مِنْهَا.",
+      },
+    ],
+    exampleSentence:
+      "He used a long-handled steel pitchfork to toss fresh golden hay into the cattle mangers.",
+    exampleArabic:
+      "اسْتَخْدَمَ مِذْرَاةً فُولاذِيَّةً طَوِيلَةَ المِقْبَضِ لِرَفْعِ القَشِّ الذَّهَبِيِّ لِمَعَالِفِ الأَبْقَارِ.",
+  },
+  placemat: {
+    id: "placemat",
+    arabic: "مَفْرَشُ طَبَق (مَفْرَشٌ فَرْدِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpleɪs.mæt",
+    pronunciationTip: "Compound noun: 'PLACE' (/pleɪs/) + 'MAT' (/mæt/).",
+    collocations: [
+      "woven placemat",
+      "wipe-clean placemat",
+      "set the placemat",
+      "bamboo placemat",
+      "fabric placemat",
+      "placemat and coaster",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "set out",
+        meaning: "arrange placemats at each table setting",
+        arabic: "يُرَتِّبُ مَفَارِشَ الأَطْبَاق",
+        example: "Set out four woven placemats for the dinner guests.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Table Setting",
+        en: "She set a round woven jute placemat under each dinner plate to protect the wood.",
+        ar: "وَضَعَتْ مَفْرَشاً فَرْدِيّاً دَائِرِيّاً مَصْنُوعاً مِنَ الخَيْشِ تَحْتَ كُلِّ طَبَقٍ لِحِمَايَةِ الخَشَبِ.",
+      },
+      {
+        context: "Easy Cleanup",
+        en: "Waterproof wipe-clean placemats are ideal for daily family meals with young children.",
+        ar: "تُعَدُّ مَفَارِشُ الأَطْبَاقِ المُقَاوِمَةُ لِلْمَاءِ وَسَهْلَةُ المَسْحِ مِثَالِيَّةً لِوَجَبَاتِ الأَطْفَالِ.",
+      },
+      {
+        context: "Decor Harmony",
+        en: "Neutral grey placemats contrast beautifully against the warm tones of the oak table.",
+        ar: "تَتَنَاغَمُ مَفَارِشُ الأَطْبَاقِ الرَّمَادِيَّةُ الهَادِئَةُ بِشَكْلٍ رَائِعٍ مَعَ خَشَبِ البَلُّوطِ الدَّافِئِ.",
+      },
+    ],
+    exampleSentence:
+      "She set a round woven jute placemat under each dinner plate to protect the wood.",
+    exampleArabic:
+      "وَضَعَتْ مَفْرَشاً فَرْدِيّاً دَائِرِيّاً مَصْنُوعاً مِنَ الخَيْشِ تَحْتَ كُلِّ طَبَقٍ لِحِمَايَةِ الخَشَبِ.",
+  },
+  plant: {
+    id: "plant",
+    arabic: "نَبْتَة مَنْزِلِيَّة (زَرْع)",
+    partOfSpeech: "noun",
+    phonetic: "plænt",
+    pronunciationTip:
+      "Short 'a' vowel in American English (/plænt/), broad 'ah' in British English (/plɑːnt/).",
+    collocations: [
+      "water the plant",
+      "potted plant",
+      "green indoor plant",
+      "windowsill plant",
+      "care for a plant",
+      "healthy plant",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "grow up",
+        meaning: "develop and increase in size",
+        arabic: "يَنْمُو وَيَكْبُر",
+        example: "The climbing plant grew up along the balcony railing.",
+      },
+      {
+        phrase: "look after",
+        meaning: "care for a houseplant",
+        arabic: "يَعْتَنِي بِـ",
+        example: "Can you look after my indoor plants while I am away on vacation?",
+      },
+    ],
+    sentences: [
+      {
+        context: "Plant Care",
+        en: "Remember to water the potted plant twice a week and keep it in sunlight.",
+        ar: "تَذَكَّرْ أَنْ تَرْوِيَ النَّبْتَةَ فِي الأَصِيصِ مَرَّتَيْنِ أُسْبُوعِيّاً مَعَ تَعْرِيضِهَا لِلشَّمْسِ.",
+      },
+      {
+        context: "Room Ambiance",
+        en: "A lush green plant on the desk makes the study space feel fresh and lively.",
+        ar: "تَجْعَلُ النَّبْتَةُ الخَضْرَاءُ النَّضِرَةُ عَلَى المَكْتَبِ مَكَانَ الدِّرَاسَةِ مُفْعَماً بِالحَيَوِيَّةِ.",
+      },
+      {
+        context: "Air Quality",
+        en: "Indoor plants help purify the air and enhance overall well-being.",
+        ar: "تُسَاعِدُ النَّبَاتَاتُ المَنْزِلِيَّةُ فِي تَنْقِيَةِ الهَوَاءِ وَتَحْسِينِ المِزَاجِ العَامِّ.",
+      },
+    ],
+    exampleSentence: "Remember to water the potted plant twice a week and keep it in sunlight.",
+    exampleArabic:
+      "تَذَكَّرْ أَنْ تَرْوِيَ النَّبْتَةَ فِي الأَصِيصِ مَرَّتَيْنِ أُسْبُوعِيّاً مَعَ تَعْرِيضِهَا لِلشَّمْسِ.",
+  },
+  "plastic-wrap": {
+    id: "plastic-wrap",
+    arabic: "نَايْلُون تَغْلِيف (بَلاسْتِيك غِذَائِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈplæs.tɪk ˌræp",
+    pronunciationTip: "Silent 'w' in 'wrap' (/ræp/), rhyming with 'cap' or 'tap'.",
+    collocations: [
+      "roll of plastic wrap",
+      "cover with plastic wrap",
+      "cling plastic wrap",
+      "seal with plastic wrap",
+      "stretch plastic wrap",
+      "food plastic wrap",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wrap up",
+        meaning: "cover food completely for storage",
+        arabic: "يُغَلِّفُ بِالنَّايْلُون",
+        example: "Wrap up the leftover lasagna tightly with plastic wrap.",
+      },
+      {
+        phrase: "seal up",
+        meaning: "make airtight with plastic wrap",
+        arabic: "يُحْكِمُ الإِغْلاق",
+        example: "Seal up the salad bowl to keep the greens crisp.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Food Freshness",
+        en: "Cover the cut watermelon with plastic wrap to keep it juicy in the fridge.",
+        ar: "غَطِّ البِطِّيخَ المُقَطَّعَ بِنَايْلُونِ التَّغْلِيفِ لِيَبْقَى طَازَجاً وَرَطْباً فِي الثَّلَّاجَةِ.",
+      },
+      {
+        context: "Dough Resting",
+        en: "Wrap the cookie dough ball in plastic wrap and chill it for thirty minutes.",
+        ar: "غَلِّفْ كُرَةَ عَجِينِ الكُوكِيز بِالبَلاسْتِيكِ الغِذَائِيِّ وَاتْرُكْهَا تَبْرُدُ 30 دَقِيقَةً.",
+      },
+      {
+        context: "Kitchen Dispenser",
+        en: "Use the sharp sliding cutter on the box to slice plastic wrap cleanly.",
+        ar: "اسْتَخْدِمْ شَفْرَةَ القَطْعِ المُنْزَلِقَةَ عَلَى العُلْبَةِ لِقَطْعِ النَّايْلُونِ بِدِقَّةٍ.",
+      },
+    ],
+    exampleSentence: "Cover the cut watermelon with plastic wrap to keep it juicy in the fridge.",
+    exampleArabic:
+      "غَطِّ البِطِّيخَ المُقَطَّعَ بِنَايْلُونِ التَّغْلِيفِ لِيَبْقَى طَازَجاً وَرَطْباً فِي الثَّلَّاجَةِ.",
+  },
+  plate: {
+    id: "plate",
+    arabic: "طَبَق / صَحْن",
+    partOfSpeech: "noun",
+    phonetic: "pleɪt",
+    pronunciationTip: "Long 'a' vowel /eɪ/ as in 'late' or 'gate'.",
+    collocations: [
+      "dinner plate",
+      "empty plate",
+      "pile food on a plate",
+      "ceramic plate",
+      "clear the plates",
+      "side plate",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "plate up",
+        meaning: "arrange food artfully on plates to serve",
+        arabic: "يَسْكُبُ وَيُزَيِّنُ الطَّبَق",
+        example: "The chef plated up the grilled fish with lemon slices.",
+      },
+      {
+        phrase: "clean off",
+        meaning: "eat everything on your plate",
+        arabic: "يُنْهِي طَبَقَهُ",
+        example: "The hungry boy cleaned off his entire plate in minutes.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Serving Dinner",
+        en: "She served the steaming roast chicken on a large white ceramic plate.",
+        ar: "قَدَّمَتِ الدَّجَاجَ المَشْوِيَّ السَّاخِنَ عَلَى طَبَقٍ خَزَفِيٍّ أَبْيَضَ كَبِيرٍ.",
+      },
+      {
+        context: "Table Setting",
+        en: "Set the dinner plate in the center, flanked by the fork, knife, and napkin.",
+        ar: "ضَعْ طَبَقَ الطَّعَامِ فِي المُنْتَصَفِ، مُحَاطاً بِالشَّوْكَةِ وَالسِّكِّينِ وَالمَنْدِيلِ.",
+      },
+      {
+        context: "Clearing the Table",
+        en: "The children helped clear the dirty plates and carried them to the sink.",
+        ar: "سَاعَدَ الأَطْفَالُ فِي رَفْعِ الأَطْبَاقِ المُتَّسِخَةِ وَحَمْلِهَا إِلَى حَوْضِ الجَلِي.",
+      },
+    ],
+    exampleSentence: "She served the steaming roast chicken on a large white ceramic plate.",
+    exampleArabic:
+      "قَدَّمَتِ الدَّجَاجَ المَشْوِيَّ السَّاخِنَ عَلَى طَبَقٍ خَزَفِيٍّ أَبْيَضَ كَبِيرٍ.",
+  },
+  plow: {
+    id: "plow",
+    arabic: "مِحْرَاث",
+    partOfSpeech: "noun",
+    phonetic: "plaʊ",
+    pronunciationTip:
+      "Diphthong 'ow' sound /aʊ/ as in 'now' or 'how'. Also spelled 'plough' in British English.",
+    collocations: [
+      "tractor plow",
+      "plow the field",
+      "heavy plow",
+      "sharp plow blade",
+      "horse-drawn plow",
+      "turn soil with a plow",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "plow through",
+        meaning: "move forcefully through soil or work",
+        arabic: "يَشُقُّ طَرِيقَهُ",
+        example: "The tractor plowed through the tough dry soil with ease.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Soil Preparation",
+        en: "The steel plow turned over the dark rich soil, preparing the ground for spring planting.",
+        ar: "قَلَّبَ المِحْرَاثُ الفُولاذِيُّ التُّرْبَةَ الخَصْبَةَ لِتَجْهِيزِ الأَرْضِ لِزِرَاعَةِ الرَّبِيعِ.",
+      },
+      {
+        context: "Historical Farming",
+        en: "Centuries ago, farmers used pairs of strong oxen to pull heavy wooden plows.",
+        ar: "قَبْلَ قُرُونٍ، اسْتَخْدَمَ المُزَارِعُونَ الثِّيرَانَ القَوِيَّةَ لِسَحْبِ المَحَارِيثِ الخَشَبِيَّةِ.",
+      },
+      {
+        context: "Modern Implements",
+        en: "Multi-furrow hydraulic plows allow one tractor to cultivate dozens of acres daily.",
+        ar: "تُتِيحُ المَحَارِيثُ الهَيْدْرُولِيكِيَّةُ الحَدِيثَةُ حِرَاثَةَ عَشَرَاتِ الأَفْدِنَةِ يَوْمِيّاً.",
+      },
+    ],
+    exampleSentence:
+      "The steel plow turned over the dark rich soil, preparing the ground for spring planting.",
+    exampleArabic:
+      "قَلَّبَ المِحْرَاثُ الفُولاذِيُّ التُّرْبَةَ الخَصْبَةَ لِتَجْهِيزِ الأَرْضِ لِزِرَاعَةِ الرَّبِيعِ.",
+  },
+  plug: {
+    id: "plug",
+    arabic: "قَابِسُ كَهْرَبَاء (فِيشَة)",
+    partOfSpeech: "noun",
+    phonetic: "plʌɡ",
+    pronunciationTip: "Short 'u' sound /ʌ/ as in 'cup' or 'rug'.",
+    collocations: [
+      "electric plug",
+      "insert the plug",
+      "pull the plug",
+      "three-pin plug",
+      "plug into the socket",
+      "grounded plug",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "plug in",
+        meaning: "insert plug into an electrical outlet",
+        arabic: "يَصِلُ بِالقَابِس",
+        example: "Plug in the vacuum cleaner to the hallway outlet.",
+      },
+      {
+        phrase: "pull out",
+        meaning: "remove plug by holding the plastic casing",
+        arabic: "يَنْزِعُ الفِيشَة",
+        example: "Always grip the plug head when pulling it out of the wall.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Electrical Connection",
+        en: "She inserted the three-prong electric plug firmly into the grounded wall outlet.",
+        ar: "أَدْخَلَتْ قَابِسَ الكَهْرَبَاءِ الثُّلاثِيَّ بِإِحْكَامٍ فِي مِقْبَسِ الجِدَارِ المُؤَرَّضِ.",
+      },
+      {
+        context: "Safety",
+        en: "Never pull a plug out by tugging on the cord; always grip the solid plug casing.",
+        ar: "لا تَنْزِعِ الفِيشَةَ أَبَداً بِشَدِّ السِّلْكِ؛ بَلْ أَمْسِكْ بِجِسْمِ القَابِسِ نَفْسِهِ.",
+      },
+      {
+        context: "Travel Adapters",
+        en: "Pack a universal adapter plug when traveling internationally across Europe.",
+        ar: "احْزِمْ قَابِسَ مُحَوِّلٍ شَامِلاً عِنْدَ السَّفَرِ دَوْلِيّاً عَبْرَ الدُّوَلِ الأُورُوبِّيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "She inserted the three-prong electric plug firmly into the grounded wall outlet.",
+    exampleArabic:
+      "أَدْخَلَتْ قَابِسَ الكَهْرَبَاءِ الثُّلاثِيَّ بِإِحْكَامٍ فِي مِقْبَسِ الجِدَارِ المُؤَرَّضِ.",
+  },
+  pond: {
+    id: "pond",
+    arabic: "بِرْكَةُ مَاء (غَدِير)",
+    partOfSpeech: "noun",
+    phonetic: "pɑːnd",
+    pronunciationTip: "Short open 'o' vowel /ɑː/ as in 'pond' or 'bond'.",
+    collocations: [
+      "duck pond",
+      "swim in the pond",
+      "calm pond",
+      "lily pads on the pond",
+      "fish pond",
+      "farm pond",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "swim across",
+        meaning: "paddle through the water",
+        arabic: "يَسْبَحُ عَبْرَ البِرْكَة",
+        example: "The mallard ducks swam across the lily-covered farm pond.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Wildlife Oasis",
+        en: "Green bullfrogs croaked peacefully along the muddy banks of the willow-shaded farm pond.",
+        ar: "نَقَّتِ الضَّفَادِعُ الخَضْرَاءُ بِهُدُوءٍ عَلَى ضِفَافِ بِرْكَةِ المَزْرَعَةِ المُظَلَّلَةِ بِالصَّفْصَافِ.",
+      },
+      {
+        context: "Water Lily",
+        en: "Pink and white water lilies bloomed beautifully across the calm surface of the fish pond.",
+        ar: "تَفَتَّحَتْ زَنَابِقُ المَاءِ الوَرْدِيَّةُ وَالبَيْضَاءُ بِرَوْعَةٍ عَلَى سَطْحِ البِرْكَةِ الهَادِئَةِ.",
+      },
+      {
+        context: "Livestock Water",
+        en: "Cattle gather near the deep farm pond during hot summer afternoons to drink and cool off.",
+        ar: "تَجْتَمِعُ المَاشِيَةُ قُرْبَ بِرْكَةِ المَاءِ فِي أَيَّامِ الصَّيْفِ لِلشُّرْبِ وَالتَّبَرُّدِ.",
+      },
+    ],
+    exampleSentence:
+      "Green bullfrogs croaked peacefully along the muddy banks of the willow-shaded farm pond.",
+    exampleArabic:
+      "نَقَّتِ الضَّفَادِعُ الخَضْرَاءُ بِهُدُوءٍ عَلَى ضِفَافِ بِرْكَةِ المَزْرَعَةِ المُظَلَّلَةِ بِالصَّفْصَافِ.",
+  },
+  poster: {
+    id: "poster",
+    arabic: "مُلْصَقٌ جِدَارِيّ (بُوسْتَر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpoʊ.stər",
+    pronunciationTip: "Long 'o' sound /oʊ/ as in 'post' or 'most'.",
+    collocations: [
+      "wall poster",
+      "hang a poster",
+      "colorful poster",
+      "movie poster",
+      "bedroom poster",
+      "framed poster",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put up",
+        meaning: "attach a poster to a wall",
+        arabic: "يُعَلِّقُ مُلْصَقاً عَلَى الجِدَار",
+        example: "He put up a poster of his favorite band in his bedroom.",
+      },
+      {
+        phrase: "take down",
+        meaning: "remove a poster from a wall",
+        arabic: "يُنْزِلُ المُلْصَق",
+        example: "They took down the old posters before repainting the room.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Teen Bedroom",
+        en: "His bedroom walls are covered with colorful posters of classic vintage cars.",
+        ar: "جُدْرَانُ غُرْفَةِ نَوْمِهِ مُغَطَّاةٌ بِمُلْصَقَاتٍ مُلَوَّنَةٍ لِسَيَّارَاتٍ كِلاسِيكِيَّةٍ قَدِيمَةٍ.",
+      },
+      {
+        context: "Wall Art",
+        en: "She framed a scenic travel poster to hang above her study desk.",
+        ar: "وَضَعَتْ مُلْصَقَ سَفَرٍ طَبِيعِيّاً فِي إِطَارٍ لِتُعَلِّقَهُ فَوْقَ مَكْتَبِ الدِّرَاسَةِ.",
+      },
+      {
+        context: "Education",
+        en: "The teacher displayed an educational world map poster in the study area.",
+        ar: "عَرَضَ المُعَلِّمُ مُلْصَقَ خَرِيطَةِ العَالَمِ التَّعْلِيمِيَّ فِي مِسَاحَةِ الدِّرَاسَةِ.",
+      },
+    ],
+    exampleSentence: "His bedroom walls are covered with colorful posters of classic vintage cars.",
+    exampleArabic:
+      "جُدْرَانُ غُرْفَةِ نَوْمِهِ مُغَطَّاةٌ بِمُلْصَقَاتٍ مُلَوَّنَةٍ لِسَيَّارَاتٍ كِلاسِيكِيَّةٍ قَدِيمَةٍ.",
+  },
+  pot: {
+    id: "pot",
+    arabic: "قِدْر / حَلَّة",
+    partOfSpeech: "noun",
+    phonetic: "pɑːt",
+    pronunciationTip: "Short open 'o' sound /ɑː/ as in 'hot' or 'not'.",
+    collocations: [
+      "cooking pot",
+      "pot of soup",
+      "heavy pot",
+      "pot lid",
+      "boil in a pot",
+      "stainless steel pot",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "simmer away",
+        meaning: "cook slowly in a pot",
+        arabic: "يَنْضَجُ عَلَى نَارٍ هَادِئَة",
+        example: "The beef stew simmered away in the large pot for three hours.",
+      },
+      {
+        phrase: "stir up",
+        meaning: "mix contents of a pot",
+        arabic: "يُقَلِّبُ القِدْر",
+        example: "Stir up the soup to prevent it from sticking to the bottom.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Family Dinner",
+        en: "She simmered a large pot of aromatic lentil soup for the whole family.",
+        ar: "طَبَخَتْ قِدْراً كَبِيراً مِنْ شُورْبَةِ العَدَسِ الشَّهِيَّةِ لِجَمِيعِ أَفْرَادِ العَائِلَةِ.",
+      },
+      {
+        context: "Pasta Cooking",
+        en: "Fill the deep pot with salted water and bring it to a rolling boil.",
+        ar: "امْلَأِ القِدْرَ العَمِيقَ بِمَاءٍ مُمَلَّحٍ وَدَعْهُ يَصِلُ إِلَى دَرَجَةِ الغَلَيَانِ.",
+      },
+      {
+        context: "Kitchen Equipment",
+        en: "A cast-iron Dutch oven pot distributes heat evenly for slow braising.",
+        ar: "يُوَزِّعُ قِدْرُ الزَّهْرِ الثَّقِيلُ الحَرَارَةَ بِالتَّسَاوِي لِلطَّهْيِ البَطِيءِ.",
+      },
+    ],
+    exampleSentence: "She simmered a large pot of aromatic lentil soup for the whole family.",
+    exampleArabic:
+      "طَبَخَتْ قِدْراً كَبِيراً مِنْ شُورْبَةِ العَدَسِ الشَّهِيَّةِ لِجَمِيعِ أَفْرَادِ العَائِلَةِ.",
+  },
+  "power-strip": {
+    id: "power-strip",
+    arabic: "مُشْتَرَكُ كَهْرَبَاء (تَوْصِيلَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpaʊ.ər ˌstrɪp",
+    pronunciationTip: "Compound noun: 'POWER' (/ˈpaʊ.ər/) + 'STRIP' (/strɪp/).",
+    collocations: [
+      "surge protector power strip",
+      "plug into the power strip",
+      "multi-outlet power strip",
+      "switch on the power strip",
+      "overloaded power strip",
+      "power strip cord",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "plug into",
+        meaning: "connect plugs into strip outlets",
+        arabic: "يَصِلُ بِالمُشْتَرَك",
+        example: "Plug your laptop and phone charger into the power strip.",
+      },
+      {
+        phrase: "switch off",
+        meaning: "cut power using master switch",
+        arabic: "يَفْصِلُ التَّيَّار",
+        example: "Switch off the power strip before going on vacation to prevent vampire draw.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Workstation",
+        en: "He plugged his desktop monitor, speakers, and lamp into a surge-protected power strip.",
+        ar: "وَصَلَ شَاشَةَ الكُمْبِيُوتَرِ وَالسَّمَّاعَاتِ وَالمِصْبَاحَ بِمُشْتَرَكِ كَهْرَبَاءٍ مَحْمِيٍّ مِنَ التَّذَبْذُبِ.",
+      },
+      {
+        context: "Electrical Safety",
+        en: "Never daisy-chain multiple power strips together to avoid electrical fire hazards.",
+        ar: "لا تَصِلْ أَبَداً عِدَّةَ مُشْتَرَكَاتِ كَهْرَبَاءٍ بِبَعْضِهَا تَفَادِياً لِمَخَاطِرِ الحَرِيقِ.",
+      },
+      {
+        context: "Master Switch",
+        en: "The illuminated red rocker switch shows clearly when the power strip is active.",
+        ar: "يُوَضِّحُ المِفْتَاحُ الأَحْمَرُ المُضِيءُ مَتَى يَكُونُ مُشْتَرَكُ الكَهْرَبَاءِ فِي وَضْعِ التَّشْغِيلِ.",
+      },
+    ],
+    exampleSentence:
+      "He plugged his desktop monitor, speakers, and lamp into a surge-protected power strip.",
+    exampleArabic:
+      "وَصَلَ شَاشَةَ الكُمْبِيُوتَرِ وَالسَّمَّاعَاتِ وَالمِصْبَاحَ بِمُشْتَرَكِ كَهْرَبَاءٍ مَحْمِيٍّ مِنَ التَّذَبْذُبِ.",
+  },
+  "pressure-cooker": {
+    id: "pressure-cooker",
+    arabic: "قِدْرُ الضَّغْط (حَلَّةُ بَرِيسْتُو)",
+    partOfSpeech: "noun",
+    phonetic: "ˈprɛʃ.ər ˌkʊk.ər",
+    pronunciationTip: "Compound noun: 'PRESSURE' (/ˈprɛʃ.ər/) + 'COOKER' (/ˈkʊk.ər/).",
+    collocations: [
+      "electric pressure cooker",
+      "cook in a pressure cooker",
+      "pressure cooker valve",
+      "release pressure",
+      "pressure cooker lid",
+      "instant pot",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "build up",
+        meaning: "accumulate steam pressure",
+        arabic: "يَتَرَاكَمُ الضَّغْط",
+        example: "Wait for steam pressure to build up inside the cooker.",
+      },
+      {
+        phrase: "release pressure",
+        meaning: "vent steam safely",
+        arabic: "يُفَرِّغُ البُخَار",
+        example: "Safely release the steam valve before opening the lid.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Speed Cooking",
+        en: "A modern electric pressure cooker cooks tough beef cuts tender in forty minutes.",
+        ar: "يَطْبُخُ قِدْرُ الضَّغْطِ الكَهْرَبَائِيُّ الحَدِيثُ اللَّحْمَ لِيُصْبِحَ طَرِيّاً فِي 40 دَقِيقَةً.",
+      },
+      {
+        context: "Cooking Beans",
+        en: "Dried beans cook thoroughly in a pressure cooker without needing overnight soaking.",
+        ar: "تَنْضَجُ البُقُولِيَّاتُ الجَافَّةُ فِي قِدْرِ الضَّغْطِ دُونَ الحَاجَةِ لِنَقْعِهَا طَوَالَ اللَّيْلِ.",
+      },
+      {
+        context: "Safety",
+        en: "Always check the rubber sealing ring and safety valve before securing the lid.",
+        ar: "افْحَصْ دَائِماً حَلْقَةَ السِّيلِيكُون وَصِمَامَ الأَمَانِ قَبْلَ إِحْكَامِ إِغْلاقِ الغِطَاءِ.",
+      },
+    ],
+    exampleSentence:
+      "A modern electric pressure cooker cooks tough beef cuts tender in forty minutes.",
+    exampleArabic:
+      "يَطْبُخُ قِدْرُ الضَّغْطِ الكَهْرَبَائِيُّ الحَدِيثُ اللَّحْمَ لِيُصْبِحَ طَرِيّاً فِي 40 دَقِيقَةً.",
+  },
+  puzzle: {
+    id: "puzzle",
+    arabic: "لُغْز / أُحْجِيَّة (بَازِل / أَلْعَابُ تَرْكِيب)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpʌz.əl",
+    pronunciationTip: "Short 'u' sound /ʌ/ as in 'buzz', followed by soft syllabic /əl/.",
+    collocations: [
+      "jigsaw puzzle",
+      "solve a puzzle",
+      "crossword puzzle",
+      "puzzle piece",
+      "thousand-piece puzzle",
+      "put together a puzzle",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put together",
+        meaning: "assemble puzzle pieces",
+        arabic: "يُرَكِّبُ البَازِل",
+        example: "They put together a thousand-piece landscape puzzle over the weekend.",
+      },
+      {
+        phrase: "figure out",
+        meaning: "solve a challenging puzzle",
+        arabic: "يَحُلُّ اللُّغْز",
+        example: "It took him an hour to figure out the wooden logic puzzle.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Family Activity",
+        en: "They spent the rainy weekend putting together a challenging thousand-piece jigsaw puzzle.",
+        ar: "قَضَوْا عُطْلَةَ نِهَايَةِ الأُسْبُوعِ المَاطِرَةَ فِي تَرْكِيبِ بَازِل أَلْفِ قِطْعَةٍ.",
+      },
+      {
+        context: "Brain Exercise",
+        en: "Solving daily crossword and Sudoku puzzles helps keep your mind sharp and active.",
+        ar: "يُسَاعِدُ حَلُّ الكَلِمَاتِ المُتَقَاطِعَةِ وَالسُّودُوكُو اليَوْمِيِّ فِي تَنْشِيطِ الذِّهْنِ.",
+      },
+      {
+        context: "Completing a Puzzle",
+        en: "The sense of satisfaction when placing the final puzzle piece is wonderful.",
+        ar: "الشُّعُورُ بِالإِنْجَازِ عِنْدَ وَضْعِ آخِرِ قِطْعَةِ بَازِل فِي مَكَانِهَا رَائِعٌ جِدّاً.",
+      },
+    ],
+    exampleSentence:
+      "They spent the rainy weekend putting together a challenging thousand-piece jigsaw puzzle.",
+    exampleArabic:
+      "قَضَوْا عُطْلَةَ نِهَايَةِ الأُسْبُوعِ المَاطِرَةَ فِي تَرْكِيبِ بَازِل أَلْفِ قِطْعَةٍ.",
+  },
+  rabbit: {
+    id: "rabbit",
+    arabic: "أَرْنَب",
+    partOfSpeech: "noun",
+    phonetic: "ˈræb.ɪt",
+    pronunciationTip: "Short 'a' vowel /æ/ as in 'rab', followed by short /ɪt/.",
+    collocations: [
+      "pet rabbit",
+      "hop like a rabbit",
+      "rabbit hutch",
+      "wild rabbit",
+      "fluffy rabbit",
+      "rabbit ears",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hop away",
+        meaning: "jump quickly to escape",
+        arabic: "يَقْفِزُ مُبْتَعِداً",
+        example: "The wild rabbit hopped away into the tall clover when it saw us.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Garden Visitor",
+        en: "A cute brown rabbit nibbled quietly on crisp dandelion leaves in the vegetable garden.",
+        ar: "قَضَمَ أَرْنَبٌ بُنِّيٌّ لَطِيفٌ أَوْرَاقَ الهِنْدَبَاءِ فِي حَدِيقَةِ الخُضْرَاوَاتِ بِهُدُوءٍ.",
+      },
+      {
+        context: "Pet Care",
+        en: "Clean the rabbit hutch and provide fresh timothy hay and clean water daily.",
+        ar: "نَظِّفْ قَفَصَ الأَرْنَبِ وَوَفِّرْ لَهُ قَشَّ التِّيمُوثِي الطَّازَجَ وَالمَاءَ النَّقِيَّ يَوْمِيّاً.",
+      },
+      {
+        context: "Speed & Agility",
+        en: "The rabbit zigzagged swiftly through the meadow to outrun the barking puppy.",
+        ar: "جَرَى الأَرْنَبُ بِسُرْعَةٍ وَتَمَوُّجٍ عَبْرَ المَرْجِ لِيَسْبِقَ الجَرْوَ النَّابِحَ.",
+      },
+    ],
+    exampleSentence:
+      "A cute brown rabbit nibbled quietly on crisp dandelion leaves in the vegetable garden.",
+    exampleArabic:
+      "قَضَمَ أَرْنَبٌ بُنِّيٌّ لَطِيفٌ أَوْرَاقَ الهِنْدَبَاءِ فِي حَدِيقَةِ الخُضْرَاوَاتِ بِهُدُوءٍ.",
+  },
+  rain: {
+    id: "rain",
+    arabic: "مَطَر (غَيْث)",
+    partOfSpeech: "noun",
+    phonetic: "reɪn",
+    pronunciationTip: "Long 'a' vowel /eɪ/ as in 'train' or 'pain'.",
+    collocations: [
+      "heavy rain",
+      "gentle rain",
+      "pouring rain",
+      "sound of rain",
+      "shelter from the rain",
+      "forecast of rain",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pour down",
+        meaning: "rain heavily",
+        arabic: "يَهْطُلُ بِغَزَارَة",
+        example: "The rain poured down all night, filling the farm pond.",
+      },
+      {
+        phrase: "clear up",
+        meaning: "stop raining and become sunny",
+        arabic: "يَصْفُو الجَوّ",
+        example: "The skies cleared up after the brief afternoon rain shower.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Crops Nourishment",
+        en: "The gentle overnight rain soaked deeply into the thirsty soil, reviving the young corn sprouts.",
+        ar: "أَنْعَشَ المَطَرُ اللَّيْلِيُّ الهَادِئُ التُّرْبَةَ العَطْشَى وَأَحْيَا بَرَاعِمَ الذُّرَةِ الصَّغِيرَةِ.",
+      },
+      {
+        context: "Cozy Indoors",
+        en: "Listening to the rhythmic patter of rain against the barn metal roof is deeply calming.",
+        ar: "الاِسْتِمَاعُ إِلَى صَوْتِ قَطَرَاتِ المَطَرِ عَلَى سَقْفِ الحَظِيرَةِ يَبْعَثُ عَلَى الرَّاحَةِ.",
+      },
+      {
+        context: "Weather Planning",
+        en: "Farmers harvest dry hay in a rush before the predicted weekend rain arrives.",
+        ar: "يُسَارِعُ المُزَارِعُونَ لِجَنْيِ القَشِّ قَبْلَ وُصُولِ مَوْجَةِ الأَمْطَارِ المُتَوَقَّعَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The gentle overnight rain soaked deeply into the thirsty soil, reviving the young corn sprouts.",
+    exampleArabic:
+      "أَنْعَشَ المَطَرُ اللَّيْلِيُّ الهَادِئُ التُّرْبَةَ العَطْشَى وَأَحْيَا بَرَاعِمَ الذُّرَةِ الصَّغِيرَةِ.",
+  },
+  rake: {
+    id: "rake",
+    arabic: "مِشْطُ حَدِيقَة (مِجْرَفَةُ أَوْرَاق)",
+    partOfSpeech: "noun",
+    phonetic: "reɪk",
+    pronunciationTip: "Long 'a' vowel /eɪ/ as in 'make' or 'cake'.",
+    collocations: [
+      "leaf rake",
+      "garden rake",
+      "rake leaves",
+      "pile of leaves with a rake",
+      "steel garden rake",
+      "smooth the soil with a rake",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "rake up",
+        meaning: "gather leaves or debris into piles",
+        arabic: "يَجْمَعُ بِالمِشْط",
+        example: "Rake up the fallen autumn leaves across the lawn into piles.",
+      },
+      {
+        phrase: "smooth out",
+        meaning: "level soil using a metal rake",
+        arabic: "يُسَوِّي الأَرْض",
+        example: "Smooth out the garden bed before sowing flower seeds.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Autumn Cleanup",
+        en: "The children had fun raking up golden autumn leaves into a gigantic pile to jump in.",
+        ar: "اسْتَمْتَعَ الأَطْفَالُ بِجَمْعِ أَوْرَاقِ الخَرِيفِ الذَّهَبِيَّةِ بِالمِشْطِ فِي كَوْمَةٍ كَبِيرَةٍ.",
+      },
+      {
+        context: "Soil Leveling",
+        en: "He used a heavy steel garden rake to break up soil clods and level the seedbed.",
+        ar: "اسْتَخْدَمَ مِشْطَ حَدِيقَةٍ صُلْباً لِتَفْتِيتِ كُتَلِ التُّرْبَةِ وَتَسْوِيَةِ مَهْدِ البُذُورِ.",
+      },
+      {
+        context: "Gravel Driveways",
+        en: "Smooth the gravel driveway with a wide rake to eliminate ruts after heavy rain.",
+        ar: "سَوِّ مَمَرَّ الحَصَى بِمِشْطٍ عَرِيضٍ لِإِزَالَةِ الأَخَادِيدِ بَعْدَ هُطُولِ المَطَرِ.",
+      },
+    ],
+    exampleSentence:
+      "The children had fun raking up golden autumn leaves into a gigantic pile to jump in.",
+    exampleArabic:
+      "اسْتَمْتَعَ الأَطْفَالُ بِجَمْعِ أَوْرَاقِ الخَرِيفِ الذَّهَبِيَّةِ بِالمِشْطِ فِي كَوْمَةٍ كَبِيرَةٍ.",
+  },
+  "reading-light": {
+    id: "reading-light",
+    arabic: "مِصْبَاحُ قِرَاءَة (كِشَّافُ القِرَاءَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈriː.dɪŋ ˌlaɪt",
+    pronunciationTip: "Compound noun with primary stress on 'READING' (/ˈriː.dɪŋ/).",
+    collocations: [
+      "clip-on reading light",
+      "turn on the reading light",
+      "flexible reading light",
+      "bedside reading light",
+      "adjustable reading light",
+      "dim the reading light",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "clip onto",
+        meaning: "attach a clip-on light to a book or headboard",
+        arabic: "يُثَبِّتُ بِالمِشْبَك",
+        example: "She clipped the reading light onto her novel.",
+      },
+      {
+        phrase: "switch on",
+        meaning: "activate the reading light",
+        arabic: "يُشْعِلُ الضَّوْء",
+        example: "Switch on the reading light so you don't disturb your partner.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Night Reading",
+        en: "She attached a small clip-on reading light to her book so she wouldn't wake her roommate.",
+        ar: "ثَبَّتَتْ مِصْبَاحَ قِرَاءَةٍ صَغِيرَاً بِمِشْبَكٍ عَلَى كِتَابِهَا حَتَّى لا تُوقِظَ زَمِيلَتَهَا.",
+      },
+      {
+        context: "Bedside Fixture",
+        en: "The flexible reading light mounted above the headboard bends in any direction.",
+        ar: "يَنْحَنِي مِصْبَاحُ القِرَاءَةِ المَرِنُ المُثَبَّتُ فَوْقَ ظَهْرِ السَّرِيرِ فِي أَيِّ اتِّجَاهٍ.",
+      },
+      {
+        context: "Eye Care",
+        en: "Warm non-glare reading lights help protect your eyes during late-night study.",
+        ar: "تُسَاعِدُ إِضَاءَةُ القِرَاءَةِ الدَّافِئَةُ المَانِعَةُ لِلتَّوَهُّجِ فِي حِمَايَةِ عَيْنَيْكَ أَثْنَاءَ الدِّرَاسَةِ اللَّيْلِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "She attached a small clip-on reading light to her book so she wouldn't wake her roommate.",
+    exampleArabic:
+      "ثَبَّتَتْ مِصْبَاحَ قِرَاءَةٍ صَغِيرَاً بِمِشْبَكٍ عَلَى كِتَابِهَا حَتَّى لا تُوقِظَ زَمِيلَتَهَا.",
+  },
+  refrigerator: {
+    id: "refrigerator",
+    arabic: "ثَلَّاجَة (بَرَّاد)",
+    partOfSpeech: "noun",
+    phonetic: "rɪˈfrɪdʒ.ə.reɪ.tər",
+    pronunciationTip: "Primary stress on the second syllable 'FRIDGE' (/ˈfrɪdʒ/).",
+    collocations: [
+      "open the refrigerator",
+      "keep in the refrigerator",
+      "refrigerator door",
+      "clean the refrigerator",
+      "stock the refrigerator",
+      "stainless steel refrigerator",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put away",
+        meaning: "place groceries inside the fridge",
+        arabic: "يَحْفَظُ فِي الثَّلَّاجَة",
+        example: "She put away the fresh vegetables into the refrigerator crisper.",
+      },
+      {
+        phrase: "take out",
+        meaning: "remove an item from the fridge",
+        arabic: "يُخْرِجُ مِنَ الثَّلَّاجَة",
+        example: "He took out a carton of milk from the refrigerator.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Food Storage",
+        en: "Keep dairy products and perishable food inside the refrigerator.",
+        ar: "احْفَظْ مُنْتَجَاتِ الأَلْبَانِ وَالأَطْعِمَةَ سَرِيعَةَ التَّلَفِ دَاخِلَ الثَّلَّاجَةِ.",
+      },
+      {
+        context: "Cooking Prep",
+        en: "She took out fresh butter and eggs from the refrigerator to bake a cake.",
+        ar: "أَخْرَجَتِ الزُّبْدَةَ الطَّازَجَةَ وَالبَيْضَ مِنَ الثَّلَّاجَةِ لِخَبْزِ الكَعْكَةِ.",
+      },
+      {
+        context: "Cleaning",
+        en: "He wipes down the refrigerator shelves every weekend to keep them hygienic.",
+        ar: "يَمْسَحُ أَرْفُفَ الثَّلَّاجَةِ كُلَّ عُطْلَةِ أُسْبُوعٍ لِلْحِفَاظِ عَلَى نَظَافَتِهَا.",
+      },
+    ],
+    exampleSentence: "Keep dairy products and perishable food inside the refrigerator.",
+    exampleArabic:
+      "احْفَظْ مُنْتَجَاتِ الأَلْبَانِ وَالأَطْعِمَةَ سَرِيعَةَ التَّلَفِ دَاخِلَ الثَّلَّاجَةِ.",
+  },
+  "remote-control": {
+    id: "remote-control",
+    arabic: "جِهَازُ التَّحَكُّم عَنْ بُعْد (رِيمُوت)",
+    partOfSpeech: "noun",
+    phonetic: "rɪˈmoʊt kənˌtroʊl",
+    pronunciationTip: "Stress on 'MOTE' in remote (/rɪˈmoʊt/) and 'TROL' in control (/kənˈtroʊl/).",
+    collocations: [
+      "TV remote control",
+      "reach for the remote control",
+      "batteries for the remote",
+      "point the remote",
+      "press the button on the remote",
+      "find the remote control",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "switch over",
+        meaning: "change channels using the remote",
+        arabic: "يُغَيِّرُ القَنَاة",
+        example: "He used the remote to switch over to the evening news.",
+      },
+      {
+        phrase: "turn down",
+        meaning: "lower the volume with remote",
+        arabic: "يَخْفِضُ الصَّوْت",
+        example: "Press the remote button to turn down the loud commercials.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Television Watching",
+        en: "He picked up the remote control and turned on the evening news broadcast.",
+        ar: "تَنَاوَلَ جِهَازَ التَّحَكُّمِ عَنْ بُعْدٍ وَشَغَّلَ نَشْرَةَ أَخْبَارِ المَسَاءِ.",
+      },
+      {
+        context: "Household Search",
+        en: "They searched under the sofa cushions to find the lost TV remote control.",
+        ar: "بَحَثُوا تَحْتَ وِسَادَاتِ الأَرِيكَةِ لِلْعُثُورِ عَلَى رِيمُوتِ التِّلْفَازِ المَفْقُودِ.",
+      },
+      {
+        context: "Maintenance",
+        en: "Replace the AAA batteries in the remote control when the buttons stop responding.",
+        ar: "اسْتَبْدِلْ بَطَّارِيَّاتِ جِهَازِ التَّحَكُّمِ عِنْدَمَا تَتَوَقَّفُ الأَزْرَارُ عَنِ الاِسْتِجَابَةِ.",
+      },
+    ],
+    exampleSentence: "He picked up the remote control and turned on the evening news broadcast.",
+    exampleArabic:
+      "تَنَاوَلَ جِهَازَ التَّحَكُّمِ عَنْ بُعْدٍ وَشَغَّلَ نَشْرَةَ أَخْبَارِ المَسَاءِ.",
+  },
+  rice: {
+    id: "rice",
+    arabic: "أَرُزّ (رُزّ)",
+    partOfSpeech: "noun",
+    phonetic: "raɪs",
+    pronunciationTip: "Long 'i' diphthong /aɪ/ as in 'nice' or 'price'.",
+    collocations: [
+      "cooked rice",
+      "white rice",
+      "brown rice",
+      "basmati rice",
+      "bowl of rice",
+      "jasmine rice",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "boil up",
+        meaning: "cook rice in boiling water",
+        arabic: "يَسْلُقُ الأَرُزّ",
+        example: "Boil up two cups of fragrant jasmine rice.",
+      },
+      {
+        phrase: "stir in",
+        meaning: "add spices or butter to cooked rice",
+        arabic: "يُقَلِّبُ فِي الأَرُزّ",
+        example: "Stir in a pinch of saffron and butter into the steamed rice.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cooking Staple",
+        en: "Rinse the basmati rice in cold water until the starch clears before cooking.",
+        ar: "اغْسِلْ أَرُزَّ البَسْمَتِي بِالمَاءِ البَارِدِ حَتَّى يَصْفُوَ المَاءُ تَمَاماً قَبْلَ الطَّهْيِ.",
+      },
+      {
+        context: "Main Dish",
+        en: "Serve the spicy chicken curry over a generous bed of fluffy steamed white rice.",
+        ar: "قَدِّمْ كَارِي الدَّجَاجِ الحَارَّ فَوْقَ طَبَقٍ وَفِيرٍ مِنَ الأَرُزِّ الأَبْيَضِ الهَشِّ.",
+      },
+      {
+        context: "Fried Rice",
+        en: "Day-old cold cooked rice is ideal for making restaurant-style vegetable fried rice.",
+        ar: "يُعَدُّ الأَرُزُّ المَطْبُوخُ البَارِدُ مِثَالِيّاً لِإِعْدَادِ الأَرُزِّ المَقْلِيِّ بِالخُضَارِ.",
+      },
+    ],
+    exampleSentence: "Rinse the basmati rice in cold water until the starch clears before cooking.",
+    exampleArabic:
+      "اغْسِلْ أَرُزَّ البَسْمَتِي بِالمَاءِ البَارِدِ حَتَّى يَصْفُوَ المَاءُ تَمَاماً قَبْلَ الطَّهْيِ.",
+  },
+  robe: {
+    id: "robe",
+    arabic: "رُوب حَمَّام / بُرْنُس",
+    partOfSpeech: "noun",
+    phonetic: "roʊb",
+    pronunciationTip: "Long 'o' vowel /oʊ/ rhyming with 'globe' or 'probe'.",
+    collocations: [
+      "bathrobe",
+      "put on a robe",
+      "warm fleece robe",
+      "tie the robe",
+      "cotton robe",
+      "wrap in a robe",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wrap up in",
+        meaning: "wrap oneself snugly in a robe",
+        arabic: "يَلْتَفُّ فِي الرُّوب",
+        example: "She wrapped up in a plush bathrobe after her shower.",
+      },
+      {
+        phrase: "tie up",
+        meaning: "fasten the belt of a robe",
+        arabic: "يَرْبِطُ حِزَامَ البُرْنُس",
+        example: "He tied up the robe belt around his waist.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Post-Shower",
+        en: "She wrapped herself in a thick cotton bathrobe after taking a hot shower.",
+        ar: "الْتَفَّتْ فِي بُرْنُسٍ قُطْنِيٍّ سَمِيكٍ بَعْدَ الاِسْتِحْمَامِ بِمَاءٍ سَاخِنٍ.",
+      },
+      {
+        context: "Morning Relaxation",
+        en: "He enjoyed his morning coffee on the balcony while wearing his cozy fleece robe.",
+        ar: "اسْتَمْتَعَ بِقَهْوَتِهِ الصَّبَاحِيَّةِ فِي الشُّرْفَةِ وَهُوَ يَرْتَدِي رُوبَهُ الصُّوفِيَّ الدَّافِئَ.",
+      },
+      {
+        context: "Luxury Travel",
+        en: "The luxury hotel provided complimentary plush white robes for guests.",
+        ar: "وَفَّرَ الفُنْدُقُ الفَاخِرُ أَرْوِبَةً بَيْضَاءَ قُطْنِيَّةً مَجَّانِيَّةً لِلنُّزَلاءِ.",
+      },
+    ],
+    exampleSentence: "She wrapped herself in a thick cotton bathrobe after taking a hot shower.",
+    exampleArabic:
+      "الْتَفَّتْ فِي بُرْنُسٍ قُطْنِيٍّ سَمِيكٍ بَعْدَ الاِسْتِحْمَامِ بِمَاءٍ سَاخِنٍ.",
+  },
+  "rocking-chair": {
+    id: "rocking-chair",
+    arabic: "كُرْسِيٌّ هَزَّاز",
+    partOfSpeech: "noun",
+    phonetic: "ˈrɑː.kɪŋ ˌtʃɛər",
+    pronunciationTip: "Compound noun: 'ROCKING' (/ˈrɑː.kɪŋ/) + 'CHAIR' (/tʃɛər/).",
+    collocations: [
+      "wooden rocking chair",
+      "sit in a rocking chair",
+      "creak of the rocking chair",
+      "porch rocking chair",
+      "nursery rocking chair",
+      "gently rock in a chair",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "rock back and forth",
+        meaning: "move rhythmically in a chair",
+        arabic: "يَتَأَرْجَحُ ذَهَاباً وَإِيَاباً",
+        example: "The grandmother rocked back and forth while knitting.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Peaceful Evening",
+        en: "Grandfather sat on the porch in his wooden rocking chair, enjoying the sunset.",
+        ar: "جَلَسَ الجَدُّ فِي الشُّرْفَةِ عَلَى كُرْسِيِّهِ الخَشَبِيِّ الهَزَّازِ مُسْتَمْتِعاً بِالغُرُوبِ.",
+      },
+      {
+        context: "Nursery",
+        en: "A comfortable upholstered rocking chair helps soothe babies to sleep.",
+        ar: "يُسَاعِدُ الكُرْسِيُّ الهَزَّازُ المُبَطَّنُ المُرِيحُ فِي تَهْدِئَةِ الأَطْفَالِ لِلنَّوْمِ.",
+      },
+      {
+        context: "Cozy Living",
+        en: "The rhythmic rocking motion is deeply calming after a hectic, busy day.",
+        ar: "تَمْنَحُ حَرَكَةُ التَّأَرْجُحِ الإِيقَاعِيَّةُ شُعُوراً عَمِيقاً بِالهُدُوءِ بَعْدَ يَوْمٍ حَافِلٍ.",
+      },
+    ],
+    exampleSentence:
+      "Grandfather sat on the porch in his wooden rocking chair, enjoying the sunset.",
+    exampleArabic:
+      "جَلَسَ الجَدُّ فِي الشُّرْفَةِ عَلَى كُرْسِيِّهِ الخَشَبِيِّ الهَزَّازِ مُسْتَمْتِعاً بِالغُرُوبِ.",
+  },
+  "rolling-pin": {
+    id: "rolling-pin",
+    arabic: "نَشَّابَة / شَوْبَك (مِدْلَاكُ العَجِين)",
+    partOfSpeech: "noun",
+    phonetic: "ˈroʊ.lɪŋ ˌpɪn",
+    pronunciationTip: "Compound noun: 'ROLLING' (/ˈroʊ.lɪŋ/) + 'PIN' (/pɪn/).",
+    collocations: [
+      "wooden rolling pin",
+      "roll out with a rolling pin",
+      "marble rolling pin",
+      "flour the rolling pin",
+      "pastry rolling pin",
+      "smooth rolling pin",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "roll out",
+        meaning: "flatten dough with a rolling pin",
+        arabic: "يَفْرِدُ العَجِينَ بِالنَّشَّابَة",
+        example: "Roll out the pizza dough evenly to the edges of the pan.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Pie Crust",
+        en: "She dusted the wooden rolling pin with flour before rolling out the pastry dough.",
+        ar: "رَشَّتِ النَّشَّابَةَ الخَشَبِيَّةَ بِالطَّحِينِ قَبْلَ فَرْدِ عَجِينَةِ الفَطِيرَةِ.",
+      },
+      {
+        context: "Pizza Making",
+        en: "Roll out the bread dough from the center outwards until it is thin and round.",
+        ar: "افْرِدْ عَجِينَةَ الخُبْزِ مِنَ المُنْتَصَفِ لِلْخَارِجِ حَتَّى تُصْبِحَ رَقِيقَةً وَدَائِرِيَّةً.",
+      },
+      {
+        context: "Heavy Duty",
+        en: "A heavy marble rolling pin stays cold and makes rolling butter-rich dough easier.",
+        ar: "تَبْقَى النَّشَّابَةُ الرُّخَامِيَّةُ الثَّقِيلَةُ بَارِدَةً مِمَّا يُسَهِّلُ فَرْدَ العَجِينِ الغَنِيِّ بِالزُّبْدَةِ.",
+      },
+    ],
+    exampleSentence:
+      "She dusted the wooden rolling pin with flour before rolling out the pastry dough.",
+    exampleArabic:
+      "رَشَّتِ النَّشَّابَةَ الخَشَبِيَّةَ بِالطَّحِينِ قَبْلَ فَرْدِ عَجِينَةِ الفَطِيرَةِ.",
+  },
+  rooster: {
+    id: "rooster",
+    arabic: "دِيك",
+    partOfSpeech: "noun",
+    phonetic: "ˈruː.stər",
+    pronunciationTip: "Long 'oo' vowel /uː/ as in 'rooster' or 'booster'.",
+    collocations: [
+      "crowing rooster",
+      "rooster at dawn",
+      "colorful rooster",
+      "rooster comb",
+      "rooster feathers",
+      "wake to the rooster",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "strut around",
+        meaning: "walk with a proud gait",
+        arabic: "يَتَبَخْتَرُ",
+        example: "The proud rooster strutted around the farmyard displaying its feathers.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dawn Awakening",
+        en: "The rooster perched on the fence and crowed loudly to greet the morning sunrise.",
+        ar: "وَقَفَ الدِّيكُ عَلَى السِّيَاجِ وَصَاحَ بِصَوْتٍ عَالٍ تَرْحِيباً بِشُرُوقِ الصَّبَاحِ.",
+      },
+      {
+        context: "Vibrant Colors",
+        en: "With its bright red comb and iridescent green tail feathers, the rooster looked majestic.",
+        ar: "بِعُرْفِهِ الأَحْمَرِ السَّاطِعِ وَرِيشِ ذَيْلِهِ الأَخْضَرِ اللّامِعِ، بَدَا الدِّيكُ مَهِيباً.",
+      },
+      {
+        context: "Farm Guardian",
+        en: "The rooster keeps a watchful eye over the hens and alerts them to approaching hawks.",
+        ar: "يُرَاقِبُ الدِّيكُ الدَّجَاجَاتِ بِحَذَرٍ وَيُحَذِّرُهَا مِنْ أَيِّ طُيُورٍ جَارِحَةٍ تَقْتَرِبُ.",
+      },
+    ],
+    exampleSentence:
+      "The rooster perched on the fence and crowed loudly to greet the morning sunrise.",
+    exampleArabic:
+      "وَقَفَ الدِّيكُ عَلَى السِّيَاجِ وَصَاحَ بِصَوْتٍ عَالٍ تَرْحِيباً بِشُرُوقِ الصَّبَاحِ.",
+  },
+  rug: {
+    id: "rug",
+    arabic: "سَجَّادَةٌ صَغِيرَة (مَشَّايَة)",
+    partOfSpeech: "noun",
+    phonetic: "rʌɡ",
+    pronunciationTip: "Short 'u' vowel sound /ʌ/ as in 'hug', 'mug', or 'cup'.",
+    collocations: [
+      "area rug",
+      "soft rug",
+      "bedside rug",
+      "woven rug",
+      "step on the rug",
+      "wool rug",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "lay down",
+        meaning: "place a rug flat on the floor",
+        arabic: "يَفْرِشُ سَجَّادَة",
+        example: "They laid down a soft wool rug beside the bed.",
+      },
+      {
+        phrase: "roll up",
+        meaning: "roll a rug for moving or cleaning",
+        arabic: "يَطْوِي / يَلُفُّ السَّجَّادَة",
+        example: "Roll up the rug before painting the bedroom walls.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Morning Comfort",
+        en: "A soft fluffy rug keeps your bare feet warm when stepping out of bed.",
+        ar: "تُحَافِظُ السَّجَّادَةُ الصَّغِيرَةُ النَّاعِمَةُ عَلَى دِفْءِ قَدَمَيْكَ عِنْدَ النُّزُولِ مِنَ السَّرِيرِ.",
+      },
+      {
+        context: "Room Accents",
+        en: "The colorful Persian rug adds character and warmth to the wooden floor.",
+        ar: "تُضِيفُ السَّجَّادَةُ الفَارِسِيَّةُ المُلَوَّنَةُ طَابَعاً مُمَيَّزاً وَدِفْئاً عَلَى الأَرْضِيَّةِ الخَشَبِيَّةِ.",
+      },
+      {
+        context: "Cleaning",
+        en: "She shook the dust out of the bedside rug on the balcony.",
+        ar: "نَفَضَتِ الغُبَارَ عَنْ سَجَّادَةِ جَانِبِ السَّرِيرِ فِي الشُّرْفَةِ.",
+      },
+    ],
+    exampleSentence: "A soft fluffy rug keeps your bare feet warm when stepping out of bed.",
+    exampleArabic:
+      "تُحَافِظُ السَّجَّادَةُ الصَّغِيرَةُ النَّاعِمَةُ عَلَى دِفْءِ قَدَمَيْكَ عِنْدَ النُّزُولِ مِنَ السَّرِيرِ.",
+  },
+  salt: {
+    id: "salt",
+    arabic: "مِلْح",
+    partOfSpeech: "noun",
+    phonetic: "sɔːlt",
+    pronunciationTip: "Contains the 'aw' sound /ɔː/ as in 'all' or 'ball'.",
+    collocations: [
+      "pinch of salt",
+      "season with salt",
+      "table salt",
+      "sea salt",
+      "kosher salt",
+      "salt shaker",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sprinkle on",
+        meaning: "scatter salt lightly over food",
+        arabic: "يَرُشُّ المِلْح",
+        example: "Sprinkle a pinch of flaky sea salt over the grilled steak.",
+      },
+      {
+        phrase: "season with",
+        meaning: "enhance flavor with salt",
+        arabic: "يُتَبِّلُ بِالمِلْح",
+        example: "Season the soup with salt and freshly ground pepper.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Seasoning",
+        en: "Add a pinch of sea salt to enhance the natural flavors of the tomato salad.",
+        ar: "أَضِفْ رَشَّةً مِنْ مِلْحِ البَحْرِ لِإِبْرَازِ النَّكْهَاتِ الطَّبِيعِيَّةِ لِسَلَطَةِ الطَّمَاطِمِ.",
+      },
+      {
+        context: "Pasta Water",
+        en: "Always salt your pasta cooking water generously until it tastes like sea water.",
+        ar: "مَلِّحْ مَاءَ سَلْقِ المَعْكَرُونَةِ بِسَخَاءٍ حَتَّى يُشْبِهَ طَعْمُهُ مَاءَ البَحْرِ.",
+      },
+      {
+        context: "Table Shakers",
+        en: "The ceramic salt and pepper shakers sit neatly in the middle of the dining table.",
+        ar: "تَسْتَقِرُّ مَمْلَحَةُ المِلْحِ وَالفُلْفُلِ الخَزَفِيَّةُ بِأَنَاقَةٍ فِي مُنْتَصَفِ طَاوِلَةِ الطَّعَامِ.",
+      },
+    ],
+    exampleSentence: "Add a pinch of sea salt to enhance the natural flavors of the tomato salad.",
+    exampleArabic:
+      "أَضِفْ رَشَّةً مِنْ مِلْحِ البَحْرِ لِإِبْرَازِ النَّكْهَاتِ الطَّبِيعِيَّةِ لِسَلَطَةِ الطَّمَاطِمِ.",
+  },
+  saucepan: {
+    id: "saucepan",
+    arabic: "قِدْرُ صَلْصَة (كَاسَرُولَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsɔːs.pæn",
+    pronunciationTip: "Stress on 'SAUCE' (/sɔːs/), ending in short /pæn/.",
+    collocations: [
+      "small saucepan",
+      "simmer in a saucepan",
+      "saucepan lid",
+      "stainless steel saucepan",
+      "heat soup in a saucepan",
+      "saucepan handle",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "bring to a boil",
+        meaning: "heat liquid in saucepan until boiling",
+        arabic: "يَغْلِي",
+        example: "Bring the tomato sauce to a gentle boil in the saucepan.",
+      },
+      {
+        phrase: "stir constantly",
+        meaning: "mix continuously in pan",
+        arabic: "يُقَلِّبُ بِاسْتِمْرَار",
+        example: "Stir the custard constantly with a whisk.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sauce Making",
+        en: "He melted dark chocolate and cream in a small saucepan over low heat.",
+        ar: "أَذَابَ الشُّوكُولاتَةَ الدَّاكِنَةَ مَعَ الكْرِيمَةِ فِي قِدْرِ صَلْصَةٍ صَغِيرٍ عَلَى نَارٍ هَادِئَةٍ.",
+      },
+      {
+        context: "Cooking Grains",
+        en: "Cook the basmati rice in a heavy-bottomed saucepan with a tight-fitting lid.",
+        ar: "اطْبُخْ أَرُزَّ البَسْمَتِي فِي كَاسَرُولَةٍ ثَقِيلَةِ القَاعِدَةِ مَعَ غِطَاءٍ مُحْكَمٍ.",
+      },
+      {
+        context: "Kitchen Safety",
+        en: "Turn the saucepan handle inward so it cannot be accidentally bumped.",
+        ar: "وَجِّهْ مِقْبَضَ القِدْرِ لِلدَّاخِلِ حَتَّى لا يَتِمَّ الاِصْطِدَامُ بِهِ بِالخَطَأِ.",
+      },
+    ],
+    exampleSentence: "He melted dark chocolate and cream in a small saucepan over low heat.",
+    exampleArabic:
+      "أَذَابَ الشُّوكُولاتَةَ الدَّاكِنَةَ مَعَ الكْرِيمَةِ فِي قِدْرِ صَلْصَةٍ صَغِيرٍ عَلَى نَارٍ هَادِئَةٍ.",
+  },
+  saucer: {
+    id: "saucer",
+    arabic: "صَحْنُ الفِنْجَان",
+    partOfSpeech: "noun",
+    phonetic: "ˈsɔː.sər",
+    pronunciationTip: "First syllable has the 'aw' vowel /ɔː/ as in 'saw' or 'autumn'.",
+    collocations: [
+      "cup and saucer",
+      "place on the saucer",
+      "matching saucer",
+      "porcelain saucer",
+      "teacup saucer",
+      "spill onto the saucer",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "set down on",
+        meaning: "place a cup safely on its saucer",
+        arabic: "يَضَعُ الفِنْجَانَ عَلَى صَحْنِهِ",
+        example: "She set down her teacup gently on the matching saucer.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Formal Tea",
+        en: "The porcelain teacup rested neatly atop its matching gold-trimmed saucer.",
+        ar: "اسْتَقَرَّ فِنْجَانُ الشَّايِ الخَزَفِيُّ بِأَنَاقَةٍ فَوْقَ صَحْنِهِ المُطَرَّزِ بِالذَّهَبِ.",
+      },
+      {
+        context: "Preventing Spills",
+        en: "A small saucer catches tea drips and protects fine wooden tabletops.",
+        ar: "يَمْنَعُ صَحْنُ الفِنْجَانِ الصَّغِيرُ قَطَرَاتِ الشَّايِ مِنْ تَلْوِيثِ الطَّاوِلَةِ الخَشَبِيَّةِ.",
+      },
+      {
+        context: "Hospitality",
+        en: "The waiter served the espresso with a sugar cube placed on the saucer rim.",
+        ar: "قَدَّمَ النَّادِلُ الإِسْبْرِيسُو مَعَ مُكَعَّبِ سُكَّرٍ مَوْضُوعٍ عَلَى حَافَّةِ صَحْنِ الفِنْجَانِ.",
+      },
+    ],
+    exampleSentence: "The porcelain teacup rested neatly atop its matching gold-trimmed saucer.",
+    exampleArabic:
+      "اسْتَقَرَّ فِنْجَانُ الشَّايِ الخَزَفِيُّ بِأَنَاقَةٍ فَوْقَ صَحْنِهِ المُطَرَّزِ بِالذَّهَبِ.",
+  },
+  scarecrow: {
+    id: "scarecrow",
+    arabic: "فَزَّاعَةُ طُيُور (خَيَالُ المَآتَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈskɛər.kroʊ",
+    pronunciationTip: "Compound noun: 'SCARE' (/skɛər/) + 'CROW' (/kroʊ/).",
+    collocations: [
+      "straw scarecrow",
+      "stand like a scarecrow",
+      "scarecrow in the field",
+      "old clothes on a scarecrow",
+      "frighten birds with a scarecrow",
+      "cornfield scarecrow",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "scare away",
+        meaning: "frighten pests or birds away from crops",
+        arabic: "يُخِيفُ الطُّيُورَ وَيَطْرُدُهَا",
+        example: "The scarecrow helps scare away crows from the sweet corn.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Crop Protection",
+        en: "A straw-stuffed scarecrow dressed in flannel shirts and an old hat guards the sweet corn patch.",
+        ar: "تَحْرُسُ فَزَّاعَةٌ مَحْشُوَّةٌ بِالقَشِّ تَرْتَدِي قَمِيصاً صُوفِيّاً حَقْلَ الذُّرَةِ الحُلْوَةِ.",
+      },
+      {
+        context: "Autumn Tradition",
+        en: "Children built a smiling pumpkin-headed scarecrow to celebrate the autumn harvest festival.",
+        ar: "صَنَعَ الأَطْفَالُ خَيَالَ مَآتَةٍ بِرَأْسِ يَقْطِينٍ بَاسِمٍ لِلاِحْتِفَالِ بِمَوْسِمِ الحَصَادِ.",
+      },
+      {
+        context: "Field Landscape",
+        en: "The lonely scarecrow stood motionless against the colorful orange and violet evening sunset.",
+        ar: "وَقَفَتِ الفَزَّاعَةُ سَاكِنَةً فِي الحَقْلِ أَمَامَ أَلْوَانِ غُرُوبِ الشَّمْسِ البُرْتُقَالِيَّةِ السَّاحِرَةِ.",
+      },
+    ],
+    exampleSentence:
+      "A straw-stuffed scarecrow dressed in flannel shirts and an old hat guards the sweet corn patch.",
+    exampleArabic:
+      "تَحْرُسُ فَزَّاعَةٌ مَحْشُوَّةٌ بِالقَشِّ تَرْتَدِي قَمِيصاً صُوفِيّاً حَقْلَ الذُّرَةِ الحُلْوَةِ.",
+  },
+  shed: {
+    id: "shed",
+    arabic: "سَقِيفَة (كُوخُ أَدَوَات / مَخْزَنٌ خَشَبِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ʃɛd",
+    pronunciationTip: "Short 'e' vowel /ɛ/ as in 'bed' or 'red'.",
+    collocations: [
+      "tool shed",
+      "garden shed",
+      "wooden shed",
+      "keep in the shed",
+      "storage shed",
+      "potting shed",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put away in",
+        meaning: "store garden tools in a shed",
+        arabic: "يَحْفَظُ فِي السَّقِيفَة",
+        example: "Put away the shovel and lawnmower inside the garden shed.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Tool Storage",
+        en: "He keeps his lawnmower, garden hoses, and pruning shears locked in the wooden shed.",
+        ar: "يَحْتَفِظُ بِمِكْنَسَةِ العُشْبِ وَخَرَاطِيمِ المِيَاهِ وَالمَقَصَّاتِ دَاخِلَ السَّقِيفَةِ الخَشَبِيَّةِ.",
+      },
+      {
+        context: "Potting Plants",
+        en: "The potting shed is equipped with wooden workbenches, flower pots, and rich soil.",
+        ar: "تَمَّ تَجْهِيزُ كُوخِ الأَدَوَاتِ بِطَاوِلاتِ خَشَبٍ وَأَصَائِصَ لِتَشْتِيلِ الزُّهُورِ.",
+      },
+      {
+        context: "Organization",
+        en: "Hang shovels and rakes neatly on wall brackets inside the tool shed.",
+        ar: "عَلِّقِ المَجَارِفَ وَالمَشَابِكَ بِنِظَامٍ عَلَى حَوَامِلِ الجِدَارِ دَاخِلَ مَخْزَنِ الأَدَوَاتِ.",
+      },
+    ],
+    exampleSentence:
+      "He keeps his lawnmower, garden hoses, and pruning shears locked in the wooden shed.",
+    exampleArabic:
+      "يَحْتَفِظُ بِمِكْنَسَةِ العُشْبِ وَخَرَاطِيمِ المِيَاهِ وَالمَقَصَّاتِ دَاخِلَ السَّقِيفَةِ الخَشَبِيَّةِ.",
+  },
+  sheep: {
+    id: "sheep",
+    arabic: "خَرُوف / غَنَم (شَاة)",
+    partOfSpeech: "noun",
+    phonetic: "ʃiːp",
+    pronunciationTip: "Long 'ee' vowel /iː/. Plural is also 'sheep' (no 's').",
+    collocations: [
+      "flock of sheep",
+      "shear the sheep",
+      "wool from sheep",
+      "sheep grazing",
+      "sheepdog",
+      "bleat of a sheep",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "round up",
+        meaning: "gather sheep together using a dog",
+        arabic: "يَجْمَعُ القَطِيع",
+        example: "The border collie rounded up the stray sheep into the pen.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Wool Harvesting",
+        en: "Every spring, the sheep are sheared to harvest thick, natural wool for blankets.",
+        ar: "فِي كُلِّ رَبِيعٍ، يَتِمُّ جَزُّ صُوفِ الأَغْنَامِ لِجَنْيِ الصُّوفِ الطَّبِيعِيِّ لِلْبَطَّانِيَّاتِ.",
+      },
+      {
+        context: "Hillside Grazing",
+        en: "A large flock of white sheep wandered peacefully across the rolling green meadows.",
+        ar: "تَجَوَّلَ قَطِيعٌ كَبِيرٌ مِنَ الأَغْنَامِ البَيْضَاءِ بِهُدُوءٍ فِي المُرُوجِ الخَضْرَاءِ.",
+      },
+      {
+        context: "Herding Dogs",
+        en: "The trained sheepdog sprinted across the pasture to herd the lambs safely.",
+        ar: "رَكَضَ كَلْبُ الرِّعَايَةِ المُدَرَّبُ لِتَوْجِيهِ الحُمْلانِ إِلَى الحَظِيرَةِ بِأَمَانٍ.",
+      },
+    ],
+    exampleSentence:
+      "Every spring, the sheep are sheared to harvest thick, natural wool for blankets.",
+    exampleArabic:
+      "فِي كُلِّ رَبِيعٍ، يَتِمُّ جَزُّ صُوفِ الأَغْنَامِ لِجَنْيِ الصُّوفِ الطَّبِيعِيِّ لِلْبَطَّانِيَّاتِ.",
+  },
+  sheet: {
+    id: "sheet",
+    arabic: "شَرْشَف / مِلايَةُ السَّرِير",
+    partOfSpeech: "noun",
+    phonetic: "ʃiːt",
+    pronunciationTip: "Long 'ee' sound (/iː/). Distinct from 'sit'.",
+    collocations: [
+      "clean sheets",
+      "change the sheets",
+      "fitted sheet",
+      "bed sheet",
+      "cotton sheets",
+      "fold the sheets",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "tuck in",
+        meaning: "tuck the edges of a sheet under the mattress",
+        arabic: "يُدْخِلُ أَطْرَافَ الشَّرْشَف",
+        example: "Tuck in the bed sheet tightly under the mattress corners.",
+      },
+      {
+        phrase: "strip off",
+        meaning: "remove sheets for washing",
+        arabic: "يَنْزِعُ المِلايَاتِ لِلْغَسِيل",
+        example: "She stripped off the bed sheets to put them in the laundry.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Hygiene",
+        en: "It feels wonderful to sleep on freshly washed cotton sheets.",
+        ar: "مِنَ الرَّائِعِ جِدّاً النَّوْمُ عَلَى مِلايَاتٍ قُطْنِيَّةٍ مَغْسُولَةٍ حَدِيثاً.",
+      },
+      {
+        context: "Household Chores",
+        en: "They change the bed sheets every Sunday morning.",
+        ar: "يَقُومُونَ بِتَغْيِيرِ شَرَاشِفِ السَّرِيرِ كُلَّ صَبَاحِ أَحَدٍ.",
+      },
+      {
+        context: "Bed Making",
+        en: "The elastic corners of the fitted sheet keep it firmly in place.",
+        ar: "تُحَافِظُ الزَّوَايَا المَطَّاطِيَّةُ لِلشَّرْشَفِ عَلَى ثَبَاتِهِ فِي مَكَانِهِ.",
+      },
+    ],
+    exampleSentence: "It feels wonderful to sleep on freshly washed cotton sheets.",
+    exampleArabic:
+      "مِنَ الرَّائِعِ جِدّاً النَّوْمُ عَلَى مِلايَاتٍ قُطْنِيَّةٍ مَغْسُولَةٍ حَدِيثاً.",
+  },
+  shelf: {
+    id: "shelf",
+    arabic: "رَفّ",
+    partOfSpeech: "noun",
+    phonetic: "ʃɛlf",
+    pronunciationTip: "Short 'e' vowel /ɛ/ as in 'bed', ending in 'lf'. Plural is 'shelves'.",
+    collocations: [
+      "wooden shelf",
+      "on the shelf",
+      "floating shelf",
+      "top shelf",
+      "dust the shelf",
+      "shelf bracket",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put up",
+        meaning: "mount a shelf on a wall",
+        arabic: "يُرَكِّبُ رَفّاً",
+        example: "He put up a floating oak shelf in the living room.",
+      },
+      {
+        phrase: "take down from",
+        meaning: "remove an item from a shelf",
+        arabic: "يُنْزِلُ عَنِ الرَّفّ",
+        example: "She took down the glass vase from the top shelf.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Display",
+        en: "She arranged family photographs and potted succulents on the floating wall shelf.",
+        ar: "رَتَّبَتِ الصُّوَرَ العَائِلِيَّةَ وَالنَّبَاتَاتِ عَلَى رَفِّ الحَائِطِ المُنْعَزِلِ.",
+      },
+      {
+        context: "Storage",
+        en: "Keep frequently used textbooks on the lower shelf within easy reach.",
+        ar: "احْتَفِظْ بِالكُتُبِ الدِّرَاسِيَّةِ كَثِيرَةِ الاِسْتِخْدَامِ عَلَى الرَّفِّ السُّفْلِيِّ.",
+      },
+      {
+        context: "Installation",
+        en: "Use heavy wall anchors to secure the solid timber shelf to the wall.",
+        ar: "اسْتَخْدِمْ بَرَاغِيَ جِدَارِيَّةً مَتِينَةً لِتَثْبِيتِ الرَّفِّ الخَشَبِيِّ بِإِحْكَامٍ.",
+      },
+    ],
+    exampleSentence:
+      "She arranged family photographs and potted succulents on the floating wall shelf.",
+    exampleArabic:
+      "رَتَّبَتِ الصُّوَرَ العَائِلِيَّةَ وَالنَّبَاتَاتِ عَلَى رَفِّ الحَائِطِ المُنْعَزِلِ.",
+  },
+  "shoe-rack": {
+    id: "shoe-rack",
+    arabic: "رَفُّ الأَحْذِيَة (جَزَّامَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈʃuː ˌræk",
+    pronunciationTip: "Compound noun: 'SHOE' (/ʃuː/) + 'RACK' (/ræk/).",
+    collocations: [
+      "wooden shoe rack",
+      "tier shoe rack",
+      "pairs of shoes on the rack",
+      "entryway shoe rack",
+      "stackable shoe rack",
+      "metal shoe rack",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put away on",
+        meaning: "store shoes on the rack",
+        arabic: "يُرَتِّبُ عَلَى رَفِّ الأَحْذِيَة",
+        example: "Put away your muddy sneakers on the bottom shelf of the shoe rack.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Entryway Tidiness",
+        en: "Please place your outdoor footwear neatly on the three-tier shoe rack by the door.",
+        ar: "يُرْجَى وَضْعُ أَحْذِيَتِكُمُ الخَارِجِيَّةِ بِنِظَامٍ عَلَى رَفِّ الأَحْذِيَةِ ذِي الطَّبَقَاتِ الثَّلاثِ.",
+      },
+      {
+        context: "Home Etiquette",
+        en: "Taking off outdoor shoes and using the shoe rack keeps the living room carpets spotless.",
+        ar: "يُحَافِظُ خَلْعُ الأَحْذِيَةِ وَوَضْعُهَا فِي الرَّفِّ عَلَى نَظَافَةِ سَجَّادِ المَعِيشَةِ.",
+      },
+      {
+        context: "Storage Capacity",
+        en: "The compact wooden shoe rack holds up to twelve pairs of family shoes.",
+        ar: "يَتَّسِعُ رَفُّ الأَحْذِيَةِ الخَشَبِيُّ المُرِيحُ لِـ 12 زَوْجاً مِنْ أَحْذِيَةِ العَائِلَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Please place your outdoor footwear neatly on the three-tier shoe rack by the door.",
+    exampleArabic:
+      "يُرْجَى وَضْعُ أَحْذِيَتِكُمُ الخَارِجِيَّةِ بِنِظَامٍ عَلَى رَفِّ الأَحْذِيَةِ ذِي الطَّبَقَاتِ الثَّلاثِ.",
+  },
+  shovel: {
+    id: "shovel",
+    arabic: "مِجْرَفَة (كُورِيك)",
+    partOfSpeech: "noun",
+    phonetic: "ˈʃʌv.əl",
+    pronunciationTip: "Short 'u' sound /ʌ/ as in 'shove' or 'love', followed by soft /əl/.",
+    collocations: [
+      "dig with a shovel",
+      "snow shovel",
+      "metal shovel",
+      "shovel of dirt",
+      "pointed shovel",
+      "garden shovel",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "shovel up",
+        meaning: "lift and scoop loose material",
+        arabic: "يَجْرُفُ",
+        example: "Shovel up the loose dirt and transfer it to the wheelbarrow.",
+      },
+      {
+        phrase: "dig up",
+        meaning: "excavate ground with a shovel",
+        arabic: "يَحْفِرُ بِالمِجْرَفَة",
+        example: "Dig up a deep trench for planting the new fruit trees.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Digging",
+        en: "The gardener used a sturdy pointed shovel to dig deep planting holes for apple trees.",
+        ar: "اسْتَخْدَمَ البُسْتَانِيُّ مِجْرَفَةً مَتِينَةً مُدَبَّبَةً لِحَفْرِ جُوَرِ غَرْسِ أَشْجَارِ التُّفَّاحِ.",
+      },
+      {
+        context: "Winter Chores",
+        en: "After the heavy winter snowfall, he shoveled a clear walking path to the barn.",
+        ar: "بَعْدَ تَسَاقُطِ الثُّلُوجِ الشَّتْوِيَّةِ، جَرَفَ مَمَرّاً آمِناً لِلْمَشْيِ إِلَى الحَظِيرَةِ.",
+      },
+      {
+        context: "Compost Handling",
+        en: "She scooped dark aged compost with a square shovel to top-dress the garden beds.",
+        ar: "غَرَفَتِ السَّمَادَ النَّاضِجَ بِمِجْرَفَةٍ مُرَبَّعَةٍ لِتَغْذِيَةِ تُرْبَةِ الحَدِيقَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The gardener used a sturdy pointed shovel to dig deep planting holes for apple trees.",
+    exampleArabic:
+      "اسْتَخْدَمَ البُسْتَانِيُّ مِجْرَفَةً مَتِينَةً مُدَبَّبَةً لِحَفْرِ جُوَرِ غَرْسِ أَشْجَارِ التُّفَّاحِ.",
+  },
+  "side-table": {
+    id: "side-table",
+    arabic: "طَاوِلَةٌ جَانِبِيَّة (تَرَابِيزَة صَغِيرَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsaɪd ˌteɪ.bəl",
+    pronunciationTip: "Compound noun: 'SIDE' (/saɪd/) + 'TABLE' (/ˈteɪ.bəl/).",
+    collocations: [
+      "wooden side table",
+      "lamp on the side table",
+      "next to the sofa",
+      "small side table",
+      "marble side table",
+      "side table with drawer",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put down on",
+        meaning: "place an item on the side table",
+        arabic: "يَضَعُ عَلَى الطَّاوِلَةِ الجَانِبِيَّة",
+        example: "He put down the TV remote control on the side table.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Living Room Accents",
+        en: "A small marble-topped side table sits beside the armchair for resting drinks.",
+        ar: "تَسْتَقِرُّ طَاوِلَةٌ جَانِبِيَّةٌ رُخَامِيَّةٌ صَغِيرَةٌ بِجَانِبِ الكُرْسِيِّ لِوَضْعِ المَشْرُوبَاتِ.",
+      },
+      {
+        context: "Lighting Placement",
+        en: "The decorative ceramic table lamp on the side table casts a gentle ambient glow.",
+        ar: "يَنْشُرُ مِصْبَاحُ الطَّاوِلَةِ الخَزَفِيُّ عَلَى الطَّاوِلَةِ الجَانِبِيَّةِ إِضَاءَةً دَافِئَةً.",
+      },
+      {
+        context: "Convenience",
+        en: "Keep the remote control and your reading glasses within arm's reach on the side table.",
+        ar: "احْتَفِظْ بِجِهَازِ التَّحَكُّمِ وَنَظَّارَةِ القِرَاءَةِ عَلَى الطَّاوِلَةِ الجَانِبِيَّةِ لِسُهُولَةِ تَنَاوُلِهَا.",
+      },
+    ],
+    exampleSentence:
+      "A small marble-topped side table sits beside the armchair for resting drinks.",
+    exampleArabic:
+      "تَسْتَقِرُّ طَاوِلَةٌ جَانِبِيَّةٌ رُخَامِيَّةٌ صَغِيرَةٌ بِجَانِبِ الكُرْسِيِّ لِوَضْعِ المَشْرُوبَاتِ.",
+  },
+  sideboard: {
+    id: "sideboard",
+    arabic: "بُوفَيْه (خِزَانَةُ أَدَوَاتِ المَائِدَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsaɪd.bɔːrd",
+    pronunciationTip: "Compound noun: 'SIDE' (/saɪd/) + 'BOARD' (/bɔːrd/).",
+    collocations: [
+      "wooden sideboard",
+      "dining room sideboard",
+      "buffet sideboard",
+      "store in the sideboard",
+      "mid-century sideboard",
+      "oak sideboard",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put away in",
+        meaning: "store dinnerware in sideboard",
+        arabic: "يَحْفَظُ فِي البُوفَيْه",
+        example: "Put away the fine china plates inside the sideboard.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Fine Dining Storage",
+        en: "She stores her best crystal glasses and holiday tablecloths inside the oak sideboard.",
+        ar: "تَحْفَظُ أَفْضَلَ كُؤُوسِ الكِرِيسْتَالِ وَمَفَارِشِ المَائِدَةِ دَاخِلَ البُوفَيْهِ الخَشَبِيِّ.",
+      },
+      {
+        context: "Holiday Buffet",
+        en: "During dinner parties, the wide wooden sideboard serves as a hot buffet station.",
+        ar: "خِلالَ حَفَلاتِ العَشَاءِ، يُسْتَخْدَمُ البُوفَيْهُ الخَشَبِيُّ العَرِيضُ كَمِنَصَّةِ بِيُوفِيه سَاخِنَةٍ.",
+      },
+      {
+        context: "Decor Display",
+        en: "A large framed landscape painting hangs above the elegant mid-century sideboard.",
+        ar: "تُعَلَّقُ لَوْحَةٌ طَبِيعِيَّةٌ مُؤَطَّرَةٌ كَبِيرَةٌ فَوْقَ البُوفَيْهِ الأَنِيقِ.",
+      },
+    ],
+    exampleSentence:
+      "She stores her best crystal glasses and holiday tablecloths inside the oak sideboard.",
+    exampleArabic:
+      "تَحْفَظُ أَفْضَلَ كُؤُوسِ الكِرِيسْتَالِ وَمَفَارِشِ المَائِدَةِ دَاخِلَ البُوفَيْهِ الخَشَبِيِّ.",
+  },
+  silo: {
+    id: "silo",
+    arabic: "صَوْمَعَةُ غِلَال (صَوْمَعَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsaɪ.loʊ",
+    pronunciationTip: "Long 'i' diphthong /aɪ/ in 'SI' followed by long 'o' /loʊ/ (/ˈsaɪ.loʊ/).",
+    collocations: [
+      "grain silo",
+      "tall silo",
+      "concrete silo",
+      "fill the silo",
+      "metal silo",
+      "silo tower",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "fill up with",
+        meaning: "load grains into a silo",
+        arabic: "يَمْلَأُ الصَّوْمَعَة",
+        example: "The conveyor filled up the silo with freshly harvested golden corn.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Grain Storage",
+        en: "The towering metal grain silo stores metric tons of harvested corn and wheat safely.",
+        ar: "تَحْفَظُ صَوْمَعَةُ الغِلالِ المَعْدَنِيَّةُ الشَّاهِقَةُ أَطْنَاناً مِنَ الذُّرَةِ وَالقَمْحِ بِأَمَانٍ.",
+      },
+      {
+        context: "Farm Landscape",
+        en: "Silver cylindrical silos reflect the brilliant afternoon sun across the prairie.",
+        ar: "تَعْكِسُ الصَّوَامِعُ الأُسْطُوَانِيَّةُ الفِضِّيَّةُ أَشِعَّةَ شَمْسِ الظَّهِيرَةِ عَلَى السُّهُولِ.",
+      },
+      {
+        context: "Moisture Control",
+        en: "Aeration fans inside the silo prevent grain spoilage and moisture buildup.",
+        ar: "تَمْنَعُ مَرَاوِحُ التَّهْوِيَةِ دَاخِلَ الصَّوْمَعَةِ تَلَفَ الحُبُوبِ وَتَرَاكُمَ الرُّطُوبَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The towering metal grain silo stores metric tons of harvested corn and wheat safely.",
+    exampleArabic:
+      "تَحْفَظُ صَوْمَعَةُ الغِلالِ المَعْدَنِيَّةُ الشَّاهِقَةُ أَطْنَاناً مِنَ الذُّرَةِ وَالقَمْحِ بِأَمَانٍ.",
+  },
+  slippers: {
+    id: "slippers",
+    arabic: "شَبْشَب / خُفّ مَنْزِلِيّ",
+    partOfSpeech: "noun",
+    phonetic: "ˈslɪp.ərz",
+    pronunciationTip: "Short 'i' sound followed by a soft 'er' ending.",
+    collocations: [
+      "pair of slippers",
+      "wear warm slippers",
+      "slide into slippers",
+      "comfortable slippers",
+      "fuzzy slippers",
+      "bedroom slippers",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "slip on",
+        meaning: "put slippers on feet quickly",
+        arabic: "يَلْبَسُ الخُفَّ بِسُرْعَة",
+        example: "He slipped on his warm wool slippers as soon as he woke up.",
+      },
+      {
+        phrase: "take off",
+        meaning: "remove slippers",
+        arabic: "يَخْلَعُ الخُفّ",
+        example: "Take off your slippers before getting under the duvet.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Home Comfort",
+        en: "She slid into her warm fleece slippers as soon as she walked through the door.",
+        ar: "ارْتَدَتْ خُفَّهَا الصُّوفِيَّ الدَّافِئَ بِمُجَرَّدِ دُخُولِهَا مِنْ بَابِ المَنْزِلِ.",
+      },
+      {
+        context: "Floor Protection",
+        en: "Wearing soft-soled slippers prevents scratching delicate polished hardwood floors.",
+        ar: "يَمْنَعُ ارْتِدَاءُ الخِفَافِ ذَاتِ النِّعَالِ النَّاعِمَةِ خَدْشَ الأَرْضِيَّاتِ الخَشَبِيَّةِ المَصْقُولَةِ.",
+      },
+      {
+        context: "Morning Warmth",
+        en: "Keep your slippers right next to the bed so your feet never touch the cold tiles.",
+        ar: "احْتَفِظْ بِخُفَّيْكَ بِجِوَارِ السَّرِيرِ حَتَّى لا تَلْمَسَ قَدَمَاكَ البَلاطَ البَارِدَ.",
+      },
+    ],
+    exampleSentence:
+      "She slid into her warm fleece slippers as soon as she walked through the door.",
+    exampleArabic:
+      "ارْتَدَتْ خُفَّهَا الصُّوفِيَّ الدَّافِئَ بِمُجَرَّدِ دُخُولِهَا مِنْ بَابِ المَنْزِلِ.",
+  },
+  sofa: {
+    id: "sofa",
+    arabic: "أَرِيكَة (كَنَبَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsoʊ.fə",
+    pronunciationTip: "Two syllables with primary stress on 'SO' (/ˈsoʊ.fə/).",
+    collocations: [
+      "comfortable sofa",
+      "leather sofa",
+      "sit on the sofa",
+      "sofa cushions",
+      "three-seater sofa",
+      "lounge on the sofa",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sink into",
+        meaning: "relax deeply into a soft sofa",
+        arabic: "يَغُوصُ فِي الأَرِيكَة",
+        example: "He sank into the plush velvet sofa after a long workday.",
+      },
+      {
+        phrase: "lie down on",
+        meaning: "recline on a sofa",
+        arabic: "يَسْتَلْقِي عَلَى الأَرِيكَة",
+        example: "She lay down on the sofa to take an afternoon nap.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Relaxing at Home",
+        en: "The whole family gathered on the large sectional sofa to watch a film.",
+        ar: "اجْتَمَعَتِ العَائِلَةُ بِأَكْمَلِهَا عَلَى الأَرِيكَةِ الكَبِيرَةِ لِمُشَاهَدَةِ فِيلْمٍ.",
+      },
+      {
+        context: "Living Room Decor",
+        en: "A sleek grey modern sofa anchors the center of the spacious living room.",
+        ar: "تَتَوَسَّطُ أَرِيكَةٌ رَمَادِيَّةٌ عَصْرِيَّةٌ أَنِيقَةٌ مَرْكَزَ غُرْفَةِ المَعِيشَةِ الوَاسِعَةِ.",
+      },
+      {
+        context: "Comfort",
+        en: "Plump up the soft decorative cushions to keep the sofa looking inviting.",
+        ar: "انْفُشِ الوِسَادَاتِ المَخْمَلِيَّةَ لِيَبْقَى مَظْهَرُ الأَرِيكَةِ مُرِيحاً وَجَذَّاباً.",
+      },
+    ],
+    exampleSentence: "The whole family gathered on the large sectional sofa to watch a film.",
+    exampleArabic:
+      "اجْتَمَعَتِ العَائِلَةُ بِأَكْمَلِهَا عَلَى الأَرِيكَةِ الكَبِيرَةِ لِمُشَاهَدَةِ فِيلْمٍ.",
+  },
+  "sound-bar": {
+    id: "sound-bar",
+    arabic: "مُكَبِّرُ صَوْتٍ شَرِيطِيّ (سَاوَنْد بَار)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsaʊnd.bɑːr",
+    pronunciationTip: "Compound noun: 'SOUND' (/saʊnd/) + 'BAR' (/bɑːr/).",
+    collocations: [
+      "Bluetooth soundbar",
+      "wireless subwoofer and soundbar",
+      "connect the soundbar",
+      "soundbar under the TV",
+      "dialogue on the soundbar",
+      "Dolby soundbar",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pair with",
+        meaning: "connect soundbar to TV or smartphone",
+        arabic: "يَقْتَرِنُ بـ",
+        example: "Pair the soundbar with your smart television via optical cable.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Audio Upgrade",
+        en: "The sleek soundbar mounted directly below the television delivers crystal-clear dialogue.",
+        ar: "يُقَدِّمُ السَّاوَنْد بَار الأَنِيقُ المُثَبَّتُ أَسْفَلَ التِّلْفَازِ صَوْتاً وَاضِحاً وَنَقِيّاً جِدّاً.",
+      },
+      {
+        context: "Music Streaming",
+        en: "Stream your favorite relaxing playlist from your smartphone to the wireless soundbar.",
+        ar: "بُثَّ قَائِمَةَ مُوسِيقَاكَ المُفَضَّلَةَ مِنْ هَاتِفِكَ الذَّكِيِّ إِلَى السَّاوَنْد بَار اللّاسِلْكِيِّ.",
+      },
+      {
+        context: "Cinema Experience",
+        en: "The soundbar and its companion wireless subwoofer bring a true cinema experience home.",
+        ar: "يَمْنَحُ السَّاوَنْد بَار مَعَ مُضَخِّمِ الصَّوْتِ اللّاسِلْكِيِّ تَجْرِبَةَ سِينِمَا مَنْزِلِيَّةً حَقِيقِيَّةً.",
+      },
+    ],
+    exampleSentence:
+      "The sleek soundbar mounted directly below the television delivers crystal-clear dialogue.",
+    exampleArabic:
+      "يُقَدِّمُ السَّاوَنْد بَار الأَنِيقُ المُثَبَّتُ أَسْفَلَ التِّلْفَازِ صَوْتاً وَاضِحاً وَنَقِيّاً جِدّاً.",
+  },
+  spatula: {
+    id: "spatula",
+    arabic: "مِلْعَقَةُ تَقْلِيب (سْبَاتْيُولا)",
+    partOfSpeech: "noun",
+    phonetic: "ˈspætʃ.ə.lə",
+    pronunciationTip: "Three syllables: 'SPAT-chu-la' with primary stress on 'SPAT'.",
+    collocations: [
+      "silicone spatula",
+      "metal spatula",
+      "flip with a spatula",
+      "scrape the bowl with a spatula",
+      "heat-resistant spatula",
+      "flexible spatula",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "scrape down",
+        meaning: "clean the sides of a mixing bowl",
+        arabic: "يَكْشِطُ جَوَانِبَ الوِعَاء",
+        example: "Use the flexible spatula to scrape down the cake batter from the bowl.",
+      },
+      {
+        phrase: "flip over",
+        meaning: "turn food in a pan",
+        arabic: "يَقْلِبُ",
+        example: "Flip over the beef burger using a wide metal spatula.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Baking",
+        en: "Use a flexible silicone spatula to scrape every bit of batter from the bowl.",
+        ar: "اسْتَخْدِمْ مِلْعَقَةَ سْبَاتْيُولا مَرِنَةً لِكَشْطِ جَمِيعِ بَقَايَا العَجِينِ مِنَ الوِعَاءِ.",
+      },
+      {
+        context: "Cooking Burgers",
+        en: "He slid the wide spatula under the burger patty to flip it neatly.",
+        ar: "مَرَّرَ السْبَاتْيُولا العَرِيضَةَ تَحْتَ قِطْعَةِ البُرْجَر لِقَلْبِهَا بِإِتْقَانٍ.",
+      },
+      {
+        context: "Heat Safety",
+        en: "Heat-resistant silicone spatulas will not melt when stirring hot sauces.",
+        ar: "المَلاعِقُ السِّيلِيكُونِيَّةُ المُقَاوِمَةُ لِلْحَرَارَةِ لا تَذُوبُ عِنْدَ تَقْلِيبِ الصَّلْصَاتِ السَّاخِنَةِ.",
+      },
+    ],
+    exampleSentence: "Use a flexible silicone spatula to scrape every bit of batter from the bowl.",
+    exampleArabic:
+      "اسْتَخْدِمْ مِلْعَقَةَ سْبَاتْيُولا مَرِنَةً لِكَشْطِ جَمِيعِ بَقَايَا العَجِينِ مِنَ الوِعَاءِ.",
+  },
+  speaker: {
+    id: "speaker",
+    arabic: "مُكَبِّرُ صَوْت (سَبِيكَر / سَمَّاعَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈspiː.kər",
+    pronunciationTip: "Long 'ee' vowel /iː/ as in 'speak', followed by soft /kər/.",
+    collocations: [
+      "Bluetooth speaker",
+      "wireless speaker",
+      "turn up the speaker",
+      "portable speaker",
+      "connect to the speaker",
+      "loud speaker",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "turn up",
+        meaning: "increase audio volume",
+        arabic: "يَرْفَعُ الصَّوْت",
+        example: "Turn up the Bluetooth speaker so everyone can hear the music.",
+      },
+      {
+        phrase: "turn down",
+        meaning: "decrease audio volume",
+        arabic: "يَخْفِضُ الصَّوْت",
+        example: "Please turn down the speaker if the neighbors are sleeping.",
+      },
+      {
+        phrase: "pair with",
+        meaning: "connect via Bluetooth",
+        arabic: "يَقْتَرِنُ بـ",
+        example: "Pair your smartphone with the portable speaker in seconds.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Music & Leisure",
+        en: "He connected his phone to the portable Bluetooth speaker to play music.",
+        ar: "وَصَلَ هَاتِفَهُ بِمُكَبِّرِ الصَّوْتِ اللّاسِلْكِيِّ لِتَشْغِيلِ المُوسِيقَى.",
+      },
+      {
+        context: "Home Audio",
+        en: "The smart home speaker responds instantly to voice commands and questions.",
+        ar: "يَسْتَجِيبُ مُكَبِّرُ الصَّوْتِ المَنْزِلِيُّ الذَّكِيُّ لِلأَوَامِرِ الصَّوْتِيَّةِ عَلَى الفَوْرِ.",
+      },
+      {
+        context: "Sound Quality",
+        en: "The stereo speakers deliver deep rich bass and crystal-clear vocals.",
+        ar: "تُقَدِّمُ سَمَّاعَاتُ الاِسْتِرْيُو صَوْتاً عَمِيقاً وَنَقِيّاً بِأَعْلَى جَوْدَةٍ.",
+      },
+    ],
+    exampleSentence: "He connected his phone to the portable Bluetooth speaker to play music.",
+    exampleArabic: "وَصَلَ هَاتِفَهُ بِمُكَبِّرِ الصَّوْتِ اللّاسِلْكِيِّ لِتَشْغِيلِ المُوسِيقَى.",
+  },
+  sponge: {
+    id: "sponge",
+    arabic: "إِسْفَنْجَةُ جَلِي (إِسْفَنْجَة)",
+    partOfSpeech: "noun",
+    phonetic: "spʌndʒ",
+    pronunciationTip: "Short 'u' vowel /ʌ/ as in 'sun', ending in soft 'ge' (/ndʒ/).",
+    collocations: [
+      "kitchen sponge",
+      "soapy sponge",
+      "scrub with a sponge",
+      "damp sponge",
+      "antibacterial sponge",
+      "wipe with a sponge",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wipe down",
+        meaning: "clean countertops with a damp sponge",
+        arabic: "يَمْسَحُ بِالإِسْفَنْجَة",
+        example: "Wipe down the marble kitchen counter with a soapy sponge.",
+      },
+      {
+        phrase: "rinse out",
+        meaning: "wash cleaning soap out of sponge",
+        arabic: "يَشْطُفُ الإِسْفَنْجَة",
+        example: "Always rinse out and squeeze the sponge after washing dishes.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Washing Dishes",
+        en: "She squeezed a drop of dish soap onto the damp sponge to create rich suds.",
+        ar: "عَصَرَتْ قَطْرَةً مِنْ صَابُونِ الصُّحُونِ عَلَى الإِسْفَنْجَةِ الرَّطْبَةِ لِتَكْوِينِ رَغْوَةٍ وَفِيرَةٍ.",
+      },
+      {
+        context: "Scrubbing Pots",
+        en: "Use the abrasive textured side of the dual-action sponge to remove stubborn grease.",
+        ar: "اسْتَخْدِمِ الجَانِبَ الخَشِنَ لِلإِسْفَنْجَةِ لِإِزَالَةِ الدُّهُونِ المُسْتَعْصِيَةِ عَنِ القُدُورِ.",
+      },
+      {
+        context: "Hygiene",
+        en: "Replace your kitchen sponge every two weeks to prevent bacterial buildup.",
+        ar: "اسْتَبْدِلْ إِسْفَنْجَةَ المَطْبَخِ كُلَّ أُسْبُوعَيْنِ لِمَنْعِ تَرَاكُمِ البَكْتِيرْيَا.",
+      },
+    ],
+    exampleSentence: "She squeezed a drop of dish soap onto the damp sponge to create rich suds.",
+    exampleArabic:
+      "عَصَرَتْ قَطْرَةً مِنْ صَابُونِ الصُّحُونِ عَلَى الإِسْفَنْجَةِ الرَّطْبَةِ لِتَكْوِينِ رَغْوَةٍ وَفِيرَةٍ.",
+  },
+  spoon: {
+    id: "spoon",
+    arabic: "مِلْعَقَة",
+    partOfSpeech: "noun",
+    phonetic: "spuːn",
+    pronunciationTip: "Long 'oo' sound /uː/ as in 'moon' or 'soon'.",
+    collocations: [
+      "tablespoon",
+      "teaspoon",
+      "wooden spoon",
+      "soup spoon",
+      "stir with a spoon",
+      "silver spoon",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "spoon out",
+        meaning: "serve food using a large spoon",
+        arabic: "يَغْرِفُ بِالمِلْعَقَة",
+        example: "She spooned out generous portions of rice for the guests.",
+      },
+      {
+        phrase: "stir in",
+        meaning: "mix in an ingredient with a spoon",
+        arabic: "يُقَلِّبُ مُكَوِّناً",
+        example: "Stir in a spoonful of honey into the herbal tea.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dessert & Coffee",
+        en: "He added a teaspoon of brown sugar and stirred his espresso with a small spoon.",
+        ar: "أَضَافَ مِلْعَقَةَ شَايٍ مِنْ السُّكَّرِ البُنِّيِّ وَقَلَّبَ قَهْوَتَهُ بِمِلْعَقَةٍ صَغِيرَةٍ.",
+      },
+      {
+        context: "Cooking Soup",
+        en: "She tasted the broth with a wooden spoon to check the seasoning.",
+        ar: "تَذَوَّقَتِ المَرَقَ بِمِلْعَقَةٍ خَشَبِيَّةٍ لِلتَّأَكُّدِ مِنْ ضَبْطِ البَهَارَاتِ.",
+      },
+      {
+        context: "Table Manners",
+        en: "Hold the soup spoon delicately and sip from the side of the bowl.",
+        ar: "أَمْسِكْ مِلْعَقَةَ الشُّورْبَةِ بِأَنَاقَةٍ وَارْشُفْ مِنْ جَانِبِ المِلْعَقَةِ.",
+      },
+    ],
+    exampleSentence:
+      "He added a teaspoon of brown sugar and stirred his espresso with a small spoon.",
+    exampleArabic:
+      "أَضَافَ مِلْعَقَةَ شَايٍ مِنْ السُّكَّرِ البُنِّيِّ وَقَلَّبَ قَهْوَتَهُ بِمِلْعَقَةٍ صَغِيرَةٍ.",
+  },
+  stable: {
+    id: "stable",
+    arabic: "إِسْطَبْل (مَأْوَى الخُيُول)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsteɪ.bəl",
+    pronunciationTip: "Long 'a' vowel /eɪ/ as in 'table', followed by soft /bəl/.",
+    collocations: [
+      "horse stable",
+      "clean the stable",
+      "stable stall",
+      "wooden stable",
+      "stable boy",
+      "keep horses in a stable",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "muck out",
+        meaning: "clean animal waste from a stable",
+        arabic: "يُنَظِّفُ الإِسْطَبْل",
+        example: "He spent the morning mucking out the horses' stable stalls.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Equine Care",
+        en: "Each thoroughbred horse rests comfortably in a clean, straw-filled stable stall.",
+        ar: "يَسْتَرِيحُ كُلُّ حِصَانٍ أَصِيلٍ فِي جَنَاحِهِ المَفْرُوشِ بِالقَشِّ النَّظِيفِ فِي الإِسْطَبْلِ.",
+      },
+      {
+        context: "Daily Routine",
+        en: "The groom opens the stable doors every morning to let the horses out to pasture.",
+        ar: "يَفْتَحُ السَّائِسُ أَبْوَابَ الإِسْطَبْلِ كُلَّ صَبَاحٍ لِتَنْطَلِقَ الخُيُولُ إِلَى المَرْعَى.",
+      },
+      {
+        context: "Facility Design",
+        en: "The well-ventilated timber stable provides excellent protection during chilly winters.",
+        ar: "يُوَفِّرُ الإِسْطَبْلُ الخَشَبِيُّ جَيِّدُ التَّهْوِيَةِ حِمَايَةً مُمْتَازَةً فِي لَيَالِي الشِّتَاءِ.",
+      },
+    ],
+    exampleSentence:
+      "Each thoroughbred horse rests comfortably in a clean, straw-filled stable stall.",
+    exampleArabic:
+      "يَسْتَرِيحُ كُلُّ حِصَانٍ أَصِيلٍ فِي جَنَاحِهِ المَفْرُوشِ بِالقَشِّ النَّظِيفِ فِي الإِسْطَبْلِ.",
+  },
+  steamer: {
+    id: "steamer",
+    arabic: "قِدْرُ البُخَار (حَلَّةُ بُخَار / مِبْخَرَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈstiː.mər",
+    pronunciationTip: "Long 'ee' vowel /iː/ as in 'steam'.",
+    collocations: [
+      "bamboo steamer",
+      "food steamer",
+      "steam in a steamer",
+      "vegetable steamer",
+      "electric food steamer",
+      "steamer basket",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "steam up",
+        meaning: "cook food using hot steam",
+        arabic: "يَطْبُخُ عَلَى البُخَار",
+        example: "Steam up the dumplings in the bamboo basket for ten minutes.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Healthy Cooking",
+        en: "Steaming broccoli and carrots in a bamboo steamer preserves their vital nutrients.",
+        ar: "يُحَافِظُ طَهْيُ البُرُوكْلِي وَالجَزَرِ فِي قِدْرِ البُخَارِ عَلَى عَنَاصِرِهِمَا الغِذَائِيَّةِ.",
+      },
+      {
+        context: "Dim Sum",
+        en: "Stack three tiers of bamboo steamers to cook chicken dumplings simultaneously.",
+        ar: "رَصَّ ثَلاثَ طَبَقَاتٍ مِنْ مَبَاخِرِ الخَيْزُرَانِ لِطَهْيِ زَلابِيَا الدَّجَاجِ فِي وَقْتٍ وَاحِدٍ.",
+      },
+      {
+        context: "Fish Cooking",
+        en: "Delicate white fish fillets steam to perfection in just eight minutes.",
+        ar: "تَنْضَجُ شَرَائِحُ السَّمَكِ الأَبْيَضِ الرَّقِيقَةُ بِشَكْلٍ مِثَالِيٍّ عَلَى البُخَارِ فِي 8 دَقَائِقَ.",
+      },
+    ],
+    exampleSentence:
+      "Steaming broccoli and carrots in a bamboo steamer preserves their vital nutrients.",
+    exampleArabic:
+      "يُحَافِظُ طَهْيُ البُرُوكْلِي وَالجَزَرِ فِي قِدْرِ البُخَارِ عَلَى عَنَاصِرِهِمَا الغِذَائِيَّةِ.",
+  },
+  stool: {
+    id: "stool",
+    arabic: "كُرْسِيٌّ صَغِير (طَبْلِيَّة / مَقْعَدٌ بِلَا ظَهْر)",
+    partOfSpeech: "noun",
+    phonetic: "stuːl",
+    pronunciationTip: "Long 'oo' sound as in 'cool' or 'school'.",
+    collocations: [
+      "wooden stool",
+      "bar stool",
+      "step stool",
+      "sit on a stool",
+      "sturdy stool",
+      "kitchen stool",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "step up",
+        meaning: "step onto a stool to reach something high",
+        arabic: "يَصْعَدُ عَلَى",
+        example: "She stepped up on the step stool to reach the top shelf.",
+      },
+      {
+        phrase: "sit on",
+        meaning: "take a seat upon a stool",
+        arabic: "يَجْلِسُ عَلَى",
+        example: "He sat on a wooden stool while playing the guitar.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Reaching High",
+        en: "She used a sturdy step stool to change the ceiling light bulb.",
+        ar: "اسْتَخْدَمَتْ مَقْعَداً خَشَبِيّاً مَتِيناً لِتَغْيِيرِ مِصْبَاحِ السَّقْفِ.",
+      },
+      {
+        context: "Breakfast Area",
+        en: "Three modern bar stools are placed around the kitchen counter.",
+        ar: "تَمَّ وَضْعُ ثَلاثَةِ مَقَاعِدَ حَدِيثَةٍ حَوْلَ طَاوِلَةِ المَطْبَخِ.",
+      },
+      {
+        context: "Practical Use",
+        en: "A small stool sits beside the dressing table in the bedroom.",
+        ar: "يَسْتَقِرُّ مَقْعَدٌ صَغِيرٌ بِجِوَارِ طَاوِلَةِ التَّسْرِيحِ فِي غُرْفَةِ النَّوْمِ.",
+      },
+    ],
+    exampleSentence: "She used a sturdy step stool to change the ceiling light bulb.",
+    exampleArabic: "اسْتَخْدَمَتْ مَقْعَداً خَشَبِيّاً مَتِيناً لِتَغْيِيرِ مِصْبَاحِ السَّقْفِ.",
+  },
+  stove: {
+    id: "stove",
+    arabic: "مَوْقِدُ غَاز / بُوتَاجَاز",
+    partOfSpeech: "noun",
+    phonetic: "stoʊv",
+    pronunciationTip: "Long 'o' vowel /oʊ/ rhyming with 'cove' or 'drove'.",
+    collocations: [
+      "gas stove",
+      "turn on the stove",
+      "turn off the stove",
+      "stove burner",
+      "cook on the stove",
+      "clean the stove",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "turn on",
+        meaning: "ignite or start the stove burner",
+        arabic: "يُشْعِلُ المَوْقِد",
+        example: "Turn on the stove to medium heat to simmer the sauce.",
+      },
+      {
+        phrase: "turn off",
+        meaning: "extinguish the stove flame",
+        arabic: "يُطْفِئُ المَوْقِد",
+        example: "Always turn off the stove immediately after removing the pan.",
+      },
+      {
+        phrase: "boil over",
+        meaning: "liquid overflowing from pot on stove",
+        arabic: "يَفُورُ عَلَى المَوْقِد",
+        example: "Turn down the heat before the soup boils over.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cooking",
+        en: "He placed a heavy saucepan on the gas stove to boil some pasta.",
+        ar: "وَضَعَ قِدْراً ثَقِيلاً عَلَى مَوْقِدِ الغَازِ لِسَلْقِ المَعْكَرُونَةِ.",
+      },
+      {
+        context: "Kitchen Safety",
+        en: "Double-check that all stove burners are completely turned off before leaving home.",
+        ar: "تَأَكَّدْ تَمَاماً مِنْ إِطْفَاءِ جَمِيعِ شُعَلاتِ المَوْقِدِ قَبْلَ مُغَادَرَةِ المَنْزِلِ.",
+      },
+      {
+        context: "Cleaning",
+        en: "Wipe grease splatters from the glass stovetop while it is still warm.",
+        ar: "امْسَحْ بُقَعَ الزَّيْتِ عَنْ سَطْحِ المَوْقِدِ الزُّجَاجِيِّ وَهُوَ لا يَزَالُ دَافِئاً.",
+      },
+    ],
+    exampleSentence: "He placed a heavy saucepan on the gas stove to boil some pasta.",
+    exampleArabic: "وَضَعَ قِدْراً ثَقِيلاً عَلَى مَوْقِدِ الغَازِ لِسَلْقِ المَعْكَرُونَةِ.",
+  },
+  straw: {
+    id: "straw",
+    arabic: "تِبْن (قَشُّ زِرَاعَة)",
+    partOfSpeech: "noun",
+    phonetic: "strɔː",
+    pronunciationTip: "Broad 'aw' sound /strɔː/ as in 'draw' or 'law'.",
+    collocations: [
+      "straw bedding",
+      "bale of straw",
+      "straw hat",
+      "golden straw",
+      "spread straw",
+      "drinking straw",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "spread out",
+        meaning: "scatter straw across barn stalls",
+        arabic: "يَفْرِشُ التِّبْنَ كَفِرَاش",
+        example: "Spread out fresh golden straw for comfortable animal bedding.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Animal Bedding",
+        en: "The farmer spread clean, dry wheat straw across the barn floor for cozy calf bedding.",
+        ar: "فَرَشَ المُزَارِعُ تِبْنَ القَمْحِ الجَافَّ النَّظِيفَ عَلَى أَرْضِيَّةِ الحَظِيرَةِ لِتَدْفِئَةِ العُجُولِ.",
+      },
+      {
+        context: "Garden Mulch",
+        en: "Layer golden straw around strawberry plants to retain soil moisture and suppress weeds.",
+        ar: "ضَعْ طَبَقَةً مِنْ قَشِّ الزِّرَاعَةِ حَوْلَ شُجَيْرَاتِ الفَرَاوِلَةِ لِحِفْظِ الرُّطُوبَةِ وَمَنْعِ الحَشَائِشِ.",
+      },
+      {
+        context: "Sun Protection",
+        en: "He wore a wide-brimmed woven straw hat to shield his neck from the blazing midday sun.",
+        ar: "ارْتَدَى قُبَّعَةَ قَشٍّ عَرِيضَةَ الحَوَافِّ لِحِمَايَةِ عُنُقِهِ مِنْ أَشِعَّةِ الشَّمْسِ الحَارِقَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The farmer spread clean, dry wheat straw across the barn floor for cozy calf bedding.",
+    exampleArabic:
+      "فَرَشَ المُزَارِعُ تِبْنَ القَمْحِ الجَافَّ النَّظِيفَ عَلَى أَرْضِيَّةِ الحَظِيرَةِ لِتَدْفِئَةِ العُجُولِ.",
+  },
+  "string-lights": {
+    id: "string-lights",
+    arabic: "حِبَالُ إِضَاءَة (فِرْعُ نُور / إِضَاءَةُ زِينَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈstrɪŋ ˌlaɪts",
+    pronunciationTip: "Compound noun: 'STRING' (/strɪŋ/) + 'LIGHTS' (/laɪts/). Always plural.",
+    collocations: [
+      "fairy string lights",
+      "hang string lights",
+      "warm white string lights",
+      "outdoor string lights",
+      "plug in string lights",
+      "twinkling string lights",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hang up",
+        meaning: "drape string lights along walls or patio",
+        arabic: "يُعَلِّقُ فِرْعَ النُّور",
+        example: "Hang up the twinkle string lights around the patio pergola.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Magical Ambiance",
+        en: "Delicate fairy string lights draped across the bookshelf create a warm, magical evening glow.",
+        ar: "تَمْنَحُ حِبَالُ الإِضَاءَةِ النَّاعِمَةُ المُعَلَّقَةُ عَلَى رَفِّ الكُتُبِ تَوَهُّجاً سَاحِراً فِي المَسَاءِ.",
+      },
+      {
+        context: "Balcony Styling",
+        en: "They strung warm white outdoor lights along the balcony railing for summer barbecues.",
+        ar: "عَلَّقُوا حِبَالَ إِضَاءَةٍ دَافِئَةً عَلَى سِيَاجِ الشُّرْفَةِ لِحَفَلاتِ الشِّوَاءِ الصَّيْفِيَّةِ.",
+      },
+      {
+        context: "Festive Decor",
+        en: "Twinkling multicolored string lights decorated the living room during the holiday season.",
+        ar: "زَيَّنَتْ فُرُوعُ النُّورِ المُلَوَّنَةُ المُتَلَأْلِئَةُ غُرْفَةَ المَعِيشَةِ خِلالَ مَوْسِمِ الأَعْيَادِ.",
+      },
+    ],
+    exampleSentence:
+      "Delicate fairy string lights draped across the bookshelf create a warm, magical evening glow.",
+    exampleArabic:
+      "تَمْنَحُ حِبَالُ الإِضَاءَةِ النَّاعِمَةُ المُعَلَّقَةُ عَلَى رَفِّ الكُتُبِ تَوَهُّجاً سَاحِراً فِي المَسَاءِ.",
+  },
+  sugar: {
+    id: "sugar",
+    arabic: "سُكَّر",
+    partOfSpeech: "noun",
+    phonetic: "ˈʃʊɡ.ər",
+    pronunciationTip: "Begins with 'sh' sound (/ʃ/) followed by short /ʊ/ as in 'put'.",
+    collocations: [
+      "granulated sugar",
+      "brown sugar",
+      "spoonful of sugar",
+      "powdered sugar",
+      "cup of sugar",
+      "sugar bowl",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "stir in",
+        meaning: "dissolve sugar into hot beverage",
+        arabic: "يُقَلِّبُ السُّكَّر",
+        example: "Stir in a spoonful of sugar into your morning espresso.",
+      },
+      {
+        phrase: "dust with",
+        meaning: "sprinkle powdered sugar lightly",
+        arabic: "يَرُشُّ بِالسُّكَّرِ البُودْرَة",
+        example: "Dust the warm apple tart with powdered icing sugar.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Baking",
+        en: "Beat the softened butter and granulated white sugar together until pale and fluffy.",
+        ar: "اخْفِقِ الزُّبْدَةَ الطَّرِيَّةَ مَعَ السُّكَّرِ الأَبْيَضِ حَتَّى يُصْبِحَ المَزِيجُ هَشّاً وَفَاتِحَ اللَّوْنِ.",
+      },
+      {
+        context: "Sweetening Coffee",
+        en: "He added half a teaspoon of raw brown sugar to sweeten his black coffee.",
+        ar: "أَضَافَ نِصْفَ مِلْعَقَةِ شَايٍ مِنْ السُّكَّرِ البُنِّيِّ لِتَحْلِيَةِ قَهْوَتِهِ السَّوْدَاءِ.",
+      },
+      {
+        context: "Pantry Storage",
+        en: "Keep white sugar stored in an airtight canister to prevent clumping and moisture.",
+        ar: "احْفَظِ السُّكَّرَ الأَبْيَضَ فِي عُلْبَةٍ مُحْكَمَةِ الإِغْلاقِ لِمَنْعِ تَكَتُّلِهِ مِنَ الرُّطُوبَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Beat the softened butter and granulated white sugar together until pale and fluffy.",
+    exampleArabic:
+      "اخْفِقِ الزُّبْدَةَ الطَّرِيَّةَ مَعَ السُّكَّرِ الأَبْيَضِ حَتَّى يُصْبِحَ المَزِيجُ هَشّاً وَفَاتِحَ اللَّوْنِ.",
+  },
+  sunrise: {
+    id: "sunrise",
+    arabic: "شُرُوقُ الشَّمْس",
+    partOfSpeech: "noun",
+    phonetic: "ˈsʌn.raɪz",
+    pronunciationTip: "Compound noun: 'SUN' (/sʌn/) + 'RISE' (/raɪz/).",
+    collocations: [
+      "at sunrise",
+      "watch the sunrise",
+      "golden sunrise",
+      "before sunrise",
+      "beautiful sunrise",
+      "sunrise over the fields",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "rise up",
+        meaning: "ascend into the sky",
+        arabic: "تَشْرُقُ وَتَرْتَفِع",
+        example: "The golden sun rose up above the eastern mountain ridge.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Morning Beauty",
+        en: "The golden sunrise painted the morning sky in vibrant streaks of amber and rose.",
+        ar: "لَوَّنَ شُرُوقُ الشَّمْسِ الذَّهَبِيُّ سَمَاءَ الصَّبَاحِ بِخُطُوطٍ بَدِيعَةٍ مِنَ العَنْبَرِ وَالوَرْدِيِّ.",
+      },
+      {
+        context: "Farm Schedule",
+        en: "The farmer starts his daily tractor chores at sunrise to beat the intense midday heat.",
+        ar: "يَبْدَأُ المُزَارِعُ أَعْمَالَ الجَرَّارِ عِنْدَ الشُّرُوقِ لِتَفَادِي حَرَارَةِ الظَّهِيرَةِ الشَّدِيدَةِ.",
+      },
+      {
+        context: "Birdsong",
+        en: "Robins and songbirds began their melodious chorus the moment the first rays of sunrise appeared.",
+        ar: "بَدَأَتِ العَصَافِيرُ تَغْرِيدَهَا العَذْبَ مَعَ ظُهُورِ أَوَّلِ خُيُوطِ شُرُوقِ الشَّمْسِ.",
+      },
+    ],
+    exampleSentence:
+      "The golden sunrise painted the morning sky in vibrant streaks of amber and rose.",
+    exampleArabic:
+      "لَوَّنَ شُرُوقُ الشَّمْسِ الذَّهَبِيُّ سَمَاءَ الصَّبَاحِ بِخُطُوطٍ بَدِيعَةٍ مِنَ العَنْبَرِ وَالوَرْدِيِّ.",
+  },
+  sunset: {
+    id: "sunset",
+    arabic: "غُرُوبُ الشَّمْس (مَغْرِب)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsʌn.sɛt",
+    pronunciationTip: "Compound noun: 'SUN' (/sʌn/) + 'SET' (/sɛt/).",
+    collocations: [
+      "at sunset",
+      "watch the sunset",
+      "spectacular sunset",
+      "sunset glow",
+      "stunning sunset",
+      "sunset over the horizon",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "go down",
+        meaning: "descend below the horizon",
+        arabic: "تَغْرُبُ الشَّمْس",
+        example: "The fiery red sun went down behind the western hills.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Evening Splendor",
+        en: "They sat on the farmhouse front porch watching the spectacular violet and orange sunset.",
+        ar: "جَلَسُوا عَلَى شُرْفَةِ بَيْتِ المَزْرَعَةِ يُشَاهِدُونَ غُرُوبَ الشَّمْسِ البَنَفْسَجِيَّ السَّاحِرَ.",
+      },
+      {
+        context: "End of Workday",
+        en: "The farmhands locked the barn doors and headed home as sunset cast long shadows.",
+        ar: "أَقْفَلَ عُمَّالُ المَزْرَعَةِ أَبْوَابَ الحَظِيرَةِ مَعَ حُلُولِ الغُرُوبِ وَامْتِدَادِ الظِّلالِ.",
+      },
+      {
+        context: "Peaceful Ambiance",
+        en: "The evening breeze cooled the sun-warmed earth immediately following sunset.",
+        ar: "لَطَّفَ نَسِيمُ المَسَاءِ حَرَارَةَ الأَرْضِ بَعْدَ غُرُوبِ الشَّمْسِ مُبَاشَرَةً.",
+      },
+    ],
+    exampleSentence:
+      "They sat on the farmhouse front porch watching the spectacular violet and orange sunset.",
+    exampleArabic:
+      "جَلَسُوا عَلَى شُرْفَةِ بَيْتِ المَزْرَعَةِ يُشَاهِدُونَ غُرُوبَ الشَّمْسِ البَنَفْسَجِيَّ السَّاحِرَ.",
+  },
+  "table-lamp": {
+    id: "table-lamp",
+    arabic: "مِصْبَاحُ طَاوِلَة (أَبَاجُورَةُ تَرَابِيزَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈteɪ.bəl ˌlæmp",
+    pronunciationTip: "Compound noun: 'TABLE' (/ˈteɪ.bəl/) + 'LAMP' (/læmp/).",
+    collocations: [
+      "ceramic table lamp",
+      "brass table lamp",
+      "turn off the table lamp",
+      "bedside table lamp",
+      "table lamp shade",
+      "accent table lamp",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "switch on",
+        meaning: "turn on table lamp",
+        arabic: "يُضِيءُ أَبَاجُورَةَ الطَّاوِلَة",
+        example: "Switch on the table lamp on the entryway console.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Living Room Accents",
+        en: "A pair of matching ceramic table lamps on either side of the sofa adds symmetry.",
+        ar: "يُضِيفُ زَوْجٌ مِنْ مَصَابِيحِ الطَّاوِلَةِ الخَزَفِيَّةِ المُتَطَابِقَةِ عَلَى جَانِبَيِ الأَرِيكَةِ تَنَاغُماً رَائِعاً.",
+      },
+      {
+        context: "Warm Glow",
+        en: "The textured linen lampshade diffuses the warm incandescent bulb into a soft glow.",
+        ar: "يَكْسِرُ غِطَاءُ المِصْبَاحِ الكَتَّانِيُّ ضَوْءَ اللَّمْبَةِ لِيَنْشُرَ تَوَهُّجاً نَاعِماً مُرِيحاً.",
+      },
+      {
+        context: "Bedside Reading",
+        en: "She switched off the table lamp on her nightstand before going to sleep.",
+        ar: "أَطْفَأَتْ مِصْبَاحَ الطَّاوِلَةِ المَوْجُودَ عَلَى كُمودِينَتِهَا قَبْلَ أَنْ تَخْلُدَ لِلنَّوْمِ.",
+      },
+    ],
+    exampleSentence:
+      "A pair of matching ceramic table lamps on either side of the sofa adds symmetry.",
+    exampleArabic:
+      "يُضِيفُ زَوْجٌ مِنْ مَصَابِيحِ الطَّاوِلَةِ الخَزَفِيَّةِ المُتَطَابِقَةِ عَلَى جَانِبَيِ الأَرِيكَةِ تَنَاغُماً رَائِعاً.",
+  },
+  tablecloth: {
+    id: "tablecloth",
+    arabic: "مَفْرَشُ طَاوِلَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈteɪ.bəl.klɑːθ",
+    pronunciationTip: "Compound noun: 'TABLE' (/ˈteɪ.bəl/) + 'CLOTH' (/klɑːθ/).",
+    collocations: [
+      "linen tablecloth",
+      "white tablecloth",
+      "spread the tablecloth",
+      "spill on the tablecloth",
+      "checkered tablecloth",
+      "iron the tablecloth",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "spread out",
+        meaning: "lay a tablecloth flat across a table",
+        arabic: "يَفْرِشُ المَفْرَش",
+        example: "Spread out the clean white linen tablecloth over the dining table.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Holiday Dinner",
+        en: "She spread a crisp white linen tablecloth across the dining table for the celebratory meal.",
+        ar: "فَرَشَتْ مَفْرَشَ طَاوِلَةٍ كَتَّانِيّاً أَبْيَضَ أَنِيقاً عَلَى سُفْرَةِ الطَّعَامِ لِلاِحْتِفَالِ.",
+      },
+      {
+        context: "Casual Picnic",
+        en: "A classic red-and-white checkered tablecloth gave the garden lunch a cheerful rustic vibe.",
+        ar: "أَضْفَى مَفْرَشُ الطَّاوِلَةِ المُرَبَّعُ بِالأَحْمَرِ وَالأَبْيَضِ أَجْوَاءً رِيفِيَّةً بَهِيجَةً.",
+      },
+      {
+        context: "Laundry Care",
+        en: "Pre-treat any red wine or gravy stains before washing the fine cotton tablecloth.",
+        ar: "عَالِجْ بُقَعَ العَصِيرِ أَوِ الصَّلْصَةِ قَبْلَ غَسْلِ مَفْرَشِ الطَّاوِلَةِ القُطْنِيِّ الفَاخِرِ.",
+      },
+    ],
+    exampleSentence:
+      "She spread a crisp white linen tablecloth across the dining table for the celebratory meal.",
+    exampleArabic:
+      "فَرَشَتْ مَفْرَشَ طَاوِلَةٍ كَتَّانِيّاً أَبْيَضَ أَنِيقاً عَلَى سُفْرَةِ الطَّعَامِ لِلاِحْتِفَالِ.",
+  },
+  tablet: {
+    id: "tablet",
+    arabic: "جِهَازٌ لَوْحِيّ (تَابْلِت)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtæb.lɪt",
+    pronunciationTip: "Short 'a' vowel /æ/ as in 'tab', followed by short /lɪt/.",
+    collocations: [
+      "touch-screen tablet",
+      "read on a tablet",
+      "charge the tablet",
+      "tablet screen",
+      "unlock the tablet",
+      "portable tablet",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "swipe on",
+        meaning: "navigate with touch gestures",
+        arabic: "يَمْسَحُ بِالإِصْبَعِ عَلَى الشَّاشَة",
+        example: "Swipe on the tablet screen to turn the e-book page.",
+      },
+      {
+        phrase: "charge up",
+        meaning: "recharge battery",
+        arabic: "يَشْحَنُ",
+        example: "Charge up the tablet before leaving for your road trip.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Digital Reading",
+        en: "She prefers reading digital magazines on her lightweight touch-screen tablet.",
+        ar: "تُفَضِّلُ قِرَاءَةَ المَجَلاَّتِ الرَّقْمِيَّةِ عَلَى جِهَازِهَا اللَّوْحِيِّ الخَفِيفِ.",
+      },
+      {
+        context: "Entertainment",
+        en: "The children watched an educational animated documentary on the tablet.",
+        ar: "شَاهَدَ الأَطْفَالُ وَثَائِقِيّاً تَعْلِيمِيّاً كَرْتُونِيّاً عَلَى الجِهَازِ اللَّوْحِيِّ.",
+      },
+      {
+        context: "Productivity",
+        en: "He uses a stylus pen to sketch architectural drawings directly on his tablet.",
+        ar: "يَسْتَخْدِمُ قَلَماً ذَكِيّاً لِرَسْمِ المُخَطَّطَاتِ الهَنْدَسِيَّةِ مُبَاشَرَةً عَلَى التَّابْلِت.",
+      },
+    ],
+    exampleSentence:
+      "She prefers reading digital magazines on her lightweight touch-screen tablet.",
+    exampleArabic:
+      "تُفَضِّلُ قِرَاءَةَ المَجَلاَّتِ الرَّقْمِيَّةِ عَلَى جِهَازِهَا اللَّوْحِيِّ الخَفِيفِ.",
+  },
+  tapestry: {
+    id: "tapestry",
+    arabic: "نَسِيجٌ جِدَارِيّ (سَجَّادُ حَائِط / تَابِسْتْرِي)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtæp.ə.stri",
+    pronunciationTip: "Three syllables: 'TAP-es-try' (/ˈtæp.ə.stri/).",
+    collocations: [
+      "woven tapestry",
+      "hang a tapestry",
+      "wall tapestry",
+      "medieval tapestry",
+      "colorful tapestry",
+      "bohemian tapestry",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hang up",
+        meaning: "mount a decorative tapestry on a wall",
+        arabic: "يُعَلِّقُ النَّسِيجَ الجِدَارِيّ",
+        example: "They hung up a large woven bohemian tapestry above the bed.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Wall Decoration",
+        en: "A magnificent handwoven wool tapestry depicting a forest landscape covers the living room wall.",
+        ar: "يُغَطِّي نَسِيجٌ جِدَارِيٌّ صُوفِيٌّ يَدَوِيٌّ رَائِعٌ يُصَوِّرُ غَابَةً جِدَارَ غُرْفَةِ المَعِيشَةِ.",
+      },
+      {
+        context: "Acoustic Warmth",
+        en: "Hanging a heavy fabric tapestry softens sound echoes in large open-plan spaces.",
+        ar: "يُسَاعِدُ تَعْلِيقُ سَجَّادِ الحَائِطِ القُمَاشِيِّ الثَّقِيلِ فِي تَقْلِيلِ صَدَى الصَّوْتِ فِي المَسَاحَاتِ المَفْتُوحَةِ.",
+      },
+      {
+        context: "Historic Art",
+        en: "The museum preserves medieval tapestries woven with intricate silk and gold threads.",
+        ar: "يَحْفَظُ المَتْحَفُ مَنْسُوجَاتٍ جِدَارِيَّةً تَارِيخِيَّةً مَحْبُوكَةً بِخُيُوطِ الحَرِيرِ وَالذَّهَبِ.",
+      },
+    ],
+    exampleSentence:
+      "A magnificent handwoven wool tapestry depicting a forest landscape covers the living room wall.",
+    exampleArabic:
+      "يُغَطِّي نَسِيجٌ جِدَارِيٌّ صُوفِيٌّ يَدَوِيٌّ رَائِعٌ يُصَوِّرُ غَابَةً جِدَارَ غُرْفَةِ المَعِيشَةِ.",
+  },
+  "teddy-bear": {
+    id: "teddy-bear",
+    arabic: "دُبٌّ لُعْبَة (دُبٌّ قُمَاشِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtɛd.i ˌbɛər",
+    pronunciationTip: "Compound word: 'TEDDY' + 'BEAR' (rhymes with 'hair').",
+    collocations: [
+      "stuffed teddy bear",
+      "plush teddy bear",
+      "hold a teddy bear",
+      "childhood teddy bear",
+      "soft brown teddy bear",
+      "sleep with a teddy bear",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "cuddle up with",
+        meaning: "hold closely in bed",
+        arabic: "يَحْتَضِنُ بِحَنَان",
+        example: "The toddler cuddled up with her favorite teddy bear at bedtime.",
+      },
+      {
+        phrase: "hold onto",
+        meaning: "keep gripping firmly",
+        arabic: "يَتَمَسَّكُ بِـ",
+        example: "He held onto the teddy bear throughout the flight.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Childhood Comfort",
+        en: "The little girl hugs her soft brown teddy bear whenever she feels nervous.",
+        ar: "تَحْتَضِنُ الطِّفْلَةُ الصَّغِيرَةُ دُبَّهَا البُنِّيَّ النَّاعِمَ كُلَّمَا شَعَرَتْ بِالقَلَقِ.",
+      },
+      {
+        context: "Nursery Decor",
+        en: "A vintage stuffed teddy bear sits proudly on the top shelf of the nursery.",
+        ar: "يَسْتَقِرُّ دُبٌّ قُمَاشِيٌّ أَنِيقٌ عَلَى الرَّفِّ العُلْوِيِّ فِي غُرْفَةِ الأَطْفَالِ.",
+      },
+      {
+        context: "Gift Giving",
+        en: "He bought a giant plush teddy bear as a birthday present for his niece.",
+        ar: "اشْتَرَى دُبّاً قُمَاشِيّاً ضَخْماً كَهَدِيَّةِ عِيدِ مِيلادٍ لاِبْنَةِ أُخْتِهِ.",
+      },
+    ],
+    exampleSentence: "The little girl hugs her soft brown teddy bear whenever she feels nervous.",
+    exampleArabic:
+      "تَحْتَضِنُ الطِّفْلَةُ الصَّغِيرَةُ دُبَّهَا البُنِّيَّ النَّاعِمَ كُلَّمَا شَعَرَتْ بِالقَلَقِ.",
   },
   television: {
     id: "television",
     arabic: "تِلْفَاز (تِلِفِزْيُون)",
     partOfSpeech: "noun",
-    collocations: ["watch television", "smart television", "turn on the television"],
-    exampleSentence: "They turned on the television to watch the evening news.",
-    exampleArabic: "شغّلوا التلفاز لمشاهدة أخبار المساء.",
+    phonetic: "ˈtɛl.əˌvɪʒ.ən",
+    pronunciationTip: "Four syllables with primary stress on 'TEL' (/ˈtɛl.əˌvɪʒ.ən/).",
+    collocations: [
+      "watch television",
+      "turn on the television",
+      "turn off the television",
+      "smart television",
+      "television screen",
+      "flat-screen television",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "turn on",
+        meaning: "power on television",
+        arabic: "يُشَغِّلُ التِّلْفَاز",
+        example: "Turn on the television to watch the evening news.",
+      },
+      {
+        phrase: "turn off",
+        meaning: "power down television",
+        arabic: "يُطْفِئُ التِّلْفَاز",
+        example: "Turn off the television when you leave the living room.",
+      },
+      {
+        phrase: "switch over",
+        meaning: "change channel",
+        arabic: "يُغَيِّرُ القَنَاة",
+        example: "Switch over to the educational nature channel.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Family Evening",
+        en: "The family gathered in the living room to watch an exciting documentary on television.",
+        ar: "اجْتَمَعَتِ العَائِلَةُ فِي غُرْفَةِ المَعِيشَةِ لِمُشَاهَدَةِ وَثَائِقِيٍّ مُثِيرٍ عَلَى التِّلْفَازِ.",
+      },
+      {
+        context: "Modern Living",
+        en: "The ultra-thin 4K smart television is mounted securely on the main feature wall.",
+        ar: "تَمَّ تَثْبِيتُ التِّلْفَازِ الذَّكِيِّ فَاخِرِ الدِّقَّةِ بِإِحْكَامٍ عَلَى الجِدَارِ الرَّئِيسِيِّ.",
+      },
+      {
+        context: "Screen Time",
+        en: "Parents set reasonable television viewing limits for their school-aged children.",
+        ar: "يَضَعُ الآبَاءُ حُدُوداً مُعْتَدِلَةً لِأَوْقَاتِ مُشَاهَدَةِ التِّلْفَازِ لِأَطْفَالِهِمْ.",
+      },
+    ],
+    exampleSentence:
+      "The family gathered in the living room to watch an exciting documentary on television.",
+    exampleArabic:
+      "اجْتَمَعَتِ العَائِلَةُ فِي غُرْفَةِ المَعِيشَةِ لِمُشَاهَدَةِ وَثَائِقِيٍّ مُثِيرٍ عَلَى التِّلْفَازِ.",
   },
-  remote: {
-    id: "remote",
-    arabic: "جِهَازُ التَّحَكُّمِ عَنْ بُعْد (رِيمُوت)",
+  "throw-blanket": {
+    id: "throw-blanket",
+    arabic: "بَطَّانِيَّةٌ خَفِيفَة (شَالُ كَنَبَة / غِطَاءُ دِيكُور)",
     partOfSpeech: "noun",
-    collocations: ["TV remote", "change channels with the remote"],
-    exampleSentence: "He picked up the remote to turn up the volume.",
-    exampleArabic: "أمسك جهاز التحكم لرفع مستوى الصوت.",
+    phonetic: "ˈθroʊ ˌblæŋ.kɪt",
+    pronunciationTip: "Compound noun: 'THROW' (/θroʊ/) + 'BLANKET' (/ˈblæŋ.kɪt/).",
+    collocations: [
+      "soft throw blanket",
+      "knit throw blanket",
+      "drape a throw blanket",
+      "fleece throw blanket",
+      "plaid throw blanket",
+      "throw blanket on the sofa",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wrap up in",
+        meaning: "bundle oneself in a light blanket",
+        arabic: "يَلْتَفُّ فِي الشَّال",
+        example: "Wrap up in the knit throw blanket while watching the movie.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sofa Styling",
+        en: "A soft mustard yellow throw blanket is casually draped over the armchair for warmth and texture.",
+        ar: "شَالُ كَنَبَةٍ أَصْفَرُ نَاعِمٌ مُلْقَى بِأَنَاقَةٍ عَلَى الكُرْسِيِّ لِمَنْحِ الدِّفْءِ وَالأَنَاقَةِ.",
+      },
+      {
+        context: "Cozy Evening",
+        en: "She wrapped the chunky knit throw blanket around her shoulders on the breezy autumn evening.",
+        ar: "الْتَفَّتْ فِي شَالِ الصُّوفِ السَّمِيكِ حَوْلَ كَتِفَيْهَا فِي أَمْسِيَةِ الخَرِيفِ البَارِدَةِ.",
+      },
+      {
+        context: "Living Room Storage",
+        en: "Roll up extra throw blankets and place them in a woven wicker basket next to the sofa.",
+        ar: "اطْوِ بَطَّانِيَّاتِ الكَنَبِ الإِضَافِيَّةَ وَضَعْهَا فِي سَلَّةِ خَيْزُرَانٍ بِجِوَارِ الأَرِيكَةِ.",
+      },
+    ],
+    exampleSentence:
+      "A soft mustard yellow throw blanket is casually draped over the armchair for warmth and texture.",
+    exampleArabic:
+      "شَالُ كَنَبَةٍ أَصْفَرُ نَاعِمٌ مُلْقَى بِأَنَاقَةٍ عَلَى الكُرْسِيِّ لِمَنْحِ الدِّفْءِ وَالأَنَاقَةِ.",
   },
-  cushions: {
-    id: "cushions",
-    arabic: "وَسَائِدُ الأَرِيكَة",
+  "tissue-box": {
+    id: "tissue-box",
+    arabic: "عُلْبَةُ المَنَادِيل",
     partOfSpeech: "noun",
-    collocations: ["sofa cushions", "arrange the cushions"],
-    exampleSentence: "She arranged the soft velvet cushions across the sofa.",
-    exampleArabic: "رتبت الوسائد المخملية الناعمة عبر الأريكة.",
+    phonetic: "ˈtɪʃ.uː ˌbɑːks",
+    pronunciationTip: "Pronounce 'tissue' with /tɪʃuː/ and 'box' with short /bɑːks/.",
+    collocations: [
+      "box of tissues",
+      "grab a tissue",
+      "bedside tissue box",
+      "soft facial tissues",
+      "empty tissue box",
+      "reach for a tissue",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pull out",
+        meaning: "extract a tissue from the box",
+        arabic: "يَسْحَبُ مَنْدِيلاً مِنَ العُلْبَة",
+        example: "She pulled out a soft tissue to dry her tears.",
+      },
+      {
+        phrase: "throw away",
+        meaning: "dispose of a used tissue",
+        arabic: "يَرْمِي فِي القُمَامَة",
+        example: "Always throw away used tissues into the wastebasket.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cold & Allergies",
+        en: "He kept a full tissue box on his desk because he had a bad cold.",
+        ar: "احْتَفَظَ بِعُلْبَةِ مَنَادِيلَ مُمْتَلِئَةٍ عَلَى مَكْتَبِهِ بِسَبَبِ إِصَابَتِهِ بِزُكَامٍ شَدِيدٍ.",
+      },
+      {
+        context: "Convenience",
+        en: "There is a decorative tissue box placed conveniently on the bedside table.",
+        ar: "تُوجَدُ عُلْبَةُ مَنَادِيلَ أَنِيقَةٌ مَوْضُوعَةٌ بِشَكْلٍ مُرِيحٍ عَلَى طَاوِلَةِ السَّرِيرِ.",
+      },
+      {
+        context: "Household",
+        en: "When the tissue box is empty, replace it with a new one from the pantry.",
+        ar: "عِنْدَمَا تَفْرَغُ عُلْبَةُ المَنَادِيلِ، اسْتَبْدِلْهَا بِعُلْبَةٍ جَدِيدَةٍ مِنْ خِزَانَةِ المَؤُونَةِ.",
+      },
+    ],
+    exampleSentence: "He kept a full tissue box on his desk because he had a bad cold.",
+    exampleArabic:
+      "احْتَفَظَ بِعُلْبَةِ مَنَادِيلَ مُمْتَلِئَةٍ عَلَى مَكْتَبِهِ بِسَبَبِ إِصَابَتِهِ بِزُكَامٍ شَدِيدٍ.",
   },
-  fireplace: {
-    id: "fireplace",
-    arabic: "مِدْفَأَةٌ مَنْزِلِيَّة (كَانُون)",
+  toaster: {
+    id: "toaster",
+    arabic: "مُحَمِّصَةُ الخُبْز (تُوسْتَر)",
     partOfSpeech: "noun",
-    collocations: ["cozy fireplace", "light the fireplace", "warm fireplace"],
-    exampleSentence: "Logs crackled brightly in the stone fireplace.",
-    exampleArabic: "فرقعت جذوع الحطب بوهج في المدفأة الحجرية.",
+    phonetic: "ˈtoʊ.stər",
+    pronunciationTip: "Long 'o' vowel /oʊ/ as in 'toast'.",
+    collocations: [
+      "pop up from the toaster",
+      "slice of bread in the toaster",
+      "toaster settings",
+      "clean toaster crumbs",
+      "two-slice toaster",
+      "electric toaster",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pop up",
+        meaning: "toast ejecting automatically",
+        arabic: "يَنْبَثِقُ الخُبْزُ المُحَمَّص",
+        example: "The golden toast popped up with a cheerful click.",
+      },
+      {
+        phrase: "put in",
+        meaning: "insert bread slices",
+        arabic: "يَضَعُ الخُبْز",
+        example: "Put two slices of sourdough in the toaster.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Breakfast",
+        en: "He popped two slices of whole wheat bread into the toaster for breakfast.",
+        ar: "وَضَعَ شَرِيحَتَيْنِ مِنْ خُبْزِ القَمْحِ الكَامِلِ فِي مُحَمِّصَةِ الخُبْزِ لِلإِفْطَارِ.",
+      },
+      {
+        context: "Kitchen Maintenance",
+        en: "Remember to empty the crumb tray at the bottom of the toaster regularly.",
+        ar: "تَذَكَّرْ إِفْرَاغَ دُرْجِ فُتَاتِ الخُبْزِ أَسْفَلَ المُحَمِّصَةِ بِانْتِظَامٍ.",
+      },
+      {
+        context: "Cooking Preference",
+        en: "Adjust the toaster browning dial to get lightly golden, crispy toast.",
+        ar: "اضْبِطْ قُرْصَ التَّحْمِيصِ لِلْحُصُولِ عَلَى خُبْزٍ مُقَرْمَشٍ بِلَوْنٍ ذَهَبِيٍّ خَفِيفٍ.",
+      },
+    ],
+    exampleSentence: "He popped two slices of whole wheat bread into the toaster for breakfast.",
+    exampleArabic:
+      "وَضَعَ شَرِيحَتَيْنِ مِنْ خُبْزِ القَمْحِ الكَامِلِ فِي مُحَمِّصَةِ الخُبْزِ لِلإِفْطَارِ.",
   },
-  curtains: {
-    id: "curtains",
-    arabic: "سَتَائِرُ الغُرْفَة",
+  tongs: {
+    id: "tongs",
+    arabic: "مَاسِكُ طَعَام (مِلْقَاط)",
     partOfSpeech: "noun",
-    collocations: ["open the curtains", "velvet curtains"],
-    exampleSentence: "The sheer curtains filtered the soft afternoon sunlight.",
-    exampleArabic: "رشحت الستائر الرقيقة ضوء شمس ما بعد الظهيرة الناعم.",
+    phonetic: "tɑːŋz",
+    pronunciationTip: "Contains the 'ng' sound (/ŋ/) followed by voiced 'z'. Always plural.",
+    collocations: [
+      "kitchen tongs",
+      "salad tongs",
+      "grill tongs",
+      "grip with tongs",
+      "silicone tongs",
+      "stainless steel tongs",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pick up with",
+        meaning: "grab hot food using tongs",
+        arabic: "يَلْتَقِطُ بِالمِلْقَاط",
+        example: "Pick up the grilled sausages with long tongs.",
+      },
+      {
+        phrase: "turn over",
+        meaning: "flip hot items on a barbecue",
+        arabic: "يَقْلِبُ عَلَى الشِّوَايَة",
+        example: "Turn over the steaks on the grill using heavy metal tongs.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Barbecue & Grilling",
+        en: "He used long metal tongs to turn over the sizzling steaks on the barbecue.",
+        ar: "اسْتَخْدَمَ مَاسِكَ طَعَامٍ مَعْدَنِيّاً طَوِيلاً لِقَلْبِ شَرَائِحِ اللَّحْمِ عَلَى الشِّوَايَةِ.",
+      },
+      {
+        context: "Salad Serving",
+        en: "Serve the tossed garden salad using lightweight wooden or bamboo tongs.",
+        ar: "قَدِّمْ سَلَطَةَ الخُضَارِ المُمَتَّعَةِ بِاسْتِخْدَامِ مَاسِكِ سَلَطَةٍ خَشَبِيٍّ خَفِيفٍ.",
+      },
+      {
+        context: "Kitchen Safety",
+        en: "Tongs give you a secure grip and keep your hands safe from hot grease.",
+        ar: "يَمْنَحُكَ مَاسِكُ الطَّعَامِ إِمْسَاكاً آمِناً وَيَحْمِي يَدَيْكَ مِنْ طَرَطَشَةِ الزَّيْتِ.",
+      },
+    ],
+    exampleSentence: "He used long metal tongs to turn over the sizzling steaks on the barbecue.",
+    exampleArabic:
+      "اسْتَخْدَمَ مَاسِكَ طَعَامٍ مَعْدَنِيّاً طَوِيلاً لِقَلْبِ شَرَائِحِ اللَّحْمِ عَلَى الشِّوَايَةِ.",
+  },
+  tractor: {
+    id: "tractor",
+    arabic: "جَرَّارٌ زِرَاعِيّ (تَرَاكْتُور)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtræk.tər",
+    pronunciationTip: "Short 'a' vowel /æ/ in first syllable (/ˈtræk.tər/).",
+    collocations: [
+      "drive a tractor",
+      "farm tractor",
+      "heavy tractor",
+      "tractor engine",
+      "pull with a tractor",
+      "green tractor",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "plow up",
+        meaning: "turn over soil using tractor attachments",
+        arabic: "يَحْرُثُ بِالجَرَّار",
+        example: "The farmer plowed up the field with his heavy diesel tractor.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Field Work",
+        en: "The farmer drove the green diesel tractor across the vast field to plant wheat seeds.",
+        ar: "قَادَ المُزَارِعُ الجَرَّارَ الزِّرَاعِيَّ الأَخْضَرَ عَبْرَ الحَقْلِ الوَاسِعِ لِبَذْرِ القَمْحِ.",
+      },
+      {
+        context: "Hauling Hay",
+        en: "A powerful tractor pulled a heavy flatbed trailer loaded with sixty hay bales.",
+        ar: "سَحَبَ الجَرَّارُ القَوِيُّ مَقْطُورَةً ثَقِيلَةً مُحَمَّلَةً بِـ 60 بَالَةَ قَشٍّ.",
+      },
+      {
+        context: "Maintenance",
+        en: "Check the tractor's engine oil, tire pressures, and hydraulics before harvest season.",
+        ar: "تَفَقَّدْ زَيْتَ مُحَرِّكِ الجَرَّارِ وَضَغْطَ الإِطَارَاتِ قَبْلَ بَدْءِ مَوْسِمِ الحَصَادِ.",
+      },
+    ],
+    exampleSentence:
+      "The farmer drove the green diesel tractor across the vast field to plant wheat seeds.",
+    exampleArabic:
+      "قَادَ المُزَارِعُ الجَرَّارَ الزِّرَاعِيَّ الأَخْضَرَ عَبْرَ الحَقْلِ الوَاسِعِ لِبَذْرِ القَمْحِ.",
+  },
+  trailer: {
+    id: "trailer",
+    arabic: "مَقْطُورَة (عَرَبَةُ نَقْل)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtreɪ.lər",
+    pronunciationTip: "Long 'a' vowel /eɪ/ as in 'train', followed by /lər/.",
+    collocations: [
+      "tractor trailer",
+      "load the trailer",
+      "heavy trailer",
+      "hay trailer",
+      "livestock trailer",
+      "flatbed trailer",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hitch up",
+        meaning: "connect a trailer to a tractor or truck",
+        arabic: "يَصِلُ المَقْطُورَة",
+        example: "He hitched up the flatbed trailer to haul the lumber.",
+      },
+      {
+        phrase: "load onto",
+        meaning: "put goods on trailer",
+        arabic: "يُحَمِّلُ عَلَى المَقْطُورَة",
+        example: "They loaded crates of fresh apples onto the farm trailer.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Harvest Transport",
+        en: "Workers loaded crates of sweet crisp apples onto the tractor trailer in the orchard.",
+        ar: "حَمَّلَ العُمَّالُ صَنَادِيقَ التُّفَّاحِ الطَّازَجِ عَلَى مَقْطُورَةِ الجَرَّارِ فِي البُسْتَانِ.",
+      },
+      {
+        context: "Livestock Moving",
+        en: "They used an enclosed aluminum livestock trailer to transport heifers safely to the show.",
+        ar: "اسْتَخْدَمُوا مَقْطُورَةَ مَاشِيَةٍ مُقْفَلَةً لِنَقْلِ العُجُولِ بِأَمَانٍ لِلْمَعْرِضِ.",
+      },
+      {
+        context: "Hay Hauling",
+        en: "The flatbed trailer carried dozens of rectangular straw bales back to the storage barn.",
+        ar: "نَقَلَتِ المَقْطُورَةُ المُنْبَسِطَةُ عَشَرَاتِ بَالاتِ القَشِّ إِلَى حَظِيرَةِ التَّخْزِينِ.",
+      },
+    ],
+    exampleSentence:
+      "Workers loaded crates of sweet crisp apples onto the tractor trailer in the orchard.",
+    exampleArabic:
+      "حَمَّلَ العُمَّالُ صَنَادِيقَ التُّفَّاحِ الطَّازَجِ عَلَى مَقْطُورَةِ الجَرَّارِ فِي البُسْتَانِ.",
+  },
+  "trash-can": {
+    id: "trash-can",
+    arabic: "سَلَّةُ القُمَامَة (صَفِيحَةُ الزَّبَالَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtræʃ ˌkæn",
+    pronunciationTip: "Both words have short 'a' sound: 'TRASH' (/træʃ/) + 'CAN' (/kæn/).",
+    collocations: [
+      "kitchen trash can",
+      "empty the trash can",
+      "trash can liner",
+      "foot-pedal trash can",
+      "throw in the trash can",
+      "stainless trash can",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "throw away",
+        meaning: "dispose of rubbish into bin",
+        arabic: "يَتَخَلَّصُ فِي القُمَامَة",
+        example: "Throw away the vegetable scraps into the compost or trash can.",
+      },
+      {
+        phrase: "take out",
+        meaning: "remove trash bag to outdoor dumpster",
+        arabic: "يُخْرِجُ كِيسَ القُمَامَة",
+        example: "Remember to take out the full trash can bag tonight.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Kitchen Hygiene",
+        en: "A foot-pedal stainless steel trash can allows hands-free waste disposal while cooking.",
+        ar: "تُتِيحُ سَلَّةُ القُمَامَةِ المَعْدَنِيَّةُ ذَاتُ دَوَّاسَةِ القَدَمِ التَّخَلُّصَ مِنَ الفَضَلاتِ دُونَ لَمْسِهَا.",
+      },
+      {
+        context: "Daily Routine",
+        en: "He tied up the full garbage liner and replaced it with a fresh bag.",
+        ar: "رَبَطَ كِيسَ القُمَامَةِ المُمْتَلِئَ وَاسْتَبْدَلَهُ بِكِيسٍ جَدِيدٍ نَظِيفٍ.",
+      },
+      {
+        context: "Recycling",
+        en: "Keep a separate recycling bin right beside the main kitchen trash can.",
+        ar: "احْتَفِظْ بِسَلَّةِ إِعَادَةِ التَّدْوِيرِ بِجِوَارِ سَلَّةِ قُمَامَةِ المَطْبَخِ الرَّئِيسِيَّةِ مُبَاشَرَةً.",
+      },
+    ],
+    exampleSentence:
+      "A foot-pedal stainless steel trash can allows hands-free waste disposal while cooking.",
+    exampleArabic:
+      "تُتِيحُ سَلَّةُ القُمَامَةِ المَعْدَنِيَّةُ ذَاتُ دَوَّاسَةِ القَدَمِ التَّخَلُّصَ مِنَ الفَضَلاتِ دُونَ لَمْسِهَا.",
+  },
+  turkey: {
+    id: "turkey",
+    arabic: "دِيكٌ رُومِيّ",
+    partOfSpeech: "noun",
+    phonetic: "ˈtɜːr.ki",
+    pronunciationTip:
+      "Stress on 'TUR' (/ˈtɜːr.ki/), identical in pronunciation to the country Turkey.",
+    collocations: [
+      "wild turkey",
+      "gobble of a turkey",
+      "roast turkey",
+      "flock of turkeys",
+      "turkey feathers",
+      "turkey farm",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "gobble up",
+        meaning: "eat greedily or make turkey sounds",
+        arabic: "يَلْتَهِمُ بِسُرْعَة",
+        example: "The hungry birds gobbled up all the scattered corn in minutes.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Farm Wildlife",
+        en: "A flock of wild turkeys strutted through the woodland clearing near the orchard.",
+        ar: "تَجَوَّلَ سِرْبٌ مِنَ الدُّيُوكِ الرُّومِيَّةِ البَرِّيَّةِ عَبْرَ الغَابَةِ قُرْبَ البُسْتَانِ.",
+      },
+      {
+        context: "Distinctive Sound",
+        en: "The big tom turkey puffed up his chest and made a loud gobbling sound.",
+        ar: "نَفَخَ الدِّيكُ الرُّومِيُّ الكَبِيرُ صَدْرَهُ وَأَصْدَرَ صَوْتَ قَرْقَرَةٍ عَالِياً.",
+      },
+      {
+        context: "Holiday Feast",
+        en: "Roast turkey seasoned with rosemary and thyme was the centerpiece of the Thanksgiving feast.",
+        ar: "كَانَ الدِّيكُ الرُّومِيُّ المَشْوِيُّ بِإِكْلِيلِ الجَبَلِ وَالزَّعْتَرِ طَبَقَ الاِحْتِفَالِ الرَّئِيسِيَّ.",
+      },
+    ],
+    exampleSentence:
+      "A flock of wild turkeys strutted through the woodland clearing near the orchard.",
+    exampleArabic:
+      "تَجَوَّلَ سِرْبٌ مِنَ الدُّيُوكِ الرُّومِيَّةِ البَرِّيَّةِ عَبْرَ الغَابَةِ قُرْبَ البُسْتَانِ.",
+  },
+  "tv-stand": {
+    id: "tv-stand",
+    arabic: "طَاوِلَةُ التِّلْفَاز (مَكْتَبَةُ التِّلْفَاز)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtiː.viː ˌstænd",
+    pronunciationTip: "Compound noun: 'T-V' (/ˈtiː.viː/) + 'STAND' (/stænd/).",
+    collocations: [
+      "wooden TV stand",
+      "modern TV stand",
+      "shelves in the TV stand",
+      "cable management TV stand",
+      "low TV stand",
+      "media TV stand",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "set up on",
+        meaning: "install equipment on the stand",
+        arabic: "يُرَكِّبُ عَلَى طَاوِلَةِ التِّلْفَاز",
+        example: "They set up the television and game console on the sturdy TV stand.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Media Center",
+        en: "The low-profile wooden TV stand features built-in cabinets for game consoles.",
+        ar: "تَتَمَيَّزُ طَاوِلَةُ التِّلْفَازِ الخَشَبِيَّةُ المُنْخَفِضَةُ بِخَزَائِنَ مُدْمَجَةٍ لِأَجْهِزَةِ الأَلْعَابِ.",
+      },
+      {
+        context: "Organization",
+        en: "Rear cable cutouts in the TV stand keep power cords organized and out of sight.",
+        ar: "تُحَافِظُ فَتَحَاتُ الأَسْلاكِ الخَلْفِيَّةُ فِي طَاوِلَةِ التِّلْفَازِ عَلَى تَرْتِيبِ الكَابِلاتِ.",
+      },
+      {
+        context: "Decor",
+        en: "She placed a potted succulent and a decorative vase on the corner of the TV stand.",
+        ar: "وَضَعَتْ نَبْتَةَ صَبَّارٍ صَغِيرَةً وَزَهْرِيَّةً أَنِيقَةً عَلَى زَاوِيَةِ طَاوِلَةِ التِّلْفَازِ.",
+      },
+    ],
+    exampleSentence:
+      "The low-profile wooden TV stand features built-in cabinets for game consoles.",
+    exampleArabic:
+      "تَتَمَيَّزُ طَاوِلَةُ التِّلْفَازِ الخَشَبِيَّةُ المُنْخَفِضَةُ بِخَزَائِنَ مُدْمَجَةٍ لِأَجْهِزَةِ الأَلْعَابِ.",
+  },
+  vase: {
+    id: "vase",
+    arabic: "زَهْرِيَّة (فَازَة)",
+    partOfSpeech: "noun",
+    phonetic: "veɪs",
+    pronunciationTip:
+      "In American English it rhymes with 'face' (/veɪs/), in British English /vɑːz/.",
+    collocations: [
+      "flower vase",
+      "ceramic vase",
+      "put flowers in a vase",
+      "glass vase",
+      "fill the vase with water",
+      "crystal vase",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "fill up",
+        meaning: "fill a vase with fresh water",
+        arabic: "يَمْلَأُ بِالمَاءِ",
+        example: "Fill up the glass vase with clean water before arranging the roses.",
+      },
+      {
+        phrase: "set down",
+        meaning: "place a vase on a table",
+        arabic: "يَضَعُ الزَّهْرِيَّةَ عَلَى طَاوِلَة",
+        example: "She set down the delicate ceramic vase on the dining table.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Floral Arrangement",
+        en: "She arranged a bouquet of fresh yellow roses inside the tall glass vase.",
+        ar: "رَتَّبَتْ بَاقَةً مِنْ زُهُورِ الجُورِيِّ الصَّفْرَاءِ دَاخِلَ زَهْرِيَّةٍ زُجَاجِيَّةٍ طَوِيلَةٍ.",
+      },
+      {
+        context: "Home Centerpiece",
+        en: "A beautiful handmade ceramic vase serves as the dining table centerpiece.",
+        ar: "تُشَكِّلُ الزَّهْرِيَّةُ الخَزَفِيَّةُ اليَدَوِيَّةُ الجَمِيلَةُ قِطْعَةَ دِيكُورٍ رَئِيسِيَّةً عَلَى طَاوِلَةِ الطَّعَامِ.",
+      },
+      {
+        context: "Care & Safety",
+        en: "Be careful not to knock over the fragile crystal vase near the edge.",
+        ar: "احْذَرْ مِنْ إِسْقَاطِ زَهْرِيَّةِ الكِرِيسْتَالِ الرَّقِيقَةِ القَرِيبَةِ مِنَ الحَافَّةِ.",
+      },
+    ],
+    exampleSentence: "She arranged a bouquet of fresh yellow roses inside the tall glass vase.",
+    exampleArabic:
+      "رَتَّبَتْ بَاقَةً مِنْ زُهُورِ الجُورِيِّ الصَّفْرَاءِ دَاخِلَ زَهْرِيَّةٍ زُجَاجِيَّةٍ طَوِيلَةٍ.",
+  },
+  vinegar: {
+    id: "vinegar",
+    arabic: "خَلّ",
+    partOfSpeech: "noun",
+    phonetic: "ˈvɪn.ɪ.ɡər",
+    pronunciationTip: "Short 'i' sound /ɪ/ as in 'win', followed by soft /ɪ.ɡər/.",
+    collocations: [
+      "balsamic vinegar",
+      "apple cider vinegar",
+      "white vinegar",
+      "splash of vinegar",
+      "olive oil and vinegar",
+      "vinegar dressing",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "drizzle on",
+        meaning: "pour vinegar lightly over food",
+        arabic: "يَسْكُبُ قَلِيلاً مِنْ الخَلّ",
+        example: "Drizzle aged balsamic vinegar over fresh strawberries and mozzarella.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Salad Dressing",
+        en: "Whisk extra virgin olive oil with red wine vinegar, Dijon mustard, and salt.",
+        ar: "اخْفِقْ زَيْتَ الزَّيْتُونِ البِكْرَ مَعَ خَلِّ العِنَبِ وَالخَرْدَلِ وَالمِلْحِ لِتَحْضِيرِ التَّتْبِيلَةِ.",
+      },
+      {
+        context: "Cooking Technique",
+        en: "Add a splash of white vinegar to the poaching water to help egg whites set cleanly.",
+        ar: "أَضِفْ قَطَرَاتٍ مِنْ الخَلِّ الأَبْيَضِ لِمَاءِ سَلْقِ البَيْضِ لِمُسَاعَدَةِ البَيَاضِ عَلَى التَّمَاسُكِ.",
+      },
+      {
+        context: "Natural Cleaning",
+        en: "Diluted white vinegar is an eco-friendly cleaner that removes limescale easily.",
+        ar: "يُعَدُّ الخَلُّ الأَبْيَضُ المُخَفَّفُ مُنَظِّفاً صَدِيقاً لِلْبِيئَةِ يُزِيلُ التَّرَسُّبَاتِ بِسُهُولَةٍ.",
+      },
+    ],
+    exampleSentence: "Whisk extra virgin olive oil with red wine vinegar, Dijon mustard, and salt.",
+    exampleArabic:
+      "اخْفِقْ زَيْتَ الزَّيْتُونِ البِكْرَ مَعَ خَلِّ العِنَبِ وَالخَرْدَلِ وَالمِلْحِ لِتَحْضِيرِ التَّتْبِيلَةِ.",
+  },
+  "wall-clock": {
+    id: "wall-clock",
+    arabic: "سَاعَةُ حَائِط",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɔːl ˌklɑːk",
+    pronunciationTip: "Compound noun: 'WALL' (/wɔːl/) + 'CLOCK' (/klɑːk/).",
+    collocations: [
+      "large wall clock",
+      "wooden wall clock",
+      "hang a wall clock",
+      "check the wall clock",
+      "silent wall clock",
+      "modern wall clock",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hang up",
+        meaning: "mount clock on wall",
+        arabic: "يُعَلِّقُ السَّاعَةَ عَلَى الجِدَار",
+        example: "Hang up the decorative wall clock above the fireplace mantel.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Living Room Focal Point",
+        en: "A large vintage industrial wall clock hangs prominently above the fireplace mantel.",
+        ar: "تُعَلَّقُ سَاعَةُ حَائِطٍ كَبِيرَةٌ كِلاسِيكِيَّةٌ بِشَكْلٍ بَارِزٍ فَوْقَ رَفِّ المِدْفَأَةِ.",
+      },
+      {
+        context: "Quiet Operation",
+        en: "She chose a silent quartz wall clock so the continuous ticking wouldn't distract her studying.",
+        ar: "اخْتَارَتْ سَاعَةَ حَائِطٍ صَامِتَةً حَتَّى لا تُشَتِّتَ دَقَّاتُهَا تَرْكِيزَهَا فِي الدِّرَاسَةِ.",
+      },
+      {
+        context: "Time Check",
+        en: "He glanced quickly at the wall clock to see if dinner was ready.",
+        ar: "أَلْقَى نَظْرَةً سَرِيعَةً عَلَى سَاعَةِ الحَائِطِ لِمَعْرِفَةِ مَا إِذَا كَانَ العَشَاءُ جَاهِزاً.",
+      },
+    ],
+    exampleSentence:
+      "A large vintage industrial wall clock hangs prominently above the fireplace mantel.",
+    exampleArabic:
+      "تُعَلَّقُ سَاعَةُ حَائِطٍ كَبِيرَةٌ كِلاسِيكِيَّةٌ بِشَكْلٍ بَارِزٍ فَوْقَ رَفِّ المِدْفَأَةِ.",
+  },
+  wardrobe: {
+    id: "wardrobe",
+    arabic: "خِزَانَةُ المَلابِس (دُولاب)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɔːr.droʊb",
+    pronunciationTip: "First syllable rhymes with 'war', second syllable rhymes with 'robe'.",
+    collocations: [
+      "hang in the wardrobe",
+      "spacious wardrobe",
+      "fitted wardrobe",
+      "open the wardrobe",
+      "wooden wardrobe",
+      "wardrobe doors",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hang up",
+        meaning: "place clothing on a hanger in a closet",
+        arabic: "يُعَلِّقُ المَلابِسَ",
+        example: "Hang up your heavy coat in the wardrobe.",
+      },
+      {
+        phrase: "pick out",
+        meaning: "choose an outfit",
+        arabic: "يَخْتَارُ مَلابِسَ",
+        example: "She opened the wardrobe to pick out a dress for the party.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Storage",
+        en: "All winter jackets and suits are hung inside the wardrobe.",
+        ar: "جَمِيعُ السُّتْرَاتِ الشَّتْوِيَّةِ وَالبِدَلِ مُعَلَّقَةٌ دَاخِلَ خِزَانَةِ المَلابِسِ.",
+      },
+      {
+        context: "Space",
+        en: "The bedroom features a large built-in wardrobe with sliding doors.",
+        ar: "تَتَمَيَّزُ غُرْفَةُ النَّوْمِ بِخِزَانَةِ مَلابِسَ مُدْمَجَةٍ كَبِيرَةٍ ذَاتِ أَبْوَابٍ سَحَّابَةٍ.",
+      },
+      {
+        context: "Routine",
+        en: "He locked the wardrobe before leaving for his business trip.",
+        ar: "أَقْفَلَ خِزَانَةَ المَلابِسِ قَبْلَ مُغَادَرَتِهِ فِي رِحْلَةِ العَمَلِ.",
+      },
+    ],
+    exampleSentence: "All winter jackets and suits are hung inside the wardrobe.",
+    exampleArabic:
+      "جَمِيعُ السُّتْرَاتِ الشَّتْوِيَّةِ وَالبِدَلِ مُعَلَّقَةٌ دَاخِلَ خِزَانَةِ المَلابِسِ.",
+  },
+  wastebasket: {
+    id: "wastebasket",
+    arabic: "سَلَّةُ المُهْمَلات",
+    partOfSpeech: "noun",
+    phonetic: "ˈweɪstˌbæs.kɪt",
+    pronunciationTip: "Compound word: 'WASTE' + 'BASKET'.",
+    collocations: [
+      "throw in the wastebasket",
+      "empty the wastebasket",
+      "bedroom wastebasket",
+      "metal wastebasket",
+      "lined wastebasket",
+      "toss into the wastebasket",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "throw away",
+        meaning: "discard trash into a bin",
+        arabic: "يَتَخَلَّصُ مِنَ القُمَامَة",
+        example: "Throw away that scrap paper into the wastebasket.",
+      },
+      {
+        phrase: "empty out",
+        meaning: "empty the contents of a bin",
+        arabic: "يُفْرِغُ السَّلَّة",
+        example: "He emptied out the office wastebasket at the end of the day.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Tidying Up",
+        en: "He crumpled the draft paper and tossed it directly into the wastebasket.",
+        ar: "كَرْمَشَ وَرَقَةَ المُسَوَّدَةِ وَأَلْقَاهَا مُبَاشَرَةً فِي سَلَّةِ المُهْمَلاتِ.",
+      },
+      {
+        context: "Room Cleanliness",
+        en: "Please empty the bedroom wastebasket before it overflows with trash.",
+        ar: "يُرْجَى إِفْرَاغُ سَلَّةِ مُهْمَلاتِ غُرْفَةِ النَّوْمِ قَبْلَ أَنْ تَفِيضَ بِالقُمَامَةِ.",
+      },
+      {
+        context: "Office Space",
+        en: "A discreet stainless steel wastebasket sits tucked under the study desk.",
+        ar: "تَسْتَقِرُّ سَلَّةُ مُهْمَلاتٍ صَغِيرَةٌ مِنْ سْتَانْلِسْ سْتِيل تَحْتَ مَكْتَبِ الدِّرَاسَةِ.",
+      },
+    ],
+    exampleSentence: "He crumpled the draft paper and tossed it directly into the wastebasket.",
+    exampleArabic:
+      "كَرْمَشَ وَرَقَةَ المُسَوَّدَةِ وَأَلْقَاهَا مُبَاشَرَةً فِي سَلَّةِ المُهْمَلاتِ.",
+  },
+  "watering-can": {
+    id: "watering-can",
+    arabic: "رَشَّاشُ مَاء (كَنَكَةُ رَيّ / مِرَشَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɔː.tər.ɪŋ ˌkæn",
+    pronunciationTip: "Compound noun: 'WATERING' (/ˈwɔː.tər.ɪŋ/) + 'CAN' (/kæn/).",
+    collocations: [
+      "fill the watering can",
+      "gentle shower from watering can",
+      "metal watering can",
+      "garden watering can",
+      "water flowers with a can",
+      "long-spout watering can",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "water down",
+        meaning: "give plants gentle moisture",
+        arabic: "يَرْوِي بِالمِرَشَّة",
+        example: "Water down the newly planted herb seedlings with a gentle rose spout.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Plant Care",
+        en: "She used a vintage copper watering can to gently hydrate her potted geraniums.",
+        ar: "اسْتَخْدَمَتْ مِرَشَّةَ مَاءٍ نُحَاسِيَّةً أَنِيقَةً لِرَيِّ زُهُورِ الجِيرَانْيُوم فِي الأَصَائِصِ.",
+      },
+      {
+        context: "Gentle Watering",
+        en: "The rose attachment on the watering can creates a soft sprinkle that won't harm young sprouts.",
+        ar: "تَصْنَعُ فُوَّهَةُ المِرَشَّةِ رَذَاذاً لَطِيفاً لا يُؤْذِي البَرَاعِمَ الصَّغِيرَةَ.",
+      },
+      {
+        context: "Indoor Plants",
+        en: "A long-spout watering can reaches easily between dense foliage without spilling.",
+        ar: "تَصِلُ مِرَشَّةُ المَاءِ ذَاتُ الفُوَّهَةِ الطَّوِيلَةِ بَيْنَ أَوْرَاقِ النَّبَاتَاتِ دُونَ انْسِكَابٍ.",
+      },
+    ],
+    exampleSentence:
+      "She used a vintage copper watering can to gently hydrate her potted geraniums.",
+    exampleArabic:
+      "اسْتَخْدَمَتْ مِرَشَّةَ مَاءٍ نُحَاسِيَّةً أَنِيقَةً لِرَيِّ زُهُورِ الجِيرَانْيُوم فِي الأَصَائِصِ.",
+  },
+  well: {
+    id: "well",
+    arabic: "بِئْرُ مَاء",
+    partOfSpeech: "noun",
+    phonetic: "wɛl",
+    pronunciationTip: "Short 'e' vowel /ɛ/ as in 'bell' or 'tell'.",
+    collocations: [
+      "water well",
+      "draw water from a well",
+      "deep well",
+      "stone well",
+      "bucket in the well",
+      "drinking well",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "draw up",
+        meaning: "pull up water using a bucket and rope",
+        arabic: "يَسْحَبُ المَاءَ مِنَ البِئْر",
+        example: "They drew up a bucket of icy cold water from the deep stone well.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Fresh Groundwater",
+        en: "They lowered a wooden bucket into the deep stone well to draw cool drinking water.",
+        ar: "أَنْزَلُوا دَلْواً خَشَبِيّاً فِي البِئْرِ الحَجَرِيِّ العَمِيقِ لِسَحْبِ مَاءِ الشُّرْبِ العَذْبِ.",
+      },
+      {
+        context: "Rural Supply",
+        en: "The farm relies on a modern borehole well for irrigating crops and watering livestock.",
+        ar: "تَعْتَمِدُ المَزْرَعَةُ عَلَى بِئْرٍ ارْتِوَازِيٍّ حَدِيثٍ لِرَيِّ المَحَاصِيلِ وَسِقَايَةِ المَاشِيَةِ.",
+      },
+      {
+        context: "Heritage Charm",
+        en: "An old wishing well made of weathered fieldstones decorates the farmhouse lawn.",
+        ar: "تُزَيِّنُ بِئْرٌ حَجَرِيَّةٌ أَثَرِيَّةٌ جَمِيلَةٌ حَدِيقَةَ بَيْتِ المَزْرَعَةِ الرِّيفِيِّ.",
+      },
+    ],
+    exampleSentence:
+      "They lowered a wooden bucket into the deep stone well to draw cool drinking water.",
+    exampleArabic:
+      "أَنْزَلُوا دَلْواً خَشَبِيّاً فِي البِئْرِ الحَجَرِيِّ العَمِيقِ لِسَحْبِ مَاءِ الشُّرْبِ العَذْبِ.",
+  },
+  wheelbarrow: {
+    id: "wheelbarrow",
+    arabic: "عَرَبَةُ يَد (بَرُوِيطَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwiːlˌbær.oʊ",
+    pronunciationTip: "Compound noun: 'WHEEL' (/wiːl/) + 'BARROW' (/ˈbær.oʊ/).",
+    collocations: [
+      "push a wheelbarrow",
+      "wheelbarrow of soil",
+      "heavy wheelbarrow",
+      "garden wheelbarrow",
+      "metal wheelbarrow",
+      "load the wheelbarrow",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wheel around",
+        meaning: "push and transport items in a barrow",
+        arabic: "يَنْقُلُ بِالعَرَبَة",
+        example: "He wheeled around a load of mulch for the flower beds.",
+      },
+      {
+        phrase: "tip out",
+        meaning: "dump contents from wheelbarrow",
+        arabic: "يَقْلِبُ / يُفْرِغُ الحُمُولَة",
+        example: "Tip out the gravel near the garden pathway.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Gardening Chores",
+        en: "He wheeled a barrow full of dark organic compost to enrich the raised garden beds.",
+        ar: "دَفَعَ عَرَبَةَ يَدٍ مَلِيئَةً بِالسَّمَادِ العُضْوِيِّ لِتَغْذِيَةِ أَحْوَاضِ الزِّرَاعَةِ.",
+      },
+      {
+        context: "Heavy Lifting",
+        en: "The pneumatic rubber tire makes it easy to push heavy wheelbarrows across uneven ground.",
+        ar: "يُسَهِّلُ الإِطَارُ المَطَّاطِيُّ دَفْعَ عَرَبَةِ اليَدِ الثَّقِيلَةِ عَبْرَ الأَرْضِ غَيْرِ المُسْتَوِيَةِ.",
+      },
+      {
+        context: "Hauling Produce",
+        en: "She loaded freshly picked orange pumpkins into the wheelbarrow for market transport.",
+        ar: "حَمَّلَتْ ثِمَارَ اليَقْطِينِ البُرْتُقَالِيَّةِ المَقْطُوفَةِ فِي عَرَبَةِ اليَدِ لِنَقْلِهَا لِلسُّوقِ.",
+      },
+    ],
+    exampleSentence:
+      "He wheeled a barrow full of dark organic compost to enrich the raised garden beds.",
+    exampleArabic:
+      "دَفَعَ عَرَبَةَ يَدٍ مَلِيئَةً بِالسَّمَادِ العُضْوِيِّ لِتَغْذِيَةِ أَحْوَاضِ الزِّرَاعَةِ.",
+  },
+  whisk: {
+    id: "whisk",
+    arabic: "مِخْفَقَةُ بَيْض (مَضْرَبُ سِلْك)",
+    partOfSpeech: "noun",
+    phonetic: "wɪsk",
+    pronunciationTip: "Short 'i' sound /ɪ/ as in 'risk' or 'dish'.",
+    collocations: [
+      "wire whisk",
+      "balloon whisk",
+      "beat with a whisk",
+      "whisk eggs",
+      "silicone whisk",
+      "whisk the sauce",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "whip up",
+        meaning: "beat rapidly to create foam or cream",
+        arabic: "يَخْفِقُ لِيُكَوِّنَ رَغْوَة",
+        example: "Whip up the egg whites until stiff peaks form.",
+      },
+      {
+        phrase: "blend in",
+        meaning: "mix smoothly without lumps",
+        arabic: "يَمْزُجُ دُونَ تَكَتُّلات",
+        example: "Whisk in the flour slowly to make a smooth gravy.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Whisking Eggs",
+        en: "Whisk the three eggs and a splash of milk vigorously until frothy.",
+        ar: "اخْفِقِ البَيْضَاتِ الثَّلاثَ مَعَ القَلِيلِ مِنَ الحَلِيبِ جَيِّداً حَتَّى تَتَكَوَّنَ رَغْوَةٌ.",
+      },
+      {
+        context: "Sauce Making",
+        en: "Use a wire whisk to combine melted butter and flour smoothly for a roux.",
+        ar: "اسْتَخْدِمْ مَضْرَبَ السِّلْكِ لِمَزْجِ الزُّبْدَةِ المُذَابَةِ مَعَ الدَّقِيقِ لِتَحْضِيرِ الصَّلْصَةِ.",
+      },
+      {
+        context: "Dessert Making",
+        en: "A balloon whisk is ideal for whipping heavy cream into soft billowy peaks.",
+        ar: "مِخْفَقَةُ السِّلْكِ البَالُونِيَّةُ مِثَالِيَّةٌ لِخَفْقِ الكْرِيمَةِ الثَّقِيلَةِ لِتُصْبِحَ هَشَّةً.",
+      },
+    ],
+    exampleSentence: "Whisk the three eggs and a splash of milk vigorously until frothy.",
+    exampleArabic:
+      "اخْفِقِ البَيْضَاتِ الثَّلاثَ مَعَ القَلِيلِ مِنَ الحَلِيبِ جَيِّداً حَتَّى تَتَكَوَّنَ رَغْوَةٌ.",
+  },
+  "wi-fi-router": {
+    id: "wi-fi-router",
+    arabic: "جِهَازُ التَّوْجِيه (رَاوْتَر الوَاي فَاي)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwaɪ.faɪ ˌraʊ.tər",
+    pronunciationTip: "Compound noun: 'WI-FI' (/ˈwaɪ.faɪ/) + 'ROUTER' (/ˈraʊ.tər/ or /ˈruː.tər/).",
+    collocations: [
+      "high-speed Wi-Fi router",
+      "reboot the router",
+      "connect to the router",
+      "dual-band router",
+      "router signal",
+      "flashing lights on the router",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "reboot",
+        meaning: "restart router to fix connection",
+        arabic: "يُعِيدُ التَّشْغِيل",
+        example: "Unplug and reboot the Wi-Fi router if the internet slows down.",
+      },
+      {
+        phrase: "hook up to",
+        meaning: "connect ethernet cable",
+        arabic: "يَصِلُ بِالشَّبَكَة",
+        example: "Hook up the smart TV directly to the router with a LAN cable.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Home Internet",
+        en: "The dual-band Wi-Fi router delivers strong wireless signals to every room in the house.",
+        ar: "يُوَفِّرُ رَاوْتَرُ الوَاي فَاي مُزْدَوَجُ التَّرَدُّدِ إِشَارَاتٍ قَوِيَّةً لِكُلِّ غُرْفَةٍ فِي المَنْزِلِ.",
+      },
+      {
+        context: "Troubleshooting",
+        en: "He restarted the Wi-Fi router when the connection dropped during the video call.",
+        ar: "أَعَادَ تَشْغِيلَ جِهَازِ الرَّاوْتَرِ عِنْدَمَا انْقَطَعَ الاِتِّصَالُ خِلالَ مُكَالَمَةِ الفِيدْيُو.",
+      },
+      {
+        context: "Placement",
+        en: "Place your Wi-Fi router in an elevated, central location to avoid signal blockages.",
+        ar: "ضَعْ رَاوْتَرَ الوَاي فَاي فِي مَكَانٍ مُرْتَفِعٍ وَمَرْكَزِيٍّ لِتَفَادِي ضَعْفِ الإِشَارَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The dual-band Wi-Fi router delivers strong wireless signals to every room in the house.",
+    exampleArabic:
+      "يُوَفِّرُ رَاوْتَرُ الوَاي فَاي مُزْدَوَجُ التَّرَدُّدِ إِشَارَاتٍ قَوِيَّةً لِكُلِّ غُرْفَةٍ فِي المَنْزِلِ.",
+  },
+  windmill: {
+    id: "windmill",
+    arabic: "طَاحُونَةُ هَوَاء",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɪnd.mɪl",
+    pronunciationTip: "Compound noun: 'WIND' (/wɪnd/) + 'MILL' (/mɪl/).",
+    collocations: [
+      "wooden windmill",
+      "blades of a windmill",
+      "pump water with a windmill",
+      "historic windmill",
+      "turn of the windmill",
+      "traditional windmill",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "spin around",
+        meaning: "rotate with the force of wind",
+        arabic: "يَدُورُ مَعَ الرِّيَاح",
+        example: "The large wooden windmill blades spun around in the brisk breeze.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Pumping Water",
+        en: "The traditional prairie windmill pumps fresh underground water for the pasture cattle.",
+        ar: "تَضُخُّ طَاحُونَةُ الهَوَاءِ التَّقْلِيدِيَّةُ المِيَاهَ الجَوْفِيَّةَ لِمَاشِيَةِ المَرْعَى.",
+      },
+      {
+        context: "Historic Milling",
+        en: "The historic stone windmill once ground grain into fine flour for local bakers.",
+        ar: "كَانَتْ طَاحُونَةُ الهَوَاءِ الحَجَرِيَّةُ تَطْحَنُ الحُبُوبَ قَدِيماً إِلَى دَقِيقٍ نَاعِمٍ.",
+      },
+      {
+        context: "Clean Energy",
+        en: "Modern wind turbines generate clean renewable electricity across windy rural plains.",
+        ar: "تُوَلِّدُ عَنَفَاتُ الرِّيَاحِ الحَدِيثَةُ طَاقَةً كَهْرَبَائِيَّةً نَظِيفَةً عَبْرَ السُّهُولِ الرِّيفِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "The traditional prairie windmill pumps fresh underground water for the pasture cattle.",
+    exampleArabic:
+      "تَضُخُّ طَاحُونَةُ الهَوَاءِ التَّقْلِيدِيَّةُ المِيَاهَ الجَوْفِيَّةَ لِمَاشِيَةِ المَرْعَى.",
+  },
+  window: {
+    id: "window",
+    arabic: "نَافِذَة (شُبَّاك)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɪn.doʊ",
+    pronunciationTip: "Stress on the first syllable 'WIN', followed by /doʊ/.",
+    collocations: [
+      "open the window",
+      "close the window",
+      "look out the window",
+      "window pane",
+      "bedroom window",
+      "clean the window",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "look out",
+        meaning: "gaze through a window",
+        arabic: "يَنْظُرُ مِنَ النَّافِذَة",
+        example: "She loved to look out the window and watch the falling rain.",
+      },
+      {
+        phrase: "open up",
+        meaning: "open wide for fresh air",
+        arabic: "يَفْتَحُ لِلتَّهْوِيَة",
+        example: "Open up the windows to air out the bedroom.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Ventilation",
+        en: "Open the window slightly to let fresh morning air circulate.",
+        ar: "افْتَحِ النَّافِذَةَ قَلِيلاً لِلسَّمَاحِ لِلهَوَاءِ الصَّبَاحِيِّ النَّقِيِّ بِالدُّخُولِ.",
+      },
+      {
+        context: "View",
+        en: "From his bedroom window, he could see the tall green trees in the park.",
+        ar: "مِنْ نَافِذَةِ غُرْفَةِ نَوْمِهِ، كَانَ بِإِمْكَانِهِ رُؤْيَةُ الأَشْجَارِ الخَضْرَاءِ فِي الحَدِيقَةِ.",
+      },
+      {
+        context: "Weather Safety",
+        en: "Make sure all windows are tightly closed before the thunderstorm begins.",
+        ar: "تَأَكَّدْ مِنْ إِغْلاقِ جَمِيعِ النَّوَافِذِ بِإِحْكَامٍ قَبْلَ بَدْءِ العَاصِفَةِ الرَّعْدِيَّةِ.",
+      },
+    ],
+    exampleSentence: "Open the window slightly to let fresh morning air circulate.",
+    exampleArabic:
+      "افْتَحِ النَّافِذَةَ قَلِيلاً لِلسَّمَاحِ لِلهَوَاءِ الصَّبَاحِيِّ النَّقِيِّ بِالدُّخُولِ.",
+  },
+  wok: {
+    id: "wok",
+    arabic: "مِقْلَاةٌ صِينِيَّة (وُوك)",
+    partOfSpeech: "noun",
+    phonetic: "wɑːk",
+    pronunciationTip: "Rhymes with 'talk' or 'walk' (/wɑːk/).",
+    collocations: [
+      "stir-fry in a wok",
+      "carbon steel wok",
+      "heat the wok",
+      "toss noodles in a wok",
+      "round-bottomed wok",
+      "smoking hot wok",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "stir-fry",
+        meaning: "cook vegetables quickly over high heat",
+        arabic: "يُشَوِّحُ سَرِيعاً",
+        example: "Stir-fry the sliced beef and broccoli in the smoking hot wok.",
+      },
+      {
+        phrase: "toss up",
+        meaning: "flip ingredients in the wok",
+        arabic: "يَقْلِبُ فِي الوُوك",
+        example: "The chef tossed up the egg noodles effortlessly.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Stir-Frying",
+        en: "The chef tossed crispy vegetables and ginger over high heat in the large wok.",
+        ar: "قَلَّبَ الطَّاهِي الخُضْرَاوَاتِ المُقَرْمَشَةَ وَالزَّنْجَبِيلَ عَلَى نَارٍ عَالِيَةٍ فِي الوُوكِ الكَبِيرِ.",
+      },
+      {
+        context: "Cooking Technique",
+        en: "A seasoned carbon steel wok imparts a wonderful smoky flavor to fried rice.",
+        ar: "يَمْنَحُ الوُوكُ الفُولاذِيُّ المُمَتَّعُ نَكْهَةً دُخَانِيَّةً رَائِعَةً لِلأَرُزِّ المَقْلِيِّ.",
+      },
+      {
+        context: "Asian Cuisine",
+        en: "Heat peanut oil until shimmering before adding aromatics to the wok.",
+        ar: "سَخِّنْ زَيْتَ الفُولِ السُّودَانِيِّ جَيِّداً قَبْلَ إِضَافَةِ المُنَكِّهَاتِ إِلَى المِقْلاةِ الصِّينِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "The chef tossed crispy vegetables and ginger over high heat in the large wok.",
+    exampleArabic:
+      "قَلَّبَ الطَّاهِي الخُضْرَاوَاتِ المُقَرْمَشَةَ وَالزَّنْجَبِيلَ عَلَى نَارٍ عَالِيَةٍ فِي الوُوكِ الكَبِيرِ.",
+  },
+  wool: {
+    id: "wool",
+    arabic: "صُوف",
+    partOfSpeech: "noun",
+    phonetic: "wʊl",
+    pronunciationTip: "Short 'oo' vowel /ʊ/ as in 'wood' or 'book'.",
+    collocations: [
+      "pure wool",
+      "sheep's wool",
+      "spin wool",
+      "warm wool sweater",
+      "wool blanket",
+      "raw fleece wool",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "spin into",
+        meaning: "twist raw wool fibers into yarn",
+        arabic: "يَغْزِلُ الصُّوف",
+        example: "The artisan spun raw washed wool into durable knitting yarn.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Natural Fiber",
+        en: "Natural sheep's wool is water-resistant, breathable, and wonderfully warm in freezing weather.",
+        ar: "يَتَمَيَّزُ صُوفُ الأَغْنَامِ الطَّبِيعِيُّ بِمُقَاوَمَتِهِ لِلْمَاءِ وَدِفْئِهِ الفَائِقِ فِي البَرْدِ.",
+      },
+      {
+        context: "Crafts & Textiles",
+        en: "She washed and carded the raw fleece wool before spinning it on an old wooden wheel.",
+        ar: "غَسَلَتْ وَمَشَّطَتْ صُوفَ الفَرْوِ الخَامَ قَبْلَ غَزْلِهِ عَلَى مِغْزَلٍ خَشَبِيٍّ.",
+      },
+      {
+        context: "Clothing",
+        en: "Handmade socks and sweaters knitted from pure merino wool last for decades.",
+        ar: "تَدُومُ الجَوَارِبُ وَالكَنْزَاتُ المَحْبُوكَةُ مِنْ صُوفِ المِيرِينُو النَّقِيِّ لِعُقُودٍ.",
+      },
+    ],
+    exampleSentence:
+      "Natural sheep's wool is water-resistant, breathable, and wonderfully warm in freezing weather.",
+    exampleArabic:
+      "يَتَمَيَّزُ صُوفُ الأَغْنَامِ الطَّبِيعِيُّ بِمُقَاوَمَتِهِ لِلْمَاءِ وَدِفْئِهِ الفَائِقِ فِي البَرْدِ.",
   },
 };
 
-/** Helper to retrieve dictionary data with sensible fallbacks. */
+/**
+ * Retrieve verified dictionary entry with comprehensive fallbacks.
+ */
 export function getLexiconEntry(wordId: string, fallbackLabel?: string): LexiconEntry {
   const normalized = wordId.toLowerCase().trim();
   if (LEXICON_DICTIONARY[normalized]) {
     return LEXICON_DICTIONARY[normalized];
   }
 
-  const label = fallbackLabel || wordId.replace(/-/g, " ");
+  // Also check without hyphens or underscores
+  const cleanKey = normalized.replace(/[-_]/g, "");
+  const foundKey = Object.keys(LEXICON_DICTIONARY).find(
+    (k) => k.replace(/[-_]/g, "").toLowerCase() === cleanKey
+  );
+  if (foundKey) {
+    return LEXICON_DICTIONARY[foundKey];
+  }
+
+  const label = fallbackLabel || wordId.replace(/[-_]/g, " ");
   return {
     id: wordId,
     arabic: label,
     partOfSpeech: "noun",
-    collocations: [`use the ${label}`, `clean ${label}`, `look at the ${label}`],
-    exampleSentence: `The ${label} is an important part of our daily life.`,
-    exampleArabic: `هذا العنصر جزء أساسي ومهم في حياتنا اليومية.`,
+    collocations: [`use the ${label}`, `clean the ${label}`, `look at the ${label}`],
+    sentences: [
+      {
+        context: "Everyday Usage",
+        en: `The ${label} is used in daily life.`,
+        ar: `يُسْتَخْدَمُ هَذَا العُنْصُرُ فِي الحَيَاةِ اليَوْمِيَّةِ.`,
+      },
+    ],
+    exampleSentence: `The ${label} is used in daily life.`,
+    exampleArabic: `يُسْتَخْدَمُ هَذَا العُنْصُرُ فِي الحَيَاةِ اليَوْمِيَّةِ.`,
   };
 }

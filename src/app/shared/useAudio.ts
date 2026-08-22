@@ -68,6 +68,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
 
   const speak = useCallback(
     (text: string, overrideLang?: string) => {
+      const cleanText = text.replace(/[-_]/g, " ").trim();
       const targetLang = overrideLang ?? lang;
 
       const clearStall = () => {
@@ -136,7 +137,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
             ? localStorage.getItem("wordpix_elevenlabs_voice_id")
             : null) ||
           "Xb7hH8MSUJpSbSDYk0k2";
-        const cacheKey = `${voiceId}:${text}`;
+        const cacheKey = `${voiceId}:${cleanText}`;
 
         const playBlobUrl = (blobUrl: string) => {
           const audio = new Audio(blobUrl);
@@ -191,7 +192,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
                 "xi-api-key": apiKey,
               },
               body: JSON.stringify({
-                text,
+                text: cleanText,
                 model_id: "eleven_turbo_v2_5",
                 voice_settings: {
                   stability: 0.7,
@@ -212,18 +213,18 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
               })
               .catch((err) => {
                 console.error("ElevenLabs error, falling back to synthesis", err);
-                fallbackToSynthesis(text, targetLang);
+                fallbackToSynthesis(cleanText, targetLang);
               });
           })
           .catch((err) => {
             console.warn("IndexedDB audio cache lookup error", err);
-            fallbackToSynthesis(text, targetLang);
+            fallbackToSynthesis(cleanText, targetLang);
           });
 
         return;
       }
 
-      fallbackToSynthesis(text, targetLang);
+      fallbackToSynthesis(cleanText, targetLang);
     },
     [lang, effectiveRate, pitch, volume]
   );

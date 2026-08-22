@@ -410,7 +410,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
   {
     id: "light-switch",
     label: "Light Switch",
-    phonetic: "laɪt swɪtʃ",
+    phonetic: "ˈlaɪt ˌswɪtʃ",
     topic: "features",
     description: "A small plate on the wall you press to make the room bright or dark.",
     img: `${LOCAL_WORD_IMAGES}/light-switch.webp`,
