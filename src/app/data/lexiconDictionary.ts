@@ -17784,6 +17784,2426 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleArabic:
       "تَنَاوَلَ رَشْفَةً صَغِيرَةً مِنْ غَسُولِ النَّعْنَاعِ لِيَتَغَرْغَرَ لِمُدَّةِ ثَلاثِينَ ثَانِيَةً بَعْدَ فَرْكِ الأَسْنَانِ.",
   },
+  pencil: {
+    id: "pencil",
+    arabic: "قَلَمُ رَصَاص",
+    partOfSpeech: "noun",
+    phonetic: "ˈpɛn.səl",
+    pronunciationTip: "Pronounce 'PEN-sul' (/ˈpɛn.səl/).",
+    collocations: [
+      "lead pencil",
+      "sharpen a pencil",
+      "colored pencil",
+      "pencil shavings",
+      "graphite pencil",
+      "mechanical pencil",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pencil in",
+        meaning: "schedule tentatively",
+        arabic: "يُحَدِّدُ مَوْعِدًا مَبْدَئِيًّا",
+        example: "Let's pencil in the study session for next Tuesday afternoon.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Writing Practice",
+        en: "The student sharpened his yellow pencil before starting the math quiz.",
+        ar: "بَرَى الطَّالِبُ قَلَمَ الرَّصَاصِ الأَصْفَرَ قَبْلَ بَدْءِ اخْتِبَارِ الرِّيَاضِيَّاتِ.",
+      },
+      {
+        context: "Drawing Class",
+        en: "Sketch the initial outline lightly with a soft graphite pencil.",
+        ar: "ارْسُمِ المُخَطَّطَ الأَوَّلِيَّ بِخِفَّةٍ بِقَلَمِ رَصَاصٍ غَرَافِيتِيٍّ نَاعِمٍ.",
+      },
+      {
+        context: "Desk Organization",
+        en: "A cup on the teacher's desk held several freshly sharpened pencils.",
+        ar: "كَانَ الكُوبُ عَلَى مَكْتَبِ المُعَلِّمِ يَحْتَوِي عَلَى عِدَّةِ أَقْلامِ رَصَاصٍ مَبْرِيَّةٍ حَدِيثًا.",
+      },
+    ],
+    exampleSentence: "The student sharpened his yellow pencil before starting the math quiz.",
+    exampleArabic:
+      "بَرَى الطَّالِبُ قَلَمَ الرَّصَاصِ الأَصْفَرَ قَبْلَ بَدْءِ اخْتِبَارِ الرِّيَاضِيَّاتِ.",
+  },
+  pen: {
+    id: "pen",
+    arabic: "قَلَمُ حِبْر",
+    partOfSpeech: "noun",
+    phonetic: "pɛn",
+    pronunciationTip: "Short 'e' sound /ɛ/: 'PEN' (/pɛn/).",
+    collocations: [
+      "ballpoint pen",
+      "fountain pen",
+      "gel pen",
+      "blue ink pen",
+      "click a pen",
+      "smooth writing pen",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pen down",
+        meaning: "write down thoughts on paper",
+        arabic: "يُدَوِّنُ كِتَابَةً",
+        example: "Take a moment to pen down your main ideas before the essay.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Note Taking",
+        en: "She used a smooth blue ballpoint pen to write down lecture notes.",
+        ar: "اسْتَخْدَمَتْ قَلَمَ حِبْرٍ جَافٍّ أَزْرَقَ نَاعِمًا لِتَدْوِينِ مُلَاحَظَاتِ المُحَاضَرَةِ.",
+      },
+      {
+        context: "Signing Documents",
+        en: "The principal signed the official graduation certificate with a black pen.",
+        ar: "وَقَّعَ المَدِيرُ شَهَادَةَ التَّخَرُّجِ الرَّسْمِيَّةَ بِقَلَمِ حِبْرٍ أَسْوَدَ.",
+      },
+      {
+        context: "Creative Writing",
+        en: "He prefers jotting journal entries with a classic fountain pen.",
+        ar: "يُفَضِّلُ تَدْوِينَ مُذَكَّرَاتِهِ بِقَلَمِ حِبْرٍ سَائِلٍ كَلَاسِيكِيٍّ.",
+      },
+    ],
+    exampleSentence: "She used a smooth blue ballpoint pen to write down lecture notes.",
+    exampleArabic:
+      "اسْتَخْدَمَتْ قَلَمَ حِبْرٍ جَافٍّ أَزْرَقَ نَاعِمًا لِتَدْوِينِ مُلَاحَظَاتِ المُحَاضَرَةِ.",
+  },
+  eraser: {
+    id: "eraser",
+    arabic: "مِمْحَاة",
+    partOfSpeech: "noun",
+    phonetic: "ɪˈreɪsər",
+    pronunciationTip: "Pronounce 'ih-RAY-ser' (/ɪˈreɪ.sər/).",
+    collocations: [
+      "rubber eraser",
+      "pencil eraser",
+      "kneaded eraser",
+      "eraser crumbs",
+      "rub with an eraser",
+      "white vinyl eraser",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "rub out",
+        meaning: "erase marks from paper",
+        arabic: "يَمْسَحُ الخَطَأ",
+        example: "Carefully rub out the mistake without tearing the delicate paper.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Correcting Mistakes",
+        en: "He used a soft rubber eraser to remove the incorrect calculation.",
+        ar: "اسْتَخْدَمَ مِمْحَاةً مَطَّاطِيَّةً نَاعِمَةً لِمَسْحِ الحِسَابِ غَيْرِ الصَّحِيحِ.",
+      },
+      {
+        context: "Art Class",
+        en: "Artists use a kneaded eraser to lift highlights from charcoal sketches.",
+        ar: "يَسْتَخْدِمُ الفَنَّانُونَ مِمْحَاةَ العَجِينِ لِإِبْرَازِ الإِضَاءَةِ فِي رُسُومِ الفَحْمِ.",
+      },
+      {
+        context: "Classroom Supplies",
+        en: "She brushed away the eraser shavings before submitting her test.",
+        ar: "نَفَضَتْ فُتَاتَ المِمْحَاةِ قَبْلَ تَسْلِيمِ اخْتِبَارِهَا.",
+      },
+    ],
+    exampleSentence: "He used a soft rubber eraser to remove the incorrect calculation.",
+    exampleArabic:
+      "اسْتَخْدَمَ مِمْحَاةً مَطَّاطِيَّةً نَاعِمَةً لِمَسْحِ الحِسَابِ غَيْرِ الصَّحِيحِ.",
+  },
+  ruler: {
+    id: "ruler",
+    arabic: "مِسْطَرَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈruːlər",
+    pronunciationTip: "Pronounce 'ROO-ler' (/ˈruː.lər/).",
+    collocations: [
+      "wooden ruler",
+      "plastic ruler",
+      "measure with a ruler",
+      "centimeter ruler",
+      "draw a line with a ruler",
+      "transparent ruler",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "rule out",
+        meaning: "draw a straight line across",
+        arabic: "يُسَطِّرُ بِالمِسْطَرَة",
+        example: "Rule out neat margins along the left edge of each notebook page.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Geometry Class",
+        en: "She placed her clear plastic ruler on the page to draw a straight five-centimeter line.",
+        ar: "وَضَعَتْ مِسْطَرَتَهَا البَلَاسْتِيكِيَّةَ الشَّفَّافَةَ عَلَى الصَّفْحَةِ لِرَسْمِ خَطٍّ مُسْتَقِيمٍ بِطُولِ خَمْسَةِ سَنْتِيمِتْرَاتٍ.",
+      },
+      {
+        context: "Measuring Length",
+        en: "Students used a wooden metric ruler to measure the dimensions of their desks.",
+        ar: "اسْتَخْدَمَ الطُّلَّابُ مِسْطَرَةً خَشَبِيَّةً مِتْرِيَّةً لِقِيَاسِ أَبْعَادِ مَكَاتِبِهِمْ.",
+      },
+      {
+        context: "Technical Drawing",
+        en: "A metal ruler provides high precision when cutting cardboard models.",
+        ar: "تُوَفِّرُ المِسْطَرَةُ المَعْدَنِيَّةُ دِقَّةً عَالِيَةً عِنْدَ قَطْعِ نَمَاذِجِ الوَرَقِ المُقَوَّى.",
+      },
+    ],
+    exampleSentence:
+      "She placed her clear plastic ruler on the page to draw a straight five-centimeter line.",
+    exampleArabic:
+      "وَضَعَتْ مِسْطَرَتَهَا البَلَاسْتِيكِيَّةَ الشَّفَّافَةَ عَلَى الصَّفْحَةِ لِرَسْمِ خَطٍّ مُسْتَقِيمٍ بِطُولِ خَمْسَةِ سَنْتِيمِتْرَاتٍ.",
+  },
+  marker: {
+    id: "marker",
+    arabic: "قَلَمُ تَخْطِيط (مَارْكَر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmɑːrkər",
+    pronunciationTip: "Pronounce 'MAR-ker' (/ˈmɑːr.kər/).",
+    collocations: [
+      "dry-erase marker",
+      "permanent marker",
+      "colored markers",
+      "thick marker tip",
+      "marker cap",
+      "washable marker",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "mark up",
+        meaning: "highlight or annotate with a marker",
+        arabic: "يُعَلِّمُ أَوْ يُظَلِّلُ بِالمَارْكَر",
+        example: "The teacher marked up the poster with a bright red dry-erase marker.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Whiteboard Presentation",
+        en: "The teacher used a black dry-erase marker to write equations on the board.",
+        ar: "اسْتَخْدَمَ المُعَلِّمُ قَلَمَ تَخْطِيطٍ جَافًّا أَسْوَدَ لِكِتَابَةِ المُعَادَلَاتِ عَلَى اللَّوْحِ.",
+      },
+      {
+        context: "Poster Project",
+        en: "Kids colored their science fair poster with vibrant washable markers.",
+        ar: "لَوَّنَ الأَطْفَالُ مُلْصَقَ مَعْرِضِ العُلُومِ بِأَقْلَامِ تَخْطِيطٍ زَاهِيَةٍ قَابِلَةٍ لِلْغَسِيلِ.",
+      },
+      {
+        context: "Labeling Supplies",
+        en: "Write your name on the binder spine with a permanent black marker.",
+        ar: "اكْتُبِ اسْمَكَ عَلَى كَعْبِ المِلَفِّ بِقَلَمِ تَخْطِيطٍ أَسْوَدَ دَائِمٍ.",
+      },
+    ],
+    exampleSentence: "The teacher used a black dry-erase marker to write equations on the board.",
+    exampleArabic:
+      "اسْتَخْدَمَ المُعَلِّمُ قَلَمَ تَخْطِيطٍ جَافًّا أَسْوَدَ لِكِتَابَةِ المُعَادَلَاتِ عَلَى اللَّوْحِ.",
+  },
+  crayon: {
+    id: "crayon",
+    arabic: "قَلَمُ تَلْوِينٍ شَمْعِيّ (أَلْوَانُ شَمْع)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkreɪ.ɑːn",
+    pronunciationTip: "Pronounce 'CRAY-on' (/ˈkreɪ.ɑːn/).",
+    collocations: [
+      "box of crayons",
+      "wax crayon",
+      "bright crayons",
+      "broken crayon",
+      "color with crayons",
+      "crayon drawing",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "color in",
+        meaning: "fill an outline with wax pigment",
+        arabic: "يُلَوِّنُ بِالشَّمْع",
+        example: "The kindergarteners loved to color in animal shapes with wax crayons.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Kindergarten Art",
+        en: "The child selected a bright red crayon to color the drawing of an apple.",
+        ar: "اخْتَارَ الطِّفْلُ قَلَمَ تَلْوِينٍ شَمْعِيًّا أَحْمَرَ زَاهِيًا لِتَلْوِينِ رَسْمَةِ التُّفَّاحَةِ.",
+      },
+      {
+        context: "Coloring Book",
+        en: "A 64-pack box of crayons includes every shade from sky blue to forest green.",
+        ar: "تَتَضَمَّنُ عُلْبَةُ أَلْوَانِ الشَّمْعِ ذَاتُ الـ 64 لَوْنًا كُلَّ تَدَرُّجٍ مِنَ الأَزْرَقِ السَّمَاوِيِّ إِلَى الأَخْضَرِ الغَابِيِّ.",
+      },
+      {
+        context: "Creative Play",
+        en: "Children sorted their wax crayons by color into small plastic cups.",
+        ar: "فَرَزَ الأَطْفَالُ أَقْلَامَ تَلْوِينِهِمُ الشَّمْعِيَّةَ حَسَبَ اللَّوْنِ فِي أَكْوَابٍ بَلَاسْتِيكِيَّةٍ صَغِيرَةٍ.",
+      },
+    ],
+    exampleSentence: "The child selected a bright red crayon to color the drawing of an apple.",
+    exampleArabic:
+      "اخْتَارَ الطِّفْلُ قَلَمَ تَلْوِينٍ شَمْعِيًّا أَحْمَرَ زَاهِيًا لِتَلْوِينِ رَسْمَةِ التُّفَّاحَةِ.",
+  },
+  "colored-pencil": {
+    id: "colored-pencil",
+    arabic: "قَلَمُ تَلْوِينٍ خَشَبِيّ",
+    partOfSpeech: "noun",
+    phonetic: "ˈkʌlərd ˈpɛnsəl",
+    pronunciationTip: "Pronounce 'KUL-erd PEN-sul' (/ˈkʌl.ərd ˈpɛn.səl/).",
+    collocations: [
+      "set of colored pencils",
+      "blend colored pencils",
+      "sharpen colored pencils",
+      "soft core colored pencil",
+      "shading with colored pencils",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "shade in",
+        meaning: "fill with gradated pencil hues",
+        arabic: "يُظَلِّلُ بِأَلْوَانِ الخَشَب",
+        example:
+          "Shade in the mountain background using three different shades of colored pencils.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Geography Map",
+        en: "Students used a green colored pencil to shade the continents on their world map.",
+        ar: "اسْتَخْدَمَ الطُّلَّابُ قَلَمَ تَلْوِينٍ خَشَبِيًّا أَخْضَرَ لِتَظْلِيلِ القَارَّاتِ عَلَى خَرِيطَةِ العَالَمِ الخَاصَّةِ بِهِمْ.",
+      },
+      {
+        context: "Detailed Art",
+        en: "Colored pencils allow artists to create fine details and smooth gradients.",
+        ar: "تُتِيحُ أَقْلَامُ التَّلْوِينِ الخَشَبِيَّةُ لِلْفَنَّانِينَ إِنْشَاءَ تَفَاصِيلَ دَقِيقَةٍ وَتَدَرُّجَاتٍ لَوْنِيَّةٍ نَاعِمَةٍ.",
+      },
+      {
+        context: "School Supplies",
+        en: "He neatly arranged his 24-color pencil set inside a tin storage box.",
+        ar: "رَتَّبَ طَقْمَ أَقْلَامِ التَّلْوِينِ الخَشَبِيَّةِ المُكَوَّنَ مِنْ 24 لَوْنًا بِعِنَايَةٍ دَاخِلَ صُنْدُوقٍ مَعْدَنِيٍّ.",
+      },
+    ],
+    exampleSentence:
+      "Students used a green colored pencil to shade the continents on their world map.",
+    exampleArabic:
+      "اسْتَخْدَمَ الطُّلَّابُ قَلَمَ تَلْوِينٍ خَشَبِيًّا أَخْضَرَ لِتَظْلِيلِ القَارَّاتِ عَلَى خَرِيطَةِ العَالَمِ الخَاصَّةِ بِهِمْ.",
+  },
+  highlighter: {
+    id: "highlighter",
+    arabic: "قَلَمُ تَمْيِيزٍ بَصَرِيّ (هَايْلَايْتَر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈhaɪˌlaɪtər",
+    pronunciationTip: "Pronounce 'HIGH-ly-ter' (/ˈhaɪˌlaɪ.tər/).",
+    collocations: [
+      "yellow highlighter",
+      "fluorescent highlighter",
+      "pastel highlighter",
+      "highlight text",
+      "chisel tip highlighter",
+      "highlight important notes",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "stand out",
+        meaning: "become prominent through bright coloring",
+        arabic: "يَبْرُزُ بِمُسَاعَدَةِ التَّظْلِيل",
+        example:
+          "Using a neon highlighter makes key vocabulary terms stand out on the study guide.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Study Session",
+        en: "She used a neon yellow highlighter to emphasize key vocabulary in her textbook.",
+        ar: "اسْتَخْدَمَتْ قَلَمَ تَمْيِيزٍ نِيُونِيًّا أَصْفَرَ لِلتَّأْكِيدِ عَلَى المُفْرَدَاتِ الرَّئِيسِيَّةِ فِي كِتَابِهَا المَدْرَسِيِّ.",
+      },
+      {
+        context: "Exam Preparation",
+        en: "Highlighting major formulas helps you locate them quickly during review.",
+        ar: "يُسَاعِدُ تَمْيِيزُ الصِّيَغِ الرَّئِيسِيَّةِ فِي العُثُورِ عَلَيْهَا بِسُرْعَةٍ خِلَالَ المُرَاجَعَةِ.",
+      },
+      {
+        context: "Pastel Stationery",
+        en: "Pastel highlighters provide soft, aesthetic colors that do not bleed through pages.",
+        ar: "تُوَفِّرُ أَقْلَامُ التَّمْيِيزِ البَاسْتِيلِيَّةُ أَلْوَانًا نَاعِمَةً لَا تَنْفُذُ عَبْرَ الصَّفَحَاتِ.",
+      },
+    ],
+    exampleSentence:
+      "She used a neon yellow highlighter to emphasize key vocabulary in her textbook.",
+    exampleArabic:
+      "اسْتَخْدَمَتْ قَلَمَ تَمْيِيزٍ نِيُونِيًّا أَصْفَرَ لِلتَّأْكِيدِ عَلَى المُفْرَدَاتِ الرَّئِيسِيَّةِ فِي كِتَابِهَا المَدْرَسِيِّ.",
+  },
+  "pencil-sharpener": {
+    id: "pencil-sharpener",
+    arabic: "مِبْرَاة (بَرَّايَةُ أَقْلَام)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpɛnsəl ˌʃɑːrpənər",
+    pronunciationTip: "Pronounce 'PEN-sul SHAR-pen-er' (/ˈpɛn.səl ˌʃɑːr.pən.ər/).",
+    collocations: [
+      "electric pencil sharpener",
+      "handheld sharpener",
+      "dual-hole sharpener",
+      "sharpener shavings container",
+      "turn the sharpener",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sharpen up",
+        meaning: "make a dull tip pointed",
+        arabic: "يَبْرِي حَتَّى يَشْحَذَ السِّنّ",
+        example: "He walked up to the wall sharpener to sharpen up his dull pencil point.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Classroom Routine",
+        en: "He twisted his dull pencil inside the handheld sharpener until the tip was fine.",
+        ar: "أَدَارَ قَلَمَهُ غَيْرَ الحَادِّ دَاخِلَ المِبْرَاةِ اليَدَوِيَّةِ حَتَّى أَصْبَحَ سِنُّهُ دَقِيقًا.",
+      },
+      {
+        context: "Electric Sharpener",
+        en: "The electric pencil sharpener buzzes softly whenever a student inserts a lead pencil.",
+        ar: "تُصْدِرُ المِبْرَاةُ الكَهْرَبَائِيَّةُ طَنِينًا خَفِيفًا كُلَّمَا أَدْخَلَ طَالِبٌ قَلَمَ رَصَاصٍ.",
+      },
+      {
+        context: "Desk Maintenance",
+        en: "Empty the sharpener shaving receptacle into the recycling bin when it fills.",
+        ar: "أَفْرِغْ حَاوِيَةَ فُتَاتِ المِبْرَاةِ فِي سَلَّةِ التَّدْوِيرِ عِنْدَمَا تَمْتَلِئُ.",
+      },
+    ],
+    exampleSentence:
+      "He twisted his dull pencil inside the handheld sharpener until the tip was fine.",
+    exampleArabic:
+      "أَدَارَ قَلَمَهُ غَيْرَ الحَادِّ دَاخِلَ المِبْرَاةِ اليَدَوِيَّةِ حَتَّى أَصْبَحَ سِنُّهُ دَقِيقًا.",
+  },
+  "pencil-case": {
+    id: "pencil-case",
+    arabic: "مِقْلَمَة (حَقِيبَةُ أَقْلَام)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpɛnsəl keɪs",
+    pronunciationTip: "Pronounce 'PEN-sul kays' (/ˈpɛn.səl keɪs/).",
+    collocations: [
+      "zippered pencil case",
+      "hardtop pencil case",
+      "pack a pencil case",
+      "pencil case compartments",
+      "stationery pouch",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pack away",
+        meaning: "store stationery inside a case",
+        arabic: "يَحْزِمُ الأَدَوَاتِ فِي المِقْلَمَة",
+        example: "Pack away your pens and eraser inside your pencil case before the bell rings.",
+      },
+    ],
+    sentences: [
+      {
+        context: "School Morning",
+        en: "She unzipped her floral pencil case to retrieve a blue pen and a ruler.",
+        ar: "فَتَحَتْ سَحَّابَ مِقْلَمَتِهَا المُزَهَّرَةِ لِإِخْرَاجِ قَلَمِ حِبْرٍ أَزْرَقَ وَمِسْطَرَةٍ.",
+      },
+      {
+        context: "Desk Organization",
+        en: "A multi-compartment pencil case keeps pens, erasers, and scissors neatly organized.",
+        ar: "تُحَافِظُ المِقْلَمَةُ مُتَعَدِّدَةُ الأَقْسَامِ عَلَى تَرْتِيبِ الأَقْلَامِ وَالمَمَاحِي وَالمَقَصَّاتِ.",
+      },
+      {
+        context: "Backpack Storage",
+        en: "He tucked his compact zippered pouch into the front pocket of his backpack.",
+        ar: "دَسَّ مِقْلَمَتَهُ المُدْمَجَةَ ذَاتَ السَّحَّابِ فِي الجَيْبِ الأَمَامِيِّ لِحَقِيبَةِ ظَهْرِهِ.",
+      },
+    ],
+    exampleSentence: "She unzipped her floral pencil case to retrieve a blue pen and a ruler.",
+    exampleArabic:
+      "فَتَحَتْ سَحَّابَ مِقْلَمَتِهَا المُزَهَّرَةِ لِإِخْرَاجِ قَلَمِ حِبْرٍ أَزْرَقَ وَمِسْطَرَةٍ.",
+  },
+  notebook: {
+    id: "notebook",
+    arabic: "دَفْتَر (كُرَّاسَةُ مُلَاحَظَات)",
+    partOfSpeech: "noun",
+    phonetic: "ˈnoʊtbʊk",
+    pronunciationTip: "Pronounce 'NOHT-book' (/ˈnoʊt.bʊk/).",
+    collocations: [
+      "spiral notebook",
+      "lined notebook",
+      "grid notebook",
+      "open a notebook",
+      "write in a notebook",
+      "hardcover notebook",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "jot down",
+        meaning: "write quickly on a notepad",
+        arabic: "يُدَوِّنُ سَرِيعًا فِي الدَّفْتَر",
+        example: "Jot down the homework assignment on the first page of your notebook.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Lecture Notes",
+        en: "The student opened his spiral notebook and began recording today's science notes.",
+        ar: "فَتَحَ الطَّالِبُ دَفْتَرَهُ السِّلْكِيَّ وَبَدَأَ فِي تَدْوِينِ مُلَاحَظَاتِ دَرْسِ العُلُومِ لِلْيَوْمِ.",
+      },
+      {
+        context: "Subject Organization",
+        en: "She assigns a different colored notebook to each school subject.",
+        ar: "تُخَصِّصُ دَفْتَرًا بِلَوْنٍ مُخْتَلِفٍ لِكُلِّ مَادَّةٍ دِرَاسِيَّةٍ.",
+      },
+      {
+        context: "Journaling",
+        en: "A ruled paper notebook is perfect for drafting creative short essays.",
+        ar: "يُعَدُّ الدَّفْتَرُ ذُو الصَّفَحَاتِ المُسَطَّرَةِ مِثَالِيًّا لِكِتَابَةِ مَقَالَاتٍ قَصِيرَةٍ إِبْدَاعِيَّةٍ.",
+      },
+    ],
+    exampleSentence:
+      "The student opened his spiral notebook and began recording today's science notes.",
+    exampleArabic:
+      "فَتَحَ الطَّالِبُ دَفْتَرَهُ السِّلْكِيَّ وَبَدَأَ فِي تَدْوِينِ مُلَاحَظَاتِ دَرْسِ العُلُومِ لِلْيَوْمِ.",
+  },
+  textbook: {
+    id: "textbook",
+    arabic: "كِتَابٌ مَدْرَسِيّ (مُقَرَّرٌ دِرَاسِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtɛkstbʊk",
+    pronunciationTip: "Pronounce 'TEXT-book' (/ˈtɛkst.bʊk/).",
+    collocations: [
+      "math textbook",
+      "history textbook",
+      "open the textbook",
+      "textbook chapter",
+      "cover a textbook",
+      "textbook exercises",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "read through",
+        meaning: "study chapters carefully",
+        arabic: "يَقْرَأُ بِعِنَايَةٍ فِي الكِتَاب",
+        example: "Read through chapter four in your biology textbook before class tomorrow.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Class Reading",
+        en: "The teacher instructed everyone to open their history textbook to page forty-five.",
+        ar: "طَلَبَ المُعَلِّمُ مِنَ الجَمِيعِ فَتْحَ كِتَابِ التَّارِيخِ المَدْرَسِيِّ عَلَى الصَّفْحَةِ الخَامِسَةِ وَالأَرْبَعِينَ.",
+      },
+      {
+        context: "Study Review",
+        en: "Diagrams at the end of each textbook chapter summarize complex concepts clearly.",
+        ar: "تُلَخِّصُ الرُّسُومُ التَّوْضِيحِيَّةُ فِي نِهَايَةِ كُلِّ فَصْلٍ مِنَ الكِتَابِ المَدْرَسِيِّ المَفَاهِيمَ المُعَقَّدَةَ بِوُضُوحٍ.",
+      },
+      {
+        context: "School Supplies",
+        en: "Students stacked heavy hardcover textbooks inside their assigned metal lockers.",
+        ar: "رَتَّبَ الطُّلَّابُ الكُتُبَ المَدْرَسِيَّةَ الثَّقِيلَةَ ذَاتَ الأَغْلِفَةِ المُقَوَّاةِ دَاخِلَ خَزَائِنِهِمُ المَعْدَنِيَّةِ المُخَصَّصَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The teacher instructed everyone to open their history textbook to page forty-five.",
+    exampleArabic:
+      "طَلَبَ المُعَلِّمُ مِنَ الجَمِيعِ فَتْحَ كِتَابِ التَّارِيخِ المَدْرَسِيِّ عَلَى الصَّفْحَةِ الخَامِسَةِ وَالأَرْبَعِينَ.",
+  },
+  workbook: {
+    id: "workbook",
+    arabic: "كُرَّاسَةُ تَمَارِين (دَفْتَرُ الأَنْشِطَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɜːrkbʊk",
+    pronunciationTip: "Pronounce 'WORK-book' (/ˈwɜːrk.bʊk/).",
+    collocations: [
+      "grammar workbook",
+      "fill out a workbook",
+      "practice workbook",
+      "workbook exercises",
+      "math workbook",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "fill in",
+        meaning: "complete printed worksheet blanks",
+        arabic: "يَمْلأُ الفَرَاغَاتِ فِي الكُرَّاسَة",
+        example: "Fill in the missing words on page twelve of your English workbook.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Homework Practice",
+        en: "For homework, complete exercises one through five in your grammar workbook.",
+        ar: "لِأَدَاءِ الوَاجِبِ المَنْزِلِيِّ، أَكْمِلِ التَّمَارِينَ مِنْ وَاحِدٍ إِلَى خَمْسَةٍ فِي كُرَّاسَةِ تَمَارِينِ القَوَاعِدِ.",
+      },
+      {
+        context: "Math Practice",
+        en: "The math workbook provides sample equations with step-by-step solutions.",
+        ar: "تُوَفِّرُ كُرَّاسَةُ تَمَارِينِ الرِّيَاضِيَّاتِ مُعَادَلَاتٍ نَمُوذَجِيَّةً مَعَ حُلُولٍ خَطْوَةً بِخَطْوَةٍ.",
+      },
+      {
+        context: "Self-Study",
+        en: "She checks her answers in the back of the workbook after finishing each quiz.",
+        ar: "تُدَقِّقُ إِجَابَاتِهَا فِي نِهَايَةِ كُرَّاسَةِ التَّمَارِينِ بَعْدَ الاِنْتِهَاءِ مِنْ كُلِّ اخْتِبَارٍ قَصِيرٍ.",
+      },
+    ],
+    exampleSentence: "For homework, complete exercises one through five in your grammar workbook.",
+    exampleArabic:
+      "لِأَدَاءِ الوَاجِبِ المَنْزِلِيِّ، أَكْمِلِ التَّمَارِينَ مِنْ وَاحِدٍ إِلَى خَمْسَةٍ فِي كُرَّاسَةِ تَمَارِينِ القَوَاعِدِ.",
+  },
+  folder: {
+    id: "folder",
+    arabic: "مِلَفّ (مُجَلَّدُ حِفْظِ الأَوْرَاق)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfoʊldər",
+    pronunciationTip: "Pronounce 'FOHL-der' (/ˈfoʊl.dər/).",
+    collocations: [
+      "pocket folder",
+      "plastic folder",
+      "organize in a folder",
+      "file folder",
+      "manila folder",
+      "labeled folder",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "file away",
+        meaning: "store documents inside a folder",
+        arabic: "يَحْفَظُ فِي المِلَفّ",
+        example: "File away your graded essays neatly inside the blue pocket folder.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Document Organization",
+        en: "She slipped her graded math assignments into a labeled two-pocket folder.",
+        ar: "أَدْخَلَتْ فُرُوضَ الرِّيَاضِيَّاتِ المُصَحَّحَةَ دَاخِلَ مِلَفٍّ ذِي جَيْبَيْنِ يَحْمِلُ عُنْوَانًا.",
+      },
+      {
+        context: "Class Handouts",
+        en: "Keep all syllabus handouts organized in a durable plastic folder.",
+        ar: "احْفَظْ جَمِيعَ مَنْشُورَاتِ المَنْهَجِ مُرَتَّبَةً دَاخِلَ مِلَفٍّ بَلَاسْتِيكِيٍّ مَتِينٍ.",
+      },
+      {
+        context: "Color Coding",
+        en: "He bought green folders for science and yellow folders for geography.",
+        ar: "اشْتَرَى مِلَفَّاتٍ خَضْرَاءَ لِمَادَّةِ العُلُومِ وَمِلَفَّاتٍ صَفْرَاءَ لِلْجُغْرَافْيَا.",
+      },
+    ],
+    exampleSentence: "She slipped her graded math assignments into a labeled two-pocket folder.",
+    exampleArabic:
+      "أَدْخَلَتْ فُرُوضَ الرِّيَاضِيَّاتِ المُصَحَّحَةَ دَاخِلَ مِلَفٍّ ذِي جَيْبَيْنِ يَحْمِلُ عُنْوَانًا.",
+  },
+  binder: {
+    id: "binder",
+    arabic: "مِلَفٌّ حَلَقِيّ (بَايْنْدَر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbaɪndər",
+    pronunciationTip: "Pronounce 'BYN-der' (/ˈbaɪn.dər/).",
+    collocations: [
+      "three-ring binder",
+      "binder dividers",
+      "loose-leaf binder",
+      "zip-up binder",
+      "open the binder rings",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "snap shut",
+        meaning: "close binder rings firmly",
+        arabic: "يُغْلِقُ حَلَقَاتِ المِلَفِّ بِإِحْكَام",
+        example: "Press the metal levers so the binder rings snap shut securely.",
+      },
+    ],
+    sentences: [
+      {
+        context: "School Binder",
+        en: "He organized his loose-leaf notes inside a sturdy three-ring binder with tabs.",
+        ar: "رَتَّبَ مُلَاحَظَاتِهِ غَيْرَ المُرْتَبِطَةِ دَاخِلَ مِلَفٍّ حَلَقِيٍّ مَتِينٍ ثُلَاثِيِّ الحَلَقَاتِ مَعَ فَهَارِسَ تَبْوِيبٍ.",
+      },
+      {
+        context: "Subject Dividers",
+        en: "Color-coded dividers separate each course section inside the large binder.",
+        ar: "تَفْصِلُ الفَوَاصِلُ المُلَوَّنَةُ أَقْسَامَ كُلِّ مَادَّةٍ دِرَاسِيَّةٍ دَاخِلَ المِلَفِّ الحَلَقِيِّ الكَبِيرِ.",
+      },
+      {
+        context: "Class Preparation",
+        en: "She punched three holes in the worksheet before inserting it into her binder.",
+        ar: "ثَقَبَتْ ثَلَاثَ فَتَحَاتٍ فِي وَرَقَةِ العَمَلِ قَبْلَ إِدْخَالِهَا فِي مِلَفِّهَا الحَلَقِيِّ.",
+      },
+    ],
+    exampleSentence:
+      "He organized his loose-leaf notes inside a sturdy three-ring binder with tabs.",
+    exampleArabic:
+      "رَتَّبَ مُلَاحَظَاتِهِ غَيْرَ المُرْتَبِطَةِ دَاخِلَ مِلَفٍّ حَلَقِيٍّ مَتِينٍ ثُلَاثِيِّ الحَلَقَاتِ مَعَ فَهَارِسَ تَبْوِيبٍ.",
+  },
+  "sheet-of-paper": {
+    id: "sheet-of-paper",
+    arabic: "وَرَقَة (فَرْخُ وَرَق)",
+    partOfSpeech: "noun",
+    phonetic: "ʃiːt əv ˈpeɪpər",
+    pronunciationTip: "Long 'ee' sound /iː/: 'SHEET of PAY-per' (/ʃiːt əv ˈpeɪ.pər/).",
+    collocations: [
+      "blank sheet of paper",
+      "lined sheet of paper",
+      "tear a sheet of paper",
+      "clean sheet of paper",
+      "pass out sheets of paper",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hand out",
+        meaning: "distribute sheets to students",
+        arabic: "يُوَزِّعُ الأَوْرَاق",
+        example: "The teacher will hand out a blank sheet of paper to each student for the essay.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Pop Quiz",
+        en: "The teacher told the class to take out a clean sheet of paper for a short spelling quiz.",
+        ar: "طَلَبَ المُعَلِّمُ مِنَ الفَصْلِ إِخْرَاجَ وَرَقَةٍ نَظِيفَةٍ لِإِجْرَاءِ اخْتِبَارِ إِمْلَاءٍ قَصِيرٍ.",
+      },
+      {
+        context: "Art Sketch",
+        en: "She sketched a quick flower diagram on a blank sheet of paper.",
+        ar: "رَسَمَتْ مُخَطَّطًا سَرِيعًا لِزَهْرَةٍ عَلَى وَرَقَةٍ بَيْضَاءَ فَارِغَةٍ.",
+      },
+      {
+        context: "Printing",
+        en: "Load fresh sheets of paper into the printer tray before starting the print job.",
+        ar: "ضَعْ أَوْرَاقًا جَدِيدَةً فِي دُرْجِ الطَّابِعَةِ قَبْلَ بَدْءِ عَمَلِيَّةِ الطِّبَاعَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The teacher told the class to take out a clean sheet of paper for a short spelling quiz.",
+    exampleArabic:
+      "طَلَبَ المُعَلِّمُ مِنَ الفَصْلِ إِخْرَاجَ وَرَقَةٍ نَظِيفَةٍ لِإِجْرَاءِ اخْتِبَارِ إِمْلَاءٍ قَصِيرٍ.",
+  },
+  "sticky-note": {
+    id: "sticky-note",
+    arabic: "وَرَقَةُ مُلَاحَظَاتٍ لَاصِقَة (سْتِيكِي نُوت)",
+    partOfSpeech: "noun",
+    phonetic: "ˈstɪki noʊt",
+    pronunciationTip: "Pronounce 'STICK-ee noht' (/ˈstɪk.i noʊt/).",
+    collocations: [
+      "pad of sticky notes",
+      "yellow sticky note",
+      "post a sticky note",
+      "colorful sticky notes",
+      "leave a sticky note",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "stick on",
+        meaning: "attach self-adhesive paper to a surface",
+        arabic: "يُلْصِقُ المُلَاحَظَة",
+        example: "Stick on a reminder note right at the top of your computer monitor.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Reminder",
+        en: "She wrote a quick reminder on a yellow sticky note and pasted it on her desk.",
+        ar: "كَتَبَتْ تَذْكِيرًا سَرِيعًا عَلَى وَرَقَةِ مُلَاحَظَاتٍ لَاصِقَةٍ صَفْرَاءَ وَأَلْصَقَتْهَا عَلَى مَكْتَبِهَا.",
+      },
+      {
+        context: "Brainstorming",
+        en: "Students posted colorful sticky notes on the whiteboard during group brainstorming.",
+        ar: "أَلْصَقَ الطُّلَّابُ أَوْرَاقَ مُلَاحَظَاتٍ لَاصِقَةً مُلَوَّنَةً عَلَى اللَّوْحِ الأَبْيَضِ خِلَالَ العَصْفِ الذِّهْنِيِّ الجَمَاعِيِّ.",
+      },
+      {
+        context: "Bookmarking",
+        en: "Use miniature sticky notes to flag important formulas in your textbook.",
+        ar: "اسْتَخْدِمْ أَوْرَاقَ مُلَاحَظَاتٍ لَاصِقَةً صَغِيرَةً لِتَمْيِيزِ المُعَادَلَاتِ الهَامَّةِ فِي كِتَابِكَ.",
+      },
+    ],
+    exampleSentence:
+      "She wrote a quick reminder on a yellow sticky note and pasted it on her desk.",
+    exampleArabic:
+      "كَتَبَتْ تَذْكِيرًا سَرِيعًا عَلَى وَرَقَةِ مُلَاحَظَاتٍ لَاصِقَةٍ صَفْرَاءَ وَأَلْصَقَتْهَا عَلَى مَكْتَبِهَا.",
+  },
+  "index-card": {
+    id: "index-card",
+    arabic: "بِطَاقَةُ فَهْرَسَة (بِطَاقَةُ اسْتِذْكَار)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɪndɛks kɑːrd",
+    pronunciationTip: "Pronounce 'IN-dex kard' (/ˈɪn.dɛks kɑːrd/).",
+    collocations: [
+      "flashcard on index card",
+      "pack of index cards",
+      "ruled index cards",
+      "study with index cards",
+      "flip an index card",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "flip through",
+        meaning: "cycle rapidly through review cards",
+        arabic: "يُقَلِّبُ بِطَاقَاتِ الفَهْرَسَة",
+        example: "He flipped through a stack of index cards to memorize Spanish vocabulary.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Flashcard Study",
+        en: "He wrote vocabulary definitions on index cards to test himself before the exam.",
+        ar: "كَتَبَ تَعْرِيفَاتِ المُفْرَدَاتِ عَلَى بِطَاقَاتِ فَهْرَسَةٍ لِيَخْتَبِرَ نَفْسَهُ قَبْلَ الاِمْتِحَانِ.",
+      },
+      {
+        context: "Speech Presentation",
+        en: "The speaker held three small index cards with bulleted presentation notes.",
+        ar: "حَمَلَ الخَطِيبُ ثَلَاثَ بِطَاقَاتِ فَهْرَسَةٍ صَغِيرَةٍ تَحْتَوِي عَلَى نِقَاطِ العَرْضِ التَّقْدِيمِيِّ.",
+      },
+      {
+        context: "Library Catalog",
+        en: "Vintage library catalogs used physical index cards to record book titles.",
+        ar: "اسْتَخْدَمَتْ فَهَارِسُ المَكْتَبَاتِ التَّقْلِيدِيَّةُ بِطَاقَاتِ فَهْرَسَةٍ مَادِّيَّةٍ لِتَسْجِيلِ عَنَاوِينِ الكُتُبِ.",
+      },
+    ],
+    exampleSentence:
+      "He wrote vocabulary definitions on index cards to test himself before the exam.",
+    exampleArabic:
+      "كَتَبَ تَعْرِيفَاتِ المُفْرَدَاتِ عَلَى بِطَاقَاتِ فَهْرَسَةٍ لِيَخْتَبِرَ نَفْسَهُ قَبْلَ الاِمْتِحَانِ.",
+  },
+  dictionary: {
+    id: "dictionary",
+    arabic: "قَامُوس (مُعْجَم)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdɪkʃəˌnɛri",
+    pronunciationTip: "Pronounce 'DIK-shuh-nair-ee' (/ˈdɪk.ʃəˌnɛr.i/).",
+    collocations: [
+      "bilingual dictionary",
+      "look up in a dictionary",
+      "English dictionary",
+      "unabridged dictionary",
+      "pocket dictionary",
+      "dictionary definition",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "look up",
+        meaning: "search for word definition in reference book",
+        arabic: "يَبْحَثُ عَنْ كَلِمَةٍ فِي القَامُوس",
+        example: "If you encounter an unfamiliar term, look it up in the Oxford dictionary.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Vocabulary Lookup",
+        en: "She opened the comprehensive English dictionary to verify the exact spelling of the word.",
+        ar: "فَتَحَتِ القَامُوسَ الإِنْجِلِيزِيَّ الشَّامِلَ لِلتَّأَكُّدِ مِنَ التَّهْجِئَةِ الدَّقِيقَةِ لِلْكَلِمَةِ.",
+      },
+      {
+        context: "Language Learning",
+        en: "A bilingual Arabic-English dictionary bridges meanings with clear phonetic transcriptions.",
+        ar: "يَرْبِطُ القَامُوسُ الثُّنَائِيُّ اللُّغَةِ عَرَبِيّ-إِنْجِلِيزِيّ المَعَانِيَ مَعَ رُمُوزٍ صَوْتِيَّةٍ وَاضِحَةٍ.",
+      },
+      {
+        context: "Classroom Reference",
+        en: "Hardcover dictionaries rest on the reference shelf for all students to consult.",
+        ar: "تَسْتَقِرُّ المَعَاجِمُ ذَاتُ الأَغْلِفَةِ المُقَوَّاةِ عَلَى رَفِّ المَرَاجِعِ لِيَسْتَشِيرَهَا جَمِيعُ الطُّلَّابِ.",
+      },
+    ],
+    exampleSentence:
+      "She opened the comprehensive English dictionary to verify the exact spelling of the word.",
+    exampleArabic:
+      "فَتَحَتِ القَامُوسَ الإِنْجِلِيزِيَّ الشَّامِلَ لِلتَّأَكُّدِ مِنَ التَّهْجِئَةِ الدَّقِيقَةِ لِلْكَلِمَةِ.",
+  },
+  encyclopedia: {
+    id: "encyclopedia",
+    arabic: "مَوْسُوعَة (دَائِرَةُ مَعَارِف)",
+    partOfSpeech: "noun",
+    phonetic: "ɪnˌsaɪkləˈpiːdiə",
+    pronunciationTip: "Pronounce 'en-sy-cluh-PEE-dee-uh' (/ɪnˌsaɪ.kləˈpiː.di.ə/).",
+    collocations: [
+      "volume of an encyclopedia",
+      "consult an encyclopedia",
+      "online encyclopedia",
+      "illustrated encyclopedia",
+      "historical encyclopedia",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "read up on",
+        meaning: "research comprehensive information",
+        arabic: "يَتَوَسَّعُ فِي القِرَاءَةِ عَنْ مَوْضُوع",
+        example: "He decided to read up on solar systems in the illustrated encyclopedia.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Library Research",
+        en: "He pulled volume 'M' of the encyclopedia from the shelf to research ancient mammals.",
+        ar: "سَحَبَ المُجَلَّدَ 'M' مِنَ المَوْسُوعَةِ عَنِ الرَّفِّ لِلْبَحْثِ عَنِ الثَّدْيِيَّاتِ القَدِيمَةِ.",
+      },
+      {
+        context: "General Knowledge",
+        en: "The multi-volume encyclopedia covers thousands of topics from astronomy to zoology.",
+        ar: "تُغَطِّي المَوْسُوعَةُ مُتَعَدِّدَةُ المُجَلَّدَاتِ آلَافَ المَوَاضِيعِ مِنَ الفَلَكِ إِلَى عِلْمِ الحَيَوَانِ.",
+      },
+      {
+        context: "Classroom Resource",
+        en: "Students frequently consult the science encyclopedia when preparing presentations.",
+        ar: "يَسْتَشِيرُ الطُّلَّابُ مَوْسُوعَةَ العُلُومِ بِاسْتِمْرَارٍ عِنْدَ إِعْدَادِ العُرُوضِ التَّقْدِيمِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "He pulled volume 'M' of the encyclopedia from the shelf to research ancient mammals.",
+    exampleArabic:
+      "سَحَبَ المُجَلَّدَ 'M' مِنَ المَوْسُوعَةِ عَنِ الرَّفِّ لِلْبَحْثِ عَنِ الثَّدْيِيَّاتِ القَدِيمَةِ.",
+  },
+  whiteboard: {
+    id: "whiteboard",
+    arabic: "لَوْحٌ أَبْيَض (سَبُّورَةٌ بَيْضَاء)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwaɪtbɔːrd",
+    pronunciationTip: "Pronounce 'WHITE-bord' (/ˈwaɪt.bɔːrd/).",
+    collocations: [
+      "magnetic whiteboard",
+      "erase the whiteboard",
+      "dry-erase whiteboard",
+      "whiteboard marker",
+      "write on the whiteboard",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wipe clean",
+        meaning: "remove all dry-erase marks",
+        arabic: "يَمْسَحُ اللَّوْحَ نَظِيفًا",
+        example: "The helper wiped clean the magnetic whiteboard at the end of the school day.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Math Class",
+        en: "The teacher solved algebraic equations on the large magnetic whiteboard.",
+        ar: "حَلَّ المُعَلِّمُ مُعَادَلَاتٍ جَبْرِيَّةً عَلَى اللَّوْحِ الأَبْيَضِ المَغْنَاطِيسِيِّ الكَبِيرِ.",
+      },
+      {
+        context: "Classroom Activity",
+        en: "A student volunteered to write the correct grammar answers on the board.",
+        ar: "تَطَوَّعَ طَالِبٌ لِكِتَابَةِ إِجَابَاتِ القَوَاعِدِ الصَّحِيحَةِ عَلَى اللَّوْحِ.",
+      },
+      {
+        context: "End of Lesson",
+        en: "Use the felt eraser to wipe the whiteboard clean before the next class arrives.",
+        ar: "اسْتَخْدِمِ المِمْحَاةَ القُمَاشِيَّةَ لِمَسْحِ اللَّوْحِ الأَبْيَضِ قَبْلَ وُصُولِ الفَصْلِ التَّالِي.",
+      },
+    ],
+    exampleSentence: "The teacher solved algebraic equations on the large magnetic whiteboard.",
+    exampleArabic:
+      "حَلَّ المُعَلِّمُ مُعَادَلَاتٍ جَبْرِيَّةً عَلَى اللَّوْحِ الأَبْيَضِ المَغْنَاطِيسِيِّ الكَبِيرِ.",
+  },
+  projector: {
+    id: "projector",
+    arabic: "جِهَازُ عَرْضٍ ضَوْئِيّ (بْرُوجِكْتُور)",
+    partOfSpeech: "noun",
+    phonetic: "prəˈdʒɛktər",
+    pronunciationTip: "Pronounce 'pruh-JEK-ter' (/prəˈdʒɛk.tər/).",
+    collocations: [
+      "digital projector",
+      "ceiling-mounted projector",
+      "turn on the projector",
+      "HD projector",
+      "projector screen",
+      "connected projector",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "beam onto",
+        meaning: "cast images using light",
+        arabic: "يَعْرِضُ ضَوْئِيًّا عَلَى",
+        example: "The digital projector beamed the interactive science slide deck onto the screen.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Visual Presentation",
+        en: "The ceiling-mounted projector displayed educational slides clearly across the wide screen.",
+        ar: "عَرَضَ جِهَازُ العَرْضِ الضَّوْئِيِّ المُثَبَّتُ فِي السَّقْفِ الشَّرَائِحَ التَّعْلِيمِيَّةَ بِوُضُوحٍ عَبْرَ الشَّاشَةِ العَرِيضَةِ.",
+      },
+      {
+        context: "Document Display",
+        en: "She connected her laptop to the projector to share her group research project.",
+        ar: "رَبَطَتْ حَاسُوبَهَا المَحْمُولَ بِجِهَازِ العَرْضِ الضَّوْئِيِّ لِمُشَارَكَةِ مَشْرُوعِ بَحْثِ مَجْمُوعَتِهَا.",
+      },
+      {
+        context: "Movie Day",
+        en: "Dim the classroom lights when the projector is playing the documentary film.",
+        ar: "اخْفِتْ أَضْوَاءَ الفَصْلِ عِنْدَمَا يَعْرِضُ البْرُوجِكْتُورُ الفِيلْمَ الوَثَائِقِيَّ.",
+      },
+    ],
+    exampleSentence:
+      "The ceiling-mounted projector displayed educational slides clearly across the wide screen.",
+    exampleArabic:
+      "عَرَضَ جِهَازُ العَرْضِ الضَّوْئِيِّ المُثَبَّتُ فِي السَّقْفِ الشَّرَائِحَ التَّعْلِيمِيَّةَ بِوُضُوحٍ عَبْرَ الشَّاشَةِ العَرِيضَةِ.",
+  },
+  screen: {
+    id: "screen",
+    arabic: "شَاشَةُ عَرْض",
+    partOfSpeech: "noun",
+    phonetic: "skriːn",
+    pronunciationTip: "Long 'ee' sound /iː/: 'SKREEN' (/skriːn/).",
+    collocations: [
+      "pull-down screen",
+      "projection screen",
+      "large screen",
+      "display screen",
+      "retractable screen",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pull down",
+        meaning: "lower a retractable projection surface",
+        arabic: "يُنْزِلُ شَاشَةَ العَرْض",
+        example: "Pull down the white projection screen before turning on the slide machine.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Class Presentation",
+        en: "The teacher pulled down the large white screen in front of the classroom chalkboard.",
+        ar: "أَنْزَلَ المُعَلِّمُ شَاشَةَ العَرْضِ البَيْضَاءَ الكَبِيرَةَ أَمَامَ سَبُّورَةِ الفَصْلِ.",
+      },
+      {
+        context: "High Definition",
+        en: "The matte white screen reflects crisp video imagery without distracting glare.",
+        ar: "تَعْكِسُ شَاشَةُ العَرْضِ المَطْفِيَّةُ البَيْضَاءُ صُوَرَ فِيدْيُو دَقِيقَةً دُونَ وَهَجٍ مُشَتِّتٍ.",
+      },
+      {
+        context: "Retractable Mechanism",
+        en: "A gentle tug on the handle retracts the fabric screen back into its metal housing.",
+        ar: "تُؤَدِّي سَحْبَةٌ خَفِيفَةٌ لِلْمِقْبَضِ إِلَى إِعَادَةِ الشَّاشَةِ القُمَاشِيَّةِ إِلَى صُنْدُوقِهَا المَعْدَنِيِّ.",
+      },
+    ],
+    exampleSentence:
+      "The teacher pulled down the large white screen in front of the classroom chalkboard.",
+    exampleArabic:
+      "أَنْزَلَ المُعَلِّمُ شَاشَةَ العَرْضِ البَيْضَاءَ الكَبِيرَةَ أَمَامَ سَبُّورَةِ الفَصْلِ.",
+  },
+  globe: {
+    id: "globe",
+    arabic: "مُجَسَّمُ الكُرَةِ الأَرْضِيَّة",
+    partOfSpeech: "noun",
+    phonetic: "ɡloʊb",
+    pronunciationTip: "Pronounce 'GLOHB' (/ɡloʊb/).",
+    collocations: [
+      "spinning globe",
+      "world globe",
+      "desk globe",
+      "illuminated globe",
+      "geographical globe",
+      "spin the globe",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "point out",
+        meaning: "indicate location on a spherical map",
+        arabic: "يُشِيرُ إِلَى مَوْقِعٍ عَلَى المُجَسَّم",
+        example: "Use your finger to point out the equator on the spinning world globe.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Geography Lesson",
+        en: "The teacher spun the desktop globe to point out the Atlantic Ocean to the class.",
+        ar: "أَدَارَ المُعَلِّمُ مُجَسَّمَ الكُرَةِ الأَرْضِيَّةِ المَكْتَبِيَّ لِيُشِيرَ إِلَى المُحِيطِ الأَطْلَسِيِّ لِلْفَصْلِ.",
+      },
+      {
+        context: "Map Exploration",
+        en: "A spherical globe accurately depicts continents without flat projection distortions.",
+        ar: "يُصَوِّرُ مُجَسَّمُ الكُرَةِ الأَرْضِيَّةِ الكُرَوِيُّ القَارَّاتِ بِدِقَّةٍ دُونَ تَشَوُّهَاتِ الإِسْقَاطِ المُسَطَّحِ.",
+      },
+      {
+        context: "Classroom Corner",
+        en: "An illuminated vintage globe sits proudly on top of the library bookshelf.",
+        ar: "يَسْتَقِرُّ مُجَسَّمُ الكُرَةِ الأَرْضِيَّةِ المُضَاءُ الكَلَاسِيكِيُّ بِفَخْرٍ فَوْقَ رَفِّ كُتُبِ المَكْتَبَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The teacher spun the desktop globe to point out the Atlantic Ocean to the class.",
+    exampleArabic:
+      "أَدَارَ المُعَلِّمُ مُجَسَّمَ الكُرَةِ الأَرْضِيَّةِ المَكْتَبِيَّ لِيُشِيرَ إِلَى المُحِيطِ الأَطْلَسِيِّ لِلْفَصْلِ.",
+  },
+  locker: {
+    id: "locker",
+    arabic: "خِزَانَةٌ مَدْرَسِيَّة (لُوكَر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈlɑːkər",
+    pronunciationTip: "Pronounce 'LAH-ker' (/ˈlɑː.kər/).",
+    collocations: [
+      "school locker",
+      "lock a locker",
+      "locker combination",
+      "hallway locker",
+      "locker door",
+      "store in a locker",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "lock up",
+        meaning: "secure belongings with combination lock",
+        arabic: "يُقْفِلُ الخِزَانَة",
+        example: "Always lock up your backpack and heavy coat inside your assigned locker.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Hallway Routine",
+        en: "Between class periods, he dialed his three-number combination to open his locker.",
+        ar: "بَيْنَ الحِصَصِ الدِّرَاسِيَّةِ، أَدَارَ رَقْمَهُ السِّرِّيَّ الثُّلَاثِيَّ لِفَتْحِ خِزَانَتِهِ المَدْرَسِيَّةِ.",
+      },
+      {
+        context: "Storage",
+        en: "Students hang their winter coats and store gym gear inside tall blue metal lockers.",
+        ar: "يُعَلِّقُ الطُّلَّابُ مَعَاطِفَهُمُ الشَّتَوِيَّةَ وَيَحْفَظُونَ مُعِدَّاتِ الرِّيَاضَةِ دَاخِلَ خَزَائِنَ مَعْدَنِيَّةٍ زَرْقَاءَ طَوِيلَةٍ.",
+      },
+      {
+        context: "Personalizing",
+        en: "She decorated the inside door of her hallway locker with magnetic photos.",
+        ar: "زَيَّنَتِ البَابَ الدَّاخِلِيَّ لِخِزَانَتِهَا فِي الرِّدْهَةِ بِصُوَرٍ مَغْنَاطِيسِيَّةٍ.",
+      },
+    ],
+    exampleSentence:
+      "Between class periods, he dialed his three-number combination to open his locker.",
+    exampleArabic:
+      "بَيْنَ الحِصَصِ الدِّرَاسِيَّةِ، أَدَارَ رَقْمَهُ السِّرِّيَّ الثُّلَاثِيَّ لِفَتْحِ خِزَانَتِهِ المَدْرَسِيَّةِ.",
+  },
+  "bulletin-board": {
+    id: "bulletin-board",
+    arabic: "لَوْحَةُ إِعْلَانَات (لَوْحَةُ مَعْلُومَات)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbʊlətɪn bɔːrd",
+    pronunciationTip: "Pronounce 'BULL-uh-tin bord' (/ˈbʊl.ə.tɪn bɔːrd/).",
+    collocations: [
+      "cork bulletin board",
+      "pin to a bulletin board",
+      "classroom bulletin board",
+      "announcements on the board",
+      "colorful bulletin board",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pin up",
+        meaning: "attach announcements using push pins",
+        arabic: "يُعَلِّقُ بِدَبَابِيسَ عَلَى اللَّوْحَة",
+        example: "The teacher pinned up the weekly honor roll on the cork bulletin board.",
+      },
+    ],
+    sentences: [
+      {
+        context: "School Announcements",
+        en: "The teacher pinned student artwork and the weekly calendar on the cork bulletin board.",
+        ar: "عَلَّقَ المُعَلِّمُ أَعْمَالَ الطُّلَّابِ الفَنِّيَّةَ وَالتَّقْوِيمَ الأُسْبُوعِيَّ عَلَى لَوْحَةِ الإِعْلَانَاتِ الفِلِّينِيَّةِ.",
+      },
+      {
+        context: "Displaying Honors",
+        en: "Important club meeting notices and field trip forms are posted on the main board.",
+        ar: "تُنْشَرُ إِشْعَارَاتُ اجْتِمَاعَاتِ الأَنْشِطَةِ الهَامَّةِ وَنَمَاذِجُ الرِّحْلَاتِ عَلَى لَوْحَةِ المَعْلُومَاتِ الرَّئِيسِيَّةِ.",
+      },
+      {
+        context: "Classroom Decor",
+        en: "A decorative scalloped border frames the colorful classroom bulletin board.",
+        ar: "يُحِيطُ إِطَارٌ مُزَخْرَفٌ مُتَمَوِّجٌ بِلَوْحَةِ إِعْلَانَاتِ الفَصْلِ المُلَوَّنَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The teacher pinned student artwork and the weekly calendar on the cork bulletin board.",
+    exampleArabic:
+      "عَلَّقَ المُعَلِّمُ أَعْمَالَ الطُّلَّابِ الفَنِّيَّةَ وَالتَّقْوِيمَ الأُسْبُوعِيَّ عَلَى لَوْحَةِ الإِعْلَانَاتِ الفِلِّينِيَّةِ.",
+  },
+  scissors: {
+    id: "scissors",
+    arabic: "مِقَصّ",
+    partOfSpeech: "noun",
+    phonetic: "ˈsɪzərz",
+    pronunciationTip: "Pronounce 'SIZ-erz' (/ˈsɪz.ərz/). Plural noun.",
+    collocations: [
+      "pair of scissors",
+      "safety scissors",
+      "sharp scissors",
+      "cut with scissors",
+      "craft scissors",
+      "blunt-tip scissors",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "cut out",
+        meaning: "remove a shape by cutting with blades",
+        arabic: "يَقُصُّ الشَّكْل",
+        example: "Use safety scissors to carefully cut out the paper star.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Craft Project",
+        en: "She used a pair of blunt safety scissors to cut out paper shapes for her collage.",
+        ar: "اسْتَخْدَمَتْ مِقَصًّا ذَا سِنٍّ غَيْرِ حَادَّةٍ لِلأَمَانِ لِقَصِّ أَشْكَالٍ وَرَقِيَّةٍ لِلَوْحَتِهَا التَّجْمِيعِيَّةِ.",
+      },
+      {
+        context: "Classroom Safety",
+        en: "Always walk carefully when carrying scissors, keeping the blades pointed downward.",
+        ar: "امْشِ دَائِمًا بِحَذَرٍ عِنْدَ حَمْلِ المِقَصِّ، مَعَ تَوْجِيهِ الشَّفَرَاتِ إِلَى الأَسْفَلِ.",
+      },
+      {
+        context: "Art Supplies",
+        en: "Left-handed scissors make cutting comfortable for southpaw students.",
+        ar: "يَجْعَلُ المِقَصُّ الخَاصُّ بِالعُسْرِ عَمَلِيَّةَ القَصِّ مُرِيحَةً لِلطُّلَّابِ الَّذِينَ يَسْتَخْدِمُونَ اليَدَ اليُسْرَى.",
+      },
+    ],
+    exampleSentence:
+      "She used a pair of blunt safety scissors to cut out paper shapes for her collage.",
+    exampleArabic:
+      "اسْتَخْدَمَتْ مِقَصًّا ذَا سِنٍّ غَيْرِ حَادَّةٍ لِلأَمَانِ لِقَصِّ أَشْكَالٍ وَرَقِيَّةٍ لِلَوْحَتِهَا التَّجْمِيعِيَّةِ.",
+  },
+  "glue-stick": {
+    id: "glue-stick",
+    arabic: "أُصْبُوعُ صَمْغ (غِرَاءٌ لَاصِق)",
+    partOfSpeech: "noun",
+    phonetic: "ɡluː stɪk",
+    pronunciationTip: "Pronounce 'GLOO stik' (/ɡluː stɪk/).",
+    collocations: [
+      "washable glue stick",
+      "purple glue stick",
+      "apply glue stick",
+      "twist up the glue stick",
+      "glue stick cap",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "paste down",
+        meaning: "affix paper firmly with adhesive",
+        arabic: "يُلْصِقُ بِالصَّمْغ",
+        example: "Rub the glue stick along the edges and paste down the cutout image.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Art Craft",
+        en: "He twisted the base of the purple glue stick to paste the picture onto cardstock.",
+        ar: "أَدَارَ قَاعِدَةَ أُصْبُوعِ الصَّمْغِ الأُرْجُوَانِيِّ لِلَصْقِ الصُّورَةِ عَلَى وَرَقٍ مُقَوًّى.",
+      },
+      {
+        context: "Non-Toxic Supplies",
+        en: "Washable, non-toxic glue sticks dry completely clear without wrinkling paper.",
+        ar: "تَجِفُّ أَصَابِعُ الصَّمْغِ القَابِلَةُ لِلْغَسِيلِ وَغَيْرُ السَّامَّةِ بِشَكْلٍ شَفَّافٍ تَمَامًا دُونَ تَجْعِيدِ الوَرَقِ.",
+      },
+      {
+        context: "Storage",
+        en: "Remember to snap the cap back on your glue stick so the adhesive stays moist.",
+        ar: "تَذَكَّرْ إِعَادَةَ الغِطَاءِ إِلَى أُصْبُوعِ الصَّمْغِ حَتَّى يَظَلَّ المَادَّةُ اللَّاصِقَةُ رَطْبَةً.",
+      },
+    ],
+    exampleSentence:
+      "He twisted the base of the purple glue stick to paste the picture onto cardstock.",
+    exampleArabic:
+      "أَدَارَ قَاعِدَةَ أُصْبُوعِ الصَّمْغِ الأُرْجُوَانِيِّ لِلَصْقِ الصُّورَةِ عَلَى وَرَقٍ مُقَوًّى.",
+  },
+  tape: {
+    id: "tape",
+    arabic: "شَرِيطٌ لَاصِق",
+    partOfSpeech: "noun",
+    phonetic: "teɪp",
+    pronunciationTip: "Long 'a' sound /eɪ/: 'TAYP' (/teɪp/).",
+    collocations: [
+      "clear adhesive tape",
+      "roll of tape",
+      "masking tape",
+      "dispenser for tape",
+      "tape a poster",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "tape up",
+        meaning: "affix to a wall or surface with tape",
+        arabic: "يُثَبِّتُ بِالشَّرِيطِ اللَّاصِق",
+        example: "He helped the teacher tape up the colorful classroom banner.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Classroom Decor",
+        en: "She used clear adhesive tape to secure her solar system poster to the classroom wall.",
+        ar: "اسْتَخْدَمَتْ شَرِيطًا لَاصِقًا شَفَّافًا لِتَثْبِيتِ مُلْصَقِ المَجْمُوعَةِ الشَّمْسِيَّةِ عَلَى جِدَارِ الفَصْلِ.",
+      },
+      {
+        context: "Desk Accessory",
+        en: "A weighted desktop tape dispenser makes tearing small strips easy with one hand.",
+        ar: "تَجْعَلُ مُوَزِّعَةُ الشَّرِيطِ اللَّاصِقِ المَكْتَبِيَّةُ الثَّقِيلَةُ قَطْعَ القِطَعِ الصَّغِيرَةِ سَهْلًا بِيَدٍ وَاحِدَةٍ.",
+      },
+      {
+        context: "Repairing Pages",
+        en: "He mended the torn page of his reading book with transparent tape.",
+        ar: "أَصْلَحَ الصَّفْحَةَ المُمَزَّقَةَ مِنْ كِتَابِ القِرَاءَةِ بِشَرِيطٍ لَاصِقٍ شَفَّافٍ.",
+      },
+    ],
+    exampleSentence:
+      "She used clear adhesive tape to secure her solar system poster to the classroom wall.",
+    exampleArabic:
+      "اسْتَخْدَمَتْ شَرِيطًا لَاصِقًا شَفَّافًا لِتَثْبِيتِ مُلْصَقِ المَجْمُوعَةِ الشَّمْسِيَّةِ عَلَى جِدَارِ الفَصْلِ.",
+  },
+  stapler: {
+    id: "stapler",
+    arabic: "دَبَّاسَة (دَبَّاسَةُ أَوْرَاق)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsteɪplər",
+    pronunciationTip: "Pronounce 'STAY-pler' (/ˈsteɪ.plər/).",
+    collocations: [
+      "desktop stapler",
+      "box of staples",
+      "stapler jam",
+      "press the stapler",
+      "staple papers together",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "staple together",
+        meaning: "bind documents with metal clips",
+        arabic: "يَدْبُسُ مَعًا",
+        example: "Staple together the three pages of your research report.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Paper Organization",
+        en: "The teacher pressed down on the desktop stapler to bind the multi-page exam.",
+        ar: "ضَغَطَ المُعَلِّمُ عَلَى دَبَّاسَةِ المَكْتَبِ لِتَثْبِيتِ صَفَحَاتِ الاِمْتِحَانِ المُتَعَدِّدَةِ.",
+      },
+      {
+        context: "Refilling Supplies",
+        en: "She opened the metal hinge to reload a fresh row of wire staples.",
+        ar: "فَتَحَتِ المِفْصَلَةَ المَعْدَنِيَّةَ لِإِعَادَةِ تَعْبِئَةِ صَفٍّ جَدِيدٍ مِنْ دَبَابِيسِ السِّلْكِ.",
+      },
+      {
+        context: "Desk Setup",
+        en: "A heavy-duty manual stapler sits beside the teacher's paper tray.",
+        ar: "تَسْتَقِرُّ دَبَّاسَةٌ يَدَوِيَّةٌ شَدِيدَةُ التَّحَمُّلِ بِجَانِبِ دُرْجِ أَوْرَاقِ المُعَلِّمِ.",
+      },
+    ],
+    exampleSentence: "The teacher pressed down on the desktop stapler to bind the multi-page exam.",
+    exampleArabic:
+      "ضَغَطَ المُعَلِّمُ عَلَى دَبَّاسَةِ المَكْتَبِ لِتَثْبِيتِ صَفَحَاتِ الاِمْتِحَانِ المُتَعَدِّدَةِ.",
+  },
+  "paper-clip": {
+    id: "paper-clip",
+    arabic: "مَشْبَكُ وَرَق",
+    partOfSpeech: "noun",
+    phonetic: "ˈpeɪpər klɪp",
+    pronunciationTip: "Pronounce 'PAY-per klip' (/ˈpeɪ.pər klɪp/).",
+    collocations: [
+      "metal paper clip",
+      "box of paper clips",
+      "colorful paper clip",
+      "slide a paper clip",
+      "fasten with a paper clip",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "clip together",
+        meaning: "hold sheets temporarily with a wire clamp",
+        arabic: "يَشْبِكُ الأَوْرَاقَ مَعًا",
+        example: "Clip together your essay and permission slip before turning them in.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Filing Homework",
+        en: "He slid a silver wire paper clip onto the corner of his essay to keep the pages in order.",
+        ar: "أَدْخَلَ مَشْبَكَ وَرَقٍ سِلْكِيًّا فِضِّيًّا عَلَى زَاوِيَةِ مَقَالِهِ لِلْحِفَاظِ عَلَى تَرْتِيبِ الصَّفَحَاتِ.",
+      },
+      {
+        context: "Color Coding",
+        en: "Plastic-coated colorful paper clips help sort reading worksheets by reading level.",
+        ar: "تُسَاعِدُ مَشَابِكُ الوَرَقِ المُلَوَّنَةُ المُغَطَّاةُ بِالبَلَاسْتِيكِ فِي تَرْتِيبِ أَوْرَاقِ عَمَلِ القِرَاءَةِ.",
+      },
+      {
+        context: "Desk Storage",
+        en: "A magnetic dispenser holds all small metal paper clips ready on the desk.",
+        ar: "تَحْفَظُ حَامِلَةٌ مَغْنَاطِيسِيَّةٌ جَمِيعَ مَشَابِكِ الوَرَقِ المَعْدَنِيَّةِ جَاهِزَةً عَلَى المَكْتَبِ.",
+      },
+    ],
+    exampleSentence:
+      "He slid a silver wire paper clip onto the corner of his essay to keep the pages in order.",
+    exampleArabic:
+      "أَدْخَلَ مَشْبَكَ وَرَقٍ سِلْكِيًّا فِضِّيًّا عَلَى زَاوِيَةِ مَقَالِهِ لِلْحِفَاظِ عَلَى تَرْتِيبِ الصَّفَحَاتِ.",
+  },
+  "rubber-band": {
+    id: "rubber-band",
+    arabic: "رِبَاطٌ مَطَّاطِيّ (مَطَّاط)",
+    partOfSpeech: "noun",
+    phonetic: "ˈrʌbər bænd",
+    pronunciationTip: "Pronounce 'RUB-er band' (/ˈrʌb.ər bænd/).",
+    collocations: [
+      "elastic rubber band",
+      "stretch a rubber band",
+      "snap a rubber band",
+      "bundle with rubber bands",
+      "rubber band ball",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "bundle up",
+        meaning: "group items tightly with an elastic loop",
+        arabic: "يَحْزِمُ بِرِبَاطٍ مَطَّاطِيّ",
+        example: "Bundle up your vocabulary flashcards with a rubber band.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Flashcard Bundle",
+        en: "She wrapped a stretchy rubber band around her stack of study flashcards.",
+        ar: "لَفَّتْ رِبَاطًا مَطَّاطِيًّا مَرِنًا حَوْلَ حُزْمَةِ بِطَاقَاتِ الاِسْتِذْكَارِ الخَاصَّةِ بِهَا.",
+      },
+      {
+        context: "Desk Organization",
+        en: "A large ball of colorful rubber bands sits in the teacher's supply drawer.",
+        ar: "تَسْتَقِرُّ كُرَةٌ كَبِيرَةٌ مِنْ أَرْبِطَةِ المَطَّاطِ المُلَوَّنَةِ فِي دُرْجِ أَدَوَاتِ المُعَلِّمِ.",
+      },
+      {
+        context: "Art Supplies",
+        en: "Elastic bands secure rolled posters neatly for safe transport.",
+        ar: "تُثَبِّتُ الأَرْبِطَةُ المَرِنَةُ المُلْصَقَاتِ المَلْفُوفَةَ بِإِحْكَامٍ لِنَقْلِهَا بِأَمَانٍ.",
+      },
+    ],
+    exampleSentence: "She wrapped a stretchy rubber band around her stack of study flashcards.",
+    exampleArabic:
+      "لَفَّتْ رِبَاطًا مَطَّاطِيًّا مَرِنًا حَوْلَ حُزْمَةِ بِطَاقَاتِ الاِسْتِذْكَارِ الخَاصَّةِ بِهَا.",
+  },
+  thumbtack: {
+    id: "thumbtack",
+    arabic: "دَبُّوسُ لَوْحَة (دَبُّوسُ ضَغْط)",
+    partOfSpeech: "noun",
+    phonetic: "ˈθʌmtæk",
+    pronunciationTip: "Pronounce 'THUM-tak' (/ˈθʌm.tæk/).",
+    collocations: [
+      "push thumbtack",
+      "cork board thumbtacks",
+      "colorful thumbtacks",
+      "press with a thumbtack",
+      "metal thumbtack",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "tack up",
+        meaning: "affix notes to a cork surface",
+        arabic: "يُثَبِّتُ بِدَبَابِيسِ الضَّغْط",
+        example: "Tack up the science fair guidelines on the classroom corkboard.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Notice Board",
+        en: "The teacher pressed a red thumbtack into the corkboard to hang the field trip schedule.",
+        ar: "ضَغَطَ المُعَلِّمُ دَبُّوسَ لَوْحَةٍ أَحْمَرَ فِي اللَّوْحِ الفِلِّينِيِّ لِتَعْلِيقِ جَدْوَلِ الرِّحْلَةِ المَيْدَانِيَّةِ.",
+      },
+      {
+        context: "Artwork Display",
+        en: "Students used colorful plastic thumbtacks to display their landscape paintings.",
+        ar: "اسْتَخْدَمَ الطُّلَّابُ دَبَابِيسَ ضَغْطٍ بَلَاسْتِيكِيَّةً مُلَوَّنَةً لِعَرْضِ لَوْحَاتِهِمُ الطَّبِيعِيَّةِ.",
+      },
+      {
+        context: "Supply Organization",
+        en: "Keep sharp thumbtacks stored safely inside a clear plastic container.",
+        ar: "احْفَظْ دَبَابِيسَ الضَّغْطِ الحَادَّةَ بِأَمَانٍ دَاخِلَ حَاوِيَةٍ بَلَاسْتِيكِيَّةٍ شَفَّافَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "The teacher pressed a red thumbtack into the corkboard to hang the field trip schedule.",
+    exampleArabic:
+      "ضَغَطَ المُعَلِّمُ دَبُّوسَ لَوْحَةٍ أَحْمَرَ فِي اللَّوْحِ الفِلِّينِيِّ لِتَعْلِيقِ جَدْوَلِ الرِّحْلَةِ المَيْدَانِيَّةِ.",
+  },
+  calculator: {
+    id: "calculator",
+    arabic: "آلَةٌ حَاسِبَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈkælkjəˌleɪtər",
+    pronunciationTip: "Pronounce 'KAL-kyuh-lay-ter' (/ˈkæl.kjəˌleɪ.tər/).",
+    collocations: [
+      "scientific calculator",
+      "graphing calculator",
+      "solar-powered calculator",
+      "calculate with a calculator",
+      "press buttons on a calculator",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "work out",
+        meaning: "solve mathematical equations using an electronic device",
+        arabic: "يَحْسِبُ بِالآلَةِ الحَاسِبَة",
+        example: "He used his scientific calculator to work out the complex physics equation.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Math Class",
+        en: "She typed numbers into her scientific calculator to solve the trigonometry problem.",
+        ar: "كَتَبَتِ الأَرْقَامَ عَلَى آلَتِهَا الحَاسِبَةِ العِلْمِيَّةِ لِحَلِّ مَسْأَلَةِ حِسَابِ المُثَلَّثَاتِ.",
+      },
+      {
+        context: "Solar Powered",
+        en: "A solar-powered calculator operates reliably under standard classroom fluorescent lighting.",
+        ar: "تَعْمَلُ الآلَةُ الحَاسِبَةُ الَّتِي تَعْمَلُ بِالطَّاقَةِ الشَّمْسِيَّةِ بِمَوْثُوقِيَّةٍ تَحْتَ إِضَاءَةِ الفَصْلِ الفَلُورِيَّةِ.",
+      },
+      {
+        context: "Exam Rules",
+        en: "Advanced graphing calculators are permitted only during the second half of the exam.",
+        ar: "يُسْمَحُ بِالآلَاتِ الحَاسِبَةِ البَيَانِيَّةِ المُتَقَدِّمَةِ فَقَطْ خِلَالَ النِّصْفِ الثَّانِي مِنَ الاِمْتِحَانِ.",
+      },
+    ],
+    exampleSentence:
+      "She typed numbers into her scientific calculator to solve the trigonometry problem.",
+    exampleArabic:
+      "كَتَبَتِ الأَرْقَامَ عَلَى آلَتِهَا الحَاسِبَةِ العِلْمِيَّةِ لِحَلِّ مَسْأَلَةِ حِسَابِ المُثَلَّثَاتِ.",
+  },
+  compass: {
+    id: "compass",
+    arabic: "فِرْجَار (بِرْجَل)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkʌmpəs",
+    pronunciationTip: "Short 'u' sound /ʌ/: 'KUM-pus' (/ˈkʌm.pəs/).",
+    collocations: [
+      "drawing compass",
+      "geometry compass",
+      "draw a circle with a compass",
+      "sharp metal compass point",
+      "compass and straightedge",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sweep around",
+        meaning: "rotate drawing arm to form a circle",
+        arabic: "يَدُورُ لِرَسْمِ دَائِرَة",
+        example: "Anchor the point firmly and sweep the compass around to trace a perfect circle.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Geometry Drawing",
+        en: "He inserted a pencil into the drawing compass to construct a perfect circle on grid paper.",
+        ar: "أَدْخَلَ قَلَمَ رَصَاصٍ فِي الفِرْجَارِ لِرَسْمِ دَائِرَةٍ مِثَالِيَّةٍ عَلَى وَرَقٍ مُرَبَّعَاتٍ.",
+      },
+      {
+        context: "Precision Tool",
+        en: "A precision metal compass allows students to bisect angles with mathematical accuracy.",
+        ar: "يُتِيحُ الفِرْجَارُ المَعْدَنِيُّ الدَّقِيقُ لِلطُّلَّابِ تَنْصِيفَ الزَّوَايَا بِدِقَّةٍ رِيَاضِيَّةٍ.",
+      },
+      {
+        context: "Math Set",
+        en: "The geometry set includes a compass, protractor, and set squares in a metal tin.",
+        ar: "تَتَضَمَّنُ عُلْبَةُ الهَنْدَسَةِ فِرْجَارًا وَمِنْقَلَةً وَمُثَلَّثَاتٍ فِي عُلْبَةٍ مَعْدَنِيَّةٍ.",
+      },
+    ],
+    exampleSentence:
+      "He inserted a pencil into the drawing compass to construct a perfect circle on grid paper.",
+    exampleArabic:
+      "أَدْخَلَ قَلَمَ رَصَاصٍ فِي الفِرْجَارِ لِرَسْمِ دَائِرَةٍ مِثَالِيَّةٍ عَلَى وَرَقٍ مُرَبَّعَاتٍ.",
+  },
+  computer: {
+    id: "computer",
+    arabic: "حَاسُوب (كَمْبِيُوتَر)",
+    partOfSpeech: "noun",
+    phonetic: "kəmˈpjuːtər",
+    pronunciationTip: "Pronounce 'kuhm-PYOO-ter' (/kəmˈpjuː.tər/).",
+    collocations: [
+      "desktop computer",
+      "computer lab",
+      "turn on the computer",
+      "log into the computer",
+      "personal computer",
+      "computer monitor",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "log in",
+        meaning: "access computer account with credentials",
+        arabic: "يُسَجِّلُ الدُّخُولَ إِلَى الحَاسُوب",
+        example: "Students enter their school ID to log in to the lab computer.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Computer Lab",
+        en: "The class gathered in the computer lab to type their historical research papers.",
+        ar: "تَجَمَّعَ الفَصْلُ فِي مُعَامِلِ الحَاسُوبِ لِطِبَاعَةِ أَوْرَاقِ أَبْحَاثِهِمُ التَّارِيخِيَّةِ.",
+      },
+      {
+        context: "Classroom Tech",
+        en: "A modern desktop computer at the teacher's station connects to the interactive display.",
+        ar: "يَتَّصِلُ حَاسُوبٌ مَكْتَبِيٌّ حَدِيثٌ فِي مَوْضِعِ المُعَلِّمِ بِالشَّاشَةِ التَّفَاعُلِيَّةِ.",
+      },
+      {
+        context: "Online Learning",
+        en: "Students practice coding skills weekly on dedicated learning computers.",
+        ar: "يَتَدَرَّبُ الطُّلَّابُ عَلَى مَهَارَاتِ البَرْمَجَةِ أُسْبُوعِيًّا عَلَى حَوَاسِيبَ تَعْلِيمِيَّةٍ مُخَصَّصَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "The class gathered in the computer lab to type their historical research papers.",
+    exampleArabic:
+      "تَجَمَّعَ الفَصْلُ فِي مُعَامِلِ الحَاسُوبِ لِطِبَاعَةِ أَوْرَاقِ أَبْحَاثِهِمُ التَّارِيخِيَّةِ.",
+  },
+  keyboard: {
+    id: "keyboard",
+    arabic: "لَوْحَةُ مَفَاتِيح",
+    partOfSpeech: "noun",
+    phonetic: "ˈkiːbɔːrd",
+    pronunciationTip: "Pronounce 'KEE-bord' (/ˈkiː.bɔːrd/).",
+    collocations: [
+      "type on a keyboard",
+      "wireless keyboard",
+      "mechanical keyboard",
+      "keyboard keys",
+      "ergonomic keyboard",
+      "USB keyboard",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "type in",
+        meaning: "enter characters using keys",
+        arabic: "يُدْخِلُ بِالضَّغْطِ عَلَى المَفَاتِيح",
+        example: "Type in your school username and password on the keyboard.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Typing Class",
+        en: "Students learned touch typing technique by keeping their fingers on the home row of the keyboard.",
+        ar: "تَعَلَّمَ الطُّلَّابُ تِقْنِيَّةَ الطِّبَاعَةِ اللَّمْسِيَّةِ بِإِبْقَاءِ أَصَابِعِهِمْ عَلَى صَفِّ الِارْتِكَازِ فِي لَوْحَةِ المَفَاتِيحِ.",
+      },
+      {
+        context: "Computer Setup",
+        en: "An ergonomic wireless keyboard prevents wrist strain during long writing sessions.",
+        ar: "تَمْنَعُ لَوْحَةُ المَفَاتِيحِ اللَّاسِلْكِيَّةُ المُرِيحَةُ إِجْهَادَ المِعْصَمِ خِلَالَ جَلَسَاتِ الكِتَابَةِ الطَّوِيلَةِ.",
+      },
+      {
+        context: "Hotkeys",
+        en: "Pressing the spacebar on the keyboard pauses the educational video playback.",
+        ar: "يُؤَدِّي الضَّغْطُ عَلَى شَرِيطِ المَسَافَةِ فِي لَوْحَةِ المَفَاتِيحِ إِلَى إِيقَافِ تَشْغِيلِ الفِيدْيُو التَّعْلِيمِيِّ مُؤَقَّتًا.",
+      },
+    ],
+    exampleSentence:
+      "Students learned touch typing technique by keeping their fingers on the home row of the keyboard.",
+    exampleArabic:
+      "تَعَلَّمَ الطُّلَّابُ تِقْنِيَّةَ الطِّبَاعَةِ اللَّمْسِيَّةِ بِإِبْقَاءِ أَصَابِعِهِمْ عَلَى صَفِّ الِارْتِكَازِ فِي لَوْحَةِ المَفَاتِيحِ.",
+  },
+  mouse: {
+    id: "mouse",
+    arabic: "فَأْرَةُ حَاسُوب (مَاوْس)",
+    partOfSpeech: "noun",
+    phonetic: "maʊs",
+    pronunciationTip: "Pronounce 'MOWSS' (/maʊs/).",
+    collocations: [
+      "optical mouse",
+      "click the mouse",
+      "mouse pad",
+      "wireless mouse",
+      "scroll wheel on mouse",
+      "double-click the mouse",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "scroll down",
+        meaning: "navigate pages using mouse wheel",
+        arabic: "يُمَرِّرُ لِلأَسْفَلِ بِالفَأْرَة",
+        example: "Use the optical mouse to scroll down and submit your online quiz.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Computer Navigation",
+        en: "She moved the optical mouse smoothly over the neoprene pad to click the submit button.",
+        ar: "حَرَّكَتْ فَأْرَةَ الحَاسُوبِ الضَّوْئِيَّةَ بِسَلَاسَةٍ عَلَى لَوْحَةِ الفَأْرَةِ لِلنَّقْرِ عَلَى زِرِّ الإِرْسَالِ.",
+      },
+      {
+        context: "Wireless Device",
+        en: "A wireless computer mouse connects via Bluetooth for tangle-free desk space.",
+        ar: "تَتَّصِلُ فَأْرَةُ الحَاسُوبِ اللَّاسِلْكِيَّةُ عَبْرَ البْلُوتُوثِ لِتَوْفِيرِ مِسَاحَةِ مَكْتَبٍ خَالِيَةٍ مِنَ الأَسْلَاكِ.",
+      },
+      {
+        context: "Double Click",
+        en: "Double-click the textbook folder icon with the left mouse button to open it.",
+        ar: "انْقُرْ نَقْرًا مُزْدَوَجًا عَلَى أَيْقُونَةِ مِلَفِّ الكِتَابِ المَدْرَسِيِّ بِزِرِّ الفَأْرَةِ الأَيْسَرِ لِفَتْحِهِ.",
+      },
+    ],
+    exampleSentence:
+      "She moved the optical mouse smoothly over the neoprene pad to click the submit button.",
+    exampleArabic:
+      "حَرَّكَتْ فَأْرَةَ الحَاسُوبِ الضَّوْئِيَّةَ بِسَلَاسَةٍ عَلَى لَوْحَةِ الفَأْرَةِ لِلنَّقْرِ عَلَى زِرِّ الإِرْسَالِ.",
+  },
+  printer: {
+    id: "printer",
+    arabic: "طَابِعَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈprɪntər",
+    pronunciationTip: "Pronounce 'PRIN-ter' (/ˈprɪn.tər/).",
+    collocations: [
+      "laser printer",
+      "color printer",
+      "printer paper tray",
+      "inkjet printer",
+      "print from a printer",
+      "wireless network printer",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "print out",
+        meaning: "produce hard copies from computer files",
+        arabic: "يَطْبَعُ وَرَقِيًّا",
+        example:
+          "The teacher will print out twenty copies of the study guide on the laser printer.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Class Handouts",
+        en: "The teacher printed out thirty copies of the assignment on the high-speed laser printer.",
+        ar: "طَبَعَ المُعَلِّمُ ثَلَاثِينَ نُسْخَةً مِنَ الفَرْضِ عَلَى طَابِعَةِ اللَّيْزَرِ سَرِيعَةِ الأَدَاءِ.",
+      },
+      {
+        context: "Color Printing",
+        en: "Students printed their colorful science diagrams on the shared library printer.",
+        ar: "طَبَعَ الطُّلَّابُ مُخَطَّطَاتِهِمُ العِلْمِيَّةَ المُلَوَّنَةَ عَلَى طَابِعَةِ المَكْتَبَةِ المُشْتَرَكَةِ.",
+      },
+      {
+        context: "Maintenance",
+        en: "A blinking yellow light on the front panel indicates the printer needs more paper.",
+        ar: "يُشِيرُ ضَوْءٌ أَصْفَرُ وَامِضٌ عَلَى اللَّوْحَةِ الأَمَامِيَّةِ إِلَى أَنَّ الطَّابِعَةَ بِحَاجَةٍ إِلَى مَزِيدٍ مِنَ الوَرَقِ.",
+      },
+    ],
+    exampleSentence:
+      "The teacher printed out thirty copies of the assignment on the high-speed laser printer.",
+    exampleArabic:
+      "طَبَعَ المُعَلِّمُ ثَلَاثِينَ نُسْخَةً مِنَ الفَرْضِ عَلَى طَابِعَةِ اللَّيْزَرِ سَرِيعَةِ الأَدَاءِ.",
+  },
+  "usb-drive": {
+    id: "usb-drive",
+    arabic: "ذَاكِرَةُ فَلَاش (فَلَاشَةُ يُو إِسْ بِي)",
+    partOfSpeech: "noun",
+    phonetic: "ˌjuː.ɛsˈbiː draɪv",
+    pronunciationTip: "Pronounce 'U-S-B dryv' (/ˌjuː.ɛsˈbiː draɪv/).",
+    collocations: [
+      "flash drive",
+      "insert a USB drive",
+      "save to a USB drive",
+      "thumb drive",
+      "plug in a USB drive",
+      "backup USB drive",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "back up",
+        meaning: "save secondary copy of files onto external storage",
+        arabic: "يَحْفَظُ نُسْخَةً احْتِيَاطِيَّة",
+        example: "Always back up your presentation slides onto a portable USB drive.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Saving Projects",
+        en: "He saved his digital presentation slides onto a portable USB drive to present in class.",
+        ar: "حَفِظَ شَرَائِحَ عَرْضِهِ الرَّقْمِيِّ عَلَى ذَاكِرَةِ فَلَاشٍ مَحْمُولَةٍ لِعَرْضِهَا فِي الفَصْلِ.",
+      },
+      {
+        context: "File Transfer",
+        en: "Plug the compact flash drive into the side port of the classroom laptop.",
+        ar: "صِلْ ذَاكِرَةَ الفَلَاشِ المُدْمَجَةَ فِي المَنْفَذِ الجَانِبِيِّ لِحَاسُوبِ الفَصْلِ المَحْمُولِ.",
+      },
+      {
+        context: "Safe Ejection",
+        en: "Eject the USB drive safely from the operating system before pulling it out.",
+        ar: "أَفْصِلْ ذَاكِرَةَ الفَلَاشِ بِأَمَانٍ مِنْ نِظَامِ التَّشْغِيلِ قَبْلَ سَحْبِهَا.",
+      },
+    ],
+    exampleSentence:
+      "He saved his digital presentation slides onto a portable USB drive to present in class.",
+    exampleArabic:
+      "حَفِظَ شَرَائِحَ عَرْضِهِ الرَّقْمِيِّ عَلَى ذَاكِرَةِ فَلَاشٍ مَحْمُولَةٍ لِعَرْضِهَا فِي الفَصْلِ.",
+  },
+  "projector-remote": {
+    id: "projector-remote",
+    arabic: "جِهَازُ التَّحَكُّمِ عَنْ بُعْدٍ لِجِهَازِ العَرْض (رِيمُوتُ البْرُوجِكْتُور)",
+    partOfSpeech: "noun",
+    phonetic: "prəˈdʒɛktər rɪˈmoʊt",
+    pronunciationTip: "Pronounce 'pruh-JEK-ter rih-MOHT' (/prəˈdʒɛk.tər rɪˈmoʊt/).",
+    collocations: [
+      "wireless projector remote",
+      "press power on remote",
+      "laser pointer on remote",
+      "adjust volume with remote",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "switch on",
+        meaning: "activate projector using remote control",
+        arabic: "يُشَغِّلُ بِجِهَازِ التَّحَكُّم",
+        example: "Use the wireless remote to switch on the overhead projector.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Presentation Control",
+        en: "The teacher clicked the projector remote to advance to the next educational slide.",
+        ar: "نَقَرَ المُعَلِّمُ عَلَى جِهَازِ التَّحَكُّمِ عَنْ بُعْدٍ لِجِهَازِ العَرْضِ لِلِانْتِقَالِ إِلَى الشَّرِيحَةِ التَّعْلِيمِيَّةِ التَّالِيَةِ.",
+      },
+      {
+        context: "Built-in Laser",
+        en: "A red laser pointer built into the handheld remote highlights diagrams on the screen.",
+        ar: "يُبْرِزُ مُؤَشِّرُ اللَّيْزَرِ الأَحْمَرُ المُدْمَجُ فِي جِهَازِ التَّحَكُّمِ اليَدَوِيِّ الرُّسُومَ عَلَى الشَّاشَةِ.",
+      },
+      {
+        context: "Desk Storage",
+        en: "Keep the projector remote resting on the podium so it is always within reach.",
+        ar: "ضَعْ رِيمُوتَ البْرُوجِكْتُورِ عَلَى المِنْبَرِ لِيَكُونَ دَائِمًا فِي مُتَنَاوَلِ اليَدِ.",
+      },
+    ],
+    exampleSentence:
+      "The teacher clicked the projector remote to advance to the next educational slide.",
+    exampleArabic:
+      "نَقَرَ المُعَلِّمُ عَلَى جِهَازِ التَّحَكُّمِ عَنْ بُعْدٍ لِجِهَازِ العَرْضِ لِلِانْتِقَالِ إِلَى الشَّرِيحَةِ التَّعْلِيمِيَّةِ التَّالِيَةِ.",
+  },
+  student: {
+    id: "student",
+    arabic: "طَالِب (تِلْمِيذ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈstuːdənt",
+    pronunciationTip: "Pronounce 'STOO-dent' (/ˈstuː.dənt/).",
+    collocations: [
+      "elementary student",
+      "attentive student",
+      "student body",
+      "raise hand as a student",
+      "hardworking student",
+      "student desk",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "listen to",
+        meaning: "pay attention to instruction",
+        arabic: "يُنْصِتُ لِلْمُعَلِّم",
+        example: "Every student listened attentively to the teacher's historical story.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Classroom Learning",
+        en: "The enthusiastic student raised her hand to answer the teacher's question.",
+        ar: "رَفَعَتِ الطَّالِبَةُ المُتَحَمِّسَةُ يَدَهَا لِلْإِجَابَةِ عَنْ سُؤَالِ المُعَلِّمِ.",
+      },
+      {
+        context: "Group Work",
+        en: "Students collaborated in pairs to complete their science experiment.",
+        ar: "تَعَاوَنَ الطُّلَّابُ فِي أَزْوَاجٍ لِإِكْمَالِ تَجْرِبَتِهِمُ العِلْمِيَّةِ.",
+      },
+      {
+        context: "Study Habits",
+        en: "A dedicated student reviews lesson vocabulary every evening.",
+        ar: "يُرَاجِعُ الطَّالِبُ المُجْتَهِدُ مُفْرَدَاتِ الدُّرُوسِ كُلَّ مَسَاءٍ.",
+      },
+    ],
+    exampleSentence: "The enthusiastic student raised her hand to answer the teacher's question.",
+    exampleArabic:
+      "رَفَعَتِ الطَّالِبَةُ المُتَحَمِّسَةُ يَدَهَا لِلْإِجَابَةِ عَنْ سُؤَالِ المُعَلِّمِ.",
+  },
+  principal: {
+    id: "principal",
+    arabic: "مُدِيرُ المَدْرَسَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈprɪnsəpəl",
+    pronunciationTip: "Pronounce 'PRIN-suh-pul' (/ˈprɪn.sə.pəl/).",
+    collocations: [
+      "school principal",
+      "principal's office",
+      "meet with the principal",
+      "vice principal",
+      "morning address by principal",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "look after",
+        meaning: "oversee welfare and discipline of school community",
+        arabic: "يَرْعَى وَيُشْرِفُ عَلَى المَدْرَسَة",
+        example: "The principal looks after the safety and academic progress of every student.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Morning Assembly",
+        en: "The principal welcomed all new students warmly during the opening morning assembly.",
+        ar: "رَحَّبَ مُدِيرُ المَدْرَسَةِ بِجَمِيعِ الطُّلَّابِ الجُدُدِ بِحَرَارَةٍ خِلَالَ طَابُورِ الصَّبَاحِ الاِفْتِتَاحِيِّ.",
+      },
+      {
+        context: "Leadership",
+        en: "She met with teachers to plan innovative STEM programs for the upcoming academic year.",
+        ar: "اجْتَمَعَتْ مَعَ المُعَلِّمِينَ لِتَخْطِيطِ بَرَامِجَ تَعْلِيمِيَّةٍ مُبْتَكَرَةٍ لِلْعَامِ الدِّرَاسِيِّ القَادِمِ.",
+      },
+      {
+        context: "School Tour",
+        en: "The principal guided visiting parents through the newly renovated science wing.",
+        ar: "أَرْشَدَ مُدِيرُ المَدْرَسَةِ أَوْلِيَاءَ الأُمُورِ الزَّائِرِينَ عَبْرَ جَنَاحِ العُلُومِ المُجَدَّدِ حَدِيثًا.",
+      },
+    ],
+    exampleSentence:
+      "The principal welcomed all new students warmly during the opening morning assembly.",
+    exampleArabic:
+      "رَحَّبَ مُدِيرُ المَدْرَسَةِ بِجَمِيعِ الطُّلَّابِ الجُدُدِ بِحَرَارَةٍ خِلَالَ طَابُورِ الصَّبَاحِ الاِفْتِتَاحِيِّ.",
+  },
+  librarian: {
+    id: "librarian",
+    arabic: "أَمِينُ المَكْتَبَة",
+    partOfSpeech: "noun",
+    phonetic: "laɪˈbrɛriən",
+    pronunciationTip: "Pronounce 'ly-BRAIR-ee-un' (/laɪˈbrɛr.i.ən/).",
+    collocations: [
+      "school librarian",
+      "ask the librarian",
+      "librarian's desk",
+      "head librarian",
+      "check out with librarian",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "check out",
+        meaning: "process book borrowing records",
+        arabic: "يُعِيرُ كِتَابًا",
+        example: "The librarian helped her check out two mystery novels for the weekend.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Library Guidance",
+        en: "The librarian helped students locate historical encyclopedias for their research projects.",
+        ar: "سَاعَدَ أَمِينُ المَكْتَبَةِ الطُّلَّابَ فِي العُثُورِ عَلَى المَوْسُوعَاتِ التَّارِيخِيَّةِ لِمَشَارِيعِ أَبْحَاثِهِمْ.",
+      },
+      {
+        context: "Storytime",
+        en: "Every Friday, the children gather on the reading rug while the librarian reads aloud.",
+        ar: "كُلَّ جُمُعَةٍ، يَتَجَمَّعُ الأَطْفَالُ عَلَى بِسَاطِ القِرَاءَةِ بَيْنَمَا يَقْرَأُ أَمِينُ المَكْتَبَةِ بِصَوْتٍ عَالٍ.",
+      },
+      {
+        context: "Book Catalog",
+        en: "She scans barcodes and keeps library shelves organized according to the Dewey system.",
+        ar: "تَمْسَحُ البَارْكُودَ ضَوْئِيًّا وَتُحَافِظُ عَلَى تَرْتِيبِ رُفُوفِ المَكْتَبَةِ وَفْقًا لِنِظَامِ دِيُوِي.",
+      },
+    ],
+    exampleSentence:
+      "The librarian helped students locate historical encyclopedias for their research projects.",
+    exampleArabic:
+      "سَاعَدَ أَمِينُ المَكْتَبَةِ الطُّلَّابَ فِي العُثُورِ عَلَى المَوْسُوعَاتِ التَّارِيخِيَّةِ لِمَشَارِيعِ أَبْحَاثِهِمْ.",
+  },
+  janitor: {
+    id: "janitor",
+    arabic: "عَامِلُ نَظَافَةٍ مَدْرَسِيّ (حَارِسُ مَبْنَى)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdʒænɪtər",
+    pronunciationTip: "Pronounce 'JAN-ih-ter' (/ˈdʒæn.ɪ.tər/).",
+    collocations: [
+      "school janitor",
+      "janitor closet",
+      "janitor mop and bucket",
+      "friendly janitor",
+      "janitor cleaning cart",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "clean up",
+        meaning: "sanitize and tidy school halls",
+        arabic: "يُنَظِّفُ وَيُرَتِّب",
+        example: "The janitor cleaned up the spilled milk in the cafeteria quickly.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Hallway Cleaning",
+        en: "The friendly janitor mopped the polished hallway floor until it was spotless and dry.",
+        ar: "مَسَحَ عَامِلُ النَّظَافَةِ الوَدُودُ أَرْضِيَّةَ الرِّدْهَةِ المَصْقُولَةَ حَتَّى أَصْبَحَتْ نَظِيفَةً وَجَافَّةً تَمَامًا.",
+      },
+      {
+        context: "School Maintenance",
+        en: "He carries a ring of keys to unlock supply rooms and service facility closets.",
+        ar: "يَحْمِلُ حَلْقَةَ مَفَاتِيحَ لِفَتْحِ غُرَفِ التَّخْزِينِ وَخَزَائِنِ الخَدَمَاتِ.",
+      },
+      {
+        context: "Recycling",
+        en: "Every afternoon, the janitor empties paper recycling bins from each classroom.",
+        ar: "كُلَّ بَعْدَ ظُهْرٍ، يُفْرِغُ عَامِلُ النَّظَافَةِ حَاوِيَاتِ إِعَادَةِ تَدْوِيرِ الوَرَقِ مِنْ كُلِّ فَصْلٍ.",
+      },
+    ],
+    exampleSentence:
+      "The friendly janitor mopped the polished hallway floor until it was spotless and dry.",
+    exampleArabic:
+      "مَسَحَ عَامِلُ النَّظَافَةِ الوَدُودُ أَرْضِيَّةَ الرِّدْهَةِ المَصْقُولَةَ حَتَّى أَصْبَحَتْ نَظِيفَةً وَجَافَّةً تَمَامًا.",
+  },
+  "school-nurse": {
+    id: "school-nurse",
+    arabic: "مُمَرِّضَةُ المَدْرَسَة",
+    partOfSpeech: "noun",
+    phonetic: "skuːl nɜːrs",
+    pronunciationTip: "Pronounce 'SKOOL nurs' (/skuːl nɜːrs/).",
+    collocations: [
+      "visit the school nurse",
+      "school nurse office",
+      "first aid by nurse",
+      "caring school nurse",
+      "temperature check by nurse",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "tend to",
+        meaning: "provide medical care to injured student",
+        arabic: "يَعْتَنِي بِـ / يُدَاوِي",
+        example: "The school nurse tended to the scraped knee with antiseptic and a bandage.",
+      },
+    ],
+    sentences: [
+      {
+        context: "First Aid Clinic",
+        en: "The caring school nurse placed an adhesive bandage on the student's scraped elbow.",
+        ar: "وَضَعَتْ مُمَرِّضَةُ المَدْرَسَةِ الحَنُونَةُ ضِمَادَةً لَاصِقَةً عَلَى مِرْفَقِ الطَّالِبِ المَخْدُوشِ.",
+      },
+      {
+        context: "Health Check",
+        en: "She checked the child's temperature with a digital thermometer in the quiet clinic.",
+        ar: "قَاسَتْ دَرَجَةَ حَرَارَةِ الطِّفْلِ بِمِقْيَاسِ حَرَارَةٍ رَقْمِيٍّ فِي العِيَادَةِ الهَادِئَةِ.",
+      },
+      {
+        context: "Medical Records",
+        en: "The nurse maintains immunization records and allergy emergency kits for all classes.",
+        ar: "تَحْفَظُ المُمَرِّضَةُ سِجِلَّاتِ التَّطْعِيمِ وَحَقَائِبَ طَوَارِئِ الحَسَاسِيَّةِ لِجَمِيعِ الفُصُولِ.",
+      },
+    ],
+    exampleSentence:
+      "The caring school nurse placed an adhesive bandage on the student's scraped elbow.",
+    exampleArabic:
+      "وَضَعَتْ مُمَرِّضَةُ المَدْرَسَةِ الحَنُونَةُ ضِمَادَةً لَاصِقَةً عَلَى مِرْفَقِ الطَّالِبِ المَخْدُوشِ.",
+  },
+  "substitute-teacher": {
+    id: "substitute-teacher",
+    arabic: "مُعَلِّمٌ بَدِيل (مُدَرِّسٌ مُنْتَدَب)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsʌbstɪtuːt ˈtiːtʃər",
+    pronunciationTip: "Pronounce 'SUB-stih-toot TEE-cher' (/ˈsʌb.stɪ.tuːt ˈtiː.tʃər/).",
+    collocations: [
+      "substitute teacher lesson plan",
+      "welcome the substitute",
+      "substitute in math class",
+      "temporary substitute teacher",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "fill in for",
+        meaning: "replace an absent instructor temporarily",
+        arabic: "يَنُوبُ عَنْ مُعَلِّمٍ غَائِب",
+        example: "Mr. Davis will fill in for our regular biology teacher today.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Temporary Teaching",
+        en: "The substitute teacher introduced himself and followed the detailed lesson plan left on the desk.",
+        ar: "قَدَّمَ المُعَلِّمُ البَدِيلُ نَفْسَهُ وَاتَّبَعَ خُطَّةَ الدَّرْسِ المُفَصَّلَةَ المَتْرُوكَةَ عَلَى المَكْتَبِ.",
+      },
+      {
+        context: "Classroom Cooperation",
+        en: "Students showed great respect and completed all worksheets for the substitute.",
+        ar: "أَظْهَرَ الطُّلَّابُ احْتِرَامًا كَبِيرًا وَأَكْمَلُوا جَمِيعَ أَوْرَاقِ العَمَلِ لِلْمُعَلِّمِ البَدِيلِ.",
+      },
+      {
+        context: "Morning Routine",
+        en: "He took morning attendance by calling each student's name from the printed roster.",
+        ar: "أَخَذَ غِيَابَ الصَّبَاحِ بِمُنَادَاةِ اسْمِ كُلِّ طَالِبٍ مِنَ القَائِمَةِ المَطْبُوعَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The substitute teacher introduced himself and followed the detailed lesson plan left on the desk.",
+    exampleArabic:
+      "قَدَّمَ المُعَلِّمُ البَدِيلُ نَفْسَهُ وَاتَّبَعَ خُطَّةَ الدَّرْسِ المُفَصَّلَةَ المَتْرُوكَةَ عَلَى المَكْتَبِ.",
+  },
+  "teaching-assistant": {
+    id: "teaching-assistant",
+    arabic: "مُسَاعِدُ مُعَلِّم",
+    partOfSpeech: "noun",
+    phonetic: "ˈtiːtʃɪŋ əˈsɪstənt",
+    pronunciationTip: "Pronounce 'TEE-ching uh-SIS-tunt' (/ˈtiː.tʃɪŋ əˈsɪs.tənt/).",
+    collocations: [
+      "classroom teaching assistant",
+      "ask the teaching assistant",
+      "support from assistant",
+      "teaching assistant guidance",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "help out with",
+        meaning: "provide instructional aid to individuals",
+        arabic: "يُسَاعِدُ فِي التَّعْلِيم",
+        example: "The teaching assistant helps out with reading groups during literacy hour.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Individual Support",
+        en: "The teaching assistant knelt beside the student's desk to explain the math fraction problem.",
+        ar: "جَثَا مُسَاعِدُ المُعَلِّمِ بِجَانِبِ مَكْتَبِ الطَّالِبِ لِشَرْحِ مَسْأَلَةِ الكُسُورِ فِي الرِّيَاضِيَّاتِ.",
+      },
+      {
+        context: "Group Activities",
+        en: "She prepared art supplies and guided small reading circles during morning centers.",
+        ar: "أَعَدَّتْ أَدَوَاتِ الفَنِّ وَأَرْشَدَتْ مَجْمُوعَاتِ القِرَاءَةِ الصَّغِيرَةِ خِلَالَ أَنْشِطَةِ الصَّبَاحِ.",
+      },
+      {
+        context: "Classroom Teamwork",
+        en: "The teacher and teaching assistant work closely together to ensure every child thrives.",
+        ar: "يَعْمَلُ المُعَلِّمُ وَمُسَاعِدُهُ بِتَعَاوُنٍ وَثِيقٍ لِضَمَانِ تَفَوُّقِ كُلِّ طِفْلٍ.",
+      },
+    ],
+    exampleSentence:
+      "The teaching assistant knelt beside the student's desk to explain the math fraction problem.",
+    exampleArabic:
+      "جَثَا مُسَاعِدُ المُعَلِّمِ بِجَانِبِ مَكْتَبِ الطَّالِبِ لِشَرْحِ مَسْأَلَةِ الكُسُورِ فِي الرِّيَاضِيَّاتِ.",
+  },
+  counselor: {
+    id: "counselor",
+    arabic: "مُرْشِدٌ طُلَّابِيّ (مُرْشِدٌ نَفْسِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkaʊnsələr",
+    pronunciationTip: "Pronounce 'KOWN-suh-ler' (/ˈkaʊn.sə.lər/).",
+    collocations: [
+      "school counselor",
+      "guidance counselor",
+      "meet with the counselor",
+      "counselor's office",
+      "college counselor",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "talk through",
+        meaning: "discuss feelings and academic goals",
+        arabic: "يُنَاقِشُ وَيَسْتَمِعُ لِلْمَشَاعِر",
+        example: "The counselor helped him talk through his anxieties about the upcoming exam.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Guidance Session",
+        en: "She met with the guidance counselor to choose elective courses for the next semester.",
+        ar: "اجْتَمَعَتْ مَعَ المُرْشِدِ الطُّلَّابِيِّ لِاخْتِيَارِ المَوَادِّ الاِخْتِيَارِيَّةِ لِلْفَصْلِ الدِّرَاسِيِّ القَادِمِ.",
+      },
+      {
+        context: "Emotional Support",
+        en: "The counselor's office offers a calming, welcoming environment for students seeking advice.",
+        ar: "يُوَفِّرُ مَكْتَبُ المُرْشِدِ بِيئَةً مُهَدِّئَةً وَمُرَحِّبَةً لِلطُّلَّابِ البَاحِثِينَ عَنِ النَّصِيحَةِ.",
+      },
+      {
+        context: "Career Guidance",
+        en: "High school counselors provide valuable advice about college applications and career paths.",
+        ar: "يُقَدِّمُ مُرْشِدُو المَدَارِسِ الثَّانَوِيَّةِ نَصَائِحَ قَيِّمَةً حَوْلَ التَّقْدِيمِ لِلْجَامِعَاتِ وَالمَسَارَاتِ المِهْنِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "She met with the guidance counselor to choose elective courses for the next semester.",
+    exampleArabic:
+      "اجْتَمَعَتْ مَعَ المُرْشِدِ الطُّلَّابِيِّ لِاخْتِيَارِ المَوَادِّ الاِخْتِيَارِيَّةِ لِلْفَصْلِ الدِّرَاسِيِّ القَادِمِ.",
+  },
+  "security-guard": {
+    id: "security-guard",
+    arabic: "حَارِسُ أَمْنٍ مَدْرَسِيّ",
+    partOfSpeech: "noun",
+    phonetic: "sɪˈkjʊrəti ɡɑːrd",
+    pronunciationTip: "Pronounce 'sih-KYUR-ih-tee gard' (/sɪˈkjʊr.ə.ti ɡɑːrd/).",
+    collocations: [
+      "school security guard",
+      "guard station at entrance",
+      "patrol the campus",
+      "sign in with the guard",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "watch over",
+        meaning: "protect students and ensure campus safety",
+        arabic: "يَحْرُسُ وَيَرْعَى الأَمْن",
+        example: "Security guards watch over the entrance during morning drop-off.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Campus Safety",
+        en: "The security guard greeted students warmly at the front gate as they entered the school.",
+        ar: "حَيَّا حَارِسُ الأَمْنِ الطُّلَّابَ بِحَرَارَةٍ عِنْدَ البَوَّابَةِ الأَمَامِيَّةِ أَثْنَاءَ دُخُولِهِمْ إِلَى المَدْرَسَةِ.",
+      },
+      {
+        context: "Visitor Management",
+        en: "All campus visitors must sign in at the guard station and receive a guest badge.",
+        ar: "يَجِبُ عَلَى جَمِيعِ زُوَّارِ الحَرَمِ المَدْرَسِيِّ التَّسْجِيلُ عِنْدَ نُقْطَةِ الحِرَاسَةِ وَاسْتِلَامُ شَارَةِ الزَّائِرِ.",
+      },
+      {
+        context: "Patrolling",
+        en: "Guards regularly patrol school grounds to ensure a secure learning environment.",
+        ar: "يَقُومُ حُرَّاسُ الأَمْنِ بِدَوْرِيَّاتٍ مُنْتَظَمَةٍ فِي أَرْجَاءِ المَدْرَسَةِ لِضَمَانِ بِيئَةٍ تَعْلِيمِيَّةٍ آمِنَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "The security guard greeted students warmly at the front gate as they entered the school.",
+    exampleArabic:
+      "حَيَّا حَارِسُ الأَمْنِ الطُّلَّابَ بِحَرَارَةٍ عِنْدَ البَوَّابَةِ الأَمَامِيَّةِ أَثْنَاءَ دُخُولِهِمْ إِلَى المَدْرَسَةِ.",
+  },
+  homework: {
+    id: "homework",
+    arabic: "وَاجِبٌ مَنْزِلِيّ (فَرْضٌ مَدْرَسِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈhoʊmwɜːrk",
+    pronunciationTip: "Pronounce 'HOHM-wurk' (/ˈhoʊm.wɜːrk/). Uncountable noun.",
+    collocations: [
+      "do homework",
+      "finish homework",
+      "assign homework",
+      "homework assignment",
+      "math homework",
+      "hand in homework",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hand in",
+        meaning: "submit completed school assignments",
+        arabic: "يُسَلِّمُ الوَاجِب",
+        example: "Make sure to hand in your completed history homework before the bell.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Evening Study",
+        en: "He spent an hour at his desk completing his math and reading homework.",
+        ar: "أَمْضَى سَاعَةً عَلَى مَكْتَبِهِ فِي إِكْمَالِ وَاجِبِ الرِّيَاضِيَّاتِ وَالقِرَاءَةِ المَنْزِلِيِّ.",
+      },
+      {
+        context: "Teacher Assignment",
+        en: "The teacher wrote tomorrow's science homework on the right side of the whiteboard.",
+        ar: "كَتَبَ المُعَلِّمُ وَاجِبَ العُلُومِ لِلْغَدِ عَلَى الجَانِبِ الأَيْمَنِ مِنَ اللَّوْحِ الأَبْيَضِ.",
+      },
+      {
+        context: "Study Habit",
+        en: "Completing homework consistently reinforces the concepts learned in class.",
+        ar: "يُعَزِّزُ إِكْمَالُ الوَاجِبَاتِ المَنْزِلِيَّةِ بِاسْتِمْرَارٍ المَفَاهِيمَ الَّتِي تَمَّ تَعَلُّمُهَا فِي الفَصْلِ.",
+      },
+    ],
+    exampleSentence: "He spent an hour at his desk completing his math and reading homework.",
+    exampleArabic:
+      "أَمْضَى سَاعَةً عَلَى مَكْتَبِهِ فِي إِكْمَالِ وَاجِبِ الرِّيَاضِيَّاتِ وَالقِرَاءَةِ المَنْزِلِيِّ.",
+  },
+  test: {
+    id: "test",
+    arabic: "اخْتِبَار (امْتِحَان)",
+    partOfSpeech: "noun",
+    phonetic: "tɛst",
+    pronunciationTip: "Short 'e' sound /ɛ/: 'TEST' (/tɛst/).",
+    collocations: [
+      "take a test",
+      "pass a test",
+      "math test",
+      "study for a test",
+      "standardized test",
+      "pop test",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pass with",
+        meaning: "achieve a successful score",
+        arabic: "يَنْجَحُ فِي الاِخْتِبَارِ بِـ",
+        example: "She studied diligently and passed the midterm science test with an A.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Exam Room",
+        en: "The classroom was completely silent while students worked on their science test.",
+        ar: "كَانَ الفَصْلُ هَادِئًا تَمَامًا بَيْنَمَا كَانَ الطُّلَّابُ يَعْمَلُونَ عَلَى اخْتِبَارِ العُلُومِ.",
+      },
+      {
+        context: "Preparation",
+        en: "He reviewed his vocabulary flashcards every night to prepare for the spelling test.",
+        ar: "رَاجَعَ بِطَاقَاتِ مُفْرَدَاتِهِ كُلَّ لَيْلَةٍ لِلِاسْتِعْدَادِ لِاخْتِبَارِ الإِمْلَاءِ.",
+      },
+      {
+        context: "Grading",
+        en: "The teacher handed back the graded tests with constructive feedback on each page.",
+        ar: "أَعَادَ المُعَلِّمُ الاِخْتِبَارَاتِ المُصَحَّحَةَ مَعَ مُلَاحَظَاتٍ بَنَّاءَةٍ عَلَى كُلِّ صَفْحَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "The classroom was completely silent while students worked on their science test.",
+    exampleArabic:
+      "كَانَ الفَصْلُ هَادِئًا تَمَامًا بَيْنَمَا كَانَ الطُّلَّابُ يَعْمَلُونَ عَلَى اخْتِبَارِ العُلُومِ.",
+  },
+  recess: {
+    id: "recess",
+    arabic: "فُسْحَة (اسْتِرَاحَةٌ مَدْرَسِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈriːsɛs",
+    pronunciationTip: "Pronounce 'REE-ses' (/ˈriː.sɛs/).",
+    collocations: [
+      "afternoon recess",
+      "play at recess",
+      "recess bell",
+      "outdoor recess",
+      "recess games",
+      "indoor recess",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "run out",
+        meaning: "rush outside to the playground",
+        arabic: "يَرْكُضُ لِلْخَارِجِ فِي الفُسْحَة",
+        example: "The children ran out to the swings as soon as recess began.",
+      },
+    ],
+    sentences: [
+      {
+        context: "School Break",
+        en: "When the bell rang for recess, excited students rushed outside to play tag and swing.",
+        ar: "عِنْدَمَا دَقَّ الجَرَسُ مُعْلِنًا الفُسْحَةَ، انْدَفَعَ الطُّلَّابُ المُتَحَمِّسُونَ إِلَى الخَارِجِ لِلَّعِبِ وَالتَّأَرْجُحِ.",
+      },
+      {
+        context: "Physical Activity",
+        en: "Outdoor recess provides valuable physical exercise and social play between academic lessons.",
+        ar: "تُوَفِّرُ الفُسْحَةُ الخَارِجِيَّةُ تَمَارِينَ بَدَنِيَّةً قَيِّمَةً وَلَعِبًا اجْتِمَاعِيًّا بَيْنَ الدُّرُوسِ.",
+      },
+      {
+        context: "Weather Contingency",
+        en: "During rainy days, teachers organize board games inside the classroom for indoor recess.",
+        ar: "خِلَالَ الأَيَّامِ المُمْطِرَةِ، يُنَظِّمُ المُعَلِّمُونَ أَلْعَابًا لَوْحِيَّةً دَاخِلَ الفَصْلِ لِلْفُسْحَةِ الدَّاخِلِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "When the bell rang for recess, excited students rushed outside to play tag and swing.",
+    exampleArabic:
+      "عِنْدَمَا دَقَّ الجَرَسُ مُعْلِنًا الفُسْحَةَ، انْدَفَعَ الطُّلَّابُ المُتَحَمِّسُونَ إِلَى الخَارِجِ لِلَّعِبِ وَالتَّأَرْجُحِ.",
+  },
+  grade: {
+    id: "grade",
+    arabic: "دَرَجَة (عَلَامَةٌ تَقْيِيمِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ɡreɪd",
+    pronunciationTip: "Long 'a' sound /eɪ/: 'GRAYD' (/ɡreɪd/).",
+    collocations: [
+      "good grade",
+      "letter grade",
+      "improve a grade",
+      "grade report",
+      "top grade",
+      "grade average",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "bring up",
+        meaning: "improve an academic score",
+        arabic: "يَرْفَعُ دَرَجَتَهُ الدِّرَاسِيَّة",
+        example: "Extra tutoring helped her bring up her grade in algebra.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Academic Achievement",
+        en: "She was thrilled to see an 'A' grade marked in red ink at the top of her essay.",
+        ar: "كَانَتْ فِي غَايَةِ السَّعَادَةِ عِنْدَمَا رَأَتْ دَرَجَةَ 'A' مَكْتُوبَةً بِالحِبْرِ الأَحْمَرِ فِي أَعْلَى مَقَالِهَا.",
+      },
+      {
+        context: "Report Card",
+        en: "His quarterly report card showed excellent grades in science and geography.",
+        ar: "أَظْهَرَتْ شَهَادَةُ تَقْيِيمِهِ الفَصْلِيَّةُ دَرَجَاتٍ مُمْتَازَةً فِي العُلُومِ وَالجُغْرَافْيَا.",
+      },
+      {
+        context: "Evaluation",
+        en: "Teachers grade assignments based on clarity, accuracy, and depth of analysis.",
+        ar: "يُقَيِّمُ المُعَلِّمُونَ الفُرُوضَ بِنَاءً عَلَى الوُضُوحِ وَالدِّقَّةِ وَعُمْقِ التَّحْلِيلِ.",
+      },
+    ],
+    exampleSentence:
+      "She was thrilled to see an 'A' grade marked in red ink at the top of her essay.",
+    exampleArabic:
+      "كَانَتْ فِي غَايَةِ السَّعَادَةِ عِنْدَمَا رَأَتْ دَرَجَةَ 'A' مَكْتُوبَةً بِالحِبْرِ الأَحْمَرِ فِي أَعْلَى مَقَالِهَا.",
+  },
+  uniform: {
+    id: "uniform",
+    arabic: "زِيٌّ مَدْرَسِيّ (زِيٌّ مُوَحَّد)",
+    partOfSpeech: "noun",
+    phonetic: "ˈjuːnɪfɔːrm",
+    pronunciationTip: "Pronounce 'YOO-nih-form' (/ˈjuː.nɪ.fɔːrm/).",
+    collocations: [
+      "school uniform",
+      "wear a uniform",
+      "neat uniform",
+      "pressed uniform",
+      "uniform polo shirt",
+      "uniform skirt or trousers",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put on",
+        meaning: "dress in standardized clothing",
+        arabic: "يَرْتَدِي الزِّيَّ المَدْرَسِيّ",
+        example: "He put on his navy school uniform and tied his shoes before breakfast.",
+      },
+    ],
+    sentences: [
+      {
+        context: "School Dress Code",
+        en: "Students wore their navy blue school uniform consisting of a collared shirt and tailored trousers.",
+        ar: "ارْتَدَى الطُّلَّابُ زِيَّهُمُ المَدْرَسِيَّ الكُحْلِيَّ المُكَوَّنَ مِنْ قَمِيصٍ ذِي يَاقَةٍ وَبِنْطَالٍ مُفَصَّلٍ.",
+      },
+      {
+        context: "Neat Appearance",
+        en: "She pressed her uniform blazer neatly each Sunday evening for the week ahead.",
+        ar: "كَمَتْ سُتْرَةَ زِيِّهَا المَدْرَسِيِّ بِتَرْتِيبٍ كُلَّ مَسَاءِ أَحَدٍ لِلأُسْبُوعِ القَادِمِ.",
+      },
+      {
+        context: "School Identity",
+        en: "The embroidered school crest on the chest of the uniform promotes community pride.",
+        ar: "يُعَزِّزُ شِعَارُ المَدْرَسَةِ المُطَرَّزُ عَلَى صَدْرِ الزِّيِّ المُوَحَّدِ الِاعْتِزَازَ بِالمُجْتَمَعِ المَدْرَسِيِّ.",
+      },
+    ],
+    exampleSentence:
+      "Students wore their navy blue school uniform consisting of a collared shirt and tailored trousers.",
+    exampleArabic:
+      "ارْتَدَى الطُّلَّابُ زِيَّهُمُ المَدْرَسِيَّ الكُحْلِيَّ المُكَوَّنَ مِنْ قَمِيصٍ ذِي يَاقَةٍ وَبِنْطَالٍ مُفَصَّلٍ.",
+  },
+  blackboard: {
+    id: "blackboard",
+    arabic: "سَبُّورَةٌ سَوْدَاء (لَوْحُ طَبَاشِير)",
+    partOfSpeech: "noun",
+    phonetic: "ˈblækbɔːrd",
+    pronunciationTip: "Pronounce 'BLAK-bord' (/ˈblæk.bɔːrd/).",
+    collocations: [
+      "write with chalk on blackboard",
+      "erase the blackboard",
+      "chalk dust on blackboard",
+      "vintage blackboard",
+      "wooden frame blackboard",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wipe down",
+        meaning: "clean chalk residue with damp cloth",
+        arabic: "يَمْسَحُ السَّبُّورَة",
+        example: "Wipe down the slate blackboard with a damp sponge to remove chalk dust.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Chalkboard Writing",
+        en: "The teacher used a piece of white chalk to write arithmetic problems on the blackboard.",
+        ar: "اسْتَخْدَمَ المُعَلِّمُ قِطْعَةً مِنْ طَبَاشِيرَ أَبْيَضَ لِكِتَابَةِ مَسَائِلِ الحِسَابِ عَلَى السَّبُّورَةِ.",
+      },
+      {
+        context: "Classic Classroom",
+        en: "The classic dark green blackboard spans across the front wall of the heritage classroom.",
+        ar: "تَمْتَدُّ السَّبُّورَةُ الكَلَاسِيكِيَّةُ الخَضْرَاءُ الدَّاكِنَةُ عَلَى طُولِ الجِدَارِ الأَمَامِيِّ لِلْفَصْلِ التُّرَاثِيِّ.",
+      },
+      {
+        context: "Chalk Eraser",
+        en: "He patted the felt chalk erasers together outside to clear the accumulated dust.",
+        ar: "نَفَضَ مَمَاحِيَ الطَّبَاشِيرِ القُمَاشِيَّةَ مَعًا فِي الخَارِجِ لِلتَّخَلُّصِ مِنَ الغُبَارِ المُتَرَاكِمِ.",
+      },
+    ],
+    exampleSentence:
+      "The teacher used a piece of white chalk to write arithmetic problems on the blackboard.",
+    exampleArabic:
+      "اسْتَخْدَمَ المُعَلِّمُ قِطْعَةً مِنْ طَبَاشِيرَ أَبْيَضَ لِكِتَابَةِ مَسَائِلِ الحِسَابِ عَلَى السَّبُّورَةِ.",
+  },
 };
 
 /**

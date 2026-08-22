@@ -4664,6 +4664,804 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
   },
 ];
 
+// ==========================================
+// THE CLASSROOM
+// ==========================================
+
+export const CLASSROOM_TOPICS: TopicCategory[] = [
+  {
+    id: "writing-drawing",
+    name: "Writing & Drawing",
+    description: "Essential instruments and accessories for handwriting, coloring, and sketching.",
+    icon: "pen-tool",
+    itemsCount: 10,
+  },
+  {
+    id: "paper-books",
+    name: "Paper & Books",
+    description: "Bound volumes, study manuals, notebooks, and organizational sheets.",
+    icon: "book-open",
+    itemsCount: 10,
+  },
+  {
+    id: "classroom-furniture",
+    name: "Classroom Furniture",
+    description: "Desks, seating, boards, and fixtures that furnish the learning space.",
+    icon: "layout",
+    itemsCount: 10,
+  },
+  {
+    id: "school-supplies",
+    name: "School Supplies",
+    description: "Handy tools, cutting implements, adhesives, and geometry instruments.",
+    icon: "scissors",
+    itemsCount: 10,
+  },
+  {
+    id: "classroom-technology",
+    name: "Classroom Technology",
+    description: "Digital computers, peripherals, projectors, and interactive hardware.",
+    icon: "monitor",
+    itemsCount: 10,
+  },
+  {
+    id: "school-people",
+    name: "School People",
+    description: "Educators, learners, administrators, and support staff on campus.",
+    icon: "users",
+    itemsCount: 10,
+  },
+  {
+    id: "school-life",
+    name: "School Life",
+    description: "Daily routines, exams, breaks, dress code, and traditional fixtures.",
+    icon: "sun",
+    itemsCount: 8,
+  },
+];
+
+export const CLASSROOM_GROUPS: Lesson[] = [
+  {
+    id: "writing-drawing",
+    name: "Writing & Drawing",
+    topicId: "writing-drawing",
+    description: "Learn essential tools for writing, coloring, and sketching in class.",
+    wordIds: [
+      "pencil",
+      "pen",
+      "eraser",
+      "ruler",
+      "marker",
+      "crayon",
+      "colored-pencil",
+      "highlighter",
+      "pencil-sharpener",
+      "pencil-case",
+    ],
+    story:
+      "Zack unzipped his pencil-case and placed a sharp yellow pencil, blue pen, and clear ruler on his desk. He trimmed dull tips using a pencil-sharpener, erased mistakes with a rubber eraser, and highlighted key words with a neon highlighter. For art time, he colored posters using a marker, wax crayon, and colored-pencil.",
+  },
+  {
+    id: "paper-books",
+    name: "Paper & Books",
+    topicId: "paper-books",
+    description: "Learn about textbooks, notebooks, reference volumes, and binders.",
+    wordIds: [
+      "notebook",
+      "textbook",
+      "workbook",
+      "folder",
+      "binder",
+      "sheet-of-paper",
+      "sticky-note",
+      "index-card",
+      "dictionary",
+      "encyclopedia",
+    ],
+    story:
+      "Emma opened her spiral notebook and history textbook to begin reading. She solved practice questions in her workbook, filed handouts in a pocket folder, and stored notes in a ring binder. She took out a fresh sheet-of-paper, wrote reminders on a sticky-note and index-card, and checked definitions in the dictionary and encyclopedia.",
+  },
+  {
+    id: "classroom-furniture",
+    name: "Classroom Furniture",
+    topicId: "classroom-furniture",
+    description: "Learn classroom desks, chairs, presentation displays, and storage units.",
+    wordIds: [
+      "desk",
+      "chair",
+      "whiteboard",
+      "projector",
+      "screen",
+      "clock",
+      "globe",
+      "shelf",
+      "locker",
+      "bulletin-board",
+    ],
+    story:
+      "Students sat quietly at each wooden desk upon a comfortable chair. The teacher wrote on the whiteboard while the ceiling projector beamed diagrams onto the white screen. A round clock ticked on the wall above a spinning globe and a book shelf, while announcements hung on the cork bulletin-board near the student locker.",
+  },
+  {
+    id: "school-supplies",
+    name: "School Supplies",
+    topicId: "school-supplies",
+    description: "Learn essential tools for cutting, pasting, measuring, and fastening.",
+    wordIds: [
+      "backpack",
+      "scissors",
+      "glue-stick",
+      "tape",
+      "stapler",
+      "paper-clip",
+      "rubber-band",
+      "thumbtack",
+      "calculator",
+      "compass",
+    ],
+    story:
+      "Laila unpacked her colorful backpack containing safety scissors and a purple glue-stick. She used clear tape and a desktop stapler to bind craft projects, fastening flashcards with a paper-clip and rubber-band. She pressed a thumbtack into the notice board, solved math problems with a calculator, and drew circles with a geometry compass.",
+  },
+  {
+    id: "classroom-technology",
+    name: "Classroom Technology",
+    topicId: "classroom-technology",
+    description: "Learn digital computing devices, audio gear, and peripherals.",
+    wordIds: [
+      "computer",
+      "laptop",
+      "tablet",
+      "keyboard",
+      "mouse",
+      "printer",
+      "usb-drive",
+      "headphones",
+      "projector-remote",
+      "charger",
+    ],
+    story:
+      "In the computer lab, Adam typed on the keyboard and clicked the optical mouse. Other students worked on a portable laptop or touchscreen tablet, listening to audio lessons with padded headphones. The instructor clicked the projector-remote, transferred lesson slides via a usb-drive, printed handouts on the laser printer, and plugged in the wall charger.",
+  },
+  {
+    id: "school-people",
+    name: "School People",
+    topicId: "school-people",
+    description: "Learn the dedicated community members and educators across campus.",
+    wordIds: [
+      "teacher",
+      "student",
+      "principal",
+      "librarian",
+      "janitor",
+      "school-nurse",
+      "substitute-teacher",
+      "teaching-assistant",
+      "counselor",
+      "security-guard",
+    ],
+    story:
+      "Every morning, the friendly security-guard greeted each arriving student at the entrance. The principal and teacher welcomed the class, supported by an energetic teaching-assistant and helpful substitute-teacher. The librarian recommended research books, the school-nurse cared for sick pupils, the counselor provided wise guidance, and the diligent janitor kept the hallways sparkling.",
+  },
+  {
+    id: "school-life",
+    name: "School Life",
+    topicId: "school-life",
+    description: "Learn daily school routines, assessments, recreational breaks, and traditions.",
+    wordIds: ["homework", "test", "recess", "bell", "grade", "uniform", "book", "blackboard"],
+    story:
+      "Wearing a neat school uniform, Sami opened his reading book to study before class. The teacher wrote questions on the green blackboard, reminding students about tonight's homework and tomorrow's math test. When the brass bell chimed for afternoon recess, everyone celebrated earning an excellent grade on their midterm projects.",
+  },
+];
+
+export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
+  // 1. Writing & Drawing (10)
+  {
+    id: "pencil",
+    label: "Pencil",
+    phonetic: "ˈpɛnsəl",
+    img: `${LOCAL_WORD_IMAGES}/classroom/pencil.webp`,
+    topic: "writing-drawing",
+    description: "A slender wooden instrument with a graphite core used for writing and sketching.",
+  },
+  {
+    id: "pen",
+    label: "Pen",
+    phonetic: "pɛn",
+    img: `${LOCAL_WORD_IMAGES}/classroom/pen.webp`,
+    topic: "writing-drawing",
+    description:
+      "A handheld writing implement that dispenses colored fluid ink onto writing surfaces.",
+  },
+  {
+    id: "eraser",
+    label: "Eraser",
+    phonetic: "ɪˈreɪsər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/eraser.webp`,
+    topic: "writing-drawing",
+    description: "A small rubber or vinyl block used to rub out graphite marks and pencil errors.",
+  },
+  {
+    id: "ruler",
+    label: "Ruler",
+    phonetic: "ˈruːlər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/ruler.webp`,
+    topic: "writing-drawing",
+    description:
+      "A straight strip of wood, plastic, or metal with calibrated markings for measuring length.",
+  },
+  {
+    id: "marker",
+    label: "Marker",
+    phonetic: "ˈmɑːrkər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/marker.webp`,
+    topic: "writing-drawing",
+    description: "A thick writing tool with a porous felt tip that dispenses bold colored ink.",
+  },
+  {
+    id: "crayon",
+    label: "Crayon",
+    phonetic: "ˈkreɪ.ɑːn",
+    img: `${LOCAL_WORD_IMAGES}/classroom/crayon.webp`,
+    topic: "writing-drawing",
+    description:
+      "A colored stick of pigmented wax used by young children for drawing and coloring.",
+  },
+  {
+    id: "colored-pencil",
+    label: "Colored Pencil",
+    phonetic: "ˈkʌlərd ˈpɛnsəl",
+    img: `${LOCAL_WORD_IMAGES}/classroom/colored-pencil.webp`,
+    topic: "writing-drawing",
+    description:
+      "A wooden drawing implement with a pigmented wax or oil core that leaves vibrant hues.",
+  },
+  {
+    id: "highlighter",
+    label: "Highlighter",
+    phonetic: "ˈhaɪˌlaɪtər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/highlighter.webp`,
+    topic: "writing-drawing",
+    description:
+      "A fluorescent felt-tip marker with transparent neon ink used to emphasize printed text.",
+  },
+  {
+    id: "pencil-sharpener",
+    label: "Pencil Sharpener",
+    phonetic: "ˈpɛnsəl ˌʃɑːrpənər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/pencil-sharpener.webp`,
+    topic: "writing-drawing",
+    description: "A small device with a blade used to shave away wood and sharpen graphite points.",
+  },
+  {
+    id: "pencil-case",
+    label: "Pencil Case",
+    phonetic: "ˈpɛnsəl keɪs",
+    img: `${LOCAL_WORD_IMAGES}/classroom/pencil-case.webp`,
+    topic: "writing-drawing",
+    description:
+      "A zippered pouch or box designed for organizing writing instruments and stationery.",
+  },
+
+  // 2. Paper & Books (10)
+  {
+    id: "notebook",
+    label: "Notebook",
+    phonetic: "ˈnoʊtbʊk",
+    img: `${LOCAL_WORD_IMAGES}/classroom/notebook.webp`,
+    topic: "paper-books",
+    description:
+      "A bound collection of lined or blank sheets used for recording notes and schoolwork.",
+  },
+  {
+    id: "textbook",
+    label: "Textbook",
+    phonetic: "ˈtɛkstbʊk",
+    img: `${LOCAL_WORD_IMAGES}/classroom/textbook.webp`,
+    topic: "paper-books",
+    description:
+      "A comprehensive educational manual used by students to study a specific school subject.",
+  },
+  {
+    id: "workbook",
+    label: "Workbook",
+    phonetic: "ˈwɜːrkbʊk",
+    img: `${LOCAL_WORD_IMAGES}/classroom/workbook.webp`,
+    topic: "paper-books",
+    description: "A booklet containing practice exercises and questions for students to complete.",
+  },
+  {
+    id: "folder",
+    label: "Folder",
+    phonetic: "ˈfoʊldər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/folder.webp`,
+    topic: "paper-books",
+    description:
+      "A folded cardstock or plastic cover with interior pockets for holding loose sheets.",
+  },
+  {
+    id: "binder",
+    label: "Binder",
+    phonetic: "ˈbaɪndər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/binder.webp`,
+    topic: "paper-books",
+    description: "A sturdy cover with metal opening rings used to hold hole-punched loose papers.",
+  },
+  {
+    id: "sheet-of-paper",
+    label: "Sheet of Paper",
+    phonetic: "ʃiːt əv ˈpeɪpər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/sheet-of-paper.webp`,
+    topic: "paper-books",
+    description: "A single flat rectangular leaf of thin white material used for writing.",
+  },
+  {
+    id: "sticky-note",
+    label: "Sticky Note",
+    phonetic: "ˈstɪki noʊt",
+    img: `${LOCAL_WORD_IMAGES}/classroom/sticky-note.webp`,
+    topic: "paper-books",
+    description: "A small square of paper with a re-adherable strip of glue on the back.",
+  },
+  {
+    id: "index-card",
+    label: "Index Card",
+    phonetic: "ˈɪndɛks kɑːrd",
+    img: `${LOCAL_WORD_IMAGES}/classroom/index-card.webp`,
+    topic: "paper-books",
+    description:
+      "A small rectangular stiff paper slip used for recording study points and presentation cues.",
+  },
+  {
+    id: "dictionary",
+    label: "Dictionary",
+    phonetic: "ˈdɪkʃəˌnɛri",
+    img: `${LOCAL_WORD_IMAGES}/classroom/dictionary.webp`,
+    topic: "paper-books",
+    description:
+      "A reference volume containing alphabetical lists of words with their meanings and origins.",
+  },
+  {
+    id: "encyclopedia",
+    label: "Encyclopedia",
+    phonetic: "ɪnˌsaɪkləˈpiːdiə",
+    img: `${LOCAL_WORD_IMAGES}/classroom/encyclopedia.webp`,
+    topic: "paper-books",
+    description:
+      "A comprehensive set of books providing informative articles on numerous branches of knowledge.",
+  },
+
+  // 3. Classroom Furniture (10)
+  {
+    id: "desk",
+    label: "Desk",
+    phonetic: "dɛsk",
+    img: `${LOCAL_WORD_IMAGES}/classroom/desk.webp`,
+    topic: "classroom-furniture",
+    description:
+      "A sturdy table with drawers and a flat work surface used by students in a classroom.",
+  },
+  {
+    id: "chair",
+    label: "Chair",
+    phonetic: "tʃɛər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/chair.webp`,
+    topic: "classroom-furniture",
+    description:
+      "A piece of furniture with a backrest and four legs designed for one person to sit upon.",
+  },
+  {
+    id: "whiteboard",
+    label: "Whiteboard",
+    phonetic: "ˈwaɪtbɔːrd",
+    img: `${LOCAL_WORD_IMAGES}/classroom/whiteboard.webp`,
+    topic: "classroom-furniture",
+    description:
+      "A large glossy white surface mounted on a wall for writing upon with dry markers.",
+  },
+  {
+    id: "projector",
+    label: "Projector",
+    phonetic: "prəˈdʒɛktər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/projector.webp`,
+    topic: "classroom-furniture",
+    description:
+      "An optical device that shines bright light to display computer images onto a screen.",
+  },
+  {
+    id: "screen",
+    label: "Screen",
+    phonetic: "skriːn",
+    img: `${LOCAL_WORD_IMAGES}/classroom/screen.webp`,
+    topic: "classroom-furniture",
+    description:
+      "A large flat white hanging canvas upon which projected slides and videos are viewed.",
+  },
+  {
+    id: "clock",
+    label: "Clock",
+    phonetic: "klɑːk",
+    img: `${LOCAL_WORD_IMAGES}/classroom/clock.webp`,
+    topic: "classroom-furniture",
+    description:
+      "A wall-mounted circular timepiece with rotating hands that displays the hours and minutes.",
+  },
+  {
+    id: "globe",
+    label: "Globe",
+    phonetic: "ɡloʊb",
+    img: `${LOCAL_WORD_IMAGES}/classroom/globe.webp`,
+    topic: "classroom-furniture",
+    description:
+      "A three-dimensional spherical model of the Earth displaying oceans and continents.",
+  },
+  {
+    id: "shelf",
+    label: "Shelf",
+    phonetic: "ʃɛlf",
+    img: `${LOCAL_WORD_IMAGES}/classroom/shelf.webp`,
+    topic: "classroom-furniture",
+    description: "A flat horizontal ledge mounted on a bookcase or wall for holding study volumes.",
+  },
+  {
+    id: "locker",
+    label: "Locker",
+    phonetic: "ˈlɑːkər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/locker.webp`,
+    topic: "classroom-furniture",
+    description:
+      "A narrow metal storage compartment with a lock used by students in school hallways.",
+  },
+  {
+    id: "bulletin-board",
+    label: "Bulletin Board",
+    phonetic: "ˈbʊlətɪn bɔːrd",
+    img: `${LOCAL_WORD_IMAGES}/classroom/bulletin-board.webp`,
+    topic: "classroom-furniture",
+    description: "A cork-lined wall fixture where notices, student art, and schedules are pinned.",
+  },
+
+  // 4. School Supplies (10)
+  {
+    id: "backpack",
+    label: "Backpack",
+    phonetic: "ˈbækpæk",
+    img: `${LOCAL_WORD_IMAGES}/classroom/backpack.webp`,
+    topic: "school-supplies",
+    description:
+      "A sturdy bag with dual shoulder straps worn on the back to carry books and supplies.",
+  },
+  {
+    id: "scissors",
+    label: "Scissors",
+    phonetic: "ˈsɪzərz",
+    img: `${LOCAL_WORD_IMAGES}/classroom/scissors.webp`,
+    topic: "school-supplies",
+    description: "A handheld cutting instrument with two crossed pivoting blades and finger loops.",
+  },
+  {
+    id: "glue-stick",
+    label: "Glue Stick",
+    phonetic: "ɡluː stɪk",
+    img: `${LOCAL_WORD_IMAGES}/classroom/glue-stick.webp`,
+    topic: "school-supplies",
+    description:
+      "A twist-up plastic tube containing solid adhesive paste for paper craft projects.",
+  },
+  {
+    id: "tape",
+    label: "Tape",
+    phonetic: "teɪp",
+    img: `${LOCAL_WORD_IMAGES}/classroom/tape.webp`,
+    topic: "school-supplies",
+    description:
+      "A narrow strip of transparent plastic coated on one side with adhesive for fastening sheets.",
+  },
+  {
+    id: "stapler",
+    label: "Stapler",
+    phonetic: "ˈsteɪplər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/stapler.webp`,
+    topic: "school-supplies",
+    description:
+      "A mechanical desktop device that drives thin wire fasteners through sheets to bind them.",
+  },
+  {
+    id: "paper-clip",
+    label: "Paper Clip",
+    phonetic: "ˈpeɪpər klɪp",
+    img: `${LOCAL_WORD_IMAGES}/classroom/paper-clip.webp`,
+    topic: "school-supplies",
+    description:
+      "A small piece of bent steel wire designed to hold a stack of sheets together temporarily.",
+  },
+  {
+    id: "rubber-band",
+    label: "Rubber Band",
+    phonetic: "ˈrʌbər bænd",
+    img: `${LOCAL_WORD_IMAGES}/classroom/rubber-band.webp`,
+    topic: "school-supplies",
+    description:
+      "A loop of stretchy elastic material used for bundling loose stationery items securely.",
+  },
+  {
+    id: "thumbtack",
+    label: "Thumbtack",
+    phonetic: "ˈθʌmtæk",
+    img: `${LOCAL_WORD_IMAGES}/classroom/thumbtack.webp`,
+    topic: "school-supplies",
+    description:
+      "A short brass or plastic-headed pin used to fasten notices onto cork display boards.",
+  },
+  {
+    id: "calculator",
+    label: "Calculator",
+    phonetic: "ˈkælkjəˌleɪtər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/calculator.webp`,
+    topic: "school-supplies",
+    description:
+      "An electronic handheld device used for performing arithmetic and mathematical computations.",
+  },
+  {
+    id: "compass",
+    label: "Compass",
+    phonetic: "ˈkʌmpəs",
+    img: `${LOCAL_WORD_IMAGES}/classroom/compass.webp`,
+    topic: "school-supplies",
+    description:
+      "A V-shaped drafting tool with two metal legs used for drawing arcs and exact circles.",
+  },
+
+  // 5. Classroom Technology (10)
+  {
+    id: "computer",
+    label: "Computer",
+    phonetic: "kəmˈpjuːtər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/computer.webp`,
+    topic: "classroom-technology",
+    description:
+      "An electronic desktop machine with a monitor and CPU used for typing and research.",
+  },
+  {
+    id: "laptop",
+    label: "Laptop",
+    phonetic: "ˈlæptɑːp",
+    img: `${LOCAL_WORD_IMAGES}/classroom/laptop.webp`,
+    topic: "classroom-technology",
+    description:
+      "A portable clamshell computer designed for mobile computing and digital schoolwork.",
+  },
+  {
+    id: "tablet",
+    label: "Tablet",
+    phonetic: "ˈtæblət",
+    img: `${LOCAL_WORD_IMAGES}/classroom/tablet.webp`,
+    topic: "classroom-technology",
+    description:
+      "A flat handheld touchscreen computing device used for reading and digital drawing.",
+  },
+  {
+    id: "keyboard",
+    label: "Keyboard",
+    phonetic: "ˈkiːbɔːrd",
+    img: `${LOCAL_WORD_IMAGES}/classroom/keyboard.webp`,
+    topic: "classroom-technology",
+    description:
+      "A panel of letter and number keys pressed to input text into an electronic device.",
+  },
+  {
+    id: "mouse",
+    label: "Mouse",
+    phonetic: "maʊs",
+    img: `${LOCAL_WORD_IMAGES}/classroom/mouse.webp`,
+    topic: "classroom-technology",
+    description: "A handheld pointing device moved across a pad to navigate computer interfaces.",
+  },
+  {
+    id: "printer",
+    label: "Printer",
+    phonetic: "ˈprɪntər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/printer.webp`,
+    topic: "classroom-technology",
+    description: "An output device that produces hard physical paper copies of digital documents.",
+  },
+  {
+    id: "usb-drive",
+    label: "USB Drive",
+    phonetic: "ˌjuː.ɛsˈbiː draɪv",
+    img: `${LOCAL_WORD_IMAGES}/classroom/usb-drive.webp`,
+    topic: "classroom-technology",
+    description: "A miniature portable flash memory device that plugs into ports to store data.",
+  },
+  {
+    id: "headphones",
+    label: "Headphones",
+    phonetic: "ˈhɛdfoʊnz",
+    img: `${LOCAL_WORD_IMAGES}/classroom/headphones.webp`,
+    topic: "classroom-technology",
+    description: "A pair of padded audio speakers worn over the ears for private listening.",
+  },
+  {
+    id: "projector-remote",
+    label: "Projector Remote",
+    phonetic: "prəˈdʒɛktər rɪˈmoʊt",
+    img: `${LOCAL_WORD_IMAGES}/classroom/projector-remote.webp`,
+    topic: "classroom-technology",
+    description:
+      "A handheld wireless controller clicked to advance slides and power display beams.",
+  },
+  {
+    id: "charger",
+    label: "Charger",
+    phonetic: "ˈtʃɑːrdʒər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/charger.webp`,
+    topic: "classroom-technology",
+    description:
+      "An electrical cord and adapter that delivers power to replenish rechargeable batteries.",
+  },
+
+  // 6. School People (10)
+  {
+    id: "teacher",
+    label: "Teacher",
+    phonetic: "ˈtiːtʃər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/teacher.webp`,
+    topic: "school-people",
+    description:
+      "An educator who plans lessons, instructs the class, and guides academic development.",
+  },
+  {
+    id: "student",
+    label: "Student",
+    phonetic: "ˈstuːdənt",
+    img: `${LOCAL_WORD_IMAGES}/classroom/student.webp`,
+    topic: "school-people",
+    description:
+      "A young learner attending classes to acquire knowledge, skills, and understanding.",
+  },
+  {
+    id: "principal",
+    label: "Principal",
+    phonetic: "ˈprɪnsəpəl",
+    img: `${LOCAL_WORD_IMAGES}/classroom/principal.webp`,
+    topic: "school-people",
+    description:
+      "The head administrator who oversees the operations, staff, and safety of a school.",
+  },
+  {
+    id: "librarian",
+    label: "Librarian",
+    phonetic: "laɪˈbrɛriən",
+    img: `${LOCAL_WORD_IMAGES}/classroom/librarian.webp`,
+    topic: "school-people",
+    description:
+      "A professional who curates book collections and helps visitors find reference materials.",
+  },
+  {
+    id: "janitor",
+    label: "Janitor",
+    phonetic: "ˈdʒænɪtər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/janitor.webp`,
+    topic: "school-people",
+    description:
+      "A staff member responsible for cleaning facilities, repairing items, and maintaining hygiene.",
+  },
+  {
+    id: "school-nurse",
+    label: "School Nurse",
+    phonetic: "skuːl nɜːrs",
+    img: `${LOCAL_WORD_IMAGES}/classroom/school-nurse.webp`,
+    topic: "school-people",
+    description:
+      "A healthcare professional who treats minor injuries and cares for sick pupils on campus.",
+  },
+  {
+    id: "substitute-teacher",
+    label: "Substitute Teacher",
+    phonetic: "ˈsʌbstɪtuːt ˈtiːtʃər",
+    img: `${LOCAL_WORD_IMAGES}/classroom/substitute-teacher.webp`,
+    topic: "school-people",
+    description:
+      "An instructor who temporarily takes over a classroom when the regular educator is absent.",
+  },
+  {
+    id: "teaching-assistant",
+    label: "Teaching Assistant",
+    phonetic: "ˈtiːtʃɪŋ əˈsɪstənt",
+    img: `${LOCAL_WORD_IMAGES}/classroom/teaching-assistant.webp`,
+    topic: "school-people",
+    description: "An instructional aide who provides extra learning support to pupils in class.",
+  },
+  {
+    id: "counselor",
+    label: "Counselor",
+    phonetic: "ˈkaʊnsələr",
+    img: `${LOCAL_WORD_IMAGES}/classroom/counselor.webp`,
+    topic: "school-people",
+    description:
+      "A trained professional who provides emotional guidance, academic advice, and career support.",
+  },
+  {
+    id: "security-guard",
+    label: "Security Guard",
+    phonetic: "sɪˈkjʊrəti ɡɑːrd",
+    img: `${LOCAL_WORD_IMAGES}/classroom/security-guard.webp`,
+    topic: "school-people",
+    description:
+      "A uniformed safety officer who monitors campus entrances and protects the school community.",
+  },
+
+  // 7. School Life (8)
+  {
+    id: "homework",
+    label: "Homework",
+    phonetic: "ˈhoʊmwɜːrk",
+    img: `${LOCAL_WORD_IMAGES}/classroom/homework.webp`,
+    topic: "school-life",
+    description: "Academic assignments completed outside the classroom to reinforce daily lessons.",
+  },
+  {
+    id: "test",
+    label: "Test",
+    phonetic: "tɛst",
+    img: `${LOCAL_WORD_IMAGES}/classroom/test.webp`,
+    topic: "school-life",
+    description:
+      "A formal examination assessing a pupil's knowledge, comprehension, and mastery of a subject.",
+  },
+  {
+    id: "recess",
+    label: "Recess",
+    phonetic: "ˈriːsɛs",
+    img: `${LOCAL_WORD_IMAGES}/classroom/recess.webp`,
+    topic: "school-life",
+    description:
+      "A scheduled recreation interval during the school day for outdoor play and socializing.",
+  },
+  {
+    id: "bell",
+    label: "Bell",
+    phonetic: "bɛl",
+    img: `${LOCAL_WORD_IMAGES}/classroom/bell.webp`,
+    topic: "school-life",
+    description:
+      "A metal acoustic instrument that chimes or rings loudly to signal the change of periods.",
+  },
+  {
+    id: "grade",
+    label: "Grade",
+    phonetic: "ɡreɪd",
+    img: `${LOCAL_WORD_IMAGES}/classroom/grade.webp`,
+    topic: "school-life",
+    description:
+      "A standardized letter or numerical mark evaluating the quality of academic performance.",
+  },
+  {
+    id: "uniform",
+    label: "Uniform",
+    phonetic: "ˈjuːnɪfɔːrm",
+    img: `${LOCAL_WORD_IMAGES}/classroom/uniform.webp`,
+    topic: "school-life",
+    description:
+      "A standardized set of attire worn by pupils to establish equality and school identity.",
+  },
+  {
+    id: "book",
+    label: "Book",
+    phonetic: "bʊk",
+    img: `${LOCAL_WORD_IMAGES}/classroom/book.webp`,
+    topic: "school-life",
+    description: "A printed work consisting of bound pages with text, stories, or illustrations.",
+  },
+  {
+    id: "blackboard",
+    label: "Blackboard",
+    phonetic: "ˈblækbɔːrd",
+    img: `${LOCAL_WORD_IMAGES}/classroom/blackboard.webp`,
+    topic: "school-life",
+    description:
+      "A traditional dark slate surface mounted on a wall for writing upon with white chalk.",
+  },
+];
+
 export const COURSE_UNITS: Record<string, CourseUnit> = {
   bedroom: {
     id: "bedroom",
@@ -4735,6 +5533,16 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
     topics: PLAYGROUND_TOPICS,
     groups: PLAYGROUND_GROUPS,
     vocabulary: PLAYGROUND_VOCABULARY,
+  },
+  classroom: {
+    id: "classroom",
+    name: "The Classroom",
+    description:
+      "Explore writing instruments, textbooks, classroom furniture, stationery supplies, educational technology, campus staff, and daily school life through 2D scene discovery, audio practice, recall matching, and sentence building.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/classroom-hero.webp`,
+    topics: CLASSROOM_TOPICS,
+    groups: CLASSROOM_GROUPS,
+    vocabulary: CLASSROOM_VOCABULARY,
   },
 };
 
