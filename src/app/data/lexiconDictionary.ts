@@ -13697,6 +13697,1355 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleArabic:
       "أَفْرَغَ قُصَاصَاتِ العُشْبِ دَاخِلَ صُنْدُوقِ السَّمَادِ العُضْوِيِّ البْلاسْتِيكِيِّ.",
   },
+  "towel-rack": {
+    id: "towel-rack",
+    arabic: "حَامِلُ المَنَاشِف (عَلَّاقَةُ الفُوَط)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtaʊəl ræk",
+    pronunciationTip: "Pronounce 'towel' (/ˈtaʊ.əl/) followed by crisp 'rack' (/ræk/).",
+    collocations: [
+      "heated towel rack",
+      "hang on the towel rack",
+      "stainless steel towel rack",
+      "wall-mounted towel rack",
+      "double towel rack",
+      "bathroom towel rack",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hang up",
+        meaning: "place a towel neatly over the rail",
+        arabic: "يُعَلِّقُ الفُوطَة",
+        example: "Hang up your damp bath sheet on the towel rack to air dry.",
+      },
+      {
+        phrase: "take down",
+        meaning: "remove a towel from the holder",
+        arabic: "يُنْزِلُ الفُوطَة",
+        example: "She took down a clean towel from the rack.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bathroom Storage",
+        en: "The heated towel rack keeps bath towels warm and dry after every shower.",
+        ar: "يُحَافِظُ حَامِلُ المَنَاشِفِ المُدَفَّأُ عَلَى دِفْءِ وَجَفَافِ المَنَاشِفِ بَعْدَ كُلِّ اسْتِحْمَام.",
+      },
+      {
+        context: "Tidiness",
+        en: "Always hang your wet towel on the towel rack instead of leaving it on the floor.",
+        ar: "عَلِّقْ مَنْشَفَتَكَ الرَّطْبَةَ دَائِمًا عَلَى حَامِلِ المَنَاشِفِ بَدَلًا مِنْ تَرْكِهَا عَلَى الأَرْض.",
+      },
+      {
+        context: "Installation",
+        en: "He installed a chrome towel rack right beside the glass shower door.",
+        ar: "قَامَ بِتَرْكِيبِ حَامِلِ مَنَاشِفَ مَطْلِيٍّ بِالكُرُومِ بِجِوَارِ بَابِ الدُّشِّ الزُّجَاجِيِّ مُبَاشَرَةً.",
+      },
+    ],
+    exampleSentence: "The heated towel rack keeps bath towels warm and dry after every shower.",
+    exampleArabic:
+      "يُحَافِظُ حَامِلُ المَنَاشِفِ المُدَفَّأُ عَلَى دِفْءِ وَجَفَافِ المَنَاشِفِ بَعْدَ كُلِّ اسْتِحْمَام.",
+  },
+  tiles: {
+    id: "tiles",
+    arabic: "بَلَاط (سِيرَامِيك الحَمَّام)",
+    partOfSpeech: "noun",
+    phonetic: "taɪlz",
+    pronunciationTip: "Long 'i' diphthong /aɪ/ followed by dark 'l' and voiced 'z' sound.",
+    collocations: [
+      "ceramic tiles",
+      "floor tiles",
+      "wall tiles",
+      "mosaic tiles",
+      "scrub the tiles",
+      "grout between tiles",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wipe down",
+        meaning: "clean tile surfaces with a cloth",
+        arabic: "يَمْسَحُ البَلَاط",
+        example: "Wipe down the shower tiles after bathing to prevent mildew.",
+      },
+      {
+        phrase: "lay down",
+        meaning: "install new tiles on floors or walls",
+        arabic: "يُرَكِّبُ البَلَاط",
+        example: "They laid down glossy white tiles in the newly renovated bathroom.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bathroom Decor",
+        en: "The glossy white ceramic tiles make the small bathroom feel bright and spacious.",
+        ar: "يَجْعَلُ بَلَاطُ السِّيرَامِيكِ الأَبْيَضُ اللَّامِعُ الحَمَّامَ الصَّغِيرَ يَبْدُو مُشْرِقًا وَوَاسِعًا.",
+      },
+      {
+        context: "Cleaning",
+        en: "Use a soft brush and cleaner to remove soap scum from the shower tiles.",
+        ar: "اسْتَخْدِمْ فُرْشَاةً نَاعِمَةً وَمُنَظِّفًا لِإِزَالَةِ بَقَايَا الصَّابُونِ عَنْ بَلَاطِ الدُّش.",
+      },
+      {
+        context: "Safety",
+        en: "Matte textured floor tiles provide better grip when walking with wet feet.",
+        ar: "يُوَفِّرُ بَلَاطُ الأَرْضِيَّةِ غَيْرُ اللَّامِعِ تَمَاسُكًا أَفْضَلَ عِنْدَ المَشْيِ بِأَقْدَامٍ مُبَلَّلَة.",
+      },
+    ],
+    exampleSentence:
+      "The glossy white ceramic tiles make the small bathroom feel bright and spacious.",
+    exampleArabic:
+      "يَجْعَلُ بَلَاطُ السِّيرَامِيكِ الأَبْيَضُ اللَّامِعُ الحَمَّامَ الصَّغِيرَ يَبْدُو مُشْرِقًا وَوَاسِعًا.",
+  },
+  towel: {
+    id: "towel",
+    arabic: "مَنْشَفَة (فُوطَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtaʊəl",
+    pronunciationTip: "Two syllables: 'TOW' (/taʊ/) like 'now' + unstressed 'el' (/əl/).",
+    collocations: [
+      "clean towel",
+      "damp towel",
+      "fluffy towel",
+      "dry with a towel",
+      "cotton towel",
+      "fold the towel",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "dry off",
+        meaning: "remove moisture using a towel",
+        arabic: "يُجَفِّفُ نَفْسَهُ",
+        example: "Dry off thoroughly with a warm towel after getting out of the pool.",
+      },
+      {
+        phrase: "hang up",
+        meaning: "suspend a towel on a hook",
+        arabic: "يُعَلِّقُ الفُوطَة",
+        example: "Hang up your towel on the hook after washing your face.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Drying Off",
+        en: "She wrapped a large fluffy cotton towel around her shoulders after the bath.",
+        ar: "لَفَّتْ مَنْشَفَةً قُطْنِيَّةً كَبِيرَةً وَنَاعِمَةً حَوْلَ كَتِفَيْهَا بَعْدَ الاسْتِحْمَام.",
+      },
+      {
+        context: "Hygiene",
+        en: "Always provide guests with a fresh hand towel in the powder room.",
+        ar: "وَفِّرْ دَائِمًا لِلضُّيُوفِ مَنْشَفَةَ يَدٍ نَظِيفَةً فِي حَمَّامِ الضُّيُوف.",
+      },
+      {
+        context: "Laundry",
+        en: "Wash your bath towel in hot water weekly to keep it fresh and odor-free.",
+        ar: "اغْسِلْ مَنْشَفَةَ الحَمَّامِ بِالمَاءِ السَّاخِنِ أُسْبُوعِيًّا لِلْحِفَاظِ عَلَى نَظَافَتِهَا وَرَائِحَتِهَا.",
+      },
+    ],
+    exampleSentence: "She wrapped a large fluffy cotton towel around her shoulders after the bath.",
+    exampleArabic:
+      "لَفَّتْ مَنْشَفَةً قُطْنِيَّةً كَبِيرَةً وَنَاعِمَةً حَوْلَ كَتِفَيْهَا بَعْدَ الاسْتِحْمَام.",
+  },
+  "cotton-balls": {
+    id: "cotton-balls",
+    arabic: "كُرَاتُ القُطْن",
+    partOfSpeech: "noun",
+    phonetic: "ˈkɑːtn bɔːlz",
+    pronunciationTip:
+      "Stress first syllable of 'cotton' (/ˈkɑːt.n/) + long 'aw' in 'balls' (/bɔːlz/).",
+    collocations: [
+      "sterile cotton balls",
+      "bag of cotton balls",
+      "apply with cotton balls",
+      "cosmetic cotton balls",
+      "soft cotton balls",
+      "glass jar of cotton balls",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wipe off",
+        meaning: "remove makeup or ointment with cotton",
+        arabic: "يَمْسَحُ بِالقُطْن",
+        example: "Wipe off nail polish using cotton balls soaked in remover.",
+      },
+      {
+        phrase: "dab on",
+        meaning: "apply liquid gently with cotton",
+        arabic: "يُرَبِّتُ بِالقُطْن",
+        example: "Dab on antiseptic toner using a soft cotton ball.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Skincare",
+        en: "She used soft cotton balls to gently remove her eye makeup and cleanse her face.",
+        ar: "اسْتَخْدَمَتْ كُرَاتِ قُطْنٍ نَاعِمَةً لِإِزَالَةِ مَكْيَاجِ العَيْنَيْنِ بِلُطْفٍ وَتَنْظِيفِ وَجْهِهَا.",
+      },
+      {
+        context: "First Aid",
+        en: "Dab alcohol on the scrape with sterile cotton balls before applying a bandage.",
+        ar: "ضَعِ الكُحُولَ عَلَى الخَدْشِ بِاسْتِخْدَامِ كُرَاتِ قُطْنٍ مُعَقَّمَةٍ قَبْلَ وَضْعِ الضِّمَادَة.",
+      },
+      {
+        context: "Organization",
+        en: "Store cosmetic cotton balls in a covered clear glass jar on the vanity.",
+        ar: "احْفَظْ كُرَاتِ القُطْنِ التَّجْمِيلِيَّةِ فِي بَرْرَطَانٍ زُجَاجِيٍّ شَفَّافٍ مُغَطًّى عَلَى التَّسْرِيحَة.",
+      },
+    ],
+    exampleSentence:
+      "She used soft cotton balls to gently remove her eye makeup and cleanse her face.",
+    exampleArabic:
+      "اسْتَخْدَمَتْ كُرَاتِ قُطْنٍ نَاعِمَةً لِإِزَالَةِ مَكْيَاجِ العَيْنَيْنِ بِلُطْفٍ وَتَنْظِيفِ وَجْهِهَا.",
+  },
+  "nail-clipper": {
+    id: "nail-clipper",
+    arabic: "قَصَّاصَةُ الأَظَافِر (مَقَصُّ الأَظَافِر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈneɪl ˌklɪpər",
+    pronunciationTip:
+      "'Nail' has long /eɪ/ sound, 'clipper' has short /ɪ/ and ends with unstressed /ər/.",
+    collocations: [
+      "stainless nail clipper",
+      "toenail clipper",
+      "trim with a nail clipper",
+      "sharp nail clipper",
+      "fingernail clipper",
+      "pocket nail clipper",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "trim down",
+        meaning: "shorten nails with clippers",
+        arabic: "يُقَلِّمُ الأَظَافِر",
+        example: "Trim down your fingernails straight across to prevent ingrown edges.",
+      },
+      {
+        phrase: "clip off",
+        meaning: "snip away excess nail length",
+        arabic: "يَقُصُّ الظُّفْر",
+        example: "Carefully clip off the rough broken edge of the thumbnail.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Personal Grooming",
+        en: "Keep a sharp stainless steel nail clipper in your toiletry kit for neat fingernails.",
+        ar: "احْتَفِظْ بِقَصَّاصَةِ أَظَافِرَ حَادَّةٍ مِنَ الفُولاذِ المُقَاوِمِ لِلصَّدَأِ فِي حَقِيبَةِ أَدَوَاتِ الزِّينَة.",
+      },
+      {
+        context: "Hygiene",
+        en: "Sanitize the nail clipper with rubbing alcohol before and after each trimming.",
+        ar: "عَقِّمْ قَصَّاصَةَ الأَظَافِرِ بِالكُحُولِ قَبْلَ وَبَعْدَ كُلِّ تَقْلِيم.",
+      },
+      {
+        context: "Routine",
+        en: "He used the curved nail clipper to trim his fingernails smoothly after bathing.",
+        ar: "اسْتَخْدَمَ قَصَّاصَةَ الأَظَافِرِ المُنْحَنِيَةَ لِتَقْلِيمِ أَظَافِرِهِ بِسَلاسَةٍ بَعْدَ الاسْتِحْمَام.",
+      },
+    ],
+    exampleSentence:
+      "Keep a sharp stainless steel nail clipper in your toiletry kit for neat fingernails.",
+    exampleArabic:
+      "احْتَفِظْ بِقَصَّاصَةِ أَظَافِرَ حَادَّةٍ مِنَ الفُولاذِ المُقَاوِمِ لِلصَّدَأِ فِي حَقِيبَةِ أَدَوَاتِ الزِّينَة.",
+  },
+  "hair-dryer": {
+    id: "hair-dryer",
+    arabic: "مُجَفِّفُ الشَّعْر (سِشْوَار)",
+    partOfSpeech: "noun",
+    phonetic: "ˈhɛər ˌdraɪər",
+    pronunciationTip: "Compound noun: 'hair' (/hɛər/) + 'dryer' (/ˈdraɪ.ər/).",
+    collocations: [
+      "ionic hair dryer",
+      "blow-dry with a hair dryer",
+      "heat settings on hair dryer",
+      "diffuser for hair dryer",
+      "cordless hair dryer",
+      "professional hair dryer",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "blow dry",
+        meaning: "dry and style hair using hot air stream",
+        arabic: "يُجَفِّفُ بِالسِّشْوَار",
+        example: "She blew dry her hair with a round brush for extra volume.",
+      },
+      {
+        phrase: "unplug",
+        meaning: "disconnect electrical appliance from wall outlet",
+        arabic: "يَفْصِلُ القَابِس",
+        example: "Always unplug the hair dryer immediately after styling your hair.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Hairstyling",
+        en: "Use a heat protectant spray before drying your hair with a high-power hair dryer.",
+        ar: "اسْتَخْدِمْ رَذَاذَ حِمَايَةٍ مِنَ الحَرَارَةِ قَبْلَ تَجْفِيفِ شَعْرِكَ بِمُجَفِّفِ شَعْرٍ عَالِي القُوَّة.",
+      },
+      {
+        context: "Bathroom Safety",
+        en: "Never use an electrical hair dryer near a filled sink or running bathtub.",
+        ar: "لَا تَسْتَخْدِمْ مُجَفِّفَ الشَّعْرِ الكَهْرَبَائِيَّ قُرْبَ حَوْضٍ مُمْتَلِئٍ أَوْ حَوْضِ اسْتِحْمَامٍ جَارٍ.",
+      },
+      {
+        context: "Features",
+        en: "The modern hair dryer features cool-shot buttons and multiple speed settings.",
+        ar: "يَتَمَيَّزُ مُجَفِّفُ الشَّعْرِ الحَدِيثُ بِأَزْرَارِ هَوَاءِ بَارِدٍ وَإِعْدَادَاتِ سُرْعَةٍ مُتَعَدِّدَة.",
+      },
+    ],
+    exampleSentence:
+      "Use a heat protectant spray before drying your hair with a high-power hair dryer.",
+    exampleArabic:
+      "اسْتَخْدِمْ رَذَاذَ حِمَايَةٍ مِنَ الحَرَارَةِ قَبْلَ تَجْفِيفِ شَعْرِكَ بِمُجَفِّفِ شَعْرٍ عَالِي القُوَّة.",
+  },
+  "first-aid-kit": {
+    id: "first-aid-kit",
+    arabic: "حَقِيبَةُ الإِسْعَافَاتِ الأَوَّلِيَّة (صُنْدُوقُ الإِسْعَاف)",
+    partOfSpeech: "noun",
+    phonetic: "ˌfɜːrst ˈeɪd kɪt",
+    pronunciationTip: "Three words: 'first' (/fɜːrst/) + 'aid' (/eɪd/) + 'kit' (/kɪt/).",
+    collocations: [
+      "home first-aid kit",
+      "stocked first-aid kit",
+      "emergency first-aid kit",
+      "travel first-aid kit",
+      "bandages in first-aid kit",
+      "wall-mounted first-aid kit",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "stock up",
+        meaning: "refill medical supplies and antiseptic",
+        arabic: "يُعَبِّئُ المَخْزُونَ",
+        example: "Stock up the first-aid kit with fresh sterile gauze and antibiotic ointment.",
+      },
+      {
+        phrase: "reach for",
+        meaning: "grab the medical box quickly",
+        arabic: "يَتَنَاوَلُ الحَقِيبَة",
+        example: "She reached for the first-aid kit after accidentally cutting her finger.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Home Safety",
+        en: "Every home bathroom should have a fully stocked first-aid kit with bandages and antiseptic.",
+        ar: "يَجِبُ أَنْ يَحْتَوِيَ كُلُّ حَمَّامٍ مَنْزِلِيٍّ عَلَى حَقِيبَةِ إِسْعَافَاتٍ أَوَّلِيَّةٍ مُمْتَلِئَةٍ بِالضِّمَادَاتِ وَالمُطَهِّرَات.",
+      },
+      {
+        context: "Emergency Response",
+        en: "He quickly grabbed adhesive strips and disinfectant from the red first-aid kit.",
+        ar: "تَنَاوَلَ بِسُرْعَةٍ شَرَائِطَ لاصِقَةً وَمُطَهِّرًا مِنْ حَقِيبَةِ الإِسْعَافَاتِ الأَوَّلِيَّةِ الحَمْرَاء.",
+      },
+      {
+        context: "Maintenance",
+        en: "Check the expiration dates of medicines in your first-aid kit every six months.",
+        ar: "افْحَصْ تَمَامَ صَلاحِيَةِ الأَدْوِيَةِ فِي صُنْدُوقِ الإِسْعَافَاتِ الأَوَّلِيَّةِ كُلَّ سِتَّةِ أَشْهُر.",
+      },
+    ],
+    exampleSentence:
+      "Every home bathroom should have a fully stocked first-aid kit with bandages and antiseptic.",
+    exampleArabic:
+      "يَجِبُ أَنْ يَحْتَوِيَ كُلُّ حَمَّامٍ مَنْزِلِيٍّ عَلَى حَقِيبَةِ إِسْعَافَاتٍ أَوَّلِيَّةٍ مُمْتَلِئَةٍ بِالضِّمَادَاتِ وَالمُطَهِّرَات.",
+  },
+  thermometer: {
+    id: "thermometer",
+    arabic: "مِقْيَاسُ الحَرَارَة (تِرْمُومِتْر)",
+    partOfSpeech: "noun",
+    phonetic: "θərˈmɑːmɪtər",
+    pronunciationTip: "Stress the second syllable: ther-MOM-i-ter (/θərˈmɑː.mɪ.tər/).",
+    collocations: [
+      "digital thermometer",
+      "forehead thermometer",
+      "take temperature with thermometer",
+      "infrared thermometer",
+      "oral thermometer",
+      "medical thermometer",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "read out",
+        meaning: "display digital temperature measurement",
+        arabic: "يَعْرِضُ القِرَاءَة",
+        example: "The digital screen reads out the body temperature in under three seconds.",
+      },
+      {
+        phrase: "wipe off",
+        meaning: "clean the thermometer sensor with alcohol",
+        arabic: "يُعَقِّمُ المِقْيَاس",
+        example: "Always wipe off the thermometer probe with alcohol after each use.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Health Check",
+        en: "The digital thermometer beeped to indicate a normal body temperature of 37 degrees.",
+        ar: "أَصْدَرَ مِقْيَاسُ الحَرَارَةِ الرَّقْمِيُّ صَفِيرًا لِيُشِيرَ إِلَى دَرَجَةِ حَرَارَةِ جِسْمٍ طَبِيعِيَّةٍ تَبْلُغُ 37 دَرَجَة.",
+      },
+      {
+        context: "Illness",
+        en: "She placed the medical thermometer under her child's tongue to check for fever.",
+        ar: "وَضَعَتْ مِقْيَاسَ الحَرَارَةِ الطِّبِّيَّ تَحْتَ لِسَانِ طِفْلِهَا لِلتَّحَقُّقِ مِنْ وُجُودِ حُمَّى.",
+      },
+      {
+        context: "Storage",
+        en: "Store the infrared thermometer in its protective case inside the medicine cabinet.",
+        ar: "احْفَظْ مِقْيَاسَ الحَرَارَةِ بِالأَشِعَّةِ تَحْتَ الحَمْرَاءِ فِي عُلْبَتِهِ الوَاقِيَةِ دَاخِلَ خِزَانَةِ الأَدْوِيَة.",
+      },
+    ],
+    exampleSentence:
+      "The digital thermometer beeped to indicate a normal body temperature of 37 degrees.",
+    exampleArabic:
+      "أَصْدَرَ مِقْيَاسُ الحَرَارَةِ الرَّقْمِيُّ صَفِيرًا لِيُشِيرَ إِلَى دَرَجَةِ حَرَارَةِ جِسْمٍ طَبِيعِيَّةٍ تَبْلُغُ 37 دَرَجَة.",
+  },
+  "shower-head": {
+    id: "shower-head",
+    arabic: "رَأْسُ الدُّش (مِرَشَّةُ الاسْتِحْمَام)",
+    partOfSpeech: "noun",
+    phonetic: "ˈʃaʊər hɛd",
+    pronunciationTip: "Compound noun: 'shower' (/ˈʃaʊ.ər/) + 'head' (/hɛd/).",
+    collocations: [
+      "rainfall shower head",
+      "adjustable shower head",
+      "handheld shower head",
+      "high-pressure shower head",
+      "clogged shower head",
+      "chrome shower head",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "turn on",
+        meaning: "start water flow through the nozzle",
+        arabic: "يُشَغِّلُ الدُّش",
+        example: "Turn on the shower head and adjust the temperature before stepping in.",
+      },
+      {
+        phrase: "soak in",
+        meaning: "submerge nozzle in vinegar to remove mineral buildup",
+        arabic: "يَنْقَعُ لِإِزَالَةِ الكِلْس",
+        example: "Soak the shower head in vinegar overnight to clear limescale deposits.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bathroom Fixtures",
+        en: "The modern rainfall shower head delivers a wide, soothing cascade of warm water.",
+        ar: "يُوَفِّرُ رَأْسُ الدُّشِّ المَطَرِيُّ الحَدِيثُ تَدَفُّقًا وَاسِعًا وَمُرِيحًا مِنَ المَاءِ الدَّافِئ.",
+      },
+      {
+        context: "Maintenance",
+        en: "Descaling the shower head regularly restores strong and even water pressure.",
+        ar: "إِزَالَةُ التَّرَسُّبَاتِ عَنْ رَأْسِ الدُّشِّ بِانْتِظَامٍ تُعِيدُ ضَغْطَ المَاءِ القَوِيَّ وَالمُتَجَانِس.",
+      },
+      {
+        context: "Installation",
+        en: "He replaced the old fixed nozzle with a flexible handheld shower head.",
+        ar: "اسْتَبْدَلَ المِرَشَّةَ القَدِيمَةَ الثَّابِتَةَ بِرَأْسِ دُشٍّ يَدَوِيٍّ مَرِن.",
+      },
+    ],
+    exampleSentence:
+      "The modern rainfall shower head delivers a wide, soothing cascade of warm water.",
+    exampleArabic:
+      "يُوَفِّرُ رَأْسُ الدُّشِّ المَطَرِيُّ الحَدِيثُ تَدَفُّقًا وَاسِعًا وَمُرِيحًا مِنَ المَاءِ الدَّافِئ.",
+  },
+  "soap-dish": {
+    id: "soap-dish",
+    arabic: "صَحْنُ الصَّابُون (صَبَّانَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsoʊp dɪʃ",
+    pronunciationTip: "Long 'o' in 'soap' (/soʊp/) + short 'i' in 'dish' (/dɪʃ/).",
+    collocations: [
+      "ceramic soap dish",
+      "draining soap dish",
+      "bamboo soap dish",
+      "suction soap dish",
+      "place on the soap dish",
+      "clean the soap dish",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "set down",
+        meaning: "place soap bar in holder",
+        arabic: "يَضَعُ الصَّابُونَة",
+        example: "Set down the bar of soap on the slotted dish so it dries quickly.",
+      },
+      {
+        phrase: "rinse off",
+        meaning: "wash away soap residue",
+        arabic: "يَشْطُفُ الصَّبَّانَة",
+        example: "Rinse off the soapy buildup from the ceramic soap dish weekly.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bathroom Countertop",
+        en: "A slotted ceramic soap dish keeps the soap bar dry and prevents it from melting.",
+        ar: "تُحَافِظُ صَبَّانَةُ السِّيرَامِيكِ ذَاتُ الثُّقُوبِ عَلَى جَفَافِ الصَّابُونِ وَتَمْنَعُ ذَوَبَانَهَا.",
+      },
+      {
+        context: "Design",
+        en: "She bought a bamboo soap dish that matches the natural wood theme of her bathroom.",
+        ar: "اشْتَرَتْ صَبَّانَةً مِنْ خَشَبِ الخَيْزُرَانِ تُنَاسِبُ الطَّابَعَ الخَشَبِيَّ الطَّبِيعِيَّ لِحَمَّامِهَا.",
+      },
+      {
+        context: "Hygiene",
+        en: "Keep the soap dish clean by washing off any accumulated lather with warm water.",
+        ar: "حَافِظْ عَلَى نَظَافَةِ صَحْنِ الصَّابُونِ بِغَسْلِ الرَّغْوَةِ المُتَرَاكِمَةِ بِالمَاءِ الدَّافِئ.",
+      },
+    ],
+    exampleSentence:
+      "A slotted ceramic soap dish keeps the soap bar dry and prevents it from melting.",
+    exampleArabic:
+      "تُحَافِظُ صَبَّانَةُ السِّيرَامِيكِ ذَاتُ الثُّقُوبِ عَلَى جَفَافِ الصَّابُونِ وَتَمْنَعُ ذَوَبَانَهَا.",
+  },
+  "shampoo-bottle": {
+    id: "shampoo-bottle",
+    arabic: "قَارُورَةُ الشَّامْبُو (عُلْبَةُ الشَّامْبُو)",
+    partOfSpeech: "noun",
+    phonetic: "ʃæmˈpuː ˌbɑːtl",
+    pronunciationTip: "Stress second syllable of 'shampoo' (/ʃæmˈpuː/) + 'bottle' (/ˈbɑː.tl/).",
+    collocations: [
+      "pump shampoo bottle",
+      "squeeze the shampoo bottle",
+      "refillable shampoo bottle",
+      "empty shampoo bottle",
+      "plastic shampoo bottle",
+      "large shampoo bottle",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "squeeze out",
+        meaning: "press bottle to dispense liquid",
+        arabic: "يَعْصِرُ الشَّامْبُو",
+        example: "Squeeze out a coin-sized portion of shampoo onto your palm.",
+      },
+      {
+        phrase: "fill up",
+        meaning: "replenish a reusable container",
+        arabic: "يَمْلَأُ القَارُورَة",
+        example: "Fill up the dispenser bottle with eco-friendly shampoo refills.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Showering",
+        en: "Press down on the pump dispenser of the shampoo bottle to get the right amount of lather.",
+        ar: "اضْغَطْ عَلَى مِضَخَّةِ قَارُورَةِ الشَّامْبُو لِلْحُصُولِ عَلَى كَمِّيَّةِ الرَّغْوَةِ المُنَاسِبَة.",
+      },
+      {
+        context: "Recycling",
+        en: "Rinse the empty plastic shampoo bottle before placing it in the recycling bin.",
+        ar: "اشْطُفْ قَارُورَةَ الشَّامْبُو البْلاسْتِيكِيَّةَ الفَارِغَةَ قَبْلَ وَضْعِهَا فِي سَلَّةِ إِعَادَةِ التَّدْوِير.",
+      },
+      {
+        context: "Organization",
+        en: "Store your shampoo bottle on the shower caddy so it doesn't clutter the tub rim.",
+        ar: "ضَعْ قَارُورَةَ الشَّامْبُو عَلَى رَفِّ الدُّشِّ لِتَجَنُّبِ فَوْضَى حَافَّةِ حَوْضِ الاسْتِحْمَام.",
+      },
+    ],
+    exampleSentence:
+      "Press down on the pump dispenser of the shampoo bottle to get the right amount of lather.",
+    exampleArabic:
+      "اضْغَطْ عَلَى مِضَخَّةِ قَارُورَةِ الشَّامْبُو لِلْحُصُولِ عَلَى كَمِّيَّةِ الرَّغْوَةِ المُنَاسِبَة.",
+  },
+  "rubber-duck": {
+    id: "rubber-duck",
+    arabic: "بَطَّةُ اسْتِحْمَامٍ مَطَّاطِيَّة",
+    partOfSpeech: "noun",
+    phonetic: "ˈrʌbər dʌk",
+    pronunciationTip: "Both words share the short /ʌ/ vowel: 'RUB-ber' + 'DUCK'.",
+    collocations: [
+      "yellow rubber duck",
+      "floating rubber duck",
+      "squeaky rubber duck",
+      "bath rubber duck",
+      "toy rubber duck",
+      "classic rubber duck",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "float on",
+        meaning: "stay atop the bathwater",
+        arabic: "يَطْفُو عَلَى المَاء",
+        example: "The bright yellow rubber duck floated happily on the warm soapy water.",
+      },
+      {
+        phrase: "dry out",
+        meaning: "allow toy to shed moisture",
+        arabic: "يَجِفّ",
+        example: "Squeeze all water out of the rubber duck so it dries out completely.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bath Time",
+        en: "The toddler loves splashing in the bubble bath with his bright yellow rubber duck.",
+        ar: "يَعْشَقُ الطِّفْلُ اللَّعِبَ فِي حَمَّامِ الفَقَاقِيعِ مَعَ بَطَّتِهِ المَطَّاطِيَّةِ الصَّفْرَاءِ اللَّامِعَة.",
+      },
+      {
+        context: "Toy Care",
+        en: "Always drain water from inside the rubber duck to prevent mold from developing.",
+        ar: "قُمْ دَائِمًا بِتَفْرِيغِ المَاءِ مِنْ دَاخِلِ البَطَّةِ المَطَّاطِيَّةِ لِمَنْعِ تَكَوُّنِ العَفَن.",
+      },
+      {
+        context: "Bathroom Novelty",
+        en: "A cheerful rubber duck sits on the bathtub ledge as a fun colorful decoration.",
+        ar: "تَجْلِسُ بَطَّةٌ مَطَّاطِيَّةٌ مَرِحَةٌ عَلَى حَافَّةِ حَوْضِ الاسْتِحْمَامِ كَدِيكُورٍ جَمِيلٍ وَمُبْهِج.",
+      },
+    ],
+    exampleSentence:
+      "The toddler loves splashing in the bubble bath with his bright yellow rubber duck.",
+    exampleArabic:
+      "يَعْشَقُ الطِّفْلُ اللَّعِبَ فِي حَمَّامِ الفَقَاقِيعِ مَعَ بَطَّتِهِ المَطَّاطِيَّةِ الصَّفْرَاءِ اللَّامِعَة.",
+  },
+  "shower-gel": {
+    id: "shower-gel",
+    arabic: "سَائِلُ الاسْتِحْمَام (جِل الاسْتِحْمَام)",
+    partOfSpeech: "noun",
+    phonetic: "ˈʃaʊər dʒɛl",
+    pronunciationTip: "'Shower' (/ˈʃaʊ.ər/) followed by 'gel' with soft 'j' sound (/dʒɛl/).",
+    collocations: [
+      "moisturizing shower gel",
+      "fragrant shower gel",
+      "lather with shower gel",
+      "antibacterial shower gel",
+      "exfoliating shower gel",
+      "gentle shower gel",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "lather up",
+        meaning: "produce rich suds with body wash",
+        arabic: "يَصْنَعُ رَغْوَة",
+        example: "Lather up with citrus shower gel on a mesh sponge for clean skin.",
+      },
+      {
+        phrase: "rinse off",
+        meaning: "wash soap away with clear water",
+        arabic: "يَشْطُفُ الجِل",
+        example: "Rinse off the refreshing shower gel thoroughly with warm water.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Daily Routine",
+        en: "Pour a drop of scented shower gel onto a wet loofah to create a rich soothing foam.",
+        ar: "اسْكُبْ قَطْرَةً مِنْ جِلِ الاسْتِحْمَامِ المُعَطَّرِ عَلَى لِيفَةٍ مُبَلَّلَةٍ لِتَكْوِينِ رَغْوَةٍ وَفِيرَةٍ وَمُرِيحَة.",
+      },
+      {
+        context: "Skincare",
+        en: "Choose a soap-free shower gel if you have sensitive or dry winter skin.",
+        ar: "اخْتَرْ جِلَ اسْتِحْمَامٍ خَالِيًا مِنَ الصَّابُونِ إِذَا كَانَتْ بَشَرَتُكَ حَسَّاسَةً أَوْ جَافَّةً شِتَاءً.",
+      },
+      {
+        context: "Aromatherapy",
+        en: "Lavender shower gel helps relax your body and mind before going to sleep.",
+        ar: "يُسَاعِدُ سَائِلُ الاسْتِحْمَامِ بِاللافَنْدَرِ عَلَى إِرْخَاءِ الجِسْمِ وَالعَقْلِ قَبْلَ النَّوْم.",
+      },
+    ],
+    exampleSentence:
+      "Pour a drop of scented shower gel onto a wet loofah to create a rich soothing foam.",
+    exampleArabic:
+      "اسْكُبْ قَطْرَةً مِنْ جِلِ الاسْتِحْمَامِ المُعَطَّرِ عَلَى لِيفَةٍ مُبَلَّلَةٍ لِتَكْوِينِ رَغْوَةٍ وَفِيرَةٍ وَمُرِيحَة.",
+  },
+  "face-cream": {
+    id: "face-cream",
+    arabic: "كَرِيمُ الوَجْه (مُرَطِّبُ البَشَرَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfeɪs kriːm",
+    pronunciationTip: "'Face' has long /eɪ/, 'cream' has long /iː/ sound.",
+    collocations: [
+      "hydrating face cream",
+      "night face cream",
+      "anti-aging face cream",
+      "apply face cream",
+      "jar of face cream",
+      "gentle face cream",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "rub in",
+        meaning: "massage lotion gently into skin",
+        arabic: "يَدْهُنُ الكَرِيم",
+        example: "Gently rub in the moisturizing face cream with upward circular strokes.",
+      },
+      {
+        phrase: "soak in",
+        meaning: "absorb into dermal layers",
+        arabic: "تَمْتَصُّهُ البَشَرَة",
+        example: "Allow the light face cream to soak in completely before applying makeup.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Daily Skincare",
+        en: "Apply a nourishing face cream every morning and evening to keep skin smooth and hydrated.",
+        ar: "ضَعِي كَرِيمَ وَجْهٍ مُغَذِّيًا كُلَّ صَبَاحٍ وَمَسَاءٍ لِلْحِفَاظِ عَلَى نُعُومَةِ البَشَرَةِ وَتَرْطِيبِهَا.",
+      },
+      {
+        context: "Winter Routine",
+        en: "Cold weather makes rich face cream essential to prevent dryness and peeling.",
+        ar: "يَجْعَلُ الطَّقْسُ البَارِدُ كَرِيمَ الوَجْهِ الغَنِيَّ ضَرُورِيًّا لِمَنْعِ الجَفَافِ وَالتَّقَشُّر.",
+      },
+      {
+        context: "Application",
+        en: "Dab a pea-sized amount of face cream onto your forehead, cheeks, and chin.",
+        ar: "ضَعْ كَمِّيَّةً بِحَجْمِ حَبَّةِ البَازِلَّاءِ مِنْ كَرِيمِ الوَجْهِ عَلَى جَبِينِكَ وَخَدَّيْكَ وَذَقْنِك.",
+      },
+    ],
+    exampleSentence:
+      "Apply a nourishing face cream every morning and evening to keep skin smooth and hydrated.",
+    exampleArabic:
+      "ضَعِي كَرِيمَ وَجْهٍ مُغَذِّيًا كُلَّ صَبَاحٍ وَمَسَاءٍ لِلْحِفَاظِ عَلَى نُعُومَةِ البَشَرَةِ وَتَرْطِيبِهَا.",
+  },
+  sunscreen: {
+    id: "sunscreen",
+    arabic: "وَاقِي الشَّمْس",
+    partOfSpeech: "noun",
+    phonetic: "ˈsʌnskriːn",
+    pronunciationTip: "Compound word: 'sun' (/sʌn/) + 'screen' (/skriːn/).",
+    collocations: [
+      "broad-spectrum sunscreen",
+      "SPF 50 sunscreen",
+      "apply sunscreen",
+      "water-resistant sunscreen",
+      "mineral sunscreen",
+      "reapply sunscreen",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "slather on",
+        meaning: "apply generous layer of lotion",
+        arabic: "يَدْهُنُ بِسَخَاء",
+        example: "Slather on water-resistant sunscreen twenty minutes before going swimming.",
+      },
+      {
+        phrase: "wash off",
+        meaning: "remove protective lotion with cleanser",
+        arabic: "يَغْسِلُ الوَاقِي",
+        example: "Always wash off sunscreen at the end of the day with a gentle face cleanser.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sun Protection",
+        en: "Wearing broad-spectrum sunscreen daily protects your skin from harmful ultraviolet rays.",
+        ar: "يَحْمِي وَضْعُ وَاقِي الشَّمْسِ وَاسِعِ النِّطَاقِ يَوْمِيًّا بَشَرَتَكَ مِنْ أَشِعَّةِ الشَّمْسِ فَوْقَ البَنَفْسَجِيَّةِ الضَّارَّة.",
+      },
+      {
+        context: "Outdoor Activities",
+        en: "Reapply SPF 50 sunscreen every two hours when spending the afternoon outdoors.",
+        ar: "أَعِدْ وَضْعَ وَاقِي الشَّمْسِ بِعَامِلِ حِمَايَةٍ 50 كُلَّ سَاعَتَيْنِ عِنْدَ قَضَاءِ وَقْتٍ فِي الخَارِج.",
+      },
+      {
+        context: "Application Tip",
+        en: "Do not forget to apply sunscreen to your neck, ears, and the tops of your hands.",
+        ar: "لَا تَنْسَ وَضْعَ وَاقِي الشَّمْسِ عَلَى رَقَبَتِكَ وَأُذُنَيْكَ وَظَهْرِ يَدَيْك.",
+      },
+    ],
+    exampleSentence:
+      "Wearing broad-spectrum sunscreen daily protects your skin from harmful ultraviolet rays.",
+    exampleArabic:
+      "يَحْمِي وَضْعُ وَاقِي الشَّمْسِ وَاسِعِ النِّطَاقِ يَوْمِيًّا بَشَرَتَكَ مِنْ أَشِعَّةِ الشَّمْسِ فَوْقَ البَنَفْسَجِيَّةِ الضَّارَّة.",
+  },
+  "lip-balm": {
+    id: "lip-balm",
+    arabic: "مُرَطِّبُ الشِّفَاه (زُبْدَةُ الشِّفَاه)",
+    partOfSpeech: "noun",
+    phonetic: "ˈlɪp bɑːm",
+    pronunciationTip: "Silent 'l' in 'balm': pronounce as /bɑːm/ (rhymes with 'calm').",
+    collocations: [
+      "soothing lip balm",
+      "beeswax lip balm",
+      "apply lip balm",
+      "chapped lips and lip balm",
+      "tinted lip balm",
+      "tube of lip balm",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "glide on",
+        meaning: "apply smoothly over lips",
+        arabic: "يَمُرُّ بِسَلاسَة",
+        example: "The organic beeswax balm glides on easily to soothe chapped lips.",
+      },
+      {
+        phrase: "lock in",
+        meaning: "trap natural moisture within skin",
+        arabic: "يَحْبِسُ الرُّطُوبَة",
+        example: "Lip balm helps lock in essential moisture against harsh winter winds.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Daily Care",
+        en: "Apply a soothing beeswax lip balm to protect your lips from dry cold winds.",
+        ar: "ضَعْ مُرَطِّبَ شِفَاهٍ مُهَدِّئًا بِشَمْعِ العَسَلِ لِحِمَايَةِ شَفَتَيْكَ مِنْ رِيَاحِ الشِّتَاءِ الجَافَّة.",
+      },
+      {
+        context: "Chapped Skin",
+        en: "Her chapped lips felt immediate relief after swiping on hydrating lip balm.",
+        ar: "شَعَرَتْ شَفَتَاهَا المُتَشَقِّقَتَانِ بِرَاحَةٍ فَوْرِيَّةٍ بَعْدَ وَضْعِ مُرَطِّبِ الشِّفَاه.",
+      },
+      {
+        context: "Everyday Carry",
+        en: "He always carries a small tube of moisturizing lip balm in his coat pocket.",
+        ar: "يَحْمِلُ دَائِمًا أُنْبُوبًا صَغِيرًا مِنْ مُرَطِّبِ الشِّفَاهِ فِي جَيْبِ مِعْطَفِه.",
+      },
+    ],
+    exampleSentence: "Apply a soothing beeswax lip balm to protect your lips from dry cold winds.",
+    exampleArabic:
+      "ضَعْ مُرَطِّبَ شِفَاهٍ مُهَدِّئًا بِشَمْعِ العَسَلِ لِحِمَايَةِ شَفَتَيْكَ مِنْ رِيَاحِ الشِّتَاءِ الجَافَّة.",
+  },
+  "hand-soap": {
+    id: "hand-soap",
+    arabic: "صَابُونُ اليَدَيْن",
+    partOfSpeech: "noun",
+    phonetic: "ˈhænd soʊp",
+    pronunciationTip: "'Hand' (/hænd/) followed by 'soap' (/soʊp/) with long 'o'.",
+    collocations: [
+      "liquid hand soap",
+      "foaming hand soap",
+      "antibacterial hand soap",
+      "wash with hand soap",
+      "hand soap dispenser",
+      "fragrant hand soap",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wash up",
+        meaning: "clean hands before eating",
+        arabic: "يَغْسِلُ يَدَيْهِ",
+        example: "Always wash up with warm water and antibacterial hand soap before meals.",
+      },
+      {
+        phrase: "rinse off",
+        meaning: "clean suds away from palms",
+        arabic: "يَشْطُفُ الصَّابُون",
+        example: "Scrub your hands for twenty seconds and rinse off all soap suds completely.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Hygiene Practice",
+        en: "Washing your hands with liquid hand soap and water for twenty seconds eliminates germs.",
+        ar: "يَقْضِي غَسْلُ اليَدَيْنِ بِصَابُونِ اليَدَيْنِ السَّائِلِ وَالمَاءِ لِمُدَّةِ عِشْرِينَ ثَانِيَةً عَلَى الجَرَاثِيم.",
+      },
+      {
+        context: "Sink Area",
+        en: "The ceramic pump bottle beside the sink is filled with lavender scented hand soap.",
+        ar: "قَارُورَةُ المِضَخَّةِ الخَزَفِيَّةُ بِجِوَارِ الحَوْضِ مُمْتَلِئَةٌ بِصَابُونِ يَدَيْنِ بِرَائِحَةِ اللافَنْدَر.",
+      },
+      {
+        context: "Gentle Formula",
+        en: "Use moisturizing hand soap with aloe vera to keep your hands soft after frequent washing.",
+        ar: "اسْتَخْدِمْ صَابُونَ يَدَيْنِ مُرَطِّبًا بِالصَّبَّارِ لِلْحِفَاظِ عَلَى نُعُومَةِ يَدَيْكَ مَعَ تَكْرَارِ الغَسِيل.",
+      },
+    ],
+    exampleSentence:
+      "Washing your hands with liquid hand soap and water for twenty seconds eliminates germs.",
+    exampleArabic:
+      "يَقْضِي غَسْلُ اليَدَيْنِ بِصَابُونِ اليَدَيْنِ السَّائِلِ وَالمَاءِ لِمُدَّةِ عِشْرِينَ ثَانِيَةً عَلَى الجَرَاثِيم.",
+  },
+  "body-wash": {
+    id: "body-wash",
+    arabic: "سَائِلُ غَسِيلِ الجِسْم (غَسُولُ الجِسْم)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbɑːdi wɑːʃ",
+    pronunciationTip: "Stress first syllable: 'BO-dy' (/ˈbɑː.di/) + 'WASH' (/wɑːʃ/).",
+    collocations: [
+      "creamy body wash",
+      "exfoliating body wash",
+      "lather with body wash",
+      "fragrance-free body wash",
+      "bottle of body wash",
+      "refreshing body wash",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "lather up",
+        meaning: "produce rich bubbles on skin",
+        arabic: "يَصْنَعُ رَغْوَة",
+        example: "Lather up with the rich body wash using a bath sponge.",
+      },
+      {
+        phrase: "wash away",
+        meaning: "cleanse dirt and sweat from skin",
+        arabic: "يَغْسِلُ الأَوْسَاخ",
+        example: "The refreshing eucalyptus body wash washes away sweat and fatigue.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Shower Routine",
+        en: "She preferred using a creamy hydrating body wash over a traditional bar of soap.",
+        ar: "فَضَّلَتِ اسْتِخْدَامَ غَسُولِ جِسْمٍ كَرِيمِيٍّ مُرَطِّبٍ عَلَى قِطْعَةِ الصَّابُونِ التَّقْلِيدِيَّة.",
+      },
+      {
+        context: "Sensitive Skin",
+        en: "Dermatologists recommend fragrance-free body wash for individuals with sensitive skin.",
+        ar: "يُوصِي أَطِبَّاءُ الجِلْدِيَّةِ بِغَسُولِ جِسْمٍ خَالٍ مِنَ العُطُورِ لِأَصْحَابِ البَشَرَةِ الحَسَّاسَة.",
+      },
+      {
+        context: "Aromatherapy",
+        en: "A citrus and mint body wash invigorates your senses and wakes you up in the morning.",
+        ar: "يُنْعِشُ غَسُولُ الجِسْمِ بِالحَمْضِيَّاتِ وَالنَّعْنَاعِ حَوَاسَّكَ وَيَمْنَحُكَ النَّشَاطَ صَبَاحًا.",
+      },
+    ],
+    exampleSentence:
+      "She preferred using a creamy hydrating body wash over a traditional bar of soap.",
+    exampleArabic:
+      "فَضَّلَتِ اسْتِخْدَامَ غَسُولِ جِسْمٍ كَرِيمِيٍّ مُرَطِّبٍ عَلَى قِطْعَةِ الصَّابُونِ التَّقْلِيدِيَّة.",
+  },
+  "dental-floss": {
+    id: "dental-floss",
+    arabic: "خَيْطُ الأَسْنَان (خَيْطُ التَّنْظِيف)",
+    partOfSpeech: "noun",
+    phonetic: "ˌdɛntl ˈflɔːs",
+    pronunciationTip: "'Dental' (/ˈdɛn.tl/) + 'floss' with open 'aw' sound (/flɔːs/).",
+    collocations: [
+      "waxed dental floss",
+      "mint-flavored dental floss",
+      "floss with dental floss",
+      "spool of dental floss",
+      "daily dental floss",
+      "interdental floss",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "clean out",
+        meaning: "remove food trapped between teeth",
+        arabic: "يُنَظِّفُ مَا بَيْنَ الأَسْنَان",
+        example: "Use dental floss daily to clean out plaque and food particles.",
+      },
+      {
+        phrase: "pull out",
+        meaning: "dispense string from holder",
+        arabic: "يَسْحَبُ الخَيْط",
+        example: "Pull out eighteen inches of dental floss and wrap it around your fingers.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Oral Health",
+        en: "Dentists recommend using waxed dental floss every evening to remove plaque between teeth.",
+        ar: "يُوصِي أَطِبَّاءُ الأَسْنَانِ بِاسْتِخْدَامِ خَيْطِ الأَسْنَانِ المُشَمَّعِ كُلَّ مَسَاءٍ لِإِزَالَةِ التَّرَسُّبَاتِ بَيْنَ الأَسْنَان.",
+      },
+      {
+        context: "Routine",
+        en: "Flossing with mint-flavored dental floss leaves your mouth feeling extraordinarily fresh.",
+        ar: "يَتْرُكُ تَنْظِيفُ الأَسْنَانِ بِخَيْطِ الأَسْنَانِ بِنَكْهَةِ النَّعْنَاعِ فَمَكَ مُنْتَعِشًا لِلْغَايَة.",
+      },
+      {
+        context: "Storage",
+        en: "Keep a small plastic dispenser of dental floss right next to your toothbrush cup.",
+        ar: "ضَعْ عُلْبَةَ خَيْطِ الأَسْنَانِ البْلاسْتِيكِيَّةَ الصَّغِيرَةَ بِجَانِبِ كُوبِ فُرْشَاةِ الأَسْنَانِ مُبَاشَرَةً.",
+      },
+    ],
+    exampleSentence:
+      "Dentists recommend using waxed dental floss every evening to remove plaque between teeth.",
+    exampleArabic:
+      "يُوصِي أَطِبَّاءُ الأَسْنَانِ بِاسْتِخْدَامِ خَيْطِ الأَسْنَانِ المُشَمَّعِ كُلَّ مَسَاءٍ لِإِزَالَةِ التَّرَسُّبَاتِ بَيْنَ الأَسْنَان.",
+  },
+  "face-wash": {
+    id: "face-wash",
+    arabic: "غَسُولُ الوَجْه (مُنَظِّفُ الوَجْه)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfeɪs wɑːʃ",
+    pronunciationTip: "'Face' (/feɪs/) followed by 'wash' (/wɑːʃ/).",
+    collocations: [
+      "foaming face wash",
+      "gentle face wash",
+      "acne face wash",
+      "cleansing face wash",
+      "oil-free face wash",
+      "daily face wash",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "lather up",
+        meaning: "work gel into cleansing foam",
+        arabic: "يُرَغِّي الغَسُول",
+        example: "Lather up a dime-sized drop of face wash between wet palms.",
+      },
+      {
+        phrase: "rinse away",
+        meaning: "wash off impurities with water",
+        arabic: "يَشْطُفُ الوَجْه",
+        example: "Rinse away all traces of face wash with cool water to close your pores.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Daily Cleansing",
+        en: "Wash your face with a gentle foaming face wash morning and night to remove dirt and oils.",
+        ar: "اغْسِلْ وَجْهَكَ بِغَسُولِ وَجْهٍ رَغَوِيٍّ لَطِيفٍ صَبَاحًا وَمَسَاءً لِإِزَالَةِ الأَوْسَاخِ وَالزُّيُوت.",
+      },
+      {
+        context: "Skincare",
+        en: "An exfoliating face wash with salicylic acid helps keep pores clear and prevents breakouts.",
+        ar: "يُسَاعِدُ غَسُولُ الوَجْهِ المُقَشِّرُ بِحَمْضِ السَّالِيسِيلِيكِ عَلَى إِبْقَاءِ المَسَامِّ نَظِيفَةً وَمَنْعِ البُثُور.",
+      },
+      {
+        context: "Bathroom Routine",
+        en: "She keeps her favorite tea tree face wash right on the shelf inside the shower.",
+        ar: "تَحْتَفِظُ بِغَسُولِ الوَجْهِ المُفَضَّلِ لَدَيْهَا بِشَجَرَةِ الشَّايِ عَلَى الرَّفِّ دَاخِلَ الدُّش.",
+      },
+    ],
+    exampleSentence:
+      "Wash your face with a gentle foaming face wash morning and night to remove dirt and oils.",
+    exampleArabic:
+      "اغْسِلْ وَجْهَكَ بِغَسُولِ وَجْهٍ رَغَوِيٍّ لَطِيفٍ صَبَاحًا وَمَسَاءً لِإِزَالَةِ الأَوْسَاخِ وَالزُّيُوت.",
+  },
+  "hand-sanitizer": {
+    id: "hand-sanitizer",
+    arabic: "مُعَقِّمُ اليَدَيْن (مُطَهِّرُ اليَدَيْن)",
+    partOfSpeech: "noun",
+    phonetic: "ˈhænd ˌsænɪtaɪzər",
+    pronunciationTip: "'Hand' (/hænd/) + 'SAN-i-ti-zer' (/ˈsæn.ɪ.taɪ.zər/).",
+    collocations: [
+      "alcohol hand sanitizer",
+      "gel hand sanitizer",
+      "pocket hand sanitizer",
+      "apply hand sanitizer",
+      "rub with hand sanitizer",
+      "hand sanitizer dispenser",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "rub together",
+        meaning: "spread disinfectant across palms",
+        arabic: "يَفْرُكُ اليَدَيْن",
+        example: "Rub hands together briskly until the alcohol sanitizer evaporates completely.",
+      },
+      {
+        phrase: "wipe down",
+        meaning: "sanitize surfaces or skin",
+        arabic: "يُعَقِّمُ بِالمُطَهِّر",
+        example: "Use hand sanitizer to disinfect your hands when soap and water are unavailable.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Public Hygiene",
+        en: "Apply alcohol-based hand sanitizer to kill bacteria when soap and running water are unavailable.",
+        ar: "ضَعْ مُعَقِّمَ اليَدَيْنِ القَائِمَ عَلَى الكُحُولِ لِلْقَضَاءِ عَلَى البَكْتِيرْيَا عِنْدَ عَدَمِ تَوَفُّرِ المَاءِ وَالصَّابُون.",
+      },
+      {
+        context: "Travel",
+        en: "He clipped a small travel-sized bottle of hand sanitizer to his backpack zipper.",
+        ar: "عَلَّقَ قَارُورَةً صَغِيرَةً لِلسَّفَرِ مِنْ مُعَقِّمِ اليَدَيْنِ فِي سَحَّابِ حَقِيبَةِ ظَهْرِه.",
+      },
+      {
+        context: "Effective Use",
+        en: "Rub the hand sanitizer over all surfaces of both hands until they feel completely dry.",
+        ar: "افْرُكْ مُعَقِّمَ اليَدَيْنِ عَلَى جَمِيعِ أَجْزَاءِ يَدَيْكَ حَتَّى تَجِفَّ تَمَامًا.",
+      },
+    ],
+    exampleSentence:
+      "Apply alcohol-based hand sanitizer to kill bacteria when soap and running water are unavailable.",
+    exampleArabic:
+      "ضَعْ مُعَقِّمَ اليَدَيْنِ القَائِمَ عَلَى الكُحُولِ لِلْقَضَاءِ عَلَى البَكْتِيرْيَا عِنْدَ عَدَمِ تَوَفُّرِ المَاءِ وَالصَّابُون.",
+  },
+  "wet-wipes": {
+    id: "wet-wipes",
+    arabic: "مَنَادِيلُ مُبَلَّلَة (مَنَادِيلُ مَرْطُوبَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɛt waɪps",
+    pronunciationTip: "'Wet' (/wɛt/) + 'wipes' (/waɪps/) with long 'i' and plural 's'.",
+    collocations: [
+      "antibacterial wet wipes",
+      "pack of wet wipes",
+      "flushable wet wipes",
+      "cleaning wet wipes",
+      "baby wet wipes",
+      "biodegradable wet wipes",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pull out",
+        meaning: "dispense a sheet from pack",
+        arabic: "يَسْحَبُ مَنْدِيلًا",
+        example: "Pull out a fresh sheet of wet wipes and seal the resealable flap tightly.",
+      },
+      {
+        phrase: "wipe down",
+        meaning: "clean hands or counter with moist towelette",
+        arabic: "يَمْسَحُ بِالمَنَادِيل",
+        example: "Wipe down the bathroom sink handle with an antibacterial wet wipe.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Quick Cleanups",
+        en: "She used refreshing antibacterial wet wipes to quickly clean her hands on the go.",
+        ar: "اسْتَخْدَمَتْ مَنَادِيلَ مُبَلَّلَةً مُضَادَّةً لِلْبَكْتِيرْيَا لِتَنْظِيفِ يَدَيْهَا بِسُرْعَةٍ أَثْنَاءَ التَّنَقُّل.",
+      },
+      {
+        context: "Bathroom Storage",
+        en: "Keep a pack of biodegradable wet wipes stored neatly in the bathroom vanity drawer.",
+        ar: "احْتَفِظْ بِعَبْوَةِ مَنَادِيلَ مُبَلَّلَةٍ قَابِلَةٍ لِلتَّحَلُّلِ فِي دُرْجِ خِزَانَةِ الحَمَّام.",
+      },
+      {
+        context: "Packaging",
+        en: "Always close the moisture-lock lid of the wet wipes package to prevent them from drying out.",
+        ar: "أَغْلِقْ دَائِمًا غِطَاءَ حِفْظِ الرُّطُوبَةِ لِعَبْوَةِ المَنَادِيلِ المُبَلَّلَةِ لِمَنْعِ جَفَافِهَا.",
+      },
+    ],
+    exampleSentence:
+      "She used refreshing antibacterial wet wipes to quickly clean her hands on the go.",
+    exampleArabic:
+      "اسْتَخْدَمَتْ مَنَادِيلَ مُبَلَّلَةً مُضَادَّةً لِلْبَكْتِيرْيَا لِتَنْظِيفِ يَدَيْهَا بِسُرْعَةٍ أَثْنَاءَ التَّنَقُّل.",
+  },
+  brush: {
+    id: "brush",
+    arabic: "فُرْشَاةُ تَنْظِيف (فُرْشَاة)",
+    partOfSpeech: "noun",
+    phonetic: "brʌʃ",
+    pronunciationTip: "Short 'u' sound /ʌ/ as in 'cup', ending in 'sh' (/ʃ/).",
+    collocations: [
+      "toilet brush",
+      "scrub brush",
+      "stiff-bristle brush",
+      "cleaning brush",
+      "scrub with a brush",
+      "brush holder",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "scrub down",
+        meaning: "clean vigorously with stiff bristles",
+        arabic: "يَحُكُّ بِالفُرْشَاة",
+        example: "Scrub down the porcelain toilet bowl with the disinfectant brush.",
+      },
+      {
+        phrase: "rinse out",
+        meaning: "clean brush bristles under running water",
+        arabic: "يَشْطُفُ الفُرْشَاة",
+        example: "Rinse out the cleaning brush under hot water after scrubbing.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bathroom Cleaning",
+        en: "Use a long-handled stiff brush with disinfectant to scrub the toilet bowl thoroughly.",
+        ar: "اسْتَخْدِمْ فُرْشَاةً قَاسِيَةً ذَاتَ مِقْبَضٍ طَوِيلٍ مَعَ المُطَهِّرِ لِفَرْكِ المِرْحَاضِ جَيِّدًا.",
+      },
+      {
+        context: "Tile Maintenance",
+        en: "A small detail brush is great for cleaning grime out of tile grout lines.",
+        ar: "تُعَدُّ فُرْشَاةُ التَّنْظِيفِ الصَّغِيرَةُ مُمْتَازَةً لِإِزَالَةِ الأَوْسَاخِ مِنْ خُطُوطِ البَلَاط.",
+      },
+      {
+        context: "Storage",
+        en: "Place the toilet brush back into its ventilated stand to air dry hygienically.",
+        ar: "ضَعْ فُرْشَاةَ المِرْحَاضِ فِي حَامِلِهَا جَيِّدِ التَّهْوِيَةِ لِتَجِفَّ بِطَرِيقَةٍ صِحِّيَّة.",
+      },
+    ],
+    exampleSentence:
+      "Use a long-handled stiff brush with disinfectant to scrub the toilet bowl thoroughly.",
+    exampleArabic:
+      "اسْتَخْدِمْ فُرْشَاةً قَاسِيَةً ذَاتَ مِقْبَضٍ طَوِيلٍ مَعَ المُطَهِّرِ لِفَرْكِ المِرْحَاضِ جَيِّدًا.",
+  },
+  gloves: {
+    id: "gloves",
+    arabic: "قُفَّازَاتُ تَنْظِيف (قُفَّازَات)",
+    partOfSpeech: "noun",
+    phonetic: "ɡlʌvz",
+    pronunciationTip: "Short 'u' sound /ʌ/ followed by voiced /vz/ (rhymes with 'loves').",
+    collocations: [
+      "rubber gloves",
+      "cleaning gloves",
+      "pair of gloves",
+      "protective gloves",
+      "yellow latex gloves",
+      "wear gloves",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put on",
+        meaning: "wear protective gloves on hands",
+        arabic: "يَرْتَدِي القُفَّازَات",
+        example: "Put on rubber gloves before handling strong bleach and bathroom cleaners.",
+      },
+      {
+        phrase: "take off",
+        meaning: "remove gloves after cleaning",
+        arabic: "يَخْلَعُ القُفَّازَات",
+        example: "Take off the gloves inside-out to avoid touching cleaning chemicals.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Safety During Cleaning",
+        en: "Wear durable yellow rubber gloves to protect your hands from harsh bathroom cleaning chemicals.",
+        ar: "ارْتَدِ قُفَّازَاتٍ مَطَّاطِيَّةً صَفْرَاءَ مَتِينَةً لِحِمَايَةِ يَدَيْكَ مِنْ مَوَادِّ التَّنْظِيفِ الكِيمْيَائِيَّةِ القَاسِيَة.",
+      },
+      {
+        context: "Skin Protection",
+        en: "Cleaning gloves prevent detergents from drying out your skin and fingernails.",
+        ar: "تَمْنَعُ قُفَّازَاتُ التَّنْظِيفِ المُنَظِّفَاتِ مِنْ تَجْفِيفِ بَشَرَتِكَ وَأَظَافِرِك.",
+      },
+      {
+        context: "Drying",
+        en: "Hang the damp rubber gloves over the edge of the bucket to dry after use.",
+        ar: "عَلِّقِ القُفَّازَاتِ المَطَّاطِيَّةَ الرَّطْبَةَ عَلَى حَافَّةِ الدَّلْوِ لِتَجِفَّ بَعْدَ الاسْتِخْدَام.",
+      },
+    ],
+    exampleSentence:
+      "Wear durable yellow rubber gloves to protect your hands from harsh bathroom cleaning chemicals.",
+    exampleArabic:
+      "ارْتَدِ قُفَّازَاتٍ مَطَّاطِيَّةً صَفْرَاءَ مَتِينَةً لِحِمَايَةِ يَدَيْكَ مِنْ مَوَادِّ التَّنْظِيفِ الكِيمْيَائِيَّةِ القَاسِيَة.",
+  },
+  "spray-bottle": {
+    id: "spray-bottle",
+    arabic: "بَخَّاخ (قَارُورَةُ رَش)",
+    partOfSpeech: "noun",
+    phonetic: "ˈspreɪ ˌbɑːtl",
+    pronunciationTip: "'Spray' (/spreɪ/) + 'bottle' (/ˈbɑː.tl/).",
+    collocations: [
+      "cleaner spray bottle",
+      "plastic spray bottle",
+      "spray with a bottle",
+      "adjustable spray bottle",
+      "trigger spray bottle",
+      "glass spray bottle",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "spray on",
+        meaning: "mist disinfectant onto surface",
+        arabic: "يَرُشُّ عَلَى",
+        example: "Spray on glass cleaner from the bottle onto the foggy mirror.",
+      },
+      {
+        phrase: "fill up",
+        meaning: "pour cleaner liquid into container",
+        arabic: "يَمْلَأُ البَخَّاخ",
+        example: "Fill up the spray bottle with a mixture of vinegar and warm water.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bathroom Cleaning",
+        en: "Fill a trigger spray bottle with vinegar and water for a natural eco-friendly mirror cleaner.",
+        ar: "امْلَأْ بَخَّاخًا بِمَزِيجِ الخَلِّ وَالمَاءِ لِلْحُصُولِ عَلَى مُنَظِّفِ مَرَايَا طَبِيعِيٍّ وَصَدِيقٍ لِلْبِيئَة.",
+      },
+      {
+        context: "Disinfection",
+        en: "She used the spray bottle to mist disinfectant evenly across the bathroom countertops.",
+        ar: "اسْتَخْدَمَتِ البَخَّاخَ لِرَشِّ المُطَهِّرِ بِالتَّسَاوِي عَلَى أَسْطُحِ الحَمَّام.",
+      },
+      {
+        context: "Nozzle Adjustment",
+        en: "Turn the nozzle on the spray bottle from stream to fine mist for wide surface coverage.",
+        ar: "قُمْ بِتَدْوِيرِ فُوَّهَةِ البَخَّاخِ مِنَ التَّدَفُّقِ إِلَى الرَّذَاذِ النَّاعِمِ لِتَغْطِيَةِ المِسَاحَاتِ الوَاسِعَة.",
+      },
+    ],
+    exampleSentence:
+      "Fill a trigger spray bottle with vinegar and water for a natural eco-friendly mirror cleaner.",
+    exampleArabic:
+      "امْلَأْ بَخَّاخًا بِمَزِيجِ الخَلِّ وَالمَاءِ لِلْحُصُولِ عَلَى مُنَظِّفِ مَرَايَا طَبِيعِيٍّ وَصَدِيقٍ لِلْبِيئَة.",
+  },
+  cloth: {
+    id: "cloth",
+    arabic: "قِمَاشَةُ تَنْظِيف (فُوطَةُ مَسْح)",
+    partOfSpeech: "noun",
+    phonetic: "klɔːθ",
+    pronunciationTip: "Short open 'aw' sound /ɔː/ ending in soft unvoiced 'th' (/θ/).",
+    collocations: [
+      "microfiber cloth",
+      "damp cloth",
+      "cleaning cloth",
+      "wipe with a cloth",
+      "dusting cloth",
+      "lint-free cloth",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wipe down",
+        meaning: "clean surfaces thoroughly with cloth",
+        arabic: "يَمْسَحُ بِالقِمَاشَة",
+        example: "Wipe down the chrome faucet and marble counter with a dry microfiber cloth.",
+      },
+      {
+        phrase: "wring out",
+        meaning: "squeeze excess water from wet rag",
+        arabic: "يَعْصِرُ القِمَاشَة",
+        example: "Wring out the wet cleaning cloth before polishing the mirrors.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Polishing Surfaces",
+        en: "Use a dry microfiber cloth to buff chrome bathroom faucets to a brilliant shine.",
+        ar: "اسْتَخْدِمْ قِمَاشَةَ مَايْكْرُوفَايْبِر جَافَّةً لِتَلْمِيعِ صَنَابِيرِ الحَمَّامِ المَطْلِيَّةِ بِالكُرُوم.",
+      },
+      {
+        context: "Cleaning Routine",
+        en: "Wipe down the bathroom counter every evening with a warm damp cloth.",
+        ar: "امْسَحْ سَطْحَ خِزَانَةِ الحَمَّامِ كُلَّ مَسَاءٍ بِقِمَاشَةٍ رَطْبَةٍ وَدَافِئَة.",
+      },
+      {
+        context: "Lint-Free Results",
+        en: "A lint-free cleaning cloth leaves glass shower doors sparkling and streak-free.",
+        ar: "تَتْرُكُ قِمَاشَةُ التَّنْظِيفِ الخَالِيَةُ مِنَ الوَبَرِ أَبْوَابَ الدُّشِّ الزُّجَاجِيَّةَ لاَمِعَةً دُونَ آثَار.",
+      },
+    ],
+    exampleSentence:
+      "Use a dry microfiber cloth to buff chrome bathroom faucets to a brilliant shine.",
+    exampleArabic:
+      "اسْتَخْدِمْ قِمَاشَةَ مَايْكْرُوفَايْبِر جَافَّةً لِتَلْمِيعِ صَنَابِيرِ الحَمَّامِ المَطْلِيَّةِ بِالكُرُوم.",
+  },
+  squeegee: {
+    id: "squeegee",
+    arabic: "مِمْسَحَةُ زُجَاجٍ مَطَّاطِيَّة (قَشَّاطَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈskwiːdʒiː",
+    pronunciationTip: "Pronounce as 'SKWEE-jee' with long /iː/ sounds (/ˈskwiː.dʒiː/).",
+    collocations: [
+      "shower squeegee",
+      "rubber squeegee",
+      "wipe with a squeegee",
+      "window squeegee",
+      "stainless squeegee",
+      "silicone squeegee",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wipe down",
+        meaning: "scrape water droplets off glass",
+        arabic: "يَقْشُطُ المَاء",
+        example: "Wipe down the shower glass using smooth top-to-bottom squeegee strokes.",
+      },
+      {
+        phrase: "hang up",
+        meaning: "store squeegee on shower hook",
+        arabic: "يُعَلِّقُ القَشَّاطَة",
+        example: "Hang up the squeegee on the suction hook inside the shower stall.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Shower Glass Care",
+        en: "Use a rubber squeegee after showering to scrape water droplets off the glass doors.",
+        ar: "اسْتَخْدِمْ مِمْسَحَةَ الزُّجَاجِ المَطَّاطِيَّةَ بَعْدَ الاسْتِحْمَامِ لِقَشْطِ قَطَرَاتِ المَاءِ عَنِ الأَبْوَابِ الزُّجَاجِيَّة.",
+      },
+      {
+        context: "Preventing Limescale",
+        en: "Regularly using a squeegee prevents hard water mineral spots from forming on bathroom tiles.",
+        ar: "يَمْنَعُ اسْتِخْدَامُ المِمْسَحَةِ المَطَّاطِيَّةِ بِانْتِظَامٍ تَشَكُّلَ بُقَعِ الأَمْلاحِ المَعْدَنِيَّةِ عَلَى بَلَاطِ الحَمَّام.",
+      },
+      {
+        context: "Design",
+        en: "The stainless steel squeegee hangs conveniently from a suction cup on the shower wall.",
+        ar: "تُعَلَّقُ المِمْسَحَةُ المَطَّاطِيَّةُ المَصْنُوعَةُ مِنَ الفُولاذِ المُقَاوِمِ لِلصَّدَأِ بِسُهُولَةٍ عَلَى جِدَارِ الدُّش.",
+      },
+    ],
+    exampleSentence:
+      "Use a rubber squeegee after showering to scrape water droplets off the glass doors.",
+    exampleArabic:
+      "اسْتَخْدِمْ مِمْسَحَةَ الزُّجَاجِ المَطَّاطِيَّةَ بَعْدَ الاسْتِحْمَامِ لِقَشْطِ قَطَرَاتِ المَاءِ عَنِ الأَبْوَابِ الزُّجَاجِيَّة.",
+  },
 };
 
 /**
