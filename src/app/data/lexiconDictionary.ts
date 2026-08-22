@@ -22,11 +22,13 @@ export interface LexiconEntry {
   partOfSpeech: "noun" | "verb" | "adjective" | "phrase";
   phonetic?: string;
   pronunciationTip?: string;
+  audio?: string;
+  meanings?: { en: string; ar: string; sentences: { en: string; ar: string }[] }[];
   collocations: string[];
   phrasalVerbs?: LexiconPhrasalVerb[];
   sentences: LexiconSentence[];
-  exampleSentence: string;
-  exampleArabic: string;
+  exampleSentence?: string;
+  exampleArabic?: string;
 }
 
 export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
@@ -6412,55 +6414,6 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleArabic:
       "شَرِبَ الأَطْفَالُ كَأْساً كَبِيراً مِنْ الحَلِيبِ الكَامِلِ الدَّسَمِ مَعَ البَانْ كِيك.",
   },
-  mirror: {
-    id: "mirror",
-    arabic: "مِرْآة",
-    partOfSpeech: "noun",
-    phonetic: "ˈmɪr.ər",
-    pronunciationTip: "Pronounced with two short syllables: 'MIR' + 'ror'.",
-    collocations: [
-      "look in the mirror",
-      "wall mirror",
-      "full-length mirror",
-      "mirror reflection",
-      "check the mirror",
-      "framed mirror",
-    ],
-    phrasalVerbs: [
-      {
-        phrase: "look at",
-        meaning: "direct your eyes toward your reflection",
-        arabic: "يَنْظُرُ إِلَى",
-        example: "He looked at himself in the mirror to fix his tie.",
-      },
-      {
-        phrase: "wipe down",
-        meaning: "clean the glass surface",
-        arabic: "يَمْسَحُ السَّطْحَ",
-        example: "She wiped down the bathroom mirror until it was spotless.",
-      },
-    ],
-    sentences: [
-      {
-        context: "Morning Routine",
-        en: "He looked in the mirror while brushing his hair before work.",
-        ar: "نَظَرَ فِي المِرْآةِ أَثْنَاءَ تَمْشِيطِ شَعْرِهِ قَبْلَ الذَّهَابِ لِلْعَمَلِ.",
-      },
-      {
-        context: "Room Features",
-        en: "A full-length mirror is mounted on the inside of the wardrobe door.",
-        ar: "تُوجَدُ مِرْآةٌ طُولِيَّةٌ مُثَبَّتَةٌ عَلَى الجَانِبِ الدَّاخِلِيِّ لِبَابِ الخِزَانَةِ.",
-      },
-      {
-        context: "Interior Design",
-        en: "The large round mirror makes the small room feel much brighter.",
-        ar: "تَجْعَلُ المِرْآةُ الدَّائِرِيَّةُ الكَبِيرَةُ الغُرْفَةَ الصَّغِيرَةَ تَبْدُو أَكْثَرَ إِشْرَاقاً.",
-      },
-    ],
-    exampleSentence: "He looked in the mirror while brushing his hair before work.",
-    exampleArabic:
-      "نَظَرَ فِي المِرْآةِ أَثْنَاءَ تَمْشِيطِ شَعْرِهِ قَبْلَ الذَّهَابِ لِلْعَمَلِ.",
-  },
   "mixing-bowl": {
     id: "mixing-bowl",
     arabic: "وِعَاءُ الخَلْط (طَاسَةُ عَجْن)",
@@ -9619,55 +9572,6 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleSentence: "He connected his phone to the portable Bluetooth speaker to play music.",
     exampleArabic: "وَصَلَ هَاتِفَهُ بِمُكَبِّرِ الصَّوْتِ اللّاسِلْكِيِّ لِتَشْغِيلِ المُوسِيقَى.",
   },
-  sponge: {
-    id: "sponge",
-    arabic: "إِسْفَنْجَةُ جَلِي (إِسْفَنْجَة)",
-    partOfSpeech: "noun",
-    phonetic: "spʌndʒ",
-    pronunciationTip: "Short 'u' vowel /ʌ/ as in 'sun', ending in soft 'ge' (/ndʒ/).",
-    collocations: [
-      "kitchen sponge",
-      "soapy sponge",
-      "scrub with a sponge",
-      "damp sponge",
-      "antibacterial sponge",
-      "wipe with a sponge",
-    ],
-    phrasalVerbs: [
-      {
-        phrase: "wipe down",
-        meaning: "clean countertops with a damp sponge",
-        arabic: "يَمْسَحُ بِالإِسْفَنْجَة",
-        example: "Wipe down the marble kitchen counter with a soapy sponge.",
-      },
-      {
-        phrase: "rinse out",
-        meaning: "wash cleaning soap out of sponge",
-        arabic: "يَشْطُفُ الإِسْفَنْجَة",
-        example: "Always rinse out and squeeze the sponge after washing dishes.",
-      },
-    ],
-    sentences: [
-      {
-        context: "Washing Dishes",
-        en: "She squeezed a drop of dish soap onto the damp sponge to create rich suds.",
-        ar: "عَصَرَتْ قَطْرَةً مِنْ صَابُونِ الصُّحُونِ عَلَى الإِسْفَنْجَةِ الرَّطْبَةِ لِتَكْوِينِ رَغْوَةٍ وَفِيرَةٍ.",
-      },
-      {
-        context: "Scrubbing Pots",
-        en: "Use the abrasive textured side of the dual-action sponge to remove stubborn grease.",
-        ar: "اسْتَخْدِمِ الجَانِبَ الخَشِنَ لِلإِسْفَنْجَةِ لِإِزَالَةِ الدُّهُونِ المُسْتَعْصِيَةِ عَنِ القُدُورِ.",
-      },
-      {
-        context: "Hygiene",
-        en: "Replace your kitchen sponge every two weeks to prevent bacterial buildup.",
-        ar: "اسْتَبْدِلْ إِسْفَنْجَةَ المَطْبَخِ كُلَّ أُسْبُوعَيْنِ لِمَنْعِ تَرَاكُمِ البَكْتِيرْيَا.",
-      },
-    ],
-    exampleSentence: "She squeezed a drop of dish soap onto the damp sponge to create rich suds.",
-    exampleArabic:
-      "عَصَرَتْ قَطْرَةً مِنْ صَابُونِ الصُّحُونِ عَلَى الإِسْفَنْجَةِ الرَّطْبَةِ لِتَكْوِينِ رَغْوَةٍ وَفِيرَةٍ.",
-  },
   spoon: {
     id: "spoon",
     arabic: "مِلْعَقَة",
@@ -10705,56 +10609,6 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       "Workers loaded crates of sweet crisp apples onto the tractor trailer in the orchard.",
     exampleArabic:
       "حَمَّلَ العُمَّالُ صَنَادِيقَ التُّفَّاحِ الطَّازَجِ عَلَى مَقْطُورَةِ الجَرَّارِ فِي البُسْتَانِ.",
-  },
-  "trash-can": {
-    id: "trash-can",
-    arabic: "سَلَّةُ القُمَامَة (صَفِيحَةُ الزَّبَالَة)",
-    partOfSpeech: "noun",
-    phonetic: "ˈtræʃ ˌkæn",
-    pronunciationTip: "Both words have short 'a' sound: 'TRASH' (/træʃ/) + 'CAN' (/kæn/).",
-    collocations: [
-      "kitchen trash can",
-      "empty the trash can",
-      "trash can liner",
-      "foot-pedal trash can",
-      "throw in the trash can",
-      "stainless trash can",
-    ],
-    phrasalVerbs: [
-      {
-        phrase: "throw away",
-        meaning: "dispose of rubbish into bin",
-        arabic: "يَتَخَلَّصُ فِي القُمَامَة",
-        example: "Throw away the vegetable scraps into the compost or trash can.",
-      },
-      {
-        phrase: "take out",
-        meaning: "remove trash bag to outdoor dumpster",
-        arabic: "يُخْرِجُ كِيسَ القُمَامَة",
-        example: "Remember to take out the full trash can bag tonight.",
-      },
-    ],
-    sentences: [
-      {
-        context: "Kitchen Hygiene",
-        en: "A foot-pedal stainless steel trash can allows hands-free waste disposal while cooking.",
-        ar: "تُتِيحُ سَلَّةُ القُمَامَةِ المَعْدَنِيَّةُ ذَاتُ دَوَّاسَةِ القَدَمِ التَّخَلُّصَ مِنَ الفَضَلاتِ دُونَ لَمْسِهَا.",
-      },
-      {
-        context: "Daily Routine",
-        en: "He tied up the full garbage liner and replaced it with a fresh bag.",
-        ar: "رَبَطَ كِيسَ القُمَامَةِ المُمْتَلِئَ وَاسْتَبْدَلَهُ بِكِيسٍ جَدِيدٍ نَظِيفٍ.",
-      },
-      {
-        context: "Recycling",
-        en: "Keep a separate recycling bin right beside the main kitchen trash can.",
-        ar: "احْتَفِظْ بِسَلَّةِ إِعَادَةِ التَّدْوِيرِ بِجِوَارِ سَلَّةِ قُمَامَةِ المَطْبَخِ الرَّئِيسِيَّةِ مُبَاشَرَةً.",
-      },
-    ],
-    exampleSentence:
-      "A foot-pedal stainless steel trash can allows hands-free waste disposal while cooking.",
-    exampleArabic:
-      "تُتِيحُ سَلَّةُ القُمَامَةِ المَعْدَنِيَّةُ ذَاتُ دَوَّاسَةِ القَدَمِ التَّخَلُّصَ مِنَ الفَضَلاتِ دُونَ لَمْسِهَا.",
   },
   turkey: {
     id: "turkey",

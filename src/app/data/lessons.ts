@@ -29,6 +29,8 @@ export interface TopicCategory {
   id: string;
   name: string;
   itemsCount: number;
+  description?: string;
+  icon?: string;
 }
 
 export interface Lesson {
@@ -106,6 +108,8 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "headboard",
     ],
     description: "Learn about bedding & linen.",
+    story:
+      "Maya covered the mattress and bed-frame with a soft sheet. She placed the headboard against the wall and slipped the pillow into a new pillowcase. For extra warmth, she added a blanket, a thick duvet, and a cozy comforter. Finally, she tossed a decorative cushion on top.",
   },
   {
     id: "features",
@@ -144,6 +148,8 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "hanger",
     ],
     description: "Learn about bedroom objects.",
+    story:
+      "Maya woke up when her alarm-clock rang. She looked at the time on the wall clock and checked her schedule on the calendar. She admired the picture-frame next to a green plant and a vase. After using a tissue from the tissue-box, she threw it in the wastebasket. Finally, she lit a candle and put her shirt on a hanger.",
   },
   {
     id: "personal",
@@ -180,6 +186,8 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "remote-control",
     ],
     description: "Learn about electronics.",
+    story:
+      "Before sleeping, he plugged his phone into the charger and closed his laptop. He put his headphones and tablet away, then turned off the Bluetooth speaker. He used the reading-light to read a book and the remote-control to turn off the TV.",
   },
 ];
 
@@ -711,6 +719,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "pressure-cooker",
     ],
     description: "Learn about cookware.",
+    story:
+      "She boiled pasta in a large pot and made sauce in a saucepan. For breakfast, she used a frying-pan, which is a type of pan, to cook eggs, and a wok for stir-fry at night. She baked cookies on a baking-tray, roasted a chicken in a baking-dish, and made stew in a casserole-dish. To save time, she cooked beans in a pressure-cooker and steamed vegetables in a steamer.",
   },
   {
     id: "utensils-tools",
@@ -753,6 +763,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "pitcher",
     ],
     description: "Learn about dishes containers.",
+    story:
+      "She placed the plate and bowl on the table next to a mug, glass, and cup with a saucer. While cooking, she chopped vegetables on the cutting-board and drained pasta in a colander. She used a measuring-cup and measuring-spoon to add ingredients into the mixing-bowl, then poured water from a pitcher.",
   },
   {
     id: "kitchen-items",
@@ -797,6 +809,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "honey",
     ],
     description: "Learn about basic pantry.",
+    story:
+      "She made breakfast with bread, butter, milk, an egg, and cheese. For lunch, she boiled rice and pasta using a little cooking-oil, salt, and pepper. Then she baked a cake using sugar, flour, and a dash of honey, and made a salad dressing with vinegar.",
   },
 ];
 
@@ -1435,6 +1449,8 @@ export const LIVING_ROOM_GROUPS: Lesson[] = [
       "shoe-rack",
     ],
     description: "Learn about storage & display.",
+    story:
+      "She put her jacket on the coat-rack and boots on the shoe-rack. She read a book from the bookshelf and grabbed a magazine from the magazine-rack. Her television sat on a tv-stand with a drawer, and the dishes were stored in a cabinet and sideboard. A wall shelf held small items, and her trophies were in a display-case.",
   },
   {
     id: "electronics-media",
@@ -1473,6 +1489,8 @@ export const LIVING_ROOM_GROUPS: Lesson[] = [
       "wall-clock",
     ],
     description: "Learn about lighting & decor.",
+    story:
+      "She changed the light-bulb in the ceiling-light and turned on the floor-lamp and table-lamp. Above the dining area hung a bright chandelier, while string-lights decorated the window. She placed a candle in a candle-holder, glanced at the time on the wall-clock, and admired the picture-frame.",
   },
   {
     id: "soft-furnishings",
@@ -1510,6 +1528,8 @@ export const LIVING_ROOM_GROUPS: Lesson[] = [
       "puzzle",
     ],
     description: "Learn about living room objects.",
+    story:
+      "She watered the plant next to a vase and a photo-frame. Above it hung a beautiful painting. On the table, she left a book, a magazine, and today's newspaper. Later, the family gathered to play a board-game and finish a jigsaw puzzle.",
   },
 ];
 
@@ -2475,6 +2495,8 @@ export const FARM_GROUPS: Lesson[] = [
       "fence",
     ],
     description: "Learn about farm buildings.",
+    story:
+      "Behind the farmhouse, a white wooden fence surrounded the stable and the big red barn. Next to the tall silo, wind turned the blades of the windmill to pump water from the well. The farmer grew vegetables in the greenhouse, collected eggs from the hen-house, and stored tools in the shed.",
   },
   {
     id: "farm-farm-equipment",
@@ -2502,6 +2524,8 @@ export const FARM_GROUPS: Lesson[] = [
     topicId: "farm-farm-products",
     wordIds: ["milk", "egg", "wool", "cheese", "butter", "honey", "hay", "straw", "flour", "jam"],
     description: "Learn about farm products.",
+    story:
+      "The farmer collected an egg, milk for making cheese and butter, and sweet honey. He gathered wool from the sheep and fed them hay and straw. In the kitchen, he baked bread with flour and spread it with homemade jam.",
   },
   {
     id: "farm-farm-life",
@@ -2554,6 +2578,8 @@ export const GARDEN_GROUPS: Lesson[] = [
       "lavender",
     ],
     description: "Learn about flowers.",
+    story:
+      "She picked a red rose, a yellow tulip, and a tall sunflower. Next, she found a white daisy, an elegant lily, and a bright daffodil. She arranged a purple violet with a rare orchid, and added a pink carnation and fragrant lavender to complete her beautiful bouquet.",
   },
   {
     id: "trees-shrubs",
@@ -2594,6 +2620,8 @@ export const GARDEN_GROUPS: Lesson[] = [
       "sprinkler",
     ],
     description: "Learn about garden tools.",
+    story:
+      "Wearing her garden-gloves, she used a shovel and spade to dig the soil, and moved dirt with a wheelbarrow. She turned the compost with a pitchfork and gathered leaves using a rake. After planting flowers with a trowel and cutting branches with a pruner, she used a watering-can and a hose. Finally, she cut the grass with a lawn-mower and turned on the sprinkler.",
   },
   {
     id: "parts-of-a-plant",
@@ -2621,6 +2649,8 @@ export const GARDEN_GROUPS: Lesson[] = [
       "grasshopper",
     ],
     description: "Learn about garden creatures.",
+    story:
+      "A colorful butterfly fluttered past a red ladybug, while a busy bee gathered pollen. A worm dug through the soil near a slow snail and a tiny ant. On a leaf, a hungry caterpillar munched quietly as a spider spun its web. Over the pond, a fast dragonfly zipped by a jumping grasshopper.",
   },
   {
     id: "garden-features",
@@ -3158,7 +3188,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
 // THE BATHROOM
 // ==========================================
 
-export const BATHROOM_TOPICS: LessonTopic[] = [
+export const BATHROOM_TOPICS: TopicCategory[] = [
   {
     id: "plumbing-fixtures",
     name: "Plumbing Fixtures",
@@ -3197,7 +3227,7 @@ export const BATHROOM_GROUPS: Lesson[] = [
     description: "Learn the core built-in fixtures of a bathroom.",
     wordIds: ["toilet", "sink", "bathtub", "shower", "faucet", "drain", "bidet", "showerhead"],
     story:
-      "John steps out of the shower-curtain onto the bath-mat. He dries his body with a large bath-towel and his face with a hand-towel and washcloth. Finally, he wraps himself in a cozy bathrobe.",
+      "She turned on the faucet to fill the bathtub, but the water went down the drain. Later, she used the toilet and bidet before washing her hands in the sink. Finally, she adjusted the showerhead to take a quick shower.",
   },
   {
     id: "daily-toiletries",

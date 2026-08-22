@@ -85,9 +85,6 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
   const synthRef = useRef<SpeechSynthesis | null>(
     typeof window !== "undefined" && window.speechSynthesis ? window.speechSynthesis : null
   );
-  const stallTimerRef = useRef<number | null>(null);
-  const currentAudioRef = useRef<HTMLAudioElement | null>(null);
-
   useEffect(() => {
     const synth = synthRef.current;
     if (!synth) return undefined;
@@ -99,19 +96,30 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
     return () => synth.removeEventListener("voiceschanged", onVoicesChanged);
   }, []);
 
+  const stallTimerRef = useRef<number | null>(null);
+  const currentAudioRef = useRef<HTMLAudioElement | null>(null);
+  const isMountedRef = useRef(true);
+
+  useEffect(() => {
+    return () => {
+      isMountedRef.current = false;
+    };
+  }, []);
+
   const speak = useCallback(
     (text: string, overrideLang?: string) => {
-      const cleanText = text.replace(/[-_]/g, " ").trim();
       const targetLang = overrideLang ?? lang;
+      const cleanText = text.replace(/[-_]/g, " ").trim();
 
       const clearStall = () => {
         if (stallTimerRef.current !== null) {
-          clearTimeout(stallTimerRef.current);
+          window.clearTimeout(stallTimerRef.current);
           stallTimerRef.current = null;
         }
       };
 
       const fallbackToSynthesis = (fallbackText: string, fallbackLang: string) => {
+        if (!isMountedRef.current) return;
         const synth = synthRef.current;
         if (!synth) {
           setStatus("unsupported");
@@ -131,14 +139,17 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
         if (voice) utterance.voice = voice;
 
         utterance.onstart = () => {
+          if (!isMountedRef.current) return;
           clearStall();
           setStatus("playing");
         };
         utterance.onend = () => {
+          if (!isMountedRef.current) return;
           clearStall();
           setStatus("idle");
         };
         utterance.onerror = (e) => {
+          if (!isMountedRef.current) return;
           clearStall();
           if (e.error !== "interrupted" && e.error !== "canceled") {
             setStatus("error");
