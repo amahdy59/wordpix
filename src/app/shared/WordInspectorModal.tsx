@@ -82,11 +82,11 @@ export const WordInspectorModal = memo(function WordInspectorModal({
                 </span>
                 <h2
                   id="word-inspector-title"
-                  className="font-sans font-black text-white text-xl sm:text-2xl lg:text-3xl leading-tight capitalize drop-shadow truncate"
+                  className="font-sans font-black text-white text-xl sm:text-2xl lg:text-3xl leading-tight capitalize drop-shadow break-words"
                 >
                   {word.label.toLowerCase()}
                 </h2>
-                <p className="font-sans text-white/90 text-xs sm:text-sm drop-shadow font-mono truncate">
+                <p className="font-sans text-white/90 text-xs sm:text-sm drop-shadow font-mono break-words">
                   {entry.phonetic || word.phonetic}
                 </p>
               </div>
@@ -105,7 +105,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
           </div>
 
           {/* Scrollable Content Body */}
-          <div className="p-4 sm:p-6 overflow-y-auto flex flex-col gap-4">
+          <div className="flex-1 min-h-0 p-4 sm:p-6 overflow-y-auto flex flex-col gap-4">
             {/* Arabic Translation Card */}
             <div className="bg-primary/5 border border-primary/20 rounded-2xl p-4 flex items-center justify-between gap-3">
               <div>

@@ -1,10 +1,9 @@
-import React, { memo, useRef, useEffect, useMemo, useState } from "react";
+import React, { memo, useRef, useEffect, useMemo, useState, useCallback } from "react";
 import type { Action } from "../types";
 import type { VocabularyItem } from "../data/lessons";
 import { resolveGroup } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { useAudio } from "../shared/useAudio";
-import { RICH_CONTEXT_SENTENCES } from "./exerciseContent";
 import {
   BookOpen,
   ArrowRight,
@@ -22,9 +21,10 @@ import {
   RotateCcw,
   Languages,
   Award,
+  ChevronRight,
+  Check,
 } from "lucide-react";
 import { WordInspectorModal } from "../shared/WordInspectorModal";
-import { getLexiconEntry } from "../data/lexiconDictionary";
 import { getOrGenerateStoryBundle } from "../data/storyTalesDictionary";
 
 interface Props {
@@ -49,6 +49,7 @@ export const ExerciseStory = memo(function ExerciseStory({
   const [inspectedWord, setInspectedWord] = useState<VocabularyItem | null>(null);
   const [expandedTranslations, setExpandedTranslations] = useState<Record<number, boolean>>({});
   const [quizAnswers, setQuizAnswers] = useState<Record<string, number>>({});
+  const [activeQuizIndex, setActiveQuizIndex] = useState(0);
 
   const { speak, stop, isPlaying } = useAudio();
   const nextBtnRef = useRef<HTMLButtonElement>(null);
@@ -174,12 +175,34 @@ export const ExerciseStory = memo(function ExerciseStory({
     }));
   };
 
-  const handleSelectQuizAnswer = (questionId: string, optionIdx: number) => {
+  const handleSelectQuizAnswer = useCallback((questionId: string, optionIdx: number) => {
     setQuizAnswers((prev) => ({
       ...prev,
       [questionId]: optionIdx,
     }));
-  };
+  }, []);
+
+  // Keyboard number hotkeys (1, 2, 3, 4) for active quiz question
+  useEffect(() => {
+    if (activeSection !== "story-quiz") return;
+    const activeQ = storyBundle.quiz[activeQuizIndex];
+    if (!activeQ) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Ignore when typing inside inputs
+      const target = e.target as HTMLElement | null;
+      if (target?.tagName === "INPUT" || target?.tagName === "TEXTAREA") return;
+
+      const num = parseInt(e.key, 10);
+      if (num >= 1 && num <= activeQ.options.length) {
+        e.preventDefault();
+        handleSelectQuizAnswer(activeQ.id, num - 1);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [activeSection, activeQuizIndex, storyBundle.quiz, handleSelectQuizAnswer]);
 
   const score = useMemo(() => {
     return storyBundle.quiz.reduce((acc, q) => {
@@ -188,6 +211,7 @@ export const ExerciseStory = memo(function ExerciseStory({
   }, [storyBundle.quiz, quizAnswers]);
 
   const answeredCount = Object.keys(quizAnswers).length;
+  const isQuizComplete = answeredCount === storyBundle.quiz.length;
 
   const footerContent = (
     <div className="w-full">
@@ -260,10 +284,13 @@ export const ExerciseStory = memo(function ExerciseStory({
           <button
             ref={nextBtnRef}
             type="button"
-            onClick={() => setActiveSection("story-quiz")}
+            onClick={() => {
+              setActiveSection("story-quiz");
+              setActiveQuizIndex(0);
+            }}
             className="flex-1 flex items-center justify-center gap-2 min-h-[56px] rounded-2xl bg-primary text-primary-foreground font-sans font-bold text-base shadow-wp-xs hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
-            <span>Next: Take Story Comprehension Quiz</span>
+            <span>Next: Take Story &amp; Vocabulary Quiz</span>
             <ArrowRight className="size-5" aria-hidden />
           </button>
         </div>
@@ -293,6 +320,25 @@ export const ExerciseStory = memo(function ExerciseStory({
     </div>
   );
 
+  const storyProgress = useMemo(() => {
+    switch (activeSection) {
+      case "passage":
+        return { current: 1, total: 5 };
+      case "visual-flow":
+        return { current: 2, total: 5 };
+      case "dialogue":
+        return { current: 3, total: 5 };
+      case "story-tales":
+        return { current: 4, total: 5 };
+      case "story-quiz": {
+        const quizFrac = answeredCount / Math.max(1, storyBundle.quiz.length);
+        return { current: Math.min(5, Math.round((4 + quizFrac) * 10) / 10), total: 5 };
+      }
+      default:
+        return { current: 1, total: 5 };
+    }
+  }, [activeSection, answeredCount, storyBundle.quiz.length]);
+
   return (
     <ExerciseShell
       step={step}
@@ -300,6 +346,7 @@ export const ExerciseStory = memo(function ExerciseStory({
       words={words}
       lessonId={lessonId}
       dispatch={dispatch}
+      progress={storyProgress}
       subtitle={
         <>
           <span className="uppercase tracking-wider">{group.name}</span>
@@ -311,7 +358,7 @@ export const ExerciseStory = memo(function ExerciseStory({
       }
       footer={footerContent}
     >
-      <div ref={scrollContainerRef} className="w-full max-w-2xl mx-auto flex flex-col gap-4">
+      <div ref={scrollContainerRef} className="w-full max-w-2xl mx-auto flex flex-col gap-4 pb-6">
         {/* Top 5-Section Sequential Stepper Navigation */}
         <nav
           aria-label="Story and context sections"
@@ -448,157 +495,74 @@ export const ExerciseStory = memo(function ExerciseStory({
                 </div>
               </div>
 
-              <div className="p-5 sm:p-7">
+              <div className="p-5 sm:p-6 flex flex-col gap-3">
                 <p className="font-sans text-foreground text-base sm:text-lg leading-relaxed">
                   {renderHighlightedText(storyText)}
                 </p>
+                <div className="flex items-center gap-2 text-xs font-sans font-medium text-muted-foreground pt-2 border-t border-border/60">
+                  <Info className="size-3.5 text-primary shrink-0" />
+                  <span>Tap any highlighted word to hear its accurate native pronunciation.</span>
+                </div>
               </div>
             </article>
-
-            {/* Interactive Vocabulary Pronunciation Grid */}
-            <div className="bg-secondary/60 border border-border rounded-2xl p-4">
-              <div className="flex items-center justify-between mb-3">
-                <p className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
-                  <Volume2 className="size-3.5 text-primary" />
-                  <span>Tap any word to hear pronunciation</span>
-                </p>
-                <span className="text-[11px] font-sans font-semibold text-muted-foreground">
-                  {words.length} words
-                </span>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {words.map((w) => (
-                  <button
-                    key={w.id}
-                    type="button"
-                    onClick={() => handlePlayWord(w.label, w.id)}
-                    aria-label={"Listen to " + w.label}
-                    className={
-                      "flex items-center gap-1.5 font-sans font-semibold text-xs sm:text-sm px-3 py-1.5 min-h-[36px] rounded-full border transition-all cursor-pointer " +
-                      (activeWordId === w.id
-                        ? "bg-primary text-primary-foreground border-primary scale-105 shadow-sm"
-                        : "bg-wp-card text-foreground hover:border-primary/50 border-border hover:bg-primary/5")
-                    }
-                  >
-                    <span className="capitalize">{w.label.toLowerCase()}</span>
-                    <Volume2 className="size-3.5 text-muted-foreground" aria-hidden />
-                  </button>
-                ))}
-              </div>
-            </div>
           </div>
         )}
 
-        {/* ── SECTION 2: VISUAL FLOW CARDS ────────────────────────────────── */}
+        {/* ── SECTION 2: VISUAL VOCABULARY FLOW ───────────────────────────── */}
         {activeSection === "visual-flow" && (
           <div className="flex flex-col gap-4">
-            <div className="flex items-center justify-between px-1">
-              <h3 className="font-sans font-bold text-foreground text-sm flex items-center gap-1.5">
+            <div className="bg-wp-card border border-border rounded-3xl p-5 sm:p-6 shadow-wp-xs flex flex-col gap-3">
+              <div className="flex items-center gap-2">
                 <Layers className="size-4 text-primary" />
-                <span>Visual Real-World Contexts &amp; Collocations</span>
-              </h3>
-              <span className="text-xs text-muted-foreground font-sans">{words.length} items</span>
+                <h3 className="font-sans font-bold text-foreground text-sm">
+                  Interactive Word Explorer ({words.length} items)
+                </h3>
+              </div>
+              <p className="font-sans text-xs text-muted-foreground">
+                Tap any card to view authentic Oxford/Cambridge dictionary insights, collocations,
+                and real-world context sentences.
+              </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-              {words.map((word) => {
-                const rich = RICH_CONTEXT_SENTENCES[word.id];
-                const entry = getLexiconEntry(word.id, word.label);
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+              {words.map((item) => {
+                const isActive = activeWordId === item.id;
                 return (
                   <div
-                    key={word.id}
-                    className="bg-wp-card border border-border rounded-2xl p-4 shadow-wp-xs flex flex-col gap-3 hover:border-primary/40 transition-colors"
+                    key={item.id}
+                    className={
+                      "bg-wp-card border rounded-2xl p-3 flex flex-col items-center gap-2.5 shadow-wp-xs transition-all text-center hover:border-primary/50 cursor-pointer " +
+                      (isActive
+                        ? "border-primary ring-2 ring-primary/20 bg-secondary"
+                        : "border-border")
+                    }
+                    onClick={() => setInspectedWord(item)}
                   >
-                    <div className="flex items-center gap-3">
+                    <div className="size-20 sm:size-24 rounded-xl overflow-hidden bg-muted shrink-0 border border-border relative">
+                      <img src={item.img} alt={item.label} className="size-full object-cover" />
                       <button
                         type="button"
-                        onClick={() => setInspectedWord(word)}
-                        aria-label={"Inspect " + word.label}
-                        className="size-16 rounded-xl overflow-hidden shrink-0 border border-border bg-muted relative group cursor-pointer"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handlePlayWord(item.label, item.id);
+                        }}
+                        aria-label={"Listen to " + item.label}
+                        className="absolute bottom-1.5 end-1.5 size-7 rounded-full bg-black/70 hover:bg-black/90 text-white flex items-center justify-center shadow-md cursor-pointer transition-transform active:scale-90"
                       >
-                        <img
-                          src={word.img}
-                          alt=""
-                          className="size-full object-cover group-hover:scale-105 transition-transform"
-                        />
-                        <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-                          <Info className="size-4 text-white drop-shadow" />
-                        </div>
+                        <Volume2 className="size-3.5" />
                       </button>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2">
-                          <h4 className="font-sans font-bold text-foreground text-base capitalize truncate">
-                            {word.label.toLowerCase()}
-                          </h4>
-                          <span
-                            className="text-[11px] font-arabic font-bold text-primary"
-                            dir="rtl"
-                          >
-                            {entry.arabic}
-                          </span>
-                        </div>
-                        <p className="font-sans text-xs text-muted-foreground">{word.phonetic}</p>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <button
-                          type="button"
-                          onClick={() => handlePlayWord(word.label, word.id)}
-                          aria-label={"Pronounce " + word.label}
-                          className="size-9 rounded-xl bg-secondary text-primary border border-primary/20 hover:bg-primary/10 flex items-center justify-center shrink-0 transition-colors cursor-pointer"
-                        >
-                          <Volume2 className="size-4" />
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => setInspectedWord(word)}
-                          aria-label={"Open details for " + word.label}
-                          className="size-9 rounded-xl bg-wp-card text-muted-foreground border border-border hover:text-foreground flex items-center justify-center shrink-0 transition-colors cursor-pointer"
-                        >
-                          <Info className="size-4" />
-                        </button>
-                      </div>
                     </div>
 
-                    {/* Collocations badges */}
-                    {entry.collocations.length > 0 && (
-                      <div className="flex flex-wrap gap-1.5 pt-0.5">
-                        {entry.collocations.slice(0, 3).map((col, cIdx) => (
-                          <button
-                            key={cIdx}
-                            type="button"
-                            onClick={() => speak(col)}
-                            aria-label={"Listen to phrase: " + col}
-                            className="text-[11px] font-sans font-medium bg-secondary text-foreground px-2 py-0.5 rounded-lg border border-border hover:border-primary/40 flex items-center gap-1 cursor-pointer"
-                          >
-                            <span>{col}</span>
-                            <Volume2 className="size-2.5 text-muted-foreground" />
-                          </button>
-                        ))}
-                      </div>
-                    )}
-
-                    {(rich?.full || entry.exampleSentence) && (
-                      <div className="flex flex-col gap-1 bg-muted/40 p-2.5 rounded-xl border border-border/50">
-                        <div className="flex items-center justify-between gap-2">
-                          <p className="font-sans text-xs text-foreground/90 leading-relaxed">
-                            &ldquo;{rich?.full || entry.exampleSentence}&rdquo;
-                          </p>
-                          <button
-                            type="button"
-                            onClick={() => speak(rich?.full || entry.exampleSentence)}
-                            aria-label="Listen to sentence"
-                            className="size-7 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 flex items-center justify-center shrink-0 transition-colors cursor-pointer"
-                          >
-                            <Volume2 className="size-3" />
-                          </button>
-                        </div>
-                        {(entry.exampleArabic || entry.sentences[0]?.ar) && (
-                          <p className="font-arabic text-[11px] text-muted-foreground" dir="rtl">
-                            {entry.exampleArabic || entry.sentences[0]?.ar}
-                          </p>
-                        )}
-                      </div>
-                    )}
+                    <div className="flex flex-col items-center gap-0.5">
+                      <span className="font-sans font-bold text-foreground text-sm leading-tight">
+                        {item.label}
+                      </span>
+                      {item.phonetic && (
+                        <span className="font-mono text-[11px] text-muted-foreground">
+                          /{item.phonetic}/
+                        </span>
+                      )}
+                    </div>
                   </div>
                 );
               })}
@@ -610,7 +574,7 @@ export const ExerciseStory = memo(function ExerciseStory({
         {activeSection === "dialogue" && (
           <div className="flex flex-col gap-4">
             <div className="bg-wp-card border border-border rounded-3xl p-5 sm:p-6 shadow-wp-xs flex flex-col gap-4">
-              <div className="flex items-center justify-between border-b border-border/60 pb-3">
+              <div className="flex items-center justify-between border-b border-border/60 pb-3 flex-wrap gap-2">
                 <div className="flex items-center gap-2">
                   <MessageSquare className="size-4 text-primary" />
                   <h3 className="font-sans font-bold text-foreground text-sm">
@@ -625,7 +589,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                       .join(". ");
                     speak(fullDialogue);
                   }}
-                  className="flex items-center gap-1.5 text-xs font-sans font-bold text-primary bg-secondary px-3 py-1.5 rounded-xl border border-primary/20 hover:bg-primary/10 cursor-pointer"
+                  className="flex items-center gap-1.5 text-xs font-sans font-bold text-primary bg-secondary px-3 py-1.5 rounded-xl border border-primary/20 hover:bg-primary/10 cursor-pointer min-h-[36px]"
                 >
                   <Play className="size-3.5" />
                   <span>Play Dialogue</span>
@@ -812,174 +776,246 @@ export const ExerciseStory = memo(function ExerciseStory({
           </div>
         )}
 
-        {/* ── SECTION 5: STORY COMPREHENSION MCQ QUIZ ─────────────────────── */}
+        {/* ── SECTION 5: STORY & VOCABULARY MCQ QUIZ (INTERACTIVE CARD STEPPER) ─ */}
         {activeSection === "story-quiz" && (
           <div className="flex flex-col gap-4">
-            {/* Quiz Banner */}
+            {/* Quiz Banner & Overall Progress */}
             <div className="bg-wp-card border border-border rounded-3xl p-5 sm:p-6 shadow-wp-xs flex flex-col gap-3">
               <div className="flex items-center justify-between flex-wrap gap-2">
-                <div className="flex items-center gap-2">
-                  <span className="size-9 rounded-2xl bg-primary/10 text-primary flex items-center justify-center">
+                <div className="flex items-center gap-2.5">
+                  <span className="size-10 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
                     <HelpCircle className="size-5" />
                   </span>
                   <div>
                     <h3 className="font-sans font-black text-foreground text-base sm:text-lg">
-                      Story Comprehension &amp; Retention Quiz
+                      Vocabulary &amp; Story Comprehension Quiz
                     </h3>
                     <p className="font-sans text-xs text-muted-foreground">
-                      Test your understanding of the story and vocabulary in context.
+                      2 Vocabulary Mastery Questions + 1 Story Plot Question
                     </p>
                   </div>
                 </div>
 
-                {answeredCount > 0 && (
-                  <div className="flex items-center gap-2 bg-secondary px-3 py-1.5 rounded-xl border border-border">
-                    <Award className="size-4 text-wp-amber" />
-                    <span className="font-sans font-bold text-xs text-foreground">
-                      Score: {score} / {storyBundle.quiz.length}
-                    </span>
-                  </div>
-                )}
+                <div className="flex items-center gap-2 bg-secondary px-3.5 py-1.5 rounded-xl border border-border">
+                  <Award className="size-4 text-wp-amber" />
+                  <span className="font-sans font-bold text-xs text-foreground">
+                    Score: {score} / {storyBundle.quiz.length}
+                  </span>
+                </div>
+              </div>
+
+              {/* Question Navigation Dots / Indicator */}
+              <div className="flex items-center gap-2 pt-2 border-t border-border/60">
+                {storyBundle.quiz.map((q, qIndex) => {
+                  const isAnswered = quizAnswers[q.id] !== undefined;
+                  const isCurrent = activeQuizIndex === qIndex;
+                  const isCorrect = isAnswered && quizAnswers[q.id] === q.correctIndex;
+
+                  return (
+                    <button
+                      key={q.id}
+                      type="button"
+                      onClick={() => setActiveQuizIndex(qIndex)}
+                      aria-label={`Jump to Question ${qIndex + 1}`}
+                      className={`flex-1 py-1.5 px-2 rounded-xl text-xs font-sans font-bold flex items-center justify-center gap-1.5 border transition-all cursor-pointer min-h-[36px] ${
+                        isCurrent
+                          ? "border-primary bg-primary text-primary-foreground shadow-sm"
+                          : isAnswered
+                            ? isCorrect
+                              ? "border-wp-emerald/40 bg-wp-emerald/10 text-wp-emerald"
+                              : "border-wp-rose/40 bg-wp-rose/10 text-wp-rose"
+                            : "border-border bg-secondary text-muted-foreground hover:text-foreground"
+                      }`}
+                    >
+                      <span>Q{qIndex + 1}</span>
+                      {isAnswered && (
+                        <Check className="size-3 stroke-[3]" aria-hidden />
+                      )}
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
-            {/* Questions List */}
-            <div className="flex flex-col gap-4">
-              {storyBundle.quiz.map((q, qIdx) => {
-                const selected = quizAnswers[q.id];
-                const isAnswered = selected !== undefined;
-                const isCorrect = isAnswered && selected === q.correctIndex;
+            {/* Active Question Interactive Card */}
+            {(() => {
+              const currentQ = storyBundle.quiz[activeQuizIndex] || storyBundle.quiz[0];
+              const selected = quizAnswers[currentQ.id];
+              const isAnswered = selected !== undefined;
+              const isCorrect = isAnswered && selected === currentQ.correctIndex;
+              const isVocabQuestion = activeQuizIndex < 2;
 
-                return (
-                  <div
-                    key={q.id}
-                    className="bg-wp-card border border-border rounded-3xl p-5 sm:p-6 shadow-wp-xs flex flex-col gap-3.5"
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs font-sans font-bold text-primary bg-primary/10 px-2.5 py-0.5 rounded-full">
-                        Question {qIdx + 1} of {storyBundle.quiz.length}
-                      </span>
-                      {isAnswered && (
-                        <span
-                          className={
-                            "text-xs font-sans font-bold flex items-center gap-1 " +
-                            (isCorrect ? "text-wp-emerald" : "text-wp-rose")
-                          }
+              return (
+                <div className="bg-wp-card border border-border rounded-3xl p-5 sm:p-6 shadow-wp-xs flex flex-col gap-4">
+                  {/* Question Header */}
+                  <div className="flex items-center justify-between flex-wrap gap-2">
+                    <span className="text-xs font-sans font-bold text-primary bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
+                      Question {activeQuizIndex + 1} of {storyBundle.quiz.length}
+                    </span>
+
+                    <span className="text-xs font-sans font-bold text-muted-foreground bg-secondary px-2.5 py-1 rounded-full border border-border flex items-center gap-1">
+                      {isVocabQuestion ? (
+                        <>
+                          <Sparkles className="size-3 text-wp-amber" />
+                          <span>Vocabulary Focus</span>
+                        </>
+                      ) : (
+                        <>
+                          <BookOpen className="size-3 text-primary" />
+                          <span>Story Comprehension</span>
+                        </>
+                      )}
+                    </span>
+                  </div>
+
+                  <h4 className="font-sans font-bold text-foreground text-base sm:text-lg leading-snug">
+                    {currentQ.question}
+                  </h4>
+
+                  {/* 4 Multiple Choice Option Buttons */}
+                  <div className="grid grid-cols-1 gap-2.5 pt-1">
+                    {currentQ.options.map((opt, optIdx) => {
+                      let btnStyle =
+                        "bg-secondary/70 border-border text-foreground hover:bg-secondary hover:border-primary/50";
+                      if (isAnswered) {
+                        if (optIdx === currentQ.correctIndex) {
+                          btnStyle =
+                            "bg-wp-emerald/15 border-wp-emerald text-wp-emerald font-bold shadow-sm ring-1 ring-wp-emerald/30";
+                        } else if (optIdx === selected) {
+                          btnStyle =
+                            "bg-wp-rose/15 border-wp-rose text-wp-rose font-bold ring-1 ring-wp-rose/30";
+                        } else {
+                          btnStyle =
+                            "bg-secondary/30 border-border/40 text-muted-foreground opacity-50";
+                        }
+                      }
+
+                      return (
+                        <button
+                          key={optIdx}
+                          type="button"
+                          disabled={isAnswered}
+                          onClick={() => handleSelectQuizAnswer(currentQ.id, optIdx)}
+                          className={`w-full text-start p-4 min-h-[52px] rounded-2xl border text-sm font-sans flex items-center justify-between gap-3 transition-all cursor-pointer focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 outline-none ${btnStyle}`}
                         >
-                          {isCorrect ? (
-                            <>
-                              <CheckCircle2 className="size-3.5" />
-                              <span>Correct!</span>
-                            </>
-                          ) : (
-                            <>
-                              <XCircle className="size-3.5" />
-                              <span>Review Answer</span>
-                            </>
+                          <div className="flex items-center gap-3 flex-1 min-w-0">
+                            <span className="size-7 rounded-full bg-wp-card border border-border flex items-center justify-center font-mono text-xs font-bold shrink-0">
+                              {String.fromCharCode(65 + optIdx)}
+                            </span>
+                            <span className="leading-snug break-words">{opt}</span>
+                          </div>
+                          {isAnswered && optIdx === currentQ.correctIndex && (
+                            <CheckCircle2 className="size-5 text-wp-emerald shrink-0" />
                           )}
-                        </span>
+                          {isAnswered && optIdx === selected && optIdx !== currentQ.correctIndex && (
+                            <XCircle className="size-5 text-wp-rose shrink-0" />
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {/* Context Explanation Callout */}
+                  {isAnswered && (
+                    <div className="bg-secondary/60 border border-border rounded-2xl p-4 flex flex-col gap-1.5 animate-fadeIn">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-1.5 text-xs font-sans font-bold text-foreground">
+                          <Info className="size-4 text-primary" />
+                          <span>{isCorrect ? "Well done!" : "Context Explanation:"}</span>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => speak(currentQ.explanation)}
+                          aria-label="Listen to explanation"
+                          className="size-7 rounded-lg bg-wp-card border border-border flex items-center justify-center text-primary hover:bg-secondary cursor-pointer"
+                        >
+                          <Volume2 className="size-3.5" />
+                        </button>
+                      </div>
+                      <p className="font-sans text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                        {currentQ.explanation}
+                      </p>
+                      {currentQ.explanationArabic && (
+                        <p
+                          className="font-arabic text-xs sm:text-sm text-muted-foreground/90 mt-1 pt-1.5 border-t border-border/40 leading-relaxed"
+                          dir="rtl"
+                        >
+                          {currentQ.explanationArabic}
+                        </p>
                       )}
                     </div>
+                  )}
 
-                    <h4 className="font-sans font-bold text-foreground text-base leading-snug">
-                      {q.question}
-                    </h4>
+                  {/* Stepper Navigation Buttons for Questions */}
+                  <div className="flex items-center justify-between gap-3 pt-2 border-t border-border/60">
+                    <button
+                      type="button"
+                      disabled={activeQuizIndex === 0}
+                      onClick={() => setActiveQuizIndex((prev) => Math.max(0, prev - 1))}
+                      className="px-4 py-2 min-h-[44px] rounded-xl font-sans font-bold text-xs bg-secondary text-foreground border border-border hover:bg-secondary/80 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer flex items-center gap-1.5"
+                    >
+                      <ArrowLeft className="size-3.5" />
+                      <span>Previous Question</span>
+                    </button>
 
-                    {/* 4 Multiple Choice Options */}
-                    <div className="grid grid-cols-1 gap-2 pt-1">
-                      {q.options.map((opt, optIdx) => {
-                        let btnStyle =
-                          "bg-secondary/70 border-border text-foreground hover:bg-secondary hover:border-primary/40";
-                        if (isAnswered) {
-                          if (optIdx === q.correctIndex) {
-                            btnStyle =
-                              "bg-wp-emerald/15 border-wp-emerald text-wp-emerald font-bold shadow-sm";
-                          } else if (optIdx === selected) {
-                            btnStyle = "bg-wp-rose/15 border-wp-rose text-wp-rose font-bold";
-                          } else {
-                            btnStyle =
-                              "bg-secondary/40 border-border/40 text-muted-foreground opacity-60";
-                          }
+                    {activeQuizIndex < storyBundle.quiz.length - 1 ? (
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setActiveQuizIndex((prev) =>
+                            Math.min(storyBundle.quiz.length - 1, prev + 1)
+                          )
                         }
-
-                        return (
-                          <button
-                            key={optIdx}
-                            type="button"
-                            disabled={isAnswered}
-                            onClick={() => handleSelectQuizAnswer(q.id, optIdx)}
-                            className={
-                              "w-full text-start p-3.5 rounded-2xl border text-sm font-sans flex items-center justify-between gap-3 transition-all cursor-pointer " +
-                              btnStyle
-                            }
-                          >
-                            <div className="flex items-center gap-3">
-                              <span className="size-6 rounded-full bg-wp-card border border-border flex items-center justify-center font-mono text-xs font-bold shrink-0">
-                                {String.fromCharCode(65 + optIdx)}
-                              </span>
-                              <span>{opt}</span>
-                            </div>
-                            {isAnswered && optIdx === q.correctIndex && (
-                              <CheckCircle2 className="size-4 text-wp-emerald shrink-0" />
-                            )}
-                            {isAnswered && optIdx === selected && optIdx !== q.correctIndex && (
-                              <XCircle className="size-4 text-wp-rose shrink-0" />
-                            )}
-                          </button>
-                        );
-                      })}
-                    </div>
-
-                    {/* Context Explanation */}
-                    {isAnswered && (
-                      <div className="bg-secondary/50 border border-border rounded-2xl p-3.5 flex flex-col gap-1 mt-1 animate-fadeIn">
-                        <div className="flex items-center gap-1.5 text-xs font-sans font-bold text-foreground">
-                          <Info className="size-3.5 text-primary" />
-                          <span>Story Context:</span>
-                        </div>
-                        <p className="font-sans text-xs text-muted-foreground leading-relaxed">
-                          {q.explanation}
-                        </p>
-                        {q.explanationArabic && (
-                          <p
-                            className="font-arabic text-xs text-muted-foreground/90 mt-0.5"
-                            dir="rtl"
-                          >
-                            {q.explanationArabic}
-                          </p>
-                        )}
-                      </div>
+                        className="px-5 py-2 min-h-[44px] rounded-xl font-sans font-bold text-xs bg-primary text-primary-foreground hover:opacity-90 transition-opacity cursor-pointer flex items-center gap-1.5"
+                      >
+                        <span>Next Question</span>
+                        <ChevronRight className="size-4" />
+                      </button>
+                    ) : (
+                      isQuizComplete && (
+                        <span className="text-xs font-sans font-bold text-wp-emerald flex items-center gap-1">
+                          <CheckCircle2 className="size-4" />
+                          <span>All Questions Answered!</span>
+                        </span>
+                      )
                     )}
                   </div>
-                );
-              })}
-            </div>
-
-            {/* Quiz Retake & Completion Actions */}
-            {answeredCount === storyBundle.quiz.length && (
-              <div className="bg-wp-card border border-border rounded-3xl p-5 shadow-wp-xs flex items-center justify-between flex-wrap gap-3">
-                <div className="flex items-center gap-3">
-                  <div className="size-11 rounded-2xl bg-wp-emerald/15 text-wp-emerald flex items-center justify-center">
-                    <Award className="size-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-sans font-bold text-foreground text-sm sm:text-base">
-                      Story Comprehension Complete!
-                    </h4>
-                    <p className="font-sans text-xs text-muted-foreground">
-                      You scored {score} of {storyBundle.quiz.length} correct. Excellent retention!
-                    </p>
-                  </div>
                 </div>
+              );
+            })()}
 
-                <button
-                  type="button"
-                  onClick={() => setQuizAnswers({})}
-                  className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-secondary text-foreground border border-border font-sans font-semibold text-xs hover:bg-secondary/80 cursor-pointer"
-                >
-                  <RotateCcw className="size-3.5" />
-                  <span>Retake Quiz</span>
-                </button>
+            {/* Quiz Results Card */}
+            {isQuizComplete && (
+              <div className="bg-wp-card border border-border rounded-3xl p-5 sm:p-6 shadow-wp-xs flex flex-col gap-4">
+                <div className="flex items-center justify-between flex-wrap gap-3">
+                  <div className="flex items-center gap-3.5">
+                    <div className="size-12 rounded-2xl bg-wp-emerald/15 text-wp-emerald flex items-center justify-center">
+                      <Award className="size-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-sans font-black text-foreground text-base sm:text-lg">
+                        Story &amp; Vocabulary Quiz Complete!
+                      </h4>
+                      <p className="font-sans text-xs text-muted-foreground">
+                        You scored {score} of {storyBundle.quiz.length} correct (
+                        {Math.round((score / storyBundle.quiz.length) * 100)}%). Outstanding
+                        retention!
+                      </p>
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setQuizAnswers({});
+                      setActiveQuizIndex(0);
+                    }}
+                    className="flex items-center gap-1.5 px-4 py-2 min-h-[44px] rounded-xl bg-secondary text-foreground border border-border font-sans font-semibold text-xs hover:bg-secondary/80 cursor-pointer"
+                  >
+                    <RotateCcw className="size-3.5" />
+                    <span>Retake Quiz</span>
+                  </button>
+                </div>
               </div>
             )}
           </div>

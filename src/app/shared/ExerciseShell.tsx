@@ -20,6 +20,8 @@ interface Props {
   dispatch: React.Dispatch<Action>;
   children: React.ReactNode;
   footer: React.ReactNode;
+  /** Optional current / total progress inside the exercise to drive progress bar dynamically */
+  progress?: { current: number; total: number } | number;
 }
 
 const STEP_LABELS = [
@@ -43,6 +45,7 @@ export const ExerciseShell = memo(function ExerciseShell({
   dispatch,
   children,
   footer,
+  progress,
 }: Props) {
   const [showExitModal, setShowExitModal] = useState(false);
 
@@ -53,6 +56,20 @@ export const ExerciseShell = memo(function ExerciseShell({
     lessonId,
     words.map((w) => w.id)
   );
+
+  const currentProgress =
+    typeof progress === "number"
+      ? progress
+      : progress
+        ? progress.current
+        : step + 1;
+
+  const totalProgress =
+    typeof progress === "number"
+      ? 100
+      : progress
+        ? progress.total
+        : EXERCISE_STEP_COUNT;
 
   return (
     <div className="bg-background flex flex-col lg:flex-row min-h-svh lg:h-svh lg:min-h-0 lg:overflow-hidden relative">
@@ -70,20 +87,18 @@ export const ExerciseShell = memo(function ExerciseShell({
         <LessonHeader
           title={`${group.name}: ${title}`}
           subtitle={subtitle}
-          /* `step` is a 0-based index into the 6-step lesson flow (0 = scene),
-             so position in the flow is step + 1. */
-          current={step + 1}
-          total={EXERCISE_STEP_COUNT}
+          current={currentProgress}
+          total={totalProgress}
           onBack={() => dispatch({ type: "LESSON_PREVIOUS" })}
           onClose={() => setShowExitModal(true)}
         />
 
-        {/* Expansive Main Content Area with adaptive scroll for small viewports */}
+        {/* Expansive Main Content Area with adaptive scroll for all viewports */}
         <main
-          className="flex-1 overflow-y-auto overflow-x-hidden px-3 sm:px-6 lg:px-10 py-2 sm:py-3 flex flex-col items-center justify-center min-h-0 w-full"
+          className="flex-1 overflow-y-auto overflow-x-hidden px-3 sm:px-6 lg:px-10 py-3 sm:py-5 flex flex-col items-center min-h-0 w-full scroll-smooth"
           aria-label={`${title} exercise`}
         >
-          <div className="w-full max-w-4xl h-full mx-auto flex flex-col gap-2.5 sm:gap-3.5 justify-center my-auto">
+          <div className="w-full max-w-4xl min-h-full mx-auto flex flex-col gap-3 sm:gap-4 justify-start my-0 pb-32 sm:pb-40">
             {children}
           </div>
         </main>
