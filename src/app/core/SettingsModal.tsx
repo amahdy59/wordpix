@@ -389,6 +389,15 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     </button>
                     <button
                       type="button"
+                      onClick={() => speak("Vase.")}
+                      aria-label="Test pronunciation of Vase"
+                      className="px-2.5 py-1 min-h-[36px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
+                    >
+                      <Volume2 className="size-3" aria-hidden />
+                      <span>Test &ldquo;Vase&rdquo;</span>
+                    </button>
+                    <button
+                      type="button"
                       onClick={() => speak("Hello! Welcome to WordPix.")}
                       aria-label="Test sentence voice"
                       className="px-2.5 py-1 min-h-[36px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"

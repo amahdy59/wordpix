@@ -160,39 +160,31 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
         currentAudioRef.current = null;
       }
 
-      const apiKey =
-        import.meta.env?.VITE_ELEVENLABS_API_KEY ||
-        (typeof window !== "undefined" ? localStorage.getItem("wordpix_elevenlabs_key") : null);
-      if (apiKey) {
-        const voiceId =
-          import.meta.env?.VITE_ELEVENLABS_VOICE_ID ||
-          (typeof window !== "undefined"
-            ? localStorage.getItem("wordpix_elevenlabs_voice_id")
-            : null) ||
-          "Xb7hH8MSUJpSbSDYk0k2";
-        const cacheKey = `${voiceId}:${cleanText}`;
-
-        const playBlobUrl = (blobUrl: string) => {
-          const audio = new Audio(blobUrl);
-          audio.onplay = () => {
-            clearStall();
-            setStatus("playing");
-          };
-          audio.onended = () => {
-            clearStall();
-            setStatus("idle");
-          };
-          audio.onerror = () => {
-            clearStall();
-            setStatus("error");
-          };
-
-          currentAudioRef.current = audio;
-          audio.play().catch(() => {
-            clearStall();
-            setStatus("error");
-          });
+      const playBlobUrl = (blobUrl: string) => {
+        const audio = new Audio(blobUrl);
+        audio.playbackRate = effectiveRate;
+        audio.onplay = () => {
+          clearStall();
+          setStatus("playing");
         };
+        audio.onended = () => {
+          clearStall();
+          setStatus("idle");
+        };
+        audio.onerror = () => {
+          clearStall();
+          fallbackToSynthesis(cleanText, targetLang);
+        };
+
+        currentAudioRef.current = audio;
+        audio.play().catch(() => {
+          clearStall();
+          fallbackToSynthesis(cleanText, targetLang);
+        });
+      };
+
+      const playNeuralCloudStream = (phrase: string, speechLang: string) => {
+        const cacheKey = `neural_v2:${speechLang}:${phrase.toLowerCase()}`;
 
         if (audioCache.has(cacheKey)) {
           setStatus("loading");
@@ -201,13 +193,11 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
         }
 
         setStatus("loading");
-
         clearStall();
         stallTimerRef.current = window.setTimeout(() => {
           setStatus((current) => (current === "loading" ? "error" : current));
-        }, SPEECH_START_TIMEOUT_MS * 2); // Give API more time than local TTS
+        }, SPEECH_START_TIMEOUT_MS * 2);
 
-        // 1. Check permanent IndexedDB offline cache first
         getCachedAudio(cacheKey)
           .then((storedBlob) => {
             if (storedBlob) {
@@ -217,7 +207,81 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
               return;
             }
 
-            // 2. Not in IndexedDB cache, fetch from ElevenLabs API
+            const langParam = speechLang.toLowerCase().startsWith("ar") ? "ar" : "en";
+            const neuralUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${langParam}&client=tw-ob&q=${encodeURIComponent(phrase)}`;
+
+            fetch(neuralUrl)
+              .then((res) => {
+                if (!res.ok) throw new Error(`Neural CDN status ${res.status}`);
+                return res.blob();
+              })
+              .then((blob) => {
+                saveCachedAudio(cacheKey, blob);
+                const url = URL.createObjectURL(blob);
+                audioCache.set(cacheKey, url);
+                playBlobUrl(url);
+              })
+              .catch(() => {
+                const directAudio = new Audio(neuralUrl);
+                directAudio.playbackRate = effectiveRate;
+                directAudio.onplay = () => {
+                  clearStall();
+                  setStatus("playing");
+                };
+                directAudio.onended = () => {
+                  clearStall();
+                  setStatus("idle");
+                };
+                directAudio.onerror = () => {
+                  clearStall();
+                  fallbackToSynthesis(phrase, speechLang);
+                };
+                currentAudioRef.current = directAudio;
+                directAudio.play().catch(() => {
+                  clearStall();
+                  fallbackToSynthesis(phrase, speechLang);
+                });
+              });
+          })
+          .catch(() => {
+            fallbackToSynthesis(phrase, speechLang);
+          });
+      };
+
+      const apiKey =
+        import.meta.env?.VITE_ELEVENLABS_API_KEY ||
+        (typeof window !== "undefined" ? localStorage.getItem("wordpix_elevenlabs_key") : null);
+
+      if (apiKey) {
+        const voiceId =
+          import.meta.env?.VITE_ELEVENLABS_VOICE_ID ||
+          (typeof window !== "undefined"
+            ? localStorage.getItem("wordpix_elevenlabs_voice_id")
+            : null) ||
+          "Xb7hH8MSUJpSbSDYk0k2";
+        const cacheKey = `eleven:${voiceId}:${cleanText.toLowerCase()}`;
+
+        if (audioCache.has(cacheKey)) {
+          setStatus("loading");
+          playBlobUrl(audioCache.get(cacheKey)!);
+          return;
+        }
+
+        setStatus("loading");
+        clearStall();
+        stallTimerRef.current = window.setTimeout(() => {
+          setStatus((current) => (current === "loading" ? "error" : current));
+        }, SPEECH_START_TIMEOUT_MS * 2);
+
+        getCachedAudio(cacheKey)
+          .then((storedBlob) => {
+            if (storedBlob) {
+              const url = URL.createObjectURL(storedBlob);
+              audioCache.set(cacheKey, url);
+              playBlobUrl(url);
+              return;
+            }
+
             fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
               method: "POST",
               headers: {
@@ -238,26 +302,24 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
                 return res.blob();
               })
               .then((blob) => {
-                // Permanently persist to IndexedDB for future runs/offline use
                 saveCachedAudio(cacheKey, blob);
                 const url = URL.createObjectURL(blob);
                 audioCache.set(cacheKey, url);
                 playBlobUrl(url);
               })
               .catch((err) => {
-                console.error("ElevenLabs error, falling back to synthesis", err);
-                fallbackToSynthesis(cleanText, targetLang);
+                console.error("ElevenLabs error, falling back to neural stream", err);
+                playNeuralCloudStream(cleanText, targetLang);
               });
           })
-          .catch((err) => {
-            console.warn("IndexedDB audio cache lookup error", err);
-            fallbackToSynthesis(cleanText, targetLang);
+          .catch(() => {
+            playNeuralCloudStream(cleanText, targetLang);
           });
 
         return;
       }
 
-      fallbackToSynthesis(cleanText, targetLang);
+      playNeuralCloudStream(cleanText, targetLang);
     },
     [lang, effectiveRate, pitch, volume]
   );
