@@ -15046,6 +15046,2353 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleArabic:
       "اسْتَخْدِمْ مِمْسَحَةَ الزُّجَاجِ المَطَّاطِيَّةَ بَعْدَ الاسْتِحْمَامِ لِقَشْطِ قَطَرَاتِ المَاءِ عَنِ الأَبْوَابِ الزُّجَاجِيَّة.",
   },
+  swing: {
+    id: "swing",
+    arabic: "أُرْجُوحَة",
+    partOfSpeech: "noun",
+    phonetic: "swɪŋ",
+    pronunciationTip: "Single syllable with smooth /w/ blend: 'SWING' (/swɪŋ/).",
+    collocations: [
+      "swing set",
+      "tire swing",
+      "push on the swing",
+      "high swing",
+      "swing chains",
+      "sit on the swing",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "swing by",
+        meaning: "visit briefly",
+        arabic: "يَمُرُّ سَرِيعًا",
+        example: "We can swing by the local park after school.",
+      },
+      {
+        phrase: "swing back",
+        meaning: "move in return pendulum arc",
+        arabic: "يَتَرَجَّحُ عَائِدًا",
+        example: "The wooden swing swayed back and forth gently.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Playground Fun",
+        en: "Children waited eagerly for their turn on the tall swing set.",
+        ar: "انْتَظَرَ الأَطْفَالُ بِحَمَاسٍ دَوْرَهُمْ عَلَى مَجْمُوعَةِ الأَرَاجِيحِ العَالِيَةِ.",
+      },
+      {
+        context: "Park Recreation",
+        en: "Her father gave her a gentle push on the rubber tire swing.",
+        ar: "دَفَعَهَا وَالِدُهَا دَفْعَةً لَطِيفَةً عَلَى أُرْجُوحَةِ الإِطَارِ المَطَّاطِيِّ.",
+      },
+      {
+        context: "Motion",
+        en: "Pumping her legs helped her soar higher into the fresh air.",
+        ar: "سَاعَدَهَا تَحْرِيكُ سَاقَيْهَا عَلَى التَّحْلِيقِ أَعْلَى فِي الهَوَاءِ المُنْعِشِ.",
+      },
+    ],
+    exampleSentence: "Children waited eagerly for their turn on the tall swing set.",
+    exampleArabic:
+      "انْتَظَرَ الأَطْفَالُ بِحَمَاسٍ دَوْرَهُمْ عَلَى مَجْمُوعَةِ الأَرَاجِيحِ العَالِيَةِ.",
+  },
+  slide: {
+    id: "slide",
+    arabic: "زُحْلَيْقَة (مُنْزَلَق)",
+    partOfSpeech: "noun",
+    phonetic: "slaɪd",
+    pronunciationTip: "Long 'i' diphthong /aɪ/ ending in a soft /d/.",
+    collocations: [
+      "spiral slide",
+      "water slide",
+      "playground slide",
+      "climb up the slide",
+      "go down the slide",
+      "steep slide",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "slide down",
+        meaning: "descend smoothly on a chute",
+        arabic: "يَتَزَحْلَقُ لِلأَسْفَل",
+        example: "The children love to slide down the curved yellow chute.",
+      },
+      {
+        phrase: "slide by",
+        meaning: "pass effortlessly",
+        arabic: "يَمُرُّ بِسَلاسَة",
+        example: "Afternoons at the park always seem to slide by quickly.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Playground Fun",
+        en: "She climbed the ladder and zipped down the colorful spiral slide.",
+        ar: "صَعِدَتِ السُّلَّمَ وَانْزَلَقَتْ بِسُرْعَةٍ عَلَى الزُّحْلَيْقَةِ اللَّوْلَبِيَّةِ المُلَوَّنَةِ.",
+      },
+      {
+        context: "Safety",
+        en: "Wait until the bottom of the slide is clear before descending.",
+        ar: "انْتَظِرْ حَتَّى يَفْرُغَ أَسْفَلُ المُنْزَلَقِ قَبْلَ النُّزُولِ.",
+      },
+      {
+        context: "Park Design",
+        en: "The playground features a double slide for racing friends.",
+        ar: "يَحْتَوِي المَلْعَبُ عَلَى زُحْلَيْقَةٍ مُزْدَوَجَةٍ لِمُسَابَقَةِ الأَصْدِقَاءِ.",
+      },
+    ],
+    exampleSentence: "She climbed the ladder and zipped down the colorful spiral slide.",
+    exampleArabic:
+      "صَعِدَتِ السُّلَّمَ وَانْزَلَقَتْ بِسُرْعَةٍ عَلَى الزُّحْلَيْقَةِ اللَّوْلَبِيَّةِ المُلَوَّنَةِ.",
+  },
+  seesaw: {
+    id: "seesaw",
+    arabic: "أُرْجُوحَةُ التَّوَازُن (سِيسُو)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsiːsɔː",
+    pronunciationTip: "Two distinct syllables: 'SEE-saw' (/ˈsiː.sɔː/).",
+    collocations: [
+      "wooden seesaw",
+      "ride the seesaw",
+      "seesaw motion",
+      "seesaw partner",
+      "spring seesaw",
+      "balance on the seesaw",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "tilt up",
+        meaning: "rise as the other side dips",
+        arabic: "يَرْتَفِعُ لِلأَعْلَى",
+        example: "He pushed off the ground to tilt his side of the board up.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Playground Dynamics",
+        en: "Two friends giggled as they balanced each other on the wooden seesaw.",
+        ar: "ضَحِكَ صَدِيقَانِ وَهُمَا يُحَقِّقَانِ التَّوَازُنَ عَلَى أُرْجُوحَةِ السِّيسُو الخَشَبِيَّةِ.",
+      },
+      {
+        context: "Physics of Play",
+        en: "Pushing your feet off the mulch launches the seesaw upward.",
+        ar: "دَفْعُ قَدَمَيْكَ عَنِ الأَرْضِ يُطْلِقُ أُرْجُوحَةَ التَّوَازُنِ إِلَى الأَعْلَى.",
+      },
+      {
+        context: "Equipment",
+        en: "Modern playgrounds install seesaws with shock-absorbing springs.",
+        ar: "تُثَبِّتُ المَلَاعِبُ الحَدِيثَةُ أَرَاجِيحَ تَبَادُلِيَّةً مُزَوَّدَةً بِزَنْبَرَكَاتٍ مَاصَّةٍ لِلصَّدَمَاتِ.",
+      },
+    ],
+    exampleSentence: "Two friends giggled as they balanced each other on the wooden seesaw.",
+    exampleArabic:
+      "ضَحِكَ صَدِيقَانِ وَهُمَا يُحَقِّقَانِ التَّوَازُنَ عَلَى أُرْجُوحَةِ السِّيسُو الخَشَبِيَّةِ.",
+  },
+  "climbing-frame": {
+    id: "climbing-frame",
+    arabic: "هَيْكَلُ التَّسَلُّق (شَبَكَةُ التَّسَلُّق)",
+    partOfSpeech: "noun",
+    phonetic: "ˈklaɪmɪŋ freɪm",
+    pronunciationTip: "Silent 'b' in 'climbing' (/ˈklaɪ.mɪŋ freɪm/).",
+    collocations: [
+      "wooden climbing frame",
+      "jungle gym climbing frame",
+      "rope climbing frame",
+      "reach the top of the climbing frame",
+      "climbing frame platform",
+      "steel climbing frame",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "climb over",
+        meaning: "cross over the top bars",
+        arabic: "يَتَسَلَّقُ فَوْقَ",
+        example: "He learned how to safely climb over the highest rung.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Physical Activity",
+        en: "Children scrambled up the geometric dome of the climbing frame.",
+        ar: "تَسَلَّقَ الأَطْفَالُ القُبَّةَ الهَنْدَسِيَّةَ لِهَيْكَلِ التَّسَلُّقِ.",
+      },
+      {
+        context: "Park Play",
+        en: "The wooden climbing frame features rope ladders and a viewing turret.",
+        ar: "يَتَمَيَّزُ هَيْكَلُ التَّسَلُّقِ الخَشَبِيُّ بِسَلَالِمَ حَبْلِيَّةٍ وَبُرْجِ مُرَاقَبَةٍ.",
+      },
+      {
+        context: "Skill Development",
+        en: "Navigating the frame builds upper-body strength and spatial awareness.",
+        ar: "يَبْنِي اجْتِيَازُ هَيْكَلِ التَّسَلُّقِ قُوَّةَ الجُزْءِ العُلْوِيِّ مِنَ الجِسْمِ وَالوَعْيَ المَكَانِيَّ.",
+      },
+    ],
+    exampleSentence: "Children scrambled up the geometric dome of the climbing frame.",
+    exampleArabic: "تَسَلَّقَ الأَطْفَالُ القُبَّةَ الهَنْدَسِيَّةَ لِهَيْكَلِ التَّسَلُّقِ.",
+  },
+  sandbox: {
+    id: "sandbox",
+    arabic: "صُنْدُوقُ الرِّمَال (حُفْرَةُ الرَّمْل)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsændbɑːks",
+    pronunciationTip: "Compound word with primary stress on 'SAND': /ˈsænd.bɑːks/.",
+    collocations: [
+      "build in the sandbox",
+      "sandbox toys",
+      "wooden sandbox",
+      "bucket and spade in the sandbox",
+      "covered sandbox",
+      "play in the sandbox",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "dig out",
+        meaning: "scoop sand to make a trench",
+        arabic: "يَحْفِرُ فِي الرَّمْل",
+        example: "The toddlers dug out deep trenches for their toy trucks.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Creative Play",
+        en: "The toddlers molded towers and castles inside the shaded sandbox.",
+        ar: "شَكَّلَ الأَطْفَالُ الصِّغَارُ أَبْرَاجًا وَقِلَاعًا دَاخِلَ صُنْدُوقِ الرِّمَالِ المُظَلَّلِ.",
+      },
+      {
+        context: "Equipment",
+        en: "Plastic buckets, shovels, and sifters were scattered across the sandbox.",
+        ar: "تَنَاثَرَتِ الدِّلَاءُ البْلاسْتِيكِيَّةُ وَالمَجَارِفُ وَالمَنَاخِلُ عَبْرَ حُفْرَةِ الرَّمْلِ.",
+      },
+      {
+        context: "Park Maintenance",
+        en: "The park groundskeeper covered the sandbox to protect it from rain.",
+        ar: "غَطَّى حَارِسُ الحَدِيقَةِ صُنْدُوقَ الرِّمَالِ لِحِمَايَتِهِ مِنَ المَطَرِ.",
+      },
+    ],
+    exampleSentence: "The toddlers molded towers and castles inside the shaded sandbox.",
+    exampleArabic:
+      "شَكَّلَ الأَطْفَالُ الصِّغَارُ أَبْرَاجًا وَقِلَاعًا دَاخِلَ صُنْدُوقِ الرِّمَالِ المُظَلَّلِ.",
+  },
+  "monkey-bars": {
+    id: "monkey-bars",
+    arabic: "سُلَّمُ التَّسَلُّقِ الأُفُقِيّ (قُضْبَانُ التَّعَلُّق)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmʌŋki bɑːrz",
+    pronunciationTip: "Pronounce 'MON-key' followed by 'bars': /ˈmʌŋ.ki bɑːrz/.",
+    collocations: [
+      "swing across monkey bars",
+      "reach the next rung of monkey bars",
+      "steel monkey bars",
+      "grip the monkey bars",
+      "cross the monkey bars",
+      "fall from monkey bars",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hang on",
+        meaning: "grip firmly with hands",
+        arabic: "يَتَمَسَّكُ بِإِحْكَام",
+        example: "Hang on tightly with both hands as you traverse each bar.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Gymnastics & Play",
+        en: "He swung smoothly from rung to rung across the elevated monkey bars.",
+        ar: "تَأَرْجَحَ بِسَلاسَةٍ مِنْ دَرَجَةٍ إِلَى أُخْرَى عَبْرَ قُضْبَانِ التَّعَلُّقِ المُرْتَفِعَةِ.",
+      },
+      {
+        context: "Achievement",
+        en: "She cheered proudly after conquering the entire length of monkey bars.",
+        ar: "هَتَفَتْ بِفَخْرٍ بَعْدَ أَنِ اجْتَازَتْ كَامِلَ طُولِ سُلَّمِ التَّعَلُّقِ الأُفُقِيِّ.",
+      },
+      {
+        context: "Safety Cushioning",
+        en: "Thick rubber surfacing lies beneath the monkey bars to cushion landings.",
+        ar: "تَمْتَدُّ أَرْضِيَّةٌ مَطَّاطِيَّةٌ سَمِيكَةٌ تَحْتَ قُضْبَانِ التَّعَلُّقِ لِامْتِصَاصِ الصَّدَمَاتِ عِنْدَ الهُبُوطِ.",
+      },
+    ],
+    exampleSentence: "He swung smoothly from rung to rung across the elevated monkey bars.",
+    exampleArabic:
+      "تَأَرْجَحَ بِسَلاسَةٍ مِنْ دَرَجَةٍ إِلَى أُخْرَى عَبْرَ قُضْبَانِ التَّعَلُّقِ المُرْتَفِعَةِ.",
+  },
+  "merry-go-round": {
+    id: "merry-go-round",
+    arabic: "دَوَّارَةُ الأَلْعَاب (لُعْبَةُ الدَّوَرَان)",
+    partOfSpeech: "noun",
+    phonetic: "ˌmɛri ɡoʊ ˈraʊnd",
+    pronunciationTip: "Hyphenated compound with primary stress on 'ROUND': /ˌmɛr.i.ɡoʊˈraʊnd/.",
+    collocations: [
+      "spin the merry-go-round",
+      "ride the merry-go-round",
+      "whirl on the merry-go-round",
+      "playground merry-go-round",
+      "jump onto the merry-go-round",
+      "metal merry-go-round",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "spin around",
+        meaning: "rotate rapidly in a circle",
+        arabic: "يَدُورُ بِسُرْعَة",
+        example: "The platform spun around smoothly as older kids ran beside it.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Playground Fun",
+        en: "Laughter echoed as the children spun fast on the classic merry-go-round.",
+        ar: "تَرَدَّدَتْ أَصْدَاءُ الضَّحَكَاتِ بَيْنَمَا دَارَ الأَطْفَالُ بِسُرْعَةٍ عَلَى دَوَّارَةِ الأَلْعَابِ الكْلاسِيكِيَّةِ.",
+      },
+      {
+        context: "Teamwork",
+        en: "Two kids pushed the outer handles while their friends enjoyed the whirling ride.",
+        ar: "دَفَعَ طِفْلَانِ المَقَابِضَ الخَارِجِيَّةَ بَيْنَمَا اسْتَمْتَعَ أَصْدِقَاؤُهُمَا بِالدَّوَرَانِ السَّرِيعِ.",
+      },
+      {
+        context: "Safety",
+        en: "Hold onto the safety railings until the merry-go-round comes to a full stop.",
+        ar: "تَمَسَّكْ بِحَوَاجِزِ الأَمَانِ حَتَّى تَتَوَقَّفَ لُعْبَةُ الدَّوَرَانِ تَمَامًا.",
+      },
+    ],
+    exampleSentence: "Laughter echoed as the children spun fast on the classic merry-go-round.",
+    exampleArabic:
+      "تَرَدَّدَتْ أَصْدَاءُ الضَّحَكَاتِ بَيْنَمَا دَارَ الأَطْفَالُ بِسُرْعَةٍ عَلَى دَوَّارَةِ الأَلْعَابِ الكْلاسِيكِيَّةِ.",
+  },
+  "spring-rider": {
+    id: "spring-rider",
+    arabic: "لُعْبَةُ الزَّنْبَرَكِ الهَزَّازَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈsprɪŋ ˌraɪdər",
+    pronunciationTip: "Pronounce 'spring' (/sprɪŋ/) then 'rider' (/ˈraɪ.dər/).",
+    collocations: [
+      "horse spring rider",
+      "bounce on the spring rider",
+      "toddler spring rider",
+      "durable spring rider",
+      "rock on the spring rider",
+      "duck spring rider",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "bounce back",
+        meaning: "recoil on the heavy coil",
+        arabic: "يَرْتَدُّ بِفِعْلِ الزَّنْبَرَك",
+        example: "The coiled steel base bounced back smoothly with each push.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Toddler Area",
+        en: "The toddler rocked happily on the colorful dolphin spring rider.",
+        ar: "تَأَرْجَحَ الطِّفْلُ الصَّغِيرُ بِسَعَادَةٍ عَلَى لُعْبَةِ الدُّلْفِينِ الزَّنْبَرَكِيَّةِ الهَزَّازَةِ.",
+      },
+      {
+        context: "Equipment",
+        en: "Mounted on a heavy steel coil, the spring rider sways back and forth safely.",
+        ar: "مُثَبَّتَةً عَلَى زَنْبَرَكٍ فُولاذِيٍّ قَوِيٍّ، تَتَمَايَلُ اللُّعْبَةُ الهَزَّازَةُ ذَهَابًا وَإِيَابًا بِأَمَانٍ.",
+      },
+      {
+        context: "Park Variety",
+        en: "The tot lot includes four spring riders shaped like animals and cars.",
+        ar: "تَضُمُّ مِنْطَقَةُ الصِّغَارِ أَرْبَعَ لُعَبٍ زَنْبَرَكِيَّةٍ عَلَى أَشْكَالِ حَيَوَانَاتٍ وَسَيَّارَاتٍ.",
+      },
+    ],
+    exampleSentence: "The toddler rocked happily on the colorful dolphin spring rider.",
+    exampleArabic:
+      "تَأَرْجَحَ الطِّفْلُ الصَّغِيرُ بِسَعَادَةٍ عَلَى لُعْبَةِ الدُّلْفِينِ الزَّنْبَرَكِيَّةِ الهَزَّازَةِ.",
+  },
+  tunnel: {
+    id: "tunnel",
+    arabic: "نَفَقُ اللَّعِب (أُنْبُوبُ التَّسَلُّل)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtʌnl",
+    pronunciationTip: "Short 'u' sound /ʌ/ with clear syllabic 'l': 'TUN-ul' (/ˈtʌn.əl/).",
+    collocations: [
+      "crawl through the tunnel",
+      "plastic playground tunnel",
+      "concrete play tunnel",
+      "tunnel maze",
+      "bright yellow tunnel",
+      "hide in the tunnel",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "crawl through",
+        meaning: "move on hands and knees through an opening",
+        arabic: "يَزْحَفُ عَبْرَ",
+        example: "Toddlers love to crawl through the bright red tube.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Active Play",
+        en: "Children crawled on hands and knees through the vibrant crawl tunnel.",
+        ar: "زَحَفَ الأَطْفَالُ عَلَى أَيْدِيهِمْ وَرُكَبِهِمْ عَبْرَ نَفَقِ اللَّعِبِ النَّابِضِ بِالحَيَاةِ.",
+      },
+      {
+        context: "Hide and Seek",
+        en: "Lucas hid inside the curved green play tunnel during the game.",
+        ar: "اخْتَبَأَ لُوكَاس دَاخِلَ نَفَقِ اللَّعِبِ الأَخْضَرِ المُنْحَنِي أَثْنَاءَ اللُّعْبَةِ.",
+      },
+      {
+        context: "Structure",
+        en: "The reinforced plastic tunnel connects two elevated wooden towers.",
+        ar: "يَرْبِطُ نَفَقُ اللَّعِبِ البْلاسْتِيكِيُّ المُقَوَّى بَيْنَ بُرْجَيْنِ خَشَبِيَّيْنِ مُرْتَفِعَيْنِ.",
+      },
+    ],
+    exampleSentence: "Children crawled on hands and knees through the vibrant crawl tunnel.",
+    exampleArabic:
+      "زَحَفَ الأَطْفَالُ عَلَى أَيْدِيهِمْ وَرُكَبِهِمْ عَبْرَ نَفَقِ اللَّعِبِ النَّابِضِ بِالحَيَاةِ.",
+  },
+  "balance-beam": {
+    id: "balance-beam",
+    arabic: "عَارِضَةُ التَّوَازُن",
+    partOfSpeech: "noun",
+    phonetic: "ˈbæləns biːm",
+    pronunciationTip: "Pronounce 'balance' (/ˈbæl.əns/) then long 'beam' (/biːm/).",
+    collocations: [
+      "walk along the balance beam",
+      "wooden balance beam",
+      "low balance beam",
+      "gymnastics balance beam",
+      "step onto the balance beam",
+      "practice on the balance beam",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "walk along",
+        meaning: "traverse from end to end",
+        arabic: "يَمْشِي عَلَى طُولِ",
+        example: "She held her arms out wide to walk along the narrow beam.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Balance & Coordination",
+        en: "She stretched her arms out wide to steady herself along the balance beam.",
+        ar: "مَدَّتْ ذِرَاعَيْهَا عَلَى اتِّسَاعِهِمَا لِتَحْفَظَ تَرَازُنَهَا عَلَى عَارِضَةِ التَّوَازُنِ.",
+      },
+      {
+        context: "Park Obstacle Course",
+        en: "The timber balance beam forms part of the park's fitness trail.",
+        ar: "تُشَكِّلُ عَارِضَةُ التَّوَازُنِ الخَشَبِيَّةُ جُزْءًا مِنْ مَسَارِ اللِّيَاقَةِ البَدَنِيَّةِ بِالحَدِيقَةِ.",
+      },
+      {
+        context: "Playground Safety",
+        en: "The low wooden beam sits just a few inches above soft wood chips.",
+        ar: "تَرْتَفِعُ العَارِضَةُ الخَشَبِيَّةُ المُنْخَفِضَةُ بضع بُوصَاتٍ فَقَطْ فَوْقَ رُقَاقَاتِ الخَشَبِ الطَّرِيَّةِ.",
+      },
+    ],
+    exampleSentence: "She stretched her arms out wide to steady herself along the balance beam.",
+    exampleArabic:
+      "مَدَّتْ ذِرَاعَيْهَا عَلَى اتِّسَاعِهِمَا لِتَحْفَظَ تَرَازُنَهَا عَلَى عَارِضَةِ التَّوَازُنِ.",
+  },
+  ball: {
+    id: "ball",
+    arabic: "كُرَة",
+    partOfSpeech: "noun",
+    phonetic: "bɔːl",
+    pronunciationTip: "Open 'aw' vowel sound: 'BAWL' (/bɔːl/).",
+    collocations: [
+      "soccer ball",
+      "rubber ball",
+      "kick the ball",
+      "pass the ball",
+      "bounce the ball",
+      "catch the ball",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "bounce back",
+        meaning: "rebound off a hard surface",
+        arabic: "يَرْتَدُّ ثَانِيَةً",
+        example: "The colorful ball bounced back from the gym wall.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Park Games",
+        en: "The kids kicked the red rubber ball across the grassy lawn.",
+        ar: "رَكَلَ الأَطْفَالُ الكُرَةَ المَطَّاطِيَّةَ الحَمْرَاءَ عَبْرَ الحَقْلِ العُشْبِيِّ.",
+      },
+      {
+        context: "Team Sports",
+        en: "Pass the ball quickly to your open teammate near the net.",
+        ar: "مَرِّرِ الكُرَةَ بِسُرْعَةٍ إِلَى زَمِيلِكَ غَيْرِ المُرَاقَبِ قُرْبَ الشَّبَكَةِ.",
+      },
+      {
+        context: "Catch Practice",
+        en: "He caught the high bouncing ball with two steady hands.",
+        ar: "الْتَقَطَ الكُرَةَ المُرْتَدَّةَ عَالِيًا بِيَدَيْنِ ثَابِتَتَيْنِ.",
+      },
+    ],
+    exampleSentence: "The kids kicked the red rubber ball across the grassy lawn.",
+    exampleArabic:
+      "رَكَلَ الأَطْفَالُ الكُرَةَ المَطَّاطِيَّةَ الحَمْرَاءَ عَبْرَ الحَقْلِ العُشْبِيِّ.",
+  },
+  hoop: {
+    id: "hoop",
+    arabic: "طَوْقُ اللَّعِب (هُولاهُوب)",
+    partOfSpeech: "noun",
+    phonetic: "huːp",
+    pronunciationTip: "Long /uː/ sound: 'HOOP' (/huːp/).",
+    collocations: [
+      "hula hoop",
+      "plastic hoop",
+      "spin the hoop",
+      "twirl the hoop",
+      "hoop contest",
+      "jump through the hoop",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "spin around",
+        meaning: "whirl on the hips",
+        arabic: "يَدُورُ حَوْلَ الوَسَط",
+        example: "She spun the bright plastic hoop around her waist.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Gymnastics & Play",
+        en: "She skillfully twirled the glittery hula hoop around her hips.",
+        ar: "دَوَّرَتْ طَوْقَ الهُولاهُوبِ اللَّامِعَ بِمَهَارَةٍ حَوْلَ خَصْرِهَا.",
+      },
+      {
+        context: "Obstacle Course",
+        en: "Kids jumped through colorful plastic hoops laid on the grass.",
+        ar: "قَفَزَ الأَطْفَالُ عَبْرَ أَطْوَاقٍ بْلاسْتِيكِيَّةٍ مُلَوَّنَةٍ وُضِعَتْ عَلَى العُشْبِ.",
+      },
+      {
+        context: "Coordination",
+        en: "Keeping the lightweight hoop spinning requires rhythm and balance.",
+        ar: "يَتَطَلَّبُ الحِفَاظُ عَلَى دَوَرَانِ الطَّوْقِ الخَفِيفِ إِيقَاعًا وَتَوَازُنًا.",
+      },
+    ],
+    exampleSentence: "She skillfully twirled the glittery hula hoop around her hips.",
+    exampleArabic: "دَوَّرَتْ طَوْقَ الهُولاهُوبِ اللَّامِعَ بِمَهَارَةٍ حَوْلَ خَصْرِهَا.",
+  },
+  bat: {
+    id: "bat",
+    arabic: "مِضْرَبُ البَيْسْبُول (مِضْرَب)",
+    partOfSpeech: "noun",
+    phonetic: "bæt",
+    pronunciationTip: "Short flat 'a' sound /æ/ as in 'cat': 'BAT' (/bæt/).",
+    collocations: [
+      "baseball bat",
+      "wooden bat",
+      "aluminum bat",
+      "swing the bat",
+      "grip the bat",
+      "hit with a bat",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "bat away",
+        meaning: "deflect or strike off",
+        arabic: "يَصُدُّ بِالمِضْرَب",
+        example: "The batter batted away foul pitches to stay in the count.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Baseball Practice",
+        en: "He stepped up to home plate and gripped the smooth wooden bat.",
+        ar: "تَقَدَّمَ إِلَى قَاعِدَةِ البِدَايَةِ وَأَمْسَكَ المِضْرَبَ الخَشَبِيَّ النَّاعِمَ بِإِحْكَامٍ.",
+      },
+      {
+        context: "Game Highlight",
+        en: "A powerful swing of the metal bat sent the ball flying into the outfield.",
+        ar: "أَرْسَلَتْ ضَرْبَةٌ قَوِيَّةٌ بِالمِضْرَبِ المَعْدَنِيِّ الكُرَةَ مُحَلِّقَةً فِي المَلْعَبِ الخَارِجِيِّ.",
+      },
+      {
+        context: "Safety",
+        en: "Always wear a helmet when holding a bat near the batting cage.",
+        ar: "ارْتَدِ دَائِمًا خُوذَةً عِنْدَ حَمْلِ المِضْرَبِ قُرْبَ قَفَصِ التَّدْرِيبِ.",
+      },
+    ],
+    exampleSentence: "He stepped up to home plate and gripped the smooth wooden bat.",
+    exampleArabic:
+      "تَقَدَّمَ إِلَى قَاعِدَةِ البِدَايَةِ وَأَمْسَكَ المِضْرَبَ الخَشَبِيَّ النَّاعِمَ بِإِحْكَامٍ.",
+  },
+  racket: {
+    id: "racket",
+    arabic: "مِضْرَبُ التِّنِس (مِضْرَبٌ شَبَكِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈrækɪt",
+    pronunciationTip: "First syllable has /æ/, ends in short /ɪt/: 'RACK-it' (/ˈræk.ɪt/).",
+    collocations: [
+      "tennis racket",
+      "badminton racket",
+      "string the racket",
+      "racket handle",
+      "lightweight racket",
+      "swing a racket",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hit back",
+        meaning: "return the ball across the court",
+        arabic: "يَرُدُّ الكُرَةَ بِالمِضْرَب",
+        example: "She hit the yellow ball back over the white net with her racket.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Tennis Practice",
+        en: "She gripped the lightweight tennis racket and served an ace across the court.",
+        ar: "أَمْسَكَتْ مِضْرَبَ التِّنِسِ الخَفِيفَ وَأَرْسَلَتْ إِرْسَالًا سَاحِقًا عَبْرَ المَلْعَبِ.",
+      },
+      {
+        context: "Equipment",
+        en: "The tightly strung mesh on the racket produces impressive topspin.",
+        ar: "تُوَلِّدُ الشَّبَكَةُ المَشْدُودَةُ بِإِحْكَامٍ عَلَى المِضْرَبِ دَوَرَانًا أَمَامِيًّا رَائِعًا.",
+      },
+      {
+        context: "Casual Sport",
+        en: "They brought two badminton rackets and a shuttlecock to the park.",
+        ar: "جَلَبُوا مِضْرَبَيْ رِيشَةٍ طَائِرَةٍ وَكُرَةَ رِيشَةٍ إِلَى الحَدِيقَةِ.",
+      },
+    ],
+    exampleSentence:
+      "She gripped the lightweight tennis racket and served an ace across the court.",
+    exampleArabic:
+      "أَمْسَكَتْ مِضْرَبَ التِّنِسِ الخَفِيفَ وَأَرْسَلَتْ إِرْسَالًا سَاحِقًا عَبْرَ المَلْعَبِ.",
+  },
+  net: {
+    id: "net",
+    arabic: "شَبَكَةُ المَلْعَب (شَبَكَة)",
+    partOfSpeech: "noun",
+    phonetic: "nɛt",
+    pronunciationTip: "Short 'e' sound /ɛ/ ending in crisp 't': 'NET' (/nɛt/).",
+    collocations: [
+      "tennis net",
+      "volleyball net",
+      "soccer goal net",
+      "over the net",
+      "into the net",
+      "climb the rope net",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hit into",
+        meaning: "strike the mesh barrier mistakenly",
+        arabic: "يَضْرِبُ فِي الشَّبَكَة",
+        example: "He accidentally hit the tennis ball right into the middle of the net.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Court Sports",
+        en: "She served the yellow tennis ball perfectly over the center net.",
+        ar: "أَرْسَلَتْ كُرَةَ التِّنِسِ الصَّفْرَاءَ بِمِثَالِيَّةٍ فَوْقَ الشَّبَكَةِ المَرْكَزِيَّةِ.",
+      },
+      {
+        context: "Soccer Goals",
+        en: "The striker's powerful shot rippled the white soccer goal net.",
+        ar: "هَزَّتْ تَسْدِيدَةُ المُهَاجِمِ القَوِيَّةُ شَبَكَةَ مَرْمَى كُرَةِ القَدَمِ البَيْضَاءَ.",
+      },
+      {
+        context: "Playground Net",
+        en: "Children scrambled up the heavy cargo climbing net on the playground tower.",
+        ar: "تَسَلَّقَ الأَطْفَالُ شَبَكَةَ التَّسَلُّقِ الحَبْلِيَّةَ الثَّقِيلَةَ عَلَى بُرْجِ المَلْعَبِ.",
+      },
+    ],
+    exampleSentence: "She served the yellow tennis ball perfectly over the center net.",
+    exampleArabic:
+      "أَرْسَلَتْ كُرَةَ التِّنِسِ الصَّفْرَاءَ بِمِثَالِيَّةٍ فَوْقَ الشَّبَكَةِ المَرْكَزِيَّةِ.",
+  },
+  goal: {
+    id: "goal",
+    arabic: "مَرْمَى (شَبَكَةُ الهَدَف)",
+    partOfSpeech: "noun",
+    phonetic: "ɡoʊl",
+    pronunciationTip: "Long 'o' sound /oʊ/ as in 'go': 'GOAL' (/ɡoʊl/).",
+    collocations: [
+      "soccer goal",
+      "score a goal",
+      "goal posts",
+      "guard the goal",
+      "shoot on goal",
+      "empty goal",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "score in",
+        meaning: "place the ball inside the target net",
+        arabic: "يُسَجِّلُ فِي المَرْمَى",
+        example: "The striker scored in the top right corner of the goal.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Soccer Match",
+        en: "He fired a precision shot past the goalkeeper directly into the goal.",
+        ar: "سَدَّدَ تَسْدِيدَةً دَقِيقَةً تَجَاوَزَتْ حَارِسَ المَرْمَى دَاخِلَ الشَّبَكَةِ مُبَاشَرَةً.",
+      },
+      {
+        context: "Playground Field",
+        en: "Two portable goal posts were set up on the open grass field.",
+        ar: "تَمَّ نَصْبُ قَائِمَيْ مَرْمًى مُتَنَقِّلَيْنِ عَلَى المَلْعَبِ العُشْبِيِّ المَفْتُوحِ.",
+      },
+      {
+        context: "Goalkeeping",
+        en: "The goalkeeper stood ready between the white posts to defend the net.",
+        ar: "وَقَفَ حَارِسُ المَرْمَى مُسْتَعِدًّا بَيْنَ القَائِمَيْنِ الأَبْيَضَيْنِ لِلدِّفَاعِ عَنِ الشَّبَكَةِ.",
+      },
+    ],
+    exampleSentence: "He fired a precision shot past the goalkeeper directly into the goal.",
+    exampleArabic:
+      "سَدَّدَ تَسْدِيدَةً دَقِيقَةً تَجَاوَزَتْ حَارِسَ المَرْمَى دَاخِلَ الشَّبَكَةِ مُبَاشَرَةً.",
+  },
+  whistle: {
+    id: "whistle",
+    arabic: "صَفَّارَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɪsl",
+    pronunciationTip: "Silent 't': pronounce 'WHIS-ul' (/ˈwɪs.əl/).",
+    collocations: [
+      "blow the whistle",
+      "referee whistle",
+      "coach whistle",
+      "silver whistle",
+      "loud whistle",
+      "shrill whistle",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "blow on",
+        meaning: "exhale forcefully into mouthpiece",
+        arabic: "يَنْفُخُ فِي الصَّفَّارَة",
+        example: "The referee blew on his silver whistle to signal halftime.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Referee Signal",
+        en: "The referee blew his sharp silver whistle to signal the start of the match.",
+        ar: "نَفَخَ الحَكَمُ فِي صَفَّارَتِهِ الفِضِّيَّةِ الحَادَّةِ لِيُعْلِنَ بَدْءَ المُبَارَاةِ.",
+      },
+      {
+        context: "Coach Guidance",
+        en: "Coach wore a loud whistle around his neck on a red lanyard.",
+        ar: "عَلَّقَ المُدَرِّبُ صَفَّارَةً عَالِيَةَ الصَّوْتِ حَوْلَ عُنُقِهِ بِشَرِيطٍ أَحْمَرَ.",
+      },
+      {
+        context: "Playground Safety",
+        en: "The playground monitor used a whistle to gather all the students together.",
+        ar: "اسْتَخْدَمَ مُرَاقِبُ المَلْعَبِ صَفَّارَةً لِجَمْعِ جَمِيعِ التَّلَامِيذِ مَعًا.",
+      },
+    ],
+    exampleSentence: "The referee blew his sharp silver whistle to signal the start of the match.",
+    exampleArabic:
+      "نَفَخَ الحَكَمُ فِي صَفَّارَتِهِ الفِضِّيَّةِ الحَادَّةِ لِيُعْلِنَ بَدْءَ المُبَارَاةِ.",
+  },
+  stopwatch: {
+    id: "stopwatch",
+    arabic: "سَاعَةُ إِيقَاف",
+    partOfSpeech: "noun",
+    phonetic: "ˈstɑːpwɑːtʃ",
+    pronunciationTip: "Compound noun: 'STOP-watch' (/ˈstɑːp.wɑːtʃ/).",
+    collocations: [
+      "digital stopwatch",
+      "press the stopwatch",
+      "stopwatch timer",
+      "handheld stopwatch",
+      "check the stopwatch",
+      "reset the stopwatch",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "time out",
+        meaning: "record elapsed duration",
+        arabic: "يَقِيسُ الوَقْتَ المُنْقَضِي",
+        example: "The coach timed out the relay race using his digital timer.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Track & Sprinting",
+        en: "The coach pressed the digital stopwatch as the sprinters crossed the finish line.",
+        ar: "ضَغَطَ المُدَرِّبُ عَلَى سَاعَةِ الإِيقَافِ الرَّقْمِيَّةِ بَيْنَمَا اجْتَازَ العَدَّاؤُونَ خَطَّ النِّهَايَةِ.",
+      },
+      {
+        context: "Accuracy",
+        en: "A precision stopwatch measures elapsed time down to hundredths of a second.",
+        ar: "تَقِيسُ سَاعَةُ الإِيقَافِ الدَّقِيقَةُ الوَقْتَ المُنْقَضِيَ بِأَجْزَاءِ المِئَةِ مِنَ الثَّانِيَةِ.",
+      },
+      {
+        context: "Training",
+        en: "He monitored his lap times on the handheld stopwatch during practice.",
+        ar: "رَاقَبَ أَوْقَاتَ دَوْرَاتِهِ عَلَى سَاعَةِ الإِيقَافِ المَحْمُولَةِ أَثْنَاءَ التَّدْرِيبِ.",
+      },
+    ],
+    exampleSentence:
+      "The coach pressed the digital stopwatch as the sprinters crossed the finish line.",
+    exampleArabic:
+      "ضَغَطَ المُدَرِّبُ عَلَى سَاعَةِ الإِيقَافِ الرَّقْمِيَّةِ بَيْنَمَا اجْتَازَ العَدَّاؤُونَ خَطَّ النِّهَايَةِ.",
+  },
+  helmet: {
+    id: "helmet",
+    arabic: "خُوذَةُ حِمَايَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈhɛlmɪt",
+    pronunciationTip: "Two syllables: 'HEL-mit' (/ˈhɛl.mɪt/).",
+    collocations: [
+      "bicycle helmet",
+      "safety helmet",
+      "wear a helmet",
+      "strap the helmet",
+      "protective helmet",
+      "skateboarding helmet",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "strap on",
+        meaning: "fasten securely around the chin",
+        arabic: "يَرْبِطُ الخُوذَةَ بِإِحْكَام",
+        example: "Always strap on your protective headgear before riding your scooter.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Biking & Skating",
+        en: "He strapped on his bright blue safety helmet before riding his bicycle.",
+        ar: "رَبَطَ خُوذَةَ الأَمَانِ الزَّرْقَاءَ البَرَّاقَةَ قَبْلَ رُكُوبِ دَرَّاجَتِهِ الهَوَائِيَّةِ.",
+      },
+      {
+        context: "Protection",
+        en: "Wearing a certified helmet prevents serious head injuries during falls.",
+        ar: "يَمْنَعُ ارْتِدَاءُ خُوذَةٍ مُعْتَمَدَةٍ إِصَابَاتِ الرَّأْسِ الخَطِيرَةَ أَثْنَاءَ السُّقُوطِ.",
+      },
+      {
+        context: "Skatepark Rule",
+        en: "The skatepark requires all skateboarders and rollerbladers to wear helmets.",
+        ar: "تَشْتَرِطُ حَدِيقَةُ التَّزَلُّجِ عَلَى جَمِيعِ المُتَزَلِّجِينَ ارْتِدَاءَ الخُوَذِ.",
+      },
+    ],
+    exampleSentence: "He strapped on his bright blue safety helmet before riding his bicycle.",
+    exampleArabic:
+      "رَبَطَ خُوذَةَ الأَمَانِ الزَّرْقَاءَ البَرَّاقَةَ قَبْلَ رُكُوبِ دَرَّاجَتِهِ الهَوَائِيَّةِ.",
+  },
+  "knee-pad": {
+    id: "knee-pad",
+    arabic: "وَاقِيَةُ الرُّكْبَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈniː pæd",
+    pronunciationTip: "Silent 'k': pronounce 'NEE-pad' (/ˈniː pæd/).",
+    collocations: [
+      "protective knee pads",
+      "wear knee pads",
+      "skating knee pads",
+      "cushioned knee pad",
+      "strap on knee pads",
+      "durable knee pads",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "strap on",
+        meaning: "fasten around the knees with velcro",
+        arabic: "يَشُدُّ الوَاقِيَةَ عَلَى الرُّكْبَة",
+        example: "He strapped on thick knee pads with velcro fasteners.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Skating Gear",
+        en: "She fastened cushioned knee pads over her jeans before rollerblading.",
+        ar: "ثَبَّتَتْ وَاقِيَاتِ الرُّكَبِ المُبَطَّنَةَ فَوْقَ بِنْطَالِهَا الجِينْزِ قَبْلَ التَّزَلُّجِ.",
+      },
+      {
+        context: "Safety",
+        en: "Durable plastic knee pads protect joints from scrapes on hard asphalt.",
+        ar: "تَحْمِي وَاقِيَاتُ الرُّكْبَةِ البْلاسْتِيكِيَّةُ المَتِينَةُ المَفَاصِلَ مِنَ الخُدُوشِ عَلَى الأَسْفَلْتِ الصَّلْبِ.",
+      },
+      {
+        context: "Beginner Training",
+        en: "Beginner skaters should always wear elbow guards and knee pads.",
+        ar: "يَنْبَغِي لِلْمُتَزَلِّجِينَ المُبْتَدِئِينَ ارْتِدَاءُ وَاقِيَاتِ الكُوعِ وَالرُّكْبَةِ دَائِمًا.",
+      },
+    ],
+    exampleSentence: "She fastened cushioned knee pads over her jeans before rollerblading.",
+    exampleArabic:
+      "ثَبَّتَتْ وَاقِيَاتِ الرُّكَبِ المُبَطَّنَةَ فَوْقَ بِنْطَالِهَا الجِينْزِ قَبْلَ التَّزَلُّجِ.",
+  },
+  "rubber-mat": {
+    id: "rubber-mat",
+    arabic: "بِسَاطٌ مَطَّاطِيٌّ مَاصٌّ لِلصَّدَمَات",
+    partOfSpeech: "noun",
+    phonetic: "ˈrʌbər mæt",
+    pronunciationTip: "Pronounce 'rubber' (/ˈrʌb.ər/) then flat 'mat' (/mæt/).",
+    collocations: [
+      "shock-absorbing rubber mat",
+      "interlocking rubber mats",
+      "playground rubber mat",
+      "cushioned rubber mat",
+      "fall onto rubber mat",
+      "durable rubber mat",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "lay down",
+        meaning: "install tiles across ground",
+        arabic: "يَفْرِشُ البِسَاط",
+        example: "Workers laid down colorful poured rubber flooring beneath the structures.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Safety Surfacing",
+        en: "Shock-absorbing rubber mats under the monkey bars cushion sudden falls.",
+        ar: "تَمْتَصُّ البُسُطُ المَطَّاطِيَّةُ المَاصَّةُ لِلصَّدَمَاتِ تَحْتَ قُضْبَانِ التَّعَلُّقِ السَّقَطَاتِ المُفَاجِئَةَ.",
+      },
+      {
+        context: "Playground Design",
+        en: "Interlocking colorful rubber mats create a safe and bright ground pattern.",
+        ar: "تُشَكِّلُ البُسُطُ المَطَّاطِيَّةُ المُلَوَّنَةُ المُتَدَاخِلَةُ أَرْضِيَّةً آمِنَةً وَمُشْرِقَةً.",
+      },
+      {
+        context: "Durability",
+        en: "The textured rubber mat resists slipping even when wet from light rain.",
+        ar: "يُقَاوِمُ البِسَاطُ المَطَّاطِيُّ المُنَقَّشُ الانْزِلَاقَ حَتَّى عِنْدَمَا يَبْتَلُّ بِمَطَرٍ خَفِيفٍ.",
+      },
+    ],
+    exampleSentence: "Shock-absorbing rubber mats under the monkey bars cushion sudden falls.",
+    exampleArabic:
+      "تَمْتَصُّ البُسُطُ المَطَّاطِيَّةُ المَاصَّةُ لِلصَّدَمَاتِ تَحْتَ قُضْبَانِ التَّعَلُّقِ السَّقَطَاتِ المُفَاجِئَةَ.",
+  },
+  sand: {
+    id: "sand",
+    arabic: "رَمْل",
+    partOfSpeech: "noun",
+    phonetic: "sænd",
+    pronunciationTip: "Short 'a' vowel /æ/ followed by 'nd': 'SAND' (/sænd/).",
+    collocations: [
+      "fine sand",
+      "play in the sand",
+      "golden sand",
+      "wet sand",
+      "sand castle",
+      "grain of sand",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sift through",
+        meaning: "filter fine particles with fingers",
+        arabic: "يُغَرْبِلُ الرَّمْل",
+        example: "The warm sand sifted through his little fingers.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sensory Play",
+        en: "Children poured soft golden sand through plastic sifters into buckets.",
+        ar: "سَكَبَ الأَطْفَالُ الرَّمْلَ الذَّهَبِيَّ النَّاعِمَ عَبْرَ مَنَاخِلَ بْلاسْتِيكِيَّةٍ دَاخِلَ الدِّلَاءِ.",
+      },
+      {
+        context: "Castles",
+        en: "Damp sand is perfect for building sturdy turrets and sculpted walls.",
+        ar: "يُعَدُّ الرَّمْلُ الرَّطْبُ مِثَالِيًّا لِبِنَاءِ أَبْرَاجٍ قَوِيَّةٍ وَجُدْرَانٍ مَنْحُوتَةٍ.",
+      },
+      {
+        context: "Safety Surfacing",
+        en: "A thick layer of clean sand lines the playground pit for soft landings.",
+        ar: "تُغَطِّي طَبَقَةٌ سَمِيكَةٌ مِنَ الرَّمْلِ النَّظِيفِ حُفْرَةَ المَلْعَبِ لِهُبُوطٍ لَيِّنٍ.",
+      },
+    ],
+    exampleSentence: "Children poured soft golden sand through plastic sifters into buckets.",
+    exampleArabic:
+      "سَكَبَ الأَطْفَالُ الرَّمْلَ الذَّهَبِيَّ النَّاعِمَ عَبْرَ مَنَاخِلَ بْلاسْتِيكِيَّةٍ دَاخِلَ الدِّلَاءِ.",
+  },
+  gravel: {
+    id: "gravel",
+    arabic: "حَصًى (حِجَارَةٌ صَغِيرَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɡrævl",
+    pronunciationTip: "Short 'a' with /v/ and syllabic 'l': 'GRAV-ul' (/ˈɡræv.əl/).",
+    collocations: [
+      "gravel path",
+      "loose gravel",
+      "crushed gravel",
+      "crunching gravel",
+      "pea gravel",
+      "walk on gravel",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "spread out",
+        meaning: "distribute stones evenly along path",
+        arabic: "يَفْرِشُ الحَصَى",
+        example: "Park workers spread out fresh pea gravel along the walkway.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Park Pathways",
+        en: "Their footsteps crunched softly on the winding gravel pathway.",
+        ar: "أَحْدَثَتْ خَطَوَاتُهُمْ صَوْتَ قَرْقَعَةٍ خَفِيفَةٍ عَلَى مَمَرِّ الحَصَى المُلْتَفِّ.",
+      },
+      {
+        context: "Drainage",
+        en: "Layers of pea gravel provide excellent natural drainage around trees.",
+        ar: "تُوَفِّرُ طَبَقَاتُ الحَصَى الصَّغِيرِ تَصْرِيفًا طَبِيعِيًّا مُمْتَازًا حَوْلَ الأَشْجَارِ.",
+      },
+      {
+        context: "Perimeter",
+        en: "The border of the playground is neatly lined with gray crushed gravel.",
+        ar: "حُفَّتْ حُدُودُ المَلْعَبِ بِتَرْتِيبٍ بِحَصًى رَمَادِيٍّ مَسْحُوقٍ.",
+      },
+    ],
+    exampleSentence: "Their footsteps crunched softly on the winding gravel pathway.",
+    exampleArabic:
+      "أَحْدَثَتْ خَطَوَاتُهُمْ صَوْتَ قَرْقَعَةٍ خَفِيفَةٍ عَلَى مَمَرِّ الحَصَى المُلْتَفِّ.",
+  },
+  grass: {
+    id: "grass",
+    arabic: "عُشْبٌ أَخْضَر",
+    partOfSpeech: "noun",
+    phonetic: "ɡræs",
+    pronunciationTip: "Short 'a' sound /æ/ as in 'pass': 'GRASS' (/ɡræs/).",
+    collocations: [
+      "green grass",
+      "freshly cut grass",
+      "sit on the grass",
+      "lawn of grass",
+      "tall grass",
+      "patch of grass",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "grow over",
+        meaning: "cover soil with green blades",
+        arabic: "يَكْسُو العُشْب",
+        example: "Lush green turf grew over the open recreational meadow.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Park Meadow",
+        en: "Families sat on colorful picnic blankets spread out over the green grass.",
+        ar: "جَلَسَتِ العَائِلاتُ عَلَى بُسُطِ نُزْهَةٍ مُلَوَّنَةٍ فُرِشَتْ فَوْقَ العُشْبِ الأَخْضَرِ.",
+      },
+      {
+        context: "Running Games",
+        en: "Children kicked off their shoes to race barefoot across the soft grass.",
+        ar: "خَلَعَ الأَطْفَالُ أَحْذِيَتَهُمْ لِيَتَسَابَقُوا حُفَاةً عَبْرَ العُشْبِ النَّاعِمِ.",
+      },
+      {
+        context: "Fragrance",
+        en: "The scent of freshly mown grass filled the warm afternoon air.",
+        ar: "مَلَأَتْ رَائِحَةُ العُشْبِ المَقْصُوصِ حَدِيثًا هَوَاءَ بَعْدِ الظُّهْرِ الدَّافِئَ.",
+      },
+    ],
+    exampleSentence: "Families sat on colorful picnic blankets spread out over the green grass.",
+    exampleArabic:
+      "جَلَسَتِ العَائِلاتُ عَلَى بُسُطِ نُزْهَةٍ مُلَوَّنَةٍ فُرِشَتْ فَوْقَ العُشْبِ الأَخْضَرِ.",
+  },
+  concrete: {
+    id: "concrete",
+    arabic: "خَرَسَانَة (إِسْمَنْتٌ صَلْب)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkɑːnkriːt",
+    pronunciationTip: "Primary stress on first syllable: 'KAHN-kreet' (/ˈkɑːn.kriːt/).",
+    collocations: [
+      "concrete pavement",
+      "smooth concrete",
+      "concrete court",
+      "solid concrete",
+      "walk on concrete",
+      "concrete bench",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pour out",
+        meaning: "lay wet cement to set hard",
+        arabic: "يَصُبُّ الخَرَسَانَة",
+        example: "Contractors poured out smooth concrete for the new basketball court.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Playground Court",
+        en: "The basketball court has a smooth, solid concrete surface with painted lines.",
+        ar: "يَحْتَوِي مَلْعَبُ كُرَةِ السَّلَّةِ عَلَى أَرْضِيَّةٍ خَرَسَانِيَّةٍ صَلْبَةٍ وَنَاعِمَةٍ مَعَ خُطُوطٍ مَرْسُومَةٍ.",
+      },
+      {
+        context: "Walkways",
+        en: "Strollers and wheelchairs roll easily along the wide concrete walkway.",
+        ar: "تَسِيرُ عَرَبَاتُ الأَطْفَالِ وَالكَرَاسِي المُتَحَرِّكَةُ بِسُهُولَةٍ عَلَى المَمَرِّ الخَرَسَانِيِّ العَرِيضِ.",
+      },
+      {
+        context: "Durability",
+        en: "Heavy reinforced concrete foundations anchor the playground swing sets.",
+        ar: "تُثَبِّتُ قَوَاعِدُ الخَرَسَانَةِ المُسَلَّحَةِ الثَّقِيلَةُ مَجْمُوعَاتِ أَرَاجِيحِ المَلْعَبِ.",
+      },
+    ],
+    exampleSentence:
+      "The basketball court has a smooth, solid concrete surface with painted lines.",
+    exampleArabic:
+      "يَحْتَوِي مَلْعَبُ كُرَةِ السَّلَّةِ عَلَى أَرْضِيَّةٍ خَرَسَانِيَّةٍ صَلْبَةٍ وَنَاعِمَةٍ مَعَ خُطُوطٍ مَرْسُومَةٍ.",
+  },
+  "chalk-drawing": {
+    id: "chalk-drawing",
+    arabic: "رَسْمٌ بِالطَّبَاشِير",
+    partOfSpeech: "noun",
+    phonetic: "ˈtʃɔːk ˌdrɔːɪŋ",
+    pronunciationTip: "Silent 'l' in 'chalk': 'CHAWK draw-ing' (/ˈtʃɔːk ˌdrɔː.ɪŋ/).",
+    collocations: [
+      "sidewalk chalk drawing",
+      "colorful chalk drawing",
+      "draw with chalk",
+      "chalk drawing on pavement",
+      "wipe away chalk drawing",
+      "rainbow chalk drawing",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "draw out",
+        meaning: "sketch designs onto pavement",
+        arabic: "يَرْسُمُ بِالطَّبَاشِير",
+        example: "She drew out a bright smiling sun with yellow sidewalk chalk.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Creative Play",
+        en: "Children created vibrant chalk drawings of rainbows and animals on the pavement.",
+        ar: "أَبْدَعَ الأَطْفَالُ رُسُومَاتٍ طَبَاشِيرِيَّةً زَاهِيَةً لِأَقْوَاسِ قُزَحَ وَحَيَوَانَاتٍ عَلَى الرَّصِيفِ.",
+      },
+      {
+        context: "Sidewalk Art",
+        en: "Her colorful chalk drawing of a hopscotch grid invited everyone to jump.",
+        ar: "دَعَا رَسْمُهَا الطَّبَاشِيرِيُّ المُلَوَّنُ لِمُخَطَّطِ الحَجْلَةِ الجَمِيعَ لِلْقَفْزِ.",
+      },
+      {
+        context: "Temporary Art",
+        en: "A gentle afternoon rain shower washed away the bright sidewalk chalk drawings.",
+        ar: "غَسَلَتْ زَخَّةُ مَطَرٍ خَفِيفَةٌ بَعْدَ الظُّهْرِ الرُّسُومَاتِ الطَّبَاشِيرِيَّةَ اللَّامِعَةَ عَنِ الرَّصِيفِ.",
+      },
+    ],
+    exampleSentence:
+      "Children created vibrant chalk drawings of rainbows and animals on the pavement.",
+    exampleArabic:
+      "أَبْدَعَ الأَطْفَالُ رُسُومَاتٍ طَبَاشِيرِيَّةً زَاهِيَةً لِأَقْوَاسِ قُزَحَ وَحَيَوَانَاتٍ عَلَى الرَّصِيفِ.",
+  },
+  hopscotch: {
+    id: "hopscotch",
+    arabic: "لُعْبَةُ الحَجْلَة (الحَجَلَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈhɑːpskɑːtʃ",
+    pronunciationTip: "Compound word: 'HOP-skotch' (/ˈhɑːp.skɑːtʃ/).",
+    collocations: [
+      "play hopscotch",
+      "hopscotch grid",
+      "hopscotch squares",
+      "hopscotch marker",
+      "draw a hopscotch",
+      "numbered hopscotch",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hop through",
+        meaning: "jump on one foot across numbered boxes",
+        arabic: "يَحْجُلُ عَبْرَ المُرَبَّعَات",
+        example: "She hopped through squares one to ten without losing balance.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Traditional Games",
+        en: "She tossed a small pebble into square three and hopped through the hopscotch grid.",
+        ar: "أَلْقَتْ حَصَاةً صَغِيرَةً فِي المُرَبَّعِ الثَّالِثِ وَحَجَلَتْ عَبْرَ مُخَطَّطِ لُعْبَةِ الحَجْلَةِ.",
+      },
+      {
+        context: "Playground Court",
+        en: "A permanent hopscotch court is painted in yellow and blue near the entrance.",
+        ar: "رُسِمَ مَيْدَانُ حَجْلَةٍ دَائِمٌ بِاللَّوْنَيْنِ الأَصْفَرِ وَالأَزْرَقِ قُرْبَ المَدْخَلِ.",
+      },
+      {
+        context: "Balance & Fun",
+        en: "Playing hopscotch helps developing children master single-leg jumping balance.",
+        ar: "يُسَاعِدُ لَعِبُ الحَجْلَةِ الأَطْفَالَ فِي مَرْحَلَةِ النُّمُوِّ عَلَى إِتْقَانِ تَوَازُنِ القَفْزِ بِسَاقٍ وَاحِدَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "She tossed a small pebble into square three and hopped through the hopscotch grid.",
+    exampleArabic:
+      "أَلْقَتْ حَصَاةً صَغِيرَةً فِي المُرَبَّعِ الثَّالِثِ وَحَجَلَتْ عَبْرَ مُخَطَّطِ لُعْبَةِ الحَجْلَةِ.",
+  },
+  "painted-lines": {
+    id: "painted-lines",
+    arabic: "خُطُوطٌ مَرْسُومَةٌ عَلَى الأَرْض",
+    partOfSpeech: "noun",
+    phonetic: "ˈpeɪntɪd laɪnz",
+    pronunciationTip: "Pronounce 'painted' (/ˈpeɪn.tɪd/) then 'lines' (/laɪnz/).",
+    collocations: [
+      "white painted lines",
+      "court painted lines",
+      "boundary painted lines",
+      "follow the painted lines",
+      "freshly painted lines",
+      "yellow painted lines",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "mark out",
+        meaning: "delimit court boundaries with paint",
+        arabic: "يُحَدِّدُ بِالخُطُوط",
+        example: "Workers marked out the boundaries of the basketball court with crisp paint.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sports Boundaries",
+        en: "Clear white painted lines demarcate the out-of-bounds area on the court.",
+        ar: "تُحَدِّدُ خُطُوطٌ بَيْضَاءُ مَرْسُومَةٌ بِوُضُوحٍ مِنْطَقَةَ خَارِجِ المَلْعَبِ.",
+      },
+      {
+        context: "Playground Games",
+        en: "Children followed the colorful painted lines like an imaginary obstacle course.",
+        ar: "تَتَبَّعَ الأَطْفَالُ الخُطُوطَ المُلَوَّنَةَ المَرْسُومَةَ كَمَسَارِ عَقَبَاتٍ تَخَيُّلِيٍّ.",
+      },
+      {
+        context: "Maintenance",
+        en: "The city repainted all faded boundary lines before the summer sports league.",
+        ar: "أَعَادَتِ المَدِينَةُ طِلَاءَ جَمِيعِ خُطُوطِ الحُدُودِ البَاهِتَةِ قَبْلَ دَوْرِيِّ الرِّيَاضَةِ الصَّيْفِيِّ.",
+      },
+    ],
+    exampleSentence: "Clear white painted lines demarcate the out-of-bounds area on the court.",
+    exampleArabic:
+      "تُحَدِّدُ خُطُوطٌ بَيْضَاءُ مَرْسُومَةٌ بِوُضُوحٍ مِنْطَقَةَ خَارِجِ المَلْعَبِ.",
+  },
+  puddle: {
+    id: "puddle",
+    arabic: "بِرْكَةُ مَاءٍ صَغِيرَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈpʌdl",
+    pronunciationTip: "Short 'u' sound /ʌ/: 'PUD-ul' (/ˈpʌd.əl/).",
+    collocations: [
+      "rain puddle",
+      "splash in a puddle",
+      "muddy puddle",
+      "deep puddle",
+      "jump over a puddle",
+      "water puddle",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "splash in",
+        meaning: "stamp feet in standing water",
+        arabic: "يَخُوضُ فِي بِرْكَةِ المَاء",
+        example: "Toddlers loved to splash in shallow puddles wearing yellow boots.",
+      },
+    ],
+    sentences: [
+      {
+        context: "After the Rain",
+        en: "Wearing yellow rain boots, the toddler jumped right into the muddy puddle.",
+        ar: "مُرْتَدِيًا جَزْمَةَ مَطَرٍ صَفْرَاءَ، قَفَزَ الطِّفْلُ الصَّغِيرُ مُبَاشَرَةً فِي بِرْكَةِ المَاءِ الطِّينِيَّةِ.",
+      },
+      {
+        context: "Reflection",
+        en: "The calm water of the rain puddle reflected the blue sky above.",
+        ar: "عَكَسَتِ المِيَاهُ الهَادِئَةُ لِبِرْكَةِ المَطَرِ السَّمَاءَ الزَّرْقَاءَ فِي الأَعْلَى.",
+      },
+      {
+        context: "Playground Walk",
+        en: "They carefully stepped around deep puddles forming along the dirt path.",
+        ar: "خَطَوْا بِحَذَرٍ حَوْلَ البِرَكِ العَمِيقَةِ المُتَشَكِّلَةِ عَلَى طُولِ المَمَرِّ التُّرَابِيِّ.",
+      },
+    ],
+    exampleSentence: "Wearing yellow rain boots, the toddler jumped right into the muddy puddle.",
+    exampleArabic:
+      "مُرْتَدِيًا جَزْمَةَ مَطَرٍ صَفْرَاءَ، قَفَزَ الطِّفْلُ الصَّغِيرُ مُبَاشَرَةً فِي بِرْكَةِ المَاءِ الطِّينِيَّةِ.",
+  },
+  child: {
+    id: "child",
+    arabic: "طِفْل",
+    partOfSpeech: "noun",
+    phonetic: "tʃaɪld",
+    pronunciationTip: "Long 'i' diphthong /aɪ/ starting with 'ch' (/tʃ/): 'CHYLD' (/tʃaɪld/).",
+    collocations: [
+      "young child",
+      "playful child",
+      "child safety",
+      "laughing child",
+      "every child",
+      "child development",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "grow up",
+        meaning: "mature from childhood to adulthood",
+        arabic: "يَكْبُرُ (يَنْشَأ)",
+        example: "Children grow up so fast when playing outside every day.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Park Activity",
+        en: "Every child in the neighborhood enjoys spending sunny afternoons at the park.",
+        ar: "يَسْتَمْتِعُ كُلُّ طِفْلٍ فِي الحَيِّ بِقَضَاءِ أَمْسِيَاتِ الصَّيْفِ المُشْمِسَةِ فِي الحَدِيقَةِ.",
+      },
+      {
+        context: "Imagination",
+        en: "A creative child turned the wooden structure into an imaginary castle.",
+        ar: "حَوَّلَ طِفْلٌ مُبْدِعٌ الهَيْكَلَ الخَشَبِيَّ إِلَى قَلْعَةٍ تَخَيُّلِيَّةٍ.",
+      },
+      {
+        context: "Social Skills",
+        en: "The playground helps every young child learn how to share and cooperate.",
+        ar: "يُسَاعِدُ المَلْعَبُ كُلَّ طِفْلٍ صَغِيرٍ عَلَى تَعَلُّمِ المُشَارَكَةِ وَالتَّعَاوُنِ.",
+      },
+    ],
+    exampleSentence:
+      "Every child in the neighborhood enjoys spending sunny afternoons at the park.",
+    exampleArabic:
+      "يَسْتَمْتِعُ كُلُّ طِفْلٍ فِي الحَيِّ بِقَضَاءِ أَمْسِيَاتِ الصَّيْفِ المُشْمِسَةِ فِي الحَدِيقَةِ.",
+  },
+  friend: {
+    id: "friend",
+    arabic: "صَدِيق",
+    partOfSpeech: "noun",
+    phonetic: "frɛnd",
+    pronunciationTip: "Short 'e' vowel /ɛ/: 'FREND' (/frɛnd/).",
+    collocations: [
+      "best friend",
+      "close friend",
+      "make a friend",
+      "play with a friend",
+      "childhood friend",
+      "loyal friend",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hang out",
+        meaning: "spend casual time together",
+        arabic: "يَقْضِي وَقْتًا مَعَ الأَصْدِقَاء",
+        example: "Good friends love to hang out together by the swings.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Socializing",
+        en: "She ran across the grass to greet her best friend by the swing set.",
+        ar: "رَكَضَتْ عَبْرَ العُشْبِ لِتُحَيِّيَ صَدِيقَتَهَا المُفَضَّلَةَ عِنْدَ الأَرَاجِيحِ.",
+      },
+      {
+        context: "Making Connections",
+        en: "It is easy for kids to make a new friend while sharing toys in the sandbox.",
+        ar: "مِنَ السَّهْلِ عَلَى الأَطْفَالِ تَكْوِينُ صَدِيقٍ جَدِيدٍ أَثْنَاءَ تَبَادُلِ اللُّعَبِ فِي صُنْدُوقِ الرَّمْلِ.",
+      },
+      {
+        context: "Cooperation",
+        en: "Two friends worked together to build the largest sandcastle in the pit.",
+        ar: "تَعَاوَنَ صَدِيقَانِ لِبِنَاءِ أَكْبَرِ قَلْعَةٍ رَمْلِيَّةٍ فِي الحُفْرَةِ.",
+      },
+    ],
+    exampleSentence: "She ran across the grass to greet her best friend by the swing set.",
+    exampleArabic:
+      "رَكَضَتْ عَبْرَ العُشْبِ لِتُحَيِّيَ صَدِيقَتَهَا المُفَضَّلَةَ عِنْدَ الأَرَاجِيحِ.",
+  },
+  parent: {
+    id: "parent",
+    arabic: "أَحَدُ الوَالِدَيْن (وَالِد / وَالِدَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpɛrənt",
+    pronunciationTip: "First syllable has /ɛr/: 'PAIR-unt' (/ˈpɛr.ənt/).",
+    collocations: [
+      "caring parent",
+      "parent supervision",
+      "sit on a bench as a parent",
+      "proud parent",
+      "parent and child",
+      "supportive parent",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "look after",
+        meaning: "supervise and care for a child",
+        arabic: "يَرْعَى (يَنْتَبِهُ لِـ)",
+        example: "Parents look after their young children on the climbing equipment.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Supervision",
+        en: "A watchful parent kept an eye on her toddler from the park bench.",
+        ar: "رَاقَبَتْ وَالِدَةٌ يَقِظَةٌ طِفْلَهَا الصَّغِيرَ مِنْ عَلَى مَقْعَدِ الحَدِيقَةِ.",
+      },
+      {
+        context: "Encouragement",
+        en: "The proud parent cheered as his son successfully reached the monkey bar platform.",
+        ar: "هَتَفَ الوَالِدُ الفَخُورُ بَيْنَمَا وَصَلَ ابْنُهُ بِنَجَاحٍ إِلَى مِنَصَّةِ قُضْبَانِ التَّعَلُّقِ.",
+      },
+      {
+        context: "Community",
+        en: "Parents chatted and shared tips while their kids played safely nearby.",
+        ar: "تَبَادَلَ الآبَاءُ الأَحَادِيثَ وَالنَّصَائِحَ بَيْنَمَا لَعِبَ أَطْفَالُهُمْ بِأَمَانٍ فِي الجِوَارِ.",
+      },
+    ],
+    exampleSentence: "A watchful parent kept an eye on her toddler from the park bench.",
+    exampleArabic:
+      "رَاقَبَتْ وَالِدَةٌ يَقِظَةٌ طِفْلَهَا الصَّغِيرَ مِنْ عَلَى مَقْعَدِ الحَدِيقَةِ.",
+  },
+  teacher: {
+    id: "teacher",
+    arabic: "مُعَلِّم (مُعَلِّمَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtiːtʃər",
+    pronunciationTip: "Long 'e' sound /iː/: 'TEE-cher' (/ˈtiː.tʃər/).",
+    collocations: [
+      "school teacher",
+      "preschool teacher",
+      "teacher guidance",
+      "listen to the teacher",
+      "dedicated teacher",
+      "physical education teacher",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "call out",
+        meaning: "shout instructions to students",
+        arabic: "يُنَادِي بِصَوْتٍ عَالٍ",
+        example: "The teacher called out when recess time came to an end.",
+      },
+    ],
+    sentences: [
+      {
+        context: "School Recess",
+        en: "The preschool teacher organized a fun game of tag on the grassy field.",
+        ar: "نَظَّمَتْ مُعَلِّمَةُ الرَّوْضَةِ لُعْبَةَ مُطَارَدَةٍ مُمْتِعَةً عَلَى المَلْعَبِ العُشْبِيِّ.",
+      },
+      {
+        context: "Safety Guidance",
+        en: "The teacher reminded students to wait their turn on the tall slide.",
+        ar: "ذَكَّرَ المُعَلِّمُ التَّلَامِيذَ بِانْتِظَارِ دَوْرِهِمْ عَلَى الزُّحْلَيْقَةِ العَالِيَةِ.",
+      },
+      {
+        context: "Field Trip",
+        en: "Two teachers accompanied the class during their visit to the botanical park.",
+        ar: "رَافَقَ مُعَلِّمَانِ الفَصْلَ خِلَالَ زِيَارَتِهِمْ لِلْحَدِيقَةِ النَّبَاتِيَّةِ.",
+      },
+    ],
+    exampleSentence: "The preschool teacher organized a fun game of tag on the grassy field.",
+    exampleArabic:
+      "نَظَّمَتْ مُعَلِّمَةُ الرَّوْضَةِ لُعْبَةَ مُطَارَدَةٍ مُمْتِعَةً عَلَى المَلْعَبِ العُشْبِيِّ.",
+  },
+  baby: {
+    id: "baby",
+    arabic: "رَضِيع",
+    partOfSpeech: "noun",
+    phonetic: "ˈbeɪbi",
+    pronunciationTip: "Long 'a' diphthong /eɪ/: 'BAY-bee' (/ˈbeɪ.bi/).",
+    collocations: [
+      "baby stroller",
+      "sleeping baby",
+      "cuddle a baby",
+      "baby rattle",
+      "infant baby",
+      "baby blanket",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wake up",
+        meaning: "stir from sleep",
+        arabic: "يَسْتَيْقِظ",
+        example: "The little baby woke up and cooed at the flying birds.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Park Stroll",
+        en: "The baby smiled warmly from her shaded stroller under the oak trees.",
+        ar: "ابْتَسَمَتِ الرَّضِيعَةُ بِدِفْءٍ مِنْ عَرَبَتِهَا المُظَلَّلَةِ تَحْتَ أَشْجَارِ البَلُّوطِ.",
+      },
+      {
+        context: "Infant Care",
+        en: "A gentle mother rocked the sleeping baby in the fresh morning air.",
+        ar: "هَزَّتْ أُمٌّ حَنُونٌ الرَّضِيعَ النَّائِمَ فِي هَوَاءِ الصَّبَاحِ المُنْعِشِ.",
+      },
+      {
+        context: "Playground Observation",
+        en: "The wide-eyed baby giggled at the colorful balloons floating past.",
+        ar: "ضَحِكَ الرَّضِيعُ المَفْتُونُ عَلَى البَالُونَاتِ المُلَوَّنَةِ العَابِرَةِ.",
+      },
+    ],
+    exampleSentence: "The baby smiled warmly from her shaded stroller under the oak trees.",
+    exampleArabic:
+      "ابْتَسَمَتِ الرَّضِيعَةُ بِدِفْءٍ مِنْ عَرَبَتِهَا المُظَلَّلَةِ تَحْتَ أَشْجَارِ البَلُّوطِ.",
+  },
+  toddler: {
+    id: "toddler",
+    arabic: "طِفْلٌ يَتَعَلَّمُ المَشْي (دَارِج)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtɑːdlər",
+    pronunciationTip: "Short 'o' sound /ɑː/: 'TAHD-ler' (/ˈtɑːd.lər/).",
+    collocations: [
+      "active toddler",
+      "toddler playground",
+      "toddler swing",
+      "curious toddler",
+      "toddler steps",
+      "energetic toddler",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "toddle along",
+        meaning: "walk with unsteady, charming steps",
+        arabic: "يَدْرُجُ (يَمْشِي خَطْوًا مُتَمَايِلًا)",
+        example: "The toddler toddled along the paved path toward the sandbox.",
+      },
+    ],
+    sentences: [
+      {
+        context: "First Steps",
+        en: "The eager toddler took unsteady steps across the soft rubber safety mat.",
+        ar: "خَطَا الطِّفْلُ الدَّارِجُ خَطَوَاتٍ غَيْرَ ثَابِتَةٍ عَبْرَ البِسَاطِ المَطَّاطِيِّ لِلْأَمَانِ.",
+      },
+      {
+        context: "Tot Lot Fun",
+        en: "A cheerful toddler clapped his hands while bouncing on the spring duck rider.",
+        ar: "صَفَّقَ طِفْلٌ صَغِيرٌ مَرِحٌ بِيَدَيْهِ بَيْنَمَا كَانَ يَتَأَرْجَحُ عَلَى لُعْبَةِ البَطَّةِ الزَّنْبَرَكِيَّةِ.",
+      },
+      {
+        context: "Exploration",
+        en: "Curious toddlers love scooping and pouring damp sand with plastic cups.",
+        ar: "يُحِبُّ الأَطْفَالُ الدَّارِجُونَ الفُضُولِيُّونَ غَرْفَ الرَّمْلِ الرَّطْبِ وَسَكْبَهُ بِأَكْوَابٍ بْلاسْتِيكِيَّةٍ.",
+      },
+    ],
+    exampleSentence: "The eager toddler took unsteady steps across the soft rubber safety mat.",
+    exampleArabic:
+      "خَطَا الطِّفْلُ الدَّارِجُ خَطَوَاتٍ غَيْرَ ثَابِتَةٍ عَبْرَ البِسَاطِ المَطَّاطِيِّ لِلْأَمَانِ.",
+  },
+  teenager: {
+    id: "teenager",
+    arabic: "مُرَاهِق",
+    partOfSpeech: "noun",
+    phonetic: "ˈtiːnˌeɪdʒər",
+    pronunciationTip: "Primary stress on 'TEEN': /ˈtiːnˌeɪ.dʒər/.",
+    collocations: [
+      "teenager sports",
+      "active teenager",
+      "group of teenagers",
+      "teenager skateboarder",
+      "young teenager",
+      "teenager volunteer",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "meet up",
+        meaning: "gather with peers",
+        arabic: "يَلْتَقِي بِـ",
+        example: "Teenagers love to meet up at the park basketball court after class.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sports & Recreation",
+        en: "A group of energetic teenagers played a friendly game of pick-up basketball.",
+        ar: "لَعِبَتْ مَجْمُوعَةٌ مِنَ المُرَاهِقِينَ النَّشِيطِينَ مُبَارَاةَ كُرَةِ سَلَّةٍ وِدِّيَّةً.",
+      },
+      {
+        context: "Skatepark",
+        en: "The teenager practiced kickflips and grinds on his wooden skateboard.",
+        ar: "تَدَرَّبَ المُرَاهِقُ عَلَى حَرَكَاتِ التَّزَلُّجِ وَالقَفَزَاتِ عَلَى لَوْحِ التَّزَلُّجِ الخَشَبِيِّ.",
+      },
+      {
+        context: "Mentorship",
+        en: "Several responsible teenagers helped coach younger kids at the community sports day.",
+        ar: "سَاعَدَ عَدَدٌ مِنَ المُرَاهِقِينَ المَسْؤُولِينَ فِي تَدْرِيبِ الصِّغَارِ فِي يَوْمِ الرِّيَاضَةِ المُجْتَمَعِيِّ.",
+      },
+    ],
+    exampleSentence: "A group of energetic teenagers played a friendly game of pick-up basketball.",
+    exampleArabic:
+      "لَعِبَتْ مَجْمُوعَةٌ مِنَ المُرَاهِقِينَ النَّشِيطِينَ مُبَارَاةَ كُرَةِ سَلَّةٍ وِدِّيَّةً.",
+  },
+  guard: {
+    id: "guard",
+    arabic: "حَارِسُ أَمْن",
+    partOfSpeech: "noun",
+    phonetic: "ɡɑːrd",
+    pronunciationTip: "Silent 'u': pronounce 'GARD' (/ɡɑːrd/).",
+    collocations: [
+      "park guard",
+      "security guard",
+      "guard post",
+      "patrolling guard",
+      "vigilant guard",
+      "uniformed guard",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "look out",
+        meaning: "watch carefully for potential hazards",
+        arabic: "يَحْتَرِسُ (يُرَاقِب)",
+        example: "The park guard looks out for everyone's safety near the lake.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Park Safety",
+        en: "The friendly park guard patrolled the perimeter gate to ensure child safety.",
+        ar: "دَارَ حَارِسُ الحَدِيقَةِ اللَّطِيفُ حَوْلَ بَوَّابَةِ السُّورِ لِضَمَانِ سَلامَةِ الأَطْفَالِ.",
+      },
+      {
+        context: "Assistance",
+        en: "A lost little boy approached the uniformed guard for help finding his mother.",
+        ar: "تَوَجَّهَ طِفْلٌ صَغِيرٌ تَائِهٌ إِلَى الحَارِسِ الَّذِي يَرْتَدِي الزِّيَّ الرَّسْمِيَّ لِمُسَاعَدَتِهِ فِي العُثُورِ عَلَى أُمِّهِ.",
+      },
+      {
+        context: "Gate Closing",
+        en: "The guard locked the main gate at sunset when the park closed.",
+        ar: "أَقْفَلَ الحَارِسُ البَوَّابَةَ الرَّئِيسِيَّةَ عِنْدَ الغُرُوبِ مَعَ إِغْلاقِ الحَدِيقَةِ.",
+      },
+    ],
+    exampleSentence: "The friendly park guard patrolled the perimeter gate to ensure child safety.",
+    exampleArabic:
+      "دَارَ حَارِسُ الحَدِيقَةِ اللَّطِيفُ حَوْلَ بَوَّابَةِ السُّورِ لِضَمَانِ سَلامَةِ الأَطْفَالِ.",
+  },
+  coach: {
+    id: "coach",
+    arabic: "مُدَرِّبٌ رِيَاضِيّ",
+    partOfSpeech: "noun",
+    phonetic: "koʊtʃ",
+    pronunciationTip: "Long 'o' sound /oʊ/: 'KOHCH' (/koʊtʃ/).",
+    collocations: [
+      "soccer coach",
+      "head coach",
+      "team coach",
+      "coach instructions",
+      "coach whistle",
+      "supportive coach",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "call up",
+        meaning: "summon players from the sideline",
+        arabic: "يَسْتَدْعِي اللَّاعِبِينَ",
+        example: "Coach called up the substitutes for the second half.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sports Practice",
+        en: "The soccer coach gathered the young players around to explain the passing drill.",
+        ar: "جَمَعَ مُدَرِّبُ كُرَةِ القَدَمِ اللَّاعِبِينَ الصِّغَارَ لِيَشْرَحَ لَهُمْ تَمْرِينَ التَّمْرِيرِ.",
+      },
+      {
+        context: "Encouragement",
+        en: "Our coach always gives constructive advice and motivates the team to do their best.",
+        ar: "يُقَدِّمُ مُدَرِّبُنَا دَائِمًا نَصَائِحَ بَنَّاءَةً وَيُحَفِّزُ الفَرِيقَ لِبَذْلِ قُصَارَى جُهْدِهِمْ.",
+      },
+      {
+        context: "Game Strategy",
+        en: "During halftime, the coach drew tactics on a magnetic whiteboard.",
+        ar: "خِلَالَ اسْتِرَاحَةِ الشَّوْطَيْنِ، رَسَمَ المُدَرِّبُ الخُطَطَ عَلَى لَوْحٍ مَغْنَاطِيسِيٍّ أَبْيَضَ.",
+      },
+    ],
+    exampleSentence:
+      "The soccer coach gathered the young players around to explain the passing drill.",
+    exampleArabic:
+      "جَمَعَ مُدَرِّبُ كُرَةِ القَدَمِ اللَّاعِبِينَ الصِّغَارَ لِيَشْرَحَ لَهُمْ تَمْرِينَ التَّمْرِيرِ.",
+  },
+  volunteer: {
+    id: "volunteer",
+    arabic: "مُتَطَوِّع",
+    partOfSpeech: "noun",
+    phonetic: "ˌvɑːlənˈtɪr",
+    pronunciationTip: "Stress on final syllable: 'vol-un-TEER' (/ˌvɑː.lənˈtɪr/).",
+    collocations: [
+      "park volunteer",
+      "community volunteer",
+      "volunteer work",
+      "helpful volunteer",
+      "youth volunteer",
+      "volunteer team",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "help out",
+        meaning: "assist willingly without pay",
+        arabic: "يُقَدِّمُ المُسَاعَدَةَ تَطَوُّعًا",
+        example: "Volunteers helped out by repainting the benches and planting flowers.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Community Service",
+        en: "Dedicated volunteers spent Saturday morning planting flowers and cleaning playground mulch.",
+        ar: "قَضَى المُتَطَوِّعُونَ المُخْلِصُونَ صَبَاحَ السَّبْتِ فِي زِرَاعَةِ الزُّهُورِ وَتَنْظِيفِ أَرْضِيَّةِ المَلْعَبِ.",
+      },
+      {
+        context: "Event Organizing",
+        en: "A cheerful volunteer handed out water bottles and snacks to young marathon runners.",
+        ar: "وَزَّعَ مُتَطَوِّعٌ بَشُوشٌ زُجَاجَاتِ المِيَاهِ وَالوُجَبَاتِ الخَفِيفَةَ عَلَى عَدَّائِي المَارَاثُونِ الصِّغَارِ.",
+      },
+      {
+        context: "Safety",
+        en: "Parent volunteers took turns monitoring the crosswalk near the community park.",
+        ar: "تَنَاوَبَ أَوْلِيَاءُ الأُمُورِ المُتَطَوِّعُونَ عَلَى مُرَاقَبَةِ مَمَرِّ المُشَاةِ قُرْبَ الحَدِيقَةِ العَامَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "Dedicated volunteers spent Saturday morning planting flowers and cleaning playground mulch.",
+    exampleArabic:
+      "قَضَى المُتَطَوِّعُونَ المُخْلِصُونَ صَبَاحَ السَّبْتِ فِي زِرَاعَةِ الزُّهُورِ وَتَنْظِيفِ أَرْضِيَّةِ المَلْعَبِ.",
+  },
+  swinging: {
+    id: "swinging",
+    arabic: "التَّأَرْجُح",
+    partOfSpeech: "noun",
+    phonetic: "ˈswɪŋɪŋ",
+    pronunciationTip: "Pronounce 'SWING-ing' (/ˈswɪŋ.ɪŋ/).",
+    collocations: [
+      "high swinging",
+      "gentle swinging",
+      "enjoy swinging",
+      "swinging motion",
+      "swinging back and forth",
+      "outdoor swinging",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "swing out",
+        meaning: "move outward at peak height",
+        arabic: "يَتَرَجَّحُ لِلْخَارِج",
+        example: "Her long hair flew back while swinging out toward the blue sky.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Play Activity",
+        en: "Swinging high in the cool breeze gave the children a thrilling sense of flight.",
+        ar: "مَنَحَ التَّأَرْجُحُ عَالِيًا فِي النَّسِيمِ العَلِيلِ الأَطْفَالَ شُعُورًا مُثِيرًا بِالطَّيَرَانِ.",
+      },
+      {
+        context: "Sensory Balance",
+        en: "Gentle swinging helps calm young toddlers and improves vestibular balance.",
+        ar: "يُسَاعِدُ التَّأَرْجُحُ اللَّطِيفُ عَلَى تَهْدِئَةِ الأَطْفَالِ الصِّغَارِ وَيُحَسِّنُ التَّوَازُنَ الدِّهْلِيزِيَّ.",
+      },
+      {
+        context: "Park Scene",
+        en: "Rhythmic swinging creaked happily in the peaceful neighborhood park.",
+        ar: "أَصْدَرَ التَّأَرْجُحُ الإِيقَاعِيُّ صَرِيرًا مُبْهِجًا فِي حَدِيقَةِ الحَيِّ الهَادِئَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Swinging high in the cool breeze gave the children a thrilling sense of flight.",
+    exampleArabic:
+      "مَنَحَ التَّأَرْجُحُ عَالِيًا فِي النَّسِيمِ العَلِيلِ الأَطْفَالَ شُعُورًا مُثِيرًا بِالطَّيَرَانِ.",
+  },
+  sliding: {
+    id: "sliding",
+    arabic: "التَّزَحْلُق",
+    partOfSpeech: "noun",
+    phonetic: "ˈslaɪdɪŋ",
+    pronunciationTip: "Long 'i' diphthong: 'SLY-ding' (/ˈslaɪ.dɪŋ/).",
+    collocations: [
+      "fast sliding",
+      "smooth sliding",
+      "sliding board",
+      "sliding down",
+      "sliding race",
+      "fun sliding",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "slide into",
+        meaning: "glide smoothly to a stop",
+        arabic: "يَنْزَلِقُ إِلَى",
+        example: "The excited kids slid into the soft pile of leaves.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Active Recreation",
+        en: "Sliding down the curving chute brought wide grins to all the kids.",
+        ar: "جَلَبَ التَّزَحْلُقُ إِلَى أَسْفَلِ المُنْزَلَقِ المُنْحَنِي ابْتِسَامَاتٍ عَرِيضَةً لِجَمِيعِ الأَطْفَالِ.",
+      },
+      {
+        context: "Winter Fun",
+        en: "Sliding on icy sledding hills is a favorite winter sport for families.",
+        ar: "يُعَدُّ التَّزَحْلُقُ عَلَى تِلَالِ التَّزَلُّجِ الجَلِيدِيَّةِ رِيَاضَةً شَتْوِيَّةً مُفَضَّلَةً لِلْعَائِلاتِ.",
+      },
+      {
+        context: "Physics of Play",
+        en: "Smooth polished plastic enables fast, frictionless sliding.",
+        ar: "يُتِيحُ البْلاسْتِيكُ المَصْقُولُ النَّاعِمُ تَزَحْلُقًا سَرِيعًا دُونَ احْتِكَاكٍ.",
+      },
+    ],
+    exampleSentence: "Sliding down the curving chute brought wide grins to all the kids.",
+    exampleArabic:
+      "جَلَبَ التَّزَحْلُقُ إِلَى أَسْفَلِ المُنْزَلَقِ المُنْحَنِي ابْتِسَامَاتٍ عَرِيضَةً لِجَمِيعِ الأَطْفَالِ.",
+  },
+  climbing: {
+    id: "climbing",
+    arabic: "التَّسَلُّق",
+    partOfSpeech: "noun",
+    phonetic: "ˈklaɪmɪŋ",
+    pronunciationTip: "Silent 'b': pronounce 'CLY-ming' (/ˈklaɪ.mɪŋ/).",
+    collocations: [
+      "rock climbing",
+      "tree climbing",
+      "rope climbing",
+      "climbing wall",
+      "climbing gear",
+      "safe climbing",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "climb up",
+        meaning: "ascend vertical steps or footholds",
+        arabic: "يَتَسَلَّقُ صُعُودًا",
+        example: "He climbed up the boulder wall using color-coded hand grips.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Physical Fitness",
+        en: "Climbing the cargo rope net builds agility, balance, and hand grip strength.",
+        ar: "يَبْنِي تَسَلُّقُ شَبَكَةِ الحِبَالِ المُرُونَةَ وَالتَّوَازُنَ وَقُوَّةَ قَبْضَةِ اليَدِ.",
+      },
+      {
+        context: "Wall Climbing",
+        en: "The playground includes a mini boulder wall designed for safe rock climbing.",
+        ar: "يَشْمَلُ المَلْعَبُ جِدَارَ تَسَلُّقٍ مُصَغَّرًا مُصَمَّمًا لِتَسَلُّقِ الصُّخُورِ بِأَمَانٍ.",
+      },
+      {
+        context: "Adventure",
+        en: "Kids cheered as they mastered climbing to the summit of the tower.",
+        ar: "هَتَفَ الأَطْفَالُ بَعْدَ أَنْ أَتْقَنُوا التَّسَلُّقَ إِلَى قِمَّةِ البُرْجِ.",
+      },
+    ],
+    exampleSentence: "Climbing the cargo rope net builds agility, balance, and hand grip strength.",
+    exampleArabic:
+      "يَبْنِي تَسَلُّقُ شَبَكَةِ الحِبَالِ المُرُونَةَ وَالتَّوَازُنَ وَقُوَّةَ قَبْضَةِ اليَدِ.",
+  },
+  running: {
+    id: "running",
+    arabic: "الجَرْي (الرَّكْض)",
+    partOfSpeech: "noun",
+    phonetic: "ˈrʌnɪŋ",
+    pronunciationTip: "Short 'u' sound /ʌ/: 'RUN-ing' (/ˈrʌn.ɪŋ/).",
+    collocations: [
+      "running shoes",
+      "fast running",
+      "running track",
+      "running game",
+      "endurance running",
+      "sprint running",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "run around",
+        meaning: "sprint playfully in circles",
+        arabic: "يَرْكُضُ فِي الأَرْجَاءِ",
+        example: "Children love to run around freely across the grassy meadow.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cardio Exercise",
+        en: "Running across the open grass field keeps the children energetic and healthy.",
+        ar: "يُحَافِظُ الجَرْيُ عَبْرَ الحَقْلِ العُشْبِيِّ المَفْتُوحِ عَلَى نَشَاطِ الأَطْفَالِ وَصِحَّتِهِمْ.",
+      },
+      {
+        context: "Footwear",
+        en: "Proper cushioned athletic shoes protect ankles during sprint running.",
+        ar: "تَحْمِي الأَحْذِيَةُ الرِّيَاضِيَّةُ المُبَطَّنَةُ المُنَاسِبَةُ الكَاحِلَيْنِ أَثْنَاءَ الرَّكْضِ السَّرِيعِ.",
+      },
+      {
+        context: "Games",
+        en: "A game of tag involves rapid turns, sudden stops, and swift running.",
+        ar: "تَتَضَمَّنُ لُعْبَةُ المُطَارَدَةِ انْعِطَافَاتٍ سَرِيعَةً وَتَوَقُّفَاتٍ مُفَاجِئَةً وَجَرْيًا خَاطِفًا.",
+      },
+    ],
+    exampleSentence:
+      "Running across the open grass field keeps the children energetic and healthy.",
+    exampleArabic:
+      "يُحَافِظُ الجَرْيُ عَبْرَ الحَقْلِ العُشْبِيِّ المَفْتُوحِ عَلَى نَشَاطِ الأَطْفَالِ وَصِحَّتِهِمْ.",
+  },
+  jumping: {
+    id: "jumping",
+    arabic: "القَفْز",
+    partOfSpeech: "noun",
+    phonetic: "ˈdʒʌmpɪŋ",
+    pronunciationTip: "Pronounce 'JUMP-ing' (/ˈdʒʌm.pɪŋ/).",
+    collocations: [
+      "jumping rope",
+      "high jumping",
+      "jumping jacks",
+      "jumping into puddles",
+      "jumping off the beam",
+      "trampoline jumping",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "jump over",
+        meaning: "leap across an obstacle",
+        arabic: "يَقْفِزُ فَوْقَ",
+        example: "He learned how to safely jump over small hurdles.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Play & Exercise",
+        en: "Jumping rope to rhythmic rhymes is a classic recess game among schoolchildren.",
+        ar: "يُعَدُّ نَطُّ الحَبْلِ مَعَ الأَنَاشِيدِ الإِيقَاعِيَّةِ لُعْبَةَ اسْتِرَاحَةٍ كْلاسِيكِيَّةً بَيْنَ تَلامِيذِ المَدَارِسِ.",
+      },
+      {
+        context: "Coordination",
+        en: "Landing on both feet softly ensures safe jumping from low platforms.",
+        ar: "يَضْمَنُ الهُبُوطُ بِخِفَّةٍ عَلَى كِلْتَا القَدَمَيْنِ قَفْزًا آمِنًا مِنَ المِنَصَّاتِ المُنْخَفِضَةِ.",
+      },
+      {
+        context: "Enthusiasm",
+        en: "The excited kids were jumping with joy after scoring the winning goal.",
+        ar: "كَانَ الأَطْفَالُ المُتَحَمِّسُونَ يَقْفِزُونَ مِنَ الفَرَحِ بَعْدَ تَسْجِيلِ هَدَفِ الفَوْزِ.",
+      },
+    ],
+    exampleSentence:
+      "Jumping rope to rhythmic rhymes is a classic recess game among schoolchildren.",
+    exampleArabic:
+      "يُعَدُّ نَطُّ الحَبْلِ مَعَ الأَنَاشِيدِ الإِيقَاعِيَّةِ لُعْبَةَ اسْتِرَاحَةٍ كْلاسِيكِيَّةً بَيْنَ تَلامِيذِ المَدَارِسِ.",
+  },
+  throwing: {
+    id: "throwing",
+    arabic: "الرَّمْي (القَذْف)",
+    partOfSpeech: "noun",
+    phonetic: "ˈθroʊɪŋ",
+    pronunciationTip: "Voiceless 'th' /θ/ with 'ro-wing': 'THROH-ing' (/ˈθroʊ.ɪŋ/).",
+    collocations: [
+      "throwing a ball",
+      "frisbee throwing",
+      "accurate throwing",
+      "throwing technique",
+      "overhand throwing",
+      "throwing motion",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "throw out",
+        meaning: "launch an object to a teammate",
+        arabic: "يَرْمِي نَحْوَ",
+        example: "The catcher threw out the ball to second base.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sports Skills",
+        en: "Practicing overhand throwing improves upper-body coordination and pitch accuracy.",
+        ar: "تُحَسِّنُ مُمَارَسَةُ الرَّمْيِ مِنْ فَوْقِ الكَتِفِ تَنَاسُقَ الجُزْءِ العُلْوِيِّ مِنَ الجِسْمِ وَدِقَّةَ التَّسْدِيدِ.",
+      },
+      {
+        context: "Park Catch",
+        en: "He enjoyed throwing a flying disc across the lawn for his dog to chase.",
+        ar: "اسْتَمْتَعَ بِقَذْفِ القُرْصِ الطَّائِرِ عَبْرَ الحَقْلِ لِيَلْحَقَ بِهِ كَلْبُهُ.",
+      },
+      {
+        context: "Team Games",
+        en: "Quick throwing and accurate passing are essential skills in dodgeball.",
+        ar: "يُعَدُّ الرَّمْيُ السَّرِيعُ وَالتَّمْرِيرُ الدَّقِيقُ مِنْ مَهَارَاتِ لُعْبَةِ كُرَةِ التَّفَادِي الأَسَاسِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "Practicing overhand throwing improves upper-body coordination and pitch accuracy.",
+    exampleArabic:
+      "تُحَسِّنُ مُمَارَسَةُ الرَّمْيِ مِنْ فَوْقِ الكَتِفِ تَنَاسُقَ الجُزْءِ العُلْوِيِّ مِنَ الجِسْمِ وَدِقَّةَ التَّسْدِيدِ.",
+  },
+  catching: {
+    id: "catching",
+    arabic: "الإِمْسَاكُ بِالشَّيْء (اللَّقْف)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkætʃɪŋ",
+    pronunciationTip: "Short 'a' /æ/ ending in 'ing': 'KATCH-ing' (/ˈkætʃ.ɪŋ/).",
+    collocations: [
+      "catching a ball",
+      "baseball catching",
+      "two-handed catching",
+      "catching glove",
+      "practicing catching",
+      "catching skills",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "catch up",
+        meaning: "reach the same point as another",
+        arabic: "يَلْحَقُ بِـ",
+        example: "He ran quickly to catch up with his classmates.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Coordination",
+        en: "Catching a high baseball requires keen hand-eye coordination and focus.",
+        ar: "يَتَطَلَّبُ الْتِقَاطُ كُرَةِ البَيْسْبُولِ العَالِيَةِ تَنَاسُقًا دَقِيقًا بَيْنَ العَيْنِ وَاليَدِ وَتَرْكِيزًا.",
+      },
+      {
+        context: "Playground Catch",
+        en: "Father and daughter practiced catching the soft foam ball back and forth.",
+        ar: "تَدَرَّبَ الأَبُ وَابْنَتُهُ عَلَى لَقْفِ الكُرَةِ الرَّغْوِيَّةِ الطَّرِيَّةِ ذَهَابًا وَإِيَابًا.",
+      },
+      {
+        context: "Glove Technique",
+        en: "Opening the leather mitt wide makes catching fly balls much easier.",
+        ar: "فَتْحُ القُفَّازِ الجِلْدِيِّ عَلَى اتِّسَاعِهِ يَجْعَلُ الْتِقَاطَ الكُرَاتِ الطَّائِرَةِ أَسْهَلَ بِكَثِيرٍ.",
+      },
+    ],
+    exampleSentence: "Catching a high baseball requires keen hand-eye coordination and focus.",
+    exampleArabic:
+      "يَتَطَلَّبُ الْتِقَاطُ كُرَةِ البَيْسْبُولِ العَالِيَةِ تَنَاسُقًا دَقِيقًا بَيْنَ العَيْنِ وَاليَدِ وَتَرْكِيزًا.",
+  },
+  kicking: {
+    id: "kicking",
+    arabic: "الرَّكْل",
+    partOfSpeech: "noun",
+    phonetic: "ˈkɪkɪŋ",
+    pronunciationTip: "Short 'i' sound /ɪ/: 'KIK-ing' (/ˈkɪk.ɪŋ/).",
+    collocations: [
+      "kicking a soccer ball",
+      "powerful kicking",
+      "kicking technique",
+      "kicking towards the goal",
+      "penalty kicking",
+      "high kicking",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "kick off",
+        meaning: "start a match or activity",
+        arabic: "يَبْدَأُ (يَرْكُلُ كُرَةَ البِدَايَة)",
+        example: "The referee blew the whistle to kick off the tournament.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Soccer Practice",
+        en: "Kicking with the inside of the foot provides maximum passing accuracy.",
+        ar: "يَمْنَحُ الرَّكْلُ بِبَاطِنِ القَدَمِ أَقْصَى دَرَجَاتِ الدِّقَّةِ فِي التَّمْرِيرِ.",
+      },
+      {
+        context: "Park Games",
+        en: "The boys spent hours kicking the soccer ball back and forth between goalposts.",
+        ar: "قَضَى الأَوْلادُ سَاعَاتٍ فِي رَكْلِ كُرَةِ القَدَمِ ذَهَابًا وَإِيَابًا بَيْنَ قَائِمَيِ المَرْمَى.",
+      },
+      {
+        context: "Martial Arts & Sports",
+        en: "Proper kicking form involves engaging your core muscles for balance.",
+        ar: "تَتَضَمَّنُ هَيْئَةُ الرَّكْلِ الصَّحِيحَةُ إِشْرَاكَ عَضَلاتِ الجِذْعِ لِلْحِفَاظِ عَلَى التَّوَازُنِ.",
+      },
+    ],
+    exampleSentence: "Kicking with the inside of the foot provides maximum passing accuracy.",
+    exampleArabic:
+      "يَمْنَحُ الرَّكْلُ بِبَاطِنِ القَدَمِ أَقْصَى دَرَجَاتِ الدِّقَّةِ فِي التَّمْرِيرِ.",
+  },
+  skipping: {
+    id: "skipping",
+    arabic: "الحَجْل (نَطُّ الحَبْل)",
+    partOfSpeech: "noun",
+    phonetic: "ˈskɪpɪŋ",
+    pronunciationTip: "Short 'i' sound /ɪ/: 'SKIP-ing' (/ˈskɪp.ɪŋ/).",
+    collocations: [
+      "skipping rope",
+      "skipping down the path",
+      "cheerful skipping",
+      "skipping rhythm",
+      "skipping exercise",
+      "skipping steps",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "skip along",
+        meaning: "move forward with light bounding steps",
+        arabic: "يَحْجُلُ فَرِحًا لِلأَمَام",
+        example: "The little girl skipped along the path holding her mother's hand.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Playground Joy",
+        en: "The happy girl went skipping down the park path toward the playground swings.",
+        ar: "مَضَتِ الفَتَاةُ المَبْسُوطَةُ تَحْجُلُ فَرَحًا عَلَى مَمَرِّ الحَدِيقَةِ نَحْوَ أَرَاجِيحِ المَلْعَبِ.",
+      },
+      {
+        context: "Cardio Training",
+        en: "Skipping rope for ten minutes provides an intense full-body cardiovascular workout.",
+        ar: "يُوَفِّرُ نَطُّ الحَبْلِ لِمُدَّةِ عَشْرِ دَقَائِقَ تَمْرِينًا قَلْبِيًّا مُكَثَّفًا لِكَامِلِ الجِسْمِ.",
+      },
+      {
+        context: "Rhythm",
+        en: "Two children chanted schoolyard songs while skipping together in sync.",
+        ar: "أَنْشَدَ طِفْلَانِ أَغَانِيَ المَدْرَسَةِ بَيْنَمَا كَانَا يَقْفِزَانِ مَعًا بِتَنَاغُمٍ.",
+      },
+    ],
+    exampleSentence:
+      "The happy girl went skipping down the park path toward the playground swings.",
+    exampleArabic:
+      "مَضَتِ الفَتَاةُ المَبْسُوطَةُ تَحْجُلُ فَرَحًا عَلَى مَمَرِّ الحَدِيقَةِ نَحْوَ أَرَاجِيحِ المَلْعَبِ.",
+  },
+  hiding: {
+    id: "hiding",
+    arabic: "الاِخْتِبَاء",
+    partOfSpeech: "noun",
+    phonetic: "ˈhaɪdɪŋ",
+    pronunciationTip: "Long 'i' diphthong /aɪ/: 'HY-ding' (/ˈhaɪ.dɪŋ/).",
+    collocations: [
+      "hide-and-seek hiding",
+      "secret hiding spot",
+      "hiding behind a tree",
+      "expert hiding",
+      "good at hiding",
+      "hiding place",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hide away",
+        meaning: "remain concealed in a secluded spot",
+        arabic: "يَتَوَارَى (يَخْتَبِئ)",
+        example: "He hid away inside the wooden tunnel during hide-and-seek.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Childhood Games",
+        en: "Hiding behind the broad oak trunk kept him safe during hide-and-seek.",
+        ar: "حَافَظَ الاِخْتِبَاءُ خَلْفَ جِذْعِ البَلُّوطِ العَرِيضِ عَلَى أَمَانِهِ أَثْنَاءَ لُعْبَةِ الغُمَّيْضَةِ.",
+      },
+      {
+        context: "Playground Maze",
+        en: "The play tunnel provided an ideal hiding place from the seekers.",
+        ar: "وَفَّرَ نَفَقُ اللَّعِبِ مَكَانَ اخْتِبَاءٍ مِثَالِيًّا عَنِ البَاحِثِينَ.",
+      },
+      {
+        context: "Suspense",
+        en: "She held her breath while hiding quietly beneath the climbing platform.",
+        ar: "حَبَسَتْ أَنْفَاسَهَا وَهِيَ تَخْتَبِئُ بِهُدُوءٍ تَحْتَ مِنَصَّةِ التَّسَلُّقِ.",
+      },
+    ],
+    exampleSentence: "Hiding behind the broad oak trunk kept him safe during hide-and-seek.",
+    exampleArabic:
+      "حَافَظَ الاِخْتِبَاءُ خَلْفَ جِذْعِ البَلُّوطِ العَرِيضِ عَلَى أَمَانِهِ أَثْنَاءَ لُعْبَةِ الغُمَّيْضَةِ.",
+  },
+  "water-fountain": {
+    id: "water-fountain",
+    arabic: "نَافُورَةُ شُرْبِ المَاء (مَشْرَبِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɔːtər ˌfaʊntn",
+    pronunciationTip: "Pronounce 'water' (/ˈwɔː.tər/) then 'fountain' (/ˈfaʊn.tən/).",
+    collocations: [
+      "drinking water fountain",
+      "press the water fountain",
+      "cold water fountain",
+      "outdoor water fountain",
+      "water fountain spout",
+      "refill at the water fountain",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "drink from",
+        meaning: "sip stream directly from tap",
+        arabic: "يَشْرَبُ مِنْ",
+        example: "Thirsty athletes drank from the cool stainless steel fountain.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Hydration",
+        en: "Thirsty kids lined up at the outdoor water fountain to take cool drinks.",
+        ar: "اصْطَفَّ الأَطْفَالُ العِطَاشُ عِنْدَ نَافُورَةِ الشُّرْبِ الخَارِجِيَّةِ لِتَنَاوُلِ جَرْعَاتِ مَاءٍ بَارِدَةٍ.",
+      },
+      {
+        context: "Refill Station",
+        en: "She refilled her reusable sports bottle from the park water fountain.",
+        ar: "أَعَادَتْ مَلْءَ قَارُورَتِهَا الرِّيَاضِيَّةِ مِنْ مَشْرَبِيَّةِ الحَدِيقَةِ.",
+      },
+      {
+        context: "Hygiene & Design",
+        en: "The stainless steel fountain features a lower basin accessible for toddlers.",
+        ar: "تَتَمَيَّزُ نَافُورَةُ الفُولاذِ المُقَاوِمِ لِلصَّدَأِ بِحَوْضٍ سُفْلِيٍّ يُنَاسِبُ الأَطْفَالَ الصِّغَارَ.",
+      },
+    ],
+    exampleSentence: "Thirsty kids lined up at the outdoor water fountain to take cool drinks.",
+    exampleArabic:
+      "اصْطَفَّ الأَطْفَالُ العِطَاشُ عِنْدَ نَافُورَةِ الشُّرْبِ الخَارِجِيَّةِ لِتَنَاوُلِ جَرْعَاتِ مَاءٍ بَارِدَةٍ.",
+  },
+  "shade-structure": {
+    id: "shade-structure",
+    arabic: "مِظَلَّةُ وِقَايَةٍ مِنَ الشَّمْس",
+    partOfSpeech: "noun",
+    phonetic: "ˈʃeɪd ˌstrʌktʃər",
+    pronunciationTip: "Pronounce 'shade' (/ʃeɪd/) then 'structure' (/ˈstrʌk.tʃər/).",
+    collocations: [
+      "canopy shade structure",
+      "protective shade structure",
+      "rest under the shade structure",
+      "fabric shade structure",
+      "playground shade structure",
+      "sun protection shade structure",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "cool off",
+        meaning: "rest in the shadow away from direct heat",
+        arabic: "يَسْتَرِيحُ فِي الظِّلّ",
+        example: "Parents cooled off under the large fabric canopy on hot afternoons.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sun Safety",
+        en: "The large fabric shade structure shields children from harsh midday sunlight.",
+        ar: "تَحْمِي مِظَلَّةُ القُمَاشِ الكَبِيرَةُ الأَطْفَالَ مِنْ أَشِعَّةِ الشَّمْسِ القَوِيَّةِ فِي مُنْتَصَفِ النَّهَارِ.",
+      },
+      {
+        context: "Park Architecture",
+        en: "Picnic tables were positioned underneath the modern steel shade structure.",
+        ar: "وُضِعَتْ طَاوِلاتُ النُّزْهَةِ تَحْتَ مِظَلَّةِ الحِمَايَةِ الفُولاذِيَّةِ الحَدِيثَةِ.",
+      },
+      {
+        context: "Comfort",
+        en: "Resting under the canopy helps prevent overheating during summer play.",
+        ar: "تُسَاعِدُ الاسْتِرَاحَةُ تَحْتَ المِظَلَّةِ فِي تَفَادِي ارْتِفَاعِ حَرَارَةِ الجِسْمِ خِلَالَ اللَّعِبِ الصَّيْفِيِّ.",
+      },
+    ],
+    exampleSentence:
+      "The large fabric shade structure shields children from harsh midday sunlight.",
+    exampleArabic:
+      "تَحْمِي مِظَلَّةُ القُمَاشِ الكَبِيرَةُ الأَطْفَالَ مِنْ أَشِعَّةِ الشَّمْسِ القَوِيَّةِ فِي مُنْتَصَفِ النَّهَارِ.",
+  },
+  sign: {
+    id: "sign",
+    arabic: "لَافِتَةُ إِرْشَادَات",
+    partOfSpeech: "noun",
+    phonetic: "saɪn",
+    pronunciationTip: "Silent 'g': pronounce 'SYNE' (/saɪn/).",
+    collocations: [
+      "park rules sign",
+      "safety sign",
+      "read the sign",
+      "metal sign",
+      "posted sign",
+      "welcome sign",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "point to",
+        meaning: "indicate directions or guidelines",
+        arabic: "يُشِيرُ إِلَى",
+        example: "The wooden sign pointed toward the playground and restrooms.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Park Guidelines",
+        en: "A clear metal sign near the gate displays playground opening hours and safety rules.",
+        ar: "تَعْرِضُ لَافِتَةٌ مَعْدَنِيَّةٌ وَاضِحَةٌ قُرْبَ البَوَّابَةِ سَاعَاتِ فَتْحِ المَلْعَبِ وَقَوَاعِدَ الأَمَانِ.",
+      },
+      {
+        context: "Directions",
+        en: "The wooden trail sign directed visitors toward the scenic duck pond.",
+        ar: "أَرْشَدَتْ لَافِتَةُ المَسَارِ الخَشَبِيَّةُ الزُّوَّارَ نَحْوَ بِرْكَةِ البَطِّ الخَلابَةِ.",
+      },
+      {
+        context: "Caution",
+        en: "A caution sign warned visitors that the playground surface was wet.",
+        ar: "حَذَّرَتْ لَافِتَةُ تَنْبِيهٍ الزُّوَّارَ مِنْ أَنَّ أَرْضِيَّةَ المَلْعَبِ كَانَتْ مُبْتَلَّةً.",
+      },
+    ],
+    exampleSentence:
+      "A clear metal sign near the gate displays playground opening hours and safety rules.",
+    exampleArabic:
+      "تَعْرِضُ لَافِتَةٌ مَعْدَنِيَّةٌ وَاضِحَةٌ قُرْبَ البَوَّابَةِ سَاعَاتِ فَتْحِ المَلْعَبِ وَقَوَاعِدَ الأَمَانِ.",
+  },
+  bell: {
+    id: "bell",
+    arabic: "جَرَسُ المَلْعَب",
+    partOfSpeech: "noun",
+    phonetic: "bɛl",
+    pronunciationTip: "Short 'e' sound /ɛ/: 'BELL' (/bɛl/).",
+    collocations: [
+      "ring the bell",
+      "school bell",
+      "brass bell",
+      "chime of a bell",
+      "recess bell",
+      "loud bell",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "ring out",
+        meaning: "sound clearly across the yard",
+        arabic: "يَرُنُّ عَالِيًا",
+        example: "The brass bell rang out loudly to signal the start of playtime.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Playground Clang",
+        en: "Kids climbed the ship playhouse to proudly ring the shiny brass bell.",
+        ar: "تَسَلَّقَ الأَطْفَالُ بَيْتَ السَّفِينَةِ لِيَقْرَعُوا بِفَخْرٍ الجَرَسَ النُّحَاسِيَّ اللَّامِعَ.",
+      },
+      {
+        context: "School Recess",
+        en: "The school bell chimed loudly, announcing that afternoon recess had begun.",
+        ar: "دَقَّ جَرَسُ المَدْرَسَةِ بِصَوْتٍ عَالٍ مُعْلِنًا بَدْءَ اسْتِرَاحَةِ بَعْدِ الظُّهْرِ.",
+      },
+      {
+        context: "Sound & Signal",
+        en: "A clear bell chime echoed across the open playing fields.",
+        ar: "تَرَدَّدَتْ رَنَّةُ الجَرَسِ الوَاضِحَةُ عَبْرَ مَلَاعِبِ اللَّعِبِ المَفْتُوحَةِ.",
+      },
+    ],
+    exampleSentence: "Kids climbed the ship playhouse to proudly ring the shiny brass bell.",
+    exampleArabic:
+      "تَسَلَّقَ الأَطْفَالُ بَيْتَ السَّفِينَةِ لِيَقْرَعُوا بِفَخْرٍ الجَرَسَ النُّحَاسِيَّ اللَّامِعَ.",
+  },
+  flag: {
+    id: "flag",
+    arabic: "عَلَم (رَايَة)",
+    partOfSpeech: "noun",
+    phonetic: "flæɡ",
+    pronunciationTip: "Short 'a' sound /æ/ as in 'bag': 'FLAG' (/flæɡ/).",
+    collocations: [
+      "waving flag",
+      "flag pole",
+      "raise the flag",
+      "colorful flag",
+      "national flag",
+      "flapping flag",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wave in",
+        meaning: "flutter with moving air currents",
+        arabic: "يُرَفْرِفُ فِي الهَوَاء",
+        example: "The bright flag waved in the fresh autumn breeze.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Park Landmark",
+        en: "A vibrant rainbow flag fluttered proudly atop the tall central flagpole.",
+        ar: "رَفْرَفَ عَلَمُ قَوْسِ قُزَحَ الزَّاهِي بِفَخْرٍ فَوْقَ سَارِيَةِ الأَعْلامِ المَرْكَزِيَّةِ الطَّوِيلَةِ.",
+      },
+      {
+        context: "Playground Castle",
+        en: "A small triangular yellow flag crowned the highest roof of the play fort.",
+        ar: "تَوَّجَتْ رَايَةٌ صَفْرَاءُ مُثَلَّثَةٌ صَغِيرَةٌ أَعْلَى سَقْفٍ فِي قَلْعَةِ اللَّعِبِ.",
+      },
+      {
+        context: "Ceremony",
+        en: "The scouts raised the national flag during the morning opening ceremony.",
+        ar: "رَفَعَ الكَشَّافَةُ العَلَمَ الوَطَنِيَّ خِلَالَ مَرَاسِمِ الاِفْتِتَاحِ الصَّبَاحِيَّةِ.",
+      },
+    ],
+    exampleSentence: "A vibrant rainbow flag fluttered proudly atop the tall central flagpole.",
+    exampleArabic:
+      "رَفْرَفَ عَلَمُ قَوْسِ قُزَحَ الزَّاهِي بِفَخْرٍ فَوْقَ سَارِيَةِ الأَعْلامِ المَرْكَزِيَّةِ الطَّوِيلَةِ.",
+  },
 };
 
 /**

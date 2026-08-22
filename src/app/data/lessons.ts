@@ -3839,6 +3839,723 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
   },
 ];
 
+// ==========================================
+// THE PLAYGROUND
+// ==========================================
+
+export const PLAYGROUND_TOPICS: TopicCategory[] = [
+  {
+    id: "play-equipment",
+    name: "Play Equipment",
+    description:
+      "Classic playground structures designed for swinging, sliding, spinning, and climbing.",
+    icon: "sparkles",
+    itemsCount: 10,
+  },
+  {
+    id: "sports-equipment",
+    name: "Sports Equipment",
+    description: "Gear, protective wear, and accessories used for active games and field matches.",
+    icon: "trophy",
+    itemsCount: 10,
+  },
+  {
+    id: "playground-surface",
+    name: "Playground Surface",
+    description: "Ground textures, safety flooring, pavement markings, and outdoor elements.",
+    icon: "layers",
+    itemsCount: 10,
+  },
+  {
+    id: "people-playground",
+    name: "People at the Playground",
+    description:
+      "Community members, learners, caregivers, and guides sharing the recreational space.",
+    icon: "users",
+    itemsCount: 10,
+  },
+  {
+    id: "playground-activities",
+    name: "Playground Activities",
+    description: "Active movements, energetic exercises, and classic schoolyard games.",
+    icon: "activity",
+    itemsCount: 10,
+  },
+  {
+    id: "playground-features",
+    name: "Playground Features",
+    description: "Park infrastructure, safety stations, boundaries, and resting facilities.",
+    icon: "map-pin",
+    itemsCount: 10,
+  },
+];
+
+export const PLAYGROUND_GROUPS: Lesson[] = [
+  {
+    id: "play-equipment",
+    name: "Play Equipment",
+    topicId: "play-equipment",
+    description: "Learn the core equipment and structures found on every playground.",
+    wordIds: [
+      "swing",
+      "slide",
+      "seesaw",
+      "climbing-frame",
+      "sandbox",
+      "monkey-bars",
+      "merry-go-round",
+      "spring-rider",
+      "tunnel",
+      "balance-beam",
+    ],
+    story:
+      "Mia raced across the park to the swing and zipped down the spiral slide. Two friends balanced on the seesaw, while others conquered the geometric climbing-frame. In the corner, toddlers dug in the sandbox and rocked on the spring-rider. Liam traversed the high monkey-bars, crawled through the bright tunnel, spun on the merry-go-round, and carefully walked the balance-beam.",
+  },
+  {
+    id: "sports-equipment",
+    name: "Sports Equipment",
+    topicId: "sports-equipment",
+    description: "Learn about sports gear, protective pads, and athletic accessories.",
+    wordIds: [
+      "ball",
+      "hoop",
+      "bat",
+      "racket",
+      "net",
+      "goal",
+      "whistle",
+      "stopwatch",
+      "helmet",
+      "knee-pad",
+    ],
+    story:
+      "Leo stepped onto the court with a soccer ball and twirled a plastic hoop. Maya swung her baseball bat while her teammate grabbed a tennis racket near the court net. The coach blew his silver whistle to start the drill toward the open goal, tracking sprint times on his digital stopwatch. Every skater strapped on a protective helmet and padded knee-pad for safety.",
+  },
+  {
+    id: "playground-surface",
+    name: "Playground Surface",
+    topicId: "playground-surface",
+    description: "Learn the different ground surfaces, pavement games, and weather elements.",
+    wordIds: [
+      "rubber-mat",
+      "sand",
+      "gravel",
+      "grass",
+      "concrete",
+      "chalk-drawing",
+      "hopscotch",
+      "painted-lines",
+      "puddle",
+      "mud",
+    ],
+    story:
+      "Beneath the swings lay a thick rubber-mat next to the golden sand pit. Footsteps crunched on the gravel path before stepping onto the lush green grass. Across the smooth concrete court, children admired a colorful chalk-drawing and hopped through a hopscotch grid marked by crisp painted-lines. After the rain, they splashed in a clear puddle and avoided the sticky mud.",
+  },
+  {
+    id: "people-playground",
+    name: "People at the Playground",
+    topicId: "people-playground",
+    description: "Learn the names of people, caregivers, and guides at the park.",
+    wordIds: [
+      "child",
+      "friend",
+      "parent",
+      "teacher",
+      "baby",
+      "toddler",
+      "teenager",
+      "guard",
+      "coach",
+      "volunteer",
+    ],
+    story:
+      "Every child in the neighborhood came to play with a friend. An attentive parent sat reading while a preschool teacher gathered her class. A sleeping baby rested in a stroller as an energetic toddler took unsteady steps across the turf. A teenager practiced skate tricks near the court, guided by a watchful guard, while the soccer coach and a helpful volunteer handed out water bottles.",
+  },
+  {
+    id: "playground-activities",
+    name: "Playground Activities",
+    topicId: "playground-activities",
+    description: "Learn key action verbs and fun physical games played at the park.",
+    wordIds: [
+      "swinging",
+      "sliding",
+      "climbing",
+      "running",
+      "jumping",
+      "throwing",
+      "catching",
+      "kicking",
+      "skipping",
+      "hiding",
+    ],
+    story:
+      "The park was alive with motion: children enjoyed swinging high in the breeze and sliding down the chutes. Groups practiced climbing the rope nets and running across the lawn. They engaged in jumping over hurdles, throwing and catching a soft ball, and kicking toward the net. Little girls went skipping along the walkway while others enjoyed hiding inside the playhouse.",
+  },
+  {
+    id: "playground-features",
+    name: "Playground Features",
+    topicId: "playground-features",
+    description: "Learn essential facilities, safety items, and landmarks in the park.",
+    wordIds: [
+      "fence",
+      "gate",
+      "bench",
+      "water-fountain",
+      "shade-structure",
+      "sign",
+      "trash-can",
+      "first-aid-kit",
+      "bell",
+      "flag",
+    ],
+    story:
+      "A secure fence surrounded the park with an open front gate. Caregivers rested on a wooden bench beside a cool water-fountain beneath the protective shade-structure. Visitors checked the park rules sign, tossed wrappers into the trash-can, and noted the red first-aid-kit station. Kids rang the playhouse bell under the fluttering rainbow flag.",
+  },
+];
+
+export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
+  // 1. Play Equipment (10)
+  {
+    id: "swing",
+    label: "Swing",
+    phonetic: "swɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/playground/swing.webp`,
+    topic: "play-equipment",
+    description:
+      "A suspended seat hanging from ropes or chains that sways back and forth through the air.",
+  },
+  {
+    id: "slide",
+    label: "Slide",
+    phonetic: "slaɪd",
+    img: `${LOCAL_WORD_IMAGES}/playground/slide.webp`,
+    topic: "play-equipment",
+    description: "A smooth elevated sloping chute that children glide down smoothly to the ground.",
+  },
+  {
+    id: "seesaw",
+    label: "Seesaw",
+    phonetic: "ˈsiːsɔː",
+    img: `${LOCAL_WORD_IMAGES}/playground/seesaw.webp`,
+    topic: "play-equipment",
+    description:
+      "A long plank balanced on a central pivot that tilts up and down as riders push off the ground.",
+  },
+  {
+    id: "climbing-frame",
+    label: "Climbing Frame",
+    phonetic: "ˈklaɪmɪŋ freɪm",
+    img: `${LOCAL_WORD_IMAGES}/playground/climbing-frame.webp`,
+    topic: "play-equipment",
+    description:
+      "A geometric metal or timber jungle structure with ladders, ropes, and platforms to scale.",
+  },
+  {
+    id: "sandbox",
+    label: "Sandbox",
+    phonetic: "ˈsændbɑːks",
+    img: `${LOCAL_WORD_IMAGES}/playground/sandbox.webp`,
+    topic: "play-equipment",
+    description:
+      "A shallow wooden or plastic enclosure filled with fine golden grains for digging and building.",
+  },
+  {
+    id: "monkey-bars",
+    label: "Monkey Bars",
+    phonetic: "ˈmʌŋki bɑːrz",
+    img: `${LOCAL_WORD_IMAGES}/playground/monkey-bars.webp`,
+    topic: "play-equipment",
+    description:
+      "An elevated horizontal overhead ladder of steel rungs that children swing across hand-over-hand.",
+  },
+  {
+    id: "merry-go-round",
+    label: "Merry-Go-Round",
+    phonetic: "ˌmɛri ɡoʊ ˈraʊnd",
+    img: `${LOCAL_WORD_IMAGES}/playground/merry-go-round.webp`,
+    topic: "play-equipment",
+    description:
+      "A circular rotating platform with metal handrails that spins rapidly when pushed.",
+  },
+  {
+    id: "spring-rider",
+    label: "Spring Rider",
+    phonetic: "ˈsprɪŋ ˌraɪdər",
+    img: `${LOCAL_WORD_IMAGES}/playground/spring-rider.webp`,
+    topic: "play-equipment",
+    description:
+      "A colorful rocking novelty seat mounted on a heavy coiled steel base that bounces back and forth.",
+  },
+  {
+    id: "tunnel",
+    label: "Tunnel",
+    phonetic: "ˈtʌnl",
+    img: `${LOCAL_WORD_IMAGES}/playground/tunnel.webp`,
+    topic: "play-equipment",
+    description:
+      "A hollow cylindrical crawl tube made of reinforced plastic connecting playground sections.",
+  },
+  {
+    id: "balance-beam",
+    label: "Balance Beam",
+    phonetic: "ˈbæləns biːm",
+    img: `${LOCAL_WORD_IMAGES}/playground/balance-beam.webp`,
+    topic: "play-equipment",
+    description:
+      "A narrow horizontal wooden timber raised slightly above the ground for practicing steady walking.",
+  },
+
+  // 2. Sports Equipment (10)
+  {
+    id: "ball",
+    label: "Ball",
+    phonetic: "bɔːl",
+    img: `${LOCAL_WORD_IMAGES}/playground/ball.webp`,
+    topic: "sports-equipment",
+    description:
+      "A spherical inflatable bouncy object kicked, thrown, or bounced during recreational sports.",
+  },
+  {
+    id: "hoop",
+    label: "Hoop",
+    phonetic: "huːp",
+    img: `${LOCAL_WORD_IMAGES}/playground/hoop.webp`,
+    topic: "sports-equipment",
+    description:
+      "A large lightweight circular plastic ring twirled around the waist or jumped through.",
+  },
+  {
+    id: "bat",
+    label: "Bat",
+    phonetic: "bæt",
+    img: `${LOCAL_WORD_IMAGES}/playground/bat.webp`,
+    topic: "sports-equipment",
+    description:
+      "A tapered smooth wooden or aluminum club swung to strike pitched spheres in baseball.",
+  },
+  {
+    id: "racket",
+    label: "Racket",
+    phonetic: "ˈrækɪt",
+    img: `${LOCAL_WORD_IMAGES}/playground/racket.webp`,
+    topic: "sports-equipment",
+    description:
+      "A lightweight oval frame strung with tight mesh netting used to hit tennis balls or shuttlecocks.",
+  },
+  {
+    id: "net",
+    label: "Net",
+    phonetic: "nɛt",
+    img: `${LOCAL_WORD_IMAGES}/playground/net.webp`,
+    topic: "sports-equipment",
+    description:
+      "A meshed fabric barrier stretched across the center of a court or suspended within target frames.",
+  },
+  {
+    id: "goal",
+    label: "Goal",
+    phonetic: "ɡoʊl",
+    img: `${LOCAL_WORD_IMAGES}/playground/goal.webp`,
+    topic: "sports-equipment",
+    description:
+      "A rectangular framed opening fitted with mesh where players aim to score points during matches.",
+  },
+  {
+    id: "whistle",
+    label: "Whistle",
+    phonetic: "ˈwɪsl",
+    img: `${LOCAL_WORD_IMAGES}/playground/whistle.webp`,
+    topic: "sports-equipment",
+    description:
+      "A small metal or plastic mouth device that produces a sharp shrill signal when blown.",
+  },
+  {
+    id: "stopwatch",
+    label: "Stopwatch",
+    phonetic: "ˈstɑːpwɑːtʃ",
+    img: `${LOCAL_WORD_IMAGES}/playground/stopwatch.webp`,
+    topic: "sports-equipment",
+    description:
+      "A handheld digital timepiece with buttons used to measure elapsed sprint durations precisely.",
+  },
+  {
+    id: "helmet",
+    label: "Helmet",
+    phonetic: "ˈhɛlmɪt",
+    img: `${LOCAL_WORD_IMAGES}/playground/helmet.webp`,
+    topic: "sports-equipment",
+    description:
+      "A hard protective headgear shell with a chin strap worn to prevent skull injuries while riding.",
+  },
+  {
+    id: "knee-pad",
+    label: "Knee Pad",
+    phonetic: "ˈniː pæd",
+    img: `${LOCAL_WORD_IMAGES}/playground/knee-pad.webp`,
+    topic: "sports-equipment",
+    description:
+      "A cushioned contoured guard strapped with velcro over joints to protect against scrapes.",
+  },
+
+  // 3. Playground Surface (10)
+  {
+    id: "rubber-mat",
+    label: "Rubber Mat",
+    phonetic: "ˈrʌbər mæt",
+    img: `${LOCAL_WORD_IMAGES}/playground/rubber-mat.webp`,
+    topic: "playground-surface",
+    description:
+      "A thick shock-absorbing tiled floor layer placed beneath tall structures to cushion falls.",
+  },
+  {
+    id: "sand",
+    label: "Sand",
+    phonetic: "sænd",
+    img: `${LOCAL_WORD_IMAGES}/playground/sand.webp`,
+    topic: "playground-surface",
+    description:
+      "Loose granular mineral particles covering the play pit for digging and soft landings.",
+  },
+  {
+    id: "gravel",
+    label: "Gravel",
+    phonetic: "ˈɡrævl",
+    img: `${LOCAL_WORD_IMAGES}/playground/gravel.webp`,
+    topic: "playground-surface",
+    description:
+      "Small crushed pebbles and smooth stones spread along park walkways and drainage borders.",
+  },
+  {
+    id: "grass",
+    label: "Grass",
+    phonetic: "ɡræs",
+    img: `${LOCAL_WORD_IMAGES}/playground/grass.webp`,
+    topic: "playground-surface",
+    description:
+      "A natural green carpet of leafy blades covering the open recreation lawn and picnic meadows.",
+  },
+  {
+    id: "concrete",
+    label: "Concrete",
+    phonetic: "ˈkɑːnkriːt",
+    img: `${LOCAL_WORD_IMAGES}/playground/concrete.webp`,
+    topic: "playground-surface",
+    description:
+      "A hard solid paved mixture of cement and aggregate forming basketball courts and walkways.",
+  },
+  {
+    id: "chalk-drawing",
+    label: "Chalk Drawing",
+    phonetic: "ˈtʃɔːk ˌdrɔːɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/playground/chalk-drawing.webp`,
+    topic: "playground-surface",
+    description:
+      "Colorful temporary sketches and murals drawn on pavement using soft mineral sticks.",
+  },
+  {
+    id: "hopscotch",
+    label: "Hopscotch",
+    phonetic: "ˈhɑːpskɑːtʃ",
+    img: `${LOCAL_WORD_IMAGES}/playground/hopscotch.webp`,
+    topic: "playground-surface",
+    description: "A numbered geometric court grid drawn on pavement for single-leg bounding games.",
+  },
+  {
+    id: "painted-lines",
+    label: "Painted Lines",
+    phonetic: "ˈpeɪntɪd laɪnz",
+    img: `${LOCAL_WORD_IMAGES}/playground/painted-lines.webp`,
+    topic: "playground-surface",
+    description:
+      "Crisp white and yellow boundaries marked onto court surfaces to define playing zones.",
+  },
+  {
+    id: "puddle",
+    label: "Puddle",
+    phonetic: "ˈpʌdl",
+    img: `${LOCAL_WORD_IMAGES}/playground/puddle.webp`,
+    topic: "playground-surface",
+    description:
+      "A small shallow pool of rainwater collected in a hollow on the ground after a storm.",
+  },
+  {
+    id: "mud",
+    label: "Mud",
+    phonetic: "mʌd",
+    img: `${LOCAL_WORD_IMAGES}/playground/mud.webp`,
+    topic: "playground-surface",
+    description: "Wet sticky earth formed when dirt mixes with rainwater in unpaved ground areas.",
+  },
+
+  // 4. People at the Playground (10)
+  {
+    id: "child",
+    label: "Child",
+    phonetic: "tʃaɪld",
+    img: `${LOCAL_WORD_IMAGES}/playground/child.webp`,
+    topic: "people-playground",
+    description:
+      "A young human boy or girl engaging in imaginative games, exploration, and learning.",
+  },
+  {
+    id: "friend",
+    label: "Friend",
+    phonetic: "frɛnd",
+    img: `${LOCAL_WORD_IMAGES}/playground/friend.webp`,
+    topic: "people-playground",
+    description:
+      "A trusted companion with whom one shares toys, laughter, and enjoyable recreation.",
+  },
+  {
+    id: "parent",
+    label: "Parent",
+    phonetic: "ˈpɛrənt",
+    img: `${LOCAL_WORD_IMAGES}/playground/parent.webp`,
+    topic: "people-playground",
+    description:
+      "A mother or father supervising, encouraging, and caring for their young ones at the park.",
+  },
+  {
+    id: "teacher",
+    label: "Teacher",
+    phonetic: "ˈtiːtʃər",
+    img: `${LOCAL_WORD_IMAGES}/playground/teacher.webp`,
+    topic: "people-playground",
+    description:
+      "An educator who organizes schoolyard games and guides students during recess intervals.",
+  },
+  {
+    id: "baby",
+    label: "Baby",
+    phonetic: "ˈbeɪbi",
+    img: `${LOCAL_WORD_IMAGES}/playground/baby.webp`,
+    topic: "people-playground",
+    description: "A very young infant resting in a shaded stroller or cradled in gentle arms.",
+  },
+  {
+    id: "toddler",
+    label: "Toddler",
+    phonetic: "ˈtɑːdlər",
+    img: `${LOCAL_WORD_IMAGES}/playground/toddler.webp`,
+    topic: "people-playground",
+    description:
+      "A young learner taking their first unsteady exploratory steps on the recreation lawn.",
+  },
+  {
+    id: "teenager",
+    label: "Teenager",
+    phonetic: "ˈtiːnˌeɪdʒər",
+    img: `${LOCAL_WORD_IMAGES}/playground/teenager.webp`,
+    topic: "people-playground",
+    description:
+      "An adolescent youth practicing skateboarding tricks or playing basketball on the court.",
+  },
+  {
+    id: "guard",
+    label: "Guard",
+    phonetic: "ɡɑːrd",
+    img: `${LOCAL_WORD_IMAGES}/playground/guard.webp`,
+    topic: "people-playground",
+    description:
+      "A uniformed security officer patrolling perimeter gates to ensure visitor safety.",
+  },
+  {
+    id: "coach",
+    label: "Coach",
+    phonetic: "koʊtʃ",
+    img: `${LOCAL_WORD_IMAGES}/playground/coach.webp`,
+    topic: "people-playground",
+    description:
+      "A sports instructor who leads drills, teaches tactics, and encourages team athletes.",
+  },
+  {
+    id: "volunteer",
+    label: "Volunteer",
+    phonetic: "ˌvɑːlənˈtɪr",
+    img: `${LOCAL_WORD_IMAGES}/playground/volunteer.webp`,
+    topic: "people-playground",
+    description:
+      "A helpful community worker who assists with park upkeep and organizes youth events.",
+  },
+
+  // 5. Playground Activities (10)
+  {
+    id: "swinging",
+    label: "Swinging",
+    phonetic: "ˈswɪŋɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/playground/swinging.webp`,
+    topic: "playground-activities",
+    description: "The continuous pendulum motion of swaying through the air on a suspended seat.",
+  },
+  {
+    id: "sliding",
+    label: "Sliding",
+    phonetic: "ˈslaɪdɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/playground/sliding.webp`,
+    topic: "playground-activities",
+    description: "The smooth gliding descent down a polished sloping chute to the bottom landing.",
+  },
+  {
+    id: "climbing",
+    label: "Climbing",
+    phonetic: "ˈklaɪmɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/playground/climbing.webp`,
+    topic: "playground-activities",
+    description:
+      "The active physical movement of ascending vertical ladders, ropes, and timber walls.",
+  },
+  {
+    id: "running",
+    label: "Running",
+    phonetic: "ˈrʌnɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/playground/running.webp`,
+    topic: "playground-activities",
+    description: "The rapid rhythmic pace of sprinting across open lawns on fast moving feet.",
+  },
+  {
+    id: "jumping",
+    label: "Jumping",
+    phonetic: "ˈdʒʌmpɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/playground/jumping.webp`,
+    topic: "playground-activities",
+    description: "The athletic act of pushing off the ground with both legs into the air.",
+  },
+  {
+    id: "throwing",
+    label: "Throwing",
+    phonetic: "ˈθroʊɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/playground/throwing.webp`,
+    topic: "playground-activities",
+    description:
+      "The coordinated upper-body action of launching an object through the air toward a target.",
+  },
+  {
+    id: "catching",
+    label: "Catching",
+    phonetic: "ˈkætʃɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/playground/catching.webp`,
+    topic: "playground-activities",
+    description:
+      "The skillful act of seizing and securing a flying projectile in open palms or a padded mitt.",
+  },
+  {
+    id: "kicking",
+    label: "Kicking",
+    phonetic: "ˈkɪkɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/playground/kicking.webp`,
+    topic: "playground-activities",
+    description:
+      "The forceful striking of a round projectile with the foot toward teammates or target frames.",
+  },
+  {
+    id: "skipping",
+    label: "Skipping",
+    phonetic: "ˈskɪpɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/playground/skipping.webp`,
+    topic: "playground-activities",
+    description:
+      "The joyful bounding gait of alternating light hops while moving forward along pathways.",
+  },
+  {
+    id: "hiding",
+    label: "Hiding",
+    phonetic: "ˈhaɪdɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/playground/hiding.webp`,
+    topic: "playground-activities",
+    description: "The exciting act of remaining concealed out of sight during seek-and-find games.",
+  },
+
+  // 6. Playground Features (10)
+  {
+    id: "fence",
+    label: "Fence",
+    phonetic: "fɛns",
+    img: `${LOCAL_WORD_IMAGES}/playground/fence.webp`,
+    topic: "playground-features",
+    description:
+      "A protective wooden or chain-link barrier enclosing the park perimeter for security.",
+  },
+  {
+    id: "gate",
+    label: "Gate",
+    phonetic: "ɡeɪt",
+    img: `${LOCAL_WORD_IMAGES}/playground/gate.webp`,
+    topic: "playground-features",
+    description:
+      "A hinged latching entrance through which visitors pass to enter or exit the grounds.",
+  },
+  {
+    id: "bench",
+    label: "Bench",
+    phonetic: "bɛntʃ",
+    img: `${LOCAL_WORD_IMAGES}/playground/bench.webp`,
+    topic: "playground-features",
+    description:
+      "A long wooden or metal outdoor seat where caregivers relax while observing playtime.",
+  },
+  {
+    id: "water-fountain",
+    label: "Water Fountain",
+    phonetic: "ˈwɔːtər ˌfaʊntn",
+    img: `${LOCAL_WORD_IMAGES}/playground/water-fountain.webp`,
+    topic: "playground-features",
+    description:
+      "A stainless steel plumbing fixture that dispenses cool bubbling streams for thirsty park visitors.",
+  },
+  {
+    id: "shade-structure",
+    label: "Shade Structure",
+    phonetic: "ˈʃeɪd ˌstrʌktʃər",
+    img: `${LOCAL_WORD_IMAGES}/playground/shade-structure.webp`,
+    topic: "playground-features",
+    description:
+      "A large overhead fabric canopy or timber gazebo shielding visitors from direct sunlight.",
+  },
+  {
+    id: "sign",
+    label: "Sign",
+    phonetic: "saɪn",
+    img: `${LOCAL_WORD_IMAGES}/playground/sign.webp`,
+    topic: "playground-features",
+    description:
+      "A posted metal board displaying park regulations, opening hours, and navigational guidance.",
+  },
+  {
+    id: "trash-can",
+    label: "Trash Can",
+    phonetic: "træʃ kæn",
+    img: `${LOCAL_WORD_IMAGES}/playground/trash-can.webp`,
+    topic: "playground-features",
+    description:
+      "A sturdy green outdoor receptacle for collecting food wrappers and keeping grounds clean.",
+  },
+  {
+    id: "first-aid-kit",
+    label: "First Aid Kit",
+    phonetic: "ˌfɜːrst ˈeɪd kɪt",
+    img: `${LOCAL_WORD_IMAGES}/playground/first-aid-kit.webp`,
+    topic: "playground-features",
+    description: "A red emergency box containing sterile bandages, antiseptic, and medical gauze.",
+  },
+  {
+    id: "bell",
+    label: "Bell",
+    phonetic: "bɛl",
+    img: `${LOCAL_WORD_IMAGES}/playground/bell.webp`,
+    topic: "playground-features",
+    description:
+      "A metallic acoustic chime mounted on playhouse structures that rings loudly when pulled.",
+  },
+  {
+    id: "flag",
+    label: "Flag",
+    phonetic: "flæɡ",
+    img: `${LOCAL_WORD_IMAGES}/playground/flag.webp`,
+    topic: "playground-features",
+    description: "A piece of patterned fabric fluttering from a tall pole above the park entrance.",
+  },
+];
+
 export const COURSE_UNITS: Record<string, CourseUnit> = {
   bedroom: {
     id: "bedroom",
@@ -3900,6 +4617,16 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
     topics: BATHROOM_TOPICS,
     groups: BATHROOM_GROUPS,
     vocabulary: BATHROOM_VOCABULARY,
+  },
+  playground: {
+    id: "playground",
+    name: "The Playground",
+    description:
+      "Explore real-life play equipment, sports gear, surfaces, park features, community members, and energetic activities through 2D scene discovery, audio practice, recall matching, and sentence building.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/playground-hero.webp`,
+    topics: PLAYGROUND_TOPICS,
+    groups: PLAYGROUND_GROUPS,
+    vocabulary: PLAYGROUND_VOCABULARY,
   },
 };
 
