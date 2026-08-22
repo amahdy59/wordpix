@@ -27,6 +27,299 @@ export interface GroupStoryBundle {
 }
 
 export const STORY_TALES_DICTIONARY: Record<string, GroupStoryBundle> = {
+  "plumbing-fixtures": {
+    groupId: "plumbing-fixtures",
+    groupName: "Plumbing Fixtures",
+    themeTitle: "The Morning Routine",
+    passages: [
+      {
+        partNumber: 1,
+        title: "Part 1: Waking Up",
+        titleArabic: "الجزء الأول: الاستيقاظ",
+        text: "The sun rises and warms the bathroom tiles. Mark steps in and turns on the sink to wash his face. He admires the new shiny faucet.",
+        textArabic:
+          "تشرق الشمس وتدفئ بلاط الحمام. يدخل مارك ويشغل الحوض لغسل وجهه. يعجبه الصنبور اللامع الجديد.",
+      },
+      {
+        partNumber: 2,
+        title: "Part 2: A Warm Shower",
+        titleArabic: "الجزء الثاني: دش دافئ",
+        text: "He steps into the shower and adjusts the showerhead. The warm water flows down the drain, relaxing his muscles.",
+        textArabic:
+          "يخطو إلى الدش ويضبط رأس الدش. يتدفق الماء الدافئ عبر البالوعة، مما يريح عضلاته.",
+      },
+      {
+        partNumber: 3,
+        title: "Part 3: A Clean Start",
+        titleArabic: "الجزء الثالث: بداية نظيفة",
+        text: "After drying off, he flushes the toilet and considers drawing a bath in the bathtub later tonight to unwind.",
+        textArabic:
+          "بعد أن يجفف نفسه، يطرد الماء في المرحاض ويفكر في ملء حوض الاستحمام الليلة للاسترخاء.",
+      },
+    ],
+    quiz: [
+      {
+        id: "q1",
+        question: "What did Mark turn on to wash his face?",
+        options: ["The toilet", "The sink", "The bathtub", "The bidet"],
+        correctIndex: 1,
+        explanation: "He turned on the sink to wash his face.",
+        explanationArabic: "قام بتشغيل الحوض لغسل وجهه.",
+      },
+      {
+        id: "q2",
+        question: "Where does the warm water flow?",
+        options: ["Down the drain", "Into the mirror", "Out the window", "Onto the ceiling"],
+        correctIndex: 0,
+        explanation: "The water flows down the drain.",
+        explanationArabic: "يتدفق الماء إلى أسفل في البالوعة.",
+      },
+      {
+        id: "q3",
+        question: "What is Mark considering doing later tonight?",
+        options: [
+          "Fixing the faucet",
+          "Cleaning the drain",
+          "Drawing a bath in the bathtub",
+          "Changing the showerhead",
+        ],
+        correctIndex: 2,
+        explanation: "He considers drawing a bath in the bathtub to unwind.",
+        explanationArabic: "إنه يفكر في ملء حوض الاستحمام للاسترخاء.",
+      },
+    ],
+  },
+  "daily-toiletries": {
+    groupId: "daily-toiletries",
+    groupName: "Daily Toiletries",
+    themeTitle: "Getting Ready for the Day",
+    passages: [
+      {
+        partNumber: 1,
+        title: "Part 1: Hair Care",
+        titleArabic: "الجزء الأول: العناية بالشعر",
+        text: "Sarah grabs her favorite shampoo and lathers her hair. Then, she applies conditioner to make it soft and smooth.",
+        textArabic:
+          "تمسك سارة بالشامبو المفضل لديها وترغي شعرها. ثم تضع بلسماً لجعله ناعماً وأملساً.",
+      },
+      {
+        partNumber: 2,
+        title: "Part 2: Dental Hygiene",
+        titleArabic: "الجزء الثاني: نظافة الأسنان",
+        text: "She squeezes minty toothpaste onto her toothbrush and brushes thoroughly. Finally, she rinses with mouthwash.",
+        textArabic:
+          "تضغط معجون أسنان بنكهة النعناع على فرشاة أسنانها وتنظفها جيداً. أخيراً، تتمضمض بغسول الفم.",
+      },
+      {
+        partNumber: 3,
+        title: "Part 3: Fresh and Ready",
+        titleArabic: "الجزء الثالث: منتعشة ومستعدة",
+        text: "Before leaving, she uses a bar of soap to wash her hands, applies lotion to her skin, and puts on some deodorant.",
+        textArabic:
+          "قبل المغادرة، تستخدم قطعة صابون لغسل يديها، وتضع لوشن على بشرتها، وتضع بعض مزيل العرق.",
+      },
+    ],
+    quiz: [
+      {
+        id: "q1",
+        question: "What does Sarah use to make her hair soft?",
+        options: ["Soap", "Conditioner", "Toothpaste", "Mouthwash"],
+        correctIndex: 1,
+        explanation: "She applies conditioner to make it soft and smooth.",
+        explanationArabic: "تضع بلسماً لجعله ناعماً وأملساً.",
+      },
+      {
+        id: "q2",
+        question: "What does she squeeze onto her toothbrush?",
+        options: ["Lotion", "Shampoo", "Deodorant", "Toothpaste"],
+        correctIndex: 3,
+        explanation: "She squeezes minty toothpaste onto her toothbrush.",
+        explanationArabic: "تضغط معجون أسنان بنكهة النعناع على فرشاة أسنانها.",
+      },
+      {
+        id: "q3",
+        question: "How does Sarah finish her dental hygiene routine?",
+        options: [
+          "By applying lotion",
+          "By using a bar of soap",
+          "By rinsing with mouthwash",
+          "By using deodorant",
+        ],
+        correctIndex: 2,
+        explanation: "Finally, she rinses with mouthwash.",
+        explanationArabic: "أخيراً، تتمضمض بغسول الفم.",
+      },
+    ],
+  },
+  "bathroom-linens": {
+    groupId: "bathroom-linens",
+    groupName: "Linens & Textiles",
+    themeTitle: "Warm and Dry",
+    passages: [
+      {
+        partNumber: 1,
+        title: "Part 1: Stepping Out",
+        titleArabic: "الجزء الأول: الخروج",
+        text: "After a long shower, John pulls back the shower-curtain. He steps onto the soft, absorbent bath-mat to avoid slipping.",
+        textArabic:
+          "بعد دش طويل، يسحب جون ستارة الدش. يخطو على سجادة حمام ناعمة وماصة لتجنب الانزلاق.",
+      },
+      {
+        partNumber: 2,
+        title: "Part 2: Drying Off",
+        titleArabic: "الجزء الثاني: التجفيف",
+        text: "He grabs a large bath-towel from the rack to dry his body. Then, he uses a smaller hand-towel for his face.",
+        textArabic: "يلتقط منشفة استحمام كبيرة من الرف لتجفيف جسده. ثم يستخدم منشفة يد أصغر لوجهه.",
+      },
+      {
+        partNumber: 3,
+        title: "Part 3: Cozy Comfort",
+        titleArabic: "الجزء الثالث: راحة دافئة",
+        text: "Feeling clean, he hangs up the washcloth he used. Finally, he wraps himself in a warm, fluffy bathrobe.",
+        textArabic:
+          "شاعراً بالنظافة، يعلق منشفة الوجه التي استخدمها. وأخيراً، يلف نفسه بروب استحمام دافئ ومنفوش.",
+      },
+    ],
+    quiz: [
+      {
+        id: "q1",
+        question: "What does John pull back to step out of the shower?",
+        options: ["The hand-towel", "The bathrobe", "The shower-curtain", "The bath-mat"],
+        correctIndex: 2,
+        explanation: "He pulls back the shower-curtain.",
+        explanationArabic: "يسحب ستارة الدش.",
+      },
+      {
+        id: "q2",
+        question: "What does he step onto to avoid slipping?",
+        options: ["The bath-towel", "The bath-mat", "The washcloth", "The hand-towel"],
+        correctIndex: 1,
+        explanation: "He steps onto the soft bath-mat.",
+        explanationArabic: "يخطو على سجادة الحمام الناعمة.",
+      },
+      {
+        id: "q3",
+        question: "What does John wrap himself in at the end?",
+        options: ["A bath-towel", "A hand-towel", "A washcloth", "A bathrobe"],
+        correctIndex: 3,
+        explanation: "He wraps himself in a warm, fluffy bathrobe.",
+        explanationArabic: "يلف نفسه بروب استحمام دافئ ومنفوش.",
+      },
+    ],
+  },
+  "grooming-tools": {
+    groupId: "grooming-tools",
+    groupName: "Grooming Tools",
+    themeTitle: "Looking Sharp",
+    passages: [
+      {
+        partNumber: 1,
+        title: "Part 1: A Quick Check",
+        titleArabic: "الجزء الأول: فحص سريع",
+        text: "Emma looks into the bathroom mirror to start her grooming routine. She uses tweezers to perfectly shape her eyebrows.",
+        textArabic:
+          "تنظر إيما في مرآة الحمام لتبدأ روتين العناية الخاص بها. تستخدم ملقطاً لتشكيل حاجبيها بشكل مثالي.",
+      },
+      {
+        partNumber: 2,
+        title: "Part 2: Styling Hair",
+        titleArabic: "الجزء الثاني: تصفيف الشعر",
+        text: "She grabs her hairbrush and comb to detangle her hair. Then, she turns on the hairdryer to style it.",
+        textArabic: "تمسك بفرشاة شعرها ومشطها لفك تشابك شعرها. ثم تقوم بتشغيل مجفف الشعر لتصفيفه.",
+      },
+      {
+        partNumber: 3,
+        title: "Part 3: Final Touches",
+        titleArabic: "الجزء الثالث: اللمسات الأخيرة",
+        text: "Finally, she uses nail-clippers to trim her nails and a cotton-swab to fix a tiny smudge of makeup.",
+        textArabic:
+          "أخيراً، تستخدم قصافة أظافر لتقليم أظافرها وعود قطن لإصلاح تلطخ صغير في المكياج.",
+      },
+    ],
+    quiz: [
+      {
+        id: "q1",
+        question: "What does Emma look into to start her routine?",
+        options: ["A hairdryer", "The mirror", "A razor", "A hairbrush"],
+        correctIndex: 1,
+        explanation: "She looks into the bathroom mirror.",
+        explanationArabic: "تنظر في مرآة الحمام.",
+      },
+      {
+        id: "q2",
+        question: "What does she use to shape her eyebrows?",
+        options: ["Nail-clippers", "A comb", "Tweezers", "A cotton-swab"],
+        correctIndex: 2,
+        explanation: "She uses tweezers to shape her eyebrows.",
+        explanationArabic: "تستخدم ملقطاً لتشكيل حاجبيها.",
+      },
+      {
+        id: "q3",
+        question: "What does she use to detangle her hair?",
+        options: ["A hairbrush and comb", "A razor and tweezers", "Nail-clippers", "A hairdryer"],
+        correctIndex: 0,
+        explanation: "She grabs her hairbrush and comb to detangle her hair.",
+        explanationArabic: "تمسك بفرشاة شعرها ومشطها لفك تشابك شعرها.",
+      },
+    ],
+  },
+  "bathroom-utilities": {
+    groupId: "bathroom-utilities",
+    groupName: "Bathroom Utilities",
+    themeTitle: "Cleaning Up",
+    passages: [
+      {
+        partNumber: 1,
+        title: "Part 1: Tidy Space",
+        titleArabic: "الجزء الأول: مساحة مرتبة",
+        text: "Liam checks the bathroom supplies. He makes sure there is enough toilet-paper on the holder and empties the trash-can.",
+        textArabic:
+          "يتحقق ليام من مستلزمات الحمام. يتأكد من وجود ما يكفي من ورق التواليت في الحامل ويفرغ سلة المهملات.",
+      },
+      {
+        partNumber: 2,
+        title: "Part 2: Deep Cleaning",
+        titleArabic: "الجزء الثاني: تنظيف عميق",
+        text: "He uses a toilet-brush to scrub the bowl. Then, he grabs a sponge to wipe down the tiles and sink.",
+        textArabic: "يستخدم فرشاة مرحاض لفرك الحوض. ثم يمسك إسفنجة لمسح البلاط والحوض.",
+      },
+      {
+        partNumber: 3,
+        title: "Part 3: Finishing Chores",
+        titleArabic: "الجزء الثالث: إنهاء المهام",
+        text: "He keeps a plunger nearby just in case of clogs. Finally, he steps on the scale and puts his clothes in the laundry-basket.",
+        textArabic:
+          "يحتفظ بمكبس قريباً في حالة حدوث انسداد. أخيراً، يخطو على الميزان ويضع ملابسه في سلة الغسيل.",
+      },
+    ],
+    quiz: [
+      {
+        id: "q1",
+        question: "What does Liam make sure there is enough of?",
+        options: ["Toilet-paper", "Sponges", "Trash-cans", "Loofahs"],
+        correctIndex: 0,
+        explanation: "He makes sure there is enough toilet-paper on the holder.",
+        explanationArabic: "يتأكد من وجود ما يكفي من ورق التواليت في الحامل.",
+      },
+      {
+        id: "q2",
+        question: "What does he use to wipe down the tiles?",
+        options: ["A plunger", "A toilet-brush", "A sponge", "A scale"],
+        correctIndex: 2,
+        explanation: "He grabs a sponge to wipe down the tiles.",
+        explanationArabic: "يمسك إسفنجة لمسح البلاط.",
+      },
+      {
+        id: "q3",
+        question: "Where does Liam put his clothes?",
+        options: ["In the trash-can", "In the laundry-basket", "On the scale", "On the plunger"],
+        correctIndex: 1,
+        explanation: "He puts his clothes in the laundry-basket.",
+        explanationArabic: "يضع ملابسه في سلة الغسيل.",
+      },
+    ],
+  },
+
   // ── THE BEDROOM ──────────────────────────────────────────────────────────
   furniture: {
     groupId: "furniture",

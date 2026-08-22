@@ -106,8 +106,6 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "headboard",
     ],
     description: "Learn about bedding & linen.",
-    story:
-      "Omar put a firm mattress on the bed frame and rested it against the headboard. He covered it with a clean sheet, a warm duvet, and a soft comforter. Then he added a pillow inside a pillowcase, pulled up a blanket, and placed a cushion near the wall.",
   },
   {
     id: "features",
@@ -146,8 +144,6 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "hanger",
     ],
     description: "Learn about bedroom objects.",
-    story:
-      "The alarm clock rang beside a picture frame and a small clock. A plant stood in a vase near a candle and a calendar. Sam took a tissue from the tissue box, dropped the used tissue into the wastebasket, and placed his shirt on a hanger.",
   },
   {
     id: "personal",
@@ -184,8 +180,6 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "remote-control",
     ],
     description: "Learn about electronics.",
-    story:
-      "Ali connected his phone to a charger beside the laptop. He put on his headphones and opened a lesson on the tablet. Music played through the speaker while a reading light lit the desk, and he used the remote control to lower the volume.",
   },
 ];
 
@@ -717,8 +711,6 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "pressure-cooker",
     ],
     description: "Learn about cookware.",
-    story:
-      "Sara boiled soup in a pot and warmed sauce in a saucepan. She cooked vegetables in a pan, eggs in a frying pan, and noodles in a wok. A baking tray, casserole dish, and baking dish went into the oven. She cooked vegetables in a steamer and beans in a pressure cooker.",
   },
   {
     id: "utensils-tools",
@@ -761,8 +753,6 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "pitcher",
     ],
     description: "Learn about dishes containers.",
-    story:
-      "Mariam set a plate, bowl, mug, glass, cup, and saucer on the table. She chopped vegetables on a cutting board and drained them in a colander. She checked ingredients with a measuring cup and measuring spoon, combined them in a mixing bowl, and poured water from a pitcher.",
   },
   {
     id: "kitchen-items",
@@ -807,8 +797,6 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "honey",
     ],
     description: "Learn about basic pantry.",
-    story:
-      "Salma made breakfast with bread, butter, milk, an egg, and cheese. For lunch, she cooked rice and pasta with cooking oil, salt, and pepper. Later, she mixed flour and sugar for a cake, added a little vinegar to a salad, and sweetened tea with honey.",
   },
 ];
 
@@ -1447,8 +1435,6 @@ export const LIVING_ROOM_GROUPS: Lesson[] = [
       "shoe-rack",
     ],
     description: "Learn about storage & display.",
-    story:
-      "Books stood on the bookshelf above the TV stand and cabinet. Plates filled the sideboard, and a small shelf held a labeled drawer. A magazine rack stood beside the display case. Near the door, coats hung on the coat rack and shoes rested on the shoe rack.",
   },
   {
     id: "electronics-media",
@@ -1487,8 +1473,6 @@ export const LIVING_ROOM_GROUPS: Lesson[] = [
       "wall-clock",
     ],
     description: "Learn about lighting & decor.",
-    story:
-      "A floor lamp stood beside the sofa, and a table lamp lit the reading corner. The ceiling light and chandelier brightened the room with a new light bulb. A candle rested in a candle holder below the string lights, while a picture frame and wall clock decorated the wall.",
   },
   {
     id: "soft-furnishings",
@@ -1526,8 +1510,6 @@ export const LIVING_ROOM_GROUPS: Lesson[] = [
       "puzzle",
     ],
     description: "Learn about living room objects.",
-    story:
-      "A plant and vase stood below a photo frame and painting. A book, magazine, and newspaper rested on the table. The family chose a board game, then finished a puzzle together.",
   },
 ];
 
@@ -2493,8 +2475,6 @@ export const FARM_GROUPS: Lesson[] = [
       "fence",
     ],
     description: "Learn about farm buildings.",
-    story:
-      "The farmer left the farmhouse and walked to the barn. The horse waited in the stable, and the chickens rested in the hen house. Grain filled the silo, plants grew in the greenhouse, and tools stayed in the shed. A windmill stood beside the well, and a fence surrounded the field.",
   },
   {
     id: "farm-farm-equipment",
@@ -2522,8 +2502,6 @@ export const FARM_GROUPS: Lesson[] = [
     topicId: "farm-farm-products",
     wordIds: ["milk", "egg", "wool", "cheese", "butter", "honey", "hay", "straw", "flour", "jam"],
     description: "Learn about farm products.",
-    story:
-      "The farm produced milk, eggs, wool, cheese, butter, and honey. The animals ate dry hay, and clean straw covered the barn floor. Wheat became flour, while fresh fruit became jam.",
   },
   {
     id: "farm-farm-life",
@@ -2576,8 +2554,6 @@ export const GARDEN_GROUPS: Lesson[] = [
       "lavender",
     ],
     description: "Learn about flowers.",
-    story:
-      "In the sunny courtyard, a fragrant rose bloomed beside a bright yellow sunflower and a pink tulip. Maya noticed a white daisy and a sweet lily near the stone border. Purple violet and blue orchid blossoms opened beneath the hedge, while a red carnation, a cheerful daffodil, and sweet lavender filled the morning air with perfume.",
   },
   {
     id: "trees-shrubs",
@@ -2618,8 +2594,6 @@ export const GARDEN_GROUPS: Lesson[] = [
       "sprinkler",
     ],
     description: "Learn about garden tools.",
-    story:
-      "Maya picked up the shovel, spade, and trowel to dig planting holes, while Omar used the rake and pitchfork to clear leaves and mulch. They filled the wheelbarrow with soil, carried the watering can, connected the long hose, and turned on the sprinkler. After wearing garden gloves, Maya pruned branches with a sharp pruner and trimmed the grass with a lawn mower.",
   },
   {
     id: "parts-of-a-plant",
@@ -2647,8 +2621,6 @@ export const GARDEN_GROUPS: Lesson[] = [
       "grasshopper",
     ],
     description: "Learn about garden creatures.",
-    story:
-      "A bright butterfly fluttered near a spotted ladybug and a buzzing bee. In the damp soil, a worm moved past a slow snail and a busy ant. A green caterpillar nibbled on leaves while a spider spun its web. Overhead, a dragonfly darted across the lawn and a grasshopper jumped into the tall grass.",
   },
   {
     id: "garden-features",
@@ -3182,6 +3154,439 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
   },
 ];
 
+// ==========================================
+// THE BATHROOM
+// ==========================================
+
+export const BATHROOM_TOPICS: LessonTopic[] = [
+  {
+    id: "plumbing-fixtures",
+    name: "Plumbing Fixtures",
+    description: "Built-in fixtures for washing and waste.",
+    icon: "bath",
+    itemsCount: 8,
+  },
+  {
+    id: "toiletries",
+    name: "Toiletries",
+    description: "Products for personal hygiene and grooming.",
+    icon: "spray-can",
+    itemsCount: 8,
+  },
+  {
+    id: "bathroom-linens",
+    name: "Bathroom Linens",
+    description: "Towels and cloth items used for drying off.",
+    icon: "shirt",
+    itemsCount: 6,
+  },
+  {
+    id: "bathroom-accessories",
+    name: "Bathroom Accessories",
+    description: "Tools and objects that assist with bathroom routines.",
+    icon: "brush",
+    itemsCount: 16,
+  },
+];
+
+export const BATHROOM_GROUPS: Lesson[] = [
+  {
+    id: "plumbing-fixtures",
+    name: "Plumbing Fixtures",
+    topicId: "plumbing-fixtures",
+    description: "Learn the core built-in fixtures of a bathroom.",
+    wordIds: ["toilet", "sink", "bathtub", "shower", "faucet", "drain", "bidet", "showerhead"],
+    story:
+      "John steps out of the shower-curtain onto the bath-mat. He dries his body with a large bath-towel and his face with a hand-towel and washcloth. Finally, he wraps himself in a cozy bathrobe.",
+  },
+  {
+    id: "daily-toiletries",
+    name: "Daily Toiletries",
+    topicId: "toiletries",
+    description: "Learn the everyday products used for keeping clean.",
+    wordIds: [
+      "soap",
+      "shampoo",
+      "conditioner",
+      "toothpaste",
+      "toothbrush",
+      "deodorant",
+      "lotion",
+      "mouthwash",
+    ],
+    story:
+      "Sarah lathers her hair with shampoo and conditioner, then uses soap for her body. She brushes her teeth with toothpaste and a toothbrush, rinses with mouthwash, and finishes by applying lotion and deodorant.",
+  },
+  {
+    id: "bathroom-linens",
+    name: "Linens & Textiles",
+    topicId: "bathroom-linens",
+    description: "Learn about the fabrics used to dry off and stay warm.",
+    wordIds: ["bath-towel", "hand-towel", "washcloth", "bath-mat", "bathrobe", "shower-curtain"],
+    story:
+      "John steps out of the shower-curtain onto the bath-mat. He dries his body with a large bath-towel and his face with a hand-towel and washcloth. Finally, he wraps himself in a cozy bathrobe.",
+  },
+  {
+    id: "grooming-tools",
+    name: "Grooming Tools",
+    topicId: "bathroom-accessories",
+    description: "Learn the items used for personal care and styling.",
+    wordIds: [
+      "mirror",
+      "comb",
+      "hairbrush",
+      "hairdryer",
+      "razor",
+      "tweezers",
+      "nail-clippers",
+      "cotton-swab",
+    ],
+    story:
+      "Emma looks into the mirror while using tweezers and a cotton-swab. She detangles her hair with a comb and hairbrush, dries it with a hairdryer, and finishes her grooming with a razor and nail-clippers.",
+  },
+  {
+    id: "bathroom-utilities",
+    name: "Bathroom Utilities",
+    topicId: "bathroom-accessories",
+    description: "Learn about the practical supplies and tools for bathroom maintenance.",
+    wordIds: [
+      "toilet-paper",
+      "plunger",
+      "toilet-brush",
+      "trash-can",
+      "scale",
+      "laundry-basket",
+      "sponge",
+      "loofah",
+    ],
+    story:
+      "Liam checks the toilet-paper on the holder and empties the trash-can into the laundry-basket. He scrubs the bowl with a toilet-brush, wipes the sink with a sponge and loofah, and steps on the scale. He keeps a plunger nearby.",
+  },
+];
+
+export const BATHROOM_VOCABULARY: VocabularyItem[] = [
+  // Plumbing Fixtures
+  {
+    id: "toilet",
+    label: "Toilet",
+    phonetic: "ˈtɔɪlɪt",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/toilet.webp`,
+    topic: "plumbing-fixtures",
+    description: "A ceramic bowl connected to a drain for disposing of human waste.",
+  },
+  {
+    id: "sink",
+    label: "Sink",
+    phonetic: "sɪŋk",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/sink.webp`,
+    topic: "plumbing-fixtures",
+    description: "A basin equipped with a water supply and drain for washing hands and face.",
+  },
+  {
+    id: "bathtub",
+    label: "Bathtub",
+    phonetic: "ˈbæθtʌb",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/bathtub.webp`,
+    topic: "plumbing-fixtures",
+    description: "A large container for holding water in which a person may bathe.",
+  },
+  {
+    id: "shower",
+    label: "Shower",
+    phonetic: "ˈʃaʊər",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/shower.webp`,
+    topic: "plumbing-fixtures",
+    description: "An enclosure where a person stands under a spray of water to wash.",
+  },
+  {
+    id: "faucet",
+    label: "Faucet",
+    phonetic: "ˈfɔːsɪt",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/faucet.webp`,
+    topic: "plumbing-fixtures",
+    description: "A valve controlling the release of a liquid, such as water, into a sink.",
+  },
+  {
+    id: "drain",
+    label: "Drain",
+    phonetic: "dreɪn",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/drain.webp`,
+    topic: "plumbing-fixtures",
+    description: "A pipe or channel that carries away wastewater from a basin or tub.",
+  },
+  {
+    id: "bidet",
+    label: "Bidet",
+    phonetic: "bɪˈdeɪ",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/bidet.webp`,
+    topic: "plumbing-fixtures",
+    description: "A low oval basin used for washing one's lower body.",
+  },
+  {
+    id: "showerhead",
+    label: "Showerhead",
+    phonetic: "ˈʃaʊərhɛd",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/showerhead.webp`,
+    topic: "plumbing-fixtures",
+    description: "The perforated nozzle that distributes water in a shower.",
+  },
+
+  // Toiletries
+  {
+    id: "soap",
+    label: "Soap",
+    phonetic: "soʊp",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/soap.webp`,
+    topic: "toiletries",
+    description: "A substance used with water for washing and cleaning.",
+  },
+  {
+    id: "shampoo",
+    label: "Shampoo",
+    phonetic: "ʃæmˈpuː",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/shampoo.webp`,
+    topic: "toiletries",
+    description: "A liquid preparation containing soap for washing hair.",
+  },
+  {
+    id: "conditioner",
+    label: "Conditioner",
+    phonetic: "kənˈdɪʃənər",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/conditioner.webp`,
+    topic: "toiletries",
+    description: "A liquid applied to hair after washing to improve its texture and manageability.",
+  },
+  {
+    id: "toothpaste",
+    label: "Toothpaste",
+    phonetic: "ˈtuːθpeɪst",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/toothpaste.webp`,
+    topic: "toiletries",
+    description: "A paste used on a brush for cleaning the teeth.",
+  },
+  {
+    id: "toothbrush",
+    label: "Toothbrush",
+    phonetic: "ˈtuːθbrʌʃ",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/toothbrush.webp`,
+    topic: "toiletries",
+    description: "A small brush with a long handle, used for cleaning the teeth.",
+  },
+  {
+    id: "deodorant",
+    label: "Deodorant",
+    phonetic: "diˈoʊdərənt",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/deodorant.webp`,
+    topic: "toiletries",
+    description: "A substance applied to the body to prevent or mask body odor.",
+  },
+  {
+    id: "lotion",
+    label: "Lotion",
+    phonetic: "ˈloʊʃən",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/lotion.webp`,
+    topic: "toiletries",
+    description: "A thick, smooth liquid preparation designed to be applied to the skin.",
+  },
+  {
+    id: "mouthwash",
+    label: "Mouthwash",
+    phonetic: "ˈmaʊθwɔːʃ",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/mouthwash.webp`,
+    topic: "toiletries",
+    description: "An antiseptic liquid preparation for cleaning the mouth and teeth.",
+  },
+
+  // Linens
+  {
+    id: "bath-towel",
+    label: "Bath Towel",
+    phonetic: "bæθ ˈtaʊəl",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/bath-towel.webp`,
+    topic: "bathroom-linens",
+    description: "A large piece of absorbent cloth used for drying the body after washing.",
+  },
+  {
+    id: "hand-towel",
+    label: "Hand Towel",
+    phonetic: "hænd ˈtaʊəl",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/hand-towel.webp`,
+    topic: "bathroom-linens",
+    description: "A small absorbent cloth used primarily for drying off one's fingers and palms.",
+  },
+  {
+    id: "washcloth",
+    label: "Washcloth",
+    phonetic: "ˈwɔːʃklɔːθ",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/washcloth.webp`,
+    topic: "bathroom-linens",
+    description: "A small square of cloth used for washing the face or body.",
+  },
+  {
+    id: "bath-mat",
+    label: "Bath Mat",
+    phonetic: "bæθ mæt",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/bath-mat.webp`,
+    topic: "bathroom-linens",
+    description:
+      "A small rug placed on the floor on the floor outside the washing area to absorb water.",
+  },
+  {
+    id: "bathrobe",
+    label: "Bathrobe",
+    phonetic: "ˈbæθroʊb",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/bathrobe.webp`,
+    topic: "bathroom-linens",
+    description: "A loose-fitting outer garment worn by people before or after washing.",
+  },
+  {
+    id: "shower-curtain",
+    label: "Shower Curtain",
+    phonetic: "ˈʃaʊər ˈkɜrtən",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/shower-curtain.webp`,
+    topic: "bathroom-linens",
+    description:
+      "A waterproof drape hung around a washing enclosure to prevent water from splashing out.",
+  },
+
+  // Accessories & Tools
+  {
+    id: "mirror",
+    label: "Mirror",
+    phonetic: "ˈmɪrər",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/mirror.webp`,
+    topic: "bathroom-accessories",
+    description:
+      "A reflective surface, typically of glass coated with a metal amalgam, that reflects a clear image.",
+  },
+  {
+    id: "comb",
+    label: "Comb",
+    phonetic: "koʊm",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/comb.webp`,
+    topic: "bathroom-accessories",
+    description:
+      "A strip of plastic, metal, or wood with a row of narrow teeth, used for untangling or arranging the hair.",
+  },
+  {
+    id: "hairbrush",
+    label: "Hairbrush",
+    phonetic: "ˈhɛərbrʌʃ",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/hairbrush.webp`,
+    topic: "bathroom-accessories",
+    description: "A brush for smoothing, styling, or detangling human hair.",
+  },
+  {
+    id: "hairdryer",
+    label: "Hairdryer",
+    phonetic: "ˈhɛərdraɪər",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/hairdryer.webp`,
+    topic: "bathroom-accessories",
+    description: "An electrical device that blows warm air to dry hair.",
+  },
+  {
+    id: "razor",
+    label: "Razor",
+    phonetic: "ˈreɪzər",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/razor.webp`,
+    topic: "bathroom-accessories",
+    description:
+      "An instrument with a sharp blade or combination of blades, used to remove unwanted hair from the face or body.",
+  },
+  {
+    id: "tweezers",
+    label: "Tweezers",
+    phonetic: "ˈtwiːzərz",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/tweezers.webp`,
+    topic: "bathroom-accessories",
+    description:
+      "A small instrument like a pair of pincers for plucking out hairs and picking up small objects.",
+  },
+  {
+    id: "nail-clippers",
+    label: "Nail Clippers",
+    phonetic: "neɪl ˈklɪpərz",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/nail-clippers.webp`,
+    topic: "bathroom-accessories",
+    description: "A small mechanical device used to trim fingernails and toenails.",
+  },
+  {
+    id: "cotton-swab",
+    label: "Cotton Swab",
+    phonetic: "ˈkɑːtən swɑːb",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/cotton-swab.webp`,
+    topic: "bathroom-accessories",
+    description:
+      "A small wad of soft fibrous material on a short rod, used for cleaning or applying cosmetics.",
+  },
+  {
+    id: "toilet-paper",
+    label: "Toilet Paper",
+    phonetic: "ˈtɔɪlɪt ˈpeɪpər",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/toilet-paper.webp`,
+    topic: "bathroom-accessories",
+    description:
+      "Soft disposable sheets, usually in rolls, for personal hygiene after using the restroom.",
+  },
+  {
+    id: "plunger",
+    label: "Plunger",
+    phonetic: "ˈplʌndʒər",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/plunger.webp`,
+    topic: "bathroom-accessories",
+    description:
+      "A device consisting of a rubber cup on a long handle, used to clear blocked pipes by suction.",
+  },
+  {
+    id: "toilet-brush",
+    label: "Toilet Brush",
+    phonetic: "ˈtɔɪlɪt brʌʃ",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/toilet-brush.webp`,
+    topic: "bathroom-accessories",
+    description: "A specialized scrubbing tool used to clean the inside of the ceramic bowl.",
+  },
+  {
+    id: "trash-can",
+    label: "Trash Can",
+    phonetic: "træʃ kæn",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/trash-can.webp`,
+    topic: "bathroom-accessories",
+    description: "A container for holding waste materials until they are disposed of.",
+  },
+  {
+    id: "scale",
+    label: "Scale",
+    phonetic: "skeɪl",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/scale.webp`,
+    topic: "bathroom-accessories",
+    description: "An instrument or machine for weighing people or objects.",
+  },
+  {
+    id: "laundry-basket",
+    label: "Laundry Basket",
+    phonetic: "ˈlɔːndri ˈbæskɪt",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/laundry-basket.webp`,
+    topic: "bathroom-accessories",
+    description: "A hamper or container used to hold dirty clothes until they are washed.",
+  },
+  {
+    id: "sponge",
+    label: "Sponge",
+    phonetic: "spʌndʒ",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/sponge.webp`,
+    topic: "bathroom-accessories",
+    description: "A porous piece of material used for washing and cleaning.",
+  },
+  {
+    id: "loofah",
+    label: "Loofah",
+    phonetic: "ˈluːfə",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/loofah.webp`,
+    topic: "bathroom-accessories",
+    description: "A coarse, fibrous sponge used for scrubbing the body during a bath or shower.",
+  },
+];
+
 export const COURSE_UNITS: Record<string, CourseUnit> = {
   bedroom: {
     id: "bedroom",
@@ -3233,6 +3638,16 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
     topics: GARDEN_TOPICS,
     groups: GARDEN_GROUPS,
     vocabulary: GARDEN_VOCABULARY,
+  },
+  bathroom: {
+    id: "bathroom",
+    name: "The Bathroom",
+    description:
+      "Explore real-life plumbing fixtures, toiletries, linens, and accessories through 2D scene discovery, audio practice, recall matching, and sentence building.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/bathroom-hero.webp`,
+    topics: BATHROOM_TOPICS,
+    groups: BATHROOM_GROUPS,
+    vocabulary: BATHROOM_VOCABULARY,
   },
 };
 

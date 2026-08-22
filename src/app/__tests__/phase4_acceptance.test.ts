@@ -45,7 +45,7 @@ describe("Phase 4 Acceptance Criteria Verification", () => {
 
   it("AC 1d: an unshipped world is never claimed as offline-ready", async () => {
     stubCacheStorage([]);
-    const bathroom = await getOfflineReadiness("bathroom");
+    const bathroom = await getOfflineReadiness("spaceship");
     expect(bathroom.total).toBe(0);
     expect(bathroom.ready).toBe(false);
   });
