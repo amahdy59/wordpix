@@ -1,8 +1,8 @@
-﻿import { memo, useCallback, useEffect, useMemo, useState } from "react";
+import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { getRichSentence, articleFor } from "./exerciseContent";
+import { articleFor } from "./exerciseContent";
 import { WordImage } from "../shared/WordImage";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
@@ -34,7 +34,6 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
 
   const queue = useDrillQueue(words);
   const currentTargetWord = queue.current ?? words[0];
-  const richSentence = useMemo(() => getRichSentence(currentTargetWord), [currentTargetWord]);
   usePrefetchImage(queue.next);
 
   const options = useMemo(() => {
@@ -42,8 +41,6 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
     const shuffled = shuffleArray(otherWords).slice(0, 3);
     return shuffleArray([currentTargetWord, ...shuffled]);
   }, [currentTargetWord, words]);
-
-  const selectedWord = options.find((item) => item.id === selectedId);
 
   const advanceNext = useCallback(() => {
     if (feedback !== null) queue.submit(feedback === "correct");
@@ -129,27 +126,8 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         </div>
       }
     >
-      <div className="relative flex flex-col gap-2 sm:gap-3 w-full max-w-2xl mx-auto">
-        {/* Sentence card — the only question element, above the image */}
-        <div className="bg-wp-card rounded-2xl border border-border px-4 py-2.5 text-center shadow-wp-xs flex items-center justify-center">
-          <p className="font-sans font-bold text-foreground text-xl sm:text-2xl leading-relaxed whitespace-nowrap overflow-hidden text-ellipsis w-full">
-            {richSentence.clozeBefore}{" "}
-            <span
-              className={`inline-flex items-center justify-center min-w-[120px] sm:min-w-[140px] h-10 sm:h-12 px-3 sm:px-4 rounded-xl border-2 transition-all duration-300 font-sans font-black text-lg sm:text-xl align-middle mx-1 ${
-                feedback !== null
-                  ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                  : "bg-secondary/80 border-dashed border-primary/50 text-muted-foreground"
-              }`}
-            >
-              {feedback !== null
-                ? currentTargetWord.label.toLowerCase()
-                : selectedWord
-                  ? selectedWord.label.toLowerCase()
-                  : "_______"}
-            </span>{" "}
-            {richSentence.clozeAfter}
-          </p>
-        </div>
+      <div className="relative flex flex-col gap-3 sm:gap-4 w-full max-w-2xl mx-auto my-auto">
+        <h2 className="sr-only">Choose the correct word that matches the picture</h2>
 
         {/* Image with centered feedback overlay */}
         <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[3/2] sm:aspect-[16/9]">

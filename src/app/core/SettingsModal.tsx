@@ -36,6 +36,21 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
     reduceMotion,
   } = accessibility;
   const [confirmReset, setConfirmReset] = useState(false);
+  const [elevenLabsKey, setElevenLabsKey] = useState(() => {
+    if (typeof window === "undefined") return "";
+    return localStorage.getItem("wordpix_elevenlabs_key") || "";
+  });
+
+  const handleSaveApiKey = (key: string) => {
+    setElevenLabsKey(key);
+    if (typeof window !== "undefined") {
+      if (key.trim()) {
+        localStorage.setItem("wordpix_elevenlabs_key", key.trim());
+      } else {
+        localStorage.removeItem("wordpix_elevenlabs_key");
+      }
+    }
+  };
 
   if (!isOpen) return null;
 
@@ -354,27 +369,66 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
               <hr className="border-border/60" />
 
               {/* ElevenLabs HD Voice */}
-              <div className="flex flex-col gap-2.5">
+              <div className="flex flex-col gap-3 bg-muted/40 p-4 rounded-2xl border border-border">
                 <div className="flex items-center justify-between gap-2 flex-wrap">
                   <div className="flex items-center gap-2">
                     <Sparkles className="size-4 text-wp-amber" aria-hidden />
                     <span className="font-sans font-bold text-foreground text-sm">
-                      ElevenLabs HD Neural Voice
+                      ElevenLabs HD Voice &amp; TTS Engine
                     </span>
                   </div>
-                  <button
-                    type="button"
-                    onClick={() => speak("Hello! Welcome to WordPix.")}
-                    className="px-3 py-1.5 min-h-[36px] rounded-xl bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1.5 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
-                  >
-                    <Volume2 className="size-3.5" aria-hidden />
-                    <span>Test Voice</span>
-                  </button>
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    <button
+                      type="button"
+                      onClick={() => speak("Light switch.")}
+                      aria-label="Test pronunciation of Light switch"
+                      className="px-2.5 py-1 min-h-[36px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
+                    >
+                      <Volume2 className="size-3" aria-hidden />
+                      <span>Test &ldquo;Light switch&rdquo;</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => speak("Hello! Welcome to WordPix.")}
+                      aria-label="Test sentence voice"
+                      className="px-2.5 py-1 min-h-[36px] rounded-lg bg-secondary text-primary border border-primary/20 hover:bg-primary/10 font-sans font-bold text-xs flex items-center gap-1 focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary cursor-pointer"
+                    >
+                      <Volume2 className="size-3" aria-hidden />
+                      <span>Test Sentence</span>
+                    </button>
+                  </div>
                 </div>
-                <p className="font-sans text-xs text-muted-foreground">
-                  Using <strong>Alice</strong> (HD Educator Voice) with permanent offline IndexedDB
-                  caching.
+                <p className="font-sans text-xs text-muted-foreground leading-relaxed">
+                  Using <strong>Alice HD</strong> neural educator voice with offline IndexedDB
+                  caching, backed by prioritized Edge/Chrome Natural TTS.
                 </p>
+                <div className="flex flex-col gap-1.5 mt-1">
+                  <label
+                    htmlFor="elevenlabs-key-input"
+                    className="text-xs font-sans font-semibold text-foreground"
+                  >
+                    ElevenLabs API Key (Optional Override)
+                  </label>
+                  <div className="flex items-center gap-2">
+                    <input
+                      id="elevenlabs-key-input"
+                      type="password"
+                      value={elevenLabsKey}
+                      onChange={(e) => handleSaveApiKey(e.target.value)}
+                      placeholder="sk_... (paste to enable cloud Alice voice)"
+                      className="flex-1 bg-wp-card border border-border rounded-xl px-3 py-2 text-xs font-mono text-foreground focus:outline-none focus:border-primary"
+                    />
+                    {elevenLabsKey ? (
+                      <button
+                        type="button"
+                        onClick={() => handleSaveApiKey("")}
+                        className="text-xs text-muted-foreground hover:text-wp-rose px-2 py-1 font-sans font-semibold"
+                      >
+                        Clear
+                      </button>
+                    ) : null}
+                  </div>
+                </div>
               </div>
 
               <hr className="border-border/60" />

@@ -243,8 +243,15 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                 <span className="font-sans font-black text-white text-xl sm:text-2xl lg:text-3xl leading-tight capitalize drop-shadow">
                   {currentWord.label}
                 </span>
-                <span className="font-sans font-medium text-white/80 text-xs sm:text-sm drop-shadow">
-                  /{currentWord.phonetic.replace(/^\/|\/$/g, "")}/
+                <span className="font-sans font-medium text-white/80 text-xs sm:text-sm drop-shadow font-mono">
+                  /
+                  {getLexiconEntry(currentWord.id, currentWord.label).phonetic
+                    ? getLexiconEntry(currentWord.id, currentWord.label).phonetic!.replace(
+                        /^\/|\/$/g,
+                        ""
+                      )
+                    : currentWord.phonetic.replace(/^\/|\/$/g, "")}
+                  /
                 </span>
                 <button
                   type="button"

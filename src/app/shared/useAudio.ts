@@ -16,23 +16,56 @@ const SPEECH_START_TIMEOUT_MS = 4000;
 
 function pickVoice(synth: SpeechSynthesis, targetLang: string): SpeechSynthesisVoice | null {
   const voices = synth.getVoices();
-  const prefix = targetLang.split("-")[0];
+  if (voices.length === 0) return null;
 
-  // Prefer "Google" voices (they are usually higher quality neural TTS)
-  const googleVoice = voices.find((v) => v.name.includes("Google") && v.lang.startsWith(prefix));
+  const prefix = targetLang.split("-")[0].toLowerCase();
+  const langLower = targetLang.toLowerCase();
+
+  // 1. Natural / Neural online voices (Edge/Chrome/Azure highest-fidelity TTS)
+  const naturalVoice = voices.find(
+    (v) =>
+      (v.name.includes("Natural") || v.name.includes("Online") || v.name.includes("Neural")) &&
+      (v.lang.toLowerCase() === langLower || v.lang.toLowerCase().startsWith(prefix))
+  );
+  if (naturalVoice) return naturalVoice;
+
+  // 2. Google neural voices (Chrome/Android)
+  const googleVoice = voices.find(
+    (v) =>
+      v.name.includes("Google") &&
+      (v.lang.toLowerCase() === langLower || v.lang.toLowerCase().startsWith(prefix))
+  );
   if (googleVoice) return googleVoice;
 
-  // Prefer premium Apple/Microsoft voices
+  // 3. Apple Enhanced / Premium voices (macOS / iOS)
   const premiumVoice = voices.find(
-    (v) => (v.name.includes("Premium") || v.name.includes("Enhanced")) && v.lang.startsWith(prefix)
+    (v) =>
+      (v.name.includes("Premium") || v.name.includes("Enhanced")) &&
+      (v.lang.toLowerCase() === langLower || v.lang.toLowerCase().startsWith(prefix))
   );
   if (premiumVoice) return premiumVoice;
 
+  // 4. Non-local network-backed synthesis voices
+  const remoteVoice = voices.find(
+    (v) =>
+      !v.localService &&
+      (v.lang.toLowerCase() === langLower || v.lang.toLowerCase().startsWith(prefix))
+  );
+  if (remoteVoice) return remoteVoice;
+
+  // 5. Higher clarity female voices (Zira / Samantha / Jenny) over robotic David
+  const clearFemaleVoice = voices.find(
+    (v) =>
+      (v.name.includes("Zira") || v.name.includes("Samantha") || v.name.includes("Jenny")) &&
+      v.lang.toLowerCase().startsWith(prefix)
+  );
+  if (clearFemaleVoice) return clearFemaleVoice;
+
+  // 6. Exact language match or prefix fallback
   return (
-    voices.find((v) => v.lang === targetLang && !v.localService) ??
-    voices.find((v) => v.lang === targetLang) ??
-    voices.find((v) => v.lang.startsWith(prefix) && !v.localService) ??
-    voices.find((v) => v.lang.startsWith(prefix)) ??
+    voices.find((v) => v.lang.toLowerCase() === langLower) ??
+    voices.find((v) => v.lang.toLowerCase().startsWith(prefix)) ??
+    voices[0] ??
     null
   );
 }
