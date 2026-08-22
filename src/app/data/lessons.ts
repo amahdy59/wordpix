@@ -3199,9 +3199,9 @@ export const BATHROOM_TOPICS: TopicCategory[] = [
   {
     id: "toiletries",
     name: "Toiletries",
-    description: "Daily personal hygiene and hair care essentials.",
+    description: "Daily personal hygiene, hair care, and vanity essentials.",
     icon: "sparkles",
-    itemsCount: 10,
+    itemsCount: 11,
   },
   {
     id: "bathroom-supplies",
@@ -3231,6 +3231,13 @@ export const BATHROOM_TOPICS: TopicCategory[] = [
     icon: "spray-can",
     itemsCount: 8,
   },
+  {
+    id: "hygiene-actions",
+    name: "Hygiene Actions",
+    description: "Essential daily routines and personal care habits.",
+    icon: "activity",
+    itemsCount: 8,
+  },
 ];
 
 export const BATHROOM_GROUPS: Lesson[] = [
@@ -3258,7 +3265,7 @@ export const BATHROOM_GROUPS: Lesson[] = [
     id: "toiletries",
     name: "Toiletries",
     topicId: "toiletries",
-    description: "Learn daily personal hygiene and hair styling essentials.",
+    description: "Learn daily personal hygiene, hair styling, and vanity essentials.",
     wordIds: [
       "soap",
       "shampoo",
@@ -3270,9 +3277,10 @@ export const BATHROOM_GROUPS: Lesson[] = [
       "hairbrush",
       "lotion",
       "deodorant",
+      "tissue",
     ],
     story:
-      "Sarah lathers her hair with shampoo and conditioner, then washes with fragrant soap. She brushes her teeth using toothpaste and a toothbrush, dries off with a soft towel, untangles her hair with a comb and hairbrush, and applies soothing lotion and fresh deodorant.",
+      "Sarah lathers her hair with shampoo and conditioner, then washes with fragrant soap. She brushes her teeth using toothpaste and a toothbrush, dries off with a soft towel, untangles her hair with a comb and hairbrush, pulls a soft tissue, and applies soothing lotion and fresh deodorant.",
   },
   {
     id: "bathroom-supplies",
@@ -3351,6 +3359,24 @@ export const BATHROOM_GROUPS: Lesson[] = [
     ],
     story:
       "Wearing yellow rubber gloves, Omar filled a plastic bucket with water. He scrubbed the sink with a sponge and microfiber cloth, and wiped the mirror with a squeegee. He sprayed cleaner from a spray-bottle, cleaned the toilet with a stiff brush, and kept a plunger nearby for emergencies.",
+  },
+  {
+    id: "hygiene-actions",
+    name: "Hygiene Actions",
+    topicId: "hygiene-actions",
+    description: "Learn essential daily bathroom habits and self-care actions.",
+    wordIds: [
+      "wash-hands",
+      "brush-teeth",
+      "take-shower",
+      "dry-off",
+      "flush",
+      "comb-hair",
+      "apply-lotion",
+      "gargle",
+    ],
+    story:
+      "Every morning, Omar starts his routine: he will wash-hands at the sink, brush-teeth with mint paste, and take-shower in the stall. He uses a plush towel to dry-off completely. Afterwards, he remembers to flush the toilet, comb-hair before the mirror, apply-lotion to moisturize his skin, and gargle with mint mouthwash.",
   },
 ];
 
@@ -3437,7 +3463,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     description: "Waterproof ceramic or porcelain slabs covering bathroom walls and floors.",
   },
 
-  // Toiletries (10)
+  // Toiletries (11)
   {
     id: "soap",
     label: "Soap",
@@ -3517,6 +3543,15 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     img: `${LOCAL_WORD_IMAGES}/bathroom/deodorant.webp`,
     topic: "toiletries",
     description: "A roll-on or stick cosmetic applied underarms to prevent body odor.",
+  },
+  {
+    id: "tissue",
+    label: "Tissue",
+    phonetic: "ˈtɪʃuː",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/tissue.webp`,
+    topic: "toiletries",
+    description:
+      "A soft thin sheet of disposable paper used for blotting moisture and gentle skincare.",
   },
 
   // Bathroom Supplies (10)
@@ -3836,6 +3871,79 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     img: `${LOCAL_WORD_IMAGES}/bathroom/squeegee.webp`,
     topic: "cleaning-items",
     description: "A rubber blade tool used to wipe water and condensation off glass stall doors.",
+  },
+
+  // Hygiene Actions (8)
+  {
+    id: "wash-hands",
+    label: "Wash Hands",
+    phonetic: "wɑːʃ hændz",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/wash-hands.webp`,
+    topic: "hygiene-actions",
+    description:
+      "The vital hygiene habit of lathering palms and fingers under running tap water with antibacterial suds.",
+  },
+  {
+    id: "brush-teeth",
+    label: "Brush Teeth",
+    phonetic: "brʌʃ tiːθ",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/brush-teeth.webp`,
+    topic: "hygiene-actions",
+    description:
+      "The daily dental routine of scrubbing incisors and molars with mint paste on fine bristles.",
+  },
+  {
+    id: "take-shower",
+    label: "Take Shower",
+    phonetic: "teɪk ˈʃaʊər",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/take-shower.webp`,
+    topic: "hygiene-actions",
+    description:
+      "The refreshing act of stepping into a glass stall under an overhead spray to bathe.",
+  },
+  {
+    id: "dry-off",
+    label: "Dry Off",
+    phonetic: "draɪ ɔːf",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/dry-off.webp`,
+    topic: "hygiene-actions",
+    description:
+      "The post-bathing action of wrapping oneself in a plush absorbent terrycloth wrap to remove droplets.",
+  },
+  {
+    id: "flush",
+    label: "Flush",
+    phonetic: "flʌʃ",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/flush.webp`,
+    topic: "hygiene-actions",
+    description:
+      "The action of pressing a chrome lever to discharge swirling clean water down the ceramic bowl.",
+  },
+  {
+    id: "comb-hair",
+    label: "Comb Hair",
+    phonetic: "koʊm hɛər",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/comb-hair.webp`,
+    topic: "hygiene-actions",
+    description:
+      "The grooming action of gliding a toothed tool through locks to remove knots and part strands.",
+  },
+  {
+    id: "apply-lotion",
+    label: "Apply Lotion",
+    phonetic: "əˈplaɪ ˈloʊʃən",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/apply-lotion.webp`,
+    topic: "hygiene-actions",
+    description: "The soothing skincare action of smoothing moisturizing cream onto dry skin.",
+  },
+  {
+    id: "gargle",
+    label: "Gargle",
+    phonetic: "ˈɡɑːrɡl",
+    img: `${LOCAL_WORD_IMAGES}/bathroom/gargle.webp`,
+    topic: "hygiene-actions",
+    description:
+      "The oral hygiene habit of swishing liquid in the back of the throat before spitting.",
   },
 ];
 

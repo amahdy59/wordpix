@@ -17393,6 +17393,397 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleArabic:
       "رَفْرَفَ عَلَمُ قَوْسِ قُزَحَ الزَّاهِي بِفَخْرٍ فَوْقَ سَارِيَةِ الأَعْلامِ المَرْكَزِيَّةِ الطَّوِيلَةِ.",
   },
+  tissue: {
+    id: "tissue",
+    arabic: "مَنْدِيلٌ وَرَقِيّ (مَحَارِم)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtɪʃuː",
+    pronunciationTip: "Pronounce 'TISH-oo' (/ˈtɪʃ.uː/).",
+    collocations: [
+      "box of tissues",
+      "facial tissue",
+      "soft tissue",
+      "pull a tissue",
+      "disposable tissue",
+      "pocket tissue",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pull out",
+        meaning: "dispense a single paper sheet",
+        arabic: "يَسْحَبُ مَنْدِيلًا",
+        example: "She pulled out a soft facial tissue from the box on the vanity.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Daily Hygiene",
+        en: "She pulled a soft tissue from the decorative box on the bathroom vanity.",
+        ar: "سَحَبَتْ مَنْدِيلًا وَرَقِيًّا نَاعِمًا مِنْ عُلْبَةِ المَحَارِمِ المُزَخْرَفَةِ عَلَى خِزَانَةِ الحَمَّامِ.",
+      },
+      {
+        context: "Skincare",
+        en: "Use a gentle facial tissue to blot excess moisture from your cheeks.",
+        ar: "اسْتَخْدِمْ مَنْدِيلًا وَرَقِيًّا لَطِيفًا لِتَجْفِيفِ الرُّطُوبَةِ الزَّائِدَةِ عَنْ خَدَّيْكَ.",
+      },
+      {
+        context: "Storage",
+        en: "A wooden dispenser box keeps tissues neatly organized beside the mirror.",
+        ar: "تَحْفَظُ عُلْبَةُ التَّوْزِيعِ الخَشَبِيَّةِ المَنَادِيلَ مُرَتَّبَةً بِجَانِبِ المِرْآةِ.",
+      },
+    ],
+    exampleSentence: "She pulled a soft tissue from the decorative box on the bathroom vanity.",
+    exampleArabic:
+      "سَحَبَتْ مَنْدِيلًا وَرَقِيًّا نَاعِمًا مِنْ عُلْبَةِ المَحَارِمِ المُزَخْرَفَةِ عَلَى خِزَانَةِ الحَمَّامِ.",
+  },
+  "wash-hands": {
+    id: "wash-hands",
+    arabic: "غَسْلُ اليَدَيْن",
+    partOfSpeech: "phrase",
+    phonetic: "wɑːʃ hændz",
+    pronunciationTip: "Pronounce 'WASH hands' (/wɑːʃ hændz/).",
+    collocations: [
+      "wash hands with soap",
+      "wash hands before eating",
+      "wash hands under warm water",
+      "properly wash hands",
+      "wash hands thoroughly",
+      "remind to wash hands",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wash off",
+        meaning: "clean away grime with rich lather",
+        arabic: "يَغْسِلُ وَيُنَظِّف",
+        example: "Lather your palms for twenty seconds to wash off all germs.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Hygiene Routine",
+        en: "Always wash hands with antibacterial soap and warm water after using the restroom.",
+        ar: "اغْسِلْ يَدَيْكَ دَائِمًا بِالصَّابُونِ المُضَادِّ لِلْبَكْتِيرْيَا وَالمَاءِ الدَّافِئِ بَعْدَ اسْتِخْدَامِ المِرْحَاضِ.",
+      },
+      {
+        context: "Health Guidelines",
+        en: "Doctors recommend rubbing palms together for twenty seconds to thoroughly clean them.",
+        ar: "يُوصِي الأَطِبَّاءُ بِفَرْكِ الكَفَّيْنِ مَعًا لِمُدَّةِ عِشْرِينَ ثَانِيَةً لِتَنْظِيفِهِمَا جَيِّدًا.",
+      },
+      {
+        context: "Family Routine",
+        en: "Parents teach children to lather between their fingers when at the sink.",
+        ar: "يُعَلِّمُ الآبَاءُ الأَطْفَالَ إِرْغَاءَ الصَّابُونِ بَيْنَ أَصَابِعِهِمْ عِنْدَ حَوْضِ الغَسِيلِ.",
+      },
+    ],
+    exampleSentence:
+      "Always wash hands with antibacterial soap and warm water after using the restroom.",
+    exampleArabic:
+      "اغْسِلْ يَدَيْكَ دَائِمًا بِالصَّابُونِ المُضَادِّ لِلْبَكْتِيرْيَا وَالمَاءِ الدَّافِئِ بَعْدَ اسْتِخْدَامِ المِرْحَاضِ.",
+  },
+  "brush-teeth": {
+    id: "brush-teeth",
+    arabic: "تَنْظِيفُ الأَسْنَان (فَرْكُ الأَسْنَانِ بِالفُرْشَاة)",
+    partOfSpeech: "phrase",
+    phonetic: "brʌʃ tiːθ",
+    pronunciationTip: "Pronounce 'BRUSH teeth' (/brʌʃ tiːθ/).",
+    collocations: [
+      "brush teeth twice daily",
+      "brush teeth with fluoride toothpaste",
+      "brush teeth after meals",
+      "circular motions to brush teeth",
+      "encourage kids to brush teeth",
+      "gently brush teeth",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "brush away",
+        meaning: "remove food particles with bristles",
+        arabic: "يُزِيلُ بِالفُرْشَاة",
+        example: "Brush away plaque carefully around every molar.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dental Care",
+        en: "Dentists advise everyone to brush teeth twice a day for two full minutes.",
+        ar: "يَنْصَحُ أَطِبَّاءُ الأَسْنَانِ الجَمِيعَ بِتَنْظِيفِ أَسْنَانِهِمْ مَرَّتَيْنِ يَوْمِيًّا لِمُدَّةِ دَقِيقَتَيْنِ كَامِلَتَيْنِ.",
+      },
+      {
+        context: "Morning Routine",
+        en: "She squeezed mint paste onto the bristles before standing in front of the mirror.",
+        ar: "وَضَعَتْ مَعْجُونَ النَّعْنَاعِ عَلَى الشُّعَيْرَاتِ قَبْلَ الوُقُوفِ أَمَامَ المِرْآةِ.",
+      },
+      {
+        context: "Bedtime Habit",
+        en: "Children make it a habit to clean their incisors before going to bed.",
+        ar: "يَجْعَلُ الأَطْفَالُ مِنْ تَنْظِيفِ قَوَاطِعِهِمْ عَادَةً قَبْلَ الذَّهَابِ إِلَى النَّوْمِ.",
+      },
+    ],
+    exampleSentence: "Dentists advise everyone to brush teeth twice a day for two full minutes.",
+    exampleArabic:
+      "يَنْصَحُ أَطِبَّاءُ الأَسْنَانِ الجَمِيعَ بِتَنْظِيفِ أَسْنَانِهِمْ مَرَّتَيْنِ يَوْمِيًّا لِمُدَّةِ دَقِيقَتَيْنِ كَامِلَتَيْنِ.",
+  },
+  "take-shower": {
+    id: "take-shower",
+    arabic: "الاسْتِحْمَام (أَخْذُ حَمَّامٍ سَرِيع)",
+    partOfSpeech: "phrase",
+    phonetic: "teɪk ˈʃaʊər",
+    pronunciationTip: "Pronounce 'take SHOWER' (/teɪk ˈʃaʊ.ər/).",
+    collocations: [
+      "take a warm shower",
+      "take a quick shower",
+      "take a cold shower",
+      "take a refreshing shower",
+      "take a shower in the morning",
+      "sing while taking a shower",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "freshen up",
+        meaning: "bathe to feel invigorated",
+        arabic: "يَنْتَعِشُ بِالاسْتِحْمَام",
+        example: "Taking a quick shower helps you freshen up after exercising.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Morning Routine",
+        en: "He stepped into the glass stall to take a warm shower before starting his workday.",
+        ar: "دَخَلَ كَبِينَةَ الاسْتِحْمَامِ الزُّجَاجِيَّةَ لِيَأْخُذَ حَمَّامًا دَافِئًا قَبْلَ بَدْءِ يَوْمِ عَمَلِهِ.",
+      },
+      {
+        context: "Post-Workout",
+        en: "Taking a refreshing shower after the gym washes away sweat and soothes tired muscles.",
+        ar: "يَغْسِلُ الاسْتِحْمَامُ المُنْعِشُ بَعْدَ التَّمْرِينِ العَرَقَ وَيُهَدِّئُ العَضَلاتِ المُتْعَبَةَ.",
+      },
+      {
+        context: "Relaxation",
+        en: "She enjoys taking a relaxing evening shower with lavender-scented body wash.",
+        ar: "تَسْتَمْتِعُ بِأَخْذِ حَمَّامٍ مَسَائِيٍّ مُرِيحٍ بِسَائِلِ اسْتِحْمَامٍ بِرَائِحَةِ الخُزَامَى.",
+      },
+    ],
+    exampleSentence:
+      "He stepped into the glass stall to take a warm shower before starting his workday.",
+    exampleArabic:
+      "دَخَلَ كَبِينَةَ الاسْتِحْمَامِ الزُّجَاجِيَّةَ لِيَأْخُذَ حَمَّامًا دَافِئًا قَبْلَ بَدْءِ يَوْمِ عَمَلِهِ.",
+  },
+  "dry-off": {
+    id: "dry-off",
+    arabic: "التَّجْفِيف (تَنْشِيفُ الجِسْم)",
+    partOfSpeech: "phrase",
+    phonetic: "draɪ ɔːf",
+    pronunciationTip: "Pronounce 'DRY off' (/draɪ ɔːf/).",
+    collocations: [
+      "dry off with a towel",
+      "dry off quickly",
+      "dry off after swimming",
+      "pat skin to dry off",
+      "help baby dry off",
+      "dry off before dressing",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "dry off",
+        meaning: "remove water from skin with absorbent fabric",
+        arabic: "يُجَفِّفُ جِسْمَهُ",
+        example: "Step onto the bath mat and dry off thoroughly with a fluffy towel.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Post-Bath Routine",
+        en: "She stepped onto the soft mat to dry off with a large plush bath towel.",
+        ar: "خَطَتْ عَلَى البِسَاطِ النَّاعِمِ لِتُجَفِّفَ جِسْمَهَا بِمِنْشَفَةِ حَمَّامٍ كَبِيرَةٍ وَفَاخِرَةٍ.",
+      },
+      {
+        context: "Skincare Advice",
+        en: "Gently pat your skin rather than rubbing aggressively when you dry off.",
+        ar: "رَبِّتْ بِلُطْفٍ عَلَى بَشَرَتِكَ بَدَلًا مِنَ الفَرْكِ العَنِيفِ عِنْدَمَا تُجَفِّفُ جِسْمَكَ.",
+      },
+      {
+        context: "Poolside",
+        en: "The children wrapped themselves in cozy hooded robes to dry off after swimming.",
+        ar: "الْتَفَّ الأَطْفَالُ فِي أَرْدِيَةِ حَمَّامٍ دَافِئَةٍ ذَاتِ قُبَّعَاتٍ لِلتَّجْفِيفِ بَعْدَ السِّبَاحَةِ.",
+      },
+    ],
+    exampleSentence: "She stepped onto the soft mat to dry off with a large plush bath towel.",
+    exampleArabic:
+      "خَطَتْ عَلَى البِسَاطِ النَّاعِمِ لِتُجَفِّفَ جِسْمَهَا بِمِنْشَفَةِ حَمَّامٍ كَبِيرَةٍ وَفَاخِرَةٍ.",
+  },
+  flush: {
+    id: "flush",
+    arabic: "شَطْفُ المِرْحَاض (سَحْبُ السَّيْفُون)",
+    partOfSpeech: "verb",
+    phonetic: "flʌʃ",
+    pronunciationTip: "Short 'u' sound /ʌ/ ending in 'sh' (/ʃ/): 'FLUSH' (/flʌʃ/).",
+    collocations: [
+      "flush the toilet",
+      "dual flush button",
+      "automatic flush",
+      "press the lever to flush",
+      "flush with water",
+      "remember to flush",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "flush away",
+        meaning: "cleanse ceramic bowl by discharging water",
+        arabic: "يَشْطُفُ وَيُصَرِّف",
+        example: "Push down the chrome handle to flush away waste instantly.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Restroom Etiquette",
+        en: "Remember to flush the toilet after every use to maintain cleanliness.",
+        ar: "تَذَكَّرْ شَطْفَ المِرْحَاضِ بَعْدَ كُلِّ اسْتِخْدَامٍ لِلْحِفَاظِ عَلَى النَّظَافَةِ.",
+      },
+      {
+        context: "Water Conservation",
+        en: "Modern dual-flush systems provide a half-flush option to conserve water.",
+        ar: "تُوَفِّرُ أَنْظِمَةُ الشَّطْفِ المُزْدَوَجِ الحَدِيثَةُ خِيَارَ نِصْفِ شَطْفٍ لِتَوْفِيرِ المِيَاهِ.",
+      },
+      {
+        context: "Plumbing Operation",
+        en: "Pressing the chrome button releases a powerful swirling stream of clean water.",
+        ar: "يُؤَدِّي الضَّغْطُ عَلَى الزِّرِّ المَطْلِيِّ بِالكُرُومِ إِلَى إِطْلاقِ تَدَفُّقٍ قَوِيٍّ لِلْمَاءِ النَّظِيفِ.",
+      },
+    ],
+    exampleSentence: "Remember to flush the toilet after every use to maintain cleanliness.",
+    exampleArabic:
+      "تَذَكَّرْ شَطْفَ المِرْحَاضِ بَعْدَ كُلِّ اسْتِخْدَامٍ لِلْحِفَاظِ عَلَى النَّظَافَةِ.",
+  },
+  "comb-hair": {
+    id: "comb-hair",
+    arabic: "تَمْشِيطُ الشَّعْر",
+    partOfSpeech: "phrase",
+    phonetic: "koʊm hɛər",
+    pronunciationTip: "Silent 'b' in 'comb': 'COHM hair' (/koʊm hɛər/).",
+    collocations: [
+      "comb hair gently",
+      "comb wet hair",
+      "comb hair with a wide-tooth comb",
+      "part and comb hair",
+      "comb hair in the mirror",
+      "daily comb hair",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "comb through",
+        meaning: "untangle strands carefully",
+        arabic: "يُسَرِّحُ وَيُفَكِّكُ التَّشَابُك",
+        example: "Comb through damp strands slowly from roots to ends.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Grooming Routine",
+        en: "She stood before the lighted mirror to gently comb hair and remove tangles.",
+        ar: "وَقَفَتْ أَمَامَ المِرْآةِ المُضَاءَةِ لِتُمَشِّطَ شَعْرَهَا بِلُطْفٍ وَتُزِيلَ التَّشَابُكَ.",
+      },
+      {
+        context: "Hair Care Tip",
+        en: "Using a wide-tooth wooden tool prevents breakage when you untangle wet locks.",
+        ar: "يَمْنَعُ اسْتِخْدَامُ أَدَاةٍ خَشَبِيَّةٍ وَاسِعَةِ الأَسْنَانِ التَّقَصُّفَ عِنْدَ تَسْرِيحِ الخُصَلِ المُبْتَلَّةِ.",
+      },
+      {
+        context: "Morning Preparation",
+        en: "He parted his locks neatly on the left side during his morning styling.",
+        ar: "فَرَقَ خُصَلَ شَعْرِهِ بِتَرْتِيبٍ عَلَى الجَانِبِ الأَيْسَرِ خِلَالَ تَهْيِئَتِهِ الصَّبَاحِيَّةِ.",
+      },
+    ],
+    exampleSentence: "She stood before the lighted mirror to gently comb hair and remove tangles.",
+    exampleArabic:
+      "وَقَفَتْ أَمَامَ المِرْآةِ المُضَاءَةِ لِتُمَشِّطَ شَعْرَهَا بِلُطْفٍ وَتُزِيلَ التَّشَابُكَ.",
+  },
+  "apply-lotion": {
+    id: "apply-lotion",
+    arabic: "وَضْعُ المُرَطِّب (دَهْنُ الكَرِيمِ المُرَطِّب)",
+    partOfSpeech: "phrase",
+    phonetic: "əˈplaɪ ˈloʊʃən",
+    pronunciationTip: "Pronounce 'uh-PLY LOH-shun' (/əˈplaɪ ˈloʊ.ʃən/).",
+    collocations: [
+      "apply lotion to dry skin",
+      "smoothly apply lotion",
+      "apply lotion after shower",
+      "apply lotion to hands",
+      "daily apply lotion",
+      "massage and apply lotion",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "rub in",
+        meaning: "massage cream until fully absorbed",
+        arabic: "يَدْهُنُ حَتَّى يَمْتَصَّ الجِلْد",
+        example: "Gently rub in moisturizing cream after patting your skin dry.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Skincare Habit",
+        en: "It is best to apply lotion right after showering while skin is still slightly damp.",
+        ar: "مِنَ الأَفْضَلِ وَضْعُ المُرَطِّبِ مُبَاشَرَةً بَعْدَ الاسْتِحْمَامِ حِينَ تَكُونُ البَشَرَةُ لَا تَزَالُ رَطْبَةً قَلِيلًا.",
+      },
+      {
+        context: "Hand Care",
+        en: "She pumped a coin-sized drop onto her palms and began to smooth it over dry hands.",
+        ar: "ضَغَطَتْ قَطْرَةً بِحَجْمِ عُمْلَةٍ مَعْدَنِيَّةٍ عَلَى كَفَّيْهَا وَبَدَأَتْ بِدَهْنِهَا عَلَى يَدَيْهَا الجَافَّتَيْنِ.",
+      },
+      {
+        context: "Winter Protection",
+        en: "Regularly applying rich body moisturizer protects skin from cold weather chapping.",
+        ar: "يَحْمِي وَضْعُ مُرَطِّبِ الجِسْمِ الغَنِيِّ بِانْتِظَامٍ البَشَرَةَ مِنَ التَّشَقُّقِ فِي الطَّقْسِ البَارِدِ.",
+      },
+    ],
+    exampleSentence:
+      "It is best to apply lotion right after showering while skin is still slightly damp.",
+    exampleArabic:
+      "مِنَ الأَفْضَلِ وَضْعُ المُرَطِّبِ مُبَاشَرَةً بَعْدَ الاسْتِحْمَامِ حِينَ تَكُونُ البَشَرَةُ لَا تَزَالُ رَطْبَةً قَلِيلًا.",
+  },
+  gargle: {
+    id: "gargle",
+    arabic: "الغَرْغَرَة",
+    partOfSpeech: "verb",
+    phonetic: "ˈɡɑːrɡl",
+    pronunciationTip: "Pronounce 'GAR-gul' (/ˈɡɑːr.ɡəl/).",
+    collocations: [
+      "gargle with mouthwash",
+      "gargle with warm salt water",
+      "gargle for thirty seconds",
+      "throat gargle",
+      "spit after gargling",
+      "daily gargle routine",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "spit out",
+        meaning: "eject liquid after swishing in throat",
+        arabic: "يَبْصُقُ المَحْلُول",
+        example: "Gargle thoroughly for thirty seconds then spit out into the sink.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Oral Hygiene",
+        en: "He took a small sip of mint rinse to gargle for thirty seconds after brushing.",
+        ar: "تَنَاوَلَ رَشْفَةً صَغِيرَةً مِنْ غَسُولِ النَّعْنَاعِ لِيَتَغَرْغَرَ لِمُدَّةِ ثَلاثِينَ ثَانِيَةً بَعْدَ فَرْكِ الأَسْنَانِ.",
+      },
+      {
+        context: "Sore Throat Care",
+        en: "Doctors recommend you gargle with warm salt water to soothe an irritated throat.",
+        ar: "يُوصِي الأَطِبَّاءُ بِالغَرْغَرَةِ بِمَاءٍ مَالِحٍ دَافِئٍ لِتَهْدِئَةِ الحَلْقِ المُلْتَهِبِ.",
+      },
+      {
+        context: "Fresh Breath",
+        en: "A quick antiseptic gargle in the morning kills germs and leaves breath feeling fresh.",
+        ar: "تَقْضِي الغَرْغَرَةُ السَّرِيعَةُ بِالمُطَهِّرِ فِي الصَّبَاحِ عَلَى الجَرَاثِيمِ وَتَتْرُكُ النَّفَسَ مُنْعِشًا.",
+      },
+    ],
+    exampleSentence:
+      "He took a small sip of mint rinse to gargle for thirty seconds after brushing.",
+    exampleArabic:
+      "تَنَاوَلَ رَشْفَةً صَغِيرَةً مِنْ غَسُولِ النَّعْنَاعِ لِيَتَغَرْغَرَ لِمُدَّةِ ثَلاثِينَ ثَانِيَةً بَعْدَ فَرْكِ الأَسْنَانِ.",
+  },
 };
 
 /**
