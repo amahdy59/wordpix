@@ -5462,6 +5462,721 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
   },
 ];
 
+// ==========================================
+// THE LIBRARY
+// ==========================================
+
+export const LIBRARY_TOPICS: TopicCategory[] = [
+  {
+    id: "book-types",
+    name: "Book Types",
+    description: "Diverse literary formats, periodicals, reference volumes, and graphic editions.",
+    icon: "book",
+    itemsCount: 10,
+  },
+  {
+    id: "library-furniture",
+    name: "Library Furniture",
+    description: "Workstations, bookshelves, comfortable seating, and reading lamps.",
+    icon: "layout",
+    itemsCount: 10,
+  },
+  {
+    id: "library-sections",
+    name: "Library Sections",
+    description:
+      "Distinct zones for fiction, youth collections, research archives, and study rooms.",
+    icon: "grid",
+    itemsCount: 10,
+  },
+  {
+    id: "library-actions",
+    name: "Library Actions",
+    description: "Daily habits including reading, browsing, borrowing, and quiet collaboration.",
+    icon: "activity",
+    itemsCount: 10,
+  },
+  {
+    id: "library-tools",
+    name: "Library Tools",
+    description: "Circulation instruments, scanners, bookmarks, catalog systems, and cards.",
+    icon: "tool",
+    itemsCount: 10,
+  },
+  {
+    id: "library-people",
+    name: "Library People",
+    description: "Staff members, visiting scholars, avid readers, authors, and community guests.",
+    icon: "users",
+    itemsCount: 10,
+  },
+];
+
+export const LIBRARY_GROUPS: Lesson[] = [
+  {
+    id: "book-types",
+    name: "Book Types",
+    topicId: "book-types",
+    description: "Learn about novels, picture books, periodicals, reference volumes, and poetry.",
+    wordIds: [
+      "novel",
+      "picture-book",
+      "reference-book",
+      "comic-book",
+      "magazine",
+      "newspaper",
+      "encyclopedia",
+      "atlas",
+      "biography",
+      "poetry-book",
+    ],
+    story:
+      "Farah browsed the central stacks, picking up a captivating historical novel and an illustrated children's picture-book. She examined a heavy reference-book, flipped through a superhero comic-book, and skimmed an art magazine beside the morning newspaper. On the large table, she consulted a leather-bound encyclopedia, traced trade routes in an atlas, read a scientist's biography, and appreciated verses in a slim poetry-book.",
+  },
+  {
+    id: "library-furniture",
+    name: "Library Furniture",
+    topicId: "library-furniture",
+    description: "Learn about oak tables, bookshelves, comfortable bean bags, and quiet lamps.",
+    wordIds: [
+      "bookshelf",
+      "reading-table",
+      "study-desk",
+      "chair",
+      "bean-bag",
+      "step-stool",
+      "cart",
+      "lamp",
+      "computer-desk",
+      "armchair",
+    ],
+    story:
+      "Sunlight streamed across each tall oak bookshelf in the main reading room. Tariq sat at the wide reading-table on a sturdy chair, while Omar focused at a partitioned study-desk. A toddler curled up in a plush bean-bag, and the assistant stepped onto a two-step step-stool to reach top shelves. Near the rolling cart, a glowing brass lamp illuminated the computer-desk and a cozy velvet armchair.",
+  },
+  {
+    id: "library-sections",
+    name: "Library Sections",
+    topicId: "library-sections",
+    description: "Learn about fiction wings, media centers, study rooms, and historic archives.",
+    wordIds: [
+      "fiction",
+      "non-fiction",
+      "childrens-section",
+      "reference-section",
+      "periodicals",
+      "media-center",
+      "study-room",
+      "return-desk",
+      "help-desk",
+      "archive",
+    ],
+    story:
+      "The library layout separates popular fiction from factual non-fiction stacks. Families gather in the cheerful Children's Section, while researchers work silently in the reference-section and browse current periodicals. Students edit multimedia in the media-center and practice presentations in a private study-room. Near the entrance, patrons visit the return-desk and the help-desk before touring the rare manuscript archive.",
+  },
+  {
+    id: "library-actions",
+    name: "Library Actions",
+    topicId: "library-actions",
+    description:
+      "Learn essential library activities from browsing and studying to borrowing books.",
+    wordIds: [
+      "reading",
+      "borrowing",
+      "returning",
+      "searching",
+      "studying",
+      "browsing",
+      "reserving",
+      "photocopying",
+      "typing",
+      "whispering",
+    ],
+    story:
+      "Quiet reading filled the sunlit hall as visitors practiced borrowing new titles and returning overdue books. Maya spent time searching the catalog while studying for biology exams and browsing the literature aisle. After reserving a study cubicle, she finished photocopying reference charts, typing notes on the terminal, and whispering with her study partner.",
+  },
+  {
+    id: "library-tools",
+    name: "Library Tools",
+    topicId: "library-tools",
+    description: "Learn essential tools for cataloging, scanning, labeling, and bookmarking.",
+    wordIds: [
+      "library-card",
+      "barcode-scanner",
+      "stamp",
+      "bookmark",
+      "book-cover",
+      "label",
+      "catalog",
+      "computer",
+      "printer",
+      "scanner",
+    ],
+    story:
+      "Nour presented her library-card at checkout where the clerk used a laser barcode-scanner and an inked due date stamp. She placed a silk bookmark inside the glossy book-cover, noting the call number label on its spine. She consulted the digital catalog on a desktop computer, printed summary sheets on the laser printer, and digitized an old map on the flatbed scanner.",
+  },
+  {
+    id: "library-people",
+    name: "Library People",
+    topicId: "library-people",
+    description: "Learn about dedicated staff, authors, researchers, storytellers, and visitors.",
+    wordIds: [
+      "librarian",
+      "assistant",
+      "volunteer",
+      "reader",
+      "student",
+      "researcher",
+      "author",
+      "storyteller",
+      "guard",
+      "cleaner",
+    ],
+    story:
+      "The head librarian and circulation assistant welcomed an enthusiastic volunteer to the morning shift. An avid reader smiled at a hardworking student, while an academic researcher gathered notes for a visiting author. In the youth wing, a dynamic storyteller entertained children, while the security guard monitored the hall and the custodian cleaner polished the glass doors.",
+  },
+];
+
+export const LIBRARY_VOCABULARY: VocabularyItem[] = [
+  // 1. Book Types (10)
+  {
+    id: "novel",
+    label: "Novel",
+    phonetic: "ˈnɑːvəl",
+    img: `${LOCAL_WORD_IMAGES}/library/novel.webp`,
+    topic: "book-types",
+    description: "A long printed fictional prose narrative detailing intricate character journeys.",
+  },
+  {
+    id: "picture-book",
+    label: "Picture Book",
+    phonetic: "ˈpɪktʃər bʊk",
+    img: `${LOCAL_WORD_IMAGES}/library/picture-book.webp`,
+    topic: "book-types",
+    description:
+      "A bound volume featuring large colorful illustrations accompanied by simple narrative text.",
+  },
+  {
+    id: "reference-book",
+    label: "Reference Book",
+    phonetic: "ˈrɛfrəns bʊk",
+    img: `${LOCAL_WORD_IMAGES}/library/reference-book.webp`,
+    topic: "book-types",
+    description: "A comprehensive informational volume consulted for authoritative facts and data.",
+  },
+  {
+    id: "comic-book",
+    label: "Comic Book",
+    phonetic: "ˈkɑːmɪk bʊk",
+    img: `${LOCAL_WORD_IMAGES}/library/comic-book.webp`,
+    topic: "book-types",
+    description:
+      "A publication that presents sequential art paired with dialogue bubbles to tell stories.",
+  },
+  {
+    id: "magazine",
+    label: "Magazine",
+    phonetic: "ˌmæɡəˈziːn",
+    img: `${LOCAL_WORD_IMAGES}/library/magazine.webp`,
+    topic: "book-types",
+    description:
+      "A periodic paperback publication containing diverse articles, photographs, and feature stories.",
+  },
+  {
+    id: "newspaper",
+    label: "Newspaper",
+    phonetic: "ˈnuːzˌpeɪpər",
+    img: `${LOCAL_WORD_IMAGES}/library/newspaper.webp`,
+    topic: "book-types",
+    description:
+      "A daily or weekly printed publication containing current news, reporting, and editorial opinions.",
+  },
+  {
+    id: "encyclopedia",
+    label: "Encyclopedia",
+    phonetic: "ɪnˌsaɪkləˈpiːdiə",
+    img: `${LOCAL_WORD_IMAGES}/library/encyclopedia.webp`,
+    topic: "book-types",
+    description:
+      "A comprehensive multi-volume work providing informative articles across all branches of human knowledge.",
+  },
+  {
+    id: "atlas",
+    label: "Atlas",
+    phonetic: "ˈætləs",
+    img: `${LOCAL_WORD_IMAGES}/library/atlas.webp`,
+    topic: "book-types",
+    description: "A bound collection of geographic maps, planetary charts, and demographic tables.",
+  },
+  {
+    id: "biography",
+    label: "Biography",
+    phonetic: "baɪˈɑːɡrəfi",
+    img: `${LOCAL_WORD_IMAGES}/library/biography.webp`,
+    topic: "book-types",
+    description: "A written account of a real person's life experiences, achievements, and legacy.",
+  },
+  {
+    id: "poetry-book",
+    label: "Poetry Book",
+    phonetic: "ˈpoʊətri bʊk",
+    img: `${LOCAL_WORD_IMAGES}/library/poetry-book.webp`,
+    topic: "book-types",
+    description:
+      "A collection of rhythmic verse compositions expressing deep emotions and artistic meter.",
+  },
+
+  // 2. Library Furniture (10)
+  {
+    id: "bookshelf",
+    label: "Bookshelf",
+    phonetic: "ˈbʊkʃɛlf",
+    img: `${LOCAL_WORD_IMAGES}/library/bookshelf.webp`,
+    topic: "library-furniture",
+    description:
+      "A tall upright wooden case with horizontal tiers designed for organizing volumes.",
+  },
+  {
+    id: "reading-table",
+    label: "Reading Table",
+    phonetic: "ˈriːdɪŋ ˈteɪbəl",
+    img: `${LOCAL_WORD_IMAGES}/library/reading-table.webp`,
+    topic: "library-furniture",
+    description: "A wide polished oak surface where visitors sit to review and annotate texts.",
+  },
+  {
+    id: "study-desk",
+    label: "Study Desk",
+    phonetic: "ˈstʌdi dɛsk",
+    img: `${LOCAL_WORD_IMAGES}/library/study-desk.webp`,
+    topic: "library-furniture",
+    description:
+      "An individual workstation partitioned with side dividers to provide distraction-free focus.",
+  },
+  {
+    id: "chair",
+    label: "Chair",
+    phonetic: "tʃɛər",
+    img: `${LOCAL_WORD_IMAGES}/library/chair.webp`,
+    topic: "library-furniture",
+    description:
+      "A piece of furniture with a supportive backrest and four legs for one person to sit upon.",
+  },
+  {
+    id: "bean-bag",
+    label: "Bean Bag",
+    phonetic: "ˈbiːnbæɡ",
+    img: `${LOCAL_WORD_IMAGES}/library/bean-bag.webp`,
+    topic: "library-furniture",
+    description: "A soft oversized cushion filled with malleable pellets that molds to the body.",
+  },
+  {
+    id: "step-stool",
+    label: "Step Stool",
+    phonetic: "ˈstɛp stuːl",
+    img: `${LOCAL_WORD_IMAGES}/library/step-stool.webp`,
+    topic: "library-furniture",
+    description: "A small two-tiered elevation aid used to reach high shelves safely.",
+  },
+  {
+    id: "cart",
+    label: "Cart",
+    phonetic: "kɑːrt",
+    img: `${LOCAL_WORD_IMAGES}/library/cart.webp`,
+    topic: "library-furniture",
+    description:
+      "A wheeled metal transport rack used by staff to move stacks of volumes between aisles.",
+  },
+  {
+    id: "lamp",
+    label: "Lamp",
+    phonetic: "læmp",
+    img: `${LOCAL_WORD_IMAGES}/library/lamp.webp`,
+    topic: "library-furniture",
+    description:
+      "An electric light fixture that casts focused warm illumination over reading surfaces.",
+  },
+  {
+    id: "computer-desk",
+    label: "Computer Desk",
+    phonetic: "kəmˈpjuːtər dɛsk",
+    img: `${LOCAL_WORD_IMAGES}/library/computer-desk.webp`,
+    topic: "library-furniture",
+    description:
+      "A dedicated workstation configured to support electronic terminals and typing peripherals.",
+  },
+  {
+    id: "armchair",
+    label: "Armchair",
+    phonetic: "ˈɑːrmtʃɛər",
+    img: `${LOCAL_WORD_IMAGES}/library/armchair.webp`,
+    topic: "library-furniture",
+    description: "A comfortable upholstered lounge seat with side arm supports for relaxing.",
+  },
+
+  // 3. Library Sections (10)
+  {
+    id: "fiction",
+    label: "Fiction",
+    phonetic: "ˈfɪkʃən",
+    img: `${LOCAL_WORD_IMAGES}/library/fiction.webp`,
+    topic: "library-sections",
+    description:
+      "A designated section housing imaginative prose stories, novels, and created worlds.",
+  },
+  {
+    id: "non-fiction",
+    label: "Non-Fiction",
+    phonetic: "ˌnɑːnˈfɪkʃən",
+    img: `${LOCAL_WORD_IMAGES}/library/non-fiction.webp`,
+    topic: "library-sections",
+    description:
+      "A vast department dedicated to factual texts, historical treatises, and scientific research.",
+  },
+  {
+    id: "childrens-section",
+    label: "Children's Section",
+    phonetic: "ˈtʃɪldrənz ˈsɛkʃən",
+    img: `${LOCAL_WORD_IMAGES}/library/childrens-section.webp`,
+    topic: "library-sections",
+    description:
+      "A vibrant youth area filled with colorful mats, low shelves, and early literacy materials.",
+  },
+  {
+    id: "reference-section",
+    label: "Reference Section",
+    phonetic: "ˈrɛfrəns ˈsɛkʃən",
+    img: `${LOCAL_WORD_IMAGES}/library/reference-section.webp`,
+    topic: "library-sections",
+    description:
+      "A quiet wing where authoritative encyclopedias and directories are kept for in-building consultation.",
+  },
+  {
+    id: "periodicals",
+    label: "Periodicals",
+    phonetic: "ˌpɪriˈɑːdɪkəlz",
+    img: `${LOCAL_WORD_IMAGES}/library/periodicals.webp`,
+    topic: "library-sections",
+    description:
+      "A gallery of slanted display shelves showcasing the newest journals and daily publications.",
+  },
+  {
+    id: "media-center",
+    label: "Media Center",
+    phonetic: "ˈmiːdiə ˌsɛntər",
+    img: `${LOCAL_WORD_IMAGES}/library/media-center.webp`,
+    topic: "library-sections",
+    description:
+      "A high-tech laboratory equipped with audio-visual hardware, recording booths, and digital tools.",
+  },
+  {
+    id: "study-room",
+    label: "Study Room",
+    phonetic: "ˈstʌdi ruːm",
+    img: `${LOCAL_WORD_IMAGES}/library/study-room.webp`,
+    topic: "library-sections",
+    description:
+      "A soundproof enclosed glass space reserved for group collaboration and academic discussion.",
+  },
+  {
+    id: "return-desk",
+    label: "Return Desk",
+    phonetic: "rɪˈtɜːrn dɛsk",
+    img: `${LOCAL_WORD_IMAGES}/library/return-desk.webp`,
+    topic: "library-sections",
+    description:
+      "A dedicated counter with a cushioned drop slot where patrons bring back checked-out items.",
+  },
+  {
+    id: "help-desk",
+    label: "Help Desk",
+    phonetic: "ˈhɛlp dɛsk",
+    img: `${LOCAL_WORD_IMAGES}/library/help-desk.webp`,
+    topic: "library-sections",
+    description:
+      "An information counter where attendants assist visitors with inquiries and memberships.",
+  },
+  {
+    id: "archive",
+    label: "Archive",
+    phonetic: "ˈɑːrkaɪv",
+    img: `${LOCAL_WORD_IMAGES}/library/archive.webp`,
+    topic: "library-sections",
+    description:
+      "A temperature-regulated repository housing delicate historical manuscripts and rare municipal records.",
+  },
+
+  // 4. Library Actions (10)
+  {
+    id: "reading",
+    label: "Reading",
+    phonetic: "ˈriːdɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/library/reading.webp`,
+    topic: "library-actions",
+    description:
+      "The cognitive process of decoding written symbols and comprehending narrative meaning.",
+  },
+  {
+    id: "borrowing",
+    label: "Borrowing",
+    phonetic: "ˈbɑːroʊɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/library/borrowing.webp`,
+    topic: "library-actions",
+    description: "The act of taking checked-out materials home for an agreed loan period.",
+  },
+  {
+    id: "returning",
+    label: "Returning",
+    phonetic: "rɪˈtɜːrnɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/library/returning.webp`,
+    topic: "library-actions",
+    description: "The act of bringing checked-out items back to the circulation counter on time.",
+  },
+  {
+    id: "searching",
+    label: "Searching",
+    phonetic: "ˈsɜːrtʃɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/library/searching.webp`,
+    topic: "library-actions",
+    description:
+      "The deliberate process of querying database catalogs and scanning shelves for resources.",
+  },
+  {
+    id: "studying",
+    label: "Studying",
+    phonetic: "ˈstʌdiɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/library/studying.webp`,
+    topic: "library-actions",
+    description:
+      "Devoting focused mental effort to acquiring knowledge and reviewing academic concepts.",
+  },
+  {
+    id: "browsing",
+    label: "Browsing",
+    phonetic: "ˈbraʊzɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/library/browsing.webp`,
+    topic: "library-actions",
+    description: "Casually perusing shelves and leafing through volumes without a specific goal.",
+  },
+  {
+    id: "reserving",
+    label: "Reserving",
+    phonetic: "rɪˈzɜːrvɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/library/reserving.webp`,
+    topic: "library-actions",
+    description:
+      "Placing an advance hold on a popular volume or booking a collaborative workspace.",
+  },
+  {
+    id: "photocopying",
+    label: "Photocopying",
+    phonetic: "ˈfoʊtoʊˌkɑːpiɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/library/photocopying.webp`,
+    topic: "library-actions",
+    description:
+      "Duplicating printed pages and excerpts using an optical document reproduction machine.",
+  },
+  {
+    id: "typing",
+    label: "Typing",
+    phonetic: "ˈtaɪpɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/library/typing.webp`,
+    topic: "library-actions",
+    description: "Inputting textual content onto a digital screen via a tactile key panel.",
+  },
+  {
+    id: "whispering",
+    label: "Whispering",
+    phonetic: "ˈwɪspərɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/library/whispering.webp`,
+    topic: "library-actions",
+    description:
+      "Speaking in an extremely quiet, breathy voice to maintain absolute silence for nearby learners.",
+  },
+
+  // 5. Library Tools (10)
+  {
+    id: "library-card",
+    label: "Library Card",
+    phonetic: "ˈlaɪbrɛri kɑːrd",
+    img: `${LOCAL_WORD_IMAGES}/library/library-card.webp`,
+    topic: "library-tools",
+    description:
+      "A plastic identification credential that grants borrowing privileges and digital database access.",
+  },
+  {
+    id: "barcode-scanner",
+    label: "Barcode Scanner",
+    phonetic: "ˈbɑːrkoʊd ˌskænər",
+    img: `${LOCAL_WORD_IMAGES}/library/barcode-scanner.webp`,
+    topic: "library-tools",
+    description:
+      "An optical device that emits a red laser beam to read coded stripes on publications.",
+  },
+  {
+    id: "stamp",
+    label: "Stamp",
+    phonetic: "stæmp",
+    img: `${LOCAL_WORD_IMAGES}/library/stamp.webp`,
+    topic: "library-tools",
+    description: "An inked handheld block used to imprint return due dates onto checkout slips.",
+  },
+  {
+    id: "bookmark",
+    label: "Bookmark",
+    phonetic: "ˈbʊkmɑːrk",
+    img: `${LOCAL_WORD_IMAGES}/library/bookmark.webp`,
+    topic: "library-tools",
+    description:
+      "A slender slip of decorative card or fabric placed between leaves to save one's place.",
+  },
+  {
+    id: "book-cover",
+    label: "Book Cover",
+    phonetic: "ˈbʊk kʌvər",
+    img: `${LOCAL_WORD_IMAGES}/library/book-cover.webp`,
+    topic: "library-tools",
+    description:
+      "The protective outer casing or jacket shielding the spine and leaves of a volume.",
+  },
+  {
+    id: "label",
+    label: "Label",
+    phonetic: "ˈleɪbəl",
+    img: `${LOCAL_WORD_IMAGES}/library/label.webp`,
+    topic: "library-tools",
+    description:
+      "An adhesive white tag displaying call numbers affixed to the lower spine of a volume.",
+  },
+  {
+    id: "catalog",
+    label: "Catalog",
+    phonetic: "ˈkætəlɔːɡ",
+    img: `${LOCAL_WORD_IMAGES}/library/catalog.webp`,
+    topic: "library-tools",
+    description:
+      "A searchable digital database listing all items, call numbers, and availability across branches.",
+  },
+  {
+    id: "computer",
+    label: "Computer",
+    phonetic: "kəmˈpjuːtər",
+    img: `${LOCAL_WORD_IMAGES}/library/computer.webp`,
+    topic: "library-tools",
+    description:
+      "An electronic workstation terminal used to query collections and access web databases.",
+  },
+  {
+    id: "printer",
+    label: "Printer",
+    phonetic: "ˈprɪntər",
+    img: `${LOCAL_WORD_IMAGES}/library/printer.webp`,
+    topic: "library-tools",
+    description:
+      "An output peripheral that produces physical paper hard copies from electronic files.",
+  },
+  {
+    id: "scanner",
+    label: "Scanner",
+    phonetic: "ˈskænər",
+    img: `${LOCAL_WORD_IMAGES}/library/scanner.webp`,
+    topic: "library-tools",
+    description:
+      "A digital imaging device that converts physical documents and rare maps into high-resolution files.",
+  },
+
+  // 6. Library People (10)
+  {
+    id: "librarian",
+    label: "Librarian",
+    phonetic: "laɪˈbrɛriən",
+    img: `${LOCAL_WORD_IMAGES}/library/librarian.webp`,
+    topic: "library-people",
+    description:
+      "A certified information specialist who manages collections and assists with research.",
+  },
+  {
+    id: "assistant",
+    label: "Assistant",
+    phonetic: "əˈsɪstənt",
+    img: `${LOCAL_WORD_IMAGES}/library/assistant.webp`,
+    topic: "library-people",
+    description:
+      "A staff member who supports circulation services, shelves volumes, and handles inquiries.",
+  },
+  {
+    id: "volunteer",
+    label: "Volunteer",
+    phonetic: "ˌvɑːlənˈtɪər",
+    img: `${LOCAL_WORD_IMAGES}/library/volunteer.webp`,
+    topic: "library-people",
+    description:
+      "A helpful community member who freely gives time to organize books and support programs.",
+  },
+  {
+    id: "reader",
+    label: "Reader",
+    phonetic: "ˈriːdər",
+    img: `${LOCAL_WORD_IMAGES}/library/reader.webp`,
+    topic: "library-people",
+    description:
+      "A dedicated person absorbed in perusing literature, novels, and educational texts.",
+  },
+  {
+    id: "student",
+    label: "Student",
+    phonetic: "ˈstuːdənt",
+    img: `${LOCAL_WORD_IMAGES}/library/student.webp`,
+    topic: "library-people",
+    description:
+      "An enrolled learner preparing for exams, completing assignments, and consulting course texts.",
+  },
+  {
+    id: "researcher",
+    label: "Researcher",
+    phonetic: "ˈriːsɜːrtʃər",
+    img: `${LOCAL_WORD_IMAGES}/library/researcher.webp`,
+    topic: "library-people",
+    description:
+      "An academic investigator analyzing archives, historical records, and scholarly journals.",
+  },
+  {
+    id: "author",
+    label: "Author",
+    phonetic: "ˈɔːθər",
+    img: `${LOCAL_WORD_IMAGES}/library/author.webp`,
+    topic: "library-people",
+    description:
+      "A creative writer who conceives and publishes literary narratives, memoirs, or factual works.",
+  },
+  {
+    id: "storyteller",
+    label: "Storyteller",
+    phonetic: "ˈstɔːritɛlər",
+    img: `${LOCAL_WORD_IMAGES}/library/storyteller.webp`,
+    topic: "library-people",
+    description:
+      "An animated performer who brings folk tales and children's stories to life through spoken narrative.",
+  },
+  {
+    id: "guard",
+    label: "Guard",
+    phonetic: "ɡɑːrd",
+    img: `${LOCAL_WORD_IMAGES}/library/guard.webp`,
+    topic: "library-people",
+    description:
+      "A uniformed security officer who oversees visitor safety and protects public facilities.",
+  },
+  {
+    id: "cleaner",
+    label: "Cleaner",
+    phonetic: "ˈkliːnər",
+    img: `${LOCAL_WORD_IMAGES}/library/cleaner.webp`,
+    topic: "library-people",
+    description:
+      "A dedicated custodian who sanitizes tables, vacuums carpets, and maintains facility hygiene.",
+  },
+];
+
 export const COURSE_UNITS: Record<string, CourseUnit> = {
   bedroom: {
     id: "bedroom",
@@ -5543,6 +6258,16 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
     topics: CLASSROOM_TOPICS,
     groups: CLASSROOM_GROUPS,
     vocabulary: CLASSROOM_VOCABULARY,
+  },
+  library: {
+    id: "library",
+    name: "The Library",
+    description:
+      "Explore literary book types, reading furniture, library sections, study actions, circulation tools, and community library people through 2D scene discovery, audio practice, recall matching, and sentence building.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/library-hero.webp`,
+    topics: LIBRARY_TOPICS,
+    groups: LIBRARY_GROUPS,
+    vocabulary: LIBRARY_VOCABULARY,
   },
 };
 

@@ -20204,6 +20204,2038 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleArabic:
       "اسْتَخْدَمَ المُعَلِّمُ قِطْعَةً مِنْ طَبَاشِيرَ أَبْيَضَ لِكِتَابَةِ مَسَائِلِ الحِسَابِ عَلَى السَّبُّورَةِ.",
   },
+  novel: {
+    id: "novel",
+    arabic: "رِوَايَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈnɑːvəl",
+    pronunciationTip: "Short 'o' sound /ɑː/: 'NAH-vul' (/ˈnɑː.vəl/).",
+    collocations: [
+      "read a novel",
+      "bestselling novel",
+      "historical novel",
+      "mystery novel",
+      "classic novel",
+      "graphic novel",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "curl up with",
+        meaning: "settle comfortably to read a book",
+        arabic: "يَنْزَوِي مُسْتَمْتِعًا بِقِرَاءَةِ رِوَايَة",
+        example: "She loves to curl up with an engaging mystery novel by the fireplace.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Leisure Reading",
+        en: "He borrowed an engrossing science fiction novel from the library's popular books display.",
+        ar: "اسْتَعَارَ رِوَايَةَ خَيَالٍ عِلْمِيٍّ شَيِّقَةً مِنْ مَعْرِضِ الكُتُبِ الأَكْثَرِ رَوَاجًا فِي المَكْتَبَةِ.",
+      },
+      {
+        context: "Literature Class",
+        en: "Students analyzed the complex character development throughout the nineteenth-century classic novel.",
+        ar: "حَلَّلَ الطُّلَّابُ التَّطَوُّرَ المُعَقَّدَ لِلشَّخْصِيَّاتِ عَبْرَ الرِّوَايَةِ الكَلَاسِيكِيَّةِ لِلْقَرْنِ التَّاسِعَ عَشَرَ.",
+      },
+      {
+        context: "Book Club",
+        en: "The monthly book club meets on Thursday to discuss their thoughts on the latest award-winning novel.",
+        ar: "يَجْتَمِعُ نَادِي الكِتَابِ الشَّهْرِيُّ يَوْمَ الخَمِيسِ لِمُنَاقَشَةِ آرَائِهِمْ حَوْلَ أَحْدَثِ رِوَايَةٍ فَائِزَةٍ بِجَائِزَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "He borrowed an engrossing science fiction novel from the library's popular books display.",
+    exampleArabic:
+      "اسْتَعَارَ رِوَايَةَ خَيَالٍ عِلْمِيٍّ شَيِّقَةً مِنْ مَعْرِضِ الكُتُبِ الأَكْثَرِ رَوَاجًا فِي المَكْتَبَةِ.",
+  },
+  "picture-book": {
+    id: "picture-book",
+    arabic: "كِتَابٌ مُصَوَّر (قِصَّةٌ مُصَوَّرَةٌ لِلأَطْفَال)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpɪktʃər bʊk",
+    pronunciationTip: "Pronounce 'PIK-cher book' (/ˈpɪk.tʃər bʊk/).",
+    collocations: [
+      "colorful picture book",
+      "children's picture book",
+      "illustrated picture book",
+      "read a picture book",
+      "hardcover picture book",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "point at",
+        meaning: "indicate drawings while reading",
+        arabic: "يُشِيرُ إِلَى الرُّسُومِ فِي الكِتَاب",
+        example: "The toddler smiled and pointed at the animals in the picture book.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bedtime Story",
+        en: "The father read a colorful picture book featuring friendly jungle animals to his daughter.",
+        ar: "قَرَأَ الأَبُ كِتَابًا مُصَوَّرًا مُلَوَّنًا يَضُمُّ حَيَوَانَاتِ غَابَةٍ أَلِيفَةً لِابْنَتِهِ.",
+      },
+      {
+        context: "Early Literacy",
+        en: "Richly illustrated picture books help young children develop early vocabulary and visual literacy.",
+        ar: "تُسَاعِدُ الكُتُبُ المُصَوَّرَةُ الغَنِيَّةُ بِالرُّسُومِ الأَطْفَالَ الصِّغَارَ عَلَى تَنْمِيَةِ المُفْرَدَاتِ المُبَكِّرَةِ وَالمَعْرِفَةِ البَصَرِيَّةِ.",
+      },
+      {
+        context: "Children's Corner",
+        en: "Low open shelves in the library hold hundreds of cheerful picture books for toddlers.",
+        ar: "تَحْمِلُ الرُّفُوفُ المَفْتُوحَةُ المُنْخَفِضَةُ فِي المَكْتَبَةِ مِئَاتِ الكُتُبِ المُصَوَّرَةِ المُبْهِجَةِ لِلأَطْفَالِ.",
+      },
+    ],
+    exampleSentence:
+      "The father read a colorful picture book featuring friendly jungle animals to his daughter.",
+    exampleArabic:
+      "قَرَأَ الأَبُ كِتَابًا مُصَوَّرًا مُلَوَّنًا يَضُمُّ حَيَوَانَاتِ غَابَةٍ أَلِيفَةً لِابْنَتِهِ.",
+  },
+  "reference-book": {
+    id: "reference-book",
+    arabic: "كِتَابٌ مَرْجِعِيّ (مَرْجِع)",
+    partOfSpeech: "noun",
+    phonetic: "ˈrɛfrəns bʊk",
+    pronunciationTip: "Pronounce 'REF-runss book' (/ˈrɛf.rəns bʊk/).",
+    collocations: [
+      "consult a reference book",
+      "library reference book",
+      "in-library use reference book",
+      "medical reference book",
+      "historical reference book",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "refer to",
+        meaning: "consult a reference source for reliable facts",
+        arabic: "يَرْجِعُ إِلَى مَرْجِع",
+        example: "Always refer to a certified reference book when verifying scientific dates.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Academic Research",
+        en: "Students consulted a heavy reference book in the quiet study room to find verified data.",
+        ar: "اسْتَشَارَ الطُّلَّابُ كِتَابًا مَرْجِعِيًّا ضَخْمًا فِي غُرْفَةِ الدِّرَاسَةِ الهَادِئَةِ لِلْعُثُورِ عَلَى بَيَانَاتٍ مُوَثَّقَةٍ.",
+      },
+      {
+        context: "Library Policy",
+        en: "Reference books must remain in the library so they are always available for consultation.",
+        ar: "يَجِبُ أَنْ تَبْقَى الكُتُبُ المَرْجِعِيَّةُ دَاخِلَ المَكْتَبَةِ حَتَّى تَكُونَ مُتَاحَةً دَائِمًا لِلِاسْتِشَارَةِ.",
+      },
+      {
+        context: "Specialized Studies",
+        en: "The legal department maintains an extensive collection of specialized reference books.",
+        ar: "يَحْتَفِظُ القِسْمُ القَانُونِيُّ بِمَجْمُوعَةٍ وَاسِعَةٍ مِنَ الكُتُبِ المَرْجِعِيَّةِ المُتَخَصِّصَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Students consulted a heavy reference book in the quiet study room to find verified data.",
+    exampleArabic:
+      "اسْتَشَارَ الطُّلَّابُ كِتَابًا مَرْجِعِيًّا ضَخْمًا فِي غُرْفَةِ الدِّرَاسَةِ الهَادِئَةِ لِلْعُثُورِ عَلَى بَيَانَاتٍ مُوَثَّقَةٍ.",
+  },
+  "comic-book": {
+    id: "comic-book",
+    arabic: "كِتَابُ قِصَصٍ مُصَوَّرَة (كُومِكْس)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkɑːmɪk bʊk",
+    pronunciationTip: "Pronounce 'KAH-mik book' (/ˈkɑː.mɪk bʊk/).",
+    collocations: [
+      "superhero comic book",
+      "comic book series",
+      "vintage comic book",
+      "collect comic books",
+      "comic book panels",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "read through",
+        meaning: "browse illustrated storyline panels",
+        arabic: "يَقْرَأُ فُصُولَ القِصَّةِ المُصَوَّرَة",
+        example: "He read through three issues of the superhero comic book in one afternoon.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Recreational Reading",
+        en: "He eagerly turned the vibrant glossy pages of the superhero comic book to follow the adventure.",
+        ar: "قَلَّبَ بِشَغَفٍ الصَّفَحَاتِ اللَّامِعَةَ الزَّاهِيَةَ لِكِتَابِ القِصَصِ المُصَوَّرَةِ لِمُتَابَعَةِ المُغَامَرَةِ.",
+      },
+      {
+        context: "Graphic Storytelling",
+        en: "Comic books combine dynamic artwork with dialogue bubbles to tell exciting visual narratives.",
+        ar: "تَجْمَعُ كُتُبُ الكُومِكْسِ بَيْنَ الرُّسُومِ الدِّينَامِيكِيَّةِ وَفَقَاعَاتِ الحِوَارِ لِسَرْدِ قِصَصٍ بَصَرِيَّةٍ مُثِيرَةٍ.",
+      },
+      {
+        context: "Young Adult Section",
+        en: "The teen lounge features dedicated racks for popular comic book series and manga.",
+        ar: "تَضُمُّ اسْتِرَاحَةُ الشَّبَابِ حَوَامِلَ مُخَصَّصَةً لِسَلَاسِلِ القِصَصِ المُصَوَّرَةِ الشَّهِيرَةِ وَالمَانْغَا.",
+      },
+    ],
+    exampleSentence:
+      "He eagerly turned the vibrant glossy pages of the superhero comic book to follow the adventure.",
+    exampleArabic:
+      "قَلَّبَ بِشَغَفٍ الصَّفَحَاتِ اللَّامِعَةَ الزَّاهِيَةَ لِكِتَابِ القِصَصِ المُصَوَّرَةِ لِمُتَابَعَةِ المُغَامَرَةِ.",
+  },
+  atlas: {
+    id: "atlas",
+    arabic: "أَطْلَس (كِتَابُ خَرَائِط)",
+    partOfSpeech: "noun",
+    phonetic: "ˈætləs",
+    pronunciationTip: "Short 'a' sound /æ/: 'AT-lus' (/ˈæt.ləs/).",
+    collocations: [
+      "world atlas",
+      "geographical atlas",
+      "historical atlas",
+      "road atlas",
+      "consult an atlas",
+      "atlas maps",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "track down",
+        meaning: "locate geographical positions on map sheets",
+        arabic: "يُحَدِّدُ مَوْقِعًا عَلَى الخَرِيطَة",
+        example: "Use the world atlas to track down the remote island coordinates.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Geography Class",
+        en: "She spread open the large world atlas on the study table to trace the mountain ranges of Europe.",
+        ar: "فَتَحَتْ أَطْلَسَ العَالَمِ الكَبِيرَ عَلَى طَاوِلَةِ الدِّرَاسَةِ لِتَتَبُّعِ سَلَاسِلِ الجِبَالِ فِي أُورُوبَّا.",
+      },
+      {
+        context: "Cartography",
+        en: "A modern geographical atlas displays detailed topographical, political, and climate maps.",
+        ar: "يَعْرِضُ الأَطْلَسُ الجُغْرَافِيُّ الحَدِيثُ خَرَائِطَ طُوبُوغْرَافِيَّةً وَسِيَاسِيَّةً وَمُنَاخِيَّةً مُفَصَّلَةً.",
+      },
+      {
+        context: "Library Navigation",
+        en: "Large format atlases rest flat on wide consultation desks near the globe.",
+        ar: "تَسْتَقِرُّ الأَطَالِسُ كَبِيرَةُ الحَجْمِ مُسَطَّحَةً عَلَى مَكَاتِبِ اسْتِشَارَةٍ عَرِيضَةٍ بِجَانِبِ مُجَسَّمِ الكُرَةِ الأَرْضِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "She spread open the large world atlas on the study table to trace the mountain ranges of Europe.",
+    exampleArabic:
+      "فَتَحَتْ أَطْلَسَ العَالَمِ الكَبِيرَ عَلَى طَاوِلَةِ الدِّرَاسَةِ لِتَتَبُّعِ سَلَاسِلِ الجِبَالِ فِي أُورُوبَّا.",
+  },
+  biography: {
+    id: "biography",
+    arabic: "سِيرَةٌ ذَاتِيَّة (سِيرَةُ حَيَاة)",
+    partOfSpeech: "noun",
+    phonetic: "baɪˈɑːɡrəfi",
+    pronunciationTip: "Pronounce 'by-AH-gruh-fee' (/baɪˈɑː.ɡrə.fi/).",
+    collocations: [
+      "authorized biography",
+      "historical biography",
+      "read a biography",
+      "write a biography",
+      "inspiring biography",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "delve into",
+        meaning: "explore a person's life history deeply",
+        arabic: "يَتَعَمَّقُ فِي قِرَاءَةِ سِيرَةِ حَيَاة",
+        example: "He spent the weekend delving into an insightful biography of Albert Einstein.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Historical Reading",
+        en: "She selected an inspiring biography detailing the life and scientific discoveries of Marie Curie.",
+        ar: "اخْتَارَتْ سِيرَةً مُلْهِمَةً تُفَصِّلُ حَيَاةَ مَارِي كُورِي وَاكْتِشَافَاتِهَا العِلْمِيَّةَ.",
+      },
+      {
+        context: "Non-Fiction Section",
+        en: "The biography aisle is organized alphabetically by the subject's last name.",
+        ar: "يَنْتَظِمُ مَمَرُّ كُتُبِ السِّيَرِ تَرْتِيبًا أَبْجَدِيًّا حَسَبَ اللَّقَبِ لِلشَّخْصِيَّةِ.",
+      },
+      {
+        context: "Book Report",
+        en: "For his history report, Kevin analyzed leadership qualities showcased in a presidential biography.",
+        ar: "لِتَقْرِيرِ التَّارِيخِ الخَاصِّ بِهِ، حَلَّلَ كِيفِن صِفَاتِ القِيَادَةِ المَعْرُوضَةَ فِي سِيرَةٍ رِئَاسِيَّةٍ.",
+      },
+    ],
+    exampleSentence:
+      "She selected an inspiring biography detailing the life and scientific discoveries of Marie Curie.",
+    exampleArabic:
+      "اخْتَارَتْ سِيرَةً مُلْهِمَةً تُفَصِّلُ حَيَاةَ مَارِي كُورِي وَاكْتِشَافَاتِهَا العِلْمِيَّةَ.",
+  },
+  "poetry-book": {
+    id: "poetry-book",
+    arabic: "دِيوَانُ شِعْر (كِتَابُ قَصَائِد)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpoʊətri bʊk",
+    pronunciationTip: "Pronounce 'POH-ih-tree book' (/ˈpoʊ.ə.tri bʊk/).",
+    collocations: [
+      "anthology of poetry",
+      "recite from a poetry book",
+      "modern poetry book",
+      "slender poetry book",
+      "classic poems",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "recite aloud",
+        meaning: "speak verses with expression",
+        arabic: "يُلْقِي الشِّعْرَ بِصَوْتٍ مَسْمُوع",
+        example: "She opened the poetry book and recited aloud a lyrical sonnet.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Literary Reading",
+        en: "He gently turned the delicate pages of the poetry book to read verses celebrating nature.",
+        ar: "قَلَّبَ بِلُطْفٍ الصَّفَحَاتِ الرَّقِيقَةَ لِدِيوَانِ الشِّعْرِ لِقِرَاءَةِ أَبْيَاتٍ تَتَغَنَّى بِالطَّبِيعَةِ.",
+      },
+      {
+        context: "Poetry Workshop",
+        en: "Students gathered in a circle to share favorite stanzas from contemporary poetry books.",
+        ar: "تَجَمَّعَ الطُّلَّابُ فِي حَلْقَةٍ لِمُشَارَكَةِ المَقَاطِعِ المُفَضَّلَةِ مِنْ دَوَاوِينِ الشِّعْرِ المُعَاصِرِ.",
+      },
+      {
+        context: "Library Collection",
+        en: "The poetry section houses both ancient epic verses and modern spoken word anthologies.",
+        ar: "يَضُمُّ قِسْمُ الشِّعْرِ كُلًّا مِنَ المَلَاحِمِ القَدِيمَةِ وَمُخْتَارَاتِ الشِّعْرِ الإِلْقَائِيِّ الحَدِيثِ.",
+      },
+    ],
+    exampleSentence:
+      "He gently turned the delicate pages of the poetry book to read verses celebrating nature.",
+    exampleArabic:
+      "قَلَّبَ بِلُطْفٍ الصَّفَحَاتِ الرَّقِيقَةَ لِدِيوَانِ الشِّعْرِ لِقِرَاءَةِ أَبْيَاتٍ تَتَغَنَّى بِالطَّبِيعَةِ.",
+  },
+  "reading-table": {
+    id: "reading-table",
+    arabic: "طَاوِلَةُ قِرَاءَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈriːdɪŋ ˈteɪbəl",
+    pronunciationTip: "Pronounce 'REE-ding TAY-bul' (/ˈriː.dɪŋ ˈteɪ.bəl/).",
+    collocations: [
+      "oak reading table",
+      "communal reading table",
+      "reading table lamp",
+      "sit at a reading table",
+      "large reading table",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "gather around",
+        meaning: "assemble together at a table",
+        arabic: "يَتَحَلَّقُ حَوْلَ الطَّاوِلَة",
+        example: "The study group gathered around the wide oak reading table.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Library Study Hall",
+        en: "Patrons sat around the polished mahogany reading table illuminated by warm brass lamps.",
+        ar: "جَلَسَ رُوَّادُ المَكْتَبَةِ حَوْلَ طَاوِلَةِ القِرَاءَةِ المَصْقُولَةِ المُضَاءَةِ بِمَصَابِيحَ نُحَاسِيَّةٍ دَافِئَةٍ.",
+      },
+      {
+        context: "Shared Workspace",
+        en: "Large communal reading tables provide ample surface area for spreading out notebooks and open texts.",
+        ar: "تُوَفِّرُ طَاوِلَاتُ القِرَاءَةِ الجَمَاعِيَّةُ الكَبِيرَةُ مِسَاحَةَ سَطْحٍ وَاسِعَةً لِفَرْدِ الدَّفَاتِرِ وَالكُتُبِ المَفْتُوحَةِ.",
+      },
+      {
+        context: "Quiet Zone",
+        en: "A sign on each reading table gently reminds visitors to keep conversation to a whisper.",
+        ar: "تُذَكِّرُ لَافِتَةٌ عَلَى كُلِّ طَاوِلَةِ قِرَاءَةٍ الزُّوَّارَ بِلُطْفٍ بِإِبْقَاءِ الحَدِيثِ بِصَوْتٍ هَامِسٍ.",
+      },
+    ],
+    exampleSentence:
+      "Patrons sat around the polished mahogany reading table illuminated by warm brass lamps.",
+    exampleArabic:
+      "جَلَسَ رُوَّادُ المَكْتَبَةِ حَوْلَ طَاوِلَةِ القِرَاءَةِ المَصْقُولَةِ المُضَاءَةِ بِمَصَابِيحَ نُحَاسِيَّةٍ دَافِئَةٍ.",
+  },
+  "study-desk": {
+    id: "study-desk",
+    arabic: "مَكْتَبُ دِرَاسَة (مَقْصُورَةُ مُذَاكَرَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈstʌdi dɛsk",
+    pronunciationTip: "Pronounce 'STUH-dee desk' (/ˈstʌd.i dɛsk/).",
+    collocations: [
+      "individual study desk",
+      "study carrel desk",
+      "quiet study desk",
+      "wooden study desk",
+      "reserve a study desk",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "settle into",
+        meaning: "get comfortable at a study station",
+        arabic: "يَسْتَقِرُّ لِلْمُذَاكَرَةِ عَلَى المَكْتَب",
+        example: "She settled into a quiet corner study desk with her laptop and coffee.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Individual Focus",
+        en: "He chose an individual study desk equipped with side partition dividers to minimize distractions.",
+        ar: "اخْتَارَ مَكْتَبَ دِرَاسَةٍ فَرْدِيًّا مُزَوَّدًا بِفَوَاصِلَ جَانِبِيَّةٍ لِتَقْلِيلِ التَّشْتِيتِ.",
+      },
+      {
+        context: "Built-in Outlets",
+        en: "Every study desk in the modern university library includes electrical power outlets and USB ports.",
+        ar: "يَتَضَمَّنُ كُلُّ مَكْتَبِ دِرَاسَةٍ فِي مَكْتَبَةِ الجَامِعَةِ الحَدِيثَةِ مَنَافِذَ طَاقَةٍ كَهْرَبَائِيَّةٍ وَمَنَافِذَ USB.",
+      },
+      {
+        context: "Exam Preparation",
+        en: "During finals week, students arrive early to secure their favorite wooden study desks.",
+        ar: "خِلَالَ أُسْبُوعِ الاِمْتِحَانَاتِ النِّهَائِيَّةِ، يَصِلُ الطُّلَّابُ بَاكِرًا لِحَجْزِ مَكَاتِبِ الدِّرَاسَةِ الخَشَبِيَّةِ المُفَضَّلَةِ لَدَيْهِمْ.",
+      },
+    ],
+    exampleSentence:
+      "He chose an individual study desk equipped with side partition dividers to minimize distractions.",
+    exampleArabic:
+      "اخْتَارَ مَكْتَبَ دِرَاسَةٍ فَرْدِيًّا مُزَوَّدًا بِفَوَاصِلَ جَانِبِيَّةٍ لِتَقْلِيلِ التَّشْتِيتِ.",
+  },
+  "bean-bag": {
+    id: "bean-bag",
+    arabic: "كُرْسِيُّ حُبُوب (بِين بَاغ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbiːnbæɡ",
+    pronunciationTip: "Pronounce 'BEEN-bag' (/ˈbiːn.bæɡ/).",
+    collocations: [
+      "colorful bean bag",
+      "plush bean bag chair",
+      "sink into a bean bag",
+      "kids' bean bag area",
+      "giant bean bag",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sink into",
+        meaning: "relax deeply into a soft padded seat",
+        arabic: "يَغُوصُ مُسْتَرْخِيًا فِي الكُرْسِيّ",
+        example: "Children love to sink into a giant soft bean bag while reading fairy tales.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Children's Library",
+        en: "The boy sank comfortably into a soft blue bean bag chair to read his favorite adventure book.",
+        ar: "غَاصَ الوَلَدُ بِمُرُونَةٍ فِي كُرْسِيِّ حُبُوبٍ أَزْرَقَ نَاعِمٍ لِقِرَاءَةِ كِتَابِ مُغَامَرَاتِهِ المُفَضَّلِ.",
+      },
+      {
+        context: "Casual Seating",
+        en: "Brightly colored bean bags offer flexible and cozy informal seating across the youth zone.",
+        ar: "تُوَفِّرُ كَرَاسِي الحُبُوبِ الزَّاهِيَةُ الأَلْوَانِ جَلَسَاتٍ مُرِيحَةً وَمَرِنَةً عَبْرَ مِنْطَقَةِ الشَّبَابِ.",
+      },
+      {
+        context: "Story Hour",
+        en: "During weekend storytime, toddlers gather happily on plush velvet bean bags.",
+        ar: "خِلَالَ سَاعَةِ القِصَّةِ فِي عُطْلَةِ نِهَايَةِ الأُسْبُوعِ، يَتَجَمَّعُ الأَطْفَالُ الصِّغَارُ عَلَى كَرَاسِي الحُبُوبِ المَخْمَلِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "The boy sank comfortably into a soft blue bean bag chair to read his favorite adventure book.",
+    exampleArabic:
+      "غَاصَ الوَلَدُ بِمُرُونَةٍ فِي كُرْسِيِّ حُبُوبٍ أَزْرَقَ نَاعِمٍ لِقِرَاءَةِ كِتَابِ مُغَامَرَاتِهِ المُفَضَّلِ.",
+  },
+  "step-stool": {
+    id: "step-stool",
+    arabic: "سُلَّمٌ دَرَجِيّ صَغِير (كُرْسِيُّ دَرَجَات)",
+    partOfSpeech: "noun",
+    phonetic: "ˈstɛp stuːl",
+    pronunciationTip: "Pronounce 'STEP stool' (/ˈstɛp stuːl/).",
+    collocations: [
+      "wooden step stool",
+      "two-step stool",
+      "rolling step stool",
+      "climb a step stool",
+      "reach high shelves",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "step up on",
+        meaning: "climb slightly to reach higher elevation",
+        arabic: "يَصْعَدُ عَلَى الدَّرَجِ الصَّغِير",
+        example: "Step up on the sturdy wooden stool to reach the topmost encyclopedia volume.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Reaching Tall Shelves",
+        en: "The librarian climbed the two-step wooden stool to reach a leather-bound history book on the top shelf.",
+        ar: "صَعِدَتْ أَمِينَةُ المَكْتَبَةِ السُّلَّمَ الدَّرَجِيَّ الخَشَبِيَّ ذَا الدَّرَجَتَيْنِ لِلْوُصُولِ إِلَى كِتَابِ تَارِيخٍ مُجَلَّدٍ بِالجِلْدِ.",
+      },
+      {
+        context: "Safety Grip",
+        en: "Rolling library step stools feature spring-loaded rubber feet that lock firmly when stepped on.",
+        ar: "تَتَمَيَّزُ كَرَاسِي الدَّرَجَاتِ المَكْتَبِيَّةُ المُتَحَرِّكَةُ بِأَقْدَامٍ مَطَّاطِيَّةٍ تَنْغَلِقُ بِإِحْكَامٍ عِنْدَ الوُقُوفِ عَلَيْهَا.",
+      },
+      {
+        context: "Accessibility",
+        en: "Sturdy step stools positioned along each tall aisle help patrons browse upper shelves safely.",
+        ar: "تُسَاعِدُ السَّلَالِمُ الدَّرَجِيَّةُ المَتِينَةُ المَوْضُوعَةُ فِي المَمَرَّاتِ الزُّوَّارَ عَلَى تَصَفُّحِ الرُّفُوفِ العُلْيَا بِأَمَانٍ.",
+      },
+    ],
+    exampleSentence:
+      "The librarian climbed the two-step wooden stool to reach a leather-bound history book on the top shelf.",
+    exampleArabic:
+      "صَعِدَتْ أَمِينَةُ المَكْتَبَةِ السُّلَّمَ الدَّرَجِيَّ الخَشَبِيَّ ذَا الدَّرَجَتَيْنِ لِلْوُصُولِ إِلَى كِتَابِ تَارِيخٍ مُجَلَّدٍ بِالجِلْدِ.",
+  },
+  cart: {
+    id: "cart",
+    arabic: "عَرَبَةُ كُتُب",
+    partOfSpeech: "noun",
+    phonetic: "kɑːrt",
+    pronunciationTip: "Pronounce 'KART' (/kɑːrt/).",
+    collocations: [
+      "book cart",
+      "library cart",
+      "push a cart",
+      "rolling metal cart",
+      "reshelving cart",
+      "load books onto a cart",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wheel around",
+        meaning: "transport items using a rolling cart",
+        arabic: "يَدْفَعُ العَرَبَةَ المُتَحَرِّكَة",
+        example:
+          "The assistant wheeled around the heavy cart to return books to their correct shelves.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Reshelving Books",
+        en: "The library assistant pushed a heavy rolling metal cart loaded with returned volumes down the aisle.",
+        ar: "دَفَعَ مُسَاعِدُ المَكْتَبَةِ عَرَبَةً مَعْدَنِيَّةً ثَقِيلَةً مُتَحَرِّكَةً مُحَمَّلَةً بِالكُتُبِ المُعَادَةِ عَبْرَ المَمَرِّ.",
+      },
+      {
+        context: "Organization",
+        en: "Staff sort checked-in books by call number directly onto multi-tiered transport carts.",
+        ar: "يَفْرِزُ المَسْؤُولُونَ الكُتُبَ المُسْتَلَمَةَ حَسَبَ رَقْمِ التَّصْنِيفِ عَلَى عَرَبَاتِ نَقْلٍ مُتَعَدِّدَةِ الرُّفُوفِ.",
+      },
+      {
+        context: "Smooth Rollers",
+        en: "Quiet rubber wheels allow the book cart to glide silently across polished wooden floors.",
+        ar: "تُتِيحُ العَجَلَاتُ المَطَّاطِيَّةُ الهَادِئَةُ لِعَرَبَةِ الكُتُبِ التَّحَرُّكَ بِسَلَاسَةٍ وَصَمْتٍ عَلَى الأَرْضِيَّاتِ الخَشَبِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "The library assistant pushed a heavy rolling metal cart loaded with returned volumes down the aisle.",
+    exampleArabic:
+      "دَفَعَ مُسَاعِدُ المَكْتَبَةِ عَرَبَةً مَعْدَنِيَّةً ثَقِيلَةً مُتَحَرِّكَةً مُحَمَّلَةً بِالكُتُبِ المُعَادَةِ عَبْرَ المَمَرِّ.",
+  },
+  "computer-desk": {
+    id: "computer-desk",
+    arabic: "مَكْتَبُ حَاسُوب",
+    partOfSpeech: "noun",
+    phonetic: "kəmˈpjuːtər dɛsk",
+    pronunciationTip: "Pronounce 'kuhm-PYOO-ter desk' (/kəmˈpjuː.tər dɛsk/).",
+    collocations: [
+      "workstation computer desk",
+      "library computer desk",
+      "sit at a computer desk",
+      "keyboard tray on desk",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "log on at",
+        meaning: "access digital terminals at a computer station",
+        arabic: "يُسَجِّلُ الدُّخُولَ عَلَى مَكْتَبِ الحَاسُوب",
+        example: "He logged on at the third computer desk to search the academic journal archives.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Digital Research",
+        en: "She sat at the library computer desk to search the online research catalog for peer-reviewed articles.",
+        ar: "جَلَسَتْ عَلَى مَكْتَبِ حَاسُوبِ المَكْتَبَةِ لِلْبَحْثِ فِي فِهْرِسِ الأَبْحَاثِ عَبْرَ الإِنْتِرْنِتِ عَنْ مَقَالَاتٍ مُحَكَّمَةٍ.",
+      },
+      {
+        context: "Ergonomics",
+        en: "Each computer desk features an adjustable monitor stand and built-in headphone hanger.",
+        ar: "يَتَمَيَّزُ كُلُّ مَكْتَبِ حَاسُوبٍ بِحَامِلِ شَاشَةٍ قَابِلٍ لِلتَّعْدِيلِ وَعَلَّاقَةِ سَمَّاعَاتِ رَأْسٍ مُدْمَجَةٍ.",
+      },
+      {
+        context: "Public Terminals",
+        en: "A row of public computer desks allows patrons to type documents and check reference materials.",
+        ar: "يُتِيحُ صَفٌّ مِنْ مَكَاتِبِ الحَاسُوبِ العَامَّةِ لِلرُّوَّادِ طِبَاعَةَ المُسْتَنَدَاتِ وَمُرَاجَعَةَ المَصَادِرِ.",
+      },
+    ],
+    exampleSentence:
+      "She sat at the library computer desk to search the online research catalog for peer-reviewed articles.",
+    exampleArabic:
+      "جَلَسَتْ عَلَى مَكْتَبِ حَاسُوبِ المَكْتَبَةِ لِلْبَحْثِ فِي فِهْرِسِ الأَبْحَاثِ عَبْرَ الإِنْتِرْنِتِ عَنْ مَقَالَاتٍ مُحَكَّمَةٍ.",
+  },
+  fiction: {
+    id: "fiction",
+    arabic: "أَدَبٌ قَصَصِيّ (خَيَالٌ أَدَبِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfɪkʃən",
+    pronunciationTip: "Pronounce 'FIK-shun' (/ˈfɪk.ʃən/).",
+    collocations: [
+      "fiction section",
+      "works of fiction",
+      "science fiction",
+      "contemporary fiction",
+      "read fiction",
+      "historical fiction",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "make up",
+        meaning: "invent characters and plotlines imaginatively",
+        arabic: "يَبْتَكِرُ قِصَصًا خَيَالِيَّة",
+        example: "Writers make up fascinating worlds and adventures in works of fiction.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Library Aisles",
+        en: "The extensive fiction section spans five rows of oak bookcases filled with imaginative novels.",
+        ar: "يَمْتَدُّ قِسْمُ الأَدَبِ القَصَصِيِّ الشَّامِلُ عَبْرَ خَمْسَةِ صُفُوفٍ مِنْ خَزَائِنِ الكُتُبِ المَلِيئَةِ بِالرِّوَايَاتِ.",
+      },
+      {
+        context: "Genre Classification",
+        en: "Fiction books are classified by author surname and subdivided into mystery, fantasy, and sci-fi.",
+        ar: "تُصَنَّفُ كُتُبُ الخَيَالِ حَسَبَ لَقَبِ المُؤَلِّفِ وَتُقَسَّمُ إِلَى أَلْغَازٍ وَفَانْتَازْيَا وَخَيَالٍ عِلْمِيٍّ.",
+      },
+      {
+        context: "Reading Preference",
+        en: "She enjoys escaping into literary fiction during quiet weekend evenings.",
+        ar: "تَسْتَمْتِعُ بِالانْغِمَاسِ فِي الأَدَبِ القَصَصِيِّ الرَّاقِي خِلَالَ أَمْسِيَاتِ عُطْلَةِ نِهَايَةِ الأُسْبُوعِ.",
+      },
+    ],
+    exampleSentence:
+      "The extensive fiction section spans five rows of oak bookcases filled with imaginative novels.",
+    exampleArabic:
+      "يَمْتَدُّ قِسْمُ الأَدَبِ القَصَصِيِّ الشَّامِلُ عَبْرَ خَمْسَةِ صُفُوفٍ مِنْ خَزَائِنِ الكُتُبِ المَلِيئَةِ بِالرِّوَايَاتِ.",
+  },
+  "non-fiction": {
+    id: "non-fiction",
+    arabic: "كُتُبٌ غَيْرُ خَيَالِيَّة (كُتُبٌ وَاقِعِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˌnɑːnˈfɪkʃən",
+    pronunciationTip: "Pronounce 'nahn-FIK-shun' (/ˌnɑːnˈfɪk.ʃən/).",
+    collocations: [
+      "non-fiction books",
+      "non-fiction section",
+      "history and non-fiction",
+      "Dewey decimal non-fiction",
+      "read non-fiction",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "base on",
+        meaning: "root narratives in documented facts",
+        arabic: "يَسْتَنِدُ إِلَى حَقَائِقَ وَاقِعِيَّة",
+        example: "Non-fiction authors base their accounts on historical documents and interviews.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Fact-Based Reading",
+        en: "He browsed the non-fiction department to find informative books on astrophysics and world history.",
+        ar: "تَصَفَّحَ قِسْمَ الكُتُبِ الوَاقِعِيَّةِ لِلْعُثُورِ عَلَى كُتُبٍ مَعْرِفِيَّةٍ حَوْلَ الفِيزْيَاءِ الفَلَكِيَّةِ وَالتَّارِيخِ.",
+      },
+      {
+        context: "Classification",
+        en: "Non-fiction titles are systematically categorized using the Dewey Decimal numbering system.",
+        ar: "تُصَنَّفُ عَنَاوِينُ الكُتُبِ غَيْرِ الخَيَالِيَّةِ مَنْهَجِيًّا بِنِظَامِ دِيُوِي العَشْرِيِّ لِلتَّصْنِيفِ.",
+      },
+      {
+        context: "Academic Papers",
+        en: "Writing factual essays requires consulting multiple credible non-fiction publications.",
+        ar: "تَتَطَلَّبُ كِتَابَةُ المَقَالَاتِ الحَقَائِقِيَّةِ اسْتِشَارَةَ مَنْشُورَاتٍ وَاقِعِيَّةٍ مَوْثُوقَةٍ مُتَعَدِّدَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "He browsed the non-fiction department to find informative books on astrophysics and world history.",
+    exampleArabic:
+      "تَصَفَّحَ قِسْمَ الكُتُبِ الوَاقِعِيَّةِ لِلْعُثُورِ عَلَى كُتُبٍ مَعْرِفِيَّةٍ حَوْلَ الفِيزْيَاءِ الفَلَكِيَّةِ وَالتَّارِيخِ.",
+  },
+  "childrens-section": {
+    id: "childrens-section",
+    arabic: "قِسْمُ الأَطْفَال",
+    partOfSpeech: "noun",
+    phonetic: "ˈtʃɪldrənz ˈsɛkʃən",
+    pronunciationTip: "Pronounce 'CHIL-drenz SEK-shun' (/ˈtʃɪl.drənz ˈsɛk.ʃən/).",
+    collocations: [
+      "library children's section",
+      "colorful children's section",
+      "story area in children's section",
+      "picture books in children's section",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hang out in",
+        meaning: "spend time in a welcoming environment",
+        arabic: "يَقْضِي الوَقْتَ فِي قِسْمِ الأَطْفَال",
+        example:
+          "Families love to hang out in the colorful children's section on Saturday mornings.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Family Library Visit",
+        en: "Parents and kids gathered on the circular story rug in the vibrant children's section.",
+        ar: "تَجَمَّعَ الآبَاءُ وَالأَطْفَالُ عَلَى بِسَاطِ القِصَّةِ الدَّائِرِيِّ فِي قِسْمِ الأَطْفَالِ النَّابِضِ بِالحَيَاةِ.",
+      },
+      {
+        context: "Kid-Friendly Design",
+        en: "The children's section features low display tables, animal murals, and tactile reading games.",
+        ar: "يَتَمَيَّزُ قِسْمُ الأَطْفَالِ بِطَاوِلَاتِ عَرْضٍ مُنْخَفِضَةٍ وَجِدَارِيَّاتِ حَيَوَانَاتٍ وَأَلْعَابِ قِرَاءَةٍ لَمْسِيَّةٍ.",
+      },
+      {
+        context: "Early Reading",
+        en: "Staff curate themed book baskets to encourage early phonics exploration in the youth wing.",
+        ar: "يُعِدُّ أُمَنَاءُ المَكْتَبَةِ سِلَالَ كُتُبٍ مَوْضُوعِيَّةٍ لِتَشْجِيعِ اسْتِكْشَافِ الصَّوْتِيَّاتِ فِي قِسْمِ الأَطْفَالِ.",
+      },
+    ],
+    exampleSentence:
+      "Parents and kids gathered on the circular story rug in the vibrant children's section.",
+    exampleArabic:
+      "تَجَمَّعَ الآبَاءُ وَالأَطْفَالُ عَلَى بِسَاطِ القِصَّةِ الدَّائِرِيِّ فِي قِسْمِ الأَطْفَالِ النَّابِضِ بِالحَيَاةِ.",
+  },
+  "reference-section": {
+    id: "reference-section",
+    arabic: "قِسْمُ المَرَاجِع",
+    partOfSpeech: "noun",
+    phonetic: "ˈrɛfrəns ˈsɛkʃən",
+    pronunciationTip: "Pronounce 'REF-runss SEK-shun' (/ˈrɛf.rəns ˈsɛk.ʃən/).",
+    collocations: [
+      "library reference section",
+      "silent reference section",
+      "consult the reference section",
+      "reference section encyclopedias",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "look through",
+        meaning: "examine scholarly reference materials",
+        arabic: "يَبْحَثُ فِي قِسْمِ المَرَاجِع",
+        example: "He looked through genealogical records in the quiet reference section.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Scholarly Research",
+        en: "The university library's reference section houses rare encyclopedias, law digests, and historical atlases.",
+        ar: "يَضُمُّ قِسْمُ المَرَاجِعِ فِي مَكْتَبَةِ الجَامِعَةِ مَوْسُوعَاتٍ نَادِرَةً وَمَجَامِيعَ قَوَانِينَ وَأَطَالِسَ تَارِيخِيَّةً.",
+      },
+      {
+        context: "Strict Silence",
+        en: "Strict silence is observed in the reference section so researchers can concentrate fully.",
+        ar: "يُفْرَضُ الصَّمْتُ التَّامُّ فِي قِسْمِ المَرَاجِعِ لِيَتَمَكَّنَ البَاحِثُونَ مِنَ التَّرْكِيزِ الكَامِلِ.",
+      },
+      {
+        context: "Expert Help",
+        en: "A specialized research librarian is stationed at the reference desk to assist patrons.",
+        ar: "يَتَوَاجَدُ أَمِينُ مَكْتَبَةٍ مُتَخَصِّصٌ فِي الأَبْحَاثِ عِنْدَ مَكْتَبِ المَرَاجِعِ لِمُسَاعَدَةِ الزُّوَّارِ.",
+      },
+    ],
+    exampleSentence:
+      "The university library's reference section houses rare encyclopedias, law digests, and historical atlases.",
+    exampleArabic:
+      "يَضُمُّ قِسْمُ المَرَاجِعِ فِي مَكْتَبَةِ الجَامِعَةِ مَوْسُوعَاتٍ نَادِرَةً وَمَجَامِيعَ قَوَانِينَ وَأَطَالِسَ تَارِيخِيَّةً.",
+  },
+  periodicals: {
+    id: "periodicals",
+    arabic: "دَوْرِيَّات (مَجَلَّاتٌ وَصُحُفٌ دَوْرِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˌpɪriˈɑːdɪkəlz",
+    pronunciationTip: "Pronounce 'peer-ee-OD-ih-kulz' (/ˌpɪr.iˈɑː.dɪ.kəlz/). Plural noun.",
+    collocations: [
+      "current periodicals",
+      "periodicals room",
+      "bound periodicals",
+      "academic periodicals",
+      "periodical subscriptions",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "keep up with",
+        meaning: "stay informed on latest publications",
+        arabic: "يُتَابِعُ الدَّوْرِيَّاتِ بِانْتِظَام",
+        example: "Scientists read quarterly periodicals to keep up with breakthroughs in medicine.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Periodicals Reading Room",
+        en: "Patrons browse daily newspapers and monthly academic magazines in the sunlit periodicals room.",
+        ar: "يَتَصَفَّحُ الزُّوَّارُ الصُّحُفَ اليَوْمِيَّةَ وَالمَجَلَّاتِ الأَكَادِيمِيَّةَ الشَّهْرِيَّةَ فِي قَاعَةِ الدَّوْرِيَّاتِ المُشْمِسَةِ.",
+      },
+      {
+        context: "Archived Volumes",
+        en: "Past issues of scholarly periodicals are bound into hardcover volumes for long-term archiving.",
+        ar: "تُجَلَّدُ الأَعْدَادُ السَّابِقَةُ مِنَ الدَّوْرِيَّاتِ العِلْمِيَّةِ فِي مُجَلَّدَاتٍ مُقَوَّاةٍ لِلْأَرْشَفَةِ طَوِيلَةِ الأَمَدِ.",
+      },
+      {
+        context: "Display Racks",
+        en: "Slanted wooden display shelves keep the latest periodical editions visible and organized.",
+        ar: "تُحَافِظُ رُفُوفُ العَرْضِ الخَشَبِيَّةُ المَائِلَةُ عَلَى ظُهُورِ أَحْدَثِ طَبَعَاتِ الدَّوْرِيَّاتِ وَتَرْتِيبِهَا.",
+      },
+    ],
+    exampleSentence:
+      "Patrons browse daily newspapers and monthly academic magazines in the sunlit periodicals room.",
+    exampleArabic:
+      "يَتَصَفَّحُ الزُّوَّارُ الصُّحُفَ اليَوْمِيَّةَ وَالمَجَلَّاتِ الأَكَادِيمِيَّةَ الشَّهْرِيَّةَ فِي قَاعَةِ الدَّوْرِيَّاتِ المُشْمِسَةِ.",
+  },
+  "media-center": {
+    id: "media-center",
+    arabic: "مَرْكَزُ الوَسَائِط (قَاعَةُ المَلْتِيمِيدْيَا)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmiːdiə ˌsɛntər",
+    pronunciationTip: "Pronounce 'MEE-dee-uh SEN-ter' (/ˈmiː.di.ə ˌsɛn.tər/).",
+    collocations: [
+      "school media center",
+      "digital media center",
+      "visit the media center",
+      "audio-visual media center",
+      "media center workstations",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "plug into",
+        meaning: "connect to multimedia equipment",
+        arabic: "يَتَّصِلُ بِأَجْهِزَةِ الوَسَائِط",
+        example: "Students plug into interactive listening labs at the digital media center.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Digital Learning",
+        en: "Students edited their video documentary using high-performance computers in the library media center.",
+        ar: "حَرَّرَ الطُّلَّابُ فِيلْمَهُمُ الوَثَائِقِيَّ بِاسْتِخْدَامِ حَوَاسِيبَ عَالِيَةِ الأَدَاءِ فِي مَرْكَزِ الوَسَائِطِ.",
+      },
+      {
+        context: "Audio-Visual Equipment",
+        en: "The media center loans out cameras, microphones, and digital tablets for educational projects.",
+        ar: "يُعِيرُ مَرْكَزُ الوَسَائِطِ كَامِيرَاتٍ وَمِيكْرُوفُونَاتٍ وَأَلْوَاحًا رَقْمِيَّةً لِلْمَشَارِيعِ التَّعْلِيمِيَّةِ.",
+      },
+      {
+        context: "Technology Hub",
+        en: "Our modern campus media center provides 3D printers and podcast recording booths.",
+        ar: "يُوَفِّرُ مَرْكَزُ الوَسَائِطِ الحَدِيثُ فِي حَرَمِنَا طَابِعَاتٍ ثُلَاثِيَّةَ الأَبْعَادِ وَكَبَائِنَ لِتَسْجِيلِ البُودْكَاسْتِ.",
+      },
+    ],
+    exampleSentence:
+      "Students edited their video documentary using high-performance computers in the library media center.",
+    exampleArabic:
+      "حَرَّرَ الطُّلَّابُ فِيلْمَهُمُ الوَثَائِقِيَّ بِاسْتِخْدَامِ حَوَاسِيبَ عَالِيَةِ الأَدَاءِ فِي مَرْكَزِ الوَسَائِطِ.",
+  },
+  "study-room": {
+    id: "study-room",
+    arabic: "غُرْفَةُ مُذَاكَرَة (قَاعَةُ دِرَاسَةٍ جَمَاعِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈstʌdi ruːm",
+    pronunciationTip: "Pronounce 'STUH-dee room' (/ˈstʌd.i ruːm/).",
+    collocations: [
+      "group study room",
+      "reserve a study room",
+      "private study room",
+      "soundproof study room",
+      "study room whiteboard",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "book out",
+        meaning: "reserve a private room in advance",
+        arabic: "يَحْجِزُ غُرْفَةَ دِرَاسَة",
+        example:
+          "The engineering team booked out a study room for their group presentation rehearsal.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Group Collaboration",
+        en: "The team reserved a soundproof glass study room to collaborate on their economics presentation.",
+        ar: "حَجَزَ الفَرِيقُ غُرْفَةَ دِرَاسَةٍ زُجَاجِيَّةً عَازِلَةً لِلصَّوْتِ لِلتَّعَاوُنِ فِي عَرْضِهِمُ الاِقْتِصَادِيِّ.",
+      },
+      {
+        context: "Equipped Facilities",
+        en: "Each private study room includes a large wall whiteboard, conference table, and display monitor.",
+        ar: "تَتَضَمَّنُ كُلُّ غُرْفَةِ دِرَاسَةٍ خَاصَّةٍ لَوْحًا أَبْيَضَ جِدَارِيًّا كَبِيرًا وَطَاوِلَةَ اجْتِمَاعَاتٍ وَشَاشَةَ عَرْضٍ.",
+      },
+      {
+        context: "Library Booking",
+        en: "Students can book study rooms online for up to two hours during midterm week.",
+        ar: "يُمْكِنُ لِلطُّلَّابِ حَجْزُ غُرَفِ الدِّرَاسَةِ عَبْرَ الإِنْتِرْنِتِ لِمُدَّةٍ تَصِلُ إِلَى سَاعَتَيْنِ خِلَالَ أُسْبُوعِ الاِمْتِحَانَاتِ.",
+      },
+    ],
+    exampleSentence:
+      "The team reserved a soundproof glass study room to collaborate on their economics presentation.",
+    exampleArabic:
+      "حَجَزَ الفَرِيقُ غُرْفَةَ دِرَاسَةٍ زُجَاجِيَّةً عَازِلَةً لِلصَّوْتِ لِلتَّعَاوُنِ فِي عَرْضِهِمُ الاِقْتِصَادِيِّ.",
+  },
+  "return-desk": {
+    id: "return-desk",
+    arabic: "مَكْتَبُ إِعَادَةِ الكُتُب",
+    partOfSpeech: "noun",
+    phonetic: "rɪˈtɜːrn dɛsk",
+    pronunciationTip: "Pronounce 'rih-TURN desk' (/rɪˈtɜːrn dɛsk/).",
+    collocations: [
+      "book return desk",
+      "drop off at return desk",
+      "automated return desk",
+      "return desk bin",
+      "library return counter",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "drop off",
+        meaning: "deliver borrowed materials back to the desk",
+        arabic: "يُسَلِّمُ الكُتُبَ المُسْتَعَارَة",
+        example:
+          "Don't forget to drop off your checked-out books at the return desk before Friday.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Book Check-In",
+        en: "She dropped her borrowed novels into the padded slot at the library return desk.",
+        ar: "وَضَعَتْ رِوَايَاتِهَا المُسْتَعَارَةَ فِي الفَتْحَةِ المُبَطَّنَةِ عِنْدَ مَكْتَبِ إِعَادَةِ الكُتُبِ فِي المَكْتَبَةِ.",
+      },
+      {
+        context: "Automated Check-in",
+        en: "The automated return desk instantly scans RFID tags and clears the borrower's account.",
+        ar: "يَمْسَحُ مَكْتَبُ الإِعَادَةِ الآلِيُّ شَرَائِحَ التَّعَرُّفِ اللَّاسِلْكِيَّةَ فَوْرِيًّا وَيُبْرِئُ ذِمَّةَ المُسْتَعِيرِ.",
+      },
+      {
+        context: "Circulation Lobby",
+        en: "The return counter is located conveniently near the main entrance for quick drop-offs.",
+        ar: "يَقَعُ مَكْتَبُ الإِعَادَةِ بِمَوْقِعٍ مُلَائِمٍ بِالقُرْبِ مِنَ المَدْخَلِ الرَّئِيسِيِّ لِتَسْلِيمٍ سَرِيعٍ.",
+      },
+    ],
+    exampleSentence:
+      "She dropped her borrowed novels into the padded slot at the library return desk.",
+    exampleArabic:
+      "وَضَعَتْ رِوَايَاتِهَا المُسْتَعَارَةَ فِي الفَتْحَةِ المُبَطَّنَةِ عِنْدَ مَكْتَبِ إِعَادَةِ الكُتُبِ فِي المَكْتَبَةِ.",
+  },
+  "help-desk": {
+    id: "help-desk",
+    arabic: "مَكْتَبُ المُسَاعَدَةِ وَالاسْتِعْلَامَات",
+    partOfSpeech: "noun",
+    phonetic: "ˈhɛlp dɛsk",
+    pronunciationTip: "Pronounce 'HELP desk' (/ˈhɛlp dɛsk/).",
+    collocations: [
+      "information help desk",
+      "ask at the help desk",
+      "library help desk staff",
+      "front help desk",
+      "technical help desk",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "inquire at",
+        meaning: "seek information from attendants",
+        arabic: "يَسْتَفْسِرُ عِنْدَ مَكْتَبِ المُسَاعَدَة",
+        example: "You can inquire at the help desk if you cannot locate an archived manuscript.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Visitor Assistance",
+        en: "He approached the help desk to ask how to print documents from his personal laptop.",
+        ar: "تَوَجَّهَ إِلَى مَكْتَبِ المُسَاعَدَةِ لِيَسْأَلَ عَنْ كَيْفِيَّةِ طِبَاعَةِ المُسْتَنَدَاتِ مِنْ حَاسُوبِهِ المَحْمُولِ.",
+      },
+      {
+        context: "Member Services",
+        en: "Staff at the main help desk issue new membership cards and reset student passwords.",
+        ar: "يُصْدِرُ المُوَظَّفُونَ فِي مَكْتَبِ المُسَاعَدَةِ الرَّئِيسِيِّ بِطَاقَاتِ عُضْوِيَّةٍ جَدِيدَةٍ وَيُعِيدُونَ ضَبْطَ كَلِمَاتِ المُرُورِ.",
+      },
+      {
+        context: "Wayfinding",
+        en: "Friendly attendants at the help desk provide floor maps to guide first-time visitors.",
+        ar: "يُقَدِّمُ المُسَاعِدُونَ الوَدُودُونَ فِي مَكْتَبِ الاسْتِعْلَامَاتِ خَرَائِطَ لِلأَدْوَارِ لِإِرْشَادِ الزُّوَّارِ الجُدُدِ.",
+      },
+    ],
+    exampleSentence:
+      "He approached the help desk to ask how to print documents from his personal laptop.",
+    exampleArabic:
+      "تَوَجَّهَ إِلَى مَكْتَبِ المُسَاعَدَةِ لِيَسْأَلَ عَنْ كَيْفِيَّةِ طِبَاعَةِ المُسْتَنَدَاتِ مِنْ حَاسُوبِهِ المَحْمُولِ.",
+  },
+  archive: {
+    id: "archive",
+    arabic: "أَرْشِيف (سِجِلَّاتٌ وَوَثَائِقُ تَارِيخِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɑːrkaɪv",
+    pronunciationTip: "Pronounce 'AR-kyv' (/ˈɑːr.kaɪv/).",
+    collocations: [
+      "historical archive",
+      "digital archive",
+      "library archives",
+      "special collections archive",
+      "search the archive",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "preserve in",
+        meaning: "maintain delicate records securely",
+        arabic: "يَحْفَظُ فِي الأَرْشِيف",
+        example: "Rare historical town charters are preserved in temperature-controlled archives.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Historical Research",
+        en: "The historian examined fragile nineteenth-century newspapers in the library's climate-controlled archive.",
+        ar: "فَحَصَ المloopُؤَرِّخُ صُحُفًا هَشَّةً مِنَ القَرْنِ التَّاسِعَ عَشَرَ فِي أَرْشِيفِ المَكْتَبَةِ المُضْبُوطِ مُنَاخِيًّا.",
+      },
+      {
+        context: "Special Collections",
+        en: "Access to the rare manuscript archive requires wearing white cotton gloves to protect old paper.",
+        ar: "يَتَطَلَّبُ الدُّخُولُ إِلَى أَرْشِيفِ المَخْطُوطَاتِ النَّادِرَةِ ارْتِدَاءَ قُفَّازَاتٍ قُطْنِيَّةٍ بَيْضَاءَ لِحِمَايَةِ الوَرَقِ القَدِيمِ.",
+      },
+      {
+        context: "Digital Preservation",
+        en: "Digitized microfilm rolls make local historical archives accessible to online researchers worldwide.",
+        ar: "تَجْعَلُ لَفَائِفُ المِيكْرُوفِيلْمِ المُرَقْمَنَةُ الأَرْشِيفَاتِ التَّارِيخِيَّةَ المَحَلِّيَّةَ مُتَاحَةً لِلْبَاحِثِينَ حَوْلَ العَالَمِ.",
+      },
+    ],
+    exampleSentence:
+      "The historian examined fragile nineteenth-century newspapers in the library's climate-controlled archive.",
+    exampleArabic:
+      "فَحَصَ المloopُؤَرِّخُ صُحُفًا هَشَّةً مِنَ القَرْنِ التَّاسِعَ عَشَرَ فِي أَرْشِيفِ المَكْتَبَةِ المُضْبُوطِ مُنَاخِيًّا.",
+  },
+  reading: {
+    id: "reading",
+    arabic: "القِرَاءَة (المُطَالَعَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈriːdɪŋ",
+    pronunciationTip: "Pronounce 'REE-ding' (/ˈriː.dɪŋ/).",
+    collocations: [
+      "avid reading",
+      "silent reading",
+      "reading comprehension",
+      "reading nook",
+      "enjoy reading",
+      "reading habit",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "read along",
+        meaning: "follow text while listening to narration",
+        arabic: "يُتَابِعُ القِرَاءَة",
+        example: "Children read along with the audio narration during interactive storytime.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Quiet Recreation",
+        en: "She spent a peaceful Sunday afternoon reading historical fiction in the comfortable armchair.",
+        ar: "أَمْضَتْ بَعْدَ ظُهْرِ يَوْمِ أَحَدٍ هَادِئٍ فِي قِرَاءَةِ رِوَايَةٍ تَارِيخِيَّةٍ عَلَى كُرْسِيِّ الجُلُوسِ المُرِيحِ.",
+      },
+      {
+        context: "Literacy Goal",
+        en: "Daily reading expands vocabulary, sharpens memory, and fosters deep empathy for others.",
+        ar: "تُوَسِّعُ القِرَاءَةُ اليَوْمِيَّةُ المُفْرَدَاتِ وَتُقَوِّي الذَّاكِرَةَ وَتُعَزِّزُ التَّعَاطُفَ العَمِيقَ مَعَ الآخَرِينَ.",
+      },
+      {
+        context: "Library Culture",
+        en: "The summer reading challenge encourages students to complete ten books over the holiday.",
+        ar: "يُشَجِّعُ تَحَدِّي القِرَاءَةِ الصَّيْفِيُّ الطُّلَّابَ عَلَى إِتْمَامِ عَشْرَةِ كُتُبٍ خِلَالَ العُطْلَةِ.",
+      },
+    ],
+    exampleSentence:
+      "She spent a peaceful Sunday afternoon reading historical fiction in the comfortable armchair.",
+    exampleArabic:
+      "أَمْضَتْ بَعْدَ ظُهْرِ يَوْمِ أَحَدٍ هَادِئٍ فِي قِرَاءَةِ رِوَايَةٍ تَارِيخِيَّةٍ عَلَى كُرْسِيِّ الجُلُوسِ المُرِيحِ.",
+  },
+  borrowing: {
+    id: "borrowing",
+    arabic: "الاسْتِعَارَة (اسْتِعَارَةُ الكُتُب)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbɑːroʊɪŋ",
+    pronunciationTip: "Pronounce 'BAH-roh-ing' (/ˈbɑː.roʊ.ɪŋ/).",
+    collocations: [
+      "borrowing limit",
+      "borrowing period",
+      "borrowing privileges",
+      "book borrowing",
+      "interlibrary borrowing",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "take out",
+        meaning: "borrow on a library account",
+        arabic: "يَسْتَعِيرُ بِبِطَاقَةِ المَكْتَبَة",
+        example: "Members can take out up to five books for three weeks.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Library Circulation",
+        en: "The borrowing period for all standard hardcover books is three weeks with one renewal.",
+        ar: "تَمْتَدُّ فَتْرَةُ الاِسْتِعَارَةِ لِجَمِيعِ الكُتُبِ المُجَلَّدَةِ ثَلَاثَةَ أَسَابِيعَ مَعَ تَجْدِيدٍ وَاحِدٍ.",
+      },
+      {
+        context: "Card Privileges",
+        en: "Presenting your library card at the counter activates your borrowing privileges immediately.",
+        ar: "يُؤَدِّي إِبْرَازُ بِطَاقَةِ المَكْتَبَةِ عِنْدَ الكَاوَنْتَر إِلَى تَفْعِيلِ صَلَاحِيَّاتِ الاِسْتِعَارَةِ فَوْرًا.",
+      },
+      {
+        context: "Digital Borrowing",
+        en: "Digital e-book borrowing allows readers to download audiobooks directly to their tablets.",
+        ar: "تُتِيحُ اسْتِعَارَةُ الكُتُبِ الإِلِكْتُرُونِيَّةِ لِلْقُرَّاءِ تَنْزِيلَ الكُتُبِ الصَّوْتِيَّةِ مُبَاشَرَةً.",
+      },
+    ],
+    exampleSentence:
+      "The borrowing period for all standard hardcover books is three weeks with one renewal.",
+    exampleArabic:
+      "تَمْتَدُّ فَتْرَةُ الاِسْتِعَارَةِ لِجَمِيعِ الكُتُبِ المُجَلَّدَةِ ثَلَاثَةَ أَسَابِيعَ مَعَ تَجْدِيدٍ وَاحِدٍ.",
+  },
+  returning: {
+    id: "returning",
+    arabic: "إِعَادَةُ الكُتُب (إِرْجَاعُ الكُتُب)",
+    partOfSpeech: "noun",
+    phonetic: "rɪˈtɜːrnɪŋ",
+    pronunciationTip: "Pronounce 'rih-TURN-ing' (/rɪˈtɜːr.nɪŋ/).",
+    collocations: [
+      "returning overdue books",
+      "book returning chute",
+      "returning on time",
+      "grace period for returning",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hand back",
+        meaning: "return borrowed materials to staff",
+        arabic: "يُعِيدُ الكِتَابَ لِلْمُوَظَّف",
+        example: "She handed back her borrowed volumes at the circulation desk.",
+      },
+    ],
+    sentences: [
+      {
+        context: "On-Time Return",
+        en: "Returning library books on time ensures other students can access popular study materials.",
+        ar: "يَضْمَنُ إِرْجَاعُ كُتُبِ المَكْتَبَةِ فِي المَوْعِدِ المُحَدَّدِ إِمْكَانِيَّةَ وُصُولِ الطُّلَّابِ الآخَرِينَ إِلَيْهَا.",
+      },
+      {
+        context: "After-Hours Drop",
+        en: "An exterior book drop allows convenient returning of materials even when the library is closed.",
+        ar: "تُتِيحُ صُنْدُوقُ الإِعَادَةِ الخَارِجِيُّ إِرْجَاعَ المَوَادِّ بِسُهُولَةٍ حَتَّى عِنْدَ إِغْلَاقِ المَكْتَبَةِ.",
+      },
+      {
+        context: "Account Clearance",
+        en: "After scanning and returning all items, his student account showed zero pending fines.",
+        ar: "بَعْدَ مَسْحِ جَمِيعِ المَوَادِّ وَإِعَادَتِهَا، أَظْهَرَ حِسَابُهُ الطُّلَّابِيُّ خُلُوًّا تَامًّا مِنَ الغَرَامَاتِ.",
+      },
+    ],
+    exampleSentence:
+      "Returning library books on time ensures other students can access popular study materials.",
+    exampleArabic:
+      "يَضْمَنُ إِرْجَاعُ كُتُبِ المَكْتَبَةِ فِي المَوْعِدِ المُحَدَّدِ إِمْكَانِيَّةَ وُصُولِ الطُّلَّابِ الآخَرِينَ إِلَيْهَا.",
+  },
+  searching: {
+    id: "searching",
+    arabic: "البَحْث (البَحْثُ عَنِ الكُتُبِ وَالمَصَادِر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsɜːrtʃɪŋ",
+    pronunciationTip: "Pronounce 'SER-ching' (/ˈsɜːr.tʃɪŋ/).",
+    collocations: [
+      "searching the catalog",
+      "searching the shelves",
+      "keyword searching",
+      "searching for reference sources",
+      "digital searching",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "look for",
+        meaning: "seek specific titles among shelves",
+        arabic: "يَبْحَثُ عَنْ عُنْوَانٍ مُعَيَّن",
+        example: "He spent thirty minutes looking for a rare astronomy manuscript.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Catalog Lookup",
+        en: "She began searching the online database using author keywords to locate rare manuscripts.",
+        ar: "بَدَأَتْ فِي البَحْثِ فِي قَاعِدَةِ البَيَانَاتِ عَبْرَ الإِنْتِرْنِتِ بِاسْتِخْدَامِ كَلِمَاتِ اسْمِ المُؤَلِّفِ.",
+      },
+      {
+        context: "Aisle Exploration",
+        en: "Searching through the history stacks revealed fascinating firsthand historical letters.",
+        ar: "كَشَفَ البَحْثُ فِي رُفُوفِ التَّارِيخِ عَنْ رَسَائِلَ تَارِيخِيَّةٍ أَصْلِيَّةٍ رَائِعَةٍ.",
+      },
+      {
+        context: "Advanced Filters",
+        en: "Advanced searching filters allow researchers to narrow results by publication year and format.",
+        ar: "تُتِيحُ خِيَارَاتُ البَحْثِ المُتَقَدِّمَةُ لِلْبَاحِثِينَ تَقْلِيصَ النَّتَائِجِ حَسَبَ سَنَةِ النَّشْرِ وَالنَّوْعِ.",
+      },
+    ],
+    exampleSentence:
+      "She began searching the online database using author keywords to locate rare manuscripts.",
+    exampleArabic:
+      "بَدَأَتْ فِي البَحْثِ فِي قَاعِدَةِ البَيَانَاتِ عَبْرَ الإِنْتِرْنِتِ بِاسْتِخْدَامِ كَلِمَاتِ اسْمِ المُؤَلِّفِ.",
+  },
+  studying: {
+    id: "studying",
+    arabic: "المُذَاكَرَة (الدِّرَاسَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈstʌdiɪŋ",
+    pronunciationTip: "Pronounce 'STUH-dee-ing' (/ˈstʌd.i.ɪŋ/).",
+    collocations: [
+      "quiet studying",
+      "group studying",
+      "studying for exams",
+      "studying in the library",
+      "intense studying",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "focus on",
+        meaning: "concentrate mental effort upon subjects",
+        arabic: "يُرَكِّزُ فِي الدِّرَاسَة",
+        example: "She put on noise-cancelling headphones to focus on studying chemistry.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Library Focus",
+        en: "Students spent the entire afternoon studying biology diagrams in the quiet reading room.",
+        ar: "أَمْضَى الطُّلَّابُ بَعْدَ الظُّهْرِ بِأَكْمَلِهِ فِي مُذَاكَرَةِ مُخَطَّطَاتِ الأَحْيَاءِ فِي قَاعَةِ القِرَاءَةِ الهَادِئَةِ.",
+      },
+      {
+        context: "Exam Preparation",
+        en: "Diligent studying combined with practice flashcards ensures mastery of complex concepts.",
+        ar: "تَضْمَنُ المُذَاكَرَةُ المُجْتَهِدَةُ مَعَ بِطَاقَاتِ الاِسْتِذْكَارِ اسْتِيعَابَ المَفَاهِيمِ المُعَقَّدَةِ.",
+      },
+      {
+        context: "Peer Groups",
+        en: "Studying together in designated breakout rooms enables active peer discussion.",
+        ar: "تُتِيحُ الدِّرَاسَةُ المَعِيَّةُ فِي الغُرَفِ المُخَصَّصَةِ مُنَاقَشَاتٍ نَشِطَةً بَيْنَ الزُّمَلَاءِ.",
+      },
+    ],
+    exampleSentence:
+      "Students spent the entire afternoon studying biology diagrams in the quiet reading room.",
+    exampleArabic:
+      "أَمْضَى الطُّلَّابُ بَعْدَ الظُّهْرِ بِأَكْمَلِهِ فِي مُذَاكَرَةِ مُخَطَّطَاتِ الأَحْيَاءِ فِي قَاعَةِ القِرَاءَةِ الهَادِئَةِ.",
+  },
+  browsing: {
+    id: "browsing",
+    arabic: "التَّصَفُّح (اسْتِعْرَاضُ الكُتُب)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbraʊzɪŋ",
+    pronunciationTip: "Pronounce 'BROW-zing' (/ˈbraʊ.zɪŋ/).",
+    collocations: [
+      "browsing the shelves",
+      "browsing the catalog",
+      "casual browsing",
+      "browsing magazines",
+      "enjoy browsing",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "browse through",
+        meaning: "look through pages casually",
+        arabic: "يَتَصَفَّحُ كِتَابًا بِاسْتِرْخَاء",
+        example: "He loves to browse through new art books on the display table.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Leisurely Exploration",
+        en: "She enjoyed casually browsing the new releases shelf to discover intriguing fiction titles.",
+        ar: "اسْتَمْتَعَتْ بِتَصَفُّحِ رَفِّ الإِصْدَارَاتِ الجَدِيدَةِ بِاسْتِرْخَاءٍ لِاكْتِشَافِ عَنَاوِينِ رِوَايَاتٍ مُشَوِّقَةٍ.",
+      },
+      {
+        context: "Library Wandering",
+        en: "Browsing through open bookshelves often leads to finding unexpected literary treasures.",
+        ar: "غَالِبًا مَا يُؤَدِّي تَصَفُّحُ رُفُوفِ الكُتُبِ المَفْتُوحَةِ إِلَى العُثُورِ عَلَى كُنُوزٍ أَدَبِيَّةٍ غَيْرِ مُتَوَقَّعَةٍ.",
+      },
+      {
+        context: "Periodicals Corner",
+        en: "Patrons relax while browsing colorful monthly magazines in the sunny lounge.",
+        ar: "يَسْتَرْخِي الزُّوَّارُ أَثْنَاءَ تَصَفُّحِ المَجَلَّاتِ الشَّهْرِيَّةِ المُلَوَّنَةِ فِي الِاسْتِرَاحَةِ المُشْمِسَةِ.",
+      },
+    ],
+    exampleSentence:
+      "She enjoyed casually browsing the new releases shelf to discover intriguing fiction titles.",
+    exampleArabic:
+      "اسْتَمْتَعَتْ بِتَصَفُّحِ رَفِّ الإِصْدَارَاتِ الجَدِيدَةِ بِاسْتِرْخَاءٍ لِاكْتِشَافِ عَنَاوِينِ رِوَايَاتٍ مُشَوِّقَةٍ.",
+  },
+  reserving: {
+    id: "reserving",
+    arabic: "الحَجْز (حَجْزُ كِتَابٍ أَوْ مَقْعَد)",
+    partOfSpeech: "noun",
+    phonetic: "rɪˈzɜːrvɪŋ",
+    pronunciationTip: "Pronounce 'rih-ZURV-ing' (/rɪˈzɜːr.vɪŋ/).",
+    collocations: [
+      "reserving a book",
+      "reserving a study room",
+      "online reserving system",
+      "reserving popular titles",
+      "place on reserve",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put on hold",
+        meaning: "request that a checked-out book be saved upon return",
+        arabic: "يَحْجِزُ كِتَابًا مُسْتَعَارًا",
+        example: "You can put the bestseller on hold through the library mobile app.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Book Hold",
+        en: "He logged into his library account to practice reserving the newest bestseller before it arrived.",
+        ar: "سَجَّلَ الدُّخُولَ إِلَى حِسَابِهِ المَكْتَبِيِّ لِحَجْزِ أَحْدَثِ الكُتُبِ رَوَاجًا قَبْلَ وُصُولِهَا.",
+      },
+      {
+        context: "Study Room Booking",
+        en: "Reserving group study rooms in advance guarantees quiet workspace during exam season.",
+        ar: "يَضْمَنُ حَجْزُ غُرَفِ الدِّرَاسَةِ الجَمَاعِيَّةِ مُسْبَقًا مِسَاحَةَ عَمَلٍ هَادِئَةً خِلَالَ مَوْسِمِ الاِمْتِحَانَاتِ.",
+      },
+      {
+        context: "Notification Alert",
+        en: "An automated email notifies patrons when a reserved volume is ready for pickup.",
+        ar: "يُخْطِرُ بَرِيدٌ إِلِكْتُرُونِيٌّ آلِيٌّ الزُّوَّارَ عِنْدَمَا يُصْبِحُ الكِتَابُ المَحْجُوزُ جَاهِزًا لِلِاسْتِلَامِ.",
+      },
+    ],
+    exampleSentence:
+      "He logged into his library account to practice reserving the newest bestseller before it arrived.",
+    exampleArabic:
+      "سَجَّلَ الدُّخُولَ إِلَى حِسَابِهِ المَكْتَبِيِّ لِحَجْزِ أَحْدَثِ الكُتُبِ رَوَاجًا قَبْلَ وُصُولِهَا.",
+  },
+  photocopying: {
+    id: "photocopying",
+    arabic: "تَصْوِيرُ المُسْتَنَدَات (نَسْخُ الأَوْرَاق)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfoʊtoʊˌkɑːpiɪŋ",
+    pronunciationTip: "Pronounce 'FOH-toh-kah-pee-ing' (/ˈfoʊ.toʊˌkɑː.pi.ɪŋ/).",
+    collocations: [
+      "photocopying machine",
+      "photocopying excerpts",
+      "guidelines on photocopying",
+      "photocopying research notes",
+      "card for photocopying",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "make copies of",
+        meaning: "duplicate pages on a copying machine",
+        arabic: "يَنْسَخُ أَوْرَاقًا",
+        example: "He will make copies of the chapter for his study group.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Document Duplication",
+        en: "She was photocopying two important map pages from a reference atlas for her geography report.",
+        ar: "كَانَتْ تَقُومُ بِتَصْوِيرِ صَفْحَتَيْ خَرِيطَةٍ هَامَّتَيْنِ مِنْ أَطْلَسٍ مَرْجِعِيٍّ لِتَقْرِيرِهَا.",
+      },
+      {
+        context: "Copyright Notice",
+        en: "Clear copyright guidelines are posted beside the photocopying station to guide fair use.",
+        ar: "تُنْشَرُ إِرْشَادَاتُ حُقُوقِ النَّشْرِ بِجَانِبِ مَحَطَّةِ التَّصْوِيرِ لِتَوْجِيهِ الاِسْتِخْدَامِ العَادِلِ.",
+      },
+      {
+        context: "Self-Service",
+        en: "Patrons swipe their prepaid student cards to operate self-service photocopying units.",
+        ar: "يُمَرِّرُ الرُّوَّادُ بِطَاقَاتِهِمُ الطُّلَّابِيَّةَ مَدْفُوعَةَ القِيمَةِ لِتَشْغِيلِ آلَاتِ التَّصْوِيرِ ذَاتِيَّةِ الخِدْمَةِ.",
+      },
+    ],
+    exampleSentence:
+      "She was photocopying two important map pages from a reference atlas for her geography report.",
+    exampleArabic:
+      "كَانَتْ تَقُومُ بِتَصْوِيرِ صَفْحَتَيْ خَرِيطَةٍ هَامَّتَيْنِ مِنْ أَطْلَسٍ مَرْجِعِيٍّ لِتَقْرِيرِهَا.",
+  },
+  typing: {
+    id: "typing",
+    arabic: "الكِتَابَةُ عَلَى لَوْحَةِ المَفَاتِيح (الطِّبَاعَةُ رَقْمِيًّا)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtaɪpɪŋ",
+    pronunciationTip: "Pronounce 'TY-ping' (/ˈtaɪ.pɪŋ/).",
+    collocations: [
+      "typing on a keyboard",
+      "fast typing speed",
+      "typing up an essay",
+      "typing quiet room",
+      "touch typing",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "type up",
+        meaning: "produce a clean digital document from handwritten notes",
+        arabic: "يَكْتُبُ رَقْمِيًّا عَلَى الحَاسُوب",
+        example: "He stayed late in the lab to type up his laboratory findings.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Computer Lab",
+        en: "The soft rhythmic click of typing echoed gently through the designated digital media room.",
+        ar: "تَرَدَّدَتْ طَقْطَقَةُ الكِتَابَةِ الإِيقَاعِيَّةُ النَّاعِمَةُ عَلَى المَفَاتِيحِ فِي غُرْفَةِ الوَسَائِطِ الرَّقْمِيَّةِ.",
+      },
+      {
+        context: "Essay Drafting",
+        en: "She spent the morning typing her final thesis draft on the library desktop terminal.",
+        ar: "أَمْضَتِ الصَّبَاحَ فِي كِتَابَةِ مُسَوَّدَةِ أُطْرُوحَتِهَا النِّهَائِيَّةِ عَلَى حَاسُوبِ المَكْتَبَةِ.",
+      },
+      {
+        context: "Silent Keyboards",
+        en: "Low-profile silent keyboards keep typing noise to a minimum in communal study areas.",
+        ar: "تُقَلِّلُ لَوْحَاتُ المَفَاتِيحِ الصَّامِتَةُ صَوْتَ النَّقْرِ إِلَى أَدْنَى حَدٍّ فِي مَنَاطِقِ الدِّرَاسَةِ المُشْتَرَكَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The soft rhythmic click of typing echoed gently through the designated digital media room.",
+    exampleArabic:
+      "تَرَدَّدَتْ طَقْطَقَةُ الكِتَابَةِ الإِيقَاعِيَّةُ النَّاعِمَةُ عَلَى المَفَاتِيحِ فِي غُرْفَةِ الوَسَائِطِ الرَّقْمِيَّةِ.",
+  },
+  whispering: {
+    id: "whispering",
+    arabic: "الهَمْس (التَّحَدُّثُ بِصَوْتٍ خَافِت)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɪspərɪŋ",
+    pronunciationTip: "Pronounce 'WHIS-per-ing' (/ˈwɪs.pər.ɪŋ/).",
+    collocations: [
+      "quiet whispering",
+      "whispering in the library",
+      "soft whispering voices",
+      "keep whispering",
+      "no loud talking only whispering",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "keep down",
+        meaning: "maintain low voice volume",
+        arabic: "يَخْفِضُ صَوْتَهُ",
+        example: "Please keep your voice down to a soft whisper in the reading hall.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Library Etiquette",
+        en: "The two students practiced whispering so they would not disturb other patrons studying nearby.",
+        ar: "تَدَرَّبَ الطَّالِبَانِ عَلَى الهَمْسِ حَتَّى لَا يُزْعِجَا الزُّوَّارَ الآخَرِينَ الَّذِينَ يَدْرُسُونَ بِالقُرْبِ مِنْهُمَا.",
+      },
+      {
+        context: "Quiet Atmosphere",
+        en: "A peaceful atmosphere filled the reading hall with only soft whispering audible in the corners.",
+        ar: "سَادَ جَوٌّ سِلْمِيٌّ فِي قَاعَةِ القِرَاءَةِ مَعَ سَمَاعِ هَمَسَاتٍ خَافِتَةٍ فَقَطْ فِي الزَّوَايَا.",
+      },
+      {
+        context: "Cooperative Work",
+        en: "Partners shared research insights through gentle whispering at their corner desk.",
+        ar: "تَشَارَكَ الزَّمِيلَانِ مَعْلُومَاتِ البَحْثِ بِهَمْسٍ لَطِيفٍ عِنْدَ مَكْتَبِهِمَا الجَانِبِيِّ.",
+      },
+    ],
+    exampleSentence:
+      "The two students practiced whispering so they would not disturb other patrons studying nearby.",
+    exampleArabic:
+      "تَدَرَّبَ الطَّالِبَانِ عَلَى الهَمْسِ حَتَّى لَا يُزْعِجَا الزُّوَّارَ الآخَرِينَ الَّذِينَ يَدْرُسُونَ بِالقُرْبِ مِنْهُمَا.",
+  },
+  "library-card": {
+    id: "library-card",
+    arabic: "بِطَاقَةُ المَكْتَبَة (بِطَاقَةُ العُضْوِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈlaɪbrɛri kɑːrd",
+    pronunciationTip: "Pronounce 'ly-BRAIR-ee kard' (/ˈlaɪ.brɛr.i kɑːrd/).",
+    collocations: [
+      "scan a library card",
+      "valid library card",
+      "sign up for a library card",
+      "plastic library card",
+      "library card barcode",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "swipe at",
+        meaning: "scan card across a digital reader",
+        arabic: "يُمَرِّرُ بِطَاقَةَ المَكْتَبَة",
+        example: "Swipe your library card at the self-checkout kiosk to borrow your books.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Membership Card",
+        en: "She presented her plastic library card at the checkout counter to borrow five mystery novels.",
+        ar: "قَدَّمَتْ بِطَاقَةَ المَكْتَبَةِ البَلَاسْتِيكِيَّةَ عِنْدَ كَاوَنْتَر الاِسْتِعَارَةِ لِاسْتِعَارَةِ خَمْسِ رِوَايَاتٍ غَامِضَةٍ.",
+      },
+      {
+        context: "Barcode ID",
+        en: "Each library card has a unique barcode and identification number linked to user records.",
+        ar: "تَمْتَلِكُ كُلُّ بِطَاقَةِ مَكْتَبَةٍ بَارْكُودًا فَرِيدًا وَرَقْمَ تَعْرِيفٍ مُرْتَبِطًا بِسِجِلِّ المُسْتَخْدِمِ.",
+      },
+      {
+        context: "Digital Access",
+        en: "Your library card number grants free access to thousands of online research databases.",
+        ar: "يَمْنَحُكَ رَقْمُ بِطَاقَةِ المَكْتَبَةِ وُصُولًا مَجَّانِيًّا إِلَى آلَافِ قَوَاعِدِ البَيَانَاتِ البَحْثِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "She presented her plastic library card at the checkout counter to borrow five mystery novels.",
+    exampleArabic:
+      "قَدَّمَتْ بِطَاقَةَ المَكْتَبَةِ البَلَاسْتِيكِيَّةَ عِنْدَ كَاوَنْتَر الاِسْتِعَارَةِ لِاسْتِعَارَةِ خَمْسِ رِوَايَاتٍ غَامِضَةٍ.",
+  },
+  "barcode-scanner": {
+    id: "barcode-scanner",
+    arabic: "قَارِئُ البَارْكُود (مَاسِحُ الرُّمُوزِ الشَّرِيطِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbɑːrkoʊd ˌskænər",
+    pronunciationTip: "Pronounce 'BAR-kohd SKAN-er' (/ˈbɑːr.koʊd ˌskæn.ər/).",
+    collocations: [
+      "handheld barcode scanner",
+      "beep of barcode scanner",
+      "laser barcode scanner",
+      "aim the scanner",
+      "circulation scanner",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "scan in",
+        meaning: "register items digitally using laser reader",
+        arabic: "يَمْسَحُ البَارْكُودَ ضَوْئِيًّا",
+        example: "The librarian scanned in each book with a quick red laser beam.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Circulation Desk",
+        en: "The librarian aimed the red laser barcode scanner at the book's back cover with a cheerful beep.",
+        ar: "وَجَّهَتْ أَمِينَةُ المَكْتَبَةِ قَارِئَ البَارْكُودِ اللَّيْزَرِيَّ الأَحْمَرَ نَحْوَ غِلَافِ الكِتَابِ مَعَ رَنَّةٍ لَطِيفَةٍ.",
+      },
+      {
+        context: "Automated Tracking",
+        en: "A handheld barcode scanner instantly records inventory data into the circulation software.",
+        ar: "يُسَجِّلُ مَاسِحُ البَارْكُودِ اليَدَوِيُّ بَيَانَاتِ الجَرْدِ فَوْرِيًّا فِي بَرْنَامَجِ الإِعَارَةِ.",
+      },
+      {
+        context: "Self-Checkout",
+        en: "Point the scanner light at your card barcode to begin borrowing your selections.",
+        ar: "وَجِّهْ ضَوْءَ المَاسِحِ نَحْوَ بَارْكُودِ بِطَاقَتِكَ لِبَدْءِ اسْتِعَارَةِ مُخْتَارَاتِكَ.",
+      },
+    ],
+    exampleSentence:
+      "The librarian aimed the red laser barcode scanner at the book's back cover with a cheerful beep.",
+    exampleArabic:
+      "وَجَّهَتْ أَمِينَةُ المَكْتَبَةِ قَارِئَ البَارْكُودِ اللَّيْزَرِيَّ الأَحْمَرَ نَحْوَ غِلَافِ الكِتَابِ مَعَ رَنَّةٍ لَطِيفَةٍ.",
+  },
+  stamp: {
+    id: "stamp",
+    arabic: "خَاتَمُ التَّارِيخ (خَتْمُ الإِعَادَة)",
+    partOfSpeech: "noun",
+    phonetic: "stæmp",
+    pronunciationTip: "Short 'a' sound /æ/: 'STAMP' (/stæmp/).",
+    collocations: [
+      "due date stamp",
+      "rubber stamp",
+      "ink stamp pad",
+      "stamp the slip",
+      "date stamp",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "stamp with",
+        meaning: "imprint a date or logo with an inked block",
+        arabic: "يَخْتِمُ بِـ",
+        example: "She stamped the inside slip with the return due date.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Due Date Tracking",
+        en: "The librarian pressed the adjustable rubber date stamp firmly onto the checkout slip inside the cover.",
+        ar: "ضَغَطَتْ أَمِينَةُ المَكْتَبَةِ خَاتَمَ التَّارِيخِ المَطَّاطِيَّ القَابِلَ لِلتَّعْدِيلِ بِإِحْكَامٍ عَلَى قَسِيمَةِ الاِسْتِعَارَةِ.",
+      },
+      {
+        context: "Inked Impression",
+        en: "A fresh ink pad produces crisp blue date stamps indicating when materials must be returned.",
+        ar: "تُنْتِجُ وِسَادَةُ الحِبْرِ الجَدِيدَةُ أَخْتَامَ تَارِيخٍ زَرْقَاءَ وَاضِحَةً تُحَدِّدُ مَوْعِدَ إِعَادَةِ الكُتُبِ.",
+      },
+      {
+        context: "Library Heritage",
+        en: "Traditional libraries still use customized embossing stamps to mark book ownership on title pages.",
+        ar: "لَا تَزَالُ المَكْتَبَاتُ التَّقْلِيدِيَّةُ تَسْتَخْدِمُ أَخْتَامًا نَافِرَةً خَاصَّةً لِإِثْبَاتِ مِلْكِيَّةِ الكُتُبِ.",
+      },
+    ],
+    exampleSentence:
+      "The librarian pressed the adjustable rubber date stamp firmly onto the checkout slip inside the cover.",
+    exampleArabic:
+      "ضَغَطَتْ أَمِينَةُ المَكْتَبَةِ خَاتَمَ التَّارِيخِ المَطَّاطِيَّ القَابِلَ لِلتَّعْدِيلِ بِإِحْكَامٍ عَلَى قَسِيمَةِ الاِسْتِعَارَةِ.",
+  },
+  bookmark: {
+    id: "bookmark",
+    arabic: "فَاصِلُ كِتَاب (عَلَامَةُ قِرَاءَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbʊkmɑːrk",
+    pronunciationTip: "Pronounce 'BOOK-mark' (/ˈbʊk.mɑːrk/).",
+    collocations: [
+      "ribbon bookmark",
+      "leather bookmark",
+      "place a bookmark",
+      "colorful bookmark",
+      "tassel bookmark",
+      "magnetic bookmark",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "mark one's place",
+        meaning: "save reading progress with an inserted slip",
+        arabic: "يُحَدِّدُ مَوْضِعَ القِرَاءَة",
+        example: "Slide a ribbon bookmark between the pages to mark your place.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Reading Progress",
+        en: "She slipped an embroidered fabric bookmark between pages seventy and seventy-one before closing the novel.",
+        ar: "دَسَّتْ فَاصِلَ كِتَابٍ قُمَاشِيًّا مُطَرَّزًا بَيْنَ الصَّفْحَتَيْنِ السَّبْعِينَ وَالإِحْدَى وَالسَّبْعِينَ قَبْلَ إِغْلَاقِ الرِّوَايَةِ.",
+      },
+      {
+        context: "Book Care",
+        en: "Using a slender paper bookmark protects book spines from damage caused by dog-earing page corners.",
+        ar: "يَحْمِي اسْتِخْدَامُ فَاصِلِ كِتَابٍ رَقِيقٍ كُعُوبَ الكُتُبِ مِنَ التَّلَفِ النَّاتِجِ عَنْ طَيِّ زَوَايَا الصَّفَحَاتِ.",
+      },
+      {
+        context: "Souvenirs",
+        en: "The gift shop sells handcrafted leather bookmarks adorned with literary quotes.",
+        ar: "يَبِيعُ مَتْجَرُ الهَدَايَا فَهَارِسَ قِرَاءَةٍ جِلْدِيَّةً مَصْنُوعَةً يَدَوِيًّا مُزَيَّنَةً بِاقْتِبَاسَاتٍ أَدَبِيَّةٍ.",
+      },
+    ],
+    exampleSentence:
+      "She slipped an embroidered fabric bookmark between pages seventy and seventy-one before closing the novel.",
+    exampleArabic:
+      "دَسَّتْ فَاصِلَ كِتَابٍ قُمَاشِيًّا مُطَرَّزًا بَيْنَ الصَّفْحَتَيْنِ السَّبْعِينَ وَالإِحْدَى وَالسَّبْعِينَ قَبْلَ إِغْلَاقِ الرِّوَايَةِ.",
+  },
+  "book-cover": {
+    id: "book-cover",
+    arabic: "غِلَافُ كِتَاب",
+    partOfSpeech: "noun",
+    phonetic: "ˈbʊk kʌvər",
+    pronunciationTip: "Pronounce 'BOOK kuv-er' (/ˈbʊk ˌkʌv.ər/).",
+    collocations: [
+      "hardcover book cover",
+      "paperback cover",
+      "protective book cover",
+      "dust jacket cover",
+      "illustrated book cover",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wrap with",
+        meaning: "protect with plastic film jacket",
+        arabic: "يُغَلِّفُ بِغِلَافٍ حَامٍ",
+        example: "Librarians wrap new hardcover books with clear plastic protective covers.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Visual Design",
+        en: "The illustrated book cover depicted a glowing enchanted castle under a starry night sky.",
+        ar: "صَوَّرَ غِلَافُ الكِتَابِ المُزَيَّنُ بِالرُّسُومِ قَلْعَةً سِحْرِيَّةً مُتَوَهِّجَةً تَحْتَ سَمَاءٍ لَيْلِيَّةٍ مُرَصَّعَةٍ بِالنُّجُومِ.",
+      },
+      {
+        context: "Durability",
+        en: "Clear plastic covers protect library books against spills, tears, and everyday handling.",
+        ar: "تَحْمِي الأَغْلِفَةُ البَلَاسْتِيكِيَّةُ الشَّفَّافَةُ كُتُبَ المَكْتَبَةِ مِنَ السَّوَائِلِ وَالتَّمَزُّقِ وَالِاسْتِعْمَالِ اليَوْمِيِّ.",
+      },
+      {
+        context: "First Impressions",
+        en: "An eye-catching cover design draws readers to pick up novels from the featured showcase.",
+        ar: "يَجْذِبُ تَصْمِيمُ الغِلَافِ اللَّافِتُ لِلنَّظَرِ القُرَّاءَ لِتَنَاوُلِ الرِّوَايَاتِ مِنْ مِنْصَّةِ العَرْضِ الرَّئِيسِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "The illustrated book cover depicted a glowing enchanted castle under a starry night sky.",
+    exampleArabic:
+      "صَوَّرَ غِلَافُ الكِتَابِ المُزَيَّنُ بِالرُّسُومِ قَلْعَةً سِحْرِيَّةً مُتَوَهِّجَةً تَحْتَ سَمَاءٍ لَيْلِيَّةٍ مُرَصَّعَةٍ بِالنُّجُومِ.",
+  },
+  label: {
+    id: "label",
+    arabic: "مُلْصَقُ تَصْنِيف (مُلْصَقُ كَعْبِ الكِتَاب)",
+    partOfSpeech: "noun",
+    phonetic: "ˈleɪbəl",
+    pronunciationTip: "Pronounce 'LAY-bul' (/ˈleɪ.bəl/).",
+    collocations: [
+      "spine label",
+      "call number label",
+      "barcode label",
+      "adhesive label",
+      "color-coded label",
+      "print a label",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "stick on",
+        meaning: "affix identifying tag to book spine",
+        arabic: "يُلْصِقُ بَطَاقَةَ التَّصْنِيف",
+        example: "Stick a white call number label onto the lower spine of the cataloged book.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Spine Numbering",
+        en: "The white adhesive label on the book's spine displayed its Dewey Decimal classification number.",
+        ar: "عَرَضَ المُلْصَقُ اللَّاصِقُ الأَبْيَضُ عَلَى كَعْبِ الكِتَابِ رَقْمَ تَصْنِيفِهِ وِفْقَ نِظَامِ دِيُوِي العَشْرِيِّ.",
+      },
+      {
+        context: "Category Identification",
+        en: "Color-coded genre labels help library visitors spot mysteries, biographies, and fantasies quickly.",
+        ar: "تُسَاعِدُ مُلْصَقَاتُ التَّصْنِيفِ المُلَوَّنَةُ رُوَّادَ المَكْتَبَةِ فِي تَمْيِيزِ كُتُبِ الأَلْغَازِ وَالسِّيَرِ بِسُرْعَةٍ.",
+      },
+      {
+        context: "Shelf Accuracy",
+        en: "Volunteers verify that spine labels match shelf coordinates to keep aisles orderly.",
+        ar: "يَتَأَكَّدُ المُتَطَوِّعُونَ مِنْ مُطَابَقَةِ مُلْصَقَاتِ الكُعُوبِ لِإِحْدَاثِيَّاتِ الرُّفُوفِ لِلْحِفَاظِ عَلَى نِظَامِ المَمَرَّاتِ.",
+      },
+    ],
+    exampleSentence:
+      "The white adhesive label on the book's spine displayed its Dewey Decimal classification number.",
+    exampleArabic:
+      "عَرَضَ المُلْصَقُ اللَّاصِقُ الأَبْيَضُ عَلَى كَعْبِ الكِتَابِ رَقْمَ تَصْنِيفِهِ وِفْقَ نِظَامِ دِيُوِي العَشْرِيِّ.",
+  },
+  catalog: {
+    id: "catalog",
+    arabic: "فِهْرِسُ المَكْتَبَة (دَلِيلُ البَحْثِ المَكْتَبِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkætəlɔːɡ",
+    pronunciationTip: "Pronounce 'KAT-uh-log' (/ˈkæt.ə.lɔːɡ/).",
+    collocations: [
+      "online library catalog",
+      "search the catalog",
+      "card catalog",
+      "public access catalog",
+      "catalog database",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "look through",
+        meaning: "query the library database",
+        arabic: "يَبْحَثُ فِي الفِهْرِس",
+        example:
+          "Look through the digital catalog to find which branch holds the reference volume.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Online Search",
+        en: "She typed the author's name into the online library catalog to find the exact call number and shelf location.",
+        ar: "كَتَبَتِ اسْمَ المُؤَلِّفِ فِي فِهْرِسِ المَكْتَبَةِ الإِلِكْتُرُونِيِّ لِمَعْرِفَةِ رَقْمِ التَّصْنِيفِ وَمَوْقِعِ الرَّفِّ بِدِقَّةٍ.",
+      },
+      {
+        context: "Historical Card System",
+        en: "Before computer databases, libraries used wooden cabinets filled with thousands of paper card catalogs.",
+        ar: "قَبْلَ قَوَاعِدِ البَيَانَاتِ الإِلِكْتُرُونِيَّةِ، اسْتَخْدَمَتِ المَكْتَبَاتُ خَزَائِنَ خَشَبِيَّةً مَلِيئَةً بِبِطَاقَاتِ الفَهْرَسَةِ الوَرَقِيَّةِ.",
+      },
+      {
+        context: "Branch Inventory",
+        en: "The unified municipal catalog shows real-time book availability across all city library branches.",
+        ar: "يُظْهِرُ الفِهْرِسُ البَلَدِيُّ المُوَحَّدُ تَوَفُّرَ الكُتُبِ فِي الوَقْتِ الفِعْلِيِّ عَبْرَ جَمِيعِ فُرُوعِ مَكْتَبَاتِ المَدِينَةِ.",
+      },
+    ],
+    exampleSentence:
+      "She typed the author's name into the online library catalog to find the exact call number and shelf location.",
+    exampleArabic:
+      "كَتَبَتِ اسْمَ المُؤَلِّفِ فِي فِهْرِسِ المَكْتَبَةِ الإِلِكْتُرُونِيِّ لِمَعْرِفَةِ رَقْمِ التَّصْنِيفِ وَمَوْقِعِ الرَّفِّ بِدِقَّةٍ.",
+  },
+  scanner: {
+    id: "scanner",
+    arabic: "مَاسِحٌ ضَوْئِيّ (سْكَانَر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈskænər",
+    pronunciationTip: "Pronounce 'SKAN-er' (/ˈskæn.ər/).",
+    collocations: [
+      "flatbed scanner",
+      "high-resolution scanner",
+      "document scanner",
+      "book scanner",
+      "digitize with a scanner",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "scan in",
+        meaning: "convert paper documents into digital images",
+        arabic: "يَمْسَحُ ضَوْئِيًّا لِلرَّقْمَنَة",
+        example:
+          "Scan in the antique manuscript pages carefully using the overhead flatbed scanner.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Digital Archiving",
+        en: "The researcher placed a fragile historical map face-down on the high-resolution flatbed scanner.",
+        ar: "وَضَعَ البَاحِثُ خَرِيطَةً تَارِيخِيَّةً هَشَّةً عَلَى المَاسِحِ الضَّوْئِيِّ المُسَطَّحِ عَالِي الدِّقَّةِ.",
+      },
+      {
+        context: "Student Workstation",
+        en: "A public scanner allows students to convert handwritten study notes into searchable PDF documents.",
+        ar: "يُتِيحُ المَاسِحُ الضَّوْئِيُّ العَامُّ لِلطُّلَّابِ تَحْوِيلَ مُلَاحَظَاتِ الدِّرَاسَةِ المَكْتُوبَةِ يَدَوِيًّا إِلَى مُسْتَنَدَاتِ PDF.",
+      },
+      {
+        context: "Specialized Book Scanners",
+        en: "Overhead book scanners capture open volumes without applying damaging pressure to book bindings.",
+        ar: "تَلْتَقِطُ مَاسِحَاتُ الكُتُبِ العُلْوِيَّةُ صُوَرَ الكُتُبِ المَفْتُوحَةِ دُونَ الضَّغْطِ عَلَى تَجْلِيدِهَا.",
+      },
+    ],
+    exampleSentence:
+      "The researcher placed a fragile historical map face-down on the high-resolution flatbed scanner.",
+    exampleArabic:
+      "وَضَعَ البَاحِثُ خَرِيطَةً تَارِيخِيَّةً هَشَّةً عَلَى المَاسِحِ الضَّوْئِيِّ المُسَطَّحِ عَالِي الدِّقَّةِ.",
+  },
+  assistant: {
+    id: "assistant",
+    arabic: "مُسَاعِدُ أَمِينِ المَكْتَبَة",
+    partOfSpeech: "noun",
+    phonetic: "əˈsɪstənt",
+    pronunciationTip: "Pronounce 'uh-SIS-tunt' (/əˈsɪs.tənt/).",
+    collocations: [
+      "library assistant",
+      "helpful assistant",
+      "circulation assistant",
+      "ask the assistant",
+      "assistant duties",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "assist with",
+        meaning: "provide direct aid to patrons",
+        arabic: "يُسَاعِدُ فِي",
+        example: "The library assistant will assist with printing and shelf searches.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Staff Support",
+        en: "The friendly library assistant helped patrons check out books and sorted newly returned media.",
+        ar: "سَاعَدَ مُسَاعِدُ المَكْتَبَةِ الوَدُودُ الزُّوَّارَ فِي اسْتِعَارَةِ الكُتُبِ وَفَرَزَ المَوَادَّ المُعَادَةَ حَدِيثًا.",
+      },
+      {
+        context: "Shelf Maintenance",
+        en: "Assistants wheel book carts through the aisles to ensure every volume is in exact shelf order.",
+        ar: "يَدْفَعُ المُسَاعِدُونَ عَرَبَاتِ الكُتُبِ فِي المَمَرَّاتِ لِضَمَانِ تَرْتِيبِ كُلِّ مُجَلَّدٍ بِدِقَّةٍ عَلَى الرَّفِّ.",
+      },
+      {
+        context: "Event Setup",
+        en: "She arranged seating and distributed handouts for the evening guest author lecture.",
+        ar: "رَتَّبَتِ المَقَاعِدَ وَوَزَّعَتِ المَنْشُورَاتِ لِمُحَاضَرَةِ المُؤَلِّفِ الضَّيْفِ المَسَائِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "The friendly library assistant helped patrons check out books and sorted newly returned media.",
+    exampleArabic:
+      "سَاعَدَ مُسَاعِدُ المَكْتَبَةِ الوَدُودُ الزُّوَّارَ فِي اسْتِعَارَةِ الكُتُبِ وَفَرَزَ المَوَادَّ المُعَادَةَ حَدِيثًا.",
+  },
+  reader: {
+    id: "reader",
+    arabic: "قَارِئ (مُطَالِع)",
+    partOfSpeech: "noun",
+    phonetic: "ˈriːdər",
+    pronunciationTip: "Pronounce 'REE-der' (/ˈriː.dər/).",
+    collocations: [
+      "avid reader",
+      "young reader",
+      "library reader",
+      "dedicated reader",
+      "voracious reader",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "immerse in",
+        meaning: "become deeply absorbed in literary text",
+        arabic: "يَنْغَمِسُ فِي القِرَاءَة",
+        example: "The avid reader immersed herself in the fantasy trilogy for hours.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Quiet Patron",
+        en: "An avid reader sat by the bay window with a cup of tea, deeply absorbed in her historical novel.",
+        ar: "جَلَسَتْ قَارِئَةٌ شَغُوفَةٌ بِجَانِبِ النَّافِذَةِ البَارِزَةِ مَعَ كُوبِ شَايٍ، مُنْغَمِسَةً تَمَامًا فِي رِوَايَتِهَا التَّارِيخِيَّةِ.",
+      },
+      {
+        context: "Public Space",
+        en: "The quiet hall welcomes readers of all ages seeking knowledge, inspiration, and solace.",
+        ar: "تُرَحِّبُ القَاعَةُ الهَادِئَةُ بِالقُرَّاءِ مِنْ جَمِيعِ الأَعْمَارِ البَاحِثِينَ عَنِ المَعْرِفَةِ وَالإِلْهَامِ.",
+      },
+      {
+        context: "Community Reviews",
+        en: "Local readers write thoughtful recommendations on cards displayed beside the entrance.",
+        ar: "يَكْتُبُ القُرَّاءُ المَحَلِّيُّونَ تَوْصِيَاتٍ قَيِّمَةً عَلَى بِطَاقَاتٍ مَعْرُوضَةٍ بِجَانِبِ المَدْخَلِ.",
+      },
+    ],
+    exampleSentence:
+      "An avid reader sat by the bay window with a cup of tea, deeply absorbed in her historical novel.",
+    exampleArabic:
+      "جَلَسَتْ قَارِئَةٌ شَغُوفَةٌ بِجَانِبِ النَّافِذَةِ البَارِزَةِ مَعَ كُوبِ شَايٍ، مُنْغَمِسَةً تَمَامًا فِي رِوَايَتِهَا التَّارِيخِيَّةِ.",
+  },
+  researcher: {
+    id: "researcher",
+    arabic: "بَاحِث (دَارِسٌ أَكَادِيمِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈriːsɜːrtʃər",
+    pronunciationTip: "Pronounce 'REE-ser-cher' (/ˈriː.sɜːr.tʃər/).",
+    collocations: [
+      "academic researcher",
+      "historical researcher",
+      "field researcher",
+      "university researcher",
+      "independent researcher",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "dig into",
+        meaning: "investigate historical records thoroughly",
+        arabic: "يَنْبُشُ وَيَبْحَثُ فِي السِّجِلَّات",
+        example:
+          "The researcher dug into old municipal records to trace the city's founding families.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Scholarly Investigation",
+        en: "The academic researcher spent weeks examining historical microfilms and census records in the archives.",
+        ar: "أَمْضَى البَاحِثُ الأَكَادِيمِيُّ أَسَابِيعَ فِي فَحْصِ المِيكْرُوفِيلْمَاتِ التَّارِيخِيَّةِ وَسِجِلَّاتِ التَّعْدَادِ فِي الأَرْشِيفِ.",
+      },
+      {
+        context: "Data Synthesis",
+        en: "Researchers utilize academic databases to cross-reference scientific citations across journals.",
+        ar: "يَسْتَخْدِمُ البَاحِثُونَ قَوَاعِدَ البَيَانَاتِ الأَكَادِيمِيَّةَ لِمُطَابَقَةِ الاِقْتِبَاسَاتِ العِلْمِيَّةِ عَبْرَ المَجَلَّاتِ.",
+      },
+      {
+        context: "Library Fellowships",
+        en: "Visiting researchers receive dedicated study carrels and priority access to rare collections.",
+        ar: "يَحْصُلُ البَاحِثُونَ الزَّائِرُونَ عَلَى مَقَاصِيرِ دِرَاسَةٍ مُخَصَّصَةٍ وَوُصُولٍ أَوْلَوِيٍّ لِلْمَجْمُوعَاتِ النَّادِرَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The academic researcher spent weeks examining historical microfilms and census records in the archives.",
+    exampleArabic:
+      "أَمْضَى البَاحِثُ الأَكَادِيمِيُّ أَسَابِيعَ فِي فَحْصِ المِيكْرُوفِيلْمَاتِ التَّارِيخِيَّةِ وَسِجِلَّاتِ التَّعْدَادِ فِي الأَرْشِيفِ.",
+  },
+  author: {
+    id: "author",
+    arabic: "مُؤَلِّف (كَاتِب)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɔːθər",
+    pronunciationTip: "Pronounce 'AW-ther' (/ˈɔː.θər/).",
+    collocations: [
+      "published author",
+      "bestselling author",
+      "author reading",
+      "meet the author",
+      "author signature",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sign for",
+        meaning: "autograph copies of books for readers",
+        arabic: "يُوَقِّعُ الكُتُبَ لِلْقُرَّاء",
+        example: "The guest author signed books for eager fans after the auditorium reading.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Book Signing Event",
+        en: "The bestselling author gave an inspiring talk in the library auditorium and signed copies of her new book.",
+        ar: "أَلْقَتِ المُؤَلِّفَةُ صَاحِبَةُ الكُتُبِ الأَكْثَرِ مَبِيعًا كَلِمَةً مُلْهِمَةً فِي قَاعَةِ المَكْتَبَةِ وَوَقَّعَتْ نُسَخَ كِتَابِهَا الجَدِيدِ.",
+      },
+      {
+        context: "Creative Process",
+        en: "Many acclaimed authors conduct their background historical research in public library reading rooms.",
+        ar: "يُجْرِي العَدِيدُ مِنَ الكُتَّابِ المَرْمُوقِينَ أَبْحَاثَهُمُ التَّارِيخِيَّةَ فِي قَاعَاتِ قِرَاءَةِ المَكْتَبَاتِ العَامَّةِ.",
+      },
+      {
+        context: "Local Showcase",
+        en: "A special front display celebrates published works written by prominent local authors.",
+        ar: "يَحْتَفِي مَعْرِضٌ أَمَامِيٌّ خَاصٌّ بِالأَعْمَالِ المَنْشُورَةِ الَّتِي كَتَبَهَا مُؤَلِّفُونَ مَحَلِّيُّونَ بَارِزُونَ.",
+      },
+    ],
+    exampleSentence:
+      "The bestselling author gave an inspiring talk in the library auditorium and signed copies of her new book.",
+    exampleArabic:
+      "أَلْقَتِ المُؤَلِّفَةُ صَاحِبَةُ الكُتُبِ الأَكْثَرِ مَبِيعًا كَلِمَةً مُلْهِمَةً فِي قَاعَةِ المَكْتَبَةِ وَوَقَّعَتْ نُسَخَ كِتَابِهَا الجَدِيدِ.",
+  },
+  storyteller: {
+    id: "storyteller",
+    arabic: "حَكَوَاتِيّ (رَاوِي القِصَص)",
+    partOfSpeech: "noun",
+    phonetic: "ˈstɔːritɛlər",
+    pronunciationTip: "Pronounce 'STOR-ee-tel-er' (/ˈstɔːr.iˌtɛl.ər/).",
+    collocations: [
+      "gifted storyteller",
+      "storyteller circle",
+      "listen to the storyteller",
+      "traditional storyteller",
+      "children's storyteller",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "act out",
+        meaning: "perform character voices and gestures during narration",
+        arabic: "يُجَسِّدُ الشَّخْصِيَّاتِ فِي الحِكَايَة",
+        example:
+          "The dynamic storyteller acted out the dragon and wizard voices to delight the children.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Children's Story Hour",
+        en: "The expressive storyteller captivated the young audience with animated character voices and fun puppets.",
+        ar: "سَحَرَ الحَكَوَاتِيُّ المُعَبِّرُ الجُمْهُورَ الصَّغِيرَ بِأَصْوَاتِ شَخْصِيَّاتٍ حَيَوِيَّةٍ وَدُمًى مُسَلِّيَةٍ.",
+      },
+      {
+        context: "Oral Tradition",
+        en: "Traditional storytellers pass down timeless folk tales, cultural lore, and moral wisdom across generations.",
+        ar: "يَنْقُلُ رُوَاةُ القِصَصِ التَّقْلِيدِيُّونَ الحِكَايَاتِ الشَّعْبِيَّةَ الخَالِدَةَ وَالحِكَمَ عَبْرَ الأَجْيَالِ.",
+      },
+      {
+        context: "Library Weekend",
+        en: "Every Saturday morning, a guest storyteller gathers toddlers on the rainbow rug for tales and songs.",
+        ar: "كُلَّ صَبَاحِ سَبْتٍ، يَجْمَعُ حَكَوَاتِيٌّ ضَيْفٌ الأَطْفَالَ عَلَى بِسَاطِ قَوْسِ قُزَحَ لِلْحِكَايَاتِ وَالأَنَاشِيدِ.",
+      },
+    ],
+    exampleSentence:
+      "The expressive storyteller captivated the young audience with animated character voices and fun puppets.",
+    exampleArabic:
+      "سَحَرَ الحَكَوَاتِيُّ المُعَبِّرُ الجُمْهُورَ الصَّغِيرَ بِأَصْوَاتِ شَخْصِيَّاتٍ حَيَوِيَّةٍ وَدُمًى مُسَلِّيَةٍ.",
+  },
+  cleaner: {
+    id: "cleaner",
+    arabic: "عَامِلُ نَظَافَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈkliːnər",
+    pronunciationTip: "Pronounce 'KLEE-ner' (/ˈkliː.nər/).",
+    collocations: [
+      "library cleaner",
+      "evening cleaner",
+      "cleaner vacuuming floors",
+      "hardworking cleaner",
+      "cleaning staff",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "tidy up",
+        meaning: "straighten furniture and dispose of waste",
+        arabic: "يُرَتِّبُ وَيُنَظِّف",
+        example: "The cleaner tidied up the reading tables and emptied waste bins after closing.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Evening Facility Care",
+        en: "After the library closed for the evening, the diligent cleaner vacuumed the carpets and sanitized the tables.",
+        ar: "بَعْدَ إِغْلَاقِ المَكْتَبَةِ فِي المَسَاءِ، قَامَ عَامِلُ النَّظَافَةِ المُجْتَهِدُ بِكَنْسِ السَّجَّادِ وَتَعْقِيمِ الطَّاوِلَاتِ.",
+      },
+      {
+        context: "Facility Hygiene",
+        en: "Cleaning staff ensure that computer terminals, keyboards, and study cubicles remain hygienic and dust-free.",
+        ar: "يَضْمَنُ عُمَّالُ النَّظَافَةِ بَقَاءَ شَاشَاتِ الحَاسُوبِ وَلَوْحَاتِ المَفَاتِيحِ صِحِّيَّةً وَخَالِيَةً مِنَ الغُبَارِ.",
+      },
+      {
+        context: "Morning Preparation",
+        en: "The cleaner polished the glass entrance doors early before the first morning readers arrived.",
+        ar: "لَمَّعَ عَامِلُ النَّظَافَةِ أَبْوَابَ المَدْخَلِ الزُّجَاجِيَّةَ بَاكِرًا قَبْلَ وُصُولِ أَوَائِلِ القُرَّاءِ فِي الصَّبَاحِ.",
+      },
+    ],
+    exampleSentence:
+      "After the library closed for the evening, the diligent cleaner vacuumed the carpets and sanitized the tables.",
+    exampleArabic:
+      "بَعْدَ إِغْلَاقِ المَكْتَبَةِ فِي المَسَاءِ، قَامَ عَامِلُ النَّظَافَةِ المُجْتَهِدُ بِكَنْسِ السَّجَّادِ وَتَعْقِيمِ الطَّاوِلَاتِ.",
+  },
 };
 
 /**

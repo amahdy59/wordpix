@@ -62,13 +62,12 @@ function getResponsiveSrcSet(url: string, preset: ImageSizePreset = "card"): str
 }
 
 function escapeXml(value: string) {
-  return value.replace(/[<>&"']/g, (character) => {
+  return value.replace(/[<>&"]/g, (character) => {
     const entities: Record<string, string> = {
       "<": "&lt;",
       ">": "&gt;",
       "&": "&amp;",
       '"': "&quot;",
-      "'": "&apos;",
     };
     return entities[character];
   });
