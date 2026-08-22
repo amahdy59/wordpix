@@ -530,6 +530,8 @@ export const ExerciseStory = memo(function ExerciseStory({
                 return (
                   <div
                     key={item.id}
+                    role="button"
+                    tabIndex={0}
                     className={
                       "bg-wp-card border rounded-2xl p-3 flex flex-col items-center gap-2.5 shadow-wp-xs transition-all text-center hover:border-primary/50 cursor-pointer " +
                       (isActive
@@ -537,6 +539,12 @@ export const ExerciseStory = memo(function ExerciseStory({
                         : "border-border")
                     }
                     onClick={() => setInspectedWord(item)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        setInspectedWord(item);
+                      }
+                    }}
                   >
                     <div className="size-20 sm:size-24 rounded-xl overflow-hidden bg-muted shrink-0 border border-border relative">
                       <img src={item.img} alt={item.label} className="size-full object-cover" />
@@ -828,9 +836,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                       }`}
                     >
                       <span>Q{qIndex + 1}</span>
-                      {isAnswered && (
-                        <Check className="size-3 stroke-[3]" aria-hidden />
-                      )}
+                      {isAnswered && <Check className="size-3 stroke-[3]" aria-hidden />}
                     </button>
                   );
                 })}
@@ -907,9 +913,11 @@ export const ExerciseStory = memo(function ExerciseStory({
                           {isAnswered && optIdx === currentQ.correctIndex && (
                             <CheckCircle2 className="size-5 text-wp-emerald shrink-0" />
                           )}
-                          {isAnswered && optIdx === selected && optIdx !== currentQ.correctIndex && (
-                            <XCircle className="size-5 text-wp-rose shrink-0" />
-                          )}
+                          {isAnswered &&
+                            optIdx === selected &&
+                            optIdx !== currentQ.correctIndex && (
+                              <XCircle className="size-5 text-wp-rose shrink-0" />
+                            )}
                         </button>
                       );
                     })}
