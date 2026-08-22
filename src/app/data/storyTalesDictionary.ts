@@ -429,6 +429,433 @@ export const STORY_TALES_DICTIONARY: Record<string, GroupStoryBundle> = {
       },
     ],
   },
+  // ── THE GARDEN ───────────────────────────────────────────────────────────
+  flowers: {
+    groupId: "flowers",
+    groupName: "Flowers",
+    themeTitle: "The Secret Botanical Garden",
+    passages: [
+      {
+        partNumber: 1,
+        title: "Part 1: The Morning Bloom",
+        titleArabic: "الجزء الأول: تفتح الصباح",
+        text: "Early at sunrise, Maya and Grandma Leila walked into the courtyard. The morning dew glistened on a velvet crimson rose standing proudly in the garden bed. Beside it, an early pink tulip opened its delicate cup, while a giant golden sunflower turned its bright head toward the rising sun.",
+        textArabic:
+          "في وقت مبكر عند شروق الشمس، دخلت مايا والجدة ليلى إلى الفناء. تبللت قطرات الندى على وردة قرمزية مخملية تقف بشموخ في حوض الحديقة. وبجانبها، فتحت زهرة توليب وردية مبكرة كأسها الرقيق، بينما أدارت زهرة عباد شمس ذهبية عملاقة رأسها المشرق نحو الشمس المشرقة.",
+      },
+      {
+        partNumber: 2,
+        title: "Part 2: Rare Blossoms in the Shade",
+        titleArabic: "الجزء الثاني: أزهار نادرة في الظل",
+        text: "Maya knelt along the stone border to inspect a cheerful white daisy with a bright yellow center. Nearby, a graceful trumpet-shaped lily released its sweet scent. Under the cool hedge, clusters of sweet purple violets and early yellow daffodils bloomed together in harmony.",
+        textArabic:
+          "ركعت مايا على طول الحافة الحجرية لفحص زهرة أُقحوان بيضاء مبتهجة ذات مركز أصفر لامع. وبالقرب منها، أطلقت زهرة زنبق أنيقة بوقية الشكل عطرها الزكي. وتحت السِّياج الظليل، تفتحت مجموعات من البنفسج الأرجواني والنرجس الأصفر المبكر معًا في تناغم.",
+      },
+      {
+        partNumber: 3,
+        title: "Part 3: The Calming Aroma",
+        titleArabic: "الجزء الثالث: العبير المهدئ",
+        text: "In the warm glass alcove, Grandma Leila pointed out an exotic purple orchid with symmetrical petals. They snipped a ruffled pink carnation for the breakfast vase and harvested fresh lavender spikes that filled their baskets with a wonderfully calming aroma.",
+        textArabic:
+          "في الرواق الزجاجي الدافئ، أشارت الجدة ليلى إلى زهرة أوركيد أرجوانية نادرة ذات بتلات متناسقة. قطفتا زهرة قرنفل وردية مموجة لمزهرية الإفطار وجمعتا سنابل الخزامى (اللافندر) الطازجة التي ملأت سلتهما بعبير مهدئ رائع.",
+      },
+    ],
+    quiz: [
+      {
+        id: "flow_q1",
+        question:
+          "Which flower is famous for having a large golden blossom that turns to face the sun throughout the day?",
+        options: ["Sunflower", "Violet", "Daisy", "Carnation"],
+        correctIndex: 0,
+        explanation:
+          "The sunflower is known for heliotropism, turning its giant golden bloom toward the sunlight.",
+        explanationArabic:
+          "تتميز زهرة عباد الشمس بتتبع ضوء الشمس طوال النهار بقرصها الذهبي الكبير.",
+      },
+      {
+        id: "flow_q2",
+        question:
+          "What fragrant plant with purple flower spikes is harvested for its soothing and calming scent?",
+        options: ["Lavender", "Tulip", "Daffodil", "Lily"],
+        correctIndex: 0,
+        explanation:
+          "Lavender is an aromatic botanical celebrated for its calming herbal fragrance.",
+        explanationArabic: "الخزامى (اللافندر) نبات عطري مشهور برائحته المهدئة المريحة للأعصاب.",
+      },
+      {
+        id: "flow_q3",
+        question: "Why did Maya and Grandma Leila walk into the garden at early sunrise?",
+        options: [
+          "To discover and admire the freshly blooming flowers in the morning dew",
+          "To repair a broken wooden gate",
+          "To paint the stone garden path",
+          "To find shelter from a heavy rainstorm",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Maya and Grandma Leila went out at sunrise to enjoy the beauty of the newly opened morning blossoms.",
+        explanationArabic:
+          "خرجت مايا والجدة ليلى عند الشروق للاستمتاع بجمال الأزهار المتفتحة بندى الصباح.",
+      },
+    ],
+  },
+
+  "trees-shrubs": {
+    groupId: "trees-shrubs",
+    groupName: "Trees & Shrubs",
+    themeTitle: "The Whispering Grove",
+    passages: [
+      {
+        partNumber: 1,
+        title: "Part 1: The Woodland Giants",
+        titleArabic: "الجزء الأول: عمالقة الغابة",
+        text: "Omar stepped into the shaded nature sanctuary on a warm afternoon. He marveled at a majestic three-hundred-year-old oak tree with massive spreading boughs. Nearby, the crisp, resinous scent of an evergreen pine tree drifted through the woodland breeze.",
+        textArabic:
+          "دخل عمر إلى المحمية الطبيعية الظليلة في فترة ما بعد الظهر الدافئة. تعجب من شجرة بلوط مهيبة يبلغ عمرها ثلاثمائة عام ذات أغصان ضخمة ممتدة. وبالقرب منها، فاحت رائحة شجرة الصنوبر الدائمة الخضرة الزكية عبر نسيم الغابة.",
+      },
+      {
+        partNumber: 2,
+        title: "Part 2: Orchard & Exotic Trees",
+        titleArabic: "الجزء الثاني: أشجار البستان والأشجار الاستوائية",
+        text: "Walking toward the sunny orchard, Omar noticed a domestic apple tree laden with crisp fruit and a flowering cherry tree dropping soft pink petals. Near the sunlit wall stood an exotic palm tree with long, arching fronds.",
+        textArabic:
+          "أثناء سيره نحو البستان المشمس، لاحظ عمر شجرة تفاح مثقلة بالثمار المقرمشة وشجرة كرز مزهرة تتساقط منها بتلات وردية ناعمة. وبالقرب من الجدار المشمس، وقفت نخلة استوائية ذات سعف طويل مقوس.",
+      },
+      {
+        partNumber: 3,
+        title: "Part 3: Green Boundaries & Ground Cover",
+        titleArabic: "الجزء الثالث: الحدود الخضراء والغطاء الأرضي",
+        text: "A neatly trimmed boxwood hedge created a clean boundary along the path, while a flowering berry bush provided nesting shelter for birds. Clinging green ivy climbed the brick wall, a wild vine twined around the gate, and a delicate feathery fern thrived in the cool shade.",
+        textArabic:
+          "شكّل سياج نباتي مقلم بعناية حدًا نظيفًا على طول الممر، بينما وفرت شجيرة التوت المزهرة مأوى لتعشيش الطيور. تسلق اللبلاب الأخضر الجدار الآجوري، والتفت عريشة برية حول البوابة، ونما سرخس رقيق في الظل الرطب.",
+      },
+    ],
+    quiz: [
+      {
+        id: "trees_q1",
+        question:
+          "Which tree is an evergreen conifer with needle-shaped foliage and woody pinecones?",
+        options: ["Pine tree", "Oak tree", "Cherry tree", "Apple tree"],
+        correctIndex: 0,
+        explanation:
+          "The pine tree is a conifer that retains its needle-like leaves throughout the entire year.",
+        explanationArabic:
+          "شجرة الصنوبر هي شجرة مخروطية دائمة الخضرة تحتفظ بإبرها الخضراء طوال العام.",
+      },
+      {
+        id: "trees_q2",
+        question:
+          "What is a dense, continuous row of closely planted shrubs used to mark a garden boundary?",
+        options: ["A hedge", "A vine", "A fern", "A palm tree"],
+        correctIndex: 0,
+        explanation: "A hedge is a closely grown barrier of bushes used to enclose or divide land.",
+        explanationArabic:
+          "السياج النباتي هو صف كثيف من الشجيرات المزروعة متقاربة لتحديد حدود الحديقة.",
+      },
+      {
+        id: "trees_q3",
+        question: "What was Omar admiring as he walked along the sanctuary path in the story?",
+        options: [
+          "The diverse canopy of old trees, trimmed boundary hedges, climbing ivy, and shaded ferns",
+          "A brand new sports car",
+          "A modern shopping mall",
+          "A large indoor swimming pool",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Omar explored the natural grove and admired the rich variety of trees, hedges, and climbing greenery.",
+        explanationArabic:
+          "استكشف عمر البستان وأعجب بتنوع الأشجار العتيقة والأسوار النباتية واللبلاب والسرخس.",
+      },
+    ],
+  },
+
+  "garden-tools": {
+    groupId: "garden-tools",
+    groupName: "Garden Tools",
+    themeTitle: "The Spring Planting Expedition",
+    passages: [
+      {
+        partNumber: 1,
+        title: "Part 1: Digging & Ground Preparation",
+        titleArabic: "الجزء الأول: الحفر وتجهيز الأرض",
+        text: "On Saturday morning, Zain and Maya geared up to prepare the vegetable patch. Zain drove a heavy steel shovel into the packed earth to turn the soil, while Maya used a flat-edged spade to carve clean borders and a wide rake to level the garden bed.",
+        textArabic:
+          "صباح يوم السبت، استعد زين ومايا لتجهيز قطعة زراعة الخضار. غرس زين مجرفة فولاذية ثقيلة في الأرض لتقليب التربة، بينما استخدمت مايا مجرفة تسوية مسطحة لتحديد الحواف ومجرفة أسنان عريضة لتسوية الحوض.",
+      },
+      {
+        partNumber: 2,
+        title: "Part 2: Transport & Irrigation",
+        titleArabic: "الجزء الثاني: النقل والري",
+        text: "They wheeled several loads of rich compost in a sturdy wheelbarrow. Maya filled a galvanized watering can for the potted herbs, uncoiled the long rubber hose, and connected a rotating sprinkler that cast cool mist across the lawn.",
+        textArabic:
+          "نقلا عدة أحمال من السماد العضوي الغني في عربة يد متينة. ملأت مايا رشاش مياه معدني لري الأعشاب في الأصائص، وفردت خرطوم المياه المطاطي الطويل، ووصلت مرشة مياه دوارة نشرت رذاذاً منعشاً على العشب.",
+      },
+      {
+        partNumber: 3,
+        title: "Part 3: Pruning & Finishing Touches",
+        titleArabic: "الجزء الثالث: التقليم واللمسات النهائية",
+        text: "Wearing thick leather garden gloves to protect her hands, Maya used a pointed trowel to plant tomato seedlings and a sharp spring-loaded pruner to snip dead rose twigs. Zain used a four-tined pitchfork to spread straw mulch and finished by pushing the lawn mower to trim the grass.",
+        textArabic:
+          "مرتدية قفازات حديقة جلدية سميكة لحماية يديها، استخدمت مايا مجرفة شتل يدوية لغرس شتلات الطماطم ومقص تقليم حاد لقص الأغصان الذابلة. واستخدم زين مذراة لنثر القش، ثم دفع جزازة العشب لتهذيب الحديقة.",
+      },
+    ],
+    quiz: [
+      {
+        id: "tools_q1",
+        question:
+          "Which small handheld tool with a curved scoop is used for digging small planting holes for seedlings?",
+        options: ["A trowel", "A lawn mower", "A rake", "A pitchfork"],
+        correctIndex: 0,
+        explanation:
+          "A trowel is a small handheld scooping tool essential for planting individual seedlings and bulbs.",
+        explanationArabic:
+          "مجرفة الشتل اليدوية هي أداة صغيرة مخصصة لحفر ثقوب الشتلات وغرس النباتات.",
+      },
+      {
+        id: "tools_q2",
+        question:
+          "What rotating device connects to a garden hose to distribute water evenly across the entire turf?",
+        options: ["A sprinkler", "A wheelbarrow", "A pruner", "A shovel"],
+        correctIndex: 0,
+        explanation:
+          "A sprinkler is an irrigation device that sprays pressurized water over grass and garden beds.",
+        explanationArabic:
+          "مرشة المياه (الرشاش) هي أداة متصلة بالخرطوم لرش وتوزيع الماء بانتظام على العشب.",
+      },
+      {
+        id: "tools_q3",
+        question: "Why did Maya wear heavy leather garden gloves while working in the garden?",
+        options: [
+          "To protect her fingers and hands from blisters, soil, and sharp rose thorns",
+          "To keep her hands clean while painting",
+          "Because it was freezing winter with heavy snowfall",
+          "To hold the heavy lawn mower handle tighter",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Garden gloves protect gardeners' hands from dirt, blisters, and sharp pricks from thorny plants.",
+        explanationArabic:
+          "تحمي قفازات الحديقة الأيدي من الأوساخ والفقاعات والأشواك الحادة أثناء التقليم والزراعة.",
+      },
+    ],
+  },
+
+  "parts-of-a-plant": {
+    groupId: "parts-of-a-plant",
+    groupName: "Parts of a Plant",
+    themeTitle: "The Miracle of the Sprouting Seed",
+    passages: [
+      {
+        partNumber: 1,
+        title: "Part 1: The Underground Anchor & The Sturdy Stem",
+        titleArabic: "الجزء الأول: المرساة الأرضية والساق القوية",
+        text: "In the botany greenhouse, Maya examined a healthy young sunflower. Beneath the rich dark loam, a dense network of underground roots anchored the plant and absorbed water. Rising straight up, a sturdy green stem transported nutrients to every leaf.",
+        textArabic:
+          "في دفيئة علم النبات، فحصت مايا نبتة عباد شمس يافعة. تحت التربة الداكنة الخصبة، ثبّتت شبكة كثيفة من الجذور النبتة وامتصت الماء. وبرزت ساق خضراء قوية نقلت الغذاء إلى كل ورقة.",
+      },
+      {
+        partNumber: 2,
+        title: "Part 2: Foliage, Bark & Blossoms",
+        titleArabic: "الجزء الثاني: الأوراق واللحاء والأزهار",
+        text: "Each broad green leaf captured sunlight for energy. Looking outside at the old orchard trees, Maya noticed how rugged woody bark shielded the main trunk and how a wide branch spread overhead, displaying soft velvety petals on every blossom.",
+        textArabic:
+          "التقطت كل ورقة خضراء عريضة ضوء الشمس لإنتاج الطاقة. وبالنظر خارجاً إلى أشجار البستان القديمة، لاحظت مايا كيف يحمي اللحاء الخشبي الخشن الجذع وكيف يمتد غصن عريض حاملاً بتلات مخملية ناعمة.",
+      },
+      {
+        partNumber: 3,
+        title: "Part 3: From Bud to Seed and Fruit",
+        titleArabic: "الجزء الثالث: من البرعم إلى البذرة والثمرة",
+        text: "She watched a tightly wrapped green bud slowly open into bloom. Along the wild brambles, she carefully avoided a sharp protective thorn and picked a ripe, juicy red berry filled with tiny seeds ready to sprout new life next spring.",
+        textArabic:
+          "شاهدت برعماً أخضر مغلقاً يتفتح ببطء ليصبح زهرة. وعلى طول شجيرات العليق، تفادت بحذر شوكة حادة وقطفت حبة توت حمراء ناضجة مليئة بالبذور الصغيرة الجاهزة لتنبت من جديد في الربيع القادم.",
+      },
+    ],
+    quiz: [
+      {
+        id: "plant_q1",
+        question:
+          "Which essential plant part grows underground to anchor the plant and absorb moisture and soil nutrients?",
+        options: ["Root", "Petal", "Thorn", "Bark"],
+        correctIndex: 0,
+        explanation:
+          "Roots are the subterranean organ that anchors the plant and takes up water and essential minerals.",
+        explanationArabic:
+          "الجذور هي العضو النباتي الممتد تحت الأرض لتثبيت النبات وامتصاص الماء والمعادن.",
+      },
+      {
+        id: "plant_q2",
+        question:
+          "What is the rugged, protective outer covering of a tree trunk and its woody branches called?",
+        options: ["Bark", "Bud", "Seed", "Leaf"],
+        correctIndex: 0,
+        explanation:
+          "Bark is the tough outer layer of woody plants that protects them from frost, injury, and disease.",
+        explanationArabic:
+          "اللحاء هو الطبقة الخارجية الخشنة الواقية لجذع الشجرة وأغصانها ضد العوامل الجوية.",
+      },
+      {
+        id: "plant_q3",
+        question:
+          "What developmental cycle did Maya observe occurring in the greenhouse and orchard?",
+        options: [
+          "How seeds sprout into roots and stems, grow leaves and buds, and produce petals and berries",
+          "How stones turn into soil overnight",
+          "How birds build nests inside water hoses",
+          "How wooden fences transform into trees",
+        ],
+        correctIndex: 0,
+        explanation:
+          "The story highlights the life cycle of plants from roots and stems to buds, flowers, and seeded berries.",
+        explanationArabic:
+          "توضح القصة دورة حياة النبات من الجذور والساق إلى البراعم والبتلات وثمار التوت الحاملة للبذور.",
+      },
+    ],
+  },
+
+  "garden-creatures": {
+    groupId: "garden-creatures",
+    groupName: "Garden Creatures",
+    themeTitle: "The Busy Microscopic Kingdom",
+    passages: [
+      {
+        partNumber: 1,
+        title: "Part 1: Aerial Pollinators & Protectors",
+        titleArabic: "الجزء الأول: الملقحات والحماة المجنحة",
+        text: "On a quiet morning, the garden came alive with buzzing activity. A colorful monarch butterfly fluttered gently between the lavender blooms, while a helpful red ladybug with black spots crawled along a rose leaf, hunting harmful aphids. Nearby, a fuzzy honey bee gathered golden pollen.",
+        textArabic:
+          "في صباح هادئ، دبت الحياة والنشاط في الحديقة. رفرفت فراشة ملكية ملونة برقة بين زهور الخزامى، بينما زحفت دعسوقة حمراء منقطة بالأسود على ورقة الورد تفترس حشرات المن الضارة. وبالقرب منها، جمعت نحلة زغبية حبوب اللقاح الذهبية.",
+      },
+      {
+        partNumber: 2,
+        title: "Part 2: Soil Tillers & Slow Crawlers",
+        titleArabic: "الجزء الثاني: حارثو التربة والزواحف البطيئة",
+        text: "Down in the rich damp compost, a pink earthworm burrowed through the soil, creating airy channels that helped roots breathe. A slow garden snail carried its spiral shell across the stone border, while an industrious black ant carried a pine needle twice its size back to the colony mound.",
+        textArabic:
+          "في الأسفل داخل السماد الرطب، حفرت دودة الأرض أنفاقاً في التربة مما ساعد الجذور على التنفس. وحمل حلزون بطيء قوقعته اللولبية عابراً الحافة الحجرية، بينما حملت نملة سوداء مجتهدة إبرة صنوبر تفوق حجمها إلى تل المستعمرة.",
+      },
+      {
+        partNumber: 3,
+        title: "Part 3: Master Weavers & Skilled Leapers",
+        titleArabic: "الجزء الثالث: نساجو الشباك والقفازون الماهرون",
+        text: "Under a broad squash leaf, a plump green caterpillar munched peacefully before spinning its cocoon. A yellow garden spider spun a breathtaking geometric web that sparkled with dew, while an iridescent blue dragonfly hovered over the pond and a green grasshopper leaped into the tall lawn.",
+        textArabic:
+          "تحت ورقة عريضة، قضمَت يرقة خضراء أوراق الشجر بهدوء قبل غزل شرنقتها. ونسج عنكبوت حديقة أصفر شبكة هندسية مذهلة تلمع بالندى، بينما حلّق يعسوب أزرق فوق البركة وقفز جندب أخضر في العشب العالي.",
+      },
+    ],
+    quiz: [
+      {
+        id: "creat_q1",
+        question:
+          "Which beneficial insect is a small red beetle with black spots that protects plants by eating garden aphids?",
+        options: ["Ladybug", "Snail", "Spider", "Worm"],
+        correctIndex: 0,
+        explanation:
+          "Ladybugs are beneficial garden predators that feed extensively on destructive plant aphids.",
+        explanationArabic:
+          "الدعسوقة هي خنفساء صغيرة حمراء منقطة تفيد الحديقة بافتراس حشرات المن الضارة بالنبات.",
+      },
+      {
+        id: "creat_q2",
+        question:
+          "Which fast, iridescent insect has four transparent wings and hovers effortlessly over ponds to hunt mosquitoes?",
+        options: ["Dragonfly", "Ant", "Caterpillar", "Grasshopper"],
+        correctIndex: 0,
+        explanation:
+          "Dragonflies are agile aerial predators with transparent wings that excel at catching flying insects near water.",
+        explanationArabic:
+          "اليعسوب حشرة رشيقة سريعة بأربعة أجنحة شفافة تصطاد البعوض فوق المسطحات المائية.",
+      },
+      {
+        id: "creat_q3",
+        question:
+          "How do the various creatures in the story work together to maintain a healthy garden ecosystem?",
+        options: [
+          "Bees pollinate flowers, ladybugs control pests, earthworms aerate soil, and spiders catch flies",
+          "All creatures eat all the plants until none are left",
+          "They only appear during winter snowstorms",
+          "They build wooden sheds and repair fences",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Each creature plays a distinct ecological role: pollination, pest control, soil aeration, and natural balance.",
+        explanationArabic:
+          "يلعب كل كائن دوراً بيئياً هاماً: النحل للتلقيح، الدعسوقة لمكافحة الآفات، الديدان لتهوية التربة، والعناكب للصيد.",
+      },
+    ],
+  },
+
+  "garden-features": {
+    groupId: "garden-features",
+    groupName: "Garden Features",
+    themeTitle: "The Backyard Sanctuary",
+    passages: [
+      {
+        partNumber: 1,
+        title: "Part 1: The Lawn & Floral Pathways",
+        titleArabic: "الجزء الأول: المسطح الأخضر والممرات المزهرة",
+        text: "The family worked together to transform their backyard into a serene haven. In the center, a manicured green lawn provided an open space for relaxing. A vibrant flower bed surrounded the perimeter with roses and lilies, and a winding gravel path led to each quiet corner.",
+        textArabic:
+          "تعاونت العائلة لتحويل فنائها الخلفي إلى واحة هادئة. في الوسط، وفر مسطح عشبي أخضر منسق مساحة للاسترخاء. وأحاط حوض زهور زاهٍ بالمحيط بالورد والزنبق، وقاد ممر حصوي ملتوٍ إلى كل ركن هادئ.",
+      },
+      {
+        partNumber: 2,
+        title: "Part 2: Boundaries & Protected Growing",
+        titleArabic: "الجزء الثاني: الحدود والزراعة المحمية",
+        text: "A white wooden fence enclosed the property for privacy, and an arched iron gate welcomed visitors with friendly charm. Near the sunniest corner, a glass greenhouse trapped warmth to nurture delicate vegetable seedlings throughout the cooler months.",
+        textArabic:
+          "أحاط سياج خشبي أبيض بالمنزل لتوفير الخصوصية، ورحبت بوابة حديدية مقوسة بالزوار بسحر ودود. وبالقرب من الزاوية الأكثر شمسًا، حبست دفيئة زجاجية الحرارة لرعاية شتلات الخضار في الأشهر الباردة.",
+      },
+      {
+        partNumber: 3,
+        title: "Part 3: Welcoming Wildlife & Eco-Friendly Care",
+        titleArabic: "الجزء الثالث: استقبال الطيور والعناية البيئية",
+        text: "A cedar bird feeder hung from the oak tree, attracting goldfinches, while a pedestal birdbath offered clean drinking water. All mowers and tools were stored inside the dry wooden garden shed, and grass clippings were recycled inside the dark compost bin to make natural fertilizer.",
+        textArabic:
+          "عُلّق مطعم طيور خشبي على شجرة البلوط لجذب الطيور، وقدم مغسل طيور حجري ماءً نظيفاً للشرب والاستحمام. وحُفظت الأدوات داخل كوخ الحديقة الخشبي، بينما أُعيد تدوير قصاصات العشب في صندوق السماد العضوي لإنتاج سماد طبيعي.",
+      },
+    ],
+    quiz: [
+      {
+        id: "feat_g_q1",
+        question:
+          "What is a glass-enclosed garden structure designed to trap heat and nurture delicate seedlings in all seasons?",
+        options: ["A greenhouse", "A garden shed", "A compost bin", "A birdbath"],
+        correctIndex: 0,
+        explanation:
+          "A greenhouse uses glass walls to trap solar warmth, creating an ideal microclimate for young plants.",
+        explanationArabic:
+          "الدفيئة (البيت الزجاجي) مبنى زجاجي يحتجز الدفء لتوفير مناخ مثالي لنمو الشتلات والنباتات الحساسة.",
+      },
+      {
+        id: "feat_g_q2",
+        question:
+          "What outdoor feature consists of a shallow stone basin on a pedestal filled with fresh water for avian visitors?",
+        options: ["A birdbath", "A fence", "A flower bed", "A lawn"],
+        correctIndex: 0,
+        explanation:
+          "A birdbath is an ornamental water basin provided for wild birds to drink and bathe.",
+        explanationArabic:
+          "مغسل الطيور (حوض استحمام الطيور) هو حوض مائي ضحل مخصص لشرب الطيور ونظافتها.",
+      },
+      {
+        id: "feat_g_q3",
+        question:
+          "How did the family practice eco-friendly gardening with their plant trimmings and grass clippings?",
+        options: [
+          "They placed them into a ventilated compost bin to decompose into organic fertilizer",
+          "They burned them on the manicured green lawn",
+          "They threw them outside over the neighbor's fence",
+          "They stored them permanently in the wooden shed",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Composting organic garden clippings produces nutrient-dense natural fertilizer for future seasons.",
+        explanationArabic:
+          "إعادة تدوير قصاصات النباتات داخل صندوق السماد العضوي ينتج سماداً طبيعياً غنياً يغذي تربة الحديقة.",
+      },
+    ],
+  },
 };
 
 export function getOrGenerateStoryBundle(
@@ -511,32 +938,49 @@ export function getOrGenerateStoryBundle(
     quiz: [
       {
         id: groupId + "_q1",
-        question: "What was placed conveniently next to the " + w1.toLowerCase() + " in Part 1?",
-        options: ["The " + w2.toLowerCase(), "A broken box", "A noisy truck", "Nothing at all"],
+        question:
+          "Which essential vocabulary item or feature is featured prominently as the " +
+          w1.toLowerCase() +
+          " in Part 1?",
+        options: ["The " + w1.toLowerCase(), "An empty crate", "A broken tool", "A noisy engine"],
         correctIndex: 0,
         explanation:
-          "In Part 1, the " +
+          "The narrative focuses on the " +
           w1.toLowerCase() +
-          " was placed right next to the " +
-          w2.toLowerCase() +
-          ".",
-        explanationArabic: "في الجزء الأول، كان " + w1 + " موضوعًا بجوار " + w2 + ".",
+          " as a key element of the " +
+          groupName.toLowerCase() +
+          " scene.",
+        explanationArabic: "يركز النص على " + w1 + " كعنصر رئيسي في المشهد.",
       },
       {
         id: groupId + "_q2",
-        question: "Which tool or item did Alex use to inspect the area in Part 2?",
-        options: ["The " + w3.toLowerCase(), "An old map", "A telescope", "A whistle"],
+        question: "How was the " + w3.toLowerCase() + " utilized during the activity in Part 2?",
+        options: [
+          "To carefully inspect, organize, and prepare the " + groupName.toLowerCase() + " area",
+          "It was discarded and forgotten",
+          "It was painted bright blue",
+          "It was left outdoors in the rain",
+        ],
         correctIndex: 0,
-        explanation: "Alex used the " + w3.toLowerCase() + " to inspect and organize the area.",
-        explanationArabic: "استخدم أليكس " + w3 + " لتنظيم وفحص المكان.",
+        explanation:
+          "Alex used the " + w3.toLowerCase() + " to inspect and organize the area properly.",
+        explanationArabic: "استخدم أليكس " + w3 + " لتنظيم وتجهيز المكان بالشكل المناسب.",
       },
       {
         id: groupId + "_q3",
-        question: "What was checked one last time before finishing in Part 3?",
-        options: ["The " + w5.toLowerCase(), "The car keys", "The front gate", "The watch"],
+        question: "What was the overall outcome of Alex's efforts by the end of the day in Part 3?",
+        options: [
+          "All tasks were successfully completed and the " +
+            groupName.toLowerCase() +
+            " was in perfect condition",
+          "Everything was left unfinished and disorganized",
+          "The project was canceled due to bad weather",
+          "Alex moved away to another town",
+        ],
         correctIndex: 0,
-        explanation: "Alex checked the " + w5.toLowerCase() + " before concluding the day.",
-        explanationArabic: "قام أليكس بفحص " + w5 + " قبل إنهاء اليوم.",
+        explanation:
+          "By the end of the story, Alex completed all tasks smoothly and the space was perfectly arranged.",
+        explanationArabic: "بحلول نهاية القصة، اكتملت جميع المهام بنجاح وأصبح المكان في أفضل حال.",
       },
     ],
   };

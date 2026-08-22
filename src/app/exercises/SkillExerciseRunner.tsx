@@ -40,7 +40,10 @@ const OPTION_KEY_HINT = "Press 1 to 9 to choose an option";
  * reimplemented a slice of this or, far more often, skipped it entirely and
  * just navigated away.
  */
-export const SkillExerciseRunner = memo(function SkillExerciseRunner({ definition, dispatch }: Props) {
+export const SkillExerciseRunner = memo(function SkillExerciseRunner({
+  definition,
+  dispatch,
+}: Props) {
   const { accessibility } = useAccessibility();
   const { speak } = useAudio();
   const { playCorrect, playIncorrect, playClick } = useSound();
@@ -127,7 +130,8 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({ definitio
     const onKey = (e: KeyboardEvent) => {
       if (e.ctrlKey || e.metaKey || e.altKey || e.repeat) return;
       const target = e.target as HTMLElement | null;
-      if (target && (["INPUT", "TEXTAREA"].includes(target.tagName) || target.isContentEditable)) return;
+      if (target && (["INPUT", "TEXTAREA"].includes(target.tagName) || target.isContentEditable))
+        return;
       if (!/^[1-9]$/.test(e.key)) return;
       const option = task.options[Number(e.key) - 1];
       if (!option) return;
@@ -154,7 +158,10 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({ definitio
           onClose={() => dispatch({ type: "GO", to: "home" })}
         />
         <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5 justify-center">
-          <div role="status" className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col items-center gap-2 text-center">
+          <div
+            role="status"
+            className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col items-center gap-2 text-center"
+          >
             <CheckCircle2 className="size-12 text-wp-green" aria-hidden />
             <h2 className="font-sans font-black text-foreground text-2xl">Exercise complete</h2>
             {gradedCount > 0 ? (
@@ -168,7 +175,10 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({ definitio
               </p>
             )}
           </div>
-          <PrimaryButton label="Back to Exercise Hub" onClick={() => dispatch({ type: "GO", to: "skill-hub" })} />
+          <PrimaryButton
+            label="Back to Exercise Hub"
+            onClick={() => dispatch({ type: "GO", to: "skill-hub" })}
+          />
         </main>
       </div>
     );
@@ -186,8 +196,8 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({ definitio
     <div className="min-h-svh bg-background flex flex-col">
       <LessonHeader
         title={definition.title}
-        current={definition.step}
-        total={definition.totalSteps}
+        current={index + 1}
+        total={definition.tasks.length}
         onBack={() => dispatch({ type: "GO", to: "skill-hub" })}
         onClose={() => dispatch({ type: "GO", to: "home" })}
       />
@@ -218,7 +228,9 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({ definitio
         )}
 
         <div className="bg-wp-card border border-border rounded-2xl p-4 flex items-start justify-between gap-3">
-          <h2 className="font-sans font-bold text-foreground text-lg text-balance">{task.prompt}</h2>
+          <h2 className="font-sans font-bold text-foreground text-lg text-balance">
+            {task.prompt}
+          </h2>
           {task.audioText && (
             <button
               type="button"
@@ -450,9 +462,16 @@ function TaskBody({
     return (
       <div className="flex flex-col gap-3">
         {task.items.map((item) => (
-          <div key={item.id} className="bg-wp-card border border-border rounded-2xl p-3 flex flex-col gap-2">
+          <div
+            key={item.id}
+            className="bg-wp-card border border-border rounded-2xl p-3 flex flex-col gap-2"
+          >
             <span className="font-sans font-bold text-sm text-foreground">{item.label}</span>
-            <div role="group" aria-label={`Category for ${item.label}`} className="flex gap-2 flex-wrap">
+            <div
+              role="group"
+              aria-label={`Category for ${item.label}`}
+              className="flex gap-2 flex-wrap"
+            >
               {task.buckets.map((bucket) => (
                 <button
                   key={bucket.id}

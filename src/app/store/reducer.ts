@@ -59,6 +59,8 @@ export function reducer(state: Screen, action: Action): Screen {
     }
 
     const sessionId = "sess_" + Date.now() + "_" + Math.random().toString(36).slice(2, 7);
+    const initialStep =
+      action.initialStep !== undefined ? Math.max(0, Math.min(5, action.initialStep)) : 0;
 
     return {
       id: "lesson",
@@ -67,7 +69,7 @@ export function reducer(state: Screen, action: Action): Screen {
       lessonId: action.lessonId,
       unitId: action.unitId,
       wordQueue: queue,
-      step: 0,
+      step: initialStep,
       attempts: [],
       startedAt: new Date().toISOString(),
     };
@@ -113,7 +115,7 @@ export function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "LESSON_GOTO_STEP") {
     if (state.id !== "lesson") return state;
-    if (action.step < 0 || action.step > 4) return state;
+    if (action.step < 0 || action.step > 5) return state;
     if (action.step === state.step) return state;
     return { ...state, step: action.step };
   }

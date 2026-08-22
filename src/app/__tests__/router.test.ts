@@ -11,7 +11,9 @@ function lessonAt(step: number): Screen {
     lessonId: "essential-furniture",
     wordQueue: ["bed", "lamp"],
     step,
-    attempts: [{ exerciseStep: 0, wordId: "bed", correct: true, answeredAt: "2026-01-01T00:00:00Z" }],
+    attempts: [
+      { exerciseStep: 0, wordId: "bed", correct: true, answeredAt: "2026-01-01T00:00:00Z" },
+    ],
     startedAt: "2026-01-01T00:00:00Z",
   };
 }
@@ -35,7 +37,14 @@ describe("Hash round-tripping", () => {
       lessonAt(0),
       lessonAt(3),
       lessonAt(4),
-      { id: "lesson-complete", mode: "NEW_LESSON", sessionId: "s", lessonId: "g", wordQueue: [], attempts: [] },
+      {
+        id: "lesson-complete",
+        mode: "NEW_LESSON",
+        sessionId: "s",
+        lessonId: "g",
+        wordQueue: [],
+        attempts: [],
+      },
     ];
 
     screens.forEach((screen) => {
@@ -87,7 +96,7 @@ describe("LESSON_GOTO_STEP", () => {
   it("rejects out-of-range steps", () => {
     const state = lessonAt(2);
     expect(reducer(state, { type: "LESSON_GOTO_STEP", step: -1 })).toBe(state);
-    expect(reducer(state, { type: "LESSON_GOTO_STEP", step: 5 })).toBe(state);
+    expect(reducer(state, { type: "LESSON_GOTO_STEP", step: 6 })).toBe(state);
   });
 
   it("returns the same object when already on that step", () => {
@@ -125,7 +134,9 @@ describe("Reducer purity", () => {
 
   it("returns the same result when invoked twice with the same input", () => {
     const state: Screen = { id: "onboarding", step: "splash" };
-    expect(reducer(state, { type: "ONBOARD_NEXT" })).toEqual(reducer(state, { type: "ONBOARD_NEXT" }));
+    expect(reducer(state, { type: "ONBOARD_NEXT" })).toEqual(
+      reducer(state, { type: "ONBOARD_NEXT" })
+    );
   });
 
   it("advances onboarding through every step to home", () => {

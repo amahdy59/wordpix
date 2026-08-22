@@ -1,9 +1,21 @@
-import { memo, useState } from "react";
+import { memo, useState, useEffect } from "react";
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { BackButton } from "../shared/BackButton";
-import { ArrowRight, Layers, CheckCircle2, GraduationCap, Check } from "lucide-react";
+import {
+  ArrowRight,
+  Layers,
+  CheckCircle2,
+  GraduationCap,
+  Check,
+  MoreVertical,
+  BookOpen,
+  Compass,
+  Play,
+  ListOrdered,
+  ChevronRight,
+} from "lucide-react";
 import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/lessons";
 import { useProgress } from "../data/progress";
 
@@ -12,9 +24,21 @@ interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
+const STEP_LABELS = [
+  { step: 0, icon: "👁️", name: "1. Scene & Meaning", desc: "Visual discovery" },
+  { step: 1, icon: "🎧", name: "2. Listen & Choose", desc: "Phonetic audio practice" },
+  { step: 2, icon: "✍️", name: "3. Spell the Word", desc: "Letter formation" },
+  { step: 3, icon: "🧠", name: "4. Recall & Match", desc: "Active memory retrieval" },
+  { step: 4, icon: "🧩", name: "5. Word in Context", desc: "Bilingual sentence cloze" },
+  { step: 5, icon: "📖", name: "6. Story & Quiz", desc: "Integrated narrative immersion" },
+];
+
 export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatch }: Props) {
   const world = COURSE_UNITS[unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
   const { progress } = useProgress();
+
+  const [openMenuId, setOpenMenuId] = useState<string | null>(null);
+  const [expandedStepMenuId, setExpandedStepMenuId] = useState<string | null>(null);
 
   const isWordLearned = (id: string) => {
     return (
@@ -29,26 +53,67 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
       : (world.groups[world.groups.length - 1]?.id ?? world.groups[0]?.id ?? "group_default");
   });
 
-  const handleStartGroup = (gId: string) => {
+  // Close menu on click outside or Escape
+  useEffect(() => {
+    if (!openMenuId) return;
+
+    const handlePointerDown = (e: PointerEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (!target?.closest(`[data-menu-container="${openMenuId}"]`)) {
+        setOpenMenuId(null);
+        setExpandedStepMenuId(null);
+      }
+    };
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        const currentId = openMenuId;
+        setOpenMenuId(null);
+        setExpandedStepMenuId(null);
+        const trigger = document.getElementById(`menu-trigger-${currentId}`);
+        trigger?.focus();
+      }
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [openMenuId]);
+
+  const handleStartGroup = (gId: string, initialStep = 0) => {
     const group = world.groups.find((g) => g.id === gId) ?? world.groups[0];
+    setOpenMenuId(null);
+    setExpandedStepMenuId(null);
     dispatch({
       type: "START_LESSON",
       lessonId: group.id,
       unitId: world.id,
       mode: "NEW_LESSON",
       wordQueue: group.wordIds,
+      initialStep,
+    });
+  };
+
+  const handleBrowseWords = (gId: string) => {
+    setOpenMenuId(null);
+    setExpandedStepMenuId(null);
+    dispatch({
+      type: "GO_LEARN_WORDS",
+      lessonId: gId,
     });
   };
 
   const handleTakeAssessment = () => {
-    // Select up to 20 random words from the unit
     const allWordIds = world.vocabulary.map((v) => v.id);
     const shuffled = [...allWordIds].sort(() => 0.5 - Math.random());
     const selected = shuffled.slice(0, 20);
 
     dispatch({
       type: "START_LESSON",
-      lessonId: world.groups[0].id, // fallback lessonId
+      lessonId: world.groups[0].id,
       unitId: world.id,
       mode: "UNIT_ASSESSMENT",
       wordQueue: selected,
@@ -129,9 +194,14 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
             const progressPct =
               g.wordIds.length > 0 ? Math.round((learnedCount / g.wordIds.length) * 100) : 0;
             const hasStarted = learnedCount > 0 && !isCompleted;
+            const isMenuOpen = openMenuId === g.id;
 
             return (
-              <div key={g.id} className="relative flex items-stretch gap-5 lg:gap-8 group">
+              <div
+                key={g.id}
+                className="relative flex items-stretch gap-5 lg:gap-8 group"
+                data-menu-container={g.id}
+              >
                 {/* Timeline Node */}
                 <div className="relative z-10 mt-2 shrink-0 flex items-center justify-center">
                   {/* Outer glow ring for completed */}
@@ -188,19 +258,23 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                   </div>
                 </div>
 
-                {/* Group Card */}
-                <button
-                  type="button"
-                  onClick={() => handleStartGroup(g.id)}
-                  className={`cursor-pointer flex-1 bg-wp-card rounded-2xl border p-5 text-start transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-4 min-h-[88px] outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${
+                {/* Group Card Container */}
+                <div
+                  className={`relative flex-1 bg-wp-card rounded-2xl border p-5 text-start transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-4 min-h-[88px] ${
                     isCompleted
                       ? "border-wp-green/30 bg-wp-green-light/10 hover:bg-wp-green-light/20 shadow-sm"
                       : isNextToStudy
-                        ? "border-primary border-[2px] bg-secondary shadow-md hover:scale-[1.02] active:scale-[0.98]"
-                        : "border-border hover:border-primary/50 hover:bg-secondary/50 hover:-translate-y-1 active:translate-y-0 shadow-sm hover:shadow-md"
+                        ? "border-primary border-[2px] bg-secondary shadow-md hover:scale-[1.01]"
+                        : "border-border hover:border-primary/50 hover:bg-secondary/50 shadow-sm hover:shadow-md"
                   }`}
                 >
-                  <div className="flex items-start sm:items-center gap-4">
+                  {/* Clickable Info Area */}
+                  <button
+                    type="button"
+                    onClick={() => handleStartGroup(g.id)}
+                    className="cursor-pointer flex items-start sm:items-center gap-4 flex-1 text-start outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl"
+                    aria-label={`${isCompleted ? "Review" : "Start"} lesson: ${g.name}`}
+                  >
                     <div
                       className={`hidden sm:flex size-12 rounded-xl overflow-hidden shrink-0 border transition-colors ${
                         isCompleted
@@ -229,7 +303,13 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                     <div>
                       <div className="flex items-center gap-2 flex-wrap">
                         <p
-                          className={`font-sans font-bold text-lg leading-tight transition-colors ${isCompleted ? "text-wp-green" : isNextToStudy ? "text-primary" : "text-foreground group-hover:text-primary"}`}
+                          className={`font-sans font-bold text-lg leading-tight transition-colors ${
+                            isCompleted
+                              ? "text-wp-green"
+                              : isNextToStudy
+                                ? "text-primary"
+                                : "text-foreground group-hover:text-primary"
+                          }`}
                         >
                           {g.name}
                         </p>
@@ -249,9 +329,10 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                         {g.description}
                       </p>
                     </div>
-                  </div>
+                  </button>
 
-                  <div className="flex flex-wrap items-center gap-3 shrink-0 mt-3 sm:mt-0">
+                  {/* Actions Area */}
+                  <div className="flex items-center gap-2.5 shrink-0 mt-3 sm:mt-0">
                     <span
                       className={`font-sans font-bold text-xs px-3.5 py-1.5 rounded-full border transition-colors ${
                         isCompleted
@@ -263,9 +344,13 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                     >
                       {g.wordIds.length} Words
                     </span>
-                    <div
-                      className={`group-hover:opacity-90 group-active:scale-95 rounded-xl px-5 py-2.5 font-sans font-bold text-sm
-                        shadow-md transition-all flex items-center gap-2 group-hover:shadow-lg group-hover:-translate-y-0.5 ${
+
+                    {/* Main Start/Review Button */}
+                    <button
+                      type="button"
+                      onClick={() => handleStartGroup(g.id)}
+                      className={`cursor-pointer rounded-xl px-4 py-2.5 font-sans font-bold text-sm min-h-[44px]
+                        shadow-md transition-all flex items-center gap-2 hover:opacity-90 active:scale-95 outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${
                           isCompleted
                             ? "bg-wp-green text-white shadow-wp-green/20"
                             : "bg-wp-blue text-wp-text-on-blue shadow-wp-blue/20"
@@ -273,9 +358,158 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                     >
                       {isCompleted ? "Review" : "Start"}
                       <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                    </button>
+
+                    {/* Lesson Options Dropdown Trigger Button */}
+                    <div className="relative">
+                      <button
+                        type="button"
+                        id={`menu-trigger-${g.id}`}
+                        aria-haspopup="menu"
+                        aria-expanded={isMenuOpen}
+                        aria-controls={`menu-dropdown-${g.id}`}
+                        aria-label={`More options and quick navigation for ${g.name}`}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setOpenMenuId(isMenuOpen ? null : g.id);
+                          setExpandedStepMenuId(null);
+                        }}
+                        className={`cursor-pointer min-w-[44px] min-h-[44px] size-11 flex items-center justify-center rounded-xl border transition-all outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${
+                          isMenuOpen
+                            ? "border-primary bg-primary/10 text-primary shadow-sm"
+                            : "border-border bg-wp-card hover:bg-secondary text-foreground hover:text-primary"
+                        }`}
+                      >
+                        <MoreVertical className="size-5" aria-hidden />
+                      </button>
+
+                      {/* Accessible Dropdown Menu Modal / Sheet */}
+                      {isMenuOpen && (
+                        <div
+                          id={`menu-dropdown-${g.id}`}
+                          role="menu"
+                          aria-labelledby={`menu-trigger-${g.id}`}
+                          className="absolute end-0 top-full mt-2 w-72 z-50 bg-wp-card rounded-2xl border border-border shadow-2xl p-2 focus:outline-none animate-in fade-in zoom-in-95 duration-150"
+                        >
+                          <div className="px-3 py-2 border-b border-border/60 mb-1">
+                            <p className="font-sans font-bold text-xs text-foreground uppercase tracking-wider">
+                              Lesson Options
+                            </p>
+                            <p className="font-sans text-xs text-muted-foreground truncate">
+                              {g.name}
+                            </p>
+                          </div>
+
+                          {/* 1. Read Story Directly */}
+                          <button
+                            type="button"
+                            role="menuitem"
+                            onClick={() => handleStartGroup(g.id, 5)}
+                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                          >
+                            <div className="size-8 rounded-lg bg-wp-amber/10 text-wp-amber flex items-center justify-center shrink-0">
+                              <BookOpen className="size-4" />
+                            </div>
+                            <div className="flex-1">
+                              <p className="font-sans font-semibold text-sm leading-tight text-foreground">
+                                Read Story
+                              </p>
+                              <p className="font-sans text-xs text-muted-foreground">
+                                Jump to story & quiz
+                              </p>
+                            </div>
+                          </button>
+
+                          {/* 2. Browse Words */}
+                          <button
+                            type="button"
+                            role="menuitem"
+                            onClick={() => handleBrowseWords(g.id)}
+                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                          >
+                            <div className="size-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                              <Compass className="size-4" />
+                            </div>
+                            <div className="flex-1">
+                              <p className="font-sans font-semibold text-sm leading-tight text-foreground">
+                                Browse Words
+                              </p>
+                              <p className="font-sans text-xs text-muted-foreground">
+                                Vocabulary flashcards & audio
+                              </p>
+                            </div>
+                          </button>
+
+                          {/* 3. Practice Drills */}
+                          <button
+                            type="button"
+                            role="menuitem"
+                            onClick={() => handleStartGroup(g.id, 0)}
+                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                          >
+                            <div className="size-8 rounded-lg bg-wp-green-light text-wp-green flex items-center justify-center shrink-0">
+                              <Play className="size-4 fill-current" />
+                            </div>
+                            <div className="flex-1">
+                              <p className="font-sans font-semibold text-sm leading-tight text-foreground">
+                                Practice All Drills
+                              </p>
+                              <p className="font-sans text-xs text-muted-foreground">
+                                Complete 6-step curriculum
+                              </p>
+                            </div>
+                          </button>
+
+                          {/* 4. Jump to Specific Step Accordion / Submenu */}
+                          <div className="border-t border-border/60 mt-1 pt-1">
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setExpandedStepMenuId(expandedStepMenuId === g.id ? null : g.id);
+                              }}
+                              className="cursor-pointer w-full text-start flex items-center justify-between px-3 py-2 rounded-xl hover:bg-secondary transition-colors text-muted-foreground hover:text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[40px]"
+                              aria-expanded={expandedStepMenuId === g.id}
+                            >
+                              <div className="flex items-center gap-2">
+                                <ListOrdered className="size-4 text-primary" />
+                                <span className="font-sans font-medium text-xs">
+                                  Jump to Step...
+                                </span>
+                              </div>
+                              <ChevronRight
+                                className={`size-3.5 transition-transform ${
+                                  expandedStepMenuId === g.id ? "rotate-90" : ""
+                                }`}
+                              />
+                            </button>
+
+                            {expandedStepMenuId === g.id && (
+                              <div className="ps-2 pe-1 py-1 space-y-0.5 max-h-48 overflow-y-auto">
+                                {STEP_LABELS.map((item) => (
+                                  <button
+                                    key={item.step}
+                                    type="button"
+                                    role="menuitem"
+                                    onClick={() => handleStartGroup(g.id, item.step)}
+                                    className="cursor-pointer w-full text-start flex items-center gap-2 px-2.5 py-1.5 rounded-lg hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary min-h-[36px]"
+                                  >
+                                    <span className="text-sm">{item.icon}</span>
+                                    <div className="flex-1 min-w-0">
+                                      <p className="font-sans font-medium text-xs truncate">
+                                        {item.name}
+                                      </p>
+                                    </div>
+                                  </button>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
-                </button>
+                </div>
               </div>
             );
           })}

@@ -1,4 +1,4 @@
-﻿import { memo, useCallback, useEffect, useMemo, useState } from "react";
+import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
@@ -109,6 +109,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       words={words}
       lessonId={lessonId}
       dispatch={dispatch}
+      progress={{ current: queue.position, total: queue.total }}
       subtitle={
         <>
           <span className="uppercase tracking-wider">{group.name}</span>

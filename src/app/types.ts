@@ -3,7 +3,8 @@
 export type OnboardStep = "splash" | "language" | "ready";
 export type TabId = "home" | "explore" | "practice" | "profile";
 
-export type LearnerMode = "NEW_LESSON" | "SMART_REVIEW" | "SKILL_PRACTICE" | "UNIT_ASSESSMENT" | "PRE_LESSON_ASSESSMENT";
+export type LearnerMode =
+  "NEW_LESSON" | "SMART_REVIEW" | "SKILL_PRACTICE" | "UNIT_ASSESSMENT" | "PRE_LESSON_ASSESSMENT";
 export type SkillCategory = "listening" | "reading" | "speaking" | "writing";
 
 export type SkillExerciseId =
@@ -102,7 +103,14 @@ export type Action =
    * group and every lesson in the app collapsed onto the same five words.
    * Making it required turns that class of bug into a compile error.
    */
-  | { type: "START_LESSON"; lessonId: string; mode?: LearnerMode; wordQueue?: string[]; unitId?: string }
+  | {
+      type: "START_LESSON";
+      lessonId: string;
+      mode?: LearnerMode;
+      wordQueue?: string[];
+      unitId?: string;
+      initialStep?: number;
+    }
   | { type: "LESSON_ATTEMPT"; wordId?: string; correct: boolean }
   | { type: "LESSON_NEXT" }
   | { type: "LESSON_PREVIOUS" }

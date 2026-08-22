@@ -27,6 +27,12 @@ const TOPIC_COLORS: Record<string, [string, string]> = {
   objects: ["#fef3c7", "#92400e"],
   personal: ["#fce7f3", "#9d174d"],
   electronics: ["#e2e8f0", "#334155"],
+  flowers: ["#fce7f3", "#be123c"],
+  "trees-shrubs": ["#dcfce7", "#15803d"],
+  "garden-tools": ["#fef3c7", "#b45309"],
+  "parts-of-a-plant": ["#ecfdf5", "#047857"],
+  "garden-creatures": ["#fae8ff", "#a21caf"],
+  "garden-features": ["#d1fae5", "#065f46"],
 };
 
 const PRESET_WIDTH: Record<ImageSizePreset, number> = { thumb: 160, hero: 800, card: 400 };

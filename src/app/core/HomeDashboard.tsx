@@ -8,7 +8,7 @@ import { nextGroupToStudy, resolveUnitForLesson } from "../data/lessons";
 import { useOfflineReadiness } from "../shared/useOfflineReadiness";
 import { useI18n } from "../context/I18nContext";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
-import { PageContainer, Section, Card, Badge } from "../shared";
+import { PageContainer, Section, Card, Badge, ProgressBar } from "../shared";
 import { ReleaseNotesCard } from "./ReleaseNotesCard";
 import { staggerContainer, staggerItem } from "../shared/animations";
 
@@ -43,6 +43,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
     () => activeLesson.wordIds.filter((id) => progress.wordMemory[id]).length,
     [activeLesson.wordIds, progress.wordMemory]
   );
+  const lessonPct = Math.round((lessonWordsSeen / Math.max(1, activeLesson.wordIds.length)) * 100);
   const estimatedMinutes = Math.max(
     1,
     Math.round((activeLesson.wordIds.length * SECONDS_PER_WORD) / 60)
@@ -119,6 +120,15 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                 <p className="font-sans text-muted-foreground text-sm mt-1 leading-relaxed">
                   {activeLesson.description}
                 </p>
+              </div>
+
+              <div className="mt-3">
+                <ProgressBar
+                  progressPercent={lessonPct}
+                  label="Words mastered"
+                  labelRight={`${num(lessonWordsSeen)}/${num(activeLesson.wordIds.length)} (${lessonPct}%)`}
+                  ariaLabel={`Group progress: ${lessonPct}%`}
+                />
               </div>
 
               <motion.button

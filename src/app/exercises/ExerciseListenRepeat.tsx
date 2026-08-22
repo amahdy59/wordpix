@@ -140,6 +140,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
       words={words}
       lessonId={lessonId}
       dispatch={dispatch}
+      progress={{ current: activeWordIndex + 1, total: words.length }}
       subtitle={
         <>
           <span className="uppercase tracking-wider">{group.name}</span>

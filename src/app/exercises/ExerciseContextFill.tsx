@@ -109,6 +109,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       words={words}
       lessonId={lessonId}
       dispatch={dispatch}
+      progress={{ current: queue.position, total: queue.total }}
       subtitle={
         <>
           <span className="uppercase tracking-wider">{group.name}</span>
