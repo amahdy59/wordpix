@@ -19,3 +19,8 @@ pnpm-debug.log*
 .vscode/
 .idea/
 .DS_Store
+
+# Test outputs
+test-results/
+playwright-report/
+
