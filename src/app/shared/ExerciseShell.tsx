@@ -79,12 +79,12 @@ export const ExerciseShell = memo(function ExerciseShell({
           onClose={() => setShowExitModal(true)}
         />
 
-        {/* Expansive Main Content Area */}
+        {/* Expansive Main Content Area with adaptive scroll for small viewports */}
         <main
-          className="flex-1 overflow-hidden px-4 sm:px-6 lg:px-10 py-3 flex flex-col items-center justify-center min-h-0 w-full"
+          className="flex-1 overflow-y-auto overflow-x-hidden px-3 sm:px-6 lg:px-10 py-2 sm:py-3 flex flex-col items-center justify-center min-h-0 w-full"
           aria-label={`${title} exercise`}
         >
-          <div className="w-full max-w-4xl h-full mx-auto flex flex-col gap-3.5 justify-center">
+          <div className="w-full max-w-4xl h-full mx-auto flex flex-col gap-2.5 sm:gap-3.5 justify-center my-auto">
             {children}
           </div>
         </main>

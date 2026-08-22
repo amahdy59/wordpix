@@ -100,10 +100,38 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
     [lessonId, words]
   );
 
-  const handleToggle = () => {
+  const handleToggle = useCallback(() => {
     if (isPlaying) stop();
     else playWord();
-  };
+  }, [isPlaying, stop, playWord]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (
+        inspectedWord ||
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLTextAreaElement
+      )
+        return;
+
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        setActiveWordIndex((prev) => Math.max(0, prev - 1));
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        setActiveWordIndex((prev) => Math.min(words.length - 1, prev + 1));
+      } else if (
+        e.code === "Space" &&
+        (e.target === document.body || e.target === document.documentElement)
+      ) {
+        e.preventDefault();
+        handleToggle();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [words.length, inspectedWord, handleToggle]);
 
   return (
     <ExerciseShell
@@ -145,10 +173,10 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         {isPlaying ? `Now playing: ${currentWord.label}` : ""}
       </div>
 
-      <div className="relative flex flex-col gap-4 sm:gap-6 w-full max-w-2xl mx-auto h-full min-h-0 justify-center">
-        {/* Compact Word Selector Grid (No text, tight bounding box) */}
+      <div className="relative flex flex-col gap-2.5 sm:gap-3.5 w-full max-w-2xl mx-auto h-full min-h-0 justify-center">
+        {/* Compact Word Selector Thumbnails Strip */}
         <div
-          className="flex justify-center gap-2 sm:gap-3"
+          className="flex justify-center gap-1.5 sm:gap-2 shrink-0 overflow-x-auto py-1 px-1 scrollbar-none"
           role="tablist"
           aria-label="Group vocabulary words"
         >
@@ -161,14 +189,14 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                 role="tab"
                 aria-selected={isSelected}
                 onClick={() => handleSelectWordIndex(index)}
-                className={`relative size-12 sm:size-14 rounded-xl overflow-hidden transition-all ${
+                className={`relative size-10 sm:size-12 min-h-[44px] min-w-[44px] rounded-xl overflow-hidden transition-all shrink-0 ${
                   isSelected
-                    ? "border-[3px] border-primary shadow-wp-md scale-110"
-                    : "border-[2px] border-border hover:border-primary/50 opacity-70 hover:opacity-100"
+                    ? "border-[2.5px] border-primary shadow-wp-md scale-105"
+                    : "border border-border hover:border-primary/50 opacity-70 hover:opacity-100"
                 }`}
                 aria-label={`Word ${index + 1}: ${w.label}`}
               >
-                <WordImage word={w} width="56" height="56" className="size-full object-cover" />
+                <WordImage word={w} width="48" height="48" className="size-full object-cover" />
                 {isSelected && (
                   <div className="absolute inset-0 bg-primary/20 pointer-events-none" />
                 )}
@@ -177,20 +205,22 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           })}
         </div>
 
-        {/* Fluid Target Image Banner */}
-        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[4/3] sm:aspect-[16/9]">
+        {/* Fluid Target Image Banner with integrated bottom overlay */}
+        <div className="w-full relative rounded-2xl sm:rounded-3xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[4/3] sm:aspect-[16/10] max-h-[46vh] sm:max-h-[52vh]">
           <WordImage word={currentWord} className="w-full h-full absolute inset-0 object-cover" />
-          <div className="absolute top-3 start-3 sm:top-4 sm:start-4 bg-black/65 backdrop-blur-md text-white font-sans font-bold text-[11px] sm:text-xs px-3 py-1.5 rounded-xl border border-white/20 shadow-md flex items-center gap-1.5">
-            <Sparkles className="size-3.5 text-wp-amber animate-pulse" />
+
+          {/* Top Badges */}
+          <div className="absolute top-2.5 start-2.5 sm:top-3.5 sm:start-3.5 bg-black/60 backdrop-blur-md text-white font-sans font-bold text-[10px] sm:text-xs px-2.5 py-1 rounded-xl border border-white/20 shadow-md flex items-center gap-1.5 z-10 pointer-events-none">
+            <Sparkles className="size-3 text-wp-amber animate-pulse" />
             <span>Target Visual</span>
           </div>
 
-          {/* Floating Arrows */}
+          {/* Floating Navigation Arrows */}
           <button
             type="button"
             disabled={activeWordIndex === 0}
             onClick={() => handleSelectWordIndex(activeWordIndex - 1)}
-            className="absolute start-3 sm:start-4 top-1/2 -translate-y-1/2 size-10 sm:size-12 rounded-full bg-black/40 hover:bg-black/60 text-white backdrop-blur-sm flex items-center justify-center transition-all disabled:opacity-0 disabled:pointer-events-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            className="absolute start-2 sm:start-3 top-1/2 -translate-y-1/2 size-9 sm:size-11 min-h-[44px] min-w-[44px] rounded-full bg-black/45 hover:bg-black/70 text-white backdrop-blur-sm flex items-center justify-center transition-all disabled:opacity-0 disabled:pointer-events-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-white z-10"
             aria-label="Previous word"
           >
             <ChevronLeft className="size-5 sm:size-6" />
@@ -199,111 +229,112 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
             type="button"
             disabled={activeWordIndex === words.length - 1}
             onClick={() => handleSelectWordIndex(activeWordIndex + 1)}
-            className="absolute end-3 sm:end-4 top-1/2 -translate-y-1/2 size-10 sm:size-12 rounded-full bg-black/40 hover:bg-black/60 text-white backdrop-blur-sm flex items-center justify-center transition-all disabled:opacity-0 disabled:pointer-events-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            className="absolute end-2 sm:end-3 top-1/2 -translate-y-1/2 size-9 sm:size-11 min-h-[44px] min-w-[44px] rounded-full bg-black/45 hover:bg-black/70 text-white backdrop-blur-sm flex items-center justify-center transition-all disabled:opacity-0 disabled:pointer-events-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-white z-10"
             aria-label="Next word"
           >
             <ChevronRight className="size-5 sm:size-6" />
           </button>
-        </div>
 
-        {/* Word Info, Audio & Speech Production */}
-        <div className="flex flex-col items-center justify-center gap-3 mt-1 mb-2">
-          <div className="flex items-center justify-center gap-4 sm:gap-5 flex-wrap text-center">
-            {/* Audio Listen Button */}
-            <button
-              type="button"
-              onClick={handleToggle}
-              aria-label={`Play audio pronunciation for ${currentWord.label}`}
-              className="size-14 sm:size-16 rounded-full bg-primary transition-transform text-primary-foreground flex items-center justify-center shadow-wp-md focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary group hover:scale-105"
-            >
-              <Volume2 className={`size-6 sm:size-7 ${isPlaying ? "animate-pulse" : ""}`} />
-            </button>
-
-            {/* Microphone Speaking Practice Button */}
-            {speechStatus !== "unsupported" && (
-              <button
-                type="button"
-                onClick={() => (isListening ? stopListening() : listen(currentWord.label))}
-                aria-label={
-                  isListening ? "Stop recording speech" : `Practice speaking ${currentWord.label}`
-                }
-                className={`size-14 sm:size-16 rounded-full transition-all flex items-center justify-center shadow-wp-md focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary group ${
-                  speechSuccess
-                    ? "bg-wp-green text-wp-text-on-green scale-105"
-                    : isListening
-                      ? "bg-wp-rose text-white animate-pulse"
-                      : "bg-secondary text-foreground hover:bg-muted border border-border"
-                }`}
-              >
-                {speechSuccess ? (
-                  <CheckCircle2 className="size-6 sm:size-7" />
-                ) : isListening ? (
-                  <MicOff className="size-6 sm:size-7" />
-                ) : (
-                  <Mic className="size-6 sm:size-7 text-primary" />
-                )}
-              </button>
-            )}
-
-            {/* Word Label, Phonetics & Details */}
-            <div className="flex flex-col items-start sm:items-center">
-              <div className="flex items-baseline gap-2 sm:gap-3">
-                <span className="font-sans font-black text-foreground text-3xl sm:text-4xl lg:text-5xl">
+          {/* Bottom Integrated Overlay for Word Info & Interactive Controls */}
+          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/75 to-transparent pt-10 pb-3 px-3.5 sm:px-5 flex items-end justify-between gap-3 z-10">
+            {/* Left side: Word label, Phonetics, Arabic Translation, Info button */}
+            <div className="flex flex-col min-w-0">
+              <div className="flex items-baseline gap-2 flex-wrap">
+                <span className="font-sans font-black text-white text-xl sm:text-2xl lg:text-3xl leading-tight capitalize drop-shadow">
                   {currentWord.label}
                 </span>
-                <span className="font-sans font-medium text-muted-foreground text-base sm:text-xl">
+                <span className="font-sans font-medium text-white/80 text-xs sm:text-sm drop-shadow">
                   /{currentWord.phonetic.replace(/^\/|\/$/g, "")}/
                 </span>
                 <button
                   type="button"
                   onClick={() => setInspectedWord(currentWord)}
                   aria-label={`Inspect full dictionary entry for ${currentWord.label}`}
-                  className="size-9 rounded-xl bg-secondary text-muted-foreground hover:text-foreground border border-border flex items-center justify-center transition-colors ms-1"
+                  className="size-8 min-h-[44px] min-w-[44px] rounded-lg bg-white/20 hover:bg-white/30 text-white flex items-center justify-center backdrop-blur-sm transition-colors"
                 >
                   <Info className="size-4" />
                 </button>
               </div>
 
-              {/* Arabic Meaning & Collocation hint */}
-              <div className="flex items-center gap-2 mt-1">
+              {/* Arabic Translation with diacritics */}
+              <div className="flex items-center gap-2 mt-0.5">
                 <span
-                  className="font-arabic font-bold text-primary text-base sm:text-lg"
+                  className="font-arabic font-bold text-wp-amber text-sm sm:text-base drop-shadow"
                   dir="rtl"
                   lang="ar"
                 >
                   {getLexiconEntry(currentWord.id, currentWord.label).arabic}
                 </span>
-                <span className="text-xs text-muted-foreground font-sans">·</span>
+                <span className="text-[11px] font-sans text-white/60">·</span>
                 <button
                   type="button"
                   onClick={() => setInspectedWord(currentWord)}
-                  className="text-xs font-sans font-semibold text-muted-foreground hover:text-primary underline"
+                  className="text-[11px] sm:text-xs font-sans font-semibold text-white/80 hover:text-white underline min-h-[44px] flex items-center"
                 >
-                  View Details &amp; Collocations
+                  Details &amp; Collocations
                 </button>
               </div>
             </div>
+
+            {/* Right side: Audio and Mic Action Buttons */}
+            <div className="flex items-center gap-2 shrink-0">
+              {/* Listen button */}
+              <button
+                type="button"
+                onClick={handleToggle}
+                aria-label={`Play audio pronunciation for ${currentWord.label}`}
+                className="size-11 sm:size-12 min-h-[44px] min-w-[44px] rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-lg hover:scale-105 transition-transform focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-white group"
+              >
+                <Volume2 className={`size-5 sm:size-6 ${isPlaying ? "animate-pulse" : ""}`} />
+              </button>
+
+              {/* Microphone Speaking Practice Button */}
+              {speechStatus !== "unsupported" && (
+                <button
+                  type="button"
+                  onClick={() => (isListening ? stopListening() : listen(currentWord.label))}
+                  aria-label={
+                    isListening ? "Stop recording speech" : `Practice speaking ${currentWord.label}`
+                  }
+                  className={`size-11 sm:size-12 min-h-[44px] min-w-[44px] rounded-full transition-all flex items-center justify-center shadow-lg focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-white group ${
+                    speechSuccess
+                      ? "bg-wp-green text-wp-text-on-green scale-105"
+                      : isListening
+                        ? "bg-wp-rose text-white animate-pulse"
+                        : "bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm"
+                  }`}
+                >
+                  {speechSuccess ? (
+                    <CheckCircle2 className="size-5 sm:size-6" />
+                  ) : isListening ? (
+                    <MicOff className="size-5 sm:size-6" />
+                  ) : (
+                    <Mic className="size-5 sm:size-6" />
+                  )}
+                </button>
+              )}
+            </div>
           </div>
-
-          {/* Real-Time Speech Feedback Banner */}
-          {speechStatus === "listening" && (
-            <div className="bg-primary/10 border border-primary/30 rounded-2xl px-4 py-2 flex items-center gap-2 animate-pulse">
-              <Mic className="size-4 text-primary" />
-              <span className="font-sans text-xs font-bold text-primary">
-                Listening... Say &ldquo;{currentWord.label}&rdquo; clearly into your mic!
-              </span>
-            </div>
-          )}
-
-          {speechSuccess && (
-            <div className="bg-wp-green/10 border border-wp-green/30 rounded-2xl px-4 py-2 flex items-center gap-2">
-              <CheckCircle2 className="size-4 text-wp-green" />
-              <span className="font-sans text-xs font-bold text-wp-green">
-                Excellent pronunciation! Word recognized. 🎉
-              </span>
-            </div>
-          )}
         </div>
+
+        {/* Real-Time Speech Feedback Banner (Compact) */}
+        {speechStatus === "listening" && (
+          <div className="bg-primary/10 border border-primary/30 rounded-xl px-3 py-1.5 flex items-center justify-center gap-2 animate-pulse shrink-0">
+            <Mic className="size-3.5 text-primary" />
+            <span className="font-sans text-xs font-bold text-primary">
+              Listening... Say &ldquo;{currentWord.label}&rdquo; clearly!
+            </span>
+          </div>
+        )}
+
+        {speechSuccess && (
+          <div className="bg-wp-green/10 border border-wp-green/30 rounded-xl px-3 py-1.5 flex items-center justify-center gap-2 shrink-0">
+            <CheckCircle2 className="size-3.5 text-wp-green" />
+            <span className="font-sans text-xs font-bold text-wp-green">
+              Excellent pronunciation! Word recognized. 🎉
+            </span>
+          </div>
+        )}
 
         {!isSupported && (
           <p className="font-sans text-muted-foreground text-xs text-center">
