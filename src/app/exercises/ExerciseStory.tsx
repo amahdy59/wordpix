@@ -3,6 +3,7 @@ import type { Action } from "../types";
 import type { VocabularyItem } from "../data/lessons";
 import { resolveGroup } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
+import { playCorrectSound, playIncorrectSound } from "../shared/useSound";
 import { useAudio } from "../shared/useAudio";
 import {
   BookOpen,
@@ -175,12 +176,31 @@ export const ExerciseStory = memo(function ExerciseStory({
     }));
   };
 
-  const handleSelectQuizAnswer = useCallback((questionId: string, optionIdx: number) => {
-    setQuizAnswers((prev) => ({
-      ...prev,
-      [questionId]: optionIdx,
-    }));
-  }, []);
+  const handleSelectQuizAnswer = useCallback(
+    (questionId: string, optionIdx: number) => {
+      setQuizAnswers((prev) => {
+        // Prevent clicking again if already answered
+        if (prev[questionId] !== undefined) return prev;
+
+        const q = storyBundle.quiz.find((q) => q.id === questionId);
+        if (q) {
+          if (q.correctIndex === optionIdx) {
+            playCorrectSound();
+          } else {
+            playIncorrectSound();
+          }
+          // Voice feedback to make application more interactive
+          speak(q.explanation);
+        }
+
+        return {
+          ...prev,
+          [questionId]: optionIdx,
+        };
+      });
+    },
+    [storyBundle.quiz, speak]
+  );
 
   // Keyboard number hotkeys (1, 2, 3, 4) for active quiz question
   useEffect(() => {
@@ -358,7 +378,10 @@ export const ExerciseStory = memo(function ExerciseStory({
       }
       footer={footerContent}
     >
-      <div ref={scrollContainerRef} className="w-full max-w-2xl mx-auto flex flex-col gap-4 pb-6">
+      <div
+        ref={scrollContainerRef}
+        className="w-full max-w-4xl xl:max-w-5xl mx-auto flex flex-col gap-4 pb-6"
+      >
         {/* Top 5-Section Sequential Stepper Navigation */}
         <nav
           aria-label="Story and context sections"
@@ -524,7 +547,7 @@ export const ExerciseStory = memo(function ExerciseStory({
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
               {words.map((item) => {
                 const isActive = activeWordId === item.id;
                 return (

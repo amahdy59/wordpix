@@ -58,18 +58,10 @@ export const ExerciseShell = memo(function ExerciseShell({
   );
 
   const currentProgress =
-    typeof progress === "number"
-      ? progress
-      : progress
-        ? progress.current
-        : step + 1;
+    typeof progress === "number" ? progress : progress ? progress.current : step + 1;
 
   const totalProgress =
-    typeof progress === "number"
-      ? 100
-      : progress
-        ? progress.total
-        : EXERCISE_STEP_COUNT;
+    typeof progress === "number" ? 100 : progress ? progress.total : EXERCISE_STEP_COUNT;
 
   return (
     <div className="bg-background flex flex-col lg:flex-row min-h-svh lg:h-svh lg:min-h-0 lg:overflow-hidden relative">
@@ -98,13 +90,13 @@ export const ExerciseShell = memo(function ExerciseShell({
           className="flex-1 overflow-y-auto overflow-x-hidden px-3 sm:px-6 lg:px-10 py-3 sm:py-5 flex flex-col items-center min-h-0 w-full scroll-smooth"
           aria-label={`${title} exercise`}
         >
-          <div className="w-full max-w-4xl min-h-full mx-auto flex flex-col gap-3 sm:gap-4 justify-start my-0 pb-32 sm:pb-40">
+          <div className="w-full max-w-6xl min-h-full mx-auto flex flex-col gap-3 sm:gap-4 justify-start my-0 pb-32 sm:pb-40">
             {children}
           </div>
         </main>
 
         {/* Pinned Footer */}
-        <footer className="shrink-0 px-4 sm:px-6 lg:px-10 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] sm:pb-6 pt-3 border-t border-border/60 bg-background flex flex-col max-w-4xl mx-auto w-full">
+        <footer className="shrink-0 px-4 sm:px-6 lg:px-10 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] sm:pb-6 pt-3 border-t border-border/60 bg-background flex flex-col max-w-6xl mx-auto w-full">
           <div className="flex flex-col gap-1.5 w-full">{footer}</div>
         </footer>
 
