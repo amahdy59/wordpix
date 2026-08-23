@@ -6177,6 +6177,784 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
   },
 ];
 
+// ==========================================
+// THE MARKET
+// ==========================================
+
+export const MARKET_TOPICS: TopicCategory[] = [
+  {
+    id: "common-fruits",
+    name: "Common Fruits",
+    description: "Sweet, juicy orchard and tropical fruits harvested fresh for the market.",
+    icon: "sun",
+    itemsCount: 12,
+  },
+  {
+    id: "common-vegetables",
+    name: "Common Vegetables",
+    description: "Nutritious garden greens, root vegetables, and aromatic cooking staples.",
+    icon: "feather",
+    itemsCount: 12,
+  },
+  {
+    id: "meat-seafood",
+    name: "Meat & Seafood",
+    description: "Fresh cuts of poultry, beef, pork, and ocean seafood from the butcher.",
+    icon: "anchor",
+    itemsCount: 12,
+  },
+  {
+    id: "dairy-bakery",
+    name: "Dairy & Bakery",
+    description: "Fresh milk, cheeses, artisan breads, flaky pastries, and sweet desserts.",
+    icon: "coffee",
+    itemsCount: 12,
+  },
+  {
+    id: "market-areas",
+    name: "Market Areas",
+    description: "Supermarket departments, refrigerated sections, aisles, and weighing stations.",
+    icon: "layout",
+    itemsCount: 10,
+  },
+  {
+    id: "shopping-actions",
+    name: "Shopping & Payment",
+    description: "Checkout accessories, payment methods, receipts, bags, and discount coupons.",
+    icon: "credit-card",
+    itemsCount: 10,
+  },
+];
+
+export const MARKET_GROUPS: Lesson[] = [
+  {
+    id: "common-fruits",
+    name: "Common Fruits",
+    topicId: "common-fruits",
+    description: "Learn about sweet apples, bananas, citrus fruits, berries, and melons.",
+    wordIds: [
+      "apple",
+      "banana",
+      "orange",
+      "grape",
+      "strawberry",
+      "watermelon",
+      "mango",
+      "pear",
+      "peach",
+      "pineapple",
+      "lemon",
+      "lime",
+    ],
+    story:
+      "Tariq browsed the fruit stand, selecting a red apple, yellow banana, and sweet orange. He tasted a seedless grape, a ripe scarlet strawberry, and a slice of chilled watermelon. Next, he picked a golden mango, a green pear, a fuzzy peach, a spiky tropical pineapple, a yellow sour lemon, and a green lime.",
+  },
+  {
+    id: "common-vegetables",
+    name: "Common Vegetables",
+    topicId: "common-vegetables",
+    description: "Learn about crunchy carrots, greens, onions, potatoes, and cooking aromatics.",
+    wordIds: [
+      "carrot",
+      "broccoli",
+      "onion",
+      "pepper",
+      "tomato",
+      "cucumber",
+      "lettuce",
+      "potato",
+      "mushroom",
+      "spinach",
+      "garlic",
+      "corn",
+    ],
+    story:
+      "Laila loaded her basket with a crunchy orange carrot, a head of green broccoli, a yellow onion, and a red bell pepper. She chose a vine tomato, a crisp green cucumber, fresh romaine lettuce, and a starchy russet potato. To finish the soup, she added a button mushroom, tender baby spinach, aromatic garlic, and sweet golden corn.",
+  },
+  {
+    id: "meat-seafood",
+    name: "Meat & Seafood",
+    topicId: "meat-seafood",
+    description: "Learn about fresh poultry, butcher steaks, sausages, and ocean seafood.",
+    wordIds: [
+      "chicken",
+      "beef",
+      "pork",
+      "fish",
+      "shrimp",
+      "sausage",
+      "ham",
+      "bacon",
+      "turkey",
+      "salmon",
+      "tuna",
+      "lamb",
+    ],
+    story:
+      "At the butcher and seafood counter, Omar ordered fresh chicken breasts and ground beef. The display featured seasoned pork, whole ocean fish, pink shrimp, and smoked artisan sausage. He also looked at sliced ham, crispy breakfast bacon, roast turkey slices, pink Atlantic salmon, seared ahi tuna, and tender spring lamb.",
+  },
+  {
+    id: "dairy-bakery",
+    name: "Dairy & Bakery",
+    topicId: "dairy-bakery",
+    description: "Learn about milk, cheeses, yogurts, artisan breads, and baked desserts.",
+    wordIds: [
+      "milk",
+      "cheese",
+      "yogurt",
+      "butter",
+      "cream",
+      "bread",
+      "roll",
+      "bagel",
+      "croissant",
+      "cake",
+      "pie",
+      "cookie",
+    ],
+    story:
+      "In the dairy cooler, Sara grabbed fresh whole milk, sharp cheddar cheese, Greek yogurt, salted butter, and whipping cream. Moving to the bakery, she took a crusty loaf of bread, a soft dinner roll, a toasted bagel, and a flaky French croissant. For dessert, she admired a decorated chocolate cake, a spiced apple pie, and a chewy cookie.",
+  },
+  {
+    id: "market-areas",
+    name: "Market Areas",
+    topicId: "market-areas",
+    description: "Learn supermarket sections, service counters, aisles, and weighing gear.",
+    wordIds: [
+      "produce-section",
+      "deli-counter",
+      "bakery",
+      "frozen-foods",
+      "checkout",
+      "aisle",
+      "shopping-cart",
+      "basket",
+      "cash-register",
+      "scale",
+    ],
+    story:
+      "Shoppers begin in the misted produce-section before ordering sliced cheeses at the deli-counter and fresh bread at the bakery. They grab ice cream from the frozen-foods freezers and head to the front checkout. Pushing a chrome shopping-cart or carrying a red basket down each wide aisle, they watch the cashier weigh fruit on the scale beside the cash-register.",
+  },
+  {
+    id: "shopping-actions",
+    name: "Shopping & Payment",
+    topicId: "shopping-actions",
+    description: "Learn about prices, scanning barcodes, discount coupons, and payment options.",
+    wordIds: [
+      "price-tag",
+      "receipt",
+      "barcode",
+      "shopping-bag",
+      "coupon",
+      "shopping-list",
+      "credit-card",
+      "cash",
+      "change",
+      "wallet",
+    ],
+    story:
+      "Hassan checked the shelf price-tag against his handwritten shopping-list and clipped a discount coupon. The cashier scanned the cereal box barcode and packed goods into a reusable shopping-bag. Hassan opened his leather wallet to pay either by contactless credit-card or exact cash, receiving a printed paper receipt and coin change.",
+  },
+];
+
+export const MARKET_VOCABULARY: VocabularyItem[] = [
+  // 1. Common Fruits (12)
+  {
+    id: "apple",
+    label: "Apple",
+    phonetic: "ˈæpəl",
+    img: `${LOCAL_WORD_IMAGES}/market/apple.webp`,
+    topic: "common-fruits",
+    description:
+      "A crisp round edible tree fruit with red, green, or yellow skin and a firm sweet core.",
+  },
+  {
+    id: "banana",
+    label: "Banana",
+    phonetic: "bəˈnænə",
+    img: `${LOCAL_WORD_IMAGES}/market/banana.webp`,
+    topic: "common-fruits",
+    description: "A long curved tropical yellow fruit with soft, creamy, sweet pulp.",
+  },
+  {
+    id: "orange",
+    label: "Orange",
+    phonetic: "ˈɔːrɪndʒ",
+    img: `${LOCAL_WORD_IMAGES}/market/orange.webp`,
+    topic: "common-fruits",
+    description: "A round citrus fruit with a textured peel and sweet, juicy, segmented pulp.",
+  },
+  {
+    id: "grape",
+    label: "Grape",
+    phonetic: "ɡreɪp",
+    img: `${LOCAL_WORD_IMAGES}/market/grape.webp`,
+    topic: "common-fruits",
+    description: "A small sweet or tart juicy berry growing in clusters on climbing vines.",
+  },
+  {
+    id: "strawberry",
+    label: "Strawberry",
+    phonetic: "ˈstrɔːbɛri",
+    img: `${LOCAL_WORD_IMAGES}/market/strawberry.webp`,
+    topic: "common-fruits",
+    description: "A sweet, fragrant scarlet berry with tiny external seeds and a leafy green cap.",
+  },
+  {
+    id: "watermelon",
+    label: "Watermelon",
+    phonetic: "ˈwɔːtərˌmɛlən",
+    img: `${LOCAL_WORD_IMAGES}/market/watermelon.webp`,
+    topic: "common-fruits",
+    description: "A giant green striped fruit with refreshing sweet pink pulp and dark seeds.",
+  },
+  {
+    id: "mango",
+    label: "Mango",
+    phonetic: "ˈmæŋɡoʊ",
+    img: `${LOCAL_WORD_IMAGES}/market/mango.webp`,
+    topic: "common-fruits",
+    description: "A tropical stone fruit with smooth skin and juicy, aromatic golden-orange flesh.",
+  },
+  {
+    id: "pear",
+    label: "Pear",
+    phonetic: "pɛər",
+    img: `${LOCAL_WORD_IMAGES}/market/pear.webp`,
+    topic: "common-fruits",
+    description: "A sweet pomaceous fruit with a rounded base tapering upward toward the stem.",
+  },
+  {
+    id: "peach",
+    label: "Peach",
+    phonetic: "piːtʃ",
+    img: `${LOCAL_WORD_IMAGES}/market/peach.webp`,
+    topic: "common-fruits",
+    description: "A velvety, fuzzy-skinned summer stone fruit with sweet, aromatic flesh.",
+  },
+  {
+    id: "pineapple",
+    label: "Pineapple",
+    phonetic: "ˈpaɪnˌæpəl",
+    img: `${LOCAL_WORD_IMAGES}/market/pineapple.webp`,
+    topic: "common-fruits",
+    description: "A large tropical fruit with a spiky green crown and sweet, fibrous golden pulp.",
+  },
+  {
+    id: "lemon",
+    label: "Lemon",
+    phonetic: "ˈlɛmən",
+    img: `${LOCAL_WORD_IMAGES}/market/lemon.webp`,
+    topic: "common-fruits",
+    description: "An oval yellow citrus fruit with intensely sour, acidic juice and fragrant zest.",
+  },
+  {
+    id: "lime",
+    label: "Lime",
+    phonetic: "laɪm",
+    img: `${LOCAL_WORD_IMAGES}/market/lime.webp`,
+    topic: "common-fruits",
+    description: "A small round green citrus fruit known for its sharp, tangy, refreshing juice.",
+  },
+
+  // 2. Common Vegetables (12)
+  {
+    id: "carrot",
+    label: "Carrot",
+    phonetic: "ˈkærət",
+    img: `${LOCAL_WORD_IMAGES}/market/carrot.webp`,
+    topic: "common-vegetables",
+    description: "A tapering, crunchy orange taproot vegetable rich in beta-carotene.",
+  },
+  {
+    id: "broccoli",
+    label: "Broccoli",
+    phonetic: "ˈbrɑːkəli",
+    img: `${LOCAL_WORD_IMAGES}/market/broccoli.webp`,
+    topic: "common-vegetables",
+    description:
+      "A green vegetable composed of dense clusters of edible flower buds atop thick stalks.",
+  },
+  {
+    id: "onion",
+    label: "Onion",
+    phonetic: "ˈʌnjən",
+    img: `${LOCAL_WORD_IMAGES}/market/onion.webp`,
+    topic: "common-vegetables",
+    description:
+      "A pungent layered bulb vegetable that forms the aromatic foundation of savory cooking.",
+  },
+  {
+    id: "pepper",
+    label: "Pepper",
+    phonetic: "ˈpɛpər",
+    img: `${LOCAL_WORD_IMAGES}/market/pepper.webp`,
+    topic: "common-vegetables",
+    description: "A glossy hollow vegetable ranging in flavor from sweet and mild to fiery hot.",
+  },
+  {
+    id: "tomato",
+    label: "Tomato",
+    phonetic: "təˈmeɪtoʊ",
+    img: `${LOCAL_WORD_IMAGES}/market/tomato.webp`,
+    topic: "common-vegetables",
+    description:
+      "A juicy, glossy red fruit culinarily treated as a savory vegetable for sauces and salads.",
+  },
+  {
+    id: "cucumber",
+    label: "Cucumber",
+    phonetic: "ˈkjuːkʌmbər",
+    img: `${LOCAL_WORD_IMAGES}/market/cucumber.webp`,
+    topic: "common-vegetables",
+    description:
+      "A cylindrical green vegetable with crisp, watery flesh and a cool, refreshing flavor.",
+  },
+  {
+    id: "lettuce",
+    label: "Lettuce",
+    phonetic: "ˈlɛtɪs",
+    img: `${LOCAL_WORD_IMAGES}/market/lettuce.webp`,
+    topic: "common-vegetables",
+    description: "A leafy green garden vegetable cultivated for fresh salads and sandwich wraps.",
+  },
+  {
+    id: "potato",
+    label: "Potato",
+    phonetic: "pəˈteɪtoʊ",
+    img: `${LOCAL_WORD_IMAGES}/market/potato.webp`,
+    topic: "common-vegetables",
+    description:
+      "A starchy subterranean tuber widely boiled, roasted, or mashed as a dietary staple.",
+  },
+  {
+    id: "mushroom",
+    label: "Mushroom",
+    phonetic: "ˈmʌʃruːm",
+    img: `${LOCAL_WORD_IMAGES}/market/mushroom.webp`,
+    topic: "common-vegetables",
+    description:
+      "The fleshy, spore-bearing fruiting body of a fungus prized for savory umami flavor.",
+  },
+  {
+    id: "spinach",
+    label: "Spinach",
+    phonetic: "ˈspɪnɪtʃ",
+    img: `${LOCAL_WORD_IMAGES}/market/spinach.webp`,
+    topic: "common-vegetables",
+    description: "A dark leafy green vegetable rich in iron and nutrients, enjoyed raw or wilted.",
+  },
+  {
+    id: "garlic",
+    label: "Garlic",
+    phonetic: "ˈɡɑːrlɪk",
+    img: `${LOCAL_WORD_IMAGES}/market/garlic.webp`,
+    topic: "common-vegetables",
+    description:
+      "A strongly scented bulb consisting of pungent cloves used to season savory dishes.",
+  },
+  {
+    id: "corn",
+    label: "Corn",
+    phonetic: "kɔːrn",
+    img: `${LOCAL_WORD_IMAGES}/market/corn.webp`,
+    topic: "common-vegetables",
+    description:
+      "A tall cereal plant producing large ears lined with rows of sweet golden kernels.",
+  },
+
+  // 3. Meat & Seafood (12)
+  {
+    id: "chicken",
+    label: "Chicken",
+    phonetic: "ˈtʃɪkɪn",
+    img: `${LOCAL_WORD_IMAGES}/market/chicken.webp`,
+    topic: "meat-seafood",
+    description:
+      "Lean poultry meat sourced from domestic fowl, widely roasted, stewed, or grilled.",
+  },
+  {
+    id: "beef",
+    label: "Beef",
+    phonetic: "biːf",
+    img: `${LOCAL_WORD_IMAGES}/market/beef.webp`,
+    topic: "meat-seafood",
+    description:
+      "Savory red culinary meat sourced from adult cattle, enjoyed as steaks, roasts, or patties.",
+  },
+  {
+    id: "pork",
+    label: "Pork",
+    phonetic: "pɔːrk",
+    img: `${LOCAL_WORD_IMAGES}/market/pork.webp`,
+    topic: "meat-seafood",
+    description: "Culinary meat derived from domestic pigs, cured into ham or cut into chops.",
+  },
+  {
+    id: "fish",
+    label: "Fish",
+    phonetic: "fɪʃ",
+    img: `${LOCAL_WORD_IMAGES}/market/fish.webp`,
+    topic: "meat-seafood",
+    description: "Fresh aquatic seafood with delicate, flaky, protein-rich flesh.",
+  },
+  {
+    id: "shrimp",
+    label: "Shrimp",
+    phonetic: "ʃrɪmp",
+    img: `${LOCAL_WORD_IMAGES}/market/shrimp.webp`,
+    topic: "meat-seafood",
+    description: "Small decapod crustaceans with tender curved tails that turn pink when cooked.",
+  },
+  {
+    id: "sausage",
+    label: "Sausage",
+    phonetic: "ˈsɔːsɪdʒ",
+    img: `${LOCAL_WORD_IMAGES}/market/sausage.webp`,
+    topic: "meat-seafood",
+    description:
+      "Ground seasoned culinary meat encased in cylindrical skins and smoked or grilled.",
+  },
+  {
+    id: "ham",
+    label: "Ham",
+    phonetic: "hæm",
+    img: `${LOCAL_WORD_IMAGES}/market/ham.webp`,
+    topic: "meat-seafood",
+    description:
+      "Cured and smoked meat taken from the hind leg of livestock, sliced for sandwiches.",
+  },
+  {
+    id: "bacon",
+    label: "Bacon",
+    phonetic: "ˈbeɪkən",
+    img: `${LOCAL_WORD_IMAGES}/market/bacon.webp`,
+    topic: "meat-seafood",
+    description:
+      "Cured and smoked strips of savory pork belly that sizzle to a crunchy golden finish.",
+  },
+  {
+    id: "turkey",
+    label: "Turkey",
+    phonetic: "ˈtɜːrki",
+    img: `${LOCAL_WORD_IMAGES}/market/turkey.webp`,
+    topic: "meat-seafood",
+    description: "Large poultry bird roasted whole with stuffing for festive holiday dinners.",
+  },
+  {
+    id: "salmon",
+    label: "Salmon",
+    phonetic: "ˈsæmən",
+    img: `${LOCAL_WORD_IMAGES}/market/salmon.webp`,
+    topic: "meat-seafood",
+    description:
+      "A prized ocean-migrating fish with rich, pink-orange oily flesh packed with healthy fats.",
+  },
+  {
+    id: "tuna",
+    label: "Tuna",
+    phonetic: "ˈtuːnə",
+    img: `${LOCAL_WORD_IMAGES}/market/tuna.webp`,
+    topic: "meat-seafood",
+    description:
+      "A large, fast-swimming predatory marine fish with firm, dark red savory steak meat.",
+  },
+  {
+    id: "lamb",
+    label: "Lamb",
+    phonetic: "læm",
+    img: `${LOCAL_WORD_IMAGES}/market/lamb.webp`,
+    topic: "meat-seafood",
+    description: "Tender culinary meat derived from young sheep, seasoned with herbs and garlic.",
+  },
+
+  // 4. Dairy & Bakery (12)
+  {
+    id: "milk",
+    label: "Milk",
+    phonetic: "mɪlk",
+    img: `${LOCAL_WORD_IMAGES}/market/milk.webp`,
+    topic: "dairy-bakery",
+    description:
+      "A nutrient-rich white liquid produced by mammals, consumed as a beverage and cooking base.",
+  },
+  {
+    id: "cheese",
+    label: "Cheese",
+    phonetic: "tʃiːz",
+    img: `${LOCAL_WORD_IMAGES}/market/cheese.webp`,
+    topic: "dairy-bakery",
+    description:
+      "A solid dairy food made from curdled milk, aged into diverse textures and flavors.",
+  },
+  {
+    id: "yogurt",
+    label: "Yogurt",
+    phonetic: "ˈjoʊɡərt",
+    img: `${LOCAL_WORD_IMAGES}/market/yogurt.webp`,
+    topic: "dairy-bakery",
+    description:
+      "A thick, creamy fermented dairy product cultured with beneficial probiotic bacteria.",
+  },
+  {
+    id: "butter",
+    label: "Butter",
+    phonetic: "ˈbʌtər",
+    img: `${LOCAL_WORD_IMAGES}/market/butter.webp`,
+    topic: "dairy-bakery",
+    description:
+      "A pale yellow fat produced by churning fresh cream, spread on toast or used in baking.",
+  },
+  {
+    id: "cream",
+    label: "Cream",
+    phonetic: "kriːm",
+    img: `${LOCAL_WORD_IMAGES}/market/cream.webp`,
+    topic: "dairy-bakery",
+    description: "The rich, high-fat dairy layer skimmed from whole milk before homogenization.",
+  },
+  {
+    id: "bread",
+    label: "Bread",
+    phonetic: "brɛd",
+    img: `${LOCAL_WORD_IMAGES}/market/bread.webp`,
+    topic: "dairy-bakery",
+    description: "A staple food prepared from a baked dough of flour, water, and leavening yeast.",
+  },
+  {
+    id: "roll",
+    label: "Roll",
+    phonetic: "roʊl",
+    img: `${LOCAL_WORD_IMAGES}/market/roll.webp`,
+    topic: "dairy-bakery",
+    description:
+      "A small, individual baked portion of yeast dough with a soft crumb and golden crust.",
+  },
+  {
+    id: "bagel",
+    label: "Bagel",
+    phonetic: "ˈbeɪɡəl",
+    img: `${LOCAL_WORD_IMAGES}/market/bagel.webp`,
+    topic: "dairy-bakery",
+    description:
+      "A ring-shaped yeast bread roll boiled before baking to develop a dense, chewy crust.",
+  },
+  {
+    id: "croissant",
+    label: "Croissant",
+    phonetic: "kwɑːˈsɑːnt",
+    img: `${LOCAL_WORD_IMAGES}/market/croissant.webp`,
+    topic: "dairy-bakery",
+    description:
+      "A crescent-shaped French pastry made of laminated yeast dough rich in butter layers.",
+  },
+  {
+    id: "cake",
+    label: "Cake",
+    phonetic: "keɪk",
+    img: `${LOCAL_WORD_IMAGES}/market/cake.webp`,
+    topic: "dairy-bakery",
+    description:
+      "A sweet baked dessert made from flour, sugar, and eggs, decorated with rich frosting.",
+  },
+  {
+    id: "pie",
+    label: "Pie",
+    phonetic: "paɪ",
+    img: `${LOCAL_WORD_IMAGES}/market/pie.webp`,
+    topic: "dairy-bakery",
+    description:
+      "A baked dish with a flaky pastry crust encasing sweet fruit fillings or savory stews.",
+  },
+  {
+    id: "cookie",
+    label: "Cookie",
+    phonetic: "ˈkʊki",
+    img: `${LOCAL_WORD_IMAGES}/market/cookie.webp`,
+    topic: "dairy-bakery",
+    description: "A small, flat, sweet baked biscuit containing chocolate chips, nuts, or spices.",
+  },
+
+  // 5. Market Areas (10)
+  {
+    id: "produce-section",
+    label: "Produce Section",
+    phonetic: "ˈprɑːduːs ˈsɛkʃən",
+    img: `${LOCAL_WORD_IMAGES}/market/produce-section.webp`,
+    topic: "market-areas",
+    description:
+      "A refrigerated store area showcasing chilled misted displays of fresh fruits and greens.",
+  },
+  {
+    id: "deli-counter",
+    label: "Deli Counter",
+    phonetic: "ˈdɛli ˈkaʊntər",
+    img: `${LOCAL_WORD_IMAGES}/market/deli-counter.webp`,
+    topic: "market-areas",
+    description:
+      "A service station where attendants slice cold meats and specialty cheeses on request.",
+  },
+  {
+    id: "bakery",
+    label: "Bakery",
+    phonetic: "ˈbeɪkəri",
+    img: `${LOCAL_WORD_IMAGES}/market/bakery.webp`,
+    topic: "market-areas",
+    description:
+      "An in-store department where ovens produce fresh loaves, rolls, and sweet pastries daily.",
+  },
+  {
+    id: "frozen-foods",
+    label: "Frozen Foods",
+    phonetic: "ˈfroʊzən fuːdz",
+    img: `${LOCAL_WORD_IMAGES}/market/frozen-foods.webp`,
+    topic: "market-areas",
+    description:
+      "A row of upright sub-zero glass compartments holding ice cream, pizzas, and chilled vegetables.",
+  },
+  {
+    id: "checkout",
+    label: "Checkout",
+    phonetic: "ˈtʃɛkaʊt",
+    img: `${LOCAL_WORD_IMAGES}/market/checkout.webp`,
+    topic: "market-areas",
+    description:
+      "The front cashier area where customers place items onto conveyors to total their bill.",
+  },
+  {
+    id: "aisle",
+    label: "Aisle",
+    phonetic: "aɪl",
+    img: `${LOCAL_WORD_IMAGES}/market/aisle.webp`,
+    topic: "market-areas",
+    description:
+      "A straight walkway between tall display shelves stocked with categorized groceries.",
+  },
+  {
+    id: "shopping-cart",
+    label: "Shopping Cart",
+    phonetic: "ˈʃɑːpɪŋ kɑːrt",
+    img: `${LOCAL_WORD_IMAGES}/market/shopping-cart.webp`,
+    topic: "market-areas",
+    description: "A deep metal or plastic basket on four wheels pushed through store aisles.",
+  },
+  {
+    id: "basket",
+    label: "Basket",
+    phonetic: "ˈbæskɪt",
+    img: `${LOCAL_WORD_IMAGES}/market/basket.webp`,
+    topic: "market-areas",
+    description: "A lightweight handheld container with handles used to carry a few grocery items.",
+  },
+  {
+    id: "cash-register",
+    label: "Cash Register",
+    phonetic: "ˈkæʃ ˌrɛdʒɪstər",
+    img: `${LOCAL_WORD_IMAGES}/market/cash-register.webp`,
+    topic: "market-areas",
+    description:
+      "An electronic transaction terminal with a till that records sales and stores currency.",
+  },
+  {
+    id: "scale",
+    label: "Scale",
+    phonetic: "skeɪl",
+    img: `${LOCAL_WORD_IMAGES}/market/scale.webp`,
+    topic: "market-areas",
+    description:
+      "A mechanical or digital weighing apparatus used to calculate prices of loose bulk produce.",
+  },
+
+  // 6. Shopping & Payment (10)
+  {
+    id: "price-tag",
+    label: "Price Tag",
+    phonetic: "ˈpraɪs tæɡ",
+    img: `${LOCAL_WORD_IMAGES}/market/price-tag.webp`,
+    topic: "shopping-actions",
+    description:
+      "A printed or digital shelf label showing the monetary cost of an individual item.",
+  },
+  {
+    id: "receipt",
+    label: "Receipt",
+    phonetic: "rɪˈsiːt",
+    img: `${LOCAL_WORD_IMAGES}/market/receipt.webp`,
+    topic: "shopping-actions",
+    description: "A printed paper slip given to the customer as official proof of purchase.",
+  },
+  {
+    id: "barcode",
+    label: "Barcode",
+    phonetic: "ˈbɑːrkoʊd",
+    img: `${LOCAL_WORD_IMAGES}/market/barcode.webp`,
+    topic: "shopping-actions",
+    description:
+      "A pattern of parallel black-and-white stripes scanned by lasers to identify items.",
+  },
+  {
+    id: "shopping-bag",
+    label: "Shopping Bag",
+    phonetic: "ˈʃɑːpɪŋ bæɡ",
+    img: `${LOCAL_WORD_IMAGES}/market/shopping-bag.webp`,
+    topic: "shopping-actions",
+    description: "A sturdy reusable or paper sack used to transport groceries from store to home.",
+  },
+  {
+    id: "coupon",
+    label: "Coupon",
+    phonetic: "ˈkuːpɑːn",
+    img: `${LOCAL_WORD_IMAGES}/market/coupon.webp`,
+    topic: "shopping-actions",
+    description:
+      "A promotional paper or digital certificate providing a financial discount on select goods.",
+  },
+  {
+    id: "shopping-list",
+    label: "Shopping List",
+    phonetic: "ˈʃɑːpɪŋ lɪst",
+    img: `${LOCAL_WORD_IMAGES}/market/shopping-list.webp`,
+    topic: "shopping-actions",
+    description:
+      "A handwritten or digital record of grocery items needed before visiting the store.",
+  },
+  {
+    id: "credit-card",
+    label: "Credit Card",
+    phonetic: "ˈkrɛdɪt kɑːrd",
+    img: `${LOCAL_WORD_IMAGES}/market/credit-card.webp`,
+    topic: "shopping-actions",
+    description:
+      "A small plastic payment credential with an embedded chip for cashless purchasing.",
+  },
+  {
+    id: "cash",
+    label: "Cash",
+    phonetic: "kæʃ",
+    img: `${LOCAL_WORD_IMAGES}/market/cash.webp`,
+    topic: "shopping-actions",
+    description:
+      "Physical currency consisting of paper banknotes and government-minted metal coins.",
+  },
+  {
+    id: "change",
+    label: "Change",
+    phonetic: "tʃeɪndʒ",
+    img: `${LOCAL_WORD_IMAGES}/market/change.webp`,
+    topic: "shopping-actions",
+    description: "The balance of money returned to a buyer when payment exceeds the purchase cost.",
+  },
+  {
+    id: "wallet",
+    label: "Wallet",
+    phonetic: "ˈwɑːlɪt",
+    img: `${LOCAL_WORD_IMAGES}/market/wallet.webp`,
+    topic: "shopping-actions",
+    description:
+      "A small folding pocket accessory used to store paper bills, payment cards, and coins.",
+  },
+];
+
 export const COURSE_UNITS: Record<string, CourseUnit> = {
   bedroom: {
     id: "bedroom",
@@ -6268,6 +7046,16 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
     topics: LIBRARY_TOPICS,
     groups: LIBRARY_GROUPS,
     vocabulary: LIBRARY_VOCABULARY,
+  },
+  market: {
+    id: "market",
+    name: "The Market",
+    description:
+      "Explore fresh orchard fruits, garden vegetables, butchery meats, bakery breads, dairy goods, supermarket departments, and checkout essentials through 2D scene discovery, audio practice, recall matching, and sentence building.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/market-hero.webp`,
+    topics: MARKET_TOPICS,
+    groups: MARKET_GROUPS,
+    vocabulary: MARKET_VOCABULARY,
   },
 };
 

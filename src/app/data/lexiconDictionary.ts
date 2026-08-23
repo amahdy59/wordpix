@@ -22236,6 +22236,2626 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleArabic:
       "بَعْدَ إِغْلَاقِ المَكْتَبَةِ فِي المَسَاءِ، قَامَ عَامِلُ النَّظَافَةِ المُجْتَهِدُ بِكَنْسِ السَّجَّادِ وَتَعْقِيمِ الطَّاوِلَاتِ.",
   },
+  apple: {
+    id: "apple",
+    arabic: "تُفَّاحَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈæpəl",
+    pronunciationTip: "Short 'a' sound /æ/: 'AP-ul' (/ˈæp.əl/).",
+    collocations: [
+      "crisp apple",
+      "red apple",
+      "green apple",
+      "apple orchard",
+      "bite into an apple",
+      "apple pie",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pick off",
+        meaning: "harvest ripe fruit from branches",
+        arabic: "يَقْطِفُ مِنَ الشَّجَرَة",
+        example: "Children love to pick ripe apples off the orchard trees in autumn.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Market Stall",
+        en: "She selected a bag of crisp red apples from the organic farm stall.",
+        ar: "اخْتَارَتْ كِيسًا مِنَ التُّفَّاحِ الأَحْمَرِ المُقَرْمَشِ مِنْ كُشْكِ المَزْرَعَةِ العُضْوِيَّةِ.",
+      },
+      {
+        context: "Healthy Snack",
+        en: "Eating a fresh apple provides dietary fiber and essential vitamins.",
+        ar: "تَنَاوُلُ تُفَّاحَةٍ طَازَجَةٍ يَمُدُّ الجِسْمَ بِالأَلْيَافِ الغِذَائِيَّةِ وَالفِيتَامِينَاتِ الأَسَاسِيَّةِ.",
+      },
+      {
+        context: "Baking",
+        en: "Grandmother sliced tart green apples to bake a fragrant cinnamon pie.",
+        ar: "قَطَّعَتِ الجَدَّةُ التُّفَّاحَ الأَخْضَرَ الحَامِضَ لِخَبْزِ فَطِيرَةِ قِرْفَةٍ عَطِرَةٍ.",
+      },
+    ],
+    exampleSentence: "She selected a bag of crisp red apples from the organic farm stall.",
+    exampleArabic:
+      "اخْتَارَتْ كِيسًا مِنَ التُّفَّاحِ الأَحْمَرِ المُقَرْمَشِ مِنْ كُشْكِ المَزْرَعَةِ العُضْوِيَّةِ.",
+  },
+  banana: {
+    id: "banana",
+    arabic: "مَوْزَة",
+    partOfSpeech: "noun",
+    phonetic: "bəˈnænə",
+    pronunciationTip: "Pronounce 'buh-NAN-uh' (/bəˈnæn.ə/).",
+    collocations: [
+      "ripe banana",
+      "bunch of bananas",
+      "peel a banana",
+      "banana smoothie",
+      "sweet banana",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "peel off",
+        meaning: "remove outer fruit skin",
+        arabic: "يُقَشِّرُ القِشْرَة",
+        example: "Peel off the yellow skin before adding the banana to the blender.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Produce Aisle",
+        en: "He bought a ripe bunch of yellow bananas at the supermarket fruit stand.",
+        ar: "اشْتَرَى عُنْقُودًا نَاضِجًا مِنَ المَوْزِ الأَصْفَرِ مِنْ كُشْكِ الفَاكِهَةِ فِي السُّوبَر مَارْكِت.",
+      },
+      {
+        context: "Breakfast",
+        en: "She sliced a sweet banana over her bowl of oatmeal every morning.",
+        ar: "قَطَّعَتْ مَوْزَةً حُلْوَةً فَوْقَ وِعَاءِ الشُّوفَانِ الخَاصِّ بِهَا كُلَّ صَبَاحٍ.",
+      },
+      {
+        context: "Nutrition",
+        en: "Bananas are a fantastic natural source of potassium and quick energy for athletes.",
+        ar: "يُعَدُّ المَوْزُ مَصْدَرًا طَبِيعِيًّا رَائِعًا لِلْبُوتَاسْيُومِ وَالطَّاقَةِ السَّرِيعَةِ لِلرِّيَاضِيِّينَ.",
+      },
+    ],
+    exampleSentence: "He bought a ripe bunch of yellow bananas at the supermarket fruit stand.",
+    exampleArabic:
+      "اشْتَرَى عُنْقُودًا نَاضِجًا مِنَ المَوْزِ الأَصْفَرِ مِنْ كُشْكِ الفَاكِهَةِ فِي السُّوبَر مَارْكِت.",
+  },
+  orange: {
+    id: "orange",
+    arabic: "بُرْتُقَالَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈɔːrɪndʒ",
+    pronunciationTip: "Pronounce 'OR-inj' (/ˈɔːr.ɪndʒ/).",
+    collocations: [
+      "juicy orange",
+      "freshly squeezed orange juice",
+      "peel an orange",
+      "sweet orange",
+      "orange segments",
+      "citrus orange",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "squeeze out",
+        meaning: "extract juice by pressing fruit",
+        arabic: "يَعْصِرُ لِاسْتِخْرَاجِ العَصِير",
+        example: "Squeeze out fresh juice from three ripe oranges for breakfast.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Fruit Market",
+        en: "The vendor stacked crates of juicy citrus oranges near the front of the stall.",
+        ar: "رَصَّ البَائِعُ صَنَادِيقَ مِنَ البُرْتُقَالِ العَصِيرِيِّ بِالقُرْبِ مِنْ مُقَدِّمَةِ الكُشْكِ.",
+      },
+      {
+        context: "Morning Juice",
+        en: "She peeled a sweet orange and separated the segments for her children.",
+        ar: "قَشَّرَتْ بُرْتُقَالَةً حُلْوَةً وَفَصَلَتْ فُصُوصَهَا لِأَطْفَالِهَا.",
+      },
+      {
+        context: "Vitamin Source",
+        en: "Oranges provide an abundance of Vitamin C that strengthens the immune system.",
+        ar: "يُوَفِّرُ البُرْتُقَالُ وَفْرَةً مِنْ فِيتَامِينِ C الَّذِي يُعَزِّزُ جِهَازَ المَنَاعَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The vendor stacked crates of juicy citrus oranges near the front of the stall.",
+    exampleArabic:
+      "رَصَّ البَائِعُ صَنَادِيقَ مِنَ البُرْتُقَالِ العَصِيرِيِّ بِالقُرْبِ مِنْ مُقَدِّمَةِ الكُشْكِ.",
+  },
+  grape: {
+    id: "grape",
+    arabic: "عِنَبَة (عِنَب)",
+    partOfSpeech: "noun",
+    phonetic: "ɡreɪp",
+    pronunciationTip: "Long 'a' sound /eɪ/: 'GRAYP' (/ɡreɪp/).",
+    collocations: [
+      "cluster of grapes",
+      "seedless grapes",
+      "red grapes",
+      "green grapes",
+      "sweet grapes",
+      "grape vineyard",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pluck off",
+        meaning: "pull individual berries from a stem",
+        arabic: "يَقْطِفُ حَبَّةَ عِنَبٍ مِنَ العُنْقُود",
+        example: "He plucked off sweet purple grapes one by one from the bunch.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Produce Display",
+        en: "She washed a large cluster of seedless red grapes to serve as a refreshing afternoon treat.",
+        ar: "غَسَلَتْ عُنْقُودًا كَبِيرًا مِنْ عِنَبٍ أَحْمَرَ خَالٍ مِنَ البُذُورِ لِتَقْدِيمِهِ كَوَجْبَةٍ خَفِيفَةٍ مُنْعِشَةٍ.",
+      },
+      {
+        context: "Fruit Salad",
+        en: "Green and black grapes add natural sweetness and vibrant color to summer salads.",
+        ar: "يُضِيفُ العِنَبُ الأَخْضَرُ وَالأَسْوَدُ حَلَاوَةً طَبِيعِيَّةً وَلَوْنًا نَابِضًا بِالحَيَاةِ لِسَلَطَاتِ الصَّيْفِ.",
+      },
+      {
+        context: "Vineyard Harvest",
+        en: "Farmers harvested tons of plump sweet grapes under the warm autumn sun.",
+        ar: "حَصَدَ المُزَارِعُونَ أَطْنَانًا مِنَ العِنَبِ الحُلْوِ المُمْتَلِئِ تَحْتَ شَمْسِ الخَرِيفِ الدَّافِئَةِ.",
+      },
+    ],
+    exampleSentence:
+      "She washed a large cluster of seedless red grapes to serve as a refreshing afternoon treat.",
+    exampleArabic:
+      "غَسَلَتْ عُنْقُودًا كَبِيرًا مِنْ عِنَبٍ أَحْمَرَ خَالٍ مِنَ البُذُورِ لِتَقْدِيمِهِ كَوَجْبَةٍ خَفِيفَةٍ مُنْعِشَةٍ.",
+  },
+  strawberry: {
+    id: "strawberry",
+    arabic: "فَرَاوْلَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈstrɔːbɛri",
+    pronunciationTip: "Pronounce 'STRAW-bair-ee' (/ˈstrɔːˌbɛr.i/).",
+    collocations: [
+      "ripe strawberry",
+      "sweet strawberries",
+      "strawberry jam",
+      "basket of strawberries",
+      "fresh strawberries",
+      "strawberry shortcake",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hull out",
+        meaning: "remove green stem and leafy cap",
+        arabic: "يَنْزِعُ عُنُقَ الفَرَاوْلَةِ الأَخْضَر",
+        example: "Hull out the ripe strawberries before tossing them into the blender.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Farmers Market",
+        en: "He purchased a punnet of fragrant scarlet strawberries freshly picked from local fields.",
+        ar: "اشْتَرَى سَلَّةً صَغِيرَةً مِنْ فَرَاوْلَةٍ قِرْمِزِيَّةٍ عَطِرَةٍ مَقْطُوفَةٍ حَدِيثًا مِنْ حُقُولٍ مَحَلِّيَّةٍ.",
+      },
+      {
+        context: "Dessert Topping",
+        en: "Fresh sliced strawberries look gorgeous arranged over vanilla ice cream and waffles.",
+        ar: "تَبْدُو شَرَائِحُ الفَرَاوْلَةِ الطَّازَجَةُ بَدِيعَةً عِنْدَ تَرْتِيبِهَا فَوْقَ آيْس كْرِيم الفَانِيلْيَا.",
+      },
+      {
+        context: "Summer Harvest",
+        en: "Children enjoyed visiting the berry farm to pick juicy ripe strawberries directly from rows.",
+        ar: "اسْتَمْتَعَ الأَطْفَالُ بِزِيَارَةِ مَزْرَعَةِ التُّوتِ لِقَطْفِ فَرَاوْلَةٍ نَاضِجَةٍ عَصِيرِيَّةٍ مُبَاشَرَةً.",
+      },
+    ],
+    exampleSentence:
+      "He purchased a punnet of fragrant scarlet strawberries freshly picked from local fields.",
+    exampleArabic:
+      "اشْتَرَى سَلَّةً صَغِيرَةً مِنْ فَرَاوْلَةٍ قِرْمِزِيَّةٍ عَطِرَةٍ مَقْطُوفَةٍ حَدِيثًا مِنْ حُقُولٍ مَحَلِّيَّةٍ.",
+  },
+  watermelon: {
+    id: "watermelon",
+    arabic: "بِطِّيخ (بِطِّيخَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɔːtərˌmɛlən",
+    pronunciationTip: "Pronounce 'WAH-ter-mel-un' (/ˈwɔː.tərˌmɛl.ən/).",
+    collocations: [
+      "juicy watermelon",
+      "slice of watermelon",
+      "seedless watermelon",
+      "chilled watermelon",
+      "watermelon rind",
+      "sweet watermelon",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "slice up",
+        meaning: "cut fruit into triangular portions",
+        arabic: "يُقَطِّعُ البِطِّيخَ إِلَى شَرَائِح",
+        example: "Let's slice up the cold watermelon for the afternoon backyard picnic.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Summer Picnic",
+        en: "They chilled a giant striped watermelon in ice before slicing it into refreshing wedges.",
+        ar: "بَرَّدُوا بِطِّيخَةً عِمْلَاقَةً مُخَطَّطَةً فِي الثَّلْجِ قَبْلَ تَقْطِيعِهَا إِلَى شَرَائِحَ مُنْعِشَةٍ.",
+      },
+      {
+        context: "Hydration",
+        en: "Watermelon consists mostly of water, making it the ideal hydrating snack on scorching days.",
+        ar: "يَتَكَوَّنُ البِطِّيخُ فِي مُعْظَمِهِ مِنَ المَاءِ، مِمَّا يَجْعَلُهُ وَجْبَةً خَفِيفَةً مِثَالِيَّةً لِلتَّرْطِيبِ.",
+      },
+      {
+        context: "Market Selection",
+        en: "The vendor tapped the melon firmly to confirm that its hollow sound indicated peak ripeness.",
+        ar: "نَقَرَ البَائِعُ عَلَى البِطِّيخَةِ بِإِحْكَامٍ لِلتَّأَكُّدِ مِنْ أَنَّ صَوْتَهَا الأَجْوَفَ يَدُلُّ عَلَى نُضْجِهَا.",
+      },
+    ],
+    exampleSentence:
+      "They chilled a giant striped watermelon in ice before slicing it into refreshing wedges.",
+    exampleArabic:
+      "بَرَّدُوا بِطِّيخَةً عِمْلَاقَةً مُخَطَّطَةً فِي الثَّلْجِ قَبْلَ تَقْطِيعِهَا إِلَى شَرَائِحَ مُنْعِشَةٍ.",
+  },
+  mango: {
+    id: "mango",
+    arabic: "مَانْجُو (مَانْغَا)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmæŋɡoʊ",
+    pronunciationTip: "Pronounce 'MANG-goh' (/ˈmæŋ.ɡoʊ/).",
+    collocations: [
+      "ripe mango",
+      "sweet mango",
+      "tropical mango",
+      "mango slice",
+      "mango smoothie",
+      "juicy mango",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "dice up",
+        meaning: "cut fruit flesh into small cubes",
+        arabic: "يُقَطِّعُ المَانْجُو إِلَى مُكَعَّبَات",
+        example: "Dice up the sweet golden mango to toss into the tropical salsa.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Tropical Fruits",
+        en: "The sweet fragrant aroma of ripe golden mangoes filled the exotic fruit section.",
+        ar: "مَلَأَتِ الرَّائِحَةُ العَطِرَةُ الحُلْوَةُ لِلْمَانْجُو الذَّهَبِيِّ النَّاضِجِ قِسْمَ الفَوَاكِهِ الاِسْتِوَائِيَّةِ.",
+      },
+      {
+        context: "Smoothie Blend",
+        en: "She blended diced mango with coconut water to create a creamy tropical beverage.",
+        ar: "خَلَطَتْ مُكَعَّبَاتِ المَانْجُو مَعَ مَاءِ جَوْزِ الهِنْدِ لِإِعْدَادِ مَشْرُوبٍ اسْتِوَائِيٍّ كَرِيمِيٍّ.",
+      },
+      {
+        context: "Culinary Use",
+        en: "In many Southeast Asian cuisines, ripe mango is served alongside warm sweet sticky rice.",
+        ar: "فِي العَدِيدِ مِنْ مَطَابِخِ جَنُوبِ شَرْقِ آسْيَا، يُقَدَّمُ المَانْجُو النَّاضِجُ بِجَانِبِ الأَرُزِّ الحُلْوِ.",
+      },
+    ],
+    exampleSentence:
+      "The sweet fragrant aroma of ripe golden mangoes filled the exotic fruit section.",
+    exampleArabic:
+      "مَلَأَتِ الرَّائِحَةُ العَطِرَةُ الحُلْوَةُ لِلْمَانْجُو الذَّهَبِيِّ النَّاضِجِ قِسْمَ الفَوَاكِهِ الاِسْتِوَائِيَّةِ.",
+  },
+  pear: {
+    id: "pear",
+    arabic: "كُمَّثْرَى (إِجَّاصَة)",
+    partOfSpeech: "noun",
+    phonetic: "pɛər",
+    pronunciationTip: "Pronounce 'PAIR' (/pɛər/).",
+    collocations: [
+      "ripe pear",
+      "juicy pear",
+      "poached pear",
+      "pear orchard",
+      "sweet pear",
+      "pear slices",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pare down",
+        meaning: "peel thin skin carefully",
+        arabic: "يُقَشِّرُ القِشْرَةَ الرَّقِيقَة",
+        example: "Pare down the skin of each pear before poaching them in spiced syrup.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Autumn Produce",
+        en: "She picked several firm green pears to ripen gently in the fruit bowl at home.",
+        ar: "اخْتَارَتْ عِدَّةَ حَبَّاتِ كُمَّثْرَى خَضْرَاءَ مُتَمَاسِكَةً لِتَنْضَجَ بِهُدُوءٍ فِي وِعَاءِ الفَاكِهَةِ.",
+      },
+      {
+        context: "Gourmet Dish",
+        en: "The chef poached tender Bartlett pears in honey and cinnamon for a refined dessert.",
+        ar: "طَهَا الشِّيفُ كُمَّثْرَى بَارْتْلِيت طَرِيَّةً فِي العَسَلِ وَالقِرْفَةِ لِحَلْوَى رَاقِيَةٍ.",
+      },
+      {
+        context: "Salad Ingredient",
+        en: "Thinly sliced sweet pears pair wonderfully with walnuts and aged blue cheese in salads.",
+        ar: "تَتَنَاغَمُ شَرَائِحُ الكُمَّثْرَى الحُلْوَةِ المَقْطُوعَةِ رَقِيقًا مَعَ عَيْنِ الجَمَلِ فِي السَّلَطَاتِ.",
+      },
+    ],
+    exampleSentence:
+      "She picked several firm green pears to ripen gently in the fruit bowl at home.",
+    exampleArabic:
+      "اخْتَارَتْ عِدَّةَ حَبَّاتِ كُمَّثْرَى خَضْرَاءَ مُتَمَاسِكَةً لِتَنْضَجَ بِهُدُوءٍ فِي وِعَاءِ الفَاكِهَةِ.",
+  },
+  peach: {
+    id: "peach",
+    arabic: "خَوْخَة",
+    partOfSpeech: "noun",
+    phonetic: "piːtʃ",
+    pronunciationTip: "Long 'e' sound /iː/: 'PEECH' (/piːtʃ/).",
+    collocations: [
+      "juicy peach",
+      "fuzzy peach",
+      "ripe peach",
+      "peach cobbler",
+      "sweet peach",
+      "peach pit",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "bite into",
+        meaning: "sink teeth into soft fruit",
+        arabic: "يَقْضِمُ الخَوْخَة",
+        example: "He bit into the sun-warmed peach, tasting sweet fragrant juice.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Orchard Stand",
+        en: "The fuzzy skin and sweet aroma of ripe summer peaches attracted shoppers to the display.",
+        ar: "جَذَبَتِ القِشْرَةُ المَخْمَلِيَّةُ وَالرَّائِحَةُ الحُلْوَةُ لِخَوْخِ الصَّيْفِ النَّاضِجِ المُتَسَوِّقِينَ.",
+      },
+      {
+        context: "Baking Cobbler",
+        en: "She baked a warm golden peach cobbler topped with a scoop of vanilla ice cream.",
+        ar: "خَبَزَتْ حَلْوَى كُوبْلَر الخَوْخِ الذَّهَبِيَّةَ الدَّافِئَةَ مَعَ مِلْعَقَةِ آيْس كْرِيم.",
+      },
+      {
+        context: "Fresh Snack",
+        en: "A soft juicy peach makes a delightful refreshing snack during hot July afternoons.",
+        ar: "تُشَكِّلُ الخَوْخَةُ الطَّرِيَّةُ العَصِيرِيَّةُ وَجْبَةً خَفِيفَةً مُنْعِشَةً فِي ظَهِيرَةِ الصَّيْفِ.",
+      },
+    ],
+    exampleSentence:
+      "The fuzzy skin and sweet aroma of ripe summer peaches attracted shoppers to the display.",
+    exampleArabic:
+      "جَذَبَتِ القِشْرَةُ المَخْمَلِيَّةُ وَالرَّائِحَةُ الحُلْوَةُ لِخَوْخِ الصَّيْفِ النَّاضِجِ المُتَسَوِّقِينَ.",
+  },
+  pineapple: {
+    id: "pineapple",
+    arabic: "أَنَانَاس (أَنَانَاسَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpaɪnˌæpəl",
+    pronunciationTip: "Pronounce 'PYN-ap-ul' (/ˈpaɪnˌæp.əl/).",
+    collocations: [
+      "tropical pineapple",
+      "fresh pineapple chunks",
+      "sweet pineapple",
+      "pineapple crown",
+      "pineapple juice",
+      "grilled pineapple",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "chop off",
+        meaning: "remove spiky top crown",
+        arabic: "يَقْطَعُ تَاجَ الأَنَانَاس",
+        example: "Chop off the spiky green crown before peeling the pineapple.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Tropical Display",
+        en: "The grocery aisle showcased spiky golden pineapples imported from sunny tropical islands.",
+        ar: "عَرَضَ مَمَرُّ البِقَالَةِ أَنَانَاسًا ذَهَبِيًّا شَوْكِيًّا مُسْتَوْرَدًا مِنْ جُزُرٍ اسْتِوَائِيَّةٍ مُشْمِسَةٍ.",
+      },
+      {
+        context: "Fruit Preparation",
+        en: "He carved away the rough outer rind and cored the pineapple into juicy yellow rings.",
+        ar: "قَشَّرَ القِشْرَةَ الخَارِجِيَّةَ الخَشِنَةَ وَفَرَّغَ لُبَّ الأَنَانَاسِ إِلَى حَلَقَاتٍ صَفْرَاءَ عَصِيرِيَّةٍ.",
+      },
+      {
+        context: "Grilled Dessert",
+        en: "Grilled pineapple slices sprinkled with brown sugar caramelize into a delectable summer treat.",
+        ar: "تَتَكَرْمَلُ شَرَائِحُ الأَنَانَاسِ المَشْوِيَّةُ المَرْشُوشَةُ بِالسُّكَّرِ البُنِّيِّ لِتُصْبِحَ حَلْوَى لَذِيذَةً.",
+      },
+    ],
+    exampleSentence:
+      "The grocery aisle showcased spiky golden pineapples imported from sunny tropical islands.",
+    exampleArabic:
+      "عَرَضَ مَمَرُّ البِقَالَةِ أَنَانَاسًا ذَهَبِيًّا شَوْكِيًّا مُسْتَوْرَدًا مِنْ جُزُرٍ اسْتِوَائِيَّةٍ مُشْمِسَةٍ.",
+  },
+  lemon: {
+    id: "lemon",
+    arabic: "لَيْمُونَة (لَيْمُونٌ أَصْفَر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈlɛmən",
+    pronunciationTip: "Pronounce 'LEM-un' (/ˈlɛm.ən/).",
+    collocations: [
+      "sour lemon",
+      "lemon juice",
+      "lemon zest",
+      "slice of lemon",
+      "fresh lemon",
+      "lemonade",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "grate off",
+        meaning: "shave fragrant outer citrus peel",
+        arabic: "يَبْشُرُ قِشْرَ اللَّيْمُون",
+        example: "Grate off the bright yellow zest to flavor the cake batter.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Citrus Counter",
+        en: "She squeezed fresh juice from a bright yellow lemon over the grilled fish fillet.",
+        ar: "عَصَرَتْ عَصِيرًا طَازَجًا مِنْ لَيْمُونَةٍ صَفْرَاءَ زَاهِيَةٍ فَوْقَ شَرِيحَةِ السَّمَكِ المَشْوِيِّ.",
+      },
+      {
+        context: "Beverages",
+        en: "A single wedge of sour lemon adds a crisp tangy note to iced herbal tea.",
+        ar: "تُضِيفُ شَرِيحَةٌ وَاحِدَةٌ مِنْ لَيْمُونٍ حَامِضٍ نَكْهَةً لَاذِعَةً مُنْعِشَةً لِلشَّايِ المُثَلَّجِ.",
+      },
+      {
+        context: "Baking and Cooking",
+        en: "Finely grated lemon zest imparts bright aromatic flavor to homemade cookies and salad dressings.",
+        ar: "يُضْفِي بَشْرُ قِشْرِ اللَّيْمُونِ نَكْهَةً عَطِرَةً زَاهِيَةً لِلْبَسْكُويْتِ وَصَلَصَاتِ السَّلَطَةِ.",
+      },
+    ],
+    exampleSentence:
+      "She squeezed fresh juice from a bright yellow lemon over the grilled fish fillet.",
+    exampleArabic:
+      "عَصَرَتْ عَصِيرًا طَازَجًا مِنْ لَيْمُونَةٍ صَفْرَاءَ زَاهِيَةٍ فَوْقَ شَرِيحَةِ السَّمَكِ المَشْوِيِّ.",
+  },
+  lime: {
+    id: "lime",
+    arabic: "لَيْمُونٌ أَخْضَر (لَايْم)",
+    partOfSpeech: "noun",
+    phonetic: "laɪm",
+    pronunciationTip: "Long 'i' sound /aɪ/: 'LYM' (/laɪm/).",
+    collocations: [
+      "tangy lime",
+      "lime juice",
+      "key lime pie",
+      "slice of lime",
+      "green lime",
+      "lime wedge",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "drizzle with",
+        meaning: "sprinkle citrus droplets lightly",
+        arabic: "يَرُشُّ عَصِيرَ اللَّايْم",
+        example: "Drizzle the fresh guacamole with freshly squeezed lime juice.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Market Stand",
+        en: "He bought a basket of glossy green limes to season spicy chicken tacos.",
+        ar: "اشْتَرَى سَلَّةً مِنْ لَيْمُونٍ أَخْضَرَ لَامِعٍ لِتَتْبِيلِ شَطَائِرِ التَّاكُو الحَارَّةِ.",
+      },
+      {
+        context: "Refreshing Drinks",
+        en: "Sparkling mineral water served with a slice of fresh lime makes an invigorating drink.",
+        ar: "المِيَاهُ المَعْدِنِيَّةُ الفَوَّارَةُ المُقَدَّمَةُ مَعَ شَرِيحَةِ لَايْم طَازَجَةٍ مَشْرُوبٌ مُنْعِشٌ.",
+      },
+      {
+        context: "Baking Specialty",
+        en: "Key lime pie balances tart citrus juice with sweet condensed milk in a graham cracker crust.",
+        ar: "تُوَازِنُ فَطِيرَةُ اللَّايْم بَيْنَ عَصِيرِ الحَمْضِيَّاتِ اللَّاذِعِ وَالحَلِيبِ المُحَلَّى فِي قَاعِدَةِ بَسْكُويْت.",
+      },
+    ],
+    exampleSentence: "He bought a basket of glossy green limes to season spicy chicken tacos.",
+    exampleArabic:
+      "اشْتَرَى سَلَّةً مِنْ لَيْمُونٍ أَخْضَرَ لَامِعٍ لِتَتْبِيلِ شَطَائِرِ التَّاكُو الحَارَّةِ.",
+  },
+  carrot: {
+    id: "carrot",
+    arabic: "جَزَرَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈkærət",
+    pronunciationTip: "Short 'a' sound /æ/: 'KAIR-ut' (/ˈkær.ət/).",
+    collocations: [
+      "crunchy carrot",
+      "bunch of carrots",
+      "grated carrot",
+      "carrot stick",
+      "sweet carrot",
+      "carrot cake",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "chop up",
+        meaning: "cut vegetables into rounds or chunks",
+        arabic: "يُقَطِّعُ الجَزَرَ إِلَى قِطَع",
+        example: "Chop up three orange carrots to simmer in the beef stew.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Vegetable Stall",
+        en: "She bought a fresh bunch of crunchy orange carrots with leafy green tops from the farmer.",
+        ar: "اشْتَرَتْ حُزْمَةً طَازَجَةً مِنْ جَزَرٍ بُرْتُقَالِيٍّ مُقَرْمَشٍ مَعَ أَوْرَاقِهِ الخَضْرَاءِ مِنَ المُزَارِعِ.",
+      },
+      {
+        context: "Healthy Eating",
+        en: "Raw carrot sticks served with creamy hummus make a wholesome afternoon snack.",
+        ar: "تُشَكِّلُ أَصَابِعُ الجَزَرِ النِّيئَةِ المُقَدَّمَةُ مَعَ الحُمُّصِ وَجْبَةً خَفِيفَةً صِحِّيَّةً.",
+      },
+      {
+        context: "Beta-Carotene",
+        en: "Carrots are rich in beta-carotene which the human body converts into essential Vitamin A.",
+        ar: "يَزْخَرُ الجَزَرُ بِالبِيتَا كَارُوتِين الَّذِي يُحَوِّلُهُ جِسْمُ الإِنْسَانِ إِلَى فِيتَامِينِ A الأَسَاسِيِّ.",
+      },
+    ],
+    exampleSentence:
+      "She bought a fresh bunch of crunchy orange carrots with leafy green tops from the farmer.",
+    exampleArabic:
+      "اشْتَرَتْ حُزْمَةً طَازَجَةً مِنْ جَزَرٍ بُرْتُقَالِيٍّ مُقَرْمَشٍ مَعَ أَوْرَاقِهِ الخَضْرَاءِ مِنَ المُزَارِعِ.",
+  },
+  broccoli: {
+    id: "broccoli",
+    arabic: "بْرُوكْلِي (قَرْنَبيطٌ أَخْضَر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbrɑːkəli",
+    pronunciationTip: "Pronounce 'BRAH-kuh-lee' (/ˈbrɑː.kə.li/).",
+    collocations: [
+      "steamed broccoli",
+      "broccoli florets",
+      "fresh broccoli",
+      "tender broccoli",
+      "broccoli soup",
+      "roasted broccoli",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "steam up",
+        meaning: "cook vegetables lightly over boiling water",
+        arabic: "يَطْهُو عَلَى البُخَار",
+        example: "Steam up the green broccoli florets until they turn vibrant and tender-crisp.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Green Vegetables",
+        en: "He selected a dense head of deep green broccoli with tight healthy florets.",
+        ar: "اخْتَارَ رَأْسًا مُتَمَاسِكًا مِنْ بُرُوكْلِي أَخْضَرَ دَاكِنٍ مَعَ زُهَيْرَاتٍ صِحِّيَّةٍ مُحْكَمَةٍ.",
+      },
+      {
+        context: "Dinner Side Dish",
+        en: "Steamed broccoli drizzled with olive oil and garlic is a nutritious dinner side dish.",
+        ar: "يُعَدُّ البْرُوكْلِي المَطْهُوُّ عَلَى البُخَارِ مَعَ زَيْتِ الزَّيْتُونِ وَالثَّوْمِ طَبَقًا جَانِبِيًّا مُغَذِّيًا.",
+      },
+      {
+        context: "Nutritional Value",
+        en: "Cruciferous vegetables like broccoli contain powerful antioxidants and dietary fiber.",
+        ar: "تَحْتَوِي الخُضْرَاوَاتُ الصَّلِيبِيَّةُ مِثْلُ البْرُوكْلِي عَلَى مُضَادَّاتِ أَكْسَدَةٍ قَوِيَّةٍ وَأَلْيَافٍ.",
+      },
+    ],
+    exampleSentence: "He selected a dense head of deep green broccoli with tight healthy florets.",
+    exampleArabic:
+      "اخْتَارَ رَأْسًا مُتَمَاسِكًا مِنْ بُرُوكْلِي أَخْضَرَ دَاكِنٍ مَعَ زُهَيْرَاتٍ صِحِّيَّةٍ مُحْكَمَةٍ.",
+  },
+  onion: {
+    id: "onion",
+    arabic: "بَصَلَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈʌnjən",
+    pronunciationTip: "Pronounce 'UN-yun' (/ˈʌn.jən/).",
+    collocations: [
+      "chopped onion",
+      "diced onion",
+      "red onion",
+      "yellow onion",
+      "sweet onion",
+      "caramelized onions",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "fry up",
+        meaning: "sauté in a pan until golden and fragrant",
+        arabic: "يُشَوِّحُ فِي الزَّيْتِ حَتَّى يَذْبُل",
+        example: "Fry up the diced yellow onions until translucent and golden brown.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Culinary Staple",
+        en: "He peeled and finely chopped a yellow onion to build the savory soup base.",
+        ar: "قَشَّرَ وَفَرَمَ بَصَلَةً صَفْرَاءَ نَاعِمًا لِتَكْوِينِ قَاعِدَةِ الحَسَاءِ الشَّهِيَّةِ.",
+      },
+      {
+        context: "Salad Topping",
+        en: "Crisp red onion rings add color and a mild bite to fresh Mediterranean salads.",
+        ar: "تُضِيفُ حَلَقَاتُ البَصَلِ الأَحْمَرِ المُقَرْمَشَةُ لَوْنًا وَمَذَاقًا حَيَوِيًّا لِلسَّلَطَاتِ.",
+      },
+      {
+        context: "Caramelizing",
+        en: "Slowly cooked in butter, sweet caramelized onions develop deep rich flavor.",
+        ar: "عِنْدَ طَهْيِهِ بِبُطْءٍ فِي الزُّبْدَةِ، يَكْتَسِبُ البَصَلُ المُكَرْمَلُ الحُلْوُ نَكْهَةً غَنِيَّةً عَمِيقَةً.",
+      },
+    ],
+    exampleSentence: "He peeled and finely chopped a yellow onion to build the savory soup base.",
+    exampleArabic:
+      "قَشَّرَ وَفَرَمَ بَصَلَةً صَفْرَاءَ نَاعِمًا لِتَكْوِينِ قَاعِدَةِ الحَسَاءِ الشَّهِيَّةِ.",
+  },
+  tomato: {
+    id: "tomato",
+    arabic: "طَمَاطِم (طَمَاطِمَة)",
+    partOfSpeech: "noun",
+    phonetic: "təˈmeɪtoʊ",
+    pronunciationTip: "Pronounce 'tuh-MAY-toh' (/təˈmeɪ.toʊ/).",
+    collocations: [
+      "ripe tomato",
+      "cherry tomatoes",
+      "tomato sauce",
+      "sliced tomato",
+      "juicy tomato",
+      "vine tomatoes",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "simmer down",
+        meaning: "cook crushed tomatoes into thick pasta sauce",
+        arabic: "يَسْبِكُ صَلْصَةَ الطَّمَاطِم",
+        example: "Simmer down the crushed ripe tomatoes with basil and garlic for pasta.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Farmers Market",
+        en: "She picked a basket of plump vine-ripened red tomatoes for tonight's salad.",
+        ar: "اخْتَارَتْ سَلَّةً مِنْ طَمَاطِمَ حَمْرَاءَ مُمْتَلِئَةٍ نَاضِجَةٍ عَلَى الكَرْمَةِ لِسَلَطَةِ اللَّيْلَةِ.",
+      },
+      {
+        context: "Sauce Making",
+        en: "Simmering fresh tomatoes with herbs produces a rich and velvety marinara sauce.",
+        ar: "يُنْتِجُ طَهْيُ الطَّمَاطِمِ الطَّازَجَةِ مَعَ الأَعْشَابِ صَلْصَةَ مَارِينَارَا غَنِيَّةً وَمَخْمَلِيَّةً.",
+      },
+      {
+        context: "Sandwich Layer",
+        en: "Thick slices of juicy red tomato complement melted cheddar in a toasted sandwich.",
+        ar: "تَتَكَامَلُ شَرَائِحُ الطَّمَاطِمِ الحَمْرَاءِ العَصِيرِيَّةِ السَّمِيكَةِ مَعَ الجُبْنِ الذَّائِبِ فِي الشَّطِيرَةِ.",
+      },
+    ],
+    exampleSentence: "She picked a basket of plump vine-ripened red tomatoes for tonight's salad.",
+    exampleArabic:
+      "اخْتَارَتْ سَلَّةً مِنْ طَمَاطِمَ حَمْرَاءَ مُمْتَلِئَةٍ نَاضِجَةٍ عَلَى الكَرْمَةِ لِسَلَطَةِ اللَّيْلَةِ.",
+  },
+  cucumber: {
+    id: "cucumber",
+    arabic: "خِيَار (خِيَارَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkjuːkʌmbər",
+    pronunciationTip: "Pronounce 'KYOO-kum-ber' (/ˈkjuː.kʌm.bər/).",
+    collocations: [
+      "crisp cucumber",
+      "sliced cucumber",
+      "cool as a cucumber",
+      "pickled cucumber",
+      "fresh cucumber",
+      "cucumber salad",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "toss with",
+        meaning: "mix sliced vegetables with dressing",
+        arabic: "يَخْلِطُ مَعَ التَّتْبِيلَة",
+        example: "Toss sliced cucumber with yogurt, minced mint, and sea salt.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Market Stalls",
+        en: "The grocer arranged firm green cucumbers alongside baskets of fresh bell peppers.",
+        ar: "رَتَّبَ البَقَّالُ خِيَارًا أَخْضَرَ مُتَمَاسِكًا بِجَانِبِ سِلَالِ الفُلْفُلِ الحُلْوِ الطَّازَجِ.",
+      },
+      {
+        context: "Cooling Salad",
+        en: "Chilled cucumber slices mixed with yogurt and dill create a wonderfully cooling side dish.",
+        ar: "تُشَكِّلُ شَرَائِحُ الخِيَارِ المُثَلَّجَةِ مَعَ الزَّبَادِي وَالشِّبْتِ طَبَقًا جَانِبِيًّا مُنْعِشًا لِلْغَايَةِ.",
+      },
+      {
+        context: "Pickling",
+        en: "Small crunchy cucumbers are cured in seasoned brine to produce tangy dill pickles.",
+        ar: "يُخَلَّلُ الخِيَارُ الصَّغِيرُ المُقَرْمَشُ فِي مَحْلُولٍ مِلْحِيٍّ مُتَبَّلٍ لِإِنْتَاجِ مُخَلَّلٍ لَذِيذٍ.",
+      },
+    ],
+    exampleSentence:
+      "The grocer arranged firm green cucumbers alongside baskets of fresh bell peppers.",
+    exampleArabic:
+      "رَتَّبَ البَقَّالُ خِيَارًا أَخْضَرَ مُتَمَاسِكًا بِجَانِبِ سِلَالِ الفُلْفُلِ الحُلْوِ الطَّازَجِ.",
+  },
+  lettuce: {
+    id: "lettuce",
+    arabic: "خَسّ (خَسَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈlɛtɪs",
+    pronunciationTip: "Pronounce 'LET-iss' (/ˈlɛt.ɪs/).",
+    collocations: [
+      "crisp lettuce",
+      "head of lettuce",
+      "romaine lettuce",
+      "shredded lettuce",
+      "fresh lettuce",
+      "lettuce leaf",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "tear up",
+        meaning: "shred salad leaves by hand",
+        arabic: "يُمَزِّقُ أَوْرَاقَ الخَسّ",
+        example: "Tear up the washed crisp romaine lettuce into bite-sized salad pieces.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Greens Section",
+        en: "He selected a crisp head of green romaine lettuce with tight vibrant leaves.",
+        ar: "اخْتَارَ رَأْسًا مُقَرْمَشًا مِنْ خَسِّ الرُّومَانِ الأَخْضَرِ ذِي الأَوْرَاقِ النَّابِضَةِ بِالحَيَاةِ.",
+      },
+      {
+        context: "Burger Topping",
+        en: "A crunchy leaf of fresh green lettuce adds texture and freshness to a warm burger.",
+        ar: "تُضِيفُ وَرَقَةُ خَسٍّ خَضْرَاءُ طَازَجَةٌ مُقَرْمَشَةٌ قَوَامًا وَطَزَاجَةً لِشَطِيرَةِ البِرْجَرِ.",
+      },
+      {
+        context: "Salad Preparation",
+        en: "Spinning washed lettuce leaves dry ensures that homemade dressing clings evenly.",
+        ar: "يَضْمَنُ تَجْفِيفُ أَوْرَاقِ الخَسِّ المَغْسُولَةِ ثَبَاتَ صَلْصَةِ السَّلَطَةِ عَلَيْهَا بِتَسَاوٍ.",
+      },
+    ],
+    exampleSentence: "He selected a crisp head of green romaine lettuce with tight vibrant leaves.",
+    exampleArabic:
+      "اخْتَارَ رَأْسًا مُقَرْمَشًا مِنْ خَسِّ الرُّومَانِ الأَخْضَرِ ذِي الأَوْرَاقِ النَّابِضَةِ بِالحَيَاةِ.",
+  },
+  potato: {
+    id: "potato",
+    arabic: "بَطَاطِس (بَطَاطَا)",
+    partOfSpeech: "noun",
+    phonetic: "pəˈteɪtoʊ",
+    pronunciationTip: "Pronounce 'puh-TAY-toh' (/pəˈteɪ.toʊ/).",
+    collocations: [
+      "mashed potatoes",
+      "baked potato",
+      "bag of potatoes",
+      "roasted potatoes",
+      "potato skins",
+      "sweet potato",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "mash up",
+        meaning: "crush boiled vegetables into smooth purée",
+        arabic: "يَهْرُسُ البَطَاطِس",
+        example: "Mash up the boiled russet potatoes with warm milk and butter.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Produce Bin",
+        en: "She loaded a heavy five-pound sack of russet potatoes into her market cart.",
+        ar: "حَمَّلَتْ كِيسًا ثَقِيلًا يَزِنُ خَمْسَةَ أَرْطَالٍ مِنْ بَطَاطِسِ الرُّوسِيت فِي عَرَبَتِهَا.",
+      },
+      {
+        context: "Comfort Food",
+        en: "Creamy mashed potatoes seasoned with butter and chives are a holiday dinner favorite.",
+        ar: "تُعَدُّ البَطَاطِسُ المَهْرُوسَةُ الكَرِيمِيَّةُ المُتَبَّلَةُ بِالزُّبْدَةِ طَبَقًا مُفَضَّلًا فِي العُطْلَاتِ.",
+      },
+      {
+        context: "Baking",
+        en: "A hot baked potato served with sour cream and melted cheese makes a hearty side dish.",
+        ar: "تُشَكِّلُ البَطَاطِسُ المَخْبُوزَةُ السَّاخِنَةُ مَعَ الكْرِيمَةِ الحَامِضَةِ وَالجُبْنِ وَجْبَةً مُشْبِعَةً.",
+      },
+    ],
+    exampleSentence: "She loaded a heavy five-pound sack of russet potatoes into her market cart.",
+    exampleArabic:
+      "حَمَّلَتْ كِيسًا ثَقِيلًا يَزِنُ خَمْسَةَ أَرْطَالٍ مِنْ بَطَاطِسِ الرُّوسِيت فِي عَرَبَتِهَا.",
+  },
+  mushroom: {
+    id: "mushroom",
+    arabic: "فِطْر (عُشُّ الغُرَاب / مَشْرُوم)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmʌʃruːm",
+    pronunciationTip: "Pronounce 'MUSH-room' (/ˈmʌʃ.ruːm/).",
+    collocations: [
+      "button mushroom",
+      "sliced mushrooms",
+      "wild mushrooms",
+      "sautéed mushrooms",
+      "stuffed mushrooms",
+      "mushroom risotto",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sauté in",
+        meaning: "fry gently in oil or butter",
+        arabic: "يُشَوِّحُ الفِطْرَ فِي الزَّيْت",
+        example: "Sauté sliced white mushrooms in olive oil until golden brown.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Produce Display",
+        en: "The organic grocer offered baskets of earthy portobello and white button mushrooms.",
+        ar: "عَرَضَ بَقَّالُ الأَغْذِيَةِ العُضْوِيَّةِ سِلَالَ فِطْرِ البُورْتُوبِيلُّو وَفِطْرِ الأَزْرَارِ الأَبْيَضِ.",
+      },
+      {
+        context: "Italian Cooking",
+        en: "Sautéed mushrooms impart deep umami richness to creamy risotto and pasta sauces.",
+        ar: "يُضْفِي الفِطْرُ المُشَوَّحُ نَكْهَةَ أُومَامِي عَمِيقَةً لِأَرُزِّ الرِّيزُوتُو وَصَلَصَاتِ البَاسْتَا.",
+      },
+      {
+        context: "Grilled Specialty",
+        en: "Marinated portobello mushroom caps grilled over charcoal make a delicious meatless main course.",
+        ar: "تُشَكِّلُ قُبَّعَاتُ فِطْرِ البُورْتُوبِيلُّو المَشْوِيَّةُ عَلَى الفَحْمِ طَبَقًا رَئِيسِيًّا نَبَاتِيًّا شَهِيًّا.",
+      },
+    ],
+    exampleSentence:
+      "The organic grocer offered baskets of earthy portobello and white button mushrooms.",
+    exampleArabic:
+      "عَرَضَ بَقَّالُ الأَغْذِيَةِ العُضْوِيَّةِ سِلَالَ فِطْرِ البُورْتُوبِيلُّو وَفِطْرِ الأَزْرَارِ الأَبْيَضِ.",
+  },
+  spinach: {
+    id: "spinach",
+    arabic: "سَبَانِخ",
+    partOfSpeech: "noun",
+    phonetic: "ˈspɪnɪtʃ",
+    pronunciationTip: "Pronounce 'SPIN-itch' (/ˈspɪn.ɪtʃ/).",
+    collocations: [
+      "baby spinach",
+      "steamed spinach",
+      "fresh spinach leaves",
+      "spinach salad",
+      "creamed spinach",
+      "sauteed spinach",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wilt down",
+        meaning: "cook leafy greens until collapsed and tender",
+        arabic: "يَذْبُلُ بِالحَرَارَةِ فِي المِقْلَاة",
+        example: "Wilt down the fresh baby spinach leaves in olive oil and minced garlic.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Leafy Greens",
+        en: "She selected a bag of tender baby spinach leaves for her daily breakfast smoothie.",
+        ar: "اخْتَارَتْ كِيسًا مِنْ أَوْرَاقِ السَّبَانِخِ الصَّغِيرَةِ الطَّرِيَّةِ لِعَصِيرِ الإِفْطَارِ اليَوْمِيِّ.",
+      },
+      {
+        context: "Nutrient Rich",
+        en: "Spinach is packed with iron, calcium, and vitamins that support energy levels.",
+        ar: "تَزْخَرُ السَّبَانِخُ بِالحَدِيدِ وَالكَالْسْيُومِ وَالفِيتَامِينَاتِ الَّتِي تَدْعَمُ مُسْتَوَيَاتِ الطَّاقَةِ.",
+      },
+      {
+        context: "Mediterranean Pastry",
+        en: "Flaky phyllo pastry stuffed with spinach and feta cheese makes a traditional Greek pie.",
+        ar: "تُشَكِّلُ عَجِينَةُ الفِيلُو الهَشَّةُ المَحْشُوَّةُ بِالسَّبَانِخِ وَجُبْنِ الفِيتَا فَطِيرَةً يُونَانِيَّةً تَقْلِيدِيَّةً.",
+      },
+    ],
+    exampleSentence:
+      "She selected a bag of tender baby spinach leaves for her daily breakfast smoothie.",
+    exampleArabic:
+      "اخْتَارَتْ كِيسًا مِنْ أَوْرَاقِ السَّبَانِخِ الصَّغِيرَةِ الطَّرِيَّةِ لِعَصِيرِ الإِفْطَارِ اليَوْمِيِّ.",
+  },
+  garlic: {
+    id: "garlic",
+    arabic: "ثَوْم",
+    partOfSpeech: "noun",
+    phonetic: "ˈɡɑːrlɪk",
+    pronunciationTip: "Pronounce 'GAR-lik' (/ˈɡɑːr.lɪk/).",
+    collocations: [
+      "clove of garlic",
+      "head of garlic",
+      "minced garlic",
+      "roasted garlic",
+      "garlic bread",
+      "crushed garlic",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "crush down",
+        meaning: "press cloves flat with a knife blade",
+        arabic: "يَهْرُسُ فَصَّ الثَّوْم",
+        example: "Crush down two garlic cloves with the flat edge of your chef's knife.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Flavor Base",
+        en: "He minced three fragrant cloves of garlic to infuse the simmering olive oil.",
+        ar: "فَرَمَ ثَلَاثَةَ فُصُوصِ ثَوْمٍ عَطِرَةٍ لِإِضْفَاءِ النَّكْهَةِ عَلَى زَيْتِ الزَّيْتُونِ.",
+      },
+      {
+        context: "Market Produce",
+        en: "Braids of white and purple garlic hung from hooks above the vegetable stand.",
+        ar: "تَدَلَّتْ جَدَائِلُ الثَّوْمِ الأَبْيَضِ وَالبَنَفْسَجِيِّ مِنْ خَطَاطِيفَ فَوْقَ كُشْكِ الخُضْرَاوَاتِ.",
+      },
+      {
+        context: "Appetizer",
+        en: "Crispy toasted baguette brushed with garlic butter makes an irresistible dinner appetizer.",
+        ar: "يُشَكِّلُ الخُبْزُ الفَرَنْسِيُّ المُحَمَّصُ المَدْهُونُ بِزُبْدَةِ الثَّوْمِ مُقَبِّلَاتِ عَشَاءٍ لَا تُقَاوَمُ.",
+      },
+    ],
+    exampleSentence: "He minced three fragrant cloves of garlic to infuse the simmering olive oil.",
+    exampleArabic:
+      "فَرَمَ ثَلَاثَةَ فُصُوصِ ثَوْمٍ عَطِرَةٍ لِإِضْفَاءِ النَّكْهَةِ عَلَى زَيْتِ الزَّيْتُونِ.",
+  },
+  corn: {
+    id: "corn",
+    arabic: "ذُرَة (كُوزُ ذُرَة)",
+    partOfSpeech: "noun",
+    phonetic: "kɔːrn",
+    pronunciationTip: "Pronounce 'KORN' (/kɔːrn/).",
+    collocations: [
+      "sweet corn",
+      "corn on the cob",
+      "roasted corn",
+      "kernels of corn",
+      "grilled corn",
+      "corn bread",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "husk off",
+        meaning: "remove outer green leaves and silk",
+        arabic: "يُقَشِّرُ غِلَافَ كُوزِ الذُّرَة",
+        example: "Husk off the green leaves before roasting the sweet corn cobs.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Summer Harvest",
+        en: "Farmers brought truckloads of freshly picked sweet yellow corn to the weekend market.",
+        ar: "جَلَبَ المُزَارِعُونَ شَاحِنَاتٍ مِنَ الذُّرَةِ الصَّفْرَاءِ الحُلْوَةِ المَقْطُوفَةِ حَدِيثًا لِلسُّوقِ.",
+      },
+      {
+        context: "Barbecue",
+        en: "Grilled corn on the cob brushed with melted butter and smoked paprika is a summer staple.",
+        ar: "يُعَدُّ كُوزُ الذُّرَةِ المَشْوِيُّ المَدْهُونُ بِالزُّبْدَةِ الذَّائِبَةِ طَبَقًا صَيْفِيًّا أَسَاسِيًّا.",
+      },
+      {
+        context: "Side Dish",
+        en: "Sweet golden corn kernels add crunch and color to warm black bean salads.",
+        ar: "تُضِيفُ حَبَّاتُ الذُّرَةِ الذَّهَبِيَّةُ الحُلْوَةُ قَرْمَشَةً وَلَوْنًا لِسَلَطَاتِ الفَاصُولْيَا السَّوْدَاءِ.",
+      },
+    ],
+    exampleSentence:
+      "Farmers brought truckloads of freshly picked sweet yellow corn to the weekend market.",
+    exampleArabic:
+      "جَلَبَ المُزَارِعُونَ شَاحِنَاتٍ مِنَ الذُّرَةِ الصَّفْرَاءِ الحُلْوَةِ المَقْطُوفَةِ حَدِيثًا لِلسُّوقِ.",
+  },
+  beef: {
+    id: "beef",
+    arabic: "لَحْمُ بَقَر (لَحْمٌ بَقَرِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "biːf",
+    pronunciationTip: "Long 'e' sound /iː/: 'BEEF' (/biːf/).",
+    collocations: [
+      "ground beef",
+      "roast beef",
+      "lean beef",
+      "beef steak",
+      "beef stew",
+      "tender beef",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sear off",
+        meaning: "brown meat surface quickly on high heat",
+        arabic: "يُحَمِّرُ اللَّحْمَ سَرِيعًا عَلَى نَارٍ عَالِيَة",
+        example: "Sear off the beef cubes in a hot pan before braising them in broth.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Butcher Counter",
+        en: "The butcher weighed two pounds of freshly ground lean beef for homemade meatballs.",
+        ar: "وَزَنَ الجَزَّارُ رَطْلَيْنِ مِنْ لَحْمِ البَقَرِ المَفْرُومِ الطَّازَجِ لِكُرَاتِ اللَّحْمِ المَنْزِلِيَّةِ.",
+      },
+      {
+        context: "Slow Cooking",
+        en: "Tender beef chuck simmered with carrots and potatoes makes a hearty winter stew.",
+        ar: "يُشَكِّلُ لَحْمُ البَقَرِ الطَّرِيُّ المَطْهُوُّ عَلَى نَارٍ هَادِئَةٍ مَعَ الجَزَرِ حَسَاءً شَتَوِيًّا مُشْبِعًا.",
+      },
+      {
+        context: "Steakhouse",
+        en: "A grilled prime cut of beef seasoned with sea salt and cracked pepper is a classic main.",
+        ar: "تُعَدُّ شَرِيحَةُ لَحْمِ البَقَرِ المَشْوِيَّةُ المُمَتَّازَةُ المُتَبَّلَةُ بِالمِلْحِ وَالفُلْفُلِ طَبَقًا رَئِيسِيًّا كَلَاسِيكِيًّا.",
+      },
+    ],
+    exampleSentence:
+      "The butcher weighed two pounds of freshly ground lean beef for homemade meatballs.",
+    exampleArabic:
+      "وَزَنَ الجَزَّارُ رَطْلَيْنِ مِنْ لَحْمِ البَقَرِ المَفْرُومِ الطَّازَجِ لِكُرَاتِ اللَّحْمِ المَنْزِلِيَّةِ.",
+  },
+  pork: {
+    id: "pork",
+    arabic: "لَحْمُ خِنْزِير",
+    partOfSpeech: "noun",
+    phonetic: "pɔːrk",
+    pronunciationTip: "Pronounce 'PORK' (/pɔːrk/).",
+    collocations: [
+      "pork chops",
+      "roast pork",
+      "tenderloin pork",
+      "pulled pork",
+      "pork ribs",
+      "lean pork",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "slow-cook",
+        meaning: "roast gently for hours until tender",
+        arabic: "يَطْهُو بِبُطْء",
+        example: "Slow-cook the seasoned pork shoulder for shredded barbecue sandwiches.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Meat Market",
+        en: "The butcher prepared thick bone-in chops of seasoned pork for the barbecue display.",
+        ar: "أَعَدَّ الجَزَّارُ شَرَائِحَ سَمِيكَةً بِالعَظْمِ مِنْ لَحْمِ الخِنْزِيرِ المُتَبَّلِ لِعَرْضِ الشِّوَاءِ.",
+      },
+      {
+        context: "Roasting",
+        en: "Roast pork tenderloin with rosemary and garlic makes an elegant holiday dinner entrée.",
+        ar: "يُشَكِّلُ عِرْقُ اللَّحْمِ المَشْوِيُّ مَعَ إِكْلِيلِ الجَبَلِ وَالثَّوْمِ طَبَقَ عَشَاءٍ رَاقِيًا فِي الأَعْيَادِ.",
+      },
+      {
+        context: "Barbecue Tradition",
+        en: "Tender pulled pork tossed in smoky sauce is a favorite southern picnic specialty.",
+        ar: "يُعَدُّ اللَّحْمُ المُمَزَّقُ الطَّرِيُّ فِي الصَّلْصَةِ المُدَخَّنَةِ وَجْبَةَ نُزْهَةٍ جَنُوبِيَّةٍ شَهِيرَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "The butcher prepared thick bone-in chops of seasoned pork for the barbecue display.",
+    exampleArabic:
+      "أَعَدَّ الجَزَّارُ شَرَائِحَ سَمِيكَةً بِالعَظْمِ مِنْ لَحْمِ الخِنْزِيرِ المُتَبَّلِ لِعَرْضِ الشِّوَاءِ.",
+  },
+  fish: {
+    id: "fish",
+    arabic: "سَمَك (سَمَكَة)",
+    partOfSpeech: "noun",
+    phonetic: "fɪʃ",
+    pronunciationTip: "Short 'i' sound /ɪ/: 'FISH' (/fɪʃ/).",
+    collocations: [
+      "fresh fish",
+      "grilled fish",
+      "fish market",
+      "catch of the day",
+      "fish fillet",
+      "sea fish",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "scale and gut",
+        meaning: "clean seafood before cooking",
+        arabic: "يُنَظِّفُ قُشُورَ وَأَحْشَاءَ السَّمَك",
+        example: "The fishmonger will scale and gut the fresh sea bass for you.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Fishmonger Stall",
+        en: "The fishmonger displayed sparkling fresh whole fish laid over crushed ice.",
+        ar: "عَرَضَ بَائِعُ الأَسْمَاكِ أَسْمَاكًا طَازَجَةً كَامِلَةً بَرَّاقَةً فَوْقَ الثَّلْجِ المَجْرُوشِ.",
+      },
+      {
+        context: "Healthy Diet",
+        en: "Eating oily ocean fish twice a week provides heart-healthy omega-3 fatty acids.",
+        ar: "يَمُدُّ تَنَاوُلُ أَسْمَاكِ المُحِيطَاتِ الزَّيْتِيَّةِ مَرَّتَيْنِ أُسْبُوعِيًّا الجِسْمَ بِأَحْمَاضِ أُومِيغَا-3.",
+      },
+      {
+        context: "Pan Searing",
+        en: "Crispy pan-seared fish fillets seasoned with lemon and herbs make a light supper.",
+        ar: "تُشَكِّلُ شَرَائِحُ فِيلِيهِ السَّمَكِ المُحَمَّرَةُ مَعَ اللَّيْمُونِ وَالأَعْشَابِ عَشَاءً خَفِيفًا.",
+      },
+    ],
+    exampleSentence: "The fishmonger displayed sparkling fresh whole fish laid over crushed ice.",
+    exampleArabic:
+      "عَرَضَ بَائِعُ الأَسْمَاكِ أَسْمَاكًا طَازَجَةً كَامِلَةً بَرَّاقَةً فَوْقَ الثَّلْجِ المَجْرُوشِ.",
+  },
+  shrimp: {
+    id: "shrimp",
+    arabic: "جَمْبَرِي (قُرَيْدِس)",
+    partOfSpeech: "noun",
+    phonetic: "ʃrɪmp",
+    pronunciationTip: "Short 'i' sound /ɪ/: 'SHRIMP' (/ʃrɪmp/).",
+    collocations: [
+      "jumbo shrimp",
+      "grilled shrimp",
+      "peeled shrimp",
+      "shrimp cocktail",
+      "garlic shrimp",
+      "fried shrimp",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "peel and devein",
+        meaning: "remove shell and digestive tract",
+        arabic: "يُقَشِّرُ وَيُنَظِّفُ الجَمْبَرِي",
+        example: "Peel and devein the raw shrimp before tossing them onto the grill.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Seafood Section",
+        en: "She ordered a pound of raw jumbo shrimp from the ice-filled seafood showcase.",
+        ar: "طَلَبَتْ رَطْلًا مِنْ جَمْبَرِي الحَجْمِ الكَبِيرِ النِّيءِ مِنْ مَعْرَضِ المَأْكُولَاتِ البَحْرِيَّةِ.",
+      },
+      {
+        context: "Garlic Sauté",
+        en: "Sautéed in sizzling butter and garlic, pink shrimp cook to perfection in under three minutes.",
+        ar: "عِنْدَ تَشْوِيحِهِ فِي الزُّبْدَةِ وَالثَّوْمِ، يَنْضَجُ الجَمْبَرِي الوَرْدِيُّ فِي أَقَلَّ مِنْ ثَلَاثِ دَقَائِقَ.",
+      },
+      {
+        context: "Seafood Pasta",
+        en: "Tender succulent shrimp tossed with fettuccine and cream sauce create a luxurious dinner.",
+        ar: "يُشَكِّلُ الجَمْبَرِي الطَّرِيُّ مَعَ مَعْكَرُونَةِ الفِيتُوتْشِينِي وَصَلْصَةِ الكْرِيمَةِ عَشَاءً فَاخِرًا.",
+      },
+    ],
+    exampleSentence:
+      "She ordered a pound of raw jumbo shrimp from the ice-filled seafood showcase.",
+    exampleArabic:
+      "طَلَبَتْ رَطْلًا مِنْ جَمْبَرِي الحَجْمِ الكَبِيرِ النِّيءِ مِنْ مَعْرَضِ المَأْكُولَاتِ البَحْرِيَّةِ.",
+  },
+  sausage: {
+    id: "sausage",
+    arabic: "سُجُق (نَقَانِق)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsɔːsɪdʒ",
+    pronunciationTip: "Pronounce 'SAW-sij' (/ˈsɔː.sɪdʒ/).",
+    collocations: [
+      "breakfast sausage",
+      "smoked sausage",
+      "spicy sausage",
+      "sausage links",
+      "grilled sausages",
+      "sausage roll",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "brown in",
+        meaning: "pan-fry until outer casing is crisp",
+        arabic: "يُحَمِّرُ السُّجُقَ فِي المِقْلَاة",
+        example: "Brown the breakfast sausage links in a skillet over medium heat.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Deli Stall",
+        en: "The butcher offered coils of artisan smoked sausage seasoned with fennel and cracked pepper.",
+        ar: "عَرَضَ الجَزَّارُ لَفَائِفَ سُجُقٍ مُدَخَّنٍ حِرَفِيٍّ مُتَبَّلٍ بِالشَّمَرِ وَالفُلْفُلِ المَجْرُوشِ.",
+      },
+      {
+        context: "Morning Breakfast",
+        en: "Sizzling sausage links served alongside scrambled eggs make a hearty country breakfast.",
+        ar: "تُشَكِّلُ أَصَابِعُ النَّقَانِقِ السَّاخِنَةُ مَعَ البَيْضِ المَخْفُوقِ إِفْطَارًا رِيفِيًّا مُشْبِعًا.",
+      },
+      {
+        context: "Barbecue Grilling",
+        en: "Smoky grilled sausages served in toasted buns with mustard are picnic favorites.",
+        ar: "يُعَدُّ السُّجُقُ المَشْوِيُّ المُدَخَّنُ فِي خُبْزٍ مُحَمَّصٍ مَعَ الخَرْدَلِ طَبَقَ نُزْهَةٍ مُفَضَّلًا.",
+      },
+    ],
+    exampleSentence:
+      "The butcher offered coils of artisan smoked sausage seasoned with fennel and cracked pepper.",
+    exampleArabic:
+      "عَرَضَ الجَزَّارُ لَفَائِفَ سُجُقٍ مُدَخَّنٍ حِرَفِيٍّ مُتَبَّلٍ بِالشَّمَرِ وَالفُلْفُلِ المَجْرُوشِ.",
+  },
+  ham: {
+    id: "ham",
+    arabic: "لَحْمُ فَخْذِ خِنْزِير (هَام)",
+    partOfSpeech: "noun",
+    phonetic: "hæm",
+    pronunciationTip: "Short 'a' sound /æ/: 'HAM' (/hæm/).",
+    collocations: [
+      "sliced ham",
+      "honey-glazed ham",
+      "smoked ham",
+      "ham and cheese",
+      "cure a ham",
+      "ham sandwich",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "glaze over",
+        meaning: "brush sweet sauce during baking",
+        arabic: "يَدْهَنُ بِمَزِيجٍ سُكَّرِيٍّ لَامِع",
+        example: "Glaze over the baked holiday ham with cloves and wildflower honey.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Deli Slicing",
+        en: "The deli attendant sliced half a pound of smoked honey-cured ham for sandwich lunches.",
+        ar: "قَطَّعَ عَامِلُ المَأْكُولَاتِ نِصْفَ رَطْلٍ مِنْ لَحْمِ الهَامِ المُدَخَّنِ بِالعَسَلِ لِلشَّطَائِرِ.",
+      },
+      {
+        context: "Holiday Feast",
+        en: "A golden honey-glazed ham studded with cloves was the centerpiece of the festive meal.",
+        ar: "كَانَ لَحْمُ الهَامِ الذَّهَبِيُّ المَطْلِيُّ بِالعَسَلِ مَحَطَّ أَنْظَارِ مَائِدَةِ العِيدِ.",
+      },
+      {
+        context: "Breakfast Omelet",
+        en: "Diced ham and melted Swiss cheese folded into fluffy eggs make a classic French omelet.",
+        ar: "يُشَكِّلُ الهَامُ المَقْطُوعُ مُكَعَّبَاتٍ مَعَ الجُبْنِ السُّوِيسْرِيِّ عِجَّةَ بَيْضٍ فَرَنْسِيَّةً كَلَاسِيكِيَّةً.",
+      },
+    ],
+    exampleSentence:
+      "The deli attendant sliced half a pound of smoked honey-cured ham for sandwich lunches.",
+    exampleArabic:
+      "قَطَّعَ عَامِلُ المَأْكُولَاتِ نِصْفَ رَطْلٍ مِنْ لَحْمِ الهَامِ المُدَخَّنِ بِالعَسَلِ لِلشَّطَائِرِ.",
+  },
+  bacon: {
+    id: "bacon",
+    arabic: "لَحْمٌ مُقَدَّد (بِيكُون)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbeɪkən",
+    pronunciationTip: "Pronounce 'BAY-kun' (/ˈbeɪ.kən/).",
+    collocations: [
+      "crispy bacon",
+      "smoked bacon",
+      "rashers of bacon",
+      "bacon and eggs",
+      "strips of bacon",
+      "sizzling bacon",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "crisp up",
+        meaning: "fry until crunchy and golden",
+        arabic: "يُحَمَّصُ حَتَّى يُصْبِحَ مُقَرْمَشًا",
+        example: "Fry the bacon strips in a hot skillet until they crisp up nicely.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Breakfast Skillet",
+        en: "The mouthwatering aroma of sizzling crispy bacon filled the kitchen on Sunday morning.",
+        ar: "مَلَأَتِ الرَّائِحَةُ الشَّهِيَّةُ لِلَّحْمِ المُقَدَّدِ المُقَرْمَشِ السَّاخِنِ المَطْبَخَ فِي صَبَاحِ الأَحَدِ.",
+      },
+      {
+        context: "Club Sandwich",
+        en: "Crisp strips of hickory-smoked bacon add savory crunch to a towering club sandwich.",
+        ar: "تُضِيفُ شَرَائِحُ البِيكُونِ المُدَخَّنِ المُقَرْمَشَةُ قَرْمَشَةً لَذِيذَةً لِشَطِيرَةِ الكْلُوب.",
+      },
+      {
+        context: "Salad Garnish",
+        en: "Crumbling warm bacon over a fresh spinach salad complements sweet balsamic dressing.",
+        ar: "يُعَزِّزُ فَتْفَتَةُ اللَّحْمِ المُقَدَّدِ الدَّافِئِ فَوْقَ سَلَطَةِ السَّبَانِخِ نَكْهَةَ صَلْصَةِ البَلْسَمِيك.",
+      },
+    ],
+    exampleSentence:
+      "The mouthwatering aroma of sizzling crispy bacon filled the kitchen on Sunday morning.",
+    exampleArabic:
+      "مَلَأَتِ الرَّائِحَةُ الشَّهِيَّةُ لِلَّحْمِ المُقَدَّدِ المُقَرْمَشِ السَّاخِنِ المَطْبَخَ فِي صَبَاحِ الأَحَدِ.",
+  },
+  salmon: {
+    id: "salmon",
+    arabic: "سَلَمُون (سَمَكُ السَّلَمُون)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsæmən",
+    pronunciationTip: "Silent 'l': 'SAM-un' (/ˈsæm.ən/).",
+    collocations: [
+      "smoked salmon",
+      "fresh salmon fillet",
+      "grilled salmon",
+      "wild salmon",
+      "Atlantic salmon",
+      "salmon steak",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pan-fry in",
+        meaning: "sear skin side down in hot skillet",
+        arabic: "يُشَوِّحُ فِي المِقْلَاة",
+        example: "Pan-fry the fresh salmon fillet in olive oil until the skin becomes crispy.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Fish Counter",
+        en: "The seafood specialist wrapped a vibrant pink Atlantic salmon fillet for the customer.",
+        ar: "غَلَّفَ مُتَخَصِّصُ المَأْكُولَاتِ البَحْرِيَّةِ شَرِيحَةَ سَلَمُونٍ أَطْلَسِيٍّ وَرْدِيَّةً زَاهِيَةً لِلزَّبُونِ.",
+      },
+      {
+        context: "Healthy Main",
+        en: "Grilled wild salmon served with asparagus and lemon wedges is rich in omega-3 fats.",
+        ar: "يَزْخَرُ سَمَكُ السَّلَمُونِ البَرِّيُّ المَشْوِيُّ مَعَ الهِلْيَوْنِ بِدُهُونِ أُومِيغَا-3 المُفِيدَةِ.",
+      },
+      {
+        context: "Breakfast Bagel",
+        en: "Thinly sliced smoked salmon paired with cream cheese and capers makes an iconic bagel topping.",
+        ar: "تُشَكِّلُ شَرَائِحُ السَّلَمُونِ المُدَخَّنِ مَعَ جُبْنِ الكْرِيمَةِ طَبَقَ خُبْزِ البَيْغِل المُمَيَّزَ.",
+      },
+    ],
+    exampleSentence:
+      "The seafood specialist wrapped a vibrant pink Atlantic salmon fillet for the customer.",
+    exampleArabic:
+      "غَلَّفَ مُتَخَصِّصُ المَأْكُولَاتِ البَحْرِيَّةِ شَرِيحَةَ سَلَمُونٍ أَطْلَسِيٍّ وَرْدِيَّةً زَاهِيَةً لِلزَّبُونِ.",
+  },
+  tuna: {
+    id: "tuna",
+    arabic: "تُونَة (سَمَكُ التُّونَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtuːnə",
+    pronunciationTip: "Pronounce 'TOO-nuh' (/ˈtuː.nə/).",
+    collocations: [
+      "canned tuna",
+      "fresh tuna steak",
+      "tuna salad",
+      "ahi tuna",
+      "seared tuna",
+      "tuna sandwich",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "drain off",
+        meaning: "pour out excess water or oil from can",
+        arabic: "يُصَفِّي السَّوَائِلَ مِنَ العُلْبَة",
+        example: "Drain off the brine from the canned tuna before mixing with mayonnaise.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Fish Display",
+        en: "The seafood market showcased ruby-red fresh ahi tuna steaks ready for quick searing.",
+        ar: "عَرَضَ سُوقُ المَأْكُولَاتِ البَحْرِيَّةِ شَرَائِحَ سَمَكِ التُّونَةِ الحَمْرَاءِ الطَّازَجَةِ لِلتَّحْمِيرِ.",
+      },
+      {
+        context: "Lunch Preparation",
+        en: "She mixed canned tuna with olive oil, diced celery, and Dijon mustard for lunch.",
+        ar: "خَلَطَتْ تُونَةً مُعَلَّبَةً مَعَ زَيْتِ الزَّيْتُونِ وَالكَرَفْسِ وَالخَرْدَلِ لِوَجْبَةِ الغَدَاءِ.",
+      },
+      {
+        context: "Japanese Cuisine",
+        en: "Premium sashimi-grade tuna is sliced thinly and served with soy sauce and wasabi.",
+        ar: "تُقَطَّعُ تُونَةُ السَّاشِيمِي المُمْتَازَةُ شَرَائِحَ رَقِيقَةً وَتُقَدَّمُ مَعَ صَلْصَةِ الصُّويَا.",
+      },
+    ],
+    exampleSentence:
+      "The seafood market showcased ruby-red fresh ahi tuna steaks ready for quick searing.",
+    exampleArabic:
+      "عَرَضَ سُوقُ المَأْكُولَاتِ البَحْرِيَّةِ شَرَائِحَ سَمَكِ التُّونَةِ الحَمْرَاءِ الطَّازَجَةِ لِلتَّحْمِيرِ.",
+  },
+  lamb: {
+    id: "lamb",
+    arabic: "لَحْمُ ضَأْن (لَحْمُ خَرُوف)",
+    partOfSpeech: "noun",
+    phonetic: "læm",
+    pronunciationTip: "Silent 'b': 'LAM' (/læm/).",
+    collocations: [
+      "roast lamb",
+      "lamb chops",
+      "rack of lamb",
+      "ground lamb",
+      "leg of lamb",
+      "tender lamb",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "rub down",
+        meaning: "coat meat surface with herbs and oil",
+        arabic: "يَفْرُكُ اللَّحْمَ بِالتَّتْبِيلَة",
+        example: "Rub down the rack of lamb with minced rosemary, crushed garlic, and olive oil.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Butcher Shop",
+        en: "The butcher trimmed delicate frenched chops from a premium rack of fresh lamb.",
+        ar: "قَلَّمَ الجَزَّارُ شَرَائِحَ رَقِيقَةً مِنْ قِطْعَةِ لَحْمِ ضَأْنٍ طَازَجَةٍ مُمْتَازَةٍ.",
+      },
+      {
+        context: "Sunday Roast",
+        en: "A slow-roasted leg of lamb served with mint sauce and root vegetables is a celebration classic.",
+        ar: "يُعَدُّ فَخْذُ الخَرُوفِ المَشْوِيُّ مَعَ صَلْصَةِ النَّعْنَاعِ وَالخُضْرَاوَاتِ طَبَقًا احْتِفَالِيًّا.",
+      },
+      {
+        context: "Middle Eastern Cuisine",
+        en: "Spiced minced lamb grilled on skewers over open coals creates mouthwatering kebabs.",
+        ar: "يُنْتِجُ لَحْمُ الضَّأْنِ المَفْرُومُ المُتَبَّلُ المَشْوِيُّ عَلَى الفَحْمِ كَبَابًا شَهِيًّا.",
+      },
+    ],
+    exampleSentence:
+      "The butcher trimmed delicate frenched chops from a premium rack of fresh lamb.",
+    exampleArabic:
+      "قَلَّمَ الجَزَّارُ شَرَائِحَ رَقِيقَةً مِنْ قِطْعَةِ لَحْمِ ضَأْنٍ طَازَجَةٍ مُمْتَازَةٍ.",
+  },
+  yogurt: {
+    id: "yogurt",
+    arabic: "زَبَادِي (لَبَنٌ رَائِب)",
+    partOfSpeech: "noun",
+    phonetic: "ˈjoʊɡərt",
+    pronunciationTip: "Pronounce 'YOH-gurt' (/ˈjoʊ.ɡərt/).",
+    collocations: [
+      "Greek yogurt",
+      "plain yogurt",
+      "fruit yogurt",
+      "creamy yogurt",
+      "probiotic yogurt",
+      "yogurt parfait",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "spoon out",
+        meaning: "serve portions using a spoon",
+        arabic: "يَغْرِفُ بِالمِلْعَقَة",
+        example: "Spoon out a generous serving of thick Greek yogurt into the breakfast bowl.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dairy Cooler",
+        en: "She picked up several tubs of creamy unsweetened Greek yogurt from the dairy aisle.",
+        ar: "اشْتَرَتْ عِدَّةَ عُلَبٍ مِنْ زَبَادِي يُونَانِيٍّ كَرِيمِيٍّ غَيْرِ مُحَلًّى مِنْ مَمَرِّ الأَلْبَانِ.",
+      },
+      {
+        context: "Morning Breakfast",
+        en: "Layering rich yogurt with crunchy granola and fresh berries creates a nutritious parfait.",
+        ar: "يُشَكِّلُ تَرْتِيبُ طَبَقَاتِ الزَّبَادِي مَعَ الجْرَانُولَا وَالتُّوتِ وَجْبَةَ إِفْطَارٍ مُغَذِّيَةً.",
+      },
+      {
+        context: "Probiotics",
+        en: "Live probiotic cultures in natural yogurt support healthy digestion and gut balance.",
+        ar: "تَدْعَمُ بَكْتِيرْيَا البْرُوبَايُوتِك الحَيَّةُ فِي الزَّبَادِي الطَّبِيعِيِّ صِحَّةَ الهَضْمِ.",
+      },
+    ],
+    exampleSentence:
+      "She picked up several tubs of creamy unsweetened Greek yogurt from the dairy aisle.",
+    exampleArabic:
+      "اشْتَرَتْ عِدَّةَ عُلَبٍ مِنْ زَبَادِي يُونَانِيٍّ كَرِيمِيٍّ غَيْرِ مُحَلًّى مِنْ مَمَرِّ الأَلْبَانِ.",
+  },
+  cream: {
+    id: "cream",
+    arabic: "قِشْطَة (كْرِيمَة)",
+    partOfSpeech: "noun",
+    phonetic: "kriːm",
+    pronunciationTip: "Long 'e' sound /iː/: 'KREEM' (/kriːm/).",
+    collocations: [
+      "heavy cream",
+      "whipped cream",
+      "sour cream",
+      "double cream",
+      "pouring cream",
+      "clotted cream",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "whip up",
+        meaning: "beat liquid cream into stiff airy peaks",
+        arabic: "يَخْفِقُ الكْرِيمَة",
+        example: "Whip up the heavy cream with powdered sugar to top the strawberry tart.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dairy Section",
+        en: "She bought a carton of heavy whipping cream to make chocolate ganache for the cake.",
+        ar: "اشْتَرَتْ عُلْبَةَ كْرِيمَةِ خَفْقٍ ثَقِيلَةٍ لِإِعْدَادِ جَانَاش الشُّوكُولَاتَةِ لِلْكَعْكَةِ.",
+      },
+      {
+        context: "Coffee Addition",
+        en: "A small splash of rich dairy cream softens the bold bitterness of dark roast coffee.",
+        ar: "تُخَفِّفُ رَشْفَةٌ صَغِيرَةٌ مِنْ قِشْطَةِ الحَلِيبِ الغَنِيَّةِ مَرَارَةَ القَهْوَةِ الدَّاكِنَةِ.",
+      },
+      {
+        context: "Dessert Topping",
+        en: "Freshly whipped vanilla cream elevates slices of warm apple pie into an indulgent treat.",
+        ar: "تَرْفَعُ كْرِيمَةُ الفَانِيلْيَا المَخْفُوقَةُ حَدِيثًا شَرَائِحَ فَطِيرَةِ التُّفَّاحِ إِلَى حَلْوَى فَاخِرَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "She bought a carton of heavy whipping cream to make chocolate ganache for the cake.",
+    exampleArabic:
+      "اشْتَرَتْ عُلْبَةَ كْرِيمَةِ خَفْقٍ ثَقِيلَةٍ لِإِعْدَادِ جَانَاش الشُّوكُولَاتَةِ لِلْكَعْكَةِ.",
+  },
+  roll: {
+    id: "roll",
+    arabic: "خُبْزٌ صَغِير (لَفَائِفُ خُبْز / رُول)",
+    partOfSpeech: "noun",
+    phonetic: "roʊl",
+    pronunciationTip: "Long 'o' sound /oʊ/: 'ROHL' (/roʊl/).",
+    collocations: [
+      "dinner roll",
+      "crusty roll",
+      "cinnamon roll",
+      "soft bread roll",
+      "freshly baked roll",
+      "butter a roll",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "roll out",
+        meaning: "flatten dough using a rolling pin",
+        arabic: "يَفْرِدُ العَجِينَ بِالنُّشَّابَة",
+        example: "Roll out the yeast dough into small smooth rounds before baking.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bakery Baskets",
+        en: "The baker pulled a tray of warm, golden-brown dinner rolls straight from the brick oven.",
+        ar: "أَخْرَجَ الخَبَّازُ صِينِيَّةً مِنْ لَفَائِفِ خُبْزِ العَشَاءِ الذَّهَبِيَّةِ الدَّافِئَةِ مِنَ الفُرْنِ.",
+      },
+      {
+        context: "Dinner Table",
+        en: "She broke open a soft bread roll and spread melted butter across its warm center.",
+        ar: "فَتَحَتْ رَغِيفَ خُبْزٍ صَغِيرًا طَرِيًّا وَدَهَنَتِ الزُّبْدَةَ الذَّائِبَةَ فِي مُنْتَصَفِهِ.",
+      },
+      {
+        context: "Sweet Variety",
+        en: "Fragrant cinnamon rolls drizzled with cream cheese icing are weekend morning favorites.",
+        ar: "تُعَدُّ لَفَائِفُ القِرْفَةِ العَطِرَةُ المُغَطَّاةُ بِالسُّكَّرِ وَالجُبْنِ مَخْبُوزَاتٍ صَبَاحِيَّةً مُفَضَّلَةً.",
+      },
+    ],
+    exampleSentence:
+      "The baker pulled a tray of warm, golden-brown dinner rolls straight from the brick oven.",
+    exampleArabic:
+      "أَخْرَجَ الخَبَّازُ صِينِيَّةً مِنْ لَفَائِفِ خُبْزِ العَشَاءِ الذَّهَبِيَّةِ الدَّافِئَةِ مِنَ الفُرْنِ.",
+  },
+  bagel: {
+    id: "bagel",
+    arabic: "بَيْغِل (خُبْزٌ حَلَقِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbeɪɡəl",
+    pronunciationTip: "Pronounce 'BAY-gul' (/ˈbeɪ.ɡəl/).",
+    collocations: [
+      "toasted bagel",
+      "everything bagel",
+      "sesame bagel",
+      "bagel with cream cheese",
+      "chewy bagel",
+      "cinnamon raisin bagel",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "slice in half",
+        meaning: "cut horizontally through the center",
+        arabic: "يَقْطَعُ البَيْغِل نِصْفَيْن",
+        example: "Slice the bagel in half horizontally before popping it into the toaster.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bakery Shelf",
+        en: "He ordered a freshly baked everything bagel topped with toasted garlic and sesame seeds.",
+        ar: "طَلَبَ خُبْزَ بَيْغِل مَخْبُوزًا حَدِيثًا مُغَطًّى بِالثَّوْمِ المُحَمَّصِ وَبُذُورِ السِّمْسِمِ.",
+      },
+      {
+        context: "Morning Breakfast",
+        en: "A warm toasted bagel spread generously with cream cheese makes a classic city breakfast.",
+        ar: "يُشَكِّلُ خُبْزُ البَيْغِل المُحَمَّصُ مَعَ جُبْنِ الكْرِيمَةِ إِفْطَارًا كَلَاسِيكِيًّا شَهِيرًا.",
+      },
+      {
+        context: "Baking Tradition",
+        en: "Authentic bagels are boiled in water before baking to develop their signature chewy crust.",
+        ar: "يُغْلَى البَيْغِل الأَصْلِيُّ فِي المَاءِ قَبْلَ الخَبْزِ لِاكْتِسَابِ قِشْرَتِهِ المَطَّاطِيَّةِ المُمَيَّزَةِ.",
+      },
+    ],
+    exampleSentence:
+      "He ordered a freshly baked everything bagel topped with toasted garlic and sesame seeds.",
+    exampleArabic:
+      "طَلَبَ خُبْزَ بَيْغِل مَخْبُوزًا حَدِيثًا مُغَطًّى بِالثَّوْمِ المُحَمَّصِ وَبُذُورِ السِّمْسِمِ.",
+  },
+  croissant: {
+    id: "croissant",
+    arabic: "كْرَوَاسُون (خُبْزٌ هِلَالِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "kwɑːˈsɑːnt",
+    pronunciationTip: "Pronounce 'kwah-SAHNT' (/kwɑːˈsɑːnt/).",
+    collocations: [
+      "buttery croissant",
+      "flaky croissant",
+      "almond croissant",
+      "chocolate croissant",
+      "warm croissant",
+      "fresh croissant",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "flake off",
+        meaning: "break into delicate crisp layers",
+        arabic: "تَتَسَاقَطُ طَبَقَاتُهُ الهَشَّة",
+        example: "Delicate golden buttery layers flaked off as she bit into the warm croissant.",
+      },
+    ],
+    sentences: [
+      {
+        context: "French Bakery",
+        en: "The bakery case displayed rows of golden, flaky butter croissants baked at sunrise.",
+        ar: "عَرَضَتْ خِزَانَةُ المَخْبَزِ صُفُوفًا مِنْ كْرَوَاسُون الزُّبْدَةِ الذَّهَبِيِّ الهَشِّ.",
+      },
+      {
+        context: "Morning Pastry",
+        en: "Enjoying a fresh warm croissant alongside a cup of hot espresso is a morning delight.",
+        ar: "يُعَدُّ الاِسْتِمْتَاعُ بِكْرَوَاسُون سَاخِنٍ طَازَجٍ مَعَ قَهْوَةِ الإِسْبْرِيسُو مُتْعَةً صَبَاحِيَّةً.",
+      },
+      {
+        context: "Laminated Dough",
+        en: "Laminating yeast dough with chilled butter creates dozens of airy, crisp layers inside croissants.",
+        ar: "يَخْلُقُ فَرْدُ العَجِينِ مَعَ الزُّبْدَةِ المُبَرَّدَةِ عَشَرَاتِ الطَّبَقَاتِ الهَوَائِيَّةِ الهَشَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "The bakery case displayed rows of golden, flaky butter croissants baked at sunrise.",
+    exampleArabic:
+      "عَرَضَتْ خِزَانَةُ المَخْبَزِ صُفُوفًا مِنْ كْرَوَاسُون الزُّبْدَةِ الذَّهَبِيِّ الهَشِّ.",
+  },
+  cake: {
+    id: "cake",
+    arabic: "كَعْكَة (كَيْك / تَوْرْتَة)",
+    partOfSpeech: "noun",
+    phonetic: "keɪk",
+    pronunciationTip: "Long 'a' sound /eɪ/: 'KAYK' (/keɪk/).",
+    collocations: [
+      "birthday cake",
+      "chocolate cake",
+      "slice of cake",
+      "layer cake",
+      "wedding cake",
+      "sponge cake",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "frost with",
+        meaning: "cover with sweet icing or buttercream",
+        arabic: "يُغَطِّي بِكْرِيمَةِ التَّزْيِين",
+        example: "Frost the cooled chocolate cake with rich fudge buttercream icing.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bakery Showcase",
+        en: "The pastry chef decorated an elaborate three-tier chocolate birthday cake with fresh raspberries.",
+        ar: "زَيَّنَ شِيفُ الحَلَوِيَّاتِ كَعْكَةَ عِيدِ مِيلَادٍ مُتْقَنَةً مِنْ ثَلَاثِ طَبَقَاتٍ مَعَ التُّوتِ.",
+      },
+      {
+        context: "Celebration",
+        en: "Guests sang cheerfully before the birthday girl blew out candles on her decorated cake.",
+        ar: "غَنَّى الضُّيُوفُ بِمَرَحٍ قَبْلَ أَنْ تُطْفِئَ صَاحِبَةُ العِيدِ الشُّمُوعَ عَلَى كَعْكَتِهَا.",
+      },
+      {
+        context: "Afternoon Treat",
+        en: "A moist slice of lemon sponge cake paired with English breakfast tea is a comforting treat.",
+        ar: "تُشَكِّلُ شَرِيحَةُ كَعْكَةِ اللَّيْمُونِ الإِسْفَنْجِيَّةِ مَعَ الشَّايِ تَلَذُّذًا مُرِيحًا.",
+      },
+    ],
+    exampleSentence:
+      "The pastry chef decorated an elaborate three-tier chocolate birthday cake with fresh raspberries.",
+    exampleArabic:
+      "زَيَّنَ شِيفُ الحَلَوِيَّاتِ كَعْكَةَ عِيدِ مِيلَادٍ مُتْقَنَةً مِنْ ثَلَاثِ طَبَقَاتٍ مَعَ التُّوتِ.",
+  },
+  pie: {
+    id: "pie",
+    arabic: "فَطِيرَة",
+    partOfSpeech: "noun",
+    phonetic: "paɪ",
+    pronunciationTip: "Long 'i' sound /aɪ/: 'PY' (/paɪ/).",
+    collocations: [
+      "apple pie",
+      "slice of pie",
+      "pumpkin pie",
+      "pecan pie",
+      "pie crust",
+      "savory pot pie",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "crimp up",
+        meaning: "pinch decorative edges along pastry borders",
+        arabic: "يُزَخْرِفُ حَوَافَّ عَجِينَةِ الفَطِيرَة",
+        example: "Crimp up the outer pie crust edges using the tines of a silver fork.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bakery Display",
+        en: "A warm spiced apple pie with a golden lattice crust cooled on the bakery rack.",
+        ar: "بَرَّدَتْ فَطِيرَةُ تُفَّاحٍ مُتَبَّلَةٌ دَافِئَةٌ ذَاتُ قِشْرَةٍ مُشَبَّكَةٍ ذَهَبِيَّةٍ عَلَى رَفِّ المَخْبَزِ.",
+      },
+      {
+        context: "Holiday Feast",
+        en: "Spiced pumpkin pie served with a dollop of whipped cream is an essential holiday dessert.",
+        ar: "تُعَدُّ فَطِيرَةُ القَرْعِ المُمَتَّعَةُ مَعَ مِلْعَقَةِ كْرِيمَةٍ حَلْوَى مَوْسِمِيَّةً ضَرُورِيَّةً.",
+      },
+      {
+        context: "Savory Variety",
+        en: "Hearty chicken pot pies baked in flaky pastry bowls provide delicious winter comfort.",
+        ar: "تُوَفِّرُ فَطَائِرُ الدَّجَاجِ الدَّسِمَةُ المَخْبُوزَةُ فِي عَجِينٍ هَشٍّ شُعُورًا بِالدِّفْءِ.",
+      },
+    ],
+    exampleSentence:
+      "A warm spiced apple pie with a golden lattice crust cooled on the bakery rack.",
+    exampleArabic:
+      "بَرَّدَتْ فَطِيرَةُ تُفَّاحٍ مُتَبَّلَةٌ دَافِئَةٌ ذَاتُ قِشْرَةٍ مُشَبَّكَةٍ ذَهَبِيَّةٍ عَلَى رَفِّ المَخْبَزِ.",
+  },
+  cookie: {
+    id: "cookie",
+    arabic: "كَعْكَةٌ صَغِيرَة (بَسْكُويْت / كُوكِيز)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkʊki",
+    pronunciationTip: "Pronounce 'KOOK-ee' (/ˈkʊk.i/).",
+    collocations: [
+      "chocolate chip cookie",
+      "freshly baked cookies",
+      "oatmeal cookie",
+      "cookie jar",
+      "crispy cookie",
+      "chewy cookie",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "dunk in",
+        meaning: "dip baked biscuits briefly into milk or tea",
+        arabic: "يُغَطِّسُ فِي الحَلِيب",
+        example: "He loved to dunk warm chocolate chip cookies into cold milk.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bakery Counter",
+        en: "The bakery displayed large jars filled with chewy chocolate chip cookies and sugar biscuits.",
+        ar: "عَرَضَ المَخْبَزُ مَرَاطِبِينَ كَبِيرَةً مَلِيئَةً بِكَعْكِ الشُّوكُولَاتَةِ وَبَسْكُويْتِ السُّكَّرِ.",
+      },
+      {
+        context: "Home Baking",
+        en: "Children helped roll out butter dough and press fun star shapes for holiday cookies.",
+        ar: "سَاعَدَ الأَطْفَالُ فِي فَرْدِ عَجِينَةِ الزُّبْدَةِ وَتَشْكِيلِ نُجُومٍ لِكَعْكِ العِيدِ.",
+      },
+      {
+        context: "Afternoon Snack",
+        en: "Two crisp ginger cookies accompanied her afternoon cup of black tea.",
+        ar: "رَافَقَتْ كَعْكَتَانِ مُقَرْمَشَتَانِ مِنَ الزَّنْجَبِيلِ كُوبَ الشَّايِ الأَسْوَدِ فِي المَسَاءِ.",
+      },
+    ],
+    exampleSentence:
+      "The bakery displayed large jars filled with chewy chocolate chip cookies and sugar biscuits.",
+    exampleArabic:
+      "عَرَضَ المَخْبَزُ مَرَاطِبِينَ كَبِيرَةً مَلِيئَةً بِكَعْكِ الشُّوكُولَاتَةِ وَبَسْكُويْتِ السُّكَّرِ.",
+  },
+  "produce-section": {
+    id: "produce-section",
+    arabic: "قِسْمُ الخُضْرَاوَاتِ وَالفَوَاكِه (قِسْمُ المُنْتَجَاتِ الزِّرَاعِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈprɑːduːs ˈsɛkʃən",
+    pronunciationTip: "Pronounce 'PRAH-doos SEK-shun' (/ˈprɑː.duːs ˈsɛk.ʃən/).",
+    collocations: [
+      "fresh produce section",
+      "supermarket produce section",
+      "organic produce section",
+      "misted produce section",
+      "browse the produce section",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "walk through",
+        meaning: "explore market areas leisurely",
+        arabic: "يَتَجَوَّلُ فِي قِسْمِ الخُضْرَاوَات",
+        example: "Walk through the fresh produce section to pick ripe seasonal fruits.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Supermarket Entrance",
+        en: "Automatic misting nozzles kept crisp leafy vegetables cool in the colorful produce section.",
+        ar: "حَافَظَتْ فُوَّهَاتُ الرَّذَاذِ الآلِيَّةِ عَلَى بُرُودَةِ الخُضْرَاوَاتِ فِي قِسْمِ الخُضْرَاوَاتِ وَالفَوَاكِهِ.",
+      },
+      {
+        context: "Organic Selection",
+        en: "Shoppers crowded around bins of certified organic berries and root vegetables.",
+        ar: "ازْدَحَمَ المُتَسَوِّقُونَ حَوْلَ صَنَادِيقِ التُّوتِ وَالخُضْرَاوَاتِ الجَذْرِيَّةِ العُضْوِيَّةِ.",
+      },
+      {
+        context: "Store Navigation",
+        en: "The produce section is strategically situated right inside the store entrance to welcome guests.",
+        ar: "يَقَعُ قِسْمُ المُنْتَجَاتِ الزِّرَاعِيَّةِ عِنْدَ مَدْخَلِ المَتْجَرِ لِلتَّرْحِيبِ بِالزُّوَّارِ.",
+      },
+    ],
+    exampleSentence:
+      "Automatic misting nozzles kept crisp leafy vegetables cool in the colorful produce section.",
+    exampleArabic:
+      "حَافَظَتْ فُوَّهَاتُ الرَّذَاذِ الآلِيَّةِ عَلَى بُرُودَةِ الخُضْرَاوَاتِ فِي قِسْمِ الخُضْرَاوَاتِ وَالفَوَاكِهِ.",
+  },
+  "deli-counter": {
+    id: "deli-counter",
+    arabic: "كَاوَنْتَر المَأْكُولَاتِ الجَاهِزَة (قِسْمُ الأَجْبَانِ وَاللُّحُومِ البَارِدَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdɛli ˈkaʊntər",
+    pronunciationTip: "Pronounce 'DEL-ee KOWN-ter' (/ˈdɛl.i ˈkaʊn.tər/).",
+    collocations: [
+      "supermarket deli counter",
+      "order at the deli counter",
+      "sliced at the deli counter",
+      "fresh deli counter",
+      "deli counter attendant",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "order from",
+        meaning: "request sliced items from service counter",
+        arabic: "يَطْلُبُ مِنَ الكَاوَنْتَر",
+        example:
+          "You can order sliced roast turkey and aged provolone directly from the deli counter.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Custom Slicing",
+        en: "She took a numbered ticket and waited by the refrigerated deli counter for sliced cheeses.",
+        ar: "سَحَبَتْ تِذْكِرَةً مَرْقُومَةً وَانْتَظَرَتْ بِجَانِبِ كَاوَنْتَر الأَجْبَانِ وَاللُّحُومِ البَارِدَةِ.",
+      },
+      {
+        context: "Prepared Foods",
+        en: "The deli counter offers ready-to-eat rotisserie chickens, gourmet salads, and artisan olives.",
+        ar: "يُوَفِّرُ قِسْمُ المَأْكُولَاتِ الجَاهِزَةِ دَجَاجًا شَوَّايَةً وَسَلَطَاتٍ فَاخِرَةً وَزَيْتُونًا.",
+      },
+      {
+        context: "Specialty Meats",
+        en: "Staff at the deli counter slice cured meats to exact customer thickness preferences.",
+        ar: "يُقَطِّعُ المُوَظَّفُونَ اللُّحُومَ المُجَفَّفَةَ حَسَبَ سَمَاكَةِ الشَّرَائِحِ الَّتِي يُفَضِّلُهَا الزَّبُونُ.",
+      },
+    ],
+    exampleSentence:
+      "She took a numbered ticket and waited by the refrigerated deli counter for sliced cheeses.",
+    exampleArabic:
+      "سَحَبَتْ تِذْكِرَةً مَرْقُومَةً وَانْتَظَرَتْ بِجَانِبِ كَاوَنْتَر الأَجْبَانِ وَاللُّحُومِ البَارِدَةِ.",
+  },
+  bakery: {
+    id: "bakery",
+    arabic: "مَخْبَز (قِسْمُ المَخْبُوزَات)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbeɪkəri",
+    pronunciationTip: "Pronounce 'BAY-kuh-ree' (/ˈbeɪ.kə.ri/).",
+    collocations: [
+      "local bakery",
+      "bakery department",
+      "fresh bakery goods",
+      "artisan bakery",
+      "bakery smells",
+      "bakery display",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "bake up",
+        meaning: "produce fresh batches in ovens",
+        arabic: "يَخْبِزُ دُفْعَاتٍ طَازَجَة",
+        example: "Bakers start at dawn to bake up dozens of artisan sourdough loaves.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Aroma in Store",
+        en: "The delightful aroma of warm cinnamon rolls and crusty baguettes drew customers to the in-store bakery.",
+        ar: "جَذَبَتِ الرَّائِحَةُ الشَّهِيَّةُ لِلَفَائِفِ القِرْفَةِ الدَّافِئَةِ وَالخُبْزِ الفَرَنْسِيِّ الزَّبَائِنَ لِلْمَخْبَزِ.",
+      },
+      {
+        context: "Artisan Breads",
+        en: "Every morning, the master baker shapes rustic sourdough loaves with crisp golden crusts.",
+        ar: "كُلَّ صَبَاحٍ، يُشَكِّلُ الخَبَّازُ المَاهِرُ أَرْغِفَةَ الخُبْزِ الرِّيفِيِّ ذَاتِ القِشْرَةِ الذَّهَبِيَّةِ.",
+      },
+      {
+        context: "Pastry Selection",
+        en: "Glass display cases in the bakery showcase fruit tarts, éclairs, and custom birthday cakes.",
+        ar: "تَعْرِضُ الخَزَائِنُ الزُّجَاجِيَّةُ فِي المَخْبَزِ فَطَائِرَ الفَاكِهَةِ وَالإِكْلِير وَكَعْكَ الحَفَلَاتِ.",
+      },
+    ],
+    exampleSentence:
+      "The delightful aroma of warm cinnamon rolls and crusty baguettes drew customers to the in-store bakery.",
+    exampleArabic:
+      "جَذَبَتِ الرَّائِحَةُ الشَّهِيَّةُ لِلَفَائِفِ القِرْفَةِ الدَّافِئَةِ وَالخُبْزِ الفَرَنْسِيِّ الزَّبَائِنَ لِلْمَخْبَزِ.",
+  },
+  "frozen-foods": {
+    id: "frozen-foods",
+    arabic: "أَطْعِمَةٌ مُجَمَّدَة (قِسْمُ المُجَمَّدَات)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfroʊzən fuːdz",
+    pronunciationTip: "Pronounce 'FROH-zun foodz' (/ˈfroʊ.zən fuːdz/).",
+    collocations: [
+      "frozen foods aisle",
+      "frozen foods section",
+      "stock up on frozen foods",
+      "frozen foods freezer",
+      "variety of frozen foods",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "thaw out",
+        meaning: "defrost items before cooking",
+        arabic: "يُذِيبُ التَّجَمُّد",
+        example: "Remember to thaw out the frozen vegetables before stirring them into the soup.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Freezer Aisle",
+        en: "Glass-door upright freezers in the frozen foods aisle store frozen berries, ice creams, and pizzas.",
+        ar: "تَحْفَظُ المُجَمِّدَاتُ ذَاتُ الأَبْوَابِ الزُّجَاجِيَّةِ فِي مَمَرِّ المُجَمَّدَاتِ التُّوتَ وَالمُثَلَّجَاتِ وَالبِيتْزَا.",
+      },
+      {
+        context: "Convenience Meals",
+        en: "Quick meal prep is easy with a supply of frozen foods like dumplings and green peas.",
+        ar: "يَسْهُلُ إِعْدَادُ الوَجَبَاتِ السَّرِيعَةِ بِتَوَفُّرِ الأَطْعِمَةِ المُجَمَّدَةِ مِثْلِ الفَطَائِرِ وَالبَازِلَّاءِ.",
+      },
+      {
+        context: "Cold Chain",
+        en: "Temperature monitors ensure the frozen foods section remains consistently sub-zero.",
+        ar: "تَضْمَنُ شَاشَاتُ مُرَاقَبَةِ الحَرَارَةِ بَقَاءَ قِسْمِ المُجَمَّدَاتِ تَحْتَ الصِّفْرِ دَائِمًا.",
+      },
+    ],
+    exampleSentence:
+      "Glass-door upright freezers in the frozen foods aisle store frozen berries, ice creams, and pizzas.",
+    exampleArabic:
+      "تَحْفَظُ المُجَمِّدَاتُ ذَاتُ الأَبْوَابِ الزُّجَاجِيَّةِ فِي مَمَرِّ المُجَمَّدَاتِ التُّوتَ وَالمُثَلَّجَاتِ وَالبِيتْزَا.",
+  },
+  checkout: {
+    id: "checkout",
+    arabic: "كَاوَنْتَر الدَّفْع (نُقْطَةُ المَحَاسَبَة / التِّشِيكْ آوْت)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtʃɛkaʊt",
+    pronunciationTip: "Pronounce 'CHEK-owt' (/ˈtʃɛk.aʊt/).",
+    collocations: [
+      "checkout lane",
+      "self-checkout kiosk",
+      "wait at checkout",
+      "checkout counter",
+      "express checkout line",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "ring up",
+        meaning: "scan and total items on cash register",
+        arabic: "يُسَجِّلُ الحِسَابَ عَلَى الكَاشْيِير",
+        example: "The friendly cashier rang up the grocery items swiftly at the checkout.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Market Exit",
+        en: "Shoppers unloaded their grocery baskets onto the moving conveyor belt at the checkout counter.",
+        ar: "أَفْرَغَ المُتَسَوِّقُونَ سِلَالَ البِقَالَةِ عَلَى السَّيْرِ المُتَحَرِّكِ عِنْدَ كَاوَنْتَر الدَّفْعِ.",
+      },
+      {
+        context: "Express Service",
+        en: "The express checkout lane is reserved for customers purchasing ten items or fewer.",
+        ar: "يُخَصَّصُ مَسَارُ الدَّفْعِ السَّرِيعِ لِلزَّبَائِنِ الَّذِينَ يَشْتَرُونَ عَشَرَةَ أَغْرَاضٍ أَوْ أَقَلَّ.",
+      },
+      {
+        context: "Self-Service",
+        en: "Modern self-checkout kiosks allow shoppers to scan barcodes and pay electronically.",
+        ar: "تُتِيحُ أَكْشَاكُ الدَّفْعِ الذَّاتِيِّ الحَدِيثَةُ لِلْمُتَسَوِّقِينَ مَسْحَ البَارْكُودِ وَالدَّفْعَ إِلِكْتُرُونِيًّا.",
+      },
+    ],
+    exampleSentence:
+      "Shoppers unloaded their grocery baskets onto the moving conveyor belt at the checkout counter.",
+    exampleArabic:
+      "أَفْرَغَ المُتَسَوِّقُونَ سِلَالَ البِقَالَةِ عَلَى السَّيْرِ المُتَحَرِّكِ عِنْدَ كَاوَنْتَر الدَّفْعِ.",
+  },
+  aisle: {
+    id: "aisle",
+    arabic: "مَمَر (مَمَرُّ التَّسَوُّق)",
+    partOfSpeech: "noun",
+    phonetic: "aɪl",
+    pronunciationTip: "Silent 's': 'EYE-ul' (/aɪl/).",
+    collocations: [
+      "supermarket aisle",
+      "cereal aisle",
+      "aisle number",
+      "walk down the aisle",
+      "wide aisle",
+      "clean aisle",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "head down",
+        meaning: "walk along a passageway",
+        arabic: "يَتَوَجَّهُ عَبْرَ المَمَر",
+        example: "Head down aisle four to find organic pasta sauces and olive oils.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Supermarket Layout",
+        en: "Overhead numbered signs indicate which products are stocked along each brightly lit aisle.",
+        ar: "تُشِيرُ اللَّافِتَاتُ المَرْقُومَةُ المُعَلَّقَةُ إِلَى المُنْتَجَاتِ المَخْزُونَةِ فِي كُلِّ مَمَرٍّ مُضَاءٍ.",
+      },
+      {
+        context: "Shopping Flow",
+        en: "She steered her shopping cart smoothly down the breakfast cereal aisle.",
+        ar: "وَجَّهَتْ عَرَبَةَ التَّسَوُّقِ بِسَلَاسَةٍ عَبْرَ مَمَرِّ حُبُوبِ الإِفْطَارِ.",
+      },
+      {
+        context: "Store Maintenance",
+        en: "Staff members restock dry pantry goods and sweep the polished aisles during quiet hours.",
+        ar: "يُعِيدُ المُوَظَّفُونَ مَلْءَ البَضَائِعِ وَيَكْنُسُونَ المَمَرَّاتِ المَصْقُولَةَ فِي أَوْقَاتِ الهُدُوءِ.",
+      },
+    ],
+    exampleSentence:
+      "Overhead numbered signs indicate which products are stocked along each brightly lit aisle.",
+    exampleArabic:
+      "تُشِيرُ اللَّافِتَاتُ المَرْقُومَةُ المُعَلَّقَةُ إِلَى المُنْتَجَاتِ المَخْزُونَةِ فِي كُلِّ مَمَرٍّ مُضَاءٍ.",
+  },
+  "shopping-cart": {
+    id: "shopping-cart",
+    arabic: "عَرَبَةُ التَّسَوُّق (عَرَبَةُ البِقَالَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈʃɑːpɪŋ kɑːrt",
+    pronunciationTip: "Pronounce 'SHAH-ping kart' (/ˈʃɑː.pɪŋ kɑːrt/).",
+    collocations: [
+      "metal shopping cart",
+      "push a shopping cart",
+      "full shopping cart",
+      "shopping cart wheels",
+      "return the shopping cart",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "load up",
+        meaning: "fill a cart with purchased goods",
+        arabic: "يَمْلَأُ عَرَبَةَ التَّسَوُّق",
+        example:
+          "Families load up their shopping carts with weekly groceries on Saturday mornings.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Store Entrance",
+        en: "He pulled a shiny chrome shopping cart from the corral near the supermarket entrance.",
+        ar: "سَحَبَ عَرَبَةَ تَسَوُّقٍ مَعْدَنِيَّةً بَرَّاقَةً مِنْ مَوْقِفِ العَرَبَاتِ بِجَانِبِ المَدْخَلِ.",
+      },
+      {
+        context: "Family Shopping",
+        en: "The deep metal shopping cart held weekly supplies including fresh produce, milk, and flour.",
+        ar: "اتَّسَعَتْ عَرَبَةُ التَّسَوُّقِ المَعْدَنِيَّةُ العَمِيقَةُ لِمُؤَنِ الأُسْبُوعِ كَالخُضْرَاوَاتِ وَالحَلِيبِ.",
+      },
+      {
+        context: "Parking Corral",
+        en: "Customers return their empty shopping carts to covered parking bays after loading car trunks.",
+        ar: "يُعِيدُ الزَّبَائِنُ عَرَبَاتِ التَّسَوُّقِ الفَارِغَةَ إِلَى المَوَاقِفِ المُغَطَّاةِ بَعْدَ تَحْمِيلِ السَّيَّارَاتِ.",
+      },
+    ],
+    exampleSentence:
+      "He pulled a shiny chrome shopping cart from the corral near the supermarket entrance.",
+    exampleArabic:
+      "سَحَبَ عَرَبَةَ تَسَوُّقٍ مَعْدَنِيَّةً بَرَّاقَةً مِنْ مَوْقِفِ العَرَبَاتِ بِجَانِبِ المَدْخَلِ.",
+  },
+  basket: {
+    id: "basket",
+    arabic: "سَلَّةُ التَّسَوُّق",
+    partOfSpeech: "noun",
+    phonetic: "ˈbæskɪt",
+    pronunciationTip: "Short 'a' sound /æ/: 'BAS-kit' (/ˈbæs.kɪt/).",
+    collocations: [
+      "handheld shopping basket",
+      "wire basket",
+      "plastic basket",
+      "fill a basket",
+      "carry a basket",
+      "market basket",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "carry around",
+        meaning: "hold a handheld container while shopping",
+        arabic: "يَحْمِلُ سَلَّةَ التَّسَوُّق",
+        example: "He carried around a light red shopping basket for a few quick dinner items.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Quick Errands",
+        en: "She grabbed a lightweight red shopping basket to pick up herbs, lemons, and olive oil.",
+        ar: "أَخَذَتْ سَلَّةَ تَسَوُّقٍ حَمْرَاءَ خَفِيفَةَ الوَزْنِ لِشِرَاءِ أَعْشَابٍ وَلَيْمُونٍ وَزَيْتِ زَيْتُونٍ.",
+      },
+      {
+        context: "Handheld Convenience",
+        en: "A handheld plastic basket is perfect when buying just a few essential pantry items.",
+        ar: "تُعَدُّ السَّلَّةُ البَلَاسْتِيكِيَّةُ المَحْمُولَةُ مِثَالِيَّةً عِنْدَ شِرَاءِ بَعْضِ الأَغْرَاضِ الأَسَاسِيَّةِ.",
+      },
+      {
+        context: "Checkout Counter",
+        en: "Stacks of clean shopping baskets stand ready by the revolving entrance doors.",
+        ar: "تَقِفُ أَكْوَامٌ مِنْ سِلَالِ التَّسَوُّقِ النَّظِيفَةِ جَاهِزَةً بِجَانِبِ الأَبْوَابِ الدَّوَّارَةِ.",
+      },
+    ],
+    exampleSentence:
+      "She grabbed a lightweight red shopping basket to pick up herbs, lemons, and olive oil.",
+    exampleArabic:
+      "أَخَذَتْ سَلَّةَ تَسَوُّقٍ حَمْرَاءَ خَفِيفَةَ الوَزْنِ لِشِرَاءِ أَعْشَابٍ وَلَيْمُونٍ وَزَيْتِ زَيْتُونٍ.",
+  },
+  "cash-register": {
+    id: "cash-register",
+    arabic: "مَكِينَةُ النُّقُود (جِهَازُ الصُّنْدُوق / كَاشْيِير)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkæʃ ˌrɛdʒɪstər",
+    pronunciationTip: "Pronounce 'KASH REJ-ih-ster' (/ˈkæʃ ˌrɛdʒ.ɪ.stər/).",
+    collocations: [
+      "electronic cash register",
+      "open the cash register",
+      "cash register drawer",
+      "beep of cash register",
+      "cash register receipt",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pop open",
+        meaning: "drawer springs open automatically",
+        arabic: "يَفْتَحُ دُرْجَ النُّقُود",
+        example: "The metal drawer popped open with a chime so the cashier could count change.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Payment Station",
+        en: "The electronic cash register calculated sales tax and totaled the items with a chime.",
+        ar: "حَسَبَتْ مَكِينَةُ النُّقُودِ الإِلِكْتُرُونِيَّةُ ضَرِيبَةَ المَبِيعَاتِ وَجَمَعَتِ الحِسَابَ مَعَ رَنَّةٍ.",
+      },
+      {
+        context: "Cash Drawer",
+        en: "The cashier counted paper bills into organized compartments inside the cash register drawer.",
+        ar: "عَدَّ الصَّرَّافُ الأَوْرَاقَ النَّقْدِيَّةَ فِي خَانَاتٍ مُنَظَّمَةٍ دَاخِلَ دُرْجِ مَكِينَةِ النُّقُودِ.",
+      },
+      {
+        context: "Touchscreen System",
+        en: "Modern computerized registers integrate barcode scanners, card terminals, and receipt printers.",
+        ar: "تَدْمِجُ أَجْهِزَةُ الكَاشْيِيرِ الحَدِيثَةُ مَاسِحَاتِ البَارْكُودِ وَأَجْهِزَةَ الدَّفْعِ وَطَابِعَاتِ الفَوَاتِيرِ.",
+      },
+    ],
+    exampleSentence:
+      "The electronic cash register calculated sales tax and totaled the items with a chime.",
+    exampleArabic:
+      "حَسَبَتْ مَكِينَةُ النُّقُودِ الإِلِكْتُرُونِيَّةُ ضَرِيبَةَ المَبِيعَاتِ وَجَمَعَتِ الحِسَابَ مَعَ رَنَّةٍ.",
+  },
+  "price-tag": {
+    id: "price-tag",
+    arabic: "بِطَاقَةُ السِّعْر (لَافِتَةُ الثَّمَن)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpraɪs tæɡ",
+    pronunciationTip: "Pronounce 'PRYS tag' (/ˈpraɪs tæɡ/).",
+    collocations: [
+      "check the price tag",
+      "digital price tag",
+      "sticker price tag",
+      "look at the price tag",
+      "discount on price tag",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "mark down",
+        meaning: "reduce cost indicated on sticker",
+        arabic: "يُخَفِّضُ السِّعْرَ المُدَوَّن",
+        example: "Stores mark down price tags on seasonal merchandise after holidays.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Shelf Labeling",
+        en: "She examined the bright yellow price tag on the shelf to see if the organic coffee was on sale.",
+        ar: "فَحَصَتْ بِطَاقَةَ السِّعْرِ الصَّفْرَاءَ عَلَى الرَّفِّ لِمَعْرِفَةِ مَا إِذَا كَانَتِ القَهْوَةُ فِي عَرْضٍ.",
+      },
+      {
+        context: "Digital Displays",
+        en: "Electronic price tags along store aisles update costs automatically across the central network.",
+        ar: "تُحَدِّثُ بِطَاقَاتُ الأَسْعَارِ الإِلِكْتُرُونِيَّةُ فِي المَمَرَّاتِ التَّكَالِيفَ آلِيًّا عَبْرَ الشَّبَكَةِ.",
+      },
+      {
+        context: "Discount Sticker",
+        en: "A red discount tag showed a twenty percent reduction on fresh bakery goods.",
+        ar: "أَظْهَرَتْ بَطَاقَةُ التَّخْفِيضِ الحَمْرَاءُ خَصْمًا بِنِسْبَةِ عِشْرِينَ بِالمِائَةِ عَلَى المَخْبُوزَاتِ.",
+      },
+    ],
+    exampleSentence:
+      "She examined the bright yellow price tag on the shelf to see if the organic coffee was on sale.",
+    exampleArabic:
+      "فَحَصَتْ بِطَاقَةَ السِّعْرِ الصَّفْرَاءَ عَلَى الرَّفِّ لِمَعْرِفَةِ مَا إِذَا كَانَتِ القَهْوَةُ فِي عَرْضٍ.",
+  },
+  receipt: {
+    id: "receipt",
+    arabic: "إِيصَال (فَاتُورَةُ شِرَاء)",
+    partOfSpeech: "noun",
+    phonetic: "rɪˈsiːt",
+    pronunciationTip: "Silent 'p': 'rih-SEET' (/rɪˈsiːt/).",
+    collocations: [
+      "printed receipt",
+      "itemized receipt",
+      "keep the receipt",
+      "store receipt",
+      "digital receipt",
+      "receipt paper",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hand over",
+        meaning: "give printed proof of purchase to customer",
+        arabic: "يُسَلِّمُ إِيصَالَ الشِّرَاء",
+        example: "The cashier handed over the printed receipt along with the shopper's change.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Proof of Purchase",
+        en: "The cashier handed her a detailed paper receipt showing each scanned grocery item and total tax.",
+        ar: "سَلَّمَهَا الصَّرَّافُ إِيصَالَ شِرَاءٍ وَرَقِيًّا مُفَصَّلًا يُوَضِّحُ كُلَّ غَرَضٍ وَمَجْمُوعَ الضَّرِيبَةِ.",
+      },
+      {
+        context: "Return Policy",
+        en: "Keep your itemized store receipt safely in case you need to exchange an item.",
+        ar: "احْتَفِظْ بِفَاتُورَةِ الشِّرَاءِ المُفَصَّلَةِ بِأَمَانٍ فِي حَالِ احْتَجْتَ لِاسْتِبْدَالِ غَرَضٍ.",
+      },
+      {
+        context: "Digital Invoicing",
+        en: "Many eco-friendly supermarkets offer to send digital receipts directly via text or email.",
+        ar: "تُوَفِّرُ العَدِيدُ مِنَ المَتَاجِرِ إِرْسَالَ الإِيصَالَاتِ الرَّقْمِيَّةِ مُبَاشَرَةً عَبْرَ البَرِيدِ الإِلِكْتُرُونِيِّ.",
+      },
+    ],
+    exampleSentence:
+      "The cashier handed her a detailed paper receipt showing each scanned grocery item and total tax.",
+    exampleArabic:
+      "سَلَّمَهَا الصَّرَّافُ إِيصَالَ شِرَاءٍ وَرَقِيًّا مُفَصَّلًا يُوَضِّحُ كُلَّ غَرَضٍ وَمَجْمُوعَ الضَّرِيبَةِ.",
+  },
+  barcode: {
+    id: "barcode",
+    arabic: "بَارْكُود (رَمْزٌ شَرِيطِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbɑːrkoʊd",
+    pronunciationTip: "Pronounce 'BAR-kohd' (/ˈbɑːr.koʊd/).",
+    collocations: [
+      "scan a barcode",
+      "printed barcode",
+      "product barcode",
+      "barcode stripes",
+      "universal product code barcode",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "scan across",
+        meaning: "pass product stripes over optical laser reader",
+        arabic: "يَمْسَحُ البَارْكُودَ ضَوْئِيًّا",
+        example: "Scan the cereal box across the glass reader to register its price.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Product Scanning",
+        en: "The cashier passed the cereal box over the scanner, reading its unique black-and-white barcode.",
+        ar: "مَرَّرَ الصَّرَّافُ عُلْبَةَ الحُبُوبِ فَوْقَ المَاسِحِ الضَّوْئِيِّ لِقِرَاءَةِ البَارْكُودِ المُمَيَّزِ.",
+      },
+      {
+        context: "Inventory Control",
+        en: "Every packaged food product carries a standardized barcode containing pricing and origin data.",
+        ar: "يَحْمِلُ كُلُّ مُنْتَجٍ غِذَائِيٍّ مُعَلَّبٍ بَارْكُودًا قِيَاسِيًّا يَتَضَمَّنُ السِّعْرَ وَبَيَانَاتِ المَصْدَرِ.",
+      },
+      {
+        context: "Smartphone Scanning",
+        en: "Shoppers can scan product barcodes with mobile apps to check nutritional ratings instantly.",
+        ar: "يُمْكِنُ لِلْمُتَسَوِّقِينَ مَسْحُ بَارْكُودِ السِّلَعِ بِتَطْبِيقَاتِ الهَاتِفِ لِمَعْرِفَةِ القِيمَةِ الغِذَائِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "The cashier passed the cereal box over the scanner, reading its unique black-and-white barcode.",
+    exampleArabic:
+      "مَرَّرَ الصَّرَّافُ عُلْبَةَ الحُبُوبِ فَوْقَ المَاسِحِ الضَّوْئِيِّ لِقِرَاءَةِ البَارْكُودِ المُمَيَّزِ.",
+  },
+  "shopping-bag": {
+    id: "shopping-bag",
+    arabic: "كِيسُ تَسَوُّق (حَقِيبَةُ مُشْتَرَيَات)",
+    partOfSpeech: "noun",
+    phonetic: "ˈʃɑːpɪŋ bæɡ",
+    pronunciationTip: "Pronounce 'SHAH-ping bag' (/ˈʃɑː.pɪŋ bæɡ/).",
+    collocations: [
+      "reusable shopping bag",
+      "canvas shopping bag",
+      "pack a shopping bag",
+      "paper shopping bag",
+      "carry a shopping bag",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pack into",
+        meaning: "place purchased items into bags",
+        arabic: "يُعَبِّئُ فِي كِيسِ التَّسَوُّق",
+        example: "Pack fragile eggs and soft bread carefully into the top of the canvas bag.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bagging Station",
+        en: "She packed her fresh produce and pantry goods into sturdy canvas reusable shopping bags.",
+        ar: "عَبَّأَتْ خُضْرَاوَاتِهَا وَمُؤَنَهَا فِي أَكْيَاسِ تَسَوُّقٍ قُمَاشِيَّةٍ مَتِينَةٍ قَابِلَةٍ لِإِعَادَةِ الاسْتِخْدَامِ.",
+      },
+      {
+        context: "Eco-Friendly Choice",
+        en: "Bringing reusable shopping bags to the market helps eliminate single-use plastic waste.",
+        ar: "يُسَاعِدُ إِحْضَارُ أَكْيَاسِ التَّسَوُّقِ القُمَاشِيَّةِ إِلَى السُّوقِ فِي الحَدِّ مِنَ النِّفَايَاتِ.",
+      },
+      {
+        context: "Heavy Carrying",
+        en: "Reinforced handles allow shoppers to carry heavy canned goods securely from store to car.",
+        ar: "تُتِيحُ المَقَابِضُ المُعَزَّزَةُ لِلْمُتَسَوِّقِينَ حَمْلَ المُعَلَّبَاتِ الثَّقِيلَةِ بِأَمَانٍ.",
+      },
+    ],
+    exampleSentence:
+      "She packed her fresh produce and pantry goods into sturdy canvas reusable shopping bags.",
+    exampleArabic:
+      "عَبَّأَتْ خُضْرَاوَاتِهَا وَمُؤَنَهَا فِي أَكْيَاسِ تَسَوُّقٍ قُمَاشِيَّةٍ مَتِينَةٍ قَابِلَةٍ لِإِعَادَةِ الاسْتِخْدَامِ.",
+  },
+  coupon: {
+    id: "coupon",
+    arabic: "قَسِيمَةُ خَصْم (كُوبُون)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkuːpɑːn",
+    pronunciationTip: "Pronounce 'KOO-pahn' (/ˈkuː.pɑːn/).",
+    collocations: [
+      "discount coupon",
+      "digital coupon",
+      "clip coupons",
+      "redeem a coupon",
+      "grocery coupon",
+      "store coupon",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hand in",
+        meaning: "present paper discount slip at checkout",
+        arabic: "يُقَدِّمُ قَسِيمَةَ الخَصْم",
+        example: "Hand in your discount coupons to the cashier before paying the bill.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Savings at Checkout",
+        en: "She presented a newspaper discount coupon to save two dollars on organic breakfast cereal.",
+        ar: "قَدَّمَتْ قَسِيمَةَ خَصْمٍ مِنْ صَحِيفَةٍ لِتَوْفِيرِ دُولَارَيْنِ عَلَى حُبُوبِ الإِفْطَارِ العُضْوِيَّةِ.",
+      },
+      {
+        context: "Mobile App Savings",
+        en: "Shoppers clip digital store coupons through the supermarket mobile app for instant savings.",
+        ar: "يَقُصُّ المُتَسَوِّقُونَ قَسَائِمَ خَصْمٍ رَقْمِيَّةً عَبْرَ تَطْبِيقِ السُّوبَر مَارْكِت لِلتَّوْفِيرِ الفَوْرِيِّ.",
+      },
+      {
+        context: "Promotions",
+        en: "Promotional buy-one-get-one-free coupons make pantry stocking highly economical.",
+        ar: "تَجْعَلُ قَسَائِمُ العُرُوضِ التَّرْوِيجِيَّةِ مِثْلَ «اشْتَرِ وَاحِدًا وَاحْصُلْ عَلَى الآخَرِ مَجَّانًا» التَّسَوُّقَ مُجْدِيًا.",
+      },
+    ],
+    exampleSentence:
+      "She presented a newspaper discount coupon to save two dollars on organic breakfast cereal.",
+    exampleArabic:
+      "قَدَّمَتْ قَسِيمَةَ خَصْمٍ مِنْ صَحِيفَةٍ لِتَوْفِيرِ دُولَارَيْنِ عَلَى حُبُوبِ الإِفْطَارِ العُضْوِيَّةِ.",
+  },
+  "shopping-list": {
+    id: "shopping-list",
+    arabic: "قَائِمَةُ التَّسَوُّق (قَائِمَةُ المُشْتَرَيَات)",
+    partOfSpeech: "noun",
+    phonetic: "ˈʃɑːpɪŋ lɪst",
+    pronunciationTip: "Pronounce 'SHAH-ping list' (/ˈʃɑː.pɪŋ lɪst/).",
+    collocations: [
+      "write a shopping list",
+      "check off the shopping list",
+      "grocery shopping list",
+      "shopping list on phone",
+      "follow a shopping list",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "cross off",
+        meaning: "strike out items as they are found and placed in cart",
+        arabic: "يَشْطُبُ عَلَى الغَرَضِ فِي القَائِمَة",
+        example: "Cross off the olive oil and garlic once you have placed them in your basket.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Organized Planning",
+        en: "He checked his handwritten shopping list to make sure he remembered fresh butter and eggs.",
+        ar: "رَاجَعَ قَائِمَةَ التَّسَوُّقِ المَكْتُوبَةَ بِخَطِّ اليَدِ لِلتَّأَكُّدِ مِنْ تَذَكُّرِ الزُّبْدَةِ وَالبَيْضِ.",
+      },
+      {
+        context: "Efficiency",
+        en: "Organizing your grocery list by supermarket section saves valuable time in store aisles.",
+        ar: "يُوَفِّرُ تَرْتِيبُ قَائِمَةِ المُشْتَرَيَاتِ حَسَبَ أَقْسَامِ المَتْجَرِ وَقْتًا ثَمِينًا فِي المَمَرَّاتِ.",
+      },
+      {
+        context: "Digital Apps",
+        en: "Shared digital shopping lists allow family members to add pantry items in real time.",
+        ar: "تُتِيحُ قَوَائِمُ التَّسَوُّقِ الرَّقْمِيَّةُ المُشْتَرَكَةُ لِأَفْرَادِ الأُسْرَةِ إِضَافَةَ احْتِيَاجَاتِهِمْ فَوْرًا.",
+      },
+    ],
+    exampleSentence:
+      "He checked his handwritten shopping list to make sure he remembered fresh butter and eggs.",
+    exampleArabic:
+      "رَاجَعَ قَائِمَةَ التَّسَوُّقِ المَكْتُوبَةَ بِخَطِّ اليَدِ لِلتَّأَكُّدِ مِنْ تَذَكُّرِ الزُّبْدَةِ وَالبَيْضِ.",
+  },
+  "credit-card": {
+    id: "credit-card",
+    arabic: "بِطَاقَةُ ائْتِمَان (بِطَاقَةٌ مَصْرِفِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkrɛdɪt kɑːrd",
+    pronunciationTip: "Pronounce 'KRED-it kard' (/ˈkrɛd.ɪt kɑːrd/).",
+    collocations: [
+      "insert credit card",
+      "tap credit card",
+      "credit card terminal",
+      "pay by credit card",
+      "credit card chip",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "tap on",
+        meaning: "pay wirelessly using contactless chip",
+        arabic: "يَلْمِسُ بِالبِطَاقَةِ لِلدَّفْعِ اللَّاتَلَامُسِيّ",
+        example: "Tap your contactless credit card on the card reader screen to complete payment.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cashless Payment",
+        en: "She tapped her contactless credit card against the payment terminal to pay for the groceries.",
+        ar: "لَمَسَتْ بِطَاقَتَهَا الاِئْتِمَانِيَّةَ اللَّاتَلَامُسِيَّةَ عَلَى جِهَازِ الدَّفْعِ لِسَدَادِ قِيمَةِ المُشْتَرَيَاتِ.",
+      },
+      {
+        context: "Secure Chip",
+        en: "Inserting the gold microchip of your credit card into the reader provides encrypted security.",
+        ar: "يُوَفِّرُ إِدْخَالُ الشَّرِيحَةِ الذَّهَبِيَّةِ لِبِطَاقَتِكَ فِي الجِهَازِ حِمَايَةً مُشَفَّرَةً لِلْمُعَامَلَةِ.",
+      },
+      {
+        context: "Checkout Counter",
+        en: "Most modern stores accept all major international credit cards and mobile digital wallets.",
+        ar: "تَقْبَلُ مُعْظَمُ المَتَاجِرِ الحَدِيثَةِ كَافَّةَ بِطَاقَاتِ الاِئْتِمَانِ العَالَمِيَّةِ وَالمَحَافِظِ الرَّقْمِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "She tapped her contactless credit card against the payment terminal to pay for the groceries.",
+    exampleArabic:
+      "لَمَسَتْ بِطَاقَتَهَا الاِئْتِمَانِيَّةَ اللَّاتَلَامُسِيَّةَ عَلَى جِهَازِ الدَّفْعِ لِسَدَادِ قِيمَةِ المُشْتَرَيَاتِ.",
+  },
+  cash: {
+    id: "cash",
+    arabic: "نُقُود (نَقْد / أَمْوَالٌ وَرَقِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "kæʃ",
+    pronunciationTip: "Short 'a' sound /æ/: 'KASH' (/kæʃ/).",
+    collocations: [
+      "pay with cash",
+      "crisp cash bills",
+      "cash in hand",
+      "exact cash",
+      "cash drawer",
+      "cash register",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pay in",
+        meaning: "settle transactions using physical currency",
+        arabic: "يَدْفَعُ نَقْدًا",
+        example: "He preferred to pay in cash for small market purchases.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Market Payment",
+        en: "He handed the farmer twenty dollars in cash to pay for the freshly harvested vegetables.",
+        ar: "سَلَّمَ المُزَارِعَ عِشْرِينَ دُولَارًا نَقْدًا لِدَفْعِ ثَمَنِ الخُضْرَاوَاتِ المَحْصُودَةِ حَدِيثًا.",
+      },
+      {
+        context: "Physical Currency",
+        en: "Carrying a small amount of cash is handy when shopping at outdoor farmers markets.",
+        ar: "يُعَدُّ حَمْلُ مَبْلَغٍ صَغِيرٍ مِنَ النَّقْدِ مُفِيدًا عِنْدَ التَّسَوُّقِ فِي الأَسْوَاقِ المَفْتُوحَةِ.",
+      },
+      {
+        context: "Exact Change",
+        en: "Providing exact cash helps speed up checkout transactions during busy morning rushes.",
+        ar: "يُسَاعِدُ تَقْدِيمُ المَبْلَغِ النَّقْدِيِّ المَضْبُوطِ فِي تَسْرِيعِ المَحَاسَبَةِ فِي سَاعَاتِ الذِّرْوَةِ.",
+      },
+    ],
+    exampleSentence:
+      "He handed the farmer twenty dollars in cash to pay for the freshly harvested vegetables.",
+    exampleArabic:
+      "سَلَّمَ المُزَارِعَ عِشْرِينَ دُولَارًا نَقْدًا لِدَفْعِ ثَمَنِ الخُضْرَاوَاتِ المَحْصُودَةِ حَدِيثًا.",
+  },
+  change: {
+    id: "change",
+    arabic: "فَكَّة (بَاقِي النُّقُود / عُمْلَاتٌ مَعْدَنِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "tʃeɪndʒ",
+    pronunciationTip: "Long 'a' sound /eɪ/: 'CHAYNJ' (/tʃeɪndʒ/).",
+    collocations: [
+      "pocket change",
+      "exact change",
+      "give change",
+      "spare change",
+      "loose change",
+      "count the change",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hand back",
+        meaning: "return excess payment money to buyer",
+        arabic: "يُعِيدُ بَاقِي النُّقُود",
+        example: "The cashier counted out three coins and handed back his change.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Register Transaction",
+        en: "The cashier counted out two dollar bills and fifty cents in coin change for the customer.",
+        ar: "عَدَّ الصَّرَّافُ وَرَقَتَيْنِ نَقْدِيَّتَيْنِ وَخَمْسِينَ سِنْتًا كَبَاقِي نُقُودٍ لِلزَّبُونِ.",
+      },
+      {
+        context: "Pocket Coins",
+        en: "He dropped his loose change into his coat pocket before picking up his grocery bags.",
+        ar: "وَضَعَ عُمْلَاتِ الفَكَّةِ المَعْدَنِيَّةَ فِي جَيْبِ مِعْطَفِهِ قَبْلَ حَمْلِ أَكْيَاسِ البِقَالَةِ.",
+      },
+      {
+        context: "Coin Jar",
+        en: "Saving spare change in a glass jar at home accumulates into a nice holiday fund over time.",
+        ar: "يَتَرَاكَمُ ادِّخَارُ بَاقِي العُمْلَاتِ المَعْدَنِيَّةِ فِي جَرَّةٍ لِيُصْبِحَ مَبْلَغًا جَيِّدًا لِلْعُطْلَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The cashier counted out two dollar bills and fifty cents in coin change for the customer.",
+    exampleArabic:
+      "عَدَّ الصَّرَّافُ وَرَقَتَيْنِ نَقْدِيَّتَيْنِ وَخَمْسِينَ سِنْتًا كَبَاقِي نُقُودٍ لِلزَّبُونِ.",
+  },
+  wallet: {
+    id: "wallet",
+    arabic: "مَحْفَظَة (مَحْفَظَةُ نُقُود)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɑːlɪt",
+    pronunciationTip: "Pronounce 'WAH-lit' (/ˈwɑː.lɪt/).",
+    collocations: [
+      "leather wallet",
+      "pull out a wallet",
+      "pocket wallet",
+      "open a wallet",
+      "slim wallet",
+      "wallet compartment",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "tuck into",
+        meaning: "slide cards or cash securely inside",
+        arabic: "يَدُسُّ دَاخِلَ المَحْفَظَة",
+        example: "He tucked the folded receipt and loyalty card into his leather wallet.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Checkout Payment",
+        en: "She pulled her leather wallet from her handbag to take out her supermarket loyalty card.",
+        ar: "أَخْرَجَتْ مَحْفَظَتَهَا الجِلْدِيَّةَ مِنْ حَقِيبَةِ يَدِهَا لِإِخْرَاجِ بِطَاقَةِ وَلَاءِ السُّوبَر مَارْكِت.",
+      },
+      {
+        context: "Card Organization",
+        en: "A compact bifold wallet holds banknotes, payment cards, and identification cards neatly.",
+        ar: "تَحْمِلُ المَحْفَظَةُ المَدْمُوجَةُ الأَوْرَاقَ النَّقْدِيَّةَ وَبِطَاقَاتِ الدَّفْعِ وَالهُوِيَّةَ بِنِظَامٍ.",
+      },
+      {
+        context: "Pocket Storage",
+        en: "He safely tucked his slim wallet back into his inside jacket pocket after paying.",
+        ar: "دَسَّ مَحْفَظَتَهُ الرَّشِيقَةَ بِأَمَانٍ دَاخِلَ جَيْبِ سُتْرَتِهِ الدَّاخِلِيِّ بَعْدَ الدَّفْعِ.",
+      },
+    ],
+    exampleSentence:
+      "She pulled her leather wallet from her handbag to take out her supermarket loyalty card.",
+    exampleArabic:
+      "أَخْرَجَتْ مَحْفَظَتَهَا الجِلْدِيَّةَ مِنْ حَقِيبَةِ يَدِهَا لِإِخْرَاجِ بِطَاقَةِ وَلَاءِ السُّوبَر مَارْكِت.",
+  },
 };
 
 /**
