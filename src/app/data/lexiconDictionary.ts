@@ -27100,6 +27100,3001 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleArabic:
       "ضَبَطَتْ مُؤَقِّتَ المَطْبَخِ الرَّقْمِيَّ لِمُدَّةِ خَمْسٍ وَعِشْرِينَ دَقِيقَةً كَيْ لَا يَحْتَرِقَ السُّوفْلِيه.",
   },
+  sand: {
+    id: "sand",
+    arabic: "رَمْل (رِمَالُ الشَّاطِئ)",
+    partOfSpeech: "noun",
+    phonetic: "sænd",
+    pronunciationTip: "Short 'a' sound /æ/: 'SAND' (/sænd/).",
+    collocations: [
+      "golden sand",
+      "soft warm sand",
+      "white sand beach",
+      "walk on the sand",
+      "grain of sand",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sink into",
+        meaning: "press down deeply into soft loose granules",
+        arabic: "يَغُوصُ فِي الرِّمَالِ النَّاعِمَة",
+        example: "Our bare feet sank into the soft warm sand as we strolled by the water.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Landscape",
+        en: "Children dug deep moats and sculpted towers in the damp golden sand along the coast.",
+        ar: "حَفَرَ الأَطْفَالُ خَنَادِقَ عَمِيقَةً وَنَحَتُوا أَبْرَاجًا فِي الرِّمَالِ الذَّهَبِيَّةِ الرَّطْبَةِ.",
+      },
+      {
+        context: "Sunny Afternoon",
+        en: "The midday sun heated the dry powdery sand until walking barefoot required quick steps.",
+        ar: "سَخَّنَتْ شَمْسُ الظَّهِيرَةِ الرِّمَالَ النَّاعِمَةَ الجَافَّةَ حَتَّى تَطَلَّبَ المَشْيُ حَافِيًا خُطُوَاتٍ سَرِيعَةً.",
+      },
+      {
+        context: "Coastal Geology",
+        en: "Ocean waves continually crush seashells and mineral rocks into fine shoreline sand.",
+        ar: "تَسْحَقُ أَمْوَاجُ المُحِيطِ أَصْدَافَ البَحْرِ وَالصُّخُورَ بِاسْتِمْرَارٍ لِتُحَوِّلَهَا إِلَى رِمَالٍ شَاطِئِيَّةٍ.",
+      },
+    ],
+    exampleSentence:
+      "Children dug deep moats and sculpted towers in the damp golden sand along the coast.",
+    exampleArabic:
+      "حَفَرَ الأَطْفَالُ خَنَادِقَ عَمِيقَةً وَنَحَتُوا أَبْرَاجًا فِي الرِّمَالِ الذَّهَبِيَّةِ الرَّطْبَةِ.",
+  },
+  ocean: {
+    id: "ocean",
+    arabic: "مُحِيط (بَحْرٌ لُجِّيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈoʊʃən",
+    pronunciationTip: "Pronounce 'OH-shun' (/ˈoʊ.ʃən/).",
+    collocations: [
+      "vast ocean",
+      "deep blue ocean",
+      "ocean breeze",
+      "ocean waves",
+      "swim in the ocean",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "look out over",
+        meaning: "gaze across wide open waters from a vantage point",
+        arabic: "يُطِلُّ عَلَى مِيَاهِ المُحِيط",
+        example: "From the cliff top, they looked out over the vast turquoise ocean.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Seaside View",
+        en: "The endless blue ocean stretched beyond the horizon under a cloudless summer sky.",
+        ar: "امْتَدَّ المُحِيطُ الأَزْرَقُ اللَّانِهَائِيُّ خَلْفَ الأُفُقِ تَحْتَ سَمَاءٍ صَيْفِيَّةٍ صَافِيَةٍ.",
+      },
+      {
+        context: "Marine Ecosystem",
+        en: "The world's oceans support millions of aquatic species, from microscopic plankton to giant blue whales.",
+        ar: "تَدْعَمُ مُحِيطَاتُ العَالَمِ مَلَايِينَ الكَائِنَاتِ المَائِيَّةِ مِنَ العَوَالِقِ إِلَى الحِيتَانِ الزَّرْقَاءِ.",
+      },
+      {
+        context: "Coastal Weather",
+        en: "A refreshing salty breeze swept in from the ocean, cooling the sunbathers on shore.",
+        ar: "هَبَّ نَسِيمٌ مَالِحٌ مُنْعِشٌ مِنَ المُحِيطِ لِيُلَطِّفَ جَوَّ السَّابِحِينَ عَلَى الشَّاطِئِ.",
+      },
+    ],
+    exampleSentence:
+      "The endless blue ocean stretched beyond the horizon under a cloudless summer sky.",
+    exampleArabic:
+      "امْتَدَّ المُحِيطُ الأَزْرَقُ اللَّانِهَائِيُّ خَلْفَ الأُفُقِ تَحْتَ سَمَاءٍ صَيْفِيَّةٍ صَافِيَةٍ.",
+  },
+  wave: {
+    id: "wave",
+    arabic: "مَوْجَة (أَمْوَاجُ البَحْرِ المُتَلَاطِمَة)",
+    partOfSpeech: "noun",
+    phonetic: "weɪv",
+    pronunciationTip: "Long 'a' sound /eɪ/: 'WAYV' (/weɪv/).",
+    collocations: [
+      "crashing waves",
+      "ride a wave",
+      "giant ocean wave",
+      "gentle waves",
+      "sound of waves",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "roll in",
+        meaning: "advance rhythmically toward the coastline",
+        arabic: "تَتَدَفَّقُ نَحْوَ الشَّاطِئ",
+        example: "Massive swells rolled in from the deep sea and broke upon the sand.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Surfing Scene",
+        en: "Surfers paddled into position to catch the towering crested wave curling toward the coast.",
+        ar: "جَذَّفَ رَاكِبُو الأَمْوَاجِ لِلِالْتِقَاطِ المَوْجَةِ الشَّاهِقَةِ المُتَكَسِّرَةِ نَحْوَ السَّاحِلِ.",
+      },
+      {
+        context: "Shoreline Atmosphere",
+        en: "The rhythmic roar of foaming waves crashing against the rocky shore provided soothing white noise.",
+        ar: "وَفَّرَ هَدِيرُ الأَمْوَاجِ المُرْغِيَةِ المُتَلَاطِمَةِ مَعَ الصُّخُورِ صَوْتًا مُرِيحًا لِلأَعْصَابِ.",
+      },
+      {
+        context: "Tidal Dynamics",
+        en: "Wind energy transferred across open waters generates powerful ocean waves traveling thousands of miles.",
+        ar: "تُوَلِّدُ طَاقَةُ الرِّيَاحِ عَبْرَ المِيَاهِ المَفْتُوحَةِ أَمْوَاجًا مُحِيطِيَّةً قَوِيَّةً تُسَافِرُ آلَافَ الأَمْيَالِ.",
+      },
+    ],
+    exampleSentence:
+      "Surfers paddled into position to catch the towering crested wave curling toward the coast.",
+    exampleArabic:
+      "جَذَّفَ رَاكِبُو الأَمْوَاجِ لِلِالْتِقَاطِ المَوْجَةِ الشَّاهِقَةِ المُتَكَسِّرَةِ نَحْوَ السَّاحِلِ.",
+  },
+  shore: {
+    id: "shore",
+    arabic: "شَاطِئ (سَاحِل / ضَفَّةُ البَحْر)",
+    partOfSpeech: "noun",
+    phonetic: "ʃɔːr",
+    pronunciationTip: "Pronounce 'SHOR' (/ʃɔːr/).",
+    collocations: [
+      "rocky shore",
+      "sandy shore",
+      "reach the shore",
+      "along the shore",
+      "wash ashore",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wash ashore",
+        meaning: "carry floating debris onto land by tide",
+        arabic: "تَجْرِفُهُ الأَمْوَاجُ إِلَى اليَابِسَة",
+        example: "Polished sea glass and smooth driftwood washed ashore with the high tide.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Coastal Walk",
+        en: "We walked barefoot along the water's edge as gentle ripples lapped against the sandy shore.",
+        ar: "مَشَيْنَا حُفَاةً عَلَى حَافَّةِ المَاءِ بَيْنَمَا لَامَسَتِ التَّمَوُّجَاتُ الهَادِئَةُ الشَّاطِئَ الرَّمْلِيَّ.",
+      },
+      {
+        context: "Maritime Navigation",
+        en: "The lighthouse beam pierced through the dense sea fog to guide vessels safely away from the rocky shore.",
+        ar: "اخْتَرَقَ شُعَاعُ الفَنَارِ الضَّبَابَ الكَثِيفَ لِإِرْشَادِ السُّفُنِ بِأَمَانٍ بَعِيدًا عَنِ السَّاحِلِ الصَّخْرِيِّ.",
+      },
+      {
+        context: "Beachcombing",
+        en: "Shell collectors combed the shore at sunrise to discover unbroken conch shells left by the receding tide.",
+        ar: "مَشَّطَ جَامِعُو الأَصْدَافِ الشَّاطِئَ عِنْدَ الشُّرُوقِ لِلْعُثُورِ عَلَى أَصْدَافٍ كَامِلَةٍ تَرَكَهَا الجَزْرُ.",
+      },
+    ],
+    exampleSentence:
+      "We walked barefoot along the water's edge as gentle ripples lapped against the sandy shore.",
+    exampleArabic:
+      "مَشَيْنَا حُفَاةً عَلَى حَافَّةِ المَاءِ بَيْنَمَا لَامَسَتِ التَّمَوُّجَاتُ الهَادِئَةُ الشَّاطِئَ الرَّمْلِيَّ.",
+  },
+  cliff: {
+    id: "cliff",
+    arabic: "جُرْف (مُنْحَدَرٌ صَخْرِيٌّ سَاحِلِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "klɪf",
+    pronunciationTip: "Short 'i' sound /ɪ/: 'KLIF' (/klɪf/).",
+    collocations: [
+      "rocky cliff",
+      "steep coastal cliff",
+      "stand on the cliff edge",
+      "dramatic sea cliffs",
+      "chalk cliff",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "drop off",
+        meaning: "descend vertically down a steep rock face",
+        arabic: "يَنْحَدِرُ عَمُودِيًّا بِشِدَّة",
+        example: "The coastal walking trail dropped off steeply toward the churning waves below.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Coastal Landmark",
+        en: "Dramatic limestone cliffs towered above the crashing surf, providing nesting sites for seabirds.",
+        ar: "ارْتَفَعَتِ الجُرُوفُ الكِلْسِيَّةُ الشَّاهِقَةُ فَوْقَ الأَمْوَاجِ لِتُوَفِّرَ مَأْوًى لِتَعْشِيشِ طُيُورِ البَحْرِ.",
+      },
+      {
+        context: "Lookout Point",
+        en: "Tourists gathered at the summit of the scenic cliff to photograph the sunset over the bay.",
+        ar: "احْتَشَدَ السُّيَّاحُ عِنْدَ قِمَّةِ الجُرْفِ البَدِيعِ لِتَصْوِيرِ غُرُوبِ الشَّمْسِ فَوْقَ الخَلِيجِ.",
+      },
+      {
+        context: "Erosion",
+        en: "Centuries of relentless wave action carved deep sea caves and natural arches into the cliff base.",
+        ar: "نَحَتَتْ قُرُونٌ مِنْ قُوَّةِ الأَمْوَاجِ كُهُوفًا بَحْرِيَّةً وَأَقْوَاسًا طَبِيعِيَّةً فِي قَاعِدَةِ الجُرْفِ.",
+      },
+    ],
+    exampleSentence:
+      "Dramatic limestone cliffs towered above the crashing surf, providing nesting sites for seabirds.",
+    exampleArabic:
+      "ارْتَفَعَتِ الجُرُوفُ الكِلْسِيَّةُ الشَّاهِقَةُ فَوْقَ الأَمْوَاجِ لِتُوَفِّرَ مَأْوًى لِتَعْشِيشِ طُيُورِ البَحْرِ.",
+  },
+  dune: {
+    id: "dune",
+    arabic: "كَثِيبٌ رَمْلِيّ (كَثْبَانُ الشَّاطِئ)",
+    partOfSpeech: "noun",
+    phonetic: "duːn",
+    pronunciationTip: "Pronounce 'DOON' (/duːn/) or 'DYOON' (/djuːn/).",
+    collocations: [
+      "sand dunes",
+      "coastal dune system",
+      "climb the dunes",
+      "rolling dunes",
+      "dune grass",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "build up",
+        meaning: "accumulate windblown sand into hill formations",
+        arabic: "تَتَرَاكَمُ الرِّمَالُ مُشَكِّلَةً تِلَالًا",
+        example:
+          "Sea winds blew dry sand steadily until tall coastal dunes built up along the shore.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Coastal Ecology",
+        en: "Hardy green marram grass roots deeply to anchor the shifting sand dunes against coastal storms.",
+        ar: "تَتَجَذَّرُ أَعْشَابُ الشَّاطِئِ القَوِيَّةُ لِتَثْبِيتِ الكَثْبَانِ الرَّمْلِيَّةِ المُتَحَرِّكَةِ ضِدَّ العَوَاصِفِ.",
+      },
+      {
+        context: "Beach Exploration",
+        en: "We hiked up the crest of a massive sand dune to catch our first panoramic glimpse of the ocean.",
+        ar: "صَعِدْنَا قِمَّةَ كَثِيبٍ رَمْلِيٍّ ضَخْمٍ لِرُؤْيَةِ أَوَّلِ مَشْهَدٍ بَانُورَامِيٍّ شَامِلٍ لِلْمُحِيطِ.",
+      },
+      {
+        context: "Natural Protection",
+        en: "Preserving coastal dunes protects inland homes from high storm surges and beach erosion.",
+        ar: "تَحْمِي حِمَايَةُ الكَثْبَانِ السَّاحِلِيَّةِ المَنَازِلَ الدَّاخِلِيَّةَ مِنَ المَدِّ العَاصِفِ وَتَآكُلِ الشَّوَاطِئِ.",
+      },
+    ],
+    exampleSentence:
+      "Hardy green marram grass roots deeply to anchor the shifting sand dunes against coastal storms.",
+    exampleArabic:
+      "تَتَجَذَّرُ أَعْشَابُ الشَّاطِئِ القَوِيَّةُ لِتَثْبِيتِ الكَثْبَانِ الرَّمْلِيَّةِ المُتَحَرِّكَةِ ضِدَّ العَوَاصِفِ.",
+  },
+  "tide-pool": {
+    id: "tide-pool",
+    arabic: "بَرَكَةٌ مَدِّيَّة (بِرْكَةُ المَدِّ وَالجَزْر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtaɪd puːl",
+    pronunciationTip: "Pronounce 'TYD pool' (/ˈtaɪd puːl/).",
+    collocations: [
+      "rocky tide pool",
+      "explore tide pools",
+      "tide pool ecosystem",
+      "low tide pool",
+      "creatures in tide pools",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "peer into",
+        meaning: "look closely into clear water basin",
+        arabic: "يُدَقِّقُ النَّظَرَ دَاخِلَ البِرْكَةِ المَائِيَّة",
+        example: "Children knelt on the flat rocks to peer into a clear, sunlit tide pool.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Marine Discovery",
+        en: "Exploring rocky tide pools at low tide revealed colorful anemones, hermit crabs, and purple sea stars.",
+        ar: "كَشَفَ اسْتِكْشَافُ البِرَكِ المَدِّيَّةِ عِنْدَ الجَزْرِ عَنْ شَقَائِقِ نُعْمَانٍ مُلَوَّنَةٍ وَسَرَطَانَاتٍ.",
+      },
+      {
+        context: "Natural Aquarium",
+        en: "Each sheltered tide pool acts as a miniature saltwater ecosystem trapped when the sea recedes.",
+        ar: "تَعْمَلُ كُلُّ بَرَكَةٍ مَدِّيَّةٍ مَحْمِيَّةٍ كَنِظَامٍ بِيئِيٍّ مُصَغَّرٍ يَنْحَصِرُ عِنْدَ تَرَاجُعِ البَحْرِ.",
+      },
+      {
+        context: "Educational Field Trip",
+        en: "The marine biology class took notes on species diversity inhabiting coastal tide pools.",
+        ar: "دَوَّنَ فَرِيقُ عُلُومِ البِحَارِ مُلَاحَظَاتٍ حَوْلَ تَنَوُّعِ الأَحْيَاءِ فِي البِرَكِ المَدِّيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "Exploring rocky tide pools at low tide revealed colorful anemones, hermit crabs, and purple sea stars.",
+    exampleArabic:
+      "كَشَفَ اسْتِكْشَافُ البِرَكِ المَدِّيَّةِ عِنْدَ الجَزْرِ عَنْ شَقَائِقِ نُعْمَانٍ مُلَوَّنَةٍ وَسَرَطَانَاتٍ.",
+  },
+  horizon: {
+    id: "horizon",
+    arabic: "أُفُق (خَطُّ الأُفُقِ البَحْرِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "həˈraɪzən",
+    pronunciationTip: "Pronounce 'huh-RY-zun' (/həˈraɪ.zən/).",
+    collocations: [
+      "ocean horizon",
+      "distant horizon",
+      "disappear over the horizon",
+      "sun sinking below the horizon",
+      "on the horizon",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "fade over",
+        meaning: "vanish into the distant curvature of the earth",
+        arabic: "يَخْتَفِي وَرَاءَ الأُفُق",
+        example: "The cargo ship sailed outward until its silhouette faded over the horizon.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sunset View",
+        en: "The fiery orange sun slowly sank below the ocean horizon, painting the clouds in purple hues.",
+        ar: "غَرَبَتِ الشَّمْسُ البُرْتُقَالِيَّةُ الوَهَّاجَةُ بِبُطْءٍ خَلْفَ الأُفُقِ لِتُلَوِّنَ السُّحُبَ بِالبَنَفْسَجِيِّ.",
+      },
+      {
+        context: "Perspective",
+        en: "Standing on the shore, the vast boundary where the calm blue sea meets the sky forms a straight horizon.",
+        ar: "عِنْدَ الوُقُوفِ عَلَى الشَّاطِئِ، يُشَكِّلُ التِقَاءُ البَحْرِ الأَزْرَقِ بِالسَّمَاءِ خَطَّ أُفُقٍ مُسْتَقِيمًا.",
+      },
+      {
+        context: "Sailing Sight",
+        en: "A single white sailboat emerged as a tiny speck on the distant morning horizon.",
+        ar: "ظَهَرَ قَارِبٌ شِرَاعِيٌّ أَبْيَضُ وَحِيدٌ كَنُقْطَةٍ صَغِيرَةٍ عَلَى الأُفُقِ الصَّبَاحِيِّ البَعِيدِ.",
+      },
+    ],
+    exampleSentence:
+      "The fiery orange sun slowly sank below the ocean horizon, painting the clouds in purple hues.",
+    exampleArabic:
+      "غَرَبَتِ الشَّمْسُ البُرْتُقَالِيَّةُ الوَهَّاجَةُ بِبُطْءٍ خَلْفَ الأُفُقِ لِتُلَوِّنَ السُّحُبَ بِالبَنَفْسَجِيِّ.",
+  },
+  reef: {
+    id: "reef",
+    arabic: "شُعْبَةٌ مَرْجَانِيَّة (حَاجِزٌ مَرْجَانِيّ / شِعَابٌ مَرْجَانِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "riːf",
+    pronunciationTip: "Long 'ee' sound /iː/: 'REEF' (/riːf/).",
+    collocations: [
+      "coral reef",
+      "barrier reef",
+      "snorkel over the reef",
+      "vibrant reef ecosystem",
+      "shallow reef",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "teem with",
+        meaning: "be abundantly filled with diverse living organisms",
+        arabic: "يَعِجُّ بِالأَحْيَاءِ المَائِيَّة",
+        example: "The protected coral reef teemed with schools of brightly striped tropical fish.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Undersea Exploration",
+        en: "Snorkelers floated above the coral reef to admire intricate branch formations and darting clownfish.",
+        ar: "طَفَا هُوَاةُ الغَوْصِ فَوْقَ الشُّعَبِ المَرْجَانِيَّةِ لِتَأَمُّلِ التَّشْكِيلَاتِ البَدِيعَةِ وَالأَسْمَاكِ.",
+      },
+      {
+        context: "Ocean Protection",
+        en: "Offshore reefs act as natural breakwaters that buffer coastal beaches from destructive hurricane waves.",
+        ar: "تَعْمَلُ الشِّعَابُ المَرْجَانِيَّةُ كَمَصَدَّاتِ أَمْوَاجٍ طَبِيعِيَّةٍ تَقِي الشَّوَاطِئَ مِنْ دَمَارِ الأَعَاصِيرِ.",
+      },
+      {
+        context: "Marine Conservation",
+        en: "Marine biologists monitor coral reef health to safeguard vulnerable tropical biodiversity from warming waters.",
+        ar: "يُرَاقِبُ عُلَمَاءُ البِحَارِ صِحَّةَ الشِّعَابِ المَرْجَانِيَّةِ لِحِمَايَةِ التَّنَوُّعِ الحَيَوِيِّ المَدَارِيِّ.",
+      },
+    ],
+    exampleSentence:
+      "Snorkelers floated above the coral reef to admire intricate branch formations and darting clownfish.",
+    exampleArabic:
+      "طَفَا هُوَاةُ الغَوْصِ فَوْقَ الشُّعَبِ المَرْجَانِيَّةِ لِتَأَمُّلِ التَّشْكِيلَاتِ البَدِيعَةِ وَالأَسْمَاكِ.",
+  },
+  cove: {
+    id: "cove",
+    arabic: "خَلِيجٌ صَغِير (جَوْن / مَخْبَأٌ سَاحِلِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "koʊv",
+    pronunciationTip: "Long 'o' sound /oʊ/: 'KOHV' (/koʊv/).",
+    collocations: [
+      "sheltered cove",
+      "hidden cove",
+      "sandy cove",
+      "secluded cove",
+      "anchor in the cove",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "tuck away",
+        meaning: "sit quietly protected between natural landforms",
+        arabic: "يَنْزَوِي بَيْنَ التِّلَالِ وَالصُّخُور",
+        example: "A picturesque pebble beach was tucked away inside the secluded rocky cove.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Hidden Getaway",
+        en: "A narrow coastal path led down to a secluded cove where calm emerald waters awaited swimmers.",
+        ar: "أَدَّى مَمَرٌّ سَاحِلِيٌّ ضَيِّقٌ إِلَى خَلِيجٍ صَغِيرٍ مُنْعَزِلٍ حَيْثُ تَنْتَظِرُ المِيَاهُ الزُّمُرُّدِيَّةُ السَّابِحِينَ.",
+      },
+      {
+        context: "Boat Anchorage",
+        en: "Sailors dropped anchor in the sheltered cove to escape gusty ocean winds during the storm.",
+        ar: "أَلْقَى البَحَّارَةُ المَرَاسِيَ فِي الخَلِيجِ الصَّغِيرِ المَحْمِيِّ لِلْهُرُوبِ مِنَ الرِّيَاحِ العَاتِيَةِ.",
+      },
+      {
+        context: "Scenic Landscape",
+        en: "High surrounding headlands shield the picturesque cove, keeping its waters crystal-clear and ripple-free.",
+        ar: "تَحْمِي الرُّؤُوسُ السَّاحِلِيَّةُ العَالِيَةُ هَذَا الجَوْنَ البَدِيعَ، مِمَّا يُبْقِي مِيَاهَهُ نَقِيَّةً صَافِيَةً.",
+      },
+    ],
+    exampleSentence:
+      "A narrow coastal path led down to a secluded cove where calm emerald waters awaited swimmers.",
+    exampleArabic:
+      "أَدَّى مَمَرٌّ سَاحِلِيٌّ ضَيِّقٌ إِلَى خَلِيجٍ صَغِيرٍ مُنْعَزِلٍ حَيْثُ تَنْتَظِرُ المِيَاهُ الزُّمُرُّدِيَّةُ السَّابِحِينَ.",
+  },
+  bay: {
+    id: "bay",
+    arabic: "خَلِيج (جَوْنٌ بَحْرِيٌّ وَاسِع)",
+    partOfSpeech: "noun",
+    phonetic: "beɪ",
+    pronunciationTip: "Long 'a' sound /eɪ/: 'BAY' (/beɪ/).",
+    collocations: ["wide bay", "coastal bay", "sail across the bay", "harbor bay", "bay waters"],
+    phrasalVerbs: [
+      {
+        phrase: "open out into",
+        meaning: "expand into broader body of protected water",
+        arabic: "يَنْفَتِحُ عَلَى خَلِيجٍ بَحْرِيّ",
+        example: "The winding coastal estuary opened out into a wide, sparkling saltwater bay.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Geographic Feature",
+        en: "The crescent-shaped bay provided calm, sheltered waters for yachts and fishing boats to dock.",
+        ar: "وَفَّرَ الخَلِيجُ الهِلَالِيُّ الشَّكْلِ مِيَاهًا هَادِئَةً مَحْمِيَّةً لِرُسُوِّ اليُخُوتِ وَقَوَارِبِ الصَّيْدِ.",
+      },
+      {
+        context: "Water Sports",
+        en: "Kayakers and paddleboarders enjoy gliding across the placid surface of the sunlit bay.",
+        ar: "يَسْتَمْتِعُ مُجَذِّفُو الكَايَاك وَأَلْوَاحِ التَّجْذِيفِ بِالانْزِلَاقِ عَبْرَ مِيَاهِ الخَلِيجِ الهَادِئَةِ.",
+      },
+      {
+        context: "City Harbor",
+        en: "A bustling waterfront promenade wraps around the natural bay, filled with seafood restaurants.",
+        ar: "يَلْتَفُّ مَمْشَى سَاحِلِيٌّ حَيَوِيٌّ حَوْلَ الخَلِيجِ الطَّبِيعِيِّ، مَلِيئًا بِمَطَاعِمِ المَأْكُولَاتِ البَحْرِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "The crescent-shaped bay provided calm, sheltered waters for yachts and fishing boats to dock.",
+    exampleArabic:
+      "وَفَّرَ الخَلِيجُ الهِلَالِيُّ الشَّكْلِ مِيَاهًا هَادِئَةً مَحْمِيَّةً لِرُسُوِّ اليُخُوتِ وَقَوَارِبِ الصَّيْدِ.",
+  },
+  lagoon: {
+    id: "lagoon",
+    arabic: "بُحَيْرَةٌ شَاطِئِيَّة (لَاغُون / بُحَيْرَةٌ بَحْرِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ləˈɡuːn",
+    pronunciationTip: "Pronounce 'luh-GOON' (/ləˈɡuːn/).",
+    collocations: [
+      "tropical lagoon",
+      "turquoise lagoon",
+      "shallow lagoon",
+      "barrier reef lagoon",
+      "swim in the lagoon",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "cut off from",
+        meaning: "separate shallow body of water by sandbar or reef",
+        arabic: "يَنْعَزِلُ عَنِ البَحْرِ المَفْتُوح",
+        example: "The lagoon was cut off from rough sea waves by a protective ring of coral.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Tropical Paradise",
+        en: "The South Pacific atoll encircled a breathtaking turquoise lagoon with warm, crystal-clear water.",
+        ar: "أَحَاطَتِ الجَزِيرَةُ المَرْجَانِيَّةُ بِبُحَيْرَةٍ شَاطِئِيَّةٍ فَيْرُوزِيَّةٍ ذَاتِ مِيَاهٍ دَافِئَةٍ صَافِيَةٍ.",
+      },
+      {
+        context: "Protected Habitat",
+        en: "Mangrove roots lining the shallow lagoon provide crucial nurseries for juvenile reef fish.",
+        ar: "تُوَفِّرُ جُذُورُ المَانْغْرُوف عَلَى حَافَّةِ اللَّاغُون حَضَانَاتٍ حَيَوِيَّةً لِصِغَارِ أَسْمَاكِ الشِّعَابِ.",
+      },
+      {
+        context: "Calm Waters",
+        en: "Unlike the stormy open ocean outside, the enclosed lagoon stayed completely still and serene.",
+        ar: "عَلَى عَكْسِ المُحِيطِ المَفْتُوحِ العَاصِفِ، بَقِيَتِ البُحَيْرَةُ الشَّاطِئِيَّةُ هَادِئَةً وَسَاكِنَةً تَمَامًا.",
+      },
+    ],
+    exampleSentence:
+      "The South Pacific atoll encircled a breathtaking turquoise lagoon with warm, crystal-clear water.",
+    exampleArabic:
+      "أَحَاطَتِ الجَزِيرَةُ المَرْجَانِيَّةُ بِبُحَيْرَةٍ شَاطِئِيَّةٍ فَيْرُوزِيَّةٍ ذَاتِ مِيَاهٍ دَافِئَةٍ صَافِيَةٍ.",
+  },
+  towel: {
+    id: "towel",
+    arabic: "مِنْشَفَة (فُوطَةُ البَحْر / مَنْشَفَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtaʊəl",
+    pronunciationTip: "Pronounce 'TOW-ul' (/ˈtaʊ.əl/).",
+    collocations: [
+      "beach towel",
+      "striped towel",
+      "dry off with a towel",
+      "lay out a towel",
+      "cotton towel",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "dry off",
+        meaning: "wipe away water droplets from skin with cloth",
+        arabic: "يُجَفِّفُ الجِسْمَ بِالمِنْشَفَة",
+        example: "He grabbed his oversized beach towel to dry off after emerging from the ocean.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Relaxation",
+        en: "She spread a vibrant striped beach towel across the sand to sunbathe under the afternoon sky.",
+        ar: "فَرَشَتْ مِنْشَفَةَ شَاطِئٍ مُخَطَّطَةً زَاهِيَةً عَلَى الرِّمَالِ لِلِاسْتِرْخَاءِ تَحْتَ الشَّمْسِ.",
+      },
+      {
+        context: "After Swimming",
+        en: "Wrapped comfortably in a soft velour towel, the child warmed up after a long swim in cool waves.",
+        ar: "تَدَفَّأَ الطِّفْلُ المَلْفُوفُ بِمِنْشَفَةٍ قُطْنِيَّةٍ نَاعِمَةٍ بَعْدَ سِبَاحَةٍ طَوِيلَةٍ فِي المَاءِ البَارِدِ.",
+      },
+      {
+        context: "Packing for the Beach",
+        en: "Remember to pack extra absorbent beach towels and dry clothes in your canvas tote bag.",
+        ar: "تَذَكَّرْ أَنْ تَحْزِمَ مَنَاشِفَ شَاطِئٍ إِضَافِيَّةً سَرِيعَةَ الامْتِصَاصِ فِي حَقِيبَتِكَ القُمَاشِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "She spread a vibrant striped beach towel across the sand to sunbathe under the afternoon sky.",
+    exampleArabic:
+      "فَرَشَتْ مِنْشَفَةَ شَاطِئٍ مُخَطَّطَةً زَاهِيَةً عَلَى الرِّمَالِ لِلِاسْتِرْخَاءِ تَحْتَ الشَّمْسِ.",
+  },
+  sunscreen: {
+    id: "sunscreen",
+    arabic: "وَاقِي الشَّمْس (كْرِيمُ الحِمَايَةِ مِنَ الشَّمْس)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsʌnskriːn",
+    pronunciationTip: "Pronounce 'SUN-skreen' (/ˈsʌn.skriːn/).",
+    collocations: [
+      "apply sunscreen",
+      "waterproof sunscreen",
+      "SPF 50 sunscreen",
+      "bottle of sunscreen",
+      "reapply sunscreen",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "rub in",
+        meaning: "massage lotion thoroughly into exposed skin",
+        arabic: "يَدْهَنُ وَاقِي الشَّمْسِ بِعِنَايَة",
+        example: "Rub in water-resistant sunscreen every two hours to prevent painful sunburn.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sun Safety",
+        en: "Dermatologists advise applying broad-spectrum SPF 50 sunscreen twenty minutes before going out.",
+        ar: "يَنْصَحُ أَطِبَّاءُ الجِلْدِيَّةِ بِوَضْعِ وَاقِي الشَّمْسِ بِمُعَامِلِ حِمَايَةٍ 50 قَبْلَ الخُرُوجِ بِعِشْرِينَ دَقِيقَةً.",
+      },
+      {
+        context: "Reapplication",
+        en: "Swimmers reapplied waterproof sunscreen lotion after splashing in the ocean waves for an hour.",
+        ar: "أَعَادَ السَّابِحُونَ وَضْعَ كْرِيمِ وَاقِي الشَّمْسِ المُقَاوِمِ لِلْمَاءِ بَعْدَ السِّبَاحَةِ لِمُدَّةِ سَاعَةٍ.",
+      },
+      {
+        context: "Reef Protection",
+        en: "Using mineral-based, reef-safe sunscreen ensures that coral ecosystems are protected from harmful chemicals.",
+        ar: "يَضْمَنُ اسْتِخْدَامُ وَاقِي الشَّمْسِ المَعْدَنِيِّ الآمِنِ حِمَايَةَ الشِّعَابِ المَرْجَانِيَّةِ مِنَ الكِيمَاوِيَّاتِ.",
+      },
+    ],
+    exampleSentence:
+      "Dermatologists advise applying broad-spectrum SPF 50 sunscreen twenty minutes before going out.",
+    exampleArabic:
+      "يَنْصَحُ أَطِبَّاءُ الجِلْدِيَّةِ بِوَضْعِ وَاقِي الشَّمْسِ بِمُعَامِلِ حِمَايَةٍ 50 قَبْلَ الخُرُوجِ بِعِشْرِينَ دَقِيقَةً.",
+  },
+  umbrella: {
+    id: "umbrella",
+    arabic: "مِظَلَّة (شَمْسِيَّةُ الشَّاطِئ)",
+    partOfSpeech: "noun",
+    phonetic: "ʌmˈbrɛlə",
+    pronunciationTip: "Pronounce 'um-BREL-uh' (/ʌmˈbrɛl.ə/).",
+    collocations: [
+      "beach umbrella",
+      "colorful umbrella",
+      "open an umbrella",
+      "shade under the umbrella",
+      "umbrella anchor",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put up",
+        meaning: "erect and secure shade canopy in sand",
+        arabic: "يَنْصِبُ شَمْسِيَّةَ الشَّاطِئ",
+        example: "He put up a large striped beach umbrella and secured its pole in the deep sand.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Comfort",
+        en: "We opened a wide colorful beach umbrella to create cool shade from the intense midday heat.",
+        ar: "فَتَحْنَا مِظَلَّةَ شَاطِئٍ كَبِيرَةً مُلَوَّنَةً لِخَلْقِ ظِلٍّ بَارِدٍ مِنَ الحَرَارَةِ الشَّدِيدَةِ.",
+      },
+      {
+        context: "Wind Security",
+        en: "Using a spiral sand anchor prevents gusts of coastal wind from blowing your beach umbrella away.",
+        ar: "يَمْنَعُ اسْتِخْدَامُ مِرْسَاةِ الرِّمَالِ اللَّوْلَبِيَّةِ هَبَّاتِ الرِّيَاحِ مِنْ تَطْيِيرِ شَمْسِيَّةِ الشَّاطِئِ.",
+      },
+      {
+        context: "Shoreline Panorama",
+        en: "Dozens of bright yellow and blue beach umbrellas dotted the crowded coastline like cheerful flowers.",
+        ar: "نَثَرَتْ عَشَرَاتُ مِظَلَّاتِ الشَّاطِئِ الصَّفْرَاءِ وَالزَّرْقَاءِ أَلْوَانَهَا كَالزُّهُورِ عَلَى السَّاحِلِ.",
+      },
+    ],
+    exampleSentence:
+      "We opened a wide colorful beach umbrella to create cool shade from the intense midday heat.",
+    exampleArabic:
+      "فَتَحْنَا مِظَلَّةَ شَاطِئٍ كَبِيرَةً مُلَوَّنَةً لِخَلْقِ ظِلٍّ بَارِدٍ مِنَ الحَرَارَةِ الشَّدِيدَةِ.",
+  },
+  "beach-chair": {
+    id: "beach-chair",
+    arabic: "كُرْسِيُّ الشَّاطِئ (مَقْعَدُ الرِّمَالِ القَابِلُ لِلطَّيّ)",
+    partOfSpeech: "noun",
+    phonetic: "biːtʃ tʃɛər",
+    pronunciationTip: "Pronounce 'BEECH chair' (/biːtʃ tʃɛər/).",
+    collocations: [
+      "folding beach chair",
+      "reclining beach chair",
+      "low-profile beach chair",
+      "sit in a beach chair",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "lean back in",
+        meaning: "recline comfortably on fabric lounge seat",
+        arabic: "يَتَّكِئُ إِلَى الخَلْفِ فِي المَقْعَد",
+        example:
+          "She leaned back in her folding beach chair with an iced drink and a mystery novel.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Relaxation",
+        en: "He unfolded a lightweight aluminum beach chair right near the shoreline to watch the rolling tides.",
+        ar: "فَتَحَ كُرْسِيَّ شَاطِئٍ أَلُومِنْيُوم خَفِيفَ الوَزْنِ قُرْبَ خَطِّ المَاءِ لِمُرَاقَبَةِ المَدِّ.",
+      },
+      {
+        context: "Lounge Comfort",
+        en: "Adjustable beach chairs with cup holders and built-in headrests provide hours of comfortable coastal lounging.",
+        ar: "تُوَفِّرُ كَرَاسِي الشَّاطِئِ القَابِلَةُ لِلتَّعْدِيلِ مَعَ حَوَامِلِ الأَكْوَابِ رَاحَةً مِثَالِيَّةً.",
+      },
+      {
+        context: "Easy Transport",
+        en: "Modern backpack beach chairs fold flat and feature padded shoulder straps for easy carrying over dunes.",
+        ar: "تَنْطَوِي كَرَاسِي الشَّاطِئِ الحَدِيثَةُ كَحَقِيبَةِ ظَهْرٍ مُزَوَّدَةٍ بِأَحْزِمَةٍ لِسُهُولَةِ حَمْلِهَا.",
+      },
+    ],
+    exampleSentence:
+      "He unfolded a lightweight aluminum beach chair right near the shoreline to watch the rolling tides.",
+    exampleArabic:
+      "فَتَحَ كُرْسِيَّ شَاطِئٍ أَلُومِنْيُوم خَفِيفَ الوَزْنِ قُرْبَ خَطِّ المَاءِ لِمُرَاقَبَةِ المَدِّ.",
+  },
+  cooler: {
+    id: "cooler",
+    arabic: "صُنْدُوقُ تَبْرِيد (حَافِظَةُ المَشْرُوبَاتِ المُثَلَّجَة / كُولَر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkuːlər",
+    pronunciationTip: "Pronounce 'KOO-ler' (/ˈkuː.lər/).",
+    collocations: [
+      "ice cooler",
+      "pack the cooler",
+      "portable cooler",
+      "cooler with ice",
+      "cooler box",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pack with",
+        meaning: "fill insulated container with food and ice bags",
+        arabic: "يَمْلأُ بِالثَّلْجِ وَالمَشْرُوبَات",
+        example: "We packed the portable cooler with crushed ice, fresh fruit, and cold lemonade.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Picnic",
+        en: "The insulated cooler kept our sandwiches fresh and beverage cans ice-cold during the hot sunny day.",
+        ar: "حَفِظَ صُنْدُوقُ التَّبْرِيدِ العَازِلُ شَطَائِرَنَا طَازَجَةً وَالمَشْرُوبَاتِ مُثَلَّجَةً طَوَالَ اليَوْمِ.",
+      },
+      {
+        context: "Outdoor Gear",
+        en: "He pulled the wheeled heavy-duty cooler effortlessly across the firm sand toward our umbrella camp.",
+        ar: "سَحَبَ صُنْدُوقَ التَّبْرِيدِ ذَا العَجَلَاتِ بِسُهُولَةٍ عَبْرَ الرِّمَالِ نَحْوَ مَكَانِ المِظَلَّةِ.",
+      },
+      {
+        context: "All-Day Outing",
+        en: "Adding reusable ice packs inside the cooler ensures perishables stay safely chilled for hours.",
+        ar: "تَضْمَنُ إِضَافَةُ عُبُوَّاتِ الثَّلْجِ دَاخِلَ الحَافِظَةِ بَقَاءَ الأَطْعِمَةِ بَارِدَةً بِأَمَانٍ.",
+      },
+    ],
+    exampleSentence:
+      "The insulated cooler kept our sandwiches fresh and beverage cans ice-cold during the hot sunny day.",
+    exampleArabic:
+      "حَفِظَ صُنْدُوقُ التَّبْرِيدِ العَازِلُ شَطَائِرَنَا طَازَجَةً وَالمَشْرُوبَاتِ مُثَلَّجَةً طَوَالَ اليَوْمِ.",
+  },
+  "flip-flops": {
+    id: "flip-flops",
+    arabic: "صَنْدَلُ الشَّاطِئ (خُفُّ الإِصْبَع / شِبْشِبُ البَحْر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈflɪpflɒps",
+    pronunciationTip: "Pronounce 'FLIP-flops' (/ˈflɪp.flɒps/).",
+    collocations: [
+      "pair of flip-flops",
+      "rubber flip-flops",
+      "wear flip-flops",
+      "slip on flip-flops",
+      "beach flip-flops",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "kick off",
+        meaning: "remove open sandals easily with foot motion",
+        arabic: "يَخْلَعُ الصَّنْدَلَ سَرِيعًا",
+        example: "He kicked off his rubber flip-flops before running down into the ocean foam.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Footwear",
+        en: "Rubber flip-flops are the quintessential summer footwear for walking comfortably across sunbaked sands.",
+        ar: "تُعَدُّ صَنَادِلُ الشَّاطِئِ المَطَّاطِيَّةُ الحِذَاءَ الصَّيْفِيَّ المِثَالِيَّ لِلْمَشْيِ عَلَى الرِّمَالِ السَّاخِنَةِ.",
+      },
+      {
+        context: "Boardwalk Stroll",
+        en: "She slipped into a bright pair of waterproof flip-flops to stroll from the changing room to the shore.",
+        ar: "ارْتَدَتْ صَنْدَلَ شَاطِئٍ مُقَاوِمًا لِلْمَاءِ لِتَسِيرَ مِنْ غُرْفَةِ تَبْدِيلِ المَلَابِسِ إِلَى الشَّاطِئِ.",
+      },
+      {
+        context: "Easy Cleaning",
+        en: "A quick rinse under the outdoor beach shower washes all sand right off your flexible flip-flops.",
+        ar: "يَغْسِلُ الشَّطْفُ السَّرِيعُ تَحْتَ دُشِّ الشَّاطِئِ كُلَّ الرِّمَالِ عَنْ صَنْدَلِ البَحْرِ.",
+      },
+    ],
+    exampleSentence:
+      "Rubber flip-flops are the quintessential summer footwear for walking comfortably across sunbaked sands.",
+    exampleArabic:
+      "تُعَدُّ صَنَادِلُ الشَّاطِئِ المَطَّاطِيَّةُ الحِذَاءَ الصَّيْفِيَّ المِثَالِيَّ لِلْمَشْيِ عَلَى الرِّمَالِ السَّاخِنَةِ.",
+  },
+  sunglasses: {
+    id: "sunglasses",
+    arabic: "نَظَّارَاتٌ شَمْسِيَّة (نَظَّارَةُ الشَّمْس)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsʌnˌɡlæsɪz",
+    pronunciationTip: "Pronounce 'SUN-glas-iz' (/ˈsʌn.ˌɡlæs.ɪz/).",
+    collocations: [
+      "pair of sunglasses",
+      "polarized sunglasses",
+      "wear sunglasses",
+      "put on sunglasses",
+      "dark sunglasses",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "put on",
+        meaning: "place protective tinted eyewear over eyes",
+        arabic: "يَرْتَدِي النَّظَّارَةَ الشَّمْسِيَّة",
+        example: "Put on UV-blocking sunglasses to shield your eyes from bright ocean glare.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sun Protection",
+        en: "Polarized sunglasses eliminate blinding reflections off the turquoise water surface.",
+        ar: "تَقْضِي النَّظَّارَاتُ الشَّمْسِيَّةُ المُسْتَقْطَبَةُ عَلَى الانْعِكَاسَاتِ المُبْهِرَةِ لِلْمَاءِ.",
+      },
+      {
+        context: "Beach Style",
+        en: "She wore stylish tortoiseshell sunglasses with tinted UV400 protective lenses.",
+        ar: "ارْتَدَتْ نَظَّارَةً شَمْسِيَّةً أَنِيقَةً مَعَ عَدَسَاتٍ وَاقِيَةٍ مِنَ الأَشِعَّةِ فَوْقَ البَنَفْسَجِيَّةِ.",
+      },
+      {
+        context: "Care and Storage",
+        en: "Keep your sunglasses in a protective hard case to prevent sand grains from scratching the lenses.",
+        ar: "احْفَظْ نَظَّارَتَكَ الشَّمْسِيَّةَ فِي حَافِظَةٍ صُلْبَةٍ لِمَنْعِ حَبَّاتِ الرِّمَالِ مِنْ خَدْشِ العَدَسَاتِ.",
+      },
+    ],
+    exampleSentence:
+      "Polarized sunglasses eliminate blinding reflections off the turquoise water surface.",
+    exampleArabic:
+      "تَقْضِي النَّظَّارَاتُ الشَّمْسِيَّةُ المُسْتَقْطَبَةُ عَلَى الانْعِكَاسَاتِ المُبْهِرَةِ لِلْمَاءِ.",
+  },
+  hat: {
+    id: "hat",
+    arabic: "قُبَّعَة (قُبَّعَةُ الشَّمْس / قُبَّعَةُ القَشّ)",
+    partOfSpeech: "noun",
+    phonetic: "hæt",
+    pronunciationTip: "Short 'a' sound /æ/: 'HAT' (/hæt/).",
+    collocations: ["straw hat", "sun hat", "wide-brimmed hat", "wear a hat", "bucket hat"],
+    phrasalVerbs: [
+      {
+        phrase: "shade from",
+        meaning: "protect face and neck from direct sun rays",
+        arabic: "يُظَلِّلُ عَنْ أَشِعَّةِ الشَّمْس",
+        example: "A wide-brimmed straw hat shaded her face from the blazing summer sun.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sun Safety",
+        en: "Wearing a wide-brimmed sun hat protects your face, ears, and neck from ultraviolet rays.",
+        ar: "يَحْمِي ارْتِدَاءُ قُبَّعَةِ الشَّمْسِ العَرِيضَةِ الوَجْهَ وَالأُذُنَيْنِ وَالرَّقَبَةَ مِنَ الأَشِعَّةِ فَوْقَ البَنَفْسَجِيَّةِ.",
+      },
+      {
+        context: "Beach Fashion",
+        en: "She tied a ribbon around her woven straw hat to keep it secure against coastal breezes.",
+        ar: "رَبَطَتْ شَرِيطًا حَوْلَ قُبَّعَتِهَا القَشِّيَّةِ لِتَثْبِيتِهَا ضِدَّ رِيَاحِ البَحْرِ.",
+      },
+      {
+        context: "Outdoor Activities",
+        en: "Children wore breathable bucket hats while building sandcastles near the water.",
+        ar: "ارْتَدَى الأَطْفَالُ قُبَّعَاتٍ قُمَاشِيَّةً خَفِيفَةً أَبَّانَ بِنَاءِ القِلَاعِ الرَّمْلِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "Wearing a wide-brimmed sun hat protects your face, ears, and neck from ultraviolet rays.",
+    exampleArabic:
+      "يَحْمِي ارْتِدَاءُ قُبَّعَةِ الشَّمْسِ العَرِيضَةِ الوَجْهَ وَالأُذُنَيْنِ وَالرَّقَبَةَ مِنَ الأَشِعَّةِ فَوْقَ البَنَفْسَجِيَّةِ.",
+  },
+  swimsuit: {
+    id: "swimsuit",
+    arabic: "مَلَابِسُ السِّبَاحَة (مَايُوه / بَدْلَةُ السِّبَاحَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈswɪmsuːt",
+    pronunciationTip: "Pronounce 'SWIM-soot' (/ˈswɪm.suːt/).",
+    collocations: [
+      "one-piece swimsuit",
+      "wear a swimsuit",
+      "damp swimsuit",
+      "colorful swimsuit",
+      "swimsuit cover-up",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "change into",
+        meaning: "put on water garments before swimming",
+        arabic: "يُبَدِّلُ مَلَابِسَهُ لِيَرْتَدِيَ المَايُوه",
+        example: "They visited the bathhouse cabins to change into dry swimsuits.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Preparation",
+        en: "She packed a vibrant one-piece swimsuit and matching sunglasses for the coastal holiday.",
+        ar: "حَزَمَتْ بَدْلَةَ سِبَاحَةٍ زَاهِيَةً مِنَ القِطْعَةِ الوَاحِدَةِ مَعَ نَظَّارَةٍ مُطَابِقَةٍ لِلْعُطْلَةِ.",
+      },
+      {
+        context: "Water Aerobics",
+        en: "Athletic swimsuits made of chlorine-resistant spandex provide freedom of movement in the waves.",
+        ar: "تُوَفِّرُ مَلَابِسُ السِّبَاحَةِ الرِّيَاضِيَّةُ حُرِّيَّةَ الحَرَكَةِ بَيْنَ الأَمْوَاجِ.",
+      },
+      {
+        context: "Post-Swim Care",
+        en: "Hang wet swimsuits out on the balcony drying rack to air out after a day at the beach.",
+        ar: "عَلِّقْ مَلَابِسَ السِّبَاحَةِ المُبَلَّلَةَ عَلَى حَبْلِ التَّجْفِيفِ لِتَتَهَوَّى بَعْدَ يَوْمِ الشَّاطِئِ.",
+      },
+    ],
+    exampleSentence:
+      "She packed a vibrant one-piece swimsuit and matching sunglasses for the coastal holiday.",
+    exampleArabic:
+      "حَزَمَتْ بَدْلَةَ سِبَاحَةٍ زَاهِيَةً مِنَ القِطْعَةِ الوَاحِدَةِ مَعَ نَظَّارَةٍ مُطَابِقَةٍ لِلْعُطْلَةِ.",
+  },
+  bikini: {
+    id: "bikini",
+    arabic: "بِيكِينِي (مَلَابِسُ سِبَاحَةٍ نِسَائِيَّةٍ مِنْ قِطْعَتَيْن)",
+    partOfSpeech: "noun",
+    phonetic: "bɪˈkiːni",
+    pronunciationTip: "Pronounce 'bih-KEE-nee' (/bɪˈkiː.ni/).",
+    collocations: [
+      "two-piece bikini",
+      "floral bikini",
+      "bikini top",
+      "bikini bottoms",
+      "wear a bikini",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pair with",
+        meaning: "combine matching beach apparel together",
+        arabic: "يُنَسِّقُ مَعَ قِطْعَةٍ أُخْرَى",
+        example: "She paired the striped bikini top with solid navy bottoms.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Summer Beachwear",
+        en: "She wore a bright floral two-piece bikini while relaxing on her towel by the ocean.",
+        ar: "ارْتَدَتْ بِيكِينِي مُزَهَّرًا مِنْ قِطْعَتَيْنِ بَيْنَمَا اسْتَرْخَتْ عَلَى مِنْشَفَتِهَا أَمَامَ البَحْرِ.",
+      },
+      {
+        context: "Sunbathing",
+        en: "Bikinis are popular choices for sunbathing and enjoying warm tropical resort pools.",
+        ar: "تُعَدُّ مَلَابِسُ البِيكِينِي خِيَارًا شَائِعًا لِحَمَّامَاتِ الشَّمْسِ فِي المُنْتَجَعَاتِ الاسْتِوَائِيَّةِ.",
+      },
+      {
+        context: "Resort Style",
+        en: "She layered a sheer linen tunic over her bikini before heading to the seaside cafe.",
+        ar: "ارْتَدَتْ سُتْرَةً كَتَّانِيَّةً خَفِيفَةً فَوْقَ المَايُوه قَبْلَ التَّوَجُّهِ لِمَقْهَى الشَّاطِئِ.",
+      },
+    ],
+    exampleSentence:
+      "She wore a bright floral two-piece bikini while relaxing on her towel by the ocean.",
+    exampleArabic:
+      "ارْتَدَتْ بِيكِينِي مُزَهَّرًا مِنْ قِطْعَتَيْنِ بَيْنَمَا اسْتَرْخَتْ عَلَى مِنْشَفَتِهَا أَمَامَ البَحْرِ.",
+  },
+  "swim-trunks": {
+    id: "swim-trunks",
+    arabic: "شُورْتُ السِّبَاحَة (سِرْوَالُ السِّبَاحَةِ لِلرِّجَال)",
+    partOfSpeech: "noun",
+    phonetic: "swɪm trʌŋks",
+    pronunciationTip: "Pronounce 'SWIM trunks' (/swɪm trʌŋks/).",
+    collocations: [
+      "pair of swim trunks",
+      "quick-dry swim trunks",
+      "board shorts swim trunks",
+      "drawstring swim trunks",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pull on",
+        meaning: "dress into loose swimwear shorts quickly",
+        arabic: "يَرْتَدِي شُورْتَ السِّبَاحَة",
+        example: "He pulled on his quick-drying swim trunks and grabbed his surfboard.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Wear",
+        en: "He chose quick-drying blue swim trunks with an elastic drawstring waist for the beach trip.",
+        ar: "اخْتَارَ شُورْتَ سِبَاحَةٍ أَزْرَقَ سَرِيعَ الجَفَافِ بِرِبَاطٍ مَرِنٍ لِرِحْلَةِ الشَّاطِئِ.",
+      },
+      {
+        context: "Surfing Gear",
+        en: "Durable board shorts and swim trunks provide comfortable protection while surfing open swells.",
+        ar: "تُوَفِّرُ سَرَاوِيلُ السِّبَاحَةِ المَتِينَةُ حِمَايَةً مُرِيحَةً أَثْنَاءَ رُكُوبِ الأَمْوَاجِ.",
+      },
+      {
+        context: "Summer Outfits",
+        en: "Pairing lightweight swim trunks with a linen shirt makes a seamless transition from beach to boardwalk.",
+        ar: "يُشَكِّلُ ارْتِدَاءُ شُورْتِ السِّبَاحَةِ مَعَ قَمِيصٍ كَتَّانِيٍّ انْتِقَالًا سَلِسًا مِنَ الشَّاطِئِ إِلَى المَمْشَى.",
+      },
+    ],
+    exampleSentence:
+      "He chose quick-drying blue swim trunks with an elastic drawstring waist for the beach trip.",
+    exampleArabic:
+      "اخْتَارَ شُورْتَ سِبَاحَةٍ أَزْرَقَ سَرِيعَ الجَفَافِ بِرِبَاطٍ مَرِنٍ لِرِحْلَةِ الشَّاطِئِ.",
+  },
+  goggles: {
+    id: "goggles",
+    arabic: "نَظَّارَاتُ السِّبَاحَة (نَظَّارَةُ الغَوْصِ لِحِمَايَةِ العَيْنَيْن)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɡɒɡəlz",
+    pronunciationTip: "Pronounce 'GOG-ulz' (/ˈɡɒɡ.əlz/).",
+    collocations: [
+      "swim goggles",
+      "anti-fog goggles",
+      "pair of goggles",
+      "adjust your goggles",
+      "watertight goggles",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "strap on",
+        meaning: "fasten elastic band securely around head",
+        arabic: "يُثَبِّتُ رِبَاطَ النَّظَّارَةِ عَلَى الرَّأْس",
+        example: "Strap on your watertight goggles before diving into the deep end.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Clear Underwater Vision",
+        en: "Wearing anti-fog swim goggles allowed her to open her eyes comfortably and spot colorful sea shells.",
+        ar: "أَتَاحَ ارْتِدَاءُ نَظَّارَاتِ السِّبَاحَةِ لَهَا فَتْحَ عَيْنَيْهَا دَاخِلَ المَاءِ لِرُؤْيَةِ الأَصْدَافِ.",
+      },
+      {
+        context: "Eye Protection",
+        en: "Silicone suction seals on quality goggles prevent stinging saltwater and chlorine from reaching your eyes.",
+        ar: "تَمْنَعُ حَوَافُّ السِّيلِيكُون المُحْكَمَةُ عَلَى النَّظَّارَةِ المِيَاهَ المَالِحَةَ مِنَ الوُصُولِ لِلْعَيْنَيْنِ.",
+      },
+      {
+        context: "Lap Swimming",
+        en: "The competitive swimmer adjusted the elastic strap of his racing goggles before the start buzzer.",
+        ar: "ضَبَطَ السَّبَّاحُ الحِزَامَ المَرِنَ لِنَظَّارَةِ السِّبَاقِ قَبْلَ صَافِرَةِ الانْطِلَاقِ.",
+      },
+    ],
+    exampleSentence:
+      "Wearing anti-fog swim goggles allowed her to open her eyes comfortably and spot colorful sea shells.",
+    exampleArabic:
+      "أَتَاحَ ارْتِدَاءُ نَظَّارَاتِ السِّبَاحَةِ لَهَا فَتْحَ عَيْنَيْهَا دَاخِلَ المَاءِ لِرُؤْيَةِ الأَصْدَافِ.",
+  },
+  snorkel: {
+    id: "snorkel",
+    arabic: "قَصَبَةُ التَّنَفُّس (أُنْبُوبُ الغَوْصِ السَّطْحِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsnɔːrkəl",
+    pronunciationTip: "Pronounce 'SNOR-kul' (/ˈsnɔːr.kəl/).",
+    collocations: [
+      "mask and snorkel",
+      "dry-top snorkel",
+      "breathe through a snorkel",
+      "snorkel mouthpiece",
+      "snorkel tube",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "breathe through",
+        meaning: "inhale and exhale air via tube while face is submerged",
+        arabic: "يَتَنَفَّسُ عَبْرَ الأُنْبُوب",
+        example:
+          "Breathe slowly through the silicone snorkel while floating face down in the lagoon.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Reef Exploration",
+        en: "A curved snorkel tube allows swimmers to breathe air steadily while watching fish below the surface.",
+        ar: "تُتِيحُ قَصَبَةُ التَّنَفُّسِ المُنْحَنِيَةُ لِلسَّابِحِينَ التَّنَفُّسَ بِانْتِظَامٍ مَعَ مُرَاقَبَةِ الأَسْمَاكِ تَحْتَ المَاءِ.",
+      },
+      {
+        context: "Modern Dry Valve",
+        en: "Modern dry-top snorkels feature a splash valve that seals automatically when a wave washes over.",
+        ar: "تَتَمَيَّزُ أَنَابِيبُ الغَوْصِ الجَافَّةُ بِصِمَامٍ يَغْلِقُ تِلْقَائِيًّا عِنْدَمَا تَعْلُو المَوْجَةُ.",
+      },
+      {
+        context: "Beginner Lessons",
+        en: "The diving instructor demonstrated how to clear water from the snorkel with one sharp exhale.",
+        ar: "شَرَحَ مُدَرِّبُ الغَوْصِ كَيْفِيَّةَ تَفْرِيغِ المَاءِ مِنْ أُنْبُوبِ التَّنَفُّسِ بِزَفْرَةٍ قَوِيَّةٍ.",
+      },
+    ],
+    exampleSentence:
+      "A curved snorkel tube allows swimmers to breathe air steadily while watching fish below the surface.",
+    exampleArabic:
+      "تُتِيحُ قَصَبَةُ التَّنَفُّسِ المُنْحَنِيَةُ لِلسَّابِحِينَ التَّنَفُّسَ بِانْتِظَامٍ مَعَ مُرَاقَبَةِ الأَسْمَاكِ تَحْتَ المَاءِ.",
+  },
+  fins: {
+    id: "fins",
+    arabic: "زَعَانِفُ السِّبَاحَة (زَعَانِفُ الغَوْصِ لِلأَرْجُل)",
+    partOfSpeech: "noun",
+    phonetic: "fɪnz",
+    pronunciationTip: "Short 'i' sound /ɪ/: 'FINZ' (/fɪnz/).",
+    collocations: [
+      "pair of swim fins",
+      "flippers and fins",
+      "kick with fins",
+      "snorkeling fins",
+      "long diving fins",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "glide along",
+        meaning: "move smoothly through water using fin propulsion",
+        arabic: "يَنْزَلِقُ فِي المَاءِ بِسُهُولَة",
+        example: "With long dive fins on her feet, she glided effortlessly along the coral wall.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Water Propulsion",
+        en: "Wearing rubber swim fins greatly increases your kicking power, allowing swift movement through strong ocean currents.",
+        ar: "يَزِيدُ ارْتِدَاءُ زَعَانِفِ السِّبَاحَةِ المَطَّاطِيَّةِ قُوَّةَ الدَّفْعِ لِلتَّحَرُّكِ السَّرِيعِ فِي التَّيَّارَاتِ.",
+      },
+      {
+        context: "Snorkeling Gear",
+        en: "Short flexible fins are ideal for travel and maneuvering through shallow coral reefs without causing damage.",
+        ar: "تُعَدُّ الزَّعَانِفُ المَرِنَةُ القَصِيرَةُ مِثَالِيَّةً لِلسَّفَرِ وَالتَّنَقُّلِ فِي الشِّعَابِ الضَّحْلَةِ دُونَ إِتْلَافِهَا.",
+      },
+      {
+        context: "Freediving",
+        en: "Freedivers utilize long carbon-fiber fins to maximize energy efficiency during deep vertical descents.",
+        ar: "يَسْتَخْدِمُ غَوَّاصُو الأَعْمَاقِ زَعَانِفَ كَرْبُونِيَّةً طَوِيلَةً لِتَوْفِيرِ الجُهْدِ أَثْنَاءَ الغَوْصِ.",
+      },
+    ],
+    exampleSentence:
+      "Wearing rubber swim fins greatly increases your kicking power, allowing swift movement through strong ocean currents.",
+    exampleArabic:
+      "يَزِيدُ ارْتِدَاءُ زَعَانِفِ السِّبَاحَةِ المَطَّاطِيَّةِ قُوَّةَ الدَّفْعِ لِلتَّحَرُّكِ السَّرِيعِ فِي التَّيَّارَاتِ.",
+  },
+  swimming: {
+    id: "swimming",
+    arabic: "سِبَاحَة (مُمَارَسَةُ السِّبَاحَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈswɪmɪŋ",
+    pronunciationTip: "Pronounce 'SWIM-ing' (/ˈswɪm.ɪŋ/).",
+    collocations: [
+      "ocean swimming",
+      "go swimming",
+      "swimming in the waves",
+      "swimming lessons",
+      "wild swimming",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "paddle out",
+        meaning: "propel oneself away from the shoreline into deeper sea",
+        arabic: "يُجَذِّفُ سَابِحًا نَحْوَ العُمْق",
+        example: "He paddled out past the breaking surf to enjoy tranquil ocean swimming.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Summer Sport",
+        en: "Swimming in the cool turquoise ocean is one of the most refreshing activities on a hot summer day.",
+        ar: "تُعَدُّ السِّبَاحَةُ فِي المِيَاهِ الفَيْرُوزِيَّةِ البَارِدَةِ مِنْ أَنْعَشِ الأَنْشِطَةِ فِي يَوْمٍ صَيْفِيٍّ حَارٍّ.",
+      },
+      {
+        context: "Full-Body Workout",
+        en: "Regular open-water swimming strengthens cardiovascular fitness while remaining gentle on joints.",
+        ar: "تُقَوِّي السِّبَاحَةُ المُنْتَظَمَةُ فِي المِيَاهِ المَفْتُوحَةِ لِيَاقَةَ القَلْبِ وَهِيَ لَطِيفَةٌ عَلَى المَفَاصِلِ.",
+      },
+      {
+        context: "Water Safety",
+        en: "Always practice swimming between the designated red and yellow patrol flags for lifeguard supervision.",
+        ar: "مَارِسِ السِّبَاحَةَ دَائِمًا بَيْنَ الأَعْلَامِ المُحَدَّدَةِ لِتَكُونَ تَحْتَ إِشْرَافِ المُنْقِذِينَ.",
+      },
+    ],
+    exampleSentence:
+      "Swimming in the cool turquoise ocean is one of the most refreshing activities on a hot summer day.",
+    exampleArabic:
+      "تُعَدُّ السِّبَاحَةُ فِي المِيَاهِ الفَيْرُوزِيَّةِ البَارِدَةِ مِنْ أَنْعَشِ الأَنْشِطَةِ فِي يَوْمٍ صَيْفِيٍّ حَارٍّ.",
+  },
+  surfing: {
+    id: "surfing",
+    arabic: "رُكُوبُ الأَمْوَاج (التَّزَلُّجُ عَلَى مَوْجِ البَحْر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsɜːrfɪŋ",
+    pronunciationTip: "Pronounce 'SURF-ing' (/ˈsɜːr.fɪŋ/).",
+    collocations: [
+      "go surfing",
+      "surfing lessons",
+      "big wave surfing",
+      "surfing competition",
+      "surfing board",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "catch a wave",
+        meaning: "match velocity with rolling crest to ride forward",
+        arabic: "يَلْتَقِطُ مَوْجَةً لِرُكُوبِهَا",
+        example: "He paddled vigorously with his arms to catch a peeling overhead wave.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Extreme Water Sport",
+        en: "Surfing requires great balance, core strength, and the patience to wait for the perfect ocean swell.",
+        ar: "يَتَطَلَّبُ رُكُوبُ الأَمْوَاجِ تَنَاغُمًا وَتَوَازُنًا عَظِيمًا وَصَبْرًا لِانْتِظَارِ المَوْجَةِ المِثَالِيَّةِ.",
+      },
+      {
+        context: "Coastal Culture",
+        en: "The California surf town attracts wave riders from all across the globe to its legendary reef breaks.",
+        ar: "تَجْذِبُ مَدِينَةُ رُكُوبِ الأَمْوَاجِ الكَالِيفُورْنِيَّةُ الرِّيَاضِيِّينَ مِنْ جَمِيعِ أَنْحَاءِ العَالَمِ.",
+      },
+      {
+        context: "Beginner Experience",
+        en: "Taking surfing lessons with an experienced instructor helps newcomers stand up on foam boards quickly.",
+        ar: "يُسَاعِدُ تَلَقِّي دُرُوسِ رُكُوبِ الأَمْوَاجِ المُنْتَسِبِينَ الجُدُدَ عَلَى الوُقُوفِ عَلَى الأَلْوَاحِ بِسُرْعَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "Surfing requires great balance, core strength, and the patience to wait for the perfect ocean swell.",
+    exampleArabic:
+      "يَتَطَلَّبُ رُكُوبُ الأَمْوَاجِ تَنَاغُمًا وَتَوَازُنًا عَظِيمًا وَصَبْرًا لِانْتِظَارِ المَوْجَةِ المِثَالِيَّةِ.",
+  },
+  snorkeling: {
+    id: "snorkeling",
+    arabic: "الغَوْصُ السَّطْحِيّ (الغَطْسُ بِأُنْبُوبِ التَّنَفُّس)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsnɔːrkəlɪŋ",
+    pronunciationTip: "Pronounce 'SNOR-kuh-ling' (/ˈsnɔːr.kəl.ɪŋ/).",
+    collocations: [
+      "go snorkeling",
+      "snorkeling tour",
+      "snorkeling in the reef",
+      "snorkeling gear",
+      "shallow snorkeling",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "float along",
+        meaning: "drift on water surface while observing sea floor",
+        arabic: "يَطْفُو عَبْرَ المِيَاهِ لِلْمُرَاقَبَة",
+        example: "We floated along the sun-dappled reef to watch sea turtles grazing on seagrass.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Reef Tourism",
+        en: "Snorkeling along the shallow protected reef is a fantastic family-friendly way to observe marine life.",
+        ar: "يُعَدُّ الغَوْصُ السَّطْحِيُّ عَبْرَ الشِّعَابِ المَحْمِيَّةِ طَرِيقَةً عَائِلِيَّةً رَائِعَةً لِمُشَاهَدَةِ الحَيَاةِ البَحْرِيَّةِ.",
+      },
+      {
+        context: "Equipment Overview",
+        en: "All you need for basic snorkeling is a silicone face mask, a breathing tube, and a pair of flippers.",
+        ar: "كُلُّ مَا تَحْتَاجُهُ لِلْغَوْصِ السَّطْحِيِّ هُوَ قِنَاعُ سِيلِيكُون وَقَصَبَةُ تَنَفُّسٍ وَزَعَانِفُ.",
+      },
+      {
+        context: "Tropical Waters",
+        en: "The crystal-clear visibility in the Caribbean makes it one of the premier snorkeling destinations worldwide.",
+        ar: "تَجْعَلُ الرُّؤْيَةُ الصَّافِيَةُ فِي الكَارِيبِي مِنْهَا إِحْدَى أَبْرَزِ وُجْهَاتِ الغَوْصِ السَّطْحِيِّ فِي العَالَمِ.",
+      },
+    ],
+    exampleSentence:
+      "Snorkeling along the shallow protected reef is a fantastic family-friendly way to observe marine life.",
+    exampleArabic:
+      "يُعَدُّ الغَوْصُ السَّطْحِيُّ عَبْرَ الشِّعَابِ المَحْمِيَّةِ طَرِيقَةً عَائِلِيَّةً رَائِعَةً لِمُشَاهَدَةِ الحَيَاةِ البَحْرِيَّةِ.",
+  },
+  diving: {
+    id: "diving",
+    arabic: "غَوْص (الغَوْصُ فِي الأَعْمَاقِ بِأُسْطُوَانَةِ الأُكْسِجِين)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdaɪvɪŋ",
+    pronunciationTip: "Pronounce 'DY-ving' (/ˈdaɪ.vɪŋ/).",
+    collocations: [
+      "scuba diving",
+      "deep sea diving",
+      "diving gear",
+      "diving certification",
+      "wreck diving",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "descend to",
+        meaning: "travel downward into underwater depths",
+        arabic: "يَهْبِطُ إِلَى أَعْمَاقِ البَحْر",
+        example:
+          "Certified scuba divers descended to sixty feet to explore a sunken historic ship.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Undersea Exploration",
+        en: "Scuba diving allows humans to explore deep underwater caverns, shipwrecks, and coral canyons.",
+        ar: "يُتِيحُ الغَوْصُ بِالأُسْطُوَانَاتِ لِلْبَشَرِ اسْتِكْشَافَ الكُهُوفِ المَائِيَّةِ العَمِيقَةِ وَحُطَامِ السُّفُنِ.",
+      },
+      {
+        context: "Safety Protocols",
+        en: "Proper diving training emphasizes checking air gauges and ascending slowly to avoid decompression sickness.",
+        ar: "يُؤَكِّدُ تَدْرِيبُ الغَوْصِ الصَّحِيحُ عَلَى فَحْصِ ضَغْطِ الهَوَاءِ وَالصُّعُودِ بِتَدَرُّجٍ.",
+      },
+      {
+        context: "Cliff Jumping",
+        en: "Thrill-seekers enjoyed cliff diving from high seaside rock ledges into the deep blue lagoon below.",
+        ar: "اسْتَمْتَعَ عُشَّاقُ الإِثَارَةِ بِالقَفْزِ مِنَ الجُرُوفِ الصَّخْرِيَّةِ العَالِيَةِ إِلَى البُحَيْرَةِ العَمِيقَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Scuba diving allows humans to explore deep underwater caverns, shipwrecks, and coral canyons.",
+    exampleArabic:
+      "يُتِيحُ الغَوْصُ بِالأُسْطُوَانَاتِ لِلْبَشَرِ اسْتِكْشَافَ الكُهُوفِ المَائِيَّةِ العَمِيقَةِ وَحُطَامِ السُّفُنِ.",
+  },
+  kayaking: {
+    id: "kayaking",
+    arabic: "التَّجْذِيفُ بِالكَايَاك (رُكُوبُ قَارِبِ الكَايَاك)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkaɪækɪŋ",
+    pronunciationTip: "Pronounce 'KY-ak-ing' (/ˈkaɪ.æk.ɪŋ/).",
+    collocations: [
+      "sea kayaking",
+      "go kayaking",
+      "kayaking paddle",
+      "coastal kayaking",
+      "kayaking tour",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "paddle through",
+        meaning: "navigate narrow waterways with double-bladed oar",
+        arabic: "يُجَذِّفُ عَبْرَ المَمَرَّاتِ المَائِيَّة",
+        example: "We paddled through emerald sea caves and quiet coastal coves during our tour.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Coastal Recreation",
+        en: "Sea kayaking around the rocky coastline offered an up-close view of resting sea lions.",
+        ar: "أَتَاحَ التَّجْذِيفُ بِقَوَارِبِ الكَايَاك حَوْلَ السَّاحِلِ الصَّخْرِيِّ رُؤْيَةً عَنْ قُرْبٍ لِأُسُودِ البَحْرِ.",
+      },
+      {
+        context: "Equipment",
+        en: "A sit-on-top ocean kayak with molded foot braces provides great stability in choppy coastal water.",
+        ar: "يُوَفِّرُ قَارِبُ الكَايَاك البَحْرِيُّ ثَبَاتًا مُمْتَازًا فِي المِيَاهِ الشَّاطِئِيَّةِ المُتَمَوِّجَةِ.",
+      },
+      {
+        context: "Guided Excursion",
+        en: "A sunset kayaking excursion concluded with hot cider around a beach bonfire.",
+        ar: "اخْتُتِمَتْ جَوْلَةُ الكَايَاك عِنْدَ الغُرُوبِ بِمَشْرُوبٍ دَافِئٍ حَوْلَ نَارِ مُخَيَّمِ الشَّاطِئِ.",
+      },
+    ],
+    exampleSentence:
+      "Sea kayaking around the rocky coastline offered an up-close view of resting sea lions.",
+    exampleArabic:
+      "أَتَاحَ التَّجْذِيفُ بِقَوَارِبِ الكَايَاك حَوْلَ السَّاحِلِ الصَّخْرِيِّ رُؤْيَةً عَنْ قُرْبٍ لِأُسُودِ البَحْرِ.",
+  },
+  paddleboarding: {
+    id: "paddleboarding",
+    arabic: "التَّجْذِيفُ وُقُوفًا (التَّزَلُّجُ المَائِيُّ مَعَ التَّجْذِيف)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpædəlbɔːrdɪŋ",
+    pronunciationTip: "Pronounce 'PAD-ul-bord-ing' (/ˈpæd.əl.bɔːrd.ɪŋ/).",
+    collocations: [
+      "stand-up paddleboarding",
+      "SUP paddleboarding",
+      "go paddleboarding",
+      "paddleboarding on calm water",
+      "paddleboard rental",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "stand up on",
+        meaning: "rise to an upright balanced posture on board",
+        arabic: "يَقِفُ مُتَوَازِنًا عَلَى اللَّوْح",
+        example: "Beginners learn to stand up on the wide buoyant board in calm bay waters.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Water Sport",
+        en: "Stand-up paddleboarding builds exceptional core balance while gliding peacefully across glassy ocean bays.",
+        ar: "يَبْنِي التَّجْذِيفُ وُقُوفًا تَوَازُنًا عَضَلِيًّا اسْتِثْنَائِيًّا عِنْدَ الانْزِلَاقِ عَبْرَ الخَلِيجِ.",
+      },
+      {
+        context: "Morning Routine",
+        en: "She starts her sunrise morning with a serene paddleboarding session across the quiet lagoon.",
+        ar: "تَبْدَأُ صَبَاحَهَا عِنْدَ الشُّرُوقِ بِجَلْسَةِ تَجْذِيفٍ وُقُوفًا هَادِئَةٍ عَبْرَ البُحَيْرَةِ الشَّاطِئِيَّةِ.",
+      },
+      {
+        context: "Board Stability",
+        en: "Inflatable paddleboards are lightweight, easy to transport, and surprisingly rigid when pressurized.",
+        ar: "تَتَمَيَّزُ أَلْوَاحُ التَّجْذِيفِ القَابِلَةُ لِلنَّفْخِ بِخِفَّتِهَا وَسُهُولَةِ حَمْلِهَا وَصَلَابَتِهَا عِنْدَ المَلْءِ.",
+      },
+    ],
+    exampleSentence:
+      "Stand-up paddleboarding builds exceptional core balance while gliding peacefully across glassy ocean bays.",
+    exampleArabic:
+      "يَبْنِي التَّجْذِيفُ وُقُوفًا تَوَازُنًا عَضَلِيًّا اسْتِثْنَائِيًّا عِنْدَ الانْزِلَاقِ عَبْرَ الخَلِيجِ.",
+  },
+  "boogie-boarding": {
+    id: "boogie-boarding",
+    arabic: "التَّزَلُّجُ عَلَى الأَمْوَاجِ بِاللَّوْحِ القَصِير (بُوجِي بُورْدِنْغ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbʊɡi bɔːrdɪŋ",
+    pronunciationTip: "Pronounce 'BOO-gee bord-ing' (/ˈbʊɡ.i bɔːrd.ɪŋ/).",
+    collocations: [
+      "go boogie boarding",
+      "foam boogie board",
+      "boogie boarding in the surf",
+      "ride waves on boogie board",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "ride in",
+        meaning: "propel forward lying prone on foam craft",
+        arabic: "يَرْكَبُ المَوْجَةَ مُنْبَطِحًا عَلَى اللَّوْح",
+        example: "Children rode in on foaming whitewater right up to the sandy beach edge.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Recreation",
+        en: "Boogie boarding is an accessible water sport where riders lie prone on a lightweight foam bodyboard.",
+        ar: "يُعَدُّ التَّزَلُّجُ بِاللَّوْحِ القَصِيرِ رِيَاضَةً مُمْتِعَةً يَنْبَطِحُ فِيهَا السَّابِحُ عَلَى لَوْحِ فُومٍ خَفِيفٍ.",
+      },
+      {
+        context: "Family Fun",
+        en: "The whole family grabbed colorful bodyboards to enjoy boogie boarding in the rolling shore breaks.",
+        ar: "حَمَلَتِ العَائِلَةُ أَلْوَاحَ الفُومِ المُلَوَّنَةَ لِلِاسْتِمْتَاعِ بِرُكُوبِ الأَمْوَاجِ القَرِيبَةِ مِنَ الشَّاطِئِ.",
+      },
+      {
+        context: "Safety Leash",
+        en: "Attaching a coiled wrist leash prevents your boogie board from washing away in heavy surf.",
+        ar: "يَمْنَعُ رَبْطُ حِزَامِ المِعْصَمِ المَلْفُوفِ انْجِرَافَ لَوْحِ التَّزَلُّجِ بَعِيدًا فِي المَاءِ.",
+      },
+    ],
+    exampleSentence:
+      "Boogie boarding is an accessible water sport where riders lie prone on a lightweight foam bodyboard.",
+    exampleArabic:
+      "يُعَدُّ التَّزَلُّجُ بِاللَّوْحِ القَصِيرِ رِيَاضَةً مُمْتِعَةً يَنْبَطِحُ فِيهَا السَّابِحُ عَلَى لَوْحِ فُومٍ خَفِيفٍ.",
+  },
+  "jet-skiing": {
+    id: "jet-skiing",
+    arabic: "رُكُوبُ الدَّرَّاجَاتِ المَائِيَّة (جِيت سْكِي)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdʒɛt skiːɪŋ",
+    pronunciationTip: "Pronounce 'JET skee-ing' (/ˈdʒɛt skiː.ɪŋ/).",
+    collocations: [
+      "go jet skiing",
+      "rental jet skiing",
+      "jet skiing across the bay",
+      "jet ski life jacket",
+      "fast jet skiing",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "speed across",
+        meaning: "travel rapidly over open water surface with motor throttle",
+        arabic: "يَنْطَلِقُ بِسُرْعَةٍ فَوْقَ المِيَاه",
+        example: "He squeezed the throttle to speed across the open coastal waters on the jet ski.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Water Motorsports",
+        en: "Jet skiing provides high-speed thrills as powerful motorized watercraft skim across the ocean waves.",
+        ar: "يُوَفِّرُ رُكُوبُ الدَّرَّاجَاتِ المَائِيَّةِ إِثَارَةً عَالِيَةَ السُّرْعَةِ عَبْرَ أَمْوَاجِ المُحِيطِ.",
+      },
+      {
+        context: "Safety Gear",
+        en: "Riders must always wear certified life jackets and attach the engine shutoff lanyard when jet skiing.",
+        ar: "يَجِبُ عَلَى السَّائِقِينَ دَائِمًا ارْتِدَاءُ سُتْرَةِ النَّجَاةِ وَتَثْبِيتُ حَبْلِ إِيقَافِ المُحَرِّكِ.",
+      },
+      {
+        context: "Coastal Regulations",
+        en: "Designated motorized watercraft zones keep jet skiing activities safely away from designated swimming areas.",
+        ar: "تُبْقِي المَنَاطِقُ المُخَصَّصَةُ لِلْمَرْكَبَاتِ المَائِيَّةِ رِيَاضَةَ الجِيت سْكِي بَعِيدَةً عَنْ أَمَاكِنِ السِّبَاحَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Jet skiing provides high-speed thrills as powerful motorized watercraft skim across the ocean waves.",
+    exampleArabic:
+      "يُوَفِّرُ رُكُوبُ الدَّرَّاجَاتِ المَائِيَّةِ إِثَارَةً عَالِيَةَ السُّرْعَةِ عَبْرَ أَمْوَاجِ المُحِيطِ.",
+  },
+  sailing: {
+    id: "sailing",
+    arabic: "الإِبْحَار (رُكُوبُ القَوَارِبِ الشِّرَاعِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈseɪlɪŋ",
+    pronunciationTip: "Long 'a' sound /eɪ/: 'SAY-ling' (/ˈseɪ.lɪŋ/).",
+    collocations: [
+      "go sailing",
+      "sailing boat",
+      "sailing lessons",
+      "sailing regatta",
+      "ocean sailing",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "set sail",
+        meaning: "begin sea voyage by unfurling fabric canvas",
+        arabic: "يُبْحِرُ فِي عُرْضِ البَحْر",
+        example: "The wooden schooner set sail at dawn heading toward the offshore archipelago.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Nautical Sport",
+        en: "Sailing harnesses the natural power of coastal winds to propel boats smoothly across the sea.",
+        ar: "يَسْتَغِلُّ الإِبْحَارُ القُوَّةَ الطَّبِيعِيَّةَ لِرِيَاحِ السَّاحِلِ لِدَفْعِ القَوَارِبِ بِسَلَاسَةٍ فِي البَحْرِ.",
+      },
+      {
+        context: "Yacht Club Regatta",
+        en: "Dozens of colorful sloops competed in the annual coastal sailing regatta under bright skies.",
+        ar: "تَنَافَسَتْ عَشَرَاتُ القَوَارِبِ الشِّرَاعِيَّةِ فِي سِبَاقِ الإِبْحَارِ السَّاحِلِيِّ السَّنَوِيِّ.",
+      },
+      {
+        context: "Navigation Skills",
+        en: "Learning the art of sailing involves understanding knots, wind direction, and maritime charting.",
+        ar: "يَتَضَمَّنُ تَعَلُّمُ فَنِّ الإِبْحَارِ فَهْمَ عُقَدِ الحِبَالِ وَاتِّجَاهِ الرِّيَاحِ وَالخَرَائِطِ المَلَاحِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "Sailing harnesses the natural power of coastal winds to propel boats smoothly across the sea.",
+    exampleArabic:
+      "يَسْتَغِلُّ الإِبْحَارُ القُوَّةَ الطَّبِيعِيَّةَ لِرِيَاحِ السَّاحِلِ لِدَفْعِ القَوَارِبِ بِسَلَاسَةٍ فِي البَحْرِ.",
+  },
+  windsurfing: {
+    id: "windsurfing",
+    arabic: "رُكُوبُ الأَمْوَاجِ شِرَاعِيًّا (التَّزَلُّجُ الشِّرَاعِيُّ عَلَى المَاءِ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɪndsɜːrfɪŋ",
+    pronunciationTip: "Pronounce 'WIND-surf-ing' (/ˈwɪnd.sɜːr.fɪŋ/).",
+    collocations: [
+      "go windsurfing",
+      "windsurfing board and rig",
+      "windsurfing harness",
+      "windsurfing champion",
+      "windsurfing in the bay",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "tack against",
+        meaning: "change heading relative to oncoming air currents",
+        arabic: "يُغَيِّرُ مَسَارَ الشِّرَاعِ ضِدَّ الرِّيَاح",
+        example: "He tacked against the brisk onshore breeze to maintain speed across the water.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Hybrid Water Sport",
+        en: "Windsurfing combines elements of surfing and sailing, using a handheld sail mounted to a pivoting board.",
+        ar: "يَجْمَعُ التَّزَلُّجُ الشِّرَاعِيُّ بَيْنَ رُكُوبِ الأَمْوَاجِ وَالإِبْحَارِ بِشِرَاعٍ يَدَوِيٍّ مُثَبَّتٍ عَلَى لَوْحٍ.",
+      },
+      {
+        context: "Breezy Bay",
+        en: "The windy coastal bay is a renowned hotspot where enthusiasts practice speed windsurfing.",
+        ar: "يُعَدُّ الخَلِيجُ السَّاحِلِيُّ العَاصِفُ مَرْكَزًا شَهِيرًا يُمَارِسُ فِيهِ الهُوَاةُ التَّزَلُّجَ الشِّرَاعِيَّ.",
+      },
+      {
+        context: "Physical Mastery",
+        en: "Mastering the boom grip and footstraps allows windsurfers to jump over wave crests at high speed.",
+        ar: "يُتِيحُ التَّحَكُّمُ فِي سَاعِدِ الشِّرَاعِ وَأَحْزِمَةِ القَدَمِ لِلْمُتَزَلِّجِينَ القَفْزَ فَوْقَ قِمَمِ الأَمْوَاجِ.",
+      },
+    ],
+    exampleSentence:
+      "Windsurfing combines elements of surfing and sailing, using a handheld sail mounted to a pivoting board.",
+    exampleArabic:
+      "يَجْمَعُ التَّزَلُّجُ الشِّرَاعِيُّ بَيْنَ رُكُوبِ الأَمْوَاجِ وَالإِبْحَارِ بِشِرَاعٍ يَدَوِيٍّ مُثَبَّتٍ عَلَى لَوْحٍ.",
+  },
+  "water-skiing": {
+    id: "water-skiing",
+    arabic: "التَّزَلُّجُ عَلَى المَاء (التَّزَلُّجُ المَائِيُّ بِسَحْبِ القَارِب)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɔːtər skiːɪŋ",
+    pronunciationTip: "Pronounce 'WAW-ter skee-ing' (/ˈwɔː.tər skiː.ɪŋ/).",
+    collocations: [
+      "go water skiing",
+      "water skiing behind a speedboat",
+      "water skiing tow rope",
+      "water ski life vest",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hold on to",
+        meaning: "grip the tow handle firmly behind a speedboat",
+        arabic: "يَتَمَسَّكُ بِمِقْبَضِ حَبْلِ السَّحْب",
+        example: "Hold on to the tow handle tightly as the boat accelerates across the bay.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Water Sport",
+        en: "Water skiing is an exhilarating sport where an athlete skims across the water while towed by a motorboat.",
+        ar: "يُعَدُّ التَّزَلُّجُ عَلَى المَاءِ رِيَاضَةً مُثِيرَةً يَنْزَلِقُ فِيهَا الشَّخْصُ بَيْنَمَا يَسْحَبُهُ قَارِبٌ سَرِيعٌ.",
+      },
+      {
+        context: "Balance and Skill",
+        en: "Maintaining balance on parallel water skis requires strong leg muscles and steady posture.",
+        ar: "يَتَطَلَّبُ الحِفَاظُ عَلَى التَّوَازُنِ عَلَى زَلَّاجَاتِ المَاءِ عَضَلَاتِ سَاقَيْنِ قَوِيَّةً.",
+      },
+      {
+        context: "Calm Water Conditions",
+        en: "Early mornings provide the glass-like water conditions that water skiers dream of.",
+        ar: "تُوَفِّرُ سَاعَاتُ الصَّبَاحِ البَاكِرِ مِيَاهًا هَادِئَةً كَالزُّجَاجِ مِثَالِيَّةً لِلتَّزَلُّجِ.",
+      },
+    ],
+    exampleSentence:
+      "Water skiing is an exhilarating sport where an athlete skims across the water while towed by a motorboat.",
+    exampleArabic:
+      "يُعَدُّ التَّزَلُّجُ عَلَى المَاءِ رِيَاضَةً مُثِيرَةً يَنْزَلِقُ فِيهَا الشَّخْصُ بَيْنَمَا يَسْحَبُهُ قَارِبٌ سَرِيعٌ.",
+  },
+  fishing: {
+    id: "fishing",
+    arabic: "صَيْدُ الأَسْمَاك (الصَّيْدُ البَحْرِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfɪʃɪŋ",
+    pronunciationTip: "Short 'i' sound /ɪ/: 'FISH-ing' (/ˈfɪʃ.ɪŋ/).",
+    collocations: [
+      "sea fishing",
+      "go fishing",
+      "fishing rod",
+      "surf fishing",
+      "pier fishing",
+      "fishing line",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "cast out",
+        meaning: "throw weighted baited hook into ocean surf",
+        arabic: "يُلْقِي بِخَيْطِ الصَّنَّارَةِ فِي البَحْر",
+        example: "He cast out his weighted fishing line into the deep breakers from the pier.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Coastal Hobby",
+        en: "Surf fishing at twilight is a peaceful pastime enjoyed by anglers standing in the rolling surf.",
+        ar: "يُعَدُّ صَيْدُ الأَسْمَاكِ عِنْدَ الغَسَقِ هِوَايَةً هَادِئَةً يُمَارِسُهَا الصَّيَّادُونَ عِنْدَ خَطِّ المَاءِ.",
+      },
+      {
+        context: "Pier Activity",
+        en: "Families lined the wooden pier with tackle boxes and rods hoping to catch sea bass and mackerel.",
+        ar: "اصْطَفَّتِ العَائِلَاتُ عَلَى الرَّصِيفِ الخَشَبِيِّ مَعَ الصَّنَانِيرِ لِصَيْدِ أَسْمَاكِ القَارُوصِ وَالمَاكْرِيلِ.",
+      },
+      {
+        context: "Sustainable Catch",
+        en: "Catch-and-release fishing practices help maintain healthy fish populations in coastal marine reserves.",
+        ar: "تُسَاعِدُ مُمَارَسَاتُ الصَّيْدِ المَسْؤُولِ فِي الحِفَاظِ عَلَى تَوَازُنِ الأَسْمَاكِ فِي المَحْمِيَّاتِ.",
+      },
+    ],
+    exampleSentence:
+      "Surf fishing at twilight is a peaceful pastime enjoyed by anglers standing in the rolling surf.",
+    exampleArabic:
+      "يُعَدُّ صَيْدُ الأَسْمَاكِ عِنْدَ الغَسَقِ هِوَايَةً هَادِئَةً يُمَارِسُهَا الصَّيَّادُونَ عِنْدَ خَطِّ المَاءِ.",
+  },
+  sandcastle: {
+    id: "sandcastle",
+    arabic: "قَلْعَةٌ رَمْلِيَّة (قَصْرٌ مِنَ الرِّمَال)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsændˌkɑːsəl",
+    pronunciationTip:
+      "Pronounce 'SAND-kass-ul' (/ˈsænd.ˌkæs.əl/) or 'SAND-kah-sul' (/ˈsænd.ˌkɑː.səl/).",
+    collocations: [
+      "build a sandcastle",
+      "sandcastle competition",
+      "damp sandcastle",
+      "sandcastle moat",
+      "sculpt a sandcastle",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wash away",
+        meaning: "destroy and dissolve structure with incoming waves",
+        arabic: "تَجْرِفُهُ المَوْجَةُ وَتَمْحُوه",
+        example: "The rising tide washed away the elaborate sandcastle we built all afternoon.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Play",
+        en: "Children used plastic buckets and shovels to build a magnificent sandcastle with towers and a moat.",
+        ar: "اسْتَخْدَمَ الأَطْفَالُ الدِّلَاءَ وَالمَجَارِفَ لِبِنَاءِ قَلْعَةٍ رَمْلِيَّةٍ بَدِيعَةٍ ذَاتِ أَبْرَاجٍ وَخَنْدَقٍ.",
+      },
+      {
+        context: "Sculpting Contest",
+        en: "The annual beach sandcastle contest showcased breathtaking architectural sculptures of dragons and palaces.",
+        ar: "عَرَضَتْ مُسَابَقَةُ القِلَاعِ الرَّمْلِيَّةِ السَّنَوِيَّةُ مُجَسَّمَاتٍ مِعْمَارِيَّةً مُذْهِلَةً لِلتَّنَانِينِ وَالقُصُورِ.",
+      },
+      {
+        context: "Damp Building Material",
+        en: "Using damp sand from the intertidal zone gives sculptors the cohesion needed for intricate fortress arches.",
+        ar: "يَمْنَحُ اسْتِخْدَامُ الرِّمَالِ الرَّطْبَةِ النَّحَّاتِينَ التَّمَاسُكَ اللَّازِمَ لِصُنْعِ أَقْوَاسِ القِلَاعِ.",
+      },
+    ],
+    exampleSentence:
+      "Children used plastic buckets and shovels to build a magnificent sandcastle with towers and a moat.",
+    exampleArabic:
+      "اسْتَخْدَمَ الأَطْفَالُ الدِّلَاءَ وَالمَجَارِفَ لِبِنَاءِ قَلْعَةٍ رَمْلِيَّةٍ بَدِيعَةٍ ذَاتِ أَبْرَاجٍ وَخَنْدَقٍ.",
+  },
+  frisbee: {
+    id: "frisbee",
+    arabic: "فْرِيزْبِي (قُرْصٌ طَائِر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfrɪzbi",
+    pronunciationTip: "Pronounce 'FRIZ-bee' (/ˈfrɪz.bi/).",
+    collocations: [
+      "throw a frisbee",
+      "catch a frisbee",
+      "plastic frisbee",
+      "frisbee game",
+      "ultimate frisbee",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "toss back and forth",
+        meaning: "throw flying disc between players continuously",
+        arabic: "يَتَبَادَلُ قَذْفَ القُرْصِ الطَّائِر",
+        example: "Friends tossed the red frisbee back and forth along the wide open shore.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Game",
+        en: "Friends tossed a brightly colored plastic frisbee back and forth across the sandy shoreline.",
+        ar: "تَبَادَلَ الأَصْدِقَاءُ قَذْفَ قُرْصِ الفْرِيزْبِي البْلَاسْتِيكِيِّ المُلَوَّنِ عَبْرَ الشَّاطِئِ الرَّمْلِيِّ.",
+      },
+      {
+        context: "Dog Agility",
+        en: "A golden retriever bounded through the shallow surf to catch a flying frisbee midair.",
+        ar: "قَفَزَ الكَلْبُ عَبْرَ مِيَاهِ الشَّاطِئِ الضَّحْلَةِ لِالْتِقَاطِ القُرْصِ الطَّائِرِ فِي الهَوَاءِ.",
+      },
+      {
+        context: "Aerodynamics",
+        en: "The aerodynamic rim design of a frisbee creates lift, allowing it to hover gracefully in ocean breezes.",
+        ar: "يَخْلُقُ التَّصْمِيمُ الانْسِيَابِيُّ لِلْقُرْصِ قُوَّةَ رَفْعٍ تُمَكِّنُهُ مِنْ التَّحْلِيقِ فِي نَسِيمِ البَحْرِ.",
+      },
+    ],
+    exampleSentence:
+      "Friends tossed a brightly colored plastic frisbee back and forth across the sandy shoreline.",
+    exampleArabic:
+      "تَبَادَلَ الأَصْدِقَاءُ قَذْفَ قُرْصِ الفْرِيزْبِي البْلَاسْتِيكِيِّ المُلَوَّنِ عَبْرَ الشَّاطِئِ الرَّمْلِيِّ.",
+  },
+  volleyball: {
+    id: "volleyball",
+    arabic: "كُرَةُ الطَّائِرَة (كُرَةُ الطَّائِرَةِ الشَّاطِئِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈvɒlibɔːl",
+    pronunciationTip: "Pronounce 'VOL-ee-bawl' (/ˈvɒl.i.bɔːl/).",
+    collocations: [
+      "beach volleyball",
+      "volleyball net",
+      "play volleyball",
+      "volleyball tournament",
+      "serve the volleyball",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "spike over",
+        meaning: "hit the ball forcefully downward across the net",
+        arabic: "يَسْحَقُ الكُرَةَ فَوْقَ الشَّبَكَة",
+        example: "The athlete leaped high into the air to spike the volleyball over the net.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Sport",
+        en: "Beach volleyball is a thrilling team sport played barefoot on a sand court with a high net.",
+        ar: "تُعَدُّ كُرَةُ الطَّائِرَةِ الشَّاطِئِيَّةُ رِيَاضَةً حَمَاسِيَّةً تُلْعَبُ حُفَاةً عَلَى مَلْعَبٍ رَمْلِيٍّ.",
+      },
+      {
+        context: "Tournament Energy",
+        en: "Spectators cheered as players dove across the sand to save a powerful volleyball spike.",
+        ar: "هَتَفَتِ الجَمَاهِيرُ حِينَ غَاصَ اللَّاعِبُونَ عَلَى الرِّمَالِ لِصَدِّ ضَرْبَةِ كُرَةِ الطَّائِرَةِ القَوِيَّةِ.",
+      },
+      {
+        context: "Casual Fun",
+        en: "We set up a portable volleyball net between two wooden posts for a friendly afternoon match.",
+        ar: "نَصَبْنَا شَبَكَةَ كُرَةِ طَائِرَةٍ مَحْمُولَةً بَيْنَ عَمُودَيْنِ خَشَبِيَّيْنِ لِمُبَارَاةٍ بَسِيطَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "Beach volleyball is a thrilling team sport played barefoot on a sand court with a high net.",
+    exampleArabic:
+      "تُعَدُّ كُرَةُ الطَّائِرَةِ الشَّاطِئِيَّةُ رِيَاضَةً حَمَاسِيَّةً تُلْعَبُ حُفَاةً عَلَى مَلْعَبٍ رَمْلِيٍّ.",
+  },
+  sunbathing: {
+    id: "sunbathing",
+    arabic: "حَمَّامُ شَمْس (الاسْتِلْقَاءُ تَحْتَ الشَّمْس / التَّشَمُّس)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsʌnbeɪðɪŋ",
+    pronunciationTip: "Pronounce 'SUN-bay-thing' (/ˈsʌn.beɪ.ðɪŋ/).",
+    collocations: [
+      "go sunbathing",
+      "sunbathing on the beach",
+      "sunbathing towel",
+      "enjoy sunbathing",
+      "safe sunbathing",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "soak up",
+        meaning: "absorb warm daylight while reclining",
+        arabic: "يَمْتَصُّ دِفْءَ أَشِعَّةِ الشَّمْس",
+        example: "Vacationers reclined on woven mats to soak up the golden Mediterranean sunshine.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Rest and Relaxation",
+        en: "Sunbathing on a soft beach towel while listening to crashing waves is deeply restorative.",
+        ar: "يُعَدُّ الاسْتِلْقَاءُ لِأَخْذِ حَمَّامِ شَمْسٍ مَعَ سَمَاعِ هَدِيرِ الأَمْوَاجِ مُجَدِّدًا لِلطَّاقَةِ.",
+      },
+      {
+        context: "Sun Safety Practice",
+        en: "Dermatologists advise limiting direct sunbathing during peak midday UV radiation hours.",
+        ar: "يَنْصَحُ أَطِبَّاءُ الجِلْدِ بِتَقْلِيلِ التَّشَمُّسِ المُبَاشِرِ فِي سَاعَاتِ ذِرْوَةِ الإِشْعَاعِ.",
+      },
+      {
+        context: "Resort Loungers",
+        en: "Resort guests occupied row upon row of poolside sun loungers for morning sunbathing sessions.",
+        ar: "شَغَلَ نُزَلَاءُ المُنْتَجَعِ صُفُوفَ كَرَاسِي الاسْتِرْخَاءِ لِأَخْذِ حَمَّامَاتِ شَمْسٍ صَبَاحِيَّةٍ.",
+      },
+    ],
+    exampleSentence:
+      "Sunbathing on a soft beach towel while listening to crashing waves is deeply restorative.",
+    exampleArabic:
+      "يُعَدُّ الاسْتِلْقَاءُ لِأَخْذِ حَمَّامِ شَمْسٍ مَعَ سَمَاعِ هَدِيرِ الأَمْوَاجِ مُجَدِّدًا لِلطَّاقَةِ.",
+  },
+  picnic: {
+    id: "picnic",
+    arabic: "نُزْهَة (رِحْلَةُ نُزْهَةٍ وَتَنَاوُلُ طَعَامٍ فِي الهَوَاءِ الطَّلْق)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpɪknɪk",
+    pronunciationTip: "Pronounce 'PIK-nik' (/ˈpɪk.nɪk/).",
+    collocations: [
+      "beach picnic",
+      "picnic blanket",
+      "pack a picnic",
+      "picnic basket",
+      "enjoy a picnic",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "lay out",
+        meaning: "spread food and refreshments across a ground mat",
+        arabic: "يَبْسُطُ مَأْدُبَةَ النُّزْهَة",
+        example: "We laid out fresh watermelon, sandwiches, and chilled lemonade on the blanket.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Seaside Meal",
+        en: "We spread a waterproof blanket across the dunes to enjoy a sunset beach picnic with fresh fruit.",
+        ar: "بَسَطْنَا بِسَاطًا مُقَاوِمًا لِلْمَاءِ فَوْقَ الكَثْبَانِ لِلِاسْتِمْتَاعِ بِنُزْهَةِ الشَّاطِئِ مَعَ الفَاكِهَةِ.",
+      },
+      {
+        context: "Packing Refreshments",
+        en: "They packed a wicker basket with crusty bread, artisan cheeses, and cold drinks for the picnic.",
+        ar: "حَزَمُوا سَلَّةً خَيْزُرَانِيَّةً مَلِيئَةً بِالخُبْزِ المُقَرْمَشِ وَالأَجْبَانِ لِلنُّزْهَةِ.",
+      },
+      {
+        context: "Outdoor Gathering",
+        en: "A seaside picnic under a large shade umbrella makes a delightful afternoon with friends.",
+        ar: "تَجْعَلُ النُّزْهَةُ السَّاحِلِيَّةُ تَحْتَ مِظَلَّةٍ كَبِيرَةٍ مِنْ بَعْدِ الظَّهِيرَةِ وَقْتًا مُمْتِعًا مَعَ الأَصْدِقَاءِ.",
+      },
+    ],
+    exampleSentence:
+      "We spread a waterproof blanket across the dunes to enjoy a sunset beach picnic with fresh fruit.",
+    exampleArabic:
+      "بَسَطْنَا بِسَاطًا مُقَاوِمًا لِلْمَاءِ فَوْقَ الكَثْبَانِ لِلِاسْتِمْتَاعِ بِنُزْهَةِ الشَّاطِئِ مَعَ الفَاكِهَةِ.",
+  },
+  "kite-flying": {
+    id: "kite-flying",
+    arabic: "تَطْيِيرُ الطَّائِرَاتِ الوَرَقِيَّة (لُعْبَةُ الطَّائِرَةِ الوَرَقِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkaɪt ˈflaɪɪŋ",
+    pronunciationTip: "Pronounce 'KYT fly-ing' (/ˈkaɪt ˈflaɪ.ɪŋ/).",
+    collocations: [
+      "go kite flying",
+      "kite flying festival",
+      "windy kite flying",
+      "colorful kite flying",
+      "kite flying string",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "soar into",
+        meaning: "climb rapidly into windy upper airspace",
+        arabic: "تُحَلِّقُ فِي أَعَالِي السَّمَاء",
+        example: "The diamond-shaped kite soared into the gusty coastal sky as he unspooled line.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Wind Recreation",
+        en: "Steady ocean winds make the open shoreline an ideal location for colorful kite flying.",
+        ar: "تَجْعَلُ رِيَاحُ المُحِيطِ المُنْتَظَمَةُ الشَّاطِئَ المَفْتُوحَ مَكَانًا مِثَالِيًّا لِتَطْيِيرِ الطَّائِرَاتِ الوَرَقِيَّةِ.",
+      },
+      {
+        context: "Festival Celebration",
+        en: "The coastal kite flying festival filled the blue skies with giant flying octopuses and dragon kites.",
+        ar: "مَلَأَ مَهْرَجَانُ الطَّائِرَاتِ الوَرَقِيَّةِ السَّمَاءَ بِطَائِرَاتٍ عِمْلَاقَةٍ عَلَى شَكْلِ أَخْطَبُوطٍ وَتِنِّينٍ.",
+      },
+      {
+        context: "Childhood Joy",
+        en: "Children cheered with delight as their nylon stunt kites performed high-altitude loops and dives.",
+        ar: "هَتَفَ الأَطْفَالُ فَرَحًا حِينَ أَدَّتْ طَائِرَاتُهُمُ الاسْتِعْرَاضِيَّةُ حَرَكَاتٍ دَائِرِيَّةً فِي السَّمَاءِ.",
+      },
+    ],
+    exampleSentence:
+      "Steady ocean winds make the open shoreline an ideal location for colorful kite flying.",
+    exampleArabic:
+      "تَجْعَلُ رِيَاحُ المُحِيطِ المُنْتَظَمَةُ الشَّاطِئَ المَفْتُوحَ مَكَانًا مِثَالِيًّا لِتَطْيِيرِ الطَّائِرَاتِ الوَرَقِيَّةِ.",
+  },
+  "shell-collecting": {
+    id: "shell-collecting",
+    arabic: "جَمْعُ الأَصْدَاف (البَحْثُ عَنِ الأَصْدَافِ البَحْرِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ʃɛl kəˈlɛktɪŋ",
+    pronunciationTip: "Pronounce 'SHEL kuh-lek-ting' (/ʃɛl kəˈlɛkt.ɪŋ/).",
+    collocations: [
+      "go shell collecting",
+      "seashell collecting",
+      "shell collecting bucket",
+      "morning shell collecting",
+      "rare shell collecting",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "hunt for",
+        meaning: "search carefully through sand and tide lines",
+        arabic: "يَبْحَثُ عَنِ الأَصْدَافِ النَّادِرَة",
+        example: "They hunted for shiny spiral shells and smooth sea glass along the surf.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beachcombing",
+        en: "Morning shell collecting along the tide line rewarded us with perfect spiral conches and scallops.",
+        ar: "كَافَأَنَا جَمْعُ الأَصْدَافِ الصَّبَاحِيُّ عَلَى خَطِّ المَدِّ بِأَصْدَافٍ حَلَزُونِيَّةٍ كَامِلَةٍ.",
+      },
+      {
+        context: "Hobbyist Treasure",
+        en: "She preserved her prized beach finds in a decorative glass jar after an afternoon of shell collecting.",
+        ar: "حَفِظَتْ مَا جَمَعَتْهُ مِنَ الأَصْدَافِ فِي جَرَّةٍ زُجَاجِيَّةٍ زُخْرُفِيَّةٍ بَعْدَ الجَوْلَةِ.",
+      },
+      {
+        context: "Educational Habit",
+        en: "Shell collecting teaches young children about diverse marine mollusks and coastal ecosystems.",
+        ar: "يُعَلِّمُ جَمْعُ الأَصْدَافِ الأَطْفَالَ التَّعَرُّفَ عَلَى الرَّخَوِيَّاتِ البَحْرِيَّةِ المُتَنَوِّعَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Morning shell collecting along the tide line rewarded us with perfect spiral conches and scallops.",
+    exampleArabic:
+      "كَافَأَنَا جَمْعُ الأَصْدَافِ الصَّبَاحِيُّ عَلَى خَطِّ المَدِّ بِأَصْدَافٍ حَلَزُونِيَّةٍ كَامِلَةٍ.",
+  },
+  barbecue: {
+    id: "barbecue",
+    arabic: "شِوَاء (حَفْلَةُ شِوَاءٍ عَلَى الشَّاطِئ / بَارْبِكْيُو)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbɑːrbɪkjuː",
+    pronunciationTip: "Pronounce 'BAR-bih-kyoo' (/ˈbɑːr.bɪ.kjuː/).",
+    collocations: [
+      "beach barbecue",
+      "host a barbecue",
+      "charcoal barbecue",
+      "barbecue grill",
+      "summer barbecue",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "grill up",
+        meaning: "cook meat and vegetables over hot charcoal",
+        arabic: "يَشْوِي الأَطْعِمَةَ عَلَى الفَحْم",
+        example: "We grilled up fresh shrimp skewers and corn on the portable beach barbecue.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Seaside Dining",
+        en: "Hosting a sunset beach barbecue with grilled seafood and sweet corn is a summer holiday tradition.",
+        ar: "تُعَدُّ إِقَامَةُ حَفْلَةِ شِوَاءٍ عِنْدَ الغُرُوبِ مَعَ المَأْكُولَاتِ البَحْرِيَّةِ تَقْلِيدًا صَيْفِيًّا رَائِعًا.",
+      },
+      {
+        context: "Public Facilities",
+        en: "The coastal park provided permanent charcoal barbecue pits and picnic benches overlooking the ocean.",
+        ar: "وَفَّرَتْ حَدِيقَةُ الشَّاطِئِ مَوَاقِدَ شِوَاءٍ ثَابِتَةً بِالفَحْمِ وَطَاوِلَاتٍ تُطِلُّ عَلَى البَحْرِ.",
+      },
+      {
+        context: "Aroma and Atmosphere",
+        en: "The smoky aroma of a seaside barbecue blended with the salty evening sea air.",
+        ar: "امْتَزَجَتْ رَائِحَةُ الشِّوَاءِ الدُّخَانِيَّةُ الشَّهِيَّةُ بِنَسِيمِ البَحْرِ المَالِحِ المَسَائِيِّ.",
+      },
+    ],
+    exampleSentence:
+      "Hosting a sunset beach barbecue with grilled seafood and sweet corn is a summer holiday tradition.",
+    exampleArabic:
+      "تُعَدُّ إِقَامَةُ حَفْلَةِ شِوَاءٍ عِنْدَ الغُرُوبِ مَعَ المَأْكُولَاتِ البَحْرِيَّةِ تَقْلِيدًا صَيْفِيًّا رَائِعًا.",
+  },
+  bonfire: {
+    id: "bonfire",
+    arabic: "نَارُ المُخَيَّم (نَارُ الشَّاطِئ / مَوْقِدُ الحَطَبِ الكَبِير)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbɒnfaɪər",
+    pronunciationTip: "Pronounce 'BON-fy-er' (/ˈbɒn.faɪ.ər/).",
+    collocations: [
+      "beach bonfire",
+      "light a bonfire",
+      "sit around the bonfire",
+      "bonfire night",
+      "roast marshmallows at the bonfire",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "gather around",
+        meaning: "assemble in a circle near open flames",
+        arabic: "يَتَحَلَّقُ حَوْلَ النَّارِ لِلتَّدَفُّؤ",
+        example:
+          "Everyone gathered around the roaring beach bonfire to sing songs and roast marshmallows.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Evening Gathering",
+        en: "As twilight fell, campers built a roaring beach bonfire in an approved fire pit to stay warm.",
+        ar: "عِنْدَمَا حَلَّ الغَسَقُ، أَوْقَدَ المُخَيِّمُونَ نَارَ شَاطِئٍ مُتَوَهِّجَةً فِي مَوْقِدٍ مُخَصَّصٍ لِلتَّدَفُّؤِ.",
+      },
+      {
+        context: "Marshmallow Roasting",
+        en: "Children roasted sweet marshmallows over glowing bonfire embers, making gooey s'mores.",
+        ar: "حَمَّصَ الأَطْفَالُ حَلْوَى المَارْشْمِيلُو فَوْقَ جَمْرِ نَارِ الشَّاطِئِ لِصُنْعِ حَلْوَى السْمُورْز.",
+      },
+      {
+        context: "Safety Practice",
+        en: "Before leaving the beach, campers doused the bonfire completely with seawater and sand.",
+        ar: "قَبْلَ مُغَادَرَةِ الشَّاطِئِ، أَطْفَأَ المُخَيِّمُونَ النَّارَ تَمَامًا بِمِيَاهِ البَحْرِ وَالرِّمَالِ.",
+      },
+    ],
+    exampleSentence:
+      "As twilight fell, campers built a roaring beach bonfire in an approved fire pit to stay warm.",
+    exampleArabic:
+      "عِنْدَمَا حَلَّ الغَسَقُ، أَوْقَدَ المُخَيِّمُونَ نَارَ شَاطِئٍ مُتَوَهِّجَةً فِي مَوْقِدٍ مُخَصَّصٍ لِلتَّدَفُّؤِ.",
+  },
+  reading: {
+    id: "reading",
+    arabic: "قِرَاءَة (مُمَارَسَةُ القِرَاءَةِ عَلَى الشَّاطِئ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈriːdɪŋ",
+    pronunciationTip: "Long 'ee' sound /iː/: 'REED-ing' (/ˈriː.dɪŋ/).",
+    collocations: [
+      "beach reading",
+      "reading a book",
+      "quiet reading",
+      "afternoon reading",
+      "reading under the umbrella",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "get lost in",
+        meaning: "become fully absorbed in literary pages",
+        arabic: "يَسْتَغْرِقُ فِي قِرَاءَةِ الكِتَاب",
+        example:
+          "She got lost in an engrossing mystery novel while resting under her beach umbrella.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Seaside Leisure",
+        en: "Quiet reading under a shady umbrella with the sound of distant waves is the ultimate relaxation.",
+        ar: "تُعَدُّ القِرَاءَةُ الهَادِئَةُ تَحْتَ المِظَلَّةِ مَعَ صَوْتِ الأَمْوَاجِ غَايَةَ الاسْتِرْخَاءِ.",
+      },
+      {
+        context: "Vacation Books",
+        en: "He packed three bestselling paperbacks specifically for leisurely afternoon reading on the coast.",
+        ar: "حَزَمَ ثَلَاثَ رِوَايَاتٍ شَهِيرَةٍ خِصِّيصًا لِلْقِرَاءَةِ عَلَى شَاطِئِ البَحْرِ.",
+      },
+      {
+        context: "E-reader Glare",
+        en: "Using an anti-glare electronic reader allows effortless outdoor reading even in bright direct sunlight.",
+        ar: "يُتِيحُ اسْتِخْدَامُ قَارِئٍ إِلِكْتُرُونِيٍّ مُقَاوِمٍ لِلِانْعِكَاسِ القِرَاءَةَ بِسُهُولَةٍ تَحْتَ الشَّمْسِ.",
+      },
+    ],
+    exampleSentence:
+      "Quiet reading under a shady umbrella with the sound of distant waves is the ultimate relaxation.",
+    exampleArabic:
+      "تُعَدُّ القِرَاءَةُ الهَادِئَةُ تَحْتَ المِظَلَّةِ مَعَ صَوْتِ الأَمْوَاجِ غَايَةَ الاسْتِرْخَاءِ.",
+  },
+  walking: {
+    id: "walking",
+    arabic: "مَشْي (المَشْيُ عَلَى رِمَالِ الشَّاطِئ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɔːkɪŋ",
+    pronunciationTip: "Pronounce 'WAW-king' (/ˈwɔː.kɪŋ/).",
+    collocations: [
+      "beach walking",
+      "walking barefoot",
+      "morning walking",
+      "walking along the shore",
+      "brisk walking",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "stroll along",
+        meaning: "walk in a slow, leisurely relaxed manner",
+        arabic: "يَتَمَشَّى عَلَى طُولِ السَّاحِل",
+        example: "Couples strolled along the water's edge to watch the sunrise.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Health and Wellness",
+        en: "Walking barefoot on damp shoreline sand provides a gentle foot massage and strengthens lower legs.",
+        ar: "يُوَفِّرُ المَشْيُ حَافِيًا عَلَى الرِّمَالِ الرَّطْبَةِ تَدْلِيكًا طَبِيعِيًّا وَيُقَوِّي عَضَلَاتِ السَّاقِ.",
+      },
+      {
+        context: "Sunrise Routine",
+        en: "Many coastal residents start each day with a peaceful three-mile walking routine by the sea.",
+        ar: "يَبْدَأُ كَثِيرٌ مِنْ سُكَّانِ السَّاحِلِ يَوْمَهُمْ بِمُمَارَسَةِ المَشْيِ الصَّبَاحِيِّ الهَادِئِ أَمَامَ البَحْرِ.",
+      },
+      {
+        context: "Dog Exercise",
+        en: "The pet-friendly beach section is filled with families walking their excited dogs in the surf.",
+        ar: "يَمْتَلِئُ قِسْمُ الشَّاطِئِ المَسْمُوحِ فِيهِ بِالحَيَوَانَاتِ بِالعَائِلَاتِ الَّتِي تُمَشِّي كِلَابَهَا.",
+      },
+    ],
+    exampleSentence:
+      "Walking barefoot on damp shoreline sand provides a gentle foot massage and strengthens lower legs.",
+    exampleArabic:
+      "يُوَفِّرُ المَشْيُ حَافِيًا عَلَى الرِّمَالِ الرَّطْبَةِ تَدْلِيكًا طَبِيعِيًّا وَيُقَوِّي عَضَلَاتِ السَّاقِ.",
+  },
+  jogging: {
+    id: "jogging",
+    arabic: "رَكْض (الجَرْيُ الخَفِيفُ عَلَى الشَّاطِئ / هَرْوَلَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdʒɒɡɪŋ",
+    pronunciationTip: "Pronounce 'JOG-ing' (/ˈdʒɒɡ.ɪŋ/).",
+    collocations: [
+      "beach jogging",
+      "go jogging",
+      "morning jogging",
+      "jogging on the boardwalk",
+      "barefoot jogging",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "keep up",
+        meaning: "maintain steady running pace along firm coastline",
+        arabic: "يُحَافِظُ عَلَى سُرْعَةِ الرَّكْض",
+        example: "She kept up a steady jogging pace along the hard-packed wet sand.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Morning Fitness",
+        en: "Morning jogging along the firm wet sand by the tide line provides excellent cardiovascular resistance training.",
+        ar: "يُوَفِّرُ الرَّكْضُ الصَّبَاحِيُّ عَلَى الرِّمَالِ الرَّطْبَةِ تَمْرِينًا مُمْتَازًا لِعَضَلَةِ القَلْبِ.",
+      },
+      {
+        context: "Boardwalk Route",
+        en: "Jogging along the scenic ocean boardwalk offers breathtaking coastal views without sand in your shoes.",
+        ar: "يُتِيحُ الجَرْيُ عَلَى المَمْشَى السَّاحِلِيِّ إِطْلَالَاتٍ بَحْرِيَّةً رَائِعَةً دُونَ دُخُولِ رِمَالٍ فِي الحِذَاءِ.",
+      },
+      {
+        context: "Sunset Exercise",
+        en: "Athletes concluded their sunset jogging session with gentle stretches on the grassy seaside park.",
+        ar: "اخْتَتَمَ الرِّيَاضِيُّونَ جَلْسَةَ الجَرْيِ المَسَائِيَّةِ بِتَمَارِينِ الإِطَالَةِ عَلَى العُشْبِ.",
+      },
+    ],
+    exampleSentence:
+      "Morning jogging along the firm wet sand by the tide line provides excellent cardiovascular resistance training.",
+    exampleArabic:
+      "يُوَفِّرُ الرَّكْضُ الصَّبَاحِيُّ عَلَى الرِّمَالِ الرَّطْبَةِ تَمْرِينًا مُمْتَازًا لِعَضَلَةِ القَلْبِ.",
+  },
+  seagull: {
+    id: "seagull",
+    arabic: "نَوْرَس (طَائِرُ النَّوْرَسِ البَحْرِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsiːɡʌl",
+    pronunciationTip: "Pronounce 'SEE-gul' (/ˈsiː.ɡʌl/).",
+    collocations: [
+      "flock of seagulls",
+      "screeching seagull",
+      "seagull flying overhead",
+      "coastal seagull",
+      "seagull feathers",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "swoop down",
+        meaning: "dive rapidly through air to snatch food morsels",
+        arabic: "يَنْقَضُّ مِنْ أَعْلَى لِالْتِقَاطِ الطَّعَام",
+        example: "A hungry seagull swooped down to snatch a dropped potato chip from the sand.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Coastal Wildlife",
+        en: "A noisy flock of white-and-gray seagulls wheeled overhead in the thermals above the pier.",
+        ar: "حَلَّقَ سِرْبٌ مِنْ طُيُورِ النَّوْرَسِ البَيْضَاءِ وَالرَّمَادِيَّةِ فَوْقَ رَصِيفِ المِينَاءِ.",
+      },
+      {
+        context: "Beach Scavenger",
+        en: "Seagulls patrol coastal coastlines searching for washed-up crustaceans, small fish, and picnic crumbs.",
+        ar: "تَجُوبُ طُيُورُ النَّوْرَسِ الشَّوَاطِئَ بَحْثًا عَنِ القِشْرِيَّاتِ وَالأَسْمَاكِ وَفُتَاتِ الطَّعَامِ.",
+      },
+      {
+        context: "Nesting Colonies",
+        en: "Large colonies of coastal seagulls build safe cliffside nests away from ground predators.",
+        ar: "تَبْنِي مُسْتَعْمَرَاتُ النَّوْرَسِ أَعْشَاشَهَا عَلَى الجُرُوفِ الصَّخْرِيَّةِ بَعِيدًا عَنِ المُفْتَرِسَاتِ.",
+      },
+    ],
+    exampleSentence:
+      "A noisy flock of white-and-gray seagulls wheeled overhead in the thermals above the pier.",
+    exampleArabic:
+      "حَلَّقَ سِرْبٌ مِنْ طُيُورِ النَّوْرَسِ البَيْضَاءِ وَالرَّمَادِيَّةِ فَوْقَ رَصِيفِ المِينَاءِ.",
+  },
+  crab: {
+    id: "crab",
+    arabic: "سَرَطَانُ البَحْر (كَبُورْيَا / سَلْطَعُون)",
+    partOfSpeech: "noun",
+    phonetic: "kræb",
+    pronunciationTip: "Short 'a' sound /æ/: 'KRAB' (/kræb/).",
+    collocations: [
+      "hermit crab",
+      "ghost crab",
+      "crab claws",
+      "crab scuttling on sand",
+      "blue crab",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "scuttle across",
+        meaning: "run sideways with rapid tiny leg movements",
+        arabic: "يَرْكُضُ جَانِبِيًّا بِسُرْعَة",
+        example: "A tiny ghost crab scuttled sideways across the wet sand into its burrow.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Shoreline Wildlife",
+        en: "A sandy ghost crab scuttled sideways into its subterranean burrow as our footsteps approached.",
+        ar: "رَكَضَ سَرَطَانُ الشَّاطِئِ جَانِبِيًّا إِلَى جُحْرِهِ تَحْتَ الرِّمَالِ مَعَ اقْتِرَابِ خُطُوَاتِنَا.",
+      },
+      {
+        context: "Tide Pool Discovery",
+        en: "We watched a hermit crab carefully crawl inside an abandoned spiral snail shell for protection.",
+        ar: "رَاقَبْنَا سَرَطَانَ النَّاسِكِ يَدْخُلُ دَاخِلَ صَدَفَةِ حَلَزُونٍ مَهْجُورَةٍ لِلْحِمَايَةِ.",
+      },
+      {
+        context: "Anatomy",
+        en: "Crabs possess a hard protective exoskeleton and strong pincers used for defense and feeding.",
+        ar: "تَمْتَلِكُ السَّرَطَانَاتُ هَيْكَلًا خَارِجِيًّا صُلْبًا وَكَلَالَاتٍ قَوِيَّةً لِلدِّفَاعِ وَالتَّغَذِّي.",
+      },
+    ],
+    exampleSentence:
+      "A sandy ghost crab scuttled sideways into its subterranean burrow as our footsteps approached.",
+    exampleArabic:
+      "رَكَضَ سَرَطَانُ الشَّاطِئِ جَانِبِيًّا إِلَى جُحْرِهِ تَحْتَ الرِّمَالِ مَعَ اقْتِرَابِ خُطُوَاتِنَا.",
+  },
+  starfish: {
+    id: "starfish",
+    arabic: "نَجْمُ البَحْر (نَجْمِيَّةُ البَحْر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈstɑːrfɪʃ",
+    pronunciationTip: "Pronounce 'STAR-fish' (/ˈstɑːr.fɪʃ/).",
+    collocations: [
+      "orange starfish",
+      "five-armed starfish",
+      "starfish in a tide pool",
+      "starfish clinging to rock",
+      "sea star",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "cling to",
+        meaning: "grip firmly onto underwater rock surface with tube feet",
+        arabic: "يَتَشَبَّثُ بِالصَّخْرِ بِأَقْدَامِهِ الأُنْبُوبِيَّة",
+        example: "The bright purple starfish clung tightly to the wet granite boulder.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Marine Biology",
+        en: "A vibrant orange five-armed starfish adhered to the submerged rocks using hundreds of suction tube feet.",
+        ar: "الْتَصَقَ نَجْمُ بَحْرٍ بُرْتُقَالِيٌّ ذُو خَمْسَةِ أَذْرُعٍ بِالصُّخُورِ بِاسْتِخْدَامِ أَقْدَامِهِ الأُنْبُوبِيَّةِ.",
+      },
+      {
+        context: "Regeneration Ability",
+        en: "Starfish have the remarkable biological ability to regenerate lost arms after surviving predator attacks.",
+        ar: "يَمْتَلِكُ نَجْمُ البَحْرِ قُدْرَةً بَيُولُوجِيَّةً مُذْهِلَةً عَلَى تَجْدِيدِ أَذْرُعِهِ المَفْقُودَةِ.",
+      },
+      {
+        context: "Tide Pool Observation",
+        en: "Children gently admired the bumpy texture of a live sea star before returning it to the pool.",
+        ar: "تَأَمَّلَ الأَطْفَالُ بِلُطْفٍ مَلْمَسَ نَجْمِ البَحْرِ قَبْلَ إِعَادَتِهِ بِأَمَانٍ إِلَى البِرْكَةِ.",
+      },
+    ],
+    exampleSentence:
+      "A vibrant orange five-armed starfish adhered to the submerged rocks using hundreds of suction tube feet.",
+    exampleArabic:
+      "الْتَصَقَ نَجْمُ بَحْرٍ بُرْتُقَالِيٌّ ذُو خَمْسَةِ أَذْرُعٍ بِالصُّخُورِ بِاسْتِخْدَامِ أَقْدَامِهِ الأُنْبُوبِيَّةِ.",
+  },
+  jellyfish: {
+    id: "jellyfish",
+    arabic: "قِنْدِيلُ البَحْر",
+    partOfSpeech: "noun",
+    phonetic: "ˈdʒɛlifɪʃ",
+    pronunciationTip: "Pronounce 'JEL-ee-fish' (/ˈdʒɛl.i.fɪʃ/).",
+    collocations: [
+      "translucent jellyfish",
+      "jellyfish sting",
+      "swarm of jellyfish",
+      "pulsing jellyfish",
+      "moon jellyfish",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "drift with",
+        meaning: "float passively guided by ocean currents",
+        arabic: "يَنْجَرِفُ مَعَ التَّيَّارَاتِ المَائِيَّة",
+        example: "A translucent moon jellyfish drifted gently with the warm shore current.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Ocean Invertebrate",
+        en: "A translucent moon jellyfish pulsed rhythmically as it drifted through clear coastal waters.",
+        ar: "نَبَضَ قِنْدِيلُ البَحْرِ الشَّفَّافُ بِإِيقَاعٍ مُنْتَظَمٍ بَيْنَمَا انْجَرَفَ فِي المِيَاهِ الصَّافِيَةِ.",
+      },
+      {
+        context: "Beach Warning",
+        en: "Lifeguards raised a purple flag to warn swimmers about a seasonal influx of stinging jellyfish.",
+        ar: "رَفَعَ المُنْقِذُونَ عَلَمًا بَنَفْسَجِيًّا لِتَحْذِيرِ السَّابِحِينَ مِنْ قَنَادِيلِ البَحْرِ اللَّادِغَةِ.",
+      },
+      {
+        context: "Aquarium Exhibit",
+        en: "Illuminated by blue LED lights, the floating jellyfish exhibit created a mesmerizing hypnotic display.",
+        ar: "خَلَقَ مَعْرِضُ قَنَادِيلِ البَحْرِ المُضَاءَةِ مَشْهَدًا سَاحِرًا يَأْسِرُ النَّاظِرِينَ.",
+      },
+    ],
+    exampleSentence:
+      "A translucent moon jellyfish pulsed rhythmically as it drifted through clear coastal waters.",
+    exampleArabic:
+      "نَبَضَ قِنْدِيلُ البَحْرِ الشَّفَّافُ بِإِيقَاعٍ مُنْتَظَمٍ بَيْنَمَا انْجَرَفَ فِي المِيَاهِ الصَّافِيَةِ.",
+  },
+  dolphin: {
+    id: "dolphin",
+    arabic: "دُلْفِين (دَلْفِين / حَيَوَانٌ بَحْرِيٌّ ثَدْيِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdɒlfɪn",
+    pronunciationTip: "Pronounce 'DOL-fin' (/ˈdɒl.fɪn/) or 'DAHL-fin' (/ˈdɑːl.fɪn/).",
+    collocations: [
+      "pod of dolphins",
+      "bottlenose dolphin",
+      "dolphin leaping from water",
+      "playful dolphins",
+      "dolphin watching",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "leap out of",
+        meaning: "jump high above the water surface in acrobatic arc",
+        arabic: "يَقْفِزُ عَالِيًا خَارِجَ المَاءِ",
+        example:
+          "A playful bottlenose dolphin leaped out of the turquoise waves alongside our boat.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Marine Sighting",
+        en: "A pod of wild dolphins rode the bow waves of our ferry, jumping gracefully into the air.",
+        ar: "رَكِبَ سِرْبٌ مِنَ الدَّلَافِينِ أَمْوَاجَ المُقَدِّمَةِ لِعَبَّارَتِنَا قَافِزًا بِرَشَاقَةٍ فِي الهَوَاءِ.",
+      },
+      {
+        context: "Animal Intelligence",
+        en: "Dolphins utilize complex echolocation clicks and whistles to navigate murky waters and communicate.",
+        ar: "تَسْتَخْدِمُ الدَّلَافِينُ تَحْدِيدَ المَوْقِعِ بِالصَّدَى وَالصَّفِيرَ لِلتَّوَاصُلِ وَالمِلَاحَةِ.",
+      },
+      {
+        context: "Coastal Tourism",
+        en: "Early morning dolphin-watching cruises are a major ecotourism attraction along coastal islands.",
+        ar: "تُعَدُّ رِحْلَاتُ مُرَاقَبَةِ الدَّلَافِينِ الصَّبَاحِيَّةِ جَاذِبًا سِيَاحِيًّا بِيئِيًّا رَئِيسِيًّا.",
+      },
+    ],
+    exampleSentence:
+      "A pod of wild dolphins rode the bow waves of our ferry, jumping gracefully into the air.",
+    exampleArabic:
+      "رَكِبَ سِرْبٌ مِنَ الدَّلَافِينِ أَمْوَاجَ المُقَدِّمَةِ لِعَبَّارَتِنَا قَافِزًا بِرَشَاقَةٍ فِي الهَوَاءِ.",
+  },
+  "sea-turtle": {
+    id: "sea-turtle",
+    arabic: "سُلَحْفَاةٌ بَحْرِيَّة (تِرْسَة / سُلَحْفَاةُ البَحْر)",
+    partOfSpeech: "noun",
+    phonetic: "siː ˈtɜːrtəl",
+    pronunciationTip: "Pronounce 'SEE ter-tul' (/siː ˈtɜːr.təl/).",
+    collocations: [
+      "green sea turtle",
+      "loggerhead sea turtle",
+      "sea turtle nesting",
+      "sea turtle hatchlings",
+      "protect sea turtles",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "crawl up",
+        meaning: "drag body slowly onto sandy beach above tide line",
+        arabic: "تَزْحَفُ صَاعِدَةً عَلَى الرِّمَال",
+        example: "Female turtles crawl up the dark beach at night to lay eggs in deep sand pits.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Reef Wildlife",
+        en: "While snorkeling near the reef, we swam alongside a gentle green sea turtle gliding over corals.",
+        ar: "أَثْنَاءَ الغَوْصِ السَّطْحِيِّ، سَبَحْنَا بِجِوَارِ سُلَحْفَاةٍ بَحْرِيَّةٍ خَضْرَاءَ تَنْزَلِقُ فَوْقَ المَرْجَانِ.",
+      },
+      {
+        context: "Nesting Season",
+        en: "Conservation volunteers patrol beaches at night to protect vulnerable sea turtle nests from poachers.",
+        ar: "يَحْرُسُ المُتَطَوِّعُونَ الشَّوَاطِئَ لَيْلًا لِحِمَايَةِ أَعْشَاشِ السَّلَاحِفِ البَحْرِيَّةِ.",
+      },
+      {
+        context: "Hatchling Journey",
+        en: "Tiny sea turtle hatchlings emerge from nests and scramble toward the moonlit ocean foam.",
+        ar: "تَخْرُجُ صِغَارُ السَّلَاحِفِ مِنْ أَعْشَاشِهَا وَتَرْكُضُ نَحْوَ أَمْوَاجِ البَحْرِ المُضَاءَةِ بِالقَمَرِ.",
+      },
+    ],
+    exampleSentence:
+      "While snorkeling near the reef, we swam alongside a gentle green sea turtle gliding over corals.",
+    exampleArabic:
+      "أَثْنَاءَ الغَوْصِ السَّطْحِيِّ، سَبَحْنَا بِجِوَارِ سُلَحْفَاةٍ بَحْرِيَّةٍ خَضْرَاءَ تَنْزَلِقُ فَوْقَ المَرْجَانِ.",
+  },
+  pelican: {
+    id: "pelican",
+    arabic: "بَجَعَة (طَائِرُ البَجَعِ البَحْرِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpɛlɪkən",
+    pronunciationTip: "Pronounce 'PEL-ih-kun' (/ˈpɛl.ɪ.kən/).",
+    collocations: [
+      "brown pelican",
+      "pelican beak",
+      "pelican diving for fish",
+      "flock of pelicans",
+      "pelican pouch",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "plunge into",
+        meaning: "dive headfirst from sky into sea waters",
+        arabic: "يَنْقَضُّ غَائِصًا فِي المَاءِ",
+        example:
+          "The brown pelican plunged into the waves from thirty feet high to scoop up baitfish.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Coastal Birds",
+        en: "A line of brown pelicans skimmed just inches above the ocean waves in aerodynamic formation.",
+        ar: "طَارَتْ مَجْمُوعَةٌ مِنْ طُيُورِ البَجَعِ عَلَى ارْتِفَاعِ بُوصَاتٍ فَوْقَ الأَمْوَاجِ فِي تَشْكِيلٍ هَنْدَسِيٍّ.",
+      },
+      {
+        context: "Hunting Method",
+        en: "The pelican uses its expandable throat pouch like a net to scoop up fish and drain seawater.",
+        ar: "يَسْتَخْدِمُ البَجَعُ جِرَابَ حَلْقِهِ المَرِنَ كَشَبَكَةٍ لِغَرْفِ الأَسْمَاكِ وَتَصْفِيَةِ المَاءِ.",
+      },
+      {
+        context: "Pier Perch",
+        en: "A patient pelican perched atop a wooden piling, watching fishermen clean their morning catch.",
+        ar: "وَقَفَ بَجَعٌ صَبُورٌ فَوْقَ عَمُودٍ خَشَبِيٍّ يُرَاقِبُ الصَّيَّادِينَ وَهُمْ يُنَظِّفُونَ صَيْدَهُمْ.",
+      },
+    ],
+    exampleSentence:
+      "A line of brown pelicans skimmed just inches above the ocean waves in aerodynamic formation.",
+    exampleArabic:
+      "طَارَتْ مَجْمُوعَةٌ مِنْ طُيُورِ البَجَعِ عَلَى ارْتِفَاعِ بُوصَاتٍ فَوْقَ الأَمْوَاجِ فِي تَشْكِيلٍ هَنْدَسِيٍّ.",
+  },
+  seahorse: {
+    id: "seahorse",
+    arabic: "فَرَسُ البَحْر (حِصَانُ البَحْر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsiːhɔːrs",
+    pronunciationTip: "Pronounce 'SEE-hors' (/ˈsiː.hɔːrs/).",
+    collocations: [
+      "tiny seahorse",
+      "seahorse tail",
+      "seahorse in coral",
+      "seahorse habitat",
+      "yellow seahorse",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wrap around",
+        meaning: "curl prehensile tail securely around aquatic stalk",
+        arabic: "يَلْتَفُّ حَوْلَ عُشْبِ البَحْر",
+        example:
+          "The delicate yellow seahorse wrapped its prehensile tail around a green seagrass stem.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Unique Marine Fish",
+        en: "The tiny yellow seahorse anchored itself to a stalk of swaying seagrass using its prehensile tail.",
+        ar: "ثَبَّتَ فَرَسُ البَحْرِ الأَصْفَرُ الصَّغِيرُ نَفْسَهُ بِسَاقِ عُشْبٍ بَحْرِيٍّ بِاسْتِخْدَامِ ذَيْلِهِ.",
+      },
+      {
+        context: "Biology",
+        en: "In seahorse reproduction, the male carries fertilized eggs in a specialized brood pouch until birth.",
+        ar: "فِي تَكَاثُرِ فَرَسِ البَحْرِ، يَحْمِلُ الذَّكَرُ البَيْضَ المُلَقَّحَ فِي جِرَابٍ خَاصٍّ حَتَّى الوِلَادَةِ.",
+      },
+      {
+        context: "Camouflage",
+        en: "Exceptional camouflage allows seahorses to blend seamlessly with surrounding soft corals and seaweeds.",
+        ar: "يُتِيحُ التَّمْوِيهُ الاسْتِثْنَائِيُّ لِفَرَسِ البَحْرِ الاندِمَاجَ التَّامَّ مَعَ المَرْجَانِ وَالأَعْشَابِ.",
+      },
+    ],
+    exampleSentence:
+      "The tiny yellow seahorse anchored itself to a stalk of swaying seagrass using its prehensile tail.",
+    exampleArabic:
+      "ثَبَّتَ فَرَسُ البَحْرِ الأَصْفَرُ الصَّغِيرُ نَفْسَهُ بِسَاقِ عُشْبٍ بَحْرِيٍّ بِاسْتِخْدَامِ ذَيْلِهِ.",
+  },
+  clam: {
+    id: "clam",
+    arabic: "مَحَار (مَحَارَة / رَخَوِيَّاتٌ ذَاتُ مِصْرَاعَيْن)",
+    partOfSpeech: "noun",
+    phonetic: "klæm",
+    pronunciationTip: "Short 'a' sound /æ/: 'KLAM' (/klæm/).",
+    collocations: ["giant clam", "clam shell", "fresh clams", "dig for clams", "clam chowder"],
+    phrasalVerbs: [
+      {
+        phrase: "clam up",
+        meaning: "close shell valves tightly shut against threat",
+        arabic: "يُغْلِقُ صَدَفَتَهُ بِإِحْكَام",
+        example: "The bivalve clammed up tightly as soon as a shadow passed overhead.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bivalve Mollusk",
+        en: "Digging in the wet tidal mudflats at low tide uncovered a bucketful of fresh hard-shell clams.",
+        ar: "أَسْفَرَ الحَفْرُ فِي الطِّينِ عِنْدَ الجَزْرِ عَنْ جَمْعِ دَلْوٍ مَلِيءٍ بِمَحَارِ البَحْرِ الطَّازَجِ.",
+      },
+      {
+        context: "Tropical Reef Wonder",
+        en: "Giant clams with iridescent blue and green mantles grow up to four feet wide on tropical reefs.",
+        ar: "يَنْمُو المَحَارُ العِمْلَاقُ ذُو الأَلْوَانِ الزَّرْقَاءِ وَالخَضْرَاءِ اللَّامِعَةِ لِيَصِلَ إِلى أَرْبَعَةِ أَقْدَامٍ.",
+      },
+      {
+        context: "Culinary Favorite",
+        en: "Steamed clams served with garlic butter and herbs are a quintessential coastal dinner delicacy.",
+        ar: "يُعَدُّ المَحَارُ المَطْبُوخُ عَلَى البُخَارِ مَعَ زُبْدَةِ الثُّومِ وَالأَعْشَابِ وَجْبَةً سَاحِلِيَّةً لَذِيذَةً.",
+      },
+    ],
+    exampleSentence:
+      "Digging in the wet tidal mudflats at low tide uncovered a bucketful of fresh hard-shell clams.",
+    exampleArabic:
+      "أَسْفَرَ الحَفْرُ فِي الطِّينِ عِنْدَ الجَزْرِ عَنْ جَمْعِ دَلْوٍ مَلِيءٍ بِمَحَارِ البَحْرِ الطَّازَجِ.",
+  },
+  coral: {
+    id: "coral",
+    arabic: "مَرْجَان (حَيَوَانَاتٌ مَرْجَانِيَّة / شِعَابٌ مَرْجَانِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkɒrəl",
+    pronunciationTip: "Pronounce 'KOR-ul' (/ˈkɒr.əl/) or 'KAWR-ul' (/ˈkɔːr.əl/).",
+    collocations: ["coral reef", "colorful coral", "brain coral", "soft coral", "coral colony"],
+    phrasalVerbs: [
+      {
+        phrase: "build into",
+        meaning: "secrete calcium carbonate to form undersea structures",
+        arabic: "يُشَكِّلُ هَيَاكِلَ مَرْجَانِيَّةً ضَخْمَة",
+        example:
+          "Tiny polyps secrete minerals that build into massive undersea reef structures over centuries.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Marine Organisms",
+        en: "Corals are colonies of tiny invertebrate polyps that secrete hard calcium carbonate skeletons.",
+        ar: "المَرْجَانُ عِبَارَةٌ عَنْ مُسْتَعْمَرَاتٍ مِنْ كَائِنَاتٍ دَقِيقَةٍ تُفْرِزُ هَيَاكِلَ كِلْسِيَّةً صُلْبَةً.",
+      },
+      {
+        context: "Underwater Beauty",
+        en: "Snorkelers marveled at the dazzling kaleidoscope of pink, gold, and purple coral formations.",
+        ar: "انْبَهَرَ الغَوَّاصُونَ بِتَشْكِيلَاتِ المَرْجَانِ الوَرْدِيَّةِ وَالذَّهَبِيَّةِ وَالبَنَفْسَجِيَّةِ الخَلَّابَةِ.",
+      },
+      {
+        context: "Environmental Conservation",
+        en: "Protecting live coral from physical boat anchor damage preserves essential fish breeding habitats.",
+        ar: "تَحْمِي حِمَايَةُ المَرْجَانِ مِنْ خُدُوشِ مَرَاسِي القَوَارِبِ مَنَاطِقَ تَكَاثُرِ الأَسْمَاكِ.",
+      },
+    ],
+    exampleSentence:
+      "Corals are colonies of tiny invertebrate polyps that secrete hard calcium carbonate skeletons.",
+    exampleArabic:
+      "المَرْجَانُ عِبَارَةٌ عَنْ مُسْتَعْمَرَاتٍ مِنْ كَائِنَاتٍ دَقِيقَةٍ تُفْرِزُ هَيَاكِلَ كِلْسِيَّةً صُلْبَةً.",
+  },
+  seaweed: {
+    id: "seaweed",
+    arabic: "عُشْبُ البَحْر (طَحَالِبُ بَحْرِيَّة / أَعْشَابُ البَحْر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsiːwiːd",
+    pronunciationTip: "Pronounce 'SEE-weed' (/ˈsiː.wiːd/).",
+    collocations: [
+      "tangled seaweed",
+      "kelp and seaweed",
+      "green seaweed",
+      "wash up seaweed",
+      "seaweed salad",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "drift on",
+        meaning: "float across swells in dense tangled mats",
+        arabic: "يَطْفُو فِي عُرْضِ المَاء",
+        example:
+          "Patches of golden sargassum seaweed drifted on the ocean surface toward the shore.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Marine Plants",
+        en: "Tangled strands of dark green kelp and seaweed washed onto the shoreline after the coastal gale.",
+        ar: "جَرَفَتِ الرِّيَاحُ أَعْوَادًا مِنْ طَحَالِبِ الكِلْبِ وَأَعْشَابِ البَحْرِ الدَّاكِنَةِ إِلَى الشَّاطِئِ.",
+      },
+      {
+        context: "Underwater Forests",
+        en: "Giant kelp seaweed grows up to thirty meters tall, creating underwater forests rich in marine life.",
+        ar: "تَنْمُو أَعْشَابُ البَحْرِ العِمْلَاقَةُ لِثَلَاثِينَ مِتْرًا صَانِعَةً غَابَاتٍ تَحْتَ المَاءِ غَنِيَّةً بِالحَيَاةِ.",
+      },
+      {
+        context: "Nutritional Value",
+        en: "Edible varieties of seaweed like nori and wakame are packed with iodine, minerals, and antioxidants.",
+        ar: "تَمْتَلِئُ الأَصْنَافُ المَأْكُولَةُ مِنْ أَعْشَابِ البَحْرِ كَالنُّورِي بِاليُودِ وَالمَعَادِنِ.",
+      },
+    ],
+    exampleSentence:
+      "Tangled strands of dark green kelp and seaweed washed onto the shoreline after the coastal gale.",
+    exampleArabic:
+      "جَرَفَتِ الرِّيَاحُ أَعْوَادًا مِنْ طَحَالِبِ الكِلْبِ وَأَعْشَابِ البَحْرِ الدَّاكِنَةِ إِلَى الشَّاطِئِ.",
+  },
+  "sea-urchin": {
+    id: "sea-urchin",
+    arabic: "قُنْفُذُ البَحْر",
+    partOfSpeech: "noun",
+    phonetic: "siː ˈɜːrtʃɪn",
+    pronunciationTip: "Pronounce 'SEE er-chin' (/siː ˈɜːr.tʃɪn/).",
+    collocations: [
+      "spiky sea urchin",
+      "black sea urchin",
+      "sea urchin spines",
+      "sea urchin in tide pool",
+      "watch out for sea urchins",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "lodge between",
+        meaning: "settle tightly into narrow rock crevices",
+        arabic: "يَنْحَصِرُ بَيْنَ شُقُوقِ الصُّخُور",
+        example: "Spiny black sea urchins lodged between rock crevices to avoid strong wave surge.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Echinoderm",
+        en: "A spiky black sea urchin was nestled inside a rocky crevice, bristling with sharp protective spines.",
+        ar: "اسْتَقَرَّ قُنْفُذُ بَحْرٍ أَسْوَدُ شَوْكِيٌّ دَاخِلَ شَقٍّ صَخْرِيٍّ مُحَاطًا بِأَشْوَاكٍ حَادَّةٍ.",
+      },
+      {
+        context: "Beach Safety",
+        en: "Wearing water shoes protects swimmers' feet from stepping accidentally on sharp sea urchins.",
+        ar: "يَحْمِي ارْتِدَاءُ أَحْذِيَةِ المَاءِ أَقْدَامَ السَّابِحِينَ مِنَ الدَّوْسِ عَلَى قَنَافِذِ البَحْرِ.",
+      },
+      {
+        context: "Reef Ecology",
+        en: "Sea urchins graze on algae, playing a vital role in preventing seaweed from overgrowing coral reefs.",
+        ar: "تَتَغَذَّى قَنَافِذُ البَحْرِ عَلَى الطَّحَالِبِ، مِمَّا يَمْنَعُ طَغَيَانَهَا عَلَى الشِّعَابِ المَرْجَانِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "A spiky black sea urchin was nestled inside a rocky crevice, bristling with sharp protective spines.",
+    exampleArabic:
+      "اسْتَقَرَّ قُنْفُذُ بَحْرٍ أَسْوَدُ شَوْكِيٌّ دَاخِلَ شَقٍّ صَخْرِيٍّ مُحَاطًا بِأَشْوَاكٍ حَادَّةٍ.",
+  },
+  lifeguard: {
+    id: "lifeguard",
+    arabic: "مُنْقِذُ الشَّاطِئ (حَارِسُ الإِنْقَاذ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈlaɪfɡɑːrd",
+    pronunciationTip: "Pronounce 'LYF-gard' (/ˈlaɪf.ɡɑːrd/).",
+    collocations: [
+      "certified lifeguard",
+      "lifeguard on duty",
+      "lifeguard station",
+      "lifeguard whistle",
+      "lifeguard rescue",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "keep watch",
+        meaning: "monitor swimmers vigilantly for signs of distress",
+        arabic: "يُرَاقِبُ بِانْتِبَاهٍ أَمَانَ السَّابِحِين",
+        example:
+          "The alert lifeguard kept watch over the crowded surf with high-powered binoculars.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Safety",
+        en: "The vigilant lifeguard scanned the breaking waves through binoculars to ensure all swimmers remained safe.",
+        ar: "مَسَحَ المُنْقِذُ اليَقِظُ الأَمْوَاجَ بِالمِنْظَارِ لِلتَّأَكُّدِ مِنْ سَلَامَةِ جَمِيعِ السَّابِحِينَ.",
+      },
+      {
+        context: "Water Rescue",
+        en: "When a swimmer struggled against a rip current, the lifeguard sprinted with a rescue buoy to help.",
+        ar: "عِنْدَمَا وَاجَهَ سَبَّاحٌ تَيَّارًا سَاحِبًا، انْطَلَقَ المُنْقِذُ مَعَ عَوَّامَةِ الإِنْقَاذِ لِمُسَاعَدَتِهِ.",
+      },
+      {
+        context: "Flag Signals",
+        en: "Lifeguards blow their whistles to alert beachgoers when they wander outside designated safe swimming areas.",
+        ar: "يُطْلِقُ حُرَّاسُ الإِنْقَاذِ صَافِرَاتِهِمْ لِتَنْبِيهِ رُوَّادِ الشَّاطِئِ إِذَا خَرَجُوا عَنْ مِنْطَقَةِ الأَمَانِ.",
+      },
+    ],
+    exampleSentence:
+      "The vigilant lifeguard scanned the breaking waves through binoculars to ensure all swimmers remained safe.",
+    exampleArabic:
+      "مَسَحَ المُنْقِذُ اليَقِظُ الأَمْوَاجَ بِالمِنْظَارِ لِلتَّأَكُّدِ مِنْ سَلَامَةِ جَمِيعِ السَّابِحِينَ.",
+  },
+  "lifeguard-tower": {
+    id: "lifeguard-tower",
+    arabic: "بُرْجُ الإِنْقَاذ (بُرْجُ المُرَاقَبَةِ عَلَى الشَّاطِئ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈlaɪfɡɑːrd ˈtaʊər",
+    pronunciationTip: "Pronounce 'LYF-gard TOW-er' (/ˈlaɪf.ɡɑːrd ˈtaʊ.ər/).",
+    collocations: [
+      "wooden lifeguard tower",
+      "climb the lifeguard tower",
+      "lifeguard tower station",
+      "meet at the lifeguard tower",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "look out from",
+        meaning: "survey surroundings from elevated vantage post",
+        arabic: "يُشْرِفُ عَلَى الشَّاطِئِ مِنْ مَوْقِعٍ مُرْتَفِع",
+        example: "Guards looked out from the tall wooden tower to track rip currents.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Landmark",
+        en: "An elevated white-and-red wooden lifeguard tower stood tall on the sand, serving as a lookout post.",
+        ar: "ارْتَفَعَ بُرْجُ إِنْقَاذٍ خَشَبِيٌّ أَبْيَضُ وَأَحْمَرُ عَلَى الرِّمَالِ لِيَكُونَ نُقْطَةَ مُرَاقَبَةٍ.",
+      },
+      {
+        context: "Meeting Point",
+        en: "Families often tell children to use numbered lifeguard towers as recognizable meeting landmarks if lost.",
+        ar: "تُرْشِدُ العَائِلَاتُ الأَطْفَالَ لِاسْتِخْدَامِ أَبْرَاجِ الإِنْقَاذِ المُرَقَّمَةِ كَنِقَاطِ الْتِقَاءٍ.",
+      },
+      {
+        context: "Equipment Hub",
+        en: "First aid kits, megaphones, rescue boards, and warning flags are kept stored inside the lifeguard tower.",
+        ar: "تُحْفَظُ حَقَائِبُ الإِسْعَافِ وَمُكَبِّرَاتُ الصَّوْتِ وَأَلْوَاحُ الإِنْقَاذِ دَاخِلَ بُرْجِ المُرَاقَبَةِ.",
+      },
+    ],
+    exampleSentence:
+      "An elevated white-and-red wooden lifeguard tower stood tall on the sand, serving as a lookout post.",
+    exampleArabic:
+      "ارْتَفَعَ بُرْجُ إِنْقَاذٍ خَشَبِيٌّ أَبْيَضُ وَأَحْمَرُ عَلَى الرِّمَالِ لِيَكُونَ نُقْطَةَ مُرَاقَبَةٍ.",
+  },
+  "warning-flag": {
+    id: "warning-flag",
+    arabic: "عَلَمُ التَّحْذِير (عَلَمُ التَّنْبِيهِ مِنَ المَخَاطِرِ البَحْرِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɔːrnɪŋ flæɡ",
+    pronunciationTip: "Pronounce 'WAR-ning flag' (/ˈwɔːr.nɪŋ flæɡ/).",
+    collocations: [
+      "red warning flag",
+      "beach warning flags",
+      "raise a warning flag",
+      "yellow caution flag",
+      "warning flag system",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "fly over",
+        meaning: "hoist fabric banner atop a flagpole",
+        arabic: "يَرْفَعُ العَلَمَ التَّحْذِيرِيَّ فِي الأَعْلَى",
+        example: "A red banner flew over the lifeguard post, warning of dangerous high surf.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Condition Signals",
+        en: "Lifeguards hoisted a bright red warning flag to notify beachgoers of hazardous rip currents and strong surf.",
+        ar: "رَفَعَ المُنْقِذُونَ عَلَمَ تَحْذِيرٍ أَحْمَرَ زَاهِيًا لِتَنْبِيهِ الرُّوَّادِ مِنَ التَّيَّارَاتِ الخَطِرَةِ.",
+      },
+      {
+        context: "Flag Code",
+        en: "A yellow flag indicates moderate sea conditions, while double red flags mean the water is completely closed.",
+        ar: "يُشِيرُ العَلَمُ الأَصْفَرُ إِلَى بَحْرٍ مُتَوَسِّطِ الخُطُورَةِ، بَيْنَمَا يَعْنِي العَلَمُ الأَحْمَرُ المُزْدَوَجُ إِغْلَاقَ الشَّاطِئِ.",
+      },
+      {
+        context: "Wildlife Alert",
+        en: "A purple warning flag indicates the presence of dangerous marine pests such as stinging jellyfish.",
+        ar: "يَدُلُّ العَلَمُ التَّحْذِيرِيُّ البَنَفْسَجِيُّ عَلَى وُجُودِ كَائِنَاتٍ بَحْرِيَّةٍ خَطِرَةٍ كَقَنَادِيلِ البَحْرِ.",
+      },
+    ],
+    exampleSentence:
+      "Lifeguards hoisted a bright red warning flag to notify beachgoers of hazardous rip currents and strong surf.",
+    exampleArabic:
+      "رَفَعَ المُنْقِذُونَ عَلَمَ تَحْذِيرٍ أَحْمَرَ زَاهِيًا لِتَنْبِيهِ الرُّوَّادِ مِنَ التَّيَّارَاتِ الخَطِرَةِ.",
+  },
+  shower: {
+    id: "shower",
+    arabic: "دُشُّ الشَّاطِئ (مِرَشَّةُ الاسْتِحْمَامِ السَّاحِلِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈʃaʊər",
+    pronunciationTip: "Pronounce 'SHOU-er' (/ˈʃaʊ.ər/).",
+    collocations: [
+      "beach shower",
+      "outdoor shower",
+      "rinse off in the shower",
+      "cold water shower",
+      "public beach shower",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "rinse off",
+        meaning: "wash away salt crystals and sand particles with fresh water",
+        arabic: "يَشْطُفُ الرِّمَالَ وَالأَمْلَاح",
+        example: "He stood under the outdoor beach shower to rinse off sticky saltwater and sand.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Coastal Facilities",
+        en: "Swimmers lined up at the outdoor beach shower to rinse sand and saltwater from their skin and hair.",
+        ar: "اصْطَفَّ السَّابِحُونَ عِنْدَ دُشِّ الشَّاطِئِ الخَارِجِيِّ لِغَسْلِ الرِّمَالِ وَالمِلْحِ عَنْ أَجْسَامِهِمْ.",
+      },
+      {
+        context: "Foot Wash Post",
+        en: "Convenient low foot showers near the boardwalk ramp allow visitors to clean their feet before getting into cars.",
+        ar: "تُتِيحُ مِرَشَّاتُ القَدَمِ المُنْخَفِضَةُ قُرْبَ المَمْشَى لِلزُّوَّارِ غَسْلَ أَرْجُلِهِمْ قَبْلَ رُكُوبِ السَّيَّارَاتِ.",
+      },
+      {
+        context: "Freshwater Rinse",
+        en: "A quick rinse under the freshwater shower prevents skin irritation caused by dried ocean brine.",
+        ar: "يَمْنَعُ الشَّطْفُ السَّرِيعُ تَحْتَ المَاءِ العَذْبِ تَهَيُّجَ الجِلْدِ النَّاتِجَ عَنْ مِلْحِ البَحْرِ.",
+      },
+    ],
+    exampleSentence:
+      "Swimmers lined up at the outdoor beach shower to rinse sand and saltwater from their skin and hair.",
+    exampleArabic:
+      "اصْطَفَّ السَّابِحُونَ عِنْدَ دُشِّ الشَّاطِئِ الخَارِجِيِّ لِغَسْلِ الرِّمَالِ وَالمِلْحِ عَنْ أَجْسَامِهِمْ.",
+  },
+  "changing-room": {
+    id: "changing-room",
+    arabic: "غُرْفَةُ تَبْدِيلِ المَلَابِس (كَبِينَةُ تَبْدِيلِ المَلَابِس)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtʃeɪndʒɪŋ ruːm",
+    pronunciationTip: "Pronounce 'CHAYN-jing room' (/ˈtʃeɪn.dʒɪŋ ruːm/).",
+    collocations: [
+      "beach changing room",
+      "public changing room",
+      "private changing cabin",
+      "use the changing room",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "slip into",
+        meaning: "change quickly into dry casual clothes",
+        arabic: "يَرْتَدِي مَلَابِسَهُ الجَافَّة",
+        example: "She slipped into a dry sundress inside the beach changing room.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Amenities",
+        en: "Clean wooden changing rooms near the boardwalk offer privacy for visitors switching in and out of swimsuits.",
+        ar: "تُوَفِّرُ غُرَفُ تَبْدِيلِ المَلَابِسِ الخَشَبِيَّةُ خُصُوصِيَّةً لِلزُّوَّارِ لِتَبْدِيلِ مَلَابِسِ السِّبَاحَةِ.",
+      },
+      {
+        context: "Bathhouse Stalls",
+        en: "The coastal bathhouse features ventilated changing rooms equipped with benches, hooks, and lockers.",
+        ar: "يَتَضَمَّنُ مَرْفَقُ الشَّاطِئِ غُرَفَ تَبْدِيلٍ مُجَهَّزَةً بِمَقَاعِدَ وَعَلَّاقَاتٍ وَخَزَائِنَ.",
+      },
+      {
+        context: "Post-Beach Preparation",
+        en: "After drying off, they headed to the changing room to put on comfortable evening clothes for dinner.",
+        ar: "بَعْدَ التَّجْفِيفِ، تَوَجَّهُوا إِلَى غُرْفَةِ التَّبْدِيلِ لِارْتِدَاءِ مَلَابِسَ مُرِيحَةٍ لِوَجْبَةِ العَشَاءِ.",
+      },
+    ],
+    exampleSentence:
+      "Clean wooden changing rooms near the boardwalk offer privacy for visitors switching in and out of swimsuits.",
+    exampleArabic:
+      "تُوَفِّرُ غُرَفُ تَبْدِيلِ المَلَابِسِ الخَشَبِيَّةُ خُصُوصِيَّةً لِلزُّوَّارِ لِتَبْدِيلِ مَلَابِسِ السِّبَاحَةِ.",
+  },
+  boardwalk: {
+    id: "boardwalk",
+    arabic: "مَمْشَى خَشَبِيّ (مَمْشَى الشَّاطِئِ الخَشَبِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbɔːrdwɔːk",
+    pronunciationTip: "Pronounce 'BORD-wawk' (/ˈbɔːrd.wɔːk/).",
+    collocations: [
+      "wooden boardwalk",
+      "stroll along the boardwalk",
+      "oceanfront boardwalk",
+      "boardwalk shops",
+      "boardwalk promenade",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "stroll down",
+        meaning: "walk leisurely along elevated wooden plankway",
+        arabic: "يَتَمَشَّى عَلَى المَمْشَى الخَشَبِيّ",
+        example:
+          "Families strolled down the bustling boardwalk enjoying ice cream cones and ocean breezes.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Coastal Promenade",
+        en: "A wide wooden boardwalk ran along the dunes, lined with ice cream parlors, cafes, and souvenir shops.",
+        ar: "امْتَدَّ مَمْشَى خَشَبِيٌّ عَرِيضٌ بِمُحَاذَاةِ الكَثْبَانِ، مُحَاطًا بِمَحَلَّاتِ الآيْس كْرِيم وَالمَقَاهِي.",
+      },
+      {
+        context: "Accessibility",
+        en: "The smooth boardwalk provides wheelchair and stroller access across the soft sands directly to scenic overlooks.",
+        ar: "يُوَفِّرُ المَمْشَى الخَشَبِيُّ وُصُولًا سَهْلًا لِلْكَرَاسِي المُتَحَرِّكَةِ فَوْقَ الرِّمَالِ إِلَى الإِطْلَالَاتِ.",
+      },
+      {
+        context: "Evening Strolls",
+        en: "Illuminated vintage lamp posts light up the romantic boardwalk for late-night ocean strolls.",
+        ar: "تُضِيءُ أَعْمِدَةُ الإِنَارَةِ الكَلَاسِيكِيَّةُ المَمْشَى الخَشَبِيَّ لِلنُّزْهَاتِ المَسَائِيَّةِ أَمَامَ البَحْرِ.",
+      },
+    ],
+    exampleSentence:
+      "A wide wooden boardwalk ran along the dunes, lined with ice cream parlors, cafes, and souvenir shops.",
+    exampleArabic:
+      "امْتَدَّ مَمْشَى خَشَبِيٌّ عَرِيضٌ بِمُحَاذَاةِ الكَثْبَانِ، مُحَاطًا بِمَحَلَّاتِ الآيْس كْرِيم وَالمَقَاهِي.",
+  },
+  pier: {
+    id: "pier",
+    arabic: "رَصِيفٌ بَحْرِيّ (جِسْرٌ مَمْدُودٌ فِي البَحْر / مَرْسَى)",
+    partOfSpeech: "noun",
+    phonetic: "pɪər",
+    pronunciationTip: "Pronounce 'PEER' (/pɪər/).",
+    collocations: [
+      "wooden pier",
+      "fishing pier",
+      "walk to the end of the pier",
+      "ocean pier",
+      "historic pier",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "extend out into",
+        meaning: "project from land far into open waters",
+        arabic: "يَمْتَدُّ دَاخِلَ مِيَاهِ البَحْر",
+        example: "The historic timber pier extended out into the open sea for a quarter of a mile.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Maritime Structure",
+        en: "The historic wooden pier stretched far out into the ocean, supported by massive barnacle-covered timber pilings.",
+        ar: "امْتَدَّ الرَّصِيفُ البَحْرِيُّ الخَشَبِيُّ التَّارِيخِيُّ بَعِيدًا دَاخِلَ المُحِيطِ عَلَى أَعْمِدَةٍ ضَخْمَةٍ.",
+      },
+      {
+        context: "Fishing Spot",
+        en: "Anglers cast their lines from the railing at the end of the pier where deep-water currents flow.",
+        ar: "أَلْقَى الصَّيَّادُونَ صَنَانِيرَهُمْ مِنْ حَافَّةِ الرَّصِيفِ حَيْثُ تَجْرِي التَّيَّارَاتُ العَمِيقَةُ.",
+      },
+      {
+        context: "Entertainment Hub",
+        en: "The lively amusement pier featured a Ferris wheel, carnival games, and fresh seafood stalls.",
+        ar: "تَضَمَّنَ رَصِيفُ التَّرْفِيهِ الحَيَوِيُّ عَجَلَةً دَوَّارَةً وَأَلْعَابًا وَمَحَلَّاتِ مَأْكُولَاتٍ بَحْرِيَّةٍ.",
+      },
+    ],
+    exampleSentence:
+      "The historic wooden pier stretched far out into the ocean, supported by massive barnacle-covered timber pilings.",
+    exampleArabic:
+      "امْتَدَّ الرَّصِيفُ البَحْرِيُّ الخَشَبِيُّ التَّارِيخِيُّ بَعِيدًا دَاخِلَ المُحِيطِ عَلَى أَعْمِدَةٍ ضَخْمَةٍ.",
+  },
+  "parking-lot": {
+    id: "parking-lot",
+    arabic: "مَوْقِفُ السَّيَّارَات (سَاحَةُ انْتِظَارِ السَّيَّارَات)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpɑːrkɪŋ lɒt",
+    pronunciationTip: "Pronounce 'PAR-king lot' (/ˈpɑːr.kɪŋ lɒt/).",
+    collocations: [
+      "beach parking lot",
+      "crowded parking lot",
+      "park in the parking lot",
+      "paved parking lot",
+      "parking lot entrance",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pull into",
+        meaning: "drive vehicle into a designated parking area",
+        arabic: "يَدْخُلُ بِالسَّيَّارَةِ إِلَى المَوْقِف",
+        example: "We pulled into the beach parking lot early before all spaces were filled.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beach Access",
+        en: "Arriving early ensured we found a convenient shaded space in the main coastal parking lot.",
+        ar: "ضَمَنَ الوُصُولُ البَاكِرُ العُثُورَ عَلَى مَكَانٍ مُظَلَّلٍ فِي مَوْقِفِ سَيَّارَاتِ الشَّاطِئِ الرَّئِيسِيِّ.",
+      },
+      {
+        context: "Unloading Gear",
+        en: "Families unloaded umbrellas, coolers, and surfboards from their car trunks in the parking lot.",
+        ar: "أَفْرَغَتِ العَائِلَاتُ المِظَلَّاتِ وَالمُبَرِّدَاتِ وَأَلْوَاحَ التَّزَلُّجِ مِنْ سَيَّارَاتِهِمْ فِي المَوْقِفِ.",
+      },
+      {
+        context: "Trail Access",
+        en: "A direct wooden ramp links the beach parking lot to the dunes and shoreline boardwalk.",
+        ar: "يَرْبِطُ مَمَرٌّ خَشَبِيٌّ مُبَاشِرٌ مَوْقِفَ السَّيَّارَاتِ بِالكَثْبَانِ الرَّمْلِيَّةِ وَالمَمْشَى السَّاحِلِيِّ.",
+      },
+    ],
+    exampleSentence:
+      "Arriving early ensured we found a convenient shaded space in the main coastal parking lot.",
+    exampleArabic:
+      "ضَمَنَ الوُصُولُ البَاكِرُ العُثُورَ عَلَى مَكَانٍ مُظَلَّلٍ فِي مَوْقِفِ سَيَّارَاتِ الشَّاطِئِ الرَّئِيسِيِّ.",
+  },
 };
 
 /**
