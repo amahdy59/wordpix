@@ -1276,5 +1276,51 @@ export function getOrGenerateStoryBundle(
         explanationArabic: "بحلول نهاية القصة، اكتملت جميع المهام بنجاح وأصبح المكان في أفضل حال.",
       },
     ],
+
+    "airport-story": {
+      id: "airport-story",
+      titleEn: "The Airport Adventure",
+      titleAr: "مُغَامَرَةُ المَطَار",
+      paragraphs: [
+        {
+          en: "We arrive at the airport terminal and print our boarding pass. Then we push the luggage cart to the counter.",
+          ar: "نَصِلُ إِلَى مَبْنَى الرُّكَّابِ فِي المَطَارِ وَنَطْبَعُ بِطَاقَةَ الصُّعُودِ. ثُمَّ نَدْفَعُ عَرَبَةَ الأَمْتِعَةِ إِلَى المَكْتَبِ.",
+        },
+        {
+          en: "Next, we go through the security check and walk to the departure gate. A friendly flight attendant greets us as we board.",
+          ar: "بَعْدَ ذَلِكَ، نَمُرُّ عَبْرَ التَّفْتِيشِ الأَمْنِيِّ وَنَمْشِي إِلَى بَوَّابَةِ المُغَادَرَةِ. يُحَيِّينَا مُضِيفُ طَيَرَانٍ وَدُودٌ عِنْدَ الصُّعُودِ.",
+        },
+      ],
+    },
+    "train-story": {
+      id: "train-story",
+      titleEn: "The Fast Train",
+      titleAr: "القِطَارُ السَّرِيع",
+      paragraphs: [
+        {
+          en: "I buy a pass at the ticket machine and stand on the train platform. Soon, the large locomotive arrives on the railway track.",
+          ar: "أَشْتَرِي تِذْكَرَةً مِنْ آلَةِ التَّذَاكِرِ وَأَقِفُ عَلَى رَصِيفِ القِطَارِ. سُرْعَانَ مَا تَصِلُ القَاطِرَةُ الكَبِيرَةُ عَلَى السِّكَّةِ الحَدِيدِيَّةِ.",
+        },
+        {
+          en: "I show my pass to the train conductor and sit in the passenger car. The commuter train travels quickly across the country.",
+          ar: "أُبْرِزُ تِذْكَرَتِي لِمُحَصِّلِ التَّذَاكِرِ وَأَجْلِسُ فِي عَرَبَةِ الرُّكَّابِ. يُسَافِرُ قِطَارُ الرُّكَّابِ بِسُرْعَةٍ عَبْرَ البِلَادِ.",
+        },
+      ],
+    },
+    "hotel-story": {
+      id: "hotel-story",
+      titleEn: "A Nice Hotel",
+      titleAr: "فُنْدُقٌ جَمِيل",
+      paragraphs: [
+        {
+          en: "We check in at the hotel reception and the bellboy helps with our bags in the hotel lobby. I use my room key to open the door.",
+          ar: "نُسَجِّلُ الدُّخُولَ فِي مَكْتَبِ اسْتِقْبَالِ الفُنْدُقِ وَيُسَاعِدُنَا حَامِلُ الأَمْتِعَةِ فِي حَقَائِبِنَا فِي بَهْوِ الفُنْدُقِ. أَسْتَخْدِمُ مِفْتَاحَ غُرْفَتِي لِفَتْحِ البَابِ.",
+        },
+        {
+          en: "In the morning, we order room service and enjoy the beautiful balcony view. Later, housekeeping cleans the room.",
+          ar: "فِي الصَّبَاحِ، نَطْلُبُ خِدْمَةَ الغُرَفِ وَنَسْتَمْتِعُ بِإِطْلَالَةِ الشُّرْفَةِ الجَمِيلَةِ. لاحِقًا، يَقُومُ تَنْظِيفُ الغُرَفِ بِتَنْظِيفِ الغُرْفَةِ.",
+        },
+      ],
+    },
   };
 }

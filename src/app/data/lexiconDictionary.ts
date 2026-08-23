@@ -36434,5 +36434,546 @@ export function getLexiconEntry(wordId: string, fallbackLabel?: string): Lexicon
     ],
     exampleSentence: `The ${label} is used in daily life.`,
     exampleArabic: `يُسْتَخْدَمُ هَذَا العُنْصُرُ فِي الحَيَاةِ اليَوْمِيَّةِ.`,
+
+    "airport-terminal": {
+      id: "airport-terminal",
+      arabic: "مَبْنَى الرُّكَّاب",
+      partOfSpeech: "noun",
+      collocations: ["wait at the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "We wait at the airport terminal.",
+          ar: "نَنْتَظِرُ فِي مَبْنَى الرُّكَّاب فِي المَطَار.",
+        },
+      ],
+      exampleSentence: "We wait at the airport terminal.",
+      exampleArabic: "نَنْتَظِرُ فِي مَبْنَى الرُّكَّاب فِي المَطَار.",
+    },
+    "boarding-pass": {
+      id: "boarding-pass",
+      arabic: "بِطَاقَةُ الصُّعُود",
+      partOfSpeech: "noun",
+      collocations: ["show your"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Show your boarding pass at the gate.",
+          ar: "أَبْرِزْ بِطَاقَةَ الصُّعُودِ عِنْدَ البَوَّابَة.",
+        },
+      ],
+      exampleSentence: "Show your boarding pass at the gate.",
+      exampleArabic: "أَبْرِزْ بِطَاقَةَ الصُّعُودِ عِنْدَ البَوَّابَة.",
+    },
+    "luggage-cart": {
+      id: "luggage-cart",
+      arabic: "عَرَبَةُ الأَمْتِعَة",
+      partOfSpeech: "noun",
+      collocations: ["push a"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Push a luggage cart to the check-in desk.",
+          ar: "ادْفَعْ عَرَبَةَ الأَمْتِعَةِ إِلَى مَكْتَبِ التَّسْجِيل.",
+        },
+      ],
+      exampleSentence: "Push a luggage cart to the check-in desk.",
+      exampleArabic: "ادْفَعْ عَرَبَةَ الأَمْتِعَةِ إِلَى مَكْتَبِ التَّسْجِيل.",
+    },
+    "security-check": {
+      id: "security-check",
+      arabic: "التَّفْتِيشُ الأَمْنِيّ",
+      partOfSpeech: "noun",
+      collocations: ["pass through"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Pass through the security check quickly.",
+          ar: "مُرَّ عَبْرَ التَّفْتِيشِ الأَمْنِيِّ بِسُرْعَة.",
+        },
+      ],
+      exampleSentence: "Pass through the security check quickly.",
+      exampleArabic: "مُرَّ عَبْرَ التَّفْتِيشِ الأَمْنِيِّ بِسُرْعَة.",
+    },
+    "departure-gate": {
+      id: "departure-gate",
+      arabic: "بَوَّابَةُ المُغَادَرَة",
+      partOfSpeech: "noun",
+      collocations: ["walk to the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Walk to the departure gate for your flight.",
+          ar: "امْشِ إِلَى بَوَّابَةِ المُغَادَرَةِ لِرِحْلَتِك.",
+        },
+      ],
+      exampleSentence: "Walk to the departure gate for your flight.",
+      exampleArabic: "امْشِ إِلَى بَوَّابَةِ المُغَادَرَةِ لِرِحْلَتِك.",
+    },
+    "flight-attendant": {
+      id: "flight-attendant",
+      arabic: "مُضِيفُ الطَّيَرَان",
+      partOfSpeech: "noun",
+      collocations: ["ask the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Ask the flight attendant for water.",
+          ar: "اسْأَلْ مُضِيفَ الطَّيَرَانِ عَنْ بَعْضِ المَاء.",
+        },
+      ],
+      exampleSentence: "Ask the flight attendant for water.",
+      exampleArabic: "اسْأَلْ مُضِيفَ الطَّيَرَانِ عَنْ بَعْضِ المَاء.",
+    },
+    runway: {
+      id: "runway",
+      arabic: "مُدَرَّجُ الطَّائِرَات",
+      partOfSpeech: "noun",
+      collocations: ["land on the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "The plane lands on the runway.",
+          ar: "تَهْبِطُ الطَّائِرَةُ عَلَى مُدَرَّجِ الطَّائِرَات.",
+        },
+      ],
+      exampleSentence: "The plane lands on the runway.",
+      exampleArabic: "تَهْبِطُ الطَّائِرَةُ عَلَى مُدَرَّجِ الطَّائِرَات.",
+    },
+    "passport-control": {
+      id: "passport-control",
+      arabic: "مُرَاقَبَةُ الجَوَازَات",
+      partOfSpeech: "noun",
+      collocations: ["go through"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Go through passport control upon arrival.",
+          ar: "مُرَّ عَبْرَ مُرَاقَبَةِ الجَوَازَاتِ عِنْدَ الوُصُول.",
+        },
+      ],
+      exampleSentence: "Go through passport control upon arrival.",
+      exampleArabic: "مُرَّ عَبْرَ مُرَاقَبَةِ الجَوَازَاتِ عِنْدَ الوُصُول.",
+    },
+    "baggage-claim": {
+      id: "baggage-claim",
+      arabic: "اسْتِلَامُ الأَمْتِعَة",
+      partOfSpeech: "noun",
+      collocations: ["wait at"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Wait at baggage claim for your suitcase.",
+          ar: "انْتَظِرْ عِنْدَ اسْتِلَامِ الأَمْتِعَةِ لِحَقِيبَتِك.",
+        },
+      ],
+      exampleSentence: "Wait at baggage claim for your suitcase.",
+      exampleArabic: "انْتَظِرْ عِنْدَ اسْتِلَامِ الأَمْتِعَةِ لِحَقِيبَتِك.",
+    },
+    customs: {
+      id: "customs",
+      arabic: "الجَمَارِك",
+      partOfSpeech: "noun",
+      collocations: ["clear"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Clear customs before leaving the airport.",
+          ar: "أَنْهِ إِجْرَاءَاتِ الجَمَارِكِ قَبْلَ مُغَادَرَةِ المَطَار.",
+        },
+      ],
+      exampleSentence: "Clear customs before leaving the airport.",
+      exampleArabic: "أَنْهِ إِجْرَاءَاتِ الجَمَارِكِ قَبْلَ مُغَادَرَةِ المَطَار.",
+    },
+    "duty-free": {
+      id: "duty-free",
+      arabic: "السُّوقُ الحُرَّة",
+      partOfSpeech: "noun",
+      collocations: ["shop at"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Shop at the duty free store.",
+          ar: "تَسَوَّقْ فِي مَتْجَرِ السُّوقِ الحُرَّة.",
+        },
+      ],
+      exampleSentence: "Shop at the duty free store.",
+      exampleArabic: "تَسَوَّقْ فِي مَتْجَرِ السُّوقِ الحُرَّة.",
+    },
+    "departure-board": {
+      id: "departure-board",
+      arabic: "لَوْحَةُ المُغَادَرَة",
+      partOfSpeech: "noun",
+      collocations: ["check the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Check the departure board for delays.",
+          ar: "تَحَقَّقْ مِنْ لَوْحَةِ المُغَادَرَةِ لِمَعْرِفَةِ التَّأْخِير.",
+        },
+      ],
+      exampleSentence: "Check the departure board for delays.",
+      exampleArabic: "تَحَقَّقْ مِنْ لَوْحَةِ المُغَادَرَةِ لِمَعْرِفَةِ التَّأْخِير.",
+    },
+    "train-platform": {
+      id: "train-platform",
+      arabic: "رَصِيفُ القِطَار",
+      partOfSpeech: "noun",
+      collocations: ["stand on the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Stand on the train platform.",
+          ar: "قِفْ عَلَى رَصِيفِ القِطَار.",
+        },
+      ],
+      exampleSentence: "Stand on the train platform.",
+      exampleArabic: "قِفْ عَلَى رَصِيفِ القِطَار.",
+    },
+    "ticket-machine": {
+      id: "ticket-machine",
+      arabic: "آلَةُ التَّذَاكِر",
+      partOfSpeech: "noun",
+      collocations: ["use a"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Use a ticket machine to buy a pass.",
+          ar: "اسْتَخْدِمْ آلَةَ التَّذَاكِرِ لِشِرَاءِ تِذْكَرَة.",
+        },
+      ],
+      exampleSentence: "Use a ticket machine to buy a pass.",
+      exampleArabic: "اسْتَخْدِمْ آلَةَ التَّذَاكِرِ لِشِرَاءِ تِذْكَرَة.",
+    },
+    "train-conductor": {
+      id: "train-conductor",
+      arabic: "مُحَصِّلُ التَّذَاكِر",
+      partOfSpeech: "noun",
+      collocations: ["show to the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Show your ticket to the train conductor.",
+          ar: "أَبْرِزْ تِذْكَرَتَكَ لِمُحَصِّلِ التَّذَاكِر.",
+        },
+      ],
+      exampleSentence: "Show your ticket to the train conductor.",
+      exampleArabic: "أَبْرِزْ تِذْكَرَتَكَ لِمُحَصِّلِ التَّذَاكِر.",
+    },
+    locomotive: {
+      id: "locomotive",
+      arabic: "قَاطِرَة",
+      partOfSpeech: "noun",
+      collocations: ["look at the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Look at the powerful locomotive.",
+          ar: "انْظُرْ إِلَى القَاطِرَةِ القَوِيَّة.",
+        },
+      ],
+      exampleSentence: "Look at the powerful locomotive.",
+      exampleArabic: "انْظُرْ إِلَى القَاطِرَةِ القَوِيَّة.",
+    },
+    "railway-track": {
+      id: "railway-track",
+      arabic: "سِكَّةٌ حَدِيدِيَّة",
+      partOfSpeech: "noun",
+      collocations: ["cross the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Do not cross the railway track.",
+          ar: "لَا تَعْبُرِ السِّكَّةَ الحَدِيدِيَّة.",
+        },
+      ],
+      exampleSentence: "Do not cross the railway track.",
+      exampleArabic: "لَا تَعْبُرِ السِّكَّةَ الحَدِيدِيَّة.",
+    },
+    "passenger-car": {
+      id: "passenger-car",
+      arabic: "عَرَبَةُ الرُّكَّاب",
+      partOfSpeech: "noun",
+      collocations: ["sit in the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Sit in the quiet passenger car.",
+          ar: "اجْلِسْ فِي عَرَبَةِ الرُّكَّابِ الهَادِئَة.",
+        },
+      ],
+      exampleSentence: "Sit in the quiet passenger car.",
+      exampleArabic: "اجْلِسْ فِي عَرَبَةِ الرُّكَّابِ الهَادِئَة.",
+    },
+    "commuter-train": {
+      id: "commuter-train",
+      arabic: "قِطَارُ الرُّكَّاب",
+      partOfSpeech: "noun",
+      collocations: ["board the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Board the commuter train to the city.",
+          ar: "اصْعَدْ إِلَى قِطَارِ الرُّكَّابِ المُتَّجِهِ لِلْمَدِينَة.",
+        },
+      ],
+      exampleSentence: "Board the commuter train to the city.",
+      exampleArabic: "اصْعَدْ إِلَى قِطَارِ الرُّكَّابِ المُتَّجِهِ لِلْمَدِينَة.",
+    },
+    timetable: {
+      id: "timetable",
+      arabic: "جَدْوَلُ المَوَاعِيد",
+      partOfSpeech: "noun",
+      collocations: ["check the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Check the timetable for the next train.",
+          ar: "تَحَقَّقْ مِنْ جَدْوَلِ المَوَاعِيدِ لِلْقِطَارِ التَّالِي.",
+        },
+      ],
+      exampleSentence: "Check the timetable for the next train.",
+      exampleArabic: "تَحَقَّقْ مِنْ جَدْوَلِ المَوَاعِيدِ لِلْقِطَارِ التَّالِي.",
+    },
+    "station-clock": {
+      id: "station-clock",
+      arabic: "سَاعَةُ المَحَطَّة",
+      partOfSpeech: "noun",
+      collocations: ["look at the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Look at the large station clock.",
+          ar: "انْظُرْ إِلَى سَاعَةِ المَحَطَّةِ الكَبِيرَة.",
+        },
+      ],
+      exampleSentence: "Look at the large station clock.",
+      exampleArabic: "انْظُرْ إِلَى سَاعَةِ المَحَطَّةِ الكَبِيرَة.",
+    },
+    "waiting-room": {
+      id: "waiting-room",
+      arabic: "غُرْفَةُ الانْتِظَار",
+      partOfSpeech: "noun",
+      collocations: ["rest in the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Rest in the station waiting room.",
+          ar: "اسْتَرِحْ فِي غُرْفَةِ انْتِظَارِ المَحَطَّة.",
+        },
+      ],
+      exampleSentence: "Rest in the station waiting room.",
+      exampleArabic: "اسْتَرِحْ فِي غُرْفَةِ انْتِظَارِ المَحَطَّة.",
+    },
+    "ticket-barrier": {
+      id: "ticket-barrier",
+      arabic: "حَاجِزُ التَّذَاكِر",
+      partOfSpeech: "noun",
+      collocations: ["pass the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Pass the ticket barrier to enter.",
+          ar: "مُرَّ عَبْرَ حَاجِزِ التَّذَاكِرِ لِلدُّخُول.",
+        },
+      ],
+      exampleSentence: "Pass the ticket barrier to enter.",
+      exampleArabic: "مُرَّ عَبْرَ حَاجِزِ التَّذَاكِرِ لِلدُّخُول.",
+    },
+    "express-train": {
+      id: "express-train",
+      arabic: "القِطَارُ السَّرِيع",
+      partOfSpeech: "noun",
+      collocations: ["take the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Take the express train for a fast trip.",
+          ar: "اسْتَقِلَّ القِطَارَ السَّرِيعَ لِرِحْلَةٍ سَرِيعَة.",
+        },
+      ],
+      exampleSentence: "Take the express train for a fast trip.",
+      exampleArabic: "اسْتَقِلَّ القِطَارَ السَّرِيعَ لِرِحْلَةٍ سَرِيعَة.",
+    },
+    "hotel-reception": {
+      id: "hotel-reception",
+      arabic: "مَكْتَبُ الاسْتِقْبَال",
+      partOfSpeech: "noun",
+      collocations: ["go to the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Go to the reception to check in.",
+          ar: "اذْهَبْ إِلَى مَكْتَبِ الاسْتِقْبَالِ لِتَسْجِيلِ الدُّخُول.",
+        },
+      ],
+      exampleSentence: "Go to the reception to check in.",
+      exampleArabic: "اذْهَبْ إِلَى مَكْتَبِ الاسْتِقْبَالِ لِتَسْجِيلِ الدُّخُول.",
+    },
+    "room-key": {
+      id: "room-key",
+      arabic: "مِفْتَاحُ الغُرْفَة",
+      partOfSpeech: "noun",
+      collocations: ["use your"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Use your room key to open the door.",
+          ar: "اسْتَخْدِمْ مِفْتَاحَ الغُرْفَةِ لِفَتْحِ البَاب.",
+        },
+      ],
+      exampleSentence: "Use your room key to open the door.",
+      exampleArabic: "اسْتَخْدِمْ مِفْتَاحَ الغُرْفَةِ لِفَتْحِ البَاب.",
+    },
+    bellboy: {
+      id: "bellboy",
+      arabic: "حَامِلُ الأَمْتِعَة",
+      partOfSpeech: "noun",
+      collocations: ["tip the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Tip the bellboy for carrying bags.",
+          ar: "أَعْطِ بَقْشِيشًا لِحَامِلِ الأَمْتِعَةِ لِحَمْلِهِ الحَقَائِب.",
+        },
+      ],
+      exampleSentence: "Tip the bellboy for carrying bags.",
+      exampleArabic: "أَعْطِ بَقْشِيشًا لِحَامِلِ الأَمْتِعَةِ لِحَمْلِهِ الحَقَائِب.",
+    },
+    "hotel-lobby": {
+      id: "hotel-lobby",
+      arabic: "بَهْوُ الفُنْدُق",
+      partOfSpeech: "noun",
+      collocations: ["wait in the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Wait in the spacious hotel lobby.",
+          ar: "انْتَظِرْ فِي بَهْوِ الفُنْدُقِ الفَسِيح.",
+        },
+      ],
+      exampleSentence: "Wait in the spacious hotel lobby.",
+      exampleArabic: "انْتَظِرْ فِي بَهْوِ الفُنْدُقِ الفَسِيح.",
+    },
+    "room-service": {
+      id: "room-service",
+      arabic: "خِدْمَةُ الغُرَف",
+      partOfSpeech: "noun",
+      collocations: ["order"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Order room service for breakfast.",
+          ar: "اطْلُبْ خِدْمَةَ الغُرَفِ لِتَنَاوُلِ الإِفْطَار.",
+        },
+      ],
+      exampleSentence: "Order room service for breakfast.",
+      exampleArabic: "اطْلُبْ خِدْمَةَ الغُرَفِ لِتَنَاوُلِ الإِفْطَار.",
+    },
+    housekeeping: {
+      id: "housekeeping",
+      arabic: "تَنْظِيفُ الغُرَف",
+      partOfSpeech: "noun",
+      collocations: ["call"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Call housekeeping for extra towels.",
+          ar: "اتَّصِلْ بِتَنْظِيفِ الغُرَفِ لِلْحُصُولِ عَلَى مَنَاشِفَ إِضَافِيَّة.",
+        },
+      ],
+      exampleSentence: "Call housekeeping for extra towels.",
+      exampleArabic: "اتَّصِلْ بِتَنْظِيفِ الغُرَفِ لِلْحُصُولِ عَلَى مَنَاشِفَ إِضَافِيَّة.",
+    },
+    "hotel-safe": {
+      id: "hotel-safe",
+      arabic: "خَزْنَةُ الفُنْدُق",
+      partOfSpeech: "noun",
+      collocations: ["lock the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Lock your valuables in the hotel safe.",
+          ar: "أَقْفِلْ عَلَى أَشْيَائِكَ الثَّمِينَةِ فِي خَزْنَةِ الفُنْدُق.",
+        },
+      ],
+      exampleSentence: "Lock your valuables in the hotel safe.",
+      exampleArabic: "أَقْفِلْ عَلَى أَشْيَائِكَ الثَّمِينَةِ فِي خَزْنَةِ الفُنْدُق.",
+    },
+    "balcony-view": {
+      id: "balcony-view",
+      arabic: "إِطْلَالَةُ الشُّرْفَة",
+      partOfSpeech: "noun",
+      collocations: ["enjoy the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Enjoy the beautiful balcony view.",
+          ar: "اسْتَمْتِعْ بِإِطْلَالَةِ الشُّرْفَةِ الجَمِيلَة.",
+        },
+      ],
+      exampleSentence: "Enjoy the beautiful balcony view.",
+      exampleArabic: "اسْتَمْتِعْ بِإِطْلَالَةِ الشُّرْفَةِ الجَمِيلَة.",
+    },
+    elevator: {
+      id: "elevator",
+      arabic: "مِصْعَد",
+      partOfSpeech: "noun",
+      collocations: ["take the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Take the elevator to the fifth floor.",
+          ar: "اسْتَقِلَّ المِصْعَدَ إِلَى الطَّابِقِ الخَامِس.",
+        },
+      ],
+      exampleSentence: "Take the elevator to the fifth floor.",
+      exampleArabic: "اسْتَقِلَّ المِصْعَدَ إِلَى الطَّابِقِ الخَامِس.",
+    },
+    "key-card": {
+      id: "key-card",
+      arabic: "بِطَاقَةُ مِفْتَاح",
+      partOfSpeech: "noun",
+      collocations: ["swipe the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Swipe the key card to enter.",
+          ar: "مَرِّرْ بِطَاقَةَ المِفْتَاحِ لِلدُّخُول.",
+        },
+      ],
+      exampleSentence: "Swipe the key card to enter.",
+      exampleArabic: "مَرِّرْ بِطَاقَةَ المِفْتَاحِ لِلدُّخُول.",
+    },
+    doorman: {
+      id: "doorman",
+      arabic: "بَوَّاب",
+      partOfSpeech: "noun",
+      collocations: ["greet the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Greet the friendly doorman.",
+          ar: "حَيِّ البَوَّابَ الوَدُود.",
+        },
+      ],
+      exampleSentence: "Greet the friendly doorman.",
+      exampleArabic: "حَيِّ البَوَّابَ الوَدُود.",
+    },
+    "valet-parking": {
+      id: "valet-parking",
+      arabic: "خِدْمَةُ رَكْنِ السَّيَّارَات",
+      partOfSpeech: "noun",
+      collocations: ["use the"],
+      sentences: [
+        {
+          context: "Travel & Hospitality",
+          en: "Use the valet parking service.",
+          ar: "اسْتَخْدِمْ خِدْمَةَ رَكْنِ السَّيَّارَات.",
+        },
+      ],
+      exampleSentence: "Use the valet parking service.",
+      exampleArabic: "اسْتَخْدِمْ خِدْمَةَ رَكْنِ السَّيَّارَات.",
+    },
   };
 }

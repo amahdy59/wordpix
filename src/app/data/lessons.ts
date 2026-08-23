@@ -12044,6 +12044,139 @@ export const VOCAB_BY_ID = new Map(
 export const REVIEW_GROUP_ID = "daily-review";
 
 /** Every group across every registered world. */
+
+export const AIRPORT_TOPICS: TopicCategory[] = [
+  {
+    id: "airport-1",
+    label: "Departures",
+    labelAr: "المُغَادَرُونَ",
+    words: ["airport-terminal", "boarding-pass", "luggage-cart", "security-check"],
+  },
+  {
+    id: "airport-2",
+    label: "Flight & Arrival",
+    labelAr: "الرِّحْلَةُ وَالوُصُول",
+    words: ["departure-gate", "flight-attendant", "runway", "passport-control"],
+  },
+  {
+    id: "airport-3",
+    label: "Services",
+    labelAr: "الخَدَمَات",
+    words: ["baggage-claim", "customs", "duty-free", "departure-board"],
+  },
+];
+
+export const AIRPORT_GROUPS: Lesson[] = [
+  {
+    id: "airport-group-1",
+    name: "The Airport",
+    description: "Learn essential vocabulary for navigating the airport.",
+    storyId: "airport-story",
+    wordIds: [
+      "airport-terminal",
+      "boarding-pass",
+      "luggage-cart",
+      "security-check",
+      "departure-gate",
+      "flight-attendant",
+      "runway",
+      "passport-control",
+      "baggage-claim",
+      "customs",
+      "duty-free",
+      "departure-board",
+    ],
+  },
+];
+
+export const TRAIN_STATION_TOPICS: TopicCategory[] = [
+  {
+    id: "train-station-1",
+    label: "Platforms",
+    labelAr: "الأَرْصِفَة",
+    words: ["train-platform", "ticket-machine", "train-conductor", "locomotive"],
+  },
+  {
+    id: "train-station-2",
+    label: "On the Train",
+    labelAr: "فِي القِطَار",
+    words: ["railway-track", "passenger-car", "commuter-train", "timetable"],
+  },
+  {
+    id: "train-station-3",
+    label: "Station Areas",
+    labelAr: "مَنَاطِقُ المَحَطَّة",
+    words: ["station-clock", "waiting-room", "ticket-barrier", "express-train"],
+  },
+];
+
+export const TRAIN_STATION_GROUPS: Lesson[] = [
+  {
+    id: "train-station-group-1",
+    name: "The Train Station",
+    description: "Learn essential vocabulary for train travel.",
+    storyId: "train-story",
+    wordIds: [
+      "train-platform",
+      "ticket-machine",
+      "train-conductor",
+      "locomotive",
+      "railway-track",
+      "passenger-car",
+      "commuter-train",
+      "timetable",
+      "station-clock",
+      "waiting-room",
+      "ticket-barrier",
+      "express-train",
+    ],
+  },
+];
+
+export const HOTEL_TOPICS: TopicCategory[] = [
+  {
+    id: "hotel-1",
+    label: "Check-in",
+    labelAr: "تَسْجِيلُ الدُّخُول",
+    words: ["hotel-reception", "room-key", "bellboy", "hotel-lobby"],
+  },
+  {
+    id: "hotel-2",
+    label: "Room Details",
+    labelAr: "تَفَاصِيلُ الغُرْفَة",
+    words: ["room-service", "housekeeping", "hotel-safe", "balcony-view"],
+  },
+  {
+    id: "hotel-3",
+    label: "Facilities",
+    labelAr: "المَرَافِق",
+    words: ["elevator", "key-card", "doorman", "valet-parking"],
+  },
+];
+
+export const HOTEL_GROUPS: Lesson[] = [
+  {
+    id: "hotel-group-1",
+    name: "The Hotel",
+    description: "Learn essential vocabulary for your hotel stay.",
+    storyId: "hotel-story",
+    wordIds: [
+      "hotel-reception",
+      "room-key",
+      "bellboy",
+      "hotel-lobby",
+      "room-service",
+      "housekeeping",
+      "hotel-safe",
+      "balcony-view",
+      "elevator",
+      "key-card",
+      "doorman",
+      "valet-parking",
+    ],
+  },
+];
+
 export const ALL_GROUPS = Object.values(COURSE_UNITS).flatMap((world) => world.groups);
 
 /**
