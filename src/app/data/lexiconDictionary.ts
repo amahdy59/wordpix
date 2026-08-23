@@ -24856,6 +24856,2250 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleArabic:
       "أَخْرَجَتْ مَحْفَظَتَهَا الجِلْدِيَّةَ مِنْ حَقِيبَةِ يَدِهَا لِإِخْرَاجِ بِطَاقَةِ وَلَاءِ السُّوبَر مَارْكِت.",
   },
+  "white-bread": {
+    id: "white-bread",
+    arabic: "خُبْزٌ أَبْيَض",
+    partOfSpeech: "noun",
+    phonetic: "waɪt brɛd",
+    pronunciationTip: "Pronounce 'WYT bred' (/waɪt brɛd/).",
+    collocations: [
+      "slice of white bread",
+      "loaf of white bread",
+      "toasted white bread",
+      "soft white bread",
+      "fresh white bread",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "slice up",
+        meaning: "cut a whole loaf into sandwich slices",
+        arabic: "يُقَطِّعُ الخُبْزَ إِلَى شَرَائِح",
+        example: "The baker used a mechanical blade to slice up the fresh white bread loaf.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bakery Counter",
+        en: "She bought a freshly baked loaf of soft white bread for making morning toast.",
+        ar: "اشْتَرَتْ رَغِيفًا مَخْبُوزًا حَدِيثًا مِنْ خُبْزٍ أَبْيَضَ طَرِيٍّ لِإِعْدَادِ التُّوسْتِ الصَّبَاحِيِّ.",
+      },
+      {
+        context: "Breakfast Toast",
+        en: "Two slices of golden toasted white bread with strawberry jam make a classic breakfast.",
+        ar: "تُشَكِّلُ شَرِيحَتَانِ مِنَ الخُبْزِ الأَبْيَضِ المُحَمَّصِ الذَّهَبِيِّ مَعَ المُرَبَّى إِفْطَارًا كَلَاسِيكِيًّا.",
+      },
+      {
+        context: "Sandwich Making",
+        en: "Soft white bread provides a gentle texture that complements tender turkey and cheddar fillings.",
+        ar: "يُوَفِّرُ الخُبْزُ الأَبْيَضُ الطَّرِيُّ قَوَامًا نَاعِمًا يُلَائِمُ شَطَائِرَ الدِّيكِ الرُّومِيِّ وَالجُبْنِ.",
+      },
+    ],
+    exampleSentence:
+      "She bought a freshly baked loaf of soft white bread for making morning toast.",
+    exampleArabic:
+      "اشْتَرَتْ رَغِيفًا مَخْبُوزًا حَدِيثًا مِنْ خُبْزٍ أَبْيَضَ طَرِيٍّ لِإِعْدَادِ التُّوسْتِ الصَّبَاحِيِّ.",
+  },
+  "whole-wheat-bread": {
+    id: "whole-wheat-bread",
+    arabic: "خُبْزُ القَمْحِ الكَامِل (خُبْزُ الحُبُوبِ الكَامِلَة / خُبْزُ الأَسْمَر)",
+    partOfSpeech: "noun",
+    phonetic: "hoʊl wiːt brɛd",
+    pronunciationTip: "Pronounce 'HOHL weet bred' (/hoʊl wiːt brɛd/).",
+    collocations: [
+      "nutritious whole wheat bread",
+      "slice of whole wheat bread",
+      "seeded whole wheat bread",
+      "toasted whole wheat bread",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "toast up",
+        meaning: "brown slices under a grill or toaster",
+        arabic: "يُحَمِّصُ الخُبْزَ الأَسْمَر",
+        example: "Toast up two slices of whole wheat bread to serve alongside poached eggs.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Healthy Nutrition",
+        en: "Whole wheat bread contains complex carbohydrates and dietary fiber from unrefined grains.",
+        ar: "يَحْتَوِي خُبْزُ القَمْحِ الكَامِلِ عَلَى كَرْبُوهِيدْرَاتٍ مُعَقَّدَةٍ وَأَلْيَافٍ غِذَائِيَّةٍ مِنَ الحُبُوبِ.",
+      },
+      {
+        context: "Artisan Bakery",
+        en: "The baker dusted rustic loaves of whole wheat bread with toasted oats and flaxseeds.",
+        ar: "رَشَّ الخَبَّازُ أَرْغِفَةَ خُبْزِ القَمْحِ الكَامِلِ الرِّيفِيَّةَ بِالشُّوفَانِ المُحَمَّصِ وَبُذُورِ الكَتَّانِ.",
+      },
+      {
+        context: "Lunch Sandwich",
+        en: "He packed a healthy avocado and grilled chicken sandwich on dense whole wheat bread.",
+        ar: "حَزَمَ شَطِيرَةَ أَفُوكَادُو وَدَجَاجٍ مَشْوِيٍّ صِحِّيَّةً عَلَى خُبْزِ القَمْحِ الكَامِلِ.",
+      },
+    ],
+    exampleSentence:
+      "Whole wheat bread contains complex carbohydrates and dietary fiber from unrefined grains.",
+    exampleArabic:
+      "يَحْتَوِي خُبْزُ القَمْحِ الكَامِلِ عَلَى كَرْبُوهِيدْرَاتٍ مُعَقَّدَةٍ وَأَلْيَافٍ غِذَائِيَّةٍ مِنَ الحُبُوبِ.",
+  },
+  baguette: {
+    id: "baguette",
+    arabic: "بَاغِيت (خُبْزٌ فَرَنْسِيٌّ طَوِيل)",
+    partOfSpeech: "noun",
+    phonetic: "bæˈɡɛt",
+    pronunciationTip: "Pronounce 'ba-GET' (/bæˈɡɛt/).",
+    collocations: [
+      "crispy baguette",
+      "fresh French baguette",
+      "crusty baguette",
+      "slice a baguette",
+      "warm baguette",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "snap in half",
+        meaning: "break crusty long loaf with a crisp sound",
+        arabic: "يَكْسِرُ رَغِيفَ البَاغِيت نِصْفَيْن",
+        example: "He snapped the warm baguette in half to share with his picnic partner.",
+      },
+    ],
+    sentences: [
+      {
+        context: "French Bakery",
+        en: "An authentic French baguette has a golden crunchy exterior and an airy, chewy crumb.",
+        ar: "يَمْتَازُ رَغِيفُ البَاغِيت الفَرَنْسِيُّ الأَصْلِيُّ بِقِشْرَةٍ ذَهَبِيَّةٍ مُقَرْمَشَةٍ وَلُبٍّ هَوَائِيٍّ طَرِيٍّ.",
+      },
+      {
+        context: "Picnic Meal",
+        en: "They paired a warm crusty baguette with brie cheese, red grapes, and olive tapenade.",
+        ar: "تَنَاوَلُوا بَاغِيت مُقَرْمَشًا دَافِئًا مَعَ جُبْنِ البْرِي وَالعِنَبِ الأَحْمَرِ وَمَعْجُونِ الزَّيْتُونِ.",
+      },
+      {
+        context: "Morning Routine",
+        en: "Shoppers in Paris carry long baguettes under their arms as they walk home from dawn bakeries.",
+        ar: "يَحْمِلُ المُتَسَوِّقُونَ فِي بَارِيس أَرْغِفَةَ البَاغِيت تَحْتَ أَذْرُعِهِمْ عِنْدَ عَوْدَتِهِمْ مِنَ المَخَابِزِ.",
+      },
+    ],
+    exampleSentence:
+      "An authentic French baguette has a golden crunchy exterior and an airy, chewy crumb.",
+    exampleArabic:
+      "يَمْتَازُ رَغِيفُ البَاغِيت الفَرَنْسِيُّ الأَصْلِيُّ بِقِشْرَةٍ ذَهَبِيَّةٍ مُقَرْمَشَةٍ وَلُبٍّ هَوَائِيٍّ طَرِيٍّ.",
+  },
+  sourdough: {
+    id: "sourdough",
+    arabic: "عَجِينَةٌ مُخَمَّرَة (خُبْزُ السَّاوِرْدُو / خُبْزٌ حَامِض)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsaʊərdoʊ",
+    pronunciationTip: "Pronounce 'SOW-er-doh' (/ˈsaʊ.ər.doʊ/).",
+    collocations: [
+      "sourdough bread",
+      "sourdough starter",
+      "rustic sourdough loaf",
+      "tangy sourdough",
+      "crusty sourdough",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "feed up",
+        meaning: "nourish wild yeast culture with flour and water",
+        arabic: "يُغَذِّي خَمِيرَةَ السَّاوِرْدُو",
+        example: "Bakers feed up their sourdough starter every morning to keep wild yeasts active.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Artisan Loaf",
+        en: "Naturally fermented sourdough develops a distinctive tangy flavor and blistered golden crust.",
+        ar: "يَكْتَسِبُ خُبْزُ السَّاوِرْدُو المُخَمَّرُ طَبِيعِيًّا نَكْهَةً لَاذِعَةً مُمَيَّزَةً وَقِشْرَةً ذَهَبِيَّةً.",
+      },
+      {
+        context: "Toast and Toppings",
+        en: "Thickly sliced toasted sourdough with mashed avocado and sea salt is a popular brunch favorite.",
+        ar: "تُعَدُّ شَرِيحَةُ السَّاوِرْدُو المُحَمَّصَةُ السَّمِيكَةُ مَعَ الأَفُوكَادُو طَبَقَ إِفْطَارٍ مُفَضَّلًا.",
+      },
+      {
+        context: "Traditional Fermentation",
+        en: "Slow wild-yeast fermentation makes sourdough easier to digest for many individuals.",
+        ar: "يَجْعَلُ التَّخْمِيرُ البَطِيءُ بِالخَمِيرَةِ البَرِّيَّةِ خُبْزَ السَّاوِرْدُو أَسْهَلَ فِي الهَضْمِ.",
+      },
+    ],
+    exampleSentence:
+      "Naturally fermented sourdough develops a distinctive tangy flavor and blistered golden crust.",
+    exampleArabic:
+      "يَكْتَسِبُ خُبْزُ السَّاوِرْدُو المُخَمَّرُ طَبِيعِيًّا نَكْهَةً لَاذِعَةً مُمَيَّزَةً وَقِشْرَةً ذَهَبِيَّةً.",
+  },
+  "rye-bread": {
+    id: "rye-bread",
+    arabic: "خُبْزُ الشَّيْلَم (خُبْزُ الرَّاي)",
+    partOfSpeech: "noun",
+    phonetic: "raɪ brɛd",
+    pronunciationTip: "Pronounce 'RY bred' (/raɪ brɛd/).",
+    collocations: [
+      "dark rye bread",
+      "seeded rye bread",
+      "marbled rye bread",
+      "loaf of rye bread",
+      "deli rye bread",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pair with",
+        meaning: "serve foods that complement each other well",
+        arabic: "يُقَدِّمُ مَعَ طَعَامٍ مُتَنَاغِم",
+        example:
+          "Deli chefs pair dark rye bread with hot pastrami, Swiss cheese, and spicy mustard.",
+      },
+    ],
+    sentences: [
+      {
+        context: "European Tradition",
+        en: "Dense dark rye bread seasoned with fragrant caraway seeds is a Nordic and German staple.",
+        ar: "يُعَدُّ خُبْزُ الشَّيْلَمِ الدَّاكِنُ الكَثِيفُ المُتَبَّلُ بِبُذُورِ الكَرَاوْيَا طَعَامًا أَسَاسِيًّا فِي أُورُوبَّا.",
+      },
+      {
+        context: "Deli Sandwich",
+        en: "A classic Reuben sandwich layers hot corned beef and sauerkraut between slices of toasted rye bread.",
+        ar: "تَضُمُّ شَطِيرَةُ الرُّوبِن لَحْمَ البَقَرِ المُمَلَّحَ وَالمَلْفُوفَ بَيْنَ شَرَائِحِ خُبْزِ الرَّاي.",
+      },
+      {
+        context: "Health Benefits",
+        en: "Rye grain contains soluble fibers that help stabilize blood sugar levels throughout the morning.",
+        ar: "تَحْتَوِي حُبُوبُ الشَّيْلَمِ عَلَى أَلْيَافٍ ذَائِبَةٍ تُسَاعِدُ عَلَى ضَبْطِ مُسْتَوَى السُّكَّرِ فِي الدَّمِ.",
+      },
+    ],
+    exampleSentence:
+      "Dense dark rye bread seasoned with fragrant caraway seeds is a Nordic and German staple.",
+    exampleArabic:
+      "يُعَدُّ خُبْزُ الشَّيْلَمِ الدَّاكِنُ الكَثِيفُ المُتَبَّلُ بِبُذُورِ الكَرَاوْيَا طَعَامًا أَسَاسِيًّا فِي أُورُوبَّا.",
+  },
+  pita: {
+    id: "pita",
+    arabic: "خُبْزُ البِيتَا (خُبْزٌ عَرَبِيّ / عَيْشٌ بَلَدِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpiːtə",
+    pronunciationTip: "Pronounce 'PEE-tuh' (/ˈpiː.tə/).",
+    collocations: [
+      "pita pocket",
+      "warm pita bread",
+      "whole wheat pita",
+      "stuffed pita",
+      "pita with hummus",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "stuff with",
+        meaning: "fill the hollow bread interior",
+        arabic: "يَحْشُو جَيْبَ الخُبْز",
+        example:
+          "Stuff the warm pita pocket with crispy falafel, diced tomatoes, and tahini sauce.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Middle Eastern Cuisine",
+        en: "Steam inflates flat pita dough in hot ovens, creating an internal pocket perfect for sandwiches.",
+        ar: "يَنْفُخُ البُخَارُ عَجِينَ البِيتَا فِي الأَفْرَانِ السَّاخِنَةِ، صَانِعًا جَيْبًا دَاخِلِيًّا مِثَالِيًّا لِلشَّطَائِرِ.",
+      },
+      {
+        context: "Mezze Platter",
+        en: "Torn pieces of warm flat pita bread are served alongside creamy hummus, labneh, and olive oil.",
+        ar: "تُقَدَّمُ قِطَعُ خُبْزِ البِيتَا الدَّافِئَةُ المُمَزَّقَةُ بِجَانِبِ الحُمُّصِ وَاللَّبْنَةِ وَزَيْتِ الزَّيْتُونِ.",
+      },
+      {
+        context: "Street Food",
+        en: "Street vendors serve spiced shawarma wrapped tightly inside fresh pita bread.",
+        ar: "يُقَدِّمُ بَاعَةُ الطَّعَامِ الشَّاوِرْمَا المُتَبَّلَةَ مَلْفُوفَةً بِإِحْكَامٍ دَاخِلَ خُبْزِ البِيتَا الطَّازَجِ.",
+      },
+    ],
+    exampleSentence:
+      "Steam inflates flat pita dough in hot ovens, creating an internal pocket perfect for sandwiches.",
+    exampleArabic:
+      "يَنْفُخُ البُخَارُ عَجِينَ البِيتَا فِي الأَفْرَانِ السَّاخِنَةِ، صَانِعًا جَيْبًا دَاخِلِيًّا مِثَالِيًّا لِلشَّطَائِرِ.",
+  },
+  focaccia: {
+    id: "focaccia",
+    arabic: "فُوكَاتْشْيَا (خُبْزٌ إِيطَالِيٌّ بِزَيْتِ الزَّيْتُونِ وَالأَعْشَاب)",
+    partOfSpeech: "noun",
+    phonetic: "foʊˈkɑːtʃə",
+    pronunciationTip: "Pronounce 'foh-KAH-chuh' (/foʊˈkɑː.tʃə/).",
+    collocations: [
+      "rosemary focaccia",
+      "olive oil focaccia",
+      "dimpled focaccia",
+      "sea salt focaccia",
+      "warm focaccia",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "dimple with",
+        meaning: "press fingertip indentations across dough",
+        arabic: "يَصْنَعُ نُقَرًا بِأَصَابِعِهِ فِي العَجِين",
+        example: "Dimple the dough with your fingertips to create wells for fragrant olive oil.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Italian Flatbread",
+        en: "Golden Italian focaccia is baked in olive oil and topped with fresh rosemary sprigs and sea salt.",
+        ar: "يُخْبَزُ خُبْزُ الفُوكَاتْشْيَا الإِيطَالِيُّ الذَّهَبِيُّ بِزَيْتِ الزَّيْتُونِ وَيُغَطَّى بِإِكْلِيلِ الجَبَلِ وَالمِلْحِ.",
+      },
+      {
+        context: "Bakery Aroma",
+        en: "The scent of garlic, cherry tomatoes, and warm olive oil wafted from fresh pans of focaccia.",
+        ar: "فَاحَتْ رَائِحَةُ الثَّوْمِ وَالطَّمَاطِمِ وَزَيْتِ الزَّيْتُونِ مِنْ صَوَانِي الفُوكَاتْشْيَا الطَّازَجَةِ.",
+      },
+      {
+        context: "Sandwich Base",
+        en: "Sliced horizontally, thick herb focaccia makes a robust base for prosciutto and mozzarella panini.",
+        ar: "عِنْدَ تَقْطِيعِهِ أُفُقِيًّا، يُشَكِّلُ خُبْزُ الفُوكَاتْشْيَا قَاعِدَةً قَوِيَّةً لِشَطَائِرِ البَانِينِي.",
+      },
+    ],
+    exampleSentence:
+      "Golden Italian focaccia is baked in olive oil and topped with fresh rosemary sprigs and sea salt.",
+    exampleArabic:
+      "يُخْبَزُ خُبْزُ الفُوكَاتْشْيَا الإِيطَالِيُّ الذَّهَبِيُّ بِزَيْتِ الزَّيْتُونِ وَيُغَطَّى بِإِكْلِيلِ الجَبَلِ وَالمِلْحِ.",
+  },
+  ciabatta: {
+    id: "ciabatta",
+    arabic: "تْشَابَاتَّا (خُبْزٌ إِيطَالِيٌّ رِيفِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "tʃəˈbɑːtə",
+    pronunciationTip: "Pronounce 'chuh-BAH-tuh' (/tʃəˈbɑː.tə/).",
+    collocations: [
+      "ciabatta roll",
+      "toasted ciabatta",
+      "crusty ciabatta loaf",
+      "ciabatta sandwich",
+      "panini on ciabatta",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "press down",
+        meaning: "flatten in a heated sandwich grill",
+        arabic: "يَضْغَطُ فِي شَوَّايَةِ البَانِينِي",
+        example: "Press down the stuffed ciabatta roll in the panini maker until toasted.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Italian Bread",
+        en: "Ciabatta is an elongated Italian white bread characterized by large air pockets and a crisp crust.",
+        ar: "التْشَابَاتَّا هُوَ خُبْزٌ أَبْيَضُ إِيطَالِيٌّ مُسْتَطِيلٌ يَتَمَيَّزُ بِفَجَوَاتٍ هَوَائِيَّةٍ كَبِيرَةٍ وَقِشْرَةٍ مُقَرْمَشَةٍ.",
+      },
+      {
+        context: "Panini Specialty",
+        en: "The café pressed grilled chicken, pesto, and melted provolone inside a toasted ciabatta roll.",
+        ar: "حَمَّصَ المَقْهَى شَطِيرَةَ دَجَاجٍ مَشْوِيٍّ وَصَلْصَةَ البِيسْتُو دَاخِلَ خُبْزِ التْشَابَاتَّا.",
+      },
+      {
+        context: "Soup Dipping",
+        en: "A warm piece of crusty ciabatta is ideal for dipping into rich Tuscan tomato soup.",
+        ar: "تُعَدُّ قِطْعَةُ التْشَابَاتَّا المُقَرْمَشَةُ الدَّافِئَةُ مِثَالِيَّةً لِلتَّغْمِيسِ فِي حَسَاءِ الطَّمَاطِمِ.",
+      },
+    ],
+    exampleSentence:
+      "Ciabatta is an elongated Italian white bread characterized by large air pockets and a crisp crust.",
+    exampleArabic:
+      "التْشَابَاتَّا هُوَ خُبْزٌ أَبْيَضُ إِيطَالِيٌّ مُسْتَطِيلٌ يَتَمَيَّزُ بِفَجَوَاتٍ هَوَائِيَّةٍ كَبِيرَةٍ وَقِشْرَةٍ مُقَرْمَشَةٍ.",
+  },
+  brioche: {
+    id: "brioche",
+    arabic: "بِرْيُوش (خُبْزٌ فَرَنْسِيٌّ حُلْوٌ بِالزُّبْدَة)",
+    partOfSpeech: "noun",
+    phonetic: "briːˈoʊʃ",
+    pronunciationTip: "Pronounce 'bree-OHSH' (/briːˈoʊʃ/).",
+    collocations: [
+      "brioche bun",
+      "buttery brioche",
+      "brioche French toast",
+      "golden brioche",
+      "sweet brioche loaf",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "brush with",
+        meaning: "coat dough surface with beaten egg glaze",
+        arabic: "يَدْهَنُ بِصَفَارِ البَيْض",
+        example:
+          "Brush the brioche buns with egg wash before baking to achieve a glossy golden crown.",
+      },
+    ],
+    sentences: [
+      {
+        context: "French Enriched Bread",
+        en: "Brioche is an enriched French bread made with high proportions of butter and eggs for a tender crumb.",
+        ar: "البِرْيُوش هُوَ خُبْزٌ فَرَنْسِيٌّ غَنِيٌّ يُصْنَعُ بِنِسَبٍ عَالِيَةٍ مِنَ الزُّبْدَةِ وَالبَيْضِ لِقَوَامٍ طَرِيٍّ.",
+      },
+      {
+        context: "Gourmet Burgers",
+        en: "Upscale restaurants serve wagyu burgers on lightly toasted, glossy golden brioche buns.",
+        ar: "تُقَدِّمُ المَطَاعِمُ الرَّاقِيَةُ شَطَائِرَ البِرْجَرِ عَلَى خُبْزِ البِرْيُوشِ الذَّهَبِيِّ اللَّامِعِ.",
+      },
+      {
+        context: "Brunch Specialty",
+        en: "Thick slices of brioche soaked in vanilla custard create luxurious French toast for Sunday brunch.",
+        ar: "تُصْنَعُ حَلْوَى التُّوسْتِ الفَرَنْسِيِّ الفَاخِرَةُ مِنْ شَرَائِحِ البِرْيُوشِ المَنْقُوعَةِ فِي الكَسْتَرْد.",
+      },
+    ],
+    exampleSentence:
+      "Brioche is an enriched French bread made with high proportions of butter and eggs for a tender crumb.",
+    exampleArabic:
+      "البِرْيُوش هُوَ خُبْزٌ فَرَنْسِيٌّ غَنِيٌّ يُصْنَعُ بِنِسَبٍ عَالِيَةٍ مِنَ الزُّبْدَةِ وَالبَيْضِ لِقَوَامٍ طَرِيٍّ.",
+  },
+  flatbread: {
+    id: "flatbread",
+    arabic: "خُبْزٌ مَفْرُود (خُبْزٌ مُسَطَّح)",
+    partOfSpeech: "noun",
+    phonetic: "ˈflætbrɛd",
+    pronunciationTip: "Pronounce 'FLAT-bred' (/ˈflæt.brɛd/).",
+    collocations: [
+      "grilled flatbread",
+      "warm flatbread",
+      "artisan flatbread",
+      "flatbread pizza",
+      "seasoned flatbread",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "roll out",
+        meaning: "flatten dough into thin disks",
+        arabic: "يَفْرِدُ الخُبْزَ رَقِيقًا",
+        example:
+          "Roll out the unleavened dough on a floured surface before searing it on a hot griddle.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Global Staple",
+        en: "Flatbread is a simple staple made of flour, water, and salt, baked quickly on a blistering hot surface.",
+        ar: "الخُبْزُ المَفْرُودُ هُوَ طَعَامٌ أَسَاسِيٌّ بَسِيطٌ مِنَ الدَّقِيقِ وَالمَاءِ، يُخْبَزُ سَرِيعًا عَلَى صَاجٍ سَاخِنٍ.",
+      },
+      {
+        context: "Appetizer Platter",
+        en: "Warm grilled flatbread brushed with garlic oil accompanied the Mediterranean dip assortment.",
+        ar: "رَافَقَ الخُبْزُ المُسَطَّحُ المَشْوِيُّ المَدْهُونُ بِزَيْتِ الثَّوْمِ تَشْكِيلَةَ المُقَبِّلَاتِ.",
+      },
+      {
+        context: "Culinary Varieties",
+        en: "From Indian naan to Mexican tortillas, flatbreads are essential to culinary traditions worldwide.",
+        ar: "مِنْ خُبْزِ النَّان الهِنْدِيِّ إِلَى التُّورْتِيلَا، تُعَدُّ الأَخْبَازُ المُسَطَّحَةُ أَسَاسِيَّةً عَالَمِيًّا.",
+      },
+    ],
+    exampleSentence:
+      "Flatbread is a simple staple made of flour, water, and salt, baked quickly on a blistering hot surface.",
+    exampleArabic:
+      "الخُبْزُ المَفْرُودُ هُوَ طَعَامٌ أَسَاسِيٌّ بَسِيطٌ مِنَ الدَّقِيقِ وَالمَاءِ، يُخْبَزُ سَرِيعًا عَلَى صَاجٍ سَاخِنٍ.",
+  },
+  muffin: {
+    id: "muffin",
+    arabic: "مَافِن (كَعْكَةٌ فَرْدِيَّةٌ إِسْفَنْجِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmʌfɪn",
+    pronunciationTip: "Pronounce 'MUF-in' (/ˈmʌf.ɪn/).",
+    collocations: [
+      "blueberry muffin",
+      "chocolate chip muffin",
+      "banana nut muffin",
+      "freshly baked muffin",
+      "muffin top",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "peel away",
+        meaning: "remove paper cup lining from pastry",
+        arabic: "يَنْزِعُ وَرَقَةَ المَافِن",
+        example: "Peel away the paper wrapper before enjoying the warm blueberry muffin.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Morning Pastry",
+        en: "She ordered a hot latte and a blueberry muffin bursting with juicy fruit from the bakery counter.",
+        ar: "طَلَبَتْ لَاتِيه سَاخِنًا وَكَعْكَةَ مَافِن بِالتُّوتِ البَرِّيِّ المُمْتَلِئِ بِالفَاكِهَةِ مِنَ المَخْبَزِ.",
+      },
+      {
+        context: "Home Baking",
+        en: "Baking muffins in a twelve-cup tin fills the entire home with warm aromas of cinnamon and butter.",
+        ar: "يَمْلَأُ خَبْزُ المَافِن فِي صِينِيَّةِ الكَعْكِ المَنْزِلَ بِرَوَائِحِ القِرْفَةِ وَالزُّبْدَةِ الدَّافِئَةِ.",
+      },
+      {
+        context: "Breakfast Variety",
+        en: "Bran muffins packed with raisins and walnuts offer a hearty and wholesome start to the day.",
+        ar: "تُوَفِّرُ كَعْكَاتُ مَافِن النُّخَالَةِ بِالزَّبِيبِ وَالجَوْزِ بِدَايَةً صِحِّيَّةً وَمُشْبِعَةً لِلْيَوْمِ.",
+      },
+    ],
+    exampleSentence:
+      "She ordered a hot latte and a blueberry muffin bursting with juicy fruit from the bakery counter.",
+    exampleArabic:
+      "طَلَبَتْ لَاتِيه سَاخِنًا وَكَعْكَةَ مَافِن بِالتُّوتِ البَرِّيِّ المُمْتَلِئِ بِالفَاكِهَةِ مِنَ المَخْبَزِ.",
+  },
+  donut: {
+    id: "donut",
+    arabic: "دُونَات (كَعْكَةٌ مَقْلِيَّةٌ حَلَقِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdoʊnʌt",
+    pronunciationTip: "Pronounce 'DOH-nut' (/ˈdoʊ.nʌt/).",
+    collocations: [
+      "glazed donut",
+      "chocolate donut",
+      "jelly-filled donut",
+      "powdered donut",
+      "box of donuts",
+      "donut shop",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "dip into",
+        meaning: "submerge top in sweet glaze",
+        arabic: "يُغَطِّسُ فِي صَلْصَةِ السُّكَّر",
+        example: "Bakers dip warm fried dough rings into glossy vanilla glaze.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bakery Treat",
+        en: "He brought a colorful dozen box of glazed, chocolate-frosted, and sprinkle donuts to the office.",
+        ar: "جَلَبَ إِلَى المَكْتَبِ صُنْدُوقَ دَسْتَةٍ مَلِيئًا بِدُونَات مُحَلَّاةٍ وَمُغَطَّاةٍ بِالشُّوكُولَاتَةِ.",
+      },
+      {
+        context: "Sweet Variety",
+        en: "A raspberry jelly-filled donut dusted in powdered sugar is an indulgent sweet treat.",
+        ar: "تُعَدُّ دُونَات مَحْشُوَّةٌ بِمُرَبَّى التُّوتِ المَرْشُوشَةُ بِالسُّكَّرِ حَلْوَى شَهِيَّةً لِلْغَايَةِ.",
+      },
+      {
+        context: "Coffee Pairing",
+        en: "Dipping a classic sugar-glazed donut into hot black coffee is a timeless breakfast combination.",
+        ar: "يُعَدُّ تَغْمِيسُ الدُّونَات المُحَلَّاةِ بِالسُّكَّرِ فِي القَهْوَةِ السَّاخِنَةِ مَزِيجًا كَلَاسِيكِيًّا.",
+      },
+    ],
+    exampleSentence:
+      "He brought a colorful dozen box of glazed, chocolate-frosted, and sprinkle donuts to the office.",
+    exampleArabic:
+      "جَلَبَ إِلَى المَكْتَبِ صُنْدُوقَ دَسْتَةٍ مَلِيئًا بِدُونَات مُحَلَّاةٍ وَمُغَطَّاةٍ بِالشُّوكُولَاتَةِ.",
+  },
+  danish: {
+    id: "danish",
+    arabic: "دَانِيش (مُعَجَّنَاتٌ دَانِمَارْكِيَّةٌ هَشَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdeɪnɪʃ",
+    pronunciationTip: "Pronounce 'DAY-nish' (/ˈdeɪ.nɪʃ/).",
+    collocations: [
+      "cheese danish",
+      "apple danish",
+      "fruit danish",
+      "flaky danish pastry",
+      "warm danish",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "drizzle over",
+        meaning: "apply thin zig-zag lines of icing",
+        arabic: "يَرُشُّ خُطُوطَ السُّكَّرِ فَوْقَ الفَطِيرَة",
+        example: "Drizzle sweet white icing over the cooled fruit danish pastries.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Pastry Showcase",
+        en: "The bakery display featured fruit danishes filled with sweetened cream cheese and apricot preserves.",
+        ar: "عَرَضَتْ خِزَانَةُ المَخْبَزِ مُعَجَّنَاتِ دَانِيش مَحْشُوَّةً بِجُبْنِ الكْرِيمَةِ المُحَلَّى وَمُرَبَّى المِشْمِشِ.",
+      },
+      {
+        context: "Laminated Layers",
+        en: "Laminated multi-layered dough gives authentic Danish pastries their incredibly light and flaky texture.",
+        ar: "تَمْنَحُ العَجِينَةُ المُوَرَّقَةُ مُعَجَّنَاتِ الدَّانِيش قَوَامَهَا الخَفِيفَ وَالهَشَّ لِلْغَايَةِ.",
+      },
+      {
+        context: "Breakfast Meeting",
+        en: "A platter of mini cherry and cheese danishes was served during the morning business conference.",
+        ar: "قُدِّمَ طَبَقٌ مِنْ مُعَجَّنَاتِ الدَّانِيش الصَّغِيرَةِ بِالكَرَزِ وَالجُبْنِ فِي المُؤْتَمَرِ الصَّبَاحِيِّ.",
+      },
+    ],
+    exampleSentence:
+      "The bakery display featured fruit danishes filled with sweetened cream cheese and apricot preserves.",
+    exampleArabic:
+      "عَرَضَتْ خِزَانَةُ المَخْبَزِ مُعَجَّنَاتِ دَانِيش مَحْشُوَّةً بِجُبْنِ الكْرِيمَةِ المُحَلَّى وَمُرَبَّى المِشْمِشِ.",
+  },
+  "cinnamon-roll": {
+    id: "cinnamon-roll",
+    arabic: "لَفَائِفُ القِرْفَة (سِينَابُون / لَفِيفَةُ قِرْفَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsɪnəmən roʊl",
+    pronunciationTip: "Pronounce 'SIN-uh-mun rohl' (/ˈsɪn.ə.mən roʊl/).",
+    collocations: [
+      "warm cinnamon roll",
+      "frosted cinnamon roll",
+      "cream cheese icing on cinnamon roll",
+      "freshly baked cinnamon rolls",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "roll up",
+        meaning: "spiral dough sheet filled with spice and butter",
+        arabic: "يَلُفُّ العَجِينَ حَلَزُونِيًّا",
+        example:
+          "Roll up the buttered brown-sugar dough tightly before slicing into individual spiral buns.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bakery Counter",
+        en: "A giant warm cinnamon roll smothered in sweet melted cream cheese icing tempted morning commuters.",
+        ar: "أَغْرَتْ لَفِيفَةُ قِرْفَةٍ دَافِئَةٌ عِمْلَاقَةٌ مُغَطَّاةٌ بِكْرِيمَةِ الجُبْنِ المُتَسَوِّقِينَ فِي الصَّبَاحِ.",
+      },
+      {
+        context: "Spiced Aroma",
+        en: "The warm fragrance of brown sugar, butter, and spicy ground cinnamon wafted through the bakery doors.",
+        ar: "فَاحَتِ الرَّائِحَةُ الدَّافِئَةُ لِلسُّكَّرِ البُنِّيِّ وَالزُّبْدَةِ وَالقِرْفَةِ عَبْرَ أَبْوَابِ المَخْبَزِ.",
+      },
+      {
+        context: "Weekend Breakfast",
+        en: "Baking fresh cinnamon rolls on Sunday morning has become a cherished weekend family tradition.",
+        ar: "أَصْبَحَ خَبْزُ لَفَائِفِ القِرْفَةِ الطَّازَجَةِ فِي صَبَاحِ الأَحَدِ تَقْلِيدًا عَائِلِيًّا مُحَبَّبًا.",
+      },
+    ],
+    exampleSentence:
+      "A giant warm cinnamon roll smothered in sweet melted cream cheese icing tempted morning commuters.",
+    exampleArabic:
+      "أَغْرَتْ لَفِيفَةُ قِرْفَةٍ دَافِئَةٌ عِمْلَاقَةٌ مُغَطَّاةٌ بِكْرِيمَةِ الجُبْنِ المُتَسَوِّقِينَ فِي الصَّبَاحِ.",
+  },
+  eclair: {
+    id: "eclair",
+    arabic: "إِكْلِير (حَلْوَى فَرَنْسِيَّةٌ مَحْشُوَّةٌ بِالكْرِيمَة)",
+    partOfSpeech: "noun",
+    phonetic: "eɪˈklɛər",
+    pronunciationTip: "Pronounce 'ay-KLAIR' (/eɪˈklɛər/).",
+    collocations: [
+      "chocolate eclair",
+      "custard-filled eclair",
+      "choux pastry eclair",
+      "french eclair",
+      "glazed eclair",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pipe into",
+        meaning: "fill hollow pastry shell using a nozzle",
+        arabic: "يَحْشُو بِكِيسِ الحَلْوَانِيّ",
+        example: "Pipe rich vanilla pastry cream directly into the baked hollow choux shells.",
+      },
+    ],
+    sentences: [
+      {
+        context: "French Patisserie",
+        en: "The patisserie presented crisp oblong eclairs filled with rich custard and topped with dark chocolate glaze.",
+        ar: "قَدَّمَ مَتْجَرُ الحَلَوِيَّاتِ إِكْلِير مُسْتَطِيلًا هَشًّا مَحْشُوًّا بِالكَسْتَرْدِ وَمُغَطًّى بِالشُّوكُولَاتَةِ.",
+      },
+      {
+        context: "Choux Pastry",
+        en: "Light and airy choux pastry dough is essential to achieving the perfect hollow cavity inside an éclair.",
+        ar: "تُعَدُّ عَجِينَةُ الشُّو الخَفِيفَةُ أَسَاسِيَّةً لِلْحُصُولِ عَلَى التَّجْوِيفِ المِثَالِيِّ لِلإِكْلِير.",
+      },
+      {
+        context: "Afternoon Tea",
+        en: "Miniature chocolate eclairs are elegant highlights of luxury high-tea pastry towers.",
+        ar: "تُعَدُّ قِطَعُ الإِكْلِير الصَّغِيرَةُ بِالشُّوكُولَاتَةِ مِنْ أَبْرَزِ حَلَوِيَّاتِ شَايِ بَعْدَ الظَّهِيرَةِ الفَاخِرَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The patisserie presented crisp oblong eclairs filled with rich custard and topped with dark chocolate glaze.",
+    exampleArabic:
+      "قَدَّمَ مَتْجَرُ الحَلَوِيَّاتِ إِكْلِير مُسْتَطِيلًا هَشًّا مَحْشُوًّا بِالكَسْتَرْدِ وَمُغَطًّى بِالشُّوكُولَاتَةِ.",
+  },
+  scone: {
+    id: "scone",
+    arabic: "سْكُون (كَعْكٌ بَرِيطَانِيٌّ يُقَدَّمُ مَعَ الشَّاي)",
+    partOfSpeech: "noun",
+    phonetic: "skoʊn",
+    pronunciationTip: "Pronounce 'SKOHN' (/skoʊn/).",
+    collocations: [
+      "clotted cream and jam with scone",
+      "blueberry scone",
+      "warm scone",
+      "traditional English scone",
+      "afternoon tea scone",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "split open",
+        meaning: "break pastry horizontally with fingers or butter knife",
+        arabic: "يَفْتَحُ كَعْكَةَ السْكُون نِصْفَيْن",
+        example:
+          "Split open the warm scone gently before spreading thick clotted cream and strawberry jam.",
+      },
+    ],
+    sentences: [
+      {
+        context: "British High Tea",
+        en: "Warm English scones served with thick clotted cream and strawberry jam are the crown of afternoon tea.",
+        ar: "يُعَدُّ السْكُون الإِنْجِلِيزِيُّ الدَّافِئُ مَعَ القِشْطَةِ الكَثِيفَةِ وَمُرَبَّى الفَرَاوْلَةِ تَاجَ شَايِ المَسَاءِ.",
+      },
+      {
+        context: "Bakery Selection",
+        en: "The baker prepared trays of golden blueberry scones and savory cheddar-chive biscuits.",
+        ar: "أَعَدَّ الخَبَّازُ صَوَانِيَ مِنْ كَعْكِ السْكُون الذَّهَبِيِّ بِالتُّوتِ وَبَسْكُويْتِ الجُبْنِ الشَّهِيِّ.",
+      },
+      {
+        context: "Texture Balance",
+        en: "A properly baked scone has a crumbly yet tender texture that melts delightfully in the mouth.",
+        ar: "يَمْتَازُ السْكُون المَخْبُوزُ بِإِتْقَانٍ بِقَوَامٍ هَشٍّ طَرِيٍّ يَذُوبُ فِي الفَمِ.",
+      },
+    ],
+    exampleSentence:
+      "Warm English scones served with thick clotted cream and strawberry jam are the crown of afternoon tea.",
+    exampleArabic:
+      "يُعَدُّ السْكُون الإِنْجِلِيزِيُّ الدَّافِئُ مَعَ القِشْطَةِ الكَثِيفَةِ وَمُرَبَّى الفَرَاوْلَةِ تَاجَ شَايِ المَسَاءِ.",
+  },
+  strudel: {
+    id: "strudel",
+    arabic: "سْتْرُودِل (فَطِيرَةٌ نِمْسَاوِيَّةٌ مَلْفُوفَةٌ بِالتُّفَّاح)",
+    partOfSpeech: "noun",
+    phonetic: "ˈstruːdəl",
+    pronunciationTip: "Pronounce 'STROO-dul' (/ˈstruː.dəl/).",
+    collocations: [
+      "apple strudel",
+      "flaky strudel pastry",
+      "warm strudel with custard",
+      "cinnamon strudel",
+      "traditional Viennese strudel",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "stretch out",
+        meaning: "pull dough paper-thin by hand",
+        arabic: "يَمُدُّ العَجِينَ رَقِيقًا كَالوَرَق",
+        example:
+          "Viennese bakers stretch out the strudel dough until you can read newspaper text through it.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Austrian Dessert",
+        en: "Traditional Viennese apple strudel encases spiced apples, plump raisins, and toasted breadcrumbs in paper-thin pastry.",
+        ar: "تَضُمُّ فَطِيرَةُ السْتْرُودِل النِّمْسَاوِيَّةُ التُّفَّاحَ المُتَبَّلَ وَالزَّبِيبَ فِي عَجِينٍ رَقِيقٍ كَالوَرَقِ.",
+      },
+      {
+        context: "Café Serving",
+        en: "A warm slice of apple strudel dusted with powdered sugar is traditionally served with vanilla sauce.",
+        ar: "تُقَدَّمُ شَرِيحَةُ السْتْرُودِل الدَّافِئَةُ المَرْشُوشَةُ بِالسُّكَّرِ مَعَ صَلْصَةِ الفَانِيلْيَا.",
+      },
+      {
+        context: "Baking Technique",
+        en: "Brushing melted butter between delicate dough layers ensures the strudel bakes to a golden crunch.",
+        ar: "يَضْمَنُ دَهْنُ الزُّبْدَةِ الذَّائِبَةِ بَيْنَ طَبَقَاتِ العَجِينِ قَرْمَشَةَ السْتْرُودِل الذَّهَبِيَّةَ.",
+      },
+    ],
+    exampleSentence:
+      "Traditional Viennese apple strudel encases spiced apples, plump raisins, and toasted breadcrumbs in paper-thin pastry.",
+    exampleArabic:
+      "تَضُمُّ فَطِيرَةُ السْتْرُودِل النِّمْسَاوِيَّةُ التُّفَّاحَ المُتَبَّلَ وَالزَّبِيبَ فِي عَجِينٍ رَقِيقٍ كَالوَرَقِ.",
+  },
+  macaron: {
+    id: "macaron",
+    arabic: "مَاكَارُون (حَلْوَى اللَّوْزِ الفَرَنْسِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˌmækəˈrɒn",
+    pronunciationTip: "Pronounce 'mak-uh-ROHN' (/ˌmæk.əˈrɒn/).",
+    collocations: [
+      "french macaron",
+      "box of macarons",
+      "colorful macarons",
+      "pistachio macaron",
+      "macaron shells",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sandwich together",
+        meaning: "press two delicate meringue shells with filling between",
+        arabic: "يُلْصِقُ طَبَقَتَيْنِ مَعًا بِالحَشْوَة",
+        example: "Sandwich together the matching pink almond shells with raspberry ganache.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Parisian Patisserie",
+        en: "The boutique showcase presented rainbow rows of delicate almond macarons with ganache fillings.",
+        ar: "عَرَضَتْ خِزَانَةُ المَتْجَرِ صُفُوفًا قَوْسِيَّةً مِنْ حَلْوَى المَاكَارُون الرَّقِيقَةِ بِاللَّوْزِ.",
+      },
+      {
+        context: "Meringue Shells",
+        en: "Mastering the smooth domed top and ruffled feet of a French macaron requires baking precision.",
+        ar: "يَتَطَلَّبُ إِتْقَانُ السَّطْحِ المَصْقُولِ وَالحَوَافِّ لِلْمَاكَارُون الفَرَنْسِيِّ دِقَّةً فِي الخَبْزِ.",
+      },
+      {
+        context: "Gift Box",
+        en: "He gave her a luxury pastel gift box filled with salted caramel and lavender macarons.",
+        ar: "قَدَّمَ لَهَا صُنْدُوقَ هَدَايَا فَاخِرًا مَلِيئًا بِمَاكَارُون الكَرَامِيلِ وَالخُزَامَى.",
+      },
+    ],
+    exampleSentence:
+      "The boutique showcase presented rainbow rows of delicate almond macarons with ganache fillings.",
+    exampleArabic:
+      "عَرَضَتْ خِزَانَةُ المَتْجَرِ صُفُوفًا قَوْسِيَّةً مِنْ حَلْوَى المَاكَارُون الرَّقِيقَةِ بِاللَّوْزِ.",
+  },
+  profiterole: {
+    id: "profiterole",
+    arabic: "بْرُوفِيتِرُول (كُرَاتُ حَلْوَى مَحْشُوَّةٌ بِالكْرِيمَة)",
+    partOfSpeech: "noun",
+    phonetic: "prəˈfɪtəroʊl",
+    pronunciationTip: "Pronounce 'pruh-FIT-uh-rohl' (/prəˈfɪt.ə.roʊl/).",
+    collocations: [
+      "chocolate profiteroles",
+      "cream-filled profiterole",
+      "tower of profiteroles",
+      "warm chocolate sauce on profiteroles",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "douse in",
+        meaning: "pour warm melted topping generously over dessert",
+        arabic: "يَغْمُرُ بِصَلْصَةِ الشُّوكُولَاتَةِ السَّاخِنَة",
+        example:
+          "Douse the chilled cream profiteroles in warm dark chocolate sauce before serving.",
+      },
+    ],
+    sentences: [
+      {
+        context: "French Dessert",
+        en: "Profiteroles are crisp choux pastry puffs filled with vanilla ice cream and smothered in hot fudge.",
+        ar: "البْرُوفِيتِرُول هِيَ لُقَيْمَاتُ عَجِينِ الشُّو الهَشَّةُ المَحْشُوَّةُ بِالآيْس كْرِيم وَالمَغْمُورَةُ بِالشُّوكُولَاتَةِ.",
+      },
+      {
+        context: "Festive Centerpiece",
+        en: "The banquet featured a towering croquembouche made of caramel-drizzled profiteroles.",
+        ar: "تَضَمَّنَتِ المَأْدُبَةُ بُرْجَ كْرُوكِمْبُوش شَاهِقًا مَصْنُوعًا مِنْ لُقَيْمَاتِ البْرُوفِيتِرُول بِالكَرَامِيلِ.",
+      },
+      {
+        context: "Restaurant Menu",
+        en: "A trio of vanilla bean profiteroles with chocolate sauce concluded the celebratory dinner.",
+        ar: "اخْتَتَمَ ثُلَاثِيُّ لُقَيْمَاتِ البْرُوفِيتِرُول مَعَ صَلْصَةِ الشُّوكُولَاتَةِ العَشَاءَ الاحْتِفَالِيَّ.",
+      },
+    ],
+    exampleSentence:
+      "Profiteroles are crisp choux pastry puffs filled with vanilla ice cream and smothered in hot fudge.",
+    exampleArabic:
+      "البْرُوفِيتِرُول هِيَ لُقَيْمَاتُ عَجِينِ الشُّو الهَشَّةُ المَحْشُوَّةُ بِالآيْس كْرِيم وَالمَغْمُورَةُ بِالشُّوكُولَاتَةِ.",
+  },
+  "birthday-cake": {
+    id: "birthday-cake",
+    arabic: "كَعْكَةُ عِيدِ المِيلَاد (تَوْرْتَةُ عِيدِ المِيلَاد)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbɜːrθdeɪ keɪk",
+    pronunciationTip: "Pronounce 'BERTH-day kayk' (/ˈbɜːrθ.deɪ keɪk/).",
+    collocations: [
+      "candles on a birthday cake",
+      "slice the birthday cake",
+      "decorated birthday cake",
+      "blow out candles on birthday cake",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "blow out",
+        meaning: "extinguish burning candles with a breath",
+        arabic: "يُطْفِئُ الشُّمُوعَ بِنَفْخَة",
+        example:
+          "Make a silent wish before you blow out the glowing candles on your birthday cake.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Celebration",
+        en: "Friends cheered as the birthday boy blew out all ten candles on his colorful frosted birthday cake.",
+        ar: "هَتَفَ الأَصْدِقَاءُ عِنْدَمَا أَطْفَأَ صَاحِبُ العِيدِ جَمِيعَ الشُّمُوعِ عَلَى كَعْكَةِ عِيدِ مِيلَادِهِ.",
+      },
+      {
+        context: "Custom Bakery Order",
+        en: "The bakery decorated the custom birthday cake with colorful sugar sprinkles and chocolate lettering.",
+        ar: "زَيَّنَ المَخْبَزُ كَعْكَةَ عِيدِ المِيلَادِ المُمَيَّزَةَ بِالسُّكَّرِ المُلَوَّنِ وَحُرُوفِ الشُّوكُولَاتَةِ.",
+      },
+      {
+        context: "Party Tradition",
+        en: "Cutting the festive birthday cake is the culminating highlight of childhood birthday parties.",
+        ar: "يُعَدُّ تَقْطِيعُ كَعْكَةِ عِيدِ المِيلَادِ الاحْتِفَالِيَّةِ الحَدَثَ الأَبْرَزَ فِي حَفَلَاتِ الأَطْفَالِ.",
+      },
+    ],
+    exampleSentence:
+      "Friends cheered as the birthday boy blew out all ten candles on his colorful frosted birthday cake.",
+    exampleArabic:
+      "هَتَفَ الأَصْدِقَاءُ عِنْدَمَا أَطْفَأَ صَاحِبُ العِيدِ جَمِيعَ الشُّمُوعِ عَلَى كَعْكَةِ عِيدِ مِيلَادِهِ.",
+  },
+  "wedding-cake": {
+    id: "wedding-cake",
+    arabic: "كَعْكَةُ الزِّفَاف (تَوْرْتَةُ العُرْس)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɛdɪŋ keɪk",
+    pronunciationTip: "Pronounce 'WED-ing kayk' (/ˈwɛd.ɪŋ keɪk/).",
+    collocations: [
+      "tiered wedding cake",
+      "cut the wedding cake",
+      "fondant wedding cake",
+      "wedding cake topper",
+      "slice of wedding cake",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "cut into",
+        meaning: "slice the celebratory pastry together",
+        arabic: "يَقْطَعُ كَعْكَةَ الزِّفَاف",
+        example:
+          "The bride and groom held the silver knife together to cut into the towering wedding cake.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Reception Centerpiece",
+        en: "A magnificent four-tier white wedding cake adorned with sugar flowers stood at the ballroom center.",
+        ar: "وَقَفَتْ كَعْكَةُ زِفَافٍ بَيْضَاءُ بَدِيعَةٌ مِنْ أَرْبَعِ طَبَقَاتٍ مُزَيَّنَةٍ بِالزُّهُورِ فِي قَاعَةِ الاحْتِفَالِ.",
+      },
+      {
+        context: "Cake Artistry",
+        en: "Master decorators spent twenty hours sculpting delicate edible lace along the wedding cake tiers.",
+        ar: "أَمْضَى خُبَرَاءُ التَّزْيِينِ عِشْرِينَ سَاعَةً فِي نَحْتِ دَانْتِيلَا صَالِحَةٍ لِلأَكْلِ عَلَى كَعْكَةِ العُرْسِ.",
+      },
+      {
+        context: "Tradition",
+        en: "Guests celebrated as the newlyweds shared the first ceremonial slice of rich wedding cake.",
+        ar: "احْتَفَلَ الضُّيُوفُ عِنْدَمَا شَارَكَ العَرُوسَانِ أَوَّلَ شَرِيحَةٍ رَسْمِيَّةٍ مِنْ كَعْكَةِ الزِّفَافِ.",
+      },
+    ],
+    exampleSentence:
+      "A magnificent four-tier white wedding cake adorned with sugar flowers stood at the ballroom center.",
+    exampleArabic:
+      "وَقَفَتْ كَعْكَةُ زِفَافٍ بَيْضَاءُ بَدِيعَةٌ مِنْ أَرْبَعِ طَبَقَاتٍ مُزَيَّنَةٍ بِالزُّهُورِ فِي قَاعَةِ الاحْتِفَالِ.",
+  },
+  cupcake: {
+    id: "cupcake",
+    arabic: "كَبْ كَيْك (كَعْكَةُ الفِنْجَانِ الفَرْدِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkʌpkeɪk",
+    pronunciationTip: "Pronounce 'KUP-kayk' (/ˈkʌp.keɪk/).",
+    collocations: [
+      "frosted cupcake",
+      "vanilla cupcake",
+      "red velvet cupcake",
+      "box of cupcakes",
+      "cupcake swirl",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "swirl on",
+        meaning: "pipe decorative buttercream in circular motion",
+        arabic: "يُزَيِّنُ بِدَوَائِرَ حَلَزُونِيَّةٍ مِنَ الكْرِيمَة",
+        example: "Swirl on creamy pink strawberry frosting over each cooled cupcake.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bakery Treats",
+        en: "The glass case displayed red velvet cupcakes crowned with swirls of rich cream cheese frosting.",
+        ar: "عَرَضَتِ الخِزَانَةُ كَبْ كَيْك الرِّيد فِيلْفِيت المُتَوَّجَ بِدَوَائِرَ مِنْ كْرِيمَةِ الجُبْنِ الغَنِيَّةِ.",
+      },
+      {
+        context: "Party Portion",
+        en: "Individual cupcakes are practical and mess-free alternatives to large sheet cakes at children's parties.",
+        ar: "تُعَدُّ قِطَعُ الكَبْ كَيْك الفَرْدِيَّةُ بَدَائِلَ عَمَلِيَّةً وَمُرَتَّبَةً لِلْكَعْكِ الكَبِيرِ فِي حَفَلَاتِ الأَطْفَالِ.",
+      },
+      {
+        context: "Gourmet Flavors",
+        en: "Specialty cupcake bakeries offer exotic flavors like salted caramel, matcha green tea, and lemon curd.",
+        ar: "تُقَدِّمُ مَخَابِزُ الكَبْ كَيْك نَكْهَاتٍ مُمَيَّزَةً كَالكَرَامِيلِ المُمَلَّحِ وَالمَاتْشَا وَاللَّيْمُونِ.",
+      },
+    ],
+    exampleSentence:
+      "The glass case displayed red velvet cupcakes crowned with swirls of rich cream cheese frosting.",
+    exampleArabic:
+      "عَرَضَتِ الخِزَانَةُ كَبْ كَيْك الرِّيد فِيلْفِيت المُتَوَّجَ بِدَوَائِرَ مِنْ كْرِيمَةِ الجُبْنِ الغَنِيَّةِ.",
+  },
+  cheesecake: {
+    id: "cheesecake",
+    arabic: "تْشِيز كَيْك (كَعْكَةُ الجُبْن)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtʃiːzkeɪk",
+    pronunciationTip: "Pronounce 'CHEEZ-kayk' (/ˈtʃiːz.keɪk/).",
+    collocations: [
+      "New York cheesecake",
+      "strawberry cheesecake",
+      "graham cracker crust cheesecake",
+      "slice of cheesecake",
+      "baked cheesecake",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "chill down",
+        meaning: "refrigerate until firm and set",
+        arabic: "يُبَرِّدُ حَتَّى يَتَمَاسَك",
+        example: "Chill down the baked cheesecake overnight in the refrigerator before slicing.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Restaurant Dessert",
+        en: "Classic New York cheesecake features a dense, velvety cream cheese filling over a crunchy graham cracker crust.",
+        ar: "يَمْتَازُ تْشِيز كَيْك نِيُويُورْك الكَلَاسِيكِيُّ بِحَشْوَةِ جُبْنٍ مَخْمَلِيَّةٍ كَثِيفَةٍ فَوْقَ قَاعِدَةِ بَسْكُويْت.",
+      },
+      {
+        context: "Fruit Compote",
+        en: "A generous ladle of warm strawberry compote balanced the rich sweetness of the cheesecake slice.",
+        ar: "عَادَلَتْ مِغْرَفَةٌ سَخِيَّةٌ مِنْ صَلْصَةِ الفَرَاوْلَةِ الدَّافِئَةِ حَلَاوَةَ شَرِيحَةِ التْشِيز كَيْك.",
+      },
+      {
+        context: "Baking Method",
+        en: "Baking cheesecake in a gentle water bath prevents cracks from forming across its delicate surface.",
+        ar: "يَمْنَعُ خَبْزُ التْشِيز كَيْك فِي حَمَّامٍ مَائِيٍّ هَادِئٍ تَشَقُّقَ سَطْحِهِ الرَّقِيقِ.",
+      },
+    ],
+    exampleSentence:
+      "Classic New York cheesecake features a dense, velvety cream cheese filling over a crunchy graham cracker crust.",
+    exampleArabic:
+      "يَمْتَازُ تْشِيز كَيْك نِيُويُورْك الكَلَاسِيكِيُّ بِحَشْوَةِ جُبْنٍ مَخْمَلِيَّةٍ كَثِيفَةٍ فَوْقَ قَاعِدَةِ بَسْكُويْت.",
+  },
+  "chocolate-cake": {
+    id: "chocolate-cake",
+    arabic: "كَعْكَةُ الشُّوكُولَاتَة (كَيْكُ الشُّوكُولَاتَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtʃɒklɪt keɪk",
+    pronunciationTip: "Pronounce 'CHOK-lit kayk' (/ˈtʃɒk.lɪt keɪk/).",
+    collocations: [
+      "rich chocolate cake",
+      "slice of chocolate cake",
+      "fudge chocolate cake",
+      "moist chocolate cake",
+      "chocolate layer cake",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "layer with",
+        meaning: "spread filling between cake sponges",
+        arabic: "يَضَعُ طَبَقَاتٍ مَعَ الحَشْوَة",
+        example: "Layer the dark sponge tiers with rich chocolate fudge buttercream.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Decadent Dessert",
+        en: "The bakery created a decadent triple-layer chocolate cake covered in glossy dark chocolate ganache.",
+        ar: "أَعَدَّ المَخْبَزُ كَعْكَةَ شُوكُولَاتَةٍ فَاخِرَةً مِنْ ثَلَاثِ طَبَقَاتٍ مُغَطَّاةٍ بِجَانَاش الشُّوكُولَاتَةِ الدَّاكِنَةِ.",
+      },
+      {
+        context: "Afternoon Treat",
+        en: "A moist slice of rich chocolate cake served with fresh whipped cream is pure comfort food.",
+        ar: "تُعَدُّ شَرِيحَةُ كَعْكَةِ الشُّوكُولَاتَةِ الطَّرِيَّةُ مَعَ الكْرِيمَةِ المَخْفُوقَةِ مَصْدَرَ رَاحَةٍ وَلَذَّةٍ.",
+      },
+      {
+        context: "Celebration Favorite",
+        en: "Chocolate cake remains the universally favored dessert option for parties of all generations.",
+        ar: "تَبْقَى كَعْكَةُ الشُّوكُولَاتَةِ الخِيَارَ الحُلْوَ الأَكْثَرَ تَفْضِيلًا عَالَمِيًّا فِي الحَفَلَاتِ.",
+      },
+    ],
+    exampleSentence:
+      "The bakery created a decadent triple-layer chocolate cake covered in glossy dark chocolate ganache.",
+    exampleArabic:
+      "أَعَدَّ المَخْبَزُ كَعْكَةَ شُوكُولَاتَةٍ فَاخِرَةً مِنْ ثَلَاثِ طَبَقَاتٍ مُغَطَّاةٍ بِجَانَاش الشُّوكُولَاتَةِ الدَّاكِنَةِ.",
+  },
+  "carrot-cake": {
+    id: "carrot-cake",
+    arabic: "كَعْكَةُ الجَزَر (كَيْكُ الجَزَر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkærət keɪk",
+    pronunciationTip: "Pronounce 'KAIR-ut kayk' (/ˈkær.ət keɪk/).",
+    collocations: [
+      "spiced carrot cake",
+      "cream cheese icing on carrot cake",
+      "walnut carrot cake",
+      "moist carrot cake",
+      "slice of carrot cake",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "fold in",
+        meaning: "mix grated ingredients gently into batter",
+        arabic: "يَمْزِجُ بِهُدُوءٍ فِي الخَلِيط",
+        example:
+          "Fold in the finely grated carrots and chopped walnuts into the spiced cake batter.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Spiced Dessert",
+        en: "Moist spiced carrot cake studded with walnuts and topped with tangy cream cheese frosting is a cafe staple.",
+        ar: "يُعَدُّ كَيْكُ الجَزَرِ المُتَبَّلُ المُرَصَّعُ بِالجَوْزِ مَعَ كْرِيمَةِ الجُبْنِ طَبَقًا أَسَاسِيًّا فِي المَقَاهِي.",
+      },
+      {
+        context: "Baking Texture",
+        en: "Freshly grated carrots release natural moisture during baking, keeping the sponge exceptionally tender.",
+        ar: "يُفْرِزُ الجَزَرُ المَبْشُورُ طُزُوجَةً وَرُطُوبَةً طَبِيعِيَّةً أَثْنَاءَ الخَبْزِ لِإِبْقَاءِ الكَعْكَةِ طَرِيَّةً.",
+      },
+      {
+        context: "Warm Spices",
+        en: "Cinnamon, nutmeg, and ginger lend warm autumnal spice notes to traditional carrot cake recipes.",
+        ar: "تَمْنَحُ القِرْفَةُ وَجَوْزَةُ الطِّيبِ وَالزَّنْجَبِيلُ نَفَحَاتٍ خَرِيفِيَّةً دَافِئَةً لِكَعْكَةِ الجَزَرِ.",
+      },
+    ],
+    exampleSentence:
+      "Moist spiced carrot cake studded with walnuts and topped with tangy cream cheese frosting is a cafe staple.",
+    exampleArabic:
+      "يُعَدُّ كَيْكُ الجَزَرِ المُتَبَّلُ المُرَصَّعُ بِالجَوْزِ مَعَ كْرِيمَةِ الجُبْنِ طَبَقًا أَسَاسِيًّا فِي المَقَاهِي.",
+  },
+  "apple-pie": {
+    id: "apple-pie",
+    arabic: "فَطِيرَةُ التُّفَّاح",
+    partOfSpeech: "noun",
+    phonetic: "ˈæpəl paɪ",
+    pronunciationTip: "Pronounce 'AP-ul py' (/ˈæp.əl paɪ/).",
+    collocations: [
+      "warm apple pie",
+      "slice of apple pie",
+      "apple pie à la mode",
+      "lattice crust apple pie",
+      "cinnamon apple pie",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "top with",
+        meaning: "place ice cream or cream on warm dessert",
+        arabic: "يُغَطِّي بِالآيْس كْرِيم",
+        example: "Top the warm spiced apple pie with a generous scoop of vanilla bean ice cream.",
+      },
+    ],
+    sentences: [
+      {
+        context: "American Classic",
+        en: "Warm apple pie with a flaky butter crust and cinnamon-spiced filling is a classic comfort dessert.",
+        ar: "تُعَدُّ فَطِيرَةُ التُّفَّاحِ الدَّافِئَةُ ذَاتُ القِشْرَةِ الهَشَّةِ وَحَشْوَةِ القِرْفَةِ حَلْوَى كَلَاسِيكِيَّةً مُرِيحَةً.",
+      },
+      {
+        context: "Lattice Crust",
+        en: "Grandmother carefully wove strips of pastry dough into a beautiful decorative lattice over the pie.",
+        ar: "ضَفَرَتِ الجَدَّةُ شَرَائِطَ العَجِينِ بِعِنَايَةٍ لِتَكْوِينِ شَبَكَةٍ زُخْرُفِيَّةٍ جَمِيلَةٍ فَوْقَ الفَطِيرَةِ.",
+      },
+      {
+        context: "Dessert Serving",
+        en: "Serving apple pie à la mode with melting vanilla ice cream enhances its warm cinnamon spices.",
+        ar: "يُعَزِّزُ تَقْدِيمُ فَطِيرَةِ التُّفَّاحِ مَعَ آيْس كْرِيم الفَانِيلْيَا الذَّائِبِ نَكْهَةَ القِرْفَةِ الدَّافِئَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Warm apple pie with a flaky butter crust and cinnamon-spiced filling is a classic comfort dessert.",
+    exampleArabic:
+      "تُعَدُّ فَطِيرَةُ التُّفَّاحِ الدَّافِئَةُ ذَاتُ القِشْرَةِ الهَشَّةِ وَحَشْوَةِ القِرْفَةِ حَلْوَى كَلَاسِيكِيَّةً مُرِيحَةً.",
+  },
+  "cherry-pie": {
+    id: "cherry-pie",
+    arabic: "فَطِيرَةُ الكَرَز",
+    partOfSpeech: "noun",
+    phonetic: "ˈtʃɛri paɪ",
+    pronunciationTip: "Pronounce 'CHAIR-ee py' (/ˈtʃɛr.i paɪ/).",
+    collocations: [
+      "tart cherry pie",
+      "slice of cherry pie",
+      "sour cherry pie",
+      "sweet cherry pie",
+      "flaky cherry pie",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "bubble up",
+        meaning: "simmer and release fragrant steam through crust vents",
+        arabic: "يَفُورُ وَيَتَصَاعَدُ بُخَارُهُ فِي الفُرْن",
+        example: "The ruby cherry filling bubbled up through slits in the golden pastry crust.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Fruit Pie",
+        en: "The baker pulled a bubbling cherry pie filled with ruby-red tart cherries from the stone oven.",
+        ar: "أَخْرَجَ الخَبَّازُ فَطِيرَةَ كَرَزٍ تَفُورُ بِحَبَّاتِ الكَرَزِ الحَامِضِ القِرْمِزِيِّ مِنَ الفُرْنِ.",
+      },
+      {
+        context: "Flavor Balance",
+        en: "Sour Montmorency cherries provide the perfect tangy contrast to sweet golden pastry crusts.",
+        ar: "يَمْنَحُ كَرَزُ مُونْتْمُورِنْسِي الحَامِضُ تَبَايُنًا لَاذِعًا مِثَالِيًّا مَعَ قِشْرَةِ الفَطِيرَةِ الحُلْوَةِ.",
+      },
+      {
+        context: "Summer Harvest",
+        en: "Baking fresh cherry pies is a cherished tradition during peak summer orchard harvest seasons.",
+        ar: "يُعَدُّ خَبْزُ فَطَائِرِ الكَرَزِ الطَّازَجَةِ تَقْلِيدًا رَائِعًا خِلَالَ مَوْسِمِ حَصَادِ البَسَاتِينِ.",
+      },
+    ],
+    exampleSentence:
+      "The baker pulled a bubbling cherry pie filled with ruby-red tart cherries from the stone oven.",
+    exampleArabic:
+      "أَخْرَجَ الخَبَّازُ فَطِيرَةَ كَرَزٍ تَفُورُ بِحَبَّاتِ الكَرَزِ الحَامِضِ القِرْمِزِيِّ مِنَ الفُرْنِ.",
+  },
+  "lemon-tart": {
+    id: "lemon-tart",
+    arabic: "تَارْتُ اللَّيْمُون (فَطِيرَةُ اللَّيْمُونِ الهَشَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈlɛmən tɑːrt",
+    pronunciationTip: "Pronounce 'LEM-un tart' (/ˈlɛm.ən tɑːrt/).",
+    collocations: [
+      "tangy lemon tart",
+      "lemon meringue tart",
+      "slice of lemon tart",
+      "french lemon tart",
+      "buttery lemon tart crust",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "torch up",
+        meaning: "brown meringue tips with a kitchen flame torch",
+        arabic: "يُحَمِّرُ قِمَمَ المِيرَانْغ بِالمِشْعَل",
+        example: "The pastry chef torched up the meringue peaks on the lemon tart until golden.",
+      },
+    ],
+    sentences: [
+      {
+        context: "French Patisserie",
+        en: "A classic French lemon tart balances smooth tart citrus curd with a crisp buttery shortcrust pastry shell.",
+        ar: "تُوَازِنُ فَطِيرَةُ اللَّيْمُونِ الفَرَنْسِيَّةُ الكَلَاسِيكِيَّةُ بَيْنَ كْرِيمَةِ اللَّيْمُونِ وَقَاعِدَةِ البَسْكُويْت.",
+      },
+      {
+        context: "Citrus Zest",
+        en: "Finely grated yellow lemon zest gives the velvety citrus curd its vibrant aroma and bright tang.",
+        ar: "يَمْنَحُ بَشْرُ قِشْرِ اللَّيْمُونِ النَّاعِمُ كْرِيمَةَ اللَّيْمُونِ رَائِحَتَهَا العَطِرَةَ وَحُمُوضَتَهَا المُشْرِقَةَ.",
+      },
+      {
+        context: "Meringue Topping",
+        en: "Toasted peaks of fluffy white meringue add cloud-like sweetness to a zesty lemon tart.",
+        ar: "تُضِيفُ قِمَمُ المِيرَانْغ البَيْضَاءُ الهَشَّةُ المُحَمَّصَةُ حَلَاوَةً خَفِيفَةً لِتَارْتِ اللَّيْمُونِ اللَّاذِعِ.",
+      },
+    ],
+    exampleSentence:
+      "A classic French lemon tart balances smooth tart citrus curd with a crisp buttery shortcrust pastry shell.",
+    exampleArabic:
+      "تُوَازِنُ فَطِيرَةُ اللَّيْمُونِ الفَرَنْسِيَّةُ الكَلَاسِيكِيَّةُ بَيْنَ كْرِيمَةِ اللَّيْمُونِ وَقَاعِدَةِ البَسْكُويْت.",
+  },
+  brownie: {
+    id: "brownie",
+    arabic: "بْرَاوْنِيز (كَعْكَةُ الشُّوكُولَاتَةِ الدَّسِمَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbraʊni",
+    pronunciationTip: "Pronounce 'BROWN-ee' (/ˈbraʊ.ni/).",
+    collocations: [
+      "fudgy brownie",
+      "chocolate brownie",
+      "warm brownie with ice cream",
+      "walnut brownie",
+      "chewy brownie",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "cut into",
+        meaning: "divide baked tray into square portions",
+        arabic: "يُقَطِّعُ إِلَى مُرَبَّعَات",
+        example: "Let the brownie tray cool completely before you cut into even squares.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Chocolate Treat",
+        en: "A warm fudgy chocolate brownie with a cracked shiny top makes an irresistible bakery indulgence.",
+        ar: "تُشَكِّلُ قِطْعَةُ البْرَاوْنِيز الشُّوكُولَاتِيَّةُ الدَّافِئَةُ ذَاتُ السَّطْحِ اللَّامِعِ حَلْوَى مَخْبَزٍ لَا تُقَاوَمُ.",
+      },
+      {
+        context: "Dessert Sundae",
+        en: "They created a decadent dessert by topping a warm walnut brownie with vanilla gelato and caramel sauce.",
+        ar: "صَنَعُوا حَلْوَى فَاخِرَةً بِتَغْطِيَةِ بْرَاوْنِيز الجَوْزِ الدَّافِئِ بِآيْس كْرِيم الفَانِيلْيَا وَالكَرَامِيلِ.",
+      },
+      {
+        context: "Texture Profile",
+        en: "Some prefer cakey brownies while others love rich, gooey fudge centers that melt in the mouth.",
+        ar: "يُفَضِّلُ البَعْضُ البْرَاوْنِيز الإِسْفَنْجِيَّ بَيْنَمَا يَعْشَقُ الآخَرُونَ قَوَامَ الفَدْجِ الذَّائِبَ.",
+      },
+    ],
+    exampleSentence:
+      "A warm fudgy chocolate brownie with a cracked shiny top makes an irresistible bakery indulgence.",
+    exampleArabic:
+      "تُشَكِّلُ قِطْعَةُ البْرَاوْنِيز الشُّوكُولَاتِيَّةُ الدَّافِئَةُ ذَاتُ السَّطْحِ اللَّامِعِ حَلْوَى مَخْبَزٍ لَا تُقَاوَمُ.",
+  },
+  "chocolate-chip-cookie": {
+    id: "chocolate-chip-cookie",
+    arabic: "بَسْكُويْتُ حَبِيبَاتِ الشُّوكُولَاتَة (كُوكِيز بِالشُّوكُولَاتَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtʃɒklɪt tʃɪp ˈkʊki",
+    pronunciationTip: "Pronounce 'CHOK-lit chip KOOK-ee' (/ˈtʃɒk.lɪt tʃɪp ˈkʊk.i/).",
+    collocations: [
+      "warm chocolate chip cookie",
+      "freshly baked chocolate chip cookies",
+      "chewy chocolate chip cookie",
+      "milk and chocolate chip cookies",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "dip into",
+        meaning: "dunk biscuit into cold milk",
+        arabic: "يُغَطِّسُ فِي الحَلِيب",
+        example: "He dipped the warm chocolate chip cookie into a tall glass of ice-cold milk.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bakery Favorite",
+        en: "Freshly baked chocolate chip cookies with molten chocolate pockets cooled on parchment paper.",
+        ar: "بَرَّدَ بَسْكُويْتُ حَبِيبَاتِ الشُّوكُولَاتَةِ المَخْبُوزُ حَدِيثًا ذُو قِطَعِ الشُّوكُولَاتَةِ الذَّائِبَةِ عَلَى الوَرَقِ.",
+      },
+      {
+        context: "Classic Snack",
+        en: "Warm chocolate chip cookies served alongside cold milk are a beloved after-school comfort snack.",
+        ar: "يُعَدُّ كُوكِيز الشُّوكُولَاتَةِ الدَّافِئُ مَعَ الحَلِيبِ البَارِدِ وَجْبَةً خَفِيفَةً مُحَبَّبَةً بَعْدَ المَدْرَسَةِ.",
+      },
+      {
+        context: "Baking Science",
+        en: "Balancing brown and white sugars creates cookies with crisp golden rims and soft, chewy centers.",
+        ar: "يَخْلُقُ مُوَازَنَةُ السُّكَّرِ البُنِّيِّ وَالأَبْيَضِ بَسْكُويْتًا بِحَوَافَّ مُقَرْمَشَةٍ وَقَلْبٍ طَرِيٍّ.",
+      },
+    ],
+    exampleSentence:
+      "Freshly baked chocolate chip cookies with molten chocolate pockets cooled on parchment paper.",
+    exampleArabic:
+      "بَرَّدَ بَسْكُويْتُ حَبِيبَاتِ الشُّوكُولَاتَةِ المَخْبُوزُ حَدِيثًا ذُو قِطَعِ الشُّوكُولَاتَةِ الذَّائِبَةِ عَلَى الوَرَقِ.",
+  },
+  "sugar-cookie": {
+    id: "sugar-cookie",
+    arabic: "بَسْكُويْتُ السُّكَّر (كُوكِيز السُّكَّر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈʃʊɡər ˈkʊki",
+    pronunciationTip: "Pronounce 'SHOOG-er KOOK-ee' (/ˈʃʊɡ.ər ˈkʊk.i/).",
+    collocations: [
+      "decorated sugar cookies",
+      "frosted sugar cookie",
+      "holiday sugar cookies",
+      "cutout sugar cookie",
+      "sweet sugar cookie",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "cut out",
+        meaning: "stamp shapes from rolled dough",
+        arabic: "يُقَطِّعُ العَجِينَ بِقَوَالِبَ مُشَكَّلَة",
+        example: "Children used metal star molds to cut out festive holiday sugar cookies.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Holiday Baking",
+        en: "Children decorated star-shaped sugar cookies with pastel royal icing and shimmering sugar crystals.",
+        ar: "زَيَّنَ الأَطْفَالُ بَسْكُويْتَ السُّكَّرِ عَلَى شَكْلِ نُجُومٍ بِصَلْصَةِ السُّكَّرِ وَالبِلَّوْرَاتِ اللَّامِعَةِ.",
+      },
+      {
+        context: "Tender Texture",
+        en: "A classic butter sugar cookie has a delicate crumb that snaps cleanly and melts on the tongue.",
+        ar: "يَمْتَازُ بَسْكُويْتُ السُّكَّرِ بِالزُّبْدَةِ بِقَوَامٍ رَقِيقٍ يَنْكَسِرُ بِنُعُومَةٍ وَيَذُوبُ فِي الفَمِ.",
+      },
+      {
+        context: "Bakery Treats",
+        en: "The bakery counter showcased cheerful animal-shaped sugar cookies frosted in bright vibrant colors.",
+        ar: "عَرَضَ كَاوَنْتَر المَخْبَزِ بَسْكُويْتَ سُكَّرٍ مَرِحًا عَلَى أَشْكَالِ حَيَوَانَاتٍ مُلَوَّنَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "Children decorated star-shaped sugar cookies with pastel royal icing and shimmering sugar crystals.",
+    exampleArabic:
+      "زَيَّنَ الأَطْفَالُ بَسْكُويْتَ السُّكَّرِ عَلَى شَكْلِ نُجُومٍ بِصَلْصَةِ السُّكَّرِ وَالبِلَّوْرَاتِ اللَّامِعَةِ.",
+  },
+  gingerbread: {
+    id: "gingerbread",
+    arabic: "خُبْزُ الزَّنْجَبِيل (بَسْكُويْتُ الزَّنْجَبِيل / جِنْجَرْبْرِيد)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdʒɪndʒərbred",
+    pronunciationTip: "Pronounce 'JIN-jer-bred' (/ˈdʒɪn.dʒər.brɛd/).",
+    collocations: [
+      "gingerbread house",
+      "gingerbread man",
+      "spiced gingerbread cookies",
+      "molasses gingerbread",
+      "holiday gingerbread",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "glue together",
+        meaning: "assemble baked walls with thick royal icing",
+        arabic: "يُلْصِقُ جُدْرَانَ بَيْتِ الزَّنْجَبِيل",
+        example: "Use stiff royal icing to glue together the walls of the gingerbread house.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Holiday Tradition",
+        en: "Families built a decorative gingerbread house assembled with sweet royal icing and gumdrop candies.",
+        ar: "بَنَتِ العَائِلَاتُ بَيْتَ زَنْجَبِيلٍ زُخْرُفِيًّا مُجَمَّعًا بِصَلْصَةِ السُّكَّرِ وَحَلْوَى الجِلِي.",
+      },
+      {
+        context: "Spiced Cookies",
+        en: "Gingerbread men spiced with ground ginger, cinnamon, and dark molasses filled the kitchen with warmth.",
+        ar: "مَلَأَتْ كَعْكَاتُ رِجَالِ الزَّنْجَبِيلِ المُتَبَّلَةُ بِالقِرْفَةِ وَالعَسَلِ الأَسْوَدِ المَطْبَخَ بِالدِّفْءِ.",
+      },
+      {
+        context: "Festive Market",
+        en: "Traditional European Christmas markets sell heart-shaped gingerbread cookies decorated with affectionate greetings.",
+        ar: "تَبِيعُ أَسْوَاقُ أُورُوبَّا بَسْكُويْتَ زَنْجَبِيلٍ عَلَى شَكْلِ قُلُوبٍ مَكْتُوبٍ عَلَيْهَا عِبَارَاتُ مَحَبَّةٍ.",
+      },
+    ],
+    exampleSentence:
+      "Families built a decorative gingerbread house assembled with sweet royal icing and gumdrop candies.",
+    exampleArabic:
+      "بَنَتِ العَائِلَاتُ بَيْتَ زَنْجَبِيلٍ زُخْرُفِيًّا مُجَمَّعًا بِصَلْصَةِ السُّكَّرِ وَحَلْوَى الجِلِي.",
+  },
+  shortbread: {
+    id: "shortbread",
+    arabic: "شُورْت بْرِيد (بَسْكُويْتُ الزُّبْدَةِ الإِسْكُتْلَنْدِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈʃɔːrtbrɛd",
+    pronunciationTip: "Pronounce 'SHORT-bred' (/ˈʃɔːrt.brɛd/).",
+    collocations: [
+      "scottish shortbread",
+      "buttery shortbread fingers",
+      "traditional shortbread",
+      "crumbly shortbread",
+      "shortbread biscuit",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "prick with",
+        meaning: "pierce pattern of small holes across surface",
+        arabic: "يَثْقُبُ بِالشَّوْكَة",
+        example: "Prick the shortbread dough with fork tines to prevent bubbling in the oven.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Scottish Biscuit",
+        en: "Traditional Scottish shortbread is made from one part sugar, two parts butter, and three parts flour.",
+        ar: "يُصْنَعُ بَسْكُويْتُ الشُّورْت بْرِيد الإِسْكُتْلَنْدِيُّ مِنْ جُزْءِ سُكَّرٍ وَجُزْأَيْنِ زُبْدَةٍ وَثَلَاثَةِ أَجْزَاءِ دَقِيقٍ.",
+      },
+      {
+        context: "Rich Crumb",
+        en: "The buttery, melt-in-your-mouth texture of rich shortbread fingers pairs perfectly with Earl Grey tea.",
+        ar: "يَتَنَاغَمُ قَوَامُ أَصَابِعِ الشُّورْت بْرِيد بِالزُّبْدَةِ الذَّائِبَةِ فِي الفَمِ مَعَ شَايِ إِيرْل غْرَاي.",
+      },
+      {
+        context: "Holiday Tin",
+        en: "He received a decorative tartan tin packed with rich golden shortbread rounds for the holidays.",
+        ar: "تَلَقَّى عُلْبَةً مَعْدَنِيَّةً مُزَخْرَفَةً مَلِيئَةً بِدَوَائِرِ الشُّورْت بْرِيد الذَّهَبِيَّةِ لِلْعُطْلَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Traditional Scottish shortbread is made from one part sugar, two parts butter, and three parts flour.",
+    exampleArabic:
+      "يُصْنَعُ بَسْكُويْتُ الشُّورْت بْرِيد الإِسْكُتْلَنْدِيُّ مِنْ جُزْءِ سُكَّرٍ وَجُزْأَيْنِ زُبْدَةٍ وَثَلَاثَةِ أَجْزَاءِ دَقِيقٍ.",
+  },
+  "oatmeal-cookie": {
+    id: "oatmeal-cookie",
+    arabic: "بَسْكُويْتُ الشُّوفَان (كُوكِيز الشُّوفَان)",
+    partOfSpeech: "noun",
+    phonetic: "ˈoʊtmiːl ˈkʊki",
+    pronunciationTip: "Pronounce 'OHT-meel KOOK-ee' (/ˈoʊt.miːl ˈkʊk.i/).",
+    collocations: [
+      "oatmeal raisin cookie",
+      "chewy oatmeal cookie",
+      "cinnamon oatmeal cookie",
+      "healthy oatmeal cookies",
+      "batch of oatmeal cookies",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "stir into",
+        meaning: "mix dry rolled oats into creamy butter batter",
+        arabic: "يُقَلِّبُ الشُّوفَانَ دَاخِلَ الخَلِيط",
+        example: "Stir rolled oats and plump raisins into the spiced cinnamon batter.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Home Baked",
+        en: "She baked a warm batch of chewy oatmeal raisin cookies spiced with cinnamon and nutmeg.",
+        ar: "خَبَزَتْ دُفْعَةً دَافِئَةً مِنْ كُوكِيز الشُّوفَانِ وَالزَّبِيبِ المَطَّاطِيِّ المُتَبَّلِ بِالقِرْفَةِ.",
+      },
+      {
+        context: "Wholesome Snack",
+        en: "Whole rolled oats provide healthy fiber, making oatmeal cookies a nourishing afternoon snack.",
+        ar: "تَمُدُّ حُبُوبُ الشُّوفَانِ الكَامِلَةُ الجِسْمَ بِالأَلْيَافِ، مِمَّا يَجْعَلُ كُوكِيز الشُّوفَانِ وَجْبَةً مُغَذِّيَةً.",
+      },
+      {
+        context: "Bakery Selection",
+        en: "The bakery offers delicious oatmeal cookies packed with dried cranberries and toasted pecans.",
+        ar: "يُقَدِّمُ المَخْبَزُ كُوكِيز شُوفَانٍ لَذِيذًا مَلِيئًا بِالتُّوتِ المُجَفَّفِ وَجَوْزِ البِيكَانِ المُحَمَّصِ.",
+      },
+    ],
+    exampleSentence:
+      "She baked a warm batch of chewy oatmeal raisin cookies spiced with cinnamon and nutmeg.",
+    exampleArabic:
+      "خَبَزَتْ دُفْعَةً دَافِئَةً مِنْ كُوكِيز الشُّوفَانِ وَالزَّبِيبِ المَطَّاطِيِّ المُتَبَّلِ بِالقِرْفَةِ.",
+  },
+  wafer: {
+    id: "wafer",
+    arabic: "وِيفَر (بَسْكُويْتٌ رَقِيقٌ هَشّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈweɪfər",
+    pronunciationTip: "Pronounce 'WAY-fer' (/ˈweɪ.fər/).",
+    collocations: [
+      "chocolate wafer",
+      "vanilla cream wafer",
+      "crisp wafer biscuit",
+      "ice cream wafer",
+      "layered wafer",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "snap off",
+        meaning: "break crisp thin biscuit into pieces",
+        arabic: "يَقْصِمُ رَقَاقَةَ الوِيفَر",
+        example: "He snapped off a piece of the chocolate-covered wafer stick.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Crispy Layers",
+        en: "Crisp multilayered chocolate wafers filled with sweet hazelnut cream are light and crunchy.",
+        ar: "تَمْتَازُ رَقَائِقُ الوِيفَر الشُّوكُولَاتِيَّةُ الهَشَّةُ المَحْشُوَّةُ بِكْرِيمَةِ البُنْدُقِ بِخِفَّتِهَا وَقَرْمَشَتِهَا.",
+      },
+      {
+        context: "Ice Cream Garnish",
+        en: "The sundae was served with a fan-shaped crisp vanilla wafer perched atop the whipped cream.",
+        ar: "قُدِّمَتِ المُثَلَّجَاتُ مَعَ رَقَاقَةِ وِيفَر فَانِيلْيَا هَشَّةٍ عَلَى شَكْلِ مِرْوَحَةٍ فَوْقَ الكْرِيمَةِ.",
+      },
+      {
+        context: "Snack Package",
+        en: "Foil packaging preserves the delicate crunch and fresh aroma of thin sweet wafers.",
+        ar: "تَحْفَظُ الأَغْلِفَةُ المَعْدَنِيَّةُ القَرْمَشَةَ الرَّقِيقَةَ وَالرَّائِحَةَ الطَّازَجَةَ لِرَقَائِقِ الوِيفَر.",
+      },
+    ],
+    exampleSentence:
+      "Crisp multilayered chocolate wafers filled with sweet hazelnut cream are light and crunchy.",
+    exampleArabic:
+      "تَمْتَازُ رَقَائِقُ الوِيفَر الشُّوكُولَاتِيَّةُ الهَشَّةُ المَحْشُوَّةُ بِكْرِيمَةِ البُنْدُقِ بِخِفَّتِهَا وَقَرْمَشَتِهَا.",
+  },
+  biscuit: {
+    id: "biscuit",
+    arabic: "بَسْكُويْت (بَسْكَوِيت / قُرْصٌ مَخْبُوز)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbɪskɪt",
+    pronunciationTip: "Pronounce 'BIS-kit' (/ˈbɪs.kɪt/).",
+    collocations: [
+      "buttermilk biscuit",
+      "flaky biscuit",
+      "tea biscuit",
+      "biscuit and gravy",
+      "warm butter biscuit",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "butter up",
+        meaning: "spread rich butter across warm baked goods",
+        arabic: "يَدْهَنُ بِالزُّبْدَةِ الدَّافِئَة",
+        example: "Split the steaming buttermilk biscuit and butter it up generously.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Southern Baking",
+        en: "Flaky golden buttermilk biscuits served warm with honey butter are a traditional breakfast staple.",
+        ar: "تُعَدُّ أَقْرَاصُ البَسْكُويْتِ الهَشَّةُ بِالزُّبْدَةِ المُقَدَّمَةُ دَافِئَةً مَعَ العَسَلِ إِفْطَارًا تَقْلِيدِيًّا.",
+      },
+      {
+        context: "British Tea Time",
+        en: "In Britain, a biscuit refers to a crisp sweet baked treat enjoyed with afternoon tea.",
+        ar: "فِي بَرِيطَانْيَا، يُشِيرُ البَسْكُويْتُ إِلَى قِطْعَةِ حَلْوَى مُقَرْمَشَةٍ تُؤْكَلُ مَعَ شَايِ المَسَاءِ.",
+      },
+      {
+        context: "Savory Gravy",
+        en: "Warm split biscuits topped with rich sausage gravy make a hearty country-style brunch.",
+        ar: "تُشَكِّلُ أَقْرَاصُ البَسْكُويْتِ الدَّافِئَةُ مَعَ صَلْصَةِ السُّجُقِ إِفْطَارًا رِيفِيًّا مُشْبِعًا.",
+      },
+    ],
+    exampleSentence:
+      "Flaky golden buttermilk biscuits served warm with honey butter are a traditional breakfast staple.",
+    exampleArabic:
+      "تُعَدُّ أَقْرَاصُ البَسْكُويْتِ الهَشَّةُ بِالزُّبْدَةِ المُقَدَّمَةُ دَافِئَةً مَعَ العَسَلِ إِفْطَارًا تَقْلِيدِيًّا.",
+  },
+  pretzel: {
+    id: "pretzel",
+    arabic: "بْرِتْزِل (كَعْكٌ مَمْلُوحٌ مُعَقَّدُ الشَّكْل)",
+    partOfSpeech: "noun",
+    phonetic: "ˈprɛtsəl",
+    pronunciationTip: "Pronounce 'PRET-sul' (/ˈprɛt.səl/).",
+    collocations: [
+      "soft baked pretzel",
+      "salted pretzel",
+      "crispy pretzels",
+      "pretzel with mustard",
+      "twisted pretzel",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "twist into",
+        meaning: "knot long dough ropes into traditional loop shape",
+        arabic: "يَعْقِدُ العَجِينَ عَلَى شَكْلِ عُقْدَة",
+        example: "Bakers twist dough ropes into the iconic three-hole knot before boiling.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Street Vendor",
+        en: "Hot soft pretzels sprinkled with coarse sea salt and served with spicy mustard are popular street snacks.",
+        ar: "تُعَدُّ كَعْكَاتُ البْرِتْزِل السَّاخِنَةُ المَرْشُوشَةُ بِالمِلْحِ الخَشِنِ مَعَ الخَرْدَلِ وَجْبَةَ شَارِعٍ شَهِيرَةً.",
+      },
+      {
+        context: "Crunchy Variety",
+        en: "Crisp bite-sized pretzels provide a savory and salty crunch for movie snacking.",
+        ar: "تُوَفِّرُ قِطَعُ البْرِتْزِل الصَّغِيرَةُ المُقَرْمَشَةُ مَذَاقًا مَالِحًا لَذِيذًا أَثْنَاءَ مُشَاهَدَةِ الأَفْلَامِ.",
+      },
+      {
+        context: "Traditional Baking",
+        en: "Dipping pretzel dough into an alkaline bath gives it its distinctive dark mahogany crust and chewy bite.",
+        ar: "يَمْنَحُ غَمْسُ عَجِينِ البْرِتْزِل فِي مَحْلُولٍ قَلَوِيٍّ قِشْرَتَهُ الدَّاكِنَةَ وَقَوَامَهُ المَطَّاطِيَّ.",
+      },
+    ],
+    exampleSentence:
+      "Hot soft pretzels sprinkled with coarse sea salt and served with spicy mustard are popular street snacks.",
+    exampleArabic:
+      "تُعَدُّ كَعْكَاتُ البْرِتْزِل السَّاخِنَةُ المَرْشُوشَةُ بِالمِلْحِ الخَشِنِ مَعَ الخَرْدَلِ وَجْبَةَ شَارِعٍ شَهِيرَةً.",
+  },
+  cracker: {
+    id: "cracker",
+    arabic: "مُقَرْمَشَات (بَسْكُويْتٌ مَالِحٌ مُقَرْمَش)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkrækər",
+    pronunciationTip: "Short 'a' sound /æ/: 'KRAK-er' (/ˈkræk.ər/).",
+    collocations: [
+      "saltine cracker",
+      "cheese and crackers",
+      "crisp cracker",
+      "whole grain crackers",
+      "box of crackers",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "snap in two",
+        meaning: "break crisp savory biscuit cleanly",
+        arabic: "يَكْسِرُ قِطْعَةَ المُقَرْمَشَاتِ نِصْفَيْن",
+        example: "He snapped the whole wheat cracker in two and dipped it in spinach dip.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cheese Board",
+        en: "An assortment of crisp artisan crackers accompanied aged cheddar, brie, and smoked almonds.",
+        ar: "رَافَقَتْ تَشْكِيلَةٌ مِنْ مُقَرْمَشَاتِ المَخْبَزِ الهَشَّةِ جُبْنَ الشِّيدَر وَالبْرِي وَاللَّوْزَ المُدَخَّنَ.",
+      },
+      {
+        context: "Soup Garnish",
+        en: "Crumbling salted crackers into hot tomato or chicken noodle soup adds satisfying texture.",
+        ar: "يُضِيفُ فَتْفَتَةُ المُقَرْمَشَاتِ المَالِحَةِ فِي حَسَاءِ الطَّمَاطِمِ قَوَامًا مُشْبِعًا.",
+      },
+      {
+        context: "Healthy Grains",
+        en: "Multi-seed crackers baked with flax, sesame, and chia seeds provide wholesome crunch.",
+        ar: "تُوَفِّرُ المُقَرْمَشَاتُ المُتَعَدِّدَةُ البُذُورِ المَخْبُوزَةُ مَعَ السِّمْسِمِ وَالشِّيَا قَرْمَشَةً صِحِّيَّةً.",
+      },
+    ],
+    exampleSentence:
+      "An assortment of crisp artisan crackers accompanied aged cheddar, brie, and smoked almonds.",
+    exampleArabic:
+      "رَافَقَتْ تَشْكِيلَةٌ مِنْ مُقَرْمَشَاتِ المَخْبَزِ الهَشَّةِ جُبْنَ الشِّيدَر وَالبْرِي وَاللَّوْزَ المُدَخَّنَ.",
+  },
+  "granola-bar": {
+    id: "granola-bar",
+    arabic: "لَوْحُ جْرَانُولَا (لَوْحُ شُوفَانٍ وَمُكَسَّرَات)",
+    partOfSpeech: "noun",
+    phonetic: "ɡrəˈnoʊlə bɑːr",
+    pronunciationTip: "Pronounce 'gruh-NOH-luh bar' (/ɡrəˈnoʊ.lə bɑːr/).",
+    collocations: [
+      "chewy granola bar",
+      "chocolate chip granola bar",
+      "crunchy granola bar",
+      "homemade granola bar",
+      "energy granola bar",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pack along",
+        meaning: "bring convenience snack on trips",
+        arabic: "يَحْزِمُ وَجْبَةً خَفِيفَةً فِي الرِّحْلَة",
+        example: "Pack along two chewy granola bars in your backpack for the mountain hike.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Trail Snack",
+        en: "Hikers packed chewy granola bars packed with rolled oats, almonds, and honey for energy.",
+        ar: "حَزَمَ المُتَنَزِّهُونَ أَلْوَاحَ جْرَانُولَا طَرِيَّةً مَلِيئَةً بِالشُّوفَانِ وَاللَّوْزِ وَالعَسَلِ لِلطَّاقَةِ.",
+      },
+      {
+        context: "Lunchbox Snack",
+        en: "A chocolate chip granola bar makes a convenient and energizing school recess snack.",
+        ar: "يُشَكِّلُ لَوْحُ الجْرَانُولَا بِحَبِيبَاتِ الشُّوكُولَاتَةِ وَجْبَةً خَفِيفَةً مُنَاسِبَةً لِفُسْحَةِ المَدْرَسَةِ.",
+      },
+      {
+        context: "Homemade Baking",
+        en: "Pressing toasted oats, seeds, and dried cranberries into a baking pan yields wholesome homemade bars.",
+        ar: "يُنْتِجُ ضَغْطُ الشُّوفَانِ المُحَمَّصِ وَالبُذُورِ وَالتُّوتِ فِي صِينِيَّةٍ أَلْوَاحًا مَنْزِلِيَّةً صِحِّيَّةً.",
+      },
+    ],
+    exampleSentence:
+      "Hikers packed chewy granola bars packed with rolled oats, almonds, and honey for energy.",
+    exampleArabic:
+      "حَزَمَ المُتَنَزِّهُونَ أَلْوَاحَ جْرَانُولَا طَرِيَّةً مَلِيئَةً بِالشُّوفَانِ وَاللَّوْزِ وَالعَسَلِ لِلطَّاقَةِ.",
+  },
+  eggs: {
+    id: "eggs",
+    arabic: "بَيْض",
+    partOfSpeech: "noun",
+    phonetic: "ɛɡz",
+    pronunciationTip: "Pronounce 'EGZ' (/ɛɡz/).",
+    collocations: [
+      "fresh farm eggs",
+      "crack two eggs",
+      "whisked eggs",
+      "egg whites",
+      "egg yolks",
+      "dozen eggs",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "whip up",
+        meaning: "beat whites into airy meringue peaks",
+        arabic: "يَخْفِقُ بَيَاضَ البَيْض",
+        example: "Whip up the room-temperature egg whites until stiff glossy peaks form.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Baking Essentials",
+        en: "The baker cracked three fresh farm eggs into the mixing bowl to bind the cake batter.",
+        ar: "كَسَرَ الخَبَّازُ ثَلَاثَ بَيْضَاتٍ طَازَجَةٍ فِي وِعَاءِ الخَلْطِ لِتَمَاسُكِ خَلِيطِ الكَعْكَةِ.",
+      },
+      {
+        context: "Structure and Lift",
+        en: "Beaten whole eggs provide structural lift, moisture, and rich color to baked breads and pastries.",
+        ar: "يَمْنَحُ البَيْضُ المَخْفُوقُ قِوَامًا هَوَائِيًّا وَرُطُوبَةً وَلَوْنًا غَنِيًّا لِلْمَخْبُوزَاتِ.",
+      },
+      {
+        context: "Egg Wash Glaze",
+        en: "Brushing pastry with whisked egg wash creates a stunning golden sheen in the hot oven.",
+        ar: "يَمْنَحُ دَهْنُ الفَطَائِرِ بِخَلِيطِ البَيْضِ المَخْفُوقِ لَمَعَانًا ذَهَبِيًّا بَدِيعًا فِي الفُرْنِ.",
+      },
+    ],
+    exampleSentence:
+      "The baker cracked three fresh farm eggs into the mixing bowl to bind the cake batter.",
+    exampleArabic:
+      "كَسَرَ الخَبَّازُ ثَلَاثَ بَيْضَاتٍ طَازَجَةٍ فِي وِعَاءِ الخَلْطِ لِتَمَاسُكِ خَلِيطِ الكَعْكَةِ.",
+  },
+  yeast: {
+    id: "yeast",
+    arabic: "خَمِيرَة",
+    partOfSpeech: "noun",
+    phonetic: "jiːst",
+    pronunciationTip: "Pronounce 'YEEST' (/jiːst/).",
+    collocations: [
+      "active dry yeast",
+      "instant yeast",
+      "yeast dough",
+      "proof the yeast",
+      "packet of yeast",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "foam up",
+        meaning: "activate and bubble in warm sugared water",
+        arabic: "تَتَفَاعَلُ وَتُعْطِي رَغْوَة",
+        example: "Active dry yeast will foam up in warm water within five minutes.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bread Leavening",
+        en: "Active dry yeast converts dough sugars into carbon dioxide gas, causing artisan breads to rise beautifully.",
+        ar: "تُحَوِّلُ الخَمِيرَةُ الجَافَّةُ سُكَّرَ العَجِينِ إِلَى غَازٍ مِمَّا يَجْعَلُ الخُبْزَ يَنْتَفِخُ بِجَمَالٍ.",
+      },
+      {
+        context: "Proofing Step",
+        en: "Dissolving yeast in warm milk with a pinch of sugar confirms that the culture is alive and bubbly.",
+        ar: "يُؤَكِّدُ إِذَابَةُ الخَمِيرَةِ فِي حَلِيبٍ دَافِئٍ مَعَ السُّكَّرِ أَنَّهَا نَشِطَةٌ وَفَوَّارَةٌ.",
+      },
+      {
+        context: "Aroma and Flavor",
+        en: "Fermenting yeast produces the rich, appetizing aroma characteristic of freshly baked bread loaves.",
+        ar: "يُنْتِجُ تَخَمُّرُ الخَمِيرَةِ الرَّائِحَةَ الشَّهِيَّةَ المُمَيَّزَةَ لِلْخُبْزِ المَخْبُوزِ حَدِيثًا.",
+      },
+    ],
+    exampleSentence:
+      "Active dry yeast converts dough sugars into carbon dioxide gas, causing artisan breads to rise beautifully.",
+    exampleArabic:
+      "تُحَوِّلُ الخَمِيرَةُ الجَافَّةُ سُكَّرَ العَجِينِ إِلَى غَازٍ مِمَّا يَجْعَلُ الخُبْزَ يَنْتَفِخُ بِجَمَالٍ.",
+  },
+  "baking-powder": {
+    id: "baking-powder",
+    arabic: "بِيكِنْج بَاوْدَر (مَسْحُوقُ الخَبْز)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbeɪkɪŋ ˈpaʊdər",
+    pronunciationTip: "Pronounce 'BAY-king POW-der' (/ˈbeɪ.kɪŋ ˈpaʊ.dər/).",
+    collocations: [
+      "teaspoon of baking powder",
+      "aluminum-free baking powder",
+      "baking powder leavener",
+      "sift baking powder",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sift into",
+        meaning: "pass through a fine mesh strainer with flour",
+        arabic: "يَنْخُلُ مَعَ الدَّقِيق",
+        example: "Sift baking powder into the dry flour to ensure uniform rising.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Chemical Leavening",
+        en: "Baking powder is a chemical leavening agent that releases gas upon contact with moisture and heat.",
+        ar: "البِيكِنْج بَاوْدَر هُوَ مَادَّةُ رَفْعٍ كِيمْيَائِيَّةٍ تُطْلِقُ الغَازَ عِنْدَ مُلَامَسَةِ السَّوَائِلِ وَالحَرَارَةِ.",
+      },
+      {
+        context: "Quick Breads",
+        en: "Muffins, pancakes, and scones rely on baking powder for instant fluffy lift without proofing time.",
+        ar: "تَعْتَمِدُ المَافِن وَالفَطَائِرُ وَالسْكُون عَلَى مَسْحُوقِ الخَبْزِ لِلِانْتِفَاخِ الفَوْرِيِّ دُونَ انْتِظَارٍ.",
+      },
+      {
+        context: "Freshness Check",
+        en: "Testing baking powder in warm water ensures it fizzes vigorously before adding to cake batter.",
+        ar: "يَضْمَنُ اخْتِبَارُ البِيكِنْج بَاوْدَر فِي مَاءٍ دَافِئٍ فَوَرَانَهُ بِقُوَّةٍ قَبْلَ إِضَافَتِهِ لِلْكَعْكِ.",
+      },
+    ],
+    exampleSentence:
+      "Baking powder is a chemical leavening agent that releases gas upon contact with moisture and heat.",
+    exampleArabic:
+      "البِيكِنْج بَاوْدَر هُوَ مَادَّةُ رَفْعٍ كِيمْيَائِيَّةٍ تُطْلِقُ الغَازَ عِنْدَ مُلَامَسَةِ السَّوَائِلِ وَالحَرَارَةِ.",
+  },
+  chocolate: {
+    id: "chocolate",
+    arabic: "شُوكُولَاتَة",
+    partOfSpeech: "noun",
+    phonetic: "ˈtʃɒklɪt",
+    pronunciationTip: "Pronounce 'CHOK-lit' (/ˈtʃɒk.lɪt/).",
+    collocations: [
+      "dark chocolate",
+      "milk chocolate",
+      "melted chocolate",
+      "baking chocolate",
+      "chocolate chips",
+      "bar of chocolate",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "melt down",
+        meaning: "liquefy solid bars gently over simmering water",
+        arabic: "يُذِيبُ الشُّوكُولَاتَة",
+        example: "Melt down the chopped dark chocolate in a heatproof glass bowl.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Baking Ingredient",
+        en: "The baker melted blocks of rich bittersweet chocolate to prepare silky cake frosting.",
+        ar: "أَذَابَ الخَبَّازُ قَوَالِبَ شُوكُولَاتَةٍ دَاكِنَةٍ غَنِيَّةٍ لِإِعْدَادِ كْرِيمَةِ تَزْيِينِ الكَعْكِ.",
+      },
+      {
+        context: "Confectionery",
+        en: "Smooth milk chocolate bars crafted from roasted cacao beans are enjoyed by dessert lovers.",
+        ar: "يَسْتَمْتِعُ عُشَّاقُ الحَلْوَى بِأَلْوَاحِ شُوكُولَاتَةِ الحَلِيبِ المَصْنُوعَةِ مِنْ حُبُوبِ الكَاكَاوِ.",
+      },
+      {
+        context: "Dessert Topping",
+        en: "Warm melted chocolate drizzled over vanilla ice cream hardens into a crisp crunchy shell.",
+        ar: "تَتَصَلَّبُ الشُّوكُولَاتَةُ الذَّائِبَةُ المَسْكُوبَةُ فَوْقَ الآيْس كْرِيم لِتُصْبِحَ قِشْرَةً مُقَرْمَشَةً.",
+      },
+    ],
+    exampleSentence:
+      "The baker melted blocks of rich bittersweet chocolate to prepare silky cake frosting.",
+    exampleArabic:
+      "أَذَابَ الخَبَّازُ قَوَالِبَ شُوكُولَاتَةٍ دَاكِنَةٍ غَنِيَّةٍ لِإِعْدَادِ كْرِيمَةِ تَزْيِينِ الكَعْكِ.",
+  },
+  vanilla: {
+    id: "vanilla",
+    arabic: "فَانِيلْيَا (خُلَاصَةُ الفَانِيلْيَا)",
+    partOfSpeech: "noun",
+    phonetic: "vəˈnɪlə",
+    pronunciationTip: "Pronounce 'vuh-NIL-uh' (/vəˈnɪl.ə/).",
+    collocations: [
+      "pure vanilla extract",
+      "vanilla bean pod",
+      "teaspoon of vanilla",
+      "fragrant vanilla",
+      "vanilla frosting",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "scrape out",
+        meaning: "remove tiny aromatic seeds from cured bean pod",
+        arabic: "يَكْشِطُ بُذُورَ الفَانِيلْيَا",
+        example: "Split the bean pod lengthwise and scrape out the fragrant vanilla caviar.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Flavoring Extract",
+        en: "Adding a teaspoon of pure vanilla extract enhances the aroma and sweet complexity of baked goods.",
+        ar: "تُعَزِّزُ إِضَافَةُ مِلْعَقَةٍ صَغِيرَةٍ مِنْ خُلَاصَةِ الفَانِيلْيَا النَّقِيَّةِ رَائِحَةَ وَحَلَاوَةَ المَخْبُوزَاتِ.",
+      },
+      {
+        context: "Vanilla Bean Pod",
+        en: "The pastry chef infused warm whole milk with real Madagascar vanilla bean seeds for ice cream.",
+        ar: "نَقَعَ شِيفُ الحَلَوِيَّاتِ حَلِيبًا دَافِئًا بِبُذُورِ فَانِيلْيَا مَدَغَشْقَر الحَقِيقِيَّةِ لِلْمُثَلَّجَاتِ.",
+      },
+      {
+        context: "Essential Staple",
+        en: "Vanilla is the fundamental aromatic base for cookies, buttercreams, and custard tarts.",
+        ar: "تُعَدُّ الفَانِيلْيَا القَاعِدَةَ العَطِرَةَ الأَسَاسِيَّةَ لِلْبَسْكُويْتِ وَكْرِيمَةِ الزُّبْدَةِ وَالكَسْتَرْد.",
+      },
+    ],
+    exampleSentence:
+      "Adding a teaspoon of pure vanilla extract enhances the aroma and sweet complexity of baked goods.",
+    exampleArabic:
+      "تُعَزِّزُ إِضَافَةُ مِلْعَقَةٍ صَغِيرَةٍ مِنْ خُلَاصَةِ الفَانِيلْيَا النَّقِيَّةِ رَائِحَةَ وَحَلَاوَةَ المَخْبُوزَاتِ.",
+  },
+  "cocoa-powder": {
+    id: "cocoa-powder",
+    arabic: "بُودْرَةُ الكَاكَاو (مَسْحُوقُ الكَاكَاو)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkoʊkoʊ ˈpaʊdər",
+    pronunciationTip: "Pronounce 'KOH-koh POW-der' (/ˈkoʊ.koʊ ˈpaʊ.dər/).",
+    collocations: [
+      "unsweetened cocoa powder",
+      "dutch-processed cocoa powder",
+      "dust with cocoa powder",
+      "tablespoon of cocoa powder",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "dust over",
+        meaning: "sprinkle fine brown powder lightly through a sieve",
+        arabic: "يَرُشُّ بُودْرَةَ الكَاكَاوِ بِمِصْفَاة",
+        example: "Dust cocoa powder gently over the chilled tiramisu before slicing.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Baking Ingredient",
+        en: "Unsweetened cocoa powder gives chocolate brownies and devil's food cakes deep, rich chocolate flavor.",
+        ar: "تَمْنَحُ بُودْرَةُ الكَاكَاوِ غَيْرُ المُحَلَّاةِ بْرَاوْنِيز الشُّوكُولَاتَةِ نَكْهَةً عَمِيقَةً وَغَنِيَّةً.",
+      },
+      {
+        context: "Dessert Finish",
+        en: "She dusted a fine layer of dark cocoa powder over the creamy Italian tiramisu.",
+        ar: "رَشَّتْ طَبَقَةً رَقِيقَةً مِنْ بُودْرَةِ الكَاكَاوِ الدَّاكِنَةِ فَوْقَ حَلْوَى التِّيرَامِيسُو الإِيطَالِيَّةِ.",
+      },
+      {
+        context: "Warm Drinks",
+        en: "Whisking cocoa powder with hot milk and sugar makes a comforting cup of hot chocolate on winter nights.",
+        ar: "يُنْتِجُ خَفْقُ الكَاكَاوِ مَعَ الحَلِيبِ السَّاخِنِ كُوبًا مُرِيحًا مِنَ الشُّوكُولَاتَةِ السَّاخِنَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Unsweetened cocoa powder gives chocolate brownies and devil's food cakes deep, rich chocolate flavor.",
+    exampleArabic:
+      "تَمْنَحُ بُودْرَةُ الكَاكَاوِ غَيْرُ المُحَلَّاةِ بْرَاوْنِيز الشُّوكُولَاتَةِ نَكْهَةً عَمِيقَةً وَغَنِيَّةً.",
+  },
+  cinnamon: {
+    id: "cinnamon",
+    arabic: "قِرْفَة (قِرْفَةٌ مَطْحُونَة / عِيدَانُ قِرْفَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsɪnəmən",
+    pronunciationTip: "Pronounce 'SIN-uh-mun' (/ˈsɪn.ə.mən/).",
+    collocations: [
+      "ground cinnamon",
+      "cinnamon sticks",
+      "pinch of cinnamon",
+      "cinnamon sugar",
+      "fragrant cinnamon",
+      "spiced with cinnamon",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "sprinkle with",
+        meaning: "scatter aromatic brown spice lightly",
+        arabic: "يَرُشُّ القِرْفَةَ المَطْحُونَة",
+        example: "Sprinkle the warm apple slices with ground cinnamon and brown sugar.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Aromatic Spice",
+        en: "Ground cinnamon harvested from tree bark imparts sweet warmth to apple pies and spiced rolls.",
+        ar: "تَمْنَحُ القِرْفَةُ المَطْحُونَةُ المَحْصُودَةُ مِنْ لِحَاءِ الأَشْجَارِ دِفْئًا حُلْوًا لِفَطَائِرِ التُّفَّاحِ.",
+      },
+      {
+        context: "Morning Oatmeal",
+        en: "A dusting of fragrant cinnamon over morning oatmeal adds flavor without extra refined sugar.",
+        ar: "يُضِيفُ رَشُّ القِرْفَةِ العَطِرَةِ فَوْقَ الشُّوفَانِ الصَّبَاحِيِّ نَكْهَةً دُونَ سُكَّرٍ إِضَافِيٍّ.",
+      },
+      {
+        context: "Hot Beverages",
+        en: "Stirring hot apple cider with a whole cinnamon stick infuses the drink with festive holiday spice.",
+        ar: "يَمْنَحُ تَقْلِيبُ عَصِيرِ التُّفَّاحِ السَّاخِنِ بِعُودِ قِرْفَةٍ المَشْرُوبَ نَكْهَةَ الأَعْيَادِ.",
+      },
+    ],
+    exampleSentence:
+      "Ground cinnamon harvested from tree bark imparts sweet warmth to apple pies and spiced rolls.",
+    exampleArabic:
+      "تَمْنَحُ القِرْفَةُ المَطْحُونَةُ المَحْصُودَةُ مِنْ لِحَاءِ الأَشْجَارِ دِفْئًا حُلْوًا لِفَطَائِرِ التُّفَّاحِ.",
+  },
+  mixer: {
+    id: "mixer",
+    arabic: "خَلَّاط (عَجَّانَة / خَفَّاقَةٌ كَهْرَبَائِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmɪksər",
+    pronunciationTip: "Pronounce 'MIK-ser' (/ˈmɪk.sər/).",
+    collocations: [
+      "electric stand mixer",
+      "hand mixer",
+      "mixer bowl",
+      "mixer dough hook",
+      "turn on the mixer",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "beat together",
+        meaning: "blend ingredients thoroughly using spinning beaters",
+        arabic: "يَخْفِقُ بِالعَجَّانَةِ الكَهْرَبَائِيَّة",
+        example: "Use the stand mixer to beat together butter and sugar until pale and fluffy.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Kitchen Appliance",
+        en: "The electric stand mixer effortlessly kneaded heavy bread dough with its spiral metal hook.",
+        ar: "عَجَنَتِ العَجَّانَةُ الكَهْرَبَائِيَّةُ عَجِينَ الخُبْزِ الثَّقِيلَ بِسُهُولَةٍ بِخُطَّافِهَا المَعْدَنِيِّ.",
+      },
+      {
+        context: "Whipping Cream",
+        en: "She switched the mixer to high speed to whip egg whites into stiff glossy meringue peaks.",
+        ar: "شَغَّلَتِ الخَفَّاقَةَ عَلَى سُرْعَةٍ عَالِيَةٍ لِخَفْقِ بَيَاضِ البَيْضِ إِلَى مِيرَانْغ بَرَّاقٍ.",
+      },
+      {
+        context: "Bakery Workstation",
+        en: "Commercial floor mixers handle fifty-pound batches of artisan pastry dough in industrial bakeries.",
+        ar: "تَتَعَامَلُ الخَلَّاطَاتُ التِّجَارِيَّةُ الضَّخْمَةُ مَعَ دُفْعَاتٍ تَزِنُ خَمْسِينَ رَطْلًا فِي المَخَابِزِ.",
+      },
+    ],
+    exampleSentence:
+      "The electric stand mixer effortlessly kneaded heavy bread dough with its spiral metal hook.",
+    exampleArabic:
+      "عَجَنَتِ العَجَّانَةُ الكَهْرَبَائِيَّةُ عَجِينَ الخُبْزِ الثَّقِيلَ بِسُهُولَةٍ بِخُطَّافِهَا المَعْدَنِيِّ.",
+  },
+  "piping-bag": {
+    id: "piping-bag",
+    arabic: "كِيسُ الحَلْوَانِيّ (كِيسُ التَّزْيِين)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpaɪpɪŋ bæɡ",
+    pronunciationTip: "Pronounce 'PY-ping bag' (/ˈpaɪ.pɪŋ bæɡ/).",
+    collocations: [
+      "pastry piping bag",
+      "piping bag nozzle",
+      "fill a piping bag",
+      "squeeze the piping bag",
+      "disposable piping bag",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "squeeze out",
+        meaning: "press frosting through decorative tip",
+        arabic: "يَعْصِرُ الكْرِيمَةَ مِنْ كِيسِ التَّزْيِين",
+        example: "Squeeze out delicate buttercream rosettes onto the birthday cake borders.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cake Decoration",
+        en: "The pastry chef filled a piping bag fitted with a star tip to decorate birthday cupcakes with frosting rosettes.",
+        ar: "مَلَأَ شِيفُ الحَلَوِيَّاتِ كِيسَ التَّزْيِينِ المُزَوَّدَ بِرَأْسِ نَجْمَةٍ لِتَزْيِينِ الكَبْ كَيْك بِوُرُودِ الكْرِيمَةِ.",
+      },
+      {
+        context: "Filling Pastries",
+        en: "Using a long metal nozzle on the piping bag allows bakers to inject custard cleanly into hollow eclairs.",
+        ar: "يُتِيحُ اسْتِخْدَامُ فُوَّهَةٍ مَعْدَنِيَّةٍ طَوِيلَةٍ حَقْنَ الكَسْتَرْدِ بِنَظَافَةٍ دَاخِلَ الإِكْلِير.",
+      },
+      {
+        context: "Precision Work",
+        en: "Consistent gentle pressure on the piping bag produces uniform borders and elegant lettering.",
+        ar: "يُنْتِجُ الضَّغْطُ الهَادِئُ المُنْتَظَمُ عَلَى كِيسِ الحَلْوَانِيِّ حَوَافَّ مُتَنَاسِقَةً وَحُرُوفًا أَنِيقَةً.",
+      },
+    ],
+    exampleSentence:
+      "The pastry chef filled a piping bag fitted with a star tip to decorate birthday cupcakes with frosting rosettes.",
+    exampleArabic:
+      "مَلَأَ شِيفُ الحَلَوِيَّاتِ كِيسَ التَّزْيِينِ المُزَوَّدَ بِرَأْسِ نَجْمَةٍ لِتَزْيِينِ الكَبْ كَيْك بِوُرُودِ الكْرِيمَةِ.",
+  },
+  "muffin-tin": {
+    id: "muffin-tin",
+    arabic: "صِينِيَّةُ المَافِن (قَالِبُ الكَبْ كَيْك)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmʌfɪn tɪn",
+    pronunciationTip: "Pronounce 'MUF-in tin' (/ˈmʌf.ɪn tɪn/).",
+    collocations: [
+      "twelve-cup muffin tin",
+      "nonstick muffin tin",
+      "line a muffin tin",
+      "grease the muffin tin",
+      "muffin tin cups",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "line with",
+        meaning: "place paper baking cups into metal indentations",
+        arabic: "يُبَطِّنُ القَوَالِبَ بِالأَكْوَابِ الوَرَقِيَّة",
+        example:
+          "Line the twelve-cup muffin tin with colorful paper liners before spooning in batter.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Baking Equipment",
+        en: "She lined each indentation of the metal muffin tin with colorful paper baking cups.",
+        ar: "بَطَّنَتْ كُلَّ فَجْوَةٍ فِي صِينِيَّةِ المَافِن المَعْدَنِيَّةِ بِأَكْوَابِ خَبْزٍ وَرَقِيَّةٍ مُلَوَّنَةٍ.",
+      },
+      {
+        context: "Even Baking",
+        en: "A heavy-gauge aluminum muffin tin distributes oven heat evenly for perfectly domed muffins.",
+        ar: "تُوَزِّعُ صِينِيَّةُ المَافِن المَصْنُوعَةُ مِنَ الأَلُومِنْيُومِ الحَرَارَةَ بِتَسَاوٍ لِكَعْكٍ مُنْتَفِخٍ بِمِثَالِيَّةٍ.",
+      },
+      {
+        context: "Savory Uses",
+        en: "Muffin tins are also great for baking individual egg frittatas and mini chicken pot pies.",
+        ar: "تُعَدُّ صَوَانِي المَافِن مُمْتَازَةً أَيْضًا لِخَبْزِ عِجَّةِ البَيْضِ الفَرْدِيَّةِ وَالفَطَائِرِ الصَّغِيرَةِ.",
+      },
+    ],
+    exampleSentence:
+      "She lined each indentation of the metal muffin tin with colorful paper baking cups.",
+    exampleArabic:
+      "بَطَّنَتْ كُلَّ فَجْوَةٍ فِي صِينِيَّةِ المَافِن المَعْدَنِيَّةِ بِأَكْوَابِ خَبْزٍ وَرَقِيَّةٍ مُلَوَّنَةٍ.",
+  },
+  "cooling-rack": {
+    id: "cooling-rack",
+    arabic: "شَبَكَةُ التَّبْرِيد (رَفُّ تَبْرِيدِ المَخْبُوزَات)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkuːlɪŋ ræk",
+    pronunciationTip: "Pronounce 'KOO-ling rak' (/ˈkuː.lɪŋ ræk/).",
+    collocations: [
+      "wire cooling rack",
+      "transfer to a cooling rack",
+      "elevated cooling rack",
+      "nonstick cooling rack",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "cool off",
+        meaning: "allow hot baked items to release steam and stabilize",
+        arabic: "يَتْرُكُ لِيَبْرُد",
+        example: "Let the cookies cool off completely on the wire rack before storing.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Post-Baking Step",
+        en: "The baker transferred warm chocolate chip cookies onto a wire cooling rack so air could circulate underneath.",
+        ar: "نَقَلَ الخَبَّازُ كُوكِيز الشُّوكُولَاتَةِ الدَّافِئَ إِلَى شَبَكَةِ التَّبْرِيدِ لِلسَّمَاحِ بِدَوَرَانِ الهَوَاءِ.",
+      },
+      {
+        context: "Crisp Bottoms",
+        en: "Elevating baked goods on a cooling rack prevents trapped condensation from making bread bottoms soggy.",
+        ar: "يَمْنَعُ رَفْعُ المَخْبُوزَاتِ عَلَى شَبَكَةِ التَّبْرِيدِ رُطُوبَةَ البُخَارِ مِنْ تَرْطِيبِ قَاعِدَةِ الخُبْزِ.",
+      },
+      {
+        context: "Glazing Station",
+        en: "Placing pastries on a wire rack set over a tray catches dripping chocolate glaze neatly.",
+        ar: "يَسْمَحُ وَضْعُ الفَطَائِرِ عَلَى شَبَكَةٍ فَوْقَ صِينِيَّةٍ بِجَمْعِ صَلْصَةِ الشُّوكُولَاتَةِ الزَّائِدَةِ بِنَظَافَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "The baker transferred warm chocolate chip cookies onto a wire cooling rack so air could circulate underneath.",
+    exampleArabic:
+      "نَقَلَ الخَبَّازُ كُوكِيز الشُّوكُولَاتَةِ الدَّافِئَ إِلَى شَبَكَةِ التَّبْرِيدِ لِلسَّمَاحِ بِدَوَرَانِ الهَوَاءِ.",
+  },
+  "bread-basket": {
+    id: "bread-basket",
+    arabic: "سَلَّةُ الخُبْز (سَلَّةُ تَقْدِيمِ الخُبْز)",
+    partOfSpeech: "noun",
+    phonetic: "brɛd ˈbæskɪt",
+    pronunciationTip: "Pronounce 'BRED bas-kit' (/brɛd ˈbæs.kɪt/).",
+    collocations: [
+      "woven bread basket",
+      "warm bread basket",
+      "lined bread basket",
+      "pass the bread basket",
+      "table bread basket",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "pass around",
+        meaning: "share container among seated dinner guests",
+        arabic: "يُمَرِّرُ سَلَّةَ الخُبْزِ عَلَى الحُضُور",
+        example: "Pass around the warm bread basket so everyone can choose a fresh dinner roll.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dining Table",
+        en: "The waiter brought a cloth-lined wicker bread basket filled with warm rolls and butter pats.",
+        ar: "أَحْضَرَ النَّادِلُ سَلَّةَ خُبْزٍ خَيْزُرَانِيَّةً مُبَطَّنَةً بِالقُمَاشِ مَلِيئَةً بِاللَّفَائِفِ الدَّافِئَةِ وَالزُّبْدَةِ.",
+      },
+      {
+        context: "Bakery Presentation",
+        en: "Rustic woven bread baskets display freshly baked baguettes and sourdough boules in store windows.",
+        ar: "تَعْرِضُ سِلَالُ الخُبْزِ الرِّيفِيَّةُ المَنْسُوجَةُ أَرْغِفَةَ البَاغِيت وَالسَّاوِرْدُو الطَّازَجَةَ فِي المَتْجَرِ.",
+      },
+      {
+        context: "Warmth Retention",
+        en: "Wrapping bread in a folded linen napkin inside the basket keeps dinner rolls hot throughout the meal.",
+        ar: "يُحَافِظُ لَفُّ الخُبْزِ بِمِنْدِيلٍ قُمَاشِيٍّ دَاخِلَ السَّلَّةِ عَلَى سُخُونَةِ اللَّفَائِفِ طَوَالَ الوَجْبَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The waiter brought a cloth-lined wicker bread basket filled with warm rolls and butter pats.",
+    exampleArabic:
+      "أَحْضَرَ النَّادِلُ سَلَّةَ خُبْزٍ خَيْزُرَانِيَّةً مُبَطَّنَةً بِالقُمَاشِ مَلِيئَةً بِاللَّفَائِفِ الدَّافِئَةِ وَالزُّبْدَةِ.",
+  },
+  timer: {
+    id: "timer",
+    arabic: "مُؤَقِّت (مُؤَقِّتُ المَطْبَخ / سَاعَةُ التَّوْقِيت)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtaɪmər",
+    pronunciationTip: "Pronounce 'TY-mer' (/ˈtaɪ.mər/).",
+    collocations: [
+      "kitchen timer",
+      "set the timer",
+      "digital timer",
+      "timer beeps",
+      "oven timer alarm",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "go off",
+        meaning: "sound an audible alarm when countdown completes",
+        arabic: "يَرِنُّ جَرَسُ المُؤَقِّت",
+        example: "The digital timer went off with a loud chime after twenty minutes of baking.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Kitchen Timing",
+        en: "She set the digital kitchen timer for twenty-five minutes so the chocolate soufflé would not overcook.",
+        ar: "ضَبَطَتْ مُؤَقِّتَ المَطْبَخِ الرَّقْمِيَّ لِمُدَّةِ خَمْسٍ وَعِشْرِينَ دَقِيقَةً كَيْ لَا يَحْتَرِقَ السُّوفْلِيه.",
+      },
+      {
+        context: "Baking Precision",
+        en: "A reliable kitchen timer ensures that delicate pastries and crusty loaves are pulled from ovens at peak perfection.",
+        ar: "يَضْمَنُ مُؤَقِّتُ المَطْبَخِ المَوْثُوقُ إِخْرَاجَ الفَطَائِرِ مِنَ الأَفْرَانِ فِي ذِرْوَةِ النُّضْجِ المِثَالِيِّ.",
+      },
+      {
+        context: "Audio Alert",
+        en: "The loud beep of the oven timer alerted the baker that the golden sourdough loaves were ready.",
+        ar: "نَبَّهَتْ رَنَّةُ مُؤَقِّتِ الفُرْنِ العَالِيَةُ الخَبَّازَ إِلَى أَنَّ أَرْغِفَةَ السَّاوِرْدُو الذَّهَبِيَّةَ جَاهِزَةٌ.",
+      },
+    ],
+    exampleSentence:
+      "She set the digital kitchen timer for twenty-five minutes so the chocolate soufflé would not overcook.",
+    exampleArabic:
+      "ضَبَطَتْ مُؤَقِّتَ المَطْبَخِ الرَّقْمِيَّ لِمُدَّةِ خَمْسٍ وَعِشْرِينَ دَقِيقَةً كَيْ لَا يَحْتَرِقَ السُّوفْلِيه.",
+  },
 };
 
 /**

@@ -6955,6 +6955,754 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
   },
 ];
 
+// ==========================================
+// THE BAKERY
+// ==========================================
+
+export const BAKERY_TOPICS: TopicCategory[] = [
+  {
+    id: "breads",
+    name: "Breads",
+    description: "Artisan loaves, crusty baguettes, sourdoughs, and traditional flatbreads.",
+    icon: "layers",
+    itemsCount: 10,
+  },
+  {
+    id: "pastries-sweet",
+    name: "Pastries & Sweet",
+    description: "Flaky croissants, fruit danishes, cinnamon rolls, eclairs, and macarons.",
+    icon: "sun",
+    itemsCount: 10,
+  },
+  {
+    id: "cakes-pies",
+    name: "Cakes & Pies",
+    description: "Celebration cakes, cupcakes, rich cheesecakes, and fruit pies.",
+    icon: "star",
+    itemsCount: 10,
+  },
+  {
+    id: "cookies-biscuits",
+    name: "Cookies & Biscuits",
+    description: "Crunchy cookies, gingerbread, buttery shortbread, wafers, and pretzels.",
+    icon: "coffee",
+    itemsCount: 10,
+  },
+  {
+    id: "baking-ingredients",
+    name: "Baking Ingredients",
+    description: "Pantry staples including flour, yeast, cocoa, vanilla, spices, and honey.",
+    icon: "feather",
+    itemsCount: 12,
+  },
+  {
+    id: "bakery-equipment",
+    name: "Bakery Equipment",
+    description: "Baking tools, electric mixers, cooling racks, piping bags, and timers.",
+    icon: "tool",
+    itemsCount: 12,
+  },
+];
+
+export const BAKERY_GROUPS: Lesson[] = [
+  {
+    id: "breads",
+    name: "Breads",
+    topicId: "breads",
+    description: "Learn about white bread, baguettes, sourdough, pita, and artisan loaves.",
+    wordIds: [
+      "white-bread",
+      "whole-wheat-bread",
+      "baguette",
+      "sourdough",
+      "rye-bread",
+      "pita",
+      "focaccia",
+      "ciabatta",
+      "brioche",
+      "flatbread",
+    ],
+    story:
+      "The master baker arranged loaves of soft white-bread and whole-wheat-bread alongside a crusty French baguette and tangy sourdough. The shelf also featured dark rye-bread, pocketed pita, herb-dimpled focaccia, porous ciabatta, buttery brioche, and warm grilled flatbread.",
+  },
+  {
+    id: "pastries-sweet",
+    name: "Pastries & Sweet",
+    topicId: "pastries-sweet",
+    description: "Learn about croissants, muffins, donuts, danishes, and French pastries.",
+    wordIds: [
+      "croissant",
+      "muffin",
+      "donut",
+      "danish",
+      "cinnamon-roll",
+      "eclair",
+      "scone",
+      "strudel",
+      "macaron",
+      "profiterole",
+    ],
+    story:
+      "Morning customers lined up for a warm flaky croissant, a blueberry muffin, a glazed donut, and a fruit danish. Next on the tray were a spiral cinnamon-roll, a chocolate eclair, a British scone, an Austrian strudel, a delicate pastel macaron, and a cream-filled profiterole.",
+  },
+  {
+    id: "cakes-pies",
+    name: "Cakes & Pies",
+    topicId: "cakes-pies",
+    description: "Learn about celebration cakes, cupcakes, fruit pies, and tarts.",
+    wordIds: [
+      "birthday-cake",
+      "wedding-cake",
+      "cupcake",
+      "cheesecake",
+      "chocolate-cake",
+      "carrot-cake",
+      "apple-pie",
+      "cherry-pie",
+      "lemon-tart",
+      "brownie",
+    ],
+    story:
+      "In the chilled showcase stood a decorated birthday-cake and a magnificent tiered wedding-cake. Beside them were a frosted cupcake, a slice of creamy cheesecake, a rich dark chocolate-cake, and a spiced carrot-cake. The baker added a warm apple-pie, a ruby cherry-pie, a zesty lemon-tart, and a fudgy brownie.",
+  },
+  {
+    id: "cookies-biscuits",
+    name: "Cookies & Biscuits",
+    topicId: "cookies-biscuits",
+    description: "Learn about cookies, gingerbread, shortbread, pretzels, and crackers.",
+    wordIds: [
+      "chocolate-chip-cookie",
+      "sugar-cookie",
+      "gingerbread",
+      "shortbread",
+      "oatmeal-cookie",
+      "wafer",
+      "biscuit",
+      "pretzel",
+      "cracker",
+      "granola-bar",
+    ],
+    story:
+      "Children picked out a warm chocolate-chip-cookie, a decorated sugar-cookie, and a spiced gingerbread man. The glass jars held buttery Scottish shortbread, a chewy oatmeal-cookie, and a crisp wafer. For savory snacking, the baker offered a buttermilk biscuit, a salted pretzel, a crisp cracker, and an energy granola-bar.",
+  },
+  {
+    id: "baking-ingredients",
+    name: "Baking Ingredients",
+    topicId: "baking-ingredients",
+    description: "Learn about flour, yeast, chocolate, vanilla, spices, and sweetener staples.",
+    wordIds: [
+      "flour",
+      "sugar",
+      "butter",
+      "eggs",
+      "yeast",
+      "baking-powder",
+      "chocolate",
+      "vanilla",
+      "cream",
+      "cocoa-powder",
+      "cinnamon",
+      "honey",
+    ],
+    story:
+      "On the prep table, the pastry chef gathered white flour, sweet sugar, creamy butter, and farm eggs. She measured active yeast, rising baking-powder, dark melted chocolate, fragrant vanilla, and heavy cream. To complete the recipe, she dusted dark cocoa-powder, added ground cinnamon, and drizzled golden honey.",
+  },
+  {
+    id: "bakery-equipment",
+    name: "Bakery Equipment",
+    topicId: "bakery-equipment",
+    description: "Learn about ovens, electric mixers, trays, piping bags, and baking utensils.",
+    wordIds: [
+      "oven",
+      "mixer",
+      "rolling-pin",
+      "baking-tray",
+      "whisk",
+      "spatula",
+      "piping-bag",
+      "muffin-tin",
+      "cooling-rack",
+      "bread-basket",
+      "apron",
+      "timer",
+    ],
+    story:
+      "The baker preheated the brick oven, turned on the electric mixer, and flattened dough with a rolling-pin. She arranged rolls on a baking-tray, using a wire whisk, a silicone spatula, and an icing piping-bag. She filled a twelve-cup muffin-tin, set warm cookies on a cooling-rack, placed loaves in a bread-basket, tied her clean apron, and set the digital timer.",
+  },
+];
+
+export const BAKERY_VOCABULARY: VocabularyItem[] = [
+  // 1. Breads (10)
+  {
+    id: "white-bread",
+    label: "White Bread",
+    phonetic: "waɪt brɛd",
+    img: `${LOCAL_WORD_IMAGES}/bakery/white-bread.webp`,
+    topic: "breads",
+    description: "A soft loaf baked from refined grain flour with a tender pale crumb.",
+  },
+  {
+    id: "whole-wheat-bread",
+    label: "Whole Wheat Bread",
+    phonetic: "hoʊl wiːt brɛd",
+    img: `${LOCAL_WORD_IMAGES}/bakery/whole-wheat-bread.webp`,
+    topic: "breads",
+    description: "A hearty brown loaf made from unrefined flour rich in natural grain fiber.",
+  },
+  {
+    id: "baguette",
+    label: "Baguette",
+    phonetic: "bæˈɡɛt",
+    img: `${LOCAL_WORD_IMAGES}/bakery/baguette.webp`,
+    topic: "breads",
+    description: "A long, slender French loaf with a crisp golden crust and chewy airy holes.",
+  },
+  {
+    id: "sourdough",
+    label: "Sourdough",
+    phonetic: "ˈsaʊərdoʊ",
+    img: `${LOCAL_WORD_IMAGES}/bakery/sourdough.webp`,
+    topic: "breads",
+    description:
+      "A crusty artisan loaf fermented with wild lactobacillus and live natural cultures.",
+  },
+  {
+    id: "rye-bread",
+    label: "Rye Bread",
+    phonetic: "raɪ brɛd",
+    img: `${LOCAL_WORD_IMAGES}/bakery/rye-bread.webp`,
+    topic: "breads",
+    description: "A dense, dark European loaf flavored with aromatic caraway seeds.",
+  },
+  {
+    id: "pita",
+    label: "Pita",
+    phonetic: "ˈpiːtə",
+    img: `${LOCAL_WORD_IMAGES}/bakery/pita.webp`,
+    topic: "breads",
+    description: "A round Mediterranean flatbread that puffs up to form an inner sandwich pocket.",
+  },
+  {
+    id: "focaccia",
+    label: "Focaccia",
+    phonetic: "foʊˈkɑːtʃə",
+    img: `${LOCAL_WORD_IMAGES}/bakery/focaccia.webp`,
+    topic: "breads",
+    description: "An Italian olive oil flatbread dimpled with rosemary sprigs and coarse sea salt.",
+  },
+  {
+    id: "ciabatta",
+    label: "Ciabatta",
+    phonetic: "tʃəˈbɑːtə",
+    img: `${LOCAL_WORD_IMAGES}/bakery/ciabatta.webp`,
+    topic: "breads",
+    description:
+      "An elongated Italian slipper-shaped loaf with a flour-dusted crust and porous crumb.",
+  },
+  {
+    id: "brioche",
+    label: "Brioche",
+    phonetic: "briːˈoʊʃ",
+    img: `${LOCAL_WORD_IMAGES}/bakery/brioche.webp`,
+    topic: "breads",
+    description:
+      "An enriched French yeast pastry with high butter and egg content for tender sweetness.",
+  },
+  {
+    id: "flatbread",
+    label: "Flatbread",
+    phonetic: "ˈflætbrɛd",
+    img: `${LOCAL_WORD_IMAGES}/bakery/flatbread.webp`,
+    topic: "breads",
+    description: "A simple unleavened dough rolled thin and seared on a blistering hot griddle.",
+  },
+
+  // 2. Pastries & Sweet (10)
+  {
+    id: "croissant",
+    label: "Croissant",
+    phonetic: "kwɑːˈsɑːnt",
+    img: `${LOCAL_WORD_IMAGES}/bakery/croissant.webp`,
+    topic: "pastries-sweet",
+    description: "A crescent-shaped flaky French pastry layered with chilled butter laminations.",
+  },
+  {
+    id: "muffin",
+    label: "Muffin",
+    phonetic: "ˈmʌfɪn",
+    img: `${LOCAL_WORD_IMAGES}/bakery/muffin.webp`,
+    topic: "pastries-sweet",
+    description: "An individual domed quick-bread cake baked in a cup liner with fruit or nuts.",
+  },
+  {
+    id: "donut",
+    label: "Donut",
+    phonetic: "ˈdoʊnʌt",
+    img: `${LOCAL_WORD_IMAGES}/bakery/donut.webp`,
+    topic: "pastries-sweet",
+    description: "A ring-shaped deep-fried sweet dough confection glazed in vanilla or chocolate.",
+  },
+  {
+    id: "danish",
+    label: "Danish",
+    phonetic: "ˈdeɪnɪʃ",
+    img: `${LOCAL_WORD_IMAGES}/bakery/danish.webp`,
+    topic: "pastries-sweet",
+    description:
+      "A multilayered laminated pastry centered with sweetened cream cheese or fruit preserves.",
+  },
+  {
+    id: "cinnamon-roll",
+    label: "Cinnamon Roll",
+    phonetic: "ˈsɪnəmən roʊl",
+    img: `${LOCAL_WORD_IMAGES}/bakery/cinnamon-roll.webp`,
+    topic: "pastries-sweet",
+    description:
+      "A spiral yeast bun filled with brown sugar and aromatic spice, topped with white icing.",
+  },
+  {
+    id: "eclair",
+    label: "Éclair",
+    phonetic: "eɪˈklɛər",
+    img: `${LOCAL_WORD_IMAGES}/bakery/eclair.webp`,
+    topic: "pastries-sweet",
+    description:
+      "An oblong hollow choux pastry filled with vanilla custard and coated in dark chocolate.",
+  },
+  {
+    id: "scone",
+    label: "Scone",
+    phonetic: "skoʊn",
+    img: `${LOCAL_WORD_IMAGES}/bakery/scone.webp`,
+    topic: "pastries-sweet",
+    description:
+      "A crumbly Scottish quick-bread traditionally split and served with clotted cream and jam.",
+  },
+  {
+    id: "strudel",
+    label: "Strudel",
+    phonetic: "ˈstruːdəl",
+    img: `${LOCAL_WORD_IMAGES}/bakery/strudel.webp`,
+    topic: "pastries-sweet",
+    description:
+      "A Viennese layered pastry roll encasing spiced apples, raisins, and sweet breadcrumbs.",
+  },
+  {
+    id: "macaron",
+    label: "Macaron",
+    phonetic: "ˌmækəˈrɒn",
+    img: `${LOCAL_WORD_IMAGES}/bakery/macaron.webp`,
+    topic: "pastries-sweet",
+    description:
+      "A delicate French confection composed of two round almond meringue discs with ganache filling.",
+  },
+  {
+    id: "profiterole",
+    label: "Profiterole",
+    phonetic: "prəˈfɪtəroʊl",
+    img: `${LOCAL_WORD_IMAGES}/bakery/profiterole.webp`,
+    topic: "pastries-sweet",
+    description:
+      "A small spherical choux puff filled with vanilla ice cream and bathed in warm chocolate sauce.",
+  },
+
+  // 3. Cakes & Pies (10)
+  {
+    id: "birthday-cake",
+    label: "Birthday Cake",
+    phonetic: "ˈbɜːrθdeɪ keɪk",
+    img: `${LOCAL_WORD_IMAGES}/bakery/birthday-cake.webp`,
+    topic: "cakes-pies",
+    description:
+      "A frosted celebratory confection decorated with candles for personal milestone festivities.",
+  },
+  {
+    id: "wedding-cake",
+    label: "Wedding Cake",
+    phonetic: "ˈwɛdɪŋ keɪk",
+    img: `${LOCAL_WORD_IMAGES}/bakery/wedding-cake.webp`,
+    topic: "cakes-pies",
+    description:
+      "A grand tiered white centerpiece decorated with intricate sugar flowers for marriage receptions.",
+  },
+  {
+    id: "cupcake",
+    label: "Cupcake",
+    phonetic: "ˈkʌpkeɪk",
+    img: `${LOCAL_WORD_IMAGES}/bakery/cupcake.webp`,
+    topic: "cakes-pies",
+    description:
+      "A small single-portion sponge dessert baked in a paper cup and swirled with buttercream.",
+  },
+  {
+    id: "cheesecake",
+    label: "Cheesecake",
+    phonetic: "ˈtʃiːzkeɪk",
+    img: `${LOCAL_WORD_IMAGES}/bakery/cheesecake.webp`,
+    topic: "cakes-pies",
+    description:
+      "A rich baked dessert featuring a smooth cream cheese filling over a crushed graham cracker crust.",
+  },
+  {
+    id: "chocolate-cake",
+    label: "Chocolate Cake",
+    phonetic: "ˈtʃɒklɪt keɪk",
+    img: `${LOCAL_WORD_IMAGES}/bakery/chocolate-cake.webp`,
+    topic: "cakes-pies",
+    description:
+      "A moist layered dark sponge dessert enriched with cocoa and fudgy ganache frosting.",
+  },
+  {
+    id: "carrot-cake",
+    label: "Carrot Cake",
+    phonetic: "ˈkærət keɪk",
+    img: `${LOCAL_WORD_IMAGES}/bakery/carrot-cake.webp`,
+    topic: "cakes-pies",
+    description:
+      "A spiced sponge dessert studded with grated orange root vegetables, walnuts, and cream cheese icing.",
+  },
+  {
+    id: "apple-pie",
+    label: "Apple Pie",
+    phonetic: "ˈæpəl paɪ",
+    img: `${LOCAL_WORD_IMAGES}/bakery/apple-pie.webp`,
+    topic: "cakes-pies",
+    description:
+      "A double-crust baked dessert filled with sliced spiced orchard fruit and cinnamon syrup.",
+  },
+  {
+    id: "cherry-pie",
+    label: "Cherry Pie",
+    phonetic: "ˈtʃɛri paɪ",
+    img: `${LOCAL_WORD_IMAGES}/bakery/cherry-pie.webp`,
+    topic: "cakes-pies",
+    description:
+      "A golden pastry shell overflowing with tart red pitted stone fruits in rich crimson jelly.",
+  },
+  {
+    id: "lemon-tart",
+    label: "Lemon Tart",
+    phonetic: "ˈlɛmən tɑːrt",
+    img: `${LOCAL_WORD_IMAGES}/bakery/lemon-tart.webp`,
+    topic: "cakes-pies",
+    description:
+      "A crisp shortcrust pastry disc filled with smooth tangy citrus curd and browned meringue peaks.",
+  },
+  {
+    id: "brownie",
+    label: "Brownie",
+    phonetic: "ˈbraʊni",
+    img: `${LOCAL_WORD_IMAGES}/bakery/brownie.webp`,
+    topic: "cakes-pies",
+    description:
+      "A dense, fudgy square chocolate confection with a glossy, paper-thin cracked top.",
+  },
+
+  // 4. Cookies & Biscuits (10)
+  {
+    id: "chocolate-chip-cookie",
+    label: "Chocolate Chip Cookie",
+    phonetic: "ˈtʃɒklɪt tʃɪp ˈkʊki",
+    img: `${LOCAL_WORD_IMAGES}/bakery/chocolate-chip-cookie.webp`,
+    topic: "cookies-biscuits",
+    description: "A golden baked disc studded with molten morsels of dark cacao confection.",
+  },
+  {
+    id: "sugar-cookie",
+    label: "Sugar Cookie",
+    phonetic: "ˈʃʊɡər ˈkʊki",
+    img: `${LOCAL_WORD_IMAGES}/bakery/sugar-cookie.webp`,
+    topic: "cookies-biscuits",
+    description: "A sweet, tender cutout butter biscuit dusted with colored sparkling crystals.",
+  },
+  {
+    id: "gingerbread",
+    label: "Gingerbread",
+    phonetic: "ˈdʒɪndʒərbred",
+    img: `${LOCAL_WORD_IMAGES}/bakery/gingerbread.webp`,
+    topic: "cookies-biscuits",
+    description:
+      "A holiday biscuit spiced with aromatic root spice and dark molasses, cut into festive shapes.",
+  },
+  {
+    id: "shortbread",
+    label: "Shortbread",
+    phonetic: "ˈʃɔːrtbrɛd",
+    img: `${LOCAL_WORD_IMAGES}/bakery/shortbread.webp`,
+    topic: "cookies-biscuits",
+    description:
+      "A traditional Scottish butter biscuit made of sugar, dairy fat, and flour with a melt-in-mouth crumb.",
+  },
+  {
+    id: "oatmeal-cookie",
+    label: "Oatmeal Cookie",
+    phonetic: "ˈoʊtmiːl ˈkʊki",
+    img: `${LOCAL_WORD_IMAGES}/bakery/oatmeal-cookie.webp`,
+    topic: "cookies-biscuits",
+    description:
+      "A chewy spiced round biscuit packed with rolled whole grains and sweet dried raisins.",
+  },
+  {
+    id: "wafer",
+    label: "Wafer",
+    phonetic: "ˈweɪfər",
+    img: `${LOCAL_WORD_IMAGES}/bakery/wafer.webp`,
+    topic: "cookies-biscuits",
+    description: "An ultra-thin, crisp layered biscuit filled with creamy flavored layers.",
+  },
+  {
+    id: "biscuit",
+    label: "Biscuit",
+    phonetic: "ˈbɪskɪt",
+    img: `${LOCAL_WORD_IMAGES}/bakery/biscuit.webp`,
+    topic: "cookies-biscuits",
+    description: "A flaky golden quick-bread round served warm with butter or savory gravy.",
+  },
+  {
+    id: "pretzel",
+    label: "Pretzel",
+    phonetic: "ˈprɛtsəl",
+    img: `${LOCAL_WORD_IMAGES}/bakery/pretzel.webp`,
+    topic: "cookies-biscuits",
+    description:
+      "A twisted knot of glazed dough sprinkled with coarse salt grains and baked to a dark brown sheen.",
+  },
+  {
+    id: "cracker",
+    label: "Cracker",
+    phonetic: "ˈkrækər",
+    img: `${LOCAL_WORD_IMAGES}/bakery/cracker.webp`,
+    topic: "cookies-biscuits",
+    description:
+      "A thin, crisp savory baked wafer frequently paired with artisan cheeses and dips.",
+  },
+  {
+    id: "granola-bar",
+    label: "Granola Bar",
+    phonetic: "ɡrəˈnoʊlə bɑːr",
+    img: `${LOCAL_WORD_IMAGES}/bakery/granola-bar.webp`,
+    topic: "cookies-biscuits",
+    description:
+      "A pressed portable oat snack composed of toasted rolled grains, nuts, seeds, and honey.",
+  },
+
+  // 5. Baking Ingredients (12)
+  {
+    id: "flour",
+    label: "Flour",
+    phonetic: "ˈflaʊər",
+    img: `${LOCAL_WORD_IMAGES}/bakery/flour.webp`,
+    topic: "baking-ingredients",
+    description:
+      "A fine powder milled from cereal grains that forms the structural foundation of dough.",
+  },
+  {
+    id: "sugar",
+    label: "Sugar",
+    phonetic: "ˈʃʊɡər",
+    img: `${LOCAL_WORD_IMAGES}/bakery/sugar.webp`,
+    topic: "baking-ingredients",
+    description:
+      "A sweet crystalline substance extracted from cane or beet plants used to sweeten desserts.",
+  },
+  {
+    id: "butter",
+    label: "Butter",
+    phonetic: "ˈbʌtər",
+    img: `${LOCAL_WORD_IMAGES}/bakery/butter.webp`,
+    topic: "baking-ingredients",
+    description:
+      "A dairy fat churned from fresh cream that imparts flakiness and rich flavor to pastries.",
+  },
+  {
+    id: "eggs",
+    label: "Eggs",
+    phonetic: "ɛɡz",
+    img: `${LOCAL_WORD_IMAGES}/bakery/eggs.webp`,
+    topic: "baking-ingredients",
+    description:
+      "Oval reproductive bodies laid by poultry that provide structural lift and moisture to batter.",
+  },
+  {
+    id: "yeast",
+    label: "Yeast",
+    phonetic: "jiːst",
+    img: `${LOCAL_WORD_IMAGES}/bakery/yeast.webp`,
+    topic: "baking-ingredients",
+    description:
+      "A microscopic living fungus that ferments dough sugars into gas bubbles to leaven breads.",
+  },
+  {
+    id: "baking-powder",
+    label: "Baking Powder",
+    phonetic: "ˈbeɪkɪŋ ˈpaʊdər",
+    img: `${LOCAL_WORD_IMAGES}/bakery/baking-powder.webp`,
+    topic: "baking-ingredients",
+    description:
+      "A dry chemical leavening compound that releases carbon dioxide when moistened and heated.",
+  },
+  {
+    id: "chocolate",
+    label: "Chocolate",
+    phonetic: "ˈtʃɒklɪt",
+    img: `${LOCAL_WORD_IMAGES}/bakery/chocolate.webp`,
+    topic: "baking-ingredients",
+    description:
+      "A solid confection prepared from roasted and ground cacao seeds sweetened with sugar.",
+  },
+  {
+    id: "vanilla",
+    label: "Vanilla",
+    phonetic: "vəˈnɪlə",
+    img: `${LOCAL_WORD_IMAGES}/bakery/vanilla.webp`,
+    topic: "baking-ingredients",
+    description:
+      "An aromatic flavoring extract prepared from the cured seed pods of a tropical orchid.",
+  },
+  {
+    id: "cream",
+    label: "Cream",
+    phonetic: "kriːm",
+    img: `${LOCAL_WORD_IMAGES}/bakery/cream.webp`,
+    topic: "baking-ingredients",
+    description: "The rich, high-fat dairy layer skimmed from whole milk before homogenization.",
+  },
+  {
+    id: "cocoa-powder",
+    label: "Cocoa Powder",
+    phonetic: "ˈkoʊkoʊ ˈpaʊdər",
+    img: `${LOCAL_WORD_IMAGES}/bakery/cocoa-powder.webp`,
+    topic: "baking-ingredients",
+    description: "An unsweetened fine brown dust obtained by pressing roasted cacao beans.",
+  },
+  {
+    id: "cinnamon",
+    label: "Cinnamon",
+    phonetic: "ˈsɪnəmən",
+    img: `${LOCAL_WORD_IMAGES}/bakery/cinnamon.webp`,
+    topic: "baking-ingredients",
+    description:
+      "An aromatic culinary spice harvested from the inner bark of specific tropical trees.",
+  },
+  {
+    id: "honey",
+    label: "Honey",
+    phonetic: "ˈhʌni",
+    img: `${LOCAL_WORD_IMAGES}/bakery/honey.webp`,
+    topic: "baking-ingredients",
+    description:
+      "A viscous golden sweet liquid produced by bees from the nectar of flowering plants.",
+  },
+
+  // 6. Bakery Equipment (12)
+  {
+    id: "oven",
+    label: "Oven",
+    phonetic: "ˈʌvən",
+    img: `${LOCAL_WORD_IMAGES}/bakery/oven.webp`,
+    topic: "bakery-equipment",
+    description:
+      "A thermally insulated heated chamber used for baking loaves, pastries, and roasted foods.",
+  },
+  {
+    id: "mixer",
+    label: "Mixer",
+    phonetic: "ˈmɪksər",
+    img: `${LOCAL_WORD_IMAGES}/bakery/mixer.webp`,
+    topic: "bakery-equipment",
+    description:
+      "An electric appliance with spinning attachments used to beat, whip, and knead dough.",
+  },
+  {
+    id: "rolling-pin",
+    label: "Rolling Pin",
+    phonetic: "ˈroʊlɪŋ pɪn",
+    img: `${LOCAL_WORD_IMAGES}/bakery/rolling-pin.webp`,
+    topic: "bakery-equipment",
+    description:
+      "A heavy cylindrical wooden tool rotated by hand to flatten dough evenly on counters.",
+  },
+  {
+    id: "baking-tray",
+    label: "Baking Tray",
+    phonetic: "ˈbeɪkɪŋ treɪ",
+    img: `${LOCAL_WORD_IMAGES}/bakery/baking-tray.webp`,
+    topic: "bakery-equipment",
+    description:
+      "A flat metal pan sheet used to support cookies, rolls, and pastries in hot ovens.",
+  },
+  {
+    id: "whisk",
+    label: "Whisk",
+    phonetic: "wɪsk",
+    img: `${LOCAL_WORD_IMAGES}/bakery/whisk.webp`,
+    topic: "bakery-equipment",
+    description:
+      "A handheld cooking utensil made of looped wire strands used to aerate liquid mixtures.",
+  },
+  {
+    id: "spatula",
+    label: "Spatula",
+    phonetic: "ˈspætʃələ",
+    img: `${LOCAL_WORD_IMAGES}/bakery/spatula.webp`,
+    topic: "bakery-equipment",
+    description:
+      "A flexible flat utensil used for scraping bowls, spreading frosting, and lifting pastries.",
+  },
+  {
+    id: "piping-bag",
+    label: "Piping Bag",
+    phonetic: "ˈpaɪpɪŋ bæɡ",
+    img: `${LOCAL_WORD_IMAGES}/bakery/piping-bag.webp`,
+    topic: "bakery-equipment",
+    description:
+      "A cone-shaped pastry pouch fitted with nozzles to extrude decorative icings and fillings.",
+  },
+  {
+    id: "muffin-tin",
+    label: "Muffin Tin",
+    phonetic: "ˈmʌfɪn tɪn",
+    img: `${LOCAL_WORD_IMAGES}/bakery/muffin-tin.webp`,
+    topic: "bakery-equipment",
+    description:
+      "A metal baking pan containing multiple cup-shaped depressions for individual pastries.",
+  },
+  {
+    id: "cooling-rack",
+    label: "Cooling Rack",
+    phonetic: "ˈkuːlɪŋ ræk",
+    img: `${LOCAL_WORD_IMAGES}/bakery/cooling-rack.webp`,
+    topic: "bakery-equipment",
+    description: "An elevated metal wire grid allowing air to circulate around hot baked items.",
+  },
+  {
+    id: "bread-basket",
+    label: "Bread Basket",
+    phonetic: "brɛd ˈbæskɪt",
+    img: `${LOCAL_WORD_IMAGES}/bakery/bread-basket.webp`,
+    topic: "bakery-equipment",
+    description:
+      "A cloth-lined wicker container used to hold and serve warm dinner rolls at tables.",
+  },
+  {
+    id: "apron",
+    label: "Apron",
+    phonetic: "ˈeɪprən",
+    img: `${LOCAL_WORD_IMAGES}/bakery/apron.webp`,
+    topic: "bakery-equipment",
+    description:
+      "A protective fabric garment tied around the waist and neck to keep clothes clean while cooking.",
+  },
+  {
+    id: "timer",
+    label: "Timer",
+    phonetic: "ˈtaɪmər",
+    img: `${LOCAL_WORD_IMAGES}/bakery/timer.webp`,
+    topic: "bakery-equipment",
+    description: "A countdown device with an audible alarm that monitors precise baking durations.",
+  },
+];
+
 export const COURSE_UNITS: Record<string, CourseUnit> = {
   bedroom: {
     id: "bedroom",
@@ -7056,6 +7804,16 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
     topics: MARKET_TOPICS,
     groups: MARKET_GROUPS,
     vocabulary: MARKET_VOCABULARY,
+  },
+  bakery: {
+    id: "bakery",
+    name: "The Bakery",
+    description:
+      "Discover artisan breads, flaky breakfast pastries, celebration cakes, sweet cookies, baking ingredients, and kitchen equipment through 2D scene discovery, audio practice, recall matching, and sentence building.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/bakery-hero.webp`,
+    topics: BAKERY_TOPICS,
+    groups: BAKERY_GROUPS,
+    vocabulary: BAKERY_VOCABULARY,
   },
 };
 
