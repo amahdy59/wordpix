@@ -69,3 +69,17 @@ describe("AppShell responsive components", () => {
     expect(source).toMatch(/lg:hidden/);
   });
 });
+
+describe("Card Grid Responsive Aspect Ratios", () => {
+  it("ExerciseRecallMatch uses aspect-[4/3] to prevent image squashing", () => {
+    const source = stripComments(read("exercises/ExerciseRecallMatch.tsx"));
+    expect(source).toMatch(/aspect-\[4\/3\]/);
+    expect(source).not.toMatch(/grid-rows-2/);
+  });
+
+  it("ExerciseQuickQuiz uses aspect-[4/3] to prevent image squashing", () => {
+    const source = stripComments(read("exercises/ExerciseQuickQuiz.tsx"));
+    expect(source).toMatch(/aspect-\[4\/3\]/);
+    expect(source).not.toMatch(/grid-rows-2/);
+  });
+});

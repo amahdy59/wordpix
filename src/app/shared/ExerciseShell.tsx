@@ -87,10 +87,10 @@ export const ExerciseShell = memo(function ExerciseShell({
 
         {/* Expansive Main Content Area with adaptive scroll for all viewports */}
         <main
-          className="flex-1 overflow-y-auto overflow-x-hidden px-3 sm:px-6 lg:px-10 py-3 sm:py-5 flex flex-col items-center min-h-0 w-full scroll-smooth"
+          className="flex-1 overflow-y-auto overflow-x-hidden px-3 sm:px-6 lg:px-10 py-3 sm:py-6 flex flex-col items-center min-h-0 w-full scroll-smooth"
           aria-label={`${title} exercise`}
         >
-          <div className="w-full max-w-6xl min-h-full mx-auto flex flex-col gap-3 sm:gap-4 justify-start my-0 pb-32 sm:pb-40">
+          <div className="w-full max-w-4xl min-h-full mx-auto flex flex-col gap-3.5 sm:gap-5 justify-center my-auto pb-4 sm:pb-8">
             {children}
           </div>
         </main>

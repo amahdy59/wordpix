@@ -130,23 +130,25 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         </div>
       }
     >
-      <div className="relative flex flex-col gap-3.5 sm:gap-4 w-full max-w-2xl mx-auto h-full min-h-0">
+      <div className="relative flex flex-col gap-3.5 sm:gap-5 w-full max-w-2xl mx-auto my-auto">
         {/* Question card */}
-        <div className="bg-wp-card border border-border rounded-2xl px-5 py-3.5 shadow-wp-xs shrink-0 flex items-center justify-between gap-3">
-          <h2 className="font-sans font-black text-foreground text-base sm:text-lg md:text-xl flex-1 text-balance">
-            Which picture shows &ldquo;
-            <span className="text-primary">{currentTargetWord.label}</span>&rdquo;?
-          </h2>
-          <span className="text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full shrink-0 whitespace-nowrap">
-            /{currentTargetWord.phonetic}/
-          </span>
+        <div className="bg-wp-card border border-border rounded-2xl p-4 sm:p-5 shadow-wp-xs shrink-0 flex flex-col gap-3">
+          <div className="flex items-center justify-between gap-3">
+            <h2 className="font-sans font-black text-foreground text-base sm:text-lg md:text-xl flex-1 text-balance">
+              Which picture shows &ldquo;
+              <span className="text-primary">{currentTargetWord.label}</span>&rdquo;?
+            </h2>
+            <span className="text-[11px] font-sans font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full shrink-0 whitespace-nowrap">
+              /{currentTargetWord.phonetic}/
+            </span>
+          </div>
         </div>
 
-        {/* 2Ã—2 image grid */}
+        {/* 2×2 image grid with explicit responsive aspect ratio */}
         <div
           role="group"
           aria-label={`Which image matches ${currentTargetWord.label}?`}
-          className="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3 w-full flex-1 min-h-0"
+          className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-5 w-full"
         >
           {options.map((option, idx) => {
             const isSelected = selectedId === option.id;
@@ -174,7 +176,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 aria-pressed={isSelected}
                 aria-disabled={feedback !== null}
                 onClick={() => handleSelect(option.id)}
-                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full h-full border-2 block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-sm ${borderStyle}`}
+                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full aspect-[4/3] min-h-[130px] sm:min-h-[170px] md:min-h-[210px] border-2 block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-sm ${borderStyle}`}
               >
                 {/* Keyboard shortcut badge */}
                 <span

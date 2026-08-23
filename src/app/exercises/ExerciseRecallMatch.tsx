@@ -161,17 +161,19 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         </div>
       }
     >
-      <div className="relative flex flex-col gap-3.5 sm:gap-4 w-full max-w-2xl mx-auto h-full min-h-0">
+      <div className="relative flex flex-col gap-3.5 sm:gap-5 w-full max-w-2xl mx-auto my-auto">
         {/* Sleek, Compact Target Audio Play Bar */}
-        <div className="bg-wp-panel text-wp-text-on-panel rounded-2xl p-3 sm:p-3.5 flex items-center justify-between shadow-wp-sm border border-wp-panel-border shrink-0">
+        <div className="bg-wp-panel text-wp-text-on-panel rounded-2xl p-3.5 sm:p-4 flex items-center justify-between shadow-wp-sm border border-wp-panel-border shrink-0">
           <button
             type="button"
             onClick={replayAudio}
             aria-label="Replay target audio prompt"
             className="flex items-center gap-3 min-h-[44px] hover:opacity-90 transition-opacity text-start rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-white"
           >
-            <div className="size-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md shrink-0">
-              <Volume2 className={`size-5 ${isPlaying ? "animate-pulse text-wp-amber" : ""}`} />
+            <div className="size-10 sm:size-11 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md shrink-0">
+              <Volume2
+                className={`size-5 sm:size-6 ${isPlaying ? "animate-pulse text-wp-amber" : ""}`}
+              />
             </div>
             <div>
               <h2 className="font-sans font-black text-sm sm:text-base text-white leading-tight flex items-center gap-2">
@@ -182,7 +184,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                   </span>
                 )}
               </h2>
-              <p className="font-sans text-white/80 text-xs">
+              <p className="font-sans text-white/80 text-xs sm:text-sm mt-0.5">
                 {queue.isRetry
                   ? "One more time — tap the picture you hear."
                   : "Tap image card matching the spoken word."}
@@ -194,23 +196,18 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             type="button"
             onClick={replayAudio}
             aria-label="Replay audio"
-            className="flex items-center gap-1.5 px-3 min-h-[44px] min-w-[44px] justify-center rounded-xl bg-white/10 text-white/90 hover:text-white text-xs font-sans font-bold border border-white/15 backdrop-blur-md transition-colors shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-white"
+            className="flex items-center gap-1.5 px-3.5 min-h-[44px] min-w-[44px] justify-center rounded-xl bg-white/10 text-white/90 hover:text-white text-xs sm:text-sm font-sans font-bold border border-white/15 backdrop-blur-md transition-colors shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-white"
           >
-            <RefreshCw className="size-3.5" />
+            <RefreshCw className="size-3.5 sm:size-4" />
             <span className="hidden sm:inline">Replay</span>
           </button>
         </div>
 
-        {/* Card Image Selection Grid */}
-        {/*
-          These are actions, not form values: choosing an option commits the
-          answer immediately. role="radio" implied arrow-key navigation that was
-          never wired up and that would submit on arrow press if it were.
-        */}
+        {/* Card Image Selection Grid with explicit responsive aspect ratio */}
         <div
           role="group"
           aria-label="Choose matching picture for audio prompt"
-          className="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3.5 w-full flex-1 min-h-0"
+          className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-5 w-full"
         >
           {displayCards.map((card, idx) => {
             const isSelected = selectedId === card.id;
@@ -242,7 +239,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 aria-pressed={isSelected}
                 aria-disabled={feedback !== null}
                 onClick={() => handleCardClick(card)}
-                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full h-full block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary shadow-wp-sm ${cardStateStyle}`}
+                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full aspect-[4/3] min-h-[130px] sm:min-h-[170px] md:min-h-[210px] block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary shadow-wp-sm ${cardStateStyle}`}
               >
                 <span
                   aria-hidden

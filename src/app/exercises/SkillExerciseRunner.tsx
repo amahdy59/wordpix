@@ -1,7 +1,7 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import { Volume2, RotateCcw, CheckCircle2, XCircle } from "lucide-react";
 import type { Action } from "../types";
-import { BEDROOM_VOCABULARY } from "../data/lessons";
+import { COURSE_UNITS } from "../data/lessons";
 import { LessonHeader } from "../shared/LessonHeader";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
@@ -77,9 +77,14 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
     [task]
   );
 
-  const imageWord = task?.imageWordId
-    ? BEDROOM_VOCABULARY.find((w) => w.id === task.imageWordId)
-    : undefined;
+  const imageWord = useMemo(() => {
+    if (!task?.imageWordId) return undefined;
+    for (const unit of Object.values(COURSE_UNITS)) {
+      const found = unit.vocabulary.find((w) => w.id === task.imageWordId);
+      if (found) return found;
+    }
+    return undefined;
+  }, [task]);
 
   // Speak the prompt audio when a listening task opens.
   useEffect(() => {
@@ -218,11 +223,11 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
         </div>
 
         {imageWord && (
-          <div className="w-full rounded-3xl overflow-hidden border border-border shadow-wp-xs bg-muted">
+          <div className="w-full rounded-3xl overflow-hidden border border-border shadow-wp-xs bg-muted aspect-[16/10] sm:aspect-[16/9] max-h-[38vh] relative">
             <WordImage
               word={imageWord}
               altMode={task.kind === "choice" && !task.optionsAreImages ? "assessment" : "learning"}
-              className="w-full h-auto block object-contain"
+              className="size-full object-cover block"
             />
           </div>
         )}
