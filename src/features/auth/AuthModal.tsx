@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { supabase } from "../../lib/supabase/client";
 import { migrateGuestToAccount } from "../../lib/persistence/sync";
 import { User, X } from "lucide-react";
@@ -17,8 +17,7 @@ type AuthState =
 type AuthMode = "login" | "signup";
 
 export function AuthModal({ onClose }: AuthModalProps) {
-  const containerRef = useRef<HTMLDivElement>(null);
-  useModalA11y(true, containerRef, onClose);
+  const containerRef = useModalA11y({ isOpen: true, onDismiss: onClose });
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

@@ -19,8 +19,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
 }: Props) {
   const { speak } = useAudio();
   const closeBtnRef = useRef<HTMLButtonElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  useModalA11y(isOpen, containerRef, onClose);
+  const containerRef = useModalA11y({ isOpen, onDismiss: onClose });
 
   if (!isOpen || !word) return null;
 
