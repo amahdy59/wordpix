@@ -74,12 +74,26 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
               {/* World Info & Details */}
               <div className="flex-1 flex flex-col justify-between gap-4">
                 <div className="flex flex-col gap-2">
-                  <div className="flex items-center justify-between">
-                    <Badge variant="amber" size="sm">
-                      Level 1 · A1 Beginner
-                    </Badge>
+                  <div className="flex items-center justify-between flex-wrap gap-2">
+                    <div className="flex items-center gap-2">
+                      {world.isRevision ? (
+                        world.revisionKind === "milestone" ? (
+                          <Badge variant="teal" size="sm">
+                            🌟 Grand Milestone Review
+                          </Badge>
+                        ) : (
+                          <Badge variant="green" size="sm">
+                            ✨ Spaced Retention Checkpoint
+                          </Badge>
+                        )
+                      ) : (
+                        <Badge variant="amber" size="sm">
+                          Level 1 · A1 Beginner
+                        </Badge>
+                      )}
+                    </div>
                     <span className="font-sans text-xs text-muted-foreground font-semibold">
-                      {totalWords} Vocabulary Words
+                      {totalWords} High-Yield Words
                     </span>
                   </div>
 

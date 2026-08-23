@@ -121,32 +121,46 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
   },
   shower: {
     id: "shower",
-    arabic: "دش",
+    arabic: "دُشُّ الشَّاطِئ (مِرَشَّةُ الاسْتِحْمَامِ السَّاحِلِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈʃaʊər",
+    pronunciationTip: "Pronounce 'SHOU-er' (/ˈʃaʊ.ər/).",
+    collocations: [
+      "beach shower",
+      "outdoor shower",
+      "rinse off in the shower",
+      "cold water shower",
+      "public beach shower",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "rinse off",
+        meaning: "wash away salt crystals and sand particles with fresh water",
+        arabic: "يَشْطُفُ الرِّمَالَ وَالأَمْلَاح",
+        example: "He stood under the outdoor beach shower to rinse off sticky saltwater and sand.",
+      },
+    ],
     sentences: [
       {
-        context: "Daily Needs",
-        en: "I need to use the shower now.",
-        ar: "أحتاج إلى استخدام ذلك الآن.",
+        context: "Coastal Facilities",
+        en: "Swimmers lined up at the outdoor beach shower to rinse sand and saltwater from their skin and hair.",
+        ar: "اصْطَفَّ السَّابِحُونَ عِنْدَ دُشِّ الشَّاطِئِ الخَارِجِيِّ لِغَسْلِ الرِّمَالِ وَالمِلْحِ عَنْ أَجْسَامِهِمْ.",
       },
-      { context: "Cleaning", en: "The shower is very clean.", ar: "إنه نظيف جداً." },
-      { context: "Shopping", en: "Please buy a new shower.", ar: "يرجى شراء واحد جديد." },
-    ],
-    collocations: ["use the shower", "clean the shower", "buy a shower"],
-    phrasalVerbs: [],
-    partOfSpeech: "noun",
-    audio: "/audio/en-US/shower.mp3",
-    meanings: [
       {
-        en: "A piece of equipment that sprays water over you so you can wash your whole body.",
-        ar: "دش",
-        sentences: [
-          {
-            en: "The shower is clean.",
-            ar: "الدش نظيف.",
-          },
-        ],
+        context: "Foot Wash Post",
+        en: "Convenient low foot showers near the boardwalk ramp allow visitors to clean their feet before getting into cars.",
+        ar: "تُتِيحُ مِرَشَّاتُ القَدَمِ المُنْخَفِضَةُ قُرْبَ المَمْشَى لِلزُّوَّارِ غَسْلَ أَرْجُلِهِمْ قَبْلَ رُكُوبِ السَّيَّارَاتِ.",
+      },
+      {
+        context: "Freshwater Rinse",
+        en: "A quick rinse under the freshwater shower prevents skin irritation caused by dried ocean brine.",
+        ar: "يَمْنَعُ الشَّطْفُ السَّرِيعُ تَحْتَ المَاءِ العَذْبِ تَهَيُّجَ الجِلْدِ النَّاتِجَ عَنْ مِلْحِ البَحْرِ.",
       },
     ],
+    exampleSentence:
+      "Swimmers lined up at the outdoor beach shower to rinse sand and saltwater from their skin and hair.",
+    exampleArabic:
+      "اصْطَفَّ السَّابِحُونَ عِنْدَ دُشِّ الشَّاطِئِ الخَارِجِيِّ لِغَسْلِ الرِّمَالِ وَالمِلْحِ عَنْ أَجْسَامِهِمْ.",
   },
   faucet: {
     id: "faucet",
@@ -1134,7 +1148,6 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
   },
-
   "alarm-clock": {
     id: "alarm-clock",
     arabic: "سَاعَةُ المُنَبِّه (مُنَبِّه)",
@@ -15963,46 +15976,46 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
   },
   sand: {
     id: "sand",
-    arabic: "رَمْل",
+    arabic: "رَمْل (رِمَالُ الشَّاطِئ)",
     partOfSpeech: "noun",
     phonetic: "sænd",
-    pronunciationTip: "Short 'a' vowel /æ/ followed by 'nd': 'SAND' (/sænd/).",
+    pronunciationTip: "Short 'a' sound /æ/: 'SAND' (/sænd/).",
     collocations: [
-      "fine sand",
-      "play in the sand",
       "golden sand",
-      "wet sand",
-      "sand castle",
+      "soft warm sand",
+      "white sand beach",
+      "walk on the sand",
       "grain of sand",
     ],
     phrasalVerbs: [
       {
-        phrase: "sift through",
-        meaning: "filter fine particles with fingers",
-        arabic: "يُغَرْبِلُ الرَّمْل",
-        example: "The warm sand sifted through his little fingers.",
+        phrase: "sink into",
+        meaning: "press down deeply into soft loose granules",
+        arabic: "يَغُوصُ فِي الرِّمَالِ النَّاعِمَة",
+        example: "Our bare feet sank into the soft warm sand as we strolled by the water.",
       },
     ],
     sentences: [
       {
-        context: "Sensory Play",
-        en: "Children poured soft golden sand through plastic sifters into buckets.",
-        ar: "سَكَبَ الأَطْفَالُ الرَّمْلَ الذَّهَبِيَّ النَّاعِمَ عَبْرَ مَنَاخِلَ بْلاسْتِيكِيَّةٍ دَاخِلَ الدِّلَاءِ.",
+        context: "Beach Landscape",
+        en: "Children dug deep moats and sculpted towers in the damp golden sand along the coast.",
+        ar: "حَفَرَ الأَطْفَالُ خَنَادِقَ عَمِيقَةً وَنَحَتُوا أَبْرَاجًا فِي الرِّمَالِ الذَّهَبِيَّةِ الرَّطْبَةِ.",
       },
       {
-        context: "Castles",
-        en: "Damp sand is perfect for building sturdy turrets and sculpted walls.",
-        ar: "يُعَدُّ الرَّمْلُ الرَّطْبُ مِثَالِيًّا لِبِنَاءِ أَبْرَاجٍ قَوِيَّةٍ وَجُدْرَانٍ مَنْحُوتَةٍ.",
+        context: "Sunny Afternoon",
+        en: "The midday sun heated the dry powdery sand until walking barefoot required quick steps.",
+        ar: "سَخَّنَتْ شَمْسُ الظَّهِيرَةِ الرِّمَالَ النَّاعِمَةَ الجَافَّةَ حَتَّى تَطَلَّبَ المَشْيُ حَافِيًا خُطُوَاتٍ سَرِيعَةً.",
       },
       {
-        context: "Safety Surfacing",
-        en: "A thick layer of clean sand lines the playground pit for soft landings.",
-        ar: "تُغَطِّي طَبَقَةٌ سَمِيكَةٌ مِنَ الرَّمْلِ النَّظِيفِ حُفْرَةَ المَلْعَبِ لِهُبُوطٍ لَيِّنٍ.",
+        context: "Coastal Geology",
+        en: "Ocean waves continually crush seashells and mineral rocks into fine shoreline sand.",
+        ar: "تَسْحَقُ أَمْوَاجُ المُحِيطِ أَصْدَافَ البَحْرِ وَالصُّخُورَ بِاسْتِمْرَارٍ لِتُحَوِّلَهَا إِلَى رِمَالٍ شَاطِئِيَّةٍ.",
       },
     ],
-    exampleSentence: "Children poured soft golden sand through plastic sifters into buckets.",
+    exampleSentence:
+      "Children dug deep moats and sculpted towers in the damp golden sand along the coast.",
     exampleArabic:
-      "سَكَبَ الأَطْفَالُ الرَّمْلَ الذَّهَبِيَّ النَّاعِمَ عَبْرَ مَنَاخِلَ بْلاسْتِيكِيَّةٍ دَاخِلَ الدِّلَاءِ.",
+      "حَفَرَ الأَطْفَالُ خَنَادِقَ عَمِيقَةً وَنَحَتُوا أَبْرَاجًا فِي الرِّمَالِ الذَّهَبِيَّةِ الرَّطْبَةِ.",
   },
   gravel: {
     id: "gravel",
@@ -21200,47 +21213,47 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
   },
   reading: {
     id: "reading",
-    arabic: "القِرَاءَة (المُطَالَعَة)",
+    arabic: "قِرَاءَة (مُمَارَسَةُ القِرَاءَةِ عَلَى الشَّاطِئ)",
     partOfSpeech: "noun",
     phonetic: "ˈriːdɪŋ",
-    pronunciationTip: "Pronounce 'REE-ding' (/ˈriː.dɪŋ/).",
+    pronunciationTip: "Long 'ee' sound /iː/: 'REED-ing' (/ˈriː.dɪŋ/).",
     collocations: [
-      "avid reading",
-      "silent reading",
-      "reading comprehension",
-      "reading nook",
-      "enjoy reading",
-      "reading habit",
+      "beach reading",
+      "reading a book",
+      "quiet reading",
+      "afternoon reading",
+      "reading under the umbrella",
     ],
     phrasalVerbs: [
       {
-        phrase: "read along",
-        meaning: "follow text while listening to narration",
-        arabic: "يُتَابِعُ القِرَاءَة",
-        example: "Children read along with the audio narration during interactive storytime.",
+        phrase: "get lost in",
+        meaning: "become fully absorbed in literary pages",
+        arabic: "يَسْتَغْرِقُ فِي قِرَاءَةِ الكِتَاب",
+        example:
+          "She got lost in an engrossing mystery novel while resting under her beach umbrella.",
       },
     ],
     sentences: [
       {
-        context: "Quiet Recreation",
-        en: "She spent a peaceful Sunday afternoon reading historical fiction in the comfortable armchair.",
-        ar: "أَمْضَتْ بَعْدَ ظُهْرِ يَوْمِ أَحَدٍ هَادِئٍ فِي قِرَاءَةِ رِوَايَةٍ تَارِيخِيَّةٍ عَلَى كُرْسِيِّ الجُلُوسِ المُرِيحِ.",
+        context: "Seaside Leisure",
+        en: "Quiet reading under a shady umbrella with the sound of distant waves is the ultimate relaxation.",
+        ar: "تُعَدُّ القِرَاءَةُ الهَادِئَةُ تَحْتَ المِظَلَّةِ مَعَ صَوْتِ الأَمْوَاجِ غَايَةَ الاسْتِرْخَاءِ.",
       },
       {
-        context: "Literacy Goal",
-        en: "Daily reading expands vocabulary, sharpens memory, and fosters deep empathy for others.",
-        ar: "تُوَسِّعُ القِرَاءَةُ اليَوْمِيَّةُ المُفْرَدَاتِ وَتُقَوِّي الذَّاكِرَةَ وَتُعَزِّزُ التَّعَاطُفَ العَمِيقَ مَعَ الآخَرِينَ.",
+        context: "Vacation Books",
+        en: "He packed three bestselling paperbacks specifically for leisurely afternoon reading on the coast.",
+        ar: "حَزَمَ ثَلَاثَ رِوَايَاتٍ شَهِيرَةٍ خِصِّيصًا لِلْقِرَاءَةِ عَلَى شَاطِئِ البَحْرِ.",
       },
       {
-        context: "Library Culture",
-        en: "The summer reading challenge encourages students to complete ten books over the holiday.",
-        ar: "يُشَجِّعُ تَحَدِّي القِرَاءَةِ الصَّيْفِيُّ الطُّلَّابَ عَلَى إِتْمَامِ عَشْرَةِ كُتُبٍ خِلَالَ العُطْلَةِ.",
+        context: "E-reader Glare",
+        en: "Using an anti-glare electronic reader allows effortless outdoor reading even in bright direct sunlight.",
+        ar: "يُتِيحُ اسْتِخْدَامُ قَارِئٍ إِلِكْتُرُونِيٍّ مُقَاوِمٍ لِلِانْعِكَاسِ القِرَاءَةَ بِسُهُولَةٍ تَحْتَ الشَّمْسِ.",
       },
     ],
     exampleSentence:
-      "She spent a peaceful Sunday afternoon reading historical fiction in the comfortable armchair.",
+      "Quiet reading under a shady umbrella with the sound of distant waves is the ultimate relaxation.",
     exampleArabic:
-      "أَمْضَتْ بَعْدَ ظُهْرِ يَوْمِ أَحَدٍ هَادِئٍ فِي قِرَاءَةِ رِوَايَةٍ تَارِيخِيَّةٍ عَلَى كُرْسِيِّ الجُلُوسِ المُرِيحِ.",
+      "تُعَدُّ القِرَاءَةُ الهَادِئَةُ تَحْتَ المِظَلَّةِ مَعَ صَوْتِ الأَمْوَاجِ غَايَةَ الاسْتِرْخَاءِ.",
   },
   borrowing: {
     id: "borrowing",
@@ -27100,49 +27113,6 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleArabic:
       "ضَبَطَتْ مُؤَقِّتَ المَطْبَخِ الرَّقْمِيَّ لِمُدَّةِ خَمْسٍ وَعِشْرِينَ دَقِيقَةً كَيْ لَا يَحْتَرِقَ السُّوفْلِيه.",
   },
-  sand: {
-    id: "sand",
-    arabic: "رَمْل (رِمَالُ الشَّاطِئ)",
-    partOfSpeech: "noun",
-    phonetic: "sænd",
-    pronunciationTip: "Short 'a' sound /æ/: 'SAND' (/sænd/).",
-    collocations: [
-      "golden sand",
-      "soft warm sand",
-      "white sand beach",
-      "walk on the sand",
-      "grain of sand",
-    ],
-    phrasalVerbs: [
-      {
-        phrase: "sink into",
-        meaning: "press down deeply into soft loose granules",
-        arabic: "يَغُوصُ فِي الرِّمَالِ النَّاعِمَة",
-        example: "Our bare feet sank into the soft warm sand as we strolled by the water.",
-      },
-    ],
-    sentences: [
-      {
-        context: "Beach Landscape",
-        en: "Children dug deep moats and sculpted towers in the damp golden sand along the coast.",
-        ar: "حَفَرَ الأَطْفَالُ خَنَادِقَ عَمِيقَةً وَنَحَتُوا أَبْرَاجًا فِي الرِّمَالِ الذَّهَبِيَّةِ الرَّطْبَةِ.",
-      },
-      {
-        context: "Sunny Afternoon",
-        en: "The midday sun heated the dry powdery sand until walking barefoot required quick steps.",
-        ar: "سَخَّنَتْ شَمْسُ الظَّهِيرَةِ الرِّمَالَ النَّاعِمَةَ الجَافَّةَ حَتَّى تَطَلَّبَ المَشْيُ حَافِيًا خُطُوَاتٍ سَرِيعَةً.",
-      },
-      {
-        context: "Coastal Geology",
-        en: "Ocean waves continually crush seashells and mineral rocks into fine shoreline sand.",
-        ar: "تَسْحَقُ أَمْوَاجُ المُحِيطِ أَصْدَافَ البَحْرِ وَالصُّخُورَ بِاسْتِمْرَارٍ لِتُحَوِّلَهَا إِلَى رِمَالٍ شَاطِئِيَّةٍ.",
-      },
-    ],
-    exampleSentence:
-      "Children dug deep moats and sculpted towers in the damp golden sand along the coast.",
-    exampleArabic:
-      "حَفَرَ الأَطْفَالُ خَنَادِقَ عَمِيقَةً وَنَحَتُوا أَبْرَاجًا فِي الرِّمَالِ الذَّهَبِيَّةِ الرَّطْبَةِ.",
-  },
   ocean: {
     id: "ocean",
     arabic: "مُحِيط (بَحْرٌ لُجِّيّ)",
@@ -27610,92 +27580,6 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       "The South Pacific atoll encircled a breathtaking turquoise lagoon with warm, crystal-clear water.",
     exampleArabic:
       "أَحَاطَتِ الجَزِيرَةُ المَرْجَانِيَّةُ بِبُحَيْرَةٍ شَاطِئِيَّةٍ فَيْرُوزِيَّةٍ ذَاتِ مِيَاهٍ دَافِئَةٍ صَافِيَةٍ.",
-  },
-  towel: {
-    id: "towel",
-    arabic: "مِنْشَفَة (فُوطَةُ البَحْر / مَنْشَفَة)",
-    partOfSpeech: "noun",
-    phonetic: "ˈtaʊəl",
-    pronunciationTip: "Pronounce 'TOW-ul' (/ˈtaʊ.əl/).",
-    collocations: [
-      "beach towel",
-      "striped towel",
-      "dry off with a towel",
-      "lay out a towel",
-      "cotton towel",
-    ],
-    phrasalVerbs: [
-      {
-        phrase: "dry off",
-        meaning: "wipe away water droplets from skin with cloth",
-        arabic: "يُجَفِّفُ الجِسْمَ بِالمِنْشَفَة",
-        example: "He grabbed his oversized beach towel to dry off after emerging from the ocean.",
-      },
-    ],
-    sentences: [
-      {
-        context: "Beach Relaxation",
-        en: "She spread a vibrant striped beach towel across the sand to sunbathe under the afternoon sky.",
-        ar: "فَرَشَتْ مِنْشَفَةَ شَاطِئٍ مُخَطَّطَةً زَاهِيَةً عَلَى الرِّمَالِ لِلِاسْتِرْخَاءِ تَحْتَ الشَّمْسِ.",
-      },
-      {
-        context: "After Swimming",
-        en: "Wrapped comfortably in a soft velour towel, the child warmed up after a long swim in cool waves.",
-        ar: "تَدَفَّأَ الطِّفْلُ المَلْفُوفُ بِمِنْشَفَةٍ قُطْنِيَّةٍ نَاعِمَةٍ بَعْدَ سِبَاحَةٍ طَوِيلَةٍ فِي المَاءِ البَارِدِ.",
-      },
-      {
-        context: "Packing for the Beach",
-        en: "Remember to pack extra absorbent beach towels and dry clothes in your canvas tote bag.",
-        ar: "تَذَكَّرْ أَنْ تَحْزِمَ مَنَاشِفَ شَاطِئٍ إِضَافِيَّةً سَرِيعَةَ الامْتِصَاصِ فِي حَقِيبَتِكَ القُمَاشِيَّةِ.",
-      },
-    ],
-    exampleSentence:
-      "She spread a vibrant striped beach towel across the sand to sunbathe under the afternoon sky.",
-    exampleArabic:
-      "فَرَشَتْ مِنْشَفَةَ شَاطِئٍ مُخَطَّطَةً زَاهِيَةً عَلَى الرِّمَالِ لِلِاسْتِرْخَاءِ تَحْتَ الشَّمْسِ.",
-  },
-  sunscreen: {
-    id: "sunscreen",
-    arabic: "وَاقِي الشَّمْس (كْرِيمُ الحِمَايَةِ مِنَ الشَّمْس)",
-    partOfSpeech: "noun",
-    phonetic: "ˈsʌnskriːn",
-    pronunciationTip: "Pronounce 'SUN-skreen' (/ˈsʌn.skriːn/).",
-    collocations: [
-      "apply sunscreen",
-      "waterproof sunscreen",
-      "SPF 50 sunscreen",
-      "bottle of sunscreen",
-      "reapply sunscreen",
-    ],
-    phrasalVerbs: [
-      {
-        phrase: "rub in",
-        meaning: "massage lotion thoroughly into exposed skin",
-        arabic: "يَدْهَنُ وَاقِي الشَّمْسِ بِعِنَايَة",
-        example: "Rub in water-resistant sunscreen every two hours to prevent painful sunburn.",
-      },
-    ],
-    sentences: [
-      {
-        context: "Sun Safety",
-        en: "Dermatologists advise applying broad-spectrum SPF 50 sunscreen twenty minutes before going out.",
-        ar: "يَنْصَحُ أَطِبَّاءُ الجِلْدِيَّةِ بِوَضْعِ وَاقِي الشَّمْسِ بِمُعَامِلِ حِمَايَةٍ 50 قَبْلَ الخُرُوجِ بِعِشْرِينَ دَقِيقَةً.",
-      },
-      {
-        context: "Reapplication",
-        en: "Swimmers reapplied waterproof sunscreen lotion after splashing in the ocean waves for an hour.",
-        ar: "أَعَادَ السَّابِحُونَ وَضْعَ كْرِيمِ وَاقِي الشَّمْسِ المُقَاوِمِ لِلْمَاءِ بَعْدَ السِّبَاحَةِ لِمُدَّةِ سَاعَةٍ.",
-      },
-      {
-        context: "Reef Protection",
-        en: "Using mineral-based, reef-safe sunscreen ensures that coral ecosystems are protected from harmful chemicals.",
-        ar: "يَضْمَنُ اسْتِخْدَامُ وَاقِي الشَّمْسِ المَعْدَنِيِّ الآمِنِ حِمَايَةَ الشِّعَابِ المَرْجَانِيَّةِ مِنَ الكِيمَاوِيَّاتِ.",
-      },
-    ],
-    exampleSentence:
-      "Dermatologists advise applying broad-spectrum SPF 50 sunscreen twenty minutes before going out.",
-    exampleArabic:
-      "يَنْصَحُ أَطِبَّاءُ الجِلْدِيَّةِ بِوَضْعِ وَاقِي الشَّمْسِ بِمُعَامِلِ حِمَايَةٍ 50 قَبْلَ الخُرُوجِ بِعِشْرِينَ دَقِيقَةً.",
   },
   umbrella: {
     id: "umbrella",
@@ -29112,50 +28996,6 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleArabic:
       "عِنْدَمَا حَلَّ الغَسَقُ، أَوْقَدَ المُخَيِّمُونَ نَارَ شَاطِئٍ مُتَوَهِّجَةً فِي مَوْقِدٍ مُخَصَّصٍ لِلتَّدَفُّؤِ.",
   },
-  reading: {
-    id: "reading",
-    arabic: "قِرَاءَة (مُمَارَسَةُ القِرَاءَةِ عَلَى الشَّاطِئ)",
-    partOfSpeech: "noun",
-    phonetic: "ˈriːdɪŋ",
-    pronunciationTip: "Long 'ee' sound /iː/: 'REED-ing' (/ˈriː.dɪŋ/).",
-    collocations: [
-      "beach reading",
-      "reading a book",
-      "quiet reading",
-      "afternoon reading",
-      "reading under the umbrella",
-    ],
-    phrasalVerbs: [
-      {
-        phrase: "get lost in",
-        meaning: "become fully absorbed in literary pages",
-        arabic: "يَسْتَغْرِقُ فِي قِرَاءَةِ الكِتَاب",
-        example:
-          "She got lost in an engrossing mystery novel while resting under her beach umbrella.",
-      },
-    ],
-    sentences: [
-      {
-        context: "Seaside Leisure",
-        en: "Quiet reading under a shady umbrella with the sound of distant waves is the ultimate relaxation.",
-        ar: "تُعَدُّ القِرَاءَةُ الهَادِئَةُ تَحْتَ المِظَلَّةِ مَعَ صَوْتِ الأَمْوَاجِ غَايَةَ الاسْتِرْخَاءِ.",
-      },
-      {
-        context: "Vacation Books",
-        en: "He packed three bestselling paperbacks specifically for leisurely afternoon reading on the coast.",
-        ar: "حَزَمَ ثَلَاثَ رِوَايَاتٍ شَهِيرَةٍ خِصِّيصًا لِلْقِرَاءَةِ عَلَى شَاطِئِ البَحْرِ.",
-      },
-      {
-        context: "E-reader Glare",
-        en: "Using an anti-glare electronic reader allows effortless outdoor reading even in bright direct sunlight.",
-        ar: "يُتِيحُ اسْتِخْدَامُ قَارِئٍ إِلِكْتُرُونِيٍّ مُقَاوِمٍ لِلِانْعِكَاسِ القِرَاءَةَ بِسُهُولَةٍ تَحْتَ الشَّمْسِ.",
-      },
-    ],
-    exampleSentence:
-      "Quiet reading under a shady umbrella with the sound of distant waves is the ultimate relaxation.",
-    exampleArabic:
-      "تُعَدُّ القِرَاءَةُ الهَادِئَةُ تَحْتَ المِظَلَّةِ مَعَ صَوْتِ الأَمْوَاجِ غَايَةَ الاسْتِرْخَاءِ.",
-  },
   walking: {
     id: "walking",
     arabic: "مَشْي (المَشْيُ عَلَى رِمَالِ الشَّاطِئ)",
@@ -29880,49 +29720,6 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleArabic:
       "رَفَعَ المُنْقِذُونَ عَلَمَ تَحْذِيرٍ أَحْمَرَ زَاهِيًا لِتَنْبِيهِ الرُّوَّادِ مِنَ التَّيَّارَاتِ الخَطِرَةِ.",
   },
-  shower: {
-    id: "shower",
-    arabic: "دُشُّ الشَّاطِئ (مِرَشَّةُ الاسْتِحْمَامِ السَّاحِلِيَّة)",
-    partOfSpeech: "noun",
-    phonetic: "ˈʃaʊər",
-    pronunciationTip: "Pronounce 'SHOU-er' (/ˈʃaʊ.ər/).",
-    collocations: [
-      "beach shower",
-      "outdoor shower",
-      "rinse off in the shower",
-      "cold water shower",
-      "public beach shower",
-    ],
-    phrasalVerbs: [
-      {
-        phrase: "rinse off",
-        meaning: "wash away salt crystals and sand particles with fresh water",
-        arabic: "يَشْطُفُ الرِّمَالَ وَالأَمْلَاح",
-        example: "He stood under the outdoor beach shower to rinse off sticky saltwater and sand.",
-      },
-    ],
-    sentences: [
-      {
-        context: "Coastal Facilities",
-        en: "Swimmers lined up at the outdoor beach shower to rinse sand and saltwater from their skin and hair.",
-        ar: "اصْطَفَّ السَّابِحُونَ عِنْدَ دُشِّ الشَّاطِئِ الخَارِجِيِّ لِغَسْلِ الرِّمَالِ وَالمِلْحِ عَنْ أَجْسَامِهِمْ.",
-      },
-      {
-        context: "Foot Wash Post",
-        en: "Convenient low foot showers near the boardwalk ramp allow visitors to clean their feet before getting into cars.",
-        ar: "تُتِيحُ مِرَشَّاتُ القَدَمِ المُنْخَفِضَةُ قُرْبَ المَمْشَى لِلزُّوَّارِ غَسْلَ أَرْجُلِهِمْ قَبْلَ رُكُوبِ السَّيَّارَاتِ.",
-      },
-      {
-        context: "Freshwater Rinse",
-        en: "A quick rinse under the freshwater shower prevents skin irritation caused by dried ocean brine.",
-        ar: "يَمْنَعُ الشَّطْفُ السَّرِيعُ تَحْتَ المَاءِ العَذْبِ تَهَيُّجَ الجِلْدِ النَّاتِجَ عَنْ مِلْحِ البَحْرِ.",
-      },
-    ],
-    exampleSentence:
-      "Swimmers lined up at the outdoor beach shower to rinse sand and saltwater from their skin and hair.",
-    exampleArabic:
-      "اصْطَفَّ السَّابِحُونَ عِنْدَ دُشِّ الشَّاطِئِ الخَارِجِيِّ لِغَسْلِ الرِّمَالِ وَالمِلْحِ عَنْ أَجْسَامِهِمْ.",
-  },
   "changing-room": {
     id: "changing-room",
     arabic: "غُرْفَةُ تَبْدِيلِ المَلَابِس (كَبِينَةُ تَبْدِيلِ المَلَابِس)",
@@ -30095,6 +29892,6513 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleArabic:
       "ضَمَنَ الوُصُولُ البَاكِرُ العُثُورَ عَلَى مَكَانٍ مُظَلَّلٍ فِي مَوْقِفِ سَيَّارَاتِ الشَّاطِئِ الرَّئِيسِيِّ.",
   },
+  waiter: {
+    id: "waiter",
+    arabic: "نَادِل (مُقَدِّمُ الطَّعَامِ فِي المَطْعَم)",
+    partOfSpeech: "noun",
+    phonetic: "ˈweɪtər",
+    pronunciationTip: "Pronounce 'WAY-ter' (/ˈweɪ.tər/).",
+    collocations: ["friendly waiter", "call the waiter", "tip the waiter", "experienced waiter"],
+    phrasalVerbs: [
+      {
+        phrase: "wait on",
+        meaning: "serve food and drinks to diners",
+        arabic: "يَقُومُ بِخِدْمَةِ الزَّبَائِن",
+        example: "He waited on five tables during the dinner rush.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Ordering",
+        en: "The waiter recommended the grilled sea bass as today's special entrée.",
+        ar: "أَوْصَى النَّادِلُ بِسَمَكِ القَارُوصِ المَشْوِيِّ كَطَبَقٍ رَئِيسِيٍّ مُمَيَّزٍ لِلْيَوْمِ.",
+      },
+      {
+        context: "Service",
+        en: "Our waiter promptly brought warm sourdough bread and cold water to the table.",
+        ar: "أَحْضَرَ نَادِلُنَا خُبْزَ التَّخْمِيرِ الدَّافِئَ وَالمَاءَ البَارِدَ سَرِيعًا إِلَى المَائِدَةِ.",
+      },
+      {
+        context: "Hospitality",
+        en: "We left a generous tip for the waiter because of his cheerful hospitality.",
+        ar: "تَرَكْنَا إِكْرَامِيَّةً سَخِيَّةً لِلنَّادِلِ لِحُسْنِ ضِيَافَتِهِ وَبَشَاشَتِهِ.",
+      },
+    ],
+    exampleSentence: "The waiter recommended the grilled sea bass as today's special entrée.",
+    exampleArabic:
+      "أَوْصَى النَّادِلُ بِسَمَكِ القَارُوصِ المَشْوِيِّ كَطَبَقٍ رَئِيسِيٍّ مُمَيَّزٍ لِلْيَوْمِ.",
+  },
+  waitress: {
+    id: "waitress",
+    arabic: "نَادِلَة (مُقَدِّمَةُ الطَّعَامِ فِي المَطْعَم)",
+    partOfSpeech: "noun",
+    phonetic: "ˈweɪtrɪs",
+    pronunciationTip: "Pronounce 'WAY-tris' (/ˈweɪ.trɪs/).",
+    collocations: ["courteous waitress", "call the waitress", "attentive waitress"],
+    phrasalVerbs: [
+      {
+        phrase: "bring out",
+        meaning: "carry prepared food from kitchen to tables",
+        arabic: "تُحْضِرُ الأَطْبَاقَ مِنَ المَطْبَخ",
+        example: "The waitress brought out steaming plates of pasta.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dining Service",
+        en: "The waitress greeted our family with a warm smile and handed out menus.",
+        ar: "اسْتَقْبَلَتِ النَّادِلَةُ عَائِلَتَنَا بِابْتِسَامَةٍ دَافِئَةٍ وَسَلَّمَتْنَا قَوَائِمَ الطَّعَامِ.",
+      },
+      {
+        context: "Taking Orders",
+        en: "Our waitress wrote down every special dietary request with great precision.",
+        ar: "دَوَّنَتْ نَادِلَتُنَا كُلَّ طَلَبٍ غِذَائِيٍّ خَاصٍّ بِدِقَّةٍ بَالِغَةٍ.",
+      },
+      {
+        context: "Efficiency",
+        en: "The attentive waitress refilled our water glasses without us having to ask.",
+        ar: "أَعَادَتِ النَّادِلَةُ اللَّبِقَةُ مَلْءَ كُؤُوسِ المَاءِ دُونَ الحَاجَةِ إِلَى طَلَبِ ذَلِكَ.",
+      },
+    ],
+    exampleSentence: "The waitress greeted our family with a warm smile and handed out menus.",
+    exampleArabic:
+      "اسْتَقْبَلَتِ النَّادِلَةُ عَائِلَتَنَا بِابْتِسَامَةٍ دَافِئَةٍ وَسَلَّمَتْنَا قَوَائِمَ الطَّعَامِ.",
+  },
+  chef: {
+    id: "chef",
+    arabic: "طَاهٍ (شِيف / كَبِيرُ الطُّهَاةِ فِي المَطْبَخ)",
+    partOfSpeech: "noun",
+    phonetic: "ʃɛf",
+    pronunciationTip: "Pronounce 'SHEF' (/ʃɛf/).",
+    collocations: ["head chef", "executive chef", "pastry chef", "master chef"],
+    phrasalVerbs: [
+      {
+        phrase: "whip up",
+        meaning: "prepare a culinary dish quickly and skillfully",
+        arabic: "يُعِدُّ طَبَقًا شَهِيًّا بِبَرَاعَة",
+        example: "The head chef whipped up a sensational risotto.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Culinary Creation",
+        en: "The executive chef personally designed the seven-course seasonal degustation menu.",
+        ar: "صَمَّمَ كَبِيرُ الطُّهَاةِ شَخْصِيًّا قَائِمَةَ التَّذَوُّقِ المَوْسِمِيَّةَ.",
+      },
+      {
+        context: "Kitchen Leadership",
+        en: "The pastry chef decorated the wedding cake with delicate sugar flowers.",
+        ar: "زَيَّنَ شِيفُ الحَلَوِيَّاتِ كَعْكَةَ الزِّفَافِ بِزُهُورٍ سُكَّرِيَّةٍ رَقِيقَةٍ.",
+      },
+      {
+        context: "Compliments",
+        en: "The satisfied diners sent their compliments to the chef for the exquisite steak.",
+        ar: "قَدَّمَ الضُّيُوفُ تَهَانِيهِمْ لِلشِّيفِ عَلَى شَرِيحَةِ اللَّحْمِ الرَّائِعَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The executive chef personally designed the seven-course seasonal degustation menu.",
+    exampleArabic: "صَمَّمَ كَبِيرُ الطُّهَاةِ شَخْصِيًّا قَائِمَةَ التَّذَوُّقِ المَوْسِمِيَّةَ.",
+  },
+  cook: {
+    id: "cook",
+    arabic: "طَبَّاخ (مُعِدُّ الوَجَبَاتِ وَالأَطْعِمَة)",
+    partOfSpeech: "noun",
+    phonetic: "kʊk",
+    pronunciationTip: "Short 'oo' sound /ʊ/: 'KUUK' (/kʊk/).",
+    collocations: ["line cook", "prep cook", "skilled cook", "hire a cook"],
+    phrasalVerbs: [
+      {
+        phrase: "cook up",
+        meaning: "prepare hot food using stove or grill",
+        arabic: "يَطْبُخُ عَلَى المَوْقِد",
+        example: "The breakfast cook was cooking up fresh pancakes.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Kitchen Station",
+        en: "The line cook flipped burgers and toasted buns rapidly on the hot griddle.",
+        ar: "قَلَبَ طَبَّاخُ المَطْعَمِ شَرَائِحَ البُرْغَر وَحَمَّصَ الخُبْزَ عَلَى الصَّاجِ.",
+      },
+      {
+        context: "Preparation",
+        en: "Prep cooks chopped fresh herbs, onions, and garlic before dinner service.",
+        ar: "قَطَّعَ طَبَّاخُو التَّحْضِيرِ الأَعْشَابَ الطَّازَجَةَ وَالبَصَلَ قَبْلَ بَدْءِ العَشَاءِ.",
+      },
+      {
+        context: "Skill",
+        en: "She is an exceptionally talented cook who creates delicious meals from scratch.",
+        ar: "إِنَّهَا طَبَّاخَةٌ مَوْهُوبَةٌ تُبْدِعُ وَجَبَاتٍ لَذِيذَةً.",
+      },
+    ],
+    exampleSentence: "The line cook flipped burgers and toasted buns rapidly on the hot griddle.",
+    exampleArabic:
+      "قَلَبَ طَبَّاخُ المَطْعَمِ شَرَائِحَ البُرْغَر وَحَمَّصَ الخُبْزَ عَلَى الصَّاجِ.",
+  },
+  host: {
+    id: "host",
+    arabic: "مُضِيفُ المَطْعَم (مَسْؤُولُ اسْتِقْبَالِ الزَّبَائِن)",
+    partOfSpeech: "noun",
+    phonetic: "hoʊst",
+    pronunciationTip: "Long 'o' sound /oʊ/: 'HOHST'.",
+    collocations: ["restaurant host", "warm host", "host stand", "gracious host"],
+    phrasalVerbs: [
+      {
+        phrase: "show to",
+        meaning: "guide guests toward assigned seating",
+        arabic: "يُرْشِدُ إِلَى المَقْعَد",
+        example: "The friendly host showed us to a comfortable booth.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Reception",
+        en: "The restaurant host greeted us at the entrance and checked our reservation details.",
+        ar: "اسْتَقْبَلَنَا مُضِيفُ المَطْعَمِ عِنْدَ المَدْخَلِ وَتَحَقَّقَ مِنْ تَفَاصِيلِ الحَجْزِ.",
+      },
+      {
+        context: "Seating",
+        en: "The host led the party through the dining room and seated them at the table.",
+        ar: "قَادَ المُضِيفُ الضُّيُوفَ عَبْرَ الصَّالَةِ وَأَجْلَسَهُمْ عِنْدَ الطَّاوِلَةِ.",
+      },
+      {
+        context: "Wait Times",
+        en: "The polite host estimated a twenty-minute wait for walk-in guests.",
+        ar: "قَدَّرَ المُضِيفُ اللَّبِقُ فَتْرَةَ انْتِظَارٍ مِدَّتُهَا عِشْرُونَ دَقِيقَةً.",
+      },
+    ],
+    exampleSentence:
+      "The restaurant host greeted us at the entrance and checked our reservation details.",
+    exampleArabic:
+      "اسْتَقْبَلَنَا مُضِيفُ المَطْعَمِ عِنْدَ المَدْخَلِ وَتَحَقَّقَ مِنْ تَفَاصِيلِ الحَجْزِ.",
+  },
+  hostess: {
+    id: "hostess",
+    arabic: "مُضِيفَةُ المَطْعَم (مَسْؤُولَةُ اسْتِقْبَالِ الضُّيُوف)",
+    partOfSpeech: "noun",
+    phonetic: "ˈhoʊstɪs",
+    pronunciationTip: "Pronounce 'HOH-stis' (/ˈhoʊ.stɪs/).",
+    collocations: ["restaurant hostess", "friendly hostess", "hostess stand"],
+    phrasalVerbs: [
+      {
+        phrase: "welcome in",
+        meaning: "receive diners warmly at the entrance",
+        arabic: "تُرَحِّبُ بِالقَادِمِينَ",
+        example: "The hostess welcomed in the guests warmly.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Welcome",
+        en: "The hostess greeted every arriving guest with a warm smile and a menu.",
+        ar: "رَحَّبَتِ المُضِيفَةُ بِكُلِّ ضَيْفٍ قَادِمٍ بِابْتِسَامَةٍ وَقَائِمَةِ طَعَامٍ.",
+      },
+      {
+        context: "Table Assignment",
+        en: "Our hostess checked the digital seating chart to locate an open window table.",
+        ar: "رَاجَعَتْ مُضِيفَتُنَا مُخَطَّطَ الجُلُوسِ لِتَحْدِيدِ طَاوِلَةِ نَافِذَةٍ مُتَاحَةٍ.",
+      },
+      {
+        context: "Hospitality",
+        en: "The courteous hostess offered to hang our coats in the cloakroom.",
+        ar: "عَرَضَتِ المُضِيفَةُ اللَّبِقَةُ تَعْلِيقَ مَعَاطِفِنَا فِي غُرْفَةِ المَعَاطِفِ.",
+      },
+    ],
+    exampleSentence: "The hostess greeted every arriving guest with a warm smile and a menu.",
+    exampleArabic:
+      "رَحَّبَتِ المُضِيفَةُ بِكُلِّ ضَيْفٍ قَادِمٍ بِابْتِسَامَةٍ وَقَائِمَةِ طَعَامٍ.",
+  },
+  busser: {
+    id: "busser",
+    arabic: "مُسَاعِدُ النَّادِل (عَامِلُ تَنْظِيفِ وَتَرْتِيبِ الطَّاوِلَات)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbʌsər",
+    pronunciationTip: "Short 'u' sound /ʌ/: 'BUS-er'.",
+    collocations: ["busser station", "efficient busser", "table busser"],
+    phrasalVerbs: [
+      {
+        phrase: "clear away",
+        meaning: "remove used dishware from dining area",
+        arabic: "يَرْفَعُ الأَطْبَاقَ وَيُنَظِّفُ المَائِدَة",
+        example: "The busser cleared away empty plates.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Table Turnover",
+        en: "The busser wiped down the wooden tabletop and set out fresh cutlery.",
+        ar: "مَسَحَ مُسَاعِدُ النَّادِلِ الطَّاوِلَةَ وَوَضَعَ أَدَوَاتِ مَائِدَةٍ نَظِيفَةً.",
+      },
+      {
+        context: "Water Service",
+        en: "The busser circulated through the dining room topping off water glasses.",
+        ar: "تَجَوَّلَ مُسَاعِدُ النَّادِلِ فِي القَاعَةِ مُعِيدًا مَلْءَ كُؤُوسِ المَاءِ.",
+      },
+      {
+        context: "Teamwork",
+        en: "Waiters and bussers coordinate closely to provide seamless service.",
+        ar: "يَتَعَاوَنُ النُّدُلُ وَمُسَاعِدُوهُمْ لِتَقْدِيمِ خِدْمَةٍ سَلِسَةٍ.",
+      },
+    ],
+    exampleSentence: "The busser wiped down the wooden tabletop and set out fresh cutlery.",
+    exampleArabic:
+      "مَسَحَ مُسَاعِدُ النَّادِلِ الطَّاوِلَةَ وَوَضَعَ أَدَوَاتِ مَائِدَةٍ نَظِيفَةً.",
+  },
+  bartender: {
+    id: "bartender",
+    arabic: "سَاقِي المَشْرُوبَات (مُحَضِّرُ المَشْرُوبَاتِ وَالعَصَائِر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbɑːrtɛndər",
+    pronunciationTip: "Pronounce 'BAR-ten-der'.",
+    collocations: ["skilled bartender", "order from the bartender", "bartender shaker"],
+    phrasalVerbs: [
+      {
+        phrase: "mix up",
+        meaning: "combine liquids and garnishes into drinks",
+        arabic: "يَمْزُجُ المَشْرُوبَاتِ وَالعَصَائِر",
+        example: "The bartender mixed up a refreshing citrus drink.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Beverage Craft",
+        en: "The bartender skillfully shook fresh juice and sparkling water in a metal shaker.",
+        ar: "مَزَجَ سَاقِي المَشْرُوبَاتِ العَصِيرَ وَالمِيَاهَ الفَوَّارَةَ فِي خَافِقَةٍ مَعْدِنِيَّةٍ.",
+      },
+      {
+        context: "Service",
+        en: "Customers leaned against the counter chatting casually with the bartender.",
+        ar: "تَبَادَلَ الزَّبَائِنُ الحَدِيثَ مَعَ سَاقِي المَشْرُوبَاتِ عِنْدَ الكَاوْنْتَر.",
+      },
+      {
+        context: "Menu Knowledge",
+        en: "The bartender recommended a zero-sugar ginger brew with our meal.",
+        ar: "اقْتَرَحَ سَاقِي المَشْرُوبَاتِ شَرَابَ زَنْجَبِيلٍ لَذِيذًا مَعَ وَجْبَتِنَا.",
+      },
+    ],
+    exampleSentence:
+      "The bartender skillfully shook fresh juice and sparkling water in a metal shaker.",
+    exampleArabic:
+      "مَزَجَ سَاقِي المَشْرُوبَاتِ العَصِيرَ وَالمِيَاهَ الفَوَّارَةَ فِي خَافِقَةٍ مَعْدِنِيَّةٍ.",
+  },
+  manager: {
+    id: "manager",
+    arabic: "مُدِيرُ المَطْعَم (المَسْؤُولُ الإِدَارِيُّ وَالتَّشْغِيلِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmænɪdʒər",
+    pronunciationTip: "Pronounce 'MAN-i-jer'.",
+    collocations: ["restaurant manager", "general manager", "shift manager"],
+    phrasalVerbs: [
+      {
+        phrase: "look after",
+        meaning: "supervise operations and patron satisfaction",
+        arabic: "يُشْرِفُ عَلَى حُسْنِ سَيْرِ العَمَل",
+        example: "The general manager looks after food quality.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Customer Care",
+        en: "The restaurant manager visited each table personally to greet guests.",
+        ar: "تَفَقَّدَ مُدِيرُ المَطْعَمِ كُلَّ مَائِدَةٍ شَخْصِيًّا لِلتَّرْحِيبِ بِالضُّيُوفِ.",
+      },
+      {
+        context: "Operations",
+        en: "The duty manager scheduled staff shifts and inspected deliveries weekly.",
+        ar: "جَدْوَلَ مُدِيرُ الوَرْدِيَّةِ مُنَاوَبَاتِ المَسْؤُولِينَ وَتَفَقَّدَ الشُّحْنَاتِ.",
+      },
+      {
+        context: "Problem Solving",
+        en: "The manager resolved the booking issue gracefully with a complimentary treat.",
+        ar: "حَلَّ المَدِيرُ مُشْكِلَةَ الحَجْزِ بِلَبَاقَةٍ بِتَقْدِيمِ ضِيَافَةٍ مَجَّانِيَّةٍ.",
+      },
+    ],
+    exampleSentence: "The restaurant manager visited each table personally to greet guests.",
+    exampleArabic:
+      "تَفَقَّدَ مُدِيرُ المَطْعَمِ كُلَّ مَائِدَةٍ شَخْصِيًّا لِلتَّرْحِيبِ بِالضُّيُوفِ.",
+  },
+  sommelier: {
+    id: "sommelier",
+    arabic: "خَبِيرُ المَشْرُوبَات (مُتَخَصِّصُ اخْتِيَارِ وَتَنْسِيقِ المَشْرُوبَات)",
+    partOfSpeech: "noun",
+    phonetic: "sɒˈmɛljeɪ",
+    pronunciationTip: "Pronounce 'suh-mel-YAY'.",
+    collocations: ["certified sommelier", "consult the sommelier", "expert sommelier"],
+    phrasalVerbs: [
+      {
+        phrase: "pair with",
+        meaning: "match complementary drinks with food courses",
+        arabic: "يُوَافِقُ المَشْرُوبَ مَعَ الأَطْبَاق",
+        example: "The sommelier paired a sparkling white juice with the fish.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Fine Dining",
+        en: "The certified sommelier guided diners through the tasting menu pairings.",
+        ar: "أَرْشَدَ خَبِيرُ المَشْرُوبَاتِ الضُّيُوفَ خِلَالَ قَائِمَةِ التَّذَوُّقِ.",
+      },
+      {
+        context: "Expertise",
+        en: "Guests consulted the sommelier to choose the finest beverage for their meal.",
+        ar: "اسْتَشَارَ الضُّيُوفُ خَبِيرَ المَشْرُوبَاتِ لِاخْتِيَارِ أَفْضَلِ عَصِيرٍ.",
+      },
+      {
+        context: "Service",
+        en: "The sommelier decanted the chilled bottle gracefully at our table.",
+        ar: "سَكَبَ الخَبِيرُ الزُّجَاجَةَ البَارِدَةَ بِلَبَاقَةٍ عَلَى مَائِدَتِنَا.",
+      },
+    ],
+    exampleSentence: "The certified sommelier guided diners through the tasting menu pairings.",
+    exampleArabic: "أَرْشَدَ خَبِيرُ المَشْرُوبَاتِ الضُّيُوفَ خِلَالَ قَائِمَةِ التَّذَوُّقِ.",
+  },
+  barista: {
+    id: "barista",
+    arabic: "بَارِيسْتَا (صَانِعُ القَهْوَةِ المُخْتَصَّة)",
+    partOfSpeech: "noun",
+    phonetic: "bəˈriːstə",
+    pronunciationTip: "Pronounce 'buh-REES-tuh'.",
+    collocations: ["skilled barista", "certified barista", "coffee barista"],
+    phrasalVerbs: [
+      {
+        phrase: "brew up",
+        meaning: "extract freshly ground espresso beans",
+        arabic: "يُحَضِّرُ القَهْوَةَ الطَّازَجَة",
+        example: "The barista brewed up a rich flat white.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Coffee Craft",
+        en: "The talented barista steamed silky milk and poured intricate latte art.",
+        ar: "بَخَّرَ البَارِيسْتَا الحَلِيبَ بِحِرَفِيَّةٍ وَصَنَعَ رَسْمًا جَمِيلًا عَلَى القَهْوَةِ.",
+      },
+      {
+        context: "Morning Rush",
+        en: "Two fast baristas operated the chrome espresso machine during morning rush.",
+        ar: "أَدَارَ صَانِعَا قَهْوَةٍ مَكِينَةَ الإِسْبْرِيسُو خِلَالَ زَحْمَةِ الصَّبَاحِ.",
+      },
+      {
+        context: "Roast Knowledge",
+        en: "The knowledgeable barista explained the single-origin coffee beans.",
+        ar: "شَرَحَ البَارِيسْتَا الخَبِيرُ خَصَائِصَ حُبُوبِ البُنِّ الطَّازَجَةِ.",
+      },
+    ],
+    exampleSentence: "The talented barista steamed silky milk and poured intricate latte art.",
+    exampleArabic:
+      "بَخَّرَ البَارِيسْتَا الحَلِيبَ بِحِرَفِيَّةٍ وَصَنَعَ رَسْمًا جَمِيلًا عَلَى القَهْوَةِ.",
+  },
+  sprinting: {
+    id: "sprinting",
+    arabic: "العَدْوُ السَّرِيع (الجَرْيُ بِأَقْصَى سُرْعَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsprɪntɪŋ",
+    pronunciationTip: "Pronounce 'SPRINT-ing'.",
+    collocations: ["sprinting race", "sprinting drills", "hundred-meter sprinting"],
+    phrasalVerbs: [
+      {
+        phrase: "sprint toward",
+        meaning: "dash at maximum velocity",
+        arabic: "يَنْطَلِقُ سَرِيعًا نَحْوَ",
+        example: "The sprinter dashed toward the finish line.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Athletics",
+        en: "Sprinting requires explosive leg power, fast acceleration, and precise technique.",
+        ar: "يَتَطَلَّبُ العَدْوُ السَّرِيعُ قُوَّةً انْفِجَارِيَّةً وَتَسَارُعًا كَبِيرًا.",
+      },
+      {
+        context: "Track Meet",
+        en: "He finished first in the hundred-meter sprinting final with a personal best time.",
+        ar: "احْتَلَّ المَرْكَزَ الأَوَّلَ فِي نِهَائِيِّ سِبَاقِ ١٠٠ مِتْرٍ عَدْوًا سَرِيعًا.",
+      },
+      {
+        context: "Training",
+        en: "Athletes practiced short sprinting intervals across the stadium straightaway.",
+        ar: "تَدَرَّبَ العَدَّاؤُونَ عَلَى فَتَرَاتِ جَرْيٍ سَرِيعَةٍ فِي المِضْمَارِ.",
+      },
+    ],
+    exampleSentence:
+      "Sprinting requires explosive leg power, fast acceleration, and precise technique.",
+    exampleArabic: "يَتَطَلَّبُ العَدْوُ السَّرِيعُ قُوَّةً انْفِجَارِيَّةً وَتَسَارُعًا كَبِيرًا.",
+  },
+  "relay-race": {
+    id: "relay-race",
+    arabic: "سِبَاقُ التَّتَابُع (سِبَاقُ البَدَلِ وَتَبَادُلِ العَصَا)",
+    partOfSpeech: "noun",
+    phonetic: "ˈriːleɪ reɪs",
+    pronunciationTip: "Pronounce 'REE-lay rays'.",
+    collocations: ["relay race baton", "anchor leg in relay race", "win the relay race"],
+    phrasalVerbs: [
+      {
+        phrase: "hand off",
+        meaning: "pass baton to the next runner",
+        arabic: "يُسَلِّمُ عَصَا التَّتَابُع",
+        example: "She handed off the baton smoothly to her teammate.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Track & Field",
+        en: "The four-by-one-hundred-meter relay race requires flawless baton handoffs.",
+        ar: "يَتَطَلَّبُ سِبَاقُ التَّتَابُعِ ٤×١٠٠ مِتْرٍ تَبَادُلًا مِثَالِيًّا لِلْعَصَا.",
+      },
+      {
+        context: "Team Victory",
+        en: "Our school won the relay race after a breathtaking final sprint by the anchor.",
+        ar: "فَازَتْ مَدْرَسَتُنَا بِسِبَاقِ التَّتَابُعِ بَعْدَ جَرْيٍ نِهَائِيٍّ حَابِسٍ لِلأَنْفَاسِ.",
+      },
+      {
+        context: "Baton Exchange",
+        en: "Runners must exchange the metal baton inside the designated passing zone.",
+        ar: "يَجِبُ عَلَى العَدَّائِينَ تَبَادُلُ العَصَا دَاخِلَ مِنْطَقَةِ التَّسْلِيمِ المُحَدَّدَةِ.",
+      },
+    ],
+    exampleSentence: "The four-by-one-hundred-meter relay race requires flawless baton handoffs.",
+    exampleArabic:
+      "يَتَطَلَّبُ سِبَاقُ التَّتَابُعِ ٤×١٠٠ مِتْرٍ تَبَادُلًا مِثَالِيًّا لِلْعَصَا.",
+  },
+  hurdles: {
+    id: "hurdles",
+    arabic: "سِبَاقُ الحَوَاجِز (قَفْزُ الحَوَاجِزِ الرِّيَاضِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈhɜːrdəlz",
+    pronunciationTip: "Pronounce 'HUR-dulz'.",
+    collocations: ["clear the hurdles", "hurdles race", "jump hurdles"],
+    phrasalVerbs: [
+      {
+        phrase: "leap over",
+        meaning: "clear elevated barrier without breaking stride",
+        arabic: "يَقْفِزُ فَوْقَ الحَاجِز",
+        example: "The athlete leaped over every obstacle cleanly.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Track Event",
+        en: "The athlete cleared all ten hurdles without knocking down a single barrier.",
+        ar: "تَجَاوَزَ الرِّيَاضِيُّ جَمِيعَ الحَوَاجِزِ العَشَرَةِ دُونَ إِسْقَاطِ أَيٍّ مِنْهَا.",
+      },
+      {
+        context: "Technique",
+        en: "Clearing hurdles requires rhythmic striding, flexibility, and precise hip mobility.",
+        ar: "يَتَطَلَّبُ قَفْزُ الحَوَاجِزِ خَطَوَاتٍ مُنْتَظِمَةً وَمُرُونَةً عَالِيَةً.",
+      },
+      {
+        context: "Training",
+        en: "Coaches lowered the practice hurdles to help beginners develop confidence.",
+        ar: "خَفَّضَ المُدَرِّبُونَ حَوَاجِزَ التَّدْرِيبِ لِمُسَاعَدَةِ المُبْتَدِئِينَ.",
+      },
+    ],
+    exampleSentence: "The athlete cleared all ten hurdles without knocking down a single barrier.",
+    exampleArabic:
+      "تَجَاوَزَ الرِّيَاضِيُّ جَمِيعَ الحَوَاجِزِ العَشَرَةِ دُونَ إِسْقَاطِ أَيٍّ مِنْهَا.",
+  },
+  "long-jump": {
+    id: "long-jump",
+    arabic: "الوَبْثُ الطَّوِيل (القَفْزُ الطَّوِيلُ فِي حُفْرَةِ الرِّمَال)",
+    partOfSpeech: "noun",
+    phonetic: "lɒŋ dʒʌmp",
+    pronunciationTip: "Pronounce 'LONG jump'.",
+    collocations: ["long jump pit", "long jump record", "compete in long jump"],
+    phrasalVerbs: [
+      {
+        phrase: "launch into",
+        meaning: "propel body forward from takeoff board",
+        arabic: "يَنْطَلِقُ قَافِزًا فِي الهَوَاء",
+        example: "He launched into the air off the wooden board.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Field Event",
+        en: "The athlete sprinted down the runway and leaped into the sand long jump pit.",
+        ar: "رَكَضَ اللَّاعِبُ فِي المَسَارِ وَقَفَزَ فِي حُفْرَةِ الرِّمَالِ لِلْوَثْبِ الطَّوِيلِ.",
+      },
+      {
+        context: "Takeoff",
+        en: "Hitting the white takeoff board accurately without fouling is critical in long jump.",
+        ar: "الِارْتِقَاءُ مِنْ لَوْحَةِ الوَثْبِ دُونَ خَطَأٍ أَمْرٌ حَاسِمٌ فِي الوَثْبِ الطَّوِيلِ.",
+      },
+      {
+        context: "Distance",
+        en: "His spectacular jump measured over eight meters, setting a new tournament record.",
+        ar: "سَجَّلَتْ قَفْزَتُهُ الرَّائِعَةُ أَكْثَرَ مِنْ ٨ أَمْتَارٍ لِيُحَقِّقَ رَقْمًا قِيَاسِيًّا.",
+      },
+    ],
+    exampleSentence: "The athlete sprinted down the runway and leaped into the sand long jump pit.",
+    exampleArabic:
+      "رَكَضَ اللَّاعِبُ فِي المَسَارِ وَقَفَزَ فِي حُفْرَةِ الرِّمَالِ لِلْوَثْبِ الطَّوِيلِ.",
+  },
+  "high-jump": {
+    id: "high-jump",
+    arabic: "الوَثْبُ العَالِي (القَفْزُ العَالِي فَوْقَ العَارِضَة)",
+    partOfSpeech: "noun",
+    phonetic: "haɪ dʒʌmp",
+    pronunciationTip: "Pronounce 'HY jump'.",
+    collocations: ["high jump bar", "high jump mat", "clear high jump"],
+    phrasalVerbs: [
+      {
+        phrase: "arch over",
+        meaning: "bend back over horizontal bar",
+        arabic: "يَنْحَنِي ظَهْرًا فَوْقَ العَارِضَة",
+        example: "She arched over the bar cleanly at two meters.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Field Event",
+        en: "She used the Fosbury Flop technique to arch backward over the high jump crossbar.",
+        ar: "اسْتَخْدَمَتْ تِقْنِيَّةَ القَفْزِ لِلْخَلْفِ لِتَجَاوُزِ عَارِضَةِ الوَثْبِ العَالِي.",
+      },
+      {
+        context: "Landing Mat",
+        en: "After clearing the bar, the high jumper landed safely on the thick foam cushion.",
+        ar: "بَعْدَ تَجَاوُزِ العَارِضَةِ، هَبَطَ اللَّاعِبُ بِأَمَانٍ عَلَى بِسَاطِ الهُبُوطِ الإِسْفَنْجِيِّ.",
+      },
+      {
+        context: "Height",
+        en: "The officials raised the crossbar to two meters for the final round of the high jump.",
+        ar: "رَفَعَ الحُكَّامُ العَارِضَةَ إِلَى مِتْرَيْنِ لِلْجَوْلَةِ النِّهَائِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "She used the Fosbury Flop technique to arch backward over the high jump crossbar.",
+    exampleArabic:
+      "اسْتَخْدَمَتْ تِقْنِيَّةَ القَفْزِ لِلْخَلْفِ لِتَجَاوُزِ عَارِضَةِ الوَثْبِ العَالِي.",
+  },
+  javelin: {
+    id: "javelin",
+    arabic: "رَمْيُ الرُّمْح (رُمْحُ أَلْعَابِ القُوَى)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdʒævəlɪn",
+    pronunciationTip: "Pronounce 'JAV-lin' (/ˈdʒæv.lɪn/).",
+    collocations: ["throw the javelin", "javelin thrower", "javelin competition"],
+    phrasalVerbs: [
+      {
+        phrase: "hurl through",
+        meaning: "throw pointed spear with maximum force",
+        arabic: "يَقْذِفُ الرُّمْحَ فِي الهَوَاء",
+        example: "He hurled the metal spear across the stadium.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Throwing Event",
+        en: "The athlete planted his front foot and threw the lightweight javelin far across the field.",
+        ar: "ثَبَّتَ الرِّيَاضِيُّ قَدَمَهُ وَرَمَى الرُّمْحَ الخَفِيفَ بَعِيدًا فِي المَلْعَبِ.",
+      },
+      {
+        context: "Equipment",
+        en: "Modern competition javelins are crafted from aluminum and carbon fiber with a pointed tip.",
+        ar: "تُصْنَعُ رِمَاحُ المُسَابَقَاتِ الحَدِيثَةُ مِنْ أَلْيَافِ الأَلُومِنْيُومِ وَالكَرْبُونِ.",
+      },
+      {
+        context: "Safety",
+        en: "Safety marshals ensure the open grass field is completely clear before every javelin throw.",
+        ar: "يَتَأَكَّدُ مَسْؤُولُو الأَمَانِ مِنْ خُلُوِّ المَلْعَبِ قَبْلَ كُلِّ رَمْيَةِ رُمْحٍ.",
+      },
+    ],
+    exampleSentence:
+      "The athlete planted his front foot and threw the lightweight javelin far across the field.",
+    exampleArabic:
+      "ثَبَّتَ الرِّيَاضِيُّ قَدَمَهُ وَرَمَى الرُّمْحَ الخَفِيفَ بَعِيدًا فِي المَلْعَبِ.",
+  },
+  discus: {
+    id: "discus",
+    arabic: "رَمْيُ القُرْص (قُرْصُ أَلْعَابِ القُوَى المَعْدِنِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdɪskəs",
+    pronunciationTip: "Pronounce 'DIS-kus' (/ˈdɪs.kəs/).",
+    collocations: ["throw the discus", "discus cage", "discus circle"],
+    phrasalVerbs: [
+      {
+        phrase: "spin and release",
+        meaning: "rotate rapidly in circle to launch disc",
+        arabic: "يَدُورُ ثُمَّ يُطْلِقُ القُرْص",
+        example: "The thrower spun twice and launched the heavy disc.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Field Event",
+        en: "The thrower spun smoothly inside the concrete ring before launching the heavy discus.",
+        ar: "دَارَ الرَّامِي بِسَلَاسَةٍ دَاخِلَ الدَّائِرَةِ قَبْلَ إِطْلَاقِ القُرْصِ الثَّقِيلِ.",
+      },
+      {
+        context: "Safety Netting",
+        en: "A protective wire cage surrounds the throwing circle to safeguard spectators.",
+        ar: "يُحِيطُ قَفَصٌ سِلْكِيٌّ وَاقٍ بِدَائِرَةِ الرَّمْيِ لِحِمَايَةِ الجُمْهُورِ.",
+      },
+      {
+        context: "Distance",
+        en: "The discus sailed through the air and landed beyond the sixty-meter marker.",
+        ar: "حَلَّقَ القُرْصُ فِي الهَوَاءِ وَهَبَطَ خَلْفَ عَلَامَةِ الـ ٦٠ مِتْرًا.",
+      },
+    ],
+    exampleSentence:
+      "The thrower spun smoothly inside the concrete ring before launching the heavy discus.",
+    exampleArabic:
+      "دَارَ الرَّامِي بِسَلَاسَةٍ دَاخِلَ الدَّائِرَةِ قَبْلَ إِطْلَاقِ القُرْصِ الثَّقِيلِ.",
+  },
+  "pole-vault": {
+    id: "pole-vault",
+    arabic: "القَفْزُ بِالزَّانَة (الوَثْبُ بِالعَصَا المَرِنَة)",
+    partOfSpeech: "noun",
+    phonetic: "poʊl vɔːlt",
+    pronunciationTip: "Pronounce 'POHL vault'.",
+    collocations: ["pole vault pit", "fiberglass pole vault", "pole vault champion"],
+    phrasalVerbs: [
+      {
+        phrase: "vault over",
+        meaning: "propel body over bar using bending pole",
+        arabic: "يَقْفِزُ بِالزَّانَةِ فَوْقَ العَارِضَة",
+        example: "He vaulted cleanly over the five-meter bar.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Athletics",
+        en: "Pole vault combines high sprinting speed, gymnastic strength, and flexible pole mechanics.",
+        ar: "يَجْمَعُ القَفْزُ بِالزَّانَةِ بَيْنَ سُرْعَةِ الجَرْيِ وَقُوَّةِ الجُمْبَازِ وَمُرُونَةِ الزَّانَةِ.",
+      },
+      {
+        context: "Pole",
+        en: "Athletes use custom fiberglass poles that bend under pressure to launch them skyward.",
+        ar: "يَسْتَخْدِمُ الرِّيَاضِيُّونَ عِصِيَّ أَلْيَافٍ زُجَاجِيَّةً مَرِنَةً تَنْحَنِي لِإِطْلَاقِهِمْ عَالِيًا.",
+      },
+      {
+        context: "Landing",
+        en: "The vaulter dropped gracefully onto the oversized foam landing pad below.",
+        ar: "هَبَطَ القَافِزُ بِرَشَاقَةٍ عَلَى بِسَاطِ الهُبُوطِ الإِسْفَنْجِيِّ الكَبِيرِ.",
+      },
+    ],
+    exampleSentence:
+      "Pole vault combines high sprinting speed, gymnastic strength, and flexible pole mechanics.",
+    exampleArabic:
+      "يَجْمَعُ القَفْزُ بِالزَّانَةِ بَيْنَ سُرْعَةِ الجَرْيِ وَقُوَّةِ الجُمْبَازِ وَمُرُونَةِ الزَّانَةِ.",
+  },
+  marathon: {
+    id: "marathon",
+    arabic: "سِبَاقُ المَارَاثُون (سِبَاقُ الجَرْيِ لِلْمَسَافَاتِ الطَّوِيلَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmærəθɒn",
+    pronunciationTip: "Pronounce 'MAR-uh-thon'.",
+    collocations: ["run a marathon", "marathon training", "finish the marathon", "city marathon"],
+    phrasalVerbs: [
+      {
+        phrase: "power through",
+        meaning: "endure long-distance race through stamina",
+        arabic: "يُوَاصِلُ الجَرْيَ بِعَزِيمَة",
+        example: "She powered through the final miles of the race.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Endurance Race",
+        en: "Thousands of runners from around the globe competed in the annual city marathon.",
+        ar: "شَارَكَ آلَافُ العَدَّائِينَ مِنْ حَوْلِ العَالَمِ فِي مَارَاثُونِ المَدِينَةِ السَّنَوِيِّ.",
+      },
+      {
+        context: "Distance",
+        en: "An official marathon covers a grueling distance of twenty-six point two miles.",
+        ar: "يَمْتَدُّ المَارَاثُونُ الرَّسْمِيُّ لِمَسَافَةِ ٤٢ كِيلُومِتْرًا شَاقَّةً.",
+      },
+      {
+        context: "Hydration",
+        en: "Volunteers handed out water cups and energy gels at aid stations along the course.",
+        ar: "قَدَّمَ المُتَطَوِّعُونَ كُؤُوسَ المَاءِ فِي مَحَطَّاتِ الإِغَاثَةِ عَلَى طُولِ المَسَارِ.",
+      },
+    ],
+    exampleSentence:
+      "Thousands of runners from around the globe competed in the annual city marathon.",
+    exampleArabic:
+      "شَارَكَ آلَافُ العَدَّائِينَ مِنْ حَوْلِ العَالَمِ فِي مَارَاثُونِ المَدِينَةِ السَّنَوِيِّ.",
+  },
+  "starting-block": {
+    id: "starting-block",
+    arabic: "مِكْبَسُ البِدَايَة (لَوْحَةُ انْطِلَاقِ السِّبَاق)",
+    partOfSpeech: "noun",
+    phonetic: "ˈstɑːrtɪŋ blɒk",
+    pronunciationTip: "Pronounce 'STAR-ting blok'.",
+    collocations: ["set the starting blocks", "push off starting blocks", "check carefully"],
+    phrasalVerbs: [
+      {
+        phrase: "push off from",
+        meaning: "launch body forward with leg drive",
+        arabic: "يَنْطَلِقُ مِنْ مِكْبَسِ البِدَايَة",
+        example: "The sprinter pushed off from the metal blocks.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Track Start",
+        en: "Sprinters placed their spiked shoes firmly against the metal starting blocks.",
+        ar: "وَضَعَ العَدَّاؤُونَ أَحْذِيَتَهُمُ المُسَمَّرَةَ بِإِحْكَامٍ عَلَى مَكَابِسِ البِدَايَةِ المَعْدِنِيَّةِ.",
+      },
+      {
+        context: "Adjustment",
+        en: "Each runner adjusted the angle of their starting blocks before settling into position.",
+        ar: "عَدَّلَ كُلُّ عَدَّاءٍ زَاوِيَةَ مِكْبَسِ انْطِلَاقِهِ قَبْلَ أَخْذِ وَضْعِيَّةِ الِاسْتِعْدَادِ.",
+      },
+      {
+        context: "Explosive Start",
+        en: "When the starter gun fired, all runners drove explosively off the starting blocks.",
+        ar: "عِنْدَ إِطْلَاقِ مُسَدَّسِ البِدَايَةِ، انْطَلَقَ جَمِيعُ العَدَّائِينَ بِقُوَّةٍ مِنْ مَكَابِسِهِمْ.",
+      },
+    ],
+    exampleSentence:
+      "Sprinters placed their spiked shoes firmly against the metal starting blocks.",
+    exampleArabic:
+      "وَضَعَ العَدَّاؤُونَ أَحْذِيَتَهُمُ المُسَمَّرَةَ بِإِحْكَامٍ عَلَى مَكَابِسِ البِدَايَةِ المَعْدِنِيَّةِ.",
+  },
+  "finish-line": {
+    id: "finish-line",
+    arabic: "خَطُّ النِّهَايَة (نِهَايَةُ السِّبَاق)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfɪnɪʃ laɪn",
+    pronunciationTip: "Pronounce 'FIN-ish lyn'.",
+    collocations: ["cross the finish line", "reach the finish line", "break the finish line tape"],
+    phrasalVerbs: [
+      {
+        phrase: "cross over",
+        meaning: "pass across completion line of race",
+        arabic: "يَعْبُرُ خَطَّ النِّهَايَة",
+        example: "He crossed over the finish line in first place.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Race Victory",
+        en: "The champion runner raised his arms in triumph as he crossed the finish line tape.",
+        ar: "رَفَعَ العَدَّاءُ البَطَلُ ذِرَاعَيْهِ فَرَحًا عِنْدَ عُبُورِ شَرِيطِ خَطِّ النِّهَايَةِ.",
+      },
+      {
+        context: "Photo Finish",
+        en: "Judges consulted high-speed cameras to determine who touched the finish line first.",
+        ar: "رَاجَعَ الحُكَّامُ الكَامِيرَاتِ السَّرِيعَةَ لِمَعْرِفَةِ مَنْ لَمَسَ خَطَّ النِّهَايَةِ أَوَّلًا.",
+      },
+      {
+        context: "Relief",
+        en: "Exhausted marathon runners celebrated with joy upon finally reaching the finish line.",
+        ar: "احْتَفَلَ عَدَّاؤُو المَارَاثُونِ بِسَعَادَةٍ غَامِرَةٍ عِنْدَ الوُصُولِ أَخِيرًا لِخَطِّ النِّهَايَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The champion runner raised his arms in triumph as he crossed the finish line tape.",
+    exampleArabic:
+      "رَفَعَ العَدَّاءُ البَطَلُ ذِرَاعَيْهِ فَرَحًا عِنْدَ عُبُورِ شَرِيطِ خَطِّ النِّهَايَةِ.",
+  },
+  "swimming-pool": {
+    id: "swimming-pool",
+    arabic: "حَمَّامُ السِّبَاحَة (مَسْبَحُ الرِّيَاضَةِ وَالتَّدْرِيب)",
+    partOfSpeech: "noun",
+    phonetic: "ˈswɪmɪŋ puːl",
+    pronunciationTip: "Pronounce 'SWIM-ing pool'.",
+    collocations: ["indoor swimming pool", "Olympic swimming pool", "dive into the swimming pool"],
+    phrasalVerbs: [
+      {
+        phrase: "dive into",
+        meaning: "plunge headfirst into deep chlorinated water",
+        arabic: "يَغُوصُ فِي حَمَّامِ السِّبَاحَة",
+        example: "The swimmer dove into the cool blue pool.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Aquatics",
+        en: "The sports complex features a fifty-meter heated Olympic swimming pool.",
+        ar: "يَضُمُّ المَرْكَزُ الرِّيَاضِيُّ مَسْبَحًا أُولِمْبِيًّا مُدَفَّأً بِطُولِ ٥٠ مِتْرًا.",
+      },
+      {
+        context: "Lessons",
+        en: "Children learned water safety and stroke techniques in the shallow training pool.",
+        ar: "تَعَلَّمَ الأَطْفَالُ السَّلَامَةَ المَائِيَّةَ وَحَرَكَاتِ السِّبَاحَةِ فِي المَسْبَحِ التَّدْرِيبِيِّ.",
+      },
+      {
+        context: "Water Quality",
+        en: "Lifeguards test chlorine levels and water temperature in the swimming pool daily.",
+        ar: "يَفْحَصُ المُنْقِذُونَ نِسْبَةَ الكُلُورِ وَدَرَجَةَ حَرَارَةِ المَاءِ فِي المَسْبَحِ يَوْمِيًّا.",
+      },
+    ],
+    exampleSentence: "The sports complex features a fifty-meter heated Olympic swimming pool.",
+    exampleArabic:
+      "يَضُمُّ المَرْكَزُ الرِّيَاضِيُّ مَسْبَحًا أُولِمْبِيًّا مُدَفَّأً بِطُولِ ٥٠ مِتْرًا.",
+  },
+  "diving-board": {
+    id: "diving-board",
+    arabic: "مِنَصَّةُ الغَوْص (لَوْحُ القَفْزِ إِلَى المَاءِ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdaɪvɪŋ bɔːrd",
+    pronunciationTip: "Pronounce 'DY-ving bord'.",
+    collocations: ["springboard diving board", "high diving board", "jump off the diving board"],
+    phrasalVerbs: [
+      {
+        phrase: "spring off",
+        meaning: "bounce off flexible board into pool",
+        arabic: "يَقْفِزُ مِنْ لَوْحِ الغَوْص",
+        example: "The diver sprang off the three-meter board.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Aquatic Sport",
+        en: "The gymnast bounced on the high diving board before executing a double backflip.",
+        ar: "قَفَزَ اللَّاعِبُ عَلَى لَوْحِ الغَوْصِ العَالِي قَبْلَ تَنْفِيذِ شِقْلَبَةٍ مُزْدَوَجَةٍ.",
+      },
+      {
+        context: "Platform Heights",
+        en: "The diving facility offers three-meter springboards and ten-meter concrete platforms.",
+        ar: "تُوَفِّرُ مُنْشَأَةُ الغَوْصِ أَلْوَاحَ قَفْزٍ عَلَى ارْتِفَاعِ ٣ أَمْتَارٍ وَمِنَصَّاتِ ١٠ أَمْتَارٍ.",
+      },
+      {
+        context: "Safety",
+        en: "Swimmers must wait until the diving area below the board is completely clear.",
+        ar: "يَجِبُ عَلَى السَّبَّاحِينَ الانْتِظَارُ حَتَّى تَمَامِ خُلُوِّ حَوْضِ الغَوْصِ.",
+      },
+    ],
+    exampleSentence:
+      "The gymnast bounced on the high diving board before executing a double backflip.",
+    exampleArabic:
+      "قَفَزَ اللَّاعِبُ عَلَى لَوْحِ الغَوْصِ العَالِي قَبْلَ تَنْفِيذِ شِقْلَبَةٍ مُزْدَوَجَةٍ.",
+  },
+  lane: {
+    id: "lane",
+    arabic: "حَارَةُ السِّبَاحَة (مَسَارُ السِّبَاحِ فِي المَسْبَح)",
+    partOfSpeech: "noun",
+    phonetic: "leɪn",
+    pronunciationTip: "Pronounce 'LAYN' (/leɪn/).",
+    collocations: ["swimming lane", "lane divider", "lap swimming in a lane", "fast lane"],
+    phrasalVerbs: [
+      {
+        phrase: "stay in",
+        meaning: "remain within bounded aquatic corridor",
+        arabic: "يَلْتَزِمُ بِحَارَةِ السِّبَاحَة",
+        example: "Swimmers stayed in their designated lanes.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Competition",
+        en: "Eight swimmers took their positions across eight marked lanes in the pool.",
+        ar: "أَخَذَ ثَمَانِيَةُ سَبَّاحِينَ أَمَاكِنَهُمْ عَبْرَ ثَمَانِي حَارَاتٍ مُخَطَّطَةٍ فِي المَسْبَحِ.",
+      },
+      {
+        context: "Lane Ropes",
+        en: "Floating plastic lane dividers keep waves from disrupting adjacent swimmers.",
+        ar: "تَمْنَعُ حِبَالُ الحَارَاتِ العَائِمَةُ الأَمْوَاجَ مِنْ إِزْعَاجِ السَّبَّاحِينَ فِي المَسَارَاتِ المُجَاوِرَةِ.",
+      },
+      {
+        context: "Lap Swimming",
+        en: "The pool designated separate lanes for slow, medium, and fast swimmers.",
+        ar: "خَصَّصَ المَسْبَحُ حَارَاتٍ مُنْفَصِلَةً لِلسِّبَاحِينَ حَسَبَ السُّرْعَةِ.",
+      },
+    ],
+    exampleSentence: "Eight swimmers took their positions across eight marked lanes in the pool.",
+    exampleArabic:
+      "أَخَذَ ثَمَانِيَةُ سَبَّاحِينَ أَمَاكِنَهُمْ عَبْرَ ثَمَانِي حَارَاتٍ مُخَطَّطَةٍ فِي المَسْبَحِ.",
+  },
+  kickboard: {
+    id: "kickboard",
+    arabic: "لَوْحُ الطَّفْوِ لِلسِّبَاحَة (لَوْحُ تَدْرِيبِ الرِّجْلَيْنِ فِي المَاءِ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkɪkbɔːrd",
+    pronunciationTip: "Pronounce 'KIK-bord'.",
+    collocations: ["foam kickboard", "hold a kickboard", "swim with a kickboard"],
+    phrasalVerbs: [
+      {
+        phrase: "kick along with",
+        meaning: "propel through water using legs and floating board",
+        arabic: "يَدْفَعُ بِرِجْلَيْهِ مَعَ لَوْحِ الطَّفْو",
+        example: "Beginners kicked along with foam boards.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Swim Training",
+        en: "The instructor handed each beginner a buoyant foam kickboard for leg drills.",
+        ar: "سَلَّمَ المُدَرِّبُ كُلَّ مُبْتَدِئٍ لَوْحَ طَفْوٍ إِسْفَنْجِيًّا لِتَدْرِيبِ الرِّجْلَيْنِ.",
+      },
+      {
+        context: "Leg Strength",
+        en: "Holding a kickboard out in front isolates leg muscles and improves kicking power.",
+        ar: "يُعَزِّزُ الإِمْسَاكُ بِلَوْحِ الطَّفْوِ قُوَّةَ رَكَلَاتِ الرِّجْلَيْنِ فِي المَاءِ.",
+      },
+      {
+        context: "Equipment Bin",
+        en: "Colorful lightweight kickboards were stacked neatly by the pool edge.",
+        ar: "رُتِّبَتْ أَلْوَاحُ الطَّفْوِ المُلَوَّنَةُ بِعِنَايَةٍ بِجِوَارِ حَافَّةِ المَسْبَحِ.",
+      },
+    ],
+    exampleSentence: "The instructor handed each beginner a buoyant foam kickboard for leg drills.",
+    exampleArabic:
+      "سَلَّمَ المُدَرِّبُ كُلَّ مُبْتَدِئٍ لَوْحَ طَفْوٍ إِسْفَنْجِيًّا لِتَدْرِيبِ الرِّجْلَيْنِ.",
+  },
+  "swim-cap": {
+    id: "swim-cap",
+    arabic: "قُبَّعَةُ السِّبَاحَة (غِطَاءُ الرَّأْسِ المَطَّاطِيُّ لِلسِّبَاحِين)",
+    partOfSpeech: "noun",
+    phonetic: "swɪm kæp",
+    pronunciationTip: "Pronounce 'SWIM kap'.",
+    collocations: ["silicone swim cap", "latex swim cap", "wear a swim cap"],
+    phrasalVerbs: [
+      {
+        phrase: "pull on",
+        meaning: "stretch rubber cover over hair",
+        arabic: "يَرْتَدِي قُبَّعَةَ السِّبَاحَة",
+        example: "She pulled on her silicone swim cap.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Hydrodynamics",
+        en: "Competitive swimmers wear tight silicone swim caps to reduce drag in the water.",
+        ar: "يَرْتَدِي السَّبَّاحُونَ قُبَّعَاتِ سِيلِيكُون مُحْكَمَةً لِتَقْلِيلِ مُقَاوَمَةِ المَاءِ.",
+      },
+      {
+        context: "Pool Rules",
+        en: "The public swimming pool requires all patrons to wear clean swim caps.",
+        ar: "يَفْرِضُ المَسْبَحُ العَامُّ عَلَى جَمِيعِ الرُّوَّادِ ارْتِدَاءَ قُبَّعَاتِ السِّبَاحَةِ.",
+      },
+      {
+        context: "Hair Protection",
+        en: "A waterproof swim cap keeps long hair protected from chlorine chemicals.",
+        ar: "تَحْمِي قُبَّعَةُ السِّبَاحَةِ المَانِعَةُ لِلْمَاءِ الشَّعْرَ مِنْ تَأْثِيرِ الكُلُورِ.",
+      },
+    ],
+    exampleSentence:
+      "Competitive swimmers wear tight silicone swim caps to reduce drag in the water.",
+    exampleArabic:
+      "يَرْتَدِي السَّبَّاحُونَ قُبَّعَاتِ سِيلِيكُون مُحْكَمَةً لِتَقْلِيلِ مُقَاوَمَةِ المَاءِ.",
+  },
+  backstroke: {
+    id: "backstroke",
+    arabic: "سِبَاحَةُ الظَّهْر (نَمَطُ السِّبَاحَةِ عَلَى الظَّهْر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbækstroʊk",
+    pronunciationTip: "Pronounce 'BAK-strohk'.",
+    collocations: ["swim backstroke", "backstroke race", "backstroke technique"],
+    phrasalVerbs: [
+      {
+        phrase: "glide through",
+        meaning: "move backwards across pool surface",
+        arabic: "يَسْبَحُ عَلَى الظَّهْر",
+        example: "He glided through the water doing the backstroke.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Swim Stroke",
+        en: "In the backstroke, the swimmer stays on their back and alternates continuous arm circles.",
+        ar: "فِي سِبَاحَةِ الظَّهْرِ، يَسْتَلْقِي السَّبَّاحُ عَلَى ظَهْرِهِ وَيُحَرِّكُ ذِرَاعَيْهِ بِتَتَابُعٍ.",
+      },
+      {
+        context: "Flags",
+        en: "Overhead backstroke flags warn swimmers when they are five meters from the wall.",
+        ar: "تُحَذِّرُ أَعْلَامُ سِبَاحَةِ الظَّهْرِ السَّبَّاحِينَ عِنْدَ اقْتِرَابِهِمْ ٥ أَمْتَارٍ مِنَ الحَائِطِ.",
+      },
+      {
+        context: "Breathing",
+        en: "Backstroke allows easy breathing since the swimmer's face remains out of the water.",
+        ar: "تُتِيحُ سِبَاحَةُ الظَّهْرِ تَنَفُّسًا سَهْلًا لِبَقَاءِ الوَجْهِ خَارِجَ المَاءِ.",
+      },
+    ],
+    exampleSentence:
+      "In the backstroke, the swimmer stays on their back and alternates continuous arm circles.",
+    exampleArabic:
+      "فِي سِبَاحَةِ الظَّهْرِ، يَسْتَلْقِي السَّبَّاحُ عَلَى ظَهْرِهِ وَيُحَرِّكُ ذِرَاعَيْهِ بِتَتَابُعٍ.",
+  },
+  freestyle: {
+    id: "freestyle",
+    arabic: "السِّبَاحَةُ الحُرَّة (الزَّحْفُ عَلَى البَطْن / سِبَاحَةُ الكْرُول)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfriːstaɪl",
+    pronunciationTip: "Pronounce 'FREE-styl'.",
+    collocations: ["swim freestyle", "freestyle relay", "fifty-meter freestyle"],
+    phrasalVerbs: [
+      {
+        phrase: "power through",
+        meaning: "stroke rapidly using front crawl motion",
+        arabic: "يَسْبَحُ بِالسِّبَاحَةِ الحُرَّة",
+        example: "She powered through the fifty-meter freestyle.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Fastest Stroke",
+        en: "Freestyle, or the front crawl, is the fastest and most efficient swimming technique.",
+        ar: "تُعَدُّ السِّبَاحَةُ الحُرَّةُ أَسْرَعَ وَأَكْثَرَ تِقْنِيَّاتِ السِّبَاحَةِ كَفَاءَةً.",
+      },
+      {
+        context: "Sprint Event",
+        en: "He broke the school record in the fifty-meter freestyle sprint event.",
+        ar: "حَطَّمَ الرَّقْمَ القِيَاسِيَّ لِلْمَدْرَسَةِ فِي سِبَاقِ ٥٠ مِتْرًا سِبَاحَةً حُرَّةً.",
+      },
+      {
+        context: "Breathing Rhythm",
+        en: "Swimmers practice bilateral breathing while maintaining continuous freestyle arm strokes.",
+        ar: "يَتَدَرَّبُ السَّبَّاحُونَ عَلَى التَّنَفُّسِ الجَانِبِيِّ المُتَنَاوِبِ فِي السِّبَاحَةِ الحُرَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "Freestyle, or the front crawl, is the fastest and most efficient swimming technique.",
+    exampleArabic:
+      "تُعَدُّ السِّبَاحَةُ الحُرَّةُ أَسْرَعَ وَأَكْثَرَ تِقْنِيَّاتِ السِّبَاحَةِ كَفَاءَةً.",
+  },
+  "butterfly-stroke": {
+    id: "butterfly-stroke",
+    arabic: "سِبَاحَةُ الفَرَاشَة (أَصْعَبُ أَنْمَاطِ السِّبَاحَةِ المَائِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbʌtərflaɪ stroʊk",
+    pronunciationTip: "Pronounce 'BUT-er-fly strohk'.",
+    collocations: ["swim butterfly stroke", "butterfly stroke swimmer", "hundred-meter butterfly"],
+    phrasalVerbs: [
+      {
+        phrase: "undulate through",
+        meaning: "propel body with simultaneous arm pull and dolphin kick",
+        arabic: "يَسْبَحُ بِحَرَكَةِ الفَرَاشَة",
+        example: "He undulated through the water with powerful dolphin kicks.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Demanding Stroke",
+        en: "The butterfly stroke demands exceptional shoulder strength and rhythmic dolphin kicks.",
+        ar: "تَتَطَلَّبُ سِبَاحَةُ الفَرَاشَةِ قُوَّةَ كَتِفٍ اسْتِثْنَائِيَّةً وَرَكَلَاتِ دُولْفِين مُتَنَاغِمَةً.",
+      },
+      {
+        context: "Simultaneous Arms",
+        en: "Both arms must be brought forward simultaneously over the water in butterfly stroke.",
+        ar: "يَجِبُ دَفْعُ كِلْتَا الذِّرَاعَيْنِ لِلأَمَامِ مَعًا فَوْقَ المَاءِ فِي سِبَاحَةِ الفَرَاشَةِ.",
+      },
+      {
+        context: "Competition",
+        en: "She won gold in the hundred-meter butterfly race with a stunning finishing surge.",
+        ar: "فَازَتْ بِالمِيدَالِيَّةِ الذَّهَبِيَّةِ فِي سِبَاقِ ١٠٠ مِتْرٍ سِبَاحَةَ فَرَاشَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "The butterfly stroke demands exceptional shoulder strength and rhythmic dolphin kicks.",
+    exampleArabic:
+      "تَتَطَلَّبُ سِبَاحَةُ الفَرَاشَةِ قُوَّةَ كَتِفٍ اسْتِثْنَائِيَّةً وَرَكَلَاتِ دُولْفِين مُتَنَاغِمَةً.",
+  },
+  "water-polo": {
+    id: "water-polo",
+    arabic: "كُرَةُ المَاءِ (لُعْبَةُ كُرَةِ المَاءِ فِي المَسْبَح)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɔːtər ˈpoʊloʊ",
+    pronunciationTip: "Pronounce 'WAW-ter POH-loh'.",
+    collocations: ["water polo match", "play water polo", "water polo ball", "water polo cap"],
+    phrasalVerbs: [
+      {
+        phrase: "tread water and pass",
+        meaning: "stay afloat while throwing waterproof ball",
+        arabic: "يُعَوِّمُ وَيُمَرِّرُ فِي كُرَةِ المَاءِ",
+        example: "Players treaded water and passed the yellow ball.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Team Water Sport",
+        en: "Water polo is an intense aquatic team game where players throw a ball into the opposing net.",
+        ar: "كُرَةُ المَاءِ لُعْبَةٌ مَائِيَّةٌ جَمَاعِيَّةٌ قَوِيَّةٌ يَرْمِي فِيهَا اللَّاعِبُونَ الكُرَةَ فِي مَرْمَى الخَصْمِ.",
+      },
+      {
+        context: "Endurance",
+        en: "Players must continuously tread water using the eggbeater kick without touching the bottom.",
+        ar: "يَجِبُ عَلَى اللَّاعِبِينَ العَوْمُ المُسْتَمِرُّ دُونَ لَمْسِ قَاعِ المَسْبَحِ.",
+      },
+      {
+        context: "Caps",
+        en: "Team members wear protective ear-guarded numbered caps during water polo matches.",
+        ar: "يَرْتَدِي أَعْضَاءُ الفَرِيقِ قُبَّعَاتٍ مُرَقَّمَةً ذَاتَ وَاقِيَاتِ أُذُنٍ فِي مُبَارَيَاتِ كُرَةِ المَاءِ.",
+      },
+    ],
+    exampleSentence:
+      "Water polo is an intense aquatic team game where players throw a ball into the opposing net.",
+    exampleArabic:
+      "كُرَةُ المَاءِ لُعْبَةٌ مَائِيَّةٌ جَمَاعِيَّةٌ قَوِيَّةٌ يَرْمِي فِيهَا اللَّاعِبُونَ الكُرَةَ فِي مَرْمَى الخَصْمِ.",
+  },
+  "synchronized-swimming": {
+    id: "synchronized-swimming",
+    arabic: "السِّبَاحَةُ الإِيقَاعِيَّة (السِّبَاحَةُ الفَنِّيَّةُ المُنَسَّقَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsɪŋkrənaɪzd ˈswɪmɪŋ",
+    pronunciationTip: "Pronounce 'SIN-kruh-nyzd SWIM-ing'.",
+    collocations: [
+      "synchronized swimming team",
+      "artistic synchronized swimming",
+      "synchronized swimming routine",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "perform to music",
+        meaning: "execute coordinated aquatic choreography",
+        arabic: "يُؤَدِّي حَرَكَاتٍ مَائِيَّةً مُنَسَّقَة",
+        example: "The duo performed acrobatic moves to music.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Artistic Sport",
+        en: "Synchronized swimming blends gymnastics, dance, and swimming into choreographed water routines.",
+        ar: "تَمْزُجُ السِّبَاحَةُ الإِيقَاعِيَّةُ بَيْنَ الجُمْبَازِ وَالرَّقْصِ وَالسِّبَاحَةِ فِي عُرُوضٍ فَنِّيَّةٍ.",
+      },
+      {
+        context: "Team Harmony",
+        en: "The eight swimmers moved in perfect unison to the dramatic musical soundtrack.",
+        ar: "تَحَرَّكَ السَّبَّاحُونَ الثَّمَانِيَةُ بِتَنَاغُمٍ تَامٍّ مَعَ المُوسِيقَى التَّصْوِيرِيَّةِ.",
+      },
+      {
+        context: "Underwater Sound",
+        en: "Underwater speakers allow artistic swimmers to hear the beat clearly while submerged.",
+        ar: "تُتِيحُ السَّمَّاعَاتُ تَحْتَ المَاءِ لِلسَّبَّاحِينَ سَمَاعَ الإِيقَاعِ أَثْنَاءَ الغَوْصِ.",
+      },
+    ],
+    exampleSentence:
+      "Synchronized swimming blends gymnastics, dance, and swimming into choreographed water routines.",
+    exampleArabic:
+      "تَمْزُجُ السِّبَاحَةُ الإِيقَاعِيَّةُ بَيْنَ الجُمْبَازِ وَالرَّقْصِ وَالسِّبَاحَةِ فِي عُرُوضٍ فَنِّيَّةٍ.",
+  },
+  gymnasium: {
+    id: "gymnasium",
+    arabic: "صَالَةُ الأَلْعَابِ الرِّيَاضِيَّة (صَالَةُ الجِيمِ وَالجُمْبَاز)",
+    partOfSpeech: "noun",
+    phonetic: "dʒɪmˈneɪziəm",
+    pronunciationTip: "Pronounce 'jim-NAY-zee-um'.",
+    collocations: ["school gymnasium", "indoor gymnasium", "enter the gymnasium"],
+    phrasalVerbs: [
+      {
+        phrase: "work out in",
+        meaning: "exercise indoors in athletic facility",
+        arabic: "يَتَدَرَّبُ فِي الصَّالَةِ الرِّيَاضِيَّة",
+        example: "Students worked out in the spacious gymnasium.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Indoor Arena",
+        en: "The high school gymnasium features polished maple floors and retractable bleachers.",
+        ar: "تَتَمَيَّزُ صَالَةُ الأَلْعَابِ الرِّيَاضِيَّةِ بِأَرْضِيَّاتٍ خَشَبِيَّةٍ لَامِعَةٍ وَمَدَرَّجَاتٍ.",
+      },
+      {
+        context: "Multi-sport",
+        en: "The gymnasium accommodates basketball, volleyball, badminton, and gymnastics training.",
+        ar: "تَسْتَوْعِبُ صَالَةُ الأَلْعَابِ رِيَاضَاتِ السَّلَّةِ وَالطَّائِرَةِ وَالجُمْبَازِ.",
+      },
+      {
+        context: "Fitness Center",
+        en: "Community members use the modern gymnasium for evening fitness classes and workouts.",
+        ar: "يَسْتَخْدِمُ أَعْضَاءُ النَّادِي صَالَةَ الأَلْعَابِ لِحُصَصِ اللِّيَاقَةِ البَدَنِيَّةِ المَسَائِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "The high school gymnasium features polished maple floors and retractable bleachers.",
+    exampleArabic:
+      "تَتَمَيَّزُ صَالَةُ الأَلْعَابِ الرِّيَاضِيَّةِ بِأَرْضِيَّاتٍ خَشَبِيَّةٍ لَامِعَةٍ وَمَدَرَّجَاتٍ.",
+  },
+  "locker-room": {
+    id: "locker-room",
+    arabic: "غُرْفَةُ تَبْدِيلِ المَلَابِس (غُرْفَةُ الخَزَائِنِ الرِّيَاضِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈlɒkər ruːm",
+    pronunciationTip: "Pronounce 'LOK-er room'.",
+    collocations: ["team locker room", "visit the locker room", "locker room lockers"],
+    phrasalVerbs: [
+      {
+        phrase: "change in",
+        meaning: "dress into athletic uniform before match",
+        arabic: "يُبَدِّلُ مَلَابِسَهُ فِي الغُرْفَة",
+        example: "Players changed into jerseys in the locker room.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Team Facility",
+        en: "Athletes stored their sports bags inside secure metal lockers in the locker room.",
+        ar: "حَفِظَ الرِّيَاضِيُّونَ حَقَائِبَهُمْ فِي خَزَائِنَ مَعْدِنِيَّةٍ دَاخِلَ غُرْفَةِ المَلَابِسِ.",
+      },
+      {
+        context: "Half-time Talk",
+        en: "The coach gave an inspiring motivational speech in the locker room at halftime.",
+        ar: "أَلْقَى المُدَرِّبُ كَلِمَةً حَمَاسِيَّةً فِي غُرْفَةِ تَبْدِيلِ المَلَابِسِ بَيْنَ الشَّوْطَيْنِ.",
+      },
+      {
+        context: "Amenities",
+        en: "The modern locker room provides private showers, benches, and clean towel stations.",
+        ar: "تُوَفِّرُ غُرْفَةُ تَبْدِيلِ المَلَابِسِ دُشَّاتٍ خَاصَّةً وَمَقَاعِدَ وَمَنَاشِفَ نَظِيفَةً.",
+      },
+    ],
+    exampleSentence:
+      "Athletes stored their sports bags inside secure metal lockers in the locker room.",
+    exampleArabic:
+      "حَفِظَ الرِّيَاضِيُّونَ حَقَائِبَهُمْ فِي خَزَائِنَ مَعْدِنِيَّةٍ دَاخِلَ غُرْفَةِ المَلَابِسِ.",
+  },
+  bleachers: {
+    id: "bleachers",
+    arabic: "مَدَرَّجَاتُ الجَمَاهِير (مَقَاعِدُ المُتَفَرِّجِينَ فِي المَلْعَب)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbliːtʃərz",
+    pronunciationTip: "Pronounce 'BLEE-cherz'.",
+    collocations: ["sit in the bleachers", "packed bleachers", "aluminum bleachers"],
+    phrasalVerbs: [
+      {
+        phrase: "cheer from",
+        meaning: "shout support from elevated spectator stands",
+        arabic: "يُهَتِّفُ مِنَ المَدَرَّجَات",
+        example: "Fans cheered enthusiastically from the bleachers.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Spectator Seating",
+        en: "Excited fans packed the aluminum bleachers to cheer on their school team.",
+        ar: "احْتَشَدَ المُشَجِّعُونَ فِي المَدَرَّجَاتِ لِتَشْجِيعِ فَرِيقِ مَدْرَسَتِهِمْ.",
+      },
+      {
+        context: "Stadium View",
+        en: "From the top of the bleachers, spectators enjoy an unobstructed view of the field.",
+        ar: "مِنْ أَعْلَى المَدَرَّجَاتِ، يَتَمَتَّعُ الجُمْهُورُ بِرُؤْيَةٍ وَاضِحَةٍ لِلْمَلْعَبِ.",
+      },
+      {
+        context: "Arena Setup",
+        en: "Staff folded away the motorized bleachers to create extra space on the gym floor.",
+        ar: "طَوَى الطَّاقَمُ المَدَرَّجَاتِ الإِلِكْتُرُونِيَّةَ لِتَوْفِيرِ مِسَاحَةٍ فِي الصَّالَةِ.",
+      },
+    ],
+    exampleSentence: "Excited fans packed the aluminum bleachers to cheer on their school team.",
+    exampleArabic:
+      "احْتَشَدَ المُشَجِّعُونَ فِي المَدَرَّجَاتِ لِتَشْجِيعِ فَرِيقِ مَدْرَسَتِهِمْ.",
+  },
+  track: {
+    id: "track",
+    arabic: "مِضْمَارُ الجَرْي (حَلَبَةُ سِبَاقِ العَدْو)",
+    partOfSpeech: "noun",
+    phonetic: "træk",
+    pronunciationTip: "Pronounce 'TRAK' (/træk/).",
+    collocations: ["running track", "oval track", "synthetic track", "track and field"],
+    phrasalVerbs: [
+      {
+        phrase: "lap around",
+        meaning: "run complete circuit around bounded course",
+        arabic: "يَدُورُ حَوْلَ المِضْمَار",
+        example: "Runners lapped around the rubberized track.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Running Facility",
+        en: "The red rubberized running track provides great traction and absorbs joint impact.",
+        ar: "يُوَفِّرُ مِضْمَارُ الجَرْيِ المَطَّاطِيُّ الأَحْمَرُ ثَبَاتًا مُمْتَازًا وَيَمْتَصُّ الصَّدَمَاتِ.",
+      },
+      {
+        context: "Circuit Length",
+        en: "Four laps around the standard outdoor running track equal exactly one mile.",
+        ar: "تُعَادِلُ أَرْبَعُ دَوْرَاتٍ حَوْلَ المِضْمَارِ مِيلًا كَامِلًا بِالضَّبْطِ.",
+      },
+      {
+        context: "Training",
+        en: "Athletes practiced interval sprints and distance pacing on the eight-lane track.",
+        ar: "تَدَرَّبَ الرِّيَاضِيُّونَ عَلَى العَدْوِ فِي المِضْمَارِ المُكَوَّنِ مِنْ ٨ حَارَاتٍ.",
+      },
+    ],
+    exampleSentence:
+      "The red rubberized running track provides great traction and absorbs joint impact.",
+    exampleArabic:
+      "يُوَفِّرُ مِضْمَارُ الجَرْيِ المَطَّاطِيُّ الأَحْمَرُ ثَبَاتًا مُمْتَازًا وَيَمْتَصُّ الصَّدَمَاتِ.",
+  },
+  field: {
+    id: "field",
+    arabic: "مَلْعَبُ كُرَةِ القَدَمِ العُشْبِيّ (سَاحَةُ اللَّعِب)",
+    partOfSpeech: "noun",
+    phonetic: "fiːld",
+    pronunciationTip: "Long 'ee' sound: 'FEELD' (/fiːld/).",
+    collocations: ["grass field", "soccer field", "step onto the field", "sports field"],
+    phrasalVerbs: [
+      {
+        phrase: "run onto",
+        meaning: "enter the playing grass arena",
+        arabic: "يَدْخُلُ إِلَى أَرْضِ المَلْعَب",
+        example: "The team ran onto the emerald grass field.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Playing Surface",
+        en: "Groundskeepers mowed and watered the lush green grass field before the cup final.",
+        ar: "قَصَّ عُمَّالُ المَلْعَبِ العُشْبَ الأَخْضَرَ وَسَقَوْهُ قَبْلَ المُبَارَاةِ النِّهَائِيَّةِ.",
+      },
+      {
+        context: "Sports Venue",
+        en: "The multi-purpose sports field accommodates soccer, rugby, and track events.",
+        ar: "يَسْتَوْعِبُ المَلْعَبُ الرِّيَاضِيُّ مُتَعَدِّدُ الأَغْرَاضِ كُرَةَ القَدَمِ وَالرَّغْبِي.",
+      },
+      {
+        context: "Kickoff",
+        en: "Both teams lined up on opposite halves of the field awaiting the opening whistle.",
+        ar: "اصْطَفَّ الفَرِيقَانِ فِي نِصْفَي المَلْعَبِ بِانْتِظَارِ صَفَّارَةِ البِدَايَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Groundskeepers mowed and watered the lush green grass field before the cup final.",
+    exampleArabic:
+      "قَصَّ عُمَّالُ المَلْعَبِ العُشْبَ الأَخْضَرَ وَسَقَوْهُ قَبْلَ المُبَارَاةِ النِّهَائِيَّةِ.",
+  },
+  court: {
+    id: "court",
+    arabic: "مَلْعَبُ التِّنِسِ أَوِ السَّلَّة (أَرْضِيَّةُ اللَّعِبِ الدَّاخِلِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "kɔːrt",
+    pronunciationTip: "Pronounce 'KORT' (/kɔːrt/).",
+    collocations: ["basketball court", "tennis court", "volleyball court", "step onto the court"],
+    phrasalVerbs: [
+      {
+        phrase: "play on",
+        meaning: "compete upon bounded marked surface",
+        arabic: "يَلْعَبُ فِي المَلْعَب",
+        example: "They played three sets on the clay court.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Tennis & Basketball",
+        en: "The basketball players warmed up with shooting drills on the polished indoor court.",
+        ar: "أَجْرَى لَاعِبُو السَّلَّةِ تَمَارِينَ الإِحْمَاءِ عَلَى أَرْضِيَّةِ المَلْعَبِ اللَّامِعَةِ.",
+      },
+      {
+        context: "Clay & Grass",
+        en: "Tennis champions compete on diverse court surfaces including red clay, grass, and hard courts.",
+        ar: "يَتَنَافَسُ أَبْطَالُ التِّنِسِ عَلَى مَلَاعِبَ تُرَابِيَّةٍ وَعُشْبِيَّةٍ وَصَلْبَةٍ.",
+      },
+      {
+        context: "Markings",
+        en: "Bright white boundary lines clearly delimit the serving boxes across the tennis court.",
+        ar: "تُحَدِّدُ الخُطُوطُ البَيْضَاءُ مَنَاطِقَ الإِرْسَالِ فِي مَلْعَبِ التِّنِسِ.",
+      },
+    ],
+    exampleSentence:
+      "The basketball players warmed up with shooting drills on the polished indoor court.",
+    exampleArabic:
+      "أَجْرَى لَاعِبُو السَّلَّةِ تَمَارِينَ الإِحْمَاءِ عَلَى أَرْضِيَّةِ المَلْعَبِ اللَّامِعَةِ.",
+  },
+  ring: {
+    id: "ring",
+    arabic: "حَلْبَةُ المُلَاكَمَة (حَلْبَةُ النِّزَالِ المُرَبَّعَة)",
+    partOfSpeech: "noun",
+    phonetic: "rɪŋ",
+    pronunciationTip: "Pronounce 'RING' (/rɪŋ/).",
+    collocations: ["boxing ring", "step into the ring", "ring ropes", "wrestling ring"],
+    phrasalVerbs: [
+      {
+        phrase: "step into",
+        meaning: "enter enclosed roped fighting square",
+        arabic: "يَدْخُلُ حَلْبَةَ النِّزَال",
+        example: "The boxer stepped bravely into the ring.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Combat Arena",
+        en: "The boxing ring is elevated on a sturdy platform and enclosed by four elastic ropes.",
+        ar: "تَرْتَفِعُ حَلْبَةُ المُلَاكَمَةِ عَلَى مِنَصَّةٍ مُحَاطَةٍ بِأَرْبَعَةِ حِبَالٍ مَرِنَةٍ.",
+      },
+      {
+        context: "Fight",
+        en: "Both fighters met at the center of the ring to touch gloves before round one began.",
+        ar: "الْتَقَى المُقَاتِلَانِ فِي مُنْتَصَفِ الحَلْبَةِ لِمُصَافَحَةِ القُفَّازَاتِ قَبْلَ النِّزَالِ.",
+      },
+      {
+        context: "Corner",
+        en: "Between rounds, the trainer offered water and tactical advice in the fighter's ring corner.",
+        ar: "قَدَّمَ المُدَرِّبُ المَاءَ وَالنَّصَائِحَ لِلْمُلَاكِمِ فِي زَاوِيَةِ الحَلْبَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The boxing ring is elevated on a sturdy platform and enclosed by four elastic ropes.",
+    exampleArabic:
+      "تَرْتَفِعُ حَلْبَةُ المُلَاكَمَةِ عَلَى مِنَصَّةٍ مُحَاطَةٍ بِأَرْبَعَةِ حِبَالٍ مَرِنَةٍ.",
+  },
+  mat: {
+    id: "mat",
+    arabic: "بِسَاطُ التَّمَارِين (فَرْشَةُ الجُمْبَازِ وَاليُوغَا وَالمُصَارَعَة)",
+    partOfSpeech: "noun",
+    phonetic: "mæt",
+    pronunciationTip: "Short 'a' sound: 'MAT' (/mæt/).",
+    collocations: ["yoga mat", "gymnastics mat", "wrestling mat", "exercise mat"],
+    phrasalVerbs: [
+      {
+        phrase: "stretch out on",
+        meaning: "perform body floor exercises upon cushioned pad",
+        arabic: "يَسْتَلْقِي عَلَى بِسَاطِ التَّمَارِين",
+        example: "She stretched out on her non-slip yoga mat.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Yoga & Pilates",
+        en: "She unrolled her non-slip purple yoga mat on the studio floor for morning stretches.",
+        ar: "فَرَدَتْ بِسَاطَ اليُوغَا البَنَفْسَجِيَّ عَلَى الأَرْضِ لِتَمَارِينِ الإِطَالَةِ الصَّبَاحِيَّةِ.",
+      },
+      {
+        context: "Gymnastics Safety",
+        en: "Thick foam landing mats protect gymnasts when practicing difficult tumbling passes.",
+        ar: "تَحْمِي بُسُطُ الهُبُوطِ الإِسْفَنْجِيَّةُ لَاعِبِي الجُمْبَازِ عِنْدَ الشِّقْلَبَةِ.",
+      },
+      {
+        context: "Wrestling",
+        en: "Wrestlers grappled inside the red scoring circle marked on the tournament mat.",
+        ar: "تَنَافَسَ المُصَارِعُونَ دَاخِلَ الدَّائِرَةِ الحَمْرَاءِ عَلَى بِسَاطِ النِّزَالِ.",
+      },
+    ],
+    exampleSentence:
+      "She unrolled her non-slip purple yoga mat on the studio floor for morning stretches.",
+    exampleArabic:
+      "فَرَدَتْ بِسَاطَ اليُوغَا البَنَفْسَجِيَّ عَلَى الأَرْضِ لِتَمَارِينِ الإِطَالَةِ الصَّبَاحِيَّةِ.",
+  },
+  treadmill: {
+    id: "treadmill",
+    arabic: "جِهَازُ المَشْيِ الكَهْرَبَائِيّ (سَيْرُ الجَرْيِ فِي الجِيم)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtrɛdmɪl",
+    pronunciationTip: "Pronounce 'TRED-mil'.",
+    collocations: [
+      "run on a treadmill",
+      "motorized treadmill",
+      "treadmill workout",
+      "incline treadmill",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "work out on",
+        meaning: "jog on motorized moving belt",
+        arabic: "يَتَدَرَّبُ عَلَى سَيْرِ الجَرْي",
+        example: "He ran five miles on the motorized treadmill.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cardio Exercise",
+        en: "She ran three miles on the motorized treadmill while monitoring her heart rate.",
+        ar: "رَكَضَتْ ٣ أَمْيَالٍ عَلَى جِهَازِ الجَرْيِ الكَهْرَبَائِيِّ مَعَ مُرَاقَبَةِ نَبْضِ القَلْبِ.",
+      },
+      {
+        context: "Adjustable Settings",
+        en: "You can easily adjust the treadmill's incline and speed to simulate hill running.",
+        ar: "يُمْكِنُكَ تَعْدِيلُ مَيَلَانِ وَسُرْعَةِ جِهَازِ المَشْيِ لِمُحَاكَاةِ التِّلَالِ.",
+      },
+      {
+        context: "Gym Area",
+        en: "A long row of high-tech treadmills faced the large glass windows in the fitness club.",
+        ar: "اصْطَفَّتْ أَجْهِزَةُ المَشْيِ الحَدِيثَةُ أَمَامَ نَوَافِذِ النَّادِي الرِّيَاضِيِّ الزُّجَاجِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "She ran three miles on the motorized treadmill while monitoring her heart rate.",
+    exampleArabic:
+      "رَكَضَتْ ٣ أَمْيَالٍ عَلَى جِهَازِ الجَرْيِ الكَهْرَبَائِيِّ مَعَ مُرَاقَبَةِ نَبْضِ القَلْبِ.",
+  },
+  "weight-room": {
+    id: "weight-room",
+    arabic: "قَاعَةُ رَفْعِ الأَثْقَال (غُرْفَةُ حَدِيدِ كَمَالِ الأَجْسَام)",
+    partOfSpeech: "noun",
+    phonetic: "weɪt ruːm",
+    pronunciationTip: "Pronounce 'WAYT room'.",
+    collocations: ["enter the weight room", "weight room equipment", "train in the weight room"],
+    phrasalVerbs: [
+      {
+        phrase: "lift weights in",
+        meaning: "train muscular strength using barbells",
+        arabic: "يَتَدَرَّبُ بِالأَثْقَالِ فِي القَاعَة",
+        example: "Athletes lifted heavy barbells in the weight room.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Strength Training",
+        en: "Athletes build muscular power and bone density by lifting weights in the weight room.",
+        ar: "يَبْنِي الرِّيَاضِيُّونَ القُوَّةَ العَضَلِيَّةَ بِالتَّدْرِيبِ فِي قَاعَةِ الأَثْقَالِ.",
+      },
+      {
+        context: "Equipment",
+        en: "The weight room is equipped with dumbbells, squat racks, barbells, and resistance benches.",
+        ar: "تَضُمُّ قَاعَةُ الأَثْقَالِ دَمْبِلْز وَحَوَامِلَ قُرْفُصَاءَ وَمَقَاعِدَ تَمَارِينِ مُقَاوَمَةٍ.",
+      },
+      {
+        context: "Gym Rules",
+        en: "Members must re-rack all heavy weight plates safely after finishing their workouts.",
+        ar: "يَجِبُ عَلَى الأَعْضَاءِ إِعَادَةُ أَقْرَاصِ الأَثْقَالِ إِلَى أَمَاكِنِهَا بَعْدَ التَّمْرِينِ.",
+      },
+    ],
+    exampleSentence:
+      "Athletes build muscular power and bone density by lifting weights in the weight room.",
+    exampleArabic:
+      "يَبْنِي الرِّيَاضِيُّونَ القُوَّةَ العَضَلِيَّةَ بِالتَّدْرِيبِ فِي قَاعَةِ الأَثْقَالِ.",
+  },
+  athlete: {
+    id: "athlete",
+    arabic: "رِيَاضِيّ (لَاعِبٌ مُحْتَرِفٌ أَوْ هَاوٍ ذُو لِيَاقَةٍ عَالِيَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈæθliːt",
+    pronunciationTip: "Pronounce 'ATH-leet' (/ˈæθ.liːt/).",
+    collocations: [
+      "professional athlete",
+      "college athlete",
+      "talented athlete",
+      "train like an athlete",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "train for",
+        meaning: "prepare body diligently for sports competitions",
+        arabic: "يَتَدَرَّبُ لِلْمُنَافَسَات",
+        example: "The dedicated athlete trained for the Olympics.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dedication",
+        en: "The professional athlete follows a strict nutrition and training regimen every day.",
+        ar: "يَتَّبِعُ الرِّيَاضِيُّ المُحْتَرِفُ نِظَامًا غِذَائِيًّا وَتَدْرِيبِيًّا صَارِمًا يَوْمِيًّا.",
+      },
+      {
+        context: "Olympic Games",
+        en: "Elite athletes from over two hundred nations gathered to compete in the Olympic Games.",
+        ar: "اجْتَمَعَ نُخْبَةُ الرِّيَاضِيِّينَ مِنْ ٢٠٠ دَوْلَةٍ لِلتَّنَافُسِ فِي الأَلْعَابِ الأُولِمْبِيَّةِ.",
+      },
+      {
+        context: "Performance",
+        en: "The young track athlete set a new personal record in the four-hundred-meter dash.",
+        ar: "حَقَّقَ الرِّيَاضِيُّ الشَّابُّ رَقْمًا قِيَاسِيًّا شَخْصِيًّا فِي سِبَاقِ ٤٠٠ مِتْرٍ.",
+      },
+    ],
+    exampleSentence:
+      "The professional athlete follows a strict nutrition and training regimen every day.",
+    exampleArabic:
+      "يَتَّبِعُ الرِّيَاضِيُّ المُحْتَرِفُ نِظَامًا غِذَائِيًّا وَتَدْرِيبِيًّا صَارِمًا يَوْمِيًّا.",
+  },
+  referee: {
+    id: "referee",
+    arabic: "حَكَمُ المُبَارَاة (قَاضِي المَلْعَبِ وَضَابِطُ القَوَانِين)",
+    partOfSpeech: "noun",
+    phonetic: "ˌrɛfəˈriː",
+    pronunciationTip: "Stress last syllable: 'ref-er-EE' (/ˌrɛf.əˈriː/).",
+    collocations: [
+      "match referee",
+      "referee's whistle",
+      "respect the referee",
+      "assistant referee",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "call out",
+        meaning: "declare foul or rule infraction firmly",
+        arabic: "يُعْلِنُ عَنْ مُخَالَفَة",
+        example: "The referee called out a foul against the defender.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Officiating",
+        en: "The referee blew his whistle and awarded a penalty kick for the tripping foul.",
+        ar: "أَطْلَقَ حَكَمُ المُبَارَاةِ صَفَّارَتَهُ وَمَنَحَ رَكْلَةَ جَزَاءٍ لِمُخَالَفَةِ العَرْقَلَةِ.",
+      },
+      {
+        context: "Fairness",
+        en: "A qualified referee maintains complete neutrality and ensures players follow all rules.",
+        ar: "يُحَافِظُ الحَكَمُ المُؤَهَّلُ عَلَى الحِيَادِ التَّامِّ وَيَضْمَنُ اتِّبَاعَ القَوَانِينِ.",
+      },
+      {
+        context: "Cards",
+        en: "The referee showed a yellow card to caution the aggressive player.",
+        ar: "أَشْهَرَ الحَكَمُ بِطَاقَةً صَفْرَاءَ لِتَحْذِيرِ اللَّاعِبِ المُتَهَوِّرِ.",
+      },
+    ],
+    exampleSentence:
+      "The referee blew his whistle and awarded a penalty kick for the tripping foul.",
+    exampleArabic:
+      "أَطْلَقَ حَكَمُ المُبَارَاةِ صَفَّارَتَهُ وَمَنَحَ رَكْلَةَ جَزَاءٍ لِمُخَالَفَةِ العَرْقَلَةِ.",
+  },
+  teammate: {
+    id: "teammate",
+    arabic: "زَمِيلُ الفَرِيق (شَرِيكُ اللَّعِبِ فِي نَفْسِ المَجْمُوعَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtiːmmeɪt",
+    pronunciationTip: "Pronounce 'TEEM-mayt' (/ˈtiːm.meɪt/).",
+    collocations: ["trust your teammate", "pass to a teammate", "support a teammate"],
+    phrasalVerbs: [
+      {
+        phrase: "cheer on",
+        meaning: "encourage partner during competition",
+        arabic: "يُشَجِّعُ زَمِيلَهُ فِي الفَرِيق",
+        example: "He cheered on his teammate during the sprint.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Camaraderie",
+        en: "He passed the ball swiftly to his open teammate, who scored the game-winning goal.",
+        ar: "مَرَّرَ الكُرَةَ بِسُرْعَةٍ إِلَى زَمِيلِهِ فِي الفَرِيقِ لِيُسَجِّلَ هَدَفَ الفَوْزِ.",
+      },
+      {
+        context: "Mutual Support",
+        en: "Great teammates communicate constantly on the field and celebrate each other's successes.",
+        ar: "يَتَوَاصَلُ زُمَلَاءُ الفَرِيقِ دَائِمًا فِي المَلْعَبِ وَيَحْتَفِلُونَ بِالنَّجَاحِ مَعًا.",
+      },
+      {
+        context: "Trust",
+        en: "Trusting your teammates is the foundation of every championship-winning sports team.",
+        ar: "الثِّقَةُ بِزُمَلَاءِ الفَرِيقِ هِيَ أَسَاسُ كُلِّ فَرِيقٍ رِيَاضِيٍّ بَطَلٍ.",
+      },
+    ],
+    exampleSentence:
+      "He passed the ball swiftly to his open teammate, who scored the game-winning goal.",
+    exampleArabic:
+      "مَرَّرَ الكُرَةَ بِسُرْعَةٍ إِلَى زَمِيلِهِ فِي الفَرِيقِ لِيُسَجِّلَ هَدَفَ الفَوْزِ.",
+  },
+  "warm-up": {
+    id: "warm-up",
+    arabic: "تَمَارِينُ الإِحْمَاء (تَهْيِئَةُ الجِسْمِ قَبْلَ النَّشَاطِ الرِّيَاضِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɔːrm ʌp",
+    pronunciationTip: "Pronounce 'WARM up'.",
+    collocations: ["do a warm-up", "light warm-up", "warm-up routine", "warm-up exercises"],
+    phrasalVerbs: [
+      {
+        phrase: "warm up",
+        meaning: "prepare muscles for activity through movement",
+        arabic: "يُحْمِي عَضَلَاتِهِ",
+        example: "Athletes warmed up with light jogging and stretching.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Injury Prevention",
+        en: "A thorough ten-minute warm-up increases blood circulation and prevents muscle strains.",
+        ar: "تَزِيدُ تَمَارِينُ الإِحْمَاءِ لِمُدَّةِ ١٠ دَقَائِقَ الدَّوْرَةَ الدَّمَوِيَّةَ وَتَقِي مِنَ الإِصَابَاتِ.",
+      },
+      {
+        context: "Routine",
+        en: "The coach led the team through a dynamic warm-up including high knees and lunges.",
+        ar: "قَادَ المُدَرِّبُ الفَرِيقَ فِي إِحْمَاءٍ حَرَكِيٍّ يَشْمَلُ رَفْعَ الرُّكَبِ وَالخَطَوَاتِ.",
+      },
+      {
+        context: "Pre-Match",
+        en: "Both soccer squads completed their pre-match warm-up drills before opening kickoff.",
+        ar: "أَكْمَلَ الفَرِيقَانِ تَمَارِينَ الإِحْمَاءِ قَبْلَ صَفَّارَةِ البِدَايَةِ.",
+      },
+    ],
+    exampleSentence:
+      "A thorough ten-minute warm-up increases blood circulation and prevents muscle strains.",
+    exampleArabic:
+      "تَزِيدُ تَمَارِينُ الإِحْمَاءِ لِمُدَّةِ ١٠ دَقَائِقَ الدَّوْرَةَ الدَّمَوِيَّةَ وَتَقِي مِنَ الإِصَابَاتِ.",
+  },
+  stretch: {
+    id: "stretch",
+    arabic: "تَمْرِينُ الإِطَالَة (تَمْدِيدُ العَضَلَاتِ لِزِيَادَةِ المُرُونَة)",
+    partOfSpeech: "verb",
+    phonetic: "strɛtʃ",
+    pronunciationTip: "Pronounce 'STRETCH' (/strɛtʃ/).",
+    collocations: ["stretch your muscles", "post-workout stretch", "daily stretch"],
+    phrasalVerbs: [
+      {
+        phrase: "stretch out",
+        meaning: "extend limbs to full length to release tension",
+        arabic: "يُمَدِّدُ أَطْرَافَهُ لِلِاسْتِرْخَاء",
+        example: "She stretched out her hamstrings on the grass.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Flexibility",
+        en: "Athletes stretch their calves, hamstrings, and shoulders after every intense workout.",
+        ar: "يُمَدِّدُ الرِّيَاضِيُّونَ عَضَلَاتِ السَّاقِ وَالأَكْتَافِ بَعْدَ كُلِّ تَمْرِينٍ قَوِيٍّ.",
+      },
+      {
+        context: "Cool Down",
+        en: "Gentle static stretching during the cooldown helps restore muscle length and mobility.",
+        ar: "تُسَاعِدُ الإِطَالَاتُ الخَفِيفَةُ أَثْنَاءَ التَّهْدِئَةِ عَلَى اسْتِعَادَةِ مُرُونَةِ العَضَلَاتِ.",
+      },
+      {
+        context: "Daily Habit",
+        en: "Taking five minutes to stretch each morning improves posture and reduces joint stiffness.",
+        ar: "تَخْصِيصُ ٥ دَقَائِقَ لِلْإِطَالَةِ كُلَّ صَبَاحٍ يُحَسِّنُ القَوَامَ وَيُقَلِّلُ تَصَلُّبَ المَفَاصِلِ.",
+      },
+    ],
+    exampleSentence:
+      "Athletes stretch their calves, hamstrings, and shoulders after every intense workout.",
+    exampleArabic:
+      "يُمَدِّدُ الرِّيَاضِيُّونَ عَضَلَاتِ السَّاقِ وَالأَكْتَافِ بَعْدَ كُلِّ تَمْرِينٍ قَوِيٍّ.",
+  },
+  score: {
+    id: "score",
+    arabic: "تَسْجِيلُ النِّقَاط (إِحْرَازُ الأَهْدَاف)",
+    partOfSpeech: "verb",
+    phonetic: "skɔːr",
+    pronunciationTip: "Pronounce 'SKOR' (/skɔːr/).",
+    collocations: ["score a goal", "score points", "score a touchdown", "final score"],
+    phrasalVerbs: [
+      {
+        phrase: "score off",
+        meaning: "gain points from specific play or rebound",
+        arabic: "يُسَجِّلُ نِقَاطًا مِنْ",
+        example: "He scored off a brilliant cross from his teammate.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Goal Scoring",
+        en: "The striker reacted quickly to score the opening goal with a powerful header.",
+        ar: "تَفَاعَلَ المُهَاجِمُ سَرِيعًا لِيُسَجِّلَ هَدَفَ التَّقَدُّمِ بِرَأْسِيَّةٍ قَوِيَّةٍ.",
+      },
+      {
+        context: "Basketball Points",
+        en: "She scored twenty-four points and grabbed ten rebounds in the semifinal victory.",
+        ar: "سَجَّلَتْ ٢٤ نُقْطَةً وَاسْتَحْوَذَتْ عَلَى ١٠ كُرَاتٍ فِي فَوْزِ نِصْفِ النِّهَائِيِّ.",
+      },
+      {
+        context: "Match Result",
+        en: "The final score of the exciting cup match was three-to-two in our favor.",
+        ar: "كَانَتِ النَّتِيجَةُ النِّهَائِيَّةُ لِلْمُبَارَاةِ المُثِيرَةِ ٣-٢ لِصَالِحِنَا.",
+      },
+    ],
+    exampleSentence:
+      "The striker reacted quickly to score the opening goal with a powerful header.",
+    exampleArabic:
+      "تَفَاعَلَ المُهَاجِمُ سَرِيعًا لِيُسَجِّلَ هَدَفَ التَّقَدُّمِ بِرَأْسِيَّةٍ قَوِيَّةٍ.",
+  },
+  pass: {
+    id: "pass",
+    arabic: "تَمْرِيرُ الكُرَة (إِرْسَالُ الكُرَةِ لِلزَّمِيل)",
+    partOfSpeech: "verb",
+    phonetic: "pæs",
+    pronunciationTip: "Pronounce 'PASS' (/pæs/).",
+    collocations: ["pass the ball", "accurate pass", "short pass", "long pass"],
+    phrasalVerbs: [
+      {
+        phrase: "pass back",
+        meaning: "return ball to defensive teammate or keeper",
+        arabic: "يُمَرِّرُ لِلْخَلْف",
+        example: "The midfielder passed back to the goalkeeper safely.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Team Coordination",
+        en: "He delivered a pinpoint through-ball pass that split the opponent's defensive line.",
+        ar: "أَرْسَلَ تَمْرِيرَةً بَيْنِيَّةً دَقِيقَةً اخْتَرَقَتْ خَطَّ دِفَاعِ المُنَافِسِ.",
+      },
+      {
+        context: "Basketball Movement",
+        en: "Quick chest passes and bounce passes keep the basketball moving away from defenders.",
+        ar: "تُبْقِي التَّمْرِيرَاتُ الصَّدْرِيَّةُ وَالأَرْضِيَّةُ السَّرِيعَةُ الكُرَةَ بَعِيدَةً عَنِ المُدَافِعِينَ.",
+      },
+      {
+        context: "Accuracy",
+        en: "Midfielders must practice passing under pressure with both feet to master match control.",
+        ar: "يَجِبُ عَلَى لَاعِبِي الوَسَطِ التَّدَرُّبُ عَلَى التَّمْرِيرِ بِكِلْتَا القَدَمَيْنِ تَحْتَ الضَّغْطِ.",
+      },
+    ],
+    exampleSentence:
+      "He delivered a pinpoint through-ball pass that split the opponent's defensive line.",
+    exampleArabic:
+      "أَرْسَلَ تَمْرِيرَةً بَيْنِيَّةً دَقِيقَةً اخْتَرَقَتْ خَطَّ دِفَاعِ المُنَافِسِ.",
+  },
+  kick: {
+    id: "kick",
+    arabic: "رَكْلُ الكُرَة (تَسْدِيدُ الكُرَةِ بِالقَدَم)",
+    partOfSpeech: "verb",
+    phonetic: "kɪk",
+    pronunciationTip: "Short 'i' sound: 'KIK' (/kɪk/).",
+    collocations: ["kick the ball", "kick a penalty", "free kick", "powerful kick"],
+    phrasalVerbs: [
+      {
+        phrase: "kick into",
+        meaning: "send ball flying toward target area",
+        arabic: "يَرْكُلُ بِاتِّجَاه",
+        example: "The player kicked the ball high into the stands.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Soccer Action",
+        en: "The winger kicked a curving cross toward the center of the penalty box.",
+        ar: "أَرْسَلَ الجَنَاحُ عَرْضِيَّةً مُقَوَّسَةً نَحْوَ مُنْتَصَفِ مِنْطَقَةِ الجَزَاءِ.",
+      },
+      {
+        context: "Power",
+        en: "He took three steps back and kicked the ball powerfully into the top corner of the net.",
+        ar: "تَرَاجَعَ ثَلَاثَ خُطُوَاتٍ وَرَكَلَ الكُرَةَ بِقُوَّةٍ فِي الزَّاوِيَةِ العُلْيَا لِلْمَرْمَى.",
+      },
+      {
+        context: "Training",
+        en: "Young players practice kicking against a rebound wall to develop striking accuracy.",
+        ar: "يَتَدَرَّبُ اللَّاعِبُونَ الصِّغَارُ عَلَى رَكْلِ الكُرَةِ نَحْوَ الحَائِطِ لِتَطْوِيرِ الدِّقَّةِ.",
+      },
+    ],
+    exampleSentence: "The winger kicked a curving cross toward the center of the penalty box.",
+    exampleArabic:
+      "أَرْسَلَ الجَنَاحُ عَرْضِيَّةً مُقَوَّسَةً نَحْوَ مُنْتَصَفِ مِنْطَقَةِ الجَزَاءِ.",
+  },
+  throw: {
+    id: "throw",
+    arabic: "رَمْيُ الكُرَة (قَذْفُ الكُرَةِ بِاليَد)",
+    partOfSpeech: "verb",
+    phonetic: "θroʊ",
+    pronunciationTip: "Pronounce 'THROH' (/θroʊ/).",
+    collocations: ["throw the ball", "throw in", "accurate throw", "throw distance"],
+    phrasalVerbs: [
+      {
+        phrase: "throw in",
+        meaning: "restart soccer game from sideline using both hands",
+        arabic: "يَرْمِي رَمْيَةَ تَمَاس",
+        example: "The defender threw in the ball to his midfielder.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sideline Restart",
+        en: "The defender took the throw-in, launching the ball with both hands overhead.",
+        ar: "نَفَّذَ المُدَافِعُ رَمْيَةَ التَّمَاسِ قَاذِفًا الكُرَةَ بِكِلْتَا يَدَيْهِ مِنْ فَوْقِ رَأْسِهِ.",
+      },
+      {
+        context: "Baseball Pitch",
+        en: "The pitcher threw a ninety-five-mile-per-hour fastball directly across home plate.",
+        ar: "رَمَى لَاعِبُ البَيْسْبُول كُرَةً سَرِيعَةً بِسُرْعَةِ ٩٥ مِيلًا فِي السَّاعَةِ.",
+      },
+      {
+        context: "Athletic Power",
+        en: "In javelin and discus competitions, athletes use their entire core to throw for distance.",
+        ar: "فِي مُسَابَقَاتِ الرِّمَاحِ، يَسْتَخْدِمُ الرِّيَاضِيُّونَ جَسَدَهُمْ بِالكkeyَامِلِ لِلرَّمْيِ لِمَسَافَاتٍ بَعِيدَةٍ.",
+      },
+    ],
+    exampleSentence: "The defender took the throw-in, launching the ball with both hands overhead.",
+    exampleArabic:
+      "نَفَّذَ المُدَافِعُ رَمْيَةَ التَّمَاسِ قَاذِفًا الكُرَةَ بِكِلْتَا يَدَيْهِ مِنْ فَوْقِ رَأْسِهِ.",
+  },
+  catch: {
+    id: "catch",
+    arabic: "الْتِقَاطُ الكُرَة (مَسْكُ الكُرَةِ بِاليَدَيْن)",
+    partOfSpeech: "verb",
+    phonetic: "kætʃ",
+    pronunciationTip: "Short 'a' sound: 'KACH' (/kætʃ/).",
+    collocations: ["catch the ball", "diving catch", "catch with two hands", "catch in mid-air"],
+    phrasalVerbs: [
+      {
+        phrase: "hold on to",
+        meaning: "secure ball safely without dropping it",
+        arabic: "يُمْسِكُ بِالكُرَةِ بِإِحْكَام",
+        example: "The outfielder held on to the ball after a diving catch.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Goalkeeping",
+        en: "The alert goalkeeper leaped high into the air to catch the dangerous corner kick.",
+        ar: "قَفَزَ حَارِسُ المَرْمَى اليَقِظُ عَالِيًا فِي الهَوَاءِ لِالْتِقَاطِ الرَّكْلَةِ الرُّكْنِيَّةِ الخَطِيرَةِ.",
+      },
+      {
+        context: "Baseball Fielding",
+        en: "The outfielder made an unbelievable diving catch on the warning track.",
+        ar: "قَامَ لَاعِبُ البَيْسْبُول بِالْتِقَاطِ الكُرَةِ بِارْتِمَاءَةٍ رَائِعَةٍ.",
+      },
+      {
+        context: "Football Reception",
+        en: "The receiver caught the touchdown pass cleanly with two hands in the end zone.",
+        ar: "الْتَقَطَ اللَّاعِبُ تَمْرِيرَةَ الفَوْزِ بِيَدَيْهِ بِإِحْكَامٍ فِي مِنْطَقَةِ الهَدَفِ.",
+      },
+    ],
+    exampleSentence:
+      "The alert goalkeeper leaped high into the air to catch the dangerous corner kick.",
+    exampleArabic:
+      "قَفَزَ حَارِسُ المَرْمَى اليَقِظُ عَالِيًا فِي الهَوَاءِ لِالْتِقَاطِ الرَّكْلَةِ الرُّكْنِيَّةِ الخَطِيرَةِ.",
+  },
+  dribble: {
+    id: "dribble",
+    arabic: "مُرَاوَغَةُ الكُرَة (التَّقَدُّمُ بِالكُرَةِ بِالقَدَمِ أَوِ التَّنْطِيطِ بِاليَد)",
+    partOfSpeech: "verb",
+    phonetic: "ˈdrɪbəl",
+    pronunciationTip: "Pronounce 'DRIB-ul' (/ˈdrɪb.əl/).",
+    collocations: ["dribble the ball", "dribble past defenders", "dribble with speed"],
+    phrasalVerbs: [
+      {
+        phrase: "dribble past",
+        meaning: "maneuver ball around opposing player deftly",
+        arabic: "يُرَاوِغُ المُدَافِع",
+        example: "He dribbled past two defenders with dazzling footwork.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Soccer Skill",
+        en: "The talented forward dribbled past three defenders before slipping the ball into the net.",
+        ar: "رَاوَغَ المُهَاجِمُ المَوْهُوبُ ثَلَاثَةَ مُدَافِعِينَ قَبْلَ إِسْكَانِ الكُرَةِ فِي الشَّبَكَةِ.",
+      },
+      {
+        context: "Basketball Control",
+        en: "In basketball, players must continuously dribble the ball against the hardwood floor while moving.",
+        ar: "فِي كُرَةِ السَّلَّةِ، يَجِبُ عَلَى اللَّاعِبِ تَنْطِيطُ الكُرَةِ بِاسْتِمْرَارٍ أثْنَاءَ الحَرَكَةِ.",
+      },
+      {
+        context: "Agility Practice",
+        en: "Athletes practiced dribbling through slalom cones with both left and right feet.",
+        ar: "تَدَرَّبَ اللَّاعِبُونَ عَلَى المُرَاوَغَةِ حَوْلَ المَخَارِيطِ بِالقَدَمَيْنِ اليُمْنَى وَاليُسْرَى.",
+      },
+    ],
+    exampleSentence:
+      "The talented forward dribbled past three defenders before slipping the ball into the net.",
+    exampleArabic:
+      "رَاوَغَ المُهَاجِمُ المَوْهُوبُ ثَلَاثَةَ مُدَافِعِينَ قَبْلَ إِسْكَانِ الكُرَةِ فِي الشَّبَكَةِ.",
+  },
+  doctor: {
+    id: "doctor",
+    arabic: "طَبِيب (طَبِيبٌ مُعَالِج)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdɒktər",
+    pronunciationTip: "Pronounce 'DOK-ter' (/ˈdɒk.tər/).",
+    collocations: ["see a doctor", "medical doctor", "family doctor", "consult a doctor"],
+    phrasalVerbs: [
+      {
+        phrase: "look after",
+        meaning: "provide medical care to patients",
+        arabic: "يَعْتَنِي بِالمَرِيض",
+        example: "The doctor looked after her recovering patients.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Medical Care",
+        en: "The family doctor examined the patient carefully and answered all questions.",
+        ar: "فَحَصَ طَبِيبُ الأُسْرَةِ المَرِيضَ بِعِنَايَةٍ وَأَجَابَ عَنْ جَمِيعِ الأَسْئِلَةِ.",
+      },
+      {
+        context: "Consultation",
+        en: "You should see a doctor if your high fever persists for more than two days.",
+        ar: "يَجِبُ عَلَيْكَ اسْتِشَارَةُ طَبِيبٍ إِذَا اسْتَمَرَّتِ الحُمَّى لِأَكْثَرَ مِنْ يَوْمَيْنِ.",
+      },
+      {
+        context: "Hospital Ward",
+        en: "Doctors and nurses conducted their morning rounds together across the ward.",
+        ar: "أَجْرَى الأَطِبَّاءُ وَالمُمَرِّضُونَ جَوْلَتَهُمُ الصَّبَاحِيَّةَ فِي جَنَاحِ المَسْتَشْفَى.",
+      },
+    ],
+    exampleSentence: "The family doctor examined the patient carefully and answered all questions.",
+    exampleArabic:
+      "فَحَصَ طَبِيبُ الأُسْرَةِ المَرِيضَ بِعِنَايَةٍ وَأَجَابَ عَنْ جَمِيعِ الأَسْئِلَةِ.",
+  },
+  nurse: {
+    id: "nurse",
+    arabic: "مُمَرِّضَة / مُمَرِّض (مُقَدِّمُ الرِّعَايَةِ الصِّحِّيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "nɜːrs",
+    pronunciationTip: "Pronounce 'NURS' (/nɜːrs/).",
+    collocations: ["registered nurse", "caring nurse", "nurse on duty", "triage nurse"],
+    phrasalVerbs: [
+      {
+        phrase: "check up on",
+        meaning: "monitor patient health vital signs regularly",
+        arabic: "يَتَفَقَّدُ حَالَةَ المَرِيض",
+        example: "The nurse checked up on the patient every hour.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Patient Care",
+        en: "The compassionate registered nurse administered medication and checked the patient's pulse.",
+        ar: "قَدَّمَتِ المُمَرِّضَةُ الحَنُونُ الدَّوَاءَ وَفَحَصَتْ نَبْضَ المَرِيضِ.",
+      },
+      {
+        context: "Hospital Shift",
+        en: "Dedicated nurses work around the clock to provide attentive round-the-clock care.",
+        ar: "يَعْمَلُ المُمَرِّضُونَ عَلَى مَدَارِ السَّاعَةِ لِتَقْدِيمِ الرِّعَايَةِ الشَّامِلَةِ.",
+      },
+      {
+        context: "First Aid",
+        en: "The triage nurse dressed the child's knee scrape with gentle care.",
+        ar: "ضَمَّدَتْ مُمَرِّضَةُ الطَّوَارِئِ جُرْحَ رُكْبَةِ الطِّفْلِ بِرِفْقٍ وَعِنَايَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "The compassionate registered nurse administered medication and checked the patient's pulse.",
+    exampleArabic: "قَدَّمَتِ المُمَرِّضَةُ الحَنُونُ الدَّوَاءَ وَفَحَصَتْ نَبْضَ المَرِيضِ.",
+  },
+  surgeon: {
+    id: "surgeon",
+    arabic: "جَرَّاح (طَبِيبٌ جِرَاحِيٌّ مُتَخَصِّص)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsɜːrdʒən",
+    pronunciationTip: "Pronounce 'SUR-jun' (/ˈsɜːr.dʒən/).",
+    collocations: ["chief surgeon", "orthopedic surgeon", "cardiac surgeon", "skilled surgeon"],
+    phrasalVerbs: [
+      {
+        phrase: "operate on",
+        meaning: "perform medical surgical procedure",
+        arabic: "يُجْرِي عَمَلِيَّةً جِرَاحِيَّة",
+        example: "The surgeon operated on the patient's fractured bone.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Operating Room",
+        en: "The chief cardiac surgeon led the five-hour heart valve repair operation.",
+        ar: "قَادَ كَبِيرُ جَرَّاحِي القَلْبِ عَمَلِيَّةَ إِصْلَاحِ صِمَامِ القَلْبِ لِمُدَّةِ ٥ سَاعَاتٍ.",
+      },
+      {
+        context: "Precision",
+        en: "Surgeons use micro-instruments and high-magnification cameras during delicate procedures.",
+        ar: "يَسْتَخْدِمُ الجَرَّاحُونَ أَدَوَاتٍ دَقِيقَةً وَكَامِيرَاتٍ مُكَبِّرَةً فِي الجِرَاحَاتِ.",
+      },
+      {
+        context: "Recovery",
+        en: "The orthopedic surgeon met with the patient's family to confirm the surgery was successful.",
+        ar: "الْتَقَى جَرَّاحُ العِظَامِ بِعَائِلَةِ المَرِيضِ لِتَأْكِيدِ نَجَاحِ الجِرَاحَةِ.",
+      },
+    ],
+    exampleSentence: "The chief cardiac surgeon led the five-hour heart valve repair operation.",
+    exampleArabic:
+      "قَادَ كَبِيرُ جَرَّاحِي القَلْبِ عَمَلِيَّةَ إِصْلَاحِ صِمَامِ القَلْبِ لِمُدَّةِ ٥ سَاعَاتٍ.",
+  },
+  paramedic: {
+    id: "paramedic",
+    arabic: "مُسْعِف (عَامِلُ الإِسْعَافِ وَالطَّوَارِئ)",
+    partOfSpeech: "noun",
+    phonetic: "ˌpærəˈmɛdɪk",
+    pronunciationTip: "Pronounce 'pa-ruh-MED-ik'.",
+    collocations: ["emergency paramedic", "trained paramedic", "call the paramedics"],
+    phrasalVerbs: [
+      {
+        phrase: "rush to",
+        meaning: "hurry rapidly to render emergency aid",
+        arabic: "يُهْرَعُ لِإِسْعَاف",
+        example: "Paramedics rushed to the scene of the accident.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Emergency Response",
+        en: "Trained paramedics provided emergency oxygen and stabilized the injured driver.",
+        ar: "قَدَّمَ المُسْعِفُونَ الأُكْسُجِينَ الطَّارِئَ وَثَبَّتُوا حَالَةَ السَّائِقِ المُصَابِ.",
+      },
+      {
+        context: "Ambulance Care",
+        en: "Paramedics maintained constant radio communication with the trauma center while en route.",
+        ar: "تَوَاصَلَ المُسْعِفُونَ لَاسِلْكِيًّا مَعَ مَرْكَزِ الطَّوَارِئِ أَثْنَاءَ الطَّرِيقِ.",
+      },
+      {
+        context: "Life Support",
+        en: "The swift response of the emergency paramedics saved a life during the cardiac event.",
+        ar: "أَنْقَذَتِ الِاسْتِجَابَةُ السَّرِيعَةُ لِلْمُسْعِفِينَ حَيَاةَ المَرِيضِ أَثْنَاءَ النَّوْبَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Trained paramedics provided emergency oxygen and stabilized the injured driver.",
+    exampleArabic:
+      "قَدَّمَ المُسْعِفُونَ الأُكْسُجِينَ الطَّارِئَ وَثَبَّتُوا حَالَةَ السَّائِقِ المُصَابِ.",
+  },
+  receptionist: {
+    id: "receptionist",
+    arabic: "مُوَظَّفُ الِاسْتِقْبَال (مَسْؤُولُ اسْتِقْبَالِ المَرْضَى)",
+    partOfSpeech: "noun",
+    phonetic: "rɪˈsɛpʃənɪst",
+    pronunciationTip: "Pronounce 'ri-SEP-shun-ist'.",
+    collocations: ["hospital receptionist", "clinic receptionist", "friendly receptionist"],
+    phrasalVerbs: [
+      {
+        phrase: "check in",
+        meaning: "register patient arrival in hospital database",
+        arabic: "يُسَجِّلُ دُخُولَ المَرِيض",
+        example: "The receptionist checked in the arriving patient.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Hospital Entry",
+        en: "The hospital receptionist welcomed patients, verified insurance cards, and scheduled appointments.",
+        ar: "رَحَّبَ مُوَظَّفُ اسْتِقْبَالِ المُسْتَشْفَى بِالمَرْضَى وَتَحَقَّقَ مِنَ التَّأْمِينِ.",
+      },
+      {
+        context: "Guidance",
+        en: "The receptionist directed family members toward the second-floor pediatric waiting area.",
+        ar: "أَرْشَدَ مُوَظَّفُ الِاسْتِقْبَالِ العَائِلَةَ نَحْوَ اسْتِرَاحَةِ طِبِّ الأَطْفَالِ بِالدَّوْرِ الثَّانِي.",
+      },
+      {
+        context: "Phone Desk",
+        en: "The medical receptionist answered patient phone inquiries regarding clinic visiting hours.",
+        ar: "أَجَابَ مُوَظَّفُ الِاسْتِقْبَالِ عَنِ اسْتِفْسَارَاتِ سَاعَاتِ الزِّيَارَةِ فِي العِيَادَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The hospital receptionist welcomed patients, verified insurance cards, and scheduled appointments.",
+    exampleArabic:
+      "رَحَّبَ مُوَظَّفُ اسْتِقْبَالِ المُسْتَشْفَى بِالمَرْضَى وَتَحَقَّقَ مِنَ التَّأْمِينِ.",
+  },
+  pharmacist: {
+    id: "pharmacist",
+    arabic: "صَيْدَلِيّ (خَبِيرُ الأَدْوِيَةِ وَالعِلَاج)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfɑːrməsɪst",
+    pronunciationTip: "Pronounce 'FAR-muh-sist' (/ˈfɑːr.mə.sɪst/).",
+    collocations: ["licensed pharmacist", "consult the pharmacist", "hospital pharmacist"],
+    phrasalVerbs: [
+      {
+        phrase: "dispense to",
+        meaning: "provide prescribed medicines with dosage instructions",
+        arabic: "يَصْرِفُ الدَّوَاءَ لِلْمَرِيض",
+        example: "The pharmacist dispensed the antibiotics to the patient.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Medication Guidance",
+        en: "The licensed pharmacist explained how to take the prescribed medication with meals.",
+        ar: "شَرَحَ الصَّيْدَلِيُّ المُرَخَّصُ كَيْفِيَّةَ تَنَاوُلِ الدَّوَاءِ المَوْصُوفِ مَعَ الوَجَبَاتِ.",
+      },
+      {
+        context: "Safety Check",
+        en: "Hospital pharmacists review prescriptions carefully to verify dosages and drug interactions.",
+        ar: "يُرَاجِعُ صَيَادِلَةُ المُسْتَشْفَى الوَصَفَاتِ لِضَمَانِ عَدَمِ تَعَارُضِ الأَدْوِيَةِ.",
+      },
+      {
+        context: "Pharmacy Advice",
+        en: "Patients can ask the friendly neighborhood pharmacist for guidance on over-the-counter remedies.",
+        ar: "يُمْكِنُ لِلْمَرْضَى اسْتِشَارَةُ الصَّيْدَلِيِّ بِشَأْنِ أَدْوِيَةِ الزُّكَامِ وَالصُّدَاعِ.",
+      },
+    ],
+    exampleSentence:
+      "The licensed pharmacist explained how to take the prescribed medication with meals.",
+    exampleArabic:
+      "شَرَحَ الصَّيْدَلِيُّ المُرَخَّصُ كَيْفِيَّةَ تَنَاوُلِ الدَّوَاءِ المَوْصُوفِ مَعَ الوَجَبَاتِ.",
+  },
+  anesthesiologist: {
+    id: "anesthesiologist",
+    arabic: "طَبِيبُ التَّخْدِير (مُتَخَصِّصُ التَّخْدِيرِ فِي العَمَلِيَّات)",
+    partOfSpeech: "noun",
+    phonetic: "ˌænəsˌθiːziˈɒlədʒɪst",
+    pronunciationTip: "Pronounce 'an-is-thee-zee-OL-uh-jist'.",
+    collocations: ["consult the anesthesiologist", "skilled anesthesiologist", "check carefully"],
+    phrasalVerbs: [
+      {
+        phrase: "put under",
+        meaning: "induce temporary medically controlled sleep",
+        arabic: "يُخَدِّرُ قَبْلَ الجِرَاحَة",
+        example: "The anesthesiologist safely put the patient under.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Surgical Care",
+        en: "The anesthesiologist monitored heart rate, oxygen levels, and breathing throughout surgery.",
+        ar: "رَاقَبَ طَبِيبُ التَّخْدِيرِ نَبْضَ القَلْبِ وَالأُكْسُجِينَ وَالتَّنَفُّسَ خِلَالَ الجِرَاحَةِ.",
+      },
+      {
+        context: "Pre-Op Consultation",
+        en: "Before the operation, the anesthesiologist met with the patient to discuss sedation options.",
+        ar: "قَبْلَ العَمَلِيَّةِ، نَاقَشَ طَبِيبُ التَّخْدِيرِ مَعَ المَرِيضِ خِيَارَاتِ التَّسْكِينِ.",
+      },
+      {
+        context: "Pain Relief",
+        en: "Anesthesiologists administer epidurals to provide effective pain relief during childbirth.",
+        ar: "يُعْطِي أَطِبَّاءُ التَّخْدِيرِ حُقَنَ الظَّهْرِ لِتَسْكِينِ الآلَامِ أَثْنَاءَ الوِلَادَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The anesthesiologist monitored heart rate, oxygen levels, and breathing throughout surgery.",
+    exampleArabic:
+      "رَاقَبَ طَبِيبُ التَّخْدِيرِ نَبْضَ القَلْبِ وَالأُكْسُجِينَ وَالتَّنَفُّسَ خِلَالَ الجِرَاحَةِ.",
+  },
+  radiologist: {
+    id: "radiologist",
+    arabic: "طَبِيبُ الأَشِعَّة (مُتَخَصِّصُ تَشْخِيصِ الصُّوَرِ الإِشْعَاعِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˌreɪdiˈɒlədʒɪst",
+    pronunciationTip: "Pronounce 'ray-dee-OL-uh-jist'.",
+    collocations: ["consult a radiologist", "radiologist report", "expert radiologist"],
+    phrasalVerbs: [
+      {
+        phrase: "read over",
+        meaning: "analyze medical scans and X-ray images",
+        arabic: "يَقْرَأُ صُوَرَ الأَشِعَّة",
+        example: "The radiologist read over the patient's MRI scan.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Diagnostic Imaging",
+        en: "The radiologist examined the patient's chest X-ray and confirmed there was no pneumonia.",
+        ar: "فَحَصَ طَبِيبُ الأَشِعَّةِ صُورَةَ الصَّدْرِ وَأَكَّدَ عَدَمَ وُجُودِ الْتِهَابٍ رِئَوِيٍّ.",
+      },
+      {
+        context: "Scan Analysis",
+        en: "Using high-resolution monitors, the radiologist identified a hairline bone fracture.",
+        ar: "حَدَّدَ طَبِيبُ الأَشِعَّةِ كَسْرًا شَعْرِيًّا دَقِيقًا فِي العَظْمِ عَبْرَ الشَّاشَةِ.",
+      },
+      {
+        context: "Reporting",
+        en: "The radiologist sent a detailed imaging report directly to the attending physician.",
+        ar: "أَرْسَلَ طَبِيبُ الأَشِعَّةِ تَقْرِيرًا تَفْصِيلِيًّا إِلَى الطَّبِيبِ المُعَالِجِ.",
+      },
+    ],
+    exampleSentence:
+      "The radiologist examined the patient's chest X-ray and confirmed there was no pneumonia.",
+    exampleArabic:
+      "فَحَصَ طَبِيبُ الأَشِعَّةِ صُورَةَ الصَّدْرِ وَأَكَّدَ عَدَمَ وُجُودِ الْتِهَابٍ رِئَوِيٍّ.",
+  },
+  pediatrician: {
+    id: "pediatrician",
+    arabic: "طَبِيبُ الأَطْفَال (مُتَخَصِّصُ صِحَّةِ وَرِعَايَةِ الأَطْفَال)",
+    partOfSpeech: "noun",
+    phonetic: "ˌpiːdiəˈtrɪʃən",
+    pronunciationTip: "Pronounce 'pee-dee-uh-TRISH-un'.",
+    collocations: ["see a pediatrician", "trusted pediatrician", "pediatrician checkup"],
+    phrasalVerbs: [
+      {
+        phrase: "look after",
+        meaning: "care for young infants and growing children",
+        arabic: "يَرْعَى صِحَّةَ الأَطْفَال",
+        example: "The pediatrician looked after the newborn baby.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Child Health",
+        en: "The kind pediatrician weighed the baby and administered routine childhood vaccinations.",
+        ar: "قَاسَ طَبِيبُ الأَطْفَالِ وَزْنَ الرَّضِيعِ وَأَعْطَاهُ التَّطْعِيمَاتِ الرَّسْمِيَّةَ.",
+      },
+      {
+        context: "Development",
+        en: "Parents visit the pediatrician every year to track their child's physical growth and milestones.",
+        ar: "يَزُورُ الآبَاءُ طَبِيبَ الأَطْفَالِ سَنَوِيًّا لِمُتَابَعَةِ نُمُوِّ الطِّفْلِ.",
+      },
+      {
+        context: "Clinic Setting",
+        en: "The pediatrician decorated the examination room with cheerful animal murals to comfort children.",
+        ar: "زَيَّنَ طَبِيبُ الأَطْفَالِ غُرْفَةَ الفَحْصِ بِرُسُومٍ كَرْتُونِيَّةٍ لِطَمْأَنَةِ الصِّغَارِ.",
+      },
+    ],
+    exampleSentence:
+      "The kind pediatrician weighed the baby and administered routine childhood vaccinations.",
+    exampleArabic:
+      "قَاسَ طَبِيبُ الأَطْفَالِ وَزْنَ الرَّضِيعِ وَأَعْطَاهُ التَّطْعِيمَاتِ الرَّسْمِيَّةَ.",
+  },
+  psychiatrist: {
+    id: "psychiatrist",
+    arabic: "طَبِيبٌ نَفْسِيّ (مُتَخَصِّصُ الصِّحَّةِ النَّفْسِيَّةِ وَالعَقْلِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "saɪˈkaɪətrɪst",
+    pronunciationTip: "Silent 'p': 'sy-KY-uh-trist'.",
+    collocations: ["consult a psychiatrist", "licensed psychiatrist", "child psychiatrist"],
+    phrasalVerbs: [
+      {
+        phrase: "talk through",
+        meaning: "discuss emotional challenges and therapy",
+        arabic: "يُنَاقِشُ الحَالَةَ النَّفْسِيَّة",
+        example: "The psychiatrist talked through coping strategies with him.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Mental Wellbeing",
+        en: "The licensed psychiatrist helped the patient manage chronic anxiety with counseling and medication.",
+        ar: "سَاعَدَ الطَّبِيبُ النَّفْسِيُّ المَرِيضَ فِي التَّغَلُّبِ عَلَى القَلَقِ بِالعِلَاجِ وَالدَّوَاءِ.",
+      },
+      {
+        context: "Compassion",
+        en: "A psychiatrist provides a safe, confidential environment for patients to discuss emotional distress.",
+        ar: "يُوَفِّرُ الطَّبِيبُ النَّفْسِيُّ بِيئَةً آمِنَةً لِمُنَاقَشَةِ الضُّغُوطَاتِ النَّفْسِيَّةِ.",
+      },
+      {
+        context: "Healthcare",
+        en: "Mental health professionals and psychiatrists collaborate to support community wellness.",
+        ar: "يَتَعَاوَنُ الأَطِبَّاءُ النَّفْسِيُّونَ لِدَعْمِ الصِّحَّةِ النَّفْسِيَّةِ فِي المُجْتَمَعِ.",
+      },
+    ],
+    exampleSentence:
+      "The licensed psychiatrist helped the patient manage chronic anxiety with counseling and medication.",
+    exampleArabic:
+      "سَاعَدَ الطَّبِيبُ النَّفْسِيُّ المَرِيضَ فِي التَّغَلُّبِ عَلَى القَلَقِ بِالعِلَاجِ وَالدَّوَاءِ.",
+  },
+  midwife: {
+    id: "midwife",
+    arabic: "قَابِلَة (مُوَلِّدَة / مُتَخَصِّصَةُ تَوْلِيدِ النِّسَاء)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmɪdwaɪf",
+    pronunciationTip: "Pronounce 'MID-wyf' (/ˈmɪd.waɪf/).",
+    collocations: ["certified midwife", "hospital midwife", "call the midwife"],
+    phrasalVerbs: [
+      {
+        phrase: "help deliver",
+        meaning: "assist mother during natural childbirth",
+        arabic: "تُسَاعِدُ فِي تَوْلِيدِ الطِّفْل",
+        example: "The gentle midwife helped deliver the healthy baby.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Childbirth Care",
+        en: "The experienced midwife supported the mother throughout labor and delivered a healthy baby girl.",
+        ar: "سَانَدَتِ القَابِلَةُ الخَبِيرَةُ الأُمَّ خِلَالَ المَخَاضِ وَوَلَّدَتْ طِفْلَةً سَلِيمَةً.",
+      },
+      {
+        context: "Prenatal Support",
+        en: "Midwives provide compassionate prenatal checkups, nutritional advice, and birth education.",
+        ar: "تُقَدِّمُ القَابِلَاتُ فُحُوصَاتِ الحَمْلِ وَنَصَائِحَ التَّغْذِيَّةِ لِلأُمَّهَاتِ.",
+      },
+      {
+        context: "Maternity Ward",
+        en: "The hospital maternity ward employs skilled midwives who assist families around the clock.",
+        ar: "يَضُمُّ جَنَاحُ الوِلَادَةِ قَابِلَاتٍ مَاهِرَاتٍ يُسَاعِدْنَ الأُسَرَ عَلَى مَدَارِ السَّاعَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The experienced midwife supported the mother throughout labor and delivered a healthy baby girl.",
+    exampleArabic:
+      "سَانَدَتِ القَابِلَةُ الخَبِيرَةُ الأُمَّ خِلَالَ المَخَاضِ وَوَلَّدَتْ طِفْلَةً سَلِيمَةً.",
+  },
+  orderly: {
+    id: "orderly",
+    arabic: "عَامِلُ نَقْلِ المَرْضَى (مُسَاعِدُ الخِدْمَاتِ الصِّحِّيَّةِ فِي المُسْتَشْفَى)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɔːrdərli",
+    pronunciationTip: "Pronounce 'OR-der-lee' (/ˈɔːr.dər.li/).",
+    collocations: ["hospital orderly", "wheelchair orderly", "dedicated orderly"],
+    phrasalVerbs: [
+      {
+        phrase: "wheel along",
+        meaning: "transport bedridden patient carefully",
+        arabic: "يَنْقُلُ المَرِيضَ عَلَى الكُرْسِيّ",
+        example: "The orderly wheeled along the patient to the X-ray lab.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Patient Transport",
+        en: "The hospital orderly wheeled the patient gently from the recovery room to the general ward.",
+        ar: "نَقَلَ عَامِلُ المُسْتَشْفَى المَرِيضَ بِلُطْفٍ عَلَى الكُرْسِيِّ إِلَى الجَنَاحِ العَامِّ.",
+      },
+      {
+        context: "Assistance",
+        en: "Orderlies assist nursing staff by restocking supplies and moving heavy medical apparatus.",
+        ar: "يُسَاعِدُ عُمَّالُ المَسْتَشْفَى فِي نَقْلِ الأَجْهِزَةِ وَتَرْتِيبِ الأَدَوَاتِ الطِّبِّيَّةِ.",
+      },
+      {
+        context: "Sanitation & Care",
+        en: "A dependable orderly ensures corridors remain clear and patient transport beds are sanitized.",
+        ar: "يَضْمَنُ عَامِلُ النَّقْلِ تَعْقِيمَ أَسِرَّةِ النَّقْلِ وَخُلُوَّ المَمَرَّاتِ مِنَ العَوَائِقِ.",
+      },
+    ],
+    exampleSentence:
+      "The hospital orderly wheeled the patient gently from the recovery room to the general ward.",
+    exampleArabic:
+      "نَقَلَ عَامِلُ المُسْتَشْفَى المَرِيضَ بِلُطْفٍ عَلَى الكُرْسِيِّ إِلَى الجَنَاحِ العَامِّ.",
+  },
+  "emergency-room": {
+    id: "emergency-room",
+    arabic: "قِسْمُ الطَّوَارِئ (غُرْفَةُ الإِسْعَافِ وَالحَالَاتِ الحَرِجَة)",
+    partOfSpeech: "noun",
+    phonetic: "ɪˈmɜːrdʒənsi ruːm",
+    pronunciationTip: "Pronounce 'i-MUR-jun-see room'.",
+    collocations: ["go to the emergency room", "busy emergency room", "emergency room staff"],
+    phrasalVerbs: [
+      {
+        phrase: "rush into",
+        meaning: "enter urgent care center with immediate need",
+        arabic: "يُهْرَعُ إِلَى قِسْمِ الطَّوَارِئ",
+        example: "The ambulance rushed into the emergency room bay.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Critical Care",
+        en: "The ambulance brought the injured patient straight to the hospital emergency room.",
+        ar: "نَقَلَتْ سَيَّارَةُ الإِسْعَافِ المَرِيضَ المُصَابَ مُبَاشَرَةً إِلَى قِسْمِ الطَّوَارِئِ.",
+      },
+      {
+        context: "Triage",
+        en: "Doctors and nurses in the emergency room evaluate acute cases according to medical urgency.",
+        ar: "يُقَيِّمُ أَطِبَّاءُ وَمُمَرِّضُو الطَّوَارِئِ الحَالَاتِ حَسَبَ دَرَجَةِ الخُطُورَةِ الطِّبِّيَّةِ.",
+      },
+      {
+        context: "24/7 Service",
+        en: "The hospital emergency room operates twenty-four hours a day, seven days a week.",
+        ar: "يَعْمَلُ قِسْمُ الطَّوَارِئِ فِي المُسْتَشْفَى عَلَى مَدَارِ ٢٤ سَاعَةً يَوْمِيًّا.",
+      },
+    ],
+    exampleSentence:
+      "The ambulance brought the injured patient straight to the hospital emergency room.",
+    exampleArabic:
+      "نَقَلَتْ سَيَّارَةُ الإِسْعَافِ المَرِيضَ المُصَابَ مُبَاشَرَةً إِلَى قِسْمِ الطَّوَارِئِ.",
+  },
+  "waiting-room": {
+    id: "waiting-room",
+    arabic: "قَاعَةُ الِانْتِظَار (اسْتِرَاحَةُ المَرْضَى وَالمُرَافِقِين)",
+    partOfSpeech: "noun",
+    phonetic: "ˈweɪtɪŋ ruːm",
+    pronunciationTip: "Pronounce 'WAY-ting room'.",
+    collocations: ["sit in the waiting room", "clinic waiting room", "crowded waiting room"],
+    phrasalVerbs: [
+      {
+        phrase: "wait in",
+        meaning: "sit patiently until name is called",
+        arabic: "يَنْتَظِرُ فِي القَاعَة",
+        example: "Patients waited in the quiet clinic waiting room.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Patient Reception",
+        en: "Patients sat quietly in the clinic waiting room reading magazines until called.",
+        ar: "جَلَسَ المَرْضَى فِي قَاعَةِ الِانْتِظَارِ يَقْرَؤُونَ المَجَلَّاتِ حَتَّى مُنَادَاةِ أَسْمَائِهِمْ.",
+      },
+      {
+        context: "Comfort",
+        en: "The hospital updated its waiting room with comfortable armchairs and a water dispenser.",
+        ar: "حَدَّثَ المُسْتَشْفَى قَاعَةَ الِانْتِظَارِ بِكَرَاسِيَ مُرِيحَةٍ وَبَرَّادِ مَاءٍ.",
+      },
+      {
+        context: "Calling Names",
+        en: "The receptionist stepped into the waiting room to call the next patient in line.",
+        ar: "خَرَجَ مُوَظَّفُ الِاسْتِقْبَالِ إِلَى قَاعَةِ الِانْتِظَارِ لِمُنَادَاةِ المَرِيضِ التَّالِي.",
+      },
+    ],
+    exampleSentence:
+      "Patients sat quietly in the clinic waiting room reading magazines until called.",
+    exampleArabic:
+      "جَلَسَ المَرْضَى فِي قَاعَةِ الِانْتِظَارِ يَقْرَؤُونَ المَجَلَّاتِ حَتَّى مُنَادَاةِ أَسْمَائِهِمْ.",
+  },
+  "operating-room": {
+    id: "operating-room",
+    arabic: "غُرْفَةُ العَمَلِيَّات (صَالَةُ الجِرَاحَةِ المُعَقَّمَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɒpəreɪtɪŋ ruːm",
+    pronunciationTip: "Pronounce 'OP-er-ay-ting room'.",
+    collocations: ["sterile operating room", "enter the operating room", "operating room lights"],
+    phrasalVerbs: [
+      {
+        phrase: "scrub into",
+        meaning: "sanitize hands rigorously before entering surgical theater",
+        arabic: "يُعَقِّمُ يَدَيْهِ لِدُخُولِ العَمَلِيَّات",
+        example: "The surgical team scrubbed into the operating room.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sterile Environment",
+        en: "The sterile operating room is equipped with bright overhead lights and vital signs monitors.",
+        ar: "غُرْفَةُ العَمَلِيَّاتِ المُعَقَّمَةُ مُزَوَّدَةٌ بِإِضَاءَةٍ جِرَاحِيَّةٍ وَشَاشَاتِ مُرَاقَبَةٍ.",
+      },
+      {
+        context: "Surgical Procedure",
+        en: "Surgeons and scrub nurses wore sterile gowns and masks inside the operating room.",
+        ar: "ارْتَدَى الجَرَّاحُونَ وَالمُمَرِّضُونَ مَلَابِسَ مُعَقَّمَةً دَاخِلَ غُرْفَةِ العَمَلِيَّاتِ.",
+      },
+      {
+        context: "Air Filtration",
+        en: "Advanced laminar air filters maintain ultra-clean sterile conditions in operating rooms.",
+        ar: "تُحَافِظُ فَلَاتِرُ الهَوَاءِ المُتَطَوِّرَةُ عَلَى تَعْقِيمِ غُرَفِ العَمَلِيَّاتِ.",
+      },
+    ],
+    exampleSentence:
+      "The sterile operating room is equipped with bright overhead lights and vital signs monitors.",
+    exampleArabic:
+      "غُرْفَةُ العَمَلِيَّاتِ المُعَقَّمَةُ مُزَوَّدَةٌ بِإِضَاءَةٍ جِرَاحِيَّةٍ وَشَاشَاتِ مُرَاقَبَةٍ.",
+  },
+  "recovery-room": {
+    id: "recovery-room",
+    arabic: "غُرْفَةُ الإِفَاقَة (غُرْفَةُ النَّقَاهَةِ بَعْدَ الجِرَاحَة)",
+    partOfSpeech: "noun",
+    phonetic: "rɪˈkʌvəri ruːm",
+    pronunciationTip: "Pronounce 'ri-KUV-er-ee room'.",
+    collocations: ["post-op recovery room", "rest in the recovery room", "nurse in recovery room"],
+    phrasalVerbs: [
+      {
+        phrase: "wake up in",
+        meaning: "regain full consciousness after general anesthesia",
+        arabic: "يَسْتَيْقِظُ فِي غُرْفَةِ الإِفَاقَة",
+        example: "The patient woke up safely in the recovery room.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Post-Surgery",
+        en: "Patients rest comfortably in the recovery room under close nursing observation after surgery.",
+        ar: "يَسْتَرِيحُ المَرْضَى فِي غُرْفَةِ الإِفَاقَةِ تَحْتَ مُرَاقَبَةِ التَّمْرِيضِ بَعْدَ الجِرَاحَةِ.",
+      },
+      {
+        context: "Vital Signs",
+        en: "The recovery room nurse checks blood pressure, temperature, and pain levels frequently.",
+        ar: "يَفْحَصُ مُمَرِّضُ الإِفَاقَةِ ضَغْطَ الدَّمِ وَالحَرَارَةَ وَمُسْتَوَى الأَلَمِ بِانْتِظَامٍ.",
+      },
+      {
+        context: "Waking Up",
+        en: "He woke up feeling drowsy but comfortable in the quiet, dim recovery room.",
+        ar: "اسْتَيْقَظَ شَاعِرًا بِالنُّعَاسِ وَالرَّاحَةِ فِي غُرْفَةِ الإِفَاقَةِ الهَادِئَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Patients rest comfortably in the recovery room under close nursing observation after surgery.",
+    exampleArabic:
+      "يَسْتَرِيحُ المَرْضَى فِي غُرْفَةِ الإِفَاقَةِ تَحْتَ مُرَاقَبَةِ التَّمْرِيضِ بَعْدَ الجِرَاحَةِ.",
+  },
+  "patient-room": {
+    id: "patient-room",
+    arabic: "غُرْفَةُ المَرِيض (غُرْفَةُ التَّنْوِيمِ فِي المُسْتَشْفَى)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpeɪʃənt ruːm",
+    pronunciationTip: "Pronounce 'PAY-shunt room'.",
+    collocations: ["private patient room", "stay in a patient room", "hospital patient room"],
+    phrasalVerbs: [
+      {
+        phrase: "stay in",
+        meaning: "reside as an admitted inpatient",
+        arabic: "يَمْكُثُ فِي غُرْفَةِ المَرِيض",
+        example: "She stayed in a sunny patient room for three days.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Inpatient Stay",
+        en: "The private patient room features an adjustable hospital bed, private bathroom, and television.",
+        ar: "تَضُمُّ غُرْفَةُ المَرِيضِ الخَاصَّةُ سَرِيرًا مُتَحَرِّكًا وَحَمَّامًا وَتِلْفَازًا.",
+      },
+      {
+        context: "Visiting",
+        en: "Family members placed fresh flowers on the bedside table in the patient room.",
+        ar: "وَضَعَ أَفْرَادُ العَائِلَةِ زُهُورًا طَازَجَةً عَلَى طَاوِلَةِ السَّرِيرِ فِي غُرْفَةِ المَرِيضِ.",
+      },
+      {
+        context: "Call Button",
+        en: "Each patient room has an emergency nurse call button within easy reach of the bed.",
+        ar: "تَحْتَوِي كُلُّ غُرْفَةِ مَرِيضٍ عَلَى زِرِّ اسْتِدْعَاءِ المُمَرِّضِ بِجِوَارِ السَّرِيرِ.",
+      },
+    ],
+    exampleSentence:
+      "The private patient room features an adjustable hospital bed, private bathroom, and television.",
+    exampleArabic:
+      "تَضُمُّ غُرْفَةُ المَرِيضِ الخَاصَّةُ سَرِيرًا مُتَحَرِّكًا وَحَمَّامًا وَتِلْفَازًا.",
+  },
+  "intensive-care-unit": {
+    id: "intensive-care-unit",
+    arabic: "وَحْدَةُ العِنَايَةِ المُرَكَّزَة (قِسْمُ الرِّعَايَةِ الفَائِقَة)",
+    partOfSpeech: "noun",
+    phonetic: "ɪnˈtɛnsɪv kɛər ˈjuːnɪt",
+    pronunciationTip: "Pronounce 'in-TEN-siv kair YOO-nit'.",
+    collocations: [
+      "admit to intensive care unit",
+      "intensive care unit staff",
+      "cardiac intensive care unit",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "monitor around the clock",
+        meaning: "observe critical patients with continuous electronic telemetry",
+        arabic: "يُرَاقِبُ عَلَى مَدَارِ السَّاعَة",
+        example: "Doctors monitored the critical patient in the ICU.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Critical Monitoring",
+        en: "Patients requiring continuous life-support systems are cared for in the intensive care unit.",
+        ar: "يَتَلَقَّى المَرْضَى الذِينَ يَحْتَاجُونَ لِأَجْهِزَةِ التَّنَفُّسِ الرِّعَايَةَ فِي العِنَايَةِ المُرَكَّزَةِ.",
+      },
+      {
+        context: "Specialized Team",
+        en: "The intensive care unit features a dedicated one-to-one nurse-to-patient care ratio.",
+        ar: "تَتَمَيَّزُ وَحْدَةُ العِنَايَةِ المُرَكَّزَةِ بِمُمَرِّضٍ مُخَصَّصٍ لِكُلِّ مَرِيضٍ.",
+      },
+      {
+        context: "Advanced Tech",
+        en: "Advanced heart monitors and ventilators beep softly throughout the intensive care unit.",
+        ar: "تُصْدِرُ أَجْهِزَةُ مُرَاقَبَةِ القَلْبِ وَالتَّنَفُّسِ صَوْتًا هَادِئًا فِي العِنَايَةِ المُرَكَّزَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Patients requiring continuous life-support systems are cared for in the intensive care unit.",
+    exampleArabic:
+      "يَتَلَقَّى المَرْضَى الذِينَ يَحْتَاجُونَ لِأَجْهِزَةِ التَّنَفُّسِ الرِّعَايَةَ فِي العِنَايَةِ المُرَكَّزَةِ.",
+  },
+  "maternity-ward": {
+    id: "maternity-ward",
+    arabic: "جَنَاحُ الوِلَادَة (قِسْمُ رِعَايَةِ الأُمَّهَاتِ وَالمَوَالِيد)",
+    partOfSpeech: "noun",
+    phonetic: "məˈtɜːrnɪti wɔːrd",
+    pronunciationTip: "Pronounce 'muh-TUR-ni-tee word'.",
+    collocations: ["maternity ward staff", "visit the maternity ward", "hospital maternity ward"],
+    phrasalVerbs: [
+      {
+        phrase: "welcome into",
+        meaning: "bring new life into hospital nursery",
+        arabic: "يَسْتَقْبِلُ المَوَالِيدَ فِي جَنَاحِ الوِلَادَة",
+        example: "The family welcomed a new baby in the maternity ward.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Newborn Care",
+        en: "The hospital maternity ward is designed to ensure comfort and bonding for new parents and babies.",
+        ar: "صُمِّمَ جَنَاحُ الوِلَادَةِ لِتَوْفِيرِ الرَّاحَةِ وَالتَّرَابُطِ لِلأُمَّهَاتِ وَالمَوَالِيدِ.",
+      },
+      {
+        context: "Family Joy",
+        en: "Grandparents arrived at the maternity ward with colorful balloons to meet the newborn.",
+        ar: "وَصَلَ الأَجْدَادُ إِلَى جَنَاحِ الوِلَادَةِ حَامِلِينَ بَالُونَاتٍ لِرُؤْيَةِ الحَفِيدِ.",
+      },
+      {
+        context: "Specialized Staff",
+        en: "Obstetricians and pediatric nurses provide attentive care across the maternity ward.",
+        ar: "يُقَدِّمُ أَطِبَّاءُ النِّسَاءِ وَمُمَرِّضُو الأَطْفَالِ رِعَايَةً فَائِقَةً فِي جَنَاحِ الوِلَادَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The hospital maternity ward is designed to ensure comfort and bonding for new parents and babies.",
+    exampleArabic:
+      "صُمِّمَ جَنَاحُ الوِلَادَةِ لِتَوْفِيرِ الرَّاحَةِ وَالتَّرَابُطِ لِلأُمَّهَاتِ وَالمَوَالِيدِ.",
+  },
+  nursery: {
+    id: "nursery",
+    arabic: "حَضَانَةُ الأَطْفَالِ الرُّضَّع (قِسْمُ رِعَايَةِ حَدِيثِي الوِلَادَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈnɜːrsəri",
+    pronunciationTip: "Pronounce 'NUR-suh-ree' (/ˈnɜːr.sə.ri/).",
+    collocations: ["hospital nursery", "newborn nursery", "baby in the nursery"],
+    phrasalVerbs: [
+      {
+        phrase: "sleep safely in",
+        meaning: "rest comfortably under pediatric supervision",
+        arabic: "يَنَامُ بِأَمَانٍ فِي الحَضَانَة",
+        example: "The newborn slept peacefully in the hospital nursery.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Infant Care",
+        en: "Newborn infants slept soundly in clear acrylic bassinets inside the temperature-controlled nursery.",
+        ar: "نَامَ الأَطْفَالُ حَدِيثُو الوِلَادَةِ فِي أَسِرَّةٍ شَفَّافَةٍ دَاخِلَ حَضَانَةِ المُسْتَشْفَى.",
+      },
+      {
+        context: "Pediatric Observation",
+        en: "Nurses monitor feeding schedules, body temperature, and weight in the hospital nursery.",
+        ar: "تُرَاقِبُ المُمَرِّضَاتُ مَوَاعِيدَ الرَّضَاعَةِ وَالحَرَارَةَ وَالوِزْنَ فِي الحَضَانَةِ.",
+      },
+      {
+        context: "Viewing Window",
+        en: "Proud parents and relatives peered through the glass nursery window with joyous smiles.",
+        ar: "نَظَرَ الآبَاءُ وَالأَقَارِبُ مِنْ خِلَالِ نَافِذَةِ الحَضَانَةِ الزُّجَاجِيَّةِ بِفَرَحٍ.",
+      },
+    ],
+    exampleSentence:
+      "Newborn infants slept soundly in clear acrylic bassinets inside the temperature-controlled nursery.",
+    exampleArabic:
+      "نَامَ الأَطْفَالُ حَدِيثُو الوِلَادَةِ فِي أَسِرَّةٍ شَفَّافَةٍ دَاخِلَ حَضَانَةِ المُسْتَشْفَى.",
+  },
+  laboratory: {
+    id: "laboratory",
+    arabic: "مُخْتَبَرُ التَّحَالِيلِ الطِّبِّيَّة (المَعْمَل)",
+    partOfSpeech: "noun",
+    phonetic: "ˈlæbrətɔːri",
+    pronunciationTip: "Pronounce 'LAB-ruh-tor-ee' (/ˈlæb.rə.tɔːr.i/).",
+    collocations: ["medical laboratory", "blood test in laboratory", "send to the laboratory"],
+    phrasalVerbs: [
+      {
+        phrase: "run tests in",
+        meaning: "analyze biological specimens with precision instruments",
+        arabic: "يُجْرِي تَحَالِيلَ فِي المُخْتَبَر",
+        example: "Technicians ran tests in the medical laboratory.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Diagnostics",
+        en: "The medical laboratory processed blood and tissue samples to deliver fast diagnostic results.",
+        ar: "عَالَجَ المُخْتَبَرُ الطِّبِّيُّ عَيِّنَاتِ الدَّمِ لِتَقْدِيمِ نَتَائِجَ تَشْخِيصِيَّةٍ سَرِيعَةٍ.",
+      },
+      {
+        context: "Equipment",
+        en: "Lab technicians use automated analyzers, centrifuges, and powerful microscopes daily.",
+        ar: "يَسْتَخْدِمُ فَنِّيُّو المُخْتَبَرِ المَجَاهِرَ وَأَجْهِزَةَ التَّحْلِيلِ الآلِيَّةَ يَوْمِيًّا.",
+      },
+      {
+        context: "Results Delivery",
+        en: "The laboratory sent the complete blood count results directly to the doctor's portal.",
+        ar: "أَرْسَلَ المُخْتَبَرُ نَتِيجَةَ تَحْلِيلِ الدَّمِ الكَامِلِ مُبَاشَرَةً إِلَى مِلَفِّ الطَّبِيبِ.",
+      },
+    ],
+    exampleSentence:
+      "The medical laboratory processed blood and tissue samples to deliver fast diagnostic results.",
+    exampleArabic:
+      "عَالَجَ المُخْتَبَرُ الطِّبِّيُّ عَيِّنَاتِ الدَّمِ لِتَقْدِيمِ نَتَائِجَ تَشْخِيصِيَّةٍ سَرِيعَةٍ.",
+  },
+  radiology: {
+    id: "radiology",
+    arabic: "قِسْمُ الأَشِعَّةِ وَالتَّصْوِيرِ الطِّبِّيّ",
+    partOfSpeech: "noun",
+    phonetic: "ˌreɪdiˈɒlədʒi",
+    pronunciationTip: "Pronounce 'ray-dee-OL-uh-jee'.",
+    collocations: ["visit radiology", "radiology department", "radiology scan"],
+    phrasalVerbs: [
+      {
+        phrase: "scan through",
+        meaning: "examine internal body organs via imaging technology",
+        arabic: "يَفْحَصُ بِالأَشِعَّة",
+        example: "The team scanned through radiology images.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Medical Imaging",
+        en: "The radiology department houses X-ray machines, CT scanners, and MRI suites.",
+        ar: "يَضُمُّ قِسْمُ الأَشِعَّةِ أَجْهِزَةَ الأَشِعَّةِ السِّينِيَّةِ وَالمَقْطَعِيَّةِ وَالرَّنِينَ المَغْنَاطِيسِيَّ.",
+      },
+      {
+        context: "Patient Scan",
+        en: "The patient went down to radiology to get an ultrasound of her abdomen.",
+        ar: "ذَهَبَتِ المَرِيضَةُ إِلَى قِسْمِ الأَشِعَّةِ لِإِجْرَاءِ فَحْصِ السُّونَارِ عَلَى البَطْنِ.",
+      },
+      {
+        context: "Safety Protocols",
+        en: "Radiology technicians wear lead-lined aprons to protect themselves from radiation.",
+        ar: "يَرْتَدِي فَنِّيُّو الأَشِعَّةِ مَآزِرَ مُبَطَّنَةً بِالرَّصَاصِ لِلْحِمَايَةِ مِنَ الإِشْعَاعِ.",
+      },
+    ],
+    exampleSentence: "The radiology department houses X-ray machines, CT scanners, and MRI suites.",
+    exampleArabic:
+      "يَضُمُّ قِسْمُ الأَشِعَّةِ أَجْهِزَةَ الأَشِعَّةِ السِّينِيَّةِ وَالمَقْطَعِيَّةِ وَالرَّنِينَ المَغْنَاطِيسِيَّ.",
+  },
+  cafeteria: {
+    id: "cafeteria",
+    arabic: "مَطْعَمُ المُسْتَشْفَى (كَافِيتِيرْيَا الأَطِبَّاءِ وَالزُّوَّار)",
+    partOfSpeech: "noun",
+    phonetic: "ˌkæfəˈtɪəriə",
+    pronunciationTip: "Pronounce 'kaf-uh-TEER-ee-uh'.",
+    collocations: ["hospital cafeteria", "eat in the cafeteria", "cafeteria tray"],
+    phrasalVerbs: [
+      {
+        phrase: "grab a bite in",
+        meaning: "eat quick meal in self-service dining hall",
+        arabic: "يَتَنَاوَلُ وَجْبَةً فِي الكَافِيتِيرْيَا",
+        example: "Staff grabbed a bite in the hospital cafeteria.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dining Area",
+        en: "Hospital staff and visiting families enjoyed healthy hot soups and salads in the cafeteria.",
+        ar: "تَنَاوَلَ طَاقَمُ المُسْتَشْفَى وَالزُّوَّارُ حَسَاءً سَاخِنًا وَسَلَطَاتٍ فِي الكَافِيتِيرْيَا.",
+      },
+      {
+        context: "Menu Options",
+        en: "The modern hospital cafeteria offers fresh sandwiches, fruit smoothies, and hot entrées.",
+        ar: "تُقَدِّمُ كَافِيتِيرْيَا المُسْتَشْفَى شَطَائِرَ طَازَجَةً وَعَصَائِرَ وَوَجَبَاتٍ سَاخِنَةً.",
+      },
+      {
+        context: "Break Area",
+        en: "Doctors grabbed a quick cup of coffee in the cafeteria between surgical cases.",
+        ar: "تَنَاوَلَ الأَطِبَّاءُ فِنْجَانَ قَهْوَةٍ فِي الكَافِيتِيرْيَا بَيْنَ الجِرَاحَاتِ.",
+      },
+    ],
+    exampleSentence:
+      "Hospital staff and visiting families enjoyed healthy hot soups and salads in the cafeteria.",
+    exampleArabic:
+      "تَنَاوَلَ طَاقَمُ المُسْتَشْفَى وَالزُّوَّارُ حَسَاءً سَاخِنًا وَسَلَطَاتٍ فِي الكَافِيتِيرْيَا.",
+  },
+  pharmacy: {
+    id: "pharmacy",
+    arabic: "صَيْدَلِيَّةُ المُسْتَشْفَى (قِسْمُ صَرْفِ الأَدْوِيَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfɑːrməsi",
+    pronunciationTip: "Pronounce 'FAR-muh-see' (/ˈfɑːr.mə.si/).",
+    collocations: ["hospital pharmacy", "visit the pharmacy", "pharmacy counter"],
+    phrasalVerbs: [
+      {
+        phrase: "fill a prescription at",
+        meaning: "obtain doctor-ordered medication from dispensary",
+        arabic: "يَصْرِفُ الوَصْفَةَ مِنَ الصَّيْدَلِيَّة",
+        example: "He filled his prescription at the pharmacy.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dispensing",
+        en: "The hospital pharmacy dispenses sterile intravenous medications directly to hospital wards.",
+        ar: "تَصْرِفُ صَيْدَلِيَّةُ المُسْتَشْفَى الأَدْوِيَةَ الوَرِيدِيَّةَ المُعَقَّمَةَ لِلأَجْنِحَةِ.",
+      },
+      {
+        context: "Prescription Pickup",
+        en: "Patients pick up their prescribed discharge medications at the outpatient pharmacy counter.",
+        ar: "يَسْتَلِمُ المَرْضَى أَدْوِيَتَهُمُ المَوْصُوفَةَ عِنْدَ الخُرُوجِ مِنْ كَاوْنْتَر الصَّيْدَلِيَّةِ.",
+      },
+      {
+        context: "Inventory",
+        en: "The pharmacy maintains a secure climate-controlled vault for sensitive antibiotic storage.",
+        ar: "تَحْتَفِظُ الصَّيْدَلِيَّةُ بِخَزْنَةٍ مُكَيَّفَةٍ لِحِفْظِ المُضَادَّاتِ الحَيَوِيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "The hospital pharmacy dispenses sterile intravenous medications directly to hospital wards.",
+    exampleArabic:
+      "تَصْرِفُ صَيْدَلِيَّةُ المُسْتَشْفَى الأَدْوِيَةَ الوَرِيدِيَّةَ المُعَقَّمَةَ لِلأَجْنِحَةِ.",
+  },
+  stethoscope: {
+    id: "stethoscope",
+    arabic: "سَمَّاعَةُ الطَّبِيب (سَمَّاعَةُ فَحْصِ القَلْبِ وَالصَّدْر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈstɛθəskoʊp",
+    pronunciationTip: "Pronounce 'STETH-uh-skohp'.",
+    collocations: ["put on a stethoscope", "listen with a stethoscope", "doctor's stethoscope"],
+    phrasalVerbs: [
+      {
+        phrase: "listen to",
+        meaning: "hear heartbeat and lung sounds acoustically",
+        arabic: "يَسْتَمِعُ بِالسَّمَّاعَة",
+        example: "The doctor listened to her heart with a stethoscope.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Examination",
+        en: "The doctor placed the cold metal disc of the stethoscope against the patient's chest.",
+        ar: "وَضَعَ الطَّبِيبُ قُرْصَ سَمَّاعَتِهِ المَعْدِنِيَّ عَلَى صَدْرِ المَرِيضِ لِلْفَحْصِ.",
+      },
+      {
+        context: "Auscultation",
+        en: "Using his stethoscope, the physician detected a normal steady resting heartbeat.",
+        ar: "اسْتَمَعَ الطَّبِيبُ بِسَمَّاعَتِهِ إِلَى نَبَضَاتِ قَلْبٍ طَبِيعِيَّةٍ وَمُنْتَظِمَةٍ.",
+      },
+      {
+        context: "Doctor's Tool",
+        en: "A reliable acoustic stethoscope hung comfortably around the doctor's neck.",
+        ar: "عُلِّقَتْ سَمَّاعَةُ الطَّبِيبِ الصَّوْتِيَّةُ حَوْلَ عُنُقِهِ بِشَكْلٍ مُمَيَّزٍ.",
+      },
+    ],
+    exampleSentence:
+      "The doctor placed the cold metal disc of the stethoscope against the patient's chest.",
+    exampleArabic:
+      "وَضَعَ الطَّبِيبُ قُرْصَ سَمَّاعَتِهِ المَعْدِنِيَّ عَلَى صَدْرِ المَرِيضِ لِلْفَحْصِ.",
+  },
+  syringe: {
+    id: "syringe",
+    arabic: "مِحْقَنَة (سِرِنْجَة / حُقْنَةُ حَقْنِ الدَّوَاءِ وَسَحْبِ العَيِّنَات)",
+    partOfSpeech: "noun",
+    phonetic: "sɪˈrɪndʒ",
+    pronunciationTip: "Pronounce 'si-RINJ' (/sɪˈrɪndʒ/).",
+    collocations: ["sterile syringe", "disposable syringe", "fill a syringe"],
+    phrasalVerbs: [
+      {
+        phrase: "draw up with",
+        meaning: "fill calibrated barrel with liquid medication",
+        arabic: "يَسْحَبُ الدَّوَاءَ بِالمِحْقَنَة",
+        example: "The nurse drew up the vaccine with a sterile syringe.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Injection",
+        en: "The nurse attached a fine sterile needle to the plastic syringe before giving the shot.",
+        ar: "رَكَّبَتِ المُمَرِّضَةُ إِبْرَةً مُعَقَّمَةً فِي المِحْقَنَةِ البِلَاسْتِيكِيَّةِ قَبْلَ الحَقْنِ.",
+      },
+      {
+        context: "Blood Draw",
+        en: "The lab technician used a vacuum syringe to draw a small blood sample painlessly.",
+        ar: "اسْتَخْدَمَ فَنِّيُّ المُخْتَبَرِ مِحْقَنَةً لِسَحْبِ عَيِّنَةِ دَمٍ صَغِيرَةٍ دُونَ أَلَمٍ.",
+      },
+      {
+        context: "Single-Use",
+        en: "All medical syringes are disposable and discarded safely in sharp containers.",
+        ar: "جَمِيعُ المَحَاقِنِ الطِّبِّيَّةِ تُسْتَخْدَمُ لِمَرَّةٍ وَاحِدَةٍ وَتُتْلَفُ بِأَمَانٍ.",
+      },
+    ],
+    exampleSentence:
+      "The nurse attached a fine sterile needle to the plastic syringe before giving the shot.",
+    exampleArabic:
+      "رَكَّبَتِ المُمَرِّضَةُ إِبْرَةً مُعَقَّمَةً فِي المِحْقَنَةِ البِلَاسْتِيكِيَّةِ قَبْلَ الحَقْنِ.",
+  },
+  "blood-pressure-monitor": {
+    id: "blood-pressure-monitor",
+    arabic: "جِهَازُ قِيَاسِ ضَغْطِ الدَّم (مِرْقَبُ الضَّغْطِ الزِّئْبَقِيُّ أَوِ الرَّقْمِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "blʌd ˈprɛʃər ˈmɒnɪtər",
+    pronunciationTip: "Pronounce 'BLUD presh-er MON-i-ter'.",
+    collocations: [
+      "digital blood pressure monitor",
+      "cuff of blood pressure monitor",
+      "check carefully",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "inflate cuff on",
+        meaning: "pump air into arm band to read pressure",
+        arabic: "يَنْفُخُ سِوَارَ جِهَازِ الضَّغْط",
+        example: "The monitor inflated the cuff to measure blood pressure.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Vital Signs",
+        en: "The nurse wrapped the cuff of the blood pressure monitor snugly around my upper arm.",
+        ar: "لَفَّتِ المُمَرِّضَةُ سِوَارَ جِهَازِ قِيَاسِ الضَّغْطِ حَوْلَ ذِرَاعِي العُلْوِيِّ.",
+      },
+      {
+        context: "Hypertension Check",
+        en: "Regular checks with a digital blood pressure monitor help manage cardiovascular health.",
+        ar: "يُسَاعِدُ الفَحْصُ المُنْتَظَمُ بِجِهَازِ الضَّغْطِ فِي مُتَابَعَةِ صِحَّةِ القَلْبِ.",
+      },
+      {
+        context: "Automatic Reading",
+        en: "The electronic screen displayed a healthy systolic and diastolic blood pressure reading.",
+        ar: "عَرَضَتِ الشَّاشَةُ الرَّقْمِيَّةُ قِرَاءَةً صِحِّيَّةً لِضَغْطِ الدَّمِ الِانْقِبَاضِيِّ وَالِانْبِسَاطِيِّ.",
+      },
+    ],
+    exampleSentence:
+      "The nurse wrapped the cuff of the blood pressure monitor snugly around my upper arm.",
+    exampleArabic:
+      "لَفَّتِ المُمَرِّضَةُ سِوَارَ جِهَازِ قِيَاسِ الضَّغْطِ حَوْلَ ذِرَاعِي العُلْوِيِّ.",
+  },
+  "iv-drip": {
+    id: "iv-drip",
+    arabic: "المِصْلُ الوَرِيدِيّ (المَغَذِّي / جِهَازُ التَّقْطِيرِ الوَرِيدِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˌaɪˈviː drɪp",
+    pronunciationTip: "Pronounce 'eye-vee drip'.",
+    collocations: ["connect an IV drip", "saline IV drip", "IV drip bag", "IV drip stand"],
+    phrasalVerbs: [
+      {
+        phrase: "hook up to",
+        meaning: "connect fluid bag into patient's vein",
+        arabic: "يَصِلُ بِالمِصْلِ الوَرِيدِيّ",
+        example: "The nurse hooked the patient up to an IV drip.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Hydration & Meds",
+        en: "The hospital patient received vital saline fluids and antibiotics through an IV drip.",
+        ar: "تَلَقَّى المَرِيضُ مَحَالِيلَ مِلْحِيَّةً وَمُضَادَّاتٍ حَيَوِيَّةً عَبْرَ المِصْلِ الوَرِيدِيِّ.",
+      },
+      {
+        context: "Drip Chamber",
+        en: "Clear medication drops fell steadily through the plastic chamber of the IV drip.",
+        ar: "سَقَطَتْ قَطَرَاتُ الدَّوَاءِ بِانْتِظَامٍ فِي غُرْفَةِ تَقْطِيرِ المِصْلِ البِلَاسْتِيكِيَّةِ.",
+      },
+      {
+        context: "Adjustable Stand",
+        en: "The IV drip bag hung securely from a wheeled stainless steel pole beside the bed.",
+        ar: "عُلِّقَ كِيسُ المَغَذِّي الوَرِيدِيِّ عَلَى حَامِلٍ مَعْدِنِيٍّ ذِي عَجَلَاتٍ بِجِوَارِ السَّرِيرِ.",
+      },
+    ],
+    exampleSentence:
+      "The hospital patient received vital saline fluids and antibiotics through an IV drip.",
+    exampleArabic:
+      "تَلَقَّى المَرِيضُ مَحَالِيلَ مِلْحِيَّةً وَمُضَادَّاتٍ حَيَوِيَّةً عَبْرَ المِصْلِ الوَرِيدِيِّ.",
+  },
+  wheelchair: {
+    id: "wheelchair",
+    arabic: "كُرْسِيٌّ مُتَحَرِّك (كُرْسِيُّ ذَوِي الِاحْتِيَاجَاتِ وَالمَرْضَى)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwiːltʃɛər",
+    pronunciationTip: "Pronounce 'WEEL-chair' (/ˈwiːl.tʃɛər/).",
+    collocations: [
+      "push a wheelchair",
+      "sit in a wheelchair",
+      "motorized wheelchair",
+      "folding wheelchair",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "wheel around",
+        meaning: "transport person seated in mobile chair",
+        arabic: "يَدْفَعُ الكُرْسِيَّ المُتَحَرِّك",
+        example: "The orderly wheeled around the patient to the exit.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Mobility Assistance",
+        en: "The hospital orderly wheeled the elderly patient down the ramp in a sturdy wheelchair.",
+        ar: "دَفَعَ عَامِلُ المُسْتَشْفَى المَرِيضَ المُسِنَّ عَلَى كُرْسِيٍّ مُتَحَرِّكٍ مَتِينٍ.",
+      },
+      {
+        context: "Accessibility",
+        en: "Hospitals provide wide automatic doors and ramps for easy wheelchair access.",
+        ar: "تُوَفِّرُ المُسْتَشْفَيَاتُ أَبْوَابًا أُوتُومَاتِيكِيَّةً وَمُنْحَدَرَاتٍ لِمُرُورِ الكَرَاسِي المُتَحَرِّكَةِ.",
+      },
+      {
+        context: "Rehabilitation",
+        en: "The patient used a lightweight folding wheelchair during his recovery from leg surgery.",
+        ar: "اسْتَخْدَمَ المَرِيضُ كُرْسِيًّا مُتَحَرِّكًا خَفِيفًا أَثْنَاءَ تَعَافِيهِ مِنْ جِرَاحَةِ السَّاقِ.",
+      },
+    ],
+    exampleSentence:
+      "The hospital orderly wheeled the elderly patient down the ramp in a sturdy wheelchair.",
+    exampleArabic:
+      "دَفَعَ عَامِلُ المُسْتَشْفَى المَرِيضَ المُسِنَّ عَلَى كُرْسِيٍّ مُتَحَرِّكٍ مَتِينٍ.",
+  },
+  stretcher: {
+    id: "stretcher",
+    arabic: "نَقَّالَةُ المَرْضَى (سَرِيرُ نَقْلِ المُصَابِينَ فِي الطَّوَارِئ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈstrɛtʃər",
+    pronunciationTip: "Pronounce 'STRETCH-er' (/ˈstrɛtʃ.ər/).",
+    collocations: [
+      "carry on a stretcher",
+      "ambulance stretcher",
+      "wheeled stretcher",
+      "foldable stretcher",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "lift onto",
+        meaning: "place injured patient onto transport cot",
+        arabic: "يَرْفَعُ عَلَى النَّقَّالَة",
+        example: "Paramedics lifted the patient onto the stretcher.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Emergency Transport",
+        en: "Paramedics placed the injured hiker onto a wheeled stretcher and loaded him into the ambulance.",
+        ar: "وَضَعَ المُسْعِفُونَ المُصَابَ عَلَى نَقَّالَةٍ مُتَحَرِّكَةٍ وَنَقَلُوهُ إِلَى الإِسْعَافِ.",
+      },
+      {
+        context: "Trauma Care",
+        en: "The emergency team wheeled the trauma stretcher rapidly into the resuscitation suite.",
+        ar: "دَفَعَ فَرِيقُ الطَّوَارِئِ نَقَّالَةَ الإِسْعَافِ بِسُرْعَةٍ نَحْوَ غُرْفَةِ الإِنْعَاشِ.",
+      },
+      {
+        context: "Straps & Safety",
+        en: "Adjustable safety belts secure the patient safely onto the padded stretcher frame.",
+        ar: "تُثَبِّتُ أَحْزِمَةُ الأَمَانِ المَرِيضَ بِإِحْكَامٍ فَوْقَ هَيْكَلِ النَّقَّالَةِ المُبَطَّنِ.",
+      },
+    ],
+    exampleSentence:
+      "Paramedics placed the injured hiker onto a wheeled stretcher and loaded him into the ambulance.",
+    exampleArabic:
+      "وَضَعَ المُسْعِفُونَ المُصَابَ عَلَى نَقَّالَةٍ مُتَحَرِّكَةٍ وَنَقَلُوهُ إِلَى الإِسْعَافِ.",
+  },
+  "oxygen-mask": {
+    id: "oxygen-mask",
+    arabic: "قِنَاعُ الأُكْسُجِين (كِمَامَةُ التَّنَفُّسِ الطِّبِّيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɒksɪdʒən mæsk",
+    pronunciationTip: "Pronounce 'OK-si-jun mask'.",
+    collocations: ["wear an oxygen mask", "fit an oxygen mask", "emergency oxygen mask"],
+    phrasalVerbs: [
+      {
+        phrase: "breathe through",
+        meaning: "inhale concentrated oxygen through plastic mask",
+        arabic: "يَتَنَفَّسُ عَبْرَ قِنَاعِ الأُكْسُجِين",
+        example: "The patient breathed through an oxygen mask comfortably.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Respiratory Support",
+        en: "The paramedic placed a clear plastic oxygen mask over the patient's nose and mouth.",
+        ar: "وَضَعَ المُسْعِفُ قِنَاعَ أُكْسُجِين بِلَاسْتِيكِيًّا شَفَّافًا عَلَى أَنْفِ وَفَمِ المَرِيضِ.",
+      },
+      {
+        context: "Breathing Relief",
+        en: "Inhaling pure humidified air through the oxygen mask helped restore normal oxygen saturation.",
+        ar: "سَاعَدَ اسْتِنْشَاقُ الأُكْسُجِينِ عَبْرَ القِنَاعِ فِي اسْتِعَادَةِ نِسْبَةِ الأُكْسُجِينِ فِي الدَّمِ.",
+      },
+      {
+        context: "Elastic Strap",
+        en: "An adjustable elastic strap holds the oxygen mask securely against the face.",
+        ar: "يُثَبِّتُ شَرِيطٌ مَطَّاطِيٌّ مَرِنٌ قِنَاعَ الأُكْسُجِينِ بِإِحْكَامٍ عَلَى الوَجْهِ.",
+      },
+    ],
+    exampleSentence:
+      "The paramedic placed a clear plastic oxygen mask over the patient's nose and mouth.",
+    exampleArabic:
+      "وَضَعَ المُسْعِفُ قِنَاعَ أُكْسُجِين بِلَاسْتِيكِيًّا شَفَّافًا عَلَى أَنْفِ وَفَمِ المَرِيضِ.",
+  },
+  defibrillator: {
+    id: "defibrillator",
+    arabic: "جِهَازُ صَدَمَاتِ القَلْب (جِهَازُ الإِنْعَاشِ القَلْبِيِّ الكَهْرَبَائِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "diːˈfɪbrɪleɪtər",
+    pronunciationTip: "Pronounce 'dee-FIB-ri-lay-ter'.",
+    collocations: [
+      "automated external defibrillator",
+      "apply the defibrillator",
+      "check carefully",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "shock with",
+        meaning: "deliver electrical impulse to restore cardiac rhythm",
+        arabic: "يَصْعَقُ بِجِهَازِ صَدَمَاتِ القَلْب",
+        example: "Paramedics shocked the heart with the defibrillator.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cardiac Emergency",
+        en: "The emergency team used the automated external defibrillator to restart the patient's heart rhythm.",
+        ar: "اسْتَخْدَمَ فَرِيقُ الإِسْعَافِ جِهَازَ الصَّدَمَاتِ لِإِعَادَةِ نَبَضَاتِ القَلْبِ لِطَبِيعَتِهَا.",
+      },
+      {
+        context: "Public Safety",
+        en: "Modern public transport hubs and sports stadiums are equipped with accessible AED defibrillators.",
+        ar: "تُجَهَّزُ مَحَطَّاتُ القِطَارَاتِ وَالمَلَاعِبُ بِأَجْهِزَةِ صَدَمَاتِ قَلْبٍ لِلطَّوَارِئِ.",
+      },
+      {
+        context: "Voice Prompts",
+        en: "The automated defibrillator provides clear spoken voice instructions to guide rescuers step-by-step.",
+        ar: "يُقَدِّمُ جِهَازُ الصَّدَمَاتِ الآلِيُّ تَعْلِيمَاتٍ صَوْتِيَّةً وَاضِحَةً لِإِرْشَادِ المُنْقِذِينَ.",
+      },
+    ],
+    exampleSentence:
+      "The emergency team used the automated external defibrillator to restart the patient's heart rhythm.",
+    exampleArabic:
+      "اسْتَخْدَمَ فَرِيقُ الإِسْعَافِ جِهَازَ الصَّدَمَاتِ لِإِعَادَةِ نَبَضَاتِ القَلْبِ لِطَبِيعَتِهَا.",
+  },
+  scalpel: {
+    id: "scalpel",
+    arabic: "مِشْرَطُ الجِرَاحَة (سِكِّينُ الجَرَّاحِ الدَّقِيقَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈskælpəl",
+    pronunciationTip: "Pronounce 'SKAL-pul' (/ˈskæl.pəl/).",
+    collocations: ["surgical scalpel", "sterile scalpel", "hold a scalpel"],
+    phrasalVerbs: [
+      {
+        phrase: "make an incision with",
+        meaning: "cut tissue with precision surgical blade",
+        arabic: "يَفْتَحُ جُرْحًا بِالمِشْرَط",
+        example: "The surgeon made an incision with a sterile scalpel.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Surgery",
+        en: "The surgeon held the stainless steel scalpel with steady hands to make a precise incision.",
+        ar: "أَمْسَكَ الجَرَّاحُ بِمِشْرَطِ الإِسْتِيل بِثَبَاتٍ لِعَمَلِ شَقٍّ جِرَاحِيٍّ دَقِيقٍ.",
+      },
+      {
+        context: "Disposable Blades",
+        en: "Modern surgical scalpels use ultra-sharp disposable carbon steel blades for single use.",
+        ar: "تَسْتَخْدِمُ مَشَارِطُ الجِرَاحَةِ شَفَرَاتٍ كَرْبُونِيَّةً حَادَّةً لِمَرَّةٍ وَاحِدَةٍ.",
+      },
+      {
+        context: "Sterilization",
+        en: "Surgical instruments including scalpels and forceps are sterilized under high pressure steam.",
+        ar: "تُعَقَّمُ أَدَوَاتُ الجِرَاحَةِ وَالمَشَارِطُ بِالبُخَارِ تَحْتَ ضَغْطٍ عَالٍ.",
+      },
+    ],
+    exampleSentence:
+      "The surgeon held the stainless steel scalpel with steady hands to make a precise incision.",
+    exampleArabic:
+      "أَمْسَكَ الجَرَّاحُ بِمِشْرَطِ الإِسْتِيل بِثَبَاتٍ لِعَمَلِ شَقٍّ جِرَاحِيٍّ دَقِيقٍ.",
+  },
+  bandage: {
+    id: "bandage",
+    arabic: "ضِمَادَة (رِبَاطٌ طِبِّيٌّ لِتَضْمِيدِ الجُرُوحِ وَالتَّثْبِيت)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbændɪdʒ",
+    pronunciationTip: "Pronounce 'BAN-dij' (/ˈbæn.dɪdʒ/).",
+    collocations: ["wrap a bandage", "elastic bandage", "adhesive bandage", "sterile bandage"],
+    phrasalVerbs: [
+      {
+        phrase: "wrap around",
+        meaning: "bind wound securely with cloth strip",
+        arabic: "يَلُفُّ الضِّمَادَةَ حَوْلَ الجُرْح",
+        example: "The nurse wrapped a sterile bandage around his arm.",
+      },
+    ],
+    sentences: [
+      {
+        context: "First Aid",
+        en: "The school nurse cleaned the scrape and wrapped a sterile white bandage around the child's knee.",
+        ar: "نَظَّفَتْ مُمَرِّضَةُ المَدْرَسَةِ الجُرْحَ وَلَفَّتْ ضِمَادَةً بَيْضَاءَ مُعَقَّمَةً عَلَى الرُّكْبَةِ.",
+      },
+      {
+        context: "Joint Support",
+        en: "He wrapped an elastic compression bandage tightly around his sprained ankle.",
+        ar: "لَفَّ ضِمَادَةً ضَاغِطَةً مَرِنَةً بِإِحْكَامٍ حَوْلَ كَاحِلِهِ المَلْوِيِّ.",
+      },
+      {
+        context: "Healing",
+        en: "Changing the bandage daily and keeping the injury clean prevents bacterial infections.",
+        ar: "تَغْيِيرُ الضِّمَادَةِ يَوْمِيًّا وَالحِفَاظُ عَلَى نَظَافَةِ الجُرْحِ يَمْنَعُ العَدْوَى.",
+      },
+    ],
+    exampleSentence:
+      "The school nurse cleaned the scrape and wrapped a sterile white bandage around the child's knee.",
+    exampleArabic:
+      "نَظَّفَتْ مُمَرِّضَةُ المَدْرَسَةِ الجُرْحَ وَلَفَّتْ ضِمَادَةً بَيْضَاءَ مُعَقَّمَةً عَلَى الرُّكْبَةِ.",
+  },
+  cast: {
+    id: "cast",
+    arabic: "جَبِيرَة (جِبْسُ تَثْبِيتِ الكُسُورِ العَظْمِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "kɑːst",
+    pronunciationTip: "Pronounce 'KAST' (/kɑːst/).",
+    collocations: ["plaster cast", "wear a cast", "fiberglass cast", "arm in a cast"],
+    phrasalVerbs: [
+      {
+        phrase: "put in a cast",
+        meaning: "immobilize broken bone with hardening mold",
+        arabic: "يَضَعُ فِي الجَبِيرَةِ الجِبْسِيَّة",
+        example: "The doctor put her broken arm in a cast.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bone Healing",
+        en: "The doctor applied a lightweight fiberglass cast to immobilize the boy's fractured wrist.",
+        ar: "وَضَعَ الطَّبِيبُ جَبِيرَةَ أَلْيَافٍ خَفِيفَةً لِتَثْبِيتِ رُسْغِ الفَتَى المَكْسُورِ.",
+      },
+      {
+        context: "Signatures",
+        en: "Friends at school signed their names with colorful markers all over his white plaster cast.",
+        ar: "وَقَّعَ الأَصْدِقَاءُ بِأَقْلَامٍ مُلَوَّنَةٍ عَلَى جَبِيرَتِهِ الجِبْسِيَّةِ البَيْضَاءِ.",
+      },
+      {
+        context: "Removal",
+        en: "After six weeks of healing, the orthopedic surgeon removed the cast with a special vibrating saw.",
+        ar: "بَعْدَ ٦ أَسَابِيعَ، فَكَّ جَرَّاحُ العِظَامِ الجَبِيرَةَ بِمِنْشَارٍ طِبِّيٍّ خَاصٍّ.",
+      },
+    ],
+    exampleSentence:
+      "The doctor applied a lightweight fiberglass cast to immobilize the boy's fractured wrist.",
+    exampleArabic:
+      "وَضَعَ الطَّبِيبُ جَبِيرَةَ أَلْيَافٍ خَفِيفَةً لِتَثْبِيتِ رُسْغِ الفَتَى المَكْسُورِ.",
+  },
+  heart: {
+    id: "heart",
+    arabic: "قَلْب (عُضْوُ ضَخِّ الدَّمِ فِي الجِسْم)",
+    partOfSpeech: "noun",
+    phonetic: "hɑːrt",
+    pronunciationTip: "Pronounce 'HART' (/hɑːrt/).",
+    collocations: ["healthy heart", "heart rate", "heart beat", "heart disease"],
+    phrasalVerbs: [
+      {
+        phrase: "pump through",
+        meaning: "circulate blood through arteries and veins",
+        arabic: "يَضُخُّ الدَّمَ فِي الشَّرَايِين",
+        example: "The human heart pumps blood throughout the body.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Organ Function",
+        en: "The human heart beats approximately seventy times per minute to circulate oxygenated blood.",
+        ar: "يَنْبِضُ قَلْبُ الإِنْسَانِ حَوَالَيْ ٧٠ مَرَّةً فِي الدَّقِيقَةِ لِضَخِّ الدَّمِ المَحْمَلِ بِالأُكْسُجِينِ.",
+      },
+      {
+        context: "Cardio Fitness",
+        en: "Regular aerobic exercise and a balanced diet keep your heart strong and healthy.",
+        ar: "تُحَافِظُ الرِّيَاضَةُ الهَوَائِيَّةُ وَالغِذَاءُ المُتَوَازِنُ عَلَى صِحَّةِ وَقُوَّةِ القَلْبِ.",
+      },
+      {
+        context: "Medical Exam",
+        en: "The physician listened carefully to the patient's heart rhythm with a stethoscope.",
+        ar: "اسْتَمَعَ الطَّبِيبُ بِعِنَايَةٍ إِلَى نَبَضَاتِ قَلْبِ المَرِيضِ بِالسَّمَّاعَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The human heart beats approximately seventy times per minute to circulate oxygenated blood.",
+    exampleArabic:
+      "يَنْبِضُ قَلْبُ الإِنْسَانِ حَوَالَيْ ٧٠ مَرَّةً فِي الدَّقِيقَةِ لِضَخِّ الدَّمِ المَحْمَلِ بِالأُكْسُجِينِ.",
+  },
+  lungs: {
+    id: "lungs",
+    arabic: "رِئَتَان (عُضْوَا التَّنَفُّسِ وَتَبَادُلِ الأُكْسُجِين)",
+    partOfSpeech: "noun",
+    phonetic: "lʌŋz",
+    pronunciationTip: "Pronounce 'LUNGZ' (/lʌŋz/).",
+    collocations: ["healthy lungs", "fill your lungs", "breathe into lungs", "lung capacity"],
+    phrasalVerbs: [
+      {
+        phrase: "expand with",
+        meaning: "fill with fresh inhaled air",
+        arabic: "تَتَمَدَّدُ بِالهَوَاءِ النَّقِيّ",
+        example: "Her lungs expanded with fresh mountain air.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Respiration",
+        en: "The lungs absorb oxygen from inhaled air and expel waste carbon dioxide gas.",
+        ar: "تَمْتَصُّ الرِّئَتَانِ الأُكْسُجِينَ مِنَ الهَوَاءِ وَتَطْرُدَانِ غَازَ ثَانِي أُكْسِيدِ الكَرْبُونِ.",
+      },
+      {
+        context: "Deep Breathing",
+        en: "Take a deep breath to fill your lungs completely before holding for four seconds.",
+        ar: "خُذْ نَفَسًا عَمِيقًا لِمَلْءِ رِئَتَيْكَ بِالهَوَاءِ تَمَامًا قَبْلَ حَبْسِهِ ٤ ثَوَانٍ.",
+      },
+      {
+        context: "Chest X-ray",
+        en: "A clear chest X-ray confirmed that both lungs were healthy and free of fluid.",
+        ar: "أَكَّدَتْ صُورَةُ الصَّدْرِ الإِشْعَاعِيَّةُ سَلَامَةَ الرِّئَتَيْنِ وَخُلُوَّهُمَا مِنَ السَّوَائِلِ.",
+      },
+    ],
+    exampleSentence: "The lungs absorb oxygen from inhaled air and expel waste carbon dioxide gas.",
+    exampleArabic:
+      "تَمْتَصُّ الرِّئَتَانِ الأُكْسُجِينَ مِنَ الهَوَاءِ وَتَطْرُدَانِ غَازَ ثَانِي أُكْسِيدِ الكَرْبُونِ.",
+  },
+  brain: {
+    id: "brain",
+    arabic: "دِمَاغ (مُخّ / مَرْكَزُ التَّفْكِيرِ وَالجِهَازِ العَصَبِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "breɪn",
+    pronunciationTip: "Long 'a' sound /eɪ/: 'BRAYN' (/breɪn/).",
+    collocations: ["human brain", "brain activity", "protect the brain", "brain scan"],
+    phrasalVerbs: [
+      {
+        phrase: "process through",
+        meaning: "interpret sensory signals and thoughts",
+        arabic: "يُعَالِجُ الإِشَارَاتِ العَصَبِيَّة",
+        example: "The brain processes visual information rapidly.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Neurology",
+        en: "The human brain contains billions of interconnected neurons that control thought and movement.",
+        ar: "يَحْتَوِي دِمَاغُ الإِنْسَانِ عَلَى مِلْيَارَاتِ الخَلَايَا العَصَبِيَّةِ الَّتِي تَتَحَكَّمُ بِالتَّفْكِيرِ وَالحَرَكَةِ.",
+      },
+      {
+        context: "Protection",
+        en: "Wearing a sturdy safety helmet protects your skull and delicate brain tissue during cycling.",
+        ar: "يَحْمِي ارْتِدَاءُ الخُوذَةِ الجُمْجُمَةَ وَأَنْسِجَةَ الدِّمَاغِ الرَّقِيقَةَ أَثْنَاءَ رُكُوبِ الدَّرَّاجَةِ.",
+      },
+      {
+        context: "Sleep & Memory",
+        en: "Getting eight hours of restful sleep helps the brain organize memories and regenerate cells.",
+        ar: "يُسَاعِدُ النَّوْمُ لِمُدَّةِ ٨ سَاعَاتٍ الدِّمَاغَ عَلَى تَرْتِيبِ الذِّكْرَيَاتِ وَتَجْدِيدِ الخَلَايَا.",
+      },
+    ],
+    exampleSentence:
+      "The human brain contains billions of interconnected neurons that control thought and movement.",
+    exampleArabic:
+      "يَحْتَوِي دِمَاغُ الإِنْسَانِ عَلَى مِلْيَارَاتِ الخَلَايَا العَصَبِيَّةِ الَّتِي تَتَحَكَّمُ بِالتَّفْكِيرِ وَالحَرَكَةِ.",
+  },
+  bone: {
+    id: "bone",
+    arabic: "عَظْم (الهَيْكَلُ العَظْمِيُّ الصَّلْبُ لِلْجِسْم)",
+    partOfSpeech: "noun",
+    phonetic: "boʊn",
+    pronunciationTip: "Long 'o' sound /oʊ/: 'BOHN' (/boʊn/).",
+    collocations: ["broken bone", "strong bones", "bone density", "calcium for bones"],
+    phrasalVerbs: [
+      {
+        phrase: "heal over",
+        meaning: "fuse and regenerate after skeletal fracture",
+        arabic: "يَلْتَئِمُ العَظْمُ بَعْدَ الكَسْر",
+        example: "The fractured bone healed over six weeks.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Skeletal System",
+        en: "Calcium and vitamin D are essential nutrients for building strong and dense bones.",
+        ar: "يُعَدُّ الكَالْسِيُوم وَفِيتَامِين د مِنْ العَنَاصِرِ الأَسَاسِيَّةِ لِبِنَاءِ عِظَامٍ قَوِيَّةٍ.",
+      },
+      {
+        context: "Fracture",
+        en: "The doctor reviewed the radiograph to check whether the arm bone had healed correctly.",
+        ar: "فَحَصَ الطَّبِيبُ صُورَةَ الأَشِعَّةِ لِلتَّأَكُّدِ مِنِ التِئَامِ عَظْمِ الذِّرَاعِ تَمَامًا.",
+      },
+      {
+        context: "Structure",
+        en: "The adult human skeleton is composed of two hundred and six individual bones.",
+        ar: "يَتَكَوَّنُ الهَيْكَلُ العَظْمِيُّ لِلْبَالِغِينَ مِنْ ٢٠٦ عِظَامٍ مُنْفَصِلَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "Calcium and vitamin D are essential nutrients for building strong and dense bones.",
+    exampleArabic:
+      "يُعَدُّ الكَالْسِيُوم وَفِيتَامِين د مِنْ العَنَاصِرِ الأَسَاسِيَّةِ لِبِنَاءِ عِظَامٍ قَوِيَّةٍ.",
+  },
+  blood: {
+    id: "blood",
+    arabic: "دَم (السَّائِلُ الحَيَوِيُّ النَّاقِلُ لِلأُكْسُجِينِ وَالغِذَاء)",
+    partOfSpeech: "noun",
+    phonetic: "blʌd",
+    pronunciationTip: "Short 'u' sound /ʌ/: 'BLUD' (/blʌd/).",
+    collocations: ["blood test", "donate blood", "blood pressure", "blood circulation"],
+    phrasalVerbs: [
+      {
+        phrase: "flow through",
+        meaning: "circulate through vascular network",
+        arabic: "يَسْرِي فِي العُرُوق",
+        example: "Oxygen-rich blood flows through the arteries.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Circulation",
+        en: "Red blood cells carry oxygen from your lungs to every muscle and tissue in the body.",
+        ar: "تَنْقُلُ خَلَايَا الدَّمِ الحَمْرَاءُ الأُكْسُجِينَ مِنَ الرِّئَتَيْنِ إِلَى جَمِيعِ أَنْسِجَةِ الجِسْمِ.",
+      },
+      {
+        context: "Donation",
+        en: "Volunteers donated blood at the mobile clinic to help save hospitalized trauma patients.",
+        ar: "تَبَرَّعَ المُتَطَوِّعُونَ بِالدَّمِ فِي العِيَادَةِ لِمُسَاعَدَةِ مَرْضَى الحَالَاتِ الطَّارِئَةِ.",
+      },
+      {
+        context: "Blood Test",
+        en: "A routine blood test measures cholesterol, glucose, and white blood cell levels.",
+        ar: "يَقِيسُ تَحْلِيلُ الدَّمِ الرُّوتِينِيُّ الكُولِيسْتِرُول وَالسُّكَّرَ وَخَلَايَا الدَّمِ البَيْضَاءَ.",
+      },
+    ],
+    exampleSentence:
+      "Red blood cells carry oxygen from your lungs to every muscle and tissue in the body.",
+    exampleArabic:
+      "تَنْقُلُ خَلَايَا الدَّمِ الحَمْرَاءُ الأُكْسُجِينَ مِنَ الرِّئَتَيْنِ إِلَى جَمِيعِ أَنْسِجَةِ الجِسْمِ.",
+  },
+  pulse: {
+    id: "pulse",
+    arabic: "نَبْض (نَبَضَاتُ القَلْبِ المَحْسُوسَةُ فِي الشِّرْيَان)",
+    partOfSpeech: "noun",
+    phonetic: "pʌls",
+    pronunciationTip: "Short 'u' sound /ʌ/: 'PULS' (/pʌls/).",
+    collocations: ["check the pulse", "resting pulse", "weak pulse", "rapid pulse"],
+    phrasalVerbs: [
+      {
+        phrase: "beat at",
+        meaning: "throb rhythmically with arterial pressure",
+        arabic: "يَنْبِضُ بِمُعَدَّل",
+        example: "His pulse beat at sixty-five beats per minute.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Vital Signs",
+        en: "The nurse placed two fingers against the patient's wrist to count his pulse.",
+        ar: "وَضَعَتِ المُمَرِّضَةُ إِصْبَعَيْنِ عَلَى رُسْغِ المَرِيضِ لِعَدِّ نَبَضَاتِ قَلْبِهِ.",
+      },
+      {
+        context: "Heart Rate",
+        en: "A normal adult resting pulse typically ranges between sixty and one hundred beats per minute.",
+        ar: "يَتَرَاوَحُ نَبْضُ الإِنْسَانِ البَالِغِ الطَّبِيعِيُّ بَيْنَ ٦٠ وَ١٠٠ نَبْضَةٍ فِي الدَّقِيقَةِ.",
+      },
+      {
+        context: "Exercise",
+        en: "During high-intensity workouts, your pulse quickens to supply extra oxygen to working muscles.",
+        ar: "يَتَسَارَعُ النَّبْضُ خِلَالَ التَّمَارِينِ لِتَزْوِيدِ العَضَلَاتِ بِالمَزِيدِ مِنَ الأُكْسُجِينِ.",
+      },
+    ],
+    exampleSentence: "The nurse placed two fingers against the patient's wrist to count his pulse.",
+    exampleArabic:
+      "وَضَعَتِ المُمَرِّضَةُ إِصْبَعَيْنِ عَلَى رُسْغِ المَرِيضِ لِعَدِّ نَبَضَاتِ قَلْبِهِ.",
+  },
+  fever: {
+    id: "fever",
+    arabic: "حُمَّى (ارْتِفَاعُ دَرَجَةِ حَرَارَةِ الجِسْم)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfiːvər",
+    pronunciationTip: "Long 'ee' sound: 'FEE-ver' (/ˈfiː.vər/).",
+    collocations: ["high fever", "break a fever", "run a fever", "fever reducer"],
+    phrasalVerbs: [
+      {
+        phrase: "come down",
+        meaning: "decrease temperature back to normal",
+        arabic: "تَنْخَفِضُ الحَرَارَة",
+        example: "Her fever came down after taking medicine.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Immune Response",
+        en: "A fever is the body's natural defense mechanism fighting off viral or bacterial infections.",
+        ar: "الحُمَّى هِيَ اسْتِجَابَةُ الجِسْمِ الطَّبِيعِيَّةُ لِمُحَارَبَةِ العَدْوَى الفِيرُوسِيَّةِ أَوِ البَكْتِيرِيَّةِ.",
+      },
+      {
+        context: "Treatment",
+        en: "Drink plenty of water, rest in bed, and take acetaminophen to reduce a high fever.",
+        ar: "اشْرَبِ الكَثِيرَ مِنَ المَاءِ وَاسْتَرِحْ لِتَخْفِيضِ دَرَجَةِ الحَرَارَةِ المُرْتَفِعَةِ.",
+      },
+      {
+        context: "Thermometer",
+        en: "The digital thermometer showed thirty-nine degrees, indicating a moderate fever.",
+        ar: "أَظْهَرَ مِقْيَاسُ الحَرَارَةِ ٣٩ دَرَجَةً مِئَوِيَّةً مِمَّا يَدُلُّ عَلَى وُجُودِ حُمَّى.",
+      },
+    ],
+    exampleSentence:
+      "A fever is the body's natural defense mechanism fighting off viral or bacterial infections.",
+    exampleArabic:
+      "الحُمَّى هِيَ اسْتِجَابَةُ الجِسْمِ الطَّبِيعِيَّةُ لِمُحَارَبَةِ العَدْوَى الفِيرُوسِيَّةِ أَوِ البَكْتِيرِيَّةِ.",
+  },
+  infection: {
+    id: "infection",
+    arabic: "عَدْوَى (الْتِهَابٌ بَكْتِيرِيٌّ أَوْ فِيرُوسِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ɪnˈfɛkʃən",
+    pronunciationTip: "Pronounce 'in-FEK-shun'.",
+    collocations: [
+      "bacterial infection",
+      "viral infection",
+      "fight an infection",
+      "treat an infection",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "clear up",
+        meaning: "resolve completely with proper treatment",
+        arabic: "تَزُولُ العَدْوَى",
+        example: "The skin infection cleared up with antibiotic cream.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Medical Condition",
+        en: "The doctor prescribed a seven-day course of penicillin antibiotics to clear the bacterial infection.",
+        ar: "وَصَفَ الطَّبِيبُ كُورْسَ مُضَادٍّ حَيَوِيٍّ لِمُدَّةِ ٧ أَيَّامٍ لِعِلَاجِ العَدْوَى البَكْتِيرِيَّةِ.",
+      },
+      {
+        context: "Hygiene Prevention",
+        en: "Washing your hands thoroughly with warm water and soap is the best way to prevent infections.",
+        ar: "غَسْلُ اليَدَيْنِ بِالمَاءِ وَالصَّابُونِ هُوَ أَفْضَلُ طَرِيقَةٍ لِلْوِقَايَةِ مِنَ العَدْوَى.",
+      },
+      {
+        context: "Symptoms",
+        en: "Redness, swelling, localized warmth, and fever are common signs of an underlying infection.",
+        ar: "الاحْمِرَارُ وَالتَّوَرُّمُ وَالحَرَارَةُ مِنْ عَلَامَاتِ وُجُودِ العَدْوَى فِي الجِسْمِ.",
+      },
+    ],
+    exampleSentence:
+      "The doctor prescribed a seven-day course of penicillin antibiotics to clear the bacterial infection.",
+    exampleArabic:
+      "وَصَفَ الطَّبِيبُ كُورْسَ مُضَادٍّ حَيَوِيٍّ لِمُدَّةِ ٧ أَيَّامٍ لِعِلَاجِ العَدْوَى البَكْتِيرِيَّةِ.",
+  },
+  injury: {
+    id: "injury",
+    arabic: "إِصَابَة (جُرْحٌ أَوْ أَذًى جَسَدِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɪndʒəri",
+    pronunciationTip: "Pronounce 'IN-juh-ree' (/ˈɪn.dʒə.ri/).",
+    collocations: ["sports injury", "minor injury", "prevent an injury", "recover from an injury"],
+    phrasalVerbs: [
+      {
+        phrase: "heal up",
+        meaning: "recover from physical trauma or wound",
+        arabic: "يَلْتَئِمُ الجُرْح",
+        example: "His knee injury healed up after weeks of physical therapy.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Physical Harm",
+        en: "The athlete took three weeks off from training to recover fully from a minor hamstring injury.",
+        ar: "تَوَقَّفَ الرِّيَاضِيُّ عَنِ التَّدْرِيبِ لِـ ٣ أَسَابِيعَ لِلتَّعَافِي مِنِ إِصَابَةِ العَضَلَةِ.",
+      },
+      {
+        context: "Safety Gear",
+        en: "Wearing proper helmets and protective knee pads significantly reduces the risk of accidental injury.",
+        ar: "يُقَلِّلُ ارْتِدَاءُ الخُوذَاتِ وَوَاقِيَاتِ الرُّكْبَةِ خَطَرَ الإِصَابَاتِ الرِّيَاضِيَّةِ.",
+      },
+      {
+        context: "Emergency",
+        en: "Paramedics quickly treated the passenger's superficial cuts and head injuries at the scene.",
+        ar: "عَالَجَ المُسْعِفُونَ جُرُوحَ الرَّاكِبِ وَإِصَابَاتِهِ السَّطْحِيَّةَ فِي مَوْقِعِ الحَادِثِ.",
+      },
+    ],
+    exampleSentence:
+      "The athlete took three weeks off from training to recover fully from a minor hamstring injury.",
+    exampleArabic:
+      "تَوَقَّفَ الرِّيَاضِيُّ عَنِ التَّدْرِيبِ لِـ ٣ أَسَابِيعَ لِلتَّعَافِي مِنِ إِصَابَةِ العَضَلَةِ.",
+  },
+  fracture: {
+    id: "fracture",
+    arabic: "كَسْرٌ فِي العَظْم (شَرْخٌ أَوْ كَسْرٌ عَظْمِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfræktʃər",
+    pronunciationTip: "Pronounce 'FRAK-cher' (/ˈfræk.tʃər/).",
+    collocations: ["bone fracture", "hairline fracture", "compound fracture", "treat a fracture"],
+    phrasalVerbs: [
+      {
+        phrase: "set into place",
+        meaning: "realign broken bone ends surgically or manually",
+        arabic: "يُعِيدُ العَظْمَ لِمَوْضِعِه",
+        example: "The surgeon set the bone fracture into place.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bone Break",
+        en: "The X-ray scan revealed a clean hairline fracture in the patient's forearm bone.",
+        ar: "أَظْهَرَ فَحْصُ الأَشِعَّةِ كَسْرًا شَعْرِيًّا بَسِيطًا فِي عَظْمِ السَّاعِدِ.",
+      },
+      {
+        context: "Immobilization",
+        en: "The doctor fitted a fiberglass cast to keep the fracture immobilized while it healed.",
+        ar: "رَكَّبَ الطَّبِيبُ جَبِيرَةً لِتَثْبِيتِ الكَسْرِ خِلَالَ فَتْرَةِ الِالْتِئَامِ.",
+      },
+      {
+        context: "Healing Time",
+        en: "Most simple bone fractures require four to eight weeks of rest to regain full strength.",
+        ar: "تَحْتَاجُ مُعْظَمُ كُسُورِ العِظَامِ مِنْ ٤ إِلَى ٨ أَسَابِيعَ لِاسْتِعَادَةِ قُوَّتِهَا.",
+      },
+    ],
+    exampleSentence:
+      "The X-ray scan revealed a clean hairline fracture in the patient's forearm bone.",
+    exampleArabic: "أَظْهَرَ فَحْصُ الأَشِعَّةِ كَسْرًا شَعْرِيًّا بَسِيطًا فِي عَظْمِ السَّاعِدِ.",
+  },
+  allergy: {
+    id: "allergy",
+    arabic: "حَسَاسِيَّة (اسْتِجَابَةٌ تَحَسُّسِيَّةٌ لِلأَطْعِمَةِ أَوِ اللَّقَاح)",
+    partOfSpeech: "noun",
+    phonetic: "ˈælərdʒi",
+    pronunciationTip: "Pronounce 'AL-er-jee' (/ˈæl.ər.dʒi/).",
+    collocations: ["peanut allergy", "seasonal allergy", "severe allergy", "allergy test"],
+    phrasalVerbs: [
+      {
+        phrase: "trigger off",
+        meaning: "cause sudden allergic immune reaction",
+        arabic: "يُثِيرُ الحَسَاسِيَّة",
+        example: "Pollen triggered off her seasonal allergy symptoms.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Immune Reaction",
+        en: "He has a severe peanut allergy and always carries an emergency epinephrine auto-injector.",
+        ar: "يُعَانِي مِنْ حَسَاسِيَّةٍ شَدِيدَةٍ لِلْفُولِ السُّودَانِيِّ وَيَحْمِلُ حُقْنَةَ طَوَارِئَ.",
+      },
+      {
+        context: "Seasonal Pollen",
+        en: "Spring flower pollen triggers seasonal allergies, causing sneezing, runny nose, and itchy eyes.",
+        ar: "تُسَبِّبُ حُبُوبُ اللِّقَاحِ فِي الرَّبِيعِ حَسَاسِيَّةً مَوْسِمِيَّةً وَعُطَاسًا.",
+      },
+      {
+        context: "Menu Warning",
+        en: "Restaurants clearly label allergen warnings on menus for dairy, gluten, nuts, and shellfish.",
+        ar: "تَضَعُ المَطَاعِمُ تَحْذِيرَاتِ الحَسَاسِيَّةِ لِلْمُكَوِّنَاتِ كَالمُكَسَّرَاتِ وَالأَلْبَانِ.",
+      },
+    ],
+    exampleSentence:
+      "He has a severe peanut allergy and always carries an emergency epinephrine auto-injector.",
+    exampleArabic:
+      "يُعَانِي مِنْ حَسَاسِيَّةٍ شَدِيدَةٍ لِلْفُولِ السُّودَانِيِّ وَيَحْمِلُ حُقْنَةَ طَوَارِئَ.",
+  },
+  rash: {
+    id: "rash",
+    arabic: "طَفْحٌ جِلْدِيّ (احْمِرَارٌ وَتَهَيُّجٌ فِي الجِلْد)",
+    partOfSpeech: "noun",
+    phonetic: "ræʃ",
+    pronunciationTip: "Short 'a' sound: 'RASH' (/ræʃ/).",
+    collocations: ["skin rash", "itchy rash", "develop a rash", "treat a rash"],
+    phrasalVerbs: [
+      {
+        phrase: "break out in",
+        meaning: "develop sudden widespread skin eruptions",
+        arabic: "يَظْهَرُ عَلَيْهِ طَفْحٌ جِلْدِيّ",
+        example: "She broke out in a rash after touching poison ivy.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dermatology",
+        en: "The child developed an itchy red skin rash after accidentally brushing against stinging nettles.",
+        ar: "أُصِيبَ الطِّفْلُ بِطَفْحٍ جِلْدِيٍّ أَحْمَرَ مُثِيرٍ لِلْحِكَّةِ بَعْدَ لَمْسِ نَبَاتِ القَرَّاصِ.",
+      },
+      {
+        context: "Soothing Cream",
+        en: "Applying a soothing calamine lotion and hydrocortisone cream relieves itching from allergic rashes.",
+        ar: "يُهَدِّئُ دَهْنُ لُوشِن الكَالَامِين وَالكَرِيمِ الحِكَّةَ النَّاتِجَةَ عَنِ الطَّفْحِ الجِلْدِيِّ.",
+      },
+      {
+        context: "Doctor Check",
+        en: "Consult a dermatologist if an unexplained rash spreads rapidly or is accompanied by fever.",
+        ar: "اسْتَشِرْ طَبِيبَ الجِلْدِيَّةِ إِذَا انْتَشَرَ الطَّفْحُ الجِلْدِيُّ أَوْ صَاحَبَتْهُ حُمَّى.",
+      },
+    ],
+    exampleSentence:
+      "The child developed an itchy red skin rash after accidentally brushing against stinging nettles.",
+    exampleArabic:
+      "أُصِيبَ الطِّفْلُ بِطَفْحٍ جِلْدِيٍّ أَحْمَرَ مُثِيرٍ لِلْحِكَّةِ بَعْدَ لَمْسِ نَبَاتِ القَرَّاصِ.",
+  },
+  examination: {
+    id: "examination",
+    arabic: "فَحْصٌ طِبِّيّ (مُعَايَنَةٌ سَرِيرِيَّةٌ شَامِلَة)",
+    partOfSpeech: "noun",
+    phonetic: "ɪɡˌzæmɪˈneɪʃən",
+    pronunciationTip: "Pronounce 'ig-zam-i-NAY-shun'.",
+    collocations: [
+      "medical examination",
+      "physical examination",
+      "eye examination",
+      "annual examination",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "go through",
+        meaning: "undergo systematic physical health assessment",
+        arabic: "يَخْضَعُ لِلْفَحْصِ الطِّبِّيّ",
+        example: "He went through a thorough medical examination.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Checkup",
+        en: "The doctor conducted a comprehensive physical examination of the patient's heart, lungs, and reflexes.",
+        ar: "أَجْرَى الطَّبِيبُ فَحْصًا سَرِيرِيًّا شَامِلًا لِقَلْبِ وَرِئَتَيْ المَرِيضِ.",
+      },
+      {
+        context: "Eye Check",
+        en: "Regular eye examinations help detect vision changes and maintain optic health.",
+        ar: "تُسَاعِدُ فُحُوصَاتُ العُيُونِ المُنْتَظَمَةُ فِي الكَشْفِ المُبَكِّرِ عَنْ تَغَيُّرَاتِ الرُّؤْيَةِ.",
+      },
+      {
+        context: "Health Record",
+        en: "The physician documented all clinical observations in the patient's permanent medical record.",
+        ar: "دَوَّنَ الطَّبِيبُ جَمِيعَ مُلَاحَظَاتِ الفَحْصِ فِي المِلَفِّ الصِّحِّيِّ لِلْمَرِيضِ.",
+      },
+    ],
+    exampleSentence:
+      "The doctor conducted a comprehensive physical examination of the patient's heart, lungs, and reflexes.",
+    exampleArabic: "أَجْرَى الطَّبِيبُ فَحْصًا سَرِيرِيًّا شَامِلًا لِقَلْبِ وَرِئَتَيْ المَرِيضِ.",
+  },
+  diagnosis: {
+    id: "diagnosis",
+    arabic: "تَشْخِيصٌ طِبِّيّ (تَحْدِيدُ نَوْعِ المَرَض)",
+    partOfSpeech: "noun",
+    phonetic: "ˌdaɪəɡˈnoʊsɪs",
+    pronunciationTip: "Pronounce 'dy-ug-NOH-sis'.",
+    collocations: [
+      "early diagnosis",
+      "accurate diagnosis",
+      "medical diagnosis",
+      "confirm a diagnosis",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "arrive at",
+        meaning: "determine disease through tests and symptoms",
+        arabic: "يَتَوَصَّلُ إِلَى التَّشْخِيص",
+        example: "The doctor arrived at an accurate diagnosis.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Clinical Assessment",
+        en: "After reviewing blood tests and X-rays, the doctor confirmed an accurate diagnosis of asthma.",
+        ar: "بَعْدَ مُرَاجَعَةِ التَّحَالِيلِ وَالأَشِعَّةِ، أَكَّدَ الطَّبِيبُ تَشْخِيصَ الرَّبْوِ.",
+      },
+      {
+        context: "Early Detection",
+        en: "Early diagnosis of chronic health conditions dramatically improves treatment outcomes.",
+        ar: "يُحَسِّنُ التَّشْخِيصُ المُبَكِّرُ لِلأَمْرَاضِ المُزْمِنَةِ نَتَائِجَ العِلَاجِ بِشَكْلٍ كَبِيرٍ.",
+      },
+      {
+        context: "Second Opinion",
+        en: "Patients sometimes consult a specialist to obtain a reassuring second diagnosis.",
+        ar: "يَسْتَشِيرُ المَرْضَى أَحْيَانًا طَبِيبًا مُتَخَصِّصًا لِلْحُصُولِ عَلَى تَشْخِيصٍ ثَانٍ مُطَمْئِنٍ.",
+      },
+    ],
+    exampleSentence:
+      "After reviewing blood tests and X-rays, the doctor confirmed an accurate diagnosis of asthma.",
+    exampleArabic:
+      "بَعْدَ مُرَاجَعَةِ التَّحَالِيلِ وَالأَشِعَّةِ، أَكَّدَ الطَّبِيبُ تَشْخِيصَ الرَّبْوِ.",
+  },
+  prescription: {
+    id: "prescription",
+    arabic: "وَصْفَةٌ طِبِّيَّة (رُوشِتَّةُ العِلَاجِ وَالدَّوَاء)",
+    partOfSpeech: "noun",
+    phonetic: "prɪˈskrɪpʃən",
+    pronunciationTip: "Pronounce 'pri-SKRIP-shun'.",
+    collocations: ["write a prescription", "fill a prescription", "prescription medicine"],
+    phrasalVerbs: [
+      {
+        phrase: "write out",
+        meaning: "authorise medical drug in writing",
+        arabic: "يَكْتُبُ وَصْفَةً طِبِّيَّة",
+        example: "The doctor wrote out a prescription for antibiotics.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Pharmacy Order",
+        en: "The physician wrote a prescription for daily blood pressure medication with three refills.",
+        ar: "كَتَبَ الطَّبِيبُ وَصْفَةً طِبِّيَّةً لِدَوَاءِ ضَغْطِ الدَّمِ مَعَ إِمْكَانِيَّةِ التَّجْدِيدِ.",
+      },
+      {
+        context: "Electronic Script",
+        en: "The clinic sent the electronic prescription directly to my local neighborhood pharmacy.",
+        ar: "أَرْسَلَتِ العِيَادَةُ الوَصْفَةَ الطِّبِّيَّةَ الإِلِكْتُرُونِيَّةَ إِلَى الصَّيْدَلِيَّةِ مُبَاشَرَةً.",
+      },
+      {
+        context: "Instructions",
+        en: "Always follow the dosage instructions printed on your prescription medicine label.",
+        ar: "اتَّبِعْ دَائِمًا تَعْلِيمَاتِ الجُرْعَةِ المَطْبُوعَةِ عَلَى مُلْصَقِ الوَصْفَةِ الطِّبِّيَّةِ.",
+      },
+    ],
+    exampleSentence:
+      "The physician wrote a prescription for daily blood pressure medication with three refills.",
+    exampleArabic:
+      "كَتَبَ الطَّبِيبُ وَصْفَةً طِبِّيَّةً لِدَوَاءِ ضَغْطِ الدَّمِ مَعَ إِمْكَانِيَّةِ التَّجْدِيدِ.",
+  },
+  surgery: {
+    id: "surgery",
+    arabic: "جِرَاحَة (عَمَلِيَّةٌ جِرَاحِيَّةٌ فِي المُسْتَشْفَى)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsɜːrdʒəri",
+    pronunciationTip: "Pronounce 'SUR-juh-ree' (/ˈsɜːr.dʒə.ri/).",
+    collocations: [
+      "undergo surgery",
+      "minor surgery",
+      "open-heart surgery",
+      "recover from surgery",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "perform on",
+        meaning: "conduct surgical intervention on body",
+        arabic: "يُجْرِي جِرَاحَةً لِـ",
+        example: "The team performed successful surgery on the patient.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Operative Procedure",
+        en: "The skilled surgeon performed minimally invasive laparoscopic surgery through tiny incisions.",
+        ar: "أَجْرَى الجَرَّاحُ المَاهِرُ جِرَاحَةً بِالمِنْظَارِ عَبْرَ فَتَحَاتٍ صَغِيرَةٍ جِدًّا.",
+      },
+      {
+        context: "Preparation",
+        en: "Patients must fast without food or water for eight hours prior to general surgery.",
+        ar: "يَجِبُ عَلَى المَرْضَى الصِّيَامُ لِمُدَّةِ ٨ سَاعَاتٍ قَبْلَ الخُضُوعِ لِلْجِرَاحَةِ العَامَّةِ.",
+      },
+      {
+        context: "Recovery",
+        en: "After successful surgery, the patient was transferred to the postoperative recovery ward.",
+        ar: "بَعْدَ نَجَاحِ الجِرَاحَةِ، نُقِلَ المَرِيضُ إِلَى جَنَاحِ التَّعَافِي بَعْدَ العَمَلِيَّاتِ.",
+      },
+    ],
+    exampleSentence:
+      "The skilled surgeon performed minimally invasive laparoscopic surgery through tiny incisions.",
+    exampleArabic:
+      "أَجْرَى الجَرَّاحُ المَاهِرُ جِرَاحَةً بِالمِنْظَارِ عَبْرَ فَتَحَاتٍ صَغِيرَةٍ جِدًّا.",
+  },
+  "x-ray": {
+    id: "x-ray",
+    arabic: "أَشِعَّةٌ سِينِيَّة (صُورَةُ الأَشِعَّةِ لِفَحْصِ العِظَامِ وَالصَّدْر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɛksreɪ",
+    pronunciationTip: "Pronounce 'EKS-ray' (/ˈɛks.reɪ/).",
+    collocations: ["take an X-ray", "chest X-ray", "dental X-ray", "X-ray results"],
+    phrasalVerbs: [
+      {
+        phrase: "show up on",
+        meaning: "be visible on radiographic film",
+        arabic: "يَظْهَرُ فِي الأَشِعَّةِ السِّينِيَّة",
+        example: "The hairline crack showed up clearly on the X-ray.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Radiography",
+        en: "The technician took an X-ray of the patient's swollen ankle to check for fractures.",
+        ar: "أَخَذَ الفَنِّيُّ صُورَةَ أَشِعَّةٍ سِينِيَّةٍ لِكَاحِلِ المَرِيضِ لِلتَّأَكُّدِ مِنَ الكُسُورِ.",
+      },
+      {
+        context: "Chest Scan",
+        en: "A routine chest X-ray helps doctors evaluate heart size and inspect lung clarity.",
+        ar: "تُسَاعِدُ أَشِعَّةُ الصَّدْرِ السِّينِيَّةُ الأَطِبَّاءَ فِي تَقْيِيمِ حَجْمِ القَلْبِ وَنَظَافَةِ الرِّئَتَيْنِ.",
+      },
+      {
+        context: "Protective Apron",
+        en: "Patients wear lead-shielded vests during dental X-rays to block stray radiation.",
+        ar: "يَرْتَدِي المَرْضَى سُتْرَةَ رَصَاصٍ خِلَالَ أَشِعَّةِ الأَسْنَانِ لِلْحِمَايَةِ مِنَ الإِشْعَاعِ.",
+      },
+    ],
+    exampleSentence:
+      "The technician took an X-ray of the patient's swollen ankle to check for fractures.",
+    exampleArabic:
+      "أَخَذَ الفَنِّيُّ صُورَةَ أَشِعَّةٍ سِينِيَّةٍ لِكَاحِلِ المَرِيضِ لِلتَّأَكُّدِ مِنَ الكُسُورِ.",
+  },
+  "blood-test": {
+    id: "blood-test",
+    arabic: "تَحْلِيلُ الدَّم (فَحْصٌ مَخْبَرِيٌّ لِعَيِّنَةِ الدَّم)",
+    partOfSpeech: "noun",
+    phonetic: "blʌd tɛst",
+    pronunciationTip: "Pronounce 'BLUD test'.",
+    collocations: ["have a blood test", "blood test results", "routine blood test"],
+    phrasalVerbs: [
+      {
+        phrase: "send for",
+        meaning: "order laboratory analysis of specimen",
+        arabic: "يَطْلُبُ تَحْلِيلَ دَم",
+        example: "The doctor sent for a comprehensive blood test.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Laboratory Testing",
+        en: "The doctor ordered a routine fasting blood test to check cholesterol and glucose levels.",
+        ar: "طَلَبَ الطَّبِيبُ تَحْلِيلَ دَمٍ صَبَاحِيًّا شَامِلًا لِقِيَاسِ الكُولِيسْتِرُول وَالسُّكَّرِ.",
+      },
+      {
+        context: "Quick Procedure",
+        en: "The skilled phlebotomist drew a small vial of blood quickly and painlessly.",
+        ar: "سَحَبَ فَنِّيُّ سَحْبِ الدَّمِ عَيِّنَةً صَغِيرَةً بِسُرْعَةٍ وَبِدُونِ أَلَمٍ.",
+      },
+      {
+        context: "Diagnostic Clues",
+        en: "Complete blood count results provide vital diagnostic clues about immune health.",
+        ar: "تُوَفِّرُ نَتَائِجُ تَحْلِيلِ الدَّمِ الكَامِلِ مَعْلُومَاتٍ حَيَوِيَّةً عَنْ صِحَّةِ المَنَاعَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The doctor ordered a routine fasting blood test to check cholesterol and glucose levels.",
+    exampleArabic:
+      "طَلَبَ الطَّبِيبُ تَحْلِيلَ دَمٍ صَبَاحِيًّا شَامِلًا لِقِيَاسِ الكُولِيسْتِرُول وَالسُّكَّرِ.",
+  },
+  injection: {
+    id: "injection",
+    arabic: "حُقْنَة (إِعْطَاءُ الدَّوَاءِ بِالإِبْرَةِ فِي العَضَلِ أَوِ الوَرِيد)",
+    partOfSpeech: "noun",
+    phonetic: "ɪnˈdʒɛkʃən",
+    pronunciationTip: "Pronounce 'in-JEK-shun'.",
+    collocations: [
+      "give an injection",
+      "pain relief injection",
+      "flu injection",
+      "intramuscular injection",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "administer through",
+        meaning: "deliver medicine into tissue using syringe",
+        arabic: "يُعْطِي الحُقْنَةَ فِي العَضَل",
+        example: "The nurse administered the antibiotic through an injection.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Medication Delivery",
+        en: "The nurse gave a gentle intramuscular injection of antibiotics into the patient's arm.",
+        ar: "أَعْطَتِ المُمَرِّضَةُ حُقْنَةَ مُضَادٍّ حَيَوِيٍّ فِي عَضَلَةِ ذِرَاعِ المَرِيضِ بِلُطْفٍ.",
+      },
+      {
+        context: "Pain Relief",
+        en: "A local anesthetic injection numbed the area completely before the minor procedure.",
+        ar: "خَدَّرَتْ حُقْنَةُ البِنْجِ المَوْضِعِيِّ المِنْطَقَةَ تَمَامًا قَبْلَ الجِرَاحَةِ البَسِيطَةِ.",
+      },
+      {
+        context: "Diabetes Care",
+        en: "Diabetic patients use ultra-fine needles to administer daily insulin injections safely.",
+        ar: "يَسْتَخْدِمُ مَرْضَى السُّكَّرِيِّ إِبَرًا دَقِيقَةً لِحَقْنِ الأَنْسُولِينِ يَوْمِيًّا بِأَمَانٍ.",
+      },
+    ],
+    exampleSentence:
+      "The nurse gave a gentle intramuscular injection of antibiotics into the patient's arm.",
+    exampleArabic:
+      "أَعْطَتِ المُمَرِّضَةُ حُقْنَةَ مُضَادٍّ حَيَوِيٍّ فِي عَضَلَةِ ذِرَاعِ المَرِيضِ بِلُطْفٍ.",
+  },
+  vaccination: {
+    id: "vaccination",
+    arabic: "تَطْعِيم (لِقَاحٌ وِقَائِيٌّ لِبِنَاءِ المَنَاعَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˌvæksɪˈneɪʃən",
+    pronunciationTip: "Pronounce 'vak-si-NAY-shun'.",
+    collocations: [
+      "flu vaccination",
+      "COVID-19 vaccination",
+      "routine vaccination",
+      "get a vaccination",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "protect against",
+        meaning: "build active immunity against contagious diseases",
+        arabic: "يَقِي مِنَ الأَمْرَاضِ بِالتَّطْعِيم",
+        example: "Vaccination protects children against dangerous illnesses.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Immunization",
+        en: "Annual flu vaccinations help protect vulnerable populations against seasonal respiratory illnesses.",
+        ar: "تُسَاعِدُ تَطْعِيمَاتُ الإِنْفِلْوَنْزَا السَّنَوِيَّةُ فِي حِمَايَةِ الجَمِيعِ مِنَ الأَمْرَاضِ المَوْسِمِيَّةِ.",
+      },
+      {
+        context: "Childhood Health",
+        en: "Children receive routine scheduled vaccinations to build lifelong immunity against measles and polio.",
+        ar: "يَتَلَقَّى الأَطْفَالُ تَطْعِيمَاتٍ رُوتِينِيَّةً لِبِنَاءِ مَنَاعَةٍ ضِدَّ الحَصْبَةِ وَشَلَلِ الأَطْفَالِ.",
+      },
+      {
+        context: "Clinic Record",
+        en: "The healthcare clinic provided a stamped official vaccination card after the shot.",
+        ar: "قَدَّمَتِ العِيَادَةُ بِطَاقَةَ تَطْعِيمٍ رَسْمِيَّةً مُعْتَمَدَةً بَعْدَ أَخْذِ اللِّقَاحِ.",
+      },
+    ],
+    exampleSentence:
+      "Annual flu vaccinations help protect vulnerable populations against seasonal respiratory illnesses.",
+    exampleArabic:
+      "تُسَاعِدُ تَطْعِيمَاتُ الإِنْفِلْوَنْزَا السَّنَوِيَّةُ فِي حِمَايَةِ الجَمِيعِ مِنَ الأَمْرَاضِ المَوْسِمِيَّةِ.",
+  },
+  ultrasound: {
+    id: "ultrasound",
+    arabic: "تَصْوِيرٌ بِالمَوْجَاتِ فَوْقَ الصَّوْتِيَّة (سُونَار)",
+    partOfSpeech: "noun",
+    phonetic: "ˈʌltrəsaʊnd",
+    pronunciationTip: "Pronounce 'UL-truh-sownd'.",
+    collocations: [
+      "ultrasound scan",
+      "have an ultrasound",
+      "pregnancy ultrasound",
+      "cardiac ultrasound",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "examine with",
+        meaning: "visualize internal body tissues with sound waves",
+        arabic: "يَفْحَصُ بِالسُّونَار",
+        example: "The doctor examined the unborn baby with ultrasound.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Diagnostic Imaging",
+        en: "Expectant parents smiled with delight seeing their baby moving on the ultrasound monitor.",
+        ar: "فَرِحَ الوالِدَانِ عِنْدَ رُؤْيَةِ طِفْلِهِمَا يَتَحَرَّكُ عَلَى شَاشَةِ السُّونَارِ.",
+      },
+      {
+        context: "Safe & Non-invasive",
+        en: "An ultrasound uses harmless high-frequency sound waves rather than ionizing radiation.",
+        ar: "يَسْتَخْدِمُ السُّونَارُ مَوْجَاتٍ صَوْتِيَّةً آمِنَةً غَيْرَ ضَارَّةٍ بَدَلًا مِنَ الإِشْعَاعِ.",
+      },
+      {
+        context: "Organ Scan",
+        en: "The technician applied warm conductive gel to perform an ultrasound of the kidneys.",
+        ar: "وَضَعَ الفَنِّيُّ هُلَامًا دَافِئًا لِإِجْرَاءِ فَحْصِ السُّونَارِ عَلَى الكُلَى.",
+      },
+    ],
+    exampleSentence:
+      "Expectant parents smiled with delight seeing their baby moving on the ultrasound monitor.",
+    exampleArabic:
+      "فَرِحَ الوالِدَانِ عِنْدَ رُؤْيَةِ طِفْلِهِمَا يَتَحَرَّكُ عَلَى شَاشَةِ السُّونَارِ.",
+  },
+  "mri-scan": {
+    id: "mri-scan",
+    arabic:
+      "فَحْصُ الرَّنِينِ المَغْنَاطِيسِيّ (تَصْوِيرُ الرَّنِينِ المَغْنَاطِيسِيِّ عَالِي الدِّقَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˌɛm ɑːr ˈaɪ skæn",
+    pronunciationTip: "Pronounce 'em-ar-EYE skan'.",
+    collocations: ["brain MRI scan", "knee MRI scan", "schedule an MRI scan"],
+    phrasalVerbs: [
+      {
+        phrase: "scan inside",
+        meaning: "generate 3D magnetic cross-sectional bodily images",
+        arabic: "يَفْحَصُ بِالرَّنِينِ المَغْنَاطِيسِيّ",
+        example: "The specialist scanned inside the joint with MRI.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Advanced Diagnostics",
+        en: "The doctor ordered a brain MRI scan to obtain crystal-clear cross-sectional images of the nerves.",
+        ar: "طَلَبَ الطَّبِيبُ رَنِينًا مَغْنَاطِيسِيًّا لِلْمُخِّ لِلْحُصُولِ عَلَى صُوَرٍ شَدِيدَةِ الدِّقَّةِ.",
+      },
+      {
+        context: "Procedure",
+        en: "The patient lay completely still inside the cylindrical MRI scanner while it created detailed scans.",
+        ar: "اسْتَلْقَى المَرِيضُ بِهُدُوءٍ دَاخِلَ جِهَازِ الرَّنِينِ لِإِنْشَاءِ صُوَرٍ مُفَصَّلَةٍ.",
+      },
+      {
+        context: "Soft Tissue",
+        en: "MRI scans excel at visualizing soft tissues including ligaments, cartilage, and spinal discs.",
+        ar: "يَتَمَيَّزُ الرَّنِينُ المَغْنَاطِيسِيُّ بِإِظْهَارِ الأَرْبِطَةِ وَالغَضَارِيفِ وَأَقْرَاصِ الظَّهْرِ.",
+      },
+    ],
+    exampleSentence:
+      "The doctor ordered a brain MRI scan to obtain crystal-clear cross-sectional images of the nerves.",
+    exampleArabic:
+      "طَلَبَ الطَّبِيبُ رَنِينًا مَغْنَاطِيسِيًّا لِلْمُخِّ لِلْحُصُولِ عَلَى صُوَرٍ شَدِيدَةِ الدِّقَّةِ.",
+  },
+  stitches: {
+    id: "stitches",
+    arabic: "غُرَزٌ جِرَاحِيَّة (خِيَاطَةُ الجُرُوحِ الطِّبِّيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈstɪtʃɪz",
+    pronunciationTip: "Pronounce 'STICH-iz' (/ˈstɪtʃ.ɪz/).",
+    collocations: ["get stitches", "remove stitches", "dissolvable stitches", "surgical stitches"],
+    phrasalVerbs: [
+      {
+        phrase: "sew up with",
+        meaning: "close wound edges using sterile surgical thread",
+        arabic: "يُخَيِّطُ الجُرْحَ بِالغُرَز",
+        example: "The surgeon sewed up the deep laceration with stitches.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Wound Closure",
+        en: "The emergency room doctor placed five neat stitches to close the deep cut on his forehead.",
+        ar: "وَضَعَ طَبِيبُ الطَّوَارِئِ ٥ غُرَزٍ جِرَاحِيَّةٍ لِإِغْلَاقِ الجُرْحِ العَمِيقِ فِي الجَبِينِ.",
+      },
+      {
+        context: "Dissolvable Sutures",
+        en: "Many internal surgical procedures use dissolvable stitches that absorb naturally over time.",
+        ar: "تَسْتَخْدِمُ الجِرَاحَاتُ الدَّاخِلِيَّةُ غُرَزًا قَابِلَةً لِلذَّوَبَانِ تَمْتَصُّهَا الأَنْسِجَةُ.",
+      },
+      {
+        context: "Removal",
+        en: "After ten days of clean healing, the nurse removed the external stitches smoothly.",
+        ar: "بَعْدَ ١٠ أَيَّامٍ مِنَ الِالْتِئَامِ، أَزَالَتِ المُمَرِّضَةُ الغُرَزَ الخَارِجِيَّةَ بِسَلَاسَةٍ.",
+      },
+    ],
+    exampleSentence:
+      "The emergency room doctor placed five neat stitches to close the deep cut on his forehead.",
+    exampleArabic:
+      "وَضَعَ طَبِيبُ الطَّوَارِئِ ٥ غُرَزٍ جِرَاحِيَّةٍ لِإِغْلَاقِ الجُرْحِ العَمِيقِ فِي الجَبِينِ.",
+  },
+  "physical-therapy": {
+    id: "physical-therapy",
+    arabic: "العِلَاجُ الطَّبِيعِيّ (إِعَادَةُ التَّأْهِيلِ الحَرَكِيِّ وَالبَدَنِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfɪzɪkəl ˈθɛrəpi",
+    pronunciationTip: "Pronounce 'FIZ-i-kul THER-uh-pee'.",
+    collocations: [
+      "do physical therapy",
+      "physical therapy sessions",
+      "physical therapy exercises",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "rehabilitate through",
+        meaning: "restore joint mobility via targeted exercises",
+        arabic: "يَتَعَافَى بِالعِلَاجِ الطَّبِيعِيّ",
+        example: "She rehabilitated her shoulder through physical therapy.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Rehabilitation",
+        en: "After knee surgery, the athlete attended physical therapy three times a week to rebuild leg strength.",
+        ar: "حَضَرَ الرِّيَاضِيُّ جَلَسَاتِ العِلَاجِ الطَّبِيعِيِّ ٣ مَرَّاتٍ أُسْبُوعِيًّا لِاسْتِعَادَةِ قُوَّتِهِ.",
+      },
+      {
+        context: "Mobility & Balance",
+        en: "Physical therapy exercises help stroke patients regain balance, walking coordination, and mobility.",
+        ar: "تُسَاعِدُ تَمَارِينُ العِلَاجِ الطَّبِيعِيِّ المَرْضَى فِي اسْتِعَادَةِ التَّوَازُنِ وَالمَشْيِ.",
+      },
+      {
+        context: "Guidance",
+        en: "The licensed physical therapist demonstrated safe stretching and strengthening techniques.",
+        ar: "شَرَحَ أَخِصَّائِيُّ العِلَاجِ الطَّبِيعِيِّ تَمَارِينَ الإِطَالَةِ وَالتَّقْوِيَةِ الآمِنَةِ.",
+      },
+    ],
+    exampleSentence:
+      "After knee surgery, the athlete attended physical therapy three times a week to rebuild leg strength.",
+    exampleArabic:
+      "حَضَرَ الرِّيَاضِيُّ جَلَسَاتِ العِلَاجِ الطَّبِيعِيِّ ٣ مَرَّاتٍ أُسْبُوعِيًّا لِاسْتِعَادَةِ قُوَّتِهِ.",
+  },
+  "hospital-bed": {
+    id: "hospital-bed",
+    arabic: "سَرِيرُ المُسْتَشْفَى (السَّرِيرُ الطِّبِّيُّ القَابِلُ لِلتَّعْدِيل)",
+    partOfSpeech: "noun",
+    phonetic: "ˈhɒspɪtəl bɛd",
+    pronunciationTip: "Pronounce 'HOS-pi-tul bed'.",
+    collocations: ["adjustable hospital bed", "lie in a hospital bed", "hospital bed with rails"],
+    phrasalVerbs: [
+      {
+        phrase: "adjust up",
+        meaning: "elevate bed headrest electronically for patient comfort",
+        arabic: "يَرْفَعُ سَرِيرَ المُسْتَشْفَى",
+        example: "The nurse adjusted the hospital bed for eating.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Patient Comfort",
+        en: "The motorized hospital bed can be raised or lowered with remote control buttons.",
+        ar: "يُمْكِنُ رَفْعُ أَوْ خَفْضُ سَرِيرِ المُسْتَشْفَى الكَهْرَبَائِيِّ بِأَزْرَارِ التَّحَكُّمِ.",
+      },
+      {
+        context: "Safety Rails",
+        en: "Protective side rails on the hospital bed prevent accidental falls during the night.",
+        ar: "تَمْنَعُ حَوَاجِزُ الأَمَانِ الجَانِبِيَّةُ فِي سَرِيرِ المُسْتَشْفَى سُقُوطَ المَرِيضِ لَيْلًا.",
+      },
+      {
+        context: "Sanitation",
+        en: "Hospital beds are stripped, disinfected with medical sanitizers, and remade between patients.",
+        ar: "تُعَقَّمُ أَسِرَّةُ المُسْتَشْفَى بِالمُطَهِّرَاتِ وَتُفْرَشُ بِمَفَارِشَ نَظِيفَةٍ بَيْنَ المَرْضَى.",
+      },
+    ],
+    exampleSentence:
+      "The motorized hospital bed can be raised or lowered with remote control buttons.",
+    exampleArabic:
+      "يُمْكِنُ رَفْعُ أَوْ خَفْضُ سَرِيرِ المُسْتَشْفَى الكَهْرَبَائِيِّ بِأَزْرَارِ التَّحَكُّمِ.",
+  },
+  gown: {
+    id: "gown",
+    arabic: "ثَوْبُ المَرِيضِ الطِّبِّيّ (مِرْيَلَةُ العَمَلِيَّاتِ وَالتَّنْوِيم)",
+    partOfSpeech: "noun",
+    phonetic: "ɡaʊn",
+    pronunciationTip: "Pronounce 'GOWN' (/ɡaʊn/).",
+    collocations: ["hospital gown", "wear a gown", "sterile surgical gown", "cotton gown"],
+    phrasalVerbs: [
+      {
+        phrase: "put on",
+        meaning: "dress into open-back hospital garment",
+        arabic: "يَرْتَدِي ثَوْبَ المُسْتَشْفَى",
+        example: "The patient put on the clean cotton hospital gown.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Medical Clothing",
+        en: "Patients change into a comfortable cotton hospital gown before undergoing medical procedures.",
+        ar: "يَرْتَدِي المَرْضَى ثَوْبَ المُسْتَشْفَى القُطْنِيَّ المُرِيحَ قَبْلَ الفُحُوصَاتِ.",
+      },
+      {
+        context: "Surgical Barrier",
+        en: "Surgeons and scrub nurses wear sterile waterproof blue gowns inside the operating theater.",
+        ar: "يَرْتَدِي الطَّاقَمُ الجِرَاحِيُّ أَثْوَابًا زَرْقَاءَ مُعَقَّمَةً مَانِعَةً لِلتَّسَرُّبِ فِي العَمَلِيَّاتِ.",
+      },
+      {
+        context: "Easy Access",
+        en: "Hospital gowns feature tie strings at the back to allow doctors easy examination access.",
+        ar: "تَتَمَيَّزُ أَثْوَابُ المَرْضَى بِأَرْبِطَةٍ خَلْفِيَّةٍ لِتَسْهِيلِ إِجْرَاءِ الفَحْصِ الطِّبِّيِّ.",
+      },
+    ],
+    exampleSentence:
+      "Patients change into a comfortable cotton hospital gown before undergoing medical procedures.",
+    exampleArabic:
+      "يَرْتَدِي المَرْضَى ثَوْبَ المُسْتَشْفَى القُطْنِيَّ المُرِيحَ قَبْلَ الفُحُوصَاتِ.",
+  },
+  chart: {
+    id: "chart",
+    arabic: "سِجِلُّ المَرِيضِ الطِّبِّيّ (مِلَفُّ البَيَانَاتِ وَالفُحُوصَات)",
+    partOfSpeech: "noun",
+    phonetic: "tʃɑːrt",
+    pronunciationTip: "Pronounce 'CHART' (/tʃɑːrt/).",
+    collocations: ["patient chart", "read the chart", "medical chart", "update the chart"],
+    phrasalVerbs: [
+      {
+        phrase: "record in",
+        meaning: "document clinical notes in medical history file",
+        arabic: "يُدَوِّنُ فِي السِّجِلِّ الطِّبِّيّ",
+        example: "The doctor recorded new notes in the medical chart.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Medical Records",
+        en: "The attending physician reviewed the patient's medical chart to check allergy history.",
+        ar: "رَاجَعَ الطَّبِيبُ المُعَالِجُ سِجِلَّ المَرِيضِ لِلتَّأَكُّدِ مِنْ تَارِيخِ الحَسَاسِيَّةِ.",
+      },
+      {
+        context: "Vital Trends",
+        en: "Nurses record temperature, blood pressure, and medication administration in the chart.",
+        ar: "تُسَجِّلُ المُمَرِّضَاتُ الحَرَارَةَ وَالضَّغْطَ وَمَوَاعِيدَ الأَدْوِيَةِ فِي السِّجِلِّ.",
+      },
+      {
+        context: "Electronic Health Record",
+        en: "Modern clinics maintain secure electronic health charts accessible to authorised care teams.",
+        ar: "تَسْتَخْدِمُ العِيَادَاتُ الحَدِيثَةُ سِجِلَّاتٍ طِبِّيَّةً رَقْمِيَّةً آمِنَةً لِفِرَقِ الرِّعَايَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The attending physician reviewed the patient's medical chart to check allergy history.",
+    exampleArabic:
+      "رَاجَعَ الطَّبِيبُ المُعَالِجُ سِجِلَّ المَرِيضِ لِلتَّأَكُّدِ مِنْ تَارِيخِ الحَسَاسِيَّةِ.",
+  },
+  clipboard: {
+    id: "clipboard",
+    arabic: "لَوْحَةُ حَمْلِ الأَوْرَاق (حَامِلَةُ مِلَفِّ المَرِيضِ المَعْدِنِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈklɪpbɔːrd",
+    pronunciationTip: "Pronounce 'KLIP-bord'.",
+    collocations: ["hold a clipboard", "doctor's clipboard", "fill out forms on a clipboard"],
+    phrasalVerbs: [
+      {
+        phrase: "clip onto",
+        meaning: "attach medical documents securely to writing board",
+        arabic: "يُثَبِّتُ الأَوْرَاقَ فِي اللَّوْحَة",
+        example: "The receptionist clipped intake forms onto the clipboard.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Patient Intake",
+        en: "The clinic receptionist handed the new patient a metal clipboard with registration forms.",
+        ar: "سَلَّمَ مُوَظَّفُ الِاسْتِقْبَالِ المَرِيضَ لَوْحَةَ أَوْرَاقٍ مَعْدِنِيَّةً مَعَ نَمَاذِجِ التَّسْجِيلِ.",
+      },
+      {
+        context: "Nurse Rounds",
+        en: "The charge nurse carried a sturdy plastic clipboard with shift assignments and room checklists.",
+        ar: "حَمَلَتْ مَسْؤُولَةُ التَّمْرِيضِ لَوْحَةَ أَوْرَاقٍ بِلَاسْتِيكِيَّةً تَضُمُّ قَوَائِمَ المَرْضَى.",
+      },
+      {
+        context: "Writing Surface",
+        en: "A sturdy clipboard provides a firm surface for doctors writing bedside treatment orders.",
+        ar: "تُوَفِّرُ لَوْحَةُ الأَوْرَاقِ سَطْحًا مُرِيحًا لِلْكِتَابَةِ بِجِوَارِ سَرِيرِ المَرِيضِ.",
+      },
+    ],
+    exampleSentence:
+      "The clinic receptionist handed the new patient a metal clipboard with registration forms.",
+    exampleArabic:
+      "سَلَّمَ مُوَظَّفُ الِاسْتِقْبَالِ المَرِيضَ لَوْحَةَ أَوْرَاقٍ مَعْدِنِيَّةً مَعَ نَمَاذِجِ التَّسْجِيلِ.",
+  },
+  medicine: {
+    id: "medicine",
+    arabic: "دَوَاء (عِلَاجٌ طِبِّيّ / عَقَّارٌ شَافٍ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmɛdɪsɪn",
+    pronunciationTip: "Pronounce 'MED-i-sin' (/ˈmɛd.ɪ.sɪn/).",
+    collocations: ["take medicine", "prescribe medicine", "liquid medicine", "cough medicine"],
+    phrasalVerbs: [
+      {
+        phrase: "take with",
+        meaning: "ingest therapeutic medication alongside fluids",
+        arabic: "يَتَنَاوَلُ الدَّوَاءَ مَعَ المَاء",
+        example: "Take this medicine with a full glass of water.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Therapy",
+        en: "Take your prescribed blood pressure medicine every morning with breakfast as directed.",
+        ar: "تَنَاوَلْ دَوَاءَ ضَغْطِ الدَّمِ المَوْصُوفَ كُلَّ صَبَاحٍ مَعَ الإِفْطَارِ كَمَا هُوَ مُحَدَّدٌ.",
+      },
+      {
+        context: "Pain Relief",
+        en: "Liquid cough medicine soothed the child's sore throat and suppressed his nighttime cough.",
+        ar: "هَدَّأَ شَرَابُ السُّعَالِ حَلْقَ الطِّفْلِ وَخَفَّفَ كَحَّتَهُ أَثْنَاءَ اللَّيْلِ.",
+      },
+      {
+        context: "Safe Storage",
+        en: "Always store all medicines in a secure, cool place out of reach of young children.",
+        ar: "احْفَظْ جَمِيعَ الأَدْوِيَةِ فِي مَكَانٍ آمِنٍ وَبَارِدٍ بَعِيدًا عَنْ مُتَنَاوَلِ الأَطْفَالِ.",
+      },
+    ],
+    exampleSentence:
+      "Take your prescribed blood pressure medicine every morning with breakfast as directed.",
+    exampleArabic:
+      "تَنَاوَلْ دَوَاءَ ضَغْطِ الدَّمِ المَوْصُوفَ كُلَّ صَبَاحٍ مَعَ الإِفْطَارِ كَمَا هُوَ مُحَدَّدٌ.",
+  },
+  pills: {
+    id: "pills",
+    arabic: "حُبُوبُ الدَّوَاء (أَقْرَاصٌ عِلَاجِيَّةٌ أَوْ كَبْسُولَات)",
+    partOfSpeech: "noun",
+    phonetic: "pɪlz",
+    pronunciationTip: "Short 'i' sound: 'PILZ' (/pɪlz/).",
+    collocations: ["swallow pills", "take pills", "bottle of pills", "vitamin pills"],
+    phrasalVerbs: [
+      {
+        phrase: "swallow with",
+        meaning: "ingest oral tablets with water",
+        arabic: "يَبْتَلِعُ الحُبُوبَ مَعَ المَاء",
+        example: "He swallowed two pain relief pills with water.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Oral Medication",
+        en: "The patient swallowed two pain relief pills with a full glass of water after dinner.",
+        ar: "ابْتَلَعَ المَرِيضُ حَبَّتَيْنِ مِنْ مُسَكِّنِ الأَلَمِ مَعَ كَأْسِ مَاءٍ بَعْدَ العَشَاءِ.",
+      },
+      {
+        context: "Organizer Box",
+        en: "Elderly patients use daily pill organizer boxes with compartments to manage their doses.",
+        ar: "يَسْتَخْدِمُ المَرْضَى عُلَبَ تَقْسِيمِ الحُبُوبِ اليَوْمِيَّةِ لِتَنْظِيمِ جُرُعَاتِهِمْ.",
+      },
+      {
+        context: "Label Warnings",
+        en: "The amber pill bottle was labeled with clear instructions to take one tablet every eight hours.",
+        ar: "حَمَلَتْ عُلْبَةُ الحُبُوبِ تَعْلِيمَاتٍ وَاضِحَةً بِتَنَاوُلِ قُرْصٍ كُلَّ ٨ سَاعَاتٍ.",
+      },
+    ],
+    exampleSentence:
+      "The patient swallowed two pain relief pills with a full glass of water after dinner.",
+    exampleArabic:
+      "ابْتَلَعَ المَرِيضُ حَبَّتَيْنِ مِنْ مُسَكِّنِ الأَلَمِ مَعَ كَأْسِ مَاءٍ بَعْدَ العَشَاءِ.",
+  },
+  ointment: {
+    id: "ointment",
+    arabic: "مَرْهَم (دِهَانٌ طِبِّيٌّ لِعِلَاجِ الجِلْدِ وَالجُرُوح)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɔɪntmənt",
+    pronunciationTip: "Pronounce 'OYNT-munt' (/ˈɔɪnt.mənt/).",
+    collocations: [
+      "apply ointment",
+      "antibiotic ointment",
+      "healing ointment",
+      "soothing ointment",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "rub onto",
+        meaning: "spread therapeutic cream gently across skin",
+        arabic: "يَدْهَنُ المَرْهَمَ عَلَى الجِلْد",
+        example: "She rubbed soothing ointment onto the rash.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Skin Treatment",
+        en: "Apply a thin layer of antibacterial ointment over the minor cut before covering with a bandage.",
+        ar: "ضَعْ طَبَقَةً رَقِيقَةً مِنْ مَرْهَمِ المُضَادِّ الحَيَوِيِّ عَلَى الجُرْحِ قَبْلَ تَضْمِيدِهِ.",
+      },
+      {
+        context: "Burn Relief",
+        en: "Soothing aloe vera ointment provided immediate cooling relief to the sunburned skin.",
+        ar: "مَنَحَ مَرْهَمُ الأَلُوفِيرَا المُرَطِّبُ ارْتِيَاحًا فَوْرِيًّا لِلْجِلْدِ المُحْتَرِقِ بِالشَّمْسِ.",
+      },
+      {
+        context: "Dermatology",
+        en: "The dermatologist prescribed a steroid ointment to reduce redness and allergic swelling.",
+        ar: "وَصَفَ طَبِيبُ الجِلْدِيَّةِ مَرْهَمًا لِتَقْلِيلِ الِاحْمِرَارِ وَالتَّوَرُّمِ التَّحَسُّسِيِّ.",
+      },
+    ],
+    exampleSentence:
+      "Apply a thin layer of antibacterial ointment over the minor cut before covering with a bandage.",
+    exampleArabic:
+      "ضَعْ طَبَقَةً رَقِيقَةً مِنْ مَرْهَمِ المُضَادِّ الحَيَوِيِّ عَلَى الجُرْحِ قَبْلَ تَضْمِيدِهِ.",
+  },
+  crutches: {
+    id: "crutches",
+    arabic: "عَكَّازَات (عُكَّازَانِ لِمُسَاعَدَةِ المُصَابِينَ عَلَى المَشْي)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkrʌtʃɪz",
+    pronunciationTip: "Pronounce 'KRUTCH-iz' (/ˈkrʌtʃ.ɪz/).",
+    collocations: [
+      "walk on crutches",
+      "pair of crutches",
+      "aluminum crutches",
+      "underarm crutches",
+    ],
+    phrasalVerbs: [
+      {
+        phrase: "walk along with",
+        meaning: "move forward supporting weight on arm pads",
+        arabic: "يَمْشِي عَلَى العَكَّازَات",
+        example: "He walked along the hall with aluminum crutches.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Mobility Rehabilitation",
+        en: "He walked carefully across the clinic hallway using a pair of lightweight aluminum crutches.",
+        ar: "مَشَى بِحَذَرٍ فِي مَمَرِّ العِيَادَةِ مُسْتَخْدِمًا عَكَّازَيْنِ مِنَ الأَلُومِنْيُومِ الخَفِيفِ.",
+      },
+      {
+        context: "Sprained Ankle",
+        en: "The doctor adjusted the underarm crutches to match the height of the injured runner.",
+        ar: "عَدَّلَ الطَّبِيبُ ارْتِفَاعَ العَكَّازَاتِ لِيُنَاسِبَ طُولَ العَدَّاءِ المُصَابِ.",
+      },
+      {
+        context: "Non-Weight Bearing",
+        en: "Using crutches allows a fractured leg bone to heal without bearing heavy body weight.",
+        ar: "يُتِيحُ اسْتِخْدَامُ العَكَّازَاتِ لِعَظْمِ السَّاقِ المَكْسُورِ الِالْتِئَامَ دُونَ ضَغْطٍ.",
+      },
+    ],
+    exampleSentence:
+      "He walked carefully across the clinic hallway using a pair of lightweight aluminum crutches.",
+    exampleArabic:
+      "مَشَى بِحَذَرٍ فِي مَمَرِّ العِيَادَةِ مُسْتَخْدِمًا عَكَّازَيْنِ مِنَ الأَلُومِنْيُومِ الخَفِيفِ.",
+  },
+  walker: {
+    id: "walker",
+    arabic: "مَشَّايَةُ كِبَارِ السِّنِّ وَالمَرْضَى (إِطَارُ المَشْيِ الطِّبِّيّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈwɔːkər",
+    pronunciationTip: "Pronounce 'WAW-ker' (/ˈwɔː.kər/).",
+    collocations: ["use a walker", "folding walker", "walker with wheels", "rehabilitation walker"],
+    phrasalVerbs: [
+      {
+        phrase: "lean on",
+        meaning: "support body balance on four-legged frame",
+        arabic: "يَسْتَنِدُ عَلَى المَشَّايَة",
+        example: "The recovering patient leaned on her walker.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Balance Support",
+        en: "The elderly patient used a four-wheeled walker with hand brakes to stroll safely around the garden.",
+        ar: "اسْتَخْدَمَتِ المَرِيضَةُ المُسِنَّةُ مَشَّايَةً ذَاتَ ٤ عَجَلَاتٍ لِلتَّجَوُّلِ بِأَمَانٍ.",
+      },
+      {
+        context: "Rehabilitation",
+        en: "Physical therapists encourage post-hip surgery patients to practice walking using a folding walker.",
+        ar: "يُشَجِّعُ المُعَالِجُونَ المَرْضَى بَعْدَ جِرَاحَاتِ الفَخْذِ عَلَى المَشْيِ بِالمَشَّايَةِ.",
+      },
+      {
+        context: "Sturdy Frame",
+        en: "Rubber grip feet and a lightweight aluminum frame make the medical walker extremely stable.",
+        ar: "تَجْعَلُ المَقَابِضُ المَطَّاطِيَّةُ وَالهَيْكَلُ الأَلُومِنْيُومُ المَشَّايَةَ ثَابِتَةً جِدًّا.",
+      },
+    ],
+    exampleSentence:
+      "The elderly patient used a four-wheeled walker with hand brakes to stroll safely around the garden.",
+    exampleArabic:
+      "اسْتَخْدَمَتِ المَرِيضَةُ المُسِنَّةُ مَشَّايَةً ذَاتَ ٤ عَجَلَاتٍ لِلتَّجَوُّلِ بِأَمَانٍ.",
+  },
+  ambulance: {
+    id: "ambulance",
+    arabic: "سَيَّارَةُ الإِسْعَاف (مَرْكَبَةُ الطَّوَارِئِ وَالإِنْقَاذ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈæmbjələns",
+    pronunciationTip: "Pronounce 'AM-byu-luns' (/ˈæm.bjʊ.ləns/).",
+    collocations: ["call an ambulance", "ambulance siren", "ambulance paramedics"],
+    phrasalVerbs: [
+      {
+        phrase: "rush to hospital in",
+        meaning: "transport critical patient with sirens and flashing lights",
+        arabic: "يَنْقُلُ سَرِيعًا بِسَيَّارَةِ الإِسْعَاف",
+        example: "The patient was rushed to the hospital in an ambulance.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Emergency Transport",
+        en: "The ambulance raced through city traffic with flashing blue lights and blaring sirens.",
+        ar: "انْطَلَقَتْ سَيَّارَةُ الإِسْعَافِ فِي شَوَارِعِ المَدِينَةِ بِالأَضْوَاءِ الزَّرْقَاءِ وَالصَّفَّارَاتِ.",
+      },
+      {
+        context: "Mobile ICU",
+        en: "Modern emergency ambulances are fully equipped with defibrillators, oxygen, and medications.",
+        ar: "تُجَهَّزُ سَيَّارَاتُ الإِسْعَافِ الحَدِيثَةُ بِأَجْهِزَةِ صَدَمَاتِ القَلْبِ وَالأُكْسُجِينِ وَالأَدْوِيَةِ.",
+      },
+      {
+        context: "Rapid Response",
+        en: "Calling emergency services dispatched a nearby ambulance to the scene within minutes.",
+        ar: "أَدَّى الاتِّصَالُ بِالطَّوَارِئِ إِلَى إِرْسَالِ سَيَّارَةِ إِسْعَافٍ إِلَى المَوْقِعِ فِي دَقَائِقَ.",
+      },
+    ],
+    exampleSentence:
+      "The ambulance raced through city traffic with flashing blue lights and blaring sirens.",
+    exampleArabic:
+      "انْطَلَقَتْ سَيَّارَةُ الإِسْعَافِ فِي شَوَارِعِ المَدِينَةِ بِالأَضْوَاءِ الزَّرْقَاءِ وَالصَّفَّارَاتِ.",
+  },
+  table: {
+    id: "table",
+    arabic: "طَاوِلَة (مَائِدَةُ الطَّعَام)",
+    partOfSpeech: "noun",
+    phonetic: "ˈteɪbəl",
+    pronunciationTip: "Long 'a' sound /eɪ/: 'TAY-bul'.",
+    collocations: ["dining table", "reserve a table", "table for two", "set the table"],
+    phrasalVerbs: [
+      {
+        phrase: "sit at",
+        meaning: "occupy seat by dining table",
+        arabic: "يَجْلِسُ إِلَى المَائِدَة",
+        example: "We sat at a candlelit corner table.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Restaurant Dining",
+        en: "The waiter led our party to a beautifully decorated table beside the window.",
+        ar: "قَادَ النَّادِلُ مَجْمُوعَتَنَا إِلَى طَاوِلَةٍ مُزَيَّنَةٍ بِجِوَارِ النَّافِذَةِ.",
+      },
+      {
+        context: "Reservation",
+        en: "I phoned ahead to book a private dining table for dinner.",
+        ar: "اتَّصَلْتُ مُسْبَقًا لِحَجْزِ طَاوِلَةِ طَعَامٍ خَاصَّةٍ لِلْعَشَاءِ.",
+      },
+      {
+        context: "Service",
+        en: "The busser wiped the polished mahogany table between courses.",
+        ar: "نَظَّفَ المُسَاعِدُ طَاوِلَةَ المَاهُوجْنِي بَيْنَ الوَجَبَاتِ.",
+      },
+    ],
+    exampleSentence: "The waiter led our party to a beautifully decorated table beside the window.",
+    exampleArabic:
+      "قَادَ النَّادِلُ مَجْمُوعَتَنَا إِلَى طَاوِلَةٍ مُزَيَّنَةٍ بِجِوَارِ النَّافِذَةِ.",
+  },
+  booth: {
+    id: "booth",
+    arabic: "كَبِينَةُ جُلُوس (مَقْعَدُ المَطْعَمِ المُجَوَّفِ المُبَطَّن)",
+    partOfSpeech: "noun",
+    phonetic: "buːð",
+    pronunciationTip: "Long 'oo' sound /uː/: 'BOOTH'.",
+    collocations: ["corner booth", "leather booth", "cozy booth"],
+    phrasalVerbs: [
+      {
+        phrase: "tuck into",
+        meaning: "settle into cushioned seating",
+        arabic: "يَنْزَوِي فِي كَبِينَةِ الجُلُوس",
+        example: "We tucked into a plush corner booth.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Intimate Seating",
+        en: "Families often prefer sitting in a cozy leather booth for extra privacy.",
+        ar: "تُفَضِّلُ العَائِلَاتُ الجُلُوسَ فِي كَبِينَةٍ جِلْدِيَّةٍ مُرِيحَةٍ لِمَزِيدٍ مِنَ الخُصُوصِيَّةِ.",
+      },
+      {
+        context: "Diner Style",
+        en: "The diner featured shiny red vinyl booths and chrome tables.",
+        ar: "تَمَيَّزَ المَطْعَمُ بِكَبَائِنَ جِلْدِيَّةٍ حَمْرَاءِ لَامِعَةٍ.",
+      },
+      {
+        context: "Requesting",
+        en: "We asked the hostess if a comfortable window booth was available.",
+        ar: "سَأَلْنَا المُضِيفَةَ عَمَّا إِذَا كَانَتْ هُنَاكَ كَبِينَةُ نَافِذَةٍ مُتَاحَةً.",
+      },
+    ],
+    exampleSentence: "Families often prefer sitting in a cozy leather booth for extra privacy.",
+    exampleArabic:
+      "تُفَضِّلُ العَائِلَاتُ الجُلُوسَ فِي كَبِينَةٍ جِلْدِيَّةٍ مُرِيحَةٍ لِمَزِيدٍ مِنَ الخُصُوصِيَّةِ.",
+  },
+  menu: {
+    id: "menu",
+    arabic: "قَائِمَةُ الطَّعَام (مِنْيُو / لَائِحَةُ المَأْكُولَات)",
+    partOfSpeech: "noun",
+    phonetic: "ˈmɛnjuː",
+    pronunciationTip: "Pronounce 'MEN-yoo'.",
+    collocations: ["dessert menu", "tasting menu", "dinner menu"],
+    phrasalVerbs: [
+      {
+        phrase: "browse through",
+        meaning: "read through food offerings leisurely",
+        arabic: "يَتَصَفَّحُ قَائِمَةَ الطَّعَام",
+        example: "We browsed through the leather-bound menu.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Ordering",
+        en: "The server handed each guest a laminated dinner menu.",
+        ar: "سَلَّمَ النَّادِلُ كُلَّ ضَيْفٍ قَائِمَةَ طَعَامٍ مَغَلَّفَةً.",
+      },
+      {
+        context: "Dietary",
+        en: "The restaurant menu clearly labeled vegan and gluten-free items.",
+        ar: "حَدَّدَتْ قَائِمَةُ المَطْعَمِ الخِيَارَاتِ النَّبَاتِيَّةَ بِوُضُوحٍ.",
+      },
+      {
+        context: "Tasting Menu",
+        en: "The chef designed an exquisite five-course tasting menu.",
+        ar: "صَمَّمَ الطَّاهِي قَائِمَةَ تَذَوُّقٍ رَائِعَةً مِنْ خَمْسَةِ أَطْبَاقٍ.",
+      },
+    ],
+    exampleSentence: "The server handed each guest a laminated dinner menu.",
+    exampleArabic: "سَلَّمَ النَّادِلُ كُلَّ ضَيْفٍ قَائِمَةَ طَعَامٍ مَغَلَّفَةً.",
+  },
+  napkin: {
+    id: "napkin",
+    arabic: "مِنْدِيلُ المَائِدَة (فُوطَةُ السُّفْرَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈnæpkɪn",
+    pronunciationTip: "Short 'a' sound: 'NAP-kin'.",
+    collocations: ["cloth napkin", "paper napkin", "fold a napkin"],
+    phrasalVerbs: [
+      {
+        phrase: "unfold onto",
+        meaning: "spread cloth square across lap",
+        arabic: "يَبْسُطُ المِنْدِيلَ عَلَى حِجْرِهِ",
+        example: "He unfolded his linen cloth onto his lap.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Table Etiquette",
+        en: "Dining etiquette suggests placing your linen napkin across your lap.",
+        ar: "تَقْتَضِي آدَابُ المَائِدَةِ وَضْعَ مِنْدِيلِ القُمَاشِ عَلَى الحِجْرِ.",
+      },
+      {
+        context: "Table Setting",
+        en: "The waiter folded starched white napkins into standing lotus shapes.",
+        ar: "طَوَى النَّادِلُ مَنَادِيلَ القُطْنِ إِلَى أَشْكَالِ زَهْرَةِ اللُّوتَسِ.",
+      },
+      {
+        context: "Casual Dining",
+        en: "A dispenser filled with paper napkins was placed on every table.",
+        ar: "وُضِعَتْ عُلْبَةُ مَنَادِيلَ وَرَقِيَّةٍ عَلَى كُلِّ طَاوِلَةٍ.",
+      },
+    ],
+    exampleSentence: "Dining etiquette suggests placing your linen napkin across your lap.",
+    exampleArabic: "تَقْتَضِي آدَابُ المَائِدَةِ وَضْعَ مِنْدِيلِ القُمَاشِ عَلَى الحِجْرِ.",
+  },
+  centerpiece: {
+    id: "centerpiece",
+    arabic: "قِطْعَةُ تَزْيِينِ المَائِدَة (تُنْسِيقَةُ الزُّهُورِ الوَسَطِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsɛntərpiːs",
+    pronunciationTip: "Pronounce 'SEN-ter-pees'.",
+    collocations: ["floral centerpiece", "table centerpiece", "elegant centerpiece"],
+    phrasalVerbs: [
+      {
+        phrase: "stand out",
+        meaning: "attract visual attention in center",
+        arabic: "يَبْرُزُ فِي وَسَطِ المَائِدَة",
+        example: "The centerpiece of white lilies stood out.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Table Decoration",
+        en: "A graceful floral centerpiece composed of fresh roses adorned the table.",
+        ar: "زَيَّنَتْ تُنْسِيقَةُ زُهُورٍ جَمِيلَةٌ مِنَ الوَرْدِ وَسَطَ المَائِدَةِ.",
+      },
+      {
+        context: "Wedding Reception",
+        en: "Each banquet table featured a crystal vase centerpiece.",
+        ar: "تَمَيَّزَتْ كُلُّ مَائِدَةٍ بِقِطْعَةِ مَرْكَزِيَّةٍ مِنْ مَزْهَرِيَّةٍ كِرِيسْتَالِيَّةٍ.",
+      },
+      {
+        context: "Sightlines",
+        en: "Low centerpieces allow guests to maintain clear eye contact across the table.",
+        ar: "تُتِيحُ التُّحَفُ الوَسَطِيَّةُ المُنْخَفِضَةُ لِلضُّيُوفِ التَّوَاصُلَ البَصَرِيَّ المُبَاشِرَ.",
+      },
+    ],
+    exampleSentence: "A graceful floral centerpiece composed of fresh roses adorned the table.",
+    exampleArabic: "زَيَّنَتْ تُنْسِيقَةُ زُهُورٍ جَمِيلَةٌ مِنَ الوَرْدِ وَسَطَ المَائِدَةِ.",
+  },
+  "place-setting": {
+    id: "place-setting",
+    arabic: "طَقْمُ إِعْدَادِ المَائِدَة (تَرْتِيبُ أَدَوَاتِ الطَّعَام)",
+    partOfSpeech: "noun",
+    phonetic: "pleɪs ˈsɛtɪŋ",
+    pronunciationTip: "Pronounce 'PLAYS set-ing'.",
+    collocations: ["formal place setting", "complete place setting", "dinner place setting"],
+    phrasalVerbs: [
+      {
+        phrase: "lay out",
+        meaning: "arrange utensils and dinnerware",
+        arabic: "يُرَتِّبُ أَدَوَاتِ السُّفْرَةِ بِإِتْقَان",
+        example: "Servers laid out silver place settings.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Formal Dining",
+        en: "A formal place setting includes a charger plate, fork, knife, and wine glass.",
+        ar: "يَشْمَلُ إِعْدَادُ المَائِدَةِ الرَّسْمِيُّ طَبَقَ تَقْدِيمٍ وَشَوْكَةً وَسِكِّينًا وَكَأْسًا.",
+      },
+      {
+        context: "Banquet Service",
+        en: "The team inspected each place setting to ensure spotless silverware.",
+        ar: "عَايَنَ الفَرِيقُ تَرْتِيبَ أَدَوَاتِ كُلِّ مَقْعَدٍ لِضَمَانِ نَظَافَتِهَا.",
+      },
+      {
+        context: "Restaurant Setup",
+        en: "Every place setting was accompanied by a folded linen napkin.",
+        ar: "رُفِقَ كُلُّ طَقْمِ إِعْدَادِ مَائِدَةٍ بِمِنْدِيلٍ كَتَّانِيٍّ مَطْوِيٍّ.",
+      },
+    ],
+    exampleSentence:
+      "A formal place setting includes a charger plate, fork, knife, and wine glass.",
+    exampleArabic:
+      "يَشْمَلُ إِعْدَادُ المَائِدَةِ الرَّسْمِيُّ طَبَقَ تَقْدِيمٍ وَشَوْكَةً وَسِكِّينًا وَكَأْسًا.",
+  },
+  "salt-shaker": {
+    id: "salt-shaker",
+    arabic: "مَمْلَحَة (مِلَاحَةُ المَائِدَة)",
+    partOfSpeech: "noun",
+    phonetic: "sɔːlt ˈʃeɪkər",
+    pronunciationTip: "Pronounce 'SAWLT shay-ker'.",
+    collocations: ["pass the salt shaker", "glass salt shaker", "fill salt shaker"],
+    phrasalVerbs: [
+      {
+        phrase: "pass over",
+        meaning: "hand seasoning dispenser across table",
+        arabic: "يُنَاوِلُ المَمْلَحَة",
+        example: "Could you pass over the salt shaker?",
+      },
+    ],
+    sentences: [
+      {
+        context: "Seasoning Food",
+        en: "He reached across the table for the glass salt shaker to season his soup.",
+        ar: "مَدَّ يَدَهُ عَبْرَ المَائِدَةِ نَحْوَ المَمْلَحَةِ الزُّجَاجِيَّةِ لِتَتْبِيلِ حَسَائِهِ.",
+      },
+      {
+        context: "Table Pair",
+        en: "A matching ceramic salt shaker and pepper mill sat at the center.",
+        ar: "اسْتَقَرَّتْ مَمْلَحَةٌ خَزَفِيَّةٌ وَمِطْحَنَةُ فُلْفُلٍ فِي المُنْتَصَفِ.",
+      },
+      {
+        context: "Maintenance",
+        en: "The busser refilled the empty salt shakers with fine sea salt.",
+        ar: "أَعَادَ المُسَاعِدُ مَلْءَ المَمَالِحِ الفَارِغَةِ بِمِلْحِ البَحْرِ.",
+      },
+    ],
+    exampleSentence: "He reached across the table for the glass salt shaker to season his soup.",
+    exampleArabic:
+      "مَدَّ يَدَهُ عَبْرَ المَائِدَةِ نَحْوَ المَمْلَحَةِ الزُّجَاجِيَّةِ لِتَتْبِيلِ حَسَائِهِ.",
+  },
+  "pepper-shaker": {
+    id: "pepper-shaker",
+    arabic: "مِرَشَّةُ الفُلْفُل (فُلْفُلِيَّةُ المَائِدَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpɛpər ˈʃeɪkər",
+    pronunciationTip: "Pronounce 'PEP-er shay-ker'.",
+    collocations: ["black pepper shaker", "pass the pepper shaker", "ceramic pepper shaker"],
+    phrasalVerbs: [
+      {
+        phrase: "shake over",
+        meaning: "disperse ground spice across food",
+        arabic: "يَرُشُّ الفُلْفُلَ فَوْقَ الطَّعَام",
+        example: "She shook fresh black pepper over her pasta.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Flavoring",
+        en: "She used the stainless steel pepper shaker to season her fresh salad.",
+        ar: "اسْتَخْدَمَتْ مِرَشَّةَ الفُلْفُلِ لِتَتْبِيلِ سَلَطَتِهَا الخَضْرَاءِ.",
+      },
+      {
+        context: "Tableware Set",
+        en: "The vintage restaurant featured ornate porcelain pepper shakers.",
+        ar: "تَمَيَّزَ المَطْعَمُ القَدِيمُ بِمِرَشَّاتِ فُلْفُلٍ بُورْسِلِينِيَّةٍ مُزَخْرَفَةٍ.",
+      },
+      {
+        context: "Fresh Grinding",
+        en: "The waiter offered freshly ground black pepper from a tall wooden mill.",
+        ar: "عَرَضَ النَّادِلُ فُلْفُلًا أَسْوَدَ مَطْحُونًا طَازَجًا مِنْ مِطْحَنَةٍ خَشَبِيَّةٍ.",
+      },
+    ],
+    exampleSentence: "She used the stainless steel pepper shaker to season her fresh salad.",
+    exampleArabic: "اسْتَخْدَمَتْ مِرَشَّةَ الفُلْفُلِ لِتَتْبِيلِ سَلَطَتِهَا الخَضْرَاءِ.",
+  },
+  "high-chair": {
+    id: "high-chair",
+    arabic: "كُرْسِيُّ الأَطْفَالِ العَالِي",
+    partOfSpeech: "noun",
+    phonetic: "haɪ tʃɛər",
+    pronunciationTip: "Pronounce 'HY chair'.",
+    collocations: ["wooden high chair", "strap into a high chair", "toddler high chair"],
+    phrasalVerbs: [
+      {
+        phrase: "strap into",
+        meaning: "secure toddler safely with harness",
+        arabic: "يُحْكِمُ رَبْطَ الطِّفْلِ فِي الكُرْسِيّ",
+        example: "Parents strapped the toddler into the high chair.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Family Dining",
+        en: "The host brought a clean wooden high chair with a safety strap.",
+        ar: "أَحْضَرَ المُضِيفُ كُرْسِيَّ أَطْفَالٍ خَشَبِيًّا نَظِيفًا مَعَ حِزَامِ أَمَانٍ.",
+      },
+      {
+        context: "Toddler Comfort",
+        en: "The toddler happily ate crackers from the high chair tray.",
+        ar: "تَنَاوَلَ الطِّفْلُ البَسْكَوِيتَ بِسَعَادَةٍ مِنْ صِينِيَّةِ كُرْسِيِّهِ العَالِي.",
+      },
+      {
+        context: "Hospitality",
+        en: "Family-friendly restaurants keep several sanitized high chairs ready.",
+        ar: "تَحْتَفِظُ المَطَاعِمُ العَائِلِيَّةُ بِعَدَدٍ مِنْ كَرَاسِي الأَطْفَالِ المُعَقَّمَةِ.",
+      },
+    ],
+    exampleSentence: "The host brought a clean wooden high chair with a safety strap.",
+    exampleArabic:
+      "أَحْضَرَ المُضِيفُ كُرْسِيَّ أَطْفَالٍ خَشَبِيًّا نَظِيفًا مَعَ حِزَامِ أَمَانٍ.",
+  },
+  "bar-stool": {
+    id: "bar-stool",
+    arabic: "كُرْسِيُّ البَارِ العَالِي",
+    partOfSpeech: "noun",
+    phonetic: "bɑːr stuːl",
+    pronunciationTip: "Pronounce 'BAR stool'.",
+    collocations: ["leather bar stool", "swivel bar stool", "wooden bar stool"],
+    phrasalVerbs: [
+      {
+        phrase: "hop onto",
+        meaning: "climb into elevated seat with footrest",
+        arabic: "يَصْعَدُ لِلْجُلُوسِ عَلَى المَقْعَدِ العَالِي",
+        example: "He hopped onto a leather bar stool.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Bar Seating",
+        en: "Customers perched on cushioned leather bar stools while waiting.",
+        ar: "جَلَسَ الزَّبَائِنُ عَلَى كَرَاسِي بَارٍ جِلْدِيَّةٍ مُبَطَّنَةٍ بِانْتِظَارِ طَلَبَاتِهِمْ.",
+      },
+      {
+        context: "Modern Counter",
+        en: "The kitchen counter featured tall swiveling bar stools with footrests.",
+        ar: "تَمَيَّزَتْ طَاوِلَةُ المَطْبَخِ بِكَرَاسِي بَارٍ دَوَّارَةٍ مَعَ مَسَانِدَ أَرْجُلٍ.",
+      },
+      {
+        context: "Casual Drinks",
+        en: "Friends gathered around high tables on matching oak bar stools.",
+        ar: "اجْتَمَعَ الأَصْدِقَاءُ حَوْلَ طَاوِلَاتٍ عَالِيَةٍ عَلَى كَرَاسِي بَلُّوطِيَّةٍ.",
+      },
+    ],
+    exampleSentence: "Customers perched on cushioned leather bar stools while waiting.",
+    exampleArabic:
+      "جَلَسَ الزَّبَائِنُ عَلَى كَرَاسِي بَارٍ جِلْدِيَّةٍ مُبَطَّنَةٍ بِانْتِظَارِ طَلَبَاتِهِمْ.",
+  },
+  counter: {
+    id: "counter",
+    arabic: "مِنْضَدَةُ الخِدْمَة (كَاوْنْتَر)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkaʊntər",
+    pronunciationTip: "Pronounce 'KOWN-ter'.",
+    collocations: ["bar counter", "kitchen counter", "order at the counter"],
+    phrasalVerbs: [
+      {
+        phrase: "walk up to",
+        meaning: "approach front service station",
+        arabic: "يَتَقَدَّمُ نَحْوَ مِنْضَدَةِ الخِدْمَة",
+        example: "He walked up to the counter to order coffee.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Cafe Service",
+        en: "Customers lined up at the wooden counter to order specialty coffees.",
+        ar: "اصْطَفَّ الزَّبَائِنُ عِنْدَ المِنْضَدَةِ الخَشَبِيَّةِ لِطَلَبِ القَهْوَةِ.",
+      },
+      {
+        context: "Open Kitchen",
+        en: "Diners sitting at the marble counter watched their entrees being prepared.",
+        ar: "شَاهَدَ الضُّيُوفُ عِنْدَ الكَاوْنْتَر الرُّخَامِيِّ إِعْدَادَ أَطْبَاقِهِمْ.",
+      },
+      {
+        context: "Sanitation",
+        en: "Staff disinfected the front counter thoroughly between interactions.",
+        ar: "عَقَّمَ الطَّاقَمُ مِنْضَدَةَ الاسْتِقْبَالِ بِعِنَايَةٍ بَيْنَ تَعَامُلَاتِ الزَّبَائِنِ.",
+      },
+    ],
+    exampleSentence: "Customers lined up at the wooden counter to order specialty coffees.",
+    exampleArabic: "اصْطَفَّ الزَّبَائِنُ عِنْدَ المِنْضَدَةِ الخَشَبِيَّةِ لِطَلَبِ القَهْوَةِ.",
+  },
+  chopsticks: {
+    id: "chopsticks",
+    arabic: "عِيدَانُ الأَكْل (عِصِيُّ تَنَاوُلِ الطَّعَامِ الآسْيَوِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtʃɒpstɪks",
+    pronunciationTip: "Pronounce 'CHOP-stiks' (/ˈtʃɒp.stɪks/).",
+    collocations: ["pair of chopsticks", "wooden chopsticks", "use chopsticks"],
+    phrasalVerbs: [
+      {
+        phrase: "pick up with",
+        meaning: "pinch food deftly using wooden sticks",
+        arabic: "يَلْتَقِطُ بِعِيدَانِ الأَكْل",
+        example: "He picked up a piece of salmon sushi using chopsticks.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Japanese Dining",
+        en: "The sushi chef provided smooth wooden chopsticks on a ceramic holder.",
+        ar: "قَدَّمَ طَاهِي السُّوشِي عِيدَانَ أَكْلٍ خَشَبِيَّةً عَلَى حَامِلٍ خَزَفِيٍّ.",
+      },
+      {
+        context: "Asian Cuisine",
+        en: "Eating dumplings and noodles with chopsticks is a fun cultural skill.",
+        ar: "تَنَاوُلُ الفَطَائِرِ وَالمَعْكَرُونَةِ بِالعِيدَانِ مَهَارَةٌ ثَقَافِيَّةٌ مُمْتِعَةٌ.",
+      },
+      {
+        context: "Restaurant Table",
+        en: "Paper-wrapped bamboo chopsticks were placed beside every bowl of ramen.",
+        ar: "وُضِعَتْ عِيدَانُ خَيْزُرَانٍ مَلْفُوفَةٌ بِالوَرَقِ بِجَانِبِ كُلِّ وِعَاءِ رَامِن.",
+      },
+    ],
+    exampleSentence: "The sushi chef provided smooth wooden chopsticks on a ceramic holder.",
+    exampleArabic: "قَدَّمَ طَاهِي السُّوشِي عِيدَانَ أَكْلٍ خَشَبِيَّةً عَلَى حَامِلٍ خَزَفِيٍّ.",
+  },
+  "serving-tray": {
+    id: "serving-tray",
+    arabic: "صِينِيَّةُ التَّقْدِيم (صِينِيَّةُ الخِدْمَةِ وَتَوْزِيعِ الأَطْبَاق)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsɜːrvɪŋ treɪ",
+    pronunciationTip: "Pronounce 'SUR-ving tray'.",
+    collocations: ["carry a serving tray", "silver serving tray", "wooden serving tray"],
+    phrasalVerbs: [
+      {
+        phrase: "balance on",
+        meaning: "carry flat platter steadily with one hand",
+        arabic: "يُوَازِنُ الصِّينِيَّةَ عَلَى يَدِهِ",
+        example: "The waiter balanced a heavy serving tray on his hand.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Service Skill",
+        en: "The experienced server balanced a serving tray laden with drinks.",
+        ar: "وَازَنَ النَّادِلُ الخَبِيرُ صِينِيَّةَ تَقْدِيمٍ مَلِيئَةً بِالمَشْرُوبَاتِ بِرَشَاقَةٍ.",
+      },
+      {
+        context: "Room Service",
+        en: "Breakfast arrived at our room arranged on an elegant wooden serving tray.",
+        ar: "وَصَلَ الإِفْطَارُ إِلَى غُرْفَتِنَا عَلَى صِينِيَّةِ تَقْدِيمٍ خَشَبِيَّةٍ أَنِيقَةٍ.",
+      },
+      {
+        context: "Buffet Setup",
+        en: "Chefs brought out fresh pastries on polished silver serving trays.",
+        ar: "أَحْضَرَ الطُّهَاةُ مُعَجَّنَاتٍ طَازَجَةً عَلَى صَوَانِي تَقْدِيمٍ فِضِّيَّةٍ.",
+      },
+    ],
+    exampleSentence: "The experienced server balanced a serving tray laden with drinks.",
+    exampleArabic:
+      "وَازَنَ النَّادِلُ الخَبِيرُ صِينِيَّةَ تَقْدِيمٍ مَلِيئَةً بِالمَشْرُوبَاتِ بِرَشَاقَةٍ.",
+  },
+  "wine-glass": {
+    id: "wine-glass",
+    arabic: "كَأْسٌ زُجَاجِيَّةٌ ذَاتُ سَاق (كُوبُ عَصِيرٍ أَنِيق)",
+    partOfSpeech: "noun",
+    phonetic: "waɪn ɡlæs",
+    pronunciationTip: "Pronounce 'WYN glass'.",
+    collocations: ["stemmed wine glass", "crystal wine glass", "clink wine glasses"],
+    phrasalVerbs: [
+      {
+        phrase: "clink together",
+        meaning: "touch glasses gently to celebrate",
+        arabic: "يَقْرَعُ الكُؤُوسَ لِلتَّهْنِئَة",
+        example: "Guests clinked their crystal glasses together in a toast.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Formal Setting",
+        en: "Tall stemmed crystal glasses sparkled under the soft chandelier lighting.",
+        ar: "تَلَأْلَأَتِ الكُؤُوسُ الكِرِيسْتَالِيَّةُ ذَاتُ السَّاقِ الطَّوِيلَةِ تَحْتَ الثُّرَيَّا.",
+      },
+      {
+        context: "Toast",
+        en: "The host raised his glass to propose a warm toast honoring our team.",
+        ar: "رَفَعَ المُضِيفُ كَأْسَهُ لِيُقَدِّمَ تَحِيَّةً حَارَّةً تَكْرِيمًا لِفَرِيقِنَا.",
+      },
+      {
+        context: "Careful Handling",
+        en: "The busser polished delicate glassware with a soft microfiber cloth.",
+        ar: "لَمَّعَ المُسَاعِدُ الكُؤُوسَ الزُّجَاجِيَّةَ الحَسَّاسَةَ بِقُمَاشٍ نَاعِمٍ.",
+      },
+    ],
+    exampleSentence: "Tall stemmed crystal glasses sparkled under the soft chandelier lighting.",
+    exampleArabic:
+      "تَلَأْلَأَتِ الكُؤُوسُ الكِرِيسْتَالِيَّةُ ذَاتُ السَّاقِ الطَّوِيلَةِ تَحْتَ الثُّرَيَّا.",
+  },
+  "order-menu": {
+    id: "order-menu",
+    arabic: "طَلَبُ قَائِمَةِ الطَّعَام",
+    partOfSpeech: "noun",
+    phonetic: "ˈɔːrdər ˈmɛnjuː",
+    pronunciationTip: "Pronounce 'OR-der MEN-yoo'.",
+    collocations: ["digital order menu", "select from order menu", "check carefully"],
+    phrasalVerbs: [
+      {
+        phrase: "order from",
+        meaning: "select items to purchase",
+        arabic: "يَطْلُبُ مِن",
+        example: "We ordered appetizers from the digital order menu.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Ordering",
+        en: "Customers scan the QR code to view the digital order menu on smartphones.",
+        ar: "يَمْسَحُ الزَّبَائِنُ الرَّمْزَ لِعَرْضِ قَائِمَةِ الطَّلَبِ الرَّقْمِيَّةِ عَلَى هَوَاتِفِهِمْ.",
+      },
+      {
+        context: "Selection",
+        en: "The waiter explained each signature main course featured on the order menu.",
+        ar: "شَرَحَ النَّادِلُ الأَطْبَاقَ الرَّئِيسِيَّةَ المَعْرُوضَةَ فِي قَائِمَةِ الطَّلَبِ.",
+      },
+      {
+        context: "Kids Menu",
+        en: "A colorful illustrated order menu was provided for younger children.",
+        ar: "قُدِّمَتْ قَائِمَةُ طَلَبَاتٍ مُلَوَّنَةٌ وَمُرَسَّمَةٌ لِلأَطْفَالِ الصِّغَارِ.",
+      },
+    ],
+    exampleSentence: "Customers scan the QR code to view the digital order menu on smartphones.",
+    exampleArabic:
+      "يَمْسَحُ الزَّبَائِنُ الرَّمْزَ لِعَرْضِ قَائِمَةِ الطَّلَبِ الرَّقْمِيَّةِ عَلَى هَوَاتِفِهِمْ.",
+  },
+  appetizer: {
+    id: "appetizer",
+    arabic: "مُقَبِّلَات (فَوَاتِحُ الشَّهِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈæpɪtaɪzər",
+    pronunciationTip: "Pronounce 'AP-uh-ty-zer'.",
+    collocations: ["hot appetizer", "order an appetizer", "appetizer platter"],
+    phrasalVerbs: [
+      {
+        phrase: "start with",
+        meaning: "begin meal with introductory course",
+        arabic: "يَبْدَأُ بِالمُقَبِّلَات",
+        example: "We started with a plate of crispy calamari appetizers.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Course Selection",
+        en: "We shared a delicious appetizer of garlic bruschetta and warm mushrooms.",
+        ar: "تَشَارَكْنَا مُقَبِّلَاتٍ لَذِيذَةً مِنْ خُبْزِ الثُّومِ وَالفِطْرِ المَحْشُوِّ.",
+      },
+      {
+        context: "Menu Option",
+        en: "The restaurant menu offered a wide selection of vegetable appetizers.",
+        ar: "تَضَمَّنَتْ قَائِمَةُ المَطْعَمِ تَشْكِيلَةً وَاسِعَةً مِنْ مُقَبِّلَاتِ الخُضْرَاوَاتِ.",
+      },
+      {
+        context: "Party Platter",
+        en: "The waiter served an assorted hot appetizer platter with dipping sauces.",
+        ar: "قَدَّمَ النَّادِلُ طَبَقَ مُقَبِّلَاتٍ سَاخِنَةٍ مُشَكَّلَةٍ مَعَ صَلَصَاتِ التَّغْمِيسِ.",
+      },
+    ],
+    exampleSentence: "We shared a delicious appetizer of garlic bruschetta and warm mushrooms.",
+    exampleArabic:
+      "تَشَارَكْنَا مُقَبِّلَاتٍ لَذِيذَةً مِنْ خُبْزِ الثُّومِ وَالفِطْرِ المَحْشُوِّ.",
+  },
+  "main-course": {
+    id: "main-course",
+    arabic: "الطَّبَقُ الرَّئِيسِيّ (الوَجْبَةُ الأَسَاسِيَّة)",
+    partOfSpeech: "noun",
+    phonetic: "meɪn kɔːrs",
+    pronunciationTip: "Pronounce 'MAYN kors'.",
+    collocations: ["serve the main course", "choose a main course", "order a main course"],
+    phrasalVerbs: [
+      {
+        phrase: "follow with",
+        meaning: "eat as primary substantial course",
+        arabic: "يَتْبَعُ بِالطَّبَقِ الرَّئِيسِيّ",
+        example: "We followed soup with a savory chicken main course.",
+      },
+      {
+        phrase: "serve up",
+        meaning: "present a freshly prepared hot entree",
+        arabic: "يُقَدِّمُ الطَّبَقَ الرَّئِيسِيَّ",
+        example: "The kitchen served up our main course promptly.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dinner Entree",
+        en: "For my main course, I ordered grilled sea bass with roasted potatoes.",
+        ar: "اخْتَرْتُ لِطَبَقِي الرَّئِيسِيِّ سَمَكَ القَارُوصِ المَشْوِيَّ مَعَ البَطَاطِسِ.",
+      },
+      {
+        context: "Service Timing",
+        en: "The waiter brought our hot main courses after we finished salads.",
+        ar: "أَحْضَرَ النَّادِلُ أَطْبَاقَنَا الرَّئِيسِيَّةَ فَوْرَ انْتِهَائِنَا مِنَ السَّلَطَاتِ.",
+      },
+      {
+        context: "Special Dish",
+        en: "The chef's signature main course is slow-cooked braised beef.",
+        ar: "الطَّبَقُ الرَّئِيسِيُّ المُمَيَّزُ لِلشِّيفِ هُوَ اللَّحْمُ المَطْبُوخُ بِبُطْءٍ.",
+      },
+    ],
+    exampleSentence: "For my main course, I ordered grilled sea bass with roasted potatoes.",
+    exampleArabic:
+      "اخْتَرْتُ لِطَبَقِي الرَّئِيسِيِّ سَمَكَ القَارُوصِ المَشْوِيَّ مَعَ البَطَاطِسِ.",
+  },
+  dessert: {
+    id: "dessert",
+    arabic: "حَلْوَى (تَحْلِيَةُ مَا بَعْدَ الطَّعَام)",
+    partOfSpeech: "noun",
+    phonetic: "dɪˈzɜːrt",
+    pronunciationTip: "Stress second syllable: 'di-ZURT'.",
+    collocations: ["delicious dessert", "dessert menu", "order dessert"],
+    phrasalVerbs: [
+      {
+        phrase: "finish with",
+        meaning: "conclude a meal with something sweet",
+        arabic: "يَخْتِمُ بِالحَلْوَى",
+        example: "We finished dinner with a rich chocolate lava cake.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Sweet Finish",
+        en: "We saved room after dinner for a decadent dessert of tiramisu and gelato.",
+        ar: "تَرَكْنَا مَجَالًا بَعْدَ العَشَاءِ لِتَحْلِيَةٍ شَهِيَّةٍ مِنَ التِّيرَامِيسُو وَالآيْس كْرِيم.",
+      },
+      {
+        context: "Dessert Cart",
+        en: "The server wheeled over a wooden dessert trolley displaying fresh fruit tarts.",
+        ar: "قَرَّبَ النَّادِلُ عَرَبَةَ حَلَوِيَّاتٍ تَعْرِضُ تَارْت الفَوَاكِهِ الطَّازَجَةَ.",
+      },
+      {
+        context: "Complimentary",
+        en: "The manager offered our table a complimentary citrus dessert to celebrate.",
+        ar: "قَدَّمَ المَدِيرُ لِطَاوِلَتِنَا تَحْلِيَةَ حَمْضِيَّاتٍ مَجَّانِيَّةً لِلِاحْتِفَالِ.",
+      },
+    ],
+    exampleSentence: "We saved room after dinner for a decadent dessert of tiramisu and gelato.",
+    exampleArabic:
+      "تَرَكْنَا مَجَالًا بَعْدَ العَشَاءِ لِتَحْلِيَةٍ شَهِيَّةٍ مِنَ التِّيرَامِيسُو وَالآيْس كْرِيم.",
+  },
+  "side-dish": {
+    id: "side-dish",
+    arabic: "طَبَقٌ جَانِبِيّ (مُقَبِّلَةٌ مُصَاحِبَة)",
+    partOfSpeech: "noun",
+    phonetic: "saɪd dɪʃ",
+    pronunciationTip: "Pronounce 'SYD dish'.",
+    collocations: ["order a side dish", "vegetable side dish", "side dish of fries"],
+    phrasalVerbs: [
+      {
+        phrase: "come with",
+        meaning: "be accompanied by side portions",
+        arabic: "يَأْتِي مَصْحُوبًا بِـ",
+        example: "The burger comes with a side dish of crispy seasoned fries.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Ordering Accompaniment",
+        en: "You can choose either steamed broccoli or mashed potatoes as your side dish.",
+        ar: "يُمْكِنُكَ اخْتِيَارُ البُرُوكْلِي أَوِ البَطَاطِسِ المَهْرُوسَةِ كَطَبَقٍ جَانِبِيٍّ.",
+      },
+      {
+        context: "Meal Balance",
+        en: "A fresh garden side dish complements a rich and savory meat entrée.",
+        ar: "يُكَمِّلُ الطَّبَقُ الجَانِبِيُّ مِنَ الخُضْرَاوَاتِ طَبَقَ اللَّحْمِ الرَّئِيسِيَّ.",
+      },
+      {
+        context: "Sharing",
+        en: "We ordered several hot side dishes for the whole family to share.",
+        ar: "طَلَبْنَا عِدَّةَ أَطْبَاقٍ جَانِبِيَّةٍ لِيَتَشَارَكَهَا جَمِيعُ أَفْرَادِ العَائِلَةِ.",
+      },
+    ],
+    exampleSentence: "You can choose either steamed broccoli or mashed potatoes as your side dish.",
+    exampleArabic:
+      "يُمْكِنُكَ اخْتِيَارُ البُرُوكْلِي أَوِ البَطَاطِسِ المَهْرُوسَةِ كَطَبَقٍ جَانِبِيٍّ.",
+  },
+  special: {
+    id: "special",
+    arabic: "طَبَقُ اليَوْمِ المُمَيَّز (عَرْضٌ خَاصّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈspɛʃəl",
+    pronunciationTip: "Pronounce 'SPESH-ul'.",
+    collocations: ["daily special", "chef's special", "today's special"],
+    phrasalVerbs: [
+      {
+        phrase: "feature as",
+        meaning: "highlight as promotional dish",
+        arabic: "يُمَثِّلُ الطَّبَقَ المُمَيَّز",
+        example: "Grilled Atlantic salmon was featured as today's special.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Chef's Recommendation",
+        en: "Our waiter wrote the daily specials on a chalkboard stand near the entrance.",
+        ar: "كَتَبَ نَادِلُنَا أَطْبَاقَ اليَوْمِ المُمَيَّزَةَ عَلَى لَوْحَةِ طَبَاشِيرَ قُرْبَ المَدْخَلِ.",
+      },
+      {
+        context: "Seasonal Feature",
+        en: "Today's special is roasted butternut squash soup garnished with pumpkin seeds.",
+        ar: "الطَّبَقُ المُمَيَّزُ لِلْيَوْمِ هُوَ شُورْبَةُ القَرْعِ العَسَلِيِّ المُحَمَّصِ.",
+      },
+      {
+        context: "Limited Availability",
+        en: "The waiter reminded diners that the fresh lobster special was limited in supply.",
+        ar: "ذَكَّرَ النَّادِلُ الضُّيُوفَ بِأَنَّ طَبَقَ الكَرْكَنْدِ المُمَيَّزَ مَحْدُودُ الكَمِّيَّةِ.",
+      },
+    ],
+    exampleSentence: "Our waiter wrote the daily specials on a chalkboard stand near the entrance.",
+    exampleArabic:
+      "كَتَبَ نَادِلُنَا أَطْبَاقَ اليَوْمِ المُمَيَّزَةَ عَلَى لَوْحَةِ طَبَاشِيرَ قُرْبَ المَدْخَلِ.",
+  },
+  bill: {
+    id: "bill",
+    arabic: "فَاتُورَةُ الحِسَاب (حِسَابُ المَطْعَم)",
+    partOfSpeech: "noun",
+    phonetic: "bɪl",
+    pronunciationTip: "Short 'i' sound: 'BIL'.",
+    collocations: ["pay the bill", "ask for the bill", "split the bill"],
+    phrasalVerbs: [
+      {
+        phrase: "settle up",
+        meaning: "pay outstanding charges for meals",
+        arabic: "يُسَدِّدُ الفَاتُورَة",
+        example: "We settled up the dinner bill at the counter.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Ending the Meal",
+        en: "After finishing our tea and dessert, we signaled the waiter to bring the bill.",
+        ar: "بَعْدَ الانْتِهَاءِ مِنَ الشَّايِ وَالحَلْوَى، أَشَرْنَا لِلنَّادِلِ لِإِحْضَارِ الفَاتُورَةِ.",
+      },
+      {
+        context: "Payment Method",
+        en: "We reviewed the itemized bill carefully before paying with a credit card.",
+        ar: "رَاجَعْنَا الفَاتُورَةَ المُفَصَّلَةَ قَبْلَ الدَّفْعِ بِبِطَاقَةِ الائْتِمَانِ.",
+      },
+      {
+        context: "Splitting Costs",
+        en: "Friends decided to split the dinner bill equally among all four diners.",
+        ar: "قَرَّرَ الأَصْدِقَاءُ تَقْسِيمَ فَاتُورَةِ العَشَاءِ بِالتَّسَاوِي بَيْنَ الضُّيُوفِ الأَرْبَعَةِ.",
+      },
+    ],
+    exampleSentence:
+      "After finishing our tea and dessert, we signaled the waiter to bring the bill.",
+    exampleArabic:
+      "بَعْدَ الانْتِهَاءِ مِنَ الشَّايِ وَالحَلْوَى، أَشَرْنَا لِلنَّادِلِ لِإِحْضَارِ الفَاتُورَةِ.",
+  },
+  check: {
+    id: "check",
+    arabic: "شِيكُ الحِسَاب (قَسِيمَةُ دَفْعِ الطَّعَام)",
+    partOfSpeech: "noun",
+    phonetic: "tʃɛk",
+    pronunciationTip: "Pronounce 'CHEK' (/tʃɛk/).",
+    collocations: ["request the check", "pay the check", "bring the check"],
+    phrasalVerbs: [
+      {
+        phrase: "ask for",
+        meaning: "request statement of charges",
+        arabic: "يَطْلُبُ الحِسَاب",
+        example: "May we please ask for the check when you have a moment?",
+      },
+    ],
+    sentences: [
+      {
+        context: "Dining Conclusion",
+        en: "The server placed the check inside a black leather folder with a receipt.",
+        ar: "وَضَعَ النَّادِلُ شِيكَ الحِسَابِ دَاخِلَ حَافِظَةٍ جِلْدِيَّةٍ سَوْدَاءَ مَعَ إِيصَالٍ.",
+      },
+      {
+        context: "Polite Request",
+        en: "Excuse me, could we please have the check whenever you have a moment?",
+        ar: "مَعْذِرَةً، هَلْ يُمْكِنُنَا الحُصُولُ عَلَى شِيكِ الحِسَابِ عِنْدَمَا يَتَسَنَّى لَكَ ذَلِكَ؟",
+      },
+      {
+        context: "Service Charge",
+        en: "The check clearly showed that taxes and a fifteen percent tip were included.",
+        ar: "أَظْهَرَ الحِسَابُ بِوُضُوحٍ أَنَّ الضَّرَائِبَ وَالإِكْرَامِيَّةَ مَشْمُولَةٌ بِالفِعْلِ.",
+      },
+    ],
+    exampleSentence: "The server placed the check inside a black leather folder with a receipt.",
+    exampleArabic:
+      "وَضَعَ النَّادِلُ شِيكَ الحِسَابِ دَاخِلَ حَافِظَةٍ جِلْدِيَّةٍ سَوْدَاءَ مَعَ إِيصَالٍ.",
+  },
+  tip: {
+    id: "tip",
+    arabic: "إِكْرَامِيَّة (بَقْشِيش / مَبْلَغُ شُكْرٍ لِلطَّاقَم)",
+    partOfSpeech: "noun",
+    phonetic: "tɪp",
+    pronunciationTip: "Short 'i' sound: 'TIP'.",
+    collocations: ["leave a tip", "generous tip", "standard tip"],
+    phrasalVerbs: [
+      {
+        phrase: "leave behind",
+        meaning: "provide gratuity on table for service",
+        arabic: "يَتْرُكُ إِكْرَامِيَّة",
+        example: "He left behind a generous tip on the table.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Gratuity",
+        en: "It is customary to leave a fifteen to twenty percent tip for great service.",
+        ar: "مِنَ المُعْتَادِ تَرْكُ إِكْرَامِيَّةٍ تَتَرَاوَحُ بَيْنَ ١٥ وَ٢٠ فِي المِائَةِ لِلْخِدْمَةِ المُمَيَّزَةِ.",
+      },
+      {
+        context: "Generosity",
+        en: "We left a generous cash tip on the table to thank our server for her kindness.",
+        ar: "تَرَكْنَا إِكْرَامِيَّةً نَقْدِيَّةً سَخِيَّةً عَلَى المَائِدَةِ شُكْرًا لِنَادِلَتِنَا.",
+      },
+      {
+        context: "Digital Payment",
+        en: "The payment machine prompted us to select a tip percentage before tapping.",
+        ar: "عَرَضَتْ مَكِينَةُ الدَّفْعِ نِسَبَ الإِكْرَامِيَّةِ قَبْلَ تَمْرِيرِ البِطَاقَةِ.",
+      },
+    ],
+    exampleSentence: "It is customary to leave a fifteen to twenty percent tip for great service.",
+    exampleArabic:
+      "مِنَ المُعْتَادِ تَرْكُ إِكْرَامِيَّةٍ تَتَرَاوَحُ بَيْنَ ١٥ وَ٢٠ فِي المِائَةِ لِلْخِدْمَةِ المُمَيَّزَةِ.",
+  },
+  reservation: {
+    id: "reservation",
+    arabic: "حَجْز (حَجْزُ طَاوِلَةٍ مُسْبَقًا)",
+    partOfSpeech: "noun",
+    phonetic: "ˌrɛzərˈveɪʃən",
+    pronunciationTip: "Pronounce 'rez-er-VAY-shun'.",
+    collocations: ["make a reservation", "confirm a reservation", "dinner reservation"],
+    phrasalVerbs: [
+      {
+        phrase: "book in advance",
+        meaning: "secure table ahead of dining time",
+        arabic: "يَحْجِزُ مُسْبَقًا",
+        example: "We booked a table in advance for the weekend dinner.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Booking Ahead",
+        en: "I made an online dinner reservation for four guests at seven o'clock.",
+        ar: "قُمْتُ بِعَمَلِ حَجْزِ عَشَاءِ عَبْرَ الإِنْتَرْنِت لِأَرْبَعَةِ أَشْخَاصٍ السَّاعَةَ السَّابِعَةَ.",
+      },
+      {
+        context: "Arrival Confirmation",
+        en: "The host checked his computer and confirmed our family's table reservation.",
+        ar: "تَحَقَّقَ المُضِيفُ مِنْ شَاشَتِهِ وَأَكَّدَ حَجْزَ طَاوِلَةِ عَائِلَتِنَا.",
+      },
+      {
+        context: "Fully Booked",
+        en: "The popular restaurant was fully booked weeks ahead, so reservations were essential.",
+        ar: "كَانَ المَطْعَمُ مَحْجُوزًا بِالكَامِلِ، لِذَا كَانَ الحَجْزُ ضَرُورِيًّا.",
+      },
+    ],
+    exampleSentence: "I made an online dinner reservation for four guests at seven o'clock.",
+    exampleArabic:
+      "قُمْتُ بِعَمَلِ حَجْزِ عَشَاءِ عَبْرَ الإِنْتَرْنِت لِأَرْبَعَةِ أَشْخَاصٍ السَّاعَةَ السَّابِعَةَ.",
+  },
+  "order-pad": {
+    id: "order-pad",
+    arabic: "دَفْتَرُ تَسْجِيلِ الطَّلَبَات (مُفَكِّرَةُ النَّادِل)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɔːrdər pæd",
+    pronunciationTip: "Pronounce 'OR-der pad'.",
+    collocations: ["write on an order pad", "waiter's order pad", "take out the order pad"],
+    phrasalVerbs: [
+      {
+        phrase: "jot down",
+        meaning: "record customer requests in writing",
+        arabic: "يُدَوِّنُ سَرِيعًا فِي الدَّفْتَر",
+        example: "The waitress jotted down our drink orders on her pad.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Taking Orders",
+        en: "The server pulled a pen and a small paper order pad from his apron pocket.",
+        ar: "سَحَبَ النَّادِلُ قَلَمًا وَدَفْتَرَ طَلَبَاتٍ صَغِيرًا مِنْ مِئْزَرِهِ لِتَدْوِينِ الطَّلَبَاتِ.",
+      },
+      {
+        context: "Modern Upgrade",
+        en: "Many contemporary bistros have replaced paper order pads with touch tablets.",
+        ar: "اسْتَبْدَلَتِ المَطَاعِمُ الحَدِيثَةُ دَفَاتِرَ الطَّلَبَاتِ بِأَجْهِزَةٍ لَوْحِيَّةٍ.",
+      },
+      {
+        context: "Accuracy",
+        en: "He read back each item written on his order pad to confirm everything.",
+        ar: "قَرَأَ النَّادِلُ كُلَّ عُنْصُرٍ مُدَوَّنٍ فِي دَفْتَرِهِ لِلتَّأَكُّدِ مِنَ الطَّلَبِ.",
+      },
+    ],
+    exampleSentence: "The server pulled a pen and a small paper order pad from his apron pocket.",
+    exampleArabic:
+      "سَحَبَ النَّادِلُ قَلَمًا وَدَفْتَرَ طَلَبَاتٍ صَغِيرًا مِنْ مِئْزَرِهِ لِتَدْوِينِ الطَّلَبَاتِ.",
+  },
+  grill: {
+    id: "grill",
+    arabic: "شَوَّايَة (مِشْوَاةُ اللُّحُومِ وَالخُضْرَاوَات)",
+    partOfSpeech: "noun",
+    phonetic: "ɡrɪl",
+    pronunciationTip: "Short 'i' sound /ɪ/: 'GRIL' (/ɡrɪl/).",
+    collocations: ["charcoal grill", "cook on the grill", "outdoor grill"],
+    phrasalVerbs: [
+      {
+        phrase: "cook over",
+        meaning: "prepare over direct heat or flames",
+        arabic: "يَشْوِي عَلَى النَّار",
+        example: "He cooked seasoned vegetables over the charcoal grill.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Barbecue",
+        en: "Juicy steaks and bell peppers sizzled loudly over the hot charcoal grill.",
+        ar: "أَصْدَرَتْ شَرَائِحُ اللَّحْمِ وَالفُلْفُلِ صَوْتَ شِوَاءٍ شَهِيًّا عَلَى الشَّوَّايَةِ السَّاخِنَةِ.",
+      },
+      {
+        context: "Grill Marks",
+        en: "The chef seared fresh salmon fillets to leave crisp decorative grill marks.",
+        ar: "شَوَى الطَّاهِي فِيلِيهِ السَّلَمُونِ لِتَرْكِ خُطُوطِ شِوَاءٍ مُقَرْمَشَةٍ جَمِيلَةٍ.",
+      },
+      {
+        context: "Summer Dining",
+        en: "Patrons enjoyed dining on the garden terrace while burgers cooked on the open grill.",
+        ar: "اسْتَمْتَعَ الزَّبَائِنُ بِتَنَاوُلِ الطَّعَامِ بِالشُّرْفَةِ مَعَ طَهْيِ البُرْغَر عَلَى الشَّوَّايَةِ.",
+      },
+    ],
+    exampleSentence: "Juicy steaks and bell peppers sizzled loudly over the hot charcoal grill.",
+    exampleArabic:
+      "أَصْدَرَتْ شَرَائِحُ اللَّحْمِ وَالفُلْفُلِ صَوْتَ شِوَاءٍ شَهِيًّا عَلَى الشَّوَّايَةِ السَّاخِنَةِ.",
+  },
+  fryer: {
+    id: "fryer",
+    arabic: "قَلَّايَة (مِقْلَاةُ الزَّيْتِ العَمِيقَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfraɪər",
+    pronunciationTip: "Pronounce 'FRY-er' (/ˈfraɪ.ər/).",
+    collocations: ["deep fryer", "commercial fryer", "air fryer"],
+    phrasalVerbs: [
+      {
+        phrase: "fry in",
+        meaning: "cook food submerged in bubbling oil",
+        arabic: "يَقْلِي فِي الزَّيْت",
+        example: "The line cook fried potato wedges in the deep fryer.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Fast Food",
+        en: "The cook immersed baskets of freshly cut potatoes into the bubbling deep fryer.",
+        ar: "غَمَسَ الطَّاهِي سِلَالَ البَطَاطِسِ المَقْطُوعَةِ فِي قَلَّايَةِ الزَّيْتِ السَّاخِنَةِ.",
+      },
+      {
+        context: "Crispy Texture",
+        en: "Chicken wings came out of the fryer golden, steaming hot, and delightfully crispy.",
+        ar: "خَرَجَتْ أَجْنِحَةُ الدَّجَاجِ مِنَ القَلَّايَةِ ذَهَبِيَّةً وَسَاخِنَةً وَمُقَرْمَشَةً.",
+      },
+      {
+        context: "Kitchen Cleaning",
+        en: "Staff filtered the frying oil and scrubbed the stainless steel fryer daily.",
+        ar: "قَامَ العُمَّالُ بِتَصْفِيَةِ زَيْتِ القَلْيِ وَتَنْظِيفِ القَلَّايَةِ يَوْمِيًّا.",
+      },
+    ],
+    exampleSentence:
+      "The cook immersed baskets of freshly cut potatoes into the bubbling deep fryer.",
+    exampleArabic:
+      "غَمَسَ الطَّاهِي سِلَالَ البَطَاطِسِ المَقْطُوعَةِ فِي قَلَّايَةِ الزَّيْتِ السَّاخِنَةِ.",
+  },
+  soup: {
+    id: "soup",
+    arabic: "حَسَاء (شُورْبَةٌ سَاخِنَةٌ وَمُغَذِّيَة)",
+    partOfSpeech: "noun",
+    phonetic: "suːp",
+    pronunciationTip: "Long 'oo' sound /uː/: 'SOOP' (/suːp/).",
+    collocations: ["bowl of soup", "hot soup", "vegetable soup", "tomato soup"],
+    phrasalVerbs: [
+      {
+        phrase: "warm up",
+        meaning: "reheat seasoned broth for serving",
+        arabic: "يُسَخِّنُ الحَسَاء",
+        example: "She warmed up a pot of vegetable soup.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Comfort Food",
+        en: "A steaming bowl of creamy tomato soup served with croutons warms you up instantly.",
+        ar: "زِبْدِيَّةٌ سَاخِنَةٌ مِنْ حَسَاءِ الطَّمَاطِمِ مَعَ الخُبْزِ المُحَمَّصِ تَمْنَحُكَ دِفْئًا فَوْرِيًّا.",
+      },
+      {
+        context: "First Course",
+        en: "Guests enjoyed a French onion soup topped with melted Gruyère as an appetizer.",
+        ar: "اسْتَمْتَعَ الضُّيُوفُ بِشُورْبَةِ البَصَلِ الفَرَنْسِيَّةِ المُغَطَّاةِ بِالجُبْنِ كَمُقَبِّلَاتٍ.",
+      },
+      {
+        context: "Seasonal Broth",
+        en: "The restaurant prepares a fresh pot of nutritious vegetable and lentil soup every morning.",
+        ar: "يُعِدُّ المَطْعَمُ قِدْرًا طَازَجًا مِنْ حَسَاءِ الخُضْرَاوَاتِ وَالعَدَسِ كُلَّ صَبَاحٍ.",
+      },
+    ],
+    exampleSentence:
+      "A steaming bowl of creamy tomato soup served with croutons warms you up instantly.",
+    exampleArabic:
+      "زِبْدِيَّةٌ سَاخِنَةٌ مِنْ حَسَاءِ الطَّمَاطِمِ مَعَ الخُبْزِ المُحَمَّصِ تَمْنَحُكَ دِفْئًا فَوْرِيًّا.",
+  },
+  salad: {
+    id: "salad",
+    arabic: "سَلَطَة (طَبَقُ الخُضْرَاوَاتِ الطَّازَجَةِ المُتَبَّلَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsæləd",
+    pronunciationTip: "Short 'a' sound /æ/: 'SAL-ud' (/ˈsæ.ləd/).",
+    collocations: ["green salad", "Caesar salad", "fresh salad", "fruit salad"],
+    phrasalVerbs: [
+      {
+        phrase: "toss together",
+        meaning: "mix leafy greens and dressing gently",
+        arabic: "يَخْلِطُ السَّلَطَة",
+        example: "He tossed together crisp lettuce and cherry tomatoes.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Healthy Eating",
+        en: "We ordered a crisp Greek salad topped with diced cucumbers, olives, and feta cheese.",
+        ar: "طَلَبْنَا سَلَطَةً يُونَانِيَّةً طَازَجَةً مُغَطَّاةً بِالخِيَارِ وَالزَّيْتُونِ وَالفِيتَا.",
+      },
+      {
+        context: "Course Option",
+        en: "Diners can choose between a side garden salad or a cup of soup with their meal.",
+        ar: "يُمْكِنُ لِلضُّيُوفِ اخْتِيَارُ سَلَطَةِ الخُضَارِ أَوْ زِبْدِيَّةِ حَسَاءٍ مَعَ وَجْبَتِهِمْ.",
+      },
+      {
+        context: "Fresh Produce",
+        en: "Crisp leafy lettuce and shaved radishes were dressed in light lemon vinaigrette.",
+        ar: "تُبِّلَ الخَسُّ الطَّازَجُ وَالفُجْلُ بِصَلْصَةِ اللَّيْمُونِ وَزَيْتِ الزَّيْتُونِ.",
+      },
+    ],
+    exampleSentence:
+      "We ordered a crisp Greek salad topped with diced cucumbers, olives, and feta cheese.",
+    exampleArabic:
+      "طَلَبْنَا سَلَطَةً يُونَانِيَّةً طَازَجَةً مُغَطَّاةً بِالخِيَارِ وَالزَّيْتُونِ وَالفِيتَا.",
+  },
+  steak: {
+    id: "steak",
+    arabic: "شَرِيحَةُ لَحْم (سْتِيك / لَحْمُ بَقَرِيٌّ مَشْوِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "steɪk",
+    pronunciationTip: "Long 'a' sound /eɪ/: 'STAYK' (/steɪk/).",
+    collocations: ["grilled steak", "juicy steak", "medium-rare steak", "ribeye steak"],
+    phrasalVerbs: [
+      {
+        phrase: "sear on",
+        meaning: "brown meat rapidly in high heat pan",
+        arabic: "يُحَمِّرُ شَرِيحَةَ اللَّحْمِ عَلَى النَّار",
+        example: "The cook seared the seasoned ribeye steak on a skillet.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Steakhouse Dining",
+        en: "He ordered a juicy medium-rare ribeye steak served with herb butter and asparagus.",
+        ar: "طَلَبَ شَرِيحَةَ سْتِيك رِيب آي طَرِيَّةً مَشْوِيَّةً مَعَ زُبْدَةِ الأَعْشَابِ وَالهِلْيَوْنِ.",
+      },
+      {
+        context: "Cooking Temperature",
+        en: "The waiter asked how each guest preferred their steak cooked—rare, medium, or well-done.",
+        ar: "سَأَلَ النَّادِلُ الضُّيُوفَ عَنْ دَرَجَةِ نُضْجِ اللَّحْمِ المُفَضَّلَةِ.",
+      },
+      {
+        context: "Signature Entree",
+        en: "The steakhouse is famous for its dry-aged prime beef steaks grilled over coals.",
+        ar: "يَشْتَهِرُ مَطْعَمُ السْتِيك بِشَرَائِحِ اللَّحْمِ البَقَرِيِّ المَشْوِيَّةِ عَلَى الفَحْمِ.",
+      },
+    ],
+    exampleSentence:
+      "He ordered a juicy medium-rare ribeye steak served with herb butter and asparagus.",
+    exampleArabic:
+      "طَلَبَ شَرِيحَةَ سْتِيك رِيب آي طَرِيَّةً مَشْوِيَّةً مَعَ زُبْدَةِ الأَعْشَابِ وَالهِلْيَوْنِ.",
+  },
+  pizza: {
+    id: "pizza",
+    arabic: "بِيتْزَا (فَطِيرَةٌ إِيطَالِيَّةٌ مُغَطَّاةٌ بِالجُبْنِ وَالصَّلْصَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈpiːtsə",
+    pronunciationTip: "Pronounce 'PEET-suh' (/ˈpiːt.sə/).",
+    collocations: ["slice of pizza", "wood-fired pizza", "cheese pizza", "crispy pizza"],
+    phrasalVerbs: [
+      {
+        phrase: "top with",
+        meaning: "cover dough crust with toppings",
+        arabic: "يُغَطِّي البِيتْزَا بِـ",
+        example: "The baker topped the pizza crust with mozzarella and mushrooms.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Wood-fired Baking",
+        en: "The restaurant bakes authentic pizza inside a blazing wood-fired brick oven.",
+        ar: "يَخْبِزُ المَطْعَمُ البِيتْزَا النَّابُولِيَّةَ فِي فُرْنِ حَطَبٍ طِينِيٍّ مُلْتَهِبٍ.",
+      },
+      {
+        context: "Family Sharing",
+        en: "Our family shared a large pizza topped with mozzarella and bell peppers.",
+        ar: "تَشَارَكَتْ عَائِلَتُنَا بِيتْزَا كَبِيرَةً مُغَطَّاةً بِالمُوزَارِيلَّا وَالفُلْفُلِ.",
+      },
+      {
+        context: "Crispy Crust",
+        en: "The golden crust was delightfully crispy on the outside and airy inside.",
+        ar: "تَمَيَّزَتْ حَوَافُّ البِيتْزَا الذَّهَبِيَّةُ بِقِرْمَشَةٍ لَذِيذَةٍ مِنْ الخَارِجِ.",
+      },
+    ],
+    exampleSentence: "The restaurant bakes authentic pizza inside a blazing wood-fired brick oven.",
+    exampleArabic:
+      "يَخْبِزُ المَطْعَمُ البِيتْزَا النَّابُولِيَّةَ فِي فُرْنِ حَطَبٍ طِينِيٍّ مُلْتَهِبٍ.",
+  },
+  sandwich: {
+    id: "sandwich",
+    arabic: "شَطِيرَة (سَانْدْوِيتْش / لَفَائِفُ الخُبْزِ المَحْشُوّ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsænwɪdʒ",
+    pronunciationTip: "Pronounce 'SAN-wij' (/ˈsæn.wɪdʒ/).",
+    collocations: ["club sandwich", "grilled cheese sandwich", "deli sandwich"],
+    phrasalVerbs: [
+      {
+        phrase: "fill with",
+        meaning: "place ingredients between sliced bread",
+        arabic: "يَحْشُو الشَّطِيرَة",
+        example: "She filled the baguette sandwich with roast turkey and lettuce.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Lunch Favorite",
+        en: "He ordered a toasted club sandwich packed with roasted turkey, lettuce, and tomatoes.",
+        ar: "طَلَبَ شَطِيرَةَ كْلُوب مُحَمَّصَةً مَحْشُوَّةً بِالدِّيكِ الرُّومِيِّ وَالخَسِّ وَالطَّمَاطِمِ.",
+      },
+      {
+        context: "Deli Selection",
+        en: "The corner deli prepares artisanal sandwiches on freshly baked focaccia bread.",
+        ar: "يُعِدُّ مَحَلُّ السَّانْدْوِيتْش شَطَائِرَ حِرَفِيَّةً عَلَى خُبْزِ الفُوكَاتْشْيَا الطَّازَجِ.",
+      },
+      {
+        context: "Picnic Food",
+        en: "We packed wrapped vegetarian sandwiches and fruit for an afternoon picnic.",
+        ar: "جَهَّزْنَا شَطَائِرَ نَبَاتِيَّةً مَلْفُوفَةً وَفَوَاكِهَ لِنُزْهَةٍ فِي الحَدِيقَةِ.",
+      },
+    ],
+    exampleSentence:
+      "He ordered a toasted club sandwich packed with roasted turkey, lettuce, and tomatoes.",
+    exampleArabic:
+      "طَلَبَ شَطِيرَةَ كْلُوب مُحَمَّصَةً مَحْشُوَّةً بِالدِّيكِ الرُّومِيِّ وَالخَسِّ وَالطَّمَاطِمِ.",
+  },
+  burger: {
+    id: "burger",
+    arabic: "بُرْغَر (شَطِيرَةُ اللَّحْمِ المَشْوِيِّ فِي خُبْزٍ مُسْتَدِير)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbɜːrɡər",
+    pronunciationTip: "Pronounce 'BUR-ger' (/ˈbɜːr.ɡər/).",
+    collocations: ["cheeseburger", "veggie burger", "beef burger", "burger and fries"],
+    phrasalVerbs: [
+      {
+        phrase: "stack with",
+        meaning: "layer patties and toppings in bun",
+        arabic: "يُرَتِّبُ طَبَقَاتِ البُرْغَر",
+        example: "The cook stacked the beef burger with cheddar and pickles.",
+      },
+    ],
+    sentences: [
+      {
+        context: "American Classic",
+        en: "He bit into a juicy flame-grilled beef burger served on a toasted sesame bun.",
+        ar: "تَنَاوَلَ شَطِيرَةَ بُرْغَر بَقَرِيٍّ طَرِيَّةً مَشْوِيَّةً فِي خُبْزِ السِّمْسِمِ.",
+      },
+      {
+        context: "Plant-based Option",
+        en: "The menu features a plant-based burger topped with avocado and garlic aioli.",
+        ar: "تَتَضَمَّنُ القَائِمَةُ بُرْغَر نَبَاتِيًّا شَهِيًّا مُغَطًّى بِالأَفُوكَادُو وَالثُّومِ.",
+      },
+      {
+        context: "Side Pairing",
+        en: "Every gourmet burger comes with a side of golden French fries and a pickle.",
+        ar: "تُقَدَّمُ كُلُّ شَطِيرَةِ بُرْغَر مَعَ بَطَاطِسَ مَقْلِيَّةٍ ذَهَبِيَّةٍ وَمُخَلَّلٍ.",
+      },
+    ],
+    exampleSentence:
+      "He bit into a juicy flame-grilled beef burger served on a toasted sesame bun.",
+    exampleArabic:
+      "تَنَاوَلَ شَطِيرَةَ بُرْغَر بَقَرِيٍّ طَرِيَّةً مَشْوِيَّةً فِي خُبْزِ السِّمْسِمِ.",
+  },
+  sushi: {
+    id: "sushi",
+    arabic: "سُوشِي (طَعَامٌ يَابَانِيٌّ مِنْ أَرُزٍّ مَتَبَّلٍ وَأَسْمَاكٍ طَازَجَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsuːʃi",
+    pronunciationTip: "Long 'oo' sound: 'SOO-shee' (/ˈsuː.ʃi/).",
+    collocations: ["sushi roll", "sushi platter", "eat sushi", "sushi chef"],
+    phrasalVerbs: [
+      {
+        phrase: "dip in",
+        meaning: "submerge food lightly into condiment",
+        arabic: "يَغْمِسُ فِي الصَّلْصَة",
+        example: "He dipped his tuna sushi roll lightly into soy sauce.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Japanese Cuisine",
+        en: "The master chef prepared delicate rolls of salmon sushi wrapped in nori seaweed.",
+        ar: "أَعَدَّ كَبِيرُ الطُّهَاةِ لَفَائِفَ سُوشِي السَّلَمُونِ المَلْفُوفَةَ بِأَعْشَابِ البَحْرِ.",
+      },
+      {
+        context: "Condiments",
+        en: "Sushi is traditionally served alongside green wasabi, pickled ginger, and soy sauce.",
+        ar: "يُقَدَّمُ السُّوشِي تَقْلِيدِيًّا بِجَانِبِ الوَاسَابِي الحَارِّ وَالزَّنْجَبِيلِ وَالصُّويَا.",
+      },
+      {
+        context: "Platter Sharing",
+        en: "We ordered a colorful twenty-piece sushi platter to share among friends.",
+        ar: "طَلَبْنَا طَبَقَ سُوشِي مُشَكَّلًا مِنْ ٢٠ قِطْعَةً لِمُشَارَكَتِهِ مَعَ الأَصْدِقَاءِ.",
+      },
+    ],
+    exampleSentence:
+      "The master chef prepared delicate rolls of salmon sushi wrapped in nori seaweed.",
+    exampleArabic:
+      "أَعَدَّ كَبِيرُ الطُّهَاةِ لَفَائِفَ سُوشِي السَّلَمُونِ المَلْفُوفَةَ بِأَعْشَابِ البَحْرِ.",
+  },
+  sauce: {
+    id: "sauce",
+    arabic: "صَلْصَة (تَتْبِيلَةٌ سَائِلَةٌ مُنَكَّهَةٌ لِلأَطْبَاق)",
+    partOfSpeech: "noun",
+    phonetic: "sɔːs",
+    pronunciationTip: "Pronounce 'SAWS' (/sɔːs/).",
+    collocations: ["tomato sauce", "pasta sauce", "hot sauce", "dipping sauce"],
+    phrasalVerbs: [
+      {
+        phrase: "pour over",
+        meaning: "drizzle flavorful liquid over dish",
+        arabic: "يَسْكُبُ الصَّلْصَةَ فَوْق",
+        example: "The chef poured rich mushroom sauce over the chicken.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Flavoring Entree",
+        en: "The chef poured a creamy mushroom sauce over the pan-seared chicken breast.",
+        ar: "سَكَبَ الطَّاهِي صَلْصَةَ فِطْرٍ كَرِيمِيَّةً لَذِيذَةً فَوْقَ صَدْرِ الدَّجَاجِ المُحَمَّرِ.",
+      },
+      {
+        context: "Dipping Condiment",
+        en: "Crispy spring rolls were served with a sweet and spicy chili dipping sauce.",
+        ar: "قُدِّمَتْ لَفَائِفُ السِّبْرِينْغ رُول مَعَ صَلْصَةِ فُلْفُلٍ حُلْوَةٍ وَحَارَّةٍ.",
+      },
+      {
+        context: "Simmering",
+        en: "A pot of authentic Italian marinara sauce simmered on the kitchen stove.",
+        ar: "غَلَتْ صَلْصَةُ المَارِينَارَا الإِيطَالِيَّةُ بِبُطْءٍ عَلَى مَوْقِدِ المَطْبَخِ.",
+      },
+    ],
+    exampleSentence: "The chef poured a creamy mushroom sauce over the pan-seared chicken breast.",
+    exampleArabic:
+      "سَكَبَ الطَّاهِي صَلْصَةَ فِطْرٍ كَرِيمِيَّةً لَذِيذَةً فَوْقَ صَدْرِ الدَّجَاجِ المُحَمَّرِ.",
+  },
+  dressing: {
+    id: "dressing",
+    arabic: "صَلْصَةُ السَّلَطَة (تَتْبِيلَةُ الخُضْرَاوَاتِ وَالسَّلَطَات)",
+    partOfSpeech: "noun",
+    phonetic: "ˈdrɛsɪŋ",
+    pronunciationTip: "Short 'e' sound: 'DRES-ing' (/ˈdrɛs.ɪŋ/).",
+    collocations: ["salad dressing", "Italian dressing", "ranch dressing", "dressing on the side"],
+    phrasalVerbs: [
+      {
+        phrase: "drizzle with",
+        meaning: "pour seasoned emulsion across greens",
+        arabic: "يَرُشُّ صَلْصَةَ السَّلَطَة",
+        example: "She drizzled her salad with creamy lemon dressing.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Salad Customization",
+        en: "I asked the waiter to serve the balsamic vinaigrette dressing on the side.",
+        ar: "طَلَبْتُ مِنَ النَّادِلِ تَقْدِيمَ صَلْصَةِ الخَلِّ الجَانِبِيَّةِ مَعَ سَلَطَتِي.",
+      },
+      {
+        context: "Popular Flavors",
+        en: "Creamy ranch and zesty Italian dressings are among the most popular toppings.",
+        ar: "تُعَدُّ صَلْصَةُ الرَّانْتْش الكَرِيمِيَّةُ وَالتَّتْبِيلَةُ الإِيطَالِيَّةُ الأَكْثَرَ شُهْرَةً.",
+      },
+      {
+        context: "Fresh Ingredients",
+        en: "Homemade dressing made with lemon juice, mustard, and olive oil tastes great.",
+        ar: "تَتَمَيَّزُ تَتْبِيلَةُ السَّلَطَةِ المَنْزِلِيَّةُ المَصْنُوعَةُ مِنَ اللَّيْمُونِ بِمَذَاقٍ رَائِعٍ.",
+      },
+    ],
+    exampleSentence: "I asked the waiter to serve the balsamic vinaigrette dressing on the side.",
+    exampleArabic:
+      "طَلَبْتُ مِنَ النَّادِلِ تَقْدِيمَ صَلْصَةِ الخَلِّ الجَانِبِيَّةِ مَعَ سَلَطَتِي.",
+  },
+  garnish: {
+    id: "garnish",
+    arabic: "زِينَةُ الطَّبَق (تَزْيِينُ الأَطْعِمَةِ بِالأَعْشَابِ وَالفَوَاكِه)",
+    partOfSpeech: "noun",
+    phonetic: "ˈɡɑːrnɪʃ",
+    pronunciationTip: "Pronounce 'GAR-nish' (/ˈɡɑːr.nɪʃ/).",
+    collocations: ["fresh garnish", "herb garnish", "garnish with parsley", "lemon garnish"],
+    phrasalVerbs: [
+      {
+        phrase: "garnish with",
+        meaning: "adorn plate with decorative edible items",
+        arabic: "يُزَيِّنُ الطَّبَقَ بِـ",
+        example: "The chef garnished the pasta with fresh basil leaves.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Culinary Presentation",
+        en: "The chef placed a sprig of rosemary as a fragrant garnish on the roasted lamb.",
+        ar: "وَضَعَ الطَّاهِي غُصْنَ إِكْلِيلِ الجَبَلِ كَزِينَةٍ عَطِرَةٍ عَلَى اللَّحْمِ المَشْوِيِّ.",
+      },
+      {
+        context: "Color Contrast",
+        en: "A slice of lemon and chopped parsley served as a colorful garnish for the fish.",
+        ar: "شَكَّلَتْ شَرِيحَةُ اللَّيْمُونِ وَالبَقْدُونِسِ المَفْرُومُ زِينَةً جَمِيلَةً لِلسَّمَكِ.",
+      },
+      {
+        context: "Edible Art",
+        en: "Delicate edible flower petals were sprinkled as a garnish over the dessert.",
+        ar: "نُثِرَتْ بَتَلَاتُ الزُّهُورِ القَابِلَةُ لِلأَكْلِ كَزِينَةٍ رَقِيقَةٍ فَوْقَ الحَلْوَى.",
+      },
+    ],
+    exampleSentence:
+      "The chef placed a sprig of rosemary as a fragrant garnish on the roasted lamb.",
+    exampleArabic:
+      "وَضَعَ الطَّاهِي غُصْنَ إِكْلِيلِ الجَبَلِ كَزِينَةٍ عَطِرَةٍ عَلَى اللَّحْمِ المَشْوِيِّ.",
+  },
+  seasoning: {
+    id: "seasoning",
+    arabic: "تَوَابِل (بُهَارَاتٌ وَمُنَكِّهَاتُ الطَّعَام)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsiːzənɪŋ",
+    pronunciationTip: "Pronounce 'SEE-zən-ing' (/ˈsiː.zən.ɪŋ/).",
+    collocations: ["seasoning blend", "add seasoning", "adjust the seasoning"],
+    phrasalVerbs: [
+      {
+        phrase: "season with",
+        meaning: "enhance food flavor with herbs and spices",
+        arabic: "يُتَبِّلُ بِالتَّوَابِل",
+        example: "The cook seasoned the vegetables with garlic powder and sea salt.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Flavor Enhancement",
+        en: "The chef tasted the broth and adjusted the seasoning with a dash of sea salt.",
+        ar: "تَذَوَّقَ الطَّاهِي المَرَقَ وَعَدَّلَ التَّوَابِلَ بِرَشَّةٍ مِنْ مِلْحِ البَحْرِ.",
+      },
+      {
+        context: "Spice Blend",
+        en: "A balanced seasoning of crushed pepper and thyme brought the roast to life.",
+        ar: "أَبْرَزَتْ تَوِيفَةُ التَّوَابِلِ مِنَ الفُلْفُلِ وَالأَعْشَابِ نَكْهَةَ اللَّحْمِ المَشْوِيِّ.",
+      },
+      {
+        context: "Kitchen Technique",
+        en: "Proper seasoning during cooking ensures every layer of the dish is flavorful.",
+        ar: "يَضْمَنُ التَّتْبِيلُ الصَّحِيحُ أَثْنَاءَ الطَّبْخِ اكْتِسَابَ كُلِّ طَبَقَةٍ نَكْهَةً مُمَيَّزَةً.",
+      },
+    ],
+    exampleSentence:
+      "The chef tasted the broth and adjusted the seasoning with a dash of sea salt.",
+    exampleArabic:
+      "تَذَوَّقَ الطَّاهِي المَرَقَ وَعَدَّلَ التَّوَابِلَ بِرَشَّةٍ مِنْ مِلْحِ البَحْرِ.",
+  },
+  soccer: {
+    id: "soccer",
+    arabic: "كُرَةُ القَدَم (لُعْبَةُ كُرَةِ القَدَم)",
+    partOfSpeech: "noun",
+    phonetic: "ˈsɒkər",
+    pronunciationTip: "Pronounce 'SOK-er' (/ˈsɒk.ər/).",
+    collocations: ["soccer match", "play soccer", "soccer ball", "soccer field", "soccer team"],
+    phrasalVerbs: [
+      {
+        phrase: "kick around",
+        meaning: "pass ball casually with feet",
+        arabic: "يُرَاوِغُ بِالكُرَة",
+        example: "Children kicked around a soccer ball on the school grass.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Match Play",
+        en: "Our school soccer team won the regional championship match by scoring two late goals.",
+        ar: "فَازَ فَرِيقُ كُرَةِ القَدَمِ المَدْرَسِيُّ بِبُطُولَةِ المِنْطَقَةِ بِتَسْجِيلِ هَدَفَيْنِ.",
+      },
+      {
+        context: "Training",
+        en: "The soccer coach organized passing drills and agility exercises on the green pitch.",
+        ar: "نَظَّمَ مُدَرِّبُ كُرَةِ القَدَمِ تَمَارِينَ التَّمْرِيرِ وَاللِّيَاقَةِ فِي المَلْعَبِ.",
+      },
+      {
+        context: "Recreation",
+        en: "Friends gathered at the local park every Saturday morning to play soccer together.",
+        ar: "اجْتَمَعَ الأَصْدِقَاءُ فِي الحَدِيقَةِ صَبَاحَ كُلِّ سَبْتٍ لِعِبِ كُرَةِ القَدَمِ.",
+      },
+    ],
+    exampleSentence:
+      "Our school soccer team won the regional championship match by scoring two late goals.",
+    exampleArabic:
+      "فَازَ فَرِيقُ كُرَةِ القَدَمِ المَدْرَسِيُّ بِبُطُولَةِ المِنْطَقَةِ بِتَسْجِيلِ هَدَفَيْنِ.",
+  },
+  basketball: {
+    id: "basketball",
+    arabic: "كُرَةُ السَّلَّة (رِيَاضَةُ كُرَةِ السَّلَّة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbæskɪtbɔːl",
+    pronunciationTip: "Pronounce 'BAS-kit-bawl' (/ˈbæs.kɪt.bɔːl/).",
+    collocations: ["basketball court", "play basketball", "basketball hoop", "basketball game"],
+    phrasalVerbs: [
+      {
+        phrase: "shoot at",
+        meaning: "aim ball toward elevated hoop",
+        arabic: "يُصَوِّبُ نَحْوَ السَّلَّة",
+        example: "He shot at the basketball hoop from behind the arc.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Court Play",
+        en: "The players sprinted across the hardwood basketball court and scored with a slam dunk.",
+        ar: "انْطَلَقَ اللَّاعِبُونَ عَبْرَ مَلْعَبِ كُرَةِ السَّلَّةِ الخَشَبِيِّ وَسَجَّلُوا نُقْطَةً.",
+      },
+      {
+        context: "Recreation",
+        en: "He practiced free throws at the community center basketball court after classes.",
+        ar: "تَدَرَّبَ عَلَى الرَّمَيَاتِ الحُرَّةِ فِي مَلْعَبِ كُرَةِ السَّلَّةِ بِالمَرْكَزِ.",
+      },
+      {
+        context: "Team Sport",
+        en: "Basketball requires high agility, fast hand-eye coordination, and active teamwork.",
+        ar: "تَتَطَلَّبُ كُرَةُ السَّلَّةِ رَشَاقَةً عَالِيَةً وَتَنْسِيقًا حَرَكِيًّا وَتَعَاوُنًا.",
+      },
+    ],
+    exampleSentence:
+      "The players sprinted across the hardwood basketball court and scored with a slam dunk.",
+    exampleArabic:
+      "انْطَلَقَ اللَّاعِبُونَ عَبْرَ مَلْعَبِ كُرَةِ السَّلَّةِ الخَشَبِيِّ وَسَجَّلُوا نُقْطَةً.",
+  },
+  tennis: {
+    id: "tennis",
+    arabic: "كُرَةُ المَضْرِب (التِّنِس / لُعْبَةُ التِّنِس)",
+    partOfSpeech: "noun",
+    phonetic: "ˈtɛnɪs",
+    pronunciationTip: "Pronounce 'TEN-is' (/ˈtɛn.ɪs/).",
+    collocations: ["tennis court", "play tennis", "tennis racket", "tennis match"],
+    phrasalVerbs: [
+      {
+        phrase: "serve across",
+        meaning: "hit ball over dividing net",
+        arabic: "يُرْسِلُ كُرَةَ التِّنِس",
+        example: "The champion served the tennis ball across the court at high speed.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Tournament",
+        en: "The grand tennis tournament attracted spectators from around the world to watch the final.",
+        ar: "جَذَبَتْ بُطُولَةُ التِّنِسِ الكُبْرَى الجَمَاهِيرَ لِمُشَاهَدَةِ المُبَارَاةِ النِّهَائِيَّةِ.",
+      },
+      {
+        context: "Practice",
+        en: "She practiced her backhand strokes against the practice wall on the tennis court.",
+        ar: "تَدَرَّبَتْ عَلَى ضَرَبَاتِهَا الخَلْفِيَّةِ فِي مَلْعَبِ التِّنِسِ.",
+      },
+      {
+        context: "Equipment",
+        en: "He bought a new graphite tennis racket and a can of yellow tennis balls.",
+        ar: "اشْتَرَى مَضْرِبَ تِنِس جَدِيدًا وَعُلْبَةَ كُرَاتِ تِنِس صَفْرَاءَ.",
+      },
+    ],
+    exampleSentence:
+      "The grand tennis tournament attracted spectators from around the world to watch the final.",
+    exampleArabic:
+      "جَذَبَتْ بُطُولَةُ التِّنِسِ الكُبْرَى الجَمَاهِيرَ لِمُشَاهَدَةِ المُبَارَاةِ النِّهَائِيَّةِ.",
+  },
+  baseball: {
+    id: "baseball",
+    arabic: "كُرَةُ القَاعِدَة (البَيْسْبُول / لُعْبَةُ البَيْسْبُول)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbeɪsbɔːl",
+    pronunciationTip: "Pronounce 'BAYS-bawl' (/ˈbeɪs.bɔːl/).",
+    collocations: ["baseball game", "baseball bat", "baseball glove", "play baseball"],
+    phrasalVerbs: [
+      {
+        phrase: "hit out",
+        meaning: "strike ball forcefully into outfield",
+        arabic: "يَضْرِبُ الكُرَةَ بَعِيدًا",
+        example: "The batter hit the baseball out of the park for a home run.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Ballpark Game",
+        en: "The batter swung his wooden bat and hit the baseball into the outfield.",
+        ar: "لَوَّحَ الضَّارِبُ بِمَضْرِبِهِ الخَشَبِيِّ وَضَرَبَ كُرَةَ البَيْسْبُول بَعِيدًا فِي المَلْعَبِ.",
+      },
+      {
+        context: "Catching",
+        en: "The outfielder raised his leather baseball glove to catch the soaring fly ball.",
+        ar: "رَفَعَ لَاعِبُ الخَطِّ الخَارِجِيِّ قُفَّازَ البَيْسْبُول الجِلْدِيَّ لِالْتِقَاطِ الكُرَةِ.",
+      },
+      {
+        context: "Bases",
+        en: "He sprinted around the bases to score the winning run for his baseball team.",
+        ar: "رَكَضَ حَوْلَ القَوَاعِدِ لِتَسْجِيلِ نُقْطَةِ الفَوْزِ لِفَرِيقِهِ فِي البَيْسْبُول.",
+      },
+    ],
+    exampleSentence: "The batter swung his wooden bat and hit the baseball into the outfield.",
+    exampleArabic:
+      "لَوَّحَ الضَّارِبُ بِمَضْرِبِهِ الخَشَبِيِّ وَضَرَبَ كُرَةَ البَيْسْبُول بَعِيدًا فِي المَلْعَبِ.",
+  },
+  football: {
+    id: "football",
+    arabic: "كُرَةُ القَدَمِ الأَمْرِيكِيَّة (فُوتْبُول)",
+    partOfSpeech: "noun",
+    phonetic: "ˈfʊtbɔːl",
+    pronunciationTip: "Pronounce 'FOOT-bawl' (/ˈfʊt.bɔːl/).",
+    collocations: ["play football", "football helmet", "football field", "touchdown in football"],
+    phrasalVerbs: [
+      {
+        phrase: "throw downfield",
+        meaning: "launch leather ball forward to receiver",
+        arabic: "يُمَرِّرُ الكُرَةَ إِلَى الأَمَام",
+        example: "The quarterback threw the football downfield to the receiver.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Stadium Match",
+        en: "Thousands of cheering fans filled the stadium to watch the championship football game.",
+        ar: "مَلَأَ آلَافُ المُشَجِّعِينَ المَلْعَبَ لِمُشَاهَدَةِ مُبَارَاةِ الفُوتْبُول النِّهَائِيَّةِ.",
+      },
+      {
+        context: "Protective Gear",
+        en: "Football players wear padded helmets and shoulder pads to protect against tackles.",
+        ar: "يَرْتَدِي لَاعِبُو الفُوتْبُول خُوذَاتٍ مُبَطَّنَةً لِلْحِمَايَةِ مِنَ الِاصْطِدَامِ.",
+      },
+      {
+        context: "Touchdown",
+        en: "The receiver caught the long spiral pass in the end zone to score a touchdown.",
+        ar: "الْتَقَطَ اللَّاعِبُ التَّمْرِيرَةَ الطَّوِيلَةَ لِتَسْجِيلِ هَدَفِ الفَوْزِ.",
+      },
+    ],
+    exampleSentence:
+      "Thousands of cheering fans filled the stadium to watch the championship football game.",
+    exampleArabic:
+      "مَلَأَ آلَافُ المُشَجِّعِينَ المَلْعَبَ لِمُشَاهَدَةِ مُبَارَاةِ الفُوتْبُول النِّهَائِيَّةِ.",
+  },
+  rugby: {
+    id: "rugby",
+    arabic: "رِيَاضَةُ الرَّغْبِي (لُعْبَةُ الرَّكْبِي)",
+    partOfSpeech: "noun",
+    phonetic: "ˈrʌɡbi",
+    pronunciationTip: "Pronounce 'RUG-bee' (/ˈrʌɡ.bi/).",
+    collocations: ["rugby match", "play rugby", "rugby ball", "rugby team"],
+    phrasalVerbs: [
+      {
+        phrase: "pass backward",
+        meaning: "toss ball laterally to teammate",
+        arabic: "يُمَرِّرُ لِلْخَلْفِ فِي الرَّغْبِي",
+        example: "The rugby player passed the oval ball backward.",
+      },
+    ],
+    sentences: [
+      {
+        context: "High Impact Sport",
+        en: "Rugby is a demanding team sport known for powerful tackles and continuous action.",
+        ar: "تُعَدُّ الرَّغْبِي رِيَاضَةً جَمَاعِيَّةً شَاقَّةً تَشْتَهِرُ بِالالْتِحَامِ القَوِيِّ.",
+      },
+      {
+        context: "Oval Ball",
+        en: "Players pass the distinctive oval leather rugby ball backwards across the pitch.",
+        ar: "يُمَرِّرُ اللَّاعِبُونَ كُرَةَ الرَّغْبِي الجِلْدِيَّةَ البَيْضَاوِيَّةَ إِلَى الخَلْفِ.",
+      },
+      {
+        context: "Scrum",
+        en: "Both teams packed tightly into a powerful scrum to contest possession of the ball.",
+        ar: "تَشَابَكَ الفَرِيقَانِ فِي اشْتِبَاكِ السِّكْرَام لِلِاسْتِحْوَاذِ عَلَى الكُرَةِ.",
+      },
+    ],
+    exampleSentence:
+      "Rugby is a demanding team sport known for powerful tackles and continuous action.",
+    exampleArabic:
+      "تُعَدُّ الرَّغْبِي رِيَاضَةً جَمَاعِيَّةً شَاقَّةً تَشْتَهِرُ بِالالْتِحَامِ القَوِيِّ.",
+  },
+  cricket: {
+    id: "cricket",
+    arabic: "رِيَاضَةُ الكْرِيكِيت (لُعْبَةُ الكْرِيكِيت)",
+    partOfSpeech: "noun",
+    phonetic: "ˈkrɪkɪt",
+    pronunciationTip: "Pronounce 'KRIK-it' (/ˈkrɪk.ɪt/).",
+    collocations: ["cricket match", "cricket bat", "play cricket", "cricket pitch"],
+    phrasalVerbs: [
+      {
+        phrase: "bowl at",
+        meaning: "deliver ball with straight arm toward wickets",
+        arabic: "يَرْمِي الكُرَةَ نَحْوَ المَرْمَى",
+        example: "The bowler delivered the cricket ball at high speed.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Tradition",
+        en: "Cricket is a beloved sport played between two teams of eleven players on an oval field.",
+        ar: "الكْرِيكِيت رِيَاضَةٌ مَحْبُوبَةٌ تُلْعَبُ بَيْنَ فَرِيقَيْنِ فِي مَلْعَبٍ بَيْضَاوِيٍّ.",
+      },
+      {
+        context: "Batting",
+        en: "The batsman struck the red leather cricket ball through the boundary for four runs.",
+        ar: "ضَرَبَ الضَّارِبُ كُرَةَ الكْرِيكِيت الجِلْدِيَّةَ لِيُحْرِزَ ٤ نِقَاطٍ.",
+      },
+      {
+        context: "Pitch",
+        en: "Bowlers aim their deliveries accurately at the wooden stumps at the center of the pitch.",
+        ar: "يُوَجِّهُ الرُّمَاةُ الكُرَةَ بِدِقَّةٍ نَحْوَ الأَعْمِدَةِ الخَشَبِيَّةِ فِي المَلْعَبِ.",
+      },
+    ],
+    exampleSentence:
+      "Cricket is a beloved sport played between two teams of eleven players on an oval field.",
+    exampleArabic:
+      "الكْرِيكِيت رِيَاضَةٌ مَحْبُوبَةٌ تُلْعَبُ بَيْنَ فَرِيقَيْنِ فِي مَلْعَبٍ بَيْضَاوِيٍّ.",
+  },
+  badminton: {
+    id: "badminton",
+    arabic: "كُرَةُ الرِّيشَة (لُعْبَةُ الرِّيشَةِ الطَّائِرَة)",
+    partOfSpeech: "noun",
+    phonetic: "ˈbædmɪntən",
+    pronunciationTip: "Pronounce 'BAD-min-tən' (/ˈbæd.mɪn.tən/).",
+    collocations: ["badminton racket", "play badminton", "badminton court"],
+    phrasalVerbs: [
+      {
+        phrase: "smash over",
+        meaning: "hit lightweight shuttlecock with high downward velocity",
+        arabic: "يَسْحَقُ كُرَةَ الرِّيشَة",
+        example: "She smashed the shuttlecock over the badminton net.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Fast Reflexes",
+        en: "Badminton is one of the fastest racket sports, requiring lightning-fast reflexes.",
+        ar: "تُعَدُّ كُرَةُ الرِّيشَةِ مِنْ أَسْرَعِ رِيَاضَاتِ المَضْرِبِ وَتَتَطَلَّبُ رُدُودَ فِعْلٍ خَاطِفَةً.",
+      },
+      {
+        context: "Equipment",
+        en: "Players use lightweight graphite rackets to hit the feathered shuttlecock.",
+        ar: "يَسْتَخْدِمُ اللَّاعِبُونَ مَضَارِبَ خَفِيفَةً لِضَرْبِ كُرَةِ الرِّيشَةِ.",
+      },
+      {
+        context: "Indoor Match",
+        en: "We booked an indoor badminton court at the sports center for practice.",
+        ar: "حَجَزْنَا مَلْعَبَ كُرَةِ رِيشَةٍ دَاخِلِيًّا فِي المَرْكَزِ الرِّيَاضِيِّ لِلتَّدْرِيبِ.",
+      },
+    ],
+    exampleSentence:
+      "Badminton is one of the fastest racket sports, requiring lightning-fast reflexes.",
+    exampleArabic:
+      "تُعَدُّ كُرَةُ الرِّيشَةِ مِنْ أَسْرَعِ رِيَاضَاتِ المَضْرِبِ وَتَتَطَلَّبُ رُدُودَ فِعْلٍ خَاطِفَةً.",
+  },
+  "table-tennis": {
+    id: "table-tennis",
+    arabic: "تِنِسُ الطَّاوِلَة (بِينْغ بُونْغ)",
+    partOfSpeech: "noun",
+    phonetic: "ˈteɪbəl ˈtɛnɪs",
+    pronunciationTip: "Pronounce 'TAY-bul TEN-is'.",
+    collocations: ["play table tennis", "table tennis paddle", "table tennis ball"],
+    phrasalVerbs: [
+      {
+        phrase: "rally with",
+        meaning: "exchange rapid paddle strokes across miniature net",
+        arabic: "يَتَبَادَلُ الضَّرَبَاتِ فِي تِنِسِ الطَّاوِلَة",
+        example: "The players engaged in a fast forty-shot rally.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Speed & Spin",
+        en: "Table tennis requires intense focus to read the spin and speed of the small ball.",
+        ar: "تَتَطَلَّبُ تِنِسُ الطَّاوِلَةِ تَرْكِيزًا كَبِيرًا لِقِرَاءَةِ دَوَرَانِ الكُرَةِ.",
+      },
+      {
+        context: "Paddles",
+        en: "He used a rubber-coated table tennis paddle to execute topspin forehands.",
+        ar: "اسْتَخْدَمَ مَضْرِبَ تِنِسِ طَاوِلَةٍ مَطَّاطِيًّا لِتَنْفِيذِ ضَرَبَاتٍ قَوِيَّةٍ.",
+      },
+      {
+        context: "Recreation Room",
+        en: "Students gathered in the youth club room around the green table tennis table.",
+        ar: "اجْتَمَعَ الطُّلَّابُ فِي النَّادِي حَوْلَ طَاوِلَةِ البِينْغ بُونْغ الخَضْرَاءِ.",
+      },
+    ],
+    exampleSentence:
+      "Table tennis requires intense focus to read the spin and speed of the small ball.",
+    exampleArabic:
+      "تَتَطَلَّبُ تِنِسُ الطَّاوِلَةِ تَرْكِيزًا كَبِيرًا لِقِرَاءَةِ دَوَرَانِ الكُرَةِ.",
+  },
+  golf: {
+    id: "golf",
+    arabic: "رِيَاضَةُ الجُولْف (لُعْبَةُ الجُولْف)",
+    partOfSpeech: "noun",
+    phonetic: "ɡɒlf",
+    pronunciationTip: "Pronounce 'GOLF' (/ɡɒlf/).",
+    collocations: ["play golf", "golf course", "golf club", "golf ball"],
+    phrasalVerbs: [
+      {
+        phrase: "tee off",
+        meaning: "hit starting ball from tee box",
+        arabic: "يَبْدَأُ ضَرْبَةَ الجُولْف",
+        example: "The golfers teed off on the scenic eighteen-hole course.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Scenic Course",
+        en: "They played an eighteen-hole round of golf across manicured fairways and green lawns.",
+        ar: "لَعِبُوا جَوْلَةَ جُولْف مِنْ ١٨ حُفْرَةً عَبْرَ مَسَارَاتٍ خَضْرَاءَ مُنَسَّقَةٍ.",
+      },
+      {
+        context: "Clubs",
+        en: "A complete golf bag contains woods, irons, wedges, and a precision putter.",
+        ar: "تَحْتَوِي حَقِيبَةُ الجُولْفِ عَلَى عِصِيٍّ خَشَبِيَّةٍ وَحَدِيدِيَّةٍ مُخْتَلِفَةٍ.",
+      },
+      {
+        context: "Putting",
+        en: "She sank a difficult ten-foot putt on the final green to win the golf trophy.",
+        ar: "أَسْقَطَتِ الكُرَةَ بِضَرْبَةٍ دَقِيقَةٍ فِي الحُفْرَةِ لِتَفُوزَ بِكَأْسِ الجُولْفِ.",
+      },
+    ],
+    exampleSentence:
+      "They played an eighteen-hole round of golf across manicured fairways and green lawns.",
+    exampleArabic:
+      "لَعِبُوا جَوْلَةَ جُولْف مِنْ ١٨ حُفْرَةً عَبْرَ مَسَارَاتٍ خَضْرَاءَ مُنَسَّقَةٍ.",
+  },
+  bowling: {
+    id: "bowling",
+    arabic: "رِيَاضَةُ البُولِينْج (لُعْبَةُ إِسْقَاطِ القَوَارِير)",
+    partOfSpeech: "noun",
+    phonetic: "ˈboʊlɪŋ",
+    pronunciationTip: "Pronounce 'BOH-ling' (/ˈboʊ.lɪŋ/).",
+    collocations: ["bowling alley", "bowling ball", "bowling pins", "go bowling"],
+    phrasalVerbs: [
+      {
+        phrase: "roll down",
+        meaning: "glide weighted ball along polished lane",
+        arabic: "يُدَحْرِجُ كُرَةَ البُولِينْج",
+        example: "He rolled the heavy bowling ball down the lane.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Family Fun",
+        en: "Our family went bowling on Saturday night and rented special bowling shoes.",
+        ar: "ذَهَبَتْ عَائِلَتُنَا لِلَّعِبِ فِي صَالَةِ البُولِينْج وَاسْتَأْجَرْنَا أَحْذِيَةً خَاصَّةً.",
+      },
+      {
+        context: "Strike",
+        en: "The heavy bowling ball struck the front pin and knocked down all ten pins.",
+        ar: "أَصَابَتْ كُرَةُ البُولِينْج القَارُورَةَ الأَمَامِيَّةَ وَأَسْقَطَتْ جَمِيعَ القَوَارِيرِ.",
+      },
+      {
+        context: "Scoreboard",
+        en: "The digital scoreboard above the bowling lane tallied every spare and strike.",
+        ar: "حَسَبَتْ لَوْحَةُ النَّتَائِجِ الرَّقْمِيَّةُ أَعْلَى مَسَارِ البُولِينْج النِّقَاطَ.",
+      },
+    ],
+    exampleSentence: "Our family went bowling on Saturday night and rented special bowling shoes.",
+    exampleArabic:
+      "ذَهَبَتْ عَائِلَتُنَا لِلَّعِبِ فِي صَالَةِ البُولِينْج وَاسْتَأْجَرْنَا أَحْذِيَةً خَاصَّةً.",
+  },
+  "shin-guard": {
+    id: "shin-guard",
+    arabic: "وَاقِي السَّاق (حَامِي قَصَبَةِ الرِّجْلِ فِي كُرَةِ القَدَم)",
+    partOfSpeech: "noun",
+    phonetic: "ʃɪn ɡɑːrd",
+    pronunciationTip: "Pronounce 'SHIN gard'.",
+    collocations: ["wear shin guards", "soccer shin guards", "check carefully"],
+    phrasalVerbs: [
+      {
+        phrase: "slip under",
+        meaning: "place protection beneath soccer socks",
+        arabic: "يَدُسُّ الوَاقِيَ تَحْتَ الجَوْرَب",
+        example: "He slipped the shin guards under his tall socks.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Soccer Equipment",
+        en: "Every soccer player must wear protective shin guards during matches.",
+        ar: "يَجِبُ عَلَى كُلِّ لَاعِبِ كُرَةِ قَدَمٍ ارْتِدَاءُ وَاقِيَاتِ السَّاقِ فِي المُبَارَيَاتِ.",
+      },
+      {
+        context: "Protection",
+        en: "Lightweight foam shin guards protect the lower legs from accidental kicks.",
+        ar: "تَحْمِي وَاقِيَاتُ السَّاقِ الإِسْفَنْجِيَّةُ الخَفِيفَةُ الأَرْجُلَ مِنَ الرَّكَلَاتِ.",
+      },
+      {
+        context: "Uniform",
+        en: "He pulled his tall yellow team socks over his contoured shin guards.",
+        ar: "سَحَبَ جَوَارِبَ فَرِيقِهِ الصَّفْرَاءَ فَوْقَ وَاقِيَاتِ السَّاقِ.",
+      },
+    ],
+    exampleSentence: "Every soccer player must wear protective shin guards during matches.",
+    exampleArabic:
+      "يَجِبُ عَلَى كُلِّ لَاعِبِ كُرَةِ قَدَمٍ ارْتِدَاءُ وَاقِيَاتِ السَّاقِ فِي المُبَارَيَاتِ.",
+  },
+  glove: {
+    id: "glove",
+    arabic: "قُفَّاز (قُفَّازُ حَارِسِ المَرْمَى أَوِ البَيْسْبُول)",
+    partOfSpeech: "noun",
+    phonetic: "ɡlʌv",
+    pronunciationTip: "Short 'u' sound /ʌ/: 'GLUV' (/ɡlʌv/).",
+    collocations: ["goalkeeper gloves", "baseball glove", "boxing gloves"],
+    phrasalVerbs: [
+      {
+        phrase: "slip on",
+        meaning: "wear hand covering",
+        arabic: "يَرْتَدِي القُفَّاز",
+        example: "The goalkeeper slipped on his latex padded gloves.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Goalkeeping",
+        en: "The soccer goalkeeper wore sticky latex gloves to catch high crosses.",
+        ar: "ارْتَدَى حَارِسُ المَرْمَى قُفَّازَاتٍ مَطَّاطِيَّةً لِالْتِقَاطِ الكُرَاتِ العَالِيَةِ.",
+      },
+      {
+        context: "Baseball",
+        en: "The infielder scooped up the ground ball cleanly with his baseball glove.",
+        ar: "الْتَقَطَ اللَّاعِبُ الكُرَةَ الأَرْضِيَّةَ بِقُفَّازِ البَيْسْبُول الجِلْدِيِّ.",
+      },
+      {
+        context: "Boxing",
+        en: "The boxer laced up his padded red gloves before stepping into the ring.",
+        ar: "رَبَطَ المُلَاكِمُ قُفَّازَاتِهِ الحَمْرَاءِ المُبَطَّنَةَ قَبْلَ دُخُولِ الحَلْبَةِ.",
+      },
+    ],
+    exampleSentence: "The soccer goalkeeper wore sticky latex gloves to catch high crosses.",
+    exampleArabic:
+      "ارْتَدَى حَارِسُ المَرْمَى قُفَّازَاتٍ مَطَّاطِيَّةً لِالْتِقَاطِ الكُرَاتِ العَالِيَةِ.",
+  },
+  scoreboard: {
+    id: "scoreboard",
+    arabic: "لَوْحَةُ النَّتَائِج (شَاشَةُ عَرْضِ النَّتِيجَةِ وَالوَقْت)",
+    partOfSpeech: "noun",
+    phonetic: "ˈskɔːrbɔːrd",
+    pronunciationTip: "Pronounce 'SKOR-bord'.",
+    collocations: ["digital scoreboard", "check the scoreboard", "check carefully"],
+    phrasalVerbs: [
+      {
+        phrase: "light up",
+        meaning: "display updated points electronically",
+        arabic: "تُضِيءُ لَوْحَةُ النَّتَائِج",
+        example: "The giant scoreboard lit up as the team scored.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Stadium Display",
+        en: "The electronic scoreboard showed a tie score of two-to-two with five minutes left.",
+        ar: "أَظْهَرَتْ لَوْحَةُ النَّتَائِجِ الإِلِكْتُرُونِيَّةُ التَّعَادُلَ ٢-٢ مَعَ بَقَاءِ ٥ دَقَائِقَ.",
+      },
+      {
+        context: "Time Tracking",
+        en: "The game clock on the arena scoreboard counted down the final seconds.",
+        ar: "عَدَّتْ سَاعَةُ لَوْحَةِ النَّتَائِجِ الثَّوَانِيَ الأَخِيرَةَ مِنَ الشَّوْطِ.",
+      },
+      {
+        context: "Player Stats",
+        en: "Spectators glanced up at the scoreboard to check individual player fouls and points.",
+        ar: "نَظَرَ الجُمْهُورُ إِلَى لَوْحَةِ النَّتَائِجِ لِمَعْرِفَةِ نِقَاطِ اللَّاعِبِينَ.",
+      },
+    ],
+    exampleSentence:
+      "The electronic scoreboard showed a tie score of two-to-two with five minutes left.",
+    exampleArabic:
+      "أَظْهَرَتْ لَوْحَةُ النَّتَائِجِ الإِلِكْتُرُونِيَّةُ التَّعَادُلَ ٢-٢ مَعَ بَقَاءِ ٥ دَقَائِقَ.",
+  },
+  cone: {
+    id: "cone",
+    arabic: "مَخْرُوطُ التَّدْرِيب (قِمْعُ التَّمَارِينِ البِلَاسْتِيكِيّ)",
+    partOfSpeech: "noun",
+    phonetic: "koʊn",
+    pronunciationTip: "Long 'o' sound /oʊ/: 'KOHN' (/koʊn/).",
+    collocations: ["orange cone", "training cones", "dribble around cones"],
+    phrasalVerbs: [
+      {
+        phrase: "weave through",
+        meaning: "navigate slalom obstacle markers",
+        arabic: "يَتَعَرَّجُ بَيْنَ المَخَارِيط",
+        example: "The athlete wove through orange cones to improve agility.",
+      },
+    ],
+    sentences: [
+      {
+        context: "Drills",
+        en: "The soccer coach set up bright orange plastic cones for agility dribbling drills.",
+        ar: "وَضَعَ مُدَرِّبُ كُرَةِ القَدَمِ مَخَارِيطَ بِلَاسْتِيكِيَّةً بُرْتُقَالِيَّةً لِتَمَارِينِ الرَّشَاقَةِ.",
+      },
+      {
+        context: "Field Boundaries",
+        en: "Staff placed markers and cones along the touchline to mark out sprint lanes.",
+        ar: "وَضَعَ الطَّاقَمُ مَخَارِيطَ لِتَحْدِيدِ حَارَاتِ الجَرْيِ فِي المَلْعَبِ.",
+      },
+      {
+        context: "Fitness Circuit",
+        en: "Athletes sprinted back and forth between cones during speed conditioning training.",
+        ar: "رَكَضَ الرِّيَاضِيُّونَ ذَهَابًا وَإِيَابًا بَيْنَ المَخَارِيطِ خِلَالَ تَدْرِيبَاتِ السُّرْعَةِ.",
+      },
+    ],
+    exampleSentence:
+      "The soccer coach set up bright orange plastic cones for agility dribbling drills.",
+    exampleArabic:
+      "وَضَعَ مُدَرِّبُ كُرَةِ القَدَمِ مَخَارِيطَ بِلَاسْتِيكِيَّةً بُرْتُقَالِيَّةً لِتَمَارِينِ الرَّشَاقَةِ.",
+  },
 };
 
 /**
@@ -30120,7 +36424,7 @@ export function getLexiconEntry(wordId: string, fallbackLabel?: string): Lexicon
     id: wordId,
     arabic: label,
     partOfSpeech: "noun",
-    collocations: [`use the ${label}`, `clean the ${label}`, `look at the ${label}`],
+    collocations: ["use regularly", "check carefully", "keep handy"],
     sentences: [
       {
         context: "Everyday Usage",
