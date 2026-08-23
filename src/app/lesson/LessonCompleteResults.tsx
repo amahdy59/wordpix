@@ -98,7 +98,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   const nextGroup = getNextGroupChronological(lessonId);
 
   return (
-    <div className="bg-secondary min-h-svh flex flex-col lg:flex-row lg:overflow-hidden relative">
+    <div className="bg-secondary min-h-dvh flex flex-col lg:flex-row lg:overflow-hidden relative">
       {/* ── Desktop Left: Celebration visual ────────────────────────────────── */}
       <div className="hidden lg:flex lg:flex-col lg:items-center lg:justify-center lg:w-1/2 bg-wp-panel relative overflow-hidden px-12">
         <div className="absolute -top-24 -end-24 size-72 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
@@ -150,7 +150,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
       </div>
 
       {/* ── Right / Mobile: Stats + Group Words ───────────────────────────── */}
-      <div className="flex-1 flex flex-col justify-between min-h-svh lg:min-h-0">
+      <div className="flex-1 flex flex-col justify-between min-h-dvh lg:min-h-0">
         <main className="flex-1 flex flex-col items-center justify-center w-full max-w-md mx-auto px-6 gap-6 py-8 overflow-y-auto">
           {/* Mobile header */}
           <div className="lg:hidden flex flex-col items-center gap-3 text-center">

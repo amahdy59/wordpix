@@ -28,8 +28,16 @@ interface Props {
 type SelfRating = "again" | "close" | "confident";
 
 const SELF_RATINGS: { id: SelfRating; label: string; response: string }[] = [
-  { id: "again", label: "Not yet", response: "No problem — replay the model and echo it once more." },
-  { id: "close", label: "Getting closer", response: "Keep going. Compare your stress pattern to the model." },
+  {
+    id: "again",
+    label: "Not yet",
+    response: "No problem — replay the model and echo it once more.",
+  },
+  {
+    id: "close",
+    label: "Getting closer",
+    response: "Keep going. Compare your stress pattern to the model.",
+  },
   { id: "confident", label: "Sounded right", response: "Nice. Try it once more at natural speed." },
 ];
 
@@ -50,7 +58,7 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
   }, [attempt, playCorrect, playIncorrect]);
 
   return (
-    <div className="min-h-svh bg-background flex flex-col">
+    <div className="min-h-dvh bg-background flex flex-col">
       <LessonHeader
         title="Echo Practice: Say It Aloud"
         current={1}
@@ -94,7 +102,8 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
             <div role="status" aria-live="polite" className="min-h-[2rem]">
               {status === "denied" && (
                 <p className="font-sans text-sm text-wp-rose font-medium">
-                  Microphone access was blocked. Allow it in your browser, or use the self-check below.
+                  Microphone access was blocked. Allow it in your browser, or use the self-check
+                  below.
                 </p>
               )}
               {status === "no-speech" && (
@@ -132,8 +141,8 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
           <div className="bg-secondary border border-primary/20 rounded-2xl p-4 flex items-start gap-3">
             <Mic className="size-5 text-primary shrink-0 mt-0.5" aria-hidden />
             <p className="font-sans text-sm text-foreground font-medium">
-              This browser cannot listen to speech, so say <strong>{target.label}</strong> aloud and judge it
-              yourself below.
+              This browser cannot listen to speech, so say <strong>{target.label}</strong> aloud and
+              judge it yourself below.
             </p>
           </div>
         )}

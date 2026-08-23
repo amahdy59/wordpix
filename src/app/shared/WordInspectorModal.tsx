@@ -1,9 +1,10 @@
-import { memo, useEffect, useRef } from "react";
+import { memo, useRef } from "react";
 import { X, Volume2, Sparkles, BookOpen, Layers, Zap } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { VocabularyItem } from "../data/lessons";
 import { getLexiconEntry } from "../data/lexiconDictionary";
 import { useAudio } from "./useAudio";
+import { useModalA11y } from "./useModalA11y";
 
 interface Props {
   word: VocabularyItem | null;
@@ -18,24 +19,8 @@ export const WordInspectorModal = memo(function WordInspectorModal({
 }: Props) {
   const { speak } = useAudio();
   const closeBtnRef = useRef<HTMLButtonElement>(null);
-
-  useEffect(() => {
-    if (isOpen) {
-      closeBtnRef.current?.focus();
-    }
-  }, [isOpen]);
-
-  // Handle ESC key to close
-  useEffect(() => {
-    if (!isOpen) return;
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        onClose();
-      }
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, onClose]);
+  const containerRef = useRef<HTMLDivElement>(null);
+  useModalA11y(isOpen, containerRef, onClose);
 
   if (!isOpen || !word) return null;
 
@@ -48,6 +33,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
         <div className="absolute inset-0" onClick={onClose} aria-hidden="true" />
 
         <motion.div
+          ref={containerRef}
           initial={{ opacity: 0, scale: 0.95, y: 15 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 15 }}
@@ -55,7 +41,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
           role="dialog"
           aria-modal="true"
           aria-labelledby="word-inspector-title"
-          className="relative w-full max-w-xl bg-wp-card border border-border rounded-3xl shadow-wp-lg overflow-hidden flex flex-col max-h-[92vh] z-10"
+          className="relative w-full max-w-xl bg-wp-card border border-border rounded-3xl shadow-wp-lg overflow-hidden flex flex-col max-h-[92dvh] z-10"
         >
           {/* Top Header with Image & Close Button */}
           <div className="relative h-44 sm:h-52 w-full bg-muted overflow-hidden shrink-0">

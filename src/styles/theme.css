@@ -10,141 +10,141 @@
 
 :root {
   /* Brand Tokens (Violet) */
-  --wp-brand:           #5B21B6;   /* violet-800: AAA with white text */
-  --wp-brand-dark:      #6D28D9;   /* violet-700 */
-  --wp-brand-light:     #F5F3FF;   /* violet-50 */
+  --wp-brand: #5b21b6; /* violet-800: AAA with white text */
+  --wp-brand-dark: #6d28d9; /* violet-700 */
+  --wp-brand-light: #f5f3ff; /* violet-50 */
 
   /* Gamification & Phase Tokens
      Every accent below is paired with an explicit --wp-text-on-* foreground.
      Accents are mid-luminance by nature, so "white on the accent" is not a safe
      default — white on the old emerald-500 measured 2.54:1, failing even AA.
      The pairings here are enforced by a11y_responsive.test.ts at 7:1. */
-  --wp-amber:           #F59E0B;   /* amber-500: Streaks & XP */
-  --wp-text-on-amber:   #1C1917;   /* 8.14:1 */
-  --wp-teal:            #115E59;   /* teal-800: Immerse/Scene mode — 7.58:1 on white */
-  --wp-teal-light:      #CCFBF1;   /* teal-100 */
-  --wp-green:           #065F46;   /* emerald-800: Correct / Mastered — 7.69:1 on white */
-  --wp-text-on-green:   #FFFFFF;   /* 7.69:1 */
-  --wp-green-light:     #D1FAE5;   /* emerald-100 */
-  --wp-rose:            #9F1239;   /* rose-800: Wrong answer — 8.02:1 with white */
-  --wp-text-on-rose:    #FFFFFF;   /* 8.02:1 */
-  --wp-rose-light:      #FFE4E6;   /* rose-100 */
-  --wp-blue:            #1E40AF;   /* blue-800: 8.72:1 with white */
-  --wp-text-on-blue:    #FFFFFF;   /* 8.72:1 */
-  --wp-slate:           #64748B;   /* slate-500: Muted details */
+  --wp-amber: #f59e0b; /* amber-500: Streaks & XP */
+  --wp-text-on-amber: #1c1917; /* 8.14:1 */
+  --wp-teal: #115e59; /* teal-800: Immerse/Scene mode — 7.58:1 on white */
+  --wp-teal-light: #ccfbf1; /* teal-100 */
+  --wp-green: #065f46; /* emerald-800: Correct / Mastered — 7.69:1 on white */
+  --wp-text-on-green: #ffffff; /* 7.69:1 */
+  --wp-green-light: #d1fae5; /* emerald-100 */
+  --wp-rose: #9f1239; /* rose-800: Wrong answer — 8.02:1 with white */
+  --wp-text-on-rose: #ffffff; /* 8.02:1 */
+  --wp-rose-light: #ffe4e6; /* rose-100 */
+  --wp-blue: #1e40af; /* blue-800: 8.72:1 with white */
+  --wp-text-on-blue: #ffffff; /* 8.72:1 */
+  --wp-slate: #64748b; /* slate-500: Muted details */
 
   /* Surface & Neutral Tokens */
-  --wp-surface:         #F8FAFC;   /* slate-50 background */
-  --wp-card:            #FFFFFF;   /* card background */
+  --wp-surface: #f8fafc; /* slate-50 background */
+  --wp-card: #ffffff; /* card background */
 
   /* Immersive dark panel — the "cinema" surface behind scene canvases, audio
      bars, and hero cards. Components hardcoded bg-slate-950/900 for this, which
      meant those regions never responded to the theme at all. It stays dark in
      both modes by design, but as a named token with a checked foreground. */
-  --wp-panel:           #0F172A;   /* slate-900 */
-  --wp-panel-raised:    #1E293B;   /* slate-800 — nested panel surfaces */
-  --wp-panel-border:    #334155;   /* slate-700 */
-  --wp-text-on-panel:   #F8FAFC;   /* 17.06:1 */
-  --wp-text-on-panel-muted: #CBD5E1; /* 12.03:1 */
-  --wp-border:          #E2E8F0;   /* slate-200 border */
-  --wp-text:            #0F172A;   /* slate-900 foreground */
-  --wp-text-secondary:  #475569;   /* slate-600 secondary text (7.1:1 AAA) */
-  --wp-text-on-brand:   #FFFFFF;
+  --wp-panel: #0f172a; /* slate-900 */
+  --wp-panel-raised: #1e293b; /* slate-800 — nested panel surfaces */
+  --wp-panel-border: #334155; /* slate-700 */
+  --wp-text-on-panel: #f8fafc; /* 17.06:1 */
+  --wp-text-on-panel-muted: #cbd5e1; /* 12.03:1 */
+  --wp-border: #e2e8f0; /* slate-200 border */
+  --wp-text: #0f172a; /* slate-900 foreground */
+  --wp-text-secondary: #475569; /* slate-600 secondary text (7.1:1 AAA) */
+  --wp-text-on-brand: #ffffff;
 
   /* Radius scale */
-  --wp-radius-sm:       4px;
-  --wp-radius-md:       8px;
-  --wp-radius-lg:       12px;
-  --wp-radius-xl:       16px;
-  --wp-radius-2xl:      20px;
-  --wp-radius-3xl:      24px;
-  --wp-radius-pill:     9999px;
+  --wp-radius-sm: 4px;
+  --wp-radius-md: 8px;
+  --wp-radius-lg: 12px;
+  --wp-radius-xl: 16px;
+  --wp-radius-2xl: 20px;
+  --wp-radius-3xl: 24px;
+  --wp-radius-pill: 9999px;
 
   /* Shadow scale */
-  --wp-shadow-xs:       0 1px 3px rgba(0, 0, 0, 0.06);
-  --wp-shadow-sm:       0 2px 8px rgba(0, 0, 0, 0.08);
-  --wp-shadow-md:       0 4px 16px rgba(0, 0, 0, 0.10);
+  --wp-shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --wp-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --wp-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
 
   /* Font families */
-  --wp-font-base:       'Inter', 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
-  --wp-font-arabic:     'Noto Sans Arabic', 'Cairo', sans-serif;
+  --wp-font-base: "Inter", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --wp-font-arabic: "Noto Sans Arabic", "Cairo", sans-serif;
 
   /* Type scale — consumed by the .wp-text-* and .wp-type-* utilities in
      globals.css. These were referenced there from the start but never actually
      declared, so every `font-size: var(--wp-text-lg)` resolved invalid and the
      element silently fell back to its inherited size. */
-  --wp-text-xs:         0.75rem;   /* 12px */
-  --wp-text-sm:         0.875rem;  /* 14px */
-  --wp-text-md:         1rem;      /* 16px */
-  --wp-text-lg:         1.125rem;  /* 18px */
-  --wp-text-xl:         1.25rem;   /* 20px */
-  --wp-text-2xl:        1.5rem;    /* 24px */
-  --wp-text-3xl:        1.75rem;   /* 28px */
-  --wp-text-4xl:        2rem;      /* 32px */
-  --wp-text-5xl:        2.5rem;    /* 40px */
+  --wp-text-xs: 0.75rem; /* 12px */
+  --wp-text-sm: 0.875rem; /* 14px */
+  --wp-text-md: 1rem; /* 16px */
+  --wp-text-lg: 1.125rem; /* 18px */
+  --wp-text-xl: 1.25rem; /* 20px */
+  --wp-text-2xl: 1.5rem; /* 24px */
+  --wp-text-3xl: 1.75rem; /* 28px */
+  --wp-text-4xl: 2rem; /* 32px */
+  --wp-text-5xl: 2.5rem; /* 40px */
 
   /* Semantic Bridge Tokens */
-  --background:         var(--wp-surface);
-  --foreground:         var(--wp-text);
-  --card:               var(--wp-card);
-  --card-foreground:    var(--wp-text);
-  --popover:            var(--wp-card);
+  --background: var(--wp-surface);
+  --foreground: var(--wp-text);
+  --card: var(--wp-card);
+  --card-foreground: var(--wp-text);
+  --popover: var(--wp-card);
   --popover-foreground: var(--wp-text);
-  --primary:            var(--wp-brand);
+  --primary: var(--wp-brand);
   --primary-foreground: var(--wp-text-on-brand);
-  --secondary:          var(--wp-brand-light);
+  --secondary: var(--wp-brand-light);
   --secondary-foreground: var(--wp-brand);
-  --muted:              var(--wp-surface);
-  --muted-foreground:   var(--wp-text-secondary);
-  --accent:             var(--wp-green);
-  --accent-foreground:  var(--wp-text-on-green);
-  --destructive:        var(--wp-rose);
+  --muted: var(--wp-surface);
+  --muted-foreground: var(--wp-text-secondary);
+  --accent: var(--wp-green);
+  --accent-foreground: var(--wp-text-on-green);
+  --destructive: var(--wp-rose);
   --destructive-foreground: var(--wp-text-on-rose);
-  --border:             var(--wp-border);
-  --input:              transparent;
-  --input-background:   var(--wp-surface);
-  --ring:               var(--wp-brand);
-  --radius:             var(--wp-radius-lg);
+  --border: var(--wp-border);
+  --input: transparent;
+  --input-background: var(--wp-surface);
+  --ring: var(--wp-brand);
+  --radius: var(--wp-radius-lg);
 
   /* Sidebar Tokens */
-  --sidebar:                    var(--wp-card);
-  --sidebar-foreground:         var(--wp-text);
-  --sidebar-primary:            var(--wp-brand);
+  --sidebar: var(--wp-card);
+  --sidebar-foreground: var(--wp-text);
+  --sidebar-primary: var(--wp-brand);
   --sidebar-primary-foreground: var(--wp-text-on-brand);
-  --sidebar-accent:             var(--wp-brand-light);
-  --sidebar-accent-foreground:  var(--wp-brand);
-  --sidebar-border:             var(--wp-border);
-  --sidebar-ring:               var(--wp-brand);
+  --sidebar-accent: var(--wp-brand-light);
+  --sidebar-accent-foreground: var(--wp-brand);
+  --sidebar-border: var(--wp-border);
+  --sidebar-ring: var(--wp-brand);
 }
 
 .dark {
   /* Dark-mode accents are LIGHTER than their light-mode counterparts and pair
      with DARK foregrounds. The previous set kept white foregrounds on light
      accents, which measured as low as 1.92:1 (white on emerald-400). */
-  --wp-brand:           #C4B5FD;   /* violet-300 — 7.92:1 on card */
-  --wp-brand-dark:      #A78BFA;   /* violet-400 */
-  --wp-brand-light:     #2E1065;   /* violet-950 */
+  --wp-brand: #c4b5fd; /* violet-300 — 7.92:1 on card */
+  --wp-brand-dark: #a78bfa; /* violet-400 */
+  --wp-brand-light: #2e1065; /* violet-950 */
 
-  --wp-amber:           #FBBF24;   /* amber-400 */
-  --wp-text-on-amber:   #1C1917;   /* 10.48:1 */
-  --wp-teal:            #2DD4BF;   /* teal-400 — 7.86:1 on card */
-  --wp-teal-light:      #134E4A;   /* teal-900 */
-  --wp-green:           #6EE7B7;   /* emerald-300 — 9.60:1 on card */
-  --wp-text-on-green:   #052E16;   /* 9.78:1 */
-  --wp-green-light:     #064E3B;   /* emerald-950 */
-  --wp-rose:            #FDA4AF;   /* rose-300 — 7.74:1 on card */
-  --wp-text-on-rose:    #4C0519;   /* 8.27:1 */
-  --wp-rose-light:      #4C0519;   /* rose-950 */
-  --wp-blue:            #1E40AF;   /* blue-800: 8.72:1 with white */
-  --wp-text-on-blue:    #FFFFFF;   /* 8.72:1 */
-  --wp-slate:           #94A3B8;   /* slate-400 */
+  --wp-amber: #fbbf24; /* amber-400 */
+  --wp-text-on-amber: #1c1917; /* 10.48:1 */
+  --wp-teal: #2dd4bf; /* teal-400 — 7.86:1 on card */
+  --wp-teal-light: #134e4a; /* teal-900 */
+  --wp-green: #6ee7b7; /* emerald-300 — 9.60:1 on card */
+  --wp-text-on-green: #052e16; /* 9.78:1 */
+  --wp-green-light: #064e3b; /* emerald-950 */
+  --wp-rose: #fda4af; /* rose-300 — 7.74:1 on card */
+  --wp-text-on-rose: #4c0519; /* 8.27:1 */
+  --wp-rose-light: #4c0519; /* rose-950 */
+  --wp-blue: #1e40af; /* blue-800: 8.72:1 with white */
+  --wp-text-on-blue: #ffffff; /* 8.72:1 */
+  --wp-slate: #94a3b8; /* slate-400 */
 
-  --wp-surface:         #0F172A;   /* slate-900 */
-  --wp-card:            #1E293B;   /* slate-800 */
-  --wp-border:          #334155;   /* slate-700 */
-  --wp-text:            #F8FAFC;   /* slate-50 */
-  --wp-text-secondary:  #CBD5E1;   /* slate-300 — 9.85:1 on card (slate-400 was 5.71:1) */
-  --wp-text-on-brand:   #2E1065;   /* 8.28:1 */
+  --wp-surface: #0f172a; /* slate-900 */
+  --wp-card: #1e293b; /* slate-800 */
+  --wp-border: #334155; /* slate-700 */
+  --wp-text: #f8fafc; /* slate-50 */
+  --wp-text-secondary: #cbd5e1; /* slate-300 — 9.85:1 on card (slate-400 was 5.71:1) */
+  --wp-text-on-brand: #2e1065; /* 8.28:1 */
 }
 
 /* ─── High contrast mode ─────────────────────────────────────────────────────
@@ -155,37 +155,37 @@
    light and dark mode.
    ─────────────────────────────────────────────────────────────────────────── */
 .high-contrast {
-  --wp-text:            #000000;
-  --wp-text-secondary:  #1F2937;   /* 15.3:1 on white */
-  --wp-border:          #000000;
-  --wp-card:            #FFFFFF;
-  --wp-surface:         #FFFFFF;
-  --wp-brand:           #3B0764;   /* violet-950 — 15.1:1 on white */
-  --wp-brand-light:     #FFFFFF;
-  --wp-blue:            #0B2A80;
-  --wp-green:           #04372A;
-  --wp-rose:            #6B0620;
-  --wp-teal:            #04322F;
+  --wp-text: #000000;
+  --wp-text-secondary: #1f2937; /* 15.3:1 on white */
+  --wp-border: #000000;
+  --wp-card: #ffffff;
+  --wp-surface: #ffffff;
+  --wp-brand: #3b0764; /* violet-950 — 15.1:1 on white */
+  --wp-brand-light: #ffffff;
+  --wp-blue: #0b2a80;
+  --wp-green: #04372a;
+  --wp-rose: #6b0620;
+  --wp-teal: #04322f;
 }
 
 .dark.high-contrast {
-  --wp-text:            #FFFFFF;
-  --wp-text-secondary:  #F1F5F9;
-  --wp-border:          #FFFFFF;
-  --wp-card:            #000000;
-  --wp-surface:         #000000;
-  --wp-panel:           #000000;
-  --wp-panel-raised:    #000000;
-  --wp-panel-border:    #FFFFFF;
-  --wp-brand:           #DDD6FE;   /* violet-200 */
-  --wp-text-on-brand:   #000000;
-  --wp-green:           #A7F3D0;
-  --wp-text-on-green:   #000000;
-  --wp-rose:            #FECDD3;
-  --wp-text-on-rose:    #000000;
-  --wp-teal:            #99F6E4;
-  --wp-amber:           #FDE68A;
-  --wp-text-on-amber:   #000000;
+  --wp-text: #ffffff;
+  --wp-text-secondary: #f1f5f9;
+  --wp-border: #ffffff;
+  --wp-card: #000000;
+  --wp-surface: #000000;
+  --wp-panel: #000000;
+  --wp-panel-raised: #000000;
+  --wp-panel-border: #ffffff;
+  --wp-brand: #ddd6fe; /* violet-200 */
+  --wp-text-on-brand: #000000;
+  --wp-green: #a7f3d0;
+  --wp-text-on-green: #000000;
+  --wp-rose: #fecdd3;
+  --wp-text-on-rose: #000000;
+  --wp-teal: #99f6e4;
+  --wp-amber: #fde68a;
+  --wp-text-on-amber: #000000;
 }
 
 /* Borders must be visible, not hairline-faint, when contrast is boosted. */
@@ -200,66 +200,66 @@
 }
 
 @theme inline {
-  --color-background:             var(--background);
-  --color-foreground:             var(--foreground);
-  --color-card:                   var(--card);
-  --color-card-foreground:        var(--card-foreground);
-  --color-popover:                var(--popover);
-  --color-popover-foreground:     var(--popover-foreground);
-  --color-primary:                var(--primary);
-  --color-primary-foreground:     var(--primary-foreground);
-  --color-secondary:              var(--secondary);
-  --color-secondary-foreground:   var(--secondary-foreground);
-  --color-muted:                  var(--muted);
-  --color-muted-foreground:       var(--muted-foreground);
-  --color-accent:                 var(--accent);
-  --color-accent-foreground:      var(--accent-foreground);
-  --color-destructive:            var(--destructive);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
-  --color-border:                 var(--border);
-  --color-ring:                   var(--ring);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
 
-  --color-wp-brand:               var(--wp-brand);
-  --color-wp-brand-dark:          var(--wp-brand-dark);
-  --color-wp-brand-light:         var(--wp-brand-light);
-  --color-wp-amber:               var(--wp-amber);
-  --color-wp-teal:                var(--wp-teal);
-  --color-wp-teal-light:          var(--wp-teal-light);
-  --color-wp-green:               var(--wp-green);
-  --color-wp-green-light:         var(--wp-green-light);
-  --color-wp-rose:                var(--wp-rose);
-  --color-wp-rose-light:          var(--wp-rose-light);
-  --color-wp-blue:                var(--wp-blue);
-  --color-wp-slate:               var(--wp-slate);
-  --color-wp-surface:             var(--wp-surface);
-  --color-wp-card:                var(--wp-card);
-  --color-wp-panel:               var(--wp-panel);
-  --color-wp-panel-raised:        var(--wp-panel-raised);
-  --color-wp-panel-border:        var(--wp-panel-border);
-  --color-wp-text-on-panel:       var(--wp-text-on-panel);
+  --color-wp-brand: var(--wp-brand);
+  --color-wp-brand-dark: var(--wp-brand-dark);
+  --color-wp-brand-light: var(--wp-brand-light);
+  --color-wp-amber: var(--wp-amber);
+  --color-wp-teal: var(--wp-teal);
+  --color-wp-teal-light: var(--wp-teal-light);
+  --color-wp-green: var(--wp-green);
+  --color-wp-green-light: var(--wp-green-light);
+  --color-wp-rose: var(--wp-rose);
+  --color-wp-rose-light: var(--wp-rose-light);
+  --color-wp-blue: var(--wp-blue);
+  --color-wp-slate: var(--wp-slate);
+  --color-wp-surface: var(--wp-surface);
+  --color-wp-card: var(--wp-card);
+  --color-wp-panel: var(--wp-panel);
+  --color-wp-panel-raised: var(--wp-panel-raised);
+  --color-wp-panel-border: var(--wp-panel-border);
+  --color-wp-text-on-panel: var(--wp-text-on-panel);
   --color-wp-text-on-panel-muted: var(--wp-text-on-panel-muted);
-  --color-wp-border:              var(--wp-border);
-  --color-wp-text:                var(--wp-text);
-  --color-wp-text-secondary:      var(--wp-text-secondary);
-  --color-wp-text-on-brand:       var(--wp-text-on-brand);
-  --color-wp-text-on-amber:       var(--wp-text-on-amber);
-  --color-wp-text-on-green:       var(--wp-text-on-green);
-  --color-wp-text-on-rose:        var(--wp-text-on-rose);
-  --color-wp-text-on-blue:        var(--wp-text-on-blue);
+  --color-wp-border: var(--wp-border);
+  --color-wp-text: var(--wp-text);
+  --color-wp-text-secondary: var(--wp-text-secondary);
+  --color-wp-text-on-brand: var(--wp-text-on-brand);
+  --color-wp-text-on-amber: var(--wp-text-on-amber);
+  --color-wp-text-on-green: var(--wp-text-on-green);
+  --color-wp-text-on-rose: var(--wp-text-on-rose);
+  --color-wp-text-on-blue: var(--wp-text-on-blue);
 
-  --radius-sm:   var(--wp-radius-sm);
-  --radius-md:   var(--wp-radius-md);
-  --radius-lg:   var(--wp-radius-lg);
-  --radius-xl:   var(--wp-radius-xl);
-  --radius-2xl:  var(--wp-radius-2xl);
-  --radius-3xl:  var(--wp-radius-3xl);
+  --radius-sm: var(--wp-radius-sm);
+  --radius-md: var(--wp-radius-md);
+  --radius-lg: var(--wp-radius-lg);
+  --radius-xl: var(--wp-radius-xl);
+  --radius-2xl: var(--wp-radius-2xl);
+  --radius-3xl: var(--wp-radius-3xl);
 
   --shadow-wp-xs: var(--wp-shadow-xs);
   --shadow-wp-sm: var(--wp-shadow-sm);
   --shadow-wp-md: var(--wp-shadow-md);
 
-  --font-sans:    var(--wp-font-base);
-  --font-arabic:  var(--wp-font-arabic);
+  --font-sans: var(--wp-font-base);
+  --font-arabic: var(--wp-font-arabic);
 }
 
 @layer base {
@@ -283,5 +283,23 @@
 
   html {
     font-size: 16px;
+  }
+}
+
+/* Phase 2: OS-level High Contrast preference support */
+@media (prefers-contrast: more) {
+  :root {
+    --wp-surface: #000000;
+    --wp-card: #000000;
+    --wp-card-active: #111111;
+    --wp-foreground: #ffffff;
+    --wp-muted-foreground: #dddddd;
+    --wp-border: #ffffff;
+    --wp-brand: #ffffff;
+    --wp-text-on-brand: #000000;
+    --wp-accent-emerald: #00ff00;
+    --wp-text-on-emerald: #000000;
+    --wp-accent-rose: #ff0000;
+    --wp-text-on-rose: #000000;
   }
 }

@@ -26,7 +26,7 @@ export function SplashWelcome({ dispatch }: Props) {
   };
 
   return (
-    <div className="bg-background flex flex-col md:flex-row min-h-svh md:min-h-[560px] relative overflow-hidden">
+    <div className="bg-background flex flex-col md:flex-row min-h-dvh md:min-h-[560px] relative overflow-hidden">
       <StatusBar />
 
       {/* ── Desktop Left Hero Column ────────────────────────────────────────── */}
@@ -84,7 +84,7 @@ export function SplashWelcome({ dispatch }: Props) {
       </div>
 
       {/* ── Right Column / Mobile Layout ────────────────────────────────────── */}
-      <div className="flex-1 flex flex-col justify-between p-6 md:p-8 xl:p-12 min-h-svh md:min-h-0">
+      <div className="flex-1 flex flex-col justify-between p-6 md:p-8 xl:p-12 min-h-dvh md:min-h-0">
         {/* Mobile Header (Hidden on Desktop) */}
         <header className="md:hidden w-full flex items-center justify-between z-10 shrink-0">
           <div className="flex items-center gap-2">

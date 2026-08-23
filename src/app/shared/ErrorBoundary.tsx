@@ -56,7 +56,7 @@ export class ErrorBoundary extends Component<Props, State> {
         <div
           role="alert"
           aria-live="assertive"
-          className="min-h-svh bg-background flex items-center justify-center p-6 text-center"
+          className="min-h-dvh bg-background flex items-center justify-center p-6 text-center"
         >
           <div className="bg-wp-card border border-border rounded-2xl p-8 max-w-md w-full shadow-wp-md flex flex-col items-center gap-4">
             <div

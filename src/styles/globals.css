@@ -4,9 +4,18 @@
    ─────────────────────────────────────────────────────────────────────────── */
 
 @keyframes wp-shake {
-  0%, 100% { transform: translateX(0); }
-  20%, 60% { transform: translateX(-4px); }
-  40%, 80% { transform: translateX(4px); }
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-4px);
+  }
+  40%,
+  80% {
+    transform: translateX(4px);
+  }
 }
 
 /* ─── Reduced motion (WCAG 2.2.2, 2.3.3) ────────────────────────────────────
@@ -44,15 +53,42 @@
   }
 
   /* Raw size helpers */
-  .wp-text-xs  { font-size: var(--wp-text-xs);  line-height: 1.5; } /* 12px */
-  .wp-text-sm  { font-size: var(--wp-text-sm);  line-height: 1.5; } /* 14px */
-  .wp-text-md  { font-size: var(--wp-text-md);  line-height: 1.5; } /* 16px */
-  .wp-text-lg  { font-size: var(--wp-text-lg);  line-height: 1.4; } /* 18px */
-  .wp-text-xl  { font-size: var(--wp-text-xl);  line-height: 1.4; } /* 20px */
-  .wp-text-2xl { font-size: var(--wp-text-2xl); line-height: 1.3; } /* 24px */
-  .wp-text-3xl { font-size: var(--wp-text-3xl); line-height: 1.3; } /* 28px */
-  .wp-text-4xl { font-size: var(--wp-text-4xl); line-height: 1.2; } /* 32px */
-  .wp-text-5xl { font-size: var(--wp-text-5xl); line-height: 1.1; } /* 40px */
+  .wp-text-xs {
+    font-size: var(--wp-text-xs);
+    line-height: 1.5;
+  } /* 12px */
+  .wp-text-sm {
+    font-size: var(--wp-text-sm);
+    line-height: 1.5;
+  } /* 14px */
+  .wp-text-md {
+    font-size: var(--wp-text-md);
+    line-height: 1.5;
+  } /* 16px */
+  .wp-text-lg {
+    font-size: var(--wp-text-lg);
+    line-height: 1.4;
+  } /* 18px */
+  .wp-text-xl {
+    font-size: var(--wp-text-xl);
+    line-height: 1.4;
+  } /* 20px */
+  .wp-text-2xl {
+    font-size: var(--wp-text-2xl);
+    line-height: 1.3;
+  } /* 24px */
+  .wp-text-3xl {
+    font-size: var(--wp-text-3xl);
+    line-height: 1.3;
+  } /* 28px */
+  .wp-text-4xl {
+    font-size: var(--wp-text-4xl);
+    line-height: 1.2;
+  } /* 32px */
+  .wp-text-5xl {
+    font-size: var(--wp-text-5xl);
+    line-height: 1.1;
+  } /* 40px */
 
   /* Named type styles from the design system token sheet */
 
@@ -165,17 +201,31 @@
   }
 
   /* ─── Shadow utilities ──────────────────────────────────────────────────── */
-  .shadow-wp-xs { box-shadow: var(--wp-shadow-xs); }
-  .shadow-wp-sm { box-shadow: var(--wp-shadow-sm); }
-  .shadow-wp-md { box-shadow: var(--wp-shadow-md); }
+  .shadow-wp-xs {
+    box-shadow: var(--wp-shadow-xs);
+  }
+  .shadow-wp-sm {
+    box-shadow: var(--wp-shadow-sm);
+  }
+  .shadow-wp-md {
+    box-shadow: var(--wp-shadow-md);
+  }
 }
 
 @layer base {
-  button:not(:disabled), [role="button"]:not([aria-disabled="true"]), a {
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  a {
     @apply cursor-pointer active:scale-[0.98] active:opacity-90 transition-transform;
   }
-  button:disabled, [role="button"][aria-disabled="true"] {
+  button:disabled,
+  [role="button"][aria-disabled="true"] {
     @apply cursor-not-allowed opacity-50;
   }
 }
 
+/* Phase 1: Prevent overscroll bounce on mobile */
+html,
+body {
+  overscroll-behavior-y: none;
+}

@@ -154,7 +154,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
 
   if (finished || !task) {
     return (
-      <div className="min-h-svh bg-background flex flex-col">
+      <div className="min-h-dvh bg-background flex flex-col">
         <LessonHeader
           title={definition.title}
           current={definition.step}
@@ -198,7 +198,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
     task.kind === "practice";
 
   return (
-    <div className="min-h-svh bg-background flex flex-col">
+    <div className="min-h-dvh bg-background flex flex-col">
       <LessonHeader
         title={definition.title}
         current={index + 1}
@@ -223,7 +223,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
         </div>
 
         {imageWord && (
-          <div className="w-full rounded-3xl overflow-hidden border border-border shadow-wp-xs bg-muted aspect-[16/10] sm:aspect-[16/9] max-h-[38vh] relative">
+          <div className="w-full rounded-3xl overflow-hidden border border-border shadow-wp-xs bg-muted aspect-[16/10] sm:aspect-[16/9] max-h-[38dvh] relative">
             <WordImage
               word={imageWord}
               altMode={task.kind === "choice" && !task.optionsAreImages ? "assessment" : "learning"}

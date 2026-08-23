@@ -131,7 +131,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         <h2 className="sr-only">Choose the correct word that matches the picture</h2>
 
         {/* Image with centered feedback overlay */}
-        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[3/2] sm:aspect-[16/9] max-h-[38vh] sm:max-h-[46vh]">
+        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[3/2] sm:aspect-[16/9] max-h-[38dvh] sm:max-h-[46dvh]">
           <WordImage
             word={currentTargetWord}
             className="w-full h-full absolute inset-0 object-cover"

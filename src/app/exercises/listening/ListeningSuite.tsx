@@ -21,7 +21,9 @@ const DICTATION_SECONDS = 45;
 const MAX_REPLAYS = 3;
 
 // 3. Dictation Sprint
-export const ExListeningDictationSprint = memo(function ExListeningDictationSprint({ dispatch }: Props) {
+export const ExListeningDictationSprint = memo(function ExListeningDictationSprint({
+  dispatch,
+}: Props) {
   const { accessibility } = useAccessibility();
   const timed = accessibility.timedExercises;
   const { speak } = useAudio();
@@ -31,7 +33,10 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
   const [replaysUsed, setReplaysUsed] = useState(0);
   const [result, setResult] = useState<"correct" | "incorrect" | null>(null);
 
-  const target = useMemo(() => BEDROOM_VOCABULARY.find((w) => w.id === "blanket") ?? BEDROOM_VOCABULARY[0], []);
+  const target = useMemo(
+    () => BEDROOM_VOCABULARY.find((w) => w.id === "blanket") ?? BEDROOM_VOCABULARY[0],
+    []
+  );
   const sentence = `The cat is sleeping on the ${target.label.toLowerCase()}`;
 
   const reveal = useCallback(() => {
@@ -64,8 +69,14 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
   const replaysLeft = MAX_REPLAYS - replaysUsed;
 
   return (
-    <div className="min-h-svh bg-background flex flex-col">
-      <LessonHeader title="Dictation Sprint (Cloze Input)" current={3} total={9} onBack={() => dispatch({ type: "GO", to: "explore" })} onClose={() => dispatch({ type: "GO", to: "home" })} />
+    <div className="min-h-dvh bg-background flex flex-col">
+      <LessonHeader
+        title="Dictation Sprint (Cloze Input)"
+        current={3}
+        total={9}
+        onBack={() => dispatch({ type: "GO", to: "explore" })}
+        onClose={() => dispatch({ type: "GO", to: "home" })}
+      />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
         <div className="flex flex-wrap items-center justify-between gap-3 bg-wp-card border border-border rounded-2xl p-4">
           <ExerciseTimer countdown={countdown} enabled={timed} label="Dictation time remaining" />
@@ -81,7 +92,10 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
           </button>
         </div>
 
-        <form onSubmit={submit} className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col gap-4">
+        <form
+          onSubmit={submit}
+          className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col gap-4"
+        >
           <h2 className="font-sans font-bold text-foreground text-xl">
             &ldquo;The cat is sleeping on the{" "}
             <span className="underline text-primary decoration-primary decoration-2 underline-offset-4">
@@ -120,7 +134,10 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
           )}
 
           {result ? (
-            <PrimaryButton label="Back to Exercises" onClick={() => dispatch({ type: "GO", to: "explore" })} />
+            <PrimaryButton
+              label="Back to Exercises"
+              onClick={() => dispatch({ type: "GO", to: "explore" })}
+            />
           ) : (
             <PrimaryButton label="Submit Dictation" type="submit" />
           )}
@@ -133,16 +150,19 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
 // 7. Lesson Results (Listening)
 export const ExListeningResults = memo(function ExListeningResults({ dispatch }: Props) {
   const { progress } = useProgress();
-  const strongWords = Object.values(progress.wordMemory).filter((w) => w.mastery === "strong").length;
+  const strongWords = Object.values(progress.wordMemory).filter(
+    (w) => w.mastery === "strong"
+  ).length;
 
   return (
-    <div className="min-h-svh bg-secondary flex flex-col items-center justify-center p-6 text-center">
+    <div className="min-h-dvh bg-secondary flex flex-col items-center justify-center p-6 text-center">
       <div className="size-24 rounded-3xl bg-wp-amber/20 border border-wp-amber/30 flex items-center justify-center shadow-2xl mb-4">
         <Trophy className="size-12 text-wp-amber" />
       </div>
       <h1 className="font-sans font-black text-foreground text-3xl">Listening Module Complete!</h1>
       <p className="font-sans text-muted-foreground text-sm mt-1 max-w-md">
-        Skill drills are practice, not graded work. Your totals below come from your lesson sessions.
+        Skill drills are practice, not graded work. Your totals below come from your lesson
+        sessions.
       </p>
       <div className="grid grid-cols-3 gap-3 w-full max-w-md my-6">
         <div className="bg-wp-card border border-border p-3 rounded-2xl">
@@ -158,8 +178,10 @@ export const ExListeningResults = memo(function ExListeningResults({ dispatch }:
           <p className="font-sans text-[11px] text-muted-foreground">Words Strong</p>
         </div>
       </div>
-      <PrimaryButton label="Return to Explore Worlds" onClick={() => dispatch({ type: "GO", to: "explore" })} />
+      <PrimaryButton
+        label="Return to Explore Worlds"
+        onClick={() => dispatch({ type: "GO", to: "explore" })}
+      />
     </div>
   );
 });
-

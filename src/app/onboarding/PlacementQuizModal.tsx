@@ -73,7 +73,7 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
         aria-modal="true"
         aria-labelledby="placement-modal-title"
         tabIndex={-1}
-        className="bg-wp-card border border-border rounded-3xl p-5 sm:p-6 w-full max-w-md shadow-2xl flex flex-col gap-4 sm:gap-5 relative outline-none max-h-[92vh] overflow-y-auto"
+        className="bg-wp-card border border-border rounded-3xl p-5 sm:p-6 w-full max-w-md shadow-2xl flex flex-col gap-4 sm:gap-5 relative outline-none max-h-[92dvh] overflow-y-auto"
       >
         <button
           type="button"

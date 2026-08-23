@@ -207,7 +207,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         </div>
 
         {/* Fluid Target Image Banner with integrated bottom overlay */}
-        <div className="w-full relative rounded-2xl sm:rounded-3xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[4/3] sm:aspect-[16/10] max-h-[46vh] sm:max-h-[52vh]">
+        <div className="w-full relative rounded-2xl sm:rounded-3xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[4/3] sm:aspect-[16/10] max-h-[46dvh] sm:max-h-[52dvh]">
           <WordImage word={currentWord} className="w-full h-full absolute inset-0 object-cover" />
 
           {/* Top Badges */}

@@ -19,7 +19,7 @@ interface Props {
 // 8. Writing Results
 export const ExWritingResults = memo(function ExWritingResults({ dispatch }: Props) {
   return (
-    <div className="min-h-svh bg-secondary flex flex-col items-center justify-center p-6 text-center">
+    <div className="min-h-dvh bg-secondary flex flex-col items-center justify-center p-6 text-center">
       <div className="size-24 rounded-3xl bg-primary/20 border border-primary/30 flex items-center justify-center shadow-2xl mb-4">
         <PenTool className="size-12 text-primary" />
       </div>
@@ -87,7 +87,7 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
 
   if (finished) {
     return (
-      <div className="min-h-svh bg-background flex flex-col">
+      <div className="min-h-dvh bg-background flex flex-col">
         <LessonHeader
           title="Timed Speed Writing Sprint"
           current={9}
@@ -122,7 +122,7 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
   }
 
   return (
-    <div className="min-h-svh bg-background flex flex-col">
+    <div className="min-h-dvh bg-background flex flex-col">
       <LessonHeader
         title="Timed Speed Writing Sprint"
         current={9}
@@ -143,7 +143,7 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
             word={current}
             altMode="assessment"
             optionIndex={index}
-            className="w-full h-auto max-h-[30vh] sm:max-h-[40vh] block object-contain rounded-xl"
+            className="w-full h-auto max-h-[30dvh] sm:max-h-[40dvh] block object-contain rounded-xl"
           />
         </div>
 

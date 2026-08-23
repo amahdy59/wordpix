@@ -64,7 +64,7 @@ export const ExerciseShell = memo(function ExerciseShell({
     typeof progress === "number" ? 100 : progress ? progress.total : EXERCISE_STEP_COUNT;
 
   return (
-    <div className="bg-background flex flex-col lg:flex-row min-h-svh lg:h-svh lg:min-h-0 lg:overflow-hidden relative">
+    <div className="bg-background flex flex-col lg:flex-row min-h-dvh lg:h-dvh lg:min-h-0 lg:overflow-hidden relative">
       <ExitConfirmModal
         isOpen={showExitModal}
         onCancel={() => setShowExitModal(false)}
@@ -75,7 +75,7 @@ export const ExerciseShell = memo(function ExerciseShell({
       />
 
       {/* ── RIGHT PANEL: Desktop & Mobile Exercise Main View ────────────────── */}
-      <div className="flex-1 flex flex-col h-svh overflow-hidden relative">
+      <div className="flex-1 flex flex-col h-dvh overflow-hidden relative">
         <LessonHeader
           title={`${group.name}: ${title}`}
           subtitle={subtitle}

@@ -18,12 +18,12 @@ interface Props {
  */
 export const AppShell = memo(function AppShell({ activeTab, dispatch, children }: Props) {
   return (
-    <div className="min-h-svh w-full max-w-full overflow-x-hidden bg-background flex flex-col lg:flex-row relative">
+    <div className="min-h-dvh w-full max-w-full overflow-x-hidden bg-background flex flex-col lg:flex-row relative">
       {/* Left sidebar — visible on md+ only. Hugs the left edge natively. */}
       <SidebarNav activeTab={activeTab} dispatch={dispatch} />
 
       {/* Main Content Column */}
-      <div className="flex-1 flex flex-col min-w-0 h-svh relative">
+      <div className="flex-1 flex flex-col min-w-0 h-dvh relative">
         {/* Mobile Header - hidden on lg+ */}
         <MobileHeader dispatch={dispatch} />
 
@@ -34,20 +34,14 @@ export const AppShell = memo(function AppShell({ activeTab, dispatch, children }
           tabIndex={-1}
         >
           {/* Centered reading column for all pages */}
-          <div className="mx-auto max-w-5xl w-full px-4 lg:px-8">
-            {children}
-          </div>
+          <div className="mx-auto max-w-5xl w-full px-4 lg:px-8">{children}</div>
         </main>
       </div>
 
       {/* Mobile bottom bar — hidden on lg+ */}
-      <div
-        className="lg:hidden fixed bottom-0 inset-x-0 z-40"
-        aria-hidden="false"
-      >
+      <div className="lg:hidden fixed bottom-0 inset-x-0 z-40" aria-hidden="false">
         <BottomTabBar activeTab={activeTab} dispatch={dispatch} />
       </div>
     </div>
   );
 });
-

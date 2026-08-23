@@ -40,7 +40,9 @@ const ExerciseContextFill = lazy(() =>
   import("../exercises/ExerciseContextFill").then((m) => ({ default: m.ExerciseContextFill }))
 );
 const ExerciseSentenceBuilder = lazy(() =>
-  import("../exercises/ExerciseSentenceBuilder").then((m) => ({ default: m.ExerciseSentenceBuilder }))
+  import("../exercises/ExerciseSentenceBuilder").then((m) => ({
+    default: m.ExerciseSentenceBuilder,
+  }))
 );
 const ExerciseQuickQuiz = lazy(() =>
   import("../exercises/ExerciseQuickQuiz").then((m) => ({ default: m.ExerciseQuickQuiz }))
@@ -56,7 +58,10 @@ type ExStep = "listen" | "recall" | "fill" | "builder" | "quiz" | "story";
 const LoadingFallback = () => {
   const { t } = useI18n();
   return (
-    <div className="flex-1 flex items-center justify-center min-h-[300px] p-6 text-center" aria-live="polite">
+    <div
+      className="flex-1 flex items-center justify-center min-h-[300px] p-6 text-center"
+      aria-live="polite"
+    >
       <div className="flex flex-col items-center gap-3">
         <div
           className="size-10 rounded-full border-4 border-primary border-t-transparent motion-safe:animate-spin"
@@ -100,7 +105,8 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
     if (state.id === "profile") return <ProfileStats dispatch={dispatch} />;
     if (state.id === "lesson-entry")
       return <LessonWorldEntry unitId={state.unitId ?? DEFAULT_UNIT_ID} dispatch={dispatch} />;
-    if (state.id === "learn-words") return <LearnWordsScreen lessonId={state.lessonId} dispatch={dispatch} />;
+    if (state.id === "learn-words")
+      return <LearnWordsScreen lessonId={state.lessonId} dispatch={dispatch} />;
     if (state.id === "skill-hub") return <SkillExerciseHub dispatch={dispatch} />;
 
     if (state.id === "skill-exercise") {
@@ -113,13 +119,14 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       const isBeginner =
         learnerState.preferences.englishLevel === "A1" ||
         learnerState.preferences.englishLevel === "A2";
-      const isAssessment = state.mode === "UNIT_ASSESSMENT" || state.mode === "PRE_LESSON_ASSESSMENT";
+      const isAssessment =
+        state.mode === "UNIT_ASSESSMENT" || state.mode === "PRE_LESSON_ASSESSMENT";
 
       const exSequence = isAssessment
         ? (["quiz"] as const)
         : isBeginner
-        ? (["listen", "recall", "fill", "quiz", "story"] as const)
-        : (["listen", "recall", "fill", "builder", "quiz", "story"] as const);
+          ? (["listen", "recall", "fill", "quiz", "story"] as const)
+          : (["listen", "recall", "fill", "builder", "quiz", "story"] as const);
 
       if (state.step >= exSequence.length) {
         return (
@@ -143,15 +150,73 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
 
       if (activeGroupWords.length === 0) return <ExploreWorlds dispatch={dispatch} />;
 
-      if (ex === "listen") return <ExerciseListenRepeat words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
-      if (ex === "recall") return <ExerciseRecallMatch words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
-      if (ex === "fill") return <ExerciseContextFill words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
-      if (ex === "builder") return <ExerciseSentenceBuilder words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
-      if (ex === "quiz") return <ExerciseQuickQuiz words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
-      if (ex === "story") return <ExerciseStory words={activeGroupWords} step={state.step} lessonId={state.lessonId} dispatch={dispatch} />;
+      if (ex === "listen")
+        return (
+          <ExerciseListenRepeat
+            words={activeGroupWords}
+            step={state.step}
+            lessonId={state.lessonId}
+            dispatch={dispatch}
+          />
+        );
+      if (ex === "recall")
+        return (
+          <ExerciseRecallMatch
+            words={activeGroupWords}
+            step={state.step}
+            lessonId={state.lessonId}
+            dispatch={dispatch}
+          />
+        );
+      if (ex === "fill")
+        return (
+          <ExerciseContextFill
+            words={activeGroupWords}
+            step={state.step}
+            lessonId={state.lessonId}
+            dispatch={dispatch}
+          />
+        );
+      if (ex === "builder")
+        return (
+          <ExerciseSentenceBuilder
+            words={activeGroupWords}
+            step={state.step}
+            lessonId={state.lessonId}
+            dispatch={dispatch}
+          />
+        );
+      if (ex === "quiz")
+        return (
+          <ExerciseQuickQuiz
+            words={activeGroupWords}
+            step={state.step}
+            lessonId={state.lessonId}
+            dispatch={dispatch}
+          />
+        );
+      if (ex === "story")
+        return (
+          <ExerciseStory
+            words={activeGroupWords}
+            step={state.step}
+            lessonId={state.lessonId}
+            dispatch={dispatch}
+          />
+        );
     }
     if (state.id === "lesson-complete") {
-      return <LessonCompleteResults sessionId={state.sessionId} lessonId={state.lessonId} unitId={state.unitId} mode={state.mode} attempts={state.attempts} wordQueue={state.wordQueue} dispatch={dispatch} />;
+      return (
+        <LessonCompleteResults
+          sessionId={state.sessionId}
+          lessonId={state.lessonId}
+          unitId={state.unitId}
+          mode={state.mode}
+          attempts={state.attempts}
+          wordQueue={state.wordQueue}
+          dispatch={dispatch}
+        />
+      );
     }
     return null;
   }
@@ -167,9 +232,7 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
         transition={{ duration: 0.2, ease: "easeInOut" }}
         className="flex-1 flex flex-col w-full min-h-full"
       >
-        <Suspense fallback={<LoadingFallback />}>
-          {renderContent()}
-        </Suspense>
+        <Suspense fallback={<LoadingFallback />}>{renderContent()}</Suspense>
       </motion.div>
     </AnimatePresence>
   );
@@ -177,12 +240,12 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
   return (
     <>
       {state.id === "onboarding" && (
-        <div className="min-h-svh bg-secondary flex items-center justify-center p-0 md:p-8">
+        <div className="min-h-dvh bg-secondary flex items-center justify-center p-0 md:p-8">
           <SkipLink />
           <div
             id="main-content"
             tabIndex={-1}
-            className="min-h-svh md:min-h-0 w-full max-w-5xl md:rounded-3xl md:overflow-hidden md:shadow-wp-md md:border md:border-border outline-none flex flex-col"
+            className="min-h-dvh md:min-h-0 w-full max-w-5xl md:rounded-3xl md:overflow-hidden md:shadow-wp-md md:border md:border-border outline-none flex flex-col"
           >
             {animatedContent}
           </div>
@@ -199,7 +262,7 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       )}
 
       {state.id === "learn-words" && (
-        <div className="min-h-svh bg-background flex flex-col">
+        <div className="min-h-dvh bg-background flex flex-col">
           <SkipLink />
           <div id="main-content" tabIndex={-1} className="w-full flex-1 flex flex-col outline-none">
             {animatedContent}
@@ -207,16 +270,14 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
         </div>
       )}
 
-      {state.id !== "onboarding" &&
-        !TABBED_IDS.has(state.id) &&
-        state.id !== "learn-words" && (
-          <div className="min-h-svh bg-background flex flex-col">
-            <SkipLink />
-            <div id="main-content" tabIndex={-1} className="w-full flex-1 flex flex-col outline-none">
-              {animatedContent}
-            </div>
+      {state.id !== "onboarding" && !TABBED_IDS.has(state.id) && state.id !== "learn-words" && (
+        <div className="min-h-dvh bg-background flex flex-col">
+          <SkipLink />
+          <div id="main-content" tabIndex={-1} className="w-full flex-1 flex flex-col outline-none">
+            {animatedContent}
           </div>
-        )}
+        </div>
+      )}
     </>
   );
 }

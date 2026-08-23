@@ -56,13 +56,14 @@ export const VocabSidebar = memo(function VocabSidebar({
 
   const showTopicFilter = vocabulary.length >= TOPIC_FILTER_MIN_WORDS;
 
-  const filteredVocabulary = selectedTopic === "all" || !showTopicFilter
-    ? vocabulary
-    : vocabulary.filter((v) => v.topic === selectedTopic);
+  const filteredVocabulary =
+    selectedTopic === "all" || !showTopicFilter
+      ? vocabulary
+      : vocabulary.filter((v) => v.topic === selectedTopic);
 
   return (
     <aside
-      className={`${mobileOpen ? "fixed inset-0 z-50 flex" : "hidden"} lg:static lg:flex flex-col min-h-0 max-h-svh w-full lg:w-96 xl:w-[420px] bg-wp-card border-s border-border h-full overflow-hidden overscroll-none shrink-0`}
+      className={`${mobileOpen ? "fixed inset-0 z-50 flex" : "hidden"} lg:static lg:flex flex-col min-h-0 max-h-dvh w-full lg:w-96 xl:w-[420px] bg-wp-card border-s border-border h-full overflow-hidden overscroll-none shrink-0`}
       aria-label={`${groupName} vocabulary list`}
       aria-modal={mobileOpen || undefined}
       role={mobileOpen ? "dialog" : undefined}
@@ -94,7 +95,9 @@ export const VocabSidebar = memo(function VocabSidebar({
         </div>
 
         {/* Topic Filter Chips */}
-        <div className={`${showTopicFilter ? "flex" : "hidden"} items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar`}>
+        <div
+          className={`${showTopicFilter ? "flex" : "hidden"} items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar`}
+        >
           <button
             type="button"
             onClick={() => setSelectedTopic("all")}
@@ -159,7 +162,12 @@ export const VocabSidebar = memo(function VocabSidebar({
                 className="flex items-center gap-3 flex-1 min-w-0 text-start min-h-[44px] rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 <div className="relative rounded-xl shrink-0 size-12 overflow-hidden border border-border bg-muted">
-                  <WordImage word={word} width="48" height="48" className="size-full object-cover" />
+                  <WordImage
+                    word={word}
+                    width="48"
+                    height="48"
+                    className="size-full object-cover"
+                  />
                   {levelNum === 3 && (
                     <div className="absolute top-1 end-1 bg-wp-green text-wp-text-on-green p-0.5 rounded-full">
                       <CheckCircle2 className="size-3" aria-hidden />
@@ -169,14 +177,20 @@ export const VocabSidebar = memo(function VocabSidebar({
 
                 <div className="flex flex-col gap-0.5 flex-1 min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
-                    <span className="font-sans font-bold text-foreground text-sm">{word.label}</span>
+                    <span className="font-sans font-bold text-foreground text-sm">
+                      {word.label}
+                    </span>
                     {badge && (
-                      <span className={`font-sans font-semibold text-[10px] px-2 py-0.5 rounded-full border ${badge.bg} ${badge.text}`}>
+                      <span
+                        className={`font-sans font-semibold text-[10px] px-2 py-0.5 rounded-full border ${badge.bg} ${badge.text}`}
+                      >
                         {badge.label}
                       </span>
                     )}
                   </div>
-                  <span className="font-sans text-muted-foreground text-xs font-medium">/{word.phonetic}/</span>
+                  <span className="font-sans text-muted-foreground text-xs font-medium">
+                    /{word.phonetic}/
+                  </span>
                 </div>
               </button>
 

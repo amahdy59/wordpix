@@ -45,7 +45,7 @@ export function LanguageSelect({ dispatch }: Props) {
   };
 
   return (
-    <div className="bg-background flex flex-col md:flex-row min-h-svh md:min-h-[560px] relative overflow-hidden">
+    <div className="bg-background flex flex-col md:flex-row min-h-dvh md:min-h-[560px] relative overflow-hidden">
       <StatusBar />
       <PlacementQuizModal
         isOpen={isPlacementOpen}
@@ -71,13 +71,15 @@ export function LanguageSelect({ dispatch }: Props) {
               Personalize Your Pace
             </h2>
             <p className="font-sans text-white/70 text-base mt-2 leading-relaxed">
-              We adapt lesson depth and daily review schedules to match your selected proficiency level and daily practice commitment.
+              We adapt lesson depth and daily review schedules to match your selected proficiency
+              level and daily practice commitment.
             </p>
           </div>
           <div className="bg-white/10 rounded-2xl p-4 border border-white/15 backdrop-blur-md flex items-center gap-3">
             <Sparkles className="size-6 text-wp-amber shrink-0" />
             <div className="text-xs font-sans text-white/90">
-              <span className="font-bold">Daily Goal:</span> {goalMinutes} minutes per day keeps your vocabulary memory fresh!
+              <span className="font-bold">Daily Goal:</span> {goalMinutes} minutes per day keeps
+              your vocabulary memory fresh!
             </div>
           </div>
         </div>
@@ -89,9 +91,11 @@ export function LanguageSelect({ dispatch }: Props) {
       </div>
 
       {/* ── Right Column / Mobile Layout ────────────────────────────────────── */}
-      <div className="flex-1 flex flex-col justify-between p-6 md:p-8 xl:p-12 min-h-svh md:min-h-0 overflow-y-auto">
+      <div className="flex-1 flex flex-col justify-between p-6 md:p-8 xl:p-12 min-h-dvh md:min-h-0 overflow-y-auto">
         <header className="w-full flex items-center justify-between z-10 shrink-0 mb-4">
-          <span className="font-sans font-black text-foreground text-lg tracking-tight">Your Goal</span>
+          <span className="font-sans font-black text-foreground text-lg tracking-tight">
+            Your Goal
+          </span>
           <span className="text-xs font-sans font-semibold text-muted-foreground bg-muted px-3 py-1 rounded-full border border-border">
             Step 2 of 2
           </span>
@@ -109,7 +113,11 @@ export function LanguageSelect({ dispatch }: Props) {
           </div>
 
           {/* Level Cards */}
-          <div role="radiogroup" aria-label="Select proficiency level" className="w-full flex flex-col gap-2.5">
+          <div
+            role="radiogroup"
+            aria-label="Select proficiency level"
+            className="w-full flex flex-col gap-2.5"
+          >
             {LEVELS.map((item) => {
               const isSelected = level === item.tag;
               return (
@@ -139,7 +147,9 @@ export function LanguageSelect({ dispatch }: Props) {
                       <p className="font-sans font-bold text-foreground text-base leading-tight">
                         {item.title}
                       </p>
-                      <p className="font-sans text-muted-foreground text-xs mt-0.5">{item.subtitle}</p>
+                      <p className="font-sans text-muted-foreground text-xs mt-0.5">
+                        {item.subtitle}
+                      </p>
                     </div>
                   </div>
 
@@ -169,7 +179,11 @@ export function LanguageSelect({ dispatch }: Props) {
             could ever change it — setGoalMinutes was declared and never called,
             so the value was permanently the initial 10.
           */}
-          <div className="w-full flex flex-col gap-2" role="group" aria-labelledby="daily-goal-heading">
+          <div
+            className="w-full flex flex-col gap-2"
+            role="group"
+            aria-labelledby="daily-goal-heading"
+          >
             <h2 id="daily-goal-heading" className="font-sans font-bold text-foreground text-sm">
               How long per day?
             </h2>
@@ -197,7 +211,11 @@ export function LanguageSelect({ dispatch }: Props) {
 
           {/* A <label> with no control is meaningless to assistive tech. This
               is a group of buttons, so it needs a group name, not a label. */}
-          <div className="w-full flex flex-col gap-2" role="group" aria-labelledby="goal-group-heading">
+          <div
+            className="w-full flex flex-col gap-2"
+            role="group"
+            aria-labelledby="goal-group-heading"
+          >
             <h2 id="goal-group-heading" className="font-sans font-bold text-foreground text-sm">
               Why are you learning?
             </h2>

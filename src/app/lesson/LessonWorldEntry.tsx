@@ -121,7 +121,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
   };
 
   return (
-    <div className="bg-background flex flex-col min-h-svh relative">
+    <div className="bg-background flex flex-col min-h-dvh relative">
       <StatusBar />
 
       {/* Header Bar */}

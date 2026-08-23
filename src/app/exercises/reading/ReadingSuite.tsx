@@ -27,7 +27,7 @@ export const ExReadingVisualContext = memo(function ExReadingVisualContext({ dis
   };
 
   return (
-    <div className="min-h-svh bg-background flex flex-col">
+    <div className="min-h-dvh bg-background flex flex-col">
       <LessonHeader
         title="Visual Context & Clues"
         current={1}
@@ -39,7 +39,7 @@ export const ExReadingVisualContext = memo(function ExReadingVisualContext({ dis
         <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 flex flex-col justify-center">
           <WordImage
             word={target}
-            className="w-full h-auto max-h-[35vh] sm:max-h-[45vh] block object-contain rounded-xl"
+            className="w-full h-auto max-h-[35dvh] sm:max-h-[45dvh] block object-contain rounded-xl"
           />
         </div>
 
@@ -90,7 +90,7 @@ export const ExReadingVisualContext = memo(function ExReadingVisualContext({ dis
 // 7. Lesson Results (Reading)
 export const ExReadingResults = memo(function ExReadingResults({ dispatch }: Props) {
   return (
-    <div className="min-h-svh bg-secondary flex flex-col items-center justify-center p-6 text-center">
+    <div className="min-h-dvh bg-secondary flex flex-col items-center justify-center p-6 text-center">
       <div className="size-24 rounded-3xl bg-primary/20 border border-primary/30 flex items-center justify-center shadow-2xl mb-4">
         <BookOpen className="size-12 text-primary" />
       </div>

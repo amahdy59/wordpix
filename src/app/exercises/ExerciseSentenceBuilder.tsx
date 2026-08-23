@@ -160,7 +160,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
     >
       <div className="relative flex flex-col gap-3 sm:gap-5 w-full max-w-2xl mx-auto">
         {/* Fluid Target Image Banner */}
-        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[16/10] sm:aspect-[16/9] max-h-[30vh] sm:max-h-[36vh]">
+        <div className="w-full relative rounded-2xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[16/10] sm:aspect-[16/9] max-h-[30dvh] sm:max-h-[36dvh]">
           <WordImage
             word={currentTargetWord}
             className="w-full h-full absolute inset-0 object-cover"
