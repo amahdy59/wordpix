@@ -1,25 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { supabase } from "../../lib/supabase/client";
 import { migrateGuestToAccount } from "../../lib/persistence/sync";
 import { User, X } from "lucide-react";
+import { useModalA11y } from "../../app/shared/useModalA11y";
 
 interface AuthModalProps {
   onClose: () => void;
 }
 
+type AuthState =
+  | { status: "idle" }
+  | { status: "submitting" }
+  | { status: "success"; message: string }
+  | { status: "error"; message: string };
+
+type AuthMode = "login" | "signup";
+
 export function AuthModal({ onClose }: AuthModalProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  useModalA11y(true, containerRef, onClose);
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [isLogin, setIsLogin] = useState(true);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [success, setSuccess] = useState<string | null>(null);
+  const [mode, setMode] = useState<AuthMode>("login");
+  const [state, setState] = useState<AuthState>({ status: "idle" });
+
+  const isLogin = mode === "login";
+  const isLoading = state.status === "submitting";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-    setError(null);
-    setSuccess(null);
+    setState({ status: "submitting" });
 
     try {
       let authUserId: string | undefined;
@@ -28,12 +39,12 @@ export function AuthModal({ onClose }: AuthModalProps) {
         const { data, error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
         authUserId = data.user?.id;
-        setSuccess("Signed in successfully!");
+        setState({ status: "success", message: "Signed in successfully!" });
       } else {
         const { data, error } = await supabase.auth.signUp({ email, password });
         if (error) throw error;
         authUserId = data.user?.id;
-        setSuccess("Account created successfully!");
+        setState({ status: "success", message: "Account created successfully!" });
       }
 
       // Guest to Account Migration
@@ -51,19 +62,18 @@ export function AuthModal({ onClose }: AuthModalProps) {
       onClose();
     } catch (err) {
       if (err instanceof Error) {
-        setError(err.message);
+        setState({ status: "error", message: err.message });
       } else {
-        setError("An unknown error occurred.");
+        setState({ status: "error", message: "An unknown error occurred." });
       }
-    } finally {
-      setLoading(false);
     }
   };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
       <div
-        className="bg-background rounded-2xl p-6 w-full max-w-md shadow-xl border border-border relative max-h-[92vh] overflow-y-auto"
+        ref={containerRef}
+        className="bg-background rounded-2xl p-6 w-full max-w-md shadow-xl border border-border relative max-h-[92dvh] overflow-y-auto"
         role="dialog"
         aria-modal="true"
         aria-labelledby="auth-title"
@@ -90,17 +100,17 @@ export function AuthModal({ onClose }: AuthModalProps) {
           </p>
         </div>
 
-        {error && (
+        {state.status === "error" && (
           <div
             className="mb-4 p-3 bg-destructive/10 text-destructive text-sm rounded-lg"
             role="alert"
           >
-            {error}
+            {state.message}
           </div>
         )}
-        {success && (
+        {state.status === "success" && (
           <div className="mb-4 p-3 bg-green-500/10 text-green-600 text-sm rounded-lg" role="alert">
-            {success}
+            {state.message}
           </div>
         )}
 
@@ -116,7 +126,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
               className="w-full px-4 py-2 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              disabled={loading}
+              disabled={isLoading}
             />
           </div>
           <div>
@@ -130,34 +140,37 @@ export function AuthModal({ onClose }: AuthModalProps) {
               className="w-full px-4 py-2 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              disabled={loading}
+              disabled={isLoading}
             />
           </div>
 
           <button
             type="submit"
-            disabled={loading}
-            className="w-full py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors disabled:opacity-50"
+            disabled={isLoading}
+            className="w-full py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors disabled:opacity-50 min-h-[44px]"
           >
-            {loading ? "Loading..." : isLogin ? "Sign In" : "Create Account"}
+            {isLoading ? "Loading..." : isLogin ? "Sign In" : "Create Account"}
           </button>
         </form>
 
         <div className="mt-6 flex flex-col gap-3">
           <button
             type="button"
-            className="text-sm text-primary font-medium hover:underline"
-            onClick={() => setIsLogin(!isLogin)}
-            disabled={loading}
+            className="text-sm text-primary font-medium hover:underline min-h-[44px]"
+            onClick={() => {
+              setMode(isLogin ? "signup" : "login");
+              setState({ status: "idle" });
+            }}
+            disabled={isLoading}
           >
             {isLogin ? "Don't have an account? Sign up" : "Already have an account? Sign in"}
           </button>
 
           <button
             type="button"
-            className="text-sm text-muted-foreground font-medium hover:text-foreground transition-colors"
+            className="text-sm text-muted-foreground font-medium hover:text-foreground transition-colors min-h-[44px]"
             onClick={onClose}
-            disabled={loading}
+            disabled={isLoading}
           >
             Continue as Guest
           </button>
