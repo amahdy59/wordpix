@@ -212,7 +212,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
           {/* Top Badges */}
           <div className="absolute top-2.5 start-2.5 sm:top-3.5 sm:start-3.5 bg-black/60 backdrop-blur-md text-white font-sans font-bold text-[10px] sm:text-xs px-2.5 py-1 rounded-xl border border-white/20 shadow-md flex items-center gap-1.5 z-10 pointer-events-none">
-            <Sparkles className="size-3 text-wp-amber animate-pulse" />
+            <Sparkles className="size-3 text-wp-amber motion-safe:animate-pulse" />
             <span>Target Visual</span>
           </div>
 
@@ -293,7 +293,9 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                 aria-label={`Play audio pronunciation for ${currentWord.label}`}
                 className="size-11 sm:size-12 min-h-[44px] min-w-[44px] rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-lg hover:scale-105 transition-transform focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-white group"
               >
-                <Volume2 className={`size-5 sm:size-6 ${isPlaying ? "animate-pulse" : ""}`} />
+                <Volume2
+                  className={`size-5 sm:size-6 ${isPlaying ? "motion-safe:animate-pulse" : ""}`}
+                />
               </button>
 
               {/* Microphone Speaking Practice Button */}
@@ -308,7 +310,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                     speechSuccess
                       ? "bg-wp-green text-wp-text-on-green scale-105"
                       : isListening
-                        ? "bg-wp-rose text-white animate-pulse"
+                        ? "bg-wp-rose text-white motion-safe:animate-pulse"
                         : "bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm"
                   }`}
                 >
@@ -327,7 +329,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
         {/* Real-Time Speech Feedback Banner (Compact) */}
         {speechStatus === "listening" && (
-          <div className="bg-primary/10 border border-primary/30 rounded-xl px-3 py-1.5 flex items-center justify-center gap-2 animate-pulse shrink-0">
+          <div className="bg-primary/10 border border-primary/30 rounded-xl px-3 py-1.5 flex items-center justify-center gap-2 motion-safe:animate-pulse shrink-0">
             <Mic className="size-3.5 text-primary" />
             <span className="font-sans text-xs font-bold text-primary">
               Listening... Say &ldquo;{currentWord.label}&rdquo; clearly!

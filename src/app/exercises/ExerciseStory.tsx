@@ -499,7 +499,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                     className={
                       "flex items-center gap-2 px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm shadow-lg transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white cursor-pointer " +
                       (isPlaying
-                        ? "bg-wp-rose text-white hover:bg-wp-rose/90 animate-pulse"
+                        ? "bg-wp-rose text-white hover:bg-wp-rose/90 motion-safe:animate-pulse"
                         : "bg-primary text-primary-foreground hover:opacity-90")
                     }
                   >
@@ -715,7 +715,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                   className={
                     "flex items-center gap-2 px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm shadow-sm transition-all cursor-pointer " +
                     (isPlaying
-                      ? "bg-wp-rose text-white animate-pulse"
+                      ? "bg-wp-rose text-white motion-safe:animate-pulse"
                       : "bg-primary text-primary-foreground hover:opacity-90")
                   }
                 >

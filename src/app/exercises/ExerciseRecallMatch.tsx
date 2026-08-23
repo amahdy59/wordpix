@@ -172,7 +172,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
           >
             <div className="size-10 sm:size-11 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md shrink-0">
               <Volume2
-                className={`size-5 sm:size-6 ${isPlaying ? "animate-pulse text-wp-amber" : ""}`}
+                className={`size-5 sm:size-6 ${isPlaying ? "motion-safe:animate-pulse text-wp-amber" : ""}`}
               />
             </div>
             <div>
