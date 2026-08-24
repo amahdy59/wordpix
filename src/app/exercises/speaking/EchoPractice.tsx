@@ -3,7 +3,7 @@ import type { Action } from "../../types";
 import { BEDROOM_VOCABULARY } from "../../data/lessons";
 import { LessonHeader } from "../../shared/LessonHeader";
 import { PrimaryButton } from "../../shared/PrimaryButton";
-import { Mic, Volume2 } from "lucide-react";
+import { Mic, Volume2, CheckCircle2, AlertCircle } from "lucide-react";
 import { useAudio } from "../../shared/useAudio";
 import { useSound } from "../../shared/useSound";
 import { useSpeechRecognition } from "../../shared/useSpeechRecognition";
@@ -12,19 +12,6 @@ interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
-/**
- * Echo Practice.
- *
- * This screen once reported "92% Phoneme Match" from a hardcoded setScore(92),
- * with no microphone API anywhere in the codebase. It now uses the Web Speech
- * API to check whether the learner actually said the word.
- *
- * What it deliberately does NOT do is score pronunciation quality. The Web
- * Speech API exposes no phoneme-level detail, so any percentage would be
- * invented all over again. It reports one honest thing: the word was
- * recognised, or it was not. Where recognition is unavailable — Firefox, or a
- * blocked microphone — it falls back to self-assessment and says so plainly.
- */
 type SelfRating = "again" | "close" | "confident";
 
 const SELF_RATINGS: { id: SelfRating; label: string; response: string }[] = [
@@ -49,7 +36,7 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
 
   const target = BEDROOM_VOCABULARY[0];
   const activeRating = SELF_RATINGS.find((r) => r.id === rating);
-  const { attempt, isListening, isSupported, status } = recognition;
+  const { attempt, isListening, isSupported, status, audioLevel } = recognition;
 
   useEffect(() => {
     if (!attempt) return;
@@ -67,12 +54,12 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
         onClose={() => dispatch({ type: "GO", to: "home" })}
       />
       <main className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
-        <div className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col items-center text-center gap-3">
+        <div className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col items-center text-center gap-3 shadow-wp-xs">
           <button
             type="button"
             onClick={() => speak(target.label)}
             aria-label={`Play the model pronunciation of ${target.label}`}
-            className="size-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md min-h-[44px] min-w-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="size-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md min-h-[44px] min-w-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-transform hover:scale-105 active:scale-95"
           >
             <Volume2 className="size-8" aria-hidden />
           </button>
@@ -82,22 +69,46 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
 
         {isSupported ? (
           <>
-            <button
-              type="button"
-              onClick={() => {
-                playClick();
-                if (isListening) recognition.stop();
-                else recognition.listen(target.label);
-              }}
-              className={`w-full min-h-[56px] py-4 rounded-2xl font-sans font-bold flex items-center justify-center gap-3 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                isListening
-                  ? "bg-wp-rose text-wp-text-on-rose motion-safe:animate-pulse"
-                  : "bg-wp-blue text-wp-text-on-blue"
-              }`}
-            >
-              <Mic className="size-6" aria-hidden />
-              <span>{isListening ? "Listening — tap to stop" : `Say ${target.label} aloud`}</span>
-            </button>
+            <div className="flex flex-col gap-3">
+              <button
+                type="button"
+                onClick={() => {
+                  playClick();
+                  if (isListening) recognition.stop();
+                  else recognition.listen(target.label);
+                }}
+                className={`w-full min-h-[56px] py-4 px-6 rounded-2xl font-sans font-bold flex items-center justify-center gap-3 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                  isListening
+                    ? "bg-wp-rose text-wp-text-on-rose shadow-lg"
+                    : "bg-wp-blue text-wp-text-on-blue shadow-wp-xs hover:opacity-90 active:scale-98"
+                }`}
+              >
+                <Mic className={`size-6 ${isListening ? "animate-bounce" : ""}`} aria-hidden />
+                <span>{isListening ? "Listening — tap to stop" : `Say ${target.label} aloud`}</span>
+              </button>
+
+              {/* Live Audio Waveform Visualizer */}
+              {isListening && (
+                <div
+                  role="presentation"
+                  className="flex items-center justify-center gap-1.5 h-12 bg-muted/30 rounded-2xl border border-border px-4 py-2"
+                >
+                  {[0.4, 0.7, 1.0, 0.8, 1.2, 0.6, 0.9, 0.5].map((multiplier, idx) => {
+                    const height = Math.max(
+                      8,
+                      Math.min(36, Math.round((audioLevel * multiplier) / 3 + 8))
+                    );
+                    return (
+                      <span
+                        key={idx}
+                        style={{ height: `${height}px` }}
+                        className="w-1.5 bg-primary rounded-full transition-all duration-75"
+                      />
+                    );
+                  })}
+                </div>
+              )}
+            </div>
 
             <div role="status" aria-live="polite" className="min-h-[2rem]">
               {status === "denied" && (
@@ -118,19 +129,40 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
               )}
               {attempt && (
                 <div
-                  className={`rounded-2xl border p-4 flex flex-col gap-1 ${
+                  className={`rounded-2xl border p-4 flex flex-col gap-2 ${
                     attempt.matched
                       ? "border-wp-green bg-wp-green-light/40"
                       : "border-wp-rose bg-wp-rose-light/40"
                   }`}
                 >
-                  <span className="font-sans font-bold text-foreground text-base">
-                    {attempt.matched
-                      ? `Recognised: ${target.label}.`
-                      : "That did not come through as the target word."}
-                  </span>
+                  <div className="flex items-center justify-between">
+                    <span className="font-sans font-bold text-foreground text-base flex items-center gap-2">
+                      {attempt.matched ? (
+                        <>
+                          <CheckCircle2 className="size-5 text-wp-green" />
+                          <span>Recognised: {target.label}</span>
+                        </>
+                      ) : (
+                        <>
+                          <AlertCircle className="size-5 text-wp-rose" />
+                          <span>Not matched yet</span>
+                        </>
+                      )}
+                    </span>
+                    {attempt.accuracy > 0 && (
+                      <span
+                        className={`text-xs font-black px-2.5 py-1 rounded-full ${
+                          attempt.accuracy >= 75
+                            ? "bg-wp-green text-white"
+                            : "bg-wp-amber text-wp-text-on-amber"
+                        }`}
+                      >
+                        {attempt.accuracy}% Match · {attempt.grade.toUpperCase()}
+                      </span>
+                    )}
+                  </div>
                   <span className="font-sans text-xs text-muted-foreground">
-                    {attempt.heard ? `Heard: ${attempt.heard}. ` : "No words recognised. "}
+                    {attempt.heard ? `Heard: "${attempt.heard}". ` : "No words picked up. "}
                     This checks which word you said, not how well you pronounced it.
                   </span>
                 </div>

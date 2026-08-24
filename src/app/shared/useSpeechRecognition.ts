@@ -2,10 +2,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 /**
  * Minimal typings for the Web Speech API.
- *
- * SpeechRecognition is not in lib.dom.d.ts because it has never left the
- * unofficial spec, so the shape is declared here rather than pulled from a
- * dependency.
  */
 interface SpeechRecognitionAlternative {
   transcript: string;
@@ -52,12 +48,9 @@ function getRecognitionConstructor(): SpeechRecognitionCtor | null {
 }
 
 export type RecognitionStatus =
-  | "unsupported"
-  | "idle"
-  | "listening"
-  | "denied"
-  | "no-speech"
-  | "error";
+  "unsupported" | "idle" | "listening" | "denied" | "no-speech" | "error";
+
+export type PronunciationGrade = "excellent" | "good" | "fair" | "try-again";
 
 export interface SpeechAttempt {
   /** What the engine heard, lowercased and stripped of punctuation. */
@@ -65,6 +58,10 @@ export interface SpeechAttempt {
   /** The engine's own confidence, 0–1. */
   confidence: number;
   matched: boolean;
+  /** Normalized accuracy score between 0 and 100 based on phonetic/string similarity. */
+  accuracy: number;
+  /** Qualitative pronunciation grade */
+  grade: PronunciationGrade;
 }
 
 /** Normalises a transcript for comparison: lowercase, no punctuation, single spaces. */
@@ -78,10 +75,6 @@ export function normaliseTranscript(text: string): string {
 
 /**
  * Levenshtein distance, used to accept near-misses.
- *
- * Recognition engines routinely return a homophone or a near-spelling for a
- * single spoken word ("wardrobe" -> "war drobe"). Requiring an exact string
- * match would fail a learner who pronounced the word correctly.
  */
 export function editDistance(a: string, b: string): number {
   if (a === b) return 0;
@@ -92,11 +85,7 @@ export function editDistance(a: string, b: string): number {
   for (let i = 1; i <= a.length; i += 1) {
     const row = [i];
     for (let j = 1; j <= b.length; j += 1) {
-      row[j] = Math.min(
-        prev[j] + 1,
-        row[j - 1] + 1,
-        prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)
-      );
+      row[j] = Math.min(prev[j] + 1, row[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
     }
     prev = row;
   }
@@ -104,12 +93,40 @@ export function editDistance(a: string, b: string): number {
 }
 
 /**
+ * Computes accuracy score (0-100) between transcript and target word.
+ */
+export function calculateAccuracy(heard: string, target: string): number {
+  const normHeard = normaliseTranscript(heard);
+  const normTarget = normaliseTranscript(target);
+  if (!normHeard || !normTarget) return 0;
+  if (normHeard === normTarget) return 100;
+
+  // If heard contains target exactly
+  if (normHeard.includes(normTarget)) return 95;
+
+  const tokens = normHeard.split(" ");
+  let minDistance = Infinity;
+  for (const token of tokens) {
+    const dist = editDistance(token, normTarget);
+    if (dist < minDistance) {
+      minDistance = dist;
+    }
+  }
+
+  const maxLen = Math.max(normTarget.length, 1);
+  const ratio = Math.max(0, 1 - minDistance / maxLen);
+  return Math.round(ratio * 100);
+}
+
+export function getPronunciationGrade(accuracy: number): PronunciationGrade {
+  if (accuracy >= 90) return "excellent";
+  if (accuracy >= 75) return "good";
+  if (accuracy >= 50) return "fair";
+  return "try-again";
+}
+
+/**
  * Does the transcript contain the target word, allowing for small engine slips?
- *
- * Deliberately generous: this judges whether the learner said the right word,
- * not how well they pronounced it. The Web Speech API reports no phoneme-level
- * detail, so a pronunciation *score* would be fabricated — which is exactly
- * what this app used to display.
  */
 export function transcriptMatches(transcript: string, target: string): boolean {
   const heard = normaliseTranscript(transcript);
@@ -129,27 +146,88 @@ interface Options {
 }
 
 /**
- * Real speech recognition for the speaking drills.
- *
- * Availability is genuinely partial — Chrome, Edge, and Safari implement this;
- * Firefox does not — so `isSupported` is part of the contract and callers are
- * expected to fall back to self-assessment rather than pretend.
+ * Real speech recognition for speaking drills with live audio level analysis.
  */
 export function useSpeechRecognition({ lang = "en-US", timeoutMs = 6000 }: Options = {}) {
   const [status, setStatus] = useState<RecognitionStatus>(() =>
     getRecognitionConstructor() ? "idle" : "unsupported"
   );
   const [attempt, setAttempt] = useState<SpeechAttempt | null>(null);
+  const [audioLevel, setAudioLevel] = useState<number>(0);
 
   const recognitionRef = useRef<SpeechRecognitionLike | null>(null);
   const timeoutRef = useRef<number | null>(null);
   const targetRef = useRef<string>("");
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const analyserRef = useRef<AnalyserNode | null>(null);
+  const micStreamRef = useRef<MediaStream | null>(null);
+  const animFrameRef = useRef<number | null>(null);
+
+  const stopAudioAnalysis = useCallback(() => {
+    if (animFrameRef.current !== null) {
+      cancelAnimationFrame(animFrameRef.current);
+      animFrameRef.current = null;
+    }
+    if (micStreamRef.current) {
+      micStreamRef.current.getTracks().forEach((track) => track.stop());
+      micStreamRef.current = null;
+    }
+    if (audioContextRef.current && audioContextRef.current.state !== "closed") {
+      try {
+        audioContextRef.current.close();
+      } catch {
+        // Ignore
+      }
+      audioContextRef.current = null;
+    }
+    setAudioLevel(0);
+  }, []);
+
+  const startAudioAnalysis = useCallback(async () => {
+    if (typeof window === "undefined" || !navigator.mediaDevices?.getUserMedia) return;
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
+      micStreamRef.current = stream;
+
+      const AudioCtx =
+        window.AudioContext ||
+        (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+      if (!AudioCtx) return;
+
+      const ctx = new AudioCtx();
+      audioContextRef.current = ctx;
+
+      const source = ctx.createMediaStreamSource(stream);
+      const analyser = ctx.createAnalyser();
+      analyser.fftSize = 256;
+      source.connect(analyser);
+      analyserRef.current = analyser;
+
+      const dataArray = new Uint8Array(analyser.frequencyBinCount);
+      const update = () => {
+        if (!analyserRef.current) return;
+        analyserRef.current.getByteFrequencyData(dataArray);
+        let sum = 0;
+        for (let i = 0; i < dataArray.length; i++) {
+          sum += dataArray[i];
+        }
+        const avg = sum / dataArray.length;
+        const normalized = Math.min(100, Math.round((avg / 128) * 100));
+        setAudioLevel(normalized);
+        animFrameRef.current = requestAnimationFrame(update);
+      };
+      update();
+    } catch {
+      // Microphone permissions or node error: fallback to passive listening without mic meter
+    }
+  }, []);
 
   const cleanup = useCallback(() => {
     if (timeoutRef.current !== null) {
       window.clearTimeout(timeoutRef.current);
       timeoutRef.current = null;
     }
+    stopAudioAnalysis();
     const recognition = recognitionRef.current;
     if (recognition) {
       recognition.onresult = null;
@@ -159,11 +237,11 @@ export function useSpeechRecognition({ lang = "en-US", timeoutMs = 6000 }: Optio
       try {
         recognition.abort();
       } catch {
-        // Already stopped; nothing to unwind.
+        // Already stopped
       }
       recognitionRef.current = null;
     }
-  }, []);
+  }, [stopAudioAnalysis]);
 
   useEffect(() => cleanup, [cleanup]);
 
@@ -185,23 +263,37 @@ export function useSpeechRecognition({ lang = "en-US", timeoutMs = 6000 }: Optio
       recognition.interimResults = false;
       recognition.maxAlternatives = 3;
 
-      recognition.onstart = () => setStatus("listening");
+      recognition.onstart = () => {
+        setStatus("listening");
+        startAudioAnalysis();
+      };
 
       recognition.onresult = (event) => {
+        stopAudioAnalysis();
         const result = event.results[event.resultIndex];
         if (!result) return;
 
-        // Check every alternative: the top pick is often a homophone while a
-        // lower-ranked one is exactly right.
-        let best: SpeechAttempt = { heard: "", confidence: 0, matched: false };
+        let best: SpeechAttempt = {
+          heard: "",
+          confidence: 0,
+          matched: false,
+          accuracy: 0,
+          grade: "try-again",
+        };
+
         for (let i = 0; i < result.length; i += 1) {
           const alt = result[i];
           const matched = transcriptMatches(alt.transcript, targetRef.current);
-          if (matched || alt.confidence > best.confidence) {
+          const accuracy = calculateAccuracy(alt.transcript, targetRef.current);
+          const grade = getPronunciationGrade(accuracy);
+
+          if (matched || alt.confidence > best.confidence || accuracy > best.accuracy) {
             best = {
               heard: normaliseTranscript(alt.transcript),
               confidence: alt.confidence ?? 0,
               matched,
+              accuracy,
+              grade,
             };
           }
           if (matched) break;
@@ -212,6 +304,7 @@ export function useSpeechRecognition({ lang = "en-US", timeoutMs = 6000 }: Optio
       };
 
       recognition.onerror = (event) => {
+        stopAudioAnalysis();
         if (event.error === "not-allowed" || event.error === "service-not-allowed") {
           setStatus("denied");
         } else if (event.error === "no-speech") {
@@ -222,6 +315,7 @@ export function useSpeechRecognition({ lang = "en-US", timeoutMs = 6000 }: Optio
       };
 
       recognition.onend = () => {
+        stopAudioAnalysis();
         setStatus((current) => (current === "listening" ? "idle" : current));
       };
 
@@ -230,6 +324,7 @@ export function useSpeechRecognition({ lang = "en-US", timeoutMs = 6000 }: Optio
       try {
         recognition.start();
       } catch {
+        stopAudioAnalysis();
         setStatus("error");
         return;
       }
@@ -238,24 +333,25 @@ export function useSpeechRecognition({ lang = "en-US", timeoutMs = 6000 }: Optio
         try {
           recognition.stop();
         } catch {
-          // Already ended.
+          // Already ended
         }
       }, timeoutMs);
     },
-    [lang, timeoutMs, cleanup]
+    [lang, timeoutMs, cleanup, startAudioAnalysis, stopAudioAnalysis]
   );
 
   const stop = useCallback(() => {
+    stopAudioAnalysis();
     const recognition = recognitionRef.current;
     if (recognition) {
       try {
         recognition.stop();
       } catch {
-        // Already ended.
+        // Already ended
       }
     }
     setStatus((current) => (current === "listening" ? "idle" : current));
-  }, []);
+  }, [stopAudioAnalysis]);
 
   const reset = useCallback(() => {
     cleanup();
@@ -266,6 +362,7 @@ export function useSpeechRecognition({ lang = "en-US", timeoutMs = 6000 }: Optio
   return {
     status,
     attempt,
+    audioLevel,
     isSupported: status !== "unsupported",
     isListening: status === "listening",
     listen,

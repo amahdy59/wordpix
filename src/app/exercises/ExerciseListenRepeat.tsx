@@ -53,6 +53,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
     status: speechStatus,
     isListening,
     attempt,
+    audioLevel,
   } = useSpeechRecognition({ lang: "en-US" });
 
   useEffect(() => {
@@ -327,22 +328,43 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           </div>
         </div>
 
-        {/* Real-Time Speech Feedback Banner (Compact) */}
+        {/* Real-Time Speech Feedback Banner with Live Waveform */}
         {speechStatus === "listening" && (
-          <div className="bg-primary/10 border border-primary/30 rounded-xl px-3 py-1.5 flex items-center justify-center gap-2 motion-safe:animate-pulse shrink-0">
-            <Mic className="size-3.5 text-primary" />
-            <span className="font-sans text-xs font-bold text-primary">
-              Listening... Say &ldquo;{currentWord.label}&rdquo; clearly!
-            </span>
+          <div className="bg-primary/10 border border-primary/30 rounded-xl px-3 py-2 flex items-center justify-between gap-2 shrink-0">
+            <div className="flex items-center gap-2">
+              <Mic className="size-4 text-primary animate-bounce" />
+              <span className="font-sans text-xs font-bold text-primary">
+                Listening... Say &ldquo;{currentWord.label}&rdquo; clearly!
+              </span>
+            </div>
+            <div className="flex items-center gap-1">
+              {[0.5, 1.0, 0.7, 1.2, 0.6].map((m, i) => {
+                const h = Math.max(6, Math.min(20, Math.round((audioLevel * m) / 5 + 6)));
+                return (
+                  <span
+                    key={i}
+                    style={{ height: `${h}px` }}
+                    className="w-1 bg-primary rounded-full transition-all duration-75"
+                  />
+                );
+              })}
+            </div>
           </div>
         )}
 
-        {speechSuccess && (
-          <div className="bg-wp-green/10 border border-wp-green/30 rounded-xl px-3 py-1.5 flex items-center justify-center gap-2 shrink-0">
-            <CheckCircle2 className="size-3.5 text-wp-green" />
-            <span className="font-sans text-xs font-bold text-wp-green">
-              Excellent pronunciation! Word recognized. 🎉
-            </span>
+        {attempt && attempt.matched && (
+          <div className="bg-wp-green/10 border border-wp-green/30 rounded-xl px-3 py-1.5 flex items-center justify-between gap-2 shrink-0">
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="size-3.5 text-wp-green" />
+              <span className="font-sans text-xs font-bold text-wp-green">
+                Pronunciation Recognized! 🎉
+              </span>
+            </div>
+            {attempt.accuracy > 0 && (
+              <span className="text-[11px] font-black px-2 py-0.5 rounded-full bg-wp-green text-white">
+                {attempt.accuracy}% Match · {attempt.grade.toUpperCase()}
+              </span>
+            )}
           </div>
         )}
 
