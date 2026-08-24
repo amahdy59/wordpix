@@ -1,5 +1,6 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { VocabularyItem } from "../data/lessons";
+import { resolveAssetUrl } from "../../utils/assetUrl";
 
 export type ImageAltMode = "learning" | "assessment" | "decorative";
 export type ImageSizePreset = "thumb" | "card" | "hero";
@@ -42,7 +43,7 @@ function withWidth(url: string, width: number): string {
 }
 
 function getResponsiveImageUrl(url: string, preset: ImageSizePreset = "card"): string {
-  if (!url || !url.includes("unsplash.com")) return url;
+  if (!url || !url.includes("unsplash.com")) return resolveAssetUrl(url);
   return withWidth(url, PRESET_WIDTH[preset]);
 }
 

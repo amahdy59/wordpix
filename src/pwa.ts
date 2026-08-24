@@ -1,4 +1,5 @@
 import { COURSE_UNITS, DEFAULT_UNIT_ID } from "./app/data/lessons";
+import { resolveAssetUrl } from "./utils/assetUrl";
 
 const CACHE_NAME = "wordpix-cache-v2";
 
@@ -51,7 +52,7 @@ function imageUrlsForWorld(worldId: string): string[] {
   // Looks the world up in the registry rather than special-casing a literal
   // id, so an unregistered world correctly reports nothing cacheable instead
   // of silently inheriting bedroom's "ready" claim.
-  return COURSE_UNITS[worldId]?.vocabulary.map((word) => word.img) ?? [];
+  return COURSE_UNITS[worldId]?.vocabulary.map((word) => resolveAssetUrl(word.img)) ?? [];
 }
 
 /**

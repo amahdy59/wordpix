@@ -19,6 +19,7 @@ import { BackButton } from "../shared/BackButton";
 import { COURSE_UNITS, DEFAULT_UNIT_ID, type VocabularyItem } from "../data/lessons";
 import { loadLearningMaterials } from "./registry";
 import { BLANK_TOKEN, type PhraseKind, type UnitLearningMaterials } from "./types";
+import { resolveAssetUrl } from "../../utils/assetUrl";
 
 interface Props {
   unitId?: string;
@@ -234,7 +235,7 @@ function WordsSection({
                   className="rounded-xl border border-border overflow-hidden bg-background"
                 >
                   <img
-                    src={word.img}
+                    src={resolveAssetUrl(word.img)}
                     alt=""
                     loading="lazy"
                     className="w-full aspect-[4/3] object-cover"

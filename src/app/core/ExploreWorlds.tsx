@@ -17,6 +17,7 @@ import { COURSE_UNITS, COURSE_MODULES, type CourseUnit, type CourseModule } from
 import { Badge, ProgressBar } from "../shared";
 import { staggerContainer, staggerItem } from "../shared/animations";
 import { useI18n } from "../context/I18nContext";
+import { resolveAssetUrl } from "../../utils/assetUrl";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -397,7 +398,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                               <img
                                 alt={`${unit.name} visual learning scene`}
                                 className="absolute inset-0 object-cover size-full"
-                                src={unit.heroImage}
+                                src={resolveAssetUrl(unit.heroImage)}
                                 loading="lazy"
                               />
                               {isComplete ? (

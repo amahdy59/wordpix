@@ -5,6 +5,7 @@ import type { VocabularyItem } from "../data/lessons";
 import { getLexiconEntry } from "../data/lexiconDictionary";
 import { useAudio } from "./useAudio";
 import { useModalA11y } from "./useModalA11y";
+import { resolveAssetUrl } from "../../utils/assetUrl";
 
 interface Props {
   word: VocabularyItem | null;
@@ -44,7 +45,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
         >
           {/* Top Header with Image & Close Button */}
           <div className="relative h-44 sm:h-52 w-full bg-muted overflow-hidden shrink-0">
-            <img src={word.img} alt="" className="size-full object-cover" />
+            <img src={resolveAssetUrl(word.img)} alt="" className="size-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent" />
 
             {/* Close button */}

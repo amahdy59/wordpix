@@ -20,6 +20,7 @@ import {
 import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/lessons";
 import { hasLearningMaterials } from "../learning/registry";
 import { useProgress } from "../data/progress";
+import { resolveAssetUrl } from "../../utils/assetUrl";
 
 interface Props {
   unitId?: string;
@@ -320,7 +321,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                         const firstWord = world.vocabulary.find((v) => v.id === firstWordId);
                         return firstWord?.img ? (
                           <img
-                            src={firstWord.img}
+                            src={resolveAssetUrl(firstWord.img)}
                             alt=""
                             className="size-full object-cover transition-transform duration-500 group-hover:scale-110"
                           />
