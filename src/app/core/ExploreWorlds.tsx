@@ -4,17 +4,19 @@ import {
   ArrowRight,
   Sparkles,
   BookOpen,
-  Layers,
   ChevronDown,
   CheckCircle2,
   Award,
+  Search,
+  X,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { COURSE_UNITS, COURSE_MODULES, type CourseUnit } from "../data/lessons";
+import { COURSE_UNITS, COURSE_MODULES, type CourseUnit, type CourseModule } from "../data/lessons";
 import { Badge, ProgressBar } from "../shared";
 import { staggerContainer, staggerItem } from "../shared/animations";
+import { useI18n } from "../context/I18nContext";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -22,27 +24,42 @@ interface Props {
 
 export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
   const { progress } = useProgress();
+  const { dir } = useI18n();
+  const isRtl = dir === "rtl";
   const [selectedModuleId, setSelectedModuleId] = useState<string>("all");
-  const [expandedModules, setExpandedModules] = useState<Record<string, boolean>>({
-    "module-1-home-nature": true,
-    "module-2-school-town": true,
-    "module-3-city-wellness": true,
-    "module-4-travel-services": true,
+  const [searchQuery, setSearchQuery] = useState<string>("");
+
+  // Initialize expanded modules for all available modules dynamically
+  const [expandedModules, setExpandedModules] = useState<Record<string, boolean>>(() => {
+    const initial: Record<string, boolean> = {};
+    COURSE_MODULES.forEach((mod, idx) => {
+      // Expand level 1 by default, or all if preferred
+      initial[mod.id] = idx === 0 || mod.level === 1;
+    });
+    return initial;
   });
 
   const tabListId = useId();
+  const searchInputId = useId();
 
   // Aggregate stats per module
   const moduleStats = useMemo(() => {
     const stats: Record<
       string,
-      { totalWords: number; masteredWords: number; percent: number; unitCount: number }
+      {
+        totalWords: number;
+        masteredWords: number;
+        percent: number;
+        unitCount: number;
+        completedUnits: number;
+      }
     > = {};
 
     COURSE_MODULES.forEach((mod) => {
       let total = 0;
       let mastered = 0;
       let unitCount = 0;
+      let completedUnits = 0;
 
       mod.unitIds.forEach((uid) => {
         const unit = COURSE_UNITS[uid];
@@ -50,12 +67,24 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
           unitCount++;
           const unitWords = unit.vocabulary || [];
           total += unitWords.length;
-          mastered += unitWords.filter((w) => (progress.wordMastery[w.id] || 0) >= 3).length;
+          const unitMastered = unitWords.filter(
+            (w) => (progress.wordMastery[w.id] || 0) >= 3
+          ).length;
+          mastered += unitMastered;
+          if (unitWords.length > 0 && unitMastered === unitWords.length) {
+            completedUnits++;
+          }
         }
       });
 
       const pct = total > 0 ? Math.round((mastered / total) * 100) : 0;
-      stats[mod.id] = { totalWords: total, masteredWords: mastered, percent: pct, unitCount };
+      stats[mod.id] = {
+        totalWords: total,
+        masteredWords: mastered,
+        percent: pct,
+        unitCount,
+        completedUnits,
+      };
     });
 
     return stats;
@@ -65,13 +94,21 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
   const overallStats = useMemo(() => {
     let total = 0;
     let mastered = 0;
+    let totalUnits = 0;
+    let completedUnits = 0;
+
     Object.values(moduleStats).forEach((s) => {
       total += s.totalWords;
       mastered += s.masteredWords;
+      totalUnits += s.unitCount;
+      completedUnits += s.completedUnits;
     });
+
     return {
       totalWords: total,
       masteredWords: mastered,
+      totalUnits,
+      completedUnits,
       percent: total > 0 ? Math.round((mastered / total) * 100) : 0,
     };
   }, [moduleStats]);
@@ -83,17 +120,48 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
     }));
   };
 
+  // Filter modules based on level selection and search query
   const filteredModules = useMemo(() => {
-    if (selectedModuleId === "all") return COURSE_MODULES;
-    return COURSE_MODULES.filter((m) => m.id === selectedModuleId);
-  }, [selectedModuleId]);
+    let modules = COURSE_MODULES;
+    if (selectedModuleId !== "all") {
+      modules = modules.filter((m) => m.id === selectedModuleId);
+    }
+
+    if (!searchQuery.trim()) {
+      return modules;
+    }
+
+    const q = searchQuery.toLowerCase().trim();
+    return modules
+      .map((mod) => {
+        const matchingUnitIds = mod.unitIds.filter((uid) => {
+          const unit = COURSE_UNITS[uid];
+          if (!unit) return false;
+          return (
+            unit.name.toLowerCase().includes(q) ||
+            unit.description.toLowerCase().includes(q) ||
+            (unit.vocabulary && unit.vocabulary.some((v) => v.label.toLowerCase().includes(q)))
+          );
+        });
+
+        if (matchingUnitIds.length === 0 && !mod.title.toLowerCase().includes(q)) {
+          return null;
+        }
+
+        return {
+          ...mod,
+          unitIds: matchingUnitIds.length > 0 ? matchingUnitIds : mod.unitIds,
+        };
+      })
+      .filter(Boolean) as CourseModule[];
+  }, [selectedModuleId, searchQuery]);
 
   return (
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       animate="visible"
-      className="flex flex-col gap-6 max-w-4xl mx-auto w-full p-4 sm:p-6 lg:p-8"
+      className="flex flex-col gap-6 max-w-5xl mx-auto w-full p-4 sm:p-6 lg:p-8"
     >
       {/* Page Header with Course Level Summary */}
       <motion.header variants={staggerItem} className="flex flex-col gap-4">
@@ -101,49 +169,72 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
           <div className="flex flex-col gap-1.5">
             <div className="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-wider">
               <Compass className="size-4.5" />
-              <span>Full Curriculum Pathway</span>
+              <span>Structured Curriculum Pathway</span>
             </div>
             <h1 className="font-sans font-black text-foreground text-2xl sm:text-3xl leading-tight">
-              English Core: Levels &amp; Modules
+              5-Level Progressive Mastery
             </h1>
             <p className="font-sans font-medium text-muted-foreground text-sm max-w-xl leading-relaxed">
-              Organized into structured levels from daily home foundations to international travel.
+              Step through 5 progressive levels from everyday essentials to advanced specialist
+              scenarios.
             </p>
           </div>
 
           <div className="flex flex-col sm:items-end gap-2 shrink-0 bg-primary/5 p-4 rounded-2xl border border-primary/20">
             <div className="flex items-center gap-2">
               <Award className="size-5 text-primary" />
-              <span className="font-bold text-foreground text-sm">Course Mastery</span>
+              <span className="font-bold text-foreground text-sm">Curriculum Mastery</span>
             </div>
             <span className="font-black text-2xl text-primary">{overallStats.percent}%</span>
             <span className="text-xs text-muted-foreground font-medium">
-              {overallStats.masteredWords} / {overallStats.totalWords} words strong
+              {overallStats.masteredWords} / {overallStats.totalWords} words mastered
             </span>
           </div>
         </div>
 
-        {/* Level / Module Selector Tabs */}
-        <div className="flex flex-col gap-2">
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
-              <Layers className="size-3.5" />
-              <span>Jump to Level:</span>
-            </span>
+        {/* Search & Level Quick Filter Bar */}
+        <div className="flex flex-col md:flex-row items-stretch md:items-center gap-3 justify-between">
+          {/* Search Input */}
+          <div className="relative flex-1 max-w-md">
+            <label htmlFor={searchInputId} className="sr-only">
+              Search units or vocabulary
+            </label>
+            <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none text-muted-foreground">
+              <Search className="size-4" />
+            </div>
+            <input
+              id={searchInputId}
+              type="search"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search topics (e.g., Kitchen, Airport, Body)..."
+              className="w-full bg-wp-card text-foreground placeholder:text-muted-foreground border border-border rounded-xl py-2.5 ps-10 pe-9 text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue min-h-[44px]"
+            />
+            {searchQuery && (
+              <button
+                type="button"
+                onClick={() => setSearchQuery("")}
+                aria-label="Clear search"
+                className="absolute inset-y-0 end-0 flex items-center pe-3 text-muted-foreground hover:text-foreground"
+              >
+                <X className="size-4" />
+              </button>
+            )}
           </div>
 
+          {/* Level Filter Tabs */}
           <div
             role="tablist"
             id={tabListId}
             aria-label="Course levels navigation"
-            className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none snap-x"
+            className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none snap-x"
           >
             <button
               type="button"
               role="tab"
               aria-selected={selectedModuleId === "all"}
               onClick={() => setSelectedModuleId("all")}
-              className={`min-h-[44px] px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all shrink-0 flex items-center gap-2 border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue ${
+              className={`min-h-[44px] px-3.5 py-2 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue ${
                 selectedModuleId === "all"
                   ? "bg-wp-blue text-wp-text-on-blue border-wp-blue shadow-wp-xs"
                   : "bg-wp-card text-foreground hover:bg-muted/50 border-border"
@@ -166,7 +257,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                   role="tab"
                   aria-selected={isSelected}
                   onClick={() => setSelectedModuleId(mod.id)}
-                  className={`min-h-[44px] px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all shrink-0 flex items-center gap-2 border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue ${
+                  className={`min-h-[44px] px-3.5 py-2 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue ${
                     isSelected
                       ? "bg-wp-blue text-wp-text-on-blue border-wp-blue shadow-wp-xs"
                       : "bg-wp-card text-foreground hover:bg-muted/50 border-border"
@@ -189,168 +280,168 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
 
       {/* Modules & Their Grouped Units */}
       <div className="flex flex-col gap-8">
-        {filteredModules.map((module) => {
-          const stats = moduleStats[module.id] || {
-            totalWords: 0,
-            masteredWords: 0,
-            percent: 0,
-            unitCount: 0,
-          };
-          const isExpanded = expandedModules[module.id] ?? true;
-          const units = module.unitIds
-            .map((id) => COURSE_UNITS[id])
-            .filter(Boolean) as CourseUnit[];
-
-          return (
-            <motion.section
-              key={module.id}
-              variants={staggerItem}
-              className="flex flex-col gap-4 bg-muted/20 border-2 border-border rounded-3xl p-4 sm:p-6"
+        {filteredModules.length === 0 ? (
+          <div className="p-8 text-center bg-wp-card rounded-2xl border border-border flex flex-col items-center gap-3">
+            <Compass className="size-8 text-muted-foreground opacity-50" />
+            <p className="font-bold text-foreground">
+              No units found matching &quot;{searchQuery}&quot;
+            </p>
+            <button
+              type="button"
+              onClick={() => setSearchQuery("")}
+              className="text-xs font-semibold text-primary underline focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue min-h-[44px] flex items-center"
             >
-              {/* Module Header Bar (Accordion Trigger) */}
-              <button
-                type="button"
-                onClick={() => toggleModuleExpand(module.id)}
-                aria-expanded={isExpanded}
-                className="w-full flex items-center justify-between gap-4 p-2 rounded-2xl text-start hover:bg-muted/30 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue transition-colors"
+              Clear search filter
+            </button>
+          </div>
+        ) : (
+          filteredModules.map((module) => {
+            const stats = moduleStats[module.id] || {
+              totalWords: 0,
+              masteredWords: 0,
+              percent: 0,
+              unitCount: 0,
+              completedUnits: 0,
+            };
+            const isExpanded = expandedModules[module.id] ?? false;
+            const units = module.unitIds
+              .map((id) => COURSE_UNITS[id])
+              .filter(Boolean) as CourseUnit[];
+
+            return (
+              <motion.section
+                key={module.id}
+                variants={staggerItem}
+                className="flex flex-col gap-4 bg-muted/20 border-2 border-border rounded-3xl p-4 sm:p-6"
               >
-                <div className="flex flex-col gap-1">
-                  <div className="flex items-center gap-2 flex-wrap">
-                    <Badge variant="primary" size="sm">
-                      {module.levelBadge}
-                    </Badge>
-                    <span className="text-xs font-semibold text-muted-foreground">
-                      {stats.unitCount} Units · {stats.totalWords} High-Yield Words
-                    </span>
+                {/* Module Header Bar (Accordion Trigger) */}
+                <button
+                  type="button"
+                  onClick={() => toggleModuleExpand(module.id)}
+                  aria-expanded={isExpanded}
+                  className="w-full flex items-center justify-between gap-4 p-2 rounded-2xl text-start hover:bg-muted/30 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue transition-colors"
+                >
+                  <div className="flex flex-col gap-1">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <Badge variant="primary" size="sm">
+                        {module.levelBadge}
+                      </Badge>
+                      <span className="text-xs font-semibold text-muted-foreground">
+                        {stats.unitCount} Units · {stats.totalWords} Vocabulary Items
+                      </span>
+                    </div>
+                    <h2 className="font-sans font-black text-foreground text-xl sm:text-2xl">
+                      {isRtl && module.titleAr ? module.titleAr : module.title}
+                    </h2>
+                    <p className="font-sans text-xs sm:text-sm text-muted-foreground max-w-2xl">
+                      {module.description}
+                    </p>
                   </div>
-                  <h2 className="font-sans font-black text-foreground text-xl sm:text-2xl">
-                    {module.title}
-                  </h2>
-                  <p className="font-sans text-xs sm:text-sm text-muted-foreground max-w-2xl">
-                    {module.description}
-                  </p>
+
+                  <div className="flex items-center gap-3 shrink-0">
+                    <div className="hidden sm:flex flex-col items-end gap-1">
+                      <span className="text-xs font-bold text-foreground">
+                        {stats.percent}% Complete
+                      </span>
+                      <span className="text-[11px] text-muted-foreground">
+                        {stats.masteredWords}/{stats.totalWords} mastered
+                      </span>
+                    </div>
+                    <div
+                      className={`p-2 rounded-full bg-wp-card border border-border transition-transform duration-200 ${
+                        isExpanded ? "rotate-180" : ""
+                      }`}
+                    >
+                      <ChevronDown className="size-5 text-foreground" />
+                    </div>
+                  </div>
+                </button>
+
+                {/* Module Progress Bar */}
+                <div className="px-2">
+                  <ProgressBar
+                    progressPercent={stats.percent}
+                    label={`Level ${module.level} Progress`}
+                    labelRight={`${stats.percent}% (${stats.masteredWords}/${stats.totalWords} words)`}
+                    ariaLabel={`Level ${module.level} progress: ${stats.percent}%`}
+                  />
                 </div>
 
-                <div className="flex items-center gap-3 shrink-0">
-                  <div className="hidden sm:flex flex-col items-end gap-1">
-                    <span className="text-xs font-bold text-foreground">
-                      {stats.percent}% Complete
-                    </span>
-                    <span className="text-[11px] text-muted-foreground">
-                      {stats.masteredWords}/{stats.totalWords} mastered
-                    </span>
-                  </div>
-                  <div
-                    className={`p-2 rounded-full bg-wp-card border border-border transition-transform duration-200 ${isExpanded ? "rotate-180" : ""}`}
-                  >
-                    <ChevronDown className="size-5 text-foreground" />
-                  </div>
-                </div>
-              </button>
+                {/* Units Grid / List */}
+                <AnimatePresence initial={false}>
+                  {isExpanded && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.25, ease: "easeInOut" }}
+                      className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2"
+                    >
+                      {units.map((unit) => {
+                        const unitWords = unit.vocabulary || [];
+                        const wordsPracticedCount = unitWords.filter(
+                          (w) => (progress.wordMastery[w.id] || 0) >= 3
+                        ).length;
+                        const totalWords = unitWords.length;
+                        const unitPercent =
+                          totalWords > 0 ? Math.round((wordsPracticedCount / totalWords) * 100) : 0;
+                        const isComplete = unitPercent === 100 && totalWords > 0;
 
-              {/* Module Progress Bar */}
-              <div className="px-2">
-                <ProgressBar
-                  progressPercent={stats.percent}
-                  label={`Level ${module.level} Progress`}
-                  labelRight={`${stats.percent}% (${stats.masteredWords}/${stats.totalWords} words)`}
-                  ariaLabel={`Level ${module.level} progress: ${stats.percent}%`}
-                />
-              </div>
+                        return (
+                          <div
+                            key={unit.id}
+                            className="bg-wp-card rounded-2xl border border-border p-4 flex flex-col justify-between gap-4 shadow-wp-xs hover:border-primary/50 transition-colors relative overflow-hidden"
+                          >
+                            {/* Unit Image Banner */}
+                            <div className="h-36 sm:h-44 relative rounded-xl overflow-hidden shrink-0 border border-border shadow-wp-xs">
+                              <img
+                                alt={`${unit.name} visual learning scene`}
+                                className="absolute inset-0 object-cover size-full"
+                                src={unit.heroImage}
+                                loading="lazy"
+                              />
+                              {isComplete ? (
+                                <Badge
+                                  variant="green"
+                                  size="sm"
+                                  className="absolute top-2.5 start-2.5 shadow-wp-xs"
+                                >
+                                  <CheckCircle2 className="size-3.5" />
+                                  <span>Mastered</span>
+                                </Badge>
+                              ) : (
+                                <Badge
+                                  variant="primary"
+                                  size="sm"
+                                  className="absolute top-2.5 start-2.5 shadow-wp-xs"
+                                >
+                                  <Sparkles className="size-3.5" />
+                                  <span>Level {module.level}</span>
+                                </Badge>
+                              )}
+                            </div>
 
-              {/* Units Grid / List */}
-              <AnimatePresence initial={false}>
-                {isExpanded && (
-                  <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    exit={{ opacity: 0, height: 0 }}
-                    transition={{ duration: 0.25, ease: "easeInOut" }}
-                    className="flex flex-col gap-5 pt-2"
-                  >
-                    {units.map((unit) => {
-                      const unitWords = unit.vocabulary || [];
-                      const wordsPracticedCount = unitWords.filter(
-                        (w) => (progress.wordMastery[w.id] || 0) >= 3
-                      ).length;
-                      const totalWords = unitWords.length;
-                      const unitPercent =
-                        totalWords > 0 ? Math.round((wordsPracticedCount / totalWords) * 100) : 0;
-                      const isComplete = unitPercent === 100 && totalWords > 0;
-
-                      return (
-                        <div
-                          key={unit.id}
-                          className="bg-wp-card rounded-2xl border border-border p-5 flex flex-col lg:flex-row gap-5 shadow-wp-xs hover:border-primary/50 transition-colors relative overflow-hidden"
-                        >
-                          {/* Unit Image Banner */}
-                          <div className="h-44 lg:h-52 lg:w-72 relative rounded-xl overflow-hidden shrink-0 border border-border shadow-wp-xs">
-                            <img
-                              alt={`${unit.name} visual learning scene`}
-                              className="absolute inset-0 object-cover size-full"
-                              src={unit.heroImage}
-                            />
-                            {isComplete ? (
-                              <Badge
-                                variant="green"
-                                size="md"
-                                className="absolute top-3 start-3 shadow-wp-xs"
-                              >
-                                <CheckCircle2 className="size-3.5" />
-                                <span>Mastered</span>
-                              </Badge>
-                            ) : (
-                              <Badge
-                                variant="primary"
-                                size="md"
-                                className="absolute top-3 start-3 shadow-wp-xs"
-                              >
-                                <Sparkles className="size-3.5" />
-                                <span>Unlocked</span>
-                              </Badge>
-                            )}
-                          </div>
-
-                          {/* Unit Details */}
-                          <div className="flex-1 flex flex-col justify-between gap-3">
-                            <div className="flex flex-col gap-2">
-                              <div className="flex items-center justify-between flex-wrap gap-2">
-                                <div className="flex items-center gap-2">
-                                  {unit.isRevision ? (
-                                    unit.revisionKind === "milestone" ? (
-                                      <Badge variant="teal" size="sm">
-                                        🌟 Grand Milestone Review
-                                      </Badge>
-                                    ) : (
-                                      <Badge variant="green" size="sm">
-                                        ✨ Retention Checkpoint
-                                      </Badge>
-                                    )
-                                  ) : (
-                                    <Badge variant="amber" size="sm">
-                                      Level {module.level} · High Yield
-                                    </Badge>
-                                  )}
-                                </div>
+                            {/* Unit Details */}
+                            <div className="flex flex-col gap-2 flex-1">
+                              <div className="flex items-center justify-between flex-wrap gap-1">
+                                <h3 className="font-sans font-black text-foreground text-lg leading-tight">
+                                  {unit.name}
+                                </h3>
                                 <span className="font-sans text-xs text-muted-foreground font-semibold">
-                                  {totalWords} Target Words
+                                  {totalWords} Words
                                 </span>
                               </div>
-
-                              <h3 className="font-sans font-black text-foreground text-xl leading-tight">
-                                {unit.name}
-                              </h3>
-                              <p className="font-sans text-muted-foreground text-xs sm:text-sm leading-relaxed line-clamp-2">
+                              <p className="font-sans text-muted-foreground text-xs leading-relaxed line-clamp-2">
                                 {unit.description}
                               </p>
                             </div>
 
-                            {/* Progress & CTA */}
-                            <div className="flex flex-col gap-3 pt-2">
+                            {/* Progress & Action CTA */}
+                            <div className="flex flex-col gap-2.5 pt-1 border-t border-border/60">
                               <ProgressBar
                                 progressPercent={unitPercent}
                                 label="Unit progress"
-                                labelRight={`${unitPercent}% (${wordsPracticedCount}/${totalWords})`}
+                                labelRight={`${unitPercent}%`}
                                 ariaLabel={`${unit.name} progress: ${unitPercent}%`}
                               />
 
@@ -361,26 +452,25 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                                 onClick={() =>
                                   dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })
                                 }
-                                className="w-full sm:w-auto bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-3 px-5 font-sans font-bold text-wp-text-on-blue text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-colors flex items-center justify-center gap-2 self-start min-h-[44px]"
+                                className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-2.5 px-4 font-sans font-bold text-wp-text-on-blue text-xs sm:text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-colors flex items-center justify-center gap-2 min-h-[44px]"
                               >
                                 <BookOpen className="size-4" />
                                 <span>
-                                  {wordsPracticedCount > 0 ? "Continue Unit" : "Enter Unit"}:{" "}
-                                  {unit.name}
+                                  {wordsPracticedCount > 0 ? "Continue Unit" : "Start Unit"}
                                 </span>
                                 <ArrowRight className="size-4 rtl:rotate-180" />
                               </motion.button>
                             </div>
                           </div>
-                        </div>
-                      );
-                    })}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.section>
-          );
-        })}
+                        );
+                      })}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.section>
+            );
+          })
+        )}
       </div>
     </motion.div>
   );
