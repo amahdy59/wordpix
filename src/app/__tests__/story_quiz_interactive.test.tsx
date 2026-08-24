@@ -1,13 +1,17 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { ExerciseStory } from "../exercises/ExerciseStory";
-import { STORY_TALES_DICTIONARY } from "../data/storyTalesDictionary";
+import { getOrGenerateStoryBundle } from "../data/storyTalesDictionary";
 import { GARDEN_VOCABULARY, GARDEN_GROUPS } from "../data/lessons";
 
 describe("Story Suite & Vocabulary-Centric Quizzes", () => {
-  it("ensures all 6 garden groups have bespoke stories and 2-vocab + 1-comprehension quiz questions", () => {
+  it("ensures all garden groups have bespoke stories and 2-vocab + 1-comprehension quiz questions", () => {
     GARDEN_GROUPS.forEach((group) => {
-      const bundle = STORY_TALES_DICTIONARY[group.id];
+      const bundle = getOrGenerateStoryBundle(
+        group.id,
+        group.name,
+        GARDEN_VOCABULARY.filter((w) => group.wordIds.includes(w.id))
+      );
       expect(bundle, `Group ${group.id} must have bespoke story bundle`).toBeDefined();
       expect(bundle.passages.length).toBe(3);
 
@@ -37,9 +41,9 @@ describe("Story Suite & Vocabulary-Centric Quizzes", () => {
 
   it("renders the interactive card stepper quiz and enables selecting answers", () => {
     const dispatch = vi.fn();
-    const flowerWords = GARDEN_VOCABULARY.filter((w) => w.topic === "flowers");
+    const flowerWords = GARDEN_VOCABULARY.filter((w) => w.topic === "garden-1");
 
-    render(<ExerciseStory step={5} words={flowerWords} lessonId="flowers" dispatch={dispatch} />);
+    render(<ExerciseStory step={5} words={flowerWords} lessonId="garden-1" dispatch={dispatch} />);
 
     // Switch to section 5: Quiz
     const quizTab = screen.getByRole("button", { name: /5\. Quiz/i });
@@ -50,14 +54,14 @@ describe("Story Suite & Vocabulary-Centric Quizzes", () => {
     expect(screen.getByText(/Vocabulary Focus/i)).toBeInTheDocument();
 
     // Option buttons are present
-    const sunflowerOption = screen.getByRole("button", { name: /A Sunflower/i });
+    const sunflowerOption = screen.getByRole("button", { name: /The tulip/i });
     expect(sunflowerOption).toBeInTheDocument();
 
     // Select Sunflower option
     fireEvent.click(sunflowerOption);
 
     // Well done explanation should appear
-    expect(screen.getByText(/heliotropism/i)).toBeInTheDocument();
+    expect(screen.getByText(/The narrative focuses on the tulip/i)).toBeInTheDocument();
 
     // Navigate to Question 2
     const nextQBtn = screen.getByRole("button", { name: /Next Question/i });
@@ -66,7 +70,7 @@ describe("Story Suite & Vocabulary-Centric Quizzes", () => {
     expect(screen.getByText(/Question 2 of 3/i)).toBeInTheDocument();
 
     // Select Lavender option
-    const lavenderOption = screen.getByRole("button", { name: /A Lavender/i });
+    const lavenderOption = screen.getByRole("button", { name: /To carefully inspect/i });
     fireEvent.click(lavenderOption);
 
     // Navigate to Question 3 (Comprehension)
@@ -77,7 +81,7 @@ describe("Story Suite & Vocabulary-Centric Quizzes", () => {
     expect(screen.getAllByText(/Story Comprehension/i).length).toBeGreaterThanOrEqual(1);
 
     // Select Option A for Question 3
-    const optionA = screen.getByRole("button", { name: /A To discover and admire/i });
+    const optionA = screen.getByRole("button", { name: /All tasks were successfully completed/i });
     fireEvent.click(optionA);
 
     // Completion banner appears

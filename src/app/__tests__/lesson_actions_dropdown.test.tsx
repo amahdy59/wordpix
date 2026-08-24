@@ -26,7 +26,9 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    const trigger = screen.getAllByLabelText(/More options and quick navigation for Flowers/i)[0];
+    const trigger = screen.getAllByLabelText(
+      /More options and quick navigation for Garden Basics 1/i
+    )[0];
     fireEvent.click(trigger);
 
     expect(trigger).toHaveAttribute("aria-expanded", "true");
@@ -38,7 +40,7 @@ describe("Lesson Actions Dropdown & Navigation", () => {
 
     expect(dispatch).toHaveBeenCalledWith({
       type: "START_LESSON",
-      lessonId: "flowers",
+      lessonId: "garden-1",
       unitId: "garden",
       mode: "NEW_LESSON",
       wordQueue: expect.arrayContaining(["rose", "tulip"]),
@@ -54,7 +56,9 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    const trigger = screen.getAllByLabelText(/More options and quick navigation for Flowers/i)[0];
+    const trigger = screen.getAllByLabelText(
+      /More options and quick navigation for Garden Basics 1/i
+    )[0];
     fireEvent.click(trigger);
 
     const browseWordsButton = screen.getByRole("menuitem", { name: /Browse Words/i });
@@ -62,7 +66,7 @@ describe("Lesson Actions Dropdown & Navigation", () => {
 
     expect(dispatch).toHaveBeenCalledWith({
       type: "GO_LEARN_WORDS",
-      lessonId: "flowers",
+      lessonId: "garden-1",
     });
   });
 
@@ -74,7 +78,9 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    const trigger = screen.getAllByLabelText(/More options and quick navigation for Flowers/i)[0];
+    const trigger = screen.getAllByLabelText(
+      /More options and quick navigation for Garden Basics 1/i
+    )[0];
     fireEvent.click(trigger);
 
     const jumpToggle = screen.getByRole("button", { name: /Jump to Step/i });
@@ -85,7 +91,7 @@ describe("Lesson Actions Dropdown & Navigation", () => {
 
     expect(dispatch).toHaveBeenCalledWith({
       type: "START_LESSON",
-      lessonId: "flowers",
+      lessonId: "garden-1",
       unitId: "garden",
       mode: "NEW_LESSON",
       wordQueue: expect.arrayContaining(["rose", "tulip"]),
@@ -101,7 +107,9 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    const trigger = screen.getAllByLabelText(/More options and quick navigation for Flowers/i)[0];
+    const trigger = screen.getAllByLabelText(
+      /More options and quick navigation for Garden Basics 1/i
+    )[0];
     fireEvent.click(trigger);
 
     expect(screen.getByRole("menuitem", { name: /Read Story/i })).toBeInTheDocument();

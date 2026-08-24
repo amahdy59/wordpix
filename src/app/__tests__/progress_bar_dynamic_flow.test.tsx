@@ -13,7 +13,7 @@ describe("Dynamic Progress Bar Tracking Across Exercises", () => {
         step={0}
         title="Test Dynamic"
         words={BEDROOM_VOCABULARY}
-        lessonId="furniture"
+        lessonId="bedroom-1"
         dispatch={dispatch}
         progress={{ current: 18, total: 20 }}
         footer={<div>Footer</div>}
@@ -34,7 +34,7 @@ describe("Dynamic Progress Bar Tracking Across Exercises", () => {
       <ExerciseQuickQuiz
         step={5}
         words={BEDROOM_VOCABULARY}
-        lessonId="furniture"
+        lessonId="bedroom-1"
         dispatch={dispatch}
       />
     );
@@ -51,7 +51,7 @@ describe("Dynamic Progress Bar Tracking Across Exercises", () => {
       <ExerciseListenRepeat
         step={1}
         words={BEDROOM_VOCABULARY}
-        lessonId="furniture"
+        lessonId="bedroom-1"
         dispatch={dispatch}
       />
     );

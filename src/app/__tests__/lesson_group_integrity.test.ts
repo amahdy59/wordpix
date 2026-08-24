@@ -59,7 +59,7 @@ describe("a lesson teaches the group it was started for", () => {
   );
 
   it("does not collapse a non-furniture group onto the furniture words", () => {
-    const pillows = resolveGroup("bedding");
+    const pillows = resolveGroup("bedroom-2");
     const state = reducer(
       { id: "lesson-entry" },
       { type: "START_LESSON", lessonId: pillows.id, wordQueue: pillows.wordIds }
@@ -73,7 +73,6 @@ describe("a lesson teaches the group it was started for", () => {
       expect(state.wordQueue).not.toContain(regressionWord);
     }
   });
-
 });
 
 describe("resolveGroup", () => {
