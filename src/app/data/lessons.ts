@@ -5,6 +5,7 @@ export interface VocabularyItem {
   id: string;
   label: string;
   phonetic: string;
+  cefr?: string;
   img: string;
   topic: string;
   /**
@@ -12830,6 +12831,1523 @@ export const COURSE_MODULES: CourseModule[] = [
   },
 ];
 
+export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
+  {
+    id: "heat-stroke",
+    label: "Heat Stroke",
+    phonetic: "/hiːt stroʊk/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/heat-stroke.webp`,
+    topic: "first-aid-1",
+    description: "A health supply or clinic concept, specifically item number 1 in the curriculum.",
+  },
+  {
+    id: "hypothermia",
+    label: "Hypothermia",
+    phonetic: "/ˌhaɪpoʊˈθɜːrmiə/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/hypothermia.webp`,
+    topic: "first-aid-1",
+    description: "A health supply or clinic concept, specifically item number 2 in the curriculum.",
+  },
+  {
+    id: "tape",
+    label: "Tape",
+    phonetic: "/teɪp/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/tape.webp`,
+    topic: "first-aid-1",
+    description: "A health supply or clinic concept, specifically item number 3 in the curriculum.",
+  },
+  {
+    id: "antiseptic",
+    label: "Antiseptic",
+    phonetic: "/ˌæntɪˈsɛptɪk/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/antiseptic.webp`,
+    topic: "first-aid-1",
+    description: "A health supply or clinic concept, specifically item number 4 in the curriculum.",
+  },
+  {
+    id: "sling",
+    label: "Sling",
+    phonetic: "/slɪŋ/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/sling.webp`,
+    topic: "first-aid-1",
+    description: "A health supply or clinic concept, specifically item number 5 in the curriculum.",
+  },
+  {
+    id: "compress",
+    label: "Compress",
+    phonetic: "/ˈkɒmprɛs/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/compress.webp`,
+    topic: "first-aid-2",
+    description: "A health supply or clinic concept, specifically item number 6 in the curriculum.",
+  },
+  {
+    id: "gloves",
+    label: "Gloves",
+    phonetic: "/ɡlʌvz/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/gloves.webp`,
+    topic: "first-aid-2",
+    description: "A health supply or clinic concept, specifically item number 7 in the curriculum.",
+  },
+  {
+    id: "cpr",
+    label: "CPR",
+    phonetic: "/ˌsiːpiːˈɑːr/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/cpr.webp`,
+    topic: "first-aid-2",
+    description: "A health supply or clinic concept, specifically item number 8 in the curriculum.",
+  },
+  {
+    id: "wound-care",
+    label: "Wound Care",
+    phonetic: "/wuːnd kɛər/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/wound-care.webp`,
+    topic: "first-aid-2",
+    description: "A health supply or clinic concept, specifically item number 9 in the curriculum.",
+  },
+  {
+    id: "check-pulse",
+    label: "Check Pulse",
+    phonetic: "/tʃɛk pʌls/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/check-pulse.webp`,
+    topic: "first-aid-2",
+    description:
+      "A health supply or clinic concept, specifically item number 10 in the curriculum.",
+  },
+  {
+    id: "apply-pressure",
+    label: "Apply Pressure",
+    phonetic: "/əˈplaɪ ˈprɛʃər/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/apply-pressure.webp`,
+    topic: "first-aid-3",
+    description:
+      "A health supply or clinic concept, specifically item number 11 in the curriculum.",
+  },
+  {
+    id: "elevate",
+    label: "Elevate",
+    phonetic: "/ˈɛlɪˌveɪt/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/elevate.webp`,
+    topic: "first-aid-3",
+    description:
+      "A health supply or clinic concept, specifically item number 12 in the curriculum.",
+  },
+  {
+    id: "immobilize",
+    label: "Immobilize",
+    phonetic: "/ɪˈmoʊbɪˌlaɪz/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/immobilize.webp`,
+    topic: "first-aid-3",
+    description:
+      "A health supply or clinic concept, specifically item number 13 in the curriculum.",
+  },
+  {
+    id: "call-emergency",
+    label: "Call Emergency",
+    phonetic: "/kɔːl ɪˈmɜːrdʒənsi/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/call-emergency.webp`,
+    topic: "first-aid-3",
+    description:
+      "A health supply or clinic concept, specifically item number 14 in the curriculum.",
+  },
+  {
+    id: "monitor",
+    label: "Monitor",
+    phonetic: "/ˈmɒnɪtər/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/monitor.webp`,
+    topic: "first-aid-3",
+    description:
+      "A health supply or clinic concept, specifically item number 15 in the curriculum.",
+  },
+  {
+    id: "crutch",
+    label: "Crutch",
+    phonetic: "/krʌtʃ/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/crutch.webp`,
+    topic: "first-aid-4",
+    description:
+      "A health supply or clinic concept, specifically item number 16 in the curriculum.",
+  },
+  {
+    id: "splint",
+    label: "Splint",
+    phonetic: "/splɪnt/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/splint.webp`,
+    topic: "first-aid-4",
+    description:
+      "A health supply or clinic concept, specifically item number 17 in the curriculum.",
+  },
+  {
+    id: "neck-brace",
+    label: "Neck Brace",
+    phonetic: "/nɛk breɪs/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/neck-brace.webp`,
+    topic: "first-aid-4",
+    description:
+      "A health supply or clinic concept, specifically item number 18 in the curriculum.",
+  },
+  {
+    id: "ice-pack",
+    label: "Ice Pack",
+    phonetic: "/aɪs pæk/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/ice-pack.webp`,
+    topic: "first-aid-4",
+    description:
+      "A health supply or clinic concept, specifically item number 19 in the curriculum.",
+  },
+  {
+    id: "hot-pack",
+    label: "Hot Pack",
+    phonetic: "/hɒt pæk/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/hot-pack.webp`,
+    topic: "first-aid-4",
+    description:
+      "A health supply or clinic concept, specifically item number 20 in the curriculum.",
+  },
+  {
+    id: "stethoscope",
+    label: "Stethoscope",
+    phonetic: "/ˈstɛθəskoʊp/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/stethoscope.webp`,
+    topic: "first-aid-5",
+    description:
+      "A health supply or clinic concept, specifically item number 21 in the curriculum.",
+  },
+  {
+    id: "thermometer",
+    label: "Thermometer",
+    phonetic: "/θərˈmɒmɪtər/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/thermometer.webp`,
+    topic: "first-aid-5",
+    description:
+      "A health supply or clinic concept, specifically item number 22 in the curriculum.",
+  },
+  {
+    id: "pulse-oximeter",
+    label: "Pulse Oximeter",
+    phonetic: "/pʌls ɒkˈsɪmɪtər/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/pulse-oximeter.webp`,
+    topic: "first-aid-5",
+    description:
+      "A health supply or clinic concept, specifically item number 23 in the curriculum.",
+  },
+  {
+    id: "eye-wash-station",
+    label: "Eye Wash Station",
+    phonetic: "/aɪ wɒʃ ˈsteɪʃən/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/eye-wash-station.webp`,
+    topic: "first-aid-5",
+    description:
+      "A health supply or clinic concept, specifically item number 24 in the curriculum.",
+  },
+  {
+    id: "cpr-mask",
+    label: "CPR Mask",
+    phonetic: "/ˌsiːpiːˈɑːr mɑːsk/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/cpr-mask.webp`,
+    topic: "first-aid-5",
+    description:
+      "A health supply or clinic concept, specifically item number 25 in the curriculum.",
+  },
+  {
+    id: "aed",
+    label: "AED",
+    phonetic: "/ˌeɪiːˈdiː/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/aed.webp`,
+    topic: "first-aid-6",
+    description:
+      "A health supply or clinic concept, specifically item number 26 in the curriculum.",
+  },
+  {
+    id: "first-aid-manual",
+    label: "First Aid Manual",
+    phonetic: "/fɜːrst eɪd ˈmænjuəl/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/first-aid-manual.webp`,
+    topic: "first-aid-6",
+    description:
+      "A health supply or clinic concept, specifically item number 27 in the curriculum.",
+  },
+  {
+    id: "blood-glucose-monitor",
+    label: "Blood Glucose Monitor",
+    phonetic: "/blʌd ˈɡluːkoʊs ˈmɒnɪtər/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/blood-glucose-monitor.webp`,
+    topic: "first-aid-6",
+    description:
+      "A health supply or clinic concept, specifically item number 28 in the curriculum.",
+  },
+  {
+    id: "blood-pressure-cuff",
+    label: "Blood Pressure Cuff",
+    phonetic: "/blʌd ˈprɛʃər kʌf/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/blood-pressure-cuff.webp`,
+    topic: "first-aid-6",
+    description:
+      "A health supply or clinic concept, specifically item number 29 in the curriculum.",
+  },
+  {
+    id: "penlight",
+    label: "Penlight",
+    phonetic: "/ˈpɛnlaɪt/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/penlight.webp`,
+    topic: "first-aid-6",
+    description:
+      "A health supply or clinic concept, specifically item number 30 in the curriculum.",
+  },
+  {
+    id: "tongue-depressor",
+    label: "Tongue Depressor",
+    phonetic: "/tʌŋ dɪˈprɛsər/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/tongue-depressor.webp`,
+    topic: "first-aid-7",
+    description:
+      "A health supply or clinic concept, specifically item number 31 in the curriculum.",
+  },
+  {
+    id: "plaster",
+    label: "Plaster",
+    phonetic: "/ˈplɑːstər/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/plaster.webp`,
+    topic: "first-aid-7",
+    description:
+      "A health supply or clinic concept, specifically item number 32 in the curriculum.",
+  },
+  {
+    id: "butterfly-strip",
+    label: "Butterfly Strip",
+    phonetic: "/ˈbʌtərflaɪ strɪp/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/butterfly-strip.webp`,
+    topic: "first-aid-7",
+    description:
+      "A health supply or clinic concept, specifically item number 33 in the curriculum.",
+  },
+  {
+    id: "wound-dressing",
+    label: "Wound Dressing",
+    phonetic: "/wuːnd ˈdrɛsɪŋ/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/wound-dressing.webp`,
+    topic: "first-aid-7",
+    description:
+      "A health supply or clinic concept, specifically item number 34 in the curriculum.",
+  },
+  {
+    id: "saline-solution",
+    label: "Saline Solution",
+    phonetic: "/ˈseɪliːn səˈluːʃən/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/saline-solution.webp`,
+    topic: "first-aid-7",
+    description:
+      "A health supply or clinic concept, specifically item number 35 in the curriculum.",
+  },
+  {
+    id: "emergency-phone",
+    label: "Emergency Phone",
+    phonetic: "/ɪˈmɜːrdʒənsi foʊn/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/emergency-phone.webp`,
+    topic: "first-aid-8",
+    description:
+      "A health supply or clinic concept, specifically item number 36 in the curriculum.",
+  },
+  {
+    id: "alarm-button",
+    label: "Alarm Button",
+    phonetic: "/əˈlɑːrm ˈbʌtn/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/alarm-button.webp`,
+    topic: "first-aid-8",
+    description:
+      "A health supply or clinic concept, specifically item number 37 in the curriculum.",
+  },
+  {
+    id: "inhaler",
+    label: "Inhaler",
+    phonetic: "/ɪnˈheɪlər/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/inhaler.webp`,
+    topic: "first-aid-8",
+    description:
+      "A health supply or clinic concept, specifically item number 38 in the curriculum.",
+  },
+  {
+    id: "cervical-collar",
+    label: "Cervical Collar",
+    phonetic: "/ˈsɜːrvɪkl ˈkɒlər/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/cervical-collar.webp`,
+    topic: "first-aid-8",
+    description:
+      "A health supply or clinic concept, specifically item number 39 in the curriculum.",
+  },
+  {
+    id: "spine-board",
+    label: "Spine Board",
+    phonetic: "/spaɪn bɔːrd/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/spine-board.webp`,
+    topic: "first-aid-8",
+    description:
+      "A health supply or clinic concept, specifically item number 40 in the curriculum.",
+  },
+  {
+    id: "snakebite-kit",
+    label: "Snakebite Kit",
+    phonetic: "/ˈsneɪkbaɪt kɪt/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/snakebite-kit.webp`,
+    topic: "first-aid-9",
+    description:
+      "A health supply or clinic concept, specifically item number 41 in the curriculum.",
+  },
+  {
+    id: "tick-remover",
+    label: "Tick Remover",
+    phonetic: "/tɪk rɪˈmuːvər/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/tick-remover.webp`,
+    topic: "first-aid-9",
+    description:
+      "A health supply or clinic concept, specifically item number 42 in the curriculum.",
+  },
+  {
+    id: "medical-id-bracelet",
+    label: "Medical ID Bracelet",
+    phonetic: "/ˈmɛdɪkl ˌaɪˈdiː ˈbreɪslɪt/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/medical-id-bracelet.webp`,
+    topic: "first-aid-9",
+    description:
+      "A health supply or clinic concept, specifically item number 43 in the curriculum.",
+  },
+  {
+    id: "examination-table",
+    label: "Examination Table",
+    phonetic: "/ɪɡˌzæmɪˈneɪʃən ˈteɪbl/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/examination-table.webp`,
+    topic: "first-aid-9",
+    description:
+      "A health supply or clinic concept, specifically item number 44 in the curriculum.",
+  },
+  {
+    id: "curtain",
+    label: "Curtain",
+    phonetic: "/ˈkɜːrtn/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/curtain.webp`,
+    topic: "first-aid-9",
+    description:
+      "A health supply or clinic concept, specifically item number 45 in the curriculum.",
+  },
+  {
+    id: "sink",
+    label: "Sink",
+    phonetic: "/sɪŋk/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/sink.webp`,
+    topic: "first-aid-10",
+    description:
+      "A health supply or clinic concept, specifically item number 46 in the curriculum.",
+  },
+  {
+    id: "soap-dispenser",
+    label: "Soap Dispenser",
+    phonetic: "/soʊp dɪˈspɛnsər/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/soap-dispenser.webp`,
+    topic: "first-aid-10",
+    description:
+      "A health supply or clinic concept, specifically item number 47 in the curriculum.",
+  },
+  {
+    id: "paper-towel",
+    label: "Paper Towel",
+    phonetic: "/ˈpeɪpər ˈtaʊəl/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/paper-towel.webp`,
+    topic: "first-aid-10",
+    description:
+      "A health supply or clinic concept, specifically item number 48 in the curriculum.",
+  },
+  {
+    id: "waste-bin",
+    label: "Waste Bin",
+    phonetic: "/weɪst bɪn/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/waste-bin.webp`,
+    topic: "first-aid-10",
+    description:
+      "A health supply or clinic concept, specifically item number 49 in the curriculum.",
+  },
+  {
+    id: "medicine-cabinet",
+    label: "Medicine Cabinet",
+    phonetic: "/ˈmɛdɪsɪn ˈkæbɪnɪt/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/medicine-cabinet.webp`,
+    topic: "first-aid-10",
+    description:
+      "A health supply or clinic concept, specifically item number 50 in the curriculum.",
+  },
+  {
+    id: "wall-chart",
+    label: "Wall Chart",
+    phonetic: "/wɔːl tʃɑːrt/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/wall-chart.webp`,
+    topic: "first-aid-11",
+    description:
+      "A health supply or clinic concept, specifically item number 51 in the curriculum.",
+  },
+  {
+    id: "clock",
+    label: "Clock",
+    phonetic: "/klɒk/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/clock.webp`,
+    topic: "first-aid-11",
+    description:
+      "A health supply or clinic concept, specifically item number 52 in the curriculum.",
+  },
+  {
+    id: "hand-sanitizer",
+    label: "Hand Sanitizer",
+    phonetic: "/hænd ˈsænɪtaɪzər/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/hand-sanitizer.webp`,
+    topic: "first-aid-11",
+    description:
+      "A health supply or clinic concept, specifically item number 53 in the curriculum.",
+  },
+  {
+    id: "privacy-screen",
+    label: "Privacy Screen",
+    phonetic: "/ˈprɪvəsi skriːn/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/privacy-screen.webp`,
+    topic: "first-aid-11",
+    description:
+      "A health supply or clinic concept, specifically item number 54 in the curriculum.",
+  },
+  {
+    id: "emergency-contact-card",
+    label: "Emergency Contact Card",
+    phonetic: "/ɪˈmɜːrdʒənsi ˈkɒntækt kɑːrd/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/emergency-contact-card.webp`,
+    topic: "first-aid-11",
+    description:
+      "A health supply or clinic concept, specifically item number 55 in the curriculum.",
+  },
+  {
+    id: "incident-report-form",
+    label: "Incident Report Form",
+    phonetic: "/ˈɪnsɪdənt rɪˈpɔːrt fɔːrm/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/incident-report-form.webp`,
+    topic: "first-aid-12",
+    description:
+      "A health supply or clinic concept, specifically item number 56 in the curriculum.",
+  },
+  {
+    id: "poison-control-poster",
+    label: "Poison Control Poster",
+    phonetic: "/ˈpɔɪzn kənˈtroʊl ˈpoʊstər/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/poison-control-poster.webp`,
+    topic: "first-aid-12",
+    description:
+      "A health supply or clinic concept, specifically item number 57 in the curriculum.",
+  },
+  {
+    id: "cpr-poster",
+    label: "CPR Poster",
+    phonetic: "/ˌsiːpiːˈɑːr ˈpoʊstər/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/cpr-poster.webp`,
+    topic: "first-aid-12",
+    description:
+      "A health supply or clinic concept, specifically item number 58 in the curriculum.",
+  },
+  {
+    id: "fire-extinguisher",
+    label: "Fire Extinguisher",
+    phonetic: "/ˈfaɪər ɪkˈstɪŋɡwɪʃər/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/fire-extinguisher.webp`,
+    topic: "first-aid-12",
+    description:
+      "A health supply or clinic concept, specifically item number 59 in the curriculum.",
+  },
+  {
+    id: "sharps-container",
+    label: "Sharps Container",
+    phonetic: "/ʃɑːrps kənˈteɪnər/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/sharps-container.webp`,
+    topic: "first-aid-12",
+    description:
+      "A health supply or clinic concept, specifically item number 60 in the curriculum.",
+  },
+  {
+    id: "cut",
+    label: "Cut",
+    phonetic: "/kʌt/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/cut.webp`,
+    topic: "first-aid-13",
+    description:
+      "A health supply or clinic concept, specifically item number 61 in the curriculum.",
+  },
+  {
+    id: "bruise",
+    label: "Bruise",
+    phonetic: "/bruːz/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/bruise.webp`,
+    topic: "first-aid-13",
+    description:
+      "A health supply or clinic concept, specifically item number 62 in the curriculum.",
+  },
+  {
+    id: "burn",
+    label: "Burn",
+    phonetic: "/bɜːrn/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/burn.webp`,
+    topic: "first-aid-13",
+    description:
+      "A health supply or clinic concept, specifically item number 63 in the curriculum.",
+  },
+  {
+    id: "sprain",
+    label: "Sprain",
+    phonetic: "/spreɪn/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/sprain.webp`,
+    topic: "first-aid-13",
+    description:
+      "A health supply or clinic concept, specifically item number 64 in the curriculum.",
+  },
+  {
+    id: "fracture",
+    label: "Fracture",
+    phonetic: "/ˈfræktʃər/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/fracture.webp`,
+    topic: "first-aid-13",
+    description:
+      "A health supply or clinic concept, specifically item number 65 in the curriculum.",
+  },
+  {
+    id: "nosebleed",
+    label: "Nosebleed",
+    phonetic: "/ˈnoʊzbliːd/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/nosebleed.webp`,
+    topic: "first-aid-14",
+    description:
+      "A health supply or clinic concept, specifically item number 66 in the curriculum.",
+  },
+  {
+    id: "bee-sting",
+    label: "Bee Sting",
+    phonetic: "/biː stɪŋ/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/bee-sting.webp`,
+    topic: "first-aid-14",
+    description:
+      "A health supply or clinic concept, specifically item number 67 in the curriculum.",
+  },
+  {
+    id: "rash",
+    label: "Rash",
+    phonetic: "/ræʃ/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/rash.webp`,
+    topic: "first-aid-14",
+    description:
+      "A health supply or clinic concept, specifically item number 68 in the curriculum.",
+  },
+  {
+    id: "blister",
+    label: "Blister",
+    phonetic: "/ˈblɪstər/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/blister.webp`,
+    topic: "first-aid-14",
+    description:
+      "A health supply or clinic concept, specifically item number 69 in the curriculum.",
+  },
+  {
+    id: "splinter",
+    label: "Splinter",
+    phonetic: "/ˈsplɪntər/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/splinter.webp`,
+    topic: "first-aid-14",
+    description:
+      "A health supply or clinic concept, specifically item number 70 in the curriculum.",
+  },
+  {
+    id: "concussion",
+    label: "Concussion",
+    phonetic: "/kənˈkʌʃən/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/concussion.webp`,
+    topic: "first-aid-15",
+    description:
+      "A health supply or clinic concept, specifically item number 71 in the curriculum.",
+  },
+  {
+    id: "dislocation",
+    label: "Dislocation",
+    phonetic: "/ˌdɪsloʊˈkeɪʃən/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/dislocation.webp`,
+    topic: "first-aid-15",
+    description:
+      "A health supply or clinic concept, specifically item number 72 in the curriculum.",
+  },
+  {
+    id: "fainting",
+    label: "Fainting",
+    phonetic: "/ˈfeɪntɪŋ/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/fainting.webp`,
+    topic: "first-aid-15",
+    description:
+      "A health supply or clinic concept, specifically item number 73 in the curriculum.",
+  },
+  {
+    id: "choking",
+    label: "Choking",
+    phonetic: "/ˈtʃoʊkɪŋ/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/choking.webp`,
+    topic: "first-aid-15",
+    description:
+      "A health supply or clinic concept, specifically item number 74 in the curriculum.",
+  },
+  {
+    id: "allergic-reaction",
+    label: "Allergic Reaction",
+    phonetic: "/əˈlɜːrdʒɪk riˈækʃən/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/allergic-reaction.webp`,
+    topic: "first-aid-15",
+    description:
+      "A health supply or clinic concept, specifically item number 75 in the curriculum.",
+  },
+  {
+    id: "first-aid-kit",
+    label: "First Aid Kit",
+    phonetic: "/fɜːrst eɪd kɪt/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/first-aid-kit.webp`,
+    topic: "first-aid-16",
+    description:
+      "A health supply or clinic concept, specifically item number 76 in the curriculum.",
+  },
+  {
+    id: "bandage",
+    label: "Bandage",
+    phonetic: "/ˈbændɪdʒ/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/bandage.webp`,
+    topic: "first-aid-16",
+    description:
+      "A health supply or clinic concept, specifically item number 77 in the curriculum.",
+  },
+  {
+    id: "gauze",
+    label: "Gauze",
+    phonetic: "/ɡɔːz/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/gauze.webp`,
+    topic: "first-aid-16",
+    description:
+      "A health supply or clinic concept, specifically item number 78 in the curriculum.",
+  },
+  {
+    id: "adhesive-tape",
+    label: "Adhesive Tape",
+    phonetic: "/ədˈhiːsɪv teɪp/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/adhesive-tape.webp`,
+    topic: "first-aid-16",
+    description:
+      "A health supply or clinic concept, specifically item number 79 in the curriculum.",
+  },
+  {
+    id: "antiseptic-wipe",
+    label: "Antiseptic Wipe",
+    phonetic: "/ˌæntɪˈsɛptɪk waɪp/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/antiseptic-wipe.webp`,
+    topic: "first-aid-16",
+    description:
+      "A health supply or clinic concept, specifically item number 80 in the curriculum.",
+  },
+  {
+    id: "scissors",
+    label: "Scissors",
+    phonetic: "/ˈsɪzərz/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/scissors.webp`,
+    topic: "first-aid-17",
+    description:
+      "A health supply or clinic concept, specifically item number 81 in the curriculum.",
+  },
+  {
+    id: "tweezers",
+    label: "Tweezers",
+    phonetic: "/ˈtwiːzərz/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/tweezers.webp`,
+    topic: "first-aid-17",
+    description:
+      "A health supply or clinic concept, specifically item number 82 in the curriculum.",
+  },
+  {
+    id: "safety-pin",
+    label: "Safety Pin",
+    phonetic: "/ˈseɪfti pɪn/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/safety-pin.webp`,
+    topic: "first-aid-17",
+    description:
+      "A health supply or clinic concept, specifically item number 83 in the curriculum.",
+  },
+  {
+    id: "elastic-bandage",
+    label: "Elastic Bandage",
+    phonetic: "/ɪˈlæstɪk ˈbændɪdʒ/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/elastic-bandage.webp`,
+    topic: "first-aid-17",
+    description:
+      "A health supply or clinic concept, specifically item number 84 in the curriculum.",
+  },
+  {
+    id: "triangular-bandage",
+    label: "Triangular Bandage",
+    phonetic: "/traɪˈæŋɡjʊlər ˈbændɪdʒ/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/triangular-bandage.webp`,
+    topic: "first-aid-17",
+    description:
+      "A health supply or clinic concept, specifically item number 85 in the curriculum.",
+  },
+  {
+    id: "gauze-pad",
+    label: "Gauze Pad",
+    phonetic: "/ɡɔːz pæd/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/gauze-pad.webp`,
+    topic: "first-aid-18",
+    description:
+      "A health supply or clinic concept, specifically item number 86 in the curriculum.",
+  },
+  {
+    id: "burn-cream",
+    label: "Burn Cream",
+    phonetic: "/bɜːrn kriːm/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/burn-cream.webp`,
+    topic: "first-aid-18",
+    description:
+      "A health supply or clinic concept, specifically item number 87 in the curriculum.",
+  },
+  {
+    id: "cold-pack",
+    label: "Cold Pack",
+    phonetic: "/koʊld pæk/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/cold-pack.webp`,
+    topic: "first-aid-18",
+    description:
+      "A health supply or clinic concept, specifically item number 88 in the curriculum.",
+  },
+  {
+    id: "heat-pack",
+    label: "Heat Pack",
+    phonetic: "/hiːt pæk/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/heat-pack.webp`,
+    topic: "first-aid-18",
+    description:
+      "A health supply or clinic concept, specifically item number 89 in the curriculum.",
+  },
+  {
+    id: "finger-splint",
+    label: "Finger Splint",
+    phonetic: "/ˈfɪŋɡər splɪnt/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/finger-splint.webp`,
+    topic: "first-aid-18",
+    description:
+      "A health supply or clinic concept, specifically item number 90 in the curriculum.",
+  },
+  {
+    id: "medical-tape",
+    label: "Medical Tape",
+    phonetic: "/ˈmɛdɪkl teɪp/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/medical-tape.webp`,
+    topic: "first-aid-19",
+    description:
+      "A health supply or clinic concept, specifically item number 91 in the curriculum.",
+  },
+  {
+    id: "antibiotic-ointment",
+    label: "Antibiotic Ointment",
+    phonetic: "/ˌæntɪbaɪˈɒtɪk ˈɔɪntmənt/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/antibiotic-ointment.webp`,
+    topic: "first-aid-19",
+    description:
+      "A health supply or clinic concept, specifically item number 92 in the curriculum.",
+  },
+  {
+    id: "hydrocortisone-cream",
+    label: "Hydrocortisone Cream",
+    phonetic: "/ˌhaɪdroʊˈkɔːrtɪzoʊn kriːm/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/hydrocortisone-cream.webp`,
+    topic: "first-aid-19",
+    description:
+      "A health supply or clinic concept, specifically item number 93 in the curriculum.",
+  },
+  {
+    id: "stretcher",
+    label: "Stretcher",
+    phonetic: "/ˈstrɛtʃər/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/stretcher.webp`,
+    topic: "first-aid-19",
+    description:
+      "A health supply or clinic concept, specifically item number 94 in the curriculum.",
+  },
+  {
+    id: "wheelchair",
+    label: "Wheelchair",
+    phonetic: "/ˈwiːltʃɛr/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/wheelchair.webp`,
+    topic: "first-aid-19",
+    description:
+      "A health supply or clinic concept, specifically item number 95 in the curriculum.",
+  },
+  {
+    id: "hydrogen-peroxide",
+    label: "Hydrogen Peroxide",
+    phonetic: "/ˈhaɪdrədʒən pəˈrɒksaɪd/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/hydrogen-peroxide.webp`,
+    topic: "first-aid-20",
+    description:
+      "A health supply or clinic concept, specifically item number 96 in the curriculum.",
+  },
+  {
+    id: "iodine",
+    label: "Iodine",
+    phonetic: "/ˈaɪədiːn/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/iodine.webp`,
+    topic: "first-aid-20",
+    description:
+      "A health supply or clinic concept, specifically item number 97 in the curriculum.",
+  },
+  {
+    id: "cotton-swab",
+    label: "Cotton Swab",
+    phonetic: "/ˈkɒtn swɒb/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/cotton-swab.webp`,
+    topic: "first-aid-20",
+    description:
+      "A health supply or clinic concept, specifically item number 98 in the curriculum.",
+  },
+  {
+    id: "sterile-gloves",
+    label: "Sterile Gloves",
+    phonetic: "/ˈstɛrəl ɡlʌvz/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/sterile-gloves.webp`,
+    topic: "first-aid-20",
+    description:
+      "A health supply or clinic concept, specifically item number 99 in the curriculum.",
+  },
+  {
+    id: "syringe",
+    label: "Syringe",
+    phonetic: "/sɪˈrɪndʒ/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/syringe.webp`,
+    topic: "first-aid-20",
+    description:
+      "A health supply or clinic concept, specifically item number 100 in the curriculum.",
+  },
+  {
+    id: "suture-kit",
+    label: "Suture Kit",
+    phonetic: "/ˈsuːtʃər kɪt/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/suture-kit.webp`,
+    topic: "first-aid-21",
+    description:
+      "A health supply or clinic concept, specifically item number 101 in the curriculum.",
+  },
+  {
+    id: "wound-closure-strip",
+    label: "Wound Closure Strip",
+    phonetic: "/wuːnd ˈkloʊʒər strɪp/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/wound-closure-strip.webp`,
+    topic: "first-aid-21",
+    description:
+      "A health supply or clinic concept, specifically item number 102 in the curriculum.",
+  },
+  {
+    id: "skin-stapler",
+    label: "Skin Stapler",
+    phonetic: "/skɪn ˈsteɪplər/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/skin-stapler.webp`,
+    topic: "first-aid-21",
+    description:
+      "A health supply or clinic concept, specifically item number 103 in the curriculum.",
+  },
+  {
+    id: "irrigation-syringe",
+    label: "Irrigation Syringe",
+    phonetic: "/ˌɪrɪˈɡeɪʃən sɪˈrɪndʒ/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/irrigation-syringe.webp`,
+    topic: "first-aid-21",
+    description:
+      "A health supply or clinic concept, specifically item number 104 in the curriculum.",
+  },
+  {
+    id: "rubbing-alcohol",
+    label: "Rubbing Alcohol",
+    phonetic: "/ˈrʌbɪŋ ˈælkəhɒl/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/rubbing-alcohol.webp`,
+    topic: "first-aid-21",
+    description:
+      "A health supply or clinic concept, specifically item number 105 in the curriculum.",
+  },
+  {
+    id: "burn-gel",
+    label: "Burn Gel",
+    phonetic: "/bɜːrn dʒɛl/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/burn-gel.webp`,
+    topic: "first-aid-22",
+    description:
+      "A health supply or clinic concept, specifically item number 106 in the curriculum.",
+  },
+  {
+    id: "iodine-solution",
+    label: "Iodine Solution",
+    phonetic: "/ˈaɪədiːn səˈluːʃən/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/iodine-solution.webp`,
+    topic: "first-aid-22",
+    description:
+      "A health supply or clinic concept, specifically item number 107 in the curriculum.",
+  },
+  {
+    id: "defibrillator",
+    label: "Defibrillator",
+    phonetic: "/dɪˈfɪbrɪleɪtər/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/defibrillator.webp`,
+    topic: "first-aid-22",
+    description:
+      "A health supply or clinic concept, specifically item number 108 in the curriculum.",
+  },
+  {
+    id: "oxygen-mask",
+    label: "Oxygen Mask",
+    phonetic: "/ˈɒksɪdʒən mɑːsk/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/oxygen-mask.webp`,
+    topic: "first-aid-22",
+    description:
+      "A health supply or clinic concept, specifically item number 109 in the curriculum.",
+  },
+  {
+    id: "oxygen-tank",
+    label: "Oxygen Tank",
+    phonetic: "/ˈɒksɪdʒən tæŋk/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/oxygen-tank.webp`,
+    topic: "first-aid-22",
+    description:
+      "A health supply or clinic concept, specifically item number 110 in the curriculum.",
+  },
+  {
+    id: "epipen",
+    label: "EpiPen",
+    phonetic: "/ˈɛpɪpɛn/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/epipen.webp`,
+    topic: "first-aid-23",
+    description:
+      "A health supply or clinic concept, specifically item number 111 in the curriculum.",
+  },
+  {
+    id: "tourniquet",
+    label: "Tourniquet",
+    phonetic: "/ˈtɜːrnɪkɪt/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/tourniquet.webp`,
+    topic: "first-aid-23",
+    description:
+      "A health supply or clinic concept, specifically item number 112 in the curriculum.",
+  },
+  {
+    id: "emergency-blanket",
+    label: "Emergency Blanket",
+    phonetic: "/ɪˈmɜːrdʒənsi ˈblæŋkɪt/",
+    cefr: "C1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/emergency-blanket.webp`,
+    topic: "first-aid-23",
+    description:
+      "A health supply or clinic concept, specifically item number 113 in the curriculum.",
+  },
+  {
+    id: "whistle",
+    label: "Whistle",
+    phonetic: "/ˈwɪsl/",
+    cefr: "B1",
+    img: `${LOCAL_WORD_IMAGES}/hospital/whistle.webp`,
+    topic: "first-aid-23",
+    description:
+      "A health supply or clinic concept, specifically item number 114 in the curriculum.",
+  },
+  {
+    id: "flashlight",
+    label: "Flashlight",
+    phonetic: "/ˈflæʃlaɪt/",
+    cefr: "B2",
+    img: `${LOCAL_WORD_IMAGES}/hospital/flashlight.webp`,
+    topic: "first-aid-23",
+    description:
+      "A health supply or clinic concept, specifically item number 115 in the curriculum.",
+  },
+];
+
+export const FIRST_AID_TOPICS: TopicCategory[] = [
+  {
+    id: "first-aid-1",
+    name: "First Aid Part 1",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-2",
+    name: "First Aid Part 2",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-3",
+    name: "First Aid Part 3",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-4",
+    name: "First Aid Part 4",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-5",
+    name: "First Aid Part 5",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-6",
+    name: "First Aid Part 6",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-7",
+    name: "First Aid Part 7",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-8",
+    name: "First Aid Part 8",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-9",
+    name: "First Aid Part 9",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-10",
+    name: "First Aid Part 10",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-11",
+    name: "First Aid Part 11",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-12",
+    name: "First Aid Part 12",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-13",
+    name: "First Aid Part 13",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-14",
+    name: "First Aid Part 14",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-15",
+    name: "First Aid Part 15",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-16",
+    name: "First Aid Part 16",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-17",
+    name: "First Aid Part 17",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-18",
+    name: "First Aid Part 18",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-19",
+    name: "First Aid Part 19",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-20",
+    name: "First Aid Part 20",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-21",
+    name: "First Aid Part 21",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-22",
+    name: "First Aid Part 22",
+    itemsCount: 5,
+  },
+  {
+    id: "first-aid-23",
+    name: "First Aid Part 23",
+    itemsCount: 5,
+  },
+];
+
+export const FIRST_AID_GROUPS: Lesson[] = [
+  {
+    id: "first-aid-1",
+    name: "First Aid Basics 1",
+    description: "Learn about Heat Stroke, Hypothermia, Tape, Antiseptic, Sling.",
+    topicId: "first-aid-1",
+    wordIds: ["heat-stroke", "hypothermia", "tape", "antiseptic", "sling"],
+    story:
+      "In this section of the first aid room, you will learn about Heat Stroke, Hypothermia, Tape, Antiseptic, Sling. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-2",
+    name: "First Aid Basics 2",
+    description: "Learn about Compress, Gloves, CPR, Wound Care, Check Pulse.",
+    topicId: "first-aid-2",
+    wordIds: ["compress", "gloves", "cpr", "wound-care", "check-pulse"],
+    story:
+      "In this section of the first aid room, you will learn about Compress, Gloves, CPR, Wound Care, Check Pulse. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-3",
+    name: "First Aid Basics 3",
+    description: "Learn about Apply Pressure, Elevate, Immobilize, Call Emergency, Monitor.",
+    topicId: "first-aid-3",
+    wordIds: ["apply-pressure", "elevate", "immobilize", "call-emergency", "monitor"],
+    story:
+      "In this section of the first aid room, you will learn about Apply Pressure, Elevate, Immobilize, Call Emergency, Monitor. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-4",
+    name: "First Aid Basics 4",
+    description: "Learn about Crutch, Splint, Neck Brace, Ice Pack, Hot Pack.",
+    topicId: "first-aid-4",
+    wordIds: ["crutch", "splint", "neck-brace", "ice-pack", "hot-pack"],
+    story:
+      "In this section of the first aid room, you will learn about Crutch, Splint, Neck Brace, Ice Pack, Hot Pack. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-5",
+    name: "First Aid Basics 5",
+    description:
+      "Learn about Stethoscope, Thermometer, Pulse Oximeter, Eye Wash Station, CPR Mask.",
+    topicId: "first-aid-5",
+    wordIds: ["stethoscope", "thermometer", "pulse-oximeter", "eye-wash-station", "cpr-mask"],
+    story:
+      "In this section of the first aid room, you will learn about Stethoscope, Thermometer, Pulse Oximeter, Eye Wash Station, CPR Mask. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-6",
+    name: "First Aid Basics 6",
+    description:
+      "Learn about AED, First Aid Manual, Blood Glucose Monitor, Blood Pressure Cuff, Penlight.",
+    topicId: "first-aid-6",
+    wordIds: [
+      "aed",
+      "first-aid-manual",
+      "blood-glucose-monitor",
+      "blood-pressure-cuff",
+      "penlight",
+    ],
+    story:
+      "In this section of the first aid room, you will learn about AED, First Aid Manual, Blood Glucose Monitor, Blood Pressure Cuff, Penlight. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-7",
+    name: "First Aid Basics 7",
+    description:
+      "Learn about Tongue Depressor, Plaster, Butterfly Strip, Wound Dressing, Saline Solution.",
+    topicId: "first-aid-7",
+    wordIds: [
+      "tongue-depressor",
+      "plaster",
+      "butterfly-strip",
+      "wound-dressing",
+      "saline-solution",
+    ],
+    story:
+      "In this section of the first aid room, you will learn about Tongue Depressor, Plaster, Butterfly Strip, Wound Dressing, Saline Solution. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-8",
+    name: "First Aid Basics 8",
+    description:
+      "Learn about Emergency Phone, Alarm Button, Inhaler, Cervical Collar, Spine Board.",
+    topicId: "first-aid-8",
+    wordIds: ["emergency-phone", "alarm-button", "inhaler", "cervical-collar", "spine-board"],
+    story:
+      "In this section of the first aid room, you will learn about Emergency Phone, Alarm Button, Inhaler, Cervical Collar, Spine Board. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-9",
+    name: "First Aid Basics 9",
+    description:
+      "Learn about Snakebite Kit, Tick Remover, Medical ID Bracelet, Examination Table, Curtain.",
+    topicId: "first-aid-9",
+    wordIds: [
+      "snakebite-kit",
+      "tick-remover",
+      "medical-id-bracelet",
+      "examination-table",
+      "curtain",
+    ],
+    story:
+      "In this section of the first aid room, you will learn about Snakebite Kit, Tick Remover, Medical ID Bracelet, Examination Table, Curtain. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-10",
+    name: "First Aid Basics 10",
+    description: "Learn about Sink, Soap Dispenser, Paper Towel, Waste Bin, Medicine Cabinet.",
+    topicId: "first-aid-10",
+    wordIds: ["sink", "soap-dispenser", "paper-towel", "waste-bin", "medicine-cabinet"],
+    story:
+      "In this section of the first aid room, you will learn about Sink, Soap Dispenser, Paper Towel, Waste Bin, Medicine Cabinet. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-11",
+    name: "First Aid Basics 11",
+    description:
+      "Learn about Wall Chart, Clock, Hand Sanitizer, Privacy Screen, Emergency Contact Card.",
+    topicId: "first-aid-11",
+    wordIds: ["wall-chart", "clock", "hand-sanitizer", "privacy-screen", "emergency-contact-card"],
+    story:
+      "In this section of the first aid room, you will learn about Wall Chart, Clock, Hand Sanitizer, Privacy Screen, Emergency Contact Card. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-12",
+    name: "First Aid Basics 12",
+    description:
+      "Learn about Incident Report Form, Poison Control Poster, CPR Poster, Fire Extinguisher, Sharps Container.",
+    topicId: "first-aid-12",
+    wordIds: [
+      "incident-report-form",
+      "poison-control-poster",
+      "cpr-poster",
+      "fire-extinguisher",
+      "sharps-container",
+    ],
+    story:
+      "In this section of the first aid room, you will learn about Incident Report Form, Poison Control Poster, CPR Poster, Fire Extinguisher, Sharps Container. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-13",
+    name: "First Aid Basics 13",
+    description: "Learn about Cut, Bruise, Burn, Sprain, Fracture.",
+    topicId: "first-aid-13",
+    wordIds: ["cut", "bruise", "burn", "sprain", "fracture"],
+    story:
+      "In this section of the first aid room, you will learn about Cut, Bruise, Burn, Sprain, Fracture. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-14",
+    name: "First Aid Basics 14",
+    description: "Learn about Nosebleed, Bee Sting, Rash, Blister, Splinter.",
+    topicId: "first-aid-14",
+    wordIds: ["nosebleed", "bee-sting", "rash", "blister", "splinter"],
+    story:
+      "In this section of the first aid room, you will learn about Nosebleed, Bee Sting, Rash, Blister, Splinter. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-15",
+    name: "First Aid Basics 15",
+    description: "Learn about Concussion, Dislocation, Fainting, Choking, Allergic Reaction.",
+    topicId: "first-aid-15",
+    wordIds: ["concussion", "dislocation", "fainting", "choking", "allergic-reaction"],
+    story:
+      "In this section of the first aid room, you will learn about Concussion, Dislocation, Fainting, Choking, Allergic Reaction. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-16",
+    name: "First Aid Basics 16",
+    description: "Learn about First Aid Kit, Bandage, Gauze, Adhesive Tape, Antiseptic Wipe.",
+    topicId: "first-aid-16",
+    wordIds: ["first-aid-kit", "bandage", "gauze", "adhesive-tape", "antiseptic-wipe"],
+    story:
+      "In this section of the first aid room, you will learn about First Aid Kit, Bandage, Gauze, Adhesive Tape, Antiseptic Wipe. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-17",
+    name: "First Aid Basics 17",
+    description: "Learn about Scissors, Tweezers, Safety Pin, Elastic Bandage, Triangular Bandage.",
+    topicId: "first-aid-17",
+    wordIds: ["scissors", "tweezers", "safety-pin", "elastic-bandage", "triangular-bandage"],
+    story:
+      "In this section of the first aid room, you will learn about Scissors, Tweezers, Safety Pin, Elastic Bandage, Triangular Bandage. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-18",
+    name: "First Aid Basics 18",
+    description: "Learn about Gauze Pad, Burn Cream, Cold Pack, Heat Pack, Finger Splint.",
+    topicId: "first-aid-18",
+    wordIds: ["gauze-pad", "burn-cream", "cold-pack", "heat-pack", "finger-splint"],
+    story:
+      "In this section of the first aid room, you will learn about Gauze Pad, Burn Cream, Cold Pack, Heat Pack, Finger Splint. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-19",
+    name: "First Aid Basics 19",
+    description:
+      "Learn about Medical Tape, Antibiotic Ointment, Hydrocortisone Cream, Stretcher, Wheelchair.",
+    topicId: "first-aid-19",
+    wordIds: [
+      "medical-tape",
+      "antibiotic-ointment",
+      "hydrocortisone-cream",
+      "stretcher",
+      "wheelchair",
+    ],
+    story:
+      "In this section of the first aid room, you will learn about Medical Tape, Antibiotic Ointment, Hydrocortisone Cream, Stretcher, Wheelchair. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-20",
+    name: "First Aid Basics 20",
+    description: "Learn about Hydrogen Peroxide, Iodine, Cotton Swab, Sterile Gloves, Syringe.",
+    topicId: "first-aid-20",
+    wordIds: ["hydrogen-peroxide", "iodine", "cotton-swab", "sterile-gloves", "syringe"],
+    story:
+      "In this section of the first aid room, you will learn about Hydrogen Peroxide, Iodine, Cotton Swab, Sterile Gloves, Syringe. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-21",
+    name: "First Aid Basics 21",
+    description:
+      "Learn about Suture Kit, Wound Closure Strip, Skin Stapler, Irrigation Syringe, Rubbing Alcohol.",
+    topicId: "first-aid-21",
+    wordIds: [
+      "suture-kit",
+      "wound-closure-strip",
+      "skin-stapler",
+      "irrigation-syringe",
+      "rubbing-alcohol",
+    ],
+    story:
+      "In this section of the first aid room, you will learn about Suture Kit, Wound Closure Strip, Skin Stapler, Irrigation Syringe, Rubbing Alcohol. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-22",
+    name: "First Aid Basics 22",
+    description: "Learn about Burn Gel, Iodine Solution, Defibrillator, Oxygen Mask, Oxygen Tank.",
+    topicId: "first-aid-22",
+    wordIds: ["burn-gel", "iodine-solution", "defibrillator", "oxygen-mask", "oxygen-tank"],
+    story:
+      "In this section of the first aid room, you will learn about Burn Gel, Iodine Solution, Defibrillator, Oxygen Mask, Oxygen Tank. These are essential items for medical emergencies and patient care.",
+  },
+  {
+    id: "first-aid-23",
+    name: "First Aid Basics 23",
+    description: "Learn about EpiPen, Tourniquet, Emergency Blanket, Whistle, Flashlight.",
+    topicId: "first-aid-23",
+    wordIds: ["epipen", "tourniquet", "emergency-blanket", "whistle", "flashlight"],
+    story:
+      "In this section of the first aid room, you will learn about EpiPen, Tourniquet, Emergency Blanket, Whistle, Flashlight. These are essential items for medical emergencies and patient care.",
+  },
+];
+
 export const COURSE_UNITS: Record<string, CourseUnit> = {
   bedroom: {
     id: "bedroom",
@@ -13041,6 +14559,17 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
     groups: HOSPITAL_GROUPS,
     vocabulary: HOSPITAL_VOCABULARY,
   },
+  "first-aid-room": {
+    id: "first-aid-room",
+    name: "The First Aid Room",
+    description:
+      "Learn essential vocabulary for first aid supplies, emergency items, wound care, and medical procedures.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/hospital-hero.webp`,
+    topics: FIRST_AID_TOPICS,
+    groups: FIRST_AID_GROUPS,
+    vocabulary: FIRST_AID_VOCABULARY,
+  },
+
   airport: {
     id: "airport",
     name: "The Airport",
