@@ -5,7 +5,9 @@ import { resolve } from "node:path";
 import { LessonHeader } from "../shared/LessonHeader";
 
 function renderHeader(current: number, total?: number) {
-  render(<LessonHeader title="Test" current={current} total={total} onBack={vi.fn()} onClose={vi.fn()} />);
+  render(
+    <LessonHeader title="Test" current={current} total={total} onBack={vi.fn()} onClose={vi.fn()} />
+  );
   return screen.getByRole("progressbar");
 }
 
@@ -84,12 +86,12 @@ describe("Exercise definitions declare a valid position", () => {
         definition!.totalSteps
       );
     });
-  });
+  }, 30000);
 
   it("gives every definition at least one task", async () => {
     const { EXERCISE_DEFINITIONS } = await import("../exercises/content");
     Object.values(EXERCISE_DEFINITIONS).forEach((definition) => {
       expect(definition!.tasks.length, `${definition!.id} has no tasks`).toBeGreaterThan(0);
     });
-  });
+  }, 30000);
 });

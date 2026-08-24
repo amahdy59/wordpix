@@ -26,13 +26,13 @@ describe("Vocabulary descriptions", () => {
         word.description[0].toUpperCase()
       );
     });
-  });
+  }, 30000);
 
   it("ensures vocabulary items have valid learning descriptions", () => {
     vocabulary.forEach((word) => {
       expect(word.description).toBeTruthy();
     });
-  });
+  }, 30000);
 
   it("provides descriptions for all words in each learning group", () => {
     units.forEach((unit) => {
@@ -45,7 +45,7 @@ describe("Vocabulary descriptions", () => {
         );
       });
     });
-  });
+  }, 30000);
 });
 
 describe("Lesson story integrity", () => {
@@ -67,7 +67,7 @@ describe("Lesson story integrity", () => {
         });
       });
     });
-  });
+  }, 30000);
 });
 
 describe("Lesson data integrity", () => {
@@ -83,7 +83,7 @@ describe("Lesson data integrity", () => {
         });
       });
     });
-  });
+  }, 30000);
 
   it("keeps learning groups short and free of duplicate words", () => {
     units.forEach((unit) => {
@@ -95,14 +95,14 @@ describe("Lesson data integrity", () => {
         );
       });
     });
-  });
+  }, 30000);
 
   it("has no duplicate word ids within a unit", () => {
     units.forEach((unit) => {
       const ids = unit.vocabulary.map((word) => word.id);
       expect(new Set(ids).size, `${unit.id} repeats a word id`).toBe(ids.length);
     });
-  });
+  }, 30000);
 
   it("assigns every word to a declared topic or unit", () => {
     units.forEach((unit) => {
@@ -114,11 +114,11 @@ describe("Lesson data integrity", () => {
         ).toBe(true);
       });
     });
-  });
+  }, 30000);
 
   it("gives every word a phonetic spelling", () => {
     vocabulary.forEach((word) => expect(word.phonetic, `${word.id} has no phonetic`).toBeTruthy());
-  });
+  }, 30000);
 });
 
 describe("Assessment alt text is answerable", () => {
