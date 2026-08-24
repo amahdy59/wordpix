@@ -52,7 +52,15 @@ export function calculateSM2State(
   now: Date = new Date()
 ): WordLearningState {
   const q = Math.max(0, Math.min(5, Math.round(quality)));
-  let { intervalDays, easeFactor, currentStreak, lapses, correctRecalls, incorrectRecalls, exposures } = state;
+  let {
+    intervalDays,
+    easeFactor,
+    currentStreak,
+    lapses,
+    correctRecalls,
+    incorrectRecalls,
+    exposures,
+  } = state;
 
   exposures += 1;
 
@@ -94,4 +102,30 @@ export function calculateSM2State(
     easeFactor: Number(easeFactor.toFixed(2)),
     mastery,
   };
+}
+
+/**
+ * Filters and prioritizes words due for spaced-repetition retention review.
+ * Prioritizes:
+ * 1. Words with lapses (incorrect attempts)
+ * 2. Words whose scheduled review date has passed (earliest first)
+ * 3. Words with lower ease factor (harder words)
+ */
+export function getDueWordsForReview(
+  wordMemory: Record<string, WordLearningState>,
+  now: Date = new Date()
+): WordLearningState[] {
+  const nowIso = now.toISOString();
+  return Object.values(wordMemory)
+    .filter((state) => {
+      if (!state.nextReviewAt) return state.mastery === "learning" || state.mastery === "familiar";
+      return state.nextReviewAt <= nowIso;
+    })
+    .sort((a, b) => {
+      if (a.lapses !== b.lapses) return b.lapses - a.lapses;
+      const aTime = a.nextReviewAt ? new Date(a.nextReviewAt).getTime() : 0;
+      const bTime = b.nextReviewAt ? new Date(b.nextReviewAt).getTime() : 0;
+      if (aTime !== bTime) return aTime - bTime;
+      return a.easeFactor - b.easeFactor;
+    });
 }

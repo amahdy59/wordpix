@@ -1,5 +1,6 @@
 import { memo, useMemo } from "react";
-import { ArrowRight, RotateCcw, WifiOff } from "lucide-react";
+import { ArrowRight, RotateCcw, WifiOff, CheckCircle2 } from "lucide-react";
+import { getDueWordsForReview, type WordLearningState } from "../../features/gamification/sm2";
 import { motion } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
@@ -49,6 +50,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
     Math.round((activeLesson.wordIds.length * SECONDS_PER_WORD) / 60)
   );
   const activeUnit = useMemo(() => resolveUnitForLesson(activeLesson.id), [activeLesson.id]);
+  const dueWords = useMemo(() => getDueWordsForReview(progress.wordMemory), [progress.wordMemory]);
 
   const offline = useOfflineReadiness(activeUnit.id);
 
@@ -159,21 +161,48 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2 text-foreground font-sans font-bold text-sm">
                   <RotateCcw className="size-4 text-primary" />
-                  <span>Smart Review</span>
+                  <span>Spaced Repetition Review</span>
                 </div>
+                {dueWords.length > 0 ? (
+                  <Badge variant="amber" size="sm">
+                    {num(dueWords.length)} Due Today
+                  </Badge>
+                ) : (
+                  <Badge variant="green" size="sm">
+                    <CheckCircle2 className="size-3.5" />
+                    <span>All Caught Up</span>
+                  </Badge>
+                )}
               </div>
               <p className="font-sans text-muted-foreground text-xs leading-relaxed mt-2">
-                Review words at the right time to help them stay in memory.
+                {dueWords.length > 0
+                  ? `You have ${num(dueWords.length)} vocabulary items scheduled for retention practice based on your forgetting curve.`
+                  : "Excellent memory retention! You have reviewed all active vocabulary items for today."}
               </p>
               <motion.button
                 whileHover={{ scale: 1.015 }}
                 whileTap={{ scale: 0.98 }}
                 type="button"
-                onClick={() => dispatch({ type: "GO", to: "practice" })}
-                className="w-full bg-secondary hover:bg-primary/10 text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-sm min-h-[44px] transition-colors flex items-center justify-center gap-2 mt-4"
+                onClick={() => {
+                  if (dueWords.length > 0) {
+                    dispatch({
+                      type: "START_LESSON",
+                      lessonId: "spaced-review",
+                      mode: "SMART_REVIEW",
+                      wordQueue: dueWords.slice(0, 15).map((w: WordLearningState) => w.wordId),
+                    });
+                  } else {
+                    dispatch({ type: "GO", to: "practice" });
+                  }
+                }}
+                className="w-full bg-secondary hover:bg-primary/10 text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-sm min-h-[44px] transition-colors flex items-center justify-center gap-2 mt-4 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue"
               >
-                <span>{t("dashboard.startReview")}</span>
-                <ArrowRight className="size-4" />
+                <span>
+                  {dueWords.length > 0
+                    ? `Review ${num(Math.min(15, dueWords.length))} Words Now`
+                    : t("dashboard.startReview")}
+                </span>
+                <ArrowRight className="size-4 rtl:rotate-180" />
               </motion.button>
             </Card>
           </Section>
