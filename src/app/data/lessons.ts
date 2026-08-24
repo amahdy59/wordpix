@@ -6926,8 +6926,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     phonetic: "ˈkrɛdɪt kɑːrd",
     img: `${LOCAL_WORD_IMAGES}/market/credit-card.webp`,
     topic: "shopping-actions",
-    description:
-      "A small plastic payment credential with an embedded chip for cashless purchasing.",
+    description: "A plastic payment badge allowing holders to borrow funds for purchases.",
   },
   {
     id: "cash",
@@ -11341,7 +11340,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     phonetic: "\u02c8we\u026at\u026a\u014b ru\u02d0m",
     img: `${LOCAL_WORD_IMAGES}/hospital/waiting-room.webp`,
     topic: "hospital-rooms",
-    description: "A comfortable seating area where visitors await consultations.",
+    description: "A heated indoor seating lounge for travelers awaiting their scheduled departure.",
   },
   {
     id: "operating-room",
@@ -11809,6 +11808,998 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
   },
 ];
 
+// --- TOPICS & GROUPS FOR NEW TRAVEL & PUBLIC SERVICES UNITS ---
+
+export const AIRPORT_TOPICS: TopicCategory[] = [
+  { id: "airport-1", name: "Departures", itemsCount: 4 },
+  { id: "airport-2", name: "Flight & Arrival", itemsCount: 4 },
+  { id: "airport-3", name: "Services", itemsCount: 4 },
+];
+
+export const AIRPORT_GROUPS: Lesson[] = [
+  {
+    id: "airport-group-1",
+    name: "Terminal & Flights",
+    topicId: "airport-1",
+    wordIds: [
+      "airport-terminal",
+      "boarding-pass",
+      "luggage-cart",
+      "security-check",
+      "departure-gate",
+      "flight-attendant",
+      "runway",
+      "passport-control",
+      "baggage-claim",
+      "customs",
+      "duty-free",
+      "departure-board",
+    ],
+    description: "Navigate flight departures, luggage, security, and arrivals.",
+    story:
+      "At the airport terminal, we got our boarding pass, pushed the luggage cart through the security check to the departure gate, met the flight attendant, saw the runway, passed passport control, picked up bags at baggage claim, cleared customs, shopped at duty free, and watched the departure board.",
+  },
+];
+
+export const TRAIN_STATION_TOPICS: TopicCategory[] = [
+  { id: "train-station-1", name: "Platforms", itemsCount: 4 },
+  { id: "train-station-2", name: "On the Train", itemsCount: 4 },
+  { id: "train-station-3", name: "Station Areas", itemsCount: 4 },
+];
+
+export const TRAIN_STATION_GROUPS: Lesson[] = [
+  {
+    id: "train-station-group-1",
+    name: "Platforms & Rails",
+    topicId: "train-station-1",
+    wordIds: [
+      "train-platform",
+      "ticket-machine",
+      "train-conductor",
+      "locomotive",
+      "railway-track",
+      "passenger-car",
+      "commuter-train",
+      "timetable",
+      "station-clock",
+      "waiting-room",
+      "ticket-barrier",
+      "express-train",
+    ],
+    description: "Explore passenger platforms, ticketing, locomotives, and rail lines.",
+    story:
+      "At the train platform, I used the ticket machine, showed the train conductor our pass for the locomotive, crossed near the railway track, sat in the passenger car of the commuter train, checked the timetable and station clock in the waiting room, walked past the ticket barrier, and boarded the express train.",
+  },
+];
+
+export const HOTEL_TOPICS: TopicCategory[] = [
+  { id: "hotel-1", name: "Check-in", itemsCount: 4 },
+  { id: "hotel-2", name: "Room Details", itemsCount: 4 },
+  { id: "hotel-3", name: "Facilities", itemsCount: 4 },
+];
+
+export const HOTEL_GROUPS: Lesson[] = [
+  {
+    id: "hotel-group-1",
+    name: "Reception & Suites",
+    topicId: "hotel-1",
+    wordIds: [
+      "hotel-reception",
+      "room-key",
+      "bellboy",
+      "hotel-lobby",
+      "room-service",
+      "housekeeping",
+      "hotel-safe",
+      "balcony-view",
+      "elevator",
+      "key-card",
+      "doorman",
+      "valet-parking",
+    ],
+    description: "Learn vocabulary for checking into hotels and suites.",
+    story:
+      "At hotel reception, we received our room key from the bellboy in the hotel lobby, ordered room service, thanked housekeeping, locked the hotel safe, admired the balcony view, took the elevator with our key card, greeted the doorman, and requested valet parking.",
+  },
+];
+
+export const POST_OFFICE_TOPICS: TopicCategory[] = [
+  { id: "post-office-1", name: "Letters & Mail", itemsCount: 4 },
+  { id: "post-office-2", name: "Packages & Shipping", itemsCount: 4 },
+  { id: "post-office-3", name: "Delivery Logistics", itemsCount: 4 },
+];
+
+export const POST_OFFICE_GROUPS: Lesson[] = [
+  {
+    id: "post-office-group-1",
+    name: "Mail & Packages",
+    topicId: "post-office-1",
+    wordIds: [
+      "post-office",
+      "postage-stamp",
+      "envelope",
+      "mailbox",
+      "postal-worker",
+      "parcel",
+      "package-scale",
+      "tracking-number",
+      "post-card",
+      "delivery-truck",
+      "airmail",
+      "sorting-facility",
+    ],
+    description: "Learn essential vocabulary for shipping letters and parcels.",
+    story:
+      "Inside the post office, we bought a postage stamp for the envelope, dropped mail in the mailbox, spoke with the postal worker, weighed the parcel on the package scale, checked the tracking number on our postcard, saw the delivery truck bring airmail, and toured the sorting facility.",
+  },
+];
+
+export const BANK_TOPICS: TopicCategory[] = [
+  { id: "bank-1", name: "Banking Hall & Cash", itemsCount: 4 },
+  { id: "bank-2", name: "Accounts & Vault", itemsCount: 4 },
+  { id: "bank-3", name: "Services & Savings", itemsCount: 4 },
+];
+
+export const BANK_GROUPS: Lesson[] = [
+  {
+    id: "bank-group-1",
+    name: "Banking & Savings",
+    topicId: "bank-1",
+    wordIds: [
+      "bank-branch",
+      "atm",
+      "teller-counter",
+      "credit-card",
+      "banknote",
+      "bank-vault",
+      "checking-account",
+      "deposit-slip",
+      "bank-statement",
+      "coin-jar",
+      "signature-pad",
+      "loan-officer",
+    ],
+    description: "Master transactions, accounts, cash withdrawals, and banking.",
+    story:
+      "At the bank branch, we visited the atm and teller counter, swiped our credit card, counted each banknote near the bank vault, opened a checking account with a deposit slip, reviewed the bank statement, emptied the coin jar, signed on the signature pad, and consulted the loan officer.",
+  },
+];
+
+export const MUSEUM_TOPICS: TopicCategory[] = [
+  { id: "museum-1", name: "Art & Sculpture", itemsCount: 4 },
+  { id: "museum-2", name: "Exhibits & History", itemsCount: 4 },
+  { id: "museum-3", name: "Visitor Experience", itemsCount: 4 },
+];
+
+export const MUSEUM_GROUPS: Lesson[] = [
+  {
+    id: "museum-group-1",
+    name: "Art & Archaeology",
+    topicId: "museum-1",
+    wordIds: [
+      "art-museum",
+      "ancient-artifact",
+      "oil-painting",
+      "marble-sculpture",
+      "museum-guide",
+      "exhibit-hall",
+      "glass-showcase",
+      "dinosaur-fossil",
+      "admission-ticket",
+      "audio-guide",
+      "antique-pottery",
+      "historical-plaque",
+    ],
+    description: "Explore world history, prehistoric fossils, and art.",
+    story:
+      "At the art museum, we saw an ancient artifact, an oil painting, and a marble sculpture, while the museum guide led us across the exhibit hall past a glass showcase and a dinosaur fossil, checking our admission ticket and audio guide near the antique pottery and historical plaque.",
+  },
+];
+
+export const REVISION_5_TOPICS: TopicCategory[] = [
+  { id: "revision-5-1", name: "Travel & Transit", itemsCount: 4 },
+  { id: "revision-5-2", name: "Stay & Public Services", itemsCount: 4 },
+  { id: "revision-5-3", name: "Finance & Culture", itemsCount: 4 },
+];
+
+export const REVISION_5_GROUPS: Lesson[] = [
+  {
+    id: "revision-5-group-1",
+    name: "Travel & Civic Synthesis",
+    topicId: "revision-5-1",
+    wordIds: [
+      "airport-terminal",
+      "boarding-pass",
+      "train-platform",
+      "express-train",
+      "hotel-reception",
+      "room-key",
+      "post-office",
+      "parcel",
+      "bank-branch",
+      "atm",
+      "art-museum",
+      "oil-painting",
+    ],
+    description: "Master comprehensive vocabulary synthesizing travel hubs and civic spaces.",
+    story:
+      "We visited the airport terminal with our boarding pass, waited at the train platform for the express train, checked in at hotel reception with our room key, stopped by the post office to ship a parcel, went to the bank branch and atm, and explored the art museum to view an oil painting.",
+  },
+];
+
+export const AIRPORT_VOCABULARY: VocabularyItem[] = [
+  {
+    id: "airport-terminal",
+    label: "Airport Terminal",
+    phonetic: "ˈeə.pɔːt ˈtɜː.mɪ.nəl",
+    img: `${LOCAL_WORD_IMAGES}/airport/airport-terminal.webp`,
+    topic: "airport-1",
+    description: "A major transport hub building where travelers board commercial planes.",
+  },
+  {
+    id: "boarding-pass",
+    label: "Boarding Pass",
+    phonetic: "ˈbɔː.dɪŋ pɑːs",
+    img: `${LOCAL_WORD_IMAGES}/airport/boarding-pass.webp`,
+    topic: "airport-1",
+    description: "An official travel document giving a traveler permission to enter the aircraft.",
+  },
+  {
+    id: "luggage-cart",
+    label: "Luggage Cart",
+    phonetic: "ˈlʌɡ.ɪdʒ kɑːt",
+    img: `${LOCAL_WORD_IMAGES}/airport/luggage-cart.webp`,
+    topic: "airport-1",
+    description: "A wheeled metal trolley used by travelers to transport heavy suitcases.",
+  },
+  {
+    id: "security-check",
+    label: "Security Check",
+    phonetic: "sɪˈkjʊə.rə.ti tʃek",
+    img: `${LOCAL_WORD_IMAGES}/airport/security-check.webp`,
+    topic: "airport-1",
+    description: "A mandatory screening station where luggage and persons are scanned for safety.",
+  },
+  {
+    id: "departure-gate",
+    label: "Departure Gate",
+    phonetic: "dɪˈpɑː.tʃər ɡeɪt",
+    img: `${LOCAL_WORD_IMAGES}/airport/departure-gate.webp`,
+    topic: "airport-2",
+    description: "The numbered portal leading directly to the airplane boarding bridge.",
+  },
+  {
+    id: "flight-attendant",
+    label: "Flight Attendant",
+    phonetic: "flaɪt əˈten.dənt",
+    img: `${LOCAL_WORD_IMAGES}/airport/flight-attendant.webp`,
+    topic: "airport-2",
+    description: "A cabin crew member responsible for traveler safety and inflight comfort.",
+  },
+  {
+    id: "runway",
+    label: "Runway",
+    phonetic: "ˈrʌn.weɪ",
+    img: `${LOCAL_WORD_IMAGES}/airport/runway.webp`,
+    topic: "airport-2",
+    description: "A long paved strip of asphalt designed for takeoffs and landings of aircraft.",
+  },
+  {
+    id: "passport-control",
+    label: "Passport Control",
+    phonetic: "ˈpɑːs.pɔːt kənˈtrəʊl",
+    img: `${LOCAL_WORD_IMAGES}/airport/passport-control.webp`,
+    topic: "airport-2",
+    description: "The border inspection desk where official identification and visas are verified.",
+  },
+  {
+    id: "baggage-claim",
+    label: "Baggage Claim",
+    phonetic: "ˈbæɡ.ɪdʒ kleɪm",
+    img: `${LOCAL_WORD_IMAGES}/airport/baggage-claim.webp`,
+    topic: "airport-3",
+    description:
+      "The designated arrival area featuring revolving carousels for luggage collection.",
+  },
+  {
+    id: "customs",
+    label: "Customs",
+    phonetic: "ˈkʌs.təmz",
+    img: `${LOCAL_WORD_IMAGES}/airport/customs.webp`,
+    topic: "airport-3",
+    description: "Government authority checking imported goods and declaring taxable merchandise.",
+  },
+  {
+    id: "duty-free",
+    label: "Duty Free",
+    phonetic: "ˌdʒuː.ti ˈfriː",
+    img: `${LOCAL_WORD_IMAGES}/airport/duty-free.webp`,
+    topic: "airport-3",
+    description: "Retail outlets inside international terminals exempt from national sales tax.",
+  },
+  {
+    id: "departure-board",
+    label: "Departure Board",
+    phonetic: "dɪˈpɑː.tʃər bɔːd",
+    img: `${LOCAL_WORD_IMAGES}/airport/departure-board.webp`,
+    topic: "airport-3",
+    description: "A large electronic display panel showing flight status, portals, and delays.",
+  },
+];
+export const TRAIN_STATION_VOCABULARY: VocabularyItem[] = [
+  {
+    id: "train-platform",
+    label: "Train Platform",
+    phonetic: "treɪn ˈplæt.fɔːm",
+    img: `${LOCAL_WORD_IMAGES}/train-station/train-platform.webp`,
+    topic: "train-station-1",
+    description: "A raised concrete area beside steel tracks where commuters board coaches.",
+  },
+  {
+    id: "ticket-machine",
+    label: "Ticket Machine",
+    phonetic: "ˈtɪk.ɪt məˈʃiːn",
+    img: `${LOCAL_WORD_IMAGES}/train-station/ticket-machine.webp`,
+    topic: "train-station-1",
+    description: "An automated electronic kiosk that dispenses travel permits and receipts.",
+  },
+  {
+    id: "train-conductor",
+    label: "Train Conductor",
+    phonetic: "treɪn kənˈdʌk.tər",
+    img: `${LOCAL_WORD_IMAGES}/train-station/train-conductor.webp`,
+    topic: "train-station-1",
+    description: "The railway official who oversees onboard operations and validates permits.",
+  },
+  {
+    id: "locomotive",
+    label: "Locomotive",
+    phonetic: "ˌləʊ.kəˈməʊ.tɪv",
+    img: `${LOCAL_WORD_IMAGES}/train-station/locomotive.webp`,
+    topic: "train-station-1",
+    description: "The powerful motorized front rail engine that pulls coaches along steel tracks.",
+  },
+  {
+    id: "railway-track",
+    label: "Railway Track",
+    phonetic: "ˈreɪl.weɪ træk",
+    img: `${LOCAL_WORD_IMAGES}/train-station/railway-track.webp`,
+    topic: "train-station-2",
+    description: "Parallel steel lines laid on wooden ties over which coaches run smoothly.",
+  },
+  {
+    id: "passenger-car",
+    label: "Passenger Car",
+    phonetic: "ˈpæs.ɪn.dʒər kɑːr",
+    img: `${LOCAL_WORD_IMAGES}/train-station/passenger-car.webp`,
+    topic: "train-station-2",
+    description: "A railway coach fitted with traveler seats, large windows, and overhead racks.",
+  },
+  {
+    id: "commuter-train",
+    label: "Commuter Train",
+    phonetic: "kəˈmjuː.tər treɪn",
+    img: `${LOCAL_WORD_IMAGES}/train-station/commuter-train.webp`,
+    topic: "train-station-2",
+    description:
+      "A suburban rail transit service operating on frequent daily schedules for workers.",
+  },
+  {
+    id: "timetable",
+    label: "Timetable",
+    phonetic: "ˈtaɪmˌteɪ.bəl",
+    img: `${LOCAL_WORD_IMAGES}/train-station/timetable.webp`,
+    topic: "train-station-2",
+    description:
+      "A published schedule detailing arrival and departure times of transport services.",
+  },
+  {
+    id: "station-clock",
+    label: "Station Clock",
+    phonetic: "ˈsteɪ.ʃən klɒk",
+    img: `${LOCAL_WORD_IMAGES}/train-station/station-clock.webp`,
+    topic: "train-station-3",
+    description: "A prominent timepiece installed high in a railway terminal concourse.",
+  },
+  {
+    id: "waiting-room",
+    label: "Waiting Room",
+    phonetic: "ˈweɪ.tɪŋ ruːm",
+    img: `${LOCAL_WORD_IMAGES}/train-station/waiting-room.webp`,
+    topic: "train-station-3",
+    description: "A heated indoor seating lounge for travelers awaiting their scheduled departure.",
+  },
+  {
+    id: "ticket-barrier",
+    label: "Ticket Barrier",
+    phonetic: "ˈtɪk.ɪt ˈbær.i.ər",
+    img: `${LOCAL_WORD_IMAGES}/train-station/ticket-barrier.webp`,
+    topic: "train-station-3",
+    description:
+      "An automated turnstile gate that opens only when a valid travel permit is scanned.",
+  },
+  {
+    id: "express-train",
+    label: "Express Train",
+    phonetic: "ɪkˈspres treɪn",
+    img: `${LOCAL_WORD_IMAGES}/train-station/express-train.webp`,
+    topic: "train-station-3",
+    description: "A high-speed non-stop rail transit line connecting major metropolitan cities.",
+  },
+];
+export const HOTEL_VOCABULARY: VocabularyItem[] = [
+  {
+    id: "hotel-reception",
+    label: "Hotel Reception",
+    phonetic: "həʊˈtel rɪˈsep.ʃən",
+    img: `${LOCAL_WORD_IMAGES}/hotel/hotel-reception.webp`,
+    topic: "hotel-1",
+    description: "The main front desk where lodging guests register and receive entrance badges.",
+  },
+  {
+    id: "room-key",
+    label: "Room Key",
+    phonetic: "ruːm kiː",
+    img: `${LOCAL_WORD_IMAGES}/hotel/room-key.webp`,
+    topic: "hotel-1",
+    description: "A coded plastic card or metallic tool that unlocks a guest suite door.",
+  },
+  {
+    id: "bellboy",
+    label: "Bellboy",
+    phonetic: "ˈbel.bɔɪ",
+    img: `${LOCAL_WORD_IMAGES}/hotel/bellboy.webp`,
+    topic: "hotel-1",
+    description: "A lodging staff member who assists guests with luggage and suite delivery.",
+  },
+  {
+    id: "hotel-lobby",
+    label: "Hotel Lobby",
+    phonetic: "həʊˈtel ˈlɒb.i",
+    img: `${LOCAL_WORD_IMAGES}/hotel/hotel-lobby.webp`,
+    topic: "hotel-1",
+    description: "A spacious, elegant entrance foyer with plush seating for lodging visitors.",
+  },
+  {
+    id: "room-service",
+    label: "Room Service",
+    phonetic: "ruːm ˈsɜː.vɪs",
+    img: `${LOCAL_WORD_IMAGES}/hotel/room-service.webp`,
+    topic: "hotel-2",
+    description:
+      "Lodging amenity delivering food, hot beverages, and meals directly to guest suites.",
+  },
+  {
+    id: "housekeeping",
+    label: "Housekeeping",
+    phonetic: "ˈhaʊsˌkiː.pɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/hotel/housekeeping.webp`,
+    topic: "hotel-2",
+    description:
+      "The department responsible for cleaning guest suites and replenishing fresh linens.",
+  },
+  {
+    id: "hotel-safe",
+    label: "Hotel Safe",
+    phonetic: "həʊˈtel seɪf",
+    img: `${LOCAL_WORD_IMAGES}/hotel/hotel-safe.webp`,
+    topic: "hotel-2",
+    description: "A reinforced electronic lockbox in a guest suite for securing valuables.",
+  },
+  {
+    id: "balcony-view",
+    label: "Balcony View",
+    phonetic: "ˈbæl.kə.ni vjuː",
+    img: `${LOCAL_WORD_IMAGES}/hotel/balcony-view.webp`,
+    topic: "hotel-2",
+    description: "An outdoor elevated terrace perspective overlooking scenic landscapes.",
+  },
+  {
+    id: "elevator",
+    label: "Elevator",
+    phonetic: "ˈel.ɪ.veɪ.tər",
+    img: `${LOCAL_WORD_IMAGES}/hotel/elevator.webp`,
+    topic: "hotel-3",
+    description: "A vertical transport cabin carrying people between building storeys.",
+  },
+  {
+    id: "key-card",
+    label: "Key Card",
+    phonetic: "kiː kɑːd",
+    img: `${LOCAL_WORD_IMAGES}/hotel/key-card.webp`,
+    topic: "hotel-3",
+    description: "A flat contactless electronic badge granting access through secure doors.",
+  },
+  {
+    id: "doorman",
+    label: "Doorman",
+    phonetic: "ˈdɔː.mən",
+    img: `${LOCAL_WORD_IMAGES}/hotel/doorman.webp`,
+    topic: "hotel-3",
+    description: "A uniformed hospitality host greeting guests and hailing taxis at the entrance.",
+  },
+  {
+    id: "valet-parking",
+    label: "Valet Parking",
+    phonetic: "ˈvæl.eɪ ˈpɑː.kɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/hotel/valet-parking.webp`,
+    topic: "hotel-3",
+    description: "A premium service where an attendant parks and retrieves guest vehicles.",
+  },
+];
+export const POST_OFFICE_VOCABULARY: VocabularyItem[] = [
+  {
+    id: "post-office",
+    label: "Post Office",
+    phonetic: "pəʊst ˈɒf.ɪs",
+    img: `${LOCAL_WORD_IMAGES}/post-office/post-office.webp`,
+    topic: "post-office-1",
+    description: "A public facility where letters are processed and mailing supplies are sold.",
+  },
+  {
+    id: "postage-stamp",
+    label: "Postage Stamp",
+    phonetic: "ˈpəʊ.stɪdʒ stæmp",
+    img: `${LOCAL_WORD_IMAGES}/post-office/postage-stamp.webp`,
+    topic: "post-office-1",
+    description:
+      "An adhesive paper sticker affixed to letters showing prepayment of delivery fees.",
+  },
+  {
+    id: "envelope",
+    label: "Envelope",
+    phonetic: "ˈen.və.ləʊp",
+    img: `${LOCAL_WORD_IMAGES}/post-office/envelope.webp`,
+    topic: "post-office-1",
+    description: "A flat paper wrapper used to enclose and protect letters during transit.",
+  },
+  {
+    id: "mailbox",
+    label: "Mailbox",
+    phonetic: "ˈmeɪl.bɒks",
+    img: `${LOCAL_WORD_IMAGES}/post-office/mailbox.webp`,
+    topic: "post-office-1",
+    description:
+      "A public or residential metal container where letters are deposited for collection.",
+  },
+  {
+    id: "postal-worker",
+    label: "Postal Worker",
+    phonetic: "ˈpəʊ.stəl ˈwɜː.kər",
+    img: `${LOCAL_WORD_IMAGES}/post-office/postal-worker.webp`,
+    topic: "post-office-2",
+    description: "An employee who sorts, processes, or delivers letters and packages to addresses.",
+  },
+  {
+    id: "parcel",
+    label: "Parcel",
+    phonetic: "ˈpɑː.səl",
+    img: `${LOCAL_WORD_IMAGES}/post-office/parcel.webp`,
+    topic: "post-office-2",
+    description: "A wrapped cardboard box sent through delivery and courier systems.",
+  },
+  {
+    id: "package-scale",
+    label: "Package Scale",
+    phonetic: "ˈpæk.ɪdʒ skeɪl",
+    img: `${LOCAL_WORD_IMAGES}/post-office/package-scale.webp`,
+    topic: "post-office-2",
+    description:
+      "A weighing apparatus used at service counters to calculate accurate shipping costs.",
+  },
+  {
+    id: "tracking-number",
+    label: "Tracking Number",
+    phonetic: "ˈtræk.ɪŋ ˈnʌm.bər",
+    img: `${LOCAL_WORD_IMAGES}/post-office/tracking-number.webp`,
+    topic: "post-office-2",
+    description: "A unique code assigned to a shipment to monitor its delivery progress online.",
+  },
+  {
+    id: "post-card",
+    label: "Postcard",
+    phonetic: "ˈpəʊst.kɑːd",
+    img: `${LOCAL_WORD_IMAGES}/post-office/post-card.webp`,
+    topic: "post-office-3",
+    description: "A scenic souvenir card with a picture on one side sent through the mail.",
+  },
+  {
+    id: "delivery-truck",
+    label: "Delivery Truck",
+    phonetic: "dɪˈlɪv.ər.i trʌk",
+    img: `${LOCAL_WORD_IMAGES}/post-office/delivery-truck.webp`,
+    topic: "post-office-3",
+    description: "A commercial motor vehicle used by couriers to transport boxes to homes.",
+  },
+  {
+    id: "airmail",
+    label: "Airmail",
+    phonetic: "ˈeə.meɪl",
+    img: `${LOCAL_WORD_IMAGES}/post-office/airmail.webp`,
+    topic: "post-office-3",
+    description: "The system of transporting postal matter overseas rapidly via airplanes.",
+  },
+  {
+    id: "sorting-facility",
+    label: "Sorting Facility",
+    phonetic: "ˈsɔː.tɪŋ fəˈsɪl.ə.ti",
+    img: `${LOCAL_WORD_IMAGES}/post-office/sorting-facility.webp`,
+    topic: "post-office-3",
+    description:
+      "A large mechanized distribution depot where letters are categorized by destination.",
+  },
+];
+export const BANK_VOCABULARY: VocabularyItem[] = [
+  {
+    id: "bank-branch",
+    label: "Bank Branch",
+    phonetic: "bæŋk brɑːntʃ",
+    img: `${LOCAL_WORD_IMAGES}/bank/bank-branch.webp`,
+    topic: "bank-1",
+    description:
+      "A local brick-and-mortar financial office offering monetary services to the community.",
+  },
+  {
+    id: "atm",
+    label: "ATM",
+    phonetic: "ˌeɪ.tiːˈem",
+    img: `${LOCAL_WORD_IMAGES}/bank/atm.webp`,
+    topic: "bank-1",
+    description: "An automated teller kiosk providing self-service cash withdrawals and deposits.",
+  },
+  {
+    id: "teller-counter",
+    label: "Teller Counter",
+    phonetic: "ˈtel.ər ˈkaʊn.tər",
+    img: `${LOCAL_WORD_IMAGES}/bank/teller-counter.webp`,
+    topic: "bank-1",
+    description: "A secure service window in a finance hall where clerks assist clients with cash.",
+  },
+  {
+    id: "credit-card",
+    label: "Credit Card",
+    phonetic: "ˈkred.ɪt kɑːd",
+    img: `${LOCAL_WORD_IMAGES}/bank/credit-card.webp`,
+    topic: "bank-1",
+    description: "A plastic payment badge allowing holders to borrow funds for purchases.",
+  },
+  {
+    id: "banknote",
+    label: "Banknote",
+    phonetic: "ˈbæŋk.nəʊt",
+    img: `${LOCAL_WORD_IMAGES}/bank/banknote.webp`,
+    topic: "bank-2",
+    description: "A piece of printed paper or polymer currency issued by a central authority.",
+  },
+  {
+    id: "bank-vault",
+    label: "Bank Vault",
+    phonetic: "bæŋk vɔːlt",
+    img: `${LOCAL_WORD_IMAGES}/bank/bank-vault.webp`,
+    topic: "bank-2",
+    description:
+      "A fortified steel chamber with timed locks built to protect cash and gold bullion.",
+  },
+  {
+    id: "checking-account",
+    label: "Checking Account",
+    phonetic: "ˈtʃek.ɪŋ əˈkaʊnt",
+    img: `${LOCAL_WORD_IMAGES}/bank/checking-account.webp`,
+    topic: "bank-2",
+    description:
+      "A transactional financial deposit ledger allowing frequent withdrawals and deposits.",
+  },
+  {
+    id: "deposit-slip",
+    label: "Deposit Slip",
+    phonetic: "dɪˈpɒz.ɪt slɪp",
+    img: `${LOCAL_WORD_IMAGES}/bank/deposit-slip.webp`,
+    topic: "bank-2",
+    description: "A paper form filled out by a client itemizing funds being paid into a ledger.",
+  },
+  {
+    id: "bank-statement",
+    label: "Bank Statement",
+    phonetic: "bæŋk ˈsteɪt.mənt",
+    img: `${LOCAL_WORD_IMAGES}/bank/bank-statement.webp`,
+    topic: "bank-3",
+    description: "A monthly official summary document recording all debits, credits, and balances.",
+  },
+  {
+    id: "coin-jar",
+    label: "Coin Jar",
+    phonetic: "kɔɪn dʒɑːr",
+    img: `${LOCAL_WORD_IMAGES}/bank/coin-jar.webp`,
+    topic: "bank-3",
+    description: "A glass container used at home for saving metallic currency and spare change.",
+  },
+  {
+    id: "signature-pad",
+    label: "Signature Pad",
+    phonetic: "ˈsɪɡ.nə.tʃər pæd",
+    img: `${LOCAL_WORD_IMAGES}/bank/signature-pad.webp`,
+    topic: "bank-3",
+    description: "An electronic digital stylus screen used to capture legal authorizations.",
+  },
+  {
+    id: "loan-officer",
+    label: "Loan Officer",
+    phonetic: "ləʊn ˈɒf.ɪ.sər",
+    img: `${LOCAL_WORD_IMAGES}/bank/loan-officer.webp`,
+    topic: "bank-3",
+    description:
+      "A finance specialist who evaluates and approves credit and mortgage applications.",
+  },
+];
+export const MUSEUM_VOCABULARY: VocabularyItem[] = [
+  {
+    id: "art-museum",
+    label: "Art Museum",
+    phonetic: "ɑːt mjuːˈziː.əm",
+    img: `${LOCAL_WORD_IMAGES}/museum/art-museum.webp`,
+    topic: "museum-1",
+    description:
+      "An institution dedicated to the preservation and public exhibition of masterworks.",
+  },
+  {
+    id: "ancient-artifact",
+    label: "Ancient Artifact",
+    phonetic: "ˈeɪn.ʃənt ˈɑː.tɪ.fækt",
+    img: `${LOCAL_WORD_IMAGES}/museum/ancient-artifact.webp`,
+    topic: "museum-1",
+    description: "A historical object made by human craft surviving from a prehistoric era.",
+  },
+  {
+    id: "oil-painting",
+    label: "Oil Painting",
+    phonetic: "ɔɪl ˈpeɪn.tɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/museum/oil-painting.webp`,
+    topic: "museum-1",
+    description: "A visual masterwork created by applying pigmented paints onto stretched canvas.",
+  },
+  {
+    id: "marble-sculpture",
+    label: "Marble Sculpture",
+    phonetic: "ˈmɑː.bəl ˈskʌlp.tʃər",
+    img: `${LOCAL_WORD_IMAGES}/museum/marble-sculpture.webp`,
+    topic: "museum-1",
+    description: "A three-dimensional statue carved from solid metamorphic white limestone.",
+  },
+  {
+    id: "museum-guide",
+    label: "Museum Guide",
+    phonetic: "mjuːˈziː.əm ɡaɪd",
+    img: `${LOCAL_WORD_IMAGES}/museum/museum-guide.webp`,
+    topic: "museum-2",
+    description: "A knowledgeable docent who leads tour groups through public galleries.",
+  },
+  {
+    id: "exhibit-hall",
+    label: "Exhibit Hall",
+    phonetic: "ɪɡˈzɪb.ɪt hɔːl",
+    img: `${LOCAL_WORD_IMAGES}/museum/exhibit-hall.webp`,
+    topic: "museum-2",
+    description: "A large public gallery room designated for showcasing specific collections.",
+  },
+  {
+    id: "glass-showcase",
+    label: "Glass Showcase",
+    phonetic: "ɡlɑːs ˈʃəʊ.keɪs",
+    img: `${LOCAL_WORD_IMAGES}/museum/glass-showcase.webp`,
+    topic: "museum-2",
+    description: "A transparent protective cabinet designed to exhibit fragile treasures securely.",
+  },
+  {
+    id: "dinosaur-fossil",
+    label: "Dinosaur Fossil",
+    phonetic: "ˈdaɪ.nə.sɔː ˈfɒs.əl",
+    img: `${LOCAL_WORD_IMAGES}/museum/dinosaur-fossil.webp`,
+    topic: "museum-2",
+    description: "The petrified mineral skeleton of a prehistoric giant reptile.",
+  },
+  {
+    id: "admission-ticket",
+    label: "Admission Ticket",
+    phonetic: "ədˈmɪʃ.ən ˈtɪk.ɪt",
+    img: `${LOCAL_WORD_IMAGES}/museum/admission-ticket.webp`,
+    topic: "museum-3",
+    description: "A pass permitting entrance into public galleries and special exhibitions.",
+  },
+  {
+    id: "audio-guide",
+    label: "Audio Guide",
+    phonetic: "ˈɔː.di.əʊ ɡaɪd",
+    img: `${LOCAL_WORD_IMAGES}/museum/audio-guide.webp`,
+    topic: "museum-3",
+    description: "A handheld electronic device providing recorded commentary for gallery visitors.",
+  },
+  {
+    id: "antique-pottery",
+    label: "Antique Pottery",
+    phonetic: "ænˈtiːk ˈpɒt.ər.i",
+    img: `${LOCAL_WORD_IMAGES}/museum/antique-pottery.webp`,
+    topic: "museum-3",
+    description: "Historic ceramic vessels and earthenware crafted in prehistoric civilizations.",
+  },
+  {
+    id: "historical-plaque",
+    label: "Historical Plaque",
+    phonetic: "hɪˈstɒr.ɪ.kəl plɑːk",
+    img: `${LOCAL_WORD_IMAGES}/museum/historical-plaque.webp`,
+    topic: "museum-3",
+    description: "An informative commemorative metal plate explaining a public monument.",
+  },
+];
+export const REVISION_5_VOCABULARY: VocabularyItem[] = [
+  {
+    id: "airport-terminal",
+    label: "Airport Terminal",
+    phonetic: "ˈeə.pɔːt ˈtɜː.mɪ.nəl",
+    img: `${LOCAL_WORD_IMAGES}/revision-5/airport-terminal.webp`,
+    topic: "revision-5-1",
+    description: "A major transport hub building where travelers board commercial planes.",
+  },
+  {
+    id: "boarding-pass",
+    label: "Boarding Pass",
+    phonetic: "ˈbɔː.dɪŋ pɑːs",
+    img: `${LOCAL_WORD_IMAGES}/revision-5/boarding-pass.webp`,
+    topic: "revision-5-1",
+    description: "An official travel document giving a traveler permission to enter the aircraft.",
+  },
+  {
+    id: "train-platform",
+    label: "Train Platform",
+    phonetic: "treɪn ˈplæt.fɔːm",
+    img: `${LOCAL_WORD_IMAGES}/revision-5/train-platform.webp`,
+    topic: "revision-5-1",
+    description: "A raised concrete area beside steel tracks where commuters board coaches.",
+  },
+  {
+    id: "express-train",
+    label: "Express Train",
+    phonetic: "ɪkˈspres treɪn",
+    img: `${LOCAL_WORD_IMAGES}/revision-5/express-train.webp`,
+    topic: "revision-5-1",
+    description: "A high-speed non-stop rail transit line connecting major metropolitan cities.",
+  },
+  {
+    id: "hotel-reception",
+    label: "Hotel Reception",
+    phonetic: "həʊˈtel rɪˈsep.ʃən",
+    img: `${LOCAL_WORD_IMAGES}/revision-5/hotel-reception.webp`,
+    topic: "revision-5-2",
+    description: "The main front desk where lodging guests register and receive entrance badges.",
+  },
+  {
+    id: "room-key",
+    label: "Room Key",
+    phonetic: "ruːm kiː",
+    img: `${LOCAL_WORD_IMAGES}/revision-5/room-key.webp`,
+    topic: "revision-5-2",
+    description: "A coded plastic card or metallic tool that unlocks a guest suite door.",
+  },
+  {
+    id: "post-office",
+    label: "Post Office",
+    phonetic: "pəʊst ˈɒf.ɪs",
+    img: `${LOCAL_WORD_IMAGES}/revision-5/post-office.webp`,
+    topic: "revision-5-2",
+    description: "A public facility where letters are processed and mailing supplies are sold.",
+  },
+  {
+    id: "parcel",
+    label: "Parcel",
+    phonetic: "ˈpɑː.səl",
+    img: `${LOCAL_WORD_IMAGES}/revision-5/parcel.webp`,
+    topic: "revision-5-2",
+    description: "A wrapped cardboard box sent through delivery and courier systems.",
+  },
+  {
+    id: "bank-branch",
+    label: "Bank Branch",
+    phonetic: "bæŋk brɑːntʃ",
+    img: `${LOCAL_WORD_IMAGES}/revision-5/bank-branch.webp`,
+    topic: "revision-5-3",
+    description:
+      "A local brick-and-mortar financial office offering monetary services to the community.",
+  },
+  {
+    id: "atm",
+    label: "ATM",
+    phonetic: "ˌeɪ.tiːˈem",
+    img: `${LOCAL_WORD_IMAGES}/revision-5/atm.webp`,
+    topic: "revision-5-3",
+    description: "An automated teller kiosk providing self-service cash withdrawals and deposits.",
+  },
+  {
+    id: "art-museum",
+    label: "Art Museum",
+    phonetic: "ɑːt mjuːˈziː.əm",
+    img: `${LOCAL_WORD_IMAGES}/revision-5/art-museum.webp`,
+    topic: "revision-5-3",
+    description:
+      "An institution dedicated to the preservation and public exhibition of masterworks.",
+  },
+  {
+    id: "oil-painting",
+    label: "Oil Painting",
+    phonetic: "ɔɪl ˈpeɪn.tɪŋ",
+    img: `${LOCAL_WORD_IMAGES}/revision-5/oil-painting.webp`,
+    topic: "revision-5-3",
+    description: "A visual masterwork created by applying pigmented paints onto stretched canvas.",
+  },
+];
+
+export interface CourseModule {
+  id: string;
+  level: number;
+  levelBadge: string;
+  title: string;
+  titleAr: string;
+  description: string;
+  unitIds: string[];
+}
+
+export const COURSE_MODULES: CourseModule[] = [
+  {
+    id: "module-1-home-nature",
+    level: 1,
+    levelBadge: "Level 1 · Foundations",
+    title: "Home, Nature & Everyday Living",
+    titleAr: "المَنْزِلُ وَالطَّبِيعَةُ وَالحَيَاةُ اليَوْمِيَّة",
+    description:
+      "Build essential vocabulary for domestic living, agriculture, natural flora, and personal care.",
+    unitIds: [
+      "bedroom",
+      "kitchen",
+      "living-room",
+      "revision-1",
+      "farm",
+      "garden",
+      "bathroom",
+      "revision-2",
+    ],
+  },
+  {
+    id: "module-2-school-town",
+    level: 2,
+    levelBadge: "Level 2 · Community",
+    title: "School, Study & Local Marketplace",
+    titleAr: "المَدْرَسَةُ وَالدِّرَاسَةُ وَالسُّوقُ المَحَلِّيّ",
+    description: "Explore classrooms, libraries, playgrounds, and bustling open-air marketplaces.",
+    unitIds: ["playground", "classroom", "library", "revision-3", "market"],
+  },
+  {
+    id: "module-3-city-wellness",
+    level: 3,
+    levelBadge: "Level 3 · City Life",
+    title: "City Dining, Leisure & Healthcare",
+    titleAr: "المَطَاعِمُ وَالتَّرْفِيهُ وَالرِّعَايَةُ الصِّحِّيَّة",
+    description:
+      "Master vocabulary for artisan bakeries, coastal beaches, fine dining, sports, and hospitals.",
+    unitIds: [
+      "bakery",
+      "beach",
+      "restaurant",
+      "revision-4",
+      "sports-center",
+      "hospital",
+      "revision-milestone-1",
+    ],
+  },
+  {
+    id: "module-4-travel-services",
+    level: 4,
+    levelBadge: "Level 4 · Travel & Services",
+    title: "Travel, Transit & Civic Services",
+    titleAr: "السَّفَرُ وَالنَّقْلُ وَالخَدَمَاتُ المَدَنِيَّة",
+    description:
+      "Navigate airports, train stations, luxury hotels, postal logistics, banking, and cultural museums.",
+    unitIds: ["airport", "train-station", "hotel", "post-office", "bank", "museum", "revision-5"],
+  },
+];
+
 export const COURSE_UNITS: Record<string, CourseUnit> = {
   bedroom: {
     id: "bedroom",
@@ -12020,6 +13011,76 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
     groups: HOSPITAL_GROUPS,
     vocabulary: HOSPITAL_VOCABULARY,
   },
+  airport: {
+    id: "airport",
+    name: "The Airport",
+    description:
+      "Explore departures, international boarding, terminals, luggage logistics, and flights.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/airport-hero.webp`,
+    topics: AIRPORT_TOPICS,
+    groups: AIRPORT_GROUPS,
+    vocabulary: AIRPORT_VOCABULARY,
+  },
+  "train-station": {
+    id: "train-station",
+    name: "The Train Station",
+    description:
+      "Navigate rail platforms, ticket machines, conductor checks, passenger cars, and express lines.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/train-station-hero.webp`,
+    topics: TRAIN_STATION_TOPICS,
+    groups: TRAIN_STATION_GROUPS,
+    vocabulary: TRAIN_STATION_VOCABULARY,
+  },
+  hotel: {
+    id: "hotel",
+    name: "The Hotel",
+    description:
+      "Check in at the grand reception, order room service, enjoy balcony views, and utilize amenities.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/hotel-hero.webp`,
+    topics: HOTEL_TOPICS,
+    groups: HOTEL_GROUPS,
+    vocabulary: HOTEL_VOCABULARY,
+  },
+  "post-office": {
+    id: "post-office",
+    name: "The Post Office",
+    description: "A public facility where letters are processed and mailing supplies are sold.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/post-office-hero.webp`,
+    topics: POST_OFFICE_TOPICS,
+    groups: POST_OFFICE_GROUPS,
+    vocabulary: POST_OFFICE_VOCABULARY,
+  },
+  bank: {
+    id: "bank",
+    name: "The Bank",
+    description:
+      "Withdraw cash safely from ATMs, deposit checks, manage accounts, and consult financial specialists.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/bank-hero.webp`,
+    topics: BANK_TOPICS,
+    groups: BANK_GROUPS,
+    vocabulary: BANK_VOCABULARY,
+  },
+  museum: {
+    id: "museum",
+    name: "The Museum",
+    description:
+      "Marvel at prehistoric fossils, classical oil paintings, marble sculptures, and guided tours.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/museum-hero.webp`,
+    topics: MUSEUM_TOPICS,
+    groups: MUSEUM_GROUPS,
+    vocabulary: MUSEUM_VOCABULARY,
+  },
+  "revision-5": {
+    id: "revision-5",
+    name: "Checkpoint: Travel & Services",
+    isRevision: true,
+    revisionKind: "checkpoint",
+    description: "Reinforce and master high-yield civic, travel, transit, and cultural vocabulary.",
+    heroImage: `${LOCAL_SCENE_IMAGES}/revision-5-hero.webp`,
+    topics: REVISION_5_TOPICS,
+    groups: REVISION_5_GROUPS,
+    vocabulary: REVISION_5_VOCABULARY,
+  },
 };
 
 /** The world a learner lands in when nothing else specifies one. */
@@ -12044,139 +13105,6 @@ export const VOCAB_BY_ID = new Map(
 export const REVIEW_GROUP_ID = "daily-review";
 
 /** Every group across every registered world. */
-
-export const AIRPORT_TOPICS: TopicCategory[] = [
-  {
-    id: "airport-1",
-    label: "Departures",
-    labelAr: "المُغَادَرُونَ",
-    words: ["airport-terminal", "boarding-pass", "luggage-cart", "security-check"],
-  },
-  {
-    id: "airport-2",
-    label: "Flight & Arrival",
-    labelAr: "الرِّحْلَةُ وَالوُصُول",
-    words: ["departure-gate", "flight-attendant", "runway", "passport-control"],
-  },
-  {
-    id: "airport-3",
-    label: "Services",
-    labelAr: "الخَدَمَات",
-    words: ["baggage-claim", "customs", "duty-free", "departure-board"],
-  },
-];
-
-export const AIRPORT_GROUPS: Lesson[] = [
-  {
-    id: "airport-group-1",
-    name: "The Airport",
-    description: "Learn essential vocabulary for navigating the airport.",
-    storyId: "airport-story",
-    wordIds: [
-      "airport-terminal",
-      "boarding-pass",
-      "luggage-cart",
-      "security-check",
-      "departure-gate",
-      "flight-attendant",
-      "runway",
-      "passport-control",
-      "baggage-claim",
-      "customs",
-      "duty-free",
-      "departure-board",
-    ],
-  },
-];
-
-export const TRAIN_STATION_TOPICS: TopicCategory[] = [
-  {
-    id: "train-station-1",
-    label: "Platforms",
-    labelAr: "الأَرْصِفَة",
-    words: ["train-platform", "ticket-machine", "train-conductor", "locomotive"],
-  },
-  {
-    id: "train-station-2",
-    label: "On the Train",
-    labelAr: "فِي القِطَار",
-    words: ["railway-track", "passenger-car", "commuter-train", "timetable"],
-  },
-  {
-    id: "train-station-3",
-    label: "Station Areas",
-    labelAr: "مَنَاطِقُ المَحَطَّة",
-    words: ["station-clock", "waiting-room", "ticket-barrier", "express-train"],
-  },
-];
-
-export const TRAIN_STATION_GROUPS: Lesson[] = [
-  {
-    id: "train-station-group-1",
-    name: "The Train Station",
-    description: "Learn essential vocabulary for train travel.",
-    storyId: "train-story",
-    wordIds: [
-      "train-platform",
-      "ticket-machine",
-      "train-conductor",
-      "locomotive",
-      "railway-track",
-      "passenger-car",
-      "commuter-train",
-      "timetable",
-      "station-clock",
-      "waiting-room",
-      "ticket-barrier",
-      "express-train",
-    ],
-  },
-];
-
-export const HOTEL_TOPICS: TopicCategory[] = [
-  {
-    id: "hotel-1",
-    label: "Check-in",
-    labelAr: "تَسْجِيلُ الدُّخُول",
-    words: ["hotel-reception", "room-key", "bellboy", "hotel-lobby"],
-  },
-  {
-    id: "hotel-2",
-    label: "Room Details",
-    labelAr: "تَفَاصِيلُ الغُرْفَة",
-    words: ["room-service", "housekeeping", "hotel-safe", "balcony-view"],
-  },
-  {
-    id: "hotel-3",
-    label: "Facilities",
-    labelAr: "المَرَافِق",
-    words: ["elevator", "key-card", "doorman", "valet-parking"],
-  },
-];
-
-export const HOTEL_GROUPS: Lesson[] = [
-  {
-    id: "hotel-group-1",
-    name: "The Hotel",
-    description: "Learn essential vocabulary for your hotel stay.",
-    storyId: "hotel-story",
-    wordIds: [
-      "hotel-reception",
-      "room-key",
-      "bellboy",
-      "hotel-lobby",
-      "room-service",
-      "housekeeping",
-      "hotel-safe",
-      "balcony-view",
-      "elevator",
-      "key-card",
-      "doorman",
-      "valet-parking",
-    ],
-  },
-];
-
 export const ALL_GROUPS = Object.values(COURSE_UNITS).flatMap((world) => world.groups);
 
 /**

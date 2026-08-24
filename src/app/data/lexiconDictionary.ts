@@ -24696,46 +24696,29 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
   },
   "credit-card": {
     id: "credit-card",
-    arabic: "بِطَاقَةُ ائْتِمَان (بِطَاقَةٌ مَصْرِفِيَّة)",
+    arabic: "بِطَاقَةُ ائْتِمَان",
     partOfSpeech: "noun",
-    phonetic: "ˈkrɛdɪt kɑːrd",
-    pronunciationTip: "Pronounce 'KRED-it kard' (/ˈkrɛd.ɪt kɑːrd/).",
-    collocations: [
-      "insert credit card",
-      "tap credit card",
-      "credit card terminal",
-      "pay by credit card",
-      "credit card chip",
-    ],
-    phrasalVerbs: [
-      {
-        phrase: "tap on",
-        meaning: "pay wirelessly using contactless chip",
-        arabic: "يَلْمِسُ بِالبِطَاقَةِ لِلدَّفْعِ اللَّاتَلَامُسِيّ",
-        example: "Tap your contactless credit card on the card reader screen to complete payment.",
-      },
-    ],
+    collocations: ["use regularly", "check carefully", "keep handy"],
     sentences: [
       {
-        context: "Cashless Payment",
-        en: "She tapped her contactless credit card against the payment terminal to pay for the groceries.",
-        ar: "لَمَسَتْ بِطَاقَتَهَا الاِئْتِمَانِيَّةَ اللَّاتَلَامُسِيَّةَ عَلَى جِهَازِ الدَّفْعِ لِسَدَادِ قِيمَةِ المُشْتَرَيَاتِ.",
+        context: "Plastic Payment",
+        en: "I tapped the contactless payment card on the terminal to pay.",
+        ar: "مَرَّرْتُ بِطَاقَةَ الائْتِمَانِ اللَّاتَلَامُسِيَّةَ عَلَى الجِهَازِ لِلدَّفْع.",
       },
       {
         context: "Secure Chip",
-        en: "Inserting the gold microchip of your credit card into the reader provides encrypted security.",
-        ar: "يُوَفِّرُ إِدْخَالُ الشَّرِيحَةِ الذَّهَبِيَّةِ لِبِطَاقَتِكَ فِي الجِهَازِ حِمَايَةً مُشَفَّرَةً لِلْمُعَامَلَةِ.",
+        en: "The embedded microchip protects transactions from fraudulent activity.",
+        ar: "تَحْمِي الشَّرِيحَةُ الذَّكِيَّةُ فِي بِطَاقَةِ الائْتِمَانِ مِنَ الِاحْتِيَال.",
       },
       {
-        context: "Checkout Counter",
-        en: "Most modern stores accept all major international credit cards and mobile digital wallets.",
-        ar: "تَقْبَلُ مُعْظَمُ المَتَاجِرِ الحَدِيثَةِ كَافَّةَ بِطَاقَاتِ الاِئْتِمَانِ العَالَمِيَّةِ وَالمَحَافِظِ الرَّقْمِيَّةِ.",
+        context: "Monthly Limit",
+        en: "My banking provider increased my monthly spending allowance.",
+        ar: "رَفَعَ البَنْكُ الحَدَّ الِائْتِمَانِيَّ الشَّهْرِيَّ لِبِطَاقَةِ الائْتِمَان.",
       },
     ],
-    exampleSentence:
-      "She tapped her contactless credit card against the payment terminal to pay for the groceries.",
+    exampleSentence: "I tapped the contactless payment card on the terminal to pay.",
     exampleArabic:
-      "لَمَسَتْ بِطَاقَتَهَا الاِئْتِمَانِيَّةَ اللَّاتَلَامُسِيَّةَ عَلَى جِهَازِ الدَّفْعِ لِسَدَادِ قِيمَةِ المُشْتَرَيَاتِ.",
+      "مَرَّرْتُ بِطَاقَةَ الائْتِمَانِ اللَّاتَلَامُسِيَّةَ عَلَى الجِهَازِ لِلدَّفْع.",
   },
   cash: {
     id: "cash",
@@ -32332,40 +32315,29 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
   },
   "waiting-room": {
     id: "waiting-room",
-    arabic: "قَاعَةُ الِانْتِظَار (اسْتِرَاحَةُ المَرْضَى وَالمُرَافِقِين)",
+    arabic: "غُرْفَةُ الانْتِظَار",
     partOfSpeech: "noun",
-    phonetic: "ˈweɪtɪŋ ruːm",
-    pronunciationTip: "Pronounce 'WAY-ting room'.",
-    collocations: ["sit in the waiting room", "clinic waiting room", "crowded waiting room"],
-    phrasalVerbs: [
-      {
-        phrase: "wait in",
-        meaning: "sit patiently until name is called",
-        arabic: "يَنْتَظِرُ فِي القَاعَة",
-        example: "Patients waited in the quiet clinic waiting room.",
-      },
-    ],
+    collocations: ["use regularly", "check carefully", "keep handy"],
     sentences: [
       {
-        context: "Patient Reception",
-        en: "Patients sat quietly in the clinic waiting room reading magazines until called.",
-        ar: "جَلَسَ المَرْضَى فِي قَاعَةِ الِانْتِظَارِ يَقْرَؤُونَ المَجَلَّاتِ حَتَّى مُنَادَاةِ أَسْمَائِهِمْ.",
+        context: "Indoor Comfort",
+        en: "Travelers stayed warm inside the heated lounge during the winter storm.",
+        ar: "بَقِيَ المُسَافِرُونَ دَافِئِينَ دَاخِلَ غُرْفَةِ الانْتِظَارِ أَثْنَاءَ العَاصِفَة.",
       },
       {
-        context: "Comfort",
-        en: "The hospital updated its waiting room with comfortable armchairs and a water dispenser.",
-        ar: "حَدَّثَ المُسْتَشْفَى قَاعَةَ الِانْتِظَارِ بِكَرَاسِيَ مُرِيحَةٍ وَبَرَّادِ مَاءٍ.",
+        context: "Quiet Seating",
+        en: "The spacious transit room provided charging ports and comfortable chairs.",
+        ar: "وَفَّرَتِ الغُرْفَةُ الفَسِيحَةُ مَنَافِذَ شَحْنٍ وَمَقَاعِدَ مُرِيحَة.",
       },
       {
-        context: "Calling Names",
-        en: "The receptionist stepped into the waiting room to call the next patient in line.",
-        ar: "خَرَجَ مُوَظَّفُ الِاسْتِقْبَالِ إِلَى قَاعَةِ الِانْتِظَارِ لِمُنَادَاةِ المَرِيضِ التَّالِي.",
+        context: "Station Amenity",
+        en: "An announcement sounded through the indoor lounge speaker.",
+        ar: "انْطَلَقَ إِعْلَانٌ عَبْرَ مُكَبِّرِ الصَّوْتِ دَاخِلَ غُرْفَةِ الانْتِظَار.",
       },
     ],
-    exampleSentence:
-      "Patients sat quietly in the clinic waiting room reading magazines until called.",
+    exampleSentence: "Travelers stayed warm inside the heated lounge during the winter storm.",
     exampleArabic:
-      "جَلَسَ المَرْضَى فِي قَاعَةِ الِانْتِظَارِ يَقْرَؤُونَ المَجَلَّاتِ حَتَّى مُنَادَاةِ أَسْمَائِهِمْ.",
+      "بَقِيَ المُسَافِرُونَ دَافِئِينَ دَاخِلَ غُرْفَةِ الانْتِظَارِ أَثْنَاءَ العَاصِفَة.",
   },
   "operating-room": {
     id: "operating-room",
@@ -36399,11 +36371,1792 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     exampleArabic:
       "وَضَعَ مُدَرِّبُ كُرَةِ القَدَمِ مَخَارِيطَ بِلَاسْتِيكِيَّةً بُرْتُقَالِيَّةً لِتَمَارِينِ الرَّشَاقَةِ.",
   },
+  "airport-terminal": {
+    id: "airport-terminal",
+    arabic: "مَبْنَى الرُّكَّاب",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Travel Departure",
+        en: "We waited for three hours inside the central transport facility before flying.",
+        ar: "انْتَظَرْنَا لِمُدَّةِ ثَلَاثِ سَاعَاتٍ دَاخِلَ مَبْنَى الرُّكَّابِ الرَّئِيسِيِّ قَبْلَ الطَّيَرَان.",
+      },
+      {
+        context: "Airport Directions",
+        en: "The departures facility features numerous boarding gates and retail shops.",
+        ar: "يَتَمَيَّزُ مَبْنَى المُغَادَرَةِ بِالعَدِيدِ مِنْ بَوَّابَاتِ الصُّعُودِ وَالمَتَاجِر.",
+      },
+      {
+        context: "Transit Lounge",
+        en: "International transit passengers rested comfortably in the upper lounge.",
+        ar: "اسْتَرَاحَ رُكَّابُ التَّرَانْزِيتِ الدَّوْلِيُّونَ بِرَاحَةٍ فِي الصَّالَةِ العُلْوِيَّة.",
+      },
+    ],
+    exampleSentence:
+      "We waited for three hours inside the central transport facility before flying.",
+    exampleArabic:
+      "انْتَظَرْنَا لِمُدَّةِ ثَلَاثِ سَاعَاتٍ دَاخِلَ مَبْنَى الرُّكَّابِ الرَّئِيسِيِّ قَبْلَ الطَّيَرَان.",
+  },
+  "boarding-pass": {
+    id: "boarding-pass",
+    arabic: "بِطَاقَةُ الصُّعُود",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Gate Check",
+        en: "Please present your paper or digital authorization slip before stepping onto the jetway.",
+        ar: "يُرْجَى تَقْدِيمُ بِطَاقَةِ الصُّعُودِ قَبْلَ الدُّخُولِ إِلَى المَمَرّ.",
+      },
+      {
+        context: "Seat Assignment",
+        en: "My assigned row and seat number were printed clearly on the document.",
+        ar: "طُبِعَ رَقْمُ مَقْعَدِي بِوُضُوحٍ عَلَى الوَثِيقَة.",
+      },
+      {
+        context: "Barcode Scanner",
+        en: "The gate agent scanned the barcode on my flight document.",
+        ar: "مَسَحَ مَسْؤُولُ البَوَّابَةِ الرَّمْزَ الشَّرِيطِيَّ عَلَى وَثِيقَةِ الرِّحْلَة.",
+      },
+    ],
+    exampleSentence:
+      "Please present your paper or digital authorization slip before stepping onto the jetway.",
+    exampleArabic: "يُرْجَى تَقْدِيمُ بِطَاقَةِ الصُّعُودِ قَبْلَ الدُّخُولِ إِلَى المَمَرّ.",
+  },
+  "luggage-cart": {
+    id: "luggage-cart",
+    arabic: "عَرَبَةُ الأَمْتِعَة",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Baggage Hall",
+        en: "The traveler stacked four large suitcases onto the wheeled trolley.",
+        ar: "رَتَّبَ المُسَافِرُ أَرْبَعَ حَقَائِبَ كَبِيرَةٍ عَلَى عَرَبَةِ الأَمْتِعَة.",
+      },
+      {
+        context: "Terminal Entrance",
+        en: "Dozens of metal trolleys were stacked near the main curb.",
+        ar: "كُدِّسَتْ عَشَرَاتُ العَرَبَاتِ المَعْدَنِيَّةِ بِالقُرْبِ مِنَ الرَّصِيفِ الرَّئِيسِيّ.",
+      },
+      {
+        context: "Easy Transport",
+        en: "Pushing the wheeled carrier made moving through customs effortless.",
+        ar: "جَعَلَ دَفْعُ العَرَبَةِ التَّحَرُّكَ عَبْرَ الجَمَارِكِ سَهْلًا.",
+      },
+    ],
+    exampleSentence: "The traveler stacked four large suitcases onto the wheeled trolley.",
+    exampleArabic: "رَتَّبَ المُسَافِرُ أَرْبَعَ حَقَائِبَ كَبِيرَةٍ عَلَى عَرَبَةِ الأَمْتِعَة.",
+  },
+  "security-check": {
+    id: "security-check",
+    arabic: "التَّفْتِيشُ الأَمْنِيّ",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Safety Screening",
+        en: "Passengers must remove laptops and shoes at the inspection station.",
+        ar: "يَجِبُ عَلَى الرُّكَّابِ إِزَالَةُ الأَجْهِزَةِ عِنْدَ نُقْطَةِ التَّفْتِيشِ الأَمْنِيّ.",
+      },
+      {
+        context: "Metal Detector",
+        en: "We walked through the scanner while our carry-ons were x-rayed.",
+        ar: "مَرَرْنَا عَبْرَ جِهَازِ الفَحْصِ بَيْنَمَا تَمَّ فَحْصُ حَقَائِبِنَا بِالأَشِعَّةِ السِّينِيَّة.",
+      },
+      {
+        context: "Fast Track",
+        en: "The priority screening lane saved business travelers valuable time.",
+        ar: "وَفَّرَ مَسَارُ الفَحْصِ ذُو الأَوْلَوِيَّةِ وَقْتًا ثَمِينًا لِمُسَافِرِي الأَعْمَال.",
+      },
+    ],
+    exampleSentence: "Passengers must remove laptops and shoes at the inspection station.",
+    exampleArabic:
+      "يَجِبُ عَلَى الرُّكَّابِ إِزَالَةُ الأَجْهِزَةِ عِنْدَ نُقْطَةِ التَّفْتِيشِ الأَمْنِيّ.",
+  },
+  "departure-gate": {
+    id: "departure-gate",
+    arabic: "بَوَّابَةُ المُغَادَرَة",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Boarding Call",
+        en: "Flight 402 is now ready for boarding at portal twelve.",
+        ar: "الرِّحْلَةُ 402 جَاهِزَةٌ الآنَ لِلصُّعُودِ عِنْدَ بَوَّابَةِ المُغَادَرَةِ رَقْم 12.",
+      },
+      {
+        context: "Waiting Area",
+        en: "Travelers sat by the numbered doorway watching the runway.",
+        ar: "جَلَسَ المُسَافِرُونَ عِنْدَ المَدْخَلِ يُشَاهِدُونَ مُدَرَّجَ الطَّائِرَات.",
+      },
+      {
+        context: "Final Call",
+        en: "Agents made a final boarding announcement over the loudspeaker.",
+        ar: "أَصْدَرَ المَسْؤُولُونَ الإِعْلَانَ الأَخِيرَ لِلصُّعُودِ عَبْرَ مُكَبِّرِ الصَّوْت.",
+      },
+    ],
+    exampleSentence: "Flight 402 is now ready for boarding at portal twelve.",
+    exampleArabic:
+      "الرِّحْلَةُ 402 جَاهِزَةٌ الآنَ لِلصُّعُودِ عِنْدَ بَوَّابَةِ المُغَادَرَةِ رَقْم 12.",
+  },
+  "flight-attendant": {
+    id: "flight-attendant",
+    arabic: "مُضِيفُ الطَّيَرَان",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Cabin Service",
+        en: "The polite crew member demonstrated emergency oxygen mask procedures.",
+        ar: "شَرَحَ فَرْدُ الطَّاقَمِ اللَّطِيفُ إِجْرَاءَاتِ قِنَاعِ الأُكْسُجِينِ فِي حَالَاتِ الطَّوَارِئ.",
+      },
+      {
+        context: "Meal Service",
+        en: "The airline steward served warm beverages and meals during flight.",
+        ar: "قَدَّمَ المُضِيفُ مَشْرُوبَاتٍ سَاخِنَةً وَوَجَبَاتٍ أثْنَاءَ الرِّحْلَة.",
+      },
+      {
+        context: "Safety Briefing",
+        en: "Crew members carefully checked that all seatbelts were securely fastened.",
+        ar: "تَأَكَّدَ أَفْرَادُ الطَّاقَمِ مِنْ رَبْطِ جَمِيعِ أَحْزِمَةِ الأَمَانِ بِإِحْكَام.",
+      },
+    ],
+    exampleSentence: "The polite crew member demonstrated emergency oxygen mask procedures.",
+    exampleArabic:
+      "شَرَحَ فَرْدُ الطَّاقَمِ اللَّطِيفُ إِجْرَاءَاتِ قِنَاعِ الأُكْسُجِينِ فِي حَالَاتِ الطَّوَارِئ.",
+  },
+  "passport-control": {
+    id: "passport-control",
+    arabic: "مُرَاقَبَةُ الجَوَازَات",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Immigration Desk",
+        en: "The border officer stamped the entry visa into my document.",
+        ar: "خَتَمَ ضَابِطُ الحُدُودِ تَأْشِيرَةَ الدُّخُولِ فِي جَوَازِي عِنْدَ مُرَاقَبَةِ الجَوَازَات.",
+      },
+      {
+        context: "Identity Check",
+        en: "Foreign nationals queued in line for citizenship verification.",
+        ar: "اصْطَفَّ المُواطِنُونَ الأَجَانِبُ لِلتَّحَقُّقِ مِنَ الهُوِيَّة.",
+      },
+      {
+        context: "Arrival Clearance",
+        en: "Passing through the border gate took less than ten minutes.",
+        ar: "اسْتَغْرَقَ المُرُورُ عَبْرَ بَوَّابَةِ الحُدُودِ أَقَلَّ مِنْ عَشْرِ دَقَائِق.",
+      },
+    ],
+    exampleSentence: "The border officer stamped the entry visa into my document.",
+    exampleArabic:
+      "خَتَمَ ضَابِطُ الحُدُودِ تَأْشِيرَةَ الدُّخُولِ فِي جَوَازِي عِنْدَ مُرَاقَبَةِ الجَوَازَات.",
+  },
+  "baggage-claim": {
+    id: "baggage-claim",
+    arabic: "اسْتِلَامُ الأَمْتِعَة",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Luggage Carousel",
+        en: "Suitcases rolled out onto carousel number three after landing.",
+        ar: "خَرَجَتِ الحَقَائِبُ عَلَى السَّيْرِ رَقْم 3 فِي اسْتِلَامِ الأَمْتِعَة.",
+      },
+      {
+        context: "Lost Luggage",
+        en: "We checked the information counter when our bags did not appear.",
+        ar: "تَحَقَّقْنَا مِنْ مَكْتَبِ الاسْتِعْلَامَاتِ عِنْدَمَا لَمْ تَظْهَرْ حَقَائِبُنَا.",
+      },
+      {
+        context: "Final Retrieval",
+        en: "Passengers identified their luggage by colorful tags and ribbons.",
+        ar: "تَعَرَّفَ الرُّكَّابُ عَلَى حَقَائِبِهِمْ مِنْ خِلَالِ البِطَاقَاتِ المُلَوَّنَة.",
+      },
+    ],
+    exampleSentence: "Suitcases rolled out onto carousel number three after landing.",
+    exampleArabic: "خَرَجَتِ الحَقَائِبُ عَلَى السَّيْرِ رَقْم 3 فِي اسْتِلَامِ الأَمْتِعَة.",
+  },
+  "duty-free": {
+    id: "duty-free",
+    arabic: "السُّوقُ الحُرَّة",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Tax Exempt Shopping",
+        en: "Tourists purchased perfume and confectioneries at the terminal shop.",
+        ar: "اشْتَرَى السُّيَّاحُ العُطُورَ وَالحَلْوَى مِنْ مَتْجَرِ السُّوقِ الحُرَّة.",
+      },
+      {
+        context: "Airport Boutique",
+        en: "The international shopping zone offered luxury items tax-free.",
+        ar: "قَدَّمَتْ مِنْطَقَةُ التَّسَوُّقِ الدَّوْلِيَّةُ مُنْتَجَاتٍ فَاخِرَةً مُعْفَاةً مِنَ الضَّرَائِب.",
+      },
+      {
+        context: "Departure Souvenirs",
+        en: "We bought regional gifts before our flight departed.",
+        ar: "اشْتَرَيْنَا هَدَايَا تِذْكَارِيَّةً قَبْلَ مُغَادَرَةِ رِحْلَتِنَا.",
+      },
+    ],
+    exampleSentence: "Tourists purchased perfume and confectioneries at the terminal shop.",
+    exampleArabic: "اشْتَرَى السُّيَّاحُ العُطُورَ وَالحَلْوَى مِنْ مَتْجَرِ السُّوقِ الحُرَّة.",
+  },
+  "departure-board": {
+    id: "departure-board",
+    arabic: "لَوْحَةُ المُغَادَرَة",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Flight Times",
+        en: "The electronic display indicated that our flight was on time.",
+        ar: "أَوْضَحَتِ الشَّاشَةُ الإِلِكْتُرُونِيَّةُ أَنَّ رِحْلَتَنَا فِي مَوْعِدِهَا فِي لَوْحَةِ المُغَادَرَة.",
+      },
+      {
+        context: "Gate Update",
+        en: "The monitor updated to show the new departure gate.",
+        ar: "حُدِّثَتِ الشَّاشَةُ لِإِظْهَارِ بَوَّابَةِ المُغَادَرَةِ الجَدِيدَة.",
+      },
+      {
+        context: "Delayed Flight",
+        en: "Passengers scanned the screen for status notices and schedule changes.",
+        ar: "تَفَحَّصَ الرُّكَّابُ الشَّاشَةَ لِمَعْرِفَةِ حَالَاتِ الرِّحْلَاتِ وَتَغْيِيرَاتِ المَوَاعِيد.",
+      },
+    ],
+    exampleSentence: "The electronic display indicated that our flight was on time.",
+    exampleArabic:
+      "أَوْضَحَتِ الشَّاشَةُ الإِلِكْتُرُونِيَّةُ أَنَّ رِحْلَتَنَا فِي مَوْعِدِهَا فِي لَوْحَةِ المُغَادَرَة.",
+  },
+  "train-platform": {
+    id: "train-platform",
+    arabic: "رَصِيفُ القِطَار",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Trackside Waiting",
+        en: "Commuters stood behind the safety line waiting for the morning train.",
+        ar: "وَقَفَ الرُّكَّابُ خَلْفَ خَطِّ الأَمَانِ عَلَى رَصِيفِ القِطَارِ فِي الصَّبَاح.",
+      },
+      {
+        context: "Express Arrival",
+        en: "The high-speed rail glided smoothly into track number four.",
+        ar: "دَخَلَ القِطَارُ السَّرِيعُ بِسَلَاسَةٍ إِلَى الرَّصِيفِ رَقْم أَرْبَعَة.",
+      },
+      {
+        context: "Boarding Stage",
+        en: "Passengers stepped aboard the carriage directly from the raised walkway.",
+        ar: "صَعِدَ الرُّكَّابُ إِلَى العَرَبَةِ مُبَاشَرَةً مِنَ المَمَرِّ المُرْتَفِع.",
+      },
+    ],
+    exampleSentence: "Commuters stood behind the safety line waiting for the morning train.",
+    exampleArabic:
+      "وَقَفَ الرُّكَّابُ خَلْفَ خَطِّ الأَمَانِ عَلَى رَصِيفِ القِطَارِ فِي الصَّبَاح.",
+  },
+  "ticket-machine": {
+    id: "ticket-machine",
+    arabic: "آلَةُ التَّذَاكِر",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Touchscreen Kiosk",
+        en: "I selected a round-trip fare using the automated kiosk interface.",
+        ar: "اخْتَرْتُ تِذْكَرَةَ ذَهَابٍ وَإِيَابٍ بِاسْتِخْدَامِ آلَةِ التَّذَاكِر.",
+      },
+      {
+        context: "Contactless Pay",
+        en: "The machine accepted contactless payment and printed my receipt.",
+        ar: "قَبِلَتِ الآلَةُ الدَّفْعَ اللَّاتَلَامُسِيَّ وَطَبَعَتِ الإِيصَال.",
+      },
+      {
+        context: "Station Concourse",
+        en: "Several automated kiosks were available near the main entrance.",
+        ar: "تَوَفَّرَتْ عِدَّةُ أَكْشَاكٍ آلِيَّةٍ بِالقُرْبِ مِنَ المَدْخَلِ الرَّئِيسِيّ.",
+      },
+    ],
+    exampleSentence: "I selected a round-trip fare using the automated kiosk interface.",
+    exampleArabic: "اخْتَرْتُ تِذْكَرَةَ ذَهَابٍ وَإِيَابٍ بِاسْتِخْدَامِ آلَةِ التَّذَاكِر.",
+  },
+  "train-conductor": {
+    id: "train-conductor",
+    arabic: "مُحَصِّلُ التَّذَاكِر",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Fare Inspection",
+        en: "The uniformed official punched a hole in each passenger's ticket.",
+        ar: "ثَقَبَ المَسْؤُولُ ذُو الزِّيِّ الرَّسْمِيِّ تِذْكَرَةَ كُلِّ رَاكِب.",
+      },
+      {
+        context: "Passenger Safety",
+        en: "The rail manager blew the whistle to signal the train departure.",
+        ar: "أَطْلَقَ مَسْؤُولُ القِطَارِ الصَّفَّارَةَ لِلإِعْلَانِ عَنْ مُغَادَرَةِ القِطَار.",
+      },
+      {
+        context: "Route Guidance",
+        en: "The conductor answered travel questions about the upcoming junction.",
+        ar: "أَجَابَ المُحَصِّلُ عَنْ أَسْئِلَةِ السَّفَرِ حَوْلَ التَّقَاطُعِ القَادِم.",
+      },
+    ],
+    exampleSentence: "The uniformed official punched a hole in each passenger's ticket.",
+    exampleArabic: "ثَقَبَ المَسْؤُولُ ذُو الزِّيِّ الرَّسْمِيِّ تِذْكَرَةَ كُلِّ رَاكِب.",
+  },
+  "railway-track": {
+    id: "railway-track",
+    arabic: "سِكَّةٌ حَدِيدِيَّة",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Steel Rails",
+        en: "The steel rails stretched for hundreds of miles across the countryside.",
+        ar: "امْتَدَّتِ السِّكَّةُ الحَدِيدِيَّةُ لِمِئَاتِ الأَمْيَالِ عَبْرَ الرِّيف.",
+      },
+      {
+        context: "Track Switch",
+        en: "The mechanical switch guided the railcars onto the correct siding.",
+        ar: "وَجَّهَ التَّحْوِيلُ المِيكَانِيكِيُّ عَرَبَاتِ القِطَارِ إِلَى المَسَارِ الصَّحِيح.",
+      },
+      {
+        context: "High Speed Line",
+        en: "Maintenance crews inspected the electrified steel lines every morning.",
+        ar: "فَحَصَتْ فِرَقُ الصِّيَانَةِ الخُطُوطَ الحَدِيدِيَّةَ الكَهْرَبَائِيَّةَ كُلَّ صَبَاح.",
+      },
+    ],
+    exampleSentence: "The steel rails stretched for hundreds of miles across the countryside.",
+    exampleArabic: "امْتَدَّتِ السِّكَّةُ الحَدِيدِيَّةُ لِمِئَاتِ الأَمْيَالِ عَبْرَ الرِّيف.",
+  },
+  "passenger-car": {
+    id: "passenger-car",
+    arabic: "عَرَبَةُ الرُّكَّاب",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Quiet Carriage",
+        en: "Commuters read books quietly inside the air-conditioned carriage.",
+        ar: "قَرَأَ الرُّكَّابُ الكُتُبَ بِهُدُوءٍ دَاخِلَ عَرَبَةِ الرُّكَّابِ المُكَيَّفَة.",
+      },
+      {
+        context: "Window View",
+        en: "We enjoyed panoramic views of the mountains from our comfortable seats.",
+        ar: "اسْتَمْتَعْنَا بِمَنَاظِرَ بَانُورَامِيَّةٍ لِلْجِبَالِ مِنْ مَقَاعِدِنَا فِي العَرَبَة.",
+      },
+      {
+        context: "First Class",
+        en: "The luxury carriage offered complimentary snacks and power outlets.",
+        ar: "قَدَّمَتْ عَرَبَةُ الدَّرَجَةِ الأُولَى وَجَبَاتٍ خَفِيفَةً وَمَنَافِذَ طَاقَة.",
+      },
+    ],
+    exampleSentence: "Commuters read books quietly inside the air-conditioned carriage.",
+    exampleArabic:
+      "قَرَأَ الرُّكَّابُ الكُتُبَ بِهُدُوءٍ دَاخِلَ عَرَبَةِ الرُّكَّابِ المُكَيَّفَة.",
+  },
+  "commuter-train": {
+    id: "commuter-train",
+    arabic: "قِطَارُ الرُّكَّاب",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Morning Transit",
+        en: "Thousands of professionals board the regional rail every weekday.",
+        ar: "يَسْتَقِلُّ آلَافُ المِهَنِيِّينَ قِطَارَ الرُّكَّابِ كُلَّ يَوْمِ عَمَل.",
+      },
+      {
+        context: "Suburban Route",
+        en: "The local line stops at every suburban village along the coast.",
+        ar: "يَتَوَقَّفُ الخَطُّ المَحَلِّيُّ فِي كُلِّ قَرْيَةٍ عَلَى طُولِ السَّاحِل.",
+      },
+      {
+        context: "Fast Transport",
+        en: "Taking the daily rail service avoids downtown traffic jams.",
+        ar: "تَجَنَّبَ اسْتِخْدَامُ خِدْمَةِ القِطَارِ اليَوْمِيَّةِ الِازْدِحَامَ المُرُورِيَّ فِي المَدِينَة.",
+      },
+    ],
+    exampleSentence: "Thousands of professionals board the regional rail every weekday.",
+    exampleArabic: "يَسْتَقِلُّ آلَافُ المِهَنِيِّينَ قِطَارَ الرُّكَّابِ كُلَّ يَوْمِ عَمَل.",
+  },
+  "station-clock": {
+    id: "station-clock",
+    arabic: "سَاعَةُ المَحَطَّة",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Synchronized Time",
+        en: "The historic dial showed exactly two minutes before departure.",
+        ar: "أَظْهَرَتْ سَاعَةُ المَحَطَّةِ التَّارِيخِيَّةُ دَقِيقَتَيْنِ قَبْلَ المُغَادَرَة.",
+      },
+      {
+        context: "Concourse Meeting",
+        en: "Friends agreed to meet beneath the giant four-sided timepiece.",
+        ar: "اتَّفَقَ الأَصْدِقَاءُ عَلَى اللِّقَاءِ تَحْتَ السَّاعَةِ الكَبِيرَةِ فِي البَهْو.",
+      },
+      {
+        context: "Accurate Punctuality",
+        en: "All railway departures were synchronized with the central clock.",
+        ar: "ضُبِطَتْ جَمِيعُ مُغَادَرَاتِ القِطَارَاتِ مَعَ السَّاعَةِ المَرْكَزِيَّة.",
+      },
+    ],
+    exampleSentence: "The historic dial showed exactly two minutes before departure.",
+    exampleArabic:
+      "أَظْهَرَتْ سَاعَةُ المَحَطَّةِ التَّارِيخِيَّةُ دَقِيقَتَيْنِ قَبْلَ المُغَادَرَة.",
+  },
+  "ticket-barrier": {
+    id: "ticket-barrier",
+    arabic: "حَاجِزُ التَّذَاكِر",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Automated Gate",
+        en: "Tap your smartcard against the sensor to open the turnstile flaps.",
+        ar: "ضَعْ بِطَاقَتَكَ الذَّكِيَّةَ عَلَى الحَسَّاسِ لِفَتْحِ حَاجِزِ التَّذَاكِر.",
+      },
+      {
+        context: "Concourse Entry",
+        en: "Commuters flowed rapidly through twenty automated turnstiles.",
+        ar: "تَدَفَّقَ الرُّكَّابُ بِسُرْعَةٍ عَبْرَ عِشْرِينَ بَوَّابَةً آلِيَّة.",
+      },
+      {
+        context: "Access Control",
+        en: "The barrier displayed a green light confirming successful validation.",
+        ar: "أَظْهَرَ الحَاجِزُ ضَوْءًا أَخْضَرَ يُؤَكِّدُ صِحَّةَ التَّذْكِرَة.",
+      },
+    ],
+    exampleSentence: "Tap your smartcard against the sensor to open the turnstile flaps.",
+    exampleArabic: "ضَعْ بِطَاقَتَكَ الذَّكِيَّةَ عَلَى الحَسَّاسِ لِفَتْحِ حَاجِزِ التَّذَاكِر.",
+  },
+  "express-train": {
+    id: "express-train",
+    arabic: "القِطَارُ السَّرِيع",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Non-stop Journey",
+        en: "The bullet train zipped between capital cities in under ninety minutes.",
+        ar: "قَطَعَ القِطَارُ السَّرِيعُ المَسَافَةَ بَيْنَ العَاصِمَتَيْنِ فِي أَقَلَّ مِنْ 90 دَقِيقَة.",
+      },
+      {
+        context: "Modern Transit",
+        en: "Aerodynamic railcars traveled at speeds exceeding two hundred miles per hour.",
+        ar: "سَافَرَتِ العَرَبَاتُ الِانْسِيَابِيَّةُ بِسُرْعَاتٍ تَجَاوَزَتْ مِائَتَيْ مِيلٍ فِي السَّاعَة.",
+      },
+      {
+        context: "Fast Intercity",
+        en: "Business travelers preferred the non-stop rail connection over driving.",
+        ar: "فَضَّلَ رِجَالُ الأَعْمَالِ الرِّحْلَةَ المُبَاشِرَةَ بِالقِطَارِ عَلَى القِيَادَة.",
+      },
+    ],
+    exampleSentence: "The bullet train zipped between capital cities in under ninety minutes.",
+    exampleArabic:
+      "قَطَعَ القِطَارُ السَّرِيعُ المَسَافَةَ بَيْنَ العَاصِمَتَيْنِ فِي أَقَلَّ مِنْ 90 دَقِيقَة.",
+  },
+  "hotel-reception": {
+    id: "hotel-reception",
+    arabic: "مَكْتَبُ الاسْتِقْبَال",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Check-in Counter",
+        en: "The friendly clerk welcomed guests at the marble front desk.",
+        ar: "رَحَّبَ المَسْؤُولُ اللَّطِيفُ بِالضُّيُوفِ عِنْدَ مَكْتَبِ اسْتِقْبَالِ الفُنْدُق.",
+      },
+      {
+        context: "Registration Desk",
+        en: "We filled in the registration card and received our room keycard.",
+        ar: "مَلَأْنَا بِطَاقَةَ التَّسْجِيلِ وَاسْتَلَمْنَا بِطَاقَةَ الغُرْفَةِ مِنَ الِاسْتِقْبَال.",
+      },
+      {
+        context: "Lobby Assistance",
+        en: "The front office staff arranged a taxi for our early departure.",
+        ar: "رَتَّبَ مَكْتَبُ الاسْتِقْبَالِ سَيَّارَةَ أُجْرَةٍ لِمُغَادَرَتِنَا المُبَكِّرَة.",
+      },
+    ],
+    exampleSentence: "The friendly clerk welcomed guests at the marble front desk.",
+    exampleArabic:
+      "رَحَّبَ المَسْؤُولُ اللَّطِيفُ بِالضُّيُوفِ عِنْدَ مَكْتَبِ اسْتِقْبَالِ الفُنْدُق.",
+  },
+  "room-key": {
+    id: "room-key",
+    arabic: "مِفْتَاحُ الغُرْفَة",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Door Access",
+        en: "Insert the electronic card into the slot to open the suite door.",
+        ar: "أَدْخِلِ البِطَاقَةَ الإِلِكْتُرُونِيَّةَ فِي الفَتْحَةِ لِفَتْحِ بَابِ الغُرْفَة.",
+      },
+      {
+        context: "Keycard Magnet",
+        en: "Keep the plastic card away from strong magnets to avoid demagnetization.",
+        ar: "احْفَظِ البِطَاقَةَ البِلَاسْتِيكِيَّةَ بَعِيدًا عَنِ المَغْنَاطِيس.",
+      },
+      {
+        context: "Reception Issue",
+        en: "The clerk handed us two plastic cards programmed for the top floor.",
+        ar: "سَلَّمَنَا المُوَظَّفُ بِطَاقَتَيْنِ مُبَرْمَجَتَيْنِ لِلطَّابِقِ العُلْوِيّ.",
+      },
+    ],
+    exampleSentence: "Insert the electronic card into the slot to open the suite door.",
+    exampleArabic:
+      "أَدْخِلِ البِطَاقَةَ الإِلِكْتُرُونِيَّةَ فِي الفَتْحَةِ لِفَتْحِ بَابِ الغُرْفَة.",
+  },
+  "hotel-lobby": {
+    id: "hotel-lobby",
+    arabic: "بَهْوُ الفُنْدُق",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Grand Foyer",
+        en: "A sparkling chandelier hung high above the marble seating area.",
+        ar: "عُلِّقَتْ ثُرَيَّا لَامِعَةٌ فِي أَعْلَى بَهْوِ الفُنْدُقِ الرُّخَامِيّ.",
+      },
+      {
+        context: "Meeting Spot",
+        en: "We sat in plush velvet armchairs waiting for our city tour guide.",
+        ar: "جَلَسْنَا فِي كَرَاسِيَّ مُخْمَلِيَّةٍ دَاخِلَ البَهْوِ فِي انْتِظَارِ المُرْشِد.",
+      },
+      {
+        context: "Reception Lounge",
+        en: "Soft classical piano music played gently throughout the foyer.",
+        ar: "عُزِفَتْ مُوسِيقَى كَلَاسِيكِيَّةٌ هَادِئَةٌ فِي أَرْجَاءِ بَهْوِ الفُنْدُق.",
+      },
+    ],
+    exampleSentence: "A sparkling chandelier hung high above the marble seating area.",
+    exampleArabic: "عُلِّقَتْ ثُرَيَّا لَامِعَةٌ فِي أَعْلَى بَهْوِ الفُنْدُقِ الرُّخَامِيّ.",
+  },
+  "room-service": {
+    id: "room-service",
+    arabic: "خِدْمَةُ الغُرَف",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Dining Delivery",
+        en: "We ordered hot pancakes and fresh orange juice to our bedroom.",
+        ar: "طَلَبْنَا وَجْبَةَ الإِفْطَارِ عَبْرَ خِدْمَةِ الغُرَفِ إِلَى غُرْفَتِنَا.",
+      },
+      {
+        context: "In-Room Dining",
+        en: "The server rolled a dining cart with covered silver platters into the room.",
+        ar: "أَدْخَلَ المُوَظَّفُ عَرَبَةَ الطَّعَامِ إِلَى الجَنَاح.",
+      },
+      {
+        context: "Midnight Menu",
+        en: "Guests can dial zero to order warm soups from the 24-hour kitchen.",
+        ar: "يُمْكِنُ لِلضُّيُوفِ طَلَبُ الطَّعَامِ فِي أَيِّ وَقْتٍ عَبْرَ خِدْمَةِ الغُرَف.",
+      },
+    ],
+    exampleSentence: "We ordered hot pancakes and fresh orange juice to our bedroom.",
+    exampleArabic: "طَلَبْنَا وَجْبَةَ الإِفْطَارِ عَبْرَ خِدْمَةِ الغُرَفِ إِلَى غُرْفَتِنَا.",
+  },
+  "hotel-safe": {
+    id: "hotel-safe",
+    arabic: "خَزْنَةُ الفُنْدُق",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Secure Lockbox",
+        en: "Store your passports and jewelry inside the four-digit lockbox.",
+        ar: "احْفَظْ جَوَازَاتِ السَّفَرِ وَالمُجَوْهَرَاتِ دَاخِلَ خَزْنَةِ الفُنْدُق.",
+      },
+      {
+        context: "Digital Security",
+        en: "Enter a private PIN code to lock and unlock the steel safe.",
+        ar: "أَدْخِلْ رَمْزَ الأَمَانِ لِقَفْلِ وَفَتْحِ الخَزْنَةِ الإِلِكْتُرُونِيَّة.",
+      },
+      {
+        context: "Valuables Vault",
+        en: "Guests rested peacefully knowing their documents were locked securely.",
+        ar: "اطْمَأَنَّ الضُّيُوفُ لِوُجُودِ وَثَائِقِهِمْ دَاخِلَ خَزْنَةِ الفُنْدُقِ الآمِنَة.",
+      },
+    ],
+    exampleSentence: "Store your passports and jewelry inside the four-digit lockbox.",
+    exampleArabic: "احْفَظْ جَوَازَاتِ السَّفَرِ وَالمُجَوْهَرَاتِ دَاخِلَ خَزْنَةِ الفُنْدُق.",
+  },
+  "balcony-view": {
+    id: "balcony-view",
+    arabic: "إِطْلَالَةُ الشُّرْفَة",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Scenic Outlook",
+        en: "The master bedroom opened to a breathtaking coastal horizon.",
+        ar: "فَتَحَتْ غُرْفَةُ النَّوْمِ عَلَى إِطْلَالَةِ الشُّرْفَةِ السَّاحِلِيَّةِ الخَلَّابَة.",
+      },
+      {
+        context: "Sunset Horizon",
+        en: "We sipped tea while watching the sun set over the distant hills.",
+        ar: "شَرِبْنَا الشَّايَ بَيْنَمَا كُنَّا نُشَاهِدُ الغُرُوبَ مِنَ الشُّرْفَة.",
+      },
+      {
+        context: "Mountain Panorama",
+        en: "The room terrace offered uninterrupted views of the green valley.",
+        ar: "وَفَّرَتْ شُرْفَةُ الغُرْفَةِ مَنَاظِرَ بَانُورَامِيَّةً لِلْوَادِي الأَخْضَر.",
+      },
+    ],
+    exampleSentence: "The master bedroom opened to a breathtaking coastal horizon.",
+    exampleArabic:
+      "فَتَحَتْ غُرْفَةُ النَّوْمِ عَلَى إِطْلَالَةِ الشُّرْفَةِ السَّاحِلِيَّةِ الخَلَّابَة.",
+  },
+  "key-card": {
+    id: "key-card",
+    arabic: "بِطَاقَةُ مِفْتَاح",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Card Swipe",
+        en: "Wave your digital card against the sensor beside the entrance handle.",
+        ar: "مَرِّرْ بِطَاقَةَ المِفْتَاحِ أَمَامَ الحَسَّاسِ بِجَانِبِ مَقْبَضِ البَاب.",
+      },
+      {
+        context: "Power Activation",
+        en: "Placing the plastic badge into the wall cradle turns on the room lights.",
+        ar: "وَضْعُ بِطَاقَةِ المِفْتَاحِ فِي مَقْبِسِ الجِدَارِ يُشَغِّلُ أَضْوَاءَ الغُرْفَة.",
+      },
+      {
+        context: "Access Badge",
+        en: "Each registered guest received their own personalized plastic badge.",
+        ar: "اسْتَلَمَ كُلُّ ضَيْفٍ بِطَاقَةَ مِفْتَاحٍ خَاصَّةً بِهِ لِلدُّخُول.",
+      },
+    ],
+    exampleSentence: "Wave your digital card against the sensor beside the entrance handle.",
+    exampleArabic: "مَرِّرْ بِطَاقَةَ المِفْتَاحِ أَمَامَ الحَسَّاسِ بِجَانِبِ مَقْبَضِ البَاب.",
+  },
+  "valet-parking": {
+    id: "valet-parking",
+    arabic: "خِدْمَةُ رَكْنِ السَّيَّارَات",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Vehicle Attendant",
+        en: "Hand your car keys to the attendant at the circular driveway.",
+        ar: "سَلِّمْ مَفَاتِيحَ سَيَّارَتِكَ لِعَامِلِ خِدْمَةِ رَكْنِ السَّيَّارَات.",
+      },
+      {
+        context: "Underground Garage",
+        en: "The staff parked the vehicle safely in the covered basement lot.",
+        ar: "أَوْقَفَ المُوَظَّفُ السَّيَّارَةَ بِأَمَانٍ فِي المِرْآبِ المَحْمِيّ.",
+      },
+      {
+        context: "Convenient Service",
+        en: "Present your claim ticket at the front booth to retrieve your car.",
+        ar: "قَدِّمْ تَذْكِرَةَ الِاسْتِلَامِ عِنْدَ الكُشْكِ لِاسْتِعَادَةِ سَيَّارَتِك.",
+      },
+    ],
+    exampleSentence: "Hand your car keys to the attendant at the circular driveway.",
+    exampleArabic: "سَلِّمْ مَفَاتِيحَ سَيَّارَتِكَ لِعَامِلِ خِدْمَةِ رَكْنِ السَّيَّارَات.",
+  },
+
+  "post-office": {
+    id: "post-office",
+    arabic: "مَكْتَبُ البَرِيد",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Mail Facility",
+        en: "We visited the central civic facility to ship parcels abroad.",
+        ar: "زُرْنَا مَكْتَبَ البَرِيدِ المَرْكَزِيَّ لِشَحْنِ الطُّرُودِ إِلَى الخَارِج.",
+      },
+      {
+        context: "Postal Services",
+        en: "Citizens purchase stamps and money orders at the local branch.",
+        ar: "يَشْتَرِي المُواطِنُونَ الطَّوَابِعَ مِنْ مَكْتَبِ البَرِيدِ المَحَلِّيّ.",
+      },
+      {
+        context: "Service Counter",
+        en: "A line of customers waited to drop off registered mail packets.",
+        ar: "انْتَظَرَ العُمَلَاءُ فِي مَكْتَبِ البَرِيدِ لِتَسْلِيمِ الرَّسَائِلِ المُسَجَّلَة.",
+      },
+    ],
+    exampleSentence: "We visited the central civic facility to ship parcels abroad.",
+    exampleArabic: "زُرْنَا مَكْتَبَ البَرِيدِ المَرْكَزِيَّ لِشَحْنِ الطُّرُودِ إِلَى الخَارِج.",
+  },
+  "postage-stamp": {
+    id: "postage-stamp",
+    arabic: "طَابِعُ بَرِيد",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Adhesive Label",
+        en: "Affix the collectible gummed sticker onto the top right corner.",
+        ar: "أَلْصِقْ طَابِعَ البَرِيدِ فِي الزَّاوِيَةِ العُلْيَا اليُمْنَى مِنَ المَظْرُوف.",
+      },
+      {
+        context: "Collector Stamp",
+        en: "Philatelists value historical postage prints from the nineteenth century.",
+        ar: "يُقَدِّرُ هُوَاةُ جَمْعِ الطَّوَابِعِ الإِصْدَارَاتِ التَّارِيخِيَّة.",
+      },
+      {
+        context: "Mailing Fee",
+        en: "The international airmail rate required two first-class stickers.",
+        ar: "تَطَلَّبَتِ الرِّسَالَةُ الدَّوْلِيَّةُ طَابِعَيْ بَرِيدٍ مِنَ الدَّرَجَةِ الأُولَى.",
+      },
+    ],
+    exampleSentence: "Affix the collectible gummed sticker onto the top right corner.",
+    exampleArabic:
+      "أَلْصِقْ طَابِعَ البَرِيدِ فِي الزَّاوِيَةِ العُلْيَا اليُمْنَى مِنَ المَظْرُوف.",
+  },
+  envelope: {
+    id: "envelope",
+    arabic: "مَظْرُوف",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Paper Wrapper",
+        en: "Slide the handwritten letter inside the protective paper sleeve.",
+        ar: "أَدْخِلِ الرِّسَالَةَ المَكْتُوبَةَ بِخَطِّ اليَدِ دَاخِلَ المَظْرُوف.",
+      },
+      {
+        context: "Mailing Address",
+        en: "Write the recipient name and postal code clearly on the front.",
+        ar: "اكْتُبْ عُنْوَانَ المُسْتَلِمِ بِوُضُوحٍ عَلَى المَظْرُوف.",
+      },
+      {
+        context: "Sealed Packet",
+        en: "Moisten the adhesive flap to securely seal the message.",
+        ar: "أَغْلِقْ طَرَفَ المَظْرُوفِ اللَّاصِقَ بِإِحْكَامٍ لِحِمَايَةِ الرِّسَالَة.",
+      },
+    ],
+    exampleSentence: "Slide the handwritten letter inside the protective paper sleeve.",
+    exampleArabic: "أَدْخِلِ الرِّسَالَةَ المَكْتُوبَةَ بِخَطِّ اليَدِ دَاخِلَ المَظْرُوف.",
+  },
+  mailbox: {
+    id: "mailbox",
+    arabic: "صُنْدُوقُ البَرِيد",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Street Pillar",
+        en: "Drop your stamped envelopes into the red curbside container.",
+        ar: "ضَعْ رَسَائِلَكَ المَخْتُومَةَ دَاخِلَ صُنْدُوقِ البَرِيدِ فِي الشَّارِع.",
+      },
+      {
+        context: "Home Delivery",
+        en: "The carrier placed today magazines and letters into our front box.",
+        ar: "وَضَعَ عَامِلُ التَّوْصِيلِ الرَّسَائِلَ فِي صُنْدُوقِ البَرِيدِ أَمَامَ مَنْزِلِنَا.",
+      },
+      {
+        context: "Collection Slot",
+        en: "Postal vans empty the community collection bin twice every day.",
+        ar: "تُفَرِّغُ شَاحِنَاتُ البَرِيدِ صُنْدُوقَ البَرِيدِ مَرَّتَيْنِ كُلَّ يَوْم.",
+      },
+    ],
+    exampleSentence: "Drop your stamped envelopes into the red curbside container.",
+    exampleArabic: "ضَعْ رَسَائِلَكَ المَخْتُومَةَ دَاخِلَ صُنْدُوقِ البَرِيدِ فِي الشَّارِع.",
+  },
+  "postal-worker": {
+    id: "postal-worker",
+    arabic: "عَامِلُ البَرِيد",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Mail Carrier",
+        en: "The neighborhood carrier delivered packages in every kind of weather.",
+        ar: "قَامَ عَامِلُ البَرِيدِ بِتَوْصِيلِ الطُّرُودِ فِي كُلِّ الظُّرُوفِ الجَوِّيَّة.",
+      },
+      {
+        context: "Sorting Staff",
+        en: "Dedicated logistics employees organize thousands of letters daily.",
+        ar: "يُنَظِّمُ عَامِلُ البَرِيدِ فِي المَرْكَزِ آلَافَ الرَّسَائِلِ يَوْمِيًّا.",
+      },
+      {
+        context: "Counter Clerk",
+        en: "The clerk behind the postal counter weighed our heavy parcel.",
+        ar: "قَامَ عَامِلُ البَرِيدِ خَلْفَ المِنْضَدَةِ بِوَزْنِ طَرْدِنَا الثَّقِيل.",
+      },
+    ],
+    exampleSentence: "The neighborhood carrier delivered packages in every kind of weather.",
+    exampleArabic:
+      "قَامَ عَامِلُ البَرِيدِ بِتَوْصِيلِ الطُّرُودِ فِي كُلِّ الظُّرُوفِ الجَوِّيَّة.",
+  },
+  parcel: {
+    id: "parcel",
+    arabic: "طَرْد",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Cardboard Box",
+        en: "The cardboard box contained birthday gifts wrapped in bubble plastic.",
+        ar: "احْتَوَى الطَّرْدُ عَلَى هَدَايَا عِيدِ المِيلَادِ المَحْمِيَّةِ بِعِنَايَة.",
+      },
+      {
+        context: "Package Delivery",
+        en: "A courier delivered the registered shipping box to our doorstep.",
+        ar: "سَلَّمَ السَّاعِي الطَّرْدَ المُسَجَّلَ إِلَى عَتَبَةِ بَابِنَا.",
+      },
+      {
+        context: "Express Shipping",
+        en: "Ensure the taped package is sealed securely before sending.",
+        ar: "تَأَكَّدْ مِنْ إِغْلَاقِ الطَّرْدِ بِالشَّرِيطِ اللَّاصِقِ قَبْلَ إِرْسَالِه.",
+      },
+    ],
+    exampleSentence: "The cardboard box contained birthday gifts wrapped in bubble plastic.",
+    exampleArabic: "احْتَوَى الطَّرْدُ عَلَى هَدَايَا عِيدِ المِيلَادِ المَحْمِيَّةِ بِعِنَايَة.",
+  },
+  "package-scale": {
+    id: "package-scale",
+    arabic: "مِيزَانُ الطُّرُود",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Weight Measurement",
+        en: "The postal clerk placed our box on the digital weighing platform.",
+        ar: "وَضَعَ مُوَظَّفُ البَرِيدِ الصُّنْدُوقَ عَلَى مِيزَانِ الطُّرُودِ الرَّقْمِيّ.",
+      },
+      {
+        context: "Postage Calculation",
+        en: "The apparatus calculated exact shipping rates based on gross weight.",
+        ar: "حَدَّدَ مِيزَانُ الطُّرُودِ التَّكْلِفَةَ بِنَاءً عَلَى الوَزْنِ الإِجْمَالِيّ.",
+      },
+      {
+        context: "Accurate Balance",
+        en: "Heavy parcels are weighed before receiving their transport barcode.",
+        ar: "تُوزَنُ الطُّرُودُ الثَّقِيلَةُ عَلَى المِيزَانِ قَبْلَ طِبَاعَةِ الرَّمْز.",
+      },
+    ],
+    exampleSentence: "The postal clerk placed our box on the digital weighing platform.",
+    exampleArabic: "وَضَعَ مُوَظَّفُ البَرِيدِ الصُّنْدُوقَ عَلَى مِيزَانِ الطُّرُودِ الرَّقْمِيّ.",
+  },
+  "tracking-number": {
+    id: "tracking-number",
+    arabic: "رَقْمُ التَّتَبُّع",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Shipment Identifier",
+        en: "Enter the sixteen-digit code on the courier website to view delivery progress.",
+        ar: "أَدْخِلْ رَقْمَ التَّتَبُّعِ عَلَى المَوْقِعِ لِمَعْرِفَةِ مَسَارِ الشِّحْنَة.",
+      },
+      {
+        context: "Delivery Status",
+        en: "The digital system confirmed that the package arrived in the hub.",
+        ar: "أَكَّدَ رَقْمُ التَّتَبُّعِ وُصُولَ الطَّرْدِ إِلَى المَرْكَزِ الرَّئِيسِيّ.",
+      },
+      {
+        context: "Receipt Code",
+        en: "Keep your paper receipt safe because it contains the tracking code.",
+        ar: "احْتَفِظْ بِالإِيصَالِ لِأَنَّهُ يَحْتَوِي عَلَى رَقْمِ التَّتَبُّعِ لِشِحْنَتِك.",
+      },
+    ],
+    exampleSentence:
+      "Enter the sixteen-digit code on the courier website to view delivery progress.",
+    exampleArabic: "أَدْخِلْ رَقْمَ التَّتَبُّعِ عَلَى المَوْقِعِ لِمَعْرِفَةِ مَسَارِ الشِّحْنَة.",
+  },
+  "post-card": {
+    id: "post-card",
+    arabic: "بِطَاقَةٌ بَرِيدِيَّة",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Scenic Card",
+        en: "We mailed a picture card showing sunny beaches back to our family.",
+        ar: "أَرْسَلْنَا بِطَاقَةً بَرِيدِيَّةً تَحْمِلُ صُورَةَ الشَّاطِئِ لِعَائِلَتِنَا.",
+      },
+      {
+        context: "Holiday Note",
+        en: "I wrote a brief holiday greeting on the glossy souvenir card.",
+        ar: "كَتَبْتُ تَحِيَّةً قَصِيرَةً عَلَى البِطَاقَةِ البَرِيدِيَّةِ التِّذْكَارِيَّة.",
+      },
+      {
+        context: "Souvenir Mail",
+        en: "Tourists buy colorful cards at kiosks to send to friends.",
+        ar: "يَشْتَرِي السُّيَّاحُ البِطَاقَاتِ البَرِيدِيَّةَ لِمُشَارَكَةِ ذِكْرَيَاتِهِم.",
+      },
+    ],
+    exampleSentence: "We mailed a picture card showing sunny beaches back to our family.",
+    exampleArabic: "أَرْسَلْنَا بِطَاقَةً بَرِيدِيَّةً تَحْمِلُ صُورَةَ الشَّاطِئِ لِعَائِلَتِنَا.",
+  },
+  "delivery-truck": {
+    id: "delivery-truck",
+    arabic: "شَاحِنَةُ التَّوْصِيل",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Courier Van",
+        en: "The yellow courier van pulled up to our curb with three boxes.",
+        ar: "تَوَقَّفَتْ شَاحِنَةُ التَّوْصِيلِ عِنْدَ رَصِيفِنَا لِتَسْلِيمِ الصَّنَادِيق.",
+      },
+      {
+        context: "Logistics Transport",
+        en: "Fleet vehicles drive hundreds of neighborhood miles every morning.",
+        ar: "تَجُوبُ شَاحِنَاتُ التَّوْصِيلِ الأَحْيَاءَ السَّكَنِيَّةَ كُلَّ صَبَاح.",
+      },
+      {
+        context: "Cargo Transport",
+        en: "Drivers loaded parcel crates carefully into the rear cargo hold.",
+        ar: "حَمَّلَ السَّائِقُونَ الطُّرُودَ دَاخِلَ شَاحِنَةِ التَّوْصِيلِ بِعِنَايَة.",
+      },
+    ],
+    exampleSentence: "The yellow courier van pulled up to our curb with three boxes.",
+    exampleArabic: "تَوَقَّفَتْ شَاحِنَةُ التَّوْصِيلِ عِنْدَ رَصِيفِنَا لِتَسْلِيمِ الصَّنَادِيق.",
+  },
+  airmail: {
+    id: "airmail",
+    arabic: "بَرِيدٌ جَوِّيّ",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Aviation Mail",
+        en: "Send urgent overseas documents by expedited plane transport.",
+        ar: "أَرْسِلِ الوَثَائِقَ الهَامَّةَ إِلَى الخَارِجِ عَبْرَ البَرِيدِ الجَوِّيّ.",
+      },
+      {
+        context: "Blue Sticker",
+        en: "The blue and red border label indicates overseas aviation shipment.",
+        ar: "يُشِيرُ المُلْصَقُ المُمَيَّزُ إِلَى إِرْسَالِ الخِطَابِ عَبْرَ البَرِيدِ الجَوِّيّ.",
+      },
+      {
+        context: "Global Transit",
+        en: "Letters reached Tokyo in three days thanks to rapid aviation logistics.",
+        ar: "وَصَلَتِ الرَّسَائِلُ فِي ثَلَاثَةِ أَيَّامٍ بِفَضْلِ البَرِيدِ الجَوِّيّ.",
+      },
+    ],
+    exampleSentence: "Send urgent overseas documents by expedited plane transport.",
+    exampleArabic: "أَرْسِلِ الوَثَائِقَ الهَامَّةَ إِلَى الخَارِجِ عَبْرَ البَرِيدِ الجَوِّيّ.",
+  },
+  "sorting-facility": {
+    id: "sorting-facility",
+    arabic: "مَرْكَزُ الفَرْز",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Mechanized Hub",
+        en: "High-speed conveyor belts organize letters by regional zip codes.",
+        ar: "تُنَظِّمُ السُّيُورُ الآلِيَّةُ الرَّسَائِلَ حَسَبَ الرَّمْزِ البَرِيدِيِّ فِي مَرْكَزِ الفَرْز.",
+      },
+      {
+        context: "Distribution Depot",
+        en: "Thousands of parcel containers pass through the logistics depot daily.",
+        ar: "تَمُرُّ آلَافُ الحَاوِيَاتِ عَبْرَ مَرْكَزِ الفَرْزِ المَرْكَزِيِّ يَوْمِيًّا.",
+      },
+      {
+        context: "Regional Hub",
+        en: "Night shift crews sorted packages to prepare for morning transit.",
+        ar: "قَامَتْ فِرَقُ العَمَلِ بِتَصْنِيفِ الطُّرُودِ دَاخِلَ مَرْكَزِ الفَرْزِ لَيْلًا.",
+      },
+    ],
+    exampleSentence: "High-speed conveyor belts organize letters by regional zip codes.",
+    exampleArabic:
+      "تُنَظِّمُ السُّيُورُ الآلِيَّةُ الرَّسَائِلَ حَسَبَ الرَّمْزِ البَرِيدِيِّ فِي مَرْكَزِ الفَرْز.",
+  },
+  "bank-branch": {
+    id: "bank-branch",
+    arabic: "فَرْعُ البَنْك",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Local Office",
+        en: "The neighborhood banking office opens at nine o'clock every morning.",
+        ar: "يَفْتَحُ فَرْعُ البَنْكِ المَحَلِّيُّ أَبْوَابَهُ فِي التَّاسِعَةِ صَبَاحًا.",
+      },
+      {
+        context: "Financial Services",
+        en: "Customers speak with advisors about mortgages inside the local office.",
+        ar: "يَتَحَدَّثُ العُمَلَاءُ مَعَ المُسْتَشَارِينَ دَاخِلَ فَرْعِ البَنْك.",
+      },
+      {
+        context: "Community Banking",
+        en: "We opened our savings accounts at the downtown banking center.",
+        ar: "فَتَحْنَا حِسَابَاتِ التَّوْفِيرِ فِي فَرْعِ البَنْكِ فِي وَسَطِ المَدِينَة.",
+      },
+    ],
+    exampleSentence: "The neighborhood banking office opens at nine o'clock every morning.",
+    exampleArabic: "يَفْتَحُ فَرْعُ البَنْكِ المَحَلِّيُّ أَبْوَابَهُ فِي التَّاسِعَةِ صَبَاحًا.",
+  },
+  atm: {
+    id: "atm",
+    arabic: "صَرَّافٌ آلِيّ",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Cash Dispenser",
+        en: "Insert your debit card to withdraw paper currency from the cash machine.",
+        ar: "أَدْخِلْ بِطَاقَتَكَ لِسَحْبِ النُّقُودِ الوَرَقِيَّةِ مِنَ الصَّرَّافِ الآلِيّ.",
+      },
+      {
+        context: "24-Hour Terminal",
+        en: "The outdoor banking kiosk is accessible twenty-four hours a day.",
+        ar: "يُمْكِنُ اسْتِخْدَامُ الصَّرَّافِ الآلِيِّ عَلَى مَدَارِ السَّاعَة.",
+      },
+      {
+        context: "Touchscreen Machine",
+        en: "Enter your four-digit secret PIN on the keypad to view balances.",
+        ar: "أَدْخِلْ رَقْمَكَ السِّرِّيَّ فِي الصَّرَّافِ الآلِيِّ لِمَعْرِفَةِ الرَّصِيد.",
+      },
+    ],
+    exampleSentence: "Insert your debit card to withdraw paper currency from the cash machine.",
+    exampleArabic:
+      "أَدْخِلْ بِطَاقَتَكَ لِسَحْبِ النُّقُودِ الوَرَقِيَّةِ مِنَ الصَّرَّافِ الآلِيّ.",
+  },
+  "teller-counter": {
+    id: "teller-counter",
+    arabic: "مِنْضَدَةُ الصَّرَّاف",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Service Desk",
+        en: "The cashier counted paper bills behind the reinforced glass window.",
+        ar: "عَدَّ المَسْؤُولُ النُّقُودَ خَلْفَ مِنْضَدَةِ الصَّرَّافِ الزُّجَاجِيَّةِ الآمِنَة.",
+      },
+      {
+        context: "Cashier Station",
+        en: "Step forward to the numbered station to deposit business checks.",
+        ar: "تَقَدَّمْ إِلَى مِنْضَدَةِ الصَّرَّافِ لِإِيدَاعِ الشِّيكَاتِ التِّجَارِيَّة.",
+      },
+      {
+        context: "Personal Service",
+        en: "The friendly banking clerk stamped our deposit slip at the window.",
+        ar: "خَتَمَ المُوَظَّفُ قَسِيمَةَ الإِيدَاعِ عِنْدَ مِنْضَدَةِ الصَّرَّافِ بِابْتِسَامَة.",
+      },
+    ],
+    exampleSentence: "The cashier counted paper bills behind the reinforced glass window.",
+    exampleArabic:
+      "عَدَّ المَسْؤُولُ النُّقُودَ خَلْفَ مِنْضَدَةِ الصَّرَّافِ الزُّجَاجِيَّةِ الآمِنَة.",
+  },
+  banknote: {
+    id: "banknote",
+    arabic: "وَرَقَةٌ نَقْدِيَّة",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Paper Currency",
+        en: "The cashier inspected the watermarks on the fifty-dollar paper bill.",
+        ar: "فَحَصَ الصَّرَّافُ العَلَامَاتِ المَائِيَّةَ عَلَى الوَرَقَةِ النَّقْدِيَّة.",
+      },
+      {
+        context: "Polymer Cash",
+        en: "New polymer currency bills are durable and resistant to water damage.",
+        ar: "الأَوْرَاقُ النَّقْدِيَّةُ الجَدِيدَةُ مَتِينَةٌ وَمُقَاوِمَةٌ لِلْمَاء.",
+      },
+      {
+        context: "Currency Notes",
+        en: "He organized the colorful bills neatly inside his leather wallet.",
+        ar: "رَتَّبَ الأَوْرَاقَ النَّقْدِيَّةَ المُلَوَّنَةَ دَاخِلَ مَحْفَظَتِهِ الجِلْدِيَّة.",
+      },
+    ],
+    exampleSentence: "The cashier inspected the watermarks on the fifty-dollar paper bill.",
+    exampleArabic: "فَحَصَ الصَّرَّافُ العَلَامَاتِ المَائِيَّةَ عَلَى الوَرَقَةِ النَّقْدِيَّة.",
+  },
+  "bank-vault": {
+    id: "bank-vault",
+    arabic: "خَزِينَةُ البَنْك",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Fortified Room",
+        en: "The massive steel door of the underground vault requires dual codes.",
+        ar: "تَتَطَلَّبُ البَوَّابَةُ الفُولَاذِيَّةُ لِخَزِينَةِ البَنْكِ رَمْزَيْنِ لِفَتْحِهَا.",
+      },
+      {
+        context: "Secure Storage",
+        en: "Gold bullion and safety deposit boxes are stored inside the secure room.",
+        ar: "تُحْفَظُ سَبَائِكُ الذَّهَبِ وَالصَّنَادِيقُ دَاخِلَ خَزِينَةِ البَنْكِ الحَصِينَة.",
+      },
+      {
+        context: "Alarm Protection",
+        en: "Motion sensors and laser alarms monitor the reinforced repository.",
+        ar: "تُرَاقِبُ أَجْهِزَةُ الإِنْذَارِ خَزِينَةَ البَنْكِ عَلَى مَدَارِ السَّاعَة.",
+      },
+    ],
+    exampleSentence: "The massive steel door of the underground vault requires dual codes.",
+    exampleArabic:
+      "تَتَطَلَّبُ البَوَّابَةُ الفُولَاذِيَّةُ لِخَزِينَةِ البَنْكِ رَمْزَيْنِ لِفَتْحِهَا.",
+  },
+  "checking-account": {
+    id: "checking-account",
+    arabic: "حِسَابٌ جَارٍ",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Daily Banking",
+        en: "My monthly employment salary is directly deposited into my daily account.",
+        ar: "يُودَعُ رَاتِبِي الشَّهْرِيُّ مُبَاشَرَةً فِي حِسَابِي الجَارِي فِي البَنْك.",
+      },
+      {
+        context: "Bill Payments",
+        en: "Automatic monthly utilities and rent are paid from my transaction ledger.",
+        ar: "تُدْفَعُ فَوَاتِيرُ الإِيجَارِ وَالخَدَمَاتِ تِلْقَائِيًّا مِنْ حِسَابِي الجَارِي.",
+      },
+      {
+        context: "Online Banking",
+        en: "Log into the mobile app to monitor current balances and card activity.",
+        ar: "سَجِّلِ الدُّخُولَ إِلَى التَّطْبِيقِ لِمُتَابَعَةِ رَصِيدِ حِسَابِكَ الجَارِي.",
+      },
+    ],
+    exampleSentence: "My monthly employment salary is directly deposited into my daily account.",
+    exampleArabic: "يُودَعُ رَاتِبِي الشَّهْرِيُّ مُبَاشَرَةً فِي حِسَابِي الجَارِي فِي البَنْك.",
+  },
+  "deposit-slip": {
+    id: "deposit-slip",
+    arabic: "قَسِيمَةُ الإِيدَاع",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Banking Form",
+        en: "Write down your account number and cash total on the paper form.",
+        ar: "اكْتُبْ رَقْمَ الحِسَابِ وَالمَبْلَغَ عَلَى قَسِيمَةِ الإِيدَاعِ الوَرَقِيَّة.",
+      },
+      {
+        context: "Itemized Receipt",
+        en: "The teller stamped the transaction slip and provided a validated copy.",
+        ar: "خَتَمَ الصَّرَّافُ قَسِيمَةَ الإِيدَاعِ وَسَلَّمَنَا نُسْخَةً مُعْتَمَدَة.",
+      },
+      {
+        context: "Cheque Deposit",
+        en: "Itemize each customer cheque separately on the back of the slip.",
+        ar: "أَدْرِجْ كُلَّ شِيكٍ عَلَى حِدَةٍ خَلْفَ قَسِيمَةِ الإِيدَاع.",
+      },
+    ],
+    exampleSentence: "Write down your account number and cash total on the paper form.",
+    exampleArabic: "اكْتُبْ رَقْمَ الحِسَابِ وَالمَبْلَغَ عَلَى قَسِيمَةِ الإِيدَاعِ الوَرَقِيَّة.",
+  },
+  "bank-statement": {
+    id: "bank-statement",
+    arabic: "كَشْفُ حِسَاب",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Monthly Report",
+        en: "Review your monthly financial record to verify all card purchases.",
+        ar: "رَاجِعْ كَشْفَ حِسَابِكَ الشَّهْرِيَّ لِلتَّأَكُّدِ مِنْ جَمِيعِ المُشْتَرَيَات.",
+      },
+      {
+        context: "Digital Record",
+        en: "Download the electronic financial statement as a secure PDF file.",
+        ar: "حَمِّلْ كَشْفَ حِسَابِكَ الإِلِكْتُرُونِيَّ بِمَلَفِّ PDF آمِن.",
+      },
+      {
+        context: "Annual Audit",
+        en: "Accountants reviewed the year-end summary sheets to balance the books.",
+        ar: "دَقَّقَ المُحَاسِبُونَ كَشْفَ الحِسَابِ السَّنَوِيَّ لِضَبْطِ المِيزَانِيَّة.",
+      },
+    ],
+    exampleSentence: "Review your monthly financial record to verify all card purchases.",
+    exampleArabic:
+      "رَاجِعْ كَشْفَ حِسَابِكَ الشَّهْرِيَّ لِلتَّأَكُّدِ مِنْ جَمِيعِ المُشْتَرَيَات.",
+  },
+  "coin-jar": {
+    id: "coin-jar",
+    arabic: "جَرَّةُ النُّقُودِ المَعْدَنِيَّة",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Spare Change",
+        en: "Drop all your leftover pocket change into the glass savings jar.",
+        ar: "ضَعِ الفَكَّةَ المَعْدَنِيَّةَ دَاخِلَ جَرَّةِ النُّقُودِ المَعْدَنِيَّةِ فِي المَنْزِل.",
+      },
+      {
+        context: "Home Savings",
+        en: "The children filled the ceramic piggy pot to buy a new bicycle.",
+        ar: "مَلَأَ الأَطْفَالُ جَرَّةَ النُّقُودِ المَعْدَنِيَّةِ لِشِرَاءِ دَرَّاجَةٍ جَدِيدَة.",
+      },
+      {
+        context: "Coin Counting",
+        en: "We poured the metallic coins onto the table to count our savings.",
+        ar: "سَكَبْنَا القِطَعَ المَعْدَنِيَّةَ مِنْ جَرَّةِ النُّقُودِ لِحِسَابِ مُدَّخَرَاتِنَا.",
+      },
+    ],
+    exampleSentence: "Drop all your leftover pocket change into the glass savings jar.",
+    exampleArabic:
+      "ضَعِ الفَكَّةَ المَعْدَنِيَّةَ دَاخِلَ جَرَّةِ النُّقُودِ المَعْدَنِيَّةِ فِي المَنْزِل.",
+  },
+  "signature-pad": {
+    id: "signature-pad",
+    arabic: "لَوْحَةُ التَّوْقِيع",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Digital Screen",
+        en: "Sign your legal name using the stylus on the digital glass screen.",
+        ar: "وَقِّعْ بِاسْمِكَ بِالقَلَمِ الإِلِكْتُرُونِيِّ عَلَى لَوْحَةِ التَّوْقِيع.",
+      },
+      {
+        context: "Electronic Consent",
+        en: "The teller requested an electronic autograph to complete the transfer.",
+        ar: "طَلَبَ الصَّرَّافُ التَّوْقِيعَ عَلَى لَوْحَةِ التَّوْقِيعِ لِإِتْمَامِ التَّحْوِيل.",
+      },
+      {
+        context: "Biometric Capture",
+        en: "The sensor pad recorded handwriting pressure and stroke dynamics.",
+        ar: "سَجَّلَتْ لَوْحَةُ التَّوْقِيعِ الرَّقْمِيَّةُ حَرَكَةَ القَلَمِ بِدِقَّة.",
+      },
+    ],
+    exampleSentence: "Sign your legal name using the stylus on the digital glass screen.",
+    exampleArabic: "وَقِّعْ بِاسْمِكَ بِالقَلَمِ الإِلِكْتُرُونِيِّ عَلَى لَوْحَةِ التَّوْقِيع.",
+  },
+  "loan-officer": {
+    id: "loan-officer",
+    arabic: "مُوَظَّفُ القُرُوض",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Mortgage Advisor",
+        en: "The finance specialist explained interest rates and repayment plans.",
+        ar: "شَرَحَ مُوَظَّفُ القُرُوضِ نِسَبَ الفَائِدَةِ وَخُطَطَ السَّدَادِ لِلْمَنْزِل.",
+      },
+      {
+        context: "Credit Review",
+        en: "We submitted business revenue sheets to the credit evaluation officer.",
+        ar: "قَدَّمْنَا أَوْرَاقَ الدَّخْلِ لِمُوَظَّفِ القُرُوضِ لِمُرَاجَعَةِ الطَّلَب.",
+      },
+      {
+        context: "Financing Approval",
+        en: "The banking manager approved the commercial expansion financing.",
+        ar: "وَافَقَ مُوَظَّفُ القُرُوضِ عَلَى تَمْوِيلِ تَوَسُّعِ الشَّرِكَة.",
+      },
+    ],
+    exampleSentence: "The finance specialist explained interest rates and repayment plans.",
+    exampleArabic: "شَرَحَ مُوَظَّفُ القُرُوضِ نِسَبَ الفَائِدَةِ وَخُطَطَ السَّدَادِ لِلْمَنْزِل.",
+  },
+  "art-museum": {
+    id: "art-museum",
+    arabic: "مَتْحَفُ الفُنُون",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Cultural Gallery",
+        en: "We spent the afternoon admiring masterworks at the metropolitan gallery.",
+        ar: "قَضَيْنَا بَعْدَ الظُّهْرِ نَتَأَمَّلُ الرَّوَائِعَ فِي مَتْحَفِ الفُنُون.",
+      },
+      {
+        context: "Exhibition Centre",
+        en: "The national institution hosted a world-renowned historical collection.",
+        ar: "اسْتَضَافَ مَتْحَفُ الفُنُونِ الوَطَنِيُّ مَعْرِضًا تَارِيخِيًّا عَالَمِيًّا.",
+      },
+      {
+        context: "Artistic Heritage",
+        en: "Students toured the gallery to study Renaissance techniques.",
+        ar: "تَجَوَّلَ الطُّلَّابُ فِي مَتْحَفِ الفُنُونِ لِدِرَاسَةِ أَسَالِيبِ عَصْرِ النَّهْضَة.",
+      },
+    ],
+    exampleSentence: "We spent the afternoon admiring masterworks at the metropolitan gallery.",
+    exampleArabic: "قَضَيْنَا بَعْدَ الظُّهْرِ نَتَأَمَّلُ الرَّوَائِعَ فِي مَتْحَفِ الفُنُون.",
+  },
+  "ancient-artifact": {
+    id: "ancient-artifact",
+    arabic: "قِطْعَةٌ أَثَرِيَّةٌ قَدِيمَة",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Archaeological Relic",
+        en: "Archaeologists uncovered a three-thousand-year-old bronze tool.",
+        ar: "اكْتَشَفَ عُلَمَاءُ الآثَارِ قِطْعَةً أَثَرِيَّةً قَدِيمَةً مِنَ البُرُونْز.",
+      },
+      {
+        context: "Historical Object",
+        en: "The precious relic is illuminated inside a temperature-controlled vault.",
+        ar: "تُضَاءُ القِطْعَةُ الأَثَرِيَّةُ القَدِيمَةُ دَاخِلَ خِزَانَةٍ مُحْكَمَة.",
+      },
+      {
+        context: "Cultural Treasure",
+        en: "Historians analyzed the inscriptions carved upon the stone relic.",
+        ar: "حَلَّلَ المُؤَرِّخُونَ النُّقُوشَ عَلَى القِطْعَةِ الأَثَرِيَّةِ القَدِيمَة.",
+      },
+    ],
+    exampleSentence: "Archaeologists uncovered a three-thousand-year-old bronze tool.",
+    exampleArabic: "اكْتَشَفَ عُلَمَاءُ الآثَارِ قِطْعَةً أَثَرِيَّةً قَدِيمَةً مِنَ البُرُونْز.",
+  },
+  "oil-painting": {
+    id: "oil-painting",
+    arabic: "لَوْحَةٌ زَيْتِيَّة",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Canvas Masterwork",
+        en: "The famous portrait glowed with vibrant hues under soft gallery lighting.",
+        ar: "تَأَلَّقَتِ اللَّوْحَةُ الزَّيْتِيَّةُ بِأَلْوَانٍ زَاهِيَةٍ تَحْتَ إِضَاءَةِ المَعْرِض.",
+      },
+      {
+        context: "Original Artwork",
+        en: "Restorers delicately cleaned aged varnish from the classic canvas.",
+        ar: "نَظَّفَ الخُبَرَاءُ اللَّوْحَةَ الزَّيْتِيَّةَ التَّارِيخِيَّةَ بِدِقَّةٍ عَالِيَة.",
+      },
+      {
+        context: "Art Exhibition",
+        en: "Visitors stood in awe before the massive nineteenth-century canvas.",
+        ar: "وَقَفَ الزُّوَّارُ فِي انْبِهَارٍ أَمَامَ اللَّوْحَةِ الزَّيْتِيَّةِ الضَّخْمَة.",
+      },
+    ],
+    exampleSentence: "The famous portrait glowed with vibrant hues under soft gallery lighting.",
+    exampleArabic:
+      "تَأَلَّقَتِ اللَّوْحَةُ الزَّيْتِيَّةُ بِأَلْوَانٍ زَاهِيَةٍ تَحْتَ إِضَاءَةِ المَعْرِض.",
+  },
+  "marble-sculpture": {
+    id: "marble-sculpture",
+    arabic: "تِمْثَالٌ رُخَامِيّ",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Stone Statue",
+        en: "The classical statue featured delicately carved robes and lifelike posture.",
+        ar: "تَمَيَّزَ التِّمْثَالُ الرُّخَامِيُّ الكَلَاسِيكِيُّ بِتَفَاصِيلَ دَقِيقَةٍ وَوَاقِعِيَّة.",
+      },
+      {
+        context: "Carved Masterpiece",
+        en: "Sculptors chiseled the pristine white stone into a graceful figure.",
+        ar: "نَحَتَ الفَنَّانُونَ الحَجَرَ الأَبْيَضَ لِصُنْعِ تِمْثَالٍ رُخَامِيٍّ بَدِيع.",
+      },
+      {
+        context: "Gallery Display",
+        en: "Spotlights illuminated the polished stone figure in the center of the hall.",
+        ar: "أَضَاءَتِ الأَنْوَارُ التِّمْثَالَ الرُّخَامِيَّ فِي وَسَطِ القَاعَة.",
+      },
+    ],
+    exampleSentence: "The classical statue featured delicately carved robes and lifelike posture.",
+    exampleArabic:
+      "تَمَيَّزَ التِّمْثَالُ الرُّخَامِيُّ الكَلَاسِيكِيُّ بِتَفَاصِيلَ دَقِيقَةٍ وَوَاقِعِيَّة.",
+  },
+  "museum-guide": {
+    id: "museum-guide",
+    arabic: "مُرْشِدُ المَتْحَف",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Gallery Docent",
+        en: "The knowledgeable docent explained the history behind every royal crown.",
+        ar: "شَرَحَ مُرْشِدُ المَتْحَفِ صَاحِبُ المَعْرِفَةِ التَّارِيخَ خَلْفَ كُلِّ تَاج.",
+      },
+      {
+        context: "Educational Tour",
+        en: "Our guide pointed out subtle architectural details in the ancient pavilion.",
+        ar: "أَشَارَ المُرْشِدُ إِلَى تَفَاصِيلَ مِعْمَارِيَّةٍ دَقِيقَةٍ فِي الجَنَاحِ القَدِيم.",
+      },
+      {
+        context: "Group Leader",
+        en: "Tourists asked questions about the medieval armory during the walk.",
+        ar: "طَرَحَ السُّيَّاحُ أَسْئِلَةً عَلَى مُرْشِدِ المَتْحَفِ أثْنَاءَ الجَوْلَة.",
+      },
+    ],
+    exampleSentence: "The knowledgeable docent explained the history behind every royal crown.",
+    exampleArabic: "شَرَحَ مُرْشِدُ المَتْحَفِ صَاحِبُ المَعْرِفَةِ التَّارِيخَ خَلْفَ كُلِّ تَاج.",
+  },
+  "exhibit-hall": {
+    id: "exhibit-hall",
+    arabic: "قَاعَةُ العَرْض",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Display Room",
+        en: "We walked through the cavernous gallery showcasing Egyptian pyramids.",
+        ar: "تَجَوَّلْنَا فِي قَاعَةِ العَرْضِ الفَسِيحَةِ الَّتِي تَعْرِضُ آثَارَ مِصْر.",
+      },
+      {
+        context: "Museum Pavilion",
+        en: "Natural light poured into the spacious room from glass ceiling panels.",
+        ar: "دَخَلَ الضَّوْءُ الطَّبِيعِيُّ إِلَى قَاعَةِ العَرْضِ مِنْ سَقْفٍ زُجَاجِيّ.",
+      },
+      {
+        context: "Thematic Gallery",
+        en: "The entire room was dedicated to ancient maritime navigation tools.",
+        ar: "خُصِّصَتْ قَاعَةُ العَرْضِ بِالكَامِلِ لِأَدَوَاتِ المِلَاحَةِ القَدِيمَة.",
+      },
+    ],
+    exampleSentence: "We walked through the cavernous gallery showcasing Egyptian pyramids.",
+    exampleArabic: "تَجَوَّلْنَا فِي قَاعَةِ العَرْضِ الفَسِيحَةِ الَّتِي تَعْرِضُ آثَارَ مِصْر.",
+  },
+  "glass-showcase": {
+    id: "glass-showcase",
+    arabic: "خِزَانَةُ عَرْضٍ زُجَاجِيَّة",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Protective Cabinet",
+        en: "Ancient golden jewelry rested safely behind bulletproof transparent panels.",
+        ar: "وُضِعَتِ الحُلِيُّ الذَّهَبِيَّةُ دَاخِلَ خِزَانَةِ عَرْضٍ زُجَاجِيَّةٍ مُؤَمَّنَة.",
+      },
+      {
+        context: "Display Cabinet",
+        en: "Illuminated transparent cases protected rare medieval manuscripts.",
+        ar: "حَمَتْ خَزَائِنُ العَرْضِ الزُّجَاجِيَّةُ المَخْطُوطَاتِ النَّادِرَةَ مِنَ الغُبَار.",
+      },
+      {
+        context: "Museum Cabinetry",
+        en: "Visitors pressed close to the transparent glass to view tiny engravings.",
+        ar: "اقْتَرَبَ الزُّوَّارُ مِنْ خِزَانَةِ العَرْضِ الزُّجَاجِيَّةِ لِرُؤْيَةِ النُّقُوش.",
+      },
+    ],
+    exampleSentence: "Ancient golden jewelry rested safely behind bulletproof transparent panels.",
+    exampleArabic:
+      "وُضِعَتِ الحُلِيُّ الذَّهَبِيَّةُ دَاخِلَ خِزَانَةِ عَرْضٍ زُجَاجِيَّةٍ مُؤَمَّنَة.",
+  },
+  "dinosaur-fossil": {
+    id: "dinosaur-fossil",
+    arabic: "أُحْفُورَةُ دِينَاصُور",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Prehistoric Skeleton",
+        en: "Children looked up in wonder at the reconstructed T-Rex skeleton.",
+        ar: "انْبَهَرَ الأَطْفَالُ بِأُحْفُورَةِ الدِّينَاصُورِ المَرْكَبَةِ بِحَجْمِهَا الطَّبِيعِيّ.",
+      },
+      {
+        context: "Petrified Bones",
+        en: "Paleontologists assembled millions-of-years-old bones in the main atrium.",
+        ar: "جَمَّعَ عُلَمَاءُ الأَحَافِيرِ أُحْفُورَةَ الدِّينَاصُورِ فِي البَهْوِ الرَّئِيسِيّ.",
+      },
+      {
+        context: "Natural History",
+        en: "The ancient mineralized skull revealed giant razor-sharp teeth.",
+        ar: "أَظْهَرَتْ أُحْفُورَةُ الدِّينَاصُورِ القَدِيمَةُ أَسْنَانًا حَادَّةً عِمْلَاقَة.",
+      },
+    ],
+    exampleSentence: "Children looked up in wonder at the reconstructed T-Rex skeleton.",
+    exampleArabic:
+      "انْبَهَرَ الأَطْفَالُ بِأُحْفُورَةِ الدِّينَاصُورِ المَرْكَبَةِ بِحَجْمِهَا الطَّبِيعِيّ.",
+  },
+  "admission-ticket": {
+    id: "admission-ticket",
+    arabic: "تَذْكِرَةُ دُخُول",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Entry Pass",
+        en: "Scan the electronic barcode at the museum turnstile to enter.",
+        ar: "امْسَحِ الرَّمْزَ الشَّرِيطِيَّ عَلَى تَذْكِرَةِ الدُّخُولِ لِعُبُورِ البَوَّابَة.",
+      },
+      {
+        context: "Museum Voucher",
+        en: "Students received discounted entry vouchers at the ticket desk.",
+        ar: "حَصَلَ الطُّلَّابُ عَلَى خَصْمٍ عَلَى تَذْكِرَةِ دُخُولِ المَتْحَف.",
+      },
+      {
+        context: "Exhibition Pass",
+        en: "The universal pass granted all-day access to every floor and exhibit.",
+        ar: "مَنَحَتْ تَذْكِرَةُ الدُّخُولِ الشَّامِلَةُ حَقَّ زِيَارَةِ جَمِيعِ المَعَارِض.",
+      },
+    ],
+    exampleSentence: "Scan the electronic barcode at the museum turnstile to enter.",
+    exampleArabic:
+      "امْسَحِ الرَّمْزَ الشَّرِيطِيَّ عَلَى تَذْكِرَةِ الدُّخُولِ لِعُبُورِ البَوَّابَة.",
+  },
+  "audio-guide": {
+    id: "audio-guide",
+    arabic: "دَلِيلٌ صَوْتِيّ",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Recorded Tour",
+        en: "Type in the exhibit number to hear detailed historical commentary.",
+        ar: "أَدْخِلْ رَقْمَ القِطْعَةِ فِي الدَّلِيلِ الصَّوْتِيِّ لِسَمَاعِ الشَّرْحِ التَّارِيخِيّ.",
+      },
+      {
+        context: "Headset Narration",
+        en: "The headphone device narrated stories of the ancient Pharaohs.",
+        ar: "قَدَّمَ الدَّلِيلُ الصَّوْتِيُّ شَرْحًا وَافِيًا عَنْ حَيَاةِ الفَرَاعِنَةِ القُدَمَاء.",
+      },
+      {
+        context: "Multilingual Tour",
+        en: "Visitors selected their preferred language from the portable device menu.",
+        ar: "اخْتَارَ الزُّوَّارُ لُغَتَهُمُ المُفَضَّلَةَ عَبْرَ الدَّلِيلِ الصَّوْتِيّ.",
+      },
+    ],
+    exampleSentence: "Type in the exhibit number to hear detailed historical commentary.",
+    exampleArabic:
+      "أَدْخِلْ رَقْمَ القِطْعَةِ فِي الدَّلِيلِ الصَّوْتِيِّ لِسَمَاعِ الشَّرْحِ التَّارِيخِيّ.",
+  },
+  "antique-pottery": {
+    id: "antique-pottery",
+    arabic: "فَخَّارٌ أَثَرِيّ",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Ceramic Vessel",
+        en: "The painted clay urn displayed geometric motifs from classical antiquity.",
+        ar: "تَمَيَّزَ الفَخَّارُ الأَثَرِيُّ بِنُقُوشٍ هَنْدَسِيَّةٍ كَلَاسِيكِيَّةٍ بَدِيعَة.",
+      },
+      {
+        context: "Earthenware Relic",
+        en: "Restorers assembled fragmented ceramic shards into a complete vase.",
+        ar: "أَعَادَ المُرَمِّمُونَ تَجْمِيعَ قِطَعِ الفَخَّارِ الأَثَرِيِّ فِي إِنَاءٍ كَامِل.",
+      },
+      {
+        context: "Ancient Terracotta",
+        en: "Clay oil lamps and decorative jugs lined the archaeology shelf.",
+        ar: "عُرِضَتْ مَصَابِيحُ الزَّيْتِ وَالفَخَّارُ الأَثَرِيُّ عَلَى الرُّفُوفِ التَّارِيخِيَّة.",
+      },
+    ],
+    exampleSentence: "The painted clay urn displayed geometric motifs from classical antiquity.",
+    exampleArabic:
+      "تَمَيَّزَ الفَخَّارُ الأَثَرِيُّ بِنُقُوشٍ هَنْدَسِيَّةٍ كَلَاسِيكِيَّةٍ بَدِيعَة.",
+  },
+  "historical-plaque": {
+    id: "historical-plaque",
+    arabic: "لَوْحَةٌ تِذْكَارِيَّةٌ تَارِيخِيَّة",
+    partOfSpeech: "noun",
+    collocations: ["use regularly", "check carefully", "keep handy"],
+    sentences: [
+      {
+        context: "Informative Plate",
+        en: "Read the engraved text beside the monument to understand its origins.",
+        ar: "اقْرَأِ النَّصَّ عَلَى اللَّوْحَةِ التِّذْكَارِيَّةِ التَّارِيخِيَّةِ بِجَانِبِ النَّصْب.",
+      },
+      {
+        context: "Explanatory Marker",
+        en: "The bronze marker documented the discovery of the ancient tomb.",
+        ar: "وَثَّقَتِ اللَّوْحَةُ التِّذْكَارِيَّةُ التَّارِيخِيَّةُ تَفَاصِيلَ اكْتِشَافِ المَقْبَرَة.",
+      },
+      {
+        context: "Wall Sign",
+        en: "Museum curators mounted descriptive summaries near every major installation.",
+        ar: "ثَبَّتَ أُمَنَاءُ المَتْحَفِ اللَّوْحَةَ التِّذْكَارِيَّةَ التَّارِيخِيَّةَ بِجِوَارِ العَرْض.",
+      },
+    ],
+    exampleSentence: "Read the engraved text beside the monument to understand its origins.",
+    exampleArabic:
+      "اقْرَأِ النَّصَّ عَلَى اللَّوْحَةِ التِّذْكَارِيَّةِ التَّارِيخِيَّةِ بِجَانِبِ النَّصْب.",
+  },
+
+  runway: {
+    id: "runway",
+    arabic: "مُدَرَّجُ الطَّائِرَات",
+    partOfSpeech: "noun",
+    collocations: ["land on the runway", "taxi down the runway", "clear the runway"],
+    sentences: [
+      {
+        context: "Travel & Hospitality",
+        en: "The plane lands on the runway.",
+        ar: "تَهْبِطُ الطَّائِرَةُ عَلَى مُدَرَّجِ الطَّائِرَات.",
+      },
+      {
+        context: "Aviation",
+        en: "The pilot taxied the aircraft down the long runway.",
+        ar: "وَجَّهَ الطَّيَّارُ الطَّائِرَةَ عَلَى طُولِ المُدَرَّجِ الطَّوِيل.",
+      },
+      {
+        context: "Airport Security",
+        en: "Ground control must clear the runway before takeoff.",
+        ar: "يَجِبُ عَلَى المُتَحَكِّمِ الأَرْضِيِّ إِخْلَاءُ المُدَرَّجِ قَبْلَ الإِقْلَاع.",
+      },
+    ],
+    exampleSentence: "The plane lands on the runway.",
+    exampleArabic: "تَهْبِطُ الطَّائِرَةُ عَلَى مُدَرَّجِ الطَّائِرَات.",
+  },
+  customs: {
+    id: "customs",
+    arabic: "الْجَمَارِك",
+    partOfSpeech: "noun",
+    collocations: ["clear customs", "go through customs", "customs officer"],
+    sentences: [
+      {
+        context: "Travel & Hospitality",
+        en: "Clear customs before leaving the airport.",
+        ar: "تَجَاوَزِ الْجَمَارِكَ قَبْلَ مُغَادَرَةِ المَطَار.",
+      },
+      {
+        context: "International Travel",
+        en: "Passengers must go through customs upon arrival.",
+        ar: "يَجِبُ عَلَى المُسَافِرِينَ المُرُورُ عَبْرَ الْجَمَارِكِ عِنْدَ الوُصُول.",
+      },
+      {
+        context: "Border Control",
+        en: "The customs officer checked our passports and bags.",
+        ar: "فَحَصَ ضَابِطُ الْجَمَارِكِ جَوَازَاتِنَا وَحَقَائِبَنَا.",
+      },
+    ],
+    exampleSentence: "Clear customs before leaving the airport.",
+    exampleArabic: "تَجَاوَزِ الْجَمَارِكَ قَبْلَ مُغَادَرَةِ المَطَار.",
+  },
+  locomotive: {
+    id: "locomotive",
+    arabic: "قَاطِرَة",
+    partOfSpeech: "noun",
+    collocations: ["steam locomotive", "diesel locomotive", "electric locomotive"],
+    sentences: [
+      {
+        context: "Travel & Hospitality",
+        en: "The steam locomotive chugged along the tracks.",
+        ar: "تَحَرَّكَتِ القَاطِرَةُ البُخَارِيَّةُ عَلَى طُولِ السِّكَكِ الحَدِيدِيَّة.",
+      },
+      {
+        context: "Transportation",
+        en: "A powerful diesel locomotive pulled the heavy freight train.",
+        ar: "سَحَبَتْ قَاطِرَةُ دِيزِل قَوِيَّةٌ قِطَارَ البَضَائِعِ الثَّقِيل.",
+      },
+      {
+        context: "Modern Rail",
+        en: "The new electric locomotive runs quietly and efficiently.",
+        ar: "تَعْمَلُ القَاطِرَةُ الكَهْرَبَائِيَّةُ الجَدِيدَةُ بِهُدُوءٍ وَكَفَاءَة.",
+      },
+    ],
+    exampleSentence: "The steam locomotive chugged along the tracks.",
+    exampleArabic: "تَحَرَّكَتِ القَاطِرَةُ البُخَارِيَّةُ عَلَى طُولِ السِّكَكِ الحَدِيدِيَّة.",
+  },
+  timetable: {
+    id: "timetable",
+    arabic: "جَدْوَلُ المَوَاعِيد",
+    partOfSpeech: "noun",
+    collocations: ["check the timetable", "train timetable", "bus timetable"],
+    sentences: [
+      {
+        context: "Travel & Hospitality",
+        en: "Check the timetable for the next train departure.",
+        ar: "تَحَقَّقْ مِنْ جَدْوَلِ المَوَاعِيدِ لِمُغَادَرَةِ القِطَارِ التَّالِي.",
+      },
+      {
+        context: "Planning",
+        en: "The new bus timetable will take effect on Monday.",
+        ar: "سَيَدْخُلُ جَدْوَلُ مَوَاعِيدِ الحَافِلَاتِ الجَدِيدُ حَيِّزَ التَّنْفِيذِ يَوْمَ الاِثْنَيْن.",
+      },
+      {
+        context: "Commuting",
+        en: "He relies on the reliable train timetable to get to work.",
+        ar: "يَعْتَمِدُ عَلَى جَدْوَلِ مَوَاعِيدِ القِطَارِ المُوَثَّقِ لِلذَّهَابِ إِلَى العَمَل.",
+      },
+    ],
+    exampleSentence: "Check the timetable for the next train departure.",
+    exampleArabic: "تَحَقَّقْ مِنْ جَدْوَلِ المَوَاعِيدِ لِمُغَادَرَةِ القِطَارِ التَّالِي.",
+  },
+  bellboy: {
+    id: "bellboy",
+    arabic: "حَامِلُ الأَمْتِعَةِ (عَامِلُ الفُنْدُق)",
+    partOfSpeech: "noun",
+    collocations: ["call the bellboy", "tip the bellboy", "helpful bellboy"],
+    sentences: [
+      {
+        context: "Travel & Hospitality",
+        en: "The bellboy carried our luggage to the room.",
+        ar: "حَمَلَ عَامِلُ الفُنْدُقِ (حَامِلُ الأَمْتِعَة) حَقَائِبَنَا إِلَى الغُرْفَة.",
+      },
+      {
+        context: "Hotel Services",
+        en: "We decided to call the bellboy for assistance with our bags.",
+        ar: "قَرَّرْنَا الاِتِّصَالَ بِعَامِلِ الفُنْدُقِ لِلْمُسَاعَدَةِ فِي حَقَائِبِنَا.",
+      },
+      {
+        context: "Etiquette",
+        en: "It is customary to tip the helpful bellboy after he delivers your luggage.",
+        ar: "مِنَ المُعْتَادِ إِعْطَاءُ بَقْشِيشٍ لِعَامِلِ الفُنْدُقِ المُتَعَاوِنِ بَعْدَ تَسْلِيمِهِ الأَمْتِعَة.",
+      },
+    ],
+    exampleSentence: "The bellboy carried our luggage to the room.",
+    exampleArabic: "حَمَلَ عَامِلُ الفُنْدُقِ (حَامِلُ الأَمْتِعَة) حَقَائِبَنَا إِلَى الغُرْفَة.",
+  },
+  housekeeping: {
+    id: "housekeeping",
+    arabic: "تَنْظِيفُ الغُرَف (خِدْمَةُ الغُرَف)",
+    partOfSpeech: "noun",
+    collocations: ["call housekeeping", "housekeeping service", "daily housekeeping"],
+    sentences: [
+      {
+        context: "Travel & Hospitality",
+        en: "Housekeeping will clean the room every morning.",
+        ar: "سَتَقُومُ خِدْمَةُ الغُرَفِ بِتَنْظِيفِ الغُرْفَةِ كُلَّ صَبَاح.",
+      },
+      {
+        context: "Hotel Stay",
+        en: "You can call housekeeping if you need extra towels.",
+        ar: "يُمْكِنُكَ الاِتِّصَالُ بِخِدْمَةِ الغُرَفِ إِذَا كُنْتَ بِحَاجَةٍ إِلَى مَنَاشِفَ إِضَافِيَّة.",
+      },
+      {
+        context: "Accommodation",
+        en: "The hotel offers daily housekeeping service for all guests.",
+        ar: "يُقَدِّمُ الفُنْدُقُ خِدْمَةَ تَنْظِيفِ الغُرَفِ اليَوْمِيَّةَ لِجَمِيعِ الضُّيُوف.",
+      },
+    ],
+    exampleSentence: "Housekeeping will clean the room every morning.",
+    exampleArabic: "سَتَقُومُ خِدْمَةُ الغُرَفِ بِتَنْظِيفِ الغُرْفَةِ كُلَّ صَبَاح.",
+  },
+  elevator: {
+    id: "elevator",
+    arabic: "مِصْعَد",
+    partOfSpeech: "noun",
+    collocations: ["take the elevator", "ride the elevator", "wait for the elevator"],
+    sentences: [
+      {
+        context: "Travel & Hospitality",
+        en: "Take the elevator to the fifth floor.",
+        ar: "اِسْتَقِلَّ المِصْعَدَ إِلَى الطَّابِقِ الخَامِس.",
+      },
+      {
+        context: "Building Access",
+        en: "We had to wait for the elevator because the stairs were closed.",
+        ar: "اُضْطُرِرْنَا لِانْتِظَارِ المِصْعَدِ لِأَنَّ السَّلَالِمَ كَانَتْ مُغْلَقَة.",
+      },
+      {
+        context: "Convenience",
+        en: "Many people prefer to ride the elevator rather than walking up.",
+        ar: "يُفَضِّلُ الكَثِيرُ مِنَ النَّاسِ رُكُوبَ المِصْعَدِ بَدَلًا مِنَ الصُّعُودِ سَيْرًا عَلَى الأَقْدَام.",
+      },
+    ],
+    exampleSentence: "Take the elevator to the fifth floor.",
+    exampleArabic: "اِسْتَقِلَّ المِصْعَدَ إِلَى الطَّابِقِ الخَامِس.",
+  },
+  doorman: {
+    id: "doorman",
+    arabic: "بَوَّاب (حَارِسُ البَاب)",
+    partOfSpeech: "noun",
+    collocations: ["friendly doorman", "greet the doorman", "hotel doorman"],
+    sentences: [
+      {
+        context: "Travel & Hospitality",
+        en: "The doorman opened the hotel door for us with a smile.",
+        ar: "فَتَحَ البَوَّابُ (حَارِسُ البَاب) بَابَ الفُنْدُقِ لَنَا بِابْتِسَامَة.",
+      },
+      {
+        context: "Luxury Service",
+        en: "A friendly doorman is often the first person you meet at a luxury hotel.",
+        ar: "غَالِبًا مَا يَكُونُ البَوَّابُ الوَدُودُ أَوَّلَ شَخْصٍ تَلْتَقِيهِ فِي فُنْدُقٍ فَاخِر.",
+      },
+      {
+        context: "Greeting",
+        en: "We always greet the hotel doorman when we arrive.",
+        ar: "نَحْنُ دَائِمًا نُحَيِّي بَوَّابَ الفُنْدُقِ عِنْدَ وُصُولِنَا.",
+      },
+    ],
+    exampleSentence: "The doorman opened the hotel door for us with a smile.",
+    exampleArabic: "فَتَحَ البَوَّابُ (حَارِسُ البَاب) بَابَ الفُنْدُقِ لَنَا بِابْتِسَامَة.",
+  },
 };
 
-/**
- * Retrieve verified dictionary entry with comprehensive fallbacks.
- */
 export function getLexiconEntry(wordId: string, fallbackLabel?: string): LexiconEntry {
   const normalized = wordId.toLowerCase().trim();
   if (LEXICON_DICTIONARY[normalized]) {
@@ -36434,546 +38187,5 @@ export function getLexiconEntry(wordId: string, fallbackLabel?: string): Lexicon
     ],
     exampleSentence: `The ${label} is used in daily life.`,
     exampleArabic: `يُسْتَخْدَمُ هَذَا العُنْصُرُ فِي الحَيَاةِ اليَوْمِيَّةِ.`,
-
-    "airport-terminal": {
-      id: "airport-terminal",
-      arabic: "مَبْنَى الرُّكَّاب",
-      partOfSpeech: "noun",
-      collocations: ["wait at the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "We wait at the airport terminal.",
-          ar: "نَنْتَظِرُ فِي مَبْنَى الرُّكَّاب فِي المَطَار.",
-        },
-      ],
-      exampleSentence: "We wait at the airport terminal.",
-      exampleArabic: "نَنْتَظِرُ فِي مَبْنَى الرُّكَّاب فِي المَطَار.",
-    },
-    "boarding-pass": {
-      id: "boarding-pass",
-      arabic: "بِطَاقَةُ الصُّعُود",
-      partOfSpeech: "noun",
-      collocations: ["show your"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Show your boarding pass at the gate.",
-          ar: "أَبْرِزْ بِطَاقَةَ الصُّعُودِ عِنْدَ البَوَّابَة.",
-        },
-      ],
-      exampleSentence: "Show your boarding pass at the gate.",
-      exampleArabic: "أَبْرِزْ بِطَاقَةَ الصُّعُودِ عِنْدَ البَوَّابَة.",
-    },
-    "luggage-cart": {
-      id: "luggage-cart",
-      arabic: "عَرَبَةُ الأَمْتِعَة",
-      partOfSpeech: "noun",
-      collocations: ["push a"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Push a luggage cart to the check-in desk.",
-          ar: "ادْفَعْ عَرَبَةَ الأَمْتِعَةِ إِلَى مَكْتَبِ التَّسْجِيل.",
-        },
-      ],
-      exampleSentence: "Push a luggage cart to the check-in desk.",
-      exampleArabic: "ادْفَعْ عَرَبَةَ الأَمْتِعَةِ إِلَى مَكْتَبِ التَّسْجِيل.",
-    },
-    "security-check": {
-      id: "security-check",
-      arabic: "التَّفْتِيشُ الأَمْنِيّ",
-      partOfSpeech: "noun",
-      collocations: ["pass through"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Pass through the security check quickly.",
-          ar: "مُرَّ عَبْرَ التَّفْتِيشِ الأَمْنِيِّ بِسُرْعَة.",
-        },
-      ],
-      exampleSentence: "Pass through the security check quickly.",
-      exampleArabic: "مُرَّ عَبْرَ التَّفْتِيشِ الأَمْنِيِّ بِسُرْعَة.",
-    },
-    "departure-gate": {
-      id: "departure-gate",
-      arabic: "بَوَّابَةُ المُغَادَرَة",
-      partOfSpeech: "noun",
-      collocations: ["walk to the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Walk to the departure gate for your flight.",
-          ar: "امْشِ إِلَى بَوَّابَةِ المُغَادَرَةِ لِرِحْلَتِك.",
-        },
-      ],
-      exampleSentence: "Walk to the departure gate for your flight.",
-      exampleArabic: "امْشِ إِلَى بَوَّابَةِ المُغَادَرَةِ لِرِحْلَتِك.",
-    },
-    "flight-attendant": {
-      id: "flight-attendant",
-      arabic: "مُضِيفُ الطَّيَرَان",
-      partOfSpeech: "noun",
-      collocations: ["ask the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Ask the flight attendant for water.",
-          ar: "اسْأَلْ مُضِيفَ الطَّيَرَانِ عَنْ بَعْضِ المَاء.",
-        },
-      ],
-      exampleSentence: "Ask the flight attendant for water.",
-      exampleArabic: "اسْأَلْ مُضِيفَ الطَّيَرَانِ عَنْ بَعْضِ المَاء.",
-    },
-    runway: {
-      id: "runway",
-      arabic: "مُدَرَّجُ الطَّائِرَات",
-      partOfSpeech: "noun",
-      collocations: ["land on the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "The plane lands on the runway.",
-          ar: "تَهْبِطُ الطَّائِرَةُ عَلَى مُدَرَّجِ الطَّائِرَات.",
-        },
-      ],
-      exampleSentence: "The plane lands on the runway.",
-      exampleArabic: "تَهْبِطُ الطَّائِرَةُ عَلَى مُدَرَّجِ الطَّائِرَات.",
-    },
-    "passport-control": {
-      id: "passport-control",
-      arabic: "مُرَاقَبَةُ الجَوَازَات",
-      partOfSpeech: "noun",
-      collocations: ["go through"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Go through passport control upon arrival.",
-          ar: "مُرَّ عَبْرَ مُرَاقَبَةِ الجَوَازَاتِ عِنْدَ الوُصُول.",
-        },
-      ],
-      exampleSentence: "Go through passport control upon arrival.",
-      exampleArabic: "مُرَّ عَبْرَ مُرَاقَبَةِ الجَوَازَاتِ عِنْدَ الوُصُول.",
-    },
-    "baggage-claim": {
-      id: "baggage-claim",
-      arabic: "اسْتِلَامُ الأَمْتِعَة",
-      partOfSpeech: "noun",
-      collocations: ["wait at"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Wait at baggage claim for your suitcase.",
-          ar: "انْتَظِرْ عِنْدَ اسْتِلَامِ الأَمْتِعَةِ لِحَقِيبَتِك.",
-        },
-      ],
-      exampleSentence: "Wait at baggage claim for your suitcase.",
-      exampleArabic: "انْتَظِرْ عِنْدَ اسْتِلَامِ الأَمْتِعَةِ لِحَقِيبَتِك.",
-    },
-    customs: {
-      id: "customs",
-      arabic: "الجَمَارِك",
-      partOfSpeech: "noun",
-      collocations: ["clear"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Clear customs before leaving the airport.",
-          ar: "أَنْهِ إِجْرَاءَاتِ الجَمَارِكِ قَبْلَ مُغَادَرَةِ المَطَار.",
-        },
-      ],
-      exampleSentence: "Clear customs before leaving the airport.",
-      exampleArabic: "أَنْهِ إِجْرَاءَاتِ الجَمَارِكِ قَبْلَ مُغَادَرَةِ المَطَار.",
-    },
-    "duty-free": {
-      id: "duty-free",
-      arabic: "السُّوقُ الحُرَّة",
-      partOfSpeech: "noun",
-      collocations: ["shop at"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Shop at the duty free store.",
-          ar: "تَسَوَّقْ فِي مَتْجَرِ السُّوقِ الحُرَّة.",
-        },
-      ],
-      exampleSentence: "Shop at the duty free store.",
-      exampleArabic: "تَسَوَّقْ فِي مَتْجَرِ السُّوقِ الحُرَّة.",
-    },
-    "departure-board": {
-      id: "departure-board",
-      arabic: "لَوْحَةُ المُغَادَرَة",
-      partOfSpeech: "noun",
-      collocations: ["check the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Check the departure board for delays.",
-          ar: "تَحَقَّقْ مِنْ لَوْحَةِ المُغَادَرَةِ لِمَعْرِفَةِ التَّأْخِير.",
-        },
-      ],
-      exampleSentence: "Check the departure board for delays.",
-      exampleArabic: "تَحَقَّقْ مِنْ لَوْحَةِ المُغَادَرَةِ لِمَعْرِفَةِ التَّأْخِير.",
-    },
-    "train-platform": {
-      id: "train-platform",
-      arabic: "رَصِيفُ القِطَار",
-      partOfSpeech: "noun",
-      collocations: ["stand on the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Stand on the train platform.",
-          ar: "قِفْ عَلَى رَصِيفِ القِطَار.",
-        },
-      ],
-      exampleSentence: "Stand on the train platform.",
-      exampleArabic: "قِفْ عَلَى رَصِيفِ القِطَار.",
-    },
-    "ticket-machine": {
-      id: "ticket-machine",
-      arabic: "آلَةُ التَّذَاكِر",
-      partOfSpeech: "noun",
-      collocations: ["use a"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Use a ticket machine to buy a pass.",
-          ar: "اسْتَخْدِمْ آلَةَ التَّذَاكِرِ لِشِرَاءِ تِذْكَرَة.",
-        },
-      ],
-      exampleSentence: "Use a ticket machine to buy a pass.",
-      exampleArabic: "اسْتَخْدِمْ آلَةَ التَّذَاكِرِ لِشِرَاءِ تِذْكَرَة.",
-    },
-    "train-conductor": {
-      id: "train-conductor",
-      arabic: "مُحَصِّلُ التَّذَاكِر",
-      partOfSpeech: "noun",
-      collocations: ["show to the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Show your ticket to the train conductor.",
-          ar: "أَبْرِزْ تِذْكَرَتَكَ لِمُحَصِّلِ التَّذَاكِر.",
-        },
-      ],
-      exampleSentence: "Show your ticket to the train conductor.",
-      exampleArabic: "أَبْرِزْ تِذْكَرَتَكَ لِمُحَصِّلِ التَّذَاكِر.",
-    },
-    locomotive: {
-      id: "locomotive",
-      arabic: "قَاطِرَة",
-      partOfSpeech: "noun",
-      collocations: ["look at the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Look at the powerful locomotive.",
-          ar: "انْظُرْ إِلَى القَاطِرَةِ القَوِيَّة.",
-        },
-      ],
-      exampleSentence: "Look at the powerful locomotive.",
-      exampleArabic: "انْظُرْ إِلَى القَاطِرَةِ القَوِيَّة.",
-    },
-    "railway-track": {
-      id: "railway-track",
-      arabic: "سِكَّةٌ حَدِيدِيَّة",
-      partOfSpeech: "noun",
-      collocations: ["cross the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Do not cross the railway track.",
-          ar: "لَا تَعْبُرِ السِّكَّةَ الحَدِيدِيَّة.",
-        },
-      ],
-      exampleSentence: "Do not cross the railway track.",
-      exampleArabic: "لَا تَعْبُرِ السِّكَّةَ الحَدِيدِيَّة.",
-    },
-    "passenger-car": {
-      id: "passenger-car",
-      arabic: "عَرَبَةُ الرُّكَّاب",
-      partOfSpeech: "noun",
-      collocations: ["sit in the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Sit in the quiet passenger car.",
-          ar: "اجْلِسْ فِي عَرَبَةِ الرُّكَّابِ الهَادِئَة.",
-        },
-      ],
-      exampleSentence: "Sit in the quiet passenger car.",
-      exampleArabic: "اجْلِسْ فِي عَرَبَةِ الرُّكَّابِ الهَادِئَة.",
-    },
-    "commuter-train": {
-      id: "commuter-train",
-      arabic: "قِطَارُ الرُّكَّاب",
-      partOfSpeech: "noun",
-      collocations: ["board the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Board the commuter train to the city.",
-          ar: "اصْعَدْ إِلَى قِطَارِ الرُّكَّابِ المُتَّجِهِ لِلْمَدِينَة.",
-        },
-      ],
-      exampleSentence: "Board the commuter train to the city.",
-      exampleArabic: "اصْعَدْ إِلَى قِطَارِ الرُّكَّابِ المُتَّجِهِ لِلْمَدِينَة.",
-    },
-    timetable: {
-      id: "timetable",
-      arabic: "جَدْوَلُ المَوَاعِيد",
-      partOfSpeech: "noun",
-      collocations: ["check the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Check the timetable for the next train.",
-          ar: "تَحَقَّقْ مِنْ جَدْوَلِ المَوَاعِيدِ لِلْقِطَارِ التَّالِي.",
-        },
-      ],
-      exampleSentence: "Check the timetable for the next train.",
-      exampleArabic: "تَحَقَّقْ مِنْ جَدْوَلِ المَوَاعِيدِ لِلْقِطَارِ التَّالِي.",
-    },
-    "station-clock": {
-      id: "station-clock",
-      arabic: "سَاعَةُ المَحَطَّة",
-      partOfSpeech: "noun",
-      collocations: ["look at the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Look at the large station clock.",
-          ar: "انْظُرْ إِلَى سَاعَةِ المَحَطَّةِ الكَبِيرَة.",
-        },
-      ],
-      exampleSentence: "Look at the large station clock.",
-      exampleArabic: "انْظُرْ إِلَى سَاعَةِ المَحَطَّةِ الكَبِيرَة.",
-    },
-    "waiting-room": {
-      id: "waiting-room",
-      arabic: "غُرْفَةُ الانْتِظَار",
-      partOfSpeech: "noun",
-      collocations: ["rest in the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Rest in the station waiting room.",
-          ar: "اسْتَرِحْ فِي غُرْفَةِ انْتِظَارِ المَحَطَّة.",
-        },
-      ],
-      exampleSentence: "Rest in the station waiting room.",
-      exampleArabic: "اسْتَرِحْ فِي غُرْفَةِ انْتِظَارِ المَحَطَّة.",
-    },
-    "ticket-barrier": {
-      id: "ticket-barrier",
-      arabic: "حَاجِزُ التَّذَاكِر",
-      partOfSpeech: "noun",
-      collocations: ["pass the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Pass the ticket barrier to enter.",
-          ar: "مُرَّ عَبْرَ حَاجِزِ التَّذَاكِرِ لِلدُّخُول.",
-        },
-      ],
-      exampleSentence: "Pass the ticket barrier to enter.",
-      exampleArabic: "مُرَّ عَبْرَ حَاجِزِ التَّذَاكِرِ لِلدُّخُول.",
-    },
-    "express-train": {
-      id: "express-train",
-      arabic: "القِطَارُ السَّرِيع",
-      partOfSpeech: "noun",
-      collocations: ["take the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Take the express train for a fast trip.",
-          ar: "اسْتَقِلَّ القِطَارَ السَّرِيعَ لِرِحْلَةٍ سَرِيعَة.",
-        },
-      ],
-      exampleSentence: "Take the express train for a fast trip.",
-      exampleArabic: "اسْتَقِلَّ القِطَارَ السَّرِيعَ لِرِحْلَةٍ سَرِيعَة.",
-    },
-    "hotel-reception": {
-      id: "hotel-reception",
-      arabic: "مَكْتَبُ الاسْتِقْبَال",
-      partOfSpeech: "noun",
-      collocations: ["go to the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Go to the reception to check in.",
-          ar: "اذْهَبْ إِلَى مَكْتَبِ الاسْتِقْبَالِ لِتَسْجِيلِ الدُّخُول.",
-        },
-      ],
-      exampleSentence: "Go to the reception to check in.",
-      exampleArabic: "اذْهَبْ إِلَى مَكْتَبِ الاسْتِقْبَالِ لِتَسْجِيلِ الدُّخُول.",
-    },
-    "room-key": {
-      id: "room-key",
-      arabic: "مِفْتَاحُ الغُرْفَة",
-      partOfSpeech: "noun",
-      collocations: ["use your"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Use your room key to open the door.",
-          ar: "اسْتَخْدِمْ مِفْتَاحَ الغُرْفَةِ لِفَتْحِ البَاب.",
-        },
-      ],
-      exampleSentence: "Use your room key to open the door.",
-      exampleArabic: "اسْتَخْدِمْ مِفْتَاحَ الغُرْفَةِ لِفَتْحِ البَاب.",
-    },
-    bellboy: {
-      id: "bellboy",
-      arabic: "حَامِلُ الأَمْتِعَة",
-      partOfSpeech: "noun",
-      collocations: ["tip the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Tip the bellboy for carrying bags.",
-          ar: "أَعْطِ بَقْشِيشًا لِحَامِلِ الأَمْتِعَةِ لِحَمْلِهِ الحَقَائِب.",
-        },
-      ],
-      exampleSentence: "Tip the bellboy for carrying bags.",
-      exampleArabic: "أَعْطِ بَقْشِيشًا لِحَامِلِ الأَمْتِعَةِ لِحَمْلِهِ الحَقَائِب.",
-    },
-    "hotel-lobby": {
-      id: "hotel-lobby",
-      arabic: "بَهْوُ الفُنْدُق",
-      partOfSpeech: "noun",
-      collocations: ["wait in the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Wait in the spacious hotel lobby.",
-          ar: "انْتَظِرْ فِي بَهْوِ الفُنْدُقِ الفَسِيح.",
-        },
-      ],
-      exampleSentence: "Wait in the spacious hotel lobby.",
-      exampleArabic: "انْتَظِرْ فِي بَهْوِ الفُنْدُقِ الفَسِيح.",
-    },
-    "room-service": {
-      id: "room-service",
-      arabic: "خِدْمَةُ الغُرَف",
-      partOfSpeech: "noun",
-      collocations: ["order"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Order room service for breakfast.",
-          ar: "اطْلُبْ خِدْمَةَ الغُرَفِ لِتَنَاوُلِ الإِفْطَار.",
-        },
-      ],
-      exampleSentence: "Order room service for breakfast.",
-      exampleArabic: "اطْلُبْ خِدْمَةَ الغُرَفِ لِتَنَاوُلِ الإِفْطَار.",
-    },
-    housekeeping: {
-      id: "housekeeping",
-      arabic: "تَنْظِيفُ الغُرَف",
-      partOfSpeech: "noun",
-      collocations: ["call"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Call housekeeping for extra towels.",
-          ar: "اتَّصِلْ بِتَنْظِيفِ الغُرَفِ لِلْحُصُولِ عَلَى مَنَاشِفَ إِضَافِيَّة.",
-        },
-      ],
-      exampleSentence: "Call housekeeping for extra towels.",
-      exampleArabic: "اتَّصِلْ بِتَنْظِيفِ الغُرَفِ لِلْحُصُولِ عَلَى مَنَاشِفَ إِضَافِيَّة.",
-    },
-    "hotel-safe": {
-      id: "hotel-safe",
-      arabic: "خَزْنَةُ الفُنْدُق",
-      partOfSpeech: "noun",
-      collocations: ["lock the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Lock your valuables in the hotel safe.",
-          ar: "أَقْفِلْ عَلَى أَشْيَائِكَ الثَّمِينَةِ فِي خَزْنَةِ الفُنْدُق.",
-        },
-      ],
-      exampleSentence: "Lock your valuables in the hotel safe.",
-      exampleArabic: "أَقْفِلْ عَلَى أَشْيَائِكَ الثَّمِينَةِ فِي خَزْنَةِ الفُنْدُق.",
-    },
-    "balcony-view": {
-      id: "balcony-view",
-      arabic: "إِطْلَالَةُ الشُّرْفَة",
-      partOfSpeech: "noun",
-      collocations: ["enjoy the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Enjoy the beautiful balcony view.",
-          ar: "اسْتَمْتِعْ بِإِطْلَالَةِ الشُّرْفَةِ الجَمِيلَة.",
-        },
-      ],
-      exampleSentence: "Enjoy the beautiful balcony view.",
-      exampleArabic: "اسْتَمْتِعْ بِإِطْلَالَةِ الشُّرْفَةِ الجَمِيلَة.",
-    },
-    elevator: {
-      id: "elevator",
-      arabic: "مِصْعَد",
-      partOfSpeech: "noun",
-      collocations: ["take the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Take the elevator to the fifth floor.",
-          ar: "اسْتَقِلَّ المِصْعَدَ إِلَى الطَّابِقِ الخَامِس.",
-        },
-      ],
-      exampleSentence: "Take the elevator to the fifth floor.",
-      exampleArabic: "اسْتَقِلَّ المِصْعَدَ إِلَى الطَّابِقِ الخَامِس.",
-    },
-    "key-card": {
-      id: "key-card",
-      arabic: "بِطَاقَةُ مِفْتَاح",
-      partOfSpeech: "noun",
-      collocations: ["swipe the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Swipe the key card to enter.",
-          ar: "مَرِّرْ بِطَاقَةَ المِفْتَاحِ لِلدُّخُول.",
-        },
-      ],
-      exampleSentence: "Swipe the key card to enter.",
-      exampleArabic: "مَرِّرْ بِطَاقَةَ المِفْتَاحِ لِلدُّخُول.",
-    },
-    doorman: {
-      id: "doorman",
-      arabic: "بَوَّاب",
-      partOfSpeech: "noun",
-      collocations: ["greet the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Greet the friendly doorman.",
-          ar: "حَيِّ البَوَّابَ الوَدُود.",
-        },
-      ],
-      exampleSentence: "Greet the friendly doorman.",
-      exampleArabic: "حَيِّ البَوَّابَ الوَدُود.",
-    },
-    "valet-parking": {
-      id: "valet-parking",
-      arabic: "خِدْمَةُ رَكْنِ السَّيَّارَات",
-      partOfSpeech: "noun",
-      collocations: ["use the"],
-      sentences: [
-        {
-          context: "Travel & Hospitality",
-          en: "Use the valet parking service.",
-          ar: "اسْتَخْدِمْ خِدْمَةَ رَكْنِ السَّيَّارَات.",
-        },
-      ],
-      exampleSentence: "Use the valet parking service.",
-      exampleArabic: "اسْتَخْدِمْ خِدْمَةَ رَكْنِ السَّيَّارَات.",
-    },
   };
 }
