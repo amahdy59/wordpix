@@ -12816,6 +12816,7 @@ export const COURSE_MODULES: CourseModule[] = [
       "revision-4",
       "sports-center",
       "hospital",
+      "first-aid-room",
       "revision-milestone-1",
     ],
   },
