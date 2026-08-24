@@ -16,6 +16,8 @@ export function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "GO") {
     if (action.to === "lesson-entry") return { id: "lesson-entry", unitId: action.unitId };
+    if (action.to === "learning-materials")
+      return { id: "learning-materials", unitId: action.unitId };
     if (action.to === "skill-hub") return { id: "skill-hub" };
     if (action.to === "onboarding") return { id: "onboarding", step: "splash" };
     if (action.to === "lesson-complete") {

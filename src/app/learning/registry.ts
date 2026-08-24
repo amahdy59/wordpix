@@ -1,0 +1,39 @@
+import type { UnitLearningMaterials } from "./types";
+
+/**
+ * Learning materials are loaded per unit, on demand.
+ *
+ * There are 182 units and eight content blocks each; bundling them the way
+ * `lessons.ts` bundles vocabulary would make every learner download all of it
+ * to open one. A dynamic import keeps a unit's materials out of the main
+ * bundle until someone opens that unit's Learn screen.
+ *
+ * Units absent from this map simply have no materials yet — callers get
+ * `null` and hide the entry point rather than showing an empty screen.
+ */
+const LOADERS: Record<string, () => Promise<UnitLearningMaterials>> = {
+  bathroom: () => import("./units/bathroom").then((m) => m.BATHROOM_LEARNING),
+};
+
+const cache = new Map<string, UnitLearningMaterials>();
+
+export function hasLearningMaterials(unitId: string): boolean {
+  return unitId in LOADERS;
+}
+
+/** Unit ids with materials, for tests and for coverage reporting. */
+export function unitsWithLearningMaterials(): string[] {
+  return Object.keys(LOADERS);
+}
+
+export async function loadLearningMaterials(unitId: string): Promise<UnitLearningMaterials | null> {
+  const cached = cache.get(unitId);
+  if (cached) return cached;
+
+  const loader = LOADERS[unitId];
+  if (!loader) return null;
+
+  const materials = await loader();
+  cache.set(unitId, materials);
+  return materials;
+}
