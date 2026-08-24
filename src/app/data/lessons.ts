@@ -65,19 +65,35 @@ const LOCAL_WORD_IMAGES = "./word-images";
 const LOCAL_SCENE_IMAGES = "./scene-images";
 
 export const BEDROOM_TOPICS: TopicCategory[] = [
-  { id: "furniture", name: "Furniture", itemsCount: 10 },
-  { id: "bedding", name: "Bedding & Linen", itemsCount: 10 },
-  { id: "features", name: "Room Features", itemsCount: 10 },
-  { id: "objects", name: "Bedroom Objects", itemsCount: 10 },
-  { id: "personal", name: "Personal Items", itemsCount: 10 },
-  { id: "electronics", name: "Electronics", itemsCount: 8 },
+  {
+    id: "bedroom-1",
+    name: "Bedroom Part 1",
+    itemsCount: 15,
+  },
+  {
+    id: "bedroom-2",
+    name: "Bedroom Part 2",
+    itemsCount: 15,
+  },
+  {
+    id: "bedroom-3",
+    name: "Bedroom Part 3",
+    itemsCount: 15,
+  },
+  {
+    id: "bedroom-4",
+    name: "Bedroom Part 4",
+    itemsCount: 13,
+  },
 ];
 
 export const BEDROOM_GROUPS: Lesson[] = [
   {
-    id: "furniture",
-    name: "Furniture",
-    topicId: "furniture",
+    id: "bedroom-1",
+    name: "Bedroom Basics 1",
+    description:
+      "Learn about Bed, Nightstand, Dresser, Wardrobe, Desk, Chair, Bookshelf, Mirror, Stool, Chest Of Drawers, Pillow,...",
+    topicId: "bedroom-1",
     wordIds: [
       "bed",
       "nightstand",
@@ -89,36 +105,27 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "mirror",
       "stool",
       "chest-of-drawers",
-    ],
-    description: "Learn about furniture.",
-    story:
-      "Maya placed the bed against the wall and set a nightstand beside it. She folded clothes into the dresser and hung jackets in the wardrobe. A desk and chair made a quiet study area, while a bookshelf held her books. She checked the mirror, sat on the stool, and put spare clothes in the chest of drawers.",
-  },
-  {
-    id: "bedding",
-    name: "Bedding & Linen",
-    topicId: "bedding",
-    wordIds: [
       "pillow",
       "blanket",
       "sheet",
       "mattress",
       "duvet",
+    ],
+    story:
+      "In this section, you will learn about Bed, Nightstand, Dresser, Wardrobe, Desk, Chair, Bookshelf, Mirror, Stool, Chest Of Drawers, Pillow, Blanket, Sheet, Mattress, Duvet. These are essential items to know.",
+  },
+  {
+    id: "bedroom-2",
+    name: "Bedroom Basics 2",
+    description:
+      "Learn about Pillowcase, Comforter, Cushion, Bed Frame, Headboard, Lamp, Curtain, Window, Door, Rug, Carpet, Ceil...",
+    topicId: "bedroom-2",
+    wordIds: [
       "pillowcase",
       "comforter",
       "cushion",
       "bed-frame",
       "headboard",
-    ],
-    description: "Learn about bedding & linen.",
-    story:
-      "Maya covered the mattress and bed-frame with a soft sheet. She placed the headboard against the wall and slipped the pillow into a new pillowcase. For extra warmth, she added a blanket, a thick duvet, and a cozy comforter. Finally, she tossed a decorative cushion on top.",
-  },
-  {
-    id: "features",
-    name: "Room Features",
-    topicId: "features",
-    wordIds: [
       "lamp",
       "curtain",
       "window",
@@ -130,14 +137,15 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "blinds",
       "outlet",
     ],
-    description: "Learn about room features.",
     story:
-      "Sunlight came through the window after Lina opened the curtain and raised the blinds. She walked through the door, stepped onto the rug, and felt the carpet under her feet. At night, she used the light switch to turn on the ceiling light and lamp, then plugged her charger into the outlet.",
+      "In this section, you will learn about Pillowcase, Comforter, Cushion, Bed Frame, Headboard, Lamp, Curtain, Window, Door, Rug, Carpet, Ceiling Light, Light Switch, Blinds, Outlet. These are essential items to know.",
   },
   {
-    id: "objects",
-    name: "Bedroom Objects",
-    topicId: "objects",
+    id: "bedroom-3",
+    name: "Bedroom Basics 3",
+    description:
+      "Learn about Alarm Clock, Picture Frame, Clock, Plant, Vase, Candle, Calendar, Tissue Box, Wastebasket, Hanger, P...",
+    topicId: "bedroom-3",
     wordIds: [
       "alarm-clock",
       "picture-frame",
@@ -149,36 +157,27 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "tissue-box",
       "wastebasket",
       "hanger",
-    ],
-    description: "Learn about bedroom objects.",
-    story:
-      "Maya woke up when her alarm-clock rang. She looked at the time on the wall clock and checked her schedule on the calendar. She admired the picture-frame next to a green plant and a vase. After using a tissue from the tissue-box, she threw it in the wastebasket. Finally, she lit a candle and put her shirt on a hanger.",
-  },
-  {
-    id: "personal",
-    name: "Personal Items",
-    topicId: "personal",
-    wordIds: [
       "pajamas",
       "slippers",
       "robe",
       "teddy-bear",
       "poster",
+    ],
+    story:
+      "In this section, you will learn about Alarm Clock, Picture Frame, Clock, Plant, Vase, Candle, Calendar, Tissue Box, Wastebasket, Hanger, Pajamas, Slippers, Robe, Teddy Bear, Poster. These are essential items to know.",
+  },
+  {
+    id: "bedroom-4",
+    name: "Bedroom Basics 4",
+    description:
+      "Learn about Books, Photo Album, Glasses, Backpack, Jewelry Box, Phone, Charger, Laptop, Headphones, Tablet, Spea...",
+    topicId: "bedroom-4",
+    wordIds: [
       "books",
       "photo-album",
       "glasses",
       "backpack",
       "jewelry-box",
-    ],
-    description: "Learn about personal items.",
-    story:
-      "Nora put on her pajamas, slippers, and robe before bed. Her teddy bear sat below a colorful poster and a shelf of books. She opened a photo album, put her glasses beside it, emptied her backpack, and stored a necklace in the jewelry box.",
-  },
-  {
-    id: "electronics",
-    name: "Electronics",
-    topicId: "electronics",
-    wordIds: [
       "phone",
       "charger",
       "laptop",
@@ -188,9 +187,8 @@ export const BEDROOM_GROUPS: Lesson[] = [
       "reading-light",
       "remote-control",
     ],
-    description: "Learn about electronics.",
     story:
-      "Before sleeping, he plugged his phone into the charger and closed his laptop. He put his headphones and tablet away, then turned off the Bluetooth speaker. He used the reading-light to read a book and the remote-control to turn off the TV.",
+      "In this section, you will learn about Books, Photo Album, Glasses, Backpack, Jewelry Box, Phone, Charger, Laptop, Headphones, Tablet, Speaker, Reading Light, Remote Control. These are essential items to know.",
   },
 ];
 
@@ -199,7 +197,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "bed",
     label: "Bed",
     phonetic: "bɛd",
-    topic: "furniture",
+    topic: "bedroom-1",
     description: "A large rectangular platform with a soft top, where a person lies down to sleep.",
     img: `${LOCAL_WORD_IMAGES}/bed.webp`,
   },
@@ -207,7 +205,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "nightstand",
     label: "Nightstand",
     phonetic: "ˈnaɪtˌstænd",
-    topic: "furniture",
+    topic: "bedroom-1",
     description: "A small low table beside the place you sleep, holding a lamp or a book.",
     img: `${LOCAL_WORD_IMAGES}/nightstand.webp`,
   },
@@ -215,7 +213,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "dresser",
     label: "Dresser",
     phonetic: "ˈdɹɛsɚ",
-    topic: "furniture",
+    topic: "bedroom-1",
     description:
       "A wide, low piece of furniture with several sliding compartments for folded clothes.",
     img: `${LOCAL_WORD_IMAGES}/dresser.webp`,
@@ -224,7 +222,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "wardrobe",
     label: "Wardrobe",
     phonetic: " ˈwɔːdɹəʊb",
-    topic: "furniture",
+    topic: "bedroom-1",
     description: "A tall cupboard with doors, where clothes hang from a rail inside.",
     img: `${LOCAL_WORD_IMAGES}/wardrobe.webp`,
   },
@@ -232,7 +230,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "desk",
     label: "Desk",
     phonetic: "dɛsk",
-    topic: "furniture",
+    topic: "bedroom-1",
     description: "A flat work surface on legs, where you sit to write or use a computer.",
     img: `${LOCAL_WORD_IMAGES}/desk.webp`,
   },
@@ -240,7 +238,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "chair",
     label: "Chair",
     phonetic: "tʃɛɹ",
-    topic: "furniture",
+    topic: "bedroom-1",
     description: "A single seat with a back and four legs, for one person.",
     img: `${LOCAL_WORD_IMAGES}/chair.webp`,
   },
@@ -248,7 +246,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "bookshelf",
     label: "Bookshelf",
     phonetic: "ˈbʊkˌʃɛlf",
-    topic: "furniture",
+    topic: "bedroom-1",
     description: "An upright frame of horizontal boards for storing reading material.",
     img: `${LOCAL_WORD_IMAGES}/bookshelf.webp`,
   },
@@ -256,7 +254,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "mirror",
     label: "Mirror",
     phonetic: "ˈmɘ.ɹɘ",
-    topic: "furniture",
+    topic: "bedroom-1",
     description: "A flat glass panel that shows your own reflection.",
     img: `${LOCAL_WORD_IMAGES}/mirror.webp`,
   },
@@ -264,7 +262,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "stool",
     label: "Stool",
     phonetic: "stul",
-    topic: "furniture",
+    topic: "bedroom-1",
     description: "A small backless seat raised on three or four legs.",
     img: `${LOCAL_WORD_IMAGES}/stool.webp`,
   },
@@ -272,7 +270,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "chest-of-drawers",
     label: "Chest Of Drawers",
     phonetic: "tʃɛst ʌv dɹɔɹz",
-    topic: "furniture",
+    topic: "bedroom-1",
     description: "A tall, narrow tower of stacked sliding compartments for storing clothes.",
     img: `${LOCAL_WORD_IMAGES}/chest-of-drawers.webp`,
   },
@@ -280,7 +278,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "pillow",
     label: "Pillow",
     phonetic: "ˈpɪloʊ",
-    topic: "bedding",
+    topic: "bedroom-1",
     description: "A soft rectangular pad that supports your head while you sleep.",
     img: `${LOCAL_WORD_IMAGES}/pillow.webp`,
   },
@@ -288,7 +286,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "blanket",
     label: "Blanket",
     phonetic: "ˈblæŋkɪt",
-    topic: "bedding",
+    topic: "bedroom-1",
     description: "A thick woven cover, often wool, laid over you for warmth.",
     img: `${LOCAL_WORD_IMAGES}/blanket.webp`,
   },
@@ -296,7 +294,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "sheet",
     label: "Sheet",
     phonetic: "ʃiːt",
-    topic: "bedding",
+    topic: "bedroom-1",
     description: "A large, thin, flat piece of fabric that lies directly against your skin.",
     img: `${LOCAL_WORD_IMAGES}/sheet.webp`,
   },
@@ -304,7 +302,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "mattress",
     label: "Mattress",
     phonetic: "ˈmætɹəs",
-    topic: "bedding",
+    topic: "bedroom-1",
     description: "The thick padded slab you lie directly on top of.",
     img: `${LOCAL_WORD_IMAGES}/mattress.webp`,
   },
@@ -312,7 +310,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "duvet",
     label: "Duvet",
     phonetic: "ˈduːveɪ",
-    topic: "bedding",
+    topic: "bedroom-1",
     description: "A soft filled bag stuffed with feathers, used as a single thick top cover.",
     img: `${LOCAL_WORD_IMAGES}/duvet.webp`,
   },
@@ -320,7 +318,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "pillowcase",
     label: "Pillowcase",
     phonetic: "ˈpɪloʊˌkeɪs",
-    topic: "bedding",
+    topic: "bedroom-2",
     description: "A fabric sleeve that slips over the soft pad under your head.",
     img: `${LOCAL_WORD_IMAGES}/pillowcase.webp`,
   },
@@ -328,7 +326,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "comforter",
     label: "Comforter",
     phonetic: "ˈkʌmfɚtɚ",
-    topic: "bedding",
+    topic: "bedroom-2",
     description: "A thick fluffy top cover, stitched into sections, needing no separate cover.",
     img: `${LOCAL_WORD_IMAGES}/comforter.webp`,
   },
@@ -336,7 +334,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "cushion",
     label: "Cushion",
     phonetic: "ˈkʊʃən",
-    topic: "bedding",
+    topic: "bedroom-2",
     description: "A small soft square pad for sitting on or leaning against.",
     img: `${LOCAL_WORD_IMAGES}/cushion.webp`,
   },
@@ -344,7 +342,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "bed-frame",
     label: "Bed Frame",
     phonetic: "bɛd fɹeɪm",
-    topic: "bedding",
+    topic: "bedroom-2",
     description: "The wooden or metal structure that holds a mattress up off the floor.",
     img: `${LOCAL_WORD_IMAGES}/bed-frame.webp`,
   },
@@ -352,7 +350,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "headboard",
     label: "Headboard",
     phonetic: "ˈhɛdˌbɔɹd",
-    topic: "bedding",
+    topic: "bedroom-2",
     description: "The upright panel at the top end of a sleeping platform, behind your head.",
     img: `${LOCAL_WORD_IMAGES}/headboard.webp`,
   },
@@ -360,7 +358,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "lamp",
     label: "Lamp",
     phonetic: "læmp",
-    topic: "features",
+    topic: "bedroom-2",
     description: "A small light on a base that stands on a table.",
     img: `${LOCAL_WORD_IMAGES}/lamp.webp`,
   },
@@ -368,7 +366,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "curtain",
     label: "Curtain",
     phonetic: "ˈkɝtən",
-    topic: "features",
+    topic: "bedroom-2",
     description: "A long piece of hanging fabric drawn across a window at night.",
     img: `${LOCAL_WORD_IMAGES}/curtain.webp`,
   },
@@ -376,7 +374,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "window",
     label: "Window",
     phonetic: "ˈwɪndəʊ",
-    topic: "features",
+    topic: "bedroom-2",
     description: "A glass opening in the wall that lets daylight into the room.",
     img: `${LOCAL_WORD_IMAGES}/window.webp`,
   },
@@ -384,7 +382,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "door",
     label: "Door",
     phonetic: "dɔː",
-    topic: "features",
+    topic: "bedroom-2",
     description: "A hinged panel you open to enter or leave a room.",
     img: `${LOCAL_WORD_IMAGES}/door.webp`,
   },
@@ -392,7 +390,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "rug",
     label: "Rug",
     phonetic: "ɹʌɡ",
-    topic: "features",
+    topic: "bedroom-2",
     description: "A small soft floor covering that lies loose on top of the floor.",
     img: `${LOCAL_WORD_IMAGES}/rug.webp`,
   },
@@ -400,7 +398,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "carpet",
     label: "Carpet",
     phonetic: "ˈkɑː(ɹ)pɪt",
-    topic: "features",
+    topic: "bedroom-2",
     description: "A soft floor covering fixed down permanently, reaching from wall to wall.",
     img: `${LOCAL_WORD_IMAGES}/carpet.webp`,
   },
@@ -408,7 +406,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "ceiling-light",
     label: "Ceiling Light",
     phonetic: "ˈsilɪŋ laɪt",
-    topic: "features",
+    topic: "bedroom-2",
     description: "A fixture mounted overhead that brightens the whole room from above.",
     img: `${LOCAL_WORD_IMAGES}/ceiling-light.webp`,
   },
@@ -416,7 +414,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "light-switch",
     label: "Light Switch",
     phonetic: "ˈlaɪt ˌswɪtʃ",
-    topic: "features",
+    topic: "bedroom-2",
     description: "A small plate on the wall you press to make the room bright or dark.",
     img: `${LOCAL_WORD_IMAGES}/light-switch.webp`,
   },
@@ -424,7 +422,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "blinds",
     label: "Blinds",
     phonetic: "blaɪndz",
-    topic: "features",
+    topic: "bedroom-2",
     description: "Horizontal slats across a window that tilt to control the daylight.",
     img: `${LOCAL_WORD_IMAGES}/blinds.webp`,
   },
@@ -432,7 +430,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "outlet",
     label: "Outlet",
     phonetic: "ˈaʊtlət",
-    topic: "features",
+    topic: "bedroom-2",
     description: "A small socket in the wall where you plug in electrical devices.",
     img: `${LOCAL_WORD_IMAGES}/outlet.webp`,
   },
@@ -440,7 +438,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "alarm-clock",
     label: "Alarm Clock",
     phonetic: "əˈlɑːm klɒk",
-    topic: "objects",
+    topic: "bedroom-3",
     description: "A small bedside device that shows the time and wakes you with a sound.",
     img: `${LOCAL_WORD_IMAGES}/alarm-clock.webp`,
   },
@@ -448,7 +446,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "picture-frame",
     label: "Picture Frame",
     phonetic: "ˈpɪktʃɚ fɹeɪm",
-    topic: "objects",
+    topic: "bedroom-3",
     description: "A decorative border that holds a photograph upright on a surface.",
     img: `${LOCAL_WORD_IMAGES}/picture-frame.webp`,
   },
@@ -456,7 +454,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "clock",
     label: "Clock",
     phonetic: "klɒk",
-    topic: "objects",
+    topic: "bedroom-3",
     description: "A round face with moving hands that shows the time.",
     img: `${LOCAL_WORD_IMAGES}/clock.webp`,
   },
@@ -464,7 +462,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "plant",
     label: "Plant",
     phonetic: "plænt",
-    topic: "objects",
+    topic: "bedroom-3",
     description: "A living green thing growing in a pot of soil.",
     img: `${LOCAL_WORD_IMAGES}/plant.webp`,
   },
@@ -472,7 +470,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "vase",
     label: "Vase",
     phonetic: "veɪs",
-    topic: "objects",
+    topic: "bedroom-3",
     description: "A tall narrow container that holds cut flowers in water.",
     img: `${LOCAL_WORD_IMAGES}/vase.webp`,
   },
@@ -480,7 +478,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "candle",
     label: "Candle",
     phonetic: "ˈkændl̩",
-    topic: "objects",
+    topic: "bedroom-3",
     description: "A wax cylinder with a wick that gives light when it burns.",
     img: `${LOCAL_WORD_IMAGES}/candle.webp`,
   },
@@ -488,7 +486,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "calendar",
     label: "Calendar",
     phonetic: "ˈkæləndɚ",
-    topic: "objects",
+    topic: "bedroom-3",
     description: "A grid of numbered days used to keep track of dates.",
     img: `${LOCAL_WORD_IMAGES}/calendar.webp`,
   },
@@ -496,7 +494,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "tissue-box",
     label: "Tissue Box",
     phonetic: "ˈtɪʃu bɑks",
-    topic: "objects",
+    topic: "bedroom-3",
     description: "A small carton that dispenses soft disposable paper, one sheet at a time.",
     img: `${LOCAL_WORD_IMAGES}/tissue-box.webp`,
   },
@@ -504,7 +502,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "wastebasket",
     label: "Wastebasket",
     phonetic: "ˈweɪstˌbæskɪt",
-    topic: "objects",
+    topic: "bedroom-3",
     description: "A small open container for discarding paper and light trash.",
     img: `${LOCAL_WORD_IMAGES}/wastebasket.webp`,
   },
@@ -512,7 +510,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "hanger",
     label: "Hanger",
     phonetic: "ˈhæŋɚ",
-    topic: "objects",
+    topic: "bedroom-3",
     description: "A shaped hook that keeps a shirt or coat suspended in a cupboard.",
     img: `${LOCAL_WORD_IMAGES}/hanger.webp`,
   },
@@ -520,7 +518,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "pajamas",
     label: "Pajamas",
     phonetic: "pəˈdʒɑməz",
-    topic: "personal",
+    topic: "bedroom-3",
     description: "Soft, loose two-piece clothing worn only for sleeping.",
     img: `${LOCAL_WORD_IMAGES}/pajamas.webp`,
   },
@@ -528,7 +526,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "slippers",
     label: "Slippers",
     phonetic: "ˈslɪpɚz",
-    topic: "personal",
+    topic: "bedroom-3",
     description: "Soft indoor shoes you slide your feet into without fastening.",
     img: `${LOCAL_WORD_IMAGES}/slippers.webp`,
   },
@@ -536,7 +534,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "robe",
     label: "Robe",
     phonetic: "ɹoʊb",
-    topic: "personal",
+    topic: "bedroom-3",
     description: "A loose belted garment worn over sleepwear, often after a bath.",
     img: `${LOCAL_WORD_IMAGES}/robe.webp`,
   },
@@ -544,7 +542,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "teddy-bear",
     label: "Teddy Bear",
     phonetic: "ˈtɛdi bɛɹ",
-    topic: "personal",
+    topic: "bedroom-3",
     description: "A soft, stuffed toy animal shaped like a small cub.",
     img: `${LOCAL_WORD_IMAGES}/teddy-bear.webp`,
   },
@@ -552,7 +550,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "poster",
     label: "Poster",
     phonetic: "ˈpoʊstɚ",
-    topic: "personal",
+    topic: "bedroom-3",
     description: "A large printed sheet fixed flat against a wall for decoration.",
     img: `${LOCAL_WORD_IMAGES}/poster.webp`,
   },
@@ -560,7 +558,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "books",
     label: "Books",
     phonetic: "bʊks",
-    topic: "personal",
+    topic: "bedroom-4",
     description: "Bound stacks of printed pages that you read.",
     img: `${LOCAL_WORD_IMAGES}/books.webp`,
   },
@@ -568,7 +566,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "photo-album",
     label: "Photo Album",
     phonetic: "ˈfoʊˌtoʊ ˈælbəm",
-    topic: "personal",
+    topic: "bedroom-4",
     description: "A bound book of pages holding printed family pictures behind plastic.",
     img: `${LOCAL_WORD_IMAGES}/photo-album.webp`,
   },
@@ -576,7 +574,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "glasses",
     label: "Glasses",
     phonetic: "ˈglæsəz",
-    topic: "personal",
+    topic: "bedroom-4",
     description: "Two lenses held in a frame, worn on the face to see clearly.",
     img: `${LOCAL_WORD_IMAGES}/glasses.webp`,
   },
@@ -584,7 +582,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "backpack",
     label: "Backpack",
     phonetic: "ˈbækˌpæk",
-    topic: "personal",
+    topic: "bedroom-4",
     description: "A bag with two shoulder straps, carried on your back.",
     img: `${LOCAL_WORD_IMAGES}/backpack.webp`,
   },
@@ -592,7 +590,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "jewelry-box",
     label: "Jewelry Box",
     phonetic: "ˈdʒuəlɹi bɑks",
-    topic: "personal",
+    topic: "bedroom-4",
     description: "A small decorative container for storing rings, necklaces, and valuables.",
     img: `${LOCAL_WORD_IMAGES}/jewelry-box.webp`,
   },
@@ -600,7 +598,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "phone",
     label: "Phone",
     phonetic: "foʊn",
-    topic: "electronics",
+    topic: "bedroom-4",
     description: "A small handheld device used for calls and messages.",
     img: `${LOCAL_WORD_IMAGES}/phone.webp`,
   },
@@ -608,7 +606,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "charger",
     label: "Charger",
     phonetic: "ˈtʃɑɹdʒɚ",
-    topic: "electronics",
+    topic: "bedroom-4",
     description: "A cable and plug that restores battery power to a device.",
     img: `${LOCAL_WORD_IMAGES}/charger.webp`,
   },
@@ -616,7 +614,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "laptop",
     label: "Laptop",
     phonetic: "ˈlæpˌtɑp",
-    topic: "electronics",
+    topic: "bedroom-4",
     description: "A portable computer that folds shut like a book.",
     img: `${LOCAL_WORD_IMAGES}/laptop.webp`,
   },
@@ -624,7 +622,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "headphones",
     label: "Headphones",
     phonetic: "ˈhɛdˌfoʊnz",
-    topic: "electronics",
+    topic: "bedroom-4",
     description: "Two padded cups joined by a band, worn over the ears.",
     img: `${LOCAL_WORD_IMAGES}/headphones.webp`,
   },
@@ -632,7 +630,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "tablet",
     label: "Tablet",
     phonetic: "ˈtæblət",
-    topic: "electronics",
+    topic: "bedroom-4",
     description: "A flat touchscreen slab, larger than a handheld, with no keyboard.",
     img: `${LOCAL_WORD_IMAGES}/tablet.webp`,
   },
@@ -640,7 +638,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "speaker",
     label: "Speaker",
     phonetic: "ˈspikɚ",
-    topic: "electronics",
+    topic: "bedroom-4",
     description: "A box that plays sound out loud into the room.",
     img: `${LOCAL_WORD_IMAGES}/speaker.webp`,
   },
@@ -648,7 +646,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "reading-light",
     label: "Reading Light",
     phonetic: "ˈɹɛdɪŋ laɪt",
-    topic: "electronics",
+    topic: "bedroom-4",
     description: "A small adjustable lamp on a flexible arm, aimed down at a page.",
     img: `${LOCAL_WORD_IMAGES}/reading-light.webp`,
   },
@@ -656,7 +654,7 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
     id: "remote-control",
     label: "Remote Control",
     phonetic: "ɹɪˈmoʊt kənˈtɹoʊl",
-    topic: "electronics",
+    topic: "bedroom-4",
     description: "A handheld bar of buttons that operates a device from across the room.",
     img: `${LOCAL_WORD_IMAGES}/remote-control.webp`,
   },
@@ -676,19 +674,40 @@ export const BEDROOM_VOCABULARY: VocabularyItem[] = [
 // --- KITCHEN DATA ---
 
 export const KITCHEN_TOPICS: TopicCategory[] = [
-  { id: "large-appliances", name: "Large Appliances", itemsCount: 10 },
-  { id: "cookware", name: "Cookware", itemsCount: 10 },
-  { id: "utensils-tools", name: "Utensils Tools", itemsCount: 12 },
-  { id: "dishes-containers", name: "Dishes Containers", itemsCount: 12 },
-  { id: "kitchen-items", name: "Kitchen Items", itemsCount: 12 },
-  { id: "basic-pantry", name: "Basic Pantry", itemsCount: 14 },
+  {
+    id: "kitchen-1",
+    name: "Kitchen Part 1",
+    itemsCount: 15,
+  },
+  {
+    id: "kitchen-2",
+    name: "Kitchen Part 2",
+    itemsCount: 15,
+  },
+  {
+    id: "kitchen-3",
+    name: "Kitchen Part 3",
+    itemsCount: 15,
+  },
+  {
+    id: "kitchen-4",
+    name: "Kitchen Part 4",
+    itemsCount: 15,
+  },
+  {
+    id: "kitchen-5",
+    name: "Kitchen Part 5",
+    itemsCount: 10,
+  },
 ];
 
 export const KITCHEN_GROUPS: Lesson[] = [
   {
-    id: "large-appliances",
-    name: "Large Appliances",
-    topicId: "large-appliances",
+    id: "kitchen-1",
+    name: "Kitchen Basics 1",
+    description:
+      "Learn about Refrigerator, Stove, Oven, Microwave, Dishwasher, Toaster, Blender, Kettle, Coffee Maker, Freezer, P...",
+    topicId: "kitchen-1",
     wordIds: [
       "refrigerator",
       "stove",
@@ -700,36 +719,27 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "kettle",
       "coffee-maker",
       "freezer",
-    ],
-    description: "Learn about large appliances.",
-    story:
-      "Rami took vegetables from the refrigerator and bread from the freezer. He heated soup on the stove, baked bread in the oven, and warmed leftovers in the microwave. After dinner, the dishwasher cleaned the plates. In the morning, he used the toaster, blender, kettle, and coffee maker.",
-  },
-  {
-    id: "cookware",
-    name: "Cookware",
-    topicId: "cookware",
-    wordIds: [
       "pot",
       "pan",
       "frying-pan",
       "baking-tray",
       "saucepan",
+    ],
+    story:
+      "In this section, you will learn about Refrigerator, Stove, Oven, Microwave, Dishwasher, Toaster, Blender, Kettle, Coffee Maker, Freezer, Pot, Pan, Frying Pan, Baking Tray, Saucepan. These are essential items to know.",
+  },
+  {
+    id: "kitchen-2",
+    name: "Kitchen Basics 2",
+    description:
+      "Learn about Wok, Casserole Dish, Baking Dish, Steamer, Pressure Cooker, Fork, Knife, Spoon, Spatula, Ladle, Whis...",
+    topicId: "kitchen-2",
+    wordIds: [
       "wok",
       "casserole-dish",
       "baking-dish",
       "steamer",
       "pressure-cooker",
-    ],
-    description: "Learn about cookware.",
-    story:
-      "She boiled pasta in a large pot and made sauce in a saucepan. For breakfast, she used a frying-pan, which is a type of pan, to cook eggs, and a wok for stir-fry at night. She baked cookies on a baking-tray, roasted a chicken in a baking-dish, and made stew in a casserole-dish. To save time, she cooked beans in a pressure-cooker and steamed vegetables in a steamer.",
-  },
-  {
-    id: "utensils-tools",
-    name: "Utensils Tools",
-    topicId: "utensils-tools",
-    wordIds: [
       "fork",
       "knife",
       "spoon",
@@ -740,18 +750,19 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "peeler",
       "grater",
       "rolling-pin",
-      "can-opener",
-      "corkscrew",
     ],
-    description: "Learn about utensils tools.",
     story:
-      "Yousef ate with a fork, knife, and spoon. While cooking, he turned food with a spatula, served soup with a ladle, mixed eggs with a whisk, and lifted hot pieces with tongs. He used a peeler, grater, and rolling pin to prepare vegetables and dough, then opened a tin with a can opener and a bottle with a corkscrew.",
+      "In this section, you will learn about Wok, Casserole Dish, Baking Dish, Steamer, Pressure Cooker, Fork, Knife, Spoon, Spatula, Ladle, Whisk, Tongs, Peeler, Grater, Rolling Pin. These are essential items to know.",
   },
   {
-    id: "dishes-containers",
-    name: "Dishes Containers",
-    topicId: "dishes-containers",
+    id: "kitchen-3",
+    name: "Kitchen Basics 3",
+    description:
+      "Learn about Can Opener, Corkscrew, Plate, Bowl, Mug, Glass, Cup, Saucer, Cutting Board, Colander, Measuring Cup,...",
+    topicId: "kitchen-3",
     wordIds: [
+      "can-opener",
+      "corkscrew",
       "plate",
       "bowl",
       "mug",
@@ -764,17 +775,18 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "measuring-spoon",
       "mixing-bowl",
       "pitcher",
+      "dish-towel",
     ],
-    description: "Learn about dishes containers.",
     story:
-      "She placed the plate and bowl on the table next to a mug, glass, and cup with a saucer. While cooking, she chopped vegetables on the cutting-board and drained pasta in a colander. She used a measuring-cup and measuring-spoon to add ingredients into the mixing-bowl, then poured water from a pitcher.",
+      "In this section, you will learn about Can Opener, Corkscrew, Plate, Bowl, Mug, Glass, Cup, Saucer, Cutting Board, Colander, Measuring Cup, Measuring Spoon, Mixing Bowl, Pitcher, Dish Towel. These are essential items to know.",
   },
   {
-    id: "kitchen-items",
-    name: "Kitchen Items",
-    topicId: "kitchen-items",
+    id: "kitchen-4",
+    name: "Kitchen Basics 4",
+    description:
+      "Learn about Oven Mitt, Apron, Trash Can, Paper Towel, Plastic Wrap, Aluminum Foil, Food Container, Sponge, Dish ...",
+    topicId: "kitchen-4",
     wordIds: [
-      "dish-towel",
       "oven-mitt",
       "apron",
       "trash-can",
@@ -786,20 +798,21 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "dish-soap",
       "dish-rack",
       "cling-film",
-    ],
-    description: "Learn about kitchen items.",
-    story:
-      "Karim dried a plate with a dish towel and protected his hand with an oven mitt. His apron kept his clothes clean, and he put scraps in the trash can. He wiped a spill with a paper towel, covered leftovers with plastic wrap and aluminum foil, and stored them in a food container. Then he cleaned the sink with a sponge and dish soap, placed plates in the dish rack, and covered another bowl with cling film.",
-  },
-  {
-    id: "basic-pantry",
-    name: "Basic Pantry",
-    topicId: "basic-pantry",
-    wordIds: [
       "bread",
       "butter",
       "milk",
       "egg",
+    ],
+    story:
+      "In this section, you will learn about Oven Mitt, Apron, Trash Can, Paper Towel, Plastic Wrap, Aluminum Foil, Food Container, Sponge, Dish Soap, Dish Rack, Cling Film, Bread, Butter, Milk, Egg. These are essential items to know.",
+  },
+  {
+    id: "kitchen-5",
+    name: "Kitchen Basics 5",
+    description:
+      "Learn about Cheese, Rice, Pasta, Cooking Oil, Salt, Sugar, Pepper, Flour, Vinegar, Honey...",
+    topicId: "kitchen-5",
+    wordIds: [
       "cheese",
       "rice",
       "pasta",
@@ -811,9 +824,8 @@ export const KITCHEN_GROUPS: Lesson[] = [
       "vinegar",
       "honey",
     ],
-    description: "Learn about basic pantry.",
     story:
-      "She made breakfast with bread, butter, milk, an egg, and cheese. For lunch, she boiled rice and pasta using a little cooking-oil, salt, and pepper. Then she baked a cake using sugar, flour, and a dash of honey, and made a salad dressing with vinegar.",
+      "In this section, you will learn about Cheese, Rice, Pasta, Cooking Oil, Salt, Sugar, Pepper, Flour, Vinegar, Honey. These are essential items to know.",
   },
 ];
 
@@ -822,7 +834,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "refrigerator",
     label: "Refrigerator",
     phonetic: "ɹɪˈfɹɪdʒəˌɹeɪtɚ",
-    topic: "large-appliances",
+    topic: "kitchen-1",
     description: "A tall electric appliance that keeps fresh groceries cold.",
     img: `${LOCAL_WORD_IMAGES}/refrigerator.webp`,
   },
@@ -830,7 +842,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "stove",
     label: "Stove",
     phonetic: "stoʊv",
-    topic: "large-appliances",
+    topic: "kitchen-1",
     description: "A cooking appliance with heated burners on its top surface.",
     img: `${LOCAL_WORD_IMAGES}/stove.webp`,
   },
@@ -838,7 +850,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "oven",
     label: "Oven",
     phonetic: "ˈʌvən",
-    topic: "large-appliances",
+    topic: "kitchen-1",
     description: "An enclosed heated compartment used to roast or bake meals.",
     img: `${LOCAL_WORD_IMAGES}/oven.webp`,
   },
@@ -846,7 +858,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "microwave",
     label: "Microwave",
     phonetic: "ˈmaɪkɹəˌweɪv",
-    topic: "large-appliances",
+    topic: "kitchen-1",
     description: "An electric appliance that heats meals quickly inside a small compartment.",
     img: `${LOCAL_WORD_IMAGES}/microwave.webp`,
   },
@@ -854,7 +866,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "dishwasher",
     label: "Dishwasher",
     phonetic: "ˈdɪʃˌwɑʃɚ",
-    topic: "large-appliances",
+    topic: "kitchen-1",
     description: "A machine that cleans plates, cups, and cutlery automatically.",
     img: `${LOCAL_WORD_IMAGES}/dishwasher.webp`,
   },
@@ -862,7 +874,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "toaster",
     label: "Toaster",
     phonetic: "ˈtoʊstɚ",
-    topic: "large-appliances",
+    topic: "kitchen-1",
     description: "A small electric appliance that browns slices until they are crisp.",
     img: `${LOCAL_WORD_IMAGES}/toaster.webp`,
   },
@@ -870,7 +882,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "blender",
     label: "Blender",
     phonetic: "ˈblɛndɚ",
-    topic: "large-appliances",
+    topic: "kitchen-1",
     description:
       "An electric machine with spinning blades that mixes liquids and soft ingredients.",
     img: `${LOCAL_WORD_IMAGES}/blender.webp`,
@@ -879,7 +891,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "kettle",
     label: "Kettle",
     phonetic: "ˈkɛtəl",
-    topic: "large-appliances",
+    topic: "kitchen-1",
     description: "A covered vessel with a handle and spout, used to boil water.",
     img: `${LOCAL_WORD_IMAGES}/kettle.webp`,
   },
@@ -887,7 +899,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "coffee-maker",
     label: "Coffee Maker",
     phonetic: "ˈkɑfi ˈmeɪkɚ",
-    topic: "large-appliances",
+    topic: "kitchen-1",
     description: "An electric appliance that brews a hot drink from ground beans.",
     img: `${LOCAL_WORD_IMAGES}/coffee-maker.webp`,
   },
@@ -895,7 +907,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "freezer",
     label: "Freezer",
     phonetic: "ˈfɹizɚ",
-    topic: "large-appliances",
+    topic: "kitchen-1",
     description: "A very cold appliance that keeps groceries frozen for long storage.",
     img: `${LOCAL_WORD_IMAGES}/freezer.webp`,
   },
@@ -903,7 +915,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "pot",
     label: "Pot",
     phonetic: "pɑt",
-    topic: "cookware",
+    topic: "kitchen-1",
     description: "A deep round cooking vessel with handles, used for boiling or simmering.",
     img: `${LOCAL_WORD_IMAGES}/pot.webp`,
   },
@@ -911,7 +923,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "pan",
     label: "Pan",
     phonetic: "pæn",
-    topic: "cookware",
+    topic: "kitchen-1",
     description: "A shallow round cooking vessel with a long handle.",
     img: `${LOCAL_WORD_IMAGES}/pan.webp`,
   },
@@ -919,7 +931,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "frying-pan",
     label: "Frying Pan",
     phonetic: "ˈfɹaɪɪŋ pæn",
-    topic: "cookware",
+    topic: "kitchen-1",
     description: "A wide shallow cooking vessel used to cook ingredients in hot fat.",
     img: `${LOCAL_WORD_IMAGES}/frying-pan.webp`,
   },
@@ -927,7 +939,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "baking-tray",
     label: "Baking Tray",
     phonetic: "ˈbeɪkɪŋ tɹeɪ",
-    topic: "cookware",
+    topic: "kitchen-1",
     description: "A flat rectangular metal surface used to cook biscuits or vegetables.",
     img: `${LOCAL_WORD_IMAGES}/baking-tray.webp`,
   },
@@ -935,7 +947,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "saucepan",
     label: "Saucepan",
     phonetic: "ˈsɔsˌpæn",
-    topic: "cookware",
+    topic: "kitchen-1",
     description: "A deep round cooking vessel with one long handle and a lid.",
     img: `${LOCAL_WORD_IMAGES}/saucepan.webp`,
   },
@@ -943,7 +955,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "wok",
     label: "Wok",
     phonetic: "wɑk",
-    topic: "cookware",
+    topic: "kitchen-2",
     description: "A deep round cooking vessel with sloping sides, used for quick stir-frying.",
     img: `${LOCAL_WORD_IMAGES}/wok.webp`,
   },
@@ -951,7 +963,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "casserole-dish",
     label: "Casserole Dish",
     phonetic: "ˈkæsəˌɹoʊl dɪʃ",
-    topic: "cookware",
+    topic: "kitchen-2",
     description: "A deep heat-safe container used for slow meals served from the same container.",
     img: `${LOCAL_WORD_IMAGES}/casserole-dish.webp`,
   },
@@ -959,7 +971,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "baking-dish",
     label: "Baking Dish",
     phonetic: "ˈbeɪkɪŋ dɪʃ",
-    topic: "cookware",
+    topic: "kitchen-2",
     description: "A deep heat-safe container used for cakes, pasta, or roasted meals.",
     img: `${LOCAL_WORD_IMAGES}/baking-dish.webp`,
   },
@@ -967,7 +979,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "steamer",
     label: "Steamer",
     phonetic: "ˈstimɚ",
-    topic: "cookware",
+    topic: "kitchen-2",
     description: "A tiered cooking vessel that uses hot water vapor instead of direct heat.",
     img: `${LOCAL_WORD_IMAGES}/steamer.webp`,
   },
@@ -975,7 +987,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "pressure-cooker",
     label: "Pressure Cooker",
     phonetic: "ˈpɹɛʃɚ ˈkʊkɚ",
-    topic: "cookware",
+    topic: "kitchen-2",
     description: "A sealed metal appliance that cooks meals quickly with trapped steam.",
     img: `${LOCAL_WORD_IMAGES}/pressure-cooker.webp`,
   },
@@ -983,7 +995,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "fork",
     label: "Fork",
     phonetic: "fɔɹk",
-    topic: "utensils-tools",
+    topic: "kitchen-2",
     description: "A handheld eating tool with several narrow pointed teeth.",
     img: `${LOCAL_WORD_IMAGES}/fork.webp`,
   },
@@ -991,7 +1003,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "knife",
     label: "Knife",
     phonetic: "naɪf",
-    topic: "utensils-tools",
+    topic: "kitchen-2",
     description: "A handheld tool with a sharp blade used for slicing ingredients.",
     img: `${LOCAL_WORD_IMAGES}/knife.webp`,
   },
@@ -999,7 +1011,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "spoon",
     label: "Spoon",
     phonetic: "spun",
-    topic: "utensils-tools",
+    topic: "kitchen-2",
     description: "A handheld eating tool with a small rounded end for liquids or soft meals.",
     img: `${LOCAL_WORD_IMAGES}/spoon.webp`,
   },
@@ -1007,7 +1019,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "spatula",
     label: "Spatula",
     phonetic: "ˈspætʃələ",
-    topic: "utensils-tools",
+    topic: "kitchen-2",
     description: "A flat handheld tool used to lift, turn, or spread ingredients.",
     img: `${LOCAL_WORD_IMAGES}/spatula.webp`,
   },
@@ -1015,7 +1027,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "ladle",
     label: "Ladle",
     phonetic: "ˈleɪdəl",
-    topic: "utensils-tools",
+    topic: "kitchen-2",
     description: "A long-handled tool with a deep rounded end for serving soup.",
     img: `${LOCAL_WORD_IMAGES}/ladle.webp`,
   },
@@ -1023,7 +1035,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "whisk",
     label: "Whisk",
     phonetic: "wɪsk",
-    topic: "utensils-tools",
+    topic: "kitchen-2",
     description: "A wire kitchen tool used to beat ingredients and add air.",
     img: `${LOCAL_WORD_IMAGES}/whisk.webp`,
   },
@@ -1031,7 +1043,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "tongs",
     label: "Tongs",
     phonetic: "tɑŋz",
-    topic: "utensils-tools",
+    topic: "kitchen-2",
     description: "A hinged tool with two arms used to grip and lift hot ingredients.",
     img: `${LOCAL_WORD_IMAGES}/tongs.webp`,
   },
@@ -1039,7 +1051,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "peeler",
     label: "Peeler",
     phonetic: "ˈpilɚ",
-    topic: "utensils-tools",
+    topic: "kitchen-2",
     description: "A handheld tool with a narrow blade that removes skin from vegetables.",
     img: `${LOCAL_WORD_IMAGES}/peeler.webp`,
   },
@@ -1047,7 +1059,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "grater",
     label: "Grater",
     phonetic: "ˈgɹeɪtɚ",
-    topic: "utensils-tools",
+    topic: "kitchen-2",
     description: "A rough metal tool with sharp holes that shreds ingredients into small pieces.",
     img: `${LOCAL_WORD_IMAGES}/grater.webp`,
   },
@@ -1055,7 +1067,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "rolling-pin",
     label: "Rolling Pin",
     phonetic: "ˈɹoʊlɪŋ pɪn",
-    topic: "utensils-tools",
+    topic: "kitchen-2",
     description: "A smooth cylinder used to flatten dough evenly.",
     img: `${LOCAL_WORD_IMAGES}/rolling-pin.webp`,
   },
@@ -1063,7 +1075,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "can-opener",
     label: "Can Opener",
     phonetic: "kæn ˈoʊpənɚ",
-    topic: "utensils-tools",
+    topic: "kitchen-3",
     description: "A handheld tool that cuts around the metal lid of a sealed tin.",
     img: `${LOCAL_WORD_IMAGES}/can-opener.webp`,
   },
@@ -1071,7 +1083,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "corkscrew",
     label: "Corkscrew",
     phonetic: "ˈkɔɹkˌskɹu",
-    topic: "utensils-tools",
+    topic: "kitchen-3",
     description: "A spiral metal tool used to pull a stopper from a bottle.",
     img: `${LOCAL_WORD_IMAGES}/corkscrew.webp`,
   },
@@ -1079,7 +1091,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "plate",
     label: "Plate",
     phonetic: "pleɪt",
-    topic: "dishes-containers",
+    topic: "kitchen-3",
     description: "A flat round item used for serving a meal.",
     img: `${LOCAL_WORD_IMAGES}/plate.webp`,
   },
@@ -1087,7 +1099,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "bowl",
     label: "Bowl",
     phonetic: "boʊl",
-    topic: "dishes-containers",
+    topic: "kitchen-3",
     description: "A deep round item used for serving soup, cereal, or salad.",
     img: `${LOCAL_WORD_IMAGES}/bowl.webp`,
   },
@@ -1095,7 +1107,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "mug",
     label: "Mug",
     phonetic: "mʌg",
-    topic: "dishes-containers",
+    topic: "kitchen-3",
     description: "A sturdy drinking vessel with a handle, often used for hot drinks.",
     img: `${LOCAL_WORD_IMAGES}/mug.webp`,
   },
@@ -1103,7 +1115,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "glass",
     label: "Glass",
     phonetic: "glæs",
-    topic: "dishes-containers",
+    topic: "kitchen-3",
     description: "A clear drinking vessel without a handle.",
     img: `${LOCAL_WORD_IMAGES}/glass.webp`,
   },
@@ -1111,7 +1123,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "cup",
     label: "Cup",
     phonetic: "kʌp",
-    topic: "dishes-containers",
+    topic: "kitchen-3",
     description: "A small drinking vessel, usually with a handle.",
     img: `${LOCAL_WORD_IMAGES}/cup.webp`,
   },
@@ -1119,7 +1131,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "saucer",
     label: "Saucer",
     phonetic: "ˈsɔsɚ",
-    topic: "dishes-containers",
+    topic: "kitchen-3",
     description: "A small shallow item placed beneath a drinking vessel.",
     img: `${LOCAL_WORD_IMAGES}/saucer.webp`,
   },
@@ -1127,7 +1139,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "cutting-board",
     label: "Cutting Board",
     phonetic: "ˈkʌtɪŋ bɔɹd",
-    topic: "dishes-containers",
+    topic: "kitchen-3",
     description: "A flat protective surface used when chopping ingredients.",
     img: `${LOCAL_WORD_IMAGES}/cutting-board.webp`,
   },
@@ -1135,7 +1147,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "colander",
     label: "Colander",
     phonetic: "ˈkɑləndɚ",
-    topic: "dishes-containers",
+    topic: "kitchen-3",
     description: "A deep container with many holes, used to drain water from ingredients.",
     img: `${LOCAL_WORD_IMAGES}/colander.webp`,
   },
@@ -1143,7 +1155,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "measuring-cup",
     label: "Measuring Cup",
     phonetic: "ˈmɛʒɚɪŋ kʌp",
-    topic: "dishes-containers",
+    topic: "kitchen-3",
     description: "A marked vessel used to check the volume of liquid or dry ingredients.",
     img: `${LOCAL_WORD_IMAGES}/measuring-cup.webp`,
   },
@@ -1151,7 +1163,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "measuring-spoon",
     label: "Measuring Spoon",
     phonetic: "ˈmɛʒɚɪŋ spun",
-    topic: "dishes-containers",
+    topic: "kitchen-3",
     description: "A small marked utensil used to check an exact amount of an ingredient.",
     img: `${LOCAL_WORD_IMAGES}/measuring-spoon.webp`,
   },
@@ -1159,7 +1171,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "mixing-bowl",
     label: "Mixing Bowl",
     phonetic: "ˈmɪksɪŋ boʊl",
-    topic: "dishes-containers",
+    topic: "kitchen-3",
     description: "A large deep container used to combine ingredients before cooking.",
     img: `${LOCAL_WORD_IMAGES}/mixing-bowl.webp`,
   },
@@ -1167,7 +1179,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "pitcher",
     label: "Pitcher",
     phonetic: "ˈpɪtʃɚ",
-    topic: "dishes-containers",
+    topic: "kitchen-3",
     description: "A large vessel with a handle and spout for serving drinks.",
     img: `${LOCAL_WORD_IMAGES}/pitcher.webp`,
   },
@@ -1175,7 +1187,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "dish-towel",
     label: "Dish Towel",
     phonetic: "dɪʃ ˈtaʊəl",
-    topic: "kitchen-items",
+    topic: "kitchen-3",
     description: "A reusable cloth used to dry plates, cups, and kitchen surfaces.",
     img: `${LOCAL_WORD_IMAGES}/dish-towel.webp`,
   },
@@ -1183,7 +1195,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "oven-mitt",
     label: "Oven Mitt",
     phonetic: "ˈʌvən mɪt",
-    topic: "kitchen-items",
+    topic: "kitchen-4",
     description: "A thick protective glove used when holding hot cookware.",
     img: `${LOCAL_WORD_IMAGES}/oven-mitt.webp`,
   },
@@ -1191,7 +1203,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "apron",
     label: "Apron",
     phonetic: "ˈeɪpɹən",
-    topic: "kitchen-items",
+    topic: "kitchen-4",
     description: "A protective garment tied over clothes while preparing meals.",
     img: `${LOCAL_WORD_IMAGES}/apron.webp`,
   },
@@ -1199,7 +1211,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "trash-can",
     label: "Trash Can",
     phonetic: "tɹæʃ kæn",
-    topic: "kitchen-items",
+    topic: "kitchen-4",
     description: "A container that holds waste until it is removed.",
     img: `${LOCAL_WORD_IMAGES}/trash-can.webp`,
   },
@@ -1207,7 +1219,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "paper-towel",
     label: "Paper Towel",
     phonetic: "ˈpeɪpɚ ˈtaʊəl",
-    topic: "kitchen-items",
+    topic: "kitchen-4",
     description: "A disposable absorbent sheet used to wipe spills.",
     img: `${LOCAL_WORD_IMAGES}/paper-towel.webp`,
   },
@@ -1215,7 +1227,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "plastic-wrap",
     label: "Plastic Wrap",
     phonetic: "ˈplæstɪk ɹæp",
-    topic: "kitchen-items",
+    topic: "kitchen-4",
     description: "A thin transparent sheet that covers and protects leftovers.",
     img: `${LOCAL_WORD_IMAGES}/plastic-wrap.webp`,
   },
@@ -1223,7 +1235,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "aluminum-foil",
     label: "Aluminum Foil",
     phonetic: "əˈlumənəm fɔɪl",
-    topic: "kitchen-items",
+    topic: "kitchen-4",
     description: "A thin flexible metal sheet used to cover or cook ingredients.",
     img: `${LOCAL_WORD_IMAGES}/aluminum-foil.webp`,
   },
@@ -1231,7 +1243,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "food-container",
     label: "Food Container",
     phonetic: "fud kənˈteɪnɚ",
-    topic: "kitchen-items",
+    topic: "kitchen-4",
     description: "A reusable box with a lid that stores leftovers safely.",
     img: `${LOCAL_WORD_IMAGES}/food-container.webp`,
   },
@@ -1239,7 +1251,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "sponge",
     label: "Sponge",
     phonetic: "spʌndʒ",
-    topic: "kitchen-items",
+    topic: "kitchen-4",
     description: "A soft absorbent cleaning item used with water.",
     img: `${LOCAL_WORD_IMAGES}/sponge.webp`,
   },
@@ -1247,7 +1259,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "dish-soap",
     label: "Dish Soap",
     phonetic: "dɪʃ soʊp",
-    topic: "kitchen-items",
+    topic: "kitchen-4",
     description: "A liquid cleaner used to remove grease from plates and cookware.",
     img: `${LOCAL_WORD_IMAGES}/dish-soap.webp`,
   },
@@ -1255,7 +1267,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "dish-rack",
     label: "Dish Rack",
     phonetic: "dɪʃ ɹæk",
-    topic: "kitchen-items",
+    topic: "kitchen-4",
     description: "A raised holder where washed plates and cups stand while drying.",
     img: `${LOCAL_WORD_IMAGES}/dish-rack.webp`,
   },
@@ -1263,7 +1275,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "cling-film",
     label: "Cling Film",
     phonetic: "klɪŋ fɪlm",
-    topic: "kitchen-items",
+    topic: "kitchen-4",
     description: "A thin clear sheet that sticks around leftovers to keep them fresh.",
     img: `${LOCAL_WORD_IMAGES}/cling-film.webp`,
   },
@@ -1271,7 +1283,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "bread",
     label: "Bread",
     phonetic: "bɹɛd",
-    topic: "basic-pantry",
+    topic: "kitchen-4",
     description: "A baked staple made from dough, commonly sliced for sandwiches.",
     img: `${LOCAL_WORD_IMAGES}/bread.webp`,
   },
@@ -1279,7 +1291,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "butter",
     label: "Butter",
     phonetic: "ˈbʌtɚ",
-    topic: "basic-pantry",
+    topic: "kitchen-4",
     description: "A soft yellow dairy product spread on toast or used in cooking.",
     img: `${LOCAL_WORD_IMAGES}/butter.webp`,
   },
@@ -1287,7 +1299,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "milk",
     label: "Milk",
     phonetic: "mɪlk",
-    topic: "basic-pantry",
+    topic: "kitchen-4",
     description: "A white dairy drink that is also used in cereal and cooking.",
     img: `${LOCAL_WORD_IMAGES}/milk.webp`,
   },
@@ -1295,7 +1307,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "egg",
     label: "Egg",
     phonetic: "ɛg",
-    topic: "basic-pantry",
+    topic: "kitchen-4",
     description: "An oval food with a shell, white, and yellow center.",
     img: `${LOCAL_WORD_IMAGES}/egg.webp`,
   },
@@ -1303,7 +1315,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "cheese",
     label: "Cheese",
     phonetic: "tʃiz",
-    topic: "basic-pantry",
+    topic: "kitchen-5",
     description: "A solid dairy product available in slices, blocks, or grated pieces.",
     img: `${LOCAL_WORD_IMAGES}/cheese.webp`,
   },
@@ -1311,7 +1323,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "rice",
     label: "Rice",
     phonetic: "ɹaɪs",
-    topic: "basic-pantry",
+    topic: "kitchen-5",
     description: "Small pale grains that become soft when boiled.",
     img: `${LOCAL_WORD_IMAGES}/rice.webp`,
   },
@@ -1319,7 +1331,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "pasta",
     label: "Pasta",
     phonetic: "ˈpɑstə",
-    topic: "basic-pantry",
+    topic: "kitchen-5",
     description: "A dough-based food shaped into noodles, tubes, or other forms.",
     img: `${LOCAL_WORD_IMAGES}/pasta.webp`,
   },
@@ -1327,7 +1339,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "cooking-oil",
     label: "Cooking Oil",
     phonetic: "ˈkʊkɪŋ ɔɪl",
-    topic: "basic-pantry",
+    topic: "kitchen-5",
     description: "A smooth liquid fat used to fry or prepare ingredients.",
     img: `${LOCAL_WORD_IMAGES}/cooking-oil.webp`,
   },
@@ -1335,7 +1347,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "salt",
     label: "Salt",
     phonetic: "sɔlt",
-    topic: "basic-pantry",
+    topic: "kitchen-5",
     description: "Fine white crystals added in small amounts to make meals more savory.",
     img: `${LOCAL_WORD_IMAGES}/salt.webp`,
   },
@@ -1343,7 +1355,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "sugar",
     label: "Sugar",
     phonetic: "ˈʃʊgɚ",
-    topic: "basic-pantry",
+    topic: "kitchen-5",
     description: "Sweet white or brown crystals used in drinks and desserts.",
     img: `${LOCAL_WORD_IMAGES}/sugar.webp`,
   },
@@ -1351,7 +1363,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "pepper",
     label: "Pepper",
     phonetic: "ˈpɛpɚ",
-    topic: "basic-pantry",
+    topic: "kitchen-5",
     description: "A dark ground spice added in small amounts for a sharp flavor.",
     img: `${LOCAL_WORD_IMAGES}/pepper.webp`,
   },
@@ -1359,7 +1371,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "flour",
     label: "Flour",
     phonetic: "ˈflaʊɚ",
-    topic: "basic-pantry",
+    topic: "kitchen-5",
     description: "A fine pale powder made from grain and used to make dough.",
     img: `${LOCAL_WORD_IMAGES}/flour.webp`,
   },
@@ -1367,7 +1379,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "vinegar",
     label: "Vinegar",
     phonetic: "ˈvɪnəgɚ",
-    topic: "basic-pantry",
+    topic: "kitchen-5",
     description: "A sharp sour liquid used in dressings, sauces, and preserving.",
     img: `${LOCAL_WORD_IMAGES}/vinegar.webp`,
   },
@@ -1375,7 +1387,7 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
     id: "honey",
     label: "Honey",
     phonetic: "ˈhʌni",
-    topic: "basic-pantry",
+    topic: "kitchen-5",
     description: "A thick sweet golden liquid made by bees.",
     img: `${LOCAL_WORD_IMAGES}/farm/honey.webp`,
   },
@@ -1383,42 +1395,34 @@ export const KITCHEN_VOCABULARY: VocabularyItem[] = [
 
 export const LIVING_ROOM_TOPICS: TopicCategory[] = [
   {
-    id: "seating-tables",
-    name: "Seating & Tables",
-    itemsCount: 10,
+    id: "living-room-1",
+    name: "Living Room Part 1",
+    itemsCount: 15,
   },
   {
-    id: "storage-display",
-    name: "Storage & Display",
-    itemsCount: 10,
+    id: "living-room-2",
+    name: "Living Room Part 2",
+    itemsCount: 15,
   },
   {
-    id: "electronics-media",
-    name: "Electronics & Media",
-    itemsCount: 10,
+    id: "living-room-3",
+    name: "Living Room Part 3",
+    itemsCount: 15,
   },
   {
-    id: "lighting-decor",
-    name: "Lighting & Decor",
-    itemsCount: 10,
-  },
-  {
-    id: "soft-furnishings",
-    name: "Soft & Furnishings",
-    itemsCount: 10,
-  },
-  {
-    id: "living-room-objects",
-    name: "Living Room Objects",
-    itemsCount: 9,
+    id: "living-room-4",
+    name: "Living Room Part 4",
+    itemsCount: 14,
   },
 ];
 
 export const LIVING_ROOM_GROUPS: Lesson[] = [
   {
-    id: "seating-tables",
-    name: "Seating & Tables",
-    topicId: "seating-tables",
+    id: "living-room-1",
+    name: "Living Room Basics 1",
+    description:
+      "Learn about Sofa, Armchair, Coffee Table, Side Table, Ottoman, Rocking Chair, Dining Table, Dining Chair, Bench,...",
+    topicId: "living-room-1",
     wordIds: [
       "sofa",
       "armchair",
@@ -1430,36 +1434,27 @@ export const LIVING_ROOM_GROUPS: Lesson[] = [
       "dining-chair",
       "bench",
       "stool",
-    ],
-    description: "Learn about seating & tables.",
-    story:
-      "The family relaxed on the sofa and armchair beside the coffee table and side table. A guest rested his feet on the ottoman while Grandma used the rocking chair. At dinner, everyone moved to the dining table and dining chair, while two children shared a bench and another sat on a stool.",
-  },
-  {
-    id: "storage-display",
-    name: "Storage & Display",
-    topicId: "storage-display",
-    wordIds: [
       "bookshelf",
       "tv-stand",
       "cabinet",
       "sideboard",
       "shelf",
+    ],
+    story:
+      "In this section, you will learn about Sofa, Armchair, Coffee Table, Side Table, Ottoman, Rocking Chair, Dining Table, Dining Chair, Bench, Stool, Bookshelf, TV Stand, Cabinet, Sideboard, Shelf. These are essential items to know.",
+  },
+  {
+    id: "living-room-2",
+    name: "Living Room Basics 2",
+    description:
+      "Learn about Drawer, Magazine Rack, Display Case, Coat Rack, Shoe Rack, Television, Remote Control, Speaker, Game...",
+    topicId: "living-room-2",
+    wordIds: [
       "drawer",
       "magazine-rack",
       "display-case",
       "coat-rack",
       "shoe-rack",
-    ],
-    description: "Learn about storage & display.",
-    story:
-      "She put her jacket on the coat-rack and boots on the shoe-rack. She read a book from the bookshelf and grabbed a magazine from the magazine-rack. Her television sat on a tv-stand with a drawer, and the dishes were stored in a cabinet and sideboard. A wall shelf held small items, and her trophies were in a display-case.",
-  },
-  {
-    id: "electronics-media",
-    name: "Electronics & Media",
-    topicId: "electronics-media",
-    wordIds: [
       "television",
       "remote-control",
       "speaker",
@@ -1471,14 +1466,15 @@ export const LIVING_ROOM_GROUPS: Lesson[] = [
       "cable",
       "plug",
     ],
-    description: "Learn about electronics & media.",
     story:
-      "The television sat above a game console and DVD player. A remote control changed the program, while a speaker and sound bar played the audio. The Wi-Fi router connected the room, and a power strip held each cable and plug safely.",
+      "In this section, you will learn about Drawer, Magazine Rack, Display Case, Coat Rack, Shoe Rack, Television, Remote Control, Speaker, Game Console, DVD Player, Sound Bar, Wi-Fi Router, Power Strip, Cable, Plug. These are essential items to know.",
   },
   {
-    id: "lighting-decor",
-    name: "Lighting & Decor",
-    topicId: "lighting-decor",
+    id: "living-room-3",
+    name: "Living Room Basics 3",
+    description:
+      "Learn about Floor Lamp, Table Lamp, Ceiling Light, Chandelier, Light Bulb, Candle, Candle Holder, String Lights,...",
+    topicId: "living-room-3",
     wordIds: [
       "floor-lamp",
       "table-lamp",
@@ -1490,36 +1486,27 @@ export const LIVING_ROOM_GROUPS: Lesson[] = [
       "string-lights",
       "picture-frame",
       "wall-clock",
-    ],
-    description: "Learn about lighting & decor.",
-    story:
-      "She changed the light-bulb in the ceiling-light and turned on the floor-lamp and table-lamp. Above the dining area hung a bright chandelier, while string-lights decorated the window. She placed a candle in a candle-holder, glanced at the time on the wall-clock, and admired the picture-frame.",
-  },
-  {
-    id: "soft-furnishings",
-    name: "Soft & Furnishings",
-    topicId: "soft-furnishings",
-    wordIds: [
       "cushion",
       "throw-blanket",
       "rug",
       "carpet",
       "curtain",
+    ],
+    story:
+      "In this section, you will learn about Floor Lamp, Table Lamp, Ceiling Light, Chandelier, Light Bulb, Candle, Candle Holder, String Lights, Picture Frame, Wall Clock, Cushion, Throw Blanket, Rug, Carpet, Curtain. These are essential items to know.",
+  },
+  {
+    id: "living-room-4",
+    name: "Living Room Basics 4",
+    description:
+      "Learn about Tablecloth, Placemat, Coaster, Doormat, Tapestry, Plant, Vase, Photo Frame, Painting, Book, Magazine...",
+    topicId: "living-room-4",
+    wordIds: [
       "tablecloth",
       "placemat",
       "coaster",
       "doormat",
       "tapestry",
-    ],
-    description: "Learn about soft & furnishings.",
-    story:
-      "A cushion and throw blanket made the sofa comfortable. A rug covered part of the carpet near the curtain. The dining table had a tablecloth, a placemat, and a coaster. A doormat lay by the entrance, and a tapestry added color to the wall.",
-  },
-  {
-    id: "living-room-objects",
-    name: "Living Room Objects",
-    topicId: "living-room-objects",
-    wordIds: [
       "plant",
       "vase",
       "photo-frame",
@@ -1530,9 +1517,8 @@ export const LIVING_ROOM_GROUPS: Lesson[] = [
       "board-game",
       "puzzle",
     ],
-    description: "Learn about living room objects.",
     story:
-      "She watered the plant next to a vase and a photo-frame. Above it hung a beautiful painting. On the table, she left a book, a magazine, and today's newspaper. Later, the family gathered to play a board-game and finish a jigsaw puzzle.",
+      "In this section, you will learn about Tablecloth, Placemat, Coaster, Doormat, Tapestry, Plant, Vase, Photo Frame, Painting, Book, Magazine, Newspaper, Board Game, Puzzle. These are essential items to know.",
   },
 ];
 
@@ -1542,7 +1528,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Sofa",
     phonetic: "ˈsəʊfə",
     img: `${LOCAL_WORD_IMAGES}/living-room/sofa.webp`,
-    topic: "seating-tables",
+    topic: "living-room-1",
     description: "A long upholstered seat with space for two or more people.",
   },
   {
@@ -1550,7 +1536,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Armchair",
     phonetic: "ˈɑɹmˌtʃɛɹ",
     img: `${LOCAL_WORD_IMAGES}/living-room/armchair.webp`,
-    topic: "seating-tables",
+    topic: "living-room-1",
     description: "A comfortable padded seat with arms, designed for one person.",
   },
   {
@@ -1558,7 +1544,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Coffee Table",
     phonetic: "ˈkɑfi ˈteɪbəl",
     img: `${LOCAL_WORD_IMAGES}/living-room/coffee-table.webp`,
-    topic: "seating-tables",
+    topic: "living-room-1",
     description: "A low surface placed in front of a couch for drinks and small items.",
   },
   {
@@ -1566,7 +1552,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Side Table",
     phonetic: "saɪd ˈteɪbəl",
     img: `${LOCAL_WORD_IMAGES}/living-room/side-table.webp`,
-    topic: "seating-tables",
+    topic: "living-room-1",
     description: "A small surface placed beside a seat for a lamp or drink.",
   },
   {
@@ -1574,7 +1560,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Ottoman",
     phonetic: "ˈɑtəmən",
     img: `${LOCAL_WORD_IMAGES}/living-room/ottoman.webp`,
-    topic: "seating-tables",
+    topic: "living-room-1",
     description: "A low padded piece used as a seat or a place to rest your feet.",
   },
   {
@@ -1582,7 +1568,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Rocking Chair",
     phonetic: "ˈɹɑkɪŋ tʃɛɹ",
     img: `${LOCAL_WORD_IMAGES}/living-room/rocking-chair.webp`,
-    topic: "seating-tables",
+    topic: "living-room-1",
     description: "A seat on curved runners that moves gently backward and forward.",
   },
   {
@@ -1590,7 +1576,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Dining Table",
     phonetic: "ˈdaɪnɪŋ(ɡ) ˈteɪbəl",
     img: `${LOCAL_WORD_IMAGES}/living-room/dining-table.webp`,
-    topic: "seating-tables",
+    topic: "living-room-1",
     description: "A large raised surface where people sit together to eat meals.",
   },
   {
@@ -1598,7 +1584,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Dining Chair",
     phonetic: "ˈdaɪnɪŋ(ɡ) t͡ʃɛə(ɹ)",
     img: `${LOCAL_WORD_IMAGES}/living-room/dining-chair.webp`,
-    topic: "seating-tables",
+    topic: "living-room-1",
     description: "An upright single seat used beside the place where meals are served.",
   },
   {
@@ -1606,7 +1592,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Bench",
     phonetic: "bɛntʃ",
     img: `${LOCAL_WORD_IMAGES}/living-room/bench.webp`,
-    topic: "seating-tables",
+    topic: "living-room-1",
     description: "A long simple seat that can hold several people.",
   },
   {
@@ -1614,7 +1600,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Stool",
     phonetic: "stuːl",
     img: `${LOCAL_WORD_IMAGES}/living-room/stool.webp`,
-    topic: "seating-tables",
+    topic: "living-room-1",
     description: "A small backless seat supported by three or four legs.",
   },
   {
@@ -1622,7 +1608,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Bookshelf",
     phonetic: "ˈbʊkˌʃɛlf",
     img: `${LOCAL_WORD_IMAGES}/living-room/bookshelf.webp`,
-    topic: "storage-display",
+    topic: "living-room-1",
     description: "A tall open piece of furniture with levels for storing books.",
   },
   {
@@ -1630,7 +1616,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "TV Stand",
     phonetic: "ti-vi stænd",
     img: `${LOCAL_WORD_IMAGES}/living-room/tv-stand.webp`,
-    topic: "storage-display",
+    topic: "living-room-1",
     description: "A low cabinet designed to support a television and media devices.",
   },
   {
@@ -1638,7 +1624,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Cabinet",
     phonetic: "ˈkæbənət",
     img: `${LOCAL_WORD_IMAGES}/living-room/cabinet.webp`,
-    topic: "storage-display",
+    topic: "living-room-1",
     description: "A storage cupboard with doors and shelves inside.",
   },
   {
@@ -1646,7 +1632,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Sideboard",
     phonetic: "ˈsaɪdˌbɔɹd",
     img: `${LOCAL_WORD_IMAGES}/living-room/sideboard.webp`,
-    topic: "storage-display",
+    topic: "living-room-1",
     description: "A long low storage cupboard used for dishes and serving items.",
   },
   {
@@ -1654,7 +1640,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Shelf",
     phonetic: "ʃɛlf",
     img: `${LOCAL_WORD_IMAGES}/living-room/shelf.webp`,
-    topic: "storage-display",
+    topic: "living-room-1",
     description: "A flat horizontal surface attached to a wall or furniture for storage.",
   },
   {
@@ -1662,7 +1648,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Drawer",
     phonetic: "dɹɔː(ɹ)",
     img: `${LOCAL_WORD_IMAGES}/living-room/drawer.webp`,
-    topic: "storage-display",
+    topic: "living-room-2",
     description: "A sliding storage compartment built into a piece of furniture.",
   },
   {
@@ -1670,7 +1656,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Magazine Rack",
     phonetic: "mæɡəˈziːn ɹæk",
     img: `${LOCAL_WORD_IMAGES}/living-room/magazine-rack.webp`,
-    topic: "storage-display",
+    topic: "living-room-2",
     description: "A narrow holder that keeps periodicals upright and organized.",
   },
   {
@@ -1678,7 +1664,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Display Case",
     phonetic: "dɪsˈpleɪ keɪs",
     img: `${LOCAL_WORD_IMAGES}/living-room/display-case.webp`,
-    topic: "storage-display",
+    topic: "living-room-2",
     description: "A glass-fronted cabinet that protects objects while keeping them visible.",
   },
   {
@@ -1686,7 +1672,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Coat Rack",
     phonetic: "koʊt ɹæk",
     img: `${LOCAL_WORD_IMAGES}/living-room/coat-rack.webp`,
-    topic: "storage-display",
+    topic: "living-room-2",
     description: "A tall frame with hooks for hanging jackets near an entrance.",
   },
   {
@@ -1694,7 +1680,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Shoe Rack",
     phonetic: "ʃuː ɹæk",
     img: `${LOCAL_WORD_IMAGES}/living-room/shoe-rack.webp`,
-    topic: "storage-display",
+    topic: "living-room-2",
     description: "An open tiered holder that keeps footwear organized.",
   },
   {
@@ -1702,7 +1688,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Television",
     phonetic: "ˈtɛləˌvɪʒən",
     img: `${LOCAL_WORD_IMAGES}/living-room/television.webp`,
-    topic: "electronics-media",
+    topic: "living-room-2",
     description: "A screen that shows programs, films, and other video.",
   },
   {
@@ -1710,7 +1696,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Remote Control",
     phonetic: "ɹɪˈmoʊt kənˈtɹoʊl",
     img: `${LOCAL_WORD_IMAGES}/living-room/remote-control.webp`,
-    topic: "electronics-media",
+    topic: "living-room-2",
     description: "A handheld device with buttons that operates electronics from a distance.",
   },
   {
@@ -1718,7 +1704,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Speaker",
     phonetic: "ˈspikɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/speaker.webp`,
-    topic: "electronics-media",
+    topic: "living-room-2",
     description: "A box-shaped device that plays sound aloud.",
   },
   {
@@ -1726,7 +1712,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Game Console",
     phonetic: "geɪm kənˈsoʊl",
     img: `${LOCAL_WORD_IMAGES}/living-room/game-console.webp`,
-    topic: "electronics-media",
+    topic: "living-room-2",
     description: "An electronic device connected to a screen for interactive digital play.",
   },
   {
@@ -1734,7 +1720,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "DVD Player",
     phonetic: "di-vi-di ˈpleɪɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/dvd-player.webp`,
-    topic: "electronics-media",
+    topic: "living-room-2",
     description: "An electronic device that reads movie discs and sends video to a screen.",
   },
   {
@@ -1742,7 +1728,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Sound Bar",
     phonetic: "saʊnd bɑɹ",
     img: `${LOCAL_WORD_IMAGES}/living-room/sound-bar.webp`,
-    topic: "electronics-media",
+    topic: "living-room-2",
     description: "A long narrow audio device placed below a television.",
   },
   {
@@ -1750,7 +1736,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Wi-Fi Router",
     phonetic: "waɪ-faɪ ˈɹaʊtɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/wi-fi-router.webp`,
-    topic: "electronics-media",
+    topic: "living-room-2",
     description: "A small electronic box that shares an internet connection wirelessly.",
   },
   {
@@ -1758,7 +1744,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Power Strip",
     phonetic: "ˈpaʊɚ stɹɪp",
     img: `${LOCAL_WORD_IMAGES}/living-room/power-strip.webp`,
-    topic: "electronics-media",
+    topic: "living-room-2",
     description: "A long electrical block with several sockets for multiple devices.",
   },
   {
@@ -1766,7 +1752,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Cable",
     phonetic: "ˈkeɪbəl",
     img: `${LOCAL_WORD_IMAGES}/living-room/cable.webp`,
-    topic: "electronics-media",
+    topic: "living-room-2",
     description: "A flexible covered wire that carries electricity or electronic signals.",
   },
   {
@@ -1774,7 +1760,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Plug",
     phonetic: "plʌg",
     img: `${LOCAL_WORD_IMAGES}/living-room/plug.webp`,
-    topic: "electronics-media",
+    topic: "living-room-2",
     description: "The end of an electrical cord with metal pins that fits into a socket.",
   },
   {
@@ -1782,7 +1768,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Floor Lamp",
     phonetic: "flɔɹ læmp",
     img: `${LOCAL_WORD_IMAGES}/living-room/floor-lamp.webp`,
-    topic: "lighting-decor",
+    topic: "living-room-3",
     description: "A tall freestanding light with its base on the ground.",
   },
   {
@@ -1790,7 +1776,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Table Lamp",
     phonetic: "ˈteɪbəl læmp",
     img: `${LOCAL_WORD_IMAGES}/living-room/table-lamp.webp`,
-    topic: "lighting-decor",
+    topic: "living-room-3",
     description: "A small portable light designed to sit on a raised surface.",
   },
   {
@@ -1798,7 +1784,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Ceiling Light",
     phonetic: "ˈsilɪŋ laɪt",
     img: `${LOCAL_WORD_IMAGES}/living-room/ceiling-light.webp`,
-    topic: "lighting-decor",
+    topic: "living-room-3",
     description: "An overhead fixture that brightens the room from above.",
   },
   {
@@ -1806,7 +1792,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Chandelier",
     phonetic: "ˌʃændəˈlɪɹ",
     img: `${LOCAL_WORD_IMAGES}/living-room/chandelier.webp`,
-    topic: "lighting-decor",
+    topic: "living-room-3",
     description: "A decorative hanging fixture with several branches and bulbs.",
   },
   {
@@ -1814,7 +1800,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Light Bulb",
     phonetic: "laɪt bʌlb",
     img: `${LOCAL_WORD_IMAGES}/living-room/light-bulb.webp`,
-    topic: "lighting-decor",
+    topic: "living-room-3",
     description: "A glass electrical globe that produces brightness inside a fixture.",
   },
   {
@@ -1822,7 +1808,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Candle",
     phonetic: "candle",
     img: `${LOCAL_WORD_IMAGES}/living-room/candle.webp`,
-    topic: "lighting-decor",
+    topic: "living-room-3",
     description: "A wax cylinder with a wick that burns to provide a small flame.",
   },
   {
@@ -1830,7 +1816,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Candle Holder",
     phonetic: "ˈkændəl ˈhoʊldɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/candle-holder.webp`,
-    topic: "lighting-decor",
+    topic: "living-room-3",
     description: "A protective base that keeps a wax light upright.",
   },
   {
@@ -1838,7 +1824,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "String Lights",
     phonetic: "stɹɪŋ laɪts",
     img: `${LOCAL_WORD_IMAGES}/living-room/string-lights.webp`,
-    topic: "lighting-decor",
+    topic: "living-room-3",
     description: "A row of small glowing bulbs connected along one flexible wire.",
   },
   {
@@ -1846,7 +1832,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Picture Frame",
     phonetic: "ˈpɪktʃɚ fɹeɪm",
     img: `${LOCAL_WORD_IMAGES}/living-room/picture-frame.webp`,
-    topic: "lighting-decor",
+    topic: "living-room-3",
     description: "A decorative border that holds an image upright or against a wall.",
   },
   {
@@ -1854,7 +1840,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Wall Clock",
     phonetic: "wɔl klɑk",
     img: `${LOCAL_WORD_IMAGES}/living-room/wall-clock.webp`,
-    topic: "lighting-decor",
+    topic: "living-room-3",
     description: "A timekeeping device mounted vertically where everyone can see it.",
   },
   {
@@ -1862,7 +1848,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Cushion",
     phonetic: "cushion",
     img: `${LOCAL_WORD_IMAGES}/living-room/cushion.webp`,
-    topic: "soft-furnishings",
+    topic: "living-room-3",
     description: "A small soft padded item used for comfort on a seat.",
   },
   {
@@ -1870,7 +1856,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Throw Blanket",
     phonetic: "θɹoʊ ˈblæŋkɪt",
     img: `${LOCAL_WORD_IMAGES}/living-room/throw-blanket.webp`,
-    topic: "soft-furnishings",
+    topic: "living-room-3",
     description: "A light decorative cover placed over a couch or chair.",
   },
   {
@@ -1878,7 +1864,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Rug",
     phonetic: "rug",
     img: `${LOCAL_WORD_IMAGES}/living-room/rug.webp`,
-    topic: "soft-furnishings",
+    topic: "living-room-3",
     description: "A small loose floor covering that can be moved easily.",
   },
   {
@@ -1886,7 +1872,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Carpet",
     phonetic: "carpet",
     img: `${LOCAL_WORD_IMAGES}/living-room/carpet.webp`,
-    topic: "soft-furnishings",
+    topic: "living-room-3",
     description: "A soft floor covering fixed across most or all of a room.",
   },
   {
@@ -1894,7 +1880,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Curtain",
     phonetic: "ˈkɝtən",
     img: `${LOCAL_WORD_IMAGES}/living-room/curtain.webp`,
-    topic: "soft-furnishings",
+    topic: "living-room-3",
     description: "A hanging piece of fabric that covers a window.",
   },
   {
@@ -1902,7 +1888,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Tablecloth",
     phonetic: "ˈteɪbəlˌklɔθ",
     img: `${LOCAL_WORD_IMAGES}/living-room/tablecloth.webp`,
-    topic: "soft-furnishings",
+    topic: "living-room-4",
     description: "A large fabric covering spread across the surface used for meals.",
   },
   {
@@ -1910,7 +1896,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Placemat",
     phonetic: "ˈpleɪsˌmæt",
     img: `${LOCAL_WORD_IMAGES}/living-room/placemat.webp`,
-    topic: "soft-furnishings",
+    topic: "living-room-4",
     description: "A small protective mat placed beneath one person's dishes.",
   },
   {
@@ -1918,7 +1904,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Coaster",
     phonetic: "ˈkoʊstɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/coaster.webp`,
-    topic: "soft-furnishings",
+    topic: "living-room-4",
     description: "A small flat piece placed under a drink to protect furniture.",
   },
   {
@@ -1926,7 +1912,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Doormat",
     phonetic: "ˈdɔɹˌmæt",
     img: `${LOCAL_WORD_IMAGES}/living-room/doormat.webp`,
-    topic: "soft-furnishings",
+    topic: "living-room-4",
     description: "A rough floor covering at an entrance for cleaning footwear.",
   },
   {
@@ -1934,7 +1920,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Tapestry",
     phonetic: "ˈtæpəstɹi",
     img: `${LOCAL_WORD_IMAGES}/living-room/tapestry.webp`,
-    topic: "soft-furnishings",
+    topic: "living-room-4",
     description: "A decorative woven fabric artwork hung on a wall.",
   },
   {
@@ -1942,7 +1928,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Plant",
     phonetic: "plænt",
     img: `${LOCAL_WORD_IMAGES}/living-room/plant.webp`,
-    topic: "living-room-objects",
+    topic: "living-room-4",
     description: "A living green organism grown indoors in a container of soil.",
   },
   {
@@ -1950,7 +1936,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Vase",
     phonetic: "veɪs",
     img: `${LOCAL_WORD_IMAGES}/living-room/vase.webp`,
-    topic: "living-room-objects",
+    topic: "living-room-4",
     description: "A tall decorative container used to hold cut flowers.",
   },
   {
@@ -1958,7 +1944,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Photo Frame",
     phonetic: "ˈfoʊˌtoʊ fɹeɪm",
     img: `${LOCAL_WORD_IMAGES}/living-room/photo-frame.webp`,
-    topic: "living-room-objects",
+    topic: "living-room-4",
     description: "A border made to protect and present a printed family image.",
   },
   {
@@ -1966,7 +1952,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Painting",
     phonetic: "ˈpeɪntɪŋ",
     img: `${LOCAL_WORD_IMAGES}/living-room/painting.webp`,
-    topic: "living-room-objects",
+    topic: "living-room-4",
     description: "An artwork made with colored liquid applied to a surface.",
   },
   {
@@ -1974,7 +1960,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Book",
     phonetic: "bʊk",
     img: `${LOCAL_WORD_IMAGES}/living-room/book.webp`,
-    topic: "living-room-objects",
+    topic: "living-room-4",
     description: "A bound set of printed pages read for information or enjoyment.",
   },
   {
@@ -1982,7 +1968,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Magazine",
     phonetic: "ˈmægəˌzin",
     img: `${LOCAL_WORD_IMAGES}/living-room/magazine.webp`,
-    topic: "living-room-objects",
+    topic: "living-room-4",
     description: "A thin publication with articles and photographs issued regularly.",
   },
   {
@@ -1990,7 +1976,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Newspaper",
     phonetic: "ˈnuzˌpeɪpɚ",
     img: `${LOCAL_WORD_IMAGES}/living-room/newspaper.webp`,
-    topic: "living-room-objects",
+    topic: "living-room-4",
     description: "A folded publication reporting recent events and public information.",
   },
   {
@@ -1998,7 +1984,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Board Game",
     phonetic: "bɔɹd geɪm",
     img: `${LOCAL_WORD_IMAGES}/living-room/board-game.webp`,
-    topic: "living-room-objects",
+    topic: "living-room-4",
     description: "A tabletop activity played with pieces, cards, or dice on a marked surface.",
   },
   {
@@ -2006,7 +1992,7 @@ export const LIVING_ROOM_VOCABULARY: VocabularyItem[] = [
     label: "Puzzle",
     phonetic: "ˈpʌzəl",
     img: `${LOCAL_WORD_IMAGES}/living-room/puzzle.webp`,
-    topic: "living-room-objects",
+    topic: "living-room-4",
     description: "A game in which separate pieces are fitted together to form a complete image.",
   },
 ];
@@ -2017,7 +2003,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Cow",
     phonetic: "kaʊ",
     img: `${LOCAL_WORD_IMAGES}/farm/cow.webp`,
-    topic: "farm-farm-animals",
+    topic: "farm-1",
     description: "A large female farm animal raised for dairy products and meat.",
   },
   {
@@ -2025,7 +2011,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Pig",
     phonetic: "pɪɡ",
     img: `${LOCAL_WORD_IMAGES}/farm/pig.webp`,
-    topic: "farm-farm-animals",
+    topic: "farm-1",
     description: "A sturdy pink or dark farm animal with a broad snout and curled tail.",
   },
   {
@@ -2033,7 +2019,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Sheep",
     phonetic: "ʃiːp",
     img: `${LOCAL_WORD_IMAGES}/farm/sheep.webp`,
-    topic: "farm-farm-animals",
+    topic: "farm-1",
     description: "A woolly grazing animal raised for fleece, dairy products, and meat.",
   },
   {
@@ -2041,7 +2027,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Chicken",
     phonetic: "ˈtʃɪkɪn",
     img: `${LOCAL_WORD_IMAGES}/farm/chicken.webp`,
-    topic: "farm-farm-animals",
+    topic: "farm-1",
     description: "A common farm bird raised for eggs and meat.",
   },
   {
@@ -2049,7 +2035,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Horse",
     phonetic: "hɔːrs",
     img: `${LOCAL_WORD_IMAGES}/farm/horse.webp`,
-    topic: "farm-farm-animals",
+    topic: "farm-1",
     description: "A large strong animal with a mane, used for riding or pulling loads.",
   },
   {
@@ -2057,7 +2043,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Goat",
     phonetic: "ɡoʊt",
     img: `${LOCAL_WORD_IMAGES}/farm/goat.webp`,
-    topic: "farm-farm-animals",
+    topic: "farm-1",
     description: "A sure-footed animal with horns, raised for dairy products and meat.",
   },
   {
@@ -2065,7 +2051,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Duck",
     phonetic: "dʌk",
     img: `${LOCAL_WORD_IMAGES}/farm/duck.webp`,
-    topic: "farm-farm-animals",
+    topic: "farm-1",
     description: "A water bird with a broad bill and webbed feet.",
   },
   {
@@ -2073,7 +2059,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Rooster",
     phonetic: "ˈruːstər",
     img: `${LOCAL_WORD_IMAGES}/farm/rooster.webp`,
-    topic: "farm-farm-animals",
+    topic: "farm-1",
     description: "An adult male farm bird known for crowing early in the morning.",
   },
   {
@@ -2081,7 +2067,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Turkey",
     phonetic: "ˈtɜːrki",
     img: `${LOCAL_WORD_IMAGES}/farm/turkey.webp`,
-    topic: "farm-farm-animals",
+    topic: "farm-1",
     description: "A large farm bird with a fan-shaped tail and bare head.",
   },
   {
@@ -2089,7 +2075,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Donkey",
     phonetic: "ˈdɑːŋki",
     img: `${LOCAL_WORD_IMAGES}/farm/donkey.webp`,
-    topic: "farm-farm-animals",
+    topic: "farm-1",
     description: "A strong working animal with long ears, used to carry loads.",
   },
   {
@@ -2097,7 +2083,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Rabbit",
     phonetic: "ˈræbɪt",
     img: `${LOCAL_WORD_IMAGES}/farm/rabbit.webp`,
-    topic: "farm-farm-animals",
+    topic: "farm-1",
     description: "A small furry animal with long ears and powerful back legs.",
   },
   {
@@ -2105,7 +2091,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Goose",
     phonetic: "ɡuːs",
     img: `${LOCAL_WORD_IMAGES}/farm/goose.webp`,
-    topic: "farm-farm-animals",
+    topic: "farm-1",
     description: "A large water bird with a long neck and webbed feet.",
   },
   {
@@ -2113,7 +2099,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Barn",
     phonetic: "bɑːrn",
     img: `${LOCAL_WORD_IMAGES}/farm/barn.webp`,
-    topic: "farm-farm-buildings",
+    topic: "farm-1",
     description: "A large farm building used to shelter animals or store crops.",
   },
   {
@@ -2121,7 +2107,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Farmhouse",
     phonetic: "ˈfɑːrmhaʊs",
     img: `${LOCAL_WORD_IMAGES}/farm/farmhouse.webp`,
-    topic: "farm-farm-buildings",
+    topic: "farm-1",
     description: "The main home where an agricultural family lives.",
   },
   {
@@ -2129,7 +2115,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Stable",
     phonetic: "ˈsteɪbəl",
     img: `${LOCAL_WORD_IMAGES}/farm/stable.webp`,
-    topic: "farm-farm-buildings",
+    topic: "farm-1",
     description: "A building divided into stalls where horses are kept.",
   },
   {
@@ -2137,7 +2123,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Hen House",
     phonetic: "ˈhɛn haʊs",
     img: `${LOCAL_WORD_IMAGES}/farm/hen-house.webp`,
-    topic: "farm-farm-buildings",
+    topic: "farm-2",
     description: "A small shelter where female birds nest and lay eggs.",
   },
   {
@@ -2145,7 +2131,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Silo",
     phonetic: "ˈsaɪloʊ",
     img: `${LOCAL_WORD_IMAGES}/farm/silo.webp`,
-    topic: "farm-farm-buildings",
+    topic: "farm-2",
     description: "A tall round structure used to store grain or animal feed.",
   },
   {
@@ -2153,7 +2139,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Greenhouse",
     phonetic: "ˈɡriːnhaʊs",
     img: `${LOCAL_WORD_IMAGES}/farm/greenhouse.webp`,
-    topic: "farm-farm-buildings",
+    topic: "farm-2",
     description: "A transparent building that keeps crops warm while they grow.",
   },
   {
@@ -2161,7 +2147,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Shed",
     phonetic: "ʃɛd",
     img: `${LOCAL_WORD_IMAGES}/farm/shed.webp`,
-    topic: "farm-farm-buildings",
+    topic: "farm-2",
     description: "A small simple building used to store tools and equipment.",
   },
   {
@@ -2169,7 +2155,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Windmill",
     phonetic: "ˈwɪndmɪl",
     img: `${LOCAL_WORD_IMAGES}/farm/windmill.webp`,
-    topic: "farm-farm-buildings",
+    topic: "farm-2",
     description: "A tall structure with blades turned by moving air to produce energy.",
   },
   {
@@ -2177,7 +2163,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Well",
     phonetic: "wɛl",
     img: `${LOCAL_WORD_IMAGES}/farm/well.webp`,
-    topic: "farm-farm-buildings",
+    topic: "farm-2",
     description: "A deep hole built to bring groundwater up to the surface.",
   },
   {
@@ -2185,7 +2171,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Fence",
     phonetic: "fɛns",
     img: `${LOCAL_WORD_IMAGES}/farm/fence.webp`,
-    topic: "farm-farm-buildings",
+    topic: "farm-2",
     description: "A barrier of posts and wire or wood that surrounds a field.",
   },
   {
@@ -2193,7 +2179,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Tractor",
     phonetic: "ˈtræktər",
     img: `${LOCAL_WORD_IMAGES}/farm/tractor.webp`,
-    topic: "farm-farm-equipment",
+    topic: "farm-2",
     description: "A powerful farm vehicle used to pull equipment across fields.",
   },
   {
@@ -2201,7 +2187,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Plow",
     phonetic: "plaʊ",
     img: `${LOCAL_WORD_IMAGES}/farm/plow.webp`,
-    topic: "farm-farm-equipment",
+    topic: "farm-2",
     description: "A heavy tool pulled through soil to turn it before planting.",
   },
   {
@@ -2209,7 +2195,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Trailer",
     phonetic: "ˈtreɪlər",
     img: `${LOCAL_WORD_IMAGES}/farm/trailer.webp`,
-    topic: "farm-farm-equipment",
+    topic: "farm-2",
     description: "An unpowered wheeled container pulled behind a vehicle.",
   },
   {
@@ -2217,7 +2203,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Wheelbarrow",
     phonetic: "ˈwiːlˌbæroʊ",
     img: `${LOCAL_WORD_IMAGES}/farm/wheelbarrow.webp`,
-    topic: "farm-farm-equipment",
+    topic: "farm-2",
     description: "A small hand-pushed carrier with one wheel and two handles.",
   },
   {
@@ -2225,7 +2211,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Pitchfork",
     phonetic: "ˈpɪtʃfɔːrk",
     img: `${LOCAL_WORD_IMAGES}/farm/pitchfork.webp`,
-    topic: "farm-farm-equipment",
+    topic: "farm-2",
     description: "A long-handled tool with pointed metal prongs for lifting hay.",
   },
   {
@@ -2233,7 +2219,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Shovel",
     phonetic: "ˈʃʌvəl",
     img: `${LOCAL_WORD_IMAGES}/farm/shovel.webp`,
-    topic: "farm-farm-equipment",
+    topic: "farm-2",
     description: "A long-handled tool with a broad blade for moving soil.",
   },
   {
@@ -2241,7 +2227,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Hoe",
     phonetic: "hoʊ",
     img: `${LOCAL_WORD_IMAGES}/farm/hoe.webp`,
-    topic: "farm-farm-equipment",
+    topic: "farm-2",
     description: "A long-handled tool with a flat blade for breaking soil and removing weeds.",
   },
   {
@@ -2249,7 +2235,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Rake",
     phonetic: "reɪk",
     img: `${LOCAL_WORD_IMAGES}/farm/rake.webp`,
-    topic: "farm-farm-equipment",
+    topic: "farm-2",
     description: "A long-handled tool with teeth for gathering leaves or smoothing soil.",
   },
   {
@@ -2257,7 +2243,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Bucket",
     phonetic: "ˈbʌkɪt",
     img: `${LOCAL_WORD_IMAGES}/farm/bucket.webp`,
-    topic: "farm-farm-equipment",
+    topic: "farm-3",
     description: "A deep round container with a handle for carrying liquids or materials.",
   },
   {
@@ -2265,7 +2251,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Watering Can",
     phonetic: "ˈwɔːtərɪŋ kæn",
     img: `${LOCAL_WORD_IMAGES}/farm/watering-can.webp`,
-    topic: "farm-farm-equipment",
+    topic: "farm-3",
     description: "A portable container with a handle and spout for giving water to crops.",
   },
   {
@@ -2273,7 +2259,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Milk",
     phonetic: "mɪlk",
     img: `${LOCAL_WORD_IMAGES}/farm/milk.webp`,
-    topic: "farm-farm-products",
+    topic: "farm-3",
     description: "A white dairy liquid collected from animals and used as food or drink.",
   },
   {
@@ -2281,7 +2267,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Egg",
     phonetic: "ɛɡ",
     img: `${LOCAL_WORD_IMAGES}/farm/egg.webp`,
-    topic: "farm-farm-products",
+    topic: "farm-3",
     description: "An oval food with a hard shell, white interior, and yellow center.",
   },
   {
@@ -2289,7 +2275,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Wool",
     phonetic: "wʊl",
     img: `${LOCAL_WORD_IMAGES}/farm/wool.webp`,
-    topic: "farm-farm-products",
+    topic: "farm-3",
     description: "The thick soft fleece removed from certain animals and made into fabric.",
   },
   {
@@ -2297,7 +2283,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Cheese",
     phonetic: "tʃiːz",
     img: `${LOCAL_WORD_IMAGES}/farm/cheese.webp`,
-    topic: "farm-farm-products",
+    topic: "farm-3",
     description: "A solid dairy food made by separating and pressing curds.",
   },
   {
@@ -2305,7 +2291,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Butter",
     phonetic: "ˈbʌtər",
     img: `${LOCAL_WORD_IMAGES}/farm/butter.webp`,
-    topic: "farm-farm-products",
+    topic: "farm-3",
     description: "A soft yellow dairy product made by churning cream.",
   },
   {
@@ -2313,7 +2299,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Honey",
     phonetic: "ˈhʌni",
     img: `${LOCAL_WORD_IMAGES}/farm/honey.webp`,
-    topic: "farm-farm-products",
+    topic: "farm-3",
     description: "A thick sweet golden food produced by bees.",
   },
   {
@@ -2321,7 +2307,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Hay",
     phonetic: "heɪ",
     img: `${LOCAL_WORD_IMAGES}/farm/hay.webp`,
-    topic: "farm-farm-products",
+    topic: "farm-3",
     description: "Cut and dried grass stored as feed for animals.",
   },
   {
@@ -2329,7 +2315,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Straw",
     phonetic: "strɔː",
     img: `${LOCAL_WORD_IMAGES}/farm/straw.webp`,
-    topic: "farm-farm-products",
+    topic: "farm-3",
     description: "Dry pale stalks left after grain is collected, used for bedding.",
   },
   {
@@ -2337,7 +2323,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Flour",
     phonetic: "ˈflaʊər",
     img: `${LOCAL_WORD_IMAGES}/farm/flour.webp`,
-    topic: "farm-farm-products",
+    topic: "farm-3",
     description: "A fine powder made by grinding grain and used in baking.",
   },
   {
@@ -2345,7 +2331,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Jam",
     phonetic: "dʒæm",
     img: `${LOCAL_WORD_IMAGES}/farm/jam.webp`,
-    topic: "farm-farm-products",
+    topic: "farm-3",
     description: "A sweet spread made by cooking fruit with sugar.",
   },
   {
@@ -2353,7 +2339,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Farmer",
     phonetic: "ˈfɑːrmər",
     img: `${LOCAL_WORD_IMAGES}/farm/farmer.webp`,
-    topic: "farm-farm-life",
+    topic: "farm-3",
     description: "A person who grows crops or raises animals for food and materials.",
   },
   {
@@ -2361,7 +2347,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Scarecrow",
     phonetic: "ˈskɛrˌkroʊ",
     img: `${LOCAL_WORD_IMAGES}/farm/scarecrow.webp`,
-    topic: "farm-farm-life",
+    topic: "farm-3",
     description: "A human-shaped figure placed in a field to frighten birds away.",
   },
   {
@@ -2369,7 +2355,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Dog",
     phonetic: "dɔːɡ",
     img: `${LOCAL_WORD_IMAGES}/farm/dog.webp`,
-    topic: "farm-farm-life",
+    topic: "farm-3",
     description: "A loyal domesticated animal often trained to guard or herd livestock.",
   },
   {
@@ -2377,7 +2363,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Cat",
     phonetic: "kæt",
     img: `${LOCAL_WORD_IMAGES}/farm/cat.webp`,
-    topic: "farm-farm-life",
+    topic: "farm-4",
     description: "A small domesticated animal that may control mice around buildings.",
   },
   {
@@ -2385,7 +2371,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Pond",
     phonetic: "pɑːnd",
     img: `${LOCAL_WORD_IMAGES}/farm/pond.webp`,
-    topic: "farm-farm-life",
+    topic: "farm-4",
     description: "A small still body of water surrounded by land.",
   },
   {
@@ -2393,7 +2379,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Mud",
     phonetic: "mʌd",
     img: `${LOCAL_WORD_IMAGES}/farm/mud.webp`,
-    topic: "farm-farm-life",
+    topic: "farm-4",
     description: "Soft wet earth formed when soil mixes with water.",
   },
   {
@@ -2401,7 +2387,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Sunrise",
     phonetic: "ˈsʌnraɪz",
     img: `${LOCAL_WORD_IMAGES}/farm/sunrise.webp`,
-    topic: "farm-farm-life",
+    topic: "farm-4",
     description: "The time in the morning when the sun first appears above the horizon.",
   },
   {
@@ -2409,7 +2395,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Sunset",
     phonetic: "ˈsʌnsɛt",
     img: `${LOCAL_WORD_IMAGES}/farm/sunset.webp`,
-    topic: "farm-farm-life",
+    topic: "farm-4",
     description: "The time in the evening when the sun disappears below the horizon.",
   },
   {
@@ -2417,7 +2403,7 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Rain",
     phonetic: "reɪn",
     img: `${LOCAL_WORD_IMAGES}/farm/rain.webp`,
-    topic: "farm-farm-life",
+    topic: "farm-4",
     description: "Drops of water that fall from clouds and help crops grow.",
   },
   {
@@ -2425,44 +2411,41 @@ export const FARM_VOCABULARY: VocabularyItem[] = [
     label: "Harvest",
     phonetic: "ˈhɑːrvɪst",
     img: `${LOCAL_WORD_IMAGES}/farm/harvest.webp`,
-    topic: "farm-farm-life",
+    topic: "farm-4",
     description: "The gathering of ripe crops from fields at the end of a growing season.",
   },
 ];
 
 export const FARM_TOPICS: TopicCategory[] = [
   {
-    id: "farm-farm-animals",
-    name: "Farm Animals",
-    itemsCount: 12,
+    id: "farm-1",
+    name: "Farm Part 1",
+    itemsCount: 15,
   },
   {
-    id: "farm-farm-buildings",
-    name: "Farm Buildings",
-    itemsCount: 10,
+    id: "farm-2",
+    name: "Farm Part 2",
+    itemsCount: 15,
   },
   {
-    id: "farm-farm-equipment",
-    name: "Farm Equipment",
-    itemsCount: 10,
+    id: "farm-3",
+    name: "Farm Part 3",
+    itemsCount: 15,
   },
   {
-    id: "farm-farm-products",
-    name: "Farm Products",
-    itemsCount: 10,
-  },
-  {
-    id: "farm-farm-life",
-    name: "Farm Life",
-    itemsCount: 10,
+    id: "farm-4",
+    name: "Farm Part 4",
+    itemsCount: 7,
   },
 ];
 
 export const FARM_GROUPS: Lesson[] = [
   {
-    id: "farm-farm-animals",
-    name: "Farm Animals",
-    topicId: "farm-farm-animals",
+    id: "farm-1",
+    name: "Farm Basics 1",
+    description:
+      "Learn about Cow, Pig, Sheep, Chicken, Horse, Goat, Duck, Rooster, Turkey, Donkey, Rabbit, Goose, Barn, Farmhouse...",
+    topicId: "farm-1",
     wordIds: [
       "cow",
       "pig",
@@ -2476,19 +2459,20 @@ export const FARM_GROUPS: Lesson[] = [
       "donkey",
       "rabbit",
       "goose",
-    ],
-    description: "Learn about farm animals.",
-    story:
-      "At sunrise, the cow and goat ate grass while the pig rolled in the mud. A sheep stood near the horse and donkey. The chicken, rooster, and turkey searched the ground for grain, while the duck and goose swam near the rabbit by the pond.",
-  },
-  {
-    id: "farm-farm-buildings",
-    name: "Farm Buildings",
-    topicId: "farm-farm-buildings",
-    wordIds: [
       "barn",
       "farmhouse",
       "stable",
+    ],
+    story:
+      "In this section, you will learn about Cow, Pig, Sheep, Chicken, Horse, Goat, Duck, Rooster, Turkey, Donkey, Rabbit, Goose, Barn, Farmhouse, Stable. These are essential items to know.",
+  },
+  {
+    id: "farm-2",
+    name: "Farm Basics 2",
+    description:
+      "Learn about Hen House, Silo, Greenhouse, Shed, Windmill, Well, Fence, Tractor, Plow, Trailer, Wheelbarrow, Pitch...",
+    topicId: "farm-2",
+    wordIds: [
       "hen-house",
       "silo",
       "greenhouse",
@@ -2496,16 +2480,6 @@ export const FARM_GROUPS: Lesson[] = [
       "windmill",
       "well",
       "fence",
-    ],
-    description: "Learn about farm buildings.",
-    story:
-      "Behind the farmhouse, a white wooden fence surrounded the stable and the big red barn. Next to the tall silo, wind turned the blades of the windmill to pump water from the well. The farmer grew vegetables in the greenhouse, collected eggs from the hen-house, and stored tools in the shed.",
-  },
-  {
-    id: "farm-farm-equipment",
-    name: "Farm Equipment",
-    topicId: "farm-farm-equipment",
-    wordIds: [
       "tractor",
       "plow",
       "trailer",
@@ -2514,60 +2488,84 @@ export const FARM_GROUPS: Lesson[] = [
       "shovel",
       "hoe",
       "rake",
+    ],
+    story:
+      "In this section, you will learn about Hen House, Silo, Greenhouse, Shed, Windmill, Well, Fence, Tractor, Plow, Trailer, Wheelbarrow, Pitchfork, Shovel, Hoe, Rake. These are essential items to know.",
+  },
+  {
+    id: "farm-3",
+    name: "Farm Basics 3",
+    description:
+      "Learn about Bucket, Watering Can, Milk, Egg, Wool, Cheese, Butter, Honey, Hay, Straw, Flour, Jam, Farmer, Scarec...",
+    topicId: "farm-3",
+    wordIds: [
       "bucket",
       "watering-can",
-    ],
-    description: "Learn about farm equipment.",
-    story:
-      "The tractor pulled a plow and trailer across the field. The farmer moved soil in a wheelbarrow and lifted hay with a pitchfork. He dug with a shovel, cleared weeds with a hoe, and gathered leaves with a rake. A bucket and watering can carried water to the plants.",
-  },
-  {
-    id: "farm-farm-products",
-    name: "Farm Products",
-    topicId: "farm-farm-products",
-    wordIds: ["milk", "egg", "wool", "cheese", "butter", "honey", "hay", "straw", "flour", "jam"],
-    description: "Learn about farm products.",
-    story:
-      "The farmer collected an egg, milk for making cheese and butter, and sweet honey. He gathered wool from the sheep and fed them hay and straw. In the kitchen, he baked bread with flour and spread it with homemade jam.",
-  },
-  {
-    id: "farm-farm-life",
-    name: "Farm Life",
-    topicId: "farm-farm-life",
-    wordIds: [
+      "milk",
+      "egg",
+      "wool",
+      "cheese",
+      "butter",
+      "honey",
+      "hay",
+      "straw",
+      "flour",
+      "jam",
       "farmer",
       "scarecrow",
       "dog",
-      "cat",
-      "pond",
-      "mud",
-      "sunrise",
-      "sunset",
-      "rain",
-      "harvest",
     ],
-    description: "Learn about farm life.",
     story:
-      "The farmer and dog walked past the scarecrow while the cat slept in the barn. Rain left mud beside the pond. The sunrise began the workday, and the sunset ended it after a successful harvest.",
+      "In this section, you will learn about Bucket, Watering Can, Milk, Egg, Wool, Cheese, Butter, Honey, Hay, Straw, Flour, Jam, Farmer, Scarecrow, Dog. These are essential items to know.",
+  },
+  {
+    id: "farm-4",
+    name: "Farm Basics 4",
+    description: "Learn about Cat, Pond, Mud, Sunrise, Sunset, Rain, Harvest...",
+    topicId: "farm-4",
+    wordIds: ["cat", "pond", "mud", "sunrise", "sunset", "rain", "harvest"],
+    story:
+      "In this section, you will learn about Cat, Pond, Mud, Sunrise, Sunset, Rain, Harvest. These are essential items to know.",
   },
 ];
 
 // --- GARDEN DATA ---
 
 export const GARDEN_TOPICS: TopicCategory[] = [
-  { id: "flowers", name: "Flowers", itemsCount: 10 },
-  { id: "trees-shrubs", name: "Trees & Shrubs", itemsCount: 10 },
-  { id: "garden-tools", name: "Garden Tools", itemsCount: 12 },
-  { id: "parts-of-a-plant", name: "Parts of a Plant", itemsCount: 10 },
-  { id: "garden-creatures", name: "Garden Creatures", itemsCount: 10 },
-  { id: "garden-features", name: "Garden Features", itemsCount: 10 },
+  {
+    id: "garden-1",
+    name: "Garden Part 1",
+    itemsCount: 15,
+  },
+  {
+    id: "garden-2",
+    name: "Garden Part 2",
+    itemsCount: 15,
+  },
+  {
+    id: "garden-3",
+    name: "Garden Part 3",
+    itemsCount: 15,
+  },
+  {
+    id: "garden-4",
+    name: "Garden Part 4",
+    itemsCount: 15,
+  },
+  {
+    id: "garden-5",
+    name: "Garden Part 5",
+    itemsCount: 2,
+  },
 ];
 
 export const GARDEN_GROUPS: Lesson[] = [
   {
-    id: "flowers",
-    name: "Flowers",
-    topicId: "flowers",
+    id: "garden-1",
+    name: "Garden Basics 1",
+    description:
+      "Learn about Rose, Tulip, Sunflower, Daisy, Lily, Daffodil, Violet, Orchid, Carnation, Lavender, Oak Tree, Pine T...",
+    topicId: "garden-1",
     wordIds: [
       "rose",
       "tulip",
@@ -2579,36 +2577,27 @@ export const GARDEN_GROUPS: Lesson[] = [
       "orchid",
       "carnation",
       "lavender",
-    ],
-    description: "Learn about flowers.",
-    story:
-      "She picked a red rose, a yellow tulip, and a tall sunflower. Next, she found a white daisy, an elegant lily, and a bright daffodil. She arranged a purple violet with a rare orchid, and added a pink carnation and fragrant lavender to complete her beautiful bouquet.",
-  },
-  {
-    id: "trees-shrubs",
-    name: "Trees & Shrubs",
-    topicId: "trees-shrubs",
-    wordIds: [
       "oak-tree",
       "pine-tree",
       "apple-tree",
       "cherry-tree",
       "palm-tree",
+    ],
+    story:
+      "In this section, you will learn about Rose, Tulip, Sunflower, Daisy, Lily, Daffodil, Violet, Orchid, Carnation, Lavender, Oak Tree, Pine Tree, Apple Tree, Cherry Tree, Palm Tree. These are essential items to know.",
+  },
+  {
+    id: "garden-2",
+    name: "Garden Basics 2",
+    description:
+      "Learn about Hedge, Bush, Ivy, Vine, Fern, Shovel, Rake, Watering Can, Wheelbarrow, Hose, Garden Gloves, Pruner, ...",
+    topicId: "garden-2",
+    wordIds: [
       "hedge",
       "bush",
       "ivy",
       "vine",
       "fern",
-    ],
-    description: "Learn about trees & shrubs.",
-    story:
-      "A tall oak tree and a majestic pine tree provided shade near the apple tree and flowering cherry tree. Maya rested under a palm tree beside a trimmed hedge and a green bush. Clinging ivy and trailing vine grew along the wall, while a delicate fern flourished in the cool shadow.",
-  },
-  {
-    id: "garden-tools",
-    name: "Garden Tools",
-    topicId: "garden-tools",
-    wordIds: [
       "shovel",
       "rake",
       "watering-can",
@@ -2619,30 +2608,43 @@ export const GARDEN_GROUPS: Lesson[] = [
       "trowel",
       "lawn-mower",
       "spade",
+    ],
+    story:
+      "In this section, you will learn about Hedge, Bush, Ivy, Vine, Fern, Shovel, Rake, Watering Can, Wheelbarrow, Hose, Garden Gloves, Pruner, Trowel, Lawn Mower, Spade. These are essential items to know.",
+  },
+  {
+    id: "garden-3",
+    name: "Garden Basics 3",
+    description:
+      "Learn about Pitchfork, Sprinkler, Root, Stem, Leaf, Petal, Branch, Bark, Bud, Seed, Thorn, Berry, Butterfly, Lad...",
+    topicId: "garden-3",
+    wordIds: [
       "pitchfork",
       "sprinkler",
-    ],
-    description: "Learn about garden tools.",
-    story:
-      "Wearing her garden-gloves, she used a shovel and spade to dig the soil, and moved dirt with a wheelbarrow. She turned the compost with a pitchfork and gathered leaves using a rake. After planting flowers with a trowel and cutting branches with a pruner, she used a watering-can and a hose. Finally, she cut the grass with a lawn-mower and turned on the sprinkler.",
-  },
-  {
-    id: "parts-of-a-plant",
-    name: "Parts of a Plant",
-    topicId: "parts-of-a-plant",
-    wordIds: ["root", "stem", "leaf", "petal", "branch", "bark", "bud", "seed", "thorn", "berry"],
-    description: "Learn about parts of a plant.",
-    story:
-      "Omar examined a deep root buried in soil and followed the sturdy stem up to a green leaf and a colorful petal. High above, a thick branch covered in rough bark held a tiny bud and a ripe seed. He avoided a sharp thorn while picking a sweet berry.",
-  },
-  {
-    id: "garden-creatures",
-    name: "Garden Creatures",
-    topicId: "garden-creatures",
-    wordIds: [
+      "root",
+      "stem",
+      "leaf",
+      "petal",
+      "branch",
+      "bark",
+      "bud",
+      "seed",
+      "thorn",
+      "berry",
       "butterfly",
       "ladybug",
       "bee",
+    ],
+    story:
+      "In this section, you will learn about Pitchfork, Sprinkler, Root, Stem, Leaf, Petal, Branch, Bark, Bud, Seed, Thorn, Berry, Butterfly, Ladybug, Bee. These are essential items to know.",
+  },
+  {
+    id: "garden-4",
+    name: "Garden Basics 4",
+    description:
+      "Learn about Worm, Snail, Ant, Caterpillar, Spider, Dragonfly, Grasshopper, Lawn, Flower Bed, Path, Fence, Gate, ...",
+    topicId: "garden-4",
+    wordIds: [
       "worm",
       "snail",
       "ant",
@@ -2650,16 +2652,6 @@ export const GARDEN_GROUPS: Lesson[] = [
       "spider",
       "dragonfly",
       "grasshopper",
-    ],
-    description: "Learn about garden creatures.",
-    story:
-      "A colorful butterfly fluttered past a red ladybug, while a busy bee gathered pollen. A worm dug through the soil near a slow snail and a tiny ant. On a leaf, a hungry caterpillar munched quietly as a spider spun its web. Over the pond, a fast dragonfly zipped by a jumping grasshopper.",
-  },
-  {
-    id: "garden-features",
-    name: "Garden Features",
-    topicId: "garden-features",
-    wordIds: [
       "lawn",
       "flower-bed",
       "path",
@@ -2668,12 +2660,18 @@ export const GARDEN_GROUPS: Lesson[] = [
       "greenhouse",
       "bird-feeder",
       "garden-shed",
-      "birdbath",
-      "compost-bin",
     ],
-    description: "Learn about garden features.",
     story:
-      "Maya walked across the green lawn to admire the colorful flower bed. She followed the stone path to the wooden fence and pushed open the iron gate. Near the glass greenhouse, a bird feeder hung above a stone birdbath. She stored her tools inside the garden shed and placed dry clippings into the compost bin.",
+      "In this section, you will learn about Worm, Snail, Ant, Caterpillar, Spider, Dragonfly, Grasshopper, Lawn, Flower Bed, Path, Fence, Gate, Greenhouse, Bird Feeder, Garden Shed. These are essential items to know.",
+  },
+  {
+    id: "garden-5",
+    name: "Garden Basics 5",
+    description: "Learn about Birdbath, Compost Bin...",
+    topicId: "garden-5",
+    wordIds: ["birdbath", "compost-bin"],
+    story:
+      "In this section, you will learn about Birdbath, Compost Bin. These are essential items to know.",
   },
 ];
 
@@ -2684,7 +2682,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Rose",
     phonetic: "roʊz",
     img: `${LOCAL_WORD_IMAGES}/garden/rose.webp`,
-    topic: "flowers",
+    topic: "garden-1",
     description: "A fragrant red or pink blossom on a prickly stalk.",
   },
   {
@@ -2692,7 +2690,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Tulip",
     phonetic: "ˈtuːlɪp",
     img: `${LOCAL_WORD_IMAGES}/garden/tulip.webp`,
-    topic: "flowers",
+    topic: "garden-1",
     description: "A brightly colored cup-shaped spring blossom with smooth upright petals.",
   },
   {
@@ -2700,7 +2698,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Sunflower",
     phonetic: "ˈsʌnˌflaʊər",
     img: `${LOCAL_WORD_IMAGES}/garden/sunflower.webp`,
-    topic: "flowers",
+    topic: "garden-1",
     description: "A tall plant with a large golden head of yellow petals that faces the daylight.",
   },
   {
@@ -2708,7 +2706,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Daisy",
     phonetic: "ˈdeɪzi",
     img: `${LOCAL_WORD_IMAGES}/garden/daisy.webp`,
-    topic: "flowers",
+    topic: "garden-1",
     description: "A small simple blossom with white petals surrounding a bright yellow center.",
   },
   {
@@ -2716,7 +2714,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Lily",
     phonetic: "ˈlɪli",
     img: `${LOCAL_WORD_IMAGES}/garden/lily.webp`,
-    topic: "flowers",
+    topic: "garden-1",
     description: "A graceful trumpet-shaped blossom with prominent stamens and sweet fragrance.",
   },
   {
@@ -2724,7 +2722,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Daffodil",
     phonetic: "ˈdæfədɪl",
     img: `${LOCAL_WORD_IMAGES}/garden/daffodil.webp`,
-    topic: "flowers",
+    topic: "garden-1",
     description: "A bright yellow trumpet-shaped spring bloom that emerges early in the season.",
   },
   {
@@ -2732,7 +2730,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Violet",
     phonetic: "ˈvaɪələt",
     img: `${LOCAL_WORD_IMAGES}/garden/violet.webp`,
-    topic: "flowers",
+    topic: "garden-1",
     description: "A small delicate purple blossom with five petals growing low in shaded spots.",
   },
   {
@@ -2740,7 +2738,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Orchid",
     phonetic: "ˈɔːrkɪd",
     img: `${LOCAL_WORD_IMAGES}/garden/orchid.webp`,
-    topic: "flowers",
+    topic: "garden-1",
     description: "An exotic and intricate bloom with complex symmetry and vibrant patterns.",
   },
   {
@@ -2748,7 +2746,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Carnation",
     phonetic: "kɑːrˈneɪʃən",
     img: `${LOCAL_WORD_IMAGES}/garden/carnation.webp`,
-    topic: "flowers",
+    topic: "garden-1",
     description: "A ruffled aromatic blossom with fringed petals popular in bouquets.",
   },
   {
@@ -2756,7 +2754,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Lavender",
     phonetic: "ˈlævəndər",
     img: `${LOCAL_WORD_IMAGES}/garden/lavender.webp`,
-    topic: "flowers",
+    topic: "garden-1",
     description: "Fragrant pale purple flower spikes known for their calming herbal aroma.",
   },
 
@@ -2766,7 +2764,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Oak Tree",
     phonetic: "oʊk triː",
     img: `${LOCAL_WORD_IMAGES}/garden/oak-tree.webp`,
-    topic: "trees-shrubs",
+    topic: "garden-1",
     description: "A massive sturdy woodland perennial known for broad crowns and acorns.",
   },
   {
@@ -2774,7 +2772,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Pine Tree",
     phonetic: "paɪn triː",
     img: `${LOCAL_WORD_IMAGES}/garden/pine-tree.webp`,
-    topic: "trees-shrubs",
+    topic: "garden-1",
     description: "An evergreen conifer with needle-like foliage and woody cones.",
   },
   {
@@ -2782,7 +2780,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Apple Tree",
     phonetic: "ˈæpəl triː",
     img: `${LOCAL_WORD_IMAGES}/garden/apple-tree.webp`,
-    topic: "trees-shrubs",
+    topic: "garden-1",
     description: "A domestic orchard perennial bearing sweet round crisp orchard produce.",
   },
   {
@@ -2790,7 +2788,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Cherry Tree",
     phonetic: "ˈtʃɛri triː",
     img: `${LOCAL_WORD_IMAGES}/garden/cherry-tree.webp`,
-    topic: "trees-shrubs",
+    topic: "garden-1",
     description: "A blossom-bearing orchard plant producing clusters of small round stone fruits.",
   },
   {
@@ -2798,7 +2796,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Palm Tree",
     phonetic: "pɑːm triː",
     img: `${LOCAL_WORD_IMAGES}/garden/palm-tree.webp`,
-    topic: "trees-shrubs",
+    topic: "garden-1",
     description: "A tall tropical unbranched growth with a crown of long feathered fronds.",
   },
   {
@@ -2806,7 +2804,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Hedge",
     phonetic: "hɛdʒ",
     img: `${LOCAL_WORD_IMAGES}/garden/hedge.webp`,
-    topic: "trees-shrubs",
+    topic: "garden-2",
     description: "A dense continuous row of closely planted shrubs forming a boundary.",
   },
   {
@@ -2814,7 +2812,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Bush",
     phonetic: "bʊʃ",
     img: `${LOCAL_WORD_IMAGES}/garden/bush.webp`,
-    topic: "trees-shrubs",
+    topic: "garden-2",
     description: "A low dense woody perennial plant with many branches rising from the soil.",
   },
   {
@@ -2822,7 +2820,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Ivy",
     phonetic: "ˈaɪvi",
     img: `${LOCAL_WORD_IMAGES}/garden/ivy.webp`,
-    topic: "trees-shrubs",
+    topic: "garden-2",
     description: "A climbing evergreen creeper with glossy lobed leaves clinging to walls.",
   },
   {
@@ -2830,7 +2828,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Vine",
     phonetic: "vaɪn",
     img: `${LOCAL_WORD_IMAGES}/garden/vine.webp`,
-    topic: "trees-shrubs",
+    topic: "garden-2",
     description: "A flexible climbing or creeping plant with long slender trailing stalks.",
   },
   {
@@ -2838,7 +2836,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Fern",
     phonetic: "fɜːrn",
     img: `${LOCAL_WORD_IMAGES}/garden/fern.webp`,
-    topic: "trees-shrubs",
+    topic: "garden-2",
     description: "A non-flowering leafy green plant with delicate feathery fronds.",
   },
 
@@ -2848,7 +2846,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Shovel",
     phonetic: "ˈʃʌvəl",
     img: `${LOCAL_WORD_IMAGES}/garden/shovel.webp`,
-    topic: "garden-tools",
+    topic: "garden-2",
     description: "A broad-scooped tool with a long handle for moving piles of earth.",
   },
   {
@@ -2856,7 +2854,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Rake",
     phonetic: "reɪk",
     img: `${LOCAL_WORD_IMAGES}/garden/rake.webp`,
-    topic: "garden-tools",
+    topic: "garden-2",
     description: "A long-handled tool with a row of metal prongs for clearing fallen foliage.",
   },
   {
@@ -2864,7 +2862,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Watering Can",
     phonetic: "ˈwɔːtərɪŋ kæn",
     img: `${LOCAL_WORD_IMAGES}/garden/watering-can.webp`,
-    topic: "garden-tools",
+    topic: "garden-2",
     description: "A portable container with a spout and handle for showering potted plants.",
   },
   {
@@ -2872,7 +2870,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Wheelbarrow",
     phonetic: "ˈwiːlˌbæroʊ",
     img: `${LOCAL_WORD_IMAGES}/garden/wheelbarrow.webp`,
-    topic: "garden-tools",
+    topic: "garden-2",
     description: "A single-tired hand cart with two handles for hauling heavy soil.",
   },
   {
@@ -2880,7 +2878,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Hose",
     phonetic: "hoʊz",
     img: `${LOCAL_WORD_IMAGES}/garden/hose.webp`,
-    topic: "garden-tools",
+    topic: "garden-2",
     description: "A flexible rubber tube for directing pressurized liquid to planting beds.",
   },
   {
@@ -2888,7 +2886,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Garden Gloves",
     phonetic: "ˈɡɑːrdən ɡlʌvz",
     img: `${LOCAL_WORD_IMAGES}/garden/garden-gloves.webp`,
-    topic: "garden-tools",
+    topic: "garden-2",
     description: "Padded protective hand coverings worn to prevent prickles and blisters.",
   },
   {
@@ -2896,7 +2894,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Pruner",
     phonetic: "ˈpruːnər",
     img: `${LOCAL_WORD_IMAGES}/garden/pruner.webp`,
-    topic: "garden-tools",
+    topic: "garden-2",
     description: "Handheld spring-loaded shears used for snipping twigs and dead branches.",
   },
   {
@@ -2904,7 +2902,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Trowel",
     phonetic: "ˈtraʊəl",
     img: `${LOCAL_WORD_IMAGES}/garden/trowel.webp`,
-    topic: "garden-tools",
+    topic: "garden-2",
     description: "A small handheld curved metal scoop for digging small planting holes.",
   },
   {
@@ -2912,7 +2910,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Lawn Mower",
     phonetic: "ˈlɔːn ˌmoʊər",
     img: `${LOCAL_WORD_IMAGES}/garden/lawn-mower.webp`,
-    topic: "garden-tools",
+    topic: "garden-2",
     description: "A wheeled machine with revolving blades for trimming turf to uniform height.",
   },
   {
@@ -2920,7 +2918,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Spade",
     phonetic: "speɪd",
     img: `${LOCAL_WORD_IMAGES}/garden/spade.webp`,
-    topic: "garden-tools",
+    topic: "garden-2",
     description: "A sharp flat-edged digging tool for edging turf and cutting through roots.",
   },
   {
@@ -2928,7 +2926,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Pitchfork",
     phonetic: "ˈpɪtʃfɔːrk",
     img: `${LOCAL_WORD_IMAGES}/garden/pitchfork.webp`,
-    topic: "garden-tools",
+    topic: "garden-3",
     description: "A long-handled tool with four pointed tines for lifting compost and mulch.",
   },
   {
@@ -2936,7 +2934,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Sprinkler",
     phonetic: "ˈsprɪŋklər",
     img: `${LOCAL_WORD_IMAGES}/garden/sprinkler.webp`,
-    topic: "garden-tools",
+    topic: "garden-3",
     description: "A rotating nozzle device that showers droplets across the turf.",
   },
 
@@ -2946,7 +2944,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Root",
     phonetic: "ruːt",
     img: `${LOCAL_WORD_IMAGES}/garden/root.webp`,
-    topic: "parts-of-a-plant",
+    topic: "garden-3",
     description: "The underground anchor system that absorbs moisture and nutrients from soil.",
   },
   {
@@ -2954,7 +2952,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Stem",
     phonetic: "stɛm",
     img: `${LOCAL_WORD_IMAGES}/garden/stem.webp`,
-    topic: "parts-of-a-plant",
+    topic: "garden-3",
     description: "The central stalk that supports foliage and channels sap upward.",
   },
   {
@@ -2962,7 +2960,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Leaf",
     phonetic: "liːf",
     img: `${LOCAL_WORD_IMAGES}/garden/leaf.webp`,
-    topic: "parts-of-a-plant",
+    topic: "garden-3",
     description: "A flat thin green outgrowth that converts sunlight into chemical energy.",
   },
   {
@@ -2970,7 +2968,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Petal",
     phonetic: "ˈpɛtəl",
     img: `${LOCAL_WORD_IMAGES}/garden/petal.webp`,
-    topic: "parts-of-a-plant",
+    topic: "garden-3",
     description: "One of the brightly colored segments that form the corolla of a blossom.",
   },
   {
@@ -2978,7 +2976,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Branch",
     phonetic: "bræntʃ",
     img: `${LOCAL_WORD_IMAGES}/garden/branch.webp`,
-    topic: "parts-of-a-plant",
+    topic: "garden-3",
     description: "A woody division extending outward from the main trunk of a woody perennial.",
   },
   {
@@ -2986,7 +2984,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Bark",
     phonetic: "bɑːrk",
     img: `${LOCAL_WORD_IMAGES}/garden/bark.webp`,
-    topic: "parts-of-a-plant",
+    topic: "garden-3",
     description: "The rugged protective outer layer covering the woody trunk of a timber giant.",
   },
   {
@@ -2994,7 +2992,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Bud",
     phonetic: "bʌd",
     img: `${LOCAL_WORD_IMAGES}/garden/bud.webp`,
-    topic: "parts-of-a-plant",
+    topic: "garden-3",
     description: "A small compact swelling containing an undeveloped blossom or shoot.",
   },
   {
@@ -3002,7 +3000,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Seed",
     phonetic: "siːd",
     img: `${LOCAL_WORD_IMAGES}/garden/seed.webp`,
-    topic: "parts-of-a-plant",
+    topic: "garden-3",
     description: "A small embryonic plant enclosed in a protective coat ready for germination.",
   },
   {
@@ -3010,7 +3008,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Thorn",
     phonetic: "θɔːrn",
     img: `${LOCAL_WORD_IMAGES}/garden/thorn.webp`,
-    topic: "parts-of-a-plant",
+    topic: "garden-3",
     description: "A sharp stiff woody point protruding from the woody stalk of some shrubs.",
   },
   {
@@ -3018,7 +3016,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Berry",
     phonetic: "ˈbɛri",
     img: `${LOCAL_WORD_IMAGES}/garden/berry.webp`,
-    topic: "parts-of-a-plant",
+    topic: "garden-3",
     description: "A small fleshy juicy fruit containing pips and grown on wild brambles.",
   },
 
@@ -3028,7 +3026,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Butterfly",
     phonetic: "ˈbʌtərflaɪ",
     img: `${LOCAL_WORD_IMAGES}/garden/butterfly.webp`,
-    topic: "garden-creatures",
+    topic: "garden-3",
     description: "A winged insect with colorful patterned wings that glides between blossoms.",
   },
   {
@@ -3036,7 +3034,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Ladybug",
     phonetic: "ˈleɪdibʌɡ",
     img: `${LOCAL_WORD_IMAGES}/garden/ladybug.webp`,
-    topic: "garden-creatures",
+    topic: "garden-3",
     description: "A small round red beetle with dark spots that feeds on garden pests.",
   },
   {
@@ -3044,7 +3042,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Bee",
     phonetic: "biː",
     img: `${LOCAL_WORD_IMAGES}/garden/bee.webp`,
-    topic: "garden-creatures",
+    topic: "garden-3",
     description: "A striped buzzing pollinator that gathers nectar and produces sweet honey.",
   },
   {
@@ -3052,7 +3050,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Worm",
     phonetic: "wɜːrm",
     img: `${LOCAL_WORD_IMAGES}/garden/worm.webp`,
-    topic: "garden-creatures",
+    topic: "garden-4",
     description: "A soft slender burrowing creature that aerates soil and creates rich compost.",
   },
   {
@@ -3060,7 +3058,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Snail",
     phonetic: "sneɪl",
     img: `${LOCAL_WORD_IMAGES}/garden/snail.webp`,
-    topic: "garden-creatures",
+    topic: "garden-4",
     description: "A slow-moving mollusk with a spiral protective shell on its back.",
   },
   {
@@ -3068,7 +3066,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Ant",
     phonetic: "ænt",
     img: `${LOCAL_WORD_IMAGES}/garden/ant.webp`,
-    topic: "garden-creatures",
+    topic: "garden-4",
     description: "A tiny industrious social crawler that works in colonies and builds mounds.",
   },
   {
@@ -3076,7 +3074,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Caterpillar",
     phonetic: "ˈkætərˌpɪlər",
     img: `${LOCAL_WORD_IMAGES}/garden/caterpillar.webp`,
-    topic: "garden-creatures",
+    topic: "garden-4",
     description: "A soft segmented larval creature that chews foliage before metamorphosis.",
   },
   {
@@ -3084,7 +3082,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Spider",
     phonetic: "ˈspaɪdər",
     img: `${LOCAL_WORD_IMAGES}/garden/spider.webp`,
-    topic: "garden-creatures",
+    topic: "garden-4",
     description: "An eight-legged arachnid that spins intricate silken webs to catch prey.",
   },
   {
@@ -3092,7 +3090,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Dragonfly",
     phonetic: "ˈdræɡənflaɪ",
     img: `${LOCAL_WORD_IMAGES}/garden/dragonfly.webp`,
-    topic: "garden-creatures",
+    topic: "garden-4",
     description: "A fast aerial insect with transparent wings and an iridescent slender body.",
   },
   {
@@ -3100,7 +3098,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Grasshopper",
     phonetic: "ˈɡræsˌhɑːpər",
     img: `${LOCAL_WORD_IMAGES}/garden/grasshopper.webp`,
-    topic: "garden-creatures",
+    topic: "garden-4",
     description: "A leaping insect with powerful hind legs that makes a chirping sound in turf.",
   },
 
@@ -3110,7 +3108,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Lawn",
     phonetic: "lɔːn",
     img: `${LOCAL_WORD_IMAGES}/garden/lawn.webp`,
-    topic: "garden-features",
+    topic: "garden-4",
     description: "An area of manicured green turf maintained around a house or park.",
   },
   {
@@ -3118,7 +3116,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Flower Bed",
     phonetic: "ˈflaʊər bɛd",
     img: `${LOCAL_WORD_IMAGES}/garden/flower-bed.webp`,
-    topic: "garden-features",
+    topic: "garden-4",
     description: "A prepared plot of cultivated soil dedicated to ornamental plantings.",
   },
   {
@@ -3126,7 +3124,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Path",
     phonetic: "pæθ",
     img: `${LOCAL_WORD_IMAGES}/garden/path.webp`,
-    topic: "garden-features",
+    topic: "garden-4",
     description: "A designated walkway surfaced with gravel, stone, or stepping pavers.",
   },
   {
@@ -3134,7 +3132,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Fence",
     phonetic: "fɛns",
     img: `${LOCAL_WORD_IMAGES}/garden/fence.webp`,
-    topic: "garden-features",
+    topic: "garden-4",
     description: "An upright wooden or metal enclosure that marks an outdoor boundary.",
   },
   {
@@ -3142,7 +3140,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Gate",
     phonetic: "ɡeɪt",
     img: `${LOCAL_WORD_IMAGES}/garden/gate.webp`,
-    topic: "garden-features",
+    topic: "garden-4",
     description: "A movable hinged barrier in a boundary wall providing an entrance.",
   },
   {
@@ -3150,7 +3148,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Greenhouse",
     phonetic: "ˈɡriːnhaʊs",
     img: `${LOCAL_WORD_IMAGES}/garden/greenhouse.webp`,
-    topic: "garden-features",
+    topic: "garden-4",
     description: "A glass structure that traps warmth for cultivating delicate seedlings.",
   },
   {
@@ -3158,7 +3156,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Bird Feeder",
     phonetic: "ˈbɜːrd ˌfiːdər",
     img: `${LOCAL_WORD_IMAGES}/garden/bird-feeder.webp`,
-    topic: "garden-features",
+    topic: "garden-4",
     description: "A hanging dispenser filled with grain to attract wild avian visitors.",
   },
   {
@@ -3166,7 +3164,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Garden Shed",
     phonetic: "ˈɡɑːrdən ʃɛd",
     img: `${LOCAL_WORD_IMAGES}/garden/garden-shed.webp`,
-    topic: "garden-features",
+    topic: "garden-4",
     description: "A small wooden outbuilding used for storing outdoor equipment and potting pots.",
   },
   {
@@ -3174,7 +3172,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Birdbath",
     phonetic: "ˈbɜːrdbæθ",
     img: `${LOCAL_WORD_IMAGES}/garden/birdbath.webp`,
-    topic: "garden-features",
+    topic: "garden-5",
     description: "A shallow stone basin on a pedestal filled with water for feathered visitors.",
   },
   {
@@ -3182,7 +3180,7 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
     label: "Compost Bin",
     phonetic: "ˈkɑːmpoʊst bɪn",
     img: `${LOCAL_WORD_IMAGES}/garden/compost-bin.webp`,
-    topic: "garden-features",
+    topic: "garden-5",
     description: "A ventilated container where organic plant clippings decompose into fertilizer.",
   },
 ];
@@ -3193,62 +3191,39 @@ export const GARDEN_VOCABULARY: VocabularyItem[] = [
 
 export const BATHROOM_TOPICS: TopicCategory[] = [
   {
-    id: "fixtures-fittings",
-    name: "Fixtures & Fittings",
-    description: "Permanent fixtures and plumbing essentials for washing and waste.",
-    icon: "bath",
-    itemsCount: 10,
+    id: "bathroom-1",
+    name: "Bathroom Part 1",
+    itemsCount: 15,
   },
   {
-    id: "toiletries",
-    name: "Toiletries",
-    description: "Daily personal hygiene, hair care, and vanity essentials.",
-    icon: "sparkles",
-    itemsCount: 11,
+    id: "bathroom-2",
+    name: "Bathroom Part 2",
+    itemsCount: 15,
   },
   {
-    id: "bathroom-supplies",
-    name: "Bathroom Supplies",
-    description: "Grooming tools, health items, and maintenance supplies.",
-    icon: "shield-alert",
-    itemsCount: 10,
+    id: "bathroom-3",
+    name: "Bathroom Part 3",
+    itemsCount: 15,
   },
   {
-    id: "bath-shower",
-    name: "Bath & Shower",
-    description: "Linens, shower accessories, and bathing essentials.",
-    icon: "droplets",
-    itemsCount: 10,
+    id: "bathroom-4",
+    name: "Bathroom Part 4",
+    itemsCount: 15,
   },
   {
-    id: "personal-care",
-    name: "Personal Care",
-    description: "Skincare, oral hygiene, and cleansing products.",
-    icon: "heart",
-    itemsCount: 10,
-  },
-  {
-    id: "cleaning-items",
-    name: "Cleaning Items",
-    description: "Tools and supplies for keeping the bathroom sparkling clean.",
-    icon: "spray-can",
-    itemsCount: 8,
-  },
-  {
-    id: "hygiene-actions",
-    name: "Hygiene Actions",
-    description: "Essential daily routines and personal care habits.",
-    icon: "activity",
-    itemsCount: 8,
+    id: "bathroom-5",
+    name: "Bathroom Part 5",
+    itemsCount: 7,
   },
 ];
 
 export const BATHROOM_GROUPS: Lesson[] = [
   {
-    id: "fixtures-fittings",
-    name: "Fixtures & Fittings",
-    topicId: "fixtures-fittings",
-    description: "Learn about the permanent fixtures and fittings in the bathroom.",
+    id: "bathroom-1",
+    name: "Bathroom Basics 1",
+    description:
+      "Learn about Bathtub, Shower, Toilet, Sink, Faucet, Drain, Mirror, Towel Rack, Cabinet, Tiles, Soap, Shampoo, Con...",
+    topicId: "bathroom-1",
     wordIds: [
       "bathtub",
       "shower",
@@ -3260,37 +3235,28 @@ export const BATHROOM_GROUPS: Lesson[] = [
       "towel-rack",
       "cabinet",
       "tiles",
-    ],
-    story:
-      "She washed her face in the porcelain sink beneath the bright mirror. Turning the faucet, water filled the bathtub before disappearing down the drain. Above the clean tiles, a wooden cabinet hung near the toilet and shower, right beside a metal towel-rack.",
-  },
-  {
-    id: "toiletries",
-    name: "Toiletries",
-    topicId: "toiletries",
-    description: "Learn daily personal hygiene, hair styling, and vanity essentials.",
-    wordIds: [
       "soap",
       "shampoo",
       "conditioner",
       "toothbrush",
       "toothpaste",
+    ],
+    story:
+      "In this section, you will learn about Bathtub, Shower, Toilet, Sink, Faucet, Drain, Mirror, Towel Rack, Cabinet, Tiles, Soap, Shampoo, Conditioner, Toothbrush, Toothpaste. These are essential items to know.",
+  },
+  {
+    id: "bathroom-2",
+    name: "Bathroom Basics 2",
+    description:
+      "Learn about Towel, Comb, Hairbrush, Lotion, Deodorant, Tissue, Toilet Paper, Cotton Balls, Cotton Swab, Razor, N...",
+    topicId: "bathroom-2",
+    wordIds: [
       "towel",
       "comb",
       "hairbrush",
       "lotion",
       "deodorant",
       "tissue",
-    ],
-    story:
-      "Sarah lathers her hair with shampoo and conditioner, then washes with fragrant soap. She brushes her teeth using toothpaste and a toothbrush, dries off with a soft towel, untangles her hair with a comb and hairbrush, pulls a soft tissue, and applies soothing lotion and fresh deodorant.",
-  },
-  {
-    id: "bathroom-supplies",
-    name: "Bathroom Supplies",
-    topicId: "bathroom-supplies",
-    description: "Learn essential grooming tools, first aid, and storage supplies.",
-    wordIds: [
       "toilet-paper",
       "cotton-balls",
       "cotton-swab",
@@ -3300,17 +3266,18 @@ export const BATHROOM_GROUPS: Lesson[] = [
       "scale",
       "laundry-basket",
       "first-aid-kit",
-      "thermometer",
     ],
     story:
-      "Liam placed a fresh roll of toilet-paper beside the cotton-balls and a cotton-swab. He trimmed his nails with a nail-clipper, shaved with a sharp razor, and dried his hair using a hair-dryer. After stepping on the scale, he tossed dirty clothes into the laundry-basket, keeping the first-aid-kit and digital thermometer ready in the cabinet.",
+      "In this section, you will learn about Towel, Comb, Hairbrush, Lotion, Deodorant, Tissue, Toilet Paper, Cotton Balls, Cotton Swab, Razor, Nail Clipper, Hair Dryer, Scale, Laundry Basket, First Aid Kit. These are essential items to know.",
   },
   {
-    id: "bath-shower",
-    name: "Bath & Shower",
-    topicId: "bath-shower",
-    description: "Learn linens, bathing accessories, and shower gear.",
+    id: "bathroom-3",
+    name: "Bathroom Basics 3",
+    description:
+      "Learn about Thermometer, Bath Mat, Shower Curtain, Shower Head, Bath Towel, Hand Towel, Washcloth, Soap Dish, Sh...",
+    topicId: "bathroom-3",
     wordIds: [
+      "thermometer",
       "bath-mat",
       "shower-curtain",
       "shower-head",
@@ -3321,36 +3288,27 @@ export const BATHROOM_GROUPS: Lesson[] = [
       "shampoo-bottle",
       "rubber-duck",
       "shower-gel",
-    ],
-    story:
-      "The warm water flowed from the shower-head behind the waterproof shower-curtain. Maya placed her soap on the soap-dish and poured fragrant shower-gel from the shampoo-bottle. The toddler played with a yellow rubber-duck in the tub. Afterward, she stepped onto the bath-mat, washed with a gentle washcloth, dried her face with a hand-towel, and wrapped herself in a large bath-towel.",
-  },
-  {
-    id: "personal-care",
-    name: "Personal Care",
-    topicId: "personal-care",
-    description: "Learn skincare, oral health, and hygiene solutions.",
-    wordIds: [
       "face-cream",
       "sunscreen",
       "lip-balm",
       "hand-soap",
+    ],
+    story:
+      "In this section, you will learn about Thermometer, Bath Mat, Shower Curtain, Shower Head, Bath Towel, Hand Towel, Washcloth, Soap Dish, Shampoo Bottle, Rubber Duck, Shower Gel, Face Cream, Sunscreen, Lip Balm, Hand Soap. These are essential items to know.",
+  },
+  {
+    id: "bathroom-4",
+    name: "Bathroom Basics 4",
+    description:
+      "Learn about Body Wash, Mouthwash, Dental Floss, Face Wash, Hand Sanitizer, Wet Wipes, Sponge, Brush, Bucket, Glo...",
+    topicId: "bathroom-4",
+    wordIds: [
       "body-wash",
       "mouthwash",
       "dental-floss",
       "face-wash",
       "hand-sanitizer",
       "wet-wipes",
-    ],
-    story:
-      "Before leaving home, Adam cleaned his hands with liquid hand-soap and lathered in the shower with refreshing body-wash. He cleansed his skin with gentle face-wash, applied moisturizing face-cream, protective sunscreen, and soothing lip-balm. He cleaned his teeth with dental-floss and rinsed with minty mouthwash. In his bag, he packed hand-sanitizer and disposable wet-wipes.",
-  },
-  {
-    id: "cleaning-items",
-    name: "Cleaning Items",
-    topicId: "cleaning-items",
-    description: "Learn tools and supplies for deep bathroom cleaning.",
-    wordIds: [
       "sponge",
       "brush",
       "bucket",
@@ -3359,17 +3317,18 @@ export const BATHROOM_GROUPS: Lesson[] = [
       "cloth",
       "plunger",
       "squeegee",
+      "wash-hands",
     ],
     story:
-      "Wearing yellow rubber gloves, Omar filled a plastic bucket with water. He scrubbed the sink with a sponge and microfiber cloth, and wiped the mirror with a squeegee. He sprayed cleaner from a spray-bottle, cleaned the toilet with a stiff brush, and kept a plunger nearby for emergencies.",
+      "In this section, you will learn about Body Wash, Mouthwash, Dental Floss, Face Wash, Hand Sanitizer, Wet Wipes, Sponge, Brush, Bucket, Gloves, Spray Bottle, Cloth, Plunger, Squeegee, Wash Hands. These are essential items to know.",
   },
   {
-    id: "hygiene-actions",
-    name: "Hygiene Actions",
-    topicId: "hygiene-actions",
-    description: "Learn essential daily bathroom habits and self-care actions.",
+    id: "bathroom-5",
+    name: "Bathroom Basics 5",
+    description:
+      "Learn about Brush Teeth, Take Shower, Dry Off, Flush, Comb Hair, Apply Lotion, Gargle...",
+    topicId: "bathroom-5",
     wordIds: [
-      "wash-hands",
       "brush-teeth",
       "take-shower",
       "dry-off",
@@ -3379,7 +3338,7 @@ export const BATHROOM_GROUPS: Lesson[] = [
       "gargle",
     ],
     story:
-      "Every morning, Omar starts his routine: he will wash-hands at the sink, brush-teeth with mint paste, and take-shower in the stall. He uses a plush towel to dry-off completely. Afterwards, he remembers to flush the toilet, comb-hair before the mirror, apply-lotion to moisturize his skin, and gargle with mint mouthwash.",
+      "In this section, you will learn about Brush Teeth, Take Shower, Dry Off, Flush, Comb Hair, Apply Lotion, Gargle. These are essential items to know.",
   },
 ];
 
@@ -3390,7 +3349,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Bathtub",
     phonetic: "ˈbæθtʌb",
     img: `${LOCAL_WORD_IMAGES}/bathroom/bathtub.webp`,
-    topic: "fixtures-fittings",
+    topic: "bathroom-1",
     description: "A large oval tub designed for full-body immersion in warm water.",
   },
   {
@@ -3398,7 +3357,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Shower",
     phonetic: "ˈʃaʊər",
     img: `${LOCAL_WORD_IMAGES}/bathroom/shower.webp`,
-    topic: "fixtures-fittings",
+    topic: "bathroom-1",
     description: "A glass-enclosed cubicle where overhead spray provides quick washing.",
   },
   {
@@ -3406,7 +3365,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Toilet",
     phonetic: "ˈtɔɪlɪt",
     img: `${LOCAL_WORD_IMAGES}/bathroom/toilet.webp`,
-    topic: "fixtures-fittings",
+    topic: "bathroom-1",
     description: "A ceramic sanitation fixture connected to a flush mechanism and drain.",
   },
   {
@@ -3414,7 +3373,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Sink",
     phonetic: "sɪŋk",
     img: `${LOCAL_WORD_IMAGES}/bathroom/sink.webp`,
-    topic: "fixtures-fittings",
+    topic: "bathroom-1",
     description: "A countertop basin supplied with tap water for washing hands and face.",
   },
   {
@@ -3422,7 +3381,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Faucet",
     phonetic: "ˈfɔːsɪt",
     img: `${LOCAL_WORD_IMAGES}/bathroom/faucet.webp`,
-    topic: "fixtures-fittings",
+    topic: "bathroom-1",
     description: "A chrome valve device controlling the flow of hot and cold tap water.",
   },
   {
@@ -3430,7 +3389,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Drain",
     phonetic: "dreɪn",
     img: `${LOCAL_WORD_IMAGES}/bathroom/drain.webp`,
-    topic: "fixtures-fittings",
+    topic: "bathroom-1",
     description: "A circular grated outlet in the floor or basin that carries wastewater away.",
   },
   {
@@ -3438,7 +3397,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Mirror",
     phonetic: "ˈmɪrər",
     img: `${LOCAL_WORD_IMAGES}/bathroom/mirror.webp`,
-    topic: "fixtures-fittings",
+    topic: "bathroom-1",
     description: "A reflective glass panel mounted above the vanity for grooming.",
   },
   {
@@ -3446,7 +3405,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Towel Rack",
     phonetic: "ˈtaʊəl ræk",
     img: `${LOCAL_WORD_IMAGES}/bathroom/towel-rack.webp`,
-    topic: "fixtures-fittings",
+    topic: "bathroom-1",
     description: "A wall-mounted metal rail or heated ladder for hanging linens to air dry.",
   },
   {
@@ -3454,7 +3413,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Cabinet",
     phonetic: "ˈkæbɪnət",
     img: `${LOCAL_WORD_IMAGES}/bathroom/cabinet.webp`,
-    topic: "fixtures-fittings",
+    topic: "bathroom-1",
     description: "A storage unit with shelves and doors for organizing medicines and supplies.",
   },
   {
@@ -3462,7 +3421,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Tiles",
     phonetic: "taɪlz",
     img: `${LOCAL_WORD_IMAGES}/bathroom/tiles.webp`,
-    topic: "fixtures-fittings",
+    topic: "bathroom-1",
     description: "Waterproof ceramic or porcelain slabs covering bathroom walls and floors.",
   },
 
@@ -3472,7 +3431,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Soap",
     phonetic: "soʊp",
     img: `${LOCAL_WORD_IMAGES}/bathroom/soap.webp`,
-    topic: "toiletries",
+    topic: "bathroom-1",
     description: "A solid cleansing bar that creates rich suds when lathered with water.",
   },
   {
@@ -3480,7 +3439,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Shampoo",
     phonetic: "ʃæmˈpuː",
     img: `${LOCAL_WORD_IMAGES}/bathroom/shampoo.webp`,
-    topic: "toiletries",
+    topic: "bathroom-1",
     description: "A fragrant liquid detergent formulated for washing strands and scalp.",
   },
   {
@@ -3488,7 +3447,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Conditioner",
     phonetic: "kənˈdɪʃənər",
     img: `${LOCAL_WORD_IMAGES}/bathroom/conditioner.webp`,
-    topic: "toiletries",
+    topic: "bathroom-1",
     description: "A creamy formula that softens, detangles, and hydrates locks.",
   },
   {
@@ -3496,7 +3455,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Toothbrush",
     phonetic: "ˈtuːθbrʌʃ",
     img: `${LOCAL_WORD_IMAGES}/bathroom/toothbrush.webp`,
-    topic: "toiletries",
+    topic: "bathroom-1",
     description: "A small handheld tool with fine bristles used for cleaning incisors and gums.",
   },
   {
@@ -3504,7 +3463,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Toothpaste",
     phonetic: "ˈtuːθpeɪst",
     img: `${LOCAL_WORD_IMAGES}/bathroom/toothpaste.webp`,
-    topic: "toiletries",
+    topic: "bathroom-1",
     description: "A flavored mint gel squeezed from a tube to freshen breath.",
   },
   {
@@ -3512,7 +3471,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Towel",
     phonetic: "ˈtaʊəl",
     img: `${LOCAL_WORD_IMAGES}/bathroom/towel.webp`,
-    topic: "toiletries",
+    topic: "bathroom-2",
     description: "An absorbent piece of thick terrycloth fabric used for drying the skin.",
   },
   {
@@ -3520,7 +3479,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Comb",
     phonetic: "koʊm",
     img: `${LOCAL_WORD_IMAGES}/bathroom/comb.webp`,
-    topic: "toiletries",
+    topic: "bathroom-2",
     description: "A flat toothed plastic or wooden implement used for untangling locks.",
   },
   {
@@ -3528,7 +3487,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Hairbrush",
     phonetic: "ˈhɛərbrʌʃ",
     img: `${LOCAL_WORD_IMAGES}/bathroom/hairbrush.webp`,
-    topic: "toiletries",
+    topic: "bathroom-2",
     description: "A grooming paddle with multiple bristles for smoothing and styling locks.",
   },
   {
@@ -3536,7 +3495,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Lotion",
     phonetic: "ˈloʊʃən",
     img: `${LOCAL_WORD_IMAGES}/bathroom/lotion.webp`,
-    topic: "toiletries",
+    topic: "bathroom-2",
     description: "A soothing liquid emulsion applied to skin to relieve dryness.",
   },
   {
@@ -3544,7 +3503,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Deodorant",
     phonetic: "diˈoʊdərənt",
     img: `${LOCAL_WORD_IMAGES}/bathroom/deodorant.webp`,
-    topic: "toiletries",
+    topic: "bathroom-2",
     description: "A roll-on or stick cosmetic applied underarms to prevent body odor.",
   },
   {
@@ -3552,7 +3511,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Tissue",
     phonetic: "ˈtɪʃuː",
     img: `${LOCAL_WORD_IMAGES}/bathroom/tissue.webp`,
-    topic: "toiletries",
+    topic: "bathroom-2",
     description:
       "A soft thin sheet of disposable paper used for blotting moisture and gentle skincare.",
   },
@@ -3563,7 +3522,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Toilet Paper",
     phonetic: "ˈtɔɪlɪt ˈpeɪpər",
     img: `${LOCAL_WORD_IMAGES}/bathroom/toilet-paper.webp`,
-    topic: "bathroom-supplies",
+    topic: "bathroom-2",
     description: "Soft perforated hygiene sheets wound on a cardboard cylinder.",
   },
   {
@@ -3571,7 +3530,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Cotton Balls",
     phonetic: "ˈkɑːtn bɔːlz",
     img: `${LOCAL_WORD_IMAGES}/bathroom/cotton-balls.webp`,
-    topic: "bathroom-supplies",
+    topic: "bathroom-2",
     description: "Fluffy white spheres of soft natural fiber used for applying cosmetic toner.",
   },
   {
@@ -3579,7 +3538,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Cotton Swab",
     phonetic: "ˈkɑːtn swɑːb",
     img: `${LOCAL_WORD_IMAGES}/bathroom/cotton-swab.webp`,
-    topic: "bathroom-supplies",
+    topic: "bathroom-2",
     description: "A short stick with soft padded tips on both ends for precision hygiene.",
   },
   {
@@ -3587,7 +3546,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Razor",
     phonetic: "ˈreɪzər",
     img: `${LOCAL_WORD_IMAGES}/bathroom/razor.webp`,
-    topic: "bathroom-supplies",
+    topic: "bathroom-2",
     description: "A handheld tool with sharp blades designed for shaving facial or body fuzz.",
   },
   {
@@ -3595,7 +3554,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Nail Clipper",
     phonetic: "ˈneɪl ˌklɪpər",
     img: `${LOCAL_WORD_IMAGES}/bathroom/nail-clipper.webp`,
-    topic: "bathroom-supplies",
+    topic: "bathroom-2",
     description: "A lever-action metal implement used for trimming fingertips and toes neatly.",
   },
   {
@@ -3603,7 +3562,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Hair Dryer",
     phonetic: "ˈhɛər ˌdraɪər",
     img: `${LOCAL_WORD_IMAGES}/bathroom/hair-dryer.webp`,
-    topic: "bathroom-supplies",
+    topic: "bathroom-2",
     description: "An electrical appliance that circulates warm airflow to style damp strands.",
   },
   {
@@ -3611,7 +3570,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Scale",
     phonetic: "skeɪl",
     img: `${LOCAL_WORD_IMAGES}/bathroom/scale.webp`,
-    topic: "bathroom-supplies",
+    topic: "bathroom-2",
     description: "A flat digital device placed on the floor to measure body weight.",
   },
   {
@@ -3619,7 +3578,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Laundry Basket",
     phonetic: "ˈlɔːndri ˈbæskɪt",
     img: `${LOCAL_WORD_IMAGES}/bathroom/laundry-basket.webp`,
-    topic: "bathroom-supplies",
+    topic: "bathroom-2",
     description: "A woven hamper or plastic receptacle for collecting soiled garments.",
   },
   {
@@ -3627,7 +3586,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "First Aid Kit",
     phonetic: "ˌfɜːrst ˈeɪd kɪt",
     img: `${LOCAL_WORD_IMAGES}/bathroom/first-aid-kit.webp`,
-    topic: "bathroom-supplies",
+    topic: "bathroom-2",
     description: "A red emergency container holding sterile bandages, antiseptic, and gauze.",
   },
   {
@@ -3635,7 +3594,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Thermometer",
     phonetic: "θərˈmɑːmɪtər",
     img: `${LOCAL_WORD_IMAGES}/bathroom/thermometer.webp`,
-    topic: "bathroom-supplies",
+    topic: "bathroom-3",
     description: "A medical instrument used for measuring body heat accurately.",
   },
 
@@ -3645,7 +3604,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Bath Mat",
     phonetic: "ˈbæθ mæt",
     img: `${LOCAL_WORD_IMAGES}/bathroom/bath-mat.webp`,
-    topic: "bath-shower",
+    topic: "bathroom-3",
     description: "A soft non-slip floor rug placed outside the tub to absorb puddle drips.",
   },
   {
@@ -3653,7 +3612,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Shower Curtain",
     phonetic: "ˈʃaʊər ˈkɜːrtn",
     img: `${LOCAL_WORD_IMAGES}/bathroom/shower-curtain.webp`,
-    topic: "bath-shower",
+    topic: "bathroom-3",
     description: "A waterproof hanging screen hung to prevent droplets from splashing onto tiles.",
   },
   {
@@ -3661,7 +3620,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Shower Head",
     phonetic: "ˈʃaʊər hɛd",
     img: `${LOCAL_WORD_IMAGES}/bathroom/shower-head.webp`,
-    topic: "bath-shower",
+    topic: "bathroom-3",
     description: "The perforated overhead nozzle that sprays warm droplets down onto the bather.",
   },
   {
@@ -3669,7 +3628,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Bath Towel",
     phonetic: "ˈbæθ ˌtaʊəl",
     img: `${LOCAL_WORD_IMAGES}/bathroom/bath-towel.webp`,
-    topic: "bath-shower",
+    topic: "bathroom-3",
     description: "A large absorbent terrycloth wrap used for drying the entire body.",
   },
   {
@@ -3677,7 +3636,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Hand Towel",
     phonetic: "ˈhænd ˌtaʊəl",
     img: `${LOCAL_WORD_IMAGES}/bathroom/hand-towel.webp`,
-    topic: "bath-shower",
+    topic: "bathroom-3",
     description: "A medium-sized absorbent cloth positioned by the basin for drying wet palms.",
   },
   {
@@ -3685,7 +3644,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Washcloth",
     phonetic: "ˈwɑːʃklɔːθ",
     img: `${LOCAL_WORD_IMAGES}/bathroom/washcloth.webp`,
-    topic: "bath-shower",
+    topic: "bathroom-3",
     description: "A small square fabric item used for lathering suds and cleansing the cheeks.",
   },
   {
@@ -3693,7 +3652,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Soap Dish",
     phonetic: "ˈsoʊp dɪʃ",
     img: `${LOCAL_WORD_IMAGES}/bathroom/soap-dish.webp`,
-    topic: "bath-shower",
+    topic: "bathroom-3",
     description: "A shallow slotted tray with drainage ridges to hold a solid lather bar neatly.",
   },
   {
@@ -3701,7 +3660,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Shampoo Bottle",
     phonetic: "ʃæmˈpuː ˌbɑːtl",
     img: `${LOCAL_WORD_IMAGES}/bathroom/shampoo-bottle.webp`,
-    topic: "bath-shower",
+    topic: "bathroom-3",
     description: "A plastic dispenser holding hair cleanser on the stall shelf.",
   },
   {
@@ -3709,7 +3668,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Rubber Duck",
     phonetic: "ˈrʌbər dʌk",
     img: `${LOCAL_WORD_IMAGES}/bathroom/rubber-duck.webp`,
-    topic: "bath-shower",
+    topic: "bathroom-3",
     description: "A bright yellow floating novelty toy shaped like a small feathered pond swimmer.",
   },
   {
@@ -3717,7 +3676,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Shower Gel",
     phonetic: "ˈʃaʊər dʒɛl",
     img: `${LOCAL_WORD_IMAGES}/bathroom/shower-gel.webp`,
-    topic: "bath-shower",
+    topic: "bathroom-3",
     description: "A viscous fragrant liquid that lathers quickly for skin cleansing.",
   },
 
@@ -3727,7 +3686,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Face Cream",
     phonetic: "ˈfeɪs kriːm",
     img: `${LOCAL_WORD_IMAGES}/bathroom/face-cream.webp`,
-    topic: "personal-care",
+    topic: "bathroom-3",
     description: "A rich hydrating cosmetic salve for nourishing and moisturizing facial skin.",
   },
   {
@@ -3735,7 +3694,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Sunscreen",
     phonetic: "ˈsʌnskriːn",
     img: `${LOCAL_WORD_IMAGES}/bathroom/sunscreen.webp`,
-    topic: "personal-care",
+    topic: "bathroom-3",
     description: "A protective lotion shielding dermal layers from ultraviolet ray damage.",
   },
   {
@@ -3743,7 +3702,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Lip Balm",
     phonetic: "ˈlɪp bɑːm",
     img: `${LOCAL_WORD_IMAGES}/bathroom/lip-balm.webp`,
-    topic: "personal-care",
+    topic: "bathroom-3",
     description: "A soothing moisturizing wax stick applied around the mouth to relieve chapping.",
   },
   {
@@ -3751,7 +3710,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Hand Soap",
     phonetic: "ˈhænd soʊp",
     img: `${LOCAL_WORD_IMAGES}/bathroom/hand-soap.webp`,
-    topic: "personal-care",
+    topic: "bathroom-3",
     description: "A liquid cleansing formula in a pump dispenser used at the basin.",
   },
   {
@@ -3759,7 +3718,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Body Wash",
     phonetic: "ˈbɑːdi wɑːʃ",
     img: `${LOCAL_WORD_IMAGES}/bathroom/body-wash.webp`,
-    topic: "personal-care",
+    topic: "bathroom-4",
     description:
       "A gentle moisturizing liquid skin cleanser designed for complete cleansing routines.",
   },
@@ -3768,7 +3727,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Mouthwash",
     phonetic: "ˈmaʊθwɑːʃ",
     img: `${LOCAL_WORD_IMAGES}/bathroom/mouthwash.webp`,
-    topic: "personal-care",
+    topic: "bathroom-4",
     description: "An antiseptic oral liquid used to rinse the gums and kill oral germs.",
   },
   {
@@ -3776,7 +3735,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Dental Floss",
     phonetic: "ˌdɛntl ˈflɔːs",
     img: `${LOCAL_WORD_IMAGES}/bathroom/dental-floss.webp`,
-    topic: "personal-care",
+    topic: "bathroom-4",
     description: "A thin thread used for cleaning plaque from between tightly spaced teeth.",
   },
   {
@@ -3784,7 +3743,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Face Wash",
     phonetic: "ˈfeɪs wɑːʃ",
     img: `${LOCAL_WORD_IMAGES}/bathroom/face-wash.webp`,
-    topic: "personal-care",
+    topic: "bathroom-4",
     description:
       "A foaming liquid cleanser specifically formulated for gentle skincare on the cheeks.",
   },
@@ -3793,7 +3752,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Hand Sanitizer",
     phonetic: "ˈhænd ˌsænɪtaɪzər",
     img: `${LOCAL_WORD_IMAGES}/bathroom/hand-sanitizer.webp`,
-    topic: "personal-care",
+    topic: "bathroom-4",
     description:
       "An alcohol-based disinfectant gel used for killing bacteria on palms without water.",
   },
@@ -3802,7 +3761,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Wet Wipes",
     phonetic: "ˈwɛt waɪps",
     img: `${LOCAL_WORD_IMAGES}/bathroom/wet-wipes.webp`,
-    topic: "personal-care",
+    topic: "bathroom-4",
     description: "Pre-moistened disposable towelettes used for quick cleansing and sanitizing.",
   },
 
@@ -3812,7 +3771,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Sponge",
     phonetic: "spʌndʒ",
     img: `${LOCAL_WORD_IMAGES}/bathroom/sponge.webp`,
-    topic: "cleaning-items",
+    topic: "bathroom-4",
     description: "A porous absorbent block used for wiping counters and scrubbing basins.",
   },
   {
@@ -3820,7 +3779,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Brush",
     phonetic: "brʌʃ",
     img: `${LOCAL_WORD_IMAGES}/bathroom/brush.webp`,
-    topic: "cleaning-items",
+    topic: "bathroom-4",
     description:
       "A stiff-bristled tool on a handle designed for scrubbing porcelain bowls and grout.",
   },
@@ -3829,7 +3788,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Bucket",
     phonetic: "ˈbʌkɪt",
     img: `${LOCAL_WORD_IMAGES}/bathroom/bucket.webp`,
-    topic: "cleaning-items",
+    topic: "bathroom-4",
     description:
       "A sturdy plastic receptacle with a handle for holding mop water or cleaning tools.",
   },
@@ -3838,7 +3797,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Gloves",
     phonetic: "ɡlʌvz",
     img: `${LOCAL_WORD_IMAGES}/bathroom/gloves.webp`,
-    topic: "cleaning-items",
+    topic: "bathroom-4",
     description:
       "Durable waterproof rubber handwear protecting palms and fingers from harsh chemicals.",
   },
@@ -3847,7 +3806,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Spray Bottle",
     phonetic: "ˈspreɪ ˌbɑːtl",
     img: `${LOCAL_WORD_IMAGES}/bathroom/spray-bottle.webp`,
-    topic: "cleaning-items",
+    topic: "bathroom-4",
     description:
       "A trigger-activated plastic container that mists glass cleaner or disinfectant evenly.",
   },
@@ -3856,7 +3815,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Cloth",
     phonetic: "klɔːθ",
     img: `${LOCAL_WORD_IMAGES}/bathroom/cloth.webp`,
-    topic: "cleaning-items",
+    topic: "bathroom-4",
     description: "A soft microfiber cleaning rag used for drying counters and polishing glass.",
   },
   {
@@ -3864,7 +3823,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Plunger",
     phonetic: "ˈplʌndʒər",
     img: `${LOCAL_WORD_IMAGES}/bathroom/plunger.webp`,
-    topic: "cleaning-items",
+    topic: "bathroom-4",
     description: "A suction tool with a rubber suction cup used to clear clogged pipes.",
   },
   {
@@ -3872,7 +3831,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Squeegee",
     phonetic: "ˈskwiːdʒiː",
     img: `${LOCAL_WORD_IMAGES}/bathroom/squeegee.webp`,
-    topic: "cleaning-items",
+    topic: "bathroom-4",
     description: "A rubber blade tool used to wipe water and condensation off glass stall doors.",
   },
 
@@ -3882,7 +3841,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Wash Hands",
     phonetic: "wɑːʃ hændz",
     img: `${LOCAL_WORD_IMAGES}/bathroom/wash-hands.webp`,
-    topic: "hygiene-actions",
+    topic: "bathroom-4",
     description:
       "The vital hygiene habit of lathering palms and fingers under running tap water with antibacterial suds.",
   },
@@ -3891,7 +3850,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Brush Teeth",
     phonetic: "brʌʃ tiːθ",
     img: `${LOCAL_WORD_IMAGES}/bathroom/brush-teeth.webp`,
-    topic: "hygiene-actions",
+    topic: "bathroom-5",
     description:
       "The daily dental routine of scrubbing incisors and molars with mint paste on fine bristles.",
   },
@@ -3900,7 +3859,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Take Shower",
     phonetic: "teɪk ˈʃaʊər",
     img: `${LOCAL_WORD_IMAGES}/bathroom/take-shower.webp`,
-    topic: "hygiene-actions",
+    topic: "bathroom-5",
     description:
       "The refreshing act of stepping into a glass stall under an overhead spray to bathe.",
   },
@@ -3909,7 +3868,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Dry Off",
     phonetic: "draɪ ɔːf",
     img: `${LOCAL_WORD_IMAGES}/bathroom/dry-off.webp`,
-    topic: "hygiene-actions",
+    topic: "bathroom-5",
     description:
       "The post-bathing action of wrapping oneself in a plush absorbent terrycloth wrap to remove droplets.",
   },
@@ -3918,7 +3877,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Flush",
     phonetic: "flʌʃ",
     img: `${LOCAL_WORD_IMAGES}/bathroom/flush.webp`,
-    topic: "hygiene-actions",
+    topic: "bathroom-5",
     description:
       "The action of pressing a chrome lever to discharge swirling clean water down the ceramic bowl.",
   },
@@ -3927,7 +3886,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Comb Hair",
     phonetic: "koʊm hɛər",
     img: `${LOCAL_WORD_IMAGES}/bathroom/comb-hair.webp`,
-    topic: "hygiene-actions",
+    topic: "bathroom-5",
     description:
       "The grooming action of gliding a toothed tool through locks to remove knots and part strands.",
   },
@@ -3936,7 +3895,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Apply Lotion",
     phonetic: "əˈplaɪ ˈloʊʃən",
     img: `${LOCAL_WORD_IMAGES}/bathroom/apply-lotion.webp`,
-    topic: "hygiene-actions",
+    topic: "bathroom-5",
     description: "The soothing skincare action of smoothing moisturizing cream onto dry skin.",
   },
   {
@@ -3944,7 +3903,7 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
     label: "Gargle",
     phonetic: "ˈɡɑːrɡl",
     img: `${LOCAL_WORD_IMAGES}/bathroom/gargle.webp`,
-    topic: "hygiene-actions",
+    topic: "bathroom-5",
     description:
       "The oral hygiene habit of swishing liquid in the back of the throat before spitting.",
   },
@@ -3956,57 +3915,34 @@ export const BATHROOM_VOCABULARY: VocabularyItem[] = [
 
 export const PLAYGROUND_TOPICS: TopicCategory[] = [
   {
-    id: "play-equipment",
-    name: "Play Equipment",
-    description:
-      "Classic playground structures designed for swinging, sliding, spinning, and climbing.",
-    icon: "sparkles",
-    itemsCount: 10,
+    id: "playground-1",
+    name: "Playground Part 1",
+    itemsCount: 15,
   },
   {
-    id: "sports-equipment",
-    name: "Sports Equipment",
-    description: "Gear, protective wear, and accessories used for active games and field matches.",
-    icon: "trophy",
-    itemsCount: 10,
+    id: "playground-2",
+    name: "Playground Part 2",
+    itemsCount: 15,
   },
   {
-    id: "playground-surface",
-    name: "Playground Surface",
-    description: "Ground textures, safety flooring, pavement markings, and outdoor elements.",
-    icon: "layers",
-    itemsCount: 10,
+    id: "playground-3",
+    name: "Playground Part 3",
+    itemsCount: 15,
   },
   {
-    id: "people-playground",
-    name: "People at the Playground",
-    description:
-      "Community members, learners, caregivers, and guides sharing the recreational space.",
-    icon: "users",
-    itemsCount: 10,
-  },
-  {
-    id: "playground-activities",
-    name: "Playground Activities",
-    description: "Active movements, energetic exercises, and classic schoolyard games.",
-    icon: "activity",
-    itemsCount: 10,
-  },
-  {
-    id: "playground-features",
-    name: "Playground Features",
-    description: "Park infrastructure, safety stations, boundaries, and resting facilities.",
-    icon: "map-pin",
-    itemsCount: 10,
+    id: "playground-4",
+    name: "Playground Part 4",
+    itemsCount: 15,
   },
 ];
 
 export const PLAYGROUND_GROUPS: Lesson[] = [
   {
-    id: "play-equipment",
-    name: "Play Equipment",
-    topicId: "play-equipment",
-    description: "Learn the core equipment and structures found on every playground.",
+    id: "playground-1",
+    name: "Playground Basics 1",
+    description:
+      "Learn about Swing, Slide, Seesaw, Climbing Frame, Sandbox, Monkey Bars, Merry-Go-Round, Spring Rider, Tunnel, Ba...",
+    topicId: "playground-1",
     wordIds: [
       "swing",
       "slide",
@@ -4018,36 +3954,27 @@ export const PLAYGROUND_GROUPS: Lesson[] = [
       "spring-rider",
       "tunnel",
       "balance-beam",
-    ],
-    story:
-      "Mia raced across the park to the swing and zipped down the spiral slide. Two friends balanced on the seesaw, while others conquered the geometric climbing-frame. In the corner, toddlers dug in the sandbox and rocked on the spring-rider. Liam traversed the high monkey-bars, crawled through the bright tunnel, spun on the merry-go-round, and carefully walked the balance-beam.",
-  },
-  {
-    id: "sports-equipment",
-    name: "Sports Equipment",
-    topicId: "sports-equipment",
-    description: "Learn about sports gear, protective pads, and athletic accessories.",
-    wordIds: [
       "ball",
       "hoop",
       "bat",
       "racket",
       "net",
+    ],
+    story:
+      "In this section, you will learn about Swing, Slide, Seesaw, Climbing Frame, Sandbox, Monkey Bars, Merry-Go-Round, Spring Rider, Tunnel, Balance Beam, Ball, Hoop, Bat, Racket, Net. These are essential items to know.",
+  },
+  {
+    id: "playground-2",
+    name: "Playground Basics 2",
+    description:
+      "Learn about Goal, Whistle, Stopwatch, Helmet, Knee Pad, Rubber Mat, Sand, Gravel, Grass, Concrete, Chalk Drawing...",
+    topicId: "playground-2",
+    wordIds: [
       "goal",
       "whistle",
       "stopwatch",
       "helmet",
       "knee-pad",
-    ],
-    story:
-      "Leo stepped onto the court with a soccer ball and twirled a plastic hoop. Maya swung her baseball bat while her teammate grabbed a tennis racket near the court net. The coach blew his silver whistle to start the drill toward the open goal, tracking sprint times on his digital stopwatch. Every skater strapped on a protective helmet and padded knee-pad for safety.",
-  },
-  {
-    id: "playground-surface",
-    name: "Playground Surface",
-    topicId: "playground-surface",
-    description: "Learn the different ground surfaces, pavement games, and weather elements.",
-    wordIds: [
       "rubber-mat",
       "sand",
       "gravel",
@@ -4060,13 +3987,14 @@ export const PLAYGROUND_GROUPS: Lesson[] = [
       "mud",
     ],
     story:
-      "Beneath the swings lay a thick rubber-mat next to the golden sand pit. Footsteps crunched on the gravel path before stepping onto the lush green grass. Across the smooth concrete court, children admired a colorful chalk-drawing and hopped through a hopscotch grid marked by crisp painted-lines. After the rain, they splashed in a clear puddle and avoided the sticky mud.",
+      "In this section, you will learn about Goal, Whistle, Stopwatch, Helmet, Knee Pad, Rubber Mat, Sand, Gravel, Grass, Concrete, Chalk Drawing, Hopscotch, Painted Lines, Puddle, Mud. These are essential items to know.",
   },
   {
-    id: "people-playground",
-    name: "People at the Playground",
-    topicId: "people-playground",
-    description: "Learn the names of people, caregivers, and guides at the park.",
+    id: "playground-3",
+    name: "Playground Basics 3",
+    description:
+      "Learn about Child, Friend, Parent, Teacher, Baby, Toddler, Teenager, Guard, Coach, Volunteer, Swinging, Sliding,...",
+    topicId: "playground-3",
     wordIds: [
       "child",
       "friend",
@@ -4078,36 +4006,27 @@ export const PLAYGROUND_GROUPS: Lesson[] = [
       "guard",
       "coach",
       "volunteer",
-    ],
-    story:
-      "Every child in the neighborhood came to play with a friend. An attentive parent sat reading while a preschool teacher gathered her class. A sleeping baby rested in a stroller as an energetic toddler took unsteady steps across the turf. A teenager practiced skate tricks near the court, guided by a watchful guard, while the soccer coach and a helpful volunteer handed out water bottles.",
-  },
-  {
-    id: "playground-activities",
-    name: "Playground Activities",
-    topicId: "playground-activities",
-    description: "Learn key action verbs and fun physical games played at the park.",
-    wordIds: [
       "swinging",
       "sliding",
       "climbing",
       "running",
       "jumping",
+    ],
+    story:
+      "In this section, you will learn about Child, Friend, Parent, Teacher, Baby, Toddler, Teenager, Guard, Coach, Volunteer, Swinging, Sliding, Climbing, Running, Jumping. These are essential items to know.",
+  },
+  {
+    id: "playground-4",
+    name: "Playground Basics 4",
+    description:
+      "Learn about Throwing, Catching, Kicking, Skipping, Hiding, Fence, Gate, Bench, Water Fountain, Shade Structure, ...",
+    topicId: "playground-4",
+    wordIds: [
       "throwing",
       "catching",
       "kicking",
       "skipping",
       "hiding",
-    ],
-    story:
-      "The park was alive with motion: children enjoyed swinging high in the breeze and sliding down the chutes. Groups practiced climbing the rope nets and running across the lawn. They engaged in jumping over hurdles, throwing and catching a soft ball, and kicking toward the net. Little girls went skipping along the walkway while others enjoyed hiding inside the playhouse.",
-  },
-  {
-    id: "playground-features",
-    name: "Playground Features",
-    topicId: "playground-features",
-    description: "Learn essential facilities, safety items, and landmarks in the park.",
-    wordIds: [
       "fence",
       "gate",
       "bench",
@@ -4120,7 +4039,7 @@ export const PLAYGROUND_GROUPS: Lesson[] = [
       "flag",
     ],
     story:
-      "A secure fence surrounded the park with an open front gate. Caregivers rested on a wooden bench beside a cool water-fountain beneath the protective shade-structure. Visitors checked the park rules sign, tossed wrappers into the trash-can, and noted the red first-aid-kit station. Kids rang the playhouse bell under the fluttering rainbow flag.",
+      "In this section, you will learn about Throwing, Catching, Kicking, Skipping, Hiding, Fence, Gate, Bench, Water Fountain, Shade Structure, Sign, Trash Can, First Aid Kit, Bell, Flag. These are essential items to know.",
   },
 ];
 
@@ -4131,7 +4050,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Swing",
     phonetic: "swɪŋ",
     img: `${LOCAL_WORD_IMAGES}/playground/swing.webp`,
-    topic: "play-equipment",
+    topic: "playground-1",
     description:
       "A suspended seat hanging from ropes or chains that sways back and forth through the air.",
   },
@@ -4140,7 +4059,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Slide",
     phonetic: "slaɪd",
     img: `${LOCAL_WORD_IMAGES}/playground/slide.webp`,
-    topic: "play-equipment",
+    topic: "playground-1",
     description: "A smooth elevated sloping chute that children glide down smoothly to the ground.",
   },
   {
@@ -4148,7 +4067,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Seesaw",
     phonetic: "ˈsiːsɔː",
     img: `${LOCAL_WORD_IMAGES}/playground/seesaw.webp`,
-    topic: "play-equipment",
+    topic: "playground-1",
     description:
       "A long plank balanced on a central pivot that tilts up and down as riders push off the ground.",
   },
@@ -4157,7 +4076,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Climbing Frame",
     phonetic: "ˈklaɪmɪŋ freɪm",
     img: `${LOCAL_WORD_IMAGES}/playground/climbing-frame.webp`,
-    topic: "play-equipment",
+    topic: "playground-1",
     description:
       "A geometric metal or timber jungle structure with ladders, ropes, and platforms to scale.",
   },
@@ -4166,7 +4085,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Sandbox",
     phonetic: "ˈsændbɑːks",
     img: `${LOCAL_WORD_IMAGES}/playground/sandbox.webp`,
-    topic: "play-equipment",
+    topic: "playground-1",
     description:
       "A shallow wooden or plastic enclosure filled with fine golden grains for digging and building.",
   },
@@ -4175,7 +4094,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Monkey Bars",
     phonetic: "ˈmʌŋki bɑːrz",
     img: `${LOCAL_WORD_IMAGES}/playground/monkey-bars.webp`,
-    topic: "play-equipment",
+    topic: "playground-1",
     description:
       "An elevated horizontal overhead ladder of steel rungs that children swing across hand-over-hand.",
   },
@@ -4184,7 +4103,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Merry-Go-Round",
     phonetic: "ˌmɛri ɡoʊ ˈraʊnd",
     img: `${LOCAL_WORD_IMAGES}/playground/merry-go-round.webp`,
-    topic: "play-equipment",
+    topic: "playground-1",
     description:
       "A circular rotating platform with metal handrails that spins rapidly when pushed.",
   },
@@ -4193,7 +4112,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Spring Rider",
     phonetic: "ˈsprɪŋ ˌraɪdər",
     img: `${LOCAL_WORD_IMAGES}/playground/spring-rider.webp`,
-    topic: "play-equipment",
+    topic: "playground-1",
     description:
       "A colorful rocking novelty seat mounted on a heavy coiled steel base that bounces back and forth.",
   },
@@ -4202,7 +4121,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Tunnel",
     phonetic: "ˈtʌnl",
     img: `${LOCAL_WORD_IMAGES}/playground/tunnel.webp`,
-    topic: "play-equipment",
+    topic: "playground-1",
     description:
       "A hollow cylindrical crawl tube made of reinforced plastic connecting playground sections.",
   },
@@ -4211,7 +4130,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Balance Beam",
     phonetic: "ˈbæləns biːm",
     img: `${LOCAL_WORD_IMAGES}/playground/balance-beam.webp`,
-    topic: "play-equipment",
+    topic: "playground-1",
     description:
       "A narrow horizontal wooden timber raised slightly above the ground for practicing steady walking.",
   },
@@ -4222,7 +4141,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Ball",
     phonetic: "bɔːl",
     img: `${LOCAL_WORD_IMAGES}/playground/ball.webp`,
-    topic: "sports-equipment",
+    topic: "playground-1",
     description:
       "A spherical inflatable bouncy object kicked, thrown, or bounced during recreational sports.",
   },
@@ -4231,7 +4150,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Hoop",
     phonetic: "huːp",
     img: `${LOCAL_WORD_IMAGES}/playground/hoop.webp`,
-    topic: "sports-equipment",
+    topic: "playground-1",
     description:
       "A large lightweight circular plastic ring twirled around the waist or jumped through.",
   },
@@ -4240,7 +4159,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Bat",
     phonetic: "bæt",
     img: `${LOCAL_WORD_IMAGES}/playground/bat.webp`,
-    topic: "sports-equipment",
+    topic: "playground-1",
     description:
       "A tapered smooth wooden or aluminum club swung to strike pitched spheres in baseball.",
   },
@@ -4249,7 +4168,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Racket",
     phonetic: "ˈrækɪt",
     img: `${LOCAL_WORD_IMAGES}/playground/racket.webp`,
-    topic: "sports-equipment",
+    topic: "playground-1",
     description:
       "A lightweight oval frame strung with tight mesh netting used to hit tennis balls or shuttlecocks.",
   },
@@ -4258,7 +4177,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Net",
     phonetic: "nɛt",
     img: `${LOCAL_WORD_IMAGES}/playground/net.webp`,
-    topic: "sports-equipment",
+    topic: "playground-1",
     description:
       "A meshed fabric barrier stretched across the center of a court or suspended within target frames.",
   },
@@ -4267,7 +4186,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Goal",
     phonetic: "ɡoʊl",
     img: `${LOCAL_WORD_IMAGES}/playground/goal.webp`,
-    topic: "sports-equipment",
+    topic: "playground-2",
     description:
       "A rectangular framed opening fitted with mesh where players aim to score points during matches.",
   },
@@ -4276,7 +4195,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Whistle",
     phonetic: "ˈwɪsl",
     img: `${LOCAL_WORD_IMAGES}/playground/whistle.webp`,
-    topic: "sports-equipment",
+    topic: "playground-2",
     description:
       "A small metal or plastic mouth device that produces a sharp shrill signal when blown.",
   },
@@ -4285,7 +4204,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Stopwatch",
     phonetic: "ˈstɑːpwɑːtʃ",
     img: `${LOCAL_WORD_IMAGES}/playground/stopwatch.webp`,
-    topic: "sports-equipment",
+    topic: "playground-2",
     description:
       "A handheld digital timepiece with buttons used to measure elapsed sprint durations precisely.",
   },
@@ -4294,7 +4213,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Helmet",
     phonetic: "ˈhɛlmɪt",
     img: `${LOCAL_WORD_IMAGES}/playground/helmet.webp`,
-    topic: "sports-equipment",
+    topic: "playground-2",
     description:
       "A hard protective headgear shell with a chin strap worn to prevent skull injuries while riding.",
   },
@@ -4303,7 +4222,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Knee Pad",
     phonetic: "ˈniː pæd",
     img: `${LOCAL_WORD_IMAGES}/playground/knee-pad.webp`,
-    topic: "sports-equipment",
+    topic: "playground-2",
     description:
       "A cushioned contoured guard strapped with velcro over joints to protect against scrapes.",
   },
@@ -4314,7 +4233,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Rubber Mat",
     phonetic: "ˈrʌbər mæt",
     img: `${LOCAL_WORD_IMAGES}/playground/rubber-mat.webp`,
-    topic: "playground-surface",
+    topic: "playground-2",
     description:
       "A thick shock-absorbing tiled floor layer placed beneath tall structures to cushion falls.",
   },
@@ -4323,7 +4242,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Sand",
     phonetic: "sænd",
     img: `${LOCAL_WORD_IMAGES}/playground/sand.webp`,
-    topic: "playground-surface",
+    topic: "playground-2",
     description:
       "Loose granular mineral particles covering the play pit for digging and soft landings.",
   },
@@ -4332,7 +4251,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Gravel",
     phonetic: "ˈɡrævl",
     img: `${LOCAL_WORD_IMAGES}/playground/gravel.webp`,
-    topic: "playground-surface",
+    topic: "playground-2",
     description:
       "Small crushed pebbles and smooth stones spread along park walkways and drainage borders.",
   },
@@ -4341,7 +4260,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Grass",
     phonetic: "ɡræs",
     img: `${LOCAL_WORD_IMAGES}/playground/grass.webp`,
-    topic: "playground-surface",
+    topic: "playground-2",
     description:
       "A natural green carpet of leafy blades covering the open recreation lawn and picnic meadows.",
   },
@@ -4350,7 +4269,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Concrete",
     phonetic: "ˈkɑːnkriːt",
     img: `${LOCAL_WORD_IMAGES}/playground/concrete.webp`,
-    topic: "playground-surface",
+    topic: "playground-2",
     description:
       "A hard solid paved mixture of cement and aggregate forming basketball courts and walkways.",
   },
@@ -4359,7 +4278,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Chalk Drawing",
     phonetic: "ˈtʃɔːk ˌdrɔːɪŋ",
     img: `${LOCAL_WORD_IMAGES}/playground/chalk-drawing.webp`,
-    topic: "playground-surface",
+    topic: "playground-2",
     description:
       "Colorful temporary sketches and murals drawn on pavement using soft mineral sticks.",
   },
@@ -4368,7 +4287,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Hopscotch",
     phonetic: "ˈhɑːpskɑːtʃ",
     img: `${LOCAL_WORD_IMAGES}/playground/hopscotch.webp`,
-    topic: "playground-surface",
+    topic: "playground-2",
     description: "A numbered geometric court grid drawn on pavement for single-leg bounding games.",
   },
   {
@@ -4376,7 +4295,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Painted Lines",
     phonetic: "ˈpeɪntɪd laɪnz",
     img: `${LOCAL_WORD_IMAGES}/playground/painted-lines.webp`,
-    topic: "playground-surface",
+    topic: "playground-2",
     description:
       "Crisp white and yellow boundaries marked onto court surfaces to define playing zones.",
   },
@@ -4385,7 +4304,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Puddle",
     phonetic: "ˈpʌdl",
     img: `${LOCAL_WORD_IMAGES}/playground/puddle.webp`,
-    topic: "playground-surface",
+    topic: "playground-2",
     description:
       "A small shallow pool of rainwater collected in a hollow on the ground after a storm.",
   },
@@ -4394,7 +4313,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Mud",
     phonetic: "mʌd",
     img: `${LOCAL_WORD_IMAGES}/playground/mud.webp`,
-    topic: "playground-surface",
+    topic: "playground-2",
     description: "Wet sticky earth formed when dirt mixes with rainwater in unpaved ground areas.",
   },
 
@@ -4404,7 +4323,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Child",
     phonetic: "tʃaɪld",
     img: `${LOCAL_WORD_IMAGES}/playground/child.webp`,
-    topic: "people-playground",
+    topic: "playground-3",
     description:
       "A young human boy or girl engaging in imaginative games, exploration, and learning.",
   },
@@ -4413,7 +4332,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Friend",
     phonetic: "frɛnd",
     img: `${LOCAL_WORD_IMAGES}/playground/friend.webp`,
-    topic: "people-playground",
+    topic: "playground-3",
     description:
       "A trusted companion with whom one shares toys, laughter, and enjoyable recreation.",
   },
@@ -4422,7 +4341,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Parent",
     phonetic: "ˈpɛrənt",
     img: `${LOCAL_WORD_IMAGES}/playground/parent.webp`,
-    topic: "people-playground",
+    topic: "playground-3",
     description:
       "A mother or father supervising, encouraging, and caring for their young ones at the park.",
   },
@@ -4431,7 +4350,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Teacher",
     phonetic: "ˈtiːtʃər",
     img: `${LOCAL_WORD_IMAGES}/playground/teacher.webp`,
-    topic: "people-playground",
+    topic: "playground-3",
     description:
       "An educator who organizes schoolyard games and guides students during recess intervals.",
   },
@@ -4440,7 +4359,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Baby",
     phonetic: "ˈbeɪbi",
     img: `${LOCAL_WORD_IMAGES}/playground/baby.webp`,
-    topic: "people-playground",
+    topic: "playground-3",
     description: "A very young infant resting in a shaded stroller or cradled in gentle arms.",
   },
   {
@@ -4448,7 +4367,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Toddler",
     phonetic: "ˈtɑːdlər",
     img: `${LOCAL_WORD_IMAGES}/playground/toddler.webp`,
-    topic: "people-playground",
+    topic: "playground-3",
     description:
       "A young learner taking their first unsteady exploratory steps on the recreation lawn.",
   },
@@ -4457,7 +4376,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Teenager",
     phonetic: "ˈtiːnˌeɪdʒər",
     img: `${LOCAL_WORD_IMAGES}/playground/teenager.webp`,
-    topic: "people-playground",
+    topic: "playground-3",
     description:
       "An adolescent youth practicing skateboarding tricks or playing basketball on the court.",
   },
@@ -4466,7 +4385,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Guard",
     phonetic: "ɡɑːrd",
     img: `${LOCAL_WORD_IMAGES}/playground/guard.webp`,
-    topic: "people-playground",
+    topic: "playground-3",
     description:
       "A uniformed security officer patrolling perimeter gates to ensure visitor safety.",
   },
@@ -4475,7 +4394,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Coach",
     phonetic: "koʊtʃ",
     img: `${LOCAL_WORD_IMAGES}/playground/coach.webp`,
-    topic: "people-playground",
+    topic: "playground-3",
     description:
       "A sports instructor who leads drills, teaches tactics, and encourages team athletes.",
   },
@@ -4484,7 +4403,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Volunteer",
     phonetic: "ˌvɑːlənˈtɪr",
     img: `${LOCAL_WORD_IMAGES}/playground/volunteer.webp`,
-    topic: "people-playground",
+    topic: "playground-3",
     description:
       "A helpful community worker who assists with park upkeep and organizes youth events.",
   },
@@ -4495,7 +4414,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Swinging",
     phonetic: "ˈswɪŋɪŋ",
     img: `${LOCAL_WORD_IMAGES}/playground/swinging.webp`,
-    topic: "playground-activities",
+    topic: "playground-3",
     description: "The continuous pendulum motion of swaying through the air on a suspended seat.",
   },
   {
@@ -4503,7 +4422,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Sliding",
     phonetic: "ˈslaɪdɪŋ",
     img: `${LOCAL_WORD_IMAGES}/playground/sliding.webp`,
-    topic: "playground-activities",
+    topic: "playground-3",
     description: "The smooth gliding descent down a polished sloping chute to the bottom landing.",
   },
   {
@@ -4511,7 +4430,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Climbing",
     phonetic: "ˈklaɪmɪŋ",
     img: `${LOCAL_WORD_IMAGES}/playground/climbing.webp`,
-    topic: "playground-activities",
+    topic: "playground-3",
     description:
       "The active physical movement of ascending vertical ladders, ropes, and timber walls.",
   },
@@ -4520,7 +4439,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Running",
     phonetic: "ˈrʌnɪŋ",
     img: `${LOCAL_WORD_IMAGES}/playground/running.webp`,
-    topic: "playground-activities",
+    topic: "playground-3",
     description: "The rapid rhythmic pace of sprinting across open lawns on fast moving feet.",
   },
   {
@@ -4528,7 +4447,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Jumping",
     phonetic: "ˈdʒʌmpɪŋ",
     img: `${LOCAL_WORD_IMAGES}/playground/jumping.webp`,
-    topic: "playground-activities",
+    topic: "playground-3",
     description: "The athletic act of pushing off the ground with both legs into the air.",
   },
   {
@@ -4536,7 +4455,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Throwing",
     phonetic: "ˈθroʊɪŋ",
     img: `${LOCAL_WORD_IMAGES}/playground/throwing.webp`,
-    topic: "playground-activities",
+    topic: "playground-4",
     description:
       "The coordinated upper-body action of launching an object through the air toward a target.",
   },
@@ -4545,7 +4464,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Catching",
     phonetic: "ˈkætʃɪŋ",
     img: `${LOCAL_WORD_IMAGES}/playground/catching.webp`,
-    topic: "playground-activities",
+    topic: "playground-4",
     description:
       "The skillful act of seizing and securing a flying projectile in open palms or a padded mitt.",
   },
@@ -4554,7 +4473,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Kicking",
     phonetic: "ˈkɪkɪŋ",
     img: `${LOCAL_WORD_IMAGES}/playground/kicking.webp`,
-    topic: "playground-activities",
+    topic: "playground-4",
     description:
       "The forceful striking of a round projectile with the foot toward teammates or target frames.",
   },
@@ -4563,7 +4482,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Skipping",
     phonetic: "ˈskɪpɪŋ",
     img: `${LOCAL_WORD_IMAGES}/playground/skipping.webp`,
-    topic: "playground-activities",
+    topic: "playground-4",
     description:
       "The joyful bounding gait of alternating light hops while moving forward along pathways.",
   },
@@ -4572,7 +4491,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Hiding",
     phonetic: "ˈhaɪdɪŋ",
     img: `${LOCAL_WORD_IMAGES}/playground/hiding.webp`,
-    topic: "playground-activities",
+    topic: "playground-4",
     description: "The exciting act of remaining concealed out of sight during seek-and-find games.",
   },
 
@@ -4582,7 +4501,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Fence",
     phonetic: "fɛns",
     img: `${LOCAL_WORD_IMAGES}/playground/fence.webp`,
-    topic: "playground-features",
+    topic: "playground-4",
     description:
       "A protective wooden or chain-link barrier enclosing the park perimeter for security.",
   },
@@ -4591,7 +4510,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Gate",
     phonetic: "ɡeɪt",
     img: `${LOCAL_WORD_IMAGES}/playground/gate.webp`,
-    topic: "playground-features",
+    topic: "playground-4",
     description:
       "A hinged latching entrance through which visitors pass to enter or exit the grounds.",
   },
@@ -4600,7 +4519,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Bench",
     phonetic: "bɛntʃ",
     img: `${LOCAL_WORD_IMAGES}/playground/bench.webp`,
-    topic: "playground-features",
+    topic: "playground-4",
     description:
       "A long wooden or metal outdoor seat where caregivers relax while observing playtime.",
   },
@@ -4609,7 +4528,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Water Fountain",
     phonetic: "ˈwɔːtər ˌfaʊntn",
     img: `${LOCAL_WORD_IMAGES}/playground/water-fountain.webp`,
-    topic: "playground-features",
+    topic: "playground-4",
     description:
       "A stainless steel plumbing fixture that dispenses cool bubbling streams for thirsty park visitors.",
   },
@@ -4618,7 +4537,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Shade Structure",
     phonetic: "ˈʃeɪd ˌstrʌktʃər",
     img: `${LOCAL_WORD_IMAGES}/playground/shade-structure.webp`,
-    topic: "playground-features",
+    topic: "playground-4",
     description:
       "A large overhead fabric canopy or timber gazebo shielding visitors from direct sunlight.",
   },
@@ -4627,7 +4546,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Sign",
     phonetic: "saɪn",
     img: `${LOCAL_WORD_IMAGES}/playground/sign.webp`,
-    topic: "playground-features",
+    topic: "playground-4",
     description:
       "A posted metal board displaying park regulations, opening hours, and navigational guidance.",
   },
@@ -4636,7 +4555,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Trash Can",
     phonetic: "træʃ kæn",
     img: `${LOCAL_WORD_IMAGES}/playground/trash-can.webp`,
-    topic: "playground-features",
+    topic: "playground-4",
     description:
       "A sturdy green outdoor receptacle for collecting food wrappers and keeping grounds clean.",
   },
@@ -4645,7 +4564,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "First Aid Kit",
     phonetic: "ˌfɜːrst ˈeɪd kɪt",
     img: `${LOCAL_WORD_IMAGES}/playground/first-aid-kit.webp`,
-    topic: "playground-features",
+    topic: "playground-4",
     description: "A red emergency box containing sterile bandages, antiseptic, and medical gauze.",
   },
   {
@@ -4653,7 +4572,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Bell",
     phonetic: "bɛl",
     img: `${LOCAL_WORD_IMAGES}/playground/bell.webp`,
-    topic: "playground-features",
+    topic: "playground-4",
     description:
       "A metallic acoustic chime mounted on playhouse structures that rings loudly when pulled.",
   },
@@ -4662,7 +4581,7 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
     label: "Flag",
     phonetic: "flæɡ",
     img: `${LOCAL_WORD_IMAGES}/playground/flag.webp`,
-    topic: "playground-features",
+    topic: "playground-4",
     description: "A piece of patterned fabric fluttering from a tall pole above the park entrance.",
   },
 ];
@@ -4673,62 +4592,39 @@ export const PLAYGROUND_VOCABULARY: VocabularyItem[] = [
 
 export const CLASSROOM_TOPICS: TopicCategory[] = [
   {
-    id: "writing-drawing",
-    name: "Writing & Drawing",
-    description: "Essential instruments and accessories for handwriting, coloring, and sketching.",
-    icon: "pen-tool",
-    itemsCount: 10,
+    id: "classroom-1",
+    name: "Classroom Part 1",
+    itemsCount: 15,
   },
   {
-    id: "paper-books",
-    name: "Paper & Books",
-    description: "Bound volumes, study manuals, notebooks, and organizational sheets.",
-    icon: "book-open",
-    itemsCount: 10,
+    id: "classroom-2",
+    name: "Classroom Part 2",
+    itemsCount: 15,
   },
   {
-    id: "classroom-furniture",
-    name: "Classroom Furniture",
-    description: "Desks, seating, boards, and fixtures that furnish the learning space.",
-    icon: "layout",
-    itemsCount: 10,
+    id: "classroom-3",
+    name: "Classroom Part 3",
+    itemsCount: 15,
   },
   {
-    id: "school-supplies",
-    name: "School Supplies",
-    description: "Handy tools, cutting implements, adhesives, and geometry instruments.",
-    icon: "scissors",
-    itemsCount: 10,
+    id: "classroom-4",
+    name: "Classroom Part 4",
+    itemsCount: 15,
   },
   {
-    id: "classroom-technology",
-    name: "Classroom Technology",
-    description: "Digital computers, peripherals, projectors, and interactive hardware.",
-    icon: "monitor",
-    itemsCount: 10,
-  },
-  {
-    id: "school-people",
-    name: "School People",
-    description: "Educators, learners, administrators, and support staff on campus.",
-    icon: "users",
-    itemsCount: 10,
-  },
-  {
-    id: "school-life",
-    name: "School Life",
-    description: "Daily routines, exams, breaks, dress code, and traditional fixtures.",
-    icon: "sun",
+    id: "classroom-5",
+    name: "Classroom Part 5",
     itemsCount: 8,
   },
 ];
 
 export const CLASSROOM_GROUPS: Lesson[] = [
   {
-    id: "writing-drawing",
-    name: "Writing & Drawing",
-    topicId: "writing-drawing",
-    description: "Learn essential tools for writing, coloring, and sketching in class.",
+    id: "classroom-1",
+    name: "Classroom Basics 1",
+    description:
+      "Learn about Pencil, Pen, Eraser, Ruler, Marker, Crayon, Colored Pencil, Highlighter, Pencil Sharpener, Pencil Ca...",
+    topicId: "classroom-1",
     wordIds: [
       "pencil",
       "pen",
@@ -4740,36 +4636,27 @@ export const CLASSROOM_GROUPS: Lesson[] = [
       "highlighter",
       "pencil-sharpener",
       "pencil-case",
-    ],
-    story:
-      "Zack unzipped his pencil-case and placed a sharp yellow pencil, blue pen, and clear ruler on his desk. He trimmed dull tips using a pencil-sharpener, erased mistakes with a rubber eraser, and highlighted key words with a neon highlighter. For art time, he colored posters using a marker, wax crayon, and colored-pencil.",
-  },
-  {
-    id: "paper-books",
-    name: "Paper & Books",
-    topicId: "paper-books",
-    description: "Learn about textbooks, notebooks, reference volumes, and binders.",
-    wordIds: [
       "notebook",
       "textbook",
       "workbook",
       "folder",
       "binder",
+    ],
+    story:
+      "In this section, you will learn about Pencil, Pen, Eraser, Ruler, Marker, Crayon, Colored Pencil, Highlighter, Pencil Sharpener, Pencil Case, Notebook, Textbook, Workbook, Folder, Binder. These are essential items to know.",
+  },
+  {
+    id: "classroom-2",
+    name: "Classroom Basics 2",
+    description:
+      "Learn about Sheet of Paper, Sticky Note, Index Card, Dictionary, Encyclopedia, Desk, Chair, Whiteboard, Projecto...",
+    topicId: "classroom-2",
+    wordIds: [
       "sheet-of-paper",
       "sticky-note",
       "index-card",
       "dictionary",
       "encyclopedia",
-    ],
-    story:
-      "Emma opened her spiral notebook and history textbook to begin reading. She solved practice questions in her workbook, filed handouts in a pocket folder, and stored notes in a ring binder. She took out a fresh sheet-of-paper, wrote reminders on a sticky-note and index-card, and checked definitions in the dictionary and encyclopedia.",
-  },
-  {
-    id: "classroom-furniture",
-    name: "Classroom Furniture",
-    topicId: "classroom-furniture",
-    description: "Learn classroom desks, chairs, presentation displays, and storage units.",
-    wordIds: [
       "desk",
       "chair",
       "whiteboard",
@@ -4782,13 +4669,14 @@ export const CLASSROOM_GROUPS: Lesson[] = [
       "bulletin-board",
     ],
     story:
-      "Students sat quietly at each wooden desk upon a comfortable chair. The teacher wrote on the whiteboard while the ceiling projector beamed diagrams onto the white screen. A round clock ticked on the wall above a spinning globe and a book shelf, while announcements hung on the cork bulletin-board near the student locker.",
+      "In this section, you will learn about Sheet of Paper, Sticky Note, Index Card, Dictionary, Encyclopedia, Desk, Chair, Whiteboard, Projector, Screen, Clock, Globe, Shelf, Locker, Bulletin Board. These are essential items to know.",
   },
   {
-    id: "school-supplies",
-    name: "School Supplies",
-    topicId: "school-supplies",
-    description: "Learn essential tools for cutting, pasting, measuring, and fastening.",
+    id: "classroom-3",
+    name: "Classroom Basics 3",
+    description:
+      "Learn about Backpack, Scissors, Glue Stick, Tape, Stapler, Paper Clip, Rubber Band, Thumbtack, Calculator, Compa...",
+    topicId: "classroom-3",
     wordIds: [
       "backpack",
       "scissors",
@@ -4800,36 +4688,27 @@ export const CLASSROOM_GROUPS: Lesson[] = [
       "thumbtack",
       "calculator",
       "compass",
-    ],
-    story:
-      "Laila unpacked her colorful backpack containing safety scissors and a purple glue-stick. She used clear tape and a desktop stapler to bind craft projects, fastening flashcards with a paper-clip and rubber-band. She pressed a thumbtack into the notice board, solved math problems with a calculator, and drew circles with a geometry compass.",
-  },
-  {
-    id: "classroom-technology",
-    name: "Classroom Technology",
-    topicId: "classroom-technology",
-    description: "Learn digital computing devices, audio gear, and peripherals.",
-    wordIds: [
       "computer",
       "laptop",
       "tablet",
       "keyboard",
       "mouse",
+    ],
+    story:
+      "In this section, you will learn about Backpack, Scissors, Glue Stick, Tape, Stapler, Paper Clip, Rubber Band, Thumbtack, Calculator, Compass, Computer, Laptop, Tablet, Keyboard, Mouse. These are essential items to know.",
+  },
+  {
+    id: "classroom-4",
+    name: "Classroom Basics 4",
+    description:
+      "Learn about Printer, USB Drive, Headphones, Projector Remote, Charger, Teacher, Student, Principal, Librarian, J...",
+    topicId: "classroom-4",
+    wordIds: [
       "printer",
       "usb-drive",
       "headphones",
       "projector-remote",
       "charger",
-    ],
-    story:
-      "In the computer lab, Adam typed on the keyboard and clicked the optical mouse. Other students worked on a portable laptop or touchscreen tablet, listening to audio lessons with padded headphones. The instructor clicked the projector-remote, transferred lesson slides via a usb-drive, printed handouts on the laser printer, and plugged in the wall charger.",
-  },
-  {
-    id: "school-people",
-    name: "School People",
-    topicId: "school-people",
-    description: "Learn the dedicated community members and educators across campus.",
-    wordIds: [
       "teacher",
       "student",
       "principal",
@@ -4842,16 +4721,16 @@ export const CLASSROOM_GROUPS: Lesson[] = [
       "security-guard",
     ],
     story:
-      "Every morning, the friendly security-guard greeted each arriving student at the entrance. The principal and teacher welcomed the class, supported by an energetic teaching-assistant and helpful substitute-teacher. The librarian recommended research books, the school-nurse cared for sick pupils, the counselor provided wise guidance, and the diligent janitor kept the hallways sparkling.",
+      "In this section, you will learn about Printer, USB Drive, Headphones, Projector Remote, Charger, Teacher, Student, Principal, Librarian, Janitor, School Nurse, Substitute Teacher, Teaching Assistant, Counselor, Security Guard. These are essential items to know.",
   },
   {
-    id: "school-life",
-    name: "School Life",
-    topicId: "school-life",
-    description: "Learn daily school routines, assessments, recreational breaks, and traditions.",
+    id: "classroom-5",
+    name: "Classroom Basics 5",
+    description: "Learn about Homework, Test, Recess, Bell, Grade, Uniform, Book, Blackboard...",
+    topicId: "classroom-5",
     wordIds: ["homework", "test", "recess", "bell", "grade", "uniform", "book", "blackboard"],
     story:
-      "Wearing a neat school uniform, Sami opened his reading book to study before class. The teacher wrote questions on the green blackboard, reminding students about tonight's homework and tomorrow's math test. When the brass bell chimed for afternoon recess, everyone celebrated earning an excellent grade on their midterm projects.",
+      "In this section, you will learn about Homework, Test, Recess, Bell, Grade, Uniform, Book, Blackboard. These are essential items to know.",
   },
 ];
 
@@ -4862,7 +4741,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Pencil",
     phonetic: "ˈpɛnsəl",
     img: `${LOCAL_WORD_IMAGES}/classroom/pencil.webp`,
-    topic: "writing-drawing",
+    topic: "classroom-1",
     description: "A slender wooden instrument with a graphite core used for writing and sketching.",
   },
   {
@@ -4870,7 +4749,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Pen",
     phonetic: "pɛn",
     img: `${LOCAL_WORD_IMAGES}/classroom/pen.webp`,
-    topic: "writing-drawing",
+    topic: "classroom-1",
     description:
       "A handheld writing implement that dispenses colored fluid ink onto writing surfaces.",
   },
@@ -4879,7 +4758,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Eraser",
     phonetic: "ɪˈreɪsər",
     img: `${LOCAL_WORD_IMAGES}/classroom/eraser.webp`,
-    topic: "writing-drawing",
+    topic: "classroom-1",
     description: "A small rubber or vinyl block used to rub out graphite marks and pencil errors.",
   },
   {
@@ -4887,7 +4766,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Ruler",
     phonetic: "ˈruːlər",
     img: `${LOCAL_WORD_IMAGES}/classroom/ruler.webp`,
-    topic: "writing-drawing",
+    topic: "classroom-1",
     description:
       "A straight strip of wood, plastic, or metal with calibrated markings for measuring length.",
   },
@@ -4896,7 +4775,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Marker",
     phonetic: "ˈmɑːrkər",
     img: `${LOCAL_WORD_IMAGES}/classroom/marker.webp`,
-    topic: "writing-drawing",
+    topic: "classroom-1",
     description: "A thick writing tool with a porous felt tip that dispenses bold colored ink.",
   },
   {
@@ -4904,7 +4783,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Crayon",
     phonetic: "ˈkreɪ.ɑːn",
     img: `${LOCAL_WORD_IMAGES}/classroom/crayon.webp`,
-    topic: "writing-drawing",
+    topic: "classroom-1",
     description:
       "A colored stick of pigmented wax used by young children for drawing and coloring.",
   },
@@ -4913,7 +4792,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Colored Pencil",
     phonetic: "ˈkʌlərd ˈpɛnsəl",
     img: `${LOCAL_WORD_IMAGES}/classroom/colored-pencil.webp`,
-    topic: "writing-drawing",
+    topic: "classroom-1",
     description:
       "A wooden drawing implement with a pigmented wax or oil core that leaves vibrant hues.",
   },
@@ -4922,7 +4801,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Highlighter",
     phonetic: "ˈhaɪˌlaɪtər",
     img: `${LOCAL_WORD_IMAGES}/classroom/highlighter.webp`,
-    topic: "writing-drawing",
+    topic: "classroom-1",
     description:
       "A fluorescent felt-tip marker with transparent neon ink used to emphasize printed text.",
   },
@@ -4931,7 +4810,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Pencil Sharpener",
     phonetic: "ˈpɛnsəl ˌʃɑːrpənər",
     img: `${LOCAL_WORD_IMAGES}/classroom/pencil-sharpener.webp`,
-    topic: "writing-drawing",
+    topic: "classroom-1",
     description: "A small device with a blade used to shave away wood and sharpen graphite points.",
   },
   {
@@ -4939,7 +4818,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Pencil Case",
     phonetic: "ˈpɛnsəl keɪs",
     img: `${LOCAL_WORD_IMAGES}/classroom/pencil-case.webp`,
-    topic: "writing-drawing",
+    topic: "classroom-1",
     description:
       "A zippered pouch or box designed for organizing writing instruments and stationery.",
   },
@@ -4950,7 +4829,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Notebook",
     phonetic: "ˈnoʊtbʊk",
     img: `${LOCAL_WORD_IMAGES}/classroom/notebook.webp`,
-    topic: "paper-books",
+    topic: "classroom-1",
     description:
       "A bound collection of lined or blank sheets used for recording notes and schoolwork.",
   },
@@ -4959,7 +4838,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Textbook",
     phonetic: "ˈtɛkstbʊk",
     img: `${LOCAL_WORD_IMAGES}/classroom/textbook.webp`,
-    topic: "paper-books",
+    topic: "classroom-1",
     description:
       "A comprehensive educational manual used by students to study a specific school subject.",
   },
@@ -4968,7 +4847,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Workbook",
     phonetic: "ˈwɜːrkbʊk",
     img: `${LOCAL_WORD_IMAGES}/classroom/workbook.webp`,
-    topic: "paper-books",
+    topic: "classroom-1",
     description: "A booklet containing practice exercises and questions for students to complete.",
   },
   {
@@ -4976,7 +4855,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Folder",
     phonetic: "ˈfoʊldər",
     img: `${LOCAL_WORD_IMAGES}/classroom/folder.webp`,
-    topic: "paper-books",
+    topic: "classroom-1",
     description:
       "A folded cardstock or plastic cover with interior pockets for holding loose sheets.",
   },
@@ -4985,7 +4864,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Binder",
     phonetic: "ˈbaɪndər",
     img: `${LOCAL_WORD_IMAGES}/classroom/binder.webp`,
-    topic: "paper-books",
+    topic: "classroom-1",
     description: "A sturdy cover with metal opening rings used to hold hole-punched loose papers.",
   },
   {
@@ -4993,7 +4872,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Sheet of Paper",
     phonetic: "ʃiːt əv ˈpeɪpər",
     img: `${LOCAL_WORD_IMAGES}/classroom/sheet-of-paper.webp`,
-    topic: "paper-books",
+    topic: "classroom-2",
     description: "A single flat rectangular leaf of thin white material used for writing.",
   },
   {
@@ -5001,7 +4880,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Sticky Note",
     phonetic: "ˈstɪki noʊt",
     img: `${LOCAL_WORD_IMAGES}/classroom/sticky-note.webp`,
-    topic: "paper-books",
+    topic: "classroom-2",
     description: "A small square of paper with a re-adherable strip of glue on the back.",
   },
   {
@@ -5009,7 +4888,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Index Card",
     phonetic: "ˈɪndɛks kɑːrd",
     img: `${LOCAL_WORD_IMAGES}/classroom/index-card.webp`,
-    topic: "paper-books",
+    topic: "classroom-2",
     description:
       "A small rectangular stiff paper slip used for recording study points and presentation cues.",
   },
@@ -5018,7 +4897,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Dictionary",
     phonetic: "ˈdɪkʃəˌnɛri",
     img: `${LOCAL_WORD_IMAGES}/classroom/dictionary.webp`,
-    topic: "paper-books",
+    topic: "classroom-2",
     description:
       "A reference volume containing alphabetical lists of words with their meanings and origins.",
   },
@@ -5027,7 +4906,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Encyclopedia",
     phonetic: "ɪnˌsaɪkləˈpiːdiə",
     img: `${LOCAL_WORD_IMAGES}/classroom/encyclopedia.webp`,
-    topic: "paper-books",
+    topic: "classroom-2",
     description:
       "A comprehensive set of books providing informative articles on numerous branches of knowledge.",
   },
@@ -5038,7 +4917,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Desk",
     phonetic: "dɛsk",
     img: `${LOCAL_WORD_IMAGES}/classroom/desk.webp`,
-    topic: "classroom-furniture",
+    topic: "classroom-2",
     description:
       "A sturdy table with drawers and a flat work surface used by students in a classroom.",
   },
@@ -5047,7 +4926,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Chair",
     phonetic: "tʃɛər",
     img: `${LOCAL_WORD_IMAGES}/classroom/chair.webp`,
-    topic: "classroom-furniture",
+    topic: "classroom-2",
     description:
       "A piece of furniture with a backrest and four legs designed for one person to sit upon.",
   },
@@ -5056,7 +4935,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Whiteboard",
     phonetic: "ˈwaɪtbɔːrd",
     img: `${LOCAL_WORD_IMAGES}/classroom/whiteboard.webp`,
-    topic: "classroom-furniture",
+    topic: "classroom-2",
     description:
       "A large glossy white surface mounted on a wall for writing upon with dry markers.",
   },
@@ -5065,7 +4944,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Projector",
     phonetic: "prəˈdʒɛktər",
     img: `${LOCAL_WORD_IMAGES}/classroom/projector.webp`,
-    topic: "classroom-furniture",
+    topic: "classroom-2",
     description:
       "An optical device that shines bright light to display computer images onto a screen.",
   },
@@ -5074,7 +4953,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Screen",
     phonetic: "skriːn",
     img: `${LOCAL_WORD_IMAGES}/classroom/screen.webp`,
-    topic: "classroom-furniture",
+    topic: "classroom-2",
     description:
       "A large flat white hanging canvas upon which projected slides and videos are viewed.",
   },
@@ -5083,7 +4962,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Clock",
     phonetic: "klɑːk",
     img: `${LOCAL_WORD_IMAGES}/classroom/clock.webp`,
-    topic: "classroom-furniture",
+    topic: "classroom-2",
     description:
       "A wall-mounted circular timepiece with rotating hands that displays the hours and minutes.",
   },
@@ -5092,7 +4971,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Globe",
     phonetic: "ɡloʊb",
     img: `${LOCAL_WORD_IMAGES}/classroom/globe.webp`,
-    topic: "classroom-furniture",
+    topic: "classroom-2",
     description:
       "A three-dimensional spherical model of the Earth displaying oceans and continents.",
   },
@@ -5101,7 +4980,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Shelf",
     phonetic: "ʃɛlf",
     img: `${LOCAL_WORD_IMAGES}/classroom/shelf.webp`,
-    topic: "classroom-furniture",
+    topic: "classroom-2",
     description: "A flat horizontal ledge mounted on a bookcase or wall for holding study volumes.",
   },
   {
@@ -5109,7 +4988,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Locker",
     phonetic: "ˈlɑːkər",
     img: `${LOCAL_WORD_IMAGES}/classroom/locker.webp`,
-    topic: "classroom-furniture",
+    topic: "classroom-2",
     description:
       "A narrow metal storage compartment with a lock used by students in school hallways.",
   },
@@ -5118,7 +4997,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Bulletin Board",
     phonetic: "ˈbʊlətɪn bɔːrd",
     img: `${LOCAL_WORD_IMAGES}/classroom/bulletin-board.webp`,
-    topic: "classroom-furniture",
+    topic: "classroom-2",
     description: "A cork-lined wall fixture where notices, student art, and schedules are pinned.",
   },
 
@@ -5128,7 +5007,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Backpack",
     phonetic: "ˈbækpæk",
     img: `${LOCAL_WORD_IMAGES}/classroom/backpack.webp`,
-    topic: "school-supplies",
+    topic: "classroom-3",
     description:
       "A sturdy bag with dual shoulder straps worn on the back to carry books and supplies.",
   },
@@ -5137,7 +5016,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Scissors",
     phonetic: "ˈsɪzərz",
     img: `${LOCAL_WORD_IMAGES}/classroom/scissors.webp`,
-    topic: "school-supplies",
+    topic: "classroom-3",
     description: "A handheld cutting instrument with two crossed pivoting blades and finger loops.",
   },
   {
@@ -5145,7 +5024,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Glue Stick",
     phonetic: "ɡluː stɪk",
     img: `${LOCAL_WORD_IMAGES}/classroom/glue-stick.webp`,
-    topic: "school-supplies",
+    topic: "classroom-3",
     description:
       "A twist-up plastic tube containing solid adhesive paste for paper craft projects.",
   },
@@ -5154,7 +5033,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Tape",
     phonetic: "teɪp",
     img: `${LOCAL_WORD_IMAGES}/classroom/tape.webp`,
-    topic: "school-supplies",
+    topic: "classroom-3",
     description:
       "A narrow strip of transparent plastic coated on one side with adhesive for fastening sheets.",
   },
@@ -5163,7 +5042,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Stapler",
     phonetic: "ˈsteɪplər",
     img: `${LOCAL_WORD_IMAGES}/classroom/stapler.webp`,
-    topic: "school-supplies",
+    topic: "classroom-3",
     description:
       "A mechanical desktop device that drives thin wire fasteners through sheets to bind them.",
   },
@@ -5172,7 +5051,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Paper Clip",
     phonetic: "ˈpeɪpər klɪp",
     img: `${LOCAL_WORD_IMAGES}/classroom/paper-clip.webp`,
-    topic: "school-supplies",
+    topic: "classroom-3",
     description:
       "A small piece of bent steel wire designed to hold a stack of sheets together temporarily.",
   },
@@ -5181,7 +5060,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Rubber Band",
     phonetic: "ˈrʌbər bænd",
     img: `${LOCAL_WORD_IMAGES}/classroom/rubber-band.webp`,
-    topic: "school-supplies",
+    topic: "classroom-3",
     description:
       "A loop of stretchy elastic material used for bundling loose stationery items securely.",
   },
@@ -5190,7 +5069,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Thumbtack",
     phonetic: "ˈθʌmtæk",
     img: `${LOCAL_WORD_IMAGES}/classroom/thumbtack.webp`,
-    topic: "school-supplies",
+    topic: "classroom-3",
     description:
       "A short brass or plastic-headed pin used to fasten notices onto cork display boards.",
   },
@@ -5199,7 +5078,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Calculator",
     phonetic: "ˈkælkjəˌleɪtər",
     img: `${LOCAL_WORD_IMAGES}/classroom/calculator.webp`,
-    topic: "school-supplies",
+    topic: "classroom-3",
     description:
       "An electronic handheld device used for performing arithmetic and mathematical computations.",
   },
@@ -5208,7 +5087,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Compass",
     phonetic: "ˈkʌmpəs",
     img: `${LOCAL_WORD_IMAGES}/classroom/compass.webp`,
-    topic: "school-supplies",
+    topic: "classroom-3",
     description:
       "A V-shaped drafting tool with two metal legs used for drawing arcs and exact circles.",
   },
@@ -5219,7 +5098,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Computer",
     phonetic: "kəmˈpjuːtər",
     img: `${LOCAL_WORD_IMAGES}/classroom/computer.webp`,
-    topic: "classroom-technology",
+    topic: "classroom-3",
     description:
       "An electronic desktop machine with a monitor and CPU used for typing and research.",
   },
@@ -5228,7 +5107,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Laptop",
     phonetic: "ˈlæptɑːp",
     img: `${LOCAL_WORD_IMAGES}/classroom/laptop.webp`,
-    topic: "classroom-technology",
+    topic: "classroom-3",
     description:
       "A portable clamshell computer designed for mobile computing and digital schoolwork.",
   },
@@ -5237,7 +5116,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Tablet",
     phonetic: "ˈtæblət",
     img: `${LOCAL_WORD_IMAGES}/classroom/tablet.webp`,
-    topic: "classroom-technology",
+    topic: "classroom-3",
     description:
       "A flat handheld touchscreen computing device used for reading and digital drawing.",
   },
@@ -5246,7 +5125,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Keyboard",
     phonetic: "ˈkiːbɔːrd",
     img: `${LOCAL_WORD_IMAGES}/classroom/keyboard.webp`,
-    topic: "classroom-technology",
+    topic: "classroom-3",
     description:
       "A panel of letter and number keys pressed to input text into an electronic device.",
   },
@@ -5255,7 +5134,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Mouse",
     phonetic: "maʊs",
     img: `${LOCAL_WORD_IMAGES}/classroom/mouse.webp`,
-    topic: "classroom-technology",
+    topic: "classroom-3",
     description: "A handheld pointing device moved across a pad to navigate computer interfaces.",
   },
   {
@@ -5263,7 +5142,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Printer",
     phonetic: "ˈprɪntər",
     img: `${LOCAL_WORD_IMAGES}/classroom/printer.webp`,
-    topic: "classroom-technology",
+    topic: "classroom-4",
     description: "An output device that produces hard physical paper copies of digital documents.",
   },
   {
@@ -5271,7 +5150,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "USB Drive",
     phonetic: "ˌjuː.ɛsˈbiː draɪv",
     img: `${LOCAL_WORD_IMAGES}/classroom/usb-drive.webp`,
-    topic: "classroom-technology",
+    topic: "classroom-4",
     description: "A miniature portable flash memory device that plugs into ports to store data.",
   },
   {
@@ -5279,7 +5158,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Headphones",
     phonetic: "ˈhɛdfoʊnz",
     img: `${LOCAL_WORD_IMAGES}/classroom/headphones.webp`,
-    topic: "classroom-technology",
+    topic: "classroom-4",
     description: "A pair of padded audio speakers worn over the ears for private listening.",
   },
   {
@@ -5287,7 +5166,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Projector Remote",
     phonetic: "prəˈdʒɛktər rɪˈmoʊt",
     img: `${LOCAL_WORD_IMAGES}/classroom/projector-remote.webp`,
-    topic: "classroom-technology",
+    topic: "classroom-4",
     description:
       "A handheld wireless controller clicked to advance slides and power display beams.",
   },
@@ -5296,7 +5175,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Charger",
     phonetic: "ˈtʃɑːrdʒər",
     img: `${LOCAL_WORD_IMAGES}/classroom/charger.webp`,
-    topic: "classroom-technology",
+    topic: "classroom-4",
     description:
       "An electrical cord and adapter that delivers power to replenish rechargeable batteries.",
   },
@@ -5307,7 +5186,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Teacher",
     phonetic: "ˈtiːtʃər",
     img: `${LOCAL_WORD_IMAGES}/classroom/teacher.webp`,
-    topic: "school-people",
+    topic: "classroom-4",
     description:
       "An educator who plans lessons, instructs the class, and guides academic development.",
   },
@@ -5316,7 +5195,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Student",
     phonetic: "ˈstuːdənt",
     img: `${LOCAL_WORD_IMAGES}/classroom/student.webp`,
-    topic: "school-people",
+    topic: "classroom-4",
     description:
       "A young learner attending classes to acquire knowledge, skills, and understanding.",
   },
@@ -5325,7 +5204,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Principal",
     phonetic: "ˈprɪnsəpəl",
     img: `${LOCAL_WORD_IMAGES}/classroom/principal.webp`,
-    topic: "school-people",
+    topic: "classroom-4",
     description:
       "The head administrator who oversees the operations, staff, and safety of a school.",
   },
@@ -5334,7 +5213,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Librarian",
     phonetic: "laɪˈbrɛriən",
     img: `${LOCAL_WORD_IMAGES}/classroom/librarian.webp`,
-    topic: "school-people",
+    topic: "classroom-4",
     description:
       "A professional who curates book collections and helps visitors find reference materials.",
   },
@@ -5343,7 +5222,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Janitor",
     phonetic: "ˈdʒænɪtər",
     img: `${LOCAL_WORD_IMAGES}/classroom/janitor.webp`,
-    topic: "school-people",
+    topic: "classroom-4",
     description:
       "A staff member responsible for cleaning facilities, repairing items, and maintaining hygiene.",
   },
@@ -5352,7 +5231,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "School Nurse",
     phonetic: "skuːl nɜːrs",
     img: `${LOCAL_WORD_IMAGES}/classroom/school-nurse.webp`,
-    topic: "school-people",
+    topic: "classroom-4",
     description:
       "A healthcare professional who treats minor injuries and cares for sick pupils on campus.",
   },
@@ -5361,7 +5240,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Substitute Teacher",
     phonetic: "ˈsʌbstɪtuːt ˈtiːtʃər",
     img: `${LOCAL_WORD_IMAGES}/classroom/substitute-teacher.webp`,
-    topic: "school-people",
+    topic: "classroom-4",
     description:
       "An instructor who temporarily takes over a classroom when the regular educator is absent.",
   },
@@ -5370,7 +5249,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Teaching Assistant",
     phonetic: "ˈtiːtʃɪŋ əˈsɪstənt",
     img: `${LOCAL_WORD_IMAGES}/classroom/teaching-assistant.webp`,
-    topic: "school-people",
+    topic: "classroom-4",
     description: "An instructional aide who provides extra learning support to pupils in class.",
   },
   {
@@ -5378,7 +5257,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Counselor",
     phonetic: "ˈkaʊnsələr",
     img: `${LOCAL_WORD_IMAGES}/classroom/counselor.webp`,
-    topic: "school-people",
+    topic: "classroom-4",
     description:
       "A trained professional who provides emotional guidance, academic advice, and career support.",
   },
@@ -5387,7 +5266,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Security Guard",
     phonetic: "sɪˈkjʊrəti ɡɑːrd",
     img: `${LOCAL_WORD_IMAGES}/classroom/security-guard.webp`,
-    topic: "school-people",
+    topic: "classroom-4",
     description:
       "A uniformed safety officer who monitors campus entrances and protects the school community.",
   },
@@ -5398,7 +5277,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Homework",
     phonetic: "ˈhoʊmwɜːrk",
     img: `${LOCAL_WORD_IMAGES}/classroom/homework.webp`,
-    topic: "school-life",
+    topic: "classroom-5",
     description: "Academic assignments completed outside the classroom to reinforce daily lessons.",
   },
   {
@@ -5406,7 +5285,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Test",
     phonetic: "tɛst",
     img: `${LOCAL_WORD_IMAGES}/classroom/test.webp`,
-    topic: "school-life",
+    topic: "classroom-5",
     description:
       "A formal examination assessing a pupil's knowledge, comprehension, and mastery of a subject.",
   },
@@ -5415,7 +5294,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Recess",
     phonetic: "ˈriːsɛs",
     img: `${LOCAL_WORD_IMAGES}/classroom/recess.webp`,
-    topic: "school-life",
+    topic: "classroom-5",
     description:
       "A scheduled recreation interval during the school day for outdoor play and socializing.",
   },
@@ -5424,7 +5303,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Bell",
     phonetic: "bɛl",
     img: `${LOCAL_WORD_IMAGES}/classroom/bell.webp`,
-    topic: "school-life",
+    topic: "classroom-5",
     description:
       "A metal acoustic instrument that chimes or rings loudly to signal the change of periods.",
   },
@@ -5433,7 +5312,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Grade",
     phonetic: "ɡreɪd",
     img: `${LOCAL_WORD_IMAGES}/classroom/grade.webp`,
-    topic: "school-life",
+    topic: "classroom-5",
     description:
       "A standardized letter or numerical mark evaluating the quality of academic performance.",
   },
@@ -5442,7 +5321,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Uniform",
     phonetic: "ˈjuːnɪfɔːrm",
     img: `${LOCAL_WORD_IMAGES}/classroom/uniform.webp`,
-    topic: "school-life",
+    topic: "classroom-5",
     description:
       "A standardized set of attire worn by pupils to establish equality and school identity.",
   },
@@ -5451,7 +5330,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Book",
     phonetic: "bʊk",
     img: `${LOCAL_WORD_IMAGES}/classroom/book.webp`,
-    topic: "school-life",
+    topic: "classroom-5",
     description: "A printed work consisting of bound pages with text, stories, or illustrations.",
   },
   {
@@ -5459,7 +5338,7 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
     label: "Blackboard",
     phonetic: "ˈblækbɔːrd",
     img: `${LOCAL_WORD_IMAGES}/classroom/blackboard.webp`,
-    topic: "school-life",
+    topic: "classroom-5",
     description:
       "A traditional dark slate surface mounted on a wall for writing upon with white chalk.",
   },
@@ -5471,56 +5350,34 @@ export const CLASSROOM_VOCABULARY: VocabularyItem[] = [
 
 export const LIBRARY_TOPICS: TopicCategory[] = [
   {
-    id: "book-types",
-    name: "Book Types",
-    description: "Diverse literary formats, periodicals, reference volumes, and graphic editions.",
-    icon: "book",
-    itemsCount: 10,
+    id: "library-1",
+    name: "Library Part 1",
+    itemsCount: 15,
   },
   {
-    id: "library-furniture",
-    name: "Library Furniture",
-    description: "Workstations, bookshelves, comfortable seating, and reading lamps.",
-    icon: "layout",
-    itemsCount: 10,
+    id: "library-2",
+    name: "Library Part 2",
+    itemsCount: 15,
   },
   {
-    id: "library-sections",
-    name: "Library Sections",
-    description:
-      "Distinct zones for fiction, youth collections, research archives, and study rooms.",
-    icon: "grid",
-    itemsCount: 10,
+    id: "library-3",
+    name: "Library Part 3",
+    itemsCount: 15,
   },
   {
-    id: "library-actions",
-    name: "Library Actions",
-    description: "Daily habits including reading, browsing, borrowing, and quiet collaboration.",
-    icon: "activity",
-    itemsCount: 10,
-  },
-  {
-    id: "library-tools",
-    name: "Library Tools",
-    description: "Circulation instruments, scanners, bookmarks, catalog systems, and cards.",
-    icon: "tool",
-    itemsCount: 10,
-  },
-  {
-    id: "library-people",
-    name: "Library People",
-    description: "Staff members, visiting scholars, avid readers, authors, and community guests.",
-    icon: "users",
-    itemsCount: 10,
+    id: "library-4",
+    name: "Library Part 4",
+    itemsCount: 15,
   },
 ];
 
 export const LIBRARY_GROUPS: Lesson[] = [
   {
-    id: "book-types",
-    name: "Book Types",
-    topicId: "book-types",
-    description: "Learn about novels, picture books, periodicals, reference volumes, and poetry.",
+    id: "library-1",
+    name: "Library Basics 1",
+    description:
+      "Learn about Novel, Picture Book, Reference Book, Comic Book, Magazine, Newspaper, Encyclopedia, Atlas, Biography...",
+    topicId: "library-1",
     wordIds: [
       "novel",
       "picture-book",
@@ -5532,36 +5389,27 @@ export const LIBRARY_GROUPS: Lesson[] = [
       "atlas",
       "biography",
       "poetry-book",
-    ],
-    story:
-      "Farah browsed the central stacks, picking up a captivating historical novel and an illustrated children's picture-book. She examined a heavy reference-book, flipped through a superhero comic-book, and skimmed an art magazine beside the morning newspaper. On the large table, she consulted a leather-bound encyclopedia, traced trade routes in an atlas, read a scientist's biography, and appreciated verses in a slim poetry-book.",
-  },
-  {
-    id: "library-furniture",
-    name: "Library Furniture",
-    topicId: "library-furniture",
-    description: "Learn about oak tables, bookshelves, comfortable bean bags, and quiet lamps.",
-    wordIds: [
       "bookshelf",
       "reading-table",
       "study-desk",
       "chair",
       "bean-bag",
+    ],
+    story:
+      "In this section, you will learn about Novel, Picture Book, Reference Book, Comic Book, Magazine, Newspaper, Encyclopedia, Atlas, Biography, Poetry Book, Bookshelf, Reading Table, Study Desk, Chair, Bean Bag. These are essential items to know.",
+  },
+  {
+    id: "library-2",
+    name: "Library Basics 2",
+    description:
+      "Learn about Step Stool, Cart, Lamp, Computer Desk, Armchair, Fiction, Non-Fiction, Children's Section, Reference...",
+    topicId: "library-2",
+    wordIds: [
       "step-stool",
       "cart",
       "lamp",
       "computer-desk",
       "armchair",
-    ],
-    story:
-      "Sunlight streamed across each tall oak bookshelf in the main reading room. Tariq sat at the wide reading-table on a sturdy chair, while Omar focused at a partitioned study-desk. A toddler curled up in a plush bean-bag, and the assistant stepped onto a two-step step-stool to reach top shelves. Near the rolling cart, a glowing brass lamp illuminated the computer-desk and a cozy velvet armchair.",
-  },
-  {
-    id: "library-sections",
-    name: "Library Sections",
-    topicId: "library-sections",
-    description: "Learn about fiction wings, media centers, study rooms, and historic archives.",
-    wordIds: [
       "fiction",
       "non-fiction",
       "childrens-section",
@@ -5574,14 +5422,14 @@ export const LIBRARY_GROUPS: Lesson[] = [
       "archive",
     ],
     story:
-      "The library layout separates popular fiction from factual non-fiction stacks. Families gather in the cheerful Children's Section, while researchers work silently in the reference-section and browse current periodicals. Students edit multimedia in the media-center and practice presentations in a private study-room. Near the entrance, patrons visit the return-desk and the help-desk before touring the rare manuscript archive.",
+      "In this section, you will learn about Step Stool, Cart, Lamp, Computer Desk, Armchair, Fiction, Non-Fiction, Children's Section, Reference Section, Periodicals, Media Center, Study Room, Return Desk, Help Desk, Archive. These are essential items to know.",
   },
   {
-    id: "library-actions",
-    name: "Library Actions",
-    topicId: "library-actions",
+    id: "library-3",
+    name: "Library Basics 3",
     description:
-      "Learn essential library activities from browsing and studying to borrowing books.",
+      "Learn about Reading, Borrowing, Returning, Searching, Studying, Browsing, Reserving, Photocopying, Typing, Whisp...",
+    topicId: "library-3",
     wordIds: [
       "reading",
       "borrowing",
@@ -5593,36 +5441,27 @@ export const LIBRARY_GROUPS: Lesson[] = [
       "photocopying",
       "typing",
       "whispering",
-    ],
-    story:
-      "Quiet reading filled the sunlit hall as visitors practiced borrowing new titles and returning overdue books. Maya spent time searching the catalog while studying for biology exams and browsing the literature aisle. After reserving a study cubicle, she finished photocopying reference charts, typing notes on the terminal, and whispering with her study partner.",
-  },
-  {
-    id: "library-tools",
-    name: "Library Tools",
-    topicId: "library-tools",
-    description: "Learn essential tools for cataloging, scanning, labeling, and bookmarking.",
-    wordIds: [
       "library-card",
       "barcode-scanner",
       "stamp",
       "bookmark",
       "book-cover",
+    ],
+    story:
+      "In this section, you will learn about Reading, Borrowing, Returning, Searching, Studying, Browsing, Reserving, Photocopying, Typing, Whispering, Library Card, Barcode Scanner, Stamp, Bookmark, Book Cover. These are essential items to know.",
+  },
+  {
+    id: "library-4",
+    name: "Library Basics 4",
+    description:
+      "Learn about Label, Catalog, Computer, Printer, Scanner, Librarian, Assistant, Volunteer, Reader, Student, Resear...",
+    topicId: "library-4",
+    wordIds: [
       "label",
       "catalog",
       "computer",
       "printer",
       "scanner",
-    ],
-    story:
-      "Nour presented her library-card at checkout where the clerk used a laser barcode-scanner and an inked due date stamp. She placed a silk bookmark inside the glossy book-cover, noting the call number label on its spine. She consulted the digital catalog on a desktop computer, printed summary sheets on the laser printer, and digitized an old map on the flatbed scanner.",
-  },
-  {
-    id: "library-people",
-    name: "Library People",
-    topicId: "library-people",
-    description: "Learn about dedicated staff, authors, researchers, storytellers, and visitors.",
-    wordIds: [
       "librarian",
       "assistant",
       "volunteer",
@@ -5635,7 +5474,7 @@ export const LIBRARY_GROUPS: Lesson[] = [
       "cleaner",
     ],
     story:
-      "The head librarian and circulation assistant welcomed an enthusiastic volunteer to the morning shift. An avid reader smiled at a hardworking student, while an academic researcher gathered notes for a visiting author. In the youth wing, a dynamic storyteller entertained children, while the security guard monitored the hall and the custodian cleaner polished the glass doors.",
+      "In this section, you will learn about Label, Catalog, Computer, Printer, Scanner, Librarian, Assistant, Volunteer, Reader, Student, Researcher, Author, Storyteller, Guard, Cleaner. These are essential items to know.",
   },
 ];
 
@@ -5646,7 +5485,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Novel",
     phonetic: "ˈnɑːvəl",
     img: `${LOCAL_WORD_IMAGES}/library/novel.webp`,
-    topic: "book-types",
+    topic: "library-1",
     description: "A long printed fictional prose narrative detailing intricate character journeys.",
   },
   {
@@ -5654,7 +5493,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Picture Book",
     phonetic: "ˈpɪktʃər bʊk",
     img: `${LOCAL_WORD_IMAGES}/library/picture-book.webp`,
-    topic: "book-types",
+    topic: "library-1",
     description:
       "A bound volume featuring large colorful illustrations accompanied by simple narrative text.",
   },
@@ -5663,7 +5502,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Reference Book",
     phonetic: "ˈrɛfrəns bʊk",
     img: `${LOCAL_WORD_IMAGES}/library/reference-book.webp`,
-    topic: "book-types",
+    topic: "library-1",
     description: "A comprehensive informational volume consulted for authoritative facts and data.",
   },
   {
@@ -5671,7 +5510,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Comic Book",
     phonetic: "ˈkɑːmɪk bʊk",
     img: `${LOCAL_WORD_IMAGES}/library/comic-book.webp`,
-    topic: "book-types",
+    topic: "library-1",
     description:
       "A publication that presents sequential art paired with dialogue bubbles to tell stories.",
   },
@@ -5680,7 +5519,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Magazine",
     phonetic: "ˌmæɡəˈziːn",
     img: `${LOCAL_WORD_IMAGES}/library/magazine.webp`,
-    topic: "book-types",
+    topic: "library-1",
     description:
       "A periodic paperback publication containing diverse articles, photographs, and feature stories.",
   },
@@ -5689,7 +5528,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Newspaper",
     phonetic: "ˈnuːzˌpeɪpər",
     img: `${LOCAL_WORD_IMAGES}/library/newspaper.webp`,
-    topic: "book-types",
+    topic: "library-1",
     description:
       "A daily or weekly printed publication containing current news, reporting, and editorial opinions.",
   },
@@ -5698,7 +5537,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Encyclopedia",
     phonetic: "ɪnˌsaɪkləˈpiːdiə",
     img: `${LOCAL_WORD_IMAGES}/library/encyclopedia.webp`,
-    topic: "book-types",
+    topic: "library-1",
     description:
       "A comprehensive multi-volume work providing informative articles across all branches of human knowledge.",
   },
@@ -5707,7 +5546,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Atlas",
     phonetic: "ˈætləs",
     img: `${LOCAL_WORD_IMAGES}/library/atlas.webp`,
-    topic: "book-types",
+    topic: "library-1",
     description: "A bound collection of geographic maps, planetary charts, and demographic tables.",
   },
   {
@@ -5715,7 +5554,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Biography",
     phonetic: "baɪˈɑːɡrəfi",
     img: `${LOCAL_WORD_IMAGES}/library/biography.webp`,
-    topic: "book-types",
+    topic: "library-1",
     description: "A written account of a real person's life experiences, achievements, and legacy.",
   },
   {
@@ -5723,7 +5562,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Poetry Book",
     phonetic: "ˈpoʊətri bʊk",
     img: `${LOCAL_WORD_IMAGES}/library/poetry-book.webp`,
-    topic: "book-types",
+    topic: "library-1",
     description:
       "A collection of rhythmic verse compositions expressing deep emotions and artistic meter.",
   },
@@ -5734,7 +5573,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Bookshelf",
     phonetic: "ˈbʊkʃɛlf",
     img: `${LOCAL_WORD_IMAGES}/library/bookshelf.webp`,
-    topic: "library-furniture",
+    topic: "library-1",
     description:
       "A tall upright wooden case with horizontal tiers designed for organizing volumes.",
   },
@@ -5743,7 +5582,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Reading Table",
     phonetic: "ˈriːdɪŋ ˈteɪbəl",
     img: `${LOCAL_WORD_IMAGES}/library/reading-table.webp`,
-    topic: "library-furniture",
+    topic: "library-1",
     description: "A wide polished oak surface where visitors sit to review and annotate texts.",
   },
   {
@@ -5751,7 +5590,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Study Desk",
     phonetic: "ˈstʌdi dɛsk",
     img: `${LOCAL_WORD_IMAGES}/library/study-desk.webp`,
-    topic: "library-furniture",
+    topic: "library-1",
     description:
       "An individual workstation partitioned with side dividers to provide distraction-free focus.",
   },
@@ -5760,7 +5599,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Chair",
     phonetic: "tʃɛər",
     img: `${LOCAL_WORD_IMAGES}/library/chair.webp`,
-    topic: "library-furniture",
+    topic: "library-1",
     description:
       "A piece of furniture with a supportive backrest and four legs for one person to sit upon.",
   },
@@ -5769,7 +5608,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Bean Bag",
     phonetic: "ˈbiːnbæɡ",
     img: `${LOCAL_WORD_IMAGES}/library/bean-bag.webp`,
-    topic: "library-furniture",
+    topic: "library-1",
     description: "A soft oversized cushion filled with malleable pellets that molds to the body.",
   },
   {
@@ -5777,7 +5616,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Step Stool",
     phonetic: "ˈstɛp stuːl",
     img: `${LOCAL_WORD_IMAGES}/library/step-stool.webp`,
-    topic: "library-furniture",
+    topic: "library-2",
     description: "A small two-tiered elevation aid used to reach high shelves safely.",
   },
   {
@@ -5785,7 +5624,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Cart",
     phonetic: "kɑːrt",
     img: `${LOCAL_WORD_IMAGES}/library/cart.webp`,
-    topic: "library-furniture",
+    topic: "library-2",
     description:
       "A wheeled metal transport rack used by staff to move stacks of volumes between aisles.",
   },
@@ -5794,7 +5633,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Lamp",
     phonetic: "læmp",
     img: `${LOCAL_WORD_IMAGES}/library/lamp.webp`,
-    topic: "library-furniture",
+    topic: "library-2",
     description:
       "An electric light fixture that casts focused warm illumination over reading surfaces.",
   },
@@ -5803,7 +5642,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Computer Desk",
     phonetic: "kəmˈpjuːtər dɛsk",
     img: `${LOCAL_WORD_IMAGES}/library/computer-desk.webp`,
-    topic: "library-furniture",
+    topic: "library-2",
     description:
       "A dedicated workstation configured to support electronic terminals and typing peripherals.",
   },
@@ -5812,7 +5651,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Armchair",
     phonetic: "ˈɑːrmtʃɛər",
     img: `${LOCAL_WORD_IMAGES}/library/armchair.webp`,
-    topic: "library-furniture",
+    topic: "library-2",
     description: "A comfortable upholstered lounge seat with side arm supports for relaxing.",
   },
 
@@ -5822,7 +5661,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Fiction",
     phonetic: "ˈfɪkʃən",
     img: `${LOCAL_WORD_IMAGES}/library/fiction.webp`,
-    topic: "library-sections",
+    topic: "library-2",
     description:
       "A designated section housing imaginative prose stories, novels, and created worlds.",
   },
@@ -5831,7 +5670,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Non-Fiction",
     phonetic: "ˌnɑːnˈfɪkʃən",
     img: `${LOCAL_WORD_IMAGES}/library/non-fiction.webp`,
-    topic: "library-sections",
+    topic: "library-2",
     description:
       "A vast department dedicated to factual texts, historical treatises, and scientific research.",
   },
@@ -5840,7 +5679,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Children's Section",
     phonetic: "ˈtʃɪldrənz ˈsɛkʃən",
     img: `${LOCAL_WORD_IMAGES}/library/childrens-section.webp`,
-    topic: "library-sections",
+    topic: "library-2",
     description:
       "A vibrant youth area filled with colorful mats, low shelves, and early literacy materials.",
   },
@@ -5849,7 +5688,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Reference Section",
     phonetic: "ˈrɛfrəns ˈsɛkʃən",
     img: `${LOCAL_WORD_IMAGES}/library/reference-section.webp`,
-    topic: "library-sections",
+    topic: "library-2",
     description:
       "A quiet wing where authoritative encyclopedias and directories are kept for in-building consultation.",
   },
@@ -5858,7 +5697,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Periodicals",
     phonetic: "ˌpɪriˈɑːdɪkəlz",
     img: `${LOCAL_WORD_IMAGES}/library/periodicals.webp`,
-    topic: "library-sections",
+    topic: "library-2",
     description:
       "A gallery of slanted display shelves showcasing the newest journals and daily publications.",
   },
@@ -5867,7 +5706,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Media Center",
     phonetic: "ˈmiːdiə ˌsɛntər",
     img: `${LOCAL_WORD_IMAGES}/library/media-center.webp`,
-    topic: "library-sections",
+    topic: "library-2",
     description:
       "A high-tech laboratory equipped with audio-visual hardware, recording booths, and digital tools.",
   },
@@ -5876,7 +5715,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Study Room",
     phonetic: "ˈstʌdi ruːm",
     img: `${LOCAL_WORD_IMAGES}/library/study-room.webp`,
-    topic: "library-sections",
+    topic: "library-2",
     description:
       "A soundproof enclosed glass space reserved for group collaboration and academic discussion.",
   },
@@ -5885,7 +5724,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Return Desk",
     phonetic: "rɪˈtɜːrn dɛsk",
     img: `${LOCAL_WORD_IMAGES}/library/return-desk.webp`,
-    topic: "library-sections",
+    topic: "library-2",
     description:
       "A dedicated counter with a cushioned drop slot where patrons bring back checked-out items.",
   },
@@ -5894,7 +5733,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Help Desk",
     phonetic: "ˈhɛlp dɛsk",
     img: `${LOCAL_WORD_IMAGES}/library/help-desk.webp`,
-    topic: "library-sections",
+    topic: "library-2",
     description:
       "An information counter where attendants assist visitors with inquiries and memberships.",
   },
@@ -5903,7 +5742,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Archive",
     phonetic: "ˈɑːrkaɪv",
     img: `${LOCAL_WORD_IMAGES}/library/archive.webp`,
-    topic: "library-sections",
+    topic: "library-2",
     description:
       "A temperature-regulated repository housing delicate historical manuscripts and rare municipal records.",
   },
@@ -5914,7 +5753,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Reading",
     phonetic: "ˈriːdɪŋ",
     img: `${LOCAL_WORD_IMAGES}/library/reading.webp`,
-    topic: "library-actions",
+    topic: "library-3",
     description:
       "The cognitive process of decoding written symbols and comprehending narrative meaning.",
   },
@@ -5923,7 +5762,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Borrowing",
     phonetic: "ˈbɑːroʊɪŋ",
     img: `${LOCAL_WORD_IMAGES}/library/borrowing.webp`,
-    topic: "library-actions",
+    topic: "library-3",
     description: "The act of taking checked-out materials home for an agreed loan period.",
   },
   {
@@ -5931,7 +5770,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Returning",
     phonetic: "rɪˈtɜːrnɪŋ",
     img: `${LOCAL_WORD_IMAGES}/library/returning.webp`,
-    topic: "library-actions",
+    topic: "library-3",
     description: "The act of bringing checked-out items back to the circulation counter on time.",
   },
   {
@@ -5939,7 +5778,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Searching",
     phonetic: "ˈsɜːrtʃɪŋ",
     img: `${LOCAL_WORD_IMAGES}/library/searching.webp`,
-    topic: "library-actions",
+    topic: "library-3",
     description:
       "The deliberate process of querying database catalogs and scanning shelves for resources.",
   },
@@ -5948,7 +5787,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Studying",
     phonetic: "ˈstʌdiɪŋ",
     img: `${LOCAL_WORD_IMAGES}/library/studying.webp`,
-    topic: "library-actions",
+    topic: "library-3",
     description:
       "Devoting focused mental effort to acquiring knowledge and reviewing academic concepts.",
   },
@@ -5957,7 +5796,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Browsing",
     phonetic: "ˈbraʊzɪŋ",
     img: `${LOCAL_WORD_IMAGES}/library/browsing.webp`,
-    topic: "library-actions",
+    topic: "library-3",
     description: "Casually perusing shelves and leafing through volumes without a specific goal.",
   },
   {
@@ -5965,7 +5804,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Reserving",
     phonetic: "rɪˈzɜːrvɪŋ",
     img: `${LOCAL_WORD_IMAGES}/library/reserving.webp`,
-    topic: "library-actions",
+    topic: "library-3",
     description:
       "Placing an advance hold on a popular volume or booking a collaborative workspace.",
   },
@@ -5974,7 +5813,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Photocopying",
     phonetic: "ˈfoʊtoʊˌkɑːpiɪŋ",
     img: `${LOCAL_WORD_IMAGES}/library/photocopying.webp`,
-    topic: "library-actions",
+    topic: "library-3",
     description:
       "Duplicating printed pages and excerpts using an optical document reproduction machine.",
   },
@@ -5983,7 +5822,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Typing",
     phonetic: "ˈtaɪpɪŋ",
     img: `${LOCAL_WORD_IMAGES}/library/typing.webp`,
-    topic: "library-actions",
+    topic: "library-3",
     description: "Inputting textual content onto a digital screen via a tactile key panel.",
   },
   {
@@ -5991,7 +5830,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Whispering",
     phonetic: "ˈwɪspərɪŋ",
     img: `${LOCAL_WORD_IMAGES}/library/whispering.webp`,
-    topic: "library-actions",
+    topic: "library-3",
     description:
       "Speaking in an extremely quiet, breathy voice to maintain absolute silence for nearby learners.",
   },
@@ -6002,7 +5841,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Library Card",
     phonetic: "ˈlaɪbrɛri kɑːrd",
     img: `${LOCAL_WORD_IMAGES}/library/library-card.webp`,
-    topic: "library-tools",
+    topic: "library-3",
     description:
       "A plastic identification credential that grants borrowing privileges and digital database access.",
   },
@@ -6011,7 +5850,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Barcode Scanner",
     phonetic: "ˈbɑːrkoʊd ˌskænər",
     img: `${LOCAL_WORD_IMAGES}/library/barcode-scanner.webp`,
-    topic: "library-tools",
+    topic: "library-3",
     description:
       "An optical device that emits a red laser beam to read coded stripes on publications.",
   },
@@ -6020,7 +5859,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Stamp",
     phonetic: "stæmp",
     img: `${LOCAL_WORD_IMAGES}/library/stamp.webp`,
-    topic: "library-tools",
+    topic: "library-3",
     description: "An inked handheld block used to imprint return due dates onto checkout slips.",
   },
   {
@@ -6028,7 +5867,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Bookmark",
     phonetic: "ˈbʊkmɑːrk",
     img: `${LOCAL_WORD_IMAGES}/library/bookmark.webp`,
-    topic: "library-tools",
+    topic: "library-3",
     description:
       "A slender slip of decorative card or fabric placed between leaves to save one's place.",
   },
@@ -6037,7 +5876,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Book Cover",
     phonetic: "ˈbʊk kʌvər",
     img: `${LOCAL_WORD_IMAGES}/library/book-cover.webp`,
-    topic: "library-tools",
+    topic: "library-3",
     description:
       "The protective outer casing or jacket shielding the spine and leaves of a volume.",
   },
@@ -6046,7 +5885,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Label",
     phonetic: "ˈleɪbəl",
     img: `${LOCAL_WORD_IMAGES}/library/label.webp`,
-    topic: "library-tools",
+    topic: "library-4",
     description:
       "An adhesive white tag displaying call numbers affixed to the lower spine of a volume.",
   },
@@ -6055,7 +5894,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Catalog",
     phonetic: "ˈkætəlɔːɡ",
     img: `${LOCAL_WORD_IMAGES}/library/catalog.webp`,
-    topic: "library-tools",
+    topic: "library-4",
     description:
       "A searchable digital database listing all items, call numbers, and availability across branches.",
   },
@@ -6064,7 +5903,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Computer",
     phonetic: "kəmˈpjuːtər",
     img: `${LOCAL_WORD_IMAGES}/library/computer.webp`,
-    topic: "library-tools",
+    topic: "library-4",
     description:
       "An electronic workstation terminal used to query collections and access web databases.",
   },
@@ -6073,7 +5912,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Printer",
     phonetic: "ˈprɪntər",
     img: `${LOCAL_WORD_IMAGES}/library/printer.webp`,
-    topic: "library-tools",
+    topic: "library-4",
     description:
       "An output peripheral that produces physical paper hard copies from electronic files.",
   },
@@ -6082,7 +5921,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Scanner",
     phonetic: "ˈskænər",
     img: `${LOCAL_WORD_IMAGES}/library/scanner.webp`,
-    topic: "library-tools",
+    topic: "library-4",
     description:
       "A digital imaging device that converts physical documents and rare maps into high-resolution files.",
   },
@@ -6093,7 +5932,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Librarian",
     phonetic: "laɪˈbrɛriən",
     img: `${LOCAL_WORD_IMAGES}/library/librarian.webp`,
-    topic: "library-people",
+    topic: "library-4",
     description:
       "A certified information specialist who manages collections and assists with research.",
   },
@@ -6102,7 +5941,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Assistant",
     phonetic: "əˈsɪstənt",
     img: `${LOCAL_WORD_IMAGES}/library/assistant.webp`,
-    topic: "library-people",
+    topic: "library-4",
     description:
       "A staff member who supports circulation services, shelves volumes, and handles inquiries.",
   },
@@ -6111,7 +5950,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Volunteer",
     phonetic: "ˌvɑːlənˈtɪər",
     img: `${LOCAL_WORD_IMAGES}/library/volunteer.webp`,
-    topic: "library-people",
+    topic: "library-4",
     description:
       "A helpful community member who freely gives time to organize books and support programs.",
   },
@@ -6120,7 +5959,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Reader",
     phonetic: "ˈriːdər",
     img: `${LOCAL_WORD_IMAGES}/library/reader.webp`,
-    topic: "library-people",
+    topic: "library-4",
     description:
       "A dedicated person absorbed in perusing literature, novels, and educational texts.",
   },
@@ -6129,7 +5968,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Student",
     phonetic: "ˈstuːdənt",
     img: `${LOCAL_WORD_IMAGES}/library/student.webp`,
-    topic: "library-people",
+    topic: "library-4",
     description:
       "An enrolled learner preparing for exams, completing assignments, and consulting course texts.",
   },
@@ -6138,7 +5977,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Researcher",
     phonetic: "ˈriːsɜːrtʃər",
     img: `${LOCAL_WORD_IMAGES}/library/researcher.webp`,
-    topic: "library-people",
+    topic: "library-4",
     description:
       "An academic investigator analyzing archives, historical records, and scholarly journals.",
   },
@@ -6147,7 +5986,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Author",
     phonetic: "ˈɔːθər",
     img: `${LOCAL_WORD_IMAGES}/library/author.webp`,
-    topic: "library-people",
+    topic: "library-4",
     description:
       "A creative writer who conceives and publishes literary narratives, memoirs, or factual works.",
   },
@@ -6156,7 +5995,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Storyteller",
     phonetic: "ˈstɔːritɛlər",
     img: `${LOCAL_WORD_IMAGES}/library/storyteller.webp`,
-    topic: "library-people",
+    topic: "library-4",
     description:
       "An animated performer who brings folk tales and children's stories to life through spoken narrative.",
   },
@@ -6165,7 +6004,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Guard",
     phonetic: "ɡɑːrd",
     img: `${LOCAL_WORD_IMAGES}/library/guard.webp`,
-    topic: "library-people",
+    topic: "library-4",
     description:
       "A uniformed security officer who oversees visitor safety and protects public facilities.",
   },
@@ -6174,7 +6013,7 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
     label: "Cleaner",
     phonetic: "ˈkliːnər",
     img: `${LOCAL_WORD_IMAGES}/library/cleaner.webp`,
-    topic: "library-people",
+    topic: "library-4",
     description:
       "A dedicated custodian who sanitizes tables, vacuums carpets, and maintains facility hygiene.",
   },
@@ -6186,55 +6025,39 @@ export const LIBRARY_VOCABULARY: VocabularyItem[] = [
 
 export const MARKET_TOPICS: TopicCategory[] = [
   {
-    id: "common-fruits",
-    name: "Common Fruits",
-    description: "Sweet, juicy orchard and tropical fruits harvested fresh for the market.",
-    icon: "sun",
-    itemsCount: 12,
+    id: "market-1",
+    name: "Market Part 1",
+    itemsCount: 15,
   },
   {
-    id: "common-vegetables",
-    name: "Common Vegetables",
-    description: "Nutritious garden greens, root vegetables, and aromatic cooking staples.",
-    icon: "feather",
-    itemsCount: 12,
+    id: "market-2",
+    name: "Market Part 2",
+    itemsCount: 15,
   },
   {
-    id: "meat-seafood",
-    name: "Meat & Seafood",
-    description: "Fresh cuts of poultry, beef, pork, and ocean seafood from the butcher.",
-    icon: "anchor",
-    itemsCount: 12,
+    id: "market-3",
+    name: "Market Part 3",
+    itemsCount: 15,
   },
   {
-    id: "dairy-bakery",
-    name: "Dairy & Bakery",
-    description: "Fresh milk, cheeses, artisan breads, flaky pastries, and sweet desserts.",
-    icon: "coffee",
-    itemsCount: 12,
+    id: "market-4",
+    name: "Market Part 4",
+    itemsCount: 15,
   },
   {
-    id: "market-areas",
-    name: "Market Areas",
-    description: "Supermarket departments, refrigerated sections, aisles, and weighing stations.",
-    icon: "layout",
-    itemsCount: 10,
-  },
-  {
-    id: "shopping-actions",
-    name: "Shopping & Payment",
-    description: "Checkout accessories, payment methods, receipts, bags, and discount coupons.",
-    icon: "credit-card",
-    itemsCount: 10,
+    id: "market-5",
+    name: "Market Part 5",
+    itemsCount: 8,
   },
 ];
 
 export const MARKET_GROUPS: Lesson[] = [
   {
-    id: "common-fruits",
-    name: "Common Fruits",
-    topicId: "common-fruits",
-    description: "Learn about sweet apples, bananas, citrus fruits, berries, and melons.",
+    id: "market-1",
+    name: "Market Basics 1",
+    description:
+      "Learn about Apple, Banana, Orange, Grape, Strawberry, Watermelon, Mango, Pear, Peach, Pineapple, Lemon, Lime, Ca...",
+    topicId: "market-1",
     wordIds: [
       "apple",
       "banana",
@@ -6248,19 +6071,20 @@ export const MARKET_GROUPS: Lesson[] = [
       "pineapple",
       "lemon",
       "lime",
-    ],
-    story:
-      "Tariq browsed the fruit stand, selecting a red apple, yellow banana, and sweet orange. He tasted a seedless grape, a ripe scarlet strawberry, and a slice of chilled watermelon. Next, he picked a golden mango, a green pear, a fuzzy peach, a spiky tropical pineapple, a yellow sour lemon, and a green lime.",
-  },
-  {
-    id: "common-vegetables",
-    name: "Common Vegetables",
-    topicId: "common-vegetables",
-    description: "Learn about crunchy carrots, greens, onions, potatoes, and cooking aromatics.",
-    wordIds: [
       "carrot",
       "broccoli",
       "onion",
+    ],
+    story:
+      "In this section, you will learn about Apple, Banana, Orange, Grape, Strawberry, Watermelon, Mango, Pear, Peach, Pineapple, Lemon, Lime, Carrot, Broccoli, Onion. These are essential items to know.",
+  },
+  {
+    id: "market-2",
+    name: "Market Basics 2",
+    description:
+      "Learn about Pepper, Tomato, Cucumber, Lettuce, Potato, Mushroom, Spinach, Garlic, Corn, Chicken, Beef, Pork, Fis...",
+    topicId: "market-2",
+    wordIds: [
       "pepper",
       "tomato",
       "cucumber",
@@ -6270,38 +6094,29 @@ export const MARKET_GROUPS: Lesson[] = [
       "spinach",
       "garlic",
       "corn",
-    ],
-    story:
-      "Laila loaded her basket with a crunchy orange carrot, a head of green broccoli, a yellow onion, and a red bell pepper. She chose a vine tomato, a crisp green cucumber, fresh romaine lettuce, and a starchy russet potato. To finish the soup, she added a button mushroom, tender baby spinach, aromatic garlic, and sweet golden corn.",
-  },
-  {
-    id: "meat-seafood",
-    name: "Meat & Seafood",
-    topicId: "meat-seafood",
-    description: "Learn about fresh poultry, butcher steaks, sausages, and ocean seafood.",
-    wordIds: [
       "chicken",
       "beef",
       "pork",
       "fish",
       "shrimp",
       "sausage",
+    ],
+    story:
+      "In this section, you will learn about Pepper, Tomato, Cucumber, Lettuce, Potato, Mushroom, Spinach, Garlic, Corn, Chicken, Beef, Pork, Fish, Shrimp, Sausage. These are essential items to know.",
+  },
+  {
+    id: "market-3",
+    name: "Market Basics 3",
+    description:
+      "Learn about Ham, Bacon, Turkey, Salmon, Tuna, Lamb, Milk, Cheese, Yogurt, Butter, Cream, Bread, Roll, Bagel, Cro...",
+    topicId: "market-3",
+    wordIds: [
       "ham",
       "bacon",
       "turkey",
       "salmon",
       "tuna",
       "lamb",
-    ],
-    story:
-      "At the butcher and seafood counter, Omar ordered fresh chicken breasts and ground beef. The display featured seasoned pork, whole ocean fish, pink shrimp, and smoked artisan sausage. He also looked at sliced ham, crispy breakfast bacon, roast turkey slices, pink Atlantic salmon, seared ahi tuna, and tender spring lamb.",
-  },
-  {
-    id: "dairy-bakery",
-    name: "Dairy & Bakery",
-    topicId: "dairy-bakery",
-    description: "Learn about milk, cheeses, yogurts, artisan breads, and baked desserts.",
-    wordIds: [
       "milk",
       "cheese",
       "yogurt",
@@ -6311,19 +6126,20 @@ export const MARKET_GROUPS: Lesson[] = [
       "roll",
       "bagel",
       "croissant",
+    ],
+    story:
+      "In this section, you will learn about Ham, Bacon, Turkey, Salmon, Tuna, Lamb, Milk, Cheese, Yogurt, Butter, Cream, Bread, Roll, Bagel, Croissant. These are essential items to know.",
+  },
+  {
+    id: "market-4",
+    name: "Market Basics 4",
+    description:
+      "Learn about Cake, Pie, Cookie, Produce Section, Deli Counter, Bakery, Frozen Foods, Checkout, Aisle, Shopping Ca...",
+    topicId: "market-4",
+    wordIds: [
       "cake",
       "pie",
       "cookie",
-    ],
-    story:
-      "In the dairy cooler, Sara grabbed fresh whole milk, sharp cheddar cheese, Greek yogurt, salted butter, and whipping cream. Moving to the bakery, she took a crusty loaf of bread, a soft dinner roll, a toasted bagel, and a flaky French croissant. For dessert, she admired a decorated chocolate cake, a spiced apple pie, and a chewy cookie.",
-  },
-  {
-    id: "market-areas",
-    name: "Market Areas",
-    topicId: "market-areas",
-    description: "Learn supermarket sections, service counters, aisles, and weighing gear.",
-    wordIds: [
       "produce-section",
       "deli-counter",
       "bakery",
@@ -6334,18 +6150,19 @@ export const MARKET_GROUPS: Lesson[] = [
       "basket",
       "cash-register",
       "scale",
-    ],
-    story:
-      "Shoppers begin in the misted produce-section before ordering sliced cheeses at the deli-counter and fresh bread at the bakery. They grab ice cream from the frozen-foods freezers and head to the front checkout. Pushing a chrome shopping-cart or carrying a red basket down each wide aisle, they watch the cashier weigh fruit on the scale beside the cash-register.",
-  },
-  {
-    id: "shopping-actions",
-    name: "Shopping & Payment",
-    topicId: "shopping-actions",
-    description: "Learn about prices, scanning barcodes, discount coupons, and payment options.",
-    wordIds: [
       "price-tag",
       "receipt",
+    ],
+    story:
+      "In this section, you will learn about Cake, Pie, Cookie, Produce Section, Deli Counter, Bakery, Frozen Foods, Checkout, Aisle, Shopping Cart, Basket, Cash Register, Scale, Price Tag, Receipt. These are essential items to know.",
+  },
+  {
+    id: "market-5",
+    name: "Market Basics 5",
+    description:
+      "Learn about Barcode, Shopping Bag, Coupon, Shopping List, Credit Card, Cash, Change, Wallet...",
+    topicId: "market-5",
+    wordIds: [
       "barcode",
       "shopping-bag",
       "coupon",
@@ -6356,7 +6173,7 @@ export const MARKET_GROUPS: Lesson[] = [
       "wallet",
     ],
     story:
-      "Hassan checked the shelf price-tag against his handwritten shopping-list and clipped a discount coupon. The cashier scanned the cereal box barcode and packed goods into a reusable shopping-bag. Hassan opened his leather wallet to pay either by contactless credit-card or exact cash, receiving a printed paper receipt and coin change.",
+      "In this section, you will learn about Barcode, Shopping Bag, Coupon, Shopping List, Credit Card, Cash, Change, Wallet. These are essential items to know.",
   },
 ];
 
@@ -6367,7 +6184,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Apple",
     phonetic: "ˈæpəl",
     img: `${LOCAL_WORD_IMAGES}/market/apple.webp`,
-    topic: "common-fruits",
+    topic: "market-1",
     description:
       "A crisp round edible tree fruit with red, green, or yellow skin and a firm sweet core.",
   },
@@ -6376,7 +6193,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Banana",
     phonetic: "bəˈnænə",
     img: `${LOCAL_WORD_IMAGES}/market/banana.webp`,
-    topic: "common-fruits",
+    topic: "market-1",
     description: "A long curved tropical yellow fruit with soft, creamy, sweet pulp.",
   },
   {
@@ -6384,7 +6201,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Orange",
     phonetic: "ˈɔːrɪndʒ",
     img: `${LOCAL_WORD_IMAGES}/market/orange.webp`,
-    topic: "common-fruits",
+    topic: "market-1",
     description: "A round citrus fruit with a textured peel and sweet, juicy, segmented pulp.",
   },
   {
@@ -6392,7 +6209,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Grape",
     phonetic: "ɡreɪp",
     img: `${LOCAL_WORD_IMAGES}/market/grape.webp`,
-    topic: "common-fruits",
+    topic: "market-1",
     description: "A small sweet or tart juicy berry growing in clusters on climbing vines.",
   },
   {
@@ -6400,7 +6217,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Strawberry",
     phonetic: "ˈstrɔːbɛri",
     img: `${LOCAL_WORD_IMAGES}/market/strawberry.webp`,
-    topic: "common-fruits",
+    topic: "market-1",
     description: "A sweet, fragrant scarlet berry with tiny external seeds and a leafy green cap.",
   },
   {
@@ -6408,7 +6225,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Watermelon",
     phonetic: "ˈwɔːtərˌmɛlən",
     img: `${LOCAL_WORD_IMAGES}/market/watermelon.webp`,
-    topic: "common-fruits",
+    topic: "market-1",
     description: "A giant green striped fruit with refreshing sweet pink pulp and dark seeds.",
   },
   {
@@ -6416,7 +6233,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Mango",
     phonetic: "ˈmæŋɡoʊ",
     img: `${LOCAL_WORD_IMAGES}/market/mango.webp`,
-    topic: "common-fruits",
+    topic: "market-1",
     description: "A tropical stone fruit with smooth skin and juicy, aromatic golden-orange flesh.",
   },
   {
@@ -6424,7 +6241,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Pear",
     phonetic: "pɛər",
     img: `${LOCAL_WORD_IMAGES}/market/pear.webp`,
-    topic: "common-fruits",
+    topic: "market-1",
     description: "A sweet pomaceous fruit with a rounded base tapering upward toward the stem.",
   },
   {
@@ -6432,7 +6249,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Peach",
     phonetic: "piːtʃ",
     img: `${LOCAL_WORD_IMAGES}/market/peach.webp`,
-    topic: "common-fruits",
+    topic: "market-1",
     description: "A velvety, fuzzy-skinned summer stone fruit with sweet, aromatic flesh.",
   },
   {
@@ -6440,7 +6257,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Pineapple",
     phonetic: "ˈpaɪnˌæpəl",
     img: `${LOCAL_WORD_IMAGES}/market/pineapple.webp`,
-    topic: "common-fruits",
+    topic: "market-1",
     description: "A large tropical fruit with a spiky green crown and sweet, fibrous golden pulp.",
   },
   {
@@ -6448,7 +6265,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Lemon",
     phonetic: "ˈlɛmən",
     img: `${LOCAL_WORD_IMAGES}/market/lemon.webp`,
-    topic: "common-fruits",
+    topic: "market-1",
     description: "An oval yellow citrus fruit with intensely sour, acidic juice and fragrant zest.",
   },
   {
@@ -6456,7 +6273,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Lime",
     phonetic: "laɪm",
     img: `${LOCAL_WORD_IMAGES}/market/lime.webp`,
-    topic: "common-fruits",
+    topic: "market-1",
     description: "A small round green citrus fruit known for its sharp, tangy, refreshing juice.",
   },
 
@@ -6466,7 +6283,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Carrot",
     phonetic: "ˈkærət",
     img: `${LOCAL_WORD_IMAGES}/market/carrot.webp`,
-    topic: "common-vegetables",
+    topic: "market-1",
     description: "A tapering, crunchy orange taproot vegetable rich in beta-carotene.",
   },
   {
@@ -6474,7 +6291,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Broccoli",
     phonetic: "ˈbrɑːkəli",
     img: `${LOCAL_WORD_IMAGES}/market/broccoli.webp`,
-    topic: "common-vegetables",
+    topic: "market-1",
     description:
       "A green vegetable composed of dense clusters of edible flower buds atop thick stalks.",
   },
@@ -6483,7 +6300,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Onion",
     phonetic: "ˈʌnjən",
     img: `${LOCAL_WORD_IMAGES}/market/onion.webp`,
-    topic: "common-vegetables",
+    topic: "market-1",
     description:
       "A pungent layered bulb vegetable that forms the aromatic foundation of savory cooking.",
   },
@@ -6492,7 +6309,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Pepper",
     phonetic: "ˈpɛpər",
     img: `${LOCAL_WORD_IMAGES}/market/pepper.webp`,
-    topic: "common-vegetables",
+    topic: "market-2",
     description: "A glossy hollow vegetable ranging in flavor from sweet and mild to fiery hot.",
   },
   {
@@ -6500,7 +6317,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Tomato",
     phonetic: "təˈmeɪtoʊ",
     img: `${LOCAL_WORD_IMAGES}/market/tomato.webp`,
-    topic: "common-vegetables",
+    topic: "market-2",
     description:
       "A juicy, glossy red fruit culinarily treated as a savory vegetable for sauces and salads.",
   },
@@ -6509,7 +6326,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Cucumber",
     phonetic: "ˈkjuːkʌmbər",
     img: `${LOCAL_WORD_IMAGES}/market/cucumber.webp`,
-    topic: "common-vegetables",
+    topic: "market-2",
     description:
       "A cylindrical green vegetable with crisp, watery flesh and a cool, refreshing flavor.",
   },
@@ -6518,7 +6335,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Lettuce",
     phonetic: "ˈlɛtɪs",
     img: `${LOCAL_WORD_IMAGES}/market/lettuce.webp`,
-    topic: "common-vegetables",
+    topic: "market-2",
     description: "A leafy green garden vegetable cultivated for fresh salads and sandwich wraps.",
   },
   {
@@ -6526,7 +6343,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Potato",
     phonetic: "pəˈteɪtoʊ",
     img: `${LOCAL_WORD_IMAGES}/market/potato.webp`,
-    topic: "common-vegetables",
+    topic: "market-2",
     description:
       "A starchy subterranean tuber widely boiled, roasted, or mashed as a dietary staple.",
   },
@@ -6535,7 +6352,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Mushroom",
     phonetic: "ˈmʌʃruːm",
     img: `${LOCAL_WORD_IMAGES}/market/mushroom.webp`,
-    topic: "common-vegetables",
+    topic: "market-2",
     description:
       "The fleshy, spore-bearing fruiting body of a fungus prized for savory umami flavor.",
   },
@@ -6544,7 +6361,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Spinach",
     phonetic: "ˈspɪnɪtʃ",
     img: `${LOCAL_WORD_IMAGES}/market/spinach.webp`,
-    topic: "common-vegetables",
+    topic: "market-2",
     description: "A dark leafy green vegetable rich in iron and nutrients, enjoyed raw or wilted.",
   },
   {
@@ -6552,7 +6369,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Garlic",
     phonetic: "ˈɡɑːrlɪk",
     img: `${LOCAL_WORD_IMAGES}/market/garlic.webp`,
-    topic: "common-vegetables",
+    topic: "market-2",
     description:
       "A strongly scented bulb consisting of pungent cloves used to season savory dishes.",
   },
@@ -6561,7 +6378,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Corn",
     phonetic: "kɔːrn",
     img: `${LOCAL_WORD_IMAGES}/market/corn.webp`,
-    topic: "common-vegetables",
+    topic: "market-2",
     description:
       "A tall cereal plant producing large ears lined with rows of sweet golden kernels.",
   },
@@ -6572,7 +6389,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Chicken",
     phonetic: "ˈtʃɪkɪn",
     img: `${LOCAL_WORD_IMAGES}/market/chicken.webp`,
-    topic: "meat-seafood",
+    topic: "market-2",
     description:
       "Lean poultry meat sourced from domestic fowl, widely roasted, stewed, or grilled.",
   },
@@ -6581,7 +6398,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Beef",
     phonetic: "biːf",
     img: `${LOCAL_WORD_IMAGES}/market/beef.webp`,
-    topic: "meat-seafood",
+    topic: "market-2",
     description:
       "Savory red culinary meat sourced from adult cattle, enjoyed as steaks, roasts, or patties.",
   },
@@ -6590,7 +6407,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Pork",
     phonetic: "pɔːrk",
     img: `${LOCAL_WORD_IMAGES}/market/pork.webp`,
-    topic: "meat-seafood",
+    topic: "market-2",
     description: "Culinary meat derived from domestic pigs, cured into ham or cut into chops.",
   },
   {
@@ -6598,7 +6415,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Fish",
     phonetic: "fɪʃ",
     img: `${LOCAL_WORD_IMAGES}/market/fish.webp`,
-    topic: "meat-seafood",
+    topic: "market-2",
     description: "Fresh aquatic seafood with delicate, flaky, protein-rich flesh.",
   },
   {
@@ -6606,7 +6423,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Shrimp",
     phonetic: "ʃrɪmp",
     img: `${LOCAL_WORD_IMAGES}/market/shrimp.webp`,
-    topic: "meat-seafood",
+    topic: "market-2",
     description: "Small decapod crustaceans with tender curved tails that turn pink when cooked.",
   },
   {
@@ -6614,7 +6431,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Sausage",
     phonetic: "ˈsɔːsɪdʒ",
     img: `${LOCAL_WORD_IMAGES}/market/sausage.webp`,
-    topic: "meat-seafood",
+    topic: "market-2",
     description:
       "Ground seasoned culinary meat encased in cylindrical skins and smoked or grilled.",
   },
@@ -6623,7 +6440,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Ham",
     phonetic: "hæm",
     img: `${LOCAL_WORD_IMAGES}/market/ham.webp`,
-    topic: "meat-seafood",
+    topic: "market-3",
     description:
       "Cured and smoked meat taken from the hind leg of livestock, sliced for sandwiches.",
   },
@@ -6632,7 +6449,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Bacon",
     phonetic: "ˈbeɪkən",
     img: `${LOCAL_WORD_IMAGES}/market/bacon.webp`,
-    topic: "meat-seafood",
+    topic: "market-3",
     description:
       "Cured and smoked strips of savory pork belly that sizzle to a crunchy golden finish.",
   },
@@ -6641,7 +6458,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Turkey",
     phonetic: "ˈtɜːrki",
     img: `${LOCAL_WORD_IMAGES}/market/turkey.webp`,
-    topic: "meat-seafood",
+    topic: "market-3",
     description: "Large poultry bird roasted whole with stuffing for festive holiday dinners.",
   },
   {
@@ -6649,7 +6466,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Salmon",
     phonetic: "ˈsæmən",
     img: `${LOCAL_WORD_IMAGES}/market/salmon.webp`,
-    topic: "meat-seafood",
+    topic: "market-3",
     description:
       "A prized ocean-migrating fish with rich, pink-orange oily flesh packed with healthy fats.",
   },
@@ -6658,7 +6475,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Tuna",
     phonetic: "ˈtuːnə",
     img: `${LOCAL_WORD_IMAGES}/market/tuna.webp`,
-    topic: "meat-seafood",
+    topic: "market-3",
     description:
       "A large, fast-swimming predatory marine fish with firm, dark red savory steak meat.",
   },
@@ -6667,7 +6484,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Lamb",
     phonetic: "læm",
     img: `${LOCAL_WORD_IMAGES}/market/lamb.webp`,
-    topic: "meat-seafood",
+    topic: "market-3",
     description: "Tender culinary meat derived from young sheep, seasoned with herbs and garlic.",
   },
 
@@ -6677,7 +6494,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Milk",
     phonetic: "mɪlk",
     img: `${LOCAL_WORD_IMAGES}/market/milk.webp`,
-    topic: "dairy-bakery",
+    topic: "market-3",
     description:
       "A nutrient-rich white liquid produced by mammals, consumed as a beverage and cooking base.",
   },
@@ -6686,7 +6503,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Cheese",
     phonetic: "tʃiːz",
     img: `${LOCAL_WORD_IMAGES}/market/cheese.webp`,
-    topic: "dairy-bakery",
+    topic: "market-3",
     description:
       "A solid dairy food made from curdled milk, aged into diverse textures and flavors.",
   },
@@ -6695,7 +6512,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Yogurt",
     phonetic: "ˈjoʊɡərt",
     img: `${LOCAL_WORD_IMAGES}/market/yogurt.webp`,
-    topic: "dairy-bakery",
+    topic: "market-3",
     description:
       "A thick, creamy fermented dairy product cultured with beneficial probiotic bacteria.",
   },
@@ -6704,7 +6521,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Butter",
     phonetic: "ˈbʌtər",
     img: `${LOCAL_WORD_IMAGES}/market/butter.webp`,
-    topic: "dairy-bakery",
+    topic: "market-3",
     description:
       "A pale yellow fat produced by churning fresh cream, spread on toast or used in baking.",
   },
@@ -6713,7 +6530,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Cream",
     phonetic: "kriːm",
     img: `${LOCAL_WORD_IMAGES}/market/cream.webp`,
-    topic: "dairy-bakery",
+    topic: "market-3",
     description: "The rich, high-fat dairy layer skimmed from whole milk before homogenization.",
   },
   {
@@ -6721,7 +6538,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Bread",
     phonetic: "brɛd",
     img: `${LOCAL_WORD_IMAGES}/market/bread.webp`,
-    topic: "dairy-bakery",
+    topic: "market-3",
     description: "A staple food prepared from a baked dough of flour, water, and leavening yeast.",
   },
   {
@@ -6729,7 +6546,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Roll",
     phonetic: "roʊl",
     img: `${LOCAL_WORD_IMAGES}/market/roll.webp`,
-    topic: "dairy-bakery",
+    topic: "market-3",
     description:
       "A small, individual baked portion of yeast dough with a soft crumb and golden crust.",
   },
@@ -6738,7 +6555,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Bagel",
     phonetic: "ˈbeɪɡəl",
     img: `${LOCAL_WORD_IMAGES}/market/bagel.webp`,
-    topic: "dairy-bakery",
+    topic: "market-3",
     description:
       "A ring-shaped yeast bread roll boiled before baking to develop a dense, chewy crust.",
   },
@@ -6747,7 +6564,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Croissant",
     phonetic: "kwɑːˈsɑːnt",
     img: `${LOCAL_WORD_IMAGES}/market/croissant.webp`,
-    topic: "dairy-bakery",
+    topic: "market-3",
     description:
       "A crescent-shaped French pastry made of laminated yeast dough rich in butter layers.",
   },
@@ -6756,7 +6573,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Cake",
     phonetic: "keɪk",
     img: `${LOCAL_WORD_IMAGES}/market/cake.webp`,
-    topic: "dairy-bakery",
+    topic: "market-4",
     description:
       "A sweet baked dessert made from flour, sugar, and eggs, decorated with rich frosting.",
   },
@@ -6765,7 +6582,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Pie",
     phonetic: "paɪ",
     img: `${LOCAL_WORD_IMAGES}/market/pie.webp`,
-    topic: "dairy-bakery",
+    topic: "market-4",
     description:
       "A baked dish with a flaky pastry crust encasing sweet fruit fillings or savory stews.",
   },
@@ -6774,7 +6591,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Cookie",
     phonetic: "ˈkʊki",
     img: `${LOCAL_WORD_IMAGES}/market/cookie.webp`,
-    topic: "dairy-bakery",
+    topic: "market-4",
     description: "A small, flat, sweet baked biscuit containing chocolate chips, nuts, or spices.",
   },
 
@@ -6784,7 +6601,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Produce Section",
     phonetic: "ˈprɑːduːs ˈsɛkʃən",
     img: `${LOCAL_WORD_IMAGES}/market/produce-section.webp`,
-    topic: "market-areas",
+    topic: "market-4",
     description:
       "A refrigerated store area showcasing chilled misted displays of fresh fruits and greens.",
   },
@@ -6793,7 +6610,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Deli Counter",
     phonetic: "ˈdɛli ˈkaʊntər",
     img: `${LOCAL_WORD_IMAGES}/market/deli-counter.webp`,
-    topic: "market-areas",
+    topic: "market-4",
     description:
       "A service station where attendants slice cold meats and specialty cheeses on request.",
   },
@@ -6802,7 +6619,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Bakery",
     phonetic: "ˈbeɪkəri",
     img: `${LOCAL_WORD_IMAGES}/market/bakery.webp`,
-    topic: "market-areas",
+    topic: "market-4",
     description:
       "An in-store department where ovens produce fresh loaves, rolls, and sweet pastries daily.",
   },
@@ -6811,7 +6628,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Frozen Foods",
     phonetic: "ˈfroʊzən fuːdz",
     img: `${LOCAL_WORD_IMAGES}/market/frozen-foods.webp`,
-    topic: "market-areas",
+    topic: "market-4",
     description:
       "A row of upright sub-zero glass compartments holding ice cream, pizzas, and chilled vegetables.",
   },
@@ -6820,7 +6637,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Checkout",
     phonetic: "ˈtʃɛkaʊt",
     img: `${LOCAL_WORD_IMAGES}/market/checkout.webp`,
-    topic: "market-areas",
+    topic: "market-4",
     description:
       "The front cashier area where customers place items onto conveyors to total their bill.",
   },
@@ -6829,7 +6646,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Aisle",
     phonetic: "aɪl",
     img: `${LOCAL_WORD_IMAGES}/market/aisle.webp`,
-    topic: "market-areas",
+    topic: "market-4",
     description:
       "A straight walkway between tall display shelves stocked with categorized groceries.",
   },
@@ -6838,7 +6655,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Shopping Cart",
     phonetic: "ˈʃɑːpɪŋ kɑːrt",
     img: `${LOCAL_WORD_IMAGES}/market/shopping-cart.webp`,
-    topic: "market-areas",
+    topic: "market-4",
     description: "A deep metal or plastic basket on four wheels pushed through store aisles.",
   },
   {
@@ -6846,7 +6663,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Basket",
     phonetic: "ˈbæskɪt",
     img: `${LOCAL_WORD_IMAGES}/market/basket.webp`,
-    topic: "market-areas",
+    topic: "market-4",
     description: "A lightweight handheld container with handles used to carry a few grocery items.",
   },
   {
@@ -6854,7 +6671,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Cash Register",
     phonetic: "ˈkæʃ ˌrɛdʒɪstər",
     img: `${LOCAL_WORD_IMAGES}/market/cash-register.webp`,
-    topic: "market-areas",
+    topic: "market-4",
     description:
       "An electronic transaction terminal with a till that records sales and stores currency.",
   },
@@ -6863,7 +6680,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Scale",
     phonetic: "skeɪl",
     img: `${LOCAL_WORD_IMAGES}/market/scale.webp`,
-    topic: "market-areas",
+    topic: "market-4",
     description:
       "A mechanical or digital weighing apparatus used to calculate prices of loose bulk produce.",
   },
@@ -6874,7 +6691,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Price Tag",
     phonetic: "ˈpraɪs tæɡ",
     img: `${LOCAL_WORD_IMAGES}/market/price-tag.webp`,
-    topic: "shopping-actions",
+    topic: "market-4",
     description:
       "A printed or digital shelf label showing the monetary cost of an individual item.",
   },
@@ -6883,7 +6700,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Receipt",
     phonetic: "rɪˈsiːt",
     img: `${LOCAL_WORD_IMAGES}/market/receipt.webp`,
-    topic: "shopping-actions",
+    topic: "market-4",
     description: "A printed paper slip given to the customer as official proof of purchase.",
   },
   {
@@ -6891,7 +6708,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Barcode",
     phonetic: "ˈbɑːrkoʊd",
     img: `${LOCAL_WORD_IMAGES}/market/barcode.webp`,
-    topic: "shopping-actions",
+    topic: "market-5",
     description:
       "A pattern of parallel black-and-white stripes scanned by lasers to identify items.",
   },
@@ -6900,7 +6717,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Shopping Bag",
     phonetic: "ˈʃɑːpɪŋ bæɡ",
     img: `${LOCAL_WORD_IMAGES}/market/shopping-bag.webp`,
-    topic: "shopping-actions",
+    topic: "market-5",
     description: "A sturdy reusable or paper sack used to transport groceries from store to home.",
   },
   {
@@ -6908,7 +6725,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Coupon",
     phonetic: "ˈkuːpɑːn",
     img: `${LOCAL_WORD_IMAGES}/market/coupon.webp`,
-    topic: "shopping-actions",
+    topic: "market-5",
     description:
       "A promotional paper or digital certificate providing a financial discount on select goods.",
   },
@@ -6917,7 +6734,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Shopping List",
     phonetic: "ˈʃɑːpɪŋ lɪst",
     img: `${LOCAL_WORD_IMAGES}/market/shopping-list.webp`,
-    topic: "shopping-actions",
+    topic: "market-5",
     description:
       "A handwritten or digital record of grocery items needed before visiting the store.",
   },
@@ -6926,7 +6743,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Credit Card",
     phonetic: "ˈkrɛdɪt kɑːrd",
     img: `${LOCAL_WORD_IMAGES}/market/credit-card.webp`,
-    topic: "shopping-actions",
+    topic: "market-5",
     description: "A plastic payment badge allowing holders to borrow funds for purchases.",
   },
   {
@@ -6934,7 +6751,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Cash",
     phonetic: "kæʃ",
     img: `${LOCAL_WORD_IMAGES}/market/cash.webp`,
-    topic: "shopping-actions",
+    topic: "market-5",
     description:
       "Physical currency consisting of paper banknotes and government-minted metal coins.",
   },
@@ -6943,7 +6760,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Change",
     phonetic: "tʃeɪndʒ",
     img: `${LOCAL_WORD_IMAGES}/market/change.webp`,
-    topic: "shopping-actions",
+    topic: "market-5",
     description: "The balance of money returned to a buyer when payment exceeds the purchase cost.",
   },
   {
@@ -6951,7 +6768,7 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
     label: "Wallet",
     phonetic: "ˈwɑːlɪt",
     img: `${LOCAL_WORD_IMAGES}/market/wallet.webp`,
-    topic: "shopping-actions",
+    topic: "market-5",
     description:
       "A small folding pocket accessory used to store paper bills, payment cards, and coins.",
   },
@@ -6963,55 +6780,39 @@ export const MARKET_VOCABULARY: VocabularyItem[] = [
 
 export const BAKERY_TOPICS: TopicCategory[] = [
   {
-    id: "breads",
-    name: "Breads",
-    description: "Artisan loaves, crusty baguettes, sourdoughs, and traditional flatbreads.",
-    icon: "layers",
-    itemsCount: 10,
+    id: "bakery-1",
+    name: "Bakery Part 1",
+    itemsCount: 15,
   },
   {
-    id: "pastries-sweet",
-    name: "Pastries & Sweet",
-    description: "Flaky croissants, fruit danishes, cinnamon rolls, eclairs, and macarons.",
-    icon: "sun",
-    itemsCount: 10,
+    id: "bakery-2",
+    name: "Bakery Part 2",
+    itemsCount: 15,
   },
   {
-    id: "cakes-pies",
-    name: "Cakes & Pies",
-    description: "Celebration cakes, cupcakes, rich cheesecakes, and fruit pies.",
-    icon: "star",
-    itemsCount: 10,
+    id: "bakery-3",
+    name: "Bakery Part 3",
+    itemsCount: 15,
   },
   {
-    id: "cookies-biscuits",
-    name: "Cookies & Biscuits",
-    description: "Crunchy cookies, gingerbread, buttery shortbread, wafers, and pretzels.",
-    icon: "coffee",
-    itemsCount: 10,
+    id: "bakery-4",
+    name: "Bakery Part 4",
+    itemsCount: 15,
   },
   {
-    id: "baking-ingredients",
-    name: "Baking Ingredients",
-    description: "Pantry staples including flour, yeast, cocoa, vanilla, spices, and honey.",
-    icon: "feather",
-    itemsCount: 12,
-  },
-  {
-    id: "bakery-equipment",
-    name: "Bakery Equipment",
-    description: "Baking tools, electric mixers, cooling racks, piping bags, and timers.",
-    icon: "tool",
-    itemsCount: 12,
+    id: "bakery-5",
+    name: "Bakery Part 5",
+    itemsCount: 4,
   },
 ];
 
 export const BAKERY_GROUPS: Lesson[] = [
   {
-    id: "breads",
-    name: "Breads",
-    topicId: "breads",
-    description: "Learn about white bread, baguettes, sourdough, pita, and artisan loaves.",
+    id: "bakery-1",
+    name: "Bakery Basics 1",
+    description:
+      "Learn about White Bread, Whole Wheat Bread, Baguette, Sourdough, Rye Bread, Pita, Focaccia, Ciabatta, Brioche, F...",
+    topicId: "bakery-1",
     wordIds: [
       "white-bread",
       "whole-wheat-bread",
@@ -7023,36 +6824,27 @@ export const BAKERY_GROUPS: Lesson[] = [
       "ciabatta",
       "brioche",
       "flatbread",
-    ],
-    story:
-      "The master baker arranged loaves of soft white-bread and whole-wheat-bread alongside a crusty French baguette and tangy sourdough. The shelf also featured dark rye-bread, pocketed pita, herb-dimpled focaccia, porous ciabatta, buttery brioche, and warm grilled flatbread.",
-  },
-  {
-    id: "pastries-sweet",
-    name: "Pastries & Sweet",
-    topicId: "pastries-sweet",
-    description: "Learn about croissants, muffins, donuts, danishes, and French pastries.",
-    wordIds: [
       "croissant",
       "muffin",
       "donut",
       "danish",
       "cinnamon-roll",
+    ],
+    story:
+      "In this section, you will learn about White Bread, Whole Wheat Bread, Baguette, Sourdough, Rye Bread, Pita, Focaccia, Ciabatta, Brioche, Flatbread, Croissant, Muffin, Donut, Danish, Cinnamon Roll. These are essential items to know.",
+  },
+  {
+    id: "bakery-2",
+    name: "Bakery Basics 2",
+    description:
+      "Learn about Éclair, Scone, Strudel, Macaron, Profiterole, Birthday Cake, Wedding Cake, Cupcake, Cheesecake, Choc...",
+    topicId: "bakery-2",
+    wordIds: [
       "eclair",
       "scone",
       "strudel",
       "macaron",
       "profiterole",
-    ],
-    story:
-      "Morning customers lined up for a warm flaky croissant, a blueberry muffin, a glazed donut, and a fruit danish. Next on the tray were a spiral cinnamon-roll, a chocolate eclair, a British scone, an Austrian strudel, a delicate pastel macaron, and a cream-filled profiterole.",
-  },
-  {
-    id: "cakes-pies",
-    name: "Cakes & Pies",
-    topicId: "cakes-pies",
-    description: "Learn about celebration cakes, cupcakes, fruit pies, and tarts.",
-    wordIds: [
       "birthday-cake",
       "wedding-cake",
       "cupcake",
@@ -7065,13 +6857,14 @@ export const BAKERY_GROUPS: Lesson[] = [
       "brownie",
     ],
     story:
-      "In the chilled showcase stood a decorated birthday-cake and a magnificent tiered wedding-cake. Beside them were a frosted cupcake, a slice of creamy cheesecake, a rich dark chocolate-cake, and a spiced carrot-cake. The baker added a warm apple-pie, a ruby cherry-pie, a zesty lemon-tart, and a fudgy brownie.",
+      "In this section, you will learn about Éclair, Scone, Strudel, Macaron, Profiterole, Birthday Cake, Wedding Cake, Cupcake, Cheesecake, Chocolate Cake, Carrot Cake, Apple Pie, Cherry Pie, Lemon Tart, Brownie. These are essential items to know.",
   },
   {
-    id: "cookies-biscuits",
-    name: "Cookies & Biscuits",
-    topicId: "cookies-biscuits",
-    description: "Learn about cookies, gingerbread, shortbread, pretzels, and crackers.",
+    id: "bakery-3",
+    name: "Bakery Basics 3",
+    description:
+      "Learn about Chocolate Chip Cookie, Sugar Cookie, Gingerbread, Shortbread, Oatmeal Cookie, Wafer, Biscuit, Pretze...",
+    topicId: "bakery-3",
     wordIds: [
       "chocolate-chip-cookie",
       "sugar-cookie",
@@ -7083,21 +6876,22 @@ export const BAKERY_GROUPS: Lesson[] = [
       "pretzel",
       "cracker",
       "granola-bar",
-    ],
-    story:
-      "Children picked out a warm chocolate-chip-cookie, a decorated sugar-cookie, and a spiced gingerbread man. The glass jars held buttery Scottish shortbread, a chewy oatmeal-cookie, and a crisp wafer. For savory snacking, the baker offered a buttermilk biscuit, a salted pretzel, a crisp cracker, and an energy granola-bar.",
-  },
-  {
-    id: "baking-ingredients",
-    name: "Baking Ingredients",
-    topicId: "baking-ingredients",
-    description: "Learn about flour, yeast, chocolate, vanilla, spices, and sweetener staples.",
-    wordIds: [
       "flour",
       "sugar",
       "butter",
       "eggs",
       "yeast",
+    ],
+    story:
+      "In this section, you will learn about Chocolate Chip Cookie, Sugar Cookie, Gingerbread, Shortbread, Oatmeal Cookie, Wafer, Biscuit, Pretzel, Cracker, Granola Bar, Flour, Sugar, Butter, Eggs, Yeast. These are essential items to know.",
+  },
+  {
+    id: "bakery-4",
+    name: "Bakery Basics 4",
+    description:
+      "Learn about Baking Powder, Chocolate, Vanilla, Cream, Cocoa Powder, Cinnamon, Honey, Oven, Mixer, Rolling Pin, B...",
+    topicId: "bakery-4",
+    wordIds: [
       "baking-powder",
       "chocolate",
       "vanilla",
@@ -7105,16 +6899,6 @@ export const BAKERY_GROUPS: Lesson[] = [
       "cocoa-powder",
       "cinnamon",
       "honey",
-    ],
-    story:
-      "On the prep table, the pastry chef gathered white flour, sweet sugar, creamy butter, and farm eggs. She measured active yeast, rising baking-powder, dark melted chocolate, fragrant vanilla, and heavy cream. To complete the recipe, she dusted dark cocoa-powder, added ground cinnamon, and drizzled golden honey.",
-  },
-  {
-    id: "bakery-equipment",
-    name: "Bakery Equipment",
-    topicId: "bakery-equipment",
-    description: "Learn about ovens, electric mixers, trays, piping bags, and baking utensils.",
-    wordIds: [
       "oven",
       "mixer",
       "rolling-pin",
@@ -7123,13 +6907,18 @@ export const BAKERY_GROUPS: Lesson[] = [
       "spatula",
       "piping-bag",
       "muffin-tin",
-      "cooling-rack",
-      "bread-basket",
-      "apron",
-      "timer",
     ],
     story:
-      "The baker preheated the brick oven, turned on the electric mixer, and flattened dough with a rolling-pin. She arranged rolls on a baking-tray, using a wire whisk, a silicone spatula, and an icing piping-bag. She filled a twelve-cup muffin-tin, set warm cookies on a cooling-rack, placed loaves in a bread-basket, tied her clean apron, and set the digital timer.",
+      "In this section, you will learn about Baking Powder, Chocolate, Vanilla, Cream, Cocoa Powder, Cinnamon, Honey, Oven, Mixer, Rolling Pin, Baking Tray, Whisk, Spatula, Piping Bag, Muffin Tin. These are essential items to know.",
+  },
+  {
+    id: "bakery-5",
+    name: "Bakery Basics 5",
+    description: "Learn about Cooling Rack, Bread Basket, Apron, Timer...",
+    topicId: "bakery-5",
+    wordIds: ["cooling-rack", "bread-basket", "apron", "timer"],
+    story:
+      "In this section, you will learn about Cooling Rack, Bread Basket, Apron, Timer. These are essential items to know.",
   },
 ];
 
@@ -7140,7 +6929,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "White Bread",
     phonetic: "waɪt brɛd",
     img: `${LOCAL_WORD_IMAGES}/bakery/white-bread.webp`,
-    topic: "breads",
+    topic: "bakery-1",
     description: "A soft loaf baked from refined grain flour with a tender pale crumb.",
   },
   {
@@ -7148,7 +6937,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Whole Wheat Bread",
     phonetic: "hoʊl wiːt brɛd",
     img: `${LOCAL_WORD_IMAGES}/bakery/whole-wheat-bread.webp`,
-    topic: "breads",
+    topic: "bakery-1",
     description: "A hearty brown loaf made from unrefined flour rich in natural grain fiber.",
   },
   {
@@ -7156,7 +6945,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Baguette",
     phonetic: "bæˈɡɛt",
     img: `${LOCAL_WORD_IMAGES}/bakery/baguette.webp`,
-    topic: "breads",
+    topic: "bakery-1",
     description: "A long, slender French loaf with a crisp golden crust and chewy airy holes.",
   },
   {
@@ -7164,7 +6953,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Sourdough",
     phonetic: "ˈsaʊərdoʊ",
     img: `${LOCAL_WORD_IMAGES}/bakery/sourdough.webp`,
-    topic: "breads",
+    topic: "bakery-1",
     description:
       "A crusty artisan loaf fermented with wild lactobacillus and live natural cultures.",
   },
@@ -7173,7 +6962,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Rye Bread",
     phonetic: "raɪ brɛd",
     img: `${LOCAL_WORD_IMAGES}/bakery/rye-bread.webp`,
-    topic: "breads",
+    topic: "bakery-1",
     description: "A dense, dark European loaf flavored with aromatic caraway seeds.",
   },
   {
@@ -7181,7 +6970,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Pita",
     phonetic: "ˈpiːtə",
     img: `${LOCAL_WORD_IMAGES}/bakery/pita.webp`,
-    topic: "breads",
+    topic: "bakery-1",
     description: "A round Mediterranean flatbread that puffs up to form an inner sandwich pocket.",
   },
   {
@@ -7189,7 +6978,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Focaccia",
     phonetic: "foʊˈkɑːtʃə",
     img: `${LOCAL_WORD_IMAGES}/bakery/focaccia.webp`,
-    topic: "breads",
+    topic: "bakery-1",
     description: "An Italian olive oil flatbread dimpled with rosemary sprigs and coarse sea salt.",
   },
   {
@@ -7197,7 +6986,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Ciabatta",
     phonetic: "tʃəˈbɑːtə",
     img: `${LOCAL_WORD_IMAGES}/bakery/ciabatta.webp`,
-    topic: "breads",
+    topic: "bakery-1",
     description:
       "An elongated Italian slipper-shaped loaf with a flour-dusted crust and porous crumb.",
   },
@@ -7206,7 +6995,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Brioche",
     phonetic: "briːˈoʊʃ",
     img: `${LOCAL_WORD_IMAGES}/bakery/brioche.webp`,
-    topic: "breads",
+    topic: "bakery-1",
     description:
       "An enriched French yeast pastry with high butter and egg content for tender sweetness.",
   },
@@ -7215,7 +7004,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Flatbread",
     phonetic: "ˈflætbrɛd",
     img: `${LOCAL_WORD_IMAGES}/bakery/flatbread.webp`,
-    topic: "breads",
+    topic: "bakery-1",
     description: "A simple unleavened dough rolled thin and seared on a blistering hot griddle.",
   },
 
@@ -7225,7 +7014,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Croissant",
     phonetic: "kwɑːˈsɑːnt",
     img: `${LOCAL_WORD_IMAGES}/bakery/croissant.webp`,
-    topic: "pastries-sweet",
+    topic: "bakery-1",
     description: "A crescent-shaped flaky French pastry layered with chilled butter laminations.",
   },
   {
@@ -7233,7 +7022,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Muffin",
     phonetic: "ˈmʌfɪn",
     img: `${LOCAL_WORD_IMAGES}/bakery/muffin.webp`,
-    topic: "pastries-sweet",
+    topic: "bakery-1",
     description: "An individual domed quick-bread cake baked in a cup liner with fruit or nuts.",
   },
   {
@@ -7241,7 +7030,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Donut",
     phonetic: "ˈdoʊnʌt",
     img: `${LOCAL_WORD_IMAGES}/bakery/donut.webp`,
-    topic: "pastries-sweet",
+    topic: "bakery-1",
     description: "A ring-shaped deep-fried sweet dough confection glazed in vanilla or chocolate.",
   },
   {
@@ -7249,7 +7038,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Danish",
     phonetic: "ˈdeɪnɪʃ",
     img: `${LOCAL_WORD_IMAGES}/bakery/danish.webp`,
-    topic: "pastries-sweet",
+    topic: "bakery-1",
     description:
       "A multilayered laminated pastry centered with sweetened cream cheese or fruit preserves.",
   },
@@ -7258,7 +7047,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Cinnamon Roll",
     phonetic: "ˈsɪnəmən roʊl",
     img: `${LOCAL_WORD_IMAGES}/bakery/cinnamon-roll.webp`,
-    topic: "pastries-sweet",
+    topic: "bakery-1",
     description:
       "A spiral yeast bun filled with brown sugar and aromatic spice, topped with white icing.",
   },
@@ -7267,7 +7056,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Éclair",
     phonetic: "eɪˈklɛər",
     img: `${LOCAL_WORD_IMAGES}/bakery/eclair.webp`,
-    topic: "pastries-sweet",
+    topic: "bakery-2",
     description:
       "An oblong hollow choux pastry filled with vanilla custard and coated in dark chocolate.",
   },
@@ -7276,7 +7065,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Scone",
     phonetic: "skoʊn",
     img: `${LOCAL_WORD_IMAGES}/bakery/scone.webp`,
-    topic: "pastries-sweet",
+    topic: "bakery-2",
     description:
       "A crumbly Scottish quick-bread traditionally split and served with clotted cream and jam.",
   },
@@ -7285,7 +7074,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Strudel",
     phonetic: "ˈstruːdəl",
     img: `${LOCAL_WORD_IMAGES}/bakery/strudel.webp`,
-    topic: "pastries-sweet",
+    topic: "bakery-2",
     description:
       "A Viennese layered pastry roll encasing spiced apples, raisins, and sweet breadcrumbs.",
   },
@@ -7294,7 +7083,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Macaron",
     phonetic: "ˌmækəˈrɒn",
     img: `${LOCAL_WORD_IMAGES}/bakery/macaron.webp`,
-    topic: "pastries-sweet",
+    topic: "bakery-2",
     description:
       "A delicate French confection composed of two round almond meringue discs with ganache filling.",
   },
@@ -7303,7 +7092,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Profiterole",
     phonetic: "prəˈfɪtəroʊl",
     img: `${LOCAL_WORD_IMAGES}/bakery/profiterole.webp`,
-    topic: "pastries-sweet",
+    topic: "bakery-2",
     description:
       "A small spherical choux puff filled with vanilla ice cream and bathed in warm chocolate sauce.",
   },
@@ -7314,7 +7103,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Birthday Cake",
     phonetic: "ˈbɜːrθdeɪ keɪk",
     img: `${LOCAL_WORD_IMAGES}/bakery/birthday-cake.webp`,
-    topic: "cakes-pies",
+    topic: "bakery-2",
     description:
       "A frosted celebratory confection decorated with candles for personal milestone festivities.",
   },
@@ -7323,7 +7112,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Wedding Cake",
     phonetic: "ˈwɛdɪŋ keɪk",
     img: `${LOCAL_WORD_IMAGES}/bakery/wedding-cake.webp`,
-    topic: "cakes-pies",
+    topic: "bakery-2",
     description:
       "A grand tiered white centerpiece decorated with intricate sugar flowers for marriage receptions.",
   },
@@ -7332,7 +7121,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Cupcake",
     phonetic: "ˈkʌpkeɪk",
     img: `${LOCAL_WORD_IMAGES}/bakery/cupcake.webp`,
-    topic: "cakes-pies",
+    topic: "bakery-2",
     description:
       "A small single-portion sponge dessert baked in a paper cup and swirled with buttercream.",
   },
@@ -7341,7 +7130,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Cheesecake",
     phonetic: "ˈtʃiːzkeɪk",
     img: `${LOCAL_WORD_IMAGES}/bakery/cheesecake.webp`,
-    topic: "cakes-pies",
+    topic: "bakery-2",
     description:
       "A rich baked dessert featuring a smooth cream cheese filling over a crushed graham cracker crust.",
   },
@@ -7350,7 +7139,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Chocolate Cake",
     phonetic: "ˈtʃɒklɪt keɪk",
     img: `${LOCAL_WORD_IMAGES}/bakery/chocolate-cake.webp`,
-    topic: "cakes-pies",
+    topic: "bakery-2",
     description:
       "A moist layered dark sponge dessert enriched with cocoa and fudgy ganache frosting.",
   },
@@ -7359,7 +7148,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Carrot Cake",
     phonetic: "ˈkærət keɪk",
     img: `${LOCAL_WORD_IMAGES}/bakery/carrot-cake.webp`,
-    topic: "cakes-pies",
+    topic: "bakery-2",
     description:
       "A spiced sponge dessert studded with grated orange root vegetables, walnuts, and cream cheese icing.",
   },
@@ -7368,7 +7157,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Apple Pie",
     phonetic: "ˈæpəl paɪ",
     img: `${LOCAL_WORD_IMAGES}/bakery/apple-pie.webp`,
-    topic: "cakes-pies",
+    topic: "bakery-2",
     description:
       "A double-crust baked dessert filled with sliced spiced orchard fruit and cinnamon syrup.",
   },
@@ -7377,7 +7166,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Cherry Pie",
     phonetic: "ˈtʃɛri paɪ",
     img: `${LOCAL_WORD_IMAGES}/bakery/cherry-pie.webp`,
-    topic: "cakes-pies",
+    topic: "bakery-2",
     description:
       "A golden pastry shell overflowing with tart red pitted stone fruits in rich crimson jelly.",
   },
@@ -7386,7 +7175,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Lemon Tart",
     phonetic: "ˈlɛmən tɑːrt",
     img: `${LOCAL_WORD_IMAGES}/bakery/lemon-tart.webp`,
-    topic: "cakes-pies",
+    topic: "bakery-2",
     description:
       "A crisp shortcrust pastry disc filled with smooth tangy citrus curd and browned meringue peaks.",
   },
@@ -7395,7 +7184,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Brownie",
     phonetic: "ˈbraʊni",
     img: `${LOCAL_WORD_IMAGES}/bakery/brownie.webp`,
-    topic: "cakes-pies",
+    topic: "bakery-2",
     description:
       "A dense, fudgy square chocolate confection with a glossy, paper-thin cracked top.",
   },
@@ -7406,7 +7195,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Chocolate Chip Cookie",
     phonetic: "ˈtʃɒklɪt tʃɪp ˈkʊki",
     img: `${LOCAL_WORD_IMAGES}/bakery/chocolate-chip-cookie.webp`,
-    topic: "cookies-biscuits",
+    topic: "bakery-3",
     description: "A golden baked disc studded with molten morsels of dark cacao confection.",
   },
   {
@@ -7414,7 +7203,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Sugar Cookie",
     phonetic: "ˈʃʊɡər ˈkʊki",
     img: `${LOCAL_WORD_IMAGES}/bakery/sugar-cookie.webp`,
-    topic: "cookies-biscuits",
+    topic: "bakery-3",
     description: "A sweet, tender cutout butter biscuit dusted with colored sparkling crystals.",
   },
   {
@@ -7422,7 +7211,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Gingerbread",
     phonetic: "ˈdʒɪndʒərbred",
     img: `${LOCAL_WORD_IMAGES}/bakery/gingerbread.webp`,
-    topic: "cookies-biscuits",
+    topic: "bakery-3",
     description:
       "A holiday biscuit spiced with aromatic root spice and dark molasses, cut into festive shapes.",
   },
@@ -7431,7 +7220,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Shortbread",
     phonetic: "ˈʃɔːrtbrɛd",
     img: `${LOCAL_WORD_IMAGES}/bakery/shortbread.webp`,
-    topic: "cookies-biscuits",
+    topic: "bakery-3",
     description:
       "A traditional Scottish butter biscuit made of sugar, dairy fat, and flour with a melt-in-mouth crumb.",
   },
@@ -7440,7 +7229,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Oatmeal Cookie",
     phonetic: "ˈoʊtmiːl ˈkʊki",
     img: `${LOCAL_WORD_IMAGES}/bakery/oatmeal-cookie.webp`,
-    topic: "cookies-biscuits",
+    topic: "bakery-3",
     description:
       "A chewy spiced round biscuit packed with rolled whole grains and sweet dried raisins.",
   },
@@ -7449,7 +7238,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Wafer",
     phonetic: "ˈweɪfər",
     img: `${LOCAL_WORD_IMAGES}/bakery/wafer.webp`,
-    topic: "cookies-biscuits",
+    topic: "bakery-3",
     description: "An ultra-thin, crisp layered biscuit filled with creamy flavored layers.",
   },
   {
@@ -7457,7 +7246,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Biscuit",
     phonetic: "ˈbɪskɪt",
     img: `${LOCAL_WORD_IMAGES}/bakery/biscuit.webp`,
-    topic: "cookies-biscuits",
+    topic: "bakery-3",
     description: "A flaky golden quick-bread round served warm with butter or savory gravy.",
   },
   {
@@ -7465,7 +7254,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Pretzel",
     phonetic: "ˈprɛtsəl",
     img: `${LOCAL_WORD_IMAGES}/bakery/pretzel.webp`,
-    topic: "cookies-biscuits",
+    topic: "bakery-3",
     description:
       "A twisted knot of glazed dough sprinkled with coarse salt grains and baked to a dark brown sheen.",
   },
@@ -7474,7 +7263,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Cracker",
     phonetic: "ˈkrækər",
     img: `${LOCAL_WORD_IMAGES}/bakery/cracker.webp`,
-    topic: "cookies-biscuits",
+    topic: "bakery-3",
     description:
       "A thin, crisp savory baked wafer frequently paired with artisan cheeses and dips.",
   },
@@ -7483,7 +7272,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Granola Bar",
     phonetic: "ɡrəˈnoʊlə bɑːr",
     img: `${LOCAL_WORD_IMAGES}/bakery/granola-bar.webp`,
-    topic: "cookies-biscuits",
+    topic: "bakery-3",
     description:
       "A pressed portable oat snack composed of toasted rolled grains, nuts, seeds, and honey.",
   },
@@ -7494,7 +7283,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Flour",
     phonetic: "ˈflaʊər",
     img: `${LOCAL_WORD_IMAGES}/bakery/flour.webp`,
-    topic: "baking-ingredients",
+    topic: "bakery-3",
     description:
       "A fine powder milled from cereal grains that forms the structural foundation of dough.",
   },
@@ -7503,7 +7292,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Sugar",
     phonetic: "ˈʃʊɡər",
     img: `${LOCAL_WORD_IMAGES}/bakery/sugar.webp`,
-    topic: "baking-ingredients",
+    topic: "bakery-3",
     description:
       "A sweet crystalline substance extracted from cane or beet plants used to sweeten desserts.",
   },
@@ -7512,7 +7301,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Butter",
     phonetic: "ˈbʌtər",
     img: `${LOCAL_WORD_IMAGES}/bakery/butter.webp`,
-    topic: "baking-ingredients",
+    topic: "bakery-3",
     description:
       "A dairy fat churned from fresh cream that imparts flakiness and rich flavor to pastries.",
   },
@@ -7521,7 +7310,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Eggs",
     phonetic: "ɛɡz",
     img: `${LOCAL_WORD_IMAGES}/bakery/eggs.webp`,
-    topic: "baking-ingredients",
+    topic: "bakery-3",
     description:
       "Oval reproductive bodies laid by poultry that provide structural lift and moisture to batter.",
   },
@@ -7530,7 +7319,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Yeast",
     phonetic: "jiːst",
     img: `${LOCAL_WORD_IMAGES}/bakery/yeast.webp`,
-    topic: "baking-ingredients",
+    topic: "bakery-3",
     description:
       "A microscopic living fungus that ferments dough sugars into gas bubbles to leaven breads.",
   },
@@ -7539,7 +7328,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Baking Powder",
     phonetic: "ˈbeɪkɪŋ ˈpaʊdər",
     img: `${LOCAL_WORD_IMAGES}/bakery/baking-powder.webp`,
-    topic: "baking-ingredients",
+    topic: "bakery-4",
     description:
       "A dry chemical leavening compound that releases carbon dioxide when moistened and heated.",
   },
@@ -7548,7 +7337,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Chocolate",
     phonetic: "ˈtʃɒklɪt",
     img: `${LOCAL_WORD_IMAGES}/bakery/chocolate.webp`,
-    topic: "baking-ingredients",
+    topic: "bakery-4",
     description:
       "A solid confection prepared from roasted and ground cacao seeds sweetened with sugar.",
   },
@@ -7557,7 +7346,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Vanilla",
     phonetic: "vəˈnɪlə",
     img: `${LOCAL_WORD_IMAGES}/bakery/vanilla.webp`,
-    topic: "baking-ingredients",
+    topic: "bakery-4",
     description:
       "An aromatic flavoring extract prepared from the cured seed pods of a tropical orchid.",
   },
@@ -7566,7 +7355,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Cream",
     phonetic: "kriːm",
     img: `${LOCAL_WORD_IMAGES}/bakery/cream.webp`,
-    topic: "baking-ingredients",
+    topic: "bakery-4",
     description: "The rich, high-fat dairy layer skimmed from whole milk before homogenization.",
   },
   {
@@ -7574,7 +7363,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Cocoa Powder",
     phonetic: "ˈkoʊkoʊ ˈpaʊdər",
     img: `${LOCAL_WORD_IMAGES}/bakery/cocoa-powder.webp`,
-    topic: "baking-ingredients",
+    topic: "bakery-4",
     description: "An unsweetened fine brown dust obtained by pressing roasted cacao beans.",
   },
   {
@@ -7582,7 +7371,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Cinnamon",
     phonetic: "ˈsɪnəmən",
     img: `${LOCAL_WORD_IMAGES}/bakery/cinnamon.webp`,
-    topic: "baking-ingredients",
+    topic: "bakery-4",
     description:
       "An aromatic culinary spice harvested from the inner bark of specific tropical trees.",
   },
@@ -7591,7 +7380,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Honey",
     phonetic: "ˈhʌni",
     img: `${LOCAL_WORD_IMAGES}/bakery/honey.webp`,
-    topic: "baking-ingredients",
+    topic: "bakery-4",
     description:
       "A viscous golden sweet liquid produced by bees from the nectar of flowering plants.",
   },
@@ -7602,7 +7391,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Oven",
     phonetic: "ˈʌvən",
     img: `${LOCAL_WORD_IMAGES}/bakery/oven.webp`,
-    topic: "bakery-equipment",
+    topic: "bakery-4",
     description:
       "A thermally insulated heated chamber used for baking loaves, pastries, and roasted foods.",
   },
@@ -7611,7 +7400,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Mixer",
     phonetic: "ˈmɪksər",
     img: `${LOCAL_WORD_IMAGES}/bakery/mixer.webp`,
-    topic: "bakery-equipment",
+    topic: "bakery-4",
     description:
       "An electric appliance with spinning attachments used to beat, whip, and knead dough.",
   },
@@ -7620,7 +7409,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Rolling Pin",
     phonetic: "ˈroʊlɪŋ pɪn",
     img: `${LOCAL_WORD_IMAGES}/bakery/rolling-pin.webp`,
-    topic: "bakery-equipment",
+    topic: "bakery-4",
     description:
       "A heavy cylindrical wooden tool rotated by hand to flatten dough evenly on counters.",
   },
@@ -7629,7 +7418,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Baking Tray",
     phonetic: "ˈbeɪkɪŋ treɪ",
     img: `${LOCAL_WORD_IMAGES}/bakery/baking-tray.webp`,
-    topic: "bakery-equipment",
+    topic: "bakery-4",
     description:
       "A flat metal pan sheet used to support cookies, rolls, and pastries in hot ovens.",
   },
@@ -7638,7 +7427,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Whisk",
     phonetic: "wɪsk",
     img: `${LOCAL_WORD_IMAGES}/bakery/whisk.webp`,
-    topic: "bakery-equipment",
+    topic: "bakery-4",
     description:
       "A handheld cooking utensil made of looped wire strands used to aerate liquid mixtures.",
   },
@@ -7647,7 +7436,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Spatula",
     phonetic: "ˈspætʃələ",
     img: `${LOCAL_WORD_IMAGES}/bakery/spatula.webp`,
-    topic: "bakery-equipment",
+    topic: "bakery-4",
     description:
       "A flexible flat utensil used for scraping bowls, spreading frosting, and lifting pastries.",
   },
@@ -7656,7 +7445,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Piping Bag",
     phonetic: "ˈpaɪpɪŋ bæɡ",
     img: `${LOCAL_WORD_IMAGES}/bakery/piping-bag.webp`,
-    topic: "bakery-equipment",
+    topic: "bakery-4",
     description:
       "A cone-shaped pastry pouch fitted with nozzles to extrude decorative icings and fillings.",
   },
@@ -7665,7 +7454,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Muffin Tin",
     phonetic: "ˈmʌfɪn tɪn",
     img: `${LOCAL_WORD_IMAGES}/bakery/muffin-tin.webp`,
-    topic: "bakery-equipment",
+    topic: "bakery-4",
     description:
       "A metal baking pan containing multiple cup-shaped depressions for individual pastries.",
   },
@@ -7674,7 +7463,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Cooling Rack",
     phonetic: "ˈkuːlɪŋ ræk",
     img: `${LOCAL_WORD_IMAGES}/bakery/cooling-rack.webp`,
-    topic: "bakery-equipment",
+    topic: "bakery-5",
     description: "An elevated metal wire grid allowing air to circulate around hot baked items.",
   },
   {
@@ -7682,7 +7471,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Bread Basket",
     phonetic: "brɛd ˈbæskɪt",
     img: `${LOCAL_WORD_IMAGES}/bakery/bread-basket.webp`,
-    topic: "bakery-equipment",
+    topic: "bakery-5",
     description:
       "A cloth-lined wicker container used to hold and serve warm dinner rolls at tables.",
   },
@@ -7691,7 +7480,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Apron",
     phonetic: "ˈeɪprən",
     img: `${LOCAL_WORD_IMAGES}/bakery/apron.webp`,
-    topic: "bakery-equipment",
+    topic: "bakery-5",
     description:
       "A protective fabric garment tied around the waist and neck to keep clothes clean while cooking.",
   },
@@ -7700,7 +7489,7 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
     label: "Timer",
     phonetic: "ˈtaɪmər",
     img: `${LOCAL_WORD_IMAGES}/bakery/timer.webp`,
-    topic: "bakery-equipment",
+    topic: "bakery-5",
     description: "A countdown device with an audible alarm that monitors precise baking durations.",
   },
 ];
@@ -7711,57 +7500,39 @@ export const BAKERY_VOCABULARY: VocabularyItem[] = [
 
 export const BEACH_TOPICS: TopicCategory[] = [
   {
-    id: "beach-landscape",
-    name: "Beach Landscape",
-    description:
-      "Coastal geography including sand, ocean waves, cliffs, dunes, reefs, and lagoons.",
-    icon: "sun",
+    id: "beach-1",
+    name: "Beach Part 1",
+    itemsCount: 15,
+  },
+  {
+    id: "beach-2",
+    name: "Beach Part 2",
+    itemsCount: 15,
+  },
+  {
+    id: "beach-3",
+    name: "Beach Part 3",
+    itemsCount: 15,
+  },
+  {
+    id: "beach-4",
+    name: "Beach Part 4",
+    itemsCount: 15,
+  },
+  {
+    id: "beach-5",
+    name: "Beach Part 5",
     itemsCount: 12,
-  },
-  {
-    id: "beach-gear",
-    name: "Beach Gear",
-    description: "Sun protection, towels, umbrellas, loungers, swimwear, goggles, and snorkels.",
-    icon: "layers",
-    itemsCount: 14,
-  },
-  {
-    id: "water-activities",
-    name: "Water Activities",
-    description: "Swimming, surfing, scuba diving, kayaking, sailing, windsurfing, and fishing.",
-    icon: "compass",
-    itemsCount: 12,
-  },
-  {
-    id: "beach-activities",
-    name: "Beach Activities",
-    description: "Sandcastles, frisbee, volleyball, sunbathing, picnics, bonfires, and jogging.",
-    icon: "smile",
-    itemsCount: 12,
-  },
-  {
-    id: "marine-life",
-    name: "Marine Life",
-    description: "Seagulls, crabs, starfish, dolphins, sea turtles, corals, and sea urchins.",
-    icon: "feather",
-    itemsCount: 12,
-  },
-  {
-    id: "safety-facilities",
-    name: "Safety & Facilities",
-    description:
-      "Lifeguards, lookout towers, warning flags, outdoor showers, boardwalks, and piers.",
-    icon: "shield",
-    itemsCount: 10,
   },
 ];
 
 export const BEACH_GROUPS: Lesson[] = [
   {
-    id: "beach-landscape",
-    name: "Beach Landscape",
-    topicId: "beach-landscape",
-    description: "Learn about sand, ocean, waves, cliffs, dunes, reefs, and coastal coves.",
+    id: "beach-1",
+    name: "Beach Basics 1",
+    description:
+      "Learn about Sand, Ocean, Wave, Shore, Cliff, Dune, Tide Pool, Horizon, Reef, Cove, Bay, Lagoon, Towel, Sunscreen...",
+    topicId: "beach-1",
     wordIds: [
       "sand",
       "ocean",
@@ -7775,19 +7546,20 @@ export const BEACH_GROUPS: Lesson[] = [
       "cove",
       "bay",
       "lagoon",
-    ],
-    story:
-      "Along the coastal shore, soft golden sand met the vast turquoise ocean as gentle wave ripples rolled in. Dramatic limestone cliffs rose beside rolling dune hills and rocky tide-pool basins. Looking toward the distant horizon, a vibrant coral reef framed the sheltered cove, the wide bay, and the tranquil lagoon.",
-  },
-  {
-    id: "beach-gear",
-    name: "Beach Gear",
-    topicId: "beach-gear",
-    description: "Learn about beach towels, sunscreen, umbrellas, swimwear, and snorkeling gear.",
-    wordIds: [
       "towel",
       "sunscreen",
       "umbrella",
+    ],
+    story:
+      "In this section, you will learn about Sand, Ocean, Wave, Shore, Cliff, Dune, Tide Pool, Horizon, Reef, Cove, Bay, Lagoon, Towel, Sunscreen, Umbrella. These are essential items to know.",
+  },
+  {
+    id: "beach-2",
+    name: "Beach Basics 2",
+    description:
+      "Learn about Beach Chair, Cooler, Flip-Flops, Sunglasses, Hat, Swimsuit, Bikini, Swim Trunks, Goggles, Snorkel, F...",
+    topicId: "beach-2",
+    wordIds: [
       "beach-chair",
       "cooler",
       "flip-flops",
@@ -7799,20 +7571,21 @@ export const BEACH_GROUPS: Lesson[] = [
       "goggles",
       "snorkel",
       "fins",
-    ],
-    story:
-      "We spread a striped towel, applied protective sunscreen, and opened a colorful umbrella over our folding beach-chair. Beside the portable cooler, we kicked off our rubber flip-flops, put on polarized sunglasses, and wore a wide straw hat. After changing into a swimsuit, a floral bikini, and quick-dry swim-trunks, we grabbed our swim goggles, breathing snorkel, and propulsion fins.",
-  },
-  {
-    id: "water-activities",
-    name: "Water Activities",
-    topicId: "water-activities",
-    description: "Learn about swimming, surfing, diving, kayaking, sailing, and water sports.",
-    wordIds: [
       "swimming",
       "surfing",
       "snorkeling",
       "diving",
+    ],
+    story:
+      "In this section, you will learn about Beach Chair, Cooler, Flip-Flops, Sunglasses, Hat, Swimsuit, Bikini, Swim Trunks, Goggles, Snorkel, Fins, Swimming, Surfing, Snorkeling, Diving. These are essential items to know.",
+  },
+  {
+    id: "beach-3",
+    name: "Beach Basics 3",
+    description:
+      "Learn about Kayaking, Paddleboarding, Boogie Boarding, Jet Skiing, Sailing, Windsurfing, Water Skiing, Fishing, ...",
+    topicId: "beach-3",
+    wordIds: [
       "kayaking",
       "paddleboarding",
       "boogie-boarding",
@@ -7821,16 +7594,6 @@ export const BEACH_GROUPS: Lesson[] = [
       "windsurfing",
       "water-skiing",
       "fishing",
-    ],
-    story:
-      "Morning beachgoers enjoyed refreshing swimming in the surf and exciting surfing on breaking swells. Snorkelers tried shallow snorkeling, while adventurers went deep scuba diving. Out in the open water, enthusiasts enjoyed sea kayaking, stand-up paddleboarding, boogie-boarding on foam boards, and fast jet-skiing. Others preferred peaceful sailing on sloops, breezy windsurfing, thrilling water-skiing behind boats, and quiet surf fishing.",
-  },
-  {
-    id: "beach-activities",
-    name: "Beach Activities",
-    topicId: "beach-activities",
-    description: "Learn about sandcastles, volleyball, sunbathing, picnics, and beach games.",
-    wordIds: [
       "sandcastle",
       "frisbee",
       "volleyball",
@@ -7838,21 +7601,22 @@ export const BEACH_GROUPS: Lesson[] = [
       "picnic",
       "kite-flying",
       "shell-collecting",
+    ],
+    story:
+      "In this section, you will learn about Kayaking, Paddleboarding, Boogie Boarding, Jet Skiing, Sailing, Windsurfing, Water Skiing, Fishing, Sandcastle, Frisbee, Volleyball, Sunbathing, Picnic, Kite Flying, Shell Collecting. These are essential items to know.",
+  },
+  {
+    id: "beach-4",
+    name: "Beach Basics 4",
+    description:
+      "Learn about Barbecue, Bonfire, Reading, Walking, Jogging, Seagull, Crab, Starfish, Jellyfish, Dolphin, Sea Turtl...",
+    topicId: "beach-4",
+    wordIds: [
       "barbecue",
       "bonfire",
       "reading",
       "walking",
       "jogging",
-    ],
-    story:
-      "Children sculpted an intricate sandcastle while friends tossed a plastic frisbee and played competitive beach volleyball. Some relaxed during afternoon sunbathing, shared a blanket picnic, and flew kites during windy kite-flying. Others took a bucket for shell-collecting, gathered for a seaside barbecue, lit an evening bonfire, enjoyed quiet book reading, strolled while walking barefoot, or exercised through sunset jogging.",
-  },
-  {
-    id: "marine-life",
-    name: "Marine Life",
-    topicId: "marine-life",
-    description: "Learn about seagulls, crabs, starfish, dolphins, sea turtles, and corals.",
-    wordIds: [
       "seagull",
       "crab",
       "starfish",
@@ -7863,18 +7627,19 @@ export const BEACH_GROUPS: Lesson[] = [
       "seahorse",
       "clam",
       "coral",
-      "seaweed",
-      "sea-urchin",
     ],
     story:
-      "A screeching seagull flew overhead as a ghost crab scuttled by a purple starfish. A translucent jellyfish floated past a leaping bottle dolphin and a swimming green sea-turtle. A diving pelican scooped fish near an anchored seahorse, while a bivalve clam rested among living pink coral, green seaweed, and a spiky sea-urchin.",
+      "In this section, you will learn about Barbecue, Bonfire, Reading, Walking, Jogging, Seagull, Crab, Starfish, Jellyfish, Dolphin, Sea Turtle, Pelican, Seahorse, Clam, Coral. These are essential items to know.",
   },
   {
-    id: "safety-facilities",
-    name: "Safety & Facilities",
-    topicId: "safety-facilities",
-    description: "Learn about lifeguards, warning flags, showers, boardwalks, and piers.",
+    id: "beach-5",
+    name: "Beach Basics 5",
+    description:
+      "Learn about Seaweed, Sea Urchin, Lifeguard, Lifeguard Tower, Warning Flag, First Aid Kit, Shower, Changing Room,...",
+    topicId: "beach-5",
     wordIds: [
+      "seaweed",
+      "sea-urchin",
       "lifeguard",
       "lifeguard-tower",
       "warning-flag",
@@ -7887,7 +7652,7 @@ export const BEACH_GROUPS: Lesson[] = [
       "trash-can",
     ],
     story:
-      "An alert lifeguard kept watch from atop the high wooden lifeguard-tower, flying a yellow warning-flag and keeping a ready first-aid-kit. Swimmers rinsed off under the freshwater outdoor shower before heading to the private changing-room. Visitors strolled down the timber boardwalk toward the ocean pier, parked in the convenient parking-lot, and disposed of wrappers in the blue trash-can.",
+      "In this section, you will learn about Seaweed, Sea Urchin, Lifeguard, Lifeguard Tower, Warning Flag, First Aid Kit, Shower, Changing Room, Boardwalk, Pier, Parking Lot, Trash Can. These are essential items to know.",
   },
 ];
 
@@ -7898,7 +7663,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Sand",
     phonetic: "sænd",
     img: `${LOCAL_WORD_IMAGES}/beach/sand.webp`,
-    topic: "beach-landscape",
+    topic: "beach-1",
     description: "Soft loose granular particles formed from eroded coastal rocks and shells.",
   },
   {
@@ -7906,7 +7671,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Ocean",
     phonetic: "ˈoʊʃən",
     img: `${LOCAL_WORD_IMAGES}/beach/ocean.webp`,
-    topic: "beach-landscape",
+    topic: "beach-1",
     description: "The vast continuous body of deep blue salt water covering most of the globe.",
   },
   {
@@ -7914,7 +7679,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Wave",
     phonetic: "weɪv",
     img: `${LOCAL_WORD_IMAGES}/beach/wave.webp`,
-    topic: "beach-landscape",
+    topic: "beach-1",
     description: "A rolling ridge or crest of water moving across the surface of the sea.",
   },
   {
@@ -7922,7 +7687,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Shore",
     phonetic: "ʃɔːr",
     img: `${LOCAL_WORD_IMAGES}/beach/shore.webp`,
-    topic: "beach-landscape",
+    topic: "beach-1",
     description: "The edge of land directly bordering a large body of open water.",
   },
   {
@@ -7930,7 +7695,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Cliff",
     phonetic: "klɪf",
     img: `${LOCAL_WORD_IMAGES}/beach/cliff.webp`,
-    topic: "beach-landscape",
+    topic: "beach-1",
     description: "A high, steep rock face rising dramatically above the coastal water.",
   },
   {
@@ -7938,7 +7703,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Dune",
     phonetic: "duːn",
     img: `${LOCAL_WORD_IMAGES}/beach/dune.webp`,
-    topic: "beach-landscape",
+    topic: "beach-1",
     description: "A wind-sculpted ridge or hill formed from loose coastal sediment.",
   },
   {
@@ -7946,7 +7711,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Tide Pool",
     phonetic: "ˈtaɪd puːl",
     img: `${LOCAL_WORD_IMAGES}/beach/tide-pool.webp`,
-    topic: "beach-landscape",
+    topic: "beach-1",
     description: "A rocky hollow on the coast that retains seawater when the ocean retreats.",
   },
   {
@@ -7954,7 +7719,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Horizon",
     phonetic: "həˈraɪzən",
     img: `${LOCAL_WORD_IMAGES}/beach/horizon.webp`,
-    topic: "beach-landscape",
+    topic: "beach-1",
     description: "The apparent line where the distant sea surface appears to meet the sky.",
   },
   {
@@ -7962,7 +7727,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Reef",
     phonetic: "riːf",
     img: `${LOCAL_WORD_IMAGES}/beach/reef.webp`,
-    topic: "beach-landscape",
+    topic: "beach-1",
     description: "A submerged marine ridge formed from calcium-rich coral colonies and rocks.",
   },
   {
@@ -7970,7 +7735,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Cove",
     phonetic: "koʊv",
     img: `${LOCAL_WORD_IMAGES}/beach/cove.webp`,
-    topic: "beach-landscape",
+    topic: "beach-1",
     description: "A small sheltered coastal inlet bordered by curving rocky headlands.",
   },
   {
@@ -7978,7 +7743,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Bay",
     phonetic: "beɪ",
     img: `${LOCAL_WORD_IMAGES}/beach/bay.webp`,
-    topic: "beach-landscape",
+    topic: "beach-1",
     description: "A broad curved coastal inlet of the sea where land curves inward.",
   },
   {
@@ -7986,7 +7751,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Lagoon",
     phonetic: "ləˈɡuːn",
     img: `${LOCAL_WORD_IMAGES}/beach/lagoon.webp`,
-    topic: "beach-landscape",
+    topic: "beach-1",
     description: "A shallow body of calm water separated from the open sea by coral or sandbars.",
   },
 
@@ -7996,7 +7761,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Towel",
     phonetic: "ˈtaʊəl",
     img: `${LOCAL_WORD_IMAGES}/beach/towel.webp`,
-    topic: "beach-gear",
+    topic: "beach-1",
     description: "An absorbent piece of thick fabric used for drying moisture from the body.",
   },
   {
@@ -8004,7 +7769,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Sunscreen",
     phonetic: "ˈsʌnskriːn",
     img: `${LOCAL_WORD_IMAGES}/beach/sunscreen.webp`,
-    topic: "beach-gear",
+    topic: "beach-1",
     description:
       "A protective topical lotion applied to skin to block harmful ultraviolet radiation.",
   },
@@ -8013,7 +7778,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Umbrella",
     phonetic: "ʌmˈbrɛlə",
     img: `${LOCAL_WORD_IMAGES}/beach/umbrella.webp`,
-    topic: "beach-gear",
+    topic: "beach-1",
     description: "A collapsible fabric canopy on a pole used to create cooling overhead shade.",
   },
   {
@@ -8021,7 +7786,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Beach Chair",
     phonetic: "biːtʃ tʃɛər",
     img: `${LOCAL_WORD_IMAGES}/beach/beach-chair.webp`,
-    topic: "beach-gear",
+    topic: "beach-2",
     description: "A portable folding seat designed for reclining comfortably near the coast.",
   },
   {
@@ -8029,7 +7794,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Cooler",
     phonetic: "ˈkuːlər",
     img: `${LOCAL_WORD_IMAGES}/beach/cooler.webp`,
-    topic: "beach-gear",
+    topic: "beach-2",
     description: "An insulated portable chest packed with ice to keep beverages and snacks cold.",
   },
   {
@@ -8037,7 +7802,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Flip-Flops",
     phonetic: "ˈflɪpflɒps",
     img: `${LOCAL_WORD_IMAGES}/beach/flip-flops.webp`,
-    topic: "beach-gear",
+    topic: "beach-2",
     description: "Open-toed rubber sandals with a Y-shaped strap passing between the toes.",
   },
   {
@@ -8045,7 +7810,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Sunglasses",
     phonetic: "ˈsʌnˌɡlæsɪz",
     img: `${LOCAL_WORD_IMAGES}/beach/sunglasses.webp`,
-    topic: "beach-gear",
+    topic: "beach-2",
     description: "Tinted protective eyewear designed to shield vision from bright sunny glare.",
   },
   {
@@ -8053,7 +7818,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Hat",
     phonetic: "hæt",
     img: `${LOCAL_WORD_IMAGES}/beach/hat.webp`,
-    topic: "beach-gear",
+    topic: "beach-2",
     description: "A head covering with a wide circular brim designed to shade the face and neck.",
   },
   {
@@ -8061,7 +7826,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Swimsuit",
     phonetic: "ˈswɪmsuːt",
     img: `${LOCAL_WORD_IMAGES}/beach/swimsuit.webp`,
-    topic: "beach-gear",
+    topic: "beach-2",
     description: "An elastic garment worn for aquatic exercise and water recreation.",
   },
   {
@@ -8069,7 +7834,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Bikini",
     phonetic: "bɪˈkiːni",
     img: `${LOCAL_WORD_IMAGES}/beach/bikini.webp`,
-    topic: "beach-gear",
+    topic: "beach-2",
     description:
       "A two-piece women's bathing outfit consisting of separate top and bottom garments.",
   },
@@ -8078,7 +7843,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Swim Trunks",
     phonetic: "swɪm trʌŋks",
     img: `${LOCAL_WORD_IMAGES}/beach/swim-trunks.webp`,
-    topic: "beach-gear",
+    topic: "beach-2",
     description: "Lightweight quick-drying shorts worn by men for aquatic activities.",
   },
   {
@@ -8086,7 +7851,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Goggles",
     phonetic: "ˈɡɒɡəlz",
     img: `${LOCAL_WORD_IMAGES}/beach/goggles.webp`,
-    topic: "beach-gear",
+    topic: "beach-2",
     description: "Close-fitting watertight eyewear with transparent lenses for underwater vision.",
   },
   {
@@ -8094,7 +7859,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Snorkel",
     phonetic: "ˈsnɔːrkəl",
     img: `${LOCAL_WORD_IMAGES}/beach/snorkel.webp`,
-    topic: "beach-gear",
+    topic: "beach-2",
     description:
       "A curved breathing tube that allows swimmers to inhale air while face down in water.",
   },
@@ -8103,7 +7868,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Fins",
     phonetic: "fɪnz",
     img: `${LOCAL_WORD_IMAGES}/beach/fins.webp`,
-    topic: "beach-gear",
+    topic: "beach-2",
     description: "Flat rubber flippers worn on the feet to increase propulsion through water.",
   },
 
@@ -8113,7 +7878,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Swimming",
     phonetic: "ˈswɪmɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/swimming.webp`,
-    topic: "water-activities",
+    topic: "beach-2",
     description: "Propelling oneself through water using coordinated arm strokes and leg kicks.",
   },
   {
@@ -8121,7 +7886,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Surfing",
     phonetic: "ˈsɜːrfɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/surfing.webp`,
-    topic: "water-activities",
+    topic: "beach-2",
     description: "The sport of riding toward the coast while standing upright on a wave board.",
   },
   {
@@ -8129,7 +7894,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Snorkeling",
     phonetic: "ˈsnɔːrkəlɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/snorkeling.webp`,
-    topic: "water-activities",
+    topic: "beach-2",
     description: "Exploring shallow underwater habitats while breathing through a surface tube.",
   },
   {
@@ -8137,7 +7902,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Diving",
     phonetic: "ˈdaɪvɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/diving.webp`,
-    topic: "water-activities",
+    topic: "beach-2",
     description: "Plunging deeply beneath the water surface with specialized breathing equipment.",
   },
   {
@@ -8145,7 +7910,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Kayaking",
     phonetic: "ˈkaɪækɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/kayaking.webp`,
-    topic: "water-activities",
+    topic: "beach-3",
     description:
       "Navigating over water seated in a narrow craft propelled by a double-bladed paddle.",
   },
@@ -8154,7 +7919,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Paddleboarding",
     phonetic: "ˈpædəlbɔːrdɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/paddleboarding.webp`,
-    topic: "water-activities",
+    topic: "beach-3",
     description: "Standing upright on a buoyant craft and propelling forward using a long oar.",
   },
   {
@@ -8162,7 +7927,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Boogie Boarding",
     phonetic: "ˈbʊɡi bɔːrdɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/boogie-boarding.webp`,
-    topic: "water-activities",
+    topic: "beach-3",
     description: "The recreation of riding ocean swells while lying prone on a small foam craft.",
   },
   {
@@ -8170,7 +7935,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Jet Skiing",
     phonetic: "ˈdʒɛt skiːɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/jet-skiing.webp`,
-    topic: "water-activities",
+    topic: "beach-3",
     description: "Riding rapidly over water on a small motorized personal recreational craft.",
   },
   {
@@ -8178,7 +7943,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Sailing",
     phonetic: "ˈseɪlɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/sailing.webp`,
-    topic: "water-activities",
+    topic: "beach-3",
     description: "Navigating across water using wind pressure caught in large canvas sheets.",
   },
   {
@@ -8186,7 +7951,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Windsurfing",
     phonetic: "ˈwɪndsɜːrfɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/windsurfing.webp`,
-    topic: "water-activities",
+    topic: "beach-3",
     description:
       "The sport of skimming across water standing on a platform rigged with a handheld sail.",
   },
@@ -8195,7 +7960,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Water Skiing",
     phonetic: "ˈwɔːtər skiːɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/water-skiing.webp`,
-    topic: "water-activities",
+    topic: "beach-3",
     description:
       "Skimming across the ocean surface on narrow runners while towed behind a speedboat.",
   },
@@ -8204,7 +7969,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Fishing",
     phonetic: "ˈfɪʃɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/fishing.webp`,
-    topic: "water-activities",
+    topic: "beach-3",
     description: "The practice of catching aquatic species using rods, baited hooks, or nets.",
   },
 
@@ -8214,7 +7979,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Sandcastle",
     phonetic: "ˈsændˌkɑːsəl",
     img: `${LOCAL_WORD_IMAGES}/beach/sandcastle.webp`,
-    topic: "beach-activities",
+    topic: "beach-3",
     description: "A decorative miniature fortress sculpted from damp sediment by the water.",
   },
   {
@@ -8222,7 +7987,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Frisbee",
     phonetic: "ˈfrɪzbi",
     img: `${LOCAL_WORD_IMAGES}/beach/frisbee.webp`,
-    topic: "beach-activities",
+    topic: "beach-3",
     description:
       "A concave plastic disc thrown spinning through the air in recreational toss games.",
   },
@@ -8231,7 +7996,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Volleyball",
     phonetic: "ˈvɒlibɔːl",
     img: `${LOCAL_WORD_IMAGES}/beach/volleyball.webp`,
-    topic: "beach-activities",
+    topic: "beach-3",
     description:
       "A team court sport where players use their hands to hit a sphere over a high net.",
   },
@@ -8240,7 +8005,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Sunbathing",
     phonetic: "ˈsʌnbeɪðɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/sunbathing.webp`,
-    topic: "beach-activities",
+    topic: "beach-3",
     description: "Reclining outdoors to expose the skin to natural warmth and golden daylight.",
   },
   {
@@ -8248,7 +8013,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Picnic",
     phonetic: "ˈpɪknɪk",
     img: `${LOCAL_WORD_IMAGES}/beach/picnic.webp`,
-    topic: "beach-activities",
+    topic: "beach-3",
     description: "An informal outdoor meal enjoyed on a blanket spread across the ground.",
   },
   {
@@ -8256,7 +8021,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Kite Flying",
     phonetic: "ˈkaɪt ˈflaɪɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/kite-flying.webp`,
-    topic: "beach-activities",
+    topic: "beach-3",
     description: "Guiding a light tethered fabric craft aloft into coastal air currents.",
   },
   {
@@ -8264,7 +8029,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Shell Collecting",
     phonetic: "ʃɛl kəˈlɛktɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/shell-collecting.webp`,
-    topic: "beach-activities",
+    topic: "beach-3",
     description: "The hobby of searching along the coastline for ornate empty mollusk coverings.",
   },
   {
@@ -8272,7 +8037,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Barbecue",
     phonetic: "ˈbɑːrbɪkjuː",
     img: `${LOCAL_WORD_IMAGES}/beach/barbecue.webp`,
-    topic: "beach-activities",
+    topic: "beach-4",
     description: "Cooking marinated foods and meats outdoors over heated charcoal or open flames.",
   },
   {
@@ -8280,7 +8045,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Bonfire",
     phonetic: "ˈbɒnfaɪər",
     img: `${LOCAL_WORD_IMAGES}/beach/bonfire.webp`,
-    topic: "beach-activities",
+    topic: "beach-4",
     description:
       "A large controlled outdoor fire built with logs for evening warmth and gatherings.",
   },
@@ -8289,7 +8054,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Reading",
     phonetic: "ˈriːdɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/reading.webp`,
-    topic: "beach-activities",
+    topic: "beach-4",
     description: "Quietly looking at and interpreting written words and printed stories.",
   },
   {
@@ -8297,7 +8062,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Walking",
     phonetic: "ˈwɔːkɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/walking.webp`,
-    topic: "beach-activities",
+    topic: "beach-4",
     description: "Advancing on foot at a steady, comfortable pace without running.",
   },
   {
@@ -8305,7 +8070,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Jogging",
     phonetic: "ˈdʒɒɡɪŋ",
     img: `${LOCAL_WORD_IMAGES}/beach/jogging.webp`,
-    topic: "beach-activities",
+    topic: "beach-4",
     description: "Running outdoors at a slow, leisurely pace for cardiovascular exercise.",
   },
 
@@ -8315,7 +8080,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Seagull",
     phonetic: "ˈsiːɡʌl",
     img: `${LOCAL_WORD_IMAGES}/beach/seagull.webp`,
-    topic: "marine-life",
+    topic: "beach-4",
     description:
       "A common coastal bird with gray and white plumage, webbed feet, and a piercing call.",
   },
@@ -8324,7 +8089,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Crab",
     phonetic: "kræb",
     img: `${LOCAL_WORD_IMAGES}/beach/crab.webp`,
-    topic: "marine-life",
+    topic: "beach-4",
     description:
       "A marine crustacean with a broad flat carapace, eight walking legs, and two pincers.",
   },
@@ -8333,7 +8098,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Starfish",
     phonetic: "ˈstɑːrfɪʃ",
     img: `${LOCAL_WORD_IMAGES}/beach/starfish.webp`,
-    topic: "marine-life",
+    topic: "beach-4",
     description:
       "A radial marine creature typically having five tapering arms covered in suction tube feet.",
   },
@@ -8342,7 +8107,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Jellyfish",
     phonetic: "ˈdʒɛlifɪʃ",
     img: `${LOCAL_WORD_IMAGES}/beach/jellyfish.webp`,
-    topic: "marine-life",
+    topic: "beach-4",
     description:
       "A gelatinous free-swimming marine animal with a bell-shaped body and stinging tentacles.",
   },
@@ -8351,7 +8116,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Dolphin",
     phonetic: "ˈdɒlfɪn",
     img: `${LOCAL_WORD_IMAGES}/beach/dolphin.webp`,
-    topic: "marine-life",
+    topic: "beach-4",
     description:
       "An intelligent aquatic mammal known for its curved beak, blowhole, and playful leaps.",
   },
@@ -8360,7 +8125,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Sea Turtle",
     phonetic: "siː ˈtɜːrtəl",
     img: `${LOCAL_WORD_IMAGES}/beach/sea-turtle.webp`,
-    topic: "marine-life",
+    topic: "beach-4",
     description: "A marine reptile with large paddle flippers and a streamlined bony carapace.",
   },
   {
@@ -8368,7 +8133,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Pelican",
     phonetic: "ˈpɛlɪkən",
     img: `${LOCAL_WORD_IMAGES}/beach/pelican.webp`,
-    topic: "marine-life",
+    topic: "beach-4",
     description:
       "A large coastal bird with a long beak and an expandable throat pouch for catching prey.",
   },
@@ -8377,7 +8142,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Seahorse",
     phonetic: "ˈsiːhɔːrs",
     img: `${LOCAL_WORD_IMAGES}/beach/seahorse.webp`,
-    topic: "marine-life",
+    topic: "beach-4",
     description:
       "A small upright-swimming aquatic creature with an equine head, armored body, and prehensile tail.",
   },
@@ -8386,7 +8151,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Clam",
     phonetic: "klæm",
     img: `${LOCAL_WORD_IMAGES}/beach/clam.webp`,
-    topic: "marine-life",
+    topic: "beach-4",
     description:
       "A burrowing marine mollusk enclosed within two hinged matching protective valves.",
   },
@@ -8395,7 +8160,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Coral",
     phonetic: "ˈkɒrəl",
     img: `${LOCAL_WORD_IMAGES}/beach/coral.webp`,
-    topic: "marine-life",
+    topic: "beach-4",
     description:
       "Marine invertebrates whose colonies secrete mineralized calcium structures forming ocean ridges.",
   },
@@ -8404,7 +8169,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Seaweed",
     phonetic: "ˈsiːwiːd",
     img: `${LOCAL_WORD_IMAGES}/beach/seaweed.webp`,
-    topic: "marine-life",
+    topic: "beach-5",
     description:
       "Large algae growing in saltwater environments, forming submerged underwater forests.",
   },
@@ -8413,7 +8178,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Sea Urchin",
     phonetic: "siː ˈɜːrtʃɪn",
     img: `${LOCAL_WORD_IMAGES}/beach/sea-urchin.webp`,
-    topic: "marine-life",
+    topic: "beach-5",
     description: "A spherical spiny marine invertebrate found nestled among tidal rocks and reefs.",
   },
 
@@ -8423,7 +8188,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Lifeguard",
     phonetic: "ˈlaɪfɡɑːrd",
     img: `${LOCAL_WORD_IMAGES}/beach/lifeguard.webp`,
-    topic: "safety-facilities",
+    topic: "beach-5",
     description:
       "A trained professional stationed on the coast to watch over swimmers and perform rescues.",
   },
@@ -8432,7 +8197,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Lifeguard Tower",
     phonetic: "ˈlaɪfɡɑːrd ˈtaʊər",
     img: `${LOCAL_WORD_IMAGES}/beach/lifeguard-tower.webp`,
-    topic: "safety-facilities",
+    topic: "beach-5",
     description:
       "An elevated wooden observation post providing monitors with a panoramic coastline view.",
   },
@@ -8441,7 +8206,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Warning Flag",
     phonetic: "ˈwɔːrnɪŋ flæɡ",
     img: `${LOCAL_WORD_IMAGES}/beach/warning-flag.webp`,
-    topic: "safety-facilities",
+    topic: "beach-5",
     description:
       "A colored banner flown at the coast to indicate sea conditions and marine hazards.",
   },
@@ -8450,7 +8215,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "First Aid Kit",
     phonetic: "fɜːrst eɪd kɪt",
     img: `${LOCAL_WORD_IMAGES}/beach/first-aid-kit.webp`,
-    topic: "safety-facilities",
+    topic: "beach-5",
     description:
       "A portable medical container stocked with emergency bandages and antiseptic ointments.",
   },
@@ -8459,7 +8224,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Shower",
     phonetic: "ˈʃaʊər",
     img: `${LOCAL_WORD_IMAGES}/beach/shower.webp`,
-    topic: "safety-facilities",
+    topic: "beach-5",
     description:
       "An outdoor plumbing fixture supplying fresh water to rinse off after entering the ocean.",
   },
@@ -8468,7 +8233,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Changing Room",
     phonetic: "ˈtʃeɪndʒɪŋ ruːm",
     img: `${LOCAL_WORD_IMAGES}/beach/changing-room.webp`,
-    topic: "safety-facilities",
+    topic: "beach-5",
     description: "A private partitioned cubicle where visitors can switch in and out of outfits.",
   },
   {
@@ -8476,7 +8241,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Boardwalk",
     phonetic: "ˈbɔːrdwɔːk",
     img: `${LOCAL_WORD_IMAGES}/beach/boardwalk.webp`,
-    topic: "safety-facilities",
+    topic: "beach-5",
     description:
       "An elevated pedestrian walkway constructed of timber planks running along the coast.",
   },
@@ -8485,7 +8250,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Pier",
     phonetic: "pɪər",
     img: `${LOCAL_WORD_IMAGES}/beach/pier.webp`,
-    topic: "safety-facilities",
+    topic: "beach-5",
     description:
       "A raised wooden platform extending from the coastline far out into open deep water.",
   },
@@ -8494,7 +8259,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Parking Lot",
     phonetic: "ˈpɑːrkɪŋ lɒt",
     img: `${LOCAL_WORD_IMAGES}/beach/parking-lot.webp`,
-    topic: "safety-facilities",
+    topic: "beach-5",
     description: "A designated paved area where visitors leave their automobiles during outings.",
   },
   {
@@ -8502,7 +8267,7 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
     label: "Trash Can",
     phonetic: "træʃ kæn",
     img: `${LOCAL_WORD_IMAGES}/beach/trash-can.webp`,
-    topic: "safety-facilities",
+    topic: "beach-5",
     description:
       "A waste receptacle placed in public areas for discarding rubbish and food wrappers.",
   },
@@ -8514,49 +8279,52 @@ export const BEACH_VOCABULARY: VocabularyItem[] = [
 
 export const REVISION_1_TOPICS: TopicCategory[] = [
   {
-    id: "bedroom-core",
-    name: "Bedroom Essentials",
-    itemsCount: 6,
+    id: "revision-1-1",
+    name: "Revision 1 Part 1",
+    itemsCount: 15,
   },
   {
-    id: "kitchen-core",
-    name: "Kitchen Essentials",
-    itemsCount: 6,
-  },
-  {
-    id: "living-core",
-    name: "Living Room Essentials",
-    itemsCount: 6,
+    id: "revision-1-2",
+    name: "Revision 1 Part 2",
+    itemsCount: 3,
   },
 ];
 
 export const REVISION_1_GROUPS: Lesson[] = [
   {
-    id: "rev1-group-1",
-    name: "Bedroom Foundations",
-    topicId: "bedroom-core",
-    wordIds: ["bed", "nightstand", "lamp", "alarm-clock", "pillow", "blanket"],
-    description: "Review essential bedroom vocabulary.",
+    id: "revision-1-1",
+    name: "Revision 1 Basics 1",
+    description:
+      "Learn about Bed, Nightstand, Lamp, Alarm Clock, Pillow, Blanket, Refrigerator, Stove, Pot, Pan, Cutting Board, K...",
+    topicId: "revision-1-1",
+    wordIds: [
+      "bed",
+      "nightstand",
+      "lamp",
+      "alarm-clock",
+      "pillow",
+      "blanket",
+      "refrigerator",
+      "stove",
+      "pot",
+      "pan",
+      "cutting-board",
+      "knife",
+      "sofa",
+      "armchair",
+      "coffee-table",
+    ],
     story:
-      "She woke up in her cozy bed and reached over to the nightstand to silence the loud alarm clock. Turning on the bedside lamp, she fluffed her soft pillow and folded the warm blanket neatly.",
+      "In this section, you will learn about Bed, Nightstand, Lamp, Alarm Clock, Pillow, Blanket, Refrigerator, Stove, Pot, Pan, Cutting Board, Knife, Sofa, Armchair, Coffee Table. These are essential items to know.",
   },
   {
-    id: "rev1-group-2",
-    name: "Kitchen Essentials",
-    topicId: "kitchen-core",
-    wordIds: ["refrigerator", "stove", "pot", "pan", "cutting-board", "knife"],
-    description: "Review essential kitchen vocabulary.",
+    id: "revision-1-2",
+    name: "Revision 1 Basics 2",
+    description: "Learn about Television, Rug, Curtain...",
+    topicId: "revision-1-2",
+    wordIds: ["television", "rug", "curtain"],
     story:
-      "He opened the refrigerator to get fresh vegetables, placing them on the wooden cutting board to slice with a sharp knife. He then heated a skillet pan and a soup pot on the gas stove.",
-  },
-  {
-    id: "rev1-group-3",
-    name: "Living Room Comfort",
-    topicId: "living-core",
-    wordIds: ["sofa", "armchair", "coffee-table", "television", "rug", "curtain"],
-    description: "Review essential living room vocabulary.",
-    story:
-      "The family relaxed on the spacious sofa and deep armchair around the low coffee table. They turned on the television while resting their feet on the soft rug and closing the window curtain.",
+      "In this section, you will learn about Television, Rug, Curtain. These are essential items to know.",
   },
 ];
 
@@ -8566,7 +8334,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Bed",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/bed.webp`,
-    topic: "bedroom-core",
+    topic: "revision-1-1",
     description: "A large piece of furniture with a mattress used for sleeping.",
   },
   {
@@ -8574,7 +8342,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Nightstand",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/nightstand.webp`,
-    topic: "bedroom-core",
+    topic: "revision-1-1",
     description: "A small cabinet placed beside a sleeping frame for lighting.",
   },
   {
@@ -8582,7 +8350,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Lamp",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/lamp.webp`,
-    topic: "bedroom-core",
+    topic: "revision-1-1",
     description: "An electrical fixture with a shade that provides illumination.",
   },
   {
@@ -8590,7 +8358,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Alarm Clock",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/alarm-clock.webp`,
-    topic: "bedroom-core",
+    topic: "revision-1-1",
     description: "A timekeeping device that rings loudly to wake you up.",
   },
   {
@@ -8598,7 +8366,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Pillow",
     phonetic: "\u02c8p\u026alo\u028a",
     img: `${LOCAL_WORD_IMAGES}/pillow.webp`,
-    topic: "bedroom-core",
+    topic: "revision-1-1",
     description: "A soft fabric cushion used to support the head while resting.",
   },
   {
@@ -8606,7 +8374,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Blanket",
     phonetic: "\u02c8bl\u00e6\u014bk\u026at",
     img: `${LOCAL_WORD_IMAGES}/blanket.webp`,
-    topic: "bedroom-core",
+    topic: "revision-1-1",
     description: "A thick warm fabric covering used to keep cozy while sleeping.",
   },
   {
@@ -8614,7 +8382,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Refrigerator",
     phonetic: "r\u026a\u02c8fr\u026ad\u0292\u0259re\u026at\u0259r",
     img: `${LOCAL_WORD_IMAGES}/refrigerator.webp`,
-    topic: "kitchen-core",
+    topic: "revision-1-1",
     description: "A large tall appliance that keeps food and dairy chilled.",
   },
   {
@@ -8622,7 +8390,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Stove",
     phonetic: "sto\u028av",
     img: `${LOCAL_WORD_IMAGES}/stove.webp`,
-    topic: "kitchen-core",
+    topic: "revision-1-1",
     description: "A cooking appliance with burners used to heat cookware.",
   },
   {
@@ -8630,7 +8398,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Pot",
     phonetic: "p\u0252t",
     img: `${LOCAL_WORD_IMAGES}/pot.webp`,
-    topic: "kitchen-core",
+    topic: "revision-1-1",
     description: "A deep metal cooking vessel with handles used for boiling soups.",
   },
   {
@@ -8638,7 +8406,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Pan",
     phonetic: "p\u00e6n",
     img: `${LOCAL_WORD_IMAGES}/pan.webp`,
-    topic: "kitchen-core",
+    topic: "revision-1-1",
     description: "A flat metal cooking dish with a long handle used for frying.",
   },
   {
@@ -8646,7 +8414,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Cutting Board",
     phonetic: "\u02c8k\u028ct\u026a\u014b b\u0254\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/cutting-board.webp`,
-    topic: "kitchen-core",
+    topic: "revision-1-1",
     description: "A flat wooden or plastic slab used to slice vegetables.",
   },
   {
@@ -8654,7 +8422,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Knife",
     phonetic: "na\u026af",
     img: `${LOCAL_WORD_IMAGES}/knife.webp`,
-    topic: "kitchen-core",
+    topic: "revision-1-1",
     description: "A sharp utensil with a steel blade used for slicing ingredients.",
   },
   {
@@ -8662,7 +8430,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Sofa",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/living-room/sofa.webp`,
-    topic: "living-core",
+    topic: "revision-1-1",
     description: "A long cushioned piece of furniture with space for several people.",
   },
   {
@@ -8670,7 +8438,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Armchair",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/living-room/armchair.webp`,
-    topic: "living-core",
+    topic: "revision-1-1",
     description: "A comfortable padded single seat with rests on both sides.",
   },
   {
@@ -8678,7 +8446,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Coffee Table",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/living-room/coffee-table.webp`,
-    topic: "living-core",
+    topic: "revision-1-1",
     description: "A low surface placed in front of a couch for holding mugs.",
   },
   {
@@ -8686,7 +8454,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Television",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/living-room/television.webp`,
-    topic: "living-core",
+    topic: "revision-1-2",
     description: "An electronic screen that displays broadcasts and movies.",
   },
   {
@@ -8694,7 +8462,7 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Rug",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/rug.webp`,
-    topic: "living-core",
+    topic: "revision-1-2",
     description: "A soft decorative floor mat placed over hardwood boards.",
   },
   {
@@ -8702,56 +8470,59 @@ export const REVISION_1_VOCABULARY: VocabularyItem[] = [
     label: "Curtain",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/living-room/curtain.webp`,
-    topic: "living-core",
+    topic: "revision-1-2",
     description: "Hanging fabric panels that slide across glass panes for privacy.",
   },
 ];
 
 export const REVISION_2_TOPICS: TopicCategory[] = [
   {
-    id: "farm-core",
-    name: "Farm Foundations",
-    itemsCount: 6,
+    id: "revision-2-1",
+    name: "Revision 2 Part 1",
+    itemsCount: 15,
   },
   {
-    id: "garden-core",
-    name: "Garden Life",
-    itemsCount: 6,
-  },
-  {
-    id: "bathroom-core",
-    name: "Personal Care",
-    itemsCount: 6,
+    id: "revision-2-2",
+    name: "Revision 2 Part 2",
+    itemsCount: 3,
   },
 ];
 
 export const REVISION_2_GROUPS: Lesson[] = [
   {
-    id: "rev2-group-1",
-    name: "Farm Life",
-    topicId: "farm-core",
-    wordIds: ["cow", "horse", "sheep", "tractor", "barn", "hen-house"],
-    description: "Review essential farm vocabulary.",
+    id: "revision-2-1",
+    name: "Revision 2 Basics 1",
+    description:
+      "Learn about Cow, Horse, Sheep, Tractor, Barn, Hen House, Sunflower, Rose, Flower Bed, Watering Can, Wheelbarrow,...",
+    topicId: "revision-2-1",
+    wordIds: [
+      "cow",
+      "horse",
+      "sheep",
+      "tractor",
+      "barn",
+      "hen-house",
+      "sunflower",
+      "rose",
+      "flower-bed",
+      "watering-can",
+      "wheelbarrow",
+      "fence",
+      "toothbrush",
+      "toothpaste",
+      "towel",
+    ],
     story:
-      "The farmer parked his green tractor outside the big red barn where a gentle cow, a woolly sheep, and a strong horse were resting, before collecting eggs from the wooden hen house.",
+      "In this section, you will learn about Cow, Horse, Sheep, Tractor, Barn, Hen House, Sunflower, Rose, Flower Bed, Watering Can, Wheelbarrow, Fence, Toothbrush, Toothpaste, Towel. These are essential items to know.",
   },
   {
-    id: "rev2-group-2",
-    name: "Garden & Greenery",
-    topicId: "garden-core",
-    wordIds: ["sunflower", "rose", "flower-bed", "watering-can", "wheelbarrow", "fence"],
-    description: "Review essential garden vocabulary.",
+    id: "revision-2-2",
+    name: "Revision 2 Basics 2",
+    description: "Learn about Soap, Shower, Mirror...",
+    topicId: "revision-2-2",
+    wordIds: ["soap", "shower", "mirror"],
     story:
-      "She filled her metal watering can to nourish a red rose and each tall sunflower in the flower bed, before pushing a loaded wheelbarrow along the fence.",
-  },
-  {
-    id: "rev2-group-3",
-    name: "Personal Hygiene",
-    topicId: "bathroom-core",
-    wordIds: ["toothbrush", "toothpaste", "towel", "soap", "shower", "mirror"],
-    description: "Review essential bathroom vocabulary.",
-    story:
-      "He squeezed fresh toothpaste onto his toothbrush, washed his hands with fragrant soap, and stepped into the warm shower before drying off with a soft towel in front of the clear mirror.",
+      "In this section, you will learn about Soap, Shower, Mirror. These are essential items to know.",
   },
 ];
 
@@ -8761,7 +8532,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Cow",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/farm/cow.webp`,
-    topic: "farm-core",
+    topic: "revision-2-1",
     description: "A large female bovine animal raised on pastures for fresh dairy.",
   },
   {
@@ -8769,7 +8540,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Horse",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/farm/horse.webp`,
-    topic: "farm-core",
+    topic: "revision-2-1",
     description: "A majestic four-legged equine with hooves and a flowing mane.",
   },
   {
@@ -8777,7 +8548,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Sheep",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/farm/sheep.webp`,
-    topic: "farm-core",
+    topic: "revision-2-1",
     description: "A gentle grazing animal covered in a thick fleece of wool.",
   },
   {
@@ -8785,7 +8556,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Tractor",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/farm/tractor.webp`,
-    topic: "farm-core",
+    topic: "revision-2-1",
     description: "A heavy motor vehicle with giant treaded wheels used in agriculture.",
   },
   {
@@ -8793,7 +8564,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Barn",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/farm/barn.webp`,
-    topic: "farm-core",
+    topic: "revision-2-1",
     description: "A tall red wooden farm building used to shelter livestock and grain.",
   },
   {
@@ -8801,7 +8572,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Hen House",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/farm/hen-house.webp`,
-    topic: "farm-core",
+    topic: "revision-2-1",
     description: "A wooden coop where feathered birds roost and lay fresh eggs.",
   },
   {
@@ -8809,7 +8580,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Sunflower",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/garden/sunflower.webp`,
-    topic: "garden-core",
+    topic: "revision-2-1",
     description: "A tall bright blossom with golden petals that faces the sun.",
   },
   {
@@ -8817,7 +8588,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Rose",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/garden/rose.webp`,
-    topic: "garden-core",
+    topic: "revision-2-1",
     description: "A fragrant flowering bloom with soft red petals and prickly stems.",
   },
   {
@@ -8825,7 +8596,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Flower Bed",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/garden/flower-bed.webp`,
-    topic: "garden-core",
+    topic: "revision-2-1",
     description: "An arranged soil plot planted with vibrant blossoming flora.",
   },
   {
@@ -8833,7 +8604,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Watering Can",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/garden/watering-can.webp`,
-    topic: "garden-core",
+    topic: "revision-2-1",
     description: "A portable metal jug with a spout used to hydrate flora.",
   },
   {
@@ -8841,7 +8612,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Wheelbarrow",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/garden/wheelbarrow.webp`,
-    topic: "garden-core",
+    topic: "revision-2-1",
     description: "A deep single-wheeled open cart with two handles pushed by hand.",
   },
   {
@@ -8849,7 +8620,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Fence",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/garden/fence.webp`,
-    topic: "garden-core",
+    topic: "revision-2-1",
     description: "A boundary barrier built from wooden slats or metal wire.",
   },
   {
@@ -8857,7 +8628,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Toothbrush",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/bathroom/toothbrush.webp`,
-    topic: "bathroom-core",
+    topic: "revision-2-1",
     description: "A handheld hygiene tool with nylon bristles used on teeth.",
   },
   {
@@ -8865,7 +8636,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Toothpaste",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/bathroom/toothpaste.webp`,
-    topic: "bathroom-core",
+    topic: "revision-2-1",
     description: "A cleansing mint paste squeezed from a tube onto bristles.",
   },
   {
@@ -8873,7 +8644,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Towel",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/bathroom/towel.webp`,
-    topic: "bathroom-core",
+    topic: "revision-2-1",
     description: "An absorbent terry cloth fabric used to dry skin after bathing.",
   },
   {
@@ -8881,7 +8652,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Soap",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/bathroom/soap.webp`,
-    topic: "bathroom-core",
+    topic: "revision-2-2",
     description: "A fragrant solid bar that lathers with warm water to cleanse.",
   },
   {
@@ -8889,7 +8660,7 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Shower",
     phonetic: "\u02c8\u0283a\u028a\u0259r",
     img: `${LOCAL_WORD_IMAGES}/bathroom/shower.webp`,
-    topic: "bathroom-core",
+    topic: "revision-2-2",
     description: "An enclosure where water sprays from an overhead nozzle.",
   },
   {
@@ -8897,63 +8668,59 @@ export const REVISION_2_VOCABULARY: VocabularyItem[] = [
     label: "Mirror",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/bathroom/mirror.webp`,
-    topic: "bathroom-core",
+    topic: "revision-2-2",
     description: "A reflective glass panel that shows your own reflection.",
   },
 ];
 
 export const REVISION_3_TOPICS: TopicCategory[] = [
   {
-    id: "play-core",
-    name: "Playground Action",
-    itemsCount: 6,
+    id: "revision-3-1",
+    name: "Revision 3 Part 1",
+    itemsCount: 15,
   },
   {
-    id: "class-core",
-    name: "Classroom Essentials",
-    itemsCount: 6,
-  },
-  {
-    id: "library-core",
-    name: "Library Discovery",
-    itemsCount: 6,
+    id: "revision-3-2",
+    name: "Revision 3 Part 2",
+    itemsCount: 3,
   },
 ];
 
 export const REVISION_3_GROUPS: Lesson[] = [
   {
-    id: "rev3-group-1",
-    name: "Playground Fun",
-    topicId: "play-core",
-    wordIds: ["slide", "swing", "seesaw", "sandbox", "bench", "monkey-bars"],
-    description: "Review essential playground vocabulary.",
-    story:
-      "Children zoomed down the spiral slide, soared high on the chain swing, balanced on the wooden seesaw, built castles in the sandbox, swung across the monkey bars, and rested on the park bench.",
-  },
-  {
-    id: "rev3-group-2",
-    name: "Classroom Essentials",
-    topicId: "class-core",
-    wordIds: ["desk", "chair", "blackboard", "pencil", "notebook", "backpack"],
-    description: "Review essential classroom vocabulary.",
-    story:
-      "The student sat on her wooden chair at the study desk, took a sharpened pencil and a lined notebook out of her backpack, and copied vocabulary from the teacher's blackboard.",
-  },
-  {
-    id: "rev3-group-3",
-    name: "Library & Reading",
-    topicId: "library-core",
+    id: "revision-3-1",
+    name: "Revision 3 Basics 1",
+    description:
+      "Learn about Slide, Swing, Seesaw, Sandbox, Bench, Monkey Bars, Desk, Chair, Blackboard, Pencil, Notebook, Backpa...",
+    topicId: "revision-3-1",
     wordIds: [
+      "slide",
+      "swing",
+      "seesaw",
+      "sandbox",
+      "bench",
+      "monkey-bars",
+      "desk",
+      "chair",
+      "blackboard",
+      "pencil",
+      "notebook",
+      "backpack",
       "bookshelf",
       "bookmark",
       "reference-book",
-      "picture-book",
-      "comic-book",
-      "poetry-book",
     ],
-    description: "Review essential library vocabulary.",
     story:
-      "He browsed the tall bookshelf using a leather bookmark, selecting a heavy reference book, a colorful picture book, an exciting comic book, and a classic poetry book.",
+      "In this section, you will learn about Slide, Swing, Seesaw, Sandbox, Bench, Monkey Bars, Desk, Chair, Blackboard, Pencil, Notebook, Backpack, Bookshelf, Bookmark, Reference Book. These are essential items to know.",
+  },
+  {
+    id: "revision-3-2",
+    name: "Revision 3 Basics 2",
+    description: "Learn about Picture Book, Comic Book, Poetry Book...",
+    topicId: "revision-3-2",
+    wordIds: ["picture-book", "comic-book", "poetry-book"],
+    story:
+      "In this section, you will learn about Picture Book, Comic Book, Poetry Book. These are essential items to know.",
   },
 ];
 
@@ -8963,7 +8730,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Slide",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/playground/slide.webp`,
-    topic: "play-core",
+    topic: "revision-3-1",
     description: "An inclined playground chute that children glide down joyfully.",
   },
   {
@@ -8971,7 +8738,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Swing",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/playground/swing.webp`,
-    topic: "play-core",
+    topic: "revision-3-1",
     description: "A hanging seat suspended by chains that sways back and forth.",
   },
   {
@@ -8979,7 +8746,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Seesaw",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/playground/seesaw.webp`,
-    topic: "play-core",
+    topic: "revision-3-1",
     description: "A long plank balanced on a central pivot that tilts up and down.",
   },
   {
@@ -8987,7 +8754,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Sandbox",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/playground/sandbox.webp`,
-    topic: "play-core",
+    topic: "revision-3-1",
     description: "A shallow pit filled with fine golden grains for building castles.",
   },
   {
@@ -8995,7 +8762,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Bench",
     phonetic: "b\u025bnt\u0283",
     img: `${LOCAL_WORD_IMAGES}/playground/bench.webp`,
-    topic: "play-core",
+    topic: "revision-3-1",
     description: "A sturdy outdoor seat for parents supervising children at play.",
   },
   {
@@ -9003,7 +8770,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Monkey Bars",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/playground/monkey-bars.webp`,
-    topic: "play-core",
+    topic: "revision-3-1",
     description: "An elevated overhead ladder of steel rungs that kids swing across.",
   },
   {
@@ -9011,7 +8778,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Desk",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/classroom/desk.webp`,
-    topic: "class-core",
+    topic: "revision-3-1",
     description: "A wooden study workstation with legs where students complete lessons.",
   },
   {
@@ -9019,7 +8786,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Chair",
     phonetic: "t\u0283\u025b\u0259r",
     img: `${LOCAL_WORD_IMAGES}/classroom/chair.webp`,
-    topic: "class-core",
+    topic: "revision-3-1",
     description: "A four-legged seat with a backrest used by students in school.",
   },
   {
@@ -9027,7 +8794,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Blackboard",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/classroom/blackboard.webp`,
-    topic: "class-core",
+    topic: "revision-3-1",
     description: "A large dark wall surface written on with white chalk.",
   },
   {
@@ -9035,7 +8802,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Pencil",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/classroom/pencil.webp`,
-    topic: "class-core",
+    topic: "revision-3-1",
     description: "A graphite writing instrument encased in wood with an eraser.",
   },
   {
@@ -9043,7 +8810,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Notebook",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/classroom/notebook.webp`,
-    topic: "class-core",
+    topic: "revision-3-1",
     description: "A bound booklet with lined paper pages used for writing notes.",
   },
   {
@@ -9051,7 +8818,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Backpack",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/classroom/backpack.webp`,
-    topic: "class-core",
+    topic: "revision-3-1",
     description: "A fabric shoulder bag with straps used to carry books to school.",
   },
   {
@@ -9059,7 +8826,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Bookshelf",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/library/bookshelf.webp`,
-    topic: "library-core",
+    topic: "revision-3-1",
     description: "A tall upright wooden furniture unit with horizontal shelves.",
   },
   {
@@ -9067,7 +8834,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Bookmark",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/library/bookmark.webp`,
-    topic: "library-core",
+    topic: "revision-3-1",
     description: "A slim paper strip placed between leaves to mark your reading place.",
   },
   {
@@ -9075,7 +8842,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Reference Book",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/library/reference-book.webp`,
-    topic: "library-core",
+    topic: "revision-3-1",
     description: "A comprehensive factual volume used for scholarly research.",
   },
   {
@@ -9083,7 +8850,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Picture Book",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/library/picture-book.webp`,
-    topic: "library-core",
+    topic: "revision-3-2",
     description: "An illustrated story volume with vibrant artwork on every page.",
   },
   {
@@ -9091,7 +8858,7 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Comic Book",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/library/comic-book.webp`,
-    topic: "library-core",
+    topic: "revision-3-2",
     description: "A graphic narrative magazine featuring serialized illustrated panels.",
   },
   {
@@ -9099,70 +8866,70 @@ export const REVISION_3_VOCABULARY: VocabularyItem[] = [
     label: "Poetry Book",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/library/poetry-book.webp`,
-    topic: "library-core",
+    topic: "revision-3-2",
     description: "A literary collection containing rhythmic verses and lyrical stanzas.",
   },
 ];
 
 export const REVISION_MILESTONE_1_TOPICS: TopicCategory[] = [
   {
-    id: "mile-home",
-    name: "Home Living",
-    itemsCount: 6,
+    id: "revision-milestone-1-1",
+    name: "Revision Milestone 1 Part 1",
+    itemsCount: 15,
   },
   {
-    id: "mile-nature",
-    name: "Nature & Self",
-    itemsCount: 6,
-  },
-  {
-    id: "mile-school",
-    name: "Learning & Play",
-    itemsCount: 6,
-  },
-  {
-    id: "mile-market",
-    name: "Food & Market",
-    itemsCount: 6,
+    id: "revision-milestone-1-2",
+    name: "Revision Milestone 1 Part 2",
+    itemsCount: 9,
   },
 ];
 
 export const REVISION_MILESTONE_1_GROUPS: Lesson[] = [
   {
-    id: "mile1-group-1",
-    name: "Home & Living Synthesis",
-    topicId: "mile-home",
-    wordIds: ["bed", "lamp", "refrigerator", "knife", "sofa", "curtain"],
-    description: "Review core home vocabulary.",
+    id: "revision-milestone-1-1",
+    name: "Revision Milestone 1 Basics 1",
+    description:
+      "Learn about Bed, Lamp, Refrigerator, Knife, Sofa, Curtain, Cow, Tractor, Sunflower, Flower Bed, Toothbrush, Show...",
+    topicId: "revision-milestone-1-1",
+    wordIds: [
+      "bed",
+      "lamp",
+      "refrigerator",
+      "knife",
+      "sofa",
+      "curtain",
+      "cow",
+      "tractor",
+      "sunflower",
+      "flower-bed",
+      "toothbrush",
+      "shower",
+      "slide",
+      "swing",
+      "desk",
+    ],
     story:
-      "After getting up from her bed and switching off the lamp, she prepared a morning snack using a knife and fresh fruit from the refrigerator, then relaxed on the living room sofa by the window curtain.",
+      "In this section, you will learn about Bed, Lamp, Refrigerator, Knife, Sofa, Curtain, Cow, Tractor, Sunflower, Flower Bed, Toothbrush, Shower, Slide, Swing, Desk. These are essential items to know.",
   },
   {
-    id: "mile1-group-2",
-    name: "Nature & Personal Synthesis",
-    topicId: "mile-nature",
-    wordIds: ["cow", "tractor", "sunflower", "flower-bed", "toothbrush", "shower"],
-    description: "Review nature and hygiene vocabulary.",
+    id: "revision-milestone-1-2",
+    name: "Revision Milestone 1 Basics 2",
+    description:
+      "Learn about Pencil, Bookshelf, Reference Book, Apple, Bread, Milk, Cash Register, Shopping Cart, Checkout...",
+    topicId: "revision-milestone-1-2",
+    wordIds: [
+      "pencil",
+      "bookshelf",
+      "reference-book",
+      "apple",
+      "bread",
+      "milk",
+      "cash-register",
+      "shopping-cart",
+      "checkout",
+    ],
     story:
-      "The farmer drove his tractor past a grazing cow and a vibrant flower bed with a tall sunflower, before heading home to take a warm shower and clean his teeth with a toothbrush.",
-  },
-  {
-    id: "mile1-group-3",
-    name: "School & Play Synthesis",
-    topicId: "mile-school",
-    wordIds: ["slide", "swing", "desk", "pencil", "bookshelf", "reference-book"],
-    description: "Review school and play vocabulary.",
-    story:
-      "Students played on the playground swing and slide before returning to their classroom desk to take notes with a sharp pencil and read an informative reference book from the wooden bookshelf.",
-  },
-  {
-    id: "mile1-group-4",
-    name: "Food & Market Synthesis",
-    topicId: "mile-market",
-    wordIds: ["apple", "bread", "milk", "cash-register", "shopping-cart", "checkout"],
-    description: "Review market and food vocabulary.",
-    story:
-      "At the grocery store, she filled her metal shopping cart with a crisp apple, fresh bread, and cold milk before heading to the checkout where the cashier operated the cash register.",
+      "In this section, you will learn about Pencil, Bookshelf, Reference Book, Apple, Bread, Milk, Cash Register, Shopping Cart, Checkout. These are essential items to know.",
   },
 ];
 
@@ -9172,7 +8939,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Bed",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/bed.webp`,
-    topic: "mile-home",
+    topic: "revision-milestone-1-1",
     description: "A primary sleeping frame with a soft mattress and headboard.",
   },
   {
@@ -9180,7 +8947,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Lamp",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/lamp.webp`,
-    topic: "mile-home",
+    topic: "revision-milestone-1-1",
     description: "A bedside electrical fixture with a translucent cover providing illumination.",
   },
   {
@@ -9188,7 +8955,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Refrigerator",
     phonetic: "r\u026a\u02c8fr\u026ad\u0292\u0259re\u026at\u0259r",
     img: `${LOCAL_WORD_IMAGES}/refrigerator.webp`,
-    topic: "mile-home",
+    topic: "revision-milestone-1-1",
     description: "An insulated cooling cabinet that preserves fresh milk and food.",
   },
   {
@@ -9196,7 +8963,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Knife",
     phonetic: "na\u026af",
     img: `${LOCAL_WORD_IMAGES}/knife.webp`,
-    topic: "mile-home",
+    topic: "revision-milestone-1-1",
     description: "A cutting utensil with a sharp blade used to prepare meals.",
   },
   {
@@ -9204,7 +8971,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Sofa",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/living-room/sofa.webp`,
-    topic: "mile-home",
+    topic: "revision-milestone-1-1",
     description: "A plush upholstered couch designed for comfortable relaxation.",
   },
   {
@@ -9212,7 +8979,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Curtain",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/living-room/curtain.webp`,
-    topic: "mile-home",
+    topic: "revision-milestone-1-1",
     description: "A movable fabric drape that shades interior windows from sunlight.",
   },
   {
@@ -9220,7 +8987,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Cow",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/farm/cow.webp`,
-    topic: "mile-nature",
+    topic: "revision-milestone-1-1",
     description: "A female horned pasture animal that produces fresh farm dairy.",
   },
   {
@@ -9228,7 +8995,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Tractor",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/farm/tractor.webp`,
-    topic: "mile-nature",
+    topic: "revision-milestone-1-1",
     description: "A rugged diesel vehicle used to plow furrows and haul harvests.",
   },
   {
@@ -9236,7 +9003,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Sunflower",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/garden/sunflower.webp`,
-    topic: "mile-nature",
+    topic: "revision-milestone-1-1",
     description: "A tall golden garden bloom that turns toward morning rays.",
   },
   {
@@ -9244,7 +9011,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Flower Bed",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/garden/flower-bed.webp`,
-    topic: "mile-nature",
+    topic: "revision-milestone-1-1",
     description: "A cultivated soil plot blooming with vibrant garden perennials.",
   },
   {
@@ -9252,7 +9019,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Toothbrush",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/bathroom/toothbrush.webp`,
-    topic: "mile-nature",
+    topic: "revision-milestone-1-1",
     description: "A small bristle wand used with paste for daily dental hygiene.",
   },
   {
@@ -9260,7 +9027,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Shower",
     phonetic: "\u02c8\u0283a\u028a\u0259r",
     img: `${LOCAL_WORD_IMAGES}/bathroom/shower.webp`,
-    topic: "mile-nature",
+    topic: "revision-milestone-1-1",
     description: "A bathing stall with spraying overhead water for washing.",
   },
   {
@@ -9268,7 +9035,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Slide",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/playground/slide.webp`,
-    topic: "mile-school",
+    topic: "revision-milestone-1-1",
     description: "A smooth angled ramp that playground visitors glide down.",
   },
   {
@@ -9276,7 +9043,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Swing",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/playground/swing.webp`,
-    topic: "mile-school",
+    topic: "revision-milestone-1-1",
     description: "A hanging seat attached to chains that rocks in an arc.",
   },
   {
@@ -9284,7 +9051,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Desk",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/classroom/desk.webp`,
-    topic: "mile-school",
+    topic: "revision-milestone-1-1",
     description: "A flat wooden workstation where learners study and write.",
   },
   {
@@ -9292,7 +9059,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Pencil",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/classroom/pencil.webp`,
-    topic: "mile-school",
+    topic: "revision-milestone-1-2",
     description: "A pointed wooden cylinder filled with erasable graphite core.",
   },
   {
@@ -9300,7 +9067,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Bookshelf",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/library/bookshelf.webp`,
-    topic: "mile-school",
+    topic: "revision-milestone-1-2",
     description: "A wooden library unit with sturdy shelves storing volumes.",
   },
   {
@@ -9308,7 +9075,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Reference Book",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/library/reference-book.webp`,
-    topic: "mile-school",
+    topic: "revision-milestone-1-2",
     description: "A comprehensive volume packed with facts and encyclopedia articles.",
   },
   {
@@ -9316,7 +9083,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Apple",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/market/apple.webp`,
-    topic: "mile-market",
+    topic: "revision-milestone-1-2",
     description: "A crisp round orchard fruit with red peel and sweet white pulp.",
   },
   {
@@ -9324,7 +9091,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Bread",
     phonetic: "br\u025bd",
     img: `${LOCAL_WORD_IMAGES}/market/bread.webp`,
-    topic: "mile-market",
+    topic: "revision-milestone-1-2",
     description: "A baked staple food made from leavened flour dough.",
   },
   {
@@ -9332,7 +9099,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Milk",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/market/milk.webp`,
-    topic: "mile-market",
+    topic: "revision-milestone-1-2",
     description: "A nutritious white beverage produced by dairy livestock.",
   },
   {
@@ -9340,7 +9107,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Cash Register",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/market/cash-register.webp`,
-    topic: "mile-market",
+    topic: "revision-milestone-1-2",
     description: "An electronic machine that computes purchases and holds paper currency.",
   },
   {
@@ -9348,7 +9115,7 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Shopping Cart",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/market/shopping-cart.webp`,
-    topic: "mile-market",
+    topic: "revision-milestone-1-2",
     description: "A wheeled metal basket used to gather groceries in aisles.",
   },
   {
@@ -9356,159 +9123,183 @@ export const REVISION_MILESTONE_1_VOCABULARY: VocabularyItem[] = [
     label: "Checkout",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/market/checkout.webp`,
-    topic: "mile-market",
+    topic: "revision-milestone-1-2",
     description: "A retail payment station where items are scanned and bagged.",
   },
 ];
 
 export const RESTAURANT_TOPICS: TopicCategory[] = [
   {
-    id: "dining-area",
-    name: "Dining Area",
-    itemsCount: 14,
-  },
-  {
-    id: "tableware",
-    name: "Tableware & Cutlery",
-    itemsCount: 14,
-  },
-  {
-    id: "ordering-service",
-    name: "Ordering & Service",
-    itemsCount: 11,
-  },
-  {
-    id: "kitchen-equipment",
-    name: "Kitchen Equipment",
-    itemsCount: 13,
-  },
-  {
-    id: "food-dishes",
-    name: "Food & Dishes",
+    id: "restaurant-1",
+    name: "Restaurant Part 1",
     itemsCount: 15,
   },
   {
-    id: "beverage-staff",
-    name: "Staff & Beverages",
-    itemsCount: 12,
+    id: "restaurant-2",
+    name: "Restaurant Part 2",
+    itemsCount: 15,
+  },
+  {
+    id: "restaurant-3",
+    name: "Restaurant Part 3",
+    itemsCount: 15,
+  },
+  {
+    id: "restaurant-4",
+    name: "Restaurant Part 4",
+    itemsCount: 15,
+  },
+  {
+    id: "restaurant-5",
+    name: "Restaurant Part 5",
+    itemsCount: 15,
+  },
+  {
+    id: "restaurant-6",
+    name: "Restaurant Part 6",
+    itemsCount: 4,
   },
 ];
 
 export const RESTAURANT_GROUPS: Lesson[] = [
   {
-    id: "rest-group-1",
-    name: "Dining Area Layout",
-    topicId: "dining-area",
-    wordIds: ["table", "chair", "booth", "menu", "napkin", "tablecloth", "candle", "centerpiece"],
-    description: "Learn about the dining room layout.",
-    story:
-      "We sat at a candlelit table covered in a white tablecloth, where a fresh centerpiece decorated the center. The server pulled out a wooden chair, while children sat in a cozy booth unfolding their napkin and browsing the dinner menu.",
-  },
-  {
-    id: "rest-group-2",
-    name: "Table Setup & Seating",
-    topicId: "dining-area",
+    id: "restaurant-1",
+    name: "Restaurant Basics 1",
+    description:
+      "Learn about Table, Chair, Booth, Menu, Napkin, Tablecloth, Candle, Centerpiece, Place Setting, Salt Shaker, Pepp...",
+    topicId: "restaurant-1",
     wordIds: [
+      "table",
+      "chair",
+      "booth",
+      "menu",
+      "napkin",
+      "tablecloth",
+      "candle",
+      "centerpiece",
       "place-setting",
       "salt-shaker",
       "pepper-shaker",
       "high-chair",
       "bar-stool",
       "counter",
+      "plate",
     ],
-    description: "Learn about table setups and seating.",
     story:
-      "Each guest had a formal place setting with a matching salt shaker and pepper shaker. The host provided a high chair for the toddler, while friends sat on tall bar stool seats along the marble service counter.",
+      "In this section, you will learn about Table, Chair, Booth, Menu, Napkin, Tablecloth, Candle, Centerpiece, Place Setting, Salt Shaker, Pepper Shaker, High Chair, Bar Stool, Counter, Plate. These are essential items to know.",
   },
   {
-    id: "rest-group-3",
-    name: "Plates, Bowls & Glassware",
-    topicId: "tableware",
-    wordIds: ["plate", "bowl", "glass", "fork", "knife", "spoon", "pitcher", "wine-glass"],
-    description: "Learn about essential dining tableware.",
+    id: "restaurant-2",
+    name: "Restaurant Basics 2",
+    description:
+      "Learn about Bowl, Glass, Fork, Knife, Spoon, Cup, Saucer, Mug, Chopsticks, Straw, Serving Tray, Pitcher, Wine Gl...",
+    topicId: "restaurant-2",
+    wordIds: [
+      "bowl",
+      "glass",
+      "fork",
+      "knife",
+      "spoon",
+      "cup",
+      "saucer",
+      "mug",
+      "chopsticks",
+      "straw",
+      "serving-tray",
+      "pitcher",
+      "wine-glass",
+      "appetizer",
+      "main-course",
+    ],
     story:
-      "The server set a dinner plate, a soup bowl, and a water glass on the table. We picked up our fork, sharp knife, and dessert spoon while the host poured chilled water from a glass pitcher into an elegant wine glass.",
+      "In this section, you will learn about Bowl, Glass, Fork, Knife, Spoon, Cup, Saucer, Mug, Chopsticks, Straw, Serving Tray, Pitcher, Wine Glass, Appetizer, Main Course. These are essential items to know.",
   },
   {
-    id: "rest-group-4",
-    name: "Cups, Straws & Trays",
-    topicId: "tableware",
-    wordIds: ["cup", "saucer", "mug", "chopsticks", "straw", "serving-tray"],
-    description: "Learn about cups, utensils, and serving trays.",
+    id: "restaurant-3",
+    name: "Restaurant Basics 3",
+    description:
+      "Learn about Dessert, Side Dish, Special, Bill, Check, Tip, Receipt, Reservation, Order Pad, Oven, Stove, Grill, ...",
+    topicId: "restaurant-3",
+    wordIds: [
+      "dessert",
+      "side-dish",
+      "special",
+      "bill",
+      "check",
+      "tip",
+      "receipt",
+      "reservation",
+      "order-pad",
+      "oven",
+      "stove",
+      "grill",
+      "fryer",
+      "pot",
+      "pan",
+    ],
     story:
-      "The server carried a heavy serving tray with a coffee cup and saucer, a hot cocoa mug, bamboo chopsticks for noodles, and a paper straw for the fruit juice.",
+      "In this section, you will learn about Dessert, Side Dish, Special, Bill, Check, Tip, Receipt, Reservation, Order Pad, Oven, Stove, Grill, Fryer, Pot, Pan. These are essential items to know.",
   },
   {
-    id: "rest-group-5",
-    name: "Ordering Courses",
-    topicId: "ordering-service",
-    wordIds: ["appetizer", "main-course", "dessert", "side-dish", "special"],
-    description: "Learn about ordering restaurant courses.",
+    id: "restaurant-4",
+    name: "Restaurant Basics 4",
+    description:
+      "Learn about Cutting Board, Ladle, Spatula, Whisk, Mixer, Refrigerator, Freezer, Sink, Soup, Salad, Steak, Pasta,...",
+    topicId: "restaurant-4",
+    wordIds: [
+      "cutting-board",
+      "ladle",
+      "spatula",
+      "whisk",
+      "mixer",
+      "refrigerator",
+      "freezer",
+      "sink",
+      "soup",
+      "salad",
+      "steak",
+      "pasta",
+      "pizza",
+      "sandwich",
+      "burger",
+    ],
     story:
-      "We chose a crispy appetizer and today's chef special. For our main course, we ordered grilled fish with a vegetable side dish and saved room for sweet chocolate dessert.",
+      "In this section, you will learn about Cutting Board, Ladle, Spatula, Whisk, Mixer, Refrigerator, Freezer, Sink, Soup, Salad, Steak, Pasta, Pizza, Sandwich, Burger. These are essential items to know.",
   },
   {
-    id: "rest-group-6",
-    name: "Billing & Reservations",
-    topicId: "ordering-service",
-    wordIds: ["bill", "check", "tip", "receipt", "reservation", "order-pad"],
-    description: "Learn about billing and reservations.",
+    id: "restaurant-5",
+    name: "Restaurant Basics 5",
+    description:
+      "Learn about Sushi, Rice, Bread, Sauce, Dressing, Garnish, Seasoning, Waiter, Waitress, Chef, Cook, Host, Hostess...",
+    topicId: "restaurant-5",
+    wordIds: [
+      "sushi",
+      "rice",
+      "bread",
+      "sauce",
+      "dressing",
+      "garnish",
+      "seasoning",
+      "waiter",
+      "waitress",
+      "chef",
+      "cook",
+      "host",
+      "hostess",
+      "busser",
+      "bartender",
+    ],
     story:
-      "The waiter noted our initial reservation and wrote requests on his order pad. At the end of dinner, he brought the check and itemized bill, where we added a generous tip and kept the payment receipt.",
+      "In this section, you will learn about Sushi, Rice, Bread, Sauce, Dressing, Garnish, Seasoning, Waiter, Waitress, Chef, Cook, Host, Hostess, Busser, Bartender. These are essential items to know.",
   },
   {
-    id: "rest-group-7",
-    name: "Kitchen Cookware & Heat",
-    topicId: "kitchen-equipment",
-    wordIds: ["oven", "stove", "grill", "fryer", "pot", "pan", "cutting-board"],
-    description: "Learn about kitchen cooking equipment.",
+    id: "restaurant-6",
+    name: "Restaurant Basics 6",
+    description: "Learn about Dishwasher, Manager, Sommelier, Barista...",
+    topicId: "restaurant-6",
+    wordIds: ["dishwasher", "manager", "sommelier", "barista"],
     story:
-      "In the kitchen, the chef chopped herbs on the cutting board, simmered broth in a pot, seared meat in a pan on the stove, baked loaves in the hot oven, roasted steaks on the grill, and fried potatoes in the fryer.",
-  },
-  {
-    id: "rest-group-8",
-    name: "Kitchen Tools & Cold Storage",
-    topicId: "kitchen-equipment",
-    wordIds: ["ladle", "spatula", "whisk", "mixer", "refrigerator", "freezer"],
-    description: "Learn about kitchen prep tools and storage.",
-    story:
-      "The cook used a soup ladle, a flat spatula, a wire whisk, and an electric mixer to prepare sauces, before storing fresh dairy in the refrigerator and frozen goods in the freezer.",
-  },
-  {
-    id: "rest-group-9",
-    name: "Appetizers, Mains & Italian Dishes",
-    topicId: "food-dishes",
-    wordIds: ["sink", "soup", "salad", "steak", "pasta", "pizza", "sandwich", "burger"],
-    description: "Learn about popular restaurant food.",
-    story:
-      "After washing dishes in the sink, the kitchen served hot vegetable soup, a fresh garden salad, a juicy grilled steak, creamy Italian pasta, wood-fired cheese pizza, a toasted club sandwich, and a beef burger.",
-  },
-  {
-    id: "rest-group-10",
-    name: "Side Dishes, Seasoning & Garnish",
-    topicId: "food-dishes",
-    wordIds: ["sushi", "rice", "bread", "sauce", "dressing", "garnish", "seasoning"],
-    description: "Learn about sides, dressings, and seasoning.",
-    story:
-      "We sampled fresh salmon sushi, steamed white rice, and warm crusty bread with savory mushroom sauce. The salad dressing had flavorful seasoning, and the plate had a fresh parsley garnish.",
-  },
-  {
-    id: "rest-group-11",
-    name: "Front of House Hospitality",
-    topicId: "beverage-staff",
-    wordIds: ["waiter", "waitress", "host", "hostess", "busser", "manager"],
-    description: "Learn about dining room staff roles.",
-    story:
-      "The polite host and hostess greeted us warmly at the door. Our helpful waiter and attentive waitress brought dishes quickly, while the diligent busser cleared tables and the general manager checked on our comfort.",
-  },
-  {
-    id: "rest-group-12",
-    name: "Kitchen & Beverage Specialists",
-    topicId: "beverage-staff",
-    wordIds: ["chef", "cook", "bartender", "dishwasher", "sommelier", "barista"],
-    description: "Learn about kitchen and drink experts.",
-    story:
-      "The executive chef and line cook prepared culinary entrees, the sommelier recommended fine pairings, the bartender mixed chilled beverages, the dishwasher cleaned plates, and the skilled barista brewed espresso.",
+      "In this section, you will learn about Dishwasher, Manager, Sommelier, Barista. These are essential items to know.",
   },
 ];
 
@@ -9518,7 +9309,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Table",
     phonetic: "\u02c8te\u026ab\u0259l",
     img: `${LOCAL_WORD_IMAGES}/restaurant/table.webp`,
-    topic: "dining-area",
+    topic: "restaurant-1",
     description: "A raised wooden or glass surface where diners enjoy meals.",
   },
   {
@@ -9526,7 +9317,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Chair",
     phonetic: "t\u0283\u025b\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/chair.webp`,
-    topic: "dining-area",
+    topic: "restaurant-1",
     description: "A single upright four-legged piece of furniture with a backrest.",
   },
   {
@@ -9534,7 +9325,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Booth",
     phonetic: "bu\u02d0\u00f0",
     img: `${LOCAL_WORD_IMAGES}/restaurant/booth.webp`,
-    topic: "dining-area",
+    topic: "restaurant-1",
     description: "An intimate cushioned dining nook with high padded bench backs.",
   },
   {
@@ -9542,7 +9333,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Menu",
     phonetic: "\u02c8m\u025bnju\u02d0",
     img: `${LOCAL_WORD_IMAGES}/restaurant/menu.webp`,
-    topic: "dining-area",
+    topic: "restaurant-1",
     description: "A printed booklet displaying available culinary dishes and prices.",
   },
   {
@@ -9550,7 +9341,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Napkin",
     phonetic: "\u02c8n\u00e6pk\u026an",
     img: `${LOCAL_WORD_IMAGES}/restaurant/napkin.webp`,
-    topic: "dining-area",
+    topic: "restaurant-1",
     description: "A square piece of cloth or paper used to wipe fingers and lips.",
   },
   {
@@ -9558,7 +9349,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Tablecloth",
     phonetic: "\u02c8te\u026ab\u0259lkl\u0252\u03b8",
     img: `${LOCAL_WORD_IMAGES}/restaurant/tablecloth.webp`,
-    topic: "dining-area",
+    topic: "restaurant-1",
     description: "A large decorative fabric covering draped across dining furniture.",
   },
   {
@@ -9566,7 +9357,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Candle",
     phonetic: "\u02c8k\u00e6nd\u0259l",
     img: `${LOCAL_WORD_IMAGES}/restaurant/candle.webp`,
-    topic: "dining-area",
+    topic: "restaurant-1",
     description: "A wax cylinder with an ignited wick providing warm flickering glow.",
   },
   {
@@ -9574,7 +9365,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Centerpiece",
     phonetic: "\u02c8s\u025bnt\u0259rpi\u02d0s",
     img: `${LOCAL_WORD_IMAGES}/restaurant/centerpiece.webp`,
-    topic: "dining-area",
+    topic: "restaurant-1",
     description: "A decorative ornament or floral vase placed in the middle of a surface.",
   },
   {
@@ -9582,7 +9373,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Place Setting",
     phonetic: "ple\u026as \u02c8s\u025bt\u026a\u014b",
     img: `${LOCAL_WORD_IMAGES}/restaurant/place-setting.webp`,
-    topic: "dining-area",
+    topic: "restaurant-1",
     description: "A complete arrangement of utensils, dishes, and glasses for one guest.",
   },
   {
@@ -9590,7 +9381,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Salt Shaker",
     phonetic: "s\u0254\u02d0lt \u02c8\u0283e\u026ak\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/salt-shaker.webp`,
-    topic: "dining-area",
+    topic: "restaurant-1",
     description: "A small glass container with perforated top for dispensing white crystals.",
   },
   {
@@ -9598,7 +9389,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Pepper Shaker",
     phonetic: "\u02c8p\u025bp\u0259r \u02c8\u0283e\u026ak\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/pepper-shaker.webp`,
-    topic: "dining-area",
+    topic: "restaurant-1",
     description: "A small seasoning container with holes for dispensing dark spice.",
   },
   {
@@ -9606,7 +9397,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "High Chair",
     phonetic: "ha\u026a t\u0283\u025b\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/high-chair.webp`,
-    topic: "dining-area",
+    topic: "restaurant-1",
     description: "An elevated infant seat with protective harness used during meal times.",
   },
   {
@@ -9614,7 +9405,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Bar Stool",
     phonetic: "b\u0251\u02d0r stu\u02d0l",
     img: `${LOCAL_WORD_IMAGES}/restaurant/bar-stool.webp`,
-    topic: "dining-area",
+    topic: "restaurant-1",
     description: "A tall backless or swivel seat designed for elevated service counters.",
   },
   {
@@ -9622,7 +9413,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Counter",
     phonetic: "\u02c8ka\u028ant\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/counter.webp`,
-    topic: "dining-area",
+    topic: "restaurant-1",
     description: "A long flat service bar where customers place requests and eat.",
   },
   {
@@ -9630,7 +9421,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Plate",
     phonetic: "ple\u026at",
     img: `${LOCAL_WORD_IMAGES}/restaurant/plate.webp`,
-    topic: "tableware",
+    topic: "restaurant-1",
     description: "A flat circular ceramic dish on which main food courses are served.",
   },
   {
@@ -9638,7 +9429,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Bowl",
     phonetic: "bo\u028al",
     img: `${LOCAL_WORD_IMAGES}/restaurant/bowl.webp`,
-    topic: "tableware",
+    topic: "restaurant-2",
     description: "A deep round ceramic vessel used for soups, salads, and cereals.",
   },
   {
@@ -9646,7 +9437,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Glass",
     phonetic: "\u0261l\u00e6s",
     img: `${LOCAL_WORD_IMAGES}/restaurant/glass.webp`,
-    topic: "tableware",
+    topic: "restaurant-2",
     description: "A transparent drinking cup designed for cool water or fresh juices.",
   },
   {
@@ -9654,7 +9445,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Fork",
     phonetic: "f\u0254\u02d0rk",
     img: `${LOCAL_WORD_IMAGES}/restaurant/fork.webp`,
-    topic: "tableware",
+    topic: "restaurant-2",
     description: "An eating utensil with three or four metal prongs for spearing food.",
   },
   {
@@ -9662,7 +9453,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Knife",
     phonetic: "na\u026af",
     img: `${LOCAL_WORD_IMAGES}/restaurant/knife.webp`,
-    topic: "tableware",
+    topic: "restaurant-2",
     description: "A cutting utensil with a sharp steel blade used at the dining setting.",
   },
   {
@@ -9670,7 +9461,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Spoon",
     phonetic: "spu\u02d0n",
     img: `${LOCAL_WORD_IMAGES}/restaurant/spoon.webp`,
-    topic: "tableware",
+    topic: "restaurant-2",
     description: "A utensil with a rounded shallow bowl used for soups and desserts.",
   },
   {
@@ -9678,7 +9469,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Cup",
     phonetic: "k\u028cp",
     img: `${LOCAL_WORD_IMAGES}/restaurant/cup.webp`,
-    topic: "tableware",
+    topic: "restaurant-2",
     description: "A small ceramic container with a curved handle for warm beverages.",
   },
   {
@@ -9686,7 +9477,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Saucer",
     phonetic: "\u02c8s\u0254\u02d0s\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/saucer.webp`,
-    topic: "tableware",
+    topic: "restaurant-2",
     description: "A small shallow circular dish placed beneath a hot beverage vessel.",
   },
   {
@@ -9694,7 +9485,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Mug",
     phonetic: "m\u028c\u0261",
     img: `${LOCAL_WORD_IMAGES}/restaurant/mug.webp`,
-    topic: "tableware",
+    topic: "restaurant-2",
     description: "A large heavy ceramic drinking vessel with a sturdy side handle.",
   },
   {
@@ -9702,7 +9493,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Chopsticks",
     phonetic: "\u02c8t\u0283\u0252pst\u026aks",
     img: `${LOCAL_WORD_IMAGES}/restaurant/chopsticks.webp`,
-    topic: "tableware",
+    topic: "restaurant-2",
     description: "A pair of slender wooden sticks used to eat traditional Asian meals.",
   },
   {
@@ -9710,7 +9501,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Straw",
     phonetic: "str\u0254\u02d0",
     img: `${LOCAL_WORD_IMAGES}/restaurant/straw.webp`,
-    topic: "tableware",
+    topic: "restaurant-2",
     description: "A thin hollow tube used to draw liquids directly into the mouth.",
   },
   {
@@ -9718,7 +9509,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Serving Tray",
     phonetic: "\u02c8s\u025c\u02d0rv\u026a\u014b tre\u026a",
     img: `${LOCAL_WORD_IMAGES}/restaurant/serving-tray.webp`,
-    topic: "tableware",
+    topic: "restaurant-2",
     description: "A large flat portable board used by waitstaff to carry food dishes.",
   },
   {
@@ -9726,7 +9517,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Pitcher",
     phonetic: "\u02c8p\u026at\u0283\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/pitcher.webp`,
-    topic: "tableware",
+    topic: "restaurant-2",
     description: "A large container with a spout and handle for pouring cold water.",
   },
   {
@@ -9734,7 +9525,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Wine Glass",
     phonetic: "wa\u026an \u0261l\u00e6s",
     img: `${LOCAL_WORD_IMAGES}/restaurant/wine-glass.webp`,
-    topic: "tableware",
+    topic: "restaurant-2",
     description: "An elegant clear drinking vessel with a delicate stem and wide cup.",
   },
   {
@@ -9742,7 +9533,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Appetizer",
     phonetic: "\u02c8\u00e6p\u026ata\u026az\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/appetizer.webp`,
-    topic: "ordering-service",
+    topic: "restaurant-2",
     description: "A small savory opening dish served before the main course.",
   },
   {
@@ -9750,7 +9541,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Main Course",
     phonetic: "me\u026an k\u0254\u02d0rs",
     img: `${LOCAL_WORD_IMAGES}/restaurant/main-course.webp`,
-    topic: "ordering-service",
+    topic: "restaurant-2",
     description: "The principal substantial dish served during a formal dinner.",
   },
   {
@@ -9758,7 +9549,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Dessert",
     phonetic: "d\u026a\u02c8z\u025c\u02d0rt",
     img: `${LOCAL_WORD_IMAGES}/restaurant/dessert.webp`,
-    topic: "ordering-service",
+    topic: "restaurant-3",
     description: "A sweet course consisting of pastries, cakes, or fruit after dinner.",
   },
   {
@@ -9766,7 +9557,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Side Dish",
     phonetic: "sa\u026ad d\u026a\u0283",
     img: `${LOCAL_WORD_IMAGES}/restaurant/side-dish.webp`,
-    topic: "ordering-service",
+    topic: "restaurant-3",
     description: "An auxiliary portion of vegetables or potatoes accompanying an entree.",
   },
   {
@@ -9774,7 +9565,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Special",
     phonetic: "\u02c8sp\u025b\u0283\u0259l",
     img: `${LOCAL_WORD_IMAGES}/restaurant/special.webp`,
-    topic: "ordering-service",
+    topic: "restaurant-3",
     description: "A featured culinary creation available for a limited time.",
   },
   {
@@ -9782,7 +9573,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Bill",
     phonetic: "b\u026al",
     img: `${LOCAL_WORD_IMAGES}/restaurant/bill.webp`,
-    topic: "ordering-service",
+    topic: "restaurant-3",
     description: "A printed statement detailing all purchased food charges and totals.",
   },
   {
@@ -9790,7 +9581,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Check",
     phonetic: "t\u0283\u025bk",
     img: `${LOCAL_WORD_IMAGES}/restaurant/check.webp`,
-    topic: "ordering-service",
+    topic: "restaurant-3",
     description: "A formal slip presented at the end of a meal showing the amount due.",
   },
   {
@@ -9798,7 +9589,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Tip",
     phonetic: "t\u026ap",
     img: `${LOCAL_WORD_IMAGES}/restaurant/tip.webp`,
-    topic: "ordering-service",
+    topic: "restaurant-3",
     description: "An extra sum of money given to servers in appreciation for service.",
   },
   {
@@ -9806,7 +9597,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Receipt",
     phonetic: "r\u026a\u02c8si\u02d0t",
     img: `${LOCAL_WORD_IMAGES}/restaurant/receipt.webp`,
-    topic: "ordering-service",
+    topic: "restaurant-3",
     description: "A printed slip given to customers as legal proof of paid charges.",
   },
   {
@@ -9814,7 +9605,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Reservation",
     phonetic: "\u02ccr\u025bz\u0259r\u02c8ve\u026a\u0283\u0259n",
     img: `${LOCAL_WORD_IMAGES}/restaurant/reservation.webp`,
-    topic: "ordering-service",
+    topic: "restaurant-3",
     description: "An advance arrangement that secures a dining table for a specific time.",
   },
   {
@@ -9822,7 +9613,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Order Pad",
     phonetic: "\u02c8\u0254\u02d0rd\u0259r p\u00e6d",
     img: `${LOCAL_WORD_IMAGES}/restaurant/order-pad.webp`,
-    topic: "ordering-service",
+    topic: "restaurant-3",
     description: "A small bound notebook used by servers to write down customer requests.",
   },
   {
@@ -9830,7 +9621,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Oven",
     phonetic: "\u02c8\u028cv\u0259n",
     img: `${LOCAL_WORD_IMAGES}/restaurant/oven.webp`,
-    topic: "kitchen-equipment",
+    topic: "restaurant-3",
     description: "An enclosed heated chamber used for baking breads and roasting meats.",
   },
   {
@@ -9838,7 +9629,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Stove",
     phonetic: "sto\u028av",
     img: `${LOCAL_WORD_IMAGES}/restaurant/stove.webp`,
-    topic: "kitchen-equipment",
+    topic: "restaurant-3",
     description: "A kitchen appliance equipped with gas or electric surface burners.",
   },
   {
@@ -9846,7 +9637,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Grill",
     phonetic: "\u0261r\u026al",
     img: `${LOCAL_WORD_IMAGES}/restaurant/grill.webp`,
-    topic: "kitchen-equipment",
+    topic: "restaurant-3",
     description: "A cooking device with metal grates over glowing charcoal or gas flames.",
   },
   {
@@ -9854,7 +9645,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Fryer",
     phonetic: "\u02c8fra\u026a\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/fryer.webp`,
-    topic: "kitchen-equipment",
+    topic: "restaurant-3",
     description: "A deep commercial basin filled with hot bubbling cooking oil.",
   },
   {
@@ -9862,7 +9653,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Pot",
     phonetic: "p\u0252t",
     img: `${LOCAL_WORD_IMAGES}/restaurant/pot.webp`,
-    topic: "kitchen-equipment",
+    topic: "restaurant-3",
     description: "A deep metal cooking vessel with two side handles for boiling broths.",
   },
   {
@@ -9870,7 +9661,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Pan",
     phonetic: "p\u00e6n",
     img: `${LOCAL_WORD_IMAGES}/restaurant/pan.webp`,
-    topic: "kitchen-equipment",
+    topic: "restaurant-3",
     description: "A shallow metal cooking dish with a long handle used for saut\u00e9ing.",
   },
   {
@@ -9878,7 +9669,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Cutting Board",
     phonetic: "\u02c8k\u028ct\u026a\u014b b\u0254\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/restaurant/cutting-board.webp`,
-    topic: "kitchen-equipment",
+    topic: "restaurant-4",
     description: "A thick flat slab of wood or plastic used for chopping ingredients.",
   },
   {
@@ -9886,7 +9677,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Ladle",
     phonetic: "\u02c8le\u026ad\u0259l",
     img: `${LOCAL_WORD_IMAGES}/restaurant/ladle.webp`,
-    topic: "kitchen-equipment",
+    topic: "restaurant-4",
     description: "A long-handled serving spoon with a deep bowl used for dishing soups.",
   },
   {
@@ -9894,7 +9685,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Spatula",
     phonetic: "\u02c8sp\u00e6t\u0283\u028al\u0259",
     img: `${LOCAL_WORD_IMAGES}/restaurant/spatula.webp`,
-    topic: "kitchen-equipment",
+    topic: "restaurant-4",
     description: "A broad flat flexible kitchen tool used for flipping sizzling foods.",
   },
   {
@@ -9902,7 +9693,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Whisk",
     phonetic: "w\u026ask",
     img: `${LOCAL_WORD_IMAGES}/restaurant/whisk.webp`,
-    topic: "kitchen-equipment",
+    topic: "restaurant-4",
     description: "A kitchen utensil made of curved wire loops for beating eggs and cream.",
   },
   {
@@ -9910,7 +9701,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Mixer",
     phonetic: "\u02c8m\u026aks\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/mixer.webp`,
-    topic: "kitchen-equipment",
+    topic: "restaurant-4",
     description: "An electric motorized appliance used to blend batters and knead dough.",
   },
   {
@@ -9918,7 +9709,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Refrigerator",
     phonetic: "r\u026a\u02c8fr\u026ad\u0292\u0259re\u026at\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/refrigerator.webp`,
-    topic: "kitchen-equipment",
+    topic: "restaurant-4",
     description: "A large cooling appliance that preserves perishable ingredients safely.",
   },
   {
@@ -9926,7 +9717,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Freezer",
     phonetic: "\u02c8fri\u02d0z\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/freezer.webp`,
-    topic: "kitchen-equipment",
+    topic: "restaurant-4",
     description: "A cold insulated compartment that keeps foods frozen at sub-zero levels.",
   },
   {
@@ -9934,7 +9725,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Sink",
     phonetic: "s\u026a\u014bk",
     img: `${LOCAL_WORD_IMAGES}/restaurant/sink.webp`,
-    topic: "food-dishes",
+    topic: "restaurant-4",
     description: "A deep stainless basin equipped with faucets for washing cookware.",
   },
   {
@@ -9942,7 +9733,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Soup",
     phonetic: "su\u02d0p",
     img: `${LOCAL_WORD_IMAGES}/restaurant/soup.webp`,
-    topic: "food-dishes",
+    topic: "restaurant-4",
     description: "A warm liquid food made by simmering vegetables, meats, and spices.",
   },
   {
@@ -9950,7 +9741,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Salad",
     phonetic: "\u02c8s\u00e6l\u0259d",
     img: `${LOCAL_WORD_IMAGES}/restaurant/salad.webp`,
-    topic: "food-dishes",
+    topic: "restaurant-4",
     description: "A cold dish of fresh leafy greens tossed with flavorful dressings.",
   },
   {
@@ -9958,7 +9749,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Steak",
     phonetic: "ste\u026ak",
     img: `${LOCAL_WORD_IMAGES}/restaurant/steak.webp`,
-    topic: "food-dishes",
+    topic: "restaurant-4",
     description: "A thick slice of prime beef cooked or pan-seared to perfection.",
   },
   {
@@ -9966,7 +9757,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Pasta",
     phonetic: "\u02c8p\u0251\u02d0st\u0259",
     img: `${LOCAL_WORD_IMAGES}/restaurant/pasta.webp`,
-    topic: "food-dishes",
+    topic: "restaurant-4",
     description: "An Italian dish of boiled durum wheat noodles tossed in sauce.",
   },
   {
@@ -9974,7 +9765,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Pizza",
     phonetic: "\u02c8pi\u02d0ts\u0259",
     img: `${LOCAL_WORD_IMAGES}/restaurant/pizza.webp`,
-    topic: "food-dishes",
+    topic: "restaurant-4",
     description: "A round baked flatbread topped with tomato puree, cheese, and toppings.",
   },
   {
@@ -9982,7 +9773,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Sandwich",
     phonetic: "\u02c8s\u00e6nw\u026ad\u0292",
     img: `${LOCAL_WORD_IMAGES}/restaurant/sandwich.webp`,
-    topic: "food-dishes",
+    topic: "restaurant-4",
     description: "Two slices of baked wheat with meat, cheese, and vegetables inside.",
   },
   {
@@ -9990,7 +9781,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Burger",
     phonetic: "\u02c8b\u025c\u02d0r\u0261\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/burger.webp`,
-    topic: "food-dishes",
+    topic: "restaurant-4",
     description: "A round grilled beef patty served inside a toasted sesame bun.",
   },
   {
@@ -9998,7 +9789,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Sushi",
     phonetic: "\u02c8su\u02d0\u0283i",
     img: `${LOCAL_WORD_IMAGES}/restaurant/sushi.webp`,
-    topic: "food-dishes",
+    topic: "restaurant-5",
     description: "A Japanese delicacy of seasoned vinegared grains and raw seafood.",
   },
   {
@@ -10006,7 +9797,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Rice",
     phonetic: "ra\u026as",
     img: `${LOCAL_WORD_IMAGES}/restaurant/rice.webp`,
-    topic: "food-dishes",
+    topic: "restaurant-5",
     description: "Small white or brown cereal grains boiled until fluffy and tender.",
   },
   {
@@ -10014,7 +9805,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Bread",
     phonetic: "br\u025bd",
     img: `${LOCAL_WORD_IMAGES}/restaurant/bread.webp`,
-    topic: "food-dishes",
+    topic: "restaurant-5",
     description: "A baked staple food prepared from a kneaded dough of water and flour.",
   },
   {
@@ -10022,7 +9813,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Sauce",
     phonetic: "s\u0254\u02d0s",
     img: `${LOCAL_WORD_IMAGES}/restaurant/sauce.webp`,
-    topic: "food-dishes",
+    topic: "restaurant-5",
     description: "A thick savory or creamy liquid poured over food to add flavor.",
   },
   {
@@ -10030,7 +9821,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Dressing",
     phonetic: "\u02c8dr\u025bs\u026a\u014b",
     img: `${LOCAL_WORD_IMAGES}/restaurant/dressing.webp`,
-    topic: "food-dishes",
+    topic: "restaurant-5",
     description: "A seasoned mixture of oil, vinegar, and herbs poured over greens.",
   },
   {
@@ -10038,7 +9829,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Garnish",
     phonetic: "\u02c8\u0261\u0251\u02d0rn\u026a\u0283",
     img: `${LOCAL_WORD_IMAGES}/restaurant/garnish.webp`,
-    topic: "food-dishes",
+    topic: "restaurant-5",
     description: "An edible decorative sprig of herbs added to enhance plate beauty.",
   },
   {
@@ -10046,7 +9837,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Seasoning",
     phonetic: "\u02c8si\u02d0z\u0259n\u026a\u014b",
     img: `${LOCAL_WORD_IMAGES}/restaurant/seasoning.webp`,
-    topic: "food-dishes",
+    topic: "restaurant-5",
     description: "A blend of herbs and aromatic spices added to heighten food tastes.",
   },
   {
@@ -10054,7 +9845,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Waiter",
     phonetic: "\u02c8we\u026at\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/waiter.webp`,
-    topic: "beverage-staff",
+    topic: "restaurant-5",
     description: "A restaurant staff member who takes orders and serves food to patrons.",
   },
   {
@@ -10062,7 +9853,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Waitress",
     phonetic: "\u02c8we\u026atr\u026as",
     img: `${LOCAL_WORD_IMAGES}/restaurant/waitress.webp`,
-    topic: "beverage-staff",
+    topic: "restaurant-5",
     description: "A female restaurant professional who attends to diners at tables.",
   },
   {
@@ -10070,7 +9861,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Chef",
     phonetic: "\u0283\u025bf",
     img: `${LOCAL_WORD_IMAGES}/restaurant/chef.webp`,
-    topic: "beverage-staff",
+    topic: "restaurant-5",
     description: "A professional culinary expert in charge of kitchen food preparation.",
   },
   {
@@ -10078,7 +9869,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Cook",
     phonetic: "k\u028ak",
     img: `${LOCAL_WORD_IMAGES}/restaurant/cook.webp`,
-    topic: "beverage-staff",
+    topic: "restaurant-5",
     description: "A skilled kitchen worker who prepares hot dishes on stoves and grills.",
   },
   {
@@ -10086,7 +9877,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Host",
     phonetic: "ho\u028ast",
     img: `${LOCAL_WORD_IMAGES}/restaurant/host.webp`,
-    topic: "beverage-staff",
+    topic: "restaurant-5",
     description: "A front-of-house hospitality worker who welcomes and seats guests.",
   },
   {
@@ -10094,7 +9885,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Hostess",
     phonetic: "\u02c8ho\u028ast\u026as",
     img: `${LOCAL_WORD_IMAGES}/restaurant/hostess.webp`,
-    topic: "beverage-staff",
+    topic: "restaurant-5",
     description: "A welcoming hospitality professional who seats arriving diners.",
   },
   {
@@ -10102,7 +9893,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Busser",
     phonetic: "\u02c8b\u028cs\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/busser.webp`,
-    topic: "beverage-staff",
+    topic: "restaurant-5",
     description: "A dining room worker who clears dirty dishes and resets dining areas.",
   },
   {
@@ -10110,7 +9901,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Bartender",
     phonetic: "\u02c8b\u0251\u02d0rt\u025bnd\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/bartender.webp`,
-    topic: "beverage-staff",
+    topic: "restaurant-5",
     description: "A hospitality professional who mixes and serves drinks behind a counter.",
   },
   {
@@ -10118,7 +9909,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Dishwasher",
     phonetic: "\u02c8d\u026a\u0283w\u0252\u0283\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/dishwasher.webp`,
-    topic: "beverage-staff",
+    topic: "restaurant-6",
     description: "A kitchen worker or machine that washes and sanitizes cookware.",
   },
   {
@@ -10126,7 +9917,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Manager",
     phonetic: "\u02c8m\u00e6n\u026ad\u0292\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/manager.webp`,
-    topic: "beverage-staff",
+    topic: "restaurant-6",
     description: "An executive who oversees dining room operations and customer care.",
   },
   {
@@ -10134,7 +9925,7 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Sommelier",
     phonetic: "s\u0252\u02c8m\u025blje\u026a",
     img: `${LOCAL_WORD_IMAGES}/restaurant/sommelier.webp`,
-    topic: "beverage-staff",
+    topic: "restaurant-6",
     description: "A trained beverage expert who advises diners on drink pairings.",
   },
   {
@@ -10142,56 +9933,59 @@ export const RESTAURANT_VOCABULARY: VocabularyItem[] = [
     label: "Barista",
     phonetic: "b\u0259\u02c8ri\u02d0st\u0259",
     img: `${LOCAL_WORD_IMAGES}/restaurant/barista.webp`,
-    topic: "beverage-staff",
+    topic: "restaurant-6",
     description: "A skilled specialist who brews artisanal coffee and espresso drinks.",
   },
 ];
 
 export const REVISION_4_TOPICS: TopicCategory[] = [
   {
-    id: "bake-core",
-    name: "Bakery Delights",
-    itemsCount: 6,
+    id: "revision-4-1",
+    name: "Revision 4 Part 1",
+    itemsCount: 15,
   },
   {
-    id: "beach-core",
-    name: "Beach Recreation",
-    itemsCount: 6,
-  },
-  {
-    id: "dine-core",
-    name: "Restaurant Dining",
-    itemsCount: 6,
+    id: "revision-4-2",
+    name: "Revision 4 Part 2",
+    itemsCount: 3,
   },
 ];
 
 export const REVISION_4_GROUPS: Lesson[] = [
   {
-    id: "rev4-group-1",
-    name: "Bakery Delights",
-    topicId: "bake-core",
-    wordIds: ["croissant", "muffin", "flour", "oven", "cupcake", "donut"],
-    description: "Review essential bakery vocabulary.",
+    id: "revision-4-1",
+    name: "Revision 4 Basics 1",
+    description:
+      "Learn about Croissant, Muffin, Flour, Oven, Cupcake, Donut, Ocean, Sand, Umbrella, Sunglasses, Sunscreen, Surfin...",
+    topicId: "revision-4-1",
+    wordIds: [
+      "croissant",
+      "muffin",
+      "flour",
+      "oven",
+      "cupcake",
+      "donut",
+      "ocean",
+      "sand",
+      "umbrella",
+      "sunglasses",
+      "sunscreen",
+      "surfing",
+      "table",
+      "menu",
+      "waiter",
+    ],
     story:
-      "The baker dusted his table with flour, baked a blueberry muffin, a frosted cupcake, and a sweet glazed donut in the stone oven, beside a flaky butter croissant.",
+      "In this section, you will learn about Croissant, Muffin, Flour, Oven, Cupcake, Donut, Ocean, Sand, Umbrella, Sunglasses, Sunscreen, Surfing, Table, Menu, Waiter. These are essential items to know.",
   },
   {
-    id: "rev4-group-2",
-    name: "Beachside Fun",
-    topicId: "beach-core",
-    wordIds: ["ocean", "sand", "umbrella", "sunglasses", "sunscreen", "surfing"],
-    description: "Review essential beach vocabulary.",
+    id: "revision-4-2",
+    name: "Revision 4 Basics 2",
+    description: "Learn about Chef, Plate, Fork...",
+    topicId: "revision-4-2",
+    wordIds: ["chef", "plate", "fork"],
     story:
-      "Under the wide beach umbrella on the warm golden sand, she applied sunscreen and wore polarized sunglasses while watching athletes enjoy surfing across the ocean waves.",
-  },
-  {
-    id: "rev4-group-3",
-    name: "Restaurant Experience",
-    topicId: "dine-core",
-    wordIds: ["table", "menu", "waiter", "chef", "plate", "fork"],
-    description: "Review essential restaurant vocabulary.",
-    story:
-      "We sat at the window table browsing the dinner menu. The executive chef prepared a culinary entr\u00e9e, which the polite waiter served on a warm ceramic plate beside a silver fork.",
+      "In this section, you will learn about Chef, Plate, Fork. These are essential items to know.",
   },
 ];
 
@@ -10201,7 +9995,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Croissant",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/bakery/croissant.webp`,
-    topic: "bake-core",
+    topic: "revision-4-1",
     description: "A flaky buttery French pastry rolled into a curved crescent.",
   },
   {
@@ -10209,7 +10003,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Muffin",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/bakery/muffin.webp`,
-    topic: "bake-core",
+    topic: "revision-4-1",
     description: "An individual dome-shaped cup treat baked with blueberries.",
   },
   {
@@ -10217,7 +10011,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Flour",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/bakery/flour.webp`,
-    topic: "bake-core",
+    topic: "revision-4-1",
     description: "A finely ground powder milled from wheat used for baking.",
   },
   {
@@ -10225,7 +10019,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Oven",
     phonetic: "\u02c8\u028cv\u0259n",
     img: `${LOCAL_WORD_IMAGES}/bakery/oven.webp`,
-    topic: "bake-core",
+    topic: "revision-4-1",
     description: "A heavy heated stone chamber used for baking golden pastries.",
   },
   {
@@ -10233,7 +10027,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Cupcake",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/bakery/cupcake.webp`,
-    topic: "bake-core",
+    topic: "revision-4-1",
     description: "A miniature sponge cake baked in a paper cup with swirl frosting.",
   },
   {
@@ -10241,7 +10035,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Donut",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/bakery/donut.webp`,
-    topic: "bake-core",
+    topic: "revision-4-1",
     description: "A sweet fried ring of dough glazed with sugar icing.",
   },
   {
@@ -10249,7 +10043,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Ocean",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/beach/ocean.webp`,
-    topic: "beach-core",
+    topic: "revision-4-1",
     description: "A vast expanse of salty blue water with rolling breakers.",
   },
   {
@@ -10257,7 +10051,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Sand",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/beach/sand.webp`,
-    topic: "beach-core",
+    topic: "revision-4-1",
     description: "Tiny crushed mineral grains covering the shoreline dunes.",
   },
   {
@@ -10265,7 +10059,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Umbrella",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/beach/umbrella.webp`,
-    topic: "beach-core",
+    topic: "revision-4-1",
     description: "A large fabric sunshade planted firmly into the coastal dunes.",
   },
   {
@@ -10273,7 +10067,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Sunglasses",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/beach/sunglasses.webp`,
-    topic: "beach-core",
+    topic: "revision-4-1",
     description: "Tinted dark eyewear with polarized lenses that reduce glare.",
   },
   {
@@ -10281,7 +10075,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Sunscreen",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/beach/sunscreen.webp`,
-    topic: "beach-core",
+    topic: "revision-4-1",
     description: "A protective lotion applied to skin to block UV rays.",
   },
   {
@@ -10289,7 +10083,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Surfing",
     phonetic: "\u02c8w\u025c\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/beach/surfing.webp`,
-    topic: "beach-core",
+    topic: "revision-4-1",
     description: "The thrilling water sport of riding cresting coastal waves.",
   },
   {
@@ -10297,7 +10091,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Table",
     phonetic: "\u02c8te\u026ab\u0259l",
     img: `${LOCAL_WORD_IMAGES}/restaurant/table.webp`,
-    topic: "dine-core",
+    topic: "revision-4-1",
     description: "A raised wooden dining surface where meals are served.",
   },
   {
@@ -10305,7 +10099,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Menu",
     phonetic: "\u02c8m\u025bnju\u02d0",
     img: `${LOCAL_WORD_IMAGES}/restaurant/menu.webp`,
-    topic: "dine-core",
+    topic: "revision-4-1",
     description: "A printed booklet displaying culinary dishes and beverages.",
   },
   {
@@ -10313,7 +10107,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Waiter",
     phonetic: "\u02c8we\u026at\u0259r",
     img: `${LOCAL_WORD_IMAGES}/restaurant/waiter.webp`,
-    topic: "dine-core",
+    topic: "revision-4-1",
     description: "A restaurant professional who delivers hot plates to diners.",
   },
   {
@@ -10321,7 +10115,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Chef",
     phonetic: "\u0283\u025bf",
     img: `${LOCAL_WORD_IMAGES}/restaurant/chef.webp`,
-    topic: "dine-core",
+    topic: "revision-4-2",
     description: "A master culinary artist who designs dishes in the kitchen.",
   },
   {
@@ -10329,7 +10123,7 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Plate",
     phonetic: "ple\u026at",
     img: `${LOCAL_WORD_IMAGES}/restaurant/plate.webp`,
-    topic: "dine-core",
+    topic: "revision-4-2",
     description: "A flat ceramic dish upon which hot entrees are presented.",
   },
   {
@@ -10337,134 +10131,150 @@ export const REVISION_4_VOCABULARY: VocabularyItem[] = [
     label: "Fork",
     phonetic: "f\u0254\u02d0rk",
     img: `${LOCAL_WORD_IMAGES}/restaurant/fork.webp`,
-    topic: "dine-core",
+    topic: "revision-4-2",
     description: "A dining utensil with four metal tines used to spear food.",
   },
 ];
 
 export const SPORTS_CENTER_TOPICS: TopicCategory[] = [
   {
-    id: "track-field",
-    name: "Track & Field",
+    id: "sports-center-1",
+    name: "Sports Center Part 1",
+    itemsCount: 15,
+  },
+  {
+    id: "sports-center-2",
+    name: "Sports Center Part 2",
+    itemsCount: 15,
+  },
+  {
+    id: "sports-center-3",
+    name: "Sports Center Part 3",
+    itemsCount: 15,
+  },
+  {
+    id: "sports-center-4",
+    name: "Sports Center Part 4",
+    itemsCount: 15,
+  },
+  {
+    id: "sports-center-5",
+    name: "Sports Center Part 5",
     itemsCount: 12,
-  },
-  {
-    id: "ball-sports",
-    name: "Ball Sports",
-    itemsCount: 12,
-  },
-  {
-    id: "aquatic-center",
-    name: "Aquatic Center",
-    itemsCount: 10,
-  },
-  {
-    id: "fitness-training",
-    name: "Gym & Training",
-    itemsCount: 12,
-  },
-  {
-    id: "equipment-roles",
-    name: "Gear, Roles & Actions",
-    itemsCount: 26,
   },
 ];
 
 export const SPORTS_CENTER_GROUPS: Lesson[] = [
   {
-    id: "sports-group-1",
-    name: "Sprint & Track Racing",
-    topicId: "track-field",
-    wordIds: ["running", "sprinting", "relay-race", "hurdles", "starting-block", "finish-line"],
-    description: "Learn about track sprint and running events.",
+    id: "sports-center-1",
+    name: "Sports Center Basics 1",
+    description:
+      "Learn about Running, Sprinting, Relay Race, Hurdles, Long Jump, High Jump, Javelin, Discus, Pole Vault, Marathon...",
+    topicId: "sports-center-1",
+    wordIds: [
+      "running",
+      "sprinting",
+      "relay-race",
+      "hurdles",
+      "long-jump",
+      "high-jump",
+      "javelin",
+      "discus",
+      "pole-vault",
+      "marathon",
+      "starting-block",
+      "finish-line",
+      "soccer",
+      "basketball",
+      "tennis",
+    ],
     story:
-      "Athletes engaged in speed running and sprinting pushed off from the metal starting block, leaped over obstacles in the hurdles, handed off the baton in the relay race, and crossed the finish line in first place.",
+      "In this section, you will learn about Running, Sprinting, Relay Race, Hurdles, Long Jump, High Jump, Javelin, Discus, Pole Vault, Marathon, Starting Block, Finish Line, Soccer, Basketball, Tennis. These are essential items to know.",
   },
   {
-    id: "sports-group-2",
-    name: "Field & Vaulting Events",
-    topicId: "track-field",
-    wordIds: ["long-jump", "high-jump", "javelin", "discus", "pole-vault", "marathon"],
-    description: "Learn about athletic field competitions.",
+    id: "sports-center-2",
+    name: "Sports Center Basics 2",
+    description:
+      "Learn about Volleyball, Baseball, Football, Rugby, Cricket, Badminton, Table Tennis, Golf, Bowling, Swimming Poo...",
+    topicId: "sports-center-2",
+    wordIds: [
+      "volleyball",
+      "baseball",
+      "football",
+      "rugby",
+      "cricket",
+      "badminton",
+      "table-tennis",
+      "golf",
+      "bowling",
+      "swimming-pool",
+      "diving-board",
+      "lane",
+      "kickboard",
+      "swim-cap",
+      "backstroke",
+    ],
     story:
-      "Competitors soared into the sand pit in the long jump, cleared the bar in the high jump and pole vault, threw the javelin and heavy discus across the stadium, and cheered runners completing the marathon.",
+      "In this section, you will learn about Volleyball, Baseball, Football, Rugby, Cricket, Badminton, Table Tennis, Golf, Bowling, Swimming Pool, Diving Board, Lane, Kickboard, Swim Cap, Backstroke. These are essential items to know.",
   },
   {
-    id: "sports-group-3",
-    name: "Major Team Ball Sports",
-    topicId: "ball-sports",
-    wordIds: ["soccer", "basketball", "tennis", "volleyball", "baseball", "football"],
-    description: "Learn about global team sports.",
+    id: "sports-center-3",
+    name: "Sports Center Basics 3",
+    description:
+      "Learn about Freestyle, Butterfly Stroke, Water Polo, Synchronized Swimming, Gymnasium, Locker Room, Bench, Bleac...",
+    topicId: "sports-center-3",
+    wordIds: [
+      "freestyle",
+      "butterfly-stroke",
+      "water-polo",
+      "synchronized-swimming",
+      "gymnasium",
+      "locker-room",
+      "bench",
+      "bleachers",
+      "track",
+      "field",
+      "court",
+      "ring",
+      "mat",
+      "treadmill",
+      "weight-room",
+    ],
     story:
-      "On the weekend, athletes played a fast match of soccer, shot three-pointers in basketball, rallied on the clay court in tennis, spiked the volleyball, swung for home runs in baseball, and scored in football.",
+      "In this section, you will learn about Freestyle, Butterfly Stroke, Water Polo, Synchronized Swimming, Gymnasium, Locker Room, Bench, Bleachers, Track, Field, Court, Ring, Mat, Treadmill, Weight Room. These are essential items to know.",
   },
   {
-    id: "sports-group-4",
-    name: "Racket, Pitch & Target Sports",
-    topicId: "ball-sports",
-    wordIds: ["rugby", "cricket", "badminton", "table-tennis", "golf", "bowling"],
-    description: "Learn about pitch and racket games.",
+    id: "sports-center-4",
+    name: "Sports Center Basics 4",
+    description:
+      "Learn about Shower, Ball, Racket, Bat, Helmet, Shin Guard, Knee Pad, Glove, Net, Goal, Hoop, Scoreboard, Whistle...",
+    topicId: "sports-center-4",
+    wordIds: [
+      "shower",
+      "ball",
+      "racket",
+      "bat",
+      "helmet",
+      "shin-guard",
+      "knee-pad",
+      "glove",
+      "net",
+      "goal",
+      "hoop",
+      "scoreboard",
+      "whistle",
+      "stopwatch",
+      "cone",
+    ],
     story:
-      "Friends tackled hard in rugby, bowled overs in cricket, smashed shuttlecocks in badminton, spun balls in table tennis, teed off on the golf course, and knocked down all ten pins in bowling.",
+      "In this section, you will learn about Shower, Ball, Racket, Bat, Helmet, Shin Guard, Knee Pad, Glove, Net, Goal, Hoop, Scoreboard, Whistle, Stopwatch, Cone. These are essential items to know.",
   },
   {
-    id: "sports-group-5",
-    name: "Aquatics & Swim Gear",
-    topicId: "aquatic-center",
-    wordIds: ["swimming-pool", "diving-board", "lane", "kickboard", "swim-cap"],
-    description: "Learn about swimming facilities and gear.",
-    story:
-      "Swimmers in the Olympic swimming pool adjusted their swim cap and kickboard in the fast lane, and dove from the tall diving board.",
-  },
-  {
-    id: "sports-group-6",
-    name: "Swim Styles & Water Sports",
-    topicId: "aquatic-center",
-    wordIds: ["backstroke", "freestyle", "butterfly-stroke", "water-polo", "synchronized-swimming"],
-    description: "Learn about competitive swimming disciplines.",
-    story:
-      "Swimmers practiced the backstroke, freestyle, and butterfly stroke, before watching teammates compete in water polo and perform artistic routines in synchronized swimming.",
-  },
-  {
-    id: "sports-group-7",
-    name: "Sports Arenas & Courts",
-    topicId: "fitness-training",
-    wordIds: ["gymnasium", "locker-room", "bench", "bleachers", "track", "field"],
-    description: "Learn about sports arenas and facilities.",
-    story:
-      "Students gathered in the indoor gymnasium, changed in the locker room, cheered from the elevated bleachers, rested on the team bench, ran around the track, and played on the grass field.",
-  },
-  {
-    id: "sports-group-8",
-    name: "Gyms, Rings & Cooldown",
-    topicId: "fitness-training",
-    wordIds: ["court", "ring", "mat", "treadmill", "weight-room", "shower"],
-    description: "Learn about gyms and workout zones.",
-    story:
-      "Athletes played matches on the indoor court, sparred in the boxing ring, landed on the gymnastics mat, jogged on the treadmill, lifted weights in the weight room, and took a refreshing shower.",
-  },
-  {
-    id: "sports-group-9",
-    name: "Protective Equipment & Gear",
-    topicId: "equipment-roles",
-    wordIds: ["ball", "racket", "bat", "helmet", "shin-guard", "knee-pad", "glove"],
-    description: "Learn about protective sports equipment.",
-    story:
-      "Before the game, players grabbed a match ball, tennis racket, and baseball bat, while strapping on a protective helmet, soccer shin guard, cushioned knee pad, and leather glove.",
-  },
-  {
-    id: "sports-group-10",
-    name: "Nets, Goals & Officials",
-    topicId: "equipment-roles",
-    wordIds: ["net", "goal", "hoop", "scoreboard", "whistle", "stopwatch", "cone"],
-    description: "Learn about field markers and game tools.",
-    story:
-      "The striker scored in the goal net, the guard shot through the basketball hoop, the digital scoreboard updated, while the coach blew his silver whistle, pressed the stopwatch, and set out each orange cone.",
-  },
-  {
-    id: "sports-group-11",
-    name: "Athletic Teamwork & Match Actions",
-    topicId: "equipment-roles",
+    id: "sports-center-5",
+    name: "Sports Center Basics 5",
+    description:
+      "Learn about Athlete, Coach, Referee, Teammate, Warm Up, Stretch, Score, Pass, Catch, Throw, Kick, Dribble...",
+    topicId: "sports-center-5",
     wordIds: [
       "athlete",
       "coach",
@@ -10479,9 +10289,8 @@ export const SPORTS_CENTER_GROUPS: Lesson[] = [
       "kick",
       "dribble",
     ],
-    description: "Learn about team roles and match actions.",
     story:
-      "Every athlete followed the head coach and match referee, while cheering each teammate during warm up and stretch drills to pass, catch, throw, kick, dribble the ball, and score.",
+      "In this section, you will learn about Athlete, Coach, Referee, Teammate, Warm Up, Stretch, Score, Pass, Catch, Throw, Kick, Dribble. These are essential items to know.",
   },
 ];
 
@@ -10491,7 +10300,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Running",
     phonetic: "\u02c8r\u028cn\u026a\u014b",
     img: `${LOCAL_WORD_IMAGES}/sports-center/running.webp`,
-    topic: "track-field",
+    topic: "sports-center-1",
     description: "The athletic activity of moving rapidly on foot across tracks.",
   },
   {
@@ -10499,7 +10308,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Sprinting",
     phonetic: "\u02c8spr\u026ant\u026a\u014b",
     img: `${LOCAL_WORD_IMAGES}/sports-center/sprinting.webp`,
-    topic: "track-field",
+    topic: "sports-center-1",
     description: "The sport of dashing at maximum human speed over short courses.",
   },
   {
@@ -10507,7 +10316,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Relay Race",
     phonetic: "\u02c8ri\u02d0le\u026a re\u026as",
     img: `${LOCAL_WORD_IMAGES}/sports-center/relay-race.webp`,
-    topic: "track-field",
+    topic: "sports-center-1",
     description: "A track competition where team runners pass a baton in sequence.",
   },
   {
@@ -10515,7 +10324,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Hurdles",
     phonetic: "\u02c8h\u025c\u02d0rd\u0259lz",
     img: `${LOCAL_WORD_IMAGES}/sports-center/hurdles.webp`,
-    topic: "track-field",
+    topic: "sports-center-1",
     description: "A series of lightweight upright barriers that racers leap over.",
   },
   {
@@ -10523,7 +10332,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Long Jump",
     phonetic: "l\u0252\u014b d\u0292\u028cmp",
     img: `${LOCAL_WORD_IMAGES}/sports-center/long-jump.webp`,
-    topic: "track-field",
+    topic: "sports-center-1",
     description: "A field contest where athletes leap for distance into sand.",
   },
   {
@@ -10531,7 +10340,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "High Jump",
     phonetic: "ha\u026a d\u0292\u028cmp",
     img: `${LOCAL_WORD_IMAGES}/sports-center/high-jump.webp`,
-    topic: "track-field",
+    topic: "sports-center-1",
     description: "An athletic event where competitors vault backward over a bar.",
   },
   {
@@ -10539,7 +10348,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Javelin",
     phonetic: "\u02c8d\u0292\u00e6v\u0259l\u026an",
     img: `${LOCAL_WORD_IMAGES}/sports-center/javelin.webp`,
-    topic: "track-field",
+    topic: "sports-center-1",
     description: "A lightweight pointed metal spear thrown for distance in athletics.",
   },
   {
@@ -10547,7 +10356,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Discus",
     phonetic: "\u02c8d\u026ask\u0259s",
     img: `${LOCAL_WORD_IMAGES}/sports-center/discus.webp`,
-    topic: "track-field",
+    topic: "sports-center-1",
     description: "A heavy circular disc hurled from a concrete throwing circle.",
   },
   {
@@ -10555,7 +10364,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Pole Vault",
     phonetic: "po\u028al v\u0254\u02d0lt",
     img: `${LOCAL_WORD_IMAGES}/sports-center/pole-vault.webp`,
-    topic: "track-field",
+    topic: "sports-center-1",
     description: "An athletic field sport where competitors leap high over a crossbar.",
   },
   {
@@ -10563,7 +10372,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Marathon",
     phonetic: "\u02c8m\u00e6r\u0259\u03b8\u0252n",
     img: `${LOCAL_WORD_IMAGES}/sports-center/marathon.webp`,
-    topic: "track-field",
+    topic: "sports-center-1",
     description: "A grueling long-distance road race covering twenty-six miles.",
   },
   {
@@ -10571,7 +10380,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Starting Block",
     phonetic: "\u02c8st\u0251\u02d0rt\u026a\u014b bl\u0252k",
     img: `${LOCAL_WORD_IMAGES}/sports-center/starting-block.webp`,
-    topic: "track-field",
+    topic: "sports-center-1",
     description: "A pair of adjustable footrests used by sprinters at race start.",
   },
   {
@@ -10579,7 +10388,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Finish Line",
     phonetic: "\u02c8f\u026an\u026a\u0283 la\u026an",
     img: `${LOCAL_WORD_IMAGES}/sports-center/finish-line.webp`,
-    topic: "track-field",
+    topic: "sports-center-1",
     description: "A marked boundary or tape indicating the completion of a race.",
   },
   {
@@ -10587,7 +10396,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Soccer",
     phonetic: "\u02c8s\u0252k\u0259r",
     img: `${LOCAL_WORD_IMAGES}/sports-center/soccer.webp`,
-    topic: "ball-sports",
+    topic: "sports-center-1",
     description:
       "A global eleven-player team game where players kick an inflated sphere into nets.",
   },
@@ -10596,7 +10405,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Basketball",
     phonetic: "\u02c8b\u00e6sk\u026atb\u0254\u02d0l",
     img: `${LOCAL_WORD_IMAGES}/sports-center/basketball.webp`,
-    topic: "ball-sports",
+    topic: "sports-center-1",
     description: "A court game where athletes dribble and shoot into elevated rims.",
   },
   {
@@ -10604,7 +10413,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Tennis",
     phonetic: "\u02c8t\u025bn\u026as",
     img: `${LOCAL_WORD_IMAGES}/sports-center/tennis.webp`,
-    topic: "ball-sports",
+    topic: "sports-center-1",
     description: "A racket sport where athletes hit a felt sphere across a central mesh.",
   },
   {
@@ -10612,7 +10421,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Volleyball",
     phonetic: "\u02c8v\u0252lib\u0254\u02d0l",
     img: `${LOCAL_WORD_IMAGES}/sports-center/volleyball.webp`,
-    topic: "ball-sports",
+    topic: "sports-center-2",
     description: "A game where two teams hit an inflated sphere over an elevated net.",
   },
   {
@@ -10620,7 +10429,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Baseball",
     phonetic: "\u02c8be\u026asb\u0254\u02d0l",
     img: `${LOCAL_WORD_IMAGES}/sports-center/baseball.webp`,
-    topic: "ball-sports",
+    topic: "sports-center-2",
     description: "A diamond game played with wooden bats across four bases.",
   },
   {
@@ -10628,7 +10437,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Football",
     phonetic: "\u02c8f\u028atb\u0254\u02d0l",
     img: `${LOCAL_WORD_IMAGES}/sports-center/football.webp`,
-    topic: "ball-sports",
+    topic: "sports-center-2",
     description: "An American contact game played with an oval leather pigskin.",
   },
   {
@@ -10636,7 +10445,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Rugby",
     phonetic: "\u02c8r\u028c\u0261bi",
     img: `${LOCAL_WORD_IMAGES}/sports-center/rugby.webp`,
-    topic: "ball-sports",
+    topic: "sports-center-2",
     description: "A full-contact team sport where players pass an oval sphere backward.",
   },
   {
@@ -10644,7 +10453,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Cricket",
     phonetic: "\u02c8kr\u026ak\u026at",
     img: `${LOCAL_WORD_IMAGES}/sports-center/cricket.webp`,
-    topic: "ball-sports",
+    topic: "sports-center-2",
     description: "A traditional bat-and-ball game played between wickets on pitch ovals.",
   },
   {
@@ -10652,7 +10461,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Badminton",
     phonetic: "\u02c8b\u00e6dm\u026ant\u0259n",
     img: `${LOCAL_WORD_IMAGES}/sports-center/badminton.webp`,
-    topic: "ball-sports",
+    topic: "sports-center-2",
     description: "A racket sport where players hit a feathered shuttlecock over a net.",
   },
   {
@@ -10660,7 +10469,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Table Tennis",
     phonetic: "\u02c8te\u026ab\u0259l \u02c8t\u025bn\u026as",
     img: `${LOCAL_WORD_IMAGES}/sports-center/table-tennis.webp`,
-    topic: "ball-sports",
+    topic: "sports-center-2",
     description: "A rapid indoor game played with paddles on a green partitioned board.",
   },
   {
@@ -10668,7 +10477,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Golf",
     phonetic: "\u0261\u0252lf",
     img: `${LOCAL_WORD_IMAGES}/sports-center/golf.webp`,
-    topic: "ball-sports",
+    topic: "sports-center-2",
     description: "An outdoor sport where players strike a dimpled sphere toward holes.",
   },
   {
@@ -10676,7 +10485,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Bowling",
     phonetic: "\u02c8bo\u028al\u026a\u014b",
     img: `${LOCAL_WORD_IMAGES}/sports-center/bowling.webp`,
-    topic: "ball-sports",
+    topic: "sports-center-2",
     description: "A lane game where players roll a heavy sphere to knock down pins.",
   },
   {
@@ -10684,7 +10493,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Swimming Pool",
     phonetic: "\u02c8sw\u026am\u026a\u014b pu\u02d0l",
     img: `${LOCAL_WORD_IMAGES}/sports-center/swimming-pool.webp`,
-    topic: "aquatic-center",
+    topic: "sports-center-2",
     description: "A large chlorinated concrete basin designed for aquatic workouts.",
   },
   {
@@ -10692,7 +10501,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Diving Board",
     phonetic: "\u02c8da\u026av\u026a\u014b b\u0254\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/sports-center/diving-board.webp`,
-    topic: "aquatic-center",
+    topic: "sports-center-2",
     description: "An elevated flexible springboard projecting over a deep basin.",
   },
   {
@@ -10700,7 +10509,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Lane",
     phonetic: "le\u026an",
     img: `${LOCAL_WORD_IMAGES}/sports-center/lane.webp`,
-    topic: "aquatic-center",
+    topic: "sports-center-2",
     description: "A marked aquatic corridor bounded by floating divider ropes.",
   },
   {
@@ -10708,7 +10517,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Kickboard",
     phonetic: "\u02c8k\u026akb\u0254\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/sports-center/kickboard.webp`,
-    topic: "aquatic-center",
+    topic: "sports-center-2",
     description: "A buoyant foam float held in hands to isolate leg exercise.",
   },
   {
@@ -10716,7 +10525,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Swim Cap",
     phonetic: "sw\u026am k\u00e6p",
     img: `${LOCAL_WORD_IMAGES}/sports-center/swim-cap.webp`,
-    topic: "aquatic-center",
+    topic: "sports-center-2",
     description: "A tight silicone or latex head covering worn during aquatic races.",
   },
   {
@@ -10724,7 +10533,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Backstroke",
     phonetic: "\u02c8b\u00e6kstro\u028ak",
     img: `${LOCAL_WORD_IMAGES}/sports-center/backstroke.webp`,
-    topic: "aquatic-center",
+    topic: "sports-center-2",
     description: "A racing technique performed while floating supine on your back.",
   },
   {
@@ -10732,7 +10541,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Freestyle",
     phonetic: "\u02c8fri\u02d0sta\u026al",
     img: `${LOCAL_WORD_IMAGES}/sports-center/freestyle.webp`,
-    topic: "aquatic-center",
+    topic: "sports-center-3",
     description: "A rapid front crawl technique with alternating overhead arm pulls.",
   },
   {
@@ -10740,7 +10549,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Butterfly Stroke",
     phonetic: "\u02c8b\u028ct\u0259rfla\u026a stro\u028ak",
     img: `${LOCAL_WORD_IMAGES}/sports-center/butterfly-stroke.webp`,
-    topic: "aquatic-center",
+    topic: "sports-center-3",
     description: "An athletic swimming style with simultaneous overhead arm pulls.",
   },
   {
@@ -10748,7 +10557,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Water Polo",
     phonetic: "\u02c8w\u0254\u02d0t\u0259r \u02c8po\u028alo\u028a",
     img: `${LOCAL_WORD_IMAGES}/sports-center/water-polo.webp`,
-    topic: "aquatic-center",
+    topic: "sports-center-3",
     description: "An aquatic team game played with a yellow sphere and goal nets.",
   },
   {
@@ -10756,7 +10565,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Synchronized Swimming",
     phonetic: "\u02c8s\u026a\u014bkr\u0259na\u026azd \u02c8sw\u026am\u026a\u014b",
     img: `${LOCAL_WORD_IMAGES}/sports-center/synchronized-swimming.webp`,
-    topic: "aquatic-center",
+    topic: "sports-center-3",
     description: "An artistic sport combining gymnastics, dance, and water moves.",
   },
   {
@@ -10764,7 +10573,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Gymnasium",
     phonetic: "d\u0292\u026am\u02c8ne\u026azi\u0259m",
     img: `${LOCAL_WORD_IMAGES}/sports-center/gymnasium.webp`,
-    topic: "fitness-training",
+    topic: "sports-center-3",
     description: "A spacious indoor arena equipped for physical education and games.",
   },
   {
@@ -10772,7 +10581,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Locker Room",
     phonetic: "\u02c8l\u0252k\u0259r ru\u02d0m",
     img: `${LOCAL_WORD_IMAGES}/sports-center/locker-room.webp`,
-    topic: "fitness-training",
+    topic: "sports-center-3",
     description: "A changing area with secure storage cubbies and shower stalls.",
   },
   {
@@ -10780,7 +10589,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Bench",
     phonetic: "b\u025bnt\u0283",
     img: `${LOCAL_WORD_IMAGES}/sports-center/bench.webp`,
-    topic: "fitness-training",
+    topic: "sports-center-3",
     description: "A padded horizontal seat used for weightlifting and resting.",
   },
   {
@@ -10788,7 +10597,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Bleachers",
     phonetic: "\u02c8bli\u02d0t\u0283\u0259rz",
     img: `${LOCAL_WORD_IMAGES}/sports-center/bleachers.webp`,
-    topic: "fitness-training",
+    topic: "sports-center-3",
     description: "Tiered wooden seats providing elevated viewing for arena spectators.",
   },
   {
@@ -10796,7 +10605,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Track",
     phonetic: "tr\u00e6k",
     img: `${LOCAL_WORD_IMAGES}/sports-center/track.webp`,
-    topic: "fitness-training",
+    topic: "sports-center-3",
     description: "An oval synthetic rubberized circuit marked with racing corridors.",
   },
   {
@@ -10804,7 +10613,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Field",
     phonetic: "fi\u02d0ld",
     img: `${LOCAL_WORD_IMAGES}/sports-center/field.webp`,
-    topic: "fitness-training",
+    topic: "sports-center-3",
     description: "A wide expanse of natural grass marked for outdoor team matches.",
   },
   {
@@ -10812,7 +10621,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Court",
     phonetic: "k\u0254\u02d0rt",
     img: `${LOCAL_WORD_IMAGES}/sports-center/court.webp`,
-    topic: "fitness-training",
+    topic: "sports-center-3",
     description: "A marked hardwood or clay surface used for racket and ball games.",
   },
   {
@@ -10820,7 +10629,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Ring",
     phonetic: "r\u026a\u014b",
     img: `${LOCAL_WORD_IMAGES}/sports-center/ring.webp`,
-    topic: "fitness-training",
+    topic: "sports-center-3",
     description: "An elevated square platform enclosed by ropes for boxing bouts.",
   },
   {
@@ -10828,7 +10637,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Mat",
     phonetic: "m\u00e6t",
     img: `${LOCAL_WORD_IMAGES}/sports-center/mat.webp`,
-    topic: "fitness-training",
+    topic: "sports-center-3",
     description: "A thick foam pad placed on floors to cushion tumbling gymnasts.",
   },
   {
@@ -10836,7 +10645,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Treadmill",
     phonetic: "\u02c8tr\u025bdm\u026al",
     img: `${LOCAL_WORD_IMAGES}/sports-center/treadmill.webp`,
-    topic: "fitness-training",
+    topic: "sports-center-3",
     description: "An indoor exercise machine with a motorized moving conveyor belt.",
   },
   {
@@ -10844,7 +10653,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Weight Room",
     phonetic: "we\u026at ru\u02d0m",
     img: `${LOCAL_WORD_IMAGES}/sports-center/weight-room.webp`,
-    topic: "fitness-training",
+    topic: "sports-center-3",
     description: "A dedicated workout facility filled with barbells and machines.",
   },
   {
@@ -10852,7 +10661,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Shower",
     phonetic: "\u02c8\u0283a\u028a\u0259r",
     img: `${LOCAL_WORD_IMAGES}/sports-center/shower.webp`,
-    topic: "fitness-training",
+    topic: "sports-center-4",
     description: "A stall with flowing water streams used to cleanse after workouts.",
   },
   {
@@ -10860,7 +10669,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Ball",
     phonetic: "b\u0254\u02d0l",
     img: `${LOCAL_WORD_IMAGES}/sports-center/ball.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-4",
     description: "A spherical object bounced, thrown, or kicked during athletic games.",
   },
   {
@@ -10868,7 +10677,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Racket",
     phonetic: "\u02c8r\u00e6k\u026at",
     img: `${LOCAL_WORD_IMAGES}/sports-center/racket.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-4",
     description: "A strung lightweight oval frame with a handle used in court games.",
   },
   {
@@ -10876,7 +10685,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Bat",
     phonetic: "b\u00e6t",
     img: `${LOCAL_WORD_IMAGES}/sports-center/bat.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-4",
     description: "A smooth wooden or aluminum club used to strike pitched spheres.",
   },
   {
@@ -10884,7 +10693,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Helmet",
     phonetic: "\u02c8h\u025blm\u026at",
     img: `${LOCAL_WORD_IMAGES}/sports-center/helmet.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-4",
     description: "A hard protective headpiece with interior foam padding for safety.",
   },
   {
@@ -10892,7 +10701,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Shin Guard",
     phonetic: "\u0283\u026an \u0261\u0251\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/sports-center/shin-guard.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-4",
     description: "A contoured protective shield strapped over the lower front leg.",
   },
   {
@@ -10900,7 +10709,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Knee Pad",
     phonetic: "ni\u02d0 p\u00e6d",
     img: `${LOCAL_WORD_IMAGES}/sports-center/knee-pad.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-4",
     description: "A cushioned elastic sleeve worn over the joint to absorb impacts.",
   },
   {
@@ -10908,7 +10717,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Glove",
     phonetic: "\u0261l\u028cv",
     img: `${LOCAL_WORD_IMAGES}/sports-center/glove.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-4",
     description: "A padded hand covering with fingers used for catching and boxing.",
   },
   {
@@ -10916,7 +10725,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Net",
     phonetic: "n\u025bt",
     img: `${LOCAL_WORD_IMAGES}/sports-center/net.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-4",
     description: "A barrier of knotted cords suspended across a court or inside a goal.",
   },
   {
@@ -10924,7 +10733,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Goal",
     phonetic: "\u0261o\u028al",
     img: `${LOCAL_WORD_IMAGES}/sports-center/goal.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-4",
     description: "A framed target area with mesh cords where points are earned in games.",
   },
   {
@@ -10932,7 +10741,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Hoop",
     phonetic: "hu\u02d0p",
     img: `${LOCAL_WORD_IMAGES}/sports-center/hoop.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-4",
     description: "A circular metal rim mounted ten feet high with an open net.",
   },
   {
@@ -10940,7 +10749,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Scoreboard",
     phonetic: "\u02c8sk\u0254\u02d0rb\u0254\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/sports-center/scoreboard.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-4",
     description: "An illuminated digital display showing match points and elapsed time.",
   },
   {
@@ -10948,7 +10757,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Whistle",
     phonetic: "\u02c8w\u026as\u0259l",
     img: `${LOCAL_WORD_IMAGES}/sports-center/whistle.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-4",
     description: "A small handheld metal device that emits a shrill alerting signal.",
   },
   {
@@ -10956,7 +10765,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Stopwatch",
     phonetic: "\u02c8st\u0252pw\u0252t\u0283",
     img: `${LOCAL_WORD_IMAGES}/sports-center/stopwatch.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-4",
     description: "A handheld precision digital timer used to measure sprint splits.",
   },
   {
@@ -10964,7 +10773,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Cone",
     phonetic: "ko\u028an",
     img: `${LOCAL_WORD_IMAGES}/sports-center/cone.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-4",
     description: "A bright orange plastic marker used to designate boundary drills.",
   },
   {
@@ -10972,7 +10781,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Athlete",
     phonetic: "\u02c8\u00e6\u03b8li\u02d0t",
     img: `${LOCAL_WORD_IMAGES}/sports-center/athlete.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-5",
     description: "A trained person who participates in competitive physical games.",
   },
   {
@@ -10980,7 +10789,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Coach",
     phonetic: "ko\u028at\u0283",
     img: `${LOCAL_WORD_IMAGES}/sports-center/coach.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-5",
     description: "An instructor who directs team strategies and trains players.",
   },
   {
@@ -10988,7 +10797,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Referee",
     phonetic: "\u02ccr\u025bf\u0259\u02c8ri\u02d0",
     img: `${LOCAL_WORD_IMAGES}/sports-center/referee.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-5",
     description: "An official who presides over a match to enforce fair play rules.",
   },
   {
@@ -10996,7 +10805,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Teammate",
     phonetic: "\u02c8ti\u02d0mme\u026at",
     img: `${LOCAL_WORD_IMAGES}/sports-center/teammate.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-5",
     description: "A fellow player belonging to the same club or athletic group.",
   },
   {
@@ -11004,7 +10813,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Warm Up",
     phonetic: "\u02c8w\u0254\u02d0rm \u028cp",
     img: `${LOCAL_WORD_IMAGES}/sports-center/warm-up.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-5",
     description: "A preparatory series of light physical exercises before matches.",
   },
   {
@@ -11012,7 +10821,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Stretch",
     phonetic: "str\u025bt\u0283",
     img: `${LOCAL_WORD_IMAGES}/sports-center/stretch.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-5",
     description: "To gently extend and lengthen muscles to enhance joint mobility.",
   },
   {
@@ -11020,7 +10829,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Score",
     phonetic: "sk\u0254\u02d0r",
     img: `${LOCAL_WORD_IMAGES}/sports-center/score.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-5",
     description: "To earn game points or tallies by kicking into the net.",
   },
   {
@@ -11028,7 +10837,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Pass",
     phonetic: "p\u00e6s",
     img: `${LOCAL_WORD_IMAGES}/sports-center/pass.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-5",
     description: "To deliberately transfer the ball to a fellow team player.",
   },
   {
@@ -11036,7 +10845,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Catch",
     phonetic: "k\u00e6t\u0283",
     img: `${LOCAL_WORD_IMAGES}/sports-center/catch.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-5",
     description: "To intercept and hold a moving sphere with your hands securely.",
   },
   {
@@ -11044,7 +10853,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Throw",
     phonetic: "\u03b8ro\u028a",
     img: `${LOCAL_WORD_IMAGES}/sports-center/throw.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-5",
     description: "To propel an athletic sphere through the air using arm motion.",
   },
   {
@@ -11052,7 +10861,7 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Kick",
     phonetic: "k\u026ak",
     img: `${LOCAL_WORD_IMAGES}/sports-center/kick.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-5",
     description: "To strike an athletic sphere forcefully using your foot or boot.",
   },
   {
@@ -11060,100 +10869,82 @@ export const SPORTS_CENTER_VOCABULARY: VocabularyItem[] = [
     label: "Dribble",
     phonetic: "\u02c8dr\u026ab\u0259l",
     img: `${LOCAL_WORD_IMAGES}/sports-center/dribble.webp`,
-    topic: "equipment-roles",
+    topic: "sports-center-5",
     description: "To bounce or guide a ball continuously with short taps.",
   },
 ];
 
 export const HOSPITAL_TOPICS: TopicCategory[] = [
   {
-    id: "medical-staff",
-    name: "Medical Staff",
-    itemsCount: 12,
+    id: "hospital-1",
+    name: "Hospital Part 1",
+    itemsCount: 15,
   },
   {
-    id: "hospital-rooms",
-    name: "Hospital Departments",
-    itemsCount: 12,
+    id: "hospital-2",
+    name: "Hospital Part 2",
+    itemsCount: 15,
   },
   {
-    id: "medical-equipment",
-    name: "Medical Instruments",
-    itemsCount: 12,
+    id: "hospital-3",
+    name: "Hospital Part 3",
+    itemsCount: 15,
   },
   {
-    id: "body-health",
-    name: "Anatomy & Health",
-    itemsCount: 12,
+    id: "hospital-4",
+    name: "Hospital Part 4",
+    itemsCount: 15,
   },
   {
-    id: "procedures",
-    name: "Diagnostics & Care",
-    itemsCount: 12,
-  },
-  {
-    id: "inpatient-mobility",
-    name: "Inpatient Care & Mobility",
+    id: "hospital-5",
+    name: "Hospital Part 5",
     itemsCount: 12,
   },
 ];
 
 export const HOSPITAL_GROUPS: Lesson[] = [
   {
-    id: "hosp-group-1",
-    name: "Primary Medical Care",
-    topicId: "medical-staff",
-    wordIds: ["doctor", "nurse", "surgeon", "paramedic", "receptionist", "pharmacist"],
-    description: "Learn about key hospital doctors and nurses.",
-    story:
-      "At the clinic, the receptionist checked in arriving patients, the family doctor conducted exams, the nurse administered medicine, the pharmacist filled orders, the paramedic answered calls, and the surgeon prepared for operations.",
-  },
-  {
-    id: "hosp-group-2",
-    name: "Specialist Physicians",
-    topicId: "medical-staff",
+    id: "hospital-1",
+    name: "Hospital Basics 1",
+    description:
+      "Learn about Doctor, Nurse, Surgeon, Paramedic, Receptionist, Pharmacist, Anesthesiologist, Radiologist, Pediatri...",
+    topicId: "hospital-1",
     wordIds: [
+      "doctor",
+      "nurse",
+      "surgeon",
+      "paramedic",
+      "receptionist",
+      "pharmacist",
       "anesthesiologist",
       "radiologist",
       "pediatrician",
       "psychiatrist",
       "midwife",
       "orderly",
-    ],
-    description: "Learn about hospital specialists.",
-    story:
-      "The pediatrician examined children, the gentle midwife assisted expectant mothers, the anesthesiologist monitored sedation, the radiologist read scans, the psychiatrist supported wellness, and the orderly wheeled patients.",
-  },
-  {
-    id: "hosp-group-3",
-    name: "Emergency, Surgery & Inpatient",
-    topicId: "hospital-rooms",
-    wordIds: [
       "emergency-room",
       "waiting-room",
       "operating-room",
+    ],
+    story:
+      "In this section, you will learn about Doctor, Nurse, Surgeon, Paramedic, Receptionist, Pharmacist, Anesthesiologist, Radiologist, Pediatrician, Psychiatrist, Midwife, Orderly, Emergency Room, Waiting Room, Operating Room. These are essential items to know.",
+  },
+  {
+    id: "hospital-2",
+    name: "Hospital Basics 2",
+    description:
+      "Learn about Recovery Room, Patient Room, Intensive Care Unit, Maternity Ward, Nursery, Laboratory, Radiology, Ca...",
+    topicId: "hospital-2",
+    wordIds: [
       "recovery-room",
       "patient-room",
       "intensive-care-unit",
-    ],
-    description: "Learn about hospital care wards.",
-    story:
-      "Ambulances arrived at the emergency room, family sat in the waiting room, surgeons scrubbed into the operating room, patients woke up in the recovery room before resting in a patient room, while acute cases were treated in the intensive care unit.",
-  },
-  {
-    id: "hosp-group-4",
-    name: "Maternity, Labs & Pharmacy",
-    topicId: "hospital-rooms",
-    wordIds: ["maternity-ward", "nursery", "laboratory", "radiology", "cafeteria", "pharmacy"],
-    description: "Learn about specialized hospital departments.",
-    story:
-      "New parents celebrated in the maternity ward while newborns slept in the nursery, technicians tested blood in the laboratory, patients scanned in radiology, visitors ate in the cafeteria, and picked up prescriptions at the hospital pharmacy.",
-  },
-  {
-    id: "hosp-group-5",
-    name: "Diagnostic Tools & Emergency Gear",
-    topicId: "medical-equipment",
-    wordIds: [
+      "maternity-ward",
+      "nursery",
+      "laboratory",
+      "radiology",
+      "cafeteria",
+      "pharmacy",
       "stethoscope",
       "syringe",
       "thermometer",
@@ -11161,72 +10952,83 @@ export const HOSPITAL_GROUPS: Lesson[] = [
       "iv-drip",
       "wheelchair",
     ],
-    description: "Learn about diagnostic tools and patient gear.",
     story:
-      "The doctor used a stethoscope, digital thermometer, and blood pressure monitor, while the nurse drew medicine with a sterile syringe, connected the saline IV drip, and moved the patient in a wheelchair.",
+      "In this section, you will learn about Recovery Room, Patient Room, Intensive Care Unit, Maternity Ward, Nursery, Laboratory, Radiology, Cafeteria, Pharmacy, Stethoscope, Syringe, Thermometer, Blood Pressure Monitor, IV Drip, Wheelchair. These are essential items to know.",
   },
   {
-    id: "hosp-group-6",
-    name: "Life Support & Surgical Tools",
-    topicId: "medical-equipment",
-    wordIds: ["stretcher", "oxygen-mask", "defibrillator", "scalpel", "bandage", "cast"],
-    description: "Learn about surgical and emergency devices.",
+    id: "hospital-3",
+    name: "Hospital Basics 3",
+    description:
+      "Learn about Stretcher, Oxygen Mask, Defibrillator, Scalpel, Bandage, Cast, Heart, Lungs, Brain, Bone, Blood, Pul...",
+    topicId: "hospital-3",
+    wordIds: [
+      "stretcher",
+      "oxygen-mask",
+      "defibrillator",
+      "scalpel",
+      "bandage",
+      "cast",
+      "heart",
+      "lungs",
+      "brain",
+      "bone",
+      "blood",
+      "pulse",
+      "fever",
+      "infection",
+      "injury",
+    ],
     story:
-      "Paramedics wheeled the injured patient on a stretcher with an oxygen mask and defibrillator ready, while surgeons operated with a scalpel, wrapped a sterile bandage, and set the broken arm in a cast.",
+      "In this section, you will learn about Stretcher, Oxygen Mask, Defibrillator, Scalpel, Bandage, Cast, Heart, Lungs, Brain, Bone, Blood, Pulse, Fever, Infection, Injury. These are essential items to know.",
   },
   {
-    id: "hosp-group-7",
-    name: "Vital Organs & Health Signs",
-    topicId: "body-health",
-    wordIds: ["heart", "lungs", "brain", "bone", "blood", "pulse"],
-    description: "Learn about human anatomy and vital signs.",
+    id: "hospital-4",
+    name: "Hospital Basics 4",
+    description:
+      "Learn about Fracture, Allergy, Rash, Examination, Diagnosis, Prescription, Surgery, X Ray, Blood Test, Injection...",
+    topicId: "hospital-4",
+    wordIds: [
+      "fracture",
+      "allergy",
+      "rash",
+      "examination",
+      "diagnosis",
+      "prescription",
+      "surgery",
+      "x-ray",
+      "blood-test",
+      "injection",
+      "vaccination",
+      "ultrasound",
+      "mri-scan",
+      "stitches",
+      "physical-therapy",
+    ],
     story:
-      "Oxygen enters the lungs to enrich circulating blood, while the beating heart supplies the body, the skull protects the delicate brain, the skeleton forms every bone, and nurses count your steady wrist pulse.",
+      "In this section, you will learn about Fracture, Allergy, Rash, Examination, Diagnosis, Prescription, Surgery, X Ray, Blood Test, Injection, Vaccination, Ultrasound, MRI Scan, Stitches, Physical Therapy. These are essential items to know.",
   },
   {
-    id: "hosp-group-8",
-    name: "Illness, Injury & Reactions",
-    topicId: "body-health",
-    wordIds: ["fever", "infection", "injury", "fracture", "allergy", "rash"],
-    description: "Learn about common health conditions.",
+    id: "hospital-5",
+    name: "Hospital Basics 5",
+    description:
+      "Learn about Hospital Bed, Pillow, Blanket, Gown, Chart, Clipboard, Medicine, Pills, Ointment, Crutches, Walker, ...",
+    topicId: "hospital-5",
+    wordIds: [
+      "hospital-bed",
+      "pillow",
+      "blanket",
+      "gown",
+      "chart",
+      "clipboard",
+      "medicine",
+      "pills",
+      "ointment",
+      "crutches",
+      "walker",
+      "ambulance",
+    ],
     story:
-      "A bacterial infection caused a high fever, the runner treated a sports injury, the X-ray showed a bone fracture, while a peanut allergy triggered an itchy skin rash.",
-  },
-  {
-    id: "hosp-group-9",
-    name: "Clinical Exams & Imaging",
-    topicId: "procedures",
-    wordIds: ["examination", "diagnosis", "prescription", "surgery", "x-ray", "blood-test"],
-    description: "Learn about medical examinations and surgery.",
-    story:
-      "During the routine physical examination, the doctor ordered a blood test and chest X-ray, reached an accurate diagnosis, wrote a prescription, and scheduled necessary surgery.",
-  },
-  {
-    id: "hosp-group-10",
-    name: "Treatments & Rehabilitation",
-    topicId: "procedures",
-    wordIds: ["injection", "vaccination", "ultrasound", "mri-scan", "stitches", "physical-therapy"],
-    description: "Learn about medical therapies and treatments.",
-    story:
-      "The patient received an immunization vaccination and pain relief injection, had an abdomen ultrasound and knee MRI scan, got surgical stitches removed, and attended physical therapy.",
-  },
-  {
-    id: "hosp-group-11",
-    name: "Inpatient Bedding & Records",
-    topicId: "inpatient-mobility",
-    wordIds: ["hospital-bed", "pillow", "blanket", "gown", "chart", "clipboard"],
-    description: "Learn about hospital stay essentials.",
-    story:
-      "The patient rested in the adjustable hospital bed with a soft pillow and warm blanket, wore a blue cotton gown, while the doctor updated her medical chart on a metal clipboard.",
-  },
-  {
-    id: "hosp-group-12",
-    name: "Medications & Mobility Aid",
-    topicId: "inpatient-mobility",
-    wordIds: ["medicine", "pills", "ointment", "crutches", "walker", "ambulance"],
-    description: "Learn about medicines and mobility tools.",
-    story:
-      "The patient took liquid medicine and swallowed two pain pills, applied antibiotic ointment, practiced walking with crutches and a four-wheeled walker, after arriving safely by ambulance.",
+      "In this section, you will learn about Hospital Bed, Pillow, Blanket, Gown, Chart, Clipboard, Medicine, Pills, Ointment, Crutches, Walker, Ambulance. These are essential items to know.",
   },
 ];
 
@@ -11236,7 +11038,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Doctor",
     phonetic: "\u02c8d\u0252kt\u0259r",
     img: `${LOCAL_WORD_IMAGES}/hospital/doctor.webp`,
-    topic: "medical-staff",
+    topic: "hospital-1",
     description: "A licensed medical professional who diagnoses and treats illnesses.",
   },
   {
@@ -11244,7 +11046,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Nurse",
     phonetic: "n\u025c\u02d0rs",
     img: `${LOCAL_WORD_IMAGES}/hospital/nurse.webp`,
-    topic: "medical-staff",
+    topic: "hospital-1",
     description: "A trained healthcare specialist who administers medications and care.",
   },
   {
@@ -11252,7 +11054,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Surgeon",
     phonetic: "\u02c8s\u025c\u02d0rd\u0292\u0259n",
     img: `${LOCAL_WORD_IMAGES}/hospital/surgeon.webp`,
-    topic: "medical-staff",
+    topic: "hospital-1",
     description: "A specialized physician who performs operative medical procedures.",
   },
   {
@@ -11260,7 +11062,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Paramedic",
     phonetic: "\u02ccp\u00e6r\u0259\u02c8m\u025bd\u026ak",
     img: `${LOCAL_WORD_IMAGES}/hospital/paramedic.webp`,
-    topic: "medical-staff",
+    topic: "hospital-1",
     description: "An emergency technician who provides urgent mobile triage care.",
   },
   {
@@ -11268,7 +11070,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Receptionist",
     phonetic: "r\u026a\u02c8s\u025bp\u0283\u0259n\u026ast",
     img: `${LOCAL_WORD_IMAGES}/hospital/receptionist.webp`,
-    topic: "medical-staff",
+    topic: "hospital-1",
     description: "A front-desk employee who registers arriving patients at clinics.",
   },
   {
@@ -11276,7 +11078,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Pharmacist",
     phonetic: "\u02c8f\u0251\u02d0rm\u0259s\u026ast",
     img: `${LOCAL_WORD_IMAGES}/hospital/pharmacist.webp`,
-    topic: "medical-staff",
+    topic: "hospital-1",
     description: "A licensed health professional who dispenses prescription drugs.",
   },
   {
@@ -11284,7 +11086,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Anesthesiologist",
     phonetic: "\u02cc\u00e6n\u0259s\u02cc\u03b8i\u02d0zi\u02c8\u0252l\u0259d\u0292\u026ast",
     img: `${LOCAL_WORD_IMAGES}/hospital/anesthesiologist.webp`,
-    topic: "medical-staff",
+    topic: "hospital-1",
     description: "A physician specialist who administers sedation before surgery.",
   },
   {
@@ -11292,7 +11094,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Radiologist",
     phonetic: "\u02ccre\u026adi\u02c8\u0252l\u0259d\u0292\u026ast",
     img: `${LOCAL_WORD_IMAGES}/hospital/radiologist.webp`,
-    topic: "medical-staff",
+    topic: "hospital-1",
     description: "A specialist physician who analyzes diagnostic films and scans.",
   },
   {
@@ -11300,7 +11102,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Pediatrician",
     phonetic: "\u02ccpi\u02d0di\u0259\u02c8tr\u026a\u0283\u0259n",
     img: `${LOCAL_WORD_IMAGES}/hospital/pediatrician.webp`,
-    topic: "medical-staff",
+    topic: "hospital-1",
     description: "A clinical doctor who specializes in infant and child health.",
   },
   {
@@ -11308,7 +11110,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Psychiatrist",
     phonetic: "sa\u026a\u02c8ka\u026a\u0259tr\u026ast",
     img: `${LOCAL_WORD_IMAGES}/hospital/psychiatrist.webp`,
-    topic: "medical-staff",
+    topic: "hospital-1",
     description: "A clinical specialist who treats emotional and mental health.",
   },
   {
@@ -11316,7 +11118,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Midwife",
     phonetic: "\u02c8m\u026adwa\u026af",
     img: `${LOCAL_WORD_IMAGES}/hospital/midwife.webp`,
-    topic: "medical-staff",
+    topic: "hospital-1",
     description: "A trained health practitioner who assists mothers during childbirth.",
   },
   {
@@ -11324,7 +11126,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Orderly",
     phonetic: "\u02c8\u0254\u02d0rd\u0259rli",
     img: `${LOCAL_WORD_IMAGES}/hospital/orderly.webp`,
-    topic: "medical-staff",
+    topic: "hospital-1",
     description: "A healthcare attendant who assists with moving patients safely.",
   },
   {
@@ -11332,7 +11134,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Emergency Room",
     phonetic: "\u026a\u02c8m\u025c\u02d0rd\u0292\u0259nsi ru\u02d0m",
     img: `${LOCAL_WORD_IMAGES}/hospital/emergency-room.webp`,
-    topic: "hospital-rooms",
+    topic: "hospital-1",
     description: "An urgent care clinic department treating acute medical trauma.",
   },
   {
@@ -11340,7 +11142,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Waiting Room",
     phonetic: "\u02c8we\u026at\u026a\u014b ru\u02d0m",
     img: `${LOCAL_WORD_IMAGES}/hospital/waiting-room.webp`,
-    topic: "hospital-rooms",
+    topic: "hospital-1",
     description: "A heated indoor seating lounge for travelers awaiting their scheduled departure.",
   },
   {
@@ -11348,7 +11150,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Operating Room",
     phonetic: "\u02c8\u0252p\u0259re\u026at\u026a\u014b ru\u02d0m",
     img: `${LOCAL_WORD_IMAGES}/hospital/operating-room.webp`,
-    topic: "hospital-rooms",
+    topic: "hospital-1",
     description: "A sterile surgical suite equipped with lights and monitors.",
   },
   {
@@ -11356,7 +11158,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Recovery Room",
     phonetic: "r\u026a\u02c8k\u028cv\u0259ri ru\u02d0m",
     img: `${LOCAL_WORD_IMAGES}/hospital/recovery-room.webp`,
-    topic: "hospital-rooms",
+    topic: "hospital-2",
     description: "A post-surgical ward where patients awaken from anesthesia.",
   },
   {
@@ -11364,7 +11166,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Patient Room",
     phonetic: "\u02c8pe\u026a\u0283\u0259nt ru\u02d0m",
     img: `${LOCAL_WORD_IMAGES}/hospital/patient-room.webp`,
-    topic: "hospital-rooms",
+    topic: "hospital-2",
     description: "A private inpatient quarters equipped with an adjustable cot.",
   },
   {
@@ -11372,7 +11174,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Intensive Care Unit",
     phonetic: "\u026an\u02c8t\u025bns\u026av k\u025b\u0259r \u02c8ju\u02d0n\u026at",
     img: `${LOCAL_WORD_IMAGES}/hospital/intensive-care-unit.webp`,
-    topic: "hospital-rooms",
+    topic: "hospital-2",
     description: "A specialized clinic ward with continuous physiological telemetry.",
   },
   {
@@ -11380,7 +11182,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Maternity Ward",
     phonetic: "m\u0259\u02c8t\u025c\u02d0rn\u026ati w\u0254\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/hospital/maternity-ward.webp`,
-    topic: "hospital-rooms",
+    topic: "hospital-2",
     description: "A dedicated hospital wing providing specialized childbirth services.",
   },
   {
@@ -11388,7 +11190,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Nursery",
     phonetic: "\u02c8n\u025c\u02d0rs\u0259ri",
     img: `${LOCAL_WORD_IMAGES}/hospital/nursery.webp`,
-    topic: "hospital-rooms",
+    topic: "hospital-2",
     description: "A climate-controlled room where newborn infants rest in cribs.",
   },
   {
@@ -11396,7 +11198,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Laboratory",
     phonetic: "\u02c8l\u00e6br\u0259t\u0254\u02d0ri",
     img: `${LOCAL_WORD_IMAGES}/hospital/laboratory.webp`,
-    topic: "hospital-rooms",
+    topic: "hospital-2",
     description: "A diagnostic medical facility where blood and tissue are tested.",
   },
   {
@@ -11404,7 +11206,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Radiology",
     phonetic: "\u02ccre\u026adi\u02c8\u0252l\u0259d\u0292i",
     img: `${LOCAL_WORD_IMAGES}/hospital/radiology.webp`,
-    topic: "hospital-rooms",
+    topic: "hospital-2",
     description: "A specialized department housing CT, X-ray, and scan machinery.",
   },
   {
@@ -11412,7 +11214,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Cafeteria",
     phonetic: "\u02cck\u00e6f\u0259\u02c8t\u026a\u0259ri\u0259",
     img: `${LOCAL_WORD_IMAGES}/hospital/cafeteria.webp`,
-    topic: "hospital-rooms",
+    topic: "hospital-2",
     description: "A dining hall where staff and visitors purchase fresh meals.",
   },
   {
@@ -11420,7 +11222,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Pharmacy",
     phonetic: "\u02c8f\u0251\u02d0rm\u0259si",
     img: `${LOCAL_WORD_IMAGES}/hospital/pharmacy.webp`,
-    topic: "hospital-rooms",
+    topic: "hospital-2",
     description: "A dispensary within a medical clinic where medications are prepared.",
   },
   {
@@ -11428,7 +11230,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Stethoscope",
     phonetic: "\u02c8st\u025b\u03b8\u0259sko\u028ap",
     img: `${LOCAL_WORD_IMAGES}/hospital/stethoscope.webp`,
-    topic: "medical-equipment",
+    topic: "hospital-2",
     description: "An acoustic medical tool used by physicians to listen to heartbeats.",
   },
   {
@@ -11436,7 +11238,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Syringe",
     phonetic: "s\u026a\u02c8r\u026and\u0292",
     img: `${LOCAL_WORD_IMAGES}/hospital/syringe.webp`,
-    topic: "medical-equipment",
+    topic: "hospital-2",
     description: "A calibrated barrel with a plunger and needle for injecting fluid.",
   },
   {
@@ -11444,7 +11246,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Thermometer",
     phonetic: "\u03b8\u0259r\u02c8m\u0252m\u026at\u0259r",
     img: `${LOCAL_WORD_IMAGES}/hospital/thermometer.webp`,
-    topic: "medical-equipment",
+    topic: "hospital-2",
     description: "A digital or infrared instrument that measures body heat.",
   },
   {
@@ -11452,7 +11254,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Blood Pressure Monitor",
     phonetic: "bl\u028cd \u02c8pr\u025b\u0283\u0259r \u02c8m\u0252n\u026at\u0259r",
     img: `${LOCAL_WORD_IMAGES}/hospital/blood-pressure-monitor.webp`,
-    topic: "medical-equipment",
+    topic: "hospital-2",
     description: "A diagnostic tool with an inflatable arm cuff for arterial readings.",
   },
   {
@@ -11460,7 +11262,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "IV Drip",
     phonetic: "\u02cca\u026a\u02c8vi\u02d0 dr\u026ap",
     img: `${LOCAL_WORD_IMAGES}/hospital/iv-drip.webp`,
-    topic: "medical-equipment",
+    topic: "hospital-2",
     description: "An apparatus that infuses liquid medications directly into veins.",
   },
   {
@@ -11468,7 +11270,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Wheelchair",
     phonetic: "\u02c8wi\u02d0lt\u0283\u025b\u0259r",
     img: `${LOCAL_WORD_IMAGES}/hospital/wheelchair.webp`,
-    topic: "medical-equipment",
+    topic: "hospital-2",
     description: "A mobile seat equipped with large wheels for moving patients.",
   },
   {
@@ -11476,7 +11278,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Stretcher",
     phonetic: "\u02c8str\u025bt\u0283\u0259r",
     img: `${LOCAL_WORD_IMAGES}/hospital/stretcher.webp`,
-    topic: "medical-equipment",
+    topic: "hospital-3",
     description: "A portable wheeled cot used by paramedics to move injured patients.",
   },
   {
@@ -11484,7 +11286,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Oxygen Mask",
     phonetic: "\u02c8\u0252ks\u026ad\u0292\u0259n m\u00e6sk",
     img: `${LOCAL_WORD_IMAGES}/hospital/oxygen-mask.webp`,
-    topic: "medical-equipment",
+    topic: "hospital-3",
     description: "A transparent plastic facepiece that delivers enriched breathing air.",
   },
   {
@@ -11492,7 +11294,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Defibrillator",
     phonetic: "di\u02d0\u02c8f\u026abr\u026ale\u026at\u0259r",
     img: `${LOCAL_WORD_IMAGES}/hospital/defibrillator.webp`,
-    topic: "medical-equipment",
+    topic: "hospital-3",
     description: "An electrical machine used to deliver therapeutic shocks to hearts.",
   },
   {
@@ -11500,7 +11302,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Scalpel",
     phonetic: "\u02c8sk\u00e6lp\u0259l",
     img: `${LOCAL_WORD_IMAGES}/hospital/scalpel.webp`,
-    topic: "medical-equipment",
+    topic: "hospital-3",
     description: "An ultra-sharp steel blade used by doctors to make incisions.",
   },
   {
@@ -11508,7 +11310,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Bandage",
     phonetic: "\u02c8b\u00e6nd\u026ad\u0292",
     img: `${LOCAL_WORD_IMAGES}/hospital/bandage.webp`,
-    topic: "medical-equipment",
+    topic: "hospital-3",
     description: "A strip of sterile gauze or elastic fabric used to bind wounds.",
   },
   {
@@ -11516,7 +11318,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Cast",
     phonetic: "k\u0251\u02d0st",
     img: `${LOCAL_WORD_IMAGES}/hospital/cast.webp`,
-    topic: "medical-equipment",
+    topic: "hospital-3",
     description: "A rigid plaster or fiberglass mold that immobilizes fractured limbs.",
   },
   {
@@ -11524,7 +11326,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Heart",
     phonetic: "h\u0251\u02d0rt",
     img: `${LOCAL_WORD_IMAGES}/hospital/heart.webp`,
-    topic: "body-health",
+    topic: "hospital-3",
     description: "A muscular bodily pump that circulates oxygenated fluid in vessels.",
   },
   {
@@ -11532,7 +11334,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Lungs",
     phonetic: "l\u028c\u014bz",
     img: `${LOCAL_WORD_IMAGES}/hospital/lungs.webp`,
-    topic: "body-health",
+    topic: "hospital-3",
     description: "A pair of spongy respiratory cavities that extract oxygen from air.",
   },
   {
@@ -11540,7 +11342,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Brain",
     phonetic: "bre\u026an",
     img: `${LOCAL_WORD_IMAGES}/hospital/brain.webp`,
-    topic: "body-health",
+    topic: "hospital-3",
     description: "The primary central organ of the nervous system inside the skull.",
   },
   {
@@ -11548,7 +11350,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Bone",
     phonetic: "bo\u028an",
     img: `${LOCAL_WORD_IMAGES}/hospital/bone.webp`,
-    topic: "body-health",
+    topic: "hospital-3",
     description: "A rigid skeletal framework piece that provides bodily structure.",
   },
   {
@@ -11556,7 +11358,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Blood",
     phonetic: "bl\u028cd",
     img: `${LOCAL_WORD_IMAGES}/hospital/blood.webp`,
-    topic: "body-health",
+    topic: "hospital-3",
     description: "The vital crimson fluid that circulates nutrients and oxygen in veins.",
   },
   {
@@ -11564,7 +11366,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Pulse",
     phonetic: "p\u028cls",
     img: `${LOCAL_WORD_IMAGES}/hospital/pulse.webp`,
-    topic: "body-health",
+    topic: "hospital-3",
     description: "The rhythmic throb of arterial circulation felt at the wrist.",
   },
   {
@@ -11572,7 +11374,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Fever",
     phonetic: "\u02c8fi\u02d0v\u0259r",
     img: `${LOCAL_WORD_IMAGES}/hospital/fever.webp`,
-    topic: "body-health",
+    topic: "hospital-3",
     description: "An elevated body temperature occurring in response to infection.",
   },
   {
@@ -11580,7 +11382,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Infection",
     phonetic: "\u026an\u02c8f\u025bk\u0283\u0259n",
     img: `${LOCAL_WORD_IMAGES}/hospital/infection.webp`,
-    topic: "body-health",
+    topic: "hospital-3",
     description: "A medical condition caused by harmful bacteria or viruses.",
   },
   {
@@ -11588,7 +11390,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Injury",
     phonetic: "\u02c8\u026and\u0292\u0259ri",
     img: `${LOCAL_WORD_IMAGES}/hospital/injury.webp`,
-    topic: "body-health",
+    topic: "hospital-3",
     description: "Physical bodily harm caused by an accidental impact or trauma.",
   },
   {
@@ -11596,7 +11398,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Fracture",
     phonetic: "\u02c8fr\u00e6kt\u0283\u0259r",
     img: `${LOCAL_WORD_IMAGES}/hospital/fracture.webp`,
-    topic: "body-health",
+    topic: "hospital-4",
     description: "A crack or complete break in the rigid structure of a skeleton.",
   },
   {
@@ -11604,7 +11406,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Allergy",
     phonetic: "\u02c8\u00e6l\u0259rd\u0292i",
     img: `${LOCAL_WORD_IMAGES}/hospital/allergy.webp`,
-    topic: "body-health",
+    topic: "hospital-4",
     description: "An immune hypersensitivity reaction to specific nuts or pollen.",
   },
   {
@@ -11612,7 +11414,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Rash",
     phonetic: "r\u00e6\u0283",
     img: `${LOCAL_WORD_IMAGES}/hospital/rash.webp`,
-    topic: "body-health",
+    topic: "hospital-4",
     description: "An area of irritated, red, or inflamed skin caused by reactions.",
   },
   {
@@ -11620,7 +11422,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Examination",
     phonetic: "\u026a\u0261\u02ccz\u00e6m\u026a\u02c8ne\u026a\u0283\u0259n",
     img: `${LOCAL_WORD_IMAGES}/hospital/examination.webp`,
-    topic: "procedures",
+    topic: "hospital-4",
     description: "A comprehensive physical health check conducted by a physician.",
   },
   {
@@ -11628,7 +11430,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Diagnosis",
     phonetic: "\u02ccda\u026a\u0259\u0261\u02c8no\u028as\u026as",
     img: `${LOCAL_WORD_IMAGES}/hospital/diagnosis.webp`,
-    topic: "procedures",
+    topic: "hospital-4",
     description: "The formal identification of a medical illness from test results.",
   },
   {
@@ -11636,7 +11438,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Prescription",
     phonetic: "pr\u026a\u02c8skr\u026ap\u0283\u0259n",
     img: `${LOCAL_WORD_IMAGES}/hospital/prescription.webp`,
-    topic: "procedures",
+    topic: "hospital-4",
     description: "A written authorization from a doctor for designated pharmacy drugs.",
   },
   {
@@ -11644,7 +11446,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Surgery",
     phonetic: "\u02c8s\u025c\u02d0rd\u0292\u0259ri",
     img: `${LOCAL_WORD_IMAGES}/hospital/surgery.webp`,
-    topic: "procedures",
+    topic: "hospital-4",
     description: "An operative medical procedure performed in a sterile theater.",
   },
   {
@@ -11652,7 +11454,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "X Ray",
     phonetic: "\u02c8\u025bksre\u026a",
     img: `${LOCAL_WORD_IMAGES}/hospital/x-ray.webp`,
-    topic: "procedures",
+    topic: "hospital-4",
     description: "A photographic diagnostic scan showing bones and inner structures.",
   },
   {
@@ -11660,7 +11462,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Blood Test",
     phonetic: "bl\u028cd t\u025bst",
     img: `${LOCAL_WORD_IMAGES}/hospital/blood-test.webp`,
-    topic: "procedures",
+    topic: "hospital-4",
     description: "A laboratory diagnostic analysis of a drawn sample of crimson fluid.",
   },
   {
@@ -11668,7 +11470,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Injection",
     phonetic: "\u026an\u02c8d\u0292\u025bk\u0283\u0259n",
     img: `${LOCAL_WORD_IMAGES}/hospital/injection.webp`,
-    topic: "procedures",
+    topic: "hospital-4",
     description: "The medical act of administering liquid medicine using a needle.",
   },
   {
@@ -11676,7 +11478,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Vaccination",
     phonetic: "\u02ccv\u00e6ks\u026a\u02c8ne\u026a\u0283\u0259n",
     img: `${LOCAL_WORD_IMAGES}/hospital/vaccination.webp`,
-    topic: "procedures",
+    topic: "hospital-4",
     description: "An immunization shot given to build biological disease defense.",
   },
   {
@@ -11684,7 +11486,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Ultrasound",
     phonetic: "\u02c8\u028cltr\u0259sa\u028and",
     img: `${LOCAL_WORD_IMAGES}/hospital/ultrasound.webp`,
-    topic: "procedures",
+    topic: "hospital-4",
     description: "A non-invasive diagnostic scan utilizing high-frequency sound waves.",
   },
   {
@@ -11692,7 +11494,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "MRI Scan",
     phonetic: "\u02cc\u025bm \u0251\u02d0r \u02c8a\u026a sk\u00e6n",
     img: `${LOCAL_WORD_IMAGES}/hospital/mri-scan.webp`,
-    topic: "procedures",
+    topic: "hospital-4",
     description: "A 3D magnetic resonance imaging procedure revealing soft tissue.",
   },
   {
@@ -11700,7 +11502,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Stitches",
     phonetic: "\u02c8st\u026at\u0283\u026az",
     img: `${LOCAL_WORD_IMAGES}/hospital/stitches.webp`,
-    topic: "procedures",
+    topic: "hospital-4",
     description: "Sterile surgical loops of thread used to close deep lacerations.",
   },
   {
@@ -11708,7 +11510,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Physical Therapy",
     phonetic: "\u02c8f\u026az\u026ak\u0259l \u02c8\u03b8\u025br\u0259pi",
     img: `${LOCAL_WORD_IMAGES}/hospital/physical-therapy.webp`,
-    topic: "procedures",
+    topic: "hospital-4",
     description: "A structured rehabilitation program to restore motor mobility.",
   },
   {
@@ -11716,7 +11518,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Hospital Bed",
     phonetic: "\u02c8h\u0252sp\u026at\u0259l b\u025bd",
     img: `${LOCAL_WORD_IMAGES}/hospital/hospital-bed.webp`,
-    topic: "inpatient-mobility",
+    topic: "hospital-5",
     description: "An adjustable motorized sleeping cot with safety rails for inpatients.",
   },
   {
@@ -11724,7 +11526,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Pillow",
     phonetic: "\u02c8p\u026alo\u028a",
     img: `${LOCAL_WORD_IMAGES}/hospital/pillow.webp`,
-    topic: "inpatient-mobility",
+    topic: "hospital-5",
     description: "A soft cushioned headrest that provides comfort during bed rest.",
   },
   {
@@ -11732,7 +11534,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Blanket",
     phonetic: "\u02c8bl\u00e6\u014bk\u026at",
     img: `${LOCAL_WORD_IMAGES}/hospital/blanket.webp`,
-    topic: "inpatient-mobility",
+    topic: "hospital-5",
     description: "A warm woven cotton covering placed over recovering patients.",
   },
   {
@@ -11740,7 +11542,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Gown",
     phonetic: "\u0261a\u028an",
     img: `${LOCAL_WORD_IMAGES}/hospital/gown.webp`,
-    topic: "inpatient-mobility",
+    topic: "hospital-5",
     description: "A comfortable loose cotton garment worn by admitted patients.",
   },
   {
@@ -11748,7 +11550,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Chart",
     phonetic: "t\u0283\u0251\u02d0rt",
     img: `${LOCAL_WORD_IMAGES}/hospital/chart.webp`,
-    topic: "inpatient-mobility",
+    topic: "hospital-5",
     description: "A clinical medical folder containing a patient's health records.",
   },
   {
@@ -11756,7 +11558,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Clipboard",
     phonetic: "\u02c8kl\u026apb\u0254\u02d0rd",
     img: `${LOCAL_WORD_IMAGES}/hospital/clipboard.webp`,
-    topic: "inpatient-mobility",
+    topic: "hospital-5",
     description: "A portable metal board with a top clip holding medical notes.",
   },
   {
@@ -11764,7 +11566,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Medicine",
     phonetic: "\u02c8m\u025bd\u026as\u026an",
     img: `${LOCAL_WORD_IMAGES}/hospital/medicine.webp`,
-    topic: "inpatient-mobility",
+    topic: "hospital-5",
     description: "A therapeutic pharmaceutical remedy used to cure or soothe sickness.",
   },
   {
@@ -11772,7 +11574,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Pills",
     phonetic: "p\u026alz",
     img: `${LOCAL_WORD_IMAGES}/hospital/pills.webp`,
-    topic: "inpatient-mobility",
+    topic: "hospital-5",
     description: "Solid medicinal tablets or capsules swallowed with water.",
   },
   {
@@ -11780,7 +11582,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Ointment",
     phonetic: "\u02c8\u0254\u026antm\u0259nt",
     img: `${LOCAL_WORD_IMAGES}/hospital/ointment.webp`,
-    topic: "inpatient-mobility",
+    topic: "hospital-5",
     description: "A medicated soothing cream rubbed onto skin to treat irritations.",
   },
   {
@@ -11788,7 +11590,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Crutches",
     phonetic: "\u02c8kr\u028ct\u0283\u026az",
     img: `${LOCAL_WORD_IMAGES}/hospital/crutches.webp`,
-    topic: "inpatient-mobility",
+    topic: "hospital-5",
     description: "A pair of lightweight supports used under arms while walking.",
   },
   {
@@ -11796,7 +11598,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Walker",
     phonetic: "\u02c8w\u0254\u02d0k\u0259r",
     img: `${LOCAL_WORD_IMAGES}/hospital/walker.webp`,
-    topic: "inpatient-mobility",
+    topic: "hospital-5",
     description: "A sturdy four-legged metal frame leaned on for balance.",
   },
   {
@@ -11804,7 +11606,7 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
     label: "Ambulance",
     phonetic: "\u02c8\u00e6mbj\u0259l\u0259ns",
     img: `${LOCAL_WORD_IMAGES}/hospital/ambulance.webp`,
-    topic: "inpatient-mobility",
+    topic: "hospital-5",
     description: "An emergency vehicle with sirens and lights used to transport patients.",
   },
 ];
@@ -11812,231 +11614,223 @@ export const HOSPITAL_VOCABULARY: VocabularyItem[] = [
 // --- TOPICS & GROUPS FOR NEW TRAVEL & PUBLIC SERVICES UNITS ---
 
 export const AIRPORT_TOPICS: TopicCategory[] = [
-  { id: "airport-1", name: "Departures", itemsCount: 4 },
-  { id: "airport-2", name: "Flight & Arrival", itemsCount: 4 },
-  { id: "airport-3", name: "Services", itemsCount: 4 },
+  {
+    id: "airport-1",
+    name: "Airport Part 1",
+    itemsCount: 12,
+  },
 ];
 
 export const AIRPORT_GROUPS: Lesson[] = [
   {
-    id: "airport-group-1",
-    name: "Departures",
+    id: "airport-1",
+    name: "Airport Basics 1",
+    description:
+      "Learn about Airport Terminal, Boarding Pass, Luggage Cart, Security Check, Departure Gate, Flight Attendant, Run...",
     topicId: "airport-1",
-    wordIds: ["airport-terminal", "boarding-pass", "luggage-cart", "security-check"],
-    description: "Learn vocabulary related to departures.",
+    wordIds: [
+      "airport-terminal",
+      "boarding-pass",
+      "luggage-cart",
+      "security-check",
+      "departure-gate",
+      "flight-attendant",
+      "runway",
+      "passport-control",
+      "baggage-claim",
+      "customs",
+      "duty-free",
+      "departure-board",
+    ],
     story:
-      "In this lesson about Departures, you will see the Airport Terminal, Boarding Pass, Luggage Cart, Security Check.",
-  },
-  {
-    id: "airport-group-2",
-    name: "Flight & Arrival",
-    topicId: "airport-2",
-    wordIds: ["departure-gate", "flight-attendant", "runway", "passport-control"],
-    description: "Learn vocabulary related to flight & arrival.",
-    story:
-      "In this lesson about Flight & Arrival, you will see the Departure Gate, Flight Attendant, Runway, Passport Control.",
-  },
-  {
-    id: "airport-group-3",
-    name: "Services",
-    topicId: "airport-3",
-    wordIds: ["baggage-claim", "customs", "duty-free", "departure-board"],
-    description: "Learn vocabulary related to services.",
-    story:
-      "In this lesson about Services, you will see the Baggage Claim, Customs, Duty Free, Departure Board.",
+      "In this section, you will learn about Airport Terminal, Boarding Pass, Luggage Cart, Security Check, Departure Gate, Flight Attendant, Runway, Passport Control, Baggage Claim, Customs, Duty Free, Departure Board. These are essential items to know.",
   },
 ];
 
 export const TRAIN_STATION_TOPICS: TopicCategory[] = [
-  { id: "train-station-1", name: "Platforms", itemsCount: 4 },
-  { id: "train-station-2", name: "On the Train", itemsCount: 4 },
-  { id: "train-station-3", name: "Station Areas", itemsCount: 4 },
+  {
+    id: "train-station-1",
+    name: "Train Station Part 1",
+    itemsCount: 12,
+  },
 ];
 
 export const TRAIN_STATION_GROUPS: Lesson[] = [
   {
-    id: "train-station-group-1",
-    name: "Platforms",
+    id: "train-station-1",
+    name: "Train Station Basics 1",
+    description:
+      "Learn about Train Platform, Ticket Machine, Train Conductor, Locomotive, Railway Track, Passenger Car, Commuter ...",
     topicId: "train-station-1",
-    wordIds: ["train-platform", "ticket-machine", "train-conductor", "locomotive"],
-    description: "Learn vocabulary related to platforms.",
+    wordIds: [
+      "train-platform",
+      "ticket-machine",
+      "train-conductor",
+      "locomotive",
+      "railway-track",
+      "passenger-car",
+      "commuter-train",
+      "timetable",
+      "station-clock",
+      "waiting-room",
+      "ticket-barrier",
+      "express-train",
+    ],
     story:
-      "In this lesson about Platforms, you will see the Train Platform, Ticket Machine, Train Conductor, Locomotive.",
-  },
-  {
-    id: "train-station-group-2",
-    name: "On the Train",
-    topicId: "train-station-2",
-    wordIds: ["railway-track", "passenger-car", "commuter-train", "timetable"],
-    description: "Learn vocabulary related to on the train.",
-    story:
-      "In this lesson about On the Train, you will see the Railway Track, Passenger Car, Commuter Train, Timetable.",
-  },
-  {
-    id: "train-station-group-3",
-    name: "Station Areas",
-    topicId: "train-station-3",
-    wordIds: ["station-clock", "waiting-room", "ticket-barrier", "express-train"],
-    description: "Learn vocabulary related to station areas.",
-    story:
-      "In this lesson about Station Areas, you will see the Station Clock, Waiting Room, Ticket Barrier, Express Train.",
+      "In this section, you will learn about Train Platform, Ticket Machine, Train Conductor, Locomotive, Railway Track, Passenger Car, Commuter Train, Timetable, Station Clock, Waiting Room, Ticket Barrier, Express Train. These are essential items to know.",
   },
 ];
 
 export const HOTEL_TOPICS: TopicCategory[] = [
-  { id: "hotel-1", name: "Check-in", itemsCount: 4 },
-  { id: "hotel-2", name: "Room Details", itemsCount: 4 },
-  { id: "hotel-3", name: "Facilities", itemsCount: 4 },
+  {
+    id: "hotel-1",
+    name: "Hotel Part 1",
+    itemsCount: 12,
+  },
 ];
 
 export const HOTEL_GROUPS: Lesson[] = [
   {
-    id: "hotel-group-1",
-    name: "Check-in",
+    id: "hotel-1",
+    name: "Hotel Basics 1",
+    description:
+      "Learn about Hotel Reception, Room Key, Bellboy, Hotel Lobby, Room Service, Housekeeping, Hotel Safe, Balcony Vie...",
     topicId: "hotel-1",
-    wordIds: ["hotel-reception", "room-key", "bellboy", "hotel-lobby"],
-    description: "Learn vocabulary related to check-in.",
+    wordIds: [
+      "hotel-reception",
+      "room-key",
+      "bellboy",
+      "hotel-lobby",
+      "room-service",
+      "housekeeping",
+      "hotel-safe",
+      "balcony-view",
+      "elevator",
+      "key-card",
+      "doorman",
+      "valet-parking",
+    ],
     story:
-      "In this lesson about Check-in, you will see the Hotel Reception, Room Key, Bellboy, Hotel Lobby.",
-  },
-  {
-    id: "hotel-group-2",
-    name: "Room Details",
-    topicId: "hotel-2",
-    wordIds: ["room-service", "housekeeping", "hotel-safe", "balcony-view"],
-    description: "Learn vocabulary related to room details.",
-    story:
-      "In this lesson about Room Details, you will see the Room Service, Housekeeping, Hotel Safe, Balcony View.",
-  },
-  {
-    id: "hotel-group-3",
-    name: "Facilities",
-    topicId: "hotel-3",
-    wordIds: ["elevator", "key-card", "doorman", "valet-parking"],
-    description: "Learn vocabulary related to facilities.",
-    story:
-      "In this lesson about Facilities, you will see the Elevator, Key Card, Doorman, Valet Parking.",
+      "In this section, you will learn about Hotel Reception, Room Key, Bellboy, Hotel Lobby, Room Service, Housekeeping, Hotel Safe, Balcony View, Elevator, Key Card, Doorman, Valet Parking. These are essential items to know.",
   },
 ];
 
 export const POST_OFFICE_TOPICS: TopicCategory[] = [
-  { id: "post-office-1", name: "Letters & Mail", itemsCount: 4 },
-  { id: "post-office-2", name: "Packages & Shipping", itemsCount: 4 },
-  { id: "post-office-3", name: "Delivery Logistics", itemsCount: 4 },
+  {
+    id: "post-office-1",
+    name: "Post Office Part 1",
+    itemsCount: 12,
+  },
 ];
 
 export const POST_OFFICE_GROUPS: Lesson[] = [
   {
-    id: "post-office-group-1",
-    name: "Letters & Mail",
+    id: "post-office-1",
+    name: "Post Office Basics 1",
+    description:
+      "Learn about Post Office, Postage Stamp, Envelope, Mailbox, Postal Worker, Parcel, Package Scale, Tracking Number...",
     topicId: "post-office-1",
-    wordIds: ["post-office", "postage-stamp", "envelope", "mailbox"],
-    description: "Learn vocabulary related to letters & mail.",
+    wordIds: [
+      "post-office",
+      "postage-stamp",
+      "envelope",
+      "mailbox",
+      "postal-worker",
+      "parcel",
+      "package-scale",
+      "tracking-number",
+      "post-card",
+      "delivery-truck",
+      "airmail",
+      "sorting-facility",
+    ],
     story:
-      "In this lesson about Letters & Mail, you will see the Post Office, Postage Stamp, Envelope, Mailbox.",
-  },
-  {
-    id: "post-office-group-2",
-    name: "Packages & Shipping",
-    topicId: "post-office-2",
-    wordIds: ["postal-worker", "parcel", "package-scale", "tracking-number"],
-    description: "Learn vocabulary related to packages & shipping.",
-    story:
-      "In this lesson about Packages & Shipping, you will see the Postal Worker, Parcel, Package Scale, Tracking Number.",
-  },
-  {
-    id: "post-office-group-3",
-    name: "Delivery Logistics",
-    topicId: "post-office-3",
-    wordIds: ["post-card", "delivery-truck", "airmail", "sorting-facility"],
-    description: "Learn vocabulary related to delivery logistics.",
-    story:
-      "In this lesson about Delivery Logistics, you will see the Postcard, Delivery Truck, Airmail, Sorting Facility.",
+      "In this section, you will learn about Post Office, Postage Stamp, Envelope, Mailbox, Postal Worker, Parcel, Package Scale, Tracking Number, Postcard, Delivery Truck, Airmail, Sorting Facility. These are essential items to know.",
   },
 ];
 
 export const BANK_TOPICS: TopicCategory[] = [
-  { id: "bank-1", name: "Banking Hall & Cash", itemsCount: 4 },
-  { id: "bank-2", name: "Accounts & Vault", itemsCount: 4 },
-  { id: "bank-3", name: "Services & Savings", itemsCount: 4 },
+  {
+    id: "bank-1",
+    name: "Bank Part 1",
+    itemsCount: 12,
+  },
 ];
 
 export const BANK_GROUPS: Lesson[] = [
   {
-    id: "bank-group-1",
-    name: "Banking Hall & Cash",
+    id: "bank-1",
+    name: "Bank Basics 1",
+    description:
+      "Learn about Bank Branch, ATM, Teller Counter, Credit Card, Banknote, Bank Vault, Checking Account, Deposit Slip,...",
     topicId: "bank-1",
-    wordIds: ["bank-branch", "atm", "teller-counter", "credit-card"],
-    description: "Learn vocabulary related to banking hall & cash.",
+    wordIds: [
+      "bank-branch",
+      "atm",
+      "teller-counter",
+      "credit-card",
+      "banknote",
+      "bank-vault",
+      "checking-account",
+      "deposit-slip",
+      "bank-statement",
+      "coin-jar",
+      "signature-pad",
+      "loan-officer",
+    ],
     story:
-      "In this lesson about Banking Hall & Cash, you will see the Bank Branch, ATM, Teller Counter, Credit Card.",
-  },
-  {
-    id: "bank-group-2",
-    name: "Accounts & Vault",
-    topicId: "bank-2",
-    wordIds: ["banknote", "bank-vault", "checking-account", "deposit-slip"],
-    description: "Learn vocabulary related to accounts & vault.",
-    story:
-      "In this lesson about Accounts & Vault, you will see the Banknote, Bank Vault, Checking Account, Deposit Slip.",
-  },
-  {
-    id: "bank-group-3",
-    name: "Services & Savings",
-    topicId: "bank-3",
-    wordIds: ["bank-statement", "coin-jar", "signature-pad", "loan-officer"],
-    description: "Learn vocabulary related to services & savings.",
-    story:
-      "In this lesson about Services & Savings, you will see the Bank Statement, Coin Jar, Signature Pad, Loan Officer.",
+      "In this section, you will learn about Bank Branch, ATM, Teller Counter, Credit Card, Banknote, Bank Vault, Checking Account, Deposit Slip, Bank Statement, Coin Jar, Signature Pad, Loan Officer. These are essential items to know.",
   },
 ];
 
 export const MUSEUM_TOPICS: TopicCategory[] = [
-  { id: "museum-1", name: "Art & Sculpture", itemsCount: 4 },
-  { id: "museum-2", name: "Exhibits & History", itemsCount: 4 },
-  { id: "museum-3", name: "Visitor Experience", itemsCount: 4 },
+  {
+    id: "museum-1",
+    name: "Museum Part 1",
+    itemsCount: 12,
+  },
 ];
 
 export const MUSEUM_GROUPS: Lesson[] = [
   {
-    id: "museum-group-1",
-    name: "Art & Sculpture",
+    id: "museum-1",
+    name: "Museum Basics 1",
+    description:
+      "Learn about Art Museum, Ancient Artifact, Oil Painting, Marble Sculpture, Museum Guide, Exhibit Hall, Glass Show...",
     topicId: "museum-1",
-    wordIds: ["art-museum", "ancient-artifact", "oil-painting", "marble-sculpture"],
-    description: "Learn vocabulary related to art & sculpture.",
+    wordIds: [
+      "art-museum",
+      "ancient-artifact",
+      "oil-painting",
+      "marble-sculpture",
+      "museum-guide",
+      "exhibit-hall",
+      "glass-showcase",
+      "dinosaur-fossil",
+      "admission-ticket",
+      "audio-guide",
+      "antique-pottery",
+      "historical-plaque",
+    ],
     story:
-      "In this lesson about Art & Sculpture, you will see the Art Museum, Ancient Artifact, Oil Painting, Marble Sculpture.",
-  },
-  {
-    id: "museum-group-2",
-    name: "Exhibits & History",
-    topicId: "museum-2",
-    wordIds: ["museum-guide", "exhibit-hall", "glass-showcase", "dinosaur-fossil"],
-    description: "Learn vocabulary related to exhibits & history.",
-    story:
-      "In this lesson about Exhibits & History, you will see the Museum Guide, Exhibit Hall, Glass Showcase, Dinosaur Fossil.",
-  },
-  {
-    id: "museum-group-3",
-    name: "Visitor Experience",
-    topicId: "museum-3",
-    wordIds: ["admission-ticket", "audio-guide", "antique-pottery", "historical-plaque"],
-    description: "Learn vocabulary related to visitor experience.",
-    story:
-      "In this lesson about Visitor Experience, you will see the Admission Ticket, Audio Guide, Antique Pottery, Historical Plaque.",
+      "In this section, you will learn about Art Museum, Ancient Artifact, Oil Painting, Marble Sculpture, Museum Guide, Exhibit Hall, Glass Showcase, Dinosaur Fossil, Admission Ticket, Audio Guide, Antique Pottery, Historical Plaque. These are essential items to know.",
   },
 ];
 
 export const REVISION_5_TOPICS: TopicCategory[] = [
-  { id: "revision-5-1", name: "Travel & Transit", itemsCount: 4 },
-  { id: "revision-5-2", name: "Stay & Public Services", itemsCount: 4 },
-  { id: "revision-5-3", name: "Finance & Culture", itemsCount: 4 },
+  {
+    id: "revision-5-1",
+    name: "Revision 5 Part 1",
+    itemsCount: 12,
+  },
 ];
 
 export const REVISION_5_GROUPS: Lesson[] = [
   {
-    id: "revision-5-group-1",
-    name: "Travel & Civic Synthesis",
+    id: "revision-5-1",
+    name: "Revision 5 Basics 1",
+    description:
+      "Learn about Airport Terminal, Boarding Pass, Train Platform, Express Train, Hotel Reception, Room Key, Post Offi...",
     topicId: "revision-5-1",
     wordIds: [
       "airport-terminal",
@@ -12052,9 +11846,8 @@ export const REVISION_5_GROUPS: Lesson[] = [
       "art-museum",
       "oil-painting",
     ],
-    description: "Master comprehensive vocabulary synthesizing travel hubs and civic spaces.",
     story:
-      "We visited the airport terminal with our boarding pass, waited at the train platform for the express train, checked in at hotel reception with our room key, stopped by the post office to ship a parcel, went to the bank branch and atm, and explored the art museum to view an oil painting.",
+      "In this section, you will learn about Airport Terminal, Boarding Pass, Train Platform, Express Train, Hotel Reception, Room Key, Post Office, Parcel, Bank Branch, ATM, Art Museum, Oil Painting. These are essential items to know.",
   },
 ];
 
@@ -12096,7 +11889,7 @@ export const AIRPORT_VOCABULARY: VocabularyItem[] = [
     label: "Departure Gate",
     phonetic: "dɪˈpɑː.tʃər ɡeɪt",
     img: `${LOCAL_WORD_IMAGES}/airport/departure-gate.webp`,
-    topic: "airport-2",
+    topic: "airport-1",
     description: "The numbered portal leading directly to the airplane boarding bridge.",
   },
   {
@@ -12104,7 +11897,7 @@ export const AIRPORT_VOCABULARY: VocabularyItem[] = [
     label: "Flight Attendant",
     phonetic: "flaɪt əˈten.dənt",
     img: `${LOCAL_WORD_IMAGES}/airport/flight-attendant.webp`,
-    topic: "airport-2",
+    topic: "airport-1",
     description: "A cabin crew member responsible for traveler safety and inflight comfort.",
   },
   {
@@ -12112,7 +11905,7 @@ export const AIRPORT_VOCABULARY: VocabularyItem[] = [
     label: "Runway",
     phonetic: "ˈrʌn.weɪ",
     img: `${LOCAL_WORD_IMAGES}/airport/runway.webp`,
-    topic: "airport-2",
+    topic: "airport-1",
     description: "A long paved strip of asphalt designed for takeoffs and landings of aircraft.",
   },
   {
@@ -12120,7 +11913,7 @@ export const AIRPORT_VOCABULARY: VocabularyItem[] = [
     label: "Passport Control",
     phonetic: "ˈpɑːs.pɔːt kənˈtrəʊl",
     img: `${LOCAL_WORD_IMAGES}/airport/passport-control.webp`,
-    topic: "airport-2",
+    topic: "airport-1",
     description: "The border inspection desk where official identification and visas are verified.",
   },
   {
@@ -12128,7 +11921,7 @@ export const AIRPORT_VOCABULARY: VocabularyItem[] = [
     label: "Baggage Claim",
     phonetic: "ˈbæɡ.ɪdʒ kleɪm",
     img: `${LOCAL_WORD_IMAGES}/airport/baggage-claim.webp`,
-    topic: "airport-3",
+    topic: "airport-1",
     description:
       "The designated arrival area featuring revolving carousels for luggage collection.",
   },
@@ -12137,7 +11930,7 @@ export const AIRPORT_VOCABULARY: VocabularyItem[] = [
     label: "Customs",
     phonetic: "ˈkʌs.təmz",
     img: `${LOCAL_WORD_IMAGES}/airport/customs.webp`,
-    topic: "airport-3",
+    topic: "airport-1",
     description: "Government authority checking imported goods and declaring taxable merchandise.",
   },
   {
@@ -12145,7 +11938,7 @@ export const AIRPORT_VOCABULARY: VocabularyItem[] = [
     label: "Duty Free",
     phonetic: "ˌdʒuː.ti ˈfriː",
     img: `${LOCAL_WORD_IMAGES}/airport/duty-free.webp`,
-    topic: "airport-3",
+    topic: "airport-1",
     description: "Retail outlets inside international terminals exempt from national sales tax.",
   },
   {
@@ -12153,7 +11946,7 @@ export const AIRPORT_VOCABULARY: VocabularyItem[] = [
     label: "Departure Board",
     phonetic: "dɪˈpɑː.tʃər bɔːd",
     img: `${LOCAL_WORD_IMAGES}/airport/departure-board.webp`,
-    topic: "airport-3",
+    topic: "airport-1",
     description: "A large electronic display panel showing flight status, portals, and delays.",
   },
 ];
@@ -12195,7 +11988,7 @@ export const TRAIN_STATION_VOCABULARY: VocabularyItem[] = [
     label: "Railway Track",
     phonetic: "ˈreɪl.weɪ træk",
     img: `${LOCAL_WORD_IMAGES}/train-station/railway-track.webp`,
-    topic: "train-station-2",
+    topic: "train-station-1",
     description: "Parallel steel lines laid on wooden ties over which coaches run smoothly.",
   },
   {
@@ -12203,7 +11996,7 @@ export const TRAIN_STATION_VOCABULARY: VocabularyItem[] = [
     label: "Passenger Car",
     phonetic: "ˈpæs.ɪn.dʒər kɑːr",
     img: `${LOCAL_WORD_IMAGES}/train-station/passenger-car.webp`,
-    topic: "train-station-2",
+    topic: "train-station-1",
     description: "A railway coach fitted with traveler seats, large windows, and overhead racks.",
   },
   {
@@ -12211,7 +12004,7 @@ export const TRAIN_STATION_VOCABULARY: VocabularyItem[] = [
     label: "Commuter Train",
     phonetic: "kəˈmjuː.tər treɪn",
     img: `${LOCAL_WORD_IMAGES}/train-station/commuter-train.webp`,
-    topic: "train-station-2",
+    topic: "train-station-1",
     description:
       "A suburban rail transit service operating on frequent daily schedules for workers.",
   },
@@ -12220,7 +12013,7 @@ export const TRAIN_STATION_VOCABULARY: VocabularyItem[] = [
     label: "Timetable",
     phonetic: "ˈtaɪmˌteɪ.bəl",
     img: `${LOCAL_WORD_IMAGES}/train-station/timetable.webp`,
-    topic: "train-station-2",
+    topic: "train-station-1",
     description:
       "A published schedule detailing arrival and departure times of transport services.",
   },
@@ -12229,7 +12022,7 @@ export const TRAIN_STATION_VOCABULARY: VocabularyItem[] = [
     label: "Station Clock",
     phonetic: "ˈsteɪ.ʃən klɒk",
     img: `${LOCAL_WORD_IMAGES}/train-station/station-clock.webp`,
-    topic: "train-station-3",
+    topic: "train-station-1",
     description: "A prominent timepiece installed high in a railway terminal concourse.",
   },
   {
@@ -12237,7 +12030,7 @@ export const TRAIN_STATION_VOCABULARY: VocabularyItem[] = [
     label: "Waiting Room",
     phonetic: "ˈweɪ.tɪŋ ruːm",
     img: `${LOCAL_WORD_IMAGES}/train-station/waiting-room.webp`,
-    topic: "train-station-3",
+    topic: "train-station-1",
     description: "A heated indoor seating lounge for travelers awaiting their scheduled departure.",
   },
   {
@@ -12245,7 +12038,7 @@ export const TRAIN_STATION_VOCABULARY: VocabularyItem[] = [
     label: "Ticket Barrier",
     phonetic: "ˈtɪk.ɪt ˈbær.i.ər",
     img: `${LOCAL_WORD_IMAGES}/train-station/ticket-barrier.webp`,
-    topic: "train-station-3",
+    topic: "train-station-1",
     description:
       "An automated turnstile gate that opens only when a valid travel permit is scanned.",
   },
@@ -12254,7 +12047,7 @@ export const TRAIN_STATION_VOCABULARY: VocabularyItem[] = [
     label: "Express Train",
     phonetic: "ɪkˈspres treɪn",
     img: `${LOCAL_WORD_IMAGES}/train-station/express-train.webp`,
-    topic: "train-station-3",
+    topic: "train-station-1",
     description: "A high-speed non-stop rail transit line connecting major metropolitan cities.",
   },
 ];
@@ -12296,7 +12089,7 @@ export const HOTEL_VOCABULARY: VocabularyItem[] = [
     label: "Room Service",
     phonetic: "ruːm ˈsɜː.vɪs",
     img: `${LOCAL_WORD_IMAGES}/hotel/room-service.webp`,
-    topic: "hotel-2",
+    topic: "hotel-1",
     description:
       "Lodging amenity delivering food, hot beverages, and meals directly to guest suites.",
   },
@@ -12305,7 +12098,7 @@ export const HOTEL_VOCABULARY: VocabularyItem[] = [
     label: "Housekeeping",
     phonetic: "ˈhaʊsˌkiː.pɪŋ",
     img: `${LOCAL_WORD_IMAGES}/hotel/housekeeping.webp`,
-    topic: "hotel-2",
+    topic: "hotel-1",
     description:
       "The department responsible for cleaning guest suites and replenishing fresh linens.",
   },
@@ -12314,7 +12107,7 @@ export const HOTEL_VOCABULARY: VocabularyItem[] = [
     label: "Hotel Safe",
     phonetic: "həʊˈtel seɪf",
     img: `${LOCAL_WORD_IMAGES}/hotel/hotel-safe.webp`,
-    topic: "hotel-2",
+    topic: "hotel-1",
     description: "A reinforced electronic lockbox in a guest suite for securing valuables.",
   },
   {
@@ -12322,7 +12115,7 @@ export const HOTEL_VOCABULARY: VocabularyItem[] = [
     label: "Balcony View",
     phonetic: "ˈbæl.kə.ni vjuː",
     img: `${LOCAL_WORD_IMAGES}/hotel/balcony-view.webp`,
-    topic: "hotel-2",
+    topic: "hotel-1",
     description: "An outdoor elevated terrace perspective overlooking scenic landscapes.",
   },
   {
@@ -12330,7 +12123,7 @@ export const HOTEL_VOCABULARY: VocabularyItem[] = [
     label: "Elevator",
     phonetic: "ˈel.ɪ.veɪ.tər",
     img: `${LOCAL_WORD_IMAGES}/hotel/elevator.webp`,
-    topic: "hotel-3",
+    topic: "hotel-1",
     description: "A vertical transport cabin carrying people between building storeys.",
   },
   {
@@ -12338,7 +12131,7 @@ export const HOTEL_VOCABULARY: VocabularyItem[] = [
     label: "Key Card",
     phonetic: "kiː kɑːd",
     img: `${LOCAL_WORD_IMAGES}/hotel/key-card.webp`,
-    topic: "hotel-3",
+    topic: "hotel-1",
     description: "A flat contactless electronic badge granting access through secure doors.",
   },
   {
@@ -12346,7 +12139,7 @@ export const HOTEL_VOCABULARY: VocabularyItem[] = [
     label: "Doorman",
     phonetic: "ˈdɔː.mən",
     img: `${LOCAL_WORD_IMAGES}/hotel/doorman.webp`,
-    topic: "hotel-3",
+    topic: "hotel-1",
     description: "A uniformed hospitality host greeting guests and hailing taxis at the entrance.",
   },
   {
@@ -12354,7 +12147,7 @@ export const HOTEL_VOCABULARY: VocabularyItem[] = [
     label: "Valet Parking",
     phonetic: "ˈvæl.eɪ ˈpɑː.kɪŋ",
     img: `${LOCAL_WORD_IMAGES}/hotel/valet-parking.webp`,
-    topic: "hotel-3",
+    topic: "hotel-1",
     description: "A premium service where an attendant parks and retrieves guest vehicles.",
   },
 ];
@@ -12398,7 +12191,7 @@ export const POST_OFFICE_VOCABULARY: VocabularyItem[] = [
     label: "Postal Worker",
     phonetic: "ˈpəʊ.stəl ˈwɜː.kər",
     img: `${LOCAL_WORD_IMAGES}/post-office/postal-worker.webp`,
-    topic: "post-office-2",
+    topic: "post-office-1",
     description: "An employee who sorts, processes, or delivers letters and packages to addresses.",
   },
   {
@@ -12406,7 +12199,7 @@ export const POST_OFFICE_VOCABULARY: VocabularyItem[] = [
     label: "Parcel",
     phonetic: "ˈpɑː.səl",
     img: `${LOCAL_WORD_IMAGES}/post-office/parcel.webp`,
-    topic: "post-office-2",
+    topic: "post-office-1",
     description: "A wrapped cardboard box sent through delivery and courier systems.",
   },
   {
@@ -12414,7 +12207,7 @@ export const POST_OFFICE_VOCABULARY: VocabularyItem[] = [
     label: "Package Scale",
     phonetic: "ˈpæk.ɪdʒ skeɪl",
     img: `${LOCAL_WORD_IMAGES}/post-office/package-scale.webp`,
-    topic: "post-office-2",
+    topic: "post-office-1",
     description:
       "A weighing apparatus used at service counters to calculate accurate shipping costs.",
   },
@@ -12423,7 +12216,7 @@ export const POST_OFFICE_VOCABULARY: VocabularyItem[] = [
     label: "Tracking Number",
     phonetic: "ˈtræk.ɪŋ ˈnʌm.bər",
     img: `${LOCAL_WORD_IMAGES}/post-office/tracking-number.webp`,
-    topic: "post-office-2",
+    topic: "post-office-1",
     description: "A unique code assigned to a shipment to monitor its delivery progress online.",
   },
   {
@@ -12431,7 +12224,7 @@ export const POST_OFFICE_VOCABULARY: VocabularyItem[] = [
     label: "Postcard",
     phonetic: "ˈpəʊst.kɑːd",
     img: `${LOCAL_WORD_IMAGES}/post-office/post-card.webp`,
-    topic: "post-office-3",
+    topic: "post-office-1",
     description: "A scenic souvenir card with a picture on one side sent through the mail.",
   },
   {
@@ -12439,7 +12232,7 @@ export const POST_OFFICE_VOCABULARY: VocabularyItem[] = [
     label: "Delivery Truck",
     phonetic: "dɪˈlɪv.ər.i trʌk",
     img: `${LOCAL_WORD_IMAGES}/post-office/delivery-truck.webp`,
-    topic: "post-office-3",
+    topic: "post-office-1",
     description: "A commercial motor vehicle used by couriers to transport boxes to homes.",
   },
   {
@@ -12447,7 +12240,7 @@ export const POST_OFFICE_VOCABULARY: VocabularyItem[] = [
     label: "Airmail",
     phonetic: "ˈeə.meɪl",
     img: `${LOCAL_WORD_IMAGES}/post-office/airmail.webp`,
-    topic: "post-office-3",
+    topic: "post-office-1",
     description: "The system of transporting postal matter overseas rapidly via airplanes.",
   },
   {
@@ -12455,7 +12248,7 @@ export const POST_OFFICE_VOCABULARY: VocabularyItem[] = [
     label: "Sorting Facility",
     phonetic: "ˈsɔː.tɪŋ fəˈsɪl.ə.ti",
     img: `${LOCAL_WORD_IMAGES}/post-office/sorting-facility.webp`,
-    topic: "post-office-3",
+    topic: "post-office-1",
     description:
       "A large mechanized distribution depot where letters are categorized by destination.",
   },
@@ -12499,7 +12292,7 @@ export const BANK_VOCABULARY: VocabularyItem[] = [
     label: "Banknote",
     phonetic: "ˈbæŋk.nəʊt",
     img: `${LOCAL_WORD_IMAGES}/bank/banknote.webp`,
-    topic: "bank-2",
+    topic: "bank-1",
     description: "A piece of printed paper or polymer currency issued by a central authority.",
   },
   {
@@ -12507,7 +12300,7 @@ export const BANK_VOCABULARY: VocabularyItem[] = [
     label: "Bank Vault",
     phonetic: "bæŋk vɔːlt",
     img: `${LOCAL_WORD_IMAGES}/bank/bank-vault.webp`,
-    topic: "bank-2",
+    topic: "bank-1",
     description:
       "A fortified steel chamber with timed locks built to protect cash and gold bullion.",
   },
@@ -12516,7 +12309,7 @@ export const BANK_VOCABULARY: VocabularyItem[] = [
     label: "Checking Account",
     phonetic: "ˈtʃek.ɪŋ əˈkaʊnt",
     img: `${LOCAL_WORD_IMAGES}/bank/checking-account.webp`,
-    topic: "bank-2",
+    topic: "bank-1",
     description:
       "A transactional financial deposit ledger allowing frequent withdrawals and deposits.",
   },
@@ -12525,7 +12318,7 @@ export const BANK_VOCABULARY: VocabularyItem[] = [
     label: "Deposit Slip",
     phonetic: "dɪˈpɒz.ɪt slɪp",
     img: `${LOCAL_WORD_IMAGES}/bank/deposit-slip.webp`,
-    topic: "bank-2",
+    topic: "bank-1",
     description: "A paper form filled out by a client itemizing funds being paid into a ledger.",
   },
   {
@@ -12533,7 +12326,7 @@ export const BANK_VOCABULARY: VocabularyItem[] = [
     label: "Bank Statement",
     phonetic: "bæŋk ˈsteɪt.mənt",
     img: `${LOCAL_WORD_IMAGES}/bank/bank-statement.webp`,
-    topic: "bank-3",
+    topic: "bank-1",
     description: "A monthly official summary document recording all debits, credits, and balances.",
   },
   {
@@ -12541,7 +12334,7 @@ export const BANK_VOCABULARY: VocabularyItem[] = [
     label: "Coin Jar",
     phonetic: "kɔɪn dʒɑːr",
     img: `${LOCAL_WORD_IMAGES}/bank/coin-jar.webp`,
-    topic: "bank-3",
+    topic: "bank-1",
     description: "A glass container used at home for saving metallic currency and spare change.",
   },
   {
@@ -12549,7 +12342,7 @@ export const BANK_VOCABULARY: VocabularyItem[] = [
     label: "Signature Pad",
     phonetic: "ˈsɪɡ.nə.tʃər pæd",
     img: `${LOCAL_WORD_IMAGES}/bank/signature-pad.webp`,
-    topic: "bank-3",
+    topic: "bank-1",
     description: "An electronic digital stylus screen used to capture legal authorizations.",
   },
   {
@@ -12557,7 +12350,7 @@ export const BANK_VOCABULARY: VocabularyItem[] = [
     label: "Loan Officer",
     phonetic: "ləʊn ˈɒf.ɪ.sər",
     img: `${LOCAL_WORD_IMAGES}/bank/loan-officer.webp`,
-    topic: "bank-3",
+    topic: "bank-1",
     description:
       "A finance specialist who evaluates and approves credit and mortgage applications.",
   },
@@ -12601,7 +12394,7 @@ export const MUSEUM_VOCABULARY: VocabularyItem[] = [
     label: "Museum Guide",
     phonetic: "mjuːˈziː.əm ɡaɪd",
     img: `${LOCAL_WORD_IMAGES}/museum/museum-guide.webp`,
-    topic: "museum-2",
+    topic: "museum-1",
     description: "A knowledgeable docent who leads tour groups through public galleries.",
   },
   {
@@ -12609,7 +12402,7 @@ export const MUSEUM_VOCABULARY: VocabularyItem[] = [
     label: "Exhibit Hall",
     phonetic: "ɪɡˈzɪb.ɪt hɔːl",
     img: `${LOCAL_WORD_IMAGES}/museum/exhibit-hall.webp`,
-    topic: "museum-2",
+    topic: "museum-1",
     description: "A large public gallery room designated for showcasing specific collections.",
   },
   {
@@ -12617,7 +12410,7 @@ export const MUSEUM_VOCABULARY: VocabularyItem[] = [
     label: "Glass Showcase",
     phonetic: "ɡlɑːs ˈʃəʊ.keɪs",
     img: `${LOCAL_WORD_IMAGES}/museum/glass-showcase.webp`,
-    topic: "museum-2",
+    topic: "museum-1",
     description: "A transparent protective cabinet designed to exhibit fragile treasures securely.",
   },
   {
@@ -12625,7 +12418,7 @@ export const MUSEUM_VOCABULARY: VocabularyItem[] = [
     label: "Dinosaur Fossil",
     phonetic: "ˈdaɪ.nə.sɔː ˈfɒs.əl",
     img: `${LOCAL_WORD_IMAGES}/museum/dinosaur-fossil.webp`,
-    topic: "museum-2",
+    topic: "museum-1",
     description: "The petrified mineral skeleton of a prehistoric giant reptile.",
   },
   {
@@ -12633,7 +12426,7 @@ export const MUSEUM_VOCABULARY: VocabularyItem[] = [
     label: "Admission Ticket",
     phonetic: "ədˈmɪʃ.ən ˈtɪk.ɪt",
     img: `${LOCAL_WORD_IMAGES}/museum/admission-ticket.webp`,
-    topic: "museum-3",
+    topic: "museum-1",
     description: "A pass permitting entrance into public galleries and special exhibitions.",
   },
   {
@@ -12641,7 +12434,7 @@ export const MUSEUM_VOCABULARY: VocabularyItem[] = [
     label: "Audio Guide",
     phonetic: "ˈɔː.di.əʊ ɡaɪd",
     img: `${LOCAL_WORD_IMAGES}/museum/audio-guide.webp`,
-    topic: "museum-3",
+    topic: "museum-1",
     description: "A handheld electronic device providing recorded commentary for gallery visitors.",
   },
   {
@@ -12649,7 +12442,7 @@ export const MUSEUM_VOCABULARY: VocabularyItem[] = [
     label: "Antique Pottery",
     phonetic: "ænˈtiːk ˈpɒt.ər.i",
     img: `${LOCAL_WORD_IMAGES}/museum/antique-pottery.webp`,
-    topic: "museum-3",
+    topic: "museum-1",
     description: "Historic ceramic vessels and earthenware crafted in prehistoric civilizations.",
   },
   {
@@ -12657,7 +12450,7 @@ export const MUSEUM_VOCABULARY: VocabularyItem[] = [
     label: "Historical Plaque",
     phonetic: "hɪˈstɒr.ɪ.kəl plɑːk",
     img: `${LOCAL_WORD_IMAGES}/museum/historical-plaque.webp`,
-    topic: "museum-3",
+    topic: "museum-1",
     description: "An informative commemorative metal plate explaining a public monument.",
   },
 ];
@@ -12699,7 +12492,7 @@ export const REVISION_5_VOCABULARY: VocabularyItem[] = [
     label: "Hotel Reception",
     phonetic: "həʊˈtel rɪˈsep.ʃən",
     img: `${LOCAL_WORD_IMAGES}/revision-5/hotel-reception.webp`,
-    topic: "revision-5-2",
+    topic: "revision-5-1",
     description: "The main front desk where lodging guests register and receive entrance badges.",
   },
   {
@@ -12707,7 +12500,7 @@ export const REVISION_5_VOCABULARY: VocabularyItem[] = [
     label: "Room Key",
     phonetic: "ruːm kiː",
     img: `${LOCAL_WORD_IMAGES}/revision-5/room-key.webp`,
-    topic: "revision-5-2",
+    topic: "revision-5-1",
     description: "A coded plastic card or metallic tool that unlocks a guest suite door.",
   },
   {
@@ -12715,7 +12508,7 @@ export const REVISION_5_VOCABULARY: VocabularyItem[] = [
     label: "Post Office",
     phonetic: "pəʊst ˈɒf.ɪs",
     img: `${LOCAL_WORD_IMAGES}/revision-5/post-office.webp`,
-    topic: "revision-5-2",
+    topic: "revision-5-1",
     description: "A public facility where letters are processed and mailing supplies are sold.",
   },
   {
@@ -12723,7 +12516,7 @@ export const REVISION_5_VOCABULARY: VocabularyItem[] = [
     label: "Parcel",
     phonetic: "ˈpɑː.səl",
     img: `${LOCAL_WORD_IMAGES}/revision-5/parcel.webp`,
-    topic: "revision-5-2",
+    topic: "revision-5-1",
     description: "A wrapped cardboard box sent through delivery and courier systems.",
   },
   {
@@ -12731,7 +12524,7 @@ export const REVISION_5_VOCABULARY: VocabularyItem[] = [
     label: "Bank Branch",
     phonetic: "bæŋk brɑːntʃ",
     img: `${LOCAL_WORD_IMAGES}/revision-5/bank-branch.webp`,
-    topic: "revision-5-3",
+    topic: "revision-5-1",
     description:
       "A local brick-and-mortar financial office offering monetary services to the community.",
   },
@@ -12740,7 +12533,7 @@ export const REVISION_5_VOCABULARY: VocabularyItem[] = [
     label: "ATM",
     phonetic: "ˌeɪ.tiːˈem",
     img: `${LOCAL_WORD_IMAGES}/revision-5/atm.webp`,
-    topic: "revision-5-3",
+    topic: "revision-5-1",
     description: "An automated teller kiosk providing self-service cash withdrawals and deposits.",
   },
   {
@@ -12748,7 +12541,7 @@ export const REVISION_5_VOCABULARY: VocabularyItem[] = [
     label: "Art Museum",
     phonetic: "ɑːt mjuːˈziː.əm",
     img: `${LOCAL_WORD_IMAGES}/revision-5/art-museum.webp`,
-    topic: "revision-5-3",
+    topic: "revision-5-1",
     description:
       "An institution dedicated to the preservation and public exhibition of masterworks.",
   },
@@ -12757,7 +12550,7 @@ export const REVISION_5_VOCABULARY: VocabularyItem[] = [
     label: "Oil Painting",
     phonetic: "ɔɪl ˈpeɪn.tɪŋ",
     img: `${LOCAL_WORD_IMAGES}/revision-5/oil-painting.webp`,
-    topic: "revision-5-3",
+    topic: "revision-5-1",
     description: "A visual masterwork created by applying pigmented paints onto stretched canvas.",
   },
 ];
@@ -12884,7 +12677,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɒmprɛs/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/compress.webp`,
-    topic: "first-aid-2",
+    topic: "first-aid-1",
     description: "A health supply or clinic concept, specifically item number 6 in the curriculum.",
   },
   {
@@ -12893,7 +12686,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡlʌvz/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/gloves.webp`,
-    topic: "first-aid-2",
+    topic: "first-aid-1",
     description: "A health supply or clinic concept, specifically item number 7 in the curriculum.",
   },
   {
@@ -12902,7 +12695,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌsiːpiːˈɑːr/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/cpr.webp`,
-    topic: "first-aid-2",
+    topic: "first-aid-1",
     description: "A health supply or clinic concept, specifically item number 8 in the curriculum.",
   },
   {
@@ -12911,7 +12704,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/wuːnd kɛər/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/wound-care.webp`,
-    topic: "first-aid-2",
+    topic: "first-aid-1",
     description: "A health supply or clinic concept, specifically item number 9 in the curriculum.",
   },
   {
@@ -12920,7 +12713,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/tʃɛk pʌls/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/check-pulse.webp`,
-    topic: "first-aid-2",
+    topic: "first-aid-1",
     description:
       "A health supply or clinic concept, specifically item number 10 in the curriculum.",
   },
@@ -12930,7 +12723,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/əˈplaɪ ˈprɛʃər/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/apply-pressure.webp`,
-    topic: "first-aid-3",
+    topic: "first-aid-1",
     description:
       "A health supply or clinic concept, specifically item number 11 in the curriculum.",
   },
@@ -12940,7 +12733,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɛlɪˌveɪt/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/elevate.webp`,
-    topic: "first-aid-3",
+    topic: "first-aid-1",
     description:
       "A health supply or clinic concept, specifically item number 12 in the curriculum.",
   },
@@ -12950,7 +12743,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪˈmoʊbɪˌlaɪz/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/immobilize.webp`,
-    topic: "first-aid-3",
+    topic: "first-aid-1",
     description:
       "A health supply or clinic concept, specifically item number 13 in the curriculum.",
   },
@@ -12960,7 +12753,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/kɔːl ɪˈmɜːrdʒənsi/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/call-emergency.webp`,
-    topic: "first-aid-3",
+    topic: "first-aid-1",
     description:
       "A health supply or clinic concept, specifically item number 14 in the curriculum.",
   },
@@ -12970,7 +12763,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɒnɪtər/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/monitor.webp`,
-    topic: "first-aid-3",
+    topic: "first-aid-1",
     description:
       "A health supply or clinic concept, specifically item number 15 in the curriculum.",
   },
@@ -12980,7 +12773,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/krʌtʃ/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/crutch.webp`,
-    topic: "first-aid-4",
+    topic: "first-aid-2",
     description:
       "A health supply or clinic concept, specifically item number 16 in the curriculum.",
   },
@@ -12990,7 +12783,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/splɪnt/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/splint.webp`,
-    topic: "first-aid-4",
+    topic: "first-aid-2",
     description:
       "A health supply or clinic concept, specifically item number 17 in the curriculum.",
   },
@@ -13000,7 +12793,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/nɛk breɪs/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/neck-brace.webp`,
-    topic: "first-aid-4",
+    topic: "first-aid-2",
     description:
       "A health supply or clinic concept, specifically item number 18 in the curriculum.",
   },
@@ -13010,7 +12803,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/aɪs pæk/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/ice-pack.webp`,
-    topic: "first-aid-4",
+    topic: "first-aid-2",
     description:
       "A health supply or clinic concept, specifically item number 19 in the curriculum.",
   },
@@ -13020,7 +12813,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/hɒt pæk/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/hot-pack.webp`,
-    topic: "first-aid-4",
+    topic: "first-aid-2",
     description:
       "A health supply or clinic concept, specifically item number 20 in the curriculum.",
   },
@@ -13030,7 +12823,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈstɛθəskoʊp/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/stethoscope.webp`,
-    topic: "first-aid-5",
+    topic: "first-aid-2",
     description:
       "A health supply or clinic concept, specifically item number 21 in the curriculum.",
   },
@@ -13040,7 +12833,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/θərˈmɒmɪtər/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/thermometer.webp`,
-    topic: "first-aid-5",
+    topic: "first-aid-2",
     description:
       "A health supply or clinic concept, specifically item number 22 in the curriculum.",
   },
@@ -13050,7 +12843,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/pʌls ɒkˈsɪmɪtər/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/pulse-oximeter.webp`,
-    topic: "first-aid-5",
+    topic: "first-aid-2",
     description:
       "A health supply or clinic concept, specifically item number 23 in the curriculum.",
   },
@@ -13060,7 +12853,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/aɪ wɒʃ ˈsteɪʃən/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/eye-wash-station.webp`,
-    topic: "first-aid-5",
+    topic: "first-aid-2",
     description:
       "A health supply or clinic concept, specifically item number 24 in the curriculum.",
   },
@@ -13070,7 +12863,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌsiːpiːˈɑːr mɑːsk/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/cpr-mask.webp`,
-    topic: "first-aid-5",
+    topic: "first-aid-2",
     description:
       "A health supply or clinic concept, specifically item number 25 in the curriculum.",
   },
@@ -13080,7 +12873,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌeɪiːˈdiː/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/aed.webp`,
-    topic: "first-aid-6",
+    topic: "first-aid-2",
     description:
       "A health supply or clinic concept, specifically item number 26 in the curriculum.",
   },
@@ -13090,7 +12883,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/fɜːrst eɪd ˈmænjuəl/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/first-aid-manual.webp`,
-    topic: "first-aid-6",
+    topic: "first-aid-2",
     description:
       "A health supply or clinic concept, specifically item number 27 in the curriculum.",
   },
@@ -13100,7 +12893,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/blʌd ˈɡluːkoʊs ˈmɒnɪtər/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/blood-glucose-monitor.webp`,
-    topic: "first-aid-6",
+    topic: "first-aid-2",
     description:
       "A health supply or clinic concept, specifically item number 28 in the curriculum.",
   },
@@ -13110,7 +12903,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/blʌd ˈprɛʃər kʌf/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/blood-pressure-cuff.webp`,
-    topic: "first-aid-6",
+    topic: "first-aid-2",
     description:
       "A health supply or clinic concept, specifically item number 29 in the curriculum.",
   },
@@ -13120,7 +12913,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɛnlaɪt/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/penlight.webp`,
-    topic: "first-aid-6",
+    topic: "first-aid-2",
     description:
       "A health supply or clinic concept, specifically item number 30 in the curriculum.",
   },
@@ -13130,7 +12923,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/tʌŋ dɪˈprɛsər/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/tongue-depressor.webp`,
-    topic: "first-aid-7",
+    topic: "first-aid-3",
     description:
       "A health supply or clinic concept, specifically item number 31 in the curriculum.",
   },
@@ -13140,7 +12933,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈplɑːstər/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/plaster.webp`,
-    topic: "first-aid-7",
+    topic: "first-aid-3",
     description:
       "A health supply or clinic concept, specifically item number 32 in the curriculum.",
   },
@@ -13150,7 +12943,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbʌtərflaɪ strɪp/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/butterfly-strip.webp`,
-    topic: "first-aid-7",
+    topic: "first-aid-3",
     description:
       "A health supply or clinic concept, specifically item number 33 in the curriculum.",
   },
@@ -13160,7 +12953,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/wuːnd ˈdrɛsɪŋ/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/wound-dressing.webp`,
-    topic: "first-aid-7",
+    topic: "first-aid-3",
     description:
       "A health supply or clinic concept, specifically item number 34 in the curriculum.",
   },
@@ -13170,7 +12963,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈseɪliːn səˈluːʃən/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/saline-solution.webp`,
-    topic: "first-aid-7",
+    topic: "first-aid-3",
     description:
       "A health supply or clinic concept, specifically item number 35 in the curriculum.",
   },
@@ -13180,7 +12973,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪˈmɜːrdʒənsi foʊn/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/emergency-phone.webp`,
-    topic: "first-aid-8",
+    topic: "first-aid-3",
     description:
       "A health supply or clinic concept, specifically item number 36 in the curriculum.",
   },
@@ -13190,7 +12983,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/əˈlɑːrm ˈbʌtn/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/alarm-button.webp`,
-    topic: "first-aid-8",
+    topic: "first-aid-3",
     description:
       "A health supply or clinic concept, specifically item number 37 in the curriculum.",
   },
@@ -13200,7 +12993,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪnˈheɪlər/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/inhaler.webp`,
-    topic: "first-aid-8",
+    topic: "first-aid-3",
     description:
       "A health supply or clinic concept, specifically item number 38 in the curriculum.",
   },
@@ -13210,7 +13003,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsɜːrvɪkl ˈkɒlər/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/cervical-collar.webp`,
-    topic: "first-aid-8",
+    topic: "first-aid-3",
     description:
       "A health supply or clinic concept, specifically item number 39 in the curriculum.",
   },
@@ -13220,7 +13013,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/spaɪn bɔːrd/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/spine-board.webp`,
-    topic: "first-aid-8",
+    topic: "first-aid-3",
     description:
       "A health supply or clinic concept, specifically item number 40 in the curriculum.",
   },
@@ -13230,7 +13023,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsneɪkbaɪt kɪt/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/snakebite-kit.webp`,
-    topic: "first-aid-9",
+    topic: "first-aid-3",
     description:
       "A health supply or clinic concept, specifically item number 41 in the curriculum.",
   },
@@ -13240,7 +13033,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/tɪk rɪˈmuːvər/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/tick-remover.webp`,
-    topic: "first-aid-9",
+    topic: "first-aid-3",
     description:
       "A health supply or clinic concept, specifically item number 42 in the curriculum.",
   },
@@ -13250,7 +13043,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɛdɪkl ˌaɪˈdiː ˈbreɪslɪt/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/medical-id-bracelet.webp`,
-    topic: "first-aid-9",
+    topic: "first-aid-3",
     description:
       "A health supply or clinic concept, specifically item number 43 in the curriculum.",
   },
@@ -13260,7 +13053,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪɡˌzæmɪˈneɪʃən ˈteɪbl/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/examination-table.webp`,
-    topic: "first-aid-9",
+    topic: "first-aid-3",
     description:
       "A health supply or clinic concept, specifically item number 44 in the curriculum.",
   },
@@ -13270,7 +13063,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɜːrtn/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/curtain.webp`,
-    topic: "first-aid-9",
+    topic: "first-aid-3",
     description:
       "A health supply or clinic concept, specifically item number 45 in the curriculum.",
   },
@@ -13280,7 +13073,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/sɪŋk/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/sink.webp`,
-    topic: "first-aid-10",
+    topic: "first-aid-4",
     description:
       "A health supply or clinic concept, specifically item number 46 in the curriculum.",
   },
@@ -13290,7 +13083,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/soʊp dɪˈspɛnsər/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/soap-dispenser.webp`,
-    topic: "first-aid-10",
+    topic: "first-aid-4",
     description:
       "A health supply or clinic concept, specifically item number 47 in the curriculum.",
   },
@@ -13300,7 +13093,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpeɪpər ˈtaʊəl/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/paper-towel.webp`,
-    topic: "first-aid-10",
+    topic: "first-aid-4",
     description:
       "A health supply or clinic concept, specifically item number 48 in the curriculum.",
   },
@@ -13310,7 +13103,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/weɪst bɪn/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/waste-bin.webp`,
-    topic: "first-aid-10",
+    topic: "first-aid-4",
     description:
       "A health supply or clinic concept, specifically item number 49 in the curriculum.",
   },
@@ -13320,7 +13113,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɛdɪsɪn ˈkæbɪnɪt/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/medicine-cabinet.webp`,
-    topic: "first-aid-10",
+    topic: "first-aid-4",
     description:
       "A health supply or clinic concept, specifically item number 50 in the curriculum.",
   },
@@ -13330,7 +13123,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/wɔːl tʃɑːrt/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/wall-chart.webp`,
-    topic: "first-aid-11",
+    topic: "first-aid-4",
     description:
       "A health supply or clinic concept, specifically item number 51 in the curriculum.",
   },
@@ -13340,7 +13133,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/klɒk/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/clock.webp`,
-    topic: "first-aid-11",
+    topic: "first-aid-4",
     description:
       "A health supply or clinic concept, specifically item number 52 in the curriculum.",
   },
@@ -13350,7 +13143,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/hænd ˈsænɪtaɪzər/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/hand-sanitizer.webp`,
-    topic: "first-aid-11",
+    topic: "first-aid-4",
     description:
       "A health supply or clinic concept, specifically item number 53 in the curriculum.",
   },
@@ -13360,7 +13153,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈprɪvəsi skriːn/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/privacy-screen.webp`,
-    topic: "first-aid-11",
+    topic: "first-aid-4",
     description:
       "A health supply or clinic concept, specifically item number 54 in the curriculum.",
   },
@@ -13370,7 +13163,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪˈmɜːrdʒənsi ˈkɒntækt kɑːrd/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/emergency-contact-card.webp`,
-    topic: "first-aid-11",
+    topic: "first-aid-4",
     description:
       "A health supply or clinic concept, specifically item number 55 in the curriculum.",
   },
@@ -13380,7 +13173,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɪnsɪdənt rɪˈpɔːrt fɔːrm/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/incident-report-form.webp`,
-    topic: "first-aid-12",
+    topic: "first-aid-4",
     description:
       "A health supply or clinic concept, specifically item number 56 in the curriculum.",
   },
@@ -13390,7 +13183,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɔɪzn kənˈtroʊl ˈpoʊstər/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/poison-control-poster.webp`,
-    topic: "first-aid-12",
+    topic: "first-aid-4",
     description:
       "A health supply or clinic concept, specifically item number 57 in the curriculum.",
   },
@@ -13400,7 +13193,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌsiːpiːˈɑːr ˈpoʊstər/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/cpr-poster.webp`,
-    topic: "first-aid-12",
+    topic: "first-aid-4",
     description:
       "A health supply or clinic concept, specifically item number 58 in the curriculum.",
   },
@@ -13410,7 +13203,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfaɪər ɪkˈstɪŋɡwɪʃər/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/fire-extinguisher.webp`,
-    topic: "first-aid-12",
+    topic: "first-aid-4",
     description:
       "A health supply or clinic concept, specifically item number 59 in the curriculum.",
   },
@@ -13420,7 +13213,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ʃɑːrps kənˈteɪnər/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/sharps-container.webp`,
-    topic: "first-aid-12",
+    topic: "first-aid-4",
     description:
       "A health supply or clinic concept, specifically item number 60 in the curriculum.",
   },
@@ -13430,7 +13223,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/kʌt/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/cut.webp`,
-    topic: "first-aid-13",
+    topic: "first-aid-5",
     description:
       "A health supply or clinic concept, specifically item number 61 in the curriculum.",
   },
@@ -13440,7 +13233,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/bruːz/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/bruise.webp`,
-    topic: "first-aid-13",
+    topic: "first-aid-5",
     description:
       "A health supply or clinic concept, specifically item number 62 in the curriculum.",
   },
@@ -13450,7 +13243,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɜːrn/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/burn.webp`,
-    topic: "first-aid-13",
+    topic: "first-aid-5",
     description:
       "A health supply or clinic concept, specifically item number 63 in the curriculum.",
   },
@@ -13460,7 +13253,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/spreɪn/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/sprain.webp`,
-    topic: "first-aid-13",
+    topic: "first-aid-5",
     description:
       "A health supply or clinic concept, specifically item number 64 in the curriculum.",
   },
@@ -13470,7 +13263,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfræktʃər/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/fracture.webp`,
-    topic: "first-aid-13",
+    topic: "first-aid-5",
     description:
       "A health supply or clinic concept, specifically item number 65 in the curriculum.",
   },
@@ -13480,7 +13273,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈnoʊzbliːd/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/nosebleed.webp`,
-    topic: "first-aid-14",
+    topic: "first-aid-5",
     description:
       "A health supply or clinic concept, specifically item number 66 in the curriculum.",
   },
@@ -13490,7 +13283,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/biː stɪŋ/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/bee-sting.webp`,
-    topic: "first-aid-14",
+    topic: "first-aid-5",
     description:
       "A health supply or clinic concept, specifically item number 67 in the curriculum.",
   },
@@ -13500,7 +13293,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ræʃ/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/rash.webp`,
-    topic: "first-aid-14",
+    topic: "first-aid-5",
     description:
       "A health supply or clinic concept, specifically item number 68 in the curriculum.",
   },
@@ -13510,7 +13303,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈblɪstər/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/blister.webp`,
-    topic: "first-aid-14",
+    topic: "first-aid-5",
     description:
       "A health supply or clinic concept, specifically item number 69 in the curriculum.",
   },
@@ -13520,7 +13313,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsplɪntər/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/splinter.webp`,
-    topic: "first-aid-14",
+    topic: "first-aid-5",
     description:
       "A health supply or clinic concept, specifically item number 70 in the curriculum.",
   },
@@ -13530,7 +13323,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/kənˈkʌʃən/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/concussion.webp`,
-    topic: "first-aid-15",
+    topic: "first-aid-5",
     description:
       "A health supply or clinic concept, specifically item number 71 in the curriculum.",
   },
@@ -13540,7 +13333,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌdɪsloʊˈkeɪʃən/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/dislocation.webp`,
-    topic: "first-aid-15",
+    topic: "first-aid-5",
     description:
       "A health supply or clinic concept, specifically item number 72 in the curriculum.",
   },
@@ -13550,7 +13343,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfeɪntɪŋ/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/fainting.webp`,
-    topic: "first-aid-15",
+    topic: "first-aid-5",
     description:
       "A health supply or clinic concept, specifically item number 73 in the curriculum.",
   },
@@ -13560,7 +13353,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtʃoʊkɪŋ/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/choking.webp`,
-    topic: "first-aid-15",
+    topic: "first-aid-5",
     description:
       "A health supply or clinic concept, specifically item number 74 in the curriculum.",
   },
@@ -13570,7 +13363,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/əˈlɜːrdʒɪk riˈækʃən/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/allergic-reaction.webp`,
-    topic: "first-aid-15",
+    topic: "first-aid-5",
     description:
       "A health supply or clinic concept, specifically item number 75 in the curriculum.",
   },
@@ -13580,7 +13373,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/fɜːrst eɪd kɪt/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/first-aid-kit.webp`,
-    topic: "first-aid-16",
+    topic: "first-aid-6",
     description:
       "A health supply or clinic concept, specifically item number 76 in the curriculum.",
   },
@@ -13590,7 +13383,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbændɪdʒ/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/bandage.webp`,
-    topic: "first-aid-16",
+    topic: "first-aid-6",
     description:
       "A health supply or clinic concept, specifically item number 77 in the curriculum.",
   },
@@ -13600,7 +13393,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡɔːz/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/gauze.webp`,
-    topic: "first-aid-16",
+    topic: "first-aid-6",
     description:
       "A health supply or clinic concept, specifically item number 78 in the curriculum.",
   },
@@ -13610,7 +13403,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ədˈhiːsɪv teɪp/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/adhesive-tape.webp`,
-    topic: "first-aid-16",
+    topic: "first-aid-6",
     description:
       "A health supply or clinic concept, specifically item number 79 in the curriculum.",
   },
@@ -13620,7 +13413,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌæntɪˈsɛptɪk waɪp/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/antiseptic-wipe.webp`,
-    topic: "first-aid-16",
+    topic: "first-aid-6",
     description:
       "A health supply or clinic concept, specifically item number 80 in the curriculum.",
   },
@@ -13630,7 +13423,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsɪzərz/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/scissors.webp`,
-    topic: "first-aid-17",
+    topic: "first-aid-6",
     description:
       "A health supply or clinic concept, specifically item number 81 in the curriculum.",
   },
@@ -13640,7 +13433,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtwiːzərz/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/tweezers.webp`,
-    topic: "first-aid-17",
+    topic: "first-aid-6",
     description:
       "A health supply or clinic concept, specifically item number 82 in the curriculum.",
   },
@@ -13650,7 +13443,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈseɪfti pɪn/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/safety-pin.webp`,
-    topic: "first-aid-17",
+    topic: "first-aid-6",
     description:
       "A health supply or clinic concept, specifically item number 83 in the curriculum.",
   },
@@ -13660,7 +13453,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪˈlæstɪk ˈbændɪdʒ/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/elastic-bandage.webp`,
-    topic: "first-aid-17",
+    topic: "first-aid-6",
     description:
       "A health supply or clinic concept, specifically item number 84 in the curriculum.",
   },
@@ -13670,7 +13463,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/traɪˈæŋɡjʊlər ˈbændɪdʒ/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/triangular-bandage.webp`,
-    topic: "first-aid-17",
+    topic: "first-aid-6",
     description:
       "A health supply or clinic concept, specifically item number 85 in the curriculum.",
   },
@@ -13680,7 +13473,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡɔːz pæd/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/gauze-pad.webp`,
-    topic: "first-aid-18",
+    topic: "first-aid-6",
     description:
       "A health supply or clinic concept, specifically item number 86 in the curriculum.",
   },
@@ -13690,7 +13483,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɜːrn kriːm/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/burn-cream.webp`,
-    topic: "first-aid-18",
+    topic: "first-aid-6",
     description:
       "A health supply or clinic concept, specifically item number 87 in the curriculum.",
   },
@@ -13700,7 +13493,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/koʊld pæk/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/cold-pack.webp`,
-    topic: "first-aid-18",
+    topic: "first-aid-6",
     description:
       "A health supply or clinic concept, specifically item number 88 in the curriculum.",
   },
@@ -13710,7 +13503,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/hiːt pæk/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/heat-pack.webp`,
-    topic: "first-aid-18",
+    topic: "first-aid-6",
     description:
       "A health supply or clinic concept, specifically item number 89 in the curriculum.",
   },
@@ -13720,7 +13513,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfɪŋɡər splɪnt/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/finger-splint.webp`,
-    topic: "first-aid-18",
+    topic: "first-aid-6",
     description:
       "A health supply or clinic concept, specifically item number 90 in the curriculum.",
   },
@@ -13730,7 +13523,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɛdɪkl teɪp/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/medical-tape.webp`,
-    topic: "first-aid-19",
+    topic: "first-aid-7",
     description:
       "A health supply or clinic concept, specifically item number 91 in the curriculum.",
   },
@@ -13740,7 +13533,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌæntɪbaɪˈɒtɪk ˈɔɪntmənt/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/antibiotic-ointment.webp`,
-    topic: "first-aid-19",
+    topic: "first-aid-7",
     description:
       "A health supply or clinic concept, specifically item number 92 in the curriculum.",
   },
@@ -13750,7 +13543,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌhaɪdroʊˈkɔːrtɪzoʊn kriːm/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/hydrocortisone-cream.webp`,
-    topic: "first-aid-19",
+    topic: "first-aid-7",
     description:
       "A health supply or clinic concept, specifically item number 93 in the curriculum.",
   },
@@ -13760,7 +13553,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈstrɛtʃər/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/stretcher.webp`,
-    topic: "first-aid-19",
+    topic: "first-aid-7",
     description:
       "A health supply or clinic concept, specifically item number 94 in the curriculum.",
   },
@@ -13770,7 +13563,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwiːltʃɛr/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/wheelchair.webp`,
-    topic: "first-aid-19",
+    topic: "first-aid-7",
     description:
       "A health supply or clinic concept, specifically item number 95 in the curriculum.",
   },
@@ -13780,7 +13573,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhaɪdrədʒən pəˈrɒksaɪd/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/hydrogen-peroxide.webp`,
-    topic: "first-aid-20",
+    topic: "first-aid-7",
     description:
       "A health supply or clinic concept, specifically item number 96 in the curriculum.",
   },
@@ -13790,7 +13583,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈaɪədiːn/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/iodine.webp`,
-    topic: "first-aid-20",
+    topic: "first-aid-7",
     description:
       "A health supply or clinic concept, specifically item number 97 in the curriculum.",
   },
@@ -13800,7 +13593,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɒtn swɒb/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/cotton-swab.webp`,
-    topic: "first-aid-20",
+    topic: "first-aid-7",
     description:
       "A health supply or clinic concept, specifically item number 98 in the curriculum.",
   },
@@ -13810,7 +13603,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈstɛrəl ɡlʌvz/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/sterile-gloves.webp`,
-    topic: "first-aid-20",
+    topic: "first-aid-7",
     description:
       "A health supply or clinic concept, specifically item number 99 in the curriculum.",
   },
@@ -13820,7 +13613,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/sɪˈrɪndʒ/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/syringe.webp`,
-    topic: "first-aid-20",
+    topic: "first-aid-7",
     description:
       "A health supply or clinic concept, specifically item number 100 in the curriculum.",
   },
@@ -13830,7 +13623,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsuːtʃər kɪt/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/suture-kit.webp`,
-    topic: "first-aid-21",
+    topic: "first-aid-7",
     description:
       "A health supply or clinic concept, specifically item number 101 in the curriculum.",
   },
@@ -13840,7 +13633,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/wuːnd ˈkloʊʒər strɪp/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/wound-closure-strip.webp`,
-    topic: "first-aid-21",
+    topic: "first-aid-7",
     description:
       "A health supply or clinic concept, specifically item number 102 in the curriculum.",
   },
@@ -13850,7 +13643,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/skɪn ˈsteɪplər/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/skin-stapler.webp`,
-    topic: "first-aid-21",
+    topic: "first-aid-7",
     description:
       "A health supply or clinic concept, specifically item number 103 in the curriculum.",
   },
@@ -13860,7 +13653,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌɪrɪˈɡeɪʃən sɪˈrɪndʒ/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/irrigation-syringe.webp`,
-    topic: "first-aid-21",
+    topic: "first-aid-7",
     description:
       "A health supply or clinic concept, specifically item number 104 in the curriculum.",
   },
@@ -13870,7 +13663,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈrʌbɪŋ ˈælkəhɒl/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/rubbing-alcohol.webp`,
-    topic: "first-aid-21",
+    topic: "first-aid-7",
     description:
       "A health supply or clinic concept, specifically item number 105 in the curriculum.",
   },
@@ -13880,7 +13673,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɜːrn dʒɛl/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/burn-gel.webp`,
-    topic: "first-aid-22",
+    topic: "first-aid-8",
     description:
       "A health supply or clinic concept, specifically item number 106 in the curriculum.",
   },
@@ -13890,7 +13683,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈaɪədiːn səˈluːʃən/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/iodine-solution.webp`,
-    topic: "first-aid-22",
+    topic: "first-aid-8",
     description:
       "A health supply or clinic concept, specifically item number 107 in the curriculum.",
   },
@@ -13900,7 +13693,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/dɪˈfɪbrɪleɪtər/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/defibrillator.webp`,
-    topic: "first-aid-22",
+    topic: "first-aid-8",
     description:
       "A health supply or clinic concept, specifically item number 108 in the curriculum.",
   },
@@ -13910,7 +13703,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɒksɪdʒən mɑːsk/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/oxygen-mask.webp`,
-    topic: "first-aid-22",
+    topic: "first-aid-8",
     description:
       "A health supply or clinic concept, specifically item number 109 in the curriculum.",
   },
@@ -13920,7 +13713,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɒksɪdʒən tæŋk/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/oxygen-tank.webp`,
-    topic: "first-aid-22",
+    topic: "first-aid-8",
     description:
       "A health supply or clinic concept, specifically item number 110 in the curriculum.",
   },
@@ -13930,7 +13723,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɛpɪpɛn/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/epipen.webp`,
-    topic: "first-aid-23",
+    topic: "first-aid-8",
     description:
       "A health supply or clinic concept, specifically item number 111 in the curriculum.",
   },
@@ -13940,7 +13733,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɜːrnɪkɪt/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/tourniquet.webp`,
-    topic: "first-aid-23",
+    topic: "first-aid-8",
     description:
       "A health supply or clinic concept, specifically item number 112 in the curriculum.",
   },
@@ -13950,7 +13743,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪˈmɜːrdʒənsi ˈblæŋkɪt/",
     cefr: "C1",
     img: `${LOCAL_WORD_IMAGES}/hospital/emergency-blanket.webp`,
-    topic: "first-aid-23",
+    topic: "first-aid-8",
     description:
       "A health supply or clinic concept, specifically item number 113 in the curriculum.",
   },
@@ -13960,7 +13753,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɪsl/",
     cefr: "B1",
     img: `${LOCAL_WORD_IMAGES}/hospital/whistle.webp`,
-    topic: "first-aid-23",
+    topic: "first-aid-8",
     description:
       "A health supply or clinic concept, specifically item number 114 in the curriculum.",
   },
@@ -13970,7 +13763,7 @@ export const FIRST_AID_VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈflæʃlaɪt/",
     cefr: "B2",
     img: `${LOCAL_WORD_IMAGES}/hospital/flashlight.webp`,
-    topic: "first-aid-23",
+    topic: "first-aid-8",
     description:
       "A health supply or clinic concept, specifically item number 115 in the curriculum.",
   },
@@ -13980,117 +13773,42 @@ export const FIRST_AID_TOPICS: TopicCategory[] = [
   {
     id: "first-aid-1",
     name: "First Aid Part 1",
-    itemsCount: 5,
+    itemsCount: 15,
   },
   {
     id: "first-aid-2",
     name: "First Aid Part 2",
-    itemsCount: 5,
+    itemsCount: 15,
   },
   {
     id: "first-aid-3",
     name: "First Aid Part 3",
-    itemsCount: 5,
+    itemsCount: 15,
   },
   {
     id: "first-aid-4",
     name: "First Aid Part 4",
-    itemsCount: 5,
+    itemsCount: 15,
   },
   {
     id: "first-aid-5",
     name: "First Aid Part 5",
-    itemsCount: 5,
+    itemsCount: 15,
   },
   {
     id: "first-aid-6",
     name: "First Aid Part 6",
-    itemsCount: 5,
+    itemsCount: 15,
   },
   {
     id: "first-aid-7",
     name: "First Aid Part 7",
-    itemsCount: 5,
+    itemsCount: 15,
   },
   {
     id: "first-aid-8",
     name: "First Aid Part 8",
-    itemsCount: 5,
-  },
-  {
-    id: "first-aid-9",
-    name: "First Aid Part 9",
-    itemsCount: 5,
-  },
-  {
-    id: "first-aid-10",
-    name: "First Aid Part 10",
-    itemsCount: 5,
-  },
-  {
-    id: "first-aid-11",
-    name: "First Aid Part 11",
-    itemsCount: 5,
-  },
-  {
-    id: "first-aid-12",
-    name: "First Aid Part 12",
-    itemsCount: 5,
-  },
-  {
-    id: "first-aid-13",
-    name: "First Aid Part 13",
-    itemsCount: 5,
-  },
-  {
-    id: "first-aid-14",
-    name: "First Aid Part 14",
-    itemsCount: 5,
-  },
-  {
-    id: "first-aid-15",
-    name: "First Aid Part 15",
-    itemsCount: 5,
-  },
-  {
-    id: "first-aid-16",
-    name: "First Aid Part 16",
-    itemsCount: 5,
-  },
-  {
-    id: "first-aid-17",
-    name: "First Aid Part 17",
-    itemsCount: 5,
-  },
-  {
-    id: "first-aid-18",
-    name: "First Aid Part 18",
-    itemsCount: 5,
-  },
-  {
-    id: "first-aid-19",
-    name: "First Aid Part 19",
-    itemsCount: 5,
-  },
-  {
-    id: "first-aid-20",
-    name: "First Aid Part 20",
-    itemsCount: 5,
-  },
-  {
-    id: "first-aid-21",
-    name: "First Aid Part 21",
-    itemsCount: 5,
-  },
-  {
-    id: "first-aid-22",
-    name: "First Aid Part 22",
-    itemsCount: 5,
-  },
-  {
-    id: "first-aid-23",
-    name: "First Aid Part 23",
-    itemsCount: 5,
+    itemsCount: 10,
   },
 ];
 
@@ -14098,56 +13816,46 @@ export const FIRST_AID_GROUPS: Lesson[] = [
   {
     id: "first-aid-1",
     name: "First Aid Basics 1",
-    description: "Learn about Heat Stroke, Hypothermia, Tape, Antiseptic, Sling.",
+    description:
+      "Learn about Heat Stroke, Hypothermia, Tape, Antiseptic, Sling, Compress, Gloves, CPR, Wound Care, Check Pulse, A...",
     topicId: "first-aid-1",
-    wordIds: ["heat-stroke", "hypothermia", "tape", "antiseptic", "sling"],
+    wordIds: [
+      "heat-stroke",
+      "hypothermia",
+      "tape",
+      "antiseptic",
+      "sling",
+      "compress",
+      "gloves",
+      "cpr",
+      "wound-care",
+      "check-pulse",
+      "apply-pressure",
+      "elevate",
+      "immobilize",
+      "call-emergency",
+      "monitor",
+    ],
     story:
-      "In this section of the first aid room, you will learn about Heat Stroke, Hypothermia, Tape, Antiseptic, Sling. These are essential items for medical emergencies and patient care.",
+      "In this section, you will learn about Heat Stroke, Hypothermia, Tape, Antiseptic, Sling, Compress, Gloves, CPR, Wound Care, Check Pulse, Apply Pressure, Elevate, Immobilize, Call Emergency, Monitor. These are essential items to know.",
   },
   {
     id: "first-aid-2",
     name: "First Aid Basics 2",
-    description: "Learn about Compress, Gloves, CPR, Wound Care, Check Pulse.",
+    description:
+      "Learn about Crutch, Splint, Neck Brace, Ice Pack, Hot Pack, Stethoscope, Thermometer, Pulse Oximeter, Eye Wash S...",
     topicId: "first-aid-2",
-    wordIds: ["compress", "gloves", "cpr", "wound-care", "check-pulse"],
-    story:
-      "In this section of the first aid room, you will learn about Compress, Gloves, CPR, Wound Care, Check Pulse. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-3",
-    name: "First Aid Basics 3",
-    description: "Learn about Apply Pressure, Elevate, Immobilize, Call Emergency, Monitor.",
-    topicId: "first-aid-3",
-    wordIds: ["apply-pressure", "elevate", "immobilize", "call-emergency", "monitor"],
-    story:
-      "In this section of the first aid room, you will learn about Apply Pressure, Elevate, Immobilize, Call Emergency, Monitor. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-4",
-    name: "First Aid Basics 4",
-    description: "Learn about Crutch, Splint, Neck Brace, Ice Pack, Hot Pack.",
-    topicId: "first-aid-4",
-    wordIds: ["crutch", "splint", "neck-brace", "ice-pack", "hot-pack"],
-    story:
-      "In this section of the first aid room, you will learn about Crutch, Splint, Neck Brace, Ice Pack, Hot Pack. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-5",
-    name: "First Aid Basics 5",
-    description:
-      "Learn about Stethoscope, Thermometer, Pulse Oximeter, Eye Wash Station, CPR Mask.",
-    topicId: "first-aid-5",
-    wordIds: ["stethoscope", "thermometer", "pulse-oximeter", "eye-wash-station", "cpr-mask"],
-    story:
-      "In this section of the first aid room, you will learn about Stethoscope, Thermometer, Pulse Oximeter, Eye Wash Station, CPR Mask. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-6",
-    name: "First Aid Basics 6",
-    description:
-      "Learn about AED, First Aid Manual, Blood Glucose Monitor, Blood Pressure Cuff, Penlight.",
-    topicId: "first-aid-6",
     wordIds: [
+      "crutch",
+      "splint",
+      "neck-brace",
+      "ice-pack",
+      "hot-pack",
+      "stethoscope",
+      "thermometer",
+      "pulse-oximeter",
+      "eye-wash-station",
+      "cpr-mask",
       "aed",
       "first-aid-manual",
       "blood-glucose-monitor",
@@ -14155,41 +13863,25 @@ export const FIRST_AID_GROUPS: Lesson[] = [
       "penlight",
     ],
     story:
-      "In this section of the first aid room, you will learn about AED, First Aid Manual, Blood Glucose Monitor, Blood Pressure Cuff, Penlight. These are essential items for medical emergencies and patient care.",
+      "In this section, you will learn about Crutch, Splint, Neck Brace, Ice Pack, Hot Pack, Stethoscope, Thermometer, Pulse Oximeter, Eye Wash Station, CPR Mask, AED, First Aid Manual, Blood Glucose Monitor, Blood Pressure Cuff, Penlight. These are essential items to know.",
   },
   {
-    id: "first-aid-7",
-    name: "First Aid Basics 7",
+    id: "first-aid-3",
+    name: "First Aid Basics 3",
     description:
-      "Learn about Tongue Depressor, Plaster, Butterfly Strip, Wound Dressing, Saline Solution.",
-    topicId: "first-aid-7",
+      "Learn about Tongue Depressor, Plaster, Butterfly Strip, Wound Dressing, Saline Solution, Emergency Phone, Alarm ...",
+    topicId: "first-aid-3",
     wordIds: [
       "tongue-depressor",
       "plaster",
       "butterfly-strip",
       "wound-dressing",
       "saline-solution",
-    ],
-    story:
-      "In this section of the first aid room, you will learn about Tongue Depressor, Plaster, Butterfly Strip, Wound Dressing, Saline Solution. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-8",
-    name: "First Aid Basics 8",
-    description:
-      "Learn about Emergency Phone, Alarm Button, Inhaler, Cervical Collar, Spine Board.",
-    topicId: "first-aid-8",
-    wordIds: ["emergency-phone", "alarm-button", "inhaler", "cervical-collar", "spine-board"],
-    story:
-      "In this section of the first aid room, you will learn about Emergency Phone, Alarm Button, Inhaler, Cervical Collar, Spine Board. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-9",
-    name: "First Aid Basics 9",
-    description:
-      "Learn about Snakebite Kit, Tick Remover, Medical ID Bracelet, Examination Table, Curtain.",
-    topicId: "first-aid-9",
-    wordIds: [
+      "emergency-phone",
+      "alarm-button",
+      "inhaler",
+      "cervical-collar",
+      "spine-board",
       "snakebite-kit",
       "tick-remover",
       "medical-id-bracelet",
@@ -14197,34 +13889,25 @@ export const FIRST_AID_GROUPS: Lesson[] = [
       "curtain",
     ],
     story:
-      "In this section of the first aid room, you will learn about Snakebite Kit, Tick Remover, Medical ID Bracelet, Examination Table, Curtain. These are essential items for medical emergencies and patient care.",
+      "In this section, you will learn about Tongue Depressor, Plaster, Butterfly Strip, Wound Dressing, Saline Solution, Emergency Phone, Alarm Button, Inhaler, Cervical Collar, Spine Board, Snakebite Kit, Tick Remover, Medical ID Bracelet, Examination Table, Curtain. These are essential items to know.",
   },
   {
-    id: "first-aid-10",
-    name: "First Aid Basics 10",
-    description: "Learn about Sink, Soap Dispenser, Paper Towel, Waste Bin, Medicine Cabinet.",
-    topicId: "first-aid-10",
-    wordIds: ["sink", "soap-dispenser", "paper-towel", "waste-bin", "medicine-cabinet"],
-    story:
-      "In this section of the first aid room, you will learn about Sink, Soap Dispenser, Paper Towel, Waste Bin, Medicine Cabinet. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-11",
-    name: "First Aid Basics 11",
+    id: "first-aid-4",
+    name: "First Aid Basics 4",
     description:
-      "Learn about Wall Chart, Clock, Hand Sanitizer, Privacy Screen, Emergency Contact Card.",
-    topicId: "first-aid-11",
-    wordIds: ["wall-chart", "clock", "hand-sanitizer", "privacy-screen", "emergency-contact-card"],
-    story:
-      "In this section of the first aid room, you will learn about Wall Chart, Clock, Hand Sanitizer, Privacy Screen, Emergency Contact Card. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-12",
-    name: "First Aid Basics 12",
-    description:
-      "Learn about Incident Report Form, Poison Control Poster, CPR Poster, Fire Extinguisher, Sharps Container.",
-    topicId: "first-aid-12",
+      "Learn about Sink, Soap Dispenser, Paper Towel, Waste Bin, Medicine Cabinet, Wall Chart, Clock, Hand Sanitizer, P...",
+    topicId: "first-aid-4",
     wordIds: [
+      "sink",
+      "soap-dispenser",
+      "paper-towel",
+      "waste-bin",
+      "medicine-cabinet",
+      "wall-chart",
+      "clock",
+      "hand-sanitizer",
+      "privacy-screen",
+      "emergency-contact-card",
       "incident-report-form",
       "poison-control-poster",
       "cpr-poster",
@@ -14232,94 +13915,77 @@ export const FIRST_AID_GROUPS: Lesson[] = [
       "sharps-container",
     ],
     story:
-      "In this section of the first aid room, you will learn about Incident Report Form, Poison Control Poster, CPR Poster, Fire Extinguisher, Sharps Container. These are essential items for medical emergencies and patient care.",
+      "In this section, you will learn about Sink, Soap Dispenser, Paper Towel, Waste Bin, Medicine Cabinet, Wall Chart, Clock, Hand Sanitizer, Privacy Screen, Emergency Contact Card, Incident Report Form, Poison Control Poster, CPR Poster, Fire Extinguisher, Sharps Container. These are essential items to know.",
   },
   {
-    id: "first-aid-13",
-    name: "First Aid Basics 13",
-    description: "Learn about Cut, Bruise, Burn, Sprain, Fracture.",
-    topicId: "first-aid-13",
-    wordIds: ["cut", "bruise", "burn", "sprain", "fracture"],
-    story:
-      "In this section of the first aid room, you will learn about Cut, Bruise, Burn, Sprain, Fracture. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-14",
-    name: "First Aid Basics 14",
-    description: "Learn about Nosebleed, Bee Sting, Rash, Blister, Splinter.",
-    topicId: "first-aid-14",
-    wordIds: ["nosebleed", "bee-sting", "rash", "blister", "splinter"],
-    story:
-      "In this section of the first aid room, you will learn about Nosebleed, Bee Sting, Rash, Blister, Splinter. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-15",
-    name: "First Aid Basics 15",
-    description: "Learn about Concussion, Dislocation, Fainting, Choking, Allergic Reaction.",
-    topicId: "first-aid-15",
-    wordIds: ["concussion", "dislocation", "fainting", "choking", "allergic-reaction"],
-    story:
-      "In this section of the first aid room, you will learn about Concussion, Dislocation, Fainting, Choking, Allergic Reaction. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-16",
-    name: "First Aid Basics 16",
-    description: "Learn about First Aid Kit, Bandage, Gauze, Adhesive Tape, Antiseptic Wipe.",
-    topicId: "first-aid-16",
-    wordIds: ["first-aid-kit", "bandage", "gauze", "adhesive-tape", "antiseptic-wipe"],
-    story:
-      "In this section of the first aid room, you will learn about First Aid Kit, Bandage, Gauze, Adhesive Tape, Antiseptic Wipe. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-17",
-    name: "First Aid Basics 17",
-    description: "Learn about Scissors, Tweezers, Safety Pin, Elastic Bandage, Triangular Bandage.",
-    topicId: "first-aid-17",
-    wordIds: ["scissors", "tweezers", "safety-pin", "elastic-bandage", "triangular-bandage"],
-    story:
-      "In this section of the first aid room, you will learn about Scissors, Tweezers, Safety Pin, Elastic Bandage, Triangular Bandage. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-18",
-    name: "First Aid Basics 18",
-    description: "Learn about Gauze Pad, Burn Cream, Cold Pack, Heat Pack, Finger Splint.",
-    topicId: "first-aid-18",
-    wordIds: ["gauze-pad", "burn-cream", "cold-pack", "heat-pack", "finger-splint"],
-    story:
-      "In this section of the first aid room, you will learn about Gauze Pad, Burn Cream, Cold Pack, Heat Pack, Finger Splint. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-19",
-    name: "First Aid Basics 19",
+    id: "first-aid-5",
+    name: "First Aid Basics 5",
     description:
-      "Learn about Medical Tape, Antibiotic Ointment, Hydrocortisone Cream, Stretcher, Wheelchair.",
-    topicId: "first-aid-19",
+      "Learn about Cut, Bruise, Burn, Sprain, Fracture, Nosebleed, Bee Sting, Rash, Blister, Splinter, Concussion, Disl...",
+    topicId: "first-aid-5",
+    wordIds: [
+      "cut",
+      "bruise",
+      "burn",
+      "sprain",
+      "fracture",
+      "nosebleed",
+      "bee-sting",
+      "rash",
+      "blister",
+      "splinter",
+      "concussion",
+      "dislocation",
+      "fainting",
+      "choking",
+      "allergic-reaction",
+    ],
+    story:
+      "In this section, you will learn about Cut, Bruise, Burn, Sprain, Fracture, Nosebleed, Bee Sting, Rash, Blister, Splinter, Concussion, Dislocation, Fainting, Choking, Allergic Reaction. These are essential items to know.",
+  },
+  {
+    id: "first-aid-6",
+    name: "First Aid Basics 6",
+    description:
+      "Learn about First Aid Kit, Bandage, Gauze, Adhesive Tape, Antiseptic Wipe, Scissors, Tweezers, Safety Pin, Elast...",
+    topicId: "first-aid-6",
+    wordIds: [
+      "first-aid-kit",
+      "bandage",
+      "gauze",
+      "adhesive-tape",
+      "antiseptic-wipe",
+      "scissors",
+      "tweezers",
+      "safety-pin",
+      "elastic-bandage",
+      "triangular-bandage",
+      "gauze-pad",
+      "burn-cream",
+      "cold-pack",
+      "heat-pack",
+      "finger-splint",
+    ],
+    story:
+      "In this section, you will learn about First Aid Kit, Bandage, Gauze, Adhesive Tape, Antiseptic Wipe, Scissors, Tweezers, Safety Pin, Elastic Bandage, Triangular Bandage, Gauze Pad, Burn Cream, Cold Pack, Heat Pack, Finger Splint. These are essential items to know.",
+  },
+  {
+    id: "first-aid-7",
+    name: "First Aid Basics 7",
+    description:
+      "Learn about Medical Tape, Antibiotic Ointment, Hydrocortisone Cream, Stretcher, Wheelchair, Hydrogen Peroxide, I...",
+    topicId: "first-aid-7",
     wordIds: [
       "medical-tape",
       "antibiotic-ointment",
       "hydrocortisone-cream",
       "stretcher",
       "wheelchair",
-    ],
-    story:
-      "In this section of the first aid room, you will learn about Medical Tape, Antibiotic Ointment, Hydrocortisone Cream, Stretcher, Wheelchair. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-20",
-    name: "First Aid Basics 20",
-    description: "Learn about Hydrogen Peroxide, Iodine, Cotton Swab, Sterile Gloves, Syringe.",
-    topicId: "first-aid-20",
-    wordIds: ["hydrogen-peroxide", "iodine", "cotton-swab", "sterile-gloves", "syringe"],
-    story:
-      "In this section of the first aid room, you will learn about Hydrogen Peroxide, Iodine, Cotton Swab, Sterile Gloves, Syringe. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-21",
-    name: "First Aid Basics 21",
-    description:
-      "Learn about Suture Kit, Wound Closure Strip, Skin Stapler, Irrigation Syringe, Rubbing Alcohol.",
-    topicId: "first-aid-21",
-    wordIds: [
+      "hydrogen-peroxide",
+      "iodine",
+      "cotton-swab",
+      "sterile-gloves",
+      "syringe",
       "suture-kit",
       "wound-closure-strip",
       "skin-stapler",
@@ -14327,25 +13993,28 @@ export const FIRST_AID_GROUPS: Lesson[] = [
       "rubbing-alcohol",
     ],
     story:
-      "In this section of the first aid room, you will learn about Suture Kit, Wound Closure Strip, Skin Stapler, Irrigation Syringe, Rubbing Alcohol. These are essential items for medical emergencies and patient care.",
+      "In this section, you will learn about Medical Tape, Antibiotic Ointment, Hydrocortisone Cream, Stretcher, Wheelchair, Hydrogen Peroxide, Iodine, Cotton Swab, Sterile Gloves, Syringe, Suture Kit, Wound Closure Strip, Skin Stapler, Irrigation Syringe, Rubbing Alcohol. These are essential items to know.",
   },
   {
-    id: "first-aid-22",
-    name: "First Aid Basics 22",
-    description: "Learn about Burn Gel, Iodine Solution, Defibrillator, Oxygen Mask, Oxygen Tank.",
-    topicId: "first-aid-22",
-    wordIds: ["burn-gel", "iodine-solution", "defibrillator", "oxygen-mask", "oxygen-tank"],
+    id: "first-aid-8",
+    name: "First Aid Basics 8",
+    description:
+      "Learn about Burn Gel, Iodine Solution, Defibrillator, Oxygen Mask, Oxygen Tank, EpiPen, Tourniquet, Emergency Bl...",
+    topicId: "first-aid-8",
+    wordIds: [
+      "burn-gel",
+      "iodine-solution",
+      "defibrillator",
+      "oxygen-mask",
+      "oxygen-tank",
+      "epipen",
+      "tourniquet",
+      "emergency-blanket",
+      "whistle",
+      "flashlight",
+    ],
     story:
-      "In this section of the first aid room, you will learn about Burn Gel, Iodine Solution, Defibrillator, Oxygen Mask, Oxygen Tank. These are essential items for medical emergencies and patient care.",
-  },
-  {
-    id: "first-aid-23",
-    name: "First Aid Basics 23",
-    description: "Learn about EpiPen, Tourniquet, Emergency Blanket, Whistle, Flashlight.",
-    topicId: "first-aid-23",
-    wordIds: ["epipen", "tourniquet", "emergency-blanket", "whistle", "flashlight"],
-    story:
-      "In this section of the first aid room, you will learn about EpiPen, Tourniquet, Emergency Blanket, Whistle, Flashlight. These are essential items for medical emergencies and patient care.",
+      "In this section, you will learn about Burn Gel, Iodine Solution, Defibrillator, Oxygen Mask, Oxygen Tank, EpiPen, Tourniquet, Emergency Blanket, Whistle, Flashlight. These are essential items to know.",
   },
 ];
 

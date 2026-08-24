@@ -54,14 +54,14 @@ describe("Story Suite & Vocabulary-Centric Quizzes", () => {
     expect(screen.getByText(/Vocabulary Focus/i)).toBeInTheDocument();
 
     // Option buttons are present
-    const sunflowerOption = screen.getByRole("button", { name: /The tulip/i });
+    const sunflowerOption = screen.getByRole("button", { name: /The rose/i });
     expect(sunflowerOption).toBeInTheDocument();
 
     // Select Sunflower option
     fireEvent.click(sunflowerOption);
 
     // Well done explanation should appear
-    expect(screen.getByText(/The narrative focuses on the tulip/i)).toBeInTheDocument();
+    expect(screen.getByText(/The narrative focuses on the rose/i)).toBeInTheDocument();
 
     // Navigate to Question 2
     const nextQBtn = screen.getByRole("button", { name: /Next Question/i });
