@@ -11819,25 +11819,30 @@ export const AIRPORT_TOPICS: TopicCategory[] = [
 export const AIRPORT_GROUPS: Lesson[] = [
   {
     id: "airport-group-1",
-    name: "Terminal & Flights",
+    name: "Departures",
     topicId: "airport-1",
-    wordIds: [
-      "airport-terminal",
-      "boarding-pass",
-      "luggage-cart",
-      "security-check",
-      "departure-gate",
-      "flight-attendant",
-      "runway",
-      "passport-control",
-      "baggage-claim",
-      "customs",
-      "duty-free",
-      "departure-board",
-    ],
-    description: "Navigate flight departures, luggage, security, and arrivals.",
+    wordIds: ["airport-terminal", "boarding-pass", "luggage-cart", "security-check"],
+    description: "Learn vocabulary related to departures.",
     story:
-      "At the airport terminal, we got our boarding pass, pushed the luggage cart through the security check to the departure gate, met the flight attendant, saw the runway, passed passport control, picked up bags at baggage claim, cleared customs, shopped at duty free, and watched the departure board.",
+      "In this lesson about Departures, you will see the Airport Terminal, Boarding Pass, Luggage Cart, Security Check.",
+  },
+  {
+    id: "airport-group-2",
+    name: "Flight & Arrival",
+    topicId: "airport-2",
+    wordIds: ["departure-gate", "flight-attendant", "runway", "passport-control"],
+    description: "Learn vocabulary related to flight & arrival.",
+    story:
+      "In this lesson about Flight & Arrival, you will see the Departure Gate, Flight Attendant, Runway, Passport Control.",
+  },
+  {
+    id: "airport-group-3",
+    name: "Services",
+    topicId: "airport-3",
+    wordIds: ["baggage-claim", "customs", "duty-free", "departure-board"],
+    description: "Learn vocabulary related to services.",
+    story:
+      "In this lesson about Services, you will see the Baggage Claim, Customs, Duty Free, Departure Board.",
   },
 ];
 
@@ -11850,25 +11855,30 @@ export const TRAIN_STATION_TOPICS: TopicCategory[] = [
 export const TRAIN_STATION_GROUPS: Lesson[] = [
   {
     id: "train-station-group-1",
-    name: "Platforms & Rails",
+    name: "Platforms",
     topicId: "train-station-1",
-    wordIds: [
-      "train-platform",
-      "ticket-machine",
-      "train-conductor",
-      "locomotive",
-      "railway-track",
-      "passenger-car",
-      "commuter-train",
-      "timetable",
-      "station-clock",
-      "waiting-room",
-      "ticket-barrier",
-      "express-train",
-    ],
-    description: "Explore passenger platforms, ticketing, locomotives, and rail lines.",
+    wordIds: ["train-platform", "ticket-machine", "train-conductor", "locomotive"],
+    description: "Learn vocabulary related to platforms.",
     story:
-      "At the train platform, I used the ticket machine, showed the train conductor our pass for the locomotive, crossed near the railway track, sat in the passenger car of the commuter train, checked the timetable and station clock in the waiting room, walked past the ticket barrier, and boarded the express train.",
+      "In this lesson about Platforms, you will see the Train Platform, Ticket Machine, Train Conductor, Locomotive.",
+  },
+  {
+    id: "train-station-group-2",
+    name: "On the Train",
+    topicId: "train-station-2",
+    wordIds: ["railway-track", "passenger-car", "commuter-train", "timetable"],
+    description: "Learn vocabulary related to on the train.",
+    story:
+      "In this lesson about On the Train, you will see the Railway Track, Passenger Car, Commuter Train, Timetable.",
+  },
+  {
+    id: "train-station-group-3",
+    name: "Station Areas",
+    topicId: "train-station-3",
+    wordIds: ["station-clock", "waiting-room", "ticket-barrier", "express-train"],
+    description: "Learn vocabulary related to station areas.",
+    story:
+      "In this lesson about Station Areas, you will see the Station Clock, Waiting Room, Ticket Barrier, Express Train.",
   },
 ];
 
@@ -11881,25 +11891,30 @@ export const HOTEL_TOPICS: TopicCategory[] = [
 export const HOTEL_GROUPS: Lesson[] = [
   {
     id: "hotel-group-1",
-    name: "Reception & Suites",
+    name: "Check-in",
     topicId: "hotel-1",
-    wordIds: [
-      "hotel-reception",
-      "room-key",
-      "bellboy",
-      "hotel-lobby",
-      "room-service",
-      "housekeeping",
-      "hotel-safe",
-      "balcony-view",
-      "elevator",
-      "key-card",
-      "doorman",
-      "valet-parking",
-    ],
-    description: "Learn vocabulary for checking into hotels and suites.",
+    wordIds: ["hotel-reception", "room-key", "bellboy", "hotel-lobby"],
+    description: "Learn vocabulary related to check-in.",
     story:
-      "At hotel reception, we received our room key from the bellboy in the hotel lobby, ordered room service, thanked housekeeping, locked the hotel safe, admired the balcony view, took the elevator with our key card, greeted the doorman, and requested valet parking.",
+      "In this lesson about Check-in, you will see the Hotel Reception, Room Key, Bellboy, Hotel Lobby.",
+  },
+  {
+    id: "hotel-group-2",
+    name: "Room Details",
+    topicId: "hotel-2",
+    wordIds: ["room-service", "housekeeping", "hotel-safe", "balcony-view"],
+    description: "Learn vocabulary related to room details.",
+    story:
+      "In this lesson about Room Details, you will see the Room Service, Housekeeping, Hotel Safe, Balcony View.",
+  },
+  {
+    id: "hotel-group-3",
+    name: "Facilities",
+    topicId: "hotel-3",
+    wordIds: ["elevator", "key-card", "doorman", "valet-parking"],
+    description: "Learn vocabulary related to facilities.",
+    story:
+      "In this lesson about Facilities, you will see the Elevator, Key Card, Doorman, Valet Parking.",
   },
 ];
 
@@ -11912,25 +11927,30 @@ export const POST_OFFICE_TOPICS: TopicCategory[] = [
 export const POST_OFFICE_GROUPS: Lesson[] = [
   {
     id: "post-office-group-1",
-    name: "Mail & Packages",
+    name: "Letters & Mail",
     topicId: "post-office-1",
-    wordIds: [
-      "post-office",
-      "postage-stamp",
-      "envelope",
-      "mailbox",
-      "postal-worker",
-      "parcel",
-      "package-scale",
-      "tracking-number",
-      "post-card",
-      "delivery-truck",
-      "airmail",
-      "sorting-facility",
-    ],
-    description: "Learn essential vocabulary for shipping letters and parcels.",
+    wordIds: ["post-office", "postage-stamp", "envelope", "mailbox"],
+    description: "Learn vocabulary related to letters & mail.",
     story:
-      "Inside the post office, we bought a postage stamp for the envelope, dropped mail in the mailbox, spoke with the postal worker, weighed the parcel on the package scale, checked the tracking number on our postcard, saw the delivery truck bring airmail, and toured the sorting facility.",
+      "In this lesson about Letters & Mail, you will see the Post Office, Postage Stamp, Envelope, Mailbox.",
+  },
+  {
+    id: "post-office-group-2",
+    name: "Packages & Shipping",
+    topicId: "post-office-2",
+    wordIds: ["postal-worker", "parcel", "package-scale", "tracking-number"],
+    description: "Learn vocabulary related to packages & shipping.",
+    story:
+      "In this lesson about Packages & Shipping, you will see the Postal Worker, Parcel, Package Scale, Tracking Number.",
+  },
+  {
+    id: "post-office-group-3",
+    name: "Delivery Logistics",
+    topicId: "post-office-3",
+    wordIds: ["post-card", "delivery-truck", "airmail", "sorting-facility"],
+    description: "Learn vocabulary related to delivery logistics.",
+    story:
+      "In this lesson about Delivery Logistics, you will see the Postcard, Delivery Truck, Airmail, Sorting Facility.",
   },
 ];
 
@@ -11943,25 +11963,30 @@ export const BANK_TOPICS: TopicCategory[] = [
 export const BANK_GROUPS: Lesson[] = [
   {
     id: "bank-group-1",
-    name: "Banking & Savings",
+    name: "Banking Hall & Cash",
     topicId: "bank-1",
-    wordIds: [
-      "bank-branch",
-      "atm",
-      "teller-counter",
-      "credit-card",
-      "banknote",
-      "bank-vault",
-      "checking-account",
-      "deposit-slip",
-      "bank-statement",
-      "coin-jar",
-      "signature-pad",
-      "loan-officer",
-    ],
-    description: "Master transactions, accounts, cash withdrawals, and banking.",
+    wordIds: ["bank-branch", "atm", "teller-counter", "credit-card"],
+    description: "Learn vocabulary related to banking hall & cash.",
     story:
-      "At the bank branch, we visited the atm and teller counter, swiped our credit card, counted each banknote near the bank vault, opened a checking account with a deposit slip, reviewed the bank statement, emptied the coin jar, signed on the signature pad, and consulted the loan officer.",
+      "In this lesson about Banking Hall & Cash, you will see the Bank Branch, ATM, Teller Counter, Credit Card.",
+  },
+  {
+    id: "bank-group-2",
+    name: "Accounts & Vault",
+    topicId: "bank-2",
+    wordIds: ["banknote", "bank-vault", "checking-account", "deposit-slip"],
+    description: "Learn vocabulary related to accounts & vault.",
+    story:
+      "In this lesson about Accounts & Vault, you will see the Banknote, Bank Vault, Checking Account, Deposit Slip.",
+  },
+  {
+    id: "bank-group-3",
+    name: "Services & Savings",
+    topicId: "bank-3",
+    wordIds: ["bank-statement", "coin-jar", "signature-pad", "loan-officer"],
+    description: "Learn vocabulary related to services & savings.",
+    story:
+      "In this lesson about Services & Savings, you will see the Bank Statement, Coin Jar, Signature Pad, Loan Officer.",
   },
 ];
 
@@ -11974,25 +11999,30 @@ export const MUSEUM_TOPICS: TopicCategory[] = [
 export const MUSEUM_GROUPS: Lesson[] = [
   {
     id: "museum-group-1",
-    name: "Art & Archaeology",
+    name: "Art & Sculpture",
     topicId: "museum-1",
-    wordIds: [
-      "art-museum",
-      "ancient-artifact",
-      "oil-painting",
-      "marble-sculpture",
-      "museum-guide",
-      "exhibit-hall",
-      "glass-showcase",
-      "dinosaur-fossil",
-      "admission-ticket",
-      "audio-guide",
-      "antique-pottery",
-      "historical-plaque",
-    ],
-    description: "Explore world history, prehistoric fossils, and art.",
+    wordIds: ["art-museum", "ancient-artifact", "oil-painting", "marble-sculpture"],
+    description: "Learn vocabulary related to art & sculpture.",
     story:
-      "At the art museum, we saw an ancient artifact, an oil painting, and a marble sculpture, while the museum guide led us across the exhibit hall past a glass showcase and a dinosaur fossil, checking our admission ticket and audio guide near the antique pottery and historical plaque.",
+      "In this lesson about Art & Sculpture, you will see the Art Museum, Ancient Artifact, Oil Painting, Marble Sculpture.",
+  },
+  {
+    id: "museum-group-2",
+    name: "Exhibits & History",
+    topicId: "museum-2",
+    wordIds: ["museum-guide", "exhibit-hall", "glass-showcase", "dinosaur-fossil"],
+    description: "Learn vocabulary related to exhibits & history.",
+    story:
+      "In this lesson about Exhibits & History, you will see the Museum Guide, Exhibit Hall, Glass Showcase, Dinosaur Fossil.",
+  },
+  {
+    id: "museum-group-3",
+    name: "Visitor Experience",
+    topicId: "museum-3",
+    wordIds: ["admission-ticket", "audio-guide", "antique-pottery", "historical-plaque"],
+    description: "Learn vocabulary related to visitor experience.",
+    story:
+      "In this lesson about Visitor Experience, you will see the Admission Ticket, Audio Guide, Antique Pottery, Historical Plaque.",
   },
 ];
 
