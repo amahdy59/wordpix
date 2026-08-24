@@ -122,11 +122,20 @@ describe("Streak Management Engine", () => {
     expect(updated.lastActiveDate).toBe("2026-07-28");
   });
 
-  it("resets streak if more than 1 day missed", () => {
+  it("resets streak if more than 1 day missed without a freeze shield", () => {
     const state = { currentStreak: 10, lastActiveDate: "2026-07-20" };
     const today = new Date("2026-07-28");
     const updated = updateStreak(state, today);
     expect(updated.currentStreak).toBe(1);
+  });
+
+  it("consumes a streak freeze to protect a single missed day", () => {
+    const state = { currentStreak: 7, lastActiveDate: "2026-07-26", freezeAvailable: 1 };
+    const today = new Date("2026-07-28"); // missed 2026-07-27 (diffDays = 2)
+    const updated = updateStreak(state, today);
+    expect(updated.currentStreak).toBe(8);
+    expect(updated.freezeAvailable).toBe(0);
+    expect(updated.freezeUsed).toBe(true);
   });
 });
 

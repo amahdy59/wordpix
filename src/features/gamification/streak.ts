@@ -1,6 +1,8 @@
 export interface StreakState {
   currentStreak: number;
   lastActiveDate: string | null; // YYYY-MM-DD local format
+  freezeAvailable?: number;
+  freezeUsed?: boolean;
 }
 
 /**
@@ -37,7 +39,15 @@ export interface WeekDayActivity {
   isToday: boolean;
 }
 
-const WEEKDAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const WEEKDAY_NAMES = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 
 /**
  * Builds the trailing 7-day activity strip ending today, from real session
@@ -71,15 +81,13 @@ export function getWeekActivity(
 
 /**
  * Canonical streak updater using local calendar date.
+ * Supports streak freeze protection when missing a single day.
  */
-export function updateStreak(
-  state: StreakState,
-  today: Date = new Date()
-): StreakState {
+export function updateStreak(state: StreakState, today: Date = new Date()): StreakState {
   const todayStr = getLocalDateString(today);
 
   if (!state.lastActiveDate) {
-    return { currentStreak: 1, lastActiveDate: todayStr };
+    return { ...state, currentStreak: 1, lastActiveDate: todayStr, freezeUsed: false };
   }
 
   if (state.lastActiveDate === todayStr) {
@@ -90,14 +98,27 @@ export function updateStreak(
 
   if (diffDays === 1) {
     return {
+      ...state,
       currentStreak: state.currentStreak + 1,
       lastActiveDate: todayStr,
+      freezeUsed: false,
+    };
+  } else if (diffDays === 2 && (state.freezeAvailable ?? 0) > 0) {
+    // Single missed day saved by streak freeze shield!
+    return {
+      ...state,
+      currentStreak: state.currentStreak + 1,
+      lastActiveDate: todayStr,
+      freezeAvailable: (state.freezeAvailable ?? 1) - 1,
+      freezeUsed: true,
     };
   } else if (diffDays > 1) {
-    // Reset streak if missed 1+ days
+    // Reset streak if missed 1+ days and no shield available
     return {
+      ...state,
       currentStreak: 1,
       lastActiveDate: todayStr,
+      freezeUsed: false,
     };
   }
 

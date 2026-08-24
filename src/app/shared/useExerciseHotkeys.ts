@@ -20,6 +20,8 @@ interface Options {
   onSelectIndex: (index: number) => void;
   /** Optional replay-audio action, bound to R and to Space when nothing is focused. */
   onReplayAudio?: () => void;
+  /** Optional action to toggle keyboard shortcuts cheatsheet modal (?) */
+  onToggleHelp?: () => void;
   /** Suspend all hotkeys, e.g. while a modal owns the keyboard. */
   disabled?: boolean;
 }
@@ -37,14 +39,15 @@ export function useExerciseHotkeys({
   optionCount,
   onSelectIndex,
   onReplayAudio,
+  onToggleHelp,
   disabled = false,
 }: Options) {
   // Held in refs so re-created callbacks do not detach and re-attach the
   // listener on every render.
-  const handlers = useRef({ onSelectIndex, onReplayAudio, optionCount });
+  const handlers = useRef({ onSelectIndex, onReplayAudio, onToggleHelp, optionCount });
   useEffect(() => {
-    handlers.current = { onSelectIndex, onReplayAudio, optionCount };
-  }, [onSelectIndex, onReplayAudio, optionCount]);
+    handlers.current = { onSelectIndex, onReplayAudio, onToggleHelp, optionCount };
+  }, [onSelectIndex, onReplayAudio, onToggleHelp, optionCount]);
 
   useEffect(() => {
     if (disabled) return undefined;
@@ -52,7 +55,18 @@ export function useExerciseHotkeys({
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.repeat || hasModifier(event) || isTextEntryTarget(event.target)) return;
 
-      const { onSelectIndex: select, onReplayAudio: replay, optionCount: count } = handlers.current;
+      const {
+        onSelectIndex: select,
+        onReplayAudio: replay,
+        onToggleHelp: toggleHelp,
+        optionCount: count,
+      } = handlers.current;
+
+      if (toggleHelp && (event.key === "?" || (event.shiftKey && event.key === "/"))) {
+        event.preventDefault();
+        toggleHelp();
+        return;
+      }
 
       if (replay) {
         const focusIsOnAControl =

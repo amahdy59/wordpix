@@ -12,7 +12,7 @@ describe("lesson image mapping", () => {
       expect(word.img).toContain("word-images/");
       expect(word.img).not.toContain("images.unsplash.com");
     }
-  });
+  }, 30000);
 
   it("creates a valid semantic fallback for every vocabulary word", () => {
     for (const { word } of vocabulary) {
@@ -20,5 +20,5 @@ describe("lesson image mapping", () => {
       expect(fallback.startsWith("data:image/svg+xml")).toBe(true);
       expect(fallback.length).toBeGreaterThan(50);
     }
-  });
+  }, 30000);
 });

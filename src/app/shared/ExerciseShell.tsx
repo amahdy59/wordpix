@@ -4,6 +4,7 @@ import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { LessonHeader } from "./LessonHeader";
 import { HomeIndicator } from "./HomeIndicator";
 import { ExitConfirmModal } from "./ExitConfirmModal";
+import { KeyboardShortcutsModal } from "./KeyboardShortcutsModal";
 
 export type ExerciseMode = "teach" | "guided" | "retrieval" | "assessment";
 
@@ -48,6 +49,7 @@ export const ExerciseShell = memo(function ExerciseShell({
   progress,
 }: Props) {
   const [showExitModal, setShowExitModal] = useState(false);
+  const [showShortcutsModal, setShowShortcutsModal] = useState(false);
 
   // `lessonId` used to default to "essential-furniture" and fall back to the
   // first group on an unknown id, so a review session — or any lesson whose id
@@ -72,6 +74,10 @@ export const ExerciseShell = memo(function ExerciseShell({
           setShowExitModal(false);
           dispatch({ type: "GO", to: "home" });
         }}
+      />
+      <KeyboardShortcutsModal
+        isOpen={showShortcutsModal}
+        onClose={() => setShowShortcutsModal(false)}
       />
 
       {/* ── RIGHT PANEL: Desktop & Mobile Exercise Main View ────────────────── */}
