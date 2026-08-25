@@ -63,9 +63,11 @@ permissions:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    # A full run fetches roughly ten thousand images; the default 360 minutes
-    # is plenty, but be explicit so a hung fetch cannot idle for six hours.
-    timeout-minutes: 120
+    # A full run fetches roughly ten thousand images and encodes every one of
+    # them to AVIF, which is several times slower than the webp it replaced.
+    # The webp import finished inside two hours; this needs the headroom, and
+    # 350 still stops a hung fetch short of the six-hour ceiling.
+    timeout-minutes: 350
     steps:
       - name: Checkout
         uses: actions/checkout@v4
