@@ -16,6 +16,7 @@
  *   --force         re-download assets that already exist locally
  *   --dry-run       report what would happen, write nothing
  *   --concurrency N parallel downloads (default 6)
+ *   --include-new   also fetch units Figma has that the app does not
  *   --max-width N   downscale card artwork wider than this (default 480)
  *   --scene-width N downscale scene artwork wider than this (default 1600)
  *
@@ -25,7 +26,7 @@
  * existence check would happily treat as done.
  */
 
-import { mkdir, open, writeFile } from "node:fs/promises";
+import { mkdir, open, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -41,6 +42,16 @@ const API = "https://api.figma.com/v1";
  */
 const FIGMA_EXPORT_FORMAT = "png";
 
+/**
+ * A frame is a content unit only if it holds this many cards.
+ *
+ * The file mixes vocabulary units with design-system, wireframe and flow
+ * frames. Measured across the whole document the two populations do not
+ * overlap: every frame matching an app unit carries at least 40 cards, while
+ * every design frame carries 15 or fewer. Twenty sits in the gap.
+ */
+const MIN_CARDS_FOR_UNIT = 20;
+
 const args = process.argv.slice(2);
 const has = (flag) => args.includes(flag);
 const valuesOf = (flag) =>
@@ -52,6 +63,7 @@ const OPTS = {
   force: has("--force"),
   dryRun: has("--dry-run"),
   units: valuesOf("--unit"),
+  includeNew: has("--include-new"),
   concurrency: Number(valuesOf("--concurrency")[0] ?? 6),
   // Cards render at 214x128 CSS, so 480 covers a 2x display with room to
   // spare. Measured on real artwork: 480 averages ~33 KB per card against
@@ -103,6 +115,42 @@ async function pooled(items, limit, worker) {
 
 const slug = (s) =>
   s.trim().toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+/**
+ * Maps a Figma frame name onto the unit id the app already uses.
+ *
+ * Figma has moved on since the app was generated, so the two sides disagree
+ * about names in ways that are cosmetic but fatal to an image import: Figma
+ * writes "Tech & Gadgets" where the app has `tech-gadgets`, and prefixes some
+ * frames with a level ("l5-hospital"). Writing artwork under the Figma name
+ * would fill directories `lessons.ts` never reads — the unit would still show
+ * placeholders, with the download paid for anyway.
+ *
+ * Canonicalising both sides to letters and digits, minus a leading article,
+ * a level prefix and the word "and", matches 181 of the app's 182 units.
+ */
+function canonicalKey(value) {
+  return value
+    .toLowerCase()
+    .replace(/^the[\s-]+/, "")
+    .replace(/^l\d+[\s-]+/, "")
+    .replace(/\band\b/g, "")
+    .replace(/[^a-z0-9]/g, "");
+}
+
+/** Unit ids registered in the app, read from the vocabulary data layer. */
+async function readAppUnitIds() {
+  try {
+    const source = await readFile(join(ROOT, "src", "app", "data", "lessons.ts"), "utf8");
+    const start = source.indexOf("export const COURSE_UNITS");
+    if (start === -1) return new Map();
+    const body = source.slice(start, source.indexOf("\nexport const COURSE_MODULES", start));
+    const ids = [...body.matchAll(/^ {2}"?([a-zA-Z0-9_-]+)"?: \{/gm)].map((m) => m[1]);
+    return new Map(ids.map((id) => [canonicalKey(id), id]));
+  } catch {
+    return new Map();
+  }
+}
 
 /** Depth-first walk over a Figma node tree. */
 function* walk(node, depth = 0) {
@@ -311,8 +359,45 @@ async function main() {
   const frames = pages.flatMap((p) => p.children ?? []);
   let units = pairFrames(frames);
 
+  const appUnits = await readAppUnitIds();
+  const discovered = units.length;
+
+  // Drop design-system, wireframe and flow frames, then resolve each remaining
+  // frame onto the app's own id so artwork lands where lessons.ts reads it.
+  units = units.filter((u) => {
+    const cardCount = collectCards(u.unitNode).filter((c) => c.kind === "card").length;
+    u.cardCount = cardCount;
+    return cardCount >= MIN_CARDS_FOR_UNIT;
+  });
+
+  const newUnits = [];
+  for (const unit of units) {
+    const appId = appUnits.get(canonicalKey(unit.id));
+    if (appId) {
+      unit.appId = appId;
+      unit.id = appId;
+    } else {
+      newUnits.push(unit);
+    }
+  }
+
+  if (!OPTS.includeNew && newUnits.length) {
+    units = units.filter((u) => u.appId);
+  }
+
   if (OPTS.units.length) units = units.filter((u) => OPTS.units.includes(u.id));
-  console.log(`Found ${units.length} unit frame(s).`);
+
+  console.log(
+    `Discovered ${discovered} frame(s); ${units.length} unit(s) selected ` +
+      `(${discovered - units.length} skipped as non-units, unmapped or filtered).`
+  );
+  if (newUnits.length) {
+    console.log(
+      `${newUnits.length} unit(s) exist in Figma but not in the app` +
+        `${OPTS.includeNew ? " (included)" : " — skipped, pass --include-new to fetch them"}:`
+    );
+    for (const u of newUnits) console.log(`  ${u.id} (${u.cardCount} cards)`);
+  }
 
   const totals = { downloaded: 0, skipped: 0, materials: 0 };
 
