@@ -1,0 +1,1693 @@
+{
+  "unitId": "construction-site",
+  "name": "The Construction Site",
+  "subtopics": [
+    {
+      "id": "heavy-machinery",
+      "title": "Heavy Machinery",
+      "wordIds": [
+        "crane",
+        "bulldozer",
+        "excavator",
+        "dump-truck",
+        "cement-mixer",
+        "forklift",
+        "steamroller",
+        "backhoe",
+        "pile-driver",
+        "boom-lift"
+      ]
+    },
+    {
+      "id": "building-materials",
+      "title": "Building Materials",
+      "wordIds": [
+        "brick",
+        "cement",
+        "steel-beam",
+        "plywood",
+        "glass-pane",
+        "pipe",
+        "cable",
+        "bolt",
+        "nail",
+        "screw",
+        "rebar",
+        "drywall"
+      ]
+    },
+    {
+      "id": "hand-tools",
+      "title": "Hand Tools",
+      "wordIds": [
+        "hammer",
+        "wrench",
+        "screwdriver",
+        "drill",
+        "saw",
+        "tape-measure",
+        "level",
+        "pliers",
+        "chisel",
+        "utility-knife",
+        "allen-key",
+        "socket-set"
+      ]
+    },
+    {
+      "id": "safety-equipment",
+      "title": "Safety Equipment",
+      "wordIds": [
+        "hard-hat",
+        "safety-vest",
+        "steel-toe-boots",
+        "safety-goggles",
+        "ear-plugs",
+        "dust-mask",
+        "harness",
+        "safety-net",
+        "caution-tape",
+        "traffic-cone"
+      ]
+    },
+    {
+      "id": "site-features",
+      "title": "Site Features",
+      "wordIds": [
+        "scaffolding",
+        "foundation",
+        "frame",
+        "roof-truss",
+        "concrete-slab",
+        "ramp",
+        "fence",
+        "gate",
+        "container",
+        "portable-toilet"
+      ]
+    },
+    {
+      "id": "construction-workers",
+      "title": "Construction Workers",
+      "wordIds": [
+        "architect",
+        "engineer",
+        "foreman",
+        "electrician",
+        "plumber",
+        "carpenter",
+        "bricklayer",
+        "painter",
+        "welder",
+        "crane-operator",
+        "steel",
+        "wood",
+        "glass",
+        "blueprint"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "crane",
+      "label": "Crane",
+      "ipa": "/kreɪn/",
+      "cefr": "A2",
+      "imageNodeId": "44:7999"
+    },
+    {
+      "kind": "card",
+      "id": "bulldozer",
+      "label": "Bulldozer",
+      "ipa": "/ˈbʊlˌdoʊzər/",
+      "cefr": "A2",
+      "imageNodeId": "44:8003"
+    },
+    {
+      "kind": "card",
+      "id": "excavator",
+      "label": "Excavator",
+      "ipa": "/ˈɛkskəˌveɪtər/",
+      "cefr": "A2",
+      "imageNodeId": "44:8007"
+    },
+    {
+      "kind": "card",
+      "id": "dump-truck",
+      "label": "Dump Truck",
+      "ipa": "/dʌmp trʌk/",
+      "cefr": "B1",
+      "imageNodeId": "44:8011"
+    },
+    {
+      "kind": "card",
+      "id": "cement-mixer",
+      "label": "Cement Mixer",
+      "ipa": "/sɪˈmɛnt ˈmɪksər/",
+      "cefr": "B1",
+      "imageNodeId": "44:8015"
+    },
+    {
+      "kind": "card",
+      "id": "forklift",
+      "label": "Forklift",
+      "ipa": "/ˈfɔːrkˌlɪft/",
+      "cefr": "A2",
+      "imageNodeId": "44:8019"
+    },
+    {
+      "kind": "card",
+      "id": "steamroller",
+      "label": "Steamroller",
+      "ipa": "/ˈstiːmˌroʊlər/",
+      "cefr": "B1",
+      "imageNodeId": "44:8023"
+    },
+    {
+      "kind": "card",
+      "id": "backhoe",
+      "label": "Backhoe",
+      "ipa": "/ˈbækˌhoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "44:8027"
+    },
+    {
+      "kind": "card",
+      "id": "pile-driver",
+      "label": "Pile Driver",
+      "ipa": "/paɪl ˈdraɪvər/",
+      "cefr": "B1",
+      "imageNodeId": "44:8031"
+    },
+    {
+      "kind": "card",
+      "id": "boom-lift",
+      "label": "Boom Lift",
+      "ipa": "/buːm lɪft/",
+      "cefr": "B1",
+      "imageNodeId": "44:8035"
+    },
+    {
+      "kind": "card",
+      "id": "brick",
+      "label": "Brick",
+      "ipa": "/brɪk/",
+      "cefr": "A2",
+      "imageNodeId": "44:8044"
+    },
+    {
+      "kind": "card",
+      "id": "cement",
+      "label": "Cement",
+      "ipa": "/sɪˈmɛnt/",
+      "cefr": "A2",
+      "imageNodeId": "44:8048"
+    },
+    {
+      "kind": "card",
+      "id": "steel-beam",
+      "label": "Steel Beam",
+      "ipa": "/stiːl biːm/",
+      "cefr": "B1",
+      "imageNodeId": "44:8052"
+    },
+    {
+      "kind": "card",
+      "id": "plywood",
+      "label": "Plywood",
+      "ipa": "/ˈplaɪˌwʊd/",
+      "cefr": "A2",
+      "imageNodeId": "44:8056"
+    },
+    {
+      "kind": "card",
+      "id": "glass-pane",
+      "label": "Glass Pane",
+      "ipa": "/ɡlæs peɪn/",
+      "cefr": "B1",
+      "imageNodeId": "44:8060"
+    },
+    {
+      "kind": "card",
+      "id": "pipe",
+      "label": "Pipe",
+      "ipa": "/paɪp/",
+      "cefr": "A2",
+      "imageNodeId": "44:8064"
+    },
+    {
+      "kind": "card",
+      "id": "cable",
+      "label": "Cable",
+      "ipa": "/ˈkeɪbəl/",
+      "cefr": "A2",
+      "imageNodeId": "44:8068"
+    },
+    {
+      "kind": "card",
+      "id": "bolt",
+      "label": "Bolt",
+      "ipa": "/boʊlt/",
+      "cefr": "A2",
+      "imageNodeId": "44:8072"
+    },
+    {
+      "kind": "card",
+      "id": "nail",
+      "label": "Nail",
+      "ipa": "/neɪl/",
+      "cefr": "A2",
+      "imageNodeId": "44:8076"
+    },
+    {
+      "kind": "card",
+      "id": "screw",
+      "label": "Screw",
+      "ipa": "/skruː/",
+      "cefr": "A2",
+      "imageNodeId": "44:8080"
+    },
+    {
+      "kind": "card",
+      "id": "rebar",
+      "label": "Rebar",
+      "ipa": "/ˈriːˌbɑːr/",
+      "cefr": "A2",
+      "imageNodeId": "44:8084"
+    },
+    {
+      "kind": "card",
+      "id": "drywall",
+      "label": "Drywall",
+      "ipa": "/ˈdraɪˌwɔːl/",
+      "cefr": "A2",
+      "imageNodeId": "44:8088"
+    },
+    {
+      "kind": "card",
+      "id": "hammer",
+      "label": "Hammer",
+      "ipa": "/ˈhæmər/",
+      "cefr": "A2",
+      "imageNodeId": "44:8097"
+    },
+    {
+      "kind": "card",
+      "id": "wrench",
+      "label": "Wrench",
+      "ipa": "/rɛntʃ/",
+      "cefr": "A2",
+      "imageNodeId": "44:8101"
+    },
+    {
+      "kind": "card",
+      "id": "screwdriver",
+      "label": "Screwdriver",
+      "ipa": "/ˈskruːˌdraɪvər/",
+      "cefr": "B1",
+      "imageNodeId": "44:8105"
+    },
+    {
+      "kind": "card",
+      "id": "drill",
+      "label": "Drill",
+      "ipa": "/drɪl/",
+      "cefr": "A2",
+      "imageNodeId": "44:8109"
+    },
+    {
+      "kind": "card",
+      "id": "saw",
+      "label": "Saw",
+      "ipa": "/sɔː/",
+      "cefr": "A2",
+      "imageNodeId": "44:8113"
+    },
+    {
+      "kind": "card",
+      "id": "tape-measure",
+      "label": "Tape Measure",
+      "ipa": "/teɪp ˈmɛʒər/",
+      "cefr": "B1",
+      "imageNodeId": "44:8117"
+    },
+    {
+      "kind": "card",
+      "id": "level",
+      "label": "Level",
+      "ipa": "/ˈlɛvəl/",
+      "cefr": "A2",
+      "imageNodeId": "44:8121"
+    },
+    {
+      "kind": "card",
+      "id": "pliers",
+      "label": "Pliers",
+      "ipa": "/ˈplaɪərz/",
+      "cefr": "A2",
+      "imageNodeId": "44:8125"
+    },
+    {
+      "kind": "card",
+      "id": "chisel",
+      "label": "Chisel",
+      "ipa": "/ˈtʃɪzəl/",
+      "cefr": "A2",
+      "imageNodeId": "44:8129"
+    },
+    {
+      "kind": "card",
+      "id": "utility-knife",
+      "label": "Utility Knife",
+      "ipa": "/juːˈtɪlɪti naɪf/",
+      "cefr": "B1",
+      "imageNodeId": "44:8133"
+    },
+    {
+      "kind": "card",
+      "id": "allen-key",
+      "label": "Allen Key",
+      "ipa": "/ˈælən kiː/",
+      "cefr": "B1",
+      "imageNodeId": "44:8137"
+    },
+    {
+      "kind": "card",
+      "id": "socket-set",
+      "label": "Socket Set",
+      "ipa": "/ˈsɒkɪt sɛt/",
+      "cefr": "B1",
+      "imageNodeId": "44:8141"
+    },
+    {
+      "kind": "card",
+      "id": "hard-hat",
+      "label": "Hard Hat",
+      "ipa": "/hɑːrd hæt/",
+      "cefr": "B1",
+      "imageNodeId": "44:8150"
+    },
+    {
+      "kind": "card",
+      "id": "safety-vest",
+      "label": "Safety Vest",
+      "ipa": "/ˈseɪfti vɛst/",
+      "cefr": "B1",
+      "imageNodeId": "44:8154"
+    },
+    {
+      "kind": "card",
+      "id": "steel-toe-boots",
+      "label": "Steel-Toe Boots",
+      "ipa": "/stiːl toʊ buːts/",
+      "cefr": "B2",
+      "imageNodeId": "44:8158"
+    },
+    {
+      "kind": "card",
+      "id": "safety-goggles",
+      "label": "Safety Goggles",
+      "ipa": "/ˈseɪfti ˈɡɒɡəlz/",
+      "cefr": "B1",
+      "imageNodeId": "44:8162"
+    },
+    {
+      "kind": "card",
+      "id": "ear-plugs",
+      "label": "Ear Plugs",
+      "ipa": "/ɪər plʌɡz/",
+      "cefr": "B1",
+      "imageNodeId": "44:8166"
+    },
+    {
+      "kind": "card",
+      "id": "dust-mask",
+      "label": "Dust Mask",
+      "ipa": "/dʌst mæsk/",
+      "cefr": "B1",
+      "imageNodeId": "44:8170"
+    },
+    {
+      "kind": "card",
+      "id": "harness",
+      "label": "Harness",
+      "ipa": "/ˈhɑːrnɪs/",
+      "cefr": "A2",
+      "imageNodeId": "44:8174"
+    },
+    {
+      "kind": "card",
+      "id": "safety-net",
+      "label": "Safety Net",
+      "ipa": "/ˈseɪfti nɛt/",
+      "cefr": "B1",
+      "imageNodeId": "44:8178"
+    },
+    {
+      "kind": "card",
+      "id": "caution-tape",
+      "label": "Caution Tape",
+      "ipa": "/ˈkɔːʃən teɪp/",
+      "cefr": "B1",
+      "imageNodeId": "44:8182"
+    },
+    {
+      "kind": "card",
+      "id": "traffic-cone",
+      "label": "Traffic Cone",
+      "ipa": "/ˈtræfɪk koʊn/",
+      "cefr": "B1",
+      "imageNodeId": "44:8186"
+    },
+    {
+      "kind": "card",
+      "id": "scaffolding",
+      "label": "Scaffolding",
+      "ipa": "/ˈskæfəldɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "44:8195"
+    },
+    {
+      "kind": "card",
+      "id": "foundation",
+      "label": "Foundation",
+      "ipa": "/faʊnˈdeɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "44:8199"
+    },
+    {
+      "kind": "card",
+      "id": "frame",
+      "label": "Frame",
+      "ipa": "/freɪm/",
+      "cefr": "A2",
+      "imageNodeId": "44:8203"
+    },
+    {
+      "kind": "card",
+      "id": "roof-truss",
+      "label": "Roof Truss",
+      "ipa": "/ruːf trʌs/",
+      "cefr": "B1",
+      "imageNodeId": "44:8207"
+    },
+    {
+      "kind": "card",
+      "id": "concrete-slab",
+      "label": "Concrete Slab",
+      "ipa": "/ˈkɒŋkriːt slæb/",
+      "cefr": "B1",
+      "imageNodeId": "44:8211"
+    },
+    {
+      "kind": "card",
+      "id": "ramp",
+      "label": "Ramp",
+      "ipa": "/ræmp/",
+      "cefr": "A2",
+      "imageNodeId": "44:8215"
+    },
+    {
+      "kind": "card",
+      "id": "fence",
+      "label": "Fence",
+      "ipa": "/fɛns/",
+      "cefr": "A2",
+      "imageNodeId": "44:8219"
+    },
+    {
+      "kind": "card",
+      "id": "gate",
+      "label": "Gate",
+      "ipa": "/ɡeɪt/",
+      "cefr": "A2",
+      "imageNodeId": "44:8223"
+    },
+    {
+      "kind": "card",
+      "id": "container",
+      "label": "Container",
+      "ipa": "/kənˈteɪnər/",
+      "cefr": "A2",
+      "imageNodeId": "44:8227"
+    },
+    {
+      "kind": "card",
+      "id": "portable-toilet",
+      "label": "Portable Toilet",
+      "ipa": "/ˈpɔːrtəbəl ˈtɔɪlɪt/",
+      "cefr": "B2",
+      "imageNodeId": "44:8231"
+    },
+    {
+      "kind": "card",
+      "id": "architect",
+      "label": "Architect",
+      "ipa": "/ˈɑːrkɪˌtɛkt/",
+      "cefr": "A2",
+      "imageNodeId": "44:8240"
+    },
+    {
+      "kind": "card",
+      "id": "engineer",
+      "label": "Engineer",
+      "ipa": "/ˌɛndʒɪˈnɪər/",
+      "cefr": "A2",
+      "imageNodeId": "44:8244"
+    },
+    {
+      "kind": "card",
+      "id": "foreman",
+      "label": "Foreman",
+      "ipa": "/ˈfɔːrmən/",
+      "cefr": "A2",
+      "imageNodeId": "44:8248"
+    },
+    {
+      "kind": "card",
+      "id": "electrician",
+      "label": "Electrician",
+      "ipa": "/ɪˌlɛkˈtrɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "44:8252"
+    },
+    {
+      "kind": "card",
+      "id": "plumber",
+      "label": "Plumber",
+      "ipa": "/ˈplʌmər/",
+      "cefr": "A2",
+      "imageNodeId": "44:8256"
+    },
+    {
+      "kind": "card",
+      "id": "carpenter",
+      "label": "Carpenter",
+      "ipa": "/ˈkɑːrpəntər/",
+      "cefr": "A2",
+      "imageNodeId": "44:8260"
+    },
+    {
+      "kind": "card",
+      "id": "bricklayer",
+      "label": "Bricklayer",
+      "ipa": "/ˈbrɪkˌleɪər/",
+      "cefr": "B1",
+      "imageNodeId": "44:8264"
+    },
+    {
+      "kind": "card",
+      "id": "painter",
+      "label": "Painter",
+      "ipa": "/ˈpeɪntər/",
+      "cefr": "A2",
+      "imageNodeId": "44:8268"
+    },
+    {
+      "kind": "card",
+      "id": "welder",
+      "label": "Welder",
+      "ipa": "/ˈwɛldər/",
+      "cefr": "A2",
+      "imageNodeId": "44:8272"
+    },
+    {
+      "kind": "card",
+      "id": "crane-operator",
+      "label": "Crane Operator",
+      "ipa": "/kreɪn ˈɒpəˌreɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "44:8276"
+    },
+    {
+      "kind": "card",
+      "id": "steel",
+      "label": "Steel",
+      "ipa": "/stiːl/",
+      "cefr": "A2",
+      "imageNodeId": "39:3284"
+    },
+    {
+      "kind": "card",
+      "id": "wood",
+      "label": "Wood",
+      "ipa": "/wʊd/",
+      "cefr": "A2",
+      "imageNodeId": "39:3288"
+    },
+    {
+      "kind": "card",
+      "id": "glass",
+      "label": "Glass",
+      "ipa": "/ɡlæs/",
+      "cefr": "A2",
+      "imageNodeId": "39:3292"
+    },
+    {
+      "kind": "card",
+      "id": "blueprint",
+      "label": "Blueprint",
+      "ipa": "/ˈbluːˌprɪnt/",
+      "cefr": "A2",
+      "imageNodeId": "39:3339"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "547:2508",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "547:2510",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1 · Topic: The Construction Site",
+          "depth": 1,
+          "name": "Level: B1 · Topic: The Construction Site"
+        },
+        {
+          "text": "Building a New School\n\nA new primary school is being built on our street. The construction site has been busy for several months, and I often watch the workers from my bedroom window.\n\nBefore building started, the construction company put up a tall fence around the site with warning signs that said 'Danger — Construction Site — Keep Out' and 'Hard Hats Must Be Worn'. Inside the fence, bulldozers cleared the land and excavators dug deep trenches for the foundations.\n\nThe foundations are the most important part of any building. Workers poured concrete into the trenches and let it set for several days. Once the foundations were solid, they started building the walls using bricks and cement.\n\nA large crane stands in the middle of the site. It lifts heavy steel beams and pallets of bricks to the upper floors. The crane operator sits in a small cabin at the very top — it must be an amazing view!\n\nThe workers wear personal protective equipment: hard hats, high-visibility jackets, steel-toed boots, and sometimes ear protection because of the loud machinery. Safety is very important on a construction site.\n\nI noticed that different workers do different jobs. Bricklayers build the walls, electricians install the wiring, plumbers fit the pipes and water systems, and carpenters work with wood for the doors and window frames.\n\nThe project manager told my father that the school should be finished by next September. I cannot wait to see the completed building. It is fascinating to watch something being built from nothing.",
+          "depth": 1,
+          "name": "Building a New School A new primary school is being built on our street. The construction site has been busy for several months, and I often watch the workers from my bedroom window. Before building started, the construction company put up a tall fence around the site with warning signs that said 'Danger — Construction Site — Keep Out' and 'Hard Hats Must Be Worn'. Inside the fence, bulldozers cleared the land and excavators dug deep trenches for the foundations. The foundations are the most important part of any building. Workers poured concrete into the trenches and let it set for several days. Once the foundations were solid, they started building the walls using bricks and cement. A large crane stands in the middle of the site. It lifts heavy steel beams and pallets of bricks to the upper floors. The crane operator sits in a small cabin at the very top — it must be an amazing view! The workers wear personal protective equipment: hard hats, high-visibility jackets, steel-toed boots, and sometimes ear protection because of the loud machinery. Safety is very important on a construction site. I noticed that different workers do different jobs. Bricklayers build the walls, electricians install the wiring, plumbers fit the pipes and water systems, and carpenters work with wood for the doors and window frames. The project manager told my father that the school should be finished by next September. I cannot wait to see the completed building. It is fascinating to watch something being built from nothing."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What safety signs were displayed around the site?",
+          "depth": 1,
+          "name": "1. What safety signs were displayed around the site?"
+        },
+        {
+          "text": "2. Why are foundations important?",
+          "depth": 1,
+          "name": "2. Why are foundations important?"
+        },
+        {
+          "text": "3. What does the crane do on the construction site?",
+          "depth": 1,
+          "name": "3. What does the crane do on the construction site?"
+        },
+        {
+          "text": "4. What protective equipment do the workers wear?",
+          "depth": 1,
+          "name": "4. What protective equipment do the workers wear?"
+        },
+        {
+          "text": "5. Name three types of construction workers mentioned in the text.",
+          "depth": 1,
+          "name": "5. Name three types of construction workers mentioned in the text."
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "547:2523",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "build from the ground up",
+          "depth": 2,
+          "name": "build from the ground up"
+        },
+        {
+          "text": "create something from nothing",
+          "depth": 2,
+          "name": "create something from nothing"
+        },
+        {
+          "text": "\"They built the company from the ground up.\"",
+          "depth": 2,
+          "name": "\"They built the company from the ground up.\""
+        },
+        {
+          "text": "lay the foundations",
+          "depth": 2,
+          "name": "lay the foundations"
+        },
+        {
+          "text": "establish the basis for something",
+          "depth": 2,
+          "name": "establish the basis for something"
+        },
+        {
+          "text": "\"Good reading habits lay the foundations for academic success.\"",
+          "depth": 2,
+          "name": "\"Good reading habits lay the foundations for academic success.\""
+        },
+        {
+          "text": "hit the nail on the head",
+          "depth": 2,
+          "name": "hit the nail on the head"
+        },
+        {
+          "text": "say or do exactly the right thing",
+          "depth": 2,
+          "name": "say or do exactly the right thing"
+        },
+        {
+          "text": "\"You hit the nail on the head with that answer.\"",
+          "depth": 2,
+          "name": "\"You hit the nail on the head with that answer.\""
+        },
+        {
+          "text": "a hard hat area",
+          "depth": 2,
+          "name": "a hard hat area"
+        },
+        {
+          "text": "a place where safety precautions are needed",
+          "depth": 2,
+          "name": "a place where safety precautions are needed"
+        },
+        {
+          "text": "\"This whole floor is a hard hat area during renovation.\"",
+          "depth": 2,
+          "name": "\"This whole floor is a hard hat area during renovation.\""
+        },
+        {
+          "text": "build up",
+          "depth": 2,
+          "name": "build up"
+        },
+        {
+          "text": "increase gradually",
+          "depth": 2,
+          "name": "increase gradually"
+        },
+        {
+          "text": "\"You need to build up your vocabulary before the exam.\"",
+          "depth": 2,
+          "name": "\"You need to build up your vocabulary before the exam.\""
+        },
+        {
+          "text": "knock down / tear down",
+          "depth": 2,
+          "name": "knock down / tear down"
+        },
+        {
+          "text": "demolish a building",
+          "depth": 2,
+          "name": "demolish a building"
+        },
+        {
+          "text": "\"They knocked down the old factory to build flats.\"",
+          "depth": 2,
+          "name": "\"They knocked down the old factory to build flats.\""
+        },
+        {
+          "text": "put up",
+          "depth": 2,
+          "name": "put up"
+        },
+        {
+          "text": "construct or erect something",
+          "depth": 2,
+          "name": "construct or erect something"
+        },
+        {
+          "text": "\"They put up the scaffolding in just one morning.\"",
+          "depth": 2,
+          "name": "\"They put up the scaffolding in just one morning.\""
+        },
+        {
+          "text": "back to square one",
+          "depth": 2,
+          "name": "back to square one"
+        },
+        {
+          "text": "start again from the beginning",
+          "depth": 2,
+          "name": "start again from the beginning"
+        },
+        {
+          "text": "\"The plan failed, so we're back to square one.\"",
+          "depth": 2,
+          "name": "\"The plan failed, so we're back to square one.\""
+        },
+        {
+          "text": "under construction",
+          "depth": 2,
+          "name": "under construction"
+        },
+        {
+          "text": "being built or repaired",
+          "depth": 2,
+          "name": "being built or repaired"
+        },
+        {
+          "text": "\"The road is under construction until March.\"",
+          "depth": 2,
+          "name": "\"The road is under construction until March.\""
+        },
+        {
+          "text": "on solid ground",
+          "depth": 2,
+          "name": "on solid ground"
+        },
+        {
+          "text": "in a safe, secure position",
+          "depth": 2,
+          "name": "in a safe, secure position"
+        },
+        {
+          "text": "\"After months of planning, the project is finally on solid ground.\"",
+          "depth": 2,
+          "name": "\"After months of planning, the project is finally on solid ground.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "547:2567",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A site manager talking to a visitor",
+          "depth": 1,
+          "name": "Scene: A site manager talking to a visitor"
+        },
+        {
+          "text": "Manager:",
+          "depth": 2,
+          "name": "Manager:"
+        },
+        {
+          "text": "Welcome to the site. Before we go in, you'll need a hard hat and a high-vis jacket.",
+          "depth": 2,
+          "name": "Welcome to the site. Before we go in, you'll need a hard hat and a high-vis jacket."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "Thank you. How long has the project been going on?",
+          "depth": 2,
+          "name": "Thank you. How long has the project been going on?"
+        },
+        {
+          "text": "Manager:",
+          "depth": 2,
+          "name": "Manager:"
+        },
+        {
+          "text": "We started six months ago. The foundations took about eight weeks.",
+          "depth": 2,
+          "name": "We started six months ago. The foundations took about eight weeks."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "What stage are you at now?",
+          "depth": 2,
+          "name": "What stage are you at now?"
+        },
+        {
+          "text": "Manager:",
+          "depth": 2,
+          "name": "Manager:"
+        },
+        {
+          "text": "We've finished the ground floor walls. The bricklayers are working on the first floor.",
+          "depth": 2,
+          "name": "We've finished the ground floor walls. The bricklayers are working on the first floor."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "What's that large machine over there?",
+          "depth": 2,
+          "name": "What's that large machine over there?"
+        },
+        {
+          "text": "Manager:",
+          "depth": 2,
+          "name": "Manager:"
+        },
+        {
+          "text": "That's the excavator. We used it to dig the trenches for the drainage pipes.",
+          "depth": 2,
+          "name": "That's the excavator. We used it to dig the trenches for the drainage pipes."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "And the crane?",
+          "depth": 2,
+          "name": "And the crane?"
+        },
+        {
+          "text": "Manager:",
+          "depth": 2,
+          "name": "Manager:"
+        },
+        {
+          "text": "The crane lifts heavy materials to the upper levels. It can carry up to five tonnes.",
+          "depth": 2,
+          "name": "The crane lifts heavy materials to the upper levels. It can carry up to five tonnes."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "When will the school be ready?",
+          "depth": 2,
+          "name": "When will the school be ready?"
+        },
+        {
+          "text": "Manager:",
+          "depth": 2,
+          "name": "Manager:"
+        },
+        {
+          "text": "We're aiming for September. After the structure is complete, the electricians and plumbers will finish the interior.",
+          "depth": 2,
+          "name": "We're aiming for September. After the structure is complete, the electricians and plumbers will finish the interior."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "547:2605",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The building is in construction.\"",
+          "depth": 2,
+          "name": "❌ \"The building is in construction.\""
+        },
+        {
+          "text": "✅ \"The building is under construction.\"",
+          "depth": 2,
+          "name": "✅ \"The building is under construction.\""
+        },
+        {
+          "text": "The correct expression is 'under construction', not 'in construction'. Similarly: 'under repair', 'under renovation'.",
+          "depth": 2,
+          "name": "The correct expression is 'under construction', not 'in construction'. Similarly: 'under repair', 'under renovation'."
+        },
+        {
+          "text": "❌ \"He works like a bricklayer.\"",
+          "depth": 2,
+          "name": "❌ \"He works like a bricklayer.\""
+        },
+        {
+          "text": "✅ \"He works as a bricklayer.\"",
+          "depth": 2,
+          "name": "✅ \"He works as a bricklayer.\""
+        },
+        {
+          "text": "Use 'as' for someone's actual job or role: 'He works as a plumber.' Use 'like' for comparison: 'He works like a machine' (metaphor).",
+          "depth": 2,
+          "name": "Use 'as' for someone's actual job or role: 'He works as a plumber.' Use 'like' for comparison: 'He works like a machine' (metaphor)."
+        },
+        {
+          "text": "❌ \"The crane is very high. I'm afraid of highs.\"",
+          "depth": 2,
+          "name": "❌ \"The crane is very high. I'm afraid of highs.\""
+        },
+        {
+          "text": "✅ \"The crane is very tall. I'm afraid of heights.\"",
+          "depth": 2,
+          "name": "✅ \"The crane is very tall. I'm afraid of heights.\""
+        },
+        {
+          "text": "Buildings and cranes are 'tall' (not 'high'). The fear is 'heights' (noun) — 'afraid of heights'. 'High' is the adjective for position: 'The bird flew high.'",
+          "depth": 2,
+          "name": "Buildings and cranes are 'tall' (not 'high'). The fear is 'heights' (noun) — 'afraid of heights'. 'High' is the adjective for position: 'The bird flew high.'"
+        },
+        {
+          "text": "❌ \"They builded the house in six months.\"",
+          "depth": 2,
+          "name": "❌ \"They builded the house in six months.\""
+        },
+        {
+          "text": "✅ \"They built the house in six months.\"",
+          "depth": 2,
+          "name": "✅ \"They built the house in six months.\""
+        },
+        {
+          "text": "'Build' is irregular: build–built–built. There is no 'builded'.",
+          "depth": 2,
+          "name": "'Build' is irregular: build–built–built. There is no 'builded'."
+        },
+        {
+          "text": "❌ \"The workers use a lot of equipments.\"",
+          "depth": 2,
+          "name": "❌ \"The workers use a lot of equipments.\""
+        },
+        {
+          "text": "✅ \"The workers use a lot of equipment.\"",
+          "depth": 2,
+          "name": "✅ \"The workers use a lot of equipment.\""
+        },
+        {
+          "text": "'Equipment' is uncountable — no plural 's'. Say 'pieces of equipment' or 'items of equipment' for individual things.",
+          "depth": 2,
+          "name": "'Equipment' is uncountable — no plural 's'. Say 'pieces of equipment' or 'items of equipment' for individual things."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "547:2629",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how construction vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how construction vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "construct",
+          "depth": 2,
+          "name": "construct"
+        },
+        {
+          "text": "construction / constructor",
+          "depth": 2,
+          "name": "construction / constructor"
+        },
+        {
+          "text": "construct",
+          "depth": 2,
+          "name": "construct"
+        },
+        {
+          "text": "constructed",
+          "depth": 2,
+          "name": "constructed"
+        },
+        {
+          "text": "demolish",
+          "depth": 2,
+          "name": "demolish"
+        },
+        {
+          "text": "demolition",
+          "depth": 2,
+          "name": "demolition"
+        },
+        {
+          "text": "demolish",
+          "depth": 2,
+          "name": "demolish"
+        },
+        {
+          "text": "demolished",
+          "depth": 2,
+          "name": "demolished"
+        },
+        {
+          "text": "excavate",
+          "depth": 2,
+          "name": "excavate"
+        },
+        {
+          "text": "excavation / excavator",
+          "depth": 2,
+          "name": "excavation / excavator"
+        },
+        {
+          "text": "excavate",
+          "depth": 2,
+          "name": "excavate"
+        },
+        {
+          "text": "excavated",
+          "depth": 2,
+          "name": "excavated"
+        },
+        {
+          "text": "scaffold",
+          "depth": 2,
+          "name": "scaffold"
+        },
+        {
+          "text": "scaffolding / scaffold",
+          "depth": 2,
+          "name": "scaffolding / scaffold"
+        },
+        {
+          "text": "scaffold",
+          "depth": 2,
+          "name": "scaffold"
+        },
+        {
+          "text": "scaffolded",
+          "depth": 2,
+          "name": "scaffolded"
+        },
+        {
+          "text": "insulate",
+          "depth": 2,
+          "name": "insulate"
+        },
+        {
+          "text": "insulation / insulator",
+          "depth": 2,
+          "name": "insulation / insulator"
+        },
+        {
+          "text": "insulate",
+          "depth": 2,
+          "name": "insulate"
+        },
+        {
+          "text": "insulated",
+          "depth": 2,
+          "name": "insulated"
+        },
+        {
+          "text": "concrete",
+          "depth": 2,
+          "name": "concrete"
+        },
+        {
+          "text": "concrete",
+          "depth": 2,
+          "name": "concrete"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "concrete",
+          "depth": 2,
+          "name": "concrete"
+        },
+        {
+          "text": "foundation",
+          "depth": 2,
+          "name": "foundation"
+        },
+        {
+          "text": "foundation",
+          "depth": 2,
+          "name": "foundation"
+        },
+        {
+          "text": "found",
+          "depth": 2,
+          "name": "found"
+        },
+        {
+          "text": "foundational",
+          "depth": 2,
+          "name": "foundational"
+        },
+        {
+          "text": "reinforce",
+          "depth": 2,
+          "name": "reinforce"
+        },
+        {
+          "text": "reinforcement",
+          "depth": 2,
+          "name": "reinforcement"
+        },
+        {
+          "text": "reinforce",
+          "depth": 2,
+          "name": "reinforce"
+        },
+        {
+          "text": "reinforced",
+          "depth": 2,
+          "name": "reinforced"
+        },
+        {
+          "text": "renovate",
+          "depth": 2,
+          "name": "renovate"
+        },
+        {
+          "text": "renovation / renovator",
+          "depth": 2,
+          "name": "renovation / renovator"
+        },
+        {
+          "text": "renovate",
+          "depth": 2,
+          "name": "renovate"
+        },
+        {
+          "text": "renovated",
+          "depth": 2,
+          "name": "renovated"
+        },
+        {
+          "text": "inspect",
+          "depth": 2,
+          "name": "inspect"
+        },
+        {
+          "text": "inspection / inspector",
+          "depth": 2,
+          "name": "inspection / inspector"
+        },
+        {
+          "text": "inspect",
+          "depth": 2,
+          "name": "inspect"
+        },
+        {
+          "text": "inspected",
+          "depth": 2,
+          "name": "inspected"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "547:2689",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  Workers poured __________ into the trenches for the foundations.",
+          "depth": 1,
+          "name": "1. Workers poured __________ into the trenches for the foundations."
+        },
+        {
+          "text": "2.  Everyone on the site must wear a hard __________ for safety.",
+          "depth": 1,
+          "name": "2. Everyone on the site must wear a hard __________ for safety."
+        },
+        {
+          "text": "3.  The __________ lifts heavy steel beams to the upper floors.",
+          "depth": 1,
+          "name": "3. The __________ lifts heavy steel beams to the upper floors."
+        },
+        {
+          "text": "4.  A __________ builds walls using bricks and cement.",
+          "depth": 1,
+          "name": "4. A __________ builds walls using bricks and cement."
+        },
+        {
+          "text": "5.  The building is currently under __________ and should be ready by September.",
+          "depth": 1,
+          "name": "5. The building is currently under __________ and should be ready by September."
+        },
+        {
+          "text": "6.  __________ dig deep holes in the ground for foundations.",
+          "depth": 1,
+          "name": "6. __________ dig deep holes in the ground for foundations."
+        },
+        {
+          "text": "7.  The workers wear high-__________ jackets so they can be seen easily.",
+          "depth": 1,
+          "name": "7. The workers wear high-__________ jackets so they can be seen easily."
+        },
+        {
+          "text": "8.  A __________ installs the pipes and water systems in a building.",
+          "depth": 1,
+          "name": "8. A __________ installs the pipes and water systems in a building."
+        },
+        {
+          "text": "9.  The __________ manager is responsible for keeping the project on schedule.",
+          "depth": 1,
+          "name": "9. The __________ manager is responsible for keeping the project on schedule."
+        },
+        {
+          "text": "10. Before construction began, __________ cleared the land of trees and rocks.",
+          "depth": 1,
+          "name": "10. Before construction began, __________ cleared the land of trees and rocks."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. concrete  2. hat  3. crane  4. bricklayer  5. construction  6. Excavators  7. visibility  8. plumber  9. project  10. bulldozers",
+          "depth": 2,
+          "name": "1. concrete 2. hat 3. crane 4. bricklayer 5. construction 6. Excavators 7. visibility 8. plumber 9. project 10. bulldozers"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "547:2707",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Health & Safety in the UK",
+          "depth": 2,
+          "name": "Health & Safety in the UK"
+        },
+        {
+          "text": "UK construction sites are regulated by the Health and Safety Executive (HSE). Strict rules cover protective equipment, working at height, and machinery operation. 'Risk assessment' is a key term — every task must have one.",
+          "depth": 2,
+          "name": "UK construction sites are regulated by the Health and Safety Executive (HSE). Strict rules cover protective equipment, working at height, and machinery operation. 'Risk assessment' is a key term — every task must have one."
+        },
+        {
+          "text": "🇬🇧 vs 🇺🇸 Terms",
+          "depth": 2,
+          "name": "🇬🇧 vs 🇺🇸 Terms"
+        },
+        {
+          "text": "British: 'building site' / American: 'construction site' (both understood). British: 'skip' (waste container) / American: 'dumpster'. British: 'flat' / American: 'apartment'. British: 'ground floor' / American: 'first floor'.",
+          "depth": 2,
+          "name": "British: 'building site' / American: 'construction site' (both understood). British: 'skip' (waste container) / American: 'dumpster'. British: 'flat' / American: 'apartment'. British: 'ground floor' / American: 'first floor'."
+        },
+        {
+          "text": "Trade Jobs",
+          "depth": 2,
+          "name": "Trade Jobs"
+        },
+        {
+          "text": "In the UK, skilled trades (plumber, electrician, carpenter, bricklayer) are highly respected. Young people can train through apprenticeships — paid on-the-job training combined with college study. These roles are often well-paid.",
+          "depth": 2,
+          "name": "In the UK, skilled trades (plumber, electrician, carpenter, bricklayer) are highly respected. Young people can train through apprenticeships — paid on-the-job training combined with college study. These roles are often well-paid."
+        },
+        {
+          "text": "Planning Permission",
+          "depth": 2,
+          "name": "Planning Permission"
+        },
+        {
+          "text": "In the UK, you usually need 'planning permission' from the local council before building or making major changes to a property. 'Listed buildings' (historically important) have even stricter rules.",
+          "depth": 2,
+          "name": "In the UK, you usually need 'planning permission' from the local council before building or making major changes to a property. 'Listed buildings' (historically important) have even stricter rules."
+        },
+        {
+          "text": "Builder's Tea",
+          "depth": 2,
+          "name": "Builder's Tea"
+        },
+        {
+          "text": "'Builder's tea' is a strong cup of tea with milk and sugar — the stereotypical drink of British construction workers. It's become a cultural term for any strong, no-fuss cup of tea.",
+          "depth": 2,
+          "name": "'Builder's tea' is a strong cup of tea with milk and sugar — the stereotypical drink of British construction workers. It's become a cultural term for any strong, no-fuss cup of tea."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "547:2726",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "crane",
+          "depth": 2,
+          "name": "crane"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "tower ~, ~ operator, ~ lift",
+          "depth": 2,
+          "name": "tower ~, ~ operator, ~ lift"
+        },
+        {
+          "text": "concrete",
+          "depth": 2,
+          "name": "concrete"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "pour ~, reinforced ~, ~ mixer",
+          "depth": 2,
+          "name": "pour ~, reinforced ~, ~ mixer"
+        },
+        {
+          "text": "scaffolding",
+          "depth": 2,
+          "name": "scaffolding"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "put up ~, ~ poles, remove ~",
+          "depth": 2,
+          "name": "put up ~, ~ poles, remove ~"
+        },
+        {
+          "text": "excavator",
+          "depth": 2,
+          "name": "excavator"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ bucket, ~ driver, hydraulic ~",
+          "depth": 2,
+          "name": "~ bucket, ~ driver, hydraulic ~"
+        },
+        {
+          "text": "foundation",
+          "depth": 2,
+          "name": "foundation"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "lay ~s, ~ wall, solid ~",
+          "depth": 2,
+          "name": "lay ~s, ~ wall, solid ~"
+        },
+        {
+          "text": "hard hat",
+          "depth": 2,
+          "name": "hard hat"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "wear a ~, ~ area, safety ~",
+          "depth": 2,
+          "name": "wear a ~, ~ area, safety ~"
+        },
+        {
+          "text": "blueprint",
+          "depth": 2,
+          "name": "blueprint"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "building ~, ~ design, ~ plan",
+          "depth": 2,
+          "name": "building ~, ~ design, ~ plan"
+        },
+        {
+          "text": "bricklayer",
+          "depth": 2,
+          "name": "bricklayer"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "skilled ~, ~ tools, qualified ~",
+          "depth": 2,
+          "name": "skilled ~, ~ tools, qualified ~"
+        },
+        {
+          "text": "plumber",
+          "depth": 2,
+          "name": "plumber"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "call a ~, ~ tools, emergency ~",
+          "depth": 2,
+          "name": "call a ~, ~ tools, emergency ~"
+        },
+        {
+          "text": "beam",
+          "depth": 2,
+          "name": "beam"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "steel ~, support ~, wooden ~",
+          "depth": 2,
+          "name": "steel ~, support ~, wooden ~"
+        }
+      ]
+    }
+  }
+}

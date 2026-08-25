@@ -1,0 +1,489 @@
+{
+  "unitId": "beverages",
+  "name": "Beverages",
+  "subtopics": [
+    {
+      "id": "hot-beverages",
+      "title": "Hot Beverages",
+      "wordIds": [
+        "coffee",
+        "tea",
+        "hot-chocolate",
+        "espresso",
+        "cappuccino",
+        "latte",
+        "mocha",
+        "herbal-tea",
+        "green-tea",
+        "chai"
+      ]
+    },
+    {
+      "id": "cold-beverages",
+      "title": "Cold Beverages",
+      "wordIds": [
+        "water",
+        "iced-tea",
+        "lemonade",
+        "iced-coffee",
+        "milkshake",
+        "smoothie",
+        "slushie",
+        "sparkling-water",
+        "tonic-water",
+        "cold-brew"
+      ]
+    },
+    {
+      "id": "juices",
+      "title": "Juices",
+      "wordIds": [
+        "orange-juice",
+        "apple-juice",
+        "grape-juice",
+        "cranberry-juice",
+        "tomato-juice",
+        "carrot-juice",
+        "pineapple-juice",
+        "mango-juice",
+        "pomegranate-juice",
+        "fresh-squeeze"
+      ]
+    },
+    {
+      "id": "soft-drinks",
+      "title": "Soft Drinks",
+      "wordIds": [
+        "soda",
+        "cola",
+        "ginger-ale",
+        "root-beer",
+        "cream-soda",
+        "lemon-lime",
+        "energy-drink",
+        "sports-drink",
+        "kombucha",
+        "coconut-water"
+      ]
+    },
+    {
+      "id": "alcoholic-beverages",
+      "title": "Alcoholic Beverages",
+      "wordIds": [
+        "beer",
+        "wine",
+        "champagne",
+        "whiskey",
+        "vodka",
+        "gin",
+        "rum",
+        "tequila",
+        "brandy",
+        "cocktail"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "coffee",
+      "label": "Coffee",
+      "ipa": "/ˈkɒfi/",
+      "cefr": "A2",
+      "imageNodeId": "467:6498"
+    },
+    {
+      "kind": "card",
+      "id": "tea",
+      "label": "Tea",
+      "ipa": "/tiː/",
+      "cefr": "A2",
+      "imageNodeId": "467:6502"
+    },
+    {
+      "kind": "card",
+      "id": "hot-chocolate",
+      "label": "Hot Chocolate",
+      "ipa": "/hɒt ˈtʃɒklɪt/",
+      "cefr": "B1",
+      "imageNodeId": "467:6506"
+    },
+    {
+      "kind": "card",
+      "id": "espresso",
+      "label": "Espresso",
+      "ipa": "/ɛˈsprɛsoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6510"
+    },
+    {
+      "kind": "card",
+      "id": "cappuccino",
+      "label": "Cappuccino",
+      "ipa": "/ˌkæpʊˈtʃiːnoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "467:6514"
+    },
+    {
+      "kind": "card",
+      "id": "latte",
+      "label": "Latte",
+      "ipa": "/ˈlɑːteɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6518"
+    },
+    {
+      "kind": "card",
+      "id": "mocha",
+      "label": "Mocha",
+      "ipa": "/ˈmɒkə/",
+      "cefr": "A2",
+      "imageNodeId": "467:6522"
+    },
+    {
+      "kind": "card",
+      "id": "herbal-tea",
+      "label": "Herbal Tea",
+      "ipa": "/ˈhɜːrbəl tiː/",
+      "cefr": "B1",
+      "imageNodeId": "467:6526"
+    },
+    {
+      "kind": "card",
+      "id": "green-tea",
+      "label": "Green Tea",
+      "ipa": "/ɡriːn tiː/",
+      "cefr": "B1",
+      "imageNodeId": "467:6530"
+    },
+    {
+      "kind": "card",
+      "id": "chai",
+      "label": "Chai",
+      "ipa": "/tʃaɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6534"
+    },
+    {
+      "kind": "card",
+      "id": "water",
+      "label": "Water",
+      "ipa": "/ˈwɔːtər/",
+      "cefr": "A2",
+      "imageNodeId": "467:6543"
+    },
+    {
+      "kind": "card",
+      "id": "iced-tea",
+      "label": "Iced Tea",
+      "ipa": "/aɪst tiː/",
+      "cefr": "B1",
+      "imageNodeId": "467:6547"
+    },
+    {
+      "kind": "card",
+      "id": "lemonade",
+      "label": "Lemonade",
+      "ipa": "/ˌlɛməˈneɪd/",
+      "cefr": "A2",
+      "imageNodeId": "467:6551"
+    },
+    {
+      "kind": "card",
+      "id": "iced-coffee",
+      "label": "Iced Coffee",
+      "ipa": "/aɪst ˈkɒfi/",
+      "cefr": "B1",
+      "imageNodeId": "467:6555"
+    },
+    {
+      "kind": "card",
+      "id": "milkshake",
+      "label": "Milkshake",
+      "ipa": "/ˈmɪlkˌʃeɪk/",
+      "cefr": "A2",
+      "imageNodeId": "467:6559"
+    },
+    {
+      "kind": "card",
+      "id": "smoothie",
+      "label": "Smoothie",
+      "ipa": "/ˈsmuːði/",
+      "cefr": "A2",
+      "imageNodeId": "467:6563"
+    },
+    {
+      "kind": "card",
+      "id": "slushie",
+      "label": "Slushie",
+      "ipa": "/ˈslʌʃi/",
+      "cefr": "A2",
+      "imageNodeId": "467:6567"
+    },
+    {
+      "kind": "card",
+      "id": "sparkling-water",
+      "label": "Sparkling Water",
+      "ipa": "/ˈspɑːrklɪŋ ˈwɔːtər/",
+      "cefr": "B2",
+      "imageNodeId": "467:6571"
+    },
+    {
+      "kind": "card",
+      "id": "tonic-water",
+      "label": "Tonic Water",
+      "ipa": "/ˈtɒnɪk ˈwɔːtər/",
+      "cefr": "B1",
+      "imageNodeId": "467:6575"
+    },
+    {
+      "kind": "card",
+      "id": "cold-brew",
+      "label": "Cold Brew",
+      "ipa": "/koʊld bruː/",
+      "cefr": "B1",
+      "imageNodeId": "467:6579"
+    },
+    {
+      "kind": "card",
+      "id": "orange-juice",
+      "label": "Orange Juice",
+      "ipa": "/ˈɒrɪndʒ dʒuːs/",
+      "cefr": "B1",
+      "imageNodeId": "467:6588"
+    },
+    {
+      "kind": "card",
+      "id": "apple-juice",
+      "label": "Apple Juice",
+      "ipa": "/ˈæpəl dʒuːs/",
+      "cefr": "B1",
+      "imageNodeId": "467:6592"
+    },
+    {
+      "kind": "card",
+      "id": "grape-juice",
+      "label": "Grape Juice",
+      "ipa": "/ɡreɪp dʒuːs/",
+      "cefr": "B1",
+      "imageNodeId": "467:6596"
+    },
+    {
+      "kind": "card",
+      "id": "cranberry-juice",
+      "label": "Cranberry Juice",
+      "ipa": "/ˈkrænˌbɛri dʒuːs/",
+      "cefr": "B2",
+      "imageNodeId": "467:6600"
+    },
+    {
+      "kind": "card",
+      "id": "tomato-juice",
+      "label": "Tomato Juice",
+      "ipa": "/təˈmeɪtoʊ dʒuːs/",
+      "cefr": "B1",
+      "imageNodeId": "467:6604"
+    },
+    {
+      "kind": "card",
+      "id": "carrot-juice",
+      "label": "Carrot Juice",
+      "ipa": "/ˈkærət dʒuːs/",
+      "cefr": "B1",
+      "imageNodeId": "467:6608"
+    },
+    {
+      "kind": "card",
+      "id": "pineapple-juice",
+      "label": "Pineapple Juice",
+      "ipa": "/ˈpaɪnˌæpəl dʒuːs/",
+      "cefr": "B2",
+      "imageNodeId": "467:6612"
+    },
+    {
+      "kind": "card",
+      "id": "mango-juice",
+      "label": "Mango Juice",
+      "ipa": "/ˈmæŋɡoʊ dʒuːs/",
+      "cefr": "B1",
+      "imageNodeId": "467:6616"
+    },
+    {
+      "kind": "card",
+      "id": "pomegranate-juice",
+      "label": "Pomegranate Juice",
+      "ipa": "/ˈpɒmɪˌɡrænɪt dʒuːs/",
+      "cefr": "B2",
+      "imageNodeId": "467:6620"
+    },
+    {
+      "kind": "card",
+      "id": "fresh-squeeze",
+      "label": "Fresh Squeeze",
+      "ipa": "/frɛʃ skwiːz/",
+      "cefr": "B1",
+      "imageNodeId": "467:6624"
+    },
+    {
+      "kind": "card",
+      "id": "soda",
+      "label": "Soda",
+      "ipa": "/ˈsoʊdə/",
+      "cefr": "A2",
+      "imageNodeId": "467:6633"
+    },
+    {
+      "kind": "card",
+      "id": "cola",
+      "label": "Cola",
+      "ipa": "/ˈkoʊlə/",
+      "cefr": "A2",
+      "imageNodeId": "467:6637"
+    },
+    {
+      "kind": "card",
+      "id": "ginger-ale",
+      "label": "Ginger Ale",
+      "ipa": "/ˈdʒɪndʒər eɪl/",
+      "cefr": "B1",
+      "imageNodeId": "467:6641"
+    },
+    {
+      "kind": "card",
+      "id": "root-beer",
+      "label": "Root Beer",
+      "ipa": "/ruːt bɪər/",
+      "cefr": "B1",
+      "imageNodeId": "467:6645"
+    },
+    {
+      "kind": "card",
+      "id": "cream-soda",
+      "label": "Cream Soda",
+      "ipa": "/kriːm ˈsoʊdə/",
+      "cefr": "B1",
+      "imageNodeId": "467:6649"
+    },
+    {
+      "kind": "card",
+      "id": "lemon-lime",
+      "label": "Lemon-Lime",
+      "ipa": "/ˈlɛmən laɪm/",
+      "cefr": "B1",
+      "imageNodeId": "467:6653"
+    },
+    {
+      "kind": "card",
+      "id": "energy-drink",
+      "label": "Energy Drink",
+      "ipa": "/ˈɛnərdʒi drɪŋk/",
+      "cefr": "B1",
+      "imageNodeId": "467:6657"
+    },
+    {
+      "kind": "card",
+      "id": "sports-drink",
+      "label": "Sports Drink",
+      "ipa": "/spɔːrts drɪŋk/",
+      "cefr": "B1",
+      "imageNodeId": "467:6661"
+    },
+    {
+      "kind": "card",
+      "id": "kombucha",
+      "label": "Kombucha",
+      "ipa": "/kɒmˈbuːtʃə/",
+      "cefr": "A2",
+      "imageNodeId": "467:6665"
+    },
+    {
+      "kind": "card",
+      "id": "coconut-water",
+      "label": "Coconut Water",
+      "ipa": "/ˈkoʊkəˌnʌt ˈwɔːtər/",
+      "cefr": "B1",
+      "imageNodeId": "467:6669"
+    },
+    {
+      "kind": "card",
+      "id": "beer",
+      "label": "Beer",
+      "ipa": "/bɪər/",
+      "cefr": "A2",
+      "imageNodeId": "467:6678"
+    },
+    {
+      "kind": "card",
+      "id": "wine",
+      "label": "Wine",
+      "ipa": "/waɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:6682"
+    },
+    {
+      "kind": "card",
+      "id": "champagne",
+      "label": "Champagne",
+      "ipa": "/ʃæmˈpeɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:6686"
+    },
+    {
+      "kind": "card",
+      "id": "whiskey",
+      "label": "Whiskey",
+      "ipa": "/ˈwɪski/",
+      "cefr": "A2",
+      "imageNodeId": "467:6690"
+    },
+    {
+      "kind": "card",
+      "id": "vodka",
+      "label": "Vodka",
+      "ipa": "/ˈvɒdkə/",
+      "cefr": "A2",
+      "imageNodeId": "467:6694"
+    },
+    {
+      "kind": "card",
+      "id": "gin",
+      "label": "Gin",
+      "ipa": "/dʒɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:6698"
+    },
+    {
+      "kind": "card",
+      "id": "rum",
+      "label": "Rum",
+      "ipa": "/rʌm/",
+      "cefr": "A2",
+      "imageNodeId": "467:6702"
+    },
+    {
+      "kind": "card",
+      "id": "tequila",
+      "label": "Tequila",
+      "ipa": "/təˈkiːlə/",
+      "cefr": "A2",
+      "imageNodeId": "467:6706"
+    },
+    {
+      "kind": "card",
+      "id": "brandy",
+      "label": "Brandy",
+      "ipa": "/ˈbrændi/",
+      "cefr": "A2",
+      "imageNodeId": "467:6710"
+    },
+    {
+      "kind": "card",
+      "id": "cocktail",
+      "label": "Cocktail",
+      "ipa": "/ˈkɒkˌteɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:6714"
+    }
+  ],
+  "materials": null
+}

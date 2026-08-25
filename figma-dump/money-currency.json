@@ -1,0 +1,489 @@
+{
+  "unitId": "money-currency",
+  "name": "Money & Currency",
+  "subtopics": [
+    {
+      "id": "coins-bills",
+      "title": "Coins & Bills",
+      "wordIds": [
+        "coin",
+        "bill",
+        "penny",
+        "nickel",
+        "dime",
+        "quarter",
+        "dollar",
+        "euro",
+        "pound",
+        "yen"
+      ]
+    },
+    {
+      "id": "banking",
+      "title": "Banking",
+      "wordIds": [
+        "bank-account",
+        "savings",
+        "checking",
+        "deposit",
+        "withdrawal",
+        "atm",
+        "balance",
+        "statement",
+        "interest",
+        "transfer"
+      ]
+    },
+    {
+      "id": "payment",
+      "title": "Payment",
+      "wordIds": [
+        "cash",
+        "credit-card",
+        "debit-card",
+        "check",
+        "receipt",
+        "change",
+        "tip",
+        "invoice",
+        "bill",
+        "wallet"
+      ]
+    },
+    {
+      "id": "shopping-terms",
+      "title": "Shopping Terms",
+      "wordIds": [
+        "price",
+        "cost",
+        "discount",
+        "sale",
+        "tax",
+        "budget",
+        "expense",
+        "affordable",
+        "expensive",
+        "cheap"
+      ]
+    },
+    {
+      "id": "financial-literacy",
+      "title": "Financial Literacy",
+      "wordIds": [
+        "income",
+        "salary",
+        "wage",
+        "debt",
+        "loan",
+        "mortgage",
+        "insurance",
+        "investment",
+        "profit",
+        "loss"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "coin",
+      "label": "Coin",
+      "ipa": "/kɔɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:8362"
+    },
+    {
+      "kind": "card",
+      "id": "bill",
+      "label": "Bill",
+      "ipa": "/bɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:8366"
+    },
+    {
+      "kind": "card",
+      "id": "penny",
+      "label": "Penny",
+      "ipa": "/ˈpɛni/",
+      "cefr": "A2",
+      "imageNodeId": "467:8370"
+    },
+    {
+      "kind": "card",
+      "id": "nickel",
+      "label": "Nickel",
+      "ipa": "/ˈnɪkəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:8374"
+    },
+    {
+      "kind": "card",
+      "id": "dime",
+      "label": "Dime",
+      "ipa": "/daɪm/",
+      "cefr": "A2",
+      "imageNodeId": "467:8378"
+    },
+    {
+      "kind": "card",
+      "id": "quarter",
+      "label": "Quarter",
+      "ipa": "/ˈkwɔːrtər/",
+      "cefr": "A2",
+      "imageNodeId": "467:8382"
+    },
+    {
+      "kind": "card",
+      "id": "dollar",
+      "label": "Dollar",
+      "ipa": "/ˈdɒlər/",
+      "cefr": "A2",
+      "imageNodeId": "467:8386"
+    },
+    {
+      "kind": "card",
+      "id": "euro",
+      "label": "Euro",
+      "ipa": "/ˈjʊəroʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:8390"
+    },
+    {
+      "kind": "card",
+      "id": "pound",
+      "label": "Pound",
+      "ipa": "/paʊnd/",
+      "cefr": "A2",
+      "imageNodeId": "467:8394"
+    },
+    {
+      "kind": "card",
+      "id": "yen",
+      "label": "Yen",
+      "ipa": "/jɛn/",
+      "cefr": "A2",
+      "imageNodeId": "467:8398"
+    },
+    {
+      "kind": "card",
+      "id": "bank-account",
+      "label": "Bank Account",
+      "ipa": "/bæŋk əˈkaʊnt/",
+      "cefr": "B1",
+      "imageNodeId": "467:8407"
+    },
+    {
+      "kind": "card",
+      "id": "savings",
+      "label": "Savings",
+      "ipa": "/ˈseɪvɪŋz/",
+      "cefr": "A2",
+      "imageNodeId": "467:8411"
+    },
+    {
+      "kind": "card",
+      "id": "checking",
+      "label": "Checking",
+      "ipa": "/ˈtʃɛkɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:8415"
+    },
+    {
+      "kind": "card",
+      "id": "deposit",
+      "label": "Deposit",
+      "ipa": "/dɪˈpɒzɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8419"
+    },
+    {
+      "kind": "card",
+      "id": "withdrawal",
+      "label": "Withdrawal",
+      "ipa": "/wɪðˈdrɔːəl/",
+      "cefr": "B1",
+      "imageNodeId": "467:8423"
+    },
+    {
+      "kind": "card",
+      "id": "atm",
+      "label": "ATM",
+      "ipa": "/ˌeɪtiːˈɛm/",
+      "cefr": "A2",
+      "imageNodeId": "467:8427"
+    },
+    {
+      "kind": "card",
+      "id": "balance",
+      "label": "Balance",
+      "ipa": "/ˈbæləns/",
+      "cefr": "A2",
+      "imageNodeId": "467:8431"
+    },
+    {
+      "kind": "card",
+      "id": "statement",
+      "label": "Statement",
+      "ipa": "/ˈsteɪtmənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8435"
+    },
+    {
+      "kind": "card",
+      "id": "interest",
+      "label": "Interest",
+      "ipa": "/ˈɪntrəst/",
+      "cefr": "A2",
+      "imageNodeId": "467:8439"
+    },
+    {
+      "kind": "card",
+      "id": "transfer",
+      "label": "Transfer",
+      "ipa": "/ˈtrænsfɜːr/",
+      "cefr": "A2",
+      "imageNodeId": "467:8443"
+    },
+    {
+      "kind": "card",
+      "id": "cash",
+      "label": "Cash",
+      "ipa": "/kæʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:8452"
+    },
+    {
+      "kind": "card",
+      "id": "credit-card",
+      "label": "Credit Card",
+      "ipa": "/ˈkrɛdɪt kɑːrd/",
+      "cefr": "B1",
+      "imageNodeId": "467:8456"
+    },
+    {
+      "kind": "card",
+      "id": "debit-card",
+      "label": "Debit Card",
+      "ipa": "/ˈdɛbɪt kɑːrd/",
+      "cefr": "B1",
+      "imageNodeId": "467:8460"
+    },
+    {
+      "kind": "card",
+      "id": "check",
+      "label": "Check",
+      "ipa": "/tʃɛk/",
+      "cefr": "A2",
+      "imageNodeId": "467:8464"
+    },
+    {
+      "kind": "card",
+      "id": "receipt",
+      "label": "Receipt",
+      "ipa": "/rɪˈsiːt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8468"
+    },
+    {
+      "kind": "card",
+      "id": "change",
+      "label": "Change",
+      "ipa": "/tʃeɪndʒ/",
+      "cefr": "A2",
+      "imageNodeId": "467:8472"
+    },
+    {
+      "kind": "card",
+      "id": "tip",
+      "label": "Tip",
+      "ipa": "/tɪp/",
+      "cefr": "A2",
+      "imageNodeId": "467:8476"
+    },
+    {
+      "kind": "card",
+      "id": "invoice",
+      "label": "Invoice",
+      "ipa": "/ˈɪnvɔɪs/",
+      "cefr": "A2",
+      "imageNodeId": "467:8480"
+    },
+    {
+      "kind": "card",
+      "id": "bill",
+      "label": "Bill",
+      "ipa": "/bɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:8484"
+    },
+    {
+      "kind": "card",
+      "id": "wallet",
+      "label": "Wallet",
+      "ipa": "/ˈwɒlɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8488"
+    },
+    {
+      "kind": "card",
+      "id": "price",
+      "label": "Price",
+      "ipa": "/praɪs/",
+      "cefr": "A2",
+      "imageNodeId": "467:8497"
+    },
+    {
+      "kind": "card",
+      "id": "cost",
+      "label": "Cost",
+      "ipa": "/kɒst/",
+      "cefr": "A2",
+      "imageNodeId": "467:8501"
+    },
+    {
+      "kind": "card",
+      "id": "discount",
+      "label": "Discount",
+      "ipa": "/ˈdɪskaʊnt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8505"
+    },
+    {
+      "kind": "card",
+      "id": "sale",
+      "label": "Sale",
+      "ipa": "/seɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:8509"
+    },
+    {
+      "kind": "card",
+      "id": "tax",
+      "label": "Tax",
+      "ipa": "/tæks/",
+      "cefr": "A2",
+      "imageNodeId": "467:8513"
+    },
+    {
+      "kind": "card",
+      "id": "budget",
+      "label": "Budget",
+      "ipa": "/ˈbʌdʒɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8517"
+    },
+    {
+      "kind": "card",
+      "id": "expense",
+      "label": "Expense",
+      "ipa": "/ɪkˈspɛns/",
+      "cefr": "A2",
+      "imageNodeId": "467:8521"
+    },
+    {
+      "kind": "card",
+      "id": "affordable",
+      "label": "Affordable",
+      "ipa": "/əˈfɔːrdəbəl/",
+      "cefr": "B1",
+      "imageNodeId": "467:8525"
+    },
+    {
+      "kind": "card",
+      "id": "expensive",
+      "label": "Expensive",
+      "ipa": "/ɪkˈspɛnsɪv/",
+      "cefr": "A2",
+      "imageNodeId": "467:8529"
+    },
+    {
+      "kind": "card",
+      "id": "cheap",
+      "label": "Cheap",
+      "ipa": "/tʃiːp/",
+      "cefr": "A2",
+      "imageNodeId": "467:8533"
+    },
+    {
+      "kind": "card",
+      "id": "income",
+      "label": "Income",
+      "ipa": "/ˈɪnˌkʌm/",
+      "cefr": "A2",
+      "imageNodeId": "467:8542"
+    },
+    {
+      "kind": "card",
+      "id": "salary",
+      "label": "Salary",
+      "ipa": "/ˈsæləri/",
+      "cefr": "A2",
+      "imageNodeId": "467:8546"
+    },
+    {
+      "kind": "card",
+      "id": "wage",
+      "label": "Wage",
+      "ipa": "/weɪdʒ/",
+      "cefr": "A2",
+      "imageNodeId": "467:8550"
+    },
+    {
+      "kind": "card",
+      "id": "debt",
+      "label": "Debt",
+      "ipa": "/dɛt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8554"
+    },
+    {
+      "kind": "card",
+      "id": "loan",
+      "label": "Loan",
+      "ipa": "/loʊn/",
+      "cefr": "A2",
+      "imageNodeId": "467:8558"
+    },
+    {
+      "kind": "card",
+      "id": "mortgage",
+      "label": "Mortgage",
+      "ipa": "/ˈmɔːrɡɪdʒ/",
+      "cefr": "A2",
+      "imageNodeId": "467:8562"
+    },
+    {
+      "kind": "card",
+      "id": "insurance",
+      "label": "Insurance",
+      "ipa": "/ɪnˈʃʊərəns/",
+      "cefr": "A2",
+      "imageNodeId": "467:8566"
+    },
+    {
+      "kind": "card",
+      "id": "investment",
+      "label": "Investment",
+      "ipa": "/ɪnˈvɛstmənt/",
+      "cefr": "B1",
+      "imageNodeId": "467:8570"
+    },
+    {
+      "kind": "card",
+      "id": "profit",
+      "label": "Profit",
+      "ipa": "/ˈprɒfɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8574"
+    },
+    {
+      "kind": "card",
+      "id": "loss",
+      "label": "Loss",
+      "ipa": "/lɒs/",
+      "cefr": "A2",
+      "imageNodeId": "467:8578"
+    }
+  ],
+  "materials": null
+}

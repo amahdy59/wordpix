@@ -1,0 +1,585 @@
+{
+  "unitId": "skeleton",
+  "name": "The Skeleton",
+  "subtopics": [
+    {
+      "id": "skull-head-bones",
+      "title": "Skull & Head Bones",
+      "wordIds": [
+        "skull",
+        "cranium",
+        "jaw-bone",
+        "cheekbone",
+        "eye-socket",
+        "nasal-bone",
+        "temple-bone",
+        "foramen-magnum",
+        "mandible",
+        "maxilla"
+      ]
+    },
+    {
+      "id": "spine-torso",
+      "title": "Spine & Torso",
+      "wordIds": [
+        "spine",
+        "vertebra",
+        "cervical-spine",
+        "thoracic-spine",
+        "lumbar-spine",
+        "sacrum",
+        "coccyx",
+        "rib",
+        "sternum",
+        "ribcage"
+      ]
+    },
+    {
+      "id": "upper-limb-bones",
+      "title": "Upper Limb Bones",
+      "wordIds": [
+        "clavicle",
+        "scapula",
+        "humerus",
+        "radius",
+        "ulna",
+        "carpals",
+        "metacarpals",
+        "phalanges",
+        "shoulder-joint",
+        "elbow-joint"
+      ]
+    },
+    {
+      "id": "lower-limb-bones",
+      "title": "Lower Limb Bones",
+      "wordIds": [
+        "pelvis",
+        "femur",
+        "patella",
+        "tibia",
+        "fibula",
+        "tarsals",
+        "metatarsals",
+        "toe-bones",
+        "hip-joint",
+        "knee-joint"
+      ]
+    },
+    {
+      "id": "joints-connective-tissue",
+      "title": "Joints & Connective Tissue",
+      "wordIds": [
+        "joint",
+        "cartilage",
+        "ligament",
+        "tendon",
+        "bone-marrow",
+        "periosteum",
+        "synovial-fluid",
+        "disc",
+        "meniscus",
+        "bursa"
+      ]
+    },
+    {
+      "id": "bone-health",
+      "title": "Bone Health",
+      "wordIds": [
+        "calcium",
+        "vitamin-d",
+        "osteoporosis",
+        "fracture",
+        "x-ray",
+        "cast",
+        "splint",
+        "bone-density",
+        "growth-plate",
+        "skeleton-model"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "skull",
+      "label": "Skull",
+      "ipa": "/skʌl/",
+      "cefr": "A2",
+      "imageNodeId": "467:1094"
+    },
+    {
+      "kind": "card",
+      "id": "cranium",
+      "label": "Cranium",
+      "ipa": "/ˈkreɪniəm/",
+      "cefr": "A2",
+      "imageNodeId": "467:1098"
+    },
+    {
+      "kind": "card",
+      "id": "jaw-bone",
+      "label": "Jaw Bone",
+      "ipa": "/dʒɔː boʊn/",
+      "cefr": "B1",
+      "imageNodeId": "467:1102"
+    },
+    {
+      "kind": "card",
+      "id": "cheekbone",
+      "label": "Cheekbone",
+      "ipa": "/ˈtʃiːkˌboʊn/",
+      "cefr": "A2",
+      "imageNodeId": "467:1106"
+    },
+    {
+      "kind": "card",
+      "id": "eye-socket",
+      "label": "Eye Socket",
+      "ipa": "/aɪ ˈsɒkɪt/",
+      "cefr": "B1",
+      "imageNodeId": "467:1110"
+    },
+    {
+      "kind": "card",
+      "id": "nasal-bone",
+      "label": "Nasal Bone",
+      "ipa": "/ˈneɪzəl boʊn/",
+      "cefr": "B1",
+      "imageNodeId": "467:1114"
+    },
+    {
+      "kind": "card",
+      "id": "temple-bone",
+      "label": "Temple Bone",
+      "ipa": "/ˈtɛmpəl boʊn/",
+      "cefr": "B1",
+      "imageNodeId": "467:1118"
+    },
+    {
+      "kind": "card",
+      "id": "foramen-magnum",
+      "label": "Foramen Magnum",
+      "ipa": "/fəˈreɪmən ˈmæɡnəm/",
+      "cefr": "B1",
+      "imageNodeId": "467:1122"
+    },
+    {
+      "kind": "card",
+      "id": "mandible",
+      "label": "Mandible",
+      "ipa": "/ˈmændɪbəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:1126"
+    },
+    {
+      "kind": "card",
+      "id": "maxilla",
+      "label": "Maxilla",
+      "ipa": "/mækˈsɪlə/",
+      "cefr": "A2",
+      "imageNodeId": "467:1130"
+    },
+    {
+      "kind": "card",
+      "id": "spine",
+      "label": "Spine",
+      "ipa": "/spaɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:1139"
+    },
+    {
+      "kind": "card",
+      "id": "vertebra",
+      "label": "Vertebra",
+      "ipa": "/ˈvɜːrtɪbrə/",
+      "cefr": "A2",
+      "imageNodeId": "467:1143"
+    },
+    {
+      "kind": "card",
+      "id": "cervical-spine",
+      "label": "Cervical Spine",
+      "ipa": "/ˈsɜːrvɪkəl spaɪn/",
+      "cefr": "B1",
+      "imageNodeId": "467:1147"
+    },
+    {
+      "kind": "card",
+      "id": "thoracic-spine",
+      "label": "Thoracic Spine",
+      "ipa": "/θɔːˈræsɪk spaɪn/",
+      "cefr": "B1",
+      "imageNodeId": "467:1151"
+    },
+    {
+      "kind": "card",
+      "id": "lumbar-spine",
+      "label": "Lumbar Spine",
+      "ipa": "/ˈlʌmbər spaɪn/",
+      "cefr": "B1",
+      "imageNodeId": "467:1155"
+    },
+    {
+      "kind": "card",
+      "id": "sacrum",
+      "label": "Sacrum",
+      "ipa": "/ˈseɪkrəm/",
+      "cefr": "A2",
+      "imageNodeId": "467:1159"
+    },
+    {
+      "kind": "card",
+      "id": "coccyx",
+      "label": "Coccyx",
+      "ipa": "/ˈkɒksɪks/",
+      "cefr": "A2",
+      "imageNodeId": "467:1163"
+    },
+    {
+      "kind": "card",
+      "id": "rib",
+      "label": "Rib",
+      "ipa": "/rɪb/",
+      "cefr": "A2",
+      "imageNodeId": "467:1167"
+    },
+    {
+      "kind": "card",
+      "id": "sternum",
+      "label": "Sternum",
+      "ipa": "/ˈstɜːrnəm/",
+      "cefr": "A2",
+      "imageNodeId": "467:1171"
+    },
+    {
+      "kind": "card",
+      "id": "ribcage",
+      "label": "Ribcage",
+      "ipa": "/ˈrɪbˌkeɪdʒ/",
+      "cefr": "A2",
+      "imageNodeId": "467:1175"
+    },
+    {
+      "kind": "card",
+      "id": "clavicle",
+      "label": "Clavicle",
+      "ipa": "/ˈklævɪkəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:1184"
+    },
+    {
+      "kind": "card",
+      "id": "scapula",
+      "label": "Scapula",
+      "ipa": "/ˈskæpjʊlə/",
+      "cefr": "A2",
+      "imageNodeId": "467:1188"
+    },
+    {
+      "kind": "card",
+      "id": "humerus",
+      "label": "Humerus",
+      "ipa": "/ˈhjuːmərəs/",
+      "cefr": "A2",
+      "imageNodeId": "467:1192"
+    },
+    {
+      "kind": "card",
+      "id": "radius",
+      "label": "Radius",
+      "ipa": "/ˈreɪdiəs/",
+      "cefr": "A2",
+      "imageNodeId": "467:1196"
+    },
+    {
+      "kind": "card",
+      "id": "ulna",
+      "label": "Ulna",
+      "ipa": "/ˈʌlnə/",
+      "cefr": "A2",
+      "imageNodeId": "467:1200"
+    },
+    {
+      "kind": "card",
+      "id": "carpals",
+      "label": "Carpals",
+      "ipa": "/ˈkɑːrpəlz/",
+      "cefr": "A2",
+      "imageNodeId": "467:1204"
+    },
+    {
+      "kind": "card",
+      "id": "metacarpals",
+      "label": "Metacarpals",
+      "ipa": "/ˌmɛtəˈkɑːrpəlz/",
+      "cefr": "B1",
+      "imageNodeId": "467:1208"
+    },
+    {
+      "kind": "card",
+      "id": "phalanges",
+      "label": "Phalanges",
+      "ipa": "/fəˈlændʒiːz/",
+      "cefr": "A2",
+      "imageNodeId": "467:1212"
+    },
+    {
+      "kind": "card",
+      "id": "shoulder-joint",
+      "label": "Shoulder Joint",
+      "ipa": "/ˈʃoʊldər dʒɔɪnt/",
+      "cefr": "B1",
+      "imageNodeId": "467:1216"
+    },
+    {
+      "kind": "card",
+      "id": "elbow-joint",
+      "label": "Elbow Joint",
+      "ipa": "/ˈɛlboʊ dʒɔɪnt/",
+      "cefr": "B1",
+      "imageNodeId": "467:1220"
+    },
+    {
+      "kind": "card",
+      "id": "pelvis",
+      "label": "Pelvis",
+      "ipa": "/ˈpɛlvɪs/",
+      "cefr": "A2",
+      "imageNodeId": "467:1229"
+    },
+    {
+      "kind": "card",
+      "id": "femur",
+      "label": "Femur",
+      "ipa": "/ˈfiːmər/",
+      "cefr": "A2",
+      "imageNodeId": "467:1233"
+    },
+    {
+      "kind": "card",
+      "id": "patella",
+      "label": "Patella",
+      "ipa": "/pəˈtɛlə/",
+      "cefr": "A2",
+      "imageNodeId": "467:1237"
+    },
+    {
+      "kind": "card",
+      "id": "tibia",
+      "label": "Tibia",
+      "ipa": "/ˈtɪbiə/",
+      "cefr": "A2",
+      "imageNodeId": "467:1241"
+    },
+    {
+      "kind": "card",
+      "id": "fibula",
+      "label": "Fibula",
+      "ipa": "/ˈfɪbjʊlə/",
+      "cefr": "A2",
+      "imageNodeId": "467:1245"
+    },
+    {
+      "kind": "card",
+      "id": "tarsals",
+      "label": "Tarsals",
+      "ipa": "/ˈtɑːrsəlz/",
+      "cefr": "A2",
+      "imageNodeId": "467:1249"
+    },
+    {
+      "kind": "card",
+      "id": "metatarsals",
+      "label": "Metatarsals",
+      "ipa": "/ˌmɛtəˈtɑːrsəlz/",
+      "cefr": "B1",
+      "imageNodeId": "467:1253"
+    },
+    {
+      "kind": "card",
+      "id": "toe-bones",
+      "label": "Toe Bones",
+      "ipa": "/toʊ boʊnz/",
+      "cefr": "B1",
+      "imageNodeId": "467:1257"
+    },
+    {
+      "kind": "card",
+      "id": "hip-joint",
+      "label": "Hip Joint",
+      "ipa": "/hɪp dʒɔɪnt/",
+      "cefr": "B1",
+      "imageNodeId": "467:1261"
+    },
+    {
+      "kind": "card",
+      "id": "knee-joint",
+      "label": "Knee Joint",
+      "ipa": "/niː dʒɔɪnt/",
+      "cefr": "B1",
+      "imageNodeId": "467:1265"
+    },
+    {
+      "kind": "card",
+      "id": "joint",
+      "label": "Joint",
+      "ipa": "/dʒɔɪnt/",
+      "cefr": "A2",
+      "imageNodeId": "467:1274"
+    },
+    {
+      "kind": "card",
+      "id": "cartilage",
+      "label": "Cartilage",
+      "ipa": "/ˈkɑːrtɪlɪdʒ/",
+      "cefr": "A2",
+      "imageNodeId": "467:1278"
+    },
+    {
+      "kind": "card",
+      "id": "ligament",
+      "label": "Ligament",
+      "ipa": "/ˈlɪɡəmənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:1282"
+    },
+    {
+      "kind": "card",
+      "id": "tendon",
+      "label": "Tendon",
+      "ipa": "/ˈtɛndən/",
+      "cefr": "A2",
+      "imageNodeId": "467:1286"
+    },
+    {
+      "kind": "card",
+      "id": "bone-marrow",
+      "label": "Bone Marrow",
+      "ipa": "/boʊn ˈmæroʊ/",
+      "cefr": "B1",
+      "imageNodeId": "467:1290"
+    },
+    {
+      "kind": "card",
+      "id": "periosteum",
+      "label": "Periosteum",
+      "ipa": "/ˌpɛriˈɒstiəm/",
+      "cefr": "B1",
+      "imageNodeId": "467:1294"
+    },
+    {
+      "kind": "card",
+      "id": "synovial-fluid",
+      "label": "Synovial Fluid",
+      "ipa": "/sɪˈnoʊviəl ˈfluːɪd/",
+      "cefr": "B1",
+      "imageNodeId": "467:1298"
+    },
+    {
+      "kind": "card",
+      "id": "disc",
+      "label": "Disc",
+      "ipa": "/dɪsk/",
+      "cefr": "A2",
+      "imageNodeId": "467:1302"
+    },
+    {
+      "kind": "card",
+      "id": "meniscus",
+      "label": "Meniscus",
+      "ipa": "/mɪˈnɪskəs/",
+      "cefr": "A2",
+      "imageNodeId": "467:1306"
+    },
+    {
+      "kind": "card",
+      "id": "bursa",
+      "label": "Bursa",
+      "ipa": "/ˈbɜːrsə/",
+      "cefr": "A2",
+      "imageNodeId": "467:1310"
+    },
+    {
+      "kind": "card",
+      "id": "calcium",
+      "label": "Calcium",
+      "ipa": "/ˈkælsiəm/",
+      "cefr": "A2",
+      "imageNodeId": "467:1319"
+    },
+    {
+      "kind": "card",
+      "id": "vitamin-d",
+      "label": "Vitamin D",
+      "ipa": "/ˈvaɪtəmɪn diː/",
+      "cefr": "B1",
+      "imageNodeId": "467:1323"
+    },
+    {
+      "kind": "card",
+      "id": "osteoporosis",
+      "label": "Osteoporosis",
+      "ipa": "/ˌɒstioʊpəˈroʊsɪs/",
+      "cefr": "B1",
+      "imageNodeId": "467:1327"
+    },
+    {
+      "kind": "card",
+      "id": "fracture",
+      "label": "Fracture",
+      "ipa": "/ˈfrækʃər/",
+      "cefr": "A2",
+      "imageNodeId": "467:1331"
+    },
+    {
+      "kind": "card",
+      "id": "x-ray",
+      "label": "X-Ray",
+      "ipa": "/ˈɛks reɪ/",
+      "cefr": "B1",
+      "imageNodeId": "467:1335"
+    },
+    {
+      "kind": "card",
+      "id": "cast",
+      "label": "Cast",
+      "ipa": "/kæst/",
+      "cefr": "A2",
+      "imageNodeId": "467:1339"
+    },
+    {
+      "kind": "card",
+      "id": "splint",
+      "label": "Splint",
+      "ipa": "/splɪnt/",
+      "cefr": "A2",
+      "imageNodeId": "467:1343"
+    },
+    {
+      "kind": "card",
+      "id": "bone-density",
+      "label": "Bone Density",
+      "ipa": "/boʊn ˈdɛnsɪti/",
+      "cefr": "B1",
+      "imageNodeId": "467:1347"
+    },
+    {
+      "kind": "card",
+      "id": "growth-plate",
+      "label": "Growth Plate",
+      "ipa": "/ɡroʊθ pleɪt/",
+      "cefr": "B1",
+      "imageNodeId": "467:1351"
+    },
+    {
+      "kind": "card",
+      "id": "skeleton-model",
+      "label": "Skeleton Model",
+      "ipa": "/ˈskɛlɪtən ˈmɒdəl/",
+      "cefr": "B1",
+      "imageNodeId": "467:1355"
+    }
+  ],
+  "materials": null
+}

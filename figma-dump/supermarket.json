@@ -1,0 +1,4451 @@
+{
+  "unitId": "supermarket",
+  "name": "The Supermarket",
+  "subtopics": [
+    {
+      "id": "fresh-produce",
+      "title": "Fresh Produce",
+      "wordIds": [
+        "apple",
+        "banana",
+        "orange",
+        "grapes",
+        "strawberry",
+        "tomato",
+        "lettuce",
+        "carrot",
+        "potato",
+        "onion",
+        "watermelon",
+        "pineapple",
+        "mango",
+        "peach",
+        "pear",
+        "plum",
+        "cherry",
+        "blueberry",
+        "raspberry",
+        "lemon",
+        "lime",
+        "avocado",
+        "coconut",
+        "kiwi",
+        "pomegranate",
+        "grapefruit",
+        "cantaloupe",
+        "fig",
+        "broccoli",
+        "cauliflower",
+        "cucumber",
+        "bell-pepper",
+        "corn",
+        "spinach",
+        "mushroom",
+        "celery",
+        "zucchini",
+        "eggplant",
+        "peas",
+        "green-beans",
+        "cabbage",
+        "sweet-potato",
+        "pumpkin",
+        "asparagus",
+        "radish",
+        "beet",
+        "apricot",
+        "nectarine",
+        "blackberry",
+        "cranberry",
+        "tangerine",
+        "papaya",
+        "kale",
+        "leek",
+        "brussels-sprouts",
+        "green-onion",
+        "turnip",
+        "artichoke",
+        "jalapeño",
+        "squash"
+      ]
+    },
+    {
+      "id": "herbs",
+      "title": "Herbs",
+      "wordIds": [
+        "basil",
+        "thyme",
+        "rosemary",
+        "parsley",
+        "mint",
+        "cilantro",
+        "dill",
+        "chives",
+        "sage",
+        "bay-leaf",
+        "tarragon",
+        "lemongrass"
+      ]
+    },
+    {
+      "id": "dairy-refrigerated",
+      "title": "Dairy & Refrigerated",
+      "wordIds": [
+        "milk",
+        "cheese",
+        "yogurt",
+        "butter",
+        "eggs",
+        "cream",
+        "juice",
+        "ice-cream",
+        "frozen-pizza",
+        "frozen-vegetables",
+        "sour-cream",
+        "whipped-cream",
+        "cottage-cheese",
+        "tofu",
+        "cream-cheese",
+        "margarine",
+        "mozzarella",
+        "cheddar",
+        "parmesan",
+        "feta",
+        "almond-milk",
+        "oat-milk"
+      ]
+    },
+    {
+      "id": "bakery-grains",
+      "title": "Bakery & Grains",
+      "wordIds": [
+        "bread",
+        "bagel",
+        "croissant",
+        "muffin",
+        "cake",
+        "rice",
+        "pasta",
+        "cereal",
+        "flour",
+        "tortilla",
+        "donut",
+        "pie",
+        "biscuit",
+        "pancake-mix",
+        "oatmeal",
+        "cornbread",
+        "baguette",
+        "pita",
+        "naan",
+        "roll",
+        "waffle",
+        "sourdough",
+        "noodles",
+        "couscous",
+        "quinoa",
+        "whole-wheat-bread"
+      ]
+    },
+    {
+      "id": "meat-seafood",
+      "title": "Meat & Seafood",
+      "wordIds": [
+        "chicken",
+        "beef",
+        "pork",
+        "fish",
+        "shrimp",
+        "sausage",
+        "bacon",
+        "turkey",
+        "salmon",
+        "tuna",
+        "lamb",
+        "duck",
+        "lobster",
+        "crab",
+        "ham",
+        "ground-beef",
+        "steak",
+        "ribs",
+        "drumstick",
+        "wing",
+        "clam",
+        "oyster",
+        "squid",
+        "cod"
+      ]
+    },
+    {
+      "id": "aisles-sections",
+      "title": "Aisles & Sections",
+      "wordIds": [
+        "shopping-cart",
+        "basket",
+        "shelf",
+        "aisle",
+        "checkout",
+        "barcode",
+        "receipt",
+        "coupon",
+        "price-tag",
+        "scale",
+        "cashier",
+        "cash-register",
+        "self-checkout",
+        "conveyor-belt",
+        "scanner",
+        "deli-counter",
+        "express-lane",
+        "loyalty-card",
+        "sale-sign",
+        "expiration-date"
+      ]
+    },
+    {
+      "id": "household-cleaning",
+      "title": "Household & Cleaning",
+      "wordIds": [
+        "soap",
+        "detergent",
+        "sponge",
+        "paper-towel",
+        "trash-bag",
+        "bleach",
+        "mop",
+        "broom",
+        "light-bulb",
+        "battery",
+        "dish-soap",
+        "toilet-paper",
+        "napkin",
+        "aluminum-foil",
+        "plastic-wrap",
+        "rubber-gloves",
+        "dustpan",
+        "air-freshener",
+        "disinfectant",
+        "bucket"
+      ]
+    },
+    {
+      "id": "beverages",
+      "title": "Beverages",
+      "wordIds": [
+        "water",
+        "soda",
+        "coffee",
+        "tea",
+        "lemonade",
+        "energy-drink",
+        "beer",
+        "wine",
+        "sparkling-water",
+        "hot-chocolate",
+        "milk-carton",
+        "orange-juice",
+        "iced-tea",
+        "coconut-water",
+        "smoothie",
+        "apple-juice",
+        "milkshake",
+        "ginger-ale",
+        "mineral-water",
+        "champagne"
+      ]
+    },
+    {
+      "id": "snacks-sweets",
+      "title": "Snacks & Sweets",
+      "wordIds": [
+        "chips",
+        "cookies",
+        "chocolate",
+        "candy",
+        "crackers",
+        "popcorn",
+        "nuts",
+        "gum",
+        "granola-bar",
+        "pretzels",
+        "brownie",
+        "pudding",
+        "trail-mix",
+        "dried-fruit",
+        "marshmallow",
+        "lollipop",
+        "jelly",
+        "ice-pop"
+      ]
+    },
+    {
+      "id": "canned-packaged",
+      "title": "Canned & Packaged Foods",
+      "wordIds": [
+        "canned-soup",
+        "peanut-butter",
+        "jam",
+        "ketchup",
+        "mustard",
+        "mayonnaise",
+        "canned-beans",
+        "salsa",
+        "pickles",
+        "olive-oil",
+        "tomato-sauce",
+        "coconut-milk",
+        "tuna-can",
+        "sardines",
+        "honey",
+        "maple-syrup",
+        "tomato-paste",
+        "broth",
+        "vegetable-oil",
+        "bbq-sauce",
+        "almond-butter",
+        "nutella",
+        "relish",
+        "marmalade"
+      ]
+    },
+    {
+      "id": "condiments-spices",
+      "title": "Condiments & Spices",
+      "wordIds": [
+        "salt",
+        "pepper",
+        "sugar",
+        "honey",
+        "vinegar",
+        "soy-sauce",
+        "hot-sauce",
+        "cinnamon",
+        "garlic",
+        "oregano",
+        "cumin",
+        "paprika",
+        "turmeric",
+        "nutmeg",
+        "ginger-powder",
+        "chili-flakes",
+        "vanilla-extract",
+        "baking-soda",
+        "baking-powder",
+        "brown-sugar",
+        "curry-powder",
+        "cayenne",
+        "cloves",
+        "cardamom"
+      ]
+    },
+    {
+      "id": "personal-care",
+      "title": "Personal Care",
+      "wordIds": [
+        "shampoo",
+        "toothpaste",
+        "toothbrush",
+        "deodorant",
+        "razor",
+        "tissue",
+        "lotion",
+        "sunscreen",
+        "band-aid",
+        "diapers",
+        "conditioner",
+        "body-wash",
+        "mouthwash",
+        "dental-floss",
+        "cotton-balls",
+        "comb",
+        "lip-balm",
+        "hand-sanitizer",
+        "vitamins",
+        "medicine"
+      ]
+    },
+    {
+      "id": "containers-packaging",
+      "title": "Containers & Packaging",
+      "wordIds": [
+        "can",
+        "bottle",
+        "box",
+        "jar",
+        "bag",
+        "carton",
+        "tube",
+        "wrapper",
+        "package",
+        "container",
+        "crate",
+        "tray",
+        "bunch",
+        "loaf",
+        "dozen",
+        "pouch"
+      ]
+    },
+    {
+      "id": "action-verbs",
+      "title": "Action Verbs",
+      "wordIds": [
+        "push",
+        "pull",
+        "weigh",
+        "scan",
+        "bag",
+        "pay",
+        "unload",
+        "stock",
+        "choose",
+        "compare",
+        "reach",
+        "carry",
+        "check-out",
+        "wait-in-line",
+        "load",
+        "browse"
+      ]
+    },
+    {
+      "id": "people-roles",
+      "title": "People & Roles",
+      "wordIds": [
+        "customer",
+        "cashier",
+        "bagger",
+        "stock-clerk",
+        "butcher",
+        "baker",
+        "manager",
+        "shopper",
+        "security-guard",
+        "delivery-driver"
+      ]
+    },
+    {
+      "id": "quantities",
+      "title": "Quantities & Measurements",
+      "wordIds": [
+        "a-pound-of",
+        "a-gallon-of",
+        "a-bunch-of",
+        "a-head-of",
+        "a-loaf-of",
+        "a-dozen",
+        "a-slice-of",
+        "a-piece-of",
+        "a-pack-of",
+        "a-handful-of",
+        "a-pint-of",
+        "a-stick-of"
+      ]
+    },
+    {
+      "id": "signs-labels",
+      "title": "Signs & Labels",
+      "wordIds": [
+        "organic",
+        "gluten-free",
+        "sugar-free",
+        "low-fat",
+        "fresh",
+        "frozen",
+        "on-sale",
+        "buy-1-get-1-free",
+        "best-before",
+        "nutrition-facts",
+        "non-gmo",
+        "vegan"
+      ]
+    },
+    {
+      "id": "common-phrases",
+      "title": "Common Phrases",
+      "wordIds": [
+        "how-much-is-this-",
+        "where-can-i-find-",
+        "paper-or-plastic-",
+        "is-this-on-sale-",
+        "cash-or-card-",
+        "do-you-have-",
+        "can-i-get-a-bag-",
+        "i-need-a-refund",
+        "where-is-aisle-",
+        "is-this-fresh-",
+        "can-i-taste-this-",
+        "i-have-a-coupon",
+        "ginger",
+        "cart",
+        "salami",
+        "hummus"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "apple",
+      "label": "Apple",
+      "ipa": "/ˈæpəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:31"
+    },
+    {
+      "kind": "card",
+      "id": "banana",
+      "label": "Banana",
+      "ipa": "/bəˈnænə/",
+      "cefr": "B1",
+      "imageNodeId": "119:35"
+    },
+    {
+      "kind": "card",
+      "id": "orange",
+      "label": "Orange",
+      "ipa": "/ˈɒrɪndʒ/",
+      "cefr": "B1",
+      "imageNodeId": "119:39"
+    },
+    {
+      "kind": "card",
+      "id": "grapes",
+      "label": "Grapes",
+      "ipa": "/ɡreɪps/",
+      "cefr": "B1",
+      "imageNodeId": "119:43"
+    },
+    {
+      "kind": "card",
+      "id": "strawberry",
+      "label": "Strawberry",
+      "ipa": "/ˈstrɔːˌbɛri/",
+      "cefr": "B2",
+      "imageNodeId": "119:47"
+    },
+    {
+      "kind": "card",
+      "id": "tomato",
+      "label": "Tomato",
+      "ipa": "/təˈmeɪtoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "119:51"
+    },
+    {
+      "kind": "card",
+      "id": "lettuce",
+      "label": "Lettuce",
+      "ipa": "/ˈlɛtɪs/",
+      "cefr": "B1",
+      "imageNodeId": "119:55"
+    },
+    {
+      "kind": "card",
+      "id": "carrot",
+      "label": "Carrot",
+      "ipa": "/ˈkærət/",
+      "cefr": "B1",
+      "imageNodeId": "119:59"
+    },
+    {
+      "kind": "card",
+      "id": "potato",
+      "label": "Potato",
+      "ipa": "/pəˈteɪtoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "119:63"
+    },
+    {
+      "kind": "card",
+      "id": "onion",
+      "label": "Onion",
+      "ipa": "/ˈʌnjən/",
+      "cefr": "B1",
+      "imageNodeId": "119:67"
+    },
+    {
+      "kind": "card",
+      "id": "watermelon",
+      "label": "Watermelon",
+      "ipa": "/ˈwɔːtərˌmɛlən/",
+      "cefr": "B2",
+      "imageNodeId": "160:3"
+    },
+    {
+      "kind": "card",
+      "id": "pineapple",
+      "label": "Pineapple",
+      "ipa": "/ˈpaɪnˌæpəl/",
+      "cefr": "B1",
+      "imageNodeId": "160:7"
+    },
+    {
+      "kind": "card",
+      "id": "mango",
+      "label": "Mango",
+      "ipa": "/ˈmæŋɡoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "160:11"
+    },
+    {
+      "kind": "card",
+      "id": "peach",
+      "label": "Peach",
+      "ipa": "/piːtʃ/",
+      "cefr": "B1",
+      "imageNodeId": "160:15"
+    },
+    {
+      "kind": "card",
+      "id": "pear",
+      "label": "Pear",
+      "ipa": "/pɛər/",
+      "cefr": "B1",
+      "imageNodeId": "160:19"
+    },
+    {
+      "kind": "card",
+      "id": "plum",
+      "label": "Plum",
+      "ipa": "/plʌm/",
+      "cefr": "B1",
+      "imageNodeId": "160:23"
+    },
+    {
+      "kind": "card",
+      "id": "cherry",
+      "label": "Cherry",
+      "ipa": "/ˈtʃɛri/",
+      "cefr": "B1",
+      "imageNodeId": "160:27"
+    },
+    {
+      "kind": "card",
+      "id": "blueberry",
+      "label": "Blueberry",
+      "ipa": "/ˈbluːˌbɛri/",
+      "cefr": "B1",
+      "imageNodeId": "160:31"
+    },
+    {
+      "kind": "card",
+      "id": "raspberry",
+      "label": "Raspberry",
+      "ipa": "/ˈræzˌbɛri/",
+      "cefr": "B1",
+      "imageNodeId": "160:35"
+    },
+    {
+      "kind": "card",
+      "id": "lemon",
+      "label": "Lemon",
+      "ipa": "/ˈlɛmən/",
+      "cefr": "B1",
+      "imageNodeId": "160:39"
+    },
+    {
+      "kind": "card",
+      "id": "lime",
+      "label": "Lime",
+      "ipa": "/laɪm/",
+      "cefr": "B1",
+      "imageNodeId": "160:43"
+    },
+    {
+      "kind": "card",
+      "id": "avocado",
+      "label": "Avocado",
+      "ipa": "/ˌævəˈkɑːdoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "160:47"
+    },
+    {
+      "kind": "card",
+      "id": "coconut",
+      "label": "Coconut",
+      "ipa": "/ˈkoʊkəˌnʌt/",
+      "cefr": "B1",
+      "imageNodeId": "160:51"
+    },
+    {
+      "kind": "card",
+      "id": "kiwi",
+      "label": "Kiwi",
+      "ipa": "/ˈkiːwi/",
+      "cefr": "B1",
+      "imageNodeId": "160:55"
+    },
+    {
+      "kind": "card",
+      "id": "pomegranate",
+      "label": "Pomegranate",
+      "ipa": "/ˈpɒmɪˌɡrænɪt/",
+      "cefr": "B2",
+      "imageNodeId": "160:59"
+    },
+    {
+      "kind": "card",
+      "id": "grapefruit",
+      "label": "Grapefruit",
+      "ipa": "/ˈɡreɪpˌfruːt/",
+      "cefr": "B2",
+      "imageNodeId": "160:63"
+    },
+    {
+      "kind": "card",
+      "id": "cantaloupe",
+      "label": "Cantaloupe",
+      "ipa": "/ˈkæntəˌloʊp/",
+      "cefr": "B2",
+      "imageNodeId": "160:67"
+    },
+    {
+      "kind": "card",
+      "id": "fig",
+      "label": "Fig",
+      "ipa": "/fɪɡ/",
+      "cefr": "B1",
+      "imageNodeId": "160:71"
+    },
+    {
+      "kind": "card",
+      "id": "broccoli",
+      "label": "Broccoli",
+      "ipa": "/ˈbrɒkəli/",
+      "cefr": "B1",
+      "imageNodeId": "160:75"
+    },
+    {
+      "kind": "card",
+      "id": "cauliflower",
+      "label": "Cauliflower",
+      "ipa": "/ˈkɒlɪˌflaʊər/",
+      "cefr": "B2",
+      "imageNodeId": "160:79"
+    },
+    {
+      "kind": "card",
+      "id": "cucumber",
+      "label": "Cucumber",
+      "ipa": "/ˈkjuːˌkʌmbər/",
+      "cefr": "B1",
+      "imageNodeId": "160:83"
+    },
+    {
+      "kind": "card",
+      "id": "bell-pepper",
+      "label": "Bell Pepper",
+      "ipa": "/bɛl ˈpɛpər/",
+      "cefr": "B2",
+      "imageNodeId": "160:87"
+    },
+    {
+      "kind": "card",
+      "id": "corn",
+      "label": "Corn",
+      "ipa": "/kɔːrn/",
+      "cefr": "B1",
+      "imageNodeId": "160:91"
+    },
+    {
+      "kind": "card",
+      "id": "spinach",
+      "label": "Spinach",
+      "ipa": "/ˈspɪnɪtʃ/",
+      "cefr": "B1",
+      "imageNodeId": "160:95"
+    },
+    {
+      "kind": "card",
+      "id": "mushroom",
+      "label": "Mushroom",
+      "ipa": "/ˈmʌʃruːm/",
+      "cefr": "B1",
+      "imageNodeId": "160:99"
+    },
+    {
+      "kind": "card",
+      "id": "celery",
+      "label": "Celery",
+      "ipa": "/ˈsɛləri/",
+      "cefr": "B1",
+      "imageNodeId": "160:103"
+    },
+    {
+      "kind": "card",
+      "id": "zucchini",
+      "label": "Zucchini",
+      "ipa": "/zuˈkiːni/",
+      "cefr": "B1",
+      "imageNodeId": "160:107"
+    },
+    {
+      "kind": "card",
+      "id": "eggplant",
+      "label": "Eggplant",
+      "ipa": "/ˈɛɡˌplænt/",
+      "cefr": "B1",
+      "imageNodeId": "160:111"
+    },
+    {
+      "kind": "card",
+      "id": "peas",
+      "label": "Peas",
+      "ipa": "/piːz/",
+      "cefr": "B1",
+      "imageNodeId": "160:115"
+    },
+    {
+      "kind": "card",
+      "id": "green-beans",
+      "label": "Green Beans",
+      "ipa": "/ɡriːn biːnz/",
+      "cefr": "B2",
+      "imageNodeId": "160:119"
+    },
+    {
+      "kind": "card",
+      "id": "cabbage",
+      "label": "Cabbage",
+      "ipa": "/ˈkæbɪdʒ/",
+      "cefr": "B1",
+      "imageNodeId": "160:123"
+    },
+    {
+      "kind": "card",
+      "id": "sweet-potato",
+      "label": "Sweet Potato",
+      "ipa": "/swiːt pəˈteɪtoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "160:127"
+    },
+    {
+      "kind": "card",
+      "id": "pumpkin",
+      "label": "Pumpkin",
+      "ipa": "/ˈpʌmpkɪn/",
+      "cefr": "B1",
+      "imageNodeId": "160:131"
+    },
+    {
+      "kind": "card",
+      "id": "asparagus",
+      "label": "Asparagus",
+      "ipa": "/əˈspærəɡəs/",
+      "cefr": "B1",
+      "imageNodeId": "160:135"
+    },
+    {
+      "kind": "card",
+      "id": "radish",
+      "label": "Radish",
+      "ipa": "/ˈrædɪʃ/",
+      "cefr": "B1",
+      "imageNodeId": "160:139"
+    },
+    {
+      "kind": "card",
+      "id": "beet",
+      "label": "Beet",
+      "ipa": "/biːt/",
+      "cefr": "B1",
+      "imageNodeId": "160:143"
+    },
+    {
+      "kind": "card",
+      "id": "apricot",
+      "label": "Apricot",
+      "ipa": "/ˈeɪprɪˌkɒt/",
+      "cefr": "B1",
+      "imageNodeId": "165:3"
+    },
+    {
+      "kind": "card",
+      "id": "nectarine",
+      "label": "Nectarine",
+      "ipa": "/ˈnɛktəˌriːn/",
+      "cefr": "B1",
+      "imageNodeId": "165:7"
+    },
+    {
+      "kind": "card",
+      "id": "blackberry",
+      "label": "Blackberry",
+      "ipa": "/ˈblækˌbɛri/",
+      "cefr": "B2",
+      "imageNodeId": "165:11"
+    },
+    {
+      "kind": "card",
+      "id": "cranberry",
+      "label": "Cranberry",
+      "ipa": "/ˈkrænˌbɛri/",
+      "cefr": "B1",
+      "imageNodeId": "165:15"
+    },
+    {
+      "kind": "card",
+      "id": "tangerine",
+      "label": "Tangerine",
+      "ipa": "/ˌtændʒəˈriːn/",
+      "cefr": "B1",
+      "imageNodeId": "165:19"
+    },
+    {
+      "kind": "card",
+      "id": "papaya",
+      "label": "Papaya",
+      "ipa": "/pəˈpaɪə/",
+      "cefr": "B1",
+      "imageNodeId": "165:23"
+    },
+    {
+      "kind": "card",
+      "id": "kale",
+      "label": "Kale",
+      "ipa": "/keɪl/",
+      "cefr": "B1",
+      "imageNodeId": "165:27"
+    },
+    {
+      "kind": "card",
+      "id": "leek",
+      "label": "Leek",
+      "ipa": "/liːk/",
+      "cefr": "B1",
+      "imageNodeId": "165:31"
+    },
+    {
+      "kind": "card",
+      "id": "brussels-sprouts",
+      "label": "Brussels Sprouts",
+      "ipa": "/ˈbrʌsəlz spraʊts/",
+      "cefr": "C1",
+      "imageNodeId": "165:35"
+    },
+    {
+      "kind": "card",
+      "id": "green-onion",
+      "label": "Green Onion",
+      "ipa": "/ɡriːn ˈʌnjən/",
+      "cefr": "B2",
+      "imageNodeId": "165:39"
+    },
+    {
+      "kind": "card",
+      "id": "turnip",
+      "label": "Turnip",
+      "ipa": "/ˈtɜːrnɪp/",
+      "cefr": "B1",
+      "imageNodeId": "165:43"
+    },
+    {
+      "kind": "card",
+      "id": "artichoke",
+      "label": "Artichoke",
+      "ipa": "/ˈɑːrtɪˌtʃoʊk/",
+      "cefr": "B1",
+      "imageNodeId": "165:47"
+    },
+    {
+      "kind": "card",
+      "id": "jalapeño",
+      "label": "Jalapeño",
+      "ipa": "/ˌhæləˈpeɪnjoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "165:51"
+    },
+    {
+      "kind": "card",
+      "id": "squash",
+      "label": "Squash",
+      "ipa": "/skwɒʃ/",
+      "cefr": "B1",
+      "imageNodeId": "165:55"
+    },
+    {
+      "kind": "card",
+      "id": "basil",
+      "label": "Basil",
+      "ipa": "/ˈbæzəl/",
+      "cefr": "B1",
+      "imageNodeId": "160:152"
+    },
+    {
+      "kind": "card",
+      "id": "thyme",
+      "label": "Thyme",
+      "ipa": "/taɪm/",
+      "cefr": "B1",
+      "imageNodeId": "160:156"
+    },
+    {
+      "kind": "card",
+      "id": "rosemary",
+      "label": "Rosemary",
+      "ipa": "/ˈroʊzˌmɛri/",
+      "cefr": "B1",
+      "imageNodeId": "160:160"
+    },
+    {
+      "kind": "card",
+      "id": "parsley",
+      "label": "Parsley",
+      "ipa": "/ˈpɑːrsli/",
+      "cefr": "B1",
+      "imageNodeId": "160:164"
+    },
+    {
+      "kind": "card",
+      "id": "mint",
+      "label": "Mint",
+      "ipa": "/mɪnt/",
+      "cefr": "B1",
+      "imageNodeId": "160:168"
+    },
+    {
+      "kind": "card",
+      "id": "cilantro",
+      "label": "Cilantro",
+      "ipa": "/sɪˈlæntroʊ/",
+      "cefr": "B1",
+      "imageNodeId": "160:172"
+    },
+    {
+      "kind": "card",
+      "id": "dill",
+      "label": "Dill",
+      "ipa": "/dɪl/",
+      "cefr": "B1",
+      "imageNodeId": "160:176"
+    },
+    {
+      "kind": "card",
+      "id": "chives",
+      "label": "Chives",
+      "ipa": "/tʃaɪvz/",
+      "cefr": "B1",
+      "imageNodeId": "160:180"
+    },
+    {
+      "kind": "card",
+      "id": "sage",
+      "label": "Sage",
+      "ipa": "/seɪdʒ/",
+      "cefr": "B1",
+      "imageNodeId": "160:184"
+    },
+    {
+      "kind": "card",
+      "id": "bay-leaf",
+      "label": "Bay Leaf",
+      "ipa": "/beɪ liːf/",
+      "cefr": "B2",
+      "imageNodeId": "160:188"
+    },
+    {
+      "kind": "card",
+      "id": "tarragon",
+      "label": "Tarragon",
+      "ipa": "/ˈtærəɡɒn/",
+      "cefr": "B1",
+      "imageNodeId": "165:59"
+    },
+    {
+      "kind": "card",
+      "id": "lemongrass",
+      "label": "Lemongrass",
+      "ipa": "/ˈlɛmənˌɡræs/",
+      "cefr": "B2",
+      "imageNodeId": "165:63"
+    },
+    {
+      "kind": "card",
+      "id": "milk",
+      "label": "Milk",
+      "ipa": "/mɪlk/",
+      "cefr": "B1",
+      "imageNodeId": "119:76"
+    },
+    {
+      "kind": "card",
+      "id": "cheese",
+      "label": "Cheese",
+      "ipa": "/tʃiːz/",
+      "cefr": "B1",
+      "imageNodeId": "119:80"
+    },
+    {
+      "kind": "card",
+      "id": "yogurt",
+      "label": "Yogurt",
+      "ipa": "/ˈjoʊɡərt/",
+      "cefr": "B1",
+      "imageNodeId": "119:84"
+    },
+    {
+      "kind": "card",
+      "id": "butter",
+      "label": "Butter",
+      "ipa": "/ˈbʌtər/",
+      "cefr": "B1",
+      "imageNodeId": "119:88"
+    },
+    {
+      "kind": "card",
+      "id": "eggs",
+      "label": "Eggs",
+      "ipa": "/ɛɡz/",
+      "cefr": "B1",
+      "imageNodeId": "119:92"
+    },
+    {
+      "kind": "card",
+      "id": "cream",
+      "label": "Cream",
+      "ipa": "/kriːm/",
+      "cefr": "B1",
+      "imageNodeId": "119:96"
+    },
+    {
+      "kind": "card",
+      "id": "juice",
+      "label": "Juice",
+      "ipa": "/dʒuːs/",
+      "cefr": "B1",
+      "imageNodeId": "119:100"
+    },
+    {
+      "kind": "card",
+      "id": "ice-cream",
+      "label": "Ice Cream",
+      "ipa": "/aɪs kriːm/",
+      "cefr": "B2",
+      "imageNodeId": "119:104"
+    },
+    {
+      "kind": "card",
+      "id": "frozen-pizza",
+      "label": "Frozen Pizza",
+      "ipa": "/ˈfroʊzən ˈpiːtsə/",
+      "cefr": "B2",
+      "imageNodeId": "119:108"
+    },
+    {
+      "kind": "card",
+      "id": "frozen-vegetables",
+      "label": "Frozen Vegetables",
+      "ipa": "/ˈfroʊzən ˈvɛdʒtəbəlz/",
+      "cefr": "C1",
+      "imageNodeId": "119:112"
+    },
+    {
+      "kind": "card",
+      "id": "sour-cream",
+      "label": "Sour Cream",
+      "ipa": "/ˈsaʊər kriːm/",
+      "cefr": "B2",
+      "imageNodeId": "160:344"
+    },
+    {
+      "kind": "card",
+      "id": "whipped-cream",
+      "label": "Whipped Cream",
+      "ipa": "/wɪpt kriːm/",
+      "cefr": "B2",
+      "imageNodeId": "160:348"
+    },
+    {
+      "kind": "card",
+      "id": "cottage-cheese",
+      "label": "Cottage Cheese",
+      "ipa": "/ˈkɒtɪdʒ tʃiːz/",
+      "cefr": "B2",
+      "imageNodeId": "160:352"
+    },
+    {
+      "kind": "card",
+      "id": "tofu",
+      "label": "Tofu",
+      "ipa": "/ˈtoʊfuː/",
+      "cefr": "B1",
+      "imageNodeId": "160:356"
+    },
+    {
+      "kind": "card",
+      "id": "cream-cheese",
+      "label": "Cream Cheese",
+      "ipa": "/kriːm tʃiːz/",
+      "cefr": "B2",
+      "imageNodeId": "165:67"
+    },
+    {
+      "kind": "card",
+      "id": "margarine",
+      "label": "Margarine",
+      "ipa": "/ˈmɑːrdʒərɪn/",
+      "cefr": "B1",
+      "imageNodeId": "165:71"
+    },
+    {
+      "kind": "card",
+      "id": "mozzarella",
+      "label": "Mozzarella",
+      "ipa": "/ˌmɒtsəˈrɛlə/",
+      "cefr": "B2",
+      "imageNodeId": "165:75"
+    },
+    {
+      "kind": "card",
+      "id": "cheddar",
+      "label": "Cheddar",
+      "ipa": "/ˈtʃɛdər/",
+      "cefr": "B1",
+      "imageNodeId": "165:79"
+    },
+    {
+      "kind": "card",
+      "id": "parmesan",
+      "label": "Parmesan",
+      "ipa": "/ˈpɑːrmɪˌzæn/",
+      "cefr": "B1",
+      "imageNodeId": "165:83"
+    },
+    {
+      "kind": "card",
+      "id": "feta",
+      "label": "Feta",
+      "ipa": "/ˈfɛtə/",
+      "cefr": "B1",
+      "imageNodeId": "165:87"
+    },
+    {
+      "kind": "card",
+      "id": "almond-milk",
+      "label": "Almond Milk",
+      "ipa": "/ˈɑːmənd mɪlk/",
+      "cefr": "B2",
+      "imageNodeId": "165:91"
+    },
+    {
+      "kind": "card",
+      "id": "oat-milk",
+      "label": "Oat Milk",
+      "ipa": "/oʊt mɪlk/",
+      "cefr": "B2",
+      "imageNodeId": "165:95"
+    },
+    {
+      "kind": "card",
+      "id": "bread",
+      "label": "Bread",
+      "ipa": "/brɛd/",
+      "cefr": "B1",
+      "imageNodeId": "119:121"
+    },
+    {
+      "kind": "card",
+      "id": "bagel",
+      "label": "Bagel",
+      "ipa": "/ˈbeɪɡəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:125"
+    },
+    {
+      "kind": "card",
+      "id": "croissant",
+      "label": "Croissant",
+      "ipa": "/kwɑːˈsɒ̃/",
+      "cefr": "B1",
+      "imageNodeId": "119:129"
+    },
+    {
+      "kind": "card",
+      "id": "muffin",
+      "label": "Muffin",
+      "ipa": "/ˈmʌfɪn/",
+      "cefr": "B1",
+      "imageNodeId": "119:133"
+    },
+    {
+      "kind": "card",
+      "id": "cake",
+      "label": "Cake",
+      "ipa": "/keɪk/",
+      "cefr": "B1",
+      "imageNodeId": "119:137"
+    },
+    {
+      "kind": "card",
+      "id": "rice",
+      "label": "Rice",
+      "ipa": "/raɪs/",
+      "cefr": "B1",
+      "imageNodeId": "119:141"
+    },
+    {
+      "kind": "card",
+      "id": "pasta",
+      "label": "Pasta",
+      "ipa": "/ˈpæstə/",
+      "cefr": "B1",
+      "imageNodeId": "119:145"
+    },
+    {
+      "kind": "card",
+      "id": "cereal",
+      "label": "Cereal",
+      "ipa": "/ˈsɪəriəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:149"
+    },
+    {
+      "kind": "card",
+      "id": "flour",
+      "label": "Flour",
+      "ipa": "/ˈflaʊər/",
+      "cefr": "B1",
+      "imageNodeId": "119:153"
+    },
+    {
+      "kind": "card",
+      "id": "tortilla",
+      "label": "Tortilla",
+      "ipa": "/tɔːrˈtiːjə/",
+      "cefr": "B1",
+      "imageNodeId": "119:157"
+    },
+    {
+      "kind": "card",
+      "id": "donut",
+      "label": "Donut",
+      "ipa": "/ˈdoʊˌnʌt/",
+      "cefr": "B1",
+      "imageNodeId": "160:296"
+    },
+    {
+      "kind": "card",
+      "id": "pie",
+      "label": "Pie",
+      "ipa": "/paɪ/",
+      "cefr": "B1",
+      "imageNodeId": "160:300"
+    },
+    {
+      "kind": "card",
+      "id": "biscuit",
+      "label": "Biscuit",
+      "ipa": "/ˈbɪskɪt/",
+      "cefr": "B1",
+      "imageNodeId": "160:304"
+    },
+    {
+      "kind": "card",
+      "id": "pancake-mix",
+      "label": "Pancake Mix",
+      "ipa": "/ˈpænˌkeɪk mɪks/",
+      "cefr": "B2",
+      "imageNodeId": "160:308"
+    },
+    {
+      "kind": "card",
+      "id": "oatmeal",
+      "label": "Oatmeal",
+      "ipa": "/ˈoʊtˌmiːl/",
+      "cefr": "B1",
+      "imageNodeId": "160:312"
+    },
+    {
+      "kind": "card",
+      "id": "cornbread",
+      "label": "Cornbread",
+      "ipa": "/ˈkɔːrnˌbrɛd/",
+      "cefr": "B1",
+      "imageNodeId": "160:316"
+    },
+    {
+      "kind": "card",
+      "id": "baguette",
+      "label": "Baguette",
+      "ipa": "/bæˈɡɛt/",
+      "cefr": "B1",
+      "imageNodeId": "165:99"
+    },
+    {
+      "kind": "card",
+      "id": "pita",
+      "label": "Pita",
+      "ipa": "/ˈpiːtə/",
+      "cefr": "B1",
+      "imageNodeId": "165:103"
+    },
+    {
+      "kind": "card",
+      "id": "naan",
+      "label": "Naan",
+      "ipa": "/nɑːn/",
+      "cefr": "B1",
+      "imageNodeId": "165:107"
+    },
+    {
+      "kind": "card",
+      "id": "roll",
+      "label": "Roll",
+      "ipa": "/roʊl/",
+      "cefr": "B1",
+      "imageNodeId": "165:111"
+    },
+    {
+      "kind": "card",
+      "id": "waffle",
+      "label": "Waffle",
+      "ipa": "/ˈwɒfəl/",
+      "cefr": "B1",
+      "imageNodeId": "165:115"
+    },
+    {
+      "kind": "card",
+      "id": "sourdough",
+      "label": "Sourdough",
+      "ipa": "/ˈsaʊərˌdoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "165:119"
+    },
+    {
+      "kind": "card",
+      "id": "noodles",
+      "label": "Noodles",
+      "ipa": "/ˈnuːdəlz/",
+      "cefr": "B1",
+      "imageNodeId": "165:123"
+    },
+    {
+      "kind": "card",
+      "id": "couscous",
+      "label": "Couscous",
+      "ipa": "/ˈkuːskuːs/",
+      "cefr": "B1",
+      "imageNodeId": "165:127"
+    },
+    {
+      "kind": "card",
+      "id": "quinoa",
+      "label": "Quinoa",
+      "ipa": "/ˈkiːnˌwɑː/",
+      "cefr": "B1",
+      "imageNodeId": "165:131"
+    },
+    {
+      "kind": "card",
+      "id": "whole-wheat-bread",
+      "label": "Whole Wheat Bread",
+      "ipa": "/hoʊl wiːt brɛd/",
+      "cefr": "C1",
+      "imageNodeId": "165:135"
+    },
+    {
+      "kind": "card",
+      "id": "chicken",
+      "label": "Chicken",
+      "ipa": "/ˈtʃɪkɪn/",
+      "cefr": "B1",
+      "imageNodeId": "119:166"
+    },
+    {
+      "kind": "card",
+      "id": "beef",
+      "label": "Beef",
+      "ipa": "/biːf/",
+      "cefr": "B1",
+      "imageNodeId": "119:170"
+    },
+    {
+      "kind": "card",
+      "id": "pork",
+      "label": "Pork",
+      "ipa": "/pɔːrk/",
+      "cefr": "B1",
+      "imageNodeId": "119:174"
+    },
+    {
+      "kind": "card",
+      "id": "fish",
+      "label": "Fish",
+      "ipa": "/fɪʃ/",
+      "cefr": "B1",
+      "imageNodeId": "119:178"
+    },
+    {
+      "kind": "card",
+      "id": "shrimp",
+      "label": "Shrimp",
+      "ipa": "/ʃrɪmp/",
+      "cefr": "B1",
+      "imageNodeId": "119:182"
+    },
+    {
+      "kind": "card",
+      "id": "sausage",
+      "label": "Sausage",
+      "ipa": "/ˈsɒsɪdʒ/",
+      "cefr": "B1",
+      "imageNodeId": "119:186"
+    },
+    {
+      "kind": "card",
+      "id": "bacon",
+      "label": "Bacon",
+      "ipa": "/ˈbeɪkən/",
+      "cefr": "B1",
+      "imageNodeId": "119:190"
+    },
+    {
+      "kind": "card",
+      "id": "turkey",
+      "label": "Turkey",
+      "ipa": "/ˈtɜːrki/",
+      "cefr": "B1",
+      "imageNodeId": "119:194"
+    },
+    {
+      "kind": "card",
+      "id": "salmon",
+      "label": "Salmon",
+      "ipa": "/ˈsæmən/",
+      "cefr": "B1",
+      "imageNodeId": "119:198"
+    },
+    {
+      "kind": "card",
+      "id": "tuna",
+      "label": "Tuna",
+      "ipa": "/ˈtjuːnə/",
+      "cefr": "B1",
+      "imageNodeId": "119:202"
+    },
+    {
+      "kind": "card",
+      "id": "lamb",
+      "label": "Lamb",
+      "ipa": "/læm/",
+      "cefr": "B1",
+      "imageNodeId": "160:360"
+    },
+    {
+      "kind": "card",
+      "id": "duck",
+      "label": "Duck",
+      "ipa": "/dʌk/",
+      "cefr": "B1",
+      "imageNodeId": "160:364"
+    },
+    {
+      "kind": "card",
+      "id": "lobster",
+      "label": "Lobster",
+      "ipa": "/ˈlɒbstər/",
+      "cefr": "B1",
+      "imageNodeId": "160:368"
+    },
+    {
+      "kind": "card",
+      "id": "crab",
+      "label": "Crab",
+      "ipa": "/kræb/",
+      "cefr": "B1",
+      "imageNodeId": "160:372"
+    },
+    {
+      "kind": "card",
+      "id": "ham",
+      "label": "Ham",
+      "ipa": "/hæm/",
+      "cefr": "B1",
+      "imageNodeId": "160:376"
+    },
+    {
+      "kind": "card",
+      "id": "ground-beef",
+      "label": "Ground Beef",
+      "ipa": "/ɡraʊnd biːf/",
+      "cefr": "B2",
+      "imageNodeId": "160:380"
+    },
+    {
+      "kind": "card",
+      "id": "steak",
+      "label": "Steak",
+      "ipa": "/steɪk/",
+      "cefr": "B1",
+      "imageNodeId": "165:139"
+    },
+    {
+      "kind": "card",
+      "id": "ribs",
+      "label": "Ribs",
+      "ipa": "/rɪbz/",
+      "cefr": "B1",
+      "imageNodeId": "165:143"
+    },
+    {
+      "kind": "card",
+      "id": "drumstick",
+      "label": "Drumstick",
+      "ipa": "/ˈdrʌmˌstɪk/",
+      "cefr": "B1",
+      "imageNodeId": "165:147"
+    },
+    {
+      "kind": "card",
+      "id": "wing",
+      "label": "Wing",
+      "ipa": "/wɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "165:151"
+    },
+    {
+      "kind": "card",
+      "id": "clam",
+      "label": "Clam",
+      "ipa": "/klæm/",
+      "cefr": "B1",
+      "imageNodeId": "165:155"
+    },
+    {
+      "kind": "card",
+      "id": "oyster",
+      "label": "Oyster",
+      "ipa": "/ˈɔɪstər/",
+      "cefr": "B1",
+      "imageNodeId": "165:159"
+    },
+    {
+      "kind": "card",
+      "id": "squid",
+      "label": "Squid",
+      "ipa": "/skwɪd/",
+      "cefr": "B1",
+      "imageNodeId": "165:163"
+    },
+    {
+      "kind": "card",
+      "id": "cod",
+      "label": "Cod",
+      "ipa": "/kɒd/",
+      "cefr": "B1",
+      "imageNodeId": "165:167"
+    },
+    {
+      "kind": "card",
+      "id": "shopping-cart",
+      "label": "Shopping Cart",
+      "ipa": "/ˈʃɒpɪŋ kɑːrt/",
+      "cefr": "B2",
+      "imageNodeId": "119:211"
+    },
+    {
+      "kind": "card",
+      "id": "basket",
+      "label": "Basket",
+      "ipa": "/ˈbæskɪt/",
+      "cefr": "B1",
+      "imageNodeId": "119:215"
+    },
+    {
+      "kind": "card",
+      "id": "shelf",
+      "label": "Shelf",
+      "ipa": "/ʃɛlf/",
+      "cefr": "B1",
+      "imageNodeId": "119:219"
+    },
+    {
+      "kind": "card",
+      "id": "aisle",
+      "label": "Aisle",
+      "ipa": "/aɪl/",
+      "cefr": "B1",
+      "imageNodeId": "119:223"
+    },
+    {
+      "kind": "card",
+      "id": "checkout",
+      "label": "Checkout",
+      "ipa": "/ˈtʃɛkaʊt/",
+      "cefr": "B1",
+      "imageNodeId": "119:227"
+    },
+    {
+      "kind": "card",
+      "id": "barcode",
+      "label": "Barcode",
+      "ipa": "/ˈbɑːrˌkoʊd/",
+      "cefr": "B1",
+      "imageNodeId": "119:231"
+    },
+    {
+      "kind": "card",
+      "id": "receipt",
+      "label": "Receipt",
+      "ipa": "/rɪˈsiːt/",
+      "cefr": "B1",
+      "imageNodeId": "119:235"
+    },
+    {
+      "kind": "card",
+      "id": "coupon",
+      "label": "Coupon",
+      "ipa": "/ˈkuːpɒn/",
+      "cefr": "B1",
+      "imageNodeId": "119:239"
+    },
+    {
+      "kind": "card",
+      "id": "price-tag",
+      "label": "Price Tag",
+      "ipa": "/praɪs tæɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:243"
+    },
+    {
+      "kind": "card",
+      "id": "scale",
+      "label": "Scale",
+      "ipa": "/skeɪl/",
+      "cefr": "B1",
+      "imageNodeId": "119:247"
+    },
+    {
+      "kind": "card",
+      "id": "cashier",
+      "label": "Cashier",
+      "ipa": "/kæˈʃɪər/",
+      "cefr": "B1",
+      "imageNodeId": "165:171"
+    },
+    {
+      "kind": "card",
+      "id": "cash-register",
+      "label": "Cash Register",
+      "ipa": "/kæʃ ˈrɛdʒɪstər/",
+      "cefr": "B2",
+      "imageNodeId": "165:175"
+    },
+    {
+      "kind": "card",
+      "id": "self-checkout",
+      "label": "Self-Checkout",
+      "ipa": "/sɛlf ˈtʃɛkaʊt/",
+      "cefr": "B2",
+      "imageNodeId": "165:179"
+    },
+    {
+      "kind": "card",
+      "id": "conveyor-belt",
+      "label": "Conveyor Belt",
+      "ipa": "/kənˈveɪər bɛlt/",
+      "cefr": "B2",
+      "imageNodeId": "165:183"
+    },
+    {
+      "kind": "card",
+      "id": "scanner",
+      "label": "Scanner",
+      "ipa": "/ˈskænər/",
+      "cefr": "B1",
+      "imageNodeId": "165:187"
+    },
+    {
+      "kind": "card",
+      "id": "deli-counter",
+      "label": "Deli Counter",
+      "ipa": "/ˈdɛli ˈkaʊntər/",
+      "cefr": "B2",
+      "imageNodeId": "165:191"
+    },
+    {
+      "kind": "card",
+      "id": "express-lane",
+      "label": "Express Lane",
+      "ipa": "/ɪkˈsprɛs leɪn/",
+      "cefr": "B2",
+      "imageNodeId": "165:195"
+    },
+    {
+      "kind": "card",
+      "id": "loyalty-card",
+      "label": "Loyalty Card",
+      "ipa": "/ˈlɔɪəlti kɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "165:199"
+    },
+    {
+      "kind": "card",
+      "id": "sale-sign",
+      "label": "Sale Sign",
+      "ipa": "/seɪl saɪn/",
+      "cefr": "B2",
+      "imageNodeId": "165:203"
+    },
+    {
+      "kind": "card",
+      "id": "expiration-date",
+      "label": "Expiration Date",
+      "ipa": "/ˌɛkspɪˈreɪʃən deɪt/",
+      "cefr": "C1",
+      "imageNodeId": "165:207"
+    },
+    {
+      "kind": "card",
+      "id": "soap",
+      "label": "Soap",
+      "ipa": "/soʊp/",
+      "cefr": "B1",
+      "imageNodeId": "119:256"
+    },
+    {
+      "kind": "card",
+      "id": "detergent",
+      "label": "Detergent",
+      "ipa": "/dɪˈtɜːrdʒənt/",
+      "cefr": "B1",
+      "imageNodeId": "119:260"
+    },
+    {
+      "kind": "card",
+      "id": "sponge",
+      "label": "Sponge",
+      "ipa": "/spʌndʒ/",
+      "cefr": "B1",
+      "imageNodeId": "119:264"
+    },
+    {
+      "kind": "card",
+      "id": "paper-towel",
+      "label": "Paper Towel",
+      "ipa": "/ˈpeɪpər ˈtaʊəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:268"
+    },
+    {
+      "kind": "card",
+      "id": "trash-bag",
+      "label": "Trash Bag",
+      "ipa": "/træʃ bæɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:272"
+    },
+    {
+      "kind": "card",
+      "id": "bleach",
+      "label": "Bleach",
+      "ipa": "/bliːtʃ/",
+      "cefr": "B1",
+      "imageNodeId": "119:276"
+    },
+    {
+      "kind": "card",
+      "id": "mop",
+      "label": "Mop",
+      "ipa": "/mɒp/",
+      "cefr": "B1",
+      "imageNodeId": "119:280"
+    },
+    {
+      "kind": "card",
+      "id": "broom",
+      "label": "Broom",
+      "ipa": "/bruːm/",
+      "cefr": "B1",
+      "imageNodeId": "119:284"
+    },
+    {
+      "kind": "card",
+      "id": "light-bulb",
+      "label": "Light Bulb",
+      "ipa": "/laɪt bʌlb/",
+      "cefr": "B2",
+      "imageNodeId": "119:288"
+    },
+    {
+      "kind": "card",
+      "id": "battery",
+      "label": "Battery",
+      "ipa": "/ˈbætəri/",
+      "cefr": "B1",
+      "imageNodeId": "119:292"
+    },
+    {
+      "kind": "card",
+      "id": "dish-soap",
+      "label": "Dish Soap",
+      "ipa": "/dɪʃ soʊp/",
+      "cefr": "B2",
+      "imageNodeId": "165:211"
+    },
+    {
+      "kind": "card",
+      "id": "toilet-paper",
+      "label": "Toilet Paper",
+      "ipa": "/ˈtɔɪlɪt ˈpeɪpər/",
+      "cefr": "B2",
+      "imageNodeId": "165:215"
+    },
+    {
+      "kind": "card",
+      "id": "napkin",
+      "label": "Napkin",
+      "ipa": "/ˈnæpkɪn/",
+      "cefr": "B1",
+      "imageNodeId": "165:219"
+    },
+    {
+      "kind": "card",
+      "id": "aluminum-foil",
+      "label": "Aluminum Foil",
+      "ipa": "/əˌluːmɪnəm fɔɪl/",
+      "cefr": "B2",
+      "imageNodeId": "165:223"
+    },
+    {
+      "kind": "card",
+      "id": "plastic-wrap",
+      "label": "Plastic Wrap",
+      "ipa": "/ˈplæstɪk ræp/",
+      "cefr": "B2",
+      "imageNodeId": "165:227"
+    },
+    {
+      "kind": "card",
+      "id": "rubber-gloves",
+      "label": "Rubber Gloves",
+      "ipa": "/ˈrʌbər ɡlʌvz/",
+      "cefr": "B2",
+      "imageNodeId": "165:231"
+    },
+    {
+      "kind": "card",
+      "id": "dustpan",
+      "label": "Dustpan",
+      "ipa": "/ˈdʌstˌpæn/",
+      "cefr": "B1",
+      "imageNodeId": "165:235"
+    },
+    {
+      "kind": "card",
+      "id": "air-freshener",
+      "label": "Air Freshener",
+      "ipa": "/ɛər ˈfrɛʃənər/",
+      "cefr": "B2",
+      "imageNodeId": "165:239"
+    },
+    {
+      "kind": "card",
+      "id": "disinfectant",
+      "label": "Disinfectant",
+      "ipa": "/ˌdɪsɪnˈfɛktənt/",
+      "cefr": "B2",
+      "imageNodeId": "165:243"
+    },
+    {
+      "kind": "card",
+      "id": "bucket",
+      "label": "Bucket",
+      "ipa": "/ˈbʌkɪt/",
+      "cefr": "B1",
+      "imageNodeId": "165:247"
+    },
+    {
+      "kind": "card",
+      "id": "water",
+      "label": "Water",
+      "ipa": "/ˈwɔːtər/",
+      "cefr": "B1",
+      "imageNodeId": "158:31"
+    },
+    {
+      "kind": "card",
+      "id": "soda",
+      "label": "Soda",
+      "ipa": "/ˈsoʊdə/",
+      "cefr": "B1",
+      "imageNodeId": "158:35"
+    },
+    {
+      "kind": "card",
+      "id": "coffee",
+      "label": "Coffee",
+      "ipa": "/ˈkɒfi/",
+      "cefr": "B1",
+      "imageNodeId": "158:39"
+    },
+    {
+      "kind": "card",
+      "id": "tea",
+      "label": "Tea",
+      "ipa": "/tiː/",
+      "cefr": "B1",
+      "imageNodeId": "158:43"
+    },
+    {
+      "kind": "card",
+      "id": "lemonade",
+      "label": "Lemonade",
+      "ipa": "/ˌlɛməˈneɪd/",
+      "cefr": "B1",
+      "imageNodeId": "158:47"
+    },
+    {
+      "kind": "card",
+      "id": "energy-drink",
+      "label": "Energy Drink",
+      "ipa": "/ˈɛnərdʒi drɪŋk/",
+      "cefr": "B2",
+      "imageNodeId": "158:51"
+    },
+    {
+      "kind": "card",
+      "id": "beer",
+      "label": "Beer",
+      "ipa": "/bɪər/",
+      "cefr": "B1",
+      "imageNodeId": "158:55"
+    },
+    {
+      "kind": "card",
+      "id": "wine",
+      "label": "Wine",
+      "ipa": "/waɪn/",
+      "cefr": "B1",
+      "imageNodeId": "158:59"
+    },
+    {
+      "kind": "card",
+      "id": "sparkling-water",
+      "label": "Sparkling Water",
+      "ipa": "/ˈspɑːrklɪŋ ˈwɔːtər/",
+      "cefr": "C1",
+      "imageNodeId": "158:63"
+    },
+    {
+      "kind": "card",
+      "id": "hot-chocolate",
+      "label": "Hot Chocolate",
+      "ipa": "/hɒt ˈtʃɒklɪt/",
+      "cefr": "B2",
+      "imageNodeId": "158:67"
+    },
+    {
+      "kind": "card",
+      "id": "milk-carton",
+      "label": "Milk Carton",
+      "ipa": "/mɪlk ˈkɑːrtən/",
+      "cefr": "B2",
+      "imageNodeId": "160:384"
+    },
+    {
+      "kind": "card",
+      "id": "orange-juice",
+      "label": "Orange Juice",
+      "ipa": "/ˈɒrɪndʒ dʒuːs/",
+      "cefr": "B2",
+      "imageNodeId": "160:388"
+    },
+    {
+      "kind": "card",
+      "id": "iced-tea",
+      "label": "Iced Tea",
+      "ipa": "/aɪst tiː/",
+      "cefr": "B2",
+      "imageNodeId": "160:392"
+    },
+    {
+      "kind": "card",
+      "id": "coconut-water",
+      "label": "Coconut Water",
+      "ipa": "/ˈkoʊkəˌnʌt ˈwɔːtər/",
+      "cefr": "B2",
+      "imageNodeId": "160:396"
+    },
+    {
+      "kind": "card",
+      "id": "smoothie",
+      "label": "Smoothie",
+      "ipa": "/ˈsmuːði/",
+      "cefr": "B1",
+      "imageNodeId": "165:251"
+    },
+    {
+      "kind": "card",
+      "id": "apple-juice",
+      "label": "Apple Juice",
+      "ipa": "/ˈæpəl dʒuːs/",
+      "cefr": "B2",
+      "imageNodeId": "165:255"
+    },
+    {
+      "kind": "card",
+      "id": "milkshake",
+      "label": "Milkshake",
+      "ipa": "/ˈmɪlkˌʃeɪk/",
+      "cefr": "B1",
+      "imageNodeId": "165:259"
+    },
+    {
+      "kind": "card",
+      "id": "ginger-ale",
+      "label": "Ginger Ale",
+      "ipa": "/ˈdʒɪndʒər eɪl/",
+      "cefr": "B2",
+      "imageNodeId": "165:263"
+    },
+    {
+      "kind": "card",
+      "id": "mineral-water",
+      "label": "Mineral Water",
+      "ipa": "/ˈmɪnərəl ˈwɔːtər/",
+      "cefr": "B2",
+      "imageNodeId": "165:267"
+    },
+    {
+      "kind": "card",
+      "id": "champagne",
+      "label": "Champagne",
+      "ipa": "/ʃæmˈpeɪn/",
+      "cefr": "B1",
+      "imageNodeId": "165:271"
+    },
+    {
+      "kind": "card",
+      "id": "chips",
+      "label": "Chips",
+      "ipa": "/tʃɪps/",
+      "cefr": "B1",
+      "imageNodeId": "158:76"
+    },
+    {
+      "kind": "card",
+      "id": "cookies",
+      "label": "Cookies",
+      "ipa": "/ˈkʊkiz/",
+      "cefr": "B1",
+      "imageNodeId": "158:80"
+    },
+    {
+      "kind": "card",
+      "id": "chocolate",
+      "label": "Chocolate",
+      "ipa": "/ˈtʃɒklɪt/",
+      "cefr": "B1",
+      "imageNodeId": "158:84"
+    },
+    {
+      "kind": "card",
+      "id": "candy",
+      "label": "Candy",
+      "ipa": "/ˈkændi/",
+      "cefr": "B1",
+      "imageNodeId": "158:88"
+    },
+    {
+      "kind": "card",
+      "id": "crackers",
+      "label": "Crackers",
+      "ipa": "/ˈkrækərz/",
+      "cefr": "B1",
+      "imageNodeId": "158:92"
+    },
+    {
+      "kind": "card",
+      "id": "popcorn",
+      "label": "Popcorn",
+      "ipa": "/ˈpɒpˌkɔːrn/",
+      "cefr": "B1",
+      "imageNodeId": "158:96"
+    },
+    {
+      "kind": "card",
+      "id": "nuts",
+      "label": "Nuts",
+      "ipa": "/nʌts/",
+      "cefr": "B1",
+      "imageNodeId": "158:100"
+    },
+    {
+      "kind": "card",
+      "id": "gum",
+      "label": "Gum",
+      "ipa": "/ɡʌm/",
+      "cefr": "B1",
+      "imageNodeId": "158:104"
+    },
+    {
+      "kind": "card",
+      "id": "granola-bar",
+      "label": "Granola Bar",
+      "ipa": "/ɡrəˈnoʊlə bɑːr/",
+      "cefr": "B2",
+      "imageNodeId": "158:108"
+    },
+    {
+      "kind": "card",
+      "id": "pretzels",
+      "label": "Pretzels",
+      "ipa": "/ˈprɛtsəlz/",
+      "cefr": "B1",
+      "imageNodeId": "158:112"
+    },
+    {
+      "kind": "card",
+      "id": "brownie",
+      "label": "Brownie",
+      "ipa": "/ˈbraʊni/",
+      "cefr": "B1",
+      "imageNodeId": "165:275"
+    },
+    {
+      "kind": "card",
+      "id": "pudding",
+      "label": "Pudding",
+      "ipa": "/ˈpʊdɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "165:279"
+    },
+    {
+      "kind": "card",
+      "id": "trail-mix",
+      "label": "Trail Mix",
+      "ipa": "/treɪl mɪks/",
+      "cefr": "B2",
+      "imageNodeId": "165:283"
+    },
+    {
+      "kind": "card",
+      "id": "dried-fruit",
+      "label": "Dried Fruit",
+      "ipa": "/draɪd fruːt/",
+      "cefr": "B2",
+      "imageNodeId": "165:287"
+    },
+    {
+      "kind": "card",
+      "id": "marshmallow",
+      "label": "Marshmallow",
+      "ipa": "/ˌmɑːrʃˈmæloʊ/",
+      "cefr": "B2",
+      "imageNodeId": "165:291"
+    },
+    {
+      "kind": "card",
+      "id": "lollipop",
+      "label": "Lollipop",
+      "ipa": "/ˈlɒlɪˌpɒp/",
+      "cefr": "B1",
+      "imageNodeId": "165:295"
+    },
+    {
+      "kind": "card",
+      "id": "jelly",
+      "label": "Jelly",
+      "ipa": "/ˈdʒɛli/",
+      "cefr": "B1",
+      "imageNodeId": "165:299"
+    },
+    {
+      "kind": "card",
+      "id": "ice-pop",
+      "label": "Ice Pop",
+      "ipa": "/aɪs pɒp/",
+      "cefr": "B2",
+      "imageNodeId": "165:303"
+    },
+    {
+      "kind": "card",
+      "id": "canned-soup",
+      "label": "Canned Soup",
+      "ipa": "/kænd suːp/",
+      "cefr": "B2",
+      "imageNodeId": "158:121"
+    },
+    {
+      "kind": "card",
+      "id": "peanut-butter",
+      "label": "Peanut Butter",
+      "ipa": "/ˈpiːnʌt ˈbʌtər/",
+      "cefr": "B2",
+      "imageNodeId": "158:125"
+    },
+    {
+      "kind": "card",
+      "id": "jam",
+      "label": "Jam",
+      "ipa": "/dʒæm/",
+      "cefr": "B1",
+      "imageNodeId": "158:129"
+    },
+    {
+      "kind": "card",
+      "id": "ketchup",
+      "label": "Ketchup",
+      "ipa": "/ˈkɛtʃəp/",
+      "cefr": "B1",
+      "imageNodeId": "158:133"
+    },
+    {
+      "kind": "card",
+      "id": "mustard",
+      "label": "Mustard",
+      "ipa": "/ˈmʌstərd/",
+      "cefr": "B1",
+      "imageNodeId": "158:137"
+    },
+    {
+      "kind": "card",
+      "id": "mayonnaise",
+      "label": "Mayonnaise",
+      "ipa": "/ˈmeɪəˌneɪz/",
+      "cefr": "B2",
+      "imageNodeId": "158:141"
+    },
+    {
+      "kind": "card",
+      "id": "canned-beans",
+      "label": "Canned Beans",
+      "ipa": "/kænd biːnz/",
+      "cefr": "B2",
+      "imageNodeId": "158:145"
+    },
+    {
+      "kind": "card",
+      "id": "salsa",
+      "label": "Salsa",
+      "ipa": "/ˈsælsə/",
+      "cefr": "B1",
+      "imageNodeId": "158:149"
+    },
+    {
+      "kind": "card",
+      "id": "pickles",
+      "label": "Pickles",
+      "ipa": "/ˈpɪkəlz/",
+      "cefr": "B1",
+      "imageNodeId": "158:153"
+    },
+    {
+      "kind": "card",
+      "id": "olive-oil",
+      "label": "Olive Oil",
+      "ipa": "/ˈɒlɪv ɔɪl/",
+      "cefr": "B2",
+      "imageNodeId": "158:157"
+    },
+    {
+      "kind": "card",
+      "id": "tomato-sauce",
+      "label": "Tomato Sauce",
+      "ipa": "/təˈmeɪtoʊ sɔːs/",
+      "cefr": "B2",
+      "imageNodeId": "160:320"
+    },
+    {
+      "kind": "card",
+      "id": "coconut-milk",
+      "label": "Coconut Milk",
+      "ipa": "/ˈkoʊkəˌnʌt mɪlk/",
+      "cefr": "B2",
+      "imageNodeId": "160:324"
+    },
+    {
+      "kind": "card",
+      "id": "tuna-can",
+      "label": "Tuna Can",
+      "ipa": "/ˈtjuːnə kæn/",
+      "cefr": "B2",
+      "imageNodeId": "160:328"
+    },
+    {
+      "kind": "card",
+      "id": "sardines",
+      "label": "Sardines",
+      "ipa": "/sɑːrˈdiːnz/",
+      "cefr": "B1",
+      "imageNodeId": "160:332"
+    },
+    {
+      "kind": "card",
+      "id": "honey",
+      "label": "Honey",
+      "ipa": "/ˈhʌni/",
+      "cefr": "B1",
+      "imageNodeId": "160:336"
+    },
+    {
+      "kind": "card",
+      "id": "maple-syrup",
+      "label": "Maple Syrup",
+      "ipa": "/ˈmeɪpəl ˈsɪrəp/",
+      "cefr": "B2",
+      "imageNodeId": "160:340"
+    },
+    {
+      "kind": "card",
+      "id": "tomato-paste",
+      "label": "Tomato Paste",
+      "ipa": "/təˈmeɪtoʊ peɪst/",
+      "cefr": "B2",
+      "imageNodeId": "165:307"
+    },
+    {
+      "kind": "card",
+      "id": "broth",
+      "label": "Broth",
+      "ipa": "/brɒθ/",
+      "cefr": "B1",
+      "imageNodeId": "165:311"
+    },
+    {
+      "kind": "card",
+      "id": "vegetable-oil",
+      "label": "Vegetable Oil",
+      "ipa": "/ˈvɛdʒtəbəl ɔɪl/",
+      "cefr": "B2",
+      "imageNodeId": "165:315"
+    },
+    {
+      "kind": "card",
+      "id": "bbq-sauce",
+      "label": "BBQ Sauce",
+      "ipa": "/ˌbiːbiːˈkjuː sɔːs/",
+      "cefr": "B2",
+      "imageNodeId": "165:319"
+    },
+    {
+      "kind": "card",
+      "id": "almond-butter",
+      "label": "Almond Butter",
+      "ipa": "/ˈɑːmənd ˈbʌtər/",
+      "cefr": "B2",
+      "imageNodeId": "165:323"
+    },
+    {
+      "kind": "card",
+      "id": "nutella",
+      "label": "Nutella",
+      "ipa": "/njuːˈtɛlə/",
+      "cefr": "B1",
+      "imageNodeId": "165:327"
+    },
+    {
+      "kind": "card",
+      "id": "relish",
+      "label": "Relish",
+      "ipa": "/ˈrɛlɪʃ/",
+      "cefr": "B1",
+      "imageNodeId": "165:331"
+    },
+    {
+      "kind": "card",
+      "id": "marmalade",
+      "label": "Marmalade",
+      "ipa": "/ˈmɑːrməˌleɪd/",
+      "cefr": "B1",
+      "imageNodeId": "165:335"
+    },
+    {
+      "kind": "card",
+      "id": "salt",
+      "label": "Salt",
+      "ipa": "/sɔːlt/",
+      "cefr": "B1",
+      "imageNodeId": "158:166"
+    },
+    {
+      "kind": "card",
+      "id": "pepper",
+      "label": "Pepper",
+      "ipa": "/ˈpɛpər/",
+      "cefr": "B1",
+      "imageNodeId": "158:170"
+    },
+    {
+      "kind": "card",
+      "id": "sugar",
+      "label": "Sugar",
+      "ipa": "/ˈʃʊɡər/",
+      "cefr": "B1",
+      "imageNodeId": "158:174"
+    },
+    {
+      "kind": "card",
+      "id": "honey",
+      "label": "Honey",
+      "ipa": "/ˈhʌni/",
+      "cefr": "B1",
+      "imageNodeId": "158:178"
+    },
+    {
+      "kind": "card",
+      "id": "vinegar",
+      "label": "Vinegar",
+      "ipa": "/ˈvɪnɪɡər/",
+      "cefr": "B1",
+      "imageNodeId": "158:182"
+    },
+    {
+      "kind": "card",
+      "id": "soy-sauce",
+      "label": "Soy Sauce",
+      "ipa": "/sɔɪ sɔːs/",
+      "cefr": "B2",
+      "imageNodeId": "158:186"
+    },
+    {
+      "kind": "card",
+      "id": "hot-sauce",
+      "label": "Hot Sauce",
+      "ipa": "/hɒt sɔːs/",
+      "cefr": "B2",
+      "imageNodeId": "158:190"
+    },
+    {
+      "kind": "card",
+      "id": "cinnamon",
+      "label": "Cinnamon",
+      "ipa": "/ˈsɪnəmən/",
+      "cefr": "B1",
+      "imageNodeId": "158:194"
+    },
+    {
+      "kind": "card",
+      "id": "garlic",
+      "label": "Garlic",
+      "ipa": "/ˈɡɑːrlɪk/",
+      "cefr": "B1",
+      "imageNodeId": "158:198"
+    },
+    {
+      "kind": "card",
+      "id": "oregano",
+      "label": "Oregano",
+      "ipa": "/ɔːˈrɛɡəˌnoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "158:202"
+    },
+    {
+      "kind": "card",
+      "id": "cumin",
+      "label": "Cumin",
+      "ipa": "/ˈkjuːmɪn/",
+      "cefr": "B1",
+      "imageNodeId": "160:272"
+    },
+    {
+      "kind": "card",
+      "id": "paprika",
+      "label": "Paprika",
+      "ipa": "/pəˈpriːkə/",
+      "cefr": "B1",
+      "imageNodeId": "160:276"
+    },
+    {
+      "kind": "card",
+      "id": "turmeric",
+      "label": "Turmeric",
+      "ipa": "/ˈtɜːrmərɪk/",
+      "cefr": "B1",
+      "imageNodeId": "160:280"
+    },
+    {
+      "kind": "card",
+      "id": "nutmeg",
+      "label": "Nutmeg",
+      "ipa": "/ˈnʌtˌmɛɡ/",
+      "cefr": "B1",
+      "imageNodeId": "160:284"
+    },
+    {
+      "kind": "card",
+      "id": "ginger-powder",
+      "label": "Ginger Powder",
+      "ipa": "/ˈdʒɪndʒər ˈpaʊdər/",
+      "cefr": "B2",
+      "imageNodeId": "160:288"
+    },
+    {
+      "kind": "card",
+      "id": "chili-flakes",
+      "label": "Chili Flakes",
+      "ipa": "/ˈtʃɪli fleɪks/",
+      "cefr": "B2",
+      "imageNodeId": "160:292"
+    },
+    {
+      "kind": "card",
+      "id": "vanilla-extract",
+      "label": "Vanilla Extract",
+      "ipa": "/vəˈnɪlə ˈɛkstrækt/",
+      "cefr": "C1",
+      "imageNodeId": "165:339"
+    },
+    {
+      "kind": "card",
+      "id": "baking-soda",
+      "label": "Baking Soda",
+      "ipa": "/ˈbeɪkɪŋ ˈsoʊdə/",
+      "cefr": "B2",
+      "imageNodeId": "165:343"
+    },
+    {
+      "kind": "card",
+      "id": "baking-powder",
+      "label": "Baking Powder",
+      "ipa": "/ˈbeɪkɪŋ ˈpaʊdər/",
+      "cefr": "B2",
+      "imageNodeId": "165:347"
+    },
+    {
+      "kind": "card",
+      "id": "brown-sugar",
+      "label": "Brown Sugar",
+      "ipa": "/braʊn ˈʃʊɡər/",
+      "cefr": "B2",
+      "imageNodeId": "165:351"
+    },
+    {
+      "kind": "card",
+      "id": "curry-powder",
+      "label": "Curry Powder",
+      "ipa": "/ˈkʌri ˈpaʊdər/",
+      "cefr": "B2",
+      "imageNodeId": "165:355"
+    },
+    {
+      "kind": "card",
+      "id": "cayenne",
+      "label": "Cayenne",
+      "ipa": "/kaɪˈɛn/",
+      "cefr": "B1",
+      "imageNodeId": "165:359"
+    },
+    {
+      "kind": "card",
+      "id": "cloves",
+      "label": "Cloves",
+      "ipa": "/kloʊvz/",
+      "cefr": "B1",
+      "imageNodeId": "165:363"
+    },
+    {
+      "kind": "card",
+      "id": "cardamom",
+      "label": "Cardamom",
+      "ipa": "/ˈkɑːrdəməm/",
+      "cefr": "B1",
+      "imageNodeId": "165:367"
+    },
+    {
+      "kind": "card",
+      "id": "shampoo",
+      "label": "Shampoo",
+      "ipa": "/ʃæmˈpuː/",
+      "cefr": "B1",
+      "imageNodeId": "158:211"
+    },
+    {
+      "kind": "card",
+      "id": "toothpaste",
+      "label": "Toothpaste",
+      "ipa": "/ˈtuːθˌpeɪst/",
+      "cefr": "B2",
+      "imageNodeId": "158:215"
+    },
+    {
+      "kind": "card",
+      "id": "toothbrush",
+      "label": "Toothbrush",
+      "ipa": "/ˈtuːθˌbrʌʃ/",
+      "cefr": "B2",
+      "imageNodeId": "158:219"
+    },
+    {
+      "kind": "card",
+      "id": "deodorant",
+      "label": "Deodorant",
+      "ipa": "/diˈoʊdərənt/",
+      "cefr": "B1",
+      "imageNodeId": "158:223"
+    },
+    {
+      "kind": "card",
+      "id": "razor",
+      "label": "Razor",
+      "ipa": "/ˈreɪzər/",
+      "cefr": "B1",
+      "imageNodeId": "158:227"
+    },
+    {
+      "kind": "card",
+      "id": "tissue",
+      "label": "Tissue",
+      "ipa": "/ˈtɪʃuː/",
+      "cefr": "B1",
+      "imageNodeId": "158:231"
+    },
+    {
+      "kind": "card",
+      "id": "lotion",
+      "label": "Lotion",
+      "ipa": "/ˈloʊʃən/",
+      "cefr": "B1",
+      "imageNodeId": "158:235"
+    },
+    {
+      "kind": "card",
+      "id": "sunscreen",
+      "label": "Sunscreen",
+      "ipa": "/ˈsʌnˌskriːn/",
+      "cefr": "B1",
+      "imageNodeId": "158:239"
+    },
+    {
+      "kind": "card",
+      "id": "band-aid",
+      "label": "Band-Aid",
+      "ipa": "/ˈbændˌeɪd/",
+      "cefr": "B2",
+      "imageNodeId": "158:243"
+    },
+    {
+      "kind": "card",
+      "id": "diapers",
+      "label": "Diapers",
+      "ipa": "/ˈdaɪpərz/",
+      "cefr": "B1",
+      "imageNodeId": "158:247"
+    },
+    {
+      "kind": "card",
+      "id": "conditioner",
+      "label": "Conditioner",
+      "ipa": "/kənˈdɪʃənər/",
+      "cefr": "B2",
+      "imageNodeId": "165:371"
+    },
+    {
+      "kind": "card",
+      "id": "body-wash",
+      "label": "Body Wash",
+      "ipa": "/ˈbɒdi wɒʃ/",
+      "cefr": "B2",
+      "imageNodeId": "165:375"
+    },
+    {
+      "kind": "card",
+      "id": "mouthwash",
+      "label": "Mouthwash",
+      "ipa": "/ˈmaʊθˌwɒʃ/",
+      "cefr": "B1",
+      "imageNodeId": "165:379"
+    },
+    {
+      "kind": "card",
+      "id": "dental-floss",
+      "label": "Dental Floss",
+      "ipa": "/ˈdɛntəl flɒs/",
+      "cefr": "B2",
+      "imageNodeId": "165:383"
+    },
+    {
+      "kind": "card",
+      "id": "cotton-balls",
+      "label": "Cotton Balls",
+      "ipa": "/ˈkɒtən bɔːlz/",
+      "cefr": "B2",
+      "imageNodeId": "165:387"
+    },
+    {
+      "kind": "card",
+      "id": "comb",
+      "label": "Comb",
+      "ipa": "/koʊm/",
+      "cefr": "B1",
+      "imageNodeId": "165:391"
+    },
+    {
+      "kind": "card",
+      "id": "lip-balm",
+      "label": "Lip Balm",
+      "ipa": "/lɪp bɑːm/",
+      "cefr": "B2",
+      "imageNodeId": "165:395"
+    },
+    {
+      "kind": "card",
+      "id": "hand-sanitizer",
+      "label": "Hand Sanitizer",
+      "ipa": "/hænd ˈsænɪˌtaɪzər/",
+      "cefr": "B2",
+      "imageNodeId": "165:399"
+    },
+    {
+      "kind": "card",
+      "id": "vitamins",
+      "label": "Vitamins",
+      "ipa": "/ˈvaɪtəmɪnz/",
+      "cefr": "B1",
+      "imageNodeId": "165:403"
+    },
+    {
+      "kind": "card",
+      "id": "medicine",
+      "label": "Medicine",
+      "ipa": "/ˈmɛdɪsɪn/",
+      "cefr": "B1",
+      "imageNodeId": "165:407"
+    },
+    {
+      "kind": "card",
+      "id": "can",
+      "label": "Can",
+      "ipa": "/kæn/",
+      "cefr": "B1",
+      "imageNodeId": "158:256"
+    },
+    {
+      "kind": "card",
+      "id": "bottle",
+      "label": "Bottle",
+      "ipa": "/ˈbɒtəl/",
+      "cefr": "B1",
+      "imageNodeId": "158:260"
+    },
+    {
+      "kind": "card",
+      "id": "box",
+      "label": "Box",
+      "ipa": "/bɒks/",
+      "cefr": "B1",
+      "imageNodeId": "158:264"
+    },
+    {
+      "kind": "card",
+      "id": "jar",
+      "label": "Jar",
+      "ipa": "/dʒɑːr/",
+      "cefr": "B1",
+      "imageNodeId": "158:268"
+    },
+    {
+      "kind": "card",
+      "id": "bag",
+      "label": "Bag",
+      "ipa": "/bæɡ/",
+      "cefr": "B1",
+      "imageNodeId": "158:272"
+    },
+    {
+      "kind": "card",
+      "id": "carton",
+      "label": "Carton",
+      "ipa": "/ˈkɑːrtən/",
+      "cefr": "B1",
+      "imageNodeId": "158:276"
+    },
+    {
+      "kind": "card",
+      "id": "tube",
+      "label": "Tube",
+      "ipa": "/tjuːb/",
+      "cefr": "B1",
+      "imageNodeId": "158:280"
+    },
+    {
+      "kind": "card",
+      "id": "wrapper",
+      "label": "Wrapper",
+      "ipa": "/ˈræpər/",
+      "cefr": "B1",
+      "imageNodeId": "158:284"
+    },
+    {
+      "kind": "card",
+      "id": "package",
+      "label": "Package",
+      "ipa": "/ˈpækɪdʒ/",
+      "cefr": "B1",
+      "imageNodeId": "158:288"
+    },
+    {
+      "kind": "card",
+      "id": "container",
+      "label": "Container",
+      "ipa": "/kənˈteɪnər/",
+      "cefr": "B1",
+      "imageNodeId": "158:292"
+    },
+    {
+      "kind": "card",
+      "id": "crate",
+      "label": "Crate",
+      "ipa": "/kreɪt/",
+      "cefr": "B1",
+      "imageNodeId": "165:411"
+    },
+    {
+      "kind": "card",
+      "id": "tray",
+      "label": "Tray",
+      "ipa": "/treɪ/",
+      "cefr": "B1",
+      "imageNodeId": "165:415"
+    },
+    {
+      "kind": "card",
+      "id": "bunch",
+      "label": "Bunch",
+      "ipa": "/bʌntʃ/",
+      "cefr": "B1",
+      "imageNodeId": "165:419"
+    },
+    {
+      "kind": "card",
+      "id": "loaf",
+      "label": "Loaf",
+      "ipa": "/loʊf/",
+      "cefr": "B1",
+      "imageNodeId": "165:423"
+    },
+    {
+      "kind": "card",
+      "id": "dozen",
+      "label": "Dozen",
+      "ipa": "/ˈdʌzən/",
+      "cefr": "B1",
+      "imageNodeId": "165:427"
+    },
+    {
+      "kind": "card",
+      "id": "pouch",
+      "label": "Pouch",
+      "ipa": "/paʊtʃ/",
+      "cefr": "B1",
+      "imageNodeId": "165:431"
+    },
+    {
+      "kind": "card",
+      "id": "push",
+      "label": "Push",
+      "ipa": "/pʊʃ/",
+      "cefr": "B1",
+      "imageNodeId": "175:8"
+    },
+    {
+      "kind": "card",
+      "id": "pull",
+      "label": "Pull",
+      "ipa": "/pʊl/",
+      "cefr": "B1",
+      "imageNodeId": "175:12"
+    },
+    {
+      "kind": "card",
+      "id": "weigh",
+      "label": "Weigh",
+      "ipa": "/weɪ/",
+      "cefr": "B1",
+      "imageNodeId": "175:16"
+    },
+    {
+      "kind": "card",
+      "id": "scan",
+      "label": "Scan",
+      "ipa": "/skæn/",
+      "cefr": "B1",
+      "imageNodeId": "175:20"
+    },
+    {
+      "kind": "card",
+      "id": "bag",
+      "label": "Bag",
+      "ipa": "/bæɡ/",
+      "cefr": "B1",
+      "imageNodeId": "175:24"
+    },
+    {
+      "kind": "card",
+      "id": "pay",
+      "label": "Pay",
+      "ipa": "/peɪ/",
+      "cefr": "B1",
+      "imageNodeId": "175:28"
+    },
+    {
+      "kind": "card",
+      "id": "unload",
+      "label": "Unload",
+      "ipa": "/ʌnˈloʊd/",
+      "cefr": "B1",
+      "imageNodeId": "175:32"
+    },
+    {
+      "kind": "card",
+      "id": "stock",
+      "label": "Stock",
+      "ipa": "/stɒk/",
+      "cefr": "B1",
+      "imageNodeId": "175:36"
+    },
+    {
+      "kind": "card",
+      "id": "choose",
+      "label": "Choose",
+      "ipa": "/tʃuːz/",
+      "cefr": "B1",
+      "imageNodeId": "175:40"
+    },
+    {
+      "kind": "card",
+      "id": "compare",
+      "label": "Compare",
+      "ipa": "/kəmˈpɛər/",
+      "cefr": "B1",
+      "imageNodeId": "175:44"
+    },
+    {
+      "kind": "card",
+      "id": "reach",
+      "label": "Reach",
+      "ipa": "/riːtʃ/",
+      "cefr": "B1",
+      "imageNodeId": "175:48"
+    },
+    {
+      "kind": "card",
+      "id": "carry",
+      "label": "Carry",
+      "ipa": "/ˈkæri/",
+      "cefr": "B1",
+      "imageNodeId": "175:52"
+    },
+    {
+      "kind": "card",
+      "id": "check-out",
+      "label": "Check Out",
+      "ipa": "/tʃɛk aʊt/",
+      "cefr": "B2",
+      "imageNodeId": "175:56"
+    },
+    {
+      "kind": "card",
+      "id": "wait-in-line",
+      "label": "Wait in Line",
+      "ipa": "/weɪt ɪn laɪn/",
+      "cefr": "C1",
+      "imageNodeId": "175:60"
+    },
+    {
+      "kind": "card",
+      "id": "load",
+      "label": "Load",
+      "ipa": "/loʊd/",
+      "cefr": "B1",
+      "imageNodeId": "175:64"
+    },
+    {
+      "kind": "card",
+      "id": "browse",
+      "label": "Browse",
+      "ipa": "/braʊz/",
+      "cefr": "B1",
+      "imageNodeId": "175:68"
+    },
+    {
+      "kind": "card",
+      "id": "customer",
+      "label": "Customer",
+      "ipa": "/ˈkʌstəmər/",
+      "cefr": "B1",
+      "imageNodeId": "175:77"
+    },
+    {
+      "kind": "card",
+      "id": "cashier",
+      "label": "Cashier",
+      "ipa": "/kæˈʃɪər/",
+      "cefr": "B1",
+      "imageNodeId": "175:81"
+    },
+    {
+      "kind": "card",
+      "id": "bagger",
+      "label": "Bagger",
+      "ipa": "/ˈbæɡər/",
+      "cefr": "B1",
+      "imageNodeId": "175:85"
+    },
+    {
+      "kind": "card",
+      "id": "stock-clerk",
+      "label": "Stock Clerk",
+      "ipa": "/stɒk klɜːrk/",
+      "cefr": "B2",
+      "imageNodeId": "175:89"
+    },
+    {
+      "kind": "card",
+      "id": "butcher",
+      "label": "Butcher",
+      "ipa": "/ˈbʊtʃər/",
+      "cefr": "B1",
+      "imageNodeId": "175:93"
+    },
+    {
+      "kind": "card",
+      "id": "baker",
+      "label": "Baker",
+      "ipa": "/ˈbeɪkər/",
+      "cefr": "B1",
+      "imageNodeId": "175:97"
+    },
+    {
+      "kind": "card",
+      "id": "manager",
+      "label": "Manager",
+      "ipa": "/ˈmænɪdʒər/",
+      "cefr": "B1",
+      "imageNodeId": "175:101"
+    },
+    {
+      "kind": "card",
+      "id": "shopper",
+      "label": "Shopper",
+      "ipa": "/ˈʃɒpər/",
+      "cefr": "B1",
+      "imageNodeId": "175:105"
+    },
+    {
+      "kind": "card",
+      "id": "security-guard",
+      "label": "Security Guard",
+      "ipa": "/sɪˈkjʊərɪti ɡɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "175:109"
+    },
+    {
+      "kind": "card",
+      "id": "delivery-driver",
+      "label": "Delivery Driver",
+      "ipa": "/dɪˈlɪvəri ˈdraɪvər/",
+      "cefr": "C1",
+      "imageNodeId": "175:113"
+    },
+    {
+      "kind": "card",
+      "id": "a-pound-of",
+      "label": "A Pound Of",
+      "ipa": "/ə paʊnd ʌv/",
+      "cefr": "C1",
+      "imageNodeId": "175:122"
+    },
+    {
+      "kind": "card",
+      "id": "a-gallon-of",
+      "label": "A Gallon Of",
+      "ipa": "/ə ˈɡælən ʌv/",
+      "cefr": "C1",
+      "imageNodeId": "175:126"
+    },
+    {
+      "kind": "card",
+      "id": "a-bunch-of",
+      "label": "A Bunch Of",
+      "ipa": "/ə bʌntʃ ʌv/",
+      "cefr": "C1",
+      "imageNodeId": "175:130"
+    },
+    {
+      "kind": "card",
+      "id": "a-head-of",
+      "label": "A Head Of",
+      "ipa": "/ə hɛd ʌv/",
+      "cefr": "C1",
+      "imageNodeId": "175:134"
+    },
+    {
+      "kind": "card",
+      "id": "a-loaf-of",
+      "label": "A Loaf Of",
+      "ipa": "/ə loʊf ʌv/",
+      "cefr": "C1",
+      "imageNodeId": "175:138"
+    },
+    {
+      "kind": "card",
+      "id": "a-dozen",
+      "label": "A Dozen",
+      "ipa": "/ə ˈdʌzən/",
+      "cefr": "B2",
+      "imageNodeId": "175:142"
+    },
+    {
+      "kind": "card",
+      "id": "a-slice-of",
+      "label": "A Slice Of",
+      "ipa": "/ə slaɪs ʌv/",
+      "cefr": "C1",
+      "imageNodeId": "175:146"
+    },
+    {
+      "kind": "card",
+      "id": "a-piece-of",
+      "label": "A Piece Of",
+      "ipa": "/ə piːs ʌv/",
+      "cefr": "C1",
+      "imageNodeId": "175:150"
+    },
+    {
+      "kind": "card",
+      "id": "a-pack-of",
+      "label": "A Pack Of",
+      "ipa": "/ə pæk ʌv/",
+      "cefr": "C1",
+      "imageNodeId": "175:154"
+    },
+    {
+      "kind": "card",
+      "id": "a-handful-of",
+      "label": "A Handful Of",
+      "ipa": "/ə ˈhændfʊl ʌv/",
+      "cefr": "C1",
+      "imageNodeId": "175:158"
+    },
+    {
+      "kind": "card",
+      "id": "a-pint-of",
+      "label": "A Pint Of",
+      "ipa": "/ə paɪnt ʌv/",
+      "cefr": "C1",
+      "imageNodeId": "175:162"
+    },
+    {
+      "kind": "card",
+      "id": "a-stick-of",
+      "label": "A Stick Of",
+      "ipa": "/ə stɪk ʌv/",
+      "cefr": "C1",
+      "imageNodeId": "175:166"
+    },
+    {
+      "kind": "card",
+      "id": "organic",
+      "label": "Organic",
+      "ipa": "/ɔːrˈɡænɪk/",
+      "cefr": "B1",
+      "imageNodeId": "175:175"
+    },
+    {
+      "kind": "card",
+      "id": "gluten-free",
+      "label": "Gluten-Free",
+      "ipa": "/ˈɡluːtən friː/",
+      "cefr": "B2",
+      "imageNodeId": "175:179"
+    },
+    {
+      "kind": "card",
+      "id": "sugar-free",
+      "label": "Sugar-Free",
+      "ipa": "/ˈʃʊɡər friː/",
+      "cefr": "B2",
+      "imageNodeId": "175:183"
+    },
+    {
+      "kind": "card",
+      "id": "low-fat",
+      "label": "Low-Fat",
+      "ipa": "/loʊ fæt/",
+      "cefr": "B2",
+      "imageNodeId": "175:187"
+    },
+    {
+      "kind": "card",
+      "id": "fresh",
+      "label": "Fresh",
+      "ipa": "/frɛʃ/",
+      "cefr": "B1",
+      "imageNodeId": "175:191"
+    },
+    {
+      "kind": "card",
+      "id": "frozen",
+      "label": "Frozen",
+      "ipa": "/ˈfroʊzən/",
+      "cefr": "B1",
+      "imageNodeId": "175:195"
+    },
+    {
+      "kind": "card",
+      "id": "on-sale",
+      "label": "On Sale",
+      "ipa": "/ɒn seɪl/",
+      "cefr": "B2",
+      "imageNodeId": "175:199"
+    },
+    {
+      "kind": "card",
+      "id": "buy-1-get-1-free",
+      "label": "Buy 1 Get 1 Free",
+      "ipa": "/baɪ wʌn ɡɛt wʌn friː/",
+      "cefr": "C1",
+      "imageNodeId": "175:203"
+    },
+    {
+      "kind": "card",
+      "id": "best-before",
+      "label": "Best Before",
+      "ipa": "/bɛst bɪˈfɔːr/",
+      "cefr": "B2",
+      "imageNodeId": "175:207"
+    },
+    {
+      "kind": "card",
+      "id": "nutrition-facts",
+      "label": "Nutrition Facts",
+      "ipa": "/njuːˈtrɪʃən fækts/",
+      "cefr": "C1",
+      "imageNodeId": "175:211"
+    },
+    {
+      "kind": "card",
+      "id": "non-gmo",
+      "label": "Non-GMO",
+      "ipa": "/nɒn ˌdʒiːɛmˈoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "175:215"
+    },
+    {
+      "kind": "card",
+      "id": "vegan",
+      "label": "Vegan",
+      "ipa": "/ˈviːɡən/",
+      "cefr": "B1",
+      "imageNodeId": "175:219"
+    },
+    {
+      "kind": "card",
+      "id": "how-much-is-this-",
+      "label": "How much is this?",
+      "ipa": "/haʊ mʌtʃ ɪz ðɪs/",
+      "cefr": "C1",
+      "imageNodeId": "175:228"
+    },
+    {
+      "kind": "card",
+      "id": "where-can-i-find-",
+      "label": "Where can I find...?",
+      "ipa": "/wɛər kæn aɪ faɪnd/",
+      "cefr": "C1",
+      "imageNodeId": "175:232"
+    },
+    {
+      "kind": "card",
+      "id": "paper-or-plastic-",
+      "label": "Paper or plastic?",
+      "ipa": "/ˈpeɪpər ɔːr ˈplæstɪk/",
+      "cefr": "C1",
+      "imageNodeId": "175:236"
+    },
+    {
+      "kind": "card",
+      "id": "is-this-on-sale-",
+      "label": "Is this on sale?",
+      "ipa": "/ɪz ðɪs ɒn seɪl/",
+      "cefr": "C1",
+      "imageNodeId": "175:240"
+    },
+    {
+      "kind": "card",
+      "id": "cash-or-card-",
+      "label": "Cash or card?",
+      "ipa": "/kæʃ ɔːr kɑːrd/",
+      "cefr": "C1",
+      "imageNodeId": "175:244"
+    },
+    {
+      "kind": "card",
+      "id": "do-you-have-",
+      "label": "Do you have...?",
+      "ipa": "/duː juː hæv/",
+      "cefr": "C1",
+      "imageNodeId": "175:248"
+    },
+    {
+      "kind": "card",
+      "id": "can-i-get-a-bag-",
+      "label": "Can I get a bag?",
+      "ipa": "/kæn aɪ ɡɛt ə bæɡ/",
+      "cefr": "C1",
+      "imageNodeId": "175:252"
+    },
+    {
+      "kind": "card",
+      "id": "i-need-a-refund",
+      "label": "I need a refund",
+      "ipa": "/aɪ niːd ə ˈriːfʌnd/",
+      "cefr": "C1",
+      "imageNodeId": "175:256"
+    },
+    {
+      "kind": "card",
+      "id": "where-is-aisle-",
+      "label": "Where is aisle...?",
+      "ipa": "/wɛər ɪz aɪl/",
+      "cefr": "C1",
+      "imageNodeId": "175:260"
+    },
+    {
+      "kind": "card",
+      "id": "is-this-fresh-",
+      "label": "Is this fresh?",
+      "ipa": "/ɪz ðɪs frɛʃ/",
+      "cefr": "C1",
+      "imageNodeId": "175:264"
+    },
+    {
+      "kind": "card",
+      "id": "can-i-taste-this-",
+      "label": "Can I taste this?",
+      "ipa": "/kæn aɪ teɪst ðɪs/",
+      "cefr": "C1",
+      "imageNodeId": "175:268"
+    },
+    {
+      "kind": "card",
+      "id": "i-have-a-coupon",
+      "label": "I have a coupon",
+      "ipa": "/aɪ hæv ə ˈkuːpɒn/",
+      "cefr": "C1",
+      "imageNodeId": "175:272"
+    },
+    {
+      "kind": "card",
+      "id": "ginger",
+      "label": "Ginger",
+      "ipa": "/ˈdʒɪndʒər/",
+      "cefr": "B1",
+      "imageNodeId": "160:268"
+    },
+    {
+      "kind": "card",
+      "id": "cart",
+      "label": "Cart",
+      "ipa": "/kɑːrt/",
+      "cefr": "B1",
+      "imageNodeId": "119:377"
+    },
+    {
+      "kind": "card",
+      "id": "salami",
+      "label": "Salami",
+      "ipa": "/səˈlɑːmi/",
+      "cefr": "B1",
+      "imageNodeId": "158:319"
+    },
+    {
+      "kind": "card",
+      "id": "hummus",
+      "label": "Hummus",
+      "ipa": "/ˈhʊməs/",
+      "cefr": "B1",
+      "imageNodeId": "158:327"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "553:535",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "553:537",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2 · Topic: The Supermarket",
+          "depth": 1,
+          "name": "Level: B2 · Topic: The Supermarket"
+        },
+        {
+          "text": "The Architecture of Choice — How a Supermarket Works\n\nA supermarket is designed to make you spend more time — and more money — than you intended. Every aisle, every shelf, every price tag is positioned according to decades of consumer psychology research. Understanding how a supermarket is organised is not just a vocabulary exercise — it is a lesson in how design shapes behaviour.\n\nThe layout follows a predictable logic. Fresh produce — apples, bananas, oranges, grapes, strawberries, tomatoes, lettuce, carrots, potatoes, onions — is placed at the entrance. The colours and textures create an impression of freshness and abundance. A scale allows customers to weigh loose items. Exotic fruits — mangoes, papayas, pomegranates, kiwis, figs — are displayed prominently, priced higher. Herbs — basil, thyme, rosemary, parsley, mint, cilantro, dill — sit nearby.\n\nThe dairy section — milk, cheese, yogurt, butter, eggs, cream, sour cream, cottage cheese, cream cheese — is placed at the back of the store. This is deliberate: milk and eggs are the most frequently purchased items, so placing them at the rear forces customers to walk past every other aisle. Along the way, they pass the bakery — bread, bagels, croissants, muffins, baguettes, sourdough, naan, pita — where the smell of fresh baking is itself a marketing tool.\n\nThe meat and fish counter — chicken, beef, pork, fish, salmon, tuna, lamb, shrimp, sausage, bacon — occupies one wall. A butcher cuts to order behind the deli counter. Frozen foods — frozen pizza, frozen vegetables, ice cream — line the freezer aisles.\n\nThe centre aisles contain shelf-stable goods. Canned soup, peanut butter, jam, ketchup, mustard, mayonnaise, olive oil, tomato sauce, honey, maple syrup, broth, soy sauce, and hot sauce fill one aisle. Pasta, rice, noodles, couscous, quinoa, cereal, flour, oatmeal, and pancake mix fill another. Spices and seasonings — salt, pepper, sugar, cinnamon, garlic, oregano, cumin, paprika, turmeric, nutmeg, curry powder, vanilla extract — are grouped together. Baking supplies — baking soda, baking powder, brown sugar — sit alongside.\n\nSnacks — chips, cookies, chocolate, candy, crackers, popcorn, nuts, granola bars, pretzels, trail mix, dried fruit — occupy high-traffic areas. Beverages — water, soda, coffee, tea, juice, lemonade, energy drinks, sparkling water, coconut water, smoothies — fill an entire aisle.\n\nHousehold supplies — soap, detergent, sponges, paper towels, trash bags, bleach, dish soap, toilet paper, aluminum foil, plastic wrap — are separated from food. Personal care — shampoo, toothpaste, toothbrush, deodorant, lotion, sunscreen, conditioner, body wash, mouthwash, vitamins — occupies a quieter section.\n\nAt the checkout, a cashier scans each barcode. A conveyor belt moves items forward. A scanner reads prices. A receipt prints. A self-checkout machine offers an alternative. The express lane serves customers with fewer items. A loyalty card provides discounts. A coupon reduces the price. A sale sign announces offers. An expiration date tells you when to use the product. Nutrition facts list ingredients and calories.\n\nPackaging varies by product: a can, a bottle, a box, a jar, a bag, a carton, a tube, a wrapper, a package, a container, a crate, a tray, a bunch, a loaf, a dozen, a pouch. Quantities are measured differently too — a pound of cheese, a gallon of milk, a bunch of bananas, a head of lettuce, a loaf of bread, a dozen eggs, a slice of cake.\n\nThe supermarket is a landscape of engineered persuasion — and the more you understand its architecture, the better you navigate it.",
+          "depth": 1,
+          "name": "The Architecture of Choice — How a Supermarket Works A supermarket is designed to make you spend more time — and more money — than you intended. Every aisle, every shelf, every price tag is positioned according to decades of consumer psychology research. Understanding how a supermarket is organised is not just a vocabulary exercise — it is a lesson in how design shapes behaviour. The layout follows a predictable logic. Fresh produce — apples, bananas, oranges, grapes, strawberries, tomatoes, lettuce, carrots, potatoes, onions — is placed at the entrance. The colours and textures create an impression of freshness and abundance. A scale allows customers to weigh loose items. Exotic fruits — mangoes, papayas, pomegranates, kiwis, figs — are displayed prominently, priced higher. Herbs — basil, thyme, rosemary, parsley, mint, cilantro, dill — sit nearby. The dairy section — milk, cheese, yogurt, butter, eggs, cream, sour cream, cottage cheese, cream cheese — is placed at the back of the store. This is deliberate: milk and eggs are the most frequently purchased items, so placing them at the rear forces customers to walk past every other aisle. Along the way, they pass the bakery — bread, bagels, croissants, muffins, baguettes, sourdough, naan, pita — where the smell of fresh baking is itself a marketing tool. The meat and fish counter — chicken, beef, pork, fish, salmon, tuna, lamb, shrimp, sausage, bacon — occupies one wall. A butcher cuts to order behind the deli counter. Frozen foods — frozen pizza, frozen vegetables, ice cream — line the freezer aisles. The centre aisles contain shelf-stable goods. Canned soup, peanut butter, jam, ketchup, mustard, mayonnaise, olive oil, tomato sauce, honey, maple syrup, broth, soy sauce, and hot sauce fill one aisle. Pasta, rice, noodles, couscous, quinoa, cereal, flour, oatmeal, and pancake mix fill another. Spices and seasonings — salt, pepper, sugar, cinnamon, garlic, oregano, cumin, paprika, turmeric, nutmeg, curry powder, vanilla extract — are grouped together. Baking supplies — baking soda, baking powder, brown sugar — sit alongside. Snacks — chips, cookies, chocolate, candy, crackers, popcorn, nuts, granola bars, pretzels, trail mix, dried fruit — occupy high-traffic areas. Beverages — water, soda, coffee, tea, juice, lemonade, energy drinks, sparkling water, coconut water, smoothies — fill an entire aisle. Household supplies — soap, detergent, sponges, paper towels, trash bags, bleach, dish soap, toilet paper, aluminum foil, plastic wrap — are separated from food. Personal care — shampoo, toothpaste, toothbrush, deodorant, lotion, sunscreen, conditioner, body wash, mouthwash, vitamins — occupies a quieter section. At the checkout, a cashier scans each barcode. A conveyor belt moves items forward. A scanner reads prices. A receipt prints. A self-checkout machine offers an alternative. The express lane serves customers with fewer items. A loyalty card provides discounts. A coupon reduces the price. A sale sign announces offers. An expiration date tells you when to use the product. Nutrition facts list ingredients and calories. Packaging varies by product: a can, a bottle, a box, a jar, a bag, a carton, a tube, a wrapper, a package, a container, a crate, a tray, a bunch, a loaf, a dozen, a pouch. Quantities are measured differently too — a pound of cheese, a gallon of milk, a bunch of bananas, a head of lettuce, a loaf of bread, a dozen eggs, a slice of cake. The supermarket is a landscape of engineered persuasion — and the more you understand its architecture, the better you navigate it."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Why is fresh produce placed at the entrance and dairy at the back? What strategy does this reveal?",
+          "depth": 1,
+          "name": "1. Why is fresh produce placed at the entrance and dairy at the back? What strategy does this reveal?"
+        },
+        {
+          "text": "2. How does the supermarket use sensory experience (sight, smell) to influence purchasing decisions?",
+          "depth": 1,
+          "name": "2. How does the supermarket use sensory experience (sight, smell) to influence purchasing decisions?"
+        },
+        {
+          "text": "3. Describe the checkout process, mentioning at least five items or features involved.",
+          "depth": 1,
+          "name": "3. Describe the checkout process, mentioning at least five items or features involved."
+        },
+        {
+          "text": "4. What is the difference between a 'sale sign', a 'coupon', and a 'loyalty card'?",
+          "depth": 1,
+          "name": "4. What is the difference between a 'sale sign', a 'coupon', and a 'loyalty card'?"
+        },
+        {
+          "text": "5. The passage calls the supermarket 'a landscape of engineered persuasion.' What does this mean?",
+          "depth": 1,
+          "name": "5. The passage calls the supermarket 'a landscape of engineered persuasion.' What does this mean?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "553:550",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "go grocery shopping",
+          "depth": 2,
+          "name": "go grocery shopping"
+        },
+        {
+          "text": "buy food and household items at a supermarket",
+          "depth": 2,
+          "name": "buy food and household items at a supermarket"
+        },
+        {
+          "text": "\"I go grocery shopping every Saturday — I grab a shopping cart and work through the aisles one by one.\"",
+          "depth": 2,
+          "name": "\"I go grocery shopping every Saturday — I grab a shopping cart and work through the aisles one by one.\""
+        },
+        {
+          "text": "a basket case",
+          "depth": 2,
+          "name": "a basket case"
+        },
+        {
+          "text": "someone who is very anxious or unable to cope",
+          "depth": 2,
+          "name": "someone who is very anxious or unable to cope"
+        },
+        {
+          "text": "\"She was a basket case trying to find gluten-free pasta in the centre aisles.\"",
+          "depth": 2,
+          "name": "\"She was a basket case trying to find gluten-free pasta in the centre aisles.\""
+        },
+        {
+          "text": "the cream of the crop",
+          "depth": 2,
+          "name": "the cream of the crop"
+        },
+        {
+          "text": "the very best of a group",
+          "depth": 2,
+          "name": "the very best of a group"
+        },
+        {
+          "text": "\"The organic avocados and mangoes are the cream of the crop — they cost twice as much but taste incredible.\"",
+          "depth": 2,
+          "name": "\"The organic avocados and mangoes are the cream of the crop — they cost twice as much but taste incredible.\""
+        },
+        {
+          "text": "bring home the bacon",
+          "depth": 2,
+          "name": "bring home the bacon"
+        },
+        {
+          "text": "earn money for the family",
+          "depth": 2,
+          "name": "earn money for the family"
+        },
+        {
+          "text": "\"He brings home the bacon — literally — every Friday evening from the deli counter.\"",
+          "depth": 2,
+          "name": "\"He brings home the bacon — literally — every Friday evening from the deli counter.\""
+        },
+        {
+          "text": "buy in bulk",
+          "depth": 2,
+          "name": "buy in bulk"
+        },
+        {
+          "text": "purchase large quantities at once",
+          "depth": 2,
+          "name": "purchase large quantities at once"
+        },
+        {
+          "text": "\"Buying rice, pasta, and flour in bulk saves money — check the price tag per kilogram.\"",
+          "depth": 2,
+          "name": "\"Buying rice, pasta, and flour in bulk saves money — check the price tag per kilogram.\""
+        },
+        {
+          "text": "check out",
+          "depth": 2,
+          "name": "check out"
+        },
+        {
+          "text": "pay and leave / examine something",
+          "depth": 2,
+          "name": "pay and leave / examine something"
+        },
+        {
+          "text": "\"We checked out at the self-checkout in under five minutes — the scanner read every barcode perfectly.\"",
+          "depth": 2,
+          "name": "\"We checked out at the self-checkout in under five minutes — the scanner read every barcode perfectly.\""
+        },
+        {
+          "text": "sell like hot cakes",
+          "depth": 2,
+          "name": "sell like hot cakes"
+        },
+        {
+          "text": "sell very quickly and in large quantities",
+          "depth": 2,
+          "name": "sell very quickly and in large quantities"
+        },
+        {
+          "text": "\"The organic strawberries sell like hot cakes — by noon, the shelf is empty.\"",
+          "depth": 2,
+          "name": "\"The organic strawberries sell like hot cakes — by noon, the shelf is empty.\""
+        },
+        {
+          "text": "the daily bread",
+          "depth": 2,
+          "name": "the daily bread"
+        },
+        {
+          "text": "basic necessities; what you need to survive",
+          "depth": 2,
+          "name": "basic necessities; what you need to survive"
+        },
+        {
+          "text": "\"Bread, milk, and eggs — the daily bread — are always placed at the back of the store near the dairy section.\"",
+          "depth": 2,
+          "name": "\"Bread, milk, and eggs — the daily bread — are always placed at the back of the store near the dairy section.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "553:586",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: Two flatmates doing their weekly grocery shop at the supermarket",
+          "depth": 1,
+          "name": "Scene: Two flatmates doing their weekly grocery shop at the supermarket"
+        },
+        {
+          "text": "Flatmate 1:",
+          "depth": 2,
+          "name": "Flatmate 1:"
+        },
+        {
+          "text": "Grab a shopping cart. I've got the list — we need bananas, tomatoes, lettuce, carrots, and onions from the produce section.",
+          "depth": 2,
+          "name": "Grab a shopping cart. I've got the list — we need bananas, tomatoes, lettuce, carrots, and onions from the produce section."
+        },
+        {
+          "text": "Flatmate 2:",
+          "depth": 2,
+          "name": "Flatmate 2:"
+        },
+        {
+          "text": "I'll weigh the grapes on the scale. Do we need any herbs — basil, cilantro, rosemary?",
+          "depth": 2,
+          "name": "I'll weigh the grapes on the scale. Do we need any herbs — basil, cilantro, rosemary?"
+        },
+        {
+          "text": "Flatmate 1:",
+          "depth": 2,
+          "name": "Flatmate 1:"
+        },
+        {
+          "text": "Basil and thyme. Then head to the dairy section — we need milk, yogurt, eggs, and butter. Oh, and cream cheese.",
+          "depth": 2,
+          "name": "Basil and thyme. Then head to the dairy section — we need milk, yogurt, eggs, and butter. Oh, and cream cheese."
+        },
+        {
+          "text": "Flatmate 2:",
+          "depth": 2,
+          "name": "Flatmate 2:"
+        },
+        {
+          "text": "Should I get regular milk or oat milk?",
+          "depth": 2,
+          "name": "Should I get regular milk or oat milk?"
+        },
+        {
+          "text": "Flatmate 1:",
+          "depth": 2,
+          "name": "Flatmate 1:"
+        },
+        {
+          "text": "Both. Check the expiration date on the yogurt. And grab a bag of flour and some pasta from the centre aisle.",
+          "depth": 2,
+          "name": "Both. Check the expiration date on the yogurt. And grab a bag of flour and some pasta from the centre aisle."
+        },
+        {
+          "text": "Flatmate 2:",
+          "depth": 2,
+          "name": "Flatmate 2:"
+        },
+        {
+          "text": "What about protein? Chicken or salmon this week?",
+          "depth": 2,
+          "name": "What about protein? Chicken or salmon this week?"
+        },
+        {
+          "text": "Flatmate 1:",
+          "depth": 2,
+          "name": "Flatmate 1:"
+        },
+        {
+          "text": "Chicken drumsticks from the butcher at the deli counter. And a tin of tuna for lunches. The ketchup and olive oil are in aisle seven.",
+          "depth": 2,
+          "name": "Chicken drumsticks from the butcher at the deli counter. And a tin of tuna for lunches. The ketchup and olive oil are in aisle seven."
+        },
+        {
+          "text": "Flatmate 2:",
+          "depth": 2,
+          "name": "Flatmate 2:"
+        },
+        {
+          "text": "I found a coupon for laundry detergent — fifty percent off! And paper towels are on sale.",
+          "depth": 2,
+          "name": "I found a coupon for laundry detergent — fifty percent off! And paper towels are on sale."
+        },
+        {
+          "text": "Flatmate 1:",
+          "depth": 2,
+          "name": "Flatmate 1:"
+        },
+        {
+          "text": "Grab those. We also need dish soap and trash bags from the household aisle.",
+          "depth": 2,
+          "name": "Grab those. We also need dish soap and trash bags from the household aisle."
+        },
+        {
+          "text": "Flatmate 2:",
+          "depth": 2,
+          "name": "Flatmate 2:"
+        },
+        {
+          "text": "Checkout or self-checkout?",
+          "depth": 2,
+          "name": "Checkout or self-checkout?"
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "553:621",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"Can I have an information about the sale on frozen vegetables?\"",
+          "depth": 2,
+          "name": "❌ \"Can I have an information about the sale on frozen vegetables?\""
+        },
+        {
+          "text": "✅ \"Can I have some information about the sale on frozen vegetables?\"",
+          "depth": 2,
+          "name": "✅ \"Can I have some information about the sale on frozen vegetables?\""
+        },
+        {
+          "text": "'Information' is uncountable — never 'an information' or 'informations.' Use: 'some information', 'a piece of information', 'the information.' Same pattern: 'advice' (not *an advice), 'news' (not *a news), 'research' (not *a research). The verb is 'inform': 'The sign informs customers about the sale.'",
+          "depth": 2,
+          "name": "'Information' is uncountable — never 'an information' or 'informations.' Use: 'some information', 'a piece of information', 'the information.' Same pattern: 'advice' (not *an advice), 'news' (not *a news), 'research' (not *a research). The verb is 'inform': 'The sign informs customers about the sale.'"
+        },
+        {
+          "text": "❌ \"I need to buy a bread and a dozen of eggs.\"",
+          "depth": 2,
+          "name": "❌ \"I need to buy a bread and a dozen of eggs.\""
+        },
+        {
+          "text": "✅ \"I need to buy a loaf of bread and a dozen eggs.\"",
+          "depth": 2,
+          "name": "✅ \"I need to buy a loaf of bread and a dozen eggs.\""
+        },
+        {
+          "text": "'Bread' is uncountable — use 'a loaf of bread', 'a slice of bread', 'some bread.' Never *'a bread.' 'A dozen' is followed directly by the noun: 'a dozen eggs' (not *a dozen of eggs). Compare: 'dozens of eggs' (with 'of' when 'dozens' is used as a vague quantity). Similarly: 'a hundred people' but 'hundreds of people.'",
+          "depth": 2,
+          "name": "'Bread' is uncountable — use 'a loaf of bread', 'a slice of bread', 'some bread.' Never *'a bread.' 'A dozen' is followed directly by the noun: 'a dozen eggs' (not *a dozen of eggs). Compare: 'dozens of eggs' (with 'of' when 'dozens' is used as a vague quantity). Similarly: 'a hundred people' but 'hundreds of people.'"
+        },
+        {
+          "text": "❌ \"There are less items in the express lane than in the regular checkout.\"",
+          "depth": 2,
+          "name": "❌ \"There are less items in the express lane than in the regular checkout.\""
+        },
+        {
+          "text": "✅ \"There are fewer items in the express lane than in the regular checkout.\"",
+          "depth": 2,
+          "name": "✅ \"There are fewer items in the express lane than in the regular checkout.\""
+        },
+        {
+          "text": "'Fewer' + countable plural: 'fewer items', 'fewer customers', 'fewer aisles.' 'Less' + uncountable: 'less sugar', 'less traffic', 'less time.' Common error: using 'less' with countable nouns. Note: supermarket signs that read '10 items or less' are grammatically informal — the standard form is '10 items or fewer.'",
+          "depth": 2,
+          "name": "'Fewer' + countable plural: 'fewer items', 'fewer customers', 'fewer aisles.' 'Less' + uncountable: 'less sugar', 'less traffic', 'less time.' Common error: using 'less' with countable nouns. Note: supermarket signs that read '10 items or less' are grammatically informal — the standard form is '10 items or fewer.'"
+        },
+        {
+          "text": "❌ \"The cashier asked me if I want a bag or I prefer to use my own.\"",
+          "depth": 2,
+          "name": "❌ \"The cashier asked me if I want a bag or I prefer to use my own.\""
+        },
+        {
+          "text": "✅ \"The cashier asked me if I wanted a bag or preferred to use my own.\"",
+          "depth": 2,
+          "name": "✅ \"The cashier asked me if I wanted a bag or preferred to use my own.\""
+        },
+        {
+          "text": "Reported speech requires tense backshift when the reporting verb is past ('asked'). Present → past: 'want' → 'wanted', 'prefer' → 'preferred.' Full sequence: 'Do you want...?' → 'She asked if I wanted...' 'Will you pay...?' → 'She asked if I would pay...' No backshift needed if the reporting verb is present: 'She asks if I want a bag.'",
+          "depth": 2,
+          "name": "Reported speech requires tense backshift when the reporting verb is past ('asked'). Present → past: 'want' → 'wanted', 'prefer' → 'preferred.' Full sequence: 'Do you want...?' → 'She asked if I wanted...' 'Will you pay...?' → 'She asked if I would pay...' No backshift needed if the reporting verb is present: 'She asks if I want a bag.'"
+        },
+        {
+          "text": "❌ \"I'm used to go to this supermarket every Saturday morning.\"",
+          "depth": 2,
+          "name": "❌ \"I'm used to go to this supermarket every Saturday morning.\""
+        },
+        {
+          "text": "✅ \"I'm used to going to this supermarket every Saturday morning.\" / \"I usually go to this supermarket every Saturday morning.\"",
+          "depth": 2,
+          "name": "✅ \"I'm used to going to this supermarket every Saturday morning.\" / \"I usually go to this supermarket every Saturday morning.\""
+        },
+        {
+          "text": "'Be used to' + gerund (-ing) = accustomed: 'I'm used to going.' 'Used to' + infinitive = past habit: 'I used to go' (but I don't any more). 'Get used to' + gerund = becoming accustomed: 'I'm getting used to going.' Three distinct structures with different meanings — the gerund vs. infinitive choice changes the meaning entirely.",
+          "depth": 2,
+          "name": "'Be used to' + gerund (-ing) = accustomed: 'I'm used to going.' 'Used to' + infinitive = past habit: 'I used to go' (but I don't any more). 'Get used to' + gerund = becoming accustomed: 'I'm getting used to going.' Three distinct structures with different meanings — the gerund vs. infinitive choice changes the meaning entirely."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "553:645",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how shopping and food vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how shopping and food vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "shop",
+          "depth": 2,
+          "name": "shop"
+        },
+        {
+          "text": "shop / shopper / shopping",
+          "depth": 2,
+          "name": "shop / shopper / shopping"
+        },
+        {
+          "text": "shop",
+          "depth": 2,
+          "name": "shop"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "purchase",
+          "depth": 2,
+          "name": "purchase"
+        },
+        {
+          "text": "purchase / purchaser",
+          "depth": 2,
+          "name": "purchase / purchaser"
+        },
+        {
+          "text": "purchase",
+          "depth": 2,
+          "name": "purchase"
+        },
+        {
+          "text": "purchased / purchasable",
+          "depth": 2,
+          "name": "purchased / purchasable"
+        },
+        {
+          "text": "produce",
+          "depth": 2,
+          "name": "produce"
+        },
+        {
+          "text": "produce / product / production",
+          "depth": 2,
+          "name": "produce / product / production"
+        },
+        {
+          "text": "produce",
+          "depth": 2,
+          "name": "produce"
+        },
+        {
+          "text": "productive",
+          "depth": 2,
+          "name": "productive"
+        },
+        {
+          "text": "deliver",
+          "depth": 2,
+          "name": "deliver"
+        },
+        {
+          "text": "delivery / deliverer",
+          "depth": 2,
+          "name": "delivery / deliverer"
+        },
+        {
+          "text": "deliver",
+          "depth": 2,
+          "name": "deliver"
+        },
+        {
+          "text": "delivered",
+          "depth": 2,
+          "name": "delivered"
+        },
+        {
+          "text": "freeze",
+          "depth": 2,
+          "name": "freeze"
+        },
+        {
+          "text": "freezer / freezing",
+          "depth": 2,
+          "name": "freezer / freezing"
+        },
+        {
+          "text": "freeze",
+          "depth": 2,
+          "name": "freeze"
+        },
+        {
+          "text": "frozen",
+          "depth": 2,
+          "name": "frozen"
+        },
+        {
+          "text": "package",
+          "depth": 2,
+          "name": "package"
+        },
+        {
+          "text": "package / packaging",
+          "depth": 2,
+          "name": "package / packaging"
+        },
+        {
+          "text": "package",
+          "depth": 2,
+          "name": "package"
+        },
+        {
+          "text": "packaged",
+          "depth": 2,
+          "name": "packaged"
+        },
+        {
+          "text": "discount",
+          "depth": 2,
+          "name": "discount"
+        },
+        {
+          "text": "discount",
+          "depth": 2,
+          "name": "discount"
+        },
+        {
+          "text": "discount",
+          "depth": 2,
+          "name": "discount"
+        },
+        {
+          "text": "discounted",
+          "depth": 2,
+          "name": "discounted"
+        },
+        {
+          "text": "weigh",
+          "depth": 2,
+          "name": "weigh"
+        },
+        {
+          "text": "weight / weighing",
+          "depth": 2,
+          "name": "weight / weighing"
+        },
+        {
+          "text": "weigh",
+          "depth": 2,
+          "name": "weigh"
+        },
+        {
+          "text": "weighted / weighty",
+          "depth": 2,
+          "name": "weighted / weighty"
+        },
+        {
+          "text": "expire",
+          "depth": 2,
+          "name": "expire"
+        },
+        {
+          "text": "expiry / expiration",
+          "depth": 2,
+          "name": "expiry / expiration"
+        },
+        {
+          "text": "expire",
+          "depth": 2,
+          "name": "expire"
+        },
+        {
+          "text": "expired",
+          "depth": 2,
+          "name": "expired"
+        },
+        {
+          "text": "recycle",
+          "depth": 2,
+          "name": "recycle"
+        },
+        {
+          "text": "recycling / recycler",
+          "depth": 2,
+          "name": "recycling / recycler"
+        },
+        {
+          "text": "recycle",
+          "depth": 2,
+          "name": "recycle"
+        },
+        {
+          "text": "recyclable",
+          "depth": 2,
+          "name": "recyclable"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "553:705",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A __________ allows customers to weigh loose fruit and vegetables before buying.",
+          "depth": 1,
+          "name": "1. A __________ allows customers to weigh loose fruit and vegetables before buying."
+        },
+        {
+          "text": "2.  The __________ lane serves customers with fewer items for a quicker exit.",
+          "depth": 1,
+          "name": "2. The __________ lane serves customers with fewer items for a quicker exit."
+        },
+        {
+          "text": "3.  A __________ reads the barcode on each product at the checkout.",
+          "depth": 1,
+          "name": "3. A __________ reads the barcode on each product at the checkout."
+        },
+        {
+          "text": "4.  The __________ date on the label tells you when to use the product before it spoils.",
+          "depth": 1,
+          "name": "4. The __________ date on the label tells you when to use the product before it spoils."
+        },
+        {
+          "text": "5.  A __________ belt moves items forward toward the cashier at the checkout.",
+          "depth": 1,
+          "name": "5. A __________ belt moves items forward toward the cashier at the checkout."
+        },
+        {
+          "text": "6.  A __________ card provides regular customers with discounts and special offers.",
+          "depth": 1,
+          "name": "6. A __________ card provides regular customers with discounts and special offers."
+        },
+        {
+          "text": "7.  Herbs such as basil, thyme, and __________ are displayed near the fresh produce section.",
+          "depth": 1,
+          "name": "7. Herbs such as basil, thyme, and __________ are displayed near the fresh produce section."
+        },
+        {
+          "text": "8.  A __________ cuts meat to order behind the deli counter.",
+          "depth": 1,
+          "name": "8. A __________ cuts meat to order behind the deli counter."
+        },
+        {
+          "text": "9.  __________ facts on the packaging list ingredients, calories, and nutritional content.",
+          "depth": 1,
+          "name": "9. __________ facts on the packaging list ingredients, calories, and nutritional content."
+        },
+        {
+          "text": "10. You can buy bread as a __________ , eggs by the dozen, and bananas by the bunch.",
+          "depth": 1,
+          "name": "10. You can buy bread as a __________ , eggs by the dozen, and bananas by the bunch."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. scale  2. express  3. scanner  4. expiration  5. conveyor  6. loyalty  7. rosemary/cilantro  8. butcher  9. Nutrition  10. loaf",
+          "depth": 2,
+          "name": "1. scale 2. express 3. scanner 4. expiration 5. conveyor 6. loyalty 7. rosemary/cilantro 8. butcher 9. Nutrition 10. loaf"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "553:723",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Trolley vs Cart",
+          "depth": 2,
+          "name": "Trolley vs Cart"
+        },
+        {
+          "text": "'Trolley' (BrE) = 'shopping cart' (AmE). 'Basket' is the same in both. In British supermarkets you often need a £1 coin to unlock a trolley (returned when you bring it back). American stores usually have free carts.",
+          "depth": 2,
+          "name": "'Trolley' (BrE) = 'shopping cart' (AmE). 'Basket' is the same in both. In British supermarkets you often need a £1 coin to unlock a trolley (returned when you bring it back). American stores usually have free carts."
+        },
+        {
+          "text": "Supermarket vs Grocery Store",
+          "depth": 2,
+          "name": "Supermarket vs Grocery Store"
+        },
+        {
+          "text": "'Supermarket' is used in both BrE and AmE. 'Grocery store' or 'grocery' is more common in AmE. 'Corner shop' (BrE) = 'convenience store' (AmE) = a small local shop. 'Hypermarket' = a very large supermarket (common in Europe). 'Off-licence' (BrE) = 'liquor store' (AmE).",
+          "depth": 2,
+          "name": "'Supermarket' is used in both BrE and AmE. 'Grocery store' or 'grocery' is more common in AmE. 'Corner shop' (BrE) = 'convenience store' (AmE) = a small local shop. 'Hypermarket' = a very large supermarket (common in Europe). 'Off-licence' (BrE) = 'liquor store' (AmE)."
+        },
+        {
+          "text": "Bags for Life",
+          "depth": 2,
+          "name": "Bags for Life"
+        },
+        {
+          "text": "In the UK, single-use plastic bags have been replaced by reusable 'bags for life' (usually 10p-20p each). Many shoppers bring their own bags. This is now common worldwide. 'Paper or plastic?' was a classic American checkout question.",
+          "depth": 2,
+          "name": "In the UK, single-use plastic bags have been replaced by reusable 'bags for life' (usually 10p-20p each). Many shoppers bring their own bags. This is now common worldwide. 'Paper or plastic?' was a classic American checkout question."
+        },
+        {
+          "text": "Queuing Culture",
+          "depth": 2,
+          "name": "Queuing Culture"
+        },
+        {
+          "text": "In Britain, queuing (waiting in line) is taken very seriously. Cutting the queue (jumping the line) is considered extremely rude. At self-checkout, there is usually one shared queue. In America, 'standing in line' follows similar etiquette but is less culturally iconic.",
+          "depth": 2,
+          "name": "In Britain, queuing (waiting in line) is taken very seriously. Cutting the queue (jumping the line) is considered extremely rude. At self-checkout, there is usually one shared queue. In America, 'standing in line' follows similar etiquette but is less culturally iconic."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "553:739",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "trolley",
+          "depth": 2,
+          "name": "trolley"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "shopping ~, ~ park, ~ wheel",
+          "depth": 2,
+          "name": "shopping ~, ~ park, ~ wheel"
+        },
+        {
+          "text": "aisle",
+          "depth": 2,
+          "name": "aisle"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ number, walk down the ~, ~ seat",
+          "depth": 2,
+          "name": "~ number, walk down the ~, ~ seat"
+        },
+        {
+          "text": "checkout",
+          "depth": 2,
+          "name": "checkout"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "self-~, ~ counter, ~ queue",
+          "depth": 2,
+          "name": "self-~, ~ counter, ~ queue"
+        },
+        {
+          "text": "receipt",
+          "depth": 2,
+          "name": "receipt"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "keep the ~, ~ printer, ~ total",
+          "depth": 2,
+          "name": "keep the ~, ~ printer, ~ total"
+        },
+        {
+          "text": "barcode",
+          "depth": 2,
+          "name": "barcode"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ scanner, ~ label, ~ reader",
+          "depth": 2,
+          "name": "~ scanner, ~ label, ~ reader"
+        },
+        {
+          "text": "produce",
+          "depth": 2,
+          "name": "produce"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "fresh ~, organic ~, local ~",
+          "depth": 2,
+          "name": "fresh ~, organic ~, local ~"
+        },
+        {
+          "text": "cashier",
+          "depth": 2,
+          "name": "cashier"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ desk, ~ register, ~ shift",
+          "depth": 2,
+          "name": "~ desk, ~ register, ~ shift"
+        },
+        {
+          "text": "discount",
+          "depth": 2,
+          "name": "discount"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ code, ~ price, student ~",
+          "depth": 2,
+          "name": "~ code, ~ price, student ~"
+        },
+        {
+          "text": "shelf",
+          "depth": 2,
+          "name": "shelf"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "top ~, ~ label, ~ life",
+          "depth": 2,
+          "name": "top ~, ~ label, ~ life"
+        },
+        {
+          "text": "groceries",
+          "depth": 2,
+          "name": "groceries"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "buy ~, ~ list, ~ delivery",
+          "depth": 2,
+          "name": "buy ~, ~ list, ~ delivery"
+        }
+      ]
+    }
+  }
+}

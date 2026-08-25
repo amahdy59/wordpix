@@ -1,0 +1,489 @@
+{
+  "unitId": "fabrics-textiles",
+  "name": "Fabrics & Textiles",
+  "subtopics": [
+    {
+      "id": "natural-fabrics",
+      "title": "Natural Fabrics",
+      "wordIds": [
+        "cotton",
+        "silk",
+        "wool",
+        "linen",
+        "cashmere",
+        "hemp",
+        "bamboo",
+        "jute",
+        "mohair",
+        "alpaca"
+      ]
+    },
+    {
+      "id": "synthetic-fabrics",
+      "title": "Synthetic Fabrics",
+      "wordIds": [
+        "polyester",
+        "nylon",
+        "acrylic",
+        "spandex",
+        "rayon",
+        "lycra",
+        "microfiber",
+        "gore-tex",
+        "kevlar",
+        "neoprene"
+      ]
+    },
+    {
+      "id": "luxury-fabrics",
+      "title": "Luxury Fabrics",
+      "wordIds": [
+        "velvet",
+        "satin",
+        "chiffon",
+        "organza",
+        "taffeta",
+        "brocade",
+        "jacquard",
+        "crepe",
+        "tulle",
+        "lace"
+      ]
+    },
+    {
+      "id": "fabric-properties",
+      "title": "Fabric Properties",
+      "wordIds": [
+        "weave",
+        "knit",
+        "warp",
+        "weft",
+        "thread-count",
+        "weight",
+        "drape",
+        "stretch",
+        "breathability",
+        "durability"
+      ]
+    },
+    {
+      "id": "fabric-care",
+      "title": "Fabric Care",
+      "wordIds": [
+        "hand-wash",
+        "machine-wash",
+        "dry-clean",
+        "iron",
+        "steam",
+        "bleach",
+        "tumble-dry",
+        "line-dry",
+        "stain-removal",
+        "fabric-softener"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "cotton",
+      "label": "Cotton",
+      "ipa": "/ˈkɒtən/",
+      "cefr": "B2",
+      "imageNodeId": "467:19986"
+    },
+    {
+      "kind": "card",
+      "id": "silk",
+      "label": "Silk",
+      "ipa": "/sɪlk/",
+      "cefr": "B2",
+      "imageNodeId": "467:19990"
+    },
+    {
+      "kind": "card",
+      "id": "wool",
+      "label": "Wool",
+      "ipa": "/wʊl/",
+      "cefr": "B2",
+      "imageNodeId": "467:19994"
+    },
+    {
+      "kind": "card",
+      "id": "linen",
+      "label": "Linen",
+      "ipa": "/ˈlɪnɪn/",
+      "cefr": "B2",
+      "imageNodeId": "467:19998"
+    },
+    {
+      "kind": "card",
+      "id": "cashmere",
+      "label": "Cashmere",
+      "ipa": "/ˈkæʒˌmɪər/",
+      "cefr": "B2",
+      "imageNodeId": "467:20002"
+    },
+    {
+      "kind": "card",
+      "id": "hemp",
+      "label": "Hemp",
+      "ipa": "/hɛmp/",
+      "cefr": "B2",
+      "imageNodeId": "467:20006"
+    },
+    {
+      "kind": "card",
+      "id": "bamboo",
+      "label": "Bamboo",
+      "ipa": "/bæmˈbuː/",
+      "cefr": "B2",
+      "imageNodeId": "467:20010"
+    },
+    {
+      "kind": "card",
+      "id": "jute",
+      "label": "Jute",
+      "ipa": "/dʒuːt/",
+      "cefr": "B2",
+      "imageNodeId": "467:20014"
+    },
+    {
+      "kind": "card",
+      "id": "mohair",
+      "label": "Mohair",
+      "ipa": "/ˈmoʊˌhɛər/",
+      "cefr": "B2",
+      "imageNodeId": "467:20018"
+    },
+    {
+      "kind": "card",
+      "id": "alpaca",
+      "label": "Alpaca",
+      "ipa": "/ælˈpækə/",
+      "cefr": "B2",
+      "imageNodeId": "467:20022"
+    },
+    {
+      "kind": "card",
+      "id": "polyester",
+      "label": "Polyester",
+      "ipa": "/ˌpɒliˈɛstər/",
+      "cefr": "B2",
+      "imageNodeId": "467:20031"
+    },
+    {
+      "kind": "card",
+      "id": "nylon",
+      "label": "Nylon",
+      "ipa": "/ˈnaɪlɒn/",
+      "cefr": "B2",
+      "imageNodeId": "467:20035"
+    },
+    {
+      "kind": "card",
+      "id": "acrylic",
+      "label": "Acrylic",
+      "ipa": "/əˈkrɪlɪk/",
+      "cefr": "B2",
+      "imageNodeId": "467:20039"
+    },
+    {
+      "kind": "card",
+      "id": "spandex",
+      "label": "Spandex",
+      "ipa": "/ˈspændɛks/",
+      "cefr": "B2",
+      "imageNodeId": "467:20043"
+    },
+    {
+      "kind": "card",
+      "id": "rayon",
+      "label": "Rayon",
+      "ipa": "/ˈreɪɒn/",
+      "cefr": "B2",
+      "imageNodeId": "467:20047"
+    },
+    {
+      "kind": "card",
+      "id": "lycra",
+      "label": "Lycra",
+      "ipa": "/ˈlaɪkrə/",
+      "cefr": "B2",
+      "imageNodeId": "467:20051"
+    },
+    {
+      "kind": "card",
+      "id": "microfiber",
+      "label": "Microfiber",
+      "ipa": "/ˈmaɪkroʊˌfaɪbər/",
+      "cefr": "C1",
+      "imageNodeId": "467:20055"
+    },
+    {
+      "kind": "card",
+      "id": "gore-tex",
+      "label": "Gore-Tex",
+      "ipa": "/ɡɔːr tɛks/",
+      "cefr": "C1",
+      "imageNodeId": "467:20059"
+    },
+    {
+      "kind": "card",
+      "id": "kevlar",
+      "label": "Kevlar",
+      "ipa": "/ˈkɛvlɑːr/",
+      "cefr": "B2",
+      "imageNodeId": "467:20063"
+    },
+    {
+      "kind": "card",
+      "id": "neoprene",
+      "label": "Neoprene",
+      "ipa": "/ˈniːəˌpriːn/",
+      "cefr": "B2",
+      "imageNodeId": "467:20067"
+    },
+    {
+      "kind": "card",
+      "id": "velvet",
+      "label": "Velvet",
+      "ipa": "/ˈvɛlvɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:20076"
+    },
+    {
+      "kind": "card",
+      "id": "satin",
+      "label": "Satin",
+      "ipa": "/ˈsætɪn/",
+      "cefr": "B2",
+      "imageNodeId": "467:20080"
+    },
+    {
+      "kind": "card",
+      "id": "chiffon",
+      "label": "Chiffon",
+      "ipa": "/ʃɪˈfɒn/",
+      "cefr": "B2",
+      "imageNodeId": "467:20084"
+    },
+    {
+      "kind": "card",
+      "id": "organza",
+      "label": "Organza",
+      "ipa": "/ɔːrˈɡænzə/",
+      "cefr": "B2",
+      "imageNodeId": "467:20088"
+    },
+    {
+      "kind": "card",
+      "id": "taffeta",
+      "label": "Taffeta",
+      "ipa": "/ˈtæfɪtə/",
+      "cefr": "B2",
+      "imageNodeId": "467:20092"
+    },
+    {
+      "kind": "card",
+      "id": "brocade",
+      "label": "Brocade",
+      "ipa": "/broʊˈkeɪd/",
+      "cefr": "B2",
+      "imageNodeId": "467:20096"
+    },
+    {
+      "kind": "card",
+      "id": "jacquard",
+      "label": "Jacquard",
+      "ipa": "/dʒəˈkɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "467:20100"
+    },
+    {
+      "kind": "card",
+      "id": "crepe",
+      "label": "Crepe",
+      "ipa": "/kreɪp/",
+      "cefr": "B2",
+      "imageNodeId": "467:20104"
+    },
+    {
+      "kind": "card",
+      "id": "tulle",
+      "label": "Tulle",
+      "ipa": "/tuːl/",
+      "cefr": "B2",
+      "imageNodeId": "467:20108"
+    },
+    {
+      "kind": "card",
+      "id": "lace",
+      "label": "Lace",
+      "ipa": "/leɪs/",
+      "cefr": "B2",
+      "imageNodeId": "467:20112"
+    },
+    {
+      "kind": "card",
+      "id": "weave",
+      "label": "Weave",
+      "ipa": "/wiːv/",
+      "cefr": "B2",
+      "imageNodeId": "467:20121"
+    },
+    {
+      "kind": "card",
+      "id": "knit",
+      "label": "Knit",
+      "ipa": "/nɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:20125"
+    },
+    {
+      "kind": "card",
+      "id": "warp",
+      "label": "Warp",
+      "ipa": "/wɔːrp/",
+      "cefr": "B2",
+      "imageNodeId": "467:20129"
+    },
+    {
+      "kind": "card",
+      "id": "weft",
+      "label": "Weft",
+      "ipa": "/wɛft/",
+      "cefr": "B2",
+      "imageNodeId": "467:20133"
+    },
+    {
+      "kind": "card",
+      "id": "thread-count",
+      "label": "Thread Count",
+      "ipa": "/θrɛd kaʊnt/",
+      "cefr": "C1",
+      "imageNodeId": "467:20137"
+    },
+    {
+      "kind": "card",
+      "id": "weight",
+      "label": "Weight",
+      "ipa": "/weɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:20141"
+    },
+    {
+      "kind": "card",
+      "id": "drape",
+      "label": "Drape",
+      "ipa": "/dreɪp/",
+      "cefr": "B2",
+      "imageNodeId": "467:20145"
+    },
+    {
+      "kind": "card",
+      "id": "stretch",
+      "label": "Stretch",
+      "ipa": "/strɛtʃ/",
+      "cefr": "B2",
+      "imageNodeId": "467:20149"
+    },
+    {
+      "kind": "card",
+      "id": "breathability",
+      "label": "Breathability",
+      "ipa": "/ˌbriːðəˈbɪlɪti/",
+      "cefr": "C1",
+      "imageNodeId": "467:20153"
+    },
+    {
+      "kind": "card",
+      "id": "durability",
+      "label": "Durability",
+      "ipa": "/ˌdjʊərəˈbɪlɪti/",
+      "cefr": "C1",
+      "imageNodeId": "467:20157"
+    },
+    {
+      "kind": "card",
+      "id": "hand-wash",
+      "label": "Hand Wash",
+      "ipa": "/hænd wɒʃ/",
+      "cefr": "C1",
+      "imageNodeId": "467:20166"
+    },
+    {
+      "kind": "card",
+      "id": "machine-wash",
+      "label": "Machine Wash",
+      "ipa": "/məˈʃiːn wɒʃ/",
+      "cefr": "C1",
+      "imageNodeId": "467:20170"
+    },
+    {
+      "kind": "card",
+      "id": "dry-clean",
+      "label": "Dry Clean",
+      "ipa": "/draɪ kliːn/",
+      "cefr": "C1",
+      "imageNodeId": "467:20174"
+    },
+    {
+      "kind": "card",
+      "id": "iron",
+      "label": "Iron",
+      "ipa": "/ˈaɪərn/",
+      "cefr": "B2",
+      "imageNodeId": "467:20178"
+    },
+    {
+      "kind": "card",
+      "id": "steam",
+      "label": "Steam",
+      "ipa": "/stiːm/",
+      "cefr": "B2",
+      "imageNodeId": "467:20182"
+    },
+    {
+      "kind": "card",
+      "id": "bleach",
+      "label": "Bleach",
+      "ipa": "/bliːtʃ/",
+      "cefr": "B2",
+      "imageNodeId": "467:20186"
+    },
+    {
+      "kind": "card",
+      "id": "tumble-dry",
+      "label": "Tumble Dry",
+      "ipa": "/ˈtʌmbəl draɪ/",
+      "cefr": "C1",
+      "imageNodeId": "467:20190"
+    },
+    {
+      "kind": "card",
+      "id": "line-dry",
+      "label": "Line Dry",
+      "ipa": "/laɪn draɪ/",
+      "cefr": "C1",
+      "imageNodeId": "467:20194"
+    },
+    {
+      "kind": "card",
+      "id": "stain-removal",
+      "label": "Stain Removal",
+      "ipa": "/steɪn rɪˈmuːvəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:20198"
+    },
+    {
+      "kind": "card",
+      "id": "fabric-softener",
+      "label": "Fabric Softener",
+      "ipa": "/ˈfæbrɪk ˈsɒfənər/",
+      "cefr": "C1",
+      "imageNodeId": "467:20202"
+    }
+  ],
+  "materials": null
+}

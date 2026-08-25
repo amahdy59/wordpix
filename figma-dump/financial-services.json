@@ -1,0 +1,393 @@
+{
+  "unitId": "financial-services",
+  "name": "Financial Services",
+  "subtopics": [
+    {
+      "id": "loans-credit",
+      "title": "Loans & Credit",
+      "wordIds": [
+        "mortgage",
+        "auto-loan",
+        "personal-loan",
+        "student-loan",
+        "line-of-credit",
+        "credit-score",
+        "interest-rate",
+        "principal",
+        "collateral",
+        "co-signer"
+      ]
+    },
+    {
+      "id": "insurance",
+      "title": "Insurance",
+      "wordIds": [
+        "health-insurance",
+        "car-insurance",
+        "life-insurance",
+        "home-insurance",
+        "travel-insurance",
+        "premium",
+        "deductible",
+        "coverage",
+        "claim",
+        "policy"
+      ]
+    },
+    {
+      "id": "investment",
+      "title": "Investment",
+      "wordIds": [
+        "stock",
+        "bond",
+        "mutual-fund",
+        "etf",
+        "portfolio",
+        "dividend",
+        "capital-gain",
+        "risk",
+        "return",
+        "diversification"
+      ]
+    },
+    {
+      "id": "retirement",
+      "title": "Retirement",
+      "wordIds": [
+        "401k",
+        "ira",
+        "pension",
+        "social-security",
+        "annuity",
+        "retirement-fund",
+        "compound-interest",
+        "contribution",
+        "vesting",
+        "beneficiary"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "mortgage",
+      "label": "Mortgage",
+      "ipa": "/ˈmɔːrɡɪdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "467:13880"
+    },
+    {
+      "kind": "card",
+      "id": "auto-loan",
+      "label": "Auto Loan",
+      "ipa": "/ˈɔːtoʊ loʊn/",
+      "cefr": "C1",
+      "imageNodeId": "467:13884"
+    },
+    {
+      "kind": "card",
+      "id": "personal-loan",
+      "label": "Personal Loan",
+      "ipa": "/ˈpɜːrsənəl loʊn/",
+      "cefr": "C1",
+      "imageNodeId": "467:13888"
+    },
+    {
+      "kind": "card",
+      "id": "student-loan",
+      "label": "Student Loan",
+      "ipa": "/ˈstjuːdənt loʊn/",
+      "cefr": "C1",
+      "imageNodeId": "467:13892"
+    },
+    {
+      "kind": "card",
+      "id": "line-of-credit",
+      "label": "Line of Credit",
+      "ipa": "/laɪn əv ˈkrɛdɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:13896"
+    },
+    {
+      "kind": "card",
+      "id": "credit-score",
+      "label": "Credit Score",
+      "ipa": "/ˈkrɛdɪt skɔːr/",
+      "cefr": "C1",
+      "imageNodeId": "467:13900"
+    },
+    {
+      "kind": "card",
+      "id": "interest-rate",
+      "label": "Interest Rate",
+      "ipa": "/ˈɪntrɪst reɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:13904"
+    },
+    {
+      "kind": "card",
+      "id": "principal",
+      "label": "Principal",
+      "ipa": "/ˈprɪnsəpəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:13908"
+    },
+    {
+      "kind": "card",
+      "id": "collateral",
+      "label": "Collateral",
+      "ipa": "/kəˈlætərəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:13912"
+    },
+    {
+      "kind": "card",
+      "id": "co-signer",
+      "label": "Co-Signer",
+      "ipa": "/ˈkoʊˌsaɪnər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13916"
+    },
+    {
+      "kind": "card",
+      "id": "health-insurance",
+      "label": "Health Insurance",
+      "ipa": "/hɛlθ ɪnˈʃʊərəns/",
+      "cefr": "C1",
+      "imageNodeId": "467:13925"
+    },
+    {
+      "kind": "card",
+      "id": "car-insurance",
+      "label": "Car Insurance",
+      "ipa": "/kɑːr ɪnˈʃʊərəns/",
+      "cefr": "C1",
+      "imageNodeId": "467:13929"
+    },
+    {
+      "kind": "card",
+      "id": "life-insurance",
+      "label": "Life Insurance",
+      "ipa": "/laɪf ɪnˈʃʊərəns/",
+      "cefr": "C1",
+      "imageNodeId": "467:13933"
+    },
+    {
+      "kind": "card",
+      "id": "home-insurance",
+      "label": "Home Insurance",
+      "ipa": "/hoʊm ɪnˈʃʊərəns/",
+      "cefr": "C1",
+      "imageNodeId": "467:13937"
+    },
+    {
+      "kind": "card",
+      "id": "travel-insurance",
+      "label": "Travel Insurance",
+      "ipa": "/ˈtrævəl ɪnˈʃʊərəns/",
+      "cefr": "C1",
+      "imageNodeId": "467:13941"
+    },
+    {
+      "kind": "card",
+      "id": "premium",
+      "label": "Premium",
+      "ipa": "/ˈpriːmiəm/",
+      "cefr": "B2",
+      "imageNodeId": "467:13945"
+    },
+    {
+      "kind": "card",
+      "id": "deductible",
+      "label": "Deductible",
+      "ipa": "/dɪˈdʌktɪbəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:13949"
+    },
+    {
+      "kind": "card",
+      "id": "coverage",
+      "label": "Coverage",
+      "ipa": "/ˈkʌvərɪdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "467:13953"
+    },
+    {
+      "kind": "card",
+      "id": "claim",
+      "label": "Claim",
+      "ipa": "/kleɪm/",
+      "cefr": "B2",
+      "imageNodeId": "467:13957"
+    },
+    {
+      "kind": "card",
+      "id": "policy",
+      "label": "Policy",
+      "ipa": "/ˈpɒlɪsi/",
+      "cefr": "B2",
+      "imageNodeId": "467:13961"
+    },
+    {
+      "kind": "card",
+      "id": "stock",
+      "label": "Stock",
+      "ipa": "/stɒk/",
+      "cefr": "B2",
+      "imageNodeId": "467:13970"
+    },
+    {
+      "kind": "card",
+      "id": "bond",
+      "label": "Bond",
+      "ipa": "/bɒnd/",
+      "cefr": "B2",
+      "imageNodeId": "467:13974"
+    },
+    {
+      "kind": "card",
+      "id": "mutual-fund",
+      "label": "Mutual Fund",
+      "ipa": "/ˈmjuːtʃuəl fʌnd/",
+      "cefr": "C1",
+      "imageNodeId": "467:13978"
+    },
+    {
+      "kind": "card",
+      "id": "etf",
+      "label": "ETF",
+      "ipa": "/ˌiːtiːˈɛf/",
+      "cefr": "B2",
+      "imageNodeId": "467:13982"
+    },
+    {
+      "kind": "card",
+      "id": "portfolio",
+      "label": "Portfolio",
+      "ipa": "/pɔːrtˈfoʊlioʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:13986"
+    },
+    {
+      "kind": "card",
+      "id": "dividend",
+      "label": "Dividend",
+      "ipa": "/ˈdɪvɪˌdɛnd/",
+      "cefr": "B2",
+      "imageNodeId": "467:13990"
+    },
+    {
+      "kind": "card",
+      "id": "capital-gain",
+      "label": "Capital Gain",
+      "ipa": "/ˈkæpɪtəl ɡeɪn/",
+      "cefr": "C1",
+      "imageNodeId": "467:13994"
+    },
+    {
+      "kind": "card",
+      "id": "risk",
+      "label": "Risk",
+      "ipa": "/rɪsk/",
+      "cefr": "B2",
+      "imageNodeId": "467:13998"
+    },
+    {
+      "kind": "card",
+      "id": "return",
+      "label": "Return",
+      "ipa": "/rɪˈtɜːrn/",
+      "cefr": "B2",
+      "imageNodeId": "467:14002"
+    },
+    {
+      "kind": "card",
+      "id": "diversification",
+      "label": "Diversification",
+      "ipa": "/daɪˌvɜːrsɪfɪˈkeɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:14006"
+    },
+    {
+      "kind": "card",
+      "id": "401k",
+      "label": "401k",
+      "ipa": "/ˌfɔːr oʊ wʌn ˈkeɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:14015"
+    },
+    {
+      "kind": "card",
+      "id": "ira",
+      "label": "IRA",
+      "ipa": "/ˌaɪɑːrˈeɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:14019"
+    },
+    {
+      "kind": "card",
+      "id": "pension",
+      "label": "Pension",
+      "ipa": "/ˈpɛnʃən/",
+      "cefr": "B2",
+      "imageNodeId": "467:14023"
+    },
+    {
+      "kind": "card",
+      "id": "social-security",
+      "label": "Social Security",
+      "ipa": "/ˈsoʊʃəl sɪˈkjʊərɪti/",
+      "cefr": "C1",
+      "imageNodeId": "467:14027"
+    },
+    {
+      "kind": "card",
+      "id": "annuity",
+      "label": "Annuity",
+      "ipa": "/əˈnjuːɪti/",
+      "cefr": "B2",
+      "imageNodeId": "467:14031"
+    },
+    {
+      "kind": "card",
+      "id": "retirement-fund",
+      "label": "Retirement Fund",
+      "ipa": "/rɪˈtaɪərmənt fʌnd/",
+      "cefr": "C1",
+      "imageNodeId": "467:14035"
+    },
+    {
+      "kind": "card",
+      "id": "compound-interest",
+      "label": "Compound Interest",
+      "ipa": "/ˈkɒmpaʊnd ˈɪntrɪst/",
+      "cefr": "C1",
+      "imageNodeId": "467:14039"
+    },
+    {
+      "kind": "card",
+      "id": "contribution",
+      "label": "Contribution",
+      "ipa": "/ˌkɒntrɪˈbjuːʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:14043"
+    },
+    {
+      "kind": "card",
+      "id": "vesting",
+      "label": "Vesting",
+      "ipa": "/ˈvɛstɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:14047"
+    },
+    {
+      "kind": "card",
+      "id": "beneficiary",
+      "label": "Beneficiary",
+      "ipa": "/ˌbɛnɪˈfɪʃəri/",
+      "cefr": "C1",
+      "imageNodeId": "467:14051"
+    }
+  ],
+  "materials": null
+}

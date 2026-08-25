@@ -1,0 +1,393 @@
+{
+  "unitId": "university-campus",
+  "name": "The University Campus",
+  "subtopics": [
+    {
+      "id": "campus-buildings",
+      "title": "Campus Buildings",
+      "wordIds": [
+        "lecture-hall",
+        "library",
+        "laboratory",
+        "dormitory",
+        "student-center",
+        "gymnasium",
+        "cafeteria",
+        "administration",
+        "auditorium",
+        "chapel"
+      ]
+    },
+    {
+      "id": "campus-features",
+      "title": "Campus Features",
+      "wordIds": [
+        "quad",
+        "courtyard",
+        "fountain",
+        "statue",
+        "clock-tower",
+        "gate",
+        "pathway",
+        "garden",
+        "parking-lot",
+        "sports-field"
+      ]
+    },
+    {
+      "id": "facilities",
+      "title": "Facilities",
+      "wordIds": [
+        "computer-lab",
+        "art-studio",
+        "music-room",
+        "theater",
+        "swimming-pool",
+        "track",
+        "tennis-court",
+        "health-center",
+        "counseling-center",
+        "career-center"
+      ]
+    },
+    {
+      "id": "campus-life",
+      "title": "Campus Life",
+      "wordIds": [
+        "orientation",
+        "registration",
+        "move-in-day",
+        "commencement",
+        "homecoming",
+        "spring-break",
+        "finals-week",
+        "study-abroad",
+        "internship-fair",
+        "alumni-weekend"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "lecture-hall",
+      "label": "Lecture Hall",
+      "ipa": "/ˈlɛktʃər hɔːl/",
+      "cefr": "C1",
+      "imageNodeId": "467:15196"
+    },
+    {
+      "kind": "card",
+      "id": "library",
+      "label": "Library",
+      "ipa": "/ˈlaɪbrəri/",
+      "cefr": "B2",
+      "imageNodeId": "467:15200"
+    },
+    {
+      "kind": "card",
+      "id": "laboratory",
+      "label": "Laboratory",
+      "ipa": "/ˈlæbrəˌtɔːri/",
+      "cefr": "C1",
+      "imageNodeId": "467:15204"
+    },
+    {
+      "kind": "card",
+      "id": "dormitory",
+      "label": "Dormitory",
+      "ipa": "/ˈdɔːrmɪˌtɔːri/",
+      "cefr": "B2",
+      "imageNodeId": "467:15208"
+    },
+    {
+      "kind": "card",
+      "id": "student-center",
+      "label": "Student Center",
+      "ipa": "/ˈstjuːdənt ˈsɛntər/",
+      "cefr": "C1",
+      "imageNodeId": "467:15212"
+    },
+    {
+      "kind": "card",
+      "id": "gymnasium",
+      "label": "Gymnasium",
+      "ipa": "/dʒɪmˈneɪziəm/",
+      "cefr": "B2",
+      "imageNodeId": "467:15216"
+    },
+    {
+      "kind": "card",
+      "id": "cafeteria",
+      "label": "Cafeteria",
+      "ipa": "/ˌkæfɪˈtɪəriə/",
+      "cefr": "B2",
+      "imageNodeId": "467:15220"
+    },
+    {
+      "kind": "card",
+      "id": "administration",
+      "label": "Administration",
+      "ipa": "/ædˌmɪnɪˈstreɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:15224"
+    },
+    {
+      "kind": "card",
+      "id": "auditorium",
+      "label": "Auditorium",
+      "ipa": "/ˌɔːdɪˈtɔːriəm/",
+      "cefr": "C1",
+      "imageNodeId": "467:15228"
+    },
+    {
+      "kind": "card",
+      "id": "chapel",
+      "label": "Chapel",
+      "ipa": "/ˈtʃæpəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:15232"
+    },
+    {
+      "kind": "card",
+      "id": "quad",
+      "label": "Quad",
+      "ipa": "/kwɒd/",
+      "cefr": "B2",
+      "imageNodeId": "467:15241"
+    },
+    {
+      "kind": "card",
+      "id": "courtyard",
+      "label": "Courtyard",
+      "ipa": "/ˈkɔːrtˌjɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "467:15245"
+    },
+    {
+      "kind": "card",
+      "id": "fountain",
+      "label": "Fountain",
+      "ipa": "/ˈfaʊntɪn/",
+      "cefr": "B2",
+      "imageNodeId": "467:15249"
+    },
+    {
+      "kind": "card",
+      "id": "statue",
+      "label": "Statue",
+      "ipa": "/ˈstætʃuː/",
+      "cefr": "B2",
+      "imageNodeId": "467:15253"
+    },
+    {
+      "kind": "card",
+      "id": "clock-tower",
+      "label": "Clock Tower",
+      "ipa": "/klɒk ˈtaʊər/",
+      "cefr": "C1",
+      "imageNodeId": "467:15257"
+    },
+    {
+      "kind": "card",
+      "id": "gate",
+      "label": "Gate",
+      "ipa": "/ɡeɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:15261"
+    },
+    {
+      "kind": "card",
+      "id": "pathway",
+      "label": "Pathway",
+      "ipa": "/ˈpæθˌweɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:15265"
+    },
+    {
+      "kind": "card",
+      "id": "garden",
+      "label": "Garden",
+      "ipa": "/ˈɡɑːrdən/",
+      "cefr": "B2",
+      "imageNodeId": "467:15269"
+    },
+    {
+      "kind": "card",
+      "id": "parking-lot",
+      "label": "Parking Lot",
+      "ipa": "/ˈpɑːrkɪŋ lɒt/",
+      "cefr": "C1",
+      "imageNodeId": "467:15273"
+    },
+    {
+      "kind": "card",
+      "id": "sports-field",
+      "label": "Sports Field",
+      "ipa": "/spɔːrts fiːld/",
+      "cefr": "C1",
+      "imageNodeId": "467:15277"
+    },
+    {
+      "kind": "card",
+      "id": "computer-lab",
+      "label": "Computer Lab",
+      "ipa": "/kəmˈpjuːtər læb/",
+      "cefr": "C1",
+      "imageNodeId": "467:15286"
+    },
+    {
+      "kind": "card",
+      "id": "art-studio",
+      "label": "Art Studio",
+      "ipa": "/ɑːrt ˈstjuːdioʊ/",
+      "cefr": "C1",
+      "imageNodeId": "467:15290"
+    },
+    {
+      "kind": "card",
+      "id": "music-room",
+      "label": "Music Room",
+      "ipa": "/ˈmjuːzɪk ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "467:15294"
+    },
+    {
+      "kind": "card",
+      "id": "theater",
+      "label": "Theater",
+      "ipa": "/ˈθɪətər/",
+      "cefr": "B2",
+      "imageNodeId": "467:15298"
+    },
+    {
+      "kind": "card",
+      "id": "swimming-pool",
+      "label": "Swimming Pool",
+      "ipa": "/ˈswɪmɪŋ puːl/",
+      "cefr": "C1",
+      "imageNodeId": "467:15302"
+    },
+    {
+      "kind": "card",
+      "id": "track",
+      "label": "Track",
+      "ipa": "/træk/",
+      "cefr": "B2",
+      "imageNodeId": "467:15306"
+    },
+    {
+      "kind": "card",
+      "id": "tennis-court",
+      "label": "Tennis Court",
+      "ipa": "/ˈtɛnɪs kɔːrt/",
+      "cefr": "C1",
+      "imageNodeId": "467:15310"
+    },
+    {
+      "kind": "card",
+      "id": "health-center",
+      "label": "Health Center",
+      "ipa": "/hɛlθ ˈsɛntər/",
+      "cefr": "C1",
+      "imageNodeId": "467:15314"
+    },
+    {
+      "kind": "card",
+      "id": "counseling-center",
+      "label": "Counseling Center",
+      "ipa": "/ˈkaʊnsəlɪŋ ˈsɛntər/",
+      "cefr": "C1",
+      "imageNodeId": "467:15318"
+    },
+    {
+      "kind": "card",
+      "id": "career-center",
+      "label": "Career Center",
+      "ipa": "/kəˈrɪər ˈsɛntər/",
+      "cefr": "C1",
+      "imageNodeId": "467:15322"
+    },
+    {
+      "kind": "card",
+      "id": "orientation",
+      "label": "Orientation",
+      "ipa": "/ˌɔːriɛnˈteɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:15331"
+    },
+    {
+      "kind": "card",
+      "id": "registration",
+      "label": "Registration",
+      "ipa": "/ˌrɛdʒɪˈstreɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:15335"
+    },
+    {
+      "kind": "card",
+      "id": "move-in-day",
+      "label": "Move-In Day",
+      "ipa": "/muːv ɪn deɪ/",
+      "cefr": "C1",
+      "imageNodeId": "467:15339"
+    },
+    {
+      "kind": "card",
+      "id": "commencement",
+      "label": "Commencement",
+      "ipa": "/kəˈmɛnsmənt/",
+      "cefr": "C1",
+      "imageNodeId": "467:15343"
+    },
+    {
+      "kind": "card",
+      "id": "homecoming",
+      "label": "Homecoming",
+      "ipa": "/ˈhoʊmˌkʌmɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:15347"
+    },
+    {
+      "kind": "card",
+      "id": "spring-break",
+      "label": "Spring Break",
+      "ipa": "/sprɪŋ breɪk/",
+      "cefr": "C1",
+      "imageNodeId": "467:15351"
+    },
+    {
+      "kind": "card",
+      "id": "finals-week",
+      "label": "Finals Week",
+      "ipa": "/ˈfaɪnəlz wiːk/",
+      "cefr": "C1",
+      "imageNodeId": "467:15355"
+    },
+    {
+      "kind": "card",
+      "id": "study-abroad",
+      "label": "Study Abroad",
+      "ipa": "/ˈstʌdi əˈbrɔːd/",
+      "cefr": "C1",
+      "imageNodeId": "467:15359"
+    },
+    {
+      "kind": "card",
+      "id": "internship-fair",
+      "label": "Internship Fair",
+      "ipa": "/ˈɪntɜːrnʃɪp fɛər/",
+      "cefr": "C1",
+      "imageNodeId": "467:15363"
+    },
+    {
+      "kind": "card",
+      "id": "alumni-weekend",
+      "label": "Alumni Weekend",
+      "ipa": "/əˈlʌmnaɪ ˈwiːkˌɛnd/",
+      "cefr": "C1",
+      "imageNodeId": "467:15367"
+    }
+  ],
+  "materials": null
+}

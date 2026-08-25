@@ -1,0 +1,1566 @@
+{
+  "unitId": "insect-world",
+  "name": "The Insect World",
+  "subtopics": [
+    {
+      "id": "common-insects",
+      "title": "Common Insects",
+      "wordIds": [
+        "ant",
+        "bee",
+        "butterfly",
+        "ladybug",
+        "dragonfly",
+        "grasshopper",
+        "beetle",
+        "fly",
+        "mosquito",
+        "cricket"
+      ]
+    },
+    {
+      "id": "anatomy",
+      "title": "Anatomy",
+      "wordIds": [
+        "wing",
+        "antenna",
+        "leg",
+        "thorax",
+        "abdomen",
+        "head",
+        "eye",
+        "mandible",
+        "stinger",
+        "proboscis"
+      ]
+    },
+    {
+      "id": "habitats",
+      "title": "Habitats",
+      "wordIds": [
+        "hive",
+        "anthill",
+        "web",
+        "cocoon",
+        "nest",
+        "burrow",
+        "leaf",
+        "bark",
+        "soil",
+        "pond-surface"
+      ]
+    },
+    {
+      "id": "life-cycle",
+      "title": "Life Cycle",
+      "wordIds": [
+        "egg",
+        "larva",
+        "caterpillar",
+        "pupa",
+        "chrysalis",
+        "metamorphosis",
+        "molt",
+        "nymph",
+        "adult",
+        "swarm"
+      ]
+    },
+    {
+      "id": "behaviors",
+      "title": "Behaviors",
+      "wordIds": [
+        "pollinate",
+        "sting",
+        "crawl",
+        "fly",
+        "buzz",
+        "dig",
+        "spin",
+        "camouflage",
+        "migrate",
+        "hibernate"
+      ]
+    },
+    {
+      "id": "garden-insects",
+      "title": "Garden Insects",
+      "wordIds": [
+        "earthworm",
+        "snail",
+        "slug",
+        "centipede",
+        "millipede",
+        "aphid",
+        "praying-mantis",
+        "firefly",
+        "moth",
+        "wasp"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "ant",
+      "label": "Ant",
+      "ipa": "/ænt/",
+      "cefr": "B2",
+      "imageNodeId": "119:6303"
+    },
+    {
+      "kind": "card",
+      "id": "bee",
+      "label": "Bee",
+      "ipa": "/biː/",
+      "cefr": "B2",
+      "imageNodeId": "119:6307"
+    },
+    {
+      "kind": "card",
+      "id": "butterfly",
+      "label": "Butterfly",
+      "ipa": "/ˈbʌtərˌflaɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6311"
+    },
+    {
+      "kind": "card",
+      "id": "ladybug",
+      "label": "Ladybug",
+      "ipa": "/ˈleɪdiˌbʌɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6315"
+    },
+    {
+      "kind": "card",
+      "id": "dragonfly",
+      "label": "Dragonfly",
+      "ipa": "/ˈdræɡənˌflaɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6319"
+    },
+    {
+      "kind": "card",
+      "id": "grasshopper",
+      "label": "Grasshopper",
+      "ipa": "/ˈɡræsˌhɒpər/",
+      "cefr": "C1",
+      "imageNodeId": "119:6323"
+    },
+    {
+      "kind": "card",
+      "id": "beetle",
+      "label": "Beetle",
+      "ipa": "/ˈbiːtəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:6327"
+    },
+    {
+      "kind": "card",
+      "id": "fly",
+      "label": "Fly",
+      "ipa": "/flaɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6331"
+    },
+    {
+      "kind": "card",
+      "id": "mosquito",
+      "label": "Mosquito",
+      "ipa": "/məˈskiːtoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6335"
+    },
+    {
+      "kind": "card",
+      "id": "cricket",
+      "label": "Cricket",
+      "ipa": "/ˈkrɪkɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:6339"
+    },
+    {
+      "kind": "card",
+      "id": "wing",
+      "label": "Wing",
+      "ipa": "/wɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6348"
+    },
+    {
+      "kind": "card",
+      "id": "antenna",
+      "label": "Antenna",
+      "ipa": "/ænˈtɛnə/",
+      "cefr": "B2",
+      "imageNodeId": "119:6352"
+    },
+    {
+      "kind": "card",
+      "id": "leg",
+      "label": "Leg",
+      "ipa": "/lɛɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6356"
+    },
+    {
+      "kind": "card",
+      "id": "thorax",
+      "label": "Thorax",
+      "ipa": "/ˈθɔːræks/",
+      "cefr": "B2",
+      "imageNodeId": "119:6360"
+    },
+    {
+      "kind": "card",
+      "id": "abdomen",
+      "label": "Abdomen",
+      "ipa": "/ˈæbdəmən/",
+      "cefr": "B2",
+      "imageNodeId": "119:6364"
+    },
+    {
+      "kind": "card",
+      "id": "head",
+      "label": "Head",
+      "ipa": "/hɛd/",
+      "cefr": "B2",
+      "imageNodeId": "119:6368"
+    },
+    {
+      "kind": "card",
+      "id": "eye",
+      "label": "Eye",
+      "ipa": "/aɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6372"
+    },
+    {
+      "kind": "card",
+      "id": "mandible",
+      "label": "Mandible",
+      "ipa": "/ˈmændɪbəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:6376"
+    },
+    {
+      "kind": "card",
+      "id": "stinger",
+      "label": "Stinger",
+      "ipa": "/ˈstɪŋər/",
+      "cefr": "B2",
+      "imageNodeId": "119:6380"
+    },
+    {
+      "kind": "card",
+      "id": "proboscis",
+      "label": "Proboscis",
+      "ipa": "/prəˈbɒsɪs/",
+      "cefr": "B2",
+      "imageNodeId": "119:6384"
+    },
+    {
+      "kind": "card",
+      "id": "hive",
+      "label": "Hive",
+      "ipa": "/haɪv/",
+      "cefr": "B2",
+      "imageNodeId": "119:6393"
+    },
+    {
+      "kind": "card",
+      "id": "anthill",
+      "label": "Anthill",
+      "ipa": "/ˈæntˌhɪl/",
+      "cefr": "B2",
+      "imageNodeId": "119:6397"
+    },
+    {
+      "kind": "card",
+      "id": "web",
+      "label": "Web",
+      "ipa": "/wɛb/",
+      "cefr": "B2",
+      "imageNodeId": "119:6401"
+    },
+    {
+      "kind": "card",
+      "id": "cocoon",
+      "label": "Cocoon",
+      "ipa": "/kəˈkuːn/",
+      "cefr": "B2",
+      "imageNodeId": "119:6405"
+    },
+    {
+      "kind": "card",
+      "id": "nest",
+      "label": "Nest",
+      "ipa": "/nɛst/",
+      "cefr": "B2",
+      "imageNodeId": "119:6409"
+    },
+    {
+      "kind": "card",
+      "id": "burrow",
+      "label": "Burrow",
+      "ipa": "/ˈbʌroʊ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6413"
+    },
+    {
+      "kind": "card",
+      "id": "leaf",
+      "label": "Leaf",
+      "ipa": "/liːf/",
+      "cefr": "B2",
+      "imageNodeId": "119:6417"
+    },
+    {
+      "kind": "card",
+      "id": "bark",
+      "label": "Bark",
+      "ipa": "/bɑːrk/",
+      "cefr": "B2",
+      "imageNodeId": "119:6421"
+    },
+    {
+      "kind": "card",
+      "id": "soil",
+      "label": "Soil",
+      "ipa": "/sɔɪl/",
+      "cefr": "B2",
+      "imageNodeId": "119:6425"
+    },
+    {
+      "kind": "card",
+      "id": "pond-surface",
+      "label": "Pond Surface",
+      "ipa": "/pɒnd ˈsɜːrfɪs/",
+      "cefr": "C1",
+      "imageNodeId": "119:6429"
+    },
+    {
+      "kind": "card",
+      "id": "egg",
+      "label": "Egg",
+      "ipa": "/ɛɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6438"
+    },
+    {
+      "kind": "card",
+      "id": "larva",
+      "label": "Larva",
+      "ipa": "/ˈlɑːrvə/",
+      "cefr": "B2",
+      "imageNodeId": "119:6442"
+    },
+    {
+      "kind": "card",
+      "id": "caterpillar",
+      "label": "Caterpillar",
+      "ipa": "/ˈkætərˌpɪlər/",
+      "cefr": "C1",
+      "imageNodeId": "119:6446"
+    },
+    {
+      "kind": "card",
+      "id": "pupa",
+      "label": "Pupa",
+      "ipa": "/ˈpjuːpə/",
+      "cefr": "B2",
+      "imageNodeId": "119:6450"
+    },
+    {
+      "kind": "card",
+      "id": "chrysalis",
+      "label": "Chrysalis",
+      "ipa": "/ˈkrɪsəlɪs/",
+      "cefr": "B2",
+      "imageNodeId": "119:6454"
+    },
+    {
+      "kind": "card",
+      "id": "metamorphosis",
+      "label": "Metamorphosis",
+      "ipa": "/ˌmɛtəˈmɔːrfəsɪs/",
+      "cefr": "C1",
+      "imageNodeId": "119:6458"
+    },
+    {
+      "kind": "card",
+      "id": "molt",
+      "label": "Molt",
+      "ipa": "/moʊlt/",
+      "cefr": "B2",
+      "imageNodeId": "119:6462"
+    },
+    {
+      "kind": "card",
+      "id": "nymph",
+      "label": "Nymph",
+      "ipa": "/nɪmf/",
+      "cefr": "B2",
+      "imageNodeId": "119:6466"
+    },
+    {
+      "kind": "card",
+      "id": "adult",
+      "label": "Adult",
+      "ipa": "/əˈdʌlt/",
+      "cefr": "B2",
+      "imageNodeId": "119:6470"
+    },
+    {
+      "kind": "card",
+      "id": "swarm",
+      "label": "Swarm",
+      "ipa": "/swɔːrm/",
+      "cefr": "B2",
+      "imageNodeId": "119:6474"
+    },
+    {
+      "kind": "card",
+      "id": "pollinate",
+      "label": "Pollinate",
+      "ipa": "/ˈpɒlɪˌneɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:6483"
+    },
+    {
+      "kind": "card",
+      "id": "sting",
+      "label": "Sting",
+      "ipa": "/stɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6487"
+    },
+    {
+      "kind": "card",
+      "id": "crawl",
+      "label": "Crawl",
+      "ipa": "/krɔːl/",
+      "cefr": "B2",
+      "imageNodeId": "119:6491"
+    },
+    {
+      "kind": "card",
+      "id": "fly",
+      "label": "Fly",
+      "ipa": "/flaɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6495"
+    },
+    {
+      "kind": "card",
+      "id": "buzz",
+      "label": "Buzz",
+      "ipa": "/bʌz/",
+      "cefr": "B2",
+      "imageNodeId": "119:6499"
+    },
+    {
+      "kind": "card",
+      "id": "dig",
+      "label": "Dig",
+      "ipa": "/dɪɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6503"
+    },
+    {
+      "kind": "card",
+      "id": "spin",
+      "label": "Spin",
+      "ipa": "/spɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:6507"
+    },
+    {
+      "kind": "card",
+      "id": "camouflage",
+      "label": "Camouflage",
+      "ipa": "/ˈkæməˌflɑːʒ/",
+      "cefr": "C1",
+      "imageNodeId": "119:6511"
+    },
+    {
+      "kind": "card",
+      "id": "migrate",
+      "label": "Migrate",
+      "ipa": "/ˈmaɪɡreɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:6515"
+    },
+    {
+      "kind": "card",
+      "id": "hibernate",
+      "label": "Hibernate",
+      "ipa": "/ˈhaɪbərˌneɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:6519"
+    },
+    {
+      "kind": "card",
+      "id": "earthworm",
+      "label": "Earthworm",
+      "ipa": "/ˈɜːrθˌwɜːrm/",
+      "cefr": "B2",
+      "imageNodeId": "119:6528"
+    },
+    {
+      "kind": "card",
+      "id": "snail",
+      "label": "Snail",
+      "ipa": "/sneɪl/",
+      "cefr": "B2",
+      "imageNodeId": "119:6532"
+    },
+    {
+      "kind": "card",
+      "id": "slug",
+      "label": "Slug",
+      "ipa": "/slʌɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6536"
+    },
+    {
+      "kind": "card",
+      "id": "centipede",
+      "label": "Centipede",
+      "ipa": "/ˈsɛntɪˌpiːd/",
+      "cefr": "B2",
+      "imageNodeId": "119:6540"
+    },
+    {
+      "kind": "card",
+      "id": "millipede",
+      "label": "Millipede",
+      "ipa": "/ˈmɪlɪˌpiːd/",
+      "cefr": "B2",
+      "imageNodeId": "119:6544"
+    },
+    {
+      "kind": "card",
+      "id": "aphid",
+      "label": "Aphid",
+      "ipa": "/ˈeɪfɪd/",
+      "cefr": "B2",
+      "imageNodeId": "119:6548"
+    },
+    {
+      "kind": "card",
+      "id": "praying-mantis",
+      "label": "Praying Mantis",
+      "ipa": "/ˈpreɪɪŋ ˈmæntɪs/",
+      "cefr": "C1",
+      "imageNodeId": "119:6552"
+    },
+    {
+      "kind": "card",
+      "id": "firefly",
+      "label": "Firefly",
+      "ipa": "/ˈfaɪərˌflaɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6556"
+    },
+    {
+      "kind": "card",
+      "id": "moth",
+      "label": "Moth",
+      "ipa": "/mɒθ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6560"
+    },
+    {
+      "kind": "card",
+      "id": "wasp",
+      "label": "Wasp",
+      "ipa": "/wɒsp/",
+      "cefr": "B2",
+      "imageNodeId": "119:6564"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "554:4787",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "554:4789",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2+ · Topic: Insect World",
+          "depth": 1,
+          "name": "Level: B2+ · Topic: Insect World"
+        },
+        {
+          "text": "The Invisible Majority — Why Insects Matter More Than You Think\n\nInsects are, by virtually any measure, the most successful group of organisms on Earth. With over one million described species — and an estimated 5–10 million yet to be discovered — they account for approximately 80% of all known animal species. They inhabit every terrestrial environment from tropical rainforests to Arctic tundra, and their combined biomass is estimated to exceed that of all terrestrial vertebrates combined. Yet despite their ecological dominance, insects are experiencing a decline so severe that scientists have begun to describe it as an 'insect apocalypse' — a crisis that, if unchecked, could have cascading consequences for virtually every ecosystem on the planet.\n\nThe ecological services that insects provide are both diverse and irreplaceable. Pollination — the transfer of pollen between flowers, enabling plant reproduction — is perhaps the most widely appreciated. Approximately 75% of the world's flowering plants and roughly 35% of global food crops depend on animal pollinators, the vast majority of which are insects: bees, butterflies, moths, flies, beetles, and wasps. The economic value of pollination services provided by insects has been estimated at $235–577 billion annually. Without insect pollinators, the production of fruits, vegetables, nuts, and seeds would collapse, with devastating consequences for human nutrition and agricultural economies.\n\nBeyond pollination, insects perform critical functions in decomposition and nutrient cycling. Dung beetles bury animal waste, accelerating decomposition and returning nutrients to the soil. Termites break down dead wood and plant matter, processing an estimated 20% of the world's dead vegetation. Soil-dwelling insects aerate the ground and facilitate water infiltration. Aquatic insect larvae filter organic matter from streams and rivers, contributing to water purification. Without these decomposition services, dead organic matter would accumulate, nutrient cycles would stall, and ecosystems would rapidly degrade.\n\nInsects also form the foundation of countless food webs. They are the primary food source for the majority of freshwater fish, many bird species, bats, amphibians, reptiles, and small mammals. A decline in insect populations therefore propagates upward through food chains, threatening species that depend on insects for survival. Research published in the journal Nature has documented significant declines in insectivorous bird populations across Europe, correlating closely with measured decreases in insect abundance.\n\nThe causes of insect decline are multiple and interconnected. Habitat loss — driven by agricultural expansion, urbanisation, and deforestation — eliminates the diverse environments that insect communities require. Pesticide use, particularly neonicotinoids (a class of systemic insecticides), has been shown to impair bee navigation, reproduction, and immune function even at sub-lethal doses. Light pollution disrupts the behaviour of nocturnal insects, interfering with navigation, mating, and predator avoidance. Climate change alters the timing of seasonal events — such as the emergence of insects and the flowering of plants they pollinate — potentially creating mismatches that reduce reproductive success.\n\nAddressing insect decline requires action across multiple scales: reducing pesticide use through integrated pest management, restoring and connecting habitats, limiting artificial lighting, and reforming agricultural subsidies that currently incentivise intensive monoculture farming. The challenge is fundamentally one of perception: insects are widely regarded with indifference or disgust, making it difficult to generate the public concern and political will necessary for meaningful conservation action. Changing this perception — recognising insects not as pests but as the essential infrastructure of terrestrial life — may be the most important step of all.",
+          "depth": 1,
+          "name": "The Invisible Majority — Why Insects Matter More Than You Think Insects are, by virtually any measure, the most successful group of organisms on Earth. With over one million described species — and an estimated 5–10 million yet to be discovered — they account for approximately 80% of all known animal species. They inhabit every terrestrial environment from tropical rainforests to Arctic tundra, and their combined biomass is estimated to exceed that of all terrestrial vertebrates combined. Yet despite their ecological dominance, insects are experiencing a decline so severe that scientists have begun to describe it as an 'insect apocalypse' — a crisis that, if unchecked, could have cascading consequences for virtually every ecosystem on the planet. The ecological services that insects provide are both diverse and irreplaceable. Pollination — the transfer of pollen between flowers, enabling plant reproduction — is perhaps the most widely appreciated. Approximately 75% of the world's flowering plants and roughly 35% of global food crops depend on animal pollinators, the vast majority of which are insects: bees, butterflies, moths, flies, beetles, and wasps. The economic value of pollination services provided by insects has been estimated at $235–577 billion annually. Without insect pollinators, the production of fruits, vegetables, nuts, and seeds would collapse, with devastating consequences for human nutrition and agricultural economies. Beyond pollination, insects perform critical functions in decomposition and nutrient cycling. Dung beetles bury animal waste, accelerating decomposition and returning nutrients to the soil. Termites break down dead wood and plant matter, processing an estimated 20% of the world's dead vegetation. Soil-dwelling insects aerate the ground and facilitate water infiltration. Aquatic insect larvae filter organic matter from streams and rivers, contributing to water purification. Without these decomposition services, dead organic matter would accumulate, nutrient cycles would stall, and ecosystems would rapidly degrade. Insects also form the foundation of countless food webs. They are the primary food source for the majority of freshwater fish, many bird species, bats, amphibians, reptiles, and small mammals. A decline in insect populations therefore propagates upward through food chains, threatening species that depend on insects for survival. Research published in the journal Nature has documented significant declines in insectivorous bird populations across Europe, correlating closely with measured decreases in insect abundance. The causes of insect decline are multiple and interconnected. Habitat loss — driven by agricultural expansion, urbanisation, and deforestation — eliminates the diverse environments that insect communities require. Pesticide use, particularly neonicotinoids (a class of systemic insecticides), has been shown to impair bee navigation, reproduction, and immune function even at sub-lethal doses. Light pollution disrupts the behaviour of nocturnal insects, interfering with navigation, mating, and predator avoidance. Climate change alters the timing of seasonal events — such as the emergence of insects and the flowering of plants they pollinate — potentially creating mismatches that reduce reproductive success. Addressing insect decline requires action across multiple scales: reducing pesticide use through integrated pest management, restoring and connecting habitats, limiting artificial lighting, and reforming agricultural subsidies that currently incentivise intensive monoculture farming. The challenge is fundamentally one of perception: insects are widely regarded with indifference or disgust, making it difficult to generate the public concern and political will necessary for meaningful conservation action. Changing this perception — recognising insects not as pests but as the essential infrastructure of terrestrial life — may be the most important step of all."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What justification does the passage provide for describing insects as 'the most successful group of organisms on Earth'?",
+          "depth": 1,
+          "name": "1. What justification does the passage provide for describing insects as 'the most successful group of organisms on Earth'?"
+        },
+        {
+          "text": "2. Analyse the interconnected ecological services that insects provide beyond pollination.",
+          "depth": 1,
+          "name": "2. Analyse the interconnected ecological services that insects provide beyond pollination."
+        },
+        {
+          "text": "3. How does the decline in insect populations create cascading effects through food webs?",
+          "depth": 1,
+          "name": "3. How does the decline in insect populations create cascading effects through food webs?"
+        },
+        {
+          "text": "4. Critically evaluate the multiple causes of insect decline described in the passage. Which do you consider most significant?",
+          "depth": 1,
+          "name": "4. Critically evaluate the multiple causes of insect decline described in the passage. Which do you consider most significant?"
+        },
+        {
+          "text": "5. Why does the author argue that changing public perception of insects 'may be the most important step of all'?",
+          "depth": 1,
+          "name": "5. Why does the author argue that changing public perception of insects 'may be the most important step of all'?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "554:4802",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "have butterflies (in your stomach)",
+          "depth": 2,
+          "name": "have butterflies (in your stomach)"
+        },
+        {
+          "text": "feel nervous or anxious",
+          "depth": 2,
+          "name": "feel nervous or anxious"
+        },
+        {
+          "text": "\"I always get butterflies before a presentation.\"",
+          "depth": 2,
+          "name": "\"I always get butterflies before a presentation.\""
+        },
+        {
+          "text": "busy as a bee",
+          "depth": 2,
+          "name": "busy as a bee"
+        },
+        {
+          "text": "very busy and hardworking",
+          "depth": 2,
+          "name": "very busy and hardworking"
+        },
+        {
+          "text": "\"She's been busy as a bee all morning, preparing for the party.\"",
+          "depth": 2,
+          "name": "\"She's been busy as a bee all morning, preparing for the party.\""
+        },
+        {
+          "text": "the bee's knees",
+          "depth": 2,
+          "name": "the bee's knees"
+        },
+        {
+          "text": "something excellent or outstanding (informal, old-fashioned)",
+          "depth": 2,
+          "name": "something excellent or outstanding (informal, old-fashioned)"
+        },
+        {
+          "text": "\"This new café is the bee's knees — you have to try it!\"",
+          "depth": 2,
+          "name": "\"This new café is the bee's knees — you have to try it!\""
+        },
+        {
+          "text": "a fly on the wall",
+          "depth": 2,
+          "name": "a fly on the wall"
+        },
+        {
+          "text": "an unseen observer of a situation",
+          "depth": 2,
+          "name": "an unseen observer of a situation"
+        },
+        {
+          "text": "\"I'd love to be a fly on the wall in that meeting.\"",
+          "depth": 2,
+          "name": "\"I'd love to be a fly on the wall in that meeting.\""
+        },
+        {
+          "text": "bug (noun/verb, informal)",
+          "depth": 2,
+          "name": "bug (noun/verb, informal)"
+        },
+        {
+          "text": "an insect; to annoy someone; a software error",
+          "depth": 2,
+          "name": "an insect; to annoy someone; a software error"
+        },
+        {
+          "text": "\"That noise is really bugging me. / There's a bug in the code.\"",
+          "depth": 2,
+          "name": "\"That noise is really bugging me. / There's a bug in the code.\""
+        },
+        {
+          "text": "ants in your pants",
+          "depth": 2,
+          "name": "ants in your pants"
+        },
+        {
+          "text": "unable to sit still; restless",
+          "depth": 2,
+          "name": "unable to sit still; restless"
+        },
+        {
+          "text": "\"The children have got ants in their pants today — they can't stop fidgeting.\"",
+          "depth": 2,
+          "name": "\"The children have got ants in their pants today — they can't stop fidgeting.\""
+        },
+        {
+          "text": "create a buzz",
+          "depth": 2,
+          "name": "create a buzz"
+        },
+        {
+          "text": "generate excitement or interest",
+          "depth": 2,
+          "name": "generate excitement or interest"
+        },
+        {
+          "text": "\"The announcement created a real buzz on social media.\"",
+          "depth": 2,
+          "name": "\"The announcement created a real buzz on social media.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "554:4834",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A class visiting an insect exhibit at a natural history museum",
+          "depth": 1,
+          "name": "Scene: A class visiting an insect exhibit at a natural history museum"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "Welcome to the Insect Gallery. Did you know that insects make up about 80% of all known animal species?",
+          "depth": 2,
+          "name": "Welcome to the Insect Gallery. Did you know that insects make up about 80% of all known animal species?"
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Are spiders insects?",
+          "depth": 2,
+          "name": "Are spiders insects?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "Great question — no! Spiders are arachnids. They have eight legs, not six, and they have two body sections instead of three.",
+          "depth": 2,
+          "name": "Great question — no! Spiders are arachnids. They have eight legs, not six, and they have two body sections instead of three."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "What's the biggest insect in the world?",
+          "depth": 2,
+          "name": "What's the biggest insect in the world?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "The giant weta from New Zealand — it can weigh as much as a small bird! For flying insects, the Atlas moth has the largest wingspan, up to 30 centimetres.",
+          "depth": 2,
+          "name": "The giant weta from New Zealand — it can weigh as much as a small bird! For flying insects, the Atlas moth has the largest wingspan, up to 30 centimetres."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Why do bees make honey?",
+          "depth": 2,
+          "name": "Why do bees make honey?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "Bees collect nectar from flowers and convert it into honey as food for the colony. A single hive can produce over 25 kilograms of honey per year.",
+          "depth": 2,
+          "name": "Bees collect nectar from flowers and convert it into honey as food for the colony. A single hive can produce over 25 kilograms of honey per year."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Do all insects bite?",
+          "depth": 2,
+          "name": "Do all insects bite?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "No. Most insects are harmless to humans. Mosquitoes bite because they need blood to produce eggs. Bees only sting in self-defence — and a honeybee dies after stinging.",
+          "depth": 2,
+          "name": "No. Most insects are harmless to humans. Mosquitoes bite because they need blood to produce eggs. Bees only sting in self-defence — and a honeybee dies after stinging."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Why are insects important?",
+          "depth": 2,
+          "name": "Why are insects important?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "They pollinate our crops, decompose waste, provide food for other animals, and maintain healthy ecosystems. Without insects, life on Earth would collapse.",
+          "depth": 2,
+          "name": "They pollinate our crops, decompose waste, provide food for other animals, and maintain healthy ecosystems. Without insects, life on Earth would collapse."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "554:4872",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"It is estimated that there are between 5 to 10 million insect species.\"",
+          "depth": 2,
+          "name": "❌ \"It is estimated that there are between 5 to 10 million insect species.\""
+        },
+        {
+          "text": "✅ \"It is estimated that there are between 5 and 10 million insect species.\"",
+          "depth": 2,
+          "name": "✅ \"It is estimated that there are between 5 and 10 million insect species.\""
+        },
+        {
+          "text": "'Between' always pairs with 'and': 'between 5 and 10', 'between Monday and Friday'. 'From' pairs with 'to': 'from 5 to 10 million'. Never 'between...to'. At B2+, this error in academic writing is conspicuous because ranges appear frequently in scientific discourse.",
+          "depth": 2,
+          "name": "'Between' always pairs with 'and': 'between 5 and 10', 'between Monday and Friday'. 'From' pairs with 'to': 'from 5 to 10 million'. Never 'between...to'. At B2+, this error in academic writing is conspicuous because ranges appear frequently in scientific discourse."
+        },
+        {
+          "text": "❌ \"Were it not for insects, many ecosystems will collapse.\"",
+          "depth": 2,
+          "name": "❌ \"Were it not for insects, many ecosystems will collapse.\""
+        },
+        {
+          "text": "✅ \"Were it not for insects, many ecosystems would collapse.\"",
+          "depth": 2,
+          "name": "✅ \"Were it not for insects, many ecosystems would collapse.\""
+        },
+        {
+          "text": "Inverted conditionals: 'Were it not for X, Y would...' (second conditional inversion — hypothetical present). 'Had it not been for X, Y would have...' (third conditional — hypothetical past). The result clause takes 'would', never 'will'. These inverted forms are characteristic of B2+ academic register.",
+          "depth": 2,
+          "name": "Inverted conditionals: 'Were it not for X, Y would...' (second conditional inversion — hypothetical present). 'Had it not been for X, Y would have...' (third conditional — hypothetical past). The result clause takes 'would', never 'will'. These inverted forms are characteristic of B2+ academic register."
+        },
+        {
+          "text": "❌ \"The decline of insects is a phenomena that has been largely overlooked.\"",
+          "depth": 2,
+          "name": "❌ \"The decline of insects is a phenomena that has been largely overlooked.\""
+        },
+        {
+          "text": "✅ \"The decline of insects is a phenomenon that has been largely overlooked.\"",
+          "depth": 2,
+          "name": "✅ \"The decline of insects is a phenomenon that has been largely overlooked.\""
+        },
+        {
+          "text": "'Phenomenon' (singular) → 'phenomena' (plural). 'This phenomenon is' / 'These phenomena are'. Same Greek/Latin plural patterns: criterion → criteria, datum → data, medium → media. At B2+, correct use of academic plurals distinguishes proficient from competent writing.",
+          "depth": 2,
+          "name": "'Phenomenon' (singular) → 'phenomena' (plural). 'This phenomenon is' / 'These phenomena are'. Same Greek/Latin plural patterns: criterion → criteria, datum → data, medium → media. At B2+, correct use of academic plurals distinguishes proficient from competent writing."
+        },
+        {
+          "text": "❌ \"Pesticides not only affect insects but also they contaminate water supplies.\"",
+          "depth": 2,
+          "name": "❌ \"Pesticides not only affect insects but also they contaminate water supplies.\""
+        },
+        {
+          "text": "✅ \"Pesticides not only affect insects but also contaminate water supplies.\"",
+          "depth": 2,
+          "name": "✅ \"Pesticides not only affect insects but also contaminate water supplies.\""
+        },
+        {
+          "text": "'Not only...but also' connects parallel structures. If the shared subject ('pesticides') comes before 'not only', don't repeat it after 'but also': 'Pesticides not only affect...but also contaminate...' If 'not only' starts the sentence, inversion applies: 'Not only do pesticides affect...but they also contaminate...'",
+          "depth": 2,
+          "name": "'Not only...but also' connects parallel structures. If the shared subject ('pesticides') comes before 'not only', don't repeat it after 'but also': 'Pesticides not only affect...but also contaminate...' If 'not only' starts the sentence, inversion applies: 'Not only do pesticides affect...but they also contaminate...'"
+        },
+        {
+          "text": "❌ \"The extent to which insect populations have been declining are not fully understood.\"",
+          "depth": 2,
+          "name": "❌ \"The extent to which insect populations have been declining are not fully understood.\""
+        },
+        {
+          "text": "✅ \"The extent to which insect populations have been declining is not fully understood.\"",
+          "depth": 2,
+          "name": "✅ \"The extent to which insect populations have been declining is not fully understood.\""
+        },
+        {
+          "text": "The subject is 'extent' (singular), not 'populations'. 'The extent...is not understood.' Complex noun phrases with embedded clauses can obscure the true subject. At B2+, maintaining agreement across long, complex sentences is a marker of grammatical control.",
+          "depth": 2,
+          "name": "The subject is 'extent' (singular), not 'populations'. 'The extent...is not understood.' Complex noun phrases with embedded clauses can obscure the true subject. At B2+, maintaining agreement across long, complex sentences is a marker of grammatical control."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "554:4896",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how biology and entomology vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how biology and entomology vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "pollinate",
+          "depth": 2,
+          "name": "pollinate"
+        },
+        {
+          "text": "pollination / pollinator / pollen",
+          "depth": 2,
+          "name": "pollination / pollinator / pollen"
+        },
+        {
+          "text": "pollinate",
+          "depth": 2,
+          "name": "pollinate"
+        },
+        {
+          "text": "pollinated",
+          "depth": 2,
+          "name": "pollinated"
+        },
+        {
+          "text": "metamorphose",
+          "depth": 2,
+          "name": "metamorphose"
+        },
+        {
+          "text": "metamorphosis",
+          "depth": 2,
+          "name": "metamorphosis"
+        },
+        {
+          "text": "metamorphose",
+          "depth": 2,
+          "name": "metamorphose"
+        },
+        {
+          "text": "metamorphic",
+          "depth": 2,
+          "name": "metamorphic"
+        },
+        {
+          "text": "sting",
+          "depth": 2,
+          "name": "sting"
+        },
+        {
+          "text": "sting / stinger",
+          "depth": 2,
+          "name": "sting / stinger"
+        },
+        {
+          "text": "sting",
+          "depth": 2,
+          "name": "sting"
+        },
+        {
+          "text": "stinging",
+          "depth": 2,
+          "name": "stinging"
+        },
+        {
+          "text": "swarm",
+          "depth": 2,
+          "name": "swarm"
+        },
+        {
+          "text": "swarm / swarming",
+          "depth": 2,
+          "name": "swarm / swarming"
+        },
+        {
+          "text": "swarm",
+          "depth": 2,
+          "name": "swarm"
+        },
+        {
+          "text": "swarming",
+          "depth": 2,
+          "name": "swarming"
+        },
+        {
+          "text": "hatch",
+          "depth": 2,
+          "name": "hatch"
+        },
+        {
+          "text": "hatch / hatching",
+          "depth": 2,
+          "name": "hatch / hatching"
+        },
+        {
+          "text": "hatch",
+          "depth": 2,
+          "name": "hatch"
+        },
+        {
+          "text": "hatched",
+          "depth": 2,
+          "name": "hatched"
+        },
+        {
+          "text": "camouflage",
+          "depth": 2,
+          "name": "camouflage"
+        },
+        {
+          "text": "camouflage",
+          "depth": 2,
+          "name": "camouflage"
+        },
+        {
+          "text": "camouflage",
+          "depth": 2,
+          "name": "camouflage"
+        },
+        {
+          "text": "camouflaged",
+          "depth": 2,
+          "name": "camouflaged"
+        },
+        {
+          "text": "decompose",
+          "depth": 2,
+          "name": "decompose"
+        },
+        {
+          "text": "decomposition / decomposer",
+          "depth": 2,
+          "name": "decomposition / decomposer"
+        },
+        {
+          "text": "decompose",
+          "depth": 2,
+          "name": "decompose"
+        },
+        {
+          "text": "decomposed",
+          "depth": 2,
+          "name": "decomposed"
+        },
+        {
+          "text": "parasitise",
+          "depth": 2,
+          "name": "parasitise"
+        },
+        {
+          "text": "parasite / parasitism",
+          "depth": 2,
+          "name": "parasite / parasitism"
+        },
+        {
+          "text": "parasitise",
+          "depth": 2,
+          "name": "parasitise"
+        },
+        {
+          "text": "parasitic",
+          "depth": 2,
+          "name": "parasitic"
+        },
+        {
+          "text": "classify",
+          "depth": 2,
+          "name": "classify"
+        },
+        {
+          "text": "classification",
+          "depth": 2,
+          "name": "classification"
+        },
+        {
+          "text": "classify",
+          "depth": 2,
+          "name": "classify"
+        },
+        {
+          "text": "classified",
+          "depth": 2,
+          "name": "classified"
+        },
+        {
+          "text": "colony",
+          "depth": 2,
+          "name": "colony"
+        },
+        {
+          "text": "colony / colonisation",
+          "depth": 2,
+          "name": "colony / colonisation"
+        },
+        {
+          "text": "colonise",
+          "depth": 2,
+          "name": "colonise"
+        },
+        {
+          "text": "colonial",
+          "depth": 2,
+          "name": "colonial"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "554:4956",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  Insects account for approximately 80% of all known animal __________ .",
+          "depth": 1,
+          "name": "1. Insects account for approximately 80% of all known animal __________ ."
+        },
+        {
+          "text": "2.  Approximately 75% of flowering plants depend on animal __________ for reproduction.",
+          "depth": 1,
+          "name": "2. Approximately 75% of flowering plants depend on animal __________ for reproduction."
+        },
+        {
+          "text": "3.  The economic value of insect pollination services is estimated at $235–577 __________ annually.",
+          "depth": 1,
+          "name": "3. The economic value of insect pollination services is estimated at $235–577 __________ annually."
+        },
+        {
+          "text": "4.  Dung beetles bury animal waste, accelerating __________ and returning nutrients to soil.",
+          "depth": 1,
+          "name": "4. Dung beetles bury animal waste, accelerating __________ and returning nutrients to soil."
+        },
+        {
+          "text": "5.  __________ break down dead wood, processing approximately 20% of the world's dead vegetation.",
+          "depth": 1,
+          "name": "5. __________ break down dead wood, processing approximately 20% of the world's dead vegetation."
+        },
+        {
+          "text": "6.  Aquatic insect __________ filter organic matter from streams and rivers.",
+          "depth": 1,
+          "name": "6. Aquatic insect __________ filter organic matter from streams and rivers."
+        },
+        {
+          "text": "7.  __________ are a class of systemic insecticides shown to impair bee navigation.",
+          "depth": 1,
+          "name": "7. __________ are a class of systemic insecticides shown to impair bee navigation."
+        },
+        {
+          "text": "8.  Light __________ disrupts the behaviour of nocturnal insects.",
+          "depth": 1,
+          "name": "8. Light __________ disrupts the behaviour of nocturnal insects."
+        },
+        {
+          "text": "9.  Climate change can create __________ between insect emergence and plant flowering.",
+          "depth": 1,
+          "name": "9. Climate change can create __________ between insect emergence and plant flowering."
+        },
+        {
+          "text": "10. Integrated pest __________ offers an alternative to heavy pesticide use.",
+          "depth": 1,
+          "name": "10. Integrated pest __________ offers an alternative to heavy pesticide use."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. species  2. pollinators  3. billion  4. decomposition  5. Termites  6. larvae  7. Neonicotinoids  8. pollution  9. mismatches  10. management",
+          "depth": 2,
+          "name": "1. species 2. pollinators 3. billion 4. decomposition 5. Termites 6. larvae 7. Neonicotinoids 8. pollution 9. mismatches 10. management"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "554:4974",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Bug vs Insect",
+          "depth": 2,
+          "name": "Bug vs Insect"
+        },
+        {
+          "text": "In everyday English, 'bug' is used informally for any small creature — insects, spiders, even germs. Scientifically, 'true bugs' (Hemiptera) are a specific order of insects (e.g. shield bugs, bed bugs). 'Bug' also means: a computer error, a listening device, or a mild illness ('a stomach bug').",
+          "depth": 2,
+          "name": "In everyday English, 'bug' is used informally for any small creature — insects, spiders, even germs. Scientifically, 'true bugs' (Hemiptera) are a specific order of insects (e.g. shield bugs, bed bugs). 'Bug' also means: a computer error, a listening device, or a mild illness ('a stomach bug')."
+        },
+        {
+          "text": "Creepy-Crawly",
+          "depth": 2,
+          "name": "Creepy-Crawly"
+        },
+        {
+          "text": "'Creepy-crawly' (BrE, informal) = any small insect or similar creature, especially one that makes you feel uncomfortable. 'I don't like creepy-crawlies.' Used mainly in casual speech and when talking to children. The plural is 'creepy-crawlies'.",
+          "depth": 2,
+          "name": "'Creepy-crawly' (BrE, informal) = any small insect or similar creature, especially one that makes you feel uncomfortable. 'I don't like creepy-crawlies.' Used mainly in casual speech and when talking to children. The plural is 'creepy-crawlies'."
+        },
+        {
+          "text": "Insect Phobias",
+          "depth": 2,
+          "name": "Insect Phobias"
+        },
+        {
+          "text": "'Entomophobia' = fear of insects. 'Arachnophobia' = fear of spiders (one of the most common phobias). 'Apiphobia' = fear of bees. Many people are uncomfortable around insects — using the correct name ('It's a crane fly, not a giant mosquito') can help reduce fear!",
+          "depth": 2,
+          "name": "'Entomophobia' = fear of insects. 'Arachnophobia' = fear of spiders (one of the most common phobias). 'Apiphobia' = fear of bees. Many people are uncomfortable around insects — using the correct name ('It's a crane fly, not a giant mosquito') can help reduce fear!"
+        },
+        {
+          "text": "Bees in British Culture",
+          "depth": 2,
+          "name": "Bees in British Culture"
+        },
+        {
+          "text": "Bees are culturally important in Britain. 'The Bee' is the symbol of Manchester (representing industry and hard work). 'Spelling bee' = a competition where people spell difficult words. 'Queen bee' = the leader of a group. Bee-keeping (apiculture) is a popular British hobby.",
+          "depth": 2,
+          "name": "Bees are culturally important in Britain. 'The Bee' is the symbol of Manchester (representing industry and hard work). 'Spelling bee' = a competition where people spell difficult words. 'Queen bee' = the leader of a group. Bee-keeping (apiculture) is a popular British hobby."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "554:4990",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "antenna",
+          "depth": 2,
+          "name": "antenna"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ pair, insect ~, ~ signal",
+          "depth": 2,
+          "name": "~ pair, insect ~, ~ signal"
+        },
+        {
+          "text": "larva",
+          "depth": 2,
+          "name": "larva"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ stage, ~ form, mosquito ~",
+          "depth": 2,
+          "name": "~ stage, ~ form, mosquito ~"
+        },
+        {
+          "text": "pupa",
+          "depth": 2,
+          "name": "pupa"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "~ case, ~ stage, ~ development",
+          "depth": 2,
+          "name": "~ case, ~ stage, ~ development"
+        },
+        {
+          "text": "colony",
+          "depth": 2,
+          "name": "colony"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "ant ~, bee ~, ~ size",
+          "depth": 2,
+          "name": "ant ~, bee ~, ~ size"
+        },
+        {
+          "text": "pollinator",
+          "depth": 2,
+          "name": "pollinator"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ decline, key ~, ~ species",
+          "depth": 2,
+          "name": "~ decline, key ~, ~ species"
+        },
+        {
+          "text": "exoskeleton",
+          "depth": 2,
+          "name": "exoskeleton"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "~ shell, ~ structure, ~ moulting",
+          "depth": 2,
+          "name": "~ shell, ~ structure, ~ moulting"
+        },
+        {
+          "text": "metamorphosis",
+          "depth": 2,
+          "name": "metamorphosis"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "complete ~, ~ stages, ~ process",
+          "depth": 2,
+          "name": "complete ~, ~ stages, ~ process"
+        },
+        {
+          "text": "swarm",
+          "depth": 2,
+          "name": "swarm"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "locust ~, bee ~, ~ behaviour",
+          "depth": 2,
+          "name": "locust ~, bee ~, ~ behaviour"
+        },
+        {
+          "text": "pesticide",
+          "depth": 2,
+          "name": "pesticide"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ use, ~ spray, ~ damage",
+          "depth": 2,
+          "name": "~ use, ~ spray, ~ damage"
+        },
+        {
+          "text": "habitat",
+          "depth": 2,
+          "name": "habitat"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "insect ~, ~ loss, natural ~",
+          "depth": 2,
+          "name": "insect ~, ~ loss, natural ~"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1692 @@
+{
+  "unitId": "bakery",
+  "name": "The Bakery",
+  "subtopics": [
+    {
+      "id": "breads",
+      "title": "Breads",
+      "wordIds": [
+        "white-bread",
+        "whole-wheat-bread",
+        "baguette",
+        "sourdough",
+        "rye-bread",
+        "pita",
+        "focaccia",
+        "ciabatta",
+        "brioche",
+        "flatbread"
+      ]
+    },
+    {
+      "id": "pastries-sweet",
+      "title": "Pastries & Sweet",
+      "wordIds": [
+        "croissant",
+        "muffin",
+        "donut",
+        "danish",
+        "cinnamon-roll",
+        "clair",
+        "scone",
+        "strudel",
+        "macaron",
+        "profiterole"
+      ]
+    },
+    {
+      "id": "cakes-pies",
+      "title": "Cakes & Pies",
+      "wordIds": [
+        "birthday-cake",
+        "wedding-cake",
+        "cupcake",
+        "cheesecake",
+        "chocolate-cake",
+        "carrot-cake",
+        "apple-pie",
+        "cherry-pie",
+        "lemon-tart",
+        "brownie"
+      ]
+    },
+    {
+      "id": "cookies-biscuits",
+      "title": "Cookies & Biscuits",
+      "wordIds": [
+        "chocolate-chip-cookie",
+        "sugar-cookie",
+        "gingerbread",
+        "shortbread",
+        "oatmeal-cookie",
+        "wafer",
+        "biscuit",
+        "pretzel",
+        "cracker",
+        "granola-bar"
+      ]
+    },
+    {
+      "id": "baking-ingredients",
+      "title": "Baking Ingredients",
+      "wordIds": [
+        "flour",
+        "sugar",
+        "butter",
+        "eggs",
+        "yeast",
+        "baking-powder",
+        "chocolate",
+        "vanilla",
+        "cream",
+        "cocoa-powder",
+        "cinnamon",
+        "honey"
+      ]
+    },
+    {
+      "id": "bakery-equipment",
+      "title": "Bakery Equipment",
+      "wordIds": [
+        "oven",
+        "mixer",
+        "rolling-pin",
+        "baking-tray",
+        "whisk",
+        "spatula",
+        "piping-bag",
+        "muffin-tin",
+        "cooling-rack",
+        "bread-basket",
+        "apron",
+        "timer",
+        "bread",
+        "cake",
+        "cookie",
+        "pie",
+        "egg"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "white-bread",
+      "label": "White Bread",
+      "ipa": "/waɪt brɛd/",
+      "cefr": "B1",
+      "imageNodeId": "44:3733"
+    },
+    {
+      "kind": "card",
+      "id": "whole-wheat-bread",
+      "label": "Whole Wheat Bread",
+      "ipa": "/hoʊl wiːt brɛd/",
+      "cefr": "B2",
+      "imageNodeId": "44:3737"
+    },
+    {
+      "kind": "card",
+      "id": "baguette",
+      "label": "Baguette",
+      "ipa": "/bæˈɡɛt/",
+      "cefr": "A2",
+      "imageNodeId": "44:3741"
+    },
+    {
+      "kind": "card",
+      "id": "sourdough",
+      "label": "Sourdough",
+      "ipa": "/ˈsaʊərdoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "44:3745"
+    },
+    {
+      "kind": "card",
+      "id": "rye-bread",
+      "label": "Rye Bread",
+      "ipa": "/raɪ brɛd/",
+      "cefr": "B1",
+      "imageNodeId": "44:3749"
+    },
+    {
+      "kind": "card",
+      "id": "pita",
+      "label": "Pita",
+      "ipa": "/ˈpiːtə/",
+      "cefr": "A2",
+      "imageNodeId": "44:3753"
+    },
+    {
+      "kind": "card",
+      "id": "focaccia",
+      "label": "Focaccia",
+      "ipa": "/foʊˈkɑːtʃə/",
+      "cefr": "A2",
+      "imageNodeId": "44:3757"
+    },
+    {
+      "kind": "card",
+      "id": "ciabatta",
+      "label": "Ciabatta",
+      "ipa": "/tʃəˈbɑːtə/",
+      "cefr": "A2",
+      "imageNodeId": "44:3761"
+    },
+    {
+      "kind": "card",
+      "id": "brioche",
+      "label": "Brioche",
+      "ipa": "/briˈoʊʃ/",
+      "cefr": "A2",
+      "imageNodeId": "44:3765"
+    },
+    {
+      "kind": "card",
+      "id": "flatbread",
+      "label": "Flatbread",
+      "ipa": "/ˈflætbrɛd/",
+      "cefr": "A2",
+      "imageNodeId": "44:3769"
+    },
+    {
+      "kind": "card",
+      "id": "croissant",
+      "label": "Croissant",
+      "ipa": "/kwɑːˈsɑːnt/",
+      "cefr": "A2",
+      "imageNodeId": "44:3778"
+    },
+    {
+      "kind": "card",
+      "id": "muffin",
+      "label": "Muffin",
+      "ipa": "/ˈmʌfɪn/",
+      "cefr": "A2",
+      "imageNodeId": "44:3782"
+    },
+    {
+      "kind": "card",
+      "id": "donut",
+      "label": "Donut",
+      "ipa": "/ˈdoʊnʌt/",
+      "cefr": "A2",
+      "imageNodeId": "44:3786"
+    },
+    {
+      "kind": "card",
+      "id": "danish",
+      "label": "Danish",
+      "ipa": "/ˈdeɪnɪʃ/",
+      "cefr": "A2",
+      "imageNodeId": "44:3790"
+    },
+    {
+      "kind": "card",
+      "id": "cinnamon-roll",
+      "label": "Cinnamon Roll",
+      "ipa": "/ˈsɪnəmən roʊl/",
+      "cefr": "B1",
+      "imageNodeId": "44:3794"
+    },
+    {
+      "kind": "card",
+      "id": "clair",
+      "label": "Éclair",
+      "ipa": "/eɪˈklɛr/",
+      "cefr": "A2",
+      "imageNodeId": "44:3798"
+    },
+    {
+      "kind": "card",
+      "id": "scone",
+      "label": "Scone",
+      "ipa": "/skoʊn/",
+      "cefr": "A2",
+      "imageNodeId": "44:3802"
+    },
+    {
+      "kind": "card",
+      "id": "strudel",
+      "label": "Strudel",
+      "ipa": "/ˈstruːdəl/",
+      "cefr": "A2",
+      "imageNodeId": "44:3806"
+    },
+    {
+      "kind": "card",
+      "id": "macaron",
+      "label": "Macaron",
+      "ipa": "/ˌmækəˈrɑːn/",
+      "cefr": "A2",
+      "imageNodeId": "44:3810"
+    },
+    {
+      "kind": "card",
+      "id": "profiterole",
+      "label": "Profiterole",
+      "ipa": "/prəˈfɪtəroʊl/",
+      "cefr": "B1",
+      "imageNodeId": "44:3814"
+    },
+    {
+      "kind": "card",
+      "id": "birthday-cake",
+      "label": "Birthday Cake",
+      "ipa": "/ˈbɜːrθdeɪ keɪk/",
+      "cefr": "B1",
+      "imageNodeId": "44:3823"
+    },
+    {
+      "kind": "card",
+      "id": "wedding-cake",
+      "label": "Wedding Cake",
+      "ipa": "/ˈwɛdɪŋ keɪk/",
+      "cefr": "B1",
+      "imageNodeId": "44:3827"
+    },
+    {
+      "kind": "card",
+      "id": "cupcake",
+      "label": "Cupcake",
+      "ipa": "/ˈkʌpkeɪk/",
+      "cefr": "A2",
+      "imageNodeId": "44:3831"
+    },
+    {
+      "kind": "card",
+      "id": "cheesecake",
+      "label": "Cheesecake",
+      "ipa": "/ˈtʃiːzkeɪk/",
+      "cefr": "B1",
+      "imageNodeId": "44:3835"
+    },
+    {
+      "kind": "card",
+      "id": "chocolate-cake",
+      "label": "Chocolate Cake",
+      "ipa": "/ˈtʃɑːklɪt keɪk/",
+      "cefr": "B1",
+      "imageNodeId": "44:3839"
+    },
+    {
+      "kind": "card",
+      "id": "carrot-cake",
+      "label": "Carrot Cake",
+      "ipa": "/ˈkærət keɪk/",
+      "cefr": "B1",
+      "imageNodeId": "44:3843"
+    },
+    {
+      "kind": "card",
+      "id": "apple-pie",
+      "label": "Apple Pie",
+      "ipa": "/ˈæpəl paɪ/",
+      "cefr": "B1",
+      "imageNodeId": "44:3847"
+    },
+    {
+      "kind": "card",
+      "id": "cherry-pie",
+      "label": "Cherry Pie",
+      "ipa": "/ˈtʃɛri paɪ/",
+      "cefr": "B1",
+      "imageNodeId": "44:3851"
+    },
+    {
+      "kind": "card",
+      "id": "lemon-tart",
+      "label": "Lemon Tart",
+      "ipa": "/ˈlɛmən tɑːrt/",
+      "cefr": "B1",
+      "imageNodeId": "44:3855"
+    },
+    {
+      "kind": "card",
+      "id": "brownie",
+      "label": "Brownie",
+      "ipa": "/ˈbraʊni/",
+      "cefr": "A2",
+      "imageNodeId": "44:3859"
+    },
+    {
+      "kind": "card",
+      "id": "chocolate-chip-cookie",
+      "label": "Chocolate Chip Cookie",
+      "ipa": "/ˈtʃɑːklɪt tʃɪp ˈkʊki/",
+      "cefr": "B2",
+      "imageNodeId": "44:3868"
+    },
+    {
+      "kind": "card",
+      "id": "sugar-cookie",
+      "label": "Sugar Cookie",
+      "ipa": "/ˈʃʊɡər ˈkʊki/",
+      "cefr": "B1",
+      "imageNodeId": "44:3872"
+    },
+    {
+      "kind": "card",
+      "id": "gingerbread",
+      "label": "Gingerbread",
+      "ipa": "/ˈdʒɪndʒərbrɛd/",
+      "cefr": "B1",
+      "imageNodeId": "44:3876"
+    },
+    {
+      "kind": "card",
+      "id": "shortbread",
+      "label": "Shortbread",
+      "ipa": "/ˈʃɔːrtbrɛd/",
+      "cefr": "B1",
+      "imageNodeId": "44:3880"
+    },
+    {
+      "kind": "card",
+      "id": "oatmeal-cookie",
+      "label": "Oatmeal Cookie",
+      "ipa": "/ˈoʊtmiːl ˈkʊki/",
+      "cefr": "B1",
+      "imageNodeId": "44:3884"
+    },
+    {
+      "kind": "card",
+      "id": "wafer",
+      "label": "Wafer",
+      "ipa": "/ˈweɪfər/",
+      "cefr": "A2",
+      "imageNodeId": "44:3888"
+    },
+    {
+      "kind": "card",
+      "id": "biscuit",
+      "label": "Biscuit",
+      "ipa": "/ˈbɪskɪt/",
+      "cefr": "A2",
+      "imageNodeId": "44:3892"
+    },
+    {
+      "kind": "card",
+      "id": "pretzel",
+      "label": "Pretzel",
+      "ipa": "/ˈprɛtsəl/",
+      "cefr": "A2",
+      "imageNodeId": "44:3896"
+    },
+    {
+      "kind": "card",
+      "id": "cracker",
+      "label": "Cracker",
+      "ipa": "/ˈkrækər/",
+      "cefr": "A2",
+      "imageNodeId": "44:3900"
+    },
+    {
+      "kind": "card",
+      "id": "granola-bar",
+      "label": "Granola Bar",
+      "ipa": "/ɡrəˈnoʊlə bɑːr/",
+      "cefr": "B1",
+      "imageNodeId": "44:3904"
+    },
+    {
+      "kind": "card",
+      "id": "flour",
+      "label": "Flour",
+      "ipa": "/flaʊər/",
+      "cefr": "A2",
+      "imageNodeId": "44:3913"
+    },
+    {
+      "kind": "card",
+      "id": "sugar",
+      "label": "Sugar",
+      "ipa": "/ˈʃʊɡər/",
+      "cefr": "A2",
+      "imageNodeId": "44:3917"
+    },
+    {
+      "kind": "card",
+      "id": "butter",
+      "label": "Butter",
+      "ipa": "/ˈbʌtər/",
+      "cefr": "A2",
+      "imageNodeId": "44:3921"
+    },
+    {
+      "kind": "card",
+      "id": "eggs",
+      "label": "Eggs",
+      "ipa": "/ɛɡz/",
+      "cefr": "A2",
+      "imageNodeId": "44:3925"
+    },
+    {
+      "kind": "card",
+      "id": "yeast",
+      "label": "Yeast",
+      "ipa": "/jiːst/",
+      "cefr": "A2",
+      "imageNodeId": "44:3929"
+    },
+    {
+      "kind": "card",
+      "id": "baking-powder",
+      "label": "Baking Powder",
+      "ipa": "/ˈbeɪkɪŋ ˈpaʊdər/",
+      "cefr": "B1",
+      "imageNodeId": "44:3933"
+    },
+    {
+      "kind": "card",
+      "id": "chocolate",
+      "label": "Chocolate",
+      "ipa": "/ˈtʃɑːklɪt/",
+      "cefr": "A2",
+      "imageNodeId": "44:3937"
+    },
+    {
+      "kind": "card",
+      "id": "vanilla",
+      "label": "Vanilla",
+      "ipa": "/vəˈnɪlə/",
+      "cefr": "A2",
+      "imageNodeId": "44:3941"
+    },
+    {
+      "kind": "card",
+      "id": "cream",
+      "label": "Cream",
+      "ipa": "/kriːm/",
+      "cefr": "A2",
+      "imageNodeId": "44:3945"
+    },
+    {
+      "kind": "card",
+      "id": "cocoa-powder",
+      "label": "Cocoa Powder",
+      "ipa": "/ˈkoʊkoʊ ˈpaʊdər/",
+      "cefr": "B1",
+      "imageNodeId": "44:3949"
+    },
+    {
+      "kind": "card",
+      "id": "cinnamon",
+      "label": "Cinnamon",
+      "ipa": "/ˈsɪnəmən/",
+      "cefr": "A2",
+      "imageNodeId": "44:3953"
+    },
+    {
+      "kind": "card",
+      "id": "honey",
+      "label": "Honey",
+      "ipa": "/ˈhʌni/",
+      "cefr": "A2",
+      "imageNodeId": "44:3957"
+    },
+    {
+      "kind": "card",
+      "id": "oven",
+      "label": "Oven",
+      "ipa": "/ˈʌvən/",
+      "cefr": "A2",
+      "imageNodeId": "44:3966"
+    },
+    {
+      "kind": "card",
+      "id": "mixer",
+      "label": "Mixer",
+      "ipa": "/ˈmɪksər/",
+      "cefr": "A2",
+      "imageNodeId": "44:3970"
+    },
+    {
+      "kind": "card",
+      "id": "rolling-pin",
+      "label": "Rolling Pin",
+      "ipa": "/ˈroʊlɪŋ pɪn/",
+      "cefr": "B1",
+      "imageNodeId": "44:3974"
+    },
+    {
+      "kind": "card",
+      "id": "baking-tray",
+      "label": "Baking Tray",
+      "ipa": "/ˈbeɪkɪŋ treɪ/",
+      "cefr": "B1",
+      "imageNodeId": "44:3978"
+    },
+    {
+      "kind": "card",
+      "id": "whisk",
+      "label": "Whisk",
+      "ipa": "/wɪsk/",
+      "cefr": "A2",
+      "imageNodeId": "44:3982"
+    },
+    {
+      "kind": "card",
+      "id": "spatula",
+      "label": "Spatula",
+      "ipa": "/ˈspætʃələ/",
+      "cefr": "A2",
+      "imageNodeId": "44:3986"
+    },
+    {
+      "kind": "card",
+      "id": "piping-bag",
+      "label": "Piping Bag",
+      "ipa": "/ˈpaɪpɪŋ bæɡ/",
+      "cefr": "B1",
+      "imageNodeId": "44:3990"
+    },
+    {
+      "kind": "card",
+      "id": "muffin-tin",
+      "label": "Muffin Tin",
+      "ipa": "/ˈmʌfɪn tɪn/",
+      "cefr": "B1",
+      "imageNodeId": "44:3994"
+    },
+    {
+      "kind": "card",
+      "id": "cooling-rack",
+      "label": "Cooling Rack",
+      "ipa": "/ˈkuːlɪŋ ræk/",
+      "cefr": "B1",
+      "imageNodeId": "44:3998"
+    },
+    {
+      "kind": "card",
+      "id": "bread-basket",
+      "label": "Bread Basket",
+      "ipa": "/brɛd ˈbæskɪt/",
+      "cefr": "B1",
+      "imageNodeId": "44:4002"
+    },
+    {
+      "kind": "card",
+      "id": "apron",
+      "label": "Apron",
+      "ipa": "/ˈeɪprən/",
+      "cefr": "A2",
+      "imageNodeId": "44:4006"
+    },
+    {
+      "kind": "card",
+      "id": "timer",
+      "label": "Timer",
+      "ipa": "/ˈtaɪmər/",
+      "cefr": "A2",
+      "imageNodeId": "44:4010"
+    },
+    {
+      "kind": "card",
+      "id": "bread",
+      "label": "Bread",
+      "ipa": "/brɛd/",
+      "cefr": "A2",
+      "imageNodeId": "39:1546"
+    },
+    {
+      "kind": "card",
+      "id": "cake",
+      "label": "Cake",
+      "ipa": "/keɪk/",
+      "cefr": "A2",
+      "imageNodeId": "39:1558"
+    },
+    {
+      "kind": "card",
+      "id": "cookie",
+      "label": "Cookie",
+      "ipa": "/ˈkʊki/",
+      "cefr": "A2",
+      "imageNodeId": "39:1562"
+    },
+    {
+      "kind": "card",
+      "id": "pie",
+      "label": "Pie",
+      "ipa": "/paɪ/",
+      "cefr": "A2",
+      "imageNodeId": "39:1566"
+    },
+    {
+      "kind": "card",
+      "id": "egg",
+      "label": "Egg",
+      "ipa": "/ɛɡ/",
+      "cefr": "A2",
+      "imageNodeId": "39:1593"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "544:279",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "544:281",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1 · Topic: The Bakery",
+          "depth": 1,
+          "name": "Level: B1 · Topic: The Bakery"
+        },
+        {
+          "text": "The Bakery on the Corner\n\nThere is a small bakery on the corner of our street. Every morning, the smell of fresh bread fills the air long before the shop opens at seven.\n\nThe baker, Mr Ahmad, starts work at four in the morning. He mixes flour, water, yeast, and salt to make the dough. After kneading it by hand, he lets it rise for about an hour. Then he shapes the dough into loaves, rolls, and baguettes before placing them in the large oven.\n\nBy the time the first customers arrive, the shelves are full. There are white bread loaves, wholemeal bread, sourdough, and flatbread. On one side of the counter, there are sweet pastries: croissants, Danish pastries, cinnamon rolls, and doughnuts glazed with sugar. The display case also has cakes — chocolate cake, carrot cake, and cheesecake — all made fresh daily.\n\nMr Ahmad's wife manages the front of the shop. She serves customers, wraps orders in paper bags, and operates the till. Regular customers often order birthday cakes or wedding cakes in advance.\n\nThe bakery also sells biscuits, muffins, and scones with jam and cream. On Fridays, they make a special olive bread that sells out within an hour.\n\nI go there every Saturday to buy a loaf of sourdough and two croissants. The bread is always warm, the crust is golden and crunchy, and the inside is soft. Nothing beats fresh bread from a local bakery.",
+          "depth": 1,
+          "name": "The Bakery on the Corner There is a small bakery on the corner of our street. Every morning, the smell of fresh bread fills the air long before the shop opens at seven. The baker, Mr Ahmad, starts work at four in the morning. He mixes flour, water, yeast, and salt to make the dough. After kneading it by hand, he lets it rise for about an hour. Then he shapes the dough into loaves, rolls, and baguettes before placing them in the large oven. By the time the first customers arrive, the shelves are full. There are white bread loaves, wholemeal bread, sourdough, and flatbread. On one side of the counter, there are sweet pastries: croissants, Danish pastries, cinnamon rolls, and doughnuts glazed with sugar. The display case also has cakes — chocolate cake, carrot cake, and cheesecake — all made fresh daily. Mr Ahmad's wife manages the front of the shop. She serves customers, wraps orders in paper bags, and operates the till. Regular customers often order birthday cakes or wedding cakes in advance. The bakery also sells biscuits, muffins, and scones with jam and cream. On Fridays, they make a special olive bread that sells out within an hour. I go there every Saturday to buy a loaf of sourdough and two croissants. The bread is always warm, the crust is golden and crunchy, and the inside is soft. Nothing beats fresh bread from a local bakery."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What time does Mr Ahmad start work?",
+          "depth": 1,
+          "name": "1. What time does Mr Ahmad start work?"
+        },
+        {
+          "text": "2. What ingredients does he use for the dough?",
+          "depth": 1,
+          "name": "2. What ingredients does he use for the dough?"
+        },
+        {
+          "text": "3. What sweet items are on display?",
+          "depth": 1,
+          "name": "3. What sweet items are on display?"
+        },
+        {
+          "text": "4. What does Mr Ahmad's wife do in the shop?",
+          "depth": 1,
+          "name": "4. What does Mr Ahmad's wife do in the shop?"
+        },
+        {
+          "text": "5. What is special about Fridays at the bakery?",
+          "depth": 1,
+          "name": "5. What is special about Fridays at the bakery?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "544:294",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "the best thing since sliced bread",
+          "depth": 2,
+          "name": "the best thing since sliced bread"
+        },
+        {
+          "text": "something excellent or very useful",
+          "depth": 2,
+          "name": "something excellent or very useful"
+        },
+        {
+          "text": "\"This new coffee machine is the best thing since sliced bread!\"",
+          "depth": 2,
+          "name": "\"This new coffee machine is the best thing since sliced bread!\""
+        },
+        {
+          "text": "a piece of cake",
+          "depth": 2,
+          "name": "a piece of cake"
+        },
+        {
+          "text": "something very easy to do",
+          "depth": 2,
+          "name": "something very easy to do"
+        },
+        {
+          "text": "\"The recipe was a piece of cake — I finished in 30 minutes.\"",
+          "depth": 2,
+          "name": "\"The recipe was a piece of cake — I finished in 30 minutes.\""
+        },
+        {
+          "text": "sell like hotcakes",
+          "depth": 2,
+          "name": "sell like hotcakes"
+        },
+        {
+          "text": "sell very quickly",
+          "depth": 2,
+          "name": "sell very quickly"
+        },
+        {
+          "text": "\"The cinnamon rolls sell like hotcakes every morning.\"",
+          "depth": 2,
+          "name": "\"The cinnamon rolls sell like hotcakes every morning.\""
+        },
+        {
+          "text": "earn / make your daily bread",
+          "depth": 2,
+          "name": "earn / make your daily bread"
+        },
+        {
+          "text": "earn money to live on",
+          "depth": 2,
+          "name": "earn money to live on"
+        },
+        {
+          "text": "\"He works hard at the bakery to earn his daily bread.\"",
+          "depth": 2,
+          "name": "\"He works hard at the bakery to earn his daily bread.\""
+        },
+        {
+          "text": "have a bun in the oven",
+          "depth": 2,
+          "name": "have a bun in the oven"
+        },
+        {
+          "text": "be pregnant (informal, humorous)",
+          "depth": 2,
+          "name": "be pregnant (informal, humorous)"
+        },
+        {
+          "text": "\"Did you hear? She's got a bun in the oven!\"",
+          "depth": 2,
+          "name": "\"Did you hear? She's got a bun in the oven!\""
+        },
+        {
+          "text": "knead the dough",
+          "depth": 2,
+          "name": "knead the dough"
+        },
+        {
+          "text": "press and fold dough with your hands",
+          "depth": 2,
+          "name": "press and fold dough with your hands"
+        },
+        {
+          "text": "\"You need to knead the dough for at least ten minutes.\"",
+          "depth": 2,
+          "name": "\"You need to knead the dough for at least ten minutes.\""
+        },
+        {
+          "text": "rise / let it rise",
+          "depth": 2,
+          "name": "rise / let it rise"
+        },
+        {
+          "text": "allow dough to expand with yeast",
+          "depth": 2,
+          "name": "allow dough to expand with yeast"
+        },
+        {
+          "text": "\"Cover the dough and let it rise in a warm place.\"",
+          "depth": 2,
+          "name": "\"Cover the dough and let it rise in a warm place.\""
+        },
+        {
+          "text": "roll out",
+          "depth": 2,
+          "name": "roll out"
+        },
+        {
+          "text": "flatten dough with a rolling pin",
+          "depth": 2,
+          "name": "flatten dough with a rolling pin"
+        },
+        {
+          "text": "\"Roll out the pastry until it's about 3mm thick.\"",
+          "depth": 2,
+          "name": "\"Roll out the pastry until it's about 3mm thick.\""
+        },
+        {
+          "text": "a baker's dozen",
+          "depth": 2,
+          "name": "a baker's dozen"
+        },
+        {
+          "text": "thirteen (instead of twelve)",
+          "depth": 2,
+          "name": "thirteen (instead of twelve)"
+        },
+        {
+          "text": "\"He gave us a baker's dozen — thirteen rolls for the price of twelve.\"",
+          "depth": 2,
+          "name": "\"He gave us a baker's dozen — thirteen rolls for the price of twelve.\""
+        },
+        {
+          "text": "half-baked",
+          "depth": 2,
+          "name": "half-baked"
+        },
+        {
+          "text": "not fully thought through, poorly planned",
+          "depth": 2,
+          "name": "not fully thought through, poorly planned"
+        },
+        {
+          "text": "\"That's a half-baked idea — we need a better plan.\"",
+          "depth": 2,
+          "name": "\"That's a half-baked idea — we need a better plan.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "544:338",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A customer ordering at the bakery counter",
+          "depth": 1,
+          "name": "Scene: A customer ordering at the bakery counter"
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "Good morning! Could I have a loaf of sourdough, please?",
+          "depth": 2,
+          "name": "Good morning! Could I have a loaf of sourdough, please?"
+        },
+        {
+          "text": "Baker:",
+          "depth": 2,
+          "name": "Baker:"
+        },
+        {
+          "text": "Of course. Sliced or unsliced?",
+          "depth": 2,
+          "name": "Of course. Sliced or unsliced?"
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "Unsliced, please. And two croissants.",
+          "depth": 2,
+          "name": "Unsliced, please. And two croissants."
+        },
+        {
+          "text": "Baker:",
+          "depth": 2,
+          "name": "Baker:"
+        },
+        {
+          "text": "Freshly baked this morning. Anything else?",
+          "depth": 2,
+          "name": "Freshly baked this morning. Anything else?"
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "What's that cake in the display case?",
+          "depth": 2,
+          "name": "What's that cake in the display case?"
+        },
+        {
+          "text": "Baker:",
+          "depth": 2,
+          "name": "Baker:"
+        },
+        {
+          "text": "That's our carrot cake — it's made with cream cheese frosting.",
+          "depth": 2,
+          "name": "That's our carrot cake — it's made with cream cheese frosting."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "It looks delicious. I'll take a slice.",
+          "depth": 2,
+          "name": "It looks delicious. I'll take a slice."
+        },
+        {
+          "text": "Baker:",
+          "depth": 2,
+          "name": "Baker:"
+        },
+        {
+          "text": "Would you like it in a box or a bag?",
+          "depth": 2,
+          "name": "Would you like it in a box or a bag?"
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "A bag is fine. How much is everything?",
+          "depth": 2,
+          "name": "A bag is fine. How much is everything?"
+        },
+        {
+          "text": "Baker:",
+          "depth": 2,
+          "name": "Baker:"
+        },
+        {
+          "text": "That's five pounds twenty altogether. Cash or card?",
+          "depth": 2,
+          "name": "That's five pounds twenty altogether. Cash or card?"
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "544:373",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I want a bread, please.\"",
+          "depth": 2,
+          "name": "❌ \"I want a bread, please.\""
+        },
+        {
+          "text": "✅ \"I want a loaf of bread, please.\" / \"I want some bread.\"",
+          "depth": 2,
+          "name": "✅ \"I want a loaf of bread, please.\" / \"I want some bread.\""
+        },
+        {
+          "text": "'Bread' is uncountable. Use 'a loaf of', 'a slice of', 'a piece of', or 'some bread'.",
+          "depth": 2,
+          "name": "'Bread' is uncountable. Use 'a loaf of', 'a slice of', 'a piece of', or 'some bread'."
+        },
+        {
+          "text": "❌ \"The cake is very delicious.\"",
+          "depth": 2,
+          "name": "❌ \"The cake is very delicious.\""
+        },
+        {
+          "text": "✅ \"The cake is delicious.\"",
+          "depth": 2,
+          "name": "✅ \"The cake is delicious.\""
+        },
+        {
+          "text": "'Delicious' is already strong — don't add 'very'. Use 'absolutely delicious' for emphasis.",
+          "depth": 2,
+          "name": "'Delicious' is already strong — don't add 'very'. Use 'absolutely delicious' for emphasis."
+        },
+        {
+          "text": "❌ \"She baked a cake since three hours.\"",
+          "depth": 2,
+          "name": "❌ \"She baked a cake since three hours.\""
+        },
+        {
+          "text": "✅ \"She has been baking a cake for three hours.\"",
+          "depth": 2,
+          "name": "✅ \"She has been baking a cake for three hours.\""
+        },
+        {
+          "text": "Use 'for' + duration, not 'since'. 'Since' needs a point in time ('since 2 PM').",
+          "depth": 2,
+          "name": "Use 'for' + duration, not 'since'. 'Since' needs a point in time ('since 2 PM')."
+        },
+        {
+          "text": "❌ \"I like breads with butter.\"",
+          "depth": 2,
+          "name": "❌ \"I like breads with butter.\""
+        },
+        {
+          "text": "✅ \"I like bread with butter.\"",
+          "depth": 2,
+          "name": "✅ \"I like bread with butter.\""
+        },
+        {
+          "text": "'Bread' doesn't have a plural form in general use. 'Breads' only refers to different types of bread.",
+          "depth": 2,
+          "name": "'Bread' doesn't have a plural form in general use. 'Breads' only refers to different types of bread."
+        },
+        {
+          "text": "❌ \"The dough is enough soft now.\"",
+          "depth": 2,
+          "name": "❌ \"The dough is enough soft now.\""
+        },
+        {
+          "text": "✅ \"The dough is soft enough now.\"",
+          "depth": 2,
+          "name": "✅ \"The dough is soft enough now.\""
+        },
+        {
+          "text": "'Enough' follows the adjective: 'soft enough', 'warm enough'. Not 'enough soft'.",
+          "depth": 2,
+          "name": "'Enough' follows the adjective: 'soft enough', 'warm enough'. Not 'enough soft'."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "544:397",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how bakery vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how bakery vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "bake",
+          "depth": 2,
+          "name": "bake"
+        },
+        {
+          "text": "baker / bakery",
+          "depth": 2,
+          "name": "baker / bakery"
+        },
+        {
+          "text": "bake",
+          "depth": 2,
+          "name": "bake"
+        },
+        {
+          "text": "baked",
+          "depth": 2,
+          "name": "baked"
+        },
+        {
+          "text": "knead",
+          "depth": 2,
+          "name": "knead"
+        },
+        {
+          "text": "kneading",
+          "depth": 2,
+          "name": "kneading"
+        },
+        {
+          "text": "knead",
+          "depth": 2,
+          "name": "knead"
+        },
+        {
+          "text": "kneaded",
+          "depth": 2,
+          "name": "kneaded"
+        },
+        {
+          "text": "rise",
+          "depth": 2,
+          "name": "rise"
+        },
+        {
+          "text": "rise",
+          "depth": 2,
+          "name": "rise"
+        },
+        {
+          "text": "rise",
+          "depth": 2,
+          "name": "rise"
+        },
+        {
+          "text": "risen / rising",
+          "depth": 2,
+          "name": "risen / rising"
+        },
+        {
+          "text": "mix",
+          "depth": 2,
+          "name": "mix"
+        },
+        {
+          "text": "mixture / mixer",
+          "depth": 2,
+          "name": "mixture / mixer"
+        },
+        {
+          "text": "mix",
+          "depth": 2,
+          "name": "mix"
+        },
+        {
+          "text": "mixed",
+          "depth": 2,
+          "name": "mixed"
+        },
+        {
+          "text": "frost",
+          "depth": 2,
+          "name": "frost"
+        },
+        {
+          "text": "frosting / frost",
+          "depth": 2,
+          "name": "frosting / frost"
+        },
+        {
+          "text": "frost",
+          "depth": 2,
+          "name": "frost"
+        },
+        {
+          "text": "frosted / frosty",
+          "depth": 2,
+          "name": "frosted / frosty"
+        },
+        {
+          "text": "glaze",
+          "depth": 2,
+          "name": "glaze"
+        },
+        {
+          "text": "glaze",
+          "depth": 2,
+          "name": "glaze"
+        },
+        {
+          "text": "glaze",
+          "depth": 2,
+          "name": "glaze"
+        },
+        {
+          "text": "glazed",
+          "depth": 2,
+          "name": "glazed"
+        },
+        {
+          "text": "slice",
+          "depth": 2,
+          "name": "slice"
+        },
+        {
+          "text": "slice / slicer",
+          "depth": 2,
+          "name": "slice / slicer"
+        },
+        {
+          "text": "slice",
+          "depth": 2,
+          "name": "slice"
+        },
+        {
+          "text": "sliced",
+          "depth": 2,
+          "name": "sliced"
+        },
+        {
+          "text": "roll",
+          "depth": 2,
+          "name": "roll"
+        },
+        {
+          "text": "roll / rolling",
+          "depth": 2,
+          "name": "roll / rolling"
+        },
+        {
+          "text": "roll",
+          "depth": 2,
+          "name": "roll"
+        },
+        {
+          "text": "rolled",
+          "depth": 2,
+          "name": "rolled"
+        },
+        {
+          "text": "sweeten",
+          "depth": 2,
+          "name": "sweeten"
+        },
+        {
+          "text": "sweetener / sweetness",
+          "depth": 2,
+          "name": "sweetener / sweetness"
+        },
+        {
+          "text": "sweeten",
+          "depth": 2,
+          "name": "sweeten"
+        },
+        {
+          "text": "sweet",
+          "depth": 2,
+          "name": "sweet"
+        },
+        {
+          "text": "crust",
+          "depth": 2,
+          "name": "crust"
+        },
+        {
+          "text": "crust",
+          "depth": 2,
+          "name": "crust"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "crusty",
+          "depth": 2,
+          "name": "crusty"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "544:457",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The baker put the __________ in the oven to bake for 30 minutes.",
+          "depth": 1,
+          "name": "1. The baker put the __________ in the oven to bake for 30 minutes."
+        },
+        {
+          "text": "2.  She ordered a chocolate __________ for her daughter's birthday.",
+          "depth": 1,
+          "name": "2. She ordered a chocolate __________ for her daughter's birthday."
+        },
+        {
+          "text": "3.  I'll have two __________ and a coffee, please.",
+          "depth": 1,
+          "name": "3. I'll have two __________ and a coffee, please."
+        },
+        {
+          "text": "4.  He kneaded the __________ until it was smooth and elastic.",
+          "depth": 1,
+          "name": "4. He kneaded the __________ until it was smooth and elastic."
+        },
+        {
+          "text": "5.  The __________ were glazed with sugar and filled with jam.",
+          "depth": 1,
+          "name": "5. The __________ were glazed with sugar and filled with jam."
+        },
+        {
+          "text": "6.  A loaf of __________ bread is healthier than white bread.",
+          "depth": 1,
+          "name": "6. A loaf of __________ bread is healthier than white bread."
+        },
+        {
+          "text": "7.  The __________ case was full of pastries, cakes, and tarts.",
+          "depth": 1,
+          "name": "7. The __________ case was full of pastries, cakes, and tarts."
+        },
+        {
+          "text": "8.  She spread butter and __________ on a warm scone.",
+          "depth": 1,
+          "name": "8. She spread butter and __________ on a warm scone."
+        },
+        {
+          "text": "9.  The baker uses __________ to make the bread rise.",
+          "depth": 1,
+          "name": "9. The baker uses __________ to make the bread rise."
+        },
+        {
+          "text": "10. The golden __________ on the sourdough was perfectly crunchy.",
+          "depth": 1,
+          "name": "10. The golden __________ on the sourdough was perfectly crunchy."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. loaves  2. cake  3. croissants  4. dough  5. doughnuts  6. wholemeal  7. display  8. jam  9. yeast  10. crust",
+          "depth": 2,
+          "name": "1. loaves 2. cake 3. croissants 4. dough 5. doughnuts 6. wholemeal 7. display 8. jam 9. yeast 10. crust"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "544:475",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Bakery vs Baker's",
+          "depth": 2,
+          "name": "Bakery vs Baker's"
+        },
+        {
+          "text": "In British English, 'the baker's' (with possessive) is common: 'I'm going to the baker's.' In American English, 'bakery' is standard. Both are correct.",
+          "depth": 2,
+          "name": "In British English, 'the baker's' (with possessive) is common: 'I'm going to the baker's.' In American English, 'bakery' is standard. Both are correct."
+        },
+        {
+          "text": "🇬🇧 vs 🇺🇸 Vocabulary",
+          "depth": 2,
+          "name": "🇬🇧 vs 🇺🇸 Vocabulary"
+        },
+        {
+          "text": "British: 'biscuit' / American: 'cookie'. British: 'scone' (rhymes with 'gone') / American: 'scone' (rhymes with 'bone'). British: 'icing' / American: 'frosting'.",
+          "depth": 2,
+          "name": "British: 'biscuit' / American: 'cookie'. British: 'scone' (rhymes with 'gone') / American: 'scone' (rhymes with 'bone'). British: 'icing' / American: 'frosting'."
+        },
+        {
+          "text": "Bread Culture",
+          "depth": 2,
+          "name": "Bread Culture"
+        },
+        {
+          "text": "The UK has a strong bread culture: white, wholemeal, granary, tiger bread, and sourdough are all common. Toast with butter is a breakfast staple. 'A sandwich' literally means food between two slices of bread.",
+          "depth": 2,
+          "name": "The UK has a strong bread culture: white, wholemeal, granary, tiger bread, and sourdough are all common. Toast with butter is a breakfast staple. 'A sandwich' literally means food between two slices of bread."
+        },
+        {
+          "text": "Afternoon Tea",
+          "depth": 2,
+          "name": "Afternoon Tea"
+        },
+        {
+          "text": "'Afternoon tea' is a British tradition: small sandwiches, scones with clotted cream and jam, and cakes served with tea. 'Cream tea' is just scones, cream, and jam. The order — cream first or jam first — is a famous debate!",
+          "depth": 2,
+          "name": "'Afternoon tea' is a British tradition: small sandwiches, scones with clotted cream and jam, and cakes served with tea. 'Cream tea' is just scones, cream, and jam. The order — cream first or jam first — is a famous debate!"
+        },
+        {
+          "text": "Artisan and Sourdough Trend",
+          "depth": 2,
+          "name": "Artisan and Sourdough Trend"
+        },
+        {
+          "text": "'Artisan bread' (hand-crafted, small-batch) and 'sourdough' (naturally fermented) have become trendy in English-speaking countries. These words appear frequently on menus and in food media.",
+          "depth": 2,
+          "name": "'Artisan bread' (hand-crafted, small-batch) and 'sourdough' (naturally fermented) have become trendy in English-speaking countries. These words appear frequently on menus and in food media."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "544:494",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "bread",
+          "depth": 2,
+          "name": "bread"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "loaf of ~, ~ roll, fresh ~, ~ basket",
+          "depth": 2,
+          "name": "loaf of ~, ~ roll, fresh ~, ~ basket"
+        },
+        {
+          "text": "cake",
+          "depth": 2,
+          "name": "cake"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "birthday ~, ~ slice, ~ tin",
+          "depth": 2,
+          "name": "birthday ~, ~ slice, ~ tin"
+        },
+        {
+          "text": "dough",
+          "depth": 2,
+          "name": "dough"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ ball, roll the ~, pizza ~",
+          "depth": 2,
+          "name": "~ ball, roll the ~, pizza ~"
+        },
+        {
+          "text": "oven",
+          "depth": 2,
+          "name": "oven"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "preheat the ~, in the ~, ~ temperature",
+          "depth": 2,
+          "name": "preheat the ~, in the ~, ~ temperature"
+        },
+        {
+          "text": "flour",
+          "depth": 2,
+          "name": "flour"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ bag, plain ~, self-raising ~",
+          "depth": 2,
+          "name": "~ bag, plain ~, self-raising ~"
+        },
+        {
+          "text": "croissant",
+          "depth": 2,
+          "name": "croissant"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "butter ~, fresh ~, ~ and coffee",
+          "depth": 2,
+          "name": "butter ~, fresh ~, ~ and coffee"
+        },
+        {
+          "text": "yeast",
+          "depth": 2,
+          "name": "yeast"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ dough, dried ~, ~ packet",
+          "depth": 2,
+          "name": "~ dough, dried ~, ~ packet"
+        },
+        {
+          "text": "pastry",
+          "depth": 2,
+          "name": "pastry"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "puff ~, ~ chef, Danish ~",
+          "depth": 2,
+          "name": "puff ~, ~ chef, Danish ~"
+        },
+        {
+          "text": "loaf",
+          "depth": 2,
+          "name": "loaf"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ of bread, sliced ~, French ~",
+          "depth": 2,
+          "name": "~ of bread, sliced ~, French ~"
+        },
+        {
+          "text": "crust",
+          "depth": 2,
+          "name": "crust"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "bread ~, pizza ~, pie ~, golden ~",
+          "depth": 2,
+          "name": "bread ~, pizza ~, pie ~, golden ~"
+        }
+      ]
+    }
+  }
+}

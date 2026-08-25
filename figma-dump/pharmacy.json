@@ -1,0 +1,2085 @@
+{
+  "unitId": "pharmacy",
+  "name": "The Pharmacy",
+  "subtopics": [
+    {
+      "id": "medicine-forms",
+      "title": "Medicine Forms",
+      "wordIds": [
+        "tablet",
+        "capsule",
+        "syrup",
+        "cream",
+        "ointment",
+        "eye-drops",
+        "inhaler",
+        "injection",
+        "patch",
+        "lozenge",
+        "pill-bottle",
+        "blister-pack",
+        "suppository",
+        "nasal-spray",
+        "ear-drops",
+        "ointment-tube",
+        "lotion",
+        "injection-pen"
+      ]
+    },
+    {
+      "id": "pharmacy-equipment",
+      "title": "Pharmacy Equipment",
+      "wordIds": [
+        "prescription-counter",
+        "cash-register",
+        "medicine-shelf",
+        "refrigerator",
+        "scale",
+        "mortar-and-pestle",
+        "pill-counter",
+        "label-printer",
+        "barcode-scanner",
+        "computer",
+        "pill-cutter",
+        "pill-organizer",
+        "medicine-cabinet",
+        "refrigerated-medicine",
+        "pharmacist-coat",
+        "pharmacy-counter",
+        "digital-scale",
+        "patient-profile"
+      ]
+    },
+    {
+      "id": "health-products",
+      "title": "Health Products",
+      "wordIds": [
+        "bandage",
+        "plaster",
+        "thermometer",
+        "blood-pressure-monitor",
+        "glucose-meter",
+        "pregnancy-test",
+        "hand-sanitizer",
+        "disinfectant",
+        "cotton-ball",
+        "gauze",
+        "vitamin-supplement",
+        "mineral-supplement",
+        "herbal-remedy",
+        "antibiotic",
+        "painkiller",
+        "anti-inflammatory",
+        "antihistamine",
+        "antacid"
+      ]
+    },
+    {
+      "id": "personal-care",
+      "title": "Personal Care",
+      "wordIds": [
+        "shampoo",
+        "conditioner",
+        "body-lotion",
+        "sunscreen",
+        "lip-balm",
+        "deodorant",
+        "contact-lens-solution",
+        "vitamin",
+        "supplement",
+        "probiotic",
+        "laxative",
+        "cough-syrup",
+        "throat-lozenge",
+        "insulin",
+        "drug-interaction-checker",
+        "compounding-area",
+        "clean-room"
+      ]
+    },
+    {
+      "id": "pharmacy-staff",
+      "title": "Pharmacy Staff",
+      "wordIds": [
+        "pharmacist",
+        "pharmacy-technician",
+        "cashier",
+        "customer",
+        "delivery-driver",
+        "manager",
+        "stock-clerk",
+        "consultant",
+        "security-guard",
+        "cleaner",
+        "pharmacy-assistant",
+        "pharmacy-intern",
+        "pharmacy-manager",
+        "pharmacy-owner",
+        "pharmacy-representative",
+        "pharmacy-trainee"
+      ]
+    },
+    {
+      "id": "pharmacy-features",
+      "title": "Pharmacy Features",
+      "wordIds": [
+        "drive-through-window",
+        "consultation-room",
+        "waiting-area",
+        "prescription-drop-off",
+        "pick-up-counter",
+        "health-poster",
+        "shopping-basket",
+        "bag",
+        "receipt",
+        "loyalty-card",
+        "parking-lot",
+        "wheelchair-access",
+        "pharmacy-app",
+        "online-refill",
+        "courier-service",
+        "vaccination-clinic",
+        "pill",
+        "mortar",
+        "pestle",
+        "medicine-bottle",
+        "label",
+        "prescription-pad",
+        "counter",
+        "prescription",
+        "dosage",
+        "consultation",
+        "refill",
+        "insurance",
+        "delivery"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "tablet",
+      "label": "Tablet",
+      "ipa": "/ˈtæblɪt/",
+      "cefr": "B1",
+      "imageNodeId": "45:5107"
+    },
+    {
+      "kind": "card",
+      "id": "capsule",
+      "label": "Capsule",
+      "ipa": "/ˈkæpsjuːl/",
+      "cefr": "B1",
+      "imageNodeId": "45:5111"
+    },
+    {
+      "kind": "card",
+      "id": "syrup",
+      "label": "Syrup",
+      "ipa": "/ˈsɪrəp/",
+      "cefr": "B1",
+      "imageNodeId": "45:5115"
+    },
+    {
+      "kind": "card",
+      "id": "cream",
+      "label": "Cream",
+      "ipa": "/kriːm/",
+      "cefr": "B1",
+      "imageNodeId": "45:5119"
+    },
+    {
+      "kind": "card",
+      "id": "ointment",
+      "label": "Ointment",
+      "ipa": "/ˈɔɪntmənt/",
+      "cefr": "B1",
+      "imageNodeId": "45:5123"
+    },
+    {
+      "kind": "card",
+      "id": "eye-drops",
+      "label": "Eye Drops",
+      "ipa": "/aɪ drɒps/",
+      "cefr": "B2",
+      "imageNodeId": "45:5127"
+    },
+    {
+      "kind": "card",
+      "id": "inhaler",
+      "label": "Inhaler",
+      "ipa": "/ɪnˈheɪlər/",
+      "cefr": "B1",
+      "imageNodeId": "45:5131"
+    },
+    {
+      "kind": "card",
+      "id": "injection",
+      "label": "Injection",
+      "ipa": "/ɪnˈdʒɛkʃən/",
+      "cefr": "B1",
+      "imageNodeId": "45:5135"
+    },
+    {
+      "kind": "card",
+      "id": "patch",
+      "label": "Patch",
+      "ipa": "/pætʃ/",
+      "cefr": "B1",
+      "imageNodeId": "45:5139"
+    },
+    {
+      "kind": "card",
+      "id": "lozenge",
+      "label": "Lozenge",
+      "ipa": "/ˈlɒzɪndʒ/",
+      "cefr": "B1",
+      "imageNodeId": "45:5143"
+    },
+    {
+      "kind": "card",
+      "id": "pill-bottle",
+      "label": "Pill Bottle",
+      "ipa": "/pɪl ˈbɒtl/",
+      "cefr": "B2",
+      "imageNodeId": "491:1346"
+    },
+    {
+      "kind": "card",
+      "id": "blister-pack",
+      "label": "Blister Pack",
+      "ipa": "/ˈblɪstər pæk/",
+      "cefr": "B2",
+      "imageNodeId": "491:1350"
+    },
+    {
+      "kind": "card",
+      "id": "suppository",
+      "label": "Suppository",
+      "ipa": "/səˈpɒzɪtɔːri/",
+      "cefr": "B2",
+      "imageNodeId": "491:1354"
+    },
+    {
+      "kind": "card",
+      "id": "nasal-spray",
+      "label": "Nasal Spray",
+      "ipa": "/ˈneɪzl spreɪ/",
+      "cefr": "B2",
+      "imageNodeId": "491:1358"
+    },
+    {
+      "kind": "card",
+      "id": "ear-drops",
+      "label": "Ear Drops",
+      "ipa": "/ɪr drɒps/",
+      "cefr": "B2",
+      "imageNodeId": "491:1362"
+    },
+    {
+      "kind": "card",
+      "id": "ointment-tube",
+      "label": "Ointment Tube",
+      "ipa": "/ˈɔɪntmənt tjuːb/",
+      "cefr": "B2",
+      "imageNodeId": "491:1366"
+    },
+    {
+      "kind": "card",
+      "id": "lotion",
+      "label": "Lotion",
+      "ipa": "/ˈloʊʃən/",
+      "cefr": "B1",
+      "imageNodeId": "491:1370"
+    },
+    {
+      "kind": "card",
+      "id": "injection-pen",
+      "label": "Injection Pen",
+      "ipa": "/ɪnˈdʒɛkʃən pɛn/",
+      "cefr": "B2",
+      "imageNodeId": "491:1374"
+    },
+    {
+      "kind": "card",
+      "id": "prescription-counter",
+      "label": "Prescription Counter",
+      "ipa": "/prɪˈskrɪpʃən ˈkaʊntər/",
+      "cefr": "C1",
+      "imageNodeId": "45:5152"
+    },
+    {
+      "kind": "card",
+      "id": "cash-register",
+      "label": "Cash Register",
+      "ipa": "/kæʃ ˈrɛdʒɪstər/",
+      "cefr": "B2",
+      "imageNodeId": "45:5156"
+    },
+    {
+      "kind": "card",
+      "id": "medicine-shelf",
+      "label": "Medicine Shelf",
+      "ipa": "/ˈmɛdɪsɪn ʃɛlf/",
+      "cefr": "B2",
+      "imageNodeId": "45:5160"
+    },
+    {
+      "kind": "card",
+      "id": "refrigerator",
+      "label": "Refrigerator",
+      "ipa": "/rɪˈfrɪdʒəreɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:5164"
+    },
+    {
+      "kind": "card",
+      "id": "scale",
+      "label": "Scale",
+      "ipa": "/skeɪl/",
+      "cefr": "B1",
+      "imageNodeId": "45:5168"
+    },
+    {
+      "kind": "card",
+      "id": "mortar-and-pestle",
+      "label": "Mortar and Pestle",
+      "ipa": "/ˈmɔːrtər ænd ˈpɛsl/",
+      "cefr": "C1",
+      "imageNodeId": "45:5172"
+    },
+    {
+      "kind": "card",
+      "id": "pill-counter",
+      "label": "Pill Counter",
+      "ipa": "/pɪl ˈkaʊntər/",
+      "cefr": "B2",
+      "imageNodeId": "45:5176"
+    },
+    {
+      "kind": "card",
+      "id": "label-printer",
+      "label": "Label Printer",
+      "ipa": "/ˈleɪbl ˈprɪntər/",
+      "cefr": "B2",
+      "imageNodeId": "45:5180"
+    },
+    {
+      "kind": "card",
+      "id": "barcode-scanner",
+      "label": "Barcode Scanner",
+      "ipa": "/ˈbɑːrkoʊd ˈskænər/",
+      "cefr": "C1",
+      "imageNodeId": "45:5184"
+    },
+    {
+      "kind": "card",
+      "id": "computer",
+      "label": "Computer",
+      "ipa": "/kəmˈpjuːtər/",
+      "cefr": "B1",
+      "imageNodeId": "45:5188"
+    },
+    {
+      "kind": "card",
+      "id": "pill-cutter",
+      "label": "Pill Cutter",
+      "ipa": "/pɪl ˈkʌtər/",
+      "cefr": "B2",
+      "imageNodeId": "491:1378"
+    },
+    {
+      "kind": "card",
+      "id": "pill-organizer",
+      "label": "Pill Organizer",
+      "ipa": "/pɪl ˈɔːrɡənaɪzər/",
+      "cefr": "B2",
+      "imageNodeId": "491:1382"
+    },
+    {
+      "kind": "card",
+      "id": "medicine-cabinet",
+      "label": "Medicine Cabinet",
+      "ipa": "/ˈmɛdɪsɪn ˈkæbɪnɪt/",
+      "cefr": "C1",
+      "imageNodeId": "491:1386"
+    },
+    {
+      "kind": "card",
+      "id": "refrigerated-medicine",
+      "label": "Refrigerated Medicine",
+      "ipa": "/rɪˈfrɪdʒəreɪtɪd ˈmɛdɪsɪn/",
+      "cefr": "C1",
+      "imageNodeId": "491:1390"
+    },
+    {
+      "kind": "card",
+      "id": "pharmacist-coat",
+      "label": "Pharmacist Coat",
+      "ipa": "/ˈfɑːrməsɪst koʊt/",
+      "cefr": "C1",
+      "imageNodeId": "491:1394"
+    },
+    {
+      "kind": "card",
+      "id": "pharmacy-counter",
+      "label": "Pharmacy Counter",
+      "ipa": "/ˈfɑːrməsi ˈkaʊntər/",
+      "cefr": "C1",
+      "imageNodeId": "491:1398"
+    },
+    {
+      "kind": "card",
+      "id": "digital-scale",
+      "label": "Digital Scale",
+      "ipa": "/ˈdɪdʒɪtl skeɪl/",
+      "cefr": "B2",
+      "imageNodeId": "491:1402"
+    },
+    {
+      "kind": "card",
+      "id": "patient-profile",
+      "label": "Patient Profile",
+      "ipa": "/ˈpeɪʃənt ˈproʊfaɪl/",
+      "cefr": "C1",
+      "imageNodeId": "491:1406"
+    },
+    {
+      "kind": "card",
+      "id": "bandage",
+      "label": "Bandage",
+      "ipa": "/ˈbændɪdʒ/",
+      "cefr": "B1",
+      "imageNodeId": "45:5197"
+    },
+    {
+      "kind": "card",
+      "id": "plaster",
+      "label": "Plaster",
+      "ipa": "/ˈplɑːstər/",
+      "cefr": "B1",
+      "imageNodeId": "45:5201"
+    },
+    {
+      "kind": "card",
+      "id": "thermometer",
+      "label": "Thermometer",
+      "ipa": "/θərˈmɒmɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:5205"
+    },
+    {
+      "kind": "card",
+      "id": "blood-pressure-monitor",
+      "label": "Blood Pressure Monitor",
+      "ipa": "/blʌd ˈprɛʃər ˈmɒnɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "45:5209"
+    },
+    {
+      "kind": "card",
+      "id": "glucose-meter",
+      "label": "Glucose Meter",
+      "ipa": "/ˈɡluːkoʊs ˈmiːtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:5213"
+    },
+    {
+      "kind": "card",
+      "id": "pregnancy-test",
+      "label": "Pregnancy Test",
+      "ipa": "/ˈprɛɡnənsi tɛst/",
+      "cefr": "B2",
+      "imageNodeId": "45:5217"
+    },
+    {
+      "kind": "card",
+      "id": "hand-sanitizer",
+      "label": "Hand Sanitizer",
+      "ipa": "/hænd ˈsænɪtaɪzər/",
+      "cefr": "B2",
+      "imageNodeId": "45:5221"
+    },
+    {
+      "kind": "card",
+      "id": "disinfectant",
+      "label": "Disinfectant",
+      "ipa": "/dɪsˈɪnfɛktənt/",
+      "cefr": "B2",
+      "imageNodeId": "45:5225"
+    },
+    {
+      "kind": "card",
+      "id": "cotton-ball",
+      "label": "Cotton Ball",
+      "ipa": "/ˈkɒtn bɔːl/",
+      "cefr": "B2",
+      "imageNodeId": "45:5229"
+    },
+    {
+      "kind": "card",
+      "id": "gauze",
+      "label": "Gauze",
+      "ipa": "/ɡɔːz/",
+      "cefr": "B1",
+      "imageNodeId": "45:5233"
+    },
+    {
+      "kind": "card",
+      "id": "vitamin-supplement",
+      "label": "Vitamin Supplement",
+      "ipa": "/ˈvaɪtəmɪn ˈsʌplɪmənt/",
+      "cefr": "C1",
+      "imageNodeId": "491:1410"
+    },
+    {
+      "kind": "card",
+      "id": "mineral-supplement",
+      "label": "Mineral Supplement",
+      "ipa": "/ˈmɪnərəl ˈsʌplɪmənt/",
+      "cefr": "C1",
+      "imageNodeId": "491:1414"
+    },
+    {
+      "kind": "card",
+      "id": "herbal-remedy",
+      "label": "Herbal Remedy",
+      "ipa": "/ˈhɜːrbl ˈrɛmədi/",
+      "cefr": "B2",
+      "imageNodeId": "491:1418"
+    },
+    {
+      "kind": "card",
+      "id": "antibiotic",
+      "label": "Antibiotic",
+      "ipa": "/ˌæntɪbaɪˈɒtɪk/",
+      "cefr": "B2",
+      "imageNodeId": "491:1422"
+    },
+    {
+      "kind": "card",
+      "id": "painkiller",
+      "label": "Painkiller",
+      "ipa": "/ˈpeɪnkɪlər/",
+      "cefr": "B2",
+      "imageNodeId": "491:1426"
+    },
+    {
+      "kind": "card",
+      "id": "anti-inflammatory",
+      "label": "Anti-inflammatory",
+      "ipa": "/ˌæntɪɪnˈflæmətɔːri/",
+      "cefr": "C1",
+      "imageNodeId": "491:1430"
+    },
+    {
+      "kind": "card",
+      "id": "antihistamine",
+      "label": "Antihistamine",
+      "ipa": "/ˌæntɪˈhɪstəmiːn/",
+      "cefr": "B2",
+      "imageNodeId": "491:1434"
+    },
+    {
+      "kind": "card",
+      "id": "antacid",
+      "label": "Antacid",
+      "ipa": "/æntˈæsɪd/",
+      "cefr": "B1",
+      "imageNodeId": "491:1438"
+    },
+    {
+      "kind": "card",
+      "id": "shampoo",
+      "label": "Shampoo",
+      "ipa": "/ʃæmˈpuː/",
+      "cefr": "B1",
+      "imageNodeId": "45:5242"
+    },
+    {
+      "kind": "card",
+      "id": "conditioner",
+      "label": "Conditioner",
+      "ipa": "/kənˈdɪʃənər/",
+      "cefr": "B2",
+      "imageNodeId": "45:5246"
+    },
+    {
+      "kind": "card",
+      "id": "body-lotion",
+      "label": "Body Lotion",
+      "ipa": "/ˈbɒdi ˈloʊʃən/",
+      "cefr": "B2",
+      "imageNodeId": "45:5250"
+    },
+    {
+      "kind": "card",
+      "id": "sunscreen",
+      "label": "Sunscreen",
+      "ipa": "/ˈsʌnskriːn/",
+      "cefr": "B1",
+      "imageNodeId": "45:5254"
+    },
+    {
+      "kind": "card",
+      "id": "lip-balm",
+      "label": "Lip Balm",
+      "ipa": "/lɪp bɑːm/",
+      "cefr": "B2",
+      "imageNodeId": "45:5258"
+    },
+    {
+      "kind": "card",
+      "id": "deodorant",
+      "label": "Deodorant",
+      "ipa": "/diˈoʊdərənt/",
+      "cefr": "B1",
+      "imageNodeId": "45:5262"
+    },
+    {
+      "kind": "card",
+      "id": "contact-lens-solution",
+      "label": "Contact Lens Solution",
+      "ipa": "/ˈkɒntækt lɛnz səˈluːʃən/",
+      "cefr": "C1",
+      "imageNodeId": "45:5266"
+    },
+    {
+      "kind": "card",
+      "id": "vitamin",
+      "label": "Vitamin",
+      "ipa": "/ˈvaɪtəmɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:5270"
+    },
+    {
+      "kind": "card",
+      "id": "supplement",
+      "label": "Supplement",
+      "ipa": "/ˈsʌplɪmənt/",
+      "cefr": "B2",
+      "imageNodeId": "45:5274"
+    },
+    {
+      "kind": "card",
+      "id": "probiotic",
+      "label": "Probiotic",
+      "ipa": "/proʊbaɪˈɒtɪk/",
+      "cefr": "B1",
+      "imageNodeId": "45:5278"
+    },
+    {
+      "kind": "card",
+      "id": "laxative",
+      "label": "Laxative",
+      "ipa": "/ˈlæksətɪv/",
+      "cefr": "B1",
+      "imageNodeId": "491:1442"
+    },
+    {
+      "kind": "card",
+      "id": "cough-syrup",
+      "label": "Cough Syrup",
+      "ipa": "/kɒf ˈsɪrəp/",
+      "cefr": "B2",
+      "imageNodeId": "491:1446"
+    },
+    {
+      "kind": "card",
+      "id": "throat-lozenge",
+      "label": "Throat Lozenge",
+      "ipa": "/θroʊt ˈlɒzɪndʒ/",
+      "cefr": "B2",
+      "imageNodeId": "491:1450"
+    },
+    {
+      "kind": "card",
+      "id": "insulin",
+      "label": "Insulin",
+      "ipa": "/ˈɪnsjʊlɪn/",
+      "cefr": "B1",
+      "imageNodeId": "491:1454"
+    },
+    {
+      "kind": "card",
+      "id": "drug-interaction-checker",
+      "label": "Drug Interaction Checker",
+      "ipa": "/drʌɡ ˌɪntərˈækʃən ˈtʃɛkər/",
+      "cefr": "C1",
+      "imageNodeId": "491:1458"
+    },
+    {
+      "kind": "card",
+      "id": "compounding-area",
+      "label": "Compounding Area",
+      "ipa": "/kəmˈpaʊndɪŋ ˈɛriə/",
+      "cefr": "C1",
+      "imageNodeId": "491:1462"
+    },
+    {
+      "kind": "card",
+      "id": "clean-room",
+      "label": "Clean Room",
+      "ipa": "/kliːn ruːm/",
+      "cefr": "B2",
+      "imageNodeId": "491:1466"
+    },
+    {
+      "kind": "card",
+      "id": "pharmacist",
+      "label": "Pharmacist",
+      "ipa": "/ˈfɑːrməsɪst/",
+      "cefr": "B2",
+      "imageNodeId": "45:5287"
+    },
+    {
+      "kind": "card",
+      "id": "pharmacy-technician",
+      "label": "Pharmacy Technician",
+      "ipa": "/ˈfɑːrməsi tɛkˈnɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "45:5291"
+    },
+    {
+      "kind": "card",
+      "id": "cashier",
+      "label": "Cashier",
+      "ipa": "/kæˈʃɪər/",
+      "cefr": "B1",
+      "imageNodeId": "45:5295"
+    },
+    {
+      "kind": "card",
+      "id": "customer",
+      "label": "Customer",
+      "ipa": "/ˈkʌstəmər/",
+      "cefr": "B1",
+      "imageNodeId": "45:5299"
+    },
+    {
+      "kind": "card",
+      "id": "delivery-driver",
+      "label": "Delivery Driver",
+      "ipa": "/dɪˈlɪvəri ˈdraɪvər/",
+      "cefr": "C1",
+      "imageNodeId": "45:5303"
+    },
+    {
+      "kind": "card",
+      "id": "manager",
+      "label": "Manager",
+      "ipa": "/ˈmænɪdʒər/",
+      "cefr": "B1",
+      "imageNodeId": "45:5307"
+    },
+    {
+      "kind": "card",
+      "id": "stock-clerk",
+      "label": "Stock Clerk",
+      "ipa": "/stɒk klɜːrk/",
+      "cefr": "B2",
+      "imageNodeId": "45:5311"
+    },
+    {
+      "kind": "card",
+      "id": "consultant",
+      "label": "Consultant",
+      "ipa": "/kənˈsʌltənt/",
+      "cefr": "B2",
+      "imageNodeId": "45:5315"
+    },
+    {
+      "kind": "card",
+      "id": "security-guard",
+      "label": "Security Guard",
+      "ipa": "/sɪˈkjʊərɪti ɡɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "45:5319"
+    },
+    {
+      "kind": "card",
+      "id": "cleaner",
+      "label": "Cleaner",
+      "ipa": "/ˈkliːnər/",
+      "cefr": "B1",
+      "imageNodeId": "45:5323"
+    },
+    {
+      "kind": "card",
+      "id": "pharmacy-assistant",
+      "label": "Pharmacy Assistant",
+      "ipa": "/ˈfɑːrməsi əˈsɪstənt/",
+      "cefr": "C1",
+      "imageNodeId": "491:1470"
+    },
+    {
+      "kind": "card",
+      "id": "pharmacy-intern",
+      "label": "Pharmacy Intern",
+      "ipa": "/ˈfɑːrməsi ˈɪntɜːrn/",
+      "cefr": "C1",
+      "imageNodeId": "491:1474"
+    },
+    {
+      "kind": "card",
+      "id": "pharmacy-manager",
+      "label": "Pharmacy Manager",
+      "ipa": "/ˈfɑːrməsi ˈmænɪdʒər/",
+      "cefr": "C1",
+      "imageNodeId": "491:1478"
+    },
+    {
+      "kind": "card",
+      "id": "pharmacy-owner",
+      "label": "Pharmacy Owner",
+      "ipa": "/ˈfɑːrməsi ˈoʊnər/",
+      "cefr": "B2",
+      "imageNodeId": "491:1482"
+    },
+    {
+      "kind": "card",
+      "id": "pharmacy-representative",
+      "label": "Pharmacy Representative",
+      "ipa": "/ˈfɑːrməsi ˌrɛprɪˈzɛntətɪv/",
+      "cefr": "C1",
+      "imageNodeId": "491:1486"
+    },
+    {
+      "kind": "card",
+      "id": "pharmacy-trainee",
+      "label": "Pharmacy Trainee",
+      "ipa": "/ˈfɑːrməsi treɪˈniː/",
+      "cefr": "C1",
+      "imageNodeId": "491:1490"
+    },
+    {
+      "kind": "card",
+      "id": "drive-through-window",
+      "label": "Drive-Through Window",
+      "ipa": "/draɪv θruː ˈwɪndoʊ/",
+      "cefr": "C1",
+      "imageNodeId": "45:5332"
+    },
+    {
+      "kind": "card",
+      "id": "consultation-room",
+      "label": "Consultation Room",
+      "ipa": "/ˌkɒnsəlˈteɪʃən ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "45:5336"
+    },
+    {
+      "kind": "card",
+      "id": "waiting-area",
+      "label": "Waiting Area",
+      "ipa": "/ˈweɪtɪŋ ˈɛriə/",
+      "cefr": "B2",
+      "imageNodeId": "45:5340"
+    },
+    {
+      "kind": "card",
+      "id": "prescription-drop-off",
+      "label": "Prescription Drop-Off",
+      "ipa": "/prɪˈskrɪpʃən drɒp ɒf/",
+      "cefr": "C1",
+      "imageNodeId": "45:5344"
+    },
+    {
+      "kind": "card",
+      "id": "pick-up-counter",
+      "label": "Pick-Up Counter",
+      "ipa": "/pɪk ʌp ˈkaʊntər/",
+      "cefr": "C1",
+      "imageNodeId": "45:5348"
+    },
+    {
+      "kind": "card",
+      "id": "health-poster",
+      "label": "Health Poster",
+      "ipa": "/hɛlθ ˈpoʊstər/",
+      "cefr": "B2",
+      "imageNodeId": "45:5352"
+    },
+    {
+      "kind": "card",
+      "id": "shopping-basket",
+      "label": "Shopping Basket",
+      "ipa": "/ˈʃɒpɪŋ ˈbɑːskɪt/",
+      "cefr": "C1",
+      "imageNodeId": "45:5356"
+    },
+    {
+      "kind": "card",
+      "id": "bag",
+      "label": "Bag",
+      "ipa": "/bæɡ/",
+      "cefr": "B1",
+      "imageNodeId": "45:5360"
+    },
+    {
+      "kind": "card",
+      "id": "receipt",
+      "label": "Receipt",
+      "ipa": "/rɪˈsiːt/",
+      "cefr": "B1",
+      "imageNodeId": "45:5364"
+    },
+    {
+      "kind": "card",
+      "id": "loyalty-card",
+      "label": "Loyalty Card",
+      "ipa": "/ˈlɔɪəlti kɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "45:5368"
+    },
+    {
+      "kind": "card",
+      "id": "parking-lot",
+      "label": "Parking Lot",
+      "ipa": "/ˈpɑːrkɪŋ lɒt/",
+      "cefr": "B2",
+      "imageNodeId": "491:1494"
+    },
+    {
+      "kind": "card",
+      "id": "wheelchair-access",
+      "label": "Wheelchair Access",
+      "ipa": "/ˈwiːltʃɛr ˈæksɛs/",
+      "cefr": "C1",
+      "imageNodeId": "491:1498"
+    },
+    {
+      "kind": "card",
+      "id": "pharmacy-app",
+      "label": "Pharmacy App",
+      "ipa": "/ˈfɑːrməsi æp/",
+      "cefr": "B2",
+      "imageNodeId": "491:1502"
+    },
+    {
+      "kind": "card",
+      "id": "online-refill",
+      "label": "Online Refill",
+      "ipa": "/ˈɒnlaɪn ˈriːfɪl/",
+      "cefr": "B2",
+      "imageNodeId": "491:1506"
+    },
+    {
+      "kind": "card",
+      "id": "courier-service",
+      "label": "Courier Service",
+      "ipa": "/ˈkʊriər ˈsɜːrvɪs/",
+      "cefr": "C1",
+      "imageNodeId": "491:1510"
+    },
+    {
+      "kind": "card",
+      "id": "vaccination-clinic",
+      "label": "Vaccination Clinic",
+      "ipa": "/ˌvæksɪˈneɪʃən ˈklɪnɪk/",
+      "cefr": "C1",
+      "imageNodeId": "491:1514"
+    },
+    {
+      "kind": "card",
+      "id": "pill",
+      "label": "Pill",
+      "ipa": "/pɪl/",
+      "cefr": "B1",
+      "imageNodeId": "39:5727"
+    },
+    {
+      "kind": "card",
+      "id": "mortar",
+      "label": "Mortar",
+      "ipa": "/ˈmɔːrtər/",
+      "cefr": "B1",
+      "imageNodeId": "39:5766"
+    },
+    {
+      "kind": "card",
+      "id": "pestle",
+      "label": "Pestle",
+      "ipa": "/ˈpɛsəl/",
+      "cefr": "B1",
+      "imageNodeId": "39:5770"
+    },
+    {
+      "kind": "card",
+      "id": "medicine-bottle",
+      "label": "Medicine Bottle",
+      "ipa": "/ˈmɛdɪsɪn ˈbɒtəl/",
+      "cefr": "C1",
+      "imageNodeId": "39:5774"
+    },
+    {
+      "kind": "card",
+      "id": "label",
+      "label": "Label",
+      "ipa": "/ˈleɪbəl/",
+      "cefr": "B1",
+      "imageNodeId": "39:5778"
+    },
+    {
+      "kind": "card",
+      "id": "prescription-pad",
+      "label": "Prescription Pad",
+      "ipa": "/prɪˈskrɪpʃən pæd/",
+      "cefr": "C1",
+      "imageNodeId": "39:5782"
+    },
+    {
+      "kind": "card",
+      "id": "counter",
+      "label": "Counter",
+      "ipa": "/ˈkaʊntər/",
+      "cefr": "B1",
+      "imageNodeId": "39:5786"
+    },
+    {
+      "kind": "card",
+      "id": "prescription",
+      "label": "Prescription",
+      "ipa": "/prɪˈskrɪpʃən/",
+      "cefr": "B2",
+      "imageNodeId": "39:5797"
+    },
+    {
+      "kind": "card",
+      "id": "dosage",
+      "label": "Dosage",
+      "ipa": "/ˈdoʊsɪdʒ/",
+      "cefr": "B1",
+      "imageNodeId": "39:5801"
+    },
+    {
+      "kind": "card",
+      "id": "consultation",
+      "label": "Consultation",
+      "ipa": "/ˌkɒnsəlˈteɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "39:5809"
+    },
+    {
+      "kind": "card",
+      "id": "refill",
+      "label": "Refill",
+      "ipa": "/ˈriːˌfɪl/",
+      "cefr": "B1",
+      "imageNodeId": "39:5813"
+    },
+    {
+      "kind": "card",
+      "id": "insurance",
+      "label": "Insurance",
+      "ipa": "/ɪnˈʃʊərəns/",
+      "cefr": "B1",
+      "imageNodeId": "39:5817"
+    },
+    {
+      "kind": "card",
+      "id": "delivery",
+      "label": "Delivery",
+      "ipa": "/dɪˈlɪvəri/",
+      "cefr": "B1",
+      "imageNodeId": "39:5825"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "549:2689",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "549:2691",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1+ · Topic: The Pharmacy",
+          "depth": 1,
+          "name": "Level: B1+ · Topic: The Pharmacy"
+        },
+        {
+          "text": "Behind the Counter — How a Pharmacy Works\n\nA pharmacy is more than a shop that sells medicine. It is a healthcare service staffed by trained professionals who prepare, check, and advise on medication. Understanding how a pharmacy works — and the vocabulary that goes with it — is useful for anyone who takes medicine or cares for someone who does.\n\nThe pharmacy counter is where patients hand in their prescription — a written order from a doctor listing the medication, dose, and instructions. The pharmacist reads the prescription, checks the patient profile on the computer for allergies or other medications, and prepares the order. A label printer produces a sticker with the patient's name, the drug name, the dose, and the instructions. A barcode scanner records the transaction at the cash register.\n\nMedicine comes in many forms. A tablet is a small, solid pill that you swallow. A capsule is similar but has a soft outer shell filled with powder or liquid. A syrup is a liquid medicine, often flavoured for children. A cream or an ointment is applied to the skin. Eye drops go into the eyes. An inhaler delivers medicine directly into the lungs — essential for asthma patients. An injection delivers medicine through a needle. A patch sticks to the skin and releases medicine slowly. A lozenge dissolves in the mouth, often for sore throats. A nasal spray is sprayed into the nose. Ear drops go into the ears. A suppository is inserted into the body. An injection pen allows patients to inject themselves at home — common for diabetes.\n\nBehind the counter, the pharmacist uses specialised tools. A digital scale weighs precise amounts. A mortar and pestle grinds tablets into powder for patients who cannot swallow pills. A pill counter sorts exact numbers of tablets. A pill cutter divides tablets into smaller doses. A pill organiser — a box with compartments for each day — helps patients remember their medicine. A refrigerator stores medicines that need to stay cold. A medicine shelf holds hundreds of different products, alphabetically arranged. A medicine cabinet in the dispensary keeps controlled substances secure.\n\nThe front of the pharmacy sells products that don't need a prescription. A bandage and a plaster treat small cuts. A thermometer checks body temperature. A blood pressure monitor reads blood pressure at home. A glucose meter measures blood sugar. A pregnancy test provides results in minutes. Hand sanitiser and disinfectant kill germs. Cotton balls and gauze are used for cleaning wounds. Vitamin supplements, mineral supplements, and herbal remedies fill an entire aisle.\n\nThe pharmacist wears a pharmacist coat — usually white — and is qualified to answer questions about side effects, drug interactions, dosage, and safe storage. They are often the first healthcare professional people speak to when they feel unwell.\n\nA pharmacy runs on precision. The wrong dose, the wrong drug, or the wrong combination can be dangerous. Every label is checked twice. Every prescription is verified. In a pharmacy, accuracy is not just good practice — it is a matter of safety.",
+          "depth": 1,
+          "name": "Behind the Counter — How a Pharmacy Works A pharmacy is more than a shop that sells medicine. It is a healthcare service staffed by trained professionals who prepare, check, and advise on medication. Understanding how a pharmacy works — and the vocabulary that goes with it — is useful for anyone who takes medicine or cares for someone who does. The pharmacy counter is where patients hand in their prescription — a written order from a doctor listing the medication, dose, and instructions. The pharmacist reads the prescription, checks the patient profile on the computer for allergies or other medications, and prepares the order. A label printer produces a sticker with the patient's name, the drug name, the dose, and the instructions. A barcode scanner records the transaction at the cash register. Medicine comes in many forms. A tablet is a small, solid pill that you swallow. A capsule is similar but has a soft outer shell filled with powder or liquid. A syrup is a liquid medicine, often flavoured for children. A cream or an ointment is applied to the skin. Eye drops go into the eyes. An inhaler delivers medicine directly into the lungs — essential for asthma patients. An injection delivers medicine through a needle. A patch sticks to the skin and releases medicine slowly. A lozenge dissolves in the mouth, often for sore throats. A nasal spray is sprayed into the nose. Ear drops go into the ears. A suppository is inserted into the body. An injection pen allows patients to inject themselves at home — common for diabetes. Behind the counter, the pharmacist uses specialised tools. A digital scale weighs precise amounts. A mortar and pestle grinds tablets into powder for patients who cannot swallow pills. A pill counter sorts exact numbers of tablets. A pill cutter divides tablets into smaller doses. A pill organiser — a box with compartments for each day — helps patients remember their medicine. A refrigerator stores medicines that need to stay cold. A medicine shelf holds hundreds of different products, alphabetically arranged. A medicine cabinet in the dispensary keeps controlled substances secure. The front of the pharmacy sells products that don't need a prescription. A bandage and a plaster treat small cuts. A thermometer checks body temperature. A blood pressure monitor reads blood pressure at home. A glucose meter measures blood sugar. A pregnancy test provides results in minutes. Hand sanitiser and disinfectant kill germs. Cotton balls and gauze are used for cleaning wounds. Vitamin supplements, mineral supplements, and herbal remedies fill an entire aisle. The pharmacist wears a pharmacist coat — usually white — and is qualified to answer questions about side effects, drug interactions, dosage, and safe storage. They are often the first healthcare professional people speak to when they feel unwell. A pharmacy runs on precision. The wrong dose, the wrong drug, or the wrong combination can be dangerous. Every label is checked twice. Every prescription is verified. In a pharmacy, accuracy is not just good practice — it is a matter of safety."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What happens when a patient brings a prescription to the pharmacy?",
+          "depth": 1,
+          "name": "1. What happens when a patient brings a prescription to the pharmacy?"
+        },
+        {
+          "text": "2. Name five different forms of medicine and explain how each one is taken.",
+          "depth": 1,
+          "name": "2. Name five different forms of medicine and explain how each one is taken."
+        },
+        {
+          "text": "3. What tools does the pharmacist use behind the counter? Name at least four.",
+          "depth": 1,
+          "name": "3. What tools does the pharmacist use behind the counter? Name at least four."
+        },
+        {
+          "text": "4. What products can you buy at the front of a pharmacy without a prescription?",
+          "depth": 1,
+          "name": "4. What products can you buy at the front of a pharmacy without a prescription?"
+        },
+        {
+          "text": "5. Why does the passage say 'accuracy is a matter of safety' in a pharmacy?",
+          "depth": 1,
+          "name": "5. Why does the passage say 'accuracy is a matter of safety' in a pharmacy?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "549:2704",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "a hard pill to swallow",
+          "depth": 2,
+          "name": "a hard pill to swallow"
+        },
+        {
+          "text": "something difficult to accept",
+          "depth": 2,
+          "name": "something difficult to accept"
+        },
+        {
+          "text": "\"Being told she needed daily medication for the rest of her life was a hard pill to swallow.\"",
+          "depth": 2,
+          "name": "\"Being told she needed daily medication for the rest of her life was a hard pill to swallow.\""
+        },
+        {
+          "text": "a dose of your own medicine",
+          "depth": 2,
+          "name": "a dose of your own medicine"
+        },
+        {
+          "text": "experiencing the same unpleasant treatment you give others",
+          "depth": 2,
+          "name": "experiencing the same unpleasant treatment you give others"
+        },
+        {
+          "text": "\"He always rushed patients — until he had to wait an hour at the prescription counter. A dose of his own medicine.\"",
+          "depth": 2,
+          "name": "\"He always rushed patients — until he had to wait an hour at the prescription counter. A dose of his own medicine.\""
+        },
+        {
+          "text": "just what the doctor ordered",
+          "depth": 2,
+          "name": "just what the doctor ordered"
+        },
+        {
+          "text": "exactly what is needed",
+          "depth": 2,
+          "name": "exactly what is needed"
+        },
+        {
+          "text": "\"A warm cup of tea and a lozenge for my sore throat — just what the doctor ordered.\"",
+          "depth": 2,
+          "name": "\"A warm cup of tea and a lozenge for my sore throat — just what the doctor ordered.\""
+        },
+        {
+          "text": "sugar-coat something",
+          "depth": 2,
+          "name": "sugar-coat something"
+        },
+        {
+          "text": "make something unpleasant seem more acceptable",
+          "depth": 2,
+          "name": "make something unpleasant seem more acceptable"
+        },
+        {
+          "text": "\"Don't sugar-coat it — tell me straight. Is the syrup going to taste terrible?\"",
+          "depth": 2,
+          "name": "\"Don't sugar-coat it — tell me straight. Is the syrup going to taste terrible?\""
+        },
+        {
+          "text": "the best medicine",
+          "depth": 2,
+          "name": "the best medicine"
+        },
+        {
+          "text": "the most effective remedy (often used figuratively)",
+          "depth": 2,
+          "name": "the most effective remedy (often used figuratively)"
+        },
+        {
+          "text": "\"They say laughter is the best medicine, but the pharmacist recommends the inhaler for your asthma.\"",
+          "depth": 2,
+          "name": "\"They say laughter is the best medicine, but the pharmacist recommends the inhaler for your asthma.\""
+        },
+        {
+          "text": "take something with a grain of salt",
+          "depth": 2,
+          "name": "take something with a grain of salt"
+        },
+        {
+          "text": "not believe something completely; be sceptical",
+          "depth": 2,
+          "name": "not believe something completely; be sceptical"
+        },
+        {
+          "text": "\"Take online health advice with a grain of salt — always check with the pharmacist at the prescription counter.\"",
+          "depth": 2,
+          "name": "\"Take online health advice with a grain of salt — always check with the pharmacist at the prescription counter.\""
+        },
+        {
+          "text": "pick up a prescription",
+          "depth": 2,
+          "name": "pick up a prescription"
+        },
+        {
+          "text": "collect medicine that a doctor has ordered for you",
+          "depth": 2,
+          "name": "collect medicine that a doctor has ordered for you"
+        },
+        {
+          "text": "\"I need to pick up a prescription — the doctor prescribed eye drops and an ointment for the rash.\"",
+          "depth": 2,
+          "name": "\"I need to pick up a prescription — the doctor prescribed eye drops and an ointment for the rash.\""
+        },
+        {
+          "text": "over the counter",
+          "depth": 2,
+          "name": "over the counter"
+        },
+        {
+          "text": "available to buy without a doctor's prescription",
+          "depth": 2,
+          "name": "available to buy without a doctor's prescription"
+        },
+        {
+          "text": "\"Paracetamol is available over the counter — you don't need a prescription for basic tablets.\"",
+          "depth": 2,
+          "name": "\"Paracetamol is available over the counter — you don't need a prescription for basic tablets.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "549:2740",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A customer collecting a prescription at the pharmacy counter",
+          "depth": 1,
+          "name": "Scene: A customer collecting a prescription at the pharmacy counter"
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "Good morning. I'm here to pick up a prescription — it should be under the name Ahmed Hassan.",
+          "depth": 2,
+          "name": "Good morning. I'm here to pick up a prescription — it should be under the name Ahmed Hassan."
+        },
+        {
+          "text": "Pharmacist:",
+          "depth": 2,
+          "name": "Pharmacist:"
+        },
+        {
+          "text": "Let me check the computer. Yes — I have it here. The doctor prescribed a capsule for the infection and a cream for the rash.",
+          "depth": 2,
+          "name": "Let me check the computer. Yes — I have it here. The doctor prescribed a capsule for the infection and a cream for the rash."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "How often do I take the capsule?",
+          "depth": 2,
+          "name": "How often do I take the capsule?"
+        },
+        {
+          "text": "Pharmacist:",
+          "depth": 2,
+          "name": "Pharmacist:"
+        },
+        {
+          "text": "One capsule twice a day, with food. The label printer has put the instructions on the pill bottle. Read them carefully.",
+          "depth": 2,
+          "name": "One capsule twice a day, with food. The label printer has put the instructions on the pill bottle. Read them carefully."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "And the cream?",
+          "depth": 2,
+          "name": "And the cream?"
+        },
+        {
+          "text": "Pharmacist:",
+          "depth": 2,
+          "name": "Pharmacist:"
+        },
+        {
+          "text": "Apply the ointment to the affected area three times daily. It comes in an ointment tube — keep it in a cool place.",
+          "depth": 2,
+          "name": "Apply the ointment to the affected area three times daily. It comes in an ointment tube — keep it in a cool place."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "I also need something for a cough. Do I need a prescription?",
+          "depth": 2,
+          "name": "I also need something for a cough. Do I need a prescription?"
+        },
+        {
+          "text": "Pharmacist:",
+          "depth": 2,
+          "name": "Pharmacist:"
+        },
+        {
+          "text": "No — cough syrup is over the counter. It's on the medicine shelf behind you. We also have lozenges if you prefer.",
+          "depth": 2,
+          "name": "No — cough syrup is over the counter. It's on the medicine shelf behind you. We also have lozenges if you prefer."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "What about eye drops? My eyes have been dry lately.",
+          "depth": 2,
+          "name": "What about eye drops? My eyes have been dry lately."
+        },
+        {
+          "text": "Pharmacist:",
+          "depth": 2,
+          "name": "Pharmacist:"
+        },
+        {
+          "text": "These eye drops are good for dryness. And if your allergies are bad, try the nasal spray — also available without a prescription.",
+          "depth": 2,
+          "name": "These eye drops are good for dryness. And if your allergies are bad, try the nasal spray — also available without a prescription."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "Can I pay for everything together at the cash register?",
+          "depth": 2,
+          "name": "Can I pay for everything together at the cash register?"
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "549:2778",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The doctor gave me a medicine for my cold.\"",
+          "depth": 2,
+          "name": "❌ \"The doctor gave me a medicine for my cold.\""
+        },
+        {
+          "text": "✅ \"The doctor gave me some medicine for my cold.\" / \"The doctor gave me medication for my cold.\"",
+          "depth": 2,
+          "name": "✅ \"The doctor gave me some medicine for my cold.\" / \"The doctor gave me medication for my cold.\""
+        },
+        {
+          "text": "'Medicine' is usually uncountable when referring to the substance: 'some medicine', 'take your medicine.' Use 'a medicine' only when distinguishing between types: 'This is a medicine for headaches.' 'Medication' (uncountable) is more formal: 'He takes medication daily.'",
+          "depth": 2,
+          "name": "'Medicine' is usually uncountable when referring to the substance: 'some medicine', 'take your medicine.' Use 'a medicine' only when distinguishing between types: 'This is a medicine for headaches.' 'Medication' (uncountable) is more formal: 'He takes medication daily.'"
+        },
+        {
+          "text": "❌ \"I need to take this pill three times in a day.\"",
+          "depth": 2,
+          "name": "❌ \"I need to take this pill three times in a day.\""
+        },
+        {
+          "text": "✅ \"I need to take this pill three times a day.\"",
+          "depth": 2,
+          "name": "✅ \"I need to take this pill three times a day.\""
+        },
+        {
+          "text": "'Three times a day' — no 'in.' 'Once a week', 'twice a month', 'three times a year.' The article 'a' means 'per' or 'each.' 'She visits the pharmacy once a month.' Never 'in a day' for frequency — 'in a day' means 'within a single day': 'I finished it in a day.'",
+          "depth": 2,
+          "name": "'Three times a day' — no 'in.' 'Once a week', 'twice a month', 'three times a year.' The article 'a' means 'per' or 'each.' 'She visits the pharmacy once a month.' Never 'in a day' for frequency — 'in a day' means 'within a single day': 'I finished it in a day.'"
+        },
+        {
+          "text": "❌ \"Can you give me an advice about which vitamins to take?\"",
+          "depth": 2,
+          "name": "❌ \"Can you give me an advice about which vitamins to take?\""
+        },
+        {
+          "text": "✅ \"Can you give me some advice about which vitamins to take?\"",
+          "depth": 2,
+          "name": "✅ \"Can you give me some advice about which vitamins to take?\""
+        },
+        {
+          "text": "'Advice' is uncountable: 'some advice', 'a piece of advice.' Not: 'an advice' or 'advices.' The verb is 'advise' (different spelling, different pronunciation). 'I advise you to take vitamin D.' 'She gave me good advice.'",
+          "depth": 2,
+          "name": "'Advice' is uncountable: 'some advice', 'a piece of advice.' Not: 'an advice' or 'advices.' The verb is 'advise' (different spelling, different pronunciation). 'I advise you to take vitamin D.' 'She gave me good advice.'"
+        },
+        {
+          "text": "❌ \"She has headache and needs to take a painkiller.\"",
+          "depth": 2,
+          "name": "❌ \"She has headache and needs to take a painkiller.\""
+        },
+        {
+          "text": "✅ \"She has a headache and needs to take a painkiller.\"",
+          "depth": 2,
+          "name": "✅ \"She has a headache and needs to take a painkiller.\""
+        },
+        {
+          "text": "'A headache', 'a stomachache', 'a toothache', 'a backache' — these use 'a' because they are countable conditions. But: 'I have flu' (no article, BrE) or 'I have the flu' (AmE). Disease names: 'She has diabetes' (no article), 'He has a cold' (article).",
+          "depth": 2,
+          "name": "'A headache', 'a stomachache', 'a toothache', 'a backache' — these use 'a' because they are countable conditions. But: 'I have flu' (no article, BrE) or 'I have the flu' (AmE). Disease names: 'She has diabetes' (no article), 'He has a cold' (article)."
+        },
+        {
+          "text": "❌ \"The pharmacist suggested me to take the medicine after meals.\"",
+          "depth": 2,
+          "name": "❌ \"The pharmacist suggested me to take the medicine after meals.\""
+        },
+        {
+          "text": "✅ \"The pharmacist suggested (that) I take the medicine after meals.\" / \"The pharmacist suggested taking the medicine after meals.\"",
+          "depth": 2,
+          "name": "✅ \"The pharmacist suggested (that) I take the medicine after meals.\" / \"The pharmacist suggested taking the medicine after meals.\""
+        },
+        {
+          "text": "'Suggest' never takes object + infinitive (*suggested me to take). Correct: 'suggested that I take' (subjunctive) or 'suggested taking' (-ing form). The same pattern applies to 'recommend': 'She recommended taking vitamin C.' Never 'recommended me to take.'",
+          "depth": 2,
+          "name": "'Suggest' never takes object + infinitive (*suggested me to take). Correct: 'suggested that I take' (subjunctive) or 'suggested taking' (-ing form). The same pattern applies to 'recommend': 'She recommended taking vitamin C.' Never 'recommended me to take.'"
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "549:2802",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how pharmacy and health vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how pharmacy and health vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "prescribe",
+          "depth": 2,
+          "name": "prescribe"
+        },
+        {
+          "text": "prescription",
+          "depth": 2,
+          "name": "prescription"
+        },
+        {
+          "text": "prescribe",
+          "depth": 2,
+          "name": "prescribe"
+        },
+        {
+          "text": "prescribed / prescriptive",
+          "depth": 2,
+          "name": "prescribed / prescriptive"
+        },
+        {
+          "text": "dose",
+          "depth": 2,
+          "name": "dose"
+        },
+        {
+          "text": "dose / dosage / overdose",
+          "depth": 2,
+          "name": "dose / dosage / overdose"
+        },
+        {
+          "text": "dose",
+          "depth": 2,
+          "name": "dose"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "medicate",
+          "depth": 2,
+          "name": "medicate"
+        },
+        {
+          "text": "medicine / medication",
+          "depth": 2,
+          "name": "medicine / medication"
+        },
+        {
+          "text": "medicate",
+          "depth": 2,
+          "name": "medicate"
+        },
+        {
+          "text": "medicated / medicinal",
+          "depth": 2,
+          "name": "medicated / medicinal"
+        },
+        {
+          "text": "allergic",
+          "depth": 2,
+          "name": "allergic"
+        },
+        {
+          "text": "allergy / allergen",
+          "depth": 2,
+          "name": "allergy / allergen"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "allergic",
+          "depth": 2,
+          "name": "allergic"
+        },
+        {
+          "text": "expire",
+          "depth": 2,
+          "name": "expire"
+        },
+        {
+          "text": "expiry / expiration",
+          "depth": 2,
+          "name": "expiry / expiration"
+        },
+        {
+          "text": "expire",
+          "depth": 2,
+          "name": "expire"
+        },
+        {
+          "text": "expired",
+          "depth": 2,
+          "name": "expired"
+        },
+        {
+          "text": "infect",
+          "depth": 2,
+          "name": "infect"
+        },
+        {
+          "text": "infection",
+          "depth": 2,
+          "name": "infection"
+        },
+        {
+          "text": "infect",
+          "depth": 2,
+          "name": "infect"
+        },
+        {
+          "text": "infected / infectious",
+          "depth": 2,
+          "name": "infected / infectious"
+        },
+        {
+          "text": "vaccinate",
+          "depth": 2,
+          "name": "vaccinate"
+        },
+        {
+          "text": "vaccine / vaccination",
+          "depth": 2,
+          "name": "vaccine / vaccination"
+        },
+        {
+          "text": "vaccinate",
+          "depth": 2,
+          "name": "vaccinate"
+        },
+        {
+          "text": "vaccinated",
+          "depth": 2,
+          "name": "vaccinated"
+        },
+        {
+          "text": "antibiotic",
+          "depth": 2,
+          "name": "antibiotic"
+        },
+        {
+          "text": "antibiotic",
+          "depth": 2,
+          "name": "antibiotic"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "antibiotic / antibacterial",
+          "depth": 2,
+          "name": "antibiotic / antibacterial"
+        },
+        {
+          "text": "symptom",
+          "depth": 2,
+          "name": "symptom"
+        },
+        {
+          "text": "symptom",
+          "depth": 2,
+          "name": "symptom"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "symptomatic / asymptomatic",
+          "depth": 2,
+          "name": "symptomatic / asymptomatic"
+        },
+        {
+          "text": "pharmacy",
+          "depth": 2,
+          "name": "pharmacy"
+        },
+        {
+          "text": "pharmacy / pharmacist / pharmacology",
+          "depth": 2,
+          "name": "pharmacy / pharmacist / pharmacology"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "pharmaceutical",
+          "depth": 2,
+          "name": "pharmaceutical"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "549:2862",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A __________ is a written order from a doctor listing the medication and dose.",
+          "depth": 1,
+          "name": "1. A __________ is a written order from a doctor listing the medication and dose."
+        },
+        {
+          "text": "2.  A __________ is a small solid pill that you swallow with water.",
+          "depth": 1,
+          "name": "2. A __________ is a small solid pill that you swallow with water."
+        },
+        {
+          "text": "3.  An __________ delivers medicine directly into the lungs for asthma patients.",
+          "depth": 1,
+          "name": "3. An __________ delivers medicine directly into the lungs for asthma patients."
+        },
+        {
+          "text": "4.  A mortar and __________ is used to grind tablets into powder.",
+          "depth": 1,
+          "name": "4. A mortar and __________ is used to grind tablets into powder."
+        },
+        {
+          "text": "5.  A __________ sticks to the skin and releases medicine slowly over time.",
+          "depth": 1,
+          "name": "5. A __________ sticks to the skin and releases medicine slowly over time."
+        },
+        {
+          "text": "6.  The __________ reads prescriptions, checks allergies, and prepares medication.",
+          "depth": 1,
+          "name": "6. The __________ reads prescriptions, checks allergies, and prepares medication."
+        },
+        {
+          "text": "7.  A __________ organiser helps patients remember to take their medicine each day.",
+          "depth": 1,
+          "name": "7. A __________ organiser helps patients remember to take their medicine each day."
+        },
+        {
+          "text": "8.  __________ drops are placed into the eyes to treat infections or dryness.",
+          "depth": 1,
+          "name": "8. __________ drops are placed into the eyes to treat infections or dryness."
+        },
+        {
+          "text": "9.  A __________ dissolves slowly in the mouth to soothe a sore throat.",
+          "depth": 1,
+          "name": "9. A __________ dissolves slowly in the mouth to soothe a sore throat."
+        },
+        {
+          "text": "10. A __________ meter measures blood sugar levels at home.",
+          "depth": 1,
+          "name": "10. A __________ meter measures blood sugar levels at home."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. prescription  2. tablet  3. inhaler  4. pestle  5. patch  6. pharmacist  7. pill  8. Eye  9. lozenge  10. glucose",
+          "depth": 2,
+          "name": "1. prescription 2. tablet 3. inhaler 4. pestle 5. patch 6. pharmacist 7. pill 8. Eye 9. lozenge 10. glucose"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "549:2880",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Pharmacy vs Chemist's vs Drugstore",
+          "depth": 2,
+          "name": "Pharmacy vs Chemist's vs Drugstore"
+        },
+        {
+          "text": "'Pharmacy' is universal. 'Chemist's' is British (Boots is the most famous chain). 'Drugstore' is American (CVS, Walgreens). American drugstores often sell snacks, drinks, and household items — more like a convenience store.",
+          "depth": 2,
+          "name": "'Pharmacy' is universal. 'Chemist's' is British (Boots is the most famous chain). 'Drugstore' is American (CVS, Walgreens). American drugstores often sell snacks, drinks, and household items — more like a convenience store."
+        },
+        {
+          "text": "NHS Prescriptions",
+          "depth": 2,
+          "name": "NHS Prescriptions"
+        },
+        {
+          "text": "In England, each prescription item costs a fixed charge (currently around £9.90). In Scotland, Wales, and Northern Ireland, prescriptions are free. Children under 16, over-60s, and people with certain conditions are exempt from charges.",
+          "depth": 2,
+          "name": "In England, each prescription item costs a fixed charge (currently around £9.90). In Scotland, Wales, and Northern Ireland, prescriptions are free. Children under 16, over-60s, and people with certain conditions are exempt from charges."
+        },
+        {
+          "text": "Medicine vs Drug",
+          "depth": 2,
+          "name": "Medicine vs Drug"
+        },
+        {
+          "text": "'Medicine' is neutral — something you take to treat illness. 'Drug' can mean medicine (especially in American English) but also refers to illegal substances. In the UK, 'drugs' in everyday speech often implies illegal drugs, so 'medicine' or 'medication' is safer.",
+          "depth": 2,
+          "name": "'Medicine' is neutral — something you take to treat illness. 'Drug' can mean medicine (especially in American English) but also refers to illegal substances. In the UK, 'drugs' in everyday speech often implies illegal drugs, so 'medicine' or 'medication' is safer."
+        },
+        {
+          "text": "GP — General Practitioner",
+          "depth": 2,
+          "name": "GP — General Practitioner"
+        },
+        {
+          "text": "'GP' is the British term for a family doctor. You 'see your GP' or 'make an appointment with your GP'. The American equivalent is 'primary care physician' or 'family doctor'. 'Surgery' (BrE) = the GP's office: 'I called the surgery.'",
+          "depth": 2,
+          "name": "'GP' is the British term for a family doctor. You 'see your GP' or 'make an appointment with your GP'. The American equivalent is 'primary care physician' or 'family doctor'. 'Surgery' (BrE) = the GP's office: 'I called the surgery.'"
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "549:2896",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "prescription",
+          "depth": 2,
+          "name": "prescription"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ medicine, fill a ~, doctor's ~",
+          "depth": 2,
+          "name": "~ medicine, fill a ~, doctor's ~"
+        },
+        {
+          "text": "tablet",
+          "depth": 2,
+          "name": "tablet"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ form, take a ~, ~ dosage",
+          "depth": 2,
+          "name": "~ form, take a ~, ~ dosage"
+        },
+        {
+          "text": "syrup",
+          "depth": 2,
+          "name": "syrup"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "cough ~, ~ medicine, ~ dose",
+          "depth": 2,
+          "name": "cough ~, ~ medicine, ~ dose"
+        },
+        {
+          "text": "dosage",
+          "depth": 2,
+          "name": "dosage"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "correct ~, recommended ~, ~ instructions",
+          "depth": 2,
+          "name": "correct ~, recommended ~, ~ instructions"
+        },
+        {
+          "text": "antibiotic",
+          "depth": 2,
+          "name": "antibiotic"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ course, ~ resistance, take ~s",
+          "depth": 2,
+          "name": "~ course, ~ resistance, take ~s"
+        },
+        {
+          "text": "pharmacist",
+          "depth": 2,
+          "name": "pharmacist"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ advice, qualified ~, consulting ~",
+          "depth": 2,
+          "name": "~ advice, qualified ~, consulting ~"
+        },
+        {
+          "text": "paracetamol",
+          "depth": 2,
+          "name": "paracetamol"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ tablet, ~ dosage, ~ overdose",
+          "depth": 2,
+          "name": "~ tablet, ~ dosage, ~ overdose"
+        },
+        {
+          "text": "bandage",
+          "depth": 2,
+          "name": "bandage"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ wound, elastic ~, apply a ~",
+          "depth": 2,
+          "name": "~ wound, elastic ~, apply a ~"
+        },
+        {
+          "text": "thermometer",
+          "depth": 2,
+          "name": "thermometer"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "digital ~, ~ reading, ~ strip",
+          "depth": 2,
+          "name": "digital ~, ~ reading, ~ strip"
+        },
+        {
+          "text": "vaccine",
+          "depth": 2,
+          "name": "vaccine"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "flu ~, ~ injection, ~ rollout",
+          "depth": 2,
+          "name": "flu ~, ~ injection, ~ rollout"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,585 @@
+{
+  "unitId": "five-senses",
+  "name": "The Five Senses",
+  "subtopics": [
+    {
+      "id": "sight",
+      "title": "Sight",
+      "wordIds": [
+        "vision",
+        "eye",
+        "pupil",
+        "lens",
+        "retina",
+        "cornea",
+        "optic-nerve",
+        "color-vision",
+        "depth-perception",
+        "peripheral-vision"
+      ]
+    },
+    {
+      "id": "hearing",
+      "title": "Hearing",
+      "wordIds": [
+        "sound",
+        "ear",
+        "eardrum",
+        "cochlea",
+        "pitch",
+        "volume",
+        "frequency",
+        "echo",
+        "vibration",
+        "auditory-nerve"
+      ]
+    },
+    {
+      "id": "smell",
+      "title": "Smell",
+      "wordIds": [
+        "nose",
+        "nostril",
+        "olfactory",
+        "aroma",
+        "fragrance",
+        "odor",
+        "scent",
+        "stench",
+        "pungent",
+        "nasal-cavity"
+      ]
+    },
+    {
+      "id": "taste",
+      "title": "Taste",
+      "wordIds": [
+        "tongue",
+        "taste-bud",
+        "sweet",
+        "sour",
+        "salty",
+        "bitter",
+        "umami",
+        "flavor",
+        "palate",
+        "savor"
+      ]
+    },
+    {
+      "id": "touch",
+      "title": "Touch",
+      "wordIds": [
+        "skin",
+        "nerve-ending",
+        "pressure",
+        "temperature",
+        "texture",
+        "pain",
+        "tickle",
+        "itch",
+        "smooth",
+        "rough"
+      ]
+    },
+    {
+      "id": "sensory-words",
+      "title": "Sensory Words",
+      "wordIds": [
+        "bright",
+        "loud",
+        "fragrant",
+        "delicious",
+        "soft",
+        "dark",
+        "quiet",
+        "stinky",
+        "bland",
+        "hard"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "vision",
+      "label": "Vision",
+      "ipa": "/ˈvɪʒən/",
+      "cefr": "A2",
+      "imageNodeId": "467:1650"
+    },
+    {
+      "kind": "card",
+      "id": "eye",
+      "label": "Eye",
+      "ipa": "/aɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:1654"
+    },
+    {
+      "kind": "card",
+      "id": "pupil",
+      "label": "Pupil",
+      "ipa": "/ˈpjuːpəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:1658"
+    },
+    {
+      "kind": "card",
+      "id": "lens",
+      "label": "Lens",
+      "ipa": "/lɛnz/",
+      "cefr": "A2",
+      "imageNodeId": "467:1662"
+    },
+    {
+      "kind": "card",
+      "id": "retina",
+      "label": "Retina",
+      "ipa": "/ˈrɛtɪnə/",
+      "cefr": "A2",
+      "imageNodeId": "467:1666"
+    },
+    {
+      "kind": "card",
+      "id": "cornea",
+      "label": "Cornea",
+      "ipa": "/ˈkɔːrniə/",
+      "cefr": "A2",
+      "imageNodeId": "467:1670"
+    },
+    {
+      "kind": "card",
+      "id": "optic-nerve",
+      "label": "Optic Nerve",
+      "ipa": "/ˈɒptɪk nɜːrv/",
+      "cefr": "B1",
+      "imageNodeId": "467:1674"
+    },
+    {
+      "kind": "card",
+      "id": "color-vision",
+      "label": "Color Vision",
+      "ipa": "/ˈkʌlər ˈvɪʒən/",
+      "cefr": "B1",
+      "imageNodeId": "467:1678"
+    },
+    {
+      "kind": "card",
+      "id": "depth-perception",
+      "label": "Depth Perception",
+      "ipa": "/dɛpθ pərˈsɛpʃən/",
+      "cefr": "B2",
+      "imageNodeId": "467:1682"
+    },
+    {
+      "kind": "card",
+      "id": "peripheral-vision",
+      "label": "Peripheral Vision",
+      "ipa": "/pəˈrɪfərəl ˈvɪʒən/",
+      "cefr": "B2",
+      "imageNodeId": "467:1686"
+    },
+    {
+      "kind": "card",
+      "id": "sound",
+      "label": "Sound",
+      "ipa": "/saʊnd/",
+      "cefr": "A2",
+      "imageNodeId": "467:1695"
+    },
+    {
+      "kind": "card",
+      "id": "ear",
+      "label": "Ear",
+      "ipa": "/ɪər/",
+      "cefr": "A2",
+      "imageNodeId": "467:1699"
+    },
+    {
+      "kind": "card",
+      "id": "eardrum",
+      "label": "Eardrum",
+      "ipa": "/ˈɪərˌdrʌm/",
+      "cefr": "A2",
+      "imageNodeId": "467:1703"
+    },
+    {
+      "kind": "card",
+      "id": "cochlea",
+      "label": "Cochlea",
+      "ipa": "/ˈkɒkliə/",
+      "cefr": "A2",
+      "imageNodeId": "467:1707"
+    },
+    {
+      "kind": "card",
+      "id": "pitch",
+      "label": "Pitch",
+      "ipa": "/pɪtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:1711"
+    },
+    {
+      "kind": "card",
+      "id": "volume",
+      "label": "Volume",
+      "ipa": "/ˈvɒljuːm/",
+      "cefr": "A2",
+      "imageNodeId": "467:1715"
+    },
+    {
+      "kind": "card",
+      "id": "frequency",
+      "label": "Frequency",
+      "ipa": "/ˈfriːkwənsi/",
+      "cefr": "A2",
+      "imageNodeId": "467:1719"
+    },
+    {
+      "kind": "card",
+      "id": "echo",
+      "label": "Echo",
+      "ipa": "/ˈɛkoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:1723"
+    },
+    {
+      "kind": "card",
+      "id": "vibration",
+      "label": "Vibration",
+      "ipa": "/vaɪˈbreɪʃən/",
+      "cefr": "A2",
+      "imageNodeId": "467:1727"
+    },
+    {
+      "kind": "card",
+      "id": "auditory-nerve",
+      "label": "Auditory Nerve",
+      "ipa": "/ˈɔːdɪˌtɔːri nɜːrv/",
+      "cefr": "B1",
+      "imageNodeId": "467:1731"
+    },
+    {
+      "kind": "card",
+      "id": "nose",
+      "label": "Nose",
+      "ipa": "/noʊz/",
+      "cefr": "A2",
+      "imageNodeId": "467:1740"
+    },
+    {
+      "kind": "card",
+      "id": "nostril",
+      "label": "Nostril",
+      "ipa": "/ˈnɒstrɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:1744"
+    },
+    {
+      "kind": "card",
+      "id": "olfactory",
+      "label": "Olfactory",
+      "ipa": "/ɒlˈfæktəri/",
+      "cefr": "A2",
+      "imageNodeId": "467:1748"
+    },
+    {
+      "kind": "card",
+      "id": "aroma",
+      "label": "Aroma",
+      "ipa": "/əˈroʊmə/",
+      "cefr": "A2",
+      "imageNodeId": "467:1752"
+    },
+    {
+      "kind": "card",
+      "id": "fragrance",
+      "label": "Fragrance",
+      "ipa": "/ˈfreɪɡrəns/",
+      "cefr": "A2",
+      "imageNodeId": "467:1756"
+    },
+    {
+      "kind": "card",
+      "id": "odor",
+      "label": "Odor",
+      "ipa": "/ˈoʊdər/",
+      "cefr": "A2",
+      "imageNodeId": "467:1760"
+    },
+    {
+      "kind": "card",
+      "id": "scent",
+      "label": "Scent",
+      "ipa": "/sɛnt/",
+      "cefr": "A2",
+      "imageNodeId": "467:1764"
+    },
+    {
+      "kind": "card",
+      "id": "stench",
+      "label": "Stench",
+      "ipa": "/stɛntʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:1768"
+    },
+    {
+      "kind": "card",
+      "id": "pungent",
+      "label": "Pungent",
+      "ipa": "/ˈpʌndʒənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:1772"
+    },
+    {
+      "kind": "card",
+      "id": "nasal-cavity",
+      "label": "Nasal Cavity",
+      "ipa": "/ˈneɪzəl ˈkævɪti/",
+      "cefr": "B1",
+      "imageNodeId": "467:1776"
+    },
+    {
+      "kind": "card",
+      "id": "tongue",
+      "label": "Tongue",
+      "ipa": "/tʌŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:1785"
+    },
+    {
+      "kind": "card",
+      "id": "taste-bud",
+      "label": "Taste Bud",
+      "ipa": "/teɪst bʌd/",
+      "cefr": "B1",
+      "imageNodeId": "467:1789"
+    },
+    {
+      "kind": "card",
+      "id": "sweet",
+      "label": "Sweet",
+      "ipa": "/swiːt/",
+      "cefr": "A2",
+      "imageNodeId": "467:1793"
+    },
+    {
+      "kind": "card",
+      "id": "sour",
+      "label": "Sour",
+      "ipa": "/ˈsaʊər/",
+      "cefr": "A2",
+      "imageNodeId": "467:1797"
+    },
+    {
+      "kind": "card",
+      "id": "salty",
+      "label": "Salty",
+      "ipa": "/ˈsɔːlti/",
+      "cefr": "A2",
+      "imageNodeId": "467:1801"
+    },
+    {
+      "kind": "card",
+      "id": "bitter",
+      "label": "Bitter",
+      "ipa": "/ˈbɪtər/",
+      "cefr": "A2",
+      "imageNodeId": "467:1805"
+    },
+    {
+      "kind": "card",
+      "id": "umami",
+      "label": "Umami",
+      "ipa": "/uːˈmɑːmi/",
+      "cefr": "A2",
+      "imageNodeId": "467:1809"
+    },
+    {
+      "kind": "card",
+      "id": "flavor",
+      "label": "Flavor",
+      "ipa": "/ˈfleɪvər/",
+      "cefr": "A2",
+      "imageNodeId": "467:1813"
+    },
+    {
+      "kind": "card",
+      "id": "palate",
+      "label": "Palate",
+      "ipa": "/ˈpælɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:1817"
+    },
+    {
+      "kind": "card",
+      "id": "savor",
+      "label": "Savor",
+      "ipa": "/ˈseɪvər/",
+      "cefr": "A2",
+      "imageNodeId": "467:1821"
+    },
+    {
+      "kind": "card",
+      "id": "skin",
+      "label": "Skin",
+      "ipa": "/skɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:1830"
+    },
+    {
+      "kind": "card",
+      "id": "nerve-ending",
+      "label": "Nerve Ending",
+      "ipa": "/nɜːrv ˈɛndɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "467:1834"
+    },
+    {
+      "kind": "card",
+      "id": "pressure",
+      "label": "Pressure",
+      "ipa": "/ˈprɛʃər/",
+      "cefr": "A2",
+      "imageNodeId": "467:1838"
+    },
+    {
+      "kind": "card",
+      "id": "temperature",
+      "label": "Temperature",
+      "ipa": "/ˈtɛmpərətʃər/",
+      "cefr": "B1",
+      "imageNodeId": "467:1842"
+    },
+    {
+      "kind": "card",
+      "id": "texture",
+      "label": "Texture",
+      "ipa": "/ˈtɛkstʃər/",
+      "cefr": "A2",
+      "imageNodeId": "467:1846"
+    },
+    {
+      "kind": "card",
+      "id": "pain",
+      "label": "Pain",
+      "ipa": "/peɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:1850"
+    },
+    {
+      "kind": "card",
+      "id": "tickle",
+      "label": "Tickle",
+      "ipa": "/ˈtɪkəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:1854"
+    },
+    {
+      "kind": "card",
+      "id": "itch",
+      "label": "Itch",
+      "ipa": "/ɪtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:1858"
+    },
+    {
+      "kind": "card",
+      "id": "smooth",
+      "label": "Smooth",
+      "ipa": "/smuːð/",
+      "cefr": "A2",
+      "imageNodeId": "467:1862"
+    },
+    {
+      "kind": "card",
+      "id": "rough",
+      "label": "Rough",
+      "ipa": "/rʌf/",
+      "cefr": "A2",
+      "imageNodeId": "467:1866"
+    },
+    {
+      "kind": "card",
+      "id": "bright",
+      "label": "Bright",
+      "ipa": "/braɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:1875"
+    },
+    {
+      "kind": "card",
+      "id": "loud",
+      "label": "Loud",
+      "ipa": "/laʊd/",
+      "cefr": "A2",
+      "imageNodeId": "467:1879"
+    },
+    {
+      "kind": "card",
+      "id": "fragrant",
+      "label": "Fragrant",
+      "ipa": "/ˈfreɪɡrənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:1883"
+    },
+    {
+      "kind": "card",
+      "id": "delicious",
+      "label": "Delicious",
+      "ipa": "/dɪˈlɪʃəs/",
+      "cefr": "A2",
+      "imageNodeId": "467:1887"
+    },
+    {
+      "kind": "card",
+      "id": "soft",
+      "label": "Soft",
+      "ipa": "/sɒft/",
+      "cefr": "A2",
+      "imageNodeId": "467:1891"
+    },
+    {
+      "kind": "card",
+      "id": "dark",
+      "label": "Dark",
+      "ipa": "/dɑːrk/",
+      "cefr": "A2",
+      "imageNodeId": "467:1895"
+    },
+    {
+      "kind": "card",
+      "id": "quiet",
+      "label": "Quiet",
+      "ipa": "/ˈkwaɪət/",
+      "cefr": "A2",
+      "imageNodeId": "467:1899"
+    },
+    {
+      "kind": "card",
+      "id": "stinky",
+      "label": "Stinky",
+      "ipa": "/ˈstɪŋki/",
+      "cefr": "A2",
+      "imageNodeId": "467:1903"
+    },
+    {
+      "kind": "card",
+      "id": "bland",
+      "label": "Bland",
+      "ipa": "/blænd/",
+      "cefr": "A2",
+      "imageNodeId": "467:1907"
+    },
+    {
+      "kind": "card",
+      "id": "hard",
+      "label": "Hard",
+      "ipa": "/hɑːrd/",
+      "cefr": "A2",
+      "imageNodeId": "467:1911"
+    }
+  ],
+  "materials": null
+}

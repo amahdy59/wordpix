@@ -1,0 +1,393 @@
+{
+  "unitId": "indoor-hobbies",
+  "name": "Indoor Hobbies",
+  "subtopics": [
+    {
+      "id": "reading-writing",
+      "title": "Reading & Writing",
+      "wordIds": [
+        "novel",
+        "comic-book",
+        "magazine",
+        "newspaper",
+        "journal",
+        "diary",
+        "poetry",
+        "blog",
+        "e-reader",
+        "audiobook"
+      ]
+    },
+    {
+      "id": "arts-crafts",
+      "title": "Arts & Crafts",
+      "wordIds": [
+        "drawing",
+        "painting",
+        "sculpting",
+        "origami",
+        "scrapbooking",
+        "calligraphy",
+        "pottery",
+        "mosaic",
+        "collage",
+        "decoupage"
+      ]
+    },
+    {
+      "id": "music",
+      "title": "Music",
+      "wordIds": [
+        "guitar",
+        "piano",
+        "drums",
+        "violin",
+        "flute",
+        "ukulele",
+        "harmonica",
+        "keyboard",
+        "saxophone",
+        "cello"
+      ]
+    },
+    {
+      "id": "collecting",
+      "title": "Collecting",
+      "wordIds": [
+        "stamps",
+        "coins",
+        "cards",
+        "figurines",
+        "vinyl-records",
+        "antiques",
+        "shells",
+        "rocks",
+        "comics",
+        "miniatures"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "novel",
+      "label": "Novel",
+      "ipa": "/ˈnɒvəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:12429"
+    },
+    {
+      "kind": "card",
+      "id": "comic-book",
+      "label": "Comic Book",
+      "ipa": "/ˈkɒmɪk bʊk/",
+      "cefr": "B1",
+      "imageNodeId": "467:12433"
+    },
+    {
+      "kind": "card",
+      "id": "magazine",
+      "label": "Magazine",
+      "ipa": "/ˌmæɡəˈziːn/",
+      "cefr": "A2",
+      "imageNodeId": "467:12437"
+    },
+    {
+      "kind": "card",
+      "id": "newspaper",
+      "label": "Newspaper",
+      "ipa": "/ˈnjuːzˌpeɪpər/",
+      "cefr": "A2",
+      "imageNodeId": "467:12441"
+    },
+    {
+      "kind": "card",
+      "id": "journal",
+      "label": "Journal",
+      "ipa": "/ˈdʒɜːrnəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:12445"
+    },
+    {
+      "kind": "card",
+      "id": "diary",
+      "label": "Diary",
+      "ipa": "/ˈdaɪəri/",
+      "cefr": "A2",
+      "imageNodeId": "467:12449"
+    },
+    {
+      "kind": "card",
+      "id": "poetry",
+      "label": "Poetry",
+      "ipa": "/ˈpoʊɪtri/",
+      "cefr": "A2",
+      "imageNodeId": "467:12453"
+    },
+    {
+      "kind": "card",
+      "id": "blog",
+      "label": "Blog",
+      "ipa": "/blɒɡ/",
+      "cefr": "A2",
+      "imageNodeId": "467:12457"
+    },
+    {
+      "kind": "card",
+      "id": "e-reader",
+      "label": "E-Reader",
+      "ipa": "/ˈiːˌriːdər/",
+      "cefr": "B1",
+      "imageNodeId": "467:12461"
+    },
+    {
+      "kind": "card",
+      "id": "audiobook",
+      "label": "Audiobook",
+      "ipa": "/ˈɔːdioʊˌbʊk/",
+      "cefr": "A2",
+      "imageNodeId": "467:12465"
+    },
+    {
+      "kind": "card",
+      "id": "drawing",
+      "label": "Drawing",
+      "ipa": "/ˈdrɔːɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:12474"
+    },
+    {
+      "kind": "card",
+      "id": "painting",
+      "label": "Painting",
+      "ipa": "/ˈpeɪntɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:12478"
+    },
+    {
+      "kind": "card",
+      "id": "sculpting",
+      "label": "Sculpting",
+      "ipa": "/ˈskʌlptɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:12482"
+    },
+    {
+      "kind": "card",
+      "id": "origami",
+      "label": "Origami",
+      "ipa": "/ˌɒrɪˈɡɑːmi/",
+      "cefr": "A2",
+      "imageNodeId": "467:12486"
+    },
+    {
+      "kind": "card",
+      "id": "scrapbooking",
+      "label": "Scrapbooking",
+      "ipa": "/ˈskræpˌbʊkɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "467:12490"
+    },
+    {
+      "kind": "card",
+      "id": "calligraphy",
+      "label": "Calligraphy",
+      "ipa": "/kəˈlɪɡrəfi/",
+      "cefr": "B1",
+      "imageNodeId": "467:12494"
+    },
+    {
+      "kind": "card",
+      "id": "pottery",
+      "label": "Pottery",
+      "ipa": "/ˈpɒtəri/",
+      "cefr": "A2",
+      "imageNodeId": "467:12498"
+    },
+    {
+      "kind": "card",
+      "id": "mosaic",
+      "label": "Mosaic",
+      "ipa": "/moʊˈzeɪɪk/",
+      "cefr": "A2",
+      "imageNodeId": "467:12502"
+    },
+    {
+      "kind": "card",
+      "id": "collage",
+      "label": "Collage",
+      "ipa": "/kəˈlɑːʒ/",
+      "cefr": "A2",
+      "imageNodeId": "467:12506"
+    },
+    {
+      "kind": "card",
+      "id": "decoupage",
+      "label": "Decoupage",
+      "ipa": "/ˌdeɪkuːˈpɑːʒ/",
+      "cefr": "A2",
+      "imageNodeId": "467:12510"
+    },
+    {
+      "kind": "card",
+      "id": "guitar",
+      "label": "Guitar",
+      "ipa": "/ɡɪˈtɑːr/",
+      "cefr": "A2",
+      "imageNodeId": "467:12519"
+    },
+    {
+      "kind": "card",
+      "id": "piano",
+      "label": "Piano",
+      "ipa": "/piˈænoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:12523"
+    },
+    {
+      "kind": "card",
+      "id": "drums",
+      "label": "Drums",
+      "ipa": "/drʌmz/",
+      "cefr": "A2",
+      "imageNodeId": "467:12527"
+    },
+    {
+      "kind": "card",
+      "id": "violin",
+      "label": "Violin",
+      "ipa": "/ˌvaɪəˈlɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:12531"
+    },
+    {
+      "kind": "card",
+      "id": "flute",
+      "label": "Flute",
+      "ipa": "/fluːt/",
+      "cefr": "A2",
+      "imageNodeId": "467:12535"
+    },
+    {
+      "kind": "card",
+      "id": "ukulele",
+      "label": "Ukulele",
+      "ipa": "/ˌjuːkəˈleɪli/",
+      "cefr": "A2",
+      "imageNodeId": "467:12539"
+    },
+    {
+      "kind": "card",
+      "id": "harmonica",
+      "label": "Harmonica",
+      "ipa": "/hɑːrˈmɒnɪkə/",
+      "cefr": "A2",
+      "imageNodeId": "467:12543"
+    },
+    {
+      "kind": "card",
+      "id": "keyboard",
+      "label": "Keyboard",
+      "ipa": "/ˈkiːˌbɔːrd/",
+      "cefr": "A2",
+      "imageNodeId": "467:12547"
+    },
+    {
+      "kind": "card",
+      "id": "saxophone",
+      "label": "Saxophone",
+      "ipa": "/ˈsæksəˌfoʊn/",
+      "cefr": "A2",
+      "imageNodeId": "467:12551"
+    },
+    {
+      "kind": "card",
+      "id": "cello",
+      "label": "Cello",
+      "ipa": "/ˈtʃɛloʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:12555"
+    },
+    {
+      "kind": "card",
+      "id": "stamps",
+      "label": "Stamps",
+      "ipa": "/stæmps/",
+      "cefr": "A2",
+      "imageNodeId": "467:12564"
+    },
+    {
+      "kind": "card",
+      "id": "coins",
+      "label": "Coins",
+      "ipa": "/kɔɪnz/",
+      "cefr": "A2",
+      "imageNodeId": "467:12568"
+    },
+    {
+      "kind": "card",
+      "id": "cards",
+      "label": "Cards",
+      "ipa": "/kɑːrdz/",
+      "cefr": "A2",
+      "imageNodeId": "467:12572"
+    },
+    {
+      "kind": "card",
+      "id": "figurines",
+      "label": "Figurines",
+      "ipa": "/ˌfɪɡjʊˈriːnz/",
+      "cefr": "A2",
+      "imageNodeId": "467:12576"
+    },
+    {
+      "kind": "card",
+      "id": "vinyl-records",
+      "label": "Vinyl Records",
+      "ipa": "/ˈvaɪnəl ˈrɛkərdz/",
+      "cefr": "B1",
+      "imageNodeId": "467:12580"
+    },
+    {
+      "kind": "card",
+      "id": "antiques",
+      "label": "Antiques",
+      "ipa": "/ænˈtiːks/",
+      "cefr": "A2",
+      "imageNodeId": "467:12584"
+    },
+    {
+      "kind": "card",
+      "id": "shells",
+      "label": "Shells",
+      "ipa": "/ʃɛlz/",
+      "cefr": "A2",
+      "imageNodeId": "467:12588"
+    },
+    {
+      "kind": "card",
+      "id": "rocks",
+      "label": "Rocks",
+      "ipa": "/rɒks/",
+      "cefr": "A2",
+      "imageNodeId": "467:12592"
+    },
+    {
+      "kind": "card",
+      "id": "comics",
+      "label": "Comics",
+      "ipa": "/ˈkɒmɪks/",
+      "cefr": "A2",
+      "imageNodeId": "467:12596"
+    },
+    {
+      "kind": "card",
+      "id": "miniatures",
+      "label": "Miniatures",
+      "ipa": "/ˈmɪnɪətʃərz/",
+      "cefr": "B1",
+      "imageNodeId": "467:12600"
+    }
+  ],
+  "materials": null
+}

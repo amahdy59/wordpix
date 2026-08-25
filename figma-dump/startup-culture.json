@@ -1,0 +1,393 @@
+{
+  "unitId": "startup-culture",
+  "name": "Startup Culture",
+  "subtopics": [
+    {
+      "id": "startup-basics",
+      "title": "Startup Basics",
+      "wordIds": [
+        "startup",
+        "founder",
+        "co-founder",
+        "ceo",
+        "cto",
+        "mvp",
+        "pitch-deck",
+        "business-plan",
+        "mission-statement",
+        "vision"
+      ]
+    },
+    {
+      "id": "funding",
+      "title": "Funding",
+      "wordIds": [
+        "seed-round",
+        "series-a",
+        "angel-investor",
+        "venture-capital",
+        "crowdfunding",
+        "bootstrap",
+        "valuation",
+        "equity",
+        "dilution",
+        "term-sheet"
+      ]
+    },
+    {
+      "id": "growth",
+      "title": "Growth",
+      "wordIds": [
+        "traction",
+        "user-acquisition",
+        "retention",
+        "churn-rate",
+        "growth-hacking",
+        "product-market-fit",
+        "pivot",
+        "scale",
+        "runway",
+        "burn-rate"
+      ]
+    },
+    {
+      "id": "startup-lingo",
+      "title": "Startup Lingo",
+      "wordIds": [
+        "disrupt",
+        "iterate",
+        "lean",
+        "agile",
+        "sprint",
+        "standup",
+        "retrospective",
+        "okr",
+        "north-star",
+        "unicorn"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "startup",
+      "label": "Startup",
+      "ipa": "/ˈstɑːrtˌʌp/",
+      "cefr": "B2",
+      "imageNodeId": "467:20783"
+    },
+    {
+      "kind": "card",
+      "id": "founder",
+      "label": "Founder",
+      "ipa": "/ˈfaʊndər/",
+      "cefr": "B2",
+      "imageNodeId": "467:20787"
+    },
+    {
+      "kind": "card",
+      "id": "co-founder",
+      "label": "Co-Founder",
+      "ipa": "/ˈkoʊˈfaʊndər/",
+      "cefr": "C1",
+      "imageNodeId": "467:20791"
+    },
+    {
+      "kind": "card",
+      "id": "ceo",
+      "label": "CEO",
+      "ipa": "/ˌsiːiːˈoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:20795"
+    },
+    {
+      "kind": "card",
+      "id": "cto",
+      "label": "CTO",
+      "ipa": "/ˌsiːtiːˈoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:20799"
+    },
+    {
+      "kind": "card",
+      "id": "mvp",
+      "label": "MVP",
+      "ipa": "/ˌɛmviːˈpiː/",
+      "cefr": "B2",
+      "imageNodeId": "467:20803"
+    },
+    {
+      "kind": "card",
+      "id": "pitch-deck",
+      "label": "Pitch Deck",
+      "ipa": "/pɪtʃ dɛk/",
+      "cefr": "C1",
+      "imageNodeId": "467:20807"
+    },
+    {
+      "kind": "card",
+      "id": "business-plan",
+      "label": "Business Plan",
+      "ipa": "/ˈbɪznɪs plæn/",
+      "cefr": "C1",
+      "imageNodeId": "467:20811"
+    },
+    {
+      "kind": "card",
+      "id": "mission-statement",
+      "label": "Mission Statement",
+      "ipa": "/ˈmɪʃən ˈsteɪtmənt/",
+      "cefr": "C1",
+      "imageNodeId": "467:20815"
+    },
+    {
+      "kind": "card",
+      "id": "vision",
+      "label": "Vision",
+      "ipa": "/ˈvɪʒən/",
+      "cefr": "B2",
+      "imageNodeId": "467:20819"
+    },
+    {
+      "kind": "card",
+      "id": "seed-round",
+      "label": "Seed Round",
+      "ipa": "/siːd raʊnd/",
+      "cefr": "C1",
+      "imageNodeId": "467:20828"
+    },
+    {
+      "kind": "card",
+      "id": "series-a",
+      "label": "Series A",
+      "ipa": "/ˈsɪəriːz eɪ/",
+      "cefr": "C1",
+      "imageNodeId": "467:20832"
+    },
+    {
+      "kind": "card",
+      "id": "angel-investor",
+      "label": "Angel Investor",
+      "ipa": "/ˈeɪndʒəl ɪnˈvɛstər/",
+      "cefr": "C1",
+      "imageNodeId": "467:20836"
+    },
+    {
+      "kind": "card",
+      "id": "venture-capital",
+      "label": "Venture Capital",
+      "ipa": "/ˈvɛntʃər ˈkæpɪtəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:20840"
+    },
+    {
+      "kind": "card",
+      "id": "crowdfunding",
+      "label": "Crowdfunding",
+      "ipa": "/ˈkraʊdˌfʌndɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:20844"
+    },
+    {
+      "kind": "card",
+      "id": "bootstrap",
+      "label": "Bootstrap",
+      "ipa": "/ˈbuːtˌstræp/",
+      "cefr": "B2",
+      "imageNodeId": "467:20848"
+    },
+    {
+      "kind": "card",
+      "id": "valuation",
+      "label": "Valuation",
+      "ipa": "/ˌvæljuˈeɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "467:20852"
+    },
+    {
+      "kind": "card",
+      "id": "equity",
+      "label": "Equity",
+      "ipa": "/ˈɛkwɪti/",
+      "cefr": "B2",
+      "imageNodeId": "467:20856"
+    },
+    {
+      "kind": "card",
+      "id": "dilution",
+      "label": "Dilution",
+      "ipa": "/daɪˈluːʃən/",
+      "cefr": "B2",
+      "imageNodeId": "467:20860"
+    },
+    {
+      "kind": "card",
+      "id": "term-sheet",
+      "label": "Term Sheet",
+      "ipa": "/tɜːrm ʃiːt/",
+      "cefr": "C1",
+      "imageNodeId": "467:20864"
+    },
+    {
+      "kind": "card",
+      "id": "traction",
+      "label": "Traction",
+      "ipa": "/ˈtrækʃən/",
+      "cefr": "B2",
+      "imageNodeId": "467:20873"
+    },
+    {
+      "kind": "card",
+      "id": "user-acquisition",
+      "label": "User Acquisition",
+      "ipa": "/ˈjuːzər ˌækwɪˈzɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:20877"
+    },
+    {
+      "kind": "card",
+      "id": "retention",
+      "label": "Retention",
+      "ipa": "/rɪˈtɛnʃən/",
+      "cefr": "B2",
+      "imageNodeId": "467:20881"
+    },
+    {
+      "kind": "card",
+      "id": "churn-rate",
+      "label": "Churn Rate",
+      "ipa": "/tʃɜːrn reɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:20885"
+    },
+    {
+      "kind": "card",
+      "id": "growth-hacking",
+      "label": "Growth Hacking",
+      "ipa": "/ɡroʊθ ˈhækɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:20889"
+    },
+    {
+      "kind": "card",
+      "id": "product-market-fit",
+      "label": "Product-Market Fit",
+      "ipa": "/ˈprɒdʌkt ˈmɑːrkɪt fɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:20893"
+    },
+    {
+      "kind": "card",
+      "id": "pivot",
+      "label": "Pivot",
+      "ipa": "/ˈpɪvət/",
+      "cefr": "B2",
+      "imageNodeId": "467:20897"
+    },
+    {
+      "kind": "card",
+      "id": "scale",
+      "label": "Scale",
+      "ipa": "/skeɪl/",
+      "cefr": "B2",
+      "imageNodeId": "467:20901"
+    },
+    {
+      "kind": "card",
+      "id": "runway",
+      "label": "Runway",
+      "ipa": "/ˈrʌnˌweɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:20905"
+    },
+    {
+      "kind": "card",
+      "id": "burn-rate",
+      "label": "Burn Rate",
+      "ipa": "/bɜːrn reɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:20909"
+    },
+    {
+      "kind": "card",
+      "id": "disrupt",
+      "label": "Disrupt",
+      "ipa": "/dɪsˈrʌpt/",
+      "cefr": "B2",
+      "imageNodeId": "467:20918"
+    },
+    {
+      "kind": "card",
+      "id": "iterate",
+      "label": "Iterate",
+      "ipa": "/ˈɪtəˌreɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:20922"
+    },
+    {
+      "kind": "card",
+      "id": "lean",
+      "label": "Lean",
+      "ipa": "/liːn/",
+      "cefr": "B2",
+      "imageNodeId": "467:20926"
+    },
+    {
+      "kind": "card",
+      "id": "agile",
+      "label": "Agile",
+      "ipa": "/ˈædʒaɪl/",
+      "cefr": "B2",
+      "imageNodeId": "467:20930"
+    },
+    {
+      "kind": "card",
+      "id": "sprint",
+      "label": "Sprint",
+      "ipa": "/sprɪnt/",
+      "cefr": "B2",
+      "imageNodeId": "467:20934"
+    },
+    {
+      "kind": "card",
+      "id": "standup",
+      "label": "Standup",
+      "ipa": "/ˈstændˌʌp/",
+      "cefr": "B2",
+      "imageNodeId": "467:20938"
+    },
+    {
+      "kind": "card",
+      "id": "retrospective",
+      "label": "Retrospective",
+      "ipa": "/ˌrɛtrəˈspɛktɪv/",
+      "cefr": "C1",
+      "imageNodeId": "467:20942"
+    },
+    {
+      "kind": "card",
+      "id": "okr",
+      "label": "OKR",
+      "ipa": "/ˌoʊkeɪˈɑːr/",
+      "cefr": "B2",
+      "imageNodeId": "467:20946"
+    },
+    {
+      "kind": "card",
+      "id": "north-star",
+      "label": "North Star",
+      "ipa": "/nɔːrθ stɑːr/",
+      "cefr": "C1",
+      "imageNodeId": "467:20950"
+    },
+    {
+      "kind": "card",
+      "id": "unicorn",
+      "label": "Unicorn",
+      "ipa": "/ˈjuːnɪˌkɔːrn/",
+      "cefr": "B2",
+      "imageNodeId": "467:20954"
+    }
+  ],
+  "materials": null
+}

@@ -1,0 +1,467 @@
+{
+  "unitId": "hand-actions",
+  "name": "Hand Actions",
+  "subtopics": [
+    {
+      "id": "grip-hold",
+      "title": "Grip & Hold",
+      "wordIds": [
+        "grab",
+        "hold",
+        "grip",
+        "clutch",
+        "grasp",
+        "squeeze",
+        "clench",
+        "pinch",
+        "carry",
+        "lift"
+      ]
+    },
+    {
+      "id": "push-pull",
+      "title": "Push & Pull",
+      "wordIds": ["push", "pull", "drag", "shove", "tug", "yank", "press", "twist", "turn", "wring"]
+    },
+    {
+      "id": "throw-catch",
+      "title": "Throw & Catch",
+      "wordIds": [
+        "throw",
+        "catch",
+        "toss",
+        "pitch",
+        "fling",
+        "hurl",
+        "lob",
+        "pass",
+        "drop",
+        "juggle"
+      ]
+    },
+    {
+      "id": "touch-feel",
+      "title": "Touch & Feel",
+      "wordIds": [
+        "touch",
+        "tap",
+        "poke",
+        "stroke",
+        "pat",
+        "rub",
+        "scratch",
+        "tickle",
+        "caress",
+        "massage"
+      ]
+    },
+    {
+      "id": "create-build",
+      "title": "Create & Build",
+      "wordIds": ["write", "draw", "paint", "type", "fold", "tear", "cut", "glue", "sew", "knit"]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "grab",
+      "label": "Grab",
+      "ipa": "/ɡræb/",
+      "cefr": "A2",
+      "imageNodeId": "467:10512"
+    },
+    {
+      "kind": "card",
+      "id": "hold",
+      "label": "Hold",
+      "ipa": "/hoʊld/",
+      "cefr": "A2",
+      "imageNodeId": "467:10516"
+    },
+    {
+      "kind": "card",
+      "id": "grip",
+      "label": "Grip",
+      "ipa": "/ɡrɪp/",
+      "cefr": "A2",
+      "imageNodeId": "467:10520"
+    },
+    {
+      "kind": "card",
+      "id": "clutch",
+      "label": "Clutch",
+      "ipa": "/klʌtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10524"
+    },
+    {
+      "kind": "card",
+      "id": "grasp",
+      "label": "Grasp",
+      "ipa": "/ɡræsp/",
+      "cefr": "A2",
+      "imageNodeId": "467:10528"
+    },
+    {
+      "kind": "card",
+      "id": "squeeze",
+      "label": "Squeeze",
+      "ipa": "/skwiːz/",
+      "cefr": "A2",
+      "imageNodeId": "467:10532"
+    },
+    {
+      "kind": "card",
+      "id": "clench",
+      "label": "Clench",
+      "ipa": "/klɛntʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10536"
+    },
+    {
+      "kind": "card",
+      "id": "pinch",
+      "label": "Pinch",
+      "ipa": "/pɪntʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10540"
+    },
+    {
+      "kind": "card",
+      "id": "carry",
+      "label": "Carry",
+      "ipa": "/ˈkæri/",
+      "cefr": "A2",
+      "imageNodeId": "467:10544"
+    },
+    {
+      "kind": "card",
+      "id": "lift",
+      "label": "Lift",
+      "ipa": "/lɪft/",
+      "cefr": "A2",
+      "imageNodeId": "467:10548"
+    },
+    {
+      "kind": "card",
+      "id": "push",
+      "label": "Push",
+      "ipa": "/pʊʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10557"
+    },
+    {
+      "kind": "card",
+      "id": "pull",
+      "label": "Pull",
+      "ipa": "/pʊl/",
+      "cefr": "A2",
+      "imageNodeId": "467:10561"
+    },
+    {
+      "kind": "card",
+      "id": "drag",
+      "label": "Drag",
+      "ipa": "/dræɡ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10565"
+    },
+    {
+      "kind": "card",
+      "id": "shove",
+      "label": "Shove",
+      "ipa": "/ʃʌv/",
+      "cefr": "A2",
+      "imageNodeId": "467:10569"
+    },
+    {
+      "kind": "card",
+      "id": "tug",
+      "label": "Tug",
+      "ipa": "/tʌɡ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10573"
+    },
+    {
+      "kind": "card",
+      "id": "yank",
+      "label": "Yank",
+      "ipa": "/jæŋk/",
+      "cefr": "A2",
+      "imageNodeId": "467:10577"
+    },
+    {
+      "kind": "card",
+      "id": "press",
+      "label": "Press",
+      "ipa": "/prɛs/",
+      "cefr": "A2",
+      "imageNodeId": "467:10581"
+    },
+    {
+      "kind": "card",
+      "id": "twist",
+      "label": "Twist",
+      "ipa": "/twɪst/",
+      "cefr": "A2",
+      "imageNodeId": "467:10585"
+    },
+    {
+      "kind": "card",
+      "id": "turn",
+      "label": "Turn",
+      "ipa": "/tɜːrn/",
+      "cefr": "A2",
+      "imageNodeId": "467:10589"
+    },
+    {
+      "kind": "card",
+      "id": "wring",
+      "label": "Wring",
+      "ipa": "/rɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10593"
+    },
+    {
+      "kind": "card",
+      "id": "throw",
+      "label": "Throw",
+      "ipa": "/θroʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10602"
+    },
+    {
+      "kind": "card",
+      "id": "catch",
+      "label": "Catch",
+      "ipa": "/kætʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10606"
+    },
+    {
+      "kind": "card",
+      "id": "toss",
+      "label": "Toss",
+      "ipa": "/tɒs/",
+      "cefr": "A2",
+      "imageNodeId": "467:10610"
+    },
+    {
+      "kind": "card",
+      "id": "pitch",
+      "label": "Pitch",
+      "ipa": "/pɪtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10614"
+    },
+    {
+      "kind": "card",
+      "id": "fling",
+      "label": "Fling",
+      "ipa": "/flɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10618"
+    },
+    {
+      "kind": "card",
+      "id": "hurl",
+      "label": "Hurl",
+      "ipa": "/hɜːrl/",
+      "cefr": "A2",
+      "imageNodeId": "467:10622"
+    },
+    {
+      "kind": "card",
+      "id": "lob",
+      "label": "Lob",
+      "ipa": "/lɒb/",
+      "cefr": "A2",
+      "imageNodeId": "467:10626"
+    },
+    {
+      "kind": "card",
+      "id": "pass",
+      "label": "Pass",
+      "ipa": "/pæs/",
+      "cefr": "A2",
+      "imageNodeId": "467:10630"
+    },
+    {
+      "kind": "card",
+      "id": "drop",
+      "label": "Drop",
+      "ipa": "/drɒp/",
+      "cefr": "A2",
+      "imageNodeId": "467:10634"
+    },
+    {
+      "kind": "card",
+      "id": "juggle",
+      "label": "Juggle",
+      "ipa": "/ˈdʒʌɡəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:10638"
+    },
+    {
+      "kind": "card",
+      "id": "touch",
+      "label": "Touch",
+      "ipa": "/tʌtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10647"
+    },
+    {
+      "kind": "card",
+      "id": "tap",
+      "label": "Tap",
+      "ipa": "/tæp/",
+      "cefr": "A2",
+      "imageNodeId": "467:10651"
+    },
+    {
+      "kind": "card",
+      "id": "poke",
+      "label": "Poke",
+      "ipa": "/poʊk/",
+      "cefr": "A2",
+      "imageNodeId": "467:10655"
+    },
+    {
+      "kind": "card",
+      "id": "stroke",
+      "label": "Stroke",
+      "ipa": "/stroʊk/",
+      "cefr": "A2",
+      "imageNodeId": "467:10659"
+    },
+    {
+      "kind": "card",
+      "id": "pat",
+      "label": "Pat",
+      "ipa": "/pæt/",
+      "cefr": "A2",
+      "imageNodeId": "467:10663"
+    },
+    {
+      "kind": "card",
+      "id": "rub",
+      "label": "Rub",
+      "ipa": "/rʌb/",
+      "cefr": "A2",
+      "imageNodeId": "467:10667"
+    },
+    {
+      "kind": "card",
+      "id": "scratch",
+      "label": "Scratch",
+      "ipa": "/skrætʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10671"
+    },
+    {
+      "kind": "card",
+      "id": "tickle",
+      "label": "Tickle",
+      "ipa": "/ˈtɪkəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:10675"
+    },
+    {
+      "kind": "card",
+      "id": "caress",
+      "label": "Caress",
+      "ipa": "/kəˈrɛs/",
+      "cefr": "A2",
+      "imageNodeId": "467:10679"
+    },
+    {
+      "kind": "card",
+      "id": "massage",
+      "label": "Massage",
+      "ipa": "/məˈsɑːʒ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10683"
+    },
+    {
+      "kind": "card",
+      "id": "write",
+      "label": "Write",
+      "ipa": "/raɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:10692"
+    },
+    {
+      "kind": "card",
+      "id": "draw",
+      "label": "Draw",
+      "ipa": "/drɔː/",
+      "cefr": "A2",
+      "imageNodeId": "467:10696"
+    },
+    {
+      "kind": "card",
+      "id": "paint",
+      "label": "Paint",
+      "ipa": "/peɪnt/",
+      "cefr": "A2",
+      "imageNodeId": "467:10700"
+    },
+    {
+      "kind": "card",
+      "id": "type",
+      "label": "Type",
+      "ipa": "/taɪp/",
+      "cefr": "A2",
+      "imageNodeId": "467:10704"
+    },
+    {
+      "kind": "card",
+      "id": "fold",
+      "label": "Fold",
+      "ipa": "/foʊld/",
+      "cefr": "A2",
+      "imageNodeId": "467:10708"
+    },
+    {
+      "kind": "card",
+      "id": "tear",
+      "label": "Tear",
+      "ipa": "/tɛər/",
+      "cefr": "A2",
+      "imageNodeId": "467:10712"
+    },
+    {
+      "kind": "card",
+      "id": "cut",
+      "label": "Cut",
+      "ipa": "/kʌt/",
+      "cefr": "A2",
+      "imageNodeId": "467:10716"
+    },
+    {
+      "kind": "card",
+      "id": "glue",
+      "label": "Glue",
+      "ipa": "/ɡluː/",
+      "cefr": "A2",
+      "imageNodeId": "467:10720"
+    },
+    {
+      "kind": "card",
+      "id": "sew",
+      "label": "Sew",
+      "ipa": "/soʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10724"
+    },
+    {
+      "kind": "card",
+      "id": "knit",
+      "label": "Knit",
+      "ipa": "/nɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:10728"
+    }
+  ],
+  "materials": null
+}

@@ -1,0 +1,393 @@
+{
+  "unitId": "student-life",
+  "name": "Student Life",
+  "subtopics": [
+    {
+      "id": "student-housing",
+      "title": "Student Housing",
+      "wordIds": [
+        "dorm-room",
+        "roommate",
+        "resident-advisor",
+        "common-room",
+        "laundry-room",
+        "meal-plan",
+        "dorm-key",
+        "move-in",
+        "move-out",
+        "off-campus-housing"
+      ]
+    },
+    {
+      "id": "student-activities",
+      "title": "Student Activities",
+      "wordIds": [
+        "club",
+        "organization",
+        "fraternity",
+        "sorority",
+        "student-government",
+        "newspaper",
+        "radio-station",
+        "volunteer",
+        "intramural-sports",
+        "drama-club"
+      ]
+    },
+    {
+      "id": "social-life",
+      "title": "Social Life",
+      "wordIds": [
+        "party",
+        "concert",
+        "game-day",
+        "tailgate",
+        "study-date",
+        "coffee-shop",
+        "food-court",
+        "movie-night",
+        "road-trip",
+        "spring-formal"
+      ]
+    },
+    {
+      "id": "student-finances",
+      "title": "Student Finances",
+      "wordIds": [
+        "tuition",
+        "scholarship",
+        "financial-aid",
+        "student-loan",
+        "work-study",
+        "part-time-job",
+        "budget",
+        "textbook-cost",
+        "student-discount",
+        "grant"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "dorm-room",
+      "label": "Dorm Room",
+      "ipa": "/dɔːrm ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "467:15760"
+    },
+    {
+      "kind": "card",
+      "id": "roommate",
+      "label": "Roommate",
+      "ipa": "/ˈruːmˌmeɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:15764"
+    },
+    {
+      "kind": "card",
+      "id": "resident-advisor",
+      "label": "Resident Advisor",
+      "ipa": "/ˈrɛzɪdənt ədˈvaɪzər/",
+      "cefr": "C1",
+      "imageNodeId": "467:15768"
+    },
+    {
+      "kind": "card",
+      "id": "common-room",
+      "label": "Common Room",
+      "ipa": "/ˈkɒmən ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "467:15772"
+    },
+    {
+      "kind": "card",
+      "id": "laundry-room",
+      "label": "Laundry Room",
+      "ipa": "/ˈlɔːndri ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "467:15776"
+    },
+    {
+      "kind": "card",
+      "id": "meal-plan",
+      "label": "Meal Plan",
+      "ipa": "/miːl plæn/",
+      "cefr": "C1",
+      "imageNodeId": "467:15780"
+    },
+    {
+      "kind": "card",
+      "id": "dorm-key",
+      "label": "Dorm Key",
+      "ipa": "/dɔːrm kiː/",
+      "cefr": "C1",
+      "imageNodeId": "467:15784"
+    },
+    {
+      "kind": "card",
+      "id": "move-in",
+      "label": "Move-In",
+      "ipa": "/muːv ɪn/",
+      "cefr": "C1",
+      "imageNodeId": "467:15788"
+    },
+    {
+      "kind": "card",
+      "id": "move-out",
+      "label": "Move-Out",
+      "ipa": "/muːv aʊt/",
+      "cefr": "C1",
+      "imageNodeId": "467:15792"
+    },
+    {
+      "kind": "card",
+      "id": "off-campus-housing",
+      "label": "Off-Campus Housing",
+      "ipa": "/ɒf ˈkæmpəs ˈhaʊzɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:15796"
+    },
+    {
+      "kind": "card",
+      "id": "club",
+      "label": "Club",
+      "ipa": "/klʌb/",
+      "cefr": "B2",
+      "imageNodeId": "467:15805"
+    },
+    {
+      "kind": "card",
+      "id": "organization",
+      "label": "Organization",
+      "ipa": "/ˌɔːrɡənɪˈzeɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:15809"
+    },
+    {
+      "kind": "card",
+      "id": "fraternity",
+      "label": "Fraternity",
+      "ipa": "/frəˈtɜːrnɪti/",
+      "cefr": "C1",
+      "imageNodeId": "467:15813"
+    },
+    {
+      "kind": "card",
+      "id": "sorority",
+      "label": "Sorority",
+      "ipa": "/sɔːˈrɒrɪti/",
+      "cefr": "B2",
+      "imageNodeId": "467:15817"
+    },
+    {
+      "kind": "card",
+      "id": "student-government",
+      "label": "Student Government",
+      "ipa": "/ˈstjuːdənt ˈɡʌvərnmənt/",
+      "cefr": "C1",
+      "imageNodeId": "467:15821"
+    },
+    {
+      "kind": "card",
+      "id": "newspaper",
+      "label": "Newspaper",
+      "ipa": "/ˈnjuːzˌpeɪpər/",
+      "cefr": "B2",
+      "imageNodeId": "467:15825"
+    },
+    {
+      "kind": "card",
+      "id": "radio-station",
+      "label": "Radio Station",
+      "ipa": "/ˈreɪdioʊ ˈsteɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:15829"
+    },
+    {
+      "kind": "card",
+      "id": "volunteer",
+      "label": "Volunteer",
+      "ipa": "/ˌvɒlənˈtɪər/",
+      "cefr": "B2",
+      "imageNodeId": "467:15833"
+    },
+    {
+      "kind": "card",
+      "id": "intramural-sports",
+      "label": "Intramural Sports",
+      "ipa": "/ˌɪntrəˈmjʊərəl spɔːrts/",
+      "cefr": "C1",
+      "imageNodeId": "467:15837"
+    },
+    {
+      "kind": "card",
+      "id": "drama-club",
+      "label": "Drama Club",
+      "ipa": "/ˈdrɑːmə klʌb/",
+      "cefr": "C1",
+      "imageNodeId": "467:15841"
+    },
+    {
+      "kind": "card",
+      "id": "party",
+      "label": "Party",
+      "ipa": "/ˈpɑːrti/",
+      "cefr": "B2",
+      "imageNodeId": "467:15850"
+    },
+    {
+      "kind": "card",
+      "id": "concert",
+      "label": "Concert",
+      "ipa": "/ˈkɒnsərt/",
+      "cefr": "B2",
+      "imageNodeId": "467:15854"
+    },
+    {
+      "kind": "card",
+      "id": "game-day",
+      "label": "Game Day",
+      "ipa": "/ɡeɪm deɪ/",
+      "cefr": "C1",
+      "imageNodeId": "467:15858"
+    },
+    {
+      "kind": "card",
+      "id": "tailgate",
+      "label": "Tailgate",
+      "ipa": "/ˈteɪlˌɡeɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:15862"
+    },
+    {
+      "kind": "card",
+      "id": "study-date",
+      "label": "Study Date",
+      "ipa": "/ˈstʌdi deɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:15866"
+    },
+    {
+      "kind": "card",
+      "id": "coffee-shop",
+      "label": "Coffee Shop",
+      "ipa": "/ˈkɒfi ʃɒp/",
+      "cefr": "C1",
+      "imageNodeId": "467:15870"
+    },
+    {
+      "kind": "card",
+      "id": "food-court",
+      "label": "Food Court",
+      "ipa": "/fuːd kɔːrt/",
+      "cefr": "C1",
+      "imageNodeId": "467:15874"
+    },
+    {
+      "kind": "card",
+      "id": "movie-night",
+      "label": "Movie Night",
+      "ipa": "/ˈmuːvi naɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:15878"
+    },
+    {
+      "kind": "card",
+      "id": "road-trip",
+      "label": "Road Trip",
+      "ipa": "/roʊd trɪp/",
+      "cefr": "C1",
+      "imageNodeId": "467:15882"
+    },
+    {
+      "kind": "card",
+      "id": "spring-formal",
+      "label": "Spring Formal",
+      "ipa": "/sprɪŋ ˈfɔːrməl/",
+      "cefr": "C1",
+      "imageNodeId": "467:15886"
+    },
+    {
+      "kind": "card",
+      "id": "tuition",
+      "label": "Tuition",
+      "ipa": "/tjuːˈɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "467:15895"
+    },
+    {
+      "kind": "card",
+      "id": "scholarship",
+      "label": "Scholarship",
+      "ipa": "/ˈskɒlərˌʃɪp/",
+      "cefr": "C1",
+      "imageNodeId": "467:15899"
+    },
+    {
+      "kind": "card",
+      "id": "financial-aid",
+      "label": "Financial Aid",
+      "ipa": "/faɪˈnænʃəl eɪd/",
+      "cefr": "C1",
+      "imageNodeId": "467:15903"
+    },
+    {
+      "kind": "card",
+      "id": "student-loan",
+      "label": "Student Loan",
+      "ipa": "/ˈstjuːdənt loʊn/",
+      "cefr": "C1",
+      "imageNodeId": "467:15907"
+    },
+    {
+      "kind": "card",
+      "id": "work-study",
+      "label": "Work-Study",
+      "ipa": "/wɜːrk ˈstʌdi/",
+      "cefr": "C1",
+      "imageNodeId": "467:15911"
+    },
+    {
+      "kind": "card",
+      "id": "part-time-job",
+      "label": "Part-Time Job",
+      "ipa": "/pɑːrt taɪm dʒɒb/",
+      "cefr": "C1",
+      "imageNodeId": "467:15915"
+    },
+    {
+      "kind": "card",
+      "id": "budget",
+      "label": "Budget",
+      "ipa": "/ˈbʌdʒɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:15919"
+    },
+    {
+      "kind": "card",
+      "id": "textbook-cost",
+      "label": "Textbook Cost",
+      "ipa": "/ˈtɛkstˌbʊk kɒst/",
+      "cefr": "C1",
+      "imageNodeId": "467:15923"
+    },
+    {
+      "kind": "card",
+      "id": "student-discount",
+      "label": "Student Discount",
+      "ipa": "/ˈstjuːdənt ˈdɪskaʊnt/",
+      "cefr": "C1",
+      "imageNodeId": "467:15927"
+    },
+    {
+      "kind": "card",
+      "id": "grant",
+      "label": "Grant",
+      "ipa": "/ɡrænt/",
+      "cefr": "B2",
+      "imageNodeId": "467:15931"
+    }
+  ],
+  "materials": null
+}

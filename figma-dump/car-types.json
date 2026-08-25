@@ -1,0 +1,393 @@
+{
+  "unitId": "car-types",
+  "name": "Car Types",
+  "subtopics": [
+    {
+      "id": "passenger-cars",
+      "title": "Passenger Cars",
+      "wordIds": [
+        "sedan",
+        "hatchback",
+        "coupe",
+        "convertible",
+        "station-wagon",
+        "crossover",
+        "suv",
+        "minivan",
+        "sports-car",
+        "luxury-car"
+      ]
+    },
+    {
+      "id": "commercial-vehicles",
+      "title": "Commercial Vehicles",
+      "wordIds": [
+        "pickup-truck",
+        "van",
+        "box-truck",
+        "semi-truck",
+        "tow-truck",
+        "dump-truck",
+        "flatbed",
+        "tanker",
+        "delivery-van",
+        "food-truck"
+      ]
+    },
+    {
+      "id": "specialty-vehicles",
+      "title": "Specialty Vehicles",
+      "wordIds": [
+        "electric-car",
+        "hybrid",
+        "muscle-car",
+        "classic-car",
+        "race-car",
+        "off-road-vehicle",
+        "limousine",
+        "hearse",
+        "armored-car",
+        "golf-cart"
+      ]
+    },
+    {
+      "id": "two-wheelers",
+      "title": "Two-Wheelers",
+      "wordIds": [
+        "motorcycle",
+        "scooter",
+        "moped",
+        "dirt-bike",
+        "chopper",
+        "cruiser",
+        "sport-bike",
+        "touring-bike",
+        "electric-scooter",
+        "vespa"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "sedan",
+      "label": "Sedan",
+      "ipa": "/sɪˈdæn/",
+      "cefr": "B2",
+      "imageNodeId": "467:17497"
+    },
+    {
+      "kind": "card",
+      "id": "hatchback",
+      "label": "Hatchback",
+      "ipa": "/ˈhætʃˌbæk/",
+      "cefr": "B2",
+      "imageNodeId": "467:17501"
+    },
+    {
+      "kind": "card",
+      "id": "coupe",
+      "label": "Coupe",
+      "ipa": "/kuːˈpeɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:17505"
+    },
+    {
+      "kind": "card",
+      "id": "convertible",
+      "label": "Convertible",
+      "ipa": "/kənˈvɜːrtɪbəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:17509"
+    },
+    {
+      "kind": "card",
+      "id": "station-wagon",
+      "label": "Station Wagon",
+      "ipa": "/ˈsteɪʃən ˈwæɡən/",
+      "cefr": "C1",
+      "imageNodeId": "467:17513"
+    },
+    {
+      "kind": "card",
+      "id": "crossover",
+      "label": "Crossover",
+      "ipa": "/ˈkrɒsˌoʊvər/",
+      "cefr": "B2",
+      "imageNodeId": "467:17517"
+    },
+    {
+      "kind": "card",
+      "id": "suv",
+      "label": "SUV",
+      "ipa": "/ˌɛsjuːˈviː/",
+      "cefr": "B2",
+      "imageNodeId": "467:17521"
+    },
+    {
+      "kind": "card",
+      "id": "minivan",
+      "label": "Minivan",
+      "ipa": "/ˈmɪniˌvæn/",
+      "cefr": "B2",
+      "imageNodeId": "467:17525"
+    },
+    {
+      "kind": "card",
+      "id": "sports-car",
+      "label": "Sports Car",
+      "ipa": "/spɔːrts kɑːr/",
+      "cefr": "C1",
+      "imageNodeId": "467:17529"
+    },
+    {
+      "kind": "card",
+      "id": "luxury-car",
+      "label": "Luxury Car",
+      "ipa": "/ˈlʌkʃəri kɑːr/",
+      "cefr": "C1",
+      "imageNodeId": "467:17533"
+    },
+    {
+      "kind": "card",
+      "id": "pickup-truck",
+      "label": "Pickup Truck",
+      "ipa": "/ˈpɪkʌp trʌk/",
+      "cefr": "C1",
+      "imageNodeId": "467:17542"
+    },
+    {
+      "kind": "card",
+      "id": "van",
+      "label": "Van",
+      "ipa": "/væn/",
+      "cefr": "B2",
+      "imageNodeId": "467:17546"
+    },
+    {
+      "kind": "card",
+      "id": "box-truck",
+      "label": "Box Truck",
+      "ipa": "/bɒks trʌk/",
+      "cefr": "C1",
+      "imageNodeId": "467:17550"
+    },
+    {
+      "kind": "card",
+      "id": "semi-truck",
+      "label": "Semi-Truck",
+      "ipa": "/ˈsɛmi trʌk/",
+      "cefr": "C1",
+      "imageNodeId": "467:17554"
+    },
+    {
+      "kind": "card",
+      "id": "tow-truck",
+      "label": "Tow Truck",
+      "ipa": "/toʊ trʌk/",
+      "cefr": "C1",
+      "imageNodeId": "467:17558"
+    },
+    {
+      "kind": "card",
+      "id": "dump-truck",
+      "label": "Dump Truck",
+      "ipa": "/dʌmp trʌk/",
+      "cefr": "C1",
+      "imageNodeId": "467:17562"
+    },
+    {
+      "kind": "card",
+      "id": "flatbed",
+      "label": "Flatbed",
+      "ipa": "/ˈflætˌbɛd/",
+      "cefr": "B2",
+      "imageNodeId": "467:17566"
+    },
+    {
+      "kind": "card",
+      "id": "tanker",
+      "label": "Tanker",
+      "ipa": "/ˈtæŋkər/",
+      "cefr": "B2",
+      "imageNodeId": "467:17570"
+    },
+    {
+      "kind": "card",
+      "id": "delivery-van",
+      "label": "Delivery Van",
+      "ipa": "/dɪˈlɪvəri væn/",
+      "cefr": "C1",
+      "imageNodeId": "467:17574"
+    },
+    {
+      "kind": "card",
+      "id": "food-truck",
+      "label": "Food Truck",
+      "ipa": "/fuːd trʌk/",
+      "cefr": "C1",
+      "imageNodeId": "467:17578"
+    },
+    {
+      "kind": "card",
+      "id": "electric-car",
+      "label": "Electric Car",
+      "ipa": "/ɪˈlɛktrɪk kɑːr/",
+      "cefr": "C1",
+      "imageNodeId": "467:17587"
+    },
+    {
+      "kind": "card",
+      "id": "hybrid",
+      "label": "Hybrid",
+      "ipa": "/ˈhaɪbrɪd/",
+      "cefr": "B2",
+      "imageNodeId": "467:17591"
+    },
+    {
+      "kind": "card",
+      "id": "muscle-car",
+      "label": "Muscle Car",
+      "ipa": "/ˈmʌsəl kɑːr/",
+      "cefr": "C1",
+      "imageNodeId": "467:17595"
+    },
+    {
+      "kind": "card",
+      "id": "classic-car",
+      "label": "Classic Car",
+      "ipa": "/ˈklæsɪk kɑːr/",
+      "cefr": "C1",
+      "imageNodeId": "467:17599"
+    },
+    {
+      "kind": "card",
+      "id": "race-car",
+      "label": "Race Car",
+      "ipa": "/reɪs kɑːr/",
+      "cefr": "C1",
+      "imageNodeId": "467:17603"
+    },
+    {
+      "kind": "card",
+      "id": "off-road-vehicle",
+      "label": "Off-Road Vehicle",
+      "ipa": "/ɒf roʊd ˈviːɪkəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:17607"
+    },
+    {
+      "kind": "card",
+      "id": "limousine",
+      "label": "Limousine",
+      "ipa": "/ˈlɪməˌziːn/",
+      "cefr": "B2",
+      "imageNodeId": "467:17611"
+    },
+    {
+      "kind": "card",
+      "id": "hearse",
+      "label": "Hearse",
+      "ipa": "/hɜːrs/",
+      "cefr": "B2",
+      "imageNodeId": "467:17615"
+    },
+    {
+      "kind": "card",
+      "id": "armored-car",
+      "label": "Armored Car",
+      "ipa": "/ˈɑːrmərd kɑːr/",
+      "cefr": "C1",
+      "imageNodeId": "467:17619"
+    },
+    {
+      "kind": "card",
+      "id": "golf-cart",
+      "label": "Golf Cart",
+      "ipa": "/ɡɒlf kɑːrt/",
+      "cefr": "C1",
+      "imageNodeId": "467:17623"
+    },
+    {
+      "kind": "card",
+      "id": "motorcycle",
+      "label": "Motorcycle",
+      "ipa": "/ˈmoʊtərˌsaɪkəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:17632"
+    },
+    {
+      "kind": "card",
+      "id": "scooter",
+      "label": "Scooter",
+      "ipa": "/ˈskuːtər/",
+      "cefr": "B2",
+      "imageNodeId": "467:17636"
+    },
+    {
+      "kind": "card",
+      "id": "moped",
+      "label": "Moped",
+      "ipa": "/ˈmoʊˌpɛd/",
+      "cefr": "B2",
+      "imageNodeId": "467:17640"
+    },
+    {
+      "kind": "card",
+      "id": "dirt-bike",
+      "label": "Dirt Bike",
+      "ipa": "/dɜːrt baɪk/",
+      "cefr": "C1",
+      "imageNodeId": "467:17644"
+    },
+    {
+      "kind": "card",
+      "id": "chopper",
+      "label": "Chopper",
+      "ipa": "/ˈtʃɒpər/",
+      "cefr": "B2",
+      "imageNodeId": "467:17648"
+    },
+    {
+      "kind": "card",
+      "id": "cruiser",
+      "label": "Cruiser",
+      "ipa": "/ˈkruːzər/",
+      "cefr": "B2",
+      "imageNodeId": "467:17652"
+    },
+    {
+      "kind": "card",
+      "id": "sport-bike",
+      "label": "Sport Bike",
+      "ipa": "/spɔːrt baɪk/",
+      "cefr": "C1",
+      "imageNodeId": "467:17656"
+    },
+    {
+      "kind": "card",
+      "id": "touring-bike",
+      "label": "Touring Bike",
+      "ipa": "/ˈtʊərɪŋ baɪk/",
+      "cefr": "C1",
+      "imageNodeId": "467:17660"
+    },
+    {
+      "kind": "card",
+      "id": "electric-scooter",
+      "label": "Electric Scooter",
+      "ipa": "/ɪˈlɛktrɪk ˈskuːtər/",
+      "cefr": "C1",
+      "imageNodeId": "467:17664"
+    },
+    {
+      "kind": "card",
+      "id": "vespa",
+      "label": "Vespa",
+      "ipa": "/ˈvɛspə/",
+      "cefr": "B2",
+      "imageNodeId": "467:17668"
+    }
+  ],
+  "materials": null
+}

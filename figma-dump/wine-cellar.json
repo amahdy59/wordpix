@@ -1,0 +1,393 @@
+{
+  "unitId": "wine-cellar",
+  "name": "The Wine Cellar",
+  "subtopics": [
+    {
+      "id": "cellar-features",
+      "title": "Cellar Features",
+      "wordIds": [
+        "wine-rack",
+        "temperature-control",
+        "humidity-control",
+        "stone-wall",
+        "cellar-door",
+        "tasting-table",
+        "dim-lighting",
+        "ventilation",
+        "insulation",
+        "wine-fridge"
+      ]
+    },
+    {
+      "id": "storage",
+      "title": "Storage",
+      "wordIds": [
+        "horizontal-storage",
+        "bottle",
+        "cork",
+        "capsule",
+        "label",
+        "vintage",
+        "bin-number",
+        "cellar-book",
+        "inventory",
+        "collection"
+      ]
+    },
+    {
+      "id": "wine-service",
+      "title": "Wine Service",
+      "wordIds": [
+        "decanter",
+        "wine-glass",
+        "corkscrew",
+        "wine-opener",
+        "aerator",
+        "wine-stopper",
+        "wine-pourer",
+        "champagne-flute",
+        "ice-bucket",
+        "wine-thermometer"
+      ]
+    },
+    {
+      "id": "wine-regions",
+      "title": "Wine Regions",
+      "wordIds": [
+        "bordeaux",
+        "burgundy",
+        "champagne",
+        "tuscany",
+        "napa-valley",
+        "rioja",
+        "barossa-valley",
+        "mendoza",
+        "douro-valley",
+        "mosel"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "wine-rack",
+      "label": "Wine Rack",
+      "ipa": "/waɪn ræk/",
+      "cefr": "C1",
+      "imageNodeId": "467:17309"
+    },
+    {
+      "kind": "card",
+      "id": "temperature-control",
+      "label": "Temperature Control",
+      "ipa": "/ˈtɛmpərətʃər kənˈtroʊl/",
+      "cefr": "C1",
+      "imageNodeId": "467:17313"
+    },
+    {
+      "kind": "card",
+      "id": "humidity-control",
+      "label": "Humidity Control",
+      "ipa": "/hjuːˈmɪdɪti kənˈtroʊl/",
+      "cefr": "C1",
+      "imageNodeId": "467:17317"
+    },
+    {
+      "kind": "card",
+      "id": "stone-wall",
+      "label": "Stone Wall",
+      "ipa": "/stoʊn wɔːl/",
+      "cefr": "C1",
+      "imageNodeId": "467:17321"
+    },
+    {
+      "kind": "card",
+      "id": "cellar-door",
+      "label": "Cellar Door",
+      "ipa": "/ˈsɛlər dɔːr/",
+      "cefr": "C1",
+      "imageNodeId": "467:17325"
+    },
+    {
+      "kind": "card",
+      "id": "tasting-table",
+      "label": "Tasting Table",
+      "ipa": "/ˈteɪstɪŋ ˈteɪbəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:17329"
+    },
+    {
+      "kind": "card",
+      "id": "dim-lighting",
+      "label": "Dim Lighting",
+      "ipa": "/dɪm ˈlaɪtɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:17333"
+    },
+    {
+      "kind": "card",
+      "id": "ventilation",
+      "label": "Ventilation",
+      "ipa": "/ˌvɛntɪˈleɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:17337"
+    },
+    {
+      "kind": "card",
+      "id": "insulation",
+      "label": "Insulation",
+      "ipa": "/ˌɪnsjʊˈleɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:17341"
+    },
+    {
+      "kind": "card",
+      "id": "wine-fridge",
+      "label": "Wine Fridge",
+      "ipa": "/waɪn frɪdʒ/",
+      "cefr": "C1",
+      "imageNodeId": "467:17345"
+    },
+    {
+      "kind": "card",
+      "id": "horizontal-storage",
+      "label": "Horizontal Storage",
+      "ipa": "/ˌhɒrɪˈzɒntəl ˈstɔːrɪdʒ/",
+      "cefr": "C1",
+      "imageNodeId": "467:17354"
+    },
+    {
+      "kind": "card",
+      "id": "bottle",
+      "label": "Bottle",
+      "ipa": "/ˈbɒtəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:17358"
+    },
+    {
+      "kind": "card",
+      "id": "cork",
+      "label": "Cork",
+      "ipa": "/kɔːrk/",
+      "cefr": "B2",
+      "imageNodeId": "467:17362"
+    },
+    {
+      "kind": "card",
+      "id": "capsule",
+      "label": "Capsule",
+      "ipa": "/ˈkæpsjuːl/",
+      "cefr": "B2",
+      "imageNodeId": "467:17366"
+    },
+    {
+      "kind": "card",
+      "id": "label",
+      "label": "Label",
+      "ipa": "/ˈleɪbəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:17370"
+    },
+    {
+      "kind": "card",
+      "id": "vintage",
+      "label": "Vintage",
+      "ipa": "/ˈvɪntɪdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "467:17374"
+    },
+    {
+      "kind": "card",
+      "id": "bin-number",
+      "label": "Bin Number",
+      "ipa": "/bɪn ˈnʌmbər/",
+      "cefr": "C1",
+      "imageNodeId": "467:17378"
+    },
+    {
+      "kind": "card",
+      "id": "cellar-book",
+      "label": "Cellar Book",
+      "ipa": "/ˈsɛlər bʊk/",
+      "cefr": "C1",
+      "imageNodeId": "467:17382"
+    },
+    {
+      "kind": "card",
+      "id": "inventory",
+      "label": "Inventory",
+      "ipa": "/ˈɪnvənˌtɔːri/",
+      "cefr": "B2",
+      "imageNodeId": "467:17386"
+    },
+    {
+      "kind": "card",
+      "id": "collection",
+      "label": "Collection",
+      "ipa": "/kəˈlɛkʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:17390"
+    },
+    {
+      "kind": "card",
+      "id": "decanter",
+      "label": "Decanter",
+      "ipa": "/dɪˈkæntər/",
+      "cefr": "B2",
+      "imageNodeId": "467:17399"
+    },
+    {
+      "kind": "card",
+      "id": "wine-glass",
+      "label": "Wine Glass",
+      "ipa": "/waɪn ɡlæs/",
+      "cefr": "C1",
+      "imageNodeId": "467:17403"
+    },
+    {
+      "kind": "card",
+      "id": "corkscrew",
+      "label": "Corkscrew",
+      "ipa": "/ˈkɔːrkˌskruː/",
+      "cefr": "B2",
+      "imageNodeId": "467:17407"
+    },
+    {
+      "kind": "card",
+      "id": "wine-opener",
+      "label": "Wine Opener",
+      "ipa": "/waɪn ˈoʊpənər/",
+      "cefr": "C1",
+      "imageNodeId": "467:17411"
+    },
+    {
+      "kind": "card",
+      "id": "aerator",
+      "label": "Aerator",
+      "ipa": "/ˈɛəreɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "467:17415"
+    },
+    {
+      "kind": "card",
+      "id": "wine-stopper",
+      "label": "Wine Stopper",
+      "ipa": "/waɪn ˈstɒpər/",
+      "cefr": "C1",
+      "imageNodeId": "467:17419"
+    },
+    {
+      "kind": "card",
+      "id": "wine-pourer",
+      "label": "Wine Pourer",
+      "ipa": "/waɪn ˈpɔːrər/",
+      "cefr": "C1",
+      "imageNodeId": "467:17423"
+    },
+    {
+      "kind": "card",
+      "id": "champagne-flute",
+      "label": "Champagne Flute",
+      "ipa": "/ʃæmˈpeɪn fluːt/",
+      "cefr": "C1",
+      "imageNodeId": "467:17427"
+    },
+    {
+      "kind": "card",
+      "id": "ice-bucket",
+      "label": "Ice Bucket",
+      "ipa": "/aɪs ˈbʌkɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:17431"
+    },
+    {
+      "kind": "card",
+      "id": "wine-thermometer",
+      "label": "Wine Thermometer",
+      "ipa": "/waɪn θərˈmɒmɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "467:17435"
+    },
+    {
+      "kind": "card",
+      "id": "bordeaux",
+      "label": "Bordeaux",
+      "ipa": "/bɔːrˈdoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:17444"
+    },
+    {
+      "kind": "card",
+      "id": "burgundy",
+      "label": "Burgundy",
+      "ipa": "/ˈbɜːrɡəndi/",
+      "cefr": "B2",
+      "imageNodeId": "467:17448"
+    },
+    {
+      "kind": "card",
+      "id": "champagne",
+      "label": "Champagne",
+      "ipa": "/ʃæmˈpeɪn/",
+      "cefr": "B2",
+      "imageNodeId": "467:17452"
+    },
+    {
+      "kind": "card",
+      "id": "tuscany",
+      "label": "Tuscany",
+      "ipa": "/ˈtʌskəni/",
+      "cefr": "B2",
+      "imageNodeId": "467:17456"
+    },
+    {
+      "kind": "card",
+      "id": "napa-valley",
+      "label": "Napa Valley",
+      "ipa": "/ˈnæpə ˈvæli/",
+      "cefr": "C1",
+      "imageNodeId": "467:17460"
+    },
+    {
+      "kind": "card",
+      "id": "rioja",
+      "label": "Rioja",
+      "ipa": "/riˈoʊhɑː/",
+      "cefr": "B2",
+      "imageNodeId": "467:17464"
+    },
+    {
+      "kind": "card",
+      "id": "barossa-valley",
+      "label": "Barossa Valley",
+      "ipa": "/bəˈrɒsə ˈvæli/",
+      "cefr": "C1",
+      "imageNodeId": "467:17468"
+    },
+    {
+      "kind": "card",
+      "id": "mendoza",
+      "label": "Mendoza",
+      "ipa": "/mɛnˈdoʊzə/",
+      "cefr": "B2",
+      "imageNodeId": "467:17472"
+    },
+    {
+      "kind": "card",
+      "id": "douro-valley",
+      "label": "Douro Valley",
+      "ipa": "/ˈdɔːroʊ ˈvæli/",
+      "cefr": "C1",
+      "imageNodeId": "467:17476"
+    },
+    {
+      "kind": "card",
+      "id": "mosel",
+      "label": "Mosel",
+      "ipa": "/ˈmoʊzəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:17480"
+    }
+  ],
+  "materials": null
+}

@@ -1,0 +1,489 @@
+{
+  "unitId": "facial-expressions",
+  "name": "Facial Expressions",
+  "subtopics": [
+    {
+      "id": "happy-expressions",
+      "title": "Happy Expressions",
+      "wordIds": [
+        "smile",
+        "grin",
+        "beam",
+        "smirk",
+        "laugh",
+        "giggle",
+        "chuckle",
+        "wink",
+        "twinkle",
+        "dimple"
+      ]
+    },
+    {
+      "id": "sad-expressions",
+      "title": "Sad Expressions",
+      "wordIds": [
+        "frown",
+        "pout",
+        "tear",
+        "cry",
+        "sob",
+        "whimper",
+        "grimace",
+        "quiver",
+        "droop",
+        "gloom"
+      ]
+    },
+    {
+      "id": "angry-expressions",
+      "title": "Angry Expressions",
+      "wordIds": [
+        "scowl",
+        "glare",
+        "snarl",
+        "clench-jaw",
+        "furrow-brow",
+        "flare-nostrils",
+        "sneer",
+        "grit-teeth",
+        "stare",
+        "squint"
+      ]
+    },
+    {
+      "id": "surprise-fear",
+      "title": "Surprise & Fear",
+      "wordIds": [
+        "gasp",
+        "wide-eyes",
+        "dropped-jaw",
+        "raised-eyebrows",
+        "startle",
+        "pale-face",
+        "frozen",
+        "shudder",
+        "tremble",
+        "blink"
+      ]
+    },
+    {
+      "id": "other-expressions",
+      "title": "Other Expressions",
+      "wordIds": [
+        "yawn",
+        "blush",
+        "eye-roll",
+        "nod",
+        "shake-head",
+        "bite-lip",
+        "stick-out-tongue",
+        "raise-hand",
+        "shrug",
+        "thumbs-up"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "smile",
+      "label": "Smile",
+      "ipa": "/smaɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:9858"
+    },
+    {
+      "kind": "card",
+      "id": "grin",
+      "label": "Grin",
+      "ipa": "/ɡrɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:9862"
+    },
+    {
+      "kind": "card",
+      "id": "beam",
+      "label": "Beam",
+      "ipa": "/biːm/",
+      "cefr": "A2",
+      "imageNodeId": "467:9866"
+    },
+    {
+      "kind": "card",
+      "id": "smirk",
+      "label": "Smirk",
+      "ipa": "/smɜːrk/",
+      "cefr": "A2",
+      "imageNodeId": "467:9870"
+    },
+    {
+      "kind": "card",
+      "id": "laugh",
+      "label": "Laugh",
+      "ipa": "/læf/",
+      "cefr": "A2",
+      "imageNodeId": "467:9874"
+    },
+    {
+      "kind": "card",
+      "id": "giggle",
+      "label": "Giggle",
+      "ipa": "/ˈɡɪɡəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:9878"
+    },
+    {
+      "kind": "card",
+      "id": "chuckle",
+      "label": "Chuckle",
+      "ipa": "/ˈtʃʌkəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:9882"
+    },
+    {
+      "kind": "card",
+      "id": "wink",
+      "label": "Wink",
+      "ipa": "/wɪŋk/",
+      "cefr": "A2",
+      "imageNodeId": "467:9886"
+    },
+    {
+      "kind": "card",
+      "id": "twinkle",
+      "label": "Twinkle",
+      "ipa": "/ˈtwɪŋkəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:9890"
+    },
+    {
+      "kind": "card",
+      "id": "dimple",
+      "label": "Dimple",
+      "ipa": "/ˈdɪmpəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:9894"
+    },
+    {
+      "kind": "card",
+      "id": "frown",
+      "label": "Frown",
+      "ipa": "/fraʊn/",
+      "cefr": "A2",
+      "imageNodeId": "467:9903"
+    },
+    {
+      "kind": "card",
+      "id": "pout",
+      "label": "Pout",
+      "ipa": "/paʊt/",
+      "cefr": "A2",
+      "imageNodeId": "467:9907"
+    },
+    {
+      "kind": "card",
+      "id": "tear",
+      "label": "Tear",
+      "ipa": "/tɪər/",
+      "cefr": "A2",
+      "imageNodeId": "467:9911"
+    },
+    {
+      "kind": "card",
+      "id": "cry",
+      "label": "Cry",
+      "ipa": "/kraɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:9915"
+    },
+    {
+      "kind": "card",
+      "id": "sob",
+      "label": "Sob",
+      "ipa": "/sɒb/",
+      "cefr": "A2",
+      "imageNodeId": "467:9919"
+    },
+    {
+      "kind": "card",
+      "id": "whimper",
+      "label": "Whimper",
+      "ipa": "/ˈwɪmpər/",
+      "cefr": "A2",
+      "imageNodeId": "467:9923"
+    },
+    {
+      "kind": "card",
+      "id": "grimace",
+      "label": "Grimace",
+      "ipa": "/ˈɡrɪməs/",
+      "cefr": "A2",
+      "imageNodeId": "467:9927"
+    },
+    {
+      "kind": "card",
+      "id": "quiver",
+      "label": "Quiver",
+      "ipa": "/ˈkwɪvər/",
+      "cefr": "A2",
+      "imageNodeId": "467:9931"
+    },
+    {
+      "kind": "card",
+      "id": "droop",
+      "label": "Droop",
+      "ipa": "/druːp/",
+      "cefr": "A2",
+      "imageNodeId": "467:9935"
+    },
+    {
+      "kind": "card",
+      "id": "gloom",
+      "label": "Gloom",
+      "ipa": "/ɡluːm/",
+      "cefr": "A2",
+      "imageNodeId": "467:9939"
+    },
+    {
+      "kind": "card",
+      "id": "scowl",
+      "label": "Scowl",
+      "ipa": "/skaʊl/",
+      "cefr": "A2",
+      "imageNodeId": "467:9948"
+    },
+    {
+      "kind": "card",
+      "id": "glare",
+      "label": "Glare",
+      "ipa": "/ɡlɛər/",
+      "cefr": "A2",
+      "imageNodeId": "467:9952"
+    },
+    {
+      "kind": "card",
+      "id": "snarl",
+      "label": "Snarl",
+      "ipa": "/snɑːrl/",
+      "cefr": "A2",
+      "imageNodeId": "467:9956"
+    },
+    {
+      "kind": "card",
+      "id": "clench-jaw",
+      "label": "Clench Jaw",
+      "ipa": "/klɛntʃ dʒɔː/",
+      "cefr": "B1",
+      "imageNodeId": "467:9960"
+    },
+    {
+      "kind": "card",
+      "id": "furrow-brow",
+      "label": "Furrow Brow",
+      "ipa": "/ˈfʌroʊ braʊ/",
+      "cefr": "B1",
+      "imageNodeId": "467:9964"
+    },
+    {
+      "kind": "card",
+      "id": "flare-nostrils",
+      "label": "Flare Nostrils",
+      "ipa": "/flɛər ˈnɒstrɪlz/",
+      "cefr": "B1",
+      "imageNodeId": "467:9968"
+    },
+    {
+      "kind": "card",
+      "id": "sneer",
+      "label": "Sneer",
+      "ipa": "/snɪər/",
+      "cefr": "A2",
+      "imageNodeId": "467:9972"
+    },
+    {
+      "kind": "card",
+      "id": "grit-teeth",
+      "label": "Grit Teeth",
+      "ipa": "/ɡrɪt tiːθ/",
+      "cefr": "B1",
+      "imageNodeId": "467:9976"
+    },
+    {
+      "kind": "card",
+      "id": "stare",
+      "label": "Stare",
+      "ipa": "/stɛər/",
+      "cefr": "A2",
+      "imageNodeId": "467:9980"
+    },
+    {
+      "kind": "card",
+      "id": "squint",
+      "label": "Squint",
+      "ipa": "/skwɪnt/",
+      "cefr": "A2",
+      "imageNodeId": "467:9984"
+    },
+    {
+      "kind": "card",
+      "id": "gasp",
+      "label": "Gasp",
+      "ipa": "/ɡæsp/",
+      "cefr": "A2",
+      "imageNodeId": "467:9993"
+    },
+    {
+      "kind": "card",
+      "id": "wide-eyes",
+      "label": "Wide Eyes",
+      "ipa": "/waɪd aɪz/",
+      "cefr": "B1",
+      "imageNodeId": "467:9997"
+    },
+    {
+      "kind": "card",
+      "id": "dropped-jaw",
+      "label": "Dropped Jaw",
+      "ipa": "/drɒpt dʒɔː/",
+      "cefr": "B1",
+      "imageNodeId": "467:10001"
+    },
+    {
+      "kind": "card",
+      "id": "raised-eyebrows",
+      "label": "Raised Eyebrows",
+      "ipa": "/reɪzd ˈaɪˌbraʊz/",
+      "cefr": "B2",
+      "imageNodeId": "467:10005"
+    },
+    {
+      "kind": "card",
+      "id": "startle",
+      "label": "Startle",
+      "ipa": "/ˈstɑːrtəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:10009"
+    },
+    {
+      "kind": "card",
+      "id": "pale-face",
+      "label": "Pale Face",
+      "ipa": "/peɪl feɪs/",
+      "cefr": "B1",
+      "imageNodeId": "467:10013"
+    },
+    {
+      "kind": "card",
+      "id": "frozen",
+      "label": "Frozen",
+      "ipa": "/ˈfroʊzən/",
+      "cefr": "A2",
+      "imageNodeId": "467:10017"
+    },
+    {
+      "kind": "card",
+      "id": "shudder",
+      "label": "Shudder",
+      "ipa": "/ˈʃʌdər/",
+      "cefr": "A2",
+      "imageNodeId": "467:10021"
+    },
+    {
+      "kind": "card",
+      "id": "tremble",
+      "label": "Tremble",
+      "ipa": "/ˈtrɛmbəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:10025"
+    },
+    {
+      "kind": "card",
+      "id": "blink",
+      "label": "Blink",
+      "ipa": "/blɪŋk/",
+      "cefr": "A2",
+      "imageNodeId": "467:10029"
+    },
+    {
+      "kind": "card",
+      "id": "yawn",
+      "label": "Yawn",
+      "ipa": "/jɔːn/",
+      "cefr": "A2",
+      "imageNodeId": "467:10038"
+    },
+    {
+      "kind": "card",
+      "id": "blush",
+      "label": "Blush",
+      "ipa": "/blʌʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10042"
+    },
+    {
+      "kind": "card",
+      "id": "eye-roll",
+      "label": "Eye Roll",
+      "ipa": "/aɪ roʊl/",
+      "cefr": "B1",
+      "imageNodeId": "467:10046"
+    },
+    {
+      "kind": "card",
+      "id": "nod",
+      "label": "Nod",
+      "ipa": "/nɒd/",
+      "cefr": "A2",
+      "imageNodeId": "467:10050"
+    },
+    {
+      "kind": "card",
+      "id": "shake-head",
+      "label": "Shake Head",
+      "ipa": "/ʃeɪk hɛd/",
+      "cefr": "B1",
+      "imageNodeId": "467:10054"
+    },
+    {
+      "kind": "card",
+      "id": "bite-lip",
+      "label": "Bite Lip",
+      "ipa": "/baɪt lɪp/",
+      "cefr": "B1",
+      "imageNodeId": "467:10058"
+    },
+    {
+      "kind": "card",
+      "id": "stick-out-tongue",
+      "label": "Stick Out Tongue",
+      "ipa": "/stɪk aʊt tʌŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:10062"
+    },
+    {
+      "kind": "card",
+      "id": "raise-hand",
+      "label": "Raise Hand",
+      "ipa": "/reɪz hænd/",
+      "cefr": "B1",
+      "imageNodeId": "467:10066"
+    },
+    {
+      "kind": "card",
+      "id": "shrug",
+      "label": "Shrug",
+      "ipa": "/ʃrʌɡ/",
+      "cefr": "A2",
+      "imageNodeId": "467:10070"
+    },
+    {
+      "kind": "card",
+      "id": "thumbs-up",
+      "label": "Thumbs Up",
+      "ipa": "/θʌmz ʌp/",
+      "cefr": "B1",
+      "imageNodeId": "467:10074"
+    }
+  ],
+  "materials": null
+}
