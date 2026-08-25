@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { X, Sparkles } from "lucide-react";
+import { resolveAssetUrl } from "../../utils/assetUrl";
 
 interface ReleaseNotes {
   version: string;
@@ -11,7 +12,9 @@ export function ReleaseNotesCard() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    fetch("/release-notes.json")
+    // Root-absolute ignores the configured base, so this 404ed under
+    // /wordpix/ and every load logged a JSON parse error on the 404 body.
+    fetch(resolveAssetUrl("/release-notes.json"))
       .then((res) => res.json())
       .then((data: ReleaseNotes) => {
         setReleaseData(data);
@@ -33,7 +36,7 @@ export function ReleaseNotesCard() {
   return (
     <div className="bg-primary/10 border border-primary/20 rounded-2xl p-4 lg:p-5 shadow-wp-xs relative overflow-hidden mb-6">
       <div className="absolute top-0 end-0 p-2">
-        <button 
+        <button
           onClick={handleDismiss}
           className="text-primary hover:bg-primary/20 p-2 rounded-full transition-colors flex items-center justify-center min-w-[44px] min-h-[44px]"
           aria-label="Dismiss release notes"
@@ -45,7 +48,9 @@ export function ReleaseNotesCard() {
         <div className="bg-primary text-primary-foreground p-1.5 rounded-lg">
           <Sparkles className="size-4" />
         </div>
-        <h3 className="font-sans font-bold text-foreground text-lg">What's New in v{releaseData.version}</h3>
+        <h3 className="font-sans font-bold text-foreground text-lg">
+          What's New in v{releaseData.version}
+        </h3>
       </div>
       <ul className="flex flex-col gap-2">
         {releaseData.notes.slice(0, 3).map((note, index) => (
@@ -55,7 +60,7 @@ export function ReleaseNotesCard() {
           </li>
         ))}
       </ul>
-      <button 
+      <button
         onClick={handleDismiss}
         className="mt-4 bg-primary text-primary-foreground font-bold text-sm px-4 py-3 min-h-[44px] rounded-xl hover:opacity-90 transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary w-full sm:w-auto"
       >

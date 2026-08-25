@@ -11,9 +11,8 @@ import { useI18n } from "../context/I18nContext";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { PageContainer, Section, Card, Badge, ProgressBar } from "../shared";
 import { ReleaseNotesCard } from "./ReleaseNotesCard";
+import { LearnerAvatar } from "../shared/LearnerAvatar";
 import { staggerContainer, staggerItem } from "../shared/animations";
-
-const imgAvatar = "/images/core/learner-avatar.webp";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -62,12 +61,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-3.5">
           <div className="relative size-12 lg:size-14 shrink-0 rounded-full overflow-hidden border-2 border-primary/20 shadow-wp-xs">
-            <img
-              alt="WordPix learner profile"
-              className="absolute inset-0 object-cover size-full"
-              src={imgAvatar}
-              loading="eager"
-            />
+            <LearnerAvatar />
           </div>
           <div>
             <h1 className="font-sans font-black text-foreground text-xl lg:text-2xl leading-tight">
