@@ -1,0 +1,489 @@
+{
+  "unitId": "measurements-and-units",
+  "name": "Measurements & Units",
+  "subtopics": [
+    {
+      "id": "length",
+      "title": "Length",
+      "wordIds": [
+        "millimeter",
+        "centimeter",
+        "meter",
+        "kilometer",
+        "inch",
+        "foot",
+        "yard",
+        "mile",
+        "ruler",
+        "tape-measure"
+      ]
+    },
+    {
+      "id": "weight",
+      "title": "Weight",
+      "wordIds": [
+        "gram",
+        "kilogram",
+        "milligram",
+        "ton",
+        "ounce",
+        "pound",
+        "stone",
+        "scale",
+        "balance",
+        "heavy"
+      ]
+    },
+    {
+      "id": "volume",
+      "title": "Volume",
+      "wordIds": [
+        "milliliter",
+        "liter",
+        "gallon",
+        "quart",
+        "pint",
+        "cup",
+        "tablespoon",
+        "teaspoon",
+        "fluid-ounce",
+        "barrel"
+      ]
+    },
+    {
+      "id": "temperature",
+      "title": "Temperature",
+      "wordIds": [
+        "celsius",
+        "fahrenheit",
+        "kelvin",
+        "degree",
+        "boiling-point",
+        "freezing-point",
+        "body-temperature",
+        "room-temperature",
+        "thermometer",
+        "heat"
+      ]
+    },
+    {
+      "id": "time-speed",
+      "title": "Time & Speed",
+      "wordIds": [
+        "millisecond",
+        "second",
+        "minute",
+        "hour",
+        "day",
+        "speed",
+        "velocity",
+        "acceleration",
+        "distance",
+        "rate"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "millimeter",
+      "label": "Millimeter",
+      "ipa": "/ˈmɪlɪˌmiːtər/",
+      "cefr": "B1",
+      "imageNodeId": "467:8129"
+    },
+    {
+      "kind": "card",
+      "id": "centimeter",
+      "label": "Centimeter",
+      "ipa": "/ˈsɛntɪˌmiːtər/",
+      "cefr": "B1",
+      "imageNodeId": "467:8133"
+    },
+    {
+      "kind": "card",
+      "id": "meter",
+      "label": "Meter",
+      "ipa": "/ˈmiːtər/",
+      "cefr": "A2",
+      "imageNodeId": "467:8137"
+    },
+    {
+      "kind": "card",
+      "id": "kilometer",
+      "label": "Kilometer",
+      "ipa": "/ˈkɪləˌmiːtər/",
+      "cefr": "A2",
+      "imageNodeId": "467:8141"
+    },
+    {
+      "kind": "card",
+      "id": "inch",
+      "label": "Inch",
+      "ipa": "/ɪntʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:8145"
+    },
+    {
+      "kind": "card",
+      "id": "foot",
+      "label": "Foot",
+      "ipa": "/fʊt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8149"
+    },
+    {
+      "kind": "card",
+      "id": "yard",
+      "label": "Yard",
+      "ipa": "/jɑːrd/",
+      "cefr": "A2",
+      "imageNodeId": "467:8153"
+    },
+    {
+      "kind": "card",
+      "id": "mile",
+      "label": "Mile",
+      "ipa": "/maɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:8157"
+    },
+    {
+      "kind": "card",
+      "id": "ruler",
+      "label": "Ruler",
+      "ipa": "/ˈruːlər/",
+      "cefr": "A2",
+      "imageNodeId": "467:8161"
+    },
+    {
+      "kind": "card",
+      "id": "tape-measure",
+      "label": "Tape Measure",
+      "ipa": "/teɪp ˈmɛʒər/",
+      "cefr": "B1",
+      "imageNodeId": "467:8165"
+    },
+    {
+      "kind": "card",
+      "id": "gram",
+      "label": "Gram",
+      "ipa": "/ɡræm/",
+      "cefr": "A2",
+      "imageNodeId": "467:8174"
+    },
+    {
+      "kind": "card",
+      "id": "kilogram",
+      "label": "Kilogram",
+      "ipa": "/ˈkɪləˌɡræm/",
+      "cefr": "A2",
+      "imageNodeId": "467:8178"
+    },
+    {
+      "kind": "card",
+      "id": "milligram",
+      "label": "Milligram",
+      "ipa": "/ˈmɪlɪˌɡræm/",
+      "cefr": "A2",
+      "imageNodeId": "467:8182"
+    },
+    {
+      "kind": "card",
+      "id": "ton",
+      "label": "Ton",
+      "ipa": "/tʌn/",
+      "cefr": "A2",
+      "imageNodeId": "467:8186"
+    },
+    {
+      "kind": "card",
+      "id": "ounce",
+      "label": "Ounce",
+      "ipa": "/aʊns/",
+      "cefr": "A2",
+      "imageNodeId": "467:8190"
+    },
+    {
+      "kind": "card",
+      "id": "pound",
+      "label": "Pound",
+      "ipa": "/paʊnd/",
+      "cefr": "A2",
+      "imageNodeId": "467:8194"
+    },
+    {
+      "kind": "card",
+      "id": "stone",
+      "label": "Stone",
+      "ipa": "/stoʊn/",
+      "cefr": "A2",
+      "imageNodeId": "467:8198"
+    },
+    {
+      "kind": "card",
+      "id": "scale",
+      "label": "Scale",
+      "ipa": "/skeɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:8202"
+    },
+    {
+      "kind": "card",
+      "id": "balance",
+      "label": "Balance",
+      "ipa": "/ˈbæləns/",
+      "cefr": "A2",
+      "imageNodeId": "467:8206"
+    },
+    {
+      "kind": "card",
+      "id": "heavy",
+      "label": "Heavy",
+      "ipa": "/ˈhɛvi/",
+      "cefr": "A2",
+      "imageNodeId": "467:8210"
+    },
+    {
+      "kind": "card",
+      "id": "milliliter",
+      "label": "Milliliter",
+      "ipa": "/ˈmɪlɪˌliːtər/",
+      "cefr": "B1",
+      "imageNodeId": "467:8219"
+    },
+    {
+      "kind": "card",
+      "id": "liter",
+      "label": "Liter",
+      "ipa": "/ˈliːtər/",
+      "cefr": "A2",
+      "imageNodeId": "467:8223"
+    },
+    {
+      "kind": "card",
+      "id": "gallon",
+      "label": "Gallon",
+      "ipa": "/ˈɡælən/",
+      "cefr": "A2",
+      "imageNodeId": "467:8227"
+    },
+    {
+      "kind": "card",
+      "id": "quart",
+      "label": "Quart",
+      "ipa": "/kwɔːrt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8231"
+    },
+    {
+      "kind": "card",
+      "id": "pint",
+      "label": "Pint",
+      "ipa": "/paɪnt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8235"
+    },
+    {
+      "kind": "card",
+      "id": "cup",
+      "label": "Cup",
+      "ipa": "/kʌp/",
+      "cefr": "A2",
+      "imageNodeId": "467:8239"
+    },
+    {
+      "kind": "card",
+      "id": "tablespoon",
+      "label": "Tablespoon",
+      "ipa": "/ˈteɪbəlˌspuːn/",
+      "cefr": "B1",
+      "imageNodeId": "467:8243"
+    },
+    {
+      "kind": "card",
+      "id": "teaspoon",
+      "label": "Teaspoon",
+      "ipa": "/ˈtiːˌspuːn/",
+      "cefr": "A2",
+      "imageNodeId": "467:8247"
+    },
+    {
+      "kind": "card",
+      "id": "fluid-ounce",
+      "label": "Fluid Ounce",
+      "ipa": "/ˈfluːɪd aʊns/",
+      "cefr": "B1",
+      "imageNodeId": "467:8251"
+    },
+    {
+      "kind": "card",
+      "id": "barrel",
+      "label": "Barrel",
+      "ipa": "/ˈbærəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:8255"
+    },
+    {
+      "kind": "card",
+      "id": "celsius",
+      "label": "Celsius",
+      "ipa": "/ˈsɛlsiəs/",
+      "cefr": "A2",
+      "imageNodeId": "467:8264"
+    },
+    {
+      "kind": "card",
+      "id": "fahrenheit",
+      "label": "Fahrenheit",
+      "ipa": "/ˈfærənˌhaɪt/",
+      "cefr": "B1",
+      "imageNodeId": "467:8268"
+    },
+    {
+      "kind": "card",
+      "id": "kelvin",
+      "label": "Kelvin",
+      "ipa": "/ˈkɛlvɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:8272"
+    },
+    {
+      "kind": "card",
+      "id": "degree",
+      "label": "Degree",
+      "ipa": "/dɪˈɡriː/",
+      "cefr": "A2",
+      "imageNodeId": "467:8276"
+    },
+    {
+      "kind": "card",
+      "id": "boiling-point",
+      "label": "Boiling Point",
+      "ipa": "/ˈbɔɪlɪŋ pɔɪnt/",
+      "cefr": "B1",
+      "imageNodeId": "467:8280"
+    },
+    {
+      "kind": "card",
+      "id": "freezing-point",
+      "label": "Freezing Point",
+      "ipa": "/ˈfriːzɪŋ pɔɪnt/",
+      "cefr": "B1",
+      "imageNodeId": "467:8284"
+    },
+    {
+      "kind": "card",
+      "id": "body-temperature",
+      "label": "Body Temperature",
+      "ipa": "/ˈbɒdi ˈtɛmpərətʃər/",
+      "cefr": "B2",
+      "imageNodeId": "467:8288"
+    },
+    {
+      "kind": "card",
+      "id": "room-temperature",
+      "label": "Room Temperature",
+      "ipa": "/ruːm ˈtɛmpərətʃər/",
+      "cefr": "B2",
+      "imageNodeId": "467:8292"
+    },
+    {
+      "kind": "card",
+      "id": "thermometer",
+      "label": "Thermometer",
+      "ipa": "/θərˈmɒmɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "467:8296"
+    },
+    {
+      "kind": "card",
+      "id": "heat",
+      "label": "Heat",
+      "ipa": "/hiːt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8300"
+    },
+    {
+      "kind": "card",
+      "id": "millisecond",
+      "label": "Millisecond",
+      "ipa": "/ˈmɪlɪˌsɛkənd/",
+      "cefr": "B1",
+      "imageNodeId": "467:8309"
+    },
+    {
+      "kind": "card",
+      "id": "second",
+      "label": "Second",
+      "ipa": "/ˈsɛkənd/",
+      "cefr": "A2",
+      "imageNodeId": "467:8313"
+    },
+    {
+      "kind": "card",
+      "id": "minute",
+      "label": "Minute",
+      "ipa": "/ˈmɪnɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8317"
+    },
+    {
+      "kind": "card",
+      "id": "hour",
+      "label": "Hour",
+      "ipa": "/aʊər/",
+      "cefr": "A2",
+      "imageNodeId": "467:8321"
+    },
+    {
+      "kind": "card",
+      "id": "day",
+      "label": "Day",
+      "ipa": "/deɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:8325"
+    },
+    {
+      "kind": "card",
+      "id": "speed",
+      "label": "Speed",
+      "ipa": "/spiːd/",
+      "cefr": "A2",
+      "imageNodeId": "467:8329"
+    },
+    {
+      "kind": "card",
+      "id": "velocity",
+      "label": "Velocity",
+      "ipa": "/vɪˈlɒsɪti/",
+      "cefr": "A2",
+      "imageNodeId": "467:8333"
+    },
+    {
+      "kind": "card",
+      "id": "acceleration",
+      "label": "Acceleration",
+      "ipa": "/ækˌsɛləˈreɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "467:8337"
+    },
+    {
+      "kind": "card",
+      "id": "distance",
+      "label": "Distance",
+      "ipa": "/ˈdɪstəns/",
+      "cefr": "A2",
+      "imageNodeId": "467:8341"
+    },
+    {
+      "kind": "card",
+      "id": "rate",
+      "label": "Rate",
+      "ipa": "/reɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8345"
+    }
+  ],
+  "materials": null
+}

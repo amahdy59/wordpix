@@ -1,0 +1,1502 @@
+{
+  "unitId": "l6-train-station",
+  "name": "L6 Train Station",
+  "subtopics": [],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "passenger-train",
+      "label": "passenger train",
+      "ipa": "/ˈpæsɪndʒər treɪn/",
+      "cefr": "B2",
+      "imageNodeId": "52:3851"
+    },
+    {
+      "kind": "card",
+      "id": "freight-train",
+      "label": "freight train",
+      "ipa": "/freɪt treɪn/",
+      "cefr": "B1",
+      "imageNodeId": "52:3855"
+    },
+    {
+      "kind": "card",
+      "id": "high-speed-train",
+      "label": "high-speed train",
+      "ipa": "/haɪ spiːd treɪn/",
+      "cefr": "B2",
+      "imageNodeId": "52:3859"
+    },
+    {
+      "kind": "card",
+      "id": "subway",
+      "label": "subway",
+      "ipa": "/ˈsʌbˌweɪ/",
+      "cefr": "A2",
+      "imageNodeId": "52:3863"
+    },
+    {
+      "kind": "card",
+      "id": "locomotive",
+      "label": "locomotive",
+      "ipa": "/ˌloʊkəˈmoʊtɪv/",
+      "cefr": "B1",
+      "imageNodeId": "52:3867"
+    },
+    {
+      "kind": "card",
+      "id": "train-car",
+      "label": "train car",
+      "ipa": "/treɪn kɑːr/",
+      "cefr": "B1",
+      "imageNodeId": "52:3871"
+    },
+    {
+      "kind": "card",
+      "id": "dining-car",
+      "label": "dining car",
+      "ipa": "/ˈdaɪnɪŋ kɑːr/",
+      "cefr": "B1",
+      "imageNodeId": "52:3875"
+    },
+    {
+      "kind": "card",
+      "id": "sleeper-car",
+      "label": "sleeper car",
+      "ipa": "/ˈsliːpər kɑːr/",
+      "cefr": "B1",
+      "imageNodeId": "52:3879"
+    },
+    {
+      "kind": "card",
+      "id": "caboose",
+      "label": "caboose",
+      "ipa": "/kəˈbuːs/",
+      "cefr": "A2",
+      "imageNodeId": "52:3883"
+    },
+    {
+      "kind": "card",
+      "id": "monorail",
+      "label": "monorail",
+      "ipa": "/ˈmɒnəˌreɪl/",
+      "cefr": "A2",
+      "imageNodeId": "52:3887"
+    },
+    {
+      "kind": "card",
+      "id": "platform",
+      "label": "platform",
+      "ipa": "/ˈplætˌfɔːrm/",
+      "cefr": "A2",
+      "imageNodeId": "52:3896"
+    },
+    {
+      "kind": "card",
+      "id": "track",
+      "label": "track",
+      "ipa": "/træk/",
+      "cefr": "A2",
+      "imageNodeId": "52:3900"
+    },
+    {
+      "kind": "card",
+      "id": "ticket-office",
+      "label": "ticket office",
+      "ipa": "/ˈtɪkɪt ˈɒfɪs/",
+      "cefr": "B1",
+      "imageNodeId": "52:3904"
+    },
+    {
+      "kind": "card",
+      "id": "waiting-room",
+      "label": "waiting room",
+      "ipa": "/ˈweɪtɪŋ ruːm/",
+      "cefr": "B1",
+      "imageNodeId": "52:3908"
+    },
+    {
+      "kind": "card",
+      "id": "concourse",
+      "label": "concourse",
+      "ipa": "/ˈkɒŋkɔːrs/",
+      "cefr": "A2",
+      "imageNodeId": "52:3912"
+    },
+    {
+      "kind": "card",
+      "id": "information-desk",
+      "label": "information desk",
+      "ipa": "/ˌɪnfərˈmeɪʃən dɛsk/",
+      "cefr": "B2",
+      "imageNodeId": "52:3916"
+    },
+    {
+      "kind": "card",
+      "id": "newsstand",
+      "label": "newsstand",
+      "ipa": "/ˈnjuːzˌstænd/",
+      "cefr": "A2",
+      "imageNodeId": "52:3920"
+    },
+    {
+      "kind": "card",
+      "id": "vending-machine",
+      "label": "vending machine",
+      "ipa": "/ˈvɛndɪŋ məˈʃiːn/",
+      "cefr": "B2",
+      "imageNodeId": "52:3924"
+    },
+    {
+      "kind": "card",
+      "id": "restroom",
+      "label": "restroom",
+      "ipa": "/ˈrɛstruːm/",
+      "cefr": "A2",
+      "imageNodeId": "52:3928"
+    },
+    {
+      "kind": "card",
+      "id": "parking-garage",
+      "label": "parking garage",
+      "ipa": "/ˈpɑːrkɪŋ ɡəˈrɑːʒ/",
+      "cefr": "B1",
+      "imageNodeId": "52:3932"
+    },
+    {
+      "kind": "card",
+      "id": "taxi-stand",
+      "label": "taxi stand",
+      "ipa": "/ˈtæksi stænd/",
+      "cefr": "B1",
+      "imageNodeId": "52:3936"
+    },
+    {
+      "kind": "card",
+      "id": "bus-stop",
+      "label": "bus stop",
+      "ipa": "/bʌs stɒp/",
+      "cefr": "B1",
+      "imageNodeId": "52:3940"
+    },
+    {
+      "kind": "card",
+      "id": "ticket",
+      "label": "ticket",
+      "ipa": "/ˈtɪkɪt/",
+      "cefr": "A2",
+      "imageNodeId": "52:3949"
+    },
+    {
+      "kind": "card",
+      "id": "round-trip",
+      "label": "round trip",
+      "ipa": "/raʊnd trɪp/",
+      "cefr": "B1",
+      "imageNodeId": "52:3953"
+    },
+    {
+      "kind": "card",
+      "id": "one-way",
+      "label": "one-way",
+      "ipa": "/wʌn weɪ/",
+      "cefr": "B1",
+      "imageNodeId": "52:3957"
+    },
+    {
+      "kind": "card",
+      "id": "schedule",
+      "label": "schedule",
+      "ipa": "/ˈʃɛdjuːl/",
+      "cefr": "A2",
+      "imageNodeId": "52:3961"
+    },
+    {
+      "kind": "card",
+      "id": "timetable",
+      "label": "timetable",
+      "ipa": "/ˈtaɪmˌteɪbəl/",
+      "cefr": "A2",
+      "imageNodeId": "52:3965"
+    },
+    {
+      "kind": "card",
+      "id": "departure-board",
+      "label": "departure board",
+      "ipa": "/dɪˈpɑːrtʃər bɔːrd/",
+      "cefr": "B2",
+      "imageNodeId": "52:3969"
+    },
+    {
+      "kind": "card",
+      "id": "arrival-board",
+      "label": "arrival board",
+      "ipa": "/əˈraɪvəl bɔːrd/",
+      "cefr": "B1",
+      "imageNodeId": "52:3973"
+    },
+    {
+      "kind": "card",
+      "id": "reservation",
+      "label": "reservation",
+      "ipa": "/ˌrɛzərˈveɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "52:3977"
+    },
+    {
+      "kind": "card",
+      "id": "seat-number",
+      "label": "seat number",
+      "ipa": "/siːt ˈnʌmbər/",
+      "cefr": "B1",
+      "imageNodeId": "52:3981"
+    },
+    {
+      "kind": "card",
+      "id": "first-class",
+      "label": "first class",
+      "ipa": "/fɜːrst klæs/",
+      "cefr": "B1",
+      "imageNodeId": "52:3985"
+    },
+    {
+      "kind": "card",
+      "id": "economy-class",
+      "label": "economy class",
+      "ipa": "/ɪˈkɒnəmi klæs/",
+      "cefr": "B1",
+      "imageNodeId": "52:3989"
+    },
+    {
+      "kind": "card",
+      "id": "pass",
+      "label": "pass",
+      "ipa": "/pæs/",
+      "cefr": "A2",
+      "imageNodeId": "52:3993"
+    },
+    {
+      "kind": "card",
+      "id": "turnstile",
+      "label": "turnstile",
+      "ipa": "/ˈtɜːrnˌstaɪl/",
+      "cefr": "A2",
+      "imageNodeId": "52:4002"
+    },
+    {
+      "kind": "card",
+      "id": "signal",
+      "label": "signal",
+      "ipa": "/ˈsɪɡnəl/",
+      "cefr": "A2",
+      "imageNodeId": "52:4006"
+    },
+    {
+      "kind": "card",
+      "id": "crossing-gate",
+      "label": "crossing gate",
+      "ipa": "/ˈkrɒsɪŋ ɡeɪt/",
+      "cefr": "B1",
+      "imageNodeId": "52:4010"
+    },
+    {
+      "kind": "card",
+      "id": "bridge",
+      "label": "bridge",
+      "ipa": "/brɪdʒ/",
+      "cefr": "A2",
+      "imageNodeId": "52:4014"
+    },
+    {
+      "kind": "card",
+      "id": "tunnel",
+      "label": "tunnel",
+      "ipa": "/ˈtʌnəl/",
+      "cefr": "A2",
+      "imageNodeId": "52:4018"
+    },
+    {
+      "kind": "card",
+      "id": "overhead-wire",
+      "label": "overhead wire",
+      "ipa": "/ˌoʊvərˈhɛd waɪər/",
+      "cefr": "B1",
+      "imageNodeId": "52:4022"
+    },
+    {
+      "kind": "card",
+      "id": "rail",
+      "label": "rail",
+      "ipa": "/reɪl/",
+      "cefr": "A2",
+      "imageNodeId": "52:4026"
+    },
+    {
+      "kind": "card",
+      "id": "switch",
+      "label": "switch",
+      "ipa": "/swɪtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "52:4030"
+    },
+    {
+      "kind": "card",
+      "id": "buffer-stop",
+      "label": "buffer stop",
+      "ipa": "/ˈbʌfər stɒp/",
+      "cefr": "B1",
+      "imageNodeId": "52:4034"
+    },
+    {
+      "kind": "card",
+      "id": "clock-tower",
+      "label": "clock tower",
+      "ipa": "/klɒk ˈtaʊər/",
+      "cefr": "B1",
+      "imageNodeId": "52:4038"
+    },
+    {
+      "kind": "card",
+      "id": "conductor",
+      "label": "conductor",
+      "ipa": "/kənˈdʌktər/",
+      "cefr": "A2",
+      "imageNodeId": "52:4047"
+    },
+    {
+      "kind": "card",
+      "id": "engineer",
+      "label": "engineer",
+      "ipa": "/ˌɛndʒɪˈnɪər/",
+      "cefr": "A2",
+      "imageNodeId": "52:4051"
+    },
+    {
+      "kind": "card",
+      "id": "porter",
+      "label": "porter",
+      "ipa": "/ˈpɔːrtər/",
+      "cefr": "A2",
+      "imageNodeId": "52:4055"
+    },
+    {
+      "kind": "card",
+      "id": "commuter",
+      "label": "commuter",
+      "ipa": "/kəˈmjuːtər/",
+      "cefr": "A2",
+      "imageNodeId": "52:4059"
+    },
+    {
+      "kind": "card",
+      "id": "traveler",
+      "label": "traveler",
+      "ipa": "/ˈtrævələr/",
+      "cefr": "A2",
+      "imageNodeId": "52:4063"
+    },
+    {
+      "kind": "card",
+      "id": "boarding",
+      "label": "boarding",
+      "ipa": "/ˈbɔːrdɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "52:4067"
+    },
+    {
+      "kind": "card",
+      "id": "departing",
+      "label": "departing",
+      "ipa": "/dɪˈpɑːrtɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "52:4071"
+    },
+    {
+      "kind": "card",
+      "id": "arriving",
+      "label": "arriving",
+      "ipa": "/əˈraɪvɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "52:4075"
+    },
+    {
+      "kind": "card",
+      "id": "transferring",
+      "label": "transferring",
+      "ipa": "/trænsˈfɜːrɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "52:4079"
+    },
+    {
+      "kind": "card",
+      "id": "waiting",
+      "label": "waiting",
+      "ipa": "/ˈweɪtɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "52:4083"
+    },
+    {
+      "kind": "card",
+      "id": "announcing",
+      "label": "announcing",
+      "ipa": "/əˈnaʊnsɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "52:4087"
+    },
+    {
+      "kind": "card",
+      "id": "validating",
+      "label": "validating",
+      "ipa": "/ˈvælɪˌdeɪtɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "52:4091"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "547:558",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "547:560",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1 · Topic: The Train Station",
+          "depth": 1,
+          "name": "Level: B1 · Topic: The Train Station"
+        },
+        {
+          "text": "Catching the Train\n\nSara needed to travel from Manchester to London for a job interview. She decided to go by train because it was faster and more comfortable than the bus.\n\nShe bought her ticket online the night before — a return ticket, which is cheaper than buying two single tickets. She chose a specific departure time to get an off-peak fare, which costs less than a peak-time ticket.\n\nAt the station, Sara checked the departure board in the main hall. Her train was on Platform 3 and was on time. She walked through the ticket barrier by tapping her e-ticket on the reader.\n\nThe platform was busy. An announcement said: 'The ten fifteen service to London Euston is now approaching Platform 3. Please stand behind the yellow line.' Sara waited as the train pulled in and the doors opened.\n\nShe found a seat in Coach D, the quiet carriage, where passengers are asked not to use phones or play music. She put her bag on the luggage rack above her seat and sat down.\n\nThe conductor came through to check tickets. Sara showed him her e-ticket on her phone. He also reminded passengers about the next stop and the estimated arrival time.\n\nTwo hours later, the train arrived at London Euston. Sara followed the signs to the Underground and took the Tube to her interview. The whole journey had been smooth and stress-free.",
+          "depth": 1,
+          "name": "Catching the Train Sara needed to travel from Manchester to London for a job interview. She decided to go by train because it was faster and more comfortable than the bus. She bought her ticket online the night before — a return ticket, which is cheaper than buying two single tickets. She chose a specific departure time to get an off-peak fare, which costs less than a peak-time ticket. At the station, Sara checked the departure board in the main hall. Her train was on Platform 3 and was on time. She walked through the ticket barrier by tapping her e-ticket on the reader. The platform was busy. An announcement said: 'The ten fifteen service to London Euston is now approaching Platform 3. Please stand behind the yellow line.' Sara waited as the train pulled in and the doors opened. She found a seat in Coach D, the quiet carriage, where passengers are asked not to use phones or play music. She put her bag on the luggage rack above her seat and sat down. The conductor came through to check tickets. Sara showed him her e-ticket on her phone. He also reminded passengers about the next stop and the estimated arrival time. Two hours later, the train arrived at London Euston. Sara followed the signs to the Underground and took the Tube to her interview. The whole journey had been smooth and stress-free."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Why did Sara choose to travel by train?",
+          "depth": 1,
+          "name": "1. Why did Sara choose to travel by train?"
+        },
+        {
+          "text": "2. What is the advantage of a return ticket?",
+          "depth": 1,
+          "name": "2. What is the advantage of a return ticket?"
+        },
+        {
+          "text": "3. What is the difference between peak and off-peak fares?",
+          "depth": 1,
+          "name": "3. What is the difference between peak and off-peak fares?"
+        },
+        {
+          "text": "4. What are the rules in the quiet carriage?",
+          "depth": 1,
+          "name": "4. What are the rules in the quiet carriage?"
+        },
+        {
+          "text": "5. How did Sara continue her journey after arriving in London?",
+          "depth": 1,
+          "name": "5. How did Sara continue her journey after arriving in London?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "547:573",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "miss the train",
+          "depth": 2,
+          "name": "miss the train"
+        },
+        {
+          "text": "fail to catch the train; also: miss an opportunity",
+          "depth": 2,
+          "name": "fail to catch the train; also: miss an opportunity"
+        },
+        {
+          "text": "\"If you don't apply now, you'll miss the train.\"",
+          "depth": 2,
+          "name": "\"If you don't apply now, you'll miss the train.\""
+        },
+        {
+          "text": "on the right track",
+          "depth": 2,
+          "name": "on the right track"
+        },
+        {
+          "text": "going in the correct direction (literal or figurative)",
+          "depth": 2,
+          "name": "going in the correct direction (literal or figurative)"
+        },
+        {
+          "text": "\"Your English is improving — you're on the right track.\"",
+          "depth": 2,
+          "name": "\"Your English is improving — you're on the right track.\""
+        },
+        {
+          "text": "train of thought",
+          "depth": 2,
+          "name": "train of thought"
+        },
+        {
+          "text": "a connected sequence of ideas",
+          "depth": 2,
+          "name": "a connected sequence of ideas"
+        },
+        {
+          "text": "\"Sorry, I lost my train of thought. What was I saying?\"",
+          "depth": 2,
+          "name": "\"Sorry, I lost my train of thought. What was I saying?\""
+        },
+        {
+          "text": "get on / get off",
+          "depth": 2,
+          "name": "get on / get off"
+        },
+        {
+          "text": "board or leave a train, bus, etc.",
+          "depth": 2,
+          "name": "board or leave a train, bus, etc."
+        },
+        {
+          "text": "\"We got on at Manchester and got off at London.\"",
+          "depth": 2,
+          "name": "\"We got on at Manchester and got off at London.\""
+        },
+        {
+          "text": "pull in / pull out",
+          "depth": 2,
+          "name": "pull in / pull out"
+        },
+        {
+          "text": "(of a train) arrive at or leave a station",
+          "depth": 2,
+          "name": "(of a train) arrive at or leave a station"
+        },
+        {
+          "text": "\"The train pulled in right on time.\"",
+          "depth": 2,
+          "name": "\"The train pulled in right on time.\""
+        },
+        {
+          "text": "change (trains)",
+          "depth": 2,
+          "name": "change (trains)"
+        },
+        {
+          "text": "switch from one train to another",
+          "depth": 2,
+          "name": "switch from one train to another"
+        },
+        {
+          "text": "\"You need to change at Birmingham for the London service.\"",
+          "depth": 2,
+          "name": "\"You need to change at Birmingham for the London service.\""
+        },
+        {
+          "text": "the next stop",
+          "depth": 2,
+          "name": "the next stop"
+        },
+        {
+          "text": "the following station on the route",
+          "depth": 2,
+          "name": "the following station on the route"
+        },
+        {
+          "text": "\"The next stop is Stoke-on-Trent.\"",
+          "depth": 2,
+          "name": "\"The next stop is Stoke-on-Trent.\""
+        },
+        {
+          "text": "run on time",
+          "depth": 2,
+          "name": "run on time"
+        },
+        {
+          "text": "operate according to schedule",
+          "depth": 2,
+          "name": "operate according to schedule"
+        },
+        {
+          "text": "\"British trains don't always run on time.\"",
+          "depth": 2,
+          "name": "\"British trains don't always run on time.\""
+        },
+        {
+          "text": "standing room only",
+          "depth": 2,
+          "name": "standing room only"
+        },
+        {
+          "text": "so crowded that all seats are taken",
+          "depth": 2,
+          "name": "so crowded that all seats are taken"
+        },
+        {
+          "text": "\"The rush-hour train was standing room only.\"",
+          "depth": 2,
+          "name": "\"The rush-hour train was standing room only.\""
+        },
+        {
+          "text": "light at the end of the tunnel",
+          "depth": 2,
+          "name": "light at the end of the tunnel"
+        },
+        {
+          "text": "hope after a difficult period",
+          "depth": 2,
+          "name": "hope after a difficult period"
+        },
+        {
+          "text": "\"After months of studying, I can finally see the light at the end of the tunnel.\"",
+          "depth": 2,
+          "name": "\"After months of studying, I can finally see the light at the end of the tunnel.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "547:617",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: Buying a train ticket at the counter",
+          "depth": 1,
+          "name": "Scene: Buying a train ticket at the counter"
+        },
+        {
+          "text": "Passenger:",
+          "depth": 2,
+          "name": "Passenger:"
+        },
+        {
+          "text": "A return to London, please.",
+          "depth": 2,
+          "name": "A return to London, please."
+        },
+        {
+          "text": "Clerk:",
+          "depth": 2,
+          "name": "Clerk:"
+        },
+        {
+          "text": "When are you travelling?",
+          "depth": 2,
+          "name": "When are you travelling?"
+        },
+        {
+          "text": "Passenger:",
+          "depth": 2,
+          "name": "Passenger:"
+        },
+        {
+          "text": "Today. Leaving around ten and coming back this evening.",
+          "depth": 2,
+          "name": "Today. Leaving around ten and coming back this evening."
+        },
+        {
+          "text": "Clerk:",
+          "depth": 2,
+          "name": "Clerk:"
+        },
+        {
+          "text": "An off-peak return is thirty-two pounds. Peak would be fifty-eight.",
+          "depth": 2,
+          "name": "An off-peak return is thirty-two pounds. Peak would be fifty-eight."
+        },
+        {
+          "text": "Passenger:",
+          "depth": 2,
+          "name": "Passenger:"
+        },
+        {
+          "text": "Off-peak, please. Which platform is it?",
+          "depth": 2,
+          "name": "Off-peak, please. Which platform is it?"
+        },
+        {
+          "text": "Clerk:",
+          "depth": 2,
+          "name": "Clerk:"
+        },
+        {
+          "text": "Platform 3. The ten fifteen departs in twenty minutes.",
+          "depth": 2,
+          "name": "Platform 3. The ten fifteen departs in twenty minutes."
+        },
+        {
+          "text": "Passenger:",
+          "depth": 2,
+          "name": "Passenger:"
+        },
+        {
+          "text": "Do I need to change anywhere?",
+          "depth": 2,
+          "name": "Do I need to change anywhere?"
+        },
+        {
+          "text": "Clerk:",
+          "depth": 2,
+          "name": "Clerk:"
+        },
+        {
+          "text": "No, it's a direct service to London Euston. Two hours exactly.",
+          "depth": 2,
+          "name": "No, it's a direct service to London Euston. Two hours exactly."
+        },
+        {
+          "text": "Passenger:",
+          "depth": 2,
+          "name": "Passenger:"
+        },
+        {
+          "text": "Is there a quiet carriage?",
+          "depth": 2,
+          "name": "Is there a quiet carriage?"
+        },
+        {
+          "text": "Clerk:",
+          "depth": 2,
+          "name": "Clerk:"
+        },
+        {
+          "text": "Yes, Coach D. No phone calls or loud music allowed.",
+          "depth": 2,
+          "name": "Yes, Coach D. No phone calls or loud music allowed."
+        },
+        {
+          "text": "Passenger:",
+          "depth": 2,
+          "name": "Passenger:"
+        },
+        {
+          "text": "Perfect. Can I pay by card?",
+          "depth": 2,
+          "name": "Perfect. Can I pay by card?"
+        },
+        {
+          "text": "Clerk:",
+          "depth": 2,
+          "name": "Clerk:"
+        },
+        {
+          "text": "Of course. Here's your ticket. Have a good journey.",
+          "depth": 2,
+          "name": "Of course. Here's your ticket. Have a good journey."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "547:658",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I went down the train at the wrong station.\"",
+          "depth": 2,
+          "name": "❌ \"I went down the train at the wrong station.\""
+        },
+        {
+          "text": "✅ \"I got off the train at the wrong station.\"",
+          "depth": 2,
+          "name": "✅ \"I got off the train at the wrong station.\""
+        },
+        {
+          "text": "Use 'get on' and 'get off' for trains, buses, and planes — not 'go up/down'.",
+          "depth": 2,
+          "name": "Use 'get on' and 'get off' for trains, buses, and planes — not 'go up/down'."
+        },
+        {
+          "text": "❌ \"The train is late for ten minutes.\"",
+          "depth": 2,
+          "name": "❌ \"The train is late for ten minutes.\""
+        },
+        {
+          "text": "✅ \"The train is ten minutes late.\"",
+          "depth": 2,
+          "name": "✅ \"The train is ten minutes late.\""
+        },
+        {
+          "text": "Put the time amount before 'late' or 'early'. Or: 'The train has been delayed by ten minutes.'",
+          "depth": 2,
+          "name": "Put the time amount before 'late' or 'early'. Or: 'The train has been delayed by ten minutes.'"
+        },
+        {
+          "text": "❌ \"I bought a single ticket to go and return.\"",
+          "depth": 2,
+          "name": "❌ \"I bought a single ticket to go and return.\""
+        },
+        {
+          "text": "✅ \"I bought a return ticket.\"",
+          "depth": 2,
+          "name": "✅ \"I bought a return ticket.\""
+        },
+        {
+          "text": "A 'return ticket' covers both the outward and return journey. A 'single ticket' is one-way only.",
+          "depth": 2,
+          "name": "A 'return ticket' covers both the outward and return journey. A 'single ticket' is one-way only."
+        },
+        {
+          "text": "❌ \"Which quay does the train leave from?\"",
+          "depth": 2,
+          "name": "❌ \"Which quay does the train leave from?\""
+        },
+        {
+          "text": "✅ \"Which platform does the train leave from?\"",
+          "depth": 2,
+          "name": "✅ \"Which platform does the train leave from?\""
+        },
+        {
+          "text": "In English, trains depart from 'platforms'. A 'quay' (pronounced 'key') is for boats and ships.",
+          "depth": 2,
+          "name": "In English, trains depart from 'platforms'. A 'quay' (pronounced 'key') is for boats and ships."
+        },
+        {
+          "text": "❌ \"The train has arrived to London.\"",
+          "depth": 2,
+          "name": "❌ \"The train has arrived to London.\""
+        },
+        {
+          "text": "✅ \"The train has arrived in London.\" / \"...arrived at the station.\"",
+          "depth": 2,
+          "name": "✅ \"The train has arrived in London.\" / \"...arrived at the station.\""
+        },
+        {
+          "text": "Use 'arrive in' for cities/countries and 'arrive at' for specific places (stations, airports). Never 'arrive to'.",
+          "depth": 2,
+          "name": "Use 'arrive in' for cities/countries and 'arrive at' for specific places (stations, airports). Never 'arrive to'."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "547:682",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how train station vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how train station vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "depart",
+          "depth": 2,
+          "name": "depart"
+        },
+        {
+          "text": "departure",
+          "depth": 2,
+          "name": "departure"
+        },
+        {
+          "text": "depart",
+          "depth": 2,
+          "name": "depart"
+        },
+        {
+          "text": "departing",
+          "depth": 2,
+          "name": "departing"
+        },
+        {
+          "text": "arrive",
+          "depth": 2,
+          "name": "arrive"
+        },
+        {
+          "text": "arrival",
+          "depth": 2,
+          "name": "arrival"
+        },
+        {
+          "text": "arrive",
+          "depth": 2,
+          "name": "arrive"
+        },
+        {
+          "text": "arriving",
+          "depth": 2,
+          "name": "arriving"
+        },
+        {
+          "text": "conduct",
+          "depth": 2,
+          "name": "conduct"
+        },
+        {
+          "text": "conductor / conduct",
+          "depth": 2,
+          "name": "conductor / conduct"
+        },
+        {
+          "text": "conduct",
+          "depth": 2,
+          "name": "conduct"
+        },
+        {
+          "text": "conducted",
+          "depth": 2,
+          "name": "conducted"
+        },
+        {
+          "text": "schedule",
+          "depth": 2,
+          "name": "schedule"
+        },
+        {
+          "text": "schedule",
+          "depth": 2,
+          "name": "schedule"
+        },
+        {
+          "text": "schedule",
+          "depth": 2,
+          "name": "schedule"
+        },
+        {
+          "text": "scheduled",
+          "depth": 2,
+          "name": "scheduled"
+        },
+        {
+          "text": "cancel",
+          "depth": 2,
+          "name": "cancel"
+        },
+        {
+          "text": "cancellation",
+          "depth": 2,
+          "name": "cancellation"
+        },
+        {
+          "text": "cancel",
+          "depth": 2,
+          "name": "cancel"
+        },
+        {
+          "text": "cancelled",
+          "depth": 2,
+          "name": "cancelled"
+        },
+        {
+          "text": "delay",
+          "depth": 2,
+          "name": "delay"
+        },
+        {
+          "text": "delay",
+          "depth": 2,
+          "name": "delay"
+        },
+        {
+          "text": "delay",
+          "depth": 2,
+          "name": "delay"
+        },
+        {
+          "text": "delayed",
+          "depth": 2,
+          "name": "delayed"
+        },
+        {
+          "text": "connect",
+          "depth": 2,
+          "name": "connect"
+        },
+        {
+          "text": "connection",
+          "depth": 2,
+          "name": "connection"
+        },
+        {
+          "text": "connect",
+          "depth": 2,
+          "name": "connect"
+        },
+        {
+          "text": "connecting",
+          "depth": 2,
+          "name": "connecting"
+        },
+        {
+          "text": "reserve",
+          "depth": 2,
+          "name": "reserve"
+        },
+        {
+          "text": "reservation",
+          "depth": 2,
+          "name": "reservation"
+        },
+        {
+          "text": "reserve",
+          "depth": 2,
+          "name": "reserve"
+        },
+        {
+          "text": "reserved",
+          "depth": 2,
+          "name": "reserved"
+        },
+        {
+          "text": "commute",
+          "depth": 2,
+          "name": "commute"
+        },
+        {
+          "text": "commuter / commute",
+          "depth": 2,
+          "name": "commuter / commute"
+        },
+        {
+          "text": "commute",
+          "depth": 2,
+          "name": "commute"
+        },
+        {
+          "text": "commuting",
+          "depth": 2,
+          "name": "commuting"
+        },
+        {
+          "text": "platform",
+          "depth": 2,
+          "name": "platform"
+        },
+        {
+          "text": "platform",
+          "depth": 2,
+          "name": "platform"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "547:742",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The train to Edinburgh departs from __________ 7.",
+          "depth": 1,
+          "name": "1. The train to Edinburgh departs from __________ 7."
+        },
+        {
+          "text": "2.  She bought a __________ ticket because she was coming back the same day.",
+          "depth": 1,
+          "name": "2. She bought a __________ ticket because she was coming back the same day."
+        },
+        {
+          "text": "3.  The __________ walked through the carriage checking everyone's tickets.",
+          "depth": 1,
+          "name": "3. The __________ walked through the carriage checking everyone's tickets."
+        },
+        {
+          "text": "4.  An off-__________ ticket is cheaper than travelling during rush hour.",
+          "depth": 1,
+          "name": "4. An off-__________ ticket is cheaper than travelling during rush hour."
+        },
+        {
+          "text": "5.  The departure __________ shows all the trains and their times.",
+          "depth": 1,
+          "name": "5. The departure __________ shows all the trains and their times."
+        },
+        {
+          "text": "6.  Put your bags on the __________ rack above your seat.",
+          "depth": 1,
+          "name": "6. Put your bags on the __________ rack above your seat."
+        },
+        {
+          "text": "7.  You need to __________ trains at Birmingham to get to Bristol.",
+          "depth": 1,
+          "name": "7. You need to __________ trains at Birmingham to get to Bristol."
+        },
+        {
+          "text": "8.  The quiet __________ is for passengers who want a peaceful journey.",
+          "depth": 1,
+          "name": "8. The quiet __________ is for passengers who want a peaceful journey."
+        },
+        {
+          "text": "9.  She tapped her e-ticket on the __________ barrier to enter the platform.",
+          "depth": 1,
+          "name": "9. She tapped her e-ticket on the __________ barrier to enter the platform."
+        },
+        {
+          "text": "10. The train __________ in at exactly half past nine.",
+          "depth": 1,
+          "name": "10. The train __________ in at exactly half past nine."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. Platform  2. return  3. conductor  4. peak  5. board  6. luggage  7. change  8. carriage  9. ticket  10. pulled",
+          "depth": 2,
+          "name": "1. Platform 2. return 3. conductor 4. peak 5. board 6. luggage 7. change 8. carriage 9. ticket 10. pulled"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "547:760",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "UK Rail Network",
+          "depth": 2,
+          "name": "UK Rail Network"
+        },
+        {
+          "text": "The UK rail network is one of the oldest in the world. Major operators include Avanti West Coast, LNER, and Great Western Railway. Tickets can be bought at stations, online, or via apps like Trainline.",
+          "depth": 2,
+          "name": "The UK rail network is one of the oldest in the world. Major operators include Avanti West Coast, LNER, and Great Western Railway. Tickets can be bought at stations, online, or via apps like Trainline."
+        },
+        {
+          "text": "🇬🇧 vs 🇺🇸 Vocabulary",
+          "depth": 2,
+          "name": "🇬🇧 vs 🇺🇸 Vocabulary"
+        },
+        {
+          "text": "British: 'railway station' / American: 'train station'. British: 'return ticket' / American: 'round-trip ticket'. British: 'carriage' / American: 'car'. British: 'the Underground/Tube' / American: 'the subway'.",
+          "depth": 2,
+          "name": "British: 'railway station' / American: 'train station'. British: 'return ticket' / American: 'round-trip ticket'. British: 'carriage' / American: 'car'. British: 'the Underground/Tube' / American: 'the subway'."
+        },
+        {
+          "text": "Peak vs Off-Peak",
+          "depth": 2,
+          "name": "Peak vs Off-Peak"
+        },
+        {
+          "text": "'Peak' fares apply during busy commuting hours (typically 6:30–9:30 AM and 4:00–7:00 PM on weekdays). 'Off-peak' and 'super off-peak' fares are cheaper and apply outside these times. 'Anytime' tickets can be used on any train.",
+          "depth": 2,
+          "name": "'Peak' fares apply during busy commuting hours (typically 6:30–9:30 AM and 4:00–7:00 PM on weekdays). 'Off-peak' and 'super off-peak' fares are cheaper and apply outside these times. 'Anytime' tickets can be used on any train."
+        },
+        {
+          "text": "Oyster Cards & Contactless",
+          "depth": 2,
+          "name": "Oyster Cards & Contactless"
+        },
+        {
+          "text": "In London, you can use an Oyster card or contactless bank card on the Tube and buses. 'Topping up' means adding credit to the card. Most cities now accept contactless payments for public transport.",
+          "depth": 2,
+          "name": "In London, you can use an Oyster card or contactless bank card on the Tube and buses. 'Topping up' means adding credit to the card. Most cities now accept contactless payments for public transport."
+        },
+        {
+          "text": "Mind the Gap",
+          "depth": 2,
+          "name": "Mind the Gap"
+        },
+        {
+          "text": "'Mind the gap' is a famous announcement on the London Underground, warning passengers about the space between the train and the platform edge. It has become an iconic British phrase, appearing on souvenirs and T-shirts.",
+          "depth": 2,
+          "name": "'Mind the gap' is a famous announcement on the London Underground, warning passengers about the space between the train and the platform edge. It has become an iconic British phrase, appearing on souvenirs and T-shirts."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "547:779",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "platform",
+          "depth": 2,
+          "name": "platform"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ number, on the ~, ~ edge",
+          "depth": 2,
+          "name": "~ number, on the ~, ~ edge"
+        },
+        {
+          "text": "ticket",
+          "depth": 2,
+          "name": "ticket"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "return ~, single ~, ~ machine",
+          "depth": 2,
+          "name": "return ~, single ~, ~ machine"
+        },
+        {
+          "text": "conductor",
+          "depth": 2,
+          "name": "conductor"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "train ~, ~ check, ~ whistle",
+          "depth": 2,
+          "name": "train ~, ~ check, ~ whistle"
+        },
+        {
+          "text": "carriage",
+          "depth": 2,
+          "name": "carriage"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "quiet ~, first-class ~, ~ number",
+          "depth": 2,
+          "name": "quiet ~, first-class ~, ~ number"
+        },
+        {
+          "text": "departure",
+          "depth": 2,
+          "name": "departure"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ board, ~ time, ~ lounge",
+          "depth": 2,
+          "name": "~ board, ~ time, ~ lounge"
+        },
+        {
+          "text": "fare",
+          "depth": 2,
+          "name": "fare"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "off-peak ~, ~ price, standard ~",
+          "depth": 2,
+          "name": "off-peak ~, ~ price, standard ~"
+        },
+        {
+          "text": "timetable",
+          "depth": 2,
+          "name": "timetable"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "train ~, ~ change, check the ~",
+          "depth": 2,
+          "name": "train ~, ~ change, check the ~"
+        },
+        {
+          "text": "delay",
+          "depth": 2,
+          "name": "delay"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ announcement, long ~, travel ~",
+          "depth": 2,
+          "name": "~ announcement, long ~, travel ~"
+        },
+        {
+          "text": "commuter",
+          "depth": 2,
+          "name": "commuter"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "daily ~, ~ train, ~ belt",
+          "depth": 2,
+          "name": "daily ~, ~ train, ~ belt"
+        },
+        {
+          "text": "signal",
+          "depth": 2,
+          "name": "signal"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ failure, traffic ~, ~ box",
+          "depth": 2,
+          "name": "~ failure, traffic ~, ~ box"
+        }
+      ]
+    }
+  }
+}

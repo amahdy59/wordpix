@@ -1,0 +1,1576 @@
+{
+  "unitId": "community-center",
+  "name": "The Community Center",
+  "subtopics": [
+    {
+      "id": "rooms",
+      "title": "Rooms",
+      "wordIds": [
+        "gymnasium",
+        "auditorium",
+        "kitchen",
+        "classroom",
+        "art-room",
+        "music-room",
+        "computer-lab",
+        "meeting-room",
+        "library",
+        "daycare"
+      ]
+    },
+    {
+      "id": "activities",
+      "title": "Activities",
+      "wordIds": [
+        "yoga-class",
+        "dance-class",
+        "cooking-class",
+        "painting-class",
+        "pottery-class",
+        "language-class",
+        "tutoring",
+        "meditation",
+        "book-club",
+        "film-night"
+      ]
+    },
+    {
+      "id": "sports-fitness",
+      "title": "Sports & Fitness",
+      "wordIds": [
+        "basketball",
+        "volleyball",
+        "badminton",
+        "table-tennis",
+        "swimming",
+        "karate",
+        "zumba",
+        "aerobics",
+        "weight-training",
+        "stretching"
+      ]
+    },
+    {
+      "id": "events",
+      "title": "Events",
+      "wordIds": [
+        "bake-sale",
+        "talent-show",
+        "holiday-party",
+        "workshop",
+        "seminar",
+        "concert",
+        "exhibition",
+        "farmers-market",
+        "blood-drive",
+        "voting"
+      ]
+    },
+    {
+      "id": "facilities",
+      "title": "Facilities",
+      "wordIds": [
+        "bulletin-board",
+        "water-fountain",
+        "locker",
+        "bench",
+        "stage",
+        "projector",
+        "whiteboard",
+        "microphone",
+        "speaker",
+        "clock"
+      ]
+    },
+    {
+      "id": "people",
+      "title": "People",
+      "wordIds": [
+        "instructor",
+        "coordinator",
+        "volunteer",
+        "member",
+        "child",
+        "senior",
+        "lifeguard",
+        "coach",
+        "receptionist",
+        "janitor"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "gymnasium",
+      "label": "Gymnasium",
+      "ipa": "/dʒɪmˈneɪziəm/",
+      "cefr": "B1",
+      "imageNodeId": "119:4343"
+    },
+    {
+      "kind": "card",
+      "id": "auditorium",
+      "label": "Auditorium",
+      "ipa": "/ˌɔːdɪˈtɔːriəm/",
+      "cefr": "B2",
+      "imageNodeId": "119:4347"
+    },
+    {
+      "kind": "card",
+      "id": "kitchen",
+      "label": "Kitchen",
+      "ipa": "/ˈkɪtʃɪn/",
+      "cefr": "B1",
+      "imageNodeId": "119:4351"
+    },
+    {
+      "kind": "card",
+      "id": "classroom",
+      "label": "Classroom",
+      "ipa": "/ˈklæsˌruːm/",
+      "cefr": "B1",
+      "imageNodeId": "119:4355"
+    },
+    {
+      "kind": "card",
+      "id": "art-room",
+      "label": "Art Room",
+      "ipa": "/ɑːrt ruːm/",
+      "cefr": "B2",
+      "imageNodeId": "119:4359"
+    },
+    {
+      "kind": "card",
+      "id": "music-room",
+      "label": "Music Room",
+      "ipa": "/ˈmjuːzɪk ruːm/",
+      "cefr": "B2",
+      "imageNodeId": "119:4363"
+    },
+    {
+      "kind": "card",
+      "id": "computer-lab",
+      "label": "Computer Lab",
+      "ipa": "/kəmˈpjuːtər læb/",
+      "cefr": "B2",
+      "imageNodeId": "119:4367"
+    },
+    {
+      "kind": "card",
+      "id": "meeting-room",
+      "label": "Meeting Room",
+      "ipa": "/ˈmiːtɪŋ ruːm/",
+      "cefr": "B2",
+      "imageNodeId": "119:4371"
+    },
+    {
+      "kind": "card",
+      "id": "library",
+      "label": "Library",
+      "ipa": "/ˈlaɪbrəri/",
+      "cefr": "B1",
+      "imageNodeId": "119:4375"
+    },
+    {
+      "kind": "card",
+      "id": "daycare",
+      "label": "Daycare",
+      "ipa": "/ˈdeɪˌkɛər/",
+      "cefr": "B1",
+      "imageNodeId": "119:4379"
+    },
+    {
+      "kind": "card",
+      "id": "yoga-class",
+      "label": "Yoga Class",
+      "ipa": "/ˈjoʊɡə klæs/",
+      "cefr": "B2",
+      "imageNodeId": "119:4388"
+    },
+    {
+      "kind": "card",
+      "id": "dance-class",
+      "label": "Dance Class",
+      "ipa": "/dæns klæs/",
+      "cefr": "B2",
+      "imageNodeId": "119:4392"
+    },
+    {
+      "kind": "card",
+      "id": "cooking-class",
+      "label": "Cooking Class",
+      "ipa": "/ˈkʊkɪŋ klæs/",
+      "cefr": "B2",
+      "imageNodeId": "119:4396"
+    },
+    {
+      "kind": "card",
+      "id": "painting-class",
+      "label": "Painting Class",
+      "ipa": "/ˈpeɪntɪŋ klæs/",
+      "cefr": "B2",
+      "imageNodeId": "119:4400"
+    },
+    {
+      "kind": "card",
+      "id": "pottery-class",
+      "label": "Pottery Class",
+      "ipa": "/ˈpɒtəri klæs/",
+      "cefr": "B2",
+      "imageNodeId": "119:4404"
+    },
+    {
+      "kind": "card",
+      "id": "language-class",
+      "label": "Language Class",
+      "ipa": "/ˈlæŋɡwɪdʒ klæs/",
+      "cefr": "B2",
+      "imageNodeId": "119:4408"
+    },
+    {
+      "kind": "card",
+      "id": "tutoring",
+      "label": "Tutoring",
+      "ipa": "/ˈtjuːtərɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "119:4412"
+    },
+    {
+      "kind": "card",
+      "id": "meditation",
+      "label": "Meditation",
+      "ipa": "/ˌmɛdɪˈteɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "119:4416"
+    },
+    {
+      "kind": "card",
+      "id": "book-club",
+      "label": "Book Club",
+      "ipa": "/bʊk klʌb/",
+      "cefr": "B2",
+      "imageNodeId": "119:4420"
+    },
+    {
+      "kind": "card",
+      "id": "film-night",
+      "label": "Film Night",
+      "ipa": "/fɪlm naɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:4424"
+    },
+    {
+      "kind": "card",
+      "id": "basketball",
+      "label": "Basketball",
+      "ipa": "/ˈbæskɪtˌbɔːl/",
+      "cefr": "B2",
+      "imageNodeId": "119:4433"
+    },
+    {
+      "kind": "card",
+      "id": "volleyball",
+      "label": "Volleyball",
+      "ipa": "/ˈvɒliˌbɔːl/",
+      "cefr": "B2",
+      "imageNodeId": "119:4437"
+    },
+    {
+      "kind": "card",
+      "id": "badminton",
+      "label": "Badminton",
+      "ipa": "/ˈbædˌmɪntən/",
+      "cefr": "B1",
+      "imageNodeId": "119:4441"
+    },
+    {
+      "kind": "card",
+      "id": "table-tennis",
+      "label": "Table Tennis",
+      "ipa": "/ˈteɪbəl ˈtɛnɪs/",
+      "cefr": "B2",
+      "imageNodeId": "119:4445"
+    },
+    {
+      "kind": "card",
+      "id": "swimming",
+      "label": "Swimming",
+      "ipa": "/ˈswɪmɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "119:4449"
+    },
+    {
+      "kind": "card",
+      "id": "karate",
+      "label": "Karate",
+      "ipa": "/kəˈrɑːti/",
+      "cefr": "B1",
+      "imageNodeId": "119:4453"
+    },
+    {
+      "kind": "card",
+      "id": "zumba",
+      "label": "Zumba",
+      "ipa": "/ˈzʌmbə/",
+      "cefr": "B1",
+      "imageNodeId": "119:4457"
+    },
+    {
+      "kind": "card",
+      "id": "aerobics",
+      "label": "Aerobics",
+      "ipa": "/ɛəˈroʊbɪks/",
+      "cefr": "B1",
+      "imageNodeId": "119:4461"
+    },
+    {
+      "kind": "card",
+      "id": "weight-training",
+      "label": "Weight Training",
+      "ipa": "/weɪt ˈtreɪnɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "119:4465"
+    },
+    {
+      "kind": "card",
+      "id": "stretching",
+      "label": "Stretching",
+      "ipa": "/ˈstrɛtʃɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:4469"
+    },
+    {
+      "kind": "card",
+      "id": "bake-sale",
+      "label": "Bake Sale",
+      "ipa": "/beɪk seɪl/",
+      "cefr": "B2",
+      "imageNodeId": "119:4478"
+    },
+    {
+      "kind": "card",
+      "id": "talent-show",
+      "label": "Talent Show",
+      "ipa": "/ˈtælənt ʃoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "119:4482"
+    },
+    {
+      "kind": "card",
+      "id": "holiday-party",
+      "label": "Holiday Party",
+      "ipa": "/ˈhɒlɪˌdeɪ ˈpɑːrti/",
+      "cefr": "B2",
+      "imageNodeId": "119:4486"
+    },
+    {
+      "kind": "card",
+      "id": "workshop",
+      "label": "Workshop",
+      "ipa": "/ˈwɜːrkˌʃɒp/",
+      "cefr": "B1",
+      "imageNodeId": "119:4490"
+    },
+    {
+      "kind": "card",
+      "id": "seminar",
+      "label": "Seminar",
+      "ipa": "/ˈsɛmɪˌnɑːr/",
+      "cefr": "B1",
+      "imageNodeId": "119:4494"
+    },
+    {
+      "kind": "card",
+      "id": "concert",
+      "label": "Concert",
+      "ipa": "/ˈkɒnsərt/",
+      "cefr": "B1",
+      "imageNodeId": "119:4498"
+    },
+    {
+      "kind": "card",
+      "id": "exhibition",
+      "label": "Exhibition",
+      "ipa": "/ˌɛksɪˈbɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "119:4502"
+    },
+    {
+      "kind": "card",
+      "id": "farmers-market",
+      "label": "Farmers Market",
+      "ipa": "/ˈfɑːrmərz ˈmɑːrkɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:4506"
+    },
+    {
+      "kind": "card",
+      "id": "blood-drive",
+      "label": "Blood Drive",
+      "ipa": "/blʌd draɪv/",
+      "cefr": "B2",
+      "imageNodeId": "119:4510"
+    },
+    {
+      "kind": "card",
+      "id": "voting",
+      "label": "Voting",
+      "ipa": "/ˈvoʊtɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "119:4514"
+    },
+    {
+      "kind": "card",
+      "id": "bulletin-board",
+      "label": "Bulletin Board",
+      "ipa": "/ˈbʊlɪtɪn bɔːrd/",
+      "cefr": "B2",
+      "imageNodeId": "119:4523"
+    },
+    {
+      "kind": "card",
+      "id": "water-fountain",
+      "label": "Water Fountain",
+      "ipa": "/ˈwɔːtər ˈfaʊntɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:4527"
+    },
+    {
+      "kind": "card",
+      "id": "locker",
+      "label": "Locker",
+      "ipa": "/ˈlɒkər/",
+      "cefr": "B1",
+      "imageNodeId": "119:4531"
+    },
+    {
+      "kind": "card",
+      "id": "bench",
+      "label": "Bench",
+      "ipa": "/bɛntʃ/",
+      "cefr": "B1",
+      "imageNodeId": "119:4535"
+    },
+    {
+      "kind": "card",
+      "id": "stage",
+      "label": "Stage",
+      "ipa": "/steɪdʒ/",
+      "cefr": "B1",
+      "imageNodeId": "119:4539"
+    },
+    {
+      "kind": "card",
+      "id": "projector",
+      "label": "Projector",
+      "ipa": "/prəˈdʒɛktər/",
+      "cefr": "B1",
+      "imageNodeId": "119:4543"
+    },
+    {
+      "kind": "card",
+      "id": "whiteboard",
+      "label": "Whiteboard",
+      "ipa": "/ˈwaɪtˌbɔːrd/",
+      "cefr": "B2",
+      "imageNodeId": "119:4547"
+    },
+    {
+      "kind": "card",
+      "id": "microphone",
+      "label": "Microphone",
+      "ipa": "/ˈmaɪkrəˌfoʊn/",
+      "cefr": "B2",
+      "imageNodeId": "119:4551"
+    },
+    {
+      "kind": "card",
+      "id": "speaker",
+      "label": "Speaker",
+      "ipa": "/ˈspiːkər/",
+      "cefr": "B1",
+      "imageNodeId": "119:4555"
+    },
+    {
+      "kind": "card",
+      "id": "clock",
+      "label": "Clock",
+      "ipa": "/klɒk/",
+      "cefr": "B1",
+      "imageNodeId": "119:4559"
+    },
+    {
+      "kind": "card",
+      "id": "instructor",
+      "label": "Instructor",
+      "ipa": "/ɪnˈstrʌktər/",
+      "cefr": "B2",
+      "imageNodeId": "119:4568"
+    },
+    {
+      "kind": "card",
+      "id": "coordinator",
+      "label": "Coordinator",
+      "ipa": "/koʊˈɔːrdɪˌneɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "119:4572"
+    },
+    {
+      "kind": "card",
+      "id": "volunteer",
+      "label": "Volunteer",
+      "ipa": "/ˌvɒlənˈtɪər/",
+      "cefr": "B1",
+      "imageNodeId": "119:4576"
+    },
+    {
+      "kind": "card",
+      "id": "member",
+      "label": "Member",
+      "ipa": "/ˈmɛmbər/",
+      "cefr": "B1",
+      "imageNodeId": "119:4580"
+    },
+    {
+      "kind": "card",
+      "id": "child",
+      "label": "Child",
+      "ipa": "/tʃaɪld/",
+      "cefr": "B1",
+      "imageNodeId": "119:4584"
+    },
+    {
+      "kind": "card",
+      "id": "senior",
+      "label": "Senior",
+      "ipa": "/ˈsiːnjər/",
+      "cefr": "B1",
+      "imageNodeId": "119:4588"
+    },
+    {
+      "kind": "card",
+      "id": "lifeguard",
+      "label": "Lifeguard",
+      "ipa": "/ˈlaɪfˌɡɑːrd/",
+      "cefr": "B1",
+      "imageNodeId": "119:4592"
+    },
+    {
+      "kind": "card",
+      "id": "coach",
+      "label": "Coach",
+      "ipa": "/koʊtʃ/",
+      "cefr": "B1",
+      "imageNodeId": "119:4596"
+    },
+    {
+      "kind": "card",
+      "id": "receptionist",
+      "label": "Receptionist",
+      "ipa": "/rɪˈsɛpʃənɪst/",
+      "cefr": "B2",
+      "imageNodeId": "119:4600"
+    },
+    {
+      "kind": "card",
+      "id": "janitor",
+      "label": "Janitor",
+      "ipa": "/ˈdʒænɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "119:4604"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "554:3467",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "554:3469",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2 · Topic: The Community Center",
+          "depth": 1,
+          "name": "Level: B2 · Topic: The Community Center"
+        },
+        {
+          "text": "Where a Neighbourhood Becomes a Community — The Community Center\n\nA community center is one of the few public spaces designed not to sell you anything. It exists to serve — to provide activities, education, recreation, and social connection to the people who live nearby. In an era of commercial spaces and digital isolation, the community center remains stubbornly, usefully analogue.\n\nThe building is multipurpose by design. A gymnasium hosts basketball, volleyball, badminton, and table tennis. An auditorium with a stage, a projector, a microphone, and a speaker serves concerts, film nights, talent shows, and seminars. A kitchen supports cooking classes and community meals. A classroom, an art room, a music room, and a computer lab offer structured learning. A meeting room hosts local organisations. A library provides books and quiet space. A daycare watches young children while parents attend activities.\n\nClasses reflect the community's diversity. A yoga class, a dance class, a cooking class, a painting class, a pottery class, and a language class run on weekly schedules. Tutoring supports school-age students. Meditation offers mental health benefits. A book club meets monthly. An instructor leads each session. A coordinator manages the schedule.\n\nSports and fitness occupy a central role. Swimming (where a pool exists), karate, zumba, aerobics, weight training, and stretching classes fill the gymnasium. A coach trains teams. A lifeguard supervises the pool. Equipment is shared — a whiteboard for tactics, a bench for resting, a locker for storage, a water fountain for hydration.\n\nCommunity events bring people together outside of regular programming. A bake sale raises funds. A holiday party celebrates seasons. A workshop teaches practical skills — plumbing, tax preparation, first aid. A seminar addresses health, safety, or legal topics. A concert features local musicians. An exhibition showcases local art. A farmers market sells produce. A blood drive collects donations. Voting takes place in the auditorium during elections.\n\nThe infrastructure supports all of this quietly. A bulletin board announces upcoming events. A clock keeps the schedule. A receptionist manages the front desk. A janitor maintains the building. A volunteer provides unpaid support — the lifeblood of most community centers. A member pays a small annual fee for access. Every age group is represented: a child in the daycare, a senior in the morning yoga class, and everyone in between.\n\nThe community center does not generate profit. It generates something harder to measure: belonging. It is where a neighbourhood stops being a collection of addresses and starts being a community — where people who live near each other begin to know each other by name.",
+          "depth": 1,
+          "name": "Where a Neighbourhood Becomes a Community — The Community Center A community center is one of the few public spaces designed not to sell you anything. It exists to serve — to provide activities, education, recreation, and social connection to the people who live nearby. In an era of commercial spaces and digital isolation, the community center remains stubbornly, usefully analogue. The building is multipurpose by design. A gymnasium hosts basketball, volleyball, badminton, and table tennis. An auditorium with a stage, a projector, a microphone, and a speaker serves concerts, film nights, talent shows, and seminars. A kitchen supports cooking classes and community meals. A classroom, an art room, a music room, and a computer lab offer structured learning. A meeting room hosts local organisations. A library provides books and quiet space. A daycare watches young children while parents attend activities. Classes reflect the community's diversity. A yoga class, a dance class, a cooking class, a painting class, a pottery class, and a language class run on weekly schedules. Tutoring supports school-age students. Meditation offers mental health benefits. A book club meets monthly. An instructor leads each session. A coordinator manages the schedule. Sports and fitness occupy a central role. Swimming (where a pool exists), karate, zumba, aerobics, weight training, and stretching classes fill the gymnasium. A coach trains teams. A lifeguard supervises the pool. Equipment is shared — a whiteboard for tactics, a bench for resting, a locker for storage, a water fountain for hydration. Community events bring people together outside of regular programming. A bake sale raises funds. A holiday party celebrates seasons. A workshop teaches practical skills — plumbing, tax preparation, first aid. A seminar addresses health, safety, or legal topics. A concert features local musicians. An exhibition showcases local art. A farmers market sells produce. A blood drive collects donations. Voting takes place in the auditorium during elections. The infrastructure supports all of this quietly. A bulletin board announces upcoming events. A clock keeps the schedule. A receptionist manages the front desk. A janitor maintains the building. A volunteer provides unpaid support — the lifeblood of most community centers. A member pays a small annual fee for access. Every age group is represented: a child in the daycare, a senior in the morning yoga class, and everyone in between. The community center does not generate profit. It generates something harder to measure: belonging. It is where a neighbourhood stops being a collection of addresses and starts being a community — where people who live near each other begin to know each other by name."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What spaces does a community center typically contain? Name at least six and their purposes.",
+          "depth": 1,
+          "name": "1. What spaces does a community center typically contain? Name at least six and their purposes."
+        },
+        {
+          "text": "2. How do community events differ from regular classes? Give three examples of each.",
+          "depth": 1,
+          "name": "2. How do community events differ from regular classes? Give three examples of each."
+        },
+        {
+          "text": "3. Who works at a community center? Describe the roles of at least four staff members.",
+          "depth": 1,
+          "name": "3. Who works at a community center? Describe the roles of at least four staff members."
+        },
+        {
+          "text": "4. The passage says the community center is 'stubbornly, usefully analogue.' What does this mean?",
+          "depth": 1,
+          "name": "4. The passage says the community center is 'stubbornly, usefully analogue.' What does this mean?"
+        },
+        {
+          "text": "5. What does the passage mean by saying the center 'generates belonging'? Do you agree this is valuable?",
+          "depth": 1,
+          "name": "5. What does the passage mean by saying the center 'generates belonging'? Do you agree this is valuable?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "554:3482",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "get involved (in)",
+          "depth": 2,
+          "name": "get involved (in)"
+        },
+        {
+          "text": "start participating in an activity or cause",
+          "depth": 2,
+          "name": "start participating in an activity or cause"
+        },
+        {
+          "text": "\"I wanted to get involved in something local, so I joined the centre.\"",
+          "depth": 2,
+          "name": "\"I wanted to get involved in something local, so I joined the centre.\""
+        },
+        {
+          "text": "give back (to)",
+          "depth": 2,
+          "name": "give back (to)"
+        },
+        {
+          "text": "contribute to the community that has helped you",
+          "depth": 2,
+          "name": "contribute to the community that has helped you"
+        },
+        {
+          "text": "\"Volunteering is my way of giving back to the neighbourhood.\"",
+          "depth": 2,
+          "name": "\"Volunteering is my way of giving back to the neighbourhood.\""
+        },
+        {
+          "text": "sign up (for)",
+          "depth": 2,
+          "name": "sign up (for)"
+        },
+        {
+          "text": "register for an activity or class",
+          "depth": 2,
+          "name": "register for an activity or class"
+        },
+        {
+          "text": "\"I signed up for the pottery class on Thursdays.\"",
+          "depth": 2,
+          "name": "\"I signed up for the pottery class on Thursdays.\""
+        },
+        {
+          "text": "bring people together",
+          "depth": 2,
+          "name": "bring people together"
+        },
+        {
+          "text": "unite people; create connections",
+          "depth": 2,
+          "name": "unite people; create connections"
+        },
+        {
+          "text": "\"The summer fair really brings people together.\"",
+          "depth": 2,
+          "name": "\"The summer fair really brings people together.\""
+        },
+        {
+          "text": "lend a hand",
+          "depth": 2,
+          "name": "lend a hand"
+        },
+        {
+          "text": "help out",
+          "depth": 2,
+          "name": "help out"
+        },
+        {
+          "text": "\"Could you lend a hand setting up the chairs for tonight's meeting?\"",
+          "depth": 2,
+          "name": "\"Could you lend a hand setting up the chairs for tonight's meeting?\""
+        },
+        {
+          "text": "a pillar of the community",
+          "depth": 2,
+          "name": "a pillar of the community"
+        },
+        {
+          "text": "a respected person who contributes greatly to the community",
+          "depth": 2,
+          "name": "a respected person who contributes greatly to the community"
+        },
+        {
+          "text": "\"Mrs Khan is a pillar of the community — she's run the centre for 20 years.\"",
+          "depth": 2,
+          "name": "\"Mrs Khan is a pillar of the community — she's run the centre for 20 years.\""
+        },
+        {
+          "text": "open to all",
+          "depth": 2,
+          "name": "open to all"
+        },
+        {
+          "text": "available to everyone, without restriction",
+          "depth": 2,
+          "name": "available to everyone, without restriction"
+        },
+        {
+          "text": "\"The fitness class is free and open to all.\"",
+          "depth": 2,
+          "name": "\"The fitness class is free and open to all.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "554:3514",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A new resident asking about activities at the community centre",
+          "depth": 1,
+          "name": "Scene: A new resident asking about activities at the community centre"
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "Hello, I've just moved to the area. What activities do you offer here?",
+          "depth": 2,
+          "name": "Hello, I've just moved to the area. What activities do you offer here?"
+        },
+        {
+          "text": "Staff:",
+          "depth": 2,
+          "name": "Staff:"
+        },
+        {
+          "text": "Welcome! We have something for everyone. Are you interested in sports, arts, or social events?",
+          "depth": 2,
+          "name": "Welcome! We have something for everyone. Are you interested in sports, arts, or social events?"
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "I'd like to improve my English, and maybe try a fitness class.",
+          "depth": 2,
+          "name": "I'd like to improve my English, and maybe try a fitness class."
+        },
+        {
+          "text": "Staff:",
+          "depth": 2,
+          "name": "Staff:"
+        },
+        {
+          "text": "We have English conversation classes every Tuesday and Thursday morning. They're free and run by volunteers.",
+          "depth": 2,
+          "name": "We have English conversation classes every Tuesday and Thursday morning. They're free and run by volunteers."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "That sounds great. What about fitness?",
+          "depth": 2,
+          "name": "That sounds great. What about fitness?"
+        },
+        {
+          "text": "Staff:",
+          "depth": 2,
+          "name": "Staff:"
+        },
+        {
+          "text": "There's yoga on Mondays, circuit training on Wednesdays, and badminton on Friday evenings. Most classes are £3 per session.",
+          "depth": 2,
+          "name": "There's yoga on Mondays, circuit training on Wednesdays, and badminton on Friday evenings. Most classes are £3 per session."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "Do you have anything for children? I have two young boys.",
+          "depth": 2,
+          "name": "Do you have anything for children? I have two young boys."
+        },
+        {
+          "text": "Staff:",
+          "depth": 2,
+          "name": "Staff:"
+        },
+        {
+          "text": "Yes! The after-school club runs from 3:30 to 5:30 on weekdays. There's also a football club on Saturdays.",
+          "depth": 2,
+          "name": "Yes! The after-school club runs from 3:30 to 5:30 on weekdays. There's also a football club on Saturdays."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "How do I sign up?",
+          "depth": 2,
+          "name": "How do I sign up?"
+        },
+        {
+          "text": "Staff:",
+          "depth": 2,
+          "name": "Staff:"
+        },
+        {
+          "text": "You can register at the desk here, or fill in the form on our website. Here's a leaflet with all the details.",
+          "depth": 2,
+          "name": "You can register at the desk here, or fill in the form on our website. Here's a leaflet with all the details."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "Is there a café here? I noticed a nice smell!",
+          "depth": 2,
+          "name": "Is there a café here? I noticed a nice smell!"
+        },
+        {
+          "text": "Staff:",
+          "depth": 2,
+          "name": "Staff:"
+        },
+        {
+          "text": "Yes, our café is run by volunteers. Tea, coffee, and home-baked cakes. It's open every morning.",
+          "depth": 2,
+          "name": "Yes, our café is run by volunteers. Tea, coffee, and home-baked cakes. It's open every morning."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "554:3555",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The community center offers a lot of informations about local activities and events.\"",
+          "depth": 2,
+          "name": "❌ \"The community center offers a lot of informations about local activities and events.\""
+        },
+        {
+          "text": "✅ \"The community center offers a lot of information about local activities and events.\"",
+          "depth": 2,
+          "name": "✅ \"The community center offers a lot of information about local activities and events.\""
+        },
+        {
+          "text": "'Information' is uncountable — never 'informations.' Use: 'information', 'some information', 'a lot of information', 'a piece of information.' Same pattern: 'advice' (not *advices), 'knowledge' (not *knowledges), 'equipment' (not *equipments). These nouns have no plural form in English.",
+          "depth": 2,
+          "name": "'Information' is uncountable — never 'informations.' Use: 'information', 'some information', 'a lot of information', 'a piece of information.' Same pattern: 'advice' (not *advices), 'knowledge' (not *knowledges), 'equipment' (not *equipments). These nouns have no plural form in English."
+        },
+        {
+          "text": "❌ \"The instructor suggested the members to arrive ten minutes before the yoga class.\"",
+          "depth": 2,
+          "name": "❌ \"The instructor suggested the members to arrive ten minutes before the yoga class.\""
+        },
+        {
+          "text": "✅ \"The instructor suggested that the members arrive ten minutes before the yoga class.\"",
+          "depth": 2,
+          "name": "✅ \"The instructor suggested that the members arrive ten minutes before the yoga class.\""
+        },
+        {
+          "text": "'Suggest' never takes object + infinitive. Use: suggest + that-clause (subjunctive 'arrive', no 's'): 'suggested that they arrive.' Suggest + gerund: 'suggested arriving early.' Same restriction: 'recommend', 'propose.' Compare: 'The instructor asked the members to arrive...' — 'ask' DOES take object + infinitive.",
+          "depth": 2,
+          "name": "'Suggest' never takes object + infinitive. Use: suggest + that-clause (subjunctive 'arrive', no 's'): 'suggested that they arrive.' Suggest + gerund: 'suggested arriving early.' Same restriction: 'recommend', 'propose.' Compare: 'The instructor asked the members to arrive...' — 'ask' DOES take object + infinitive."
+        },
+        {
+          "text": "❌ \"I've been attending the painting class since six months and my skills have improved.\"",
+          "depth": 2,
+          "name": "❌ \"I've been attending the painting class since six months and my skills have improved.\""
+        },
+        {
+          "text": "✅ \"I've been attending the painting class for six months and my skills have improved.\"",
+          "depth": 2,
+          "name": "✅ \"I've been attending the painting class for six months and my skills have improved.\""
+        },
+        {
+          "text": "'For' + duration: 'for six months.' 'Since' + point in time: 'since January', 'since last spring.' Never *'since six months.' Present perfect continuous + for: 'I've been attending for six months' (ongoing activity). Present perfect simple for result: 'my skills have improved' (completed change).",
+          "depth": 2,
+          "name": "'For' + duration: 'for six months.' 'Since' + point in time: 'since January', 'since last spring.' Never *'since six months.' Present perfect continuous + for: 'I've been attending for six months' (ongoing activity). Present perfect simple for result: 'my skills have improved' (completed change)."
+        },
+        {
+          "text": "❌ \"Every members of the community center have access to the gymnasium and swimming pool.\"",
+          "depth": 2,
+          "name": "❌ \"Every members of the community center have access to the gymnasium and swimming pool.\""
+        },
+        {
+          "text": "✅ \"Every member of the community center has access to the gymnasium and swimming pool.\"",
+          "depth": 2,
+          "name": "✅ \"Every member of the community center has access to the gymnasium and swimming pool.\""
+        },
+        {
+          "text": "'Every' + singular noun + singular verb: 'every member has.' Never *'every members.' 'All members have' (plural) is the alternative. 'Each member has' (singular) works similarly to 'every.' The quantifier determines whether the noun and verb are singular or plural.",
+          "depth": 2,
+          "name": "'Every' + singular noun + singular verb: 'every member has.' Never *'every members.' 'All members have' (plural) is the alternative. 'Each member has' (singular) works similarly to 'every.' The quantifier determines whether the noun and verb are singular or plural."
+        },
+        {
+          "text": "❌ \"Despite the center is free, not many people in the neighbourhood use it regularly.\"",
+          "depth": 2,
+          "name": "❌ \"Despite the center is free, not many people in the neighbourhood use it regularly.\""
+        },
+        {
+          "text": "✅ \"Despite the center being free, not many people in the neighbourhood use it regularly.\" / \"Although the center is free, not many people use it regularly.\"",
+          "depth": 2,
+          "name": "✅ \"Despite the center being free, not many people in the neighbourhood use it regularly.\" / \"Although the center is free, not many people use it regularly.\""
+        },
+        {
+          "text": "'Despite' + noun/gerund (no full clause): 'despite the center being free', 'despite the free access.' 'Although' + full clause: 'although the center is free.' Never *'despite + subject + verb.' 'In spite of' follows the same pattern as 'despite': 'in spite of the free access.'",
+          "depth": 2,
+          "name": "'Despite' + noun/gerund (no full clause): 'despite the center being free', 'despite the free access.' 'Although' + full clause: 'although the center is free.' Never *'despite + subject + verb.' 'In spite of' follows the same pattern as 'despite': 'in spite of the free access.'"
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "554:3579",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how community and social vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how community and social vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "volunteer",
+          "depth": 2,
+          "name": "volunteer"
+        },
+        {
+          "text": "volunteer / volunteering",
+          "depth": 2,
+          "name": "volunteer / volunteering"
+        },
+        {
+          "text": "volunteer",
+          "depth": 2,
+          "name": "volunteer"
+        },
+        {
+          "text": "voluntary",
+          "depth": 2,
+          "name": "voluntary"
+        },
+        {
+          "text": "community",
+          "depth": 2,
+          "name": "community"
+        },
+        {
+          "text": "community",
+          "depth": 2,
+          "name": "community"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "communal",
+          "depth": 2,
+          "name": "communal"
+        },
+        {
+          "text": "participate",
+          "depth": 2,
+          "name": "participate"
+        },
+        {
+          "text": "participation / participant",
+          "depth": 2,
+          "name": "participation / participant"
+        },
+        {
+          "text": "participate",
+          "depth": 2,
+          "name": "participate"
+        },
+        {
+          "text": "participatory",
+          "depth": 2,
+          "name": "participatory"
+        },
+        {
+          "text": "organise",
+          "depth": 2,
+          "name": "organise"
+        },
+        {
+          "text": "organisation / organiser",
+          "depth": 2,
+          "name": "organisation / organiser"
+        },
+        {
+          "text": "organise",
+          "depth": 2,
+          "name": "organise"
+        },
+        {
+          "text": "organised",
+          "depth": 2,
+          "name": "organised"
+        },
+        {
+          "text": "donate",
+          "depth": 2,
+          "name": "donate"
+        },
+        {
+          "text": "donation / donor",
+          "depth": 2,
+          "name": "donation / donor"
+        },
+        {
+          "text": "donate",
+          "depth": 2,
+          "name": "donate"
+        },
+        {
+          "text": "donated",
+          "depth": 2,
+          "name": "donated"
+        },
+        {
+          "text": "include",
+          "depth": 2,
+          "name": "include"
+        },
+        {
+          "text": "inclusion",
+          "depth": 2,
+          "name": "inclusion"
+        },
+        {
+          "text": "include",
+          "depth": 2,
+          "name": "include"
+        },
+        {
+          "text": "inclusive / included",
+          "depth": 2,
+          "name": "inclusive / included"
+        },
+        {
+          "text": "integrate",
+          "depth": 2,
+          "name": "integrate"
+        },
+        {
+          "text": "integration",
+          "depth": 2,
+          "name": "integration"
+        },
+        {
+          "text": "integrate",
+          "depth": 2,
+          "name": "integrate"
+        },
+        {
+          "text": "integrated",
+          "depth": 2,
+          "name": "integrated"
+        },
+        {
+          "text": "support",
+          "depth": 2,
+          "name": "support"
+        },
+        {
+          "text": "support / supporter",
+          "depth": 2,
+          "name": "support / supporter"
+        },
+        {
+          "text": "support",
+          "depth": 2,
+          "name": "support"
+        },
+        {
+          "text": "supportive",
+          "depth": 2,
+          "name": "supportive"
+        },
+        {
+          "text": "advise",
+          "depth": 2,
+          "name": "advise"
+        },
+        {
+          "text": "advice / adviser",
+          "depth": 2,
+          "name": "advice / adviser"
+        },
+        {
+          "text": "advise",
+          "depth": 2,
+          "name": "advise"
+        },
+        {
+          "text": "advisory",
+          "depth": 2,
+          "name": "advisory"
+        },
+        {
+          "text": "benefit",
+          "depth": 2,
+          "name": "benefit"
+        },
+        {
+          "text": "benefit / beneficiary",
+          "depth": 2,
+          "name": "benefit / beneficiary"
+        },
+        {
+          "text": "benefit",
+          "depth": 2,
+          "name": "benefit"
+        },
+        {
+          "text": "beneficial",
+          "depth": 2,
+          "name": "beneficial"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "554:3639",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The __________ hosts basketball, volleyball, badminton, and table tennis.",
+          "depth": 1,
+          "name": "1. The __________ hosts basketball, volleyball, badminton, and table tennis."
+        },
+        {
+          "text": "2.  A __________ board announces upcoming events and activities to visitors.",
+          "depth": 1,
+          "name": "2. A __________ board announces upcoming events and activities to visitors."
+        },
+        {
+          "text": "3.  A __________ provides unpaid support and is described as the lifeblood of the center.",
+          "depth": 1,
+          "name": "3. A __________ provides unpaid support and is described as the lifeblood of the center."
+        },
+        {
+          "text": "4.  A __________ class teaches participants how to prepare meals and use kitchen equipment.",
+          "depth": 1,
+          "name": "4. A __________ class teaches participants how to prepare meals and use kitchen equipment."
+        },
+        {
+          "text": "5.  A __________ sale raises funds for the community center through home-baked goods.",
+          "depth": 1,
+          "name": "5. A __________ sale raises funds for the community center through home-baked goods."
+        },
+        {
+          "text": "6.  A __________ supervises the swimming pool to ensure the safety of all swimmers.",
+          "depth": 1,
+          "name": "6. A __________ supervises the swimming pool to ensure the safety of all swimmers."
+        },
+        {
+          "text": "7.  The __________ with a stage, projector, and microphone hosts concerts and film nights.",
+          "depth": 1,
+          "name": "7. The __________ with a stage, projector, and microphone hosts concerts and film nights."
+        },
+        {
+          "text": "8.  A __________ manages the overall schedule and coordinates activities across the center.",
+          "depth": 1,
+          "name": "8. A __________ manages the overall schedule and coordinates activities across the center."
+        },
+        {
+          "text": "9.  A farmers __________ sells locally grown produce in the community center's grounds.",
+          "depth": 1,
+          "name": "9. A farmers __________ sells locally grown produce in the community center's grounds."
+        },
+        {
+          "text": "10. __________ takes place in the auditorium during local and national elections.",
+          "depth": 1,
+          "name": "10. __________ takes place in the auditorium during local and national elections."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. gymnasium  2. bulletin  3. volunteer  4. cooking  5. bake  6. lifeguard  7. auditorium  8. coordinator  9. market  10. Voting",
+          "depth": 2,
+          "name": "1. gymnasium 2. bulletin 3. volunteer 4. cooking 5. bake 6. lifeguard 7. auditorium 8. coordinator 9. market 10. Voting"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "554:3657",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Community Centre vs Village Hall",
+          "depth": 2,
+          "name": "Community Centre vs Village Hall"
+        },
+        {
+          "text": "'Community centre' = usually in towns and cities, run by councils or charities. 'Village hall' = the rural equivalent, often the only public building in a small village. Both serve as gathering places for events, meetings, and activities. 'Parish hall' = similar, sometimes linked to a church.",
+          "depth": 2,
+          "name": "'Community centre' = usually in towns and cities, run by councils or charities. 'Village hall' = the rural equivalent, often the only public building in a small village. Both serve as gathering places for events, meetings, and activities. 'Parish hall' = similar, sometimes linked to a church."
+        },
+        {
+          "text": "Volunteering Culture",
+          "depth": 2,
+          "name": "Volunteering Culture"
+        },
+        {
+          "text": "Volunteering is a major part of British and American culture. About 20 million people volunteer regularly in the UK. Common volunteer roles: charity shop assistant, food bank helper, hospital visitor, community centre organiser, youth club leader. Volunteering looks good on CVs and university applications.",
+          "depth": 2,
+          "name": "Volunteering is a major part of British and American culture. About 20 million people volunteer regularly in the UK. Common volunteer roles: charity shop assistant, food bank helper, hospital visitor, community centre organiser, youth club leader. Volunteering looks good on CVs and university applications."
+        },
+        {
+          "text": "Centre vs Center",
+          "depth": 2,
+          "name": "Centre vs Center"
+        },
+        {
+          "text": "'Centre' = British spelling. 'Center' = American spelling. Same word, same meaning. In British English: centre, theatre, metre, litre. In American English: center, theater, meter, liter. Both are correct — just be consistent within one text.",
+          "depth": 2,
+          "name": "'Centre' = British spelling. 'Center' = American spelling. Same word, same meaning. In British English: centre, theatre, metre, litre. In American English: center, theater, meter, liter. Both are correct — just be consistent within one text."
+        },
+        {
+          "text": "Food Banks",
+          "depth": 2,
+          "name": "Food Banks"
+        },
+        {
+          "text": "A 'food bank' is a place where people who cannot afford food can collect free groceries. Users are usually referred by a doctor, social worker, or advice service. The Trussell Trust runs over 1,300 food bank centres in the UK. Donations of tinned food, pasta, and long-life items are always needed.",
+          "depth": 2,
+          "name": "A 'food bank' is a place where people who cannot afford food can collect free groceries. Users are usually referred by a doctor, social worker, or advice service. The Trussell Trust runs over 1,300 food bank centres in the UK. Donations of tinned food, pasta, and long-life items are always needed."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "554:3673",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "volunteer",
+          "depth": 2,
+          "name": "volunteer"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ work, ~ group, ~ hours",
+          "depth": 2,
+          "name": "~ work, ~ group, ~ hours"
+        },
+        {
+          "text": "community",
+          "depth": 2,
+          "name": "community"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "local ~, ~ spirit, ~ event",
+          "depth": 2,
+          "name": "local ~, ~ spirit, ~ event"
+        },
+        {
+          "text": "fundraiser",
+          "depth": 2,
+          "name": "fundraiser"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "charity ~, ~ event, ~ goal",
+          "depth": 2,
+          "name": "charity ~, ~ event, ~ goal"
+        },
+        {
+          "text": "noticeboard",
+          "depth": 2,
+          "name": "noticeboard"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ display, pin to the ~, ~ message",
+          "depth": 2,
+          "name": "~ display, pin to the ~, ~ message"
+        },
+        {
+          "text": "workshop",
+          "depth": 2,
+          "name": "workshop"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "art ~, cooking ~, ~ session",
+          "depth": 2,
+          "name": "art ~, cooking ~, ~ session"
+        },
+        {
+          "text": "council",
+          "depth": 2,
+          "name": "council"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "local ~, ~ meeting, ~ funding",
+          "depth": 2,
+          "name": "local ~, ~ meeting, ~ funding"
+        },
+        {
+          "text": "leaflet",
+          "depth": 2,
+          "name": "leaflet"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ rack, hand out ~s, ~ design",
+          "depth": 2,
+          "name": "~ rack, hand out ~s, ~ design"
+        },
+        {
+          "text": "donation",
+          "depth": 2,
+          "name": "donation"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ box, make a ~, food ~",
+          "depth": 2,
+          "name": "~ box, make a ~, food ~"
+        },
+        {
+          "text": "inclusive",
+          "depth": 2,
+          "name": "inclusive"
+        },
+        {
+          "text": "adj",
+          "depth": 2,
+          "name": "adj"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ environment, ~ policy, ~ activities",
+          "depth": 2,
+          "name": "~ environment, ~ policy, ~ activities"
+        },
+        {
+          "text": "wellbeing",
+          "depth": 2,
+          "name": "wellbeing"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "mental ~, ~ programme, ~ support",
+          "depth": 2,
+          "name": "mental ~, ~ programme, ~ support"
+        }
+      ]
+    }
+  }
+}

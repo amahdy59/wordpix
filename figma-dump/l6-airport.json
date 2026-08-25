@@ -1,0 +1,1508 @@
+{
+  "unitId": "l6-airport",
+  "name": "L6 Airport",
+  "subtopics": [],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "check-in-counter",
+      "label": "check-in counter",
+      "ipa": "/ˈtʃɛkɪn ˈkaʊntər/",
+      "cefr": "B2",
+      "imageNodeId": "52:3586"
+    },
+    {
+      "kind": "card",
+      "id": "boarding-pass",
+      "label": "boarding pass",
+      "ipa": "/ˈbɔːrdɪŋ pæs/",
+      "cefr": "B1",
+      "imageNodeId": "52:3590"
+    },
+    {
+      "kind": "card",
+      "id": "passport",
+      "label": "passport",
+      "ipa": "/ˈpæspɔːrt/",
+      "cefr": "A2",
+      "imageNodeId": "52:3594"
+    },
+    {
+      "kind": "card",
+      "id": "visa",
+      "label": "visa",
+      "ipa": "/ˈviːzə/",
+      "cefr": "A2",
+      "imageNodeId": "52:3598"
+    },
+    {
+      "kind": "card",
+      "id": "luggage",
+      "label": "luggage",
+      "ipa": "/ˈlʌɡɪdʒ/",
+      "cefr": "A2",
+      "imageNodeId": "52:3602"
+    },
+    {
+      "kind": "card",
+      "id": "suitcase",
+      "label": "suitcase",
+      "ipa": "/ˈsuːtˌkeɪs/",
+      "cefr": "A2",
+      "imageNodeId": "52:3606"
+    },
+    {
+      "kind": "card",
+      "id": "carry-on",
+      "label": "carry-on",
+      "ipa": "/ˈkæri ɒn/",
+      "cefr": "B1",
+      "imageNodeId": "52:3610"
+    },
+    {
+      "kind": "card",
+      "id": "baggage-claim",
+      "label": "baggage claim",
+      "ipa": "/ˈbæɡɪdʒ kleɪm/",
+      "cefr": "B1",
+      "imageNodeId": "52:3614"
+    },
+    {
+      "kind": "card",
+      "id": "conveyor-belt",
+      "label": "conveyor belt",
+      "ipa": "/kənˈveɪər bɛlt/",
+      "cefr": "B1",
+      "imageNodeId": "52:3618"
+    },
+    {
+      "kind": "card",
+      "id": "security-check",
+      "label": "security check",
+      "ipa": "/sɪˈkjʊərɪti tʃɛk/",
+      "cefr": "B1",
+      "imageNodeId": "52:3622"
+    },
+    {
+      "kind": "card",
+      "id": "metal-detector",
+      "label": "metal detector",
+      "ipa": "/ˈmɛtəl dɪˈtɛktər/",
+      "cefr": "B1",
+      "imageNodeId": "52:3626"
+    },
+    {
+      "kind": "card",
+      "id": "scanner",
+      "label": "scanner",
+      "ipa": "/ˈskænər/",
+      "cefr": "A2",
+      "imageNodeId": "52:3630"
+    },
+    {
+      "kind": "card",
+      "id": "terminal",
+      "label": "terminal",
+      "ipa": "/ˈtɜːrmɪnəl/",
+      "cefr": "A2",
+      "imageNodeId": "52:3639"
+    },
+    {
+      "kind": "card",
+      "id": "gate",
+      "label": "gate",
+      "ipa": "/ɡeɪt/",
+      "cefr": "A2",
+      "imageNodeId": "52:3643"
+    },
+    {
+      "kind": "card",
+      "id": "runway",
+      "label": "runway",
+      "ipa": "/ˈrʌnˌweɪ/",
+      "cefr": "A2",
+      "imageNodeId": "52:3647"
+    },
+    {
+      "kind": "card",
+      "id": "control-tower",
+      "label": "control tower",
+      "ipa": "/kənˈtroʊl ˈtaʊər/",
+      "cefr": "B1",
+      "imageNodeId": "52:3651"
+    },
+    {
+      "kind": "card",
+      "id": "hangar",
+      "label": "hangar",
+      "ipa": "/ˈhæŋər/",
+      "cefr": "A2",
+      "imageNodeId": "52:3655"
+    },
+    {
+      "kind": "card",
+      "id": "departure-lounge",
+      "label": "departure lounge",
+      "ipa": "/dɪˈpɑːrtʃər laʊndʒ/",
+      "cefr": "B2",
+      "imageNodeId": "52:3659"
+    },
+    {
+      "kind": "card",
+      "id": "arrivals-hall",
+      "label": "arrivals hall",
+      "ipa": "/əˈraɪvəlz hɔːl/",
+      "cefr": "B1",
+      "imageNodeId": "52:3663"
+    },
+    {
+      "kind": "card",
+      "id": "duty-free-shop",
+      "label": "duty-free shop",
+      "ipa": "/ˈdjuːti friː ʃɒp/",
+      "cefr": "B2",
+      "imageNodeId": "52:3667"
+    },
+    {
+      "kind": "card",
+      "id": "food-court",
+      "label": "food court",
+      "ipa": "/fuːd kɔːrt/",
+      "cefr": "B1",
+      "imageNodeId": "52:3671"
+    },
+    {
+      "kind": "card",
+      "id": "restroom",
+      "label": "restroom",
+      "ipa": "/ˈrɛstruːm/",
+      "cefr": "A2",
+      "imageNodeId": "52:3675"
+    },
+    {
+      "kind": "card",
+      "id": "elevator",
+      "label": "elevator",
+      "ipa": "/ˈɛlɪˌveɪtər/",
+      "cefr": "A2",
+      "imageNodeId": "52:3679"
+    },
+    {
+      "kind": "card",
+      "id": "escalator",
+      "label": "escalator",
+      "ipa": "/ˈɛskəˌleɪtər/",
+      "cefr": "A2",
+      "imageNodeId": "52:3683"
+    },
+    {
+      "kind": "card",
+      "id": "airplane",
+      "label": "airplane",
+      "ipa": "/ˈɛərˌpleɪn/",
+      "cefr": "A2",
+      "imageNodeId": "52:3692"
+    },
+    {
+      "kind": "card",
+      "id": "jet-engine",
+      "label": "jet engine",
+      "ipa": "/dʒɛt ˈɛndʒɪn/",
+      "cefr": "B1",
+      "imageNodeId": "52:3696"
+    },
+    {
+      "kind": "card",
+      "id": "wing",
+      "label": "wing",
+      "ipa": "/wɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "52:3700"
+    },
+    {
+      "kind": "card",
+      "id": "cockpit",
+      "label": "cockpit",
+      "ipa": "/ˈkɒkˌpɪt/",
+      "cefr": "A2",
+      "imageNodeId": "52:3704"
+    },
+    {
+      "kind": "card",
+      "id": "fuselage",
+      "label": "fuselage",
+      "ipa": "/ˈfjuːzəˌlɑːʒ/",
+      "cefr": "A2",
+      "imageNodeId": "52:3708"
+    },
+    {
+      "kind": "card",
+      "id": "propeller",
+      "label": "propeller",
+      "ipa": "/prəˈpɛlər/",
+      "cefr": "A2",
+      "imageNodeId": "52:3712"
+    },
+    {
+      "kind": "card",
+      "id": "tail",
+      "label": "tail",
+      "ipa": "/teɪl/",
+      "cefr": "A2",
+      "imageNodeId": "52:3716"
+    },
+    {
+      "kind": "card",
+      "id": "landing-gear",
+      "label": "landing gear",
+      "ipa": "/ˈlændɪŋ ɡɪər/",
+      "cefr": "B1",
+      "imageNodeId": "52:3720"
+    },
+    {
+      "kind": "card",
+      "id": "window",
+      "label": "window",
+      "ipa": "/ˈwɪndoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "52:3724"
+    },
+    {
+      "kind": "card",
+      "id": "aisle",
+      "label": "aisle",
+      "ipa": "/aɪl/",
+      "cefr": "A2",
+      "imageNodeId": "52:3728"
+    },
+    {
+      "kind": "card",
+      "id": "overhead-bin",
+      "label": "overhead bin",
+      "ipa": "/ˌoʊvərˈhɛd bɪn/",
+      "cefr": "B1",
+      "imageNodeId": "52:3732"
+    },
+    {
+      "kind": "card",
+      "id": "tray-table",
+      "label": "tray table",
+      "ipa": "/treɪ ˈteɪbəl/",
+      "cefr": "B1",
+      "imageNodeId": "52:3736"
+    },
+    {
+      "kind": "card",
+      "id": "pilot",
+      "label": "pilot",
+      "ipa": "/ˈpaɪlət/",
+      "cefr": "A2",
+      "imageNodeId": "52:3745"
+    },
+    {
+      "kind": "card",
+      "id": "co-pilot",
+      "label": "co-pilot",
+      "ipa": "/ˈkoʊˌpaɪlət/",
+      "cefr": "B1",
+      "imageNodeId": "52:3749"
+    },
+    {
+      "kind": "card",
+      "id": "flight-attendant",
+      "label": "flight attendant",
+      "ipa": "/flaɪt əˈtɛndənt/",
+      "cefr": "B2",
+      "imageNodeId": "52:3753"
+    },
+    {
+      "kind": "card",
+      "id": "passenger",
+      "label": "passenger",
+      "ipa": "/ˈpæsɪndʒər/",
+      "cefr": "A2",
+      "imageNodeId": "52:3757"
+    },
+    {
+      "kind": "card",
+      "id": "ground-crew",
+      "label": "ground crew",
+      "ipa": "/ɡraʊnd kruː/",
+      "cefr": "B1",
+      "imageNodeId": "52:3761"
+    },
+    {
+      "kind": "card",
+      "id": "air-traffic-controller",
+      "label": "air traffic controller",
+      "ipa": "/ɛər ˈtræfɪk kənˈtroʊlər/",
+      "cefr": "B2",
+      "imageNodeId": "52:3765"
+    },
+    {
+      "kind": "card",
+      "id": "customs-officer",
+      "label": "customs officer",
+      "ipa": "/ˈkʌstəmz ˈɒfɪsər/",
+      "cefr": "B2",
+      "imageNodeId": "52:3769"
+    },
+    {
+      "kind": "card",
+      "id": "immigration-officer",
+      "label": "immigration officer",
+      "ipa": "/ˌɪmɪˈɡreɪʃən ˈɒfɪsər/",
+      "cefr": "B2",
+      "imageNodeId": "52:3773"
+    },
+    {
+      "kind": "card",
+      "id": "baggage-handler",
+      "label": "baggage handler",
+      "ipa": "/ˈbæɡɪdʒ ˈhændlər/",
+      "cefr": "B2",
+      "imageNodeId": "52:3777"
+    },
+    {
+      "kind": "card",
+      "id": "mechanic",
+      "label": "mechanic",
+      "ipa": "/məˈkænɪk/",
+      "cefr": "A2",
+      "imageNodeId": "52:3781"
+    },
+    {
+      "kind": "card",
+      "id": "boarding",
+      "label": "boarding",
+      "ipa": "/ˈbɔːrdɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "52:3790"
+    },
+    {
+      "kind": "card",
+      "id": "takeoff",
+      "label": "takeoff",
+      "ipa": "/ˈteɪkˌɒf/",
+      "cefr": "A2",
+      "imageNodeId": "52:3794"
+    },
+    {
+      "kind": "card",
+      "id": "landing",
+      "label": "landing",
+      "ipa": "/ˈlændɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "52:3798"
+    },
+    {
+      "kind": "card",
+      "id": "taxiing",
+      "label": "taxiing",
+      "ipa": "/ˈtæksiɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "52:3802"
+    },
+    {
+      "kind": "card",
+      "id": "turbulence",
+      "label": "turbulence",
+      "ipa": "/ˈtɜːrbjʊləns/",
+      "cefr": "B1",
+      "imageNodeId": "52:3806"
+    },
+    {
+      "kind": "card",
+      "id": "announcement",
+      "label": "announcement",
+      "ipa": "/əˈnaʊnsmənt/",
+      "cefr": "B1",
+      "imageNodeId": "52:3810"
+    },
+    {
+      "kind": "card",
+      "id": "fasten-seatbelt",
+      "label": "fasten seatbelt",
+      "ipa": "/ˈfɑːsən ˈsiːtbɛlt/",
+      "cefr": "B2",
+      "imageNodeId": "52:3814"
+    },
+    {
+      "kind": "card",
+      "id": "emergency-exit",
+      "label": "emergency exit",
+      "ipa": "/ɪˈmɜːrdʒənsi ˈɛɡzɪt/",
+      "cefr": "B1",
+      "imageNodeId": "52:3818"
+    },
+    {
+      "kind": "card",
+      "id": "life-vest",
+      "label": "life vest",
+      "ipa": "/laɪf vɛst/",
+      "cefr": "B1",
+      "imageNodeId": "52:3822"
+    },
+    {
+      "kind": "card",
+      "id": "oxygen-mask",
+      "label": "oxygen mask",
+      "ipa": "/ˈɒksɪdʒən mæsk/",
+      "cefr": "B1",
+      "imageNodeId": "52:3826"
+    },
+    {
+      "kind": "card",
+      "id": "delay",
+      "label": "delay",
+      "ipa": "/dɪˈleɪ/",
+      "cefr": "A2",
+      "imageNodeId": "52:3830"
+    },
+    {
+      "kind": "card",
+      "id": "layover",
+      "label": "layover",
+      "ipa": "/ˈleɪˌoʊvər/",
+      "cefr": "A2",
+      "imageNodeId": "52:3834"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "547:279",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "547:281",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1 · Topic: The Airport",
+          "depth": 1,
+          "name": "Level: B1 · Topic: The Airport"
+        },
+        {
+          "text": "Flying for the First Time\n\nAhmad was excited but nervous. It was his first time flying, and he arrived at the airport two hours before his flight.\n\nFirst, he went to the check-in desk. The airline agent asked for his passport and booking reference. She printed his boarding pass and put a luggage tag on his suitcase before sending it down the conveyor belt to be loaded onto the plane.\n\nNext, Ahmad walked to the security checkpoint. He placed his backpack, phone, and belt in a plastic tray on the X-ray machine. A security officer asked him to walk through the metal detector. Everything was fine, so he collected his things and continued.\n\nIn the departure lounge, Ahmad checked the departure board for his gate number. His flight to Istanbul was on time. He had an hour to wait, so he bought a sandwich at a café and exchanged some money at the currency exchange counter.\n\nWhen boarding was announced, Ahmad walked to Gate 14. He scanned his boarding pass and walked down the jet bridge to the aircraft. A flight attendant welcomed him and helped him find his seat — 22A, a window seat.\n\nDuring the flight, the captain made an announcement about the flying time and weather. Ahmad watched a film on the in-flight entertainment screen and had a small meal served by the cabin crew.\n\nWhen the plane landed, Ahmad followed the signs to passport control. After collecting his luggage from the baggage carousel, he walked through customs and into the arrivals hall. His uncle was there waiting with a big smile.",
+          "depth": 1,
+          "name": "Flying for the First Time Ahmad was excited but nervous. It was his first time flying, and he arrived at the airport two hours before his flight. First, he went to the check-in desk. The airline agent asked for his passport and booking reference. She printed his boarding pass and put a luggage tag on his suitcase before sending it down the conveyor belt to be loaded onto the plane. Next, Ahmad walked to the security checkpoint. He placed his backpack, phone, and belt in a plastic tray on the X-ray machine. A security officer asked him to walk through the metal detector. Everything was fine, so he collected his things and continued. In the departure lounge, Ahmad checked the departure board for his gate number. His flight to Istanbul was on time. He had an hour to wait, so he bought a sandwich at a café and exchanged some money at the currency exchange counter. When boarding was announced, Ahmad walked to Gate 14. He scanned his boarding pass and walked down the jet bridge to the aircraft. A flight attendant welcomed him and helped him find his seat — 22A, a window seat. During the flight, the captain made an announcement about the flying time and weather. Ahmad watched a film on the in-flight entertainment screen and had a small meal served by the cabin crew. When the plane landed, Ahmad followed the signs to passport control. After collecting his luggage from the baggage carousel, he walked through customs and into the arrivals hall. His uncle was there waiting with a big smile."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. How early did Ahmad arrive at the airport before his flight?",
+          "depth": 1,
+          "name": "1. How early did Ahmad arrive at the airport before his flight?"
+        },
+        {
+          "text": "2. What happened at the check-in desk?",
+          "depth": 1,
+          "name": "2. What happened at the check-in desk?"
+        },
+        {
+          "text": "3. What did Ahmad have to do at the security checkpoint?",
+          "depth": 1,
+          "name": "3. What did Ahmad have to do at the security checkpoint?"
+        },
+        {
+          "text": "4. How did Ahmad spend his time in the departure lounge?",
+          "depth": 1,
+          "name": "4. How did Ahmad spend his time in the departure lounge?"
+        },
+        {
+          "text": "5. What steps did Ahmad follow after the plane landed?",
+          "depth": 1,
+          "name": "5. What steps did Ahmad follow after the plane landed?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "547:294",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "take off",
+          "depth": 2,
+          "name": "take off"
+        },
+        {
+          "text": "(of a plane) leave the ground; also: become successful",
+          "depth": 2,
+          "name": "(of a plane) leave the ground; also: become successful"
+        },
+        {
+          "text": "\"The plane took off ten minutes late due to strong winds.\"",
+          "depth": 2,
+          "name": "\"The plane took off ten minutes late due to strong winds.\""
+        },
+        {
+          "text": "touch down",
+          "depth": 2,
+          "name": "touch down"
+        },
+        {
+          "text": "(of a plane) land",
+          "depth": 2,
+          "name": "(of a plane) land"
+        },
+        {
+          "text": "\"We touched down in London at six in the morning.\"",
+          "depth": 2,
+          "name": "\"We touched down in London at six in the morning.\""
+        },
+        {
+          "text": "check in",
+          "depth": 2,
+          "name": "check in"
+        },
+        {
+          "text": "register at the airport or hotel",
+          "depth": 2,
+          "name": "register at the airport or hotel"
+        },
+        {
+          "text": "\"You can check in online twenty-four hours before your flight.\"",
+          "depth": 2,
+          "name": "\"You can check in online twenty-four hours before your flight.\""
+        },
+        {
+          "text": "pick up (luggage)",
+          "depth": 2,
+          "name": "pick up (luggage)"
+        },
+        {
+          "text": "collect bags from the carousel",
+          "depth": 2,
+          "name": "collect bags from the carousel"
+        },
+        {
+          "text": "\"I picked up my suitcase from carousel three.\"",
+          "depth": 2,
+          "name": "\"I picked up my suitcase from carousel three.\""
+        },
+        {
+          "text": "see someone off",
+          "depth": 2,
+          "name": "see someone off"
+        },
+        {
+          "text": "go to the airport/station to say goodbye",
+          "depth": 2,
+          "name": "go to the airport/station to say goodbye"
+        },
+        {
+          "text": "\"My family came to the airport to see me off.\"",
+          "depth": 2,
+          "name": "\"My family came to the airport to see me off.\""
+        },
+        {
+          "text": "get through (security)",
+          "depth": 2,
+          "name": "get through (security)"
+        },
+        {
+          "text": "pass through a checkpoint",
+          "depth": 2,
+          "name": "pass through a checkpoint"
+        },
+        {
+          "text": "\"It took twenty minutes to get through security.\"",
+          "depth": 2,
+          "name": "\"It took twenty minutes to get through security.\""
+        },
+        {
+          "text": "on time / delayed",
+          "depth": 2,
+          "name": "on time / delayed"
+        },
+        {
+          "text": "arriving as scheduled / arriving late",
+          "depth": 2,
+          "name": "arriving as scheduled / arriving late"
+        },
+        {
+          "text": "\"The flight was delayed by two hours because of fog.\"",
+          "depth": 2,
+          "name": "\"The flight was delayed by two hours because of fog.\""
+        },
+        {
+          "text": "carry-on / hand luggage",
+          "depth": 2,
+          "name": "carry-on / hand luggage"
+        },
+        {
+          "text": "a small bag you take on the plane",
+          "depth": 2,
+          "name": "a small bag you take on the plane"
+        },
+        {
+          "text": "\"Make sure your carry-on fits in the overhead locker.\"",
+          "depth": 2,
+          "name": "\"Make sure your carry-on fits in the overhead locker.\""
+        },
+        {
+          "text": "red-eye (flight)",
+          "depth": 2,
+          "name": "red-eye (flight)"
+        },
+        {
+          "text": "a late-night flight that arrives early morning",
+          "depth": 2,
+          "name": "a late-night flight that arrives early morning"
+        },
+        {
+          "text": "\"I took the red-eye from New York to London.\"",
+          "depth": 2,
+          "name": "\"I took the red-eye from New York to London.\""
+        },
+        {
+          "text": "jet lag",
+          "depth": 2,
+          "name": "jet lag"
+        },
+        {
+          "text": "tiredness after flying across time zones",
+          "depth": 2,
+          "name": "tiredness after flying across time zones"
+        },
+        {
+          "text": "\"I always get jet lag when I fly to Asia.\"",
+          "depth": 2,
+          "name": "\"I always get jet lag when I fly to Asia.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "547:338",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: At the check-in desk",
+          "depth": 1,
+          "name": "Scene: At the check-in desk"
+        },
+        {
+          "text": "Agent:",
+          "depth": 2,
+          "name": "Agent:"
+        },
+        {
+          "text": "Good morning. May I see your passport and booking reference, please?",
+          "depth": 2,
+          "name": "Good morning. May I see your passport and booking reference, please?"
+        },
+        {
+          "text": "Passenger:",
+          "depth": 2,
+          "name": "Passenger:"
+        },
+        {
+          "text": "Here you are. My flight is to Istanbul at eleven fifteen.",
+          "depth": 2,
+          "name": "Here you are. My flight is to Istanbul at eleven fifteen."
+        },
+        {
+          "text": "Agent:",
+          "depth": 2,
+          "name": "Agent:"
+        },
+        {
+          "text": "Thank you. Would you like a window seat or an aisle seat?",
+          "depth": 2,
+          "name": "Thank you. Would you like a window seat or an aisle seat?"
+        },
+        {
+          "text": "Passenger:",
+          "depth": 2,
+          "name": "Passenger:"
+        },
+        {
+          "text": "A window seat, please.",
+          "depth": 2,
+          "name": "A window seat, please."
+        },
+        {
+          "text": "Agent:",
+          "depth": 2,
+          "name": "Agent:"
+        },
+        {
+          "text": "Certainly. Are you checking in any luggage?",
+          "depth": 2,
+          "name": "Certainly. Are you checking in any luggage?"
+        },
+        {
+          "text": "Passenger:",
+          "depth": 2,
+          "name": "Passenger:"
+        },
+        {
+          "text": "Yes, one suitcase.",
+          "depth": 2,
+          "name": "Yes, one suitcase."
+        },
+        {
+          "text": "Agent:",
+          "depth": 2,
+          "name": "Agent:"
+        },
+        {
+          "text": "Please place it on the scale. It's eighteen kilos — that's within the limit.",
+          "depth": 2,
+          "name": "Please place it on the scale. It's eighteen kilos — that's within the limit."
+        },
+        {
+          "text": "Passenger:",
+          "depth": 2,
+          "name": "Passenger:"
+        },
+        {
+          "text": "Do I need to print my boarding pass?",
+          "depth": 2,
+          "name": "Do I need to print my boarding pass?"
+        },
+        {
+          "text": "Agent:",
+          "depth": 2,
+          "name": "Agent:"
+        },
+        {
+          "text": "No, I've printed it for you. Your gate is B7. Boarding starts at ten forty-five.",
+          "depth": 2,
+          "name": "No, I've printed it for you. Your gate is B7. Boarding starts at ten forty-five."
+        },
+        {
+          "text": "Passenger:",
+          "depth": 2,
+          "name": "Passenger:"
+        },
+        {
+          "text": "Thank you. Where is the security checkpoint?",
+          "depth": 2,
+          "name": "Thank you. Where is the security checkpoint?"
+        },
+        {
+          "text": "Agent:",
+          "depth": 2,
+          "name": "Agent:"
+        },
+        {
+          "text": "Go straight ahead and follow the signs. Have a pleasant flight!",
+          "depth": 2,
+          "name": "Go straight ahead and follow the signs. Have a pleasant flight!"
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "547:376",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I took the plane to London.\"",
+          "depth": 2,
+          "name": "❌ \"I took the plane to London.\""
+        },
+        {
+          "text": "✅ \"I took a flight to London.\" / \"I flew to London.\"",
+          "depth": 2,
+          "name": "✅ \"I took a flight to London.\" / \"I flew to London.\""
+        },
+        {
+          "text": "You 'take a flight' or 'fly', not 'take the plane'. 'Take the plane' is sometimes used informally but sounds unnatural in standard English.",
+          "depth": 2,
+          "name": "You 'take a flight' or 'fly', not 'take the plane'. 'Take the plane' is sometimes used informally but sounds unnatural in standard English."
+        },
+        {
+          "text": "❌ \"The plane will land in the airport.\"",
+          "depth": 2,
+          "name": "❌ \"The plane will land in the airport.\""
+        },
+        {
+          "text": "✅ \"The plane will land at the airport.\"",
+          "depth": 2,
+          "name": "✅ \"The plane will land at the airport.\""
+        },
+        {
+          "text": "We arrive 'at' the airport (a point/location), not 'in' the airport.",
+          "depth": 2,
+          "name": "We arrive 'at' the airport (a point/location), not 'in' the airport."
+        },
+        {
+          "text": "❌ \"I must do the check-in before the flight.\"",
+          "depth": 2,
+          "name": "❌ \"I must do the check-in before the flight.\""
+        },
+        {
+          "text": "✅ \"I must check in before the flight.\"",
+          "depth": 2,
+          "name": "✅ \"I must check in before the flight.\""
+        },
+        {
+          "text": "'Check in' is a phrasal verb. The noun form 'check-in' (hyphenated) is used with 'the': 'the check-in desk'.",
+          "depth": 2,
+          "name": "'Check in' is a phrasal verb. The noun form 'check-in' (hyphenated) is used with 'the': 'the check-in desk'."
+        },
+        {
+          "text": "❌ \"My luggage are very heavy.\"",
+          "depth": 2,
+          "name": "❌ \"My luggage are very heavy.\""
+        },
+        {
+          "text": "✅ \"My luggage is very heavy.\"",
+          "depth": 2,
+          "name": "✅ \"My luggage is very heavy.\""
+        },
+        {
+          "text": "'Luggage' and 'baggage' are uncountable nouns in English. Use 'is', not 'are'. For countable items, say 'bags' or 'suitcases'.",
+          "depth": 2,
+          "name": "'Luggage' and 'baggage' are uncountable nouns in English. Use 'is', not 'are'. For countable items, say 'bags' or 'suitcases'."
+        },
+        {
+          "text": "❌ \"The flight attendant said us to fasten our seatbelts.\"",
+          "depth": 2,
+          "name": "❌ \"The flight attendant said us to fasten our seatbelts.\""
+        },
+        {
+          "text": "✅ \"The flight attendant told us to fasten our seatbelts.\"",
+          "depth": 2,
+          "name": "✅ \"The flight attendant told us to fasten our seatbelts.\""
+        },
+        {
+          "text": "Use 'told' (not 'said') when there is a person object: told + person + to do. 'Said' doesn't take a person object directly.",
+          "depth": 2,
+          "name": "Use 'told' (not 'said') when there is a person object: told + person + to do. 'Said' doesn't take a person object directly."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "547:400",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how airport vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how airport vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "depart",
+          "depth": 2,
+          "name": "depart"
+        },
+        {
+          "text": "departure / departing",
+          "depth": 2,
+          "name": "departure / departing"
+        },
+        {
+          "text": "depart",
+          "depth": 2,
+          "name": "depart"
+        },
+        {
+          "text": "departed",
+          "depth": 2,
+          "name": "departed"
+        },
+        {
+          "text": "arrive",
+          "depth": 2,
+          "name": "arrive"
+        },
+        {
+          "text": "arrival",
+          "depth": 2,
+          "name": "arrival"
+        },
+        {
+          "text": "arrive",
+          "depth": 2,
+          "name": "arrive"
+        },
+        {
+          "text": "arriving",
+          "depth": 2,
+          "name": "arriving"
+        },
+        {
+          "text": "board",
+          "depth": 2,
+          "name": "board"
+        },
+        {
+          "text": "boarding / board",
+          "depth": 2,
+          "name": "boarding / board"
+        },
+        {
+          "text": "board",
+          "depth": 2,
+          "name": "board"
+        },
+        {
+          "text": "boarded",
+          "depth": 2,
+          "name": "boarded"
+        },
+        {
+          "text": "fly",
+          "depth": 2,
+          "name": "fly"
+        },
+        {
+          "text": "flight / flyer",
+          "depth": 2,
+          "name": "flight / flyer"
+        },
+        {
+          "text": "fly",
+          "depth": 2,
+          "name": "fly"
+        },
+        {
+          "text": "flying",
+          "depth": 2,
+          "name": "flying"
+        },
+        {
+          "text": "land",
+          "depth": 2,
+          "name": "land"
+        },
+        {
+          "text": "landing",
+          "depth": 2,
+          "name": "landing"
+        },
+        {
+          "text": "land",
+          "depth": 2,
+          "name": "land"
+        },
+        {
+          "text": "landed",
+          "depth": 2,
+          "name": "landed"
+        },
+        {
+          "text": "secure",
+          "depth": 2,
+          "name": "secure"
+        },
+        {
+          "text": "security / secureness",
+          "depth": 2,
+          "name": "security / secureness"
+        },
+        {
+          "text": "secure",
+          "depth": 2,
+          "name": "secure"
+        },
+        {
+          "text": "secure",
+          "depth": 2,
+          "name": "secure"
+        },
+        {
+          "text": "announce",
+          "depth": 2,
+          "name": "announce"
+        },
+        {
+          "text": "announcement / announcer",
+          "depth": 2,
+          "name": "announcement / announcer"
+        },
+        {
+          "text": "announce",
+          "depth": 2,
+          "name": "announce"
+        },
+        {
+          "text": "announced",
+          "depth": 2,
+          "name": "announced"
+        },
+        {
+          "text": "delay",
+          "depth": 2,
+          "name": "delay"
+        },
+        {
+          "text": "delay",
+          "depth": 2,
+          "name": "delay"
+        },
+        {
+          "text": "delay",
+          "depth": 2,
+          "name": "delay"
+        },
+        {
+          "text": "delayed",
+          "depth": 2,
+          "name": "delayed"
+        },
+        {
+          "text": "cancel",
+          "depth": 2,
+          "name": "cancel"
+        },
+        {
+          "text": "cancellation",
+          "depth": 2,
+          "name": "cancellation"
+        },
+        {
+          "text": "cancel",
+          "depth": 2,
+          "name": "cancel"
+        },
+        {
+          "text": "cancelled",
+          "depth": 2,
+          "name": "cancelled"
+        },
+        {
+          "text": "connect",
+          "depth": 2,
+          "name": "connect"
+        },
+        {
+          "text": "connection / connector",
+          "depth": 2,
+          "name": "connection / connector"
+        },
+        {
+          "text": "connect",
+          "depth": 2,
+          "name": "connect"
+        },
+        {
+          "text": "connected",
+          "depth": 2,
+          "name": "connected"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "547:460",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  Please go to the check-in __________ to get your boarding pass.",
+          "depth": 1,
+          "name": "1. Please go to the check-in __________ to get your boarding pass."
+        },
+        {
+          "text": "2.  The flight was __________ by three hours because of bad weather.",
+          "depth": 1,
+          "name": "2. The flight was __________ by three hours because of bad weather."
+        },
+        {
+          "text": "3.  You must show your __________ at passport control.",
+          "depth": 1,
+          "name": "3. You must show your __________ at passport control."
+        },
+        {
+          "text": "4.  Put your bags in the overhead __________ above your seat.",
+          "depth": 1,
+          "name": "4. Put your bags in the overhead __________ above your seat."
+        },
+        {
+          "text": "5.  The __________ board shows all the flights leaving today.",
+          "depth": 1,
+          "name": "5. The __________ board shows all the flights leaving today."
+        },
+        {
+          "text": "6.  Ahmad collected his suitcase from the baggage __________.",
+          "depth": 1,
+          "name": "6. Ahmad collected his suitcase from the baggage __________."
+        },
+        {
+          "text": "7.  A __________ attendant served drinks during the flight.",
+          "depth": 1,
+          "name": "7. A __________ attendant served drinks during the flight."
+        },
+        {
+          "text": "8.  Passengers walked through the __________ detector at security.",
+          "depth": 1,
+          "name": "8. Passengers walked through the __________ detector at security."
+        },
+        {
+          "text": "9.  The __________ announced we would be landing in twenty minutes.",
+          "depth": 1,
+          "name": "9. The __________ announced we would be landing in twenty minutes."
+        },
+        {
+          "text": "10. After customs, Ahmad walked into the __________ hall.",
+          "depth": 1,
+          "name": "10. After customs, Ahmad walked into the __________ hall."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. desk  2. delayed  3. passport  4. locker  5. departure  6. carousel  7. flight  8. metal  9. captain  10. arrivals",
+          "depth": 2,
+          "name": "1. desk 2. delayed 3. passport 4. locker 5. departure 6. carousel 7. flight 8. metal 9. captain 10. arrivals"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "547:478",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "🇬🇧 vs 🇺🇸 Airport Vocabulary",
+          "depth": 2,
+          "name": "🇬🇧 vs 🇺🇸 Airport Vocabulary"
+        },
+        {
+          "text": "British: 'hand luggage' / American: 'carry-on'. British: 'departure lounge' / American: 'gate area'. British: 'return ticket' / American: 'round-trip ticket'. British: 'queue' / American: 'line'.",
+          "depth": 2,
+          "name": "British: 'hand luggage' / American: 'carry-on'. British: 'departure lounge' / American: 'gate area'. British: 'return ticket' / American: 'round-trip ticket'. British: 'queue' / American: 'line'."
+        },
+        {
+          "text": "Airport Security Rules",
+          "depth": 2,
+          "name": "Airport Security Rules"
+        },
+        {
+          "text": "Liquids must be in containers of 100ml or less, placed in a clear plastic bag. Sharp objects are not allowed in hand luggage. These rules are standard worldwide but may vary slightly by country.",
+          "depth": 2,
+          "name": "Liquids must be in containers of 100ml or less, placed in a clear plastic bag. Sharp objects are not allowed in hand luggage. These rules are standard worldwide but may vary slightly by country."
+        },
+        {
+          "text": "Boarding Zones & Priority",
+          "depth": 2,
+          "name": "Boarding Zones & Priority"
+        },
+        {
+          "text": "Airlines often board by zones (back rows first) or by class (business first). 'Priority boarding' lets you board early — it's often included with premium tickets or can be purchased separately.",
+          "depth": 2,
+          "name": "Airlines often board by zones (back rows first) or by class (business first). 'Priority boarding' lets you board early — it's often included with premium tickets or can be purchased separately."
+        },
+        {
+          "text": "Connecting Flights",
+          "depth": 2,
+          "name": "Connecting Flights"
+        },
+        {
+          "text": "A 'connecting flight' means changing planes at an intermediate airport. The minimum connection time varies — usually 1–3 hours. You may need to go through security again between connections.",
+          "depth": 2,
+          "name": "A 'connecting flight' means changing planes at an intermediate airport. The minimum connection time varies — usually 1–3 hours. You may need to go through security again between connections."
+        },
+        {
+          "text": "Duty-Free Shopping",
+          "depth": 2,
+          "name": "Duty-Free Shopping"
+        },
+        {
+          "text": "'Duty-free' means goods sold without local taxes. Common purchases include perfume, chocolate, and electronics. The term comes from 'customs duty' — a tax on imports.",
+          "depth": 2,
+          "name": "'Duty-free' means goods sold without local taxes. Common purchases include perfume, chocolate, and electronics. The term comes from 'customs duty' — a tax on imports."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "547:497",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "boarding pass",
+          "depth": 2,
+          "name": "boarding pass"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "show your ~, print ~, mobile ~",
+          "depth": 2,
+          "name": "show your ~, print ~, mobile ~"
+        },
+        {
+          "text": "departure",
+          "depth": 2,
+          "name": "departure"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ lounge, ~ board, ~ gate",
+          "depth": 2,
+          "name": "~ lounge, ~ board, ~ gate"
+        },
+        {
+          "text": "luggage",
+          "depth": 2,
+          "name": "luggage"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "hand ~, check-in ~, ~ allowance",
+          "depth": 2,
+          "name": "hand ~, check-in ~, ~ allowance"
+        },
+        {
+          "text": "passport",
+          "depth": 2,
+          "name": "passport"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ control, ~ holder, valid ~",
+          "depth": 2,
+          "name": "~ control, ~ holder, valid ~"
+        },
+        {
+          "text": "terminal",
+          "depth": 2,
+          "name": "terminal"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "airport ~, ~ building, ~ map",
+          "depth": 2,
+          "name": "airport ~, ~ building, ~ map"
+        },
+        {
+          "text": "gate",
+          "depth": 2,
+          "name": "gate"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ number, boarding ~, ~ change",
+          "depth": 2,
+          "name": "~ number, boarding ~, ~ change"
+        },
+        {
+          "text": "security",
+          "depth": 2,
+          "name": "security"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ checkpoint, ~ officer, go through ~",
+          "depth": 2,
+          "name": "~ checkpoint, ~ officer, go through ~"
+        },
+        {
+          "text": "customs",
+          "depth": 2,
+          "name": "customs"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "go through ~, ~ declaration, ~ officer",
+          "depth": 2,
+          "name": "go through ~, ~ declaration, ~ officer"
+        },
+        {
+          "text": "carousel",
+          "depth": 2,
+          "name": "carousel"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "baggage ~, luggage ~, ~ number",
+          "depth": 2,
+          "name": "baggage ~, luggage ~, ~ number"
+        },
+        {
+          "text": "runway",
+          "depth": 2,
+          "name": "runway"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ lights, land on the ~, ~ length",
+          "depth": 2,
+          "name": "~ lights, land on the ~, ~ length"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "unitId": "building-and-construction",
+  "name": "Building & Construction",
+  "subtopics": [
+    {
+      "id": "structural-elements",
+      "title": "Structural Elements",
+      "wordIds": [
+        "foundation",
+        "column",
+        "beam",
+        "wall",
+        "floor",
+        "roof",
+        "staircase",
+        "elevator-shaft",
+        "load-bearing-wall",
+        "truss"
+      ]
+    },
+    {
+      "id": "building-materials",
+      "title": "Building Materials",
+      "wordIds": [
+        "concrete",
+        "steel",
+        "brick",
+        "glass",
+        "timber",
+        "stone",
+        "aluminum",
+        "insulation",
+        "drywall",
+        "rebar"
+      ]
+    },
+    {
+      "id": "construction-process",
+      "title": "Construction Process",
+      "wordIds": [
+        "excavation",
+        "pouring-foundation",
+        "framing",
+        "roofing",
+        "plumbing",
+        "electrical",
+        "drywall-installation",
+        "painting",
+        "flooring",
+        "inspection"
+      ]
+    },
+    {
+      "id": "construction-workers",
+      "title": "Construction Workers",
+      "wordIds": [
+        "general-contractor",
+        "foreman",
+        "carpenter",
+        "electrician",
+        "plumber",
+        "mason",
+        "ironworker",
+        "crane-operator",
+        "surveyor",
+        "safety-inspector"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "foundation",
+      "label": "Foundation",
+      "ipa": "/faʊnˈdeɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:19234"
+    },
+    {
+      "kind": "card",
+      "id": "column",
+      "label": "Column",
+      "ipa": "/ˈkɒləm/",
+      "cefr": "B2",
+      "imageNodeId": "467:19238"
+    },
+    {
+      "kind": "card",
+      "id": "beam",
+      "label": "Beam",
+      "ipa": "/biːm/",
+      "cefr": "B2",
+      "imageNodeId": "467:19242"
+    },
+    {
+      "kind": "card",
+      "id": "wall",
+      "label": "Wall",
+      "ipa": "/wɔːl/",
+      "cefr": "B2",
+      "imageNodeId": "467:19246"
+    },
+    {
+      "kind": "card",
+      "id": "floor",
+      "label": "Floor",
+      "ipa": "/flɔːr/",
+      "cefr": "B2",
+      "imageNodeId": "467:19250"
+    },
+    {
+      "kind": "card",
+      "id": "roof",
+      "label": "Roof",
+      "ipa": "/ruːf/",
+      "cefr": "B2",
+      "imageNodeId": "467:19254"
+    },
+    {
+      "kind": "card",
+      "id": "staircase",
+      "label": "Staircase",
+      "ipa": "/ˈstɛərˌkeɪs/",
+      "cefr": "B2",
+      "imageNodeId": "467:19258"
+    },
+    {
+      "kind": "card",
+      "id": "elevator-shaft",
+      "label": "Elevator Shaft",
+      "ipa": "/ˈɛlɪˌveɪtər ʃæft/",
+      "cefr": "C1",
+      "imageNodeId": "467:19262"
+    },
+    {
+      "kind": "card",
+      "id": "load-bearing-wall",
+      "label": "Load-Bearing Wall",
+      "ipa": "/loʊd ˈbɛərɪŋ wɔːl/",
+      "cefr": "C1",
+      "imageNodeId": "467:19266"
+    },
+    {
+      "kind": "card",
+      "id": "truss",
+      "label": "Truss",
+      "ipa": "/trʌs/",
+      "cefr": "B2",
+      "imageNodeId": "467:19270"
+    },
+    {
+      "kind": "card",
+      "id": "concrete",
+      "label": "Concrete",
+      "ipa": "/ˈkɒnkriːt/",
+      "cefr": "B2",
+      "imageNodeId": "467:19279"
+    },
+    {
+      "kind": "card",
+      "id": "steel",
+      "label": "Steel",
+      "ipa": "/stiːl/",
+      "cefr": "B2",
+      "imageNodeId": "467:19283"
+    },
+    {
+      "kind": "card",
+      "id": "brick",
+      "label": "Brick",
+      "ipa": "/brɪk/",
+      "cefr": "B2",
+      "imageNodeId": "467:19287"
+    },
+    {
+      "kind": "card",
+      "id": "glass",
+      "label": "Glass",
+      "ipa": "/ɡlæs/",
+      "cefr": "B2",
+      "imageNodeId": "467:19291"
+    },
+    {
+      "kind": "card",
+      "id": "timber",
+      "label": "Timber",
+      "ipa": "/ˈtɪmbər/",
+      "cefr": "B2",
+      "imageNodeId": "467:19295"
+    },
+    {
+      "kind": "card",
+      "id": "stone",
+      "label": "Stone",
+      "ipa": "/stoʊn/",
+      "cefr": "B2",
+      "imageNodeId": "467:19299"
+    },
+    {
+      "kind": "card",
+      "id": "aluminum",
+      "label": "Aluminum",
+      "ipa": "/əˈluːmɪnəm/",
+      "cefr": "B2",
+      "imageNodeId": "467:19303"
+    },
+    {
+      "kind": "card",
+      "id": "insulation",
+      "label": "Insulation",
+      "ipa": "/ˌɪnsjʊˈleɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:19307"
+    },
+    {
+      "kind": "card",
+      "id": "drywall",
+      "label": "Drywall",
+      "ipa": "/ˈdraɪˌwɔːl/",
+      "cefr": "B2",
+      "imageNodeId": "467:19311"
+    },
+    {
+      "kind": "card",
+      "id": "rebar",
+      "label": "Rebar",
+      "ipa": "/ˈriːˌbɑːr/",
+      "cefr": "B2",
+      "imageNodeId": "467:19315"
+    },
+    {
+      "kind": "card",
+      "id": "excavation",
+      "label": "Excavation",
+      "ipa": "/ˌɛkskəˈveɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:19324"
+    },
+    {
+      "kind": "card",
+      "id": "pouring-foundation",
+      "label": "Pouring Foundation",
+      "ipa": "/ˈpɔːrɪŋ faʊnˈdeɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:19328"
+    },
+    {
+      "kind": "card",
+      "id": "framing",
+      "label": "Framing",
+      "ipa": "/ˈfreɪmɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:19332"
+    },
+    {
+      "kind": "card",
+      "id": "roofing",
+      "label": "Roofing",
+      "ipa": "/ˈruːfɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:19336"
+    },
+    {
+      "kind": "card",
+      "id": "plumbing",
+      "label": "Plumbing",
+      "ipa": "/ˈplʌmɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:19340"
+    },
+    {
+      "kind": "card",
+      "id": "electrical",
+      "label": "Electrical",
+      "ipa": "/ɪˈlɛktrɪkəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:19344"
+    },
+    {
+      "kind": "card",
+      "id": "drywall-installation",
+      "label": "Drywall Installation",
+      "ipa": "/ˈdraɪˌwɔːl ˌɪnstəˈleɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:19348"
+    },
+    {
+      "kind": "card",
+      "id": "painting",
+      "label": "Painting",
+      "ipa": "/ˈpeɪntɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:19352"
+    },
+    {
+      "kind": "card",
+      "id": "flooring",
+      "label": "Flooring",
+      "ipa": "/ˈflɔːrɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:19356"
+    },
+    {
+      "kind": "card",
+      "id": "inspection",
+      "label": "Inspection",
+      "ipa": "/ɪnˈspɛkʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:19360"
+    },
+    {
+      "kind": "card",
+      "id": "general-contractor",
+      "label": "General Contractor",
+      "ipa": "/ˈdʒɛnərəl ˈkɒntræktər/",
+      "cefr": "C1",
+      "imageNodeId": "467:19369"
+    },
+    {
+      "kind": "card",
+      "id": "foreman",
+      "label": "Foreman",
+      "ipa": "/ˈfɔːrmən/",
+      "cefr": "B2",
+      "imageNodeId": "467:19373"
+    },
+    {
+      "kind": "card",
+      "id": "carpenter",
+      "label": "Carpenter",
+      "ipa": "/ˈkɑːrpəntər/",
+      "cefr": "B2",
+      "imageNodeId": "467:19377"
+    },
+    {
+      "kind": "card",
+      "id": "electrician",
+      "label": "Electrician",
+      "ipa": "/ɪˌlɛkˈtrɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:19381"
+    },
+    {
+      "kind": "card",
+      "id": "plumber",
+      "label": "Plumber",
+      "ipa": "/ˈplʌmər/",
+      "cefr": "B2",
+      "imageNodeId": "467:19385"
+    },
+    {
+      "kind": "card",
+      "id": "mason",
+      "label": "Mason",
+      "ipa": "/ˈmeɪsən/",
+      "cefr": "B2",
+      "imageNodeId": "467:19389"
+    },
+    {
+      "kind": "card",
+      "id": "ironworker",
+      "label": "Ironworker",
+      "ipa": "/ˈaɪərnˌwɜːrkər/",
+      "cefr": "C1",
+      "imageNodeId": "467:19393"
+    },
+    {
+      "kind": "card",
+      "id": "crane-operator",
+      "label": "Crane Operator",
+      "ipa": "/kreɪn ˈɒpəˌreɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "467:19397"
+    },
+    {
+      "kind": "card",
+      "id": "surveyor",
+      "label": "Surveyor",
+      "ipa": "/sərˈveɪər/",
+      "cefr": "B2",
+      "imageNodeId": "467:19401"
+    },
+    {
+      "kind": "card",
+      "id": "safety-inspector",
+      "label": "Safety Inspector",
+      "ipa": "/ˈseɪfti ɪnˈspɛktər/",
+      "cefr": "C1",
+      "imageNodeId": "467:19405"
+    }
+  ],
+  "materials": null
+}

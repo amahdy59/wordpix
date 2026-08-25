@@ -1,0 +1,489 @@
+{
+  "unitId": "human-body-upper-body",
+  "name": "The Human Body (Upper Body)",
+  "subtopics": [
+    {
+      "id": "torso-front",
+      "title": "Torso Front",
+      "wordIds": [
+        "chest",
+        "ribcage",
+        "abdomen",
+        "belly",
+        "navel",
+        "waist",
+        "sternum",
+        "breast",
+        "collarbone",
+        "adam-s-apple"
+      ]
+    },
+    {
+      "id": "shoulders-arms",
+      "title": "Shoulders & Arms",
+      "wordIds": [
+        "shoulder",
+        "armpit",
+        "upper-arm",
+        "bicep",
+        "tricep",
+        "elbow",
+        "forearm",
+        "wrist",
+        "arm",
+        "deltoid"
+      ]
+    },
+    {
+      "id": "back",
+      "title": "Back",
+      "wordIds": [
+        "upper-back",
+        "mid-back",
+        "lower-back",
+        "spine",
+        "shoulder-blade",
+        "rib",
+        "vertebra",
+        "tailbone",
+        "pelvis",
+        "hip"
+      ]
+    },
+    {
+      "id": "muscles",
+      "title": "Muscles",
+      "wordIds": [
+        "pectoral",
+        "abdominal",
+        "oblique",
+        "trapezius",
+        "latissimus",
+        "rotator-cuff",
+        "core",
+        "flexor",
+        "extensor",
+        "tendon"
+      ]
+    },
+    {
+      "id": "skin-surface",
+      "title": "Skin & Surface",
+      "wordIds": [
+        "skin",
+        "pore",
+        "freckle",
+        "mole",
+        "birthmark",
+        "scar",
+        "wrinkle",
+        "goosebumps",
+        "tan",
+        "sunburn"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "chest",
+      "label": "Chest",
+      "ipa": "/tʃɛst/",
+      "cefr": "A2",
+      "imageNodeId": "467:395"
+    },
+    {
+      "kind": "card",
+      "id": "ribcage",
+      "label": "Ribcage",
+      "ipa": "/ˈrɪbˌkeɪdʒ/",
+      "cefr": "A2",
+      "imageNodeId": "467:399"
+    },
+    {
+      "kind": "card",
+      "id": "abdomen",
+      "label": "Abdomen",
+      "ipa": "/ˈæbdəmən/",
+      "cefr": "A2",
+      "imageNodeId": "467:403"
+    },
+    {
+      "kind": "card",
+      "id": "belly",
+      "label": "Belly",
+      "ipa": "/ˈbɛli/",
+      "cefr": "A2",
+      "imageNodeId": "467:407"
+    },
+    {
+      "kind": "card",
+      "id": "navel",
+      "label": "Navel",
+      "ipa": "/ˈneɪvəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:411"
+    },
+    {
+      "kind": "card",
+      "id": "waist",
+      "label": "Waist",
+      "ipa": "/weɪst/",
+      "cefr": "A2",
+      "imageNodeId": "467:415"
+    },
+    {
+      "kind": "card",
+      "id": "sternum",
+      "label": "Sternum",
+      "ipa": "/ˈstɜːrnəm/",
+      "cefr": "A2",
+      "imageNodeId": "467:419"
+    },
+    {
+      "kind": "card",
+      "id": "breast",
+      "label": "Breast",
+      "ipa": "/brɛst/",
+      "cefr": "A2",
+      "imageNodeId": "467:423"
+    },
+    {
+      "kind": "card",
+      "id": "collarbone",
+      "label": "Collarbone",
+      "ipa": "/ˈkɒlərˌboʊn/",
+      "cefr": "B1",
+      "imageNodeId": "467:427"
+    },
+    {
+      "kind": "card",
+      "id": "adam-s-apple",
+      "label": "Adam's Apple",
+      "ipa": "/ˈædəmz ˈæpəl/",
+      "cefr": "B1",
+      "imageNodeId": "467:431"
+    },
+    {
+      "kind": "card",
+      "id": "shoulder",
+      "label": "Shoulder",
+      "ipa": "/ˈʃoʊldər/",
+      "cefr": "A2",
+      "imageNodeId": "467:440"
+    },
+    {
+      "kind": "card",
+      "id": "armpit",
+      "label": "Armpit",
+      "ipa": "/ˈɑːrmˌpɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:444"
+    },
+    {
+      "kind": "card",
+      "id": "upper-arm",
+      "label": "Upper Arm",
+      "ipa": "/ˈʌpər ɑːrm/",
+      "cefr": "B1",
+      "imageNodeId": "467:448"
+    },
+    {
+      "kind": "card",
+      "id": "bicep",
+      "label": "Bicep",
+      "ipa": "/ˈbaɪˌsɛp/",
+      "cefr": "A2",
+      "imageNodeId": "467:452"
+    },
+    {
+      "kind": "card",
+      "id": "tricep",
+      "label": "Tricep",
+      "ipa": "/ˈtraɪˌsɛp/",
+      "cefr": "A2",
+      "imageNodeId": "467:456"
+    },
+    {
+      "kind": "card",
+      "id": "elbow",
+      "label": "Elbow",
+      "ipa": "/ˈɛlboʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:460"
+    },
+    {
+      "kind": "card",
+      "id": "forearm",
+      "label": "Forearm",
+      "ipa": "/ˈfɔːrˌɑːrm/",
+      "cefr": "A2",
+      "imageNodeId": "467:464"
+    },
+    {
+      "kind": "card",
+      "id": "wrist",
+      "label": "Wrist",
+      "ipa": "/rɪst/",
+      "cefr": "A2",
+      "imageNodeId": "467:468"
+    },
+    {
+      "kind": "card",
+      "id": "arm",
+      "label": "Arm",
+      "ipa": "/ɑːrm/",
+      "cefr": "A2",
+      "imageNodeId": "467:472"
+    },
+    {
+      "kind": "card",
+      "id": "deltoid",
+      "label": "Deltoid",
+      "ipa": "/ˈdɛltɔɪd/",
+      "cefr": "A2",
+      "imageNodeId": "467:476"
+    },
+    {
+      "kind": "card",
+      "id": "upper-back",
+      "label": "Upper Back",
+      "ipa": "/ˈʌpər bæk/",
+      "cefr": "B1",
+      "imageNodeId": "467:485"
+    },
+    {
+      "kind": "card",
+      "id": "mid-back",
+      "label": "Mid Back",
+      "ipa": "/mɪd bæk/",
+      "cefr": "B1",
+      "imageNodeId": "467:489"
+    },
+    {
+      "kind": "card",
+      "id": "lower-back",
+      "label": "Lower Back",
+      "ipa": "/ˈloʊər bæk/",
+      "cefr": "B1",
+      "imageNodeId": "467:493"
+    },
+    {
+      "kind": "card",
+      "id": "spine",
+      "label": "Spine",
+      "ipa": "/spaɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:497"
+    },
+    {
+      "kind": "card",
+      "id": "shoulder-blade",
+      "label": "Shoulder Blade",
+      "ipa": "/ˈʃoʊldər bleɪd/",
+      "cefr": "B1",
+      "imageNodeId": "467:501"
+    },
+    {
+      "kind": "card",
+      "id": "rib",
+      "label": "Rib",
+      "ipa": "/rɪb/",
+      "cefr": "A2",
+      "imageNodeId": "467:505"
+    },
+    {
+      "kind": "card",
+      "id": "vertebra",
+      "label": "Vertebra",
+      "ipa": "/ˈvɜːrtɪbrə/",
+      "cefr": "A2",
+      "imageNodeId": "467:509"
+    },
+    {
+      "kind": "card",
+      "id": "tailbone",
+      "label": "Tailbone",
+      "ipa": "/ˈteɪlˌboʊn/",
+      "cefr": "A2",
+      "imageNodeId": "467:513"
+    },
+    {
+      "kind": "card",
+      "id": "pelvis",
+      "label": "Pelvis",
+      "ipa": "/ˈpɛlvɪs/",
+      "cefr": "A2",
+      "imageNodeId": "467:517"
+    },
+    {
+      "kind": "card",
+      "id": "hip",
+      "label": "Hip",
+      "ipa": "/hɪp/",
+      "cefr": "A2",
+      "imageNodeId": "467:521"
+    },
+    {
+      "kind": "card",
+      "id": "pectoral",
+      "label": "Pectoral",
+      "ipa": "/ˈpɛktərəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:530"
+    },
+    {
+      "kind": "card",
+      "id": "abdominal",
+      "label": "Abdominal",
+      "ipa": "/æbˈdɒmɪnəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:534"
+    },
+    {
+      "kind": "card",
+      "id": "oblique",
+      "label": "Oblique",
+      "ipa": "/əˈbliːk/",
+      "cefr": "A2",
+      "imageNodeId": "467:538"
+    },
+    {
+      "kind": "card",
+      "id": "trapezius",
+      "label": "Trapezius",
+      "ipa": "/trəˈpiːziəs/",
+      "cefr": "A2",
+      "imageNodeId": "467:542"
+    },
+    {
+      "kind": "card",
+      "id": "latissimus",
+      "label": "Latissimus",
+      "ipa": "/ləˈtɪsɪməs/",
+      "cefr": "B1",
+      "imageNodeId": "467:546"
+    },
+    {
+      "kind": "card",
+      "id": "rotator-cuff",
+      "label": "Rotator Cuff",
+      "ipa": "/roʊˈteɪtər kʌf/",
+      "cefr": "B1",
+      "imageNodeId": "467:550"
+    },
+    {
+      "kind": "card",
+      "id": "core",
+      "label": "Core",
+      "ipa": "/kɔːr/",
+      "cefr": "A2",
+      "imageNodeId": "467:554"
+    },
+    {
+      "kind": "card",
+      "id": "flexor",
+      "label": "Flexor",
+      "ipa": "/ˈflɛksər/",
+      "cefr": "A2",
+      "imageNodeId": "467:558"
+    },
+    {
+      "kind": "card",
+      "id": "extensor",
+      "label": "Extensor",
+      "ipa": "/ɪkˈstɛnsər/",
+      "cefr": "A2",
+      "imageNodeId": "467:562"
+    },
+    {
+      "kind": "card",
+      "id": "tendon",
+      "label": "Tendon",
+      "ipa": "/ˈtɛndən/",
+      "cefr": "A2",
+      "imageNodeId": "467:566"
+    },
+    {
+      "kind": "card",
+      "id": "skin",
+      "label": "Skin",
+      "ipa": "/skɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:575"
+    },
+    {
+      "kind": "card",
+      "id": "pore",
+      "label": "Pore",
+      "ipa": "/pɔːr/",
+      "cefr": "A2",
+      "imageNodeId": "467:579"
+    },
+    {
+      "kind": "card",
+      "id": "freckle",
+      "label": "Freckle",
+      "ipa": "/ˈfrɛkəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:583"
+    },
+    {
+      "kind": "card",
+      "id": "mole",
+      "label": "Mole",
+      "ipa": "/moʊl/",
+      "cefr": "A2",
+      "imageNodeId": "467:587"
+    },
+    {
+      "kind": "card",
+      "id": "birthmark",
+      "label": "Birthmark",
+      "ipa": "/ˈbɜːrθˌmɑːrk/",
+      "cefr": "A2",
+      "imageNodeId": "467:591"
+    },
+    {
+      "kind": "card",
+      "id": "scar",
+      "label": "Scar",
+      "ipa": "/skɑːr/",
+      "cefr": "A2",
+      "imageNodeId": "467:595"
+    },
+    {
+      "kind": "card",
+      "id": "wrinkle",
+      "label": "Wrinkle",
+      "ipa": "/ˈrɪŋkəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:599"
+    },
+    {
+      "kind": "card",
+      "id": "goosebumps",
+      "label": "Goosebumps",
+      "ipa": "/ˈɡuːsˌbʌmps/",
+      "cefr": "B1",
+      "imageNodeId": "467:603"
+    },
+    {
+      "kind": "card",
+      "id": "tan",
+      "label": "Tan",
+      "ipa": "/tæn/",
+      "cefr": "A2",
+      "imageNodeId": "467:607"
+    },
+    {
+      "kind": "card",
+      "id": "sunburn",
+      "label": "Sunburn",
+      "ipa": "/ˈsʌnˌbɜːrn/",
+      "cefr": "A2",
+      "imageNodeId": "467:611"
+    }
+  ],
+  "materials": null
+}

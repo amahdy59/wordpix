@@ -1,0 +1,2076 @@
+{
+  "unitId": "first-aid-room",
+  "name": "The First Aid Room",
+  "subtopics": [
+    {
+      "id": "first-aid-supplies",
+      "title": "First Aid Supplies",
+      "wordIds": [
+        "first-aid-kit",
+        "bandage",
+        "gauze",
+        "adhesive-tape",
+        "antiseptic-wipe",
+        "scissors",
+        "tweezers",
+        "safety-pin",
+        "elastic-bandage",
+        "triangular-bandage",
+        "gauze-pad",
+        "burn-cream",
+        "cold-pack",
+        "heat-pack",
+        "finger-splint",
+        "medical-tape",
+        "antibiotic-ointment",
+        "hydrocortisone-cream"
+      ]
+    },
+    {
+      "id": "medical-equipment",
+      "title": "Medical Equipment",
+      "wordIds": [
+        "stretcher",
+        "wheelchair",
+        "crutch",
+        "splint",
+        "neck-brace",
+        "ice-pack",
+        "hot-pack",
+        "stethoscope",
+        "thermometer",
+        "pulse-oximeter",
+        "eye-wash-station",
+        "cpr-mask",
+        "aed",
+        "first-aid-manual",
+        "blood-glucose-monitor",
+        "blood-pressure-cuff",
+        "penlight",
+        "tongue-depressor"
+      ]
+    },
+    {
+      "id": "wound-care",
+      "title": "Wound Care",
+      "wordIds": [
+        "plaster",
+        "butterfly-strip",
+        "wound-dressing",
+        "saline-solution",
+        "hydrogen-peroxide",
+        "iodine",
+        "cotton-swab",
+        "sterile-gloves",
+        "syringe",
+        "suture-kit",
+        "wound-closure-strip",
+        "skin-stapler",
+        "wound-irrigation-syringe",
+        "rubbing-alcohol",
+        "burn-gel",
+        "iodine-solution"
+      ]
+    },
+    {
+      "id": "emergency-items",
+      "title": "Emergency Items",
+      "wordIds": [
+        "defibrillator",
+        "oxygen-mask",
+        "oxygen-tank",
+        "epipen",
+        "tourniquet",
+        "emergency-blanket",
+        "whistle",
+        "flashlight",
+        "emergency-phone",
+        "alarm-button",
+        "inhaler",
+        "cervical-collar",
+        "spine-board",
+        "snakebite-kit",
+        "tick-remover",
+        "medical-id-bracelet"
+      ]
+    },
+    {
+      "id": "room-features",
+      "title": "Room Features",
+      "wordIds": [
+        "examination-table",
+        "curtain",
+        "sink",
+        "soap-dispenser",
+        "paper-towel",
+        "waste-bin",
+        "medicine-cabinet",
+        "wall-chart",
+        "clock",
+        "hand-sanitizer",
+        "privacy-screen",
+        "emergency-contact-card",
+        "incident-report-form",
+        "poison-control-poster",
+        "cpr-poster",
+        "fire-extinguisher",
+        "sharps-container"
+      ]
+    },
+    {
+      "id": "common-injuries",
+      "title": "Common Injuries",
+      "wordIds": [
+        "cut",
+        "bruise",
+        "burn",
+        "sprain",
+        "fracture",
+        "nosebleed",
+        "bee-sting",
+        "rash",
+        "blister",
+        "splinter",
+        "concussion",
+        "dislocation",
+        "fainting",
+        "choking",
+        "allergic-reaction",
+        "heat-stroke",
+        "hypothermia",
+        "tape",
+        "antiseptic",
+        "sling",
+        "compress",
+        "gloves",
+        "cpr",
+        "wound-care",
+        "check-pulse",
+        "apply-pressure",
+        "elevate",
+        "immobilize",
+        "call-emergency",
+        "monitor"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "first-aid-kit",
+      "label": "First Aid Kit",
+      "ipa": "/fɜːrst eɪd kɪt/",
+      "cefr": "C1",
+      "imageNodeId": "45:5385"
+    },
+    {
+      "kind": "card",
+      "id": "bandage",
+      "label": "Bandage",
+      "ipa": "/ˈbændɪdʒ/",
+      "cefr": "B1",
+      "imageNodeId": "45:5389"
+    },
+    {
+      "kind": "card",
+      "id": "gauze",
+      "label": "Gauze",
+      "ipa": "/ɡɔːz/",
+      "cefr": "B1",
+      "imageNodeId": "45:5393"
+    },
+    {
+      "kind": "card",
+      "id": "adhesive-tape",
+      "label": "Adhesive Tape",
+      "ipa": "/ədˈhiːsɪv teɪp/",
+      "cefr": "B2",
+      "imageNodeId": "45:5397"
+    },
+    {
+      "kind": "card",
+      "id": "antiseptic-wipe",
+      "label": "Antiseptic Wipe",
+      "ipa": "/ˌæntɪˈsɛptɪk waɪp/",
+      "cefr": "C1",
+      "imageNodeId": "45:5401"
+    },
+    {
+      "kind": "card",
+      "id": "scissors",
+      "label": "Scissors",
+      "ipa": "/ˈsɪzərz/",
+      "cefr": "B1",
+      "imageNodeId": "45:5405"
+    },
+    {
+      "kind": "card",
+      "id": "tweezers",
+      "label": "Tweezers",
+      "ipa": "/ˈtwiːzərz/",
+      "cefr": "B1",
+      "imageNodeId": "45:5409"
+    },
+    {
+      "kind": "card",
+      "id": "safety-pin",
+      "label": "Safety Pin",
+      "ipa": "/ˈseɪfti pɪn/",
+      "cefr": "B2",
+      "imageNodeId": "45:5413"
+    },
+    {
+      "kind": "card",
+      "id": "elastic-bandage",
+      "label": "Elastic Bandage",
+      "ipa": "/ɪˈlæstɪk ˈbændɪdʒ/",
+      "cefr": "C1",
+      "imageNodeId": "45:5417"
+    },
+    {
+      "kind": "card",
+      "id": "triangular-bandage",
+      "label": "Triangular Bandage",
+      "ipa": "/traɪˈæŋɡjʊlər ˈbændɪdʒ/",
+      "cefr": "C1",
+      "imageNodeId": "45:5421"
+    },
+    {
+      "kind": "card",
+      "id": "gauze-pad",
+      "label": "Gauze Pad",
+      "ipa": "/ɡɔːz pæd/",
+      "cefr": "B2",
+      "imageNodeId": "491:1280"
+    },
+    {
+      "kind": "card",
+      "id": "burn-cream",
+      "label": "Burn Cream",
+      "ipa": "/bɜːrn kriːm/",
+      "cefr": "B2",
+      "imageNodeId": "491:1284"
+    },
+    {
+      "kind": "card",
+      "id": "cold-pack",
+      "label": "Cold Pack",
+      "ipa": "/koʊld pæk/",
+      "cefr": "B2",
+      "imageNodeId": "491:1288"
+    },
+    {
+      "kind": "card",
+      "id": "heat-pack",
+      "label": "Heat Pack",
+      "ipa": "/hiːt pæk/",
+      "cefr": "B2",
+      "imageNodeId": "491:1292"
+    },
+    {
+      "kind": "card",
+      "id": "finger-splint",
+      "label": "Finger Splint",
+      "ipa": "/ˈfɪŋɡər splɪnt/",
+      "cefr": "B2",
+      "imageNodeId": "491:1296"
+    },
+    {
+      "kind": "card",
+      "id": "medical-tape",
+      "label": "Medical Tape",
+      "ipa": "/ˈmɛdɪkl teɪp/",
+      "cefr": "B2",
+      "imageNodeId": "491:1300"
+    },
+    {
+      "kind": "card",
+      "id": "antibiotic-ointment",
+      "label": "Antibiotic Ointment",
+      "ipa": "/ˌæntɪbaɪˈɒtɪk ˈɔɪntmənt/",
+      "cefr": "C1",
+      "imageNodeId": "494:1014"
+    },
+    {
+      "kind": "card",
+      "id": "hydrocortisone-cream",
+      "label": "Hydrocortisone Cream",
+      "ipa": "/ˌhaɪdroʊˈkɔːrtɪzoʊn kriːm/",
+      "cefr": "C1",
+      "imageNodeId": "494:1018"
+    },
+    {
+      "kind": "card",
+      "id": "stretcher",
+      "label": "Stretcher",
+      "ipa": "/ˈstrɛtʃər/",
+      "cefr": "B1",
+      "imageNodeId": "45:5430"
+    },
+    {
+      "kind": "card",
+      "id": "wheelchair",
+      "label": "Wheelchair",
+      "ipa": "/ˈwiːltʃɛr/",
+      "cefr": "B2",
+      "imageNodeId": "45:5434"
+    },
+    {
+      "kind": "card",
+      "id": "crutch",
+      "label": "Crutch",
+      "ipa": "/krʌtʃ/",
+      "cefr": "B1",
+      "imageNodeId": "45:5438"
+    },
+    {
+      "kind": "card",
+      "id": "splint",
+      "label": "Splint",
+      "ipa": "/splɪnt/",
+      "cefr": "B1",
+      "imageNodeId": "45:5442"
+    },
+    {
+      "kind": "card",
+      "id": "neck-brace",
+      "label": "Neck Brace",
+      "ipa": "/nɛk breɪs/",
+      "cefr": "B2",
+      "imageNodeId": "45:5446"
+    },
+    {
+      "kind": "card",
+      "id": "ice-pack",
+      "label": "Ice Pack",
+      "ipa": "/aɪs pæk/",
+      "cefr": "B2",
+      "imageNodeId": "45:5450"
+    },
+    {
+      "kind": "card",
+      "id": "hot-pack",
+      "label": "Hot Pack",
+      "ipa": "/hɒt pæk/",
+      "cefr": "B2",
+      "imageNodeId": "45:5454"
+    },
+    {
+      "kind": "card",
+      "id": "stethoscope",
+      "label": "Stethoscope",
+      "ipa": "/ˈstɛθəskoʊp/",
+      "cefr": "B2",
+      "imageNodeId": "45:5458"
+    },
+    {
+      "kind": "card",
+      "id": "thermometer",
+      "label": "Thermometer",
+      "ipa": "/θərˈmɒmɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:5462"
+    },
+    {
+      "kind": "card",
+      "id": "pulse-oximeter",
+      "label": "Pulse Oximeter",
+      "ipa": "/pʌls ɒkˈsɪmɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:5466"
+    },
+    {
+      "kind": "card",
+      "id": "eye-wash-station",
+      "label": "Eye Wash Station",
+      "ipa": "/aɪ wɒʃ ˈsteɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "491:1307"
+    },
+    {
+      "kind": "card",
+      "id": "cpr-mask",
+      "label": "CPR Mask",
+      "ipa": "/ˌsiːpiːˈɑːr mɑːsk/",
+      "cefr": "B2",
+      "imageNodeId": "491:1311"
+    },
+    {
+      "kind": "card",
+      "id": "aed",
+      "label": "AED",
+      "ipa": "/ˌeɪiːˈdiː/",
+      "cefr": "B1",
+      "imageNodeId": "491:1315"
+    },
+    {
+      "kind": "card",
+      "id": "first-aid-manual",
+      "label": "First Aid Manual",
+      "ipa": "/fɜːrst eɪd ˈmænjuəl/",
+      "cefr": "C1",
+      "imageNodeId": "491:1319"
+    },
+    {
+      "kind": "card",
+      "id": "blood-glucose-monitor",
+      "label": "Blood Glucose Monitor",
+      "ipa": "/blʌd ˈɡluːkoʊs ˈmɒnɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "491:1323"
+    },
+    {
+      "kind": "card",
+      "id": "blood-pressure-cuff",
+      "label": "Blood Pressure Cuff",
+      "ipa": "/blʌd ˈprɛʃər kʌf/",
+      "cefr": "C1",
+      "imageNodeId": "494:1022"
+    },
+    {
+      "kind": "card",
+      "id": "penlight",
+      "label": "Penlight",
+      "ipa": "/ˈpɛnlaɪt/",
+      "cefr": "B1",
+      "imageNodeId": "494:1026"
+    },
+    {
+      "kind": "card",
+      "id": "tongue-depressor",
+      "label": "Tongue Depressor",
+      "ipa": "/tʌŋ dɪˈprɛsər/",
+      "cefr": "C1",
+      "imageNodeId": "494:1030"
+    },
+    {
+      "kind": "card",
+      "id": "plaster",
+      "label": "Plaster",
+      "ipa": "/ˈplɑːstər/",
+      "cefr": "B1",
+      "imageNodeId": "45:5475"
+    },
+    {
+      "kind": "card",
+      "id": "butterfly-strip",
+      "label": "Butterfly Strip",
+      "ipa": "/ˈbʌtərflaɪ strɪp/",
+      "cefr": "C1",
+      "imageNodeId": "45:5479"
+    },
+    {
+      "kind": "card",
+      "id": "wound-dressing",
+      "label": "Wound Dressing",
+      "ipa": "/wuːnd ˈdrɛsɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "45:5483"
+    },
+    {
+      "kind": "card",
+      "id": "saline-solution",
+      "label": "Saline Solution",
+      "ipa": "/ˈseɪliːn səˈluːʃən/",
+      "cefr": "C1",
+      "imageNodeId": "45:5487"
+    },
+    {
+      "kind": "card",
+      "id": "hydrogen-peroxide",
+      "label": "Hydrogen Peroxide",
+      "ipa": "/ˈhaɪdrədʒən pəˈrɒksaɪd/",
+      "cefr": "C1",
+      "imageNodeId": "45:5491"
+    },
+    {
+      "kind": "card",
+      "id": "iodine",
+      "label": "Iodine",
+      "ipa": "/ˈaɪədiːn/",
+      "cefr": "B1",
+      "imageNodeId": "45:5495"
+    },
+    {
+      "kind": "card",
+      "id": "cotton-swab",
+      "label": "Cotton Swab",
+      "ipa": "/ˈkɒtn swɒb/",
+      "cefr": "B2",
+      "imageNodeId": "45:5499"
+    },
+    {
+      "kind": "card",
+      "id": "sterile-gloves",
+      "label": "Sterile Gloves",
+      "ipa": "/ˈstɛrəl ɡlʌvz/",
+      "cefr": "B2",
+      "imageNodeId": "45:5503"
+    },
+    {
+      "kind": "card",
+      "id": "syringe",
+      "label": "Syringe",
+      "ipa": "/sɪˈrɪndʒ/",
+      "cefr": "B1",
+      "imageNodeId": "45:5507"
+    },
+    {
+      "kind": "card",
+      "id": "suture-kit",
+      "label": "Suture Kit",
+      "ipa": "/ˈsuːtʃər kɪt/",
+      "cefr": "B2",
+      "imageNodeId": "45:5511"
+    },
+    {
+      "kind": "card",
+      "id": "wound-closure-strip",
+      "label": "Wound Closure Strip",
+      "ipa": "/wuːnd ˈkloʊʒər strɪp/",
+      "cefr": "C1",
+      "imageNodeId": "491:1329"
+    },
+    {
+      "kind": "card",
+      "id": "skin-stapler",
+      "label": "Skin Stapler",
+      "ipa": "/skɪn ˈsteɪplər/",
+      "cefr": "B2",
+      "imageNodeId": "494:1034"
+    },
+    {
+      "kind": "card",
+      "id": "wound-irrigation-syringe",
+      "label": "Irrigation Syringe",
+      "ipa": "/ˌɪrɪˈɡeɪʃən sɪˈrɪndʒ/",
+      "cefr": "C1",
+      "imageNodeId": "494:1038"
+    },
+    {
+      "kind": "card",
+      "id": "rubbing-alcohol",
+      "label": "Rubbing Alcohol",
+      "ipa": "/ˈrʌbɪŋ ˈælkəhɒl/",
+      "cefr": "C1",
+      "imageNodeId": "494:1042"
+    },
+    {
+      "kind": "card",
+      "id": "burn-gel",
+      "label": "Burn Gel",
+      "ipa": "/bɜːrn dʒɛl/",
+      "cefr": "B2",
+      "imageNodeId": "494:1046"
+    },
+    {
+      "kind": "card",
+      "id": "iodine-solution",
+      "label": "Iodine Solution",
+      "ipa": "/ˈaɪədiːn səˈluːʃən/",
+      "cefr": "C1",
+      "imageNodeId": "494:1050"
+    },
+    {
+      "kind": "card",
+      "id": "defibrillator",
+      "label": "Defibrillator",
+      "ipa": "/dɪˈfɪbrɪleɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:5520"
+    },
+    {
+      "kind": "card",
+      "id": "oxygen-mask",
+      "label": "Oxygen Mask",
+      "ipa": "/ˈɒksɪdʒən mɑːsk/",
+      "cefr": "B2",
+      "imageNodeId": "45:5524"
+    },
+    {
+      "kind": "card",
+      "id": "oxygen-tank",
+      "label": "Oxygen Tank",
+      "ipa": "/ˈɒksɪdʒən tæŋk/",
+      "cefr": "B2",
+      "imageNodeId": "45:5528"
+    },
+    {
+      "kind": "card",
+      "id": "epipen",
+      "label": "EpiPen",
+      "ipa": "/ˈɛpɪpɛn/",
+      "cefr": "B1",
+      "imageNodeId": "45:5532"
+    },
+    {
+      "kind": "card",
+      "id": "tourniquet",
+      "label": "Tourniquet",
+      "ipa": "/ˈtɜːrnɪkɪt/",
+      "cefr": "B2",
+      "imageNodeId": "45:5536"
+    },
+    {
+      "kind": "card",
+      "id": "emergency-blanket",
+      "label": "Emergency Blanket",
+      "ipa": "/ɪˈmɜːrdʒənsi ˈblæŋkɪt/",
+      "cefr": "C1",
+      "imageNodeId": "45:5540"
+    },
+    {
+      "kind": "card",
+      "id": "whistle",
+      "label": "Whistle",
+      "ipa": "/ˈwɪsl/",
+      "cefr": "B1",
+      "imageNodeId": "45:5544"
+    },
+    {
+      "kind": "card",
+      "id": "flashlight",
+      "label": "Flashlight",
+      "ipa": "/ˈflæʃlaɪt/",
+      "cefr": "B2",
+      "imageNodeId": "45:5548"
+    },
+    {
+      "kind": "card",
+      "id": "emergency-phone",
+      "label": "Emergency Phone",
+      "ipa": "/ɪˈmɜːrdʒənsi foʊn/",
+      "cefr": "C1",
+      "imageNodeId": "45:5552"
+    },
+    {
+      "kind": "card",
+      "id": "alarm-button",
+      "label": "Alarm Button",
+      "ipa": "/əˈlɑːrm ˈbʌtn/",
+      "cefr": "B2",
+      "imageNodeId": "45:5556"
+    },
+    {
+      "kind": "card",
+      "id": "inhaler",
+      "label": "Inhaler",
+      "ipa": "/ɪnˈheɪlər/",
+      "cefr": "B1",
+      "imageNodeId": "491:1333"
+    },
+    {
+      "kind": "card",
+      "id": "cervical-collar",
+      "label": "Cervical Collar",
+      "ipa": "/ˈsɜːrvɪkl ˈkɒlər/",
+      "cefr": "C1",
+      "imageNodeId": "494:1054"
+    },
+    {
+      "kind": "card",
+      "id": "spine-board",
+      "label": "Spine Board",
+      "ipa": "/spaɪn bɔːrd/",
+      "cefr": "B2",
+      "imageNodeId": "494:1058"
+    },
+    {
+      "kind": "card",
+      "id": "snakebite-kit",
+      "label": "Snakebite Kit",
+      "ipa": "/ˈsneɪkbaɪt kɪt/",
+      "cefr": "B2",
+      "imageNodeId": "494:1062"
+    },
+    {
+      "kind": "card",
+      "id": "tick-remover",
+      "label": "Tick Remover",
+      "ipa": "/tɪk rɪˈmuːvər/",
+      "cefr": "B2",
+      "imageNodeId": "494:1066"
+    },
+    {
+      "kind": "card",
+      "id": "medical-id-bracelet",
+      "label": "Medical ID Bracelet",
+      "ipa": "/ˈmɛdɪkl ˌaɪˈdiː ˈbreɪslɪt/",
+      "cefr": "C1",
+      "imageNodeId": "494:1070"
+    },
+    {
+      "kind": "card",
+      "id": "examination-table",
+      "label": "Examination Table",
+      "ipa": "/ɪɡˌzæmɪˈneɪʃən ˈteɪbl/",
+      "cefr": "C1",
+      "imageNodeId": "45:5565"
+    },
+    {
+      "kind": "card",
+      "id": "curtain",
+      "label": "Curtain",
+      "ipa": "/ˈkɜːrtn/",
+      "cefr": "B1",
+      "imageNodeId": "45:5569"
+    },
+    {
+      "kind": "card",
+      "id": "sink",
+      "label": "Sink",
+      "ipa": "/sɪŋk/",
+      "cefr": "B1",
+      "imageNodeId": "45:5573"
+    },
+    {
+      "kind": "card",
+      "id": "soap-dispenser",
+      "label": "Soap Dispenser",
+      "ipa": "/soʊp dɪˈspɛnsər/",
+      "cefr": "B2",
+      "imageNodeId": "45:5577"
+    },
+    {
+      "kind": "card",
+      "id": "paper-towel",
+      "label": "Paper Towel",
+      "ipa": "/ˈpeɪpər ˈtaʊəl/",
+      "cefr": "B2",
+      "imageNodeId": "45:5581"
+    },
+    {
+      "kind": "card",
+      "id": "waste-bin",
+      "label": "Waste Bin",
+      "ipa": "/weɪst bɪn/",
+      "cefr": "B2",
+      "imageNodeId": "45:5585"
+    },
+    {
+      "kind": "card",
+      "id": "medicine-cabinet",
+      "label": "Medicine Cabinet",
+      "ipa": "/ˈmɛdɪsɪn ˈkæbɪnɪt/",
+      "cefr": "C1",
+      "imageNodeId": "45:5589"
+    },
+    {
+      "kind": "card",
+      "id": "wall-chart",
+      "label": "Wall Chart",
+      "ipa": "/wɔːl tʃɑːrt/",
+      "cefr": "B2",
+      "imageNodeId": "45:5593"
+    },
+    {
+      "kind": "card",
+      "id": "clock",
+      "label": "Clock",
+      "ipa": "/klɒk/",
+      "cefr": "B1",
+      "imageNodeId": "45:5597"
+    },
+    {
+      "kind": "card",
+      "id": "hand-sanitizer",
+      "label": "Hand Sanitizer",
+      "ipa": "/hænd ˈsænɪtaɪzər/",
+      "cefr": "B2",
+      "imageNodeId": "45:5601"
+    },
+    {
+      "kind": "card",
+      "id": "privacy-screen",
+      "label": "Privacy Screen",
+      "ipa": "/ˈprɪvəsi skriːn/",
+      "cefr": "B2",
+      "imageNodeId": "491:1337"
+    },
+    {
+      "kind": "card",
+      "id": "emergency-contact-card",
+      "label": "Emergency Contact Card",
+      "ipa": "/ɪˈmɜːrdʒənsi ˈkɒntækt kɑːrd/",
+      "cefr": "C1",
+      "imageNodeId": "494:1074"
+    },
+    {
+      "kind": "card",
+      "id": "incident-report-form",
+      "label": "Incident Report Form",
+      "ipa": "/ˈɪnsɪdənt rɪˈpɔːrt fɔːrm/",
+      "cefr": "C1",
+      "imageNodeId": "494:1078"
+    },
+    {
+      "kind": "card",
+      "id": "poison-control-poster",
+      "label": "Poison Control Poster",
+      "ipa": "/ˈpɔɪzn kənˈtroʊl ˈpoʊstər/",
+      "cefr": "C1",
+      "imageNodeId": "494:1082"
+    },
+    {
+      "kind": "card",
+      "id": "cpr-poster",
+      "label": "CPR Poster",
+      "ipa": "/ˌsiːpiːˈɑːr ˈpoʊstər/",
+      "cefr": "B2",
+      "imageNodeId": "494:1086"
+    },
+    {
+      "kind": "card",
+      "id": "fire-extinguisher",
+      "label": "Fire Extinguisher",
+      "ipa": "/ˈfaɪər ɪkˈstɪŋɡwɪʃər/",
+      "cefr": "C1",
+      "imageNodeId": "494:1090"
+    },
+    {
+      "kind": "card",
+      "id": "sharps-container",
+      "label": "Sharps Container",
+      "ipa": "/ʃɑːrps kənˈteɪnər/",
+      "cefr": "C1",
+      "imageNodeId": "494:1094"
+    },
+    {
+      "kind": "card",
+      "id": "cut",
+      "label": "Cut",
+      "ipa": "/kʌt/",
+      "cefr": "B1",
+      "imageNodeId": "45:5610"
+    },
+    {
+      "kind": "card",
+      "id": "bruise",
+      "label": "Bruise",
+      "ipa": "/bruːz/",
+      "cefr": "B1",
+      "imageNodeId": "45:5614"
+    },
+    {
+      "kind": "card",
+      "id": "burn",
+      "label": "Burn",
+      "ipa": "/bɜːrn/",
+      "cefr": "B1",
+      "imageNodeId": "45:5618"
+    },
+    {
+      "kind": "card",
+      "id": "sprain",
+      "label": "Sprain",
+      "ipa": "/spreɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:5622"
+    },
+    {
+      "kind": "card",
+      "id": "fracture",
+      "label": "Fracture",
+      "ipa": "/ˈfræktʃər/",
+      "cefr": "B1",
+      "imageNodeId": "45:5626"
+    },
+    {
+      "kind": "card",
+      "id": "nosebleed",
+      "label": "Nosebleed",
+      "ipa": "/ˈnoʊzbliːd/",
+      "cefr": "B1",
+      "imageNodeId": "45:5630"
+    },
+    {
+      "kind": "card",
+      "id": "bee-sting",
+      "label": "Bee Sting",
+      "ipa": "/biː stɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "45:5634"
+    },
+    {
+      "kind": "card",
+      "id": "rash",
+      "label": "Rash",
+      "ipa": "/ræʃ/",
+      "cefr": "B1",
+      "imageNodeId": "45:5638"
+    },
+    {
+      "kind": "card",
+      "id": "blister",
+      "label": "Blister",
+      "ipa": "/ˈblɪstər/",
+      "cefr": "B1",
+      "imageNodeId": "45:5642"
+    },
+    {
+      "kind": "card",
+      "id": "splinter",
+      "label": "Splinter",
+      "ipa": "/ˈsplɪntər/",
+      "cefr": "B1",
+      "imageNodeId": "45:5646"
+    },
+    {
+      "kind": "card",
+      "id": "concussion",
+      "label": "Concussion",
+      "ipa": "/kənˈkʌʃən/",
+      "cefr": "B2",
+      "imageNodeId": "491:1341"
+    },
+    {
+      "kind": "card",
+      "id": "dislocation",
+      "label": "Dislocation",
+      "ipa": "/ˌdɪsloʊˈkeɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "494:1098"
+    },
+    {
+      "kind": "card",
+      "id": "fainting",
+      "label": "Fainting",
+      "ipa": "/ˈfeɪntɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "494:1102"
+    },
+    {
+      "kind": "card",
+      "id": "choking",
+      "label": "Choking",
+      "ipa": "/ˈtʃoʊkɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "494:1106"
+    },
+    {
+      "kind": "card",
+      "id": "allergic-reaction",
+      "label": "Allergic Reaction",
+      "ipa": "/əˈlɜːrdʒɪk riˈækʃən/",
+      "cefr": "C1",
+      "imageNodeId": "494:1110"
+    },
+    {
+      "kind": "card",
+      "id": "heat-stroke",
+      "label": "Heat Stroke",
+      "ipa": "/hiːt stroʊk/",
+      "cefr": "B2",
+      "imageNodeId": "494:1114"
+    },
+    {
+      "kind": "card",
+      "id": "hypothermia",
+      "label": "Hypothermia",
+      "ipa": "/ˌhaɪpoʊˈθɜːrmiə/",
+      "cefr": "B2",
+      "imageNodeId": "494:1118"
+    },
+    {
+      "kind": "card",
+      "id": "tape",
+      "label": "Tape",
+      "ipa": "/teɪp/",
+      "cefr": "B1",
+      "imageNodeId": "39:5848"
+    },
+    {
+      "kind": "card",
+      "id": "antiseptic",
+      "label": "Antiseptic",
+      "ipa": "/ˌæntɪˈsɛptɪk/",
+      "cefr": "B2",
+      "imageNodeId": "39:5852"
+    },
+    {
+      "kind": "card",
+      "id": "sling",
+      "label": "Sling",
+      "ipa": "/slɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "39:5864"
+    },
+    {
+      "kind": "card",
+      "id": "compress",
+      "label": "Compress",
+      "ipa": "/ˈkɒmprɛs/",
+      "cefr": "B1",
+      "imageNodeId": "39:5868"
+    },
+    {
+      "kind": "card",
+      "id": "gloves",
+      "label": "Gloves",
+      "ipa": "/ɡlʌvz/",
+      "cefr": "B1",
+      "imageNodeId": "39:5903"
+    },
+    {
+      "kind": "card",
+      "id": "cpr",
+      "label": "CPR",
+      "ipa": "/ˌsiːpiːˈɑːr/",
+      "cefr": "B1",
+      "imageNodeId": "39:5910"
+    },
+    {
+      "kind": "card",
+      "id": "wound-care",
+      "label": "Wound Care",
+      "ipa": "/wuːnd kɛər/",
+      "cefr": "B2",
+      "imageNodeId": "39:5914"
+    },
+    {
+      "kind": "card",
+      "id": "check-pulse",
+      "label": "Check Pulse",
+      "ipa": "/tʃɛk pʌls/",
+      "cefr": "B2",
+      "imageNodeId": "39:5918"
+    },
+    {
+      "kind": "card",
+      "id": "apply-pressure",
+      "label": "Apply Pressure",
+      "ipa": "/əˈplaɪ ˈprɛʃər/",
+      "cefr": "B2",
+      "imageNodeId": "39:5922"
+    },
+    {
+      "kind": "card",
+      "id": "elevate",
+      "label": "Elevate",
+      "ipa": "/ˈɛlɪˌveɪt/",
+      "cefr": "B1",
+      "imageNodeId": "39:5926"
+    },
+    {
+      "kind": "card",
+      "id": "immobilize",
+      "label": "Immobilize",
+      "ipa": "/ɪˈmoʊbɪˌlaɪz/",
+      "cefr": "B2",
+      "imageNodeId": "39:5930"
+    },
+    {
+      "kind": "card",
+      "id": "call-emergency",
+      "label": "Call Emergency",
+      "ipa": "/kɔːl ɪˈmɜːrdʒənsi/",
+      "cefr": "B2",
+      "imageNodeId": "39:5934"
+    },
+    {
+      "kind": "card",
+      "id": "monitor",
+      "label": "Monitor",
+      "ipa": "/ˈmɒnɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "39:5938"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "538:3",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "538:5",
+      "lines": [
+        {
+          "text": "📖 Reading Passage (B1)",
+          "depth": 1,
+          "name": "📖 Reading Passage (B1)"
+        },
+        {
+          "text": "Ready for Anything — Inside the First Aid Room\n\nEvery school, workplace, and sports club has a first aid room — a small, clean space where injuries and minor medical problems are treated before a doctor or ambulance arrives. Knowing the vocabulary of first aid could one day help you help someone.\n\nThe first aid kit is the most important item in the room. It contains everything needed for basic treatment. A bandage wraps around a wound to protect it and stop bleeding. Gauze — a thin, breathable fabric — covers the wound underneath. A gauze pad is placed directly over the injury. Adhesive tape holds the gauze in place. An antiseptic wipe cleans the wound and kills bacteria. Scissors cut bandages and tape. Tweezers remove splinters or small objects. A safety pin fastens bandages. An elastic bandage wraps around sprains and strains. A triangular bandage makes a sling for an injured arm.\n\nFor different types of injuries, the kit includes specific items. Burn cream soothes burns. A cold pack or ice pack reduces swelling. A heat pack or hot pack relaxes tight muscles. A finger splint keeps a broken or jammed finger straight. Medical tape is stronger than adhesive tape. Antibiotic ointment prevents infection. Hydrocortisone cream treats itching and rashes. A plaster — known as a 'Band-Aid' in American English — covers small cuts. A butterfly strip pulls the edges of a cut together.\n\nFor more serious situations, the first aid room has larger equipment. A stretcher carries an injured person who cannot walk. A wheelchair moves someone who can sit but not stand. A crutch helps someone walk with a leg injury. A splint immobilises a broken bone. A neck brace supports the head and neck after a spinal injury.\n\nMedical monitoring equipment is also available. A stethoscope listens to the heart and lungs. A thermometer measures body temperature. A pulse oximeter clips onto the finger and measures oxygen levels in the blood. A blood pressure cuff wraps around the upper arm. A blood glucose monitor checks blood sugar levels. A penlight shines into the eyes to check for concussion. A tongue depressor helps examine the throat.\n\nIn a life-threatening emergency, two pieces of equipment can save lives. A CPR mask allows someone to give rescue breaths safely during cardiopulmonary resuscitation. An AED — automated external defibrillator — delivers an electric shock to restart a heart that has stopped. A first aid manual provides step-by-step instructions for every situation.\n\nWound care supplies include saline solution for cleaning wounds, hydrogen peroxide as a disinfectant, iodine for deeper wounds, cotton swabs for applying ointment, sterile gloves to prevent infection, a syringe for irrigating wounds, a suture kit for stitching (used by trained personnel only), wound closure strips, a wound dressing for larger injuries, a skin stapler for emergency wound closure, and an irrigation syringe for flushing debris from wounds.\n\nThe first aid room is quiet most of the time. But when an accident happens, everything in that room — and the knowledge to use it — can make the difference between a minor incident and a serious emergency.",
+          "depth": 1,
+          "name": "Ready for Anything — Inside the First Aid Room Every school, workplace, and sports club has a first aid room — a small, clean space where injuries and minor medical problems are treated before a doctor or ambulance arrives. Knowing the vocabulary of first aid could one day help you help someone. The first aid kit is the most important item in the room. It contains everything needed for basic treatment. A bandage wraps around a wound to protect it and stop bleeding. Gauze — a thin, breathable fabric — covers the wound underneath. A gauze pad is placed directly over the injury. Adhesive tape holds the gauze in place. An antiseptic wipe cleans the wound and kills bacteria. Scissors cut bandages and tape. Tweezers remove splinters or small objects. A safety pin fastens bandages. An elastic bandage wraps around sprains and strains. A triangular bandage makes a sling for an injured arm. For different types of injuries, the kit includes specific items. Burn cream soothes burns. A cold pack or ice pack reduces swelling. A heat pack or hot pack relaxes tight muscles. A finger splint keeps a broken or jammed finger straight. Medical tape is stronger than adhesive tape. Antibiotic ointment prevents infection. Hydrocortisone cream treats itching and rashes. A plaster — known as a 'Band-Aid' in American English — covers small cuts. A butterfly strip pulls the edges of a cut together. For more serious situations, the first aid room has larger equipment. A stretcher carries an injured person who cannot walk. A wheelchair moves someone who can sit but not stand. A crutch helps someone walk with a leg injury. A splint immobilises a broken bone. A neck brace supports the head and neck after a spinal injury. Medical monitoring equipment is also available. A stethoscope listens to the heart and lungs. A thermometer measures body temperature. A pulse oximeter clips onto the finger and measures oxygen levels in the blood. A blood pressure cuff wraps around the upper arm. A blood glucose monitor checks blood sugar levels. A penlight shines into the eyes to check for concussion. A tongue depressor helps examine the throat. In a life-threatening emergency, two pieces of equipment can save lives. A CPR mask allows someone to give rescue breaths safely during cardiopulmonary resuscitation. An AED — automated external defibrillator — delivers an electric shock to restart a heart that has stopped. A first aid manual provides step-by-step instructions for every situation. Wound care supplies include saline solution for cleaning wounds, hydrogen peroxide as a disinfectant, iodine for deeper wounds, cotton swabs for applying ointment, sterile gloves to prevent infection, a syringe for irrigating wounds, a suture kit for stitching (used by trained personnel only), wound closure strips, a wound dressing for larger injuries, a skin stapler for emergency wound closure, and an irrigation syringe for flushing debris from wounds. The first aid room is quiet most of the time. But when an accident happens, everything in that room — and the knowledge to use it — can make the difference between a minor incident and a serious emergency."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What basic items does a first aid kit contain? Name at least five.",
+          "depth": 1,
+          "name": "1. What basic items does a first aid kit contain? Name at least five."
+        },
+        {
+          "text": "2. How would you treat a small cut using items from the first aid kit? Describe the steps.",
+          "depth": 1,
+          "name": "2. How would you treat a small cut using items from the first aid kit? Describe the steps."
+        },
+        {
+          "text": "3. What larger equipment is available in the first aid room for serious injuries?",
+          "depth": 1,
+          "name": "3. What larger equipment is available in the first aid room for serious injuries?"
+        },
+        {
+          "text": "4. What is an AED and why is it important in an emergency?",
+          "depth": 1,
+          "name": "4. What is an AED and why is it important in an emergency?"
+        },
+        {
+          "text": "5. Why does the passage say first aid knowledge 'can make the difference between a minor incident and a serious emergency'?",
+          "depth": 1,
+          "name": "5. Why does the passage say first aid knowledge 'can make the difference between a minor incident and a serious emergency'?"
+        },
+        {
+          "text": "6.  Name three differences between treating a burn and treating a cut.",
+          "depth": 1,
+          "name": "6. Name three differences between treating a burn and treating a cut."
+        },
+        {
+          "text": "Sample Answers",
+          "depth": 2,
+          "name": "Sample Answers"
+        },
+        {
+          "text": "1. You would use antiseptic wipes to clean it, antibiotic ointment to prevent infection, and a bandage or gauze pad with adhesive tape to cover it.",
+          "depth": 2,
+          "name": "1. You would use antiseptic wipes to clean it, antibiotic ointment to prevent infection, and a bandage or gauze pad with adhesive tape to cover it."
+        },
+        {
+          "text": "2. The room has splints, elastic bandages, and a sling to immobilize the injured area.",
+          "depth": 2,
+          "name": "2. The room has splints, elastic bandages, and a sling to immobilize the injured area."
+        },
+        {
+          "text": "3. It shows the steps for performing CPR, so anyone can follow the instructions in an emergency.",
+          "depth": 2,
+          "name": "3. It shows the steps for performing CPR, so anyone can follow the instructions in an emergency."
+        },
+        {
+          "text": "4. When someone has a severe allergic reaction (e.g., to a bee sting or food).",
+          "depth": 2,
+          "name": "4. When someone has a severe allergic reaction (e.g., to a bee sting or food)."
+        },
+        {
+          "text": "5. An incident report form must be completed after every treatment.",
+          "depth": 2,
+          "name": "5. An incident report form must be completed after every treatment."
+        },
+        {
+          "text": "6. Burns need burn cream or burn gel; cuts need antiseptic and plasters. Burns should not be covered tightly; cuts may need wound closure strips. Burns need cool water first; cuts need pressure to stop bleeding.",
+          "depth": 2,
+          "name": "6. Burns need burn cream or burn gel; cuts need antiseptic and plasters. Burns should not be covered tightly; cuts may need wound closure strips. Burns need cool water first; cuts need pressure to stop bleeding."
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "538:10",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "patch someone up",
+          "depth": 2,
+          "name": "patch someone up"
+        },
+        {
+          "text": "(phrasal verb) To give basic medical treatment. \"The nurse patched him up after the fall.\"",
+          "depth": 2,
+          "name": "(phrasal verb) To give basic medical treatment. \"The nurse patched him up after the fall.\""
+        },
+        {
+          "text": "under the weather",
+          "depth": 2,
+          "name": "under the weather"
+        },
+        {
+          "text": "(idiom) Feeling ill or unwell. \"I've been feeling under the weather all day.\"",
+          "depth": 2,
+          "name": "(idiom) Feeling ill or unwell. \"I've been feeling under the weather all day.\""
+        },
+        {
+          "text": "on the mend",
+          "depth": 2,
+          "name": "on the mend"
+        },
+        {
+          "text": "(idiom) Getting better after illness or injury. \"She broke her arm, but she's on the mend now.\"",
+          "depth": 2,
+          "name": "(idiom) Getting better after illness or injury. \"She broke her arm, but she's on the mend now.\""
+        },
+        {
+          "text": "come around / come to",
+          "depth": 2,
+          "name": "come around / come to"
+        },
+        {
+          "text": "(phrasal verb) To regain consciousness after fainting. \"He fainted but came to after a few seconds.\"",
+          "depth": 2,
+          "name": "(phrasal verb) To regain consciousness after fainting. \"He fainted but came to after a few seconds.\""
+        },
+        {
+          "text": "break out in",
+          "depth": 2,
+          "name": "break out in"
+        },
+        {
+          "text": "(phrasal verb) To suddenly develop a rash or skin condition. \"She broke out in a rash after touching the plant.\"",
+          "depth": 2,
+          "name": "(phrasal verb) To suddenly develop a rash or skin condition. \"She broke out in a rash after touching the plant.\""
+        },
+        {
+          "text": "dress a wound",
+          "depth": 2,
+          "name": "dress a wound"
+        },
+        {
+          "text": "(collocation) To clean and cover an injury. \"The nurse dressed the wound carefully.\"",
+          "depth": 2,
+          "name": "(collocation) To clean and cover an injury. \"The nurse dressed the wound carefully.\""
+        },
+        {
+          "text": "a clean bill of health",
+          "depth": 2,
+          "name": "a clean bill of health"
+        },
+        {
+          "text": "(idiom) Confirmation that someone is healthy. \"The doctor gave her a clean bill of health.\"",
+          "depth": 2,
+          "name": "(idiom) Confirmation that someone is healthy. \"The doctor gave her a clean bill of health.\""
+        },
+        {
+          "text": "nip it in the bud",
+          "depth": 2,
+          "name": "nip it in the bud"
+        },
+        {
+          "text": "(idiom) To deal with a problem early. \"Treat small cuts quickly — nip infections in the bud.\"",
+          "depth": 2,
+          "name": "(idiom) To deal with a problem early. \"Treat small cuts quickly — nip infections in the bud.\""
+        },
+        {
+          "text": "in good hands",
+          "depth": 2,
+          "name": "in good hands"
+        },
+        {
+          "text": "(idiom) Being well cared for. \"Don't worry, the patient is in good hands.\"",
+          "depth": 2,
+          "name": "(idiom) Being well cared for. \"Don't worry, the patient is in good hands.\""
+        },
+        {
+          "text": "call for help",
+          "depth": 2,
+          "name": "call for help"
+        },
+        {
+          "text": "(collocation) To request emergency assistance. \"If someone is choking, call for help immediately.\"",
+          "depth": 2,
+          "name": "(collocation) To request emergency assistance. \"If someone is choking, call for help immediately.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "538:44",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue — At the First Aid Room",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue — At the First Aid Room"
+        },
+        {
+          "text": "Nurse:",
+          "depth": 2,
+          "name": "Nurse:"
+        },
+        {
+          "text": "Sit down here. Let me have a look at your knee. What happened?",
+          "depth": 2,
+          "name": "Sit down here. Let me have a look at your knee. What happened?"
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "I fell on the track during the relay. My knee is bleeding and my wrist hurts.",
+          "depth": 2,
+          "name": "I fell on the track during the relay. My knee is bleeding and my wrist hurts."
+        },
+        {
+          "text": "Nurse:",
+          "depth": 2,
+          "name": "Nurse:"
+        },
+        {
+          "text": "Let's clean the knee first. I'll use an antiseptic wipe to prevent infection.",
+          "depth": 2,
+          "name": "Let's clean the knee first. I'll use an antiseptic wipe to prevent infection."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Ouch — that stings!",
+          "depth": 2,
+          "name": "Ouch — that stings!"
+        },
+        {
+          "text": "Nurse:",
+          "depth": 2,
+          "name": "Nurse:"
+        },
+        {
+          "text": "It'll pass quickly. Now I'll cover it with a gauze pad and adhesive tape. Hold still.",
+          "depth": 2,
+          "name": "It'll pass quickly. Now I'll cover it with a gauze pad and adhesive tape. Hold still."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "What about the wrist? I can't bend it properly.",
+          "depth": 2,
+          "name": "What about the wrist? I can't bend it properly."
+        },
+        {
+          "text": "Nurse:",
+          "depth": 2,
+          "name": "Nurse:"
+        },
+        {
+          "text": "Let me check. Can you move your fingers? Good — I don't think it's broken. I'll put a cold pack on it to reduce the swelling.",
+          "depth": 2,
+          "name": "Let me check. Can you move your fingers? Good — I don't think it's broken. I'll put a cold pack on it to reduce the swelling."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Should I use the ice pack or the cold pack?",
+          "depth": 2,
+          "name": "Should I use the ice pack or the cold pack?"
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "538:72",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"He has broken his leg. We need to call an ambulance immediately.\" — Is this correct?",
+          "depth": 2,
+          "name": "❌ \"He has broken his leg. We need to call an ambulance immediately.\" — Is this correct?"
+        },
+        {
+          "text": "✅ Yes, this sentence is correct!",
+          "depth": 2,
+          "name": "✅ Yes, this sentence is correct!"
+        },
+        {
+          "text": "A reassurance point: 'He has broken his leg' (present perfect) and 'He broke his leg' (past simple) are both correct here. Present perfect emphasises the current result (his leg is broken now). Past simple focuses on the event. Both are natural in an emergency. Don't second-guess a correct sentence.",
+          "depth": 2,
+          "name": "A reassurance point: 'He has broken his leg' (present perfect) and 'He broke his leg' (past simple) are both correct here. Present perfect emphasises the current result (his leg is broken now). Past simple focuses on the event. Both are natural in an emergency. Don't second-guess a correct sentence."
+        },
+        {
+          "text": "❌ \"The nurse put a plaster in my finger.\"",
+          "depth": 2,
+          "name": "❌ \"The nurse put a plaster in my finger.\""
+        },
+        {
+          "text": "✅ \"The nurse put a plaster on my finger.\"",
+          "depth": 2,
+          "name": "✅ \"The nurse put a plaster on my finger.\""
+        },
+        {
+          "text": "'On' for surfaces: 'on my finger', 'on my arm', 'on my knee.' 'In' for inside: 'in my eye', 'in my mouth.' We put a plaster ON a body part (it sits on the surface). 'She put a bandage on his wrist.' 'He put eye drops in his eyes.'",
+          "depth": 2,
+          "name": "'On' for surfaces: 'on my finger', 'on my arm', 'on my knee.' 'In' for inside: 'in my eye', 'in my mouth.' We put a plaster ON a body part (it sits on the surface). 'She put a bandage on his wrist.' 'He put eye drops in his eyes.'"
+        },
+        {
+          "text": "❌ \"I feel very badly. I think I need to lie down.\"",
+          "depth": 2,
+          "name": "❌ \"I feel very badly. I think I need to lie down.\""
+        },
+        {
+          "text": "✅ \"I feel very bad. I think I need to lie down.\"",
+          "depth": 2,
+          "name": "✅ \"I feel very bad. I think I need to lie down.\""
+        },
+        {
+          "text": "'Feel' is a linking verb — use an adjective, not an adverb. 'I feel bad' (adjective — describes your state). 'I feel badly' means your sense of touch doesn't work well. Same rule: 'I feel sick' (not *sickly), 'I feel tired' (not *tiredly), 'I feel happy' (not *happily).",
+          "depth": 2,
+          "name": "'Feel' is a linking verb — use an adjective, not an adverb. 'I feel bad' (adjective — describes your state). 'I feel badly' means your sense of touch doesn't work well. Same rule: 'I feel sick' (not *sickly), 'I feel tired' (not *tiredly), 'I feel happy' (not *happily)."
+        },
+        {
+          "text": "❌ \"She laid on the stretcher until the ambulance arrived.\"",
+          "depth": 2,
+          "name": "❌ \"She laid on the stretcher until the ambulance arrived.\""
+        },
+        {
+          "text": "✅ \"She lay on the stretcher until the ambulance arrived.\"",
+          "depth": 2,
+          "name": "✅ \"She lay on the stretcher until the ambulance arrived.\""
+        },
+        {
+          "text": "'Lie – lay – lain' (no object, intransitive): 'She lies down. She lay down yesterday. She has lain there for an hour.' 'Lay – laid – laid' (with object, transitive): 'Lay the patient on the stretcher. He laid the bandage on the table.' The past tense of 'lie' is 'lay' — which looks like the present tense of a different verb.",
+          "depth": 2,
+          "name": "'Lie – lay – lain' (no object, intransitive): 'She lies down. She lay down yesterday. She has lain there for an hour.' 'Lay – laid – laid' (with object, transitive): 'Lay the patient on the stretcher. He laid the bandage on the table.' The past tense of 'lie' is 'lay' — which looks like the present tense of a different verb."
+        },
+        {
+          "text": "❌ \"First aid informations are available in the manual.\"",
+          "depth": 2,
+          "name": "❌ \"First aid informations are available in the manual.\""
+        },
+        {
+          "text": "✅ \"First aid information is available in the manual.\"",
+          "depth": 2,
+          "name": "✅ \"First aid information is available in the manual.\""
+        },
+        {
+          "text": "'Information' is uncountable — no plural 's' and no 'a.' 'Some information', 'a piece of information', 'useful information.' Never 'informations.' Other uncountable nouns: 'advice', 'knowledge', 'equipment', 'furniture', 'luggage.'",
+          "depth": 2,
+          "name": "'Information' is uncountable — no plural 's' and no 'a.' 'Some information', 'a piece of information', 'useful information.' Never 'informations.' Other uncountable nouns: 'advice', 'knowledge', 'equipment', 'furniture', 'luggage.'"
+        },
+        {
+          "text": "✗  \"She is allergic from bee stings.\"",
+          "depth": 2,
+          "name": "✗ \"She is allergic from bee stings.\""
+        },
+        {
+          "text": "✓  \"She is allergic to bee stings.\"",
+          "depth": 2,
+          "name": "✓ \"She is allergic to bee stings.\""
+        },
+        {
+          "text": "The correct preposition is 'to', not 'from'.",
+          "depth": 2,
+          "name": "The correct preposition is 'to', not 'from'."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "538:100",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "Adverb",
+          "depth": 2,
+          "name": "Adverb"
+        },
+        {
+          "text": "injury",
+          "depth": 2,
+          "name": "injury"
+        },
+        {
+          "text": "injure",
+          "depth": 2,
+          "name": "injure"
+        },
+        {
+          "text": "injured",
+          "depth": 2,
+          "name": "injured"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "treatment",
+          "depth": 2,
+          "name": "treatment"
+        },
+        {
+          "text": "treat",
+          "depth": 2,
+          "name": "treat"
+        },
+        {
+          "text": "treatable",
+          "depth": 2,
+          "name": "treatable"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "emergency",
+          "depth": 2,
+          "name": "emergency"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "emergency/emergent",
+          "depth": 2,
+          "name": "emergency/emergent"
+        },
+        {
+          "text": "urgently",
+          "depth": 2,
+          "name": "urgently"
+        },
+        {
+          "text": "infection",
+          "depth": 2,
+          "name": "infection"
+        },
+        {
+          "text": "infect",
+          "depth": 2,
+          "name": "infect"
+        },
+        {
+          "text": "infectious/infected",
+          "depth": 2,
+          "name": "infectious/infected"
+        },
+        {
+          "text": "infectiously",
+          "depth": 2,
+          "name": "infectiously"
+        },
+        {
+          "text": "examination",
+          "depth": 2,
+          "name": "examination"
+        },
+        {
+          "text": "examine",
+          "depth": 2,
+          "name": "examine"
+        },
+        {
+          "text": "examined",
+          "depth": 2,
+          "name": "examined"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "bleeding",
+          "depth": 2,
+          "name": "bleeding"
+        },
+        {
+          "text": "bleed",
+          "depth": 2,
+          "name": "bleed"
+        },
+        {
+          "text": "bloody",
+          "depth": 2,
+          "name": "bloody"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "burn",
+          "depth": 2,
+          "name": "burn"
+        },
+        {
+          "text": "burn",
+          "depth": 2,
+          "name": "burn"
+        },
+        {
+          "text": "burned/burnt",
+          "depth": 2,
+          "name": "burned/burnt"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "bandage",
+          "depth": 2,
+          "name": "bandage"
+        },
+        {
+          "text": "bandage",
+          "depth": 2,
+          "name": "bandage"
+        },
+        {
+          "text": "bandaged",
+          "depth": 2,
+          "name": "bandaged"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "sterilization",
+          "depth": 2,
+          "name": "sterilization"
+        },
+        {
+          "text": "sterilize",
+          "depth": 2,
+          "name": "sterilize"
+        },
+        {
+          "text": "sterile/sterilized",
+          "depth": 2,
+          "name": "sterile/sterilized"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "consciousness",
+          "depth": 2,
+          "name": "consciousness"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "conscious/unconscious",
+          "depth": 2,
+          "name": "conscious/unconscious"
+        },
+        {
+          "text": "consciously",
+          "depth": 2,
+          "name": "consciously"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "538:990",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A __________ wraps around a wound to protect it and stop bleeding.",
+          "depth": 1,
+          "name": "1. A __________ wraps around a wound to protect it and stop bleeding."
+        },
+        {
+          "text": "2.  An __________ wipe cleans the wound and kills bacteria.",
+          "depth": 1,
+          "name": "2. An __________ wipe cleans the wound and kills bacteria."
+        },
+        {
+          "text": "3.  A cold __________ or ice pack reduces swelling after an injury.",
+          "depth": 1,
+          "name": "3. A cold __________ or ice pack reduces swelling after an injury."
+        },
+        {
+          "text": "4.  A __________ carries an injured person who cannot walk.",
+          "depth": 1,
+          "name": "4. A __________ carries an injured person who cannot walk."
+        },
+        {
+          "text": "5.  __________ — a thin, breathable fabric — is placed directly over the wound.",
+          "depth": 1,
+          "name": "5. __________ — a thin, breathable fabric — is placed directly over the wound."
+        },
+        {
+          "text": "6.  A __________ oximeter clips onto the finger to measure oxygen levels.",
+          "depth": 1,
+          "name": "6. A __________ oximeter clips onto the finger to measure oxygen levels."
+        },
+        {
+          "text": "7.  A __________ helps someone walk when they have a leg injury.",
+          "depth": 1,
+          "name": "7. A __________ helps someone walk when they have a leg injury."
+        },
+        {
+          "text": "8.  An __________ delivers an electric shock to restart a stopped heart.",
+          "depth": 1,
+          "name": "8. An __________ delivers an electric shock to restart a stopped heart."
+        },
+        {
+          "text": "9.  __________ tape holds the gauze pad in place over the wound.",
+          "depth": 1,
+          "name": "9. __________ tape holds the gauze pad in place over the wound."
+        },
+        {
+          "text": "10. A __________ brace supports the head and neck after a spinal injury.",
+          "depth": 1,
+          "name": "10. A __________ brace supports the head and neck after a spinal injury."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. bandage  2. antiseptic  3. pack  4. stretcher  5. Gauze  6. pulse  7. crutch  8. AED  9. Adhesive  10. neck",
+          "depth": 2,
+          "name": "1. bandage 2. antiseptic 3. pack 4. stretcher 5. Gauze 6. pulse 7. crutch 8. AED 9. Adhesive 10. neck"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "538:1008",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "🇬🇧 vs 🇺🇸 Vocabulary",
+          "depth": 2,
+          "name": "🇬🇧 vs 🇺🇸 Vocabulary"
+        },
+        {
+          "text": "British English uses \"plaster\" for what Americans call a \"Band-Aid\" (brand name) or \"adhesive bandage\". Similarly, \"Elastoplast\" (UK) = \"Band-Aid\" (US).",
+          "depth": 2,
+          "name": "British English uses \"plaster\" for what Americans call a \"Band-Aid\" (brand name) or \"adhesive bandage\". Similarly, \"Elastoplast\" (UK) = \"Band-Aid\" (US)."
+        },
+        {
+          "text": "First Aid at Work — Legal Requirements",
+          "depth": 2,
+          "name": "First Aid at Work — Legal Requirements"
+        },
+        {
+          "text": "In many countries, workplaces are legally required to have a trained first aider and a stocked first aid kit. The UK requires one per 50 employees; regulations vary elsewhere.",
+          "depth": 2,
+          "name": "In many countries, workplaces are legally required to have a trained first aider and a stocked first aid kit. The UK requires one per 50 employees; regulations vary elsewhere."
+        },
+        {
+          "text": "Calling Emergency Services",
+          "depth": 2,
+          "name": "Calling Emergency Services"
+        },
+        {
+          "text": "Different countries have different emergency numbers: 911 (USA/Canada), 999 (UK), 112 (EU/International), 000 (Australia). Teaching the local number is essential.",
+          "depth": 2,
+          "name": "Different countries have different emergency numbers: 911 (USA/Canada), 999 (UK), 112 (EU/International), 000 (Australia). Teaching the local number is essential."
+        },
+        {
+          "text": "Medicine Cabinet vs First Aid Kit",
+          "depth": 2,
+          "name": "Medicine Cabinet vs First Aid Kit"
+        },
+        {
+          "text": "A \"medicine cabinet\" is typically found in bathrooms at home. A \"first aid kit\" is the portable box used in workplaces and schools. Don't confuse them — first aid kits should NOT contain prescription medicines.",
+          "depth": 2,
+          "name": "A \"medicine cabinet\" is typically found in bathrooms at home. A \"first aid kit\" is the portable box used in workplaces and schools. Don't confuse them — first aid kits should NOT contain prescription medicines."
+        },
+        {
+          "text": "Formal vs Informal",
+          "depth": 2,
+          "name": "Formal vs Informal"
+        },
+        {
+          "text": "\"Wound\" is more formal/medical than \"cut\" or \"scrape\". In casual speech: \"I got a cut on my finger.\" In a report: \"The patient presented with a superficial wound to the index finger.\"",
+          "depth": 2,
+          "name": "\"Wound\" is more formal/medical than \"cut\" or \"scrape\". In casual speech: \"I got a cut on my finger.\" In a report: \"The patient presented with a superficial wound to the index finger.\""
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "538:1027",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents — part of speech, frequency, and key collocations.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents — part of speech, frequency, and key collocations."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "bandage",
+          "depth": 2,
+          "name": "bandage"
+        },
+        {
+          "text": "n / v",
+          "depth": 2,
+          "name": "n / v"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "apply a ~, elastic ~, wrap with a ~",
+          "depth": 2,
+          "name": "apply a ~, elastic ~, wrap with a ~"
+        },
+        {
+          "text": "cut",
+          "depth": 2,
+          "name": "cut"
+        },
+        {
+          "text": "n / v",
+          "depth": 2,
+          "name": "n / v"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "deep ~, minor ~, get a ~, ~ your finger",
+          "depth": 2,
+          "name": "deep ~, minor ~, get a ~, ~ your finger"
+        },
+        {
+          "text": "bruise",
+          "depth": 2,
+          "name": "bruise"
+        },
+        {
+          "text": "n / v",
+          "depth": 2,
+          "name": "n / v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "nasty ~, ~ easily, ~ on the arm",
+          "depth": 2,
+          "name": "nasty ~, ~ easily, ~ on the arm"
+        },
+        {
+          "text": "splint",
+          "depth": 2,
+          "name": "splint"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "apply a ~, finger ~, leg ~",
+          "depth": 2,
+          "name": "apply a ~, finger ~, leg ~"
+        },
+        {
+          "text": "fracture",
+          "depth": 2,
+          "name": "fracture"
+        },
+        {
+          "text": "n / v",
+          "depth": 2,
+          "name": "n / v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "hairline ~, stress ~, ~ a bone",
+          "depth": 2,
+          "name": "hairline ~, stress ~, ~ a bone"
+        },
+        {
+          "text": "stretcher",
+          "depth": 2,
+          "name": "stretcher"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "carry on a ~, put on a ~",
+          "depth": 2,
+          "name": "carry on a ~, put on a ~"
+        },
+        {
+          "text": "antiseptic",
+          "depth": 2,
+          "name": "antiseptic"
+        },
+        {
+          "text": "n / adj",
+          "depth": 2,
+          "name": "n / adj"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ wipe, ~ cream, ~ solution",
+          "depth": 2,
+          "name": "~ wipe, ~ cream, ~ solution"
+        },
+        {
+          "text": "emergency",
+          "depth": 2,
+          "name": "emergency"
+        },
+        {
+          "text": "n / adj",
+          "depth": 2,
+          "name": "n / adj"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ room, ~ services, in an ~",
+          "depth": 2,
+          "name": "~ room, ~ services, in an ~"
+        },
+        {
+          "text": "thermometer",
+          "depth": 2,
+          "name": "thermometer"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "digital ~, read the ~, take temperature",
+          "depth": 2,
+          "name": "digital ~, read the ~, take temperature"
+        },
+        {
+          "text": "defibrillator",
+          "depth": 2,
+          "name": "defibrillator"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "use a ~, portable ~, automatic ~",
+          "depth": 2,
+          "name": "use a ~, portable ~, automatic ~"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "unitId": "colors",
+  "name": "Colors",
+  "subtopics": [
+    {
+      "id": "primary-colors",
+      "title": "Primary Colors",
+      "wordIds": [
+        "red",
+        "blue",
+        "yellow",
+        "green",
+        "orange",
+        "purple",
+        "pink",
+        "brown",
+        "black",
+        "white"
+      ]
+    },
+    {
+      "id": "secondary-tertiary",
+      "title": "Secondary & Tertiary",
+      "wordIds": [
+        "cyan",
+        "magenta",
+        "lime",
+        "teal",
+        "indigo",
+        "violet",
+        "coral",
+        "salmon",
+        "turquoise",
+        "lavender"
+      ]
+    },
+    {
+      "id": "color-properties",
+      "title": "Color Properties",
+      "wordIds": [
+        "light",
+        "dark",
+        "bright",
+        "dull",
+        "vivid",
+        "pale",
+        "deep",
+        "warm",
+        "cool",
+        "neutral"
+      ]
+    },
+    {
+      "id": "color-mixing",
+      "title": "Color Mixing",
+      "wordIds": [
+        "mix",
+        "blend",
+        "shade",
+        "tint",
+        "hue",
+        "saturation",
+        "gradient",
+        "rainbow",
+        "spectrum",
+        "pigment"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "red",
+      "label": "Red",
+      "ipa": "/rɛd/",
+      "cefr": "A2",
+      "imageNodeId": "467:8595"
+    },
+    {
+      "kind": "card",
+      "id": "blue",
+      "label": "Blue",
+      "ipa": "/bluː/",
+      "cefr": "A2",
+      "imageNodeId": "467:8599"
+    },
+    {
+      "kind": "card",
+      "id": "yellow",
+      "label": "Yellow",
+      "ipa": "/ˈjɛloʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:8603"
+    },
+    {
+      "kind": "card",
+      "id": "green",
+      "label": "Green",
+      "ipa": "/ɡriːn/",
+      "cefr": "A2",
+      "imageNodeId": "467:8607"
+    },
+    {
+      "kind": "card",
+      "id": "orange",
+      "label": "Orange",
+      "ipa": "/ˈɒrɪndʒ/",
+      "cefr": "A2",
+      "imageNodeId": "467:8611"
+    },
+    {
+      "kind": "card",
+      "id": "purple",
+      "label": "Purple",
+      "ipa": "/ˈpɜːrpəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:8615"
+    },
+    {
+      "kind": "card",
+      "id": "pink",
+      "label": "Pink",
+      "ipa": "/pɪŋk/",
+      "cefr": "A2",
+      "imageNodeId": "467:8619"
+    },
+    {
+      "kind": "card",
+      "id": "brown",
+      "label": "Brown",
+      "ipa": "/braʊn/",
+      "cefr": "A2",
+      "imageNodeId": "467:8623"
+    },
+    {
+      "kind": "card",
+      "id": "black",
+      "label": "Black",
+      "ipa": "/blæk/",
+      "cefr": "A2",
+      "imageNodeId": "467:8627"
+    },
+    {
+      "kind": "card",
+      "id": "white",
+      "label": "White",
+      "ipa": "/waɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8631"
+    },
+    {
+      "kind": "card",
+      "id": "cyan",
+      "label": "Cyan",
+      "ipa": "/ˈsaɪæn/",
+      "cefr": "A2",
+      "imageNodeId": "467:8640"
+    },
+    {
+      "kind": "card",
+      "id": "magenta",
+      "label": "Magenta",
+      "ipa": "/məˈdʒɛntə/",
+      "cefr": "A2",
+      "imageNodeId": "467:8644"
+    },
+    {
+      "kind": "card",
+      "id": "lime",
+      "label": "Lime",
+      "ipa": "/laɪm/",
+      "cefr": "A2",
+      "imageNodeId": "467:8648"
+    },
+    {
+      "kind": "card",
+      "id": "teal",
+      "label": "Teal",
+      "ipa": "/tiːl/",
+      "cefr": "A2",
+      "imageNodeId": "467:8652"
+    },
+    {
+      "kind": "card",
+      "id": "indigo",
+      "label": "Indigo",
+      "ipa": "/ˈɪndɪˌɡoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:8656"
+    },
+    {
+      "kind": "card",
+      "id": "violet",
+      "label": "Violet",
+      "ipa": "/ˈvaɪələt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8660"
+    },
+    {
+      "kind": "card",
+      "id": "coral",
+      "label": "Coral",
+      "ipa": "/ˈkɒrəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:8664"
+    },
+    {
+      "kind": "card",
+      "id": "salmon",
+      "label": "Salmon",
+      "ipa": "/ˈsæmən/",
+      "cefr": "A2",
+      "imageNodeId": "467:8668"
+    },
+    {
+      "kind": "card",
+      "id": "turquoise",
+      "label": "Turquoise",
+      "ipa": "/ˈtɜːrkwɔɪz/",
+      "cefr": "A2",
+      "imageNodeId": "467:8672"
+    },
+    {
+      "kind": "card",
+      "id": "lavender",
+      "label": "Lavender",
+      "ipa": "/ˈlævəndər/",
+      "cefr": "A2",
+      "imageNodeId": "467:8676"
+    },
+    {
+      "kind": "card",
+      "id": "light",
+      "label": "Light",
+      "ipa": "/laɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8685"
+    },
+    {
+      "kind": "card",
+      "id": "dark",
+      "label": "Dark",
+      "ipa": "/dɑːrk/",
+      "cefr": "A2",
+      "imageNodeId": "467:8689"
+    },
+    {
+      "kind": "card",
+      "id": "bright",
+      "label": "Bright",
+      "ipa": "/braɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8693"
+    },
+    {
+      "kind": "card",
+      "id": "dull",
+      "label": "Dull",
+      "ipa": "/dʌl/",
+      "cefr": "A2",
+      "imageNodeId": "467:8697"
+    },
+    {
+      "kind": "card",
+      "id": "vivid",
+      "label": "Vivid",
+      "ipa": "/ˈvɪvɪd/",
+      "cefr": "A2",
+      "imageNodeId": "467:8701"
+    },
+    {
+      "kind": "card",
+      "id": "pale",
+      "label": "Pale",
+      "ipa": "/peɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:8705"
+    },
+    {
+      "kind": "card",
+      "id": "deep",
+      "label": "Deep",
+      "ipa": "/diːp/",
+      "cefr": "A2",
+      "imageNodeId": "467:8709"
+    },
+    {
+      "kind": "card",
+      "id": "warm",
+      "label": "Warm",
+      "ipa": "/wɔːrm/",
+      "cefr": "A2",
+      "imageNodeId": "467:8713"
+    },
+    {
+      "kind": "card",
+      "id": "cool",
+      "label": "Cool",
+      "ipa": "/kuːl/",
+      "cefr": "A2",
+      "imageNodeId": "467:8717"
+    },
+    {
+      "kind": "card",
+      "id": "neutral",
+      "label": "Neutral",
+      "ipa": "/ˈnjuːtrəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:8721"
+    },
+    {
+      "kind": "card",
+      "id": "mix",
+      "label": "Mix",
+      "ipa": "/mɪks/",
+      "cefr": "A2",
+      "imageNodeId": "467:8730"
+    },
+    {
+      "kind": "card",
+      "id": "blend",
+      "label": "Blend",
+      "ipa": "/blɛnd/",
+      "cefr": "A2",
+      "imageNodeId": "467:8734"
+    },
+    {
+      "kind": "card",
+      "id": "shade",
+      "label": "Shade",
+      "ipa": "/ʃeɪd/",
+      "cefr": "A2",
+      "imageNodeId": "467:8738"
+    },
+    {
+      "kind": "card",
+      "id": "tint",
+      "label": "Tint",
+      "ipa": "/tɪnt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8742"
+    },
+    {
+      "kind": "card",
+      "id": "hue",
+      "label": "Hue",
+      "ipa": "/hjuː/",
+      "cefr": "A2",
+      "imageNodeId": "467:8746"
+    },
+    {
+      "kind": "card",
+      "id": "saturation",
+      "label": "Saturation",
+      "ipa": "/ˌsætʃəˈreɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "467:8750"
+    },
+    {
+      "kind": "card",
+      "id": "gradient",
+      "label": "Gradient",
+      "ipa": "/ˈɡreɪdiənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8754"
+    },
+    {
+      "kind": "card",
+      "id": "rainbow",
+      "label": "Rainbow",
+      "ipa": "/ˈreɪnˌboʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:8758"
+    },
+    {
+      "kind": "card",
+      "id": "spectrum",
+      "label": "Spectrum",
+      "ipa": "/ˈspɛktrəm/",
+      "cefr": "A2",
+      "imageNodeId": "467:8762"
+    },
+    {
+      "kind": "card",
+      "id": "pigment",
+      "label": "Pigment",
+      "ipa": "/ˈpɪɡmənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:8766"
+    }
+  ],
+  "materials": null
+}

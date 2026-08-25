@@ -1,0 +1,1576 @@
+{
+  "unitId": "gas-station",
+  "name": "The Gas Station",
+  "subtopics": [
+    {
+      "id": "fuel-pumps",
+      "title": "Fuel & Pumps",
+      "wordIds": [
+        "gas-pump",
+        "nozzle",
+        "fuel-cap",
+        "diesel",
+        "unleaded",
+        "premium",
+        "fuel-gauge",
+        "receipt",
+        "card-reader",
+        "price-sign"
+      ]
+    },
+    {
+      "id": "convenience-store",
+      "title": "Convenience Store",
+      "wordIds": [
+        "snacks",
+        "drinks",
+        "coffee",
+        "ice",
+        "candy",
+        "chips",
+        "gum",
+        "lottery-ticket",
+        "newspaper",
+        "sunglasses"
+      ]
+    },
+    {
+      "id": "car-care",
+      "title": "Car Care",
+      "wordIds": [
+        "air-pump",
+        "windshield-fluid",
+        "oil",
+        "coolant",
+        "wiper-blades",
+        "car-wash",
+        "vacuum",
+        "tire-pressure",
+        "antifreeze",
+        "funnel"
+      ]
+    },
+    {
+      "id": "station-features",
+      "title": "Station Features",
+      "wordIds": [
+        "canopy",
+        "parking-spot",
+        "dumpster",
+        "restroom",
+        "ice-machine",
+        "atm",
+        "trash-can",
+        "squeegee",
+        "paper-towel",
+        "water-hose"
+      ]
+    },
+    {
+      "id": "vehicles",
+      "title": "Vehicles",
+      "wordIds": [
+        "car",
+        "truck",
+        "suv",
+        "van",
+        "motorcycle",
+        "rv",
+        "trailer",
+        "bus",
+        "sedan",
+        "convertible"
+      ]
+    },
+    {
+      "id": "people-actions",
+      "title": "People & Actions",
+      "wordIds": [
+        "attendant",
+        "cashier",
+        "customer",
+        "pumping-gas",
+        "paying",
+        "checking-oil",
+        "filling-tires",
+        "washing-windshield",
+        "fueling",
+        "driving-away"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "gas-pump",
+      "label": "Gas Pump",
+      "ipa": "/ɡæs pʌmp/",
+      "cefr": "B2",
+      "imageNodeId": "119:2383"
+    },
+    {
+      "kind": "card",
+      "id": "nozzle",
+      "label": "Nozzle",
+      "ipa": "/ˈnɒzəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:2387"
+    },
+    {
+      "kind": "card",
+      "id": "fuel-cap",
+      "label": "Fuel Cap",
+      "ipa": "/fjuːəl kæp/",
+      "cefr": "B2",
+      "imageNodeId": "119:2391"
+    },
+    {
+      "kind": "card",
+      "id": "diesel",
+      "label": "Diesel",
+      "ipa": "/ˈdiːzəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:2395"
+    },
+    {
+      "kind": "card",
+      "id": "unleaded",
+      "label": "Unleaded",
+      "ipa": "/ʌnˈlɛdɪd/",
+      "cefr": "B1",
+      "imageNodeId": "119:2399"
+    },
+    {
+      "kind": "card",
+      "id": "premium",
+      "label": "Premium",
+      "ipa": "/ˈpriːmiəm/",
+      "cefr": "B1",
+      "imageNodeId": "119:2403"
+    },
+    {
+      "kind": "card",
+      "id": "fuel-gauge",
+      "label": "Fuel Gauge",
+      "ipa": "/fjuːəl ɡeɪdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "119:2407"
+    },
+    {
+      "kind": "card",
+      "id": "receipt",
+      "label": "Receipt",
+      "ipa": "/rɪˈsiːt/",
+      "cefr": "B1",
+      "imageNodeId": "119:2411"
+    },
+    {
+      "kind": "card",
+      "id": "card-reader",
+      "label": "Card Reader",
+      "ipa": "/kɑːrd ˈriːdər/",
+      "cefr": "B2",
+      "imageNodeId": "119:2415"
+    },
+    {
+      "kind": "card",
+      "id": "price-sign",
+      "label": "Price Sign",
+      "ipa": "/praɪs saɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:2419"
+    },
+    {
+      "kind": "card",
+      "id": "snacks",
+      "label": "Snacks",
+      "ipa": "/snæks/",
+      "cefr": "B1",
+      "imageNodeId": "119:2428"
+    },
+    {
+      "kind": "card",
+      "id": "drinks",
+      "label": "Drinks",
+      "ipa": "/drɪŋks/",
+      "cefr": "B1",
+      "imageNodeId": "119:2432"
+    },
+    {
+      "kind": "card",
+      "id": "coffee",
+      "label": "Coffee",
+      "ipa": "/ˈkɒfi/",
+      "cefr": "B1",
+      "imageNodeId": "119:2436"
+    },
+    {
+      "kind": "card",
+      "id": "ice",
+      "label": "Ice",
+      "ipa": "/aɪs/",
+      "cefr": "B1",
+      "imageNodeId": "119:2440"
+    },
+    {
+      "kind": "card",
+      "id": "candy",
+      "label": "Candy",
+      "ipa": "/ˈkændi/",
+      "cefr": "B1",
+      "imageNodeId": "119:2444"
+    },
+    {
+      "kind": "card",
+      "id": "chips",
+      "label": "Chips",
+      "ipa": "/tʃɪps/",
+      "cefr": "B1",
+      "imageNodeId": "119:2448"
+    },
+    {
+      "kind": "card",
+      "id": "gum",
+      "label": "Gum",
+      "ipa": "/ɡʌm/",
+      "cefr": "B1",
+      "imageNodeId": "119:2452"
+    },
+    {
+      "kind": "card",
+      "id": "lottery-ticket",
+      "label": "Lottery Ticket",
+      "ipa": "/ˈlɒtəri ˈtɪkɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:2456"
+    },
+    {
+      "kind": "card",
+      "id": "newspaper",
+      "label": "Newspaper",
+      "ipa": "/ˈnjuːzˌpeɪpər/",
+      "cefr": "B1",
+      "imageNodeId": "119:2460"
+    },
+    {
+      "kind": "card",
+      "id": "sunglasses",
+      "label": "Sunglasses",
+      "ipa": "/ˈsʌnˌɡlæsɪz/",
+      "cefr": "B2",
+      "imageNodeId": "119:2464"
+    },
+    {
+      "kind": "card",
+      "id": "air-pump",
+      "label": "Air Pump",
+      "ipa": "/ɛər pʌmp/",
+      "cefr": "B2",
+      "imageNodeId": "119:2473"
+    },
+    {
+      "kind": "card",
+      "id": "windshield-fluid",
+      "label": "Windshield Fluid",
+      "ipa": "/ˈwɪndˌʃiːld ˈfluːɪd/",
+      "cefr": "C1",
+      "imageNodeId": "119:2477"
+    },
+    {
+      "kind": "card",
+      "id": "oil",
+      "label": "Oil",
+      "ipa": "/ɔɪl/",
+      "cefr": "B1",
+      "imageNodeId": "119:2481"
+    },
+    {
+      "kind": "card",
+      "id": "coolant",
+      "label": "Coolant",
+      "ipa": "/ˈkuːlənt/",
+      "cefr": "B1",
+      "imageNodeId": "119:2485"
+    },
+    {
+      "kind": "card",
+      "id": "wiper-blades",
+      "label": "Wiper Blades",
+      "ipa": "/ˈwaɪpər bleɪdz/",
+      "cefr": "B2",
+      "imageNodeId": "119:2489"
+    },
+    {
+      "kind": "card",
+      "id": "car-wash",
+      "label": "Car Wash",
+      "ipa": "/kɑːr wɒʃ/",
+      "cefr": "B2",
+      "imageNodeId": "119:2493"
+    },
+    {
+      "kind": "card",
+      "id": "vacuum",
+      "label": "Vacuum",
+      "ipa": "/ˈvækjuːm/",
+      "cefr": "B1",
+      "imageNodeId": "119:2497"
+    },
+    {
+      "kind": "card",
+      "id": "tire-pressure",
+      "label": "Tire Pressure",
+      "ipa": "/ˈtaɪər ˈprɛʃər/",
+      "cefr": "B2",
+      "imageNodeId": "119:2501"
+    },
+    {
+      "kind": "card",
+      "id": "antifreeze",
+      "label": "Antifreeze",
+      "ipa": "/ˈæntɪˌfriːz/",
+      "cefr": "B2",
+      "imageNodeId": "119:2505"
+    },
+    {
+      "kind": "card",
+      "id": "funnel",
+      "label": "Funnel",
+      "ipa": "/ˈfʌnəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:2509"
+    },
+    {
+      "kind": "card",
+      "id": "canopy",
+      "label": "Canopy",
+      "ipa": "/ˈkænəpi/",
+      "cefr": "B1",
+      "imageNodeId": "119:2518"
+    },
+    {
+      "kind": "card",
+      "id": "parking-spot",
+      "label": "Parking Spot",
+      "ipa": "/ˈpɑːrkɪŋ spɒt/",
+      "cefr": "B2",
+      "imageNodeId": "119:2522"
+    },
+    {
+      "kind": "card",
+      "id": "dumpster",
+      "label": "Dumpster",
+      "ipa": "/ˈdʌmpstər/",
+      "cefr": "B1",
+      "imageNodeId": "119:2526"
+    },
+    {
+      "kind": "card",
+      "id": "restroom",
+      "label": "Restroom",
+      "ipa": "/ˈrɛstruːm/",
+      "cefr": "B1",
+      "imageNodeId": "119:2530"
+    },
+    {
+      "kind": "card",
+      "id": "ice-machine",
+      "label": "Ice Machine",
+      "ipa": "/aɪs məˈʃiːn/",
+      "cefr": "B2",
+      "imageNodeId": "119:2534"
+    },
+    {
+      "kind": "card",
+      "id": "atm",
+      "label": "Atm",
+      "ipa": "/ˌeɪtiːˈɛm/",
+      "cefr": "B1",
+      "imageNodeId": "119:2538"
+    },
+    {
+      "kind": "card",
+      "id": "trash-can",
+      "label": "Trash Can",
+      "ipa": "/træʃ kæn/",
+      "cefr": "B2",
+      "imageNodeId": "119:2542"
+    },
+    {
+      "kind": "card",
+      "id": "squeegee",
+      "label": "Squeegee",
+      "ipa": "/ˈskwiːdʒiː/",
+      "cefr": "B1",
+      "imageNodeId": "119:2546"
+    },
+    {
+      "kind": "card",
+      "id": "paper-towel",
+      "label": "Paper Towel",
+      "ipa": "/ˈpeɪpər ˈtaʊəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:2550"
+    },
+    {
+      "kind": "card",
+      "id": "water-hose",
+      "label": "Water Hose",
+      "ipa": "/ˈwɔːtər hoʊz/",
+      "cefr": "B2",
+      "imageNodeId": "119:2554"
+    },
+    {
+      "kind": "card",
+      "id": "car",
+      "label": "Car",
+      "ipa": "/kɑːr/",
+      "cefr": "B1",
+      "imageNodeId": "119:2563"
+    },
+    {
+      "kind": "card",
+      "id": "truck",
+      "label": "Truck",
+      "ipa": "/trʌk/",
+      "cefr": "B1",
+      "imageNodeId": "119:2567"
+    },
+    {
+      "kind": "card",
+      "id": "suv",
+      "label": "Suv",
+      "ipa": "/ˌɛsˌjuːˈviː/",
+      "cefr": "B1",
+      "imageNodeId": "119:2571"
+    },
+    {
+      "kind": "card",
+      "id": "van",
+      "label": "Van",
+      "ipa": "/væn/",
+      "cefr": "B1",
+      "imageNodeId": "119:2575"
+    },
+    {
+      "kind": "card",
+      "id": "motorcycle",
+      "label": "Motorcycle",
+      "ipa": "/ˈmoʊtərˌsaɪkəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:2579"
+    },
+    {
+      "kind": "card",
+      "id": "rv",
+      "label": "Rv",
+      "ipa": "/ˌɑːrˈviː/",
+      "cefr": "B1",
+      "imageNodeId": "119:2583"
+    },
+    {
+      "kind": "card",
+      "id": "trailer",
+      "label": "Trailer",
+      "ipa": "/ˈtreɪlər/",
+      "cefr": "B1",
+      "imageNodeId": "119:2587"
+    },
+    {
+      "kind": "card",
+      "id": "bus",
+      "label": "Bus",
+      "ipa": "/bʌs/",
+      "cefr": "B1",
+      "imageNodeId": "119:2591"
+    },
+    {
+      "kind": "card",
+      "id": "sedan",
+      "label": "Sedan",
+      "ipa": "/sɪˈdæn/",
+      "cefr": "B1",
+      "imageNodeId": "119:2595"
+    },
+    {
+      "kind": "card",
+      "id": "convertible",
+      "label": "Convertible",
+      "ipa": "/kənˈvɜːrtɪbəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:2599"
+    },
+    {
+      "kind": "card",
+      "id": "attendant",
+      "label": "Attendant",
+      "ipa": "/əˈtɛndənt/",
+      "cefr": "B1",
+      "imageNodeId": "119:2608"
+    },
+    {
+      "kind": "card",
+      "id": "cashier",
+      "label": "Cashier",
+      "ipa": "/kæˈʃɪər/",
+      "cefr": "B1",
+      "imageNodeId": "119:2612"
+    },
+    {
+      "kind": "card",
+      "id": "customer",
+      "label": "Customer",
+      "ipa": "/ˈkʌstəmər/",
+      "cefr": "B1",
+      "imageNodeId": "119:2616"
+    },
+    {
+      "kind": "card",
+      "id": "pumping-gas",
+      "label": "Pumping Gas",
+      "ipa": "/ˈpʌmpɪŋ ɡæs/",
+      "cefr": "B2",
+      "imageNodeId": "119:2620"
+    },
+    {
+      "kind": "card",
+      "id": "paying",
+      "label": "Paying",
+      "ipa": "/ˈpeɪɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "119:2624"
+    },
+    {
+      "kind": "card",
+      "id": "checking-oil",
+      "label": "Checking Oil",
+      "ipa": "/ˈtʃɛkɪŋ ɔɪl/",
+      "cefr": "B2",
+      "imageNodeId": "119:2628"
+    },
+    {
+      "kind": "card",
+      "id": "filling-tires",
+      "label": "Filling Tires",
+      "ipa": "/ˈfɪlɪŋ ˈtaɪərz/",
+      "cefr": "B2",
+      "imageNodeId": "119:2632"
+    },
+    {
+      "kind": "card",
+      "id": "washing-windshield",
+      "label": "Washing Windshield",
+      "ipa": "/ˈwɒʃɪŋ ˈwɪndˌʃiːld/",
+      "cefr": "C1",
+      "imageNodeId": "119:2636"
+    },
+    {
+      "kind": "card",
+      "id": "fueling",
+      "label": "Fueling",
+      "ipa": "/ˈfjuːəlɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "119:2640"
+    },
+    {
+      "kind": "card",
+      "id": "driving-away",
+      "label": "Driving Away",
+      "ipa": "/ˈdraɪvɪŋ əˈweɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:2644"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "554:2129",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "554:2131",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2 · Topic: The Gas Station",
+          "depth": 1,
+          "name": "Level: B2 · Topic: The Gas Station"
+        },
+        {
+          "text": "Fill Up and Move On — The Gas Station as Roadside Infrastructure\n\nA gas station is one of the most purely functional spaces in modern life. You arrive because you must — because the fuel gauge on your dashboard is approaching empty — and you leave as quickly as possible. Yet this unremarkable stop is a surprisingly complex piece of infrastructure, and the vocabulary it teaches is immediately useful for any driver.\n\nThe forecourt is covered by a canopy — a flat roof supported by columns that protects customers from rain and sun. A gas pump stands on an island between parking spots. Each pump has a nozzle — the handle-and-spout device that delivers fuel — and a card reader for payment. A price sign displays the cost per litre or gallon. The fuel options are typically unleaded (regular petrol), premium (higher octane), and diesel. The driver opens the fuel cap, selects a fuel grade, inserts the nozzle, and squeezes the handle. A receipt prints when fueling is complete.\n\nVehicle types rotate through constantly: a car, a truck, an SUV, a van, a motorcycle, a sedan, a convertible, a trailer, and occasionally a bus. Each has different fuel requirements and tank sizes.\n\nThe convenience store attached to the station is where margins are made. Fuel is sold at thin profit; the snacks, drinks, coffee, ice, candy, chips, gum, lottery tickets, newspapers, and sunglasses inside generate the real revenue. A cashier operates the register. An ATM provides cash.\n\nMaintenance services are often available. An air pump inflates tyres — checking tire pressure is recommended monthly. Windshield fluid, oil, coolant, antifreeze, and wiper blades are sold on racks. A car wash — automated or hand — occupies one side. A vacuum cleans the interior. A funnel helps pour fluids. A squeegee — a handled rubber blade — cleans the windshield manually. A paper towel dries it.\n\nThe supporting infrastructure includes a parking spot, a dumpster for waste, a restroom (often requiring a key from the cashier), an ice machine, a trash can, and a water hose.\n\nThe actions performed here are routine: pumping gas, paying, checking oil, filling tires, washing the windshield, fueling, and driving away. An attendant — where full-service stations still exist — performs these tasks for the customer.\n\nGas stations are evolving. Electric vehicle charging stations are appearing alongside traditional pumps. Some stations now offer coffee bars, fast food, and even co-working spaces. But the core function remains unchanged: energy transfer — converting stored fuel into the motion that keeps society moving.",
+          "depth": 1,
+          "name": "Fill Up and Move On — The Gas Station as Roadside Infrastructure A gas station is one of the most purely functional spaces in modern life. You arrive because you must — because the fuel gauge on your dashboard is approaching empty — and you leave as quickly as possible. Yet this unremarkable stop is a surprisingly complex piece of infrastructure, and the vocabulary it teaches is immediately useful for any driver. The forecourt is covered by a canopy — a flat roof supported by columns that protects customers from rain and sun. A gas pump stands on an island between parking spots. Each pump has a nozzle — the handle-and-spout device that delivers fuel — and a card reader for payment. A price sign displays the cost per litre or gallon. The fuel options are typically unleaded (regular petrol), premium (higher octane), and diesel. The driver opens the fuel cap, selects a fuel grade, inserts the nozzle, and squeezes the handle. A receipt prints when fueling is complete. Vehicle types rotate through constantly: a car, a truck, an SUV, a van, a motorcycle, a sedan, a convertible, a trailer, and occasionally a bus. Each has different fuel requirements and tank sizes. The convenience store attached to the station is where margins are made. Fuel is sold at thin profit; the snacks, drinks, coffee, ice, candy, chips, gum, lottery tickets, newspapers, and sunglasses inside generate the real revenue. A cashier operates the register. An ATM provides cash. Maintenance services are often available. An air pump inflates tyres — checking tire pressure is recommended monthly. Windshield fluid, oil, coolant, antifreeze, and wiper blades are sold on racks. A car wash — automated or hand — occupies one side. A vacuum cleans the interior. A funnel helps pour fluids. A squeegee — a handled rubber blade — cleans the windshield manually. A paper towel dries it. The supporting infrastructure includes a parking spot, a dumpster for waste, a restroom (often requiring a key from the cashier), an ice machine, a trash can, and a water hose. The actions performed here are routine: pumping gas, paying, checking oil, filling tires, washing the windshield, fueling, and driving away. An attendant — where full-service stations still exist — performs these tasks for the customer. Gas stations are evolving. Electric vehicle charging stations are appearing alongside traditional pumps. Some stations now offer coffee bars, fast food, and even co-working spaces. But the core function remains unchanged: energy transfer — converting stored fuel into the motion that keeps society moving."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Describe the fueling process step by step, from arriving at the pump to driving away.",
+          "depth": 1,
+          "name": "1. Describe the fueling process step by step, from arriving at the pump to driving away."
+        },
+        {
+          "text": "2. Why does the passage say fuel is sold 'at thin profit'? What generates the real revenue?",
+          "depth": 1,
+          "name": "2. Why does the passage say fuel is sold 'at thin profit'? What generates the real revenue?"
+        },
+        {
+          "text": "3. What vehicle maintenance services are available at the station? Name at least five.",
+          "depth": 1,
+          "name": "3. What vehicle maintenance services are available at the station? Name at least five."
+        },
+        {
+          "text": "4. How are gas stations evolving, according to the passage? What new features are appearing?",
+          "depth": 1,
+          "name": "4. How are gas stations evolving, according to the passage? What new features are appearing?"
+        },
+        {
+          "text": "5. The passage calls the gas station 'purely functional.' Do you agree, or does it serve other purposes?",
+          "depth": 1,
+          "name": "5. The passage calls the gas station 'purely functional.' Do you agree, or does it serve other purposes?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "554:2144",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "fill up",
+          "depth": 2,
+          "name": "fill up"
+        },
+        {
+          "text": "put fuel in the tank until it's full",
+          "depth": 2,
+          "name": "put fuel in the tank until it's full"
+        },
+        {
+          "text": "\"I need to fill up before the long drive.\"",
+          "depth": 2,
+          "name": "\"I need to fill up before the long drive.\""
+        },
+        {
+          "text": "running on empty / running on fumes",
+          "depth": 2,
+          "name": "running on empty / running on fumes"
+        },
+        {
+          "text": "almost out of fuel (also: very tired or out of energy)",
+          "depth": 2,
+          "name": "almost out of fuel (also: very tired or out of energy)"
+        },
+        {
+          "text": "\"I've been working 12-hour days — I'm running on empty.\"",
+          "depth": 2,
+          "name": "\"I've been working 12-hour days — I'm running on empty.\""
+        },
+        {
+          "text": "top up",
+          "depth": 2,
+          "name": "top up"
+        },
+        {
+          "text": "add a small amount to something partially full",
+          "depth": 2,
+          "name": "add a small amount to something partially full"
+        },
+        {
+          "text": "\"I'll just top up the tank — I don't need a full fill.\"",
+          "depth": 2,
+          "name": "\"I'll just top up the tank — I don't need a full fill.\""
+        },
+        {
+          "text": "pull over / pull in",
+          "depth": 2,
+          "name": "pull over / pull in"
+        },
+        {
+          "text": "stop at the side of the road / drive into a place",
+          "depth": 2,
+          "name": "stop at the side of the road / drive into a place"
+        },
+        {
+          "text": "\"Let's pull in at the next petrol station.\"",
+          "depth": 2,
+          "name": "\"Let's pull in at the next petrol station.\""
+        },
+        {
+          "text": "step on it / put the pedal to the metal",
+          "depth": 2,
+          "name": "step on it / put the pedal to the metal"
+        },
+        {
+          "text": "drive faster; hurry up",
+          "depth": 2,
+          "name": "drive faster; hurry up"
+        },
+        {
+          "text": "\"We're going to be late — step on it!\"",
+          "depth": 2,
+          "name": "\"We're going to be late — step on it!\""
+        },
+        {
+          "text": "run out of petrol/gas",
+          "depth": 2,
+          "name": "run out of petrol/gas"
+        },
+        {
+          "text": "have no more fuel",
+          "depth": 2,
+          "name": "have no more fuel"
+        },
+        {
+          "text": "\"We ran out of petrol on the motorway — it was so embarrassing.\"",
+          "depth": 2,
+          "name": "\"We ran out of petrol on the motorway — it was so embarrassing.\""
+        },
+        {
+          "text": "fuel (verb, figurative)",
+          "depth": 2,
+          "name": "fuel (verb, figurative)"
+        },
+        {
+          "text": "to increase or encourage something",
+          "depth": 2,
+          "name": "to increase or encourage something"
+        },
+        {
+          "text": "\"The news fuelled public anger about the decision.\"",
+          "depth": 2,
+          "name": "\"The news fuelled public anger about the decision.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "554:2176",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A driver stopping at a petrol station",
+          "depth": 1,
+          "name": "Scene: A driver stopping at a petrol station"
+        },
+        {
+          "text": "Driver:",
+          "depth": 2,
+          "name": "Driver:"
+        },
+        {
+          "text": "Hi, I need to fill up. Which pump has unleaded?",
+          "depth": 2,
+          "name": "Hi, I need to fill up. Which pump has unleaded?"
+        },
+        {
+          "text": "Attendant:",
+          "depth": 2,
+          "name": "Attendant:"
+        },
+        {
+          "text": "Pumps 1 to 4 are unleaded. Pumps 5 and 6 are diesel. The green nozzle is unleaded, the black one is diesel.",
+          "depth": 2,
+          "name": "Pumps 1 to 4 are unleaded. Pumps 5 and 6 are diesel. The green nozzle is unleaded, the black one is diesel."
+        },
+        {
+          "text": "Driver:",
+          "depth": 2,
+          "name": "Driver:"
+        },
+        {
+          "text": "Thanks. Can I also get the tyre pressure checked?",
+          "depth": 2,
+          "name": "Thanks. Can I also get the tyre pressure checked?"
+        },
+        {
+          "text": "Attendant:",
+          "depth": 2,
+          "name": "Attendant:"
+        },
+        {
+          "text": "The air station is round the side. It's free — just select your pressure on the screen.",
+          "depth": 2,
+          "name": "The air station is round the side. It's free — just select your pressure on the screen."
+        },
+        {
+          "text": "Driver:",
+          "depth": 2,
+          "name": "Driver:"
+        },
+        {
+          "text": "What pressure should I use?",
+          "depth": 2,
+          "name": "What pressure should I use?"
+        },
+        {
+          "text": "Attendant:",
+          "depth": 2,
+          "name": "Attendant:"
+        },
+        {
+          "text": "Check the sticker on the inside of your driver's door — it tells you the correct tyre pressure for your car.",
+          "depth": 2,
+          "name": "Check the sticker on the inside of your driver's door — it tells you the correct tyre pressure for your car."
+        },
+        {
+          "text": "Driver:",
+          "depth": 2,
+          "name": "Driver:"
+        },
+        {
+          "text": "I've filled up now. Can I pay by card?",
+          "depth": 2,
+          "name": "I've filled up now. Can I pay by card?"
+        },
+        {
+          "text": "Attendant:",
+          "depth": 2,
+          "name": "Attendant:"
+        },
+        {
+          "text": "Yes, card and contactless are both fine. Anything else?",
+          "depth": 2,
+          "name": "Yes, card and contactless are both fine. Anything else?"
+        },
+        {
+          "text": "Driver:",
+          "depth": 2,
+          "name": "Driver:"
+        },
+        {
+          "text": "I'll grab a bottle of water and a sandwich, please.",
+          "depth": 2,
+          "name": "I'll grab a bottle of water and a sandwich, please."
+        },
+        {
+          "text": "Attendant:",
+          "depth": 2,
+          "name": "Attendant:"
+        },
+        {
+          "text": "That's £67.42 for the fuel, plus £4.50 for the water and sandwich. £71.92 altogether.",
+          "depth": 2,
+          "name": "That's £67.42 for the fuel, plus £4.50 for the water and sandwich. £71.92 altogether."
+        },
+        {
+          "text": "Driver:",
+          "depth": 2,
+          "name": "Driver:"
+        },
+        {
+          "text": "Here you go. Do you have a car wash?",
+          "depth": 2,
+          "name": "Here you go. Do you have a car wash?"
+        },
+        {
+          "text": "Attendant:",
+          "depth": 2,
+          "name": "Attendant:"
+        },
+        {
+          "text": "Yes, the automatic car wash is behind the building. Tokens are £8 from this counter.",
+          "depth": 2,
+          "name": "Yes, the automatic car wash is behind the building. Tokens are £8 from this counter."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "554:2217",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I need to put a petrol in my car before the tank is empty.\"",
+          "depth": 2,
+          "name": "❌ \"I need to put a petrol in my car before the tank is empty.\""
+        },
+        {
+          "text": "✅ \"I need to put petrol in my car before the tank is empty.\"",
+          "depth": 2,
+          "name": "✅ \"I need to put petrol in my car before the tank is empty.\""
+        },
+        {
+          "text": "'Petrol' (British) and 'gasoline/gas' (American) are uncountable — never 'a petrol' or 'a gas.' Use: 'some petrol', 'petrol', 'enough petrol.' Similarly: 'fuel' is uncountable: 'I need fuel' (not *a fuel). 'Diesel' is also uncountable when referring to the fuel: 'This car runs on diesel.'",
+          "depth": 2,
+          "name": "'Petrol' (British) and 'gasoline/gas' (American) are uncountable — never 'a petrol' or 'a gas.' Use: 'some petrol', 'petrol', 'enough petrol.' Similarly: 'fuel' is uncountable: 'I need fuel' (not *a fuel). 'Diesel' is also uncountable when referring to the fuel: 'This car runs on diesel.'"
+        },
+        {
+          "text": "❌ \"The attendant asked me if I want premium or unleaded fuel.\"",
+          "depth": 2,
+          "name": "❌ \"The attendant asked me if I want premium or unleaded fuel.\""
+        },
+        {
+          "text": "✅ \"The attendant asked me if I wanted premium or unleaded fuel.\"",
+          "depth": 2,
+          "name": "✅ \"The attendant asked me if I wanted premium or unleaded fuel.\""
+        },
+        {
+          "text": "Reported speech with a past reporting verb ('asked') requires tense backshift: 'want' → 'wanted.' Direct: 'Do you want premium or unleaded?' Reported: 'He asked if I wanted...' No backshift needed with present reporting verbs: 'He asks if I want...' Full sequence: will → would, can → could, is → was.",
+          "depth": 2,
+          "name": "Reported speech with a past reporting verb ('asked') requires tense backshift: 'want' → 'wanted.' Direct: 'Do you want premium or unleaded?' Reported: 'He asked if I wanted...' No backshift needed with present reporting verbs: 'He asks if I want...' Full sequence: will → would, can → could, is → was."
+        },
+        {
+          "text": "❌ \"I've been driving since five hours and I urgently need to fill the tank.\"",
+          "depth": 2,
+          "name": "❌ \"I've been driving since five hours and I urgently need to fill the tank.\""
+        },
+        {
+          "text": "✅ \"I've been driving for five hours and I urgently need to fill the tank.\"",
+          "depth": 2,
+          "name": "✅ \"I've been driving for five hours and I urgently need to fill the tank.\""
+        },
+        {
+          "text": "'For' + duration: 'for five hours', 'for three days.' 'Since' + point in time: 'since this morning', 'since 6 a.m.', 'since we left home.' Never *'since five hours.' Present perfect continuous emphasises ongoing duration: 'I've been driving for five hours' = I started five hours ago and I'm still driving.",
+          "depth": 2,
+          "name": "'For' + duration: 'for five hours', 'for three days.' 'Since' + point in time: 'since this morning', 'since 6 a.m.', 'since we left home.' Never *'since five hours.' Present perfect continuous emphasises ongoing duration: 'I've been driving for five hours' = I started five hours ago and I'm still driving."
+        },
+        {
+          "text": "❌ \"There are less gas stations on this motorway than there used to be.\"",
+          "depth": 2,
+          "name": "❌ \"There are less gas stations on this motorway than there used to be.\""
+        },
+        {
+          "text": "✅ \"There are fewer gas stations on this motorway than there used to be.\"",
+          "depth": 2,
+          "name": "✅ \"There are fewer gas stations on this motorway than there used to be.\""
+        },
+        {
+          "text": "'Fewer' + countable plural: 'fewer stations', 'fewer pumps', 'fewer attendants.' 'Less' + uncountable: 'less traffic', 'less fuel', 'less congestion.' Gas stations are countable individual locations, so 'fewer' is correct. Remember: if you can count them individually, use 'fewer.'",
+          "depth": 2,
+          "name": "'Fewer' + countable plural: 'fewer stations', 'fewer pumps', 'fewer attendants.' 'Less' + uncountable: 'less traffic', 'less fuel', 'less congestion.' Gas stations are countable individual locations, so 'fewer' is correct. Remember: if you can count them individually, use 'fewer.'"
+        },
+        {
+          "text": "❌ \"The car needs to be check the oil level before a long journey.\"",
+          "depth": 2,
+          "name": "❌ \"The car needs to be check the oil level before a long journey.\""
+        },
+        {
+          "text": "✅ \"The car needs to have its oil level checked before a long journey.\" / \"The oil level needs to be checked before a long journey.\"",
+          "depth": 2,
+          "name": "✅ \"The car needs to have its oil level checked before a long journey.\" / \"The oil level needs to be checked before a long journey.\""
+        },
+        {
+          "text": "'Need to be + past participle' (passive): 'needs to be checked.' Or 'need + -ing' (active form with passive meaning): 'The car needs checking.' Never *'needs to be check' — the passive requires the past participle. 'Have something done' (causative): 'have the oil checked' = arrange for someone to check it.",
+          "depth": 2,
+          "name": "'Need to be + past participle' (passive): 'needs to be checked.' Or 'need + -ing' (active form with passive meaning): 'The car needs checking.' Never *'needs to be check' — the passive requires the past participle. 'Have something done' (causative): 'have the oil checked' = arrange for someone to check it."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "554:2241",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how vehicle and fuel vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how vehicle and fuel vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "fuel",
+          "depth": 2,
+          "name": "fuel"
+        },
+        {
+          "text": "fuel / fuelling",
+          "depth": 2,
+          "name": "fuel / fuelling"
+        },
+        {
+          "text": "fuel",
+          "depth": 2,
+          "name": "fuel"
+        },
+        {
+          "text": "fuelled",
+          "depth": 2,
+          "name": "fuelled"
+        },
+        {
+          "text": "pump",
+          "depth": 2,
+          "name": "pump"
+        },
+        {
+          "text": "pump / pumping",
+          "depth": 2,
+          "name": "pump / pumping"
+        },
+        {
+          "text": "pump",
+          "depth": 2,
+          "name": "pump"
+        },
+        {
+          "text": "pumped",
+          "depth": 2,
+          "name": "pumped"
+        },
+        {
+          "text": "inflate",
+          "depth": 2,
+          "name": "inflate"
+        },
+        {
+          "text": "inflation / inflator",
+          "depth": 2,
+          "name": "inflation / inflator"
+        },
+        {
+          "text": "inflate",
+          "depth": 2,
+          "name": "inflate"
+        },
+        {
+          "text": "inflated / inflatable",
+          "depth": 2,
+          "name": "inflated / inflatable"
+        },
+        {
+          "text": "charge",
+          "depth": 2,
+          "name": "charge"
+        },
+        {
+          "text": "charge / charger / charging",
+          "depth": 2,
+          "name": "charge / charger / charging"
+        },
+        {
+          "text": "charge",
+          "depth": 2,
+          "name": "charge"
+        },
+        {
+          "text": "charged / rechargeable",
+          "depth": 2,
+          "name": "charged / rechargeable"
+        },
+        {
+          "text": "emit",
+          "depth": 2,
+          "name": "emit"
+        },
+        {
+          "text": "emission / emitter",
+          "depth": 2,
+          "name": "emission / emitter"
+        },
+        {
+          "text": "emit",
+          "depth": 2,
+          "name": "emit"
+        },
+        {
+          "text": "emitted",
+          "depth": 2,
+          "name": "emitted"
+        },
+        {
+          "text": "consume",
+          "depth": 2,
+          "name": "consume"
+        },
+        {
+          "text": "consumption / consumer",
+          "depth": 2,
+          "name": "consumption / consumer"
+        },
+        {
+          "text": "consume",
+          "depth": 2,
+          "name": "consume"
+        },
+        {
+          "text": "consumable",
+          "depth": 2,
+          "name": "consumable"
+        },
+        {
+          "text": "pollute",
+          "depth": 2,
+          "name": "pollute"
+        },
+        {
+          "text": "pollution / pollutant",
+          "depth": 2,
+          "name": "pollution / pollutant"
+        },
+        {
+          "text": "pollute",
+          "depth": 2,
+          "name": "pollute"
+        },
+        {
+          "text": "polluted / polluting",
+          "depth": 2,
+          "name": "polluted / polluting"
+        },
+        {
+          "text": "maintain",
+          "depth": 2,
+          "name": "maintain"
+        },
+        {
+          "text": "maintenance",
+          "depth": 2,
+          "name": "maintenance"
+        },
+        {
+          "text": "maintain",
+          "depth": 2,
+          "name": "maintain"
+        },
+        {
+          "text": "maintained",
+          "depth": 2,
+          "name": "maintained"
+        },
+        {
+          "text": "accelerate",
+          "depth": 2,
+          "name": "accelerate"
+        },
+        {
+          "text": "acceleration / accelerator",
+          "depth": 2,
+          "name": "acceleration / accelerator"
+        },
+        {
+          "text": "accelerate",
+          "depth": 2,
+          "name": "accelerate"
+        },
+        {
+          "text": "accelerated",
+          "depth": 2,
+          "name": "accelerated"
+        },
+        {
+          "text": "exhaust",
+          "depth": 2,
+          "name": "exhaust"
+        },
+        {
+          "text": "exhaust / exhaustion",
+          "depth": 2,
+          "name": "exhaust / exhaustion"
+        },
+        {
+          "text": "exhaust",
+          "depth": 2,
+          "name": "exhaust"
+        },
+        {
+          "text": "exhausted / exhausting",
+          "depth": 2,
+          "name": "exhausted / exhausting"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "554:2301",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The __________ — a handle-and-spout device — delivers fuel from the pump to the vehicle.",
+          "depth": 1,
+          "name": "1. The __________ — a handle-and-spout device — delivers fuel from the pump to the vehicle."
+        },
+        {
+          "text": "2.  A __________ sign displays the cost per litre or gallon for each fuel type.",
+          "depth": 1,
+          "name": "2. A __________ sign displays the cost per litre or gallon for each fuel type."
+        },
+        {
+          "text": "3.  The fuel __________ on the dashboard shows how much petrol remains in the tank.",
+          "depth": 1,
+          "name": "3. The fuel __________ on the dashboard shows how much petrol remains in the tank."
+        },
+        {
+          "text": "4.  A __________ — a flat roof on columns — protects customers from rain while fueling.",
+          "depth": 1,
+          "name": "4. A __________ — a flat roof on columns — protects customers from rain while fueling."
+        },
+        {
+          "text": "5.  An air __________ is used to inflate tyres to the correct pressure.",
+          "depth": 1,
+          "name": "5. An air __________ is used to inflate tyres to the correct pressure."
+        },
+        {
+          "text": "6.  A __________ — a handled rubber blade — cleans the windshield manually at the pump.",
+          "depth": 1,
+          "name": "6. A __________ — a handled rubber blade — cleans the windshield manually at the pump."
+        },
+        {
+          "text": "7.  __________ fuel has a higher octane rating than regular unleaded petrol.",
+          "depth": 1,
+          "name": "7. __________ fuel has a higher octane rating than regular unleaded petrol."
+        },
+        {
+          "text": "8.  The driver opens the fuel __________ on the side of the car before inserting the nozzle.",
+          "depth": 1,
+          "name": "8. The driver opens the fuel __________ on the side of the car before inserting the nozzle."
+        },
+        {
+          "text": "9.  A card __________ on the pump allows customers to pay without entering the store.",
+          "depth": 1,
+          "name": "9. A card __________ on the pump allows customers to pay without entering the store."
+        },
+        {
+          "text": "10. __________ fluid is poured into a reservoir to keep the windshield clean while driving.",
+          "depth": 1,
+          "name": "10. __________ fluid is poured into a reservoir to keep the windshield clean while driving."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. nozzle  2. price  3. gauge  4. canopy  5. pump  6. squeegee  7. Premium  8. cap  9. reader  10. Windshield",
+          "depth": 2,
+          "name": "1. nozzle 2. price 3. gauge 4. canopy 5. pump 6. squeegee 7. Premium 8. cap 9. reader 10. Windshield"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "554:2319",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Petrol vs Gas",
+          "depth": 2,
+          "name": "Petrol vs Gas"
+        },
+        {
+          "text": "'Petrol' (BrE) = 'gas/gasoline' (AmE). 'Petrol station' (BrE) = 'gas station' (AmE). 'Filling station' and 'service station' are used in both. 'Forecourt' (BrE) = the paved area with the pumps. In the UK, fuel is sold per litre; in the US, per gallon (1 US gallon = 3.785 litres).",
+          "depth": 2,
+          "name": "'Petrol' (BrE) = 'gas/gasoline' (AmE). 'Petrol station' (BrE) = 'gas station' (AmE). 'Filling station' and 'service station' are used in both. 'Forecourt' (BrE) = the paved area with the pumps. In the UK, fuel is sold per litre; in the US, per gallon (1 US gallon = 3.785 litres)."
+        },
+        {
+          "text": "Fuel Types",
+          "depth": 2,
+          "name": "Fuel Types"
+        },
+        {
+          "text": "'Unleaded' = standard petrol (no lead additive). 'Premium/Super' = higher-octane petrol. 'Diesel' = different fuel for diesel engines (NEVER put petrol in a diesel car or vice versa — it causes serious damage). 'LPG' = liquefied petroleum gas (cheaper, less common).",
+          "depth": 2,
+          "name": "'Unleaded' = standard petrol (no lead additive). 'Premium/Super' = higher-octane petrol. 'Diesel' = different fuel for diesel engines (NEVER put petrol in a diesel car or vice versa — it causes serious damage). 'LPG' = liquefied petroleum gas (cheaper, less common)."
+        },
+        {
+          "text": "Motorway Services",
+          "depth": 2,
+          "name": "Motorway Services"
+        },
+        {
+          "text": "'Service station' (BrE) or 'rest stop' (AmE) = a larger facility on a motorway with fuel, food, toilets, and sometimes a hotel. UK motorway services (Moto, Welcome Break, Roadchef) are famous for being expensive. Many drivers bring packed food instead.",
+          "depth": 2,
+          "name": "'Service station' (BrE) or 'rest stop' (AmE) = a larger facility on a motorway with fuel, food, toilets, and sometimes a hotel. UK motorway services (Moto, Welcome Break, Roadchef) are famous for being expensive. Many drivers bring packed food instead."
+        },
+        {
+          "text": "Electric Vehicle Charging",
+          "depth": 2,
+          "name": "Electric Vehicle Charging"
+        },
+        {
+          "text": "'Slow charger' = 3-7kW, takes 8-12 hours (home charging). 'Fast charger' = 7-22kW, takes 3-4 hours. 'Rapid charger' = 50-150kW, takes 30-60 minutes. 'Ultra-rapid' = 150-350kW, takes 15-30 minutes. Many petrol stations are adding EV charging points.",
+          "depth": 2,
+          "name": "'Slow charger' = 3-7kW, takes 8-12 hours (home charging). 'Fast charger' = 7-22kW, takes 3-4 hours. 'Rapid charger' = 50-150kW, takes 30-60 minutes. 'Ultra-rapid' = 150-350kW, takes 15-30 minutes. Many petrol stations are adding EV charging points."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "554:2335",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "petrol",
+          "depth": 2,
+          "name": "petrol"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ station, ~ pump, ~ price",
+          "depth": 2,
+          "name": "~ station, ~ pump, ~ price"
+        },
+        {
+          "text": "diesel",
+          "depth": 2,
+          "name": "diesel"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ engine, ~ fuel, ~ car",
+          "depth": 2,
+          "name": "~ engine, ~ fuel, ~ car"
+        },
+        {
+          "text": "nozzle",
+          "depth": 2,
+          "name": "nozzle"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "fuel ~, ~ tip, ~ handle",
+          "depth": 2,
+          "name": "fuel ~, ~ tip, ~ handle"
+        },
+        {
+          "text": "pump",
+          "depth": 2,
+          "name": "pump"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "fuel ~, ~ number, ~ price",
+          "depth": 2,
+          "name": "fuel ~, ~ number, ~ price"
+        },
+        {
+          "text": "tyre",
+          "depth": 2,
+          "name": "tyre"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "flat ~, ~ pressure, spare ~",
+          "depth": 2,
+          "name": "flat ~, ~ pressure, spare ~"
+        },
+        {
+          "text": "unleaded",
+          "depth": 2,
+          "name": "unleaded"
+        },
+        {
+          "text": "adj",
+          "depth": 2,
+          "name": "adj"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ petrol, ~ fuel, ~ pump",
+          "depth": 2,
+          "name": "~ petrol, ~ fuel, ~ pump"
+        },
+        {
+          "text": "meter",
+          "depth": 2,
+          "name": "meter"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "fuel ~, ~ reading, ~ display",
+          "depth": 2,
+          "name": "fuel ~, ~ reading, ~ display"
+        },
+        {
+          "text": "forecourt",
+          "depth": 2,
+          "name": "forecourt"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "~ shop, ~ area, ~ pump",
+          "depth": 2,
+          "name": "~ shop, ~ area, ~ pump"
+        },
+        {
+          "text": "windscreen",
+          "depth": 2,
+          "name": "windscreen"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ wiper, ~ washer, ~ fluid",
+          "depth": 2,
+          "name": "~ wiper, ~ washer, ~ fluid"
+        },
+        {
+          "text": "exhaust",
+          "depth": 2,
+          "name": "exhaust"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ pipe, ~ fumes, ~ emission",
+          "depth": 2,
+          "name": "~ pipe, ~ fumes, ~ emission"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,489 @@
+{
+  "unitId": "car-parts-and-mechanics",
+  "name": "Car Parts & Mechanics",
+  "subtopics": [
+    {
+      "id": "engine-drivetrain",
+      "title": "Engine & Drivetrain",
+      "wordIds": [
+        "engine",
+        "transmission",
+        "clutch",
+        "carburetor",
+        "spark-plug",
+        "piston",
+        "crankshaft",
+        "camshaft",
+        "turbocharger",
+        "exhaust"
+      ]
+    },
+    {
+      "id": "exterior-parts",
+      "title": "Exterior Parts",
+      "wordIds": [
+        "hood",
+        "trunk",
+        "bumper",
+        "fender",
+        "door",
+        "roof",
+        "windshield",
+        "side-mirror",
+        "headlight",
+        "taillight"
+      ]
+    },
+    {
+      "id": "interior-parts",
+      "title": "Interior Parts",
+      "wordIds": [
+        "dashboard",
+        "steering-wheel",
+        "gear-shift",
+        "pedal",
+        "seat-belt",
+        "airbag",
+        "glove-box",
+        "console",
+        "sun-visor",
+        "rearview-mirror"
+      ]
+    },
+    {
+      "id": "wheels-suspension",
+      "title": "Wheels & Suspension",
+      "wordIds": [
+        "tire",
+        "wheel",
+        "rim",
+        "hub-cap",
+        "brake-pad",
+        "brake-disc",
+        "shock-absorber",
+        "spring",
+        "axle",
+        "alignment"
+      ]
+    },
+    {
+      "id": "fluids-maintenance",
+      "title": "Fluids & Maintenance",
+      "wordIds": [
+        "engine-oil",
+        "coolant",
+        "brake-fluid",
+        "transmission-fluid",
+        "windshield-washer",
+        "power-steering-fluid",
+        "gas",
+        "diesel",
+        "battery-acid",
+        "refrigerant"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "engine",
+      "label": "Engine",
+      "ipa": "/ˈɛndʒɪn/",
+      "cefr": "B2",
+      "imageNodeId": "467:17685"
+    },
+    {
+      "kind": "card",
+      "id": "transmission",
+      "label": "Transmission",
+      "ipa": "/trænzˈmɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:17689"
+    },
+    {
+      "kind": "card",
+      "id": "clutch",
+      "label": "Clutch",
+      "ipa": "/klʌtʃ/",
+      "cefr": "B2",
+      "imageNodeId": "467:17693"
+    },
+    {
+      "kind": "card",
+      "id": "carburetor",
+      "label": "Carburetor",
+      "ipa": "/ˈkɑːrbəˌreɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "467:17697"
+    },
+    {
+      "kind": "card",
+      "id": "spark-plug",
+      "label": "Spark Plug",
+      "ipa": "/spɑːrk plʌɡ/",
+      "cefr": "C1",
+      "imageNodeId": "467:17701"
+    },
+    {
+      "kind": "card",
+      "id": "piston",
+      "label": "Piston",
+      "ipa": "/ˈpɪstən/",
+      "cefr": "B2",
+      "imageNodeId": "467:17705"
+    },
+    {
+      "kind": "card",
+      "id": "crankshaft",
+      "label": "Crankshaft",
+      "ipa": "/ˈkræŋkˌʃæft/",
+      "cefr": "C1",
+      "imageNodeId": "467:17709"
+    },
+    {
+      "kind": "card",
+      "id": "camshaft",
+      "label": "Camshaft",
+      "ipa": "/ˈkæmˌʃæft/",
+      "cefr": "B2",
+      "imageNodeId": "467:17713"
+    },
+    {
+      "kind": "card",
+      "id": "turbocharger",
+      "label": "Turbocharger",
+      "ipa": "/ˈtɜːrboʊˌtʃɑːrdʒər/",
+      "cefr": "C1",
+      "imageNodeId": "467:17717"
+    },
+    {
+      "kind": "card",
+      "id": "exhaust",
+      "label": "Exhaust",
+      "ipa": "/ɪɡˈzɔːst/",
+      "cefr": "B2",
+      "imageNodeId": "467:17721"
+    },
+    {
+      "kind": "card",
+      "id": "hood",
+      "label": "Hood",
+      "ipa": "/hʊd/",
+      "cefr": "B2",
+      "imageNodeId": "467:17730"
+    },
+    {
+      "kind": "card",
+      "id": "trunk",
+      "label": "Trunk",
+      "ipa": "/trʌŋk/",
+      "cefr": "B2",
+      "imageNodeId": "467:17734"
+    },
+    {
+      "kind": "card",
+      "id": "bumper",
+      "label": "Bumper",
+      "ipa": "/ˈbʌmpər/",
+      "cefr": "B2",
+      "imageNodeId": "467:17738"
+    },
+    {
+      "kind": "card",
+      "id": "fender",
+      "label": "Fender",
+      "ipa": "/ˈfɛndər/",
+      "cefr": "B2",
+      "imageNodeId": "467:17742"
+    },
+    {
+      "kind": "card",
+      "id": "door",
+      "label": "Door",
+      "ipa": "/dɔːr/",
+      "cefr": "B2",
+      "imageNodeId": "467:17746"
+    },
+    {
+      "kind": "card",
+      "id": "roof",
+      "label": "Roof",
+      "ipa": "/ruːf/",
+      "cefr": "B2",
+      "imageNodeId": "467:17750"
+    },
+    {
+      "kind": "card",
+      "id": "windshield",
+      "label": "Windshield",
+      "ipa": "/ˈwɪndˌʃiːld/",
+      "cefr": "C1",
+      "imageNodeId": "467:17754"
+    },
+    {
+      "kind": "card",
+      "id": "side-mirror",
+      "label": "Side Mirror",
+      "ipa": "/saɪd ˈmɪrər/",
+      "cefr": "C1",
+      "imageNodeId": "467:17758"
+    },
+    {
+      "kind": "card",
+      "id": "headlight",
+      "label": "Headlight",
+      "ipa": "/ˈhɛdˌlaɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:17762"
+    },
+    {
+      "kind": "card",
+      "id": "taillight",
+      "label": "Taillight",
+      "ipa": "/ˈteɪlˌlaɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:17766"
+    },
+    {
+      "kind": "card",
+      "id": "dashboard",
+      "label": "Dashboard",
+      "ipa": "/ˈdæʃˌbɔːrd/",
+      "cefr": "B2",
+      "imageNodeId": "467:17775"
+    },
+    {
+      "kind": "card",
+      "id": "steering-wheel",
+      "label": "Steering Wheel",
+      "ipa": "/ˈstɪərɪŋ wiːl/",
+      "cefr": "C1",
+      "imageNodeId": "467:17779"
+    },
+    {
+      "kind": "card",
+      "id": "gear-shift",
+      "label": "Gear Shift",
+      "ipa": "/ɡɪər ʃɪft/",
+      "cefr": "C1",
+      "imageNodeId": "467:17783"
+    },
+    {
+      "kind": "card",
+      "id": "pedal",
+      "label": "Pedal",
+      "ipa": "/ˈpɛdəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:17787"
+    },
+    {
+      "kind": "card",
+      "id": "seat-belt",
+      "label": "Seat Belt",
+      "ipa": "/siːt bɛlt/",
+      "cefr": "C1",
+      "imageNodeId": "467:17791"
+    },
+    {
+      "kind": "card",
+      "id": "airbag",
+      "label": "Airbag",
+      "ipa": "/ˈɛərˌbæɡ/",
+      "cefr": "B2",
+      "imageNodeId": "467:17795"
+    },
+    {
+      "kind": "card",
+      "id": "glove-box",
+      "label": "Glove Box",
+      "ipa": "/ɡlʌv bɒks/",
+      "cefr": "C1",
+      "imageNodeId": "467:17799"
+    },
+    {
+      "kind": "card",
+      "id": "console",
+      "label": "Console",
+      "ipa": "/ˈkɒnsoʊl/",
+      "cefr": "B2",
+      "imageNodeId": "467:17803"
+    },
+    {
+      "kind": "card",
+      "id": "sun-visor",
+      "label": "Sun Visor",
+      "ipa": "/sʌn ˈvaɪzər/",
+      "cefr": "C1",
+      "imageNodeId": "467:17807"
+    },
+    {
+      "kind": "card",
+      "id": "rearview-mirror",
+      "label": "Rearview Mirror",
+      "ipa": "/ˈrɪərˌvjuː ˈmɪrər/",
+      "cefr": "C1",
+      "imageNodeId": "467:17811"
+    },
+    {
+      "kind": "card",
+      "id": "tire",
+      "label": "Tire",
+      "ipa": "/ˈtaɪər/",
+      "cefr": "B2",
+      "imageNodeId": "467:17820"
+    },
+    {
+      "kind": "card",
+      "id": "wheel",
+      "label": "Wheel",
+      "ipa": "/wiːl/",
+      "cefr": "B2",
+      "imageNodeId": "467:17824"
+    },
+    {
+      "kind": "card",
+      "id": "rim",
+      "label": "Rim",
+      "ipa": "/rɪm/",
+      "cefr": "B2",
+      "imageNodeId": "467:17828"
+    },
+    {
+      "kind": "card",
+      "id": "hub-cap",
+      "label": "Hub Cap",
+      "ipa": "/hʌb kæp/",
+      "cefr": "C1",
+      "imageNodeId": "467:17832"
+    },
+    {
+      "kind": "card",
+      "id": "brake-pad",
+      "label": "Brake Pad",
+      "ipa": "/breɪk pæd/",
+      "cefr": "C1",
+      "imageNodeId": "467:17836"
+    },
+    {
+      "kind": "card",
+      "id": "brake-disc",
+      "label": "Brake Disc",
+      "ipa": "/breɪk dɪsk/",
+      "cefr": "C1",
+      "imageNodeId": "467:17840"
+    },
+    {
+      "kind": "card",
+      "id": "shock-absorber",
+      "label": "Shock Absorber",
+      "ipa": "/ʃɒk əbˈzɔːrbər/",
+      "cefr": "C1",
+      "imageNodeId": "467:17844"
+    },
+    {
+      "kind": "card",
+      "id": "spring",
+      "label": "Spring",
+      "ipa": "/sprɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:17848"
+    },
+    {
+      "kind": "card",
+      "id": "axle",
+      "label": "Axle",
+      "ipa": "/ˈæksəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:17852"
+    },
+    {
+      "kind": "card",
+      "id": "alignment",
+      "label": "Alignment",
+      "ipa": "/əˈlaɪnmənt/",
+      "cefr": "B2",
+      "imageNodeId": "467:17856"
+    },
+    {
+      "kind": "card",
+      "id": "engine-oil",
+      "label": "Engine Oil",
+      "ipa": "/ˈɛndʒɪn ɔɪl/",
+      "cefr": "C1",
+      "imageNodeId": "467:17865"
+    },
+    {
+      "kind": "card",
+      "id": "coolant",
+      "label": "Coolant",
+      "ipa": "/ˈkuːlənt/",
+      "cefr": "B2",
+      "imageNodeId": "467:17869"
+    },
+    {
+      "kind": "card",
+      "id": "brake-fluid",
+      "label": "Brake Fluid",
+      "ipa": "/breɪk ˈfluːɪd/",
+      "cefr": "C1",
+      "imageNodeId": "467:17873"
+    },
+    {
+      "kind": "card",
+      "id": "transmission-fluid",
+      "label": "Transmission Fluid",
+      "ipa": "/trænzˈmɪʃən ˈfluːɪd/",
+      "cefr": "C1",
+      "imageNodeId": "467:17877"
+    },
+    {
+      "kind": "card",
+      "id": "windshield-washer",
+      "label": "Windshield Washer",
+      "ipa": "/ˈwɪndˌʃiːld ˈwɒʃər/",
+      "cefr": "C1",
+      "imageNodeId": "467:17881"
+    },
+    {
+      "kind": "card",
+      "id": "power-steering-fluid",
+      "label": "Power Steering Fluid",
+      "ipa": "/ˈpaʊər ˈstɪərɪŋ ˈfluːɪd/",
+      "cefr": "C1",
+      "imageNodeId": "467:17885"
+    },
+    {
+      "kind": "card",
+      "id": "gas",
+      "label": "Gas",
+      "ipa": "/ɡæs/",
+      "cefr": "B2",
+      "imageNodeId": "467:17889"
+    },
+    {
+      "kind": "card",
+      "id": "diesel",
+      "label": "Diesel",
+      "ipa": "/ˈdiːzəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:17893"
+    },
+    {
+      "kind": "card",
+      "id": "battery-acid",
+      "label": "Battery Acid",
+      "ipa": "/ˈbætəri ˈæsɪd/",
+      "cefr": "C1",
+      "imageNodeId": "467:17897"
+    },
+    {
+      "kind": "card",
+      "id": "refrigerant",
+      "label": "Refrigerant",
+      "ipa": "/rɪˈfrɪdʒərənt/",
+      "cefr": "C1",
+      "imageNodeId": "467:17901"
+    }
+  ],
+  "materials": null
+}

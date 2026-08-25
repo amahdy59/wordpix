@@ -1,0 +1,489 @@
+{
+  "unitId": "life-events",
+  "name": "Life Events",
+  "subtopics": [
+    {
+      "id": "celebrations",
+      "title": "Celebrations",
+      "wordIds": [
+        "birthday",
+        "wedding",
+        "anniversary",
+        "graduation",
+        "retirement-party",
+        "baby-shower",
+        "engagement",
+        "housewarming",
+        "promotion",
+        "farewell"
+      ]
+    },
+    {
+      "id": "major-milestones",
+      "title": "Major Milestones",
+      "wordIds": [
+        "first-day-of-school",
+        "learning-to-drive",
+        "first-job",
+        "moving-out",
+        "buying-a-home",
+        "getting-married",
+        "having-a-baby",
+        "career-change",
+        "retirement",
+        "traveling-abroad"
+      ]
+    },
+    {
+      "id": "difficult-events",
+      "title": "Difficult Events",
+      "wordIds": [
+        "loss",
+        "grief",
+        "funeral",
+        "divorce",
+        "illness",
+        "accident",
+        "moving-away",
+        "layoff",
+        "breakup",
+        "recovery"
+      ]
+    },
+    {
+      "id": "achievements",
+      "title": "Achievements",
+      "wordIds": [
+        "award",
+        "certificate",
+        "diploma",
+        "degree",
+        "medal",
+        "trophy",
+        "scholarship",
+        "promotion",
+        "publication",
+        "patent"
+      ]
+    },
+    {
+      "id": "ceremonies",
+      "title": "Ceremonies",
+      "wordIds": [
+        "baptism",
+        "communion",
+        "bar-mitzvah",
+        "confirmation",
+        "graduation-ceremony",
+        "inauguration",
+        "oath",
+        "pledge",
+        "blessing",
+        "memorial"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "birthday",
+      "label": "Birthday",
+      "ipa": "/ˈbɜːrθˌdeɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:3702"
+    },
+    {
+      "kind": "card",
+      "id": "wedding",
+      "label": "Wedding",
+      "ipa": "/ˈwɛdɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:3706"
+    },
+    {
+      "kind": "card",
+      "id": "anniversary",
+      "label": "Anniversary",
+      "ipa": "/ˌænɪˈvɜːrsəri/",
+      "cefr": "B1",
+      "imageNodeId": "467:3710"
+    },
+    {
+      "kind": "card",
+      "id": "graduation",
+      "label": "Graduation",
+      "ipa": "/ˌɡrædʒuˈeɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "467:3714"
+    },
+    {
+      "kind": "card",
+      "id": "retirement-party",
+      "label": "Retirement Party",
+      "ipa": "/rɪˈtaɪərmənt ˈpɑːrti/",
+      "cefr": "B2",
+      "imageNodeId": "467:3718"
+    },
+    {
+      "kind": "card",
+      "id": "baby-shower",
+      "label": "Baby Shower",
+      "ipa": "/ˈbeɪbi ˈʃaʊər/",
+      "cefr": "B1",
+      "imageNodeId": "467:3722"
+    },
+    {
+      "kind": "card",
+      "id": "engagement",
+      "label": "Engagement",
+      "ipa": "/ɪnˈɡeɪdʒmənt/",
+      "cefr": "B1",
+      "imageNodeId": "467:3726"
+    },
+    {
+      "kind": "card",
+      "id": "housewarming",
+      "label": "Housewarming",
+      "ipa": "/ˈhaʊsˌwɔːrmɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "467:3730"
+    },
+    {
+      "kind": "card",
+      "id": "promotion",
+      "label": "Promotion",
+      "ipa": "/prəˈmoʊʃən/",
+      "cefr": "A2",
+      "imageNodeId": "467:3734"
+    },
+    {
+      "kind": "card",
+      "id": "farewell",
+      "label": "Farewell",
+      "ipa": "/ˌfɛərˈwɛl/",
+      "cefr": "A2",
+      "imageNodeId": "467:3738"
+    },
+    {
+      "kind": "card",
+      "id": "first-day-of-school",
+      "label": "First Day of School",
+      "ipa": "/fɜːrst deɪ əv skuːl/",
+      "cefr": "B2",
+      "imageNodeId": "467:3747"
+    },
+    {
+      "kind": "card",
+      "id": "learning-to-drive",
+      "label": "Learning to Drive",
+      "ipa": "/ˈlɜːrnɪŋ tə draɪv/",
+      "cefr": "B2",
+      "imageNodeId": "467:3751"
+    },
+    {
+      "kind": "card",
+      "id": "first-job",
+      "label": "First Job",
+      "ipa": "/fɜːrst dʒɒb/",
+      "cefr": "B1",
+      "imageNodeId": "467:3755"
+    },
+    {
+      "kind": "card",
+      "id": "moving-out",
+      "label": "Moving Out",
+      "ipa": "/ˈmuːvɪŋ aʊt/",
+      "cefr": "B1",
+      "imageNodeId": "467:3759"
+    },
+    {
+      "kind": "card",
+      "id": "buying-a-home",
+      "label": "Buying a Home",
+      "ipa": "/ˈbaɪɪŋ ə hoʊm/",
+      "cefr": "B2",
+      "imageNodeId": "467:3763"
+    },
+    {
+      "kind": "card",
+      "id": "getting-married",
+      "label": "Getting Married",
+      "ipa": "/ˈɡɛtɪŋ ˈmærid/",
+      "cefr": "B2",
+      "imageNodeId": "467:3767"
+    },
+    {
+      "kind": "card",
+      "id": "having-a-baby",
+      "label": "Having a Baby",
+      "ipa": "/ˈhævɪŋ ə ˈbeɪbi/",
+      "cefr": "B2",
+      "imageNodeId": "467:3771"
+    },
+    {
+      "kind": "card",
+      "id": "career-change",
+      "label": "Career Change",
+      "ipa": "/kəˈrɪər tʃeɪndʒ/",
+      "cefr": "B1",
+      "imageNodeId": "467:3775"
+    },
+    {
+      "kind": "card",
+      "id": "retirement",
+      "label": "Retirement",
+      "ipa": "/rɪˈtaɪərmənt/",
+      "cefr": "B1",
+      "imageNodeId": "467:3779"
+    },
+    {
+      "kind": "card",
+      "id": "traveling-abroad",
+      "label": "Traveling Abroad",
+      "ipa": "/ˈtrævəlɪŋ əˈbrɔːd/",
+      "cefr": "B2",
+      "imageNodeId": "467:3783"
+    },
+    {
+      "kind": "card",
+      "id": "loss",
+      "label": "Loss",
+      "ipa": "/lɒs/",
+      "cefr": "A2",
+      "imageNodeId": "467:3792"
+    },
+    {
+      "kind": "card",
+      "id": "grief",
+      "label": "Grief",
+      "ipa": "/ɡriːf/",
+      "cefr": "A2",
+      "imageNodeId": "467:3796"
+    },
+    {
+      "kind": "card",
+      "id": "funeral",
+      "label": "Funeral",
+      "ipa": "/ˈfjuːnərəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:3800"
+    },
+    {
+      "kind": "card",
+      "id": "divorce",
+      "label": "Divorce",
+      "ipa": "/dɪˈvɔːrs/",
+      "cefr": "A2",
+      "imageNodeId": "467:3804"
+    },
+    {
+      "kind": "card",
+      "id": "illness",
+      "label": "Illness",
+      "ipa": "/ˈɪlnəs/",
+      "cefr": "A2",
+      "imageNodeId": "467:3808"
+    },
+    {
+      "kind": "card",
+      "id": "accident",
+      "label": "Accident",
+      "ipa": "/ˈæksɪdənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:3812"
+    },
+    {
+      "kind": "card",
+      "id": "moving-away",
+      "label": "Moving Away",
+      "ipa": "/ˈmuːvɪŋ əˈweɪ/",
+      "cefr": "B1",
+      "imageNodeId": "467:3816"
+    },
+    {
+      "kind": "card",
+      "id": "layoff",
+      "label": "Layoff",
+      "ipa": "/ˈleɪˌɒf/",
+      "cefr": "A2",
+      "imageNodeId": "467:3820"
+    },
+    {
+      "kind": "card",
+      "id": "breakup",
+      "label": "Breakup",
+      "ipa": "/ˈbreɪkˌʌp/",
+      "cefr": "A2",
+      "imageNodeId": "467:3824"
+    },
+    {
+      "kind": "card",
+      "id": "recovery",
+      "label": "Recovery",
+      "ipa": "/rɪˈkʌvəri/",
+      "cefr": "A2",
+      "imageNodeId": "467:3828"
+    },
+    {
+      "kind": "card",
+      "id": "award",
+      "label": "Award",
+      "ipa": "/əˈwɔːrd/",
+      "cefr": "A2",
+      "imageNodeId": "467:3837"
+    },
+    {
+      "kind": "card",
+      "id": "certificate",
+      "label": "Certificate",
+      "ipa": "/sərˈtɪfɪkɪt/",
+      "cefr": "B1",
+      "imageNodeId": "467:3841"
+    },
+    {
+      "kind": "card",
+      "id": "diploma",
+      "label": "Diploma",
+      "ipa": "/dɪˈploʊmə/",
+      "cefr": "A2",
+      "imageNodeId": "467:3845"
+    },
+    {
+      "kind": "card",
+      "id": "degree",
+      "label": "Degree",
+      "ipa": "/dɪˈɡriː/",
+      "cefr": "A2",
+      "imageNodeId": "467:3849"
+    },
+    {
+      "kind": "card",
+      "id": "medal",
+      "label": "Medal",
+      "ipa": "/ˈmɛdəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:3853"
+    },
+    {
+      "kind": "card",
+      "id": "trophy",
+      "label": "Trophy",
+      "ipa": "/ˈtroʊfi/",
+      "cefr": "A2",
+      "imageNodeId": "467:3857"
+    },
+    {
+      "kind": "card",
+      "id": "scholarship",
+      "label": "Scholarship",
+      "ipa": "/ˈskɒlərˌʃɪp/",
+      "cefr": "B1",
+      "imageNodeId": "467:3861"
+    },
+    {
+      "kind": "card",
+      "id": "promotion",
+      "label": "Promotion",
+      "ipa": "/prəˈmoʊʃən/",
+      "cefr": "A2",
+      "imageNodeId": "467:3865"
+    },
+    {
+      "kind": "card",
+      "id": "publication",
+      "label": "Publication",
+      "ipa": "/ˌpʌblɪˈkeɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "467:3869"
+    },
+    {
+      "kind": "card",
+      "id": "patent",
+      "label": "Patent",
+      "ipa": "/ˈpætənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:3873"
+    },
+    {
+      "kind": "card",
+      "id": "baptism",
+      "label": "Baptism",
+      "ipa": "/ˈbæptɪzəm/",
+      "cefr": "A2",
+      "imageNodeId": "467:3882"
+    },
+    {
+      "kind": "card",
+      "id": "communion",
+      "label": "Communion",
+      "ipa": "/kəˈmjuːnjən/",
+      "cefr": "A2",
+      "imageNodeId": "467:3886"
+    },
+    {
+      "kind": "card",
+      "id": "bar-mitzvah",
+      "label": "Bar Mitzvah",
+      "ipa": "/bɑːr ˈmɪtsvə/",
+      "cefr": "B1",
+      "imageNodeId": "467:3890"
+    },
+    {
+      "kind": "card",
+      "id": "confirmation",
+      "label": "Confirmation",
+      "ipa": "/ˌkɒnfərˈmeɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "467:3894"
+    },
+    {
+      "kind": "card",
+      "id": "graduation-ceremony",
+      "label": "Graduation Ceremony",
+      "ipa": "/ˌɡrædʒuˈeɪʃən ˈsɛrɪˌmoʊni/",
+      "cefr": "B2",
+      "imageNodeId": "467:3898"
+    },
+    {
+      "kind": "card",
+      "id": "inauguration",
+      "label": "Inauguration",
+      "ipa": "/ɪˌnɔːɡjʊˈreɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "467:3902"
+    },
+    {
+      "kind": "card",
+      "id": "oath",
+      "label": "Oath",
+      "ipa": "/oʊθ/",
+      "cefr": "A2",
+      "imageNodeId": "467:3906"
+    },
+    {
+      "kind": "card",
+      "id": "pledge",
+      "label": "Pledge",
+      "ipa": "/plɛdʒ/",
+      "cefr": "A2",
+      "imageNodeId": "467:3910"
+    },
+    {
+      "kind": "card",
+      "id": "blessing",
+      "label": "Blessing",
+      "ipa": "/ˈblɛsɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:3914"
+    },
+    {
+      "kind": "card",
+      "id": "memorial",
+      "label": "Memorial",
+      "ipa": "/mɪˈmɔːriəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:3918"
+    }
+  ],
+  "materials": null
+}

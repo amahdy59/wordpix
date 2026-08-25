@@ -1,0 +1,1508 @@
+{
+  "unitId": "l5-fire-station",
+  "name": "L5 Fire Station",
+  "subtopics": [],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "firefighter",
+      "label": "firefighter",
+      "ipa": "/ˈfaɪərˌfaɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "52:2765"
+    },
+    {
+      "kind": "card",
+      "id": "fire-chief",
+      "label": "fire chief",
+      "ipa": "/ˈfaɪər tʃiːf/",
+      "cefr": "B1",
+      "imageNodeId": "52:2769"
+    },
+    {
+      "kind": "card",
+      "id": "fire-captain",
+      "label": "fire captain",
+      "ipa": "/ˈfaɪər ˈkæptɪn/",
+      "cefr": "B1",
+      "imageNodeId": "52:2773"
+    },
+    {
+      "kind": "card",
+      "id": "volunteer",
+      "label": "volunteer",
+      "ipa": "/ˌvɒlənˈtɪər/",
+      "cefr": "A2",
+      "imageNodeId": "52:2777"
+    },
+    {
+      "kind": "card",
+      "id": "rescue-team",
+      "label": "rescue team",
+      "ipa": "/ˈrɛskjuː tiːm/",
+      "cefr": "B1",
+      "imageNodeId": "52:2781"
+    },
+    {
+      "kind": "card",
+      "id": "fire-inspector",
+      "label": "fire inspector",
+      "ipa": "/ˈfaɪər ɪnˈspɛktər/",
+      "cefr": "B1",
+      "imageNodeId": "52:2785"
+    },
+    {
+      "kind": "card",
+      "id": "dispatcher",
+      "label": "dispatcher",
+      "ipa": "/dɪˈspætʃər/",
+      "cefr": "B1",
+      "imageNodeId": "52:2789"
+    },
+    {
+      "kind": "card",
+      "id": "paramedic",
+      "label": "paramedic",
+      "ipa": "/ˌpærəˈmɛdɪk/",
+      "cefr": "A2",
+      "imageNodeId": "52:2793"
+    },
+    {
+      "kind": "card",
+      "id": "fire-engine",
+      "label": "fire engine",
+      "ipa": "/ˈfaɪər ˈɛndʒɪn/",
+      "cefr": "B1",
+      "imageNodeId": "52:2802"
+    },
+    {
+      "kind": "card",
+      "id": "fire-truck",
+      "label": "fire truck",
+      "ipa": "/ˈfaɪər trʌk/",
+      "cefr": "B1",
+      "imageNodeId": "52:2806"
+    },
+    {
+      "kind": "card",
+      "id": "ladder-truck",
+      "label": "ladder truck",
+      "ipa": "/ˈlædər trʌk/",
+      "cefr": "B1",
+      "imageNodeId": "52:2810"
+    },
+    {
+      "kind": "card",
+      "id": "ambulance",
+      "label": "ambulance",
+      "ipa": "/ˈæmbjʊləns/",
+      "cefr": "A2",
+      "imageNodeId": "52:2814"
+    },
+    {
+      "kind": "card",
+      "id": "rescue-vehicle",
+      "label": "rescue vehicle",
+      "ipa": "/ˈrɛskjuː ˈviːɪkəl/",
+      "cefr": "B1",
+      "imageNodeId": "52:2818"
+    },
+    {
+      "kind": "card",
+      "id": "water-tanker",
+      "label": "water tanker",
+      "ipa": "/ˈwɔːtər ˈtæŋkər/",
+      "cefr": "B1",
+      "imageNodeId": "52:2822"
+    },
+    {
+      "kind": "card",
+      "id": "helicopter",
+      "label": "helicopter",
+      "ipa": "/ˈhɛlɪˌkɒptər/",
+      "cefr": "B1",
+      "imageNodeId": "52:2826"
+    },
+    {
+      "kind": "card",
+      "id": "fire-boat",
+      "label": "fire boat",
+      "ipa": "/ˈfaɪər boʊt/",
+      "cefr": "B1",
+      "imageNodeId": "52:2830"
+    },
+    {
+      "kind": "card",
+      "id": "fire-hose",
+      "label": "fire hose",
+      "ipa": "/ˈfaɪər hoʊz/",
+      "cefr": "B1",
+      "imageNodeId": "52:2839"
+    },
+    {
+      "kind": "card",
+      "id": "nozzle",
+      "label": "nozzle",
+      "ipa": "/ˈnɒzəl/",
+      "cefr": "A2",
+      "imageNodeId": "52:2843"
+    },
+    {
+      "kind": "card",
+      "id": "fire-extinguisher",
+      "label": "fire extinguisher",
+      "ipa": "/ˈfaɪər ɪkˈstɪŋɡwɪʃər/",
+      "cefr": "B2",
+      "imageNodeId": "52:2847"
+    },
+    {
+      "kind": "card",
+      "id": "ladder",
+      "label": "ladder",
+      "ipa": "/ˈlædər/",
+      "cefr": "A2",
+      "imageNodeId": "52:2851"
+    },
+    {
+      "kind": "card",
+      "id": "axe",
+      "label": "axe",
+      "ipa": "/æks/",
+      "cefr": "A2",
+      "imageNodeId": "52:2855"
+    },
+    {
+      "kind": "card",
+      "id": "pike-pole",
+      "label": "pike pole",
+      "ipa": "/paɪk poʊl/",
+      "cefr": "B1",
+      "imageNodeId": "52:2859"
+    },
+    {
+      "kind": "card",
+      "id": "hydrant",
+      "label": "hydrant",
+      "ipa": "/ˈhaɪdrənt/",
+      "cefr": "A2",
+      "imageNodeId": "52:2863"
+    },
+    {
+      "kind": "card",
+      "id": "breathing-apparatus",
+      "label": "breathing apparatus",
+      "ipa": "/ˈbriːðɪŋ ˌæpəˈreɪtəs/",
+      "cefr": "B2",
+      "imageNodeId": "52:2867"
+    },
+    {
+      "kind": "card",
+      "id": "oxygen-tank",
+      "label": "oxygen tank",
+      "ipa": "/ˈɒksɪdʒən tæŋk/",
+      "cefr": "B1",
+      "imageNodeId": "52:2871"
+    },
+    {
+      "kind": "card",
+      "id": "thermal-camera",
+      "label": "thermal camera",
+      "ipa": "/ˈθɜːrməl ˈkæmərə/",
+      "cefr": "B1",
+      "imageNodeId": "52:2875"
+    },
+    {
+      "kind": "card",
+      "id": "radio",
+      "label": "radio",
+      "ipa": "/ˈreɪdiˌoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "52:2879"
+    },
+    {
+      "kind": "card",
+      "id": "siren",
+      "label": "siren",
+      "ipa": "/ˈsaɪrən/",
+      "cefr": "A2",
+      "imageNodeId": "52:2883"
+    },
+    {
+      "kind": "card",
+      "id": "helmet",
+      "label": "helmet",
+      "ipa": "/ˈhɛlmɪt/",
+      "cefr": "A2",
+      "imageNodeId": "52:2892"
+    },
+    {
+      "kind": "card",
+      "id": "turnout-coat",
+      "label": "turnout coat",
+      "ipa": "/ˈtɜːrnaʊt koʊt/",
+      "cefr": "B1",
+      "imageNodeId": "52:2896"
+    },
+    {
+      "kind": "card",
+      "id": "fire-boots",
+      "label": "fire boots",
+      "ipa": "/ˈfaɪər buːts/",
+      "cefr": "B1",
+      "imageNodeId": "52:2900"
+    },
+    {
+      "kind": "card",
+      "id": "gloves",
+      "label": "gloves",
+      "ipa": "/ɡlʌvz/",
+      "cefr": "A2",
+      "imageNodeId": "52:2904"
+    },
+    {
+      "kind": "card",
+      "id": "face-mask",
+      "label": "face mask",
+      "ipa": "/feɪs mæsk/",
+      "cefr": "B1",
+      "imageNodeId": "52:2908"
+    },
+    {
+      "kind": "card",
+      "id": "visor",
+      "label": "visor",
+      "ipa": "/ˈvaɪzər/",
+      "cefr": "A2",
+      "imageNodeId": "52:2912"
+    },
+    {
+      "kind": "card",
+      "id": "suspenders",
+      "label": "suspenders",
+      "ipa": "/səˈspɛndərz/",
+      "cefr": "B1",
+      "imageNodeId": "52:2916"
+    },
+    {
+      "kind": "card",
+      "id": "fire-resistant-suit",
+      "label": "fire-resistant suit",
+      "ipa": "/ˈfaɪər rɪˈzɪstənt suːt/",
+      "cefr": "B2",
+      "imageNodeId": "52:2920"
+    },
+    {
+      "kind": "card",
+      "id": "fire",
+      "label": "fire",
+      "ipa": "/faɪər/",
+      "cefr": "A2",
+      "imageNodeId": "52:2929"
+    },
+    {
+      "kind": "card",
+      "id": "smoke",
+      "label": "smoke",
+      "ipa": "/smoʊk/",
+      "cefr": "A2",
+      "imageNodeId": "52:2933"
+    },
+    {
+      "kind": "card",
+      "id": "flames",
+      "label": "flames",
+      "ipa": "/fleɪmz/",
+      "cefr": "A2",
+      "imageNodeId": "52:2937"
+    },
+    {
+      "kind": "card",
+      "id": "spark",
+      "label": "spark",
+      "ipa": "/spɑːrk/",
+      "cefr": "A2",
+      "imageNodeId": "52:2941"
+    },
+    {
+      "kind": "card",
+      "id": "ember",
+      "label": "ember",
+      "ipa": "/ˈɛmbər/",
+      "cefr": "A2",
+      "imageNodeId": "52:2945"
+    },
+    {
+      "kind": "card",
+      "id": "explosion",
+      "label": "explosion",
+      "ipa": "/ɪkˈsploʊʒən/",
+      "cefr": "A2",
+      "imageNodeId": "52:2949"
+    },
+    {
+      "kind": "card",
+      "id": "alarm",
+      "label": "alarm",
+      "ipa": "/əˈlɑːrm/",
+      "cefr": "A2",
+      "imageNodeId": "52:2953"
+    },
+    {
+      "kind": "card",
+      "id": "evacuation",
+      "label": "evacuation",
+      "ipa": "/ɪˌvækjuˈeɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "52:2957"
+    },
+    {
+      "kind": "card",
+      "id": "rescue",
+      "label": "rescue",
+      "ipa": "/ˈrɛskjuː/",
+      "cefr": "A2",
+      "imageNodeId": "52:2961"
+    },
+    {
+      "kind": "card",
+      "id": "emergency-exit",
+      "label": "emergency exit",
+      "ipa": "/ɪˈmɜːrdʒənsi ˈɛɡzɪt/",
+      "cefr": "B1",
+      "imageNodeId": "52:2965"
+    },
+    {
+      "kind": "card",
+      "id": "fire-escape",
+      "label": "fire escape",
+      "ipa": "/ˈfaɪər ɪˈskeɪp/",
+      "cefr": "B1",
+      "imageNodeId": "52:2969"
+    },
+    {
+      "kind": "card",
+      "id": "sprinkler",
+      "label": "sprinkler",
+      "ipa": "/ˈsprɪŋklər/",
+      "cefr": "A2",
+      "imageNodeId": "52:2973"
+    },
+    {
+      "kind": "card",
+      "id": "garage-bay",
+      "label": "garage bay",
+      "ipa": "/ɡəˈrɑːʒ beɪ/",
+      "cefr": "B1",
+      "imageNodeId": "52:2982"
+    },
+    {
+      "kind": "card",
+      "id": "sleeping-quarters",
+      "label": "sleeping quarters",
+      "ipa": "/ˈsliːpɪŋ ˈkwɔːrtərz/",
+      "cefr": "B2",
+      "imageNodeId": "52:2986"
+    },
+    {
+      "kind": "card",
+      "id": "kitchen",
+      "label": "kitchen",
+      "ipa": "/ˈkɪtʃɪn/",
+      "cefr": "A2",
+      "imageNodeId": "52:2990"
+    },
+    {
+      "kind": "card",
+      "id": "pole",
+      "label": "pole",
+      "ipa": "/poʊl/",
+      "cefr": "A2",
+      "imageNodeId": "52:2994"
+    },
+    {
+      "kind": "card",
+      "id": "alarm-bell",
+      "label": "alarm bell",
+      "ipa": "/əˈlɑːrm bɛl/",
+      "cefr": "B1",
+      "imageNodeId": "52:2998"
+    },
+    {
+      "kind": "card",
+      "id": "training-tower",
+      "label": "training tower",
+      "ipa": "/ˈtreɪnɪŋ ˈtaʊər/",
+      "cefr": "B1",
+      "imageNodeId": "52:3002"
+    },
+    {
+      "kind": "card",
+      "id": "locker",
+      "label": "locker",
+      "ipa": "/ˈlɒkər/",
+      "cefr": "A2",
+      "imageNodeId": "52:3006"
+    },
+    {
+      "kind": "card",
+      "id": "control-room",
+      "label": "control room",
+      "ipa": "/kənˈtroʊl ruːm/",
+      "cefr": "B1",
+      "imageNodeId": "52:3010"
+    },
+    {
+      "kind": "card",
+      "id": "meeting-room",
+      "label": "meeting room",
+      "ipa": "/ˈmiːtɪŋ ruːm/",
+      "cefr": "B1",
+      "imageNodeId": "52:3014"
+    },
+    {
+      "kind": "card",
+      "id": "flag",
+      "label": "flag",
+      "ipa": "/flæɡ/",
+      "cefr": "A2",
+      "imageNodeId": "52:3018"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "546:279",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "546:281",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1 · Topic: The Fire Station",
+          "depth": 1,
+          "name": "Level: B1 · Topic: The Fire Station"
+        },
+        {
+          "text": "A Tour of the Fire Station\n\nOur school organised a trip to the local fire station last week. The firefighters were friendly and showed us everything.\n\nThe station has a large garage where the fire engines are parked. Each truck carries hoses, ladders, axes, and first aid equipment. The firefighters explained that a fire engine can carry over a thousand litres of water in its tank.\n\nWe saw the firefighters' uniforms hanging in a row near the garage: helmets, fireproof jackets, heavy boots, and breathing apparatus. They told us they can get dressed in under sixty seconds when the alarm goes off.\n\nUpstairs, there is a common room where the crew rests between calls. It has a kitchen, a dining table, and some sofas. Next to it, there is a dormitory with bunk beds for night shifts. When the alarm sounds, the firefighters slide down a pole to reach the garage quickly.\n\nThe station also has a training tower where firefighters practise climbing ladders and rescuing people from height. Outside, there is a yard with a practice area for using hoses and extinguishers.\n\nThe fire chief gave us a talk about fire safety. She explained the importance of smoke alarms, fire exits, and escape plans. She showed us how to use a fire extinguisher: Pull the pin, Aim at the base, Squeeze the handle, and Sweep side to side — the PASS technique.\n\nAt the end of the visit, we got to sit in a fire engine and turn on the siren. It was an exciting and educational day.",
+          "depth": 1,
+          "name": "A Tour of the Fire Station Our school organised a trip to the local fire station last week. The firefighters were friendly and showed us everything. The station has a large garage where the fire engines are parked. Each truck carries hoses, ladders, axes, and first aid equipment. The firefighters explained that a fire engine can carry over a thousand litres of water in its tank. We saw the firefighters' uniforms hanging in a row near the garage: helmets, fireproof jackets, heavy boots, and breathing apparatus. They told us they can get dressed in under sixty seconds when the alarm goes off. Upstairs, there is a common room where the crew rests between calls. It has a kitchen, a dining table, and some sofas. Next to it, there is a dormitory with bunk beds for night shifts. When the alarm sounds, the firefighters slide down a pole to reach the garage quickly. The station also has a training tower where firefighters practise climbing ladders and rescuing people from height. Outside, there is a yard with a practice area for using hoses and extinguishers. The fire chief gave us a talk about fire safety. She explained the importance of smoke alarms, fire exits, and escape plans. She showed us how to use a fire extinguisher: Pull the pin, Aim at the base, Squeeze the handle, and Sweep side to side — the PASS technique. At the end of the visit, we got to sit in a fire engine and turn on the siren. It was an exciting and educational day."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What equipment does a fire engine carry?",
+          "depth": 1,
+          "name": "1. What equipment does a fire engine carry?"
+        },
+        {
+          "text": "2. How quickly can firefighters get dressed?",
+          "depth": 1,
+          "name": "2. How quickly can firefighters get dressed?"
+        },
+        {
+          "text": "3. What is the training tower used for?",
+          "depth": 1,
+          "name": "3. What is the training tower used for?"
+        },
+        {
+          "text": "4. What does PASS stand for?",
+          "depth": 1,
+          "name": "4. What does PASS stand for?"
+        },
+        {
+          "text": "5. What did the fire chief talk about?",
+          "depth": 1,
+          "name": "5. What did the fire chief talk about?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "546:294",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "fight fire with fire",
+          "depth": 2,
+          "name": "fight fire with fire"
+        },
+        {
+          "text": "respond to an attack using the same methods",
+          "depth": 2,
+          "name": "respond to an attack using the same methods"
+        },
+        {
+          "text": "\"Sometimes you have to fight fire with fire.\"",
+          "depth": 2,
+          "name": "\"Sometimes you have to fight fire with fire.\""
+        },
+        {
+          "text": "put out",
+          "depth": 2,
+          "name": "put out"
+        },
+        {
+          "text": "extinguish a fire",
+          "depth": 2,
+          "name": "extinguish a fire"
+        },
+        {
+          "text": "\"The firefighters put out the blaze in thirty minutes.\"",
+          "depth": 2,
+          "name": "\"The firefighters put out the blaze in thirty minutes.\""
+        },
+        {
+          "text": "spread like wildfire",
+          "depth": 2,
+          "name": "spread like wildfire"
+        },
+        {
+          "text": "spread very quickly",
+          "depth": 2,
+          "name": "spread very quickly"
+        },
+        {
+          "text": "\"The news spread like wildfire through the neighbourhood.\"",
+          "depth": 2,
+          "name": "\"The news spread like wildfire through the neighbourhood.\""
+        },
+        {
+          "text": "under fire",
+          "depth": 2,
+          "name": "under fire"
+        },
+        {
+          "text": "being attacked or criticised",
+          "depth": 2,
+          "name": "being attacked or criticised"
+        },
+        {
+          "text": "\"The company came under fire for the safety failure.\"",
+          "depth": 2,
+          "name": "\"The company came under fire for the safety failure.\""
+        },
+        {
+          "text": "set off",
+          "depth": 2,
+          "name": "set off"
+        },
+        {
+          "text": "activate (an alarm); also: begin a journey",
+          "depth": 2,
+          "name": "activate (an alarm); also: begin a journey"
+        },
+        {
+          "text": "\"The smoke set off the fire alarm in the hallway.\"",
+          "depth": 2,
+          "name": "\"The smoke set off the fire alarm in the hallway.\""
+        },
+        {
+          "text": "break out",
+          "depth": 2,
+          "name": "break out"
+        },
+        {
+          "text": "start suddenly (fire, war, disease)",
+          "depth": 2,
+          "name": "start suddenly (fire, war, disease)"
+        },
+        {
+          "text": "\"A fire broke out on the third floor of the building.\"",
+          "depth": 2,
+          "name": "\"A fire broke out on the third floor of the building.\""
+        },
+        {
+          "text": "call out",
+          "depth": 2,
+          "name": "call out"
+        },
+        {
+          "text": "summon for help; also: criticise publicly",
+          "depth": 2,
+          "name": "summon for help; also: criticise publicly"
+        },
+        {
+          "text": "\"The fire brigade was called out three times last night.\"",
+          "depth": 2,
+          "name": "\"The fire brigade was called out three times last night.\""
+        },
+        {
+          "text": "smoke and mirrors",
+          "depth": 2,
+          "name": "smoke and mirrors"
+        },
+        {
+          "text": "something designed to deceive or confuse",
+          "depth": 2,
+          "name": "something designed to deceive or confuse"
+        },
+        {
+          "text": "\"The politician's answer was all smoke and mirrors.\"",
+          "depth": 2,
+          "name": "\"The politician's answer was all smoke and mirrors.\""
+        },
+        {
+          "text": "where there's smoke, there's fire",
+          "depth": 2,
+          "name": "where there's smoke, there's fire"
+        },
+        {
+          "text": "if there are signs of a problem, the problem probably exists",
+          "depth": 2,
+          "name": "if there are signs of a problem, the problem probably exists"
+        },
+        {
+          "text": "\"He denied it, but where there's smoke, there's fire.\"",
+          "depth": 2,
+          "name": "\"He denied it, but where there's smoke, there's fire.\""
+        },
+        {
+          "text": "get out / evacuate",
+          "depth": 2,
+          "name": "get out / evacuate"
+        },
+        {
+          "text": "leave a building quickly in an emergency",
+          "depth": 2,
+          "name": "leave a building quickly in an emergency"
+        },
+        {
+          "text": "\"Get out of the building immediately — the alarm is real!\"",
+          "depth": 2,
+          "name": "\"Get out of the building immediately — the alarm is real!\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "546:338",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A firefighter teaching children about fire safety",
+          "depth": 1,
+          "name": "Scene: A firefighter teaching children about fire safety"
+        },
+        {
+          "text": "Firefighter:",
+          "depth": 2,
+          "name": "Firefighter:"
+        },
+        {
+          "text": "Does anyone know what you should do if you smell smoke at home?",
+          "depth": 2,
+          "name": "Does anyone know what you should do if you smell smoke at home?"
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Get out of the house?",
+          "depth": 2,
+          "name": "Get out of the house?"
+        },
+        {
+          "text": "Firefighter:",
+          "depth": 2,
+          "name": "Firefighter:"
+        },
+        {
+          "text": "Exactly. Get out, stay out, and call 999. Never go back inside.",
+          "depth": 2,
+          "name": "Exactly. Get out, stay out, and call 999. Never go back inside."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "What if the door is hot?",
+          "depth": 2,
+          "name": "What if the door is hot?"
+        },
+        {
+          "text": "Firefighter:",
+          "depth": 2,
+          "name": "Firefighter:"
+        },
+        {
+          "text": "Good question. Feel the door with the back of your hand. If it's hot, don't open it.",
+          "depth": 2,
+          "name": "Good question. Feel the door with the back of your hand. If it's hot, don't open it."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "What about smoke alarms? We have one in the kitchen.",
+          "depth": 2,
+          "name": "What about smoke alarms? We have one in the kitchen."
+        },
+        {
+          "text": "Firefighter:",
+          "depth": 2,
+          "name": "Firefighter:"
+        },
+        {
+          "text": "Every home should have one on each floor. Test them once a month.",
+          "depth": 2,
+          "name": "Every home should have one on each floor. Test them once a month."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Can we try using a fire extinguisher?",
+          "depth": 2,
+          "name": "Can we try using a fire extinguisher?"
+        },
+        {
+          "text": "Firefighter:",
+          "depth": 2,
+          "name": "Firefighter:"
+        },
+        {
+          "text": "Not today, but remember PASS: Pull, Aim, Squeeze, Sweep.",
+          "depth": 2,
+          "name": "Not today, but remember PASS: Pull, Aim, Squeeze, Sweep."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "How fast can a fire engine go?",
+          "depth": 2,
+          "name": "How fast can a fire engine go?"
+        },
+        {
+          "text": "Firefighter:",
+          "depth": 2,
+          "name": "Firefighter:"
+        },
+        {
+          "text": "Very fast! But safety always comes first — even for us.",
+          "depth": 2,
+          "name": "Very fast! But safety always comes first — even for us."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "546:376",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The firemen put off the fire.\"",
+          "depth": 2,
+          "name": "❌ \"The firemen put off the fire.\""
+        },
+        {
+          "text": "✅ \"The firefighters put out the fire.\"",
+          "depth": 2,
+          "name": "✅ \"The firefighters put out the fire.\""
+        },
+        {
+          "text": "'Put out' = extinguish. 'Put off' = postpone or delay. Also, 'firefighters' is the modern, gender-neutral term.",
+          "depth": 2,
+          "name": "'Put out' = extinguish. 'Put off' = postpone or delay. Also, 'firefighters' is the modern, gender-neutral term."
+        },
+        {
+          "text": "❌ \"Call the fire brigade! There is a fire!\" (correct, but also:)",
+          "depth": 2,
+          "name": "❌ \"Call the fire brigade! There is a fire!\" (correct, but also:)"
+        },
+        {
+          "text": "✅ \"Call 999/911! There is a fire!\"",
+          "depth": 2,
+          "name": "✅ \"Call 999/911! There is a fire!\""
+        },
+        {
+          "text": "Both are correct. In emergencies, calling the emergency number (999 UK, 911 US) connects you to all services.",
+          "depth": 2,
+          "name": "Both are correct. In emergencies, calling the emergency number (999 UK, 911 US) connects you to all services."
+        },
+        {
+          "text": "❌ \"The building is on fire since one hour.\"",
+          "depth": 2,
+          "name": "❌ \"The building is on fire since one hour.\""
+        },
+        {
+          "text": "✅ \"The building has been on fire for one hour.\"",
+          "depth": 2,
+          "name": "✅ \"The building has been on fire for one hour.\""
+        },
+        {
+          "text": "Use 'for' + duration with present perfect. 'Since' needs a point in time.",
+          "depth": 2,
+          "name": "Use 'for' + duration with present perfect. 'Since' needs a point in time."
+        },
+        {
+          "text": "❌ \"He wears a fire uniform.\"",
+          "depth": 2,
+          "name": "❌ \"He wears a fire uniform.\""
+        },
+        {
+          "text": "✅ \"He wears a firefighter's uniform.\" / \"He wears protective gear.\"",
+          "depth": 2,
+          "name": "✅ \"He wears a firefighter's uniform.\" / \"He wears protective gear.\""
+        },
+        {
+          "text": "'Fire uniform' is not natural. Use 'firefighter's uniform', 'fire kit', or 'protective gear/clothing'.",
+          "depth": 2,
+          "name": "'Fire uniform' is not natural. Use 'firefighter's uniform', 'fire kit', or 'protective gear/clothing'."
+        },
+        {
+          "text": "❌ \"The alarm ringed loudly.\"",
+          "depth": 2,
+          "name": "❌ \"The alarm ringed loudly.\""
+        },
+        {
+          "text": "✅ \"The alarm rang loudly.\"",
+          "depth": 2,
+          "name": "✅ \"The alarm rang loudly.\""
+        },
+        {
+          "text": "'Ring' is irregular: ring–rang–rung. There is no 'ringed' in this context.",
+          "depth": 2,
+          "name": "'Ring' is irregular: ring–rang–rung. There is no 'ringed' in this context."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "546:400",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how fire station vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how fire station vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "fire",
+          "depth": 2,
+          "name": "fire"
+        },
+        {
+          "text": "fire / firefighter",
+          "depth": 2,
+          "name": "fire / firefighter"
+        },
+        {
+          "text": "fire",
+          "depth": 2,
+          "name": "fire"
+        },
+        {
+          "text": "fiery / fireproof",
+          "depth": 2,
+          "name": "fiery / fireproof"
+        },
+        {
+          "text": "rescue",
+          "depth": 2,
+          "name": "rescue"
+        },
+        {
+          "text": "rescue / rescuer",
+          "depth": 2,
+          "name": "rescue / rescuer"
+        },
+        {
+          "text": "rescue",
+          "depth": 2,
+          "name": "rescue"
+        },
+        {
+          "text": "rescued",
+          "depth": 2,
+          "name": "rescued"
+        },
+        {
+          "text": "alarm",
+          "depth": 2,
+          "name": "alarm"
+        },
+        {
+          "text": "alarm",
+          "depth": 2,
+          "name": "alarm"
+        },
+        {
+          "text": "alarm",
+          "depth": 2,
+          "name": "alarm"
+        },
+        {
+          "text": "alarming / alarmed",
+          "depth": 2,
+          "name": "alarming / alarmed"
+        },
+        {
+          "text": "smoke",
+          "depth": 2,
+          "name": "smoke"
+        },
+        {
+          "text": "smoke / smoker",
+          "depth": 2,
+          "name": "smoke / smoker"
+        },
+        {
+          "text": "smoke",
+          "depth": 2,
+          "name": "smoke"
+        },
+        {
+          "text": "smoky",
+          "depth": 2,
+          "name": "smoky"
+        },
+        {
+          "text": "burn",
+          "depth": 2,
+          "name": "burn"
+        },
+        {
+          "text": "burn / burner",
+          "depth": 2,
+          "name": "burn / burner"
+        },
+        {
+          "text": "burn",
+          "depth": 2,
+          "name": "burn"
+        },
+        {
+          "text": "burnt / burning",
+          "depth": 2,
+          "name": "burnt / burning"
+        },
+        {
+          "text": "extinguish",
+          "depth": 2,
+          "name": "extinguish"
+        },
+        {
+          "text": "extinguisher",
+          "depth": 2,
+          "name": "extinguisher"
+        },
+        {
+          "text": "extinguish",
+          "depth": 2,
+          "name": "extinguish"
+        },
+        {
+          "text": "extinguished",
+          "depth": 2,
+          "name": "extinguished"
+        },
+        {
+          "text": "protect",
+          "depth": 2,
+          "name": "protect"
+        },
+        {
+          "text": "protection / protector",
+          "depth": 2,
+          "name": "protection / protector"
+        },
+        {
+          "text": "protect",
+          "depth": 2,
+          "name": "protect"
+        },
+        {
+          "text": "protective",
+          "depth": 2,
+          "name": "protective"
+        },
+        {
+          "text": "evacuate",
+          "depth": 2,
+          "name": "evacuate"
+        },
+        {
+          "text": "evacuation",
+          "depth": 2,
+          "name": "evacuation"
+        },
+        {
+          "text": "evacuate",
+          "depth": 2,
+          "name": "evacuate"
+        },
+        {
+          "text": "evacuated",
+          "depth": 2,
+          "name": "evacuated"
+        },
+        {
+          "text": "inspect",
+          "depth": 2,
+          "name": "inspect"
+        },
+        {
+          "text": "inspection / inspector",
+          "depth": 2,
+          "name": "inspection / inspector"
+        },
+        {
+          "text": "inspect",
+          "depth": 2,
+          "name": "inspect"
+        },
+        {
+          "text": "inspected",
+          "depth": 2,
+          "name": "inspected"
+        },
+        {
+          "text": "breathe",
+          "depth": 2,
+          "name": "breathe"
+        },
+        {
+          "text": "breath / breathing",
+          "depth": 2,
+          "name": "breath / breathing"
+        },
+        {
+          "text": "breathe",
+          "depth": 2,
+          "name": "breathe"
+        },
+        {
+          "text": "breathable",
+          "depth": 2,
+          "name": "breathable"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "546:460",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The __________ rushed to the scene with sirens blaring.",
+          "depth": 1,
+          "name": "1. The __________ rushed to the scene with sirens blaring."
+        },
+        {
+          "text": "2.  Firefighters wear __________ jackets that can withstand extreme heat.",
+          "depth": 1,
+          "name": "2. Firefighters wear __________ jackets that can withstand extreme heat."
+        },
+        {
+          "text": "3.  The smoke __________ went off in the middle of the night.",
+          "depth": 1,
+          "name": "3. The smoke __________ went off in the middle of the night."
+        },
+        {
+          "text": "4.  She used a fire __________ to put out the small kitchen fire.",
+          "depth": 1,
+          "name": "4. She used a fire __________ to put out the small kitchen fire."
+        },
+        {
+          "text": "5.  The __________ slid down the pole when the alarm sounded.",
+          "depth": 1,
+          "name": "5. The __________ slid down the pole when the alarm sounded."
+        },
+        {
+          "text": "6.  The fire __________ gave a talk on home safety.",
+          "depth": 1,
+          "name": "6. The fire __________ gave a talk on home safety."
+        },
+        {
+          "text": "7.  They connected the __________ to the hydrant and aimed water at the flames.",
+          "depth": 1,
+          "name": "7. They connected the __________ to the hydrant and aimed water at the flames."
+        },
+        {
+          "text": "8.  Everyone must know the __________ plan in case of a fire.",
+          "depth": 1,
+          "name": "8. Everyone must know the __________ plan in case of a fire."
+        },
+        {
+          "text": "9.  The building was __________ within ten minutes of the alarm.",
+          "depth": 1,
+          "name": "9. The building was __________ within ten minutes of the alarm."
+        },
+        {
+          "text": "10. Firefighters wore breathing __________ to enter the smoky building.",
+          "depth": 1,
+          "name": "10. Firefighters wore breathing __________ to enter the smoky building."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. fire engine  2. fireproof  3. alarm  4. extinguisher  5. firefighters  6. chief  7. hose  8. escape  9. evacuated  10. apparatus",
+          "depth": 2,
+          "name": "1. fire engine 2. fireproof 3. alarm 4. extinguisher 5. firefighters 6. chief 7. hose 8. escape 9. evacuated 10. apparatus"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "546:478",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "🇬🇧 vs 🇺🇸 Vocabulary",
+          "depth": 2,
+          "name": "🇬🇧 vs 🇺🇸 Vocabulary"
+        },
+        {
+          "text": "British: 'fire engine' / American: 'fire truck'. British: 'fire brigade' / American: 'fire department'. British: '999' / American: '911'. Both: 'firefighter' (gender-neutral).",
+          "depth": 2,
+          "name": "British: 'fire engine' / American: 'fire truck'. British: 'fire brigade' / American: 'fire department'. British: '999' / American: '911'. Both: 'firefighter' (gender-neutral)."
+        },
+        {
+          "text": "Firefighter vs Fireman",
+          "depth": 2,
+          "name": "Firefighter vs Fireman"
+        },
+        {
+          "text": "'Firefighter' is the modern, inclusive term used officially in the UK and US. 'Fireman' is outdated. Many fire services actively recruit people of all genders.",
+          "depth": 2,
+          "name": "'Firefighter' is the modern, inclusive term used officially in the UK and US. 'Fireman' is outdated. Many fire services actively recruit people of all genders."
+        },
+        {
+          "text": "Fire Safety in Homes",
+          "depth": 2,
+          "name": "Fire Safety in Homes"
+        },
+        {
+          "text": "UK law requires smoke alarms on every floor. Carbon monoxide detectors are required near gas appliances. Fire blankets are recommended in kitchens. These vocabulary items appear in safety leaflets.",
+          "depth": 2,
+          "name": "UK law requires smoke alarms on every floor. Carbon monoxide detectors are required near gas appliances. Fire blankets are recommended in kitchens. These vocabulary items appear in safety leaflets."
+        },
+        {
+          "text": "Bonfire Night (UK)",
+          "depth": 2,
+          "name": "Bonfire Night (UK)"
+        },
+        {
+          "text": "November 5th is 'Bonfire Night' or 'Guy Fawkes Night' in the UK. People light bonfires and set off fireworks. Fire safety advice is widely shared every autumn.",
+          "depth": 2,
+          "name": "November 5th is 'Bonfire Night' or 'Guy Fawkes Night' in the UK. People light bonfires and set off fireworks. Fire safety advice is widely shared every autumn."
+        },
+        {
+          "text": "Volunteer Firefighters",
+          "depth": 2,
+          "name": "Volunteer Firefighters"
+        },
+        {
+          "text": "In many rural areas of the US, UK, and Australia, fire brigades rely on volunteers. 'Volunteer firefighter' is a respected community role. This is good context for discussing civic vocabulary.",
+          "depth": 2,
+          "name": "In many rural areas of the US, UK, and Australia, fire brigades rely on volunteers. 'Volunteer firefighter' is a respected community role. This is good context for discussing civic vocabulary."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "546:497",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "fire engine",
+          "depth": 2,
+          "name": "fire engine"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ garage, ride a ~, ~ siren",
+          "depth": 2,
+          "name": "~ garage, ride a ~, ~ siren"
+        },
+        {
+          "text": "hose",
+          "depth": 2,
+          "name": "hose"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "fire ~, garden ~, ~ nozzle",
+          "depth": 2,
+          "name": "fire ~, garden ~, ~ nozzle"
+        },
+        {
+          "text": "helmet",
+          "depth": 2,
+          "name": "helmet"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "safety ~, fire ~, ~ visor",
+          "depth": 2,
+          "name": "safety ~, fire ~, ~ visor"
+        },
+        {
+          "text": "ladder",
+          "depth": 2,
+          "name": "ladder"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "climb a ~, ~ truck, extension ~",
+          "depth": 2,
+          "name": "climb a ~, ~ truck, extension ~"
+        },
+        {
+          "text": "alarm",
+          "depth": 2,
+          "name": "alarm"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "fire ~, smoke ~, ~ system, ~ bell",
+          "depth": 2,
+          "name": "fire ~, smoke ~, ~ system, ~ bell"
+        },
+        {
+          "text": "extinguisher",
+          "depth": 2,
+          "name": "extinguisher"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "fire ~, use an ~, ~ cabinet",
+          "depth": 2,
+          "name": "fire ~, use an ~, ~ cabinet"
+        },
+        {
+          "text": "siren",
+          "depth": 2,
+          "name": "siren"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ sound, police ~, ambulance ~",
+          "depth": 2,
+          "name": "~ sound, police ~, ambulance ~"
+        },
+        {
+          "text": "hydrant",
+          "depth": 2,
+          "name": "hydrant"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "fire ~, open the ~, ~ valve",
+          "depth": 2,
+          "name": "fire ~, open the ~, ~ valve"
+        },
+        {
+          "text": "rescue",
+          "depth": 2,
+          "name": "rescue"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ team, ~ mission, ~ helicopter",
+          "depth": 2,
+          "name": "~ team, ~ mission, ~ helicopter"
+        },
+        {
+          "text": "evacuation",
+          "depth": 2,
+          "name": "evacuation"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ plan, ~ route, emergency ~",
+          "depth": 2,
+          "name": "~ plan, ~ route, emergency ~"
+        }
+      ]
+    }
+  }
+}

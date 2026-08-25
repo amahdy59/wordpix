@@ -1,0 +1,1490 @@
+{
+  "unitId": "l7-music-room",
+  "name": "L7 Music Room",
+  "subtopics": [],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "guitar",
+      "label": "guitar",
+      "ipa": "/ɡɪˈtɑːr/",
+      "cefr": "A2",
+      "imageNodeId": "52:4911"
+    },
+    {
+      "kind": "card",
+      "id": "violin",
+      "label": "violin",
+      "ipa": "/ˌvaɪəˈlɪn/",
+      "cefr": "A2",
+      "imageNodeId": "52:4915"
+    },
+    {
+      "kind": "card",
+      "id": "cello",
+      "label": "cello",
+      "ipa": "/ˈtʃɛloʊ/",
+      "cefr": "A2",
+      "imageNodeId": "52:4919"
+    },
+    {
+      "kind": "card",
+      "id": "bass",
+      "label": "bass",
+      "ipa": "/beɪs/",
+      "cefr": "A2",
+      "imageNodeId": "52:4923"
+    },
+    {
+      "kind": "card",
+      "id": "harp",
+      "label": "harp",
+      "ipa": "/hɑːrp/",
+      "cefr": "A2",
+      "imageNodeId": "52:4927"
+    },
+    {
+      "kind": "card",
+      "id": "ukulele",
+      "label": "ukulele",
+      "ipa": "/ˌjuːkəˈleɪli/",
+      "cefr": "A2",
+      "imageNodeId": "52:4931"
+    },
+    {
+      "kind": "card",
+      "id": "banjo",
+      "label": "banjo",
+      "ipa": "/ˈbændʒoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "52:4935"
+    },
+    {
+      "kind": "card",
+      "id": "mandolin",
+      "label": "mandolin",
+      "ipa": "/ˈmændəlɪn/",
+      "cefr": "A2",
+      "imageNodeId": "52:4939"
+    },
+    {
+      "kind": "card",
+      "id": "viola",
+      "label": "viola",
+      "ipa": "/viˈoʊlə/",
+      "cefr": "A2",
+      "imageNodeId": "52:4943"
+    },
+    {
+      "kind": "card",
+      "id": "double-bass",
+      "label": "double bass",
+      "ipa": "/ˈdʌbəl beɪs/",
+      "cefr": "B1",
+      "imageNodeId": "52:4947"
+    },
+    {
+      "kind": "card",
+      "id": "flute",
+      "label": "flute",
+      "ipa": "/fluːt/",
+      "cefr": "A2",
+      "imageNodeId": "52:4956"
+    },
+    {
+      "kind": "card",
+      "id": "clarinet",
+      "label": "clarinet",
+      "ipa": "/ˌklærɪˈnɛt/",
+      "cefr": "A2",
+      "imageNodeId": "52:4960"
+    },
+    {
+      "kind": "card",
+      "id": "saxophone",
+      "label": "saxophone",
+      "ipa": "/ˈsæksəˌfoʊn/",
+      "cefr": "A2",
+      "imageNodeId": "52:4964"
+    },
+    {
+      "kind": "card",
+      "id": "trumpet",
+      "label": "trumpet",
+      "ipa": "/ˈtrʌmpɪt/",
+      "cefr": "A2",
+      "imageNodeId": "52:4968"
+    },
+    {
+      "kind": "card",
+      "id": "trombone",
+      "label": "trombone",
+      "ipa": "/trɒmˈboʊn/",
+      "cefr": "A2",
+      "imageNodeId": "52:4972"
+    },
+    {
+      "kind": "card",
+      "id": "oboe",
+      "label": "oboe",
+      "ipa": "/ˈoʊboʊ/",
+      "cefr": "A2",
+      "imageNodeId": "52:4976"
+    },
+    {
+      "kind": "card",
+      "id": "bassoon",
+      "label": "bassoon",
+      "ipa": "/bəˈsuːn/",
+      "cefr": "A2",
+      "imageNodeId": "52:4980"
+    },
+    {
+      "kind": "card",
+      "id": "tuba",
+      "label": "tuba",
+      "ipa": "/ˈtjuːbə/",
+      "cefr": "A2",
+      "imageNodeId": "52:4984"
+    },
+    {
+      "kind": "card",
+      "id": "harmonica",
+      "label": "harmonica",
+      "ipa": "/hɑːrˈmɒnɪkə/",
+      "cefr": "A2",
+      "imageNodeId": "52:4988"
+    },
+    {
+      "kind": "card",
+      "id": "recorder",
+      "label": "recorder",
+      "ipa": "/rɪˈkɔːrdər/",
+      "cefr": "A2",
+      "imageNodeId": "52:4992"
+    },
+    {
+      "kind": "card",
+      "id": "drums",
+      "label": "drums",
+      "ipa": "/drʌmz/",
+      "cefr": "A2",
+      "imageNodeId": "52:5001"
+    },
+    {
+      "kind": "card",
+      "id": "snare-drum",
+      "label": "snare drum",
+      "ipa": "/snɛər drʌm/",
+      "cefr": "B1",
+      "imageNodeId": "52:5005"
+    },
+    {
+      "kind": "card",
+      "id": "bass-drum",
+      "label": "bass drum",
+      "ipa": "/beɪs drʌm/",
+      "cefr": "B1",
+      "imageNodeId": "52:5009"
+    },
+    {
+      "kind": "card",
+      "id": "cymbal",
+      "label": "cymbal",
+      "ipa": "/ˈsɪmbəl/",
+      "cefr": "A2",
+      "imageNodeId": "52:5013"
+    },
+    {
+      "kind": "card",
+      "id": "tambourine",
+      "label": "tambourine",
+      "ipa": "/ˌtæmbəˈriːn/",
+      "cefr": "B1",
+      "imageNodeId": "52:5017"
+    },
+    {
+      "kind": "card",
+      "id": "xylophone",
+      "label": "xylophone",
+      "ipa": "/ˈzaɪləˌfoʊn/",
+      "cefr": "A2",
+      "imageNodeId": "52:5021"
+    },
+    {
+      "kind": "card",
+      "id": "maracas",
+      "label": "maracas",
+      "ipa": "/məˈrɑːkəz/",
+      "cefr": "A2",
+      "imageNodeId": "52:5025"
+    },
+    {
+      "kind": "card",
+      "id": "triangle",
+      "label": "triangle",
+      "ipa": "/ˈtraɪˌæŋɡəl/",
+      "cefr": "A2",
+      "imageNodeId": "52:5029"
+    },
+    {
+      "kind": "card",
+      "id": "bongo",
+      "label": "bongo",
+      "ipa": "/ˈbɒŋɡoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "52:5033"
+    },
+    {
+      "kind": "card",
+      "id": "gong",
+      "label": "gong",
+      "ipa": "/ɡɒŋ/",
+      "cefr": "A2",
+      "imageNodeId": "52:5037"
+    },
+    {
+      "kind": "card",
+      "id": "piano",
+      "label": "piano",
+      "ipa": "/piˈænoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "52:5046"
+    },
+    {
+      "kind": "card",
+      "id": "keyboard",
+      "label": "keyboard",
+      "ipa": "/ˈkiːˌbɔːrd/",
+      "cefr": "A2",
+      "imageNodeId": "52:5050"
+    },
+    {
+      "kind": "card",
+      "id": "organ",
+      "label": "organ",
+      "ipa": "/ˈɔːrɡən/",
+      "cefr": "A2",
+      "imageNodeId": "52:5054"
+    },
+    {
+      "kind": "card",
+      "id": "synthesizer",
+      "label": "synthesizer",
+      "ipa": "/ˈsɪnθəˌsaɪzər/",
+      "cefr": "B1",
+      "imageNodeId": "52:5058"
+    },
+    {
+      "kind": "card",
+      "id": "accordion",
+      "label": "accordion",
+      "ipa": "/əˈkɔːrdiən/",
+      "cefr": "A2",
+      "imageNodeId": "52:5062"
+    },
+    {
+      "kind": "card",
+      "id": "melody",
+      "label": "melody",
+      "ipa": "/ˈmɛlədi/",
+      "cefr": "A2",
+      "imageNodeId": "52:5071"
+    },
+    {
+      "kind": "card",
+      "id": "rhythm",
+      "label": "rhythm",
+      "ipa": "/ˈrɪðəm/",
+      "cefr": "A2",
+      "imageNodeId": "52:5075"
+    },
+    {
+      "kind": "card",
+      "id": "tempo",
+      "label": "tempo",
+      "ipa": "/ˈtɛmpoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "52:5079"
+    },
+    {
+      "kind": "card",
+      "id": "beat",
+      "label": "beat",
+      "ipa": "/biːt/",
+      "cefr": "A2",
+      "imageNodeId": "52:5083"
+    },
+    {
+      "kind": "card",
+      "id": "chord",
+      "label": "chord",
+      "ipa": "/kɔːrd/",
+      "cefr": "A2",
+      "imageNodeId": "52:5087"
+    },
+    {
+      "kind": "card",
+      "id": "note",
+      "label": "note",
+      "ipa": "/noʊt/",
+      "cefr": "A2",
+      "imageNodeId": "52:5091"
+    },
+    {
+      "kind": "card",
+      "id": "rest",
+      "label": "rest",
+      "ipa": "/rɛst/",
+      "cefr": "A2",
+      "imageNodeId": "52:5095"
+    },
+    {
+      "kind": "card",
+      "id": "scale",
+      "label": "scale",
+      "ipa": "/skeɪl/",
+      "cefr": "A2",
+      "imageNodeId": "52:5099"
+    },
+    {
+      "kind": "card",
+      "id": "key",
+      "label": "key",
+      "ipa": "/kiː/",
+      "cefr": "A2",
+      "imageNodeId": "52:5103"
+    },
+    {
+      "kind": "card",
+      "id": "pitch",
+      "label": "pitch",
+      "ipa": "/pɪtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "52:5107"
+    },
+    {
+      "kind": "card",
+      "id": "harmony",
+      "label": "harmony",
+      "ipa": "/ˈhɑːrməni/",
+      "cefr": "A2",
+      "imageNodeId": "52:5111"
+    },
+    {
+      "kind": "card",
+      "id": "dynamics",
+      "label": "dynamics",
+      "ipa": "/daɪˈnæmɪks/",
+      "cefr": "A2",
+      "imageNodeId": "52:5115"
+    },
+    {
+      "kind": "card",
+      "id": "music-stand",
+      "label": "music stand",
+      "ipa": "/ˈmjuːzɪk stænd/",
+      "cefr": "B1",
+      "imageNodeId": "52:5124"
+    },
+    {
+      "kind": "card",
+      "id": "sheet-music",
+      "label": "sheet music",
+      "ipa": "/ʃiːt ˈmjuːzɪk/",
+      "cefr": "B1",
+      "imageNodeId": "52:5128"
+    },
+    {
+      "kind": "card",
+      "id": "metronome",
+      "label": "metronome",
+      "ipa": "/ˈmɛtrəˌnoʊm/",
+      "cefr": "A2",
+      "imageNodeId": "52:5132"
+    },
+    {
+      "kind": "card",
+      "id": "tuner",
+      "label": "tuner",
+      "ipa": "/ˈtjuːnər/",
+      "cefr": "A2",
+      "imageNodeId": "52:5136"
+    },
+    {
+      "kind": "card",
+      "id": "amplifier",
+      "label": "amplifier",
+      "ipa": "/ˈæmplɪˌfaɪər/",
+      "cefr": "A2",
+      "imageNodeId": "52:5140"
+    },
+    {
+      "kind": "card",
+      "id": "microphone",
+      "label": "microphone",
+      "ipa": "/ˈmaɪkrəˌfoʊn/",
+      "cefr": "B1",
+      "imageNodeId": "52:5144"
+    },
+    {
+      "kind": "card",
+      "id": "speaker",
+      "label": "speaker",
+      "ipa": "/ˈspiːkər/",
+      "cefr": "A2",
+      "imageNodeId": "52:5148"
+    },
+    {
+      "kind": "card",
+      "id": "headphones",
+      "label": "headphones",
+      "ipa": "/ˈhɛdˌfoʊnz/",
+      "cefr": "B1",
+      "imageNodeId": "52:5152"
+    },
+    {
+      "kind": "card",
+      "id": "conductor's-baton",
+      "label": "conductor's baton",
+      "ipa": "/kənˈdʌktərz bəˈtɒn/",
+      "cefr": "B2",
+      "imageNodeId": "52:5156"
+    },
+    {
+      "kind": "card",
+      "id": "music-book",
+      "label": "music book",
+      "ipa": "/ˈmjuːzɪk bʊk/",
+      "cefr": "B1",
+      "imageNodeId": "52:5160"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "547:1674",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "547:1676",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1 · Topic: The Music Room",
+          "depth": 1,
+          "name": "Level: B1 · Topic: The Music Room"
+        },
+        {
+          "text": "Learning to Play\n\nEvery Thursday afternoon, our school has music lessons in the music room. It is a large room on the ground floor with soundproof walls so the noise does not disturb other classes.\n\nThe music room has all kinds of instruments. Along one wall, there are acoustic guitars and electric guitars on stands. In the corner, there is an upright piano that our teacher, Mrs Clarke, plays beautifully. There are also drums, a xylophone, recorders, and a set of hand bells.\n\nThis term, we are learning about rhythm and melody. Mrs Clarke taught us to read basic musical notation — the symbols on a staff that tell you which notes to play and how long to hold them. A crotchet is one beat, a minim is two beats, and a semibreve is four beats.\n\nWe started by clapping rhythms together. Then, each student chose an instrument to practise. I chose the keyboard because I want to learn piano. My friend Tariq picked up the drums, and he was surprisingly good at keeping a steady beat.\n\nAt the end of the lesson, we played a simple piece together as a group. It was not perfect, but it sounded better than expected. Mrs Clarke said that playing in a group teaches you to listen to others and stay in time.\n\nNext term, we will start preparing for the school concert. Each class will perform one piece. I am both excited and nervous. Music is one of my favourite subjects because it lets you express yourself without words.",
+          "depth": 1,
+          "name": "Learning to Play Every Thursday afternoon, our school has music lessons in the music room. It is a large room on the ground floor with soundproof walls so the noise does not disturb other classes. The music room has all kinds of instruments. Along one wall, there are acoustic guitars and electric guitars on stands. In the corner, there is an upright piano that our teacher, Mrs Clarke, plays beautifully. There are also drums, a xylophone, recorders, and a set of hand bells. This term, we are learning about rhythm and melody. Mrs Clarke taught us to read basic musical notation — the symbols on a staff that tell you which notes to play and how long to hold them. A crotchet is one beat, a minim is two beats, and a semibreve is four beats. We started by clapping rhythms together. Then, each student chose an instrument to practise. I chose the keyboard because I want to learn piano. My friend Tariq picked up the drums, and he was surprisingly good at keeping a steady beat. At the end of the lesson, we played a simple piece together as a group. It was not perfect, but it sounded better than expected. Mrs Clarke said that playing in a group teaches you to listen to others and stay in time. Next term, we will start preparing for the school concert. Each class will perform one piece. I am both excited and nervous. Music is one of my favourite subjects because it lets you express yourself without words."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Why does the music room have soundproof walls?",
+          "depth": 1,
+          "name": "1. Why does the music room have soundproof walls?"
+        },
+        {
+          "text": "2. What instruments are available in the music room?",
+          "depth": 1,
+          "name": "2. What instruments are available in the music room?"
+        },
+        {
+          "text": "3. What is the difference between a crotchet and a minim?",
+          "depth": 1,
+          "name": "3. What is the difference between a crotchet and a minim?"
+        },
+        {
+          "text": "4. What did the students do at the end of the lesson?",
+          "depth": 1,
+          "name": "4. What did the students do at the end of the lesson?"
+        },
+        {
+          "text": "5. What is the school preparing for next term?",
+          "depth": 1,
+          "name": "5. What is the school preparing for next term?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "547:1689",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "music to my ears",
+          "depth": 2,
+          "name": "music to my ears"
+        },
+        {
+          "text": "something very pleasing to hear",
+          "depth": 2,
+          "name": "something very pleasing to hear"
+        },
+        {
+          "text": "\"Your exam results are music to my ears!\"",
+          "depth": 2,
+          "name": "\"Your exam results are music to my ears!\""
+        },
+        {
+          "text": "face the music",
+          "depth": 2,
+          "name": "face the music"
+        },
+        {
+          "text": "accept the consequences of your actions",
+          "depth": 2,
+          "name": "accept the consequences of your actions"
+        },
+        {
+          "text": "\"You broke the window — now you have to face the music.\"",
+          "depth": 2,
+          "name": "\"You broke the window — now you have to face the music.\""
+        },
+        {
+          "text": "blow your own trumpet",
+          "depth": 2,
+          "name": "blow your own trumpet"
+        },
+        {
+          "text": "boast about your achievements",
+          "depth": 2,
+          "name": "boast about your achievements"
+        },
+        {
+          "text": "\"He's always blowing his own trumpet about his grades.\"",
+          "depth": 2,
+          "name": "\"He's always blowing his own trumpet about his grades.\""
+        },
+        {
+          "text": "play it by ear",
+          "depth": 2,
+          "name": "play it by ear"
+        },
+        {
+          "text": "decide what to do as things happen, without a plan",
+          "depth": 2,
+          "name": "decide what to do as things happen, without a plan"
+        },
+        {
+          "text": "\"We don't have a fixed schedule — let's play it by ear.\"",
+          "depth": 2,
+          "name": "\"We don't have a fixed schedule — let's play it by ear.\""
+        },
+        {
+          "text": "strike a chord",
+          "depth": 2,
+          "name": "strike a chord"
+        },
+        {
+          "text": "cause an emotional reaction",
+          "depth": 2,
+          "name": "cause an emotional reaction"
+        },
+        {
+          "text": "\"The song about childhood struck a chord with the audience.\"",
+          "depth": 2,
+          "name": "\"The song about childhood struck a chord with the audience.\""
+        },
+        {
+          "text": "in tune / out of tune",
+          "depth": 2,
+          "name": "in tune / out of tune"
+        },
+        {
+          "text": "singing or playing at the correct/wrong pitch",
+          "depth": 2,
+          "name": "singing or playing at the correct/wrong pitch"
+        },
+        {
+          "text": "\"The guitar sounds out of tune — you need to tune it.\"",
+          "depth": 2,
+          "name": "\"The guitar sounds out of tune — you need to tune it.\""
+        },
+        {
+          "text": "drum up",
+          "depth": 2,
+          "name": "drum up"
+        },
+        {
+          "text": "create or generate (support, interest)",
+          "depth": 2,
+          "name": "create or generate (support, interest)"
+        },
+        {
+          "text": "\"We need to drum up support for the school concert.\"",
+          "depth": 2,
+          "name": "\"We need to drum up support for the school concert.\""
+        },
+        {
+          "text": "pull strings",
+          "depth": 2,
+          "name": "pull strings"
+        },
+        {
+          "text": "use influence to get something done",
+          "depth": 2,
+          "name": "use influence to get something done"
+        },
+        {
+          "text": "\"She pulled some strings to get tickets to the concert.\"",
+          "depth": 2,
+          "name": "\"She pulled some strings to get tickets to the concert.\""
+        },
+        {
+          "text": "change your tune",
+          "depth": 2,
+          "name": "change your tune"
+        },
+        {
+          "text": "change your opinion or attitude",
+          "depth": 2,
+          "name": "change your opinion or attitude"
+        },
+        {
+          "text": "\"He said he hated music, but he's changed his tune since joining the band.\"",
+          "depth": 2,
+          "name": "\"He said he hated music, but he's changed his tune since joining the band.\""
+        },
+        {
+          "text": "march to the beat of your own drum",
+          "depth": 2,
+          "name": "march to the beat of your own drum"
+        },
+        {
+          "text": "do things in your own way",
+          "depth": 2,
+          "name": "do things in your own way"
+        },
+        {
+          "text": "\"She's always marched to the beat of her own drum.\"",
+          "depth": 2,
+          "name": "\"She's always marched to the beat of her own drum.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "547:1733",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: Two students in the music room after class",
+          "depth": 1,
+          "name": "Scene: Two students in the music room after class"
+        },
+        {
+          "text": "Layla:",
+          "depth": 2,
+          "name": "Layla:"
+        },
+        {
+          "text": "Have you decided what instrument you want to play for the concert?",
+          "depth": 2,
+          "name": "Have you decided what instrument you want to play for the concert?"
+        },
+        {
+          "text": "Tariq:",
+          "depth": 2,
+          "name": "Tariq:"
+        },
+        {
+          "text": "I think I'll stick with the drums. What about you?",
+          "depth": 2,
+          "name": "I think I'll stick with the drums. What about you?"
+        },
+        {
+          "text": "Layla:",
+          "depth": 2,
+          "name": "Layla:"
+        },
+        {
+          "text": "I'm learning the keyboard, but I'm not very confident yet.",
+          "depth": 2,
+          "name": "I'm learning the keyboard, but I'm not very confident yet."
+        },
+        {
+          "text": "Tariq:",
+          "depth": 2,
+          "name": "Tariq:"
+        },
+        {
+          "text": "You should practise the melody while I practise the rhythm.",
+          "depth": 2,
+          "name": "You should practise the melody while I practise the rhythm."
+        },
+        {
+          "text": "Layla:",
+          "depth": 2,
+          "name": "Layla:"
+        },
+        {
+          "text": "That's a good idea. Shall we rehearse after school on Wednesdays?",
+          "depth": 2,
+          "name": "That's a good idea. Shall we rehearse after school on Wednesdays?"
+        },
+        {
+          "text": "Tariq:",
+          "depth": 2,
+          "name": "Tariq:"
+        },
+        {
+          "text": "Sure. The music room is open until five. We just need to book it.",
+          "depth": 2,
+          "name": "Sure. The music room is open until five. We just need to book it."
+        },
+        {
+          "text": "Layla:",
+          "depth": 2,
+          "name": "Layla:"
+        },
+        {
+          "text": "I'll ask Mrs Clarke. Do you know how to read sheet music?",
+          "depth": 2,
+          "name": "I'll ask Mrs Clarke. Do you know how to read sheet music?"
+        },
+        {
+          "text": "Tariq:",
+          "depth": 2,
+          "name": "Tariq:"
+        },
+        {
+          "text": "A little. I know the basic notes but I struggle with the timing.",
+          "depth": 2,
+          "name": "A little. I know the basic notes but I struggle with the timing."
+        },
+        {
+          "text": "Layla:",
+          "depth": 2,
+          "name": "Layla:"
+        },
+        {
+          "text": "Me too. The difference between quavers and crotchets confuses me.",
+          "depth": 2,
+          "name": "Me too. The difference between quavers and crotchets confuses me."
+        },
+        {
+          "text": "Tariq:",
+          "depth": 2,
+          "name": "Tariq:"
+        },
+        {
+          "text": "We'll figure it out. Practice makes perfect!",
+          "depth": 2,
+          "name": "We'll figure it out. Practice makes perfect!"
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "547:1768",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I play on the piano.\"",
+          "depth": 2,
+          "name": "❌ \"I play on the piano.\""
+        },
+        {
+          "text": "✅ \"I play the piano.\"",
+          "depth": 2,
+          "name": "✅ \"I play the piano.\""
+        },
+        {
+          "text": "In English, you 'play the piano/guitar/drums' — no preposition needed. 'Play on' sounds like you're sitting on it.",
+          "depth": 2,
+          "name": "In English, you 'play the piano/guitar/drums' — no preposition needed. 'Play on' sounds like you're sitting on it."
+        },
+        {
+          "text": "❌ \"She plays piano very good.\"",
+          "depth": 2,
+          "name": "❌ \"She plays piano very good.\""
+        },
+        {
+          "text": "✅ \"She plays the piano very well.\"",
+          "depth": 2,
+          "name": "✅ \"She plays the piano very well.\""
+        },
+        {
+          "text": "Use the adverb 'well' (not the adjective 'good') to modify the verb 'plays'. Also include 'the' before the instrument.",
+          "depth": 2,
+          "name": "Use the adverb 'well' (not the adjective 'good') to modify the verb 'plays'. Also include 'the' before the instrument."
+        },
+        {
+          "text": "❌ \"I am learning guitar since two years.\"",
+          "depth": 2,
+          "name": "❌ \"I am learning guitar since two years.\""
+        },
+        {
+          "text": "✅ \"I have been learning guitar for two years.\"",
+          "depth": 2,
+          "name": "✅ \"I have been learning guitar for two years.\""
+        },
+        {
+          "text": "Use present perfect continuous with 'for' (duration) or 'since' (starting point). 'Since' needs a point in time: 'since 2024'.",
+          "depth": 2,
+          "name": "Use present perfect continuous with 'for' (duration) or 'since' (starting point). 'Since' needs a point in time: 'since 2024'."
+        },
+        {
+          "text": "❌ \"The music was very loud and I couldn't listen anything.\"",
+          "depth": 2,
+          "name": "❌ \"The music was very loud and I couldn't listen anything.\""
+        },
+        {
+          "text": "✅ \"The music was very loud and I couldn't hear anything.\"",
+          "depth": 2,
+          "name": "✅ \"The music was very loud and I couldn't hear anything.\""
+        },
+        {
+          "text": "'Hear' = perceive sound (automatic). 'Listen' = pay attention to sound (deliberate). You 'hear' noise; you 'listen to' music.",
+          "depth": 2,
+          "name": "'Hear' = perceive sound (automatic). 'Listen' = pay attention to sound (deliberate). You 'hear' noise; you 'listen to' music."
+        },
+        {
+          "text": "❌ \"He plays the drums since he was a child.\"",
+          "depth": 2,
+          "name": "❌ \"He plays the drums since he was a child.\""
+        },
+        {
+          "text": "✅ \"He has played the drums since he was a child.\"",
+          "depth": 2,
+          "name": "✅ \"He has played the drums since he was a child.\""
+        },
+        {
+          "text": "Use present perfect ('has played') with 'since' for actions that started in the past and continue to the present.",
+          "depth": 2,
+          "name": "Use present perfect ('has played') with 'since' for actions that started in the past and continue to the present."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "547:1792",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how music vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how music vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "perform",
+          "depth": 2,
+          "name": "perform"
+        },
+        {
+          "text": "performance / performer",
+          "depth": 2,
+          "name": "performance / performer"
+        },
+        {
+          "text": "perform",
+          "depth": 2,
+          "name": "perform"
+        },
+        {
+          "text": "performing",
+          "depth": 2,
+          "name": "performing"
+        },
+        {
+          "text": "compose",
+          "depth": 2,
+          "name": "compose"
+        },
+        {
+          "text": "composition / composer",
+          "depth": 2,
+          "name": "composition / composer"
+        },
+        {
+          "text": "compose",
+          "depth": 2,
+          "name": "compose"
+        },
+        {
+          "text": "composed",
+          "depth": 2,
+          "name": "composed"
+        },
+        {
+          "text": "rhythm",
+          "depth": 2,
+          "name": "rhythm"
+        },
+        {
+          "text": "rhythm",
+          "depth": 2,
+          "name": "rhythm"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "rhythmic",
+          "depth": 2,
+          "name": "rhythmic"
+        },
+        {
+          "text": "melody",
+          "depth": 2,
+          "name": "melody"
+        },
+        {
+          "text": "melody",
+          "depth": 2,
+          "name": "melody"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "melodic",
+          "depth": 2,
+          "name": "melodic"
+        },
+        {
+          "text": "harmony",
+          "depth": 2,
+          "name": "harmony"
+        },
+        {
+          "text": "harmony / harmonics",
+          "depth": 2,
+          "name": "harmony / harmonics"
+        },
+        {
+          "text": "harmonise",
+          "depth": 2,
+          "name": "harmonise"
+        },
+        {
+          "text": "harmonious",
+          "depth": 2,
+          "name": "harmonious"
+        },
+        {
+          "text": "tune",
+          "depth": 2,
+          "name": "tune"
+        },
+        {
+          "text": "tune / tuner",
+          "depth": 2,
+          "name": "tune / tuner"
+        },
+        {
+          "text": "tune",
+          "depth": 2,
+          "name": "tune"
+        },
+        {
+          "text": "tuneful",
+          "depth": 2,
+          "name": "tuneful"
+        },
+        {
+          "text": "rehearse",
+          "depth": 2,
+          "name": "rehearse"
+        },
+        {
+          "text": "rehearsal",
+          "depth": 2,
+          "name": "rehearsal"
+        },
+        {
+          "text": "rehearse",
+          "depth": 2,
+          "name": "rehearse"
+        },
+        {
+          "text": "rehearsed",
+          "depth": 2,
+          "name": "rehearsed"
+        },
+        {
+          "text": "conduct",
+          "depth": 2,
+          "name": "conduct"
+        },
+        {
+          "text": "conductor",
+          "depth": 2,
+          "name": "conductor"
+        },
+        {
+          "text": "conduct",
+          "depth": 2,
+          "name": "conduct"
+        },
+        {
+          "text": "conducted",
+          "depth": 2,
+          "name": "conducted"
+        },
+        {
+          "text": "record",
+          "depth": 2,
+          "name": "record"
+        },
+        {
+          "text": "recording / record",
+          "depth": 2,
+          "name": "recording / record"
+        },
+        {
+          "text": "record",
+          "depth": 2,
+          "name": "record"
+        },
+        {
+          "text": "recorded",
+          "depth": 2,
+          "name": "recorded"
+        },
+        {
+          "text": "amplify",
+          "depth": 2,
+          "name": "amplify"
+        },
+        {
+          "text": "amplification / amplifier",
+          "depth": 2,
+          "name": "amplification / amplifier"
+        },
+        {
+          "text": "amplify",
+          "depth": 2,
+          "name": "amplify"
+        },
+        {
+          "text": "amplified",
+          "depth": 2,
+          "name": "amplified"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "547:1852",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The music room has __________ walls so the sound doesn't travel.",
+          "depth": 1,
+          "name": "1. The music room has __________ walls so the sound doesn't travel."
+        },
+        {
+          "text": "2.  She played a beautiful __________ on the piano.",
+          "depth": 1,
+          "name": "2. She played a beautiful __________ on the piano."
+        },
+        {
+          "text": "3.  The __________ leads the orchestra and keeps everyone in time.",
+          "depth": 1,
+          "name": "3. The __________ leads the orchestra and keeps everyone in time."
+        },
+        {
+          "text": "4.  We need to __________ our piece before the concert.",
+          "depth": 1,
+          "name": "4. We need to __________ our piece before the concert."
+        },
+        {
+          "text": "5.  He keeps a steady __________ on the drums.",
+          "depth": 1,
+          "name": "5. He keeps a steady __________ on the drums."
+        },
+        {
+          "text": "6.  The guitar was out of __________, so I had to adjust the strings.",
+          "depth": 1,
+          "name": "6. The guitar was out of __________, so I had to adjust the strings."
+        },
+        {
+          "text": "7.  A __________ is a note worth one beat in music.",
+          "depth": 1,
+          "name": "7. A __________ is a note worth one beat in music."
+        },
+        {
+          "text": "8.  The school __________ is next Friday evening.",
+          "depth": 1,
+          "name": "8. The school __________ is next Friday evening."
+        },
+        {
+          "text": "9.  Musical __________ tells you which notes to play and how long.",
+          "depth": 1,
+          "name": "9. Musical __________ tells you which notes to play and how long."
+        },
+        {
+          "text": "10. She __________ a new song for the end-of-year show.",
+          "depth": 1,
+          "name": "10. She __________ a new song for the end-of-year show."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. soundproof  2. melody  3. conductor  4. rehearse  5. beat  6. tune  7. crotchet  8. concert  9. notation  10. composed",
+          "depth": 2,
+          "name": "1. soundproof 2. melody 3. conductor 4. rehearse 5. beat 6. tune 7. crotchet 8. concert 9. notation 10. composed"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "547:1870",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "🇬🇧 vs 🇺🇸 Music Terminology",
+          "depth": 2,
+          "name": "🇬🇧 vs 🇺🇸 Music Terminology"
+        },
+        {
+          "text": "British: 'crotchet' / American: 'quarter note'. British: 'minim' / American: 'half note'. British: 'semibreve' / American: 'whole note'. British: 'quaver' / American: 'eighth note'. Both systems are used in music education.",
+          "depth": 2,
+          "name": "British: 'crotchet' / American: 'quarter note'. British: 'minim' / American: 'half note'. British: 'semibreve' / American: 'whole note'. British: 'quaver' / American: 'eighth note'. Both systems are used in music education."
+        },
+        {
+          "text": "Music in British Schools",
+          "depth": 2,
+          "name": "Music in British Schools"
+        },
+        {
+          "text": "Music is part of the National Curriculum in England until age 14. Many schools have orchestras, choirs, and bands. Students can take GCSE and A-level Music exams. Peripatetic teachers visit schools to give individual instrument lessons.",
+          "depth": 2,
+          "name": "Music is part of the National Curriculum in England until age 14. Many schools have orchestras, choirs, and bands. Students can take GCSE and A-level Music exams. Peripatetic teachers visit schools to give individual instrument lessons."
+        },
+        {
+          "text": "The Proms",
+          "depth": 2,
+          "name": "The Proms"
+        },
+        {
+          "text": "The BBC Proms (short for 'Promenade Concerts') is an annual summer festival of classical music held at the Royal Albert Hall in London. The Last Night of the Proms is a famous event broadcast on TV worldwide.",
+          "depth": 2,
+          "name": "The BBC Proms (short for 'Promenade Concerts') is an annual summer festival of classical music held at the Royal Albert Hall in London. The Last Night of the Proms is a famous event broadcast on TV worldwide."
+        },
+        {
+          "text": "Genres in English",
+          "depth": 2,
+          "name": "Genres in English"
+        },
+        {
+          "text": "Common music genre names in English: pop, rock, jazz, classical, hip-hop, R&B, folk, country, electronic, reggae. 'Indie' means independent — music produced outside major record labels.",
+          "depth": 2,
+          "name": "Common music genre names in English: pop, rock, jazz, classical, hip-hop, R&B, folk, country, electronic, reggae. 'Indie' means independent — music produced outside major record labels."
+        },
+        {
+          "text": "Play vs Listen",
+          "depth": 2,
+          "name": "Play vs Listen"
+        },
+        {
+          "text": "'Play an instrument' (active) vs 'listen to music' (passive). Note: 'listen to' always takes 'to': 'I listen to jazz', never 'I listen jazz'. But: 'I heard a song on the radio' (no 'to').",
+          "depth": 2,
+          "name": "'Play an instrument' (active) vs 'listen to music' (passive). Note: 'listen to' always takes 'to': 'I listen to jazz', never 'I listen jazz'. But: 'I heard a song on the radio' (no 'to')."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "547:1889",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "guitar",
+          "depth": 2,
+          "name": "guitar"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "acoustic ~, electric ~, ~ strings",
+          "depth": 2,
+          "name": "acoustic ~, electric ~, ~ strings"
+        },
+        {
+          "text": "piano",
+          "depth": 2,
+          "name": "piano"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "play the ~, ~ keys, grand ~",
+          "depth": 2,
+          "name": "play the ~, ~ keys, grand ~"
+        },
+        {
+          "text": "drums",
+          "depth": 2,
+          "name": "drums"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "play the ~, ~ kit, ~ stick",
+          "depth": 2,
+          "name": "play the ~, ~ kit, ~ stick"
+        },
+        {
+          "text": "rhythm",
+          "depth": 2,
+          "name": "rhythm"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "steady ~, ~ section, keep the ~",
+          "depth": 2,
+          "name": "steady ~, ~ section, keep the ~"
+        },
+        {
+          "text": "melody",
+          "depth": 2,
+          "name": "melody"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "play a ~, simple ~, ~ line",
+          "depth": 2,
+          "name": "play a ~, simple ~, ~ line"
+        },
+        {
+          "text": "conductor",
+          "depth": 2,
+          "name": "conductor"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "orchestra ~, ~ baton, ~ stand",
+          "depth": 2,
+          "name": "orchestra ~, ~ baton, ~ stand"
+        },
+        {
+          "text": "rehearsal",
+          "depth": 2,
+          "name": "rehearsal"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ room, dress ~, band ~",
+          "depth": 2,
+          "name": "~ room, dress ~, band ~"
+        },
+        {
+          "text": "concert",
+          "depth": 2,
+          "name": "concert"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "school ~, live ~, ~ hall",
+          "depth": 2,
+          "name": "school ~, live ~, ~ hall"
+        },
+        {
+          "text": "notation",
+          "depth": 2,
+          "name": "notation"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "musical ~, ~ system, read ~",
+          "depth": 2,
+          "name": "musical ~, ~ system, read ~"
+        },
+        {
+          "text": "microphone",
+          "depth": 2,
+          "name": "microphone"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "speak into a ~, wireless ~, ~ stand",
+          "depth": 2,
+          "name": "speak into a ~, wireless ~, ~ stand"
+        }
+      ]
+    }
+  }
+}

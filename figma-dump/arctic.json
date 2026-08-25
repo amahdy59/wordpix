@@ -1,0 +1,1699 @@
+{
+  "unitId": "arctic",
+  "name": "The Arctic",
+  "subtopics": [
+    {
+      "id": "arctic-animals",
+      "title": "Arctic Animals",
+      "wordIds": [
+        "polar-bear",
+        "arctic-fox",
+        "walrus",
+        "seal",
+        "penguin",
+        "snowy-owl",
+        "reindeer",
+        "arctic-hare",
+        "narwhal",
+        "beluga-whale",
+        "puffin",
+        "lemming"
+      ]
+    },
+    {
+      "id": "ice-snow",
+      "title": "Ice & Snow",
+      "wordIds": [
+        "iceberg",
+        "glacier",
+        "ice-sheet",
+        "ice-cap",
+        "snowfield",
+        "frost",
+        "icicle",
+        "snowflake",
+        "slush",
+        "pack-ice",
+        "crevasse",
+        "ice-cave"
+      ]
+    },
+    {
+      "id": "arctic-landscape",
+      "title": "Arctic Landscape",
+      "wordIds": [
+        "tundra",
+        "fjord",
+        "frozen-lake",
+        "mountain",
+        "valley",
+        "coastline",
+        "peninsula",
+        "island",
+        "bay",
+        "cliff"
+      ]
+    },
+    {
+      "id": "arctic-clothing",
+      "title": "Arctic Clothing",
+      "wordIds": [
+        "parka",
+        "snow-boots",
+        "fur-hat",
+        "mittens",
+        "scarf",
+        "thermal-underwear",
+        "goggles",
+        "face-mask",
+        "snow-pants",
+        "wool-socks"
+      ]
+    },
+    {
+      "id": "arctic-transport",
+      "title": "Arctic Transport",
+      "wordIds": [
+        "dog-sled",
+        "snowmobile",
+        "ice-breaker",
+        "kayak",
+        "skis",
+        "snowshoes",
+        "helicopter",
+        "research-vessel",
+        "sled",
+        "toboggan"
+      ]
+    },
+    {
+      "id": "arctic-life",
+      "title": "Arctic Life",
+      "wordIds": [
+        "igloo",
+        "research-station",
+        "northern-lights",
+        "midnight-sun",
+        "ice-fishing",
+        "campfire",
+        "telescope",
+        "flag",
+        "weather-station",
+        "satellite-dish",
+        "whale",
+        "permafrost",
+        "snow",
+        "aurora",
+        "snowshoe",
+        "expedition",
+        "compass",
+        "icebreaker"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "polar-bear",
+      "label": "Polar Bear",
+      "ipa": "/ˈpoʊlər bɛər/",
+      "cefr": "B2",
+      "imageNodeId": "45:2843"
+    },
+    {
+      "kind": "card",
+      "id": "arctic-fox",
+      "label": "Arctic Fox",
+      "ipa": "/ˈɑːrktɪk fɒks/",
+      "cefr": "B2",
+      "imageNodeId": "45:2847"
+    },
+    {
+      "kind": "card",
+      "id": "walrus",
+      "label": "Walrus",
+      "ipa": "/ˈwɔːlrəs/",
+      "cefr": "B1",
+      "imageNodeId": "45:2851"
+    },
+    {
+      "kind": "card",
+      "id": "seal",
+      "label": "Seal",
+      "ipa": "/siːl/",
+      "cefr": "B1",
+      "imageNodeId": "45:2855"
+    },
+    {
+      "kind": "card",
+      "id": "penguin",
+      "label": "Penguin",
+      "ipa": "/ˈpɛŋɡwɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:2859"
+    },
+    {
+      "kind": "card",
+      "id": "snowy-owl",
+      "label": "Snowy Owl",
+      "ipa": "/ˈsnoʊi aʊl/",
+      "cefr": "B2",
+      "imageNodeId": "45:2863"
+    },
+    {
+      "kind": "card",
+      "id": "reindeer",
+      "label": "Reindeer",
+      "ipa": "/ˈreɪnˌdɪər/",
+      "cefr": "B1",
+      "imageNodeId": "45:2867"
+    },
+    {
+      "kind": "card",
+      "id": "arctic-hare",
+      "label": "Arctic Hare",
+      "ipa": "/ˈɑːrktɪk hɛər/",
+      "cefr": "B2",
+      "imageNodeId": "45:2871"
+    },
+    {
+      "kind": "card",
+      "id": "narwhal",
+      "label": "Narwhal",
+      "ipa": "/ˈnɑːrwəl/",
+      "cefr": "B1",
+      "imageNodeId": "45:2875"
+    },
+    {
+      "kind": "card",
+      "id": "beluga-whale",
+      "label": "Beluga Whale",
+      "ipa": "/bəˈluːɡə weɪl/",
+      "cefr": "B2",
+      "imageNodeId": "45:2879"
+    },
+    {
+      "kind": "card",
+      "id": "puffin",
+      "label": "Puffin",
+      "ipa": "/ˈpʌfɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:2883"
+    },
+    {
+      "kind": "card",
+      "id": "lemming",
+      "label": "Lemming",
+      "ipa": "/ˈlɛmɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "45:2887"
+    },
+    {
+      "kind": "card",
+      "id": "iceberg",
+      "label": "Iceberg",
+      "ipa": "/ˈaɪsˌbɜːrɡ/",
+      "cefr": "B1",
+      "imageNodeId": "45:2896"
+    },
+    {
+      "kind": "card",
+      "id": "glacier",
+      "label": "Glacier",
+      "ipa": "/ˈɡleɪʃər/",
+      "cefr": "B1",
+      "imageNodeId": "45:2900"
+    },
+    {
+      "kind": "card",
+      "id": "ice-sheet",
+      "label": "Ice Sheet",
+      "ipa": "/aɪs ʃiːt/",
+      "cefr": "B2",
+      "imageNodeId": "45:2904"
+    },
+    {
+      "kind": "card",
+      "id": "ice-cap",
+      "label": "Ice Cap",
+      "ipa": "/aɪs kæp/",
+      "cefr": "B2",
+      "imageNodeId": "45:2908"
+    },
+    {
+      "kind": "card",
+      "id": "snowfield",
+      "label": "Snowfield",
+      "ipa": "/ˈsnoʊˌfiːld/",
+      "cefr": "B1",
+      "imageNodeId": "45:2912"
+    },
+    {
+      "kind": "card",
+      "id": "frost",
+      "label": "Frost",
+      "ipa": "/frɒst/",
+      "cefr": "B1",
+      "imageNodeId": "45:2916"
+    },
+    {
+      "kind": "card",
+      "id": "icicle",
+      "label": "Icicle",
+      "ipa": "/ˈaɪsɪkəl/",
+      "cefr": "B1",
+      "imageNodeId": "45:2920"
+    },
+    {
+      "kind": "card",
+      "id": "snowflake",
+      "label": "Snowflake",
+      "ipa": "/ˈsnoʊˌfleɪk/",
+      "cefr": "B1",
+      "imageNodeId": "45:2924"
+    },
+    {
+      "kind": "card",
+      "id": "slush",
+      "label": "Slush",
+      "ipa": "/slʌʃ/",
+      "cefr": "B1",
+      "imageNodeId": "45:2928"
+    },
+    {
+      "kind": "card",
+      "id": "pack-ice",
+      "label": "Pack Ice",
+      "ipa": "/pæk aɪs/",
+      "cefr": "B2",
+      "imageNodeId": "45:2932"
+    },
+    {
+      "kind": "card",
+      "id": "crevasse",
+      "label": "Crevasse",
+      "ipa": "/krɪˈvæs/",
+      "cefr": "B1",
+      "imageNodeId": "45:2936"
+    },
+    {
+      "kind": "card",
+      "id": "ice-cave",
+      "label": "Ice Cave",
+      "ipa": "/aɪs keɪv/",
+      "cefr": "B2",
+      "imageNodeId": "45:2940"
+    },
+    {
+      "kind": "card",
+      "id": "tundra",
+      "label": "Tundra",
+      "ipa": "/ˈtʌndrə/",
+      "cefr": "B1",
+      "imageNodeId": "45:2949"
+    },
+    {
+      "kind": "card",
+      "id": "fjord",
+      "label": "Fjord",
+      "ipa": "/fjɔːrd/",
+      "cefr": "B1",
+      "imageNodeId": "45:2953"
+    },
+    {
+      "kind": "card",
+      "id": "frozen-lake",
+      "label": "Frozen Lake",
+      "ipa": "/ˈfroʊzən leɪk/",
+      "cefr": "B2",
+      "imageNodeId": "45:2957"
+    },
+    {
+      "kind": "card",
+      "id": "mountain",
+      "label": "Mountain",
+      "ipa": "/ˈmaʊntɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:2961"
+    },
+    {
+      "kind": "card",
+      "id": "valley",
+      "label": "Valley",
+      "ipa": "/ˈvæli/",
+      "cefr": "B1",
+      "imageNodeId": "45:2965"
+    },
+    {
+      "kind": "card",
+      "id": "coastline",
+      "label": "Coastline",
+      "ipa": "/ˈkoʊstˌlaɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:2969"
+    },
+    {
+      "kind": "card",
+      "id": "peninsula",
+      "label": "Peninsula",
+      "ipa": "/pəˈnɪnsjʊlə/",
+      "cefr": "B1",
+      "imageNodeId": "45:2973"
+    },
+    {
+      "kind": "card",
+      "id": "island",
+      "label": "Island",
+      "ipa": "/ˈaɪlənd/",
+      "cefr": "B1",
+      "imageNodeId": "45:2977"
+    },
+    {
+      "kind": "card",
+      "id": "bay",
+      "label": "Bay",
+      "ipa": "/beɪ/",
+      "cefr": "B1",
+      "imageNodeId": "45:2981"
+    },
+    {
+      "kind": "card",
+      "id": "cliff",
+      "label": "Cliff",
+      "ipa": "/klɪf/",
+      "cefr": "B1",
+      "imageNodeId": "45:2985"
+    },
+    {
+      "kind": "card",
+      "id": "parka",
+      "label": "Parka",
+      "ipa": "/ˈpɑːrkə/",
+      "cefr": "B1",
+      "imageNodeId": "45:2994"
+    },
+    {
+      "kind": "card",
+      "id": "snow-boots",
+      "label": "Snow Boots",
+      "ipa": "/snoʊ buːts/",
+      "cefr": "B2",
+      "imageNodeId": "45:2998"
+    },
+    {
+      "kind": "card",
+      "id": "fur-hat",
+      "label": "Fur Hat",
+      "ipa": "/fɜːr hæt/",
+      "cefr": "B2",
+      "imageNodeId": "45:3002"
+    },
+    {
+      "kind": "card",
+      "id": "mittens",
+      "label": "Mittens",
+      "ipa": "/ˈmɪtənz/",
+      "cefr": "B1",
+      "imageNodeId": "45:3006"
+    },
+    {
+      "kind": "card",
+      "id": "scarf",
+      "label": "Scarf",
+      "ipa": "/skɑːrf/",
+      "cefr": "B1",
+      "imageNodeId": "45:3010"
+    },
+    {
+      "kind": "card",
+      "id": "thermal-underwear",
+      "label": "Thermal Underwear",
+      "ipa": "/ˈθɜːrməl ˈʌndərˌwɛər/",
+      "cefr": "C1",
+      "imageNodeId": "45:3014"
+    },
+    {
+      "kind": "card",
+      "id": "goggles",
+      "label": "Goggles",
+      "ipa": "/ˈɡɒɡəlz/",
+      "cefr": "B1",
+      "imageNodeId": "45:3018"
+    },
+    {
+      "kind": "card",
+      "id": "face-mask",
+      "label": "Face Mask",
+      "ipa": "/feɪs mæsk/",
+      "cefr": "B2",
+      "imageNodeId": "45:3022"
+    },
+    {
+      "kind": "card",
+      "id": "snow-pants",
+      "label": "Snow Pants",
+      "ipa": "/snoʊ pænts/",
+      "cefr": "B2",
+      "imageNodeId": "45:3026"
+    },
+    {
+      "kind": "card",
+      "id": "wool-socks",
+      "label": "Wool Socks",
+      "ipa": "/wʊl sɒks/",
+      "cefr": "B2",
+      "imageNodeId": "45:3030"
+    },
+    {
+      "kind": "card",
+      "id": "dog-sled",
+      "label": "Dog Sled",
+      "ipa": "/dɒɡ slɛd/",
+      "cefr": "B2",
+      "imageNodeId": "45:3039"
+    },
+    {
+      "kind": "card",
+      "id": "snowmobile",
+      "label": "Snowmobile",
+      "ipa": "/ˈsnoʊməˌbiːl/",
+      "cefr": "B2",
+      "imageNodeId": "45:3043"
+    },
+    {
+      "kind": "card",
+      "id": "ice-breaker",
+      "label": "Ice Breaker",
+      "ipa": "/aɪs ˈbreɪkər/",
+      "cefr": "B2",
+      "imageNodeId": "45:3047"
+    },
+    {
+      "kind": "card",
+      "id": "kayak",
+      "label": "Kayak",
+      "ipa": "/ˈkaɪˌæk/",
+      "cefr": "B1",
+      "imageNodeId": "45:3051"
+    },
+    {
+      "kind": "card",
+      "id": "skis",
+      "label": "Skis",
+      "ipa": "/skiːz/",
+      "cefr": "B1",
+      "imageNodeId": "45:3055"
+    },
+    {
+      "kind": "card",
+      "id": "snowshoes",
+      "label": "Snowshoes",
+      "ipa": "/ˈsnoʊˌʃuːz/",
+      "cefr": "B1",
+      "imageNodeId": "45:3059"
+    },
+    {
+      "kind": "card",
+      "id": "helicopter",
+      "label": "Helicopter",
+      "ipa": "/ˈhɛlɪˌkɒptər/",
+      "cefr": "B2",
+      "imageNodeId": "45:3063"
+    },
+    {
+      "kind": "card",
+      "id": "research-vessel",
+      "label": "Research Vessel",
+      "ipa": "/rɪˈsɜːrtʃ ˈvɛsəl/",
+      "cefr": "C1",
+      "imageNodeId": "45:3067"
+    },
+    {
+      "kind": "card",
+      "id": "sled",
+      "label": "Sled",
+      "ipa": "/slɛd/",
+      "cefr": "B1",
+      "imageNodeId": "45:3071"
+    },
+    {
+      "kind": "card",
+      "id": "toboggan",
+      "label": "Toboggan",
+      "ipa": "/təˈbɒɡən/",
+      "cefr": "B1",
+      "imageNodeId": "45:3075"
+    },
+    {
+      "kind": "card",
+      "id": "igloo",
+      "label": "Igloo",
+      "ipa": "/ˈɪɡluː/",
+      "cefr": "B1",
+      "imageNodeId": "45:3084"
+    },
+    {
+      "kind": "card",
+      "id": "research-station",
+      "label": "Research Station",
+      "ipa": "/rɪˈsɜːrtʃ ˈsteɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "45:3088"
+    },
+    {
+      "kind": "card",
+      "id": "northern-lights",
+      "label": "Northern Lights",
+      "ipa": "/ˈnɔːrðərn laɪts/",
+      "cefr": "C1",
+      "imageNodeId": "45:3092"
+    },
+    {
+      "kind": "card",
+      "id": "midnight-sun",
+      "label": "Midnight Sun",
+      "ipa": "/ˈmɪdˌnaɪt sʌn/",
+      "cefr": "B2",
+      "imageNodeId": "45:3096"
+    },
+    {
+      "kind": "card",
+      "id": "ice-fishing",
+      "label": "Ice Fishing",
+      "ipa": "/aɪs ˈfɪʃɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "45:3100"
+    },
+    {
+      "kind": "card",
+      "id": "campfire",
+      "label": "Campfire",
+      "ipa": "/ˈkæmpˌfaɪər/",
+      "cefr": "B1",
+      "imageNodeId": "45:3104"
+    },
+    {
+      "kind": "card",
+      "id": "telescope",
+      "label": "Telescope",
+      "ipa": "/ˈtɛlɪˌskoʊp/",
+      "cefr": "B1",
+      "imageNodeId": "45:3108"
+    },
+    {
+      "kind": "card",
+      "id": "flag",
+      "label": "Flag",
+      "ipa": "/flæɡ/",
+      "cefr": "B1",
+      "imageNodeId": "45:3112"
+    },
+    {
+      "kind": "card",
+      "id": "weather-station",
+      "label": "Weather Station",
+      "ipa": "/ˈwɛðər ˈsteɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "45:3116"
+    },
+    {
+      "kind": "card",
+      "id": "satellite-dish",
+      "label": "Satellite Dish",
+      "ipa": "/ˈsætəˌlaɪt dɪʃ/",
+      "cefr": "B2",
+      "imageNodeId": "45:3120"
+    },
+    {
+      "kind": "card",
+      "id": "whale",
+      "label": "Whale",
+      "ipa": "/weɪl/",
+      "cefr": "B1",
+      "imageNodeId": "39:4847"
+    },
+    {
+      "kind": "card",
+      "id": "permafrost",
+      "label": "Permafrost",
+      "ipa": "/ˈpɜːrməˌfrɒst/",
+      "cefr": "B2",
+      "imageNodeId": "39:4874"
+    },
+    {
+      "kind": "card",
+      "id": "snow",
+      "label": "Snow",
+      "ipa": "/snoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "39:4878"
+    },
+    {
+      "kind": "card",
+      "id": "aurora",
+      "label": "Aurora",
+      "ipa": "/ɔːˈrɔːrə/",
+      "cefr": "B1",
+      "imageNodeId": "39:4886"
+    },
+    {
+      "kind": "card",
+      "id": "snowshoe",
+      "label": "Snowshoe",
+      "ipa": "/ˈsnoʊˌʃuː/",
+      "cefr": "B1",
+      "imageNodeId": "39:4905"
+    },
+    {
+      "kind": "card",
+      "id": "expedition",
+      "label": "Expedition",
+      "ipa": "/ˌɛkspɪˈdɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "39:4909"
+    },
+    {
+      "kind": "card",
+      "id": "compass",
+      "label": "Compass",
+      "ipa": "/ˈkʌmpəs/",
+      "cefr": "B1",
+      "imageNodeId": "39:4913"
+    },
+    {
+      "kind": "card",
+      "id": "icebreaker",
+      "label": "Icebreaker",
+      "ipa": "/ˈaɪsˌbreɪkər/",
+      "cefr": "B2",
+      "imageNodeId": "39:4917"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "549:539",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "549:541",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1+ · Topic: The Arctic",
+          "depth": 1,
+          "name": "Level: B1+ · Topic: The Arctic"
+        },
+        {
+          "text": "The Frozen World — Life in the Arctic\n\nThe Arctic is one of the coldest places on Earth. Temperatures can drop below minus forty degrees, and for months in winter, there is no sunlight at all. Yet this frozen world is home to extraordinary animals, dramatic landscapes, and communities that have lived here for thousands of years.\n\nThe landscape is shaped by ice and snow. A glacier — a slow-moving river of ice — carves through mountains over centuries. An iceberg — a huge block of ice that has broken off a glacier — floats in the dark water, with most of its mass hidden below the surface. An ice sheet covers Greenland, kilometres thick in places. Pack ice drifts on the ocean, breaking apart in summer and refreezing in winter. A snowfield stretches to the horizon, white and flat. Icicles hang from cliffs. Frost coats every surface. Snowflakes fall silently. Slush forms where snow begins to melt. A crevasse — a deep crack in a glacier — is one of the most dangerous features for travellers.\n\nBeyond the ice, the tundra — a vast, treeless plain — supports low plants, mosses, and grasses during the brief summer. A fjord — a long, narrow inlet carved by a glacier — cuts deep into the coastline. Frozen lakes, mountains, valleys, peninsulas, islands, bays, and steep cliffs define the Arctic geography.\n\nArctic animals are built for the cold. A polar bear — the largest land predator on Earth — hunts seals on the pack ice. Its white fur provides camouflage against the snow. An Arctic fox changes colour: white in winter, brown in summer. A walrus rests on the ice, its long tusks used for climbing and fighting. Seals swim beneath the ice and breathe through holes they keep open. A narwhal — sometimes called the 'unicorn of the sea' — has a long, spiralling tusk. A beluga whale is pure white and communicates with clicks and whistles. A snowy owl hunts lemmings across the tundra. A puffin nests on cliffsides. Reindeer travel in herds across the tundra, searching for food beneath the snow. An Arctic hare has thick fur and powerful back legs for running across snow.\n\nSurvival clothing is essential. A parka — a thick, hooded jacket — is the most important piece. Snow boots keep feet dry and warm. A fur hat covers the ears. Mittens are warmer than gloves because the fingers share heat. A scarf protects the face from wind. Thermal underwear is worn as a base layer. Goggles protect the eyes from snow blindness. A face mask shields the skin. Snow pants and wool socks complete the outfit.\n\nTravel in the Arctic requires special vehicles. A dog sled — pulled by a team of dogs — is the traditional method. A snowmobile is faster but needs fuel. An icebreaker — a ship designed to push through pack ice — opens sea routes. A kayak is used for fishing in calm fjords. Skis allow quick movement across snowfields.\n\nThe Arctic is changing. Glaciers are shrinking. Pack ice is thinner. Animals like the polar bear are losing their hunting grounds. Understanding the Arctic — its beauty, its dangers, and its fragility — has never been more important.",
+          "depth": 1,
+          "name": "The Frozen World — Life in the Arctic The Arctic is one of the coldest places on Earth. Temperatures can drop below minus forty degrees, and for months in winter, there is no sunlight at all. Yet this frozen world is home to extraordinary animals, dramatic landscapes, and communities that have lived here for thousands of years. The landscape is shaped by ice and snow. A glacier — a slow-moving river of ice — carves through mountains over centuries. An iceberg — a huge block of ice that has broken off a glacier — floats in the dark water, with most of its mass hidden below the surface. An ice sheet covers Greenland, kilometres thick in places. Pack ice drifts on the ocean, breaking apart in summer and refreezing in winter. A snowfield stretches to the horizon, white and flat. Icicles hang from cliffs. Frost coats every surface. Snowflakes fall silently. Slush forms where snow begins to melt. A crevasse — a deep crack in a glacier — is one of the most dangerous features for travellers. Beyond the ice, the tundra — a vast, treeless plain — supports low plants, mosses, and grasses during the brief summer. A fjord — a long, narrow inlet carved by a glacier — cuts deep into the coastline. Frozen lakes, mountains, valleys, peninsulas, islands, bays, and steep cliffs define the Arctic geography. Arctic animals are built for the cold. A polar bear — the largest land predator on Earth — hunts seals on the pack ice. Its white fur provides camouflage against the snow. An Arctic fox changes colour: white in winter, brown in summer. A walrus rests on the ice, its long tusks used for climbing and fighting. Seals swim beneath the ice and breathe through holes they keep open. A narwhal — sometimes called the 'unicorn of the sea' — has a long, spiralling tusk. A beluga whale is pure white and communicates with clicks and whistles. A snowy owl hunts lemmings across the tundra. A puffin nests on cliffsides. Reindeer travel in herds across the tundra, searching for food beneath the snow. An Arctic hare has thick fur and powerful back legs for running across snow. Survival clothing is essential. A parka — a thick, hooded jacket — is the most important piece. Snow boots keep feet dry and warm. A fur hat covers the ears. Mittens are warmer than gloves because the fingers share heat. A scarf protects the face from wind. Thermal underwear is worn as a base layer. Goggles protect the eyes from snow blindness. A face mask shields the skin. Snow pants and wool socks complete the outfit. Travel in the Arctic requires special vehicles. A dog sled — pulled by a team of dogs — is the traditional method. A snowmobile is faster but needs fuel. An icebreaker — a ship designed to push through pack ice — opens sea routes. A kayak is used for fishing in calm fjords. Skis allow quick movement across snowfields. The Arctic is changing. Glaciers are shrinking. Pack ice is thinner. Animals like the polar bear are losing their hunting grounds. Understanding the Arctic — its beauty, its dangers, and its fragility — has never been more important."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What are the differences between a glacier, an iceberg, and pack ice?",
+          "depth": 1,
+          "name": "1. What are the differences between a glacier, an iceberg, and pack ice?"
+        },
+        {
+          "text": "2. How do Arctic animals survive the extreme cold? Give three examples from the passage.",
+          "depth": 1,
+          "name": "2. How do Arctic animals survive the extreme cold? Give three examples from the passage."
+        },
+        {
+          "text": "3. What clothing do you need to survive in the Arctic? Name five items and explain why each is important.",
+          "depth": 1,
+          "name": "3. What clothing do you need to survive in the Arctic? Name five items and explain why each is important."
+        },
+        {
+          "text": "4. What types of transport are used in the Arctic? Why is each one needed?",
+          "depth": 1,
+          "name": "4. What types of transport are used in the Arctic? Why is each one needed?"
+        },
+        {
+          "text": "5. The passage says 'Understanding the Arctic has never been more important.' Why?",
+          "depth": 1,
+          "name": "5. The passage says 'Understanding the Arctic has never been more important.' Why?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "549:554",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "break the ice",
+          "depth": 2,
+          "name": "break the ice"
+        },
+        {
+          "text": "start a conversation or reduce tension in a social situation",
+          "depth": 2,
+          "name": "start a conversation or reduce tension in a social situation"
+        },
+        {
+          "text": "\"The expedition leader told a joke at dinner to break the ice — nobody had spoken since we crossed the glacier.\"",
+          "depth": 2,
+          "name": "\"The expedition leader told a joke at dinner to break the ice — nobody had spoken since we crossed the glacier.\""
+        },
+        {
+          "text": "the tip of the iceberg",
+          "depth": 2,
+          "name": "the tip of the iceberg"
+        },
+        {
+          "text": "a small visible part of a much larger problem or situation",
+          "depth": 2,
+          "name": "a small visible part of a much larger problem or situation"
+        },
+        {
+          "text": "\"The ice sheet you can see from the coastline is just the tip of the iceberg — most of it is underwater.\"",
+          "depth": 2,
+          "name": "\"The ice sheet you can see from the coastline is just the tip of the iceberg — most of it is underwater.\""
+        },
+        {
+          "text": "put something on ice",
+          "depth": 2,
+          "name": "put something on ice"
+        },
+        {
+          "text": "delay or postpone something",
+          "depth": 2,
+          "name": "delay or postpone something"
+        },
+        {
+          "text": "\"The research team had to put their fieldwork on ice when a blizzard hit the tundra.\"",
+          "depth": 2,
+          "name": "\"The research team had to put their fieldwork on ice when a blizzard hit the tundra.\""
+        },
+        {
+          "text": "give someone the cold shoulder",
+          "depth": 2,
+          "name": "give someone the cold shoulder"
+        },
+        {
+          "text": "deliberately ignore or be unfriendly to someone",
+          "depth": 2,
+          "name": "deliberately ignore or be unfriendly to someone"
+        },
+        {
+          "text": "\"When I suggested we camp near the crevasse, the guide gave me the cold shoulder and walked away.\"",
+          "depth": 2,
+          "name": "\"When I suggested we camp near the crevasse, the guide gave me the cold shoulder and walked away.\""
+        },
+        {
+          "text": "in cold blood",
+          "depth": 2,
+          "name": "in cold blood"
+        },
+        {
+          "text": "deliberately and without emotion",
+          "depth": 2,
+          "name": "deliberately and without emotion"
+        },
+        {
+          "text": "\"The Arctic fox hunts lemmings in cold blood — patient, silent, and precise.\"",
+          "depth": 2,
+          "name": "\"The Arctic fox hunts lemmings in cold blood — patient, silent, and precise.\""
+        },
+        {
+          "text": "snowed under",
+          "depth": 2,
+          "name": "snowed under"
+        },
+        {
+          "text": "overwhelmed with too much work",
+          "depth": 2,
+          "name": "overwhelmed with too much work"
+        },
+        {
+          "text": "\"After a week of observing polar bears, the scientists were snowed under with data to analyse.\"",
+          "depth": 2,
+          "name": "\"After a week of observing polar bears, the scientists were snowed under with data to analyse.\""
+        },
+        {
+          "text": "on thin ice",
+          "depth": 2,
+          "name": "on thin ice"
+        },
+        {
+          "text": "in a risky or dangerous situation",
+          "depth": 2,
+          "name": "in a risky or dangerous situation"
+        },
+        {
+          "text": "\"The walrus colony was on thin ice — literally — as the pack ice continued to melt beneath them.\"",
+          "depth": 2,
+          "name": "\"The walrus colony was on thin ice — literally — as the pack ice continued to melt beneath them.\""
+        },
+        {
+          "text": "when hell freezes over",
+          "depth": 2,
+          "name": "when hell freezes over"
+        },
+        {
+          "text": "never (used for emphasis)",
+          "depth": 2,
+          "name": "never (used for emphasis)"
+        },
+        {
+          "text": "\"Will I go swimming in a fjord in January? When hell freezes over!\"",
+          "depth": 2,
+          "name": "\"Will I go swimming in a fjord in January? When hell freezes over!\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "549:590",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A researcher briefing a new team member at an Arctic research station near a glacier",
+          "depth": 1,
+          "name": "Scene: A researcher briefing a new team member at an Arctic research station near a glacier"
+        },
+        {
+          "text": "Researcher:",
+          "depth": 2,
+          "name": "Researcher:"
+        },
+        {
+          "text": "Welcome to the station. First rule: never go near the glacier alone. Crevasses can be hidden under fresh snow.",
+          "depth": 2,
+          "name": "Welcome to the station. First rule: never go near the glacier alone. Crevasses can be hidden under fresh snow."
+        },
+        {
+          "text": "New member:",
+          "depth": 2,
+          "name": "New member:"
+        },
+        {
+          "text": "Understood. What's our main research focus this season?",
+          "depth": 2,
+          "name": "Understood. What's our main research focus this season?"
+        },
+        {
+          "text": "Researcher:",
+          "depth": 2,
+          "name": "Researcher:"
+        },
+        {
+          "text": "Polar bear migration patterns. The pack ice is breaking up earlier each year, which affects their hunting range.",
+          "depth": 2,
+          "name": "Polar bear migration patterns. The pack ice is breaking up earlier each year, which affects their hunting range."
+        },
+        {
+          "text": "New member:",
+          "depth": 2,
+          "name": "New member:"
+        },
+        {
+          "text": "I read that Arctic foxes change colour with the season. Have you seen that here?",
+          "depth": 2,
+          "name": "I read that Arctic foxes change colour with the season. Have you seen that here?"
+        },
+        {
+          "text": "Researcher:",
+          "depth": 2,
+          "name": "Researcher:"
+        },
+        {
+          "text": "Every year. White in winter to blend with the snowfield, brown in summer to match the tundra. Perfect camouflage.",
+          "depth": 2,
+          "name": "Every year. White in winter to blend with the snowfield, brown in summer to match the tundra. Perfect camouflage."
+        },
+        {
+          "text": "New member:",
+          "depth": 2,
+          "name": "New member:"
+        },
+        {
+          "text": "What about the narwhals? I'd love to see one near the fjord.",
+          "depth": 2,
+          "name": "What about the narwhals? I'd love to see one near the fjord."
+        },
+        {
+          "text": "Researcher:",
+          "depth": 2,
+          "name": "Researcher:"
+        },
+        {
+          "text": "We spotted a pod last week near the coastline. They tend to surface where the ice sheet meets open water.",
+          "depth": 2,
+          "name": "We spotted a pod last week near the coastline. They tend to surface where the ice sheet meets open water."
+        },
+        {
+          "text": "New member:",
+          "depth": 2,
+          "name": "New member:"
+        },
+        {
+          "text": "It's incredible how cold it is. My mittens and parka barely feel like enough.",
+          "depth": 2,
+          "name": "It's incredible how cold it is. My mittens and parka barely feel like enough."
+        },
+        {
+          "text": "Researcher:",
+          "depth": 2,
+          "name": "Researcher:"
+        },
+        {
+          "text": "You'll adjust. The frost never really stops, but the layers help. And don't forget your snow boots — the slush near the frozen lake will soak through anything else.",
+          "depth": 2,
+          "name": "You'll adjust. The frost never really stops, but the layers help. And don't forget your snow boots — the slush near the frozen lake will soak through anything else."
+        },
+        {
+          "text": "New member:",
+          "depth": 2,
+          "name": "New member:"
+        },
+        {
+          "text": "What's that bird on the cliff? The one with the colourful beak?",
+          "depth": 2,
+          "name": "What's that bird on the cliff? The one with the colourful beak?"
+        },
+        {
+          "text": "Researcher:",
+          "depth": 2,
+          "name": "Researcher:"
+        },
+        {
+          "text": "A puffin. They nest on the cliffs above the bay. And look — a snowy owl on that icicle-covered ledge. Welcome to the Arctic.",
+          "depth": 2,
+          "name": "A puffin. They nest on the cliffs above the bay. And look — a snowy owl on that icicle-covered ledge. Welcome to the Arctic."
+        },
+        {
+          "text": "Resch:",
+          "depth": 2,
+          "name": "Resch:"
+        },
+        {
+          "text": "It does. Polar bears depend on sea ice to hunt seals. Less ice means less food.",
+          "depth": 2,
+          "name": "It does. Polar bears depend on sea ice to hunt seals. Less ice means less food."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "549:631",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The weather is very much cold today. I need my parka.\"",
+          "depth": 2,
+          "name": "❌ \"The weather is very much cold today. I need my parka.\""
+        },
+        {
+          "text": "✅ \"The weather is very cold today. I need my parka.\"",
+          "depth": 2,
+          "name": "✅ \"The weather is very cold today. I need my parka.\""
+        },
+        {
+          "text": "'Very' + adjective: 'very cold', 'very dangerous.' 'Very much' + verb: 'I very much appreciate it.' Never 'very much cold' — 'very much' doesn't modify adjectives. 'Much' alone modifies comparatives: 'much colder', 'much bigger.'",
+          "depth": 2,
+          "name": "'Very' + adjective: 'very cold', 'very dangerous.' 'Very much' + verb: 'I very much appreciate it.' Never 'very much cold' — 'very much' doesn't modify adjectives. 'Much' alone modifies comparatives: 'much colder', 'much bigger.'"
+        },
+        {
+          "text": "❌ \"The polar bear is more bigger than the Arctic fox.\"",
+          "depth": 2,
+          "name": "❌ \"The polar bear is more bigger than the Arctic fox.\""
+        },
+        {
+          "text": "✅ \"The polar bear is bigger than the Arctic fox.\" / \"...much bigger...\"",
+          "depth": 2,
+          "name": "✅ \"The polar bear is bigger than the Arctic fox.\" / \"...much bigger...\""
+        },
+        {
+          "text": "Never double-mark comparatives: 'bigger' (not *more bigger), 'colder' (not *more colder). Use 'much' or 'far' to intensify: 'much bigger', 'far colder.' 'More' is only for longer adjectives: 'more dangerous', 'more difficult.'",
+          "depth": 2,
+          "name": "Never double-mark comparatives: 'bigger' (not *more bigger), 'colder' (not *more colder). Use 'much' or 'far' to intensify: 'much bigger', 'far colder.' 'More' is only for longer adjectives: 'more dangerous', 'more difficult.'"
+        },
+        {
+          "text": "❌ \"I have never saw a real iceberg before.\"",
+          "depth": 2,
+          "name": "❌ \"I have never saw a real iceberg before.\""
+        },
+        {
+          "text": "✅ \"I have never seen a real iceberg before.\"",
+          "depth": 2,
+          "name": "✅ \"I have never seen a real iceberg before.\""
+        },
+        {
+          "text": "Present perfect uses 'have/has + past participle.' 'See – saw – seen.' 'I have seen' (not *I have saw). 'I saw it yesterday' (past simple — no 'have'). Common errors: 'I have went' → 'I have gone.' 'I have did' → 'I have done.'",
+          "depth": 2,
+          "name": "Present perfect uses 'have/has + past participle.' 'See – saw – seen.' 'I have seen' (not *I have saw). 'I saw it yesterday' (past simple — no 'have'). Common errors: 'I have went' → 'I have gone.' 'I have did' → 'I have done.'"
+        },
+        {
+          "text": "❌ \"There are less polar bears now because of climate change.\"",
+          "depth": 2,
+          "name": "❌ \"There are less polar bears now because of climate change.\""
+        },
+        {
+          "text": "✅ \"There are fewer polar bears now because of climate change.\"",
+          "depth": 2,
+          "name": "✅ \"There are fewer polar bears now because of climate change.\""
+        },
+        {
+          "text": "'Fewer' + countable plural: 'fewer bears', 'fewer icebergs.' 'Less' + uncountable: 'less ice', 'less snow', 'less sunlight.' This fewer/less distinction is important at B1+ and continues to be tested at higher levels.",
+          "depth": 2,
+          "name": "'Fewer' + countable plural: 'fewer bears', 'fewer icebergs.' 'Less' + uncountable: 'less ice', 'less snow', 'less sunlight.' This fewer/less distinction is important at B1+ and continues to be tested at higher levels."
+        },
+        {
+          "text": "❌ \"The Arctic is one of the most coldest places on Earth.\"",
+          "depth": 2,
+          "name": "❌ \"The Arctic is one of the most coldest places on Earth.\""
+        },
+        {
+          "text": "✅ \"The Arctic is one of the coldest places on Earth.\"",
+          "depth": 2,
+          "name": "✅ \"The Arctic is one of the coldest places on Earth.\""
+        },
+        {
+          "text": "Never combine 'most' with '-est': 'the coldest' (not *the most coldest). Use 'the most' with longer adjectives: 'the most beautiful.' Use '-est' with short adjectives: 'the coldest', 'the biggest', 'the fastest.' This is the same rule as 'more' vs. '-er' for comparatives.",
+          "depth": 2,
+          "name": "Never combine 'most' with '-est': 'the coldest' (not *the most coldest). Use 'the most' with longer adjectives: 'the most beautiful.' Use '-est' with short adjectives: 'the coldest', 'the biggest', 'the fastest.' This is the same rule as 'more' vs. '-er' for comparatives."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "549:655",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how Arctic and cold-climate vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how Arctic and cold-climate vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "freeze",
+          "depth": 2,
+          "name": "freeze"
+        },
+        {
+          "text": "freeze / freezer / frost",
+          "depth": 2,
+          "name": "freeze / freezer / frost"
+        },
+        {
+          "text": "freeze",
+          "depth": 2,
+          "name": "freeze"
+        },
+        {
+          "text": "frozen / freezing",
+          "depth": 2,
+          "name": "frozen / freezing"
+        },
+        {
+          "text": "melt",
+          "depth": 2,
+          "name": "melt"
+        },
+        {
+          "text": "melt / melting",
+          "depth": 2,
+          "name": "melt / melting"
+        },
+        {
+          "text": "melt",
+          "depth": 2,
+          "name": "melt"
+        },
+        {
+          "text": "melted / molten",
+          "depth": 2,
+          "name": "melted / molten"
+        },
+        {
+          "text": "insulate",
+          "depth": 2,
+          "name": "insulate"
+        },
+        {
+          "text": "insulation / insulator",
+          "depth": 2,
+          "name": "insulation / insulator"
+        },
+        {
+          "text": "insulate",
+          "depth": 2,
+          "name": "insulate"
+        },
+        {
+          "text": "insulated",
+          "depth": 2,
+          "name": "insulated"
+        },
+        {
+          "text": "hibernate",
+          "depth": 2,
+          "name": "hibernate"
+        },
+        {
+          "text": "hibernation",
+          "depth": 2,
+          "name": "hibernation"
+        },
+        {
+          "text": "hibernate",
+          "depth": 2,
+          "name": "hibernate"
+        },
+        {
+          "text": "hibernating",
+          "depth": 2,
+          "name": "hibernating"
+        },
+        {
+          "text": "migrate",
+          "depth": 2,
+          "name": "migrate"
+        },
+        {
+          "text": "migration / migrant",
+          "depth": 2,
+          "name": "migration / migrant"
+        },
+        {
+          "text": "migrate",
+          "depth": 2,
+          "name": "migrate"
+        },
+        {
+          "text": "migratory",
+          "depth": 2,
+          "name": "migratory"
+        },
+        {
+          "text": "glacial",
+          "depth": 2,
+          "name": "glacial"
+        },
+        {
+          "text": "glacier / glaciation",
+          "depth": 2,
+          "name": "glacier / glaciation"
+        },
+        {
+          "text": "glaciate",
+          "depth": 2,
+          "name": "glaciate"
+        },
+        {
+          "text": "glacial",
+          "depth": 2,
+          "name": "glacial"
+        },
+        {
+          "text": "polar",
+          "depth": 2,
+          "name": "polar"
+        },
+        {
+          "text": "polarity / pole",
+          "depth": 2,
+          "name": "polarity / pole"
+        },
+        {
+          "text": "polarise",
+          "depth": 2,
+          "name": "polarise"
+        },
+        {
+          "text": "polar",
+          "depth": 2,
+          "name": "polar"
+        },
+        {
+          "text": "thaw",
+          "depth": 2,
+          "name": "thaw"
+        },
+        {
+          "text": "thaw",
+          "depth": 2,
+          "name": "thaw"
+        },
+        {
+          "text": "thaw",
+          "depth": 2,
+          "name": "thaw"
+        },
+        {
+          "text": "thawed",
+          "depth": 2,
+          "name": "thawed"
+        },
+        {
+          "text": "camouflage",
+          "depth": 2,
+          "name": "camouflage"
+        },
+        {
+          "text": "camouflage",
+          "depth": 2,
+          "name": "camouflage"
+        },
+        {
+          "text": "camouflage",
+          "depth": 2,
+          "name": "camouflage"
+        },
+        {
+          "text": "camouflaged",
+          "depth": 2,
+          "name": "camouflaged"
+        },
+        {
+          "text": "conserve",
+          "depth": 2,
+          "name": "conserve"
+        },
+        {
+          "text": "conservation / conservationist",
+          "depth": 2,
+          "name": "conservation / conservationist"
+        },
+        {
+          "text": "conserve",
+          "depth": 2,
+          "name": "conserve"
+        },
+        {
+          "text": "conserved",
+          "depth": 2,
+          "name": "conserved"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "549:715",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A __________ is a slow-moving river of ice that carves through mountains.",
+          "depth": 1,
+          "name": "1. A __________ is a slow-moving river of ice that carves through mountains."
+        },
+        {
+          "text": "2.  The __________ bear is the largest land predator and hunts seals on the ice.",
+          "depth": 1,
+          "name": "2. The __________ bear is the largest land predator and hunts seals on the ice."
+        },
+        {
+          "text": "3.  A __________ — a thick, hooded jacket — is essential survival clothing.",
+          "depth": 1,
+          "name": "3. A __________ — a thick, hooded jacket — is essential survival clothing."
+        },
+        {
+          "text": "4.  A __________ is a deep crack in a glacier that is very dangerous for travellers.",
+          "depth": 1,
+          "name": "4. A __________ is a deep crack in a glacier that is very dangerous for travellers."
+        },
+        {
+          "text": "5.  An __________ is a huge block of ice floating in the sea with most of its mass hidden below.",
+          "depth": 1,
+          "name": "5. An __________ is a huge block of ice floating in the sea with most of its mass hidden below."
+        },
+        {
+          "text": "6.  A __________ sled is the traditional way to travel across Arctic snow.",
+          "depth": 1,
+          "name": "6. A __________ sled is the traditional way to travel across Arctic snow."
+        },
+        {
+          "text": "7.  The Arctic __________ changes its fur colour from white in winter to brown in summer.",
+          "depth": 1,
+          "name": "7. The Arctic __________ changes its fur colour from white in winter to brown in summer."
+        },
+        {
+          "text": "8.  A __________ — a long, narrow inlet — is carved by glaciers into the coastline.",
+          "depth": 1,
+          "name": "8. A __________ — a long, narrow inlet — is carved by glaciers into the coastline."
+        },
+        {
+          "text": "9.  __________ protect the eyes from snow blindness caused by reflected sunlight.",
+          "depth": 1,
+          "name": "9. __________ protect the eyes from snow blindness caused by reflected sunlight."
+        },
+        {
+          "text": "10. The __________ — a vast, treeless plain — supports low plants during the brief summer.",
+          "depth": 1,
+          "name": "10. The __________ — a vast, treeless plain — supports low plants during the brief summer."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. glacier  2. polar  3. parka  4. crevasse  5. iceberg  6. dog  7. fox  8. fjord  9. Goggles  10. tundra",
+          "depth": 2,
+          "name": "1. glacier 2. polar 3. parka 4. crevasse 5. iceberg 6. dog 7. fox 8. fjord 9. Goggles 10. tundra"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "549:733",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Arctic vs Antarctic",
+          "depth": 2,
+          "name": "Arctic vs Antarctic"
+        },
+        {
+          "text": "'Arctic' comes from the Greek word for 'bear' (arktos — referring to the constellation). 'Antarctic' means 'opposite the bear'. The Arctic is in the north; the Antarctic is in the south. They have different wildlife — penguins live only in the Antarctic, polar bears only in the Arctic.",
+          "depth": 2,
+          "name": "'Arctic' comes from the Greek word for 'bear' (arktos — referring to the constellation). 'Antarctic' means 'opposite the bear'. The Arctic is in the north; the Antarctic is in the south. They have different wildlife — penguins live only in the Antarctic, polar bears only in the Arctic."
+        },
+        {
+          "text": "The Inuit",
+          "depth": 2,
+          "name": "The Inuit"
+        },
+        {
+          "text": "'Inuit' (meaning 'the people') is the correct name for the indigenous peoples of the Arctic. 'Eskimo' is considered outdated and offensive by many Inuit. The plural is 'Inuit' (not 'Inuits'). Their language family is Inuktitut.",
+          "depth": 2,
+          "name": "'Inuit' (meaning 'the people') is the correct name for the indigenous peoples of the Arctic. 'Eskimo' is considered outdated and offensive by many Inuit. The plural is 'Inuit' (not 'Inuits'). Their language family is Inuktitut."
+        },
+        {
+          "text": "Climate Change Vocabulary",
+          "depth": 2,
+          "name": "Climate Change Vocabulary"
+        },
+        {
+          "text": "Key exam terms: 'global warming', 'greenhouse effect', 'carbon emissions', 'sea level rise', 'ice cap', 'ice sheet'. The Arctic is warming approximately three times faster than the global average — this is called 'Arctic amplification'.",
+          "depth": 2,
+          "name": "Key exam terms: 'global warming', 'greenhouse effect', 'carbon emissions', 'sea level rise', 'ice cap', 'ice sheet'. The Arctic is warming approximately three times faster than the global average — this is called 'Arctic amplification'."
+        },
+        {
+          "text": "Cold Weather Expressions",
+          "depth": 2,
+          "name": "Cold Weather Expressions"
+        },
+        {
+          "text": "'Sub-zero' = below 0°C. 'Below freezing' = same meaning. 'Wind chill' = how cold it feels with wind. 'Frostbite' = injury from extreme cold. 'Hypothermia' = dangerously low body temperature. These are useful B2 vocabulary items.",
+          "depth": 2,
+          "name": "'Sub-zero' = below 0°C. 'Below freezing' = same meaning. 'Wind chill' = how cold it feels with wind. 'Frostbite' = injury from extreme cold. 'Hypothermia' = dangerously low body temperature. These are useful B2 vocabulary items."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "549:749",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "glacier",
+          "depth": 2,
+          "name": "glacier"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ melting, ~ ice, retreating ~",
+          "depth": 2,
+          "name": "~ melting, ~ ice, retreating ~"
+        },
+        {
+          "text": "tundra",
+          "depth": 2,
+          "name": "tundra"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "frozen ~, ~ landscape, Arctic ~",
+          "depth": 2,
+          "name": "frozen ~, ~ landscape, Arctic ~"
+        },
+        {
+          "text": "iceberg",
+          "depth": 2,
+          "name": "iceberg"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ warning, tip of the ~, ~ lettuce",
+          "depth": 2,
+          "name": "~ warning, tip of the ~, ~ lettuce"
+        },
+        {
+          "text": "polar bear",
+          "depth": 2,
+          "name": "polar bear"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ habitat, ~ conservation, ~ cub",
+          "depth": 2,
+          "name": "~ habitat, ~ conservation, ~ cub"
+        },
+        {
+          "text": "aurora",
+          "depth": 2,
+          "name": "aurora"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "northern ~, ~ borealis, southern ~",
+          "depth": 2,
+          "name": "northern ~, ~ borealis, southern ~"
+        },
+        {
+          "text": "permafrost",
+          "depth": 2,
+          "name": "permafrost"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ thaw, ~ layer, ~ melting",
+          "depth": 2,
+          "name": "~ thaw, ~ layer, ~ melting"
+        },
+        {
+          "text": "blizzard",
+          "depth": 2,
+          "name": "blizzard"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "severe ~, ~ warning, ~ conditions",
+          "depth": 2,
+          "name": "severe ~, ~ warning, ~ conditions"
+        },
+        {
+          "text": "seal",
+          "depth": 2,
+          "name": "seal"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "harp ~, ~ pup, ~ hunting",
+          "depth": 2,
+          "name": "harp ~, ~ pup, ~ hunting"
+        },
+        {
+          "text": "expedition",
+          "depth": 2,
+          "name": "expedition"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "Arctic ~, ~ team, polar ~",
+          "depth": 2,
+          "name": "Arctic ~, ~ team, polar ~"
+        },
+        {
+          "text": "frostbite",
+          "depth": 2,
+          "name": "frostbite"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ risk, severe ~, ~ prevention",
+          "depth": 2,
+          "name": "~ risk, severe ~, ~ prevention"
+        }
+      ]
+    }
+  }
+}

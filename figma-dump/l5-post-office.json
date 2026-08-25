@@ -1,0 +1,1482 @@
+{
+  "unitId": "l5-post-office",
+  "name": "L5 Post Office",
+  "subtopics": [],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "letter",
+      "label": "letter",
+      "ipa": "/ˈlɛtər/",
+      "cefr": "A2",
+      "imageNodeId": "52:3035"
+    },
+    {
+      "kind": "card",
+      "id": "envelope",
+      "label": "envelope",
+      "ipa": "/ˈɛnvəˌloʊp/",
+      "cefr": "A2",
+      "imageNodeId": "52:3039"
+    },
+    {
+      "kind": "card",
+      "id": "postcard",
+      "label": "postcard",
+      "ipa": "/ˈpoʊstˌkɑːrd/",
+      "cefr": "A2",
+      "imageNodeId": "52:3043"
+    },
+    {
+      "kind": "card",
+      "id": "package",
+      "label": "package",
+      "ipa": "/ˈpækɪdʒ/",
+      "cefr": "A2",
+      "imageNodeId": "52:3047"
+    },
+    {
+      "kind": "card",
+      "id": "parcel",
+      "label": "parcel",
+      "ipa": "/ˈpɑːrsəl/",
+      "cefr": "A2",
+      "imageNodeId": "52:3051"
+    },
+    {
+      "kind": "card",
+      "id": "stamp",
+      "label": "stamp",
+      "ipa": "/stæmp/",
+      "cefr": "A2",
+      "imageNodeId": "52:3055"
+    },
+    {
+      "kind": "card",
+      "id": "sticker",
+      "label": "sticker",
+      "ipa": "/ˈstɪkər/",
+      "cefr": "A2",
+      "imageNodeId": "52:3059"
+    },
+    {
+      "kind": "card",
+      "id": "label",
+      "label": "label",
+      "ipa": "/ˈleɪbəl/",
+      "cefr": "A2",
+      "imageNodeId": "52:3063"
+    },
+    {
+      "kind": "card",
+      "id": "address",
+      "label": "address",
+      "ipa": "/əˈdrɛs/",
+      "cefr": "A2",
+      "imageNodeId": "52:3067"
+    },
+    {
+      "kind": "card",
+      "id": "return-address",
+      "label": "return address",
+      "ipa": "/rɪˈtɜːrn əˈdrɛs/",
+      "cefr": "B1",
+      "imageNodeId": "52:3071"
+    },
+    {
+      "kind": "card",
+      "id": "zip-code",
+      "label": "zip code",
+      "ipa": "/zɪp koʊd/",
+      "cefr": "B1",
+      "imageNodeId": "52:3075"
+    },
+    {
+      "kind": "card",
+      "id": "tracking-number",
+      "label": "tracking number",
+      "ipa": "/ˈtrækɪŋ ˈnʌmbər/",
+      "cefr": "B2",
+      "imageNodeId": "52:3079"
+    },
+    {
+      "kind": "card",
+      "id": "mailbox",
+      "label": "mailbox",
+      "ipa": "/ˈmeɪlˌbɒks/",
+      "cefr": "A2",
+      "imageNodeId": "52:3088"
+    },
+    {
+      "kind": "card",
+      "id": "post-box",
+      "label": "post box",
+      "ipa": "/poʊst bɒks/",
+      "cefr": "B1",
+      "imageNodeId": "52:3092"
+    },
+    {
+      "kind": "card",
+      "id": "slot",
+      "label": "slot",
+      "ipa": "/slɒt/",
+      "cefr": "A2",
+      "imageNodeId": "52:3096"
+    },
+    {
+      "kind": "card",
+      "id": "counter",
+      "label": "counter",
+      "ipa": "/ˈkaʊntər/",
+      "cefr": "A2",
+      "imageNodeId": "52:3100"
+    },
+    {
+      "kind": "card",
+      "id": "scale",
+      "label": "scale",
+      "ipa": "/skeɪl/",
+      "cefr": "A2",
+      "imageNodeId": "52:3104"
+    },
+    {
+      "kind": "card",
+      "id": "receipt",
+      "label": "receipt",
+      "ipa": "/rɪˈsiːt/",
+      "cefr": "A2",
+      "imageNodeId": "52:3108"
+    },
+    {
+      "kind": "card",
+      "id": "delivery",
+      "label": "delivery",
+      "ipa": "/dɪˈlɪvəri/",
+      "cefr": "A2",
+      "imageNodeId": "52:3112"
+    },
+    {
+      "kind": "card",
+      "id": "pickup",
+      "label": "pickup",
+      "ipa": "/ˈpɪkʌp/",
+      "cefr": "A2",
+      "imageNodeId": "52:3116"
+    },
+    {
+      "kind": "card",
+      "id": "signature",
+      "label": "signature",
+      "ipa": "/ˈsɪɡnətʃər/",
+      "cefr": "A2",
+      "imageNodeId": "52:3120"
+    },
+    {
+      "kind": "card",
+      "id": "registered-mail",
+      "label": "registered mail",
+      "ipa": "/ˈrɛdʒɪstərd meɪl/",
+      "cefr": "B2",
+      "imageNodeId": "52:3124"
+    },
+    {
+      "kind": "card",
+      "id": "express-mail",
+      "label": "express mail",
+      "ipa": "/ɪkˈsprɛs meɪl/",
+      "cefr": "B1",
+      "imageNodeId": "52:3128"
+    },
+    {
+      "kind": "card",
+      "id": "certified-mail",
+      "label": "certified mail",
+      "ipa": "/ˈsɜːrtɪfaɪd meɪl/",
+      "cefr": "B1",
+      "imageNodeId": "52:3132"
+    },
+    {
+      "kind": "card",
+      "id": "postal-worker",
+      "label": "postal worker",
+      "ipa": "/ˈpoʊstəl ˈwɜːrkər/",
+      "cefr": "B1",
+      "imageNodeId": "52:3141"
+    },
+    {
+      "kind": "card",
+      "id": "mail-carrier",
+      "label": "mail carrier",
+      "ipa": "/meɪl ˈkæriər/",
+      "cefr": "B1",
+      "imageNodeId": "52:3145"
+    },
+    {
+      "kind": "card",
+      "id": "clerk",
+      "label": "clerk",
+      "ipa": "/klɜːrk/",
+      "cefr": "A2",
+      "imageNodeId": "52:3149"
+    },
+    {
+      "kind": "card",
+      "id": "postmaster",
+      "label": "postmaster",
+      "ipa": "/ˈpoʊstˌmæstər/",
+      "cefr": "B1",
+      "imageNodeId": "52:3153"
+    },
+    {
+      "kind": "card",
+      "id": "delivery-driver",
+      "label": "delivery driver",
+      "ipa": "/dɪˈlɪvəri ˈdraɪvər/",
+      "cefr": "B2",
+      "imageNodeId": "52:3157"
+    },
+    {
+      "kind": "card",
+      "id": "sorter",
+      "label": "sorter",
+      "ipa": "/ˈsɔːrtər/",
+      "cefr": "A2",
+      "imageNodeId": "52:3161"
+    },
+    {
+      "kind": "card",
+      "id": "courier",
+      "label": "courier",
+      "ipa": "/ˈkʊriər/",
+      "cefr": "A2",
+      "imageNodeId": "52:3165"
+    },
+    {
+      "kind": "card",
+      "id": "customer",
+      "label": "customer",
+      "ipa": "/ˈkʌstəmər/",
+      "cefr": "A2",
+      "imageNodeId": "52:3169"
+    },
+    {
+      "kind": "card",
+      "id": "mail-bag",
+      "label": "mail bag",
+      "ipa": "/meɪl bæɡ/",
+      "cefr": "B1",
+      "imageNodeId": "52:3178"
+    },
+    {
+      "kind": "card",
+      "id": "cart",
+      "label": "cart",
+      "ipa": "/kɑːrt/",
+      "cefr": "A2",
+      "imageNodeId": "52:3182"
+    },
+    {
+      "kind": "card",
+      "id": "sorting-machine",
+      "label": "sorting machine",
+      "ipa": "/ˈsɔːrtɪŋ məˈʃiːn/",
+      "cefr": "B2",
+      "imageNodeId": "52:3186"
+    },
+    {
+      "kind": "card",
+      "id": "scanner",
+      "label": "scanner",
+      "ipa": "/ˈskænər/",
+      "cefr": "A2",
+      "imageNodeId": "52:3190"
+    },
+    {
+      "kind": "card",
+      "id": "tape",
+      "label": "tape",
+      "ipa": "/teɪp/",
+      "cefr": "A2",
+      "imageNodeId": "52:3194"
+    },
+    {
+      "kind": "card",
+      "id": "bubble-wrap",
+      "label": "bubble wrap",
+      "ipa": "/ˈbʌbəl ræp/",
+      "cefr": "B1",
+      "imageNodeId": "52:3198"
+    },
+    {
+      "kind": "card",
+      "id": "packing-peanuts",
+      "label": "packing peanuts",
+      "ipa": "/ˈpækɪŋ ˈpiːnʌts/",
+      "cefr": "B2",
+      "imageNodeId": "52:3202"
+    },
+    {
+      "kind": "card",
+      "id": "box",
+      "label": "box",
+      "ipa": "/bɒks/",
+      "cefr": "A2",
+      "imageNodeId": "52:3206"
+    },
+    {
+      "kind": "card",
+      "id": "padded-envelope",
+      "label": "padded envelope",
+      "ipa": "/ˈpædɪd ˈɛnvəˌloʊp/",
+      "cefr": "B2",
+      "imageNodeId": "52:3210"
+    },
+    {
+      "kind": "card",
+      "id": "rubber-band",
+      "label": "rubber band",
+      "ipa": "/ˈrʌbər bænd/",
+      "cefr": "B1",
+      "imageNodeId": "52:3214"
+    },
+    {
+      "kind": "card",
+      "id": "ink-pad",
+      "label": "ink pad",
+      "ipa": "/ɪŋk pæd/",
+      "cefr": "B1",
+      "imageNodeId": "52:3218"
+    },
+    {
+      "kind": "card",
+      "id": "date-stamp",
+      "label": "date stamp",
+      "ipa": "/deɪt stæmp/",
+      "cefr": "B1",
+      "imageNodeId": "52:3222"
+    },
+    {
+      "kind": "card",
+      "id": "lobby",
+      "label": "lobby",
+      "ipa": "/ˈlɒbi/",
+      "cefr": "A2",
+      "imageNodeId": "52:3231"
+    },
+    {
+      "kind": "card",
+      "id": "service-window",
+      "label": "service window",
+      "ipa": "/ˈsɜːrvɪs ˈwɪndoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "52:3235"
+    },
+    {
+      "kind": "card",
+      "id": "po-box",
+      "label": "PO box",
+      "ipa": "/ˌpiːˈoʊ bɒks/",
+      "cefr": "B1",
+      "imageNodeId": "52:3239"
+    },
+    {
+      "kind": "card",
+      "id": "loading-dock",
+      "label": "loading dock",
+      "ipa": "/ˈloʊdɪŋ dɒk/",
+      "cefr": "B1",
+      "imageNodeId": "52:3243"
+    },
+    {
+      "kind": "card",
+      "id": "sorting-room",
+      "label": "sorting room",
+      "ipa": "/ˈsɔːrtɪŋ ruːm/",
+      "cefr": "B1",
+      "imageNodeId": "52:3247"
+    },
+    {
+      "kind": "card",
+      "id": "parking-lot",
+      "label": "parking lot",
+      "ipa": "/ˈpɑːrkɪŋ lɒt/",
+      "cefr": "B1",
+      "imageNodeId": "52:3251"
+    },
+    {
+      "kind": "card",
+      "id": "drop-off-area",
+      "label": "drop-off area",
+      "ipa": "/drɒp ɒf ˈɛəriə/",
+      "cefr": "B2",
+      "imageNodeId": "52:3255"
+    },
+    {
+      "kind": "card",
+      "id": "vending-machine",
+      "label": "vending machine",
+      "ipa": "/ˈvɛndɪŋ məˈʃiːn/",
+      "cefr": "B2",
+      "imageNodeId": "52:3259"
+    },
+    {
+      "kind": "card",
+      "id": "form",
+      "label": "form",
+      "ipa": "/fɔːrm/",
+      "cefr": "A2",
+      "imageNodeId": "52:3263"
+    },
+    {
+      "kind": "card",
+      "id": "pen",
+      "label": "pen",
+      "ipa": "/pɛn/",
+      "cefr": "A2",
+      "imageNodeId": "52:3267"
+    },
+    {
+      "kind": "card",
+      "id": "waiting-area",
+      "label": "waiting area",
+      "ipa": "/ˈweɪtɪŋ ˈɛəriə/",
+      "cefr": "B1",
+      "imageNodeId": "52:3271"
+    },
+    {
+      "kind": "card",
+      "id": "queue",
+      "label": "queue",
+      "ipa": "/kjuː/",
+      "cefr": "A2",
+      "imageNodeId": "52:3275"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "546:558",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "546:560",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1 · Topic: The Post Office",
+          "depth": 1,
+          "name": "Level: B1 · Topic: The Post Office"
+        },
+        {
+          "text": "Sending a Parcel\n\nYesterday, I went to the post office to send a birthday present to my cousin in another city. It was my first time sending a parcel, so I was not sure what to do.\n\nWhen I arrived, there was a short queue at the counter. While I waited, I looked around. There were shelves with padded envelopes, cardboard boxes, packing tape, and bubble wrap. I picked up a medium-sized box and some tape.\n\nAt the counter, the postal worker weighed my parcel on a scale. It was just under two kilograms. She asked if I wanted to send it by standard delivery or express delivery. Standard takes three to five working days; express arrives the next day but costs more. I chose standard.\n\nShe gave me a form to fill in with the sender's address and the recipient's address. I also wrote the postcode carefully because, she explained, an incorrect postcode can delay the delivery.\n\nI paid the postage fee and she stuck stamps and a tracking label on the box. She gave me a receipt with a tracking number so I could follow the parcel online.\n\nBefore I left, I also bought a book of stamps for regular letters and posted two letters in the postbox outside. The red pillar box had two slots: one for local mail and one for everything else.\n\nSending a parcel was easier than I expected. My cousin received it two days later and called to say thank you.",
+          "depth": 1,
+          "name": "Sending a Parcel Yesterday, I went to the post office to send a birthday present to my cousin in another city. It was my first time sending a parcel, so I was not sure what to do. When I arrived, there was a short queue at the counter. While I waited, I looked around. There were shelves with padded envelopes, cardboard boxes, packing tape, and bubble wrap. I picked up a medium-sized box and some tape. At the counter, the postal worker weighed my parcel on a scale. It was just under two kilograms. She asked if I wanted to send it by standard delivery or express delivery. Standard takes three to five working days; express arrives the next day but costs more. I chose standard. She gave me a form to fill in with the sender's address and the recipient's address. I also wrote the postcode carefully because, she explained, an incorrect postcode can delay the delivery. I paid the postage fee and she stuck stamps and a tracking label on the box. She gave me a receipt with a tracking number so I could follow the parcel online. Before I left, I also bought a book of stamps for regular letters and posted two letters in the postbox outside. The red pillar box had two slots: one for local mail and one for everything else. Sending a parcel was easier than I expected. My cousin received it two days later and called to say thank you."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Why did the writer go to the post office?",
+          "depth": 1,
+          "name": "1. Why did the writer go to the post office?"
+        },
+        {
+          "text": "2. What packaging supplies were available?",
+          "depth": 1,
+          "name": "2. What packaging supplies were available?"
+        },
+        {
+          "text": "3. What is the difference between standard and express delivery?",
+          "depth": 1,
+          "name": "3. What is the difference between standard and express delivery?"
+        },
+        {
+          "text": "4. Why is the postcode important?",
+          "depth": 1,
+          "name": "4. Why is the postcode important?"
+        },
+        {
+          "text": "5. How could the writer track the parcel?",
+          "depth": 1,
+          "name": "5. How could the writer track the parcel?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "546:573",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "snail mail",
+          "depth": 2,
+          "name": "snail mail"
+        },
+        {
+          "text": "regular postal mail (as opposed to email)",
+          "depth": 2,
+          "name": "regular postal mail (as opposed to email)"
+        },
+        {
+          "text": "\"I sent the invitation by snail mail — it's more personal.\"",
+          "depth": 2,
+          "name": "\"I sent the invitation by snail mail — it's more personal.\""
+        },
+        {
+          "text": "return to sender",
+          "depth": 2,
+          "name": "return to sender"
+        },
+        {
+          "text": "send something back to the person who sent it",
+          "depth": 2,
+          "name": "send something back to the person who sent it"
+        },
+        {
+          "text": "\"The letter was returned to sender because the address was wrong.\"",
+          "depth": 2,
+          "name": "\"The letter was returned to sender because the address was wrong.\""
+        },
+        {
+          "text": "drop off",
+          "depth": 2,
+          "name": "drop off"
+        },
+        {
+          "text": "leave something at a place",
+          "depth": 2,
+          "name": "leave something at a place"
+        },
+        {
+          "text": "\"I'll drop off the parcel at the post office on my way to work.\"",
+          "depth": 2,
+          "name": "\"I'll drop off the parcel at the post office on my way to work.\""
+        },
+        {
+          "text": "pick up",
+          "depth": 2,
+          "name": "pick up"
+        },
+        {
+          "text": "collect something",
+          "depth": 2,
+          "name": "collect something"
+        },
+        {
+          "text": "\"You can pick up your parcel from the sorting office.\"",
+          "depth": 2,
+          "name": "\"You can pick up your parcel from the sorting office.\""
+        },
+        {
+          "text": "sign for",
+          "depth": 2,
+          "name": "sign for"
+        },
+        {
+          "text": "provide a signature to confirm receipt",
+          "depth": 2,
+          "name": "provide a signature to confirm receipt"
+        },
+        {
+          "text": "\"Someone needs to be home to sign for the delivery.\"",
+          "depth": 2,
+          "name": "\"Someone needs to be home to sign for the delivery.\""
+        },
+        {
+          "text": "first class / second class",
+          "depth": 2,
+          "name": "first class / second class"
+        },
+        {
+          "text": "UK postal service levels (speed and price)",
+          "depth": 2,
+          "name": "UK postal service levels (speed and price)"
+        },
+        {
+          "text": "\"Send it first class if you need it there by tomorrow.\"",
+          "depth": 2,
+          "name": "\"Send it first class if you need it there by tomorrow.\""
+        },
+        {
+          "text": "keep someone posted",
+          "depth": 2,
+          "name": "keep someone posted"
+        },
+        {
+          "text": "keep someone informed of updates",
+          "depth": 2,
+          "name": "keep someone informed of updates"
+        },
+        {
+          "text": "\"I'll keep you posted on when the parcel arrives.\"",
+          "depth": 2,
+          "name": "\"I'll keep you posted on when the parcel arrives.\""
+        },
+        {
+          "text": "go postal",
+          "depth": 2,
+          "name": "go postal"
+        },
+        {
+          "text": "become extremely angry (informal, US)",
+          "depth": 2,
+          "name": "become extremely angry (informal, US)"
+        },
+        {
+          "text": "\"Don't go postal — the package will arrive by Friday.\"",
+          "depth": 2,
+          "name": "\"Don't go postal — the package will arrive by Friday.\""
+        },
+        {
+          "text": "through the post",
+          "depth": 2,
+          "name": "through the post"
+        },
+        {
+          "text": "sent by mail",
+          "depth": 2,
+          "name": "sent by mail"
+        },
+        {
+          "text": "\"I received the documents through the post this morning.\"",
+          "depth": 2,
+          "name": "\"I received the documents through the post this morning.\""
+        },
+        {
+          "text": "wrap up",
+          "depth": 2,
+          "name": "wrap up"
+        },
+        {
+          "text": "finish something; also: cover with paper",
+          "depth": 2,
+          "name": "finish something; also: cover with paper"
+        },
+        {
+          "text": "\"Wrap up the gift before putting it in the box.\"",
+          "depth": 2,
+          "name": "\"Wrap up the gift before putting it in the box.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "546:617",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A customer sending a parcel at the post office",
+          "depth": 1,
+          "name": "Scene: A customer sending a parcel at the post office"
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "I'd like to send this parcel to Manchester, please.",
+          "depth": 2,
+          "name": "I'd like to send this parcel to Manchester, please."
+        },
+        {
+          "text": "Clerk:",
+          "depth": 2,
+          "name": "Clerk:"
+        },
+        {
+          "text": "Certainly. Let me weigh it first. It's one point eight kilos.",
+          "depth": 2,
+          "name": "Certainly. Let me weigh it first. It's one point eight kilos."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "How much is standard delivery?",
+          "depth": 2,
+          "name": "How much is standard delivery?"
+        },
+        {
+          "text": "Clerk:",
+          "depth": 2,
+          "name": "Clerk:"
+        },
+        {
+          "text": "Four pounds fifty. Express is eight pounds and arrives tomorrow.",
+          "depth": 2,
+          "name": "Four pounds fifty. Express is eight pounds and arrives tomorrow."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "Standard is fine. Do I need to fill in a form?",
+          "depth": 2,
+          "name": "Standard is fine. Do I need to fill in a form?"
+        },
+        {
+          "text": "Clerk:",
+          "depth": 2,
+          "name": "Clerk:"
+        },
+        {
+          "text": "Yes, write the sender and recipient addresses here.",
+          "depth": 2,
+          "name": "Yes, write the sender and recipient addresses here."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "Do I need to write the postcode?",
+          "depth": 2,
+          "name": "Do I need to write the postcode?"
+        },
+        {
+          "text": "Clerk:",
+          "depth": 2,
+          "name": "Clerk:"
+        },
+        {
+          "text": "Definitely — without it, there could be a delay.",
+          "depth": 2,
+          "name": "Definitely — without it, there could be a delay."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "Can I track the parcel?",
+          "depth": 2,
+          "name": "Can I track the parcel?"
+        },
+        {
+          "text": "Clerk:",
+          "depth": 2,
+          "name": "Clerk:"
+        },
+        {
+          "text": "Yes, here's your receipt with a tracking number. You can check online.",
+          "depth": 2,
+          "name": "Yes, here's your receipt with a tracking number. You can check online."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "546:652",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I sent him a mail yesterday.\"",
+          "depth": 2,
+          "name": "❌ \"I sent him a mail yesterday.\""
+        },
+        {
+          "text": "✅ \"I sent him a letter / an email yesterday.\"",
+          "depth": 2,
+          "name": "✅ \"I sent him a letter / an email yesterday.\""
+        },
+        {
+          "text": "In British English, 'mail' is uncountable (some mail). A single item is 'a letter', 'a parcel', or 'an email'. American English allows 'a mail'.",
+          "depth": 2,
+          "name": "In British English, 'mail' is uncountable (some mail). A single item is 'a letter', 'a parcel', or 'an email'. American English allows 'a mail'."
+        },
+        {
+          "text": "❌ \"I posted the letter in the post office.\"",
+          "depth": 2,
+          "name": "❌ \"I posted the letter in the post office.\""
+        },
+        {
+          "text": "✅ \"I posted the letter at the post office.\" / \"I posted it in the postbox.\"",
+          "depth": 2,
+          "name": "✅ \"I posted the letter at the post office.\" / \"I posted it in the postbox.\""
+        },
+        {
+          "text": "You post a letter 'at' the post office (the building) or 'in' the postbox (the slot).",
+          "depth": 2,
+          "name": "You post a letter 'at' the post office (the building) or 'in' the postbox (the slot)."
+        },
+        {
+          "text": "❌ \"The package arrived after three days ago.\"",
+          "depth": 2,
+          "name": "❌ \"The package arrived after three days ago.\""
+        },
+        {
+          "text": "✅ \"The package arrived three days ago.\" / \"The package arrived after three days.\"",
+          "depth": 2,
+          "name": "✅ \"The package arrived three days ago.\" / \"The package arrived after three days.\""
+        },
+        {
+          "text": "Don't combine 'after' and 'ago'. Choose one: 'three days ago' (from now) or 'after three days' (from sending).",
+          "depth": 2,
+          "name": "Don't combine 'after' and 'ago'. Choose one: 'three days ago' (from now) or 'after three days' (from sending)."
+        },
+        {
+          "text": "❌ \"She sticked the stamp on the envelope.\"",
+          "depth": 2,
+          "name": "❌ \"She sticked the stamp on the envelope.\""
+        },
+        {
+          "text": "✅ \"She stuck the stamp on the envelope.\"",
+          "depth": 2,
+          "name": "✅ \"She stuck the stamp on the envelope.\""
+        },
+        {
+          "text": "'Stick' is irregular: stick–stuck–stuck. There is no 'sticked'.",
+          "depth": 2,
+          "name": "'Stick' is irregular: stick–stuck–stuck. There is no 'sticked'."
+        },
+        {
+          "text": "❌ \"Write the address of the destinatary.\"",
+          "depth": 2,
+          "name": "❌ \"Write the address of the destinatary.\""
+        },
+        {
+          "text": "✅ \"Write the recipient's address.\"",
+          "depth": 2,
+          "name": "✅ \"Write the recipient's address.\""
+        },
+        {
+          "text": "The English word is 'recipient' (person receiving), not 'destinatary'. The sender is the person sending.",
+          "depth": 2,
+          "name": "The English word is 'recipient' (person receiving), not 'destinatary'. The sender is the person sending."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "546:676",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how post office vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how post office vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "deliver",
+          "depth": 2,
+          "name": "deliver"
+        },
+        {
+          "text": "delivery / deliverer",
+          "depth": 2,
+          "name": "delivery / deliverer"
+        },
+        {
+          "text": "deliver",
+          "depth": 2,
+          "name": "deliver"
+        },
+        {
+          "text": "delivered",
+          "depth": 2,
+          "name": "delivered"
+        },
+        {
+          "text": "post",
+          "depth": 2,
+          "name": "post"
+        },
+        {
+          "text": "post / postage",
+          "depth": 2,
+          "name": "post / postage"
+        },
+        {
+          "text": "post",
+          "depth": 2,
+          "name": "post"
+        },
+        {
+          "text": "postal",
+          "depth": 2,
+          "name": "postal"
+        },
+        {
+          "text": "send",
+          "depth": 2,
+          "name": "send"
+        },
+        {
+          "text": "sender / sending",
+          "depth": 2,
+          "name": "sender / sending"
+        },
+        {
+          "text": "send",
+          "depth": 2,
+          "name": "send"
+        },
+        {
+          "text": "sent",
+          "depth": 2,
+          "name": "sent"
+        },
+        {
+          "text": "receive",
+          "depth": 2,
+          "name": "receive"
+        },
+        {
+          "text": "receiver / receipt",
+          "depth": 2,
+          "name": "receiver / receipt"
+        },
+        {
+          "text": "receive",
+          "depth": 2,
+          "name": "receive"
+        },
+        {
+          "text": "received",
+          "depth": 2,
+          "name": "received"
+        },
+        {
+          "text": "wrap",
+          "depth": 2,
+          "name": "wrap"
+        },
+        {
+          "text": "wrap / wrapper",
+          "depth": 2,
+          "name": "wrap / wrapper"
+        },
+        {
+          "text": "wrap",
+          "depth": 2,
+          "name": "wrap"
+        },
+        {
+          "text": "wrapped",
+          "depth": 2,
+          "name": "wrapped"
+        },
+        {
+          "text": "stamp",
+          "depth": 2,
+          "name": "stamp"
+        },
+        {
+          "text": "stamp",
+          "depth": 2,
+          "name": "stamp"
+        },
+        {
+          "text": "stamp",
+          "depth": 2,
+          "name": "stamp"
+        },
+        {
+          "text": "stamped",
+          "depth": 2,
+          "name": "stamped"
+        },
+        {
+          "text": "track",
+          "depth": 2,
+          "name": "track"
+        },
+        {
+          "text": "tracking / tracker",
+          "depth": 2,
+          "name": "tracking / tracker"
+        },
+        {
+          "text": "track",
+          "depth": 2,
+          "name": "track"
+        },
+        {
+          "text": "tracked",
+          "depth": 2,
+          "name": "tracked"
+        },
+        {
+          "text": "sort",
+          "depth": 2,
+          "name": "sort"
+        },
+        {
+          "text": "sorting / sorter",
+          "depth": 2,
+          "name": "sorting / sorter"
+        },
+        {
+          "text": "sort",
+          "depth": 2,
+          "name": "sort"
+        },
+        {
+          "text": "sorted",
+          "depth": 2,
+          "name": "sorted"
+        },
+        {
+          "text": "weigh",
+          "depth": 2,
+          "name": "weigh"
+        },
+        {
+          "text": "weight / scale",
+          "depth": 2,
+          "name": "weight / scale"
+        },
+        {
+          "text": "weigh",
+          "depth": 2,
+          "name": "weigh"
+        },
+        {
+          "text": "weighed",
+          "depth": 2,
+          "name": "weighed"
+        },
+        {
+          "text": "collect",
+          "depth": 2,
+          "name": "collect"
+        },
+        {
+          "text": "collection / collector",
+          "depth": 2,
+          "name": "collection / collector"
+        },
+        {
+          "text": "collect",
+          "depth": 2,
+          "name": "collect"
+        },
+        {
+          "text": "collected",
+          "depth": 2,
+          "name": "collected"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "546:736",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  I need to buy some __________ before I can post this letter.",
+          "depth": 1,
+          "name": "1. I need to buy some __________ before I can post this letter."
+        },
+        {
+          "text": "2.  The postal worker __________ the parcel to check the delivery cost.",
+          "depth": 1,
+          "name": "2. The postal worker __________ the parcel to check the delivery cost."
+        },
+        {
+          "text": "3.  Please write the __________ address clearly on the front of the envelope.",
+          "depth": 1,
+          "name": "3. Please write the __________ address clearly on the front of the envelope."
+        },
+        {
+          "text": "4.  I chose express __________ so the gift would arrive on time.",
+          "depth": 1,
+          "name": "4. I chose express __________ so the gift would arrive on time."
+        },
+        {
+          "text": "5.  She wrapped the present in __________ wrap to protect it.",
+          "depth": 1,
+          "name": "5. She wrapped the present in __________ wrap to protect it."
+        },
+        {
+          "text": "6.  I dropped the letters in the red __________ outside the shop.",
+          "depth": 1,
+          "name": "6. I dropped the letters in the red __________ outside the shop."
+        },
+        {
+          "text": "7.  The __________ number lets you follow your parcel online.",
+          "depth": 1,
+          "name": "7. The __________ number lets you follow your parcel online."
+        },
+        {
+          "text": "8.  He filled in the __________ with both the sender and recipient details.",
+          "depth": 1,
+          "name": "8. He filled in the __________ with both the sender and recipient details."
+        },
+        {
+          "text": "9.  Standard postage for a letter is eighty __________.",
+          "depth": 1,
+          "name": "9. Standard postage for a letter is eighty __________."
+        },
+        {
+          "text": "10. The __________ office is open from 9 AM to 5 PM on weekdays.",
+          "depth": 1,
+          "name": "10. The __________ office is open from 9 AM to 5 PM on weekdays."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. stamps  2. weighed  3. recipient's  4. delivery  5. bubble  6. postbox  7. tracking  8. form  9. pence  10. post",
+          "depth": 2,
+          "name": "1. stamps 2. weighed 3. recipient's 4. delivery 5. bubble 6. postbox 7. tracking 8. form 9. pence 10. post"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "546:754",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Royal Mail vs USPS",
+          "depth": 2,
+          "name": "Royal Mail vs USPS"
+        },
+        {
+          "text": "UK post is handled by Royal Mail (red vans, red postboxes). US post is handled by USPS (blue mailboxes). Both have first-class (fast) and second-class/standard (slower, cheaper) options.",
+          "depth": 2,
+          "name": "UK post is handled by Royal Mail (red vans, red postboxes). US post is handled by USPS (blue mailboxes). Both have first-class (fast) and second-class/standard (slower, cheaper) options."
+        },
+        {
+          "text": "🇬🇧 vs 🇺🇸 Vocabulary",
+          "depth": 2,
+          "name": "🇬🇧 vs 🇺🇸 Vocabulary"
+        },
+        {
+          "text": "British: 'post' / American: 'mail'. British: 'postbox' / American: 'mailbox'. British: 'postcode' / American: 'zip code'. British: 'parcel' / American: 'package'.",
+          "depth": 2,
+          "name": "British: 'post' / American: 'mail'. British: 'postbox' / American: 'mailbox'. British: 'postcode' / American: 'zip code'. British: 'parcel' / American: 'package'."
+        },
+        {
+          "text": "The Red Pillar Box",
+          "depth": 2,
+          "name": "The Red Pillar Box"
+        },
+        {
+          "text": "The UK's iconic red pillar boxes have been used since 1852. They have the royal cipher of the reigning monarch at the time they were made. Some very old ones still have Queen Victoria's initials!",
+          "depth": 2,
+          "name": "The UK's iconic red pillar boxes have been used since 1852. They have the royal cipher of the reigning monarch at the time they were made. Some very old ones still have Queen Victoria's initials!"
+        },
+        {
+          "text": "Signed For vs Recorded Delivery",
+          "depth": 2,
+          "name": "Signed For vs Recorded Delivery"
+        },
+        {
+          "text": "'Signed for' delivery requires someone to sign when the parcel arrives. 'Tracked' delivery shows the parcel's journey online. These options cost extra but provide proof of delivery.",
+          "depth": 2,
+          "name": "'Signed for' delivery requires someone to sign when the parcel arrives. 'Tracked' delivery shows the parcel's journey online. These options cost extra but provide proof of delivery."
+        },
+        {
+          "text": "Christmas Post",
+          "depth": 2,
+          "name": "Christmas Post"
+        },
+        {
+          "text": "In the UK, Royal Mail announces a 'last posting date' for Christmas cards and parcels. Sending cards by post is still a strong tradition, even in the digital age.",
+          "depth": 2,
+          "name": "In the UK, Royal Mail announces a 'last posting date' for Christmas cards and parcels. Sending cards by post is still a strong tradition, even in the digital age."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "546:773",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "stamp",
+          "depth": 2,
+          "name": "stamp"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "postage ~, ~ collection, ~ book",
+          "depth": 2,
+          "name": "postage ~, ~ collection, ~ book"
+        },
+        {
+          "text": "parcel",
+          "depth": 2,
+          "name": "parcel"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "send a ~, ~ delivery, ~ tracking",
+          "depth": 2,
+          "name": "send a ~, ~ delivery, ~ tracking"
+        },
+        {
+          "text": "envelope",
+          "depth": 2,
+          "name": "envelope"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "padded ~, seal an ~, ~ flap",
+          "depth": 2,
+          "name": "padded ~, seal an ~, ~ flap"
+        },
+        {
+          "text": "postbox",
+          "depth": 2,
+          "name": "postbox"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "red ~, post in the ~, ~ collection",
+          "depth": 2,
+          "name": "red ~, post in the ~, ~ collection"
+        },
+        {
+          "text": "delivery",
+          "depth": 2,
+          "name": "delivery"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "express ~, ~ driver, next-day ~",
+          "depth": 2,
+          "name": "express ~, ~ driver, next-day ~"
+        },
+        {
+          "text": "postcode",
+          "depth": 2,
+          "name": "postcode"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ area, write the ~, correct ~",
+          "depth": 2,
+          "name": "~ area, write the ~, correct ~"
+        },
+        {
+          "text": "counter",
+          "depth": 2,
+          "name": "counter"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "at the ~, ~ service, ~ clerk",
+          "depth": 2,
+          "name": "at the ~, ~ service, ~ clerk"
+        },
+        {
+          "text": "receipt",
+          "depth": 2,
+          "name": "receipt"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "keep the ~, ~ number, printed ~",
+          "depth": 2,
+          "name": "keep the ~, ~ number, printed ~"
+        },
+        {
+          "text": "address",
+          "depth": 2,
+          "name": "address"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "home ~, return ~, ~ label",
+          "depth": 2,
+          "name": "home ~, return ~, ~ label"
+        },
+        {
+          "text": "letter",
+          "depth": 2,
+          "name": "letter"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "post a ~, ~ box, ~ writing",
+          "depth": 2,
+          "name": "post a ~, ~ box, ~ writing"
+        }
+      ]
+    }
+  }
+}

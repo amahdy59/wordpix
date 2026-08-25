@@ -1,0 +1,1593 @@
+{
+  "unitId": "bedroom",
+  "name": "The Bedroom",
+  "subtopics": [
+    {
+      "id": "furniture",
+      "title": "Furniture",
+      "wordIds": [
+        "bed",
+        "nightstand",
+        "dresser",
+        "wardrobe",
+        "desk",
+        "chair",
+        "bookshelf",
+        "mirror",
+        "stool",
+        "chest-of-drawers"
+      ]
+    },
+    {
+      "id": "bedding-linen",
+      "title": "Bedding & Linen",
+      "wordIds": [
+        "pillow",
+        "blanket",
+        "sheet",
+        "mattress",
+        "duvet",
+        "pillowcase",
+        "comforter",
+        "cushion",
+        "bed-frame",
+        "headboard"
+      ]
+    },
+    {
+      "id": "room-features",
+      "title": "Room Features",
+      "wordIds": [
+        "lamp",
+        "curtain",
+        "window",
+        "door",
+        "rug",
+        "carpet",
+        "ceiling-light",
+        "light-switch",
+        "blinds",
+        "outlet"
+      ]
+    },
+    {
+      "id": "bedroom-objects",
+      "title": "Bedroom Objects",
+      "wordIds": [
+        "alarm-clock",
+        "picture-frame",
+        "clock",
+        "plant",
+        "vase",
+        "candle",
+        "calendar",
+        "tissue-box",
+        "wastebasket",
+        "hanger"
+      ]
+    },
+    {
+      "id": "personal-items",
+      "title": "Personal Items",
+      "wordIds": [
+        "pajamas",
+        "slippers",
+        "robe",
+        "teddy-bear",
+        "poster",
+        "books",
+        "photo-album",
+        "glasses",
+        "backpack",
+        "jewelry-box"
+      ]
+    },
+    {
+      "id": "electronics",
+      "title": "Electronics",
+      "wordIds": [
+        "phone",
+        "charger",
+        "laptop",
+        "headphones",
+        "tablet",
+        "speaker",
+        "reading-light",
+        "remote-control"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "bed",
+      "label": "Bed",
+      "ipa": "/bɛd/",
+      "cefr": "A1",
+      "imageNodeId": "44:15"
+    },
+    {
+      "kind": "card",
+      "id": "nightstand",
+      "label": "Nightstand",
+      "ipa": "/ˈnaɪtstænd/",
+      "cefr": "A2",
+      "imageNodeId": "44:19"
+    },
+    {
+      "kind": "card",
+      "id": "dresser",
+      "label": "Dresser",
+      "ipa": "/ˈdrɛsər/",
+      "cefr": "A1",
+      "imageNodeId": "44:23"
+    },
+    {
+      "kind": "card",
+      "id": "wardrobe",
+      "label": "Wardrobe",
+      "ipa": "/ˈwɔːrdroʊb/",
+      "cefr": "A1",
+      "imageNodeId": "44:27"
+    },
+    {
+      "kind": "card",
+      "id": "desk",
+      "label": "Desk",
+      "ipa": "/dɛsk/",
+      "cefr": "A1",
+      "imageNodeId": "44:31"
+    },
+    {
+      "kind": "card",
+      "id": "chair",
+      "label": "Chair",
+      "ipa": "/tʃɛr/",
+      "cefr": "A1",
+      "imageNodeId": "44:35"
+    },
+    {
+      "kind": "card",
+      "id": "bookshelf",
+      "label": "Bookshelf",
+      "ipa": "/ˈbʊkʃɛlf/",
+      "cefr": "A1",
+      "imageNodeId": "44:39"
+    },
+    {
+      "kind": "card",
+      "id": "mirror",
+      "label": "Mirror",
+      "ipa": "/ˈmɪrər/",
+      "cefr": "A1",
+      "imageNodeId": "44:43"
+    },
+    {
+      "kind": "card",
+      "id": "stool",
+      "label": "Stool",
+      "ipa": "/stuːl/",
+      "cefr": "A1",
+      "imageNodeId": "44:47"
+    },
+    {
+      "kind": "card",
+      "id": "chest-of-drawers",
+      "label": "Chest of Drawers",
+      "ipa": "/tʃɛst əv drɔːrz/",
+      "cefr": "B1",
+      "imageNodeId": "44:51"
+    },
+    {
+      "kind": "card",
+      "id": "pillow",
+      "label": "Pillow",
+      "ipa": "/ˈpɪloʊ/",
+      "cefr": "A1",
+      "imageNodeId": "44:60"
+    },
+    {
+      "kind": "card",
+      "id": "blanket",
+      "label": "Blanket",
+      "ipa": "/ˈblæŋkɪt/",
+      "cefr": "A1",
+      "imageNodeId": "44:64"
+    },
+    {
+      "kind": "card",
+      "id": "sheet",
+      "label": "Sheet",
+      "ipa": "/ʃiːt/",
+      "cefr": "A1",
+      "imageNodeId": "44:68"
+    },
+    {
+      "kind": "card",
+      "id": "mattress",
+      "label": "Mattress",
+      "ipa": "/ˈmætrɪs/",
+      "cefr": "A1",
+      "imageNodeId": "44:72"
+    },
+    {
+      "kind": "card",
+      "id": "duvet",
+      "label": "Duvet",
+      "ipa": "/duːˈveɪ/",
+      "cefr": "A1",
+      "imageNodeId": "44:76"
+    },
+    {
+      "kind": "card",
+      "id": "pillowcase",
+      "label": "Pillowcase",
+      "ipa": "/ˈpɪloʊkeɪs/",
+      "cefr": "A2",
+      "imageNodeId": "44:80"
+    },
+    {
+      "kind": "card",
+      "id": "comforter",
+      "label": "Comforter",
+      "ipa": "/ˈkʌmfərtər/",
+      "cefr": "A1",
+      "imageNodeId": "44:84"
+    },
+    {
+      "kind": "card",
+      "id": "cushion",
+      "label": "Cushion",
+      "ipa": "/ˈkʊʃən/",
+      "cefr": "A1",
+      "imageNodeId": "44:88"
+    },
+    {
+      "kind": "card",
+      "id": "bed-frame",
+      "label": "Bed Frame",
+      "ipa": "/bɛd freɪm/",
+      "cefr": "A2",
+      "imageNodeId": "44:92"
+    },
+    {
+      "kind": "card",
+      "id": "headboard",
+      "label": "Headboard",
+      "ipa": "/ˈhɛdbɔːrd/",
+      "cefr": "A1",
+      "imageNodeId": "44:96"
+    },
+    {
+      "kind": "card",
+      "id": "lamp",
+      "label": "Lamp",
+      "ipa": "/læmp/",
+      "cefr": "A1",
+      "imageNodeId": "44:105"
+    },
+    {
+      "kind": "card",
+      "id": "curtain",
+      "label": "Curtain",
+      "ipa": "/ˈkɜːrtən/",
+      "cefr": "A1",
+      "imageNodeId": "44:109"
+    },
+    {
+      "kind": "card",
+      "id": "window",
+      "label": "Window",
+      "ipa": "/ˈwɪndoʊ/",
+      "cefr": "A1",
+      "imageNodeId": "44:113"
+    },
+    {
+      "kind": "card",
+      "id": "door",
+      "label": "Door",
+      "ipa": "/dɔːr/",
+      "cefr": "A1",
+      "imageNodeId": "44:117"
+    },
+    {
+      "kind": "card",
+      "id": "rug",
+      "label": "Rug",
+      "ipa": "/rʌɡ/",
+      "cefr": "A1",
+      "imageNodeId": "44:121"
+    },
+    {
+      "kind": "card",
+      "id": "carpet",
+      "label": "Carpet",
+      "ipa": "/ˈkɑːrpɪt/",
+      "cefr": "A1",
+      "imageNodeId": "44:125"
+    },
+    {
+      "kind": "card",
+      "id": "ceiling-light",
+      "label": "Ceiling Light",
+      "ipa": "/ˈsiːlɪŋ laɪt/",
+      "cefr": "A2",
+      "imageNodeId": "44:129"
+    },
+    {
+      "kind": "card",
+      "id": "light-switch",
+      "label": "Light Switch",
+      "ipa": "/laɪt swɪtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "44:133"
+    },
+    {
+      "kind": "card",
+      "id": "blinds",
+      "label": "Blinds",
+      "ipa": "/blaɪndz/",
+      "cefr": "A1",
+      "imageNodeId": "44:137"
+    },
+    {
+      "kind": "card",
+      "id": "outlet",
+      "label": "Outlet",
+      "ipa": "/ˈaʊtlɪt/",
+      "cefr": "A1",
+      "imageNodeId": "44:141"
+    },
+    {
+      "kind": "card",
+      "id": "alarm-clock",
+      "label": "Alarm Clock",
+      "ipa": "/əˈlɑːrm klɑːk/",
+      "cefr": "A2",
+      "imageNodeId": "44:150"
+    },
+    {
+      "kind": "card",
+      "id": "picture-frame",
+      "label": "Picture Frame",
+      "ipa": "/ˈpɪktʃər freɪm/",
+      "cefr": "A2",
+      "imageNodeId": "44:154"
+    },
+    {
+      "kind": "card",
+      "id": "clock",
+      "label": "Clock",
+      "ipa": "/klɑːk/",
+      "cefr": "A1",
+      "imageNodeId": "44:158"
+    },
+    {
+      "kind": "card",
+      "id": "plant",
+      "label": "Plant",
+      "ipa": "/plænt/",
+      "cefr": "A1",
+      "imageNodeId": "44:162"
+    },
+    {
+      "kind": "card",
+      "id": "vase",
+      "label": "Vase",
+      "ipa": "/veɪs/",
+      "cefr": "A1",
+      "imageNodeId": "44:166"
+    },
+    {
+      "kind": "card",
+      "id": "candle",
+      "label": "Candle",
+      "ipa": "/ˈkændəl/",
+      "cefr": "A1",
+      "imageNodeId": "44:170"
+    },
+    {
+      "kind": "card",
+      "id": "calendar",
+      "label": "Calendar",
+      "ipa": "/ˈkæləndər/",
+      "cefr": "A1",
+      "imageNodeId": "44:174"
+    },
+    {
+      "kind": "card",
+      "id": "tissue-box",
+      "label": "Tissue Box",
+      "ipa": "/ˈtɪʃuː bɑːks/",
+      "cefr": "A2",
+      "imageNodeId": "44:178"
+    },
+    {
+      "kind": "card",
+      "id": "wastebasket",
+      "label": "Wastebasket",
+      "ipa": "/ˈweɪstbæskɪt/",
+      "cefr": "A2",
+      "imageNodeId": "44:182"
+    },
+    {
+      "kind": "card",
+      "id": "hanger",
+      "label": "Hanger",
+      "ipa": "/ˈhæŋər/",
+      "cefr": "A1",
+      "imageNodeId": "44:186"
+    },
+    {
+      "kind": "card",
+      "id": "pajamas",
+      "label": "Pajamas",
+      "ipa": "/pəˈdʒæməz/",
+      "cefr": "A1",
+      "imageNodeId": "44:195"
+    },
+    {
+      "kind": "card",
+      "id": "slippers",
+      "label": "Slippers",
+      "ipa": "/ˈslɪpərz/",
+      "cefr": "A1",
+      "imageNodeId": "44:199"
+    },
+    {
+      "kind": "card",
+      "id": "robe",
+      "label": "Robe",
+      "ipa": "/roʊb/",
+      "cefr": "A1",
+      "imageNodeId": "44:203"
+    },
+    {
+      "kind": "card",
+      "id": "teddy-bear",
+      "label": "Teddy Bear",
+      "ipa": "/ˈtɛdi bɛr/",
+      "cefr": "A2",
+      "imageNodeId": "44:207"
+    },
+    {
+      "kind": "card",
+      "id": "poster",
+      "label": "Poster",
+      "ipa": "/ˈpoʊstər/",
+      "cefr": "A1",
+      "imageNodeId": "44:211"
+    },
+    {
+      "kind": "card",
+      "id": "books",
+      "label": "Books",
+      "ipa": "/bʊks/",
+      "cefr": "A1",
+      "imageNodeId": "44:215"
+    },
+    {
+      "kind": "card",
+      "id": "photo-album",
+      "label": "Photo Album",
+      "ipa": "/ˈfoʊtoʊ ˈælbəm/",
+      "cefr": "A2",
+      "imageNodeId": "44:219"
+    },
+    {
+      "kind": "card",
+      "id": "glasses",
+      "label": "Glasses",
+      "ipa": "/ˈɡlæsɪz/",
+      "cefr": "A1",
+      "imageNodeId": "44:223"
+    },
+    {
+      "kind": "card",
+      "id": "backpack",
+      "label": "Backpack",
+      "ipa": "/ˈbækpæk/",
+      "cefr": "A1",
+      "imageNodeId": "44:227"
+    },
+    {
+      "kind": "card",
+      "id": "jewelry-box",
+      "label": "Jewelry Box",
+      "ipa": "/ˈdʒuːəlri bɑːks/",
+      "cefr": "A2",
+      "imageNodeId": "44:231"
+    },
+    {
+      "kind": "card",
+      "id": "phone",
+      "label": "Phone",
+      "ipa": "/foʊn/",
+      "cefr": "A1",
+      "imageNodeId": "44:240"
+    },
+    {
+      "kind": "card",
+      "id": "charger",
+      "label": "Charger",
+      "ipa": "/ˈtʃɑːrdʒər/",
+      "cefr": "A1",
+      "imageNodeId": "44:244"
+    },
+    {
+      "kind": "card",
+      "id": "laptop",
+      "label": "Laptop",
+      "ipa": "/ˈlæptɑːp/",
+      "cefr": "A1",
+      "imageNodeId": "44:248"
+    },
+    {
+      "kind": "card",
+      "id": "headphones",
+      "label": "Headphones",
+      "ipa": "/ˈhɛdfoʊnz/",
+      "cefr": "A2",
+      "imageNodeId": "44:252"
+    },
+    {
+      "kind": "card",
+      "id": "tablet",
+      "label": "Tablet",
+      "ipa": "/ˈtæblɪt/",
+      "cefr": "A1",
+      "imageNodeId": "44:256"
+    },
+    {
+      "kind": "card",
+      "id": "speaker",
+      "label": "Speaker",
+      "ipa": "/ˈspiːkər/",
+      "cefr": "A1",
+      "imageNodeId": "44:260"
+    },
+    {
+      "kind": "card",
+      "id": "reading-light",
+      "label": "Reading Light",
+      "ipa": "/ˈriːdɪŋ laɪt/",
+      "cefr": "A2",
+      "imageNodeId": "44:264"
+    },
+    {
+      "kind": "card",
+      "id": "remote-control",
+      "label": "Remote Control",
+      "ipa": "/rɪˈmoʊt kənˈtroʊl/",
+      "cefr": "A2",
+      "imageNodeId": "44:268"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "542:1095",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "542:1097",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1 · Topic: The Bedroom",
+          "depth": 1,
+          "name": "Level: B1 · Topic: The Bedroom"
+        },
+        {
+          "text": "My New Bedroom\n\nWhen I moved into my new flat last month, the bedroom was completely empty. The first thing I bought was a comfortable bed with a wooden bed frame and a soft mattress. I put two pillows and a duvet on top, with clean white sheets and a warm blanket for cold nights.\n\nNext to the bed, I placed a small nightstand with a lamp and an alarm clock. On the other side of the room, I set up a dresser with six drawers for my clothes. I also bought a tall wardrobe for my jackets and shirts, and I keep a row of hangers inside for everything to stay neat.\n\nIn the corner, I have a desk and a chair where I study. My laptop, charger, and headphones sit on the desk. Above the desk, I hung a bookshelf for my books and a few photo albums. The wall has a poster and a picture frame with a family photo.\n\nI chose soft curtains for the window and added blinds for privacy. There is a small rug on the floor beside the bed, and a ceiling light with a dimmer connected to the light switch by the door. On quiet evenings, I light a candle, put on my pajamas and slippers, and read before sleep. My bedroom is simple, but it feels like home.",
+          "depth": 1,
+          "name": "My New Bedroom When I moved into my new flat last month, the bedroom was completely empty. The first thing I bought was a comfortable bed with a wooden bed frame and a soft mattress. I put two pillows and a duvet on top, with clean white sheets and a warm blanket for cold nights. Next to the bed, I placed a small nightstand with a lamp and an alarm clock. On the other side of the room, I set up a dresser with six drawers for my clothes. I also bought a tall wardrobe for my jackets and shirts, and I keep a row of hangers inside for everything to stay neat. In the corner, I have a desk and a chair where I study. My laptop, charger, and headphones sit on the desk. Above the desk, I hung a bookshelf for my books and a few photo albums. The wall has a poster and a picture frame with a family photo. I chose soft curtains for the window and added blinds for privacy. There is a small rug on the floor beside the bed, and a ceiling light with a dimmer connected to the light switch by the door. On quiet evenings, I light a candle, put on my pajamas and slippers, and read before sleep. My bedroom is simple, but it feels like home."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What was the first piece of furniture the writer bought?",
+          "depth": 1,
+          "name": "1. What was the first piece of furniture the writer bought?"
+        },
+        {
+          "text": "2. Where does the writer keep jackets and shirts?",
+          "depth": 1,
+          "name": "2. Where does the writer keep jackets and shirts?"
+        },
+        {
+          "text": "3. What items are on the desk?",
+          "depth": 1,
+          "name": "3. What items are on the desk?"
+        },
+        {
+          "text": "4. Why did the writer add blinds to the window?",
+          "depth": 1,
+          "name": "4. Why did the writer add blinds to the window?"
+        },
+        {
+          "text": "5. What does the writer do on quiet evenings before sleep?",
+          "depth": 1,
+          "name": "5. What does the writer do on quiet evenings before sleep?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "542:1110",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "hit the sack / hit the hay",
+          "depth": 2,
+          "name": "hit the sack / hit the hay"
+        },
+        {
+          "text": "go to bed (informal)",
+          "depth": 2,
+          "name": "go to bed (informal)"
+        },
+        {
+          "text": "\"I'm exhausted — I need to hit the sack.\"",
+          "depth": 2,
+          "name": "\"I'm exhausted — I need to hit the sack.\""
+        },
+        {
+          "text": "sleep like a log",
+          "depth": 2,
+          "name": "sleep like a log"
+        },
+        {
+          "text": "sleep very deeply without waking",
+          "depth": 2,
+          "name": "sleep very deeply without waking"
+        },
+        {
+          "text": "\"After the long hike, I slept like a log.\"",
+          "depth": 2,
+          "name": "\"After the long hike, I slept like a log.\""
+        },
+        {
+          "text": "tuck in",
+          "depth": 2,
+          "name": "tuck in"
+        },
+        {
+          "text": "push the edges of sheets or blankets under the mattress",
+          "depth": 2,
+          "name": "push the edges of sheets or blankets under the mattress"
+        },
+        {
+          "text": "\"She tucked the children in and said goodnight.\"",
+          "depth": 2,
+          "name": "\"She tucked the children in and said goodnight.\""
+        },
+        {
+          "text": "tidy up",
+          "depth": 2,
+          "name": "tidy up"
+        },
+        {
+          "text": "make a room clean and organised",
+          "depth": 2,
+          "name": "make a room clean and organised"
+        },
+        {
+          "text": "\"I need to tidy up my bedroom before the guests arrive.\"",
+          "depth": 2,
+          "name": "\"I need to tidy up my bedroom before the guests arrive.\""
+        },
+        {
+          "text": "turn in",
+          "depth": 2,
+          "name": "turn in"
+        },
+        {
+          "text": "go to bed (informal)",
+          "depth": 2,
+          "name": "go to bed (informal)"
+        },
+        {
+          "text": "\"It's getting late — I think I'll turn in.\"",
+          "depth": 2,
+          "name": "\"It's getting late — I think I'll turn in.\""
+        },
+        {
+          "text": "get up",
+          "depth": 2,
+          "name": "get up"
+        },
+        {
+          "text": "rise from bed, wake up",
+          "depth": 2,
+          "name": "rise from bed, wake up"
+        },
+        {
+          "text": "\"I get up at 7 every morning for work.\"",
+          "depth": 2,
+          "name": "\"I get up at 7 every morning for work.\""
+        },
+        {
+          "text": "lie down",
+          "depth": 2,
+          "name": "lie down"
+        },
+        {
+          "text": "put your body flat, usually on a bed",
+          "depth": 2,
+          "name": "put your body flat, usually on a bed"
+        },
+        {
+          "text": "\"I felt dizzy, so I had to lie down for a while.\"",
+          "depth": 2,
+          "name": "\"I felt dizzy, so I had to lie down for a while.\""
+        },
+        {
+          "text": "make the bed",
+          "depth": 2,
+          "name": "make the bed"
+        },
+        {
+          "text": "arrange sheets, blankets, and pillows neatly",
+          "depth": 2,
+          "name": "arrange sheets, blankets, and pillows neatly"
+        },
+        {
+          "text": "\"My mother always told me to make the bed every morning.\"",
+          "depth": 2,
+          "name": "\"My mother always told me to make the bed every morning.\""
+        },
+        {
+          "text": "put away",
+          "depth": 2,
+          "name": "put away"
+        },
+        {
+          "text": "return items to their proper place",
+          "depth": 2,
+          "name": "return items to their proper place"
+        },
+        {
+          "text": "\"Please put your clothes away in the wardrobe.\"",
+          "depth": 2,
+          "name": "\"Please put your clothes away in the wardrobe.\""
+        },
+        {
+          "text": "a good night's sleep",
+          "depth": 2,
+          "name": "a good night's sleep"
+        },
+        {
+          "text": "restful, uninterrupted sleep",
+          "depth": 2,
+          "name": "restful, uninterrupted sleep"
+        },
+        {
+          "text": "\"All I need is a good night's sleep and I'll feel better.\"",
+          "depth": 2,
+          "name": "\"All I need is a good night's sleep and I'll feel better.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "542:1154",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: Two flatmates discussing bedroom furniture",
+          "depth": 1,
+          "name": "Scene: Two flatmates discussing bedroom furniture"
+        },
+        {
+          "text": "Tom:",
+          "depth": 2,
+          "name": "Tom:"
+        },
+        {
+          "text": "I finally set up my new bed frame yesterday. It took me two hours!",
+          "depth": 2,
+          "name": "I finally set up my new bed frame yesterday. It took me two hours!"
+        },
+        {
+          "text": "Aisha:",
+          "depth": 2,
+          "name": "Aisha:"
+        },
+        {
+          "text": "That sounds tiring. Did you get a new mattress too?",
+          "depth": 2,
+          "name": "That sounds tiring. Did you get a new mattress too?"
+        },
+        {
+          "text": "Tom:",
+          "depth": 2,
+          "name": "Tom:"
+        },
+        {
+          "text": "Yes, a memory foam one. And I bought a duvet and two soft pillows.",
+          "depth": 2,
+          "name": "Yes, a memory foam one. And I bought a duvet and two soft pillows."
+        },
+        {
+          "text": "Aisha:",
+          "depth": 2,
+          "name": "Aisha:"
+        },
+        {
+          "text": "Nice! What about storage? Your clothes were everywhere last week.",
+          "depth": 2,
+          "name": "Nice! What about storage? Your clothes were everywhere last week."
+        },
+        {
+          "text": "Tom:",
+          "depth": 2,
+          "name": "Tom:"
+        },
+        {
+          "text": "I know! I got a wardrobe and a chest of drawers. Now I can actually put my things away.",
+          "depth": 2,
+          "name": "I know! I got a wardrobe and a chest of drawers. Now I can actually put my things away."
+        },
+        {
+          "text": "Aisha:",
+          "depth": 2,
+          "name": "Aisha:"
+        },
+        {
+          "text": "Great. And the lighting? That old ceiling light was really dim.",
+          "depth": 2,
+          "name": "Great. And the lighting? That old ceiling light was really dim."
+        },
+        {
+          "text": "Tom:",
+          "depth": 2,
+          "name": "Tom:"
+        },
+        {
+          "text": "I added a reading light on the nightstand and a desk lamp near my laptop. Much better now.",
+          "depth": 2,
+          "name": "I added a reading light on the nightstand and a desk lamp near my laptop. Much better now."
+        },
+        {
+          "text": "Aisha:",
+          "depth": 2,
+          "name": "Aisha:"
+        },
+        {
+          "text": "It sounds like a proper bedroom now. Maybe I should tidy up mine too.",
+          "depth": 2,
+          "name": "It sounds like a proper bedroom now. Maybe I should tidy up mine too."
+        },
+        {
+          "text": "Tom:",
+          "depth": 2,
+          "name": "Tom:"
+        },
+        {
+          "text": "You should! A nice rug, some curtains, maybe a plant — it makes a big difference.",
+          "depth": 2,
+          "name": "You should! A nice rug, some curtains, maybe a plant — it makes a big difference."
+        },
+        {
+          "text": "Aisha:",
+          "depth": 2,
+          "name": "Aisha:"
+        },
+        {
+          "text": "You're right. A good bedroom really helps you get a good night's sleep.",
+          "depth": 2,
+          "name": "You're right. A good bedroom really helps you get a good night's sleep."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "542:1189",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I made my homework on the desk.\"",
+          "depth": 2,
+          "name": "❌ \"I made my homework on the desk.\""
+        },
+        {
+          "text": "✅ \"I did my homework at the desk.\"",
+          "depth": 2,
+          "name": "✅ \"I did my homework at the desk.\""
+        },
+        {
+          "text": "Use 'do homework', not 'make homework'. Use 'at the desk', not 'on'.",
+          "depth": 2,
+          "name": "Use 'do homework', not 'make homework'. Use 'at the desk', not 'on'."
+        },
+        {
+          "text": "❌ \"I opened the light.\"",
+          "depth": 2,
+          "name": "❌ \"I opened the light.\""
+        },
+        {
+          "text": "✅ \"I turned on the light.\"",
+          "depth": 2,
+          "name": "✅ \"I turned on the light.\""
+        },
+        {
+          "text": "In English we 'turn on/off' lights, not 'open/close' them.",
+          "depth": 2,
+          "name": "In English we 'turn on/off' lights, not 'open/close' them."
+        },
+        {
+          "text": "❌ \"I have a furniture in my room.\"",
+          "depth": 2,
+          "name": "❌ \"I have a furniture in my room.\""
+        },
+        {
+          "text": "✅ \"I have a piece of furniture in my room.\" / \"I have furniture in my room.\"",
+          "depth": 2,
+          "name": "✅ \"I have a piece of furniture in my room.\" / \"I have furniture in my room.\""
+        },
+        {
+          "text": "'Furniture' is uncountable. Use 'a piece of furniture' for one item.",
+          "depth": 2,
+          "name": "'Furniture' is uncountable. Use 'a piece of furniture' for one item."
+        },
+        {
+          "text": "❌ \"I slept at 10 o'clock.\"",
+          "depth": 2,
+          "name": "❌ \"I slept at 10 o'clock.\""
+        },
+        {
+          "text": "✅ \"I went to bed / fell asleep at 10 o'clock.\"",
+          "depth": 2,
+          "name": "✅ \"I went to bed / fell asleep at 10 o'clock.\""
+        },
+        {
+          "text": "'Slept' describes the state, not the moment of starting. Use 'went to bed' or 'fell asleep'.",
+          "depth": 2,
+          "name": "'Slept' describes the state, not the moment of starting. Use 'went to bed' or 'fell asleep'."
+        },
+        {
+          "text": "❌ \"I put my clothes in the hanger.\"",
+          "depth": 2,
+          "name": "❌ \"I put my clothes in the hanger.\""
+        },
+        {
+          "text": "✅ \"I put my clothes on the hanger.\"",
+          "depth": 2,
+          "name": "✅ \"I put my clothes on the hanger.\""
+        },
+        {
+          "text": "Clothes go 'on' a hanger, not 'in' one.",
+          "depth": 2,
+          "name": "Clothes go 'on' a hanger, not 'in' one."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "542:1213",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how bedroom vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how bedroom vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "comfort",
+          "depth": 2,
+          "name": "comfort"
+        },
+        {
+          "text": "comfort",
+          "depth": 2,
+          "name": "comfort"
+        },
+        {
+          "text": "comfort",
+          "depth": 2,
+          "name": "comfort"
+        },
+        {
+          "text": "comfortable",
+          "depth": 2,
+          "name": "comfortable"
+        },
+        {
+          "text": "sleep",
+          "depth": 2,
+          "name": "sleep"
+        },
+        {
+          "text": "sleep / sleeper",
+          "depth": 2,
+          "name": "sleep / sleeper"
+        },
+        {
+          "text": "sleep",
+          "depth": 2,
+          "name": "sleep"
+        },
+        {
+          "text": "sleepy / sleepless",
+          "depth": 2,
+          "name": "sleepy / sleepless"
+        },
+        {
+          "text": "decorate",
+          "depth": 2,
+          "name": "decorate"
+        },
+        {
+          "text": "decoration / decor",
+          "depth": 2,
+          "name": "decoration / decor"
+        },
+        {
+          "text": "decorate",
+          "depth": 2,
+          "name": "decorate"
+        },
+        {
+          "text": "decorative",
+          "depth": 2,
+          "name": "decorative"
+        },
+        {
+          "text": "furnish",
+          "depth": 2,
+          "name": "furnish"
+        },
+        {
+          "text": "furniture / furnishing",
+          "depth": 2,
+          "name": "furniture / furnishing"
+        },
+        {
+          "text": "furnish",
+          "depth": 2,
+          "name": "furnish"
+        },
+        {
+          "text": "furnished",
+          "depth": 2,
+          "name": "furnished"
+        },
+        {
+          "text": "rest",
+          "depth": 2,
+          "name": "rest"
+        },
+        {
+          "text": "rest",
+          "depth": 2,
+          "name": "rest"
+        },
+        {
+          "text": "rest",
+          "depth": 2,
+          "name": "rest"
+        },
+        {
+          "text": "restful / restless",
+          "depth": 2,
+          "name": "restful / restless"
+        },
+        {
+          "text": "dust",
+          "depth": 2,
+          "name": "dust"
+        },
+        {
+          "text": "dust / duster",
+          "depth": 2,
+          "name": "dust / duster"
+        },
+        {
+          "text": "dust",
+          "depth": 2,
+          "name": "dust"
+        },
+        {
+          "text": "dusty",
+          "depth": 2,
+          "name": "dusty"
+        },
+        {
+          "text": "tidy",
+          "depth": 2,
+          "name": "tidy"
+        },
+        {
+          "text": "tidiness",
+          "depth": 2,
+          "name": "tidiness"
+        },
+        {
+          "text": "tidy (up)",
+          "depth": 2,
+          "name": "tidy (up)"
+        },
+        {
+          "text": "tidy",
+          "depth": 2,
+          "name": "tidy"
+        },
+        {
+          "text": "warm",
+          "depth": 2,
+          "name": "warm"
+        },
+        {
+          "text": "warmth",
+          "depth": 2,
+          "name": "warmth"
+        },
+        {
+          "text": "warm (up)",
+          "depth": 2,
+          "name": "warm (up)"
+        },
+        {
+          "text": "warm",
+          "depth": 2,
+          "name": "warm"
+        },
+        {
+          "text": "light",
+          "depth": 2,
+          "name": "light"
+        },
+        {
+          "text": "light / lighting",
+          "depth": 2,
+          "name": "light / lighting"
+        },
+        {
+          "text": "light (up)",
+          "depth": 2,
+          "name": "light (up)"
+        },
+        {
+          "text": "light / lit",
+          "depth": 2,
+          "name": "light / lit"
+        },
+        {
+          "text": "store",
+          "depth": 2,
+          "name": "store"
+        },
+        {
+          "text": "storage",
+          "depth": 2,
+          "name": "storage"
+        },
+        {
+          "text": "store",
+          "depth": 2,
+          "name": "store"
+        },
+        {
+          "text": "stored",
+          "depth": 2,
+          "name": "stored"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "542:1273",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  I keep my shirts and jackets in the __________.",
+          "depth": 1,
+          "name": "1. I keep my shirts and jackets in the __________."
+        },
+        {
+          "text": "2.  The __________ clock woke me up at 6:30 this morning.",
+          "depth": 1,
+          "name": "2. The __________ clock woke me up at 6:30 this morning."
+        },
+        {
+          "text": "3.  She put fresh __________ on the bed before the guests arrived.",
+          "depth": 1,
+          "name": "3. She put fresh __________ on the bed before the guests arrived."
+        },
+        {
+          "text": "4.  I need a new __________ — my old one is too soft and I wake up with a sore back.",
+          "depth": 1,
+          "name": "4. I need a new __________ — my old one is too soft and I wake up with a sore back."
+        },
+        {
+          "text": "5.  Please hang your coat on a __________ in the wardrobe.",
+          "depth": 1,
+          "name": "5. Please hang your coat on a __________ in the wardrobe."
+        },
+        {
+          "text": "6.  He sat at his __________ to study for the exam.",
+          "depth": 1,
+          "name": "6. He sat at his __________ to study for the exam."
+        },
+        {
+          "text": "7.  I closed the __________ because the sunlight was too strong.",
+          "depth": 1,
+          "name": "7. I closed the __________ because the sunlight was too strong."
+        },
+        {
+          "text": "8.  My __________ has three drawers where I keep socks and underwear.",
+          "depth": 1,
+          "name": "8. My __________ has three drawers where I keep socks and underwear."
+        },
+        {
+          "text": "9.  She placed a small __________ next to the bed and put a lamp on it.",
+          "depth": 1,
+          "name": "9. She placed a small __________ next to the bed and put a lamp on it."
+        },
+        {
+          "text": "10. I put on my __________ and slippers before going to the kitchen.",
+          "depth": 1,
+          "name": "10. I put on my __________ and slippers before going to the kitchen."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. wardrobe  2. alarm  3. sheets  4. mattress  5. hanger  6. desk  7. blinds  8. dresser  9. nightstand  10. pajamas",
+          "depth": 2,
+          "name": "1. wardrobe 2. alarm 3. sheets 4. mattress 5. hanger 6. desk 7. blinds 8. dresser 9. nightstand 10. pajamas"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "542:1291",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "🇬🇧 vs 🇺🇸 Vocabulary",
+          "depth": 2,
+          "name": "🇬🇧 vs 🇺🇸 Vocabulary"
+        },
+        {
+          "text": "British: \"wardrobe\" / American: \"closet\". British: \"duvet\" / American: \"comforter\". British: \"chest of drawers\" / American: \"dresser\" (both are used in both dialects, but preference differs).",
+          "depth": 2,
+          "name": "British: \"wardrobe\" / American: \"closet\". British: \"duvet\" / American: \"comforter\". British: \"chest of drawers\" / American: \"dresser\" (both are used in both dialects, but preference differs)."
+        },
+        {
+          "text": "Bedroom vs Bed Room",
+          "depth": 2,
+          "name": "Bedroom vs Bed Room"
+        },
+        {
+          "text": "'Bedroom' is always written as one word. Writing 'bed room' (two words) is incorrect in modern English.",
+          "depth": 2,
+          "name": "'Bedroom' is always written as one word. Writing 'bed room' (two words) is incorrect in modern English."
+        },
+        {
+          "text": "Make the Bed",
+          "depth": 2,
+          "name": "Make the Bed"
+        },
+        {
+          "text": "In English-speaking cultures, 'making the bed' (straightening sheets, fluffing pillows) is considered a daily habit. It appears often in household vocabulary and instructions.",
+          "depth": 2,
+          "name": "In English-speaking cultures, 'making the bed' (straightening sheets, fluffing pillows) is considered a daily habit. It appears often in household vocabulary and instructions."
+        },
+        {
+          "text": "Guest Room vs Spare Room",
+          "depth": 2,
+          "name": "Guest Room vs Spare Room"
+        },
+        {
+          "text": "'Spare room' (British) and 'guest room' (American) both refer to an extra bedroom. 'Master bedroom' is the largest bedroom, though some now prefer 'primary bedroom'.",
+          "depth": 2,
+          "name": "'Spare room' (British) and 'guest room' (American) both refer to an extra bedroom. 'Master bedroom' is the largest bedroom, though some now prefer 'primary bedroom'."
+        },
+        {
+          "text": "Counting Bedrooms",
+          "depth": 2,
+          "name": "Counting Bedrooms"
+        },
+        {
+          "text": "Property listings use bedroom count as a key feature: 'a three-bedroom house', 'a studio flat' (no separate bedroom). This is important for housing vocabulary.",
+          "depth": 2,
+          "name": "Property listings use bedroom count as a key feature: 'a three-bedroom house', 'a studio flat' (no separate bedroom). This is important for housing vocabulary."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "542:1310",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "bed",
+          "depth": 2,
+          "name": "bed"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "make the ~, go to ~, ~ frame, bunk ~",
+          "depth": 2,
+          "name": "make the ~, go to ~, ~ frame, bunk ~"
+        },
+        {
+          "text": "pillow",
+          "depth": 2,
+          "name": "pillow"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ case, throw ~, fluffy ~, ~ fight",
+          "depth": 2,
+          "name": "~ case, throw ~, fluffy ~, ~ fight"
+        },
+        {
+          "text": "wardrobe",
+          "depth": 2,
+          "name": "wardrobe"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "built-in ~, walk-in ~, ~ door",
+          "depth": 2,
+          "name": "built-in ~, walk-in ~, ~ door"
+        },
+        {
+          "text": "dresser",
+          "depth": 2,
+          "name": "dresser"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ drawer, ~ mirror, wooden ~",
+          "depth": 2,
+          "name": "~ drawer, ~ mirror, wooden ~"
+        },
+        {
+          "text": "curtain",
+          "depth": 2,
+          "name": "curtain"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "draw the ~s, shower ~, ~ rod, ~ rail",
+          "depth": 2,
+          "name": "draw the ~s, shower ~, ~ rod, ~ rail"
+        },
+        {
+          "text": "lamp",
+          "depth": 2,
+          "name": "lamp"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "desk ~, floor ~, table ~, bedside ~",
+          "depth": 2,
+          "name": "desk ~, floor ~, table ~, bedside ~"
+        },
+        {
+          "text": "mattress",
+          "depth": 2,
+          "name": "mattress"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "memory foam ~, spring ~, ~ pad",
+          "depth": 2,
+          "name": "memory foam ~, spring ~, ~ pad"
+        },
+        {
+          "text": "blanket",
+          "depth": 2,
+          "name": "blanket"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "wool ~, electric ~, ~ of snow",
+          "depth": 2,
+          "name": "wool ~, electric ~, ~ of snow"
+        },
+        {
+          "text": "desk",
+          "depth": 2,
+          "name": "desk"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "sit at a ~, ~ lamp, standing ~, ~ chair",
+          "depth": 2,
+          "name": "sit at a ~, ~ lamp, standing ~, ~ chair"
+        },
+        {
+          "text": "rug",
+          "depth": 2,
+          "name": "rug"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "area ~, ~ on the floor, Persian ~",
+          "depth": 2,
+          "name": "area ~, ~ on the floor, Persian ~"
+        }
+      ]
+    }
+  }
+}

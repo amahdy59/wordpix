@@ -1,0 +1,1576 @@
+{
+  "unitId": "vet-clinic",
+  "name": "The Vet Clinic",
+  "subtopics": [
+    {
+      "id": "animals",
+      "title": "Animals",
+      "wordIds": [
+        "dog",
+        "cat",
+        "rabbit",
+        "hamster",
+        "parrot",
+        "turtle",
+        "guinea-pig",
+        "fish",
+        "snake",
+        "ferret"
+      ]
+    },
+    {
+      "id": "examination",
+      "title": "Examination",
+      "wordIds": [
+        "stethoscope",
+        "thermometer",
+        "scale",
+        "otoscope",
+        "x-ray",
+        "ultrasound",
+        "blood-test",
+        "microscope",
+        "syringe",
+        "bandage"
+      ]
+    },
+    {
+      "id": "treatments",
+      "title": "Treatments",
+      "wordIds": [
+        "vaccination",
+        "surgery",
+        "dental-cleaning",
+        "microchip",
+        "spay",
+        "neuter",
+        "medication",
+        "stitches",
+        "cast",
+        "cone-collar"
+      ]
+    },
+    {
+      "id": "clinic-areas",
+      "title": "Clinic Areas",
+      "wordIds": [
+        "waiting-room",
+        "exam-table",
+        "operating-room",
+        "kennel",
+        "pharmacy",
+        "reception",
+        "lab",
+        "recovery-room",
+        "grooming-area",
+        "outdoor-run"
+      ]
+    },
+    {
+      "id": "supplies",
+      "title": "Supplies",
+      "wordIds": [
+        "leash",
+        "carrier",
+        "muzzle",
+        "treats",
+        "food-bowl",
+        "water-dish",
+        "collar",
+        "tag",
+        "nail-clippers",
+        "brush"
+      ]
+    },
+    {
+      "id": "staff-roles",
+      "title": "Staff & Roles",
+      "wordIds": [
+        "veterinarian",
+        "vet-tech",
+        "receptionist",
+        "groomer",
+        "kennel-attendant",
+        "surgeon",
+        "specialist",
+        "intern",
+        "volunteer",
+        "pet-owner"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "dog",
+      "label": "Dog",
+      "ipa": "/dɒɡ/",
+      "cefr": "B1",
+      "imageNodeId": "119:3951"
+    },
+    {
+      "kind": "card",
+      "id": "cat",
+      "label": "Cat",
+      "ipa": "/kæt/",
+      "cefr": "B1",
+      "imageNodeId": "119:3955"
+    },
+    {
+      "kind": "card",
+      "id": "rabbit",
+      "label": "Rabbit",
+      "ipa": "/ˈræbɪt/",
+      "cefr": "B1",
+      "imageNodeId": "119:3959"
+    },
+    {
+      "kind": "card",
+      "id": "hamster",
+      "label": "Hamster",
+      "ipa": "/ˈhæmstər/",
+      "cefr": "B1",
+      "imageNodeId": "119:3963"
+    },
+    {
+      "kind": "card",
+      "id": "parrot",
+      "label": "Parrot",
+      "ipa": "/ˈpærət/",
+      "cefr": "B1",
+      "imageNodeId": "119:3967"
+    },
+    {
+      "kind": "card",
+      "id": "turtle",
+      "label": "Turtle",
+      "ipa": "/ˈtɜːrtəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:3971"
+    },
+    {
+      "kind": "card",
+      "id": "guinea-pig",
+      "label": "Guinea Pig",
+      "ipa": "/ˈɡɪni pɪɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:3975"
+    },
+    {
+      "kind": "card",
+      "id": "fish",
+      "label": "Fish",
+      "ipa": "/fɪʃ/",
+      "cefr": "B1",
+      "imageNodeId": "119:3979"
+    },
+    {
+      "kind": "card",
+      "id": "snake",
+      "label": "Snake",
+      "ipa": "/sneɪk/",
+      "cefr": "B1",
+      "imageNodeId": "119:3983"
+    },
+    {
+      "kind": "card",
+      "id": "ferret",
+      "label": "Ferret",
+      "ipa": "/ˈfɛrɪt/",
+      "cefr": "B1",
+      "imageNodeId": "119:3987"
+    },
+    {
+      "kind": "card",
+      "id": "stethoscope",
+      "label": "Stethoscope",
+      "ipa": "/ˈstɛθəˌskoʊp/",
+      "cefr": "B2",
+      "imageNodeId": "119:3996"
+    },
+    {
+      "kind": "card",
+      "id": "thermometer",
+      "label": "Thermometer",
+      "ipa": "/θərˈmɒmɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "119:4000"
+    },
+    {
+      "kind": "card",
+      "id": "scale",
+      "label": "Scale",
+      "ipa": "/skeɪl/",
+      "cefr": "B1",
+      "imageNodeId": "119:4004"
+    },
+    {
+      "kind": "card",
+      "id": "otoscope",
+      "label": "Otoscope",
+      "ipa": "/ˈoʊtəˌskoʊp/",
+      "cefr": "B1",
+      "imageNodeId": "119:4008"
+    },
+    {
+      "kind": "card",
+      "id": "x-ray",
+      "label": "X Ray",
+      "ipa": "/ˈɛksˌreɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:4012"
+    },
+    {
+      "kind": "card",
+      "id": "ultrasound",
+      "label": "Ultrasound",
+      "ipa": "/ˈʌltrəˌsaʊnd/",
+      "cefr": "B2",
+      "imageNodeId": "119:4016"
+    },
+    {
+      "kind": "card",
+      "id": "blood-test",
+      "label": "Blood Test",
+      "ipa": "/blʌd tɛst/",
+      "cefr": "B2",
+      "imageNodeId": "119:4020"
+    },
+    {
+      "kind": "card",
+      "id": "microscope",
+      "label": "Microscope",
+      "ipa": "/ˈmaɪkrəˌskoʊp/",
+      "cefr": "B2",
+      "imageNodeId": "119:4024"
+    },
+    {
+      "kind": "card",
+      "id": "syringe",
+      "label": "Syringe",
+      "ipa": "/sɪˈrɪndʒ/",
+      "cefr": "B1",
+      "imageNodeId": "119:4028"
+    },
+    {
+      "kind": "card",
+      "id": "bandage",
+      "label": "Bandage",
+      "ipa": "/ˈbændɪdʒ/",
+      "cefr": "B1",
+      "imageNodeId": "119:4032"
+    },
+    {
+      "kind": "card",
+      "id": "vaccination",
+      "label": "Vaccination",
+      "ipa": "/ˌvæksɪˈneɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "119:4041"
+    },
+    {
+      "kind": "card",
+      "id": "surgery",
+      "label": "Surgery",
+      "ipa": "/ˈsɜːrdʒəri/",
+      "cefr": "B1",
+      "imageNodeId": "119:4045"
+    },
+    {
+      "kind": "card",
+      "id": "dental-cleaning",
+      "label": "Dental Cleaning",
+      "ipa": "/ˈdɛntəl ˈkliːnɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "119:4049"
+    },
+    {
+      "kind": "card",
+      "id": "microchip",
+      "label": "Microchip",
+      "ipa": "/ˈmaɪkroʊˌtʃɪp/",
+      "cefr": "B1",
+      "imageNodeId": "119:4053"
+    },
+    {
+      "kind": "card",
+      "id": "spay",
+      "label": "Spay",
+      "ipa": "/speɪ/",
+      "cefr": "B1",
+      "imageNodeId": "119:4057"
+    },
+    {
+      "kind": "card",
+      "id": "neuter",
+      "label": "Neuter",
+      "ipa": "/ˈnjuːtər/",
+      "cefr": "B1",
+      "imageNodeId": "119:4061"
+    },
+    {
+      "kind": "card",
+      "id": "medication",
+      "label": "Medication",
+      "ipa": "/ˌmɛdɪˈkeɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "119:4065"
+    },
+    {
+      "kind": "card",
+      "id": "stitches",
+      "label": "Stitches",
+      "ipa": "/ˈstɪtʃɪz/",
+      "cefr": "B1",
+      "imageNodeId": "119:4069"
+    },
+    {
+      "kind": "card",
+      "id": "cast",
+      "label": "Cast",
+      "ipa": "/kæst/",
+      "cefr": "B1",
+      "imageNodeId": "119:4073"
+    },
+    {
+      "kind": "card",
+      "id": "cone-collar",
+      "label": "Cone Collar",
+      "ipa": "/koʊn ˈkɒlər/",
+      "cefr": "B2",
+      "imageNodeId": "119:4077"
+    },
+    {
+      "kind": "card",
+      "id": "waiting-room",
+      "label": "Waiting Room",
+      "ipa": "/ˈweɪtɪŋ ruːm/",
+      "cefr": "B2",
+      "imageNodeId": "119:4086"
+    },
+    {
+      "kind": "card",
+      "id": "exam-table",
+      "label": "Exam Table",
+      "ipa": "/ɪɡˈzæm ˈteɪbəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:4090"
+    },
+    {
+      "kind": "card",
+      "id": "operating-room",
+      "label": "Operating Room",
+      "ipa": "/ˈɒpəˌreɪtɪŋ ruːm/",
+      "cefr": "B2",
+      "imageNodeId": "119:4094"
+    },
+    {
+      "kind": "card",
+      "id": "kennel",
+      "label": "Kennel",
+      "ipa": "/ˈkɛnəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:4098"
+    },
+    {
+      "kind": "card",
+      "id": "pharmacy",
+      "label": "Pharmacy",
+      "ipa": "/ˈfɑːrməsi/",
+      "cefr": "B1",
+      "imageNodeId": "119:4102"
+    },
+    {
+      "kind": "card",
+      "id": "reception",
+      "label": "Reception",
+      "ipa": "/rɪˈsɛpʃən/",
+      "cefr": "B1",
+      "imageNodeId": "119:4106"
+    },
+    {
+      "kind": "card",
+      "id": "lab",
+      "label": "Lab",
+      "ipa": "/læb/",
+      "cefr": "B1",
+      "imageNodeId": "119:4110"
+    },
+    {
+      "kind": "card",
+      "id": "recovery-room",
+      "label": "Recovery Room",
+      "ipa": "/rɪˈkʌvəri ruːm/",
+      "cefr": "B2",
+      "imageNodeId": "119:4114"
+    },
+    {
+      "kind": "card",
+      "id": "grooming-area",
+      "label": "Grooming Area",
+      "ipa": "/ˈɡruːmɪŋ ˈɛəriə/",
+      "cefr": "B2",
+      "imageNodeId": "119:4118"
+    },
+    {
+      "kind": "card",
+      "id": "outdoor-run",
+      "label": "Outdoor Run",
+      "ipa": "/ˈaʊtˌdɔːr rʌn/",
+      "cefr": "B2",
+      "imageNodeId": "119:4122"
+    },
+    {
+      "kind": "card",
+      "id": "leash",
+      "label": "Leash",
+      "ipa": "/liːʃ/",
+      "cefr": "B1",
+      "imageNodeId": "119:4131"
+    },
+    {
+      "kind": "card",
+      "id": "carrier",
+      "label": "Carrier",
+      "ipa": "/ˈkæriər/",
+      "cefr": "B1",
+      "imageNodeId": "119:4135"
+    },
+    {
+      "kind": "card",
+      "id": "muzzle",
+      "label": "Muzzle",
+      "ipa": "/ˈmʌzəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:4139"
+    },
+    {
+      "kind": "card",
+      "id": "treats",
+      "label": "Treats",
+      "ipa": "/triːts/",
+      "cefr": "B1",
+      "imageNodeId": "119:4143"
+    },
+    {
+      "kind": "card",
+      "id": "food-bowl",
+      "label": "Food Bowl",
+      "ipa": "/fuːd boʊl/",
+      "cefr": "B2",
+      "imageNodeId": "119:4147"
+    },
+    {
+      "kind": "card",
+      "id": "water-dish",
+      "label": "Water Dish",
+      "ipa": "/ˈwɔːtər dɪʃ/",
+      "cefr": "B2",
+      "imageNodeId": "119:4151"
+    },
+    {
+      "kind": "card",
+      "id": "collar",
+      "label": "Collar",
+      "ipa": "/ˈkɒlər/",
+      "cefr": "B1",
+      "imageNodeId": "119:4155"
+    },
+    {
+      "kind": "card",
+      "id": "tag",
+      "label": "Tag",
+      "ipa": "/tæɡ/",
+      "cefr": "B1",
+      "imageNodeId": "119:4159"
+    },
+    {
+      "kind": "card",
+      "id": "nail-clippers",
+      "label": "Nail Clippers",
+      "ipa": "/neɪl ˈklɪpərz/",
+      "cefr": "B2",
+      "imageNodeId": "119:4163"
+    },
+    {
+      "kind": "card",
+      "id": "brush",
+      "label": "Brush",
+      "ipa": "/brʌʃ/",
+      "cefr": "B1",
+      "imageNodeId": "119:4167"
+    },
+    {
+      "kind": "card",
+      "id": "veterinarian",
+      "label": "Veterinarian",
+      "ipa": "/ˌvɛtərɪˈnɛəriən/",
+      "cefr": "B2",
+      "imageNodeId": "119:4176"
+    },
+    {
+      "kind": "card",
+      "id": "vet-tech",
+      "label": "Vet Tech",
+      "ipa": "/vɛt tɛk/",
+      "cefr": "B2",
+      "imageNodeId": "119:4180"
+    },
+    {
+      "kind": "card",
+      "id": "receptionist",
+      "label": "Receptionist",
+      "ipa": "/rɪˈsɛpʃənɪst/",
+      "cefr": "B2",
+      "imageNodeId": "119:4184"
+    },
+    {
+      "kind": "card",
+      "id": "groomer",
+      "label": "Groomer",
+      "ipa": "/ˈɡruːmər/",
+      "cefr": "B1",
+      "imageNodeId": "119:4188"
+    },
+    {
+      "kind": "card",
+      "id": "kennel-attendant",
+      "label": "Kennel Attendant",
+      "ipa": "/ˈkɛnəl əˈtɛndənt/",
+      "cefr": "C1",
+      "imageNodeId": "119:4192"
+    },
+    {
+      "kind": "card",
+      "id": "surgeon",
+      "label": "Surgeon",
+      "ipa": "/ˈsɜːrdʒən/",
+      "cefr": "B1",
+      "imageNodeId": "119:4196"
+    },
+    {
+      "kind": "card",
+      "id": "specialist",
+      "label": "Specialist",
+      "ipa": "/ˈspɛʃəlɪst/",
+      "cefr": "B2",
+      "imageNodeId": "119:4200"
+    },
+    {
+      "kind": "card",
+      "id": "intern",
+      "label": "Intern",
+      "ipa": "/ˈɪntɜːrn/",
+      "cefr": "B1",
+      "imageNodeId": "119:4204"
+    },
+    {
+      "kind": "card",
+      "id": "volunteer",
+      "label": "Volunteer",
+      "ipa": "/ˌvɒlənˈtɪər/",
+      "cefr": "B1",
+      "imageNodeId": "119:4208"
+    },
+    {
+      "kind": "card",
+      "id": "pet-owner",
+      "label": "Pet Owner",
+      "ipa": "/pɛt ˈoʊnər/",
+      "cefr": "B2",
+      "imageNodeId": "119:4212"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "554:3200",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "554:3202",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2 · Topic: The Vet Clinic",
+          "depth": 1,
+          "name": "Level: B2 · Topic: The Vet Clinic"
+        },
+        {
+          "text": "Caring for the Ones Who Cannot Speak — Inside a Vet Clinic\n\nA veterinary clinic is a medical facility for animals — a place where diagnosis, treatment, surgery, and preventive care are performed on patients who cannot describe their symptoms. The veterinarian must read behaviour, physical signs, and test results to determine what is wrong. This makes veterinary medicine, in some ways, harder than human medicine.\n\nThe clinic is organised around patient flow. A waiting room separates species — dogs on one side, cats on the other, with smaller animals in carriers on laps or benches. A receptionist manages appointments, records, and payments. A pet owner checks in with a leash, a carrier, or a muzzle (for anxious animals). Treats help calm nervous patients.\n\nThe exam table is the clinical centre. A veterinarian (or vet) uses a stethoscope to listen to the heart and lungs. A thermometer takes temperature — rectally, in most animals. A scale records weight — essential for calculating medication doses. An otoscope examines the ears. More advanced diagnostics include an X-ray for bones and organs, an ultrasound for soft tissue, a blood test for organ function and infection, and a microscope for examining samples.\n\nCommon procedures span preventive and curative care. A vaccination protects against diseases. A microchip — a rice-grain-sized device injected under the skin — allows lost pets to be identified and returned. A spay (for females) and a neuter (for males) are surgical sterilisations. Dental cleaning removes plaque and tartar under anaesthesia. Medication — tablets, liquids, or injections — treats infections, pain, and chronic conditions. A syringe delivers injections. A bandage protects wounds. Stitches close surgical incisions. A cast immobilises broken bones. A cone collar — the plastic cone around the head — prevents the animal from licking or biting its wound.\n\nThe clinical spaces are specialised. An operating room is equipped for surgery. A lab processes blood, urine, and tissue samples. A pharmacy stocks medications. A recovery room allows animals to wake from anaesthesia under observation. A kennel houses animals that need overnight care. A grooming area provides bathing, brushing, and nail clipping. An outdoor run gives dogs exercise space.\n\nThe staff is multidisciplinary. A vet tech assists during examinations and procedures. A groomer handles hygiene. A kennel attendant feeds and monitors hospitalised animals. A surgeon performs complex operations. A specialist — in cardiology, oncology, or orthopaedics — handles referral cases. An intern learns under supervision. A volunteer supports non-clinical tasks.\n\nPet accessories are part of the vocabulary: a collar with a tag for identification, a leash for walking, a food bowl and a water dish for meals, nail clippers for grooming, and a brush for the coat.\n\nVeterinary medicine requires scientific rigour and emotional intelligence in equal measure — because the patient cannot consent, cannot complain, and cannot understand why the treatment hurts. The vet's job is to heal the animal and to reassure the owner — simultaneously.",
+          "depth": 1,
+          "name": "Caring for the Ones Who Cannot Speak — Inside a Vet Clinic A veterinary clinic is a medical facility for animals — a place where diagnosis, treatment, surgery, and preventive care are performed on patients who cannot describe their symptoms. The veterinarian must read behaviour, physical signs, and test results to determine what is wrong. This makes veterinary medicine, in some ways, harder than human medicine. The clinic is organised around patient flow. A waiting room separates species — dogs on one side, cats on the other, with smaller animals in carriers on laps or benches. A receptionist manages appointments, records, and payments. A pet owner checks in with a leash, a carrier, or a muzzle (for anxious animals). Treats help calm nervous patients. The exam table is the clinical centre. A veterinarian (or vet) uses a stethoscope to listen to the heart and lungs. A thermometer takes temperature — rectally, in most animals. A scale records weight — essential for calculating medication doses. An otoscope examines the ears. More advanced diagnostics include an X-ray for bones and organs, an ultrasound for soft tissue, a blood test for organ function and infection, and a microscope for examining samples. Common procedures span preventive and curative care. A vaccination protects against diseases. A microchip — a rice-grain-sized device injected under the skin — allows lost pets to be identified and returned. A spay (for females) and a neuter (for males) are surgical sterilisations. Dental cleaning removes plaque and tartar under anaesthesia. Medication — tablets, liquids, or injections — treats infections, pain, and chronic conditions. A syringe delivers injections. A bandage protects wounds. Stitches close surgical incisions. A cast immobilises broken bones. A cone collar — the plastic cone around the head — prevents the animal from licking or biting its wound. The clinical spaces are specialised. An operating room is equipped for surgery. A lab processes blood, urine, and tissue samples. A pharmacy stocks medications. A recovery room allows animals to wake from anaesthesia under observation. A kennel houses animals that need overnight care. A grooming area provides bathing, brushing, and nail clipping. An outdoor run gives dogs exercise space. The staff is multidisciplinary. A vet tech assists during examinations and procedures. A groomer handles hygiene. A kennel attendant feeds and monitors hospitalised animals. A surgeon performs complex operations. A specialist — in cardiology, oncology, or orthopaedics — handles referral cases. An intern learns under supervision. A volunteer supports non-clinical tasks. Pet accessories are part of the vocabulary: a collar with a tag for identification, a leash for walking, a food bowl and a water dish for meals, nail clippers for grooming, and a brush for the coat. Veterinary medicine requires scientific rigour and emotional intelligence in equal measure — because the patient cannot consent, cannot complain, and cannot understand why the treatment hurts. The vet's job is to heal the animal and to reassure the owner — simultaneously."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Why does the passage say veterinary medicine is 'in some ways harder than human medicine'?",
+          "depth": 1,
+          "name": "1. Why does the passage say veterinary medicine is 'in some ways harder than human medicine'?"
+        },
+        {
+          "text": "2. What diagnostic tools does a vet use? Name at least five and explain what each examines.",
+          "depth": 1,
+          "name": "2. What diagnostic tools does a vet use? Name at least five and explain what each examines."
+        },
+        {
+          "text": "3. Describe four common procedures performed at a vet clinic.",
+          "depth": 1,
+          "name": "3. Describe four common procedures performed at a vet clinic."
+        },
+        {
+          "text": "4. What are the different clinical spaces in the clinic and what happens in each?",
+          "depth": 1,
+          "name": "4. What are the different clinical spaces in the clinic and what happens in each?"
+        },
+        {
+          "text": "5. What qualities does a good veterinarian need, according to the passage?",
+          "depth": 1,
+          "name": "5. What qualities does a good veterinarian need, according to the passage?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "554:3215",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "sick as a dog",
+          "depth": 2,
+          "name": "sick as a dog"
+        },
+        {
+          "text": "very unwell",
+          "depth": 2,
+          "name": "very unwell"
+        },
+        {
+          "text": "\"I ate something bad and was sick as a dog all weekend.\"",
+          "depth": 2,
+          "name": "\"I ate something bad and was sick as a dog all weekend.\""
+        },
+        {
+          "text": "let the cat out of the bag",
+          "depth": 2,
+          "name": "let the cat out of the bag"
+        },
+        {
+          "text": "accidentally reveal a secret",
+          "depth": 2,
+          "name": "accidentally reveal a secret"
+        },
+        {
+          "text": "\"Don't let the cat out of the bag about the surprise party!\"",
+          "depth": 2,
+          "name": "\"Don't let the cat out of the bag about the surprise party!\""
+        },
+        {
+          "text": "put down / put to sleep",
+          "depth": 2,
+          "name": "put down / put to sleep"
+        },
+        {
+          "text": "euthanise an animal (euphemism)",
+          "depth": 2,
+          "name": "euthanise an animal (euphemism)"
+        },
+        {
+          "text": "\"The old horse was in so much pain, the vet had to put him down.\"",
+          "depth": 2,
+          "name": "\"The old horse was in so much pain, the vet had to put him down.\""
+        },
+        {
+          "text": "a clean bill of health",
+          "depth": 2,
+          "name": "a clean bill of health"
+        },
+        {
+          "text": "a report saying someone is healthy",
+          "depth": 2,
+          "name": "a report saying someone is healthy"
+        },
+        {
+          "text": "\"The vet gave the puppy a clean bill of health.\"",
+          "depth": 2,
+          "name": "\"The vet gave the puppy a clean bill of health.\""
+        },
+        {
+          "text": "fight like cats and dogs",
+          "depth": 2,
+          "name": "fight like cats and dogs"
+        },
+        {
+          "text": "argue or fight constantly",
+          "depth": 2,
+          "name": "argue or fight constantly"
+        },
+        {
+          "text": "\"My two children fight like cats and dogs.\"",
+          "depth": 2,
+          "name": "\"My two children fight like cats and dogs.\""
+        },
+        {
+          "text": "bark up the wrong tree",
+          "depth": 2,
+          "name": "bark up the wrong tree"
+        },
+        {
+          "text": "make a wrong assumption; accuse the wrong person",
+          "depth": 2,
+          "name": "make a wrong assumption; accuse the wrong person"
+        },
+        {
+          "text": "\"If you think I took it, you're barking up the wrong tree.\"",
+          "depth": 2,
+          "name": "\"If you think I took it, you're barking up the wrong tree.\""
+        },
+        {
+          "text": "look after / take care of",
+          "depth": 2,
+          "name": "look after / take care of"
+        },
+        {
+          "text": "be responsible for someone's wellbeing",
+          "depth": 2,
+          "name": "be responsible for someone's wellbeing"
+        },
+        {
+          "text": "\"Who's looking after the dog while you're on holiday?\"",
+          "depth": 2,
+          "name": "\"Who's looking after the dog while you're on holiday?\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "554:3247",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A pet owner bringing a cat to the vet",
+          "depth": 1,
+          "name": "Scene: A pet owner bringing a cat to the vet"
+        },
+        {
+          "text": "Owner:",
+          "depth": 2,
+          "name": "Owner:"
+        },
+        {
+          "text": "My cat hasn't been eating for two days and she seems very tired.",
+          "depth": 2,
+          "name": "My cat hasn't been eating for two days and she seems very tired."
+        },
+        {
+          "text": "Vet:",
+          "depth": 2,
+          "name": "Vet:"
+        },
+        {
+          "text": "Let me take a look. How old is she?",
+          "depth": 2,
+          "name": "Let me take a look. How old is she?"
+        },
+        {
+          "text": "Owner:",
+          "depth": 2,
+          "name": "Owner:"
+        },
+        {
+          "text": "She's seven. She's usually very active and eats everything.",
+          "depth": 2,
+          "name": "She's seven. She's usually very active and eats everything."
+        },
+        {
+          "text": "Vet:",
+          "depth": 2,
+          "name": "Vet:"
+        },
+        {
+          "text": "I'll check her temperature and feel her abdomen. Has she been drinking water?",
+          "depth": 2,
+          "name": "I'll check her temperature and feel her abdomen. Has she been drinking water?"
+        },
+        {
+          "text": "Owner:",
+          "depth": 2,
+          "name": "Owner:"
+        },
+        {
+          "text": "A little bit, but much less than normal.",
+          "depth": 2,
+          "name": "A little bit, but much less than normal."
+        },
+        {
+          "text": "Vet:",
+          "depth": 2,
+          "name": "Vet:"
+        },
+        {
+          "text": "Her temperature is slightly raised. I'd like to do a blood test to check for infection.",
+          "depth": 2,
+          "name": "Her temperature is slightly raised. I'd like to do a blood test to check for infection."
+        },
+        {
+          "text": "Owner:",
+          "depth": 2,
+          "name": "Owner:"
+        },
+        {
+          "text": "Will that hurt her?",
+          "depth": 2,
+          "name": "Will that hurt her?"
+        },
+        {
+          "text": "Vet:",
+          "depth": 2,
+          "name": "Vet:"
+        },
+        {
+          "text": "It's very quick — just a tiny needle in her leg. We'll have the results within an hour.",
+          "depth": 2,
+          "name": "It's very quick — just a tiny needle in her leg. We'll have the results within an hour."
+        },
+        {
+          "text": "Owner:",
+          "depth": 2,
+          "name": "Owner:"
+        },
+        {
+          "text": "What do you think it could be?",
+          "depth": 2,
+          "name": "What do you think it could be?"
+        },
+        {
+          "text": "Vet:",
+          "depth": 2,
+          "name": "Vet:"
+        },
+        {
+          "text": "It could be an infection, or possibly she's eaten something that upset her stomach. The blood test will help us narrow it down.",
+          "depth": 2,
+          "name": "It could be an infection, or possibly she's eaten something that upset her stomach. The blood test will help us narrow it down."
+        },
+        {
+          "text": "Owner:",
+          "depth": 2,
+          "name": "Owner:"
+        },
+        {
+          "text": "Is she up to date with her vaccinations?",
+          "depth": 2,
+          "name": "Is she up to date with her vaccinations?"
+        },
+        {
+          "text": "Vet:",
+          "depth": 2,
+          "name": "Vet:"
+        },
+        {
+          "text": "Let me check her records... Yes, everything is current. I'll prescribe some antibiotics and a special diet for a few days. If she doesn't improve, bring her back.",
+          "depth": 2,
+          "name": "Let me check her records... Yes, everything is current. I'll prescribe some antibiotics and a special diet for a few days. If she doesn't improve, bring her back."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "554:3288",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The vet gave us an advice about how to care for our rabbit after the surgery.\"",
+          "depth": 2,
+          "name": "❌ \"The vet gave us an advice about how to care for our rabbit after the surgery.\""
+        },
+        {
+          "text": "✅ \"The vet gave us advice about how to care for our rabbit after the surgery.\"",
+          "depth": 2,
+          "name": "✅ \"The vet gave us advice about how to care for our rabbit after the surgery.\""
+        },
+        {
+          "text": "'Advice' is uncountable — never 'an advice' or 'advices.' Use: 'some advice', 'a piece of advice', 'the advice.' The verb form is 'advise' (different spelling and pronunciation): 'The vet advised us to...' Similar pairs: practice/practise (British), licence/license (British) — noun vs. verb.",
+          "depth": 2,
+          "name": "'Advice' is uncountable — never 'an advice' or 'advices.' Use: 'some advice', 'a piece of advice', 'the advice.' The verb form is 'advise' (different spelling and pronunciation): 'The vet advised us to...' Similar pairs: practice/practise (British), licence/license (British) — noun vs. verb."
+        },
+        {
+          "text": "❌ \"The cat has been sick since three days and refuses to eat from its food bowl.\"",
+          "depth": 2,
+          "name": "❌ \"The cat has been sick since three days and refuses to eat from its food bowl.\""
+        },
+        {
+          "text": "✅ \"The cat has been sick for three days and refuses to eat from its food bowl.\"",
+          "depth": 2,
+          "name": "✅ \"The cat has been sick for three days and refuses to eat from its food bowl.\""
+        },
+        {
+          "text": "'For' + duration: 'for three days', 'for a week.' 'Since' + point in time: 'since Monday', 'since the vaccination', 'since last night.' Never *'since three days' — three days is a duration, not a point in time. Present perfect + for/since: 'has been sick for three days' / 'has been sick since Tuesday.'",
+          "depth": 2,
+          "name": "'For' + duration: 'for three days', 'for a week.' 'Since' + point in time: 'since Monday', 'since the vaccination', 'since last night.' Never *'since three days' — three days is a duration, not a point in time. Present perfect + for/since: 'has been sick for three days' / 'has been sick since Tuesday.'"
+        },
+        {
+          "text": "❌ \"The veterinarian suggested us to bring the dog back for a follow-up examination.\"",
+          "depth": 2,
+          "name": "❌ \"The veterinarian suggested us to bring the dog back for a follow-up examination.\""
+        },
+        {
+          "text": "✅ \"The veterinarian suggested that we bring the dog back for a follow-up examination.\"",
+          "depth": 2,
+          "name": "✅ \"The veterinarian suggested that we bring the dog back for a follow-up examination.\""
+        },
+        {
+          "text": "'Suggest' never takes object + infinitive (*suggest us to bring). Use: suggest + that-clause: 'suggested that we bring' (subjunctive). Suggest + gerund: 'suggested bringing the dog back.' Compare: 'The vet advised us to bring...' — 'advise' DOES take object + infinitive. Same restriction: 'recommend', 'propose.'",
+          "depth": 2,
+          "name": "'Suggest' never takes object + infinitive (*suggest us to bring). Use: suggest + that-clause: 'suggested that we bring' (subjunctive). Suggest + gerund: 'suggested bringing the dog back.' Compare: 'The vet advised us to bring...' — 'advise' DOES take object + infinitive. Same restriction: 'recommend', 'propose.'"
+        },
+        {
+          "text": "❌ \"Each of the animals in the waiting room need to be examined by the veterinarian.\"",
+          "depth": 2,
+          "name": "❌ \"Each of the animals in the waiting room need to be examined by the veterinarian.\""
+        },
+        {
+          "text": "✅ \"Each of the animals in the waiting room needs to be examined by the veterinarian.\"",
+          "depth": 2,
+          "name": "✅ \"Each of the animals in the waiting room needs to be examined by the veterinarian.\""
+        },
+        {
+          "text": "'Each' + singular verb: 'Each needs.' 'Each of the animals needs...' Compare: 'All of the animals need...' (plural). 'Every animal needs...' (singular). Don't be misled by the plural noun ('animals') between 'each of' and the verb — the subject is 'each', which is always singular.",
+          "depth": 2,
+          "name": "'Each' + singular verb: 'Each needs.' 'Each of the animals needs...' Compare: 'All of the animals need...' (plural). 'Every animal needs...' (singular). Don't be misled by the plural noun ('animals') between 'each of' and the verb — the subject is 'each', which is always singular."
+        },
+        {
+          "text": "❌ \"The dog's health has been improved significantly since the surgery last month.\"",
+          "depth": 2,
+          "name": "❌ \"The dog's health has been improved significantly since the surgery last month.\""
+        },
+        {
+          "text": "✅ \"The dog's health has improved significantly since the surgery last month.\"",
+          "depth": 2,
+          "name": "✅ \"The dog's health has improved significantly since the surgery last month.\""
+        },
+        {
+          "text": "'Improve' can be intransitive (no passive needed): 'Health has improved.' Using passive (*has been improved) implies an external agent actively improved it — possible but unusual for health. Intransitive: 'The condition has improved.' Transitive/passive: 'The treatment has been improved by researchers.' Choose active when the subject changes on its own.",
+          "depth": 2,
+          "name": "'Improve' can be intransitive (no passive needed): 'Health has improved.' Using passive (*has been improved) implies an external agent actively improved it — possible but unusual for health. Intransitive: 'The condition has improved.' Transitive/passive: 'The treatment has been improved by researchers.' Choose active when the subject changes on its own."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "554:3312",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how veterinary and animal care vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how veterinary and animal care vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "vaccinate",
+          "depth": 2,
+          "name": "vaccinate"
+        },
+        {
+          "text": "vaccination / vaccine",
+          "depth": 2,
+          "name": "vaccination / vaccine"
+        },
+        {
+          "text": "vaccinate",
+          "depth": 2,
+          "name": "vaccinate"
+        },
+        {
+          "text": "vaccinated",
+          "depth": 2,
+          "name": "vaccinated"
+        },
+        {
+          "text": "examine",
+          "depth": 2,
+          "name": "examine"
+        },
+        {
+          "text": "examination / examiner",
+          "depth": 2,
+          "name": "examination / examiner"
+        },
+        {
+          "text": "examine",
+          "depth": 2,
+          "name": "examine"
+        },
+        {
+          "text": "examined",
+          "depth": 2,
+          "name": "examined"
+        },
+        {
+          "text": "diagnose",
+          "depth": 2,
+          "name": "diagnose"
+        },
+        {
+          "text": "diagnosis",
+          "depth": 2,
+          "name": "diagnosis"
+        },
+        {
+          "text": "diagnose",
+          "depth": 2,
+          "name": "diagnose"
+        },
+        {
+          "text": "diagnosed / diagnostic",
+          "depth": 2,
+          "name": "diagnosed / diagnostic"
+        },
+        {
+          "text": "treat",
+          "depth": 2,
+          "name": "treat"
+        },
+        {
+          "text": "treatment",
+          "depth": 2,
+          "name": "treatment"
+        },
+        {
+          "text": "treat",
+          "depth": 2,
+          "name": "treat"
+        },
+        {
+          "text": "treated / treatable",
+          "depth": 2,
+          "name": "treated / treatable"
+        },
+        {
+          "text": "prescribe",
+          "depth": 2,
+          "name": "prescribe"
+        },
+        {
+          "text": "prescription",
+          "depth": 2,
+          "name": "prescription"
+        },
+        {
+          "text": "prescribe",
+          "depth": 2,
+          "name": "prescribe"
+        },
+        {
+          "text": "prescribed",
+          "depth": 2,
+          "name": "prescribed"
+        },
+        {
+          "text": "inject",
+          "depth": 2,
+          "name": "inject"
+        },
+        {
+          "text": "injection / injector",
+          "depth": 2,
+          "name": "injection / injector"
+        },
+        {
+          "text": "inject",
+          "depth": 2,
+          "name": "inject"
+        },
+        {
+          "text": "injected / injectable",
+          "depth": 2,
+          "name": "injected / injectable"
+        },
+        {
+          "text": "infect",
+          "depth": 2,
+          "name": "infect"
+        },
+        {
+          "text": "infection",
+          "depth": 2,
+          "name": "infection"
+        },
+        {
+          "text": "infect",
+          "depth": 2,
+          "name": "infect"
+        },
+        {
+          "text": "infected / infectious",
+          "depth": 2,
+          "name": "infected / infectious"
+        },
+        {
+          "text": "operate",
+          "depth": 2,
+          "name": "operate"
+        },
+        {
+          "text": "operation / operator",
+          "depth": 2,
+          "name": "operation / operator"
+        },
+        {
+          "text": "operate",
+          "depth": 2,
+          "name": "operate"
+        },
+        {
+          "text": "operational",
+          "depth": 2,
+          "name": "operational"
+        },
+        {
+          "text": "neuter",
+          "depth": 2,
+          "name": "neuter"
+        },
+        {
+          "text": "neutering",
+          "depth": 2,
+          "name": "neutering"
+        },
+        {
+          "text": "neuter",
+          "depth": 2,
+          "name": "neuter"
+        },
+        {
+          "text": "neutered",
+          "depth": 2,
+          "name": "neutered"
+        },
+        {
+          "text": "heal",
+          "depth": 2,
+          "name": "heal"
+        },
+        {
+          "text": "healing / healer",
+          "depth": 2,
+          "name": "healing / healer"
+        },
+        {
+          "text": "heal",
+          "depth": 2,
+          "name": "heal"
+        },
+        {
+          "text": "healed",
+          "depth": 2,
+          "name": "healed"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "554:3372",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A __________ — a rice-grain-sized device under the skin — allows lost pets to be identified.",
+          "depth": 1,
+          "name": "1. A __________ — a rice-grain-sized device under the skin — allows lost pets to be identified."
+        },
+        {
+          "text": "2.  A cone __________ prevents the animal from licking or biting its wound after surgery.",
+          "depth": 1,
+          "name": "2. A cone __________ prevents the animal from licking or biting its wound after surgery."
+        },
+        {
+          "text": "3.  A __________ protects against diseases through an injection of weakened pathogens.",
+          "depth": 1,
+          "name": "3. A __________ protects against diseases through an injection of weakened pathogens."
+        },
+        {
+          "text": "4.  A __________ examines the inside of an animal's ears for infection or parasites.",
+          "depth": 1,
+          "name": "4. A __________ examines the inside of an animal's ears for infection or parasites."
+        },
+        {
+          "text": "5.  A __________ (for females) and a neuter (for males) are surgical sterilisations.",
+          "depth": 1,
+          "name": "5. A __________ (for females) and a neuter (for males) are surgical sterilisations."
+        },
+        {
+          "text": "6.  A __________ delivers injections of medication into the animal's body.",
+          "depth": 1,
+          "name": "6. A __________ delivers injections of medication into the animal's body."
+        },
+        {
+          "text": "7.  The __________ room allows animals to wake safely from anaesthesia under observation.",
+          "depth": 1,
+          "name": "7. The __________ room allows animals to wake safely from anaesthesia under observation."
+        },
+        {
+          "text": "8.  A __________ test analyses organ function, infection markers, and cell counts.",
+          "depth": 1,
+          "name": "8. A __________ test analyses organ function, infection markers, and cell counts."
+        },
+        {
+          "text": "9.  Dental __________ removes plaque and tartar from an animal's teeth under anaesthesia.",
+          "depth": 1,
+          "name": "9. Dental __________ removes plaque and tartar from an animal's teeth under anaesthesia."
+        },
+        {
+          "text": "10. A __________ attendant feeds and monitors animals that need overnight care at the clinic.",
+          "depth": 1,
+          "name": "10. A __________ attendant feeds and monitors animals that need overnight care at the clinic."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. microchip  2. collar  3. vaccination  4. otoscope  5. spay  6. syringe  7. recovery  8. blood  9. cleaning  10. kennel",
+          "depth": 2,
+          "name": "1. microchip 2. collar 3. vaccination 4. otoscope 5. spay 6. syringe 7. recovery 8. blood 9. cleaning 10. kennel"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "554:3390",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Pets in Britain",
+          "depth": 2,
+          "name": "Pets in Britain"
+        },
+        {
+          "text": "The UK is famous for being a nation of animal lovers. About 12 million households own a pet. Dogs and cats are the most popular, followed by rabbits, birds, and fish. The RSPCA (Royal Society for the Prevention of Cruelty to Animals) is a major charity that rescues and rehomes animals.",
+          "depth": 2,
+          "name": "The UK is famous for being a nation of animal lovers. About 12 million households own a pet. Dogs and cats are the most popular, followed by rabbits, birds, and fish. The RSPCA (Royal Society for the Prevention of Cruelty to Animals) is a major charity that rescues and rehomes animals."
+        },
+        {
+          "text": "Vet Costs",
+          "depth": 2,
+          "name": "Vet Costs"
+        },
+        {
+          "text": "Vet care in the UK and US is expensive. A routine check-up costs £30-60. Surgery can cost £1,000+. Many pet owners buy pet insurance to cover unexpected vet bills. The PDSA (People's Dispensary for Sick Animals) provides free vet care for owners who can't afford it.",
+          "depth": 2,
+          "name": "Vet care in the UK and US is expensive. A routine check-up costs £30-60. Surgery can cost £1,000+. Many pet owners buy pet insurance to cover unexpected vet bills. The PDSA (People's Dispensary for Sick Animals) provides free vet care for owners who can't afford it."
+        },
+        {
+          "text": "He, She, or It for Animals?",
+          "depth": 2,
+          "name": "He, She, or It for Animals?"
+        },
+        {
+          "text": "Pets with a known sex: owners use 'he' or 'she'. Animals whose sex is unknown or unimportant: 'it'. In formal/scientific writing, 'it' is standard for all animals. 'They' (singular) is increasingly used when the sex is unknown: 'If a dog escapes, they might...'",
+          "depth": 2,
+          "name": "Pets with a known sex: owners use 'he' or 'she'. Animals whose sex is unknown or unimportant: 'it'. In formal/scientific writing, 'it' is standard for all animals. 'They' (singular) is increasingly used when the sex is unknown: 'If a dog escapes, they might...'"
+        },
+        {
+          "text": "Put Down vs Put to Sleep",
+          "depth": 2,
+          "name": "Put Down vs Put to Sleep"
+        },
+        {
+          "text": "Both mean euthanasia — ending an animal's life to prevent suffering. 'Put to sleep' is the gentler euphemism. 'Put down' is more direct. Vets say 'euthanise' (formal). These are sensitive topics — use them carefully. Children may not understand euphemisms, so adults sometimes explain directly.",
+          "depth": 2,
+          "name": "Both mean euthanasia — ending an animal's life to prevent suffering. 'Put to sleep' is the gentler euphemism. 'Put down' is more direct. Vets say 'euthanise' (formal). These are sensitive topics — use them carefully. Children may not understand euphemisms, so adults sometimes explain directly."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "554:3406",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "vet",
+          "depth": 2,
+          "name": "vet"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ clinic, ~ appointment, ~ bill",
+          "depth": 2,
+          "name": "~ clinic, ~ appointment, ~ bill"
+        },
+        {
+          "text": "vaccination",
+          "depth": 2,
+          "name": "vaccination"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "annual ~, ~ record, booster ~",
+          "depth": 2,
+          "name": "annual ~, ~ record, booster ~"
+        },
+        {
+          "text": "microchip",
+          "depth": 2,
+          "name": "microchip"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "pet ~, ~ scanner, ~ number",
+          "depth": 2,
+          "name": "pet ~, ~ scanner, ~ number"
+        },
+        {
+          "text": "prescription",
+          "depth": 2,
+          "name": "prescription"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ medicine, ~ diet, ~ charge",
+          "depth": 2,
+          "name": "~ medicine, ~ diet, ~ charge"
+        },
+        {
+          "text": "examination",
+          "depth": 2,
+          "name": "examination"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "physical ~, ~ room, ~ table",
+          "depth": 2,
+          "name": "physical ~, ~ room, ~ table"
+        },
+        {
+          "text": "surgery",
+          "depth": 2,
+          "name": "surgery"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ appointment, ~ hours, emergency ~",
+          "depth": 2,
+          "name": "~ appointment, ~ hours, emergency ~"
+        },
+        {
+          "text": "collar",
+          "depth": 2,
+          "name": "collar"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "flea ~, ~ tag, ~ and lead",
+          "depth": 2,
+          "name": "flea ~, ~ tag, ~ and lead"
+        },
+        {
+          "text": "kennel",
+          "depth": 2,
+          "name": "kennel"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "boarding ~, dog ~, ~ cough",
+          "depth": 2,
+          "name": "boarding ~, dog ~, ~ cough"
+        },
+        {
+          "text": "leash",
+          "depth": 2,
+          "name": "leash"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "on a ~, ~ law, ~ walk",
+          "depth": 2,
+          "name": "on a ~, ~ law, ~ walk"
+        },
+        {
+          "text": "stray",
+          "depth": 2,
+          "name": "stray"
+        },
+        {
+          "text": "n/adj",
+          "depth": 2,
+          "name": "n/adj"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ cat, ~ dog, ~ animal",
+          "depth": 2,
+          "name": "~ cat, ~ dog, ~ animal"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1735 @@
+{
+  "unitId": "space-station",
+  "name": "The Space Station",
+  "subtopics": [
+    {
+      "id": "station-structure",
+      "title": "Station Structure",
+      "wordIds": [
+        "module",
+        "airlock",
+        "solar-array",
+        "docking-port",
+        "cupola",
+        "truss",
+        "radiator-panel",
+        "antenna",
+        "hatch",
+        "window"
+      ]
+    },
+    {
+      "id": "crew-equipment",
+      "title": "Crew Equipment",
+      "wordIds": [
+        "spacesuit",
+        "helmet",
+        "gloves",
+        "boots",
+        "tether",
+        "jet-pack",
+        "tool-belt",
+        "visor",
+        "oxygen-tank",
+        "communication-headset"
+      ]
+    },
+    {
+      "id": "living-quarters",
+      "title": "Living Quarters",
+      "wordIds": [
+        "sleeping-pod",
+        "galley",
+        "exercise-machine",
+        "toilet",
+        "shower-bag",
+        "velcro-strip",
+        "laptop",
+        "book",
+        "photo",
+        "personal-locker"
+      ]
+    },
+    {
+      "id": "science-equipment",
+      "title": "Science Equipment",
+      "wordIds": [
+        "microscope",
+        "centrifuge",
+        "glove-box",
+        "plant-growth-chamber",
+        "water-recycler",
+        "air-filter",
+        "spectrometer",
+        "sample-container",
+        "data-logger",
+        "experiment-rack"
+      ]
+    },
+    {
+      "id": "mission-control",
+      "title": "Mission Control",
+      "wordIds": [
+        "control-panel",
+        "monitor",
+        "keyboard",
+        "joystick",
+        "radio",
+        "clock",
+        "map-display",
+        "camera",
+        "alarm",
+        "checklist"
+      ]
+    },
+    {
+      "id": "space-environment",
+      "title": "Space Environment",
+      "wordIds": [
+        "earth-view",
+        "stars",
+        "moon",
+        "sun",
+        "satellite",
+        "space-debris",
+        "cargo-ship",
+        "robotic-arm",
+        "solar-flare",
+        "aurora",
+        "lab-module",
+        "crew-quarters",
+        "node",
+        "jetpack",
+        "treadmill",
+        "oxygen-generator",
+        "comm-dish",
+        "viewport",
+        "spacewalk",
+        "experiment",
+        "dock",
+        "orbit",
+        "float",
+        "exercise",
+        "repair",
+        "communicate"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "module",
+      "label": "Module",
+      "ipa": "/ˈmɒdjuːl/",
+      "cefr": "B1",
+      "imageNodeId": "45:7633"
+    },
+    {
+      "kind": "card",
+      "id": "airlock",
+      "label": "Airlock",
+      "ipa": "/ˈɛərˌlɒk/",
+      "cefr": "B1",
+      "imageNodeId": "45:7637"
+    },
+    {
+      "kind": "card",
+      "id": "solar-array",
+      "label": "Solar Array",
+      "ipa": "/ˈsoʊlər əˈreɪ/",
+      "cefr": "B2",
+      "imageNodeId": "45:7641"
+    },
+    {
+      "kind": "card",
+      "id": "docking-port",
+      "label": "Docking Port",
+      "ipa": "/ˈdɒkɪŋ pɔːrt/",
+      "cefr": "B2",
+      "imageNodeId": "45:7645"
+    },
+    {
+      "kind": "card",
+      "id": "cupola",
+      "label": "Cupola",
+      "ipa": "/ˈkjuːpələ/",
+      "cefr": "B1",
+      "imageNodeId": "45:7649"
+    },
+    {
+      "kind": "card",
+      "id": "truss",
+      "label": "Truss",
+      "ipa": "/trʌs/",
+      "cefr": "B1",
+      "imageNodeId": "45:7653"
+    },
+    {
+      "kind": "card",
+      "id": "radiator-panel",
+      "label": "Radiator Panel",
+      "ipa": "/ˈreɪdiˌeɪtər ˈpænəl/",
+      "cefr": "B2",
+      "imageNodeId": "45:7657"
+    },
+    {
+      "kind": "card",
+      "id": "antenna",
+      "label": "Antenna",
+      "ipa": "/ænˈtɛnə/",
+      "cefr": "B1",
+      "imageNodeId": "45:7661"
+    },
+    {
+      "kind": "card",
+      "id": "hatch",
+      "label": "Hatch",
+      "ipa": "/hætʃ/",
+      "cefr": "B1",
+      "imageNodeId": "45:7665"
+    },
+    {
+      "kind": "card",
+      "id": "window",
+      "label": "Window",
+      "ipa": "/ˈwɪndoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "45:7669"
+    },
+    {
+      "kind": "card",
+      "id": "spacesuit",
+      "label": "Spacesuit",
+      "ipa": "/ˈspeɪsˌsuːt/",
+      "cefr": "B1",
+      "imageNodeId": "45:7678"
+    },
+    {
+      "kind": "card",
+      "id": "helmet",
+      "label": "Helmet",
+      "ipa": "/ˈhɛlmɪt/",
+      "cefr": "B1",
+      "imageNodeId": "45:7682"
+    },
+    {
+      "kind": "card",
+      "id": "gloves",
+      "label": "Gloves",
+      "ipa": "/ɡlʌvz/",
+      "cefr": "B1",
+      "imageNodeId": "45:7686"
+    },
+    {
+      "kind": "card",
+      "id": "boots",
+      "label": "Boots",
+      "ipa": "/buːts/",
+      "cefr": "B1",
+      "imageNodeId": "45:7690"
+    },
+    {
+      "kind": "card",
+      "id": "tether",
+      "label": "Tether",
+      "ipa": "/ˈtɛðər/",
+      "cefr": "B1",
+      "imageNodeId": "45:7694"
+    },
+    {
+      "kind": "card",
+      "id": "jet-pack",
+      "label": "Jet Pack",
+      "ipa": "/dʒɛt pæk/",
+      "cefr": "B2",
+      "imageNodeId": "45:7698"
+    },
+    {
+      "kind": "card",
+      "id": "tool-belt",
+      "label": "Tool Belt",
+      "ipa": "/tuːl bɛlt/",
+      "cefr": "B2",
+      "imageNodeId": "45:7702"
+    },
+    {
+      "kind": "card",
+      "id": "visor",
+      "label": "Visor",
+      "ipa": "/ˈvaɪzər/",
+      "cefr": "B1",
+      "imageNodeId": "45:7706"
+    },
+    {
+      "kind": "card",
+      "id": "oxygen-tank",
+      "label": "Oxygen Tank",
+      "ipa": "/ˈɒksɪdʒən tæŋk/",
+      "cefr": "B2",
+      "imageNodeId": "45:7710"
+    },
+    {
+      "kind": "card",
+      "id": "communication-headset",
+      "label": "Communication Headset",
+      "ipa": "/kəˌmjuːnɪˈkeɪʃən ˈhɛdˌsɛt/",
+      "cefr": "C1",
+      "imageNodeId": "45:7714"
+    },
+    {
+      "kind": "card",
+      "id": "sleeping-pod",
+      "label": "Sleeping Pod",
+      "ipa": "/ˈsliːpɪŋ pɒd/",
+      "cefr": "B2",
+      "imageNodeId": "45:7723"
+    },
+    {
+      "kind": "card",
+      "id": "galley",
+      "label": "Galley",
+      "ipa": "/ˈɡæli/",
+      "cefr": "B1",
+      "imageNodeId": "45:7727"
+    },
+    {
+      "kind": "card",
+      "id": "exercise-machine",
+      "label": "Exercise Machine",
+      "ipa": "/ˈɛksərˌsaɪz məˈʃiːn/",
+      "cefr": "C1",
+      "imageNodeId": "45:7731"
+    },
+    {
+      "kind": "card",
+      "id": "toilet",
+      "label": "Toilet",
+      "ipa": "/ˈtɔɪlɪt/",
+      "cefr": "B1",
+      "imageNodeId": "45:7735"
+    },
+    {
+      "kind": "card",
+      "id": "shower-bag",
+      "label": "Shower Bag",
+      "ipa": "/ˈʃaʊər bæɡ/",
+      "cefr": "B2",
+      "imageNodeId": "45:7739"
+    },
+    {
+      "kind": "card",
+      "id": "velcro-strip",
+      "label": "Velcro Strip",
+      "ipa": "/ˈvɛlkroʊ strɪp/",
+      "cefr": "B2",
+      "imageNodeId": "45:7743"
+    },
+    {
+      "kind": "card",
+      "id": "laptop",
+      "label": "Laptop",
+      "ipa": "/ˈlæpˌtɒp/",
+      "cefr": "B1",
+      "imageNodeId": "45:7747"
+    },
+    {
+      "kind": "card",
+      "id": "book",
+      "label": "Book",
+      "ipa": "/bʊk/",
+      "cefr": "B1",
+      "imageNodeId": "45:7751"
+    },
+    {
+      "kind": "card",
+      "id": "photo",
+      "label": "Photo",
+      "ipa": "/ˈfoʊtoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "45:7755"
+    },
+    {
+      "kind": "card",
+      "id": "personal-locker",
+      "label": "Personal Locker",
+      "ipa": "/ˈpɜːrsənəl ˈlɒkər/",
+      "cefr": "C1",
+      "imageNodeId": "45:7759"
+    },
+    {
+      "kind": "card",
+      "id": "microscope",
+      "label": "Microscope",
+      "ipa": "/ˈmaɪkrəˌskoʊp/",
+      "cefr": "B2",
+      "imageNodeId": "45:7768"
+    },
+    {
+      "kind": "card",
+      "id": "centrifuge",
+      "label": "Centrifuge",
+      "ipa": "/ˈsɛntrɪˌfjuːdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "45:7772"
+    },
+    {
+      "kind": "card",
+      "id": "glove-box",
+      "label": "Glove Box",
+      "ipa": "/ɡlʌv bɒks/",
+      "cefr": "B2",
+      "imageNodeId": "45:7776"
+    },
+    {
+      "kind": "card",
+      "id": "plant-growth-chamber",
+      "label": "Plant Growth Chamber",
+      "ipa": "/plænt ɡroʊθ ˈtʃeɪmbər/",
+      "cefr": "C1",
+      "imageNodeId": "45:7780"
+    },
+    {
+      "kind": "card",
+      "id": "water-recycler",
+      "label": "Water Recycler",
+      "ipa": "/ˈwɔːtər riːˈsaɪklər/",
+      "cefr": "B2",
+      "imageNodeId": "45:7784"
+    },
+    {
+      "kind": "card",
+      "id": "air-filter",
+      "label": "Air Filter",
+      "ipa": "/ɛər ˈfɪltər/",
+      "cefr": "B2",
+      "imageNodeId": "45:7788"
+    },
+    {
+      "kind": "card",
+      "id": "spectrometer",
+      "label": "Spectrometer",
+      "ipa": "/spɛkˈtrɒmɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:7792"
+    },
+    {
+      "kind": "card",
+      "id": "sample-container",
+      "label": "Sample Container",
+      "ipa": "/ˈsæmpəl kənˈteɪnər/",
+      "cefr": "C1",
+      "imageNodeId": "45:7796"
+    },
+    {
+      "kind": "card",
+      "id": "data-logger",
+      "label": "Data Logger",
+      "ipa": "/ˈdeɪtə ˈlɒɡər/",
+      "cefr": "B2",
+      "imageNodeId": "45:7800"
+    },
+    {
+      "kind": "card",
+      "id": "experiment-rack",
+      "label": "Experiment Rack",
+      "ipa": "/ɪkˈspɛrɪmənt ræk/",
+      "cefr": "C1",
+      "imageNodeId": "45:7804"
+    },
+    {
+      "kind": "card",
+      "id": "control-panel",
+      "label": "Control Panel",
+      "ipa": "/kənˈtroʊl ˈpænəl/",
+      "cefr": "B2",
+      "imageNodeId": "45:7813"
+    },
+    {
+      "kind": "card",
+      "id": "monitor",
+      "label": "Monitor",
+      "ipa": "/ˈmɒnɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "45:7817"
+    },
+    {
+      "kind": "card",
+      "id": "keyboard",
+      "label": "Keyboard",
+      "ipa": "/ˈkiːˌbɔːrd/",
+      "cefr": "B1",
+      "imageNodeId": "45:7821"
+    },
+    {
+      "kind": "card",
+      "id": "joystick",
+      "label": "Joystick",
+      "ipa": "/ˈdʒɔɪˌstɪk/",
+      "cefr": "B1",
+      "imageNodeId": "45:7825"
+    },
+    {
+      "kind": "card",
+      "id": "radio",
+      "label": "Radio",
+      "ipa": "/ˈreɪdiˌoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "45:7829"
+    },
+    {
+      "kind": "card",
+      "id": "clock",
+      "label": "Clock",
+      "ipa": "/klɒk/",
+      "cefr": "B1",
+      "imageNodeId": "45:7833"
+    },
+    {
+      "kind": "card",
+      "id": "map-display",
+      "label": "Map Display",
+      "ipa": "/mæp dɪˈspleɪ/",
+      "cefr": "B2",
+      "imageNodeId": "45:7837"
+    },
+    {
+      "kind": "card",
+      "id": "camera",
+      "label": "Camera",
+      "ipa": "/ˈkæmərə/",
+      "cefr": "B1",
+      "imageNodeId": "45:7841"
+    },
+    {
+      "kind": "card",
+      "id": "alarm",
+      "label": "Alarm",
+      "ipa": "/əˈlɑːrm/",
+      "cefr": "B1",
+      "imageNodeId": "45:7845"
+    },
+    {
+      "kind": "card",
+      "id": "checklist",
+      "label": "Checklist",
+      "ipa": "/ˈtʃɛkˌlɪst/",
+      "cefr": "B1",
+      "imageNodeId": "45:7849"
+    },
+    {
+      "kind": "card",
+      "id": "earth-view",
+      "label": "Earth View",
+      "ipa": "/ɜːrθ vjuː/",
+      "cefr": "B2",
+      "imageNodeId": "45:7858"
+    },
+    {
+      "kind": "card",
+      "id": "stars",
+      "label": "Stars",
+      "ipa": "/stɑːrz/",
+      "cefr": "B1",
+      "imageNodeId": "45:7862"
+    },
+    {
+      "kind": "card",
+      "id": "moon",
+      "label": "Moon",
+      "ipa": "/muːn/",
+      "cefr": "B1",
+      "imageNodeId": "45:7866"
+    },
+    {
+      "kind": "card",
+      "id": "sun",
+      "label": "Sun",
+      "ipa": "/sʌn/",
+      "cefr": "B1",
+      "imageNodeId": "45:7870"
+    },
+    {
+      "kind": "card",
+      "id": "satellite",
+      "label": "Satellite",
+      "ipa": "/ˈsætəˌlaɪt/",
+      "cefr": "B1",
+      "imageNodeId": "45:7874"
+    },
+    {
+      "kind": "card",
+      "id": "space-debris",
+      "label": "Space Debris",
+      "ipa": "/speɪs dəˈbriː/",
+      "cefr": "B2",
+      "imageNodeId": "45:7878"
+    },
+    {
+      "kind": "card",
+      "id": "cargo-ship",
+      "label": "Cargo Ship",
+      "ipa": "/ˈkɑːrɡoʊ ʃɪp/",
+      "cefr": "B2",
+      "imageNodeId": "45:7882"
+    },
+    {
+      "kind": "card",
+      "id": "robotic-arm",
+      "label": "Robotic Arm",
+      "ipa": "/roʊˈbɒtɪk ɑːrm/",
+      "cefr": "B2",
+      "imageNodeId": "45:7886"
+    },
+    {
+      "kind": "card",
+      "id": "solar-flare",
+      "label": "Solar Flare",
+      "ipa": "/ˈsoʊlər flɛər/",
+      "cefr": "B2",
+      "imageNodeId": "45:7890"
+    },
+    {
+      "kind": "card",
+      "id": "aurora",
+      "label": "Aurora",
+      "ipa": "/ɔːˈrɔːrə/",
+      "cefr": "B1",
+      "imageNodeId": "45:7894"
+    },
+    {
+      "kind": "card",
+      "id": "lab-module",
+      "label": "Lab Module",
+      "ipa": "/læb ˈmɒdjuːl/",
+      "cefr": "B2",
+      "imageNodeId": "39:6748"
+    },
+    {
+      "kind": "card",
+      "id": "crew-quarters",
+      "label": "Crew Quarters",
+      "ipa": "/kruː ˈkwɔːrtərz/",
+      "cefr": "B2",
+      "imageNodeId": "39:6752"
+    },
+    {
+      "kind": "card",
+      "id": "node",
+      "label": "Node",
+      "ipa": "/noʊd/",
+      "cefr": "B1",
+      "imageNodeId": "39:6772"
+    },
+    {
+      "kind": "card",
+      "id": "jetpack",
+      "label": "Jetpack",
+      "ipa": "/ˈdʒɛtˌpæk/",
+      "cefr": "B1",
+      "imageNodeId": "39:6783"
+    },
+    {
+      "kind": "card",
+      "id": "treadmill",
+      "label": "Treadmill",
+      "ipa": "/ˈtrɛdˌmɪl/",
+      "cefr": "B1",
+      "imageNodeId": "39:6791"
+    },
+    {
+      "kind": "card",
+      "id": "oxygen-generator",
+      "label": "Oxygen Generator",
+      "ipa": "/ˈɒksɪdʒən ˈdʒɛnəˌreɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "39:6795"
+    },
+    {
+      "kind": "card",
+      "id": "comm-dish",
+      "label": "Comm Dish",
+      "ipa": "/kɒm dɪʃ/",
+      "cefr": "B2",
+      "imageNodeId": "39:6803"
+    },
+    {
+      "kind": "card",
+      "id": "viewport",
+      "label": "Viewport",
+      "ipa": "/ˈvjuːˌpɔːrt/",
+      "cefr": "B1",
+      "imageNodeId": "39:6807"
+    },
+    {
+      "kind": "card",
+      "id": "spacewalk",
+      "label": "Spacewalk",
+      "ipa": "/ˈspeɪsˌwɔːk/",
+      "cefr": "B1",
+      "imageNodeId": "39:6814"
+    },
+    {
+      "kind": "card",
+      "id": "experiment",
+      "label": "Experiment",
+      "ipa": "/ɪkˈspɛrɪmənt/",
+      "cefr": "B2",
+      "imageNodeId": "39:6818"
+    },
+    {
+      "kind": "card",
+      "id": "dock",
+      "label": "Dock",
+      "ipa": "/dɒk/",
+      "cefr": "B1",
+      "imageNodeId": "39:6822"
+    },
+    {
+      "kind": "card",
+      "id": "orbit",
+      "label": "Orbit",
+      "ipa": "/ˈɔːrbɪt/",
+      "cefr": "B1",
+      "imageNodeId": "39:6826"
+    },
+    {
+      "kind": "card",
+      "id": "float",
+      "label": "Float",
+      "ipa": "/floʊt/",
+      "cefr": "B1",
+      "imageNodeId": "39:6830"
+    },
+    {
+      "kind": "card",
+      "id": "exercise",
+      "label": "Exercise",
+      "ipa": "/ˈɛksərˌsaɪz/",
+      "cefr": "B1",
+      "imageNodeId": "39:6834"
+    },
+    {
+      "kind": "card",
+      "id": "repair",
+      "label": "Repair",
+      "ipa": "/rɪˈpɛər/",
+      "cefr": "B1",
+      "imageNodeId": "39:6838"
+    },
+    {
+      "kind": "card",
+      "id": "communicate",
+      "label": "Communicate",
+      "ipa": "/kəˈmjuːnɪˌkeɪt/",
+      "cefr": "B2",
+      "imageNodeId": "39:6842"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "552:271",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "552:273",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2 · Topic: The Space Station",
+          "depth": 1,
+          "name": "Level: B2 · Topic: The Space Station"
+        },
+        {
+          "text": "Living in Zero Gravity — Life on the International Space Station\n\nThe International Space Station (ISS) orbits Earth at approximately 28,000 kilometres per hour, completing a full orbit every ninety minutes. At any given moment, six to seven astronauts live and work inside this extraordinary laboratory, conducting experiments that cannot be performed anywhere else — because nowhere else offers permanent weightlessness.\n\nThe station is assembled from interconnected modules — pressurised cylinders where the crew lives and works. An airlock allows astronauts to exit for spacewalks without depressurising the entire station. A docking port receives visiting spacecraft that bring supplies and crew. The cupola — a dome of windows on the underside — provides a panoramic view of Earth and is the station's most photographed location. A truss — a long metal backbone — supports the solar arrays that generate electricity. Radiator panels dissipate excess heat into space. Antennas maintain communication with mission control. A hatch connects each module to the next.\n\nSpacesuits are worn outside the station. A helmet protects the head and provides oxygen. A visor shields the eyes from unfiltered sunlight. Gloves allow dexterity for repairs. Boots anchor to the station's exterior. A tether clips the astronaut to the structure — without it, a drift into space would be irreversible. A jet pack provides emergency propulsion. A tool belt holds wrenches and other instruments. An oxygen tank supplies breathable air. A communication headset connects to the crew inside.\n\nDaily life is adapted to weightlessness. Astronauts sleep in sleeping pods — small compartments with a zipped sleeping bag attached to the wall. The galley prepares food from dehydrated packets — water is added, and the meal is heated. A toilet uses airflow instead of gravity. A shower bag contains water for sponge baths. Velcro strips attach objects to surfaces that have no 'up' or 'down.' A laptop and a book float unless secured. A photo and personal items from home are stored in a personal locker. Exercise is compulsory — two hours daily on an exercise machine to prevent muscle and bone loss.\n\nThe science is the station's purpose. A microscope examines biological samples. A centrifuge separates substances in microgravity. A glove box — a sealed, transparent chamber — allows experiments with hazardous materials. A plant growth chamber tests whether food can be grown in space. A water recycler converts sweat, humidity, and urine back into drinking water. An air filter removes carbon dioxide. A spectrometer analyses materials. A sample container stores specimens. A data logger records measurements. An experiment rack holds equipment in standardised frames.\n\nThe control room on the ground communicates constantly. A control panel and monitor display the station's status. A keyboard, a joystick, and a radio keep the crew connected. A clock shows multiple time zones. A map display tracks the station's position. A camera documents activities. An alarm warns of depressurisation, fire, or toxic atmosphere.\n\nThe ISS is not a destination — it is a testbed. Every experiment conducted in orbit prepares humanity for longer journeys: to the Moon, to Mars, and beyond. The station proves that humans can live, work, and maintain their health in the most hostile environment conceivable — and that the knowledge gained there is worth the extraordinary cost of getting there.",
+          "depth": 1,
+          "name": "Living in Zero Gravity — Life on the International Space Station The International Space Station (ISS) orbits Earth at approximately 28,000 kilometres per hour, completing a full orbit every ninety minutes. At any given moment, six to seven astronauts live and work inside this extraordinary laboratory, conducting experiments that cannot be performed anywhere else — because nowhere else offers permanent weightlessness. The station is assembled from interconnected modules — pressurised cylinders where the crew lives and works. An airlock allows astronauts to exit for spacewalks without depressurising the entire station. A docking port receives visiting spacecraft that bring supplies and crew. The cupola — a dome of windows on the underside — provides a panoramic view of Earth and is the station's most photographed location. A truss — a long metal backbone — supports the solar arrays that generate electricity. Radiator panels dissipate excess heat into space. Antennas maintain communication with mission control. A hatch connects each module to the next. Spacesuits are worn outside the station. A helmet protects the head and provides oxygen. A visor shields the eyes from unfiltered sunlight. Gloves allow dexterity for repairs. Boots anchor to the station's exterior. A tether clips the astronaut to the structure — without it, a drift into space would be irreversible. A jet pack provides emergency propulsion. A tool belt holds wrenches and other instruments. An oxygen tank supplies breathable air. A communication headset connects to the crew inside. Daily life is adapted to weightlessness. Astronauts sleep in sleeping pods — small compartments with a zipped sleeping bag attached to the wall. The galley prepares food from dehydrated packets — water is added, and the meal is heated. A toilet uses airflow instead of gravity. A shower bag contains water for sponge baths. Velcro strips attach objects to surfaces that have no 'up' or 'down.' A laptop and a book float unless secured. A photo and personal items from home are stored in a personal locker. Exercise is compulsory — two hours daily on an exercise machine to prevent muscle and bone loss. The science is the station's purpose. A microscope examines biological samples. A centrifuge separates substances in microgravity. A glove box — a sealed, transparent chamber — allows experiments with hazardous materials. A plant growth chamber tests whether food can be grown in space. A water recycler converts sweat, humidity, and urine back into drinking water. An air filter removes carbon dioxide. A spectrometer analyses materials. A sample container stores specimens. A data logger records measurements. An experiment rack holds equipment in standardised frames. The control room on the ground communicates constantly. A control panel and monitor display the station's status. A keyboard, a joystick, and a radio keep the crew connected. A clock shows multiple time zones. A map display tracks the station's position. A camera documents activities. An alarm warns of depressurisation, fire, or toxic atmosphere. The ISS is not a destination — it is a testbed. Every experiment conducted in orbit prepares humanity for longer journeys: to the Moon, to Mars, and beyond. The station proves that humans can live, work, and maintain their health in the most hostile environment conceivable — and that the knowledge gained there is worth the extraordinary cost of getting there."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Describe the main structural components of the ISS: modules, truss, solar arrays, and cupola.",
+          "depth": 1,
+          "name": "1. Describe the main structural components of the ISS: modules, truss, solar arrays, and cupola."
+        },
+        {
+          "text": "2. How is daily life adapted to weightlessness? Give at least four examples from the passage.",
+          "depth": 1,
+          "name": "2. How is daily life adapted to weightlessness? Give at least four examples from the passage."
+        },
+        {
+          "text": "3. What scientific equipment is available on the station? Name five items and their functions.",
+          "depth": 1,
+          "name": "3. What scientific equipment is available on the station? Name five items and their functions."
+        },
+        {
+          "text": "4. Why must astronauts exercise for two hours every day? What would happen without it?",
+          "depth": 1,
+          "name": "4. Why must astronauts exercise for two hours every day? What would happen without it?"
+        },
+        {
+          "text": "5. The passage calls the ISS 'a testbed.' What does this mean, and what is it testing for?",
+          "depth": 1,
+          "name": "5. The passage calls the ISS 'a testbed.' What does this mean, and what is it testing for?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "552:286",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "over the moon",
+          "depth": 2,
+          "name": "over the moon"
+        },
+        {
+          "text": "extremely happy",
+          "depth": 2,
+          "name": "extremely happy"
+        },
+        {
+          "text": "\"She was over the moon when she got the job.\"",
+          "depth": 2,
+          "name": "\"She was over the moon when she got the job.\""
+        },
+        {
+          "text": "once in a blue moon",
+          "depth": 2,
+          "name": "once in a blue moon"
+        },
+        {
+          "text": "very rarely",
+          "depth": 2,
+          "name": "very rarely"
+        },
+        {
+          "text": "\"He only visits once in a blue moon.\"",
+          "depth": 2,
+          "name": "\"He only visits once in a blue moon.\""
+        },
+        {
+          "text": "launch (a project/product)",
+          "depth": 2,
+          "name": "launch (a project/product)"
+        },
+        {
+          "text": "start something new",
+          "depth": 2,
+          "name": "start something new"
+        },
+        {
+          "text": "\"We're launching the new app next month.\"",
+          "depth": 2,
+          "name": "\"We're launching the new app next month.\""
+        },
+        {
+          "text": "rocket science",
+          "depth": 2,
+          "name": "rocket science"
+        },
+        {
+          "text": "something very difficult (usually negative)",
+          "depth": 2,
+          "name": "something very difficult (usually negative)"
+        },
+        {
+          "text": "\"It's not rocket science — just follow the instructions.\"",
+          "depth": 2,
+          "name": "\"It's not rocket science — just follow the instructions.\""
+        },
+        {
+          "text": "down to earth",
+          "depth": 2,
+          "name": "down to earth"
+        },
+        {
+          "text": "practical and sensible; not arrogant",
+          "depth": 2,
+          "name": "practical and sensible; not arrogant"
+        },
+        {
+          "text": "\"Despite her fame, she's very down to earth.\"",
+          "depth": 2,
+          "name": "\"Despite her fame, she's very down to earth.\""
+        },
+        {
+          "text": "out of this world",
+          "depth": 2,
+          "name": "out of this world"
+        },
+        {
+          "text": "amazingly good",
+          "depth": 2,
+          "name": "amazingly good"
+        },
+        {
+          "text": "\"The food at that restaurant is out of this world.\"",
+          "depth": 2,
+          "name": "\"The food at that restaurant is out of this world.\""
+        },
+        {
+          "text": "space out",
+          "depth": 2,
+          "name": "space out"
+        },
+        {
+          "text": "stop paying attention; daydream",
+          "depth": 2,
+          "name": "stop paying attention; daydream"
+        },
+        {
+          "text": "\"Sorry, I spaced out — what did you say?\"",
+          "depth": 2,
+          "name": "\"Sorry, I spaced out — what did you say?\""
+        },
+        {
+          "text": "light years ahead",
+          "depth": 2,
+          "name": "light years ahead"
+        },
+        {
+          "text": "far more advanced",
+          "depth": 2,
+          "name": "far more advanced"
+        },
+        {
+          "text": "\"Their technology is light years ahead of the competition.\"",
+          "depth": 2,
+          "name": "\"Their technology is light years ahead of the competition.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "552:322",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: An astronaut answering questions during a live broadcast from the ISS",
+          "depth": 1,
+          "name": "Scene: An astronaut answering questions during a live broadcast from the ISS"
+        },
+        {
+          "text": "Host:",
+          "depth": 2,
+          "name": "Host:"
+        },
+        {
+          "text": "What's the hardest thing about living in space?",
+          "depth": 2,
+          "name": "What's the hardest thing about living in space?"
+        },
+        {
+          "text": "Astro:",
+          "depth": 2,
+          "name": "Astro:"
+        },
+        {
+          "text": "The isolation. You miss your family, and you can't just step outside for fresh air.",
+          "depth": 2,
+          "name": "The isolation. You miss your family, and you can't just step outside for fresh air."
+        },
+        {
+          "text": "Host:",
+          "depth": 2,
+          "name": "Host:"
+        },
+        {
+          "text": "How do you sleep in zero gravity?",
+          "depth": 2,
+          "name": "How do you sleep in zero gravity?"
+        },
+        {
+          "text": "Astro:",
+          "depth": 2,
+          "name": "Astro:"
+        },
+        {
+          "text": "We have sleeping pods with sleeping bags strapped to the wall. You float slightly, which feels strange at first.",
+          "depth": 2,
+          "name": "We have sleeping pods with sleeping bags strapped to the wall. You float slightly, which feels strange at first."
+        },
+        {
+          "text": "Host:",
+          "depth": 2,
+          "name": "Host:"
+        },
+        {
+          "text": "What do you eat?",
+          "depth": 2,
+          "name": "What do you eat?"
+        },
+        {
+          "text": "Astro:",
+          "depth": 2,
+          "name": "Astro:"
+        },
+        {
+          "text": "Freeze-dried and pre-packaged meals. We add water to rehydrate them. No crumbs allowed — they float everywhere!",
+          "depth": 2,
+          "name": "Freeze-dried and pre-packaged meals. We add water to rehydrate them. No crumbs allowed — they float everywhere!"
+        },
+        {
+          "text": "Host:",
+          "depth": 2,
+          "name": "Host:"
+        },
+        {
+          "text": "Can you see Earth clearly from up there?",
+          "depth": 2,
+          "name": "Can you see Earth clearly from up there?"
+        },
+        {
+          "text": "Astro:",
+          "depth": 2,
+          "name": "Astro:"
+        },
+        {
+          "text": "Absolutely. It's the most breathtaking view — you can see cities, storms, and the curvature of the planet.",
+          "depth": 2,
+          "name": "Absolutely. It's the most breathtaking view — you can see cities, storms, and the curvature of the planet."
+        },
+        {
+          "text": "Host:",
+          "depth": 2,
+          "name": "Host:"
+        },
+        {
+          "text": "How long are you staying on the station?",
+          "depth": 2,
+          "name": "How long are you staying on the station?"
+        },
+        {
+          "text": "Astro:",
+          "depth": 2,
+          "name": "Astro:"
+        },
+        {
+          "text": "My mission is six months. Some astronauts have stayed for nearly a year.",
+          "depth": 2,
+          "name": "My mission is six months. Some astronauts have stayed for nearly a year."
+        },
+        {
+          "text": "Host:",
+          "depth": 2,
+          "name": "Host:"
+        },
+        {
+          "text": "Any advice for young people who dream of being astronauts?",
+          "depth": 2,
+          "name": "Any advice for young people who dream of being astronauts?"
+        },
+        {
+          "text": "Astro:",
+          "depth": 2,
+          "name": "Astro:"
+        },
+        {
+          "text": "Study science and maths, stay physically fit, and never stop being curious.",
+          "depth": 2,
+          "name": "Study science and maths, stay physically fit, and never stop being curious."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "552:363",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The astronauts have been living in space since six months.\"",
+          "depth": 2,
+          "name": "❌ \"The astronauts have been living in space since six months.\""
+        },
+        {
+          "text": "✅ \"The astronauts have been living in space for six months.\"",
+          "depth": 2,
+          "name": "✅ \"The astronauts have been living in space for six months.\""
+        },
+        {
+          "text": "'For' + duration: 'for six months', 'for a year.' 'Since' + point in time: 'since March', 'since the launch.' Present perfect continuous + for/since: 'They have been orbiting for six months.' 'They have been in space since March 15th.'",
+          "depth": 2,
+          "name": "'For' + duration: 'for six months', 'for a year.' 'Since' + point in time: 'since March', 'since the launch.' Present perfect continuous + for/since: 'They have been orbiting for six months.' 'They have been in space since March 15th.'"
+        },
+        {
+          "text": "❌ \"The ISS is the most biggest structure ever built in space.\"",
+          "depth": 2,
+          "name": "❌ \"The ISS is the most biggest structure ever built in space.\""
+        },
+        {
+          "text": "✅ \"The ISS is the biggest structure ever built in space.\"",
+          "depth": 2,
+          "name": "✅ \"The ISS is the biggest structure ever built in space.\""
+        },
+        {
+          "text": "Never combine 'most' with '-est': 'the biggest' (not *the most biggest). 'Most' + longer adjective: 'the most complex structure.' Short adjective + '-est': 'the biggest', 'the fastest.' At B2, this error should be fully eliminated.",
+          "depth": 2,
+          "name": "Never combine 'most' with '-est': 'the biggest' (not *the most biggest). 'Most' + longer adjective: 'the most complex structure.' Short adjective + '-est': 'the biggest', 'the fastest.' At B2, this error should be fully eliminated."
+        },
+        {
+          "text": "❌ \"Astronauts must to exercise two hours daily to prevent muscle loss.\"",
+          "depth": 2,
+          "name": "❌ \"Astronauts must to exercise two hours daily to prevent muscle loss.\""
+        },
+        {
+          "text": "✅ \"Astronauts must exercise two hours daily to prevent muscle loss.\"",
+          "depth": 2,
+          "name": "✅ \"Astronauts must exercise two hours daily to prevent muscle loss.\""
+        },
+        {
+          "text": "Modal + bare infinitive: 'must exercise', 'should maintain', 'can float.' No 'to' after modals. Alternative structures with 'to': 'have to exercise', 'need to maintain', 'are required to exercise' — these use semi-modals that take 'to.'",
+          "depth": 2,
+          "name": "Modal + bare infinitive: 'must exercise', 'should maintain', 'can float.' No 'to' after modals. Alternative structures with 'to': 'have to exercise', 'need to maintain', 'are required to exercise' — these use semi-modals that take 'to.'"
+        },
+        {
+          "text": "❌ \"The station orbits so fast that it circles the Earth each 90 minutes.\"",
+          "depth": 2,
+          "name": "❌ \"The station orbits so fast that it circles the Earth each 90 minutes.\""
+        },
+        {
+          "text": "✅ \"The station orbits so fast that it circles the Earth every 90 minutes.\"",
+          "depth": 2,
+          "name": "✅ \"The station orbits so fast that it circles the Earth every 90 minutes.\""
+        },
+        {
+          "text": "'Every' for regular intervals: 'every 90 minutes', 'every day.' 'Each' emphasises individuality: 'each orbit brings a new sunrise.' For frequency and intervals, 'every' is standard. 'Each' + singular works when highlighting distinct items: 'each module has its own function.'",
+          "depth": 2,
+          "name": "'Every' for regular intervals: 'every 90 minutes', 'every day.' 'Each' emphasises individuality: 'each orbit brings a new sunrise.' For frequency and intervals, 'every' is standard. 'Each' + singular works when highlighting distinct items: 'each module has its own function.'"
+        },
+        {
+          "text": "❌ \"Despite the conditions are extreme, astronauts manage to live and work normally.\"",
+          "depth": 2,
+          "name": "❌ \"Despite the conditions are extreme, astronauts manage to live and work normally.\""
+        },
+        {
+          "text": "✅ \"Despite the extreme conditions, astronauts manage to live and work normally.\" / \"Although the conditions are extreme, astronauts manage...\"",
+          "depth": 2,
+          "name": "✅ \"Despite the extreme conditions, astronauts manage to live and work normally.\" / \"Although the conditions are extreme, astronauts manage...\""
+        },
+        {
+          "text": "'Despite' + noun/gerund (no clause): 'despite the extreme conditions', 'despite being weightless.' 'Although' + full clause: 'although the conditions are extreme.' Never 'despite + clause.' 'In spite of' follows the same rule as 'despite': 'in spite of the challenges.'",
+          "depth": 2,
+          "name": "'Despite' + noun/gerund (no clause): 'despite the extreme conditions', 'despite being weightless.' 'Although' + full clause: 'although the conditions are extreme.' Never 'despite + clause.' 'In spite of' follows the same rule as 'despite': 'in spite of the challenges.'"
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "552:387",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how space vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how space vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "orbit",
+          "depth": 2,
+          "name": "orbit"
+        },
+        {
+          "text": "orbit / orbital",
+          "depth": 2,
+          "name": "orbit / orbital"
+        },
+        {
+          "text": "orbit",
+          "depth": 2,
+          "name": "orbit"
+        },
+        {
+          "text": "orbital",
+          "depth": 2,
+          "name": "orbital"
+        },
+        {
+          "text": "launch",
+          "depth": 2,
+          "name": "launch"
+        },
+        {
+          "text": "launch / launcher",
+          "depth": 2,
+          "name": "launch / launcher"
+        },
+        {
+          "text": "launch",
+          "depth": 2,
+          "name": "launch"
+        },
+        {
+          "text": "launched",
+          "depth": 2,
+          "name": "launched"
+        },
+        {
+          "text": "gravitate",
+          "depth": 2,
+          "name": "gravitate"
+        },
+        {
+          "text": "gravity / gravitation",
+          "depth": 2,
+          "name": "gravity / gravitation"
+        },
+        {
+          "text": "gravitate",
+          "depth": 2,
+          "name": "gravitate"
+        },
+        {
+          "text": "gravitational",
+          "depth": 2,
+          "name": "gravitational"
+        },
+        {
+          "text": "explore",
+          "depth": 2,
+          "name": "explore"
+        },
+        {
+          "text": "exploration / explorer",
+          "depth": 2,
+          "name": "exploration / explorer"
+        },
+        {
+          "text": "explore",
+          "depth": 2,
+          "name": "explore"
+        },
+        {
+          "text": "exploratory",
+          "depth": 2,
+          "name": "exploratory"
+        },
+        {
+          "text": "astronaut",
+          "depth": 2,
+          "name": "astronaut"
+        },
+        {
+          "text": "astronaut / astronautics",
+          "depth": 2,
+          "name": "astronaut / astronautics"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "satellite",
+          "depth": 2,
+          "name": "satellite"
+        },
+        {
+          "text": "satellite",
+          "depth": 2,
+          "name": "satellite"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "satellite",
+          "depth": 2,
+          "name": "satellite"
+        },
+        {
+          "text": "dock",
+          "depth": 2,
+          "name": "dock"
+        },
+        {
+          "text": "dock / docking",
+          "depth": 2,
+          "name": "dock / docking"
+        },
+        {
+          "text": "dock",
+          "depth": 2,
+          "name": "dock"
+        },
+        {
+          "text": "docked",
+          "depth": 2,
+          "name": "docked"
+        },
+        {
+          "text": "pressurize",
+          "depth": 2,
+          "name": "pressurize"
+        },
+        {
+          "text": "pressure / pressurisation",
+          "depth": 2,
+          "name": "pressure / pressurisation"
+        },
+        {
+          "text": "pressurise",
+          "depth": 2,
+          "name": "pressurise"
+        },
+        {
+          "text": "pressurised",
+          "depth": 2,
+          "name": "pressurised"
+        },
+        {
+          "text": "radiate",
+          "depth": 2,
+          "name": "radiate"
+        },
+        {
+          "text": "radiation",
+          "depth": 2,
+          "name": "radiation"
+        },
+        {
+          "text": "radiate",
+          "depth": 2,
+          "name": "radiate"
+        },
+        {
+          "text": "radiant / radioactive",
+          "depth": 2,
+          "name": "radiant / radioactive"
+        },
+        {
+          "text": "telescope",
+          "depth": 2,
+          "name": "telescope"
+        },
+        {
+          "text": "telescope",
+          "depth": 2,
+          "name": "telescope"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "telescopic",
+          "depth": 2,
+          "name": "telescopic"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "552:447",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The station is assembled from interconnected __________ — pressurised cylinders.",
+          "depth": 1,
+          "name": "1. The station is assembled from interconnected __________ — pressurised cylinders."
+        },
+        {
+          "text": "2.  An __________ allows astronauts to exit for spacewalks without depressurising the station.",
+          "depth": 1,
+          "name": "2. An __________ allows astronauts to exit for spacewalks without depressurising the station."
+        },
+        {
+          "text": "3.  The __________ — a dome of windows — provides a panoramic view of Earth.",
+          "depth": 1,
+          "name": "3. The __________ — a dome of windows — provides a panoramic view of Earth."
+        },
+        {
+          "text": "4.  A __________ clips the astronaut to the station's exterior during spacewalks.",
+          "depth": 1,
+          "name": "4. A __________ clips the astronaut to the station's exterior during spacewalks."
+        },
+        {
+          "text": "5.  Astronauts sleep in sleeping __________ with zipped bags attached to the wall.",
+          "depth": 1,
+          "name": "5. Astronauts sleep in sleeping __________ with zipped bags attached to the wall."
+        },
+        {
+          "text": "6.  A plant growth __________ tests whether food can be grown in space.",
+          "depth": 1,
+          "name": "6. A plant growth __________ tests whether food can be grown in space."
+        },
+        {
+          "text": "7.  A water __________ converts sweat and humidity back into drinking water.",
+          "depth": 1,
+          "name": "7. A water __________ converts sweat and humidity back into drinking water."
+        },
+        {
+          "text": "8.  __________ strips attach objects to surfaces in the weightless environment.",
+          "depth": 1,
+          "name": "8. __________ strips attach objects to surfaces in the weightless environment."
+        },
+        {
+          "text": "9.  __________ arrays on the truss generate electricity for the entire station.",
+          "depth": 1,
+          "name": "9. __________ arrays on the truss generate electricity for the entire station."
+        },
+        {
+          "text": "10. A __________ port receives visiting spacecraft bringing supplies and crew.",
+          "depth": 1,
+          "name": "10. A __________ port receives visiting spacecraft bringing supplies and crew."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. modules  2. airlock  3. cupola  4. tether  5. pods  6. chamber  7. recycler  8. Velcro  9. Solar  10. docking",
+          "depth": 2,
+          "name": "1. modules 2. airlock 3. cupola 4. tether 5. pods 6. chamber 7. recycler 8. Velcro 9. Solar 10. docking"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "552:465",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Astronaut vs Cosmonaut vs Taikonaut",
+          "depth": 2,
+          "name": "Astronaut vs Cosmonaut vs Taikonaut"
+        },
+        {
+          "text": "'Astronaut' (from Greek 'star sailor') = used by NASA and ESA. 'Cosmonaut' (from Greek 'universe sailor') = used by Russia. 'Taikonaut' (from Chinese 'space sailor') = used by China. All refer to people who travel to space.",
+          "depth": 2,
+          "name": "'Astronaut' (from Greek 'star sailor') = used by NASA and ESA. 'Cosmonaut' (from Greek 'universe sailor') = used by Russia. 'Taikonaut' (from Chinese 'space sailor') = used by China. All refer to people who travel to space."
+        },
+        {
+          "text": "Space in Muslim Culture",
+          "depth": 2,
+          "name": "Space in Muslim Culture"
+        },
+        {
+          "text": "The first Arab Muslim in space was Prince Sultan bin Salman Al Saud (Saudi Arabia, 1985). The UAE's Hazzaa Al Mansoori visited the ISS in 2019. Sultan AlNeyadi completed a 6-month mission in 2023. Guidelines exist for observing Islamic practices in space, including prayer direction.",
+          "depth": 2,
+          "name": "The first Arab Muslim in space was Prince Sultan bin Salman Al Saud (Saudi Arabia, 1985). The UAE's Hazzaa Al Mansoori visited the ISS in 2019. Sultan AlNeyadi completed a 6-month mission in 2023. Guidelines exist for observing Islamic practices in space, including prayer direction."
+        },
+        {
+          "text": "Space Vocabulary Levels",
+          "depth": 2,
+          "name": "Space Vocabulary Levels"
+        },
+        {
+          "text": "B1: space, planet, star, moon, sun, rocket, astronaut. B2: orbit, satellite, gravity, launch, mission, module. C1: microgravity, docking, payload, extravehicular activity, orbital mechanics. This progression is useful for vocabulary planning.",
+          "depth": 2,
+          "name": "B1: space, planet, star, moon, sun, rocket, astronaut. B2: orbit, satellite, gravity, launch, mission, module. C1: microgravity, docking, payload, extravehicular activity, orbital mechanics. This progression is useful for vocabulary planning."
+        },
+        {
+          "text": "The Overview Effect",
+          "depth": 2,
+          "name": "The Overview Effect"
+        },
+        {
+          "text": "Many astronauts report a profound shift in perspective after seeing Earth from space — called the 'overview effect'. They describe borders disappearing and feeling a deep connection to all life on Earth. This concept appears in environmental and philosophical discussions.",
+          "depth": 2,
+          "name": "Many astronauts report a profound shift in perspective after seeing Earth from space — called the 'overview effect'. They describe borders disappearing and feeling a deep connection to all life on Earth. This concept appears in environmental and philosophical discussions."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "552:481",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "orbit",
+          "depth": 2,
+          "name": "orbit"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "low Earth ~, ~ the planet, ~ path",
+          "depth": 2,
+          "name": "low Earth ~, ~ the planet, ~ path"
+        },
+        {
+          "text": "astronaut",
+          "depth": 2,
+          "name": "astronaut"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ training, ~ suit, ~ mission",
+          "depth": 2,
+          "name": "~ training, ~ suit, ~ mission"
+        },
+        {
+          "text": "satellite",
+          "depth": 2,
+          "name": "satellite"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ dish, ~ image, ~ orbit",
+          "depth": 2,
+          "name": "~ dish, ~ image, ~ orbit"
+        },
+        {
+          "text": "gravity",
+          "depth": 2,
+          "name": "gravity"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "zero ~, ~ pull, ~ field",
+          "depth": 2,
+          "name": "zero ~, ~ pull, ~ field"
+        },
+        {
+          "text": "rocket",
+          "depth": 2,
+          "name": "rocket"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ launch, ~ fuel, ~ engine",
+          "depth": 2,
+          "name": "~ launch, ~ fuel, ~ engine"
+        },
+        {
+          "text": "module",
+          "depth": 2,
+          "name": "module"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "crew ~, ~ docking, science ~",
+          "depth": 2,
+          "name": "crew ~, ~ docking, science ~"
+        },
+        {
+          "text": "spacewalk",
+          "depth": 2,
+          "name": "spacewalk"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "~ duration, ~ repair, ~ suit",
+          "depth": 2,
+          "name": "~ duration, ~ repair, ~ suit"
+        },
+        {
+          "text": "telescope",
+          "depth": 2,
+          "name": "telescope"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ lens, space ~, ~ observation",
+          "depth": 2,
+          "name": "~ lens, space ~, ~ observation"
+        },
+        {
+          "text": "mission",
+          "depth": 2,
+          "name": "mission"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "space ~, ~ control, ~ crew",
+          "depth": 2,
+          "name": "space ~, ~ control, ~ crew"
+        },
+        {
+          "text": "payload",
+          "depth": 2,
+          "name": "payload"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "~ bay, ~ delivery, launch ~",
+          "depth": 2,
+          "name": "~ bay, ~ delivery, launch ~"
+        }
+      ]
+    }
+  }
+}

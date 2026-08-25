@@ -1,0 +1,1716 @@
+{
+  "unitId": "robotics-lab",
+  "name": "The Robotics Lab",
+  "subtopics": [
+    {
+      "id": "robot-parts",
+      "title": "Robot Parts",
+      "wordIds": [
+        "motor",
+        "sensor",
+        "circuit-board",
+        "battery-pack",
+        "gear",
+        "wheel",
+        "axle",
+        "frame",
+        "arm",
+        "gripper",
+        "camera-module",
+        "led"
+      ]
+    },
+    {
+      "id": "electronics",
+      "title": "Electronics",
+      "wordIds": [
+        "wire",
+        "resistor",
+        "capacitor",
+        "transistor",
+        "diode",
+        "microchip",
+        "breadboard",
+        "soldering-iron",
+        "solder",
+        "multimeter"
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Tools",
+      "wordIds": [
+        "screwdriver-set",
+        "pliers",
+        "wire-cutter",
+        "wire-stripper",
+        "hot-glue-gun",
+        "allen-key",
+        "wrench",
+        "tweezers",
+        "magnifying-glass",
+        "helping-hands"
+      ]
+    },
+    {
+      "id": "programming",
+      "title": "Programming",
+      "wordIds": [
+        "computer",
+        "monitor",
+        "keyboard",
+        "mouse",
+        "code-editor",
+        "usb-cable",
+        "controller",
+        "joystick",
+        "remote-control",
+        "tablet"
+      ]
+    },
+    {
+      "id": "robot-types",
+      "title": "Robot Types",
+      "wordIds": [
+        "humanoid-robot",
+        "drone",
+        "robotic-arm",
+        "wheeled-robot",
+        "walking-robot",
+        "line-follower",
+        "sumo-robot",
+        "underwater-robot",
+        "flying-robot",
+        "snake-robot"
+      ]
+    },
+    {
+      "id": "lab-equipment",
+      "title": "Lab Equipment",
+      "wordIds": [
+        "workbench",
+        "storage-bin",
+        "pegboard",
+        "safety-glasses",
+        "lab-notebook",
+        "3d-printer",
+        "laser-cutter",
+        "oscilloscope",
+        "power-supply",
+        "testing-mat",
+        "battery",
+        "humanoid",
+        "rover",
+        "chassis",
+        "track",
+        "code",
+        "algorithm",
+        "loop",
+        "function",
+        "debug",
+        "compile",
+        "variable",
+        "input"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "motor",
+      "label": "Motor",
+      "ipa": "/ˈmoʊtər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6791"
+    },
+    {
+      "kind": "card",
+      "id": "sensor",
+      "label": "Sensor",
+      "ipa": "/ˈsɛnsər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6795"
+    },
+    {
+      "kind": "card",
+      "id": "circuit-board",
+      "label": "Circuit Board",
+      "ipa": "/ˈsɜːrkɪt bɔːrd/",
+      "cefr": "B2",
+      "imageNodeId": "45:6799"
+    },
+    {
+      "kind": "card",
+      "id": "battery-pack",
+      "label": "Battery Pack",
+      "ipa": "/ˈbætəri pæk/",
+      "cefr": "B2",
+      "imageNodeId": "45:6803"
+    },
+    {
+      "kind": "card",
+      "id": "gear",
+      "label": "Gear",
+      "ipa": "/ɡɪər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6807"
+    },
+    {
+      "kind": "card",
+      "id": "wheel",
+      "label": "Wheel",
+      "ipa": "/wiːl/",
+      "cefr": "B1",
+      "imageNodeId": "45:6811"
+    },
+    {
+      "kind": "card",
+      "id": "axle",
+      "label": "Axle",
+      "ipa": "/ˈæksəl/",
+      "cefr": "B1",
+      "imageNodeId": "45:6815"
+    },
+    {
+      "kind": "card",
+      "id": "frame",
+      "label": "Frame",
+      "ipa": "/freɪm/",
+      "cefr": "B1",
+      "imageNodeId": "45:6819"
+    },
+    {
+      "kind": "card",
+      "id": "arm",
+      "label": "Arm",
+      "ipa": "/ɑːrm/",
+      "cefr": "B1",
+      "imageNodeId": "45:6823"
+    },
+    {
+      "kind": "card",
+      "id": "gripper",
+      "label": "Gripper",
+      "ipa": "/ˈɡrɪpər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6827"
+    },
+    {
+      "kind": "card",
+      "id": "camera-module",
+      "label": "Camera Module",
+      "ipa": "/ˈkæmərə ˈmɒdjuːl/",
+      "cefr": "B2",
+      "imageNodeId": "45:6831"
+    },
+    {
+      "kind": "card",
+      "id": "led",
+      "label": "LED",
+      "ipa": "/ˌɛlˌiːˈdiː/",
+      "cefr": "B1",
+      "imageNodeId": "45:6835"
+    },
+    {
+      "kind": "card",
+      "id": "wire",
+      "label": "Wire",
+      "ipa": "/waɪər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6844"
+    },
+    {
+      "kind": "card",
+      "id": "resistor",
+      "label": "Resistor",
+      "ipa": "/rɪˈzɪstər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6848"
+    },
+    {
+      "kind": "card",
+      "id": "capacitor",
+      "label": "Capacitor",
+      "ipa": "/kəˈpæsɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6852"
+    },
+    {
+      "kind": "card",
+      "id": "transistor",
+      "label": "Transistor",
+      "ipa": "/trænˈzɪstər/",
+      "cefr": "B2",
+      "imageNodeId": "45:6856"
+    },
+    {
+      "kind": "card",
+      "id": "diode",
+      "label": "Diode",
+      "ipa": "/ˈdaɪoʊd/",
+      "cefr": "B1",
+      "imageNodeId": "45:6860"
+    },
+    {
+      "kind": "card",
+      "id": "microchip",
+      "label": "Microchip",
+      "ipa": "/ˈmaɪkroʊˌtʃɪp/",
+      "cefr": "B1",
+      "imageNodeId": "45:6864"
+    },
+    {
+      "kind": "card",
+      "id": "breadboard",
+      "label": "Breadboard",
+      "ipa": "/ˈbrɛdˌbɔːrd/",
+      "cefr": "B2",
+      "imageNodeId": "45:6868"
+    },
+    {
+      "kind": "card",
+      "id": "soldering-iron",
+      "label": "Soldering Iron",
+      "ipa": "/ˈsɒldərɪŋ ˈaɪərn/",
+      "cefr": "B2",
+      "imageNodeId": "45:6872"
+    },
+    {
+      "kind": "card",
+      "id": "solder",
+      "label": "Solder",
+      "ipa": "/ˈsɒldər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6876"
+    },
+    {
+      "kind": "card",
+      "id": "multimeter",
+      "label": "Multimeter",
+      "ipa": "/ˈmʌltɪˌmiːtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:6880"
+    },
+    {
+      "kind": "card",
+      "id": "screwdriver-set",
+      "label": "Screwdriver Set",
+      "ipa": "/ˈskruːˌdraɪvər sɛt/",
+      "cefr": "C1",
+      "imageNodeId": "45:6889"
+    },
+    {
+      "kind": "card",
+      "id": "pliers",
+      "label": "Pliers",
+      "ipa": "/ˈplaɪərz/",
+      "cefr": "B1",
+      "imageNodeId": "45:6893"
+    },
+    {
+      "kind": "card",
+      "id": "wire-cutter",
+      "label": "Wire Cutter",
+      "ipa": "/waɪər ˈkʌtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:6897"
+    },
+    {
+      "kind": "card",
+      "id": "wire-stripper",
+      "label": "Wire Stripper",
+      "ipa": "/waɪər ˈstrɪpər/",
+      "cefr": "B2",
+      "imageNodeId": "45:6901"
+    },
+    {
+      "kind": "card",
+      "id": "hot-glue-gun",
+      "label": "Hot Glue Gun",
+      "ipa": "/hɒt ɡluː ɡʌn/",
+      "cefr": "C1",
+      "imageNodeId": "45:6905"
+    },
+    {
+      "kind": "card",
+      "id": "allen-key",
+      "label": "Allen Key",
+      "ipa": "/ˈælən kiː/",
+      "cefr": "B2",
+      "imageNodeId": "45:6909"
+    },
+    {
+      "kind": "card",
+      "id": "wrench",
+      "label": "Wrench",
+      "ipa": "/rɛntʃ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6913"
+    },
+    {
+      "kind": "card",
+      "id": "tweezers",
+      "label": "Tweezers",
+      "ipa": "/ˈtwiːzərz/",
+      "cefr": "B1",
+      "imageNodeId": "45:6917"
+    },
+    {
+      "kind": "card",
+      "id": "magnifying-glass",
+      "label": "Magnifying Glass",
+      "ipa": "/ˈmæɡnɪˌfaɪɪŋ ɡlæs/",
+      "cefr": "C1",
+      "imageNodeId": "45:6921"
+    },
+    {
+      "kind": "card",
+      "id": "helping-hands",
+      "label": "Helping Hands",
+      "ipa": "/ˈhɛlpɪŋ hændz/",
+      "cefr": "B2",
+      "imageNodeId": "45:6925"
+    },
+    {
+      "kind": "card",
+      "id": "computer",
+      "label": "Computer",
+      "ipa": "/kəmˈpjuːtər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6934"
+    },
+    {
+      "kind": "card",
+      "id": "monitor",
+      "label": "Monitor",
+      "ipa": "/ˈmɒnɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6938"
+    },
+    {
+      "kind": "card",
+      "id": "keyboard",
+      "label": "Keyboard",
+      "ipa": "/ˈkiːˌbɔːrd/",
+      "cefr": "B1",
+      "imageNodeId": "45:6942"
+    },
+    {
+      "kind": "card",
+      "id": "mouse",
+      "label": "Mouse",
+      "ipa": "/maʊs/",
+      "cefr": "B1",
+      "imageNodeId": "45:6946"
+    },
+    {
+      "kind": "card",
+      "id": "code-editor",
+      "label": "Code Editor",
+      "ipa": "/koʊd ˈɛdɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:6950"
+    },
+    {
+      "kind": "card",
+      "id": "usb-cable",
+      "label": "USB Cable",
+      "ipa": "/ˌjuːɛsˈbiː ˈkeɪbəl/",
+      "cefr": "B2",
+      "imageNodeId": "45:6954"
+    },
+    {
+      "kind": "card",
+      "id": "controller",
+      "label": "Controller",
+      "ipa": "/kənˈtroʊlər/",
+      "cefr": "B2",
+      "imageNodeId": "45:6958"
+    },
+    {
+      "kind": "card",
+      "id": "joystick",
+      "label": "Joystick",
+      "ipa": "/ˈdʒɔɪˌstɪk/",
+      "cefr": "B1",
+      "imageNodeId": "45:6962"
+    },
+    {
+      "kind": "card",
+      "id": "remote-control",
+      "label": "Remote Control",
+      "ipa": "/rɪˈmoʊt kənˈtroʊl/",
+      "cefr": "B2",
+      "imageNodeId": "45:6966"
+    },
+    {
+      "kind": "card",
+      "id": "tablet",
+      "label": "Tablet",
+      "ipa": "/ˈtæblɪt/",
+      "cefr": "B1",
+      "imageNodeId": "45:6970"
+    },
+    {
+      "kind": "card",
+      "id": "humanoid-robot",
+      "label": "Humanoid Robot",
+      "ipa": "/ˈhjuːmənɔɪd ˈroʊˌbɒt/",
+      "cefr": "B2",
+      "imageNodeId": "45:6979"
+    },
+    {
+      "kind": "card",
+      "id": "drone",
+      "label": "Drone",
+      "ipa": "/droʊn/",
+      "cefr": "B1",
+      "imageNodeId": "45:6983"
+    },
+    {
+      "kind": "card",
+      "id": "robotic-arm",
+      "label": "Robotic Arm",
+      "ipa": "/roʊˈbɒtɪk ɑːrm/",
+      "cefr": "B2",
+      "imageNodeId": "45:6987"
+    },
+    {
+      "kind": "card",
+      "id": "wheeled-robot",
+      "label": "Wheeled Robot",
+      "ipa": "/wiːld ˈroʊˌbɒt/",
+      "cefr": "B2",
+      "imageNodeId": "45:6991"
+    },
+    {
+      "kind": "card",
+      "id": "walking-robot",
+      "label": "Walking Robot",
+      "ipa": "/ˈwɔːkɪŋ ˈroʊˌbɒt/",
+      "cefr": "B2",
+      "imageNodeId": "45:6995"
+    },
+    {
+      "kind": "card",
+      "id": "line-follower",
+      "label": "Line Follower",
+      "ipa": "/laɪn ˈfɒloʊər/",
+      "cefr": "B2",
+      "imageNodeId": "45:6999"
+    },
+    {
+      "kind": "card",
+      "id": "sumo-robot",
+      "label": "Sumo Robot",
+      "ipa": "/ˈsuːmoʊ ˈroʊˌbɒt/",
+      "cefr": "B2",
+      "imageNodeId": "45:7003"
+    },
+    {
+      "kind": "card",
+      "id": "underwater-robot",
+      "label": "Underwater Robot",
+      "ipa": "/ˌʌndərˈwɔːtər ˈroʊˌbɒt/",
+      "cefr": "C1",
+      "imageNodeId": "45:7007"
+    },
+    {
+      "kind": "card",
+      "id": "flying-robot",
+      "label": "Flying Robot",
+      "ipa": "/ˈflaɪɪŋ ˈroʊˌbɒt/",
+      "cefr": "B2",
+      "imageNodeId": "45:7011"
+    },
+    {
+      "kind": "card",
+      "id": "snake-robot",
+      "label": "Snake Robot",
+      "ipa": "/sneɪk ˈroʊˌbɒt/",
+      "cefr": "B2",
+      "imageNodeId": "45:7015"
+    },
+    {
+      "kind": "card",
+      "id": "workbench",
+      "label": "Workbench",
+      "ipa": "/ˈwɜːrkˌbɛntʃ/",
+      "cefr": "B1",
+      "imageNodeId": "45:7024"
+    },
+    {
+      "kind": "card",
+      "id": "storage-bin",
+      "label": "Storage Bin",
+      "ipa": "/ˈstɔːrɪdʒ bɪn/",
+      "cefr": "B2",
+      "imageNodeId": "45:7028"
+    },
+    {
+      "kind": "card",
+      "id": "pegboard",
+      "label": "Pegboard",
+      "ipa": "/ˈpɛɡˌbɔːrd/",
+      "cefr": "B1",
+      "imageNodeId": "45:7032"
+    },
+    {
+      "kind": "card",
+      "id": "safety-glasses",
+      "label": "Safety Glasses",
+      "ipa": "/ˈseɪfti ˈɡlæsɪz/",
+      "cefr": "B2",
+      "imageNodeId": "45:7036"
+    },
+    {
+      "kind": "card",
+      "id": "lab-notebook",
+      "label": "Lab Notebook",
+      "ipa": "/læb ˈnoʊtˌbʊk/",
+      "cefr": "B2",
+      "imageNodeId": "45:7040"
+    },
+    {
+      "kind": "card",
+      "id": "3d-printer",
+      "label": "3D Printer",
+      "ipa": "/θriːˈdiː ˈprɪntər/",
+      "cefr": "B2",
+      "imageNodeId": "45:7044"
+    },
+    {
+      "kind": "card",
+      "id": "laser-cutter",
+      "label": "Laser Cutter",
+      "ipa": "/ˈleɪzər ˈkʌtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:7048"
+    },
+    {
+      "kind": "card",
+      "id": "oscilloscope",
+      "label": "Oscilloscope",
+      "ipa": "/əˈsɪləˌskoʊp/",
+      "cefr": "B2",
+      "imageNodeId": "45:7052"
+    },
+    {
+      "kind": "card",
+      "id": "power-supply",
+      "label": "Power Supply",
+      "ipa": "/ˈpaʊər səˈplaɪ/",
+      "cefr": "B2",
+      "imageNodeId": "45:7056"
+    },
+    {
+      "kind": "card",
+      "id": "testing-mat",
+      "label": "Testing Mat",
+      "ipa": "/ˈtɛstɪŋ mæt/",
+      "cefr": "B2",
+      "imageNodeId": "45:7060"
+    },
+    {
+      "kind": "card",
+      "id": "battery",
+      "label": "Battery",
+      "ipa": "/ˈbætəri/",
+      "cefr": "B1",
+      "imageNodeId": "39:6421"
+    },
+    {
+      "kind": "card",
+      "id": "humanoid",
+      "label": "Humanoid",
+      "ipa": "/ˈhjuːmənɔɪd/",
+      "cefr": "B1",
+      "imageNodeId": "39:6448"
+    },
+    {
+      "kind": "card",
+      "id": "rover",
+      "label": "Rover",
+      "ipa": "/ˈroʊvər/",
+      "cefr": "B1",
+      "imageNodeId": "39:6452"
+    },
+    {
+      "kind": "card",
+      "id": "chassis",
+      "label": "Chassis",
+      "ipa": "/ˈʃæsi/",
+      "cefr": "B1",
+      "imageNodeId": "39:6460"
+    },
+    {
+      "kind": "card",
+      "id": "track",
+      "label": "Track",
+      "ipa": "/træk/",
+      "cefr": "B1",
+      "imageNodeId": "39:6468"
+    },
+    {
+      "kind": "card",
+      "id": "code",
+      "label": "Code",
+      "ipa": "/koʊd/",
+      "cefr": "B1",
+      "imageNodeId": "39:6475"
+    },
+    {
+      "kind": "card",
+      "id": "algorithm",
+      "label": "Algorithm",
+      "ipa": "/ˈælɡəˌrɪðəm/",
+      "cefr": "B1",
+      "imageNodeId": "39:6479"
+    },
+    {
+      "kind": "card",
+      "id": "loop",
+      "label": "Loop",
+      "ipa": "/luːp/",
+      "cefr": "B1",
+      "imageNodeId": "39:6483"
+    },
+    {
+      "kind": "card",
+      "id": "function",
+      "label": "Function",
+      "ipa": "/ˈfʌŋkʃən/",
+      "cefr": "B1",
+      "imageNodeId": "39:6487"
+    },
+    {
+      "kind": "card",
+      "id": "debug",
+      "label": "Debug",
+      "ipa": "/diːˈbʌɡ/",
+      "cefr": "B1",
+      "imageNodeId": "39:6491"
+    },
+    {
+      "kind": "card",
+      "id": "compile",
+      "label": "Compile",
+      "ipa": "/kəmˈpaɪl/",
+      "cefr": "B1",
+      "imageNodeId": "39:6495"
+    },
+    {
+      "kind": "card",
+      "id": "variable",
+      "label": "Variable",
+      "ipa": "/ˈvɛəriəbəl/",
+      "cefr": "B1",
+      "imageNodeId": "39:6499"
+    },
+    {
+      "kind": "card",
+      "id": "input",
+      "label": "Input",
+      "ipa": "/ˈɪnˌpʊt/",
+      "cefr": "B1",
+      "imageNodeId": "39:6503"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "549:4029",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "549:4031",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2 · Topic: The Robotics Lab",
+          "depth": 1,
+          "name": "Level: B2 · Topic: The Robotics Lab"
+        },
+        {
+          "text": "Building Intelligence — Inside the Robotics Lab\n\nA robotics lab is where engineering meets imagination. On the workbenches, students assemble machines from components — motors, sensors, gears, wheels, axles, and frames — connecting them with wires and programming them to move, sense, and respond. The goal is not just to build a robot but to understand the principles that make it work.\n\nThe electronics are fundamental. A circuit board provides the platform where components are connected. A battery pack supplies power. A resistor controls the flow of electricity. A capacitor stores and releases charge. A transistor acts as a switch or amplifier. A diode allows current to flow in only one direction. A microchip — the brain of the robot — processes instructions from the code. An LED provides visual feedback — a blinking light that confirms the circuit is working. A breadboard allows students to prototype circuits without soldering, pushing components into rows of connected holes.\n\nThe mechanical parts give the robot its body. A motor converts electrical energy into movement. Gears change the speed and direction of rotation. Wheels and axles provide mobility. A frame holds everything together. A robotic arm extends the robot's reach. A gripper at the end of the arm picks up objects. A camera module gives the robot vision. Sensors detect the environment — light, distance, temperature, touch.\n\nTools fill the drawers. A soldering iron melts solder to join wires and components permanently. A multimeter measures voltage, current, and resistance. A screwdriver set handles every size of screw. Pliers grip. A wire cutter trims excess wire. A wire stripper removes insulation. A hot glue gun secures components in place. An Allen key tightens hex bolts. A wrench adjusts nuts. Tweezers handle tiny parts. A magnifying glass and helping hands — a stand with adjustable clips — make detailed work easier.\n\nProgramming brings the robot to life. Students sit at a computer with a monitor, keyboard, and mouse, writing instructions in a code editor. The code is uploaded to the microchip via a USB cable. A controller or joystick allows manual operation. A remote control sends wireless commands. A tablet may serve as both a programming interface and a control panel.\n\nThe lab produces different types of robots. A humanoid robot walks on two legs and mimics human movement. A drone flies. A robotic arm performs precise tasks in manufacturing. A wheeled robot navigates flat surfaces. A walking robot crosses uneven terrain. A line follower uses sensors to track a black line on a white surface — a classic first project. A sumo robot pushes opponents out of a ring.\n\nRobotics teaches problem-solving. When a motor spins the wrong way, you reverse the wires. When a sensor gives false readings, you recalibrate. When the code crashes, you debug. Every failure teaches something — and in a robotics lab, failure is not a setback but a step forward.",
+          "depth": 1,
+          "name": "Building Intelligence — Inside the Robotics Lab A robotics lab is where engineering meets imagination. On the workbenches, students assemble machines from components — motors, sensors, gears, wheels, axles, and frames — connecting them with wires and programming them to move, sense, and respond. The goal is not just to build a robot but to understand the principles that make it work. The electronics are fundamental. A circuit board provides the platform where components are connected. A battery pack supplies power. A resistor controls the flow of electricity. A capacitor stores and releases charge. A transistor acts as a switch or amplifier. A diode allows current to flow in only one direction. A microchip — the brain of the robot — processes instructions from the code. An LED provides visual feedback — a blinking light that confirms the circuit is working. A breadboard allows students to prototype circuits without soldering, pushing components into rows of connected holes. The mechanical parts give the robot its body. A motor converts electrical energy into movement. Gears change the speed and direction of rotation. Wheels and axles provide mobility. A frame holds everything together. A robotic arm extends the robot's reach. A gripper at the end of the arm picks up objects. A camera module gives the robot vision. Sensors detect the environment — light, distance, temperature, touch. Tools fill the drawers. A soldering iron melts solder to join wires and components permanently. A multimeter measures voltage, current, and resistance. A screwdriver set handles every size of screw. Pliers grip. A wire cutter trims excess wire. A wire stripper removes insulation. A hot glue gun secures components in place. An Allen key tightens hex bolts. A wrench adjusts nuts. Tweezers handle tiny parts. A magnifying glass and helping hands — a stand with adjustable clips — make detailed work easier. Programming brings the robot to life. Students sit at a computer with a monitor, keyboard, and mouse, writing instructions in a code editor. The code is uploaded to the microchip via a USB cable. A controller or joystick allows manual operation. A remote control sends wireless commands. A tablet may serve as both a programming interface and a control panel. The lab produces different types of robots. A humanoid robot walks on two legs and mimics human movement. A drone flies. A robotic arm performs precise tasks in manufacturing. A wheeled robot navigates flat surfaces. A walking robot crosses uneven terrain. A line follower uses sensors to track a black line on a white surface — a classic first project. A sumo robot pushes opponents out of a ring. Robotics teaches problem-solving. When a motor spins the wrong way, you reverse the wires. When a sensor gives false readings, you recalibrate. When the code crashes, you debug. Every failure teaches something — and in a robotics lab, failure is not a setback but a step forward."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Explain the function of three electronic components mentioned in the passage: resistor, capacitor, and transistor.",
+          "depth": 1,
+          "name": "1. Explain the function of three electronic components mentioned in the passage: resistor, capacitor, and transistor."
+        },
+        {
+          "text": "2. Describe the mechanical parts of a robot. How does each part contribute to the robot's function?",
+          "depth": 1,
+          "name": "2. Describe the mechanical parts of a robot. How does each part contribute to the robot's function?"
+        },
+        {
+          "text": "3. What tools are used in the robotics lab? Name five and explain their purpose.",
+          "depth": 1,
+          "name": "3. What tools are used in the robotics lab? Name five and explain their purpose."
+        },
+        {
+          "text": "4. How is a robot programmed, according to the passage? Describe the process from writing code to controlling the robot.",
+          "depth": 1,
+          "name": "4. How is a robot programmed, according to the passage? Describe the process from writing code to controlling the robot."
+        },
+        {
+          "text": "5. The passage says 'failure is not a setback but a step forward.' How does robotics teach this lesson?",
+          "depth": 1,
+          "name": "5. The passage says 'failure is not a setback but a step forward.' How does robotics teach this lesson?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "549:4044",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "like clockwork",
+          "depth": 2,
+          "name": "like clockwork"
+        },
+        {
+          "text": "very smoothly and predictably",
+          "depth": 2,
+          "name": "very smoothly and predictably"
+        },
+        {
+          "text": "\"The production line runs like clockwork.\"",
+          "depth": 2,
+          "name": "\"The production line runs like clockwork.\""
+        },
+        {
+          "text": "a well-oiled machine",
+          "depth": 2,
+          "name": "a well-oiled machine"
+        },
+        {
+          "text": "an organisation or system that works very efficiently",
+          "depth": 2,
+          "name": "an organisation or system that works very efficiently"
+        },
+        {
+          "text": "\"The team operates like a well-oiled machine.\"",
+          "depth": 2,
+          "name": "\"The team operates like a well-oiled machine.\""
+        },
+        {
+          "text": "on autopilot",
+          "depth": 2,
+          "name": "on autopilot"
+        },
+        {
+          "text": "doing something automatically without thinking",
+          "depth": 2,
+          "name": "doing something automatically without thinking"
+        },
+        {
+          "text": "\"After years of practice, he drives on autopilot.\"",
+          "depth": 2,
+          "name": "\"After years of practice, he drives on autopilot.\""
+        },
+        {
+          "text": "push the envelope",
+          "depth": 2,
+          "name": "push the envelope"
+        },
+        {
+          "text": "go beyond existing limits; innovate",
+          "depth": 2,
+          "name": "go beyond existing limits; innovate"
+        },
+        {
+          "text": "\"SpaceX continues to push the envelope in rocket technology.\"",
+          "depth": 2,
+          "name": "\"SpaceX continues to push the envelope in rocket technology.\""
+        },
+        {
+          "text": "cutting-edge",
+          "depth": 2,
+          "name": "cutting-edge"
+        },
+        {
+          "text": "the most advanced; at the forefront of innovation",
+          "depth": 2,
+          "name": "the most advanced; at the forefront of innovation"
+        },
+        {
+          "text": "\"This lab uses cutting-edge technology.\"",
+          "depth": 2,
+          "name": "\"This lab uses cutting-edge technology.\""
+        },
+        {
+          "text": "nuts and bolts",
+          "depth": 2,
+          "name": "nuts and bolts"
+        },
+        {
+          "text": "the basic practical details of something",
+          "depth": 2,
+          "name": "the basic practical details of something"
+        },
+        {
+          "text": "\"Let's get down to the nuts and bolts of the project.\"",
+          "depth": 2,
+          "name": "\"Let's get down to the nuts and bolts of the project.\""
+        },
+        {
+          "text": "pull the plug",
+          "depth": 2,
+          "name": "pull the plug"
+        },
+        {
+          "text": "stop something; shut down a project",
+          "depth": 2,
+          "name": "stop something; shut down a project"
+        },
+        {
+          "text": "\"The company pulled the plug on the robot programme due to costs.\"",
+          "depth": 2,
+          "name": "\"The company pulled the plug on the robot programme due to costs.\""
+        },
+        {
+          "text": "reinvent the wheel",
+          "depth": 2,
+          "name": "reinvent the wheel"
+        },
+        {
+          "text": "waste time creating something that already exists",
+          "depth": 2,
+          "name": "waste time creating something that already exists"
+        },
+        {
+          "text": "\"Don't reinvent the wheel — use the existing code library.\"",
+          "depth": 2,
+          "name": "\"Don't reinvent the wheel — use the existing code library.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "549:4080",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A robotics teacher explaining a project to students",
+          "depth": 1,
+          "name": "Scene: A robotics teacher explaining a project to students"
+        },
+        {
+          "text": "Teacher:",
+          "depth": 2,
+          "name": "Teacher:"
+        },
+        {
+          "text": "This term, you'll be building a robot that can navigate a maze autonomously.",
+          "depth": 2,
+          "name": "This term, you'll be building a robot that can navigate a maze autonomously."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "What kind of sensors will we use?",
+          "depth": 2,
+          "name": "What kind of sensors will we use?"
+        },
+        {
+          "text": "Teacher:",
+          "depth": 2,
+          "name": "Teacher:"
+        },
+        {
+          "text": "Ultrasonic sensors for distance and infrared sensors for detecting walls. You'll programme the logic in Python.",
+          "depth": 2,
+          "name": "Ultrasonic sensors for distance and infrared sensors for detecting walls. You'll programme the logic in Python."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Can we use machine learning?",
+          "depth": 2,
+          "name": "Can we use machine learning?"
+        },
+        {
+          "text": "Teacher:",
+          "depth": 2,
+          "name": "Teacher:"
+        },
+        {
+          "text": "For this project, we'll use rule-based programming. Machine learning needs much more data and computing power.",
+          "depth": 2,
+          "name": "For this project, we'll use rule-based programming. Machine learning needs much more data and computing power."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "What if the robot gets stuck?",
+          "depth": 2,
+          "name": "What if the robot gets stuck?"
+        },
+        {
+          "text": "Teacher:",
+          "depth": 2,
+          "name": "Teacher:"
+        },
+        {
+          "text": "That's part of the challenge! You'll need to write error-handling code so the robot can recover.",
+          "depth": 2,
+          "name": "That's part of the challenge! You'll need to write error-handling code so the robot can recover."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Will the robots compete against each other?",
+          "depth": 2,
+          "name": "Will the robots compete against each other?"
+        },
+        {
+          "text": "Teacher:",
+          "depth": 2,
+          "name": "Teacher:"
+        },
+        {
+          "text": "Yes — the fastest robot to complete the maze wins. But I'm also assessing your code quality and teamwork.",
+          "depth": 2,
+          "name": "Yes — the fastest robot to complete the maze wins. But I'm also assessing your code quality and teamwork."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "What motors do we use?",
+          "depth": 2,
+          "name": "What motors do we use?"
+        },
+        {
+          "text": "Teacher:",
+          "depth": 2,
+          "name": "Teacher:"
+        },
+        {
+          "text": "Servo motors for precise movement. They're controlled by pulse-width modulation signals from the microcontroller.",
+          "depth": 2,
+          "name": "Servo motors for precise movement. They're controlled by pulse-width modulation signals from the microcontroller."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "549:4118",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The robot was programmed for following a black line on the floor.\"",
+          "depth": 2,
+          "name": "❌ \"The robot was programmed for following a black line on the floor.\""
+        },
+        {
+          "text": "✅ \"The robot was programmed to follow a black line on the floor.\"",
+          "depth": 2,
+          "name": "✅ \"The robot was programmed to follow a black line on the floor.\""
+        },
+        {
+          "text": "'Programmed to + infinitive': the purpose structure after passive verbs uses 'to', not 'for + -ing.' 'Designed to detect', 'built to carry', 'programmed to follow.' 'For + -ing' describes general function: 'A sensor for detecting light.' But with a specific subject: 'The sensor was designed to detect light.'",
+          "depth": 2,
+          "name": "'Programmed to + infinitive': the purpose structure after passive verbs uses 'to', not 'for + -ing.' 'Designed to detect', 'built to carry', 'programmed to follow.' 'For + -ing' describes general function: 'A sensor for detecting light.' But with a specific subject: 'The sensor was designed to detect light.'"
+        },
+        {
+          "text": "❌ \"The equipments in the lab are very expensive and must be handled carefully.\"",
+          "depth": 2,
+          "name": "❌ \"The equipments in the lab are very expensive and must be handled carefully.\""
+        },
+        {
+          "text": "✅ \"The equipment in the lab is very expensive and must be handled carefully.\"",
+          "depth": 2,
+          "name": "✅ \"The equipment in the lab is very expensive and must be handled carefully.\""
+        },
+        {
+          "text": "'Equipment' is uncountable — no plural, singular verb. 'The equipment is expensive.' 'A piece of equipment.' Similarly: 'machinery', 'software', 'hardware', 'technology.' At B2, mastery of these common uncountable nouns is expected.",
+          "depth": 2,
+          "name": "'Equipment' is uncountable — no plural, singular verb. 'The equipment is expensive.' 'A piece of equipment.' Similarly: 'machinery', 'software', 'hardware', 'technology.' At B2, mastery of these common uncountable nouns is expected."
+        },
+        {
+          "text": "❌ \"If the motor will spin the wrong way, you should reverse the wires.\"",
+          "depth": 2,
+          "name": "❌ \"If the motor will spin the wrong way, you should reverse the wires.\""
+        },
+        {
+          "text": "✅ \"If the motor spins the wrong way, you should reverse the wires.\"",
+          "depth": 2,
+          "name": "✅ \"If the motor spins the wrong way, you should reverse the wires.\""
+        },
+        {
+          "text": "In first conditional and zero conditional sentences, use present simple after 'if' — not 'will.' 'If the motor spins..., reverse...' (zero conditional — general truth). 'If the motor spins..., you should reverse...' (first conditional — likely situation). 'Will' goes in the main clause, never the if-clause.",
+          "depth": 2,
+          "name": "In first conditional and zero conditional sentences, use present simple after 'if' — not 'will.' 'If the motor spins..., reverse...' (zero conditional — general truth). 'If the motor spins..., you should reverse...' (first conditional — likely situation). 'Will' goes in the main clause, never the if-clause."
+        },
+        {
+          "text": "❌ \"She is very interesting in robotics and wants to study engineering.\"",
+          "depth": 2,
+          "name": "❌ \"She is very interesting in robotics and wants to study engineering.\""
+        },
+        {
+          "text": "✅ \"She is very interested in robotics and wants to study engineering.\"",
+          "depth": 2,
+          "name": "✅ \"She is very interested in robotics and wants to study engineering.\""
+        },
+        {
+          "text": "'-ed' = how the person feels: 'interested', 'excited', 'fascinated.' '-ing' = what causes the feeling: 'interesting', 'exciting', 'fascinating.' 'She is interested in robotics' (she feels interest). 'Robotics is interesting' (it causes interest). At B2, this distinction should be consistently correct.",
+          "depth": 2,
+          "name": "'-ed' = how the person feels: 'interested', 'excited', 'fascinated.' '-ing' = what causes the feeling: 'interesting', 'exciting', 'fascinating.' 'She is interested in robotics' (she feels interest). 'Robotics is interesting' (it causes interest). At B2, this distinction should be consistently correct."
+        },
+        {
+          "text": "❌ \"The sensor detected that there is an obstacle, so the robot stopped.\"",
+          "depth": 2,
+          "name": "❌ \"The sensor detected that there is an obstacle, so the robot stopped.\""
+        },
+        {
+          "text": "✅ \"The sensor detected that there was an obstacle, so the robot stopped.\"",
+          "depth": 2,
+          "name": "✅ \"The sensor detected that there was an obstacle, so the robot stopped.\""
+        },
+        {
+          "text": "Reported/indirect speech requires tense backshift when the reporting verb is past: 'detected that there was' (not 'is'). Present → past: 'The sensor shows there is...' → 'The sensor showed there was...' This backshift rule applies consistently in formal and academic writing at B2 level.",
+          "depth": 2,
+          "name": "Reported/indirect speech requires tense backshift when the reporting verb is past: 'detected that there was' (not 'is'). Present → past: 'The sensor shows there is...' → 'The sensor showed there was...' This backshift rule applies consistently in formal and academic writing at B2 level."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "549:4142",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how robotics and technology vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how robotics and technology vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "robot",
+          "depth": 2,
+          "name": "robot"
+        },
+        {
+          "text": "robot / robotics / roboticist",
+          "depth": 2,
+          "name": "robot / robotics / roboticist"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "robotic",
+          "depth": 2,
+          "name": "robotic"
+        },
+        {
+          "text": "automate",
+          "depth": 2,
+          "name": "automate"
+        },
+        {
+          "text": "automation",
+          "depth": 2,
+          "name": "automation"
+        },
+        {
+          "text": "automate",
+          "depth": 2,
+          "name": "automate"
+        },
+        {
+          "text": "automated / automatic",
+          "depth": 2,
+          "name": "automated / automatic"
+        },
+        {
+          "text": "programme",
+          "depth": 2,
+          "name": "programme"
+        },
+        {
+          "text": "programme / programmer / programming",
+          "depth": 2,
+          "name": "programme / programmer / programming"
+        },
+        {
+          "text": "programme",
+          "depth": 2,
+          "name": "programme"
+        },
+        {
+          "text": "programmed / programmable",
+          "depth": 2,
+          "name": "programmed / programmable"
+        },
+        {
+          "text": "sensor",
+          "depth": 2,
+          "name": "sensor"
+        },
+        {
+          "text": "sensor",
+          "depth": 2,
+          "name": "sensor"
+        },
+        {
+          "text": "sense",
+          "depth": 2,
+          "name": "sense"
+        },
+        {
+          "text": "sensory",
+          "depth": 2,
+          "name": "sensory"
+        },
+        {
+          "text": "innovate",
+          "depth": 2,
+          "name": "innovate"
+        },
+        {
+          "text": "innovation / innovator",
+          "depth": 2,
+          "name": "innovation / innovator"
+        },
+        {
+          "text": "innovate",
+          "depth": 2,
+          "name": "innovate"
+        },
+        {
+          "text": "innovative",
+          "depth": 2,
+          "name": "innovative"
+        },
+        {
+          "text": "engineer",
+          "depth": 2,
+          "name": "engineer"
+        },
+        {
+          "text": "engineer / engineering",
+          "depth": 2,
+          "name": "engineer / engineering"
+        },
+        {
+          "text": "engineer",
+          "depth": 2,
+          "name": "engineer"
+        },
+        {
+          "text": "engineered",
+          "depth": 2,
+          "name": "engineered"
+        },
+        {
+          "text": "artificial",
+          "depth": 2,
+          "name": "artificial"
+        },
+        {
+          "text": "artifice / artificiality",
+          "depth": 2,
+          "name": "artifice / artificiality"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "artificial",
+          "depth": 2,
+          "name": "artificial"
+        },
+        {
+          "text": "intelligent",
+          "depth": 2,
+          "name": "intelligent"
+        },
+        {
+          "text": "intelligence",
+          "depth": 2,
+          "name": "intelligence"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "intelligent",
+          "depth": 2,
+          "name": "intelligent"
+        },
+        {
+          "text": "autonomous",
+          "depth": 2,
+          "name": "autonomous"
+        },
+        {
+          "text": "autonomy",
+          "depth": 2,
+          "name": "autonomy"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "autonomous",
+          "depth": 2,
+          "name": "autonomous"
+        },
+        {
+          "text": "prototype",
+          "depth": 2,
+          "name": "prototype"
+        },
+        {
+          "text": "prototype",
+          "depth": 2,
+          "name": "prototype"
+        },
+        {
+          "text": "prototype",
+          "depth": 2,
+          "name": "prototype"
+        },
+        {
+          "text": "prototypical",
+          "depth": 2,
+          "name": "prototypical"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "549:4202",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A __________ board provides the platform where electronic components are connected.",
+          "depth": 1,
+          "name": "1. A __________ board provides the platform where electronic components are connected."
+        },
+        {
+          "text": "2.  A __________ converts electrical energy into physical movement.",
+          "depth": 1,
+          "name": "2. A __________ converts electrical energy into physical movement."
+        },
+        {
+          "text": "3.  A __________ at the end of the robotic arm picks up and holds objects.",
+          "depth": 1,
+          "name": "3. A __________ at the end of the robotic arm picks up and holds objects."
+        },
+        {
+          "text": "4.  A __________ iron melts solder to join wires and components permanently.",
+          "depth": 1,
+          "name": "4. A __________ iron melts solder to join wires and components permanently."
+        },
+        {
+          "text": "5.  The __________ — the brain of the robot — processes instructions from the code.",
+          "depth": 1,
+          "name": "5. The __________ — the brain of the robot — processes instructions from the code."
+        },
+        {
+          "text": "6.  A __________ allows students to prototype circuits without permanent connections.",
+          "depth": 1,
+          "name": "6. A __________ allows students to prototype circuits without permanent connections."
+        },
+        {
+          "text": "7.  A __________ measures voltage, current, and resistance in a circuit.",
+          "depth": 1,
+          "name": "7. A __________ measures voltage, current, and resistance in a circuit."
+        },
+        {
+          "text": "8.  __________ change the speed and direction of rotation in a mechanical system.",
+          "depth": 1,
+          "name": "8. __________ change the speed and direction of rotation in a mechanical system."
+        },
+        {
+          "text": "9.  A line __________ uses sensors to track a black line on a white surface.",
+          "depth": 1,
+          "name": "9. A line __________ uses sensors to track a black line on a white surface."
+        },
+        {
+          "text": "10. A __________ module gives the robot the ability to see its environment.",
+          "depth": 1,
+          "name": "10. A __________ module gives the robot the ability to see its environment."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. circuit  2. motor  3. gripper  4. soldering  5. microchip  6. breadboard  7. multimeter  8. Gears  9. follower  10. camera",
+          "depth": 2,
+          "name": "1. circuit 2. motor 3. gripper 4. soldering 5. microchip 6. breadboard 7. multimeter 8. Gears 9. follower 10. camera"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "549:4220",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "The Word 'Robot'",
+          "depth": 2,
+          "name": "The Word 'Robot'"
+        },
+        {
+          "text": "'Robot' comes from the Czech word 'robota' meaning 'forced labour'. It was coined by Karel Capek in his 1920 play 'R.U.R.' (Rossum's Universal Robots). 'Android' = a human-shaped robot. 'Cyborg' = a being that is part human, part machine.",
+          "depth": 2,
+          "name": "'Robot' comes from the Czech word 'robota' meaning 'forced labour'. It was coined by Karel Capek in his 1920 play 'R.U.R.' (Rossum's Universal Robots). 'Android' = a human-shaped robot. 'Cyborg' = a being that is part human, part machine."
+        },
+        {
+          "text": "Programme vs Program",
+          "depth": 2,
+          "name": "Programme vs Program"
+        },
+        {
+          "text": "British English: 'programme' (general use, TV programme), but 'program' for computer programs. American English: 'program' for everything. 'Programming' and 'programmer' are spelled the same in both varieties.",
+          "depth": 2,
+          "name": "British English: 'programme' (general use, TV programme), but 'program' for computer programs. American English: 'program' for everything. 'Programming' and 'programmer' are spelled the same in both varieties."
+        },
+        {
+          "text": "Robots in Popular Culture",
+          "depth": 2,
+          "name": "Robots in Popular Culture"
+        },
+        {
+          "text": "Famous fictional robots: R2-D2 and C-3PO (Star Wars), the Terminator, WALL-E, Data (Star Trek). Asimov's Three Laws of Robotics (1942) are still referenced in AI ethics discussions today.",
+          "depth": 2,
+          "name": "Famous fictional robots: R2-D2 and C-3PO (Star Wars), the Terminator, WALL-E, Data (Star Trek). Asimov's Three Laws of Robotics (1942) are still referenced in AI ethics discussions today."
+        },
+        {
+          "text": "AI Vocabulary for Exams",
+          "depth": 2,
+          "name": "AI Vocabulary for Exams"
+        },
+        {
+          "text": "Key terms: 'algorithm' (a set of rules for solving a problem), 'machine learning' (learning from data), 'neural network' (inspired by the brain), 'deep learning' (multi-layered neural networks), 'natural language processing' (understanding human language).",
+          "depth": 2,
+          "name": "Key terms: 'algorithm' (a set of rules for solving a problem), 'machine learning' (learning from data), 'neural network' (inspired by the brain), 'deep learning' (multi-layered neural networks), 'natural language processing' (understanding human language)."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "549:4236",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "robot",
+          "depth": 2,
+          "name": "robot"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "industrial ~, ~ arm, ~ assistant",
+          "depth": 2,
+          "name": "industrial ~, ~ arm, ~ assistant"
+        },
+        {
+          "text": "sensor",
+          "depth": 2,
+          "name": "sensor"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "motion ~, ~ data, ~ array",
+          "depth": 2,
+          "name": "motion ~, ~ data, ~ array"
+        },
+        {
+          "text": "algorithm",
+          "depth": 2,
+          "name": "algorithm"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ design, sorting ~, search ~",
+          "depth": 2,
+          "name": "~ design, sorting ~, search ~"
+        },
+        {
+          "text": "prototype",
+          "depth": 2,
+          "name": "prototype"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ model, ~ testing, build a ~",
+          "depth": 2,
+          "name": "~ model, ~ testing, build a ~"
+        },
+        {
+          "text": "circuit",
+          "depth": 2,
+          "name": "circuit"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ board, electrical ~, ~ design",
+          "depth": 2,
+          "name": "~ board, electrical ~, ~ design"
+        },
+        {
+          "text": "motor",
+          "depth": 2,
+          "name": "motor"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "servo ~, electric ~, ~ speed",
+          "depth": 2,
+          "name": "servo ~, electric ~, ~ speed"
+        },
+        {
+          "text": "drone",
+          "depth": 2,
+          "name": "drone"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "delivery ~, ~ pilot, ~ camera",
+          "depth": 2,
+          "name": "delivery ~, ~ pilot, ~ camera"
+        },
+        {
+          "text": "code",
+          "depth": 2,
+          "name": "code"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ language, write ~, source ~",
+          "depth": 2,
+          "name": "~ language, write ~, source ~"
+        },
+        {
+          "text": "automation",
+          "depth": 2,
+          "name": "automation"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "factory ~, ~ system, ~ process",
+          "depth": 2,
+          "name": "factory ~, ~ system, ~ process"
+        },
+        {
+          "text": "microchip",
+          "depth": 2,
+          "name": "microchip"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ processor, ~ technology, silicon ~",
+          "depth": 2,
+          "name": "~ processor, ~ technology, silicon ~"
+        }
+      ]
+    }
+  }
+}

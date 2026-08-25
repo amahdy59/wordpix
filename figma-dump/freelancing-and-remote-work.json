@@ -1,0 +1,489 @@
+{
+  "unitId": "freelancing-and-remote-work",
+  "name": "Freelancing & Remote Work",
+  "subtopics": [
+    {
+      "id": "freelance-basics",
+      "title": "Freelance Basics",
+      "wordIds": [
+        "freelancer",
+        "contractor",
+        "consultant",
+        "gig",
+        "portfolio",
+        "client",
+        "project",
+        "proposal",
+        "rate",
+        "retainer"
+      ]
+    },
+    {
+      "id": "remote-work-tools",
+      "title": "Remote Work Tools",
+      "wordIds": [
+        "zoom",
+        "slack",
+        "trello",
+        "notion",
+        "google-drive",
+        "dropbox",
+        "figma",
+        "miro",
+        "asana",
+        "calendly"
+      ]
+    },
+    {
+      "id": "work-life-balance",
+      "title": "Work-Life Balance",
+      "wordIds": [
+        "home-office",
+        "routine",
+        "boundaries",
+        "breaks",
+        "exercise",
+        "ergonomics",
+        "time-zone",
+        "flexibility",
+        "isolation",
+        "burnout"
+      ]
+    },
+    {
+      "id": "business-side",
+      "title": "Business Side",
+      "wordIds": [
+        "invoice",
+        "contract",
+        "tax-deduction",
+        "self-employment-tax",
+        "health-insurance",
+        "retirement-planning",
+        "llc",
+        "1099",
+        "scope-creep",
+        "non-disclosure"
+      ]
+    },
+    {
+      "id": "productivity",
+      "title": "Productivity",
+      "wordIds": [
+        "pomodoro",
+        "time-blocking",
+        "deep-work",
+        "focus-mode",
+        "do-not-disturb",
+        "batch-processing",
+        "automation",
+        "template",
+        "shortcut",
+        "review"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "freelancer",
+      "label": "Freelancer",
+      "ipa": "/ˈfriːˌlænsər/",
+      "cefr": "C1",
+      "imageNodeId": "467:21159"
+    },
+    {
+      "kind": "card",
+      "id": "contractor",
+      "label": "Contractor",
+      "ipa": "/ˈkɒntræktər/",
+      "cefr": "C1",
+      "imageNodeId": "467:21163"
+    },
+    {
+      "kind": "card",
+      "id": "consultant",
+      "label": "Consultant",
+      "ipa": "/kənˈsʌltənt/",
+      "cefr": "C1",
+      "imageNodeId": "467:21167"
+    },
+    {
+      "kind": "card",
+      "id": "gig",
+      "label": "Gig",
+      "ipa": "/ɡɪɡ/",
+      "cefr": "B2",
+      "imageNodeId": "467:21171"
+    },
+    {
+      "kind": "card",
+      "id": "portfolio",
+      "label": "Portfolio",
+      "ipa": "/pɔːrtˈfoʊlioʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:21175"
+    },
+    {
+      "kind": "card",
+      "id": "client",
+      "label": "Client",
+      "ipa": "/ˈklaɪənt/",
+      "cefr": "B2",
+      "imageNodeId": "467:21179"
+    },
+    {
+      "kind": "card",
+      "id": "project",
+      "label": "Project",
+      "ipa": "/ˈprɒdʒɛkt/",
+      "cefr": "B2",
+      "imageNodeId": "467:21183"
+    },
+    {
+      "kind": "card",
+      "id": "proposal",
+      "label": "Proposal",
+      "ipa": "/prəˈpoʊzəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:21187"
+    },
+    {
+      "kind": "card",
+      "id": "rate",
+      "label": "Rate",
+      "ipa": "/reɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:21191"
+    },
+    {
+      "kind": "card",
+      "id": "retainer",
+      "label": "Retainer",
+      "ipa": "/rɪˈteɪnər/",
+      "cefr": "B2",
+      "imageNodeId": "467:21195"
+    },
+    {
+      "kind": "card",
+      "id": "zoom",
+      "label": "Zoom",
+      "ipa": "/zuːm/",
+      "cefr": "B2",
+      "imageNodeId": "467:21204"
+    },
+    {
+      "kind": "card",
+      "id": "slack",
+      "label": "Slack",
+      "ipa": "/slæk/",
+      "cefr": "B2",
+      "imageNodeId": "467:21208"
+    },
+    {
+      "kind": "card",
+      "id": "trello",
+      "label": "Trello",
+      "ipa": "/ˈtrɛloʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:21212"
+    },
+    {
+      "kind": "card",
+      "id": "notion",
+      "label": "Notion",
+      "ipa": "/ˈnoʊʃən/",
+      "cefr": "B2",
+      "imageNodeId": "467:21216"
+    },
+    {
+      "kind": "card",
+      "id": "google-drive",
+      "label": "Google Drive",
+      "ipa": "/ˈɡuːɡəl draɪv/",
+      "cefr": "C1",
+      "imageNodeId": "467:21220"
+    },
+    {
+      "kind": "card",
+      "id": "dropbox",
+      "label": "Dropbox",
+      "ipa": "/ˈdrɒpˌbɒks/",
+      "cefr": "B2",
+      "imageNodeId": "467:21224"
+    },
+    {
+      "kind": "card",
+      "id": "figma",
+      "label": "Figma",
+      "ipa": "/ˈfɪɡmə/",
+      "cefr": "B2",
+      "imageNodeId": "467:21228"
+    },
+    {
+      "kind": "card",
+      "id": "miro",
+      "label": "Miro",
+      "ipa": "/ˈmɪəroʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:21232"
+    },
+    {
+      "kind": "card",
+      "id": "asana",
+      "label": "Asana",
+      "ipa": "/əˈsɑːnə/",
+      "cefr": "B2",
+      "imageNodeId": "467:21236"
+    },
+    {
+      "kind": "card",
+      "id": "calendly",
+      "label": "Calendly",
+      "ipa": "/ˈkæləndli/",
+      "cefr": "B2",
+      "imageNodeId": "467:21240"
+    },
+    {
+      "kind": "card",
+      "id": "home-office",
+      "label": "Home Office",
+      "ipa": "/hoʊm ˈɒfɪs/",
+      "cefr": "C1",
+      "imageNodeId": "467:21249"
+    },
+    {
+      "kind": "card",
+      "id": "routine",
+      "label": "Routine",
+      "ipa": "/ruːˈtiːn/",
+      "cefr": "B2",
+      "imageNodeId": "467:21253"
+    },
+    {
+      "kind": "card",
+      "id": "boundaries",
+      "label": "Boundaries",
+      "ipa": "/ˈbaʊndəriz/",
+      "cefr": "C1",
+      "imageNodeId": "467:21257"
+    },
+    {
+      "kind": "card",
+      "id": "breaks",
+      "label": "Breaks",
+      "ipa": "/breɪks/",
+      "cefr": "B2",
+      "imageNodeId": "467:21261"
+    },
+    {
+      "kind": "card",
+      "id": "exercise",
+      "label": "Exercise",
+      "ipa": "/ˈɛksərˌsaɪz/",
+      "cefr": "B2",
+      "imageNodeId": "467:21265"
+    },
+    {
+      "kind": "card",
+      "id": "ergonomics",
+      "label": "Ergonomics",
+      "ipa": "/ˌɜːrɡəˈnɒmɪks/",
+      "cefr": "C1",
+      "imageNodeId": "467:21269"
+    },
+    {
+      "kind": "card",
+      "id": "time-zone",
+      "label": "Time Zone",
+      "ipa": "/taɪm zoʊn/",
+      "cefr": "C1",
+      "imageNodeId": "467:21273"
+    },
+    {
+      "kind": "card",
+      "id": "flexibility",
+      "label": "Flexibility",
+      "ipa": "/ˌflɛksɪˈbɪlɪti/",
+      "cefr": "C1",
+      "imageNodeId": "467:21277"
+    },
+    {
+      "kind": "card",
+      "id": "isolation",
+      "label": "Isolation",
+      "ipa": "/ˌaɪsəˈleɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "467:21281"
+    },
+    {
+      "kind": "card",
+      "id": "burnout",
+      "label": "Burnout",
+      "ipa": "/ˈbɜːrnˌaʊt/",
+      "cefr": "B2",
+      "imageNodeId": "467:21285"
+    },
+    {
+      "kind": "card",
+      "id": "invoice",
+      "label": "Invoice",
+      "ipa": "/ˈɪnvɔɪs/",
+      "cefr": "B2",
+      "imageNodeId": "467:21294"
+    },
+    {
+      "kind": "card",
+      "id": "contract",
+      "label": "Contract",
+      "ipa": "/ˈkɒntrækt/",
+      "cefr": "B2",
+      "imageNodeId": "467:21298"
+    },
+    {
+      "kind": "card",
+      "id": "tax-deduction",
+      "label": "Tax Deduction",
+      "ipa": "/tæks dɪˈdʌkʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:21302"
+    },
+    {
+      "kind": "card",
+      "id": "self-employment-tax",
+      "label": "Self-Employment Tax",
+      "ipa": "/sɛlf ɪmˈplɔɪmənt tæks/",
+      "cefr": "C1",
+      "imageNodeId": "467:21306"
+    },
+    {
+      "kind": "card",
+      "id": "health-insurance",
+      "label": "Health Insurance",
+      "ipa": "/hɛlθ ɪnˈʃʊərəns/",
+      "cefr": "C1",
+      "imageNodeId": "467:21310"
+    },
+    {
+      "kind": "card",
+      "id": "retirement-planning",
+      "label": "Retirement Planning",
+      "ipa": "/rɪˈtaɪərmənt ˈplænɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:21314"
+    },
+    {
+      "kind": "card",
+      "id": "llc",
+      "label": "LLC",
+      "ipa": "/ˌɛlɛlˈsiː/",
+      "cefr": "B2",
+      "imageNodeId": "467:21318"
+    },
+    {
+      "kind": "card",
+      "id": "1099",
+      "label": "1099",
+      "ipa": "/ˌtɛn ˈnaɪntiˌnaɪn/",
+      "cefr": "B2",
+      "imageNodeId": "467:21322"
+    },
+    {
+      "kind": "card",
+      "id": "scope-creep",
+      "label": "Scope Creep",
+      "ipa": "/skoʊp kriːp/",
+      "cefr": "C1",
+      "imageNodeId": "467:21326"
+    },
+    {
+      "kind": "card",
+      "id": "non-disclosure",
+      "label": "Non-Disclosure",
+      "ipa": "/nɒn dɪsˈkloʊʒər/",
+      "cefr": "C1",
+      "imageNodeId": "467:21330"
+    },
+    {
+      "kind": "card",
+      "id": "pomodoro",
+      "label": "Pomodoro",
+      "ipa": "/ˌpɒməˈdɔːroʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:21339"
+    },
+    {
+      "kind": "card",
+      "id": "time-blocking",
+      "label": "Time Blocking",
+      "ipa": "/taɪm ˈblɒkɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:21343"
+    },
+    {
+      "kind": "card",
+      "id": "deep-work",
+      "label": "Deep Work",
+      "ipa": "/diːp wɜːrk/",
+      "cefr": "C1",
+      "imageNodeId": "467:21347"
+    },
+    {
+      "kind": "card",
+      "id": "focus-mode",
+      "label": "Focus Mode",
+      "ipa": "/ˈfoʊkəs moʊd/",
+      "cefr": "C1",
+      "imageNodeId": "467:21351"
+    },
+    {
+      "kind": "card",
+      "id": "do-not-disturb",
+      "label": "Do Not Disturb",
+      "ipa": "/duː nɒt dɪˈstɜːrb/",
+      "cefr": "C1",
+      "imageNodeId": "467:21355"
+    },
+    {
+      "kind": "card",
+      "id": "batch-processing",
+      "label": "Batch Processing",
+      "ipa": "/bætʃ ˈprɒsɛsɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:21359"
+    },
+    {
+      "kind": "card",
+      "id": "automation",
+      "label": "Automation",
+      "ipa": "/ˌɔːtəˈmeɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:21363"
+    },
+    {
+      "kind": "card",
+      "id": "template",
+      "label": "Template",
+      "ipa": "/ˈtɛmplɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:21367"
+    },
+    {
+      "kind": "card",
+      "id": "shortcut",
+      "label": "Shortcut",
+      "ipa": "/ˈʃɔːrtˌkʌt/",
+      "cefr": "B2",
+      "imageNodeId": "467:21371"
+    },
+    {
+      "kind": "card",
+      "id": "review",
+      "label": "Review",
+      "ipa": "/rɪˈvjuː/",
+      "cefr": "B2",
+      "imageNodeId": "467:21375"
+    }
+  ],
+  "materials": null
+}

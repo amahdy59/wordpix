@@ -1,0 +1,489 @@
+{
+  "unitId": "seasonings-and-condiments",
+  "name": "Seasonings & Condiments",
+  "subtopics": [
+    {
+      "id": "common-spices",
+      "title": "Common Spices",
+      "wordIds": [
+        "salt",
+        "black-pepper",
+        "paprika",
+        "cinnamon",
+        "cumin",
+        "turmeric",
+        "chili-powder",
+        "nutmeg",
+        "clove",
+        "cardamom"
+      ]
+    },
+    {
+      "id": "herbs",
+      "title": "Herbs",
+      "wordIds": [
+        "basil",
+        "oregano",
+        "thyme",
+        "rosemary",
+        "parsley",
+        "cilantro",
+        "dill",
+        "mint",
+        "bay-leaf",
+        "sage"
+      ]
+    },
+    {
+      "id": "sauces",
+      "title": "Sauces",
+      "wordIds": [
+        "ketchup",
+        "mustard",
+        "mayonnaise",
+        "soy-sauce",
+        "hot-sauce",
+        "worcestershire",
+        "barbecue-sauce",
+        "teriyaki",
+        "pesto",
+        "salsa"
+      ]
+    },
+    {
+      "id": "oils-vinegars",
+      "title": "Oils & Vinegars",
+      "wordIds": [
+        "olive-oil",
+        "vegetable-oil",
+        "coconut-oil",
+        "sesame-oil",
+        "balsamic-vinegar",
+        "red-wine-vinegar",
+        "apple-cider-vinegar",
+        "rice-vinegar",
+        "white-vinegar",
+        "truffle-oil"
+      ]
+    },
+    {
+      "id": "sweeteners-spreads",
+      "title": "Sweeteners & Spreads",
+      "wordIds": [
+        "sugar",
+        "honey",
+        "maple-syrup",
+        "jam",
+        "jelly",
+        "peanut-butter",
+        "nutella",
+        "marmalade",
+        "molasses",
+        "agave"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "salt",
+      "label": "Salt",
+      "ipa": "/sɔːlt/",
+      "cefr": "A2",
+      "imageNodeId": "467:6265"
+    },
+    {
+      "kind": "card",
+      "id": "black-pepper",
+      "label": "Black Pepper",
+      "ipa": "/blæk ˈpɛpər/",
+      "cefr": "B1",
+      "imageNodeId": "467:6269"
+    },
+    {
+      "kind": "card",
+      "id": "paprika",
+      "label": "Paprika",
+      "ipa": "/pəˈpriːkə/",
+      "cefr": "A2",
+      "imageNodeId": "467:6273"
+    },
+    {
+      "kind": "card",
+      "id": "cinnamon",
+      "label": "Cinnamon",
+      "ipa": "/ˈsɪnəmən/",
+      "cefr": "A2",
+      "imageNodeId": "467:6277"
+    },
+    {
+      "kind": "card",
+      "id": "cumin",
+      "label": "Cumin",
+      "ipa": "/ˈkjuːmɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:6281"
+    },
+    {
+      "kind": "card",
+      "id": "turmeric",
+      "label": "Turmeric",
+      "ipa": "/ˈtɜːrmərɪk/",
+      "cefr": "A2",
+      "imageNodeId": "467:6285"
+    },
+    {
+      "kind": "card",
+      "id": "chili-powder",
+      "label": "Chili Powder",
+      "ipa": "/ˈtʃɪli ˈpaʊdər/",
+      "cefr": "B1",
+      "imageNodeId": "467:6289"
+    },
+    {
+      "kind": "card",
+      "id": "nutmeg",
+      "label": "Nutmeg",
+      "ipa": "/ˈnʌtˌmɛɡ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6293"
+    },
+    {
+      "kind": "card",
+      "id": "clove",
+      "label": "Clove",
+      "ipa": "/kloʊv/",
+      "cefr": "A2",
+      "imageNodeId": "467:6297"
+    },
+    {
+      "kind": "card",
+      "id": "cardamom",
+      "label": "Cardamom",
+      "ipa": "/ˈkɑːrdəˌmɒm/",
+      "cefr": "A2",
+      "imageNodeId": "467:6301"
+    },
+    {
+      "kind": "card",
+      "id": "basil",
+      "label": "Basil",
+      "ipa": "/ˈbæzəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:6310"
+    },
+    {
+      "kind": "card",
+      "id": "oregano",
+      "label": "Oregano",
+      "ipa": "/əˈrɛɡəˌnoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6314"
+    },
+    {
+      "kind": "card",
+      "id": "thyme",
+      "label": "Thyme",
+      "ipa": "/taɪm/",
+      "cefr": "A2",
+      "imageNodeId": "467:6318"
+    },
+    {
+      "kind": "card",
+      "id": "rosemary",
+      "label": "Rosemary",
+      "ipa": "/ˈroʊzˌmɛri/",
+      "cefr": "A2",
+      "imageNodeId": "467:6322"
+    },
+    {
+      "kind": "card",
+      "id": "parsley",
+      "label": "Parsley",
+      "ipa": "/ˈpɑːrsli/",
+      "cefr": "A2",
+      "imageNodeId": "467:6326"
+    },
+    {
+      "kind": "card",
+      "id": "cilantro",
+      "label": "Cilantro",
+      "ipa": "/sɪˈlæntroʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6330"
+    },
+    {
+      "kind": "card",
+      "id": "dill",
+      "label": "Dill",
+      "ipa": "/dɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:6334"
+    },
+    {
+      "kind": "card",
+      "id": "mint",
+      "label": "Mint",
+      "ipa": "/mɪnt/",
+      "cefr": "A2",
+      "imageNodeId": "467:6338"
+    },
+    {
+      "kind": "card",
+      "id": "bay-leaf",
+      "label": "Bay Leaf",
+      "ipa": "/beɪ liːf/",
+      "cefr": "B1",
+      "imageNodeId": "467:6342"
+    },
+    {
+      "kind": "card",
+      "id": "sage",
+      "label": "Sage",
+      "ipa": "/seɪdʒ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6346"
+    },
+    {
+      "kind": "card",
+      "id": "ketchup",
+      "label": "Ketchup",
+      "ipa": "/ˈkɛtʃəp/",
+      "cefr": "A2",
+      "imageNodeId": "467:6355"
+    },
+    {
+      "kind": "card",
+      "id": "mustard",
+      "label": "Mustard",
+      "ipa": "/ˈmʌstərd/",
+      "cefr": "A2",
+      "imageNodeId": "467:6359"
+    },
+    {
+      "kind": "card",
+      "id": "mayonnaise",
+      "label": "Mayonnaise",
+      "ipa": "/ˈmeɪəˌneɪz/",
+      "cefr": "B1",
+      "imageNodeId": "467:6363"
+    },
+    {
+      "kind": "card",
+      "id": "soy-sauce",
+      "label": "Soy Sauce",
+      "ipa": "/sɔɪ sɔːs/",
+      "cefr": "B1",
+      "imageNodeId": "467:6367"
+    },
+    {
+      "kind": "card",
+      "id": "hot-sauce",
+      "label": "Hot Sauce",
+      "ipa": "/hɒt sɔːs/",
+      "cefr": "B1",
+      "imageNodeId": "467:6371"
+    },
+    {
+      "kind": "card",
+      "id": "worcestershire",
+      "label": "Worcestershire",
+      "ipa": "/ˈwʊstərˌʃɪər/",
+      "cefr": "B1",
+      "imageNodeId": "467:6375"
+    },
+    {
+      "kind": "card",
+      "id": "barbecue-sauce",
+      "label": "Barbecue Sauce",
+      "ipa": "/ˈbɑːrbɪˌkjuː sɔːs/",
+      "cefr": "B1",
+      "imageNodeId": "467:6379"
+    },
+    {
+      "kind": "card",
+      "id": "teriyaki",
+      "label": "Teriyaki",
+      "ipa": "/ˌtɛriˈjɑːki/",
+      "cefr": "A2",
+      "imageNodeId": "467:6383"
+    },
+    {
+      "kind": "card",
+      "id": "pesto",
+      "label": "Pesto",
+      "ipa": "/ˈpɛstoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6387"
+    },
+    {
+      "kind": "card",
+      "id": "salsa",
+      "label": "Salsa",
+      "ipa": "/ˈsælsə/",
+      "cefr": "A2",
+      "imageNodeId": "467:6391"
+    },
+    {
+      "kind": "card",
+      "id": "olive-oil",
+      "label": "Olive Oil",
+      "ipa": "/ˈɒlɪv ɔɪl/",
+      "cefr": "B1",
+      "imageNodeId": "467:6400"
+    },
+    {
+      "kind": "card",
+      "id": "vegetable-oil",
+      "label": "Vegetable Oil",
+      "ipa": "/ˈvɛdʒtəbəl ɔɪl/",
+      "cefr": "B1",
+      "imageNodeId": "467:6404"
+    },
+    {
+      "kind": "card",
+      "id": "coconut-oil",
+      "label": "Coconut Oil",
+      "ipa": "/ˈkoʊkəˌnʌt ɔɪl/",
+      "cefr": "B1",
+      "imageNodeId": "467:6408"
+    },
+    {
+      "kind": "card",
+      "id": "sesame-oil",
+      "label": "Sesame Oil",
+      "ipa": "/ˈsɛsəmi ɔɪl/",
+      "cefr": "B1",
+      "imageNodeId": "467:6412"
+    },
+    {
+      "kind": "card",
+      "id": "balsamic-vinegar",
+      "label": "Balsamic Vinegar",
+      "ipa": "/bɔːlˈsæmɪk ˈvɪnɪɡər/",
+      "cefr": "B2",
+      "imageNodeId": "467:6416"
+    },
+    {
+      "kind": "card",
+      "id": "red-wine-vinegar",
+      "label": "Red Wine Vinegar",
+      "ipa": "/rɛd waɪn ˈvɪnɪɡər/",
+      "cefr": "B2",
+      "imageNodeId": "467:6420"
+    },
+    {
+      "kind": "card",
+      "id": "apple-cider-vinegar",
+      "label": "Apple Cider Vinegar",
+      "ipa": "/ˈæpəl ˈsaɪdər ˈvɪnɪɡər/",
+      "cefr": "B2",
+      "imageNodeId": "467:6424"
+    },
+    {
+      "kind": "card",
+      "id": "rice-vinegar",
+      "label": "Rice Vinegar",
+      "ipa": "/raɪs ˈvɪnɪɡər/",
+      "cefr": "B1",
+      "imageNodeId": "467:6428"
+    },
+    {
+      "kind": "card",
+      "id": "white-vinegar",
+      "label": "White Vinegar",
+      "ipa": "/waɪt ˈvɪnɪɡər/",
+      "cefr": "B1",
+      "imageNodeId": "467:6432"
+    },
+    {
+      "kind": "card",
+      "id": "truffle-oil",
+      "label": "Truffle Oil",
+      "ipa": "/ˈtrʌfəl ɔɪl/",
+      "cefr": "B1",
+      "imageNodeId": "467:6436"
+    },
+    {
+      "kind": "card",
+      "id": "sugar",
+      "label": "Sugar",
+      "ipa": "/ˈʃʊɡər/",
+      "cefr": "A2",
+      "imageNodeId": "467:6445"
+    },
+    {
+      "kind": "card",
+      "id": "honey",
+      "label": "Honey",
+      "ipa": "/ˈhʌni/",
+      "cefr": "A2",
+      "imageNodeId": "467:6449"
+    },
+    {
+      "kind": "card",
+      "id": "maple-syrup",
+      "label": "Maple Syrup",
+      "ipa": "/ˈmeɪpəl ˈsɪrəp/",
+      "cefr": "B1",
+      "imageNodeId": "467:6453"
+    },
+    {
+      "kind": "card",
+      "id": "jam",
+      "label": "Jam",
+      "ipa": "/dʒæm/",
+      "cefr": "A2",
+      "imageNodeId": "467:6457"
+    },
+    {
+      "kind": "card",
+      "id": "jelly",
+      "label": "Jelly",
+      "ipa": "/ˈdʒɛli/",
+      "cefr": "A2",
+      "imageNodeId": "467:6461"
+    },
+    {
+      "kind": "card",
+      "id": "peanut-butter",
+      "label": "Peanut Butter",
+      "ipa": "/ˈpiːnʌt ˈbʌtər/",
+      "cefr": "B1",
+      "imageNodeId": "467:6465"
+    },
+    {
+      "kind": "card",
+      "id": "nutella",
+      "label": "Nutella",
+      "ipa": "/njuːˈtɛlə/",
+      "cefr": "A2",
+      "imageNodeId": "467:6469"
+    },
+    {
+      "kind": "card",
+      "id": "marmalade",
+      "label": "Marmalade",
+      "ipa": "/ˈmɑːrməˌleɪd/",
+      "cefr": "A2",
+      "imageNodeId": "467:6473"
+    },
+    {
+      "kind": "card",
+      "id": "molasses",
+      "label": "Molasses",
+      "ipa": "/məˈlæsɪz/",
+      "cefr": "A2",
+      "imageNodeId": "467:6477"
+    },
+    {
+      "kind": "card",
+      "id": "agave",
+      "label": "Agave",
+      "ipa": "/əˈɡɑːveɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6481"
+    }
+  ],
+  "materials": null
+}

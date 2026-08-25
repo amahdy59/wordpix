@@ -1,0 +1,393 @@
+{
+  "unitId": "law-firm",
+  "name": "The Law Firm",
+  "subtopics": [
+    {
+      "id": "legal-professionals",
+      "title": "Legal Professionals",
+      "wordIds": [
+        "lawyer",
+        "attorney",
+        "judge",
+        "paralegal",
+        "legal-secretary",
+        "notary",
+        "mediator",
+        "arbitrator",
+        "public-defender",
+        "prosecutor"
+      ]
+    },
+    {
+      "id": "law-firm-areas",
+      "title": "Law Firm Areas",
+      "wordIds": [
+        "reception",
+        "conference-room",
+        "law-library",
+        "partner-office",
+        "associate-office",
+        "filing-room",
+        "war-room",
+        "deposition-room",
+        "waiting-area",
+        "records-room"
+      ]
+    },
+    {
+      "id": "types-of-law",
+      "title": "Types of Law",
+      "wordIds": [
+        "criminal-law",
+        "civil-law",
+        "family-law",
+        "corporate-law",
+        "tax-law",
+        "immigration-law",
+        "real-estate-law",
+        "employment-law",
+        "environmental-law",
+        "intellectual-property"
+      ]
+    },
+    {
+      "id": "legal-actions",
+      "title": "Legal Actions",
+      "wordIds": [
+        "consult",
+        "represent",
+        "file",
+        "appeal",
+        "negotiate",
+        "litigate",
+        "settle",
+        "draft",
+        "review",
+        "advise"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "lawyer",
+      "label": "Lawyer",
+      "ipa": "/ˈlɔːjər/",
+      "cefr": "B2",
+      "imageNodeId": "467:14444"
+    },
+    {
+      "kind": "card",
+      "id": "attorney",
+      "label": "Attorney",
+      "ipa": "/əˈtɜːrni/",
+      "cefr": "B2",
+      "imageNodeId": "467:14448"
+    },
+    {
+      "kind": "card",
+      "id": "judge",
+      "label": "Judge",
+      "ipa": "/dʒʌdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "467:14452"
+    },
+    {
+      "kind": "card",
+      "id": "paralegal",
+      "label": "Paralegal",
+      "ipa": "/ˌpærəˈliːɡəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:14456"
+    },
+    {
+      "kind": "card",
+      "id": "legal-secretary",
+      "label": "Legal Secretary",
+      "ipa": "/ˈliːɡəl ˈsɛkrəˌtɛri/",
+      "cefr": "C1",
+      "imageNodeId": "467:14460"
+    },
+    {
+      "kind": "card",
+      "id": "notary",
+      "label": "Notary",
+      "ipa": "/ˈnoʊtəri/",
+      "cefr": "B2",
+      "imageNodeId": "467:14464"
+    },
+    {
+      "kind": "card",
+      "id": "mediator",
+      "label": "Mediator",
+      "ipa": "/ˈmiːdiˌeɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "467:14468"
+    },
+    {
+      "kind": "card",
+      "id": "arbitrator",
+      "label": "Arbitrator",
+      "ipa": "/ˈɑːrbɪˌtreɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "467:14472"
+    },
+    {
+      "kind": "card",
+      "id": "public-defender",
+      "label": "Public Defender",
+      "ipa": "/ˈpʌblɪk dɪˈfɛndər/",
+      "cefr": "C1",
+      "imageNodeId": "467:14476"
+    },
+    {
+      "kind": "card",
+      "id": "prosecutor",
+      "label": "Prosecutor",
+      "ipa": "/ˈprɒsɪˌkjuːtər/",
+      "cefr": "C1",
+      "imageNodeId": "467:14480"
+    },
+    {
+      "kind": "card",
+      "id": "reception",
+      "label": "Reception",
+      "ipa": "/rɪˈsɛpʃən/",
+      "cefr": "B2",
+      "imageNodeId": "467:14489"
+    },
+    {
+      "kind": "card",
+      "id": "conference-room",
+      "label": "Conference Room",
+      "ipa": "/ˈkɒnfərəns ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "467:14493"
+    },
+    {
+      "kind": "card",
+      "id": "law-library",
+      "label": "Law Library",
+      "ipa": "/lɔː ˈlaɪbrəri/",
+      "cefr": "C1",
+      "imageNodeId": "467:14497"
+    },
+    {
+      "kind": "card",
+      "id": "partner-office",
+      "label": "Partner Office",
+      "ipa": "/ˈpɑːrtnər ˈɒfɪs/",
+      "cefr": "C1",
+      "imageNodeId": "467:14501"
+    },
+    {
+      "kind": "card",
+      "id": "associate-office",
+      "label": "Associate Office",
+      "ipa": "/əˈsoʊsiɪt ˈɒfɪs/",
+      "cefr": "C1",
+      "imageNodeId": "467:14505"
+    },
+    {
+      "kind": "card",
+      "id": "filing-room",
+      "label": "Filing Room",
+      "ipa": "/ˈfaɪlɪŋ ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "467:14509"
+    },
+    {
+      "kind": "card",
+      "id": "war-room",
+      "label": "War Room",
+      "ipa": "/wɔːr ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "467:14513"
+    },
+    {
+      "kind": "card",
+      "id": "deposition-room",
+      "label": "Deposition Room",
+      "ipa": "/ˌdɛpəˈzɪʃən ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "467:14517"
+    },
+    {
+      "kind": "card",
+      "id": "waiting-area",
+      "label": "Waiting Area",
+      "ipa": "/ˈweɪtɪŋ ˈɛəriə/",
+      "cefr": "C1",
+      "imageNodeId": "467:14521"
+    },
+    {
+      "kind": "card",
+      "id": "records-room",
+      "label": "Records Room",
+      "ipa": "/ˈrɛkɔːrdz ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "467:14525"
+    },
+    {
+      "kind": "card",
+      "id": "criminal-law",
+      "label": "Criminal Law",
+      "ipa": "/ˈkrɪmɪnəl lɔː/",
+      "cefr": "C1",
+      "imageNodeId": "467:14534"
+    },
+    {
+      "kind": "card",
+      "id": "civil-law",
+      "label": "Civil Law",
+      "ipa": "/ˈsɪvəl lɔː/",
+      "cefr": "C1",
+      "imageNodeId": "467:14538"
+    },
+    {
+      "kind": "card",
+      "id": "family-law",
+      "label": "Family Law",
+      "ipa": "/ˈfæməli lɔː/",
+      "cefr": "C1",
+      "imageNodeId": "467:14542"
+    },
+    {
+      "kind": "card",
+      "id": "corporate-law",
+      "label": "Corporate Law",
+      "ipa": "/ˈkɔːrpərɪt lɔː/",
+      "cefr": "C1",
+      "imageNodeId": "467:14546"
+    },
+    {
+      "kind": "card",
+      "id": "tax-law",
+      "label": "Tax Law",
+      "ipa": "/tæks lɔː/",
+      "cefr": "C1",
+      "imageNodeId": "467:14550"
+    },
+    {
+      "kind": "card",
+      "id": "immigration-law",
+      "label": "Immigration Law",
+      "ipa": "/ˌɪmɪˈɡreɪʃən lɔː/",
+      "cefr": "C1",
+      "imageNodeId": "467:14554"
+    },
+    {
+      "kind": "card",
+      "id": "real-estate-law",
+      "label": "Real Estate Law",
+      "ipa": "/rɪəl ɪˈsteɪt lɔː/",
+      "cefr": "C1",
+      "imageNodeId": "467:14558"
+    },
+    {
+      "kind": "card",
+      "id": "employment-law",
+      "label": "Employment Law",
+      "ipa": "/ɪmˈplɔɪmənt lɔː/",
+      "cefr": "C1",
+      "imageNodeId": "467:14562"
+    },
+    {
+      "kind": "card",
+      "id": "environmental-law",
+      "label": "Environmental Law",
+      "ipa": "/ɪnˌvaɪrənˈmɛntəl lɔː/",
+      "cefr": "C1",
+      "imageNodeId": "467:14566"
+    },
+    {
+      "kind": "card",
+      "id": "intellectual-property",
+      "label": "Intellectual Property",
+      "ipa": "/ˌɪntəˈlɛktʃuəl ˈprɒpərti/",
+      "cefr": "C1",
+      "imageNodeId": "467:14570"
+    },
+    {
+      "kind": "card",
+      "id": "consult",
+      "label": "Consult",
+      "ipa": "/kənˈsʌlt/",
+      "cefr": "B2",
+      "imageNodeId": "467:14579"
+    },
+    {
+      "kind": "card",
+      "id": "represent",
+      "label": "Represent",
+      "ipa": "/ˌrɛprɪˈzɛnt/",
+      "cefr": "B2",
+      "imageNodeId": "467:14583"
+    },
+    {
+      "kind": "card",
+      "id": "file",
+      "label": "File",
+      "ipa": "/faɪl/",
+      "cefr": "B2",
+      "imageNodeId": "467:14587"
+    },
+    {
+      "kind": "card",
+      "id": "appeal",
+      "label": "Appeal",
+      "ipa": "/əˈpiːl/",
+      "cefr": "B2",
+      "imageNodeId": "467:14591"
+    },
+    {
+      "kind": "card",
+      "id": "negotiate",
+      "label": "Negotiate",
+      "ipa": "/nɪˈɡoʊʃiˌeɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:14595"
+    },
+    {
+      "kind": "card",
+      "id": "litigate",
+      "label": "Litigate",
+      "ipa": "/ˈlɪtɪˌɡeɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:14599"
+    },
+    {
+      "kind": "card",
+      "id": "settle",
+      "label": "Settle",
+      "ipa": "/ˈsɛtəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:14603"
+    },
+    {
+      "kind": "card",
+      "id": "draft",
+      "label": "Draft",
+      "ipa": "/dræft/",
+      "cefr": "B2",
+      "imageNodeId": "467:14607"
+    },
+    {
+      "kind": "card",
+      "id": "review",
+      "label": "Review",
+      "ipa": "/rɪˈvjuː/",
+      "cefr": "B2",
+      "imageNodeId": "467:14611"
+    },
+    {
+      "kind": "card",
+      "id": "advise",
+      "label": "Advise",
+      "ipa": "/ədˈvaɪz/",
+      "cefr": "B2",
+      "imageNodeId": "467:14615"
+    }
+  ],
+  "materials": null
+}

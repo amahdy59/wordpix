@@ -1,0 +1,1698 @@
+{
+  "unitId": "observatory",
+  "name": "The Observatory",
+  "subtopics": [
+    {
+      "id": "telescopes",
+      "title": "Telescopes",
+      "wordIds": [
+        "optical-telescope",
+        "reflecting-telescope",
+        "refracting-telescope",
+        "radio-telescope",
+        "telescope-mount",
+        "eyepiece",
+        "finder-scope",
+        "lens",
+        "mirror",
+        "tripod"
+      ]
+    },
+    {
+      "id": "celestial-objects",
+      "title": "Celestial Objects",
+      "wordIds": [
+        "star",
+        "planet",
+        "moon",
+        "sun",
+        "comet",
+        "asteroid",
+        "nebula",
+        "galaxy",
+        "constellation",
+        "meteor"
+      ]
+    },
+    {
+      "id": "observatory-building",
+      "title": "Observatory Building",
+      "wordIds": [
+        "dome",
+        "rotating-roof",
+        "observation-deck",
+        "control-room",
+        "computer-lab",
+        "library",
+        "lecture-hall",
+        "gift-shop",
+        "parking-area",
+        "pathway"
+      ]
+    },
+    {
+      "id": "instruments-tools",
+      "title": "Instruments & Tools",
+      "wordIds": [
+        "spectrograph",
+        "ccd-camera",
+        "star-chart",
+        "planetarium-projector",
+        "computer-monitor",
+        "data-server",
+        "clock",
+        "laser-pointer",
+        "red-flashlight",
+        "logbook"
+      ]
+    },
+    {
+      "id": "solar-system",
+      "title": "Solar System",
+      "wordIds": [
+        "mercury",
+        "venus",
+        "earth",
+        "mars",
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "pluto",
+        "asteroid-belt"
+      ]
+    },
+    {
+      "id": "astronomy-activities",
+      "title": "Astronomy Activities",
+      "wordIds": [
+        "star-gazing",
+        "photography",
+        "data-analysis",
+        "public-viewing",
+        "night-tour",
+        "lecture",
+        "research",
+        "sky-mapping",
+        "eclipse-watching",
+        "meteor-shower",
+        "telescope",
+        "camera",
+        "photometer",
+        "computer",
+        "antenna",
+        "magnitude",
+        "orbit",
+        "light-year",
+        "spectrum",
+        "rotation",
+        "eclipse",
+        "transit",
+        "discovery"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "optical-telescope",
+      "label": "Optical Telescope",
+      "ipa": "/ˈɒptɪkəl ˈtɛlɪˌskoʊp/",
+      "cefr": "C1",
+      "imageNodeId": "45:8753"
+    },
+    {
+      "kind": "card",
+      "id": "reflecting-telescope",
+      "label": "Reflecting Telescope",
+      "ipa": "/rɪˈflɛktɪŋ ˈtɛlɪˌskoʊp/",
+      "cefr": "C1",
+      "imageNodeId": "45:8757"
+    },
+    {
+      "kind": "card",
+      "id": "refracting-telescope",
+      "label": "Refracting Telescope",
+      "ipa": "/rɪˈfræktɪŋ ˈtɛlɪˌskoʊp/",
+      "cefr": "C1",
+      "imageNodeId": "45:8761"
+    },
+    {
+      "kind": "card",
+      "id": "radio-telescope",
+      "label": "Radio Telescope",
+      "ipa": "/ˈreɪdiˌoʊ ˈtɛlɪˌskoʊp/",
+      "cefr": "C1",
+      "imageNodeId": "45:8765"
+    },
+    {
+      "kind": "card",
+      "id": "telescope-mount",
+      "label": "Telescope Mount",
+      "ipa": "/ˈtɛlɪˌskoʊp maʊnt/",
+      "cefr": "C1",
+      "imageNodeId": "45:8769"
+    },
+    {
+      "kind": "card",
+      "id": "eyepiece",
+      "label": "Eyepiece",
+      "ipa": "/ˈaɪˌpiːs/",
+      "cefr": "B1",
+      "imageNodeId": "45:8773"
+    },
+    {
+      "kind": "card",
+      "id": "finder-scope",
+      "label": "Finder Scope",
+      "ipa": "/ˈfaɪndər skoʊp/",
+      "cefr": "B2",
+      "imageNodeId": "45:8777"
+    },
+    {
+      "kind": "card",
+      "id": "lens",
+      "label": "Lens",
+      "ipa": "/lɛnz/",
+      "cefr": "B1",
+      "imageNodeId": "45:8781"
+    },
+    {
+      "kind": "card",
+      "id": "mirror",
+      "label": "Mirror",
+      "ipa": "/ˈmɪrər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8785"
+    },
+    {
+      "kind": "card",
+      "id": "tripod",
+      "label": "Tripod",
+      "ipa": "/ˈtraɪˌpɒd/",
+      "cefr": "B1",
+      "imageNodeId": "45:8789"
+    },
+    {
+      "kind": "card",
+      "id": "star",
+      "label": "Star",
+      "ipa": "/stɑːr/",
+      "cefr": "B1",
+      "imageNodeId": "45:8798"
+    },
+    {
+      "kind": "card",
+      "id": "planet",
+      "label": "Planet",
+      "ipa": "/ˈplænɪt/",
+      "cefr": "B1",
+      "imageNodeId": "45:8802"
+    },
+    {
+      "kind": "card",
+      "id": "moon",
+      "label": "Moon",
+      "ipa": "/muːn/",
+      "cefr": "B1",
+      "imageNodeId": "45:8806"
+    },
+    {
+      "kind": "card",
+      "id": "sun",
+      "label": "Sun",
+      "ipa": "/sʌn/",
+      "cefr": "B1",
+      "imageNodeId": "45:8810"
+    },
+    {
+      "kind": "card",
+      "id": "comet",
+      "label": "Comet",
+      "ipa": "/ˈkɒmɪt/",
+      "cefr": "B1",
+      "imageNodeId": "45:8814"
+    },
+    {
+      "kind": "card",
+      "id": "asteroid",
+      "label": "Asteroid",
+      "ipa": "/ˈæstəˌrɔɪd/",
+      "cefr": "B1",
+      "imageNodeId": "45:8818"
+    },
+    {
+      "kind": "card",
+      "id": "nebula",
+      "label": "Nebula",
+      "ipa": "/ˈnɛbjʊlə/",
+      "cefr": "B1",
+      "imageNodeId": "45:8822"
+    },
+    {
+      "kind": "card",
+      "id": "galaxy",
+      "label": "Galaxy",
+      "ipa": "/ˈɡæləksi/",
+      "cefr": "B1",
+      "imageNodeId": "45:8826"
+    },
+    {
+      "kind": "card",
+      "id": "constellation",
+      "label": "Constellation",
+      "ipa": "/ˌkɒnstəˈleɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "45:8830"
+    },
+    {
+      "kind": "card",
+      "id": "meteor",
+      "label": "Meteor",
+      "ipa": "/ˈmiːtiər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8834"
+    },
+    {
+      "kind": "card",
+      "id": "dome",
+      "label": "Dome",
+      "ipa": "/doʊm/",
+      "cefr": "B1",
+      "imageNodeId": "45:8843"
+    },
+    {
+      "kind": "card",
+      "id": "rotating-roof",
+      "label": "Rotating Roof",
+      "ipa": "/roʊˈteɪtɪŋ ruːf/",
+      "cefr": "B2",
+      "imageNodeId": "45:8847"
+    },
+    {
+      "kind": "card",
+      "id": "observation-deck",
+      "label": "Observation Deck",
+      "ipa": "/ˌɒbzərˈveɪʃən dɛk/",
+      "cefr": "C1",
+      "imageNodeId": "45:8851"
+    },
+    {
+      "kind": "card",
+      "id": "control-room",
+      "label": "Control Room",
+      "ipa": "/kənˈtroʊl ruːm/",
+      "cefr": "B2",
+      "imageNodeId": "45:8855"
+    },
+    {
+      "kind": "card",
+      "id": "computer-lab",
+      "label": "Computer Lab",
+      "ipa": "/kəmˈpjuːtər læb/",
+      "cefr": "B2",
+      "imageNodeId": "45:8859"
+    },
+    {
+      "kind": "card",
+      "id": "library",
+      "label": "Library",
+      "ipa": "/ˈlaɪbrəri/",
+      "cefr": "B1",
+      "imageNodeId": "45:8863"
+    },
+    {
+      "kind": "card",
+      "id": "lecture-hall",
+      "label": "Lecture Hall",
+      "ipa": "/ˈlɛktʃər hɔːl/",
+      "cefr": "B2",
+      "imageNodeId": "45:8867"
+    },
+    {
+      "kind": "card",
+      "id": "gift-shop",
+      "label": "Gift Shop",
+      "ipa": "/ɡɪft ʃɒp/",
+      "cefr": "B2",
+      "imageNodeId": "45:8871"
+    },
+    {
+      "kind": "card",
+      "id": "parking-area",
+      "label": "Parking Area",
+      "ipa": "/ˈpɑːrkɪŋ ˈɛəriə/",
+      "cefr": "B2",
+      "imageNodeId": "45:8875"
+    },
+    {
+      "kind": "card",
+      "id": "pathway",
+      "label": "Pathway",
+      "ipa": "/ˈpæθˌweɪ/",
+      "cefr": "B1",
+      "imageNodeId": "45:8879"
+    },
+    {
+      "kind": "card",
+      "id": "spectrograph",
+      "label": "Spectrograph",
+      "ipa": "/ˈspɛktrəˌɡræf/",
+      "cefr": "B2",
+      "imageNodeId": "45:8888"
+    },
+    {
+      "kind": "card",
+      "id": "ccd-camera",
+      "label": "CCD Camera",
+      "ipa": "/ˌsiːsiːˈdiː ˈkæmərə/",
+      "cefr": "B2",
+      "imageNodeId": "45:8892"
+    },
+    {
+      "kind": "card",
+      "id": "star-chart",
+      "label": "Star Chart",
+      "ipa": "/stɑːr tʃɑːrt/",
+      "cefr": "B2",
+      "imageNodeId": "45:8896"
+    },
+    {
+      "kind": "card",
+      "id": "planetarium-projector",
+      "label": "Planetarium Projector",
+      "ipa": "/ˌplænɪˈtɛəriəm prəˈdʒɛktər/",
+      "cefr": "C1",
+      "imageNodeId": "45:8900"
+    },
+    {
+      "kind": "card",
+      "id": "computer-monitor",
+      "label": "Computer Monitor",
+      "ipa": "/kəmˈpjuːtər ˈmɒnɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "45:8904"
+    },
+    {
+      "kind": "card",
+      "id": "data-server",
+      "label": "Data Server",
+      "ipa": "/ˈdeɪtə ˈsɜːrvər/",
+      "cefr": "B2",
+      "imageNodeId": "45:8908"
+    },
+    {
+      "kind": "card",
+      "id": "clock",
+      "label": "Clock",
+      "ipa": "/klɒk/",
+      "cefr": "B1",
+      "imageNodeId": "45:8912"
+    },
+    {
+      "kind": "card",
+      "id": "laser-pointer",
+      "label": "Laser Pointer",
+      "ipa": "/ˈleɪzər ˈpɔɪntər/",
+      "cefr": "B2",
+      "imageNodeId": "45:8916"
+    },
+    {
+      "kind": "card",
+      "id": "red-flashlight",
+      "label": "Red Flashlight",
+      "ipa": "/rɛd ˈflæʃˌlaɪt/",
+      "cefr": "B2",
+      "imageNodeId": "45:8920"
+    },
+    {
+      "kind": "card",
+      "id": "logbook",
+      "label": "Logbook",
+      "ipa": "/ˈlɒɡˌbʊk/",
+      "cefr": "B1",
+      "imageNodeId": "45:8924"
+    },
+    {
+      "kind": "card",
+      "id": "mercury",
+      "label": "Mercury",
+      "ipa": "/ˈmɜːrkjʊri/",
+      "cefr": "B1",
+      "imageNodeId": "45:8933"
+    },
+    {
+      "kind": "card",
+      "id": "venus",
+      "label": "Venus",
+      "ipa": "/ˈviːnəs/",
+      "cefr": "B1",
+      "imageNodeId": "45:8937"
+    },
+    {
+      "kind": "card",
+      "id": "earth",
+      "label": "Earth",
+      "ipa": "/ɜːrθ/",
+      "cefr": "B1",
+      "imageNodeId": "45:8941"
+    },
+    {
+      "kind": "card",
+      "id": "mars",
+      "label": "Mars",
+      "ipa": "/mɑːrz/",
+      "cefr": "B1",
+      "imageNodeId": "45:8945"
+    },
+    {
+      "kind": "card",
+      "id": "jupiter",
+      "label": "Jupiter",
+      "ipa": "/ˈdʒuːpɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8949"
+    },
+    {
+      "kind": "card",
+      "id": "saturn",
+      "label": "Saturn",
+      "ipa": "/ˈsætɜːrn/",
+      "cefr": "B1",
+      "imageNodeId": "45:8953"
+    },
+    {
+      "kind": "card",
+      "id": "uranus",
+      "label": "Uranus",
+      "ipa": "/ˈjʊərənəs/",
+      "cefr": "B1",
+      "imageNodeId": "45:8957"
+    },
+    {
+      "kind": "card",
+      "id": "neptune",
+      "label": "Neptune",
+      "ipa": "/ˈnɛptjuːn/",
+      "cefr": "B1",
+      "imageNodeId": "45:8961"
+    },
+    {
+      "kind": "card",
+      "id": "pluto",
+      "label": "Pluto",
+      "ipa": "/ˈpluːtoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "45:8965"
+    },
+    {
+      "kind": "card",
+      "id": "asteroid-belt",
+      "label": "Asteroid Belt",
+      "ipa": "/ˈæstəˌrɔɪd bɛlt/",
+      "cefr": "B2",
+      "imageNodeId": "45:8969"
+    },
+    {
+      "kind": "card",
+      "id": "star-gazing",
+      "label": "Star Gazing",
+      "ipa": "/stɑːr ˈɡeɪzɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "45:8978"
+    },
+    {
+      "kind": "card",
+      "id": "photography",
+      "label": "Photography",
+      "ipa": "/fəˈtɒɡrəfi/",
+      "cefr": "B2",
+      "imageNodeId": "45:8982"
+    },
+    {
+      "kind": "card",
+      "id": "data-analysis",
+      "label": "Data Analysis",
+      "ipa": "/ˈdeɪtə əˈnæləsɪs/",
+      "cefr": "B2",
+      "imageNodeId": "45:8986"
+    },
+    {
+      "kind": "card",
+      "id": "public-viewing",
+      "label": "Public Viewing",
+      "ipa": "/ˈpʌblɪk ˈvjuːɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "45:8990"
+    },
+    {
+      "kind": "card",
+      "id": "night-tour",
+      "label": "Night Tour",
+      "ipa": "/naɪt tʊər/",
+      "cefr": "B2",
+      "imageNodeId": "45:8994"
+    },
+    {
+      "kind": "card",
+      "id": "lecture",
+      "label": "Lecture",
+      "ipa": "/ˈlɛktʃər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8998"
+    },
+    {
+      "kind": "card",
+      "id": "research",
+      "label": "Research",
+      "ipa": "/rɪˈsɜːrtʃ/",
+      "cefr": "B1",
+      "imageNodeId": "45:9002"
+    },
+    {
+      "kind": "card",
+      "id": "sky-mapping",
+      "label": "Sky Mapping",
+      "ipa": "/skaɪ ˈmæpɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "45:9006"
+    },
+    {
+      "kind": "card",
+      "id": "eclipse-watching",
+      "label": "Eclipse Watching",
+      "ipa": "/ɪˈklɪps ˈwɒtʃɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "45:9010"
+    },
+    {
+      "kind": "card",
+      "id": "meteor-shower",
+      "label": "Meteor Shower",
+      "ipa": "/ˈmiːtiər ˈʃaʊər/",
+      "cefr": "B2",
+      "imageNodeId": "45:9014"
+    },
+    {
+      "kind": "card",
+      "id": "telescope",
+      "label": "Telescope",
+      "ipa": "/ˈtɛlɪˌskoʊp/",
+      "cefr": "B1",
+      "imageNodeId": "39:7196"
+    },
+    {
+      "kind": "card",
+      "id": "camera",
+      "label": "Camera",
+      "ipa": "/ˈkæmərə/",
+      "cefr": "B1",
+      "imageNodeId": "39:7208"
+    },
+    {
+      "kind": "card",
+      "id": "photometer",
+      "label": "Photometer",
+      "ipa": "/foʊˈtɒmɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "39:7212"
+    },
+    {
+      "kind": "card",
+      "id": "computer",
+      "label": "Computer",
+      "ipa": "/kəmˈpjuːtər/",
+      "cefr": "B1",
+      "imageNodeId": "39:7216"
+    },
+    {
+      "kind": "card",
+      "id": "antenna",
+      "label": "Antenna",
+      "ipa": "/ænˈtɛnə/",
+      "cefr": "B1",
+      "imageNodeId": "39:7224"
+    },
+    {
+      "kind": "card",
+      "id": "magnitude",
+      "label": "Magnitude",
+      "ipa": "/ˈmæɡnɪˌtjuːd/",
+      "cefr": "B1",
+      "imageNodeId": "39:7266"
+    },
+    {
+      "kind": "card",
+      "id": "orbit",
+      "label": "Orbit",
+      "ipa": "/ˈɔːrbɪt/",
+      "cefr": "B1",
+      "imageNodeId": "39:7270"
+    },
+    {
+      "kind": "card",
+      "id": "light-year",
+      "label": "Light-Year",
+      "ipa": "/laɪt jɪər/",
+      "cefr": "B2",
+      "imageNodeId": "39:7274"
+    },
+    {
+      "kind": "card",
+      "id": "spectrum",
+      "label": "Spectrum",
+      "ipa": "/ˈspɛktrəm/",
+      "cefr": "B1",
+      "imageNodeId": "39:7278"
+    },
+    {
+      "kind": "card",
+      "id": "rotation",
+      "label": "Rotation",
+      "ipa": "/roʊˈteɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "39:7282"
+    },
+    {
+      "kind": "card",
+      "id": "eclipse",
+      "label": "Eclipse",
+      "ipa": "/ɪˈklɪps/",
+      "cefr": "B1",
+      "imageNodeId": "39:7286"
+    },
+    {
+      "kind": "card",
+      "id": "transit",
+      "label": "Transit",
+      "ipa": "/ˈtrænzɪt/",
+      "cefr": "B1",
+      "imageNodeId": "39:7290"
+    },
+    {
+      "kind": "card",
+      "id": "discovery",
+      "label": "Discovery",
+      "ipa": "/dɪˈskʌvəri/",
+      "cefr": "B1",
+      "imageNodeId": "39:7294"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "553:267",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "553:269",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2 · Topic: The Observatory",
+          "depth": 1,
+          "name": "Level: B2 · Topic: The Observatory"
+        },
+        {
+          "text": "Watching the Universe — A Night at the Observatory\n\nAn observatory is built for one purpose: to see what the unaided eye cannot. Positioned on mountaintops far from city light, these facilities house the instruments that have revealed the structure of the cosmos — from the planets of our solar system to galaxies billions of light-years away.\n\nThe centrepiece is the telescope. An optical telescope gathers visible light. A reflecting telescope uses a curved mirror to focus starlight. A refracting telescope uses a lens. A radio telescope — a large dish or array of dishes — detects radio waves emitted by distant objects. Each telescope sits on a telescope mount that tracks objects as the Earth rotates, compensating for the planet's rotation so that a star remains centred in the eyepiece. A finder scope — a small auxiliary telescope — helps locate targets before the main instrument magnifies them.\n\nThe dome is the observatory's most recognisable feature. A rotating roof opens a slit to the sky, allowing the telescope to point at any part of the visible hemisphere. The observation deck — the platform where astronomers work — surrounds the telescope base. A control room houses the computers that operate the telescope remotely. A computer lab processes the enormous volumes of data each night produces. A library stores decades of published research. A lecture hall hosts public talks and academic seminars. A gift shop sells star charts and educational materials. A pathway connects the buildings, lit by red flashlights — red light preserves night vision while white light destroys it.\n\nModern astronomy is largely digital. A CCD camera — a highly sensitive electronic sensor — has replaced the photographic plate. A spectrograph breaks light into its component wavelengths, revealing a star's temperature, composition, and velocity. A photometer measures brightness with extreme precision. A data server stores terabytes of observations. A computer monitor displays real-time images. A laser pointer identifies objects during public viewing sessions.\n\nThe objects astronomers study span every scale. A star is a self-luminous sphere of gas. A planet orbits a star. A moon orbits a planet — our Moon is the closest celestial body. The Sun is our nearest star. A comet — ice and dust trailing a glowing tail — visits the inner solar system on an elongated orbit. An asteroid is a rocky body, most found in the asteroid belt between Mars and Jupiter. A meteor — a streak of light — is a small particle burning in Earth's atmosphere. A nebula is a cloud of gas where new stars form. A galaxy contains billions of stars. A constellation is a pattern of stars as seen from Earth — not a physical grouping but a line-of-sight arrangement.\n\nThe planets of our solar system — Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and the dwarf planet Pluto — are among the first objects students learn to find. Each has a magnitude — a measure of brightness — and an orbit measured in Earth years.\n\nObservatory activities include star gazing, astrophotography, data analysis, public viewing nights, night tours, lectures, research, sky mapping, eclipse watching, and meteor shower observation. An eclipse — the alignment of Sun, Moon, and Earth — is among the most dramatic events. A transit occurs when a smaller body crosses the face of a larger one.\n\nEvery spectrum analysed, every orbit calculated, every discovery published adds a line to humanity's longest-running project: understanding where we are in the universe and what surrounds us in the dark.",
+          "depth": 1,
+          "name": "Watching the Universe — A Night at the Observatory An observatory is built for one purpose: to see what the unaided eye cannot. Positioned on mountaintops far from city light, these facilities house the instruments that have revealed the structure of the cosmos — from the planets of our solar system to galaxies billions of light-years away. The centrepiece is the telescope. An optical telescope gathers visible light. A reflecting telescope uses a curved mirror to focus starlight. A refracting telescope uses a lens. A radio telescope — a large dish or array of dishes — detects radio waves emitted by distant objects. Each telescope sits on a telescope mount that tracks objects as the Earth rotates, compensating for the planet's rotation so that a star remains centred in the eyepiece. A finder scope — a small auxiliary telescope — helps locate targets before the main instrument magnifies them. The dome is the observatory's most recognisable feature. A rotating roof opens a slit to the sky, allowing the telescope to point at any part of the visible hemisphere. The observation deck — the platform where astronomers work — surrounds the telescope base. A control room houses the computers that operate the telescope remotely. A computer lab processes the enormous volumes of data each night produces. A library stores decades of published research. A lecture hall hosts public talks and academic seminars. A gift shop sells star charts and educational materials. A pathway connects the buildings, lit by red flashlights — red light preserves night vision while white light destroys it. Modern astronomy is largely digital. A CCD camera — a highly sensitive electronic sensor — has replaced the photographic plate. A spectrograph breaks light into its component wavelengths, revealing a star's temperature, composition, and velocity. A photometer measures brightness with extreme precision. A data server stores terabytes of observations. A computer monitor displays real-time images. A laser pointer identifies objects during public viewing sessions. The objects astronomers study span every scale. A star is a self-luminous sphere of gas. A planet orbits a star. A moon orbits a planet — our Moon is the closest celestial body. The Sun is our nearest star. A comet — ice and dust trailing a glowing tail — visits the inner solar system on an elongated orbit. An asteroid is a rocky body, most found in the asteroid belt between Mars and Jupiter. A meteor — a streak of light — is a small particle burning in Earth's atmosphere. A nebula is a cloud of gas where new stars form. A galaxy contains billions of stars. A constellation is a pattern of stars as seen from Earth — not a physical grouping but a line-of-sight arrangement. The planets of our solar system — Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and the dwarf planet Pluto — are among the first objects students learn to find. Each has a magnitude — a measure of brightness — and an orbit measured in Earth years. Observatory activities include star gazing, astrophotography, data analysis, public viewing nights, night tours, lectures, research, sky mapping, eclipse watching, and meteor shower observation. An eclipse — the alignment of Sun, Moon, and Earth — is among the most dramatic events. A transit occurs when a smaller body crosses the face of a larger one. Every spectrum analysed, every orbit calculated, every discovery published adds a line to humanity's longest-running project: understanding where we are in the universe and what surrounds us in the dark."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Compare reflecting telescopes, refracting telescopes, and radio telescopes. What does each detect?",
+          "depth": 1,
+          "name": "1. Compare reflecting telescopes, refracting telescopes, and radio telescopes. What does each detect?"
+        },
+        {
+          "text": "2. How has digital technology changed observational astronomy? Name three instruments and their functions.",
+          "depth": 1,
+          "name": "2. How has digital technology changed observational astronomy? Name three instruments and their functions."
+        },
+        {
+          "text": "3. What is the difference between a nebula, a galaxy, and a constellation?",
+          "depth": 1,
+          "name": "3. What is the difference between a nebula, a galaxy, and a constellation?"
+        },
+        {
+          "text": "4. Why are observatories built on mountaintops far from cities? What role does the dome play?",
+          "depth": 1,
+          "name": "4. Why are observatories built on mountaintops far from cities? What role does the dome play?"
+        },
+        {
+          "text": "5. The passage lists many observatory activities. Which would interest you most, and why?",
+          "depth": 1,
+          "name": "5. The passage lists many observatory activities. Which would interest you most, and why?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "553:282",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "once in a blue moon",
+          "depth": 2,
+          "name": "once in a blue moon"
+        },
+        {
+          "text": "very rarely",
+          "depth": 2,
+          "name": "very rarely"
+        },
+        {
+          "text": "\"I only see my cousin once in a blue moon — she lives abroad.\"",
+          "depth": 2,
+          "name": "\"I only see my cousin once in a blue moon — she lives abroad.\""
+        },
+        {
+          "text": "over the moon",
+          "depth": 2,
+          "name": "over the moon"
+        },
+        {
+          "text": "extremely happy",
+          "depth": 2,
+          "name": "extremely happy"
+        },
+        {
+          "text": "\"She was over the moon when she got the job offer.\"",
+          "depth": 2,
+          "name": "\"She was over the moon when she got the job offer.\""
+        },
+        {
+          "text": "reach for the stars",
+          "depth": 2,
+          "name": "reach for the stars"
+        },
+        {
+          "text": "aim very high; be very ambitious",
+          "depth": 2,
+          "name": "aim very high; be very ambitious"
+        },
+        {
+          "text": "\"Don't limit yourself — reach for the stars!\"",
+          "depth": 2,
+          "name": "\"Don't limit yourself — reach for the stars!\""
+        },
+        {
+          "text": "a rising star",
+          "depth": 2,
+          "name": "a rising star"
+        },
+        {
+          "text": "someone who is becoming very successful",
+          "depth": 2,
+          "name": "someone who is becoming very successful"
+        },
+        {
+          "text": "\"She's a rising star in the medical field.\"",
+          "depth": 2,
+          "name": "\"She's a rising star in the medical field.\""
+        },
+        {
+          "text": "star-struck",
+          "depth": 2,
+          "name": "star-struck"
+        },
+        {
+          "text": "fascinated or nervous in the presence of a famous person",
+          "depth": 2,
+          "name": "fascinated or nervous in the presence of a famous person"
+        },
+        {
+          "text": "\"He was completely star-struck when he met the astronaut.\"",
+          "depth": 2,
+          "name": "\"He was completely star-struck when he met the astronaut.\""
+        },
+        {
+          "text": "light years ahead",
+          "depth": 2,
+          "name": "light years ahead"
+        },
+        {
+          "text": "far more advanced",
+          "depth": 2,
+          "name": "far more advanced"
+        },
+        {
+          "text": "\"Their technology is light years ahead of ours.\"",
+          "depth": 2,
+          "name": "\"Their technology is light years ahead of ours.\""
+        },
+        {
+          "text": "the sky's the limit",
+          "depth": 2,
+          "name": "the sky's the limit"
+        },
+        {
+          "text": "there are no limits to what can be achieved",
+          "depth": 2,
+          "name": "there are no limits to what can be achieved"
+        },
+        {
+          "text": "\"With your talent, the sky's the limit.\"",
+          "depth": 2,
+          "name": "\"With your talent, the sky's the limit.\""
+        },
+        {
+          "text": "look through / gaze at",
+          "depth": 2,
+          "name": "look through / gaze at"
+        },
+        {
+          "text": "examine carefully / stare at with wonder",
+          "depth": 2,
+          "name": "examine carefully / stare at with wonder"
+        },
+        {
+          "text": "\"We looked through the telescope and gazed at Saturn's rings.\"",
+          "depth": 2,
+          "name": "\"We looked through the telescope and gazed at Saturn's rings.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "553:318",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A school group visiting an observatory at night",
+          "depth": 1,
+          "name": "Scene: A school group visiting an observatory at night"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "Welcome to the observatory. Tonight we'll be viewing Jupiter and the Orion Nebula.",
+          "depth": 2,
+          "name": "Welcome to the observatory. Tonight we'll be viewing Jupiter and the Orion Nebula."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Why is the observatory on top of this mountain?",
+          "depth": 2,
+          "name": "Why is the observatory on top of this mountain?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "Because the air is thinner and drier up here, and there's almost no light pollution. That gives us a much clearer view.",
+          "depth": 2,
+          "name": "Because the air is thinner and drier up here, and there's almost no light pollution. That gives us a much clearer view."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "How does the dome work?",
+          "depth": 2,
+          "name": "How does the dome work?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "It rotates 360 degrees so we can point the telescope anywhere. The slit — that opening — lets light reach the mirror inside.",
+          "depth": 2,
+          "name": "It rotates 360 degrees so we can point the telescope anywhere. The slit — that opening — lets light reach the mirror inside."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "How big is the mirror?",
+          "depth": 2,
+          "name": "How big is the mirror?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "Our main telescope has a mirror two metres in diameter. The bigger the mirror, the more light we collect from faint, distant objects.",
+          "depth": 2,
+          "name": "Our main telescope has a mirror two metres in diameter. The bigger the mirror, the more light we collect from faint, distant objects."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Can we see other galaxies from here?",
+          "depth": 2,
+          "name": "Can we see other galaxies from here?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "Absolutely. The Andromeda Galaxy is visible tonight — it's about 2.5 million light years away. The light you'll see left that galaxy before humans existed.",
+          "depth": 2,
+          "name": "Absolutely. The Andromeda Galaxy is visible tonight — it's about 2.5 million light years away. The light you'll see left that galaxy before humans existed."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Do astronomers actually sit here every night?",
+          "depth": 2,
+          "name": "Do astronomers actually sit here every night?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "Not usually. Most observations are now controlled remotely by computer. The telescope follows a programmed schedule and sends data to researchers around the world.",
+          "depth": 2,
+          "name": "Not usually. Most observations are now controlled remotely by computer. The telescope follows a programmed schedule and sends data to researchers around the world."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "553:356",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The Earth revolves around the Sun, isn't it?\"",
+          "depth": 2,
+          "name": "❌ \"The Earth revolves around the Sun, isn't it?\""
+        },
+        {
+          "text": "✅ \"The Earth revolves around the Sun, doesn't it?\"",
+          "depth": 2,
+          "name": "✅ \"The Earth revolves around the Sun, doesn't it?\""
+        },
+        {
+          "text": "Tag questions repeat the auxiliary from the main clause. 'Revolves' uses 'does' (present simple), so the tag is 'doesn't it?' Rules: positive statement → negative tag: 'It is, isn't it?' Negative statement → positive tag: 'It isn't, is it?' Match the auxiliary: 'They have seen it, haven't they?' 'She can observe, can't she?'",
+          "depth": 2,
+          "name": "Tag questions repeat the auxiliary from the main clause. 'Revolves' uses 'does' (present simple), so the tag is 'doesn't it?' Rules: positive statement → negative tag: 'It is, isn't it?' Negative statement → positive tag: 'It isn't, is it?' Match the auxiliary: 'They have seen it, haven't they?' 'She can observe, can't she?'"
+        },
+        {
+          "text": "❌ \"The astronomers made an important discover last night at the observatory.\"",
+          "depth": 2,
+          "name": "❌ \"The astronomers made an important discover last night at the observatory.\""
+        },
+        {
+          "text": "✅ \"The astronomers made an important discovery last night at the observatory.\"",
+          "depth": 2,
+          "name": "✅ \"The astronomers made an important discovery last night at the observatory.\""
+        },
+        {
+          "text": "'Discovery' is the noun; 'discover' is the verb. Common noun–verb pairs: discover/discovery, decide/decision, arrive/arrival, choose/choice, succeed/success. At B2, distinguish: 'They made a discovery' (noun) vs. 'They discovered a new comet' (verb). Similar trap: 'an important research' — 'research' is uncountable (use 'a piece of research' or 'a research finding').",
+          "depth": 2,
+          "name": "'Discovery' is the noun; 'discover' is the verb. Common noun–verb pairs: discover/discovery, decide/decision, arrive/arrival, choose/choice, succeed/success. At B2, distinguish: 'They made a discovery' (noun) vs. 'They discovered a new comet' (verb). Similar trap: 'an important research' — 'research' is uncountable (use 'a piece of research' or 'a research finding')."
+        },
+        {
+          "text": "❌ \"Jupiter is the most largest planet in our solar system.\"",
+          "depth": 2,
+          "name": "❌ \"Jupiter is the most largest planet in our solar system.\""
+        },
+        {
+          "text": "✅ \"Jupiter is the largest planet in our solar system.\"",
+          "depth": 2,
+          "name": "✅ \"Jupiter is the largest planet in our solar system.\""
+        },
+        {
+          "text": "Never combine 'most' with '-est.' Short adjectives: add '-est': 'largest', 'brightest', 'nearest.' Long adjectives: use 'most': 'most spectacular', 'most distant.' Irregular: 'good → best', 'bad → worst', 'far → farthest/furthest.' 'More' and '-er' follow the same mutual exclusion rule: 'bigger' not *'more bigger.'",
+          "depth": 2,
+          "name": "Never combine 'most' with '-est.' Short adjectives: add '-est': 'largest', 'brightest', 'nearest.' Long adjectives: use 'most': 'most spectacular', 'most distant.' Irregular: 'good → best', 'bad → worst', 'far → farthest/furthest.' 'More' and '-er' follow the same mutual exclusion rule: 'bigger' not *'more bigger.'"
+        },
+        {
+          "text": "❌ \"Scientists have been studied the spectrum of this star for several decades.\"",
+          "depth": 2,
+          "name": "❌ \"Scientists have been studied the spectrum of this star for several decades.\""
+        },
+        {
+          "text": "✅ \"Scientists have been studying the spectrum of this star for several decades.\"",
+          "depth": 2,
+          "name": "✅ \"Scientists have been studying the spectrum of this star for several decades.\""
+        },
+        {
+          "text": "Present perfect continuous: have/has + been + -ing: 'have been studying.' The continuous emphasises duration and ongoing activity. 'Have studied' (present perfect simple) emphasises completion or result. 'Have been studying' (continuous) emphasises the process still in progress. Never *'have been studied' for continuous — that's passive: 'The star has been studied by many teams.'",
+          "depth": 2,
+          "name": "Present perfect continuous: have/has + been + -ing: 'have been studying.' The continuous emphasises duration and ongoing activity. 'Have studied' (present perfect simple) emphasises completion or result. 'Have been studying' (continuous) emphasises the process still in progress. Never *'have been studied' for continuous — that's passive: 'The star has been studied by many teams.'"
+        },
+        {
+          "text": "❌ \"There are less visible stars tonight because of the clouds covering the sky.\"",
+          "depth": 2,
+          "name": "❌ \"There are less visible stars tonight because of the clouds covering the sky.\""
+        },
+        {
+          "text": "✅ \"There are fewer visible stars tonight because of the clouds covering the sky.\"",
+          "depth": 2,
+          "name": "✅ \"There are fewer visible stars tonight because of the clouds covering the sky.\""
+        },
+        {
+          "text": "'Fewer' + countable plural: 'fewer stars', 'fewer planets', 'fewer observations.' 'Less' + uncountable: 'less light', 'less cloud cover', 'less interference.' Common error: using 'less' with countable nouns. Exception in informal speech: 'less than ten items' is widely accepted, but in formal/academic writing, 'fewer than ten' is preferred.",
+          "depth": 2,
+          "name": "'Fewer' + countable plural: 'fewer stars', 'fewer planets', 'fewer observations.' 'Less' + uncountable: 'less light', 'less cloud cover', 'less interference.' Common error: using 'less' with countable nouns. Exception in informal speech: 'less than ten items' is widely accepted, but in formal/academic writing, 'fewer than ten' is preferred."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "553:380",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how astronomy and science vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how astronomy and science vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "observe",
+          "depth": 2,
+          "name": "observe"
+        },
+        {
+          "text": "observation / observer / observatory",
+          "depth": 2,
+          "name": "observation / observer / observatory"
+        },
+        {
+          "text": "observe",
+          "depth": 2,
+          "name": "observe"
+        },
+        {
+          "text": "observable / observational",
+          "depth": 2,
+          "name": "observable / observational"
+        },
+        {
+          "text": "telescope",
+          "depth": 2,
+          "name": "telescope"
+        },
+        {
+          "text": "telescope",
+          "depth": 2,
+          "name": "telescope"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "telescopic",
+          "depth": 2,
+          "name": "telescopic"
+        },
+        {
+          "text": "rotate",
+          "depth": 2,
+          "name": "rotate"
+        },
+        {
+          "text": "rotation / rotator",
+          "depth": 2,
+          "name": "rotation / rotator"
+        },
+        {
+          "text": "rotate",
+          "depth": 2,
+          "name": "rotate"
+        },
+        {
+          "text": "rotational / rotating",
+          "depth": 2,
+          "name": "rotational / rotating"
+        },
+        {
+          "text": "reflect",
+          "depth": 2,
+          "name": "reflect"
+        },
+        {
+          "text": "reflection / reflector",
+          "depth": 2,
+          "name": "reflection / reflector"
+        },
+        {
+          "text": "reflect",
+          "depth": 2,
+          "name": "reflect"
+        },
+        {
+          "text": "reflective / reflecting",
+          "depth": 2,
+          "name": "reflective / reflecting"
+        },
+        {
+          "text": "orbit",
+          "depth": 2,
+          "name": "orbit"
+        },
+        {
+          "text": "orbit / orbital",
+          "depth": 2,
+          "name": "orbit / orbital"
+        },
+        {
+          "text": "orbit",
+          "depth": 2,
+          "name": "orbit"
+        },
+        {
+          "text": "orbital",
+          "depth": 2,
+          "name": "orbital"
+        },
+        {
+          "text": "expand",
+          "depth": 2,
+          "name": "expand"
+        },
+        {
+          "text": "expansion",
+          "depth": 2,
+          "name": "expansion"
+        },
+        {
+          "text": "expand",
+          "depth": 2,
+          "name": "expand"
+        },
+        {
+          "text": "expanding / expandable",
+          "depth": 2,
+          "name": "expanding / expandable"
+        },
+        {
+          "text": "collide",
+          "depth": 2,
+          "name": "collide"
+        },
+        {
+          "text": "collision",
+          "depth": 2,
+          "name": "collision"
+        },
+        {
+          "text": "collide",
+          "depth": 2,
+          "name": "collide"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "detect",
+          "depth": 2,
+          "name": "detect"
+        },
+        {
+          "text": "detection / detector",
+          "depth": 2,
+          "name": "detection / detector"
+        },
+        {
+          "text": "detect",
+          "depth": 2,
+          "name": "detect"
+        },
+        {
+          "text": "detectable",
+          "depth": 2,
+          "name": "detectable"
+        },
+        {
+          "text": "magnify",
+          "depth": 2,
+          "name": "magnify"
+        },
+        {
+          "text": "magnification / magnifier",
+          "depth": 2,
+          "name": "magnification / magnifier"
+        },
+        {
+          "text": "magnify",
+          "depth": 2,
+          "name": "magnify"
+        },
+        {
+          "text": "magnified",
+          "depth": 2,
+          "name": "magnified"
+        },
+        {
+          "text": "radiate",
+          "depth": 2,
+          "name": "radiate"
+        },
+        {
+          "text": "radiation / radiator",
+          "depth": 2,
+          "name": "radiation / radiator"
+        },
+        {
+          "text": "radiate",
+          "depth": 2,
+          "name": "radiate"
+        },
+        {
+          "text": "radiant",
+          "depth": 2,
+          "name": "radiant"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "553:440",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A reflecting __________ uses a curved mirror to focus starlight onto a sensor.",
+          "depth": 1,
+          "name": "1. A reflecting __________ uses a curved mirror to focus starlight onto a sensor."
+        },
+        {
+          "text": "2.  A __________ breaks light into its component wavelengths to reveal a star's composition.",
+          "depth": 1,
+          "name": "2. A __________ breaks light into its component wavelengths to reveal a star's composition."
+        },
+        {
+          "text": "3.  The rotating __________ opens a slit to the sky so the telescope can observe any direction.",
+          "depth": 1,
+          "name": "3. The rotating __________ opens a slit to the sky so the telescope can observe any direction."
+        },
+        {
+          "text": "4.  A __________ — ice and dust trailing a glowing tail — visits the inner solar system periodically.",
+          "depth": 1,
+          "name": "4. A __________ — ice and dust trailing a glowing tail — visits the inner solar system periodically."
+        },
+        {
+          "text": "5.  A CCD __________ has replaced the photographic plate in modern observatories.",
+          "depth": 1,
+          "name": "5. A CCD __________ has replaced the photographic plate in modern observatories."
+        },
+        {
+          "text": "6.  A __________ is a cloud of gas and dust where new stars are born.",
+          "depth": 1,
+          "name": "6. A __________ is a cloud of gas and dust where new stars are born."
+        },
+        {
+          "text": "7.  Red __________ are used on the pathway because red light preserves night vision.",
+          "depth": 1,
+          "name": "7. Red __________ are used on the pathway because red light preserves night vision."
+        },
+        {
+          "text": "8.  A __________ — a measure of brightness — indicates how visible a celestial object is.",
+          "depth": 1,
+          "name": "8. A __________ — a measure of brightness — indicates how visible a celestial object is."
+        },
+        {
+          "text": "9.  An __________ occurs when the Sun, Moon, and Earth align precisely.",
+          "depth": 1,
+          "name": "9. An __________ occurs when the Sun, Moon, and Earth align precisely."
+        },
+        {
+          "text": "10. The __________ belt between Mars and Jupiter contains most of the solar system's rocky bodies.",
+          "depth": 1,
+          "name": "10. The __________ belt between Mars and Jupiter contains most of the solar system's rocky bodies."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. telescope  2. spectrograph  3. dome/roof  4. comet  5. camera  6. nebula  7. flashlights  8. magnitude  9. eclipse  10. asteroid",
+          "depth": 2,
+          "name": "1. telescope 2. spectrograph 3. dome/roof 4. comet 5. camera 6. nebula 7. flashlights 8. magnitude 9. eclipse 10. asteroid"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "553:458",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Astronomy vs Astrology",
+          "depth": 2,
+          "name": "Astronomy vs Astrology"
+        },
+        {
+          "text": "'Astronomy' = the scientific study of stars, planets, and the universe. 'Astrology' = the belief that stars and planets influence human lives (horoscopes). They are completely different! An 'astronomer' is a scientist; an 'astrologer' reads horoscopes. Never confuse them.",
+          "depth": 2,
+          "name": "'Astronomy' = the scientific study of stars, planets, and the universe. 'Astrology' = the belief that stars and planets influence human lives (horoscopes). They are completely different! An 'astronomer' is a scientist; an 'astrologer' reads horoscopes. Never confuse them."
+        },
+        {
+          "text": "Famous Observatories",
+          "depth": 2,
+          "name": "Famous Observatories"
+        },
+        {
+          "text": "Mauna Kea (Hawaii) — one of the best sites on Earth for astronomy due to dry, stable air above the clouds. Greenwich Observatory (London) — historic observatory that defines the Prime Meridian (0° longitude). Hubble Space Telescope — orbiting telescope launched in 1990 that revolutionized our understanding of the universe.",
+          "depth": 2,
+          "name": "Mauna Kea (Hawaii) — one of the best sites on Earth for astronomy due to dry, stable air above the clouds. Greenwich Observatory (London) — historic observatory that defines the Prime Meridian (0° longitude). Hubble Space Telescope — orbiting telescope launched in 1990 that revolutionized our understanding of the universe."
+        },
+        {
+          "text": "Light Year",
+          "depth": 2,
+          "name": "Light Year"
+        },
+        {
+          "text": "A 'light year' is a unit of distance, not time. It's the distance light travels in one year — about 9.46 trillion kilometres. Common mistake: 'That happened light years ago' — this sounds natural in casual English but is technically mixing distance and time. Scientists measure distances in light years, parsecs, or astronomical units (AU).",
+          "depth": 2,
+          "name": "A 'light year' is a unit of distance, not time. It's the distance light travels in one year — about 9.46 trillion kilometres. Common mistake: 'That happened light years ago' — this sounds natural in casual English but is technically mixing distance and time. Scientists measure distances in light years, parsecs, or astronomical units (AU)."
+        },
+        {
+          "text": "Stargazing Vocabulary",
+          "depth": 2,
+          "name": "Stargazing Vocabulary"
+        },
+        {
+          "text": "'Constellation' = a group of stars forming a pattern (e.g. Orion, the Great Bear). 'Nebula' = a cloud of gas and dust in space. 'Galaxy' = a system of millions of stars (our galaxy is the Milky Way). 'Comet' = an icy body with a tail that orbits the Sun. 'Meteor' = a shooting star. 'Meteorite' = a meteor that reaches Earth's surface.",
+          "depth": 2,
+          "name": "'Constellation' = a group of stars forming a pattern (e.g. Orion, the Great Bear). 'Nebula' = a cloud of gas and dust in space. 'Galaxy' = a system of millions of stars (our galaxy is the Milky Way). 'Comet' = an icy body with a tail that orbits the Sun. 'Meteor' = a shooting star. 'Meteorite' = a meteor that reaches Earth's surface."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "553:474",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "telescope",
+          "depth": 2,
+          "name": "telescope"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ lens, ~ mirror, radio ~",
+          "depth": 2,
+          "name": "~ lens, ~ mirror, radio ~"
+        },
+        {
+          "text": "observatory",
+          "depth": 2,
+          "name": "observatory"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "astronomical ~, ~ dome, ~ site",
+          "depth": 2,
+          "name": "astronomical ~, ~ dome, ~ site"
+        },
+        {
+          "text": "constellation",
+          "depth": 2,
+          "name": "constellation"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ map, star ~, ~ pattern",
+          "depth": 2,
+          "name": "~ map, star ~, ~ pattern"
+        },
+        {
+          "text": "galaxy",
+          "depth": 2,
+          "name": "galaxy"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "spiral ~, ~ cluster, the Milky Way ~",
+          "depth": 2,
+          "name": "spiral ~, ~ cluster, the Milky Way ~"
+        },
+        {
+          "text": "orbit",
+          "depth": 2,
+          "name": "orbit"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ the Earth, in ~, ~ path",
+          "depth": 2,
+          "name": "~ the Earth, in ~, ~ path"
+        },
+        {
+          "text": "astronomer",
+          "depth": 2,
+          "name": "astronomer"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ research, amateur ~, professional ~",
+          "depth": 2,
+          "name": "~ research, amateur ~, professional ~"
+        },
+        {
+          "text": "spectrum",
+          "depth": 2,
+          "name": "spectrum"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "electromagnetic ~, visible ~, ~ analysis",
+          "depth": 2,
+          "name": "electromagnetic ~, visible ~, ~ analysis"
+        },
+        {
+          "text": "nebula",
+          "depth": 2,
+          "name": "nebula"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "planetary ~, ~ cloud, ~ image",
+          "depth": 2,
+          "name": "planetary ~, ~ cloud, ~ image"
+        },
+        {
+          "text": "asteroid",
+          "depth": 2,
+          "name": "asteroid"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ belt, near-Earth ~, ~ impact",
+          "depth": 2,
+          "name": "~ belt, near-Earth ~, ~ impact"
+        },
+        {
+          "text": "magnitude",
+          "depth": 2,
+          "name": "magnitude"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ scale, apparent ~, ~ of brightness",
+          "depth": 2,
+          "name": "~ scale, apparent ~, ~ of brightness"
+        }
+      ]
+    }
+  }
+}

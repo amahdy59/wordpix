@@ -1,0 +1,1683 @@
+{
+  "unitId": "tv-studio",
+  "name": "The TV Studio",
+  "subtopics": [
+    {
+      "id": "studio-equipment",
+      "title": "Studio Equipment",
+      "wordIds": [
+        "camera",
+        "tripod",
+        "boom-microphone",
+        "spotlight",
+        "softbox-light",
+        "teleprompter",
+        "green-screen",
+        "dolly",
+        "jib-crane",
+        "monitor-wall"
+      ]
+    },
+    {
+      "id": "studio-set",
+      "title": "Studio Set",
+      "wordIds": [
+        "anchor-desk",
+        "background-set",
+        "stage",
+        "platform",
+        "curtain",
+        "props",
+        "clock",
+        "logo",
+        "backdrop",
+        "floor-marking"
+      ]
+    },
+    {
+      "id": "production-roles",
+      "title": "Production Roles",
+      "wordIds": [
+        "director",
+        "producer",
+        "camera-operator",
+        "sound-engineer",
+        "lighting-technician",
+        "makeup-artist",
+        "set-designer",
+        "script-writer",
+        "editor",
+        "stage-manager"
+      ]
+    },
+    {
+      "id": "broadcasting",
+      "title": "Broadcasting",
+      "wordIds": [
+        "live-broadcast",
+        "recording",
+        "satellite-dish",
+        "antenna",
+        "transmitter",
+        "signal",
+        "channel",
+        "frequency",
+        "broadcast-tower",
+        "control-room"
+      ]
+    },
+    {
+      "id": "audio-equipment",
+      "title": "Audio Equipment",
+      "wordIds": [
+        "microphone",
+        "headphones",
+        "mixer",
+        "amplifier",
+        "speaker",
+        "sound-board",
+        "clip-on-mic",
+        "pop-filter",
+        "audio-cable",
+        "equalizer"
+      ]
+    },
+    {
+      "id": "post-production",
+      "title": "Post-Production",
+      "wordIds": [
+        "editing-suite",
+        "timeline",
+        "cut",
+        "transition",
+        "special-effect",
+        "color-grading",
+        "subtitle",
+        "voiceover",
+        "render",
+        "export",
+        "monitor",
+        "boom-mic",
+        "clapperboard",
+        "anchor",
+        "reporter",
+        "cameraman",
+        "technician",
+        "live",
+        "commercial",
+        "interview",
+        "segment",
+        "headline",
+        "weather-map"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "camera",
+      "label": "Camera",
+      "ipa": "/ˈkæmərə/",
+      "cefr": "A2",
+      "imageNodeId": "45:309"
+    },
+    {
+      "kind": "card",
+      "id": "tripod",
+      "label": "Tripod",
+      "ipa": "/ˈtraɪˌpɒd/",
+      "cefr": "A2",
+      "imageNodeId": "45:313"
+    },
+    {
+      "kind": "card",
+      "id": "boom-microphone",
+      "label": "Boom Microphone",
+      "ipa": "/buːm ˈmaɪkrəˌfoʊn/",
+      "cefr": "B2",
+      "imageNodeId": "45:317"
+    },
+    {
+      "kind": "card",
+      "id": "spotlight",
+      "label": "Spotlight",
+      "ipa": "/ˈspɒtˌlaɪt/",
+      "cefr": "A2",
+      "imageNodeId": "45:321"
+    },
+    {
+      "kind": "card",
+      "id": "softbox-light",
+      "label": "Softbox Light",
+      "ipa": "/ˈsɒftˌbɒks laɪt/",
+      "cefr": "B1",
+      "imageNodeId": "45:325"
+    },
+    {
+      "kind": "card",
+      "id": "teleprompter",
+      "label": "Teleprompter",
+      "ipa": "/ˈtɛlɪˌprɒmptər/",
+      "cefr": "B1",
+      "imageNodeId": "45:329"
+    },
+    {
+      "kind": "card",
+      "id": "green-screen",
+      "label": "Green Screen",
+      "ipa": "/ɡriːn skriːn/",
+      "cefr": "B1",
+      "imageNodeId": "45:333"
+    },
+    {
+      "kind": "card",
+      "id": "dolly",
+      "label": "Dolly",
+      "ipa": "/ˈdɒli/",
+      "cefr": "A2",
+      "imageNodeId": "45:337"
+    },
+    {
+      "kind": "card",
+      "id": "jib-crane",
+      "label": "Jib Crane",
+      "ipa": "/dʒɪb kreɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:341"
+    },
+    {
+      "kind": "card",
+      "id": "monitor-wall",
+      "label": "Monitor Wall",
+      "ipa": "/ˈmɒnɪtər wɔːl/",
+      "cefr": "B1",
+      "imageNodeId": "45:345"
+    },
+    {
+      "kind": "card",
+      "id": "anchor-desk",
+      "label": "Anchor Desk",
+      "ipa": "/ˈæŋkər dɛsk/",
+      "cefr": "B1",
+      "imageNodeId": "45:354"
+    },
+    {
+      "kind": "card",
+      "id": "background-set",
+      "label": "Background Set",
+      "ipa": "/ˈbækˌɡraʊnd sɛt/",
+      "cefr": "B1",
+      "imageNodeId": "45:358"
+    },
+    {
+      "kind": "card",
+      "id": "stage",
+      "label": "Stage",
+      "ipa": "/steɪdʒ/",
+      "cefr": "A2",
+      "imageNodeId": "45:362"
+    },
+    {
+      "kind": "card",
+      "id": "platform",
+      "label": "Platform",
+      "ipa": "/ˈplætˌfɔːrm/",
+      "cefr": "A2",
+      "imageNodeId": "45:366"
+    },
+    {
+      "kind": "card",
+      "id": "curtain",
+      "label": "Curtain",
+      "ipa": "/ˈkɜːrtən/",
+      "cefr": "A2",
+      "imageNodeId": "45:370"
+    },
+    {
+      "kind": "card",
+      "id": "props",
+      "label": "Props",
+      "ipa": "/prɒps/",
+      "cefr": "A2",
+      "imageNodeId": "45:374"
+    },
+    {
+      "kind": "card",
+      "id": "clock",
+      "label": "Clock",
+      "ipa": "/klɒk/",
+      "cefr": "A2",
+      "imageNodeId": "45:378"
+    },
+    {
+      "kind": "card",
+      "id": "logo",
+      "label": "Logo",
+      "ipa": "/ˈloʊɡoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "45:382"
+    },
+    {
+      "kind": "card",
+      "id": "backdrop",
+      "label": "Backdrop",
+      "ipa": "/ˈbækˌdrɒp/",
+      "cefr": "A2",
+      "imageNodeId": "45:386"
+    },
+    {
+      "kind": "card",
+      "id": "floor-marking",
+      "label": "Floor Marking",
+      "ipa": "/flɔːr ˈmɑːrkɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "45:390"
+    },
+    {
+      "kind": "card",
+      "id": "director",
+      "label": "Director",
+      "ipa": "/dɪˈrɛktər/",
+      "cefr": "A2",
+      "imageNodeId": "45:399"
+    },
+    {
+      "kind": "card",
+      "id": "producer",
+      "label": "Producer",
+      "ipa": "/prəˈdjuːsər/",
+      "cefr": "A2",
+      "imageNodeId": "45:403"
+    },
+    {
+      "kind": "card",
+      "id": "camera-operator",
+      "label": "Camera Operator",
+      "ipa": "/ˈkæmərə ˈɒpəˌreɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:407"
+    },
+    {
+      "kind": "card",
+      "id": "sound-engineer",
+      "label": "Sound Engineer",
+      "ipa": "/saʊnd ˌɛndʒɪˈnɪər/",
+      "cefr": "B1",
+      "imageNodeId": "45:411"
+    },
+    {
+      "kind": "card",
+      "id": "lighting-technician",
+      "label": "Lighting Technician",
+      "ipa": "/ˈlaɪtɪŋ tɛkˈnɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "45:415"
+    },
+    {
+      "kind": "card",
+      "id": "makeup-artist",
+      "label": "Makeup Artist",
+      "ipa": "/ˈmeɪkʌp ˈɑːrtɪst/",
+      "cefr": "B1",
+      "imageNodeId": "45:419"
+    },
+    {
+      "kind": "card",
+      "id": "set-designer",
+      "label": "Set Designer",
+      "ipa": "/sɛt dɪˈzaɪnər/",
+      "cefr": "B1",
+      "imageNodeId": "45:423"
+    },
+    {
+      "kind": "card",
+      "id": "script-writer",
+      "label": "Script Writer",
+      "ipa": "/skrɪpt ˈraɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "45:427"
+    },
+    {
+      "kind": "card",
+      "id": "editor",
+      "label": "Editor",
+      "ipa": "/ˈɛdɪtər/",
+      "cefr": "A2",
+      "imageNodeId": "45:431"
+    },
+    {
+      "kind": "card",
+      "id": "stage-manager",
+      "label": "Stage Manager",
+      "ipa": "/steɪdʒ ˈmænɪdʒər/",
+      "cefr": "B1",
+      "imageNodeId": "45:435"
+    },
+    {
+      "kind": "card",
+      "id": "live-broadcast",
+      "label": "Live Broadcast",
+      "ipa": "/laɪv ˈbrɔːdˌkæst/",
+      "cefr": "B1",
+      "imageNodeId": "45:444"
+    },
+    {
+      "kind": "card",
+      "id": "recording",
+      "label": "Recording",
+      "ipa": "/rɪˈkɔːrdɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "45:448"
+    },
+    {
+      "kind": "card",
+      "id": "satellite-dish",
+      "label": "Satellite Dish",
+      "ipa": "/ˈsætəˌlaɪt dɪʃ/",
+      "cefr": "B1",
+      "imageNodeId": "45:452"
+    },
+    {
+      "kind": "card",
+      "id": "antenna",
+      "label": "Antenna",
+      "ipa": "/ænˈtɛnə/",
+      "cefr": "A2",
+      "imageNodeId": "45:456"
+    },
+    {
+      "kind": "card",
+      "id": "transmitter",
+      "label": "Transmitter",
+      "ipa": "/trænzˈmɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "45:460"
+    },
+    {
+      "kind": "card",
+      "id": "signal",
+      "label": "Signal",
+      "ipa": "/ˈsɪɡnəl/",
+      "cefr": "A2",
+      "imageNodeId": "45:464"
+    },
+    {
+      "kind": "card",
+      "id": "channel",
+      "label": "Channel",
+      "ipa": "/ˈtʃænəl/",
+      "cefr": "A2",
+      "imageNodeId": "45:468"
+    },
+    {
+      "kind": "card",
+      "id": "frequency",
+      "label": "Frequency",
+      "ipa": "/ˈfriːkwənsi/",
+      "cefr": "A2",
+      "imageNodeId": "45:472"
+    },
+    {
+      "kind": "card",
+      "id": "broadcast-tower",
+      "label": "Broadcast Tower",
+      "ipa": "/ˈbrɔːdˌkæst ˈtaʊər/",
+      "cefr": "B2",
+      "imageNodeId": "45:476"
+    },
+    {
+      "kind": "card",
+      "id": "control-room",
+      "label": "Control Room",
+      "ipa": "/kənˈtroʊl ruːm/",
+      "cefr": "B1",
+      "imageNodeId": "45:480"
+    },
+    {
+      "kind": "card",
+      "id": "microphone",
+      "label": "Microphone",
+      "ipa": "/ˈmaɪkrəˌfoʊn/",
+      "cefr": "B1",
+      "imageNodeId": "45:489"
+    },
+    {
+      "kind": "card",
+      "id": "headphones",
+      "label": "Headphones",
+      "ipa": "/ˈhɛdˌfoʊnz/",
+      "cefr": "B1",
+      "imageNodeId": "45:493"
+    },
+    {
+      "kind": "card",
+      "id": "mixer",
+      "label": "Mixer",
+      "ipa": "/ˈmɪksər/",
+      "cefr": "A2",
+      "imageNodeId": "45:497"
+    },
+    {
+      "kind": "card",
+      "id": "amplifier",
+      "label": "Amplifier",
+      "ipa": "/ˈæmplɪˌfaɪər/",
+      "cefr": "A2",
+      "imageNodeId": "45:501"
+    },
+    {
+      "kind": "card",
+      "id": "speaker",
+      "label": "Speaker",
+      "ipa": "/ˈspiːkər/",
+      "cefr": "A2",
+      "imageNodeId": "45:505"
+    },
+    {
+      "kind": "card",
+      "id": "sound-board",
+      "label": "Sound Board",
+      "ipa": "/saʊnd bɔːrd/",
+      "cefr": "B1",
+      "imageNodeId": "45:509"
+    },
+    {
+      "kind": "card",
+      "id": "clip-on-mic",
+      "label": "Clip-On Mic",
+      "ipa": "/klɪp ɒn mɪk/",
+      "cefr": "B2",
+      "imageNodeId": "45:513"
+    },
+    {
+      "kind": "card",
+      "id": "pop-filter",
+      "label": "Pop Filter",
+      "ipa": "/pɒp ˈfɪltər/",
+      "cefr": "B1",
+      "imageNodeId": "45:517"
+    },
+    {
+      "kind": "card",
+      "id": "audio-cable",
+      "label": "Audio Cable",
+      "ipa": "/ˈɔːdiˌoʊ ˈkeɪbəl/",
+      "cefr": "B1",
+      "imageNodeId": "45:521"
+    },
+    {
+      "kind": "card",
+      "id": "equalizer",
+      "label": "Equalizer",
+      "ipa": "/ˈiːkwəˌlaɪzər/",
+      "cefr": "A2",
+      "imageNodeId": "45:525"
+    },
+    {
+      "kind": "card",
+      "id": "editing-suite",
+      "label": "Editing Suite",
+      "ipa": "/ˈɛdɪtɪŋ swiːt/",
+      "cefr": "B1",
+      "imageNodeId": "45:534"
+    },
+    {
+      "kind": "card",
+      "id": "timeline",
+      "label": "Timeline",
+      "ipa": "/ˈtaɪmˌlaɪn/",
+      "cefr": "A2",
+      "imageNodeId": "45:538"
+    },
+    {
+      "kind": "card",
+      "id": "cut",
+      "label": "Cut",
+      "ipa": "/kʌt/",
+      "cefr": "A2",
+      "imageNodeId": "45:542"
+    },
+    {
+      "kind": "card",
+      "id": "transition",
+      "label": "Transition",
+      "ipa": "/trænˈzɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "45:546"
+    },
+    {
+      "kind": "card",
+      "id": "special-effect",
+      "label": "Special Effect",
+      "ipa": "/ˈspɛʃəl ɪˈfɛkt/",
+      "cefr": "B1",
+      "imageNodeId": "45:550"
+    },
+    {
+      "kind": "card",
+      "id": "color-grading",
+      "label": "Color Grading",
+      "ipa": "/ˈkʌlər ˈɡreɪdɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "45:554"
+    },
+    {
+      "kind": "card",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "ipa": "/ˈsʌbˌtaɪtəl/",
+      "cefr": "A2",
+      "imageNodeId": "45:558"
+    },
+    {
+      "kind": "card",
+      "id": "voiceover",
+      "label": "Voiceover",
+      "ipa": "/ˈvɔɪsˌoʊvər/",
+      "cefr": "A2",
+      "imageNodeId": "45:562"
+    },
+    {
+      "kind": "card",
+      "id": "render",
+      "label": "Render",
+      "ipa": "/ˈrɛndər/",
+      "cefr": "A2",
+      "imageNodeId": "45:566"
+    },
+    {
+      "kind": "card",
+      "id": "export",
+      "label": "Export",
+      "ipa": "/ˈɛkspɔːrt/",
+      "cefr": "A2",
+      "imageNodeId": "45:570"
+    },
+    {
+      "kind": "card",
+      "id": "monitor",
+      "label": "Monitor",
+      "ipa": "/ˈmɒnɪtər/",
+      "cefr": "A2",
+      "imageNodeId": "39:3822"
+    },
+    {
+      "kind": "card",
+      "id": "boom-mic",
+      "label": "Boom Mic",
+      "ipa": "/buːm mɪk/",
+      "cefr": "B1",
+      "imageNodeId": "39:3826"
+    },
+    {
+      "kind": "card",
+      "id": "clapperboard",
+      "label": "Clapperboard",
+      "ipa": "/ˈklæpərˌbɔːrd/",
+      "cefr": "B1",
+      "imageNodeId": "39:3830"
+    },
+    {
+      "kind": "card",
+      "id": "anchor",
+      "label": "Anchor",
+      "ipa": "/ˈæŋkər/",
+      "cefr": "A2",
+      "imageNodeId": "39:3841"
+    },
+    {
+      "kind": "card",
+      "id": "reporter",
+      "label": "Reporter",
+      "ipa": "/rɪˈpɔːrtər/",
+      "cefr": "A2",
+      "imageNodeId": "39:3845"
+    },
+    {
+      "kind": "card",
+      "id": "cameraman",
+      "label": "Cameraman",
+      "ipa": "/ˈkæmərəˌmæn/",
+      "cefr": "A2",
+      "imageNodeId": "39:3853"
+    },
+    {
+      "kind": "card",
+      "id": "technician",
+      "label": "Technician",
+      "ipa": "/tɛkˈnɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "39:3865"
+    },
+    {
+      "kind": "card",
+      "id": "live",
+      "label": "Live",
+      "ipa": "/laɪv/",
+      "cefr": "A2",
+      "imageNodeId": "39:3876"
+    },
+    {
+      "kind": "card",
+      "id": "commercial",
+      "label": "Commercial",
+      "ipa": "/kəˈmɜːrʃəl/",
+      "cefr": "B1",
+      "imageNodeId": "39:3884"
+    },
+    {
+      "kind": "card",
+      "id": "interview",
+      "label": "Interview",
+      "ipa": "/ˈɪntərˌvjuː/",
+      "cefr": "A2",
+      "imageNodeId": "39:3888"
+    },
+    {
+      "kind": "card",
+      "id": "segment",
+      "label": "Segment",
+      "ipa": "/ˈsɛɡmənt/",
+      "cefr": "A2",
+      "imageNodeId": "39:3892"
+    },
+    {
+      "kind": "card",
+      "id": "headline",
+      "label": "Headline",
+      "ipa": "/ˈhɛdˌlaɪn/",
+      "cefr": "A2",
+      "imageNodeId": "39:3896"
+    },
+    {
+      "kind": "card",
+      "id": "weather-map",
+      "label": "Weather Map",
+      "ipa": "/ˈwɛðər mæp/",
+      "cefr": "B1",
+      "imageNodeId": "39:3900"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "568:1098",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "568:1100",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1+ · Topic: The TV Studio",
+          "depth": 1,
+          "name": "Level: B1+ · Topic: The TV Studio"
+        },
+        {
+          "text": "Behind the Scenes at the TV Studio\n\nMost people watch television every day, but few people know what happens behind the camera. A TV studio is a busy, exciting place where many people work together to create the programmes we watch at home.\n\nThe studio looks like a large room with a high ceiling. On the stage, there is a background set — the anchor desk for a news show, or a living room for a talk show. A green screen stands behind the desk so that editors can add different backgrounds later. Spotlights and softbox lights hang from the ceiling, and a lighting technician adjusts them to make the set look natural. Floor markings show the presenter where to stand.\n\nSeveral cameras surround the stage. Each camera sits on a tripod or a dolly — a small platform with wheels that allows the camera operator to move smoothly. A jib crane holds another camera high above the set for wide shots. On the anchor desk, a teleprompter displays the script so the presenter can read while looking directly at the camera.\n\nSound is just as important as the picture. A boom microphone hangs above the stage to capture the presenter's voice. Some presenters wear a clip-on mic attached to their clothes. The sound engineer sits in the control room, watching the mixer and the sound board. Headphones help the team listen for problems. A pop filter covers the microphone to reduce harsh breathing sounds.\n\nBehind the set, the control room is full of screens. A monitor wall shows what every camera sees. The director sits here and tells the camera operators which shot to use. The producer makes sure everything runs on time. During a live broadcast, every second matters — there is no chance to stop and start again.\n\nAfter filming, the recording goes to the editing suite. An editor works on a timeline, making cuts, adding transitions and special effects, adjusting the colour grading, and writing subtitles. A voiceover may be recorded to explain parts of the programme. When the edit is finished, the programme is rendered — turned into a final video file — and sent to the broadcast tower. A transmitter sends the signal through a satellite dish or antenna to millions of homes.\n\nThe TV studio needs many people: a director, a producer, camera operators, a sound engineer, a makeup artist, a set designer, a script writer, an editor, and a stage manager. Each person has a specific job, and together they make television happen.",
+          "depth": 1,
+          "name": "Behind the Scenes at the TV Studio Most people watch television every day, but few people know what happens behind the camera. A TV studio is a busy, exciting place where many people work together to create the programmes we watch at home. The studio looks like a large room with a high ceiling. On the stage, there is a background set — the anchor desk for a news show, or a living room for a talk show. A green screen stands behind the desk so that editors can add different backgrounds later. Spotlights and softbox lights hang from the ceiling, and a lighting technician adjusts them to make the set look natural. Floor markings show the presenter where to stand. Several cameras surround the stage. Each camera sits on a tripod or a dolly — a small platform with wheels that allows the camera operator to move smoothly. A jib crane holds another camera high above the set for wide shots. On the anchor desk, a teleprompter displays the script so the presenter can read while looking directly at the camera. Sound is just as important as the picture. A boom microphone hangs above the stage to capture the presenter's voice. Some presenters wear a clip-on mic attached to their clothes. The sound engineer sits in the control room, watching the mixer and the sound board. Headphones help the team listen for problems. A pop filter covers the microphone to reduce harsh breathing sounds. Behind the set, the control room is full of screens. A monitor wall shows what every camera sees. The director sits here and tells the camera operators which shot to use. The producer makes sure everything runs on time. During a live broadcast, every second matters — there is no chance to stop and start again. After filming, the recording goes to the editing suite. An editor works on a timeline, making cuts, adding transitions and special effects, adjusting the colour grading, and writing subtitles. A voiceover may be recorded to explain parts of the programme. When the edit is finished, the programme is rendered — turned into a final video file — and sent to the broadcast tower. A transmitter sends the signal through a satellite dish or antenna to millions of homes. The TV studio needs many people: a director, a producer, camera operators, a sound engineer, a makeup artist, a set designer, a script writer, an editor, and a stage manager. Each person has a specific job, and together they make television happen."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What equipment is used on the stage of a TV studio? Name at least five items.",
+          "depth": 1,
+          "name": "1. What equipment is used on the stage of a TV studio? Name at least five items."
+        },
+        {
+          "text": "2. How does a teleprompter help the presenter during a broadcast?",
+          "depth": 1,
+          "name": "2. How does a teleprompter help the presenter during a broadcast?"
+        },
+        {
+          "text": "3. What is the difference between a live broadcast and a recorded programme?",
+          "depth": 1,
+          "name": "3. What is the difference between a live broadcast and a recorded programme?"
+        },
+        {
+          "text": "4. Describe what happens in the editing suite after filming is complete.",
+          "depth": 1,
+          "name": "4. Describe what happens in the editing suite after filming is complete."
+        },
+        {
+          "text": "5. Name four different jobs in the TV studio and explain what each person does.",
+          "depth": 1,
+          "name": "5. Name four different jobs in the TV studio and explain what each person does."
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "568:1113",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "in the spotlight",
+          "depth": 2,
+          "name": "in the spotlight"
+        },
+        {
+          "text": "receiving a lot of public attention",
+          "depth": 2,
+          "name": "receiving a lot of public attention"
+        },
+        {
+          "text": "\"The moment the spotlight hit the anchor desk, the presenter had to be calm and professional.\"",
+          "depth": 2,
+          "name": "\"The moment the spotlight hit the anchor desk, the presenter had to be calm and professional.\""
+        },
+        {
+          "text": "behind the scenes",
+          "depth": 2,
+          "name": "behind the scenes"
+        },
+        {
+          "text": "happening privately; not visible to the public",
+          "depth": 2,
+          "name": "happening privately; not visible to the public"
+        },
+        {
+          "text": "\"Behind the scenes, the producer, the editor, and the stage manager work under enormous pressure.\"",
+          "depth": 2,
+          "name": "\"Behind the scenes, the producer, the editor, and the stage manager work under enormous pressure.\""
+        },
+        {
+          "text": "steal the show",
+          "depth": 2,
+          "name": "steal the show"
+        },
+        {
+          "text": "attract the most attention or praise",
+          "depth": 2,
+          "name": "attract the most attention or praise"
+        },
+        {
+          "text": "\"The guest expert stole the show — the camera operator couldn't stop zooming in on her reactions.\"",
+          "depth": 2,
+          "name": "\"The guest expert stole the show — the camera operator couldn't stop zooming in on her reactions.\""
+        },
+        {
+          "text": "set the stage (for something)",
+          "depth": 2,
+          "name": "set the stage (for something)"
+        },
+        {
+          "text": "create the conditions for something to happen",
+          "depth": 2,
+          "name": "create the conditions for something to happen"
+        },
+        {
+          "text": "\"The set designer's backdrop really set the stage for a dramatic live broadcast.\"",
+          "depth": 2,
+          "name": "\"The set designer's backdrop really set the stage for a dramatic live broadcast.\""
+        },
+        {
+          "text": "on cue",
+          "depth": 2,
+          "name": "on cue"
+        },
+        {
+          "text": "at exactly the right moment",
+          "depth": 2,
+          "name": "at exactly the right moment"
+        },
+        {
+          "text": "\"The lighting technician switched the softbox light on cue as the director counted down.\"",
+          "depth": 2,
+          "name": "\"The lighting technician switched the softbox light on cue as the director counted down.\""
+        },
+        {
+          "text": "cut! (figurative)",
+          "depth": 2,
+          "name": "cut! (figurative)"
+        },
+        {
+          "text": "stop what you're doing immediately",
+          "depth": 2,
+          "name": "stop what you're doing immediately"
+        },
+        {
+          "text": "\"Cut! The boom microphone dropped into the frame — we need to re-record.\"",
+          "depth": 2,
+          "name": "\"Cut! The boom microphone dropped into the frame — we need to re-record.\""
+        },
+        {
+          "text": "read from a script",
+          "depth": 2,
+          "name": "read from a script"
+        },
+        {
+          "text": "speak in a way that sounds rehearsed and unnatural",
+          "depth": 2,
+          "name": "speak in a way that sounds rehearsed and unnatural"
+        },
+        {
+          "text": "\"The reporter was clearly reading from a script — the teleprompter text felt too stiff.\"",
+          "depth": 2,
+          "name": "\"The reporter was clearly reading from a script — the teleprompter text felt too stiff.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "568:1145",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A director preparing the crew for a live news broadcast in a TV studio",
+          "depth": 1,
+          "name": "Scene: A director preparing the crew for a live news broadcast in a TV studio"
+        },
+        {
+          "text": "Director:",
+          "depth": 2,
+          "name": "Director:"
+        },
+        {
+          "text": "We're live in two minutes. Camera operator, check your angles. Is the anchor desk framed properly?",
+          "depth": 2,
+          "name": "We're live in two minutes. Camera operator, check your angles. Is the anchor desk framed properly?"
+        },
+        {
+          "text": "Camera Op:",
+          "depth": 2,
+          "name": "Camera Op:"
+        },
+        {
+          "text": "Framed and focused. The tripod's stable. Should I keep the dolly ready for the interview section?",
+          "depth": 2,
+          "name": "Framed and focused. The tripod's stable. Should I keep the dolly ready for the interview section?"
+        },
+        {
+          "text": "Director:",
+          "depth": 2,
+          "name": "Director:"
+        },
+        {
+          "text": "Yes. Sound — is the boom microphone positioned above the desk? I don't want it in the shot again.",
+          "depth": 2,
+          "name": "Yes. Sound — is the boom microphone positioned above the desk? I don't want it in the shot again."
+        },
+        {
+          "text": "Sound Eng:",
+          "depth": 2,
+          "name": "Sound Eng:"
+        },
+        {
+          "text": "Boom's clear. Clip microphones are live on both presenters. Levels look good on the monitor wall.",
+          "depth": 2,
+          "name": "Boom's clear. Clip microphones are live on both presenters. Levels look good on the monitor wall."
+        },
+        {
+          "text": "Director:",
+          "depth": 2,
+          "name": "Director:"
+        },
+        {
+          "text": "Lighting — the softbox is too bright on the left. Can you adjust the spotlight on the platform?",
+          "depth": 2,
+          "name": "Lighting — the softbox is too bright on the left. Can you adjust the spotlight on the platform?"
+        },
+        {
+          "text": "Lighting Tech:",
+          "depth": 2,
+          "name": "Lighting Tech:"
+        },
+        {
+          "text": "On it. I'll dim the spotlight and add a fill from the right. The green screen behind the weather area is lit evenly.",
+          "depth": 2,
+          "name": "On it. I'll dim the spotlight and add a fill from the right. The green screen behind the weather area is lit evenly."
+        },
+        {
+          "text": "Director:",
+          "depth": 2,
+          "name": "Director:"
+        },
+        {
+          "text": "Good. Stage manager — are the props in place for the cooking segment?",
+          "depth": 2,
+          "name": "Good. Stage manager — are the props in place for the cooking segment?"
+        },
+        {
+          "text": "Stage Mgr:",
+          "depth": 2,
+          "name": "Stage Mgr:"
+        },
+        {
+          "text": "All set. The floor markings are taped for the guest's position. Makeup is finishing the presenter now.",
+          "depth": 2,
+          "name": "All set. The floor markings are taped for the guest's position. Makeup is finishing the presenter now."
+        },
+        {
+          "text": "Makeup:",
+          "depth": 2,
+          "name": "Makeup:"
+        },
+        {
+          "text": "Almost done. The studio lights wash out skin tone, so I've added extra contrast.",
+          "depth": 2,
+          "name": "Almost done. The studio lights wash out skin tone, so I've added extra contrast."
+        },
+        {
+          "text": "Director:",
+          "depth": 2,
+          "name": "Director:"
+        },
+        {
+          "text": "Teleprompter loaded? The script writer sent the final edit ten minutes ago.",
+          "depth": 2,
+          "name": "Teleprompter loaded? The script writer sent the final edit ten minutes ago."
+        },
+        {
+          "text": "Producer:",
+          "depth": 2,
+          "name": "Producer:"
+        },
+        {
+          "text": "Loaded and scrolling at the right speed. The satellite dish is receiving the live feed from our correspondent. We're ready.",
+          "depth": 2,
+          "name": "Loaded and scrolling at the right speed. The satellite dish is receiving the live feed from our correspondent. We're ready."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "568:1183",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I saw a very interesting news on TV last night.\"",
+          "depth": 2,
+          "name": "❌ \"I saw a very interesting news on TV last night.\""
+        },
+        {
+          "text": "✅ \"I saw some very interesting news on TV last night.\"",
+          "depth": 2,
+          "name": "✅ \"I saw some very interesting news on TV last night.\""
+        },
+        {
+          "text": "'News' is uncountable in English — it has no plural and cannot take 'a'. Use 'some news', 'a piece of news', or 'a news story'. 'The news is on at six o'clock.' Not: 'a news' or 'many news.'",
+          "depth": 2,
+          "name": "'News' is uncountable in English — it has no plural and cannot take 'a'. Use 'some news', 'a piece of news', or 'a news story'. 'The news is on at six o'clock.' Not: 'a news' or 'many news.'"
+        },
+        {
+          "text": "❌ \"The programme was broadcasted live yesterday evening.\"",
+          "depth": 2,
+          "name": "❌ \"The programme was broadcasted live yesterday evening.\""
+        },
+        {
+          "text": "✅ \"The programme was broadcast live yesterday evening.\"",
+          "depth": 2,
+          "name": "✅ \"The programme was broadcast live yesterday evening.\""
+        },
+        {
+          "text": "'Broadcast' is the same in all forms: broadcast – broadcast – broadcast. It does not add '-ed'. Similar verbs: 'cut – cut – cut', 'put – put – put'. 'The show was broadcast live.' 'They broadcast the match last Saturday.'",
+          "depth": 2,
+          "name": "'Broadcast' is the same in all forms: broadcast – broadcast – broadcast. It does not add '-ed'. Similar verbs: 'cut – cut – cut', 'put – put – put'. 'The show was broadcast live.' 'They broadcast the match last Saturday.'"
+        },
+        {
+          "text": "❌ \"She is working as camera operator in a big studio.\"",
+          "depth": 2,
+          "name": "❌ \"She is working as camera operator in a big studio.\""
+        },
+        {
+          "text": "✅ \"She is working as a camera operator in a big studio.\"",
+          "depth": 2,
+          "name": "✅ \"She is working as a camera operator in a big studio.\""
+        },
+        {
+          "text": "Job titles after 'as' need an article: 'as a camera operator', 'as a director', 'as an editor.' Without 'as', no article is needed in some cases: 'She became director' (formal). But with 'as', always include 'a/an.'",
+          "depth": 2,
+          "name": "Job titles after 'as' need an article: 'as a camera operator', 'as a director', 'as an editor.' Without 'as', no article is needed in some cases: 'She became director' (formal). But with 'as', always include 'a/an.'"
+        },
+        {
+          "text": "❌ \"The editor made many special affects to the video.\"",
+          "depth": 2,
+          "name": "❌ \"The editor made many special affects to the video.\""
+        },
+        {
+          "text": "✅ \"The editor added many special effects to the video.\"",
+          "depth": 2,
+          "name": "✅ \"The editor added many special effects to the video.\""
+        },
+        {
+          "text": "'Effect' (noun) = the result or visual element: 'special effects', 'side effects.' 'Affect' (verb) = to influence: 'The weather affects my mood.' Also: 'add effects', not 'make effects.' 'The lighting has an effect on the mood.'",
+          "depth": 2,
+          "name": "'Effect' (noun) = the result or visual element: 'special effects', 'side effects.' 'Affect' (verb) = to influence: 'The weather affects my mood.' Also: 'add effects', not 'make effects.' 'The lighting has an effect on the mood.'"
+        },
+        {
+          "text": "❌ \"He told to me that the show starts at nine.\"",
+          "depth": 2,
+          "name": "❌ \"He told to me that the show starts at nine.\""
+        },
+        {
+          "text": "✅ \"He told me that the show starts at nine.\"",
+          "depth": 2,
+          "name": "✅ \"He told me that the show starts at nine.\""
+        },
+        {
+          "text": "'Tell' takes a direct object without 'to': 'He told me', 'She told us.' 'Say' does not take a person as direct object: 'He said (to me) that...' Never 'told to me' or 'said me.'",
+          "depth": 2,
+          "name": "'Tell' takes a direct object without 'to': 'He told me', 'She told us.' 'Say' does not take a person as direct object: 'He said (to me) that...' Never 'told to me' or 'said me.'"
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "568:1207",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Broadcasting vocabulary — notice the -er/-or agent nouns and -tion abstract nouns.",
+          "depth": 1,
+          "name": "Broadcasting vocabulary — notice the -er/-or agent nouns and -tion abstract nouns."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "broadcast",
+          "depth": 2,
+          "name": "broadcast"
+        },
+        {
+          "text": "broadcast / broadcaster",
+          "depth": 2,
+          "name": "broadcast / broadcaster"
+        },
+        {
+          "text": "broadcast",
+          "depth": 2,
+          "name": "broadcast"
+        },
+        {
+          "text": "broadcast (adj)",
+          "depth": 2,
+          "name": "broadcast (adj)"
+        },
+        {
+          "text": "produce",
+          "depth": 2,
+          "name": "produce"
+        },
+        {
+          "text": "production / producer",
+          "depth": 2,
+          "name": "production / producer"
+        },
+        {
+          "text": "produce",
+          "depth": 2,
+          "name": "produce"
+        },
+        {
+          "text": "productive",
+          "depth": 2,
+          "name": "productive"
+        },
+        {
+          "text": "direct",
+          "depth": 2,
+          "name": "direct"
+        },
+        {
+          "text": "direction / director",
+          "depth": 2,
+          "name": "direction / director"
+        },
+        {
+          "text": "direct",
+          "depth": 2,
+          "name": "direct"
+        },
+        {
+          "text": "direct / directorial",
+          "depth": 2,
+          "name": "direct / directorial"
+        },
+        {
+          "text": "present",
+          "depth": 2,
+          "name": "present"
+        },
+        {
+          "text": "presentation / presenter",
+          "depth": 2,
+          "name": "presentation / presenter"
+        },
+        {
+          "text": "present",
+          "depth": 2,
+          "name": "present"
+        },
+        {
+          "text": "present / presentable",
+          "depth": 2,
+          "name": "present / presentable"
+        },
+        {
+          "text": "record",
+          "depth": 2,
+          "name": "record"
+        },
+        {
+          "text": "recording / recorder",
+          "depth": 2,
+          "name": "recording / recorder"
+        },
+        {
+          "text": "record",
+          "depth": 2,
+          "name": "record"
+        },
+        {
+          "text": "recorded / pre-recorded",
+          "depth": 2,
+          "name": "recorded / pre-recorded"
+        },
+        {
+          "text": "transmit",
+          "depth": 2,
+          "name": "transmit"
+        },
+        {
+          "text": "transmission / transmitter",
+          "depth": 2,
+          "name": "transmission / transmitter"
+        },
+        {
+          "text": "transmit",
+          "depth": 2,
+          "name": "transmit"
+        },
+        {
+          "text": "transmitted",
+          "depth": 2,
+          "name": "transmitted"
+        },
+        {
+          "text": "entertain",
+          "depth": 2,
+          "name": "entertain"
+        },
+        {
+          "text": "entertainment / entertainer",
+          "depth": 2,
+          "name": "entertainment / entertainer"
+        },
+        {
+          "text": "entertain",
+          "depth": 2,
+          "name": "entertain"
+        },
+        {
+          "text": "entertaining",
+          "depth": 2,
+          "name": "entertaining"
+        },
+        {
+          "text": "schedule",
+          "depth": 2,
+          "name": "schedule"
+        },
+        {
+          "text": "schedule / scheduling",
+          "depth": 2,
+          "name": "schedule / scheduling"
+        },
+        {
+          "text": "schedule",
+          "depth": 2,
+          "name": "schedule"
+        },
+        {
+          "text": "scheduled / unscheduled",
+          "depth": 2,
+          "name": "scheduled / unscheduled"
+        },
+        {
+          "text": "script",
+          "depth": 2,
+          "name": "script"
+        },
+        {
+          "text": "script / scriptwriter",
+          "depth": 2,
+          "name": "script / scriptwriter"
+        },
+        {
+          "text": "script",
+          "depth": 2,
+          "name": "script"
+        },
+        {
+          "text": "scripted / unscripted",
+          "depth": 2,
+          "name": "scripted / unscripted"
+        },
+        {
+          "text": "monitor",
+          "depth": 2,
+          "name": "monitor"
+        },
+        {
+          "text": "monitor / monitoring",
+          "depth": 2,
+          "name": "monitor / monitoring"
+        },
+        {
+          "text": "monitor",
+          "depth": 2,
+          "name": "monitor"
+        },
+        {
+          "text": "monitored",
+          "depth": 2,
+          "name": "monitored"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "568:1267",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "B1+ Challenge: Verb patterns (suggest/recommend), fewer/less, broadcast tenses.",
+          "depth": 1,
+          "name": "B1+ Challenge: Verb patterns (suggest/recommend), fewer/less, broadcast tenses."
+        },
+        {
+          "text": "1.  The camera sits on a __________ so the operator can move it smoothly.",
+          "depth": 1,
+          "name": "1. The camera sits on a __________ so the operator can move it smoothly."
+        },
+        {
+          "text": "2.  A __________ screen allows editors to add different backgrounds later.",
+          "depth": 1,
+          "name": "2. A __________ screen allows editors to add different backgrounds later."
+        },
+        {
+          "text": "3.  The __________ displays the script so the presenter can read it on camera.",
+          "depth": 1,
+          "name": "3. The __________ displays the script so the presenter can read it on camera."
+        },
+        {
+          "text": "4.  A __________ microphone hangs above the stage to capture voices.",
+          "depth": 1,
+          "name": "4. A __________ microphone hangs above the stage to capture voices."
+        },
+        {
+          "text": "5.  The __________ sits in the control room and decides which camera shot to use.",
+          "depth": 1,
+          "name": "5. The __________ sits in the control room and decides which camera shot to use."
+        },
+        {
+          "text": "6.  In the editing suite, the editor works on a __________  to arrange the video clips.",
+          "depth": 1,
+          "name": "6. In the editing suite, the editor works on a __________ to arrange the video clips."
+        },
+        {
+          "text": "7.  A __________ dish sends the signal from the broadcast tower to viewers' homes.",
+          "depth": 1,
+          "name": "7. A __________ dish sends the signal from the broadcast tower to viewers' homes."
+        },
+        {
+          "text": "8.  The __________ technician adjusts the spotlights to make the set look natural.",
+          "depth": 1,
+          "name": "8. The __________ technician adjusts the spotlights to make the set look natural."
+        },
+        {
+          "text": "9.  The finished video is __________ — turned into a final file for broadcast.",
+          "depth": 1,
+          "name": "9. The finished video is __________ — turned into a final file for broadcast."
+        },
+        {
+          "text": "10. A __________ artist prepares the presenter's face before going on camera.",
+          "depth": 1,
+          "name": "10. A __________ artist prepares the presenter's face before going on camera."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. dolly/tripod  2. green  3. teleprompter  4. boom  5. director  6. timeline  7. satellite  8. lighting  9. rendered  10. makeup",
+          "depth": 2,
+          "name": "1. dolly/tripod 2. green 3. teleprompter 4. boom 5. director 6. timeline 7. satellite 8. lighting 9. rendered 10. makeup"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "568:1285",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "The BBC — Public Service Broadcasting",
+          "depth": 2,
+          "name": "The BBC — Public Service Broadcasting"
+        },
+        {
+          "text": "The BBC (British Broadcasting Corporation) is funded by the TV licence fee, not advertising. Every UK household that watches live television must pay this annual fee. This model means the BBC doesn't need to attract advertisers, which supporters say allows it to produce higher-quality, more impartial content. However, the licence fee is controversial — many people question whether it's fair in the age of streaming.",
+          "depth": 2,
+          "name": "The BBC (British Broadcasting Corporation) is funded by the TV licence fee, not advertising. Every UK household that watches live television must pay this annual fee. This model means the BBC doesn't need to attract advertisers, which supporters say allows it to produce higher-quality, more impartial content. However, the licence fee is controversial — many people question whether it's fair in the age of streaming."
+        },
+        {
+          "text": "Al Jazeera and Global Perspectives",
+          "depth": 2,
+          "name": "Al Jazeera and Global Perspectives"
+        },
+        {
+          "text": "Al Jazeera, launched in 1996 from Qatar, was one of the first major Arabic-language news networks to offer 24-hour coverage. Its English-language channel, launched in 2006, provides perspectives on global events from regions often underrepresented in Western media. Understanding that different news outlets have different perspectives is a key media literacy skill.",
+          "depth": 2,
+          "name": "Al Jazeera, launched in 1996 from Qatar, was one of the first major Arabic-language news networks to offer 24-hour coverage. Its English-language channel, launched in 2006, provides perspectives on global events from regions often underrepresented in Western media. Understanding that different news outlets have different perspectives is a key media literacy skill."
+        },
+        {
+          "text": "Watershed and Content Ratings",
+          "depth": 2,
+          "name": "Watershed and Content Ratings"
+        },
+        {
+          "text": "In the UK, the 'watershed' is 9 p.m. — before this time, programmes must be suitable for children. After 9 p.m., broadcasters can show more mature content. Different countries handle content regulation differently: the US uses a rating system (TV-G, TV-PG, TV-MA), while many Muslim-majority countries have stricter content guidelines aligned with cultural and religious values.",
+          "depth": 2,
+          "name": "In the UK, the 'watershed' is 9 p.m. — before this time, programmes must be suitable for children. After 9 p.m., broadcasters can show more mature content. Different countries handle content regulation differently: the US uses a rating system (TV-G, TV-PG, TV-MA), while many Muslim-majority countries have stricter content guidelines aligned with cultural and religious values."
+        },
+        {
+          "text": "'Telly' vs 'TV' — Register Matters",
+          "depth": 2,
+          "name": "'Telly' vs 'TV' — Register Matters"
+        },
+        {
+          "text": "In British English, 'telly' is the informal word for television: 'What's on telly tonight?' In formal writing or academic contexts, use 'television' or 'TV'. American English doesn't use 'telly'. Knowing when to use informal vs formal register is a key B1+ skill — examiners notice.",
+          "depth": 2,
+          "name": "In British English, 'telly' is the informal word for television: 'What's on telly tonight?' In formal writing or academic contexts, use 'television' or 'TV'. American English doesn't use 'telly'. Knowing when to use informal vs formal register is a key B1+ skill — examiners notice."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "568:1301",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "B1+ broadcasting vocabulary with collocations.",
+          "depth": 1,
+          "name": "B1+ broadcasting vocabulary with collocations."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "CEFR",
+          "depth": 2,
+          "name": "CEFR"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "broadcast",
+          "depth": 2,
+          "name": "broadcast"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "B1",
+          "depth": 2,
+          "name": "B1"
+        },
+        {
+          "text": "live ~, ~ news, ~ live",
+          "depth": 2,
+          "name": "live ~, ~ news, ~ live"
+        },
+        {
+          "text": "teleprompter",
+          "depth": 2,
+          "name": "teleprompter"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "read from a ~, ~ screen",
+          "depth": 2,
+          "name": "read from a ~, ~ screen"
+        },
+        {
+          "text": "presenter",
+          "depth": 2,
+          "name": "presenter"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1",
+          "depth": 2,
+          "name": "B1"
+        },
+        {
+          "text": "news ~, TV ~, chat show ~",
+          "depth": 2,
+          "name": "news ~, TV ~, chat show ~"
+        },
+        {
+          "text": "studio",
+          "depth": 2,
+          "name": "studio"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1",
+          "depth": 2,
+          "name": "B1"
+        },
+        {
+          "text": "TV ~, recording ~, ~ audience",
+          "depth": 2,
+          "name": "TV ~, recording ~, ~ audience"
+        },
+        {
+          "text": "footage",
+          "depth": 2,
+          "name": "footage"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "news ~, archive ~, raw ~",
+          "depth": 2,
+          "name": "news ~, archive ~, raw ~"
+        },
+        {
+          "text": "rehearsal",
+          "depth": 2,
+          "name": "rehearsal"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "dress ~, ~ schedule, in ~",
+          "depth": 2,
+          "name": "dress ~, ~ schedule, in ~"
+        },
+        {
+          "text": "segment",
+          "depth": 2,
+          "name": "segment"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "news ~, interview ~, final ~",
+          "depth": 2,
+          "name": "news ~, interview ~, final ~"
+        },
+        {
+          "text": "viewer",
+          "depth": 2,
+          "name": "viewer"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1",
+          "depth": 2,
+          "name": "B1"
+        },
+        {
+          "text": "~ figures, ~ numbers, peak ~",
+          "depth": 2,
+          "name": "~ figures, ~ numbers, peak ~"
+        },
+        {
+          "text": "script",
+          "depth": 2,
+          "name": "script"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "~ writer, follow the ~, ~ editor",
+          "depth": 2,
+          "name": "~ writer, follow the ~, ~ editor"
+        },
+        {
+          "text": "transmission",
+          "depth": 2,
+          "name": "transmission"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B2",
+          "depth": 2,
+          "name": "B2"
+        },
+        {
+          "text": "live ~, ~ signal, ~ failure",
+          "depth": 2,
+          "name": "live ~, ~ signal, ~ failure"
+        }
+      ]
+    }
+  }
+}

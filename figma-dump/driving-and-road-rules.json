@@ -1,0 +1,393 @@
+{
+  "unitId": "driving-and-road-rules",
+  "name": "Driving & Road Rules",
+  "subtopics": [
+    {
+      "id": "traffic-signs",
+      "title": "Traffic Signs",
+      "wordIds": [
+        "stop-sign",
+        "yield-sign",
+        "speed-limit",
+        "one-way",
+        "no-parking",
+        "pedestrian-crossing",
+        "school-zone",
+        "construction-zone",
+        "merge",
+        "exit-sign"
+      ]
+    },
+    {
+      "id": "road-features",
+      "title": "Road Features",
+      "wordIds": [
+        "lane",
+        "shoulder",
+        "median",
+        "curb",
+        "sidewalk",
+        "crosswalk",
+        "traffic-light",
+        "roundabout",
+        "overpass",
+        "underpass"
+      ]
+    },
+    {
+      "id": "driving-actions",
+      "title": "Driving Actions",
+      "wordIds": [
+        "accelerate",
+        "brake",
+        "steer",
+        "signal",
+        "merge",
+        "overtake",
+        "park",
+        "reverse",
+        "u-turn",
+        "yield"
+      ]
+    },
+    {
+      "id": "safety-law",
+      "title": "Safety & Law",
+      "wordIds": [
+        "speed-limit",
+        "dui",
+        "seat-belt-law",
+        "right-of-way",
+        "blind-spot",
+        "defensive-driving",
+        "road-rage",
+        "hit-and-run",
+        "insurance-claim",
+        "traffic-ticket"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "stop-sign",
+      "label": "Stop Sign",
+      "ipa": "/stɒp saɪn/",
+      "cefr": "C1",
+      "imageNodeId": "467:18106"
+    },
+    {
+      "kind": "card",
+      "id": "yield-sign",
+      "label": "Yield Sign",
+      "ipa": "/jiːld saɪn/",
+      "cefr": "C1",
+      "imageNodeId": "467:18110"
+    },
+    {
+      "kind": "card",
+      "id": "speed-limit",
+      "label": "Speed Limit",
+      "ipa": "/spiːd ˈlɪmɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:18114"
+    },
+    {
+      "kind": "card",
+      "id": "one-way",
+      "label": "One Way",
+      "ipa": "/wʌn weɪ/",
+      "cefr": "C1",
+      "imageNodeId": "467:18118"
+    },
+    {
+      "kind": "card",
+      "id": "no-parking",
+      "label": "No Parking",
+      "ipa": "/noʊ ˈpɑːrkɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:18122"
+    },
+    {
+      "kind": "card",
+      "id": "pedestrian-crossing",
+      "label": "Pedestrian Crossing",
+      "ipa": "/pɪˈdɛstriən ˈkrɒsɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:18126"
+    },
+    {
+      "kind": "card",
+      "id": "school-zone",
+      "label": "School Zone",
+      "ipa": "/skuːl zoʊn/",
+      "cefr": "C1",
+      "imageNodeId": "467:18130"
+    },
+    {
+      "kind": "card",
+      "id": "construction-zone",
+      "label": "Construction Zone",
+      "ipa": "/kənˈstrʌkʃən zoʊn/",
+      "cefr": "C1",
+      "imageNodeId": "467:18134"
+    },
+    {
+      "kind": "card",
+      "id": "merge",
+      "label": "Merge",
+      "ipa": "/mɜːrdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "467:18138"
+    },
+    {
+      "kind": "card",
+      "id": "exit-sign",
+      "label": "Exit Sign",
+      "ipa": "/ˈɛɡzɪt saɪn/",
+      "cefr": "C1",
+      "imageNodeId": "467:18142"
+    },
+    {
+      "kind": "card",
+      "id": "lane",
+      "label": "Lane",
+      "ipa": "/leɪn/",
+      "cefr": "B2",
+      "imageNodeId": "467:18151"
+    },
+    {
+      "kind": "card",
+      "id": "shoulder",
+      "label": "Shoulder",
+      "ipa": "/ˈʃoʊldər/",
+      "cefr": "B2",
+      "imageNodeId": "467:18155"
+    },
+    {
+      "kind": "card",
+      "id": "median",
+      "label": "Median",
+      "ipa": "/ˈmiːdiən/",
+      "cefr": "B2",
+      "imageNodeId": "467:18159"
+    },
+    {
+      "kind": "card",
+      "id": "curb",
+      "label": "Curb",
+      "ipa": "/kɜːrb/",
+      "cefr": "B2",
+      "imageNodeId": "467:18163"
+    },
+    {
+      "kind": "card",
+      "id": "sidewalk",
+      "label": "Sidewalk",
+      "ipa": "/ˈsaɪdˌwɔːk/",
+      "cefr": "B2",
+      "imageNodeId": "467:18167"
+    },
+    {
+      "kind": "card",
+      "id": "crosswalk",
+      "label": "Crosswalk",
+      "ipa": "/ˈkrɒsˌwɔːk/",
+      "cefr": "B2",
+      "imageNodeId": "467:18171"
+    },
+    {
+      "kind": "card",
+      "id": "traffic-light",
+      "label": "Traffic Light",
+      "ipa": "/ˈtræfɪk laɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:18175"
+    },
+    {
+      "kind": "card",
+      "id": "roundabout",
+      "label": "Roundabout",
+      "ipa": "/ˈraʊndəˌbaʊt/",
+      "cefr": "C1",
+      "imageNodeId": "467:18179"
+    },
+    {
+      "kind": "card",
+      "id": "overpass",
+      "label": "Overpass",
+      "ipa": "/ˈoʊvərˌpæs/",
+      "cefr": "B2",
+      "imageNodeId": "467:18183"
+    },
+    {
+      "kind": "card",
+      "id": "underpass",
+      "label": "Underpass",
+      "ipa": "/ˈʌndərˌpæs/",
+      "cefr": "B2",
+      "imageNodeId": "467:18187"
+    },
+    {
+      "kind": "card",
+      "id": "accelerate",
+      "label": "Accelerate",
+      "ipa": "/ækˈsɛləˌreɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:18196"
+    },
+    {
+      "kind": "card",
+      "id": "brake",
+      "label": "Brake",
+      "ipa": "/breɪk/",
+      "cefr": "B2",
+      "imageNodeId": "467:18200"
+    },
+    {
+      "kind": "card",
+      "id": "steer",
+      "label": "Steer",
+      "ipa": "/stɪər/",
+      "cefr": "B2",
+      "imageNodeId": "467:18204"
+    },
+    {
+      "kind": "card",
+      "id": "signal",
+      "label": "Signal",
+      "ipa": "/ˈsɪɡnəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:18208"
+    },
+    {
+      "kind": "card",
+      "id": "merge",
+      "label": "Merge",
+      "ipa": "/mɜːrdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "467:18212"
+    },
+    {
+      "kind": "card",
+      "id": "overtake",
+      "label": "Overtake",
+      "ipa": "/ˌoʊvərˈteɪk/",
+      "cefr": "B2",
+      "imageNodeId": "467:18216"
+    },
+    {
+      "kind": "card",
+      "id": "park",
+      "label": "Park",
+      "ipa": "/pɑːrk/",
+      "cefr": "B2",
+      "imageNodeId": "467:18220"
+    },
+    {
+      "kind": "card",
+      "id": "reverse",
+      "label": "Reverse",
+      "ipa": "/rɪˈvɜːrs/",
+      "cefr": "B2",
+      "imageNodeId": "467:18224"
+    },
+    {
+      "kind": "card",
+      "id": "u-turn",
+      "label": "U-Turn",
+      "ipa": "/ˈjuːtɜːrn/",
+      "cefr": "C1",
+      "imageNodeId": "467:18228"
+    },
+    {
+      "kind": "card",
+      "id": "yield",
+      "label": "Yield",
+      "ipa": "/jiːld/",
+      "cefr": "B2",
+      "imageNodeId": "467:18232"
+    },
+    {
+      "kind": "card",
+      "id": "speed-limit",
+      "label": "Speed Limit",
+      "ipa": "/spiːd ˈlɪmɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:18241"
+    },
+    {
+      "kind": "card",
+      "id": "dui",
+      "label": "DUI",
+      "ipa": "/ˌdiːjuːˈaɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:18245"
+    },
+    {
+      "kind": "card",
+      "id": "seat-belt-law",
+      "label": "Seat Belt Law",
+      "ipa": "/siːt bɛlt lɔː/",
+      "cefr": "C1",
+      "imageNodeId": "467:18249"
+    },
+    {
+      "kind": "card",
+      "id": "right-of-way",
+      "label": "Right of Way",
+      "ipa": "/raɪt əv weɪ/",
+      "cefr": "C1",
+      "imageNodeId": "467:18253"
+    },
+    {
+      "kind": "card",
+      "id": "blind-spot",
+      "label": "Blind Spot",
+      "ipa": "/blaɪnd spɒt/",
+      "cefr": "C1",
+      "imageNodeId": "467:18257"
+    },
+    {
+      "kind": "card",
+      "id": "defensive-driving",
+      "label": "Defensive Driving",
+      "ipa": "/dɪˈfɛnsɪv ˈdraɪvɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:18261"
+    },
+    {
+      "kind": "card",
+      "id": "road-rage",
+      "label": "Road Rage",
+      "ipa": "/roʊd reɪdʒ/",
+      "cefr": "C1",
+      "imageNodeId": "467:18265"
+    },
+    {
+      "kind": "card",
+      "id": "hit-and-run",
+      "label": "Hit and Run",
+      "ipa": "/hɪt ænd rʌn/",
+      "cefr": "C1",
+      "imageNodeId": "467:18269"
+    },
+    {
+      "kind": "card",
+      "id": "insurance-claim",
+      "label": "Insurance Claim",
+      "ipa": "/ɪnˈʃʊərəns kleɪm/",
+      "cefr": "C1",
+      "imageNodeId": "467:18273"
+    },
+    {
+      "kind": "card",
+      "id": "traffic-ticket",
+      "label": "Traffic Ticket",
+      "ipa": "/ˈtræfɪk ˈtɪkɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:18277"
+    }
+  ],
+  "materials": null
+}

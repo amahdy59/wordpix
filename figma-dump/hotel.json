@@ -1,0 +1,1594 @@
+{
+  "unitId": "hotel",
+  "name": "The Hotel",
+  "subtopics": [
+    {
+      "id": "lobby-reception",
+      "title": "Lobby & Reception",
+      "wordIds": [
+        "front-desk",
+        "lobby",
+        "receptionist",
+        "bell",
+        "key-card",
+        "luggage-cart",
+        "doorman",
+        "chandelier",
+        "sofa",
+        "vase"
+      ]
+    },
+    {
+      "id": "guest-room",
+      "title": "Guest Room",
+      "wordIds": [
+        "bed",
+        "pillow",
+        "blanket",
+        "nightstand",
+        "lamp",
+        "closet",
+        "safe",
+        "mini-bar",
+        "iron",
+        "hair-dryer"
+      ]
+    },
+    {
+      "id": "bathroom",
+      "title": "Bathroom",
+      "wordIds": [
+        "bathtub",
+        "shower",
+        "towel",
+        "robe",
+        "slippers",
+        "soap",
+        "shampoo",
+        "mirror",
+        "sink",
+        "toilet"
+      ]
+    },
+    {
+      "id": "amenities",
+      "title": "Amenities",
+      "wordIds": [
+        "swimming-pool",
+        "gym",
+        "spa",
+        "restaurant",
+        "bar",
+        "rooftop",
+        "garden",
+        "conference-room",
+        "business-center",
+        "laundry"
+      ]
+    },
+    {
+      "id": "services",
+      "title": "Services",
+      "wordIds": [
+        "room-service",
+        "wake-up-call",
+        "concierge",
+        "valet",
+        "housekeeping",
+        "breakfast-buffet",
+        "shuttle",
+        "tour-desk",
+        "wifi",
+        "parking"
+      ]
+    },
+    {
+      "id": "types-features",
+      "title": "Types & Features",
+      "wordIds": [
+        "single-room",
+        "double-room",
+        "suite",
+        "penthouse",
+        "balcony",
+        "view",
+        "elevator",
+        "hallway",
+        "ice-machine",
+        "vending-machine",
+        "bellhop",
+        "checkout"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "front-desk",
+      "label": "Front Desk",
+      "ipa": "/frʌnt dɛsk/",
+      "cefr": "B2",
+      "imageNodeId": "119:1991"
+    },
+    {
+      "kind": "card",
+      "id": "lobby",
+      "label": "Lobby",
+      "ipa": "/ˈlɒbi/",
+      "cefr": "B1",
+      "imageNodeId": "119:1995"
+    },
+    {
+      "kind": "card",
+      "id": "receptionist",
+      "label": "Receptionist",
+      "ipa": "/rɪˈsɛpʃənɪst/",
+      "cefr": "B2",
+      "imageNodeId": "119:1999"
+    },
+    {
+      "kind": "card",
+      "id": "bell",
+      "label": "Bell",
+      "ipa": "/bɛl/",
+      "cefr": "B1",
+      "imageNodeId": "119:2003"
+    },
+    {
+      "kind": "card",
+      "id": "key-card",
+      "label": "Key Card",
+      "ipa": "/kiː kɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "119:2007"
+    },
+    {
+      "kind": "card",
+      "id": "luggage-cart",
+      "label": "Luggage Cart",
+      "ipa": "/ˈlʌɡɪdʒ kɑːrt/",
+      "cefr": "B2",
+      "imageNodeId": "119:2011"
+    },
+    {
+      "kind": "card",
+      "id": "doorman",
+      "label": "Doorman",
+      "ipa": "/ˈdɔːrmən/",
+      "cefr": "B1",
+      "imageNodeId": "119:2015"
+    },
+    {
+      "kind": "card",
+      "id": "chandelier",
+      "label": "Chandelier",
+      "ipa": "/ˌʃændəˈlɪər/",
+      "cefr": "B2",
+      "imageNodeId": "119:2019"
+    },
+    {
+      "kind": "card",
+      "id": "sofa",
+      "label": "Sofa",
+      "ipa": "/ˈsoʊfə/",
+      "cefr": "B1",
+      "imageNodeId": "119:2023"
+    },
+    {
+      "kind": "card",
+      "id": "vase",
+      "label": "Vase",
+      "ipa": "/veɪz/",
+      "cefr": "B1",
+      "imageNodeId": "119:2027"
+    },
+    {
+      "kind": "card",
+      "id": "bed",
+      "label": "Bed",
+      "ipa": "/bɛd/",
+      "cefr": "B1",
+      "imageNodeId": "119:2036"
+    },
+    {
+      "kind": "card",
+      "id": "pillow",
+      "label": "Pillow",
+      "ipa": "/ˈpɪloʊ/",
+      "cefr": "B1",
+      "imageNodeId": "119:2040"
+    },
+    {
+      "kind": "card",
+      "id": "blanket",
+      "label": "Blanket",
+      "ipa": "/ˈblæŋkɪt/",
+      "cefr": "B1",
+      "imageNodeId": "119:2044"
+    },
+    {
+      "kind": "card",
+      "id": "nightstand",
+      "label": "Nightstand",
+      "ipa": "/ˈnaɪtˌstænd/",
+      "cefr": "B2",
+      "imageNodeId": "119:2048"
+    },
+    {
+      "kind": "card",
+      "id": "lamp",
+      "label": "Lamp",
+      "ipa": "/læmp/",
+      "cefr": "B1",
+      "imageNodeId": "119:2052"
+    },
+    {
+      "kind": "card",
+      "id": "closet",
+      "label": "Closet",
+      "ipa": "/ˈklɒzɪt/",
+      "cefr": "B1",
+      "imageNodeId": "119:2056"
+    },
+    {
+      "kind": "card",
+      "id": "safe",
+      "label": "Safe",
+      "ipa": "/seɪf/",
+      "cefr": "B1",
+      "imageNodeId": "119:2060"
+    },
+    {
+      "kind": "card",
+      "id": "mini-bar",
+      "label": "Mini Bar",
+      "ipa": "/ˈmɪni bɑːr/",
+      "cefr": "B2",
+      "imageNodeId": "119:2064"
+    },
+    {
+      "kind": "card",
+      "id": "iron",
+      "label": "Iron",
+      "ipa": "/ˈaɪərn/",
+      "cefr": "B1",
+      "imageNodeId": "119:2068"
+    },
+    {
+      "kind": "card",
+      "id": "hair-dryer",
+      "label": "Hair Dryer",
+      "ipa": "/hɛər ˈdraɪər/",
+      "cefr": "B2",
+      "imageNodeId": "119:2072"
+    },
+    {
+      "kind": "card",
+      "id": "bathtub",
+      "label": "Bathtub",
+      "ipa": "/ˈbæθˌtʌb/",
+      "cefr": "B1",
+      "imageNodeId": "119:2081"
+    },
+    {
+      "kind": "card",
+      "id": "shower",
+      "label": "Shower",
+      "ipa": "/ˈʃaʊər/",
+      "cefr": "B1",
+      "imageNodeId": "119:2085"
+    },
+    {
+      "kind": "card",
+      "id": "towel",
+      "label": "Towel",
+      "ipa": "/ˈtaʊəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:2089"
+    },
+    {
+      "kind": "card",
+      "id": "robe",
+      "label": "Robe",
+      "ipa": "/roʊb/",
+      "cefr": "B1",
+      "imageNodeId": "119:2093"
+    },
+    {
+      "kind": "card",
+      "id": "slippers",
+      "label": "Slippers",
+      "ipa": "/ˈslɪpərz/",
+      "cefr": "B1",
+      "imageNodeId": "119:2097"
+    },
+    {
+      "kind": "card",
+      "id": "soap",
+      "label": "Soap",
+      "ipa": "/soʊp/",
+      "cefr": "B1",
+      "imageNodeId": "119:2101"
+    },
+    {
+      "kind": "card",
+      "id": "shampoo",
+      "label": "Shampoo",
+      "ipa": "/ʃæmˈpuː/",
+      "cefr": "B1",
+      "imageNodeId": "119:2105"
+    },
+    {
+      "kind": "card",
+      "id": "mirror",
+      "label": "Mirror",
+      "ipa": "/ˈmɪrər/",
+      "cefr": "B1",
+      "imageNodeId": "119:2109"
+    },
+    {
+      "kind": "card",
+      "id": "sink",
+      "label": "Sink",
+      "ipa": "/sɪŋk/",
+      "cefr": "B1",
+      "imageNodeId": "119:2113"
+    },
+    {
+      "kind": "card",
+      "id": "toilet",
+      "label": "Toilet",
+      "ipa": "/ˈtɔɪlɪt/",
+      "cefr": "B1",
+      "imageNodeId": "119:2117"
+    },
+    {
+      "kind": "card",
+      "id": "swimming-pool",
+      "label": "Swimming Pool",
+      "ipa": "/ˈswɪmɪŋ puːl/",
+      "cefr": "B2",
+      "imageNodeId": "119:2126"
+    },
+    {
+      "kind": "card",
+      "id": "gym",
+      "label": "Gym",
+      "ipa": "/dʒɪm/",
+      "cefr": "B1",
+      "imageNodeId": "119:2130"
+    },
+    {
+      "kind": "card",
+      "id": "spa",
+      "label": "Spa",
+      "ipa": "/spɑː/",
+      "cefr": "B1",
+      "imageNodeId": "119:2134"
+    },
+    {
+      "kind": "card",
+      "id": "restaurant",
+      "label": "Restaurant",
+      "ipa": "/ˈrɛstərɒnt/",
+      "cefr": "B2",
+      "imageNodeId": "119:2138"
+    },
+    {
+      "kind": "card",
+      "id": "bar",
+      "label": "Bar",
+      "ipa": "/bɑːr/",
+      "cefr": "B1",
+      "imageNodeId": "119:2142"
+    },
+    {
+      "kind": "card",
+      "id": "rooftop",
+      "label": "Rooftop",
+      "ipa": "/ˈruːfˌtɒp/",
+      "cefr": "B1",
+      "imageNodeId": "119:2146"
+    },
+    {
+      "kind": "card",
+      "id": "garden",
+      "label": "Garden",
+      "ipa": "/ˈɡɑːrdən/",
+      "cefr": "B1",
+      "imageNodeId": "119:2150"
+    },
+    {
+      "kind": "card",
+      "id": "conference-room",
+      "label": "Conference Room",
+      "ipa": "/ˈkɒnfərəns ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "119:2154"
+    },
+    {
+      "kind": "card",
+      "id": "business-center",
+      "label": "Business Center",
+      "ipa": "/ˈbɪznɪs ˈsɛntər/",
+      "cefr": "C1",
+      "imageNodeId": "119:2158"
+    },
+    {
+      "kind": "card",
+      "id": "laundry",
+      "label": "Laundry",
+      "ipa": "/ˈlɔːndri/",
+      "cefr": "B1",
+      "imageNodeId": "119:2162"
+    },
+    {
+      "kind": "card",
+      "id": "room-service",
+      "label": "Room Service",
+      "ipa": "/ruːm ˈsɜːrvɪs/",
+      "cefr": "B2",
+      "imageNodeId": "119:2171"
+    },
+    {
+      "kind": "card",
+      "id": "wake-up-call",
+      "label": "Wake Up Call",
+      "ipa": "/weɪk ʌp kɔːl/",
+      "cefr": "C1",
+      "imageNodeId": "119:2175"
+    },
+    {
+      "kind": "card",
+      "id": "concierge",
+      "label": "Concierge",
+      "ipa": "/ˌkɒnsiˈɛrʒ/",
+      "cefr": "B1",
+      "imageNodeId": "119:2179"
+    },
+    {
+      "kind": "card",
+      "id": "valet",
+      "label": "Valet",
+      "ipa": "/ˈvæleɪ/",
+      "cefr": "B1",
+      "imageNodeId": "119:2183"
+    },
+    {
+      "kind": "card",
+      "id": "housekeeping",
+      "label": "Housekeeping",
+      "ipa": "/ˈhaʊsˌkiːpɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:2187"
+    },
+    {
+      "kind": "card",
+      "id": "breakfast-buffet",
+      "label": "Breakfast Buffet",
+      "ipa": "/ˈbrɛkfəst bʊˈfeɪ/",
+      "cefr": "C1",
+      "imageNodeId": "119:2191"
+    },
+    {
+      "kind": "card",
+      "id": "shuttle",
+      "label": "Shuttle",
+      "ipa": "/ˈʃʌtəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:2195"
+    },
+    {
+      "kind": "card",
+      "id": "tour-desk",
+      "label": "Tour Desk",
+      "ipa": "/tʊər dɛsk/",
+      "cefr": "B2",
+      "imageNodeId": "119:2199"
+    },
+    {
+      "kind": "card",
+      "id": "wifi",
+      "label": "Wifi",
+      "ipa": "/ˈwaɪfaɪ/",
+      "cefr": "B1",
+      "imageNodeId": "119:2203"
+    },
+    {
+      "kind": "card",
+      "id": "parking",
+      "label": "Parking",
+      "ipa": "/ˈpɑːrkɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "119:2207"
+    },
+    {
+      "kind": "card",
+      "id": "single-room",
+      "label": "Single Room",
+      "ipa": "/ˈsɪŋɡəl ruːm/",
+      "cefr": "B2",
+      "imageNodeId": "119:2216"
+    },
+    {
+      "kind": "card",
+      "id": "double-room",
+      "label": "Double Room",
+      "ipa": "/ˈdʌbəl ruːm/",
+      "cefr": "B2",
+      "imageNodeId": "119:2220"
+    },
+    {
+      "kind": "card",
+      "id": "suite",
+      "label": "Suite",
+      "ipa": "/swiːt/",
+      "cefr": "B1",
+      "imageNodeId": "119:2224"
+    },
+    {
+      "kind": "card",
+      "id": "penthouse",
+      "label": "Penthouse",
+      "ipa": "/ˈpɛntˌhaʊs/",
+      "cefr": "B1",
+      "imageNodeId": "119:2228"
+    },
+    {
+      "kind": "card",
+      "id": "balcony",
+      "label": "Balcony",
+      "ipa": "/ˈbælkəni/",
+      "cefr": "B1",
+      "imageNodeId": "119:2232"
+    },
+    {
+      "kind": "card",
+      "id": "view",
+      "label": "View",
+      "ipa": "/vjuː/",
+      "cefr": "B1",
+      "imageNodeId": "119:2236"
+    },
+    {
+      "kind": "card",
+      "id": "elevator",
+      "label": "Elevator",
+      "ipa": "/ˈɛlɪˌveɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "119:2240"
+    },
+    {
+      "kind": "card",
+      "id": "hallway",
+      "label": "Hallway",
+      "ipa": "/ˈhɔːlˌweɪ/",
+      "cefr": "B1",
+      "imageNodeId": "119:2244"
+    },
+    {
+      "kind": "card",
+      "id": "ice-machine",
+      "label": "Ice Machine",
+      "ipa": "/aɪs məˈʃiːn/",
+      "cefr": "B2",
+      "imageNodeId": "119:2248"
+    },
+    {
+      "kind": "card",
+      "id": "vending-machine",
+      "label": "Vending Machine",
+      "ipa": "/ˈvɛndɪŋ məˈʃiːn/",
+      "cefr": "C1",
+      "imageNodeId": "119:2252"
+    },
+    {
+      "kind": "card",
+      "id": "bellhop",
+      "label": "Bellhop",
+      "ipa": "/ˈbɛlˌhɒp/",
+      "cefr": "B1",
+      "imageNodeId": "119:2353"
+    },
+    {
+      "kind": "card",
+      "id": "checkout",
+      "label": "Checkout",
+      "ipa": "/ˈtʃɛkaʊt/",
+      "cefr": "B1",
+      "imageNodeId": "119:2365"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "554:1862",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "554:1864",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2 · Topic: The Hotel",
+          "depth": 1,
+          "name": "Level: B2 · Topic: The Hotel"
+        },
+        {
+          "text": "A Home Away from Home — The Hotel Experience\n\nA hotel is a temporary residence — a place where strangers become guests and service replaces routine. Whether a budget roadside stop or a five-star resort, every hotel operates on the same principle: anticipate what the traveller needs before they ask for it.\n\nThe experience begins in the lobby. A chandelier hangs from the ceiling. A sofa and a vase of flowers create an impression of domestic comfort. The front desk is the operational centre: a receptionist greets arrivals, issues a key card, and explains the hotel's facilities. A bell sits on the counter for attention. A luggage cart holds suitcases. A doorman opens the entrance for arriving guests. A bellhop carries bags to the room.\n\nRoom types range from a single room to a double room, a suite, and — at the top — a penthouse. Each room contains a bed with a pillow and a blanket, a nightstand with a lamp, and a closet for hanging clothes. A safe stores valuables. A mini bar offers drinks and snacks at a premium. An iron and a hair dryer are standard amenities. The bathroom includes a bathtub or a shower, a towel, a robe, slippers, soap, shampoo, a mirror, a sink, and a toilet. A balcony offers a view — of the city, the sea, or the garden.\n\nServices define the hotel's quality. Room service delivers meals at any hour. A wake up call replaces the alarm clock. A concierge arranges restaurants, tickets, and transport. A valet parks the car. Housekeeping cleans and restocks the room daily. A breakfast buffet is often included. A shuttle connects the hotel to the airport or city centre. A tour desk arranges excursions. Wifi is expected. Parking is either complimentary or charged.\n\nFacilities extend beyond the room. A swimming pool — indoor or outdoor — is the most requested amenity. A gym provides exercise equipment. A spa offers treatments. A restaurant serves meals. A bar provides evening drinks. A rooftop terrace offers panoramic views. A garden creates outdoor space. A conference room and a business center serve corporate guests. A laundry service handles clothing.\n\nThe infrastructure is invisible but essential. An elevator connects floors. A hallway leads to numbered doors. An ice machine and a vending machine serve late-night needs. The checkout process — reviewing charges, returning the key card, settling the bill — concludes the stay.\n\nWhat separates a forgettable hotel from a memorable one is rarely the thread count or the lobby design. It is whether the guest felt noticed — whether someone remembered their name, anticipated their request, or simply smiled at the right moment. Hospitality, at its best, is the art of making a stranger feel expected.",
+          "depth": 1,
+          "name": "A Home Away from Home — The Hotel Experience A hotel is a temporary residence — a place where strangers become guests and service replaces routine. Whether a budget roadside stop or a five-star resort, every hotel operates on the same principle: anticipate what the traveller needs before they ask for it. The experience begins in the lobby. A chandelier hangs from the ceiling. A sofa and a vase of flowers create an impression of domestic comfort. The front desk is the operational centre: a receptionist greets arrivals, issues a key card, and explains the hotel's facilities. A bell sits on the counter for attention. A luggage cart holds suitcases. A doorman opens the entrance for arriving guests. A bellhop carries bags to the room. Room types range from a single room to a double room, a suite, and — at the top — a penthouse. Each room contains a bed with a pillow and a blanket, a nightstand with a lamp, and a closet for hanging clothes. A safe stores valuables. A mini bar offers drinks and snacks at a premium. An iron and a hair dryer are standard amenities. The bathroom includes a bathtub or a shower, a towel, a robe, slippers, soap, shampoo, a mirror, a sink, and a toilet. A balcony offers a view — of the city, the sea, or the garden. Services define the hotel's quality. Room service delivers meals at any hour. A wake up call replaces the alarm clock. A concierge arranges restaurants, tickets, and transport. A valet parks the car. Housekeeping cleans and restocks the room daily. A breakfast buffet is often included. A shuttle connects the hotel to the airport or city centre. A tour desk arranges excursions. Wifi is expected. Parking is either complimentary or charged. Facilities extend beyond the room. A swimming pool — indoor or outdoor — is the most requested amenity. A gym provides exercise equipment. A spa offers treatments. A restaurant serves meals. A bar provides evening drinks. A rooftop terrace offers panoramic views. A garden creates outdoor space. A conference room and a business center serve corporate guests. A laundry service handles clothing. The infrastructure is invisible but essential. An elevator connects floors. A hallway leads to numbered doors. An ice machine and a vending machine serve late-night needs. The checkout process — reviewing charges, returning the key card, settling the bill — concludes the stay. What separates a forgettable hotel from a memorable one is rarely the thread count or the lobby design. It is whether the guest felt noticed — whether someone remembered their name, anticipated their request, or simply smiled at the right moment. Hospitality, at its best, is the art of making a stranger feel expected."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Describe the check-in process from arriving at the lobby to reaching the room.",
+          "depth": 1,
+          "name": "1. Describe the check-in process from arriving at the lobby to reaching the room."
+        },
+        {
+          "text": "2. What is the difference between a single room, a double room, a suite, and a penthouse?",
+          "depth": 1,
+          "name": "2. What is the difference between a single room, a double room, a suite, and a penthouse?"
+        },
+        {
+          "text": "3. Name five hotel services mentioned in the passage and explain what each provides.",
+          "depth": 1,
+          "name": "3. Name five hotel services mentioned in the passage and explain what each provides."
+        },
+        {
+          "text": "4. What facilities does the hotel offer beyond the guest room? Which would you value most?",
+          "depth": 1,
+          "name": "4. What facilities does the hotel offer beyond the guest room? Which would you value most?"
+        },
+        {
+          "text": "5. The passage ends: 'Hospitality is the art of making a stranger feel expected.' What does this mean?",
+          "depth": 1,
+          "name": "5. The passage ends: 'Hospitality is the art of making a stranger feel expected.' What does this mean?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "554:1877",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "check in / check out",
+          "depth": 2,
+          "name": "check in / check out"
+        },
+        {
+          "text": "register on arrival / leave and pay at departure",
+          "depth": 2,
+          "name": "register on arrival / leave and pay at departure"
+        },
+        {
+          "text": "\"We checked in at 3pm and checked out the next morning.\"",
+          "depth": 2,
+          "name": "\"We checked in at 3pm and checked out the next morning.\""
+        },
+        {
+          "text": "five-star treatment",
+          "depth": 2,
+          "name": "five-star treatment"
+        },
+        {
+          "text": "excellent, luxurious service",
+          "depth": 2,
+          "name": "excellent, luxurious service"
+        },
+        {
+          "text": "\"The restaurant gave us five-star treatment — everything was perfect.\"",
+          "depth": 2,
+          "name": "\"The restaurant gave us five-star treatment — everything was perfect.\""
+        },
+        {
+          "text": "no room at the inn",
+          "depth": 2,
+          "name": "no room at the inn"
+        },
+        {
+          "text": "fully booked; no space available",
+          "depth": 2,
+          "name": "fully booked; no space available"
+        },
+        {
+          "text": "\"We tried three hotels but there was no room at the inn.\"",
+          "depth": 2,
+          "name": "\"We tried three hotels but there was no room at the inn.\""
+        },
+        {
+          "text": "book up / fully booked",
+          "depth": 2,
+          "name": "book up / fully booked"
+        },
+        {
+          "text": "reserved completely; no availability left",
+          "depth": 2,
+          "name": "reserved completely; no availability left"
+        },
+        {
+          "text": "\"The hotel was fully booked because of the festival.\"",
+          "depth": 2,
+          "name": "\"The hotel was fully booked because of the festival.\""
+        },
+        {
+          "text": "sleep like a log",
+          "depth": 2,
+          "name": "sleep like a log"
+        },
+        {
+          "text": "sleep very deeply and soundly",
+          "depth": 2,
+          "name": "sleep very deeply and soundly"
+        },
+        {
+          "text": "\"The bed was so comfortable, I slept like a log.\"",
+          "depth": 2,
+          "name": "\"The bed was so comfortable, I slept like a log.\""
+        },
+        {
+          "text": "put someone up",
+          "depth": 2,
+          "name": "put someone up"
+        },
+        {
+          "text": "give someone a place to stay",
+          "depth": 2,
+          "name": "give someone a place to stay"
+        },
+        {
+          "text": "\"We can't afford a hotel — can you put us up for the night?\"",
+          "depth": 2,
+          "name": "\"We can't afford a hotel — can you put us up for the night?\""
+        },
+        {
+          "text": "live out of a suitcase",
+          "depth": 2,
+          "name": "live out of a suitcase"
+        },
+        {
+          "text": "travel constantly, never settled",
+          "depth": 2,
+          "name": "travel constantly, never settled"
+        },
+        {
+          "text": "\"With my job, I live out of a suitcase — a different city every week.\"",
+          "depth": 2,
+          "name": "\"With my job, I live out of a suitcase — a different city every week.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "554:1909",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A guest checking into a hotel",
+          "depth": 1,
+          "name": "Scene: A guest checking into a hotel"
+        },
+        {
+          "text": "Guest:",
+          "depth": 2,
+          "name": "Guest:"
+        },
+        {
+          "text": "Good afternoon. I have a reservation under the name Hassan.",
+          "depth": 2,
+          "name": "Good afternoon. I have a reservation under the name Hassan."
+        },
+        {
+          "text": "Reception:",
+          "depth": 2,
+          "name": "Reception:"
+        },
+        {
+          "text": "Welcome, Mr Hassan. Let me find your booking. Yes — a double room for three nights?",
+          "depth": 2,
+          "name": "Welcome, Mr Hassan. Let me find your booking. Yes — a double room for three nights?"
+        },
+        {
+          "text": "Guest:",
+          "depth": 2,
+          "name": "Guest:"
+        },
+        {
+          "text": "That's correct. Is the room ready?",
+          "depth": 2,
+          "name": "That's correct. Is the room ready?"
+        },
+        {
+          "text": "Reception:",
+          "depth": 2,
+          "name": "Reception:"
+        },
+        {
+          "text": "Yes, it is. Room 412 on the fourth floor. Could I see your passport, please?",
+          "depth": 2,
+          "name": "Yes, it is. Room 412 on the fourth floor. Could I see your passport, please?"
+        },
+        {
+          "text": "Guest:",
+          "depth": 2,
+          "name": "Guest:"
+        },
+        {
+          "text": "Of course. Here you are.",
+          "depth": 2,
+          "name": "Of course. Here you are."
+        },
+        {
+          "text": "Reception:",
+          "depth": 2,
+          "name": "Reception:"
+        },
+        {
+          "text": "Thank you. Here's your key card. Breakfast is served in the restaurant from 7 to 10am.",
+          "depth": 2,
+          "name": "Thank you. Here's your key card. Breakfast is served in the restaurant from 7 to 10am."
+        },
+        {
+          "text": "Guest:",
+          "depth": 2,
+          "name": "Guest:"
+        },
+        {
+          "text": "Is Wi-Fi included?",
+          "depth": 2,
+          "name": "Is Wi-Fi included?"
+        },
+        {
+          "text": "Reception:",
+          "depth": 2,
+          "name": "Reception:"
+        },
+        {
+          "text": "Yes, it's free. The network name and password are on the card in your room.",
+          "depth": 2,
+          "name": "Yes, it's free. The network name and password are on the card in your room."
+        },
+        {
+          "text": "Guest:",
+          "depth": 2,
+          "name": "Guest:"
+        },
+        {
+          "text": "What time is checkout?",
+          "depth": 2,
+          "name": "What time is checkout?"
+        },
+        {
+          "text": "Reception:",
+          "depth": 2,
+          "name": "Reception:"
+        },
+        {
+          "text": "Checkout is at 11am. You can request a late checkout until 1pm for a small fee.",
+          "depth": 2,
+          "name": "Checkout is at 11am. You can request a late checkout until 1pm for a small fee."
+        },
+        {
+          "text": "Guest:",
+          "depth": 2,
+          "name": "Guest:"
+        },
+        {
+          "text": "Perfect. One more thing — could you recommend a good restaurant nearby?",
+          "depth": 2,
+          "name": "Perfect. One more thing — could you recommend a good restaurant nearby?"
+        },
+        {
+          "text": "Reception:",
+          "depth": 2,
+          "name": "Reception:"
+        },
+        {
+          "text": "Certainly. The concierge can give you a list. Their desk is just around the corner.",
+          "depth": 2,
+          "name": "Certainly. The concierge can give you a list. Their desk is just around the corner."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "554:1950",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The hotel has very good facilities, isn't it?\"",
+          "depth": 2,
+          "name": "❌ \"The hotel has very good facilities, isn't it?\""
+        },
+        {
+          "text": "✅ \"The hotel has very good facilities, doesn't it?\"",
+          "depth": 2,
+          "name": "✅ \"The hotel has very good facilities, doesn't it?\""
+        },
+        {
+          "text": "Tag questions repeat the auxiliary from the main clause. 'Has' (as a main verb meaning 'possesses') uses 'doesn't' in the tag: 'has good facilities, doesn't it?' If 'has' were an auxiliary: 'The hotel has been renovated, hasn't it?' Match the auxiliary: present simple → 'does/doesn't'; 'has' as auxiliary → 'has/hasn't.'",
+          "depth": 2,
+          "name": "Tag questions repeat the auxiliary from the main clause. 'Has' (as a main verb meaning 'possesses') uses 'doesn't' in the tag: 'has good facilities, doesn't it?' If 'has' were an auxiliary: 'The hotel has been renovated, hasn't it?' Match the auxiliary: present simple → 'does/doesn't'; 'has' as auxiliary → 'has/hasn't.'"
+        },
+        {
+          "text": "❌ \"I'd like to have an accommodation with a sea view and a balcony, please.\"",
+          "depth": 2,
+          "name": "❌ \"I'd like to have an accommodation with a sea view and a balcony, please.\""
+        },
+        {
+          "text": "✅ \"I'd like accommodation with a sea view and a balcony, please.\"",
+          "depth": 2,
+          "name": "✅ \"I'd like accommodation with a sea view and a balcony, please.\""
+        },
+        {
+          "text": "'Accommodation' is uncountable in British English — never *'an accommodation' or *'accommodations' (though American English sometimes uses the plural). Use: 'accommodation', 'some accommodation', 'the accommodation.' Similar: 'luggage' (not *a luggage), 'furniture' (not *a furniture), 'information' (not *an information).",
+          "depth": 2,
+          "name": "'Accommodation' is uncountable in British English — never *'an accommodation' or *'accommodations' (though American English sometimes uses the plural). Use: 'accommodation', 'some accommodation', 'the accommodation.' Similar: 'luggage' (not *a luggage), 'furniture' (not *a furniture), 'information' (not *an information)."
+        },
+        {
+          "text": "❌ \"The receptionist told to us that our room was ready on the third floor.\"",
+          "depth": 2,
+          "name": "❌ \"The receptionist told to us that our room was ready on the third floor.\""
+        },
+        {
+          "text": "✅ \"The receptionist told us that our room was ready on the third floor.\"",
+          "depth": 2,
+          "name": "✅ \"The receptionist told us that our room was ready on the third floor.\""
+        },
+        {
+          "text": "'Tell' + direct object (no 'to'): 'told us.' 'Say' + 'to': 'said to us.' Never *'told to us.' Pattern: tell + person + that-clause: 'She told us that...' Say + that-clause: 'She said that...' Say + to + person: 'She said to us that...' The person after 'tell' is always a direct object.",
+          "depth": 2,
+          "name": "'Tell' + direct object (no 'to'): 'told us.' 'Say' + 'to': 'said to us.' Never *'told to us.' Pattern: tell + person + that-clause: 'She told us that...' Say + that-clause: 'She said that...' Say + to + person: 'She said to us that...' The person after 'tell' is always a direct object."
+        },
+        {
+          "text": "❌ \"Despite it was raining, we enjoyed the rooftop terrace with its panoramic view.\"",
+          "depth": 2,
+          "name": "❌ \"Despite it was raining, we enjoyed the rooftop terrace with its panoramic view.\""
+        },
+        {
+          "text": "✅ \"Despite the rain, we enjoyed the rooftop terrace with its panoramic view.\" / \"Although it was raining, we enjoyed...\"",
+          "depth": 2,
+          "name": "✅ \"Despite the rain, we enjoyed the rooftop terrace with its panoramic view.\" / \"Although it was raining, we enjoyed...\""
+        },
+        {
+          "text": "'Despite' + noun/gerund (no clause): 'despite the rain', 'despite being tired.' 'Although' + full clause: 'although it was raining.' Never *'despite + subject + verb.' 'In spite of' follows the same rule as 'despite': 'in spite of the rain.' This is a persistent B2 error — the two structures look interchangeable but have different grammar.",
+          "depth": 2,
+          "name": "'Despite' + noun/gerund (no clause): 'despite the rain', 'despite being tired.' 'Although' + full clause: 'although it was raining.' Never *'despite + subject + verb.' 'In spite of' follows the same rule as 'despite': 'in spite of the rain.' This is a persistent B2 error — the two structures look interchangeable but have different grammar."
+        },
+        {
+          "text": "❌ \"Every rooms in the hotel have been cleaned and restocked by housekeeping.\"",
+          "depth": 2,
+          "name": "❌ \"Every rooms in the hotel have been cleaned and restocked by housekeeping.\""
+        },
+        {
+          "text": "✅ \"Every room in the hotel has been cleaned and restocked by housekeeping.\" / \"All rooms in the hotel have been cleaned...\"",
+          "depth": 2,
+          "name": "✅ \"Every room in the hotel has been cleaned and restocked by housekeeping.\" / \"All rooms in the hotel have been cleaned...\""
+        },
+        {
+          "text": "'Every' + singular noun + singular verb: 'every room has.' 'All' + plural noun + plural verb: 'all rooms have.' 'Each' + singular: 'each room has.' Never *'every rooms' — 'every' is always followed by a singular noun. Compare: 'every guest is welcome' vs. 'all guests are welcome.'",
+          "depth": 2,
+          "name": "'Every' + singular noun + singular verb: 'every room has.' 'All' + plural noun + plural verb: 'all rooms have.' 'Each' + singular: 'each room has.' Never *'every rooms' — 'every' is always followed by a singular noun. Compare: 'every guest is welcome' vs. 'all guests are welcome.'"
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "554:1974",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how hospitality and accommodation vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how hospitality and accommodation vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "accommodate",
+          "depth": 2,
+          "name": "accommodate"
+        },
+        {
+          "text": "accommodation",
+          "depth": 2,
+          "name": "accommodation"
+        },
+        {
+          "text": "accommodate",
+          "depth": 2,
+          "name": "accommodate"
+        },
+        {
+          "text": "accommodating",
+          "depth": 2,
+          "name": "accommodating"
+        },
+        {
+          "text": "reserve",
+          "depth": 2,
+          "name": "reserve"
+        },
+        {
+          "text": "reservation",
+          "depth": 2,
+          "name": "reservation"
+        },
+        {
+          "text": "reserve",
+          "depth": 2,
+          "name": "reserve"
+        },
+        {
+          "text": "reserved",
+          "depth": 2,
+          "name": "reserved"
+        },
+        {
+          "text": "receive",
+          "depth": 2,
+          "name": "receive"
+        },
+        {
+          "text": "reception / receptionist",
+          "depth": 2,
+          "name": "reception / receptionist"
+        },
+        {
+          "text": "receive",
+          "depth": 2,
+          "name": "receive"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "comfort",
+          "depth": 2,
+          "name": "comfort"
+        },
+        {
+          "text": "comfort",
+          "depth": 2,
+          "name": "comfort"
+        },
+        {
+          "text": "comfort",
+          "depth": 2,
+          "name": "comfort"
+        },
+        {
+          "text": "comfortable / uncomfortable",
+          "depth": 2,
+          "name": "comfortable / uncomfortable"
+        },
+        {
+          "text": "luxuriate",
+          "depth": 2,
+          "name": "luxuriate"
+        },
+        {
+          "text": "luxury",
+          "depth": 2,
+          "name": "luxury"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "luxurious",
+          "depth": 2,
+          "name": "luxurious"
+        },
+        {
+          "text": "serve",
+          "depth": 2,
+          "name": "serve"
+        },
+        {
+          "text": "service / server / servant",
+          "depth": 2,
+          "name": "service / server / servant"
+        },
+        {
+          "text": "serve",
+          "depth": 2,
+          "name": "serve"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "clean",
+          "depth": 2,
+          "name": "clean"
+        },
+        {
+          "text": "cleanliness / cleaner / cleaning",
+          "depth": 2,
+          "name": "cleanliness / cleaner / cleaning"
+        },
+        {
+          "text": "clean",
+          "depth": 2,
+          "name": "clean"
+        },
+        {
+          "text": "clean",
+          "depth": 2,
+          "name": "clean"
+        },
+        {
+          "text": "occupy",
+          "depth": 2,
+          "name": "occupy"
+        },
+        {
+          "text": "occupancy / occupant",
+          "depth": 2,
+          "name": "occupancy / occupant"
+        },
+        {
+          "text": "occupy",
+          "depth": 2,
+          "name": "occupy"
+        },
+        {
+          "text": "occupied / unoccupied",
+          "depth": 2,
+          "name": "occupied / unoccupied"
+        },
+        {
+          "text": "furnish",
+          "depth": 2,
+          "name": "furnish"
+        },
+        {
+          "text": "furniture / furnishing",
+          "depth": 2,
+          "name": "furniture / furnishing"
+        },
+        {
+          "text": "furnish",
+          "depth": 2,
+          "name": "furnish"
+        },
+        {
+          "text": "furnished / unfurnished",
+          "depth": 2,
+          "name": "furnished / unfurnished"
+        },
+        {
+          "text": "compliment",
+          "depth": 2,
+          "name": "compliment"
+        },
+        {
+          "text": "compliment",
+          "depth": 2,
+          "name": "compliment"
+        },
+        {
+          "text": "compliment",
+          "depth": 2,
+          "name": "compliment"
+        },
+        {
+          "text": "complimentary",
+          "depth": 2,
+          "name": "complimentary"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "554:2034",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The __________ at the front desk greets arrivals and issues a key card.",
+          "depth": 1,
+          "name": "1. The __________ at the front desk greets arrivals and issues a key card."
+        },
+        {
+          "text": "2.  A __________ carries guests' luggage from the lobby to their room.",
+          "depth": 1,
+          "name": "2. A __________ carries guests' luggage from the lobby to their room."
+        },
+        {
+          "text": "3.  A __________ arranges restaurant reservations, tickets, and local transport for guests.",
+          "depth": 1,
+          "name": "3. A __________ arranges restaurant reservations, tickets, and local transport for guests."
+        },
+        {
+          "text": "4.  __________ service delivers meals directly to the guest's room at any hour.",
+          "depth": 1,
+          "name": "4. __________ service delivers meals directly to the guest's room at any hour."
+        },
+        {
+          "text": "5.  A wake up __________ replaces the alarm clock for guests who need to rise early.",
+          "depth": 1,
+          "name": "5. A wake up __________ replaces the alarm clock for guests who need to rise early."
+        },
+        {
+          "text": "6.  A __________ bar in the room offers drinks and snacks at a premium price.",
+          "depth": 1,
+          "name": "6. A __________ bar in the room offers drinks and snacks at a premium price."
+        },
+        {
+          "text": "7.  __________ cleans and restocks the room with fresh towels and toiletries daily.",
+          "depth": 1,
+          "name": "7. __________ cleans and restocks the room with fresh towels and toiletries daily."
+        },
+        {
+          "text": "8.  A __________ connects the hotel to the airport or city centre for guest transport.",
+          "depth": 1,
+          "name": "8. A __________ connects the hotel to the airport or city centre for guest transport."
+        },
+        {
+          "text": "9.  The __________ process involves reviewing charges, returning the key card, and settling the bill.",
+          "depth": 1,
+          "name": "9. The __________ process involves reviewing charges, returning the key card, and settling the bill."
+        },
+        {
+          "text": "10. A __________ parks the guest's car and retrieves it when needed.",
+          "depth": 1,
+          "name": "10. A __________ parks the guest's car and retrieves it when needed."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. receptionist  2. bellhop  3. concierge  4. Room  5. call  6. mini  7. Housekeeping  8. shuttle  9. checkout  10. valet",
+          "depth": 2,
+          "name": "1. receptionist 2. bellhop 3. concierge 4. Room 5. call 6. mini 7. Housekeeping 8. shuttle 9. checkout 10. valet"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "554:2052",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Hotel Star Ratings",
+          "depth": 2,
+          "name": "Hotel Star Ratings"
+        },
+        {
+          "text": "Stars indicate quality: 1★ = basic, 2★ = standard, 3★ = comfortable, 4★ = superior, 5★ = luxury. Rating systems vary by country. 'Boutique hotel' = a small, stylish, individually designed hotel (usually 4-5★). 'Budget hotel' = affordable, no-frills accommodation.",
+          "depth": 2,
+          "name": "Stars indicate quality: 1★ = basic, 2★ = standard, 3★ = comfortable, 4★ = superior, 5★ = luxury. Rating systems vary by country. 'Boutique hotel' = a small, stylish, individually designed hotel (usually 4-5★). 'Budget hotel' = affordable, no-frills accommodation."
+        },
+        {
+          "text": "Tipping at Hotels",
+          "depth": 2,
+          "name": "Tipping at Hotels"
+        },
+        {
+          "text": "UK: tipping is not required but appreciated (£1-2 for porters, £1/night for housekeeping). US: tipping is expected — $1-2/bag for bellhops, $2-5/night for housekeeping, left on the pillow or bedside table. Always in cash.",
+          "depth": 2,
+          "name": "UK: tipping is not required but appreciated (£1-2 for porters, £1/night for housekeeping). US: tipping is expected — $1-2/bag for bellhops, $2-5/night for housekeeping, left on the pillow or bedside table. Always in cash."
+        },
+        {
+          "text": "B&B, Hostel, and Airbnb",
+          "depth": 2,
+          "name": "B&B, Hostel, and Airbnb"
+        },
+        {
+          "text": "'B&B' (bed and breakfast) = a small, family-run guesthouse. 'Hostel' = budget accommodation with shared dormitory rooms (popular with young travellers). 'Airbnb' = a platform for renting private homes or rooms. 'Self-catering' = accommodation with a kitchen (you cook for yourself).",
+          "depth": 2,
+          "name": "'B&B' (bed and breakfast) = a small, family-run guesthouse. 'Hostel' = budget accommodation with shared dormitory rooms (popular with young travellers). 'Airbnb' = a platform for renting private homes or rooms. 'Self-catering' = accommodation with a kitchen (you cook for yourself)."
+        },
+        {
+          "text": "'Complimentary' vs 'Free'",
+          "depth": 2,
+          "name": "'Complimentary' vs 'Free'"
+        },
+        {
+          "text": "Hotels use 'complimentary' instead of 'free' — it sounds more elegant. 'Complimentary breakfast', 'complimentary Wi-Fi', 'complimentary toiletries'. Don't confuse with 'complementary' (= completing something, e.g. complementary colours). Different spelling, different meaning!",
+          "depth": 2,
+          "name": "Hotels use 'complimentary' instead of 'free' — it sounds more elegant. 'Complimentary breakfast', 'complimentary Wi-Fi', 'complimentary toiletries'. Don't confuse with 'complementary' (= completing something, e.g. complementary colours). Different spelling, different meaning!"
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "554:2068",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "reception",
+          "depth": 2,
+          "name": "reception"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ desk, ~ area, hotel ~",
+          "depth": 2,
+          "name": "~ desk, ~ area, hotel ~"
+        },
+        {
+          "text": "reservation",
+          "depth": 2,
+          "name": "reservation"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "make a ~, ~ number, ~ confirmed",
+          "depth": 2,
+          "name": "make a ~, ~ number, ~ confirmed"
+        },
+        {
+          "text": "suite",
+          "depth": 2,
+          "name": "suite"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ room, bridal ~, executive ~",
+          "depth": 2,
+          "name": "~ room, bridal ~, executive ~"
+        },
+        {
+          "text": "housekeeping",
+          "depth": 2,
+          "name": "housekeeping"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ service, ~ staff, ~ trolley",
+          "depth": 2,
+          "name": "~ service, ~ staff, ~ trolley"
+        },
+        {
+          "text": "concierge",
+          "depth": 2,
+          "name": "concierge"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ desk, hotel ~, ~ service",
+          "depth": 2,
+          "name": "~ desk, hotel ~, ~ service"
+        },
+        {
+          "text": "minibar",
+          "depth": 2,
+          "name": "minibar"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "~ fridge, ~ items, ~ charges",
+          "depth": 2,
+          "name": "~ fridge, ~ items, ~ charges"
+        },
+        {
+          "text": "checkout",
+          "depth": 2,
+          "name": "checkout"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ time, late ~, ~ desk",
+          "depth": 2,
+          "name": "~ time, late ~, ~ desk"
+        },
+        {
+          "text": "key card",
+          "depth": 2,
+          "name": "key card"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "room ~, ~ reader, ~ access",
+          "depth": 2,
+          "name": "room ~, ~ reader, ~ access"
+        },
+        {
+          "text": "lobby",
+          "depth": 2,
+          "name": "lobby"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "hotel ~, ~ area, ~ seating",
+          "depth": 2,
+          "name": "hotel ~, ~ area, ~ seating"
+        },
+        {
+          "text": "amenities",
+          "depth": 2,
+          "name": "amenities"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "hotel ~, room ~, ~ list",
+          "depth": 2,
+          "name": "hotel ~, room ~, ~ list"
+        }
+      ]
+    }
+  }
+}

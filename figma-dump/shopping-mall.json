@@ -1,0 +1,1566 @@
+{
+  "unitId": "shopping-mall",
+  "name": "The Shopping Mall",
+  "subtopics": [
+    {
+      "id": "stores",
+      "title": "Stores",
+      "wordIds": [
+        "clothing-store",
+        "shoe-store",
+        "electronics-store",
+        "bookstore",
+        "toy-store",
+        "jewelry-store",
+        "sports-store",
+        "pet-store",
+        "pharmacy",
+        "department-store"
+      ]
+    },
+    {
+      "id": "mall-features",
+      "title": "Mall Features",
+      "wordIds": [
+        "escalator",
+        "elevator",
+        "fountain",
+        "directory",
+        "bench",
+        "restroom",
+        "parking-garage",
+        "entrance",
+        "exit",
+        "security-office"
+      ]
+    },
+    {
+      "id": "food-court",
+      "title": "Food Court",
+      "wordIds": [
+        "food-court",
+        "tray",
+        "table",
+        "chair",
+        "trash-can",
+        "fast-food",
+        "drink-station",
+        "menu-board",
+        "line",
+        "high-chair"
+      ]
+    },
+    {
+      "id": "shopping",
+      "title": "Shopping",
+      "wordIds": [
+        "shopping-bag",
+        "wallet",
+        "credit-card",
+        "receipt",
+        "sale-sign",
+        "mannequin",
+        "fitting-room",
+        "hanger",
+        "size-tag",
+        "price-tag"
+      ]
+    },
+    {
+      "id": "entertainment",
+      "title": "Entertainment",
+      "wordIds": [
+        "cinema",
+        "arcade",
+        "bowling-alley",
+        "play-area",
+        "carousel",
+        "photo-booth",
+        "karaoke",
+        "trampoline-park",
+        "mini-golf",
+        "climbing-wall"
+      ]
+    },
+    {
+      "id": "people-services",
+      "title": "People & Services",
+      "wordIds": [
+        "shopper",
+        "security-guard",
+        "janitor",
+        "cashier",
+        "sales-clerk",
+        "information-desk",
+        "gift-wrapping",
+        "delivery-pickup",
+        "lost-and-found",
+        "stroller"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "clothing-store",
+      "label": "Clothing Store",
+      "ipa": "/ˈkloʊðɪŋ stɔːr/",
+      "cefr": "B2",
+      "imageNodeId": "119:1599"
+    },
+    {
+      "kind": "card",
+      "id": "shoe-store",
+      "label": "Shoe Store",
+      "ipa": "/ʃuː stɔːr/",
+      "cefr": "B2",
+      "imageNodeId": "119:1603"
+    },
+    {
+      "kind": "card",
+      "id": "electronics-store",
+      "label": "Electronics Store",
+      "ipa": "/ɪˌlɛkˈtrɒnɪks stɔːr/",
+      "cefr": "C1",
+      "imageNodeId": "119:1607"
+    },
+    {
+      "kind": "card",
+      "id": "bookstore",
+      "label": "Bookstore",
+      "ipa": "/ˈbʊkˌstɔːr/",
+      "cefr": "B1",
+      "imageNodeId": "119:1611"
+    },
+    {
+      "kind": "card",
+      "id": "toy-store",
+      "label": "Toy Store",
+      "ipa": "/tɔɪ stɔːr/",
+      "cefr": "B2",
+      "imageNodeId": "119:1615"
+    },
+    {
+      "kind": "card",
+      "id": "jewelry-store",
+      "label": "Jewelry Store",
+      "ipa": "/ˈdʒuːəlri stɔːr/",
+      "cefr": "B2",
+      "imageNodeId": "119:1619"
+    },
+    {
+      "kind": "card",
+      "id": "sports-store",
+      "label": "Sports Store",
+      "ipa": "/spɔːrts stɔːr/",
+      "cefr": "B2",
+      "imageNodeId": "119:1623"
+    },
+    {
+      "kind": "card",
+      "id": "pet-store",
+      "label": "Pet Store",
+      "ipa": "/pɛt stɔːr/",
+      "cefr": "B2",
+      "imageNodeId": "119:1627"
+    },
+    {
+      "kind": "card",
+      "id": "pharmacy",
+      "label": "Pharmacy",
+      "ipa": "/ˈfɑːrməsi/",
+      "cefr": "B1",
+      "imageNodeId": "119:1631"
+    },
+    {
+      "kind": "card",
+      "id": "department-store",
+      "label": "Department Store",
+      "ipa": "/dɪˈpɑːrtmənt stɔːr/",
+      "cefr": "C1",
+      "imageNodeId": "119:1635"
+    },
+    {
+      "kind": "card",
+      "id": "escalator",
+      "label": "Escalator",
+      "ipa": "/ˈɛskəˌleɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "119:1644"
+    },
+    {
+      "kind": "card",
+      "id": "elevator",
+      "label": "Elevator",
+      "ipa": "/ˈɛlɪˌveɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "119:1648"
+    },
+    {
+      "kind": "card",
+      "id": "fountain",
+      "label": "Fountain",
+      "ipa": "/ˈfaʊntɪn/",
+      "cefr": "B1",
+      "imageNodeId": "119:1652"
+    },
+    {
+      "kind": "card",
+      "id": "directory",
+      "label": "Directory",
+      "ipa": "/dɪˈrɛktəri/",
+      "cefr": "B1",
+      "imageNodeId": "119:1656"
+    },
+    {
+      "kind": "card",
+      "id": "bench",
+      "label": "Bench",
+      "ipa": "/bɛntʃ/",
+      "cefr": "B1",
+      "imageNodeId": "119:1660"
+    },
+    {
+      "kind": "card",
+      "id": "restroom",
+      "label": "Restroom",
+      "ipa": "/ˈrɛstruːm/",
+      "cefr": "B1",
+      "imageNodeId": "119:1664"
+    },
+    {
+      "kind": "card",
+      "id": "parking-garage",
+      "label": "Parking Garage",
+      "ipa": "/ˈpɑːrkɪŋ ɡəˈrɑːʒ/",
+      "cefr": "B2",
+      "imageNodeId": "119:1668"
+    },
+    {
+      "kind": "card",
+      "id": "entrance",
+      "label": "Entrance",
+      "ipa": "/ˈɛntrəns/",
+      "cefr": "B1",
+      "imageNodeId": "119:1672"
+    },
+    {
+      "kind": "card",
+      "id": "exit",
+      "label": "Exit",
+      "ipa": "/ˈɛɡzɪt/",
+      "cefr": "B1",
+      "imageNodeId": "119:1676"
+    },
+    {
+      "kind": "card",
+      "id": "security-office",
+      "label": "Security Office",
+      "ipa": "/sɪˈkjʊərɪti ˈɒfɪs/",
+      "cefr": "C1",
+      "imageNodeId": "119:1680"
+    },
+    {
+      "kind": "card",
+      "id": "food-court",
+      "label": "Food Court",
+      "ipa": "/fuːd kɔːrt/",
+      "cefr": "B2",
+      "imageNodeId": "119:1689"
+    },
+    {
+      "kind": "card",
+      "id": "tray",
+      "label": "Tray",
+      "ipa": "/treɪ/",
+      "cefr": "B1",
+      "imageNodeId": "119:1693"
+    },
+    {
+      "kind": "card",
+      "id": "table",
+      "label": "Table",
+      "ipa": "/ˈteɪbəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:1697"
+    },
+    {
+      "kind": "card",
+      "id": "chair",
+      "label": "Chair",
+      "ipa": "/tʃɛər/",
+      "cefr": "B1",
+      "imageNodeId": "119:1701"
+    },
+    {
+      "kind": "card",
+      "id": "trash-can",
+      "label": "Trash Can",
+      "ipa": "/træʃ kæn/",
+      "cefr": "B2",
+      "imageNodeId": "119:1705"
+    },
+    {
+      "kind": "card",
+      "id": "fast-food",
+      "label": "Fast Food",
+      "ipa": "/fæst fuːd/",
+      "cefr": "B2",
+      "imageNodeId": "119:1709"
+    },
+    {
+      "kind": "card",
+      "id": "drink-station",
+      "label": "Drink Station",
+      "ipa": "/drɪŋk ˈsteɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "119:1713"
+    },
+    {
+      "kind": "card",
+      "id": "menu-board",
+      "label": "Menu Board",
+      "ipa": "/ˈmɛnjuː bɔːrd/",
+      "cefr": "B2",
+      "imageNodeId": "119:1717"
+    },
+    {
+      "kind": "card",
+      "id": "line",
+      "label": "Line",
+      "ipa": "/laɪn/",
+      "cefr": "B1",
+      "imageNodeId": "119:1721"
+    },
+    {
+      "kind": "card",
+      "id": "high-chair",
+      "label": "High Chair",
+      "ipa": "/haɪ tʃɛər/",
+      "cefr": "B2",
+      "imageNodeId": "119:1725"
+    },
+    {
+      "kind": "card",
+      "id": "shopping-bag",
+      "label": "Shopping Bag",
+      "ipa": "/ˈʃɒpɪŋ bæɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:1734"
+    },
+    {
+      "kind": "card",
+      "id": "wallet",
+      "label": "Wallet",
+      "ipa": "/ˈwɒlɪt/",
+      "cefr": "B1",
+      "imageNodeId": "119:1738"
+    },
+    {
+      "kind": "card",
+      "id": "credit-card",
+      "label": "Credit Card",
+      "ipa": "/ˈkrɛdɪt kɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "119:1742"
+    },
+    {
+      "kind": "card",
+      "id": "receipt",
+      "label": "Receipt",
+      "ipa": "/rɪˈsiːt/",
+      "cefr": "B1",
+      "imageNodeId": "119:1746"
+    },
+    {
+      "kind": "card",
+      "id": "sale-sign",
+      "label": "Sale Sign",
+      "ipa": "/seɪl saɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:1750"
+    },
+    {
+      "kind": "card",
+      "id": "mannequin",
+      "label": "Mannequin",
+      "ipa": "/ˈmænɪkɪn/",
+      "cefr": "B1",
+      "imageNodeId": "119:1754"
+    },
+    {
+      "kind": "card",
+      "id": "fitting-room",
+      "label": "Fitting Room",
+      "ipa": "/ˈfɪtɪŋ ruːm/",
+      "cefr": "B2",
+      "imageNodeId": "119:1758"
+    },
+    {
+      "kind": "card",
+      "id": "hanger",
+      "label": "Hanger",
+      "ipa": "/ˈhæŋər/",
+      "cefr": "B1",
+      "imageNodeId": "119:1762"
+    },
+    {
+      "kind": "card",
+      "id": "size-tag",
+      "label": "Size Tag",
+      "ipa": "/saɪz tæɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:1766"
+    },
+    {
+      "kind": "card",
+      "id": "price-tag",
+      "label": "Price Tag",
+      "ipa": "/praɪs tæɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:1770"
+    },
+    {
+      "kind": "card",
+      "id": "cinema",
+      "label": "Cinema",
+      "ipa": "/ˈsɪnəmə/",
+      "cefr": "B1",
+      "imageNodeId": "119:1779"
+    },
+    {
+      "kind": "card",
+      "id": "arcade",
+      "label": "Arcade",
+      "ipa": "/ɑːrˈkeɪd/",
+      "cefr": "B1",
+      "imageNodeId": "119:1783"
+    },
+    {
+      "kind": "card",
+      "id": "bowling-alley",
+      "label": "Bowling Alley",
+      "ipa": "/ˈboʊlɪŋ ˈæli/",
+      "cefr": "B2",
+      "imageNodeId": "119:1787"
+    },
+    {
+      "kind": "card",
+      "id": "play-area",
+      "label": "Play Area",
+      "ipa": "/pleɪ ˈɛəriə/",
+      "cefr": "B2",
+      "imageNodeId": "119:1791"
+    },
+    {
+      "kind": "card",
+      "id": "carousel",
+      "label": "Carousel",
+      "ipa": "/ˌkærəˈsɛl/",
+      "cefr": "B1",
+      "imageNodeId": "119:1795"
+    },
+    {
+      "kind": "card",
+      "id": "photo-booth",
+      "label": "Photo Booth",
+      "ipa": "/ˈfoʊtoʊ buːθ/",
+      "cefr": "B2",
+      "imageNodeId": "119:1799"
+    },
+    {
+      "kind": "card",
+      "id": "karaoke",
+      "label": "Karaoke",
+      "ipa": "/ˌkæriˈoʊki/",
+      "cefr": "B1",
+      "imageNodeId": "119:1803"
+    },
+    {
+      "kind": "card",
+      "id": "trampoline-park",
+      "label": "Trampoline Park",
+      "ipa": "/ˈtræmpəˌliːn pɑːrk/",
+      "cefr": "C1",
+      "imageNodeId": "119:1807"
+    },
+    {
+      "kind": "card",
+      "id": "mini-golf",
+      "label": "Mini Golf",
+      "ipa": "/ˈmɪni ɡɒlf/",
+      "cefr": "B2",
+      "imageNodeId": "119:1811"
+    },
+    {
+      "kind": "card",
+      "id": "climbing-wall",
+      "label": "Climbing Wall",
+      "ipa": "/ˈklaɪmɪŋ wɔːl/",
+      "cefr": "B2",
+      "imageNodeId": "119:1815"
+    },
+    {
+      "kind": "card",
+      "id": "shopper",
+      "label": "Shopper",
+      "ipa": "/ˈʃɒpər/",
+      "cefr": "B1",
+      "imageNodeId": "119:1824"
+    },
+    {
+      "kind": "card",
+      "id": "security-guard",
+      "label": "Security Guard",
+      "ipa": "/sɪˈkjʊərɪti ɡɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "119:1828"
+    },
+    {
+      "kind": "card",
+      "id": "janitor",
+      "label": "Janitor",
+      "ipa": "/ˈdʒænɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "119:1832"
+    },
+    {
+      "kind": "card",
+      "id": "cashier",
+      "label": "Cashier",
+      "ipa": "/kæˈʃɪər/",
+      "cefr": "B1",
+      "imageNodeId": "119:1836"
+    },
+    {
+      "kind": "card",
+      "id": "sales-clerk",
+      "label": "Sales Clerk",
+      "ipa": "/seɪlz klɜːrk/",
+      "cefr": "B2",
+      "imageNodeId": "119:1840"
+    },
+    {
+      "kind": "card",
+      "id": "information-desk",
+      "label": "Information Desk",
+      "ipa": "/ˌɪnfərˈmeɪʃən dɛsk/",
+      "cefr": "C1",
+      "imageNodeId": "119:1844"
+    },
+    {
+      "kind": "card",
+      "id": "gift-wrapping",
+      "label": "Gift Wrapping",
+      "ipa": "/ɡɪft ˈræpɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:1848"
+    },
+    {
+      "kind": "card",
+      "id": "delivery-pickup",
+      "label": "Delivery Pickup",
+      "ipa": "/dɪˈlɪvəri ˈpɪkʌp/",
+      "cefr": "C1",
+      "imageNodeId": "119:1852"
+    },
+    {
+      "kind": "card",
+      "id": "lost-and-found",
+      "label": "Lost And Found",
+      "ipa": "/lɒst ənd faʊnd/",
+      "cefr": "C1",
+      "imageNodeId": "119:1856"
+    },
+    {
+      "kind": "card",
+      "id": "stroller",
+      "label": "Stroller",
+      "ipa": "/ˈstroʊlər/",
+      "cefr": "B1",
+      "imageNodeId": "119:1860"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "553:1598",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "553:1600",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2 · Topic: The Shopping Mall",
+          "depth": 1,
+          "name": "Level: B2 · Topic: The Shopping Mall"
+        },
+        {
+          "text": "Under One Roof — The Shopping Mall as Designed Experience\n\nA shopping mall is not simply a collection of shops. It is an engineered environment — a climate-controlled, carefully lit, strategically arranged space designed to keep visitors inside as long as possible. Every element, from the fountain in the central atrium to the directory by the entrance, serves a commercial purpose.\n\nThe structure is organised around anchor stores — large department stores positioned at opposite ends. The logic is circulation: a shopper walking from one anchor to the other must pass dozens of smaller retailers. A clothing store, a shoe store, an electronics store, a bookstore, a toy store, a jewelry store, a sports store, a pet store, and a pharmacy line the corridors. An escalator and an elevator connect floors. A bench provides rest. A directory — an illuminated map — helps visitors navigate. Restrooms are placed at regular intervals. The entrance and exit are often the same doors.\n\nThe food court occupies a central position, usually on an upper floor. It is designed for volume: rows of tables and chairs, a tray return area, a trash can at each exit, and a drink station with free refills. A line forms at each fast food counter. A menu board displays options. A high chair accommodates families. The noise, the smell, and the variety are calculated to interrupt shopping fatigue and encourage visitors to stay longer.\n\nRetail spaces are designed to encourage spending. A mannequin in the window displays the latest styles. Inside, a fitting room allows customers to try before they buy. Clothes hang on hangers, each with a size tag. A price tag and a sale sign communicate value. At the register, the cashier processes a credit card or cash, prints a receipt, and places the items in a shopping bag. A sales clerk assists on the floor. Gift wrapping is offered during holiday seasons.\n\nEntertainment extends the visit beyond shopping. A cinema shows current releases. An arcade provides games. A bowling alley, a play area, a carousel, a photo booth, a karaoke room, a trampoline park, mini golf, and a climbing wall transform the mall into a destination rather than an errand.\n\nOperations run continuously. A security guard patrols the corridors. A security office monitors cameras. A janitor maintains cleanliness. An information desk answers questions. A lost and found collects misplaced items. A delivery pickup point serves online orders. A stroller is available for families. A parking garage accommodates hundreds of vehicles.\n\nThe shopping mall is, in essence, a private street — roofed, temperature-controlled, and curated. Its success depends on a single metric: dwell time. The longer you stay, the more you spend. Every fountain, every bench, every escalator is placed with that equation in mind.",
+          "depth": 1,
+          "name": "Under One Roof — The Shopping Mall as Designed Experience A shopping mall is not simply a collection of shops. It is an engineered environment — a climate-controlled, carefully lit, strategically arranged space designed to keep visitors inside as long as possible. Every element, from the fountain in the central atrium to the directory by the entrance, serves a commercial purpose. The structure is organised around anchor stores — large department stores positioned at opposite ends. The logic is circulation: a shopper walking from one anchor to the other must pass dozens of smaller retailers. A clothing store, a shoe store, an electronics store, a bookstore, a toy store, a jewelry store, a sports store, a pet store, and a pharmacy line the corridors. An escalator and an elevator connect floors. A bench provides rest. A directory — an illuminated map — helps visitors navigate. Restrooms are placed at regular intervals. The entrance and exit are often the same doors. The food court occupies a central position, usually on an upper floor. It is designed for volume: rows of tables and chairs, a tray return area, a trash can at each exit, and a drink station with free refills. A line forms at each fast food counter. A menu board displays options. A high chair accommodates families. The noise, the smell, and the variety are calculated to interrupt shopping fatigue and encourage visitors to stay longer. Retail spaces are designed to encourage spending. A mannequin in the window displays the latest styles. Inside, a fitting room allows customers to try before they buy. Clothes hang on hangers, each with a size tag. A price tag and a sale sign communicate value. At the register, the cashier processes a credit card or cash, prints a receipt, and places the items in a shopping bag. A sales clerk assists on the floor. Gift wrapping is offered during holiday seasons. Entertainment extends the visit beyond shopping. A cinema shows current releases. An arcade provides games. A bowling alley, a play area, a carousel, a photo booth, a karaoke room, a trampoline park, mini golf, and a climbing wall transform the mall into a destination rather than an errand. Operations run continuously. A security guard patrols the corridors. A security office monitors cameras. A janitor maintains cleanliness. An information desk answers questions. A lost and found collects misplaced items. A delivery pickup point serves online orders. A stroller is available for families. A parking garage accommodates hundreds of vehicles. The shopping mall is, in essence, a private street — roofed, temperature-controlled, and curated. Its success depends on a single metric: dwell time. The longer you stay, the more you spend. Every fountain, every bench, every escalator is placed with that equation in mind."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What is the strategy behind placing anchor stores at opposite ends of the mall?",
+          "depth": 1,
+          "name": "1. What is the strategy behind placing anchor stores at opposite ends of the mall?"
+        },
+        {
+          "text": "2. How is the food court designed to reduce shopping fatigue and increase dwell time?",
+          "depth": 1,
+          "name": "2. How is the food court designed to reduce shopping fatigue and increase dwell time?"
+        },
+        {
+          "text": "3. Describe the retail experience from entering a clothing store to completing a purchase.",
+          "depth": 1,
+          "name": "3. Describe the retail experience from entering a clothing store to completing a purchase."
+        },
+        {
+          "text": "4. What entertainment options does the mall offer? Why are they important for the mall's business model?",
+          "depth": 1,
+          "name": "4. What entertainment options does the mall offer? Why are they important for the mall's business model?"
+        },
+        {
+          "text": "5. The passage calls the mall 'a private street.' What does this comparison mean?",
+          "depth": 1,
+          "name": "5. The passage calls the mall 'a private street.' What does this comparison mean?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "553:1613",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "window shopping",
+          "depth": 2,
+          "name": "window shopping"
+        },
+        {
+          "text": "looking at items in shop windows without buying anything",
+          "depth": 2,
+          "name": "looking at items in shop windows without buying anything"
+        },
+        {
+          "text": "\"I don't have money today — I'm just window shopping.\"",
+          "depth": 2,
+          "name": "\"I don't have money today — I'm just window shopping.\""
+        },
+        {
+          "text": "shop till you drop",
+          "depth": 2,
+          "name": "shop till you drop"
+        },
+        {
+          "text": "shop for a very long time until you're exhausted",
+          "depth": 2,
+          "name": "shop for a very long time until you're exhausted"
+        },
+        {
+          "text": "\"There's a huge sale — let's shop till we drop!\"",
+          "depth": 2,
+          "name": "\"There's a huge sale — let's shop till we drop!\""
+        },
+        {
+          "text": "pick up a bargain",
+          "depth": 2,
+          "name": "pick up a bargain"
+        },
+        {
+          "text": "find and buy something at a very good price",
+          "depth": 2,
+          "name": "find and buy something at a very good price"
+        },
+        {
+          "text": "\"I picked up a bargain — these shoes were 70% off!\"",
+          "depth": 2,
+          "name": "\"I picked up a bargain — these shoes were 70% off!\""
+        },
+        {
+          "text": "try on",
+          "depth": 2,
+          "name": "try on"
+        },
+        {
+          "text": "put on clothing to see if it fits and looks good",
+          "depth": 2,
+          "name": "put on clothing to see if it fits and looks good"
+        },
+        {
+          "text": "\"Can I try on this jacket in a medium?\"",
+          "depth": 2,
+          "name": "\"Can I try on this jacket in a medium?\""
+        },
+        {
+          "text": "splash out (on)",
+          "depth": 2,
+          "name": "splash out (on)"
+        },
+        {
+          "text": "spend a lot of money on something special",
+          "depth": 2,
+          "name": "spend a lot of money on something special"
+        },
+        {
+          "text": "\"I don't usually buy expensive things, but I splashed out on a new coat.\"",
+          "depth": 2,
+          "name": "\"I don't usually buy expensive things, but I splashed out on a new coat.\""
+        },
+        {
+          "text": "sell out",
+          "depth": 2,
+          "name": "sell out"
+        },
+        {
+          "text": "no longer available because all items have been sold",
+          "depth": 2,
+          "name": "no longer available because all items have been sold"
+        },
+        {
+          "text": "\"The trainers sold out in ten minutes — I was too late!\"",
+          "depth": 2,
+          "name": "\"The trainers sold out in ten minutes — I was too late!\""
+        },
+        {
+          "text": "be a rip-off",
+          "depth": 2,
+          "name": "be a rip-off"
+        },
+        {
+          "text": "be unreasonably expensive",
+          "depth": 2,
+          "name": "be unreasonably expensive"
+        },
+        {
+          "text": "\"£50 for a T-shirt? That's a total rip-off!\"",
+          "depth": 2,
+          "name": "\"£50 for a T-shirt? That's a total rip-off!\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "553:1645",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: Two friends meeting at the shopping mall",
+          "depth": 1,
+          "name": "Scene: Two friends meeting at the shopping mall"
+        },
+        {
+          "text": "Ahmed:",
+          "depth": 2,
+          "name": "Ahmed:"
+        },
+        {
+          "text": "Where shall we go first? I need new trainers.",
+          "depth": 2,
+          "name": "Where shall we go first? I need new trainers."
+        },
+        {
+          "text": "Khalid:",
+          "depth": 2,
+          "name": "Khalid:"
+        },
+        {
+          "text": "The sports shop is on the second floor. Let's take the escalator.",
+          "depth": 2,
+          "name": "The sports shop is on the second floor. Let's take the escalator."
+        },
+        {
+          "text": "Ahmed:",
+          "depth": 2,
+          "name": "Ahmed:"
+        },
+        {
+          "text": "These look nice. Excuse me, do you have these in a size 10?",
+          "depth": 2,
+          "name": "These look nice. Excuse me, do you have these in a size 10?"
+        },
+        {
+          "text": "Staff:",
+          "depth": 2,
+          "name": "Staff:"
+        },
+        {
+          "text": "Let me check the stockroom. One moment, please.",
+          "depth": 2,
+          "name": "Let me check the stockroom. One moment, please."
+        },
+        {
+          "text": "Ahmed:",
+          "depth": 2,
+          "name": "Ahmed:"
+        },
+        {
+          "text": "They fit perfectly. How much are they?",
+          "depth": 2,
+          "name": "They fit perfectly. How much are they?"
+        },
+        {
+          "text": "Staff:",
+          "depth": 2,
+          "name": "Staff:"
+        },
+        {
+          "text": "They're £89.99, but we have 20% off today with a loyalty card.",
+          "depth": 2,
+          "name": "They're £89.99, but we have 20% off today with a loyalty card."
+        },
+        {
+          "text": "Ahmed:",
+          "depth": 2,
+          "name": "Ahmed:"
+        },
+        {
+          "text": "I don't have a loyalty card. Can I sign up now?",
+          "depth": 2,
+          "name": "I don't have a loyalty card. Can I sign up now?"
+        },
+        {
+          "text": "Staff:",
+          "depth": 2,
+          "name": "Staff:"
+        },
+        {
+          "text": "Yes, it's free. I'll set one up at the till. That brings them down to £71.99.",
+          "depth": 2,
+          "name": "Yes, it's free. I'll set one up at the till. That brings them down to £71.99."
+        },
+        {
+          "text": "Khalid:",
+          "depth": 2,
+          "name": "Khalid:"
+        },
+        {
+          "text": "Nice! Shall we get lunch? The food court is on the top floor.",
+          "depth": 2,
+          "name": "Nice! Shall we get lunch? The food court is on the top floor."
+        },
+        {
+          "text": "Ahmed:",
+          "depth": 2,
+          "name": "Ahmed:"
+        },
+        {
+          "text": "Good idea. I fancy a burger. What about you?",
+          "depth": 2,
+          "name": "Good idea. I fancy a burger. What about you?"
+        },
+        {
+          "text": "Khalid:",
+          "depth": 2,
+          "name": "Khalid:"
+        },
+        {
+          "text": "I'll have something from the noodle place. Let's find a table first — it gets busy at lunchtime.",
+          "depth": 2,
+          "name": "I'll have something from the noodle place. Let's find a table first — it gets busy at lunchtime."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "553:1683",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I need to buy a new trouser and a shoe for the party.\"",
+          "depth": 2,
+          "name": "❌ \"I need to buy a new trouser and a shoe for the party.\""
+        },
+        {
+          "text": "✅ \"I need to buy new trousers and shoes for the party.\" / \"I need to buy a pair of trousers and a pair of shoes.\"",
+          "depth": 2,
+          "name": "✅ \"I need to buy new trousers and shoes for the party.\" / \"I need to buy a pair of trousers and a pair of shoes.\""
+        },
+        {
+          "text": "Some clothing items are always plural: trousers, jeans, shorts, shoes, socks, glasses, scissors. Never *'a trouser' or *'a shoe' (unless meaning one individual shoe). Use 'a pair of': 'a pair of trousers', 'a pair of shoes.' Two items: 'two pairs of trousers.' The verb is plural: 'These trousers are...' but 'This pair of trousers is...'",
+          "depth": 2,
+          "name": "Some clothing items are always plural: trousers, jeans, shorts, shoes, socks, glasses, scissors. Never *'a trouser' or *'a shoe' (unless meaning one individual shoe). Use 'a pair of': 'a pair of trousers', 'a pair of shoes.' Two items: 'two pairs of trousers.' The verb is plural: 'These trousers are...' but 'This pair of trousers is...'"
+        },
+        {
+          "text": "❌ \"The mall has been opened in 2005 and has attracted millions of visitors.\"",
+          "depth": 2,
+          "name": "❌ \"The mall has been opened in 2005 and has attracted millions of visitors.\""
+        },
+        {
+          "text": "✅ \"The mall was opened in 2005 and has attracted millions of visitors.\"",
+          "depth": 2,
+          "name": "✅ \"The mall was opened in 2005 and has attracted millions of visitors.\""
+        },
+        {
+          "text": "Specific past time ('in 2005') requires past simple: 'was opened.' Present perfect connects past to now without specifying when: 'has attracted millions.' The second clause works with present perfect because 'millions' spans past to present. Mixing tenses in one sentence is correct when each clause has its own time frame.",
+          "depth": 2,
+          "name": "Specific past time ('in 2005') requires past simple: 'was opened.' Present perfect connects past to now without specifying when: 'has attracted millions.' The second clause works with present perfect because 'millions' spans past to present. Mixing tenses in one sentence is correct when each clause has its own time frame."
+        },
+        {
+          "text": "❌ \"She asked the sales clerk where can she find the fitting room.\"",
+          "depth": 2,
+          "name": "❌ \"She asked the sales clerk where can she find the fitting room.\""
+        },
+        {
+          "text": "✅ \"She asked the sales clerk where she could find the fitting room.\"",
+          "depth": 2,
+          "name": "✅ \"She asked the sales clerk where she could find the fitting room.\""
+        },
+        {
+          "text": "Indirect questions use statement word order (no inversion) and backshift the tense: 'where she could find' (not *where can she find). Direct: 'Where can I find...?' Indirect: 'She asked where she could find...' Also: 'Could you tell me where the exit is?' (not *where is the exit).",
+          "depth": 2,
+          "name": "Indirect questions use statement word order (no inversion) and backshift the tense: 'where she could find' (not *where can she find). Direct: 'Where can I find...?' Indirect: 'She asked where she could find...' Also: 'Could you tell me where the exit is?' (not *where is the exit)."
+        },
+        {
+          "text": "❌ \"I've been shopping here since two hours and I still haven't found anything.\"",
+          "depth": 2,
+          "name": "❌ \"I've been shopping here since two hours and I still haven't found anything.\""
+        },
+        {
+          "text": "✅ \"I've been shopping here for two hours and I still haven't found anything.\"",
+          "depth": 2,
+          "name": "✅ \"I've been shopping here for two hours and I still haven't found anything.\""
+        },
+        {
+          "text": "'For' + duration: 'for two hours', 'for the whole afternoon.' 'Since' + point in time: 'since noon', 'since the mall opened', 'since 10 a.m.' Present perfect continuous + for/since emphasises ongoing activity. Never *'since two hours' — that's a duration, not a point in time.",
+          "depth": 2,
+          "name": "'For' + duration: 'for two hours', 'for the whole afternoon.' 'Since' + point in time: 'since noon', 'since the mall opened', 'since 10 a.m.' Present perfect continuous + for/since emphasises ongoing activity. Never *'since two hours' — that's a duration, not a point in time."
+        },
+        {
+          "text": "❌ \"There are much people in the mall today because of the holiday sale.\"",
+          "depth": 2,
+          "name": "❌ \"There are much people in the mall today because of the holiday sale.\""
+        },
+        {
+          "text": "✅ \"There are many people in the mall today because of the holiday sale.\"",
+          "depth": 2,
+          "name": "✅ \"There are many people in the mall today because of the holiday sale.\""
+        },
+        {
+          "text": "'Many' + countable plural: 'many people', 'many shops', 'many sale signs.' 'Much' + uncountable: 'much traffic', 'much noise', 'much space.' In positive statements, 'a lot of' works with both: 'a lot of people', 'a lot of noise.' 'Much' is more common in negative/question forms: 'There isn't much time.' 'Is there much traffic?'",
+          "depth": 2,
+          "name": "'Many' + countable plural: 'many people', 'many shops', 'many sale signs.' 'Much' + uncountable: 'much traffic', 'much noise', 'much space.' In positive statements, 'a lot of' works with both: 'a lot of people', 'a lot of noise.' 'Much' is more common in negative/question forms: 'There isn't much time.' 'Is there much traffic?'"
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "553:1707",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how shopping and retail vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how shopping and retail vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "shop",
+          "depth": 2,
+          "name": "shop"
+        },
+        {
+          "text": "shop / shopper / shopping",
+          "depth": 2,
+          "name": "shop / shopper / shopping"
+        },
+        {
+          "text": "shop",
+          "depth": 2,
+          "name": "shop"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "retail",
+          "depth": 2,
+          "name": "retail"
+        },
+        {
+          "text": "retail / retailer",
+          "depth": 2,
+          "name": "retail / retailer"
+        },
+        {
+          "text": "retail",
+          "depth": 2,
+          "name": "retail"
+        },
+        {
+          "text": "retail",
+          "depth": 2,
+          "name": "retail"
+        },
+        {
+          "text": "escalate",
+          "depth": 2,
+          "name": "escalate"
+        },
+        {
+          "text": "escalator / escalation",
+          "depth": 2,
+          "name": "escalator / escalation"
+        },
+        {
+          "text": "escalate",
+          "depth": 2,
+          "name": "escalate"
+        },
+        {
+          "text": "escalating",
+          "depth": 2,
+          "name": "escalating"
+        },
+        {
+          "text": "promote",
+          "depth": 2,
+          "name": "promote"
+        },
+        {
+          "text": "promotion / promoter",
+          "depth": 2,
+          "name": "promotion / promoter"
+        },
+        {
+          "text": "promote",
+          "depth": 2,
+          "name": "promote"
+        },
+        {
+          "text": "promotional",
+          "depth": 2,
+          "name": "promotional"
+        },
+        {
+          "text": "display",
+          "depth": 2,
+          "name": "display"
+        },
+        {
+          "text": "display",
+          "depth": 2,
+          "name": "display"
+        },
+        {
+          "text": "display",
+          "depth": 2,
+          "name": "display"
+        },
+        {
+          "text": "displayed",
+          "depth": 2,
+          "name": "displayed"
+        },
+        {
+          "text": "afford",
+          "depth": 2,
+          "name": "afford"
+        },
+        {
+          "text": "affordability",
+          "depth": 2,
+          "name": "affordability"
+        },
+        {
+          "text": "afford",
+          "depth": 2,
+          "name": "afford"
+        },
+        {
+          "text": "affordable / unaffordable",
+          "depth": 2,
+          "name": "affordable / unaffordable"
+        },
+        {
+          "text": "exchange",
+          "depth": 2,
+          "name": "exchange"
+        },
+        {
+          "text": "exchange",
+          "depth": 2,
+          "name": "exchange"
+        },
+        {
+          "text": "exchange",
+          "depth": 2,
+          "name": "exchange"
+        },
+        {
+          "text": "exchangeable",
+          "depth": 2,
+          "name": "exchangeable"
+        },
+        {
+          "text": "brand",
+          "depth": 2,
+          "name": "brand"
+        },
+        {
+          "text": "brand / branding",
+          "depth": 2,
+          "name": "brand / branding"
+        },
+        {
+          "text": "brand",
+          "depth": 2,
+          "name": "brand"
+        },
+        {
+          "text": "branded",
+          "depth": 2,
+          "name": "branded"
+        },
+        {
+          "text": "consume",
+          "depth": 2,
+          "name": "consume"
+        },
+        {
+          "text": "consumer / consumption",
+          "depth": 2,
+          "name": "consumer / consumption"
+        },
+        {
+          "text": "consume",
+          "depth": 2,
+          "name": "consume"
+        },
+        {
+          "text": "consumable",
+          "depth": 2,
+          "name": "consumable"
+        },
+        {
+          "text": "advertise",
+          "depth": 2,
+          "name": "advertise"
+        },
+        {
+          "text": "advertisement / advertising",
+          "depth": 2,
+          "name": "advertisement / advertising"
+        },
+        {
+          "text": "advertise",
+          "depth": 2,
+          "name": "advertise"
+        },
+        {
+          "text": "advertised",
+          "depth": 2,
+          "name": "advertised"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "553:1767",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  An __________ and an elevator connect the different floors of the mall.",
+          "depth": 1,
+          "name": "1. An __________ and an elevator connect the different floors of the mall."
+        },
+        {
+          "text": "2.  A __________ — an illuminated map near the entrance — helps visitors find specific shops.",
+          "depth": 1,
+          "name": "2. A __________ — an illuminated map near the entrance — helps visitors find specific shops."
+        },
+        {
+          "text": "3.  A __________ in the shop window displays the latest clothing styles on a human-shaped figure.",
+          "depth": 1,
+          "name": "3. A __________ in the shop window displays the latest clothing styles on a human-shaped figure."
+        },
+        {
+          "text": "4.  Customers try on clothes in the __________ room before deciding to buy.",
+          "depth": 1,
+          "name": "4. Customers try on clothes in the __________ room before deciding to buy."
+        },
+        {
+          "text": "5.  Each item of clothing has a __________ tag showing whether it is small, medium, or large.",
+          "depth": 1,
+          "name": "5. Each item of clothing has a __________ tag showing whether it is small, medium, or large."
+        },
+        {
+          "text": "6.  A __________ guard patrols the corridors and monitors cameras from the security office.",
+          "depth": 1,
+          "name": "6. A __________ guard patrols the corridors and monitors cameras from the security office."
+        },
+        {
+          "text": "7.  The __________ court on the upper floor has rows of tables, fast food counters, and a drink station.",
+          "depth": 1,
+          "name": "7. The __________ court on the upper floor has rows of tables, fast food counters, and a drink station."
+        },
+        {
+          "text": "8.  A __________ is available for families with small children who need to be pushed around the mall.",
+          "depth": 1,
+          "name": "8. A __________ is available for families with small children who need to be pushed around the mall."
+        },
+        {
+          "text": "9.  __________ wrapping is offered at certain stores during holiday seasons.",
+          "depth": 1,
+          "name": "9. __________ wrapping is offered at certain stores during holiday seasons."
+        },
+        {
+          "text": "10. A lost and __________ collects misplaced items that shoppers have left behind.",
+          "depth": 1,
+          "name": "10. A lost and __________ collects misplaced items that shoppers have left behind."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. escalator  2. directory  3. mannequin  4. fitting  5. size  6. security  7. food  8. stroller  9. Gift  10. found",
+          "depth": 2,
+          "name": "1. escalator 2. directory 3. mannequin 4. fitting 5. size 6. security 7. food 8. stroller 9. Gift 10. found"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "553:1785",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Shopping Centre vs Mall",
+          "depth": 2,
+          "name": "Shopping Centre vs Mall"
+        },
+        {
+          "text": "'Shopping centre' (BrE) = 'shopping mall' or just 'mall' (AmE). Both terms are understood worldwide. 'High street' (BrE) = 'main street' (AmE) = the main shopping street in a town. 'Retail park' (BrE) = 'strip mall' (AmE) = a group of shops in a row with a car park.",
+          "depth": 2,
+          "name": "'Shopping centre' (BrE) = 'shopping mall' or just 'mall' (AmE). Both terms are understood worldwide. 'High street' (BrE) = 'main street' (AmE) = the main shopping street in a town. 'Retail park' (BrE) = 'strip mall' (AmE) = a group of shops in a row with a car park."
+        },
+        {
+          "text": "Floor Numbering",
+          "depth": 2,
+          "name": "Floor Numbering"
+        },
+        {
+          "text": "UK: Ground floor, First floor, Second floor. US: First floor, Second floor, Third floor. The UK 'ground floor' = US 'first floor'. This difference causes confusion in lifts/elevators!",
+          "depth": 2,
+          "name": "UK: Ground floor, First floor, Second floor. US: First floor, Second floor, Third floor. The UK 'ground floor' = US 'first floor'. This difference causes confusion in lifts/elevators!"
+        },
+        {
+          "text": "Sales Events",
+          "depth": 2,
+          "name": "Sales Events"
+        },
+        {
+          "text": "'Black Friday' (late November) — massive sales, originally American, now global. 'Boxing Day' (26 December) — traditional British sales day. 'January sales' (BrE) — post-Christmas clearance. 'End-of-season sale' — when shops clear old stock to make room for new collections.",
+          "depth": 2,
+          "name": "'Black Friday' (late November) — massive sales, originally American, now global. 'Boxing Day' (26 December) — traditional British sales day. 'January sales' (BrE) — post-Christmas clearance. 'End-of-season sale' — when shops clear old stock to make room for new collections."
+        },
+        {
+          "text": "Returns and Exchanges",
+          "depth": 2,
+          "name": "Returns and Exchanges"
+        },
+        {
+          "text": "'Receipt' = proof of purchase (keep it!). 'Refund' = getting your money back. 'Exchange' = swapping for a different size/colour. 'Store credit' = a voucher to spend in the same shop. UK consumer law gives strong return rights — even without a receipt for faulty goods.",
+          "depth": 2,
+          "name": "'Receipt' = proof of purchase (keep it!). 'Refund' = getting your money back. 'Exchange' = swapping for a different size/colour. 'Store credit' = a voucher to spend in the same shop. UK consumer law gives strong return rights — even without a receipt for faulty goods."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "553:1801",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "mall",
+          "depth": 2,
+          "name": "mall"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "shopping ~, ~ entrance, ~ directory",
+          "depth": 2,
+          "name": "shopping ~, ~ entrance, ~ directory"
+        },
+        {
+          "text": "escalator",
+          "depth": 2,
+          "name": "escalator"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ step, ride the ~, broken ~",
+          "depth": 2,
+          "name": "~ step, ride the ~, broken ~"
+        },
+        {
+          "text": "food court",
+          "depth": 2,
+          "name": "food court"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ seating, ~ restaurant, ~ area",
+          "depth": 2,
+          "name": "~ seating, ~ restaurant, ~ area"
+        },
+        {
+          "text": "bargain",
+          "depth": 2,
+          "name": "bargain"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ price, pick up a ~, ~ hunter",
+          "depth": 2,
+          "name": "~ price, pick up a ~, ~ hunter"
+        },
+        {
+          "text": "checkout",
+          "depth": 2,
+          "name": "checkout"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ counter, self-~, ~ queue",
+          "depth": 2,
+          "name": "~ counter, self-~, ~ queue"
+        },
+        {
+          "text": "receipt",
+          "depth": 2,
+          "name": "receipt"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "keep the ~, ~ printer, ~ total",
+          "depth": 2,
+          "name": "keep the ~, ~ printer, ~ total"
+        },
+        {
+          "text": "boutique",
+          "depth": 2,
+          "name": "boutique"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "fashion ~, ~ shop, designer ~",
+          "depth": 2,
+          "name": "fashion ~, ~ shop, designer ~"
+        },
+        {
+          "text": "brand",
+          "depth": 2,
+          "name": "brand"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ name, luxury ~, own ~",
+          "depth": 2,
+          "name": "~ name, luxury ~, own ~"
+        },
+        {
+          "text": "directory",
+          "depth": 2,
+          "name": "directory"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "store ~, mall ~, ~ map",
+          "depth": 2,
+          "name": "store ~, mall ~, ~ map"
+        },
+        {
+          "text": "loyalty card",
+          "depth": 2,
+          "name": "loyalty card"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ points, ~ discount, ~ scheme",
+          "depth": 2,
+          "name": "~ points, ~ discount, ~ scheme"
+        }
+      ]
+    }
+  }
+}
