@@ -25,8 +25,12 @@
 
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync, readFileSync } from "node:fs";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+
+const execFileAsync = promisify(execFile);
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DUMP_DIR = join(ROOT, "figma-dump");
@@ -50,7 +54,7 @@ const textsOf = (block) => (block?.lines ?? []).map((l) => l.text.trim()).filter
 
 /* --------------------------------------------------------------- parsers */
 
-function parsePassage(block, unitId, vocabulary) {
+function parsePassage(block, unitId) {
   const lines = textsOf(block);
   if (lines.length < 3) return undefined;
 
@@ -94,80 +98,6 @@ function parsePassage(block, unitId, vocabulary) {
     questions: [],
     ...(rawQuestions.length ? { openQuestions: rawQuestions } : {}),
   };
-}
-
-/**
- * Whether a question is honestly answerable by naming one vocabulary item.
- *
- * Two disqualifiers, both learned from the generated output. If the answer
- * already appears in the question, the question answers itself. If the
- * question asks for several things, or for a reason or a method, no single
- * item answers it.
- */
-function isSingleItemQuestion(question, answer) {
-  const q = question.toLowerCase();
-  if (q.includes(answer.toLowerCase())) return false;
-  if (/^(name|list|describe|explain|how|why|what happens)\b/.test(q)) return false;
-  if (/\b(three|two|several|some|ways|reasons|purpose)\b/.test(q)) return false;
-  return true;
-}
-
-/**
- * Best-effort answer for an open question: the unit word that appears in the
- * passage sentence most similar to the question. Imperfect by nature — the
- * generated explanation says only that the passage supports it, and the
- * report flags units whose questions could not be resolved confidently.
- */
-function answerFromPassage(question, passage, vocabulary) {
-  const qWords = new Set(
-    question.toLowerCase().replace(/[^a-z\s]/g, " ").split(/\s+/).filter((w) => w.length > 3)
-  );
-  let best = null;
-  let bestScore = -1;
-  for (const sentence of passage.split(/(?<=[.!?])\s+/)) {
-    const lower = sentence.toLowerCase();
-    const overlap = [...qWords].filter((w) => lower.includes(w)).length;
-    for (const word of vocabulary) {
-      if (!lower.includes(word.toLowerCase())) continue;
-      const score = overlap * 10 + word.length;
-      if (score > bestScore) {
-        bestScore = score;
-        best = word;
-      }
-    }
-  }
-  return best ?? vocabulary[0] ?? "";
-}
-
-/** Deterministic pseudo-random so regenerating produces an identical file. */
-function seeded(seed) {
-  let h = 2166136261;
-  for (let i = 0; i < seed.length; i++) {
-    h ^= seed.charCodeAt(i);
-    h = Math.imul(h, 16777619);
-  }
-  return () => {
-    h += 0x6d2b79f5;
-    let t = h;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
-
-function shuffleStable(items, seed) {
-  const rand = seeded(seed);
-  const out = [...items];
-  for (let i = out.length - 1; i > 0; i--) {
-    const j = Math.floor(rand() * (i + 1));
-    [out[i], out[j]] = [out[j], out[i]];
-  }
-  return out;
-}
-
-function pickDistractors(vocabulary, answer, count, seed) {
-  const pool = vocabulary.filter((w) => w.toLowerCase() !== answer.toLowerCase());
-  return shuffleStable(pool, seed).slice(0, count);
 }
 
 /**
@@ -526,7 +456,6 @@ for (const file of files) {
     continue;
   }
 
-  const vocabulary = unit.cards.map((c) => c.label).filter(Boolean);
   const blocks = unit.materials;
 
   const materials = {
@@ -536,7 +465,7 @@ for (const file of files) {
     // `audit-figma-vs-app.mjs` reports the duplicates so they can be fixed at
     // source rather than silently absorbed here forever.
     subtopics: dedupeSubtopics(unit.subtopics ?? []),
-    passage: parsePassage(blocks["reading-passage"], unitId, vocabulary),
+    passage: parsePassage(blocks["reading-passage"], unitId),
     phrases: parsePhrases(blocks["idioms-phrases"], unitId),
     dialogue: parseDialogue(blocks["mini-dialogue"]),
     mistakes: parseMistakes(blocks["common-mistakes"], unitId),
@@ -568,6 +497,24 @@ for (const file of files) {
 if (!CHECK) {
   const registered = [...generated.map((g) => g.unitId), ...handAuthored].sort();
   await writeFile(REGISTRY, renderRegistry(registered));
+}
+
+// Format what was written, so regenerating is idempotent.
+//
+// Without this the commit hook formats the files and the next run produces a
+// diff on every one of them — 84 files of pure indentation noise that hides
+// whether the content actually changed. A generated pipeline is only useful
+// if "regenerate and see no diff" means "nothing drifted".
+if (!CHECK && generated.length) {
+  const targets = generated.map((g) => join(OUT_DIR, `${g.unitId}.ts`));
+  try {
+    await execFileAsync("npx", ["prettier", "--write", "--log-level", "warn", REGISTRY, ...targets], {
+      cwd: ROOT,
+      maxBuffer: 32 * 1024 * 1024,
+    });
+  } catch (err) {
+    console.warn(`Could not format generated files: ${err.message}`);
+  }
 }
 
 console.log(
