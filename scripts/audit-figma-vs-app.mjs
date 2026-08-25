@@ -20,6 +20,7 @@ import { readdir, readFile, writeFile } from "node:fs/promises";
 import { closeSync, openSync, readSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { HEADER_BYTES, isRealArtwork } from "./lib/image-format.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DUMP_DIR = join(ROOT, "figma-dump");
@@ -38,19 +39,16 @@ const canonicalKey = (value) =>
     .replace(/\band\b/g, "")
     .replace(/[^a-z0-9]/g, "");
 
-/** Real artwork is a RIFF/WEBP container; anything else is a placeholder. */
+/** Real artwork is a recognised image container; anything else is a placeholder. */
 function isPlaceholder(imgPath) {
   const absolute = join(ROOT, "public", imgPath.replace(/^\.?\//, ""));
   let fd;
   try {
     if (statSync(absolute).size < 12) return true;
     fd = openSync(absolute, "r");
-    const header = Buffer.alloc(12);
-    readSync(fd, header, 0, 12, 0);
-    return !(
-      header.subarray(0, 4).toString("ascii") === "RIFF" &&
-      header.subarray(8, 12).toString("ascii") === "WEBP"
-    );
+    const header = Buffer.alloc(HEADER_BYTES);
+    const bytesRead = readSync(fd, header, 0, HEADER_BYTES, 0);
+    return !isRealArtwork(header.subarray(0, bytesRead));
   } catch {
     return true;
   } finally {

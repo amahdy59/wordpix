@@ -17,18 +17,20 @@
  *   --dry-run       report what would happen, write nothing
  *   --concurrency N parallel downloads (default 6)
  *   --include-new   also fetch units Figma has that the app does not
- *   --max-width N   downscale card artwork wider than this (default 480)
- *   --scene-width N downscale scene artwork wider than this (default 1600)
+ *   --max-width N   downscale card artwork wider than this (default 1024)
+ *   --scene-width N downscale scene artwork wider than this (default 1920)
+ *   --quality N     AVIF quality (default 55)
  *
  * Images are skipped when a real file is already present, so an interrupted
- * run resumes cheaply. "Real" means larger than PLACEHOLDER_MAX_BYTES — the
- * repo is currently full of ~1.4 KB generated placeholder tiles that a plain
- * existence check would happily treat as done.
+ * run resumes cheaply. "Real" is decided by the file's magic bytes rather than
+ * its size or its existence: the repo was once full of SVG placeholders saved
+ * under an image extension, which both weaker checks happily treated as done.
  */
 
 import { mkdir, open, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { HEADER_BYTES, isRealArtwork } from "./lib/image-format.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const FILE_KEY = process.env.FIGMA_FILE_KEY ?? "gRlyhrMavAHXUAT5brWFWu";
@@ -36,11 +38,20 @@ const TOKEN = process.env.FIGMA_TOKEN;
 const API = "https://api.figma.com/v1";
 
 /**
- * Figma's export API renders to png, jpg, svg or pdf — there is no webp
- * option. Artwork is fetched as png and converted locally, so the filenames
- * the vocabulary data already points at keep working.
+ * Figma's export API renders to png, jpg, svg or pdf only. Artwork is fetched
+ * as png and converted locally.
  */
 const FIGMA_EXPORT_FORMAT = "png";
+/**
+ * Figma renders at this multiple of the frame's design size.
+ *
+ * At scale 2 a card came back around 856 px wide, so asking sharp for 1024
+ * would have upscaled it — sharpening nothing and inventing pixels. 3 puts the
+ * source comfortably above the target so the resize is always a downsample.
+ */
+const FIGMA_EXPORT_SCALE = 3;
+/** Artwork is written in this format. Figma cannot export it, so sharp converts. */
+const IMAGE_EXT = "avif";
 
 /**
  * A frame is a content unit only if it holds this many cards.
@@ -66,14 +77,31 @@ const OPTS = {
   includeNew: has("--include-new"),
   debugPairing: has("--debug-pairing"),
   concurrency: Number(valuesOf("--concurrency")[0] ?? 6),
-  // Cards render at 214x128 CSS, so 480 covers a 2x display with room to
-  // spare. Measured on real artwork: 480 averages ~33 KB per card against
-  // ~136 KB at the 1024 the earlier imports used, which is the difference
-  // between roughly 0.36 GB and 1.5 GB across all 10,848 images.
-  maxWidth: Number(valuesOf("--max-width")[0] ?? 480),
+  /**
+   * The 480 this used to be was measured against the wrong element.
+   *
+   * It was sized for the 214x128 option tile, but the same file is also the
+   * hero of every Context Fill and Quick Quiz question, where it fills a
+   * 672 CSS px card — 1344 device pixels on a retina screen. Feeding 480 px
+   * into that is a 2.8x upscale, and it looked exactly as soft as that
+   * sounds.
+   *
+   * 1024 covers the card at 2x with a little room. It is affordable only
+   * because the format changed with it: at AVIF q55 a card averages ~31 KB,
+   * against ~67 KB for the same pixels as webp q88 — so full retina detail
+   * costs ~0.5 GB across all 10,848 images where webp would have cost 1.1 GB
+   * and blown through the 1 GB GitHub Pages limit.
+   */
+  maxWidth: Number(valuesOf("--max-width")[0] ?? 1024),
   // Scene illustrations are the full-width hero of a unit (912x400 in the
   // design), so they need a much higher cap than the cards.
-  sceneWidth: Number(valuesOf("--scene-width")[0] ?? 1600),
+  sceneWidth: Number(valuesOf("--scene-width")[0] ?? 1920),
+  /**
+   * AVIF quality. 55 is not comparable to a JPEG or webp 55 — AVIF's scale
+   * runs lower for the same perceptual result, and 55 here sits between
+   * webp 82 and webp 88 by eye while costing half the bytes.
+   */
+  quality: Number(valuesOf("--quality")[0] ?? 55),
 };
 
 if (!OPTS.images && !OPTS.content) {
@@ -256,21 +284,14 @@ async function isPlaceholder(path) {
   let handle;
   try {
     handle = await open(path, "r");
-    const { buffer, bytesRead } = await handle.read(Buffer.alloc(12), 0, 12, 0);
+    const { buffer, bytesRead } = await handle.read(Buffer.alloc(HEADER_BYTES), 0, HEADER_BYTES, 0);
     if (bytesRead < 12) return true;
-    return !isRealWebp(buffer);
+    return !isRealArtwork(buffer.subarray(0, bytesRead));
   } catch {
     return true; // missing counts as "needs downloading"
   } finally {
     await handle?.close();
   }
-}
-
-function isRealWebp(buffer) {
-  return (
-    buffer.subarray(0, 4).toString("ascii") === "RIFF" &&
-    buffer.subarray(8, 12).toString("ascii") === "WEBP"
-  );
 }
 
 /**
@@ -291,11 +312,13 @@ async function loadSharp() {
   return sharpModule;
 }
 
-async function toWebp(pngBuffer, maxWidth) {
+async function toAvif(pngBuffer, maxWidth) {
   const sharp = await loadSharp();
   return sharp(pngBuffer)
     .resize({ width: maxWidth, withoutEnlargement: true })
-    .webp({ quality: 82 })
+    // effort 4 is sharp's default. Higher squeezes out a few more percent but
+    // costs seconds per image, and this encodes ten thousand of them.
+    .avif({ quality: OPTS.quality, effort: 4 })
     .toBuffer();
 }
 
@@ -303,7 +326,7 @@ async function downloadImages(unit, cards) {
   const targets = [];
   for (const card of cards) {
     if (card.kind !== "card" || !card.imageNodeId) continue;
-    const dest = join(ROOT, "public", "word-images", unit.id, `${card.id}.webp`);
+    const dest = join(ROOT, "public", "word-images", unit.id, `${card.id}.${IMAGE_EXT}`);
     if (!OPTS.force && !(await isPlaceholder(dest))) continue;
     targets.push({
       nodeId: card.imageNodeId,
@@ -315,7 +338,7 @@ async function downloadImages(unit, cards) {
 
   const sceneNode = [...walk(unit.unitNode)].find(({ node }) => node.name === "asset")?.node;
   if (sceneNode) {
-    const dest = join(ROOT, "public", "scene-images", `${unit.id}-hero.webp`);
+    const dest = join(ROOT, "public", "scene-images", `${unit.id}-hero.${IMAGE_EXT}`);
     if (OPTS.force || (await isPlaceholder(dest))) {
       targets.push({
         nodeId: sceneNode.id,
@@ -341,7 +364,7 @@ async function downloadImages(unit, cards) {
     const batch = targets.slice(i, i + 40);
     const ids = batch.map((t) => t.nodeId).join(",");
     const { images, err } = await api(
-      `/images/${FILE_KEY}?ids=${encodeURIComponent(ids)}&format=${FIGMA_EXPORT_FORMAT}&scale=2`
+      `/images/${FILE_KEY}?ids=${encodeURIComponent(ids)}&format=${FIGMA_EXPORT_FORMAT}&scale=${FIGMA_EXPORT_SCALE}`
     );
     if (err) throw new Error(`image render failed: ${err}`);
     Object.assign(urls, images);
@@ -363,14 +386,14 @@ async function downloadImages(unit, cards) {
       return;
     }
     const rendered = Buffer.from(await res.arrayBuffer());
-    const webp = await toWebp(rendered, t.maxWidth);
-    if (!isRealWebp(webp)) {
-      console.warn(`  ! ${t.label} did not convert to webp, not written`);
+    const encoded = await toAvif(rendered, t.maxWidth);
+    if (!isRealArtwork(encoded.subarray(0, HEADER_BYTES))) {
+      console.warn(`  ! ${t.label} did not convert to ${IMAGE_EXT}, not written`);
       skipped++;
       return;
     }
     await mkdir(dirname(t.dest), { recursive: true });
-    await writeFile(t.dest, webp);
+    await writeFile(t.dest, encoded);
     downloaded++;
   });
 

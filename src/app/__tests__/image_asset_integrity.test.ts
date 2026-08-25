@@ -2,6 +2,10 @@ import { describe, expect, it } from "vitest";
 import { closeSync, openSync, readSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { COURSE_UNITS } from "../data/lessons";
+// The same detector the sync script and the audit use, so the three can never
+// disagree about what counts as a real image.
+// @ts-expect-error -- plain .mjs helper shared with the build scripts
+import { HEADER_BYTES, isRealArtwork } from "../../../scripts/lib/image-format.mjs";
 
 /**
  * Guards against the failure this suite could not previously see.
@@ -12,9 +16,9 @@ import { COURSE_UNITS } from "../data/lessons";
  * about whether there is an image behind it.
  *
  * File size was the second wrong answer: the placeholders are SVG documents
- * saved under a `.webp` extension, so a large one would slip through a size
- * threshold. Magic bytes settle it exactly — real artwork is a RIFF/WEBP
- * container, and anything else is a placeholder however big it is.
+ * saved under an image extension, so a large one would slip through a size
+ * threshold. Magic bytes settle it exactly — real artwork is a recognised
+ * raster container, and anything else is a placeholder however big it is.
  *
  * The real artwork lives in Figma as image fills. `scripts/figma-sync.mjs`
  * pulls it down, and the "Sync content from Figma" workflow runs that on a
@@ -50,12 +54,9 @@ function assetState(imgPath: string): AssetState {
   try {
     if (statSync(absolute).size < 12) return "placeholder";
     fd = openSync(absolute, "r");
-    const header = Buffer.alloc(12);
-    readSync(fd, header, 0, 12, 0);
-    const isWebp =
-      header.subarray(0, 4).toString("ascii") === "RIFF" &&
-      header.subarray(8, 12).toString("ascii") === "WEBP";
-    return isWebp ? "real" : "placeholder";
+    const header = Buffer.alloc(HEADER_BYTES);
+    const bytesRead = readSync(fd, header, 0, HEADER_BYTES, 0);
+    return isRealArtwork(header.subarray(0, bytesRead)) ? "real" : "placeholder";
   } catch {
     return "missing";
   } finally {
