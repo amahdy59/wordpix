@@ -10,6 +10,7 @@ import { Volume2, CheckCircle2, XCircle, RefreshCw, Keyboard, ArrowRight } from 
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
+import { useSpokenFeedback } from "../shared/useSpokenFeedback";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
@@ -37,12 +38,13 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   const { speak, stop, isPlaying } = useAudio({ lang: "en-US", rate: 0.85 });
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
+  const spoken = useSpokenFeedback();
   const hasSpokenRef = useRef<Record<string, boolean>>({});
 
   const displayCards = useMemo(() => {
-    const distractors = getDistractors(currentTargetWord, 3);
+    const distractors = getDistractors(currentTargetWord, 3, words);
     return shuffleArray([currentTargetWord, ...distractors]);
-  }, [currentTargetWord]);
+  }, [currentTargetWord, words]);
 
   /** Clears the result and lets the queue's next question render. */
   const advanceNext = useCallback(() => {
@@ -96,16 +98,42 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         playIncorrect();
       }
 
+      // The prompt voice and the feedback voice share the browser's one
+      // synthesis queue, so silence the prompt before answering over it.
+      stop();
+      spoken.speakFeedback({
+        correct,
+        targetLabel: currentTargetWord.label,
+        chosenLabel: card.label,
+      });
+
       dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
-      autoAdvance.schedule(correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect);
+      autoAdvance.schedule(
+        spoken.enabled
+          ? spoken.delayFor(correct)
+          : correct
+            ? ADVANCE_DELAY_MS.correct
+            : ADVANCE_DELAY_MS.incorrect
+      );
     },
-    [feedback, currentTargetWord.id, playCorrect, playIncorrect, dispatch, autoAdvance]
+    [
+      feedback,
+      currentTargetWord.id,
+      currentTargetWord.label,
+      playCorrect,
+      playIncorrect,
+      stop,
+      spoken,
+      dispatch,
+      autoAdvance,
+    ]
   );
 
   const handleContinue = useCallback(() => {
     autoAdvance.cancel();
+    spoken.cancel();
     advanceNext();
-  }, [autoAdvance, advanceNext]);
+  }, [autoAdvance, spoken, advanceNext]);
 
   const selectByIndex = useCallback(
     (index: number) => {

@@ -60,6 +60,15 @@ export interface AccessibilityPreferences {
    * Next button on the feedback instead.
    */
   autoAdvance: boolean;
+  /**
+   * When true, each answer is spoken back as a sentence naming the word, on
+   * top of the existing chime.
+   *
+   * Switchable because sound that plays automatically after every question has
+   * to be (WCAG 1.4.2, Audio Control), and because a learner on a train wants
+   * the chime without the narration.
+   */
+  spokenFeedback: boolean;
   reduceMotion: boolean;
 }
 
@@ -72,6 +81,7 @@ export const DEFAULT_ACCESSIBILITY: AccessibilityPreferences = {
   includeListening: true,
   timedExercises: true,
   autoAdvance: true,
+  spokenFeedback: true,
   reduceMotion: false,
 };
 

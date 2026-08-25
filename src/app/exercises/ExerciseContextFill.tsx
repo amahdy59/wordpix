@@ -8,6 +8,7 @@ import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
+import { useSpokenFeedback } from "../shared/useSpokenFeedback";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
@@ -31,6 +32,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
+  const spoken = useSpokenFeedback();
 
   const queue = useDrillQueue(words);
   const currentTargetWord = queue.current ?? words[0];
@@ -68,16 +70,40 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       if (correct) playCorrect();
       else playIncorrect();
 
+      spoken.speakFeedback({
+        correct,
+        targetLabel: currentTargetWord.label,
+        chosenLabel: options.find((o) => o.id === id)?.label,
+      });
+
       dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
-      autoAdvance.schedule(correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect);
+      autoAdvance.schedule(
+        spoken.enabled
+          ? spoken.delayFor(correct)
+          : correct
+            ? ADVANCE_DELAY_MS.correct
+            : ADVANCE_DELAY_MS.incorrect
+      );
     },
-    [feedback, playClick, playCorrect, playIncorrect, currentTargetWord.id, dispatch, autoAdvance]
+    [
+      feedback,
+      playClick,
+      playCorrect,
+      playIncorrect,
+      currentTargetWord.id,
+      currentTargetWord.label,
+      options,
+      spoken,
+      dispatch,
+      autoAdvance,
+    ]
   );
 
   const handleContinue = useCallback(() => {
     autoAdvance.cancel();
+    spoken.cancel();
     advanceNext();
-  }, [autoAdvance, advanceNext]);
+  }, [autoAdvance, spoken, advanceNext]);
 
   const selectByIndex = useCallback(
     (index: number) => {
