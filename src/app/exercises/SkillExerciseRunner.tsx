@@ -228,6 +228,8 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
               word={imageWord}
               altMode={task.kind === "choice" && !task.optionsAreImages ? "assessment" : "learning"}
               className="size-full object-cover block"
+              loading="eager"
+              fetchPriority="high"
             />
           </div>
         )}

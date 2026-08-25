@@ -283,6 +283,9 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                     optionIndex={idx}
                     checked={isSelected || isRevealedAnswer}
                     className="size-full object-cover block"
+                    // Every option is on screen and has to be looked at to
+                    // answer, so lazy loading only delays the question.
+                    loading="eager"
                   />
                 </div>
 

@@ -164,6 +164,12 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
           <WordImage
             word={currentTargetWord}
             className="w-full h-full absolute inset-0 object-cover"
+            // The question's own picture is the largest thing on screen and
+            // the one the answer depends on, so it is the LCP element. It
+            // inherited WordImage's lazy default, which defers discovery of
+            // exactly the image the learner is waiting for.
+            loading="eager"
+            fetchPriority="high"
           />
           {/* Ties the picture to the word it illustrates instead of leaving it
               a disconnected decorative photo. */}
