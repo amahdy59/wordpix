@@ -43,6 +43,10 @@ on:
         description: 'Also fetch units Figma has that the app does not'
         type: boolean
         default: false
+      debug_pairing:
+        description: 'Print frame geometry for diagnosing unit/materials pairing'
+        type: boolean
+        default: false
       dry_run:
         description: 'Report only, write nothing'
         type: boolean
@@ -95,6 +99,7 @@ jobs:
           [ "${{ inputs.force }}" = "true" ] && args="$args --force"
           [ "${{ inputs.dry_run }}" = "true" ] && args="$args --dry-run"
           [ "${{ inputs.include_new }}" = "true" ] && args="$args --include-new"
+          [ "${{ inputs.debug_pairing }}" = "true" ] && args="$args --debug-pairing"
           args="$args --max-width ${{ inputs.max_width }}"
           args="$args --scene-width ${{ inputs.scene_width }}"
 
