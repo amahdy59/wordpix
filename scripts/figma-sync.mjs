@@ -45,11 +45,15 @@ const FIGMA_EXPORT_FORMAT = "png";
 /**
  * Figma renders at this multiple of the frame's design size.
  *
- * At scale 2 a card came back around 856 px wide, so asking sharp for 1024
- * would have upscaled it — sharpening nothing and inventing pixels. 3 puts the
- * source comfortably above the target so the resize is always a downsample.
+ * 4 is the API's maximum, and it is not enough on its own: a card frame is
+ * 214px wide in the design, so even at 4 a render tops out at 856px against
+ * the 1344 device pixels the exercise card wants. Measured at scale 3 the
+ * cards came back 642x384.
+ *
+ * This is therefore the fallback path. Artwork normally comes from the
+ * original uploaded fills instead — see resolveOriginalFills.
  */
-const FIGMA_EXPORT_SCALE = 3;
+const FIGMA_EXPORT_SCALE = 4;
 /** Artwork is written in this format. Figma cannot export it, so sharp converts. */
 const IMAGE_EXT = "avif";
 
@@ -251,7 +255,17 @@ function collectCards(unitNode) {
       const lbl = (node.children ?? []).find((c) => c.name === "lbl");
       const [label, ipa, cefr] = (lbl?.children ?? []).map(textOf);
       if (subtopic) subtopic.wordIds.push(id);
-      cards.push({ kind: "card", id, label, ipa, cefr, imageNodeId: image?.id });
+      cards.push({
+        kind: "card",
+        id,
+        label,
+        ipa,
+        cefr,
+        imageNodeId: image?.id,
+        // The photograph as uploaded, before Figma scaled it into a 214px
+        // card. See resolveOriginalFills for why this is worth having.
+        imageRef: (image?.fills ?? []).find((f) => f.type === "IMAGE" && f.imageRef)?.imageRef,
+      });
     }
   }
   return cards;
@@ -322,6 +336,41 @@ async function toAvif(pngBuffer, maxWidth) {
     .toBuffer();
 }
 
+/**
+ * Maps every image fill in the file to the original file the designer uploaded.
+ *
+ * Rendering a node caps out well below what the artwork actually contains. A
+ * card frame is 214px wide in the design and Figma's render scale stops at 4,
+ * so the best a node render can give is 856px — measured at scale 3 the cards
+ * came back 642x384, which is still short of the 1344 device pixels the
+ * exercise card wants on a retina screen.
+ *
+ * The uploaded photographs are much larger than the box they were placed in.
+ * This endpoint hands them over at full size, so the only limit left is the
+ * one we choose.
+ *
+ * The trade is framing: an original is uncropped, where a node render bakes in
+ * whatever crop the fill's transform applies. Every surface in the app draws
+ * these with `object-cover`, so the final framing is the app's decision either
+ * way — and detail that was never downloaded cannot be recovered later.
+ *
+ * Returns an empty map on failure; callers fall back to rendering the node.
+ */
+let originalFillsCache;
+async function resolveOriginalFills() {
+  if (originalFillsCache) return originalFillsCache;
+  try {
+    const { meta, err } = await api(`/files/${FILE_KEY}/images`);
+    if (err) throw new Error(err);
+    originalFillsCache = new Map(Object.entries(meta?.images ?? {}));
+    console.log(`  original image fills available: ${originalFillsCache.size}`);
+  } catch (error) {
+    console.warn(`  ! could not list original image fills (${error.message}); rendering nodes instead`);
+    originalFillsCache = new Map();
+  }
+  return originalFillsCache;
+}
+
 async function downloadImages(unit, cards) {
   const targets = [];
   for (const card of cards) {
@@ -330,6 +379,7 @@ async function downloadImages(unit, cards) {
     if (!OPTS.force && !(await isPlaceholder(dest))) continue;
     targets.push({
       nodeId: card.imageNodeId,
+      imageRef: card.imageRef,
       dest,
       label: `${unit.id}/${card.id}`,
       maxWidth: OPTS.maxWidth,
@@ -372,14 +422,27 @@ async function downloadImages(unit, cards) {
 
   let downloaded = 0;
   let skipped = 0;
+  const fills = await resolveOriginalFills();
+
+  let fromOriginal = 0;
   await pooled(targets, OPTS.concurrency, async (t) => {
-    const url = urls[t.nodeId];
+    // Prefer the uploaded photograph; fall back to the rendered node. A render
+    // is capped by the 214px card frame, so it is the lower-detail option
+    // whenever an original exists.
+    const originalUrl = t.imageRef ? fills.get(t.imageRef) : undefined;
+    const url = originalUrl ?? urls[t.nodeId];
     if (!url) {
       console.warn(`  ! no render for ${t.label} (empty frame in Figma?)`);
       skipped++;
       return;
     }
-    const res = await fetch(url);
+    let res = await fetch(url);
+    if (!res.ok && originalUrl && urls[t.nodeId]) {
+      // A stale or expired fill URL must not cost us the image entirely.
+      res = await fetch(urls[t.nodeId]);
+    } else if (res.ok && originalUrl) {
+      fromOriginal++;
+    }
     if (!res.ok) {
       console.warn(`  ! ${t.label} → ${res.status}`);
       skipped++;
@@ -397,7 +460,9 @@ async function downloadImages(unit, cards) {
     downloaded++;
   });
 
-  console.log(`  ${unit.id}: ${downloaded} downloaded, ${skipped} skipped`);
+  console.log(
+    `  ${unit.id}: ${downloaded} downloaded (${fromOriginal} from original fills), ${skipped} skipped`
+  );
   return { downloaded, skipped };
 }
 
