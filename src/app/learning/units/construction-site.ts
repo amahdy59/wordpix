@@ -129,68 +129,76 @@ export const CONSTRUCTION_SITE_LEARNING: UnitLearningMaterials = {
   },
   phrases: [
     {
-      id: "construction-site-build-from-the-ground-up",
-      phrase: "build from the ground up",
-      kind: "idiom",
-      kindInferred: true,
-      meaning: "create something from nothing",
-      example: "They built the company from the ground up.",
-    },
-    {
-      id: "construction-site-lay-the-foundations",
-      phrase: "lay the foundations",
-      kind: "idiom",
-      kindInferred: true,
-      meaning: "establish the basis for something",
-      example: "Good reading habits lay the foundations for academic success.",
-    },
-    {
       id: "construction-site-hit-the-nail-on-the-head",
       phrase: "hit the nail on the head",
       kind: "idiom",
       kindInferred: true,
       meaning: "say or do exactly the right thing",
-      example: "You hit the nail on the head with that answer.",
+      example:
+        "He hit the nail on the head — the hammer, the nail, and the plywood were exactly what we needed for the wall.",
     },
     {
-      id: "construction-site-a-hard-hat-area",
-      phrase: "a hard hat area",
+      id: "construction-site-build-bridges",
+      phrase: "build bridges",
       kind: "idiom",
       kindInferred: true,
-      meaning: "a place where safety precautions are needed",
-      example: "This whole floor is a hard hat area during renovation.",
+      meaning: "improve relationships between people",
+      example:
+        "The project manager built bridges between the teams — the crane operator, the bulldozer driver, and the forklift crew all cooperated.",
     },
     {
-      id: "construction-site-build-up",
-      phrase: "build up",
+      id: "construction-site-lay-the-groundwork",
+      phrase: "lay the groundwork",
+      kind: "idiom",
+      kindInferred: true,
+      meaning: "prepare the foundation for something",
+      example:
+        "They laid the groundwork by pouring cement, placing rebar, and setting the steel beam in position.",
+    },
+    {
+      id: "construction-site-a-bolt-from-the-blue",
+      phrase: "a bolt from the blue",
+      kind: "idiom",
+      kindInferred: true,
+      meaning: "a sudden and unexpected event",
+      example:
+        "The delivery of the glass pane was a bolt from the blue — we weren't expecting it until next week along with the bolt and the screw.",
+    },
+    {
+      id: "construction-site-screw-up",
+      phrase: "screw up",
       kind: "phrasal-verb",
       kindInferred: true,
-      meaning: "increase gradually",
-      example: "You need to build up your vocabulary before the exam.",
+      meaning: "make a mistake; do something wrong",
+      example:
+        "He screwed up the measurements — the pipe didn't fit, the cable was too short, and the drywall was the wrong size.",
     },
     {
-      id: "construction-site-knock-down-tear-down",
-      phrase: "knock down / tear down",
+      id: "construction-site-under-construction",
+      phrase: "under construction",
       kind: "idiom",
       kindInferred: true,
-      meaning: "demolish a building",
-      example: "They knocked down the old factory to build flats.",
+      meaning: "in the process of being built or developed",
+      example:
+        "The whole building is under construction — the excavator is digging, the cement mixer is spinning, and the dump truck is hauling.",
     },
     {
-      id: "construction-site-put-up",
-      phrase: "put up",
+      id: "construction-site-nail-down",
+      phrase: "nail down",
       kind: "phrasal-verb",
       kindInferred: true,
-      meaning: "construct or erect something",
-      example: "They put up the scaffolding in just one morning.",
+      meaning: "finalize or make certain",
+      example:
+        "We need to nail down the schedule — the pile driver starts Monday, and the boom lift arrives Tuesday.",
     },
     {
-      id: "construction-site-back-to-square-one",
-      phrase: "back to square one",
+      id: "construction-site-from-the-ground-up",
+      phrase: "from the ground up",
       kind: "idiom",
       kindInferred: true,
-      meaning: "start again from the beginning",
-      example: "The plan failed, so we're back to square one.",
+      meaning: "from the very beginning; completely",
+      example:
+        "They built the house from the ground up — starting with brick and cement, then adding the steel beam and the plywood.",
     },
     {
       id: "construction-site-under-construction",
@@ -213,50 +221,53 @@ export const CONSTRUCTION_SITE_LEARNING: UnitLearningMaterials = {
     title: "Mini Dialogue",
     lines: [
       {
-        speaker: "Scene: A site manager talking to a visitor",
+        speaker: "Scene: A site manager shows a new worker around the construction site",
         text: "Manager:",
       },
       {
         speaker:
-          "Welcome to the site. Before we go in, you'll need a hard hat and a high-vis jacket.",
-        text: "Visitor:",
+          "Welcome to the construction site. Safety first — put on your helmet. Let me show you the heavy machinery.",
+        text: "Worker:",
       },
       {
-        speaker: "Thank you. How long has the project been going on?",
-        text: "Manager:",
-      },
-      {
-        speaker: "We started six months ago. The foundations took about eight weeks.",
-        text: "Visitor:",
-      },
-      {
-        speaker: "What stage are you at now?",
+        speaker: "Is that a crane lifting the steel beam? It's enormous!",
         text: "Manager:",
       },
       {
         speaker:
-          "We've finished the ground floor walls. The bricklayers are working on the first floor.",
-        text: "Visitor:",
+          "Yes — the crane handles the heavy loads. The bulldozer clears the ground, and the excavator digs the foundation.",
+        text: "Worker:",
       },
       {
-        speaker: "What's that large machine over there?",
-        text: "Manager:",
-      },
-      {
-        speaker: "That's the excavator. We used it to dig the trenches for the drainage pipes.",
-        text: "Visitor:",
-      },
-      {
-        speaker: "And the crane?",
+        speaker: "What about the dump truck and the cement mixer? I see them near the entrance.",
         text: "Manager:",
       },
       {
         speaker:
-          "The crane lifts heavy materials to the upper levels. It can carry up to five tonnes.",
-        text: "Visitor:",
+          "The dump truck hauls dirt and gravel. The cement mixer pours the cement for the foundation. The forklift moves the brick pallets.",
+        text: "Worker:",
       },
       {
-        speaker: "When will the school be ready?",
+        speaker: "I see a steamroller on the road. And is that a backhoe?",
+        text: "Manager:",
+      },
+      {
+        speaker:
+          "Correct. The pile driver is behind the backhoe — it drives the steel supports into the ground. The boom lift takes workers to the upper floors.",
+        text: "Worker:",
+      },
+      {
+        speaker:
+          "What materials are we using? I see plywood, glass pane, and pipe stacked over there.",
+        text: "Manager:",
+      },
+      {
+        speaker:
+          "We use brick, cement, steel beam, plywood, glass pane, pipe, cable, bolt, nail, screw, rebar, and drywall. Each has its place.",
+        text: "Worker:",
+      },
+      {
+        speaker: "Where are the hand tools? I brought my own hammer and wrench.",
         text: "Manager:",
       },
     ],

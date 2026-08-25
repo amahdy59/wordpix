@@ -15,96 +15,245 @@ import type { UnitLearningMaterials } from "./types";
  */
 const LOADERS: Record<string, () => Promise<UnitLearningMaterials>> = {
   "3d-printer-lab": () => import("./units/3d-printer-lab").then((m) => m._3D_PRINTER_LAB_LEARNING),
+  "academic-life": () => import("./units/academic-life").then((m) => m.ACADEMIC_LIFE_LEARNING),
+  "accessories-jewelry": () =>
+    import("./units/accessories-jewelry").then((m) => m.ACCESSORIES_JEWELRY_LEARNING),
+  "ages-life-stages": () =>
+    import("./units/ages-life-stages").then((m) => m.AGES_LIFE_STAGES_LEARNING),
   "amusement-park": () => import("./units/amusement-park").then((m) => m.AMUSEMENT_PARK_LEARNING),
+  "architect-s-studio": () =>
+    import("./units/architect-s-studio").then((m) => m.ARCHITECT_S_STUDIO_LEARNING),
+  "architecture-styles": () =>
+    import("./units/architecture-styles").then((m) => m.ARCHITECTURE_STYLES_LEARNING),
   arctic: () => import("./units/arctic").then((m) => m.ARCTIC_LEARNING),
+  "art-studio": () => import("./units/art-studio").then((m) => m.ART_STUDIO_LEARNING),
+  "auto-dealership": () =>
+    import("./units/auto-dealership").then((m) => m.AUTO_DEALERSHIP_LEARNING),
   bakery: () => import("./units/bakery").then((m) => m.BAKERY_LEARNING),
+  bank: () => import("./units/bank").then((m) => m.BANK_LEARNING),
+  "bar-culture": () => import("./units/bar-culture").then((m) => m.BAR_CULTURE_LEARNING),
   barbershop: () => import("./units/barbershop").then((m) => m.BARBERSHOP_LEARNING),
+  "basic-emotions": () => import("./units/basic-emotions").then((m) => m.BASIC_EMOTIONS_LEARNING),
   bathroom: () => import("./units/bathroom").then((m) => m.BATHROOM_LEARNING),
   bedroom: () => import("./units/bedroom").then((m) => m.BEDROOM_LEARNING),
+  beverages: () => import("./units/beverages").then((m) => m.BEVERAGES_LEARNING),
   "bicycle-shop": () => import("./units/bicycle-shop").then((m) => m.BICYCLE_SHOP_LEARNING),
   "bird-sanctuary": () => import("./units/bird-sanctuary").then((m) => m.BIRD_SANCTUARY_LEARNING),
   "birthday-party": () => import("./units/birthday-party").then((m) => m.BIRTHDAY_PARTY_LEARNING),
+  "body-systems": () => import("./units/body-systems").then((m) => m.BODY_SYSTEMS_LEARNING),
+  "building-construction": () =>
+    import("./units/building-construction").then((m) => m.BUILDING_CONSTRUCTION_LEARNING),
   "bus-station": () => import("./units/bus-station").then((m) => m.BUS_STATION_LEARNING),
+  "business-communication": () =>
+    import("./units/business-communication").then((m) => m.BUSINESS_COMMUNICATION_LEARNING),
   "butterfly-garden": () =>
     import("./units/butterfly-garden").then((m) => m.BUTTERFLY_GARDEN_LEARNING),
   "camping-site": () => import("./units/camping-site").then((m) => m.CAMPING_SITE_LEARNING),
+  "car-parts-mechanics": () =>
+    import("./units/car-parts-mechanics").then((m) => m.CAR_PARTS_MECHANICS_LEARNING),
+  "car-types": () => import("./units/car-types").then((m) => m.CAR_TYPES_LEARNING),
   "car-wash": () => import("./units/car-wash").then((m) => m.CAR_WASH_LEARNING),
+  "classic-cocktails": () =>
+    import("./units/classic-cocktails").then((m) => m.CLASSIC_COCKTAILS_LEARNING),
   classroom: () => import("./units/classroom").then((m) => m.CLASSROOM_LEARNING),
+  "cocktail-bar": () => import("./units/cocktail-bar").then((m) => m.COCKTAIL_BAR_LEARNING),
   "coffee-shop": () => import("./units/coffee-shop").then((m) => m.COFFEE_SHOP_LEARNING),
+  colors: () => import("./units/colors").then((m) => m.COLORS_LEARNING),
+  "communication-verbs": () =>
+    import("./units/communication-verbs").then((m) => m.COMMUNICATION_VERBS_LEARNING),
   "community-center": () =>
     import("./units/community-center").then((m) => m.COMMUNITY_CENTER_LEARNING),
+  "complex-feelings": () =>
+    import("./units/complex-feelings").then((m) => m.COMPLEX_FEELINGS_LEARNING),
   "computer-lab": () => import("./units/computer-lab").then((m) => m.COMPUTER_LAB_LEARNING),
   "construction-site": () =>
     import("./units/construction-site").then((m) => m.CONSTRUCTION_SITE_LEARNING),
+  "cooking-methods": () =>
+    import("./units/cooking-methods").then((m) => m.COOKING_METHODS_LEARNING),
   "coral-reef": () => import("./units/coral-reef").then((m) => m.CORAL_REEF_LEARNING),
   "costume-shop": () => import("./units/costume-shop").then((m) => m.COSTUME_SHOP_LEARNING),
   courtroom: () => import("./units/courtroom").then((m) => m.COURTROOM_LEARNING),
+  "courtroom-trial": () =>
+    import("./units/courtroom-trial").then((m) => m.COURTROOM_TRIAL_LEARNING),
+  "coworking-space": () =>
+    import("./units/coworking-space").then((m) => m.COWORKING_SPACE_LEARNING),
+  "creative-hobbies": () =>
+    import("./units/creative-hobbies").then((m) => m.CREATIVE_HOBBIES_LEARNING),
+  "currency-payment": () =>
+    import("./units/currency-payment").then((m) => m.CURRENCY_PAYMENT_LEARNING),
+  "daily-action-verbs": () =>
+    import("./units/daily-action-verbs").then((m) => m.DAILY_ACTION_VERBS_LEARNING),
+  "daily-routines": () => import("./units/daily-routines").then((m) => m.DAILY_ROUTINES_LEARNING),
   "dance-studio": () => import("./units/dance-studio").then((m) => m.DANCE_STUDIO_LEARNING),
   "data-center": () => import("./units/data-center").then((m) => m.DATA_CENTER_LEARNING),
+  "days-months": () => import("./units/days-months").then((m) => m.DAYS_MONTHS_LEARNING),
   "dental-clinic": () => import("./units/dental-clinic").then((m) => m.DENTAL_CLINIC_LEARNING),
   dentist: () => import("./units/dentist").then((m) => m.DENTIST_LEARNING),
   desert: () => import("./units/desert").then((m) => m.DESERT_LEARNING),
+  "driving-road-rules": () =>
+    import("./units/driving-road-rules").then((m) => m.DRIVING_ROAD_RULES_LEARNING),
   "drone-workshop": () => import("./units/drone-workshop").then((m) => m.DRONE_WORKSHOP_LEARNING),
   "electric-vehicle-station": () =>
     import("./units/electric-vehicle-station").then((m) => m.ELECTRIC_VEHICLE_STATION_LEARNING),
   embassy: () => import("./units/embassy").then((m) => m.EMBASSY_LEARNING),
+  "everyday-clothing": () =>
+    import("./units/everyday-clothing").then((m) => m.EVERYDAY_CLOTHING_LEARNING),
+  "extended-family": () =>
+    import("./units/extended-family").then((m) => m.EXTENDED_FAMILY_LEARNING),
   "eye-doctor": () => import("./units/eye-doctor").then((m) => m.EYE_DOCTOR_LEARNING),
+  "fabrics-textiles": () =>
+    import("./units/fabrics-textiles").then((m) => m.FABRICS_TEXTILES_LEARNING),
+  "facial-expressions": () =>
+    import("./units/facial-expressions").then((m) => m.FACIAL_EXPRESSIONS_LEARNING),
+  family: () => import("./units/family").then((m) => m.FAMILY_LEARNING),
   farm: () => import("./units/farm").then((m) => m.FARM_LEARNING),
+  "fashion-atelier": () =>
+    import("./units/fashion-atelier").then((m) => m.FASHION_ATELIER_LEARNING),
+  "fashion-design": () => import("./units/fashion-design").then((m) => m.FASHION_DESIGN_LEARNING),
   festival: () => import("./units/festival").then((m) => m.FESTIVAL_LEARNING),
+  "financial-services": () =>
+    import("./units/financial-services").then((m) => m.FINANCIAL_SERVICES_LEARNING),
   "first-aid-room": () => import("./units/first-aid-room").then((m) => m.FIRST_AID_ROOM_LEARNING),
+  "five-senses": () => import("./units/five-senses").then((m) => m.FIVE_SENSES_LEARNING),
+  footwear: () => import("./units/footwear").then((m) => m.FOOTWEAR_LEARNING),
   forest: () => import("./units/forest").then((m) => m.FOREST_LEARNING),
+  "formal-business-wear": () =>
+    import("./units/formal-business-wear").then((m) => m.FORMAL_BUSINESS_WEAR_LEARNING),
+  "freelancing-remote-work": () =>
+    import("./units/freelancing-remote-work").then((m) => m.FREELANCING_REMOTE_WORK_LEARNING),
+  fruits: () => import("./units/fruits").then((m) => m.FRUITS_LEARNING),
   garden: () => import("./units/garden").then((m) => m.GARDEN_LEARNING),
   "gas-station": () => import("./units/gas-station").then((m) => m.GAS_STATION_LEARNING),
+  "giving-directions": () =>
+    import("./units/giving-directions").then((m) => m.GIVING_DIRECTIONS_LEARNING),
   graduation: () => import("./units/graduation").then((m) => m.GRADUATION_LEARNING),
+  "grains-dairy": () => import("./units/grains-dairy").then((m) => m.GRAINS_DAIRY_LEARNING),
   gym: () => import("./units/gym").then((m) => m.GYM_LEARNING),
   "hair-salon": () => import("./units/hair-salon").then((m) => m.HAIR_SALON_LEARNING),
+  "hand-actions": () => import("./units/hand-actions").then((m) => m.HAND_ACTIONS_LEARNING),
   harbor: () => import("./units/harbor").then((m) => m.HARBOR_LEARNING),
+  "home-features": () => import("./units/home-features").then((m) => m.HOME_FEATURES_LEARNING),
   hotel: () => import("./units/hotel").then((m) => m.HOTEL_LEARNING),
   "ice-cream-shop": () => import("./units/ice-cream-shop").then((m) => m.ICE_CREAM_SHOP_LEARNING),
+  "indoor-hobbies": () => import("./units/indoor-hobbies").then((m) => m.INDOOR_HOBBIES_LEARNING),
   "insect-world": () => import("./units/insect-world").then((m) => m.INSECT_WORLD_LEARNING),
+  "interior-design": () =>
+    import("./units/interior-design").then((m) => m.INTERIOR_DESIGN_LEARNING),
+  "internal-organs": () =>
+    import("./units/internal-organs").then((m) => m.INTERNAL_ORGANS_LEARNING),
   jungle: () => import("./units/jungle").then((m) => m.JUNGLE_LEARNING),
   kitchen: () => import("./units/kitchen").then((m) => m.KITCHEN_LEARNING),
+  "kitchen-utensils": () =>
+    import("./units/kitchen-utensils").then((m) => m.KITCHEN_UTENSILS_LEARNING),
   laboratory: () => import("./units/laboratory").then((m) => m.LABORATORY_LEARNING),
   laundromat: () => import("./units/laundromat").then((m) => m.LAUNDROMAT_LEARNING),
+  "law-firm": () => import("./units/law-firm").then((m) => m.LAW_FIRM_LEARNING),
+  "legal-documents": () =>
+    import("./units/legal-documents").then((m) => m.LEGAL_DOCUMENTS_LEARNING),
   library: () => import("./units/library").then((m) => m.LIBRARY_LEARNING),
+  "life-events": () => import("./units/life-events").then((m) => m.LIFE_EVENTS_LEARNING),
   "living-room": () => import("./units/living-room").then((m) => m.LIVING_ROOM_LEARNING),
+  "maps-navigation": () =>
+    import("./units/maps-navigation").then((m) => m.MAPS_NAVIGATION_LEARNING),
   market: () => import("./units/market").then((m) => m.MARKET_LEARNING),
+  materials: () => import("./units/materials").then((m) => m.MATERIALS_LEARNING),
+  "measurements-units": () =>
+    import("./units/measurements-units").then((m) => m.MEASUREMENTS_UNITS_LEARNING),
+  "meat-seafood": () => import("./units/meat-seafood").then((m) => m.MEAT_SEAFOOD_LEARNING),
   mechanic: () => import("./units/mechanic").then((m) => m.MECHANIC_LEARNING),
+  "meeting-room": () => import("./units/meeting-room").then((m) => m.MEETING_ROOM_LEARNING),
+  "money-currency": () => import("./units/money-currency").then((m) => m.MONEY_CURRENCY_LEARNING),
   mountain: () => import("./units/mountain").then((m) => m.MOUNTAIN_LEARNING),
+  "movement-verbs": () => import("./units/movement-verbs").then((m) => m.MOVEMENT_VERBS_LEARNING),
+  "moving-settling-in": () =>
+    import("./units/moving-settling-in").then((m) => m.MOVING_SETTLING_IN_LEARNING),
   "newspaper-office": () =>
     import("./units/newspaper-office").then((m) => m.NEWSPAPER_OFFICE_LEARNING),
+  "numbers-counting": () =>
+    import("./units/numbers-counting").then((m) => m.NUMBERS_COUNTING_LEARNING),
   observatory: () => import("./units/observatory").then((m) => m.OBSERVATORY_LEARNING),
+  office: () => import("./units/office").then((m) => m.OFFICE_LEARNING),
+  "office-supplies": () =>
+    import("./units/office-supplies").then((m) => m.OFFICE_SUPPLIES_LEARNING),
   orchestra: () => import("./units/orchestra").then((m) => m.ORCHESTRA_LEARNING),
   park: () => import("./units/park").then((m) => m.PARK_LEARNING),
+  "patterns-textures": () =>
+    import("./units/patterns-textures").then((m) => m.PATTERNS_TEXTURES_LEARNING),
+  "personality-character": () =>
+    import("./units/personality-character").then((m) => m.PERSONALITY_CHARACTER_LEARNING),
   "pet-shop": () => import("./units/pet-shop").then((m) => m.PET_SHOP_LEARNING),
   pharmacy: () => import("./units/pharmacy").then((m) => m.PHARMACY_LEARNING),
   "photography-studio": () =>
     import("./units/photography-studio").then((m) => m.PHOTOGRAPHY_STUDIO_LEARNING),
+  "physical-appearance": () =>
+    import("./units/physical-appearance").then((m) => m.PHYSICAL_APPEARANCE_LEARNING),
   "pizza-shop": () => import("./units/pizza-shop").then((m) => m.PIZZA_SHOP_LEARNING),
   playground: () => import("./units/playground").then((m) => m.PLAYGROUND_LEARNING),
   "police-station": () => import("./units/police-station").then((m) => m.POLICE_STATION_LEARNING),
   "pottery-studio": () => import("./units/pottery-studio").then((m) => m.POTTERY_STUDIO_LEARNING),
+  "prepositions-of-place": () =>
+    import("./units/prepositions-of-place").then((m) => m.PREPOSITIONS_OF_PLACE_LEARNING),
+  "property-types": () => import("./units/property-types").then((m) => m.PROPERTY_TYPES_LEARNING),
   "radio-station": () => import("./units/radio-station").then((m) => m.RADIO_STATION_LEARNING),
+  "real-estate-agency": () =>
+    import("./units/real-estate-agency").then((m) => m.REAL_ESTATE_AGENCY_LEARNING),
+  "relationships-roles": () =>
+    import("./units/relationships-roles").then((m) => m.RELATIONSHIPS_ROLES_LEARNING),
   "reptile-house": () => import("./units/reptile-house").then((m) => m.REPTILE_HOUSE_LEARNING),
+  "research-study": () => import("./units/research-study").then((m) => m.RESEARCH_STUDY_LEARNING),
+  "rights-regulations": () =>
+    import("./units/rights-regulations").then((m) => m.RIGHTS_REGULATIONS_LEARNING),
   river: () => import("./units/river").then((m) => m.RIVER_LEARNING),
   "robotics-lab": () => import("./units/robotics-lab").then((m) => m.ROBOTICS_LAB_LEARNING),
+  "runway-show": () => import("./units/runway-show").then((m) => m.RUNWAY_SHOW_LEARNING),
   savanna: () => import("./units/savanna").then((m) => m.SAVANNA_LEARNING),
+  "seasonings-condiments": () =>
+    import("./units/seasonings-condiments").then((m) => m.SEASONINGS_CONDIMENTS_LEARNING),
+  "seasons-weather": () =>
+    import("./units/seasons-weather").then((m) => m.SEASONS_WEATHER_LEARNING),
+  "shades-tones": () => import("./units/shades-tones").then((m) => m.SHADES_TONES_LEARNING),
+  "shapes-geometry": () =>
+    import("./units/shapes-geometry").then((m) => m.SHAPES_GEOMETRY_LEARNING),
   "shopping-mall": () => import("./units/shopping-mall").then((m) => m.SHOPPING_MALL_LEARNING),
+  skeleton: () => import("./units/skeleton").then((m) => m.SKELETON_LEARNING),
+  "skin-hair": () => import("./units/skin-hair").then((m) => m.SKIN_HAIR_LEARNING),
   "smart-home": () => import("./units/smart-home").then((m) => m.SMART_HOME_LEARNING),
+  "social-situations": () =>
+    import("./units/social-situations").then((m) => m.SOCIAL_SITUATIONS_LEARNING),
   "solar-farm": () => import("./units/solar-farm").then((m) => m.SOLAR_FARM_LEARNING),
   spa: () => import("./units/spa").then((m) => m.SPA_LEARNING),
   "space-station": () => import("./units/space-station").then((m) => m.SPACE_STATION_LEARNING),
+  "spatial-relations": () =>
+    import("./units/spatial-relations").then((m) => m.SPATIAL_RELATIONS_LEARNING),
+  "spirits-liqueurs": () =>
+    import("./units/spirits-liqueurs").then((m) => m.SPIRITS_LIQUEURS_LEARNING),
+  "sports-equipment": () =>
+    import("./units/sports-equipment").then((m) => m.SPORTS_EQUIPMENT_LEARNING),
+  "startup-culture": () =>
+    import("./units/startup-culture").then((m) => m.STARTUP_CULTURE_LEARNING),
+  "stock-exchange": () => import("./units/stock-exchange").then((m) => m.STOCK_EXCHANGE_LEARNING),
+  "student-life": () => import("./units/student-life").then((m) => m.STUDENT_LIFE_LEARNING),
   submarine: () => import("./units/submarine").then((m) => m.SUBMARINE_LEARNING),
   subway: () => import("./units/subway").then((m) => m.SUBWAY_LEARNING),
   supermarket: () => import("./units/supermarket").then((m) => m.SUPERMARKET_LEARNING),
   "tailor-shop": () => import("./units/tailor-shop").then((m) => m.TAILOR_SHOP_LEARNING),
+  "tech-gadgets": () => import("./units/tech-gadgets").then((m) => m.TECH_GADGETS_LEARNING),
+  "telling-time": () => import("./units/telling-time").then((m) => m.TELLING_TIME_LEARNING),
   theater: () => import("./units/theater").then((m) => m.THEATER_LEARNING),
+  "toys-games": () => import("./units/toys-games").then((m) => m.TOYS_GAMES_LEARNING),
   "tv-studio": () => import("./units/tv-studio").then((m) => m.TV_STUDIO_LEARNING),
+  "university-campus": () =>
+    import("./units/university-campus").then((m) => m.UNIVERSITY_CAMPUS_LEARNING),
+  vegetables: () => import("./units/vegetables").then((m) => m.VEGETABLES_LEARNING),
   "vet-clinic": () => import("./units/vet-clinic").then((m) => m.VET_CLINIC_LEARNING),
+  vineyard: () => import("./units/vineyard").then((m) => m.VINEYARD_LEARNING),
   volcano: () => import("./units/volcano").then((m) => m.VOLCANO_LEARNING),
   "weather-station": () =>
     import("./units/weather-station").then((m) => m.WEATHER_STATION_LEARNING),
   wedding: () => import("./units/wedding").then((m) => m.WEDDING_LEARNING),
+  "wine-cellar": () => import("./units/wine-cellar").then((m) => m.WINE_CELLAR_LEARNING),
+  "wine-tasting": () => import("./units/wine-tasting").then((m) => m.WINE_TASTING_LEARNING),
+  winemaking: () => import("./units/winemaking").then((m) => m.WINEMAKING_LEARNING),
 };
 
 const cache = new Map<string, UnitLearningMaterials>();

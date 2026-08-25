@@ -133,68 +133,76 @@ export const CAMPING_SITE_LEARNING: UnitLearningMaterials = {
   },
   phrases: [
     {
+      id: "camping-site-blaze-a-trail",
+      phrase: "blaze a trail",
+      kind: "idiom",
+      kindInferred: true,
+      meaning: "be the first to do something; create a path",
+      example:
+        "She blazed a trail through the forest — following the trail marker and checking the compass at every turn.",
+    },
+    {
+      id: "camping-site-in-the-same-boat",
+      phrase: "in the same boat",
+      kind: "idiom",
+      kindInferred: true,
+      meaning: "in the same difficult situation",
+      example:
+        "We're all in the same boat — the rain fly leaked, the sleeping bag is wet, and the matches won't light the campfire.",
+    },
+    {
       id: "camping-site-rough-it",
       phrase: "rough it",
       kind: "idiom",
       kindInferred: true,
-      meaning: "live without normal comforts",
-      example: "We had to rough it — no electricity, no hot water.",
+      meaning: "live without the usual comforts",
+      example:
+        "Camping means roughing it — no bed, just an air mattress in the tent, a tarp overhead, and a pillow from home.",
     },
     {
-      id: "camping-site-in-the-middle-of-nowhere",
-      phrase: "in the middle of nowhere",
+      id: "camping-site-a-breath-of-fresh-air",
+      phrase: "a breath of fresh air",
       kind: "idiom",
       kindInferred: true,
-      meaning: "in a very remote, isolated place",
-      example: "The campsite was in the middle of nowhere.",
+      meaning: "something new and refreshing",
+      example:
+        "After the city, the camping site was a breath of fresh air — the lantern glowed, the hammock swayed, and the thermos was full of hot tea.",
     },
     {
-      id: "camping-site-pitch-a-tent",
-      phrase: "pitch a tent",
+      id: "camping-site-off-the-beaten-path",
+      phrase: "off the beaten path",
       kind: "idiom",
       kindInferred: true,
-      meaning: "set up a tent",
-      example: "We pitched our tent near the river.",
+      meaning: "away from popular routes; in an unusual place",
+      example:
+        "They went off the beaten path — past the trail marker, over the hill, guided only by the map and the GPS device.",
     },
     {
-      id: "camping-site-under-the-stars",
-      phrase: "under the stars",
+      id: "camping-site-keep-the-fire-burning",
+      phrase: "keep the fire burning",
       kind: "idiom",
       kindInferred: true,
-      meaning: "sleeping outdoors",
-      example: "We slept under the stars on a warm night.",
+      meaning: "maintain enthusiasm or effort",
+      example:
+        "Keep the fire burning — add more firewood, roast the marshmallow on the skewer, and keep the camping pot warm on the grill.",
     },
     {
-      id: "camping-site-the-great-outdoors",
-      phrase: "the great outdoors",
-      kind: "idiom",
-      kindInferred: true,
-      meaning: "nature; the countryside",
-      example: "I love spending time in the great outdoors.",
-    },
-    {
-      id: "camping-site-pack-up",
-      phrase: "pack up",
+      id: "camping-site-pitch-in",
+      phrase: "pitch in",
       kind: "phrasal-verb",
       kindInferred: true,
-      meaning: "put things away; prepare to leave",
-      example: "We packed up early on Sunday morning.",
+      meaning: "help with a task; contribute",
+      example:
+        "Everyone pitched in — one set up the tent pole and tent peg, another laid the groundsheet, and a third unpacked the backpack.",
     },
     {
-      id: "camping-site-set-off",
-      phrase: "set off",
-      kind: "phrasal-verb",
-      kindInferred: true,
-      meaning: "begin a journey",
-      example: "We set off at dawn to beat the traffic.",
-    },
-    {
-      id: "camping-site-put-up-take-down",
-      phrase: "put up / take down",
+      id: "camping-site-light-at-the-end-of-the-tunnel",
+      phrase: "light at the end of the tunnel",
       kind: "idiom",
       kindInferred: true,
-      meaning: "erect / dismantle (a tent, structure)",
-      example: "It took thirty minutes to put up the tent and ten to take it down.",
+      meaning: "hope that a difficult situation will end",
+      example:
+        "After hours of hiking in hiking boots through the rain, the flashlight and the headlamp were our light at the end of the tunnel.",
     },
     {
       id: "camping-site-light-a-fire",
@@ -217,48 +225,56 @@ export const CAMPING_SITE_LEARNING: UnitLearningMaterials = {
     title: "Mini Dialogue",
     lines: [
       {
-        speaker: "Scene: A family arriving at the campsite reception",
-        text: "Warden:",
+        speaker: "Scene: A group of friends sets up camp for their first overnight trip",
+        text: "Ali:",
       },
       {
-        speaker: "Good afternoon! Do you have a booking?",
-        text: "Father:",
+        speaker:
+          "We made it! Let's set up the tent before it gets dark. Where's the tent pole and the tent peg?",
+        text: "Omar:",
       },
       {
-        speaker: "Yes, under the name Hussain. Two nights, Friday and Saturday.",
-        text: "Warden:",
+        speaker:
+          "In the backpack. I'll lay the groundsheet and the tarp first. Can you attach the rain fly?",
+        text: "Ali:",
       },
       {
-        speaker: "Perfect. You're on pitch 14 — it's a lovely spot near the stream.",
-        text: "Father:",
+        speaker:
+          "Done. I brought a sleeping bag, an air mattress, and a pillow for each of us. The hammock goes between those two trees.",
+        text: "Omar:",
       },
       {
-        speaker: "Are campfires allowed?",
-        text: "Warden:",
+        speaker: "Time to build the campfire. Pass me the firewood, the matches, and the lighter.",
+        text: "Ali:",
       },
       {
-        speaker: "Yes, but only in the fire pits provided. No fires directly on the grass, please.",
-        text: "Father:",
+        speaker:
+          "Here. Set up the grill and the camp stove too. I'll fill the water jug and the thermos from the stream.",
+        text: "Omar:",
       },
       {
-        speaker: "Where are the shower facilities?",
-        text: "Warden:",
+        speaker:
+          "I packed the cooler with food and the camping pot. We can roast marshmallows on a skewer later.",
+        text: "Ali:",
       },
       {
-        speaker: "The shower block is behind the reception building. It's open twenty-four hours.",
-        text: "Son:",
+        speaker: "Where's the flashlight? And the headlamp? It's getting dark.",
+        text: "Omar:",
       },
       {
-        speaker: "Is there Wi-Fi?",
-        text: "Warden:",
+        speaker:
+          "The flashlight is in the side pocket. The lantern goes on the table. I also brought the binoculars for stargazing.",
+        text: "Ali:",
       },
       {
-        speaker: "I'm afraid not. That's the joy of camping — unplugging from technology!",
-        text: "Father:",
+        speaker:
+          "Good thinking. We should check the compass and the map for tomorrow's hike. The GPS device has the trail marked.",
+        text: "Omar:",
       },
       {
-        speaker: "What time is check-out on Sunday?",
-        text: "Warden:",
+        speaker:
+          "I see a trail marker on that tree. Put on your hiking boots — the path starts there.",
+        text: "Ali:",
       },
     ],
   },
