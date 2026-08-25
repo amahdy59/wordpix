@@ -132,3 +132,25 @@ node scripts/optimize-images.mjs --write  # apply
 
 The first run rewrote 1,150 files at up to 1920px wide, taking committed
 artwork from 90.6 MB to 29.1 MB with no visible change at render size.
+
+## The committed dump (`figma-dump/`)
+
+The per-unit JSON from `--content` is committed. That is deliberate: it makes
+`build-learning-materials.mjs` and `audit-figma-vs-app.mjs` runnable without a
+Figma token, it lets a content change be reviewed as a diff before any code is
+generated from it, and it gives the audit a fixed reference point.
+
+Re-run `node scripts/figma-sync.mjs --content --include-new` to refresh it, and
+review the diff — a large unexplained change there means the design file moved,
+which is worth understanding before regenerating anything.
+
+## Auditing the app against Figma
+
+```bash
+node scripts/audit-figma-vs-app.mjs            # summary
+node scripts/audit-figma-vs-app.mjs --json out.json   # full per-unit detail
+```
+
+Reports units present on only one side, words Figma has that the app lacks,
+words the app carries that Figma has dropped, and remaining placeholder art.
+It is read-only.
