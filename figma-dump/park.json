@@ -1,0 +1,1710 @@
+{
+  "unitId": "park",
+  "name": "The Park",
+  "subtopics": [
+    {
+      "id": "park-structures",
+      "title": "Park Structures",
+      "wordIds": [
+        "bench",
+        "fountain",
+        "gazebo",
+        "bridge",
+        "statue",
+        "trash-can",
+        "lamp-post",
+        "picnic-table",
+        "drinking-fountain",
+        "bike-rack"
+      ]
+    },
+    {
+      "id": "nature-in-the-park",
+      "title": "Nature in the Park",
+      "wordIds": [
+        "pond",
+        "stream",
+        "hill",
+        "meadow",
+        "shade-tree",
+        "flower-bed",
+        "grass",
+        "pebble",
+        "pinecone",
+        "acorn"
+      ]
+    },
+    {
+      "id": "park-animals",
+      "title": "Park Animals",
+      "wordIds": [
+        "duck",
+        "swan",
+        "squirrel",
+        "pigeon",
+        "robin",
+        "frog",
+        "turtle",
+        "rabbit",
+        "goose",
+        "sparrow"
+      ]
+    },
+    {
+      "id": "park-activities",
+      "title": "Park Activities",
+      "wordIds": [
+        "walking",
+        "jogging",
+        "cycling",
+        "picnic",
+        "reading",
+        "sitting",
+        "stretching",
+        "dog-walking",
+        "photography",
+        "bird-watching"
+      ]
+    },
+    {
+      "id": "sports-in-the-park",
+      "title": "Sports in the Park",
+      "wordIds": [
+        "kite",
+        "frisbee",
+        "soccer-ball",
+        "jump-rope",
+        "skateboard",
+        "roller-skates",
+        "badminton",
+        "tennis-ball",
+        "yoga-mat",
+        "bicycle"
+      ]
+    },
+    {
+      "id": "park-signs-safety",
+      "title": "Park Signs & Safety",
+      "wordIds": [
+        "park-map",
+        "trail-sign",
+        "no-swimming-sign",
+        "keep-off-grass",
+        "dog-allowed",
+        "crosswalk",
+        "speed-bump",
+        "emergency-phone",
+        "information-board",
+        "recycling-bin",
+        "path",
+        "oak-tree",
+        "shade",
+        "grass-lawn",
+        "walk",
+        "jog",
+        "cycle",
+        "feed-ducks",
+        "fly-kite",
+        "roller-skate",
+        "sit-down"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "bench",
+      "label": "Bench",
+      "ipa": "/bɛntʃ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1437"
+    },
+    {
+      "kind": "card",
+      "id": "fountain",
+      "label": "Fountain",
+      "ipa": "/ˈfaʊntən/",
+      "cefr": "A1",
+      "imageNodeId": "44:1441"
+    },
+    {
+      "kind": "card",
+      "id": "gazebo",
+      "label": "Gazebo",
+      "ipa": "/ɡəˈziːboʊ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1445"
+    },
+    {
+      "kind": "card",
+      "id": "bridge",
+      "label": "Bridge",
+      "ipa": "/brɪdʒ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1449"
+    },
+    {
+      "kind": "card",
+      "id": "statue",
+      "label": "Statue",
+      "ipa": "/ˈstætʃuː/",
+      "cefr": "A1",
+      "imageNodeId": "44:1453"
+    },
+    {
+      "kind": "card",
+      "id": "trash-can",
+      "label": "Trash Can",
+      "ipa": "/træʃ kæn/",
+      "cefr": "A2",
+      "imageNodeId": "44:1457"
+    },
+    {
+      "kind": "card",
+      "id": "lamp-post",
+      "label": "Lamp Post",
+      "ipa": "/læmp poʊst/",
+      "cefr": "A2",
+      "imageNodeId": "44:1461"
+    },
+    {
+      "kind": "card",
+      "id": "picnic-table",
+      "label": "Picnic Table",
+      "ipa": "/ˈpɪknɪk ˈteɪbəl/",
+      "cefr": "A2",
+      "imageNodeId": "44:1465"
+    },
+    {
+      "kind": "card",
+      "id": "drinking-fountain",
+      "label": "Drinking Fountain",
+      "ipa": "/ˈdrɪŋkɪŋ ˈfaʊntən/",
+      "cefr": "B1",
+      "imageNodeId": "44:1469"
+    },
+    {
+      "kind": "card",
+      "id": "bike-rack",
+      "label": "Bike Rack",
+      "ipa": "/baɪk ræk/",
+      "cefr": "A2",
+      "imageNodeId": "44:1473"
+    },
+    {
+      "kind": "card",
+      "id": "pond",
+      "label": "Pond",
+      "ipa": "/pɑːnd/",
+      "cefr": "A1",
+      "imageNodeId": "44:1482"
+    },
+    {
+      "kind": "card",
+      "id": "stream",
+      "label": "Stream",
+      "ipa": "/striːm/",
+      "cefr": "A1",
+      "imageNodeId": "44:1486"
+    },
+    {
+      "kind": "card",
+      "id": "hill",
+      "label": "Hill",
+      "ipa": "/hɪl/",
+      "cefr": "A1",
+      "imageNodeId": "44:1490"
+    },
+    {
+      "kind": "card",
+      "id": "meadow",
+      "label": "Meadow",
+      "ipa": "/ˈmɛdoʊ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1494"
+    },
+    {
+      "kind": "card",
+      "id": "shade-tree",
+      "label": "Shade Tree",
+      "ipa": "/ʃeɪd triː/",
+      "cefr": "A2",
+      "imageNodeId": "44:1498"
+    },
+    {
+      "kind": "card",
+      "id": "flower-bed",
+      "label": "Flower Bed",
+      "ipa": "/ˈflaʊər bɛd/",
+      "cefr": "A2",
+      "imageNodeId": "44:1502"
+    },
+    {
+      "kind": "card",
+      "id": "grass",
+      "label": "Grass",
+      "ipa": "/ɡræs/",
+      "cefr": "A1",
+      "imageNodeId": "44:1506"
+    },
+    {
+      "kind": "card",
+      "id": "pebble",
+      "label": "Pebble",
+      "ipa": "/ˈpɛbəl/",
+      "cefr": "A1",
+      "imageNodeId": "44:1510"
+    },
+    {
+      "kind": "card",
+      "id": "pinecone",
+      "label": "Pinecone",
+      "ipa": "/ˈpaɪnkoʊn/",
+      "cefr": "A1",
+      "imageNodeId": "44:1514"
+    },
+    {
+      "kind": "card",
+      "id": "acorn",
+      "label": "Acorn",
+      "ipa": "/ˈeɪkɔːrn/",
+      "cefr": "A1",
+      "imageNodeId": "44:1518"
+    },
+    {
+      "kind": "card",
+      "id": "duck",
+      "label": "Duck",
+      "ipa": "/dʌk/",
+      "cefr": "A1",
+      "imageNodeId": "44:1527"
+    },
+    {
+      "kind": "card",
+      "id": "swan",
+      "label": "Swan",
+      "ipa": "/swɑːn/",
+      "cefr": "A1",
+      "imageNodeId": "44:1531"
+    },
+    {
+      "kind": "card",
+      "id": "squirrel",
+      "label": "Squirrel",
+      "ipa": "/ˈskwɜːrəl/",
+      "cefr": "A1",
+      "imageNodeId": "44:1535"
+    },
+    {
+      "kind": "card",
+      "id": "pigeon",
+      "label": "Pigeon",
+      "ipa": "/ˈpɪdʒən/",
+      "cefr": "A1",
+      "imageNodeId": "44:1539"
+    },
+    {
+      "kind": "card",
+      "id": "robin",
+      "label": "Robin",
+      "ipa": "/ˈrɑːbɪn/",
+      "cefr": "A1",
+      "imageNodeId": "44:1543"
+    },
+    {
+      "kind": "card",
+      "id": "frog",
+      "label": "Frog",
+      "ipa": "/frɑːɡ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1547"
+    },
+    {
+      "kind": "card",
+      "id": "turtle",
+      "label": "Turtle",
+      "ipa": "/ˈtɜːrtəl/",
+      "cefr": "A1",
+      "imageNodeId": "44:1551"
+    },
+    {
+      "kind": "card",
+      "id": "rabbit",
+      "label": "Rabbit",
+      "ipa": "/ˈræbɪt/",
+      "cefr": "A1",
+      "imageNodeId": "44:1555"
+    },
+    {
+      "kind": "card",
+      "id": "goose",
+      "label": "Goose",
+      "ipa": "/ɡuːs/",
+      "cefr": "A1",
+      "imageNodeId": "44:1559"
+    },
+    {
+      "kind": "card",
+      "id": "sparrow",
+      "label": "Sparrow",
+      "ipa": "/ˈspæroʊ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1563"
+    },
+    {
+      "kind": "card",
+      "id": "walking",
+      "label": "Walking",
+      "ipa": "/ˈwɔːkɪŋ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1572"
+    },
+    {
+      "kind": "card",
+      "id": "jogging",
+      "label": "Jogging",
+      "ipa": "/ˈdʒɑːɡɪŋ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1576"
+    },
+    {
+      "kind": "card",
+      "id": "cycling",
+      "label": "Cycling",
+      "ipa": "/ˈsaɪklɪŋ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1580"
+    },
+    {
+      "kind": "card",
+      "id": "picnic",
+      "label": "Picnic",
+      "ipa": "/ˈpɪknɪk/",
+      "cefr": "A1",
+      "imageNodeId": "44:1584"
+    },
+    {
+      "kind": "card",
+      "id": "reading",
+      "label": "Reading",
+      "ipa": "/ˈriːdɪŋ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1588"
+    },
+    {
+      "kind": "card",
+      "id": "sitting",
+      "label": "Sitting",
+      "ipa": "/ˈsɪtɪŋ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1592"
+    },
+    {
+      "kind": "card",
+      "id": "stretching",
+      "label": "Stretching",
+      "ipa": "/ˈstrɛtʃɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "44:1596"
+    },
+    {
+      "kind": "card",
+      "id": "dog-walking",
+      "label": "Dog Walking",
+      "ipa": "/dɔːɡ ˈwɔːkɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "44:1600"
+    },
+    {
+      "kind": "card",
+      "id": "photography",
+      "label": "Photography",
+      "ipa": "/fəˈtɑːɡrəfi/",
+      "cefr": "A2",
+      "imageNodeId": "44:1604"
+    },
+    {
+      "kind": "card",
+      "id": "bird-watching",
+      "label": "Bird Watching",
+      "ipa": "/bɜːrd ˈwɑːtʃɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "44:1608"
+    },
+    {
+      "kind": "card",
+      "id": "kite",
+      "label": "Kite",
+      "ipa": "/kaɪt/",
+      "cefr": "A1",
+      "imageNodeId": "44:1617"
+    },
+    {
+      "kind": "card",
+      "id": "frisbee",
+      "label": "Frisbee",
+      "ipa": "/ˈfrɪzbiː/",
+      "cefr": "A1",
+      "imageNodeId": "44:1621"
+    },
+    {
+      "kind": "card",
+      "id": "soccer-ball",
+      "label": "Soccer Ball",
+      "ipa": "/ˈsɑːkər bɔːl/",
+      "cefr": "A2",
+      "imageNodeId": "44:1625"
+    },
+    {
+      "kind": "card",
+      "id": "jump-rope",
+      "label": "Jump Rope",
+      "ipa": "/dʒʌmp roʊp/",
+      "cefr": "A2",
+      "imageNodeId": "44:1629"
+    },
+    {
+      "kind": "card",
+      "id": "skateboard",
+      "label": "Skateboard",
+      "ipa": "/ˈskeɪtbɔːrd/",
+      "cefr": "A2",
+      "imageNodeId": "44:1633"
+    },
+    {
+      "kind": "card",
+      "id": "roller-skates",
+      "label": "Roller Skates",
+      "ipa": "/ˈroʊlər skeɪts/",
+      "cefr": "A2",
+      "imageNodeId": "44:1637"
+    },
+    {
+      "kind": "card",
+      "id": "badminton",
+      "label": "Badminton",
+      "ipa": "/ˈbædmɪntən/",
+      "cefr": "A1",
+      "imageNodeId": "44:1641"
+    },
+    {
+      "kind": "card",
+      "id": "tennis-ball",
+      "label": "Tennis Ball",
+      "ipa": "/ˈtɛnɪs bɔːl/",
+      "cefr": "A2",
+      "imageNodeId": "44:1645"
+    },
+    {
+      "kind": "card",
+      "id": "yoga-mat",
+      "label": "Yoga Mat",
+      "ipa": "/ˈjoʊɡə mæt/",
+      "cefr": "A2",
+      "imageNodeId": "44:1649"
+    },
+    {
+      "kind": "card",
+      "id": "bicycle",
+      "label": "Bicycle",
+      "ipa": "/ˈbaɪsɪkəl/",
+      "cefr": "A1",
+      "imageNodeId": "44:1653"
+    },
+    {
+      "kind": "card",
+      "id": "park-map",
+      "label": "Park Map",
+      "ipa": "/pɑːrk mæp/",
+      "cefr": "A2",
+      "imageNodeId": "44:1662"
+    },
+    {
+      "kind": "card",
+      "id": "trail-sign",
+      "label": "Trail Sign",
+      "ipa": "/treɪl saɪn/",
+      "cefr": "A2",
+      "imageNodeId": "44:1666"
+    },
+    {
+      "kind": "card",
+      "id": "no-swimming-sign",
+      "label": "No Swimming Sign",
+      "ipa": "/noʊ ˈswɪmɪŋ saɪn/",
+      "cefr": "B1",
+      "imageNodeId": "44:1670"
+    },
+    {
+      "kind": "card",
+      "id": "keep-off-grass",
+      "label": "Keep Off Grass",
+      "ipa": "/kiːp ɔːf ɡræs/",
+      "cefr": "B1",
+      "imageNodeId": "44:1674"
+    },
+    {
+      "kind": "card",
+      "id": "dog-allowed",
+      "label": "Dog Allowed",
+      "ipa": "/dɔːɡ əˈlaʊd/",
+      "cefr": "A2",
+      "imageNodeId": "44:1678"
+    },
+    {
+      "kind": "card",
+      "id": "crosswalk",
+      "label": "Crosswalk",
+      "ipa": "/ˈkrɔːswɔːk/",
+      "cefr": "A1",
+      "imageNodeId": "44:1682"
+    },
+    {
+      "kind": "card",
+      "id": "speed-bump",
+      "label": "Speed Bump",
+      "ipa": "/spiːd bʌmp/",
+      "cefr": "A2",
+      "imageNodeId": "44:1686"
+    },
+    {
+      "kind": "card",
+      "id": "emergency-phone",
+      "label": "Emergency Phone",
+      "ipa": "/ɪˈmɜːrdʒənsi foʊn/",
+      "cefr": "B1",
+      "imageNodeId": "44:1690"
+    },
+    {
+      "kind": "card",
+      "id": "information-board",
+      "label": "Information Board",
+      "ipa": "/ˌɪnfərˈmeɪʃən bɔːrd/",
+      "cefr": "B1",
+      "imageNodeId": "44:1694"
+    },
+    {
+      "kind": "card",
+      "id": "recycling-bin",
+      "label": "Recycling Bin",
+      "ipa": "/riːˈsaɪklɪŋ bɪn/",
+      "cefr": "A2",
+      "imageNodeId": "44:1698"
+    },
+    {
+      "kind": "card",
+      "id": "path",
+      "label": "Path",
+      "ipa": "/pæθ/",
+      "cefr": "A1",
+      "imageNodeId": "39:650"
+    },
+    {
+      "kind": "card",
+      "id": "oak-tree",
+      "label": "Oak Tree",
+      "ipa": "/oʊk triː/",
+      "cefr": "A2",
+      "imageNodeId": "39:677"
+    },
+    {
+      "kind": "card",
+      "id": "shade",
+      "label": "Shade",
+      "ipa": "/ʃeɪd/",
+      "cefr": "A1",
+      "imageNodeId": "39:697"
+    },
+    {
+      "kind": "card",
+      "id": "grass-lawn",
+      "label": "Grass Lawn",
+      "ipa": "/ɡræs lɔːn/",
+      "cefr": "A2",
+      "imageNodeId": "39:705"
+    },
+    {
+      "kind": "card",
+      "id": "walk",
+      "label": "Walk",
+      "ipa": "/wɔːk/",
+      "cefr": "A1",
+      "imageNodeId": "39:712"
+    },
+    {
+      "kind": "card",
+      "id": "jog",
+      "label": "Jog",
+      "ipa": "/dʒɑːɡ/",
+      "cefr": "A1",
+      "imageNodeId": "39:716"
+    },
+    {
+      "kind": "card",
+      "id": "cycle",
+      "label": "Cycle",
+      "ipa": "/ˈsaɪkəl/",
+      "cefr": "A1",
+      "imageNodeId": "39:720"
+    },
+    {
+      "kind": "card",
+      "id": "feed-ducks",
+      "label": "Feed Ducks",
+      "ipa": "/fiːd dʌks/",
+      "cefr": "A2",
+      "imageNodeId": "39:728"
+    },
+    {
+      "kind": "card",
+      "id": "fly-kite",
+      "label": "Fly Kite",
+      "ipa": "/flaɪ kaɪt/",
+      "cefr": "A2",
+      "imageNodeId": "39:732"
+    },
+    {
+      "kind": "card",
+      "id": "roller-skate",
+      "label": "Roller-Skate",
+      "ipa": "/ˈroʊlər skeɪt/",
+      "cefr": "A2",
+      "imageNodeId": "39:736"
+    },
+    {
+      "kind": "card",
+      "id": "sit-down",
+      "label": "Sit Down",
+      "ipa": "/sɪt daʊn/",
+      "cefr": "A2",
+      "imageNodeId": "39:740"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "542:2207",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "542:2209",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1 · Topic: The Park",
+          "depth": 1,
+          "name": "Level: B1 · Topic: The Park"
+        },
+        {
+          "text": "A Sunday in the Park\n\nEvery Sunday, my family and I go to the park near our neighbourhood. It is a large green space with something for everyone.\n\nThe children head straight to the playground, where there are swings, slides, and a climbing frame. My younger sister loves the seesaw, while my brother prefers the monkey bars. There is soft ground under the equipment, so it is safe if they fall.\n\nMy parents usually sit on a bench near the pond. The pond has ducks and sometimes small fish. There is a wooden bridge across it and a narrow path that goes around the water.\n\nI like to jog on the running track that circles the park. There is also a cycling lane next to it for people on bicycles. Near the entrance, there is a water fountain where joggers stop to drink.\n\nIn the centre of the park, there is a large open field where families have picnics on blankets. Some people play football or throw a frisbee. There are tall trees that give shade, and flower beds with roses and lavender along the main path.\n\nThe park also has a small café near the car park, public toilets, and a few rubbish bins placed around the paths. I always feel relaxed after a visit.",
+          "depth": 1,
+          "name": "A Sunday in the Park Every Sunday, my family and I go to the park near our neighbourhood. It is a large green space with something for everyone. The children head straight to the playground, where there are swings, slides, and a climbing frame. My younger sister loves the seesaw, while my brother prefers the monkey bars. There is soft ground under the equipment, so it is safe if they fall. My parents usually sit on a bench near the pond. The pond has ducks and sometimes small fish. There is a wooden bridge across it and a narrow path that goes around the water. I like to jog on the running track that circles the park. There is also a cycling lane next to it for people on bicycles. Near the entrance, there is a water fountain where joggers stop to drink. In the centre of the park, there is a large open field where families have picnics on blankets. Some people play football or throw a frisbee. There are tall trees that give shade, and flower beds with roses and lavender along the main path. The park also has a small café near the car park, public toilets, and a few rubbish bins placed around the paths. I always feel relaxed after a visit."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What do the children do when they arrive at the park?",
+          "depth": 1,
+          "name": "1. What do the children do when they arrive at the park?"
+        },
+        {
+          "text": "2. What can you see at the pond?",
+          "depth": 1,
+          "name": "2. What can you see at the pond?"
+        },
+        {
+          "text": "3. What does the writer like to do in the park?",
+          "depth": 1,
+          "name": "3. What does the writer like to do in the park?"
+        },
+        {
+          "text": "4. Where do families have picnics?",
+          "depth": 1,
+          "name": "4. Where do families have picnics?"
+        },
+        {
+          "text": "5. What facilities does the park have near the car park?",
+          "depth": 1,
+          "name": "5. What facilities does the park have near the car park?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "542:2222",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "a walk in the park",
+          "depth": 2,
+          "name": "a walk in the park"
+        },
+        {
+          "text": "something very easy",
+          "depth": 2,
+          "name": "something very easy"
+        },
+        {
+          "text": "\"The exam was a walk in the park — I finished in 20 minutes.\"",
+          "depth": 2,
+          "name": "\"The exam was a walk in the park — I finished in 20 minutes.\""
+        },
+        {
+          "text": "go for a stroll",
+          "depth": 2,
+          "name": "go for a stroll"
+        },
+        {
+          "text": "take a slow, relaxed walk",
+          "depth": 2,
+          "name": "take a slow, relaxed walk"
+        },
+        {
+          "text": "\"Let's go for a stroll after lunch.\"",
+          "depth": 2,
+          "name": "\"Let's go for a stroll after lunch.\""
+        },
+        {
+          "text": "hang out",
+          "depth": 2,
+          "name": "hang out"
+        },
+        {
+          "text": "spend time relaxing somewhere",
+          "depth": 2,
+          "name": "spend time relaxing somewhere"
+        },
+        {
+          "text": "\"We like to hang out in the park on weekends.\"",
+          "depth": 2,
+          "name": "\"We like to hang out in the park on weekends.\""
+        },
+        {
+          "text": "run into",
+          "depth": 2,
+          "name": "run into"
+        },
+        {
+          "text": "meet someone unexpectedly",
+          "depth": 2,
+          "name": "meet someone unexpectedly"
+        },
+        {
+          "text": "\"I ran into my old teacher while jogging.\"",
+          "depth": 2,
+          "name": "\"I ran into my old teacher while jogging.\""
+        },
+        {
+          "text": "cool down",
+          "depth": 2,
+          "name": "cool down"
+        },
+        {
+          "text": "become less hot; rest after exercise",
+          "depth": 2,
+          "name": "become less hot; rest after exercise"
+        },
+        {
+          "text": "\"After running, I sat by the fountain to cool down.\"",
+          "depth": 2,
+          "name": "\"After running, I sat by the fountain to cool down.\""
+        },
+        {
+          "text": "play catch",
+          "depth": 2,
+          "name": "play catch"
+        },
+        {
+          "text": "throw a ball back and forth",
+          "depth": 2,
+          "name": "throw a ball back and forth"
+        },
+        {
+          "text": "\"The children were playing catch on the field.\"",
+          "depth": 2,
+          "name": "\"The children were playing catch on the field.\""
+        },
+        {
+          "text": "take a breather",
+          "depth": 2,
+          "name": "take a breather"
+        },
+        {
+          "text": "pause to rest",
+          "depth": 2,
+          "name": "pause to rest"
+        },
+        {
+          "text": "\"Let's take a breather on this bench.\"",
+          "depth": 2,
+          "name": "\"Let's take a breather on this bench.\""
+        },
+        {
+          "text": "out in the open",
+          "depth": 2,
+          "name": "out in the open"
+        },
+        {
+          "text": "outside, in an unenclosed space",
+          "depth": 2,
+          "name": "outside, in an unenclosed space"
+        },
+        {
+          "text": "\"It feels great to be out in the open after a week indoors.\"",
+          "depth": 2,
+          "name": "\"It feels great to be out in the open after a week indoors.\""
+        },
+        {
+          "text": "off the beaten path",
+          "depth": 2,
+          "name": "off the beaten path"
+        },
+        {
+          "text": "away from popular routes",
+          "depth": 2,
+          "name": "away from popular routes"
+        },
+        {
+          "text": "\"There's a quiet trail off the beaten path behind the pond.\"",
+          "depth": 2,
+          "name": "\"There's a quiet trail off the beaten path behind the pond.\""
+        },
+        {
+          "text": "curl up",
+          "depth": 2,
+          "name": "curl up"
+        },
+        {
+          "text": "sit comfortably in a relaxed position",
+          "depth": 2,
+          "name": "sit comfortably in a relaxed position"
+        },
+        {
+          "text": "\"She curled up on the grass with a book.\"",
+          "depth": 2,
+          "name": "\"She curled up on the grass with a book.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "542:2266",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: Two friends meeting at the park",
+          "depth": 1,
+          "name": "Scene: Two friends meeting at the park"
+        },
+        {
+          "text": "Yusuf:",
+          "depth": 2,
+          "name": "Yusuf:"
+        },
+        {
+          "text": "Hey! I didn't expect to see you here. Are you jogging?",
+          "depth": 2,
+          "name": "Hey! I didn't expect to see you here. Are you jogging?"
+        },
+        {
+          "text": "Hana:",
+          "depth": 2,
+          "name": "Hana:"
+        },
+        {
+          "text": "Yes, I try to run around the track twice every morning.",
+          "depth": 2,
+          "name": "Yes, I try to run around the track twice every morning."
+        },
+        {
+          "text": "Yusuf:",
+          "depth": 2,
+          "name": "Yusuf:"
+        },
+        {
+          "text": "I brought my nephew to the playground. He's on the swings.",
+          "depth": 2,
+          "name": "I brought my nephew to the playground. He's on the swings."
+        },
+        {
+          "text": "Hana:",
+          "depth": 2,
+          "name": "Hana:"
+        },
+        {
+          "text": "This park is great for kids — so much space.",
+          "depth": 2,
+          "name": "This park is great for kids — so much space."
+        },
+        {
+          "text": "Yusuf:",
+          "depth": 2,
+          "name": "Yusuf:"
+        },
+        {
+          "text": "After the playground, we'll feed the ducks by the pond.",
+          "depth": 2,
+          "name": "After the playground, we'll feed the ducks by the pond."
+        },
+        {
+          "text": "Hana:",
+          "depth": 2,
+          "name": "Hana:"
+        },
+        {
+          "text": "I love that spot. The bridge over the pond is really pretty.",
+          "depth": 2,
+          "name": "I love that spot. The bridge over the pond is really pretty."
+        },
+        {
+          "text": "Yusuf:",
+          "depth": 2,
+          "name": "Yusuf:"
+        },
+        {
+          "text": "Have you been to the new café near the car park?",
+          "depth": 2,
+          "name": "Have you been to the new café near the car park?"
+        },
+        {
+          "text": "Hana:",
+          "depth": 2,
+          "name": "Hana:"
+        },
+        {
+          "text": "Not yet! Is it good?",
+          "depth": 2,
+          "name": "Not yet! Is it good?"
+        },
+        {
+          "text": "Yusuf:",
+          "depth": 2,
+          "name": "Yusuf:"
+        },
+        {
+          "text": "Yes, fresh juice and sandwiches. Let's go after your run.",
+          "depth": 2,
+          "name": "Yes, fresh juice and sandwiches. Let's go after your run."
+        },
+        {
+          "text": "Hana:",
+          "depth": 2,
+          "name": "Hana:"
+        },
+        {
+          "text": "Sounds like a plan. One more lap and I'll meet you there!",
+          "depth": 2,
+          "name": "Sounds like a plan. One more lap and I'll meet you there!"
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "542:2301",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I went to the park for walk.\"",
+          "depth": 2,
+          "name": "❌ \"I went to the park for walk.\""
+        },
+        {
+          "text": "✅ \"I went to the park for a walk.\"",
+          "depth": 2,
+          "name": "✅ \"I went to the park for a walk.\""
+        },
+        {
+          "text": "Don't forget the article 'a' — 'for a walk', 'for a jog', 'for a run'.",
+          "depth": 2,
+          "name": "Don't forget the article 'a' — 'for a walk', 'for a jog', 'for a run'."
+        },
+        {
+          "text": "❌ \"The children play in the swings.\"",
+          "depth": 2,
+          "name": "❌ \"The children play in the swings.\""
+        },
+        {
+          "text": "✅ \"The children play on the swings.\"",
+          "depth": 2,
+          "name": "✅ \"The children play on the swings.\""
+        },
+        {
+          "text": "Use 'on' for swings, slides, climbing frames — you're physically on them.",
+          "depth": 2,
+          "name": "Use 'on' for swings, slides, climbing frames — you're physically on them."
+        },
+        {
+          "text": "❌ \"We made a picnic in the park.\"",
+          "depth": 2,
+          "name": "❌ \"We made a picnic in the park.\""
+        },
+        {
+          "text": "✅ \"We had a picnic in the park.\"",
+          "depth": 2,
+          "name": "✅ \"We had a picnic in the park.\""
+        },
+        {
+          "text": "The correct collocation is 'have a picnic', not 'make a picnic'.",
+          "depth": 2,
+          "name": "The correct collocation is 'have a picnic', not 'make a picnic'."
+        },
+        {
+          "text": "❌ \"There are many persons in the park.\"",
+          "depth": 2,
+          "name": "❌ \"There are many persons in the park.\""
+        },
+        {
+          "text": "✅ \"There are many people in the park.\"",
+          "depth": 2,
+          "name": "✅ \"There are many people in the park.\""
+        },
+        {
+          "text": "'People' is the standard plural. 'Persons' is very formal/legal.",
+          "depth": 2,
+          "name": "'People' is the standard plural. 'Persons' is very formal/legal."
+        },
+        {
+          "text": "❌ \"I like to go to park on Sundays.\"",
+          "depth": 2,
+          "name": "❌ \"I like to go to park on Sundays.\""
+        },
+        {
+          "text": "✅ \"I like to go to the park on Sundays.\"",
+          "depth": 2,
+          "name": "✅ \"I like to go to the park on Sundays.\""
+        },
+        {
+          "text": "Use 'the' before 'park' when referring to a specific one.",
+          "depth": 2,
+          "name": "Use 'the' before 'park' when referring to a specific one."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "542:2325",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how park vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how park vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "play",
+          "depth": 2,
+          "name": "play"
+        },
+        {
+          "text": "player",
+          "depth": 2,
+          "name": "player"
+        },
+        {
+          "text": "play",
+          "depth": 2,
+          "name": "play"
+        },
+        {
+          "text": "playful",
+          "depth": 2,
+          "name": "playful"
+        },
+        {
+          "text": "jog",
+          "depth": 2,
+          "name": "jog"
+        },
+        {
+          "text": "jogger",
+          "depth": 2,
+          "name": "jogger"
+        },
+        {
+          "text": "jog",
+          "depth": 2,
+          "name": "jog"
+        },
+        {
+          "text": "jogging",
+          "depth": 2,
+          "name": "jogging"
+        },
+        {
+          "text": "cycle",
+          "depth": 2,
+          "name": "cycle"
+        },
+        {
+          "text": "cyclist",
+          "depth": 2,
+          "name": "cyclist"
+        },
+        {
+          "text": "cycle",
+          "depth": 2,
+          "name": "cycle"
+        },
+        {
+          "text": "cycling",
+          "depth": 2,
+          "name": "cycling"
+        },
+        {
+          "text": "swing",
+          "depth": 2,
+          "name": "swing"
+        },
+        {
+          "text": "swing",
+          "depth": 2,
+          "name": "swing"
+        },
+        {
+          "text": "swing",
+          "depth": 2,
+          "name": "swing"
+        },
+        {
+          "text": "swinging",
+          "depth": 2,
+          "name": "swinging"
+        },
+        {
+          "text": "slide",
+          "depth": 2,
+          "name": "slide"
+        },
+        {
+          "text": "slide",
+          "depth": 2,
+          "name": "slide"
+        },
+        {
+          "text": "slide",
+          "depth": 2,
+          "name": "slide"
+        },
+        {
+          "text": "sliding",
+          "depth": 2,
+          "name": "sliding"
+        },
+        {
+          "text": "climb",
+          "depth": 2,
+          "name": "climb"
+        },
+        {
+          "text": "climber",
+          "depth": 2,
+          "name": "climber"
+        },
+        {
+          "text": "climb",
+          "depth": 2,
+          "name": "climb"
+        },
+        {
+          "text": "climbing",
+          "depth": 2,
+          "name": "climbing"
+        },
+        {
+          "text": "relax",
+          "depth": 2,
+          "name": "relax"
+        },
+        {
+          "text": "relaxation",
+          "depth": 2,
+          "name": "relaxation"
+        },
+        {
+          "text": "relax",
+          "depth": 2,
+          "name": "relax"
+        },
+        {
+          "text": "relaxing",
+          "depth": 2,
+          "name": "relaxing"
+        },
+        {
+          "text": "shade",
+          "depth": 2,
+          "name": "shade"
+        },
+        {
+          "text": "shadow",
+          "depth": 2,
+          "name": "shadow"
+        },
+        {
+          "text": "shade",
+          "depth": 2,
+          "name": "shade"
+        },
+        {
+          "text": "shady",
+          "depth": 2,
+          "name": "shady"
+        },
+        {
+          "text": "picnic",
+          "depth": 2,
+          "name": "picnic"
+        },
+        {
+          "text": "picnic",
+          "depth": 2,
+          "name": "picnic"
+        },
+        {
+          "text": "picnic",
+          "depth": 2,
+          "name": "picnic"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "bench",
+          "depth": 2,
+          "name": "bench"
+        },
+        {
+          "text": "bench",
+          "depth": 2,
+          "name": "bench"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "542:2385",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The children ran to the __________ and started climbing.",
+          "depth": 1,
+          "name": "1. The children ran to the __________ and started climbing."
+        },
+        {
+          "text": "2.  We sat on a __________ by the pond and watched the ducks.",
+          "depth": 1,
+          "name": "2. We sat on a __________ by the pond and watched the ducks."
+        },
+        {
+          "text": "3.  She jogged around the running __________ three times.",
+          "depth": 1,
+          "name": "3. She jogged around the running __________ three times."
+        },
+        {
+          "text": "4.  There is a __________ over the pond for taking photos.",
+          "depth": 1,
+          "name": "4. There is a __________ over the pond for taking photos."
+        },
+        {
+          "text": "5.  The family had a __________ on the grass.",
+          "depth": 1,
+          "name": "5. The family had a __________ on the grass."
+        },
+        {
+          "text": "6.  He stopped at the water __________ for a drink.",
+          "depth": 1,
+          "name": "6. He stopped at the water __________ for a drink."
+        },
+        {
+          "text": "7.  Tall trees give __________ on hot days.",
+          "depth": 1,
+          "name": "7. Tall trees give __________ on hot days."
+        },
+        {
+          "text": "8.  My sister loves the __________ — she goes higher every time.",
+          "depth": 1,
+          "name": "8. My sister loves the __________ — she goes higher every time."
+        },
+        {
+          "text": "9.  Put your rubbish in the __________ to keep the park clean.",
+          "depth": 1,
+          "name": "9. Put your rubbish in the __________ to keep the park clean."
+        },
+        {
+          "text": "10. We rode bikes along the cycling __________.",
+          "depth": 1,
+          "name": "10. We rode bikes along the cycling __________."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. playground  2. bench  3. track  4. bridge  5. picnic  6. fountain  7. shade  8. swings  9. bin  10. lane",
+          "depth": 2,
+          "name": "1. playground 2. bench 3. track 4. bridge 5. picnic 6. fountain 7. shade 8. swings 9. bin 10. lane"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "542:2403",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Parks in English-Speaking Countries",
+          "depth": 2,
+          "name": "Parks in English-Speaking Countries"
+        },
+        {
+          "text": "Public parks are free and central to community life. 'Central Park' (NYC), 'Hyde Park' (London), and 'Stanley Park' (Vancouver) are famous examples.",
+          "depth": 2,
+          "name": "Public parks are free and central to community life. 'Central Park' (NYC), 'Hyde Park' (London), and 'Stanley Park' (Vancouver) are famous examples."
+        },
+        {
+          "text": "🇬🇧 vs 🇺🇸 Vocabulary",
+          "depth": 2,
+          "name": "🇬🇧 vs 🇺🇸 Vocabulary"
+        },
+        {
+          "text": "British: 'rubbish bin' / American: 'trash can'. British: 'car park' / American: 'parking lot'. British: 'public toilets' / American: 'restrooms'.",
+          "depth": 2,
+          "name": "British: 'rubbish bin' / American: 'trash can'. British: 'car park' / American: 'parking lot'. British: 'public toilets' / American: 'restrooms'."
+        },
+        {
+          "text": "Dog Parks",
+          "depth": 2,
+          "name": "Dog Parks"
+        },
+        {
+          "text": "Many parks have 'off-lead zones' (UK) or 'off-leash areas' (US) where dogs can run free. Signs say 'Dogs must be kept on a lead/leash' elsewhere.",
+          "depth": 2,
+          "name": "Many parks have 'off-lead zones' (UK) or 'off-leash areas' (US) where dogs can run free. Signs say 'Dogs must be kept on a lead/leash' elsewhere."
+        },
+        {
+          "text": "Park Etiquette",
+          "depth": 2,
+          "name": "Park Etiquette"
+        },
+        {
+          "text": "Common rules: 'keep off the grass', 'no littering', 'pick up after your dog'. Understanding these signs is useful when visiting English-speaking countries.",
+          "depth": 2,
+          "name": "Common rules: 'keep off the grass', 'no littering', 'pick up after your dog'. Understanding these signs is useful when visiting English-speaking countries."
+        },
+        {
+          "text": "Playground vs Play Area",
+          "depth": 2,
+          "name": "Playground vs Play Area"
+        },
+        {
+          "text": "'Playground' is most common for the area with swings and slides. 'Play area' appears on signs. 'Playpark' is used in Scotland.",
+          "depth": 2,
+          "name": "'Playground' is most common for the area with swings and slides. 'Play area' appears on signs. 'Playpark' is used in Scotland."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "542:2422",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "bench",
+          "depth": 2,
+          "name": "bench"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "park ~, sit on a ~, wooden ~",
+          "depth": 2,
+          "name": "park ~, sit on a ~, wooden ~"
+        },
+        {
+          "text": "pond",
+          "depth": 2,
+          "name": "pond"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "duck ~, garden ~, fish ~",
+          "depth": 2,
+          "name": "duck ~, garden ~, fish ~"
+        },
+        {
+          "text": "swing",
+          "depth": 2,
+          "name": "swing"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "on the ~s, ~ set, tire ~",
+          "depth": 2,
+          "name": "on the ~s, ~ set, tire ~"
+        },
+        {
+          "text": "slide",
+          "depth": 2,
+          "name": "slide"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "go down the ~, water ~",
+          "depth": 2,
+          "name": "go down the ~, water ~"
+        },
+        {
+          "text": "path",
+          "depth": 2,
+          "name": "path"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "foot~, ~ through the park",
+          "depth": 2,
+          "name": "foot~, ~ through the park"
+        },
+        {
+          "text": "fountain",
+          "depth": 2,
+          "name": "fountain"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "water ~, drinking ~",
+          "depth": 2,
+          "name": "water ~, drinking ~"
+        },
+        {
+          "text": "track",
+          "depth": 2,
+          "name": "track"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "running ~, race~",
+          "depth": 2,
+          "name": "running ~, race~"
+        },
+        {
+          "text": "picnic",
+          "depth": 2,
+          "name": "picnic"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "have a ~, ~ basket, ~ blanket",
+          "depth": 2,
+          "name": "have a ~, ~ basket, ~ blanket"
+        },
+        {
+          "text": "playground",
+          "depth": 2,
+          "name": "playground"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "children's ~, ~ equipment",
+          "depth": 2,
+          "name": "children's ~, ~ equipment"
+        },
+        {
+          "text": "shade",
+          "depth": 2,
+          "name": "shade"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "in the ~, ~ of a tree",
+          "depth": 2,
+          "name": "in the ~, ~ of a tree"
+        }
+      ]
+    }
+  }
+}

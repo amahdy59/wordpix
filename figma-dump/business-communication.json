@@ -1,0 +1,393 @@
+{
+  "unitId": "business-communication",
+  "name": "Business Communication",
+  "subtopics": [
+    {
+      "id": "written-communication",
+      "title": "Written Communication",
+      "wordIds": [
+        "email",
+        "memo",
+        "report",
+        "proposal",
+        "invoice",
+        "contract",
+        "letter",
+        "newsletter",
+        "press-release",
+        "minutes"
+      ]
+    },
+    {
+      "id": "business-terms",
+      "title": "Business Terms",
+      "wordIds": [
+        "deadline",
+        "milestone",
+        "deliverable",
+        "stakeholder",
+        "benchmark",
+        "kpi",
+        "roi",
+        "strategy",
+        "objective",
+        "initiative"
+      ]
+    },
+    {
+      "id": "collaboration",
+      "title": "Collaboration",
+      "wordIds": [
+        "teamwork",
+        "brainstorm",
+        "feedback",
+        "review",
+        "approval",
+        "delegation",
+        "coordination",
+        "synergy",
+        "consensus",
+        "alignment"
+      ]
+    },
+    {
+      "id": "professional-phrases",
+      "title": "Professional Phrases",
+      "wordIds": [
+        "follow-up",
+        "touch-base",
+        "circle-back",
+        "moving-forward",
+        "action-items",
+        "best-practice",
+        "takeaway",
+        "bottleneck",
+        "scalable",
+        "leverage"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "email",
+      "label": "Email",
+      "ipa": "/ˈiːmeɪl/",
+      "cefr": "B2",
+      "imageNodeId": "467:13504"
+    },
+    {
+      "kind": "card",
+      "id": "memo",
+      "label": "Memo",
+      "ipa": "/ˈmɛmoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:13508"
+    },
+    {
+      "kind": "card",
+      "id": "report",
+      "label": "Report",
+      "ipa": "/rɪˈpɔːrt/",
+      "cefr": "B2",
+      "imageNodeId": "467:13512"
+    },
+    {
+      "kind": "card",
+      "id": "proposal",
+      "label": "Proposal",
+      "ipa": "/prəˈpoʊzəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:13516"
+    },
+    {
+      "kind": "card",
+      "id": "invoice",
+      "label": "Invoice",
+      "ipa": "/ˈɪnvɔɪs/",
+      "cefr": "B2",
+      "imageNodeId": "467:13520"
+    },
+    {
+      "kind": "card",
+      "id": "contract",
+      "label": "Contract",
+      "ipa": "/ˈkɒntrækt/",
+      "cefr": "B2",
+      "imageNodeId": "467:13524"
+    },
+    {
+      "kind": "card",
+      "id": "letter",
+      "label": "Letter",
+      "ipa": "/ˈlɛtər/",
+      "cefr": "B2",
+      "imageNodeId": "467:13528"
+    },
+    {
+      "kind": "card",
+      "id": "newsletter",
+      "label": "Newsletter",
+      "ipa": "/ˈnjuːzˌlɛtər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13532"
+    },
+    {
+      "kind": "card",
+      "id": "press-release",
+      "label": "Press Release",
+      "ipa": "/prɛs rɪˈliːs/",
+      "cefr": "C1",
+      "imageNodeId": "467:13536"
+    },
+    {
+      "kind": "card",
+      "id": "minutes",
+      "label": "Minutes",
+      "ipa": "/ˈmɪnɪts/",
+      "cefr": "B2",
+      "imageNodeId": "467:13540"
+    },
+    {
+      "kind": "card",
+      "id": "deadline",
+      "label": "Deadline",
+      "ipa": "/ˈdɛdˌlaɪn/",
+      "cefr": "B2",
+      "imageNodeId": "467:13549"
+    },
+    {
+      "kind": "card",
+      "id": "milestone",
+      "label": "Milestone",
+      "ipa": "/ˈmaɪlˌstoʊn/",
+      "cefr": "B2",
+      "imageNodeId": "467:13553"
+    },
+    {
+      "kind": "card",
+      "id": "deliverable",
+      "label": "Deliverable",
+      "ipa": "/dɪˈlɪvərəbəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:13557"
+    },
+    {
+      "kind": "card",
+      "id": "stakeholder",
+      "label": "Stakeholder",
+      "ipa": "/ˈsteɪkˌhoʊldər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13561"
+    },
+    {
+      "kind": "card",
+      "id": "benchmark",
+      "label": "Benchmark",
+      "ipa": "/ˈbɛntʃˌmɑːrk/",
+      "cefr": "B2",
+      "imageNodeId": "467:13565"
+    },
+    {
+      "kind": "card",
+      "id": "kpi",
+      "label": "KPI",
+      "ipa": "/ˌkeɪpiːˈaɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:13569"
+    },
+    {
+      "kind": "card",
+      "id": "roi",
+      "label": "ROI",
+      "ipa": "/ˌɑːroʊˈaɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:13573"
+    },
+    {
+      "kind": "card",
+      "id": "strategy",
+      "label": "Strategy",
+      "ipa": "/ˈstrætədʒi/",
+      "cefr": "B2",
+      "imageNodeId": "467:13577"
+    },
+    {
+      "kind": "card",
+      "id": "objective",
+      "label": "Objective",
+      "ipa": "/əbˈdʒɛktɪv/",
+      "cefr": "B2",
+      "imageNodeId": "467:13581"
+    },
+    {
+      "kind": "card",
+      "id": "initiative",
+      "label": "Initiative",
+      "ipa": "/ɪˈnɪʃətɪv/",
+      "cefr": "C1",
+      "imageNodeId": "467:13585"
+    },
+    {
+      "kind": "card",
+      "id": "teamwork",
+      "label": "Teamwork",
+      "ipa": "/ˈtiːmˌwɜːrk/",
+      "cefr": "B2",
+      "imageNodeId": "467:13594"
+    },
+    {
+      "kind": "card",
+      "id": "brainstorm",
+      "label": "Brainstorm",
+      "ipa": "/ˈbreɪnˌstɔːrm/",
+      "cefr": "C1",
+      "imageNodeId": "467:13598"
+    },
+    {
+      "kind": "card",
+      "id": "feedback",
+      "label": "Feedback",
+      "ipa": "/ˈfiːdˌbæk/",
+      "cefr": "B2",
+      "imageNodeId": "467:13602"
+    },
+    {
+      "kind": "card",
+      "id": "review",
+      "label": "Review",
+      "ipa": "/rɪˈvjuː/",
+      "cefr": "B2",
+      "imageNodeId": "467:13606"
+    },
+    {
+      "kind": "card",
+      "id": "approval",
+      "label": "Approval",
+      "ipa": "/əˈpruːvəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:13610"
+    },
+    {
+      "kind": "card",
+      "id": "delegation",
+      "label": "Delegation",
+      "ipa": "/ˌdɛlɪˈɡeɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:13614"
+    },
+    {
+      "kind": "card",
+      "id": "coordination",
+      "label": "Coordination",
+      "ipa": "/koʊˌɔːrdɪˈneɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:13618"
+    },
+    {
+      "kind": "card",
+      "id": "synergy",
+      "label": "Synergy",
+      "ipa": "/ˈsɪnərdʒi/",
+      "cefr": "B2",
+      "imageNodeId": "467:13622"
+    },
+    {
+      "kind": "card",
+      "id": "consensus",
+      "label": "Consensus",
+      "ipa": "/kənˈsɛnsəs/",
+      "cefr": "B2",
+      "imageNodeId": "467:13626"
+    },
+    {
+      "kind": "card",
+      "id": "alignment",
+      "label": "Alignment",
+      "ipa": "/əˈlaɪnmənt/",
+      "cefr": "B2",
+      "imageNodeId": "467:13630"
+    },
+    {
+      "kind": "card",
+      "id": "follow-up",
+      "label": "Follow Up",
+      "ipa": "/ˈfɒloʊ ʌp/",
+      "cefr": "C1",
+      "imageNodeId": "467:13639"
+    },
+    {
+      "kind": "card",
+      "id": "touch-base",
+      "label": "Touch Base",
+      "ipa": "/tʌtʃ beɪs/",
+      "cefr": "C1",
+      "imageNodeId": "467:13643"
+    },
+    {
+      "kind": "card",
+      "id": "circle-back",
+      "label": "Circle Back",
+      "ipa": "/ˈsɜːrkəl bæk/",
+      "cefr": "C1",
+      "imageNodeId": "467:13647"
+    },
+    {
+      "kind": "card",
+      "id": "moving-forward",
+      "label": "Moving Forward",
+      "ipa": "/ˈmuːvɪŋ ˈfɔːrwərd/",
+      "cefr": "C1",
+      "imageNodeId": "467:13651"
+    },
+    {
+      "kind": "card",
+      "id": "action-items",
+      "label": "Action Items",
+      "ipa": "/ˈækʃən ˈaɪtəmz/",
+      "cefr": "C1",
+      "imageNodeId": "467:13655"
+    },
+    {
+      "kind": "card",
+      "id": "best-practice",
+      "label": "Best Practice",
+      "ipa": "/bɛst ˈpræktɪs/",
+      "cefr": "C1",
+      "imageNodeId": "467:13659"
+    },
+    {
+      "kind": "card",
+      "id": "takeaway",
+      "label": "Takeaway",
+      "ipa": "/ˈteɪkəˌweɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:13663"
+    },
+    {
+      "kind": "card",
+      "id": "bottleneck",
+      "label": "Bottleneck",
+      "ipa": "/ˈbɒtəlˌnɛk/",
+      "cefr": "C1",
+      "imageNodeId": "467:13667"
+    },
+    {
+      "kind": "card",
+      "id": "scalable",
+      "label": "Scalable",
+      "ipa": "/ˈskeɪləbəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:13671"
+    },
+    {
+      "kind": "card",
+      "id": "leverage",
+      "label": "Leverage",
+      "ipa": "/ˈlɛvərɪdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "467:13675"
+    }
+  ],
+  "materials": null
+}

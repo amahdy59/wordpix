@@ -1,0 +1,393 @@
+{
+  "unitId": "maps-navigation",
+  "name": "Maps & Navigation",
+  "subtopics": [
+    {
+      "id": "map-elements",
+      "title": "Map Elements",
+      "wordIds": [
+        "map",
+        "legend",
+        "scale",
+        "compass-rose",
+        "grid",
+        "coordinates",
+        "latitude",
+        "longitude",
+        "contour",
+        "boundary"
+      ]
+    },
+    {
+      "id": "navigation-tools",
+      "title": "Navigation Tools",
+      "wordIds": [
+        "gps",
+        "compass",
+        "satellite",
+        "radar",
+        "binoculars",
+        "telescope",
+        "altimeter",
+        "speedometer",
+        "odometer",
+        "sextant"
+      ]
+    },
+    {
+      "id": "route-planning",
+      "title": "Route Planning",
+      "wordIds": [
+        "route",
+        "path",
+        "trail",
+        "shortcut",
+        "detour",
+        "destination",
+        "origin",
+        "waypoint",
+        "milestone",
+        "checkpoint"
+      ]
+    },
+    {
+      "id": "digital-navigation",
+      "title": "Digital Navigation",
+      "wordIds": [
+        "navigation-app",
+        "pin",
+        "search",
+        "directions",
+        "traffic",
+        "estimated-time",
+        "reroute",
+        "satellite-view",
+        "street-view",
+        "share-location"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "map",
+      "label": "Map",
+      "ipa": "/mæp/",
+      "cefr": "A2",
+      "imageNodeId": "467:11632"
+    },
+    {
+      "kind": "card",
+      "id": "legend",
+      "label": "Legend",
+      "ipa": "/ˈlɛdʒənd/",
+      "cefr": "A2",
+      "imageNodeId": "467:11636"
+    },
+    {
+      "kind": "card",
+      "id": "scale",
+      "label": "Scale",
+      "ipa": "/skeɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:11640"
+    },
+    {
+      "kind": "card",
+      "id": "compass-rose",
+      "label": "Compass Rose",
+      "ipa": "/ˈkʌmpəs roʊz/",
+      "cefr": "B1",
+      "imageNodeId": "467:11644"
+    },
+    {
+      "kind": "card",
+      "id": "grid",
+      "label": "Grid",
+      "ipa": "/ɡrɪd/",
+      "cefr": "A2",
+      "imageNodeId": "467:11648"
+    },
+    {
+      "kind": "card",
+      "id": "coordinates",
+      "label": "Coordinates",
+      "ipa": "/koʊˈɔːrdɪnɪts/",
+      "cefr": "B1",
+      "imageNodeId": "467:11652"
+    },
+    {
+      "kind": "card",
+      "id": "latitude",
+      "label": "Latitude",
+      "ipa": "/ˈlætɪˌtjuːd/",
+      "cefr": "A2",
+      "imageNodeId": "467:11656"
+    },
+    {
+      "kind": "card",
+      "id": "longitude",
+      "label": "Longitude",
+      "ipa": "/ˈlɒndʒɪˌtjuːd/",
+      "cefr": "A2",
+      "imageNodeId": "467:11660"
+    },
+    {
+      "kind": "card",
+      "id": "contour",
+      "label": "Contour",
+      "ipa": "/ˈkɒntʊər/",
+      "cefr": "A2",
+      "imageNodeId": "467:11664"
+    },
+    {
+      "kind": "card",
+      "id": "boundary",
+      "label": "Boundary",
+      "ipa": "/ˈbaʊndəri/",
+      "cefr": "A2",
+      "imageNodeId": "467:11668"
+    },
+    {
+      "kind": "card",
+      "id": "gps",
+      "label": "GPS",
+      "ipa": "/ˌdʒiːpiːˈɛs/",
+      "cefr": "A2",
+      "imageNodeId": "467:11677"
+    },
+    {
+      "kind": "card",
+      "id": "compass",
+      "label": "Compass",
+      "ipa": "/ˈkʌmpəs/",
+      "cefr": "A2",
+      "imageNodeId": "467:11681"
+    },
+    {
+      "kind": "card",
+      "id": "satellite",
+      "label": "Satellite",
+      "ipa": "/ˈsætəˌlaɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:11685"
+    },
+    {
+      "kind": "card",
+      "id": "radar",
+      "label": "Radar",
+      "ipa": "/ˈreɪdɑːr/",
+      "cefr": "A2",
+      "imageNodeId": "467:11689"
+    },
+    {
+      "kind": "card",
+      "id": "binoculars",
+      "label": "Binoculars",
+      "ipa": "/bɪˈnɒkjʊlərz/",
+      "cefr": "B1",
+      "imageNodeId": "467:11693"
+    },
+    {
+      "kind": "card",
+      "id": "telescope",
+      "label": "Telescope",
+      "ipa": "/ˈtɛlɪˌskoʊp/",
+      "cefr": "A2",
+      "imageNodeId": "467:11697"
+    },
+    {
+      "kind": "card",
+      "id": "altimeter",
+      "label": "Altimeter",
+      "ipa": "/ælˈtɪmɪtər/",
+      "cefr": "A2",
+      "imageNodeId": "467:11701"
+    },
+    {
+      "kind": "card",
+      "id": "speedometer",
+      "label": "Speedometer",
+      "ipa": "/spiːˈdɒmɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "467:11705"
+    },
+    {
+      "kind": "card",
+      "id": "odometer",
+      "label": "Odometer",
+      "ipa": "/oʊˈdɒmɪtər/",
+      "cefr": "A2",
+      "imageNodeId": "467:11709"
+    },
+    {
+      "kind": "card",
+      "id": "sextant",
+      "label": "Sextant",
+      "ipa": "/ˈsɛkstənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:11713"
+    },
+    {
+      "kind": "card",
+      "id": "route",
+      "label": "Route",
+      "ipa": "/ruːt/",
+      "cefr": "A2",
+      "imageNodeId": "467:11722"
+    },
+    {
+      "kind": "card",
+      "id": "path",
+      "label": "Path",
+      "ipa": "/pæθ/",
+      "cefr": "A2",
+      "imageNodeId": "467:11726"
+    },
+    {
+      "kind": "card",
+      "id": "trail",
+      "label": "Trail",
+      "ipa": "/treɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:11730"
+    },
+    {
+      "kind": "card",
+      "id": "shortcut",
+      "label": "Shortcut",
+      "ipa": "/ˈʃɔːrtˌkʌt/",
+      "cefr": "A2",
+      "imageNodeId": "467:11734"
+    },
+    {
+      "kind": "card",
+      "id": "detour",
+      "label": "Detour",
+      "ipa": "/ˈdiːtʊər/",
+      "cefr": "A2",
+      "imageNodeId": "467:11738"
+    },
+    {
+      "kind": "card",
+      "id": "destination",
+      "label": "Destination",
+      "ipa": "/ˌdɛstɪˈneɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "467:11742"
+    },
+    {
+      "kind": "card",
+      "id": "origin",
+      "label": "Origin",
+      "ipa": "/ˈɒrɪdʒɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:11746"
+    },
+    {
+      "kind": "card",
+      "id": "waypoint",
+      "label": "Waypoint",
+      "ipa": "/ˈweɪˌpɔɪnt/",
+      "cefr": "A2",
+      "imageNodeId": "467:11750"
+    },
+    {
+      "kind": "card",
+      "id": "milestone",
+      "label": "Milestone",
+      "ipa": "/ˈmaɪlˌstoʊn/",
+      "cefr": "A2",
+      "imageNodeId": "467:11754"
+    },
+    {
+      "kind": "card",
+      "id": "checkpoint",
+      "label": "Checkpoint",
+      "ipa": "/ˈtʃɛkˌpɔɪnt/",
+      "cefr": "B1",
+      "imageNodeId": "467:11758"
+    },
+    {
+      "kind": "card",
+      "id": "navigation-app",
+      "label": "Navigation App",
+      "ipa": "/ˌnævɪˈɡeɪʃən æp/",
+      "cefr": "B1",
+      "imageNodeId": "467:11767"
+    },
+    {
+      "kind": "card",
+      "id": "pin",
+      "label": "Pin",
+      "ipa": "/pɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:11771"
+    },
+    {
+      "kind": "card",
+      "id": "search",
+      "label": "Search",
+      "ipa": "/sɜːrtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:11775"
+    },
+    {
+      "kind": "card",
+      "id": "directions",
+      "label": "Directions",
+      "ipa": "/dɪˈrɛkʃənz/",
+      "cefr": "B1",
+      "imageNodeId": "467:11779"
+    },
+    {
+      "kind": "card",
+      "id": "traffic",
+      "label": "Traffic",
+      "ipa": "/ˈtræfɪk/",
+      "cefr": "A2",
+      "imageNodeId": "467:11783"
+    },
+    {
+      "kind": "card",
+      "id": "estimated-time",
+      "label": "Estimated Time",
+      "ipa": "/ˈɛstɪˌmeɪtɪd taɪm/",
+      "cefr": "B1",
+      "imageNodeId": "467:11787"
+    },
+    {
+      "kind": "card",
+      "id": "reroute",
+      "label": "Reroute",
+      "ipa": "/riːˈruːt/",
+      "cefr": "A2",
+      "imageNodeId": "467:11791"
+    },
+    {
+      "kind": "card",
+      "id": "satellite-view",
+      "label": "Satellite View",
+      "ipa": "/ˈsætəˌlaɪt vjuː/",
+      "cefr": "B1",
+      "imageNodeId": "467:11795"
+    },
+    {
+      "kind": "card",
+      "id": "street-view",
+      "label": "Street View",
+      "ipa": "/striːt vjuː/",
+      "cefr": "B1",
+      "imageNodeId": "467:11799"
+    },
+    {
+      "kind": "card",
+      "id": "share-location",
+      "label": "Share Location",
+      "ipa": "/ʃɛər loʊˈkeɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "467:11803"
+    }
+  ],
+  "materials": null
+}

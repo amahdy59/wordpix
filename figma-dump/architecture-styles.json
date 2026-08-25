@@ -1,0 +1,393 @@
+{
+  "unitId": "architecture-styles",
+  "name": "Architecture Styles",
+  "subtopics": [
+    {
+      "id": "classical",
+      "title": "Classical",
+      "wordIds": [
+        "greek",
+        "roman",
+        "byzantine",
+        "romanesque",
+        "gothic",
+        "renaissance",
+        "baroque",
+        "neoclassical",
+        "beaux-arts",
+        "palladian"
+      ]
+    },
+    {
+      "id": "modern",
+      "title": "Modern",
+      "wordIds": [
+        "art-nouveau",
+        "art-deco",
+        "bauhaus",
+        "modernist",
+        "brutalist",
+        "international-style",
+        "mid-century-modern",
+        "postmodern",
+        "deconstructivist",
+        "high-tech"
+      ]
+    },
+    {
+      "id": "contemporary",
+      "title": "Contemporary",
+      "wordIds": [
+        "minimalist",
+        "sustainable",
+        "parametric",
+        "organic",
+        "biophilic",
+        "smart-building",
+        "adaptive-reuse",
+        "net-zero",
+        "passive-house",
+        "modular"
+      ]
+    },
+    {
+      "id": "architectural-features",
+      "title": "Architectural Features",
+      "wordIds": [
+        "dome",
+        "arch",
+        "vault",
+        "cantilever",
+        "facade",
+        "atrium",
+        "skylight",
+        "colonnade",
+        "portico",
+        "minaret"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "greek",
+      "label": "Greek",
+      "ipa": "/ɡriːk/",
+      "cefr": "B2",
+      "imageNodeId": "467:19422"
+    },
+    {
+      "kind": "card",
+      "id": "roman",
+      "label": "Roman",
+      "ipa": "/ˈroʊmən/",
+      "cefr": "B2",
+      "imageNodeId": "467:19426"
+    },
+    {
+      "kind": "card",
+      "id": "byzantine",
+      "label": "Byzantine",
+      "ipa": "/ˈbɪzənˌtiːn/",
+      "cefr": "B2",
+      "imageNodeId": "467:19430"
+    },
+    {
+      "kind": "card",
+      "id": "romanesque",
+      "label": "Romanesque",
+      "ipa": "/ˌroʊməˈnɛsk/",
+      "cefr": "C1",
+      "imageNodeId": "467:19434"
+    },
+    {
+      "kind": "card",
+      "id": "gothic",
+      "label": "Gothic",
+      "ipa": "/ˈɡɒθɪk/",
+      "cefr": "B2",
+      "imageNodeId": "467:19438"
+    },
+    {
+      "kind": "card",
+      "id": "renaissance",
+      "label": "Renaissance",
+      "ipa": "/ˌrɛnəˈsɒns/",
+      "cefr": "C1",
+      "imageNodeId": "467:19442"
+    },
+    {
+      "kind": "card",
+      "id": "baroque",
+      "label": "Baroque",
+      "ipa": "/bəˈroʊk/",
+      "cefr": "B2",
+      "imageNodeId": "467:19446"
+    },
+    {
+      "kind": "card",
+      "id": "neoclassical",
+      "label": "Neoclassical",
+      "ipa": "/ˌniːoʊˈklæsɪkəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:19450"
+    },
+    {
+      "kind": "card",
+      "id": "beaux-arts",
+      "label": "Beaux-Arts",
+      "ipa": "/boʊz ɑːrts/",
+      "cefr": "C1",
+      "imageNodeId": "467:19454"
+    },
+    {
+      "kind": "card",
+      "id": "palladian",
+      "label": "Palladian",
+      "ipa": "/pəˈleɪdiən/",
+      "cefr": "B2",
+      "imageNodeId": "467:19458"
+    },
+    {
+      "kind": "card",
+      "id": "art-nouveau",
+      "label": "Art Nouveau",
+      "ipa": "/ɑːrt nuːˈvoʊ/",
+      "cefr": "C1",
+      "imageNodeId": "467:19467"
+    },
+    {
+      "kind": "card",
+      "id": "art-deco",
+      "label": "Art Deco",
+      "ipa": "/ɑːrt ˈdɛkoʊ/",
+      "cefr": "C1",
+      "imageNodeId": "467:19471"
+    },
+    {
+      "kind": "card",
+      "id": "bauhaus",
+      "label": "Bauhaus",
+      "ipa": "/ˈbaʊˌhaʊs/",
+      "cefr": "B2",
+      "imageNodeId": "467:19475"
+    },
+    {
+      "kind": "card",
+      "id": "modernist",
+      "label": "Modernist",
+      "ipa": "/ˈmɒdərnɪst/",
+      "cefr": "B2",
+      "imageNodeId": "467:19479"
+    },
+    {
+      "kind": "card",
+      "id": "brutalist",
+      "label": "Brutalist",
+      "ipa": "/ˈbruːtəlɪst/",
+      "cefr": "B2",
+      "imageNodeId": "467:19483"
+    },
+    {
+      "kind": "card",
+      "id": "international-style",
+      "label": "International Style",
+      "ipa": "/ˌɪntərˈnæʃənəl staɪl/",
+      "cefr": "C1",
+      "imageNodeId": "467:19487"
+    },
+    {
+      "kind": "card",
+      "id": "mid-century-modern",
+      "label": "Mid-Century Modern",
+      "ipa": "/mɪd ˈsɛntʃəri ˈmɒdərn/",
+      "cefr": "C1",
+      "imageNodeId": "467:19491"
+    },
+    {
+      "kind": "card",
+      "id": "postmodern",
+      "label": "Postmodern",
+      "ipa": "/ˌpoʊstˈmɒdərn/",
+      "cefr": "C1",
+      "imageNodeId": "467:19495"
+    },
+    {
+      "kind": "card",
+      "id": "deconstructivist",
+      "label": "Deconstructivist",
+      "ipa": "/ˌdiːkənˈstrʌktɪvɪst/",
+      "cefr": "C1",
+      "imageNodeId": "467:19499"
+    },
+    {
+      "kind": "card",
+      "id": "high-tech",
+      "label": "High-Tech",
+      "ipa": "/haɪ tɛk/",
+      "cefr": "C1",
+      "imageNodeId": "467:19503"
+    },
+    {
+      "kind": "card",
+      "id": "minimalist",
+      "label": "Minimalist",
+      "ipa": "/ˈmɪnɪməlɪst/",
+      "cefr": "C1",
+      "imageNodeId": "467:19512"
+    },
+    {
+      "kind": "card",
+      "id": "sustainable",
+      "label": "Sustainable",
+      "ipa": "/səˈsteɪnəbəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:19516"
+    },
+    {
+      "kind": "card",
+      "id": "parametric",
+      "label": "Parametric",
+      "ipa": "/ˌpærəˈmɛtrɪk/",
+      "cefr": "C1",
+      "imageNodeId": "467:19520"
+    },
+    {
+      "kind": "card",
+      "id": "organic",
+      "label": "Organic",
+      "ipa": "/ɔːrˈɡænɪk/",
+      "cefr": "B2",
+      "imageNodeId": "467:19524"
+    },
+    {
+      "kind": "card",
+      "id": "biophilic",
+      "label": "Biophilic",
+      "ipa": "/ˌbaɪoʊˈfɪlɪk/",
+      "cefr": "B2",
+      "imageNodeId": "467:19528"
+    },
+    {
+      "kind": "card",
+      "id": "smart-building",
+      "label": "Smart Building",
+      "ipa": "/smɑːrt ˈbɪldɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:19532"
+    },
+    {
+      "kind": "card",
+      "id": "adaptive-reuse",
+      "label": "Adaptive Reuse",
+      "ipa": "/əˈdæptɪv riːˈjuːs/",
+      "cefr": "C1",
+      "imageNodeId": "467:19536"
+    },
+    {
+      "kind": "card",
+      "id": "net-zero",
+      "label": "Net Zero",
+      "ipa": "/nɛt ˈzɪəroʊ/",
+      "cefr": "C1",
+      "imageNodeId": "467:19540"
+    },
+    {
+      "kind": "card",
+      "id": "passive-house",
+      "label": "Passive House",
+      "ipa": "/ˈpæsɪv haʊs/",
+      "cefr": "C1",
+      "imageNodeId": "467:19544"
+    },
+    {
+      "kind": "card",
+      "id": "modular",
+      "label": "Modular",
+      "ipa": "/ˈmɒdjʊlər/",
+      "cefr": "B2",
+      "imageNodeId": "467:19548"
+    },
+    {
+      "kind": "card",
+      "id": "dome",
+      "label": "Dome",
+      "ipa": "/doʊm/",
+      "cefr": "B2",
+      "imageNodeId": "467:19557"
+    },
+    {
+      "kind": "card",
+      "id": "arch",
+      "label": "Arch",
+      "ipa": "/ɑːrtʃ/",
+      "cefr": "B2",
+      "imageNodeId": "467:19561"
+    },
+    {
+      "kind": "card",
+      "id": "vault",
+      "label": "Vault",
+      "ipa": "/vɔːlt/",
+      "cefr": "B2",
+      "imageNodeId": "467:19565"
+    },
+    {
+      "kind": "card",
+      "id": "cantilever",
+      "label": "Cantilever",
+      "ipa": "/ˈkæntɪˌliːvər/",
+      "cefr": "C1",
+      "imageNodeId": "467:19569"
+    },
+    {
+      "kind": "card",
+      "id": "facade",
+      "label": "Facade",
+      "ipa": "/fəˈsɑːd/",
+      "cefr": "B2",
+      "imageNodeId": "467:19573"
+    },
+    {
+      "kind": "card",
+      "id": "atrium",
+      "label": "Atrium",
+      "ipa": "/ˈeɪtriəm/",
+      "cefr": "B2",
+      "imageNodeId": "467:19577"
+    },
+    {
+      "kind": "card",
+      "id": "skylight",
+      "label": "Skylight",
+      "ipa": "/ˈskaɪˌlaɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:19581"
+    },
+    {
+      "kind": "card",
+      "id": "colonnade",
+      "label": "Colonnade",
+      "ipa": "/ˌkɒləˈneɪd/",
+      "cefr": "B2",
+      "imageNodeId": "467:19585"
+    },
+    {
+      "kind": "card",
+      "id": "portico",
+      "label": "Portico",
+      "ipa": "/ˈpɔːrtɪˌkoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:19589"
+    },
+    {
+      "kind": "card",
+      "id": "minaret",
+      "label": "Minaret",
+      "ipa": "/ˌmɪnəˈrɛt/",
+      "cefr": "B2",
+      "imageNodeId": "467:19593"
+    }
+  ],
+  "materials": null
+}

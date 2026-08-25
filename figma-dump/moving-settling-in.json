@@ -1,0 +1,393 @@
+{
+  "unitId": "moving-settling-in",
+  "name": "Moving & Settling In",
+  "subtopics": [
+    {
+      "id": "moving-supplies",
+      "title": "Moving Supplies",
+      "wordIds": [
+        "moving-box",
+        "packing-tape",
+        "bubble-wrap",
+        "packing-paper",
+        "marker",
+        "moving-blanket",
+        "dolly",
+        "hand-truck",
+        "rope",
+        "zip-tie"
+      ]
+    },
+    {
+      "id": "moving-process",
+      "title": "Moving Process",
+      "wordIds": [
+        "pack",
+        "load",
+        "unload",
+        "unpack",
+        "label",
+        "sort",
+        "donate",
+        "discard",
+        "disassemble",
+        "reassemble"
+      ]
+    },
+    {
+      "id": "setting-up",
+      "title": "Setting Up",
+      "wordIds": [
+        "change-address",
+        "transfer-utilities",
+        "install-internet",
+        "register-vehicle",
+        "update-license",
+        "find-doctor",
+        "enroll-in-school",
+        "meet-neighbors",
+        "explore-area",
+        "housewarming"
+      ]
+    },
+    {
+      "id": "furniture",
+      "title": "Furniture",
+      "wordIds": [
+        "sofa",
+        "bed-frame",
+        "mattress",
+        "dining-table",
+        "dresser",
+        "nightstand",
+        "bookcase",
+        "desk",
+        "coffee-table",
+        "tv-stand"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "moving-box",
+      "label": "Moving Box",
+      "ipa": "/ˈmuːvɪŋ bɒks/",
+      "cefr": "C1",
+      "imageNodeId": "467:16512"
+    },
+    {
+      "kind": "card",
+      "id": "packing-tape",
+      "label": "Packing Tape",
+      "ipa": "/ˈpækɪŋ teɪp/",
+      "cefr": "C1",
+      "imageNodeId": "467:16516"
+    },
+    {
+      "kind": "card",
+      "id": "bubble-wrap",
+      "label": "Bubble Wrap",
+      "ipa": "/ˈbʌbəl ræp/",
+      "cefr": "C1",
+      "imageNodeId": "467:16520"
+    },
+    {
+      "kind": "card",
+      "id": "packing-paper",
+      "label": "Packing Paper",
+      "ipa": "/ˈpækɪŋ ˈpeɪpər/",
+      "cefr": "C1",
+      "imageNodeId": "467:16524"
+    },
+    {
+      "kind": "card",
+      "id": "marker",
+      "label": "Marker",
+      "ipa": "/ˈmɑːrkər/",
+      "cefr": "B2",
+      "imageNodeId": "467:16528"
+    },
+    {
+      "kind": "card",
+      "id": "moving-blanket",
+      "label": "Moving Blanket",
+      "ipa": "/ˈmuːvɪŋ ˈblæŋkɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:16532"
+    },
+    {
+      "kind": "card",
+      "id": "dolly",
+      "label": "Dolly",
+      "ipa": "/ˈdɒli/",
+      "cefr": "B2",
+      "imageNodeId": "467:16536"
+    },
+    {
+      "kind": "card",
+      "id": "hand-truck",
+      "label": "Hand Truck",
+      "ipa": "/hænd trʌk/",
+      "cefr": "C1",
+      "imageNodeId": "467:16540"
+    },
+    {
+      "kind": "card",
+      "id": "rope",
+      "label": "Rope",
+      "ipa": "/roʊp/",
+      "cefr": "B2",
+      "imageNodeId": "467:16544"
+    },
+    {
+      "kind": "card",
+      "id": "zip-tie",
+      "label": "Zip Tie",
+      "ipa": "/zɪp taɪ/",
+      "cefr": "C1",
+      "imageNodeId": "467:16548"
+    },
+    {
+      "kind": "card",
+      "id": "pack",
+      "label": "Pack",
+      "ipa": "/pæk/",
+      "cefr": "B2",
+      "imageNodeId": "467:16557"
+    },
+    {
+      "kind": "card",
+      "id": "load",
+      "label": "Load",
+      "ipa": "/loʊd/",
+      "cefr": "B2",
+      "imageNodeId": "467:16561"
+    },
+    {
+      "kind": "card",
+      "id": "unload",
+      "label": "Unload",
+      "ipa": "/ʌnˈloʊd/",
+      "cefr": "B2",
+      "imageNodeId": "467:16565"
+    },
+    {
+      "kind": "card",
+      "id": "unpack",
+      "label": "Unpack",
+      "ipa": "/ʌnˈpæk/",
+      "cefr": "B2",
+      "imageNodeId": "467:16569"
+    },
+    {
+      "kind": "card",
+      "id": "label",
+      "label": "Label",
+      "ipa": "/ˈleɪbəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:16573"
+    },
+    {
+      "kind": "card",
+      "id": "sort",
+      "label": "Sort",
+      "ipa": "/sɔːrt/",
+      "cefr": "B2",
+      "imageNodeId": "467:16577"
+    },
+    {
+      "kind": "card",
+      "id": "donate",
+      "label": "Donate",
+      "ipa": "/doʊˈneɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:16581"
+    },
+    {
+      "kind": "card",
+      "id": "discard",
+      "label": "Discard",
+      "ipa": "/dɪˈskɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "467:16585"
+    },
+    {
+      "kind": "card",
+      "id": "disassemble",
+      "label": "Disassemble",
+      "ipa": "/ˌdɪsəˈsɛmbəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:16589"
+    },
+    {
+      "kind": "card",
+      "id": "reassemble",
+      "label": "Reassemble",
+      "ipa": "/ˌriːəˈsɛmbəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:16593"
+    },
+    {
+      "kind": "card",
+      "id": "change-address",
+      "label": "Change Address",
+      "ipa": "/tʃeɪndʒ əˈdrɛs/",
+      "cefr": "C1",
+      "imageNodeId": "467:16602"
+    },
+    {
+      "kind": "card",
+      "id": "transfer-utilities",
+      "label": "Transfer Utilities",
+      "ipa": "/ˈtrænsfɜːr juːˈtɪlɪtiz/",
+      "cefr": "C1",
+      "imageNodeId": "467:16606"
+    },
+    {
+      "kind": "card",
+      "id": "install-internet",
+      "label": "Install Internet",
+      "ipa": "/ɪnˈstɔːl ˈɪntərˌnɛt/",
+      "cefr": "C1",
+      "imageNodeId": "467:16610"
+    },
+    {
+      "kind": "card",
+      "id": "register-vehicle",
+      "label": "Register Vehicle",
+      "ipa": "/ˈrɛdʒɪstər ˈviːɪkəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:16614"
+    },
+    {
+      "kind": "card",
+      "id": "update-license",
+      "label": "Update License",
+      "ipa": "/ʌpˈdeɪt ˈlaɪsəns/",
+      "cefr": "C1",
+      "imageNodeId": "467:16618"
+    },
+    {
+      "kind": "card",
+      "id": "find-doctor",
+      "label": "Find Doctor",
+      "ipa": "/faɪnd ˈdɒktər/",
+      "cefr": "C1",
+      "imageNodeId": "467:16622"
+    },
+    {
+      "kind": "card",
+      "id": "enroll-in-school",
+      "label": "Enroll in School",
+      "ipa": "/ɪnˈroʊl ɪn skuːl/",
+      "cefr": "C1",
+      "imageNodeId": "467:16626"
+    },
+    {
+      "kind": "card",
+      "id": "meet-neighbors",
+      "label": "Meet Neighbors",
+      "ipa": "/miːt ˈneɪbərz/",
+      "cefr": "C1",
+      "imageNodeId": "467:16630"
+    },
+    {
+      "kind": "card",
+      "id": "explore-area",
+      "label": "Explore Area",
+      "ipa": "/ɪkˈsplɔːr ˈɛəriə/",
+      "cefr": "C1",
+      "imageNodeId": "467:16634"
+    },
+    {
+      "kind": "card",
+      "id": "housewarming",
+      "label": "Housewarming",
+      "ipa": "/ˈhaʊsˌwɔːrmɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:16638"
+    },
+    {
+      "kind": "card",
+      "id": "sofa",
+      "label": "Sofa",
+      "ipa": "/ˈsoʊfə/",
+      "cefr": "B2",
+      "imageNodeId": "467:16647"
+    },
+    {
+      "kind": "card",
+      "id": "bed-frame",
+      "label": "Bed Frame",
+      "ipa": "/bɛd freɪm/",
+      "cefr": "C1",
+      "imageNodeId": "467:16651"
+    },
+    {
+      "kind": "card",
+      "id": "mattress",
+      "label": "Mattress",
+      "ipa": "/ˈmætrɪs/",
+      "cefr": "B2",
+      "imageNodeId": "467:16655"
+    },
+    {
+      "kind": "card",
+      "id": "dining-table",
+      "label": "Dining Table",
+      "ipa": "/ˈdaɪnɪŋ ˈteɪbəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:16659"
+    },
+    {
+      "kind": "card",
+      "id": "dresser",
+      "label": "Dresser",
+      "ipa": "/ˈdrɛsər/",
+      "cefr": "B2",
+      "imageNodeId": "467:16663"
+    },
+    {
+      "kind": "card",
+      "id": "nightstand",
+      "label": "Nightstand",
+      "ipa": "/ˈnaɪtˌstænd/",
+      "cefr": "C1",
+      "imageNodeId": "467:16667"
+    },
+    {
+      "kind": "card",
+      "id": "bookcase",
+      "label": "Bookcase",
+      "ipa": "/ˈbʊkˌkeɪs/",
+      "cefr": "B2",
+      "imageNodeId": "467:16671"
+    },
+    {
+      "kind": "card",
+      "id": "desk",
+      "label": "Desk",
+      "ipa": "/dɛsk/",
+      "cefr": "B2",
+      "imageNodeId": "467:16675"
+    },
+    {
+      "kind": "card",
+      "id": "coffee-table",
+      "label": "Coffee Table",
+      "ipa": "/ˈkɒfi ˈteɪbəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:16679"
+    },
+    {
+      "kind": "card",
+      "id": "tv-stand",
+      "label": "TV Stand",
+      "ipa": "/ˌtiːˈviː stænd/",
+      "cefr": "C1",
+      "imageNodeId": "467:16683"
+    }
+  ],
+  "materials": null
+}

@@ -1,0 +1,1604 @@
+{
+  "unitId": "bathroom",
+  "name": "The Bathroom",
+  "subtopics": [
+    {
+      "id": "fixtures-fittings",
+      "title": "Fixtures & Fittings",
+      "wordIds": [
+        "bathtub",
+        "shower",
+        "toilet",
+        "sink",
+        "faucet",
+        "drain",
+        "mirror",
+        "towel-rack",
+        "cabinet",
+        "tiles"
+      ]
+    },
+    {
+      "id": "toiletries",
+      "title": "Toiletries",
+      "wordIds": [
+        "soap",
+        "shampoo",
+        "conditioner",
+        "toothbrush",
+        "toothpaste",
+        "towel",
+        "comb",
+        "hairbrush",
+        "lotion",
+        "deodorant"
+      ]
+    },
+    {
+      "id": "bathroom-supplies",
+      "title": "Bathroom Supplies",
+      "wordIds": [
+        "toilet-paper",
+        "cotton-balls",
+        "cotton-swab",
+        "razor",
+        "nail-clipper",
+        "hair-dryer",
+        "scale",
+        "laundry-basket",
+        "first-aid-kit",
+        "thermometer"
+      ]
+    },
+    {
+      "id": "bath-shower",
+      "title": "Bath & Shower",
+      "wordIds": [
+        "bath-mat",
+        "shower-curtain",
+        "shower-head",
+        "bath-towel",
+        "hand-towel",
+        "washcloth",
+        "soap-dish",
+        "shampoo-bottle",
+        "rubber-duck",
+        "shower-gel"
+      ]
+    },
+    {
+      "id": "personal-care",
+      "title": "Personal Care",
+      "wordIds": [
+        "face-cream",
+        "sunscreen",
+        "lip-balm",
+        "hand-soap",
+        "body-wash",
+        "mouthwash",
+        "dental-floss",
+        "face-wash",
+        "hand-sanitizer",
+        "wet-wipes"
+      ]
+    },
+    {
+      "id": "cleaning-items",
+      "title": "Cleaning Items",
+      "wordIds": [
+        "sponge",
+        "brush",
+        "bucket",
+        "gloves",
+        "spray-bottle",
+        "cloth",
+        "plunger",
+        "squeegee",
+        "tissue",
+        "wash-hands",
+        "brush-teeth",
+        "take-shower",
+        "dry-off",
+        "flush",
+        "comb-hair",
+        "apply-lotion",
+        "gargle"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "bathtub",
+      "label": "Bathtub",
+      "ipa": "/ˈbæθtʌb/",
+      "cefr": "A1",
+      "imageNodeId": "44:285"
+    },
+    {
+      "kind": "card",
+      "id": "shower",
+      "label": "Shower",
+      "ipa": "/ˈʃaʊər/",
+      "cefr": "A1",
+      "imageNodeId": "44:289"
+    },
+    {
+      "kind": "card",
+      "id": "toilet",
+      "label": "Toilet",
+      "ipa": "/ˈtɔɪlɪt/",
+      "cefr": "A1",
+      "imageNodeId": "44:293"
+    },
+    {
+      "kind": "card",
+      "id": "sink",
+      "label": "Sink",
+      "ipa": "/sɪŋk/",
+      "cefr": "A1",
+      "imageNodeId": "44:297"
+    },
+    {
+      "kind": "card",
+      "id": "faucet",
+      "label": "Faucet",
+      "ipa": "/ˈfɔːsɪt/",
+      "cefr": "A1",
+      "imageNodeId": "44:301"
+    },
+    {
+      "kind": "card",
+      "id": "drain",
+      "label": "Drain",
+      "ipa": "/dreɪn/",
+      "cefr": "A1",
+      "imageNodeId": "44:305"
+    },
+    {
+      "kind": "card",
+      "id": "mirror",
+      "label": "Mirror",
+      "ipa": "/ˈmɪrər/",
+      "cefr": "A1",
+      "imageNodeId": "44:309"
+    },
+    {
+      "kind": "card",
+      "id": "towel-rack",
+      "label": "Towel Rack",
+      "ipa": "/ˈtaʊəl ræk/",
+      "cefr": "A2",
+      "imageNodeId": "44:313"
+    },
+    {
+      "kind": "card",
+      "id": "cabinet",
+      "label": "Cabinet",
+      "ipa": "/ˈkæbɪnɪt/",
+      "cefr": "A1",
+      "imageNodeId": "44:317"
+    },
+    {
+      "kind": "card",
+      "id": "tiles",
+      "label": "Tiles",
+      "ipa": "/taɪlz/",
+      "cefr": "A1",
+      "imageNodeId": "44:321"
+    },
+    {
+      "kind": "card",
+      "id": "soap",
+      "label": "Soap",
+      "ipa": "/soʊp/",
+      "cefr": "A1",
+      "imageNodeId": "44:330"
+    },
+    {
+      "kind": "card",
+      "id": "shampoo",
+      "label": "Shampoo",
+      "ipa": "/ʃæmˈpuː/",
+      "cefr": "A1",
+      "imageNodeId": "44:334"
+    },
+    {
+      "kind": "card",
+      "id": "conditioner",
+      "label": "Conditioner",
+      "ipa": "/kənˈdɪʃənər/",
+      "cefr": "A2",
+      "imageNodeId": "44:338"
+    },
+    {
+      "kind": "card",
+      "id": "toothbrush",
+      "label": "Toothbrush",
+      "ipa": "/ˈtuːθbrʌʃ/",
+      "cefr": "A2",
+      "imageNodeId": "44:342"
+    },
+    {
+      "kind": "card",
+      "id": "toothpaste",
+      "label": "Toothpaste",
+      "ipa": "/ˈtuːθpeɪst/",
+      "cefr": "A2",
+      "imageNodeId": "44:346"
+    },
+    {
+      "kind": "card",
+      "id": "towel",
+      "label": "Towel",
+      "ipa": "/ˈtaʊəl/",
+      "cefr": "A1",
+      "imageNodeId": "44:350"
+    },
+    {
+      "kind": "card",
+      "id": "comb",
+      "label": "Comb",
+      "ipa": "/koʊm/",
+      "cefr": "A1",
+      "imageNodeId": "44:354"
+    },
+    {
+      "kind": "card",
+      "id": "hairbrush",
+      "label": "Hairbrush",
+      "ipa": "/ˈhɛrbrʌʃ/",
+      "cefr": "A1",
+      "imageNodeId": "44:358"
+    },
+    {
+      "kind": "card",
+      "id": "lotion",
+      "label": "Lotion",
+      "ipa": "/ˈloʊʃən/",
+      "cefr": "A1",
+      "imageNodeId": "44:362"
+    },
+    {
+      "kind": "card",
+      "id": "deodorant",
+      "label": "Deodorant",
+      "ipa": "/diˈoʊdərənt/",
+      "cefr": "A1",
+      "imageNodeId": "44:366"
+    },
+    {
+      "kind": "card",
+      "id": "toilet-paper",
+      "label": "Toilet Paper",
+      "ipa": "/ˈtɔɪlɪt ˈpeɪpər/",
+      "cefr": "A2",
+      "imageNodeId": "44:375"
+    },
+    {
+      "kind": "card",
+      "id": "cotton-balls",
+      "label": "Cotton Balls",
+      "ipa": "/ˈkɑːtən bɔːlz/",
+      "cefr": "A2",
+      "imageNodeId": "44:379"
+    },
+    {
+      "kind": "card",
+      "id": "cotton-swab",
+      "label": "Cotton Swab",
+      "ipa": "/ˈkɑːtən swɑːb/",
+      "cefr": "A2",
+      "imageNodeId": "44:383"
+    },
+    {
+      "kind": "card",
+      "id": "razor",
+      "label": "Razor",
+      "ipa": "/ˈreɪzər/",
+      "cefr": "A1",
+      "imageNodeId": "44:387"
+    },
+    {
+      "kind": "card",
+      "id": "nail-clipper",
+      "label": "Nail Clipper",
+      "ipa": "/neɪl ˈklɪpər/",
+      "cefr": "A2",
+      "imageNodeId": "44:391"
+    },
+    {
+      "kind": "card",
+      "id": "hair-dryer",
+      "label": "Hair Dryer",
+      "ipa": "/hɛr ˈdraɪər/",
+      "cefr": "A2",
+      "imageNodeId": "44:395"
+    },
+    {
+      "kind": "card",
+      "id": "scale",
+      "label": "Scale",
+      "ipa": "/skeɪl/",
+      "cefr": "A1",
+      "imageNodeId": "44:399"
+    },
+    {
+      "kind": "card",
+      "id": "laundry-basket",
+      "label": "Laundry Basket",
+      "ipa": "/ˈlɔːndri ˈbæskɪt/",
+      "cefr": "A2",
+      "imageNodeId": "44:403"
+    },
+    {
+      "kind": "card",
+      "id": "first-aid-kit",
+      "label": "First Aid Kit",
+      "ipa": "/fɜːrst eɪd kɪt/",
+      "cefr": "B1",
+      "imageNodeId": "44:407"
+    },
+    {
+      "kind": "card",
+      "id": "thermometer",
+      "label": "Thermometer",
+      "ipa": "/θərˈmɑːmɪtər/",
+      "cefr": "A2",
+      "imageNodeId": "44:411"
+    },
+    {
+      "kind": "card",
+      "id": "bath-mat",
+      "label": "Bath Mat",
+      "ipa": "/bæθ mæt/",
+      "cefr": "A2",
+      "imageNodeId": "44:420"
+    },
+    {
+      "kind": "card",
+      "id": "shower-curtain",
+      "label": "Shower Curtain",
+      "ipa": "/ˈʃaʊər ˈkɜːrtən/",
+      "cefr": "A2",
+      "imageNodeId": "44:424"
+    },
+    {
+      "kind": "card",
+      "id": "shower-head",
+      "label": "Shower Head",
+      "ipa": "/ˈʃaʊər hɛd/",
+      "cefr": "A2",
+      "imageNodeId": "44:428"
+    },
+    {
+      "kind": "card",
+      "id": "bath-towel",
+      "label": "Bath Towel",
+      "ipa": "/bæθ ˈtaʊəl/",
+      "cefr": "A2",
+      "imageNodeId": "44:432"
+    },
+    {
+      "kind": "card",
+      "id": "hand-towel",
+      "label": "Hand Towel",
+      "ipa": "/hænd ˈtaʊəl/",
+      "cefr": "A2",
+      "imageNodeId": "44:436"
+    },
+    {
+      "kind": "card",
+      "id": "washcloth",
+      "label": "Washcloth",
+      "ipa": "/ˈwɑːʃklɔːθ/",
+      "cefr": "A1",
+      "imageNodeId": "44:440"
+    },
+    {
+      "kind": "card",
+      "id": "soap-dish",
+      "label": "Soap Dish",
+      "ipa": "/soʊp dɪʃ/",
+      "cefr": "A2",
+      "imageNodeId": "44:444"
+    },
+    {
+      "kind": "card",
+      "id": "shampoo-bottle",
+      "label": "Shampoo Bottle",
+      "ipa": "/ʃæmˈpuː ˈbɑːtəl/",
+      "cefr": "A2",
+      "imageNodeId": "44:448"
+    },
+    {
+      "kind": "card",
+      "id": "rubber-duck",
+      "label": "Rubber Duck",
+      "ipa": "/ˈrʌbər dʌk/",
+      "cefr": "A2",
+      "imageNodeId": "44:452"
+    },
+    {
+      "kind": "card",
+      "id": "shower-gel",
+      "label": "Shower Gel",
+      "ipa": "/ˈʃaʊər dʒɛl/",
+      "cefr": "A2",
+      "imageNodeId": "44:456"
+    },
+    {
+      "kind": "card",
+      "id": "face-cream",
+      "label": "Face Cream",
+      "ipa": "/feɪs kriːm/",
+      "cefr": "A2",
+      "imageNodeId": "44:465"
+    },
+    {
+      "kind": "card",
+      "id": "sunscreen",
+      "label": "Sunscreen",
+      "ipa": "/ˈsʌnskriːn/",
+      "cefr": "A1",
+      "imageNodeId": "44:469"
+    },
+    {
+      "kind": "card",
+      "id": "lip-balm",
+      "label": "Lip Balm",
+      "ipa": "/lɪp bɑːm/",
+      "cefr": "A2",
+      "imageNodeId": "44:473"
+    },
+    {
+      "kind": "card",
+      "id": "hand-soap",
+      "label": "Hand Soap",
+      "ipa": "/hænd soʊp/",
+      "cefr": "A2",
+      "imageNodeId": "44:477"
+    },
+    {
+      "kind": "card",
+      "id": "body-wash",
+      "label": "Body Wash",
+      "ipa": "/ˈbɑːdi wɑːʃ/",
+      "cefr": "A2",
+      "imageNodeId": "44:481"
+    },
+    {
+      "kind": "card",
+      "id": "mouthwash",
+      "label": "Mouthwash",
+      "ipa": "/ˈmaʊθwɑːʃ/",
+      "cefr": "A1",
+      "imageNodeId": "44:485"
+    },
+    {
+      "kind": "card",
+      "id": "dental-floss",
+      "label": "Dental Floss",
+      "ipa": "/ˈdɛntəl flɑːs/",
+      "cefr": "A2",
+      "imageNodeId": "44:489"
+    },
+    {
+      "kind": "card",
+      "id": "face-wash",
+      "label": "Face Wash",
+      "ipa": "/feɪs wɑːʃ/",
+      "cefr": "A2",
+      "imageNodeId": "44:493"
+    },
+    {
+      "kind": "card",
+      "id": "hand-sanitizer",
+      "label": "Hand Sanitizer",
+      "ipa": "/hænd ˈsænɪtaɪzər/",
+      "cefr": "A2",
+      "imageNodeId": "44:497"
+    },
+    {
+      "kind": "card",
+      "id": "wet-wipes",
+      "label": "Wet Wipes",
+      "ipa": "/wɛt waɪps/",
+      "cefr": "A2",
+      "imageNodeId": "44:501"
+    },
+    {
+      "kind": "card",
+      "id": "sponge",
+      "label": "Sponge",
+      "ipa": "/spʌndʒ/",
+      "cefr": "A1",
+      "imageNodeId": "44:510"
+    },
+    {
+      "kind": "card",
+      "id": "brush",
+      "label": "Brush",
+      "ipa": "/brʌʃ/",
+      "cefr": "A1",
+      "imageNodeId": "44:514"
+    },
+    {
+      "kind": "card",
+      "id": "bucket",
+      "label": "Bucket",
+      "ipa": "/ˈbʌkɪt/",
+      "cefr": "A1",
+      "imageNodeId": "44:518"
+    },
+    {
+      "kind": "card",
+      "id": "gloves",
+      "label": "Gloves",
+      "ipa": "/ɡlʌvz/",
+      "cefr": "A1",
+      "imageNodeId": "44:522"
+    },
+    {
+      "kind": "card",
+      "id": "spray-bottle",
+      "label": "Spray Bottle",
+      "ipa": "/spreɪ ˈbɑːtəl/",
+      "cefr": "A2",
+      "imageNodeId": "44:526"
+    },
+    {
+      "kind": "card",
+      "id": "cloth",
+      "label": "Cloth",
+      "ipa": "/klɔːθ/",
+      "cefr": "A1",
+      "imageNodeId": "44:530"
+    },
+    {
+      "kind": "card",
+      "id": "plunger",
+      "label": "Plunger",
+      "ipa": "/ˈplʌndʒər/",
+      "cefr": "A1",
+      "imageNodeId": "44:534"
+    },
+    {
+      "kind": "card",
+      "id": "squeegee",
+      "label": "Squeegee",
+      "ipa": "/ˈskwiːdʒiː/",
+      "cefr": "A1",
+      "imageNodeId": "44:538"
+    },
+    {
+      "kind": "card",
+      "id": "tissue",
+      "label": "Tissue",
+      "ipa": "/ˈtɪʃuː/",
+      "cefr": "A1",
+      "imageNodeId": "39:253"
+    },
+    {
+      "kind": "card",
+      "id": "wash-hands",
+      "label": "Wash Hands",
+      "ipa": "/wɑːʃ hændz/",
+      "cefr": "A2",
+      "imageNodeId": "39:260"
+    },
+    {
+      "kind": "card",
+      "id": "brush-teeth",
+      "label": "Brush Teeth",
+      "ipa": "/brʌʃ tiːθ/",
+      "cefr": "A2",
+      "imageNodeId": "39:264"
+    },
+    {
+      "kind": "card",
+      "id": "take-shower",
+      "label": "Take Shower",
+      "ipa": "/teɪk ˈʃaʊər/",
+      "cefr": "A2",
+      "imageNodeId": "39:268"
+    },
+    {
+      "kind": "card",
+      "id": "dry-off",
+      "label": "Dry Off",
+      "ipa": "/draɪ ɔːf/",
+      "cefr": "A2",
+      "imageNodeId": "39:272"
+    },
+    {
+      "kind": "card",
+      "id": "flush",
+      "label": "Flush",
+      "ipa": "/flʌʃ/",
+      "cefr": "A1",
+      "imageNodeId": "39:276"
+    },
+    {
+      "kind": "card",
+      "id": "comb-hair",
+      "label": "Comb Hair",
+      "ipa": "/koʊm hɛr/",
+      "cefr": "A2",
+      "imageNodeId": "39:280"
+    },
+    {
+      "kind": "card",
+      "id": "apply-lotion",
+      "label": "Apply Lotion",
+      "ipa": "/əˈplaɪ ˈloʊʃən/",
+      "cefr": "A2",
+      "imageNodeId": "39:284"
+    },
+    {
+      "kind": "card",
+      "id": "gargle",
+      "label": "Gargle",
+      "ipa": "/ˈɡɑːrɡəl/",
+      "cefr": "A1",
+      "imageNodeId": "39:288"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "542:3",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "542:5",
+      "lines": [
+        {
+          "text": "📖 Reading Passage (B1)",
+          "depth": 1,
+          "name": "📖 Reading Passage (B1)"
+        },
+        {
+          "text": "Every morning starts in the bathroom. You turn on the faucet at the sink to wash your hands with hand soap and warm water. Then you squeeze toothpaste onto your toothbrush and brush your teeth for two minutes. After that, you might gargle with mouthwash to keep your breath fresh.\n\nNext, it is time for a shower. You step into the bathtub, pull the shower curtain closed, and adjust the shower head. You use shower gel or body wash to clean your body, and shampoo followed by conditioner for your hair. When you are finished, you dry off with a bath towel and step onto the bath mat.\n\nIn front of the mirror, you comb your hair with a comb or hairbrush. Many people apply lotion or face cream to keep their skin soft. Others use deodorant and sunscreen before getting dressed. The cabinet above the sink holds everyday items like dental floss, cotton swabs, a razor, and nail clippers.\n\nIt is important to keep the bathroom clean. A sponge and spray bottle help wipe down the tiles and sink. The laundry basket collects used towels and washcloths, and the plunger stays beside the toilet — just in case.",
+          "depth": 1,
+          "name": "Every morning starts in the bathroom. You turn on the faucet at the sink to wash your hands with hand soap and warm water. Then you squeeze toothpaste onto your toothbrush and brush your teeth for two minutes. After that, you might gargle with mouthwash to keep your breath fresh. Next, it is time for a shower. You step into the bathtub, pull the shower curtain closed, and adjust the shower head. You use shower gel or body wash to clean your body, and shampoo followed by conditioner for your hair. When you are finished, you dry off with a bath towel and step onto the bath mat. In front of the mirror, you comb your hair with a comb or hairbrush. Many people apply lotion or face cream to keep their skin soft. Others use deodorant and sunscreen before getting dressed. The cabinet above the sink holds everyday items like dental floss, cotton swabs, a razor, and nail clippers. It is important to keep the bathroom clean. A sponge and spray bottle help wipe down the tiles and sink. The laundry basket collects used towels and washcloths, and the plunger stays beside the toilet — just in case."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1.  What do you use to brush your teeth?",
+          "depth": 1,
+          "name": "1. What do you use to brush your teeth?"
+        },
+        {
+          "text": "2.  What is the purpose of the shower curtain?",
+          "depth": 1,
+          "name": "2. What is the purpose of the shower curtain?"
+        },
+        {
+          "text": "3.  Name three items you might find in the cabinet above the sink.",
+          "depth": 1,
+          "name": "3. Name three items you might find in the cabinet above the sink."
+        },
+        {
+          "text": "4.  How do you keep the bathroom clean according to the passage?",
+          "depth": 1,
+          "name": "4. How do you keep the bathroom clean according to the passage?"
+        },
+        {
+          "text": "5.  What goes in the laundry basket?",
+          "depth": 1,
+          "name": "5. What goes in the laundry basket?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "542:17",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "throw in the towel",
+          "depth": 2,
+          "name": "throw in the towel"
+        },
+        {
+          "text": "(idiom) To give up. \"After three failed attempts, she threw in the towel.\"",
+          "depth": 2,
+          "name": "(idiom) To give up. \"After three failed attempts, she threw in the towel.\""
+        },
+        {
+          "text": "clean up your act",
+          "depth": 2,
+          "name": "clean up your act"
+        },
+        {
+          "text": "(idiom) To improve your behavior. \"You need to clean up your act before the interview.\"",
+          "depth": 2,
+          "name": "(idiom) To improve your behavior. \"You need to clean up your act before the interview.\""
+        },
+        {
+          "text": "come clean",
+          "depth": 2,
+          "name": "come clean"
+        },
+        {
+          "text": "(phrasal verb) To admit the truth. \"He finally came clean about breaking the vase.\"",
+          "depth": 2,
+          "name": "(phrasal verb) To admit the truth. \"He finally came clean about breaking the vase.\""
+        },
+        {
+          "text": "wash your hands of",
+          "depth": 2,
+          "name": "wash your hands of"
+        },
+        {
+          "text": "(idiom) To refuse responsibility. \"She washed her hands of the whole project.\"",
+          "depth": 2,
+          "name": "(idiom) To refuse responsibility. \"She washed her hands of the whole project.\""
+        },
+        {
+          "text": "down the drain",
+          "depth": 2,
+          "name": "down the drain"
+        },
+        {
+          "text": "(idiom) Wasted. \"All that hard work went down the drain.\"",
+          "depth": 2,
+          "name": "(idiom) Wasted. \"All that hard work went down the drain.\""
+        },
+        {
+          "text": "scrub up well",
+          "depth": 2,
+          "name": "scrub up well"
+        },
+        {
+          "text": "(idiom) To look attractive after cleaning up. \"He really scrubs up well for formal events.\"",
+          "depth": 2,
+          "name": "(idiom) To look attractive after cleaning up. \"He really scrubs up well for formal events.\""
+        },
+        {
+          "text": "soak in",
+          "depth": 2,
+          "name": "soak in"
+        },
+        {
+          "text": "(phrasal verb) To absorb or enjoy slowly. \"She loves to soak in a hot bath after work.\"",
+          "depth": 2,
+          "name": "(phrasal verb) To absorb or enjoy slowly. \"She loves to soak in a hot bath after work.\""
+        },
+        {
+          "text": "freshen up",
+          "depth": 2,
+          "name": "freshen up"
+        },
+        {
+          "text": "(phrasal verb) To wash and tidy yourself quickly. \"Let me freshen up before we go out.\"",
+          "depth": 2,
+          "name": "(phrasal verb) To wash and tidy yourself quickly. \"Let me freshen up before we go out.\""
+        },
+        {
+          "text": "dry off",
+          "depth": 2,
+          "name": "dry off"
+        },
+        {
+          "text": "(phrasal verb) To remove water from your body. \"Dry off with a towel before stepping out.\"",
+          "depth": 2,
+          "name": "(phrasal verb) To remove water from your body. \"Dry off with a towel before stepping out.\""
+        },
+        {
+          "text": "wipe down",
+          "depth": 2,
+          "name": "wipe down"
+        },
+        {
+          "text": "(phrasal verb) To clean a surface. \"Please wipe down the sink after you use it.\"",
+          "depth": 2,
+          "name": "(phrasal verb) To clean a surface. \"Please wipe down the sink after you use it.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "542:51",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue — Getting Ready in the Morning",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue — Getting Ready in the Morning"
+        },
+        {
+          "text": "Mom:",
+          "depth": 2,
+          "name": "Mom:"
+        },
+        {
+          "text": "Did you brush your teeth yet?",
+          "depth": 2,
+          "name": "Did you brush your teeth yet?"
+        },
+        {
+          "text": "Ali:",
+          "depth": 2,
+          "name": "Ali:"
+        },
+        {
+          "text": "Yes, I used the toothbrush and toothpaste. And I even used mouthwash!",
+          "depth": 2,
+          "name": "Yes, I used the toothbrush and toothpaste. And I even used mouthwash!"
+        },
+        {
+          "text": "Mom:",
+          "depth": 2,
+          "name": "Mom:"
+        },
+        {
+          "text": "Good. Don't forget to comb your hair. The comb is in the cabinet.",
+          "depth": 2,
+          "name": "Good. Don't forget to comb your hair. The comb is in the cabinet."
+        },
+        {
+          "text": "Ali:",
+          "depth": 2,
+          "name": "Ali:"
+        },
+        {
+          "text": "I know. Can I take a shower first? Where's the shower gel?",
+          "depth": 2,
+          "name": "I know. Can I take a shower first? Where's the shower gel?"
+        },
+        {
+          "text": "Mom:",
+          "depth": 2,
+          "name": "Mom:"
+        },
+        {
+          "text": "It's on the shelf in the bathtub, next to the shampoo. Use the bath mat when you step out.",
+          "depth": 2,
+          "name": "It's on the shelf in the bathtub, next to the shampoo. Use the bath mat when you step out."
+        },
+        {
+          "text": "Ali:",
+          "depth": 2,
+          "name": "Ali:"
+        },
+        {
+          "text": "OK. And can I use the hair dryer after?",
+          "depth": 2,
+          "name": "OK. And can I use the hair dryer after?"
+        },
+        {
+          "text": "Mom:",
+          "depth": 2,
+          "name": "Mom:"
+        },
+        {
+          "text": "Of course. Just dry off with a towel first. And put your dirty clothes in the laundry basket.",
+          "depth": 2,
+          "name": "Of course. Just dry off with a towel first. And put your dirty clothes in the laundry basket."
+        },
+        {
+          "text": "Ali:",
+          "depth": 2,
+          "name": "Ali:"
+        },
+        {
+          "text": "Got it. I'll be ready in ten minutes!",
+          "depth": 2,
+          "name": "Got it. I'll be ready in ten minutes!"
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "542:79",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "✗  \"I wash my teeth every morning.\"",
+          "depth": 2,
+          "name": "✗ \"I wash my teeth every morning.\""
+        },
+        {
+          "text": "✓  \"I brush my teeth every morning.\"",
+          "depth": 2,
+          "name": "✓ \"I brush my teeth every morning.\""
+        },
+        {
+          "text": "In English, we 'brush' teeth, not 'wash' them.",
+          "depth": 2,
+          "name": "In English, we 'brush' teeth, not 'wash' them."
+        },
+        {
+          "text": "✗  \"I want to take a bath shower.\"",
+          "depth": 2,
+          "name": "✗ \"I want to take a bath shower.\""
+        },
+        {
+          "text": "✓  \"I want to take a shower.\" / \"I want to take a bath.\"",
+          "depth": 2,
+          "name": "✓ \"I want to take a shower.\" / \"I want to take a bath.\""
+        },
+        {
+          "text": "A shower and a bath are different. Choose one.",
+          "depth": 2,
+          "name": "A shower and a bath are different. Choose one."
+        },
+        {
+          "text": "✗  \"Give me the paste of teeth.\"",
+          "depth": 2,
+          "name": "✗ \"Give me the paste of teeth.\""
+        },
+        {
+          "text": "✓  \"Give me the toothpaste.\"",
+          "depth": 2,
+          "name": "✓ \"Give me the toothpaste.\""
+        },
+        {
+          "text": "'Toothpaste' is one compound word, not translated word by word.",
+          "depth": 2,
+          "name": "'Toothpaste' is one compound word, not translated word by word."
+        },
+        {
+          "text": "✗  \"She dried her hair with the hairbrush.\"",
+          "depth": 2,
+          "name": "✗ \"She dried her hair with the hairbrush.\""
+        },
+        {
+          "text": "✓  \"She dried her hair with the hair dryer.\"",
+          "depth": 2,
+          "name": "✓ \"She dried her hair with the hair dryer.\""
+        },
+        {
+          "text": "A hairbrush is for brushing. A hair dryer is for drying.",
+          "depth": 2,
+          "name": "A hairbrush is for brushing. A hair dryer is for drying."
+        },
+        {
+          "text": "✗  \"I looked at me in the glass.\"",
+          "depth": 2,
+          "name": "✗ \"I looked at me in the glass.\""
+        },
+        {
+          "text": "✓  \"I looked at myself in the mirror.\"",
+          "depth": 2,
+          "name": "✓ \"I looked at myself in the mirror.\""
+        },
+        {
+          "text": "Use 'mirror' (not 'glass') and 'myself' (reflexive pronoun).",
+          "depth": 2,
+          "name": "Use 'mirror' (not 'glass') and 'myself' (reflexive pronoun)."
+        },
+        {
+          "text": "✗  \"Please open the faucet.\"",
+          "depth": 2,
+          "name": "✗ \"Please open the faucet.\""
+        },
+        {
+          "text": "✓  \"Please turn on the faucet.\"",
+          "depth": 2,
+          "name": "✓ \"Please turn on the faucet.\""
+        },
+        {
+          "text": "We 'turn on' or 'turn off' a faucet, not 'open' or 'close' it.",
+          "depth": 2,
+          "name": "We 'turn on' or 'turn off' a faucet, not 'open' or 'close' it."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "542:107",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "Adverb",
+          "depth": 2,
+          "name": "Adverb"
+        },
+        {
+          "text": "cleanliness",
+          "depth": 2,
+          "name": "cleanliness"
+        },
+        {
+          "text": "clean",
+          "depth": 2,
+          "name": "clean"
+        },
+        {
+          "text": "clean",
+          "depth": 2,
+          "name": "clean"
+        },
+        {
+          "text": "cleanly",
+          "depth": 2,
+          "name": "cleanly"
+        },
+        {
+          "text": "wash",
+          "depth": 2,
+          "name": "wash"
+        },
+        {
+          "text": "wash",
+          "depth": 2,
+          "name": "wash"
+        },
+        {
+          "text": "washable",
+          "depth": 2,
+          "name": "washable"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "shower",
+          "depth": 2,
+          "name": "shower"
+        },
+        {
+          "text": "shower",
+          "depth": 2,
+          "name": "shower"
+        },
+        {
+          "text": "showered",
+          "depth": 2,
+          "name": "showered"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "brush",
+          "depth": 2,
+          "name": "brush"
+        },
+        {
+          "text": "brush",
+          "depth": 2,
+          "name": "brush"
+        },
+        {
+          "text": "brushed",
+          "depth": 2,
+          "name": "brushed"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "towel",
+          "depth": 2,
+          "name": "towel"
+        },
+        {
+          "text": "towel (off)",
+          "depth": 2,
+          "name": "towel (off)"
+        },
+        {
+          "text": "toweled",
+          "depth": 2,
+          "name": "toweled"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "drain",
+          "depth": 2,
+          "name": "drain"
+        },
+        {
+          "text": "drain",
+          "depth": 2,
+          "name": "drain"
+        },
+        {
+          "text": "drained",
+          "depth": 2,
+          "name": "drained"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "soap",
+          "depth": 2,
+          "name": "soap"
+        },
+        {
+          "text": "soap",
+          "depth": 2,
+          "name": "soap"
+        },
+        {
+          "text": "soapy",
+          "depth": 2,
+          "name": "soapy"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "moisture",
+          "depth": 2,
+          "name": "moisture"
+        },
+        {
+          "text": "moisturize",
+          "depth": 2,
+          "name": "moisturize"
+        },
+        {
+          "text": "moist",
+          "depth": 2,
+          "name": "moist"
+        },
+        {
+          "text": "moistly",
+          "depth": 2,
+          "name": "moistly"
+        },
+        {
+          "text": "comb",
+          "depth": 2,
+          "name": "comb"
+        },
+        {
+          "text": "comb",
+          "depth": 2,
+          "name": "comb"
+        },
+        {
+          "text": "combed",
+          "depth": 2,
+          "name": "combed"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "freshness",
+          "depth": 2,
+          "name": "freshness"
+        },
+        {
+          "text": "freshen",
+          "depth": 2,
+          "name": "freshen"
+        },
+        {
+          "text": "fresh",
+          "depth": 2,
+          "name": "fresh"
+        },
+        {
+          "text": "freshly",
+          "depth": 2,
+          "name": "freshly"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "542:997",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  I squeeze __________ onto my toothbrush every morning.",
+          "depth": 1,
+          "name": "1. I squeeze __________ onto my toothbrush every morning."
+        },
+        {
+          "text": "2.  Don't forget to close the __________ curtain before you turn on the water.",
+          "depth": 1,
+          "name": "2. Don't forget to close the __________ curtain before you turn on the water."
+        },
+        {
+          "text": "3.  She dried her hair with the __________ after her shower.",
+          "depth": 1,
+          "name": "3. She dried her hair with the __________ after her shower."
+        },
+        {
+          "text": "4.  Put the dirty towels in the __________ basket, please.",
+          "depth": 1,
+          "name": "4. Put the dirty towels in the __________ basket, please."
+        },
+        {
+          "text": "5.  He stepped out of the bathtub onto the bath __________.",
+          "depth": 1,
+          "name": "5. He stepped out of the bathtub onto the bath __________."
+        },
+        {
+          "text": "6.  Use __________ to clean between your teeth after brushing.",
+          "depth": 1,
+          "name": "6. Use __________ to clean between your teeth after brushing."
+        },
+        {
+          "text": "7.  The __________ above the sink shows your reflection.",
+          "depth": 1,
+          "name": "7. The __________ above the sink shows your reflection."
+        },
+        {
+          "text": "8.  Turn on the __________ to get hot or cold water from the sink.",
+          "depth": 1,
+          "name": "8. Turn on the __________ to get hot or cold water from the sink."
+        },
+        {
+          "text": "9.  She keeps her __________ and conditioner on the shelf in the shower.",
+          "depth": 1,
+          "name": "9. She keeps her __________ and conditioner on the shelf in the shower."
+        },
+        {
+          "text": "10. After your shower, __________ off with a clean towel.",
+          "depth": 1,
+          "name": "10. After your shower, __________ off with a clean towel."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. toothpaste  2. shower  3. hair dryer  4. laundry  5. mat  6. dental floss  7. mirror  8. faucet  9. shampoo  10. dry",
+          "depth": 2,
+          "name": "1. toothpaste 2. shower 3. hair dryer 4. laundry 5. mat 6. dental floss 7. mirror 8. faucet 9. shampoo 10. dry"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "542:1015",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "🇬🇧 vs 🇺🇸 Vocabulary",
+          "depth": 2,
+          "name": "🇬🇧 vs 🇺🇸 Vocabulary"
+        },
+        {
+          "text": "British: \"tap\" / American: \"faucet\". British: \"bath\" (verb) / American: \"take a bath\". British: \"flannel\" / American: \"washcloth\". British: \"loo\" or \"toilet\" / American: \"bathroom\" or \"restroom\".",
+          "depth": 2,
+          "name": "British: \"tap\" / American: \"faucet\". British: \"bath\" (verb) / American: \"take a bath\". British: \"flannel\" / American: \"washcloth\". British: \"loo\" or \"toilet\" / American: \"bathroom\" or \"restroom\"."
+        },
+        {
+          "text": "Bathroom vs Restroom vs Toilet",
+          "depth": 2,
+          "name": "Bathroom vs Restroom vs Toilet"
+        },
+        {
+          "text": "In American English, 'bathroom' refers to the room at home. In public, people say 'restroom'. In British English, 'toilet' is the standard word. Asking for the 'toilet' in the US can sound too direct.",
+          "depth": 2,
+          "name": "In American English, 'bathroom' refers to the room at home. In public, people say 'restroom'. In British English, 'toilet' is the standard word. Asking for the 'toilet' in the US can sound too direct."
+        },
+        {
+          "text": "Compound Words",
+          "depth": 2,
+          "name": "Compound Words"
+        },
+        {
+          "text": "Many bathroom items are compound words: toothbrush, toothpaste, hairbrush, washcloth, bathtub, shower head. Learning them as units (not word-by-word) is essential.",
+          "depth": 2,
+          "name": "Many bathroom items are compound words: toothbrush, toothpaste, hairbrush, washcloth, bathtub, shower head. Learning them as units (not word-by-word) is essential."
+        },
+        {
+          "text": "Morning Routine Verbs",
+          "depth": 2,
+          "name": "Morning Routine Verbs"
+        },
+        {
+          "text": "English has specific verb + noun pairs: brush teeth (not wash), comb hair (not brush hair, unless using a hairbrush), take a shower (not make a shower), turn on the faucet (not open).",
+          "depth": 2,
+          "name": "English has specific verb + noun pairs: brush teeth (not wash), comb hair (not brush hair, unless using a hairbrush), take a shower (not make a shower), turn on the faucet (not open)."
+        },
+        {
+          "text": "Formal vs Informal",
+          "depth": 2,
+          "name": "Formal vs Informal"
+        },
+        {
+          "text": "\"Wash up\" (informal) = wash your hands and face. \"Freshen up\" (polite) = go to the bathroom to tidy yourself. \"Use the facilities\" (very formal) = go to the toilet.",
+          "depth": 2,
+          "name": "\"Wash up\" (informal) = wash your hands and face. \"Freshen up\" (polite) = go to the bathroom to tidy yourself. \"Use the facilities\" (very formal) = go to the toilet."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "542:1034",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "towel",
+          "depth": 2,
+          "name": "towel"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "bath ~, hand ~, ~ rack, dry with a ~",
+          "depth": 2,
+          "name": "bath ~, hand ~, ~ rack, dry with a ~"
+        },
+        {
+          "text": "shower",
+          "depth": 2,
+          "name": "shower"
+        },
+        {
+          "text": "n / v",
+          "depth": 2,
+          "name": "n / v"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "take a ~, ~ gel, ~ head, hot ~",
+          "depth": 2,
+          "name": "take a ~, ~ gel, ~ head, hot ~"
+        },
+        {
+          "text": "soap",
+          "depth": 2,
+          "name": "soap"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "bar of ~, hand ~, ~ dish, ~ dispenser",
+          "depth": 2,
+          "name": "bar of ~, hand ~, ~ dish, ~ dispenser"
+        },
+        {
+          "text": "faucet",
+          "depth": 2,
+          "name": "faucet"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "turn on/off the ~, hot water ~, dripping ~",
+          "depth": 2,
+          "name": "turn on/off the ~, hot water ~, dripping ~"
+        },
+        {
+          "text": "mirror",
+          "depth": 2,
+          "name": "mirror"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "look in the ~, bathroom ~, side ~",
+          "depth": 2,
+          "name": "look in the ~, bathroom ~, side ~"
+        },
+        {
+          "text": "shampoo",
+          "depth": 2,
+          "name": "shampoo"
+        },
+        {
+          "text": "n / v",
+          "depth": 2,
+          "name": "n / v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ bottle, ~ and conditioner, ~ your hair",
+          "depth": 2,
+          "name": "~ bottle, ~ and conditioner, ~ your hair"
+        },
+        {
+          "text": "toothbrush",
+          "depth": 2,
+          "name": "toothbrush"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "electric ~, ~ holder, ~ and toothpaste",
+          "depth": 2,
+          "name": "electric ~, ~ holder, ~ and toothpaste"
+        },
+        {
+          "text": "drain",
+          "depth": 2,
+          "name": "drain"
+        },
+        {
+          "text": "n / v",
+          "depth": 2,
+          "name": "n / v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "clogged ~, ~ the water, down the ~",
+          "depth": 2,
+          "name": "clogged ~, ~ the water, down the ~"
+        },
+        {
+          "text": "bathtub",
+          "depth": 2,
+          "name": "bathtub"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "fill the ~, sit in the ~, ~ drain",
+          "depth": 2,
+          "name": "fill the ~, sit in the ~, ~ drain"
+        },
+        {
+          "text": "razor",
+          "depth": 2,
+          "name": "razor"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "safety ~, electric ~, disposable ~, ~ blade",
+          "depth": 2,
+          "name": "safety ~, electric ~, disposable ~, ~ blade"
+        }
+      ]
+    }
+  }
+}

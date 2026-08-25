@@ -1,0 +1,1566 @@
+{
+  "unitId": "butterfly-garden",
+  "name": "The Butterfly Garden",
+  "subtopics": [
+    {
+      "id": "butterfly-species",
+      "title": "Butterfly Species",
+      "wordIds": [
+        "monarch",
+        "swallowtail",
+        "painted-lady",
+        "blue-morpho",
+        "admiral",
+        "cabbage-white",
+        "skipper",
+        "fritillary",
+        "sulphur",
+        "viceroy"
+      ]
+    },
+    {
+      "id": "life-cycle",
+      "title": "Life Cycle",
+      "wordIds": [
+        "egg",
+        "caterpillar",
+        "chrysalis",
+        "butterfly",
+        "metamorphosis",
+        "molt",
+        "instar",
+        "emerge",
+        "wing-dry",
+        "first-flight"
+      ]
+    },
+    {
+      "id": "anatomy",
+      "title": "Anatomy",
+      "wordIds": [
+        "wing",
+        "antenna",
+        "proboscis",
+        "thorax",
+        "abdomen",
+        "eye",
+        "leg",
+        "scale",
+        "vein",
+        "spiracle"
+      ]
+    },
+    {
+      "id": "garden-plants",
+      "title": "Garden Plants",
+      "wordIds": [
+        "milkweed",
+        "lavender",
+        "zinnia",
+        "marigold",
+        "sunflower",
+        "coneflower",
+        "aster",
+        "lantana",
+        "verbena",
+        "buddleia"
+      ]
+    },
+    {
+      "id": "behavior",
+      "title": "Behavior",
+      "wordIds": [
+        "nectar-feeding",
+        "basking",
+        "mating",
+        "laying-eggs",
+        "migration",
+        "camouflage",
+        "mimicry",
+        "puddling",
+        "roosting",
+        "territorial"
+      ]
+    },
+    {
+      "id": "garden-features",
+      "title": "Garden Features",
+      "wordIds": [
+        "pathway",
+        "bench",
+        "fountain",
+        "trellis",
+        "greenhouse",
+        "sign",
+        "magnifying-glass",
+        "net",
+        "guide-book",
+        "camera"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "monarch",
+      "label": "Monarch",
+      "ipa": "/ˈmɒnərk/",
+      "cefr": "B2",
+      "imageNodeId": "119:7087"
+    },
+    {
+      "kind": "card",
+      "id": "swallowtail",
+      "label": "Swallowtail",
+      "ipa": "/ˈswɒloʊˌteɪl/",
+      "cefr": "C1",
+      "imageNodeId": "119:7091"
+    },
+    {
+      "kind": "card",
+      "id": "painted-lady",
+      "label": "Painted Lady",
+      "ipa": "/ˈpeɪntɪd ˈleɪdi/",
+      "cefr": "C1",
+      "imageNodeId": "119:7095"
+    },
+    {
+      "kind": "card",
+      "id": "blue-morpho",
+      "label": "Blue Morpho",
+      "ipa": "/bluː ˈmɔːrfoʊ/",
+      "cefr": "C1",
+      "imageNodeId": "119:7099"
+    },
+    {
+      "kind": "card",
+      "id": "admiral",
+      "label": "Admiral",
+      "ipa": "/ˈædmɪrəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:7103"
+    },
+    {
+      "kind": "card",
+      "id": "cabbage-white",
+      "label": "Cabbage White",
+      "ipa": "/ˈkæbɪdʒ waɪt/",
+      "cefr": "C1",
+      "imageNodeId": "119:7107"
+    },
+    {
+      "kind": "card",
+      "id": "skipper",
+      "label": "Skipper",
+      "ipa": "/ˈskɪpər/",
+      "cefr": "B2",
+      "imageNodeId": "119:7111"
+    },
+    {
+      "kind": "card",
+      "id": "fritillary",
+      "label": "Fritillary",
+      "ipa": "/ˈfrɪtɪˌlɛri/",
+      "cefr": "C1",
+      "imageNodeId": "119:7115"
+    },
+    {
+      "kind": "card",
+      "id": "sulphur",
+      "label": "Sulphur",
+      "ipa": "/ˈsʌlfər/",
+      "cefr": "B2",
+      "imageNodeId": "119:7119"
+    },
+    {
+      "kind": "card",
+      "id": "viceroy",
+      "label": "Viceroy",
+      "ipa": "/ˈvaɪsˌrɔɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7123"
+    },
+    {
+      "kind": "card",
+      "id": "egg",
+      "label": "Egg",
+      "ipa": "/ɛɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7132"
+    },
+    {
+      "kind": "card",
+      "id": "caterpillar",
+      "label": "Caterpillar",
+      "ipa": "/ˈkætərˌpɪlər/",
+      "cefr": "C1",
+      "imageNodeId": "119:7136"
+    },
+    {
+      "kind": "card",
+      "id": "chrysalis",
+      "label": "Chrysalis",
+      "ipa": "/ˈkrɪsəlɪs/",
+      "cefr": "B2",
+      "imageNodeId": "119:7140"
+    },
+    {
+      "kind": "card",
+      "id": "butterfly",
+      "label": "Butterfly",
+      "ipa": "/ˈbʌtərˌflaɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7144"
+    },
+    {
+      "kind": "card",
+      "id": "metamorphosis",
+      "label": "Metamorphosis",
+      "ipa": "/ˌmɛtəˈmɔːrfəsɪs/",
+      "cefr": "C1",
+      "imageNodeId": "119:7148"
+    },
+    {
+      "kind": "card",
+      "id": "molt",
+      "label": "Molt",
+      "ipa": "/moʊlt/",
+      "cefr": "B2",
+      "imageNodeId": "119:7152"
+    },
+    {
+      "kind": "card",
+      "id": "instar",
+      "label": "Instar",
+      "ipa": "/ˈɪnstɑːr/",
+      "cefr": "B2",
+      "imageNodeId": "119:7156"
+    },
+    {
+      "kind": "card",
+      "id": "emerge",
+      "label": "Emerge",
+      "ipa": "/ɪˈmɜːrdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7160"
+    },
+    {
+      "kind": "card",
+      "id": "wing-dry",
+      "label": "Wing Dry",
+      "ipa": "/wɪŋ draɪ/",
+      "cefr": "C1",
+      "imageNodeId": "119:7164"
+    },
+    {
+      "kind": "card",
+      "id": "first-flight",
+      "label": "First Flight",
+      "ipa": "/fɜːrst flaɪt/",
+      "cefr": "C1",
+      "imageNodeId": "119:7168"
+    },
+    {
+      "kind": "card",
+      "id": "wing",
+      "label": "Wing",
+      "ipa": "/wɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7177"
+    },
+    {
+      "kind": "card",
+      "id": "antenna",
+      "label": "Antenna",
+      "ipa": "/ænˈtɛnə/",
+      "cefr": "B2",
+      "imageNodeId": "119:7181"
+    },
+    {
+      "kind": "card",
+      "id": "proboscis",
+      "label": "Proboscis",
+      "ipa": "/prəˈbɒsɪs/",
+      "cefr": "B2",
+      "imageNodeId": "119:7185"
+    },
+    {
+      "kind": "card",
+      "id": "thorax",
+      "label": "Thorax",
+      "ipa": "/ˈθɔːræks/",
+      "cefr": "B2",
+      "imageNodeId": "119:7189"
+    },
+    {
+      "kind": "card",
+      "id": "abdomen",
+      "label": "Abdomen",
+      "ipa": "/ˈæbdəmən/",
+      "cefr": "B2",
+      "imageNodeId": "119:7193"
+    },
+    {
+      "kind": "card",
+      "id": "eye",
+      "label": "Eye",
+      "ipa": "/aɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7197"
+    },
+    {
+      "kind": "card",
+      "id": "leg",
+      "label": "Leg",
+      "ipa": "/lɛɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7201"
+    },
+    {
+      "kind": "card",
+      "id": "scale",
+      "label": "Scale",
+      "ipa": "/skeɪl/",
+      "cefr": "B2",
+      "imageNodeId": "119:7205"
+    },
+    {
+      "kind": "card",
+      "id": "vein",
+      "label": "Vein",
+      "ipa": "/veɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:7209"
+    },
+    {
+      "kind": "card",
+      "id": "spiracle",
+      "label": "Spiracle",
+      "ipa": "/ˈspaɪrəkəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:7213"
+    },
+    {
+      "kind": "card",
+      "id": "milkweed",
+      "label": "Milkweed",
+      "ipa": "/ˈmɪlkˌwiːd/",
+      "cefr": "B2",
+      "imageNodeId": "119:7222"
+    },
+    {
+      "kind": "card",
+      "id": "lavender",
+      "label": "Lavender",
+      "ipa": "/ˈlævəndər/",
+      "cefr": "B2",
+      "imageNodeId": "119:7226"
+    },
+    {
+      "kind": "card",
+      "id": "zinnia",
+      "label": "Zinnia",
+      "ipa": "/ˈzɪniə/",
+      "cefr": "B2",
+      "imageNodeId": "119:7230"
+    },
+    {
+      "kind": "card",
+      "id": "marigold",
+      "label": "Marigold",
+      "ipa": "/ˈmærɪˌɡoʊld/",
+      "cefr": "B2",
+      "imageNodeId": "119:7234"
+    },
+    {
+      "kind": "card",
+      "id": "sunflower",
+      "label": "Sunflower",
+      "ipa": "/ˈsʌnˌflaʊər/",
+      "cefr": "B2",
+      "imageNodeId": "119:7238"
+    },
+    {
+      "kind": "card",
+      "id": "coneflower",
+      "label": "Coneflower",
+      "ipa": "/ˈkoʊnˌflaʊər/",
+      "cefr": "C1",
+      "imageNodeId": "119:7242"
+    },
+    {
+      "kind": "card",
+      "id": "aster",
+      "label": "Aster",
+      "ipa": "/ˈæstər/",
+      "cefr": "B2",
+      "imageNodeId": "119:7246"
+    },
+    {
+      "kind": "card",
+      "id": "lantana",
+      "label": "Lantana",
+      "ipa": "/lænˈtænə/",
+      "cefr": "B2",
+      "imageNodeId": "119:7250"
+    },
+    {
+      "kind": "card",
+      "id": "verbena",
+      "label": "Verbena",
+      "ipa": "/vərˈbiːnə/",
+      "cefr": "B2",
+      "imageNodeId": "119:7254"
+    },
+    {
+      "kind": "card",
+      "id": "buddleia",
+      "label": "Buddleia",
+      "ipa": "/ˈbʌdliə/",
+      "cefr": "B2",
+      "imageNodeId": "119:7258"
+    },
+    {
+      "kind": "card",
+      "id": "nectar-feeding",
+      "label": "Nectar Feeding",
+      "ipa": "/ˈnɛktər ˈfiːdɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "119:7267"
+    },
+    {
+      "kind": "card",
+      "id": "basking",
+      "label": "Basking",
+      "ipa": "/ˈbæskɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7271"
+    },
+    {
+      "kind": "card",
+      "id": "mating",
+      "label": "Mating",
+      "ipa": "/ˈmeɪtɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7275"
+    },
+    {
+      "kind": "card",
+      "id": "laying-eggs",
+      "label": "Laying Eggs",
+      "ipa": "/ˈleɪɪŋ ɛɡz/",
+      "cefr": "C1",
+      "imageNodeId": "119:7279"
+    },
+    {
+      "kind": "card",
+      "id": "migration",
+      "label": "Migration",
+      "ipa": "/maɪˈɡreɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "119:7283"
+    },
+    {
+      "kind": "card",
+      "id": "camouflage",
+      "label": "Camouflage",
+      "ipa": "/ˈkæməˌflɑːʒ/",
+      "cefr": "C1",
+      "imageNodeId": "119:7287"
+    },
+    {
+      "kind": "card",
+      "id": "mimicry",
+      "label": "Mimicry",
+      "ipa": "/ˈmɪmɪkri/",
+      "cefr": "B2",
+      "imageNodeId": "119:7291"
+    },
+    {
+      "kind": "card",
+      "id": "puddling",
+      "label": "Puddling",
+      "ipa": "/ˈpʌdlɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7295"
+    },
+    {
+      "kind": "card",
+      "id": "roosting",
+      "label": "Roosting",
+      "ipa": "/ˈruːstɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7299"
+    },
+    {
+      "kind": "card",
+      "id": "territorial",
+      "label": "Territorial",
+      "ipa": "/ˌtɛrɪˈtɔːriəl/",
+      "cefr": "C1",
+      "imageNodeId": "119:7303"
+    },
+    {
+      "kind": "card",
+      "id": "pathway",
+      "label": "Pathway",
+      "ipa": "/ˈpæθˌweɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7312"
+    },
+    {
+      "kind": "card",
+      "id": "bench",
+      "label": "Bench",
+      "ipa": "/bɛntʃ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7316"
+    },
+    {
+      "kind": "card",
+      "id": "fountain",
+      "label": "Fountain",
+      "ipa": "/ˈfaʊntɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:7320"
+    },
+    {
+      "kind": "card",
+      "id": "trellis",
+      "label": "Trellis",
+      "ipa": "/ˈtrɛlɪs/",
+      "cefr": "B2",
+      "imageNodeId": "119:7324"
+    },
+    {
+      "kind": "card",
+      "id": "greenhouse",
+      "label": "Greenhouse",
+      "ipa": "/ˈɡriːnˌhaʊs/",
+      "cefr": "C1",
+      "imageNodeId": "119:7328"
+    },
+    {
+      "kind": "card",
+      "id": "sign",
+      "label": "Sign",
+      "ipa": "/saɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:7332"
+    },
+    {
+      "kind": "card",
+      "id": "magnifying-glass",
+      "label": "Magnifying Glass",
+      "ipa": "/ˈmæɡnɪˌfaɪɪŋ ɡlæs/",
+      "cefr": "C1",
+      "imageNodeId": "119:7336"
+    },
+    {
+      "kind": "card",
+      "id": "net",
+      "label": "Net",
+      "ipa": "/nɛt/",
+      "cefr": "B2",
+      "imageNodeId": "119:7340"
+    },
+    {
+      "kind": "card",
+      "id": "guide-book",
+      "label": "Guide Book",
+      "ipa": "/ɡaɪd bʊk/",
+      "cefr": "C1",
+      "imageNodeId": "119:7344"
+    },
+    {
+      "kind": "card",
+      "id": "camera",
+      "label": "Camera",
+      "ipa": "/ˈkæmərə/",
+      "cefr": "B2",
+      "imageNodeId": "119:7348"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "554:5315",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "554:5317",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2+ · Topic: The Butterfly Garden",
+          "depth": 1,
+          "name": "Level: B2+ · Topic: The Butterfly Garden"
+        },
+        {
+          "text": "Wings of Change — The Remarkable World of Butterflies\n\nStep into a butterfly garden and you enter a carefully designed ecosystem — a greenhouse filled with nectar-rich plants like lavender, buddleia, milkweed, and lantana, where dozens of species fly freely along pathways lined with zinnias, marigolds, and sunflowers. Visitors armed with a magnifying glass, a guide book, or a camera can observe behaviours that reveal an astonishing depth of biological complexity.\n\nThe butterfly life cycle — known as complete metamorphosis — is one of nature's most extraordinary transformations. It begins with a tiny egg laid on a host plant. The egg hatches into a caterpillar, which feeds voraciously, growing through stages called instars, shedding its skin in a process known as molting. When fully grown, the caterpillar forms a chrysalis — a hardened protective case within which its body is completely reorganised. After days or weeks, the adult butterfly emerges, pumps fluid into its crumpled wings, and waits for them to dry before taking its first flight.\n\nA butterfly's anatomy is precisely adapted for survival. Two large compound eyes detect colour and movement. Long, sensitive antennae sense chemicals in the air, helping the insect locate food and mates. The proboscis — a coiled, straw-like tube — unrolls to sip nectar from deep within flowers. The thorax houses the powerful muscles that drive the wings, while the abdomen contains the digestive and reproductive organs. Tiny spiracles along the body allow the butterfly to breathe. The wings themselves are covered in thousands of microscopic scales — overlapping like roof tiles — that produce the vivid colours and patterns for which butterflies are celebrated.\n\nButterfly behaviour is far more complex than casual observers might assume. Basking — spreading the wings to absorb warmth from the sun — is essential for flight, since butterflies are cold-blooded. Puddling, in which butterflies gather on damp ground to extract minerals, is observed predominantly in males. Camouflage and mimicry are sophisticated defence strategies: the Viceroy butterfly closely resembles the toxic Monarch, deterring predators through deception. Some species are fiercely territorial, with males chasing intruders from their roosting sites.\n\nThe Monarch butterfly's annual migration — spanning up to 4,500 kilometres from Canada to central Mexico — remains one of the most studied phenomena in entomology. Monarchs depend on milkweed as the sole food source for their caterpillars, and the widespread loss of milkweed due to herbicide use has contributed to significant population declines. Conservation efforts now focus on restoring milkweed corridors along migration routes and planting nectar gardens with coneflowers, asters, and verbena to sustain adults during their journey.",
+          "depth": 1,
+          "name": "Wings of Change — The Remarkable World of Butterflies Step into a butterfly garden and you enter a carefully designed ecosystem — a greenhouse filled with nectar-rich plants like lavender, buddleia, milkweed, and lantana, where dozens of species fly freely along pathways lined with zinnias, marigolds, and sunflowers. Visitors armed with a magnifying glass, a guide book, or a camera can observe behaviours that reveal an astonishing depth of biological complexity. The butterfly life cycle — known as complete metamorphosis — is one of nature's most extraordinary transformations. It begins with a tiny egg laid on a host plant. The egg hatches into a caterpillar, which feeds voraciously, growing through stages called instars, shedding its skin in a process known as molting. When fully grown, the caterpillar forms a chrysalis — a hardened protective case within which its body is completely reorganised. After days or weeks, the adult butterfly emerges, pumps fluid into its crumpled wings, and waits for them to dry before taking its first flight. A butterfly's anatomy is precisely adapted for survival. Two large compound eyes detect colour and movement. Long, sensitive antennae sense chemicals in the air, helping the insect locate food and mates. The proboscis — a coiled, straw-like tube — unrolls to sip nectar from deep within flowers. The thorax houses the powerful muscles that drive the wings, while the abdomen contains the digestive and reproductive organs. Tiny spiracles along the body allow the butterfly to breathe. The wings themselves are covered in thousands of microscopic scales — overlapping like roof tiles — that produce the vivid colours and patterns for which butterflies are celebrated. Butterfly behaviour is far more complex than casual observers might assume. Basking — spreading the wings to absorb warmth from the sun — is essential for flight, since butterflies are cold-blooded. Puddling, in which butterflies gather on damp ground to extract minerals, is observed predominantly in males. Camouflage and mimicry are sophisticated defence strategies: the Viceroy butterfly closely resembles the toxic Monarch, deterring predators through deception. Some species are fiercely territorial, with males chasing intruders from their roosting sites. The Monarch butterfly's annual migration — spanning up to 4,500 kilometres from Canada to central Mexico — remains one of the most studied phenomena in entomology. Monarchs depend on milkweed as the sole food source for their caterpillars, and the widespread loss of milkweed due to herbicide use has contributed to significant population declines. Conservation efforts now focus on restoring milkweed corridors along migration routes and planting nectar gardens with coneflowers, asters, and verbena to sustain adults during their journey."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Describe the stages of complete metamorphosis, using the correct terminology from the passage.",
+          "depth": 1,
+          "name": "1. Describe the stages of complete metamorphosis, using the correct terminology from the passage."
+        },
+        {
+          "text": "2. How are the proboscis and antennae each adapted for specific survival functions?",
+          "depth": 1,
+          "name": "2. How are the proboscis and antennae each adapted for specific survival functions?"
+        },
+        {
+          "text": "3. What is the difference between camouflage and mimicry as butterfly defence strategies?",
+          "depth": 1,
+          "name": "3. What is the difference between camouflage and mimicry as butterfly defence strategies?"
+        },
+        {
+          "text": "4. Why is the loss of milkweed particularly devastating for Monarch butterfly populations?",
+          "depth": 1,
+          "name": "4. Why is the loss of milkweed particularly devastating for Monarch butterfly populations?"
+        },
+        {
+          "text": "5. Evaluate the role butterfly gardens play in both conservation and public education.",
+          "depth": 1,
+          "name": "5. Evaluate the role butterfly gardens play in both conservation and public education."
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "554:5330",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "have butterflies (in your stomach)",
+          "depth": 2,
+          "name": "have butterflies (in your stomach)"
+        },
+        {
+          "text": "feel nervous or excited",
+          "depth": 2,
+          "name": "feel nervous or excited"
+        },
+        {
+          "text": "\"I've got butterflies before my driving test.\"",
+          "depth": 2,
+          "name": "\"I've got butterflies before my driving test.\""
+        },
+        {
+          "text": "social butterfly",
+          "depth": 2,
+          "name": "social butterfly"
+        },
+        {
+          "text": "a person who enjoys socialising and moves easily between groups",
+          "depth": 2,
+          "name": "a person who enjoys socialising and moves easily between groups"
+        },
+        {
+          "text": "\"She's a real social butterfly — she knows everyone at the party.\"",
+          "depth": 2,
+          "name": "\"She's a real social butterfly — she knows everyone at the party.\""
+        },
+        {
+          "text": "the butterfly effect",
+          "depth": 2,
+          "name": "the butterfly effect"
+        },
+        {
+          "text": "a small change can have large, unpredictable consequences",
+          "depth": 2,
+          "name": "a small change can have large, unpredictable consequences"
+        },
+        {
+          "text": "\"Cancelling that meeting had a butterfly effect on the whole project.\"",
+          "depth": 2,
+          "name": "\"Cancelling that meeting had a butterfly effect on the whole project.\""
+        },
+        {
+          "text": "come out of your cocoon / shell",
+          "depth": 2,
+          "name": "come out of your cocoon / shell"
+        },
+        {
+          "text": "become more confident and outgoing",
+          "depth": 2,
+          "name": "become more confident and outgoing"
+        },
+        {
+          "text": "\"Since starting university, she's really come out of her shell.\"",
+          "depth": 2,
+          "name": "\"Since starting university, she's really come out of her shell.\""
+        },
+        {
+          "text": "crawl before you walk",
+          "depth": 2,
+          "name": "crawl before you walk"
+        },
+        {
+          "text": "learn basics before attempting difficult things",
+          "depth": 2,
+          "name": "learn basics before attempting difficult things"
+        },
+        {
+          "text": "\"You need to crawl before you walk — master the fundamentals first.\"",
+          "depth": 2,
+          "name": "\"You need to crawl before you walk — master the fundamentals first.\""
+        },
+        {
+          "text": "spread your wings",
+          "depth": 2,
+          "name": "spread your wings"
+        },
+        {
+          "text": "become more independent; try new things",
+          "depth": 2,
+          "name": "become more independent; try new things"
+        },
+        {
+          "text": "\"After years at the same job, she decided to spread her wings.\"",
+          "depth": 2,
+          "name": "\"After years at the same job, she decided to spread her wings.\""
+        },
+        {
+          "text": "float like a butterfly",
+          "depth": 2,
+          "name": "float like a butterfly"
+        },
+        {
+          "text": "move gracefully and lightly",
+          "depth": 2,
+          "name": "move gracefully and lightly"
+        },
+        {
+          "text": "\"She dances beautifully — she floats like a butterfly.\"",
+          "depth": 2,
+          "name": "\"She dances beautifully — she floats like a butterfly.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "554:5362",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A family visiting a butterfly garden greenhouse",
+          "depth": 1,
+          "name": "Scene: A family visiting a butterfly garden greenhouse"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "Welcome to the Tropical Butterfly House! It's warm and humid in here — about 28 degrees — so the butterflies feel at home.",
+          "depth": 2,
+          "name": "Welcome to the Tropical Butterfly House! It's warm and humid in here — about 28 degrees — so the butterflies feel at home."
+        },
+        {
+          "text": "Child:",
+          "depth": 2,
+          "name": "Child:"
+        },
+        {
+          "text": "Wow, there's one on my arm! Is it okay?",
+          "depth": 2,
+          "name": "Wow, there's one on my arm! Is it okay?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "That's perfectly fine! It's tasting you with its feet — butterflies have taste sensors on the bottom of their legs.",
+          "depth": 2,
+          "name": "That's perfectly fine! It's tasting you with its feet — butterflies have taste sensors on the bottom of their legs."
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "How many species do you have here?",
+          "depth": 2,
+          "name": "How many species do you have here?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "We have around 50 species from Central America, Southeast Asia, and Africa. That big blue one is a Blue Morpho from Costa Rica.",
+          "depth": 2,
+          "name": "We have around 50 species from Central America, Southeast Asia, and Africa. That big blue one is a Blue Morpho from Costa Rica."
+        },
+        {
+          "text": "Child:",
+          "depth": 2,
+          "name": "Child:"
+        },
+        {
+          "text": "What's that green thing hanging from the leaf?",
+          "depth": 2,
+          "name": "What's that green thing hanging from the leaf?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "That's a chrysalis. There's a caterpillar inside transforming into a butterfly. In about ten days, a butterfly will emerge.",
+          "depth": 2,
+          "name": "That's a chrysalis. There's a caterpillar inside transforming into a butterfly. In about ten days, a butterfly will emerge."
+        },
+        {
+          "text": "Child:",
+          "depth": 2,
+          "name": "Child:"
+        },
+        {
+          "text": "Can we see it come out?",
+          "depth": 2,
+          "name": "Can we see it come out?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "Sometimes! Our emergence display has chrysalises at different stages. If you're lucky, you might see one opening.",
+          "depth": 2,
+          "name": "Sometimes! Our emergence display has chrysalises at different stages. If you're lucky, you might see one opening."
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "What flowers attract butterflies best?",
+          "depth": 2,
+          "name": "What flowers attract butterflies best?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "Bright colours and sweet nectar — lantana, buddleia, and hibiscus are favourites. If you plant these at home, you'll attract butterflies to your garden too.",
+          "depth": 2,
+          "name": "Bright colours and sweet nectar — lantana, buddleia, and hibiscus are favourites. If you plant these at home, you'll attract butterflies to your garden too."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "554:5400",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The caterpillar transforms into a butterfly inside a cocoon.\"",
+          "depth": 2,
+          "name": "❌ \"The caterpillar transforms into a butterfly inside a cocoon.\""
+        },
+        {
+          "text": "✅ \"The caterpillar transforms into a butterfly inside a chrysalis.\"",
+          "depth": 2,
+          "name": "✅ \"The caterpillar transforms into a butterfly inside a chrysalis.\""
+        },
+        {
+          "text": "Butterflies form a chrysalis (a hardened outer shell). Moths spin a cocoon (made of silk thread). The terms are not interchangeable. At B2+, domain-specific precision matters: using 'cocoon' for a butterfly reveals imprecise knowledge of the subject.",
+          "depth": 2,
+          "name": "Butterflies form a chrysalis (a hardened outer shell). Moths spin a cocoon (made of silk thread). The terms are not interchangeable. At B2+, domain-specific precision matters: using 'cocoon' for a butterfly reveals imprecise knowledge of the subject."
+        },
+        {
+          "text": "❌ \"The butterfly which its wings are blue is called a Blue Morpho.\"",
+          "depth": 2,
+          "name": "❌ \"The butterfly which its wings are blue is called a Blue Morpho.\""
+        },
+        {
+          "text": "✅ \"The butterfly whose wings are blue is called a Blue Morpho.\"",
+          "depth": 2,
+          "name": "✅ \"The butterfly whose wings are blue is called a Blue Morpho.\""
+        },
+        {
+          "text": "'Whose' is the possessive relative pronoun for both people and things: 'the butterfly whose wings...', 'the plant whose leaves...'. Never 'which its'. At B2+, 'whose' for non-human referents is standard in academic writing.",
+          "depth": 2,
+          "name": "'Whose' is the possessive relative pronoun for both people and things: 'the butterfly whose wings...', 'the plant whose leaves...'. Never 'which its'. At B2+, 'whose' for non-human referents is standard in academic writing."
+        },
+        {
+          "text": "❌ \"Monarchs migrate to Mexico for escaping the cold winter.\"",
+          "depth": 2,
+          "name": "❌ \"Monarchs migrate to Mexico for escaping the cold winter.\""
+        },
+        {
+          "text": "✅ \"Monarchs migrate to Mexico to escape the cold winter.\"",
+          "depth": 2,
+          "name": "✅ \"Monarchs migrate to Mexico to escape the cold winter.\""
+        },
+        {
+          "text": "Purpose is expressed with 'to + infinitive' (not 'for + -ing' with animate subjects). 'They migrate to escape' = purpose. 'Wings are for flying' = function of an object. This purpose vs. function distinction is subtle but important at B2+.",
+          "depth": 2,
+          "name": "Purpose is expressed with 'to + infinitive' (not 'for + -ing' with animate subjects). 'They migrate to escape' = purpose. 'Wings are for flying' = function of an object. This purpose vs. function distinction is subtle but important at B2+."
+        },
+        {
+          "text": "❌ \"The phenomena of metamorphosis is found across many insect species.\"",
+          "depth": 2,
+          "name": "❌ \"The phenomena of metamorphosis is found across many insect species.\""
+        },
+        {
+          "text": "✅ \"The phenomenon of metamorphosis is found across many insect species.\"",
+          "depth": 2,
+          "name": "✅ \"The phenomenon of metamorphosis is found across many insect species.\""
+        },
+        {
+          "text": "'Phenomenon' (singular) → 'phenomena' (plural). 'This phenomenon is...' / 'These phenomena are...' Academic Greek/Latin plurals: criterion→criteria, analysis→analyses, hypothesis→hypotheses. At B2+, these forms are expected in scientific writing.",
+          "depth": 2,
+          "name": "'Phenomenon' (singular) → 'phenomena' (plural). 'This phenomenon is...' / 'These phenomena are...' Academic Greek/Latin plurals: criterion→criteria, analysis→analyses, hypothesis→hypotheses. At B2+, these forms are expected in scientific writing."
+        },
+        {
+          "text": "❌ \"Were it not for pollinators like butterflies, many plants will not reproduce.\"",
+          "depth": 2,
+          "name": "❌ \"Were it not for pollinators like butterflies, many plants will not reproduce.\""
+        },
+        {
+          "text": "✅ \"Were it not for pollinators like butterflies, many plants would not reproduce.\"",
+          "depth": 2,
+          "name": "✅ \"Were it not for pollinators like butterflies, many plants would not reproduce.\""
+        },
+        {
+          "text": "Inverted second conditional: 'Were it not for X, Y would...' The result clause always uses 'would', never 'will'. This formal hypothetical structure is characteristic of B2+ academic register and scientific reasoning.",
+          "depth": 2,
+          "name": "Inverted second conditional: 'Were it not for X, Y would...' The result clause always uses 'would', never 'will'. This formal hypothetical structure is characteristic of B2+ academic register and scientific reasoning."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "554:5424",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how nature and transformation vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how nature and transformation vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "transform",
+          "depth": 2,
+          "name": "transform"
+        },
+        {
+          "text": "transformation",
+          "depth": 2,
+          "name": "transformation"
+        },
+        {
+          "text": "transform",
+          "depth": 2,
+          "name": "transform"
+        },
+        {
+          "text": "transformed / transformative",
+          "depth": 2,
+          "name": "transformed / transformative"
+        },
+        {
+          "text": "emerge",
+          "depth": 2,
+          "name": "emerge"
+        },
+        {
+          "text": "emergence",
+          "depth": 2,
+          "name": "emergence"
+        },
+        {
+          "text": "emerge",
+          "depth": 2,
+          "name": "emerge"
+        },
+        {
+          "text": "emerging / emergent",
+          "depth": 2,
+          "name": "emerging / emergent"
+        },
+        {
+          "text": "pollinate",
+          "depth": 2,
+          "name": "pollinate"
+        },
+        {
+          "text": "pollination / pollinator / pollen",
+          "depth": 2,
+          "name": "pollination / pollinator / pollen"
+        },
+        {
+          "text": "pollinate",
+          "depth": 2,
+          "name": "pollinate"
+        },
+        {
+          "text": "pollinated",
+          "depth": 2,
+          "name": "pollinated"
+        },
+        {
+          "text": "cocoon",
+          "depth": 2,
+          "name": "cocoon"
+        },
+        {
+          "text": "cocoon",
+          "depth": 2,
+          "name": "cocoon"
+        },
+        {
+          "text": "cocoon",
+          "depth": 2,
+          "name": "cocoon"
+        },
+        {
+          "text": "cocooned",
+          "depth": 2,
+          "name": "cocooned"
+        },
+        {
+          "text": "camouflage",
+          "depth": 2,
+          "name": "camouflage"
+        },
+        {
+          "text": "camouflage",
+          "depth": 2,
+          "name": "camouflage"
+        },
+        {
+          "text": "camouflage",
+          "depth": 2,
+          "name": "camouflage"
+        },
+        {
+          "text": "camouflaged",
+          "depth": 2,
+          "name": "camouflaged"
+        },
+        {
+          "text": "attract",
+          "depth": 2,
+          "name": "attract"
+        },
+        {
+          "text": "attraction / attractiveness",
+          "depth": 2,
+          "name": "attraction / attractiveness"
+        },
+        {
+          "text": "attract",
+          "depth": 2,
+          "name": "attract"
+        },
+        {
+          "text": "attractive",
+          "depth": 2,
+          "name": "attractive"
+        },
+        {
+          "text": "migrate",
+          "depth": 2,
+          "name": "migrate"
+        },
+        {
+          "text": "migration / migrant",
+          "depth": 2,
+          "name": "migration / migrant"
+        },
+        {
+          "text": "migrate",
+          "depth": 2,
+          "name": "migrate"
+        },
+        {
+          "text": "migratory",
+          "depth": 2,
+          "name": "migratory"
+        },
+        {
+          "text": "nectar",
+          "depth": 2,
+          "name": "nectar"
+        },
+        {
+          "text": "nectar",
+          "depth": 2,
+          "name": "nectar"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "bloom",
+          "depth": 2,
+          "name": "bloom"
+        },
+        {
+          "text": "bloom / blossom",
+          "depth": 2,
+          "name": "bloom / blossom"
+        },
+        {
+          "text": "bloom",
+          "depth": 2,
+          "name": "bloom"
+        },
+        {
+          "text": "blooming",
+          "depth": 2,
+          "name": "blooming"
+        },
+        {
+          "text": "fragile",
+          "depth": 2,
+          "name": "fragile"
+        },
+        {
+          "text": "fragility",
+          "depth": 2,
+          "name": "fragility"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "fragile",
+          "depth": 2,
+          "name": "fragile"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "554:5484",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A caterpillar sheds its skin through a process called __________ .",
+          "depth": 1,
+          "name": "1. A caterpillar sheds its skin through a process called __________ ."
+        },
+        {
+          "text": "2.  The hardened protective case formed before the adult stage is called a __________ .",
+          "depth": 1,
+          "name": "2. The hardened protective case formed before the adult stage is called a __________ ."
+        },
+        {
+          "text": "3.  The coiled, straw-like tube a butterfly uses to sip nectar is the __________ .",
+          "depth": 1,
+          "name": "3. The coiled, straw-like tube a butterfly uses to sip nectar is the __________ ."
+        },
+        {
+          "text": "4.  Two sensitive __________ help butterflies detect chemicals and locate food.",
+          "depth": 1,
+          "name": "4. Two sensitive __________ help butterflies detect chemicals and locate food."
+        },
+        {
+          "text": "5.  Tiny __________ along the body allow the butterfly to breathe.",
+          "depth": 1,
+          "name": "5. Tiny __________ along the body allow the butterfly to breathe."
+        },
+        {
+          "text": "6.  Wings are covered in thousands of microscopic __________ that produce colour.",
+          "depth": 1,
+          "name": "6. Wings are covered in thousands of microscopic __________ that produce colour."
+        },
+        {
+          "text": "7.  __________ is the behaviour of spreading wings to absorb warmth from the sun.",
+          "depth": 1,
+          "name": "7. __________ is the behaviour of spreading wings to absorb warmth from the sun."
+        },
+        {
+          "text": "8.  __________ is when butterflies gather on damp ground to extract minerals.",
+          "depth": 1,
+          "name": "8. __________ is when butterflies gather on damp ground to extract minerals."
+        },
+        {
+          "text": "9.  The __________ butterfly closely resembles the toxic Monarch as a defence strategy.",
+          "depth": 1,
+          "name": "9. The __________ butterfly closely resembles the toxic Monarch as a defence strategy."
+        },
+        {
+          "text": "10. Monarch caterpillars feed exclusively on __________ as their host plant.",
+          "depth": 1,
+          "name": "10. Monarch caterpillars feed exclusively on __________ as their host plant."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. molting  2. chrysalis  3. proboscis  4. antennae  5. spiracles  6. scales  7. Basking  8. Puddling  9. Viceroy  10. milkweed",
+          "depth": 2,
+          "name": "1. molting 2. chrysalis 3. proboscis 4. antennae 5. spiracles 6. scales 7. Basking 8. Puddling 9. Viceroy 10. milkweed"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "554:5502",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Butterfly vs Moth",
+          "depth": 2,
+          "name": "Butterfly vs Moth"
+        },
+        {
+          "text": "Butterflies: fly during the day, have thin antennae with club-shaped tips, rest with wings closed upright. Moths: mostly fly at night, have feathery antennae, rest with wings spread flat. There are far more moth species than butterfly species. 'As a moth to a flame' = irresistibly attracted to something dangerous.",
+          "depth": 2,
+          "name": "Butterflies: fly during the day, have thin antennae with club-shaped tips, rest with wings closed upright. Moths: mostly fly at night, have feathery antennae, rest with wings spread flat. There are far more moth species than butterfly species. 'As a moth to a flame' = irresistibly attracted to something dangerous."
+        },
+        {
+          "text": "Chrysalis vs Cocoon",
+          "depth": 2,
+          "name": "Chrysalis vs Cocoon"
+        },
+        {
+          "text": "'Chrysalis' (pupa) = the hard shell formed by a butterfly caterpillar. 'Cocoon' = a silk case spun by a moth caterpillar (or spider). These are often confused. Butterflies make chrysalises, moths make cocoons. In figurative English, both can mean a safe, protective environment.",
+          "depth": 2,
+          "name": "'Chrysalis' (pupa) = the hard shell formed by a butterfly caterpillar. 'Cocoon' = a silk case spun by a moth caterpillar (or spider). These are often confused. Butterflies make chrysalises, moths make cocoons. In figurative English, both can mean a safe, protective environment."
+        },
+        {
+          "text": "The Butterfly Bush",
+          "depth": 2,
+          "name": "The Butterfly Bush"
+        },
+        {
+          "text": "'Buddleia' or 'butterfly bush' is a flowering shrub that strongly attracts butterflies. It grows wild across the UK, often on waste ground and railway embankments. While beautiful and loved by butterflies, it's considered an invasive species in some areas because it spreads rapidly.",
+          "depth": 2,
+          "name": "'Buddleia' or 'butterfly bush' is a flowering shrub that strongly attracts butterflies. It grows wild across the UK, often on waste ground and railway embankments. While beautiful and loved by butterflies, it's considered an invasive species in some areas because it spreads rapidly."
+        },
+        {
+          "text": "Monarch Butterfly Migration",
+          "depth": 2,
+          "name": "Monarch Butterfly Migration"
+        },
+        {
+          "text": "The Monarch butterfly makes one of the longest insect migrations — up to 4,800km from Canada and the USA to central Mexico. Millions of Monarchs gather in Mexican forests each winter. This migration takes multiple generations — no single butterfly completes the entire round trip.",
+          "depth": 2,
+          "name": "The Monarch butterfly makes one of the longest insect migrations — up to 4,800km from Canada and the USA to central Mexico. Millions of Monarchs gather in Mexican forests each winter. This migration takes multiple generations — no single butterfly completes the entire round trip."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "554:5518",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "caterpillar",
+          "depth": 2,
+          "name": "caterpillar"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ stage, ~ feeding, ~ leaf",
+          "depth": 2,
+          "name": "~ stage, ~ feeding, ~ leaf"
+        },
+        {
+          "text": "chrysalis",
+          "depth": 2,
+          "name": "chrysalis"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "~ case, ~ stage, ~ emerge",
+          "depth": 2,
+          "name": "~ case, ~ stage, ~ emerge"
+        },
+        {
+          "text": "nectar",
+          "depth": 2,
+          "name": "nectar"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "flower ~, ~ guide, ~ feeder",
+          "depth": 2,
+          "name": "flower ~, ~ guide, ~ feeder"
+        },
+        {
+          "text": "proboscis",
+          "depth": 2,
+          "name": "proboscis"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "~ coiled, ~ length, ~ drinking",
+          "depth": 2,
+          "name": "~ coiled, ~ length, ~ drinking"
+        },
+        {
+          "text": "wingspan",
+          "depth": 2,
+          "name": "wingspan"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ size, ~ measurement, large ~",
+          "depth": 2,
+          "name": "~ size, ~ measurement, large ~"
+        },
+        {
+          "text": "pollen",
+          "depth": 2,
+          "name": "pollen"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ grain, ~ transfer, ~ count",
+          "depth": 2,
+          "name": "~ grain, ~ transfer, ~ count"
+        },
+        {
+          "text": "cocoon",
+          "depth": 2,
+          "name": "cocoon"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "silk ~, ~ stage, ~ protection",
+          "depth": 2,
+          "name": "silk ~, ~ stage, ~ protection"
+        },
+        {
+          "text": "antenna",
+          "depth": 2,
+          "name": "antenna"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ pair, ~ shape, ~ tip",
+          "depth": 2,
+          "name": "~ pair, ~ shape, ~ tip"
+        },
+        {
+          "text": "larva",
+          "depth": 2,
+          "name": "larva"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ stage, ~ feeding, ~ growth",
+          "depth": 2,
+          "name": "~ stage, ~ feeding, ~ growth"
+        },
+        {
+          "text": "camouflage",
+          "depth": 2,
+          "name": "camouflage"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ pattern, ~ colour, ~ wings",
+          "depth": 2,
+          "name": "~ pattern, ~ colour, ~ wings"
+        }
+      ]
+    }
+  }
+}

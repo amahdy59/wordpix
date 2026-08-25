@@ -1,0 +1,393 @@
+{
+  "unitId": "legal-documents",
+  "name": "Legal Documents",
+  "subtopics": [
+    {
+      "id": "contracts",
+      "title": "Contracts",
+      "wordIds": [
+        "contract",
+        "agreement",
+        "terms",
+        "conditions",
+        "clause",
+        "amendment",
+        "addendum",
+        "breach",
+        "void",
+        "binding"
+      ]
+    },
+    {
+      "id": "court-documents",
+      "title": "Court Documents",
+      "wordIds": [
+        "complaint",
+        "summons",
+        "subpoena",
+        "motion",
+        "brief",
+        "petition",
+        "order",
+        "injunction",
+        "warrant",
+        "indictment"
+      ]
+    },
+    {
+      "id": "personal-legal-docs",
+      "title": "Personal Legal Docs",
+      "wordIds": [
+        "will",
+        "trust",
+        "power-of-attorney",
+        "living-will",
+        "deed",
+        "title",
+        "lease",
+        "prenuptial",
+        "divorce-decree",
+        "adoption-papers"
+      ]
+    },
+    {
+      "id": "business-legal-docs",
+      "title": "Business Legal Docs",
+      "wordIds": [
+        "patent",
+        "trademark",
+        "copyright",
+        "license",
+        "nda",
+        "non-compete",
+        "partnership-agreement",
+        "articles-of-incorporation",
+        "bylaws",
+        "operating-agreement"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "contract",
+      "label": "Contract",
+      "ipa": "/ˈkɒntrækt/",
+      "cefr": "B2",
+      "imageNodeId": "467:14820"
+    },
+    {
+      "kind": "card",
+      "id": "agreement",
+      "label": "Agreement",
+      "ipa": "/əˈɡriːmənt/",
+      "cefr": "B2",
+      "imageNodeId": "467:14824"
+    },
+    {
+      "kind": "card",
+      "id": "terms",
+      "label": "Terms",
+      "ipa": "/tɜːrmz/",
+      "cefr": "B2",
+      "imageNodeId": "467:14828"
+    },
+    {
+      "kind": "card",
+      "id": "conditions",
+      "label": "Conditions",
+      "ipa": "/kənˈdɪʃənz/",
+      "cefr": "C1",
+      "imageNodeId": "467:14832"
+    },
+    {
+      "kind": "card",
+      "id": "clause",
+      "label": "Clause",
+      "ipa": "/klɔːz/",
+      "cefr": "B2",
+      "imageNodeId": "467:14836"
+    },
+    {
+      "kind": "card",
+      "id": "amendment",
+      "label": "Amendment",
+      "ipa": "/əˈmɛndmənt/",
+      "cefr": "B2",
+      "imageNodeId": "467:14840"
+    },
+    {
+      "kind": "card",
+      "id": "addendum",
+      "label": "Addendum",
+      "ipa": "/əˈdɛndəm/",
+      "cefr": "B2",
+      "imageNodeId": "467:14844"
+    },
+    {
+      "kind": "card",
+      "id": "breach",
+      "label": "Breach",
+      "ipa": "/briːtʃ/",
+      "cefr": "B2",
+      "imageNodeId": "467:14848"
+    },
+    {
+      "kind": "card",
+      "id": "void",
+      "label": "Void",
+      "ipa": "/vɔɪd/",
+      "cefr": "B2",
+      "imageNodeId": "467:14852"
+    },
+    {
+      "kind": "card",
+      "id": "binding",
+      "label": "Binding",
+      "ipa": "/ˈbaɪndɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:14856"
+    },
+    {
+      "kind": "card",
+      "id": "complaint",
+      "label": "Complaint",
+      "ipa": "/kəmˈpleɪnt/",
+      "cefr": "B2",
+      "imageNodeId": "467:14865"
+    },
+    {
+      "kind": "card",
+      "id": "summons",
+      "label": "Summons",
+      "ipa": "/ˈsʌmənz/",
+      "cefr": "B2",
+      "imageNodeId": "467:14869"
+    },
+    {
+      "kind": "card",
+      "id": "subpoena",
+      "label": "Subpoena",
+      "ipa": "/səˈpiːnə/",
+      "cefr": "B2",
+      "imageNodeId": "467:14873"
+    },
+    {
+      "kind": "card",
+      "id": "motion",
+      "label": "Motion",
+      "ipa": "/ˈmoʊʃən/",
+      "cefr": "B2",
+      "imageNodeId": "467:14877"
+    },
+    {
+      "kind": "card",
+      "id": "brief",
+      "label": "Brief",
+      "ipa": "/briːf/",
+      "cefr": "B2",
+      "imageNodeId": "467:14881"
+    },
+    {
+      "kind": "card",
+      "id": "petition",
+      "label": "Petition",
+      "ipa": "/pɪˈtɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "467:14885"
+    },
+    {
+      "kind": "card",
+      "id": "order",
+      "label": "Order",
+      "ipa": "/ˈɔːrdər/",
+      "cefr": "B2",
+      "imageNodeId": "467:14889"
+    },
+    {
+      "kind": "card",
+      "id": "injunction",
+      "label": "Injunction",
+      "ipa": "/ɪnˈdʒʌŋkʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:14893"
+    },
+    {
+      "kind": "card",
+      "id": "warrant",
+      "label": "Warrant",
+      "ipa": "/ˈwɒrənt/",
+      "cefr": "B2",
+      "imageNodeId": "467:14897"
+    },
+    {
+      "kind": "card",
+      "id": "indictment",
+      "label": "Indictment",
+      "ipa": "/ɪnˈdaɪtmənt/",
+      "cefr": "C1",
+      "imageNodeId": "467:14901"
+    },
+    {
+      "kind": "card",
+      "id": "will",
+      "label": "Will",
+      "ipa": "/wɪl/",
+      "cefr": "B2",
+      "imageNodeId": "467:14910"
+    },
+    {
+      "kind": "card",
+      "id": "trust",
+      "label": "Trust",
+      "ipa": "/trʌst/",
+      "cefr": "B2",
+      "imageNodeId": "467:14914"
+    },
+    {
+      "kind": "card",
+      "id": "power-of-attorney",
+      "label": "Power of Attorney",
+      "ipa": "/ˈpaʊər əv əˈtɜːrni/",
+      "cefr": "C1",
+      "imageNodeId": "467:14918"
+    },
+    {
+      "kind": "card",
+      "id": "living-will",
+      "label": "Living Will",
+      "ipa": "/ˈlɪvɪŋ wɪl/",
+      "cefr": "C1",
+      "imageNodeId": "467:14922"
+    },
+    {
+      "kind": "card",
+      "id": "deed",
+      "label": "Deed",
+      "ipa": "/diːd/",
+      "cefr": "B2",
+      "imageNodeId": "467:14926"
+    },
+    {
+      "kind": "card",
+      "id": "title",
+      "label": "Title",
+      "ipa": "/ˈtaɪtəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:14930"
+    },
+    {
+      "kind": "card",
+      "id": "lease",
+      "label": "Lease",
+      "ipa": "/liːs/",
+      "cefr": "B2",
+      "imageNodeId": "467:14934"
+    },
+    {
+      "kind": "card",
+      "id": "prenuptial",
+      "label": "Prenuptial",
+      "ipa": "/priːˈnʌpʃəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:14938"
+    },
+    {
+      "kind": "card",
+      "id": "divorce-decree",
+      "label": "Divorce Decree",
+      "ipa": "/dɪˈvɔːrs dɪˈkriː/",
+      "cefr": "C1",
+      "imageNodeId": "467:14942"
+    },
+    {
+      "kind": "card",
+      "id": "adoption-papers",
+      "label": "Adoption Papers",
+      "ipa": "/əˈdɒpʃən ˈpeɪpərz/",
+      "cefr": "C1",
+      "imageNodeId": "467:14946"
+    },
+    {
+      "kind": "card",
+      "id": "patent",
+      "label": "Patent",
+      "ipa": "/ˈpætənt/",
+      "cefr": "B2",
+      "imageNodeId": "467:14955"
+    },
+    {
+      "kind": "card",
+      "id": "trademark",
+      "label": "Trademark",
+      "ipa": "/ˈtreɪdˌmɑːrk/",
+      "cefr": "B2",
+      "imageNodeId": "467:14959"
+    },
+    {
+      "kind": "card",
+      "id": "copyright",
+      "label": "Copyright",
+      "ipa": "/ˈkɒpiˌraɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:14963"
+    },
+    {
+      "kind": "card",
+      "id": "license",
+      "label": "License",
+      "ipa": "/ˈlaɪsəns/",
+      "cefr": "B2",
+      "imageNodeId": "467:14967"
+    },
+    {
+      "kind": "card",
+      "id": "nda",
+      "label": "NDA",
+      "ipa": "/ˌɛndiːˈeɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:14971"
+    },
+    {
+      "kind": "card",
+      "id": "non-compete",
+      "label": "Non-Compete",
+      "ipa": "/nɒn kəmˈpiːt/",
+      "cefr": "C1",
+      "imageNodeId": "467:14975"
+    },
+    {
+      "kind": "card",
+      "id": "partnership-agreement",
+      "label": "Partnership Agreement",
+      "ipa": "/ˈpɑːrtnərʃɪp əˈɡriːmənt/",
+      "cefr": "C1",
+      "imageNodeId": "467:14979"
+    },
+    {
+      "kind": "card",
+      "id": "articles-of-incorporation",
+      "label": "Articles of Incorporation",
+      "ipa": "/ˈɑːrtɪkəlz əv ɪnˌkɔːrpəˈreɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:14983"
+    },
+    {
+      "kind": "card",
+      "id": "bylaws",
+      "label": "Bylaws",
+      "ipa": "/ˈbaɪˌlɔːz/",
+      "cefr": "B2",
+      "imageNodeId": "467:14987"
+    },
+    {
+      "kind": "card",
+      "id": "operating-agreement",
+      "label": "Operating Agreement",
+      "ipa": "/ˈɒpəˌreɪtɪŋ əˈɡriːmənt/",
+      "cefr": "C1",
+      "imageNodeId": "467:14991"
+    }
+  ],
+  "materials": null
+}

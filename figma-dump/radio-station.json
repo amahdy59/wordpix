@@ -1,0 +1,1689 @@
+{
+  "unitId": "radio-station",
+  "name": "The Radio Station",
+  "subtopics": [
+    {
+      "id": "broadcasting-equipment",
+      "title": "Broadcasting Equipment",
+      "wordIds": [
+        "microphone",
+        "mixing-console",
+        "headphones",
+        "monitor-speaker",
+        "transmitter",
+        "antenna",
+        "amplifier",
+        "equalizer",
+        "compressor",
+        "pop-filter"
+      ]
+    },
+    {
+      "id": "studio-setup",
+      "title": "Studio Setup",
+      "wordIds": [
+        "sound-booth",
+        "acoustic-panel",
+        "on-air-sign",
+        "desk",
+        "chair",
+        "computer",
+        "clock",
+        "script-stand",
+        "water-glass",
+        "cable-management"
+      ]
+    },
+    {
+      "id": "recording",
+      "title": "Recording",
+      "wordIds": [
+        "audio-interface",
+        "digital-recorder",
+        "sound-card",
+        "phantom-power",
+        "xlr-cable",
+        "headphone-amplifier",
+        "audio-software",
+        "waveform",
+        "playback-button",
+        "record-button"
+      ]
+    },
+    {
+      "id": "programming",
+      "title": "Programming",
+      "wordIds": [
+        "playlist",
+        "jingle",
+        "sound-effect",
+        "station-id",
+        "commercial-break",
+        "news-bulletin",
+        "weather-update",
+        "traffic-report",
+        "interview-segment",
+        "music-block"
+      ]
+    },
+    {
+      "id": "station-roles",
+      "title": "Station Roles",
+      "wordIds": [
+        "radio-host",
+        "dj",
+        "producer",
+        "sound-engineer",
+        "news-anchor",
+        "traffic-reporter",
+        "weather-presenter",
+        "sales-manager",
+        "program-director",
+        "intern"
+      ]
+    },
+    {
+      "id": "audience-distribution",
+      "title": "Audience & Distribution",
+      "wordIds": [
+        "radio-receiver",
+        "car-radio",
+        "portable-radio",
+        "smartphone-app",
+        "podcast",
+        "streaming",
+        "listener",
+        "frequency-dial",
+        "volume-knob",
+        "tuner",
+        "turntable",
+        "speaker",
+        "soundproof-booth",
+        "on-air-light",
+        "control-room",
+        "recording-booth",
+        "cue-card",
+        "script",
+        "frequency",
+        "channel",
+        "commercial",
+        "interview"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "microphone",
+      "label": "Microphone",
+      "ipa": "/ˈmaɪkrəˌfoʊn/",
+      "cefr": "B2",
+      "imageNodeId": "45:8197"
+    },
+    {
+      "kind": "card",
+      "id": "mixing-console",
+      "label": "Mixing Console",
+      "ipa": "/ˈmɪksɪŋ ˈkɒnsoʊl/",
+      "cefr": "B2",
+      "imageNodeId": "45:8201"
+    },
+    {
+      "kind": "card",
+      "id": "headphones",
+      "label": "Headphones",
+      "ipa": "/ˈhɛdˌfoʊnz/",
+      "cefr": "B2",
+      "imageNodeId": "45:8205"
+    },
+    {
+      "kind": "card",
+      "id": "monitor-speaker",
+      "label": "Monitor Speaker",
+      "ipa": "/ˈmɒnɪtər ˈspiːkər/",
+      "cefr": "C1",
+      "imageNodeId": "45:8209"
+    },
+    {
+      "kind": "card",
+      "id": "transmitter",
+      "label": "Transmitter",
+      "ipa": "/trænzˈmɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:8213"
+    },
+    {
+      "kind": "card",
+      "id": "antenna",
+      "label": "Antenna",
+      "ipa": "/ænˈtɛnə/",
+      "cefr": "B1",
+      "imageNodeId": "45:8217"
+    },
+    {
+      "kind": "card",
+      "id": "amplifier",
+      "label": "Amplifier",
+      "ipa": "/ˈæmplɪˌfaɪər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8221"
+    },
+    {
+      "kind": "card",
+      "id": "equalizer",
+      "label": "Equalizer",
+      "ipa": "/ˈiːkwəˌlaɪzər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8225"
+    },
+    {
+      "kind": "card",
+      "id": "compressor",
+      "label": "Compressor",
+      "ipa": "/kəmˈprɛsər/",
+      "cefr": "B2",
+      "imageNodeId": "45:8229"
+    },
+    {
+      "kind": "card",
+      "id": "pop-filter",
+      "label": "Pop Filter",
+      "ipa": "/pɒp ˈfɪltər/",
+      "cefr": "B2",
+      "imageNodeId": "45:8233"
+    },
+    {
+      "kind": "card",
+      "id": "sound-booth",
+      "label": "Sound Booth",
+      "ipa": "/saʊnd buːθ/",
+      "cefr": "B2",
+      "imageNodeId": "45:8242"
+    },
+    {
+      "kind": "card",
+      "id": "acoustic-panel",
+      "label": "Acoustic Panel",
+      "ipa": "/əˈkuːstɪk ˈpænəl/",
+      "cefr": "B2",
+      "imageNodeId": "45:8246"
+    },
+    {
+      "kind": "card",
+      "id": "on-air-sign",
+      "label": "On-Air Sign",
+      "ipa": "/ɒn ɛər saɪn/",
+      "cefr": "C1",
+      "imageNodeId": "45:8250"
+    },
+    {
+      "kind": "card",
+      "id": "desk",
+      "label": "Desk",
+      "ipa": "/dɛsk/",
+      "cefr": "B1",
+      "imageNodeId": "45:8254"
+    },
+    {
+      "kind": "card",
+      "id": "chair",
+      "label": "Chair",
+      "ipa": "/tʃɛər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8258"
+    },
+    {
+      "kind": "card",
+      "id": "computer",
+      "label": "Computer",
+      "ipa": "/kəmˈpjuːtər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8262"
+    },
+    {
+      "kind": "card",
+      "id": "clock",
+      "label": "Clock",
+      "ipa": "/klɒk/",
+      "cefr": "B1",
+      "imageNodeId": "45:8266"
+    },
+    {
+      "kind": "card",
+      "id": "script-stand",
+      "label": "Script Stand",
+      "ipa": "/skrɪpt stænd/",
+      "cefr": "B2",
+      "imageNodeId": "45:8270"
+    },
+    {
+      "kind": "card",
+      "id": "water-glass",
+      "label": "Water Glass",
+      "ipa": "/ˈwɔːtər ɡlæs/",
+      "cefr": "B2",
+      "imageNodeId": "45:8274"
+    },
+    {
+      "kind": "card",
+      "id": "cable-management",
+      "label": "Cable Management",
+      "ipa": "/ˈkeɪbəl ˈmænɪdʒmənt/",
+      "cefr": "C1",
+      "imageNodeId": "45:8278"
+    },
+    {
+      "kind": "card",
+      "id": "audio-interface",
+      "label": "Audio Interface",
+      "ipa": "/ˈɔːdiˌoʊ ˈɪntərˌfeɪs/",
+      "cefr": "C1",
+      "imageNodeId": "45:8287"
+    },
+    {
+      "kind": "card",
+      "id": "digital-recorder",
+      "label": "Digital Recorder",
+      "ipa": "/ˈdɪdʒɪtəl rɪˈkɔːrdər/",
+      "cefr": "C1",
+      "imageNodeId": "45:8291"
+    },
+    {
+      "kind": "card",
+      "id": "sound-card",
+      "label": "Sound Card",
+      "ipa": "/saʊnd kɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "45:8295"
+    },
+    {
+      "kind": "card",
+      "id": "phantom-power",
+      "label": "Phantom Power",
+      "ipa": "/ˈfæntəm ˈpaʊər/",
+      "cefr": "B2",
+      "imageNodeId": "45:8299"
+    },
+    {
+      "kind": "card",
+      "id": "xlr-cable",
+      "label": "XLR Cable",
+      "ipa": "/ˌɛksɛlˈɑːr ˈkeɪbəl/",
+      "cefr": "B2",
+      "imageNodeId": "45:8303"
+    },
+    {
+      "kind": "card",
+      "id": "headphone-amplifier",
+      "label": "Headphone Amplifier",
+      "ipa": "/ˈhɛdˌfoʊn ˈæmplɪˌfaɪər/",
+      "cefr": "C1",
+      "imageNodeId": "45:8307"
+    },
+    {
+      "kind": "card",
+      "id": "audio-software",
+      "label": "Audio Software",
+      "ipa": "/ˈɔːdiˌoʊ ˈsɒftˌwɛər/",
+      "cefr": "B2",
+      "imageNodeId": "45:8311"
+    },
+    {
+      "kind": "card",
+      "id": "waveform",
+      "label": "Waveform",
+      "ipa": "/ˈweɪvˌfɔːrm/",
+      "cefr": "B1",
+      "imageNodeId": "45:8315"
+    },
+    {
+      "kind": "card",
+      "id": "playback-button",
+      "label": "Playback Button",
+      "ipa": "/ˈpleɪˌbæk ˈbʌtən/",
+      "cefr": "C1",
+      "imageNodeId": "45:8319"
+    },
+    {
+      "kind": "card",
+      "id": "record-button",
+      "label": "Record Button",
+      "ipa": "/rɪˈkɔːrd ˈbʌtən/",
+      "cefr": "B2",
+      "imageNodeId": "45:8323"
+    },
+    {
+      "kind": "card",
+      "id": "playlist",
+      "label": "Playlist",
+      "ipa": "/ˈpleɪˌlɪst/",
+      "cefr": "B1",
+      "imageNodeId": "45:8332"
+    },
+    {
+      "kind": "card",
+      "id": "jingle",
+      "label": "Jingle",
+      "ipa": "/ˈdʒɪŋɡəl/",
+      "cefr": "B1",
+      "imageNodeId": "45:8336"
+    },
+    {
+      "kind": "card",
+      "id": "sound-effect",
+      "label": "Sound Effect",
+      "ipa": "/saʊnd ɪˈfɛkt/",
+      "cefr": "B2",
+      "imageNodeId": "45:8340"
+    },
+    {
+      "kind": "card",
+      "id": "station-id",
+      "label": "Station ID",
+      "ipa": "/ˈsteɪʃən ˌaɪˈdiː/",
+      "cefr": "B2",
+      "imageNodeId": "45:8344"
+    },
+    {
+      "kind": "card",
+      "id": "commercial-break",
+      "label": "Commercial Break",
+      "ipa": "/kəˈmɜːrʃəl breɪk/",
+      "cefr": "C1",
+      "imageNodeId": "45:8348"
+    },
+    {
+      "kind": "card",
+      "id": "news-bulletin",
+      "label": "News Bulletin",
+      "ipa": "/njuːz ˈbʊlɪtɪn/",
+      "cefr": "B2",
+      "imageNodeId": "45:8352"
+    },
+    {
+      "kind": "card",
+      "id": "weather-update",
+      "label": "Weather Update",
+      "ipa": "/ˈwɛðər ʌpˈdeɪt/",
+      "cefr": "B2",
+      "imageNodeId": "45:8356"
+    },
+    {
+      "kind": "card",
+      "id": "traffic-report",
+      "label": "Traffic Report",
+      "ipa": "/ˈtræfɪk rɪˈpɔːrt/",
+      "cefr": "B2",
+      "imageNodeId": "45:8360"
+    },
+    {
+      "kind": "card",
+      "id": "interview-segment",
+      "label": "Interview Segment",
+      "ipa": "/ˈɪntərˌvjuː ˈsɛɡmənt/",
+      "cefr": "C1",
+      "imageNodeId": "45:8364"
+    },
+    {
+      "kind": "card",
+      "id": "music-block",
+      "label": "Music Block",
+      "ipa": "/ˈmjuːzɪk blɒk/",
+      "cefr": "B2",
+      "imageNodeId": "45:8368"
+    },
+    {
+      "kind": "card",
+      "id": "radio-host",
+      "label": "Radio Host",
+      "ipa": "/ˈreɪdiˌoʊ hoʊst/",
+      "cefr": "B2",
+      "imageNodeId": "45:8377"
+    },
+    {
+      "kind": "card",
+      "id": "dj",
+      "label": "DJ",
+      "ipa": "/ˌdiːˈdʒeɪ/",
+      "cefr": "B1",
+      "imageNodeId": "45:8381"
+    },
+    {
+      "kind": "card",
+      "id": "producer",
+      "label": "Producer",
+      "ipa": "/prəˈdjuːsər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8385"
+    },
+    {
+      "kind": "card",
+      "id": "sound-engineer",
+      "label": "Sound Engineer",
+      "ipa": "/saʊnd ˌɛndʒɪˈnɪər/",
+      "cefr": "B2",
+      "imageNodeId": "45:8389"
+    },
+    {
+      "kind": "card",
+      "id": "news-anchor",
+      "label": "News Anchor",
+      "ipa": "/njuːz ˈæŋkər/",
+      "cefr": "B2",
+      "imageNodeId": "45:8393"
+    },
+    {
+      "kind": "card",
+      "id": "traffic-reporter",
+      "label": "Traffic Reporter",
+      "ipa": "/ˈtræfɪk rɪˈpɔːrtər/",
+      "cefr": "C1",
+      "imageNodeId": "45:8397"
+    },
+    {
+      "kind": "card",
+      "id": "weather-presenter",
+      "label": "Weather Presenter",
+      "ipa": "/ˈwɛðər prɪˈzɛntər/",
+      "cefr": "C1",
+      "imageNodeId": "45:8401"
+    },
+    {
+      "kind": "card",
+      "id": "sales-manager",
+      "label": "Sales Manager",
+      "ipa": "/seɪlz ˈmænɪdʒər/",
+      "cefr": "B2",
+      "imageNodeId": "45:8405"
+    },
+    {
+      "kind": "card",
+      "id": "program-director",
+      "label": "Program Director",
+      "ipa": "/ˈproʊɡræm dɪˈrɛktər/",
+      "cefr": "C1",
+      "imageNodeId": "45:8409"
+    },
+    {
+      "kind": "card",
+      "id": "intern",
+      "label": "Intern",
+      "ipa": "/ˈɪntɜːrn/",
+      "cefr": "B1",
+      "imageNodeId": "45:8413"
+    },
+    {
+      "kind": "card",
+      "id": "radio-receiver",
+      "label": "Radio Receiver",
+      "ipa": "/ˈreɪdiˌoʊ rɪˈsiːvər/",
+      "cefr": "B2",
+      "imageNodeId": "45:8422"
+    },
+    {
+      "kind": "card",
+      "id": "car-radio",
+      "label": "Car Radio",
+      "ipa": "/kɑːr ˈreɪdiˌoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "45:8426"
+    },
+    {
+      "kind": "card",
+      "id": "portable-radio",
+      "label": "Portable Radio",
+      "ipa": "/ˈpɔːrtəbəl ˈreɪdiˌoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "45:8430"
+    },
+    {
+      "kind": "card",
+      "id": "smartphone-app",
+      "label": "Smartphone App",
+      "ipa": "/ˈsmɑːrtˌfoʊn æp/",
+      "cefr": "B2",
+      "imageNodeId": "45:8434"
+    },
+    {
+      "kind": "card",
+      "id": "podcast",
+      "label": "Podcast",
+      "ipa": "/ˈpɒdˌkæst/",
+      "cefr": "B1",
+      "imageNodeId": "45:8438"
+    },
+    {
+      "kind": "card",
+      "id": "streaming",
+      "label": "Streaming",
+      "ipa": "/ˈstriːmɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "45:8442"
+    },
+    {
+      "kind": "card",
+      "id": "listener",
+      "label": "Listener",
+      "ipa": "/ˈlɪsənər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8446"
+    },
+    {
+      "kind": "card",
+      "id": "frequency-dial",
+      "label": "Frequency Dial",
+      "ipa": "/ˈfriːkwənsi daɪəl/",
+      "cefr": "B2",
+      "imageNodeId": "45:8450"
+    },
+    {
+      "kind": "card",
+      "id": "volume-knob",
+      "label": "Volume Knob",
+      "ipa": "/ˈvɒljuːm nɒb/",
+      "cefr": "B2",
+      "imageNodeId": "45:8454"
+    },
+    {
+      "kind": "card",
+      "id": "tuner",
+      "label": "Tuner",
+      "ipa": "/ˈtjuːnər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8458"
+    },
+    {
+      "kind": "card",
+      "id": "turntable",
+      "label": "Turntable",
+      "ipa": "/ˈtɜːrnˌteɪbəl/",
+      "cefr": "B1",
+      "imageNodeId": "39:6982"
+    },
+    {
+      "kind": "card",
+      "id": "speaker",
+      "label": "Speaker",
+      "ipa": "/ˈspiːkər/",
+      "cefr": "B1",
+      "imageNodeId": "39:6986"
+    },
+    {
+      "kind": "card",
+      "id": "soundproof-booth",
+      "label": "Soundproof Booth",
+      "ipa": "/ˈsaʊndˌpruːf buːθ/",
+      "cefr": "C1",
+      "imageNodeId": "39:7005"
+    },
+    {
+      "kind": "card",
+      "id": "on-air-light",
+      "label": "On-Air Light",
+      "ipa": "/ɒn ɛər laɪt/",
+      "cefr": "C1",
+      "imageNodeId": "39:7009"
+    },
+    {
+      "kind": "card",
+      "id": "control-room",
+      "label": "Control Room",
+      "ipa": "/kənˈtroʊl ruːm/",
+      "cefr": "B2",
+      "imageNodeId": "39:7013"
+    },
+    {
+      "kind": "card",
+      "id": "recording-booth",
+      "label": "Recording Booth",
+      "ipa": "/rɪˈkɔːrdɪŋ buːθ/",
+      "cefr": "C1",
+      "imageNodeId": "39:7017"
+    },
+    {
+      "kind": "card",
+      "id": "cue-card",
+      "label": "Cue Card",
+      "ipa": "/kjuː kɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "39:7021"
+    },
+    {
+      "kind": "card",
+      "id": "script",
+      "label": "Script",
+      "ipa": "/skrɪpt/",
+      "cefr": "B1",
+      "imageNodeId": "39:7029"
+    },
+    {
+      "kind": "card",
+      "id": "frequency",
+      "label": "Frequency",
+      "ipa": "/ˈfriːkwənsi/",
+      "cefr": "B1",
+      "imageNodeId": "39:7040"
+    },
+    {
+      "kind": "card",
+      "id": "channel",
+      "label": "Channel",
+      "ipa": "/ˈtʃænəl/",
+      "cefr": "B1",
+      "imageNodeId": "39:7044"
+    },
+    {
+      "kind": "card",
+      "id": "commercial",
+      "label": "Commercial",
+      "ipa": "/kəˈmɜːrʃəl/",
+      "cefr": "B2",
+      "imageNodeId": "39:7060"
+    },
+    {
+      "kind": "card",
+      "id": "interview",
+      "label": "Interview",
+      "ipa": "/ˈɪntərˌvjuː/",
+      "cefr": "B1",
+      "imageNodeId": "39:7064"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "552:810",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "552:812",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2 · Topic: The Radio Station",
+          "depth": 1,
+          "name": "Level: B2 · Topic: The Radio Station"
+        },
+        {
+          "text": "Behind the On-Air Sign — How Radio Still Reaches Millions\n\nIn an age of streaming and podcasts, traditional radio might seem like a relic. Yet it remains one of the most widely consumed media on Earth. A radio station is a factory of sound — and the machinery behind that sound is more complex than most listeners imagine.\n\nThe heart of the station is the control room. A mixing console — a wide panel of sliders, knobs, and meters — sits at the centre. The sound engineer adjusts levels in real time, balancing the radio host's voice against a music block or a jingle. An equalizer shapes tone. A compressor prevents sudden volume spikes. A pop filter — a mesh disc in front of the microphone — eliminates the burst of air from 'p' and 'b' sounds. Headphones allow the host to hear the broadcast as the listener hears it. A monitor speaker fills the room when headphones are removed.\n\nThe broadcast chain begins at the microphone and ends at the listener's radio receiver — a car radio, a portable radio, or a smartphone app. The signal travels from the microphone through an audio interface and a sound card into the computer, where audio software processes and records it. A digital recorder captures interviews. An XLR cable — the professional standard — connects microphone to console. A phantom power supply provides voltage to condenser microphones. A headphone amplifier drives multiple sets of headphones from a single source.\n\nThe studio itself is engineered for silence. Acoustic panels line the walls of the sound booth to absorb reflections. A soundproof booth — a room within a room — isolates the recording booth from corridor noise, air conditioning, and traffic. The on-air sign — usually a red light above the door — warns staff not to enter during a live broadcast.\n\nContent is structured by format. A playlist sequences music. A jingle identifies the station between segments. A sound effect punctuates transitions. A station ID plays at the top of each hour. A commercial break funds the operation. A news bulletin delivers headlines. A weather update and a traffic report serve commuters. An interview segment brings guests into the studio. The producer coordinates all of this from behind the glass, communicating with the host via a cue card or a talkback microphone.\n\nThe team is specialised. The radio host presents. The producer plans. The sound engineer mixes. A news anchor reads bulletins. A traffic reporter monitors road conditions. A weather presenter interprets forecasts. A sales manager sells commercial time. The program director sets the station's overall tone and schedule. An intern learns every role.\n\nThe transmitter converts the audio signal into radio waves. An antenna on the roof or a tower broadcasts across the city. A frequency — measured in megahertz for FM or kilohertz for AM — identifies the station on a frequency dial. A volume knob and a tuner are the listener's only controls. Streaming has added a parallel channel: the same broadcast, delivered via the internet, accessible anywhere.\n\nWhat makes radio endure is its intimacy. A single voice enters the listener's car, kitchen, or headphones — no screen required, no attention demanded beyond listening. That directness, that companionship, is something no algorithm has replicated.",
+          "depth": 1,
+          "name": "Behind the On-Air Sign — How Radio Still Reaches Millions In an age of streaming and podcasts, traditional radio might seem like a relic. Yet it remains one of the most widely consumed media on Earth. A radio station is a factory of sound — and the machinery behind that sound is more complex than most listeners imagine. The heart of the station is the control room. A mixing console — a wide panel of sliders, knobs, and meters — sits at the centre. The sound engineer adjusts levels in real time, balancing the radio host's voice against a music block or a jingle. An equalizer shapes tone. A compressor prevents sudden volume spikes. A pop filter — a mesh disc in front of the microphone — eliminates the burst of air from 'p' and 'b' sounds. Headphones allow the host to hear the broadcast as the listener hears it. A monitor speaker fills the room when headphones are removed. The broadcast chain begins at the microphone and ends at the listener's radio receiver — a car radio, a portable radio, or a smartphone app. The signal travels from the microphone through an audio interface and a sound card into the computer, where audio software processes and records it. A digital recorder captures interviews. An XLR cable — the professional standard — connects microphone to console. A phantom power supply provides voltage to condenser microphones. A headphone amplifier drives multiple sets of headphones from a single source. The studio itself is engineered for silence. Acoustic panels line the walls of the sound booth to absorb reflections. A soundproof booth — a room within a room — isolates the recording booth from corridor noise, air conditioning, and traffic. The on-air sign — usually a red light above the door — warns staff not to enter during a live broadcast. Content is structured by format. A playlist sequences music. A jingle identifies the station between segments. A sound effect punctuates transitions. A station ID plays at the top of each hour. A commercial break funds the operation. A news bulletin delivers headlines. A weather update and a traffic report serve commuters. An interview segment brings guests into the studio. The producer coordinates all of this from behind the glass, communicating with the host via a cue card or a talkback microphone. The team is specialised. The radio host presents. The producer plans. The sound engineer mixes. A news anchor reads bulletins. A traffic reporter monitors road conditions. A weather presenter interprets forecasts. A sales manager sells commercial time. The program director sets the station's overall tone and schedule. An intern learns every role. The transmitter converts the audio signal into radio waves. An antenna on the roof or a tower broadcasts across the city. A frequency — measured in megahertz for FM or kilohertz for AM — identifies the station on a frequency dial. A volume knob and a tuner are the listener's only controls. Streaming has added a parallel channel: the same broadcast, delivered via the internet, accessible anywhere. What makes radio endure is its intimacy. A single voice enters the listener's car, kitchen, or headphones — no screen required, no attention demanded beyond listening. That directness, that companionship, is something no algorithm has replicated."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Trace the broadcast chain from the microphone to the listener. Name at least five pieces of equipment in order.",
+          "depth": 1,
+          "name": "1. Trace the broadcast chain from the microphone to the listener. Name at least five pieces of equipment in order."
+        },
+        {
+          "text": "2. How is the studio designed to eliminate unwanted sound? Describe the acoustic treatment.",
+          "depth": 1,
+          "name": "2. How is the studio designed to eliminate unwanted sound? Describe the acoustic treatment."
+        },
+        {
+          "text": "3. What content segments structure a typical broadcast day? Name at least six.",
+          "depth": 1,
+          "name": "3. What content segments structure a typical broadcast day? Name at least six."
+        },
+        {
+          "text": "4. Explain the roles of the producer, sound engineer, and radio host. How do they collaborate?",
+          "depth": 1,
+          "name": "4. Explain the roles of the producer, sound engineer, and radio host. How do they collaborate?"
+        },
+        {
+          "text": "5. The passage claims radio's strength is 'intimacy.' What does this mean, and do you agree?",
+          "depth": 1,
+          "name": "5. The passage claims radio's strength is 'intimacy.' What does this mean, and do you agree?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "552:825",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "on the same wavelength",
+          "depth": 2,
+          "name": "on the same wavelength"
+        },
+        {
+          "text": "thinking in the same way; understanding each other",
+          "depth": 2,
+          "name": "thinking in the same way; understanding each other"
+        },
+        {
+          "text": "\"The radio host and the producer are always on the same wavelength — they barely need the cue card.\"",
+          "depth": 2,
+          "name": "\"The radio host and the producer are always on the same wavelength — they barely need the cue card.\""
+        },
+        {
+          "text": "tune in / tune out",
+          "depth": 2,
+          "name": "tune in / tune out"
+        },
+        {
+          "text": "start listening (or stop paying attention)",
+          "depth": 2,
+          "name": "start listening (or stop paying attention)"
+        },
+        {
+          "text": "\"Thousands of listeners tune in every morning when the on-air sign lights up.\"",
+          "depth": 2,
+          "name": "\"Thousands of listeners tune in every morning when the on-air sign lights up.\""
+        },
+        {
+          "text": "loud and clear",
+          "depth": 2,
+          "name": "loud and clear"
+        },
+        {
+          "text": "easily understood; very obvious",
+          "depth": 2,
+          "name": "easily understood; very obvious"
+        },
+        {
+          "text": "\"The message came through loud and clear on the monitor speaker — no static, no interference.\"",
+          "depth": 2,
+          "name": "\"The message came through loud and clear on the monitor speaker — no static, no interference.\""
+        },
+        {
+          "text": "on air",
+          "depth": 2,
+          "name": "on air"
+        },
+        {
+          "text": "currently being broadcast live",
+          "depth": 2,
+          "name": "currently being broadcast live"
+        },
+        {
+          "text": "\"When the on-air sign is lit, nobody enters the sound booth — the microphone picks up everything.\"",
+          "depth": 2,
+          "name": "\"When the on-air sign is lit, nobody enters the sound booth — the microphone picks up everything.\""
+        },
+        {
+          "text": "a broken record",
+          "depth": 2,
+          "name": "a broken record"
+        },
+        {
+          "text": "someone who repeats the same thing annoyingly",
+          "depth": 2,
+          "name": "someone who repeats the same thing annoyingly"
+        },
+        {
+          "text": "\"The traffic reporter sounds like a broken record — 'delays on the motorway' every single morning.\"",
+          "depth": 2,
+          "name": "\"The traffic reporter sounds like a broken record — 'delays on the motorway' every single morning.\""
+        },
+        {
+          "text": "strike a chord",
+          "depth": 2,
+          "name": "strike a chord"
+        },
+        {
+          "text": "cause a strong emotional response",
+          "depth": 2,
+          "name": "cause a strong emotional response"
+        },
+        {
+          "text": "\"The interview segment about local teachers really struck a chord with listeners — the station received hundreds of messages.\"",
+          "depth": 2,
+          "name": "\"The interview segment about local teachers really struck a chord with listeners — the station received hundreds of messages.\""
+        },
+        {
+          "text": "turn up the volume",
+          "depth": 2,
+          "name": "turn up the volume"
+        },
+        {
+          "text": "increase intensity, attention, or effort",
+          "depth": 2,
+          "name": "increase intensity, attention, or effort"
+        },
+        {
+          "text": "\"The program director told the team to turn up the volume — ratings had dropped and they needed better content.\"",
+          "depth": 2,
+          "name": "\"The program director told the team to turn up the volume — ratings had dropped and they needed better content.\""
+        },
+        {
+          "text": "dead air",
+          "depth": 2,
+          "name": "dead air"
+        },
+        {
+          "text": "silence during a broadcast when there should be sound",
+          "depth": 2,
+          "name": "silence during a broadcast when there should be sound"
+        },
+        {
+          "text": "\"The sound engineer's worst nightmare is dead air — even three seconds of silence feels like an eternity on radio.\"",
+          "depth": 2,
+          "name": "\"The sound engineer's worst nightmare is dead air — even three seconds of silence feels like an eternity on radio.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "552:861",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A producer and radio host preparing for the morning show in the control room",
+          "depth": 1,
+          "name": "Scene: A producer and radio host preparing for the morning show in the control room"
+        },
+        {
+          "text": "Producer:",
+          "depth": 2,
+          "name": "Producer:"
+        },
+        {
+          "text": "We're on air in five minutes. The playlist is loaded. The jingle is cued. Is the mixing console set?",
+          "depth": 2,
+          "name": "We're on air in five minutes. The playlist is loaded. The jingle is cued. Is the mixing console set?"
+        },
+        {
+          "text": "Host:",
+          "depth": 2,
+          "name": "Host:"
+        },
+        {
+          "text": "Levels are good. The headphones are comfortable and the pop filter is in position. Is the teleprompter — sorry, the cue card — ready?",
+          "depth": 2,
+          "name": "Levels are good. The headphones are comfortable and the pop filter is in position. Is the teleprompter — sorry, the cue card — ready?"
+        },
+        {
+          "text": "Producer:",
+          "depth": 2,
+          "name": "Producer:"
+        },
+        {
+          "text": "Right here. Your first segment is the weather update, then the traffic report. The news anchor has the bulletin at half past.",
+          "depth": 2,
+          "name": "Right here. Your first segment is the weather update, then the traffic report. The news anchor has the bulletin at half past."
+        },
+        {
+          "text": "Host:",
+          "depth": 2,
+          "name": "Host:"
+        },
+        {
+          "text": "Who's the guest for the interview segment?",
+          "depth": 2,
+          "name": "Who's the guest for the interview segment?"
+        },
+        {
+          "text": "Producer:",
+          "depth": 2,
+          "name": "Producer:"
+        },
+        {
+          "text": "A local author. The sound engineer has tested the second microphone in the recording booth. The acoustic panels are dampening the echo well.",
+          "depth": 2,
+          "name": "A local author. The sound engineer has tested the second microphone in the recording booth. The acoustic panels are dampening the echo well."
+        },
+        {
+          "text": "Host:",
+          "depth": 2,
+          "name": "Host:"
+        },
+        {
+          "text": "What about the commercial break? How long is it?",
+          "depth": 2,
+          "name": "What about the commercial break? How long is it?"
+        },
+        {
+          "text": "Producer:",
+          "depth": 2,
+          "name": "Producer:"
+        },
+        {
+          "text": "Three minutes — two commercials and a station ID. The sound effect for the transition is loaded.",
+          "depth": 2,
+          "name": "Three minutes — two commercials and a station ID. The sound effect for the transition is loaded."
+        },
+        {
+          "text": "Host:",
+          "depth": 2,
+          "name": "Host:"
+        },
+        {
+          "text": "Good. And the music block after the interview?",
+          "depth": 2,
+          "name": "Good. And the music block after the interview?"
+        },
+        {
+          "text": "Producer:",
+          "depth": 2,
+          "name": "Producer:"
+        },
+        {
+          "text": "Four songs. I've checked the waveform on the audio software — all levels are balanced. The digital recorder is running for the podcast version.",
+          "depth": 2,
+          "name": "Four songs. I've checked the waveform on the audio software — all levels are balanced. The digital recorder is running for the podcast version."
+        },
+        {
+          "text": "Host:",
+          "depth": 2,
+          "name": "Host:"
+        },
+        {
+          "text": "The on-air light just turned red. Are we live?",
+          "depth": 2,
+          "name": "The on-air light just turned red. Are we live?"
+        },
+        {
+          "text": "Producer:",
+          "depth": 2,
+          "name": "Producer:"
+        },
+        {
+          "text": "In ten seconds. The transmitter is active. The antenna is broadcasting across the city. Deep breath — and... you're on.",
+          "depth": 2,
+          "name": "In ten seconds. The transmitter is active. The antenna is broadcasting across the city. Deep breath — and... you're on."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "552:899",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The news were broadcast every hour from the studio.\"",
+          "depth": 2,
+          "name": "❌ \"The news were broadcast every hour from the studio.\""
+        },
+        {
+          "text": "✅ \"The news was broadcast every hour from the studio.\"",
+          "depth": 2,
+          "name": "✅ \"The news was broadcast every hour from the studio.\""
+        },
+        {
+          "text": "'News' is an uncountable noun — always singular: 'The news is...', 'The news was...' Never 'the news were' or 'a news.' Use 'a piece of news', 'a news item', or 'a news bulletin' for countable reference. Other uncountable nouns often mistaken for plurals: 'information', 'advice', 'equipment', 'furniture.'",
+          "depth": 2,
+          "name": "'News' is an uncountable noun — always singular: 'The news is...', 'The news was...' Never 'the news were' or 'a news.' Use 'a piece of news', 'a news item', or 'a news bulletin' for countable reference. Other uncountable nouns often mistaken for plurals: 'information', 'advice', 'equipment', 'furniture.'"
+        },
+        {
+          "text": "❌ \"She suggested him to listen to the morning interview segment.\"",
+          "depth": 2,
+          "name": "❌ \"She suggested him to listen to the morning interview segment.\""
+        },
+        {
+          "text": "✅ \"She suggested that he listen to the morning interview segment.\" / \"She suggested listening to the morning interview segment.\"",
+          "depth": 2,
+          "name": "✅ \"She suggested that he listen to the morning interview segment.\" / \"She suggested listening to the morning interview segment.\""
+        },
+        {
+          "text": "'Suggest' never takes object + infinitive (*suggest him to listen). Correct patterns: suggest + that-clause (with subjunctive or 'should'): 'She suggested that he listen.' Suggest + gerund: 'She suggested listening.' Other verbs with the same restriction: 'recommend', 'propose.' Compare verbs that DO take object + infinitive: 'advise him to listen', 'encourage him to listen.'",
+          "depth": 2,
+          "name": "'Suggest' never takes object + infinitive (*suggest him to listen). Correct patterns: suggest + that-clause (with subjunctive or 'should'): 'She suggested that he listen.' Suggest + gerund: 'She suggested listening.' Other verbs with the same restriction: 'recommend', 'propose.' Compare verbs that DO take object + infinitive: 'advise him to listen', 'encourage him to listen.'"
+        },
+        {
+          "text": "❌ \"The producer told that the commercial break would last thirty seconds.\"",
+          "depth": 2,
+          "name": "❌ \"The producer told that the commercial break would last thirty seconds.\""
+        },
+        {
+          "text": "✅ \"The producer said that the commercial break would last thirty seconds.\"",
+          "depth": 2,
+          "name": "✅ \"The producer said that the commercial break would last thirty seconds.\""
+        },
+        {
+          "text": "'Say' + that-clause (no person): 'She said that...' 'Tell' + person + that-clause: 'She told the host that...' Never 'told that' without a person. Mnemonic: you always tell SOMEONE, but you say SOMETHING. 'Say' can take 'to': 'She said to the host that...' but 'tell' cannot take 'that' alone.",
+          "depth": 2,
+          "name": "'Say' + that-clause (no person): 'She said that...' 'Tell' + person + that-clause: 'She told the host that...' Never 'told that' without a person. Mnemonic: you always tell SOMEONE, but you say SOMETHING. 'Say' can take 'to': 'She said to the host that...' but 'tell' cannot take 'that' alone."
+        },
+        {
+          "text": "❌ \"I used to listening to this station every morning when I was a student.\"",
+          "depth": 2,
+          "name": "❌ \"I used to listening to this station every morning when I was a student.\""
+        },
+        {
+          "text": "✅ \"I used to listen to this station every morning when I was a student.\"",
+          "depth": 2,
+          "name": "✅ \"I used to listen to this station every morning when I was a student.\""
+        },
+        {
+          "text": "'Used to' + bare infinitive (past habit): 'I used to listen.' 'Be used to' + gerund (accustomed): 'I am used to listening.' 'Get used to' + gerund (becoming accustomed): 'I got used to listening.' The confusion arises because all three structures exist but with different meanings. Past habit = 'used to + infinitive.' Current habit = 'be used to + -ing.'",
+          "depth": 2,
+          "name": "'Used to' + bare infinitive (past habit): 'I used to listen.' 'Be used to' + gerund (accustomed): 'I am used to listening.' 'Get used to' + gerund (becoming accustomed): 'I got used to listening.' The confusion arises because all three structures exist but with different meanings. Past habit = 'used to + infinitive.' Current habit = 'be used to + -ing.'"
+        },
+        {
+          "text": "❌ \"The equipment in the sound booth are very expensive and need careful handling.\"",
+          "depth": 2,
+          "name": "❌ \"The equipment in the sound booth are very expensive and need careful handling.\""
+        },
+        {
+          "text": "✅ \"The equipment in the sound booth is very expensive and needs careful handling.\"",
+          "depth": 2,
+          "name": "✅ \"The equipment in the sound booth is very expensive and needs careful handling.\""
+        },
+        {
+          "text": "'Equipment' is uncountable — always singular: 'the equipment is', 'it needs.' Never 'equipments' or 'equipment are.' For countable reference: 'a piece of equipment', 'several items of equipment.' Similarly uncountable: 'machinery', 'apparatus', 'gear' (in this sense).",
+          "depth": 2,
+          "name": "'Equipment' is uncountable — always singular: 'the equipment is', 'it needs.' Never 'equipments' or 'equipment are.' For countable reference: 'a piece of equipment', 'several items of equipment.' Similarly uncountable: 'machinery', 'apparatus', 'gear' (in this sense)."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "552:923",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how media and broadcasting vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how media and broadcasting vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "broadcast",
+          "depth": 2,
+          "name": "broadcast"
+        },
+        {
+          "text": "broadcast / broadcaster / broadcasting",
+          "depth": 2,
+          "name": "broadcast / broadcaster / broadcasting"
+        },
+        {
+          "text": "broadcast",
+          "depth": 2,
+          "name": "broadcast"
+        },
+        {
+          "text": "broadcast / live",
+          "depth": 2,
+          "name": "broadcast / live"
+        },
+        {
+          "text": "present",
+          "depth": 2,
+          "name": "present"
+        },
+        {
+          "text": "presenter / presentation",
+          "depth": 2,
+          "name": "presenter / presentation"
+        },
+        {
+          "text": "present",
+          "depth": 2,
+          "name": "present"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "produce",
+          "depth": 2,
+          "name": "produce"
+        },
+        {
+          "text": "producer / production",
+          "depth": 2,
+          "name": "producer / production"
+        },
+        {
+          "text": "produce",
+          "depth": 2,
+          "name": "produce"
+        },
+        {
+          "text": "produced",
+          "depth": 2,
+          "name": "produced"
+        },
+        {
+          "text": "record",
+          "depth": 2,
+          "name": "record"
+        },
+        {
+          "text": "recording / record",
+          "depth": 2,
+          "name": "recording / record"
+        },
+        {
+          "text": "record",
+          "depth": 2,
+          "name": "record"
+        },
+        {
+          "text": "recorded",
+          "depth": 2,
+          "name": "recorded"
+        },
+        {
+          "text": "transmit",
+          "depth": 2,
+          "name": "transmit"
+        },
+        {
+          "text": "transmission / transmitter",
+          "depth": 2,
+          "name": "transmission / transmitter"
+        },
+        {
+          "text": "transmit",
+          "depth": 2,
+          "name": "transmit"
+        },
+        {
+          "text": "transmitted",
+          "depth": 2,
+          "name": "transmitted"
+        },
+        {
+          "text": "announce",
+          "depth": 2,
+          "name": "announce"
+        },
+        {
+          "text": "announcement / announcer",
+          "depth": 2,
+          "name": "announcement / announcer"
+        },
+        {
+          "text": "announce",
+          "depth": 2,
+          "name": "announce"
+        },
+        {
+          "text": "announced",
+          "depth": 2,
+          "name": "announced"
+        },
+        {
+          "text": "interview",
+          "depth": 2,
+          "name": "interview"
+        },
+        {
+          "text": "interview / interviewer / interviewee",
+          "depth": 2,
+          "name": "interview / interviewer / interviewee"
+        },
+        {
+          "text": "interview",
+          "depth": 2,
+          "name": "interview"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "edit",
+          "depth": 2,
+          "name": "edit"
+        },
+        {
+          "text": "editor / editing / edition",
+          "depth": 2,
+          "name": "editor / editing / edition"
+        },
+        {
+          "text": "edit",
+          "depth": 2,
+          "name": "edit"
+        },
+        {
+          "text": "edited",
+          "depth": 2,
+          "name": "edited"
+        },
+        {
+          "text": "advertise",
+          "depth": 2,
+          "name": "advertise"
+        },
+        {
+          "text": "advertisement / advertiser",
+          "depth": 2,
+          "name": "advertisement / advertiser"
+        },
+        {
+          "text": "advertise",
+          "depth": 2,
+          "name": "advertise"
+        },
+        {
+          "text": "advertised",
+          "depth": 2,
+          "name": "advertised"
+        },
+        {
+          "text": "frequency",
+          "depth": 2,
+          "name": "frequency"
+        },
+        {
+          "text": "frequency",
+          "depth": 2,
+          "name": "frequency"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "frequent",
+          "depth": 2,
+          "name": "frequent"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "552:983",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A __________ filter eliminates the burst of air from 'p' and 'b' sounds.",
+          "depth": 1,
+          "name": "1. A __________ filter eliminates the burst of air from 'p' and 'b' sounds."
+        },
+        {
+          "text": "2.  The __________ console has sliders, knobs, and meters to balance audio levels.",
+          "depth": 1,
+          "name": "2. The __________ console has sliders, knobs, and meters to balance audio levels."
+        },
+        {
+          "text": "3.  __________ panels line the walls of the sound booth to absorb reflections.",
+          "depth": 1,
+          "name": "3. __________ panels line the walls of the sound booth to absorb reflections."
+        },
+        {
+          "text": "4.  A __________ — a short musical clip — identifies the station between segments.",
+          "depth": 1,
+          "name": "4. A __________ — a short musical clip — identifies the station between segments."
+        },
+        {
+          "text": "5.  The on-air __________ above the door warns staff not to enter during a live broadcast.",
+          "depth": 1,
+          "name": "5. The on-air __________ above the door warns staff not to enter during a live broadcast."
+        },
+        {
+          "text": "6.  An __________ cable is the professional standard connecting microphone to console.",
+          "depth": 1,
+          "name": "6. An __________ cable is the professional standard connecting microphone to console."
+        },
+        {
+          "text": "7.  A __________ break between segments funds the station's operations.",
+          "depth": 1,
+          "name": "7. A __________ break between segments funds the station's operations."
+        },
+        {
+          "text": "8.  The __________ converts the audio signal into radio waves for broadcasting.",
+          "depth": 1,
+          "name": "8. The __________ converts the audio signal into radio waves for broadcasting."
+        },
+        {
+          "text": "9.  A __________ reporter monitors road conditions and delivers updates to commuters.",
+          "depth": 1,
+          "name": "9. A __________ reporter monitors road conditions and delivers updates to commuters."
+        },
+        {
+          "text": "10. __________ power provides voltage to condenser microphones through the cable.",
+          "depth": 1,
+          "name": "10. __________ power provides voltage to condenser microphones through the cable."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. pop  2. mixing  3. Acoustic  4. jingle  5. sign  6. XLR  7. commercial  8. transmitter  9. traffic  10. Phantom",
+          "depth": 2,
+          "name": "1. pop 2. mixing 3. Acoustic 4. jingle 5. sign 6. XLR 7. commercial 8. transmitter 9. traffic 10. Phantom"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "552:1001",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "BBC Radio",
+          "depth": 2,
+          "name": "BBC Radio"
+        },
+        {
+          "text": "The BBC operates numerous radio stations: Radio 1 (pop/youth), Radio 2 (adult contemporary), Radio 3 (classical), Radio 4 (speech/drama/news), and Radio 5 Live (sport/news). BBC World Service broadcasts internationally in over 40 languages.",
+          "depth": 2,
+          "name": "The BBC operates numerous radio stations: Radio 1 (pop/youth), Radio 2 (adult contemporary), Radio 3 (classical), Radio 4 (speech/drama/news), and Radio 5 Live (sport/news). BBC World Service broadcasts internationally in over 40 languages."
+        },
+        {
+          "text": "Podcast vs Radio",
+          "depth": 2,
+          "name": "Podcast vs Radio"
+        },
+        {
+          "text": "'Podcast' = pre-recorded audio available on demand. 'Radio' = traditionally live broadcast on a schedule. Many radio shows are now also released as podcasts. 'Streaming' = listening live via the internet. 'On demand' = listening whenever you choose.",
+          "depth": 2,
+          "name": "'Podcast' = pre-recorded audio available on demand. 'Radio' = traditionally live broadcast on a schedule. Many radio shows are now also released as podcasts. 'Streaming' = listening live via the internet. 'On demand' = listening whenever you choose."
+        },
+        {
+          "text": "DJ vs Presenter vs Host",
+          "depth": 2,
+          "name": "DJ vs Presenter vs Host"
+        },
+        {
+          "text": "'DJ' (disc jockey) = plays music, usually on a music station. 'Presenter' (BrE) = the person who presents any radio or TV programme. 'Host' (AmE) = same as presenter. 'Anchor' = the main presenter of a news programme.",
+          "depth": 2,
+          "name": "'DJ' (disc jockey) = plays music, usually on a music station. 'Presenter' (BrE) = the person who presents any radio or TV programme. 'Host' (AmE) = same as presenter. 'Anchor' = the main presenter of a news programme."
+        },
+        {
+          "text": "Radio for Language Learning",
+          "depth": 2,
+          "name": "Radio for Language Learning"
+        },
+        {
+          "text": "Listening to English-language radio is excellent for improving listening skills. BBC Learning English, BBC Radio 4, and NPR (American) are popular choices. Many stations offer 'listen again' features online. Podcasts with transcripts are especially useful for learners.",
+          "depth": 2,
+          "name": "Listening to English-language radio is excellent for improving listening skills. BBC Learning English, BBC Radio 4, and NPR (American) are popular choices. Many stations offer 'listen again' features online. Podcasts with transcripts are especially useful for learners."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "552:1017",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "broadcast",
+          "depth": 2,
+          "name": "broadcast"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "live ~, ~ signal, ~ studio",
+          "depth": 2,
+          "name": "live ~, ~ signal, ~ studio"
+        },
+        {
+          "text": "microphone",
+          "depth": 2,
+          "name": "microphone"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ check, wireless ~, ~ stand",
+          "depth": 2,
+          "name": "~ check, wireless ~, ~ stand"
+        },
+        {
+          "text": "presenter",
+          "depth": 2,
+          "name": "presenter"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "radio ~, TV ~, ~ voice",
+          "depth": 2,
+          "name": "radio ~, TV ~, ~ voice"
+        },
+        {
+          "text": "studio",
+          "depth": 2,
+          "name": "studio"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "recording ~, ~ equipment, ~ audience",
+          "depth": 2,
+          "name": "recording ~, ~ equipment, ~ audience"
+        },
+        {
+          "text": "frequency",
+          "depth": 2,
+          "name": "frequency"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "radio ~, FM ~, ~ range",
+          "depth": 2,
+          "name": "radio ~, FM ~, ~ range"
+        },
+        {
+          "text": "podcast",
+          "depth": 2,
+          "name": "podcast"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ episode, ~ host, ~ series",
+          "depth": 2,
+          "name": "~ episode, ~ host, ~ series"
+        },
+        {
+          "text": "antenna",
+          "depth": 2,
+          "name": "antenna"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "radio ~, ~ signal, ~ tower",
+          "depth": 2,
+          "name": "radio ~, ~ signal, ~ tower"
+        },
+        {
+          "text": "jingle",
+          "depth": 2,
+          "name": "jingle"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "radio ~, ~ music, advertising ~",
+          "depth": 2,
+          "name": "radio ~, ~ music, advertising ~"
+        },
+        {
+          "text": "bulletin",
+          "depth": 2,
+          "name": "bulletin"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "news ~, ~ board, traffic ~",
+          "depth": 2,
+          "name": "news ~, ~ board, traffic ~"
+        },
+        {
+          "text": "listener",
+          "depth": 2,
+          "name": "listener"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ numbers, ~ feedback, loyal ~",
+          "depth": 2,
+          "name": "~ numbers, ~ feedback, loyal ~"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "unitId": "bank",
+  "name": "The Bank",
+  "subtopics": [
+    {
+      "id": "bank-areas",
+      "title": "Bank Areas",
+      "wordIds": [
+        "lobby",
+        "teller-window",
+        "vault",
+        "safe-deposit-box",
+        "atm",
+        "drive-through",
+        "office",
+        "waiting-area",
+        "security-desk",
+        "currency-exchange"
+      ]
+    },
+    {
+      "id": "account-types",
+      "title": "Account Types",
+      "wordIds": [
+        "checking-account",
+        "savings-account",
+        "joint-account",
+        "business-account",
+        "certificate-of-deposit",
+        "money-market",
+        "retirement-account",
+        "student-account",
+        "trust-account",
+        "escrow"
+      ]
+    },
+    {
+      "id": "banking-actions",
+      "title": "Banking Actions",
+      "wordIds": [
+        "deposit",
+        "withdraw",
+        "transfer",
+        "wire",
+        "cash-check",
+        "open-account",
+        "close-account",
+        "apply-for-loan",
+        "pay-bill",
+        "check-balance"
+      ]
+    },
+    {
+      "id": "bank-personnel",
+      "title": "Bank Personnel",
+      "wordIds": [
+        "teller",
+        "bank-manager",
+        "loan-officer",
+        "financial-advisor",
+        "security-guard",
+        "accountant",
+        "auditor",
+        "branch-manager",
+        "customer-service",
+        "compliance-officer"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "lobby",
+      "label": "Lobby",
+      "ipa": "/ˈlɒbi/",
+      "cefr": "B2",
+      "imageNodeId": "467:13692"
+    },
+    {
+      "kind": "card",
+      "id": "teller-window",
+      "label": "Teller Window",
+      "ipa": "/ˈtɛlər ˈwɪndoʊ/",
+      "cefr": "C1",
+      "imageNodeId": "467:13696"
+    },
+    {
+      "kind": "card",
+      "id": "vault",
+      "label": "Vault",
+      "ipa": "/vɔːlt/",
+      "cefr": "B2",
+      "imageNodeId": "467:13700"
+    },
+    {
+      "kind": "card",
+      "id": "safe-deposit-box",
+      "label": "Safe Deposit Box",
+      "ipa": "/seɪf dɪˈpɒzɪt bɒks/",
+      "cefr": "C1",
+      "imageNodeId": "467:13704"
+    },
+    {
+      "kind": "card",
+      "id": "atm",
+      "label": "ATM",
+      "ipa": "/ˌeɪtiːˈɛm/",
+      "cefr": "B2",
+      "imageNodeId": "467:13708"
+    },
+    {
+      "kind": "card",
+      "id": "drive-through",
+      "label": "Drive-Through",
+      "ipa": "/draɪv θruː/",
+      "cefr": "C1",
+      "imageNodeId": "467:13712"
+    },
+    {
+      "kind": "card",
+      "id": "office",
+      "label": "Office",
+      "ipa": "/ˈɒfɪs/",
+      "cefr": "B2",
+      "imageNodeId": "467:13716"
+    },
+    {
+      "kind": "card",
+      "id": "waiting-area",
+      "label": "Waiting Area",
+      "ipa": "/ˈweɪtɪŋ ˈɛəriə/",
+      "cefr": "C1",
+      "imageNodeId": "467:13720"
+    },
+    {
+      "kind": "card",
+      "id": "security-desk",
+      "label": "Security Desk",
+      "ipa": "/sɪˈkjʊərɪti dɛsk/",
+      "cefr": "C1",
+      "imageNodeId": "467:13724"
+    },
+    {
+      "kind": "card",
+      "id": "currency-exchange",
+      "label": "Currency Exchange",
+      "ipa": "/ˈkʌrənsi ɪksˈtʃeɪndʒ/",
+      "cefr": "C1",
+      "imageNodeId": "467:13728"
+    },
+    {
+      "kind": "card",
+      "id": "checking-account",
+      "label": "Checking Account",
+      "ipa": "/ˈtʃɛkɪŋ əˈkaʊnt/",
+      "cefr": "C1",
+      "imageNodeId": "467:13737"
+    },
+    {
+      "kind": "card",
+      "id": "savings-account",
+      "label": "Savings Account",
+      "ipa": "/ˈseɪvɪŋz əˈkaʊnt/",
+      "cefr": "C1",
+      "imageNodeId": "467:13741"
+    },
+    {
+      "kind": "card",
+      "id": "joint-account",
+      "label": "Joint Account",
+      "ipa": "/dʒɔɪnt əˈkaʊnt/",
+      "cefr": "C1",
+      "imageNodeId": "467:13745"
+    },
+    {
+      "kind": "card",
+      "id": "business-account",
+      "label": "Business Account",
+      "ipa": "/ˈbɪznɪs əˈkaʊnt/",
+      "cefr": "C1",
+      "imageNodeId": "467:13749"
+    },
+    {
+      "kind": "card",
+      "id": "certificate-of-deposit",
+      "label": "Certificate of Deposit",
+      "ipa": "/sərˈtɪfɪkɪt əv dɪˈpɒzɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:13753"
+    },
+    {
+      "kind": "card",
+      "id": "money-market",
+      "label": "Money Market",
+      "ipa": "/ˈmʌni ˈmɑːrkɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:13757"
+    },
+    {
+      "kind": "card",
+      "id": "retirement-account",
+      "label": "Retirement Account",
+      "ipa": "/rɪˈtaɪərmənt əˈkaʊnt/",
+      "cefr": "C1",
+      "imageNodeId": "467:13761"
+    },
+    {
+      "kind": "card",
+      "id": "student-account",
+      "label": "Student Account",
+      "ipa": "/ˈstjuːdənt əˈkaʊnt/",
+      "cefr": "C1",
+      "imageNodeId": "467:13765"
+    },
+    {
+      "kind": "card",
+      "id": "trust-account",
+      "label": "Trust Account",
+      "ipa": "/trʌst əˈkaʊnt/",
+      "cefr": "C1",
+      "imageNodeId": "467:13769"
+    },
+    {
+      "kind": "card",
+      "id": "escrow",
+      "label": "Escrow",
+      "ipa": "/ˈɛskroʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:13773"
+    },
+    {
+      "kind": "card",
+      "id": "deposit",
+      "label": "Deposit",
+      "ipa": "/dɪˈpɒzɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:13782"
+    },
+    {
+      "kind": "card",
+      "id": "withdraw",
+      "label": "Withdraw",
+      "ipa": "/wɪðˈdrɔː/",
+      "cefr": "B2",
+      "imageNodeId": "467:13786"
+    },
+    {
+      "kind": "card",
+      "id": "transfer",
+      "label": "Transfer",
+      "ipa": "/ˈtrænsfɜːr/",
+      "cefr": "B2",
+      "imageNodeId": "467:13790"
+    },
+    {
+      "kind": "card",
+      "id": "wire",
+      "label": "Wire",
+      "ipa": "/waɪər/",
+      "cefr": "B2",
+      "imageNodeId": "467:13794"
+    },
+    {
+      "kind": "card",
+      "id": "cash-check",
+      "label": "Cash Check",
+      "ipa": "/kæʃ tʃɛk/",
+      "cefr": "C1",
+      "imageNodeId": "467:13798"
+    },
+    {
+      "kind": "card",
+      "id": "open-account",
+      "label": "Open Account",
+      "ipa": "/ˈoʊpən əˈkaʊnt/",
+      "cefr": "C1",
+      "imageNodeId": "467:13802"
+    },
+    {
+      "kind": "card",
+      "id": "close-account",
+      "label": "Close Account",
+      "ipa": "/kloʊz əˈkaʊnt/",
+      "cefr": "C1",
+      "imageNodeId": "467:13806"
+    },
+    {
+      "kind": "card",
+      "id": "apply-for-loan",
+      "label": "Apply for Loan",
+      "ipa": "/əˈplaɪ fɔːr loʊn/",
+      "cefr": "C1",
+      "imageNodeId": "467:13810"
+    },
+    {
+      "kind": "card",
+      "id": "pay-bill",
+      "label": "Pay Bill",
+      "ipa": "/peɪ bɪl/",
+      "cefr": "C1",
+      "imageNodeId": "467:13814"
+    },
+    {
+      "kind": "card",
+      "id": "check-balance",
+      "label": "Check Balance",
+      "ipa": "/tʃɛk ˈbæləns/",
+      "cefr": "C1",
+      "imageNodeId": "467:13818"
+    },
+    {
+      "kind": "card",
+      "id": "teller",
+      "label": "Teller",
+      "ipa": "/ˈtɛlər/",
+      "cefr": "B2",
+      "imageNodeId": "467:13827"
+    },
+    {
+      "kind": "card",
+      "id": "bank-manager",
+      "label": "Bank Manager",
+      "ipa": "/bæŋk ˈmænɪdʒər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13831"
+    },
+    {
+      "kind": "card",
+      "id": "loan-officer",
+      "label": "Loan Officer",
+      "ipa": "/loʊn ˈɒfɪsər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13835"
+    },
+    {
+      "kind": "card",
+      "id": "financial-advisor",
+      "label": "Financial Advisor",
+      "ipa": "/faɪˈnænʃəl ədˈvaɪzər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13839"
+    },
+    {
+      "kind": "card",
+      "id": "security-guard",
+      "label": "Security Guard",
+      "ipa": "/sɪˈkjʊərɪti ɡɑːrd/",
+      "cefr": "C1",
+      "imageNodeId": "467:13843"
+    },
+    {
+      "kind": "card",
+      "id": "accountant",
+      "label": "Accountant",
+      "ipa": "/əˈkaʊntənt/",
+      "cefr": "C1",
+      "imageNodeId": "467:13847"
+    },
+    {
+      "kind": "card",
+      "id": "auditor",
+      "label": "Auditor",
+      "ipa": "/ˈɔːdɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "467:13851"
+    },
+    {
+      "kind": "card",
+      "id": "branch-manager",
+      "label": "Branch Manager",
+      "ipa": "/brɑːntʃ ˈmænɪdʒər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13855"
+    },
+    {
+      "kind": "card",
+      "id": "customer-service",
+      "label": "Customer Service",
+      "ipa": "/ˈkʌstəmər ˈsɜːrvɪs/",
+      "cefr": "C1",
+      "imageNodeId": "467:13859"
+    },
+    {
+      "kind": "card",
+      "id": "compliance-officer",
+      "label": "Compliance Officer",
+      "ipa": "/kəmˈplaɪəns ˈɒfɪsər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13863"
+    }
+  ],
+  "materials": null
+}

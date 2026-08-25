@@ -1,0 +1,393 @@
+{
+  "unitId": "winemaking",
+  "name": "Winemaking",
+  "subtopics": [
+    {
+      "id": "winemaking-process",
+      "title": "Winemaking Process",
+      "wordIds": [
+        "crushing",
+        "pressing",
+        "fermentation",
+        "maceration",
+        "racking",
+        "fining",
+        "filtering",
+        "aging",
+        "blending",
+        "bottling"
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Equipment",
+      "wordIds": [
+        "wine-press",
+        "fermentation-tank",
+        "oak-barrel",
+        "stainless-steel-tank",
+        "crusher",
+        "destemmer",
+        "pump",
+        "hydrometer",
+        "ph-meter",
+        "corking-machine"
+      ]
+    },
+    {
+      "id": "barrel-aging",
+      "title": "Barrel & Aging",
+      "wordIds": [
+        "french-oak",
+        "american-oak",
+        "toasting",
+        "char",
+        "new-barrel",
+        "used-barrel",
+        "micro-oxidation",
+        "lees",
+        "sur-lie",
+        "b-tonnage"
+      ]
+    },
+    {
+      "id": "wine-types",
+      "title": "Wine Types",
+      "wordIds": [
+        "red-wine",
+        "white-wine",
+        "ros-",
+        "sparkling",
+        "dessert-wine",
+        "fortified-wine",
+        "natural-wine",
+        "orange-wine",
+        "ice-wine",
+        "port"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "crushing",
+      "label": "Crushing",
+      "ipa": "/ˈkrʌʃɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16888"
+    },
+    {
+      "kind": "card",
+      "id": "pressing",
+      "label": "Pressing",
+      "ipa": "/ˈprɛsɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16892"
+    },
+    {
+      "kind": "card",
+      "id": "fermentation",
+      "label": "Fermentation",
+      "ipa": "/ˌfɜːrmɛnˈteɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:16896"
+    },
+    {
+      "kind": "card",
+      "id": "maceration",
+      "label": "Maceration",
+      "ipa": "/ˌmæsəˈreɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:16900"
+    },
+    {
+      "kind": "card",
+      "id": "racking",
+      "label": "Racking",
+      "ipa": "/ˈrækɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16904"
+    },
+    {
+      "kind": "card",
+      "id": "fining",
+      "label": "Fining",
+      "ipa": "/ˈfaɪnɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16908"
+    },
+    {
+      "kind": "card",
+      "id": "filtering",
+      "label": "Filtering",
+      "ipa": "/ˈfɪltərɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16912"
+    },
+    {
+      "kind": "card",
+      "id": "aging",
+      "label": "Aging",
+      "ipa": "/ˈeɪdʒɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16916"
+    },
+    {
+      "kind": "card",
+      "id": "blending",
+      "label": "Blending",
+      "ipa": "/ˈblɛndɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16920"
+    },
+    {
+      "kind": "card",
+      "id": "bottling",
+      "label": "Bottling",
+      "ipa": "/ˈbɒtəlɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16924"
+    },
+    {
+      "kind": "card",
+      "id": "wine-press",
+      "label": "Wine Press",
+      "ipa": "/waɪn prɛs/",
+      "cefr": "C1",
+      "imageNodeId": "467:16933"
+    },
+    {
+      "kind": "card",
+      "id": "fermentation-tank",
+      "label": "Fermentation Tank",
+      "ipa": "/ˌfɜːrmɛnˈteɪʃən tæŋk/",
+      "cefr": "C1",
+      "imageNodeId": "467:16937"
+    },
+    {
+      "kind": "card",
+      "id": "oak-barrel",
+      "label": "Oak Barrel",
+      "ipa": "/oʊk ˈbærəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:16941"
+    },
+    {
+      "kind": "card",
+      "id": "stainless-steel-tank",
+      "label": "Stainless Steel Tank",
+      "ipa": "/ˈsteɪnlɪs stiːl tæŋk/",
+      "cefr": "C1",
+      "imageNodeId": "467:16945"
+    },
+    {
+      "kind": "card",
+      "id": "crusher",
+      "label": "Crusher",
+      "ipa": "/ˈkrʌʃər/",
+      "cefr": "B2",
+      "imageNodeId": "467:16949"
+    },
+    {
+      "kind": "card",
+      "id": "destemmer",
+      "label": "Destemmer",
+      "ipa": "/diːˈstɛmər/",
+      "cefr": "B2",
+      "imageNodeId": "467:16953"
+    },
+    {
+      "kind": "card",
+      "id": "pump",
+      "label": "Pump",
+      "ipa": "/pʌmp/",
+      "cefr": "B2",
+      "imageNodeId": "467:16957"
+    },
+    {
+      "kind": "card",
+      "id": "hydrometer",
+      "label": "Hydrometer",
+      "ipa": "/haɪˈdrɒmɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "467:16961"
+    },
+    {
+      "kind": "card",
+      "id": "ph-meter",
+      "label": "pH Meter",
+      "ipa": "/ˌpiːˈeɪtʃ ˈmiːtər/",
+      "cefr": "C1",
+      "imageNodeId": "467:16965"
+    },
+    {
+      "kind": "card",
+      "id": "corking-machine",
+      "label": "Corking Machine",
+      "ipa": "/ˈkɔːrkɪŋ məˈʃiːn/",
+      "cefr": "C1",
+      "imageNodeId": "467:16969"
+    },
+    {
+      "kind": "card",
+      "id": "french-oak",
+      "label": "French Oak",
+      "ipa": "/frɛntʃ oʊk/",
+      "cefr": "C1",
+      "imageNodeId": "467:16978"
+    },
+    {
+      "kind": "card",
+      "id": "american-oak",
+      "label": "American Oak",
+      "ipa": "/əˈmɛrɪkən oʊk/",
+      "cefr": "C1",
+      "imageNodeId": "467:16982"
+    },
+    {
+      "kind": "card",
+      "id": "toasting",
+      "label": "Toasting",
+      "ipa": "/ˈtoʊstɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16986"
+    },
+    {
+      "kind": "card",
+      "id": "char",
+      "label": "Char",
+      "ipa": "/tʃɑːr/",
+      "cefr": "B2",
+      "imageNodeId": "467:16990"
+    },
+    {
+      "kind": "card",
+      "id": "new-barrel",
+      "label": "New Barrel",
+      "ipa": "/njuː ˈbærəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:16994"
+    },
+    {
+      "kind": "card",
+      "id": "used-barrel",
+      "label": "Used Barrel",
+      "ipa": "/juːzd ˈbærəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:16998"
+    },
+    {
+      "kind": "card",
+      "id": "micro-oxidation",
+      "label": "Micro-Oxidation",
+      "ipa": "/ˈmaɪkroʊ ˌɒksɪˈdeɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:17002"
+    },
+    {
+      "kind": "card",
+      "id": "lees",
+      "label": "Lees",
+      "ipa": "/liːz/",
+      "cefr": "B2",
+      "imageNodeId": "467:17006"
+    },
+    {
+      "kind": "card",
+      "id": "sur-lie",
+      "label": "Sur Lie",
+      "ipa": "/sʊr liː/",
+      "cefr": "C1",
+      "imageNodeId": "467:17010"
+    },
+    {
+      "kind": "card",
+      "id": "b-tonnage",
+      "label": "Bâtonnage",
+      "ipa": "/bɑːtɒˈnɑːʒ/",
+      "cefr": "B2",
+      "imageNodeId": "467:17014"
+    },
+    {
+      "kind": "card",
+      "id": "red-wine",
+      "label": "Red Wine",
+      "ipa": "/rɛd waɪn/",
+      "cefr": "C1",
+      "imageNodeId": "467:17023"
+    },
+    {
+      "kind": "card",
+      "id": "white-wine",
+      "label": "White Wine",
+      "ipa": "/waɪt waɪn/",
+      "cefr": "C1",
+      "imageNodeId": "467:17027"
+    },
+    {
+      "kind": "card",
+      "id": "ros-",
+      "label": "Rosé",
+      "ipa": "/roʊˈzeɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:17031"
+    },
+    {
+      "kind": "card",
+      "id": "sparkling",
+      "label": "Sparkling",
+      "ipa": "/ˈspɑːrklɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:17035"
+    },
+    {
+      "kind": "card",
+      "id": "dessert-wine",
+      "label": "Dessert Wine",
+      "ipa": "/dɪˈzɜːrt waɪn/",
+      "cefr": "C1",
+      "imageNodeId": "467:17039"
+    },
+    {
+      "kind": "card",
+      "id": "fortified-wine",
+      "label": "Fortified Wine",
+      "ipa": "/ˈfɔːrtɪˌfaɪd waɪn/",
+      "cefr": "C1",
+      "imageNodeId": "467:17043"
+    },
+    {
+      "kind": "card",
+      "id": "natural-wine",
+      "label": "Natural Wine",
+      "ipa": "/ˈnætʃərəl waɪn/",
+      "cefr": "C1",
+      "imageNodeId": "467:17047"
+    },
+    {
+      "kind": "card",
+      "id": "orange-wine",
+      "label": "Orange Wine",
+      "ipa": "/ˈɒrɪndʒ waɪn/",
+      "cefr": "C1",
+      "imageNodeId": "467:17051"
+    },
+    {
+      "kind": "card",
+      "id": "ice-wine",
+      "label": "Ice Wine",
+      "ipa": "/aɪs waɪn/",
+      "cefr": "C1",
+      "imageNodeId": "467:17055"
+    },
+    {
+      "kind": "card",
+      "id": "port",
+      "label": "Port",
+      "ipa": "/pɔːrt/",
+      "cefr": "B2",
+      "imageNodeId": "467:17059"
+    }
+  ],
+  "materials": null
+}

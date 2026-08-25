@@ -1,0 +1,1626 @@
+{
+  "unitId": "pottery-studio",
+  "name": "The Pottery Studio",
+  "subtopics": [
+    {
+      "id": "clay-materials",
+      "title": "Clay & Materials",
+      "wordIds": [
+        "clay",
+        "slip",
+        "glaze",
+        "underglaze",
+        "engobe",
+        "oxide",
+        "stain",
+        "grog",
+        "porcelain",
+        "stoneware"
+      ]
+    },
+    {
+      "id": "pottery-tools",
+      "title": "Pottery Tools",
+      "wordIds": [
+        "potter-s-wheel",
+        "rolling-pin",
+        "wire-cutter",
+        "needle-tool",
+        "rib",
+        "sponge",
+        "loop-tool",
+        "trimming-tool",
+        "carving-tool",
+        "stamp"
+      ]
+    },
+    {
+      "id": "pottery-techniques",
+      "title": "Pottery Techniques",
+      "wordIds": [
+        "throwing",
+        "coiling",
+        "slab-building",
+        "pinching",
+        "glazing",
+        "trimming",
+        "scoring",
+        "wedging",
+        "centering",
+        "pulling"
+      ]
+    },
+    {
+      "id": "kiln-firing",
+      "title": "Kiln & Firing",
+      "wordIds": [
+        "kiln",
+        "kiln-shelf",
+        "kiln-post",
+        "thermocouple",
+        "pyrometric-cone",
+        "firing-log",
+        "glaze-bucket",
+        "kiln-wash",
+        "ventilation-fan",
+        "heat-resistant-gloves"
+      ]
+    },
+    {
+      "id": "finished-products",
+      "title": "Finished Products",
+      "wordIds": [
+        "bowl",
+        "mug",
+        "plate",
+        "vase",
+        "pitcher",
+        "teapot",
+        "tile",
+        "sculpture",
+        "planter",
+        "candle-holder"
+      ]
+    },
+    {
+      "id": "studio-features",
+      "title": "Studio Features",
+      "wordIds": [
+        "work-table",
+        "wedging-table",
+        "sink",
+        "splash-pan",
+        "drying-rack",
+        "storage-shelf",
+        "apron",
+        "bucket",
+        "bat",
+        "turntable",
+        "wheel",
+        "sculpting-tool",
+        "needle",
+        "wax",
+        "figurine"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "clay",
+      "label": "Clay",
+      "ipa": "/kleɪ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6235"
+    },
+    {
+      "kind": "card",
+      "id": "slip",
+      "label": "Slip",
+      "ipa": "/slɪp/",
+      "cefr": "B1",
+      "imageNodeId": "45:6239"
+    },
+    {
+      "kind": "card",
+      "id": "glaze",
+      "label": "Glaze",
+      "ipa": "/ɡleɪz/",
+      "cefr": "B1",
+      "imageNodeId": "45:6243"
+    },
+    {
+      "kind": "card",
+      "id": "underglaze",
+      "label": "Underglaze",
+      "ipa": "/ˈʌndərˌɡleɪz/",
+      "cefr": "B2",
+      "imageNodeId": "45:6247"
+    },
+    {
+      "kind": "card",
+      "id": "engobe",
+      "label": "Engobe",
+      "ipa": "/ɒnˈɡoʊb/",
+      "cefr": "B1",
+      "imageNodeId": "45:6251"
+    },
+    {
+      "kind": "card",
+      "id": "oxide",
+      "label": "Oxide",
+      "ipa": "/ˈɒksaɪd/",
+      "cefr": "B1",
+      "imageNodeId": "45:6255"
+    },
+    {
+      "kind": "card",
+      "id": "stain",
+      "label": "Stain",
+      "ipa": "/steɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:6259"
+    },
+    {
+      "kind": "card",
+      "id": "grog",
+      "label": "Grog",
+      "ipa": "/ɡrɒɡ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6263"
+    },
+    {
+      "kind": "card",
+      "id": "porcelain",
+      "label": "Porcelain",
+      "ipa": "/ˈpɔːrsəlɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:6267"
+    },
+    {
+      "kind": "card",
+      "id": "stoneware",
+      "label": "Stoneware",
+      "ipa": "/ˈstoʊnˌwɛər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6271"
+    },
+    {
+      "kind": "card",
+      "id": "potter-s-wheel",
+      "label": "Potter's Wheel",
+      "ipa": "/ˈpɒtərz wiːl/",
+      "cefr": "B2",
+      "imageNodeId": "45:6280"
+    },
+    {
+      "kind": "card",
+      "id": "rolling-pin",
+      "label": "Rolling Pin",
+      "ipa": "/ˈroʊlɪŋ pɪn/",
+      "cefr": "B2",
+      "imageNodeId": "45:6284"
+    },
+    {
+      "kind": "card",
+      "id": "wire-cutter",
+      "label": "Wire Cutter",
+      "ipa": "/waɪər ˈkʌtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:6288"
+    },
+    {
+      "kind": "card",
+      "id": "needle-tool",
+      "label": "Needle Tool",
+      "ipa": "/ˈniːdəl tuːl/",
+      "cefr": "B2",
+      "imageNodeId": "45:6292"
+    },
+    {
+      "kind": "card",
+      "id": "rib",
+      "label": "Rib",
+      "ipa": "/rɪb/",
+      "cefr": "B1",
+      "imageNodeId": "45:6296"
+    },
+    {
+      "kind": "card",
+      "id": "sponge",
+      "label": "Sponge",
+      "ipa": "/spʌndʒ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6300"
+    },
+    {
+      "kind": "card",
+      "id": "loop-tool",
+      "label": "Loop Tool",
+      "ipa": "/luːp tuːl/",
+      "cefr": "B2",
+      "imageNodeId": "45:6304"
+    },
+    {
+      "kind": "card",
+      "id": "trimming-tool",
+      "label": "Trimming Tool",
+      "ipa": "/ˈtrɪmɪŋ tuːl/",
+      "cefr": "B2",
+      "imageNodeId": "45:6308"
+    },
+    {
+      "kind": "card",
+      "id": "carving-tool",
+      "label": "Carving Tool",
+      "ipa": "/ˈkɑːrvɪŋ tuːl/",
+      "cefr": "B2",
+      "imageNodeId": "45:6312"
+    },
+    {
+      "kind": "card",
+      "id": "stamp",
+      "label": "Stamp",
+      "ipa": "/stæmp/",
+      "cefr": "B1",
+      "imageNodeId": "45:6316"
+    },
+    {
+      "kind": "card",
+      "id": "throwing",
+      "label": "Throwing",
+      "ipa": "/ˈθroʊɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6325"
+    },
+    {
+      "kind": "card",
+      "id": "coiling",
+      "label": "Coiling",
+      "ipa": "/ˈkɔɪlɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6329"
+    },
+    {
+      "kind": "card",
+      "id": "slab-building",
+      "label": "Slab Building",
+      "ipa": "/slæb ˈbɪldɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "45:6333"
+    },
+    {
+      "kind": "card",
+      "id": "pinching",
+      "label": "Pinching",
+      "ipa": "/ˈpɪntʃɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6337"
+    },
+    {
+      "kind": "card",
+      "id": "glazing",
+      "label": "Glazing",
+      "ipa": "/ˈɡleɪzɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6341"
+    },
+    {
+      "kind": "card",
+      "id": "trimming",
+      "label": "Trimming",
+      "ipa": "/ˈtrɪmɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6345"
+    },
+    {
+      "kind": "card",
+      "id": "scoring",
+      "label": "Scoring",
+      "ipa": "/ˈskɔːrɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6349"
+    },
+    {
+      "kind": "card",
+      "id": "wedging",
+      "label": "Wedging",
+      "ipa": "/ˈwɛdʒɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6353"
+    },
+    {
+      "kind": "card",
+      "id": "centering",
+      "label": "Centering",
+      "ipa": "/ˈsɛntərɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6357"
+    },
+    {
+      "kind": "card",
+      "id": "pulling",
+      "label": "Pulling",
+      "ipa": "/ˈpʊlɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6361"
+    },
+    {
+      "kind": "card",
+      "id": "kiln",
+      "label": "Kiln",
+      "ipa": "/kɪln/",
+      "cefr": "B1",
+      "imageNodeId": "45:6370"
+    },
+    {
+      "kind": "card",
+      "id": "kiln-shelf",
+      "label": "Kiln Shelf",
+      "ipa": "/kɪln ʃɛlf/",
+      "cefr": "B2",
+      "imageNodeId": "45:6374"
+    },
+    {
+      "kind": "card",
+      "id": "kiln-post",
+      "label": "Kiln Post",
+      "ipa": "/kɪln poʊst/",
+      "cefr": "B2",
+      "imageNodeId": "45:6378"
+    },
+    {
+      "kind": "card",
+      "id": "thermocouple",
+      "label": "Thermocouple",
+      "ipa": "/ˈθɜːrmoʊˌkʌpəl/",
+      "cefr": "B2",
+      "imageNodeId": "45:6382"
+    },
+    {
+      "kind": "card",
+      "id": "pyrometric-cone",
+      "label": "Pyrometric Cone",
+      "ipa": "/ˌpaɪroʊˈmɛtrɪk koʊn/",
+      "cefr": "C1",
+      "imageNodeId": "45:6386"
+    },
+    {
+      "kind": "card",
+      "id": "firing-log",
+      "label": "Firing Log",
+      "ipa": "/ˈfaɪərɪŋ lɒɡ/",
+      "cefr": "B2",
+      "imageNodeId": "45:6390"
+    },
+    {
+      "kind": "card",
+      "id": "glaze-bucket",
+      "label": "Glaze Bucket",
+      "ipa": "/ɡleɪz ˈbʌkɪt/",
+      "cefr": "B2",
+      "imageNodeId": "45:6394"
+    },
+    {
+      "kind": "card",
+      "id": "kiln-wash",
+      "label": "Kiln Wash",
+      "ipa": "/kɪln wɒʃ/",
+      "cefr": "B2",
+      "imageNodeId": "45:6398"
+    },
+    {
+      "kind": "card",
+      "id": "ventilation-fan",
+      "label": "Ventilation Fan",
+      "ipa": "/ˌvɛntɪˈleɪʃən fæn/",
+      "cefr": "C1",
+      "imageNodeId": "45:6402"
+    },
+    {
+      "kind": "card",
+      "id": "heat-resistant-gloves",
+      "label": "Heat-Resistant Gloves",
+      "ipa": "/hiːt rɪˈzɪstənt ɡlʌvz/",
+      "cefr": "C1",
+      "imageNodeId": "45:6406"
+    },
+    {
+      "kind": "card",
+      "id": "bowl",
+      "label": "Bowl",
+      "ipa": "/boʊl/",
+      "cefr": "B1",
+      "imageNodeId": "45:6415"
+    },
+    {
+      "kind": "card",
+      "id": "mug",
+      "label": "Mug",
+      "ipa": "/mʌɡ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6419"
+    },
+    {
+      "kind": "card",
+      "id": "plate",
+      "label": "Plate",
+      "ipa": "/pleɪt/",
+      "cefr": "B1",
+      "imageNodeId": "45:6423"
+    },
+    {
+      "kind": "card",
+      "id": "vase",
+      "label": "Vase",
+      "ipa": "/veɪz/",
+      "cefr": "B1",
+      "imageNodeId": "45:6427"
+    },
+    {
+      "kind": "card",
+      "id": "pitcher",
+      "label": "Pitcher",
+      "ipa": "/ˈpɪtʃər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6431"
+    },
+    {
+      "kind": "card",
+      "id": "teapot",
+      "label": "Teapot",
+      "ipa": "/ˈtiːˌpɒt/",
+      "cefr": "B1",
+      "imageNodeId": "45:6435"
+    },
+    {
+      "kind": "card",
+      "id": "tile",
+      "label": "Tile",
+      "ipa": "/taɪl/",
+      "cefr": "B1",
+      "imageNodeId": "45:6439"
+    },
+    {
+      "kind": "card",
+      "id": "sculpture",
+      "label": "Sculpture",
+      "ipa": "/ˈskʌlptʃər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6443"
+    },
+    {
+      "kind": "card",
+      "id": "planter",
+      "label": "Planter",
+      "ipa": "/ˈplæntər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6447"
+    },
+    {
+      "kind": "card",
+      "id": "candle-holder",
+      "label": "Candle Holder",
+      "ipa": "/ˈkændəl ˈhoʊldər/",
+      "cefr": "B2",
+      "imageNodeId": "45:6451"
+    },
+    {
+      "kind": "card",
+      "id": "work-table",
+      "label": "Work Table",
+      "ipa": "/wɜːrk ˈteɪbəl/",
+      "cefr": "B2",
+      "imageNodeId": "45:6460"
+    },
+    {
+      "kind": "card",
+      "id": "wedging-table",
+      "label": "Wedging Table",
+      "ipa": "/ˈwɛdʒɪŋ ˈteɪbəl/",
+      "cefr": "B2",
+      "imageNodeId": "45:6464"
+    },
+    {
+      "kind": "card",
+      "id": "sink",
+      "label": "Sink",
+      "ipa": "/sɪŋk/",
+      "cefr": "B1",
+      "imageNodeId": "45:6468"
+    },
+    {
+      "kind": "card",
+      "id": "splash-pan",
+      "label": "Splash Pan",
+      "ipa": "/splæʃ pæn/",
+      "cefr": "B2",
+      "imageNodeId": "45:6472"
+    },
+    {
+      "kind": "card",
+      "id": "drying-rack",
+      "label": "Drying Rack",
+      "ipa": "/ˈdraɪɪŋ ræk/",
+      "cefr": "B2",
+      "imageNodeId": "45:6476"
+    },
+    {
+      "kind": "card",
+      "id": "storage-shelf",
+      "label": "Storage Shelf",
+      "ipa": "/ˈstɔːrɪdʒ ʃɛlf/",
+      "cefr": "B2",
+      "imageNodeId": "45:6480"
+    },
+    {
+      "kind": "card",
+      "id": "apron",
+      "label": "Apron",
+      "ipa": "/ˈeɪprən/",
+      "cefr": "B1",
+      "imageNodeId": "45:6484"
+    },
+    {
+      "kind": "card",
+      "id": "bucket",
+      "label": "Bucket",
+      "ipa": "/ˈbʌkɪt/",
+      "cefr": "B1",
+      "imageNodeId": "45:6488"
+    },
+    {
+      "kind": "card",
+      "id": "bat",
+      "label": "Bat",
+      "ipa": "/bæt/",
+      "cefr": "B1",
+      "imageNodeId": "45:6492"
+    },
+    {
+      "kind": "card",
+      "id": "turntable",
+      "label": "Turntable",
+      "ipa": "/ˈtɜːrnˌteɪbəl/",
+      "cefr": "B1",
+      "imageNodeId": "45:6496"
+    },
+    {
+      "kind": "card",
+      "id": "wheel",
+      "label": "Wheel",
+      "ipa": "/wiːl/",
+      "cefr": "B1",
+      "imageNodeId": "39:6179"
+    },
+    {
+      "kind": "card",
+      "id": "sculpting-tool",
+      "label": "Sculpting Tool",
+      "ipa": "/ˈskʌlptɪŋ tuːl/",
+      "cefr": "B2",
+      "imageNodeId": "39:6187"
+    },
+    {
+      "kind": "card",
+      "id": "needle",
+      "label": "Needle",
+      "ipa": "/ˈniːdəl/",
+      "cefr": "B1",
+      "imageNodeId": "39:6207"
+    },
+    {
+      "kind": "card",
+      "id": "wax",
+      "label": "Wax",
+      "ipa": "/wæks/",
+      "cefr": "B1",
+      "imageNodeId": "39:6242"
+    },
+    {
+      "kind": "card",
+      "id": "figurine",
+      "label": "Figurine",
+      "ipa": "/ˌfɪɡjʊˈriːn/",
+      "cefr": "B1",
+      "imageNodeId": "39:6269"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "549:3493",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "549:3495",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1+ · Topic: The Pottery Studio",
+          "depth": 1,
+          "name": "Level: B1+ · Topic: The Pottery Studio"
+        },
+        {
+          "text": "From Earth to Art — The Craft of Pottery\n\nPottery is one of humanity's oldest crafts. For thousands of years, people have shaped clay into useful and beautiful objects — bowls, mugs, plates, vases, pitchers, teapots, tiles, sculptures, and planters. A pottery studio is where this ancient tradition continues today.\n\nEverything begins with clay. The potter prepares the clay by wedging it — pressing and folding it on a table to remove air bubbles. Air trapped inside the clay can cause a piece to crack or even explode in the kiln. Different types of clay produce different results: stoneware is strong and heavy, porcelain is smooth and delicate. Grog — small pieces of fired clay mixed into wet clay — adds texture and strength.\n\nThere are several techniques for shaping clay. Throwing is the most famous — the potter places a ball of clay on the potter's wheel, which spins while hands shape the clay. First, the potter centres the clay by pressing it firmly in the middle of the wheel. Then, pulling — pressing thumbs into the centre and drawing the clay upward — creates the walls of a bowl or a vase. A sponge smooths the surface. A rib — a flat tool — refines the shape.\n\nOther methods don't use a wheel. Coiling rolls long ropes of clay and stacks them in circles to build walls. Slab building rolls clay flat with a rolling pin and cuts it into panels that are joined together — like building with flat sheets. Pinching presses a ball of clay between thumb and fingers to form a small pot. Scoring — scratching lines on two pieces of clay — and applying slip (liquid clay) joins the pieces securely.\n\nOnce shaped, the piece must dry slowly before going into the kiln — a special high-temperature oven. The first firing, called bisque firing, hardens the clay. The kiln reaches temperatures above 1000°C. A kiln shelf and kiln posts support the pieces inside. A thermocouple measures the temperature. A pyrometric cone — a small pyramid of ceramic — bends at a specific temperature, showing when the firing is complete. A firing log records the temperature and time.\n\nAfter bisque firing, the piece is ready for glazing. A glaze is a glass-like coating that makes the piece waterproof, colourful, and shiny. An underglaze is applied first for detailed designs — like painting on paper. An engobe adds colour to the raw clay surface. An oxide and a stain add colour to glazes. The glaze is mixed in a glaze bucket and applied by dipping, brushing, or spraying. The piece is then fired again at an even higher temperature.\n\nTools for detail work include a needle tool for fine lines, a loop tool for carving, a trimming tool for shaping the bottom of a pot, a carving tool for decorative patterns, and a stamp for pressed designs. A wire cutter separates the finished piece from the wheel.\n\nSafety matters: heat-resistant gloves protect hands near the kiln. A ventilation fan removes fumes during firing. Kiln wash — a protective coating — prevents glaze from sticking to the kiln shelves.\n\nPottery teaches patience. You cannot rush clay. You cannot rush the kiln. And the result — a bowl you made with your own hands, glazed in a colour you chose — is worth the wait.",
+          "depth": 1,
+          "name": "From Earth to Art — The Craft of Pottery Pottery is one of humanity's oldest crafts. For thousands of years, people have shaped clay into useful and beautiful objects — bowls, mugs, plates, vases, pitchers, teapots, tiles, sculptures, and planters. A pottery studio is where this ancient tradition continues today. Everything begins with clay. The potter prepares the clay by wedging it — pressing and folding it on a table to remove air bubbles. Air trapped inside the clay can cause a piece to crack or even explode in the kiln. Different types of clay produce different results: stoneware is strong and heavy, porcelain is smooth and delicate. Grog — small pieces of fired clay mixed into wet clay — adds texture and strength. There are several techniques for shaping clay. Throwing is the most famous — the potter places a ball of clay on the potter's wheel, which spins while hands shape the clay. First, the potter centres the clay by pressing it firmly in the middle of the wheel. Then, pulling — pressing thumbs into the centre and drawing the clay upward — creates the walls of a bowl or a vase. A sponge smooths the surface. A rib — a flat tool — refines the shape. Other methods don't use a wheel. Coiling rolls long ropes of clay and stacks them in circles to build walls. Slab building rolls clay flat with a rolling pin and cuts it into panels that are joined together — like building with flat sheets. Pinching presses a ball of clay between thumb and fingers to form a small pot. Scoring — scratching lines on two pieces of clay — and applying slip (liquid clay) joins the pieces securely. Once shaped, the piece must dry slowly before going into the kiln — a special high-temperature oven. The first firing, called bisque firing, hardens the clay. The kiln reaches temperatures above 1000°C. A kiln shelf and kiln posts support the pieces inside. A thermocouple measures the temperature. A pyrometric cone — a small pyramid of ceramic — bends at a specific temperature, showing when the firing is complete. A firing log records the temperature and time. After bisque firing, the piece is ready for glazing. A glaze is a glass-like coating that makes the piece waterproof, colourful, and shiny. An underglaze is applied first for detailed designs — like painting on paper. An engobe adds colour to the raw clay surface. An oxide and a stain add colour to glazes. The glaze is mixed in a glaze bucket and applied by dipping, brushing, or spraying. The piece is then fired again at an even higher temperature. Tools for detail work include a needle tool for fine lines, a loop tool for carving, a trimming tool for shaping the bottom of a pot, a carving tool for decorative patterns, and a stamp for pressed designs. A wire cutter separates the finished piece from the wheel. Safety matters: heat-resistant gloves protect hands near the kiln. A ventilation fan removes fumes during firing. Kiln wash — a protective coating — prevents glaze from sticking to the kiln shelves. Pottery teaches patience. You cannot rush clay. You cannot rush the kiln. And the result — a bowl you made with your own hands, glazed in a colour you chose — is worth the wait."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Describe the process of throwing on the potter's wheel, step by step.",
+          "depth": 1,
+          "name": "1. Describe the process of throwing on the potter's wheel, step by step."
+        },
+        {
+          "text": "2. What are the differences between coiling, slab building, and pinching?",
+          "depth": 1,
+          "name": "2. What are the differences between coiling, slab building, and pinching?"
+        },
+        {
+          "text": "3. What happens during the firing process? What equipment is used?",
+          "depth": 1,
+          "name": "3. What happens during the firing process? What equipment is used?"
+        },
+        {
+          "text": "4. What is a glaze and why is it applied? What other decorating methods are mentioned?",
+          "depth": 1,
+          "name": "4. What is a glaze and why is it applied? What other decorating methods are mentioned?"
+        },
+        {
+          "text": "5. The passage says 'You cannot rush clay.' What does this tell us about the nature of pottery as a craft?",
+          "depth": 1,
+          "name": "5. The passage says 'You cannot rush clay.' What does this tell us about the nature of pottery as a craft?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "549:3508",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "mould someone / mould something",
+          "depth": 2,
+          "name": "mould someone / mould something"
+        },
+        {
+          "text": "shape or influence someone's character or development",
+          "depth": 2,
+          "name": "shape or influence someone's character or development"
+        },
+        {
+          "text": "\"A good teacher moulds students the way a potter moulds clay on the potter's wheel.\"",
+          "depth": 2,
+          "name": "\"A good teacher moulds students the way a potter moulds clay on the potter's wheel.\""
+        },
+        {
+          "text": "have a hand in something",
+          "depth": 2,
+          "name": "have a hand in something"
+        },
+        {
+          "text": "be involved in creating or doing something",
+          "depth": 2,
+          "name": "be involved in creating or doing something"
+        },
+        {
+          "text": "\"Every student had a hand in the final exhibition — each piece was shaped by pinching, coiling, or slab building.\"",
+          "depth": 2,
+          "name": "\"Every student had a hand in the final exhibition — each piece was shaped by pinching, coiling, or slab building.\""
+        },
+        {
+          "text": "from scratch",
+          "depth": 2,
+          "name": "from scratch"
+        },
+        {
+          "text": "from the very beginning, without using anything already made",
+          "depth": 2,
+          "name": "from the very beginning, without using anything already made"
+        },
+        {
+          "text": "\"She made the vase from scratch — starting with raw clay, then throwing, trimming, and glazing it herself.\"",
+          "depth": 2,
+          "name": "\"She made the vase from scratch — starting with raw clay, then throwing, trimming, and glazing it herself.\""
+        },
+        {
+          "text": "put the finishing touches on",
+          "depth": 2,
+          "name": "put the finishing touches on"
+        },
+        {
+          "text": "add the final details to complete something",
+          "depth": 2,
+          "name": "add the final details to complete something"
+        },
+        {
+          "text": "\"She put the finishing touches on the bowl with an underglaze pattern and a stamp decoration.\"",
+          "depth": 2,
+          "name": "\"She put the finishing touches on the bowl with an underglaze pattern and a stamp decoration.\""
+        },
+        {
+          "text": "shape up",
+          "depth": 2,
+          "name": "shape up"
+        },
+        {
+          "text": "improve your behaviour or performance",
+          "depth": 2,
+          "name": "improve your behaviour or performance"
+        },
+        {
+          "text": "\"Your centering technique needs to shape up — the clay keeps wobbling on the potter's wheel.\"",
+          "depth": 2,
+          "name": "\"Your centering technique needs to shape up — the clay keeps wobbling on the potter's wheel.\""
+        },
+        {
+          "text": "break the mould",
+          "depth": 2,
+          "name": "break the mould"
+        },
+        {
+          "text": "do something in a completely new and different way",
+          "depth": 2,
+          "name": "do something in a completely new and different way"
+        },
+        {
+          "text": "\"The artist broke the mould — instead of traditional stoneware, she worked entirely in porcelain with oxide stains.\"",
+          "depth": 2,
+          "name": "\"The artist broke the mould — instead of traditional stoneware, she worked entirely in porcelain with oxide stains.\""
+        },
+        {
+          "text": "have something in the pipeline",
+          "depth": 2,
+          "name": "have something in the pipeline"
+        },
+        {
+          "text": "have something being planned or developed",
+          "depth": 2,
+          "name": "have something being planned or developed"
+        },
+        {
+          "text": "\"The studio has a new glazing workshop in the pipeline — they're testing new glaze colours this week.\"",
+          "depth": 2,
+          "name": "\"The studio has a new glazing workshop in the pipeline — they're testing new glaze colours this week.\""
+        },
+        {
+          "text": "get your hands dirty",
+          "depth": 2,
+          "name": "get your hands dirty"
+        },
+        {
+          "text": "do hard or practical work yourself",
+          "depth": 2,
+          "name": "do hard or practical work yourself"
+        },
+        {
+          "text": "\"Pottery is one craft where you literally have to get your hands dirty — wedging the clay is the first step.\"",
+          "depth": 2,
+          "name": "\"Pottery is one craft where you literally have to get your hands dirty — wedging the clay is the first step.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "549:3544",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: An instructor teaching a beginner how to throw a pot on the potter's wheel",
+          "depth": 1,
+          "name": "Scene: An instructor teaching a beginner how to throw a pot on the potter's wheel"
+        },
+        {
+          "text": "Instructor:",
+          "depth": 2,
+          "name": "Instructor:"
+        },
+        {
+          "text": "Before we start throwing, you need to wedge the clay. Push and fold it to remove air bubbles — like kneading bread.",
+          "depth": 2,
+          "name": "Before we start throwing, you need to wedge the clay. Push and fold it to remove air bubbles — like kneading bread."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "How long do I wedge it?",
+          "depth": 2,
+          "name": "How long do I wedge it?"
+        },
+        {
+          "text": "Instructor:",
+          "depth": 2,
+          "name": "Instructor:"
+        },
+        {
+          "text": "About three minutes. Then we'll centre it on the potter's wheel. Centering is the hardest part — keep your hands steady.",
+          "depth": 2,
+          "name": "About three minutes. Then we'll centre it on the potter's wheel. Centering is the hardest part — keep your hands steady."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "The clay keeps sliding off to one side.",
+          "depth": 2,
+          "name": "The clay keeps sliding off to one side."
+        },
+        {
+          "text": "Instructor:",
+          "depth": 2,
+          "name": "Instructor:"
+        },
+        {
+          "text": "Wet your hands and press firmly. Use the sponge to keep the surface moist. There — it's centred now. Open the middle with your thumbs.",
+          "depth": 2,
+          "name": "Wet your hands and press firmly. Use the sponge to keep the surface moist. There — it's centred now. Open the middle with your thumbs."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "What's the difference between throwing and coiling?",
+          "depth": 2,
+          "name": "What's the difference between throwing and coiling?"
+        },
+        {
+          "text": "Instructor:",
+          "depth": 2,
+          "name": "Instructor:"
+        },
+        {
+          "text": "Throwing uses the wheel. Coiling rolls ropes of clay and stacks them by hand. Slab building uses flat sheets. Pinching shapes with your fingers.",
+          "depth": 2,
+          "name": "Throwing uses the wheel. Coiling rolls ropes of clay and stacks them by hand. Slab building uses flat sheets. Pinching shapes with your fingers."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "What tools do I need for trimming?",
+          "depth": 2,
+          "name": "What tools do I need for trimming?"
+        },
+        {
+          "text": "Instructor:",
+          "depth": 2,
+          "name": "Instructor:"
+        },
+        {
+          "text": "The loop tool and the trimming tool — you'll use them tomorrow when the pot is leather-hard. The wire cutter separates it from the wheel.",
+          "depth": 2,
+          "name": "The loop tool and the trimming tool — you'll use them tomorrow when the pot is leather-hard. The wire cutter separates it from the wheel."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "And then we glaze it?",
+          "depth": 2,
+          "name": "And then we glaze it?"
+        },
+        {
+          "text": "Instructor:",
+          "depth": 2,
+          "name": "Instructor:"
+        },
+        {
+          "text": "After the first firing. You'll choose a glaze colour, maybe add an underglaze pattern or an oxide wash. The stamp can add texture too.",
+          "depth": 2,
+          "name": "After the first firing. You'll choose a glaze colour, maybe add an underglaze pattern or an oxide wash. The stamp can add texture too."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "549:3582",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"She made a very beautiful pottery at the studio.\"",
+          "depth": 2,
+          "name": "❌ \"She made a very beautiful pottery at the studio.\""
+        },
+        {
+          "text": "✅ \"She made a very beautiful piece of pottery at the studio.\" / \"She made a beautiful pot/bowl/vase.\"",
+          "depth": 2,
+          "name": "✅ \"She made a very beautiful piece of pottery at the studio.\" / \"She made a beautiful pot/bowl/vase.\""
+        },
+        {
+          "text": "'Pottery' is uncountable when referring to the craft or the objects collectively: 'She studies pottery.' 'The shelf is full of pottery.' For individual items, say 'a piece of pottery', 'a pot', 'a bowl', 'a vase.' Never 'a pottery' for a single item.",
+          "depth": 2,
+          "name": "'Pottery' is uncountable when referring to the craft or the objects collectively: 'She studies pottery.' 'The shelf is full of pottery.' For individual items, say 'a piece of pottery', 'a pot', 'a bowl', 'a vase.' Never 'a pottery' for a single item."
+        },
+        {
+          "text": "❌ \"The kiln is very hot. You mustn't to touch it.\"",
+          "depth": 2,
+          "name": "❌ \"The kiln is very hot. You mustn't to touch it.\""
+        },
+        {
+          "text": "✅ \"The kiln is very hot. You mustn't touch it.\"",
+          "depth": 2,
+          "name": "✅ \"The kiln is very hot. You mustn't touch it.\""
+        },
+        {
+          "text": "'Mustn't' + bare infinitive — no 'to.' 'You mustn't touch it.' 'You mustn't open the door.' All modals follow this rule: can, must, should, will + verb (no 'to'). 'You must wait.' 'You shouldn't rush.'",
+          "depth": 2,
+          "name": "'Mustn't' + bare infinitive — no 'to.' 'You mustn't touch it.' 'You mustn't open the door.' All modals follow this rule: can, must, should, will + verb (no 'to'). 'You must wait.' 'You shouldn't rush.'"
+        },
+        {
+          "text": "❌ \"I have been making pottery since three months.\"",
+          "depth": 2,
+          "name": "❌ \"I have been making pottery since three months.\""
+        },
+        {
+          "text": "✅ \"I have been making pottery for three months.\"",
+          "depth": 2,
+          "name": "✅ \"I have been making pottery for three months.\""
+        },
+        {
+          "text": "'For' + duration: 'for three months', 'for two years.' 'Since' + point in time: 'since January', 'since last summer.' 'I have been learning pottery for three months.' 'I have been coming here since September.'",
+          "depth": 2,
+          "name": "'For' + duration: 'for three months', 'for two years.' 'Since' + point in time: 'since January', 'since last summer.' 'I have been learning pottery for three months.' 'I have been coming here since September.'"
+        },
+        {
+          "text": "❌ \"The clay needs to dry before it will be fired.\"",
+          "depth": 2,
+          "name": "❌ \"The clay needs to dry before it will be fired.\""
+        },
+        {
+          "text": "✅ \"The clay needs to dry before it is/can be fired.\"",
+          "depth": 2,
+          "name": "✅ \"The clay needs to dry before it is/can be fired.\""
+        },
+        {
+          "text": "After 'before', use present simple for future meaning: 'before it is fired', 'before it dries.' Using 'will' after 'before' is redundant because 'before' already establishes the time relationship. Same rule for 'after', 'when', 'until', 'as soon as': 'After it dries, I will glaze it.'",
+          "depth": 2,
+          "name": "After 'before', use present simple for future meaning: 'before it is fired', 'before it dries.' Using 'will' after 'before' is redundant because 'before' already establishes the time relationship. Same rule for 'after', 'when', 'until', 'as soon as': 'After it dries, I will glaze it.'"
+        },
+        {
+          "text": "❌ \"She is very good in making pottery. She has a natural talent.\"",
+          "depth": 2,
+          "name": "❌ \"She is very good in making pottery. She has a natural talent.\""
+        },
+        {
+          "text": "✅ \"She is very good at making pottery. She has a natural talent.\"",
+          "depth": 2,
+          "name": "✅ \"She is very good at making pottery. She has a natural talent.\""
+        },
+        {
+          "text": "'Good at + noun/-ing': 'good at pottery', 'good at making.' Never 'good in.' Also: 'bad at', 'brilliant at', 'terrible at.' The preposition 'at' is fixed with ability adjectives in English.",
+          "depth": 2,
+          "name": "'Good at + noun/-ing': 'good at pottery', 'good at making.' Never 'good in.' Also: 'bad at', 'brilliant at', 'terrible at.' The preposition 'at' is fixed with ability adjectives in English."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "549:3606",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how pottery and craft vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how pottery and craft vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "clay",
+          "depth": 2,
+          "name": "clay"
+        },
+        {
+          "text": "clay",
+          "depth": 2,
+          "name": "clay"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "clay / clayey",
+          "depth": 2,
+          "name": "clay / clayey"
+        },
+        {
+          "text": "mould",
+          "depth": 2,
+          "name": "mould"
+        },
+        {
+          "text": "mould / moulding",
+          "depth": 2,
+          "name": "mould / moulding"
+        },
+        {
+          "text": "mould",
+          "depth": 2,
+          "name": "mould"
+        },
+        {
+          "text": "moulded",
+          "depth": 2,
+          "name": "moulded"
+        },
+        {
+          "text": "glaze",
+          "depth": 2,
+          "name": "glaze"
+        },
+        {
+          "text": "glaze / glazing",
+          "depth": 2,
+          "name": "glaze / glazing"
+        },
+        {
+          "text": "glaze",
+          "depth": 2,
+          "name": "glaze"
+        },
+        {
+          "text": "glazed",
+          "depth": 2,
+          "name": "glazed"
+        },
+        {
+          "text": "fire",
+          "depth": 2,
+          "name": "fire"
+        },
+        {
+          "text": "fire / firing",
+          "depth": 2,
+          "name": "fire / firing"
+        },
+        {
+          "text": "fire",
+          "depth": 2,
+          "name": "fire"
+        },
+        {
+          "text": "fired",
+          "depth": 2,
+          "name": "fired"
+        },
+        {
+          "text": "craft",
+          "depth": 2,
+          "name": "craft"
+        },
+        {
+          "text": "craft / craftsmanship",
+          "depth": 2,
+          "name": "craft / craftsmanship"
+        },
+        {
+          "text": "craft",
+          "depth": 2,
+          "name": "craft"
+        },
+        {
+          "text": "crafted / crafty",
+          "depth": 2,
+          "name": "crafted / crafty"
+        },
+        {
+          "text": "sculpt",
+          "depth": 2,
+          "name": "sculpt"
+        },
+        {
+          "text": "sculpture / sculptor",
+          "depth": 2,
+          "name": "sculpture / sculptor"
+        },
+        {
+          "text": "sculpt",
+          "depth": 2,
+          "name": "sculpt"
+        },
+        {
+          "text": "sculpted",
+          "depth": 2,
+          "name": "sculpted"
+        },
+        {
+          "text": "kiln",
+          "depth": 2,
+          "name": "kiln"
+        },
+        {
+          "text": "kiln",
+          "depth": 2,
+          "name": "kiln"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "kiln-fired",
+          "depth": 2,
+          "name": "kiln-fired"
+        },
+        {
+          "text": "ceramic",
+          "depth": 2,
+          "name": "ceramic"
+        },
+        {
+          "text": "ceramics / ceramicist",
+          "depth": 2,
+          "name": "ceramics / ceramicist"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "ceramic",
+          "depth": 2,
+          "name": "ceramic"
+        },
+        {
+          "text": "carve",
+          "depth": 2,
+          "name": "carve"
+        },
+        {
+          "text": "carving / carver",
+          "depth": 2,
+          "name": "carving / carver"
+        },
+        {
+          "text": "carve",
+          "depth": 2,
+          "name": "carve"
+        },
+        {
+          "text": "carved",
+          "depth": 2,
+          "name": "carved"
+        },
+        {
+          "text": "polish",
+          "depth": 2,
+          "name": "polish"
+        },
+        {
+          "text": "polish",
+          "depth": 2,
+          "name": "polish"
+        },
+        {
+          "text": "polish",
+          "depth": 2,
+          "name": "polish"
+        },
+        {
+          "text": "polished",
+          "depth": 2,
+          "name": "polished"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "549:3666",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The potter prepared the clay by __________ it to remove air bubbles.",
+          "depth": 1,
+          "name": "1. The potter prepared the clay by __________ it to remove air bubbles."
+        },
+        {
+          "text": "2.  __________ is the technique of shaping clay on a spinning wheel.",
+          "depth": 1,
+          "name": "2. __________ is the technique of shaping clay on a spinning wheel."
+        },
+        {
+          "text": "3.  A __________ is a special high-temperature oven used to fire pottery.",
+          "depth": 1,
+          "name": "3. A __________ is a special high-temperature oven used to fire pottery."
+        },
+        {
+          "text": "4.  A __________ is a glass-like coating that makes pottery waterproof and colourful.",
+          "depth": 1,
+          "name": "4. A __________ is a glass-like coating that makes pottery waterproof and colourful."
+        },
+        {
+          "text": "5.  __________ rolls long ropes of clay and stacks them to build walls.",
+          "depth": 1,
+          "name": "5. __________ rolls long ropes of clay and stacks them to build walls."
+        },
+        {
+          "text": "6.  A wire __________ separates the finished piece from the wheel.",
+          "depth": 1,
+          "name": "6. A wire __________ separates the finished piece from the wheel."
+        },
+        {
+          "text": "7.  __________ — liquid clay — is used to join two pieces of clay together.",
+          "depth": 1,
+          "name": "7. __________ — liquid clay — is used to join two pieces of clay together."
+        },
+        {
+          "text": "8.  A pyrometric __________ bends at a specific temperature to show when firing is done.",
+          "depth": 1,
+          "name": "8. A pyrometric __________ bends at a specific temperature to show when firing is done."
+        },
+        {
+          "text": "9.  __________ is smooth, delicate clay used for fine pottery and china.",
+          "depth": 1,
+          "name": "9. __________ is smooth, delicate clay used for fine pottery and china."
+        },
+        {
+          "text": "10. A __________ tool is used for carving decorative patterns into the clay.",
+          "depth": 1,
+          "name": "10. A __________ tool is used for carving decorative patterns into the clay."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. wedging  2. Throwing  3. kiln  4. glaze  5. Coiling  6. cutter  7. Slip  8. cone  9. Porcelain  10. carving",
+          "depth": 2,
+          "name": "1. wedging 2. Throwing 3. kiln 4. glaze 5. Coiling 6. cutter 7. Slip 8. cone 9. Porcelain 10. carving"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "549:3684",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Pottery Traditions",
+          "depth": 2,
+          "name": "Pottery Traditions"
+        },
+        {
+          "text": "Islamic geometric pottery from Iznik (Turkey) and Fez (Morocco) is world-renowned for its intricate blue and white patterns. Chinese porcelain influenced pottery worldwide — 'china' (lowercase) became a synonym for fine ceramics. Japanese raku and wabi-sabi pottery celebrates imperfection.",
+          "depth": 2,
+          "name": "Islamic geometric pottery from Iznik (Turkey) and Fez (Morocco) is world-renowned for its intricate blue and white patterns. Chinese porcelain influenced pottery worldwide — 'china' (lowercase) became a synonym for fine ceramics. Japanese raku and wabi-sabi pottery celebrates imperfection."
+        },
+        {
+          "text": "Pottery vs Ceramics",
+          "depth": 2,
+          "name": "Pottery vs Ceramics"
+        },
+        {
+          "text": "'Pottery' usually refers to objects made from clay on a wheel or by hand. 'Ceramics' is the broader term covering all objects made from clay and fired, including industrial products like tiles and bricks. In everyday English, they are often used interchangeably for artistic work.",
+          "depth": 2,
+          "name": "'Pottery' usually refers to objects made from clay on a wheel or by hand. 'Ceramics' is the broader term covering all objects made from clay and fired, including industrial products like tiles and bricks. In everyday English, they are often used interchangeably for artistic work."
+        },
+        {
+          "text": "The Ghost Scene",
+          "depth": 2,
+          "name": "The Ghost Scene"
+        },
+        {
+          "text": "The 1990 film 'Ghost' features a famous pottery wheel scene that made pottery hugely popular. 'Ghost pottery' or 'doing a Ghost' humorously refers to romantic pottery-making. The film brought the potter's wheel into mainstream pop culture.",
+          "depth": 2,
+          "name": "The 1990 film 'Ghost' features a famous pottery wheel scene that made pottery hugely popular. 'Ghost pottery' or 'doing a Ghost' humorously refers to romantic pottery-making. The film brought the potter's wheel into mainstream pop culture."
+        },
+        {
+          "text": "Mould vs Mold",
+          "depth": 2,
+          "name": "Mould vs Mold"
+        },
+        {
+          "text": "British English: 'mould' (the shape) and 'mould' (the fungus) — same spelling. American English: 'mold' for both. 'To mould' = to shape. 'To break the mould' = to do something original. 'Mouldy' (BrE) / 'Moldy' (AmE) = covered in fungus.",
+          "depth": 2,
+          "name": "British English: 'mould' (the shape) and 'mould' (the fungus) — same spelling. American English: 'mold' for both. 'To mould' = to shape. 'To break the mould' = to do something original. 'Mouldy' (BrE) / 'Moldy' (AmE) = covered in fungus."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "549:3700",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "clay",
+          "depth": 2,
+          "name": "clay"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ pot, modelling ~, ~ soil",
+          "depth": 2,
+          "name": "~ pot, modelling ~, ~ soil"
+        },
+        {
+          "text": "kiln",
+          "depth": 2,
+          "name": "kiln"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ temperature, electric ~, ~ firing",
+          "depth": 2,
+          "name": "~ temperature, electric ~, ~ firing"
+        },
+        {
+          "text": "glaze",
+          "depth": 2,
+          "name": "glaze"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ finish, ~ colour, apply a ~",
+          "depth": 2,
+          "name": "~ finish, ~ colour, apply a ~"
+        },
+        {
+          "text": "wheel",
+          "depth": 2,
+          "name": "wheel"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "potter's ~, ~ throwing, ~ speed",
+          "depth": 2,
+          "name": "potter's ~, ~ throwing, ~ speed"
+        },
+        {
+          "text": "porcelain",
+          "depth": 2,
+          "name": "porcelain"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "fine ~, ~ vase, ~ figurine",
+          "depth": 2,
+          "name": "fine ~, ~ vase, ~ figurine"
+        },
+        {
+          "text": "coil",
+          "depth": 2,
+          "name": "coil"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ pot, ~ technique, ~ building",
+          "depth": 2,
+          "name": "~ pot, ~ technique, ~ building"
+        },
+        {
+          "text": "sculpture",
+          "depth": 2,
+          "name": "sculpture"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "clay ~, ~ studio, ~ exhibit",
+          "depth": 2,
+          "name": "clay ~, ~ studio, ~ exhibit"
+        },
+        {
+          "text": "mould",
+          "depth": 2,
+          "name": "mould"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ shape, plaster ~, ~ cast",
+          "depth": 2,
+          "name": "~ shape, plaster ~, ~ cast"
+        },
+        {
+          "text": "vase",
+          "depth": 2,
+          "name": "vase"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "flower ~, ceramic ~, ~ shape",
+          "depth": 2,
+          "name": "flower ~, ceramic ~, ~ shape"
+        },
+        {
+          "text": "bisque",
+          "depth": 2,
+          "name": "bisque"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "~ firing, ~ ware, ~ stage",
+          "depth": 2,
+          "name": "~ firing, ~ ware, ~ stage"
+        }
+      ]
+    }
+  }
+}

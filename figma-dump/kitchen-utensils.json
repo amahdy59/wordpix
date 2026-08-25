@@ -1,0 +1,489 @@
+{
+  "unitId": "kitchen-utensils",
+  "name": "Kitchen Utensils",
+  "subtopics": [
+    {
+      "id": "cutting-tools",
+      "title": "Cutting Tools",
+      "wordIds": [
+        "chef-s-knife",
+        "paring-knife",
+        "bread-knife",
+        "cleaver",
+        "scissors",
+        "peeler",
+        "grater",
+        "mandoline",
+        "cutting-board",
+        "sharpener"
+      ]
+    },
+    {
+      "id": "cookware",
+      "title": "Cookware",
+      "wordIds": [
+        "frying-pan",
+        "saucepan",
+        "stock-pot",
+        "wok",
+        "dutch-oven",
+        "skillet",
+        "baking-sheet",
+        "casserole-dish",
+        "roasting-pan",
+        "griddle"
+      ]
+    },
+    {
+      "id": "utensils",
+      "title": "Utensils",
+      "wordIds": [
+        "spatula",
+        "ladle",
+        "tongs",
+        "whisk",
+        "wooden-spoon",
+        "slotted-spoon",
+        "rolling-pin",
+        "colander",
+        "strainer",
+        "funnel"
+      ]
+    },
+    {
+      "id": "measuring-tools",
+      "title": "Measuring Tools",
+      "wordIds": [
+        "measuring-cup",
+        "measuring-spoon",
+        "kitchen-scale",
+        "thermometer",
+        "timer",
+        "liquid-measure",
+        "dry-measure",
+        "teaspoon",
+        "tablespoon",
+        "ounce-glass"
+      ]
+    },
+    {
+      "id": "small-appliances",
+      "title": "Small Appliances",
+      "wordIds": [
+        "blender",
+        "food-processor",
+        "mixer",
+        "toaster",
+        "kettle",
+        "rice-cooker",
+        "slow-cooker",
+        "waffle-iron",
+        "juicer",
+        "coffee-maker"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "chef-s-knife",
+      "label": "Chef's Knife",
+      "ipa": "/ʃɛfs naɪf/",
+      "cefr": "B1",
+      "imageNodeId": "467:6032"
+    },
+    {
+      "kind": "card",
+      "id": "paring-knife",
+      "label": "Paring Knife",
+      "ipa": "/ˈpɛərɪŋ naɪf/",
+      "cefr": "B1",
+      "imageNodeId": "467:6036"
+    },
+    {
+      "kind": "card",
+      "id": "bread-knife",
+      "label": "Bread Knife",
+      "ipa": "/brɛd naɪf/",
+      "cefr": "B1",
+      "imageNodeId": "467:6040"
+    },
+    {
+      "kind": "card",
+      "id": "cleaver",
+      "label": "Cleaver",
+      "ipa": "/ˈkliːvər/",
+      "cefr": "A2",
+      "imageNodeId": "467:6044"
+    },
+    {
+      "kind": "card",
+      "id": "scissors",
+      "label": "Scissors",
+      "ipa": "/ˈsɪzərz/",
+      "cefr": "A2",
+      "imageNodeId": "467:6048"
+    },
+    {
+      "kind": "card",
+      "id": "peeler",
+      "label": "Peeler",
+      "ipa": "/ˈpiːlər/",
+      "cefr": "A2",
+      "imageNodeId": "467:6052"
+    },
+    {
+      "kind": "card",
+      "id": "grater",
+      "label": "Grater",
+      "ipa": "/ˈɡreɪtər/",
+      "cefr": "A2",
+      "imageNodeId": "467:6056"
+    },
+    {
+      "kind": "card",
+      "id": "mandoline",
+      "label": "Mandoline",
+      "ipa": "/ˈmændəˌlɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:6060"
+    },
+    {
+      "kind": "card",
+      "id": "cutting-board",
+      "label": "Cutting Board",
+      "ipa": "/ˈkʌtɪŋ bɔːrd/",
+      "cefr": "B1",
+      "imageNodeId": "467:6064"
+    },
+    {
+      "kind": "card",
+      "id": "sharpener",
+      "label": "Sharpener",
+      "ipa": "/ˈʃɑːrpənər/",
+      "cefr": "A2",
+      "imageNodeId": "467:6068"
+    },
+    {
+      "kind": "card",
+      "id": "frying-pan",
+      "label": "Frying Pan",
+      "ipa": "/ˈfraɪɪŋ pæn/",
+      "cefr": "B1",
+      "imageNodeId": "467:6077"
+    },
+    {
+      "kind": "card",
+      "id": "saucepan",
+      "label": "Saucepan",
+      "ipa": "/ˈsɔːsˌpæn/",
+      "cefr": "A2",
+      "imageNodeId": "467:6081"
+    },
+    {
+      "kind": "card",
+      "id": "stock-pot",
+      "label": "Stock Pot",
+      "ipa": "/stɒk pɒt/",
+      "cefr": "B1",
+      "imageNodeId": "467:6085"
+    },
+    {
+      "kind": "card",
+      "id": "wok",
+      "label": "Wok",
+      "ipa": "/wɒk/",
+      "cefr": "A2",
+      "imageNodeId": "467:6089"
+    },
+    {
+      "kind": "card",
+      "id": "dutch-oven",
+      "label": "Dutch Oven",
+      "ipa": "/dʌtʃ ˈʌvən/",
+      "cefr": "B1",
+      "imageNodeId": "467:6093"
+    },
+    {
+      "kind": "card",
+      "id": "skillet",
+      "label": "Skillet",
+      "ipa": "/ˈskɪlɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:6097"
+    },
+    {
+      "kind": "card",
+      "id": "baking-sheet",
+      "label": "Baking Sheet",
+      "ipa": "/ˈbeɪkɪŋ ʃiːt/",
+      "cefr": "B1",
+      "imageNodeId": "467:6101"
+    },
+    {
+      "kind": "card",
+      "id": "casserole-dish",
+      "label": "Casserole Dish",
+      "ipa": "/ˈkæsəˌroʊl dɪʃ/",
+      "cefr": "B1",
+      "imageNodeId": "467:6105"
+    },
+    {
+      "kind": "card",
+      "id": "roasting-pan",
+      "label": "Roasting Pan",
+      "ipa": "/ˈroʊstɪŋ pæn/",
+      "cefr": "B1",
+      "imageNodeId": "467:6109"
+    },
+    {
+      "kind": "card",
+      "id": "griddle",
+      "label": "Griddle",
+      "ipa": "/ˈɡrɪdəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:6113"
+    },
+    {
+      "kind": "card",
+      "id": "spatula",
+      "label": "Spatula",
+      "ipa": "/ˈspætʃʊlə/",
+      "cefr": "A2",
+      "imageNodeId": "467:6122"
+    },
+    {
+      "kind": "card",
+      "id": "ladle",
+      "label": "Ladle",
+      "ipa": "/ˈleɪdəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:6126"
+    },
+    {
+      "kind": "card",
+      "id": "tongs",
+      "label": "Tongs",
+      "ipa": "/tɒŋz/",
+      "cefr": "A2",
+      "imageNodeId": "467:6130"
+    },
+    {
+      "kind": "card",
+      "id": "whisk",
+      "label": "Whisk",
+      "ipa": "/wɪsk/",
+      "cefr": "A2",
+      "imageNodeId": "467:6134"
+    },
+    {
+      "kind": "card",
+      "id": "wooden-spoon",
+      "label": "Wooden Spoon",
+      "ipa": "/ˈwʊdən spuːn/",
+      "cefr": "B1",
+      "imageNodeId": "467:6138"
+    },
+    {
+      "kind": "card",
+      "id": "slotted-spoon",
+      "label": "Slotted Spoon",
+      "ipa": "/ˈslɒtɪd spuːn/",
+      "cefr": "B1",
+      "imageNodeId": "467:6142"
+    },
+    {
+      "kind": "card",
+      "id": "rolling-pin",
+      "label": "Rolling Pin",
+      "ipa": "/ˈroʊlɪŋ pɪn/",
+      "cefr": "B1",
+      "imageNodeId": "467:6146"
+    },
+    {
+      "kind": "card",
+      "id": "colander",
+      "label": "Colander",
+      "ipa": "/ˈkɒləndər/",
+      "cefr": "A2",
+      "imageNodeId": "467:6150"
+    },
+    {
+      "kind": "card",
+      "id": "strainer",
+      "label": "Strainer",
+      "ipa": "/ˈstreɪnər/",
+      "cefr": "A2",
+      "imageNodeId": "467:6154"
+    },
+    {
+      "kind": "card",
+      "id": "funnel",
+      "label": "Funnel",
+      "ipa": "/ˈfʌnəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:6158"
+    },
+    {
+      "kind": "card",
+      "id": "measuring-cup",
+      "label": "Measuring Cup",
+      "ipa": "/ˈmɛʒərɪŋ kʌp/",
+      "cefr": "B1",
+      "imageNodeId": "467:6167"
+    },
+    {
+      "kind": "card",
+      "id": "measuring-spoon",
+      "label": "Measuring Spoon",
+      "ipa": "/ˈmɛʒərɪŋ spuːn/",
+      "cefr": "B2",
+      "imageNodeId": "467:6171"
+    },
+    {
+      "kind": "card",
+      "id": "kitchen-scale",
+      "label": "Kitchen Scale",
+      "ipa": "/ˈkɪtʃɪn skeɪl/",
+      "cefr": "B1",
+      "imageNodeId": "467:6175"
+    },
+    {
+      "kind": "card",
+      "id": "thermometer",
+      "label": "Thermometer",
+      "ipa": "/θərˈmɒmɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "467:6179"
+    },
+    {
+      "kind": "card",
+      "id": "timer",
+      "label": "Timer",
+      "ipa": "/ˈtaɪmər/",
+      "cefr": "A2",
+      "imageNodeId": "467:6183"
+    },
+    {
+      "kind": "card",
+      "id": "liquid-measure",
+      "label": "Liquid Measure",
+      "ipa": "/ˈlɪkwɪd ˈmɛʒər/",
+      "cefr": "B1",
+      "imageNodeId": "467:6187"
+    },
+    {
+      "kind": "card",
+      "id": "dry-measure",
+      "label": "Dry Measure",
+      "ipa": "/draɪ ˈmɛʒər/",
+      "cefr": "B1",
+      "imageNodeId": "467:6191"
+    },
+    {
+      "kind": "card",
+      "id": "teaspoon",
+      "label": "Teaspoon",
+      "ipa": "/ˈtiːˌspuːn/",
+      "cefr": "A2",
+      "imageNodeId": "467:6195"
+    },
+    {
+      "kind": "card",
+      "id": "tablespoon",
+      "label": "Tablespoon",
+      "ipa": "/ˈteɪbəlˌspuːn/",
+      "cefr": "B1",
+      "imageNodeId": "467:6199"
+    },
+    {
+      "kind": "card",
+      "id": "ounce-glass",
+      "label": "Ounce Glass",
+      "ipa": "/aʊns ɡlæs/",
+      "cefr": "B1",
+      "imageNodeId": "467:6203"
+    },
+    {
+      "kind": "card",
+      "id": "blender",
+      "label": "Blender",
+      "ipa": "/ˈblɛndər/",
+      "cefr": "A2",
+      "imageNodeId": "467:6212"
+    },
+    {
+      "kind": "card",
+      "id": "food-processor",
+      "label": "Food Processor",
+      "ipa": "/fuːd ˈprɒsɛsər/",
+      "cefr": "B1",
+      "imageNodeId": "467:6216"
+    },
+    {
+      "kind": "card",
+      "id": "mixer",
+      "label": "Mixer",
+      "ipa": "/ˈmɪksər/",
+      "cefr": "A2",
+      "imageNodeId": "467:6220"
+    },
+    {
+      "kind": "card",
+      "id": "toaster",
+      "label": "Toaster",
+      "ipa": "/ˈtoʊstər/",
+      "cefr": "A2",
+      "imageNodeId": "467:6224"
+    },
+    {
+      "kind": "card",
+      "id": "kettle",
+      "label": "Kettle",
+      "ipa": "/ˈkɛtəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:6228"
+    },
+    {
+      "kind": "card",
+      "id": "rice-cooker",
+      "label": "Rice Cooker",
+      "ipa": "/raɪs ˈkʊkər/",
+      "cefr": "B1",
+      "imageNodeId": "467:6232"
+    },
+    {
+      "kind": "card",
+      "id": "slow-cooker",
+      "label": "Slow Cooker",
+      "ipa": "/sloʊ ˈkʊkər/",
+      "cefr": "B1",
+      "imageNodeId": "467:6236"
+    },
+    {
+      "kind": "card",
+      "id": "waffle-iron",
+      "label": "Waffle Iron",
+      "ipa": "/ˈwɒfəl ˈaɪərn/",
+      "cefr": "B1",
+      "imageNodeId": "467:6240"
+    },
+    {
+      "kind": "card",
+      "id": "juicer",
+      "label": "Juicer",
+      "ipa": "/ˈdʒuːsər/",
+      "cefr": "A2",
+      "imageNodeId": "467:6244"
+    },
+    {
+      "kind": "card",
+      "id": "coffee-maker",
+      "label": "Coffee Maker",
+      "ipa": "/ˈkɒfi ˈmeɪkər/",
+      "cefr": "B1",
+      "imageNodeId": "467:6248"
+    }
+  ],
+  "materials": null
+}

@@ -1,0 +1,489 @@
+{
+  "unitId": "personality-character",
+  "name": "Personality & Character",
+  "subtopics": [
+    {
+      "id": "positive-traits",
+      "title": "Positive Traits",
+      "wordIds": [
+        "kind",
+        "generous",
+        "honest",
+        "brave",
+        "patient",
+        "loyal",
+        "humble",
+        "cheerful",
+        "reliable",
+        "compassionate"
+      ]
+    },
+    {
+      "id": "challenging-traits",
+      "title": "Challenging Traits",
+      "wordIds": [
+        "stubborn",
+        "impatient",
+        "shy",
+        "moody",
+        "selfish",
+        "lazy",
+        "reckless",
+        "jealous",
+        "arrogant",
+        "pessimistic"
+      ]
+    },
+    {
+      "id": "social-traits",
+      "title": "Social Traits",
+      "wordIds": [
+        "friendly",
+        "outgoing",
+        "introverted",
+        "extroverted",
+        "talkative",
+        "quiet",
+        "charismatic",
+        "charming",
+        "sociable",
+        "reserved"
+      ]
+    },
+    {
+      "id": "work-traits",
+      "title": "Work Traits",
+      "wordIds": [
+        "hardworking",
+        "creative",
+        "organized",
+        "ambitious",
+        "punctual",
+        "determined",
+        "dedicated",
+        "innovative",
+        "focused",
+        "resourceful"
+      ]
+    },
+    {
+      "id": "emotional-traits",
+      "title": "Emotional Traits",
+      "wordIds": [
+        "sensitive",
+        "empathetic",
+        "calm",
+        "anxious",
+        "optimistic",
+        "confident",
+        "insecure",
+        "passionate",
+        "thoughtful",
+        "dramatic"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "kind",
+      "label": "Kind",
+      "ipa": "/kaɪnd/",
+      "cefr": "A2",
+      "imageNodeId": "467:2672"
+    },
+    {
+      "kind": "card",
+      "id": "generous",
+      "label": "Generous",
+      "ipa": "/ˈdʒɛnərəs/",
+      "cefr": "A2",
+      "imageNodeId": "467:2676"
+    },
+    {
+      "kind": "card",
+      "id": "honest",
+      "label": "Honest",
+      "ipa": "/ˈɒnɪst/",
+      "cefr": "A2",
+      "imageNodeId": "467:2680"
+    },
+    {
+      "kind": "card",
+      "id": "brave",
+      "label": "Brave",
+      "ipa": "/breɪv/",
+      "cefr": "A2",
+      "imageNodeId": "467:2684"
+    },
+    {
+      "kind": "card",
+      "id": "patient",
+      "label": "Patient",
+      "ipa": "/ˈpeɪʃənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:2688"
+    },
+    {
+      "kind": "card",
+      "id": "loyal",
+      "label": "Loyal",
+      "ipa": "/ˈlɔɪəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:2692"
+    },
+    {
+      "kind": "card",
+      "id": "humble",
+      "label": "Humble",
+      "ipa": "/ˈhʌmbəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:2696"
+    },
+    {
+      "kind": "card",
+      "id": "cheerful",
+      "label": "Cheerful",
+      "ipa": "/ˈtʃɪərfəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:2700"
+    },
+    {
+      "kind": "card",
+      "id": "reliable",
+      "label": "Reliable",
+      "ipa": "/rɪˈlaɪəbəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:2704"
+    },
+    {
+      "kind": "card",
+      "id": "compassionate",
+      "label": "Compassionate",
+      "ipa": "/kəmˈpæʃənɪt/",
+      "cefr": "B1",
+      "imageNodeId": "467:2708"
+    },
+    {
+      "kind": "card",
+      "id": "stubborn",
+      "label": "Stubborn",
+      "ipa": "/ˈstʌbərn/",
+      "cefr": "A2",
+      "imageNodeId": "467:2717"
+    },
+    {
+      "kind": "card",
+      "id": "impatient",
+      "label": "Impatient",
+      "ipa": "/ɪmˈpeɪʃənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:2721"
+    },
+    {
+      "kind": "card",
+      "id": "shy",
+      "label": "Shy",
+      "ipa": "/ʃaɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:2725"
+    },
+    {
+      "kind": "card",
+      "id": "moody",
+      "label": "Moody",
+      "ipa": "/ˈmuːdi/",
+      "cefr": "A2",
+      "imageNodeId": "467:2729"
+    },
+    {
+      "kind": "card",
+      "id": "selfish",
+      "label": "Selfish",
+      "ipa": "/ˈsɛlfɪʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:2733"
+    },
+    {
+      "kind": "card",
+      "id": "lazy",
+      "label": "Lazy",
+      "ipa": "/ˈleɪzi/",
+      "cefr": "A2",
+      "imageNodeId": "467:2737"
+    },
+    {
+      "kind": "card",
+      "id": "reckless",
+      "label": "Reckless",
+      "ipa": "/ˈrɛkləs/",
+      "cefr": "A2",
+      "imageNodeId": "467:2741"
+    },
+    {
+      "kind": "card",
+      "id": "jealous",
+      "label": "Jealous",
+      "ipa": "/ˈdʒɛləs/",
+      "cefr": "A2",
+      "imageNodeId": "467:2745"
+    },
+    {
+      "kind": "card",
+      "id": "arrogant",
+      "label": "Arrogant",
+      "ipa": "/ˈærəɡənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:2749"
+    },
+    {
+      "kind": "card",
+      "id": "pessimistic",
+      "label": "Pessimistic",
+      "ipa": "/ˌpɛsɪˈmɪstɪk/",
+      "cefr": "B1",
+      "imageNodeId": "467:2753"
+    },
+    {
+      "kind": "card",
+      "id": "friendly",
+      "label": "Friendly",
+      "ipa": "/ˈfrɛndli/",
+      "cefr": "A2",
+      "imageNodeId": "467:2762"
+    },
+    {
+      "kind": "card",
+      "id": "outgoing",
+      "label": "Outgoing",
+      "ipa": "/ˈaʊtˌɡoʊɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:2766"
+    },
+    {
+      "kind": "card",
+      "id": "introverted",
+      "label": "Introverted",
+      "ipa": "/ˈɪntrəˌvɜːrtɪd/",
+      "cefr": "B1",
+      "imageNodeId": "467:2770"
+    },
+    {
+      "kind": "card",
+      "id": "extroverted",
+      "label": "Extroverted",
+      "ipa": "/ˈɛkstrəˌvɜːrtɪd/",
+      "cefr": "B1",
+      "imageNodeId": "467:2774"
+    },
+    {
+      "kind": "card",
+      "id": "talkative",
+      "label": "Talkative",
+      "ipa": "/ˈtɔːkətɪv/",
+      "cefr": "A2",
+      "imageNodeId": "467:2778"
+    },
+    {
+      "kind": "card",
+      "id": "quiet",
+      "label": "Quiet",
+      "ipa": "/ˈkwaɪət/",
+      "cefr": "A2",
+      "imageNodeId": "467:2782"
+    },
+    {
+      "kind": "card",
+      "id": "charismatic",
+      "label": "Charismatic",
+      "ipa": "/ˌkærɪzˈmætɪk/",
+      "cefr": "B1",
+      "imageNodeId": "467:2786"
+    },
+    {
+      "kind": "card",
+      "id": "charming",
+      "label": "Charming",
+      "ipa": "/ˈtʃɑːrmɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:2790"
+    },
+    {
+      "kind": "card",
+      "id": "sociable",
+      "label": "Sociable",
+      "ipa": "/ˈsoʊʃəbəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:2794"
+    },
+    {
+      "kind": "card",
+      "id": "reserved",
+      "label": "Reserved",
+      "ipa": "/rɪˈzɜːrvd/",
+      "cefr": "A2",
+      "imageNodeId": "467:2798"
+    },
+    {
+      "kind": "card",
+      "id": "hardworking",
+      "label": "Hardworking",
+      "ipa": "/ˈhɑːrdˌwɜːrkɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "467:2807"
+    },
+    {
+      "kind": "card",
+      "id": "creative",
+      "label": "Creative",
+      "ipa": "/kriˈeɪtɪv/",
+      "cefr": "A2",
+      "imageNodeId": "467:2811"
+    },
+    {
+      "kind": "card",
+      "id": "organized",
+      "label": "Organized",
+      "ipa": "/ˈɔːrɡəˌnaɪzd/",
+      "cefr": "A2",
+      "imageNodeId": "467:2815"
+    },
+    {
+      "kind": "card",
+      "id": "ambitious",
+      "label": "Ambitious",
+      "ipa": "/æmˈbɪʃəs/",
+      "cefr": "A2",
+      "imageNodeId": "467:2819"
+    },
+    {
+      "kind": "card",
+      "id": "punctual",
+      "label": "Punctual",
+      "ipa": "/ˈpʌŋktʃuəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:2823"
+    },
+    {
+      "kind": "card",
+      "id": "determined",
+      "label": "Determined",
+      "ipa": "/dɪˈtɜːrmɪnd/",
+      "cefr": "B1",
+      "imageNodeId": "467:2827"
+    },
+    {
+      "kind": "card",
+      "id": "dedicated",
+      "label": "Dedicated",
+      "ipa": "/ˈdɛdɪˌkeɪtɪd/",
+      "cefr": "A2",
+      "imageNodeId": "467:2831"
+    },
+    {
+      "kind": "card",
+      "id": "innovative",
+      "label": "Innovative",
+      "ipa": "/ˈɪnəˌveɪtɪv/",
+      "cefr": "B1",
+      "imageNodeId": "467:2835"
+    },
+    {
+      "kind": "card",
+      "id": "focused",
+      "label": "Focused",
+      "ipa": "/ˈfoʊkəst/",
+      "cefr": "A2",
+      "imageNodeId": "467:2839"
+    },
+    {
+      "kind": "card",
+      "id": "resourceful",
+      "label": "Resourceful",
+      "ipa": "/rɪˈsɔːrsfəl/",
+      "cefr": "B1",
+      "imageNodeId": "467:2843"
+    },
+    {
+      "kind": "card",
+      "id": "sensitive",
+      "label": "Sensitive",
+      "ipa": "/ˈsɛnsɪtɪv/",
+      "cefr": "A2",
+      "imageNodeId": "467:2852"
+    },
+    {
+      "kind": "card",
+      "id": "empathetic",
+      "label": "Empathetic",
+      "ipa": "/ˌɛmpəˈθɛtɪk/",
+      "cefr": "B1",
+      "imageNodeId": "467:2856"
+    },
+    {
+      "kind": "card",
+      "id": "calm",
+      "label": "Calm",
+      "ipa": "/kɑːm/",
+      "cefr": "A2",
+      "imageNodeId": "467:2860"
+    },
+    {
+      "kind": "card",
+      "id": "anxious",
+      "label": "Anxious",
+      "ipa": "/ˈæŋkʃəs/",
+      "cefr": "A2",
+      "imageNodeId": "467:2864"
+    },
+    {
+      "kind": "card",
+      "id": "optimistic",
+      "label": "Optimistic",
+      "ipa": "/ˌɒptɪˈmɪstɪk/",
+      "cefr": "B1",
+      "imageNodeId": "467:2868"
+    },
+    {
+      "kind": "card",
+      "id": "confident",
+      "label": "Confident",
+      "ipa": "/ˈkɒnfɪdənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:2872"
+    },
+    {
+      "kind": "card",
+      "id": "insecure",
+      "label": "Insecure",
+      "ipa": "/ˌɪnsɪˈkjʊər/",
+      "cefr": "A2",
+      "imageNodeId": "467:2876"
+    },
+    {
+      "kind": "card",
+      "id": "passionate",
+      "label": "Passionate",
+      "ipa": "/ˈpæʃənɪt/",
+      "cefr": "B1",
+      "imageNodeId": "467:2880"
+    },
+    {
+      "kind": "card",
+      "id": "thoughtful",
+      "label": "Thoughtful",
+      "ipa": "/ˈθɔːtfəl/",
+      "cefr": "B1",
+      "imageNodeId": "467:2884"
+    },
+    {
+      "kind": "card",
+      "id": "dramatic",
+      "label": "Dramatic",
+      "ipa": "/drəˈmætɪk/",
+      "cefr": "A2",
+      "imageNodeId": "467:2888"
+    }
+  ],
+  "materials": null
+}

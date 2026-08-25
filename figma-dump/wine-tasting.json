@@ -1,0 +1,489 @@
+{
+  "unitId": "wine-tasting",
+  "name": "Wine Tasting",
+  "subtopics": [
+    {
+      "id": "visual-assessment",
+      "title": "Visual Assessment",
+      "wordIds": [
+        "color",
+        "clarity",
+        "viscosity",
+        "legs",
+        "rim",
+        "opacity",
+        "hue",
+        "depth",
+        "brilliance",
+        "sediment"
+      ]
+    },
+    {
+      "id": "aroma-bouquet",
+      "title": "Aroma & Bouquet",
+      "wordIds": [
+        "aroma",
+        "bouquet",
+        "nose",
+        "floral",
+        "fruity",
+        "earthy",
+        "spicy",
+        "herbaceous",
+        "mineral",
+        "oaky"
+      ]
+    },
+    {
+      "id": "palate",
+      "title": "Palate",
+      "wordIds": [
+        "body",
+        "tannin",
+        "acidity",
+        "sweetness",
+        "finish",
+        "balance",
+        "complexity",
+        "structure",
+        "mouthfeel",
+        "length"
+      ]
+    },
+    {
+      "id": "tasting-terms",
+      "title": "Tasting Terms",
+      "wordIds": [
+        "dry",
+        "sweet",
+        "crisp",
+        "smooth",
+        "velvety",
+        "bold",
+        "delicate",
+        "rich",
+        "light",
+        "full-bodied"
+      ]
+    },
+    {
+      "id": "food-pairing",
+      "title": "Food Pairing",
+      "wordIds": [
+        "cheese-pairing",
+        "meat-pairing",
+        "seafood-pairing",
+        "dessert-pairing",
+        "appetizer",
+        "main-course",
+        "palate-cleanser",
+        "tasting-menu",
+        "wine-flight",
+        "cheese-board"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "color",
+      "label": "Color",
+      "ipa": "/ˈkʌlər/",
+      "cefr": "B2",
+      "imageNodeId": "467:17076"
+    },
+    {
+      "kind": "card",
+      "id": "clarity",
+      "label": "Clarity",
+      "ipa": "/ˈklærɪti/",
+      "cefr": "B2",
+      "imageNodeId": "467:17080"
+    },
+    {
+      "kind": "card",
+      "id": "viscosity",
+      "label": "Viscosity",
+      "ipa": "/vɪˈskɒsɪti/",
+      "cefr": "B2",
+      "imageNodeId": "467:17084"
+    },
+    {
+      "kind": "card",
+      "id": "legs",
+      "label": "Legs",
+      "ipa": "/lɛɡz/",
+      "cefr": "B2",
+      "imageNodeId": "467:17088"
+    },
+    {
+      "kind": "card",
+      "id": "rim",
+      "label": "Rim",
+      "ipa": "/rɪm/",
+      "cefr": "B2",
+      "imageNodeId": "467:17092"
+    },
+    {
+      "kind": "card",
+      "id": "opacity",
+      "label": "Opacity",
+      "ipa": "/oʊˈpæsɪti/",
+      "cefr": "B2",
+      "imageNodeId": "467:17096"
+    },
+    {
+      "kind": "card",
+      "id": "hue",
+      "label": "Hue",
+      "ipa": "/hjuː/",
+      "cefr": "B2",
+      "imageNodeId": "467:17100"
+    },
+    {
+      "kind": "card",
+      "id": "depth",
+      "label": "Depth",
+      "ipa": "/dɛpθ/",
+      "cefr": "B2",
+      "imageNodeId": "467:17104"
+    },
+    {
+      "kind": "card",
+      "id": "brilliance",
+      "label": "Brilliance",
+      "ipa": "/ˈbrɪljəns/",
+      "cefr": "C1",
+      "imageNodeId": "467:17108"
+    },
+    {
+      "kind": "card",
+      "id": "sediment",
+      "label": "Sediment",
+      "ipa": "/ˈsɛdɪmənt/",
+      "cefr": "B2",
+      "imageNodeId": "467:17112"
+    },
+    {
+      "kind": "card",
+      "id": "aroma",
+      "label": "Aroma",
+      "ipa": "/əˈroʊmə/",
+      "cefr": "B2",
+      "imageNodeId": "467:17121"
+    },
+    {
+      "kind": "card",
+      "id": "bouquet",
+      "label": "Bouquet",
+      "ipa": "/buːˈkeɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:17125"
+    },
+    {
+      "kind": "card",
+      "id": "nose",
+      "label": "Nose",
+      "ipa": "/noʊz/",
+      "cefr": "B2",
+      "imageNodeId": "467:17129"
+    },
+    {
+      "kind": "card",
+      "id": "floral",
+      "label": "Floral",
+      "ipa": "/ˈflɔːrəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:17133"
+    },
+    {
+      "kind": "card",
+      "id": "fruity",
+      "label": "Fruity",
+      "ipa": "/ˈfruːti/",
+      "cefr": "B2",
+      "imageNodeId": "467:17137"
+    },
+    {
+      "kind": "card",
+      "id": "earthy",
+      "label": "Earthy",
+      "ipa": "/ˈɜːrθi/",
+      "cefr": "B2",
+      "imageNodeId": "467:17141"
+    },
+    {
+      "kind": "card",
+      "id": "spicy",
+      "label": "Spicy",
+      "ipa": "/ˈspaɪsi/",
+      "cefr": "B2",
+      "imageNodeId": "467:17145"
+    },
+    {
+      "kind": "card",
+      "id": "herbaceous",
+      "label": "Herbaceous",
+      "ipa": "/hɜːrˈbeɪʃəs/",
+      "cefr": "C1",
+      "imageNodeId": "467:17149"
+    },
+    {
+      "kind": "card",
+      "id": "mineral",
+      "label": "Mineral",
+      "ipa": "/ˈmɪnərəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:17153"
+    },
+    {
+      "kind": "card",
+      "id": "oaky",
+      "label": "Oaky",
+      "ipa": "/ˈoʊki/",
+      "cefr": "B2",
+      "imageNodeId": "467:17157"
+    },
+    {
+      "kind": "card",
+      "id": "body",
+      "label": "Body",
+      "ipa": "/ˈbɒdi/",
+      "cefr": "B2",
+      "imageNodeId": "467:17166"
+    },
+    {
+      "kind": "card",
+      "id": "tannin",
+      "label": "Tannin",
+      "ipa": "/ˈtænɪn/",
+      "cefr": "B2",
+      "imageNodeId": "467:17170"
+    },
+    {
+      "kind": "card",
+      "id": "acidity",
+      "label": "Acidity",
+      "ipa": "/əˈsɪdɪti/",
+      "cefr": "B2",
+      "imageNodeId": "467:17174"
+    },
+    {
+      "kind": "card",
+      "id": "sweetness",
+      "label": "Sweetness",
+      "ipa": "/ˈswiːtnɪs/",
+      "cefr": "B2",
+      "imageNodeId": "467:17178"
+    },
+    {
+      "kind": "card",
+      "id": "finish",
+      "label": "Finish",
+      "ipa": "/ˈfɪnɪʃ/",
+      "cefr": "B2",
+      "imageNodeId": "467:17182"
+    },
+    {
+      "kind": "card",
+      "id": "balance",
+      "label": "Balance",
+      "ipa": "/ˈbæləns/",
+      "cefr": "B2",
+      "imageNodeId": "467:17186"
+    },
+    {
+      "kind": "card",
+      "id": "complexity",
+      "label": "Complexity",
+      "ipa": "/kəmˈplɛksɪti/",
+      "cefr": "C1",
+      "imageNodeId": "467:17190"
+    },
+    {
+      "kind": "card",
+      "id": "structure",
+      "label": "Structure",
+      "ipa": "/ˈstrʌktʃər/",
+      "cefr": "B2",
+      "imageNodeId": "467:17194"
+    },
+    {
+      "kind": "card",
+      "id": "mouthfeel",
+      "label": "Mouthfeel",
+      "ipa": "/ˈmaʊθˌfiːl/",
+      "cefr": "B2",
+      "imageNodeId": "467:17198"
+    },
+    {
+      "kind": "card",
+      "id": "length",
+      "label": "Length",
+      "ipa": "/lɛŋθ/",
+      "cefr": "B2",
+      "imageNodeId": "467:17202"
+    },
+    {
+      "kind": "card",
+      "id": "dry",
+      "label": "Dry",
+      "ipa": "/draɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:17211"
+    },
+    {
+      "kind": "card",
+      "id": "sweet",
+      "label": "Sweet",
+      "ipa": "/swiːt/",
+      "cefr": "B2",
+      "imageNodeId": "467:17215"
+    },
+    {
+      "kind": "card",
+      "id": "crisp",
+      "label": "Crisp",
+      "ipa": "/krɪsp/",
+      "cefr": "B2",
+      "imageNodeId": "467:17219"
+    },
+    {
+      "kind": "card",
+      "id": "smooth",
+      "label": "Smooth",
+      "ipa": "/smuːð/",
+      "cefr": "B2",
+      "imageNodeId": "467:17223"
+    },
+    {
+      "kind": "card",
+      "id": "velvety",
+      "label": "Velvety",
+      "ipa": "/ˈvɛlvɪti/",
+      "cefr": "B2",
+      "imageNodeId": "467:17227"
+    },
+    {
+      "kind": "card",
+      "id": "bold",
+      "label": "Bold",
+      "ipa": "/boʊld/",
+      "cefr": "B2",
+      "imageNodeId": "467:17231"
+    },
+    {
+      "kind": "card",
+      "id": "delicate",
+      "label": "Delicate",
+      "ipa": "/ˈdɛlɪkɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:17235"
+    },
+    {
+      "kind": "card",
+      "id": "rich",
+      "label": "Rich",
+      "ipa": "/rɪtʃ/",
+      "cefr": "B2",
+      "imageNodeId": "467:17239"
+    },
+    {
+      "kind": "card",
+      "id": "light",
+      "label": "Light",
+      "ipa": "/laɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:17243"
+    },
+    {
+      "kind": "card",
+      "id": "full-bodied",
+      "label": "Full-Bodied",
+      "ipa": "/fʊl ˈbɒdid/",
+      "cefr": "C1",
+      "imageNodeId": "467:17247"
+    },
+    {
+      "kind": "card",
+      "id": "cheese-pairing",
+      "label": "Cheese Pairing",
+      "ipa": "/tʃiːz ˈpɛərɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:17256"
+    },
+    {
+      "kind": "card",
+      "id": "meat-pairing",
+      "label": "Meat Pairing",
+      "ipa": "/miːt ˈpɛərɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:17260"
+    },
+    {
+      "kind": "card",
+      "id": "seafood-pairing",
+      "label": "Seafood Pairing",
+      "ipa": "/ˈsiːfuːd ˈpɛərɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:17264"
+    },
+    {
+      "kind": "card",
+      "id": "dessert-pairing",
+      "label": "Dessert Pairing",
+      "ipa": "/dɪˈzɜːrt ˈpɛərɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:17268"
+    },
+    {
+      "kind": "card",
+      "id": "appetizer",
+      "label": "Appetizer",
+      "ipa": "/ˈæpɪˌtaɪzər/",
+      "cefr": "B2",
+      "imageNodeId": "467:17272"
+    },
+    {
+      "kind": "card",
+      "id": "main-course",
+      "label": "Main Course",
+      "ipa": "/meɪn kɔːrs/",
+      "cefr": "C1",
+      "imageNodeId": "467:17276"
+    },
+    {
+      "kind": "card",
+      "id": "palate-cleanser",
+      "label": "Palate Cleanser",
+      "ipa": "/ˈpælɪt ˈklɛnzər/",
+      "cefr": "C1",
+      "imageNodeId": "467:17280"
+    },
+    {
+      "kind": "card",
+      "id": "tasting-menu",
+      "label": "Tasting Menu",
+      "ipa": "/ˈteɪstɪŋ ˈmɛnjuː/",
+      "cefr": "C1",
+      "imageNodeId": "467:17284"
+    },
+    {
+      "kind": "card",
+      "id": "wine-flight",
+      "label": "Wine Flight",
+      "ipa": "/waɪn flaɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:17288"
+    },
+    {
+      "kind": "card",
+      "id": "cheese-board",
+      "label": "Cheese Board",
+      "ipa": "/tʃiːz bɔːrd/",
+      "cefr": "C1",
+      "imageNodeId": "467:17292"
+    }
+  ],
+  "materials": null
+}

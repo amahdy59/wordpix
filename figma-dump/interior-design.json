@@ -1,0 +1,393 @@
+{
+  "unitId": "interior-design",
+  "name": "Interior Design",
+  "subtopics": [
+    {
+      "id": "design-styles",
+      "title": "Design Styles",
+      "wordIds": [
+        "contemporary",
+        "traditional",
+        "scandinavian",
+        "industrial",
+        "bohemian",
+        "mid-century",
+        "farmhouse",
+        "art-deco",
+        "japanese",
+        "coastal"
+      ]
+    },
+    {
+      "id": "color-materials",
+      "title": "Color & Materials",
+      "wordIds": [
+        "color-palette",
+        "accent-wall",
+        "wallpaper",
+        "paint",
+        "tile",
+        "hardwood",
+        "carpet",
+        "stone",
+        "marble",
+        "concrete"
+      ]
+    },
+    {
+      "id": "lighting",
+      "title": "Lighting",
+      "wordIds": [
+        "chandelier",
+        "pendant-light",
+        "track-lighting",
+        "recessed-light",
+        "floor-lamp",
+        "table-lamp",
+        "sconce",
+        "natural-light",
+        "dimmer",
+        "led-strip"
+      ]
+    },
+    {
+      "id": "furnishing-decor",
+      "title": "Furnishing & Decor",
+      "wordIds": [
+        "area-rug",
+        "curtains",
+        "throw-pillow",
+        "artwork",
+        "mirror",
+        "vase",
+        "candle",
+        "plant",
+        "sculpture",
+        "photo-frame"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "contemporary",
+      "label": "Contemporary",
+      "ipa": "/kənˈtɛmpərəri/",
+      "cefr": "C1",
+      "imageNodeId": "467:19610"
+    },
+    {
+      "kind": "card",
+      "id": "traditional",
+      "label": "Traditional",
+      "ipa": "/trəˈdɪʃənəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:19614"
+    },
+    {
+      "kind": "card",
+      "id": "scandinavian",
+      "label": "Scandinavian",
+      "ipa": "/ˌskændɪˈneɪviən/",
+      "cefr": "C1",
+      "imageNodeId": "467:19618"
+    },
+    {
+      "kind": "card",
+      "id": "industrial",
+      "label": "Industrial",
+      "ipa": "/ɪnˈdʌstriəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:19622"
+    },
+    {
+      "kind": "card",
+      "id": "bohemian",
+      "label": "Bohemian",
+      "ipa": "/boʊˈhiːmiən/",
+      "cefr": "B2",
+      "imageNodeId": "467:19626"
+    },
+    {
+      "kind": "card",
+      "id": "mid-century",
+      "label": "Mid-Century",
+      "ipa": "/mɪd ˈsɛntʃəri/",
+      "cefr": "C1",
+      "imageNodeId": "467:19630"
+    },
+    {
+      "kind": "card",
+      "id": "farmhouse",
+      "label": "Farmhouse",
+      "ipa": "/ˈfɑːrmˌhaʊs/",
+      "cefr": "B2",
+      "imageNodeId": "467:19634"
+    },
+    {
+      "kind": "card",
+      "id": "art-deco",
+      "label": "Art Deco",
+      "ipa": "/ɑːrt ˈdɛkoʊ/",
+      "cefr": "C1",
+      "imageNodeId": "467:19638"
+    },
+    {
+      "kind": "card",
+      "id": "japanese",
+      "label": "Japanese",
+      "ipa": "/ˌdʒæpəˈniːz/",
+      "cefr": "B2",
+      "imageNodeId": "467:19642"
+    },
+    {
+      "kind": "card",
+      "id": "coastal",
+      "label": "Coastal",
+      "ipa": "/ˈkoʊstəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:19646"
+    },
+    {
+      "kind": "card",
+      "id": "color-palette",
+      "label": "Color Palette",
+      "ipa": "/ˈkʌlər ˈpælɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:19655"
+    },
+    {
+      "kind": "card",
+      "id": "accent-wall",
+      "label": "Accent Wall",
+      "ipa": "/ˈæksɛnt wɔːl/",
+      "cefr": "C1",
+      "imageNodeId": "467:19659"
+    },
+    {
+      "kind": "card",
+      "id": "wallpaper",
+      "label": "Wallpaper",
+      "ipa": "/ˈwɔːlˌpeɪpər/",
+      "cefr": "B2",
+      "imageNodeId": "467:19663"
+    },
+    {
+      "kind": "card",
+      "id": "paint",
+      "label": "Paint",
+      "ipa": "/peɪnt/",
+      "cefr": "B2",
+      "imageNodeId": "467:19667"
+    },
+    {
+      "kind": "card",
+      "id": "tile",
+      "label": "Tile",
+      "ipa": "/taɪl/",
+      "cefr": "B2",
+      "imageNodeId": "467:19671"
+    },
+    {
+      "kind": "card",
+      "id": "hardwood",
+      "label": "Hardwood",
+      "ipa": "/ˈhɑːrdˌwʊd/",
+      "cefr": "B2",
+      "imageNodeId": "467:19675"
+    },
+    {
+      "kind": "card",
+      "id": "carpet",
+      "label": "Carpet",
+      "ipa": "/ˈkɑːrpɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:19679"
+    },
+    {
+      "kind": "card",
+      "id": "stone",
+      "label": "Stone",
+      "ipa": "/stoʊn/",
+      "cefr": "B2",
+      "imageNodeId": "467:19683"
+    },
+    {
+      "kind": "card",
+      "id": "marble",
+      "label": "Marble",
+      "ipa": "/ˈmɑːrbəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:19687"
+    },
+    {
+      "kind": "card",
+      "id": "concrete",
+      "label": "Concrete",
+      "ipa": "/ˈkɒŋkriːt/",
+      "cefr": "B2",
+      "imageNodeId": "467:19691"
+    },
+    {
+      "kind": "card",
+      "id": "chandelier",
+      "label": "Chandelier",
+      "ipa": "/ˌʃændəˈlɪər/",
+      "cefr": "C1",
+      "imageNodeId": "467:19700"
+    },
+    {
+      "kind": "card",
+      "id": "pendant-light",
+      "label": "Pendant Light",
+      "ipa": "/ˈpɛndənt laɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:19704"
+    },
+    {
+      "kind": "card",
+      "id": "track-lighting",
+      "label": "Track Lighting",
+      "ipa": "/træk ˈlaɪtɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:19708"
+    },
+    {
+      "kind": "card",
+      "id": "recessed-light",
+      "label": "Recessed Light",
+      "ipa": "/rɪˈsɛst laɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:19712"
+    },
+    {
+      "kind": "card",
+      "id": "floor-lamp",
+      "label": "Floor Lamp",
+      "ipa": "/flɔːr læmp/",
+      "cefr": "C1",
+      "imageNodeId": "467:19716"
+    },
+    {
+      "kind": "card",
+      "id": "table-lamp",
+      "label": "Table Lamp",
+      "ipa": "/ˈteɪbəl læmp/",
+      "cefr": "C1",
+      "imageNodeId": "467:19720"
+    },
+    {
+      "kind": "card",
+      "id": "sconce",
+      "label": "Sconce",
+      "ipa": "/skɒns/",
+      "cefr": "B2",
+      "imageNodeId": "467:19724"
+    },
+    {
+      "kind": "card",
+      "id": "natural-light",
+      "label": "Natural Light",
+      "ipa": "/ˈnætʃərəl laɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:19728"
+    },
+    {
+      "kind": "card",
+      "id": "dimmer",
+      "label": "Dimmer",
+      "ipa": "/ˈdɪmər/",
+      "cefr": "B2",
+      "imageNodeId": "467:19732"
+    },
+    {
+      "kind": "card",
+      "id": "led-strip",
+      "label": "LED Strip",
+      "ipa": "/ˌɛlˌiːˈdiː strɪp/",
+      "cefr": "C1",
+      "imageNodeId": "467:19736"
+    },
+    {
+      "kind": "card",
+      "id": "area-rug",
+      "label": "Area Rug",
+      "ipa": "/ˈɛəriə rʌɡ/",
+      "cefr": "C1",
+      "imageNodeId": "467:19745"
+    },
+    {
+      "kind": "card",
+      "id": "curtains",
+      "label": "Curtains",
+      "ipa": "/ˈkɜːrtənz/",
+      "cefr": "B2",
+      "imageNodeId": "467:19749"
+    },
+    {
+      "kind": "card",
+      "id": "throw-pillow",
+      "label": "Throw Pillow",
+      "ipa": "/θroʊ ˈpɪloʊ/",
+      "cefr": "C1",
+      "imageNodeId": "467:19753"
+    },
+    {
+      "kind": "card",
+      "id": "artwork",
+      "label": "Artwork",
+      "ipa": "/ˈɑːrtˌwɜːrk/",
+      "cefr": "B2",
+      "imageNodeId": "467:19757"
+    },
+    {
+      "kind": "card",
+      "id": "mirror",
+      "label": "Mirror",
+      "ipa": "/ˈmɪrər/",
+      "cefr": "B2",
+      "imageNodeId": "467:19761"
+    },
+    {
+      "kind": "card",
+      "id": "vase",
+      "label": "Vase",
+      "ipa": "/veɪs/",
+      "cefr": "B2",
+      "imageNodeId": "467:19765"
+    },
+    {
+      "kind": "card",
+      "id": "candle",
+      "label": "Candle",
+      "ipa": "/ˈkændəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:19769"
+    },
+    {
+      "kind": "card",
+      "id": "plant",
+      "label": "Plant",
+      "ipa": "/plænt/",
+      "cefr": "B2",
+      "imageNodeId": "467:19773"
+    },
+    {
+      "kind": "card",
+      "id": "sculpture",
+      "label": "Sculpture",
+      "ipa": "/ˈskʌlptʃər/",
+      "cefr": "B2",
+      "imageNodeId": "467:19777"
+    },
+    {
+      "kind": "card",
+      "id": "photo-frame",
+      "label": "Photo Frame",
+      "ipa": "/ˈfoʊtoʊ freɪm/",
+      "cefr": "C1",
+      "imageNodeId": "467:19781"
+    }
+  ],
+  "materials": null
+}

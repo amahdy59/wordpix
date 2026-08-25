@@ -1,0 +1,1566 @@
+{
+  "unitId": "smart-home",
+  "name": "The Smart Home",
+  "subtopics": [
+    {
+      "id": "voice-assistants",
+      "title": "Voice Assistants",
+      "wordIds": [
+        "smart-speaker",
+        "voice-command",
+        "wake-word",
+        "routine",
+        "reminder",
+        "timer",
+        "playlist",
+        "news-briefing",
+        "intercom",
+        "multi-room"
+      ]
+    },
+    {
+      "id": "lighting",
+      "title": "Lighting",
+      "wordIds": [
+        "smart-bulb",
+        "dimmer",
+        "color-changing",
+        "light-strip",
+        "motion-sensor",
+        "schedule",
+        "scene",
+        "brightness",
+        "warm-white",
+        "daylight"
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "wordIds": [
+        "smart-lock",
+        "doorbell-camera",
+        "security-camera",
+        "motion-detector",
+        "alarm-system",
+        "keypad",
+        "fingerprint",
+        "app-alert",
+        "cloud-storage",
+        "night-vision"
+      ]
+    },
+    {
+      "id": "climate-control",
+      "title": "Climate Control",
+      "wordIds": [
+        "smart-thermostat",
+        "temperature-sensor",
+        "humidity-sensor",
+        "zone",
+        "schedule",
+        "eco-mode",
+        "geofencing",
+        "vent",
+        "air-purifier",
+        "fan"
+      ]
+    },
+    {
+      "id": "entertainment",
+      "title": "Entertainment",
+      "wordIds": [
+        "streaming-device",
+        "smart-tv",
+        "soundbar",
+        "projector",
+        "gaming-console",
+        "universal-remote",
+        "hdmi",
+        "bluetooth",
+        "wi-fi",
+        "casting"
+      ]
+    },
+    {
+      "id": "appliances",
+      "title": "Appliances",
+      "wordIds": [
+        "robot-vacuum",
+        "smart-plug",
+        "smart-oven",
+        "coffee-maker",
+        "washer",
+        "dryer",
+        "refrigerator",
+        "dishwasher",
+        "irrigation",
+        "garage-opener"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "smart-speaker",
+      "label": "Smart Speaker",
+      "ipa": "/smɑːrt ˈspiːkər/",
+      "cefr": "C1",
+      "imageNodeId": "119:12575"
+    },
+    {
+      "kind": "card",
+      "id": "voice-command",
+      "label": "Voice Command",
+      "ipa": "/vɔɪs kəˈmænd/",
+      "cefr": "C1",
+      "imageNodeId": "119:12579"
+    },
+    {
+      "kind": "card",
+      "id": "wake-word",
+      "label": "Wake Word",
+      "ipa": "/weɪk wɜːrd/",
+      "cefr": "C1",
+      "imageNodeId": "119:12583"
+    },
+    {
+      "kind": "card",
+      "id": "routine",
+      "label": "Routine",
+      "ipa": "/ruːˈtiːn/",
+      "cefr": "B2",
+      "imageNodeId": "119:12587"
+    },
+    {
+      "kind": "card",
+      "id": "reminder",
+      "label": "Reminder",
+      "ipa": "/rɪˈmaɪndər/",
+      "cefr": "B2",
+      "imageNodeId": "119:12591"
+    },
+    {
+      "kind": "card",
+      "id": "timer",
+      "label": "Timer",
+      "ipa": "/ˈtaɪmər/",
+      "cefr": "B2",
+      "imageNodeId": "119:12595"
+    },
+    {
+      "kind": "card",
+      "id": "playlist",
+      "label": "Playlist",
+      "ipa": "/ˈpleɪˌlɪst/",
+      "cefr": "B2",
+      "imageNodeId": "119:12599"
+    },
+    {
+      "kind": "card",
+      "id": "news-briefing",
+      "label": "News Briefing",
+      "ipa": "/njuːz ˈbriːfɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "119:12603"
+    },
+    {
+      "kind": "card",
+      "id": "intercom",
+      "label": "Intercom",
+      "ipa": "/ˈɪntərˌkɒm/",
+      "cefr": "B2",
+      "imageNodeId": "119:12607"
+    },
+    {
+      "kind": "card",
+      "id": "multi-room",
+      "label": "Multi Room",
+      "ipa": "/ˈmʌlti ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "119:12611"
+    },
+    {
+      "kind": "card",
+      "id": "smart-bulb",
+      "label": "Smart Bulb",
+      "ipa": "/smɑːrt bʌlb/",
+      "cefr": "C1",
+      "imageNodeId": "119:12620"
+    },
+    {
+      "kind": "card",
+      "id": "dimmer",
+      "label": "Dimmer",
+      "ipa": "/ˈdɪmər/",
+      "cefr": "B2",
+      "imageNodeId": "119:12624"
+    },
+    {
+      "kind": "card",
+      "id": "color-changing",
+      "label": "Color Changing",
+      "ipa": "/ˈkʌlər ˈtʃeɪndʒɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "119:12628"
+    },
+    {
+      "kind": "card",
+      "id": "light-strip",
+      "label": "Light Strip",
+      "ipa": "/laɪt strɪp/",
+      "cefr": "C1",
+      "imageNodeId": "119:12632"
+    },
+    {
+      "kind": "card",
+      "id": "motion-sensor",
+      "label": "Motion Sensor",
+      "ipa": "/ˈmoʊʃən ˈsɛnsər/",
+      "cefr": "C1",
+      "imageNodeId": "119:12636"
+    },
+    {
+      "kind": "card",
+      "id": "schedule",
+      "label": "Schedule",
+      "ipa": "/ˈskɛdʒuːl/",
+      "cefr": "B2",
+      "imageNodeId": "119:12640"
+    },
+    {
+      "kind": "card",
+      "id": "scene",
+      "label": "Scene",
+      "ipa": "/siːn/",
+      "cefr": "B2",
+      "imageNodeId": "119:12644"
+    },
+    {
+      "kind": "card",
+      "id": "brightness",
+      "label": "Brightness",
+      "ipa": "/ˈbraɪtnəs/",
+      "cefr": "C1",
+      "imageNodeId": "119:12648"
+    },
+    {
+      "kind": "card",
+      "id": "warm-white",
+      "label": "Warm White",
+      "ipa": "/wɔːrm waɪt/",
+      "cefr": "C1",
+      "imageNodeId": "119:12652"
+    },
+    {
+      "kind": "card",
+      "id": "daylight",
+      "label": "Daylight",
+      "ipa": "/ˈdeɪˌlaɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:12656"
+    },
+    {
+      "kind": "card",
+      "id": "smart-lock",
+      "label": "Smart Lock",
+      "ipa": "/smɑːrt lɒk/",
+      "cefr": "C1",
+      "imageNodeId": "119:12665"
+    },
+    {
+      "kind": "card",
+      "id": "doorbell-camera",
+      "label": "Doorbell Camera",
+      "ipa": "/ˈdɔːrˌbɛl ˈkæmərə/",
+      "cefr": "C1",
+      "imageNodeId": "119:12669"
+    },
+    {
+      "kind": "card",
+      "id": "security-camera",
+      "label": "Security Camera",
+      "ipa": "/sɪˈkjʊərɪti ˈkæmərə/",
+      "cefr": "C1",
+      "imageNodeId": "119:12673"
+    },
+    {
+      "kind": "card",
+      "id": "motion-detector",
+      "label": "Motion Detector",
+      "ipa": "/ˈmoʊʃən dɪˈtɛktər/",
+      "cefr": "C1",
+      "imageNodeId": "119:12677"
+    },
+    {
+      "kind": "card",
+      "id": "alarm-system",
+      "label": "Alarm System",
+      "ipa": "/əˈlɑːrm ˈsɪstəm/",
+      "cefr": "C1",
+      "imageNodeId": "119:12681"
+    },
+    {
+      "kind": "card",
+      "id": "keypad",
+      "label": "Keypad",
+      "ipa": "/ˈkiːˌpæd/",
+      "cefr": "B2",
+      "imageNodeId": "119:12685"
+    },
+    {
+      "kind": "card",
+      "id": "fingerprint",
+      "label": "Fingerprint",
+      "ipa": "/ˈfɪŋɡərˌprɪnt/",
+      "cefr": "C1",
+      "imageNodeId": "119:12689"
+    },
+    {
+      "kind": "card",
+      "id": "app-alert",
+      "label": "App Alert",
+      "ipa": "/æp əˈlɜːrt/",
+      "cefr": "C1",
+      "imageNodeId": "119:12693"
+    },
+    {
+      "kind": "card",
+      "id": "cloud-storage",
+      "label": "Cloud Storage",
+      "ipa": "/klaʊd ˈstɔːrɪdʒ/",
+      "cefr": "C1",
+      "imageNodeId": "119:12697"
+    },
+    {
+      "kind": "card",
+      "id": "night-vision",
+      "label": "Night Vision",
+      "ipa": "/naɪt ˈvɪʒən/",
+      "cefr": "C1",
+      "imageNodeId": "119:12701"
+    },
+    {
+      "kind": "card",
+      "id": "smart-thermostat",
+      "label": "Smart Thermostat",
+      "ipa": "/smɑːrt ˈθɜːrməˌstæt/",
+      "cefr": "C1",
+      "imageNodeId": "119:12710"
+    },
+    {
+      "kind": "card",
+      "id": "temperature-sensor",
+      "label": "Temperature Sensor",
+      "ipa": "/ˈtɛmpərətʃər ˈsɛnsər/",
+      "cefr": "C1",
+      "imageNodeId": "119:12714"
+    },
+    {
+      "kind": "card",
+      "id": "humidity-sensor",
+      "label": "Humidity Sensor",
+      "ipa": "/hjuːˈmɪdɪti ˈsɛnsər/",
+      "cefr": "C1",
+      "imageNodeId": "119:12718"
+    },
+    {
+      "kind": "card",
+      "id": "zone",
+      "label": "Zone",
+      "ipa": "/zoʊn/",
+      "cefr": "B2",
+      "imageNodeId": "119:12722"
+    },
+    {
+      "kind": "card",
+      "id": "schedule",
+      "label": "Schedule",
+      "ipa": "/ˈskɛdʒuːl/",
+      "cefr": "B2",
+      "imageNodeId": "119:12726"
+    },
+    {
+      "kind": "card",
+      "id": "eco-mode",
+      "label": "Eco Mode",
+      "ipa": "/ˈiːkoʊ moʊd/",
+      "cefr": "C1",
+      "imageNodeId": "119:12730"
+    },
+    {
+      "kind": "card",
+      "id": "geofencing",
+      "label": "Geofencing",
+      "ipa": "/ˈdʒiːoʊˌfɛnsɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "119:12734"
+    },
+    {
+      "kind": "card",
+      "id": "vent",
+      "label": "Vent",
+      "ipa": "/vɛnt/",
+      "cefr": "B2",
+      "imageNodeId": "119:12738"
+    },
+    {
+      "kind": "card",
+      "id": "air-purifier",
+      "label": "Air Purifier",
+      "ipa": "/ɛər ˈpjʊərɪˌfaɪər/",
+      "cefr": "C1",
+      "imageNodeId": "119:12742"
+    },
+    {
+      "kind": "card",
+      "id": "fan",
+      "label": "Fan",
+      "ipa": "/fæn/",
+      "cefr": "B2",
+      "imageNodeId": "119:12746"
+    },
+    {
+      "kind": "card",
+      "id": "streaming-device",
+      "label": "Streaming Device",
+      "ipa": "/ˈstriːmɪŋ dɪˈvaɪs/",
+      "cefr": "C1",
+      "imageNodeId": "119:12755"
+    },
+    {
+      "kind": "card",
+      "id": "smart-tv",
+      "label": "Smart Tv",
+      "ipa": "/smɑːrt ˌtiːˈviː/",
+      "cefr": "C1",
+      "imageNodeId": "119:12759"
+    },
+    {
+      "kind": "card",
+      "id": "soundbar",
+      "label": "Soundbar",
+      "ipa": "/ˈsaʊndˌbɑːr/",
+      "cefr": "B2",
+      "imageNodeId": "119:12763"
+    },
+    {
+      "kind": "card",
+      "id": "projector",
+      "label": "Projector",
+      "ipa": "/prəˈdʒɛktər/",
+      "cefr": "B2",
+      "imageNodeId": "119:12767"
+    },
+    {
+      "kind": "card",
+      "id": "gaming-console",
+      "label": "Gaming Console",
+      "ipa": "/ˈɡeɪmɪŋ ˈkɒnsoʊl/",
+      "cefr": "C1",
+      "imageNodeId": "119:12771"
+    },
+    {
+      "kind": "card",
+      "id": "universal-remote",
+      "label": "Universal Remote",
+      "ipa": "/ˌjuːnɪˈvɜːrsəl rɪˈmoʊt/",
+      "cefr": "C1",
+      "imageNodeId": "119:12775"
+    },
+    {
+      "kind": "card",
+      "id": "hdmi",
+      "label": "Hdmi",
+      "ipa": "/ˌeɪtʃdiːɛmˈaɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:12779"
+    },
+    {
+      "kind": "card",
+      "id": "bluetooth",
+      "label": "Bluetooth",
+      "ipa": "/ˈbluːˌtuːθ/",
+      "cefr": "B2",
+      "imageNodeId": "119:12783"
+    },
+    {
+      "kind": "card",
+      "id": "wi-fi",
+      "label": "Wi Fi",
+      "ipa": "/ˈwaɪ faɪ/",
+      "cefr": "C1",
+      "imageNodeId": "119:12787"
+    },
+    {
+      "kind": "card",
+      "id": "casting",
+      "label": "Casting",
+      "ipa": "/ˈkæstɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:12791"
+    },
+    {
+      "kind": "card",
+      "id": "robot-vacuum",
+      "label": "Robot Vacuum",
+      "ipa": "/ˈroʊbɒt ˈvækjuːm/",
+      "cefr": "C1",
+      "imageNodeId": "119:12800"
+    },
+    {
+      "kind": "card",
+      "id": "smart-plug",
+      "label": "Smart Plug",
+      "ipa": "/smɑːrt plʌɡ/",
+      "cefr": "C1",
+      "imageNodeId": "119:12804"
+    },
+    {
+      "kind": "card",
+      "id": "smart-oven",
+      "label": "Smart Oven",
+      "ipa": "/smɑːrt ˈʌvən/",
+      "cefr": "C1",
+      "imageNodeId": "119:12808"
+    },
+    {
+      "kind": "card",
+      "id": "coffee-maker",
+      "label": "Coffee Maker",
+      "ipa": "/ˈkɒfi ˈmeɪkər/",
+      "cefr": "C1",
+      "imageNodeId": "119:12812"
+    },
+    {
+      "kind": "card",
+      "id": "washer",
+      "label": "Washer",
+      "ipa": "/ˈwɒʃər/",
+      "cefr": "B2",
+      "imageNodeId": "119:12816"
+    },
+    {
+      "kind": "card",
+      "id": "dryer",
+      "label": "Dryer",
+      "ipa": "/ˈdraɪər/",
+      "cefr": "B2",
+      "imageNodeId": "119:12820"
+    },
+    {
+      "kind": "card",
+      "id": "refrigerator",
+      "label": "Refrigerator",
+      "ipa": "/rɪˈfrɪdʒəˌreɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "119:12824"
+    },
+    {
+      "kind": "card",
+      "id": "dishwasher",
+      "label": "Dishwasher",
+      "ipa": "/ˈdɪʃˌwɒʃər/",
+      "cefr": "C1",
+      "imageNodeId": "119:12828"
+    },
+    {
+      "kind": "card",
+      "id": "irrigation",
+      "label": "Irrigation",
+      "ipa": "/ˌɪrɪˈɡeɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "119:12832"
+    },
+    {
+      "kind": "card",
+      "id": "garage-opener",
+      "label": "Garage Opener",
+      "ipa": "/ɡəˈrɑːʒ ˈoʊpənər/",
+      "cefr": "C1",
+      "imageNodeId": "119:12836"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "556:2970",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "556:2972",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2+ · Topic: The Smart Home",
+          "depth": 1,
+          "name": "Level: B2+ · Topic: The Smart Home"
+        },
+        {
+          "text": "The House That Listens — How Smart Home Technology Reshapes Daily Life\n\nA smart home is a residence where devices communicate with each other and respond to human input — usually a voice command, a mobile app, or an automated schedule. The concept sounds futuristic, but the technology is already mundane: a smart speaker on the kitchen counter, a smart thermostat on the wall, a doorbell camera by the front door. What makes these devices 'smart' is not artificial intelligence in any deep sense but connectivity — they are linked to a Wi-Fi network and controlled through software.\n\nThe smart speaker is the most common entry point. A wake word — 'Alexa,' 'Hey Google,' 'Hey Siri' — activates the microphone. The device responds to voice commands: set a timer, play a playlist, read a news briefing, add items to a shopping list. A routine strings multiple actions into one trigger — 'Good morning' might turn on the lights, read the weather, and start the coffee machine. An intercom function broadcasts messages to speakers in other rooms via a multi-room setup.\n\nLighting is where automation feels most natural. A smart bulb screws into a standard socket but offers remote control via app or voice. A dimmer adjusts brightness from full daylight to a warm white glow. A light strip lines a shelf or a staircase with colour-changing LEDs. A motion sensor switches lights on when someone enters a room and off when they leave. A scene — 'Movie Night,' 'Dinner,' 'Reading' — adjusts every light in the house to a preset combination of brightness and colour.\n\nSecurity systems have been transformed. A smart lock opens with a fingerprint, a keypad code, or the app — no physical key required. A doorbell camera streams live video when someone presses the button. A security camera records continuously, with night vision and motion detection triggering an app alert on the homeowner's phone. Cloud storage archives the footage. An alarm system arms and disarms remotely. A motion detector covers blind spots.\n\nClimate control has become predictive. A smart thermostat learns the household's patterns — when people wake, leave, and return — and adjusts the temperature automatically. A temperature sensor and a humidity sensor in each zone feed data to the system. Eco mode reduces energy consumption when the house is empty. Geofencing uses the homeowner's phone location to trigger heating or cooling before arrival. A vent regulates airflow. An air purifier monitors particulate levels. A fan circulates air in summer.\n\nEntertainment ties everything together. A streaming device connects a smart TV to hundreds of services. A soundbar enhances audio. A projector converts a blank wall into a cinema screen. A gaming console doubles as a media hub. A universal remote — or more often, a voice command — switches between devices. Bluetooth and HDMI handle connectivity. Casting mirrors a phone screen onto the television.\n\nThe convenience is real, but so are the trade-offs. Every connected device collects data — usage patterns, voice recordings, location history. A smart home is, by definition, a surveilled home. The homeowner must decide how much convenience justifies how much transparency. Privacy settings exist, but they require deliberate configuration — and most users never change the defaults.\n\nThe smart home does not think. It follows instructions, predicts patterns, and responds to triggers. The intelligence is in the configuration — and the person who sets it up.",
+          "depth": 1,
+          "name": "The House That Listens — How Smart Home Technology Reshapes Daily Life A smart home is a residence where devices communicate with each other and respond to human input — usually a voice command, a mobile app, or an automated schedule. The concept sounds futuristic, but the technology is already mundane: a smart speaker on the kitchen counter, a smart thermostat on the wall, a doorbell camera by the front door. What makes these devices 'smart' is not artificial intelligence in any deep sense but connectivity — they are linked to a Wi-Fi network and controlled through software. The smart speaker is the most common entry point. A wake word — 'Alexa,' 'Hey Google,' 'Hey Siri' — activates the microphone. The device responds to voice commands: set a timer, play a playlist, read a news briefing, add items to a shopping list. A routine strings multiple actions into one trigger — 'Good morning' might turn on the lights, read the weather, and start the coffee machine. An intercom function broadcasts messages to speakers in other rooms via a multi-room setup. Lighting is where automation feels most natural. A smart bulb screws into a standard socket but offers remote control via app or voice. A dimmer adjusts brightness from full daylight to a warm white glow. A light strip lines a shelf or a staircase with colour-changing LEDs. A motion sensor switches lights on when someone enters a room and off when they leave. A scene — 'Movie Night,' 'Dinner,' 'Reading' — adjusts every light in the house to a preset combination of brightness and colour. Security systems have been transformed. A smart lock opens with a fingerprint, a keypad code, or the app — no physical key required. A doorbell camera streams live video when someone presses the button. A security camera records continuously, with night vision and motion detection triggering an app alert on the homeowner's phone. Cloud storage archives the footage. An alarm system arms and disarms remotely. A motion detector covers blind spots. Climate control has become predictive. A smart thermostat learns the household's patterns — when people wake, leave, and return — and adjusts the temperature automatically. A temperature sensor and a humidity sensor in each zone feed data to the system. Eco mode reduces energy consumption when the house is empty. Geofencing uses the homeowner's phone location to trigger heating or cooling before arrival. A vent regulates airflow. An air purifier monitors particulate levels. A fan circulates air in summer. Entertainment ties everything together. A streaming device connects a smart TV to hundreds of services. A soundbar enhances audio. A projector converts a blank wall into a cinema screen. A gaming console doubles as a media hub. A universal remote — or more often, a voice command — switches between devices. Bluetooth and HDMI handle connectivity. Casting mirrors a phone screen onto the television. The convenience is real, but so are the trade-offs. Every connected device collects data — usage patterns, voice recordings, location history. A smart home is, by definition, a surveilled home. The homeowner must decide how much convenience justifies how much transparency. Privacy settings exist, but they require deliberate configuration — and most users never change the defaults. The smart home does not think. It follows instructions, predicts patterns, and responds to triggers. The intelligence is in the configuration — and the person who sets it up."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Explain how a smart speaker functions, using specific vocabulary from the passage (wake word, routine, intercom, multi-room).",
+          "depth": 1,
+          "name": "1. Explain how a smart speaker functions, using specific vocabulary from the passage (wake word, routine, intercom, multi-room)."
+        },
+        {
+          "text": "2. How has smart home technology changed residential security? Describe at least four specific features.",
+          "depth": 1,
+          "name": "2. How has smart home technology changed residential security? Describe at least four specific features."
+        },
+        {
+          "text": "3. What does the passage mean by 'predictive' climate control? How does geofencing contribute to energy efficiency?",
+          "depth": 1,
+          "name": "3. What does the passage mean by 'predictive' climate control? How does geofencing contribute to energy efficiency?"
+        },
+        {
+          "text": "4. The passage states: 'A smart home is, by definition, a surveilled home.' What evidence supports this claim, and what trade-offs does the author identify?",
+          "depth": 1,
+          "name": "4. The passage states: 'A smart home is, by definition, a surveilled home.' What evidence supports this claim, and what trade-offs does the author identify?"
+        },
+        {
+          "text": "5. Evaluate the final paragraph's distinction between a house that 'thinks' and one that 'follows instructions.' Is this an important distinction? Why?",
+          "depth": 1,
+          "name": "5. Evaluate the final paragraph's distinction between a house that 'thinks' and one that 'follows instructions.' Is this an important distinction? Why?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "556:2985",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "at the touch of a button",
+          "depth": 2,
+          "name": "at the touch of a button"
+        },
+        {
+          "text": "with minimal effort; very easily",
+          "depth": 2,
+          "name": "with minimal effort; very easily"
+        },
+        {
+          "text": "\"You can control your entire home at the touch of a button.\"",
+          "depth": 2,
+          "name": "\"You can control your entire home at the touch of a button.\""
+        },
+        {
+          "text": "plug and play",
+          "depth": 2,
+          "name": "plug and play"
+        },
+        {
+          "text": "ready to use immediately without complex setup",
+          "depth": 2,
+          "name": "ready to use immediately without complex setup"
+        },
+        {
+          "text": "\"The smart plug is plug and play — just connect it to Wi-Fi.\"",
+          "depth": 2,
+          "name": "\"The smart plug is plug and play — just connect it to Wi-Fi.\""
+        },
+        {
+          "text": "set up",
+          "depth": 2,
+          "name": "set up"
+        },
+        {
+          "text": "install and configure a device or system",
+          "depth": 2,
+          "name": "install and configure a device or system"
+        },
+        {
+          "text": "\"It took me about 20 minutes to set up the smart speaker.\"",
+          "depth": 2,
+          "name": "\"It took me about 20 minutes to set up the smart speaker.\""
+        },
+        {
+          "text": "switch off / turn off",
+          "depth": 2,
+          "name": "switch off / turn off"
+        },
+        {
+          "text": "deactivate a device or system",
+          "depth": 2,
+          "name": "deactivate a device or system"
+        },
+        {
+          "text": "\"Don't forget to switch off the lights before bed — or just ask Alexa.\"",
+          "depth": 2,
+          "name": "\"Don't forget to switch off the lights before bed — or just ask Alexa.\""
+        },
+        {
+          "text": "hook up (to)",
+          "depth": 2,
+          "name": "hook up (to)"
+        },
+        {
+          "text": "connect something to a system or network",
+          "depth": 2,
+          "name": "connect something to a system or network"
+        },
+        {
+          "text": "\"I've hooked up all the lights to the smart hub.\"",
+          "depth": 2,
+          "name": "\"I've hooked up all the lights to the smart hub.\""
+        },
+        {
+          "text": "be on the grid / off the grid",
+          "depth": 2,
+          "name": "be on the grid / off the grid"
+        },
+        {
+          "text": "connected to / disconnected from utility networks and technology",
+          "depth": 2,
+          "name": "connected to / disconnected from utility networks and technology"
+        },
+        {
+          "text": "\"Some people prefer to live off the grid — no smart devices, no internet.\"",
+          "depth": 2,
+          "name": "\"Some people prefer to live off the grid — no smart devices, no internet.\""
+        },
+        {
+          "text": "the smart money is on",
+          "depth": 2,
+          "name": "the smart money is on"
+        },
+        {
+          "text": "the most informed or intelligent prediction favours",
+          "depth": 2,
+          "name": "the most informed or intelligent prediction favours"
+        },
+        {
+          "text": "\"The smart money is on voice control becoming the standard.\"",
+          "depth": 2,
+          "name": "\"The smart money is on voice control becoming the standard.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "556:3017",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A couple setting up their new smart home devices",
+          "depth": 1,
+          "name": "Scene: A couple setting up their new smart home devices"
+        },
+        {
+          "text": "Tariq:",
+          "depth": 2,
+          "name": "Tariq:"
+        },
+        {
+          "text": "Right, I've connected the smart speaker to the Wi-Fi. Let's test it. Alexa, turn on the kitchen lights.",
+          "depth": 2,
+          "name": "Right, I've connected the smart speaker to the Wi-Fi. Let's test it. Alexa, turn on the kitchen lights."
+        },
+        {
+          "text": "Speaker:",
+          "depth": 2,
+          "name": "Speaker:"
+        },
+        {
+          "text": "Okay. Turning on kitchen lights.",
+          "depth": 2,
+          "name": "Okay. Turning on kitchen lights."
+        },
+        {
+          "text": "Fatima:",
+          "depth": 2,
+          "name": "Fatima:"
+        },
+        {
+          "text": "That's brilliant! Can it control the heating too?",
+          "depth": 2,
+          "name": "That's brilliant! Can it control the heating too?"
+        },
+        {
+          "text": "Tariq:",
+          "depth": 2,
+          "name": "Tariq:"
+        },
+        {
+          "text": "Yes — I've linked it to the smart thermostat. We can set schedules or just say what temperature we want.",
+          "depth": 2,
+          "name": "Yes — I've linked it to the smart thermostat. We can set schedules or just say what temperature we want."
+        },
+        {
+          "text": "Fatima:",
+          "depth": 2,
+          "name": "Fatima:"
+        },
+        {
+          "text": "What about the security camera? Is that connected?",
+          "depth": 2,
+          "name": "What about the security camera? Is that connected?"
+        },
+        {
+          "text": "Tariq:",
+          "depth": 2,
+          "name": "Tariq:"
+        },
+        {
+          "text": "Not yet. I need to download the app and link it. The doorbell camera is working though — it sent me a notification when the postman came.",
+          "depth": 2,
+          "name": "Not yet. I need to download the app and link it. The doorbell camera is working though — it sent me a notification when the postman came."
+        },
+        {
+          "text": "Fatima:",
+          "depth": 2,
+          "name": "Fatima:"
+        },
+        {
+          "text": "I want to set up a routine for bedtime. Like, one command that turns off all the lights, locks the door, and sets the alarm.",
+          "depth": 2,
+          "name": "I want to set up a routine for bedtime. Like, one command that turns off all the lights, locks the door, and sets the alarm."
+        },
+        {
+          "text": "Tariq:",
+          "depth": 2,
+          "name": "Tariq:"
+        },
+        {
+          "text": "You can do that in the app — it's called a 'routine.' I'll set one up called 'goodnight.'",
+          "depth": 2,
+          "name": "You can do that in the app — it's called a 'routine.' I'll set one up called 'goodnight.'"
+        },
+        {
+          "text": "Fatima:",
+          "depth": 2,
+          "name": "Fatima:"
+        },
+        {
+          "text": "What about privacy? I've read that these devices are always listening.",
+          "depth": 2,
+          "name": "What about privacy? I've read that these devices are always listening."
+        },
+        {
+          "text": "Tariq:",
+          "depth": 2,
+          "name": "Tariq:"
+        },
+        {
+          "text": "The microphone only activates when it hears the wake word. But we can mute it when we want full privacy.",
+          "depth": 2,
+          "name": "The microphone only activates when it hears the wake word. But we can mute it when we want full privacy."
+        },
+        {
+          "text": "Fatima:",
+          "depth": 2,
+          "name": "Fatima:"
+        },
+        {
+          "text": "Good. Let's keep the bedroom device-free though — I don't want it listening while we sleep.",
+          "depth": 2,
+          "name": "Good. Let's keep the bedroom device-free though — I don't want it listening while we sleep."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "556:3055",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The technology allows you control all your devices remotely.\"",
+          "depth": 2,
+          "name": "❌ \"The technology allows you control all your devices remotely.\""
+        },
+        {
+          "text": "✅ \"The technology allows you to control all your devices remotely.\"",
+          "depth": 2,
+          "name": "✅ \"The technology allows you to control all your devices remotely.\""
+        },
+        {
+          "text": "'Allow + object + to infinitive': 'allows you to control', 'allowed her to enter'. Without 'to', use 'let': 'The system lets you control...' (let + object + bare infinitive). 'Enable' follows the same pattern as 'allow': 'enables users to monitor.' Never omit 'to' after allow/enable/permit.",
+          "depth": 2,
+          "name": "'Allow + object + to infinitive': 'allows you to control', 'allowed her to enter'. Without 'to', use 'let': 'The system lets you control...' (let + object + bare infinitive). 'Enable' follows the same pattern as 'allow': 'enables users to monitor.' Never omit 'to' after allow/enable/permit."
+        },
+        {
+          "text": "❌ \"I had the smart lock installed yesterday. It's much more safer than a traditional key.\"",
+          "depth": 2,
+          "name": "❌ \"I had the smart lock installed yesterday. It's much more safer than a traditional key.\""
+        },
+        {
+          "text": "✅ \"I had the smart lock installed yesterday. It's much safer than a traditional key.\"",
+          "depth": 2,
+          "name": "✅ \"I had the smart lock installed yesterday. It's much safer than a traditional key.\""
+        },
+        {
+          "text": "One-syllable and some two-syllable adjectives use '-er' for comparatives: 'safer', 'smarter', 'faster'. Never 'more + -er' (*more safer, *more easier). 'More' is reserved for longer adjectives: 'more convenient', 'more efficient'. Intensifiers before comparatives: 'much safer', 'far more efficient', 'significantly better.'",
+          "depth": 2,
+          "name": "One-syllable and some two-syllable adjectives use '-er' for comparatives: 'safer', 'smarter', 'faster'. Never 'more + -er' (*more safer, *more easier). 'More' is reserved for longer adjectives: 'more convenient', 'more efficient'. Intensifiers before comparatives: 'much safer', 'far more efficient', 'significantly better.'"
+        },
+        {
+          "text": "❌ \"Despite of the convenience, many people worry about privacy.\"",
+          "depth": 2,
+          "name": "❌ \"Despite of the convenience, many people worry about privacy.\""
+        },
+        {
+          "text": "✅ \"Despite the convenience, many people worry about privacy.\"",
+          "depth": 2,
+          "name": "✅ \"Despite the convenience, many people worry about privacy.\""
+        },
+        {
+          "text": "'Despite' + noun/gerund directly — never 'despite of'. 'In spite of' + noun (with 'of'). These are interchangeable in meaning but different in grammar. 'Despite the risks...' = 'In spite of the risks...' Mixing them ('despite of') is one of the most common B2 errors across all L1 backgrounds.",
+          "depth": 2,
+          "name": "'Despite' + noun/gerund directly — never 'despite of'. 'In spite of' + noun (with 'of'). These are interchangeable in meaning but different in grammar. 'Despite the risks...' = 'In spite of the risks...' Mixing them ('despite of') is one of the most common B2 errors across all L1 backgrounds."
+        },
+        {
+          "text": "❌ \"The more devices you connect, the more data is being collected about your habits.\"",
+          "depth": 2,
+          "name": "❌ \"The more devices you connect, the more data is being collected about your habits.\""
+        },
+        {
+          "text": "✅ \"The more devices you connect, the more data is collected about your habits.\"",
+          "depth": 2,
+          "name": "✅ \"The more devices you connect, the more data is collected about your habits.\""
+        },
+        {
+          "text": "The 'the + comparative...the + comparative' structure ('the more...the more') is correct here. The subtle issue is tense: passive present simple ('is collected') describes a general truth; passive present continuous ('is being collected') implies it's happening right now. For habitual/systematic data collection, present simple is more precise. Both are defensible — this is a B2+ nuance of aspect.",
+          "depth": 2,
+          "name": "The 'the + comparative...the + comparative' structure ('the more...the more') is correct here. The subtle issue is tense: passive present simple ('is collected') describes a general truth; passive present continuous ('is being collected') implies it's happening right now. For habitual/systematic data collection, present simple is more precise. Both are defensible — this is a B2+ nuance of aspect."
+        },
+        {
+          "text": "❌ \"I wish my house would be smarter so I don't have to do everything manually.\"",
+          "depth": 2,
+          "name": "❌ \"I wish my house would be smarter so I don't have to do everything manually.\""
+        },
+        {
+          "text": "✅ \"I wish my house were smarter so I didn't have to do everything manually.\"",
+          "depth": 2,
+          "name": "✅ \"I wish my house were smarter so I didn't have to do everything manually.\""
+        },
+        {
+          "text": "'Wish + past simple/subjunctive' for present desires: 'I wish my house were smarter', 'I wish I had more time.' The subjunctive 'were' (not 'was') is formal and correct for all persons: 'I wish it were', 'I wish she were.' 'Wish + would' is only for frustration about another person's choices: 'I wish you would stop leaving the lights on.'",
+          "depth": 2,
+          "name": "'Wish + past simple/subjunctive' for present desires: 'I wish my house were smarter', 'I wish I had more time.' The subjunctive 'were' (not 'was') is formal and correct for all persons: 'I wish it were', 'I wish she were.' 'Wish + would' is only for frustration about another person's choices: 'I wish you would stop leaving the lights on.'"
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "556:3079",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how technology vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how technology vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "automate",
+          "depth": 2,
+          "name": "automate"
+        },
+        {
+          "text": "automation",
+          "depth": 2,
+          "name": "automation"
+        },
+        {
+          "text": "automate",
+          "depth": 2,
+          "name": "automate"
+        },
+        {
+          "text": "automated / automatic",
+          "depth": 2,
+          "name": "automated / automatic"
+        },
+        {
+          "text": "connect",
+          "depth": 2,
+          "name": "connect"
+        },
+        {
+          "text": "connection / connectivity",
+          "depth": 2,
+          "name": "connection / connectivity"
+        },
+        {
+          "text": "connect",
+          "depth": 2,
+          "name": "connect"
+        },
+        {
+          "text": "connected",
+          "depth": 2,
+          "name": "connected"
+        },
+        {
+          "text": "detect",
+          "depth": 2,
+          "name": "detect"
+        },
+        {
+          "text": "detection / detector",
+          "depth": 2,
+          "name": "detection / detector"
+        },
+        {
+          "text": "detect",
+          "depth": 2,
+          "name": "detect"
+        },
+        {
+          "text": "detectable / detected",
+          "depth": 2,
+          "name": "detectable / detected"
+        },
+        {
+          "text": "notify",
+          "depth": 2,
+          "name": "notify"
+        },
+        {
+          "text": "notification",
+          "depth": 2,
+          "name": "notification"
+        },
+        {
+          "text": "notify",
+          "depth": 2,
+          "name": "notify"
+        },
+        {
+          "text": "notified",
+          "depth": 2,
+          "name": "notified"
+        },
+        {
+          "text": "secure",
+          "depth": 2,
+          "name": "secure"
+        },
+        {
+          "text": "security",
+          "depth": 2,
+          "name": "security"
+        },
+        {
+          "text": "secure",
+          "depth": 2,
+          "name": "secure"
+        },
+        {
+          "text": "secure / secured",
+          "depth": 2,
+          "name": "secure / secured"
+        },
+        {
+          "text": "sensor",
+          "depth": 2,
+          "name": "sensor"
+        },
+        {
+          "text": "sensor",
+          "depth": 2,
+          "name": "sensor"
+        },
+        {
+          "text": "sense",
+          "depth": 2,
+          "name": "sense"
+        },
+        {
+          "text": "sensitive / sensory",
+          "depth": 2,
+          "name": "sensitive / sensory"
+        },
+        {
+          "text": "programme",
+          "depth": 2,
+          "name": "programme"
+        },
+        {
+          "text": "programme / programmer",
+          "depth": 2,
+          "name": "programme / programmer"
+        },
+        {
+          "text": "programme",
+          "depth": 2,
+          "name": "programme"
+        },
+        {
+          "text": "programmed / programmable",
+          "depth": 2,
+          "name": "programmed / programmable"
+        },
+        {
+          "text": "integrate",
+          "depth": 2,
+          "name": "integrate"
+        },
+        {
+          "text": "integration",
+          "depth": 2,
+          "name": "integration"
+        },
+        {
+          "text": "integrate",
+          "depth": 2,
+          "name": "integrate"
+        },
+        {
+          "text": "integrated",
+          "depth": 2,
+          "name": "integrated"
+        },
+        {
+          "text": "monitor",
+          "depth": 2,
+          "name": "monitor"
+        },
+        {
+          "text": "monitor / monitoring",
+          "depth": 2,
+          "name": "monitor / monitoring"
+        },
+        {
+          "text": "monitor",
+          "depth": 2,
+          "name": "monitor"
+        },
+        {
+          "text": "monitored",
+          "depth": 2,
+          "name": "monitored"
+        },
+        {
+          "text": "encrypt",
+          "depth": 2,
+          "name": "encrypt"
+        },
+        {
+          "text": "encryption",
+          "depth": 2,
+          "name": "encryption"
+        },
+        {
+          "text": "encrypt",
+          "depth": 2,
+          "name": "encrypt"
+        },
+        {
+          "text": "encrypted",
+          "depth": 2,
+          "name": "encrypted"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "556:3139",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A __________ word activates the smart speaker's microphone to receive commands.",
+          "depth": 1,
+          "name": "1. A __________ word activates the smart speaker's microphone to receive commands."
+        },
+        {
+          "text": "2.  A smart __________ learns the household's patterns and adjusts temperature automatically.",
+          "depth": 1,
+          "name": "2. A smart __________ learns the household's patterns and adjusts temperature automatically."
+        },
+        {
+          "text": "3.  A __________ sensor switches lights on when someone enters the room.",
+          "depth": 1,
+          "name": "3. A __________ sensor switches lights on when someone enters the room."
+        },
+        {
+          "text": "4.  The doorbell __________ streams live video when a visitor presses the button.",
+          "depth": 1,
+          "name": "4. The doorbell __________ streams live video when a visitor presses the button."
+        },
+        {
+          "text": "5.  __________ mode reduces energy consumption when the house is unoccupied.",
+          "depth": 1,
+          "name": "5. __________ mode reduces energy consumption when the house is unoccupied."
+        },
+        {
+          "text": "6.  A __________ adjusts the brightness of a smart bulb from full power to dim.",
+          "depth": 1,
+          "name": "6. A __________ adjusts the brightness of a smart bulb from full power to dim."
+        },
+        {
+          "text": "7.  A __________ strings multiple automated actions into a single voice trigger.",
+          "depth": 1,
+          "name": "7. A __________ strings multiple automated actions into a single voice trigger."
+        },
+        {
+          "text": "8.  __________ uses the homeowner's phone location to trigger heating before arrival.",
+          "depth": 1,
+          "name": "8. __________ uses the homeowner's phone location to trigger heating before arrival."
+        },
+        {
+          "text": "9.  Cloud __________ archives security camera footage for later review.",
+          "depth": 1,
+          "name": "9. Cloud __________ archives security camera footage for later review."
+        },
+        {
+          "text": "10. A __________ remote controls multiple entertainment devices from one handset.",
+          "depth": 1,
+          "name": "10. A __________ remote controls multiple entertainment devices from one handset."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. wake  2. thermostat  3. motion  4. camera  5. Eco  6. dimmer  7. routine  8. Geofencing  9. storage  10. universal",
+          "depth": 2,
+          "name": "1. wake 2. thermostat 3. motion 4. camera 5. Eco 6. dimmer 7. routine 8. Geofencing 9. storage 10. universal"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "556:3157",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Smart Home Adoption by Region",
+          "depth": 2,
+          "name": "Smart Home Adoption by Region"
+        },
+        {
+          "text": "The US and UK lead in smart speaker adoption — over 40% of UK households own one. In the Middle East, smart home technology is growing rapidly, especially in the UAE and Saudi Arabia, where new developments often come pre-fitted with smart systems. Japan focuses on elderly care robotics as part of smart home integration.",
+          "depth": 2,
+          "name": "The US and UK lead in smart speaker adoption — over 40% of UK households own one. In the Middle East, smart home technology is growing rapidly, especially in the UAE and Saudi Arabia, where new developments often come pre-fitted with smart systems. Japan focuses on elderly care robotics as part of smart home integration."
+        },
+        {
+          "text": "Privacy vs Convenience",
+          "depth": 2,
+          "name": "Privacy vs Convenience"
+        },
+        {
+          "text": "The tension between convenience and privacy is a major theme. Smart speakers technically 'listen' for their wake word constantly, though they only record after hearing it. Some users cover cameras and mute microphones when not in use. The phrase 'If it's free, you're the product' captures concerns about data collection by tech companies.",
+          "depth": 2,
+          "name": "The tension between convenience and privacy is a major theme. Smart speakers technically 'listen' for their wake word constantly, though they only record after hearing it. Some users cover cameras and mute microphones when not in use. The phrase 'If it's free, you're the product' captures concerns about data collection by tech companies."
+        },
+        {
+          "text": "Programme vs Program",
+          "depth": 2,
+          "name": "Programme vs Program"
+        },
+        {
+          "text": "In British English: 'programme' (general sense — TV programme, training programme). 'Program' (specifically for computer software). In American English: 'program' for everything. For the verb: British English uses 'programme' for general use but 'program' for computing. This dual spelling catches many learners.",
+          "depth": 2,
+          "name": "In British English: 'programme' (general sense — TV programme, training programme). 'Program' (specifically for computer software). In American English: 'program' for everything. For the verb: British English uses 'programme' for general use but 'program' for computing. This dual spelling catches many learners."
+        },
+        {
+          "text": "Smart Home and Energy in Islam",
+          "depth": 2,
+          "name": "Smart Home and Energy in Islam"
+        },
+        {
+          "text": "Energy conservation aligns with Islamic principles of avoiding waste (israf). Smart home technology that reduces energy consumption — smart thermostats, automated lighting, efficient scheduling — resonates with the Quranic principle of moderation and not wasting resources.",
+          "depth": 2,
+          "name": "Energy conservation aligns with Islamic principles of avoiding waste (israf). Smart home technology that reduces energy consumption — smart thermostats, automated lighting, efficient scheduling — resonates with the Quranic principle of moderation and not wasting resources."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "556:3173",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "thermostat",
+          "depth": 2,
+          "name": "thermostat"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "smart ~, ~ setting, ~ control",
+          "depth": 2,
+          "name": "smart ~, ~ setting, ~ control"
+        },
+        {
+          "text": "sensor",
+          "depth": 2,
+          "name": "sensor"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "motion ~, ~ data, temperature ~",
+          "depth": 2,
+          "name": "motion ~, ~ data, temperature ~"
+        },
+        {
+          "text": "automation",
+          "depth": 2,
+          "name": "automation"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "home ~, ~ system, ~ hub",
+          "depth": 2,
+          "name": "home ~, ~ system, ~ hub"
+        },
+        {
+          "text": "hub",
+          "depth": 2,
+          "name": "hub"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "smart ~, ~ device, central ~",
+          "depth": 2,
+          "name": "smart ~, ~ device, central ~"
+        },
+        {
+          "text": "notification",
+          "depth": 2,
+          "name": "notification"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "push ~, ~ alert, ~ setting",
+          "depth": 2,
+          "name": "push ~, ~ alert, ~ setting"
+        },
+        {
+          "text": "Wi-Fi",
+          "depth": 2,
+          "name": "Wi-Fi"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ network, ~ router, ~ signal",
+          "depth": 2,
+          "name": "~ network, ~ router, ~ signal"
+        },
+        {
+          "text": "firmware",
+          "depth": 2,
+          "name": "firmware"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "~ update, ~ version, ~ bug",
+          "depth": 2,
+          "name": "~ update, ~ version, ~ bug"
+        },
+        {
+          "text": "plug",
+          "depth": 2,
+          "name": "plug"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "smart ~, ~ socket, ~ in",
+          "depth": 2,
+          "name": "smart ~, ~ socket, ~ in"
+        },
+        {
+          "text": "routine",
+          "depth": 2,
+          "name": "routine"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "bedtime ~, ~ command, daily ~",
+          "depth": 2,
+          "name": "bedtime ~, ~ command, daily ~"
+        },
+        {
+          "text": "compatible",
+          "depth": 2,
+          "name": "compatible"
+        },
+        {
+          "text": "adj",
+          "depth": 2,
+          "name": "adj"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ device, ~ app, ~ system",
+          "depth": 2,
+          "name": "~ device, ~ app, ~ system"
+        }
+      ]
+    }
+  }
+}

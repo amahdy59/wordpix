@@ -1,0 +1,393 @@
+{
+  "unitId": "real-estate-agency",
+  "name": "The Real Estate Agency",
+  "subtopics": [
+    {
+      "id": "real-estate-roles",
+      "title": "Real Estate Roles",
+      "wordIds": [
+        "real-estate-agent",
+        "broker",
+        "appraiser",
+        "inspector",
+        "mortgage-lender",
+        "title-agent",
+        "property-manager",
+        "developer",
+        "contractor",
+        "architect"
+      ]
+    },
+    {
+      "id": "buying-process",
+      "title": "Buying Process",
+      "wordIds": [
+        "listing",
+        "open-house",
+        "showing",
+        "offer",
+        "counter-offer",
+        "negotiation",
+        "appraisal",
+        "inspection",
+        "closing",
+        "escrow"
+      ]
+    },
+    {
+      "id": "financial-terms",
+      "title": "Financial Terms",
+      "wordIds": [
+        "mortgage",
+        "down-payment",
+        "interest-rate",
+        "closing-costs",
+        "equity",
+        "appreciation",
+        "depreciation",
+        "tax-assessment",
+        "hoa-fee",
+        "pre-approval"
+      ]
+    },
+    {
+      "id": "documents",
+      "title": "Documents",
+      "wordIds": [
+        "listing-agreement",
+        "purchase-agreement",
+        "deed",
+        "title",
+        "mortgage-note",
+        "disclosure",
+        "survey",
+        "insurance-policy",
+        "tax-return",
+        "proof-of-income"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "real-estate-agent",
+      "label": "Real Estate Agent",
+      "ipa": "/rɪəl ɪˈsteɪt ˈeɪdʒənt/",
+      "cefr": "C1",
+      "imageNodeId": "467:16136"
+    },
+    {
+      "kind": "card",
+      "id": "broker",
+      "label": "Broker",
+      "ipa": "/ˈbroʊkər/",
+      "cefr": "B2",
+      "imageNodeId": "467:16140"
+    },
+    {
+      "kind": "card",
+      "id": "appraiser",
+      "label": "Appraiser",
+      "ipa": "/əˈpreɪzər/",
+      "cefr": "B2",
+      "imageNodeId": "467:16144"
+    },
+    {
+      "kind": "card",
+      "id": "inspector",
+      "label": "Inspector",
+      "ipa": "/ɪnˈspɛktər/",
+      "cefr": "B2",
+      "imageNodeId": "467:16148"
+    },
+    {
+      "kind": "card",
+      "id": "mortgage-lender",
+      "label": "Mortgage Lender",
+      "ipa": "/ˈmɔːrɡɪdʒ ˈlɛndər/",
+      "cefr": "C1",
+      "imageNodeId": "467:16152"
+    },
+    {
+      "kind": "card",
+      "id": "title-agent",
+      "label": "Title Agent",
+      "ipa": "/ˈtaɪtəl ˈeɪdʒənt/",
+      "cefr": "C1",
+      "imageNodeId": "467:16156"
+    },
+    {
+      "kind": "card",
+      "id": "property-manager",
+      "label": "Property Manager",
+      "ipa": "/ˈprɒpərti ˈmænɪdʒər/",
+      "cefr": "C1",
+      "imageNodeId": "467:16160"
+    },
+    {
+      "kind": "card",
+      "id": "developer",
+      "label": "Developer",
+      "ipa": "/dɪˈvɛləpər/",
+      "cefr": "B2",
+      "imageNodeId": "467:16164"
+    },
+    {
+      "kind": "card",
+      "id": "contractor",
+      "label": "Contractor",
+      "ipa": "/ˈkɒntræktər/",
+      "cefr": "C1",
+      "imageNodeId": "467:16168"
+    },
+    {
+      "kind": "card",
+      "id": "architect",
+      "label": "Architect",
+      "ipa": "/ˈɑːrkɪˌtɛkt/",
+      "cefr": "B2",
+      "imageNodeId": "467:16172"
+    },
+    {
+      "kind": "card",
+      "id": "listing",
+      "label": "Listing",
+      "ipa": "/ˈlɪstɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16181"
+    },
+    {
+      "kind": "card",
+      "id": "open-house",
+      "label": "Open House",
+      "ipa": "/ˈoʊpən haʊs/",
+      "cefr": "C1",
+      "imageNodeId": "467:16185"
+    },
+    {
+      "kind": "card",
+      "id": "showing",
+      "label": "Showing",
+      "ipa": "/ˈʃoʊɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16189"
+    },
+    {
+      "kind": "card",
+      "id": "offer",
+      "label": "Offer",
+      "ipa": "/ˈɒfər/",
+      "cefr": "B2",
+      "imageNodeId": "467:16193"
+    },
+    {
+      "kind": "card",
+      "id": "counter-offer",
+      "label": "Counter Offer",
+      "ipa": "/ˈkaʊntər ˈɒfər/",
+      "cefr": "C1",
+      "imageNodeId": "467:16197"
+    },
+    {
+      "kind": "card",
+      "id": "negotiation",
+      "label": "Negotiation",
+      "ipa": "/nɪˌɡoʊʃiˈeɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:16201"
+    },
+    {
+      "kind": "card",
+      "id": "appraisal",
+      "label": "Appraisal",
+      "ipa": "/əˈpreɪzəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:16205"
+    },
+    {
+      "kind": "card",
+      "id": "inspection",
+      "label": "Inspection",
+      "ipa": "/ɪnˈspɛkʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:16209"
+    },
+    {
+      "kind": "card",
+      "id": "closing",
+      "label": "Closing",
+      "ipa": "/ˈkloʊzɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16213"
+    },
+    {
+      "kind": "card",
+      "id": "escrow",
+      "label": "Escrow",
+      "ipa": "/ˈɛskroʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16217"
+    },
+    {
+      "kind": "card",
+      "id": "mortgage",
+      "label": "Mortgage",
+      "ipa": "/ˈmɔːrɡɪdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16226"
+    },
+    {
+      "kind": "card",
+      "id": "down-payment",
+      "label": "Down Payment",
+      "ipa": "/daʊn ˈpeɪmənt/",
+      "cefr": "C1",
+      "imageNodeId": "467:16230"
+    },
+    {
+      "kind": "card",
+      "id": "interest-rate",
+      "label": "Interest Rate",
+      "ipa": "/ˈɪntrɪst reɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:16234"
+    },
+    {
+      "kind": "card",
+      "id": "closing-costs",
+      "label": "Closing Costs",
+      "ipa": "/ˈkloʊzɪŋ kɒsts/",
+      "cefr": "C1",
+      "imageNodeId": "467:16238"
+    },
+    {
+      "kind": "card",
+      "id": "equity",
+      "label": "Equity",
+      "ipa": "/ˈɛkwɪti/",
+      "cefr": "B2",
+      "imageNodeId": "467:16242"
+    },
+    {
+      "kind": "card",
+      "id": "appreciation",
+      "label": "Appreciation",
+      "ipa": "/əˌpriːʃiˈeɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:16246"
+    },
+    {
+      "kind": "card",
+      "id": "depreciation",
+      "label": "Depreciation",
+      "ipa": "/dɪˌpriːʃiˈeɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:16250"
+    },
+    {
+      "kind": "card",
+      "id": "tax-assessment",
+      "label": "Tax Assessment",
+      "ipa": "/tæks əˈsɛsmənt/",
+      "cefr": "C1",
+      "imageNodeId": "467:16254"
+    },
+    {
+      "kind": "card",
+      "id": "hoa-fee",
+      "label": "HOA Fee",
+      "ipa": "/ˌeɪtʃoʊˈeɪ fiː/",
+      "cefr": "C1",
+      "imageNodeId": "467:16258"
+    },
+    {
+      "kind": "card",
+      "id": "pre-approval",
+      "label": "Pre-Approval",
+      "ipa": "/priː əˈpruːvəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:16262"
+    },
+    {
+      "kind": "card",
+      "id": "listing-agreement",
+      "label": "Listing Agreement",
+      "ipa": "/ˈlɪstɪŋ əˈɡriːmənt/",
+      "cefr": "C1",
+      "imageNodeId": "467:16271"
+    },
+    {
+      "kind": "card",
+      "id": "purchase-agreement",
+      "label": "Purchase Agreement",
+      "ipa": "/ˈpɜːrtʃɪs əˈɡriːmənt/",
+      "cefr": "C1",
+      "imageNodeId": "467:16275"
+    },
+    {
+      "kind": "card",
+      "id": "deed",
+      "label": "Deed",
+      "ipa": "/diːd/",
+      "cefr": "B2",
+      "imageNodeId": "467:16279"
+    },
+    {
+      "kind": "card",
+      "id": "title",
+      "label": "Title",
+      "ipa": "/ˈtaɪtəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:16283"
+    },
+    {
+      "kind": "card",
+      "id": "mortgage-note",
+      "label": "Mortgage Note",
+      "ipa": "/ˈmɔːrɡɪdʒ noʊt/",
+      "cefr": "C1",
+      "imageNodeId": "467:16287"
+    },
+    {
+      "kind": "card",
+      "id": "disclosure",
+      "label": "Disclosure",
+      "ipa": "/dɪsˈkloʊʒər/",
+      "cefr": "C1",
+      "imageNodeId": "467:16291"
+    },
+    {
+      "kind": "card",
+      "id": "survey",
+      "label": "Survey",
+      "ipa": "/ˈsɜːrveɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16295"
+    },
+    {
+      "kind": "card",
+      "id": "insurance-policy",
+      "label": "Insurance Policy",
+      "ipa": "/ɪnˈʃʊərəns ˈpɒlɪsi/",
+      "cefr": "C1",
+      "imageNodeId": "467:16299"
+    },
+    {
+      "kind": "card",
+      "id": "tax-return",
+      "label": "Tax Return",
+      "ipa": "/tæks rɪˈtɜːrn/",
+      "cefr": "C1",
+      "imageNodeId": "467:16303"
+    },
+    {
+      "kind": "card",
+      "id": "proof-of-income",
+      "label": "Proof of Income",
+      "ipa": "/pruːf əv ˈɪnkʌm/",
+      "cefr": "C1",
+      "imageNodeId": "467:16307"
+    }
+  ],
+  "materials": null
+}

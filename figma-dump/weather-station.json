@@ -1,0 +1,1646 @@
+{
+  "unitId": "weather-station",
+  "name": "The Weather Station",
+  "subtopics": [
+    {
+      "id": "fair-weather",
+      "title": "Fair Weather",
+      "wordIds": [
+        "sunshine",
+        "clear-sky",
+        "partly-cloudy",
+        "warm-breeze",
+        "dry-air",
+        "blue-sky",
+        "calm",
+        "mild-temperature",
+        "pleasant",
+        "balmy"
+      ]
+    },
+    {
+      "id": "wet-weather",
+      "title": "Wet Weather",
+      "wordIds": [
+        "rain",
+        "drizzle",
+        "downpour",
+        "puddle",
+        "flood",
+        "rainbow",
+        "umbrella",
+        "raincoat",
+        "rain-boots",
+        "wet-road"
+      ]
+    },
+    {
+      "id": "cold-weather",
+      "title": "Cold Weather",
+      "wordIds": [
+        "snow",
+        "snowflake",
+        "ice",
+        "frost",
+        "hail",
+        "sleet",
+        "icicle",
+        "snowstorm",
+        "frozen-pond",
+        "fog"
+      ]
+    },
+    {
+      "id": "severe-weather",
+      "title": "Severe Weather",
+      "wordIds": [
+        "thunderstorm",
+        "lightning",
+        "thunder",
+        "tornado",
+        "hurricane",
+        "strong-wind",
+        "dust-storm",
+        "heat-wave",
+        "drought",
+        "blizzard"
+      ]
+    },
+    {
+      "id": "weather-instruments",
+      "title": "Weather Instruments",
+      "wordIds": [
+        "thermometer",
+        "barometer",
+        "anemometer",
+        "rain-gauge",
+        "weather-vane",
+        "hygrometer",
+        "weather-satellite",
+        "radar-dish",
+        "weather-balloon",
+        "wind-sock"
+      ]
+    },
+    {
+      "id": "seasons-climate",
+      "title": "Seasons & Climate",
+      "wordIds": [
+        "spring",
+        "summer",
+        "autumn",
+        "winter",
+        "temperature",
+        "humidity",
+        "wind-speed",
+        "cloud-cover",
+        "sunrise",
+        "sunset",
+        "sunny",
+        "cloudy",
+        "rainy",
+        "snowy",
+        "windy",
+        "stormy",
+        "foggy",
+        "radar",
+        "satellite",
+        "dew"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "sunshine",
+      "label": "Sunshine",
+      "ipa": "/ˈsʌnˌʃaɪn/",
+      "cefr": "A2",
+      "imageNodeId": "44:8865"
+    },
+    {
+      "kind": "card",
+      "id": "clear-sky",
+      "label": "Clear Sky",
+      "ipa": "/klɪər skaɪ/",
+      "cefr": "B1",
+      "imageNodeId": "44:8869"
+    },
+    {
+      "kind": "card",
+      "id": "partly-cloudy",
+      "label": "Partly Cloudy",
+      "ipa": "/ˈpɑːrtli ˈklaʊdi/",
+      "cefr": "B1",
+      "imageNodeId": "44:8873"
+    },
+    {
+      "kind": "card",
+      "id": "warm-breeze",
+      "label": "Warm Breeze",
+      "ipa": "/wɔːrm briːz/",
+      "cefr": "B1",
+      "imageNodeId": "44:8877"
+    },
+    {
+      "kind": "card",
+      "id": "dry-air",
+      "label": "Dry Air",
+      "ipa": "/draɪ ɛər/",
+      "cefr": "B1",
+      "imageNodeId": "44:8881"
+    },
+    {
+      "kind": "card",
+      "id": "blue-sky",
+      "label": "Blue Sky",
+      "ipa": "/bluː skaɪ/",
+      "cefr": "B1",
+      "imageNodeId": "44:8885"
+    },
+    {
+      "kind": "card",
+      "id": "calm",
+      "label": "Calm",
+      "ipa": "/kɑːm/",
+      "cefr": "A2",
+      "imageNodeId": "44:8889"
+    },
+    {
+      "kind": "card",
+      "id": "mild-temperature",
+      "label": "Mild Temperature",
+      "ipa": "/maɪld ˈtɛmpərɪtʃər/",
+      "cefr": "B2",
+      "imageNodeId": "44:8893"
+    },
+    {
+      "kind": "card",
+      "id": "pleasant",
+      "label": "Pleasant",
+      "ipa": "/ˈplɛzənt/",
+      "cefr": "A2",
+      "imageNodeId": "44:8897"
+    },
+    {
+      "kind": "card",
+      "id": "balmy",
+      "label": "Balmy",
+      "ipa": "/ˈbɑːmi/",
+      "cefr": "A2",
+      "imageNodeId": "44:8901"
+    },
+    {
+      "kind": "card",
+      "id": "rain",
+      "label": "Rain",
+      "ipa": "/reɪn/",
+      "cefr": "A2",
+      "imageNodeId": "44:8910"
+    },
+    {
+      "kind": "card",
+      "id": "drizzle",
+      "label": "Drizzle",
+      "ipa": "/ˈdrɪzəl/",
+      "cefr": "A2",
+      "imageNodeId": "44:8914"
+    },
+    {
+      "kind": "card",
+      "id": "downpour",
+      "label": "Downpour",
+      "ipa": "/ˈdaʊnˌpɔːr/",
+      "cefr": "A2",
+      "imageNodeId": "44:8918"
+    },
+    {
+      "kind": "card",
+      "id": "puddle",
+      "label": "Puddle",
+      "ipa": "/ˈpʌdəl/",
+      "cefr": "A2",
+      "imageNodeId": "44:8922"
+    },
+    {
+      "kind": "card",
+      "id": "flood",
+      "label": "Flood",
+      "ipa": "/flʌd/",
+      "cefr": "A2",
+      "imageNodeId": "44:8926"
+    },
+    {
+      "kind": "card",
+      "id": "rainbow",
+      "label": "Rainbow",
+      "ipa": "/ˈreɪnˌboʊ/",
+      "cefr": "A2",
+      "imageNodeId": "44:8930"
+    },
+    {
+      "kind": "card",
+      "id": "umbrella",
+      "label": "Umbrella",
+      "ipa": "/ʌmˈbrɛlə/",
+      "cefr": "A2",
+      "imageNodeId": "44:8934"
+    },
+    {
+      "kind": "card",
+      "id": "raincoat",
+      "label": "Raincoat",
+      "ipa": "/ˈreɪnˌkoʊt/",
+      "cefr": "A2",
+      "imageNodeId": "44:8938"
+    },
+    {
+      "kind": "card",
+      "id": "rain-boots",
+      "label": "Rain Boots",
+      "ipa": "/reɪn buːts/",
+      "cefr": "B1",
+      "imageNodeId": "44:8942"
+    },
+    {
+      "kind": "card",
+      "id": "wet-road",
+      "label": "Wet Road",
+      "ipa": "/wɛt roʊd/",
+      "cefr": "B1",
+      "imageNodeId": "44:8946"
+    },
+    {
+      "kind": "card",
+      "id": "snow",
+      "label": "Snow",
+      "ipa": "/snoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "44:8955"
+    },
+    {
+      "kind": "card",
+      "id": "snowflake",
+      "label": "Snowflake",
+      "ipa": "/ˈsnoʊˌfleɪk/",
+      "cefr": "A2",
+      "imageNodeId": "44:8959"
+    },
+    {
+      "kind": "card",
+      "id": "ice",
+      "label": "Ice",
+      "ipa": "/aɪs/",
+      "cefr": "A2",
+      "imageNodeId": "44:8963"
+    },
+    {
+      "kind": "card",
+      "id": "frost",
+      "label": "Frost",
+      "ipa": "/frɒst/",
+      "cefr": "A2",
+      "imageNodeId": "44:8967"
+    },
+    {
+      "kind": "card",
+      "id": "hail",
+      "label": "Hail",
+      "ipa": "/heɪl/",
+      "cefr": "A2",
+      "imageNodeId": "44:8971"
+    },
+    {
+      "kind": "card",
+      "id": "sleet",
+      "label": "Sleet",
+      "ipa": "/sliːt/",
+      "cefr": "A2",
+      "imageNodeId": "44:8975"
+    },
+    {
+      "kind": "card",
+      "id": "icicle",
+      "label": "Icicle",
+      "ipa": "/ˈaɪsɪkəl/",
+      "cefr": "A2",
+      "imageNodeId": "44:8979"
+    },
+    {
+      "kind": "card",
+      "id": "snowstorm",
+      "label": "Snowstorm",
+      "ipa": "/ˈsnoʊˌstɔːrm/",
+      "cefr": "A2",
+      "imageNodeId": "44:8983"
+    },
+    {
+      "kind": "card",
+      "id": "frozen-pond",
+      "label": "Frozen Pond",
+      "ipa": "/ˈfroʊzən pɒnd/",
+      "cefr": "B1",
+      "imageNodeId": "44:8987"
+    },
+    {
+      "kind": "card",
+      "id": "fog",
+      "label": "Fog",
+      "ipa": "/fɒɡ/",
+      "cefr": "A2",
+      "imageNodeId": "44:8991"
+    },
+    {
+      "kind": "card",
+      "id": "thunderstorm",
+      "label": "Thunderstorm",
+      "ipa": "/ˈθʌndərˌstɔːrm/",
+      "cefr": "B1",
+      "imageNodeId": "44:9000"
+    },
+    {
+      "kind": "card",
+      "id": "lightning",
+      "label": "Lightning",
+      "ipa": "/ˈlaɪtnɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "44:9004"
+    },
+    {
+      "kind": "card",
+      "id": "thunder",
+      "label": "Thunder",
+      "ipa": "/ˈθʌndər/",
+      "cefr": "A2",
+      "imageNodeId": "44:9008"
+    },
+    {
+      "kind": "card",
+      "id": "tornado",
+      "label": "Tornado",
+      "ipa": "/tɔːrˈneɪdoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "44:9012"
+    },
+    {
+      "kind": "card",
+      "id": "hurricane",
+      "label": "Hurricane",
+      "ipa": "/ˈhʌrɪˌkeɪn/",
+      "cefr": "A2",
+      "imageNodeId": "44:9016"
+    },
+    {
+      "kind": "card",
+      "id": "strong-wind",
+      "label": "Strong Wind",
+      "ipa": "/strɒŋ wɪnd/",
+      "cefr": "B1",
+      "imageNodeId": "44:9020"
+    },
+    {
+      "kind": "card",
+      "id": "dust-storm",
+      "label": "Dust Storm",
+      "ipa": "/dʌst stɔːrm/",
+      "cefr": "B1",
+      "imageNodeId": "44:9024"
+    },
+    {
+      "kind": "card",
+      "id": "heat-wave",
+      "label": "Heat Wave",
+      "ipa": "/hiːt weɪv/",
+      "cefr": "B1",
+      "imageNodeId": "44:9028"
+    },
+    {
+      "kind": "card",
+      "id": "drought",
+      "label": "Drought",
+      "ipa": "/draʊt/",
+      "cefr": "A2",
+      "imageNodeId": "44:9032"
+    },
+    {
+      "kind": "card",
+      "id": "blizzard",
+      "label": "Blizzard",
+      "ipa": "/ˈblɪzərd/",
+      "cefr": "A2",
+      "imageNodeId": "44:9036"
+    },
+    {
+      "kind": "card",
+      "id": "thermometer",
+      "label": "Thermometer",
+      "ipa": "/θərˈmɒmɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "44:9045"
+    },
+    {
+      "kind": "card",
+      "id": "barometer",
+      "label": "Barometer",
+      "ipa": "/bəˈrɒmɪtər/",
+      "cefr": "A2",
+      "imageNodeId": "44:9049"
+    },
+    {
+      "kind": "card",
+      "id": "anemometer",
+      "label": "Anemometer",
+      "ipa": "/ˌænɪˈmɒmɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "44:9053"
+    },
+    {
+      "kind": "card",
+      "id": "rain-gauge",
+      "label": "Rain Gauge",
+      "ipa": "/reɪn ɡeɪdʒ/",
+      "cefr": "B1",
+      "imageNodeId": "44:9057"
+    },
+    {
+      "kind": "card",
+      "id": "weather-vane",
+      "label": "Weather Vane",
+      "ipa": "/ˈwɛðər veɪn/",
+      "cefr": "B1",
+      "imageNodeId": "44:9061"
+    },
+    {
+      "kind": "card",
+      "id": "hygrometer",
+      "label": "Hygrometer",
+      "ipa": "/haɪˈɡrɒmɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "44:9065"
+    },
+    {
+      "kind": "card",
+      "id": "weather-satellite",
+      "label": "Weather Satellite",
+      "ipa": "/ˈwɛðər ˈsætəˌlaɪt/",
+      "cefr": "B2",
+      "imageNodeId": "44:9069"
+    },
+    {
+      "kind": "card",
+      "id": "radar-dish",
+      "label": "Radar Dish",
+      "ipa": "/ˈreɪdɑːr dɪʃ/",
+      "cefr": "B1",
+      "imageNodeId": "44:9073"
+    },
+    {
+      "kind": "card",
+      "id": "weather-balloon",
+      "label": "Weather Balloon",
+      "ipa": "/ˈwɛðər bəˈluːn/",
+      "cefr": "B2",
+      "imageNodeId": "44:9077"
+    },
+    {
+      "kind": "card",
+      "id": "wind-sock",
+      "label": "Wind Sock",
+      "ipa": "/wɪnd sɒk/",
+      "cefr": "B1",
+      "imageNodeId": "44:9081"
+    },
+    {
+      "kind": "card",
+      "id": "spring",
+      "label": "Spring",
+      "ipa": "/sprɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "44:9090"
+    },
+    {
+      "kind": "card",
+      "id": "summer",
+      "label": "Summer",
+      "ipa": "/ˈsʌmər/",
+      "cefr": "A2",
+      "imageNodeId": "44:9094"
+    },
+    {
+      "kind": "card",
+      "id": "autumn",
+      "label": "Autumn",
+      "ipa": "/ˈɔːtəm/",
+      "cefr": "A2",
+      "imageNodeId": "44:9098"
+    },
+    {
+      "kind": "card",
+      "id": "winter",
+      "label": "Winter",
+      "ipa": "/ˈwɪntər/",
+      "cefr": "A2",
+      "imageNodeId": "44:9102"
+    },
+    {
+      "kind": "card",
+      "id": "temperature",
+      "label": "Temperature",
+      "ipa": "/ˈtɛmpərɪtʃər/",
+      "cefr": "B1",
+      "imageNodeId": "44:9106"
+    },
+    {
+      "kind": "card",
+      "id": "humidity",
+      "label": "Humidity",
+      "ipa": "/hjuːˈmɪdɪti/",
+      "cefr": "A2",
+      "imageNodeId": "44:9110"
+    },
+    {
+      "kind": "card",
+      "id": "wind-speed",
+      "label": "Wind Speed",
+      "ipa": "/wɪnd spiːd/",
+      "cefr": "B1",
+      "imageNodeId": "44:9114"
+    },
+    {
+      "kind": "card",
+      "id": "cloud-cover",
+      "label": "Cloud Cover",
+      "ipa": "/klaʊd ˈkʌvər/",
+      "cefr": "B1",
+      "imageNodeId": "44:9118"
+    },
+    {
+      "kind": "card",
+      "id": "sunrise",
+      "label": "Sunrise",
+      "ipa": "/ˈsʌnˌraɪz/",
+      "cefr": "A2",
+      "imageNodeId": "44:9122"
+    },
+    {
+      "kind": "card",
+      "id": "sunset",
+      "label": "Sunset",
+      "ipa": "/ˈsʌnˌsɛt/",
+      "cefr": "A2",
+      "imageNodeId": "44:9126"
+    },
+    {
+      "kind": "card",
+      "id": "sunny",
+      "label": "Sunny",
+      "ipa": "/ˈsʌni/",
+      "cefr": "A2",
+      "imageNodeId": "39:3580"
+    },
+    {
+      "kind": "card",
+      "id": "cloudy",
+      "label": "Cloudy",
+      "ipa": "/ˈklaʊdi/",
+      "cefr": "A2",
+      "imageNodeId": "39:3584"
+    },
+    {
+      "kind": "card",
+      "id": "rainy",
+      "label": "Rainy",
+      "ipa": "/ˈreɪni/",
+      "cefr": "A2",
+      "imageNodeId": "39:3588"
+    },
+    {
+      "kind": "card",
+      "id": "snowy",
+      "label": "Snowy",
+      "ipa": "/ˈsnoʊi/",
+      "cefr": "A2",
+      "imageNodeId": "39:3592"
+    },
+    {
+      "kind": "card",
+      "id": "windy",
+      "label": "Windy",
+      "ipa": "/ˈwɪndi/",
+      "cefr": "A2",
+      "imageNodeId": "39:3596"
+    },
+    {
+      "kind": "card",
+      "id": "stormy",
+      "label": "Stormy",
+      "ipa": "/ˈstɔːrmi/",
+      "cefr": "A2",
+      "imageNodeId": "39:3600"
+    },
+    {
+      "kind": "card",
+      "id": "foggy",
+      "label": "Foggy",
+      "ipa": "/ˈfɒɡi/",
+      "cefr": "A2",
+      "imageNodeId": "39:3604"
+    },
+    {
+      "kind": "card",
+      "id": "radar",
+      "label": "Radar",
+      "ipa": "/ˈreɪdɑːr/",
+      "cefr": "A2",
+      "imageNodeId": "39:3639"
+    },
+    {
+      "kind": "card",
+      "id": "satellite",
+      "label": "Satellite",
+      "ipa": "/ˈsætəˌlaɪt/",
+      "cefr": "A2",
+      "imageNodeId": "39:3643"
+    },
+    {
+      "kind": "card",
+      "id": "dew",
+      "label": "Dew",
+      "ipa": "/djuː/",
+      "cefr": "A2",
+      "imageNodeId": "39:3674"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "565:3",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "565:5",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1+ · Topic: The Art Studio",
+          "depth": 1,
+          "name": "Level: B1+ · Topic: The Art Studio"
+        },
+        {
+          "text": "The Art Studio: Where Creativity Meets Discipline\n\nMany people imagine that working in an art studio is a romantic, carefree experience — an artist standing before a canvas, waiting for inspiration to strike. In reality, the life of a professional artist requires as much discipline and organisation as any office job, and the studio itself is a carefully designed workspace where creativity is nurtured through routine.\n\nA well-equipped art studio typically contains a range of materials and tools. Painters need easels, canvases, palettes, brushes of various sizes, and tubes of oil, acrylic, or watercolour paint. Sculptors work with clay, plaster, wood, or metal and use chisels, mallets, and — increasingly — power tools. Printmakers operate heavy presses and use sharp cutting tools to carve designs into blocks of wood or linoleum.\n\nLighting is one of the most important aspects of any studio. Most artists prefer natural light from north-facing windows because it is consistent throughout the day — it doesn't cast strong shadows or change colour as the sun moves. If natural light isn't available, artists use daylight-balanced LED lamps that mimic the qualities of sunlight without the heat.\n\nStudio spaces have changed significantly over the past century. In the early 1900s, artists worked in cold, draughty attics or warehouses because those spaces were cheap and had large windows. Since the mid-20th century, purpose-built studios and shared art spaces have become more common. These co-working studios — where several artists rent individual areas within a larger building — have grown particularly popular since the 2010s. They offer not only affordable workspace but also a sense of community that can prevent the isolation many artists experience.\n\nOne of the biggest challenges artists face is the cost of materials. Professional-quality oil paints, for example, can be extremely expensive, especially those made from rare pigments. Many art schools have started teaching students about sustainable practices — making their own paints, recycling canvases, and using found objects in their work.",
+          "depth": 1,
+          "name": "The Art Studio: Where Creativity Meets Discipline Many people imagine that working in an art studio is a romantic, carefree experience — an artist standing before a canvas, waiting for inspiration to strike. In reality, the life of a professional artist requires as much discipline and organisation as any office job, and the studio itself is a carefully designed workspace where creativity is nurtured through routine. A well-equipped art studio typically contains a range of materials and tools. Painters need easels, canvases, palettes, brushes of various sizes, and tubes of oil, acrylic, or watercolour paint. Sculptors work with clay, plaster, wood, or metal and use chisels, mallets, and — increasingly — power tools. Printmakers operate heavy presses and use sharp cutting tools to carve designs into blocks of wood or linoleum. Lighting is one of the most important aspects of any studio. Most artists prefer natural light from north-facing windows because it is consistent throughout the day — it doesn't cast strong shadows or change colour as the sun moves. If natural light isn't available, artists use daylight-balanced LED lamps that mimic the qualities of sunlight without the heat. Studio spaces have changed significantly over the past century. In the early 1900s, artists worked in cold, draughty attics or warehouses because those spaces were cheap and had large windows. Since the mid-20th century, purpose-built studios and shared art spaces have become more common. These co-working studios — where several artists rent individual areas within a larger building — have grown particularly popular since the 2010s. They offer not only affordable workspace but also a sense of community that can prevent the isolation many artists experience. One of the biggest challenges artists face is the cost of materials. Professional-quality oil paints, for example, can be extremely expensive, especially those made from rare pigments. Many art schools have started teaching students about sustainable practices — making their own paints, recycling canvases, and using found objects in their work."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. How does the passage challenge the romantic image of being an artist?",
+          "depth": 1,
+          "name": "1. How does the passage challenge the romantic image of being an artist?"
+        },
+        {
+          "text": "2. Why do most artists prefer north-facing windows in their studios?",
+          "depth": 1,
+          "name": "2. Why do most artists prefer north-facing windows in their studios?"
+        },
+        {
+          "text": "3. How have studio spaces evolved since the early 1900s?",
+          "depth": 1,
+          "name": "3. How have studio spaces evolved since the early 1900s?"
+        },
+        {
+          "text": "4. What advantages do co-working art studios offer?",
+          "depth": 1,
+          "name": "4. What advantages do co-working art studios offer?"
+        },
+        {
+          "text": "5. What sustainable practices have art schools started teaching?",
+          "depth": 1,
+          "name": "5. What sustainable practices have art schools started teaching?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "565:18",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "the big picture",
+          "depth": 2,
+          "name": "the big picture"
+        },
+        {
+          "text": "the overall situation or most important aspects, not the small details",
+          "depth": 2,
+          "name": "the overall situation or most important aspects, not the small details"
+        },
+        {
+          "text": "\"Don't worry about which brush to use — think about the big picture first.\"",
+          "depth": 2,
+          "name": "\"Don't worry about which brush to use — think about the big picture first.\""
+        },
+        {
+          "text": "draw the line",
+          "depth": 2,
+          "name": "draw the line"
+        },
+        {
+          "text": "set a limit on what you will accept or allow",
+          "depth": 2,
+          "name": "set a limit on what you will accept or allow"
+        },
+        {
+          "text": "\"I'm happy to lend my paints, but I draw the line at lending my best brushes.\"",
+          "depth": 2,
+          "name": "\"I'm happy to lend my paints, but I draw the line at lending my best brushes.\""
+        },
+        {
+          "text": "a blank canvas",
+          "depth": 2,
+          "name": "a blank canvas"
+        },
+        {
+          "text": "a fresh start; a new situation with no restrictions",
+          "depth": 2,
+          "name": "a fresh start; a new situation with no restrictions"
+        },
+        {
+          "text": "\"Starting a new project is like having a blank canvas — exciting but also a little frightening.\"",
+          "depth": 2,
+          "name": "\"Starting a new project is like having a blank canvas — exciting but also a little frightening.\""
+        },
+        {
+          "text": "put (someone) in the picture",
+          "depth": 2,
+          "name": "put (someone) in the picture"
+        },
+        {
+          "text": "give someone the information they need to understand a situation",
+          "depth": 2,
+          "name": "give someone the information they need to understand a situation"
+        },
+        {
+          "text": "\"I've missed the last two meetings — can you put me in the picture?\"",
+          "depth": 2,
+          "name": "\"I've missed the last two meetings — can you put me in the picture?\""
+        },
+        {
+          "text": "paint (something) in a good/bad light",
+          "depth": 2,
+          "name": "paint (something) in a good/bad light"
+        },
+        {
+          "text": "present something in a positive or negative way",
+          "depth": 2,
+          "name": "present something in a positive or negative way"
+        },
+        {
+          "text": "\"The review painted her exhibition in a very positive light.\"",
+          "depth": 2,
+          "name": "\"The review painted her exhibition in a very positive light.\""
+        },
+        {
+          "text": "sketch out",
+          "depth": 2,
+          "name": "sketch out"
+        },
+        {
+          "text": "describe or explain something briefly, giving only the main points",
+          "depth": 2,
+          "name": "describe or explain something briefly, giving only the main points"
+        },
+        {
+          "text": "\"Can you sketch out your ideas before the meeting so we can discuss them?\"",
+          "depth": 2,
+          "name": "\"Can you sketch out your ideas before the meeting so we can discuss them?\""
+        },
+        {
+          "text": "brush up on",
+          "depth": 2,
+          "name": "brush up on"
+        },
+        {
+          "text": "revise or improve your knowledge of something you learned before",
+          "depth": 2,
+          "name": "revise or improve your knowledge of something you learned before"
+        },
+        {
+          "text": "\"I need to brush up on my colour theory before the exam.\"",
+          "depth": 2,
+          "name": "\"I need to brush up on my colour theory before the exam.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "565:50",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: Two art students discussing their final project",
+          "depth": 1,
+          "name": "Scene: Two art students discussing their final project"
+        },
+        {
+          "text": "Yusuf:",
+          "depth": 2,
+          "name": "Yusuf:"
+        },
+        {
+          "text": "Have you started your final piece yet? The deadline's in three weeks.",
+          "depth": 2,
+          "name": "Have you started your final piece yet? The deadline's in three weeks."
+        },
+        {
+          "text": "Fatima:",
+          "depth": 2,
+          "name": "Fatima:"
+        },
+        {
+          "text": "I've been working on some preliminary sketches, but I haven't decided on a medium. I'm torn between acrylics and mixed media.",
+          "depth": 2,
+          "name": "I've been working on some preliminary sketches, but I haven't decided on a medium. I'm torn between acrylics and mixed media."
+        },
+        {
+          "text": "Yusuf:",
+          "depth": 2,
+          "name": "Yusuf:"
+        },
+        {
+          "text": "What's the theme again? I've forgotten what Professor Hassan said.",
+          "depth": 2,
+          "name": "What's the theme again? I've forgotten what Professor Hassan said."
+        },
+        {
+          "text": "Fatima:",
+          "depth": 2,
+          "name": "Fatima:"
+        },
+        {
+          "text": "'Transformation.' We can interpret it however we like, but it has to include at least three different techniques.",
+          "depth": 2,
+          "name": "'Transformation.' We can interpret it however we like, but it has to include at least three different techniques."
+        },
+        {
+          "text": "Yusuf:",
+          "depth": 2,
+          "name": "Yusuf:"
+        },
+        {
+          "text": "That's what I've been struggling with. I've done two oil studies, but I can't figure out the third technique. I was thinking about adding collage elements.",
+          "depth": 2,
+          "name": "That's what I've been struggling with. I've done two oil studies, but I can't figure out the third technique. I was thinking about adding collage elements."
+        },
+        {
+          "text": "Fatima:",
+          "depth": 2,
+          "name": "Fatima:"
+        },
+        {
+          "text": "That could work really well. Have you seen Layla's piece? She's been experimenting with texture — she's mixed sand into her paint.",
+          "depth": 2,
+          "name": "That could work really well. Have you seen Layla's piece? She's been experimenting with texture — she's mixed sand into her paint."
+        },
+        {
+          "text": "Yusuf:",
+          "depth": 2,
+          "name": "Yusuf:"
+        },
+        {
+          "text": "I saw it yesterday. It's impressive, but it must have taken ages. The surface needs to dry completely between each layer.",
+          "depth": 2,
+          "name": "I saw it yesterday. It's impressive, but it must have taken ages. The surface needs to dry completely between each layer."
+        },
+        {
+          "text": "Fatima:",
+          "depth": 2,
+          "name": "Fatima:"
+        },
+        {
+          "text": "True. If we'd started earlier, we'd have more time to experiment. I think I'll keep it simple — sketches, watercolour washes, and ink details.",
+          "depth": 2,
+          "name": "True. If we'd started earlier, we'd have more time to experiment. I think I'll keep it simple — sketches, watercolour washes, and ink details."
+        },
+        {
+          "text": "Yusuf:",
+          "depth": 2,
+          "name": "Yusuf:"
+        },
+        {
+          "text": "Sounds good. Shall we book one of the shared studios this weekend? It's easier to work when someone else is there.",
+          "depth": 2,
+          "name": "Sounds good. Shall we book one of the shared studios this weekend? It's easier to work when someone else is there."
+        },
+        {
+          "text": "Fatima:",
+          "depth": 2,
+          "name": "Fatima:"
+        },
+        {
+          "text": "Definitely. I'll reserve the one with the north-facing windows — the light's much better in there.",
+          "depth": 2,
+          "name": "Definitely. I'll reserve the one with the north-facing windows — the light's much better in there."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "565:85",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"She has a very good imagination. Her paintings are very imaginative.\" (overuse of 'very')",
+          "depth": 2,
+          "name": "❌ \"She has a very good imagination. Her paintings are very imaginative.\" (overuse of 'very')"
+        },
+        {
+          "text": "✅ \"She has a vivid imagination. Her paintings are highly imaginative.\"",
+          "depth": 2,
+          "name": "✅ \"She has a vivid imagination. Her paintings are highly imaginative.\""
+        },
+        {
+          "text": "At B1+, avoid over-relying on 'very'. Learn stronger collocations: 'vivid imagination', 'highly creative', 'deeply moving', 'strikingly beautiful'. These sound more natural and more sophisticated.",
+          "depth": 2,
+          "name": "At B1+, avoid over-relying on 'very'. Learn stronger collocations: 'vivid imagination', 'highly creative', 'deeply moving', 'strikingly beautiful'. These sound more natural and more sophisticated."
+        },
+        {
+          "text": "❌ \"I am interesting in art.\"",
+          "depth": 2,
+          "name": "❌ \"I am interesting in art.\""
+        },
+        {
+          "text": "✅ \"I am interested in art.\"",
+          "depth": 2,
+          "name": "✅ \"I am interested in art.\""
+        },
+        {
+          "text": "-ED adjectives describe how someone feels ('interested', 'excited', 'bored'). -ING adjectives describe the thing that causes the feeling ('interesting', 'exciting', 'boring'). 'I am interested in this interesting exhibition.'",
+          "depth": 2,
+          "name": "-ED adjectives describe how someone feels ('interested', 'excited', 'bored'). -ING adjectives describe the thing that causes the feeling ('interesting', 'exciting', 'boring'). 'I am interested in this interesting exhibition.'"
+        },
+        {
+          "text": "❌ \"I paint since five years.\"",
+          "depth": 2,
+          "name": "❌ \"I paint since five years.\""
+        },
+        {
+          "text": "✅ \"I have been painting for five years.\"",
+          "depth": 2,
+          "name": "✅ \"I have been painting for five years.\""
+        },
+        {
+          "text": "For ongoing actions that started in the past and continue now, use present perfect continuous + 'for' (duration). 'She has been sculpting since 2018.' 'They have been studying art for three semesters.'",
+          "depth": 2,
+          "name": "For ongoing actions that started in the past and continue now, use present perfect continuous + 'for' (duration). 'She has been sculpting since 2018.' 'They have been studying art for three semesters.'"
+        },
+        {
+          "text": "❌ \"The exhibition will be in the galery.\"",
+          "depth": 2,
+          "name": "❌ \"The exhibition will be in the galery.\""
+        },
+        {
+          "text": "✅ \"The exhibition will be in the gallery.\"",
+          "depth": 2,
+          "name": "✅ \"The exhibition will be in the gallery.\""
+        },
+        {
+          "text": "Common spelling: 'gallery' (double l), 'palette' (not 'pallet' — that's a wooden platform), 'sculpture' (not 'sculture'), 'technique' (French-origin spelling). These words often appear in B1+ writing tasks.",
+          "depth": 2,
+          "name": "Common spelling: 'gallery' (double l), 'palette' (not 'pallet' — that's a wooden platform), 'sculpture' (not 'sculture'), 'technique' (French-origin spelling). These words often appear in B1+ writing tasks."
+        },
+        {
+          "text": "❌ \"She made a beautiful paint of the sunset.\"",
+          "depth": 2,
+          "name": "❌ \"She made a beautiful paint of the sunset.\""
+        },
+        {
+          "text": "✅ \"She made a beautiful painting of the sunset.\"",
+          "depth": 2,
+          "name": "✅ \"She made a beautiful painting of the sunset.\""
+        },
+        {
+          "text": "'Paint' (uncountable noun) = the liquid material. 'Painting' (countable noun) = the finished artwork. Also: 'draw a picture/sketch' but 'paint a painting/portrait'. The verb-noun collocations differ by medium.",
+          "depth": 2,
+          "name": "'Paint' (uncountable noun) = the liquid material. 'Painting' (countable noun) = the finished artwork. Also: 'draw a picture/sketch' but 'paint a painting/portrait'. The verb-noun collocations differ by medium."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "565:109",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Art vocabulary has rich derivations — notice the patterns in -tion, -ive, and -ist endings.",
+          "depth": 1,
+          "name": "Art vocabulary has rich derivations — notice the patterns in -tion, -ive, and -ist endings."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "create",
+          "depth": 2,
+          "name": "create"
+        },
+        {
+          "text": "creation / creativity / creator",
+          "depth": 2,
+          "name": "creation / creativity / creator"
+        },
+        {
+          "text": "create",
+          "depth": 2,
+          "name": "create"
+        },
+        {
+          "text": "creative",
+          "depth": 2,
+          "name": "creative"
+        },
+        {
+          "text": "inspire",
+          "depth": 2,
+          "name": "inspire"
+        },
+        {
+          "text": "inspiration",
+          "depth": 2,
+          "name": "inspiration"
+        },
+        {
+          "text": "inspire",
+          "depth": 2,
+          "name": "inspire"
+        },
+        {
+          "text": "inspired / inspiring",
+          "depth": 2,
+          "name": "inspired / inspiring"
+        },
+        {
+          "text": "exhibit",
+          "depth": 2,
+          "name": "exhibit"
+        },
+        {
+          "text": "exhibition / exhibitor",
+          "depth": 2,
+          "name": "exhibition / exhibitor"
+        },
+        {
+          "text": "exhibit",
+          "depth": 2,
+          "name": "exhibit"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "sculpt",
+          "depth": 2,
+          "name": "sculpt"
+        },
+        {
+          "text": "sculpture / sculptor",
+          "depth": 2,
+          "name": "sculpture / sculptor"
+        },
+        {
+          "text": "sculpt",
+          "depth": 2,
+          "name": "sculpt"
+        },
+        {
+          "text": "sculptural",
+          "depth": 2,
+          "name": "sculptural"
+        },
+        {
+          "text": "compose",
+          "depth": 2,
+          "name": "compose"
+        },
+        {
+          "text": "composition / composer",
+          "depth": 2,
+          "name": "composition / composer"
+        },
+        {
+          "text": "compose",
+          "depth": 2,
+          "name": "compose"
+        },
+        {
+          "text": "composite",
+          "depth": 2,
+          "name": "composite"
+        },
+        {
+          "text": "illustrate",
+          "depth": 2,
+          "name": "illustrate"
+        },
+        {
+          "text": "illustration / illustrator",
+          "depth": 2,
+          "name": "illustration / illustrator"
+        },
+        {
+          "text": "illustrate",
+          "depth": 2,
+          "name": "illustrate"
+        },
+        {
+          "text": "illustrative",
+          "depth": 2,
+          "name": "illustrative"
+        },
+        {
+          "text": "restore",
+          "depth": 2,
+          "name": "restore"
+        },
+        {
+          "text": "restoration / restorer",
+          "depth": 2,
+          "name": "restoration / restorer"
+        },
+        {
+          "text": "restore",
+          "depth": 2,
+          "name": "restore"
+        },
+        {
+          "text": "restorative",
+          "depth": 2,
+          "name": "restorative"
+        },
+        {
+          "text": "portray",
+          "depth": 2,
+          "name": "portray"
+        },
+        {
+          "text": "portrait / portrayal",
+          "depth": 2,
+          "name": "portrait / portrayal"
+        },
+        {
+          "text": "portray",
+          "depth": 2,
+          "name": "portray"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "sketch",
+          "depth": 2,
+          "name": "sketch"
+        },
+        {
+          "text": "sketch / sketcher",
+          "depth": 2,
+          "name": "sketch / sketcher"
+        },
+        {
+          "text": "sketch",
+          "depth": 2,
+          "name": "sketch"
+        },
+        {
+          "text": "sketchy",
+          "depth": 2,
+          "name": "sketchy"
+        },
+        {
+          "text": "abstract",
+          "depth": 2,
+          "name": "abstract"
+        },
+        {
+          "text": "abstraction",
+          "depth": 2,
+          "name": "abstraction"
+        },
+        {
+          "text": "abstract",
+          "depth": 2,
+          "name": "abstract"
+        },
+        {
+          "text": "abstract",
+          "depth": 2,
+          "name": "abstract"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "565:169",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "B1+ Challenge: Some require present perfect simple vs continuous, or -ed/-ing adjectives.",
+          "depth": 1,
+          "name": "B1+ Challenge: Some require present perfect simple vs continuous, or -ed/-ing adjectives."
+        },
+        {
+          "text": "1.  She has been __________ (paint) all morning — her hands are covered in colour.",
+          "depth": 1,
+          "name": "1. She has been __________ (paint) all morning — her hands are covered in colour."
+        },
+        {
+          "text": "2.  The gallery is hosting an __________ (exhibit) of modern sculpture.",
+          "depth": 1,
+          "name": "2. The gallery is hosting an __________ (exhibit) of modern sculpture."
+        },
+        {
+          "text": "3.  If you __________ (not / varnish) the painting, the colours will fade over time.",
+          "depth": 1,
+          "name": "3. If you __________ (not / varnish) the painting, the colours will fade over time."
+        },
+        {
+          "text": "4.  He's always been __________ (interest) in Renaissance art.",
+          "depth": 1,
+          "name": "4. He's always been __________ (interest) in Renaissance art."
+        },
+        {
+          "text": "5.  The artist has __________ (complete) over 200 works since she opened her studio.",
+          "depth": 1,
+          "name": "5. The artist has __________ (complete) over 200 works since she opened her studio."
+        },
+        {
+          "text": "6.  Natural light is __________ (prefer) by most painters because it is consistent.",
+          "depth": 1,
+          "name": "6. Natural light is __________ (prefer) by most painters because it is consistent."
+        },
+        {
+          "text": "7.  I need to brush __________ on my drawing skills before the life drawing class.",
+          "depth": 1,
+          "name": "7. I need to brush __________ on my drawing skills before the life drawing class."
+        },
+        {
+          "text": "8.  The sculpture was __________ (make) from recycled materials found in the local area.",
+          "depth": 1,
+          "name": "8. The sculpture was __________ (make) from recycled materials found in the local area."
+        },
+        {
+          "text": "9.  This is the most __________ (inspire) exhibition I've ever visited.",
+          "depth": 1,
+          "name": "9. This is the most __________ (inspire) exhibition I've ever visited."
+        },
+        {
+          "text": "10. She __________ (work) on this series for two years and it's nearly finished.",
+          "depth": 1,
+          "name": "10. She __________ (work) on this series for two years and it's nearly finished."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. painting  2. exhibition  3. don't varnish  4. interested  5. completed  6. preferred  7. up  8. made  9. inspiring  10. has been working",
+          "depth": 2,
+          "name": "1. painting 2. exhibition 3. don't varnish 4. interested 5. completed 6. preferred 7. up 8. made 9. inspiring 10. has been working"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "565:187",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "The Turner Prize — Love It or Hate It",
+          "depth": 2,
+          "name": "The Turner Prize — Love It or Hate It"
+        },
+        {
+          "text": "The Turner Prize is one of Britain's most famous — and controversial — contemporary art awards. Named after the painter J.M.W. Turner, it's awarded annually to a British visual artist. Winners have included installations made from a messy bedroom (Tracey Emin, 1999 — nominated but didn't win) and a light switching on and off (Martin Creed, 2001). It regularly sparks debates about what qualifies as 'real art.'",
+          "depth": 2,
+          "name": "The Turner Prize is one of Britain's most famous — and controversial — contemporary art awards. Named after the painter J.M.W. Turner, it's awarded annually to a British visual artist. Winners have included installations made from a messy bedroom (Tracey Emin, 1999 — nominated but didn't win) and a light switching on and off (Martin Creed, 2001). It regularly sparks debates about what qualifies as 'real art.'"
+        },
+        {
+          "text": "Islamic Geometric Art",
+          "depth": 2,
+          "name": "Islamic Geometric Art"
+        },
+        {
+          "text": "Islamic art has a centuries-long tradition of geometric patterns, calligraphy, and arabesque — elaborate interlocking designs that avoid depicting living beings. These patterns can be found in mosques, palaces, and manuscripts across the Muslim world. The mathematical precision behind Islamic geometric art has influenced Western artists, architects, and designers, including M.C. Escher.",
+          "depth": 2,
+          "name": "Islamic art has a centuries-long tradition of geometric patterns, calligraphy, and arabesque — elaborate interlocking designs that avoid depicting living beings. These patterns can be found in mosques, palaces, and manuscripts across the Muslim world. The mathematical precision behind Islamic geometric art has influenced Western artists, architects, and designers, including M.C. Escher."
+        },
+        {
+          "text": "'Artisan' vs 'Artist' — A Useful Distinction",
+          "depth": 2,
+          "name": "'Artisan' vs 'Artist' — A Useful Distinction"
+        },
+        {
+          "text": "An 'artist' creates work primarily for expression or aesthetic value (painters, sculptors). An 'artisan' creates skilled handmade products with a practical function (potters, weavers, leather workers). The word 'artisan' has recently been borrowed by marketing — 'artisan bread', 'artisan coffee' — to suggest handmade quality, even when the product is mass-produced. Learners encounter both words in Cambridge B1+ reading texts.",
+          "depth": 2,
+          "name": "An 'artist' creates work primarily for expression or aesthetic value (painters, sculptors). An 'artisan' creates skilled handmade products with a practical function (potters, weavers, leather workers). The word 'artisan' has recently been borrowed by marketing — 'artisan bread', 'artisan coffee' — to suggest handmade quality, even when the product is mass-produced. Learners encounter both words in Cambridge B1+ reading texts."
+        },
+        {
+          "text": "Open Studio Events",
+          "depth": 2,
+          "name": "Open Studio Events"
+        },
+        {
+          "text": "In many British and European cities, artists open their studios to the public once or twice a year. These 'Open Studio' events let visitors watch artists at work, ask questions, and buy directly — often at lower prices than galleries charge. They're excellent opportunities to practise art vocabulary in a real context.",
+          "depth": 2,
+          "name": "In many British and European cities, artists open their studios to the public once or twice a year. These 'Open Studio' events let visitors watch artists at work, ask questions, and buy directly — often at lower prices than galleries charge. They're excellent opportunities to practise art vocabulary in a real context."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "565:203",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference — B1+ art vocabulary with typical collocations.",
+          "depth": 1,
+          "name": "Structured reference — B1+ art vocabulary with typical collocations."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "CEFR",
+          "depth": 2,
+          "name": "CEFR"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "canvas",
+          "depth": 2,
+          "name": "canvas"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1",
+          "depth": 2,
+          "name": "B1"
+        },
+        {
+          "text": "stretch a ~, blank ~, oil on ~",
+          "depth": 2,
+          "name": "stretch a ~, blank ~, oil on ~"
+        },
+        {
+          "text": "palette",
+          "depth": 2,
+          "name": "palette"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "colour ~, ~ knife, limited ~",
+          "depth": 2,
+          "name": "colour ~, ~ knife, limited ~"
+        },
+        {
+          "text": "easel",
+          "depth": 2,
+          "name": "easel"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1",
+          "depth": 2,
+          "name": "B1"
+        },
+        {
+          "text": "set up an ~, wooden ~, adjustable ~",
+          "depth": 2,
+          "name": "set up an ~, wooden ~, adjustable ~"
+        },
+        {
+          "text": "sculpture",
+          "depth": 2,
+          "name": "sculpture"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1",
+          "depth": 2,
+          "name": "B1"
+        },
+        {
+          "text": "bronze ~, ~ exhibition, abstract ~",
+          "depth": 2,
+          "name": "bronze ~, ~ exhibition, abstract ~"
+        },
+        {
+          "text": "portrait",
+          "depth": 2,
+          "name": "portrait"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "~ painting, self-~, ~ artist",
+          "depth": 2,
+          "name": "~ painting, self-~, ~ artist"
+        },
+        {
+          "text": "perspective",
+          "depth": 2,
+          "name": "perspective"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "linear ~, ~ drawing, in ~",
+          "depth": 2,
+          "name": "linear ~, ~ drawing, in ~"
+        },
+        {
+          "text": "composition",
+          "depth": 2,
+          "name": "composition"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "visual ~, ~ skills, strong ~",
+          "depth": 2,
+          "name": "visual ~, ~ skills, strong ~"
+        },
+        {
+          "text": "medium",
+          "depth": 2,
+          "name": "medium"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "artistic ~, mixed ~, working ~",
+          "depth": 2,
+          "name": "artistic ~, mixed ~, working ~"
+        },
+        {
+          "text": "exhibition",
+          "depth": 2,
+          "name": "exhibition"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1",
+          "depth": 2,
+          "name": "B1"
+        },
+        {
+          "text": "solo ~, ~ opening, ~ space",
+          "depth": 2,
+          "name": "solo ~, ~ opening, ~ space"
+        },
+        {
+          "text": "pigment",
+          "depth": 2,
+          "name": "pigment"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B2",
+          "depth": 2,
+          "name": "B2"
+        },
+        {
+          "text": "natural ~, ~ powder, rare ~",
+          "depth": 2,
+          "name": "natural ~, ~ powder, rare ~"
+        }
+      ]
+    }
+  }
+}

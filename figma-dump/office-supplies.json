@@ -1,0 +1,489 @@
+{
+  "unitId": "office-supplies",
+  "name": "Office Supplies",
+  "subtopics": [
+    {
+      "id": "writing-supplies",
+      "title": "Writing Supplies",
+      "wordIds": [
+        "pen",
+        "pencil",
+        "highlighter",
+        "marker",
+        "eraser",
+        "mechanical-pencil",
+        "fountain-pen",
+        "felt-tip-pen",
+        "correction-tape",
+        "whiteboard-marker"
+      ]
+    },
+    {
+      "id": "paper-products",
+      "title": "Paper Products",
+      "wordIds": [
+        "paper",
+        "notebook",
+        "legal-pad",
+        "sticky-note",
+        "index-card",
+        "envelope",
+        "folder",
+        "binder",
+        "manila-folder",
+        "label"
+      ]
+    },
+    {
+      "id": "fasteners-clips",
+      "title": "Fasteners & Clips",
+      "wordIds": [
+        "stapler",
+        "paper-clip",
+        "binder-clip",
+        "rubber-band",
+        "pushpin",
+        "thumbtack",
+        "tape",
+        "glue-stick",
+        "fastener",
+        "magnet"
+      ]
+    },
+    {
+      "id": "desk-accessories",
+      "title": "Desk Accessories",
+      "wordIds": [
+        "desk-organizer",
+        "pencil-cup",
+        "tape-dispenser",
+        "letter-tray",
+        "desk-lamp",
+        "mouse-pad",
+        "wrist-rest",
+        "monitor-stand",
+        "cable-organizer",
+        "desk-calendar"
+      ]
+    },
+    {
+      "id": "mailing-supplies",
+      "title": "Mailing Supplies",
+      "wordIds": [
+        "stamp",
+        "shipping-label",
+        "packing-tape",
+        "bubble-wrap",
+        "box",
+        "padded-envelope",
+        "return-label",
+        "postage-meter",
+        "mail-slot",
+        "letter-opener"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "pen",
+      "label": "Pen",
+      "ipa": "/pɛn/",
+      "cefr": "B2",
+      "imageNodeId": "467:13271"
+    },
+    {
+      "kind": "card",
+      "id": "pencil",
+      "label": "Pencil",
+      "ipa": "/ˈpɛnsəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:13275"
+    },
+    {
+      "kind": "card",
+      "id": "highlighter",
+      "label": "Highlighter",
+      "ipa": "/ˈhaɪˌlaɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13279"
+    },
+    {
+      "kind": "card",
+      "id": "marker",
+      "label": "Marker",
+      "ipa": "/ˈmɑːrkər/",
+      "cefr": "B2",
+      "imageNodeId": "467:13283"
+    },
+    {
+      "kind": "card",
+      "id": "eraser",
+      "label": "Eraser",
+      "ipa": "/ɪˈreɪsər/",
+      "cefr": "B2",
+      "imageNodeId": "467:13287"
+    },
+    {
+      "kind": "card",
+      "id": "mechanical-pencil",
+      "label": "Mechanical Pencil",
+      "ipa": "/mɪˈkænɪkəl ˈpɛnsəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:13291"
+    },
+    {
+      "kind": "card",
+      "id": "fountain-pen",
+      "label": "Fountain Pen",
+      "ipa": "/ˈfaʊntɪn pɛn/",
+      "cefr": "C1",
+      "imageNodeId": "467:13295"
+    },
+    {
+      "kind": "card",
+      "id": "felt-tip-pen",
+      "label": "Felt-Tip Pen",
+      "ipa": "/fɛlt tɪp pɛn/",
+      "cefr": "C1",
+      "imageNodeId": "467:13299"
+    },
+    {
+      "kind": "card",
+      "id": "correction-tape",
+      "label": "Correction Tape",
+      "ipa": "/kəˈrɛkʃən teɪp/",
+      "cefr": "C1",
+      "imageNodeId": "467:13303"
+    },
+    {
+      "kind": "card",
+      "id": "whiteboard-marker",
+      "label": "Whiteboard Marker",
+      "ipa": "/ˈwaɪtˌbɔːrd ˈmɑːrkər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13307"
+    },
+    {
+      "kind": "card",
+      "id": "paper",
+      "label": "Paper",
+      "ipa": "/ˈpeɪpər/",
+      "cefr": "B2",
+      "imageNodeId": "467:13316"
+    },
+    {
+      "kind": "card",
+      "id": "notebook",
+      "label": "Notebook",
+      "ipa": "/ˈnoʊtˌbʊk/",
+      "cefr": "B2",
+      "imageNodeId": "467:13320"
+    },
+    {
+      "kind": "card",
+      "id": "legal-pad",
+      "label": "Legal Pad",
+      "ipa": "/ˈliːɡəl pæd/",
+      "cefr": "C1",
+      "imageNodeId": "467:13324"
+    },
+    {
+      "kind": "card",
+      "id": "sticky-note",
+      "label": "Sticky Note",
+      "ipa": "/ˈstɪki noʊt/",
+      "cefr": "C1",
+      "imageNodeId": "467:13328"
+    },
+    {
+      "kind": "card",
+      "id": "index-card",
+      "label": "Index Card",
+      "ipa": "/ˈɪndɛks kɑːrd/",
+      "cefr": "C1",
+      "imageNodeId": "467:13332"
+    },
+    {
+      "kind": "card",
+      "id": "envelope",
+      "label": "Envelope",
+      "ipa": "/ˈɛnvəˌloʊp/",
+      "cefr": "B2",
+      "imageNodeId": "467:13336"
+    },
+    {
+      "kind": "card",
+      "id": "folder",
+      "label": "Folder",
+      "ipa": "/ˈfoʊldər/",
+      "cefr": "B2",
+      "imageNodeId": "467:13340"
+    },
+    {
+      "kind": "card",
+      "id": "binder",
+      "label": "Binder",
+      "ipa": "/ˈbaɪndər/",
+      "cefr": "B2",
+      "imageNodeId": "467:13344"
+    },
+    {
+      "kind": "card",
+      "id": "manila-folder",
+      "label": "Manila Folder",
+      "ipa": "/məˈnɪlə ˈfoʊldər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13348"
+    },
+    {
+      "kind": "card",
+      "id": "label",
+      "label": "Label",
+      "ipa": "/ˈleɪbəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:13352"
+    },
+    {
+      "kind": "card",
+      "id": "stapler",
+      "label": "Stapler",
+      "ipa": "/ˈsteɪplər/",
+      "cefr": "B2",
+      "imageNodeId": "467:13361"
+    },
+    {
+      "kind": "card",
+      "id": "paper-clip",
+      "label": "Paper Clip",
+      "ipa": "/ˈpeɪpər klɪp/",
+      "cefr": "C1",
+      "imageNodeId": "467:13365"
+    },
+    {
+      "kind": "card",
+      "id": "binder-clip",
+      "label": "Binder Clip",
+      "ipa": "/ˈbaɪndər klɪp/",
+      "cefr": "C1",
+      "imageNodeId": "467:13369"
+    },
+    {
+      "kind": "card",
+      "id": "rubber-band",
+      "label": "Rubber Band",
+      "ipa": "/ˈrʌbər bænd/",
+      "cefr": "C1",
+      "imageNodeId": "467:13373"
+    },
+    {
+      "kind": "card",
+      "id": "pushpin",
+      "label": "Pushpin",
+      "ipa": "/ˈpʊʃˌpɪn/",
+      "cefr": "B2",
+      "imageNodeId": "467:13377"
+    },
+    {
+      "kind": "card",
+      "id": "thumbtack",
+      "label": "Thumbtack",
+      "ipa": "/ˈθʌmˌtæk/",
+      "cefr": "B2",
+      "imageNodeId": "467:13381"
+    },
+    {
+      "kind": "card",
+      "id": "tape",
+      "label": "Tape",
+      "ipa": "/teɪp/",
+      "cefr": "B2",
+      "imageNodeId": "467:13385"
+    },
+    {
+      "kind": "card",
+      "id": "glue-stick",
+      "label": "Glue Stick",
+      "ipa": "/ɡluː stɪk/",
+      "cefr": "C1",
+      "imageNodeId": "467:13389"
+    },
+    {
+      "kind": "card",
+      "id": "fastener",
+      "label": "Fastener",
+      "ipa": "/ˈfæsənər/",
+      "cefr": "B2",
+      "imageNodeId": "467:13393"
+    },
+    {
+      "kind": "card",
+      "id": "magnet",
+      "label": "Magnet",
+      "ipa": "/ˈmæɡnɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:13397"
+    },
+    {
+      "kind": "card",
+      "id": "desk-organizer",
+      "label": "Desk Organizer",
+      "ipa": "/dɛsk ˈɔːrɡəˌnaɪzər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13406"
+    },
+    {
+      "kind": "card",
+      "id": "pencil-cup",
+      "label": "Pencil Cup",
+      "ipa": "/ˈpɛnsəl kʌp/",
+      "cefr": "C1",
+      "imageNodeId": "467:13410"
+    },
+    {
+      "kind": "card",
+      "id": "tape-dispenser",
+      "label": "Tape Dispenser",
+      "ipa": "/teɪp dɪˈspɛnsər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13414"
+    },
+    {
+      "kind": "card",
+      "id": "letter-tray",
+      "label": "Letter Tray",
+      "ipa": "/ˈlɛtər treɪ/",
+      "cefr": "C1",
+      "imageNodeId": "467:13418"
+    },
+    {
+      "kind": "card",
+      "id": "desk-lamp",
+      "label": "Desk Lamp",
+      "ipa": "/dɛsk læmp/",
+      "cefr": "C1",
+      "imageNodeId": "467:13422"
+    },
+    {
+      "kind": "card",
+      "id": "mouse-pad",
+      "label": "Mouse Pad",
+      "ipa": "/maʊs pæd/",
+      "cefr": "C1",
+      "imageNodeId": "467:13426"
+    },
+    {
+      "kind": "card",
+      "id": "wrist-rest",
+      "label": "Wrist Rest",
+      "ipa": "/rɪst rɛst/",
+      "cefr": "C1",
+      "imageNodeId": "467:13430"
+    },
+    {
+      "kind": "card",
+      "id": "monitor-stand",
+      "label": "Monitor Stand",
+      "ipa": "/ˈmɒnɪtər stænd/",
+      "cefr": "C1",
+      "imageNodeId": "467:13434"
+    },
+    {
+      "kind": "card",
+      "id": "cable-organizer",
+      "label": "Cable Organizer",
+      "ipa": "/ˈkeɪbəl ˈɔːrɡəˌnaɪzər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13438"
+    },
+    {
+      "kind": "card",
+      "id": "desk-calendar",
+      "label": "Desk Calendar",
+      "ipa": "/dɛsk ˈkæləndər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13442"
+    },
+    {
+      "kind": "card",
+      "id": "stamp",
+      "label": "Stamp",
+      "ipa": "/stæmp/",
+      "cefr": "B2",
+      "imageNodeId": "467:13451"
+    },
+    {
+      "kind": "card",
+      "id": "shipping-label",
+      "label": "Shipping Label",
+      "ipa": "/ˈʃɪpɪŋ ˈleɪbəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:13455"
+    },
+    {
+      "kind": "card",
+      "id": "packing-tape",
+      "label": "Packing Tape",
+      "ipa": "/ˈpækɪŋ teɪp/",
+      "cefr": "C1",
+      "imageNodeId": "467:13459"
+    },
+    {
+      "kind": "card",
+      "id": "bubble-wrap",
+      "label": "Bubble Wrap",
+      "ipa": "/ˈbʌbəl ræp/",
+      "cefr": "C1",
+      "imageNodeId": "467:13463"
+    },
+    {
+      "kind": "card",
+      "id": "box",
+      "label": "Box",
+      "ipa": "/bɒks/",
+      "cefr": "B2",
+      "imageNodeId": "467:13467"
+    },
+    {
+      "kind": "card",
+      "id": "padded-envelope",
+      "label": "Padded Envelope",
+      "ipa": "/ˈpædɪd ˈɛnvəˌloʊp/",
+      "cefr": "C1",
+      "imageNodeId": "467:13471"
+    },
+    {
+      "kind": "card",
+      "id": "return-label",
+      "label": "Return Label",
+      "ipa": "/rɪˈtɜːrn ˈleɪbəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:13475"
+    },
+    {
+      "kind": "card",
+      "id": "postage-meter",
+      "label": "Postage Meter",
+      "ipa": "/ˈpoʊstɪdʒ ˈmiːtər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13479"
+    },
+    {
+      "kind": "card",
+      "id": "mail-slot",
+      "label": "Mail Slot",
+      "ipa": "/meɪl slɒt/",
+      "cefr": "C1",
+      "imageNodeId": "467:13483"
+    },
+    {
+      "kind": "card",
+      "id": "letter-opener",
+      "label": "Letter Opener",
+      "ipa": "/ˈlɛtər ˈoʊpənər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13487"
+    }
+  ],
+  "materials": null
+}

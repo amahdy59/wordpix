@@ -1,0 +1,1674 @@
+{
+  "unitId": "garden",
+  "name": "The Garden",
+  "subtopics": [
+    {
+      "id": "flowers",
+      "title": "Flowers",
+      "wordIds": [
+        "rose",
+        "tulip",
+        "sunflower",
+        "daisy",
+        "lily",
+        "daffodil",
+        "violet",
+        "orchid",
+        "carnation",
+        "lavender"
+      ]
+    },
+    {
+      "id": "trees-shrubs",
+      "title": "Trees & Shrubs",
+      "wordIds": [
+        "oak-tree",
+        "pine-tree",
+        "apple-tree",
+        "cherry-tree",
+        "palm-tree",
+        "hedge",
+        "bush",
+        "ivy",
+        "vine",
+        "fern"
+      ]
+    },
+    {
+      "id": "garden-tools",
+      "title": "Garden Tools",
+      "wordIds": [
+        "shovel",
+        "rake",
+        "watering-can",
+        "wheelbarrow",
+        "hose",
+        "garden-gloves",
+        "pruner",
+        "trowel",
+        "lawn-mower",
+        "spade",
+        "pitchfork",
+        "sprinkler"
+      ]
+    },
+    {
+      "id": "parts-of-a-plant",
+      "title": "Parts of a Plant",
+      "wordIds": [
+        "root",
+        "stem",
+        "leaf",
+        "petal",
+        "branch",
+        "bark",
+        "bud",
+        "seed",
+        "thorn",
+        "berry"
+      ]
+    },
+    {
+      "id": "garden-creatures",
+      "title": "Garden Creatures",
+      "wordIds": [
+        "butterfly",
+        "ladybug",
+        "bee",
+        "worm",
+        "snail",
+        "ant",
+        "caterpillar",
+        "spider",
+        "dragonfly",
+        "grasshopper"
+      ]
+    },
+    {
+      "id": "garden-features",
+      "title": "Garden Features",
+      "wordIds": [
+        "lawn",
+        "flower-bed",
+        "path",
+        "fence",
+        "gate",
+        "greenhouse",
+        "bird-feeder",
+        "garden-shed",
+        "birdbath",
+        "compost-bin",
+        "flower",
+        "tree",
+        "grass",
+        "gloves",
+        "bird"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "rose",
+      "label": "Rose",
+      "ipa": "/roʊz/",
+      "cefr": "A1",
+      "imageNodeId": "44:1151"
+    },
+    {
+      "kind": "card",
+      "id": "tulip",
+      "label": "Tulip",
+      "ipa": "/ˈtuːlɪp/",
+      "cefr": "A1",
+      "imageNodeId": "44:1155"
+    },
+    {
+      "kind": "card",
+      "id": "sunflower",
+      "label": "Sunflower",
+      "ipa": "/ˈsʌnflaʊər/",
+      "cefr": "A1",
+      "imageNodeId": "44:1159"
+    },
+    {
+      "kind": "card",
+      "id": "daisy",
+      "label": "Daisy",
+      "ipa": "/ˈdeɪzi/",
+      "cefr": "A1",
+      "imageNodeId": "44:1163"
+    },
+    {
+      "kind": "card",
+      "id": "lily",
+      "label": "Lily",
+      "ipa": "/ˈlɪli/",
+      "cefr": "A1",
+      "imageNodeId": "44:1167"
+    },
+    {
+      "kind": "card",
+      "id": "daffodil",
+      "label": "Daffodil",
+      "ipa": "/ˈdæfədɪl/",
+      "cefr": "A1",
+      "imageNodeId": "44:1171"
+    },
+    {
+      "kind": "card",
+      "id": "violet",
+      "label": "Violet",
+      "ipa": "/ˈvaɪələt/",
+      "cefr": "A1",
+      "imageNodeId": "44:1175"
+    },
+    {
+      "kind": "card",
+      "id": "orchid",
+      "label": "Orchid",
+      "ipa": "/ˈɔːrkɪd/",
+      "cefr": "A1",
+      "imageNodeId": "44:1179"
+    },
+    {
+      "kind": "card",
+      "id": "carnation",
+      "label": "Carnation",
+      "ipa": "/kɑːrˈneɪʃən/",
+      "cefr": "A1",
+      "imageNodeId": "44:1183"
+    },
+    {
+      "kind": "card",
+      "id": "lavender",
+      "label": "Lavender",
+      "ipa": "/ˈlævəndər/",
+      "cefr": "A1",
+      "imageNodeId": "44:1187"
+    },
+    {
+      "kind": "card",
+      "id": "oak-tree",
+      "label": "Oak Tree",
+      "ipa": "/oʊk triː/",
+      "cefr": "A2",
+      "imageNodeId": "44:1196"
+    },
+    {
+      "kind": "card",
+      "id": "pine-tree",
+      "label": "Pine Tree",
+      "ipa": "/paɪn triː/",
+      "cefr": "A2",
+      "imageNodeId": "44:1200"
+    },
+    {
+      "kind": "card",
+      "id": "apple-tree",
+      "label": "Apple Tree",
+      "ipa": "/ˈæpəl triː/",
+      "cefr": "A2",
+      "imageNodeId": "44:1204"
+    },
+    {
+      "kind": "card",
+      "id": "cherry-tree",
+      "label": "Cherry Tree",
+      "ipa": "/ˈtʃɛri triː/",
+      "cefr": "A2",
+      "imageNodeId": "44:1208"
+    },
+    {
+      "kind": "card",
+      "id": "palm-tree",
+      "label": "Palm Tree",
+      "ipa": "/pɑːm triː/",
+      "cefr": "A2",
+      "imageNodeId": "44:1212"
+    },
+    {
+      "kind": "card",
+      "id": "hedge",
+      "label": "Hedge",
+      "ipa": "/hɛdʒ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1216"
+    },
+    {
+      "kind": "card",
+      "id": "bush",
+      "label": "Bush",
+      "ipa": "/bʊʃ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1220"
+    },
+    {
+      "kind": "card",
+      "id": "ivy",
+      "label": "Ivy",
+      "ipa": "/ˈaɪvi/",
+      "cefr": "A1",
+      "imageNodeId": "44:1224"
+    },
+    {
+      "kind": "card",
+      "id": "vine",
+      "label": "Vine",
+      "ipa": "/vaɪn/",
+      "cefr": "A1",
+      "imageNodeId": "44:1228"
+    },
+    {
+      "kind": "card",
+      "id": "fern",
+      "label": "Fern",
+      "ipa": "/fɜːrn/",
+      "cefr": "A1",
+      "imageNodeId": "44:1232"
+    },
+    {
+      "kind": "card",
+      "id": "shovel",
+      "label": "Shovel",
+      "ipa": "/ˈʃʌvəl/",
+      "cefr": "A1",
+      "imageNodeId": "44:1241"
+    },
+    {
+      "kind": "card",
+      "id": "rake",
+      "label": "Rake",
+      "ipa": "/reɪk/",
+      "cefr": "A1",
+      "imageNodeId": "44:1245"
+    },
+    {
+      "kind": "card",
+      "id": "watering-can",
+      "label": "Watering Can",
+      "ipa": "/ˈwɔːtərɪŋ kæn/",
+      "cefr": "A2",
+      "imageNodeId": "44:1249"
+    },
+    {
+      "kind": "card",
+      "id": "wheelbarrow",
+      "label": "Wheelbarrow",
+      "ipa": "/ˈwiːlbæroʊ/",
+      "cefr": "A2",
+      "imageNodeId": "44:1253"
+    },
+    {
+      "kind": "card",
+      "id": "hose",
+      "label": "Hose",
+      "ipa": "/hoʊz/",
+      "cefr": "A1",
+      "imageNodeId": "44:1257"
+    },
+    {
+      "kind": "card",
+      "id": "garden-gloves",
+      "label": "Garden Gloves",
+      "ipa": "/ˈɡɑːrdən ɡlʌvz/",
+      "cefr": "A2",
+      "imageNodeId": "44:1261"
+    },
+    {
+      "kind": "card",
+      "id": "pruner",
+      "label": "Pruner",
+      "ipa": "/ˈpruːnər/",
+      "cefr": "A1",
+      "imageNodeId": "44:1265"
+    },
+    {
+      "kind": "card",
+      "id": "trowel",
+      "label": "Trowel",
+      "ipa": "/ˈtraʊəl/",
+      "cefr": "A1",
+      "imageNodeId": "44:1269"
+    },
+    {
+      "kind": "card",
+      "id": "lawn-mower",
+      "label": "Lawn Mower",
+      "ipa": "/lɔːn ˈmoʊər/",
+      "cefr": "A2",
+      "imageNodeId": "44:1273"
+    },
+    {
+      "kind": "card",
+      "id": "spade",
+      "label": "Spade",
+      "ipa": "/speɪd/",
+      "cefr": "A1",
+      "imageNodeId": "44:1277"
+    },
+    {
+      "kind": "card",
+      "id": "pitchfork",
+      "label": "Pitchfork",
+      "ipa": "/ˈpɪtʃfɔːrk/",
+      "cefr": "A1",
+      "imageNodeId": "44:1281"
+    },
+    {
+      "kind": "card",
+      "id": "sprinkler",
+      "label": "Sprinkler",
+      "ipa": "/ˈsprɪŋklər/",
+      "cefr": "A1",
+      "imageNodeId": "44:1285"
+    },
+    {
+      "kind": "card",
+      "id": "root",
+      "label": "Root",
+      "ipa": "/ruːt/",
+      "cefr": "A1",
+      "imageNodeId": "44:1294"
+    },
+    {
+      "kind": "card",
+      "id": "stem",
+      "label": "Stem",
+      "ipa": "/stɛm/",
+      "cefr": "A1",
+      "imageNodeId": "44:1298"
+    },
+    {
+      "kind": "card",
+      "id": "leaf",
+      "label": "Leaf",
+      "ipa": "/liːf/",
+      "cefr": "A1",
+      "imageNodeId": "44:1302"
+    },
+    {
+      "kind": "card",
+      "id": "petal",
+      "label": "Petal",
+      "ipa": "/ˈpɛtəl/",
+      "cefr": "A1",
+      "imageNodeId": "44:1306"
+    },
+    {
+      "kind": "card",
+      "id": "branch",
+      "label": "Branch",
+      "ipa": "/bræntʃ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1310"
+    },
+    {
+      "kind": "card",
+      "id": "bark",
+      "label": "Bark",
+      "ipa": "/bɑːrk/",
+      "cefr": "A1",
+      "imageNodeId": "44:1314"
+    },
+    {
+      "kind": "card",
+      "id": "bud",
+      "label": "Bud",
+      "ipa": "/bʌd/",
+      "cefr": "A1",
+      "imageNodeId": "44:1318"
+    },
+    {
+      "kind": "card",
+      "id": "seed",
+      "label": "Seed",
+      "ipa": "/siːd/",
+      "cefr": "A1",
+      "imageNodeId": "44:1322"
+    },
+    {
+      "kind": "card",
+      "id": "thorn",
+      "label": "Thorn",
+      "ipa": "/θɔːrn/",
+      "cefr": "A1",
+      "imageNodeId": "44:1326"
+    },
+    {
+      "kind": "card",
+      "id": "berry",
+      "label": "Berry",
+      "ipa": "/ˈbɛri/",
+      "cefr": "A1",
+      "imageNodeId": "44:1330"
+    },
+    {
+      "kind": "card",
+      "id": "butterfly",
+      "label": "Butterfly",
+      "ipa": "/ˈbʌtərflaɪ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1339"
+    },
+    {
+      "kind": "card",
+      "id": "ladybug",
+      "label": "Ladybug",
+      "ipa": "/ˈleɪdibʌɡ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1343"
+    },
+    {
+      "kind": "card",
+      "id": "bee",
+      "label": "Bee",
+      "ipa": "/biː/",
+      "cefr": "A1",
+      "imageNodeId": "44:1347"
+    },
+    {
+      "kind": "card",
+      "id": "worm",
+      "label": "Worm",
+      "ipa": "/wɜːrm/",
+      "cefr": "A1",
+      "imageNodeId": "44:1351"
+    },
+    {
+      "kind": "card",
+      "id": "snail",
+      "label": "Snail",
+      "ipa": "/sneɪl/",
+      "cefr": "A1",
+      "imageNodeId": "44:1355"
+    },
+    {
+      "kind": "card",
+      "id": "ant",
+      "label": "Ant",
+      "ipa": "/ænt/",
+      "cefr": "A1",
+      "imageNodeId": "44:1359"
+    },
+    {
+      "kind": "card",
+      "id": "caterpillar",
+      "label": "Caterpillar",
+      "ipa": "/ˈkætərpɪlər/",
+      "cefr": "A2",
+      "imageNodeId": "44:1363"
+    },
+    {
+      "kind": "card",
+      "id": "spider",
+      "label": "Spider",
+      "ipa": "/ˈspaɪdər/",
+      "cefr": "A1",
+      "imageNodeId": "44:1367"
+    },
+    {
+      "kind": "card",
+      "id": "dragonfly",
+      "label": "Dragonfly",
+      "ipa": "/ˈdræɡənflaɪ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1371"
+    },
+    {
+      "kind": "card",
+      "id": "grasshopper",
+      "label": "Grasshopper",
+      "ipa": "/ˈɡræshɑːpər/",
+      "cefr": "A2",
+      "imageNodeId": "44:1375"
+    },
+    {
+      "kind": "card",
+      "id": "lawn",
+      "label": "Lawn",
+      "ipa": "/lɔːn/",
+      "cefr": "A1",
+      "imageNodeId": "44:1384"
+    },
+    {
+      "kind": "card",
+      "id": "flower-bed",
+      "label": "Flower Bed",
+      "ipa": "/ˈflaʊər bɛd/",
+      "cefr": "A2",
+      "imageNodeId": "44:1388"
+    },
+    {
+      "kind": "card",
+      "id": "path",
+      "label": "Path",
+      "ipa": "/pæθ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1392"
+    },
+    {
+      "kind": "card",
+      "id": "fence",
+      "label": "Fence",
+      "ipa": "/fɛns/",
+      "cefr": "A1",
+      "imageNodeId": "44:1396"
+    },
+    {
+      "kind": "card",
+      "id": "gate",
+      "label": "Gate",
+      "ipa": "/ɡeɪt/",
+      "cefr": "A1",
+      "imageNodeId": "44:1400"
+    },
+    {
+      "kind": "card",
+      "id": "greenhouse",
+      "label": "Greenhouse",
+      "ipa": "/ˈɡriːnhaʊs/",
+      "cefr": "A2",
+      "imageNodeId": "44:1404"
+    },
+    {
+      "kind": "card",
+      "id": "bird-feeder",
+      "label": "Bird Feeder",
+      "ipa": "/bɜːrd ˈfiːdər/",
+      "cefr": "A2",
+      "imageNodeId": "44:1408"
+    },
+    {
+      "kind": "card",
+      "id": "garden-shed",
+      "label": "Garden Shed",
+      "ipa": "/ˈɡɑːrdən ʃɛd/",
+      "cefr": "A2",
+      "imageNodeId": "44:1412"
+    },
+    {
+      "kind": "card",
+      "id": "birdbath",
+      "label": "Birdbath",
+      "ipa": "/ˈbɜːrdbæθ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1416"
+    },
+    {
+      "kind": "card",
+      "id": "compost-bin",
+      "label": "Compost Bin",
+      "ipa": "/ˈkɑːmpoʊst bɪn/",
+      "cefr": "A2",
+      "imageNodeId": "44:1420"
+    },
+    {
+      "kind": "card",
+      "id": "flower",
+      "label": "Flower",
+      "ipa": "/ˈflaʊər/",
+      "cefr": "A1",
+      "imageNodeId": "39:529"
+    },
+    {
+      "kind": "card",
+      "id": "tree",
+      "label": "Tree",
+      "ipa": "/triː/",
+      "cefr": "A1",
+      "imageNodeId": "39:533"
+    },
+    {
+      "kind": "card",
+      "id": "grass",
+      "label": "Grass",
+      "ipa": "/ɡræs/",
+      "cefr": "A1",
+      "imageNodeId": "39:541"
+    },
+    {
+      "kind": "card",
+      "id": "gloves",
+      "label": "Gloves",
+      "ipa": "/ɡlʌvz/",
+      "cefr": "A1",
+      "imageNodeId": "39:584"
+    },
+    {
+      "kind": "card",
+      "id": "bird",
+      "label": "Bird",
+      "ipa": "/bɜːrd/",
+      "cefr": "A1",
+      "imageNodeId": "39:615"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "542:1923",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "542:1925",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1 · Topic: The Garden",
+          "depth": 1,
+          "name": "Level: B1 · Topic: The Garden"
+        },
+        {
+          "text": "My Grandmother's Garden\n\nEvery spring, my grandmother spends her mornings in the garden behind her house. She grows flowers, vegetables, and herbs, and she takes care of everything herself.\n\nThe garden has a small lawn surrounded by a low hedge. Along the fence, there are flower beds full of roses, tulips, and sunflowers. She waters them every morning with a hose or a watering can, depending on how much rain there has been. If the soil is too dry, she uses a sprinkler.\n\nIn the vegetable patch, she plants tomatoes, carrots, lettuce, and peppers. She prepares the soil with a rake and a shovel before planting the seeds. Once the seedlings start to grow, she adds fertiliser and removes any weeds by hand or with a small trowel.\n\nThere is a greenhouse at the back of the garden where she grows herbs like basil and mint all year round. Inside, she keeps pots on wooden shelves and uses a thermometer to check the temperature.\n\nShe also has a compost bin where she puts leftover food and garden waste. After a few months, it turns into rich compost that she mixes into the soil.\n\nMy grandmother says that gardening keeps her active and calm. I enjoy helping her — especially when it is time to pick the ripe vegetables and bring them to the kitchen.",
+          "depth": 1,
+          "name": "My Grandmother's Garden Every spring, my grandmother spends her mornings in the garden behind her house. She grows flowers, vegetables, and herbs, and she takes care of everything herself. The garden has a small lawn surrounded by a low hedge. Along the fence, there are flower beds full of roses, tulips, and sunflowers. She waters them every morning with a hose or a watering can, depending on how much rain there has been. If the soil is too dry, she uses a sprinkler. In the vegetable patch, she plants tomatoes, carrots, lettuce, and peppers. She prepares the soil with a rake and a shovel before planting the seeds. Once the seedlings start to grow, she adds fertiliser and removes any weeds by hand or with a small trowel. There is a greenhouse at the back of the garden where she grows herbs like basil and mint all year round. Inside, she keeps pots on wooden shelves and uses a thermometer to check the temperature. She also has a compost bin where she puts leftover food and garden waste. After a few months, it turns into rich compost that she mixes into the soil. My grandmother says that gardening keeps her active and calm. I enjoy helping her — especially when it is time to pick the ripe vegetables and bring them to the kitchen."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. When does the grandmother work in the garden?",
+          "depth": 1,
+          "name": "1. When does the grandmother work in the garden?"
+        },
+        {
+          "text": "2. What flowers does she grow along the fence?",
+          "depth": 1,
+          "name": "2. What flowers does she grow along the fence?"
+        },
+        {
+          "text": "3. How does she prepare the soil before planting?",
+          "depth": 1,
+          "name": "3. How does she prepare the soil before planting?"
+        },
+        {
+          "text": "4. What does she grow in the greenhouse?",
+          "depth": 1,
+          "name": "4. What does she grow in the greenhouse?"
+        },
+        {
+          "text": "5. What does the compost bin produce?",
+          "depth": 1,
+          "name": "5. What does the compost bin produce?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "542:1938",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "green thumb / green fingers",
+          "depth": 2,
+          "name": "green thumb / green fingers"
+        },
+        {
+          "text": "natural talent for growing plants",
+          "depth": 2,
+          "name": "natural talent for growing plants"
+        },
+        {
+          "text": "\"My grandmother has a real green thumb — everything she plants grows beautifully.\"",
+          "depth": 2,
+          "name": "\"My grandmother has a real green thumb — everything she plants grows beautifully.\""
+        },
+        {
+          "text": "nip it in the bud",
+          "depth": 2,
+          "name": "nip it in the bud"
+        },
+        {
+          "text": "stop a problem before it gets worse",
+          "depth": 2,
+          "name": "stop a problem before it gets worse"
+        },
+        {
+          "text": "\"If you see weeds starting, nip them in the bud before they spread.\"",
+          "depth": 2,
+          "name": "\"If you see weeds starting, nip them in the bud before they spread.\""
+        },
+        {
+          "text": "come up roses",
+          "depth": 2,
+          "name": "come up roses"
+        },
+        {
+          "text": "turn out well, have a good result",
+          "depth": 2,
+          "name": "turn out well, have a good result"
+        },
+        {
+          "text": "\"After all the hard work, the garden came up roses.\"",
+          "depth": 2,
+          "name": "\"After all the hard work, the garden came up roses.\""
+        },
+        {
+          "text": "dig up",
+          "depth": 2,
+          "name": "dig up"
+        },
+        {
+          "text": "remove from the ground; also: discover information",
+          "depth": 2,
+          "name": "remove from the ground; also: discover information"
+        },
+        {
+          "text": "\"She dug up the old plants to make room for new ones.\"",
+          "depth": 2,
+          "name": "\"She dug up the old plants to make room for new ones.\""
+        },
+        {
+          "text": "put down roots",
+          "depth": 2,
+          "name": "put down roots"
+        },
+        {
+          "text": "settle in a place and feel at home",
+          "depth": 2,
+          "name": "settle in a place and feel at home"
+        },
+        {
+          "text": "\"After years of moving, they finally put down roots in the countryside.\"",
+          "depth": 2,
+          "name": "\"After years of moving, they finally put down roots in the countryside.\""
+        },
+        {
+          "text": "grow on someone",
+          "depth": 2,
+          "name": "grow on someone"
+        },
+        {
+          "text": "gradually become liked",
+          "depth": 2,
+          "name": "gradually become liked"
+        },
+        {
+          "text": "\"Gardening didn't interest me at first, but it grew on me.\"",
+          "depth": 2,
+          "name": "\"Gardening didn't interest me at first, but it grew on me.\""
+        },
+        {
+          "text": "branch out",
+          "depth": 2,
+          "name": "branch out"
+        },
+        {
+          "text": "try something new or expand",
+          "depth": 2,
+          "name": "try something new or expand"
+        },
+        {
+          "text": "\"She branched out from flowers and started growing vegetables.\"",
+          "depth": 2,
+          "name": "\"She branched out from flowers and started growing vegetables.\""
+        },
+        {
+          "text": "weed out",
+          "depth": 2,
+          "name": "weed out"
+        },
+        {
+          "text": "remove unwanted items or people",
+          "depth": 2,
+          "name": "remove unwanted items or people"
+        },
+        {
+          "text": "\"We need to weed out the dead plants before winter.\"",
+          "depth": 2,
+          "name": "\"We need to weed out the dead plants before winter.\""
+        },
+        {
+          "text": "in full bloom",
+          "depth": 2,
+          "name": "in full bloom"
+        },
+        {
+          "text": "flowers fully open; at the peak",
+          "depth": 2,
+          "name": "flowers fully open; at the peak"
+        },
+        {
+          "text": "\"The roses are in full bloom — the garden looks amazing.\"",
+          "depth": 2,
+          "name": "\"The roses are in full bloom — the garden looks amazing.\""
+        },
+        {
+          "text": "let the grass grow under your feet",
+          "depth": 2,
+          "name": "let the grass grow under your feet"
+        },
+        {
+          "text": "be lazy or waste time (usually negative)",
+          "depth": 2,
+          "name": "be lazy or waste time (usually negative)"
+        },
+        {
+          "text": "\"Don't let the grass grow under your feet — start planting now!\"",
+          "depth": 2,
+          "name": "\"Don't let the grass grow under your feet — start planting now!\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "542:1982",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: Neighbours chatting over the garden fence",
+          "depth": 1,
+          "name": "Scene: Neighbours chatting over the garden fence"
+        },
+        {
+          "text": "Ali:",
+          "depth": 2,
+          "name": "Ali:"
+        },
+        {
+          "text": "Your garden looks wonderful this year! How do you keep it so green?",
+          "depth": 2,
+          "name": "Your garden looks wonderful this year! How do you keep it so green?"
+        },
+        {
+          "text": "Mrs B:",
+          "depth": 2,
+          "name": "Mrs B:"
+        },
+        {
+          "text": "Thank you! I water the lawn every morning and add fertiliser once a month.",
+          "depth": 2,
+          "name": "Thank you! I water the lawn every morning and add fertiliser once a month."
+        },
+        {
+          "text": "Ali:",
+          "depth": 2,
+          "name": "Ali:"
+        },
+        {
+          "text": "I tried growing tomatoes last summer, but they didn't survive.",
+          "depth": 2,
+          "name": "I tried growing tomatoes last summer, but they didn't survive."
+        },
+        {
+          "text": "Mrs B:",
+          "depth": 2,
+          "name": "Mrs B:"
+        },
+        {
+          "text": "Did you use good soil? Tomatoes need rich compost and plenty of sunlight.",
+          "depth": 2,
+          "name": "Did you use good soil? Tomatoes need rich compost and plenty of sunlight."
+        },
+        {
+          "text": "Ali:",
+          "depth": 2,
+          "name": "Ali:"
+        },
+        {
+          "text": "I think the soil was too dry. I didn't water them enough.",
+          "depth": 2,
+          "name": "I think the soil was too dry. I didn't water them enough."
+        },
+        {
+          "text": "Mrs B:",
+          "depth": 2,
+          "name": "Mrs B:"
+        },
+        {
+          "text": "That's probably it. You should also use a sprinkler or a drip hose — it saves time.",
+          "depth": 2,
+          "name": "That's probably it. You should also use a sprinkler or a drip hose — it saves time."
+        },
+        {
+          "text": "Ali:",
+          "depth": 2,
+          "name": "Ali:"
+        },
+        {
+          "text": "What about weeds? They keep taking over my flower beds.",
+          "depth": 2,
+          "name": "What about weeds? They keep taking over my flower beds."
+        },
+        {
+          "text": "Mrs B:",
+          "depth": 2,
+          "name": "Mrs B:"
+        },
+        {
+          "text": "Pull them out early, before they spread. A small trowel helps a lot.",
+          "depth": 2,
+          "name": "Pull them out early, before they spread. A small trowel helps a lot."
+        },
+        {
+          "text": "Ali:",
+          "depth": 2,
+          "name": "Ali:"
+        },
+        {
+          "text": "Do you grow anything in winter?",
+          "depth": 2,
+          "name": "Do you grow anything in winter?"
+        },
+        {
+          "text": "Mrs B:",
+          "depth": 2,
+          "name": "Mrs B:"
+        },
+        {
+          "text": "Yes, I use the greenhouse for herbs. Basil and mint grow all year if you keep it warm.",
+          "depth": 2,
+          "name": "Yes, I use the greenhouse for herbs. Basil and mint grow all year if you keep it warm."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "542:2017",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I planted a seed in the earth.\"",
+          "depth": 2,
+          "name": "❌ \"I planted a seed in the earth.\""
+        },
+        {
+          "text": "✅ \"I planted a seed in the soil.\" (or 'ground')",
+          "depth": 2,
+          "name": "✅ \"I planted a seed in the soil.\" (or 'ground')"
+        },
+        {
+          "text": "While 'earth' can mean soil, 'soil' is the standard word for gardening. 'Earth' usually means the planet.",
+          "depth": 2,
+          "name": "While 'earth' can mean soil, 'soil' is the standard word for gardening. 'Earth' usually means the planet."
+        },
+        {
+          "text": "❌ \"The flowers are died.\"",
+          "depth": 2,
+          "name": "❌ \"The flowers are died.\""
+        },
+        {
+          "text": "✅ \"The flowers are dead.\" / \"The flowers have died.\"",
+          "depth": 2,
+          "name": "✅ \"The flowers are dead.\" / \"The flowers have died.\""
+        },
+        {
+          "text": "'Dead' is the adjective. 'Died' is the past tense verb. Use 'have died' for present perfect.",
+          "depth": 2,
+          "name": "'Dead' is the adjective. 'Died' is the past tense verb. Use 'have died' for present perfect."
+        },
+        {
+          "text": "❌ \"I water the plants since morning.\"",
+          "depth": 2,
+          "name": "❌ \"I water the plants since morning.\""
+        },
+        {
+          "text": "✅ \"I have been watering the plants since morning.\"",
+          "depth": 2,
+          "name": "✅ \"I have been watering the plants since morning.\""
+        },
+        {
+          "text": "Use present perfect continuous ('have been + -ing') with 'since' for actions still happening.",
+          "depth": 2,
+          "name": "Use present perfect continuous ('have been + -ing') with 'since' for actions still happening."
+        },
+        {
+          "text": "❌ \"She grows vegetables on her garden.\"",
+          "depth": 2,
+          "name": "❌ \"She grows vegetables on her garden.\""
+        },
+        {
+          "text": "✅ \"She grows vegetables in her garden.\"",
+          "depth": 2,
+          "name": "✅ \"She grows vegetables in her garden.\""
+        },
+        {
+          "text": "Use 'in the garden' (enclosed area), not 'on'. 'On' is used for surfaces like 'on the balcony'.",
+          "depth": 2,
+          "name": "Use 'in the garden' (enclosed area), not 'on'. 'On' is used for surfaces like 'on the balcony'."
+        },
+        {
+          "text": "❌ \"I cutted the grass yesterday.\"",
+          "depth": 2,
+          "name": "❌ \"I cutted the grass yesterday.\""
+        },
+        {
+          "text": "✅ \"I cut the grass yesterday.\"",
+          "depth": 2,
+          "name": "✅ \"I cut the grass yesterday.\""
+        },
+        {
+          "text": "'Cut' is an irregular verb — the past tense is also 'cut' (cut–cut–cut), not 'cutted'.",
+          "depth": 2,
+          "name": "'Cut' is an irregular verb — the past tense is also 'cut' (cut–cut–cut), not 'cutted'."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "542:2041",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how garden vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how garden vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "grow",
+          "depth": 2,
+          "name": "grow"
+        },
+        {
+          "text": "growth / grower",
+          "depth": 2,
+          "name": "growth / grower"
+        },
+        {
+          "text": "grow",
+          "depth": 2,
+          "name": "grow"
+        },
+        {
+          "text": "growing / grown",
+          "depth": 2,
+          "name": "growing / grown"
+        },
+        {
+          "text": "plant",
+          "depth": 2,
+          "name": "plant"
+        },
+        {
+          "text": "plant / planting",
+          "depth": 2,
+          "name": "plant / planting"
+        },
+        {
+          "text": "plant",
+          "depth": 2,
+          "name": "plant"
+        },
+        {
+          "text": "planted",
+          "depth": 2,
+          "name": "planted"
+        },
+        {
+          "text": "water",
+          "depth": 2,
+          "name": "water"
+        },
+        {
+          "text": "water / watering",
+          "depth": 2,
+          "name": "water / watering"
+        },
+        {
+          "text": "water",
+          "depth": 2,
+          "name": "water"
+        },
+        {
+          "text": "watery / watered",
+          "depth": 2,
+          "name": "watery / watered"
+        },
+        {
+          "text": "bloom",
+          "depth": 2,
+          "name": "bloom"
+        },
+        {
+          "text": "bloom",
+          "depth": 2,
+          "name": "bloom"
+        },
+        {
+          "text": "bloom",
+          "depth": 2,
+          "name": "bloom"
+        },
+        {
+          "text": "blooming",
+          "depth": 2,
+          "name": "blooming"
+        },
+        {
+          "text": "seed",
+          "depth": 2,
+          "name": "seed"
+        },
+        {
+          "text": "seed / seedling",
+          "depth": 2,
+          "name": "seed / seedling"
+        },
+        {
+          "text": "seed",
+          "depth": 2,
+          "name": "seed"
+        },
+        {
+          "text": "seeded",
+          "depth": 2,
+          "name": "seeded"
+        },
+        {
+          "text": "fertilise",
+          "depth": 2,
+          "name": "fertilise"
+        },
+        {
+          "text": "fertiliser",
+          "depth": 2,
+          "name": "fertiliser"
+        },
+        {
+          "text": "fertilise",
+          "depth": 2,
+          "name": "fertilise"
+        },
+        {
+          "text": "fertilised",
+          "depth": 2,
+          "name": "fertilised"
+        },
+        {
+          "text": "prune",
+          "depth": 2,
+          "name": "prune"
+        },
+        {
+          "text": "pruning",
+          "depth": 2,
+          "name": "pruning"
+        },
+        {
+          "text": "prune",
+          "depth": 2,
+          "name": "prune"
+        },
+        {
+          "text": "pruned",
+          "depth": 2,
+          "name": "pruned"
+        },
+        {
+          "text": "dig",
+          "depth": 2,
+          "name": "dig"
+        },
+        {
+          "text": "digging",
+          "depth": 2,
+          "name": "digging"
+        },
+        {
+          "text": "dig",
+          "depth": 2,
+          "name": "dig"
+        },
+        {
+          "text": "dug",
+          "depth": 2,
+          "name": "dug"
+        },
+        {
+          "text": "weed",
+          "depth": 2,
+          "name": "weed"
+        },
+        {
+          "text": "weed",
+          "depth": 2,
+          "name": "weed"
+        },
+        {
+          "text": "weed",
+          "depth": 2,
+          "name": "weed"
+        },
+        {
+          "text": "weedy",
+          "depth": 2,
+          "name": "weedy"
+        },
+        {
+          "text": "harvest",
+          "depth": 2,
+          "name": "harvest"
+        },
+        {
+          "text": "harvest",
+          "depth": 2,
+          "name": "harvest"
+        },
+        {
+          "text": "harvest",
+          "depth": 2,
+          "name": "harvest"
+        },
+        {
+          "text": "harvested",
+          "depth": 2,
+          "name": "harvested"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "542:2101",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  She used a __________ to dig a hole and plant the seedling.",
+          "depth": 1,
+          "name": "1. She used a __________ to dig a hole and plant the seedling."
+        },
+        {
+          "text": "2.  The __________ keeps the garden neat by separating it from the pavement.",
+          "depth": 1,
+          "name": "2. The __________ keeps the garden neat by separating it from the pavement."
+        },
+        {
+          "text": "3.  He turned on the __________ to water the whole lawn automatically.",
+          "depth": 1,
+          "name": "3. He turned on the __________ to water the whole lawn automatically."
+        },
+        {
+          "text": "4.  The sunflowers are in full __________ — they look beautiful!",
+          "depth": 1,
+          "name": "4. The sunflowers are in full __________ — they look beautiful!"
+        },
+        {
+          "text": "5.  I keep garden waste in the __________ bin to make natural fertiliser.",
+          "depth": 1,
+          "name": "5. I keep garden waste in the __________ bin to make natural fertiliser."
+        },
+        {
+          "text": "6.  She filled the __________ can and watered the flower beds.",
+          "depth": 1,
+          "name": "6. She filled the __________ can and watered the flower beds."
+        },
+        {
+          "text": "7.  We grow basil and mint in the __________ during winter.",
+          "depth": 1,
+          "name": "7. We grow basil and mint in the __________ during winter."
+        },
+        {
+          "text": "8.  Use a __________ to smooth the soil after digging.",
+          "depth": 1,
+          "name": "8. Use a __________ to smooth the soil after digging."
+        },
+        {
+          "text": "9.  The roses along the __________ add colour to the whole garden.",
+          "depth": 1,
+          "name": "9. The roses along the __________ add colour to the whole garden."
+        },
+        {
+          "text": "10. My grandmother always removes __________ before they take over the vegetable patch.",
+          "depth": 1,
+          "name": "10. My grandmother always removes __________ before they take over the vegetable patch."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. shovel  2. hedge  3. sprinkler  4. bloom  5. compost  6. watering  7. greenhouse  8. rake  9. fence  10. weeds",
+          "depth": 2,
+          "name": "1. shovel 2. hedge 3. sprinkler 4. bloom 5. compost 6. watering 7. greenhouse 8. rake 9. fence 10. weeds"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "542:2119",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "🇬🇧 Garden vs 🇺🇸 Yard",
+          "depth": 2,
+          "name": "🇬🇧 Garden vs 🇺🇸 Yard"
+        },
+        {
+          "text": "In British English, 'garden' means the outdoor space around a house (front garden, back garden). In American English, 'yard' is more common for the grass area, while 'garden' means a planted area with flowers or vegetables.",
+          "depth": 2,
+          "name": "In British English, 'garden' means the outdoor space around a house (front garden, back garden). In American English, 'yard' is more common for the grass area, while 'garden' means a planted area with flowers or vegetables."
+        },
+        {
+          "text": "Allotments (UK Culture)",
+          "depth": 2,
+          "name": "Allotments (UK Culture)"
+        },
+        {
+          "text": "In Britain, 'allotments' are small plots of land rented by people to grow food. They are very popular and often have long waiting lists. This concept is less common in North America.",
+          "depth": 2,
+          "name": "In Britain, 'allotments' are small plots of land rented by people to grow food. They are very popular and often have long waiting lists. This concept is less common in North America."
+        },
+        {
+          "text": "Garden Centre vs Nursery",
+          "depth": 2,
+          "name": "Garden Centre vs Nursery"
+        },
+        {
+          "text": "A 'garden centre' sells plants, tools, pots, and garden furniture. A 'nursery' specifically grows and sells young plants and seedlings. Both terms are widely used.",
+          "depth": 2,
+          "name": "A 'garden centre' sells plants, tools, pots, and garden furniture. A 'nursery' specifically grows and sells young plants and seedlings. Both terms are widely used."
+        },
+        {
+          "text": "Lawn Care Vocabulary",
+          "depth": 2,
+          "name": "Lawn Care Vocabulary"
+        },
+        {
+          "text": "English has specific words: 'mow the lawn' (cut grass), 'trim the hedge', 'prune the roses', 'rake the leaves'. Using the right verb for each garden task is important.",
+          "depth": 2,
+          "name": "English has specific words: 'mow the lawn' (cut grass), 'trim the hedge', 'prune the roses', 'rake the leaves'. Using the right verb for each garden task is important."
+        },
+        {
+          "text": "Composting as a Green Topic",
+          "depth": 2,
+          "name": "Composting as a Green Topic"
+        },
+        {
+          "text": "Composting is a popular topic in English-speaking countries. Words like 'recycle', 'organic waste', 'biodegradable', and 'sustainability' often appear alongside garden vocabulary.",
+          "depth": 2,
+          "name": "Composting is a popular topic in English-speaking countries. Words like 'recycle', 'organic waste', 'biodegradable', and 'sustainability' often appear alongside garden vocabulary."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "542:2138",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "flower",
+          "depth": 2,
+          "name": "flower"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ bed, ~ pot, wild ~, pick ~s",
+          "depth": 2,
+          "name": "~ bed, ~ pot, wild ~, pick ~s"
+        },
+        {
+          "text": "lawn",
+          "depth": 2,
+          "name": "lawn"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "mow the ~, ~ mower, front ~",
+          "depth": 2,
+          "name": "mow the ~, ~ mower, front ~"
+        },
+        {
+          "text": "soil",
+          "depth": 2,
+          "name": "soil"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "rich ~, ~ quality, ~ moisture",
+          "depth": 2,
+          "name": "rich ~, ~ quality, ~ moisture"
+        },
+        {
+          "text": "hedge",
+          "depth": 2,
+          "name": "hedge"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "trim the ~, ~ trimmer, low ~",
+          "depth": 2,
+          "name": "trim the ~, ~ trimmer, low ~"
+        },
+        {
+          "text": "hose",
+          "depth": 2,
+          "name": "hose"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "garden ~, ~ pipe, spray with a ~",
+          "depth": 2,
+          "name": "garden ~, ~ pipe, spray with a ~"
+        },
+        {
+          "text": "seed",
+          "depth": 2,
+          "name": "seed"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "plant a ~, ~ packet, ~ tray",
+          "depth": 2,
+          "name": "plant a ~, ~ packet, ~ tray"
+        },
+        {
+          "text": "weed",
+          "depth": 2,
+          "name": "weed"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "pull ~s, ~ killer, ~ out",
+          "depth": 2,
+          "name": "pull ~s, ~ killer, ~ out"
+        },
+        {
+          "text": "greenhouse",
+          "depth": 2,
+          "name": "greenhouse"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "in the ~, ~ effect, heated ~",
+          "depth": 2,
+          "name": "in the ~, ~ effect, heated ~"
+        },
+        {
+          "text": "compost",
+          "depth": 2,
+          "name": "compost"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ bin, ~ heap, make ~",
+          "depth": 2,
+          "name": "~ bin, ~ heap, make ~"
+        },
+        {
+          "text": "rake",
+          "depth": 2,
+          "name": "rake"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "leaf ~, ~ the leaves, garden ~",
+          "depth": 2,
+          "name": "leaf ~, ~ the leaves, garden ~"
+        }
+      ]
+    }
+  }
+}

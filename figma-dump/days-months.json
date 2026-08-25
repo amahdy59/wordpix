@@ -1,0 +1,489 @@
+{
+  "unitId": "days-months",
+  "name": "Days & Months",
+  "subtopics": [
+    {
+      "id": "days-of-the-week",
+      "title": "Days of the Week",
+      "wordIds": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday",
+        "weekday",
+        "weekend",
+        "day-off"
+      ]
+    },
+    {
+      "id": "months-of-the-year",
+      "title": "Months of the Year",
+      "wordIds": [
+        "january",
+        "february",
+        "march",
+        "april",
+        "may",
+        "june",
+        "july",
+        "august",
+        "september",
+        "october"
+      ]
+    },
+    {
+      "id": "more-months-terms",
+      "title": "More Months & Terms",
+      "wordIds": [
+        "november",
+        "december",
+        "leap-year",
+        "fiscal-year",
+        "academic-year",
+        "calendar-year",
+        "quarter",
+        "semester",
+        "trimester",
+        "biannual"
+      ]
+    },
+    {
+      "id": "time-periods",
+      "title": "Time Periods",
+      "wordIds": [
+        "today",
+        "tomorrow",
+        "yesterday",
+        "this-week",
+        "next-week",
+        "last-week",
+        "this-month",
+        "next-month",
+        "last-month",
+        "this-year"
+      ]
+    },
+    {
+      "id": "calendar-terms",
+      "title": "Calendar Terms",
+      "wordIds": [
+        "calendar",
+        "date",
+        "appointment",
+        "schedule",
+        "planner",
+        "diary",
+        "agenda",
+        "deadline",
+        "reminder",
+        "event"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "monday",
+      "label": "Monday",
+      "ipa": "/ˈmʌndeɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6964"
+    },
+    {
+      "kind": "card",
+      "id": "tuesday",
+      "label": "Tuesday",
+      "ipa": "/ˈtjuːzdeɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6968"
+    },
+    {
+      "kind": "card",
+      "id": "wednesday",
+      "label": "Wednesday",
+      "ipa": "/ˈwɛnzdeɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6972"
+    },
+    {
+      "kind": "card",
+      "id": "thursday",
+      "label": "Thursday",
+      "ipa": "/ˈθɜːrzdeɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6976"
+    },
+    {
+      "kind": "card",
+      "id": "friday",
+      "label": "Friday",
+      "ipa": "/ˈfraɪdeɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6980"
+    },
+    {
+      "kind": "card",
+      "id": "saturday",
+      "label": "Saturday",
+      "ipa": "/ˈsætərdeɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6984"
+    },
+    {
+      "kind": "card",
+      "id": "sunday",
+      "label": "Sunday",
+      "ipa": "/ˈsʌndeɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6988"
+    },
+    {
+      "kind": "card",
+      "id": "weekday",
+      "label": "Weekday",
+      "ipa": "/ˈwiːkˌdeɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:6992"
+    },
+    {
+      "kind": "card",
+      "id": "weekend",
+      "label": "Weekend",
+      "ipa": "/ˈwiːkˌɛnd/",
+      "cefr": "A2",
+      "imageNodeId": "467:6996"
+    },
+    {
+      "kind": "card",
+      "id": "day-off",
+      "label": "Day Off",
+      "ipa": "/deɪ ɒf/",
+      "cefr": "B1",
+      "imageNodeId": "467:7000"
+    },
+    {
+      "kind": "card",
+      "id": "january",
+      "label": "January",
+      "ipa": "/ˈdʒænjuˌɛri/",
+      "cefr": "A2",
+      "imageNodeId": "467:7009"
+    },
+    {
+      "kind": "card",
+      "id": "february",
+      "label": "February",
+      "ipa": "/ˈfɛbruˌɛri/",
+      "cefr": "A2",
+      "imageNodeId": "467:7013"
+    },
+    {
+      "kind": "card",
+      "id": "march",
+      "label": "March",
+      "ipa": "/mɑːrtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:7017"
+    },
+    {
+      "kind": "card",
+      "id": "april",
+      "label": "April",
+      "ipa": "/ˈeɪprəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:7021"
+    },
+    {
+      "kind": "card",
+      "id": "may",
+      "label": "May",
+      "ipa": "/meɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:7025"
+    },
+    {
+      "kind": "card",
+      "id": "june",
+      "label": "June",
+      "ipa": "/dʒuːn/",
+      "cefr": "A2",
+      "imageNodeId": "467:7029"
+    },
+    {
+      "kind": "card",
+      "id": "july",
+      "label": "July",
+      "ipa": "/dʒʊˈlaɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:7033"
+    },
+    {
+      "kind": "card",
+      "id": "august",
+      "label": "August",
+      "ipa": "/ˈɔːɡəst/",
+      "cefr": "A2",
+      "imageNodeId": "467:7037"
+    },
+    {
+      "kind": "card",
+      "id": "september",
+      "label": "September",
+      "ipa": "/sɛpˈtɛmbər/",
+      "cefr": "A2",
+      "imageNodeId": "467:7041"
+    },
+    {
+      "kind": "card",
+      "id": "october",
+      "label": "October",
+      "ipa": "/ɒkˈtoʊbər/",
+      "cefr": "A2",
+      "imageNodeId": "467:7045"
+    },
+    {
+      "kind": "card",
+      "id": "november",
+      "label": "November",
+      "ipa": "/noʊˈvɛmbər/",
+      "cefr": "A2",
+      "imageNodeId": "467:7054"
+    },
+    {
+      "kind": "card",
+      "id": "december",
+      "label": "December",
+      "ipa": "/dɪˈsɛmbər/",
+      "cefr": "A2",
+      "imageNodeId": "467:7058"
+    },
+    {
+      "kind": "card",
+      "id": "leap-year",
+      "label": "Leap Year",
+      "ipa": "/liːp jɪər/",
+      "cefr": "B1",
+      "imageNodeId": "467:7062"
+    },
+    {
+      "kind": "card",
+      "id": "fiscal-year",
+      "label": "Fiscal Year",
+      "ipa": "/ˈfɪskəl jɪər/",
+      "cefr": "B1",
+      "imageNodeId": "467:7066"
+    },
+    {
+      "kind": "card",
+      "id": "academic-year",
+      "label": "Academic Year",
+      "ipa": "/ˌækəˈdɛmɪk jɪər/",
+      "cefr": "B1",
+      "imageNodeId": "467:7070"
+    },
+    {
+      "kind": "card",
+      "id": "calendar-year",
+      "label": "Calendar Year",
+      "ipa": "/ˈkæləndər jɪər/",
+      "cefr": "B1",
+      "imageNodeId": "467:7074"
+    },
+    {
+      "kind": "card",
+      "id": "quarter",
+      "label": "Quarter",
+      "ipa": "/ˈkwɔːrtər/",
+      "cefr": "A2",
+      "imageNodeId": "467:7078"
+    },
+    {
+      "kind": "card",
+      "id": "semester",
+      "label": "Semester",
+      "ipa": "/sɪˈmɛstər/",
+      "cefr": "A2",
+      "imageNodeId": "467:7082"
+    },
+    {
+      "kind": "card",
+      "id": "trimester",
+      "label": "Trimester",
+      "ipa": "/traɪˈmɛstər/",
+      "cefr": "A2",
+      "imageNodeId": "467:7086"
+    },
+    {
+      "kind": "card",
+      "id": "biannual",
+      "label": "Biannual",
+      "ipa": "/baɪˈænjuəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:7090"
+    },
+    {
+      "kind": "card",
+      "id": "today",
+      "label": "Today",
+      "ipa": "/təˈdeɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:7099"
+    },
+    {
+      "kind": "card",
+      "id": "tomorrow",
+      "label": "Tomorrow",
+      "ipa": "/təˈmɒroʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:7103"
+    },
+    {
+      "kind": "card",
+      "id": "yesterday",
+      "label": "Yesterday",
+      "ipa": "/ˈjɛstərˌdeɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:7107"
+    },
+    {
+      "kind": "card",
+      "id": "this-week",
+      "label": "This Week",
+      "ipa": "/ðɪs wiːk/",
+      "cefr": "B1",
+      "imageNodeId": "467:7111"
+    },
+    {
+      "kind": "card",
+      "id": "next-week",
+      "label": "Next Week",
+      "ipa": "/nɛkst wiːk/",
+      "cefr": "B1",
+      "imageNodeId": "467:7115"
+    },
+    {
+      "kind": "card",
+      "id": "last-week",
+      "label": "Last Week",
+      "ipa": "/lɑːst wiːk/",
+      "cefr": "B1",
+      "imageNodeId": "467:7119"
+    },
+    {
+      "kind": "card",
+      "id": "this-month",
+      "label": "This Month",
+      "ipa": "/ðɪs mʌnθ/",
+      "cefr": "B1",
+      "imageNodeId": "467:7123"
+    },
+    {
+      "kind": "card",
+      "id": "next-month",
+      "label": "Next Month",
+      "ipa": "/nɛkst mʌnθ/",
+      "cefr": "B1",
+      "imageNodeId": "467:7127"
+    },
+    {
+      "kind": "card",
+      "id": "last-month",
+      "label": "Last Month",
+      "ipa": "/lɑːst mʌnθ/",
+      "cefr": "B1",
+      "imageNodeId": "467:7131"
+    },
+    {
+      "kind": "card",
+      "id": "this-year",
+      "label": "This Year",
+      "ipa": "/ðɪs jɪər/",
+      "cefr": "B1",
+      "imageNodeId": "467:7135"
+    },
+    {
+      "kind": "card",
+      "id": "calendar",
+      "label": "Calendar",
+      "ipa": "/ˈkæləndər/",
+      "cefr": "A2",
+      "imageNodeId": "467:7144"
+    },
+    {
+      "kind": "card",
+      "id": "date",
+      "label": "Date",
+      "ipa": "/deɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:7148"
+    },
+    {
+      "kind": "card",
+      "id": "appointment",
+      "label": "Appointment",
+      "ipa": "/əˈpɔɪntmənt/",
+      "cefr": "B1",
+      "imageNodeId": "467:7152"
+    },
+    {
+      "kind": "card",
+      "id": "schedule",
+      "label": "Schedule",
+      "ipa": "/ˈskɛdʒuːl/",
+      "cefr": "A2",
+      "imageNodeId": "467:7156"
+    },
+    {
+      "kind": "card",
+      "id": "planner",
+      "label": "Planner",
+      "ipa": "/ˈplænər/",
+      "cefr": "A2",
+      "imageNodeId": "467:7160"
+    },
+    {
+      "kind": "card",
+      "id": "diary",
+      "label": "Diary",
+      "ipa": "/ˈdaɪəri/",
+      "cefr": "A2",
+      "imageNodeId": "467:7164"
+    },
+    {
+      "kind": "card",
+      "id": "agenda",
+      "label": "Agenda",
+      "ipa": "/əˈdʒɛndə/",
+      "cefr": "A2",
+      "imageNodeId": "467:7168"
+    },
+    {
+      "kind": "card",
+      "id": "deadline",
+      "label": "Deadline",
+      "ipa": "/ˈdɛdˌlaɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:7172"
+    },
+    {
+      "kind": "card",
+      "id": "reminder",
+      "label": "Reminder",
+      "ipa": "/rɪˈmaɪndər/",
+      "cefr": "A2",
+      "imageNodeId": "467:7176"
+    },
+    {
+      "kind": "card",
+      "id": "event",
+      "label": "Event",
+      "ipa": "/ɪˈvɛnt/",
+      "cefr": "A2",
+      "imageNodeId": "467:7180"
+    }
+  ],
+  "materials": null
+}

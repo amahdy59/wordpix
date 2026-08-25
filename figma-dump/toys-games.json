@@ -1,0 +1,393 @@
+{
+  "unitId": "toys-games",
+  "name": "Toys & Games",
+  "subtopics": [
+    {
+      "id": "classic-toys",
+      "title": "Classic Toys",
+      "wordIds": [
+        "doll",
+        "teddy-bear",
+        "action-figure",
+        "ball",
+        "blocks",
+        "puzzle",
+        "yo-yo",
+        "kite",
+        "top",
+        "marbles"
+      ]
+    },
+    {
+      "id": "board-card-games",
+      "title": "Board & Card Games",
+      "wordIds": [
+        "chess",
+        "checkers",
+        "monopoly",
+        "scrabble",
+        "dominoes",
+        "playing-cards",
+        "dice",
+        "jigsaw-puzzle",
+        "trivia",
+        "bingo"
+      ]
+    },
+    {
+      "id": "electronic-toys",
+      "title": "Electronic Toys",
+      "wordIds": [
+        "video-game",
+        "console",
+        "controller",
+        "tablet",
+        "robot-toy",
+        "drone",
+        "remote-control-car",
+        "handheld-game",
+        "vr-headset",
+        "electronic-pet"
+      ]
+    },
+    {
+      "id": "outdoor-toys",
+      "title": "Outdoor Toys",
+      "wordIds": [
+        "bicycle",
+        "skateboard",
+        "scooter",
+        "roller-skates",
+        "jump-rope",
+        "frisbee",
+        "trampoline",
+        "sled",
+        "water-gun",
+        "swing"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "doll",
+      "label": "Doll",
+      "ipa": "/dɒl/",
+      "cefr": "A2",
+      "imageNodeId": "467:12008"
+    },
+    {
+      "kind": "card",
+      "id": "teddy-bear",
+      "label": "Teddy Bear",
+      "ipa": "/ˈtɛdi bɛər/",
+      "cefr": "B1",
+      "imageNodeId": "467:12012"
+    },
+    {
+      "kind": "card",
+      "id": "action-figure",
+      "label": "Action Figure",
+      "ipa": "/ˈækʃən ˈfɪɡjər/",
+      "cefr": "B1",
+      "imageNodeId": "467:12016"
+    },
+    {
+      "kind": "card",
+      "id": "ball",
+      "label": "Ball",
+      "ipa": "/bɔːl/",
+      "cefr": "A2",
+      "imageNodeId": "467:12020"
+    },
+    {
+      "kind": "card",
+      "id": "blocks",
+      "label": "Blocks",
+      "ipa": "/blɒks/",
+      "cefr": "A2",
+      "imageNodeId": "467:12024"
+    },
+    {
+      "kind": "card",
+      "id": "puzzle",
+      "label": "Puzzle",
+      "ipa": "/ˈpʌzəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:12028"
+    },
+    {
+      "kind": "card",
+      "id": "yo-yo",
+      "label": "Yo-Yo",
+      "ipa": "/ˈjoʊˌjoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "467:12032"
+    },
+    {
+      "kind": "card",
+      "id": "kite",
+      "label": "Kite",
+      "ipa": "/kaɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:12036"
+    },
+    {
+      "kind": "card",
+      "id": "top",
+      "label": "Top",
+      "ipa": "/tɒp/",
+      "cefr": "A2",
+      "imageNodeId": "467:12040"
+    },
+    {
+      "kind": "card",
+      "id": "marbles",
+      "label": "Marbles",
+      "ipa": "/ˈmɑːrbəlz/",
+      "cefr": "A2",
+      "imageNodeId": "467:12044"
+    },
+    {
+      "kind": "card",
+      "id": "chess",
+      "label": "Chess",
+      "ipa": "/tʃɛs/",
+      "cefr": "A2",
+      "imageNodeId": "467:12053"
+    },
+    {
+      "kind": "card",
+      "id": "checkers",
+      "label": "Checkers",
+      "ipa": "/ˈtʃɛkərz/",
+      "cefr": "A2",
+      "imageNodeId": "467:12057"
+    },
+    {
+      "kind": "card",
+      "id": "monopoly",
+      "label": "Monopoly",
+      "ipa": "/məˈnɒpəli/",
+      "cefr": "A2",
+      "imageNodeId": "467:12061"
+    },
+    {
+      "kind": "card",
+      "id": "scrabble",
+      "label": "Scrabble",
+      "ipa": "/ˈskræbəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:12065"
+    },
+    {
+      "kind": "card",
+      "id": "dominoes",
+      "label": "Dominoes",
+      "ipa": "/ˈdɒmɪˌnoʊz/",
+      "cefr": "A2",
+      "imageNodeId": "467:12069"
+    },
+    {
+      "kind": "card",
+      "id": "playing-cards",
+      "label": "Playing Cards",
+      "ipa": "/ˈpleɪɪŋ kɑːrdz/",
+      "cefr": "B1",
+      "imageNodeId": "467:12073"
+    },
+    {
+      "kind": "card",
+      "id": "dice",
+      "label": "Dice",
+      "ipa": "/daɪs/",
+      "cefr": "A2",
+      "imageNodeId": "467:12077"
+    },
+    {
+      "kind": "card",
+      "id": "jigsaw-puzzle",
+      "label": "Jigsaw Puzzle",
+      "ipa": "/ˈdʒɪɡˌsɔː ˈpʌzəl/",
+      "cefr": "B1",
+      "imageNodeId": "467:12081"
+    },
+    {
+      "kind": "card",
+      "id": "trivia",
+      "label": "Trivia",
+      "ipa": "/ˈtrɪviə/",
+      "cefr": "A2",
+      "imageNodeId": "467:12085"
+    },
+    {
+      "kind": "card",
+      "id": "bingo",
+      "label": "Bingo",
+      "ipa": "/ˈbɪŋɡoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:12089"
+    },
+    {
+      "kind": "card",
+      "id": "video-game",
+      "label": "Video Game",
+      "ipa": "/ˈvɪdioʊ ɡeɪm/",
+      "cefr": "B1",
+      "imageNodeId": "467:12098"
+    },
+    {
+      "kind": "card",
+      "id": "console",
+      "label": "Console",
+      "ipa": "/ˈkɒnsoʊl/",
+      "cefr": "A2",
+      "imageNodeId": "467:12102"
+    },
+    {
+      "kind": "card",
+      "id": "controller",
+      "label": "Controller",
+      "ipa": "/kənˈtroʊlər/",
+      "cefr": "B1",
+      "imageNodeId": "467:12106"
+    },
+    {
+      "kind": "card",
+      "id": "tablet",
+      "label": "Tablet",
+      "ipa": "/ˈtæblɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:12110"
+    },
+    {
+      "kind": "card",
+      "id": "robot-toy",
+      "label": "Robot Toy",
+      "ipa": "/ˈroʊbɒt tɔɪ/",
+      "cefr": "B1",
+      "imageNodeId": "467:12114"
+    },
+    {
+      "kind": "card",
+      "id": "drone",
+      "label": "Drone",
+      "ipa": "/droʊn/",
+      "cefr": "A2",
+      "imageNodeId": "467:12118"
+    },
+    {
+      "kind": "card",
+      "id": "remote-control-car",
+      "label": "Remote Control Car",
+      "ipa": "/rɪˈmoʊt kənˈtroʊl kɑːr/",
+      "cefr": "B2",
+      "imageNodeId": "467:12122"
+    },
+    {
+      "kind": "card",
+      "id": "handheld-game",
+      "label": "Handheld Game",
+      "ipa": "/ˈhændˌhɛld ɡeɪm/",
+      "cefr": "B1",
+      "imageNodeId": "467:12126"
+    },
+    {
+      "kind": "card",
+      "id": "vr-headset",
+      "label": "VR Headset",
+      "ipa": "/ˌviːˈɑːr ˈhɛdˌsɛt/",
+      "cefr": "B1",
+      "imageNodeId": "467:12130"
+    },
+    {
+      "kind": "card",
+      "id": "electronic-pet",
+      "label": "Electronic Pet",
+      "ipa": "/ɪˌlɛkˈtrɒnɪk pɛt/",
+      "cefr": "B1",
+      "imageNodeId": "467:12134"
+    },
+    {
+      "kind": "card",
+      "id": "bicycle",
+      "label": "Bicycle",
+      "ipa": "/ˈbaɪsɪkəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:12143"
+    },
+    {
+      "kind": "card",
+      "id": "skateboard",
+      "label": "Skateboard",
+      "ipa": "/ˈskeɪtˌbɔːrd/",
+      "cefr": "B1",
+      "imageNodeId": "467:12147"
+    },
+    {
+      "kind": "card",
+      "id": "scooter",
+      "label": "Scooter",
+      "ipa": "/ˈskuːtər/",
+      "cefr": "A2",
+      "imageNodeId": "467:12151"
+    },
+    {
+      "kind": "card",
+      "id": "roller-skates",
+      "label": "Roller Skates",
+      "ipa": "/ˈroʊlər skeɪts/",
+      "cefr": "B1",
+      "imageNodeId": "467:12155"
+    },
+    {
+      "kind": "card",
+      "id": "jump-rope",
+      "label": "Jump Rope",
+      "ipa": "/dʒʌmp roʊp/",
+      "cefr": "B1",
+      "imageNodeId": "467:12159"
+    },
+    {
+      "kind": "card",
+      "id": "frisbee",
+      "label": "Frisbee",
+      "ipa": "/ˈfrɪzbiː/",
+      "cefr": "A2",
+      "imageNodeId": "467:12163"
+    },
+    {
+      "kind": "card",
+      "id": "trampoline",
+      "label": "Trampoline",
+      "ipa": "/ˈtræmpəˌliːn/",
+      "cefr": "B1",
+      "imageNodeId": "467:12167"
+    },
+    {
+      "kind": "card",
+      "id": "sled",
+      "label": "Sled",
+      "ipa": "/slɛd/",
+      "cefr": "A2",
+      "imageNodeId": "467:12171"
+    },
+    {
+      "kind": "card",
+      "id": "water-gun",
+      "label": "Water Gun",
+      "ipa": "/ˈwɔːtər ɡʌn/",
+      "cefr": "B1",
+      "imageNodeId": "467:12175"
+    },
+    {
+      "kind": "card",
+      "id": "swing",
+      "label": "Swing",
+      "ipa": "/swɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:12179"
+    }
+  ],
+  "materials": null
+}

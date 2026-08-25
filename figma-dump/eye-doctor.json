@@ -1,0 +1,2034 @@
+{
+  "unitId": "eye-doctor",
+  "name": "The Eye Doctor",
+  "subtopics": [
+    {
+      "id": "examination",
+      "title": "Examination",
+      "wordIds": [
+        "eye-chart",
+        "phoropter",
+        "slit-lamp",
+        "retinoscope",
+        "tonometer",
+        "ophthalmoscope",
+        "pupil-dilation",
+        "visual-field",
+        "refraction",
+        "cover-test",
+        "autorefractor",
+        "keratometer",
+        "perimeter",
+        "fundus-camera",
+        "oct-scanner",
+        "biomicroscope",
+        "amsler-grid",
+        "ishihara-plates"
+      ]
+    },
+    {
+      "id": "eyewear",
+      "title": "Eyewear",
+      "wordIds": [
+        "glasses",
+        "sunglasses",
+        "contact-lens",
+        "frame",
+        "lens",
+        "case",
+        "cleaning-cloth",
+        "nose-pad",
+        "temple",
+        "hinge",
+        "bifocals",
+        "progressive-lenses",
+        "reading-glasses",
+        "safety-goggles",
+        "swimming-goggles",
+        "anti-glare-coating",
+        "blue-light-glasses",
+        "transition-lenses"
+      ]
+    },
+    {
+      "id": "conditions",
+      "title": "Conditions",
+      "wordIds": [
+        "nearsighted",
+        "farsighted",
+        "astigmatism",
+        "glaucoma",
+        "cataract",
+        "dry-eye",
+        "color-blind",
+        "lazy-eye",
+        "crossed-eyes",
+        "floaters",
+        "macular-degeneration",
+        "diabetic-retinopathy",
+        "conjunctivitis",
+        "stye",
+        "corneal-ulcer",
+        "keratoconus",
+        "presbyopia",
+        "retinal-detachment",
+        "amblyopia"
+      ]
+    },
+    {
+      "id": "treatments",
+      "title": "Treatments",
+      "wordIds": [
+        "prescription",
+        "eye-drops",
+        "laser-surgery",
+        "lens-implant",
+        "patching",
+        "therapy",
+        "medication",
+        "dilation-drops",
+        "corrective-lens",
+        "prism",
+        "lasik",
+        "prk-surgery",
+        "cataract-surgery",
+        "intravitreal-injection",
+        "corneal-transplant",
+        "anti-vegf-therapy",
+        "artificial-tears",
+        "warm-compress",
+        "eye-patch",
+        "vision-therapy"
+      ]
+    },
+    {
+      "id": "anatomy",
+      "title": "Anatomy",
+      "wordIds": [
+        "iris",
+        "pupil",
+        "cornea",
+        "retina",
+        "optic-nerve",
+        "eyelid",
+        "eyelash",
+        "tear-duct",
+        "sclera",
+        "lens",
+        "macula",
+        "vitreous-humor",
+        "aqueous-humor",
+        "ciliary-body",
+        "conjunctiva",
+        "choroid",
+        "fovea",
+        "blind-spot",
+        "lacrimal-gland"
+      ]
+    },
+    {
+      "id": "office",
+      "title": "Office",
+      "wordIds": [
+        "waiting-room",
+        "exam-chair",
+        "display-wall",
+        "mirror",
+        "trial-frame",
+        "case-drawer",
+        "computer",
+        "receipt",
+        "insurance-card",
+        "appointment",
+        "pre-testing-room",
+        "optical-dispensary",
+        "lens-edger",
+        "pupilometer",
+        "lensometer",
+        "frame-display",
+        "adjustment-tools",
+        "ultrasonic-cleaner"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "eye-chart",
+      "label": "Eye Chart",
+      "ipa": "/aɪ tʃɑːrt/",
+      "cefr": "C1",
+      "imageNodeId": "119:9439"
+    },
+    {
+      "kind": "card",
+      "id": "phoropter",
+      "label": "Phoropter",
+      "ipa": "/fəˈrɒptər/",
+      "cefr": "B2",
+      "imageNodeId": "119:9443"
+    },
+    {
+      "kind": "card",
+      "id": "slit-lamp",
+      "label": "Slit Lamp",
+      "ipa": "/slɪt læmp/",
+      "cefr": "C1",
+      "imageNodeId": "119:9447"
+    },
+    {
+      "kind": "card",
+      "id": "retinoscope",
+      "label": "Retinoscope",
+      "ipa": "/ˈrɛtɪnəskoʊp/",
+      "cefr": "C1",
+      "imageNodeId": "119:9451"
+    },
+    {
+      "kind": "card",
+      "id": "tonometer",
+      "label": "Tonometer",
+      "ipa": "/toʊˈnɒmɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "119:9455"
+    },
+    {
+      "kind": "card",
+      "id": "ophthalmoscope",
+      "label": "Ophthalmoscope",
+      "ipa": "/ɒfˈθælməskoʊp/",
+      "cefr": "C1",
+      "imageNodeId": "119:9459"
+    },
+    {
+      "kind": "card",
+      "id": "pupil-dilation",
+      "label": "Pupil Dilation",
+      "ipa": "/ˈpjuːpɪl daɪˈleɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "119:9463"
+    },
+    {
+      "kind": "card",
+      "id": "visual-field",
+      "label": "Visual Field",
+      "ipa": "/ˈvɪʒuəl fiːld/",
+      "cefr": "C1",
+      "imageNodeId": "119:9467"
+    },
+    {
+      "kind": "card",
+      "id": "refraction",
+      "label": "Refraction",
+      "ipa": "/rɪˈfrækʃən/",
+      "cefr": "C1",
+      "imageNodeId": "119:9471"
+    },
+    {
+      "kind": "card",
+      "id": "cover-test",
+      "label": "Cover Test",
+      "ipa": "/ˈkʌvər tɛst/",
+      "cefr": "C1",
+      "imageNodeId": "119:9475"
+    },
+    {
+      "kind": "card",
+      "id": "autorefractor",
+      "label": "Autorefractor",
+      "ipa": "/ˌɔːtoʊrɪˈfræktər/",
+      "cefr": "C1",
+      "imageNodeId": "494:837"
+    },
+    {
+      "kind": "card",
+      "id": "keratometer",
+      "label": "Keratometer",
+      "ipa": "/ˌkɛrəˈtɒmɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "494:841"
+    },
+    {
+      "kind": "card",
+      "id": "perimeter",
+      "label": "Perimeter",
+      "ipa": "/pəˈrɪmɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "494:845"
+    },
+    {
+      "kind": "card",
+      "id": "fundus-camera",
+      "label": "Fundus Camera",
+      "ipa": "/ˈfʌndəs ˈkæmərə/",
+      "cefr": "C1",
+      "imageNodeId": "494:849"
+    },
+    {
+      "kind": "card",
+      "id": "oct-scanner",
+      "label": "OCT Scanner",
+      "ipa": "/ˌoʊsiːˈtiː ˈskænər/",
+      "cefr": "C1",
+      "imageNodeId": "494:853"
+    },
+    {
+      "kind": "card",
+      "id": "biomicroscope",
+      "label": "Biomicroscope",
+      "ipa": "/ˌbaɪoʊˈmaɪkrəskoʊp/",
+      "cefr": "C1",
+      "imageNodeId": "494:857"
+    },
+    {
+      "kind": "card",
+      "id": "amsler-grid",
+      "label": "Amsler Grid",
+      "ipa": "/ˈæmslər ɡrɪd/",
+      "cefr": "C1",
+      "imageNodeId": "494:861"
+    },
+    {
+      "kind": "card",
+      "id": "ishihara-plates",
+      "label": "Ishihara Plates",
+      "ipa": "/ˌɪʃɪˈhɑːrə pleɪts/",
+      "cefr": "C1",
+      "imageNodeId": "494:865"
+    },
+    {
+      "kind": "card",
+      "id": "glasses",
+      "label": "Glasses",
+      "ipa": "/ˈɡlɑːsɪz/",
+      "cefr": "B2",
+      "imageNodeId": "119:9484"
+    },
+    {
+      "kind": "card",
+      "id": "sunglasses",
+      "label": "Sunglasses",
+      "ipa": "/ˈsʌnɡlɑːsɪz/",
+      "cefr": "C1",
+      "imageNodeId": "119:9488"
+    },
+    {
+      "kind": "card",
+      "id": "contact-lens",
+      "label": "Contact Lens",
+      "ipa": "/ˈkɒntækt lɛnz/",
+      "cefr": "C1",
+      "imageNodeId": "119:9492"
+    },
+    {
+      "kind": "card",
+      "id": "frame",
+      "label": "Frame",
+      "ipa": "/freɪm/",
+      "cefr": "B2",
+      "imageNodeId": "119:9496"
+    },
+    {
+      "kind": "card",
+      "id": "lens",
+      "label": "Lens",
+      "ipa": "/lɛnz/",
+      "cefr": "B2",
+      "imageNodeId": "119:9500"
+    },
+    {
+      "kind": "card",
+      "id": "case",
+      "label": "Case",
+      "ipa": "/keɪs/",
+      "cefr": "B2",
+      "imageNodeId": "119:9504"
+    },
+    {
+      "kind": "card",
+      "id": "cleaning-cloth",
+      "label": "Cleaning Cloth",
+      "ipa": "/ˈkliːnɪŋ klɒθ/",
+      "cefr": "C1",
+      "imageNodeId": "119:9508"
+    },
+    {
+      "kind": "card",
+      "id": "nose-pad",
+      "label": "Nose Pad",
+      "ipa": "/noʊz pæd/",
+      "cefr": "C1",
+      "imageNodeId": "119:9512"
+    },
+    {
+      "kind": "card",
+      "id": "temple",
+      "label": "Temple",
+      "ipa": "/ˈtɛmpl/",
+      "cefr": "B2",
+      "imageNodeId": "119:9516"
+    },
+    {
+      "kind": "card",
+      "id": "hinge",
+      "label": "Hinge",
+      "ipa": "/hɪndʒ/",
+      "cefr": "B2",
+      "imageNodeId": "119:9520"
+    },
+    {
+      "kind": "card",
+      "id": "bifocals",
+      "label": "Bifocals",
+      "ipa": "/baɪˈfoʊklz/",
+      "cefr": "B2",
+      "imageNodeId": "494:869"
+    },
+    {
+      "kind": "card",
+      "id": "progressive-lenses",
+      "label": "Progressive Lenses",
+      "ipa": "/prəˈɡrɛsɪv ˈlɛnzɪz/",
+      "cefr": "C1",
+      "imageNodeId": "494:873"
+    },
+    {
+      "kind": "card",
+      "id": "reading-glasses",
+      "label": "Reading Glasses",
+      "ipa": "/ˈriːdɪŋ ˈɡlɑːsɪz/",
+      "cefr": "C1",
+      "imageNodeId": "494:877"
+    },
+    {
+      "kind": "card",
+      "id": "safety-goggles",
+      "label": "Safety Goggles",
+      "ipa": "/ˈseɪfti ˈɡɒɡlz/",
+      "cefr": "C1",
+      "imageNodeId": "494:881"
+    },
+    {
+      "kind": "card",
+      "id": "swimming-goggles",
+      "label": "Swimming Goggles",
+      "ipa": "/ˈswɪmɪŋ ˈɡɒɡlz/",
+      "cefr": "C1",
+      "imageNodeId": "494:885"
+    },
+    {
+      "kind": "card",
+      "id": "anti-glare-coating",
+      "label": "Anti-Glare Coating",
+      "ipa": "/ˌæntiˈɡlɛr ˈkoʊtɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "494:889"
+    },
+    {
+      "kind": "card",
+      "id": "blue-light-glasses",
+      "label": "Blue Light Glasses",
+      "ipa": "/bluː laɪt ˈɡlɑːsɪz/",
+      "cefr": "C1",
+      "imageNodeId": "494:893"
+    },
+    {
+      "kind": "card",
+      "id": "transition-lenses",
+      "label": "Transition Lenses",
+      "ipa": "/trænˈzɪʃən ˈlɛnzɪz/",
+      "cefr": "C1",
+      "imageNodeId": "494:897"
+    },
+    {
+      "kind": "card",
+      "id": "nearsighted",
+      "label": "Nearsighted",
+      "ipa": "/ˈnɪrsaɪtɪd/",
+      "cefr": "C1",
+      "imageNodeId": "119:9529"
+    },
+    {
+      "kind": "card",
+      "id": "farsighted",
+      "label": "Farsighted",
+      "ipa": "/ˈfɑːrsaɪtɪd/",
+      "cefr": "C1",
+      "imageNodeId": "119:9533"
+    },
+    {
+      "kind": "card",
+      "id": "astigmatism",
+      "label": "Astigmatism",
+      "ipa": "/əˈstɪɡmətɪzəm/",
+      "cefr": "C1",
+      "imageNodeId": "119:9537"
+    },
+    {
+      "kind": "card",
+      "id": "glaucoma",
+      "label": "Glaucoma",
+      "ipa": "/ɡlɔːˈkoʊmə/",
+      "cefr": "B2",
+      "imageNodeId": "119:9541"
+    },
+    {
+      "kind": "card",
+      "id": "cataract",
+      "label": "Cataract",
+      "ipa": "/ˈkætərækt/",
+      "cefr": "B2",
+      "imageNodeId": "119:9545"
+    },
+    {
+      "kind": "card",
+      "id": "dry-eye",
+      "label": "Dry Eye",
+      "ipa": "/draɪ aɪ/",
+      "cefr": "C1",
+      "imageNodeId": "119:9549"
+    },
+    {
+      "kind": "card",
+      "id": "color-blind",
+      "label": "Color Blind",
+      "ipa": "/ˈkʌlər blaɪnd/",
+      "cefr": "C1",
+      "imageNodeId": "119:9553"
+    },
+    {
+      "kind": "card",
+      "id": "lazy-eye",
+      "label": "Lazy Eye",
+      "ipa": "/ˈleɪzi aɪ/",
+      "cefr": "C1",
+      "imageNodeId": "119:9557"
+    },
+    {
+      "kind": "card",
+      "id": "crossed-eyes",
+      "label": "Crossed Eyes",
+      "ipa": "/krɒst aɪz/",
+      "cefr": "C1",
+      "imageNodeId": "119:9561"
+    },
+    {
+      "kind": "card",
+      "id": "floaters",
+      "label": "Floaters",
+      "ipa": "/ˈfloʊtərz/",
+      "cefr": "B2",
+      "imageNodeId": "119:9565"
+    },
+    {
+      "kind": "card",
+      "id": "macular-degeneration",
+      "label": "Macular Degeneration",
+      "ipa": "/ˈmækjʊlər dɪˌdʒɛnəˈreɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "494:901"
+    },
+    {
+      "kind": "card",
+      "id": "diabetic-retinopathy",
+      "label": "Diabetic Retinopathy",
+      "ipa": "/ˌdaɪəˈbɛtɪk ˌrɛtɪˈnɒpəθi/",
+      "cefr": "C1",
+      "imageNodeId": "494:905"
+    },
+    {
+      "kind": "card",
+      "id": "conjunctivitis",
+      "label": "Conjunctivitis",
+      "ipa": "/kənˌdʒʌŋktɪˈvaɪtɪs/",
+      "cefr": "C1",
+      "imageNodeId": "494:909"
+    },
+    {
+      "kind": "card",
+      "id": "stye",
+      "label": "Stye",
+      "ipa": "/staɪ/",
+      "cefr": "B2",
+      "imageNodeId": "494:913"
+    },
+    {
+      "kind": "card",
+      "id": "corneal-ulcer",
+      "label": "Corneal Ulcer",
+      "ipa": "/ˈkɔːrniəl ˈʌlsər/",
+      "cefr": "C1",
+      "imageNodeId": "494:917"
+    },
+    {
+      "kind": "card",
+      "id": "keratoconus",
+      "label": "Keratoconus",
+      "ipa": "/ˌkɛrətoʊˈkoʊnəs/",
+      "cefr": "C1",
+      "imageNodeId": "494:921"
+    },
+    {
+      "kind": "card",
+      "id": "presbyopia",
+      "label": "Presbyopia",
+      "ipa": "/ˌprɛzbiˈoʊpiə/",
+      "cefr": "C1",
+      "imageNodeId": "494:925"
+    },
+    {
+      "kind": "card",
+      "id": "retinal-detachment",
+      "label": "Retinal Detachment",
+      "ipa": "/ˈrɛtɪnl dɪˈtætʃmənt/",
+      "cefr": "C1",
+      "imageNodeId": "494:929"
+    },
+    {
+      "kind": "card",
+      "id": "amblyopia",
+      "label": "Amblyopia",
+      "ipa": "/ˌæmbliˈoʊpiə/",
+      "cefr": "B2",
+      "imageNodeId": "494:933"
+    },
+    {
+      "kind": "card",
+      "id": "prescription",
+      "label": "Prescription",
+      "ipa": "/prɪˈskrɪpʃən/",
+      "cefr": "C1",
+      "imageNodeId": "119:9574"
+    },
+    {
+      "kind": "card",
+      "id": "eye-drops",
+      "label": "Eye Drops",
+      "ipa": "/aɪ drɒps/",
+      "cefr": "C1",
+      "imageNodeId": "119:9578"
+    },
+    {
+      "kind": "card",
+      "id": "laser-surgery",
+      "label": "Laser Surgery",
+      "ipa": "/ˈleɪzər ˈsɜːrdʒəri/",
+      "cefr": "C1",
+      "imageNodeId": "119:9582"
+    },
+    {
+      "kind": "card",
+      "id": "lens-implant",
+      "label": "Lens Implant",
+      "ipa": "/lɛnz ˈɪmplænt/",
+      "cefr": "C1",
+      "imageNodeId": "119:9586"
+    },
+    {
+      "kind": "card",
+      "id": "patching",
+      "label": "Patching",
+      "ipa": "/ˈpætʃɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:9590"
+    },
+    {
+      "kind": "card",
+      "id": "therapy",
+      "label": "Therapy",
+      "ipa": "/ˈθɛrəpi/",
+      "cefr": "B2",
+      "imageNodeId": "119:9594"
+    },
+    {
+      "kind": "card",
+      "id": "medication",
+      "label": "Medication",
+      "ipa": "/ˌmɛdɪˈkeɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "119:9598"
+    },
+    {
+      "kind": "card",
+      "id": "dilation-drops",
+      "label": "Dilation Drops",
+      "ipa": "/daɪˈleɪʃən drɒps/",
+      "cefr": "C1",
+      "imageNodeId": "119:9602"
+    },
+    {
+      "kind": "card",
+      "id": "corrective-lens",
+      "label": "Corrective Lens",
+      "ipa": "/kəˈrɛktɪv lɛnz/",
+      "cefr": "C1",
+      "imageNodeId": "119:9606"
+    },
+    {
+      "kind": "card",
+      "id": "prism",
+      "label": "Prism",
+      "ipa": "/ˈprɪzəm/",
+      "cefr": "B2",
+      "imageNodeId": "119:9610"
+    },
+    {
+      "kind": "card",
+      "id": "lasik",
+      "label": "LASIK",
+      "ipa": "/ˈleɪsɪk/",
+      "cefr": "B2",
+      "imageNodeId": "491:1054"
+    },
+    {
+      "kind": "card",
+      "id": "prk-surgery",
+      "label": "PRK Surgery",
+      "ipa": "/ˌpiːɑːrˈkeɪ ˈsɜːrdʒəri/",
+      "cefr": "C1",
+      "imageNodeId": "491:1058"
+    },
+    {
+      "kind": "card",
+      "id": "cataract-surgery",
+      "label": "Cataract Surgery",
+      "ipa": "/ˈkætərækt ˈsɜːrdʒəri/",
+      "cefr": "C1",
+      "imageNodeId": "491:1062"
+    },
+    {
+      "kind": "card",
+      "id": "intravitreal-injection",
+      "label": "Intravitreal Injection",
+      "ipa": "/ˌɪntrəˈvɪtriəl ɪnˈdʒɛkʃən/",
+      "cefr": "C1",
+      "imageNodeId": "491:1066"
+    },
+    {
+      "kind": "card",
+      "id": "corneal-transplant",
+      "label": "Corneal Transplant",
+      "ipa": "/ˈkɔːrniəl ˈtrænsplænt/",
+      "cefr": "C1",
+      "imageNodeId": "491:1070"
+    },
+    {
+      "kind": "card",
+      "id": "anti-vegf-therapy",
+      "label": "Anti-VEGF Therapy",
+      "ipa": "/ˌæntiˈvɛdʒɛf ˈθɛrəpi/",
+      "cefr": "C1",
+      "imageNodeId": "491:1074"
+    },
+    {
+      "kind": "card",
+      "id": "artificial-tears",
+      "label": "Artificial Tears",
+      "ipa": "/ˌɑːrtɪˈfɪʃəl tɪərz/",
+      "cefr": "C1",
+      "imageNodeId": "491:1078"
+    },
+    {
+      "kind": "card",
+      "id": "warm-compress",
+      "label": "Warm Compress",
+      "ipa": "/wɔːrm kəmˈprɛs/",
+      "cefr": "C1",
+      "imageNodeId": "491:1082"
+    },
+    {
+      "kind": "card",
+      "id": "eye-patch",
+      "label": "Eye Patch",
+      "ipa": "/aɪ pætʃ/",
+      "cefr": "C1",
+      "imageNodeId": "494:937"
+    },
+    {
+      "kind": "card",
+      "id": "vision-therapy",
+      "label": "Vision Therapy",
+      "ipa": "/ˈvɪʒən ˈθɛrəpi/",
+      "cefr": "C1",
+      "imageNodeId": "494:941"
+    },
+    {
+      "kind": "card",
+      "id": "iris",
+      "label": "Iris",
+      "ipa": "/ˈaɪrɪs/",
+      "cefr": "B2",
+      "imageNodeId": "119:9619"
+    },
+    {
+      "kind": "card",
+      "id": "pupil",
+      "label": "Pupil",
+      "ipa": "/ˈpjuːpɪl/",
+      "cefr": "B2",
+      "imageNodeId": "119:9623"
+    },
+    {
+      "kind": "card",
+      "id": "cornea",
+      "label": "Cornea",
+      "ipa": "/ˈkɔːrniə/",
+      "cefr": "B2",
+      "imageNodeId": "119:9627"
+    },
+    {
+      "kind": "card",
+      "id": "retina",
+      "label": "Retina",
+      "ipa": "/ˈrɛtɪnə/",
+      "cefr": "B2",
+      "imageNodeId": "119:9631"
+    },
+    {
+      "kind": "card",
+      "id": "optic-nerve",
+      "label": "Optic Nerve",
+      "ipa": "/ˈɒptɪk nɜːrv/",
+      "cefr": "C1",
+      "imageNodeId": "119:9635"
+    },
+    {
+      "kind": "card",
+      "id": "eyelid",
+      "label": "Eyelid",
+      "ipa": "/ˈaɪlɪd/",
+      "cefr": "B2",
+      "imageNodeId": "119:9639"
+    },
+    {
+      "kind": "card",
+      "id": "eyelash",
+      "label": "Eyelash",
+      "ipa": "/ˈaɪlæʃ/",
+      "cefr": "B2",
+      "imageNodeId": "119:9643"
+    },
+    {
+      "kind": "card",
+      "id": "tear-duct",
+      "label": "Tear Duct",
+      "ipa": "/tɪr dʌkt/",
+      "cefr": "C1",
+      "imageNodeId": "119:9647"
+    },
+    {
+      "kind": "card",
+      "id": "sclera",
+      "label": "Sclera",
+      "ipa": "/ˈsklɪərə/",
+      "cefr": "B2",
+      "imageNodeId": "119:9651"
+    },
+    {
+      "kind": "card",
+      "id": "lens",
+      "label": "Lens",
+      "ipa": "/lɛnz/",
+      "cefr": "B2",
+      "imageNodeId": "119:9655"
+    },
+    {
+      "kind": "card",
+      "id": "macula",
+      "label": "Macula",
+      "ipa": "/ˈmækjʊlə/",
+      "cefr": "B2",
+      "imageNodeId": "494:945"
+    },
+    {
+      "kind": "card",
+      "id": "vitreous-humor",
+      "label": "Vitreous Humor",
+      "ipa": "/ˈvɪtriəs ˈhjuːmər/",
+      "cefr": "C1",
+      "imageNodeId": "494:949"
+    },
+    {
+      "kind": "card",
+      "id": "aqueous-humor",
+      "label": "Aqueous Humor",
+      "ipa": "/ˈeɪkwiəs ˈhjuːmər/",
+      "cefr": "C1",
+      "imageNodeId": "494:953"
+    },
+    {
+      "kind": "card",
+      "id": "ciliary-body",
+      "label": "Ciliary Body",
+      "ipa": "/ˈsɪliəri ˈbɒdi/",
+      "cefr": "C1",
+      "imageNodeId": "494:957"
+    },
+    {
+      "kind": "card",
+      "id": "conjunctiva",
+      "label": "Conjunctiva",
+      "ipa": "/ˌkɒndʒʌŋkˈtaɪvə/",
+      "cefr": "C1",
+      "imageNodeId": "494:961"
+    },
+    {
+      "kind": "card",
+      "id": "choroid",
+      "label": "Choroid",
+      "ipa": "/ˈkɔːrɔɪd/",
+      "cefr": "B2",
+      "imageNodeId": "494:965"
+    },
+    {
+      "kind": "card",
+      "id": "fovea",
+      "label": "Fovea",
+      "ipa": "/ˈfoʊviə/",
+      "cefr": "B2",
+      "imageNodeId": "494:969"
+    },
+    {
+      "kind": "card",
+      "id": "blind-spot",
+      "label": "Blind Spot",
+      "ipa": "/blaɪnd spɒt/",
+      "cefr": "C1",
+      "imageNodeId": "494:973"
+    },
+    {
+      "kind": "card",
+      "id": "lacrimal-gland",
+      "label": "Lacrimal Gland",
+      "ipa": "/ˈlækrɪməl ɡlænd/",
+      "cefr": "C1",
+      "imageNodeId": "494:977"
+    },
+    {
+      "kind": "card",
+      "id": "waiting-room",
+      "label": "Waiting Room",
+      "ipa": "/ˈweɪtɪŋ ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "119:9664"
+    },
+    {
+      "kind": "card",
+      "id": "exam-chair",
+      "label": "Exam Chair",
+      "ipa": "/ɪɡˈzæm tʃɛr/",
+      "cefr": "C1",
+      "imageNodeId": "119:9668"
+    },
+    {
+      "kind": "card",
+      "id": "display-wall",
+      "label": "Display Wall",
+      "ipa": "/dɪˈspleɪ wɔːl/",
+      "cefr": "C1",
+      "imageNodeId": "119:9672"
+    },
+    {
+      "kind": "card",
+      "id": "mirror",
+      "label": "Mirror",
+      "ipa": "/ˈmɪrər/",
+      "cefr": "B2",
+      "imageNodeId": "119:9676"
+    },
+    {
+      "kind": "card",
+      "id": "trial-frame",
+      "label": "Trial Frame",
+      "ipa": "/ˈtraɪəl freɪm/",
+      "cefr": "C1",
+      "imageNodeId": "119:9680"
+    },
+    {
+      "kind": "card",
+      "id": "case-drawer",
+      "label": "Case Drawer",
+      "ipa": "/keɪs drɔːr/",
+      "cefr": "C1",
+      "imageNodeId": "119:9684"
+    },
+    {
+      "kind": "card",
+      "id": "computer",
+      "label": "Computer",
+      "ipa": "/kəmˈpjuːtər/",
+      "cefr": "B2",
+      "imageNodeId": "119:9688"
+    },
+    {
+      "kind": "card",
+      "id": "receipt",
+      "label": "Receipt",
+      "ipa": "/rɪˈsiːt/",
+      "cefr": "B2",
+      "imageNodeId": "119:9692"
+    },
+    {
+      "kind": "card",
+      "id": "insurance-card",
+      "label": "Insurance Card",
+      "ipa": "/ɪnˈʃʊərəns kɑːrd/",
+      "cefr": "C1",
+      "imageNodeId": "119:9696"
+    },
+    {
+      "kind": "card",
+      "id": "appointment",
+      "label": "Appointment",
+      "ipa": "/əˈpɔɪntmənt/",
+      "cefr": "C1",
+      "imageNodeId": "119:9700"
+    },
+    {
+      "kind": "card",
+      "id": "pre-testing-room",
+      "label": "Pre-Testing Room",
+      "ipa": "/priːˈtɛstɪŋ ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "494:981"
+    },
+    {
+      "kind": "card",
+      "id": "optical-dispensary",
+      "label": "Optical Dispensary",
+      "ipa": "/ˈɒptɪkl dɪˈspɛnsəri/",
+      "cefr": "C1",
+      "imageNodeId": "494:985"
+    },
+    {
+      "kind": "card",
+      "id": "lens-edger",
+      "label": "Lens Edger",
+      "ipa": "/lɛnz ˈɛdʒər/",
+      "cefr": "C1",
+      "imageNodeId": "494:989"
+    },
+    {
+      "kind": "card",
+      "id": "pupilometer",
+      "label": "Pupilometer",
+      "ipa": "/ˌpjuːpɪˈlɒmɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "494:993"
+    },
+    {
+      "kind": "card",
+      "id": "lensometer",
+      "label": "Lensometer",
+      "ipa": "/lɛnˈsɒmɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "494:997"
+    },
+    {
+      "kind": "card",
+      "id": "frame-display",
+      "label": "Frame Display",
+      "ipa": "/freɪm dɪˈspleɪ/",
+      "cefr": "C1",
+      "imageNodeId": "494:1001"
+    },
+    {
+      "kind": "card",
+      "id": "adjustment-tools",
+      "label": "Adjustment Tools",
+      "ipa": "/əˈdʒʌstmənt tuːlz/",
+      "cefr": "C1",
+      "imageNodeId": "494:1005"
+    },
+    {
+      "kind": "card",
+      "id": "ultrasonic-cleaner",
+      "label": "Ultrasonic Cleaner",
+      "ipa": "/ˌʌltrəˈsɒnɪk ˈkliːnər/",
+      "cefr": "C1",
+      "imageNodeId": "494:1009"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "556:3",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "556:5",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2+ · Topic: The Eye Doctor",
+          "depth": 1,
+          "name": "Level: B2+ · Topic: The Eye Doctor"
+        },
+        {
+          "text": "The Science of Sight — Inside the Eye Doctor's Clinic\n\nAn eye examination begins before the patient sits down. In the waiting room, a receptionist confirms the appointment and checks the insurance card. In the pre-testing room, a technician runs preliminary measurements: an autorefractor estimates the eye's prescription, a keratometer maps the curvature of the cornea, and a tonometer measures the pressure of fluid inside the eye — a critical screening for glaucoma.\n\nThe patient then moves to the exam chair, where the optometrist conducts a refraction test using a phoropter — the heavy instrument with rotating lenses that flips between options: 'Better one, or two?' This determines whether the patient is nearsighted (difficulty seeing far), farsighted (difficulty seeing near), or has astigmatism (distorted vision at all distances). A cover test checks eye alignment. A visual field test maps peripheral vision. For older patients, the optometrist screens for presbyopia — the gradual loss of near focus that begins around age forty.\n\nTo examine the internal structures, the doctor applies dilation drops that widen the pupil, allowing light to enter and illuminate the retina, optic nerve, macula, and blood vessels at the back of the eye. A slit lamp — a high-powered biomicroscope — magnifies the front structures: the cornea, iris, and lens. An ophthalmoscope provides a direct view of the fundus. More advanced imaging — an OCT scanner or fundus camera — produces cross-sectional images that detect disease before symptoms appear.\n\nThe conditions this equipment reveals range from common to sight-threatening. Dry eye — treatable with artificial tears or a warm compress — affects millions. Conjunctivitis (pink eye) responds to medication. Floaters — shadows cast by debris in the vitreous humor — are usually harmless. A stye on the eyelid resolves with warm compresses. But a cataract — clouding of the lens — eventually requires surgery to replace the lens with an implant. Glaucoma, often detected through elevated tonometer readings, demands lifelong treatment to preserve the optic nerve. Macular degeneration threatens central vision in older adults. Diabetic retinopathy, caused by blood vessel damage in the retina, requires regular monitoring and may need intravitreal injection or laser surgery. Retinal detachment is a medical emergency.\n\nOnce the examination is complete, the doctor writes a prescription. At the optical dispensary, the patient chooses a frame from the display wall. The frame's temple arms, hinge, and nose pads must fit comfortably. Lens options include bifocals, progressive lenses (which blend distance and reading zones seamlessly), anti-glare coating, blue light filtering, and transition lenses that darken in sunlight. A lens edger cuts the corrective lens to fit the chosen frame. A lensometer verifies the finished prescription. A pupilometer measures the distance between pupils to centre the lens correctly.\n\nFor those who prefer contact lenses, a fitting appointment determines the correct curvature and diameter. A cleaning cloth, a lens case, and daily solution become part of the routine. Safety goggles protect the eyes in industrial settings; swimming goggles prevent chlorine irritation.\n\nVision therapy — a programme of exercises — can treat lazy eye (amblyopia) and crossed eyes in children, sometimes supplemented by an eye patch worn over the stronger eye. Colour blindness, tested with Ishihara plates, has no cure but rarely limits daily life. LASIK and PRK surgery reshape the cornea permanently, reducing or eliminating the need for glasses — though not every patient qualifies.\n\nThe eye is small, fragile, and irreplaceable. Regular examination — every one to two years — remains the most effective defence against conditions that develop silently, damage progressively, and announce themselves only when treatment options have narrowed.",
+          "depth": 1,
+          "name": "The Science of Sight — Inside the Eye Doctor's Clinic An eye examination begins before the patient sits down. In the waiting room, a receptionist confirms the appointment and checks the insurance card. In the pre-testing room, a technician runs preliminary measurements: an autorefractor estimates the eye's prescription, a keratometer maps the curvature of the cornea, and a tonometer measures the pressure of fluid inside the eye — a critical screening for glaucoma. The patient then moves to the exam chair, where the optometrist conducts a refraction test using a phoropter — the heavy instrument with rotating lenses that flips between options: 'Better one, or two?' This determines whether the patient is nearsighted (difficulty seeing far), farsighted (difficulty seeing near), or has astigmatism (distorted vision at all distances). A cover test checks eye alignment. A visual field test maps peripheral vision. For older patients, the optometrist screens for presbyopia — the gradual loss of near focus that begins around age forty. To examine the internal structures, the doctor applies dilation drops that widen the pupil, allowing light to enter and illuminate the retina, optic nerve, macula, and blood vessels at the back of the eye. A slit lamp — a high-powered biomicroscope — magnifies the front structures: the cornea, iris, and lens. An ophthalmoscope provides a direct view of the fundus. More advanced imaging — an OCT scanner or fundus camera — produces cross-sectional images that detect disease before symptoms appear. The conditions this equipment reveals range from common to sight-threatening. Dry eye — treatable with artificial tears or a warm compress — affects millions. Conjunctivitis (pink eye) responds to medication. Floaters — shadows cast by debris in the vitreous humor — are usually harmless. A stye on the eyelid resolves with warm compresses. But a cataract — clouding of the lens — eventually requires surgery to replace the lens with an implant. Glaucoma, often detected through elevated tonometer readings, demands lifelong treatment to preserve the optic nerve. Macular degeneration threatens central vision in older adults. Diabetic retinopathy, caused by blood vessel damage in the retina, requires regular monitoring and may need intravitreal injection or laser surgery. Retinal detachment is a medical emergency. Once the examination is complete, the doctor writes a prescription. At the optical dispensary, the patient chooses a frame from the display wall. The frame's temple arms, hinge, and nose pads must fit comfortably. Lens options include bifocals, progressive lenses (which blend distance and reading zones seamlessly), anti-glare coating, blue light filtering, and transition lenses that darken in sunlight. A lens edger cuts the corrective lens to fit the chosen frame. A lensometer verifies the finished prescription. A pupilometer measures the distance between pupils to centre the lens correctly. For those who prefer contact lenses, a fitting appointment determines the correct curvature and diameter. A cleaning cloth, a lens case, and daily solution become part of the routine. Safety goggles protect the eyes in industrial settings; swimming goggles prevent chlorine irritation. Vision therapy — a programme of exercises — can treat lazy eye (amblyopia) and crossed eyes in children, sometimes supplemented by an eye patch worn over the stronger eye. Colour blindness, tested with Ishihara plates, has no cure but rarely limits daily life. LASIK and PRK surgery reshape the cornea permanently, reducing or eliminating the need for glasses — though not every patient qualifies. The eye is small, fragile, and irreplaceable. Regular examination — every one to two years — remains the most effective defence against conditions that develop silently, damage progressively, and announce themselves only when treatment options have narrowed."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Describe the sequence of tests a patient undergoes during a comprehensive eye examination.",
+          "depth": 1,
+          "name": "1. Describe the sequence of tests a patient undergoes during a comprehensive eye examination."
+        },
+        {
+          "text": "2. Compare the diagnostic instruments mentioned (phoropter, slit lamp, OCT scanner). What does each reveal?",
+          "depth": 1,
+          "name": "2. Compare the diagnostic instruments mentioned (phoropter, slit lamp, OCT scanner). What does each reveal?"
+        },
+        {
+          "text": "3. Distinguish between conditions the passage describes as common and those it classifies as sight-threatening.",
+          "depth": 1,
+          "name": "3. Distinguish between conditions the passage describes as common and those it classifies as sight-threatening."
+        },
+        {
+          "text": "4. What options does a patient have after receiving a prescription? Explain the choices available at the optical dispensary.",
+          "depth": 1,
+          "name": "4. What options does a patient have after receiving a prescription? Explain the choices available at the optical dispensary."
+        },
+        {
+          "text": "5. The passage concludes that the eye is 'small, fragile, and irreplaceable.' How does the structure of the entire passage support this claim?",
+          "depth": 1,
+          "name": "5. The passage concludes that the eye is 'small, fragile, and irreplaceable.' How does the structure of the entire passage support this claim?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "556:18",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "turn a blind eye",
+          "depth": 2,
+          "name": "turn a blind eye"
+        },
+        {
+          "text": "deliberately ignore something you know is wrong",
+          "depth": 2,
+          "name": "deliberately ignore something you know is wrong"
+        },
+        {
+          "text": "\"The manager turned a blind eye to the employees arriving late.\"",
+          "depth": 2,
+          "name": "\"The manager turned a blind eye to the employees arriving late.\""
+        },
+        {
+          "text": "see eye to eye",
+          "depth": 2,
+          "name": "see eye to eye"
+        },
+        {
+          "text": "agree with someone",
+          "depth": 2,
+          "name": "agree with someone"
+        },
+        {
+          "text": "\"We don't always see eye to eye, but we respect each other.\"",
+          "depth": 2,
+          "name": "\"We don't always see eye to eye, but we respect each other.\""
+        },
+        {
+          "text": "keep an eye on",
+          "depth": 2,
+          "name": "keep an eye on"
+        },
+        {
+          "text": "watch carefully; monitor",
+          "depth": 2,
+          "name": "watch carefully; monitor"
+        },
+        {
+          "text": "\"Can you keep an eye on my bag while I go to the counter?\"",
+          "depth": 2,
+          "name": "\"Can you keep an eye on my bag while I go to the counter?\""
+        },
+        {
+          "text": "in the blink of an eye",
+          "depth": 2,
+          "name": "in the blink of an eye"
+        },
+        {
+          "text": "very quickly; in an instant",
+          "depth": 2,
+          "name": "very quickly; in an instant"
+        },
+        {
+          "text": "\"The holidays passed in the blink of an eye.\"",
+          "depth": 2,
+          "name": "\"The holidays passed in the blink of an eye.\""
+        },
+        {
+          "text": "have an eye for",
+          "depth": 2,
+          "name": "have an eye for"
+        },
+        {
+          "text": "have a talent for noticing or appreciating something",
+          "depth": 2,
+          "name": "have a talent for noticing or appreciating something"
+        },
+        {
+          "text": "\"She has a real eye for design — everything she creates looks beautiful.\"",
+          "depth": 2,
+          "name": "\"She has a real eye for design — everything she creates looks beautiful.\""
+        },
+        {
+          "text": "the apple of someone's eye",
+          "depth": 2,
+          "name": "the apple of someone's eye"
+        },
+        {
+          "text": "a person who is very precious to someone",
+          "depth": 2,
+          "name": "a person who is very precious to someone"
+        },
+        {
+          "text": "\"Their youngest daughter is the apple of her father's eye.\"",
+          "depth": 2,
+          "name": "\"Their youngest daughter is the apple of her father's eye.\""
+        },
+        {
+          "text": "more than meets the eye",
+          "depth": 2,
+          "name": "more than meets the eye"
+        },
+        {
+          "text": "more complex or interesting than it first appears",
+          "depth": 2,
+          "name": "more complex or interesting than it first appears"
+        },
+        {
+          "text": "\"This case is more complicated — there's more than meets the eye.\"",
+          "depth": 2,
+          "name": "\"This case is more complicated — there's more than meets the eye.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "556:50",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A patient having an eye test",
+          "depth": 1,
+          "name": "Scene: A patient having an eye test"
+        },
+        {
+          "text": "Optometrist:",
+          "depth": 2,
+          "name": "Optometrist:"
+        },
+        {
+          "text": "Good morning. When was your last eye test?",
+          "depth": 2,
+          "name": "Good morning. When was your last eye test?"
+        },
+        {
+          "text": "Patient:",
+          "depth": 2,
+          "name": "Patient:"
+        },
+        {
+          "text": "About two years ago. I've been getting headaches when I read, so I thought I should come in.",
+          "depth": 2,
+          "name": "About two years ago. I've been getting headaches when I read, so I thought I should come in."
+        },
+        {
+          "text": "Optometrist:",
+          "depth": 2,
+          "name": "Optometrist:"
+        },
+        {
+          "text": "That's a good idea. Let's start by checking your distance vision. Can you read the fourth line on the chart for me?",
+          "depth": 2,
+          "name": "That's a good idea. Let's start by checking your distance vision. Can you read the fourth line on the chart for me?"
+        },
+        {
+          "text": "Patient:",
+          "depth": 2,
+          "name": "Patient:"
+        },
+        {
+          "text": "D... E... F... P... O... T... I think. The last one might be a C?",
+          "depth": 2,
+          "name": "D... E... F... P... O... T... I think. The last one might be a C?"
+        },
+        {
+          "text": "Optometrist:",
+          "depth": 2,
+          "name": "Optometrist:"
+        },
+        {
+          "text": "That's fine. Now I'm going to use this instrument to look at the back of your eyes. Just keep looking straight ahead.",
+          "depth": 2,
+          "name": "That's fine. Now I'm going to use this instrument to look at the back of your eyes. Just keep looking straight ahead."
+        },
+        {
+          "text": "Patient:",
+          "depth": 2,
+          "name": "Patient:"
+        },
+        {
+          "text": "Is everything okay?",
+          "depth": 2,
+          "name": "Is everything okay?"
+        },
+        {
+          "text": "Optometrist:",
+          "depth": 2,
+          "name": "Optometrist:"
+        },
+        {
+          "text": "Everything looks healthy. Your retina and optic nerve are both normal. Now let me check your prescription. Look through here and tell me which is clearer — option one or option two?",
+          "depth": 2,
+          "name": "Everything looks healthy. Your retina and optic nerve are both normal. Now let me check your prescription. Look through here and tell me which is clearer — option one or option two?"
+        },
+        {
+          "text": "Patient:",
+          "depth": 2,
+          "name": "Patient:"
+        },
+        {
+          "text": "Option two is definitely clearer.",
+          "depth": 2,
+          "name": "Option two is definitely clearer."
+        },
+        {
+          "text": "Optometrist:",
+          "depth": 2,
+          "name": "Optometrist:"
+        },
+        {
+          "text": "Your prescription has changed slightly. You're a bit more long-sighted than before, which explains the reading headaches. I'd recommend varifocal lenses.",
+          "depth": 2,
+          "name": "Your prescription has changed slightly. You're a bit more long-sighted than before, which explains the reading headaches. I'd recommend varifocal lenses."
+        },
+        {
+          "text": "Patient:",
+          "depth": 2,
+          "name": "Patient:"
+        },
+        {
+          "text": "Are varifocals hard to get used to?",
+          "depth": 2,
+          "name": "Are varifocals hard to get used to?"
+        },
+        {
+          "text": "Optometrist:",
+          "depth": 2,
+          "name": "Optometrist:"
+        },
+        {
+          "text": "There's a short adjustment period — a week or two. But most people find them much more convenient than switching between two pairs.",
+          "depth": 2,
+          "name": "There's a short adjustment period — a week or two. But most people find them much more convenient than switching between two pairs."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "556:88",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I need to check my eyes. I'll go to an eyes doctor.\"",
+          "depth": 2,
+          "name": "❌ \"I need to check my eyes. I'll go to an eyes doctor.\""
+        },
+        {
+          "text": "✅ \"I need to get my eyes checked. I'll go to an eye doctor.\"",
+          "depth": 2,
+          "name": "✅ \"I need to get my eyes checked. I'll go to an eye doctor.\""
+        },
+        {
+          "text": "Two issues: (1) Causative 'get/have + object + past participle': 'get my eyes checked'. (2) Compound nouns use the singular attributive form: 'eye doctor', 'eye test', 'eye drops' — not 'eyes doctor'. The same rule: 'shoe shop' (not *shoes shop), 'tooth fairy' (not *teeth fairy).",
+          "depth": 2,
+          "name": "Two issues: (1) Causative 'get/have + object + past participle': 'get my eyes checked'. (2) Compound nouns use the singular attributive form: 'eye doctor', 'eye test', 'eye drops' — not 'eyes doctor'. The same rule: 'shoe shop' (not *shoes shop), 'tooth fairy' (not *teeth fairy)."
+        },
+        {
+          "text": "❌ \"The optometrist told me that I should have worn glasses since childhood.\"",
+          "depth": 2,
+          "name": "❌ \"The optometrist told me that I should have worn glasses since childhood.\""
+        },
+        {
+          "text": "✅ \"The optometrist told me that I should have been wearing glasses since childhood.\"",
+          "depth": 2,
+          "name": "✅ \"The optometrist told me that I should have been wearing glasses since childhood.\""
+        },
+        {
+          "text": "'Should have + past participle' = a single completed action that didn't happen: 'I should have gone yesterday.' For a continuous state from past to present, use 'should have been + -ing': 'should have been wearing glasses since childhood.' The continuous form emphasises the ongoing nature of the missed action.",
+          "depth": 2,
+          "name": "'Should have + past participle' = a single completed action that didn't happen: 'I should have gone yesterday.' For a continuous state from past to present, use 'should have been + -ing': 'should have been wearing glasses since childhood.' The continuous form emphasises the ongoing nature of the missed action."
+        },
+        {
+          "text": "❌ \"My grandmother has been diagnosed with a cataract in the both eyes.\"",
+          "depth": 2,
+          "name": "❌ \"My grandmother has been diagnosed with a cataract in the both eyes.\""
+        },
+        {
+          "text": "✅ \"My grandmother has been diagnosed with cataracts in both eyes.\"",
+          "depth": 2,
+          "name": "✅ \"My grandmother has been diagnosed with cataracts in both eyes.\""
+        },
+        {
+          "text": "'Both' never takes 'the' before it when it precedes a noun: 'both eyes', 'both hands', 'both tests'. Additionally, medical conditions that occur in pairs typically use the plural: 'cataracts in both eyes.' Compare: 'She has a cataract in her left eye' (singular, one eye).",
+          "depth": 2,
+          "name": "'Both' never takes 'the' before it when it precedes a noun: 'both eyes', 'both hands', 'both tests'. Additionally, medical conditions that occur in pairs typically use the plural: 'cataracts in both eyes.' Compare: 'She has a cataract in her left eye' (singular, one eye)."
+        },
+        {
+          "text": "❌ \"The doctor said I mustn't worry because it's only a minor infection.\"",
+          "depth": 2,
+          "name": "❌ \"The doctor said I mustn't worry because it's only a minor infection.\""
+        },
+        {
+          "text": "✅ \"The doctor said I needn't worry because it's only a minor infection.\" / \"...didn't need to worry...\"",
+          "depth": 2,
+          "name": "✅ \"The doctor said I needn't worry because it's only a minor infection.\" / \"...didn't need to worry...\""
+        },
+        {
+          "text": "'Mustn't' = prohibition (you are not allowed to). 'Needn't' = it's not necessary. The doctor is reassuring, not forbidding: 'You needn't worry.' Compare: 'You mustn't rub your eyes after the drops' (prohibition). At B2+, precise modal choice distinguishes meaning — mustn't ≠ needn't ≠ don't have to.",
+          "depth": 2,
+          "name": "'Mustn't' = prohibition (you are not allowed to). 'Needn't' = it's not necessary. The doctor is reassuring, not forbidding: 'You needn't worry.' Compare: 'You mustn't rub your eyes after the drops' (prohibition). At B2+, precise modal choice distinguishes meaning — mustn't ≠ needn't ≠ don't have to."
+        },
+        {
+          "text": "❌ \"My vision has been getting worst since last year.\"",
+          "depth": 2,
+          "name": "❌ \"My vision has been getting worst since last year.\""
+        },
+        {
+          "text": "✅ \"My vision has been getting worse since last year.\"",
+          "depth": 2,
+          "name": "✅ \"My vision has been getting worse since last year.\""
+        },
+        {
+          "text": "'Worse' = comparative of 'bad'. 'Worst' = superlative. 'Getting worse' (comparative — things are declining). 'The worst it's ever been' (superlative — the lowest point). The same error occurs with 'less/least' and 'further/furthest'. Comparative = comparing two states; superlative = the extreme among three or more.",
+          "depth": 2,
+          "name": "'Worse' = comparative of 'bad'. 'Worst' = superlative. 'Getting worse' (comparative — things are declining). 'The worst it's ever been' (superlative — the lowest point). The same error occurs with 'less/least' and 'further/furthest'. Comparative = comparing two states; superlative = the extreme among three or more."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "556:112",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how vision and medical vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how vision and medical vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "prescribe",
+          "depth": 2,
+          "name": "prescribe"
+        },
+        {
+          "text": "prescription",
+          "depth": 2,
+          "name": "prescription"
+        },
+        {
+          "text": "prescribe",
+          "depth": 2,
+          "name": "prescribe"
+        },
+        {
+          "text": "prescribed / prescriptive",
+          "depth": 2,
+          "name": "prescribed / prescriptive"
+        },
+        {
+          "text": "examine",
+          "depth": 2,
+          "name": "examine"
+        },
+        {
+          "text": "examination / examiner",
+          "depth": 2,
+          "name": "examination / examiner"
+        },
+        {
+          "text": "examine",
+          "depth": 2,
+          "name": "examine"
+        },
+        {
+          "text": "examining",
+          "depth": 2,
+          "name": "examining"
+        },
+        {
+          "text": "correct",
+          "depth": 2,
+          "name": "correct"
+        },
+        {
+          "text": "correction",
+          "depth": 2,
+          "name": "correction"
+        },
+        {
+          "text": "correct",
+          "depth": 2,
+          "name": "correct"
+        },
+        {
+          "text": "correct / corrective",
+          "depth": 2,
+          "name": "correct / corrective"
+        },
+        {
+          "text": "diagnose",
+          "depth": 2,
+          "name": "diagnose"
+        },
+        {
+          "text": "diagnosis / diagnostics",
+          "depth": 2,
+          "name": "diagnosis / diagnostics"
+        },
+        {
+          "text": "diagnose",
+          "depth": 2,
+          "name": "diagnose"
+        },
+        {
+          "text": "diagnostic",
+          "depth": 2,
+          "name": "diagnostic"
+        },
+        {
+          "text": "blur",
+          "depth": 2,
+          "name": "blur"
+        },
+        {
+          "text": "blur / blurriness",
+          "depth": 2,
+          "name": "blur / blurriness"
+        },
+        {
+          "text": "blur",
+          "depth": 2,
+          "name": "blur"
+        },
+        {
+          "text": "blurred / blurry",
+          "depth": 2,
+          "name": "blurred / blurry"
+        },
+        {
+          "text": "focus",
+          "depth": 2,
+          "name": "focus"
+        },
+        {
+          "text": "focus",
+          "depth": 2,
+          "name": "focus"
+        },
+        {
+          "text": "focus",
+          "depth": 2,
+          "name": "focus"
+        },
+        {
+          "text": "focused / focal",
+          "depth": 2,
+          "name": "focused / focal"
+        },
+        {
+          "text": "dilate",
+          "depth": 2,
+          "name": "dilate"
+        },
+        {
+          "text": "dilation / dilator",
+          "depth": 2,
+          "name": "dilation / dilator"
+        },
+        {
+          "text": "dilate",
+          "depth": 2,
+          "name": "dilate"
+        },
+        {
+          "text": "dilated",
+          "depth": 2,
+          "name": "dilated"
+        },
+        {
+          "text": "lens",
+          "depth": 2,
+          "name": "lens"
+        },
+        {
+          "text": "lens",
+          "depth": 2,
+          "name": "lens"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "vision",
+          "depth": 2,
+          "name": "vision"
+        },
+        {
+          "text": "vision / visibility",
+          "depth": 2,
+          "name": "vision / visibility"
+        },
+        {
+          "text": "envision",
+          "depth": 2,
+          "name": "envision"
+        },
+        {
+          "text": "visual / visible",
+          "depth": 2,
+          "name": "visual / visible"
+        },
+        {
+          "text": "operate",
+          "depth": 2,
+          "name": "operate"
+        },
+        {
+          "text": "operation / operator",
+          "depth": 2,
+          "name": "operation / operator"
+        },
+        {
+          "text": "operate",
+          "depth": 2,
+          "name": "operate"
+        },
+        {
+          "text": "operational / operative",
+          "depth": 2,
+          "name": "operational / operative"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "556:172",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A __________ measures the pressure inside the eye to screen for glaucoma.",
+          "depth": 1,
+          "name": "1. A __________ measures the pressure inside the eye to screen for glaucoma."
+        },
+        {
+          "text": "2.  The doctor applied __________ drops to widen the pupil before examining the retina.",
+          "depth": 1,
+          "name": "2. The doctor applied __________ drops to widen the pupil before examining the retina."
+        },
+        {
+          "text": "3.  A person who has difficulty seeing distant objects is described as __________.",
+          "depth": 1,
+          "name": "3. A person who has difficulty seeing distant objects is described as __________."
+        },
+        {
+          "text": "4.  __________ lenses blend distance and reading zones seamlessly without a visible line.",
+          "depth": 1,
+          "name": "4. __________ lenses blend distance and reading zones seamlessly without a visible line."
+        },
+        {
+          "text": "5.  A __________ lamp is a high-powered microscope used to examine the front of the eye.",
+          "depth": 1,
+          "name": "5. A __________ lamp is a high-powered microscope used to examine the front of the eye."
+        },
+        {
+          "text": "6.  She treated her dry eyes with __________ tears recommended by the optometrist.",
+          "depth": 1,
+          "name": "6. She treated her dry eyes with __________ tears recommended by the optometrist."
+        },
+        {
+          "text": "7.  A __________ — clouding of the natural lens — eventually requires surgical replacement.",
+          "depth": 1,
+          "name": "7. A __________ — clouding of the natural lens — eventually requires surgical replacement."
+        },
+        {
+          "text": "8.  The __________ cuts the corrective lens to fit precisely into the chosen frame.",
+          "depth": 1,
+          "name": "8. The __________ cuts the corrective lens to fit precisely into the chosen frame."
+        },
+        {
+          "text": "9.  __________ plates test a patient's ability to distinguish colours.",
+          "depth": 1,
+          "name": "9. __________ plates test a patient's ability to distinguish colours."
+        },
+        {
+          "text": "10. A __________ compress is used to treat a stye on the eyelid.",
+          "depth": 1,
+          "name": "10. A __________ compress is used to treat a stye on the eyelid."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. tonometer  2. dilation  3. nearsighted  4. Progressive  5. slit  6. artificial  7. cataract  8. lens edger  9. Ishihara  10. warm",
+          "depth": 2,
+          "name": "1. tonometer 2. dilation 3. nearsighted 4. Progressive 5. slit 6. artificial 7. cataract 8. lens edger 9. Ishihara 10. warm"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "556:190",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Optician vs Optometrist vs Ophthalmologist",
+          "depth": 2,
+          "name": "Optician vs Optometrist vs Ophthalmologist"
+        },
+        {
+          "text": "These three terms confuse learners. Optician = fits and sells glasses (not a doctor). Optometrist = tests eyes and prescribes lenses (a primary eye care provider). Ophthalmologist = a medical doctor specialising in eye diseases and surgery. In everyday British English, people often just say 'the optician's' for the shop where they get their eyes tested.",
+          "depth": 2,
+          "name": "These three terms confuse learners. Optician = fits and sells glasses (not a doctor). Optometrist = tests eyes and prescribes lenses (a primary eye care provider). Ophthalmologist = a medical doctor specialising in eye diseases and surgery. In everyday British English, people often just say 'the optician's' for the shop where they get their eyes tested."
+        },
+        {
+          "text": "Free Eye Tests on the NHS",
+          "depth": 2,
+          "name": "Free Eye Tests on the NHS"
+        },
+        {
+          "text": "In the UK, eye tests are free for: children under 16 (or under 19 in full-time education), adults over 60, people on Income Support or Universal Credit, people with diabetes or glaucoma, and close relatives of glaucoma patients. Everyone else pays privately — typically £20–30. Many employers also offer free eye tests for regular screen users.",
+          "depth": 2,
+          "name": "In the UK, eye tests are free for: children under 16 (or under 19 in full-time education), adults over 60, people on Income Support or Universal Credit, people with diabetes or glaucoma, and close relatives of glaucoma patients. Everyone else pays privately — typically £20–30. Many employers also offer free eye tests for regular screen users."
+        },
+        {
+          "text": "Glasses vs Spectacles",
+          "depth": 2,
+          "name": "Glasses vs Spectacles"
+        },
+        {
+          "text": "'Glasses' is the everyday word in both British and American English. 'Spectacles' or 'specs' is more old-fashioned/formal British English — still used but sounds slightly dated. Never say 'a glass' for one lens — always 'glasses' (plural, like 'trousers'). 'Shades' = sunglasses (informal).",
+          "depth": 2,
+          "name": "'Glasses' is the everyday word in both British and American English. 'Spectacles' or 'specs' is more old-fashioned/formal British English — still used but sounds slightly dated. Never say 'a glass' for one lens — always 'glasses' (plural, like 'trousers'). 'Shades' = sunglasses (informal)."
+        },
+        {
+          "text": "20/20 Vision",
+          "depth": 2,
+          "name": "20/20 Vision"
+        },
+        {
+          "text": "'20/20 vision' (American) or '6/6 vision' (British/metric) means normal visual acuity. The numbers refer to the test distance and the letter size. It doesn't mean perfect vision — just that you can see at 20 feet what a person with normal vision sees at 20 feet. Many people have better than 20/20 vision.",
+          "depth": 2,
+          "name": "'20/20 vision' (American) or '6/6 vision' (British/metric) means normal visual acuity. The numbers refer to the test distance and the letter size. It doesn't mean perfect vision — just that you can see at 20 feet what a person with normal vision sees at 20 feet. Many people have better than 20/20 vision."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "556:206",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "prescription",
+          "depth": 2,
+          "name": "prescription"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "eye ~, ~ glasses, ~ lenses",
+          "depth": 2,
+          "name": "eye ~, ~ glasses, ~ lenses"
+        },
+        {
+          "text": "optometrist",
+          "depth": 2,
+          "name": "optometrist"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "visit the ~, ~ appointment, ~",
+          "depth": 2,
+          "name": "visit the ~, ~ appointment, ~"
+        },
+        {
+          "text": "retina",
+          "depth": 2,
+          "name": "retina"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ scan, ~ damage, ~ health",
+          "depth": 2,
+          "name": "~ scan, ~ damage, ~ health"
+        },
+        {
+          "text": "cornea",
+          "depth": 2,
+          "name": "cornea"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "~ shape, ~ transplant, ~ lens",
+          "depth": 2,
+          "name": "~ shape, ~ transplant, ~ lens"
+        },
+        {
+          "text": "lens",
+          "depth": 2,
+          "name": "lens"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "contact ~, ~ cleaner, bifocal ~",
+          "depth": 2,
+          "name": "contact ~, ~ cleaner, bifocal ~"
+        },
+        {
+          "text": "pupil",
+          "depth": 2,
+          "name": "pupil"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ dilation, ~ size, ~ reaction",
+          "depth": 2,
+          "name": "~ dilation, ~ size, ~ reaction"
+        },
+        {
+          "text": "frame",
+          "depth": 2,
+          "name": "frame"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ style, metal ~, ~ size",
+          "depth": 2,
+          "name": "~ style, metal ~, ~ size"
+        },
+        {
+          "text": "glaucoma",
+          "depth": 2,
+          "name": "glaucoma"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ test, ~ treatment, ~ drops",
+          "depth": 2,
+          "name": "~ test, ~ treatment, ~ drops"
+        },
+        {
+          "text": "cataract",
+          "depth": 2,
+          "name": "cataract"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ surgery, ~ lens, ~ removal",
+          "depth": 2,
+          "name": "~ surgery, ~ lens, ~ removal"
+        },
+        {
+          "text": "vision",
+          "depth": 2,
+          "name": "vision"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "blurred ~, ~ test, ~ correction",
+          "depth": 2,
+          "name": "blurred ~, ~ test, ~ correction"
+        }
+      ]
+    }
+  }
+}

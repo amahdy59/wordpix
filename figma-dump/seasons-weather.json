@@ -1,0 +1,489 @@
+{
+  "unitId": "seasons-weather",
+  "name": "Seasons & Weather",
+  "subtopics": [
+    {
+      "id": "seasons",
+      "title": "Seasons",
+      "wordIds": [
+        "spring",
+        "summer",
+        "autumn",
+        "winter",
+        "dry-season",
+        "rainy-season",
+        "monsoon",
+        "equinox",
+        "solstice",
+        "harvest"
+      ]
+    },
+    {
+      "id": "weather-conditions",
+      "title": "Weather Conditions",
+      "wordIds": [
+        "sunny",
+        "cloudy",
+        "rainy",
+        "snowy",
+        "windy",
+        "foggy",
+        "stormy",
+        "humid",
+        "overcast",
+        "clear"
+      ]
+    },
+    {
+      "id": "severe-weather",
+      "title": "Severe Weather",
+      "wordIds": [
+        "thunder",
+        "lightning",
+        "tornado",
+        "hurricane",
+        "blizzard",
+        "hail",
+        "flood",
+        "drought",
+        "heat-wave",
+        "ice-storm"
+      ]
+    },
+    {
+      "id": "temperature",
+      "title": "Temperature",
+      "wordIds": [
+        "hot",
+        "warm",
+        "cool",
+        "cold",
+        "freezing",
+        "mild",
+        "chilly",
+        "boiling",
+        "below-zero",
+        "room-temperature"
+      ]
+    },
+    {
+      "id": "weather-tools",
+      "title": "Weather Tools",
+      "wordIds": [
+        "thermometer",
+        "barometer",
+        "weather-vane",
+        "rain-gauge",
+        "anemometer",
+        "weather-map",
+        "forecast",
+        "satellite",
+        "radar",
+        "weather-app"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "spring",
+      "label": "Spring",
+      "ipa": "/sprɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:7197"
+    },
+    {
+      "kind": "card",
+      "id": "summer",
+      "label": "Summer",
+      "ipa": "/ˈsʌmər/",
+      "cefr": "A2",
+      "imageNodeId": "467:7201"
+    },
+    {
+      "kind": "card",
+      "id": "autumn",
+      "label": "Autumn",
+      "ipa": "/ˈɔːtəm/",
+      "cefr": "A2",
+      "imageNodeId": "467:7205"
+    },
+    {
+      "kind": "card",
+      "id": "winter",
+      "label": "Winter",
+      "ipa": "/ˈwɪntər/",
+      "cefr": "A2",
+      "imageNodeId": "467:7209"
+    },
+    {
+      "kind": "card",
+      "id": "dry-season",
+      "label": "Dry Season",
+      "ipa": "/draɪ ˈsiːzən/",
+      "cefr": "B1",
+      "imageNodeId": "467:7213"
+    },
+    {
+      "kind": "card",
+      "id": "rainy-season",
+      "label": "Rainy Season",
+      "ipa": "/ˈreɪni ˈsiːzən/",
+      "cefr": "B1",
+      "imageNodeId": "467:7217"
+    },
+    {
+      "kind": "card",
+      "id": "monsoon",
+      "label": "Monsoon",
+      "ipa": "/mɒnˈsuːn/",
+      "cefr": "A2",
+      "imageNodeId": "467:7221"
+    },
+    {
+      "kind": "card",
+      "id": "equinox",
+      "label": "Equinox",
+      "ipa": "/ˈiːkwɪˌnɒks/",
+      "cefr": "A2",
+      "imageNodeId": "467:7225"
+    },
+    {
+      "kind": "card",
+      "id": "solstice",
+      "label": "Solstice",
+      "ipa": "/ˈsɒlstɪs/",
+      "cefr": "A2",
+      "imageNodeId": "467:7229"
+    },
+    {
+      "kind": "card",
+      "id": "harvest",
+      "label": "Harvest",
+      "ipa": "/ˈhɑːrvɪst/",
+      "cefr": "A2",
+      "imageNodeId": "467:7233"
+    },
+    {
+      "kind": "card",
+      "id": "sunny",
+      "label": "Sunny",
+      "ipa": "/ˈsʌni/",
+      "cefr": "A2",
+      "imageNodeId": "467:7242"
+    },
+    {
+      "kind": "card",
+      "id": "cloudy",
+      "label": "Cloudy",
+      "ipa": "/ˈklaʊdi/",
+      "cefr": "A2",
+      "imageNodeId": "467:7246"
+    },
+    {
+      "kind": "card",
+      "id": "rainy",
+      "label": "Rainy",
+      "ipa": "/ˈreɪni/",
+      "cefr": "A2",
+      "imageNodeId": "467:7250"
+    },
+    {
+      "kind": "card",
+      "id": "snowy",
+      "label": "Snowy",
+      "ipa": "/ˈsnoʊi/",
+      "cefr": "A2",
+      "imageNodeId": "467:7254"
+    },
+    {
+      "kind": "card",
+      "id": "windy",
+      "label": "Windy",
+      "ipa": "/ˈwɪndi/",
+      "cefr": "A2",
+      "imageNodeId": "467:7258"
+    },
+    {
+      "kind": "card",
+      "id": "foggy",
+      "label": "Foggy",
+      "ipa": "/ˈfɒɡi/",
+      "cefr": "A2",
+      "imageNodeId": "467:7262"
+    },
+    {
+      "kind": "card",
+      "id": "stormy",
+      "label": "Stormy",
+      "ipa": "/ˈstɔːrmi/",
+      "cefr": "A2",
+      "imageNodeId": "467:7266"
+    },
+    {
+      "kind": "card",
+      "id": "humid",
+      "label": "Humid",
+      "ipa": "/ˈhjuːmɪd/",
+      "cefr": "A2",
+      "imageNodeId": "467:7270"
+    },
+    {
+      "kind": "card",
+      "id": "overcast",
+      "label": "Overcast",
+      "ipa": "/ˌoʊvərˈkæst/",
+      "cefr": "A2",
+      "imageNodeId": "467:7274"
+    },
+    {
+      "kind": "card",
+      "id": "clear",
+      "label": "Clear",
+      "ipa": "/klɪər/",
+      "cefr": "A2",
+      "imageNodeId": "467:7278"
+    },
+    {
+      "kind": "card",
+      "id": "thunder",
+      "label": "Thunder",
+      "ipa": "/ˈθʌndər/",
+      "cefr": "A2",
+      "imageNodeId": "467:7287"
+    },
+    {
+      "kind": "card",
+      "id": "lightning",
+      "label": "Lightning",
+      "ipa": "/ˈlaɪtnɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:7291"
+    },
+    {
+      "kind": "card",
+      "id": "tornado",
+      "label": "Tornado",
+      "ipa": "/tɔːrˈneɪdoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:7295"
+    },
+    {
+      "kind": "card",
+      "id": "hurricane",
+      "label": "Hurricane",
+      "ipa": "/ˈhʌrɪˌkeɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:7299"
+    },
+    {
+      "kind": "card",
+      "id": "blizzard",
+      "label": "Blizzard",
+      "ipa": "/ˈblɪzərd/",
+      "cefr": "A2",
+      "imageNodeId": "467:7303"
+    },
+    {
+      "kind": "card",
+      "id": "hail",
+      "label": "Hail",
+      "ipa": "/heɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:7307"
+    },
+    {
+      "kind": "card",
+      "id": "flood",
+      "label": "Flood",
+      "ipa": "/flʌd/",
+      "cefr": "A2",
+      "imageNodeId": "467:7311"
+    },
+    {
+      "kind": "card",
+      "id": "drought",
+      "label": "Drought",
+      "ipa": "/draʊt/",
+      "cefr": "A2",
+      "imageNodeId": "467:7315"
+    },
+    {
+      "kind": "card",
+      "id": "heat-wave",
+      "label": "Heat Wave",
+      "ipa": "/hiːt weɪv/",
+      "cefr": "B1",
+      "imageNodeId": "467:7319"
+    },
+    {
+      "kind": "card",
+      "id": "ice-storm",
+      "label": "Ice Storm",
+      "ipa": "/aɪs stɔːrm/",
+      "cefr": "B1",
+      "imageNodeId": "467:7323"
+    },
+    {
+      "kind": "card",
+      "id": "hot",
+      "label": "Hot",
+      "ipa": "/hɒt/",
+      "cefr": "A2",
+      "imageNodeId": "467:7332"
+    },
+    {
+      "kind": "card",
+      "id": "warm",
+      "label": "Warm",
+      "ipa": "/wɔːrm/",
+      "cefr": "A2",
+      "imageNodeId": "467:7336"
+    },
+    {
+      "kind": "card",
+      "id": "cool",
+      "label": "Cool",
+      "ipa": "/kuːl/",
+      "cefr": "A2",
+      "imageNodeId": "467:7340"
+    },
+    {
+      "kind": "card",
+      "id": "cold",
+      "label": "Cold",
+      "ipa": "/koʊld/",
+      "cefr": "A2",
+      "imageNodeId": "467:7344"
+    },
+    {
+      "kind": "card",
+      "id": "freezing",
+      "label": "Freezing",
+      "ipa": "/ˈfriːzɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:7348"
+    },
+    {
+      "kind": "card",
+      "id": "mild",
+      "label": "Mild",
+      "ipa": "/maɪld/",
+      "cefr": "A2",
+      "imageNodeId": "467:7352"
+    },
+    {
+      "kind": "card",
+      "id": "chilly",
+      "label": "Chilly",
+      "ipa": "/ˈtʃɪli/",
+      "cefr": "A2",
+      "imageNodeId": "467:7356"
+    },
+    {
+      "kind": "card",
+      "id": "boiling",
+      "label": "Boiling",
+      "ipa": "/ˈbɔɪlɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:7360"
+    },
+    {
+      "kind": "card",
+      "id": "below-zero",
+      "label": "Below Zero",
+      "ipa": "/bɪˈloʊ ˈzɪəroʊ/",
+      "cefr": "B1",
+      "imageNodeId": "467:7364"
+    },
+    {
+      "kind": "card",
+      "id": "room-temperature",
+      "label": "Room Temperature",
+      "ipa": "/ruːm ˈtɛmpərətʃər/",
+      "cefr": "B2",
+      "imageNodeId": "467:7368"
+    },
+    {
+      "kind": "card",
+      "id": "thermometer",
+      "label": "Thermometer",
+      "ipa": "/θərˈmɒmɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "467:7377"
+    },
+    {
+      "kind": "card",
+      "id": "barometer",
+      "label": "Barometer",
+      "ipa": "/bəˈrɒmɪtər/",
+      "cefr": "A2",
+      "imageNodeId": "467:7381"
+    },
+    {
+      "kind": "card",
+      "id": "weather-vane",
+      "label": "Weather Vane",
+      "ipa": "/ˈwɛðər veɪn/",
+      "cefr": "B1",
+      "imageNodeId": "467:7385"
+    },
+    {
+      "kind": "card",
+      "id": "rain-gauge",
+      "label": "Rain Gauge",
+      "ipa": "/reɪn ɡeɪdʒ/",
+      "cefr": "B1",
+      "imageNodeId": "467:7389"
+    },
+    {
+      "kind": "card",
+      "id": "anemometer",
+      "label": "Anemometer",
+      "ipa": "/ˌænɪˈmɒmɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "467:7393"
+    },
+    {
+      "kind": "card",
+      "id": "weather-map",
+      "label": "Weather Map",
+      "ipa": "/ˈwɛðər mæp/",
+      "cefr": "B1",
+      "imageNodeId": "467:7397"
+    },
+    {
+      "kind": "card",
+      "id": "forecast",
+      "label": "Forecast",
+      "ipa": "/ˈfɔːrkæst/",
+      "cefr": "A2",
+      "imageNodeId": "467:7401"
+    },
+    {
+      "kind": "card",
+      "id": "satellite",
+      "label": "Satellite",
+      "ipa": "/ˈsætəˌlaɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:7405"
+    },
+    {
+      "kind": "card",
+      "id": "radar",
+      "label": "Radar",
+      "ipa": "/ˈreɪdɑːr/",
+      "cefr": "A2",
+      "imageNodeId": "467:7409"
+    },
+    {
+      "kind": "card",
+      "id": "weather-app",
+      "label": "Weather App",
+      "ipa": "/ˈwɛðər æp/",
+      "cefr": "B1",
+      "imageNodeId": "467:7413"
+    }
+  ],
+  "materials": null
+}

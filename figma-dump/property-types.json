@@ -1,0 +1,393 @@
+{
+  "unitId": "property-types",
+  "name": "Property Types",
+  "subtopics": [
+    {
+      "id": "residential",
+      "title": "Residential",
+      "wordIds": [
+        "house",
+        "apartment",
+        "condo",
+        "townhouse",
+        "villa",
+        "studio",
+        "penthouse",
+        "loft",
+        "cottage",
+        "duplex"
+      ]
+    },
+    {
+      "id": "commercial",
+      "title": "Commercial",
+      "wordIds": [
+        "office-building",
+        "retail-store",
+        "warehouse",
+        "factory",
+        "restaurant-space",
+        "shopping-center",
+        "hotel",
+        "mixed-use",
+        "showroom",
+        "coworking-space"
+      ]
+    },
+    {
+      "id": "special-properties",
+      "title": "Special Properties",
+      "wordIds": [
+        "farmhouse",
+        "ranch",
+        "cabin",
+        "beach-house",
+        "houseboat",
+        "tiny-house",
+        "mobile-home",
+        "castle",
+        "mansion",
+        "bungalow"
+      ]
+    },
+    {
+      "id": "property-features",
+      "title": "Property Features",
+      "wordIds": [
+        "square-footage",
+        "lot-size",
+        "bedrooms",
+        "bathrooms",
+        "garage",
+        "pool",
+        "garden",
+        "view",
+        "parking",
+        "storage"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "house",
+      "label": "House",
+      "ipa": "/haʊs/",
+      "cefr": "B2",
+      "imageNodeId": "467:15948"
+    },
+    {
+      "kind": "card",
+      "id": "apartment",
+      "label": "Apartment",
+      "ipa": "/əˈpɑːrtmənt/",
+      "cefr": "B2",
+      "imageNodeId": "467:15952"
+    },
+    {
+      "kind": "card",
+      "id": "condo",
+      "label": "Condo",
+      "ipa": "/ˈkɒndoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:15956"
+    },
+    {
+      "kind": "card",
+      "id": "townhouse",
+      "label": "Townhouse",
+      "ipa": "/ˈtaʊnˌhaʊs/",
+      "cefr": "B2",
+      "imageNodeId": "467:15960"
+    },
+    {
+      "kind": "card",
+      "id": "villa",
+      "label": "Villa",
+      "ipa": "/ˈvɪlə/",
+      "cefr": "B2",
+      "imageNodeId": "467:15964"
+    },
+    {
+      "kind": "card",
+      "id": "studio",
+      "label": "Studio",
+      "ipa": "/ˈstjuːdioʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:15968"
+    },
+    {
+      "kind": "card",
+      "id": "penthouse",
+      "label": "Penthouse",
+      "ipa": "/ˈpɛntˌhaʊs/",
+      "cefr": "B2",
+      "imageNodeId": "467:15972"
+    },
+    {
+      "kind": "card",
+      "id": "loft",
+      "label": "Loft",
+      "ipa": "/lɒft/",
+      "cefr": "B2",
+      "imageNodeId": "467:15976"
+    },
+    {
+      "kind": "card",
+      "id": "cottage",
+      "label": "Cottage",
+      "ipa": "/ˈkɒtɪdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "467:15980"
+    },
+    {
+      "kind": "card",
+      "id": "duplex",
+      "label": "Duplex",
+      "ipa": "/ˈdjuːplɛks/",
+      "cefr": "B2",
+      "imageNodeId": "467:15984"
+    },
+    {
+      "kind": "card",
+      "id": "office-building",
+      "label": "Office Building",
+      "ipa": "/ˈɒfɪs ˈbɪldɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:15993"
+    },
+    {
+      "kind": "card",
+      "id": "retail-store",
+      "label": "Retail Store",
+      "ipa": "/ˈriːteɪl stɔːr/",
+      "cefr": "C1",
+      "imageNodeId": "467:15997"
+    },
+    {
+      "kind": "card",
+      "id": "warehouse",
+      "label": "Warehouse",
+      "ipa": "/ˈwɛərˌhaʊs/",
+      "cefr": "B2",
+      "imageNodeId": "467:16001"
+    },
+    {
+      "kind": "card",
+      "id": "factory",
+      "label": "Factory",
+      "ipa": "/ˈfæktəri/",
+      "cefr": "B2",
+      "imageNodeId": "467:16005"
+    },
+    {
+      "kind": "card",
+      "id": "restaurant-space",
+      "label": "Restaurant Space",
+      "ipa": "/ˈrɛstərɒnt speɪs/",
+      "cefr": "C1",
+      "imageNodeId": "467:16009"
+    },
+    {
+      "kind": "card",
+      "id": "shopping-center",
+      "label": "Shopping Center",
+      "ipa": "/ˈʃɒpɪŋ ˈsɛntər/",
+      "cefr": "C1",
+      "imageNodeId": "467:16013"
+    },
+    {
+      "kind": "card",
+      "id": "hotel",
+      "label": "Hotel",
+      "ipa": "/hoʊˈtɛl/",
+      "cefr": "B2",
+      "imageNodeId": "467:16017"
+    },
+    {
+      "kind": "card",
+      "id": "mixed-use",
+      "label": "Mixed-Use",
+      "ipa": "/mɪkst juːs/",
+      "cefr": "C1",
+      "imageNodeId": "467:16021"
+    },
+    {
+      "kind": "card",
+      "id": "showroom",
+      "label": "Showroom",
+      "ipa": "/ˈʃoʊˌruːm/",
+      "cefr": "B2",
+      "imageNodeId": "467:16025"
+    },
+    {
+      "kind": "card",
+      "id": "coworking-space",
+      "label": "Coworking Space",
+      "ipa": "/koʊˈwɜːrkɪŋ speɪs/",
+      "cefr": "C1",
+      "imageNodeId": "467:16029"
+    },
+    {
+      "kind": "card",
+      "id": "farmhouse",
+      "label": "Farmhouse",
+      "ipa": "/ˈfɑːrmˌhaʊs/",
+      "cefr": "B2",
+      "imageNodeId": "467:16038"
+    },
+    {
+      "kind": "card",
+      "id": "ranch",
+      "label": "Ranch",
+      "ipa": "/rɑːntʃ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16042"
+    },
+    {
+      "kind": "card",
+      "id": "cabin",
+      "label": "Cabin",
+      "ipa": "/ˈkæbɪn/",
+      "cefr": "B2",
+      "imageNodeId": "467:16046"
+    },
+    {
+      "kind": "card",
+      "id": "beach-house",
+      "label": "Beach House",
+      "ipa": "/biːtʃ haʊs/",
+      "cefr": "C1",
+      "imageNodeId": "467:16050"
+    },
+    {
+      "kind": "card",
+      "id": "houseboat",
+      "label": "Houseboat",
+      "ipa": "/ˈhaʊsˌboʊt/",
+      "cefr": "B2",
+      "imageNodeId": "467:16054"
+    },
+    {
+      "kind": "card",
+      "id": "tiny-house",
+      "label": "Tiny House",
+      "ipa": "/ˈtaɪni haʊs/",
+      "cefr": "C1",
+      "imageNodeId": "467:16058"
+    },
+    {
+      "kind": "card",
+      "id": "mobile-home",
+      "label": "Mobile Home",
+      "ipa": "/ˈmoʊbaɪl hoʊm/",
+      "cefr": "C1",
+      "imageNodeId": "467:16062"
+    },
+    {
+      "kind": "card",
+      "id": "castle",
+      "label": "Castle",
+      "ipa": "/ˈkæsəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:16066"
+    },
+    {
+      "kind": "card",
+      "id": "mansion",
+      "label": "Mansion",
+      "ipa": "/ˈmænʃən/",
+      "cefr": "B2",
+      "imageNodeId": "467:16070"
+    },
+    {
+      "kind": "card",
+      "id": "bungalow",
+      "label": "Bungalow",
+      "ipa": "/ˈbʌŋɡəˌloʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16074"
+    },
+    {
+      "kind": "card",
+      "id": "square-footage",
+      "label": "Square Footage",
+      "ipa": "/skwɛər ˈfʊtɪdʒ/",
+      "cefr": "C1",
+      "imageNodeId": "467:16083"
+    },
+    {
+      "kind": "card",
+      "id": "lot-size",
+      "label": "Lot Size",
+      "ipa": "/lɒt saɪz/",
+      "cefr": "C1",
+      "imageNodeId": "467:16087"
+    },
+    {
+      "kind": "card",
+      "id": "bedrooms",
+      "label": "Bedrooms",
+      "ipa": "/ˈbɛdˌruːmz/",
+      "cefr": "B2",
+      "imageNodeId": "467:16091"
+    },
+    {
+      "kind": "card",
+      "id": "bathrooms",
+      "label": "Bathrooms",
+      "ipa": "/ˈbæθˌruːmz/",
+      "cefr": "B2",
+      "imageNodeId": "467:16095"
+    },
+    {
+      "kind": "card",
+      "id": "garage",
+      "label": "Garage",
+      "ipa": "/ɡəˈrɑːʒ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16099"
+    },
+    {
+      "kind": "card",
+      "id": "pool",
+      "label": "Pool",
+      "ipa": "/puːl/",
+      "cefr": "B2",
+      "imageNodeId": "467:16103"
+    },
+    {
+      "kind": "card",
+      "id": "garden",
+      "label": "Garden",
+      "ipa": "/ˈɡɑːrdən/",
+      "cefr": "B2",
+      "imageNodeId": "467:16107"
+    },
+    {
+      "kind": "card",
+      "id": "view",
+      "label": "View",
+      "ipa": "/vjuː/",
+      "cefr": "B2",
+      "imageNodeId": "467:16111"
+    },
+    {
+      "kind": "card",
+      "id": "parking",
+      "label": "Parking",
+      "ipa": "/ˈpɑːrkɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16115"
+    },
+    {
+      "kind": "card",
+      "id": "storage",
+      "label": "Storage",
+      "ipa": "/ˈstɔːrɪdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "467:16119"
+    }
+  ],
+  "materials": null
+}

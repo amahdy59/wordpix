@@ -1,0 +1,1566 @@
+{
+  "unitId": "graduation",
+  "name": "The Graduation",
+  "subtopics": [
+    {
+      "id": "ceremony",
+      "title": "Ceremony",
+      "wordIds": [
+        "stage",
+        "podium",
+        "microphone",
+        "speech",
+        "diploma",
+        "handshake",
+        "procession",
+        "recessional",
+        "applause",
+        "music"
+      ]
+    },
+    {
+      "id": "attire",
+      "title": "Attire",
+      "wordIds": [
+        "cap",
+        "gown",
+        "tassel",
+        "honor-cord",
+        "stole",
+        "sash",
+        "dress-shoes",
+        "class-ring",
+        "pin",
+        "medal"
+      ]
+    },
+    {
+      "id": "traditions",
+      "title": "Traditions",
+      "wordIds": [
+        "cap-toss",
+        "yearbook",
+        "class-photo",
+        "valedictorian",
+        "salutatorian",
+        "honors",
+        "cum-laude",
+        "alumni",
+        "alma-mater",
+        "commencement"
+      ]
+    },
+    {
+      "id": "celebration",
+      "title": "Celebration",
+      "wordIds": [
+        "party",
+        "cake",
+        "balloons",
+        "banner",
+        "gift",
+        "card",
+        "flowers",
+        "champagne",
+        "toast",
+        "dinner"
+      ]
+    },
+    {
+      "id": "academics",
+      "title": "Academics",
+      "wordIds": [
+        "degree",
+        "major",
+        "minor",
+        "gpa",
+        "transcript",
+        "thesis",
+        "dissertation",
+        "semester",
+        "credit",
+        "dean"
+      ]
+    },
+    {
+      "id": "emotions-next-steps",
+      "title": "Emotions & Next Steps",
+      "wordIds": [
+        "proud",
+        "excited",
+        "nervous",
+        "nostalgic",
+        "grateful",
+        "job-search",
+        "graduate-school",
+        "internship",
+        "gap-year",
+        "moving"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "stage",
+      "label": "Stage",
+      "ipa": "/steɪdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "119:11791"
+    },
+    {
+      "kind": "card",
+      "id": "podium",
+      "label": "Podium",
+      "ipa": "/ˈpoʊdiəm/",
+      "cefr": "B2",
+      "imageNodeId": "119:11795"
+    },
+    {
+      "kind": "card",
+      "id": "microphone",
+      "label": "Microphone",
+      "ipa": "/ˈmaɪkrəˌfoʊn/",
+      "cefr": "C1",
+      "imageNodeId": "119:11799"
+    },
+    {
+      "kind": "card",
+      "id": "speech",
+      "label": "Speech",
+      "ipa": "/spiːtʃ/",
+      "cefr": "B2",
+      "imageNodeId": "119:11803"
+    },
+    {
+      "kind": "card",
+      "id": "diploma",
+      "label": "Diploma",
+      "ipa": "/dɪˈploʊmə/",
+      "cefr": "B2",
+      "imageNodeId": "119:11807"
+    },
+    {
+      "kind": "card",
+      "id": "handshake",
+      "label": "Handshake",
+      "ipa": "/ˈhændˌʃeɪk/",
+      "cefr": "B2",
+      "imageNodeId": "119:11811"
+    },
+    {
+      "kind": "card",
+      "id": "procession",
+      "label": "Procession",
+      "ipa": "/prəˈsɛʃən/",
+      "cefr": "C1",
+      "imageNodeId": "119:11815"
+    },
+    {
+      "kind": "card",
+      "id": "recessional",
+      "label": "Recessional",
+      "ipa": "/rɪˈsɛʃənəl/",
+      "cefr": "C1",
+      "imageNodeId": "119:11819"
+    },
+    {
+      "kind": "card",
+      "id": "applause",
+      "label": "Applause",
+      "ipa": "/əˈplɔːz/",
+      "cefr": "B2",
+      "imageNodeId": "119:11823"
+    },
+    {
+      "kind": "card",
+      "id": "music",
+      "label": "Music",
+      "ipa": "/ˈmjuːzɪk/",
+      "cefr": "B2",
+      "imageNodeId": "119:11827"
+    },
+    {
+      "kind": "card",
+      "id": "cap",
+      "label": "Cap",
+      "ipa": "/kæp/",
+      "cefr": "B2",
+      "imageNodeId": "119:11836"
+    },
+    {
+      "kind": "card",
+      "id": "gown",
+      "label": "Gown",
+      "ipa": "/ɡaʊn/",
+      "cefr": "B2",
+      "imageNodeId": "119:11840"
+    },
+    {
+      "kind": "card",
+      "id": "tassel",
+      "label": "Tassel",
+      "ipa": "/ˈtæsəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:11844"
+    },
+    {
+      "kind": "card",
+      "id": "honor-cord",
+      "label": "Honor Cord",
+      "ipa": "/ˈɒnər kɔːrd/",
+      "cefr": "C1",
+      "imageNodeId": "119:11848"
+    },
+    {
+      "kind": "card",
+      "id": "stole",
+      "label": "Stole",
+      "ipa": "/stoʊl/",
+      "cefr": "B2",
+      "imageNodeId": "119:11852"
+    },
+    {
+      "kind": "card",
+      "id": "sash",
+      "label": "Sash",
+      "ipa": "/sæʃ/",
+      "cefr": "B2",
+      "imageNodeId": "119:11856"
+    },
+    {
+      "kind": "card",
+      "id": "dress-shoes",
+      "label": "Dress Shoes",
+      "ipa": "/drɛs ʃuːz/",
+      "cefr": "C1",
+      "imageNodeId": "119:11860"
+    },
+    {
+      "kind": "card",
+      "id": "class-ring",
+      "label": "Class Ring",
+      "ipa": "/klæs rɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "119:11864"
+    },
+    {
+      "kind": "card",
+      "id": "pin",
+      "label": "Pin",
+      "ipa": "/pɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:11868"
+    },
+    {
+      "kind": "card",
+      "id": "medal",
+      "label": "Medal",
+      "ipa": "/ˈmɛdəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:11872"
+    },
+    {
+      "kind": "card",
+      "id": "cap-toss",
+      "label": "Cap Toss",
+      "ipa": "/kæp tɒs/",
+      "cefr": "C1",
+      "imageNodeId": "119:11881"
+    },
+    {
+      "kind": "card",
+      "id": "yearbook",
+      "label": "Yearbook",
+      "ipa": "/ˈjɪərˌbʊk/",
+      "cefr": "B2",
+      "imageNodeId": "119:11885"
+    },
+    {
+      "kind": "card",
+      "id": "class-photo",
+      "label": "Class Photo",
+      "ipa": "/klæs ˈfoʊtoʊ/",
+      "cefr": "C1",
+      "imageNodeId": "119:11889"
+    },
+    {
+      "kind": "card",
+      "id": "valedictorian",
+      "label": "Valedictorian",
+      "ipa": "/ˌvælɪdɪkˈtɔːriən/",
+      "cefr": "C1",
+      "imageNodeId": "119:11893"
+    },
+    {
+      "kind": "card",
+      "id": "salutatorian",
+      "label": "Salutatorian",
+      "ipa": "/səˌluːtəˈtɔːriən/",
+      "cefr": "C1",
+      "imageNodeId": "119:11897"
+    },
+    {
+      "kind": "card",
+      "id": "honors",
+      "label": "Honors",
+      "ipa": "/ˈɒnərz/",
+      "cefr": "B2",
+      "imageNodeId": "119:11901"
+    },
+    {
+      "kind": "card",
+      "id": "cum-laude",
+      "label": "Cum Laude",
+      "ipa": "/kʌm ˈlaʊdeɪ/",
+      "cefr": "C1",
+      "imageNodeId": "119:11905"
+    },
+    {
+      "kind": "card",
+      "id": "alumni",
+      "label": "Alumni",
+      "ipa": "/əˈlʌmnaɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:11909"
+    },
+    {
+      "kind": "card",
+      "id": "alma-mater",
+      "label": "Alma Mater",
+      "ipa": "/ˈɑːlmə ˈmɑːtər/",
+      "cefr": "C1",
+      "imageNodeId": "119:11913"
+    },
+    {
+      "kind": "card",
+      "id": "commencement",
+      "label": "Commencement",
+      "ipa": "/kəˈmɛnsmənt/",
+      "cefr": "C1",
+      "imageNodeId": "119:11917"
+    },
+    {
+      "kind": "card",
+      "id": "party",
+      "label": "Party",
+      "ipa": "/ˈpɑːrti/",
+      "cefr": "B2",
+      "imageNodeId": "119:11926"
+    },
+    {
+      "kind": "card",
+      "id": "cake",
+      "label": "Cake",
+      "ipa": "/keɪk/",
+      "cefr": "B2",
+      "imageNodeId": "119:11930"
+    },
+    {
+      "kind": "card",
+      "id": "balloons",
+      "label": "Balloons",
+      "ipa": "/bəˈluːnz/",
+      "cefr": "B2",
+      "imageNodeId": "119:11934"
+    },
+    {
+      "kind": "card",
+      "id": "banner",
+      "label": "Banner",
+      "ipa": "/ˈbænər/",
+      "cefr": "B2",
+      "imageNodeId": "119:11938"
+    },
+    {
+      "kind": "card",
+      "id": "gift",
+      "label": "Gift",
+      "ipa": "/ɡɪft/",
+      "cefr": "B2",
+      "imageNodeId": "119:11942"
+    },
+    {
+      "kind": "card",
+      "id": "card",
+      "label": "Card",
+      "ipa": "/kɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "119:11946"
+    },
+    {
+      "kind": "card",
+      "id": "flowers",
+      "label": "Flowers",
+      "ipa": "/ˈflaʊərz/",
+      "cefr": "B2",
+      "imageNodeId": "119:11950"
+    },
+    {
+      "kind": "card",
+      "id": "champagne",
+      "label": "Champagne",
+      "ipa": "/ʃæmˈpeɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:11954"
+    },
+    {
+      "kind": "card",
+      "id": "toast",
+      "label": "Toast",
+      "ipa": "/toʊst/",
+      "cefr": "B2",
+      "imageNodeId": "119:11958"
+    },
+    {
+      "kind": "card",
+      "id": "dinner",
+      "label": "Dinner",
+      "ipa": "/ˈdɪnər/",
+      "cefr": "B2",
+      "imageNodeId": "119:11962"
+    },
+    {
+      "kind": "card",
+      "id": "degree",
+      "label": "Degree",
+      "ipa": "/dɪˈɡriː/",
+      "cefr": "B2",
+      "imageNodeId": "119:11971"
+    },
+    {
+      "kind": "card",
+      "id": "major",
+      "label": "Major",
+      "ipa": "/ˈmeɪdʒər/",
+      "cefr": "B2",
+      "imageNodeId": "119:11975"
+    },
+    {
+      "kind": "card",
+      "id": "minor",
+      "label": "Minor",
+      "ipa": "/ˈmaɪnər/",
+      "cefr": "B2",
+      "imageNodeId": "119:11979"
+    },
+    {
+      "kind": "card",
+      "id": "gpa",
+      "label": "Gpa",
+      "ipa": "/ˌdʒiːpiːˈeɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:11983"
+    },
+    {
+      "kind": "card",
+      "id": "transcript",
+      "label": "Transcript",
+      "ipa": "/ˈtrænˌskrɪpt/",
+      "cefr": "C1",
+      "imageNodeId": "119:11987"
+    },
+    {
+      "kind": "card",
+      "id": "thesis",
+      "label": "Thesis",
+      "ipa": "/ˈθiːsɪs/",
+      "cefr": "B2",
+      "imageNodeId": "119:11991"
+    },
+    {
+      "kind": "card",
+      "id": "dissertation",
+      "label": "Dissertation",
+      "ipa": "/ˌdɪsərˈteɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "119:11995"
+    },
+    {
+      "kind": "card",
+      "id": "semester",
+      "label": "Semester",
+      "ipa": "/sɪˈmɛstər/",
+      "cefr": "B2",
+      "imageNodeId": "119:11999"
+    },
+    {
+      "kind": "card",
+      "id": "credit",
+      "label": "Credit",
+      "ipa": "/ˈkrɛdɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:12003"
+    },
+    {
+      "kind": "card",
+      "id": "dean",
+      "label": "Dean",
+      "ipa": "/diːn/",
+      "cefr": "B2",
+      "imageNodeId": "119:12007"
+    },
+    {
+      "kind": "card",
+      "id": "proud",
+      "label": "Proud",
+      "ipa": "/praʊd/",
+      "cefr": "B2",
+      "imageNodeId": "119:12016"
+    },
+    {
+      "kind": "card",
+      "id": "excited",
+      "label": "Excited",
+      "ipa": "/ɪkˈsaɪtɪd/",
+      "cefr": "B2",
+      "imageNodeId": "119:12020"
+    },
+    {
+      "kind": "card",
+      "id": "nervous",
+      "label": "Nervous",
+      "ipa": "/ˈnɜːrvəs/",
+      "cefr": "B2",
+      "imageNodeId": "119:12024"
+    },
+    {
+      "kind": "card",
+      "id": "nostalgic",
+      "label": "Nostalgic",
+      "ipa": "/nɒˈstældʒɪk/",
+      "cefr": "B2",
+      "imageNodeId": "119:12028"
+    },
+    {
+      "kind": "card",
+      "id": "grateful",
+      "label": "Grateful",
+      "ipa": "/ˈɡreɪtfəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:12032"
+    },
+    {
+      "kind": "card",
+      "id": "job-search",
+      "label": "Job Search",
+      "ipa": "/dʒɒb sɜːrtʃ/",
+      "cefr": "C1",
+      "imageNodeId": "119:12036"
+    },
+    {
+      "kind": "card",
+      "id": "graduate-school",
+      "label": "Graduate School",
+      "ipa": "/ˈɡrædʒuɪt skuːl/",
+      "cefr": "C1",
+      "imageNodeId": "119:12040"
+    },
+    {
+      "kind": "card",
+      "id": "internship",
+      "label": "Internship",
+      "ipa": "/ˈɪntɜːrnˌʃɪp/",
+      "cefr": "C1",
+      "imageNodeId": "119:12044"
+    },
+    {
+      "kind": "card",
+      "id": "gap-year",
+      "label": "Gap Year",
+      "ipa": "/ɡæp jɪər/",
+      "cefr": "C1",
+      "imageNodeId": "119:12048"
+    },
+    {
+      "kind": "card",
+      "id": "moving",
+      "label": "Moving",
+      "ipa": "/ˈmuːvɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:12052"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "556:2439",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "556:2441",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2+ · Topic: Graduation",
+          "depth": 1,
+          "name": "Level: B2+ · Topic: Graduation"
+        },
+        {
+          "text": "Cap, Gown, and What Comes Next — The Meaning of Graduation\n\nGraduation is a threshold. On one side: semesters, credits, deadlines, and a transcript full of grades. On the other: a job search, graduate school, an internship, or a gap year. The commencement ceremony marks the crossing — though the word 'commencement' itself reveals an irony, since it means 'beginning,' not 'ending.'\n\nThe ceremony follows a script older than most universities. A procession of graduates enters the hall in cap and gown, the tassel hanging to the right. An honor cord drapes over the shoulders of high achievers. A stole or sash marks membership in academic societies or cultural organisations. The faculty, robed in doctoral regalia, takes the stage. The dean speaks. The valedictorian — the student with the highest GPA — delivers a speech from the podium, the microphone amplifying words rehearsed for weeks. The salutatorian speaks second. Applause punctuates every pause.\n\nOne by one, graduates cross the stage. A handshake from the dean. A diploma — or more often a symbolic folder, with the real degree mailed later. A photographer captures the moment. The audience erupts for each name. When the last graduate has crossed, the dean declares the class graduated. The graduates move their tassels from right to left. Then — the cap toss: hundreds of mortarboards spinning upward, a moment of collective release that has become the defining image of the day.\n\nAcademic terminology saturates the occasion. A degree is conferred — a bachelor's, master's, or doctorate. A major defines the primary field of study; a minor is the secondary one. Honors distinctions — cum laude, magna cum laude, summa cum laude — appear on the diploma based on GPA thresholds. A thesis (at undergraduate and master's level) or a dissertation (at doctoral level) represents the capstone research project. The graduates become alumni of their alma mater — the institution that 'nourished' them, as the Latin literally means.\n\nThe celebration extends beyond the ceremony. A graduation party follows — balloons, a banner, flowers, cake, and a toast. Cards contain money or advice. Gifts arrive wrapped. Family members who never attended university watch with pride, sometimes confused by the rituals but moved by the achievement. Dinner at a restaurant formalises the day. Champagne — or sparkling juice — is poured.\n\nThe emotional register is complex. The graduate feels proud, excited, nervous, nostalgic, and grateful — often simultaneously. Proud of the work completed. Excited about what lies ahead. Nervous about uncertainty. Nostalgic for friendships and routines that will dissolve. Grateful to parents, professors, and peers who made the journey possible.\n\nA class photo freezes the cohort in time. A yearbook preserves the details. A class ring carries the year. A medal or pin marks a specific achievement. These objects become mementos — physical anchors to a period of life defined by intellectual growth, social formation, and the slow accumulation of knowledge that a transcript can only partially measure.\n\nGraduation does not mean education is over. It means the structured phase has ended and the self-directed phase has begun.",
+          "depth": 1,
+          "name": "Cap, Gown, and What Comes Next — The Meaning of Graduation Graduation is a threshold. On one side: semesters, credits, deadlines, and a transcript full of grades. On the other: a job search, graduate school, an internship, or a gap year. The commencement ceremony marks the crossing — though the word 'commencement' itself reveals an irony, since it means 'beginning,' not 'ending.' The ceremony follows a script older than most universities. A procession of graduates enters the hall in cap and gown, the tassel hanging to the right. An honor cord drapes over the shoulders of high achievers. A stole or sash marks membership in academic societies or cultural organisations. The faculty, robed in doctoral regalia, takes the stage. The dean speaks. The valedictorian — the student with the highest GPA — delivers a speech from the podium, the microphone amplifying words rehearsed for weeks. The salutatorian speaks second. Applause punctuates every pause. One by one, graduates cross the stage. A handshake from the dean. A diploma — or more often a symbolic folder, with the real degree mailed later. A photographer captures the moment. The audience erupts for each name. When the last graduate has crossed, the dean declares the class graduated. The graduates move their tassels from right to left. Then — the cap toss: hundreds of mortarboards spinning upward, a moment of collective release that has become the defining image of the day. Academic terminology saturates the occasion. A degree is conferred — a bachelor's, master's, or doctorate. A major defines the primary field of study; a minor is the secondary one. Honors distinctions — cum laude, magna cum laude, summa cum laude — appear on the diploma based on GPA thresholds. A thesis (at undergraduate and master's level) or a dissertation (at doctoral level) represents the capstone research project. The graduates become alumni of their alma mater — the institution that 'nourished' them, as the Latin literally means. The celebration extends beyond the ceremony. A graduation party follows — balloons, a banner, flowers, cake, and a toast. Cards contain money or advice. Gifts arrive wrapped. Family members who never attended university watch with pride, sometimes confused by the rituals but moved by the achievement. Dinner at a restaurant formalises the day. Champagne — or sparkling juice — is poured. The emotional register is complex. The graduate feels proud, excited, nervous, nostalgic, and grateful — often simultaneously. Proud of the work completed. Excited about what lies ahead. Nervous about uncertainty. Nostalgic for friendships and routines that will dissolve. Grateful to parents, professors, and peers who made the journey possible. A class photo freezes the cohort in time. A yearbook preserves the details. A class ring carries the year. A medal or pin marks a specific achievement. These objects become mementos — physical anchors to a period of life defined by intellectual growth, social formation, and the slow accumulation of knowledge that a transcript can only partially measure. Graduation does not mean education is over. It means the structured phase has ended and the self-directed phase has begun."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Describe the sequence of events during a graduation ceremony, from procession to cap toss.",
+          "depth": 1,
+          "name": "1. Describe the sequence of events during a graduation ceremony, from procession to cap toss."
+        },
+        {
+          "text": "2. Explain the following academic terms using context from the passage: GPA, valedictorian, cum laude, thesis, alumni.",
+          "depth": 1,
+          "name": "2. Explain the following academic terms using context from the passage: GPA, valedictorian, cum laude, thesis, alumni."
+        },
+        {
+          "text": "3. What emotions does the passage associate with graduation? Why might a graduate feel conflicting emotions?",
+          "depth": 1,
+          "name": "3. What emotions does the passage associate with graduation? Why might a graduate feel conflicting emotions?"
+        },
+        {
+          "text": "4. The passage notes an irony in the word 'commencement.' What is this irony, and what does it reveal about the purpose of the ceremony?",
+          "depth": 1,
+          "name": "4. The passage notes an irony in the word 'commencement.' What is this irony, and what does it reveal about the purpose of the ceremony?"
+        },
+        {
+          "text": "5. The final sentence states: 'Graduation does not mean education is over. It means the structured phase has ended and the self-directed phase has begun.' Discuss this distinction.",
+          "depth": 1,
+          "name": "5. The final sentence states: 'Graduation does not mean education is over. It means the structured phase has ended and the self-directed phase has begun.' Discuss this distinction."
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "556:2454",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "with flying colours",
+          "depth": 2,
+          "name": "with flying colours"
+        },
+        {
+          "text": "with great success; excellently",
+          "depth": 2,
+          "name": "with great success; excellently"
+        },
+        {
+          "text": "\"She passed her exams with flying colours.\"",
+          "depth": 2,
+          "name": "\"She passed her exams with flying colours.\""
+        },
+        {
+          "text": "cap and gown",
+          "depth": 2,
+          "name": "cap and gown"
+        },
+        {
+          "text": "the traditional academic dress worn at graduation",
+          "depth": 2,
+          "name": "the traditional academic dress worn at graduation"
+        },
+        {
+          "text": "\"I can't wait to see him in his cap and gown.\"",
+          "depth": 2,
+          "name": "\"I can't wait to see him in his cap and gown.\""
+        },
+        {
+          "text": "the school of hard knocks",
+          "depth": 2,
+          "name": "the school of hard knocks"
+        },
+        {
+          "text": "learning through difficult real-life experiences, not formal education",
+          "depth": 2,
+          "name": "learning through difficult real-life experiences, not formal education"
+        },
+        {
+          "text": "\"He didn't go to university — he graduated from the school of hard knocks.\"",
+          "depth": 2,
+          "name": "\"He didn't go to university — he graduated from the school of hard knocks.\""
+        },
+        {
+          "text": "make the grade",
+          "depth": 2,
+          "name": "make the grade"
+        },
+        {
+          "text": "reach the required standard; succeed",
+          "depth": 2,
+          "name": "reach the required standard; succeed"
+        },
+        {
+          "text": "\"It was tough, but she made the grade and got her degree.\"",
+          "depth": 2,
+          "name": "\"It was tough, but she made the grade and got her degree.\""
+        },
+        {
+          "text": "hit the books",
+          "depth": 2,
+          "name": "hit the books"
+        },
+        {
+          "text": "study hard",
+          "depth": 2,
+          "name": "study hard"
+        },
+        {
+          "text": "\"Final exams are next week — I need to hit the books.\"",
+          "depth": 2,
+          "name": "\"Final exams are next week — I need to hit the books.\""
+        },
+        {
+          "text": "move on to bigger and better things",
+          "depth": 2,
+          "name": "move on to bigger and better things"
+        },
+        {
+          "text": "progress to more important achievements",
+          "depth": 2,
+          "name": "progress to more important achievements"
+        },
+        {
+          "text": "\"After graduation, she moved on to bigger and better things.\"",
+          "depth": 2,
+          "name": "\"After graduation, she moved on to bigger and better things.\""
+        },
+        {
+          "text": "the world is your oyster",
+          "depth": 2,
+          "name": "the world is your oyster"
+        },
+        {
+          "text": "you have endless opportunities ahead of you",
+          "depth": 2,
+          "name": "you have endless opportunities ahead of you"
+        },
+        {
+          "text": "\"You've graduated — the world is your oyster now!\"",
+          "depth": 2,
+          "name": "\"You've graduated — the world is your oyster now!\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "556:2486",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A graduate and their parent after the ceremony",
+          "depth": 1,
+          "name": "Scene: A graduate and their parent after the ceremony"
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "I'm so proud of you! How does it feel to be a graduate?",
+          "depth": 2,
+          "name": "I'm so proud of you! How does it feel to be a graduate?"
+        },
+        {
+          "text": "Graduate:",
+          "depth": 2,
+          "name": "Graduate:"
+        },
+        {
+          "text": "Honestly, it hasn't sunk in yet. When they called my name, my heart was pounding.",
+          "depth": 2,
+          "name": "Honestly, it hasn't sunk in yet. When they called my name, my heart was pounding."
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "I saw you crossing the stage — I nearly cried! Three years of hard work, and now you've got your degree.",
+          "depth": 2,
+          "name": "I saw you crossing the stage — I nearly cried! Three years of hard work, and now you've got your degree."
+        },
+        {
+          "text": "Graduate:",
+          "depth": 2,
+          "name": "Graduate:"
+        },
+        {
+          "text": "It feels like yesterday I was moving into halls for the first time. It's gone so fast.",
+          "depth": 2,
+          "name": "It feels like yesterday I was moving into halls for the first time. It's gone so fast."
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "Did you enjoy the ceremony?",
+          "depth": 2,
+          "name": "Did you enjoy the ceremony?"
+        },
+        {
+          "text": "Graduate:",
+          "depth": 2,
+          "name": "Graduate:"
+        },
+        {
+          "text": "The keynote speech was really inspiring — she talked about resilience and taking risks. And it was nice seeing everyone in their gowns.",
+          "depth": 2,
+          "name": "The keynote speech was really inspiring — she talked about resilience and taking risks. And it was nice seeing everyone in their gowns."
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "Let's get some photos before you take the cap and gown off. Stand by the fountain — the light's perfect.",
+          "depth": 2,
+          "name": "Let's get some photos before you take the cap and gown off. Stand by the fountain — the light's perfect."
+        },
+        {
+          "text": "Graduate:",
+          "depth": 2,
+          "name": "Graduate:"
+        },
+        {
+          "text": "Can we do one throwing the cap in the air?",
+          "depth": 2,
+          "name": "Can we do one throwing the cap in the air?"
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "Of course! Just don't lose it — you'll have to pay for it if it goes missing.",
+          "depth": 2,
+          "name": "Of course! Just don't lose it — you'll have to pay for it if it goes missing."
+        },
+        {
+          "text": "Graduate:",
+          "depth": 2,
+          "name": "Graduate:"
+        },
+        {
+          "text": "Fair point! After photos, shall we head to the restaurant?",
+          "depth": 2,
+          "name": "Fair point! After photos, shall we head to the restaurant?"
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "Absolutely. Your grandparents are already there. They're so excited to celebrate with you.",
+          "depth": 2,
+          "name": "Absolutely. Your grandparents are already there. They're so excited to celebrate with you."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "556:2524",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I graduated the university last June with a degree in biology.\"",
+          "depth": 2,
+          "name": "❌ \"I graduated the university last June with a degree in biology.\""
+        },
+        {
+          "text": "✅ \"I graduated from the university last June with a degree in biology.\"",
+          "depth": 2,
+          "name": "✅ \"I graduated from the university last June with a degree in biology.\""
+        },
+        {
+          "text": "'Graduate from' + institution: 'She graduated from Oxford.' In American English, 'graduated college' (without 'from') is increasingly common in speech but remains non-standard in formal writing. 'Graduate' without 'from' is standard only when the subject is the institution: 'The university graduated 500 students.' At B2+, use 'from' in academic and formal contexts.",
+          "depth": 2,
+          "name": "'Graduate from' + institution: 'She graduated from Oxford.' In American English, 'graduated college' (without 'from') is increasingly common in speech but remains non-standard in formal writing. 'Graduate' without 'from' is standard only when the subject is the institution: 'The university graduated 500 students.' At B2+, use 'from' in academic and formal contexts."
+        },
+        {
+          "text": "❌ \"She has been studying since four years and finally got her degree.\"",
+          "depth": 2,
+          "name": "❌ \"She has been studying since four years and finally got her degree.\""
+        },
+        {
+          "text": "✅ \"She has been studying for four years and finally got her degree.\"",
+          "depth": 2,
+          "name": "✅ \"She has been studying for four years and finally got her degree.\""
+        },
+        {
+          "text": "'For' + duration: 'for four years', 'for six months'. 'Since' + point in time: 'since 2020', 'since September'. With present perfect continuous, this distinction is critical. 'She has been studying for four years' (duration). 'She has been studying since 2022' (starting point). Mixing them is a persistent error.",
+          "depth": 2,
+          "name": "'For' + duration: 'for four years', 'for six months'. 'Since' + point in time: 'since 2020', 'since September'. With present perfect continuous, this distinction is critical. 'She has been studying for four years' (duration). 'She has been studying since 2022' (starting point). Mixing them is a persistent error."
+        },
+        {
+          "text": "❌ \"I wish I would have studied harder during my final semester.\"",
+          "depth": 2,
+          "name": "❌ \"I wish I would have studied harder during my final semester.\""
+        },
+        {
+          "text": "✅ \"I wish I had studied harder during my final semester.\"",
+          "depth": 2,
+          "name": "✅ \"I wish I had studied harder during my final semester.\""
+        },
+        {
+          "text": "'Wish + past perfect' for past regret: 'I wish I had studied', 'I wish I hadn't missed the deadline.' Never 'wish + would have' for your own past actions. 'Would have' belongs in conditional sentences: 'If I had studied harder, I would have passed.' 'Wish + would' is only for frustration about others: 'I wish they would announce the results.'",
+          "depth": 2,
+          "name": "'Wish + past perfect' for past regret: 'I wish I had studied', 'I wish I hadn't missed the deadline.' Never 'wish + would have' for your own past actions. 'Would have' belongs in conditional sentences: 'If I had studied harder, I would have passed.' 'Wish + would' is only for frustration about others: 'I wish they would announce the results.'"
+        },
+        {
+          "text": "❌ \"The amount of students at the ceremony was overwhelming.\"",
+          "depth": 2,
+          "name": "❌ \"The amount of students at the ceremony was overwhelming.\""
+        },
+        {
+          "text": "✅ \"The number of students at the ceremony was overwhelming.\"",
+          "depth": 2,
+          "name": "✅ \"The number of students at the ceremony was overwhelming.\""
+        },
+        {
+          "text": "'Number of' + countable nouns: 'a large number of students', 'the number of graduates.' 'Amount of' + uncountable nouns: 'the amount of work', 'a huge amount of stress.' Also: 'fewer' + countable ('fewer students'), 'less' + uncountable ('less stress'). These quantity distinctions are expected at B2+ accuracy.",
+          "depth": 2,
+          "name": "'Number of' + countable nouns: 'a large number of students', 'the number of graduates.' 'Amount of' + uncountable nouns: 'the amount of work', 'a huge amount of stress.' Also: 'fewer' + countable ('fewer students'), 'less' + uncountable ('less stress'). These quantity distinctions are expected at B2+ accuracy."
+        },
+        {
+          "text": "❌ \"Not only she graduated with honours, but she also received a scholarship.\"",
+          "depth": 2,
+          "name": "❌ \"Not only she graduated with honours, but she also received a scholarship.\""
+        },
+        {
+          "text": "✅ \"Not only did she graduate with honours, but she also received a scholarship.\"",
+          "depth": 2,
+          "name": "✅ \"Not only did she graduate with honours, but she also received a scholarship.\""
+        },
+        {
+          "text": "'Not only' at the start of a clause triggers subject-auxiliary inversion: 'Not only did she graduate...' 'Not only has he published...' 'Not only were they first...' This emphatic structure ('not only...but also') requires the inverted auxiliary in the first clause. Without inversion, the sentence sounds flat and is grammatically non-standard at B2+.",
+          "depth": 2,
+          "name": "'Not only' at the start of a clause triggers subject-auxiliary inversion: 'Not only did she graduate...' 'Not only has he published...' 'Not only were they first...' This emphatic structure ('not only...but also') requires the inverted auxiliary in the first clause. Without inversion, the sentence sounds flat and is grammatically non-standard at B2+."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "556:2548",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how education and achievement vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how education and achievement vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "graduate",
+          "depth": 2,
+          "name": "graduate"
+        },
+        {
+          "text": "graduate / graduation",
+          "depth": 2,
+          "name": "graduate / graduation"
+        },
+        {
+          "text": "graduate",
+          "depth": 2,
+          "name": "graduate"
+        },
+        {
+          "text": "graduated",
+          "depth": 2,
+          "name": "graduated"
+        },
+        {
+          "text": "achieve",
+          "depth": 2,
+          "name": "achieve"
+        },
+        {
+          "text": "achievement / achiever",
+          "depth": 2,
+          "name": "achievement / achiever"
+        },
+        {
+          "text": "achieve",
+          "depth": 2,
+          "name": "achieve"
+        },
+        {
+          "text": "achievable",
+          "depth": 2,
+          "name": "achievable"
+        },
+        {
+          "text": "certify",
+          "depth": 2,
+          "name": "certify"
+        },
+        {
+          "text": "certificate / certification",
+          "depth": 2,
+          "name": "certificate / certification"
+        },
+        {
+          "text": "certify",
+          "depth": 2,
+          "name": "certify"
+        },
+        {
+          "text": "certified",
+          "depth": 2,
+          "name": "certified"
+        },
+        {
+          "text": "commence",
+          "depth": 2,
+          "name": "commence"
+        },
+        {
+          "text": "commencement",
+          "depth": 2,
+          "name": "commencement"
+        },
+        {
+          "text": "commence",
+          "depth": 2,
+          "name": "commence"
+        },
+        {
+          "text": "commencing",
+          "depth": 2,
+          "name": "commencing"
+        },
+        {
+          "text": "honour",
+          "depth": 2,
+          "name": "honour"
+        },
+        {
+          "text": "honour / honours",
+          "depth": 2,
+          "name": "honour / honours"
+        },
+        {
+          "text": "honour",
+          "depth": 2,
+          "name": "honour"
+        },
+        {
+          "text": "honoured / honorary",
+          "depth": 2,
+          "name": "honoured / honorary"
+        },
+        {
+          "text": "dedicate",
+          "depth": 2,
+          "name": "dedicate"
+        },
+        {
+          "text": "dedication",
+          "depth": 2,
+          "name": "dedication"
+        },
+        {
+          "text": "dedicate",
+          "depth": 2,
+          "name": "dedicate"
+        },
+        {
+          "text": "dedicated",
+          "depth": 2,
+          "name": "dedicated"
+        },
+        {
+          "text": "academic",
+          "depth": 2,
+          "name": "academic"
+        },
+        {
+          "text": "academic / academia",
+          "depth": 2,
+          "name": "academic / academia"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "academic",
+          "depth": 2,
+          "name": "academic"
+        },
+        {
+          "text": "diploma",
+          "depth": 2,
+          "name": "diploma"
+        },
+        {
+          "text": "diploma",
+          "depth": 2,
+          "name": "diploma"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "qualify",
+          "depth": 2,
+          "name": "qualify"
+        },
+        {
+          "text": "qualification",
+          "depth": 2,
+          "name": "qualification"
+        },
+        {
+          "text": "qualify",
+          "depth": 2,
+          "name": "qualify"
+        },
+        {
+          "text": "qualified / qualifying",
+          "depth": 2,
+          "name": "qualified / qualifying"
+        },
+        {
+          "text": "inspire",
+          "depth": 2,
+          "name": "inspire"
+        },
+        {
+          "text": "inspiration",
+          "depth": 2,
+          "name": "inspiration"
+        },
+        {
+          "text": "inspire",
+          "depth": 2,
+          "name": "inspire"
+        },
+        {
+          "text": "inspired / inspiring",
+          "depth": 2,
+          "name": "inspired / inspiring"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "556:2608",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The graduates entered the hall in __________ and gown as the audience applauded.",
+          "depth": 1,
+          "name": "1. The graduates entered the hall in __________ and gown as the audience applauded."
+        },
+        {
+          "text": "2.  The __________ — the student with the highest GPA — delivered the main speech.",
+          "depth": 1,
+          "name": "2. The __________ — the student with the highest GPA — delivered the main speech."
+        },
+        {
+          "text": "3.  An honor __________ draped over the shoulders marks academic distinction.",
+          "depth": 1,
+          "name": "3. An honor __________ draped over the shoulders marks academic distinction."
+        },
+        {
+          "text": "4.  After receiving the diploma, the graduate moved the __________ from right to left.",
+          "depth": 1,
+          "name": "4. After receiving the diploma, the graduate moved the __________ from right to left."
+        },
+        {
+          "text": "5.  A __________ is a research project required for a doctoral degree.",
+          "depth": 1,
+          "name": "5. A __________ is a research project required for a doctoral degree."
+        },
+        {
+          "text": "6.  The dean delivered the opening remarks from the __________ on stage.",
+          "depth": 1,
+          "name": "6. The dean delivered the opening remarks from the __________ on stage."
+        },
+        {
+          "text": "7.  The Latin phrase cum __________ appears on diplomas awarded to high-achieving students.",
+          "depth": 1,
+          "name": "7. The Latin phrase cum __________ appears on diplomas awarded to high-achieving students."
+        },
+        {
+          "text": "8.  After graduation, every student becomes an __________ of their university.",
+          "depth": 1,
+          "name": "8. After graduation, every student becomes an __________ of their university."
+        },
+        {
+          "text": "9.  She felt __________ about leaving behind the friendships she had built over four years.",
+          "depth": 1,
+          "name": "9. She felt __________ about leaving behind the friendships she had built over four years."
+        },
+        {
+          "text": "10. A __________ year allows graduates to travel or gain experience before further study.",
+          "depth": 1,
+          "name": "10. A __________ year allows graduates to travel or gain experience before further study."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. cap  2. valedictorian  3. cord  4. tassel  5. dissertation  6. podium  7. laude  8. alumnus/alumni  9. nostalgic  10. gap",
+          "depth": 2,
+          "name": "1. cap 2. valedictorian 3. cord 4. tassel 5. dissertation 6. podium 7. laude 8. alumnus/alumni 9. nostalgic 10. gap"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "556:2626",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Commencement vs Graduation",
+          "depth": 2,
+          "name": "Commencement vs Graduation"
+        },
+        {
+          "text": "In American English, 'commencement' is the formal name for the graduation ceremony — paradoxically meaning 'beginning' (the start of a new chapter). In British English, 'graduation ceremony' or 'degree ceremony' is standard. 'Commencement' sounds American to British ears.",
+          "depth": 2,
+          "name": "In American English, 'commencement' is the formal name for the graduation ceremony — paradoxically meaning 'beginning' (the start of a new chapter). In British English, 'graduation ceremony' or 'degree ceremony' is standard. 'Commencement' sounds American to British ears."
+        },
+        {
+          "text": "UK vs US Degree Systems",
+          "depth": 2,
+          "name": "UK vs US Degree Systems"
+        },
+        {
+          "text": "UK: three or four years for a Bachelor's, one year for a Master's. Degree classes: First, 2:1, 2:2, Third. US: four years for a Bachelor's, two years for a Master's. Honours: cum laude, magna cum laude, summa cum laude. GPA (Grade Point Average) is used in the US; the UK uses percentage marks and degree class.",
+          "depth": 2,
+          "name": "UK: three or four years for a Bachelor's, one year for a Master's. Degree classes: First, 2:1, 2:2, Third. US: four years for a Bachelor's, two years for a Master's. Honours: cum laude, magna cum laude, summa cum laude. GPA (Grade Point Average) is used in the US; the UK uses percentage marks and degree class."
+        },
+        {
+          "text": "Gap Year",
+          "depth": 2,
+          "name": "Gap Year"
+        },
+        {
+          "text": "A 'gap year' is a year taken off between stages of education — typically between school and university, or between a Bachelor's and Master's. Common in the UK, Australia, and increasingly worldwide. Students travel, work, or volunteer. 'She took a gap year to travel around Southeast Asia before starting university.'",
+          "depth": 2,
+          "name": "A 'gap year' is a year taken off between stages of education — typically between school and university, or between a Bachelor's and Master's. Common in the UK, Australia, and increasingly worldwide. Students travel, work, or volunteer. 'She took a gap year to travel around Southeast Asia before starting university.'"
+        },
+        {
+          "text": "Honorary Degrees",
+          "depth": 2,
+          "name": "Honorary Degrees"
+        },
+        {
+          "text": "Universities award 'honorary degrees' to distinguished individuals who haven't studied there — recognising exceptional achievements in their field. These are ceremonial — the recipient doesn't sit exams. Recipients include scientists, authors, philanthropists, and public servants. 'Dr' from an honorary degree is technically correct but can be controversial.",
+          "depth": 2,
+          "name": "Universities award 'honorary degrees' to distinguished individuals who haven't studied there — recognising exceptional achievements in their field. These are ceremonial — the recipient doesn't sit exams. Recipients include scientists, authors, philanthropists, and public servants. 'Dr' from an honorary degree is technically correct but can be controversial."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "556:2642",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "gown",
+          "depth": 2,
+          "name": "gown"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "academic ~, cap and ~, ~ hire",
+          "depth": 2,
+          "name": "academic ~, cap and ~, ~ hire"
+        },
+        {
+          "text": "mortarboard",
+          "depth": 2,
+          "name": "mortarboard"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "~ cap, ~ tassel, throw ~",
+          "depth": 2,
+          "name": "~ cap, ~ tassel, throw ~"
+        },
+        {
+          "text": "diploma",
+          "depth": 2,
+          "name": "diploma"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ ceremony, receive a ~, ~ frame",
+          "depth": 2,
+          "name": "~ ceremony, receive a ~, ~ frame"
+        },
+        {
+          "text": "alumnus",
+          "depth": 2,
+          "name": "alumnus"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ network, ~ association, distinguished ~",
+          "depth": 2,
+          "name": "~ network, ~ association, distinguished ~"
+        },
+        {
+          "text": "commencement",
+          "depth": 2,
+          "name": "commencement"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ address, ~ ceremony, ~ speaker",
+          "depth": 2,
+          "name": "~ address, ~ ceremony, ~ speaker"
+        },
+        {
+          "text": "honours",
+          "depth": 2,
+          "name": "honours"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "First Class ~, ~ degree, ~ list",
+          "depth": 2,
+          "name": "First Class ~, ~ degree, ~ list"
+        },
+        {
+          "text": "thesis",
+          "depth": 2,
+          "name": "thesis"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ submission, ~ defence, doctoral ~",
+          "depth": 2,
+          "name": "~ submission, ~ defence, doctoral ~"
+        },
+        {
+          "text": "scholarship",
+          "depth": 2,
+          "name": "scholarship"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ award, ~ fund, merit ~",
+          "depth": 2,
+          "name": "~ award, ~ fund, merit ~"
+        },
+        {
+          "text": "transcript",
+          "depth": 2,
+          "name": "transcript"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "academic ~, ~ request, official ~",
+          "depth": 2,
+          "name": "academic ~, ~ request, official ~"
+        },
+        {
+          "text": "chancellor",
+          "depth": 2,
+          "name": "chancellor"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "vice-~, ~ speech, university ~",
+          "depth": 2,
+          "name": "vice-~, ~ speech, university ~"
+        }
+      ]
+    }
+  }
+}

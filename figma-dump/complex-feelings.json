@@ -1,0 +1,489 @@
+{
+  "unitId": "complex-feelings",
+  "name": "Complex Feelings",
+  "subtopics": [
+    {
+      "id": "social-emotions",
+      "title": "Social Emotions",
+      "wordIds": [
+        "embarrassed",
+        "jealous",
+        "envious",
+        "guilty",
+        "ashamed",
+        "humiliated",
+        "proud",
+        "humble",
+        "sympathetic",
+        "empathetic"
+      ]
+    },
+    {
+      "id": "deep-feelings",
+      "title": "Deep Feelings",
+      "wordIds": [
+        "nostalgic",
+        "melancholic",
+        "overwhelmed",
+        "vulnerable",
+        "insecure",
+        "conflicted",
+        "ambivalent",
+        "bittersweet",
+        "wistful",
+        "longing"
+      ]
+    },
+    {
+      "id": "anxiety-stress",
+      "title": "Anxiety & Stress",
+      "wordIds": [
+        "anxious",
+        "nervous",
+        "panicked",
+        "stressed",
+        "tense",
+        "uneasy",
+        "restless",
+        "paranoid",
+        "apprehensive",
+        "dread"
+      ]
+    },
+    {
+      "id": "growth-emotions",
+      "title": "Growth Emotions",
+      "wordIds": [
+        "inspired",
+        "motivated",
+        "determined",
+        "resilient",
+        "courageous",
+        "confident",
+        "empowered",
+        "fulfilled",
+        "accomplished",
+        "liberated"
+      ]
+    },
+    {
+      "id": "connection-emotions",
+      "title": "Connection Emotions",
+      "wordIds": [
+        "love",
+        "affection",
+        "compassion",
+        "tenderness",
+        "devotion",
+        "admiration",
+        "trust",
+        "belonging",
+        "intimacy",
+        "warmth"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "embarrassed",
+      "label": "Embarrassed",
+      "ipa": "/ɪmˈbærəst/",
+      "cefr": "B1",
+      "imageNodeId": "467:9625"
+    },
+    {
+      "kind": "card",
+      "id": "jealous",
+      "label": "Jealous",
+      "ipa": "/ˈdʒɛləs/",
+      "cefr": "A2",
+      "imageNodeId": "467:9629"
+    },
+    {
+      "kind": "card",
+      "id": "envious",
+      "label": "Envious",
+      "ipa": "/ˈɛnviəs/",
+      "cefr": "A2",
+      "imageNodeId": "467:9633"
+    },
+    {
+      "kind": "card",
+      "id": "guilty",
+      "label": "Guilty",
+      "ipa": "/ˈɡɪlti/",
+      "cefr": "A2",
+      "imageNodeId": "467:9637"
+    },
+    {
+      "kind": "card",
+      "id": "ashamed",
+      "label": "Ashamed",
+      "ipa": "/əˈʃeɪmd/",
+      "cefr": "A2",
+      "imageNodeId": "467:9641"
+    },
+    {
+      "kind": "card",
+      "id": "humiliated",
+      "label": "Humiliated",
+      "ipa": "/hjuːˈmɪliˌeɪtɪd/",
+      "cefr": "B1",
+      "imageNodeId": "467:9645"
+    },
+    {
+      "kind": "card",
+      "id": "proud",
+      "label": "Proud",
+      "ipa": "/praʊd/",
+      "cefr": "A2",
+      "imageNodeId": "467:9649"
+    },
+    {
+      "kind": "card",
+      "id": "humble",
+      "label": "Humble",
+      "ipa": "/ˈhʌmbəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:9653"
+    },
+    {
+      "kind": "card",
+      "id": "sympathetic",
+      "label": "Sympathetic",
+      "ipa": "/ˌsɪmpəˈθɛtɪk/",
+      "cefr": "B1",
+      "imageNodeId": "467:9657"
+    },
+    {
+      "kind": "card",
+      "id": "empathetic",
+      "label": "Empathetic",
+      "ipa": "/ˌɛmpəˈθɛtɪk/",
+      "cefr": "B1",
+      "imageNodeId": "467:9661"
+    },
+    {
+      "kind": "card",
+      "id": "nostalgic",
+      "label": "Nostalgic",
+      "ipa": "/nɒˈstældʒɪk/",
+      "cefr": "A2",
+      "imageNodeId": "467:9670"
+    },
+    {
+      "kind": "card",
+      "id": "melancholic",
+      "label": "Melancholic",
+      "ipa": "/ˌmɛlənˈkɒlɪk/",
+      "cefr": "B1",
+      "imageNodeId": "467:9674"
+    },
+    {
+      "kind": "card",
+      "id": "overwhelmed",
+      "label": "Overwhelmed",
+      "ipa": "/ˌoʊvərˈwɛlmd/",
+      "cefr": "B1",
+      "imageNodeId": "467:9678"
+    },
+    {
+      "kind": "card",
+      "id": "vulnerable",
+      "label": "Vulnerable",
+      "ipa": "/ˈvʌlnərəbəl/",
+      "cefr": "B1",
+      "imageNodeId": "467:9682"
+    },
+    {
+      "kind": "card",
+      "id": "insecure",
+      "label": "Insecure",
+      "ipa": "/ˌɪnsɪˈkjʊər/",
+      "cefr": "A2",
+      "imageNodeId": "467:9686"
+    },
+    {
+      "kind": "card",
+      "id": "conflicted",
+      "label": "Conflicted",
+      "ipa": "/kənˈflɪktɪd/",
+      "cefr": "B1",
+      "imageNodeId": "467:9690"
+    },
+    {
+      "kind": "card",
+      "id": "ambivalent",
+      "label": "Ambivalent",
+      "ipa": "/æmˈbɪvələnt/",
+      "cefr": "B1",
+      "imageNodeId": "467:9694"
+    },
+    {
+      "kind": "card",
+      "id": "bittersweet",
+      "label": "Bittersweet",
+      "ipa": "/ˈbɪtərˌswiːt/",
+      "cefr": "B1",
+      "imageNodeId": "467:9698"
+    },
+    {
+      "kind": "card",
+      "id": "wistful",
+      "label": "Wistful",
+      "ipa": "/ˈwɪstfəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:9702"
+    },
+    {
+      "kind": "card",
+      "id": "longing",
+      "label": "Longing",
+      "ipa": "/ˈlɒŋɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:9706"
+    },
+    {
+      "kind": "card",
+      "id": "anxious",
+      "label": "Anxious",
+      "ipa": "/ˈæŋkʃəs/",
+      "cefr": "A2",
+      "imageNodeId": "467:9715"
+    },
+    {
+      "kind": "card",
+      "id": "nervous",
+      "label": "Nervous",
+      "ipa": "/ˈnɜːrvəs/",
+      "cefr": "A2",
+      "imageNodeId": "467:9719"
+    },
+    {
+      "kind": "card",
+      "id": "panicked",
+      "label": "Panicked",
+      "ipa": "/ˈpænɪkt/",
+      "cefr": "A2",
+      "imageNodeId": "467:9723"
+    },
+    {
+      "kind": "card",
+      "id": "stressed",
+      "label": "Stressed",
+      "ipa": "/strɛst/",
+      "cefr": "A2",
+      "imageNodeId": "467:9727"
+    },
+    {
+      "kind": "card",
+      "id": "tense",
+      "label": "Tense",
+      "ipa": "/tɛns/",
+      "cefr": "A2",
+      "imageNodeId": "467:9731"
+    },
+    {
+      "kind": "card",
+      "id": "uneasy",
+      "label": "Uneasy",
+      "ipa": "/ʌnˈiːzi/",
+      "cefr": "A2",
+      "imageNodeId": "467:9735"
+    },
+    {
+      "kind": "card",
+      "id": "restless",
+      "label": "Restless",
+      "ipa": "/ˈrɛstləs/",
+      "cefr": "A2",
+      "imageNodeId": "467:9739"
+    },
+    {
+      "kind": "card",
+      "id": "paranoid",
+      "label": "Paranoid",
+      "ipa": "/ˈpærəˌnɔɪd/",
+      "cefr": "A2",
+      "imageNodeId": "467:9743"
+    },
+    {
+      "kind": "card",
+      "id": "apprehensive",
+      "label": "Apprehensive",
+      "ipa": "/ˌæprɪˈhɛnsɪv/",
+      "cefr": "B1",
+      "imageNodeId": "467:9747"
+    },
+    {
+      "kind": "card",
+      "id": "dread",
+      "label": "Dread",
+      "ipa": "/drɛd/",
+      "cefr": "A2",
+      "imageNodeId": "467:9751"
+    },
+    {
+      "kind": "card",
+      "id": "inspired",
+      "label": "Inspired",
+      "ipa": "/ɪnˈspaɪərd/",
+      "cefr": "A2",
+      "imageNodeId": "467:9760"
+    },
+    {
+      "kind": "card",
+      "id": "motivated",
+      "label": "Motivated",
+      "ipa": "/ˈmoʊtɪˌveɪtɪd/",
+      "cefr": "A2",
+      "imageNodeId": "467:9764"
+    },
+    {
+      "kind": "card",
+      "id": "determined",
+      "label": "Determined",
+      "ipa": "/dɪˈtɜːrmɪnd/",
+      "cefr": "B1",
+      "imageNodeId": "467:9768"
+    },
+    {
+      "kind": "card",
+      "id": "resilient",
+      "label": "Resilient",
+      "ipa": "/rɪˈzɪliənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:9772"
+    },
+    {
+      "kind": "card",
+      "id": "courageous",
+      "label": "Courageous",
+      "ipa": "/kəˈreɪdʒəs/",
+      "cefr": "B1",
+      "imageNodeId": "467:9776"
+    },
+    {
+      "kind": "card",
+      "id": "confident",
+      "label": "Confident",
+      "ipa": "/ˈkɒnfɪdənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:9780"
+    },
+    {
+      "kind": "card",
+      "id": "empowered",
+      "label": "Empowered",
+      "ipa": "/ɪmˈpaʊərd/",
+      "cefr": "A2",
+      "imageNodeId": "467:9784"
+    },
+    {
+      "kind": "card",
+      "id": "fulfilled",
+      "label": "Fulfilled",
+      "ipa": "/fʊlˈfɪld/",
+      "cefr": "A2",
+      "imageNodeId": "467:9788"
+    },
+    {
+      "kind": "card",
+      "id": "accomplished",
+      "label": "Accomplished",
+      "ipa": "/əˈkɒmplɪʃt/",
+      "cefr": "B1",
+      "imageNodeId": "467:9792"
+    },
+    {
+      "kind": "card",
+      "id": "liberated",
+      "label": "Liberated",
+      "ipa": "/ˈlɪbəˌreɪtɪd/",
+      "cefr": "A2",
+      "imageNodeId": "467:9796"
+    },
+    {
+      "kind": "card",
+      "id": "love",
+      "label": "Love",
+      "ipa": "/lʌv/",
+      "cefr": "A2",
+      "imageNodeId": "467:9805"
+    },
+    {
+      "kind": "card",
+      "id": "affection",
+      "label": "Affection",
+      "ipa": "/əˈfɛkʃən/",
+      "cefr": "A2",
+      "imageNodeId": "467:9809"
+    },
+    {
+      "kind": "card",
+      "id": "compassion",
+      "label": "Compassion",
+      "ipa": "/kəmˈpæʃən/",
+      "cefr": "B1",
+      "imageNodeId": "467:9813"
+    },
+    {
+      "kind": "card",
+      "id": "tenderness",
+      "label": "Tenderness",
+      "ipa": "/ˈtɛndərnəs/",
+      "cefr": "B1",
+      "imageNodeId": "467:9817"
+    },
+    {
+      "kind": "card",
+      "id": "devotion",
+      "label": "Devotion",
+      "ipa": "/dɪˈvoʊʃən/",
+      "cefr": "A2",
+      "imageNodeId": "467:9821"
+    },
+    {
+      "kind": "card",
+      "id": "admiration",
+      "label": "Admiration",
+      "ipa": "/ˌædmɪˈreɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "467:9825"
+    },
+    {
+      "kind": "card",
+      "id": "trust",
+      "label": "Trust",
+      "ipa": "/trʌst/",
+      "cefr": "A2",
+      "imageNodeId": "467:9829"
+    },
+    {
+      "kind": "card",
+      "id": "belonging",
+      "label": "Belonging",
+      "ipa": "/bɪˈlɒŋɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:9833"
+    },
+    {
+      "kind": "card",
+      "id": "intimacy",
+      "label": "Intimacy",
+      "ipa": "/ˈɪntɪməsi/",
+      "cefr": "A2",
+      "imageNodeId": "467:9837"
+    },
+    {
+      "kind": "card",
+      "id": "warmth",
+      "label": "Warmth",
+      "ipa": "/wɔːrmθ/",
+      "cefr": "A2",
+      "imageNodeId": "467:9841"
+    }
+  ],
+  "materials": null
+}

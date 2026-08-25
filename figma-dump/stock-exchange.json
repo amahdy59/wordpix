@@ -1,0 +1,393 @@
+{
+  "unitId": "stock-exchange",
+  "name": "The Stock Exchange",
+  "subtopics": [
+    {
+      "id": "market-terms",
+      "title": "Market Terms",
+      "wordIds": [
+        "bull-market",
+        "bear-market",
+        "ipo",
+        "market-cap",
+        "volume",
+        "volatility",
+        "index",
+        "nasdaq",
+        "nyse",
+        "dow-jones"
+      ]
+    },
+    {
+      "id": "trading",
+      "title": "Trading",
+      "wordIds": [
+        "buy",
+        "sell",
+        "trade",
+        "bid",
+        "ask",
+        "spread",
+        "limit-order",
+        "market-order",
+        "stop-loss",
+        "short-selling"
+      ]
+    },
+    {
+      "id": "analysis",
+      "title": "Analysis",
+      "wordIds": [
+        "technical-analysis",
+        "fundamental-analysis",
+        "p-e-ratio",
+        "earnings-report",
+        "revenue",
+        "profit-margin",
+        "balance-sheet",
+        "cash-flow",
+        "market-trend",
+        "forecast"
+      ]
+    },
+    {
+      "id": "trading-floor",
+      "title": "Trading Floor",
+      "wordIds": [
+        "trader",
+        "broker",
+        "analyst",
+        "floor",
+        "bell",
+        "ticker",
+        "screen",
+        "trading-desk",
+        "pit",
+        "exchange-rate"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "bull-market",
+      "label": "Bull Market",
+      "ipa": "/bʊl ˈmɑːrkɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:14256"
+    },
+    {
+      "kind": "card",
+      "id": "bear-market",
+      "label": "Bear Market",
+      "ipa": "/bɛər ˈmɑːrkɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:14260"
+    },
+    {
+      "kind": "card",
+      "id": "ipo",
+      "label": "IPO",
+      "ipa": "/ˌaɪpiːˈoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:14264"
+    },
+    {
+      "kind": "card",
+      "id": "market-cap",
+      "label": "Market Cap",
+      "ipa": "/ˈmɑːrkɪt kæp/",
+      "cefr": "C1",
+      "imageNodeId": "467:14268"
+    },
+    {
+      "kind": "card",
+      "id": "volume",
+      "label": "Volume",
+      "ipa": "/ˈvɒljuːm/",
+      "cefr": "B2",
+      "imageNodeId": "467:14272"
+    },
+    {
+      "kind": "card",
+      "id": "volatility",
+      "label": "Volatility",
+      "ipa": "/ˌvɒləˈtɪlɪti/",
+      "cefr": "C1",
+      "imageNodeId": "467:14276"
+    },
+    {
+      "kind": "card",
+      "id": "index",
+      "label": "Index",
+      "ipa": "/ˈɪndɛks/",
+      "cefr": "B2",
+      "imageNodeId": "467:14280"
+    },
+    {
+      "kind": "card",
+      "id": "nasdaq",
+      "label": "NASDAQ",
+      "ipa": "/ˈnæzˌdæk/",
+      "cefr": "B2",
+      "imageNodeId": "467:14284"
+    },
+    {
+      "kind": "card",
+      "id": "nyse",
+      "label": "NYSE",
+      "ipa": "/ˌɛnwaɪɛsˈiː/",
+      "cefr": "B2",
+      "imageNodeId": "467:14288"
+    },
+    {
+      "kind": "card",
+      "id": "dow-jones",
+      "label": "Dow Jones",
+      "ipa": "/daʊ dʒoʊnz/",
+      "cefr": "C1",
+      "imageNodeId": "467:14292"
+    },
+    {
+      "kind": "card",
+      "id": "buy",
+      "label": "Buy",
+      "ipa": "/baɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:14301"
+    },
+    {
+      "kind": "card",
+      "id": "sell",
+      "label": "Sell",
+      "ipa": "/sɛl/",
+      "cefr": "B2",
+      "imageNodeId": "467:14305"
+    },
+    {
+      "kind": "card",
+      "id": "trade",
+      "label": "Trade",
+      "ipa": "/treɪd/",
+      "cefr": "B2",
+      "imageNodeId": "467:14309"
+    },
+    {
+      "kind": "card",
+      "id": "bid",
+      "label": "Bid",
+      "ipa": "/bɪd/",
+      "cefr": "B2",
+      "imageNodeId": "467:14313"
+    },
+    {
+      "kind": "card",
+      "id": "ask",
+      "label": "Ask",
+      "ipa": "/æsk/",
+      "cefr": "B2",
+      "imageNodeId": "467:14317"
+    },
+    {
+      "kind": "card",
+      "id": "spread",
+      "label": "Spread",
+      "ipa": "/sprɛd/",
+      "cefr": "B2",
+      "imageNodeId": "467:14321"
+    },
+    {
+      "kind": "card",
+      "id": "limit-order",
+      "label": "Limit Order",
+      "ipa": "/ˈlɪmɪt ˈɔːrdər/",
+      "cefr": "C1",
+      "imageNodeId": "467:14325"
+    },
+    {
+      "kind": "card",
+      "id": "market-order",
+      "label": "Market Order",
+      "ipa": "/ˈmɑːrkɪt ˈɔːrdər/",
+      "cefr": "C1",
+      "imageNodeId": "467:14329"
+    },
+    {
+      "kind": "card",
+      "id": "stop-loss",
+      "label": "Stop Loss",
+      "ipa": "/stɒp lɒs/",
+      "cefr": "C1",
+      "imageNodeId": "467:14333"
+    },
+    {
+      "kind": "card",
+      "id": "short-selling",
+      "label": "Short Selling",
+      "ipa": "/ʃɔːrt ˈsɛlɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:14337"
+    },
+    {
+      "kind": "card",
+      "id": "technical-analysis",
+      "label": "Technical Analysis",
+      "ipa": "/ˈtɛknɪkəl əˈnæləsɪs/",
+      "cefr": "C1",
+      "imageNodeId": "467:14346"
+    },
+    {
+      "kind": "card",
+      "id": "fundamental-analysis",
+      "label": "Fundamental Analysis",
+      "ipa": "/ˌfʌndəˈmɛntəl əˈnæləsɪs/",
+      "cefr": "C1",
+      "imageNodeId": "467:14350"
+    },
+    {
+      "kind": "card",
+      "id": "p-e-ratio",
+      "label": "P/E Ratio",
+      "ipa": "/ˌpiːˈiː ˈreɪʃioʊ/",
+      "cefr": "C1",
+      "imageNodeId": "467:14354"
+    },
+    {
+      "kind": "card",
+      "id": "earnings-report",
+      "label": "Earnings Report",
+      "ipa": "/ˈɜːrnɪŋz rɪˈpɔːrt/",
+      "cefr": "C1",
+      "imageNodeId": "467:14358"
+    },
+    {
+      "kind": "card",
+      "id": "revenue",
+      "label": "Revenue",
+      "ipa": "/ˈrɛvəˌnjuː/",
+      "cefr": "B2",
+      "imageNodeId": "467:14362"
+    },
+    {
+      "kind": "card",
+      "id": "profit-margin",
+      "label": "Profit Margin",
+      "ipa": "/ˈprɒfɪt ˈmɑːrdʒɪn/",
+      "cefr": "C1",
+      "imageNodeId": "467:14366"
+    },
+    {
+      "kind": "card",
+      "id": "balance-sheet",
+      "label": "Balance Sheet",
+      "ipa": "/ˈbæləns ʃiːt/",
+      "cefr": "C1",
+      "imageNodeId": "467:14370"
+    },
+    {
+      "kind": "card",
+      "id": "cash-flow",
+      "label": "Cash Flow",
+      "ipa": "/kæʃ floʊ/",
+      "cefr": "C1",
+      "imageNodeId": "467:14374"
+    },
+    {
+      "kind": "card",
+      "id": "market-trend",
+      "label": "Market Trend",
+      "ipa": "/ˈmɑːrkɪt trɛnd/",
+      "cefr": "C1",
+      "imageNodeId": "467:14378"
+    },
+    {
+      "kind": "card",
+      "id": "forecast",
+      "label": "Forecast",
+      "ipa": "/ˈfɔːrˌkæst/",
+      "cefr": "B2",
+      "imageNodeId": "467:14382"
+    },
+    {
+      "kind": "card",
+      "id": "trader",
+      "label": "Trader",
+      "ipa": "/ˈtreɪdər/",
+      "cefr": "B2",
+      "imageNodeId": "467:14391"
+    },
+    {
+      "kind": "card",
+      "id": "broker",
+      "label": "Broker",
+      "ipa": "/ˈbroʊkər/",
+      "cefr": "B2",
+      "imageNodeId": "467:14395"
+    },
+    {
+      "kind": "card",
+      "id": "analyst",
+      "label": "Analyst",
+      "ipa": "/ˈænəlɪst/",
+      "cefr": "B2",
+      "imageNodeId": "467:14399"
+    },
+    {
+      "kind": "card",
+      "id": "floor",
+      "label": "Floor",
+      "ipa": "/flɔːr/",
+      "cefr": "B2",
+      "imageNodeId": "467:14403"
+    },
+    {
+      "kind": "card",
+      "id": "bell",
+      "label": "Bell",
+      "ipa": "/bɛl/",
+      "cefr": "B2",
+      "imageNodeId": "467:14407"
+    },
+    {
+      "kind": "card",
+      "id": "ticker",
+      "label": "Ticker",
+      "ipa": "/ˈtɪkər/",
+      "cefr": "B2",
+      "imageNodeId": "467:14411"
+    },
+    {
+      "kind": "card",
+      "id": "screen",
+      "label": "Screen",
+      "ipa": "/skriːn/",
+      "cefr": "B2",
+      "imageNodeId": "467:14415"
+    },
+    {
+      "kind": "card",
+      "id": "trading-desk",
+      "label": "Trading Desk",
+      "ipa": "/ˈtreɪdɪŋ dɛsk/",
+      "cefr": "C1",
+      "imageNodeId": "467:14419"
+    },
+    {
+      "kind": "card",
+      "id": "pit",
+      "label": "Pit",
+      "ipa": "/pɪt/",
+      "cefr": "B2",
+      "imageNodeId": "467:14423"
+    },
+    {
+      "kind": "card",
+      "id": "exchange-rate",
+      "label": "Exchange Rate",
+      "ipa": "/ɪksˈtʃeɪndʒ reɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:14427"
+    }
+  ],
+  "materials": null
+}
