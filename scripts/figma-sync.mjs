@@ -167,22 +167,25 @@ const textOf = (node) => (node?.characters ?? node?.name ?? "").trim();
  * a Learning Materials frame belongs to the most recent unit frame before it.
  */
 function pairFrames(pageChildren) {
-  // Pairing used to walk document order and attach a "Learning Materials"
-  // frame to whichever unit frame preceded it. That is fragile twice over:
-  // the child array order is not the canvas layout, and the name has to match
-  // exactly. Pairing by geometry instead — a materials frame belongs to the
-  // nearest unit frame to its left whose vertical extent it overlaps — matches
-  // what a designer sees, which is the arrangement they actually maintain.
+  // Pairing is by document order, deliberately.
+  //
+  // Geometry looked like the more robust choice, so it was tried: a materials
+  // frame belongs to the nearest unit frame to its left that it overlaps
+  // vertically. That collapsed detection from 99 units to 2, and the debug
+  // output shows why — every "Learning Materials" frame reports the same
+  // origin (x=1000, y=0), stacked rather than laid out beside its unit. There
+  // is no spatial relationship to exploit, so position cannot pair them.
+  //
+  // Document order can: a materials frame follows the unit it belongs to.
+  // The one improvement kept from the attempt is loose name matching, so a
+  // frame named "Learning Materials " or "📚 Learning Materials" still pairs.
   const isMaterials = (frame) => /learning\s*materials?/i.test(frame.name);
-  const box = (frame) => frame.absoluteBoundingBox ?? { x: 0, y: 0, width: 0, height: 0 };
 
   const units = [];
-  const materials = [];
-
   for (const frame of pageChildren) {
     if (frame.type !== "FRAME") continue;
     if (isMaterials(frame)) {
-      materials.push(frame);
+      if (units.length) units[units.length - 1].materialsNode = frame;
       continue;
     }
     units.push({
@@ -193,38 +196,9 @@ function pairFrames(pageChildren) {
   }
 
   if (OPTS.debugPairing) {
-    console.log(`PAIRING: ${units.length} unit frame(s), ${materials.length} materials frame(s)`);
-    for (const u of units.slice(0, 6)) {
-      const b = box(u.unitNode);
-      console.log(`  UNIT ${u.id} x=${b.x} y=${b.y} w=${b.width} h=${b.height}`);
-    }
-    for (const f of materials.slice(0, 6)) {
-      const b = box(f);
-      console.log(`  MATS "${f.name}" x=${b.x} y=${b.y} w=${b.width} h=${b.height}`);
-    }
-  }
-
-  for (const frame of materials) {
-    const m = box(frame);
-    let best = null;
-    let bestDistance = Infinity;
-
-    for (const unit of units) {
-      const u = box(unit.unitNode);
-      const verticallyOverlaps = u.y < m.y + m.height && m.y < u.y + u.height;
-      if (!verticallyOverlaps) continue;
-      // Materials sit to the right of their unit; measure from the unit's
-      // right edge so the nearest one to the left wins.
-      const distance = m.x - (u.x + u.width);
-      if (distance < -m.width) continue; // entirely to the left, not a pair
-      const score = Math.abs(distance);
-      if (score < bestDistance) {
-        bestDistance = score;
-        best = unit;
-      }
-    }
-
-    if (best && !best.materialsNode) best.materialsNode = frame;
+    const paired = units.filter((u) => u.materialsNode).length;
+    const total = pageChildren.filter((f) => f.type === "FRAME" && isMaterials(f)).length;
+    console.log(`PAIRING: ${units.length} unit frame(s), ${total} materials frame(s), ${paired} paired`);
   }
 
   return units;
