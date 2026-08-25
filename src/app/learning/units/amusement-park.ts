@@ -132,67 +132,75 @@ export const AMUSEMENT_PARK_LEARNING: UnitLearningMaterials = {
   phrases: [
     {
       id: "amusement-park-a-roller-coaster-of-emotions",
-      phrase: "a roller coaster (of emotions)",
+      phrase: "a roller coaster of emotions",
       kind: "idiom",
       kindInferred: true,
       meaning: "a situation with many ups and downs",
-      example: "Planning the wedding has been a real roller coaster.",
+      example:
+        "The day was a roller coaster of emotions — thrilling on the roller coaster, scary on the drop tower, and dizzy on the spinning ride.",
     },
     {
-      id: "amusement-park-a-wild-ride",
-      phrase: "a wild ride",
+      id: "amusement-park-go-for-a-spin",
+      phrase: "go for a spin",
       kind: "idiom",
       kindInferred: true,
-      meaning: "an exciting, unpredictable experience",
-      example: "Starting a business is always a wild ride.",
+      meaning: "take a short drive or ride",
+      example:
+        "Let's go for a spin on the bumper cars — then we'll try the go-karts and the tea cups.",
     },
     {
-      id: "amusement-park-go-round-in-circles",
-      phrase: "go round in circles",
+      id: "amusement-park-take-someone-for-a-ride",
+      phrase: "take someone for a ride",
       kind: "idiom",
       kindInferred: true,
-      meaning: "keep doing the same thing without making progress",
-      example: "We've been going round in circles with this discussion.",
-    },
-    {
-      id: "amusement-park-get-a-kick-out-of",
-      phrase: "get a kick out of",
-      kind: "idiom",
-      kindInferred: true,
-      meaning: "enjoy something very much",
-      example: "He gets a kick out of fast rides.",
-    },
-    {
-      id: "amusement-park-queue-up-line-up",
-      phrase: "queue up / line up",
-      kind: "idiom",
-      kindInferred: true,
-      meaning: "wait in a line for your turn",
-      example: "We queued up for thirty minutes to get on the ride.",
-    },
-    {
-      id: "amusement-park-chicken-out",
-      phrase: "chicken out",
-      kind: "phrasal-verb",
-      kindInferred: true,
-      meaning: "decide not to do something because of fear",
-      example: "I was going to try the roller coaster but I chickened out.",
+      meaning: "deceive or cheat someone",
+      example:
+        "The claw machine took me for a ride — I spent ten coins and didn't win the stuffed animal or the giant teddy bear.",
     },
     {
       id: "amusement-park-have-a-blast",
       phrase: "have a blast",
       kind: "idiom",
       kindInferred: true,
-      meaning: "have a great time",
-      example: "We had an absolute blast at the theme park.",
+      meaning: "have an extremely good time",
+      example:
+        "We had a blast on the Ferris wheel — we could see the pirate ship, the water slide, and the log flume from the top.",
     },
     {
-      id: "amusement-park-scream-your-head-off",
-      phrase: "scream your head off",
+      id: "amusement-park-ride-the-wave",
+      phrase: "ride the wave",
       kind: "idiom",
       kindInferred: true,
-      meaning: "scream very loudly",
-      example: "She screamed her head off on the drop tower.",
+      meaning: "enjoy a period of success or excitement",
+      example:
+        "Ride the wave of fun — try the loop ride, the launch coaster, and the pendulum ride before the park closes.",
+    },
+    {
+      id: "amusement-park-come-full-circle",
+      phrase: "come full circle",
+      kind: "idiom",
+      kindInferred: true,
+      meaning: "return to the starting point or original situation",
+      example:
+        "The carousel came full circle — and my son wanted to ride it again with cotton candy in his hand.",
+    },
+    {
+      id: "amusement-park-throw-your-hat-in-the-ring",
+      phrase: "throw your hat in the ring",
+      kind: "idiom",
+      kindInferred: true,
+      meaning: "enter a competition or challenge",
+      example:
+        "She threw her hat in the ring at the ring toss, the balloon dart, and the basketball throw — winning prizes at each.",
+    },
+    {
+      id: "amusement-park-a-wild-ride",
+      phrase: "a wild ride",
+      kind: "idiom",
+      kindInferred: true,
+      meaning: "an exciting and unpredictable experience",
+      example:
+        "The haunted house was a wild ride — even scarier than the fun house and the flying swings.",
     },
     {
       id: "amusement-park-the-ride-of-your-life",
@@ -215,44 +223,49 @@ export const AMUSEMENT_PARK_LEARNING: UnitLearningMaterials = {
     title: "Mini Dialogue",
     lines: [
       {
-        speaker: "Scene: Two friends deciding which ride to try next",
-        text: "Hassan:",
+        speaker: "Scene: A family spends a day at the amusement park",
+        text: "Dad:",
       },
       {
-        speaker: "Shall we try the roller coaster next?",
-        text: "Ali:",
+        speaker:
+          "We're here! What do you want to ride first — the roller coaster or the Ferris wheel?",
+        text: "Son:",
       },
       {
-        speaker: "I don't know — it looks really scary. Look how steep that drop is!",
-        text: "Hassan:",
+        speaker: "The roller coaster! Then the drop tower and the spinning ride!",
+        text: "Daughter:",
       },
       {
-        speaker: "Come on, it'll be fun! The queue isn't even that long.",
-        text: "Ali:",
+        speaker: "I want the water slide and the log flume first. Then the pirate ship!",
+        text: "Mom:",
       },
       {
-        speaker: "How fast does it go?",
-        text: "Hassan:",
+        speaker:
+          "Let's start together on the carousel. Then you two can try the loop ride and the launch coaster.",
+        text: "Son:",
       },
       {
-        speaker: "The sign says it reaches a hundred kilometres per hour.",
-        text: "Ali:",
+        speaker:
+          "Can we do the bumper cars and the go-karts after? The pendulum ride looks amazing too!",
+        text: "Dad:",
       },
       {
-        speaker: "That's fast! Is there a height restriction?",
-        text: "Hassan:",
+        speaker:
+          "Sure. Your sister can try the tea cups, the flying swings, and the boat ride. The train ride and the monorail go around the whole park.",
+        text: "Daughter:",
       },
       {
-        speaker: "Yes, you have to be at least one metre forty. We're both tall enough.",
-        text: "Ali:",
+        speaker: "I want to see the haunted house and the fun house! Are they scary?",
+        text: "Mom:",
       },
       {
-        speaker: "Okay, fine. But I'm sitting in the middle, not the front!",
-        text: "Hassan:",
+        speaker:
+          "A little — but you'll be fine. After that, let's play some games. The ring toss and the balloon dart are fun.",
+        text: "Son:",
       },
       {
-        speaker: "Deal. After this, let's get some candyfloss.",
-        text: "Ali:",
+        speaker: "I want to try the basketball throw and the whack-a-mole! And the strength test!",
+        text: "Dad:",
       },
     ],
   },

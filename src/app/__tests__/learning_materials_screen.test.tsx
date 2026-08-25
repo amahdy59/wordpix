@@ -4,6 +4,8 @@ import userEvent from "@testing-library/user-event";
 import { LearningMaterialsScreen } from "../learning/LearningMaterialsScreen";
 import { hashToRoute, screenToHash } from "../router/useHashRouter";
 import { reducer } from "../store/reducer";
+import { COURSE_UNITS } from "../data/lessons";
+import { unitsWithLearningMaterials } from "../learning/registry";
 
 describe("LearningMaterialsScreen", () => {
   it("opens on the reading passage and offers a section for each imported block", async () => {
@@ -108,7 +110,16 @@ describe("LearningMaterialsScreen", () => {
   });
 
   it("tells the learner when a unit has not been imported yet", async () => {
-    render(<LearningMaterialsScreen unitId="art-studio" dispatch={vi.fn()} />);
+    // Named `art-studio` until the design file grew materials for it, which is
+    // exactly the brittleness worth removing: the unit without materials is
+    // whichever one Figma has not covered yet, not a fixed id. Today that is
+    // `human-body` — the one unit the file splits four ways — and the day that
+    // is imported too, this test has nothing left to check and says so.
+    const withMaterials = new Set(unitsWithLearningMaterials());
+    const gap = Object.keys(COURSE_UNITS).find((id) => !withMaterials.has(id));
+    expect(gap, "every unit now has materials — delete this test").toBeDefined();
+
+    render(<LearningMaterialsScreen unitId={gap!} dispatch={vi.fn()} />);
     await waitFor(() => expect(screen.getByText(/no study materials yet/i)).toBeInTheDocument());
   });
 });
