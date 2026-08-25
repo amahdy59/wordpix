@@ -1,0 +1,1683 @@
+{
+  "unitId": "newspaper-office",
+  "name": "The Newspaper Office",
+  "subtopics": [
+    {
+      "id": "newsroom",
+      "title": "Newsroom",
+      "wordIds": [
+        "newsroom",
+        "editor-s-desk",
+        "whiteboard",
+        "pinboard",
+        "computer-terminal",
+        "telephone",
+        "coffee-cup",
+        "filing-cabinet",
+        "notepad",
+        "wall-clock"
+      ]
+    },
+    {
+      "id": "print-media",
+      "title": "Print Media",
+      "wordIds": [
+        "newspaper",
+        "headline",
+        "article",
+        "column",
+        "photograph",
+        "caption",
+        "classified-ad",
+        "editorial",
+        "front-page",
+        "back-page"
+      ]
+    },
+    {
+      "id": "journalism-roles",
+      "title": "Journalism Roles",
+      "wordIds": [
+        "reporter",
+        "editor",
+        "photographer",
+        "columnist",
+        "cartoonist",
+        "proofreader",
+        "copy-editor",
+        "correspondent",
+        "intern",
+        "publisher"
+      ]
+    },
+    {
+      "id": "reporting-tools",
+      "title": "Reporting Tools",
+      "wordIds": [
+        "press-pass",
+        "notebook",
+        "pen",
+        "voice-recorder",
+        "camera",
+        "laptop",
+        "microphone",
+        "tripod",
+        "press-release",
+        "interview-notes"
+      ]
+    },
+    {
+      "id": "publishing-process",
+      "title": "Publishing Process",
+      "wordIds": [
+        "draft",
+        "deadline",
+        "layout",
+        "proof",
+        "printing-press",
+        "ink",
+        "paper-roll",
+        "folding-machine",
+        "delivery-truck",
+        "newsstand"
+      ]
+    },
+    {
+      "id": "types-of-stories",
+      "title": "Types of Stories",
+      "wordIds": [
+        "breaking-news",
+        "feature-story",
+        "opinion-piece",
+        "review",
+        "interview",
+        "investigation",
+        "weather-report",
+        "sports-score",
+        "obituary",
+        "advertisement",
+        "classified",
+        "cartoon",
+        "photo",
+        "journalist",
+        "printer",
+        "layout-designer",
+        "source",
+        "publish",
+        "print",
+        "distribute",
+        "subscribe",
+        "proofread",
+        "archive"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "newsroom",
+      "label": "Newsroom",
+      "ipa": "/ˈnjuːzˌruːm/",
+      "cefr": "A2",
+      "imageNodeId": "45:865"
+    },
+    {
+      "kind": "card",
+      "id": "editor-s-desk",
+      "label": "Editor's Desk",
+      "ipa": "/ˈɛdɪtərz dɛsk/",
+      "cefr": "B1",
+      "imageNodeId": "45:869"
+    },
+    {
+      "kind": "card",
+      "id": "whiteboard",
+      "label": "Whiteboard",
+      "ipa": "/ˈwaɪtˌbɔːrd/",
+      "cefr": "B1",
+      "imageNodeId": "45:873"
+    },
+    {
+      "kind": "card",
+      "id": "pinboard",
+      "label": "Pinboard",
+      "ipa": "/ˈpɪnˌbɔːrd/",
+      "cefr": "A2",
+      "imageNodeId": "45:877"
+    },
+    {
+      "kind": "card",
+      "id": "computer-terminal",
+      "label": "Computer Terminal",
+      "ipa": "/kəmˈpjuːtər ˈtɜːrmɪnəl/",
+      "cefr": "B2",
+      "imageNodeId": "45:881"
+    },
+    {
+      "kind": "card",
+      "id": "telephone",
+      "label": "Telephone",
+      "ipa": "/ˈtɛlɪˌfoʊn/",
+      "cefr": "A2",
+      "imageNodeId": "45:885"
+    },
+    {
+      "kind": "card",
+      "id": "coffee-cup",
+      "label": "Coffee Cup",
+      "ipa": "/ˈkɒfi kʌp/",
+      "cefr": "B1",
+      "imageNodeId": "45:889"
+    },
+    {
+      "kind": "card",
+      "id": "filing-cabinet",
+      "label": "Filing Cabinet",
+      "ipa": "/ˈfaɪlɪŋ ˈkæbɪnɪt/",
+      "cefr": "B1",
+      "imageNodeId": "45:893"
+    },
+    {
+      "kind": "card",
+      "id": "notepad",
+      "label": "Notepad",
+      "ipa": "/ˈnoʊtˌpæd/",
+      "cefr": "A2",
+      "imageNodeId": "45:897"
+    },
+    {
+      "kind": "card",
+      "id": "wall-clock",
+      "label": "Wall Clock",
+      "ipa": "/wɔːl klɒk/",
+      "cefr": "B1",
+      "imageNodeId": "45:901"
+    },
+    {
+      "kind": "card",
+      "id": "newspaper",
+      "label": "Newspaper",
+      "ipa": "/ˈnjuːzˌpeɪpər/",
+      "cefr": "A2",
+      "imageNodeId": "45:910"
+    },
+    {
+      "kind": "card",
+      "id": "headline",
+      "label": "Headline",
+      "ipa": "/ˈhɛdˌlaɪn/",
+      "cefr": "A2",
+      "imageNodeId": "45:914"
+    },
+    {
+      "kind": "card",
+      "id": "article",
+      "label": "Article",
+      "ipa": "/ˈɑːrtɪkəl/",
+      "cefr": "A2",
+      "imageNodeId": "45:918"
+    },
+    {
+      "kind": "card",
+      "id": "column",
+      "label": "Column",
+      "ipa": "/ˈkɒləm/",
+      "cefr": "A2",
+      "imageNodeId": "45:922"
+    },
+    {
+      "kind": "card",
+      "id": "photograph",
+      "label": "Photograph",
+      "ipa": "/ˈfoʊtəˌɡræf/",
+      "cefr": "B1",
+      "imageNodeId": "45:926"
+    },
+    {
+      "kind": "card",
+      "id": "caption",
+      "label": "Caption",
+      "ipa": "/ˈkæpʃən/",
+      "cefr": "A2",
+      "imageNodeId": "45:930"
+    },
+    {
+      "kind": "card",
+      "id": "classified-ad",
+      "label": "Classified Ad",
+      "ipa": "/ˈklæsɪfaɪd æd/",
+      "cefr": "B1",
+      "imageNodeId": "45:934"
+    },
+    {
+      "kind": "card",
+      "id": "editorial",
+      "label": "Editorial",
+      "ipa": "/ˌɛdɪˈtɔːriəl/",
+      "cefr": "A2",
+      "imageNodeId": "45:938"
+    },
+    {
+      "kind": "card",
+      "id": "front-page",
+      "label": "Front Page",
+      "ipa": "/frʌnt peɪdʒ/",
+      "cefr": "B1",
+      "imageNodeId": "45:942"
+    },
+    {
+      "kind": "card",
+      "id": "back-page",
+      "label": "Back Page",
+      "ipa": "/bæk peɪdʒ/",
+      "cefr": "B1",
+      "imageNodeId": "45:946"
+    },
+    {
+      "kind": "card",
+      "id": "reporter",
+      "label": "Reporter",
+      "ipa": "/rɪˈpɔːrtər/",
+      "cefr": "A2",
+      "imageNodeId": "45:955"
+    },
+    {
+      "kind": "card",
+      "id": "editor",
+      "label": "Editor",
+      "ipa": "/ˈɛdɪtər/",
+      "cefr": "A2",
+      "imageNodeId": "45:959"
+    },
+    {
+      "kind": "card",
+      "id": "photographer",
+      "label": "Photographer",
+      "ipa": "/fəˈtɒɡrəfər/",
+      "cefr": "B1",
+      "imageNodeId": "45:963"
+    },
+    {
+      "kind": "card",
+      "id": "columnist",
+      "label": "Columnist",
+      "ipa": "/ˈkɒləmɪst/",
+      "cefr": "A2",
+      "imageNodeId": "45:967"
+    },
+    {
+      "kind": "card",
+      "id": "cartoonist",
+      "label": "Cartoonist",
+      "ipa": "/kɑːrˈtuːnɪst/",
+      "cefr": "B1",
+      "imageNodeId": "45:971"
+    },
+    {
+      "kind": "card",
+      "id": "proofreader",
+      "label": "Proofreader",
+      "ipa": "/ˈpruːfˌriːdər/",
+      "cefr": "B1",
+      "imageNodeId": "45:975"
+    },
+    {
+      "kind": "card",
+      "id": "copy-editor",
+      "label": "Copy Editor",
+      "ipa": "/ˈkɒpi ˈɛdɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "45:979"
+    },
+    {
+      "kind": "card",
+      "id": "correspondent",
+      "label": "Correspondent",
+      "ipa": "/ˌkɒrɪˈspɒndənt/",
+      "cefr": "B1",
+      "imageNodeId": "45:983"
+    },
+    {
+      "kind": "card",
+      "id": "intern",
+      "label": "Intern",
+      "ipa": "/ˈɪntɜːrn/",
+      "cefr": "A2",
+      "imageNodeId": "45:987"
+    },
+    {
+      "kind": "card",
+      "id": "publisher",
+      "label": "Publisher",
+      "ipa": "/ˈpʌblɪʃər/",
+      "cefr": "A2",
+      "imageNodeId": "45:991"
+    },
+    {
+      "kind": "card",
+      "id": "press-pass",
+      "label": "Press Pass",
+      "ipa": "/prɛs pæs/",
+      "cefr": "B1",
+      "imageNodeId": "45:1000"
+    },
+    {
+      "kind": "card",
+      "id": "notebook",
+      "label": "Notebook",
+      "ipa": "/ˈnoʊtˌbʊk/",
+      "cefr": "A2",
+      "imageNodeId": "45:1004"
+    },
+    {
+      "kind": "card",
+      "id": "pen",
+      "label": "Pen",
+      "ipa": "/pɛn/",
+      "cefr": "A2",
+      "imageNodeId": "45:1008"
+    },
+    {
+      "kind": "card",
+      "id": "voice-recorder",
+      "label": "Voice Recorder",
+      "ipa": "/vɔɪs rɪˈkɔːrdər/",
+      "cefr": "B1",
+      "imageNodeId": "45:1012"
+    },
+    {
+      "kind": "card",
+      "id": "camera",
+      "label": "Camera",
+      "ipa": "/ˈkæmərə/",
+      "cefr": "A2",
+      "imageNodeId": "45:1016"
+    },
+    {
+      "kind": "card",
+      "id": "laptop",
+      "label": "Laptop",
+      "ipa": "/ˈlæpˌtɒp/",
+      "cefr": "A2",
+      "imageNodeId": "45:1020"
+    },
+    {
+      "kind": "card",
+      "id": "microphone",
+      "label": "Microphone",
+      "ipa": "/ˈmaɪkrəˌfoʊn/",
+      "cefr": "B1",
+      "imageNodeId": "45:1024"
+    },
+    {
+      "kind": "card",
+      "id": "tripod",
+      "label": "Tripod",
+      "ipa": "/ˈtraɪˌpɒd/",
+      "cefr": "A2",
+      "imageNodeId": "45:1028"
+    },
+    {
+      "kind": "card",
+      "id": "press-release",
+      "label": "Press Release",
+      "ipa": "/prɛs rɪˈliːs/",
+      "cefr": "B1",
+      "imageNodeId": "45:1032"
+    },
+    {
+      "kind": "card",
+      "id": "interview-notes",
+      "label": "Interview Notes",
+      "ipa": "/ˈɪntərˌvjuː noʊts/",
+      "cefr": "B2",
+      "imageNodeId": "45:1036"
+    },
+    {
+      "kind": "card",
+      "id": "draft",
+      "label": "Draft",
+      "ipa": "/dræft/",
+      "cefr": "A2",
+      "imageNodeId": "45:1045"
+    },
+    {
+      "kind": "card",
+      "id": "deadline",
+      "label": "Deadline",
+      "ipa": "/ˈdɛdˌlaɪn/",
+      "cefr": "A2",
+      "imageNodeId": "45:1049"
+    },
+    {
+      "kind": "card",
+      "id": "layout",
+      "label": "Layout",
+      "ipa": "/ˈleɪˌaʊt/",
+      "cefr": "A2",
+      "imageNodeId": "45:1053"
+    },
+    {
+      "kind": "card",
+      "id": "proof",
+      "label": "Proof",
+      "ipa": "/pruːf/",
+      "cefr": "A2",
+      "imageNodeId": "45:1057"
+    },
+    {
+      "kind": "card",
+      "id": "printing-press",
+      "label": "Printing Press",
+      "ipa": "/ˈprɪntɪŋ prɛs/",
+      "cefr": "B1",
+      "imageNodeId": "45:1061"
+    },
+    {
+      "kind": "card",
+      "id": "ink",
+      "label": "Ink",
+      "ipa": "/ɪŋk/",
+      "cefr": "A2",
+      "imageNodeId": "45:1065"
+    },
+    {
+      "kind": "card",
+      "id": "paper-roll",
+      "label": "Paper Roll",
+      "ipa": "/ˈpeɪpər roʊl/",
+      "cefr": "B1",
+      "imageNodeId": "45:1069"
+    },
+    {
+      "kind": "card",
+      "id": "folding-machine",
+      "label": "Folding Machine",
+      "ipa": "/ˈfoʊldɪŋ məˈʃiːn/",
+      "cefr": "B2",
+      "imageNodeId": "45:1073"
+    },
+    {
+      "kind": "card",
+      "id": "delivery-truck",
+      "label": "Delivery Truck",
+      "ipa": "/dɪˈlɪvəri trʌk/",
+      "cefr": "B1",
+      "imageNodeId": "45:1077"
+    },
+    {
+      "kind": "card",
+      "id": "newsstand",
+      "label": "Newsstand",
+      "ipa": "/ˈnjuːzˌstænd/",
+      "cefr": "A2",
+      "imageNodeId": "45:1081"
+    },
+    {
+      "kind": "card",
+      "id": "breaking-news",
+      "label": "Breaking News",
+      "ipa": "/ˈbreɪkɪŋ njuːz/",
+      "cefr": "B1",
+      "imageNodeId": "45:1090"
+    },
+    {
+      "kind": "card",
+      "id": "feature-story",
+      "label": "Feature Story",
+      "ipa": "/ˈfiːtʃər ˈstɔːri/",
+      "cefr": "B1",
+      "imageNodeId": "45:1094"
+    },
+    {
+      "kind": "card",
+      "id": "opinion-piece",
+      "label": "Opinion Piece",
+      "ipa": "/əˈpɪnjən piːs/",
+      "cefr": "B1",
+      "imageNodeId": "45:1098"
+    },
+    {
+      "kind": "card",
+      "id": "review",
+      "label": "Review",
+      "ipa": "/rɪˈvjuː/",
+      "cefr": "A2",
+      "imageNodeId": "45:1102"
+    },
+    {
+      "kind": "card",
+      "id": "interview",
+      "label": "Interview",
+      "ipa": "/ˈɪntərˌvjuː/",
+      "cefr": "A2",
+      "imageNodeId": "45:1106"
+    },
+    {
+      "kind": "card",
+      "id": "investigation",
+      "label": "Investigation",
+      "ipa": "/ɪnˌvɛstɪˈɡeɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "45:1110"
+    },
+    {
+      "kind": "card",
+      "id": "weather-report",
+      "label": "Weather Report",
+      "ipa": "/ˈwɛðər rɪˈpɔːrt/",
+      "cefr": "B1",
+      "imageNodeId": "45:1114"
+    },
+    {
+      "kind": "card",
+      "id": "sports-score",
+      "label": "Sports Score",
+      "ipa": "/spɔːrts skɔːr/",
+      "cefr": "B1",
+      "imageNodeId": "45:1118"
+    },
+    {
+      "kind": "card",
+      "id": "obituary",
+      "label": "Obituary",
+      "ipa": "/oʊˈbɪtʃuˌɛri/",
+      "cefr": "A2",
+      "imageNodeId": "45:1122"
+    },
+    {
+      "kind": "card",
+      "id": "advertisement",
+      "label": "Advertisement",
+      "ipa": "/ˌædvərˈtaɪzmənt/",
+      "cefr": "B1",
+      "imageNodeId": "45:1126"
+    },
+    {
+      "kind": "card",
+      "id": "classified",
+      "label": "Classified",
+      "ipa": "/ˈklæsɪfaɪd/",
+      "cefr": "B1",
+      "imageNodeId": "39:4048"
+    },
+    {
+      "kind": "card",
+      "id": "cartoon",
+      "label": "Cartoon",
+      "ipa": "/kɑːrˈtuːn/",
+      "cefr": "A2",
+      "imageNodeId": "39:4052"
+    },
+    {
+      "kind": "card",
+      "id": "photo",
+      "label": "Photo",
+      "ipa": "/ˈfoʊtoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "39:4056"
+    },
+    {
+      "kind": "card",
+      "id": "journalist",
+      "label": "Journalist",
+      "ipa": "/ˈdʒɜːrnəlɪst/",
+      "cefr": "B1",
+      "imageNodeId": "39:4067"
+    },
+    {
+      "kind": "card",
+      "id": "printer",
+      "label": "Printer",
+      "ipa": "/ˈprɪntər/",
+      "cefr": "A2",
+      "imageNodeId": "39:4079"
+    },
+    {
+      "kind": "card",
+      "id": "layout-designer",
+      "label": "Layout Designer",
+      "ipa": "/ˈleɪˌaʊt dɪˈzaɪnər/",
+      "cefr": "B2",
+      "imageNodeId": "39:4083"
+    },
+    {
+      "kind": "card",
+      "id": "source",
+      "label": "Source",
+      "ipa": "/sɔːrs/",
+      "cefr": "A2",
+      "imageNodeId": "39:4091"
+    },
+    {
+      "kind": "card",
+      "id": "publish",
+      "label": "Publish",
+      "ipa": "/ˈpʌblɪʃ/",
+      "cefr": "A2",
+      "imageNodeId": "39:4102"
+    },
+    {
+      "kind": "card",
+      "id": "print",
+      "label": "Print",
+      "ipa": "/prɪnt/",
+      "cefr": "A2",
+      "imageNodeId": "39:4106"
+    },
+    {
+      "kind": "card",
+      "id": "distribute",
+      "label": "Distribute",
+      "ipa": "/dɪˈstrɪbjuːt/",
+      "cefr": "B1",
+      "imageNodeId": "39:4110"
+    },
+    {
+      "kind": "card",
+      "id": "subscribe",
+      "label": "Subscribe",
+      "ipa": "/səbˈskraɪb/",
+      "cefr": "A2",
+      "imageNodeId": "39:4114"
+    },
+    {
+      "kind": "card",
+      "id": "proofread",
+      "label": "Proofread",
+      "ipa": "/ˈpruːfˌriːd/",
+      "cefr": "A2",
+      "imageNodeId": "39:4118"
+    },
+    {
+      "kind": "card",
+      "id": "archive",
+      "label": "Archive",
+      "ipa": "/ˈɑːrkaɪv/",
+      "cefr": "A2",
+      "imageNodeId": "39:4130"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "568:3",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "568:5",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1+ · Topic: The Newspaper Office",
+          "depth": 1,
+          "name": "Level: B1+ · Topic: The Newspaper Office"
+        },
+        {
+          "text": "Extra! Extra! — A Morning at the Newspaper Office\n\nThe newsroom at the Daily Herald is already busy at seven in the morning. Reporters sit at computer terminals, typing articles before the deadline. A telephone rings every few minutes. Coffee cups cover every desk. The wall clock reminds everyone that time is running out.\n\nAt the centre of the room, the editor sits at her desk, reading the morning's draft articles on her screen. A whiteboard behind her lists the day's stories. A pinboard displays photographs, maps, and interview notes. She must decide which story goes on the front page and write the headline — the large, bold title that makes people want to read more.\n\nEach person in the newsroom has a different role. A reporter goes out to find news, carrying a notebook, a pen, a voice recorder, and a press pass. A photographer takes pictures to go with the articles. Each photograph needs a caption — a short sentence explaining what the picture shows. A columnist writes a regular column giving their personal opinion. A copy editor checks every article for spelling and grammar mistakes before it goes to print. A proofreader does a final check on the proof — the last version before printing.\n\nThe newspaper has many different sections. The front page carries the most important stories — often breaking news that happened overnight. Inside, there are feature stories (longer, more detailed articles), opinion pieces, reviews of books or films, an editorial written by the editor, sports scores, a weather report, interviews with interesting people, investigation reports, classified ads, and obituaries.\n\nA correspondent reports from another city or country. An intern — usually a young journalism student — helps with small tasks and learns the job. A cartoonist draws funny pictures about the news.\n\nOnce the layout is finished, the pages go to the printing press. Ink rolls across huge paper rolls, and the folding machine folds each newspaper. By early morning, a delivery truck takes the newspapers to every newsstand in the city.\n\nIn today's world, many people read news on their phones. But the skills of journalism — asking questions, checking facts, meeting deadlines, writing clearly — are the same whether the article appears on paper or on a screen.",
+          "depth": 1,
+          "name": "Extra! Extra! — A Morning at the Newspaper Office The newsroom at the Daily Herald is already busy at seven in the morning. Reporters sit at computer terminals, typing articles before the deadline. A telephone rings every few minutes. Coffee cups cover every desk. The wall clock reminds everyone that time is running out. At the centre of the room, the editor sits at her desk, reading the morning's draft articles on her screen. A whiteboard behind her lists the day's stories. A pinboard displays photographs, maps, and interview notes. She must decide which story goes on the front page and write the headline — the large, bold title that makes people want to read more. Each person in the newsroom has a different role. A reporter goes out to find news, carrying a notebook, a pen, a voice recorder, and a press pass. A photographer takes pictures to go with the articles. Each photograph needs a caption — a short sentence explaining what the picture shows. A columnist writes a regular column giving their personal opinion. A copy editor checks every article for spelling and grammar mistakes before it goes to print. A proofreader does a final check on the proof — the last version before printing. The newspaper has many different sections. The front page carries the most important stories — often breaking news that happened overnight. Inside, there are feature stories (longer, more detailed articles), opinion pieces, reviews of books or films, an editorial written by the editor, sports scores, a weather report, interviews with interesting people, investigation reports, classified ads, and obituaries. A correspondent reports from another city or country. An intern — usually a young journalism student — helps with small tasks and learns the job. A cartoonist draws funny pictures about the news. Once the layout is finished, the pages go to the printing press. Ink rolls across huge paper rolls, and the folding machine folds each newspaper. By early morning, a delivery truck takes the newspapers to every newsstand in the city. In today's world, many people read news on their phones. But the skills of journalism — asking questions, checking facts, meeting deadlines, writing clearly — are the same whether the article appears on paper or on a screen."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What does the editor do at the newspaper office? Describe her responsibilities.",
+          "depth": 1,
+          "name": "1. What does the editor do at the newspaper office? Describe her responsibilities."
+        },
+        {
+          "text": "2. What equipment does a reporter carry when going out to find a story?",
+          "depth": 1,
+          "name": "2. What equipment does a reporter carry when going out to find a story?"
+        },
+        {
+          "text": "3. Name four different types of content you can find in a newspaper.",
+          "depth": 1,
+          "name": "3. Name four different types of content you can find in a newspaper."
+        },
+        {
+          "text": "4. What is the difference between a copy editor and a proofreader?",
+          "depth": 1,
+          "name": "4. What is the difference between a copy editor and a proofreader?"
+        },
+        {
+          "text": "5. The passage says journalism skills are 'the same whether the article appears on paper or on a screen.' Do you agree? Why?",
+          "depth": 1,
+          "name": "5. The passage says journalism skills are 'the same whether the article appears on paper or on a screen.' Do you agree? Why?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "568:18",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "hit the headlines",
+          "depth": 2,
+          "name": "hit the headlines"
+        },
+        {
+          "text": "become big news",
+          "depth": 2,
+          "name": "become big news"
+        },
+        {
+          "text": "\"The corruption story hit the headlines after the correspondent published her front page article.\"",
+          "depth": 2,
+          "name": "\"The corruption story hit the headlines after the correspondent published her front page article.\""
+        },
+        {
+          "text": "hot off the press",
+          "depth": 2,
+          "name": "hot off the press"
+        },
+        {
+          "text": "just printed or published; very new",
+          "depth": 2,
+          "name": "just printed or published; very new"
+        },
+        {
+          "text": "\"The morning edition is hot off the press — grab a copy from the newsroom before they're gone.\"",
+          "depth": 2,
+          "name": "\"The morning edition is hot off the press — grab a copy from the newsroom before they're gone.\""
+        },
+        {
+          "text": "read between the lines",
+          "depth": 2,
+          "name": "read between the lines"
+        },
+        {
+          "text": "understand a hidden meaning that isn't directly stated",
+          "depth": 2,
+          "name": "understand a hidden meaning that isn't directly stated"
+        },
+        {
+          "text": "\"The editorial didn't criticise the mayor directly, but if you read between the lines, the message was clear.\"",
+          "depth": 2,
+          "name": "\"The editorial didn't criticise the mayor directly, but if you read between the lines, the message was clear.\""
+        },
+        {
+          "text": "bury the story",
+          "depth": 2,
+          "name": "bury the story"
+        },
+        {
+          "text": "hide important news by placing it in an unimportant position",
+          "depth": 2,
+          "name": "hide important news by placing it in an unimportant position"
+        },
+        {
+          "text": "\"The editor buried the story on the back page, beneath the classified ads.\"",
+          "depth": 2,
+          "name": "\"The editor buried the story on the back page, beneath the classified ads.\""
+        },
+        {
+          "text": "make the front page",
+          "depth": 2,
+          "name": "make the front page"
+        },
+        {
+          "text": "be important enough to appear on the first page",
+          "depth": 2,
+          "name": "be important enough to appear on the first page"
+        },
+        {
+          "text": "\"The reporter hoped her investigation would make the front page, not just a small column inside.\"",
+          "depth": 2,
+          "name": "\"The reporter hoped her investigation would make the front page, not just a small column inside.\""
+        },
+        {
+          "text": "off the record",
+          "depth": 2,
+          "name": "off the record"
+        },
+        {
+          "text": "said privately; not to be published or made public",
+          "depth": 2,
+          "name": "said privately; not to be published or made public"
+        },
+        {
+          "text": "\"The politician told the reporter, off the record, that the policy had failed — but nothing could be printed.\"",
+          "depth": 2,
+          "name": "\"The politician told the reporter, off the record, that the policy had failed — but nothing could be printed.\""
+        },
+        {
+          "text": "a scoop",
+          "depth": 2,
+          "name": "a scoop"
+        },
+        {
+          "text": "an exclusive story published before other newspapers",
+          "depth": 2,
+          "name": "an exclusive story published before other newspapers"
+        },
+        {
+          "text": "\"The photographer got the scoop — a photograph that no other paper had.\"",
+          "depth": 2,
+          "name": "\"The photographer got the scoop — a photograph that no other paper had.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "568:50",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A morning meeting in the newsroom between an editor and reporters",
+          "depth": 1,
+          "name": "Scene: A morning meeting in the newsroom between an editor and reporters"
+        },
+        {
+          "text": "Editor:",
+          "depth": 2,
+          "name": "Editor:"
+        },
+        {
+          "text": "Right, what do we have for today's front page? The headline needs to be strong — we go to print at three.",
+          "depth": 2,
+          "name": "Right, what do we have for today's front page? The headline needs to be strong — we go to print at three."
+        },
+        {
+          "text": "Reporter 1:",
+          "depth": 2,
+          "name": "Reporter 1:"
+        },
+        {
+          "text": "I've got an exclusive from the correspondent in the capital. The article's almost done — I just need a photograph.",
+          "depth": 2,
+          "name": "I've got an exclusive from the correspondent in the capital. The article's almost done — I just need a photograph."
+        },
+        {
+          "text": "Editor:",
+          "depth": 2,
+          "name": "Editor:"
+        },
+        {
+          "text": "Talk to the photographer. Make sure the caption is accurate — the proofreader caught two errors yesterday.",
+          "depth": 2,
+          "name": "Talk to the photographer. Make sure the caption is accurate — the proofreader caught two errors yesterday."
+        },
+        {
+          "text": "Reporter 2:",
+          "depth": 2,
+          "name": "Reporter 2:"
+        },
+        {
+          "text": "I've finished the column on local transport. Where do you want it — page four?",
+          "depth": 2,
+          "name": "I've finished the column on local transport. Where do you want it — page four?"
+        },
+        {
+          "text": "Editor:",
+          "depth": 2,
+          "name": "Editor:"
+        },
+        {
+          "text": "Page three, above the classified ads. The copy editor has already checked it, so it's ready for layout.",
+          "depth": 2,
+          "name": "Page three, above the classified ads. The copy editor has already checked it, so it's ready for layout."
+        },
+        {
+          "text": "Reporter 1:",
+          "depth": 2,
+          "name": "Reporter 1:"
+        },
+        {
+          "text": "The politician called again. She wants to give us a quote, but only off the record.",
+          "depth": 2,
+          "name": "The politician called again. She wants to give us a quote, but only off the record."
+        },
+        {
+          "text": "Editor:",
+          "depth": 2,
+          "name": "Editor:"
+        },
+        {
+          "text": "Then it's useless. We need something we can print. Did the intern finish checking the facts?",
+          "depth": 2,
+          "name": "Then it's useless. We need something we can print. Did the intern finish checking the facts?"
+        },
+        {
+          "text": "Intern:",
+          "depth": 2,
+          "name": "Intern:"
+        },
+        {
+          "text": "Yes — I verified every source using my notebook and the voice recorder from yesterday's interview.",
+          "depth": 2,
+          "name": "Yes — I verified every source using my notebook and the voice recorder from yesterday's interview."
+        },
+        {
+          "text": "Editor:",
+          "depth": 2,
+          "name": "Editor:"
+        },
+        {
+          "text": "Good. What about the editorial? The publisher wants it to address the education budget.",
+          "depth": 2,
+          "name": "Good. What about the editorial? The publisher wants it to address the education budget."
+        },
+        {
+          "text": "Columnist:",
+          "depth": 2,
+          "name": "Columnist:"
+        },
+        {
+          "text": "I've drafted it. The cartoonist is working on an illustration to go next to it on the back page.",
+          "depth": 2,
+          "name": "I've drafted it. The cartoonist is working on an illustration to go next to it on the back page."
+        },
+        {
+          "text": "Editor:",
+          "depth": 2,
+          "name": "Editor:"
+        },
+        {
+          "text": "Perfect. Check the pinboard for any updates, then start writing. We have six hours until the press pass deadline.",
+          "depth": 2,
+          "name": "Perfect. Check the pinboard for any updates, then start writing. We have six hours until the press pass deadline."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "568:88",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I read an interesting news in the newspaper this morning.\"",
+          "depth": 2,
+          "name": "❌ \"I read an interesting news in the newspaper this morning.\""
+        },
+        {
+          "text": "✅ \"I read an interesting article/story in the newspaper this morning.\"",
+          "depth": 2,
+          "name": "✅ \"I read an interesting article/story in the newspaper this morning.\""
+        },
+        {
+          "text": "'News' is uncountable — no 'a/an' and no plural. Use 'an article', 'a story', 'a piece of news', or 'a report' when talking about one item. 'The news is good today.' 'I read two articles in the newspaper.'",
+          "depth": 2,
+          "name": "'News' is uncountable — no 'a/an' and no plural. Use 'an article', 'a story', 'a piece of news', or 'a report' when talking about one item. 'The news is good today.' 'I read two articles in the newspaper.'"
+        },
+        {
+          "text": "❌ \"She works like a reporter for the local paper.\"",
+          "depth": 2,
+          "name": "❌ \"She works like a reporter for the local paper.\""
+        },
+        {
+          "text": "✅ \"She works as a reporter for the local paper.\"",
+          "depth": 2,
+          "name": "✅ \"She works as a reporter for the local paper.\""
+        },
+        {
+          "text": "'As' describes a role or job: 'She works as a reporter.' 'Like' means 'similar to': 'She works like a reporter' (she's not actually a reporter but works in a similar way). This difference is important: 'as a teacher' = she IS a teacher; 'like a teacher' = she acts similar to one.",
+          "depth": 2,
+          "name": "'As' describes a role or job: 'She works as a reporter.' 'Like' means 'similar to': 'She works like a reporter' (she's not actually a reporter but works in a similar way). This difference is important: 'as a teacher' = she IS a teacher; 'like a teacher' = she acts similar to one."
+        },
+        {
+          "text": "❌ \"The journalist made an interview with the mayor.\"",
+          "depth": 2,
+          "name": "❌ \"The journalist made an interview with the mayor.\""
+        },
+        {
+          "text": "✅ \"The journalist did/conducted an interview with the mayor.\"",
+          "depth": 2,
+          "name": "✅ \"The journalist did/conducted an interview with the mayor.\""
+        },
+        {
+          "text": "We 'do', 'conduct', or 'carry out' an interview — not 'make' an interview. Common collocations: 'do an interview', 'write an article', 'take a photograph', 'meet a deadline.' Learning these word partnerships helps your English sound natural.",
+          "depth": 2,
+          "name": "We 'do', 'conduct', or 'carry out' an interview — not 'make' an interview. Common collocations: 'do an interview', 'write an article', 'take a photograph', 'meet a deadline.' Learning these word partnerships helps your English sound natural."
+        },
+        {
+          "text": "❌ \"He said me that the story was on the front page.\"",
+          "depth": 2,
+          "name": "❌ \"He said me that the story was on the front page.\""
+        },
+        {
+          "text": "✅ \"He told me that the story was on the front page.\" / \"He said that the story was on the front page.\"",
+          "depth": 2,
+          "name": "✅ \"He told me that the story was on the front page.\" / \"He said that the story was on the front page.\""
+        },
+        {
+          "text": "'Say' + (to someone) + that: 'He said (to me) that...' 'Tell' + person + that: 'He told me that...' Never 'said me' or 'told to me.' 'Say' focuses on the words; 'tell' focuses on the listener.",
+          "depth": 2,
+          "name": "'Say' + (to someone) + that: 'He said (to me) that...' 'Tell' + person + that: 'He told me that...' Never 'said me' or 'told to me.' 'Say' focuses on the words; 'tell' focuses on the listener."
+        },
+        {
+          "text": "❌ \"The newspaper is published since 1952.\"",
+          "depth": 2,
+          "name": "❌ \"The newspaper is published since 1952.\""
+        },
+        {
+          "text": "✅ \"The newspaper has been published since 1952.\"",
+          "depth": 2,
+          "name": "✅ \"The newspaper has been published since 1952.\""
+        },
+        {
+          "text": "When something started in the past and continues now, use present perfect: 'has been published since 1952.' 'Since' + point in time always needs present perfect (simple or continuous). 'The paper has been running since 1952.' 'She has worked here since March.'",
+          "depth": 2,
+          "name": "When something started in the past and continues now, use present perfect: 'has been published since 1952.' 'Since' + point in time always needs present perfect (simple or continuous). 'The paper has been running since 1952.' 'She has worked here since March.'"
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "568:112",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Journalism vocabulary — many words have Latin/French origins and follow regular -tion, -ist patterns.",
+          "depth": 1,
+          "name": "Journalism vocabulary — many words have Latin/French origins and follow regular -tion, -ist patterns."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "publish",
+          "depth": 2,
+          "name": "publish"
+        },
+        {
+          "text": "publication / publisher",
+          "depth": 2,
+          "name": "publication / publisher"
+        },
+        {
+          "text": "publish",
+          "depth": 2,
+          "name": "publish"
+        },
+        {
+          "text": "published / unpublished",
+          "depth": 2,
+          "name": "published / unpublished"
+        },
+        {
+          "text": "edit",
+          "depth": 2,
+          "name": "edit"
+        },
+        {
+          "text": "edition / editor / editorial",
+          "depth": 2,
+          "name": "edition / editor / editorial"
+        },
+        {
+          "text": "edit",
+          "depth": 2,
+          "name": "edit"
+        },
+        {
+          "text": "editorial / edited",
+          "depth": 2,
+          "name": "editorial / edited"
+        },
+        {
+          "text": "report",
+          "depth": 2,
+          "name": "report"
+        },
+        {
+          "text": "report / reporter",
+          "depth": 2,
+          "name": "report / reporter"
+        },
+        {
+          "text": "report",
+          "depth": 2,
+          "name": "report"
+        },
+        {
+          "text": "reported",
+          "depth": 2,
+          "name": "reported"
+        },
+        {
+          "text": "investigate",
+          "depth": 2,
+          "name": "investigate"
+        },
+        {
+          "text": "investigation / investigator",
+          "depth": 2,
+          "name": "investigation / investigator"
+        },
+        {
+          "text": "investigate",
+          "depth": 2,
+          "name": "investigate"
+        },
+        {
+          "text": "investigative",
+          "depth": 2,
+          "name": "investigative"
+        },
+        {
+          "text": "circulate",
+          "depth": 2,
+          "name": "circulate"
+        },
+        {
+          "text": "circulation",
+          "depth": 2,
+          "name": "circulation"
+        },
+        {
+          "text": "circulate",
+          "depth": 2,
+          "name": "circulate"
+        },
+        {
+          "text": "circulating",
+          "depth": 2,
+          "name": "circulating"
+        },
+        {
+          "text": "advertise",
+          "depth": 2,
+          "name": "advertise"
+        },
+        {
+          "text": "advertisement / advertiser",
+          "depth": 2,
+          "name": "advertisement / advertiser"
+        },
+        {
+          "text": "advertise",
+          "depth": 2,
+          "name": "advertise"
+        },
+        {
+          "text": "advertised",
+          "depth": 2,
+          "name": "advertised"
+        },
+        {
+          "text": "subscribe",
+          "depth": 2,
+          "name": "subscribe"
+        },
+        {
+          "text": "subscription / subscriber",
+          "depth": 2,
+          "name": "subscription / subscriber"
+        },
+        {
+          "text": "subscribe",
+          "depth": 2,
+          "name": "subscribe"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "correspond",
+          "depth": 2,
+          "name": "correspond"
+        },
+        {
+          "text": "correspondence / correspondent",
+          "depth": 2,
+          "name": "correspondence / correspondent"
+        },
+        {
+          "text": "correspond",
+          "depth": 2,
+          "name": "correspond"
+        },
+        {
+          "text": "corresponding",
+          "depth": 2,
+          "name": "corresponding"
+        },
+        {
+          "text": "headline",
+          "depth": 2,
+          "name": "headline"
+        },
+        {
+          "text": "headline",
+          "depth": 2,
+          "name": "headline"
+        },
+        {
+          "text": "headline",
+          "depth": 2,
+          "name": "headline"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "bias",
+          "depth": 2,
+          "name": "bias"
+        },
+        {
+          "text": "bias",
+          "depth": 2,
+          "name": "bias"
+        },
+        {
+          "text": "bias",
+          "depth": 2,
+          "name": "bias"
+        },
+        {
+          "text": "biased / unbiased",
+          "depth": 2,
+          "name": "biased / unbiased"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "568:172",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "B1+ Challenge: Reported speech, say/tell, relative pronouns, -ed/-ing adjectives.",
+          "depth": 1,
+          "name": "B1+ Challenge: Reported speech, say/tell, relative pronouns, -ed/-ing adjectives."
+        },
+        {
+          "text": "1.  The __________ is the large, bold title at the top of a newspaper story.",
+          "depth": 1,
+          "name": "1. The __________ is the large, bold title at the top of a newspaper story."
+        },
+        {
+          "text": "2.  Every article must be finished before the __________.",
+          "depth": 1,
+          "name": "2. Every article must be finished before the __________."
+        },
+        {
+          "text": "3.  A __________ is a short sentence that explains what a photograph shows.",
+          "depth": 1,
+          "name": "3. A __________ is a short sentence that explains what a photograph shows."
+        },
+        {
+          "text": "4.  The reporter carried a press __________ to show she was allowed into the building.",
+          "depth": 1,
+          "name": "4. The reporter carried a press __________ to show she was allowed into the building."
+        },
+        {
+          "text": "5.  A __________ editor checks articles for spelling and grammar mistakes.",
+          "depth": 1,
+          "name": "5. A __________ editor checks articles for spelling and grammar mistakes."
+        },
+        {
+          "text": "6.  The most important stories appear on the __________ page of the newspaper.",
+          "depth": 1,
+          "name": "6. The most important stories appear on the __________ page of the newspaper."
+        },
+        {
+          "text": "7.  A __________ writes a regular opinion column for the newspaper.",
+          "depth": 1,
+          "name": "7. A __________ writes a regular opinion column for the newspaper."
+        },
+        {
+          "text": "8.  The __________ press prints thousands of newspapers every morning.",
+          "depth": 1,
+          "name": "8. The __________ press prints thousands of newspapers every morning."
+        },
+        {
+          "text": "9.  A __________ reports news from another city or country.",
+          "depth": 1,
+          "name": "9. A __________ reports news from another city or country."
+        },
+        {
+          "text": "10. You can buy a newspaper from a __________ on the street.",
+          "depth": 1,
+          "name": "10. You can buy a newspaper from a __________ on the street."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. headline  2. deadline  3. caption  4. pass  5. copy  6. front  7. columnist  8. printing  9. correspondent  10. newsstand",
+          "depth": 2,
+          "name": "1. headline 2. deadline 3. caption 4. pass 5. copy 6. front 7. columnist 8. printing 9. correspondent 10. newsstand"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "568:190",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Broadsheets vs Tabloids",
+          "depth": 2,
+          "name": "Broadsheets vs Tabloids"
+        },
+        {
+          "text": "British newspapers are traditionally divided into broadsheets ('quality' papers like The Guardian, The Times, The Telegraph) and tabloids ('popular' papers like The Sun, the Daily Mail). Broadsheets cover politics, economics, and international affairs in depth, while tabloids focus on celebrity news, sport, and human interest stories. The distinction is cultural, not just about paper size.",
+          "depth": 2,
+          "name": "British newspapers are traditionally divided into broadsheets ('quality' papers like The Guardian, The Times, The Telegraph) and tabloids ('popular' papers like The Sun, the Daily Mail). Broadsheets cover politics, economics, and international affairs in depth, while tabloids focus on celebrity news, sport, and human interest stories. The distinction is cultural, not just about paper size."
+        },
+        {
+          "text": "Press Freedom — The Fourth Estate",
+          "depth": 2,
+          "name": "Press Freedom — The Fourth Estate"
+        },
+        {
+          "text": "The media is sometimes called 'the fourth estate' — an informal but powerful pillar of democracy alongside the executive, legislative, and judicial branches. A free press acts as a watchdog, holding governments and institutions accountable. The World Press Freedom Index ranks countries by how freely journalists can work.",
+          "depth": 2,
+          "name": "The media is sometimes called 'the fourth estate' — an informal but powerful pillar of democracy alongside the executive, legislative, and judicial branches. A free press acts as a watchdog, holding governments and institutions accountable. The World Press Freedom Index ranks countries by how freely journalists can work."
+        },
+        {
+          "text": "Headline English — A Language of Its Own",
+          "depth": 2,
+          "name": "Headline English — A Language of Its Own"
+        },
+        {
+          "text": "Newspaper headlines follow special grammar rules: present simple for past events ('PM Resigns'), infinitive for future ('Mayor to Open New Hospital'), and articles are dropped ('Man Found in River'). Understanding headline language is a specific B1+ reading skill tested in Cambridge exams.",
+          "depth": 2,
+          "name": "Newspaper headlines follow special grammar rules: present simple for past events ('PM Resigns'), infinitive for future ('Mayor to Open New Hospital'), and articles are dropped ('Man Found in River'). Understanding headline language is a specific B1+ reading skill tested in Cambridge exams."
+        },
+        {
+          "text": "Fake News and Media Literacy",
+          "depth": 2,
+          "name": "Fake News and Media Literacy"
+        },
+        {
+          "text": "The term 'fake news' entered mainstream vocabulary around 2016. Media literacy — the ability to critically evaluate news sources, recognise bias, and distinguish fact from opinion — is now taught in schools across Europe. The BBC's 'Reality Check' and Full Fact are examples of fact-checking services.",
+          "depth": 2,
+          "name": "The term 'fake news' entered mainstream vocabulary around 2016. Media literacy — the ability to critically evaluate news sources, recognise bias, and distinguish fact from opinion — is now taught in schools across Europe. The BBC's 'Reality Check' and Full Fact are examples of fact-checking services."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "568:206",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "B1+ journalism vocabulary — includes exam-relevant collocations.",
+          "depth": 1,
+          "name": "B1+ journalism vocabulary — includes exam-relevant collocations."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "CEFR",
+          "depth": 2,
+          "name": "CEFR"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "headline",
+          "depth": 2,
+          "name": "headline"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1",
+          "depth": 2,
+          "name": "B1"
+        },
+        {
+          "text": "front-page ~, ~ news, make ~s",
+          "depth": 2,
+          "name": "front-page ~, ~ news, make ~s"
+        },
+        {
+          "text": "deadline",
+          "depth": 2,
+          "name": "deadline"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1",
+          "depth": 2,
+          "name": "B1"
+        },
+        {
+          "text": "meet a ~, miss a ~, tight ~",
+          "depth": 2,
+          "name": "meet a ~, miss a ~, tight ~"
+        },
+        {
+          "text": "editorial",
+          "depth": 2,
+          "name": "editorial"
+        },
+        {
+          "text": "n/adj",
+          "depth": 2,
+          "name": "n/adj"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "~ meeting, ~ team, write an ~",
+          "depth": 2,
+          "name": "~ meeting, ~ team, write an ~"
+        },
+        {
+          "text": "correspondent",
+          "depth": 2,
+          "name": "correspondent"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "foreign ~, war ~, ~ report",
+          "depth": 2,
+          "name": "foreign ~, war ~, ~ report"
+        },
+        {
+          "text": "circulation",
+          "depth": 2,
+          "name": "circulation"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "daily ~, ~ figures, in ~",
+          "depth": 2,
+          "name": "daily ~, ~ figures, in ~"
+        },
+        {
+          "text": "journalist",
+          "depth": 2,
+          "name": "journalist"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1",
+          "depth": 2,
+          "name": "B1"
+        },
+        {
+          "text": "investigative ~, freelance ~",
+          "depth": 2,
+          "name": "investigative ~, freelance ~"
+        },
+        {
+          "text": "bias",
+          "depth": 2,
+          "name": "bias"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "political ~, media ~, ~ towards",
+          "depth": 2,
+          "name": "political ~, media ~, ~ towards"
+        },
+        {
+          "text": "columnist",
+          "depth": 2,
+          "name": "columnist"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B2",
+          "depth": 2,
+          "name": "B2"
+        },
+        {
+          "text": "newspaper ~, opinion ~, weekly ~",
+          "depth": 2,
+          "name": "newspaper ~, opinion ~, weekly ~"
+        },
+        {
+          "text": "readership",
+          "depth": 2,
+          "name": "readership"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B2",
+          "depth": 2,
+          "name": "B2"
+        },
+        {
+          "text": "~ figures, target ~, declining ~",
+          "depth": 2,
+          "name": "~ figures, target ~, declining ~"
+        },
+        {
+          "text": "anonymous",
+          "depth": 2,
+          "name": "anonymous"
+        },
+        {
+          "text": "adj",
+          "depth": 2,
+          "name": "adj"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "~ source, remain ~, ~ tip-off",
+          "depth": 2,
+          "name": "~ source, remain ~, ~ tip-off"
+        }
+      ]
+    }
+  }
+}

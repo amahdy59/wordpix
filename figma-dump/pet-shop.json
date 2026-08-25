@@ -1,0 +1,2034 @@
+{
+  "unitId": "pet-shop",
+  "name": "The Pet Shop",
+  "subtopics": [
+    {
+      "id": "popular-pets",
+      "title": "Popular Pets",
+      "wordIds": [
+        "dog",
+        "cat",
+        "hamster",
+        "rabbit",
+        "goldfish",
+        "parrot",
+        "turtle",
+        "guinea-pig",
+        "canary",
+        "gerbil"
+      ]
+    },
+    {
+      "id": "dog-breeds",
+      "title": "Dog Breeds",
+      "wordIds": [
+        "golden-retriever",
+        "poodle",
+        "bulldog",
+        "german-shepherd",
+        "labrador",
+        "beagle",
+        "chihuahua",
+        "dalmatian",
+        "husky",
+        "pug"
+      ]
+    },
+    {
+      "id": "cat-breeds",
+      "title": "Cat Breeds",
+      "wordIds": [
+        "persian",
+        "siamese",
+        "maine-coon",
+        "tabby",
+        "bengal",
+        "ragdoll",
+        "british-shorthair",
+        "sphynx",
+        "abyssinian",
+        "scottish-fold"
+      ]
+    },
+    {
+      "id": "pet-food-treats",
+      "title": "Pet Food & Treats",
+      "wordIds": [
+        "dog-food",
+        "cat-food",
+        "fish-food",
+        "bird-seed",
+        "hay",
+        "treats",
+        "water-bowl",
+        "food-bowl",
+        "feeding-bottle",
+        "chew-toy"
+      ]
+    },
+    {
+      "id": "pet-accessories",
+      "title": "Pet Accessories",
+      "wordIds": [
+        "collar",
+        "leash",
+        "harness",
+        "pet-bed",
+        "cage",
+        "aquarium",
+        "litter-box",
+        "cat-tree",
+        "pet-carrier",
+        "name-tag"
+      ]
+    },
+    {
+      "id": "pet-care-items",
+      "title": "Pet Care Items",
+      "wordIds": [
+        "pet-shampoo",
+        "brush",
+        "nail-clipper",
+        "flea-treatment",
+        "pet-vitamins",
+        "pooper-scooper",
+        "training-pads",
+        "pet-towel",
+        "dental-chew",
+        "scratching-post",
+        "parakeet",
+        "kitten",
+        "puppy",
+        "fish-flakes",
+        "birdseed",
+        "bone",
+        "sweater",
+        "bandana",
+        "bell",
+        "bow",
+        "raincoat",
+        "booties",
+        "bird-cage",
+        "hamster-cage",
+        "dog-bed",
+        "terrarium",
+        "fish-bowl",
+        "kennel",
+        "rabbit-hutch",
+        "nesting-box",
+        "shampoo",
+        "flea-collar",
+        "litter",
+        "poop-bag",
+        "vaccination-card",
+        "microchip",
+        "display-window",
+        "grooming-station",
+        "adoption-board",
+        "cash-register",
+        "shelf",
+        "tank",
+        "price-tag",
+        "shopping-basket",
+        "poster",
+        "toy-rack",
+        "fish",
+        "bowl",
+        "toy",
+        "feed",
+        "walk",
+        "groom",
+        "bathe",
+        "train",
+        "play",
+        "pet",
+        "adopt"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "dog",
+      "label": "Dog",
+      "ipa": "/dɔːɡ/",
+      "cefr": "A1",
+      "imageNodeId": "44:3153"
+    },
+    {
+      "kind": "card",
+      "id": "cat",
+      "label": "Cat",
+      "ipa": "/kæt/",
+      "cefr": "A1",
+      "imageNodeId": "44:3157"
+    },
+    {
+      "kind": "card",
+      "id": "hamster",
+      "label": "Hamster",
+      "ipa": "/ˈhæmstər/",
+      "cefr": "A1",
+      "imageNodeId": "44:3161"
+    },
+    {
+      "kind": "card",
+      "id": "rabbit",
+      "label": "Rabbit",
+      "ipa": "/ˈræbɪt/",
+      "cefr": "A1",
+      "imageNodeId": "44:3165"
+    },
+    {
+      "kind": "card",
+      "id": "goldfish",
+      "label": "Goldfish",
+      "ipa": "/ˈɡoʊldfɪʃ/",
+      "cefr": "A1",
+      "imageNodeId": "44:3169"
+    },
+    {
+      "kind": "card",
+      "id": "parrot",
+      "label": "Parrot",
+      "ipa": "/ˈpærət/",
+      "cefr": "A1",
+      "imageNodeId": "44:3173"
+    },
+    {
+      "kind": "card",
+      "id": "turtle",
+      "label": "Turtle",
+      "ipa": "/ˈtɜːrtəl/",
+      "cefr": "A1",
+      "imageNodeId": "44:3177"
+    },
+    {
+      "kind": "card",
+      "id": "guinea-pig",
+      "label": "Guinea Pig",
+      "ipa": "/ˈɡɪni pɪɡ/",
+      "cefr": "A2",
+      "imageNodeId": "44:3181"
+    },
+    {
+      "kind": "card",
+      "id": "canary",
+      "label": "Canary",
+      "ipa": "/kəˈnɛri/",
+      "cefr": "A1",
+      "imageNodeId": "44:3185"
+    },
+    {
+      "kind": "card",
+      "id": "gerbil",
+      "label": "Gerbil",
+      "ipa": "/ˈdʒɜːrbɪl/",
+      "cefr": "A1",
+      "imageNodeId": "44:3189"
+    },
+    {
+      "kind": "card",
+      "id": "golden-retriever",
+      "label": "Golden Retriever",
+      "ipa": "/ˈɡoʊldən rɪˈtriːvər/",
+      "cefr": "B1",
+      "imageNodeId": "44:3198"
+    },
+    {
+      "kind": "card",
+      "id": "poodle",
+      "label": "Poodle",
+      "ipa": "/ˈpuːdəl/",
+      "cefr": "A1",
+      "imageNodeId": "44:3202"
+    },
+    {
+      "kind": "card",
+      "id": "bulldog",
+      "label": "Bulldog",
+      "ipa": "/ˈbʊldɔːɡ/",
+      "cefr": "A1",
+      "imageNodeId": "44:3206"
+    },
+    {
+      "kind": "card",
+      "id": "german-shepherd",
+      "label": "German Shepherd",
+      "ipa": "/ˈdʒɜːrmən ˈʃɛpərd/",
+      "cefr": "B1",
+      "imageNodeId": "44:3210"
+    },
+    {
+      "kind": "card",
+      "id": "labrador",
+      "label": "Labrador",
+      "ipa": "/ˈlæbrədɔːr/",
+      "cefr": "A1",
+      "imageNodeId": "44:3214"
+    },
+    {
+      "kind": "card",
+      "id": "beagle",
+      "label": "Beagle",
+      "ipa": "/ˈbiːɡəl/",
+      "cefr": "A1",
+      "imageNodeId": "44:3218"
+    },
+    {
+      "kind": "card",
+      "id": "chihuahua",
+      "label": "Chihuahua",
+      "ipa": "/tʃɪˈwɑːwə/",
+      "cefr": "A1",
+      "imageNodeId": "44:3222"
+    },
+    {
+      "kind": "card",
+      "id": "dalmatian",
+      "label": "Dalmatian",
+      "ipa": "/dælˈmeɪʃən/",
+      "cefr": "A1",
+      "imageNodeId": "44:3226"
+    },
+    {
+      "kind": "card",
+      "id": "husky",
+      "label": "Husky",
+      "ipa": "/ˈhʌski/",
+      "cefr": "A1",
+      "imageNodeId": "44:3230"
+    },
+    {
+      "kind": "card",
+      "id": "pug",
+      "label": "Pug",
+      "ipa": "/pʌɡ/",
+      "cefr": "A1",
+      "imageNodeId": "44:3234"
+    },
+    {
+      "kind": "card",
+      "id": "persian",
+      "label": "Persian",
+      "ipa": "/ˈpɜːrʒən/",
+      "cefr": "A1",
+      "imageNodeId": "44:3243"
+    },
+    {
+      "kind": "card",
+      "id": "siamese",
+      "label": "Siamese",
+      "ipa": "/ˌsaɪəˈmiːz/",
+      "cefr": "A1",
+      "imageNodeId": "44:3247"
+    },
+    {
+      "kind": "card",
+      "id": "maine-coon",
+      "label": "Maine Coon",
+      "ipa": "/meɪn kuːn/",
+      "cefr": "A2",
+      "imageNodeId": "44:3251"
+    },
+    {
+      "kind": "card",
+      "id": "tabby",
+      "label": "Tabby",
+      "ipa": "/ˈtæbi/",
+      "cefr": "A1",
+      "imageNodeId": "44:3255"
+    },
+    {
+      "kind": "card",
+      "id": "bengal",
+      "label": "Bengal",
+      "ipa": "/ˈbɛŋɡɔːl/",
+      "cefr": "A1",
+      "imageNodeId": "44:3259"
+    },
+    {
+      "kind": "card",
+      "id": "ragdoll",
+      "label": "Ragdoll",
+      "ipa": "/ˈræɡdɑːl/",
+      "cefr": "A1",
+      "imageNodeId": "44:3263"
+    },
+    {
+      "kind": "card",
+      "id": "british-shorthair",
+      "label": "British Shorthair",
+      "ipa": "/ˈbrɪtɪʃ ˈʃɔːrthɛr/",
+      "cefr": "B1",
+      "imageNodeId": "44:3267"
+    },
+    {
+      "kind": "card",
+      "id": "sphynx",
+      "label": "Sphynx",
+      "ipa": "/sfɪŋks/",
+      "cefr": "A1",
+      "imageNodeId": "44:3271"
+    },
+    {
+      "kind": "card",
+      "id": "abyssinian",
+      "label": "Abyssinian",
+      "ipa": "/ˌæbɪˈsɪniən/",
+      "cefr": "A2",
+      "imageNodeId": "44:3275"
+    },
+    {
+      "kind": "card",
+      "id": "scottish-fold",
+      "label": "Scottish Fold",
+      "ipa": "/ˈskɑːtɪʃ foʊld/",
+      "cefr": "A2",
+      "imageNodeId": "44:3279"
+    },
+    {
+      "kind": "card",
+      "id": "dog-food",
+      "label": "Dog Food",
+      "ipa": "/dɔːɡ fuːd/",
+      "cefr": "A2",
+      "imageNodeId": "44:3288"
+    },
+    {
+      "kind": "card",
+      "id": "cat-food",
+      "label": "Cat Food",
+      "ipa": "/kæt fuːd/",
+      "cefr": "A2",
+      "imageNodeId": "44:3292"
+    },
+    {
+      "kind": "card",
+      "id": "fish-food",
+      "label": "Fish Food",
+      "ipa": "/fɪʃ fuːd/",
+      "cefr": "A2",
+      "imageNodeId": "44:3296"
+    },
+    {
+      "kind": "card",
+      "id": "bird-seed",
+      "label": "Bird Seed",
+      "ipa": "/bɜːrd siːd/",
+      "cefr": "A2",
+      "imageNodeId": "44:3300"
+    },
+    {
+      "kind": "card",
+      "id": "hay",
+      "label": "Hay",
+      "ipa": "/heɪ/",
+      "cefr": "A1",
+      "imageNodeId": "44:3304"
+    },
+    {
+      "kind": "card",
+      "id": "treats",
+      "label": "Treats",
+      "ipa": "/triːts/",
+      "cefr": "A1",
+      "imageNodeId": "44:3308"
+    },
+    {
+      "kind": "card",
+      "id": "water-bowl",
+      "label": "Water Bowl",
+      "ipa": "/ˈwɔːtər boʊl/",
+      "cefr": "A2",
+      "imageNodeId": "44:3312"
+    },
+    {
+      "kind": "card",
+      "id": "food-bowl",
+      "label": "Food Bowl",
+      "ipa": "/fuːd boʊl/",
+      "cefr": "A2",
+      "imageNodeId": "44:3316"
+    },
+    {
+      "kind": "card",
+      "id": "feeding-bottle",
+      "label": "Feeding Bottle",
+      "ipa": "/ˈfiːdɪŋ ˈbɑːtəl/",
+      "cefr": "A2",
+      "imageNodeId": "44:3320"
+    },
+    {
+      "kind": "card",
+      "id": "chew-toy",
+      "label": "Chew Toy",
+      "ipa": "/tʃuː tɔɪ/",
+      "cefr": "A2",
+      "imageNodeId": "44:3324"
+    },
+    {
+      "kind": "card",
+      "id": "collar",
+      "label": "Collar",
+      "ipa": "/ˈkɑːlər/",
+      "cefr": "A1",
+      "imageNodeId": "44:3333"
+    },
+    {
+      "kind": "card",
+      "id": "leash",
+      "label": "Leash",
+      "ipa": "/liːʃ/",
+      "cefr": "A1",
+      "imageNodeId": "44:3337"
+    },
+    {
+      "kind": "card",
+      "id": "harness",
+      "label": "Harness",
+      "ipa": "/ˈhɑːrnɪs/",
+      "cefr": "A1",
+      "imageNodeId": "44:3341"
+    },
+    {
+      "kind": "card",
+      "id": "pet-bed",
+      "label": "Pet Bed",
+      "ipa": "/pɛt bɛd/",
+      "cefr": "A2",
+      "imageNodeId": "44:3345"
+    },
+    {
+      "kind": "card",
+      "id": "cage",
+      "label": "Cage",
+      "ipa": "/keɪdʒ/",
+      "cefr": "A1",
+      "imageNodeId": "44:3349"
+    },
+    {
+      "kind": "card",
+      "id": "aquarium",
+      "label": "Aquarium",
+      "ipa": "/əˈkwɛriəm/",
+      "cefr": "A1",
+      "imageNodeId": "44:3353"
+    },
+    {
+      "kind": "card",
+      "id": "litter-box",
+      "label": "Litter Box",
+      "ipa": "/ˈlɪtər bɑːks/",
+      "cefr": "A2",
+      "imageNodeId": "44:3357"
+    },
+    {
+      "kind": "card",
+      "id": "cat-tree",
+      "label": "Cat Tree",
+      "ipa": "/kæt triː/",
+      "cefr": "A2",
+      "imageNodeId": "44:3361"
+    },
+    {
+      "kind": "card",
+      "id": "pet-carrier",
+      "label": "Pet Carrier",
+      "ipa": "/pɛt ˈkæriər/",
+      "cefr": "A2",
+      "imageNodeId": "44:3365"
+    },
+    {
+      "kind": "card",
+      "id": "name-tag",
+      "label": "Name Tag",
+      "ipa": "/neɪm tæɡ/",
+      "cefr": "A2",
+      "imageNodeId": "44:3369"
+    },
+    {
+      "kind": "card",
+      "id": "pet-shampoo",
+      "label": "Pet Shampoo",
+      "ipa": "/pɛt ʃæmˈpuː/",
+      "cefr": "A2",
+      "imageNodeId": "44:3378"
+    },
+    {
+      "kind": "card",
+      "id": "brush",
+      "label": "Brush",
+      "ipa": "/brʌʃ/",
+      "cefr": "A1",
+      "imageNodeId": "44:3382"
+    },
+    {
+      "kind": "card",
+      "id": "nail-clipper",
+      "label": "Nail Clipper",
+      "ipa": "/neɪl ˈklɪpər/",
+      "cefr": "A2",
+      "imageNodeId": "44:3386"
+    },
+    {
+      "kind": "card",
+      "id": "flea-treatment",
+      "label": "Flea Treatment",
+      "ipa": "/fliː ˈtriːtmənt/",
+      "cefr": "A2",
+      "imageNodeId": "44:3390"
+    },
+    {
+      "kind": "card",
+      "id": "pet-vitamins",
+      "label": "Pet Vitamins",
+      "ipa": "/pɛt ˈvaɪtəmɪnz/",
+      "cefr": "A2",
+      "imageNodeId": "44:3394"
+    },
+    {
+      "kind": "card",
+      "id": "pooper-scooper",
+      "label": "Pooper Scooper",
+      "ipa": "/ˈpuːpər ˈskuːpər/",
+      "cefr": "A2",
+      "imageNodeId": "44:3398"
+    },
+    {
+      "kind": "card",
+      "id": "training-pads",
+      "label": "Training Pads",
+      "ipa": "/ˈtreɪnɪŋ pædz/",
+      "cefr": "A2",
+      "imageNodeId": "44:3402"
+    },
+    {
+      "kind": "card",
+      "id": "pet-towel",
+      "label": "Pet Towel",
+      "ipa": "/pɛt ˈtaʊəl/",
+      "cefr": "A2",
+      "imageNodeId": "44:3406"
+    },
+    {
+      "kind": "card",
+      "id": "dental-chew",
+      "label": "Dental Chew",
+      "ipa": "/ˈdɛntəl tʃuː/",
+      "cefr": "A2",
+      "imageNodeId": "44:3410"
+    },
+    {
+      "kind": "card",
+      "id": "scratching-post",
+      "label": "Scratching Post",
+      "ipa": "/ˈskrætʃɪŋ poʊst/",
+      "cefr": "B1",
+      "imageNodeId": "44:3414"
+    },
+    {
+      "kind": "card",
+      "id": "parakeet",
+      "label": "Parakeet",
+      "ipa": "/ˈpærəkiːt/",
+      "cefr": "A1",
+      "imageNodeId": "52:1175"
+    },
+    {
+      "kind": "card",
+      "id": "kitten",
+      "label": "Kitten",
+      "ipa": "/ˈkɪtən/",
+      "cefr": "A1",
+      "imageNodeId": "52:1183"
+    },
+    {
+      "kind": "card",
+      "id": "puppy",
+      "label": "Puppy",
+      "ipa": "/ˈpʌpi/",
+      "cefr": "A1",
+      "imageNodeId": "52:1187"
+    },
+    {
+      "kind": "card",
+      "id": "fish-flakes",
+      "label": "Fish Flakes",
+      "ipa": "/fɪʃ fleɪks/",
+      "cefr": "A2",
+      "imageNodeId": "52:1204"
+    },
+    {
+      "kind": "card",
+      "id": "birdseed",
+      "label": "Birdseed",
+      "ipa": "/ˈbɜːrdsiːd/",
+      "cefr": "A1",
+      "imageNodeId": "52:1208"
+    },
+    {
+      "kind": "card",
+      "id": "bone",
+      "label": "Bone",
+      "ipa": "/boʊn/",
+      "cefr": "A1",
+      "imageNodeId": "52:1228"
+    },
+    {
+      "kind": "card",
+      "id": "sweater",
+      "label": "Sweater",
+      "ipa": "/ˈswɛtər/",
+      "cefr": "A1",
+      "imageNodeId": "52:1257"
+    },
+    {
+      "kind": "card",
+      "id": "bandana",
+      "label": "Bandana",
+      "ipa": "/bænˈdænə/",
+      "cefr": "A1",
+      "imageNodeId": "52:1261"
+    },
+    {
+      "kind": "card",
+      "id": "bell",
+      "label": "Bell",
+      "ipa": "/bɛl/",
+      "cefr": "A1",
+      "imageNodeId": "52:1265"
+    },
+    {
+      "kind": "card",
+      "id": "bow",
+      "label": "Bow",
+      "ipa": "/boʊ/",
+      "cefr": "A1",
+      "imageNodeId": "52:1269"
+    },
+    {
+      "kind": "card",
+      "id": "raincoat",
+      "label": "Raincoat",
+      "ipa": "/ˈreɪnkoʊt/",
+      "cefr": "A1",
+      "imageNodeId": "52:1273"
+    },
+    {
+      "kind": "card",
+      "id": "booties",
+      "label": "Booties",
+      "ipa": "/ˈbuːtiz/",
+      "cefr": "A1",
+      "imageNodeId": "52:1277"
+    },
+    {
+      "kind": "card",
+      "id": "bird-cage",
+      "label": "Bird Cage",
+      "ipa": "/bɜːrd keɪdʒ/",
+      "cefr": "A2",
+      "imageNodeId": "52:1290"
+    },
+    {
+      "kind": "card",
+      "id": "hamster-cage",
+      "label": "Hamster Cage",
+      "ipa": "/ˈhæmstər keɪdʒ/",
+      "cefr": "A2",
+      "imageNodeId": "52:1294"
+    },
+    {
+      "kind": "card",
+      "id": "dog-bed",
+      "label": "Dog Bed",
+      "ipa": "/dɔːɡ bɛd/",
+      "cefr": "A2",
+      "imageNodeId": "52:1298"
+    },
+    {
+      "kind": "card",
+      "id": "terrarium",
+      "label": "Terrarium",
+      "ipa": "/təˈrɛriəm/",
+      "cefr": "A1",
+      "imageNodeId": "52:1306"
+    },
+    {
+      "kind": "card",
+      "id": "fish-bowl",
+      "label": "Fish Bowl",
+      "ipa": "/fɪʃ boʊl/",
+      "cefr": "A2",
+      "imageNodeId": "52:1310"
+    },
+    {
+      "kind": "card",
+      "id": "kennel",
+      "label": "Kennel",
+      "ipa": "/ˈkɛnəl/",
+      "cefr": "A1",
+      "imageNodeId": "52:1314"
+    },
+    {
+      "kind": "card",
+      "id": "rabbit-hutch",
+      "label": "Rabbit Hutch",
+      "ipa": "/ˈræbɪt hʌtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "52:1318"
+    },
+    {
+      "kind": "card",
+      "id": "nesting-box",
+      "label": "Nesting Box",
+      "ipa": "/ˈnɛstɪŋ bɑːks/",
+      "cefr": "A2",
+      "imageNodeId": "52:1322"
+    },
+    {
+      "kind": "card",
+      "id": "shampoo",
+      "label": "Shampoo",
+      "ipa": "/ʃæmˈpuː/",
+      "cefr": "A1",
+      "imageNodeId": "52:1335"
+    },
+    {
+      "kind": "card",
+      "id": "flea-collar",
+      "label": "Flea Collar",
+      "ipa": "/fliː ˈkɑːlər/",
+      "cefr": "A2",
+      "imageNodeId": "52:1343"
+    },
+    {
+      "kind": "card",
+      "id": "litter",
+      "label": "Litter",
+      "ipa": "/ˈlɪtər/",
+      "cefr": "A1",
+      "imageNodeId": "52:1351"
+    },
+    {
+      "kind": "card",
+      "id": "poop-bag",
+      "label": "Poop Bag",
+      "ipa": "/puːp bæɡ/",
+      "cefr": "A2",
+      "imageNodeId": "52:1355"
+    },
+    {
+      "kind": "card",
+      "id": "vaccination-card",
+      "label": "Vaccination Card",
+      "ipa": "/ˌvæksɪˈneɪʃən kɑːrd/",
+      "cefr": "B1",
+      "imageNodeId": "52:1363"
+    },
+    {
+      "kind": "card",
+      "id": "microchip",
+      "label": "Microchip",
+      "ipa": "/ˈmaɪkroʊtʃɪp/",
+      "cefr": "A1",
+      "imageNodeId": "52:1367"
+    },
+    {
+      "kind": "card",
+      "id": "display-window",
+      "label": "Display Window",
+      "ipa": "/dɪˈspleɪ ˈwɪndoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "52:1376"
+    },
+    {
+      "kind": "card",
+      "id": "grooming-station",
+      "label": "Grooming Station",
+      "ipa": "/ˈɡruːmɪŋ ˈsteɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "52:1380"
+    },
+    {
+      "kind": "card",
+      "id": "adoption-board",
+      "label": "Adoption Board",
+      "ipa": "/əˈdɑːpʃən bɔːrd/",
+      "cefr": "A2",
+      "imageNodeId": "52:1384"
+    },
+    {
+      "kind": "card",
+      "id": "cash-register",
+      "label": "Cash Register",
+      "ipa": "/kæʃ ˈrɛdʒɪstər/",
+      "cefr": "A2",
+      "imageNodeId": "52:1388"
+    },
+    {
+      "kind": "card",
+      "id": "shelf",
+      "label": "Shelf",
+      "ipa": "/ʃɛlf/",
+      "cefr": "A1",
+      "imageNodeId": "52:1392"
+    },
+    {
+      "kind": "card",
+      "id": "tank",
+      "label": "Tank",
+      "ipa": "/tæŋk/",
+      "cefr": "A1",
+      "imageNodeId": "52:1396"
+    },
+    {
+      "kind": "card",
+      "id": "price-tag",
+      "label": "Price Tag",
+      "ipa": "/praɪs tæɡ/",
+      "cefr": "A2",
+      "imageNodeId": "52:1400"
+    },
+    {
+      "kind": "card",
+      "id": "shopping-basket",
+      "label": "Shopping Basket",
+      "ipa": "/ˈʃɑːpɪŋ ˈbæskɪt/",
+      "cefr": "B1",
+      "imageNodeId": "52:1404"
+    },
+    {
+      "kind": "card",
+      "id": "poster",
+      "label": "Poster",
+      "ipa": "/ˈpoʊstər/",
+      "cefr": "A1",
+      "imageNodeId": "52:1408"
+    },
+    {
+      "kind": "card",
+      "id": "toy-rack",
+      "label": "Toy Rack",
+      "ipa": "/tɔɪ ræk/",
+      "cefr": "A2",
+      "imageNodeId": "52:1412"
+    },
+    {
+      "kind": "card",
+      "id": "fish",
+      "label": "Fish",
+      "ipa": "/fɪʃ/",
+      "cefr": "A1",
+      "imageNodeId": "39:1336"
+    },
+    {
+      "kind": "card",
+      "id": "bowl",
+      "label": "Bowl",
+      "ipa": "/boʊl/",
+      "cefr": "A1",
+      "imageNodeId": "39:1363"
+    },
+    {
+      "kind": "card",
+      "id": "toy",
+      "label": "Toy",
+      "ipa": "/tɔɪ/",
+      "cefr": "A1",
+      "imageNodeId": "39:1379"
+    },
+    {
+      "kind": "card",
+      "id": "feed",
+      "label": "Feed",
+      "ipa": "/fiːd/",
+      "cefr": "A1",
+      "imageNodeId": "39:1390"
+    },
+    {
+      "kind": "card",
+      "id": "walk",
+      "label": "Walk",
+      "ipa": "/wɔːk/",
+      "cefr": "A1",
+      "imageNodeId": "39:1394"
+    },
+    {
+      "kind": "card",
+      "id": "groom",
+      "label": "Groom",
+      "ipa": "/ɡruːm/",
+      "cefr": "A1",
+      "imageNodeId": "39:1398"
+    },
+    {
+      "kind": "card",
+      "id": "bathe",
+      "label": "Bathe",
+      "ipa": "/beɪð/",
+      "cefr": "A1",
+      "imageNodeId": "39:1402"
+    },
+    {
+      "kind": "card",
+      "id": "train",
+      "label": "Train",
+      "ipa": "/treɪn/",
+      "cefr": "A1",
+      "imageNodeId": "39:1406"
+    },
+    {
+      "kind": "card",
+      "id": "play",
+      "label": "Play",
+      "ipa": "/pleɪ/",
+      "cefr": "A1",
+      "imageNodeId": "39:1410"
+    },
+    {
+      "kind": "card",
+      "id": "pet",
+      "label": "Pet",
+      "ipa": "/pɛt/",
+      "cefr": "A1",
+      "imageNodeId": "39:1414"
+    },
+    {
+      "kind": "card",
+      "id": "adopt",
+      "label": "Adopt",
+      "ipa": "/əˈdɑːpt/",
+      "cefr": "A1",
+      "imageNodeId": "39:1418"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "544:3",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "544:5",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1 · Topic: The Pet Shop",
+          "depth": 1,
+          "name": "Level: B1 · Topic: The Pet Shop"
+        },
+        {
+          "text": "Choosing a Pet\n\nLast weekend, my family visited the pet shop in the shopping centre to choose a pet for my younger brother's birthday. It was his first pet, so we wanted something easy to care for.\n\nThe shop was full of animals. Near the entrance, there were glass tanks with goldfish, tropical fish, and a small turtle. The fish came in all colours — red, orange, blue, and striped. The shop assistant explained how to set up an aquarium with a filter, a heater, and some gravel at the bottom.\n\nFurther inside, there were cages with hamsters, guinea pigs, and rabbits. The hamsters were running on tiny wheels, and the guinea pigs were munching on hay. My brother liked the rabbits best — they were soft and calm.\n\nIn the bird section, there were parakeets, canaries, and a large parrot that could say a few words. The parrot kept saying 'Hello!' every time someone walked past.\n\nThe back of the shop had supplies: bags of pet food, bowls, leads, collars, toys, and grooming brushes. There were also beds, carriers, and scratching posts for cats. A noticeboard near the door advertised local dog-walking services and pet adoption events.\n\nIn the end, my brother chose a pair of guinea pigs. The shop assistant gave us a care guide and explained what food they need, how often to clean the cage, and how to handle them gently.\n\nHaving a pet teaches responsibility and patience — and it brings a lot of joy to the whole family.",
+          "depth": 1,
+          "name": "Choosing a Pet Last weekend, my family visited the pet shop in the shopping centre to choose a pet for my younger brother's birthday. It was his first pet, so we wanted something easy to care for. The shop was full of animals. Near the entrance, there were glass tanks with goldfish, tropical fish, and a small turtle. The fish came in all colours — red, orange, blue, and striped. The shop assistant explained how to set up an aquarium with a filter, a heater, and some gravel at the bottom. Further inside, there were cages with hamsters, guinea pigs, and rabbits. The hamsters were running on tiny wheels, and the guinea pigs were munching on hay. My brother liked the rabbits best — they were soft and calm. In the bird section, there were parakeets, canaries, and a large parrot that could say a few words. The parrot kept saying 'Hello!' every time someone walked past. The back of the shop had supplies: bags of pet food, bowls, leads, collars, toys, and grooming brushes. There were also beds, carriers, and scratching posts for cats. A noticeboard near the door advertised local dog-walking services and pet adoption events. In the end, my brother chose a pair of guinea pigs. The shop assistant gave us a care guide and explained what food they need, how often to clean the cage, and how to handle them gently. Having a pet teaches responsibility and patience — and it brings a lot of joy to the whole family."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Why did the family visit the pet shop?",
+          "depth": 1,
+          "name": "1. Why did the family visit the pet shop?"
+        },
+        {
+          "text": "2. What animals were in the glass tanks?",
+          "depth": 1,
+          "name": "2. What animals were in the glass tanks?"
+        },
+        {
+          "text": "3. What could the parrot do?",
+          "depth": 1,
+          "name": "3. What could the parrot do?"
+        },
+        {
+          "text": "4. What supplies did the shop sell?",
+          "depth": 1,
+          "name": "4. What supplies did the shop sell?"
+        },
+        {
+          "text": "5. What pet did the brother choose in the end?",
+          "depth": 1,
+          "name": "5. What pet did the brother choose in the end?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "544:18",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "let the cat out of the bag",
+          "depth": 2,
+          "name": "let the cat out of the bag"
+        },
+        {
+          "text": "reveal a secret accidentally",
+          "depth": 2,
+          "name": "reveal a secret accidentally"
+        },
+        {
+          "text": "\"She let the cat out of the bag — everyone found out we were getting a Persian kitten from the pet shop.\"",
+          "depth": 2,
+          "name": "\"She let the cat out of the bag — everyone found out we were getting a Persian kitten from the pet shop.\""
+        },
+        {
+          "text": "it's raining cats and dogs",
+          "depth": 2,
+          "name": "it's raining cats and dogs"
+        },
+        {
+          "text": "raining very heavily",
+          "depth": 2,
+          "name": "raining very heavily"
+        },
+        {
+          "text": "\"It's raining cats and dogs outside — the dog, the cat, and even the hamster are staying indoors today.\"",
+          "depth": 2,
+          "name": "\"It's raining cats and dogs outside — the dog, the cat, and even the hamster are staying indoors today.\""
+        },
+        {
+          "text": "barking up the wrong tree",
+          "depth": 2,
+          "name": "barking up the wrong tree"
+        },
+        {
+          "text": "pursuing a mistaken approach",
+          "depth": 2,
+          "name": "pursuing a mistaken approach"
+        },
+        {
+          "text": "\"If you think the golden retriever is the quietest breed, you're barking up the wrong tree — try the bulldog or the pug.\"",
+          "depth": 2,
+          "name": "\"If you think the golden retriever is the quietest breed, you're barking up the wrong tree — try the bulldog or the pug.\""
+        },
+        {
+          "text": "a little bird told me",
+          "depth": 2,
+          "name": "a little bird told me"
+        },
+        {
+          "text": "I learned something from a secret source",
+          "depth": 2,
+          "name": "I learned something from a secret source"
+        },
+        {
+          "text": "\"A little bird told me they're getting a canary and a parrot — the bird seed is already in the cart.\"",
+          "depth": 2,
+          "name": "\"A little bird told me they're getting a canary and a parrot — the bird seed is already in the cart.\""
+        },
+        {
+          "text": "the cat's out of the bag",
+          "depth": 2,
+          "name": "the cat's out of the bag"
+        },
+        {
+          "text": "the secret is known now",
+          "depth": 2,
+          "name": "the secret is known now"
+        },
+        {
+          "text": "\"The cat's out of the bag — the Siamese was a surprise birthday gift, but the children saw it at the shop.\"",
+          "depth": 2,
+          "name": "\"The cat's out of the bag — the Siamese was a surprise birthday gift, but the children saw it at the shop.\""
+        },
+        {
+          "text": "like a fish out of water",
+          "depth": 2,
+          "name": "like a fish out of water"
+        },
+        {
+          "text": "uncomfortable in an unfamiliar situation",
+          "depth": 2,
+          "name": "uncomfortable in an unfamiliar situation"
+        },
+        {
+          "text": "\"The new goldfish looked like a fish out of water in the big tank — it kept hiding behind the plants.\"",
+          "depth": 2,
+          "name": "\"The new goldfish looked like a fish out of water in the big tank — it kept hiding behind the plants.\""
+        },
+        {
+          "text": "copycat",
+          "depth": 2,
+          "name": "copycat"
+        },
+        {
+          "text": "someone who imitates another person",
+          "depth": 2,
+          "name": "someone who imitates another person"
+        },
+        {
+          "text": "\"She's such a copycat — I bought a beagle, and now she wants a labrador that looks just like it.\"",
+          "depth": 2,
+          "name": "\"She's such a copycat — I bought a beagle, and now she wants a labrador that looks just like it.\""
+        },
+        {
+          "text": "guinea pig",
+          "depth": 2,
+          "name": "guinea pig"
+        },
+        {
+          "text": "a person used for testing something new",
+          "depth": 2,
+          "name": "a person used for testing something new"
+        },
+        {
+          "text": "\"I was the guinea pig — they tried the new guinea pig food on my pet first before selling it in the shop.\"",
+          "depth": 2,
+          "name": "\"I was the guinea pig — they tried the new guinea pig food on my pet first before selling it in the shop.\""
+        },
+        {
+          "text": "settle in",
+          "depth": 2,
+          "name": "settle in"
+        },
+        {
+          "text": "become comfortable in a new place",
+          "depth": 2,
+          "name": "become comfortable in a new place"
+        },
+        {
+          "text": "\"The new kitten took a few days to settle in.\"",
+          "depth": 2,
+          "name": "\"The new kitten took a few days to settle in.\""
+        },
+        {
+          "text": "put down",
+          "depth": 2,
+          "name": "put down"
+        },
+        {
+          "text": "have a sick animal painlessly killed by a vet (euphemism)",
+          "depth": 2,
+          "name": "have a sick animal painlessly killed by a vet (euphemism)"
+        },
+        {
+          "text": "\"It was heartbreaking when they had to put the old dog down.\"",
+          "depth": 2,
+          "name": "\"It was heartbreaking when they had to put the old dog down.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "544:62",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A family visits a pet shop to choose their first pet",
+          "depth": 1,
+          "name": "Scene: A family visits a pet shop to choose their first pet"
+        },
+        {
+          "text": "Father:",
+          "depth": 2,
+          "name": "Father:"
+        },
+        {
+          "text": "Alright, we agreed — one pet. Let's look around first. What do you think about a dog?",
+          "depth": 2,
+          "name": "Alright, we agreed — one pet. Let's look around first. What do you think about a dog?"
+        },
+        {
+          "text": "Daughter:",
+          "depth": 2,
+          "name": "Daughter:"
+        },
+        {
+          "text": "I love the golden retriever! But the labrador and the beagle are adorable too.",
+          "depth": 2,
+          "name": "I love the golden retriever! But the labrador and the beagle are adorable too."
+        },
+        {
+          "text": "Son:",
+          "depth": 2,
+          "name": "Son:"
+        },
+        {
+          "text": "I want a husky! Or maybe a dalmatian. What about the German shepherd?",
+          "depth": 2,
+          "name": "I want a husky! Or maybe a dalmatian. What about the German shepherd?"
+        },
+        {
+          "text": "Father:",
+          "depth": 2,
+          "name": "Father:"
+        },
+        {
+          "text": "Those are big dogs. A poodle, a chihuahua, or a pug might be better for our apartment.",
+          "depth": 2,
+          "name": "Those are big dogs. A poodle, a chihuahua, or a pug might be better for our apartment."
+        },
+        {
+          "text": "Mother:",
+          "depth": 2,
+          "name": "Mother:"
+        },
+        {
+          "text": "What about a cat instead? The Persian is beautiful, and the Siamese is very friendly.",
+          "depth": 2,
+          "name": "What about a cat instead? The Persian is beautiful, and the Siamese is very friendly."
+        },
+        {
+          "text": "Daughter:",
+          "depth": 2,
+          "name": "Daughter:"
+        },
+        {
+          "text": "The Maine Coon is huge! I also like the tabby and the Bengal — they're so playful.",
+          "depth": 2,
+          "name": "The Maine Coon is huge! I also like the tabby and the Bengal — they're so playful."
+        },
+        {
+          "text": "Son:",
+          "depth": 2,
+          "name": "Son:"
+        },
+        {
+          "text": "Can we get a ragdoll? Or the British Shorthair? The Scottish Fold has the cutest ears.",
+          "depth": 2,
+          "name": "Can we get a ragdoll? Or the British Shorthair? The Scottish Fold has the cutest ears."
+        },
+        {
+          "text": "Father:",
+          "depth": 2,
+          "name": "Father:"
+        },
+        {
+          "text": "Cats are easier to care for. But what about something smaller — a hamster, a rabbit, or a guinea pig?",
+          "depth": 2,
+          "name": "Cats are easier to care for. But what about something smaller — a hamster, a rabbit, or a guinea pig?"
+        },
+        {
+          "text": "Daughter:",
+          "depth": 2,
+          "name": "Daughter:"
+        },
+        {
+          "text": "The goldfish are pretty! And the parrot can talk. There's a canary singing over there too.",
+          "depth": 2,
+          "name": "The goldfish are pretty! And the parrot can talk. There's a canary singing over there too."
+        },
+        {
+          "text": "Son:",
+          "depth": 2,
+          "name": "Son:"
+        },
+        {
+          "text": "The turtle is cool — and look at the gerbil running on its wheel!",
+          "depth": 2,
+          "name": "The turtle is cool — and look at the gerbil running on its wheel!"
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "544:97",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I have a fish as pet.\"",
+          "depth": 2,
+          "name": "❌ \"I have a fish as pet.\""
+        },
+        {
+          "text": "✅ \"I have a fish as a pet.\"",
+          "depth": 2,
+          "name": "✅ \"I have a fish as a pet.\""
+        },
+        {
+          "text": "Don't forget the article 'a' — 'as a pet', not 'as pet'.",
+          "depth": 2,
+          "name": "Don't forget the article 'a' — 'as a pet', not 'as pet'."
+        },
+        {
+          "text": "❌ \"The hamster is very funny.\"",
+          "depth": 2,
+          "name": "❌ \"The hamster is very funny.\""
+        },
+        {
+          "text": "✅ \"The hamster is very cute / amusing.\"",
+          "depth": 2,
+          "name": "✅ \"The hamster is very cute / amusing.\""
+        },
+        {
+          "text": "'Funny' means it makes you laugh. 'Cute' describes something small and attractive. 'Amusing' = entertaining.",
+          "depth": 2,
+          "name": "'Funny' means it makes you laugh. 'Cute' describes something small and attractive. 'Amusing' = entertaining."
+        },
+        {
+          "text": "❌ \"She feeds the cat at every day.\"",
+          "depth": 2,
+          "name": "❌ \"She feeds the cat at every day.\""
+        },
+        {
+          "text": "✅ \"She feeds the cat every day.\"",
+          "depth": 2,
+          "name": "✅ \"She feeds the cat every day.\""
+        },
+        {
+          "text": "No preposition before 'every': 'every day', 'every morning'. Not 'at every day'.",
+          "depth": 2,
+          "name": "No preposition before 'every': 'every day', 'every morning'. Not 'at every day'."
+        },
+        {
+          "text": "❌ \"I bought two mouses for my son.\"",
+          "depth": 2,
+          "name": "❌ \"I bought two mouses for my son.\""
+        },
+        {
+          "text": "✅ \"I bought two mice for my son.\"",
+          "depth": 2,
+          "name": "✅ \"I bought two mice for my son.\""
+        },
+        {
+          "text": "'Mouse' has an irregular plural: mice. Same pattern: louse → lice.",
+          "depth": 2,
+          "name": "'Mouse' has an irregular plural: mice. Same pattern: louse → lice."
+        },
+        {
+          "text": "❌ \"The dog is bitting me!\"",
+          "depth": 2,
+          "name": "❌ \"The dog is bitting me!\""
+        },
+        {
+          "text": "✅ \"The dog is biting me!\"",
+          "depth": 2,
+          "name": "✅ \"The dog is biting me!\""
+        },
+        {
+          "text": "'Bite' → 'biting' (drop the 'e', add '-ing'). Not 'bitting'.",
+          "depth": 2,
+          "name": "'Bite' → 'biting' (drop the 'e', add '-ing'). Not 'bitting'."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "544:121",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how pet shop vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how pet shop vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "feed",
+          "depth": 2,
+          "name": "feed"
+        },
+        {
+          "text": "feed / feeder",
+          "depth": 2,
+          "name": "feed / feeder"
+        },
+        {
+          "text": "feed",
+          "depth": 2,
+          "name": "feed"
+        },
+        {
+          "text": "fed",
+          "depth": 2,
+          "name": "fed"
+        },
+        {
+          "text": "groom",
+          "depth": 2,
+          "name": "groom"
+        },
+        {
+          "text": "groomer / grooming",
+          "depth": 2,
+          "name": "groomer / grooming"
+        },
+        {
+          "text": "groom",
+          "depth": 2,
+          "name": "groom"
+        },
+        {
+          "text": "groomed",
+          "depth": 2,
+          "name": "groomed"
+        },
+        {
+          "text": "train",
+          "depth": 2,
+          "name": "train"
+        },
+        {
+          "text": "trainer / training",
+          "depth": 2,
+          "name": "trainer / training"
+        },
+        {
+          "text": "train",
+          "depth": 2,
+          "name": "train"
+        },
+        {
+          "text": "trained",
+          "depth": 2,
+          "name": "trained"
+        },
+        {
+          "text": "adopt",
+          "depth": 2,
+          "name": "adopt"
+        },
+        {
+          "text": "adopter / adoption",
+          "depth": 2,
+          "name": "adopter / adoption"
+        },
+        {
+          "text": "adopt",
+          "depth": 2,
+          "name": "adopt"
+        },
+        {
+          "text": "adopted / adoptable",
+          "depth": 2,
+          "name": "adopted / adoptable"
+        },
+        {
+          "text": "breed",
+          "depth": 2,
+          "name": "breed"
+        },
+        {
+          "text": "breed / breeder",
+          "depth": 2,
+          "name": "breed / breeder"
+        },
+        {
+          "text": "breed",
+          "depth": 2,
+          "name": "breed"
+        },
+        {
+          "text": "bred / breeding",
+          "depth": 2,
+          "name": "bred / breeding"
+        },
+        {
+          "text": "cage",
+          "depth": 2,
+          "name": "cage"
+        },
+        {
+          "text": "cage",
+          "depth": 2,
+          "name": "cage"
+        },
+        {
+          "text": "cage",
+          "depth": 2,
+          "name": "cage"
+        },
+        {
+          "text": "caged",
+          "depth": 2,
+          "name": "caged"
+        },
+        {
+          "text": "play",
+          "depth": 2,
+          "name": "play"
+        },
+        {
+          "text": "play / playfulness",
+          "depth": 2,
+          "name": "play / playfulness"
+        },
+        {
+          "text": "play",
+          "depth": 2,
+          "name": "play"
+        },
+        {
+          "text": "playful",
+          "depth": 2,
+          "name": "playful"
+        },
+        {
+          "text": "pet",
+          "depth": 2,
+          "name": "pet"
+        },
+        {
+          "text": "pet",
+          "depth": 2,
+          "name": "pet"
+        },
+        {
+          "text": "pet",
+          "depth": 2,
+          "name": "pet"
+        },
+        {
+          "text": "petted",
+          "depth": 2,
+          "name": "petted"
+        },
+        {
+          "text": "care",
+          "depth": 2,
+          "name": "care"
+        },
+        {
+          "text": "care / carer",
+          "depth": 2,
+          "name": "care / carer"
+        },
+        {
+          "text": "care",
+          "depth": 2,
+          "name": "care"
+        },
+        {
+          "text": "caring / careful",
+          "depth": 2,
+          "name": "caring / careful"
+        },
+        {
+          "text": "walk",
+          "depth": 2,
+          "name": "walk"
+        },
+        {
+          "text": "walk / walker",
+          "depth": 2,
+          "name": "walk / walker"
+        },
+        {
+          "text": "walk",
+          "depth": 2,
+          "name": "walk"
+        },
+        {
+          "text": "walking",
+          "depth": 2,
+          "name": "walking"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "544:181",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The hamster runs on a small __________ inside its cage.",
+          "depth": 1,
+          "name": "1. The hamster runs on a small __________ inside its cage."
+        },
+        {
+          "text": "2.  We need to buy a __________ and a lead before we get a dog.",
+          "depth": 1,
+          "name": "2. We need to buy a __________ and a lead before we get a dog."
+        },
+        {
+          "text": "3.  The __________ helped us choose the right food for our rabbit.",
+          "depth": 1,
+          "name": "3. The __________ helped us choose the right food for our rabbit."
+        },
+        {
+          "text": "4.  She cleans the fish __________ and changes the water every week.",
+          "depth": 1,
+          "name": "4. She cleans the fish __________ and changes the water every week."
+        },
+        {
+          "text": "5.  The parrot can say 'Hello' and a few other __________.",
+          "depth": 1,
+          "name": "5. The parrot can say 'Hello' and a few other __________."
+        },
+        {
+          "text": "6.  Guinea pigs love eating fresh __________ and vegetables.",
+          "depth": 1,
+          "name": "6. Guinea pigs love eating fresh __________ and vegetables."
+        },
+        {
+          "text": "7.  We adopted our cat from a local pet __________ centre.",
+          "depth": 1,
+          "name": "7. We adopted our cat from a local pet __________ centre."
+        },
+        {
+          "text": "8.  The cat sharpens its claws on the scratching __________.",
+          "depth": 1,
+          "name": "8. The cat sharpens its claws on the scratching __________."
+        },
+        {
+          "text": "9.  He takes the dog for a __________ twice a day.",
+          "depth": 1,
+          "name": "9. He takes the dog for a __________ twice a day."
+        },
+        {
+          "text": "10. The pet shop sells __________ of different sizes for birds and hamsters.",
+          "depth": 1,
+          "name": "10. The pet shop sells __________ of different sizes for birds and hamsters."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. wheel  2. collar  3. shop assistant  4. tank  5. words  6. hay  7. adoption  8. post  9. walk  10. cages",
+          "depth": 2,
+          "name": "1. wheel 2. collar 3. shop assistant 4. tank 5. words 6. hay 7. adoption 8. post 9. walk 10. cages"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "544:199",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Adopt, Don't Shop",
+          "depth": 2,
+          "name": "Adopt, Don't Shop"
+        },
+        {
+          "text": "In the UK and US, 'Adopt, don't shop' is a popular slogan encouraging people to adopt pets from shelters rather than buying from shops or breeders. Rescue centres are very common.",
+          "depth": 2,
+          "name": "In the UK and US, 'Adopt, don't shop' is a popular slogan encouraging people to adopt pets from shelters rather than buying from shops or breeders. Rescue centres are very common."
+        },
+        {
+          "text": "🇬🇧 vs 🇺🇸 Vocabulary",
+          "depth": 2,
+          "name": "🇬🇧 vs 🇺🇸 Vocabulary"
+        },
+        {
+          "text": "British: 'pet shop' / American: 'pet store'. British: 'lead' / American: 'leash'. British: 'tin of pet food' / American: 'can of pet food'. Both use 'vet' for veterinarian.",
+          "depth": 2,
+          "name": "British: 'pet shop' / American: 'pet store'. British: 'lead' / American: 'leash'. British: 'tin of pet food' / American: 'can of pet food'. Both use 'vet' for veterinarian."
+        },
+        {
+          "text": "Popular Pets by Country",
+          "depth": 2,
+          "name": "Popular Pets by Country"
+        },
+        {
+          "text": "Dogs and cats are the most popular pets in English-speaking countries. In the UK, fish are also very popular. Hamsters, rabbits, and guinea pigs are common children's pets.",
+          "depth": 2,
+          "name": "Dogs and cats are the most popular pets in English-speaking countries. In the UK, fish are also very popular. Hamsters, rabbits, and guinea pigs are common children's pets."
+        },
+        {
+          "text": "Pet-Related Idioms Are Everywhere",
+          "depth": 2,
+          "name": "Pet-Related Idioms Are Everywhere"
+        },
+        {
+          "text": "English is full of animal idioms: 'curiosity killed the cat', 'every dog has its day', 'hold your horses', 'the early bird catches the worm'. They appear in everyday conversation.",
+          "depth": 2,
+          "name": "English is full of animal idioms: 'curiosity killed the cat', 'every dog has its day', 'hold your horses', 'the early bird catches the worm'. They appear in everyday conversation."
+        },
+        {
+          "text": "Microchipping and Registration",
+          "depth": 2,
+          "name": "Microchipping and Registration"
+        },
+        {
+          "text": "In the UK, all dogs and cats must be microchipped by law. The chip contains the owner's contact details. This vocabulary (microchip, register, tag, ID) is useful for learners.",
+          "depth": 2,
+          "name": "In the UK, all dogs and cats must be microchipped by law. The chip contains the owner's contact details. This vocabulary (microchip, register, tag, ID) is useful for learners."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "544:218",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "cage",
+          "depth": 2,
+          "name": "cage"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "bird ~, hamster ~, ~ door",
+          "depth": 2,
+          "name": "bird ~, hamster ~, ~ door"
+        },
+        {
+          "text": "collar",
+          "depth": 2,
+          "name": "collar"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "dog ~, flea ~, ~ and lead",
+          "depth": 2,
+          "name": "dog ~, flea ~, ~ and lead"
+        },
+        {
+          "text": "lead",
+          "depth": 2,
+          "name": "lead"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "dog ~, on a ~, retractable ~",
+          "depth": 2,
+          "name": "dog ~, on a ~, retractable ~"
+        },
+        {
+          "text": "aquarium",
+          "depth": 2,
+          "name": "aquarium"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "fish ~, home ~, ~ filter",
+          "depth": 2,
+          "name": "fish ~, home ~, ~ filter"
+        },
+        {
+          "text": "hamster",
+          "depth": 2,
+          "name": "hamster"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "pet ~, ~ wheel, ~ cage",
+          "depth": 2,
+          "name": "pet ~, ~ wheel, ~ cage"
+        },
+        {
+          "text": "rabbit",
+          "depth": 2,
+          "name": "rabbit"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "pet ~, ~ hutch, ~ food",
+          "depth": 2,
+          "name": "pet ~, ~ hutch, ~ food"
+        },
+        {
+          "text": "parrot",
+          "depth": 2,
+          "name": "parrot"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "talking ~, ~ cage, ~ feather",
+          "depth": 2,
+          "name": "talking ~, ~ cage, ~ feather"
+        },
+        {
+          "text": "bowl",
+          "depth": 2,
+          "name": "bowl"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "food ~, water ~, dog ~",
+          "depth": 2,
+          "name": "food ~, water ~, dog ~"
+        },
+        {
+          "text": "vet",
+          "depth": 2,
+          "name": "vet"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "take to the ~, ~ clinic, ~ check",
+          "depth": 2,
+          "name": "take to the ~, ~ clinic, ~ check"
+        },
+        {
+          "text": "toy",
+          "depth": 2,
+          "name": "toy"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "dog ~, cat ~, chew ~",
+          "depth": 2,
+          "name": "dog ~, cat ~, chew ~"
+        }
+      ]
+    }
+  }
+}

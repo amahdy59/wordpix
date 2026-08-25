@@ -1,0 +1,1629 @@
+{
+  "unitId": "dance-studio",
+  "name": "The Dance Studio",
+  "subtopics": [
+    {
+      "id": "dance-attire",
+      "title": "Dance Attire",
+      "wordIds": [
+        "leotard",
+        "tights",
+        "ballet-shoes",
+        "jazz-shoes",
+        "tap-shoes",
+        "tutu",
+        "leg-warmers",
+        "headband",
+        "dance-belt",
+        "skirt"
+      ]
+    },
+    {
+      "id": "studio-features",
+      "title": "Studio Features",
+      "wordIds": [
+        "dance-floor",
+        "wall-mirror",
+        "barre",
+        "sound-system",
+        "speaker",
+        "changing-room",
+        "water-fountain",
+        "dance-bag",
+        "towel",
+        "rosin-box"
+      ]
+    },
+    {
+      "id": "ballet",
+      "title": "Ballet",
+      "wordIds": [
+        "ballet",
+        "pointe-shoes",
+        "tutu",
+        "bun",
+        "arabesque",
+        "pli",
+        "pirouette",
+        "jet",
+        "pas-de-deux",
+        "relev"
+      ]
+    },
+    {
+      "id": "dance-styles",
+      "title": "Dance Styles",
+      "wordIds": [
+        "jazz",
+        "tap",
+        "hip-hop",
+        "contemporary",
+        "ballroom",
+        "latin",
+        "folk-dance",
+        "breakdancing",
+        "swing",
+        "waltz"
+      ]
+    },
+    {
+      "id": "body-movement",
+      "title": "Body Movement",
+      "wordIds": [
+        "stretch",
+        "spin",
+        "leap",
+        "turn",
+        "kick",
+        "step",
+        "slide",
+        "bend",
+        "twist",
+        "balance"
+      ]
+    },
+    {
+      "id": "dance-roles",
+      "title": "Dance Roles",
+      "wordIds": [
+        "dancer",
+        "choreographer",
+        "dance-teacher",
+        "partner",
+        "soloist",
+        "ensemble",
+        "understudy",
+        "judge",
+        "audience",
+        "dj",
+        "salsa",
+        "breakdance",
+        "mirror",
+        "mat",
+        "pointe-shoe",
+        "leg-warmer",
+        "bow"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "leotard",
+      "label": "Leotard",
+      "ipa": "/ˈliːəˌtɑːrd/",
+      "cefr": "A2",
+      "imageNodeId": "45:1421"
+    },
+    {
+      "kind": "card",
+      "id": "tights",
+      "label": "Tights",
+      "ipa": "/taɪts/",
+      "cefr": "A2",
+      "imageNodeId": "45:1425"
+    },
+    {
+      "kind": "card",
+      "id": "ballet-shoes",
+      "label": "Ballet Shoes",
+      "ipa": "/bæˈleɪ ʃuːz/",
+      "cefr": "B1",
+      "imageNodeId": "45:1429"
+    },
+    {
+      "kind": "card",
+      "id": "jazz-shoes",
+      "label": "Jazz Shoes",
+      "ipa": "/dʒæz ʃuːz/",
+      "cefr": "B1",
+      "imageNodeId": "45:1433"
+    },
+    {
+      "kind": "card",
+      "id": "tap-shoes",
+      "label": "Tap Shoes",
+      "ipa": "/tæp ʃuːz/",
+      "cefr": "B1",
+      "imageNodeId": "45:1437"
+    },
+    {
+      "kind": "card",
+      "id": "tutu",
+      "label": "Tutu",
+      "ipa": "/ˈtuːtuː/",
+      "cefr": "A2",
+      "imageNodeId": "45:1441"
+    },
+    {
+      "kind": "card",
+      "id": "leg-warmers",
+      "label": "Leg Warmers",
+      "ipa": "/lɛɡ ˈwɔːrmərz/",
+      "cefr": "B1",
+      "imageNodeId": "45:1445"
+    },
+    {
+      "kind": "card",
+      "id": "headband",
+      "label": "Headband",
+      "ipa": "/ˈhɛdˌbænd/",
+      "cefr": "A2",
+      "imageNodeId": "45:1449"
+    },
+    {
+      "kind": "card",
+      "id": "dance-belt",
+      "label": "Dance Belt",
+      "ipa": "/dæns bɛlt/",
+      "cefr": "B1",
+      "imageNodeId": "45:1453"
+    },
+    {
+      "kind": "card",
+      "id": "skirt",
+      "label": "Skirt",
+      "ipa": "/skɜːrt/",
+      "cefr": "A2",
+      "imageNodeId": "45:1457"
+    },
+    {
+      "kind": "card",
+      "id": "dance-floor",
+      "label": "Dance Floor",
+      "ipa": "/dæns flɔːr/",
+      "cefr": "B1",
+      "imageNodeId": "45:1466"
+    },
+    {
+      "kind": "card",
+      "id": "wall-mirror",
+      "label": "Wall Mirror",
+      "ipa": "/wɔːl ˈmɪrər/",
+      "cefr": "B1",
+      "imageNodeId": "45:1470"
+    },
+    {
+      "kind": "card",
+      "id": "barre",
+      "label": "Barre",
+      "ipa": "/bɑːr/",
+      "cefr": "A2",
+      "imageNodeId": "45:1474"
+    },
+    {
+      "kind": "card",
+      "id": "sound-system",
+      "label": "Sound System",
+      "ipa": "/saʊnd ˈsɪstəm/",
+      "cefr": "B1",
+      "imageNodeId": "45:1478"
+    },
+    {
+      "kind": "card",
+      "id": "speaker",
+      "label": "Speaker",
+      "ipa": "/ˈspiːkər/",
+      "cefr": "A2",
+      "imageNodeId": "45:1482"
+    },
+    {
+      "kind": "card",
+      "id": "changing-room",
+      "label": "Changing Room",
+      "ipa": "/ˈtʃeɪndʒɪŋ ruːm/",
+      "cefr": "B1",
+      "imageNodeId": "45:1486"
+    },
+    {
+      "kind": "card",
+      "id": "water-fountain",
+      "label": "Water Fountain",
+      "ipa": "/ˈwɔːtər ˈfaʊntɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:1490"
+    },
+    {
+      "kind": "card",
+      "id": "dance-bag",
+      "label": "Dance Bag",
+      "ipa": "/dæns bæɡ/",
+      "cefr": "B1",
+      "imageNodeId": "45:1494"
+    },
+    {
+      "kind": "card",
+      "id": "towel",
+      "label": "Towel",
+      "ipa": "/ˈtaʊəl/",
+      "cefr": "A2",
+      "imageNodeId": "45:1498"
+    },
+    {
+      "kind": "card",
+      "id": "rosin-box",
+      "label": "Rosin Box",
+      "ipa": "/ˈrɒzɪn bɒks/",
+      "cefr": "B1",
+      "imageNodeId": "45:1502"
+    },
+    {
+      "kind": "card",
+      "id": "ballet",
+      "label": "Ballet",
+      "ipa": "/bæˈleɪ/",
+      "cefr": "A2",
+      "imageNodeId": "45:1511"
+    },
+    {
+      "kind": "card",
+      "id": "pointe-shoes",
+      "label": "Pointe Shoes",
+      "ipa": "/pɔɪnt ʃuːz/",
+      "cefr": "B1",
+      "imageNodeId": "45:1515"
+    },
+    {
+      "kind": "card",
+      "id": "tutu",
+      "label": "Tutu",
+      "ipa": "/ˈtuːtuː/",
+      "cefr": "A2",
+      "imageNodeId": "45:1519"
+    },
+    {
+      "kind": "card",
+      "id": "bun",
+      "label": "Bun",
+      "ipa": "/bʌn/",
+      "cefr": "A2",
+      "imageNodeId": "45:1523"
+    },
+    {
+      "kind": "card",
+      "id": "arabesque",
+      "label": "Arabesque",
+      "ipa": "/ˌærəˈbɛsk/",
+      "cefr": "A2",
+      "imageNodeId": "45:1527"
+    },
+    {
+      "kind": "card",
+      "id": "pli",
+      "label": "Plié",
+      "ipa": "/pliˈeɪ/",
+      "cefr": "A2",
+      "imageNodeId": "45:1531"
+    },
+    {
+      "kind": "card",
+      "id": "pirouette",
+      "label": "Pirouette",
+      "ipa": "/ˌpɪruˈɛt/",
+      "cefr": "A2",
+      "imageNodeId": "45:1535"
+    },
+    {
+      "kind": "card",
+      "id": "jet",
+      "label": "Jeté",
+      "ipa": "/ʒəˈteɪ/",
+      "cefr": "A2",
+      "imageNodeId": "45:1539"
+    },
+    {
+      "kind": "card",
+      "id": "pas-de-deux",
+      "label": "Pas de Deux",
+      "ipa": "/ˌpɑː də ˈdɜː/",
+      "cefr": "B2",
+      "imageNodeId": "45:1543"
+    },
+    {
+      "kind": "card",
+      "id": "relev",
+      "label": "Relevé",
+      "ipa": "/rɛləˈveɪ/",
+      "cefr": "A2",
+      "imageNodeId": "45:1547"
+    },
+    {
+      "kind": "card",
+      "id": "jazz",
+      "label": "Jazz",
+      "ipa": "/dʒæz/",
+      "cefr": "A2",
+      "imageNodeId": "45:1556"
+    },
+    {
+      "kind": "card",
+      "id": "tap",
+      "label": "Tap",
+      "ipa": "/tæp/",
+      "cefr": "A2",
+      "imageNodeId": "45:1560"
+    },
+    {
+      "kind": "card",
+      "id": "hip-hop",
+      "label": "Hip-Hop",
+      "ipa": "/hɪp hɒp/",
+      "cefr": "B1",
+      "imageNodeId": "45:1564"
+    },
+    {
+      "kind": "card",
+      "id": "contemporary",
+      "label": "Contemporary",
+      "ipa": "/kənˈtɛmpəˌrɛri/",
+      "cefr": "B1",
+      "imageNodeId": "45:1568"
+    },
+    {
+      "kind": "card",
+      "id": "ballroom",
+      "label": "Ballroom",
+      "ipa": "/ˈbɔːlˌruːm/",
+      "cefr": "A2",
+      "imageNodeId": "45:1572"
+    },
+    {
+      "kind": "card",
+      "id": "latin",
+      "label": "Latin",
+      "ipa": "/ˈlætɪn/",
+      "cefr": "A2",
+      "imageNodeId": "45:1576"
+    },
+    {
+      "kind": "card",
+      "id": "folk-dance",
+      "label": "Folk Dance",
+      "ipa": "/foʊk dæns/",
+      "cefr": "B1",
+      "imageNodeId": "45:1580"
+    },
+    {
+      "kind": "card",
+      "id": "breakdancing",
+      "label": "Breakdancing",
+      "ipa": "/ˈbreɪkˌdænsɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "45:1584"
+    },
+    {
+      "kind": "card",
+      "id": "swing",
+      "label": "Swing",
+      "ipa": "/swɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "45:1588"
+    },
+    {
+      "kind": "card",
+      "id": "waltz",
+      "label": "Waltz",
+      "ipa": "/wɔːlts/",
+      "cefr": "A2",
+      "imageNodeId": "45:1592"
+    },
+    {
+      "kind": "card",
+      "id": "stretch",
+      "label": "Stretch",
+      "ipa": "/strɛtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "45:1601"
+    },
+    {
+      "kind": "card",
+      "id": "spin",
+      "label": "Spin",
+      "ipa": "/spɪn/",
+      "cefr": "A2",
+      "imageNodeId": "45:1605"
+    },
+    {
+      "kind": "card",
+      "id": "leap",
+      "label": "Leap",
+      "ipa": "/liːp/",
+      "cefr": "A2",
+      "imageNodeId": "45:1609"
+    },
+    {
+      "kind": "card",
+      "id": "turn",
+      "label": "Turn",
+      "ipa": "/tɜːrn/",
+      "cefr": "A2",
+      "imageNodeId": "45:1613"
+    },
+    {
+      "kind": "card",
+      "id": "kick",
+      "label": "Kick",
+      "ipa": "/kɪk/",
+      "cefr": "A2",
+      "imageNodeId": "45:1617"
+    },
+    {
+      "kind": "card",
+      "id": "step",
+      "label": "Step",
+      "ipa": "/stɛp/",
+      "cefr": "A2",
+      "imageNodeId": "45:1621"
+    },
+    {
+      "kind": "card",
+      "id": "slide",
+      "label": "Slide",
+      "ipa": "/slaɪd/",
+      "cefr": "A2",
+      "imageNodeId": "45:1625"
+    },
+    {
+      "kind": "card",
+      "id": "bend",
+      "label": "Bend",
+      "ipa": "/bɛnd/",
+      "cefr": "A2",
+      "imageNodeId": "45:1629"
+    },
+    {
+      "kind": "card",
+      "id": "twist",
+      "label": "Twist",
+      "ipa": "/twɪst/",
+      "cefr": "A2",
+      "imageNodeId": "45:1633"
+    },
+    {
+      "kind": "card",
+      "id": "balance",
+      "label": "Balance",
+      "ipa": "/ˈbæləns/",
+      "cefr": "A2",
+      "imageNodeId": "45:1637"
+    },
+    {
+      "kind": "card",
+      "id": "dancer",
+      "label": "Dancer",
+      "ipa": "/ˈdænsər/",
+      "cefr": "A2",
+      "imageNodeId": "45:1646"
+    },
+    {
+      "kind": "card",
+      "id": "choreographer",
+      "label": "Choreographer",
+      "ipa": "/ˌkɒriˈɒɡrəfər/",
+      "cefr": "B1",
+      "imageNodeId": "45:1650"
+    },
+    {
+      "kind": "card",
+      "id": "dance-teacher",
+      "label": "Dance Teacher",
+      "ipa": "/dæns ˈtiːtʃər/",
+      "cefr": "B1",
+      "imageNodeId": "45:1654"
+    },
+    {
+      "kind": "card",
+      "id": "partner",
+      "label": "Partner",
+      "ipa": "/ˈpɑːrtnər/",
+      "cefr": "A2",
+      "imageNodeId": "45:1658"
+    },
+    {
+      "kind": "card",
+      "id": "soloist",
+      "label": "Soloist",
+      "ipa": "/ˈsoʊloʊɪst/",
+      "cefr": "A2",
+      "imageNodeId": "45:1662"
+    },
+    {
+      "kind": "card",
+      "id": "ensemble",
+      "label": "Ensemble",
+      "ipa": "/ɒnˈsɒmbəl/",
+      "cefr": "A2",
+      "imageNodeId": "45:1666"
+    },
+    {
+      "kind": "card",
+      "id": "understudy",
+      "label": "Understudy",
+      "ipa": "/ˈʌndərˌstʌdi/",
+      "cefr": "B1",
+      "imageNodeId": "45:1670"
+    },
+    {
+      "kind": "card",
+      "id": "judge",
+      "label": "Judge",
+      "ipa": "/dʒʌdʒ/",
+      "cefr": "A2",
+      "imageNodeId": "45:1674"
+    },
+    {
+      "kind": "card",
+      "id": "audience",
+      "label": "Audience",
+      "ipa": "/ˈɔːdiəns/",
+      "cefr": "A2",
+      "imageNodeId": "45:1678"
+    },
+    {
+      "kind": "card",
+      "id": "dj",
+      "label": "DJ",
+      "ipa": "/ˌdiːˈdʒeɪ/",
+      "cefr": "A2",
+      "imageNodeId": "45:1682"
+    },
+    {
+      "kind": "card",
+      "id": "salsa",
+      "label": "Salsa",
+      "ipa": "/ˈsælsə/",
+      "cefr": "A2",
+      "imageNodeId": "39:4278"
+    },
+    {
+      "kind": "card",
+      "id": "breakdance",
+      "label": "Breakdance",
+      "ipa": "/ˈbreɪkˌdæns/",
+      "cefr": "B1",
+      "imageNodeId": "39:4286"
+    },
+    {
+      "kind": "card",
+      "id": "mirror",
+      "label": "Mirror",
+      "ipa": "/ˈmɪrər/",
+      "cefr": "A2",
+      "imageNodeId": "39:4297"
+    },
+    {
+      "kind": "card",
+      "id": "mat",
+      "label": "Mat",
+      "ipa": "/mæt/",
+      "cefr": "A2",
+      "imageNodeId": "39:4301"
+    },
+    {
+      "kind": "card",
+      "id": "pointe-shoe",
+      "label": "Pointe Shoe",
+      "ipa": "/pɔɪnt ʃuː/",
+      "cefr": "B1",
+      "imageNodeId": "39:4317"
+    },
+    {
+      "kind": "card",
+      "id": "leg-warmer",
+      "label": "Leg Warmer",
+      "ipa": "/lɛɡ ˈwɔːrmər/",
+      "cefr": "B1",
+      "imageNodeId": "39:4321"
+    },
+    {
+      "kind": "card",
+      "id": "bow",
+      "label": "Bow",
+      "ipa": "/baʊ/",
+      "cefr": "A2",
+      "imageNodeId": "39:4356"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "568:1362",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "568:1364",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1+ · Topic: The Dance Studio",
+          "depth": 1,
+          "name": "Level: B1+ · Topic: The Dance Studio"
+        },
+        {
+          "text": "One, Two, Three — Life in the Dance Studio\n\nThe dance studio on Elm Street is a bright, open space with a wooden dance floor, a long wall mirror, and a barre running along two walls. A sound system in the corner plays music for every class. Near the door, there is a changing room where dancers leave their bags and put on their dance clothes.\n\nThe morning class is ballet. The dancers wear leotards and tights. They put on their ballet shoes and stand at the barre. The teacher, Ms Noor, calls out the exercises: 'Plié! Relevé! Arabesque!' The students bend their knees, rise onto their toes, and lift one leg behind them. They watch themselves in the wall mirror to check their posture. Advanced students wear pointe shoes and dance on the very tips of their toes. Their hair is pulled back into a tight bun.\n\nThe afternoon class is jazz. The students change into jazz shoes, which have a flexible sole for quick turns and jumps. The music is faster. The steps include spins, leaps, kicks, and slides. The teacher counts: 'Five, six, seven, eight!' and the dancers move together across the floor.\n\nOn Tuesday evenings, the studio offers tap. Dancers wear tap shoes with metal plates on the bottom. Every step, kick, and slide makes a sharp sound on the dance floor. The teacher taps a rhythm, and the students copy it. By the end of class, they can tap a whole song.\n\nThe studio also teaches hip-hop, contemporary, ballroom, Latin, folk dance, swing, and even breakdancing. Each style has its own music, its own steps, and its own energy. A ballroom waltz is slow and elegant. A Latin dance is fast and passionate. Breakdancing happens on the floor with spins and freezes.\n\nBefore every class, dancers stretch their muscles. They bend, twist, and balance on one leg. Some dancers use leg warmers to keep their muscles warm. A headband keeps hair out of their eyes. A towel and a water fountain are nearby for breaks. Many dancers carry a dance bag with extra clothes, shoes, and a small bottle of water. A rosin box near the barre helps dancers grip the floor.\n\nThe dance studio is more than a place to learn steps. It is a place where people express themselves through movement — where a spin tells a story, a leap shows joy, and even standing still can say something powerful.",
+          "depth": 1,
+          "name": "One, Two, Three — Life in the Dance Studio The dance studio on Elm Street is a bright, open space with a wooden dance floor, a long wall mirror, and a barre running along two walls. A sound system in the corner plays music for every class. Near the door, there is a changing room where dancers leave their bags and put on their dance clothes. The morning class is ballet. The dancers wear leotards and tights. They put on their ballet shoes and stand at the barre. The teacher, Ms Noor, calls out the exercises: 'Plié! Relevé! Arabesque!' The students bend their knees, rise onto their toes, and lift one leg behind them. They watch themselves in the wall mirror to check their posture. Advanced students wear pointe shoes and dance on the very tips of their toes. Their hair is pulled back into a tight bun. The afternoon class is jazz. The students change into jazz shoes, which have a flexible sole for quick turns and jumps. The music is faster. The steps include spins, leaps, kicks, and slides. The teacher counts: 'Five, six, seven, eight!' and the dancers move together across the floor. On Tuesday evenings, the studio offers tap. Dancers wear tap shoes with metal plates on the bottom. Every step, kick, and slide makes a sharp sound on the dance floor. The teacher taps a rhythm, and the students copy it. By the end of class, they can tap a whole song. The studio also teaches hip-hop, contemporary, ballroom, Latin, folk dance, swing, and even breakdancing. Each style has its own music, its own steps, and its own energy. A ballroom waltz is slow and elegant. A Latin dance is fast and passionate. Breakdancing happens on the floor with spins and freezes. Before every class, dancers stretch their muscles. They bend, twist, and balance on one leg. Some dancers use leg warmers to keep their muscles warm. A headband keeps hair out of their eyes. A towel and a water fountain are nearby for breaks. Many dancers carry a dance bag with extra clothes, shoes, and a small bottle of water. A rosin box near the barre helps dancers grip the floor. The dance studio is more than a place to learn steps. It is a place where people express themselves through movement — where a spin tells a story, a leap shows joy, and even standing still can say something powerful."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Describe the dance studio. What equipment and features does it have?",
+          "depth": 1,
+          "name": "1. Describe the dance studio. What equipment and features does it have?"
+        },
+        {
+          "text": "2. What is the difference between ballet shoes, jazz shoes, and tap shoes?",
+          "depth": 1,
+          "name": "2. What is the difference between ballet shoes, jazz shoes, and tap shoes?"
+        },
+        {
+          "text": "3. Name three exercises that ballet dancers do at the barre.",
+          "depth": 1,
+          "name": "3. Name three exercises that ballet dancers do at the barre."
+        },
+        {
+          "text": "4. How do the different dance styles (ballet, jazz, tap, hip-hop) differ in speed and energy?",
+          "depth": 1,
+          "name": "4. How do the different dance styles (ballet, jazz, tap, hip-hop) differ in speed and energy?"
+        },
+        {
+          "text": "5. The passage says 'a spin tells a story, a leap shows joy.' What does this mean about dance as a form of communication?",
+          "depth": 1,
+          "name": "5. The passage says 'a spin tells a story, a leap shows joy.' What does this mean about dance as a form of communication?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "568:1377",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "take it from the top",
+          "depth": 2,
+          "name": "take it from the top"
+        },
+        {
+          "text": "start again from the beginning",
+          "depth": 2,
+          "name": "start again from the beginning"
+        },
+        {
+          "text": "\"The pirouette wasn't clean — let's take it from the top, starting from the plié.\"",
+          "depth": 2,
+          "name": "\"The pirouette wasn't clean — let's take it from the top, starting from the plié.\""
+        },
+        {
+          "text": "learn the ropes",
+          "depth": 2,
+          "name": "learn the ropes"
+        },
+        {
+          "text": "learn how to do a new job or activity",
+          "depth": 2,
+          "name": "learn how to do a new job or activity"
+        },
+        {
+          "text": "\"The beginner is still learning the ropes — she just started at the barre last week.\"",
+          "depth": 2,
+          "name": "\"The beginner is still learning the ropes — she just started at the barre last week.\""
+        },
+        {
+          "text": "step on someone's toes",
+          "depth": 2,
+          "name": "step on someone's toes"
+        },
+        {
+          "text": "offend or upset someone, often unintentionally",
+          "depth": 2,
+          "name": "offend or upset someone, often unintentionally"
+        },
+        {
+          "text": "\"In the pas de deux, he literally stepped on her toes during the lift rehearsal.\"",
+          "depth": 2,
+          "name": "\"In the pas de deux, he literally stepped on her toes during the lift rehearsal.\""
+        },
+        {
+          "text": "keep in step",
+          "depth": 2,
+          "name": "keep in step"
+        },
+        {
+          "text": "move or act in coordination with others",
+          "depth": 2,
+          "name": "move or act in coordination with others"
+        },
+        {
+          "text": "\"In a ballroom class, both partners need to keep in step — timing is everything.\"",
+          "depth": 2,
+          "name": "\"In a ballroom class, both partners need to keep in step — timing is everything.\""
+        },
+        {
+          "text": "get into the groove",
+          "depth": 2,
+          "name": "get into the groove"
+        },
+        {
+          "text": "start performing well and enjoyably",
+          "depth": 2,
+          "name": "start performing well and enjoyably"
+        },
+        {
+          "text": "\"It took a few minutes, but once the sound system started, the hip-hop class got into the groove.\"",
+          "depth": 2,
+          "name": "\"It took a few minutes, but once the sound system started, the hip-hop class got into the groove.\""
+        },
+        {
+          "text": "think on your feet",
+          "depth": 2,
+          "name": "think on your feet"
+        },
+        {
+          "text": "react quickly and make decisions without preparation",
+          "depth": 2,
+          "name": "react quickly and make decisions without preparation"
+        },
+        {
+          "text": "\"In contemporary dance, you need to think on your feet — improvisation is part of the art.\"",
+          "depth": 2,
+          "name": "\"In contemporary dance, you need to think on your feet — improvisation is part of the art.\""
+        },
+        {
+          "text": "warm up to something",
+          "depth": 2,
+          "name": "warm up to something"
+        },
+        {
+          "text": "gradually start to like or become comfortable with something",
+          "depth": 2,
+          "name": "gradually start to like or become comfortable with something"
+        },
+        {
+          "text": "\"She didn't enjoy tap at first, but after a few weeks in her tap shoes, she warmed up to it.\"",
+          "depth": 2,
+          "name": "\"She didn't enjoy tap at first, but after a few weeks in her tap shoes, she warmed up to it.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "568:1409",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A ballet instructor leading a class at the barre in a dance studio",
+          "depth": 1,
+          "name": "Scene: A ballet instructor leading a class at the barre in a dance studio"
+        },
+        {
+          "text": "Instructor:",
+          "depth": 2,
+          "name": "Instructor:"
+        },
+        {
+          "text": "Good morning, everyone. Change into your leotards and ballet shoes. Beginners, grab a pair of leg warmers — the floor is cold today.",
+          "depth": 2,
+          "name": "Good morning, everyone. Change into your leotards and ballet shoes. Beginners, grab a pair of leg warmers — the floor is cold today."
+        },
+        {
+          "text": "Student 1:",
+          "depth": 2,
+          "name": "Student 1:"
+        },
+        {
+          "text": "Should I use pointe shoes for the barre exercises, or just regular ballet shoes?",
+          "depth": 2,
+          "name": "Should I use pointe shoes for the barre exercises, or just regular ballet shoes?"
+        },
+        {
+          "text": "Instructor:",
+          "depth": 2,
+          "name": "Instructor:"
+        },
+        {
+          "text": "Regular for now. We'll move to pointe work after the warm-up. Start with a plié — feet in first position.",
+          "depth": 2,
+          "name": "Regular for now. We'll move to pointe work after the warm-up. Start with a plié — feet in first position."
+        },
+        {
+          "text": "Student 2:",
+          "depth": 2,
+          "name": "Student 2:"
+        },
+        {
+          "text": "My tights have a hole. Can I borrow a pair from the changing room?",
+          "depth": 2,
+          "name": "My tights have a hole. Can I borrow a pair from the changing room?"
+        },
+        {
+          "text": "Instructor:",
+          "depth": 2,
+          "name": "Instructor:"
+        },
+        {
+          "text": "Check the dance bag by the wall mirror. Now — relevé, hold your balance. Check your posture in the mirror.",
+          "depth": 2,
+          "name": "Check the dance bag by the wall mirror. Now — relevé, hold your balance. Check your posture in the mirror."
+        },
+        {
+          "text": "Student 1:",
+          "depth": 2,
+          "name": "Student 1:"
+        },
+        {
+          "text": "I can never get the pirouette right. I keep losing my balance.",
+          "depth": 2,
+          "name": "I can never get the pirouette right. I keep losing my balance."
+        },
+        {
+          "text": "Instructor:",
+          "depth": 2,
+          "name": "Instructor:"
+        },
+        {
+          "text": "Spot your turn — fix your eyes on one point in the mirror and snap your head around. Let's try it. Ready — and turn.",
+          "depth": 2,
+          "name": "Spot your turn — fix your eyes on one point in the mirror and snap your head around. Let's try it. Ready — and turn."
+        },
+        {
+          "text": "Student 3:",
+          "depth": 2,
+          "name": "Student 3:"
+        },
+        {
+          "text": "What's an arabesque again? Is that the one where you extend your leg behind?",
+          "depth": 2,
+          "name": "What's an arabesque again? Is that the one where you extend your leg behind?"
+        },
+        {
+          "text": "Instructor:",
+          "depth": 2,
+          "name": "Instructor:"
+        },
+        {
+          "text": "Exactly — one leg supporting, the other extended behind you. Arms long. Think of a straight line from your fingertips to your toes.",
+          "depth": 2,
+          "name": "Exactly — one leg supporting, the other extended behind you. Arms long. Think of a straight line from your fingertips to your toes."
+        },
+        {
+          "text": "Student 2:",
+          "depth": 2,
+          "name": "Student 2:"
+        },
+        {
+          "text": "Are we practising the jeté today? I've been working on the jump at home.",
+          "depth": 2,
+          "name": "Are we practising the jeté today? I've been working on the jump at home."
+        },
+        {
+          "text": "Instructor:",
+          "depth": 2,
+          "name": "Instructor:"
+        },
+        {
+          "text": "Yes, after the barre. We'll finish with a short pas de deux exercise. Grab water from the water fountain — we start in two minutes.",
+          "depth": 2,
+          "name": "Yes, after the barre. We'll finish with a short pas de deux exercise. Grab water from the water fountain — we start in two minutes."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "568:1447",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"She dances very good. I love watching her perform.\"",
+          "depth": 2,
+          "name": "❌ \"She dances very good. I love watching her perform.\""
+        },
+        {
+          "text": "✅ \"She dances very well. I love watching her perform.\"",
+          "depth": 2,
+          "name": "✅ \"She dances very well. I love watching her perform.\""
+        },
+        {
+          "text": "'Good' is an adjective (describes nouns): 'She is a good dancer.' 'Well' is an adverb (describes verbs): 'She dances well.' After action verbs, use 'well.' 'He sings well.' 'They play well.' Exception: 'feel good' is correct (linking verb).",
+          "depth": 2,
+          "name": "'Good' is an adjective (describes nouns): 'She is a good dancer.' 'Well' is an adverb (describes verbs): 'She dances well.' After action verbs, use 'well.' 'He sings well.' 'They play well.' Exception: 'feel good' is correct (linking verb)."
+        },
+        {
+          "text": "❌ \"I'm interesting in learning ballet. Can I join the class?\"",
+          "depth": 2,
+          "name": "❌ \"I'm interesting in learning ballet. Can I join the class?\""
+        },
+        {
+          "text": "✅ \"I'm interested in learning ballet. Can I join the class?\"",
+          "depth": 2,
+          "name": "✅ \"I'm interested in learning ballet. Can I join the class?\""
+        },
+        {
+          "text": "'-ed' = how you feel: 'interested', 'excited', 'tired.' '-ing' = what causes the feeling: 'interesting', 'exciting', 'tiring.' 'I am interested in ballet' (I feel interest). 'Ballet is interesting' (it causes interest). This -ed/-ing confusion is very common at B1.",
+          "depth": 2,
+          "name": "'-ed' = how you feel: 'interested', 'excited', 'tired.' '-ing' = what causes the feeling: 'interesting', 'exciting', 'tiring.' 'I am interested in ballet' (I feel interest). 'Ballet is interesting' (it causes interest). This -ed/-ing confusion is very common at B1."
+        },
+        {
+          "text": "❌ \"She practises dance since she was five years old.\"",
+          "depth": 2,
+          "name": "❌ \"She practises dance since she was five years old.\""
+        },
+        {
+          "text": "✅ \"She has been practising dance since she was five years old.\"",
+          "depth": 2,
+          "name": "✅ \"She has been practising dance since she was five years old.\""
+        },
+        {
+          "text": "'Since' + past time point needs present perfect: 'has been practising since she was five.' Present simple ('practises') describes current habits but doesn't connect to a past starting point. 'She has danced for fifteen years.' 'She has been dancing since childhood.'",
+          "depth": 2,
+          "name": "'Since' + past time point needs present perfect: 'has been practising since she was five.' Present simple ('practises') describes current habits but doesn't connect to a past starting point. 'She has danced for fifteen years.' 'She has been dancing since childhood.'"
+        },
+        {
+          "text": "❌ \"Can you learn me how to do a pirouette?\"",
+          "depth": 2,
+          "name": "❌ \"Can you learn me how to do a pirouette?\""
+        },
+        {
+          "text": "✅ \"Can you teach me how to do a pirouette?\"",
+          "depth": 2,
+          "name": "✅ \"Can you teach me how to do a pirouette?\""
+        },
+        {
+          "text": "'Teach' = give knowledge (the teacher teaches). 'Learn' = receive knowledge (the student learns). 'She teaches me ballet.' 'I learn ballet from her.' Never 'learn me' — it reverses the roles.",
+          "depth": 2,
+          "name": "'Teach' = give knowledge (the teacher teaches). 'Learn' = receive knowledge (the student learns). 'She teaches me ballet.' 'I learn ballet from her.' Never 'learn me' — it reverses the roles."
+        },
+        {
+          "text": "❌ \"We enjoyed from the performance very much.\"",
+          "depth": 2,
+          "name": "❌ \"We enjoyed from the performance very much.\""
+        },
+        {
+          "text": "✅ \"We enjoyed the performance very much.\"",
+          "depth": 2,
+          "name": "✅ \"We enjoyed the performance very much.\""
+        },
+        {
+          "text": "'Enjoy' takes a direct object — no preposition needed. 'I enjoyed the show.' 'We enjoy dancing.' Never 'enjoy from' or 'enjoy of.' Similar verbs: 'discuss the topic' (not *discuss about), 'enter the room' (not *enter to).",
+          "depth": 2,
+          "name": "'Enjoy' takes a direct object — no preposition needed. 'I enjoyed the show.' 'We enjoy dancing.' Never 'enjoy from' or 'enjoy of.' Similar verbs: 'discuss the topic' (not *discuss about), 'enter the room' (not *enter to)."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "568:1471",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Dance vocabulary — notice the -er performer nouns and -tion/-ment abstract nouns.",
+          "depth": 1,
+          "name": "Dance vocabulary — notice the -er performer nouns and -tion/-ment abstract nouns."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "perform",
+          "depth": 2,
+          "name": "perform"
+        },
+        {
+          "text": "performance / performer",
+          "depth": 2,
+          "name": "performance / performer"
+        },
+        {
+          "text": "perform",
+          "depth": 2,
+          "name": "perform"
+        },
+        {
+          "text": "performing",
+          "depth": 2,
+          "name": "performing"
+        },
+        {
+          "text": "choreograph",
+          "depth": 2,
+          "name": "choreograph"
+        },
+        {
+          "text": "choreography / choreographer",
+          "depth": 2,
+          "name": "choreography / choreographer"
+        },
+        {
+          "text": "choreograph",
+          "depth": 2,
+          "name": "choreograph"
+        },
+        {
+          "text": "choreographic",
+          "depth": 2,
+          "name": "choreographic"
+        },
+        {
+          "text": "rehearse",
+          "depth": 2,
+          "name": "rehearse"
+        },
+        {
+          "text": "rehearsal",
+          "depth": 2,
+          "name": "rehearsal"
+        },
+        {
+          "text": "rehearse",
+          "depth": 2,
+          "name": "rehearse"
+        },
+        {
+          "text": "rehearsed / unrehearsed",
+          "depth": 2,
+          "name": "rehearsed / unrehearsed"
+        },
+        {
+          "text": "move",
+          "depth": 2,
+          "name": "move"
+        },
+        {
+          "text": "movement / motion",
+          "depth": 2,
+          "name": "movement / motion"
+        },
+        {
+          "text": "move",
+          "depth": 2,
+          "name": "move"
+        },
+        {
+          "text": "moving / movable",
+          "depth": 2,
+          "name": "moving / movable"
+        },
+        {
+          "text": "balance",
+          "depth": 2,
+          "name": "balance"
+        },
+        {
+          "text": "balance",
+          "depth": 2,
+          "name": "balance"
+        },
+        {
+          "text": "balance",
+          "depth": 2,
+          "name": "balance"
+        },
+        {
+          "text": "balanced / unbalanced",
+          "depth": 2,
+          "name": "balanced / unbalanced"
+        },
+        {
+          "text": "express",
+          "depth": 2,
+          "name": "express"
+        },
+        {
+          "text": "expression / expressiveness",
+          "depth": 2,
+          "name": "expression / expressiveness"
+        },
+        {
+          "text": "express",
+          "depth": 2,
+          "name": "express"
+        },
+        {
+          "text": "expressive",
+          "depth": 2,
+          "name": "expressive"
+        },
+        {
+          "text": "coordinate",
+          "depth": 2,
+          "name": "coordinate"
+        },
+        {
+          "text": "coordination / coordinator",
+          "depth": 2,
+          "name": "coordination / coordinator"
+        },
+        {
+          "text": "coordinate",
+          "depth": 2,
+          "name": "coordinate"
+        },
+        {
+          "text": "coordinated",
+          "depth": 2,
+          "name": "coordinated"
+        },
+        {
+          "text": "rhythm",
+          "depth": 2,
+          "name": "rhythm"
+        },
+        {
+          "text": "rhythm",
+          "depth": 2,
+          "name": "rhythm"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "rhythmic / rhythmical",
+          "depth": 2,
+          "name": "rhythmic / rhythmical"
+        },
+        {
+          "text": "grace",
+          "depth": 2,
+          "name": "grace"
+        },
+        {
+          "text": "grace / gracefulness",
+          "depth": 2,
+          "name": "grace / gracefulness"
+        },
+        {
+          "text": "grace",
+          "depth": 2,
+          "name": "grace"
+        },
+        {
+          "text": "graceful / gracious",
+          "depth": 2,
+          "name": "graceful / gracious"
+        },
+        {
+          "text": "flexible",
+          "depth": 2,
+          "name": "flexible"
+        },
+        {
+          "text": "flexibility",
+          "depth": 2,
+          "name": "flexibility"
+        },
+        {
+          "text": "flex",
+          "depth": 2,
+          "name": "flex"
+        },
+        {
+          "text": "flexible / inflexible",
+          "depth": 2,
+          "name": "flexible / inflexible"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "568:1531",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "B1+ Challenge: Recommend/suggest patterns, enough placement, good/well, for/since.",
+          "depth": 1,
+          "name": "B1+ Challenge: Recommend/suggest patterns, enough placement, good/well, for/since."
+        },
+        {
+          "text": "1.  Ballet dancers hold onto the __________ for balance during exercises.",
+          "depth": 1,
+          "name": "1. Ballet dancers hold onto the __________ for balance during exercises."
+        },
+        {
+          "text": "2.  She wore a __________ and tights for the ballet class.",
+          "depth": 1,
+          "name": "2. She wore a __________ and tights for the ballet class."
+        },
+        {
+          "text": "3.  A __________ is a ballet move where you bend your knees while keeping your back straight.",
+          "depth": 1,
+          "name": "3. A __________ is a ballet move where you bend your knees while keeping your back straight."
+        },
+        {
+          "text": "4.  __________ shoes have metal plates on the bottom that make sounds on the floor.",
+          "depth": 1,
+          "name": "4. __________ shoes have metal plates on the bottom that make sounds on the floor."
+        },
+        {
+          "text": "5.  The dancers watched themselves in the wall __________ to check their posture.",
+          "depth": 1,
+          "name": "5. The dancers watched themselves in the wall __________ to check their posture."
+        },
+        {
+          "text": "6.  She did a __________ — spinning on one foot with perfect balance.",
+          "depth": 1,
+          "name": "6. She did a __________ — spinning on one foot with perfect balance."
+        },
+        {
+          "text": "7.  Dancers use leg __________ to keep their muscles warm before class.",
+          "depth": 1,
+          "name": "7. Dancers use leg __________ to keep their muscles warm before class."
+        },
+        {
+          "text": "8.  Advanced ballet students dance on the tips of their toes in __________ shoes.",
+          "depth": 1,
+          "name": "8. Advanced ballet students dance on the tips of their toes in __________ shoes."
+        },
+        {
+          "text": "9.  The __________ played music for every class from the corner of the room.",
+          "depth": 1,
+          "name": "9. The __________ played music for every class from the corner of the room."
+        },
+        {
+          "text": "10. Before class, dancers __________ their muscles to avoid injury.",
+          "depth": 1,
+          "name": "10. Before class, dancers __________ their muscles to avoid injury."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. barre  2. leotard  3. plié  4. Tap  5. mirror  6. pirouette  7. warmers  8. pointe  9. sound system  10. stretch",
+          "depth": 2,
+          "name": "1. barre 2. leotard 3. plié 4. Tap 5. mirror 6. pirouette 7. warmers 8. pointe 9. sound system 10. stretch"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "568:1549",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Dance in Islamic Culture",
+          "depth": 2,
+          "name": "Dance in Islamic Culture"
+        },
+        {
+          "text": "Many Muslim communities have rich traditions of gender-specific dance — men's sword dances (like the Saudi ardah) and women's celebrations at weddings and festivals. Traditional dance in Islamic culture often emphasises group participation, communal joy, and cultural storytelling rather than individual display. In many contexts, men and women dance separately, respecting Islamic values of modesty.",
+          "depth": 2,
+          "name": "Many Muslim communities have rich traditions of gender-specific dance — men's sword dances (like the Saudi ardah) and women's celebrations at weddings and festivals. Traditional dance in Islamic culture often emphasises group participation, communal joy, and cultural storytelling rather than individual display. In many contexts, men and women dance separately, respecting Islamic values of modesty."
+        },
+        {
+          "text": "The Whirling Dervishes — Spiritual Dance",
+          "depth": 2,
+          "name": "The Whirling Dervishes — Spiritual Dance"
+        },
+        {
+          "text": "The Mevlevi Order, founded in 13th-century Turkey, practises the Sema ceremony — a meditative spinning dance that represents the soul's spiritual journey. Often called 'whirling dervishes', the dancers spin in flowing white robes as a form of worship. This practice, now recognised by UNESCO, shows how dance can be a deeply spiritual act rather than mere entertainment.",
+          "depth": 2,
+          "name": "The Mevlevi Order, founded in 13th-century Turkey, practises the Sema ceremony — a meditative spinning dance that represents the soul's spiritual journey. Often called 'whirling dervishes', the dancers spin in flowing white robes as a form of worship. This practice, now recognised by UNESCO, shows how dance can be a deeply spiritual act rather than mere entertainment."
+        },
+        {
+          "text": "Strictly Come Dancing — A British Institution",
+          "depth": 2,
+          "name": "Strictly Come Dancing — A British Institution"
+        },
+        {
+          "text": "'Strictly Come Dancing' (known as 'Dancing with the Stars' internationally) has been one of the BBC's most popular shows since 2004. It pairs celebrities with professional dancers, teaching them ballroom and Latin styles. The show has sparked a nationwide increase in dance class enrolments — many studios now offer 'Strictly-inspired' courses.",
+          "depth": 2,
+          "name": "'Strictly Come Dancing' (known as 'Dancing with the Stars' internationally) has been one of the BBC's most popular shows since 2004. It pairs celebrities with professional dancers, teaching them ballroom and Latin styles. The show has sparked a nationwide increase in dance class enrolments — many studios now offer 'Strictly-inspired' courses."
+        },
+        {
+          "text": "Dance Terminology — French Roots",
+          "depth": 2,
+          "name": "Dance Terminology — French Roots"
+        },
+        {
+          "text": "Ballet terminology is almost entirely in French, regardless of where it's taught: 'plié' (to bend), 'relevé' (to rise), 'pirouette' (a spin), 'jeté' (a jump). This is because ballet was formalised at the court of King Louis XIV of France in the 17th century. Learning these terms is part of studying ballet worldwide.",
+          "depth": 2,
+          "name": "Ballet terminology is almost entirely in French, regardless of where it's taught: 'plié' (to bend), 'relevé' (to rise), 'pirouette' (a spin), 'jeté' (a jump). This is because ballet was formalised at the court of King Louis XIV of France in the 17th century. Learning these terms is part of studying ballet worldwide."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "568:1565",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "B1+ dance vocabulary with exam-relevant collocations.",
+          "depth": 1,
+          "name": "B1+ dance vocabulary with exam-relevant collocations."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "CEFR",
+          "depth": 2,
+          "name": "CEFR"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "choreography",
+          "depth": 2,
+          "name": "choreography"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B2",
+          "depth": 2,
+          "name": "B2"
+        },
+        {
+          "text": "learn the ~, ~ routine, original ~",
+          "depth": 2,
+          "name": "learn the ~, ~ routine, original ~"
+        },
+        {
+          "text": "rehearsal",
+          "depth": 2,
+          "name": "rehearsal"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "dress ~, ~ schedule, in ~ for",
+          "depth": 2,
+          "name": "dress ~, ~ schedule, in ~ for"
+        },
+        {
+          "text": "barre",
+          "depth": 2,
+          "name": "barre"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "at the ~, ~ exercises, ~ work",
+          "depth": 2,
+          "name": "at the ~, ~ exercises, ~ work"
+        },
+        {
+          "text": "routine",
+          "depth": 2,
+          "name": "routine"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1",
+          "depth": 2,
+          "name": "B1"
+        },
+        {
+          "text": "dance ~, daily ~, ~ practice",
+          "depth": 2,
+          "name": "dance ~, daily ~, ~ practice"
+        },
+        {
+          "text": "posture",
+          "depth": 2,
+          "name": "posture"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "good ~, correct ~, improve ~",
+          "depth": 2,
+          "name": "good ~, correct ~, improve ~"
+        },
+        {
+          "text": "flexibility",
+          "depth": 2,
+          "name": "flexibility"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "~ exercises, physical ~, improve ~",
+          "depth": 2,
+          "name": "~ exercises, physical ~, improve ~"
+        },
+        {
+          "text": "tempo",
+          "depth": 2,
+          "name": "tempo"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "fast ~, slow ~, change ~",
+          "depth": 2,
+          "name": "fast ~, slow ~, change ~"
+        },
+        {
+          "text": "recital",
+          "depth": 2,
+          "name": "recital"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B2",
+          "depth": 2,
+          "name": "B2"
+        },
+        {
+          "text": "dance ~, ~ performance, annual ~",
+          "depth": 2,
+          "name": "dance ~, ~ performance, annual ~"
+        },
+        {
+          "text": "audition",
+          "depth": 2,
+          "name": "audition"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "B1+",
+          "depth": 2,
+          "name": "B1+"
+        },
+        {
+          "text": "~ for, dance ~, hold ~s",
+          "depth": 2,
+          "name": "~ for, dance ~, hold ~s"
+        },
+        {
+          "text": "ensemble",
+          "depth": 2,
+          "name": "ensemble"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "B2",
+          "depth": 2,
+          "name": "B2"
+        },
+        {
+          "text": "dance ~, ~ piece, ~ performance",
+          "depth": 2,
+          "name": "dance ~, ~ piece, ~ performance"
+        }
+      ]
+    }
+  }
+}

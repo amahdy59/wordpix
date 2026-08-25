@@ -1,0 +1,585 @@
+{
+  "unitId": "human-body-head-and-face",
+  "name": "The Human Body (Head & Face)",
+  "subtopics": [
+    {
+      "id": "head-structure",
+      "title": "Head Structure",
+      "wordIds": [
+        "head",
+        "skull",
+        "scalp",
+        "temple",
+        "crown",
+        "forehead",
+        "jaw",
+        "chin",
+        "neck",
+        "throat"
+      ]
+    },
+    {
+      "id": "eyes-vision",
+      "title": "Eyes & Vision",
+      "wordIds": [
+        "eye",
+        "eyebrow",
+        "eyelid",
+        "eyelash",
+        "pupil",
+        "iris",
+        "retina",
+        "cornea",
+        "tear-duct",
+        "eye-socket"
+      ]
+    },
+    {
+      "id": "nose-mouth",
+      "title": "Nose & Mouth",
+      "wordIds": [
+        "nose",
+        "nostril",
+        "bridge-of-nose",
+        "mouth",
+        "lip",
+        "upper-lip",
+        "lower-lip",
+        "tongue",
+        "palate",
+        "gums"
+      ]
+    },
+    {
+      "id": "ears",
+      "title": "Ears",
+      "wordIds": [
+        "ear",
+        "earlobe",
+        "ear-canal",
+        "eardrum",
+        "inner-ear",
+        "outer-ear",
+        "hearing",
+        "sound-wave",
+        "balance",
+        "cochlea"
+      ]
+    },
+    {
+      "id": "teeth",
+      "title": "Teeth",
+      "wordIds": [
+        "tooth",
+        "incisor",
+        "canine",
+        "molar",
+        "premolar",
+        "wisdom-tooth",
+        "baby-tooth",
+        "enamel",
+        "root",
+        "crown"
+      ]
+    },
+    {
+      "id": "hair-facial-hair",
+      "title": "Hair & Facial Hair",
+      "wordIds": [
+        "hair",
+        "hairline",
+        "part",
+        "strand",
+        "beard",
+        "mustache",
+        "sideburns",
+        "stubble",
+        "goatee",
+        "braid"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "head",
+      "label": "Head",
+      "ipa": "/hɛd/",
+      "cefr": "A2",
+      "imageNodeId": "467:117"
+    },
+    {
+      "kind": "card",
+      "id": "skull",
+      "label": "Skull",
+      "ipa": "/skʌl/",
+      "cefr": "A2",
+      "imageNodeId": "467:121"
+    },
+    {
+      "kind": "card",
+      "id": "scalp",
+      "label": "Scalp",
+      "ipa": "/skælp/",
+      "cefr": "A2",
+      "imageNodeId": "467:125"
+    },
+    {
+      "kind": "card",
+      "id": "temple",
+      "label": "Temple",
+      "ipa": "/ˈtɛmpəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:129"
+    },
+    {
+      "kind": "card",
+      "id": "crown",
+      "label": "Crown",
+      "ipa": "/kraʊn/",
+      "cefr": "A2",
+      "imageNodeId": "467:133"
+    },
+    {
+      "kind": "card",
+      "id": "forehead",
+      "label": "Forehead",
+      "ipa": "/ˈfɔːrˌhɛd/",
+      "cefr": "A2",
+      "imageNodeId": "467:137"
+    },
+    {
+      "kind": "card",
+      "id": "jaw",
+      "label": "Jaw",
+      "ipa": "/dʒɔː/",
+      "cefr": "A2",
+      "imageNodeId": "467:141"
+    },
+    {
+      "kind": "card",
+      "id": "chin",
+      "label": "Chin",
+      "ipa": "/tʃɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:145"
+    },
+    {
+      "kind": "card",
+      "id": "neck",
+      "label": "Neck",
+      "ipa": "/nɛk/",
+      "cefr": "A2",
+      "imageNodeId": "467:149"
+    },
+    {
+      "kind": "card",
+      "id": "throat",
+      "label": "Throat",
+      "ipa": "/θroʊt/",
+      "cefr": "A2",
+      "imageNodeId": "467:153"
+    },
+    {
+      "kind": "card",
+      "id": "eye",
+      "label": "Eye",
+      "ipa": "/aɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:162"
+    },
+    {
+      "kind": "card",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "ipa": "/ˈaɪˌbraʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:166"
+    },
+    {
+      "kind": "card",
+      "id": "eyelid",
+      "label": "Eyelid",
+      "ipa": "/ˈaɪˌlɪd/",
+      "cefr": "A2",
+      "imageNodeId": "467:170"
+    },
+    {
+      "kind": "card",
+      "id": "eyelash",
+      "label": "Eyelash",
+      "ipa": "/ˈaɪˌlæʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:174"
+    },
+    {
+      "kind": "card",
+      "id": "pupil",
+      "label": "Pupil",
+      "ipa": "/ˈpjuːpəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:178"
+    },
+    {
+      "kind": "card",
+      "id": "iris",
+      "label": "Iris",
+      "ipa": "/ˈaɪrɪs/",
+      "cefr": "A2",
+      "imageNodeId": "467:182"
+    },
+    {
+      "kind": "card",
+      "id": "retina",
+      "label": "Retina",
+      "ipa": "/ˈrɛtɪnə/",
+      "cefr": "A2",
+      "imageNodeId": "467:186"
+    },
+    {
+      "kind": "card",
+      "id": "cornea",
+      "label": "Cornea",
+      "ipa": "/ˈkɔːrniə/",
+      "cefr": "A2",
+      "imageNodeId": "467:190"
+    },
+    {
+      "kind": "card",
+      "id": "tear-duct",
+      "label": "Tear Duct",
+      "ipa": "/tɪər dʌkt/",
+      "cefr": "B1",
+      "imageNodeId": "467:194"
+    },
+    {
+      "kind": "card",
+      "id": "eye-socket",
+      "label": "Eye Socket",
+      "ipa": "/aɪ ˈsɒkɪt/",
+      "cefr": "B1",
+      "imageNodeId": "467:198"
+    },
+    {
+      "kind": "card",
+      "id": "nose",
+      "label": "Nose",
+      "ipa": "/noʊz/",
+      "cefr": "A2",
+      "imageNodeId": "467:207"
+    },
+    {
+      "kind": "card",
+      "id": "nostril",
+      "label": "Nostril",
+      "ipa": "/ˈnɒstrɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:211"
+    },
+    {
+      "kind": "card",
+      "id": "bridge-of-nose",
+      "label": "Bridge of Nose",
+      "ipa": "/brɪdʒ əv noʊz/",
+      "cefr": "B2",
+      "imageNodeId": "467:215"
+    },
+    {
+      "kind": "card",
+      "id": "mouth",
+      "label": "Mouth",
+      "ipa": "/maʊθ/",
+      "cefr": "A2",
+      "imageNodeId": "467:219"
+    },
+    {
+      "kind": "card",
+      "id": "lip",
+      "label": "Lip",
+      "ipa": "/lɪp/",
+      "cefr": "A2",
+      "imageNodeId": "467:223"
+    },
+    {
+      "kind": "card",
+      "id": "upper-lip",
+      "label": "Upper Lip",
+      "ipa": "/ˈʌpər lɪp/",
+      "cefr": "B1",
+      "imageNodeId": "467:227"
+    },
+    {
+      "kind": "card",
+      "id": "lower-lip",
+      "label": "Lower Lip",
+      "ipa": "/ˈloʊər lɪp/",
+      "cefr": "B1",
+      "imageNodeId": "467:231"
+    },
+    {
+      "kind": "card",
+      "id": "tongue",
+      "label": "Tongue",
+      "ipa": "/tʌŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:235"
+    },
+    {
+      "kind": "card",
+      "id": "palate",
+      "label": "Palate",
+      "ipa": "/ˈpælɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:239"
+    },
+    {
+      "kind": "card",
+      "id": "gums",
+      "label": "Gums",
+      "ipa": "/ɡʌmz/",
+      "cefr": "A2",
+      "imageNodeId": "467:243"
+    },
+    {
+      "kind": "card",
+      "id": "ear",
+      "label": "Ear",
+      "ipa": "/ɪər/",
+      "cefr": "A2",
+      "imageNodeId": "467:252"
+    },
+    {
+      "kind": "card",
+      "id": "earlobe",
+      "label": "Earlobe",
+      "ipa": "/ˈɪərˌloʊb/",
+      "cefr": "A2",
+      "imageNodeId": "467:256"
+    },
+    {
+      "kind": "card",
+      "id": "ear-canal",
+      "label": "Ear Canal",
+      "ipa": "/ɪər kəˈnæl/",
+      "cefr": "B1",
+      "imageNodeId": "467:260"
+    },
+    {
+      "kind": "card",
+      "id": "eardrum",
+      "label": "Eardrum",
+      "ipa": "/ˈɪərˌdrʌm/",
+      "cefr": "A2",
+      "imageNodeId": "467:264"
+    },
+    {
+      "kind": "card",
+      "id": "inner-ear",
+      "label": "Inner Ear",
+      "ipa": "/ˈɪnər ɪər/",
+      "cefr": "B1",
+      "imageNodeId": "467:268"
+    },
+    {
+      "kind": "card",
+      "id": "outer-ear",
+      "label": "Outer Ear",
+      "ipa": "/ˈaʊtər ɪər/",
+      "cefr": "B1",
+      "imageNodeId": "467:272"
+    },
+    {
+      "kind": "card",
+      "id": "hearing",
+      "label": "Hearing",
+      "ipa": "/ˈhɪərɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:276"
+    },
+    {
+      "kind": "card",
+      "id": "sound-wave",
+      "label": "Sound Wave",
+      "ipa": "/saʊnd weɪv/",
+      "cefr": "B1",
+      "imageNodeId": "467:280"
+    },
+    {
+      "kind": "card",
+      "id": "balance",
+      "label": "Balance",
+      "ipa": "/ˈbæləns/",
+      "cefr": "A2",
+      "imageNodeId": "467:284"
+    },
+    {
+      "kind": "card",
+      "id": "cochlea",
+      "label": "Cochlea",
+      "ipa": "/ˈkɒkliə/",
+      "cefr": "A2",
+      "imageNodeId": "467:288"
+    },
+    {
+      "kind": "card",
+      "id": "tooth",
+      "label": "Tooth",
+      "ipa": "/tuːθ/",
+      "cefr": "A2",
+      "imageNodeId": "467:297"
+    },
+    {
+      "kind": "card",
+      "id": "incisor",
+      "label": "Incisor",
+      "ipa": "/ɪnˈsaɪzər/",
+      "cefr": "A2",
+      "imageNodeId": "467:301"
+    },
+    {
+      "kind": "card",
+      "id": "canine",
+      "label": "Canine",
+      "ipa": "/ˈkeɪnaɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:305"
+    },
+    {
+      "kind": "card",
+      "id": "molar",
+      "label": "Molar",
+      "ipa": "/ˈmoʊlər/",
+      "cefr": "A2",
+      "imageNodeId": "467:309"
+    },
+    {
+      "kind": "card",
+      "id": "premolar",
+      "label": "Premolar",
+      "ipa": "/priːˈmoʊlər/",
+      "cefr": "A2",
+      "imageNodeId": "467:313"
+    },
+    {
+      "kind": "card",
+      "id": "wisdom-tooth",
+      "label": "Wisdom Tooth",
+      "ipa": "/ˈwɪzdəm tuːθ/",
+      "cefr": "B1",
+      "imageNodeId": "467:317"
+    },
+    {
+      "kind": "card",
+      "id": "baby-tooth",
+      "label": "Baby Tooth",
+      "ipa": "/ˈbeɪbi tuːθ/",
+      "cefr": "B1",
+      "imageNodeId": "467:321"
+    },
+    {
+      "kind": "card",
+      "id": "enamel",
+      "label": "Enamel",
+      "ipa": "/ɪˈnæməl/",
+      "cefr": "A2",
+      "imageNodeId": "467:325"
+    },
+    {
+      "kind": "card",
+      "id": "root",
+      "label": "Root",
+      "ipa": "/ruːt/",
+      "cefr": "A2",
+      "imageNodeId": "467:329"
+    },
+    {
+      "kind": "card",
+      "id": "crown",
+      "label": "Crown",
+      "ipa": "/kraʊn/",
+      "cefr": "A2",
+      "imageNodeId": "467:333"
+    },
+    {
+      "kind": "card",
+      "id": "hair",
+      "label": "Hair",
+      "ipa": "/hɛər/",
+      "cefr": "A2",
+      "imageNodeId": "467:342"
+    },
+    {
+      "kind": "card",
+      "id": "hairline",
+      "label": "Hairline",
+      "ipa": "/ˈhɛərˌlaɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:346"
+    },
+    {
+      "kind": "card",
+      "id": "part",
+      "label": "Part",
+      "ipa": "/pɑːrt/",
+      "cefr": "A2",
+      "imageNodeId": "467:350"
+    },
+    {
+      "kind": "card",
+      "id": "strand",
+      "label": "Strand",
+      "ipa": "/strænd/",
+      "cefr": "A2",
+      "imageNodeId": "467:354"
+    },
+    {
+      "kind": "card",
+      "id": "beard",
+      "label": "Beard",
+      "ipa": "/bɪərd/",
+      "cefr": "A2",
+      "imageNodeId": "467:358"
+    },
+    {
+      "kind": "card",
+      "id": "mustache",
+      "label": "Mustache",
+      "ipa": "/ˈmʌstæʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:362"
+    },
+    {
+      "kind": "card",
+      "id": "sideburns",
+      "label": "Sideburns",
+      "ipa": "/ˈsaɪdˌbɜːrnz/",
+      "cefr": "A2",
+      "imageNodeId": "467:366"
+    },
+    {
+      "kind": "card",
+      "id": "stubble",
+      "label": "Stubble",
+      "ipa": "/ˈstʌbəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:370"
+    },
+    {
+      "kind": "card",
+      "id": "goatee",
+      "label": "Goatee",
+      "ipa": "/ɡoʊˈtiː/",
+      "cefr": "A2",
+      "imageNodeId": "467:374"
+    },
+    {
+      "kind": "card",
+      "id": "braid",
+      "label": "Braid",
+      "ipa": "/breɪd/",
+      "cefr": "A2",
+      "imageNodeId": "467:378"
+    }
+  ],
+  "materials": null
+}

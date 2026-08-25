@@ -1,0 +1,1635 @@
+{
+  "unitId": "submarine",
+  "name": "The Submarine",
+  "subtopics": [
+    {
+      "id": "submarine-structure",
+      "title": "Submarine Structure",
+      "wordIds": [
+        "hull",
+        "conning-tower",
+        "periscope",
+        "hatch",
+        "porthole",
+        "ballast-tank",
+        "propeller",
+        "rudder",
+        "torpedo-tube",
+        "sonar-dome"
+      ]
+    },
+    {
+      "id": "control-room",
+      "title": "Control Room",
+      "wordIds": [
+        "control-panel",
+        "navigation-screen",
+        "depth-gauge",
+        "compass",
+        "radar",
+        "sonar-display",
+        "helm",
+        "throttle",
+        "communication-radio",
+        "alarm"
+      ]
+    },
+    {
+      "id": "crew-quarters",
+      "title": "Crew Quarters",
+      "wordIds": [
+        "bunk-bed",
+        "galley",
+        "mess-hall",
+        "storage-locker",
+        "bathroom",
+        "shower",
+        "laundry",
+        "library",
+        "recreation-room",
+        "captain-s-cabin"
+      ]
+    },
+    {
+      "id": "submarine-crew",
+      "title": "Submarine Crew",
+      "wordIds": [
+        "captain",
+        "navigator",
+        "engineer",
+        "sonar-operator",
+        "radio-operator",
+        "cook",
+        "medic",
+        "diver",
+        "technician",
+        "first-officer"
+      ]
+    },
+    {
+      "id": "underwater-navigation",
+      "title": "Underwater Navigation",
+      "wordIds": [
+        "depth-meter",
+        "sea-chart",
+        "gps",
+        "buoy",
+        "anchor",
+        "searchlight",
+        "underwater-camera",
+        "echo-sounder",
+        "current-meter",
+        "logbook"
+      ]
+    },
+    {
+      "id": "marine-life-observed",
+      "title": "Marine Life Observed",
+      "wordIds": [
+        "whale",
+        "shark",
+        "jellyfish",
+        "giant-squid",
+        "anglerfish",
+        "sea-turtle",
+        "coral",
+        "seaweed",
+        "plankton",
+        "shipwreck",
+        "sonar",
+        "radio",
+        "engine",
+        "pump",
+        "valve",
+        "officer"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "hull",
+      "label": "Hull",
+      "ipa": "/hʌl/",
+      "cefr": "B1",
+      "imageNodeId": "45:3995"
+    },
+    {
+      "kind": "card",
+      "id": "conning-tower",
+      "label": "Conning Tower",
+      "ipa": "/ˈkɒnɪŋ ˈtaʊər/",
+      "cefr": "B2",
+      "imageNodeId": "45:3999"
+    },
+    {
+      "kind": "card",
+      "id": "periscope",
+      "label": "Periscope",
+      "ipa": "/ˈpɛrɪˌskoʊp/",
+      "cefr": "B1",
+      "imageNodeId": "45:4003"
+    },
+    {
+      "kind": "card",
+      "id": "hatch",
+      "label": "Hatch",
+      "ipa": "/hætʃ/",
+      "cefr": "B1",
+      "imageNodeId": "45:4007"
+    },
+    {
+      "kind": "card",
+      "id": "porthole",
+      "label": "Porthole",
+      "ipa": "/ˈpɔːrtˌhoʊl/",
+      "cefr": "B1",
+      "imageNodeId": "45:4011"
+    },
+    {
+      "kind": "card",
+      "id": "ballast-tank",
+      "label": "Ballast Tank",
+      "ipa": "/ˈbæləst tæŋk/",
+      "cefr": "B2",
+      "imageNodeId": "45:4015"
+    },
+    {
+      "kind": "card",
+      "id": "propeller",
+      "label": "Propeller",
+      "ipa": "/prəˈpɛlər/",
+      "cefr": "B1",
+      "imageNodeId": "45:4019"
+    },
+    {
+      "kind": "card",
+      "id": "rudder",
+      "label": "Rudder",
+      "ipa": "/ˈrʌdər/",
+      "cefr": "B1",
+      "imageNodeId": "45:4023"
+    },
+    {
+      "kind": "card",
+      "id": "torpedo-tube",
+      "label": "Torpedo Tube",
+      "ipa": "/tɔːrˈpiːdoʊ tjuːb/",
+      "cefr": "B2",
+      "imageNodeId": "45:4027"
+    },
+    {
+      "kind": "card",
+      "id": "sonar-dome",
+      "label": "Sonar Dome",
+      "ipa": "/ˈsoʊnɑːr doʊm/",
+      "cefr": "B2",
+      "imageNodeId": "45:4031"
+    },
+    {
+      "kind": "card",
+      "id": "control-panel",
+      "label": "Control Panel",
+      "ipa": "/kənˈtroʊl ˈpænəl/",
+      "cefr": "B2",
+      "imageNodeId": "45:4040"
+    },
+    {
+      "kind": "card",
+      "id": "navigation-screen",
+      "label": "Navigation Screen",
+      "ipa": "/ˌnævɪˈɡeɪʃən skriːn/",
+      "cefr": "C1",
+      "imageNodeId": "45:4044"
+    },
+    {
+      "kind": "card",
+      "id": "depth-gauge",
+      "label": "Depth Gauge",
+      "ipa": "/dɛpθ ɡeɪdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "45:4048"
+    },
+    {
+      "kind": "card",
+      "id": "compass",
+      "label": "Compass",
+      "ipa": "/ˈkʌmpəs/",
+      "cefr": "B1",
+      "imageNodeId": "45:4052"
+    },
+    {
+      "kind": "card",
+      "id": "radar",
+      "label": "Radar",
+      "ipa": "/ˈreɪdɑːr/",
+      "cefr": "B1",
+      "imageNodeId": "45:4056"
+    },
+    {
+      "kind": "card",
+      "id": "sonar-display",
+      "label": "Sonar Display",
+      "ipa": "/ˈsoʊnɑːr dɪˈspleɪ/",
+      "cefr": "B2",
+      "imageNodeId": "45:4060"
+    },
+    {
+      "kind": "card",
+      "id": "helm",
+      "label": "Helm",
+      "ipa": "/hɛlm/",
+      "cefr": "B1",
+      "imageNodeId": "45:4064"
+    },
+    {
+      "kind": "card",
+      "id": "throttle",
+      "label": "Throttle",
+      "ipa": "/ˈθrɒtəl/",
+      "cefr": "B1",
+      "imageNodeId": "45:4068"
+    },
+    {
+      "kind": "card",
+      "id": "communication-radio",
+      "label": "Communication Radio",
+      "ipa": "/kəˌmjuːnɪˈkeɪʃən ˈreɪdiˌoʊ/",
+      "cefr": "C1",
+      "imageNodeId": "45:4072"
+    },
+    {
+      "kind": "card",
+      "id": "alarm",
+      "label": "Alarm",
+      "ipa": "/əˈlɑːrm/",
+      "cefr": "B1",
+      "imageNodeId": "45:4076"
+    },
+    {
+      "kind": "card",
+      "id": "bunk-bed",
+      "label": "Bunk Bed",
+      "ipa": "/bʌŋk bɛd/",
+      "cefr": "B2",
+      "imageNodeId": "45:4085"
+    },
+    {
+      "kind": "card",
+      "id": "galley",
+      "label": "Galley",
+      "ipa": "/ˈɡæli/",
+      "cefr": "B1",
+      "imageNodeId": "45:4089"
+    },
+    {
+      "kind": "card",
+      "id": "mess-hall",
+      "label": "Mess Hall",
+      "ipa": "/mɛs hɔːl/",
+      "cefr": "B2",
+      "imageNodeId": "45:4093"
+    },
+    {
+      "kind": "card",
+      "id": "storage-locker",
+      "label": "Storage Locker",
+      "ipa": "/ˈstɔːrɪdʒ ˈlɒkər/",
+      "cefr": "B2",
+      "imageNodeId": "45:4097"
+    },
+    {
+      "kind": "card",
+      "id": "bathroom",
+      "label": "Bathroom",
+      "ipa": "/ˈbæθˌruːm/",
+      "cefr": "B1",
+      "imageNodeId": "45:4101"
+    },
+    {
+      "kind": "card",
+      "id": "shower",
+      "label": "Shower",
+      "ipa": "/ˈʃaʊər/",
+      "cefr": "B1",
+      "imageNodeId": "45:4105"
+    },
+    {
+      "kind": "card",
+      "id": "laundry",
+      "label": "Laundry",
+      "ipa": "/ˈlɔːndri/",
+      "cefr": "B1",
+      "imageNodeId": "45:4109"
+    },
+    {
+      "kind": "card",
+      "id": "library",
+      "label": "Library",
+      "ipa": "/ˈlaɪbrəri/",
+      "cefr": "B1",
+      "imageNodeId": "45:4113"
+    },
+    {
+      "kind": "card",
+      "id": "recreation-room",
+      "label": "Recreation Room",
+      "ipa": "/ˌrɛkriˈeɪʃən ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "45:4117"
+    },
+    {
+      "kind": "card",
+      "id": "captain-s-cabin",
+      "label": "Captain's Cabin",
+      "ipa": "/ˈkæptɪnz ˈkæbɪn/",
+      "cefr": "C1",
+      "imageNodeId": "45:4121"
+    },
+    {
+      "kind": "card",
+      "id": "captain",
+      "label": "Captain",
+      "ipa": "/ˈkæptɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:4130"
+    },
+    {
+      "kind": "card",
+      "id": "navigator",
+      "label": "Navigator",
+      "ipa": "/ˈnævɪˌɡeɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "45:4134"
+    },
+    {
+      "kind": "card",
+      "id": "engineer",
+      "label": "Engineer",
+      "ipa": "/ˌɛndʒɪˈnɪər/",
+      "cefr": "B1",
+      "imageNodeId": "45:4138"
+    },
+    {
+      "kind": "card",
+      "id": "sonar-operator",
+      "label": "Sonar Operator",
+      "ipa": "/ˈsoʊnɑːr ˈɒpəˌreɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:4142"
+    },
+    {
+      "kind": "card",
+      "id": "radio-operator",
+      "label": "Radio Operator",
+      "ipa": "/ˈreɪdiˌoʊ ˈɒpəˌreɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:4146"
+    },
+    {
+      "kind": "card",
+      "id": "cook",
+      "label": "Cook",
+      "ipa": "/kʊk/",
+      "cefr": "B1",
+      "imageNodeId": "45:4150"
+    },
+    {
+      "kind": "card",
+      "id": "medic",
+      "label": "Medic",
+      "ipa": "/ˈmɛdɪk/",
+      "cefr": "B1",
+      "imageNodeId": "45:4154"
+    },
+    {
+      "kind": "card",
+      "id": "diver",
+      "label": "Diver",
+      "ipa": "/ˈdaɪvər/",
+      "cefr": "B1",
+      "imageNodeId": "45:4158"
+    },
+    {
+      "kind": "card",
+      "id": "technician",
+      "label": "Technician",
+      "ipa": "/tɛkˈnɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "45:4162"
+    },
+    {
+      "kind": "card",
+      "id": "first-officer",
+      "label": "First Officer",
+      "ipa": "/fɜːrst ˈɒfɪsər/",
+      "cefr": "B2",
+      "imageNodeId": "45:4166"
+    },
+    {
+      "kind": "card",
+      "id": "depth-meter",
+      "label": "Depth Meter",
+      "ipa": "/dɛpθ ˈmiːtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:4175"
+    },
+    {
+      "kind": "card",
+      "id": "sea-chart",
+      "label": "Sea Chart",
+      "ipa": "/siː tʃɑːrt/",
+      "cefr": "B2",
+      "imageNodeId": "45:4179"
+    },
+    {
+      "kind": "card",
+      "id": "gps",
+      "label": "GPS",
+      "ipa": "/ˌdʒiːpiːˈɛs/",
+      "cefr": "B1",
+      "imageNodeId": "45:4183"
+    },
+    {
+      "kind": "card",
+      "id": "buoy",
+      "label": "Buoy",
+      "ipa": "/ˈbɔɪ/",
+      "cefr": "B1",
+      "imageNodeId": "45:4187"
+    },
+    {
+      "kind": "card",
+      "id": "anchor",
+      "label": "Anchor",
+      "ipa": "/ˈæŋkər/",
+      "cefr": "B1",
+      "imageNodeId": "45:4191"
+    },
+    {
+      "kind": "card",
+      "id": "searchlight",
+      "label": "Searchlight",
+      "ipa": "/ˈsɜːrtʃˌlaɪt/",
+      "cefr": "B2",
+      "imageNodeId": "45:4195"
+    },
+    {
+      "kind": "card",
+      "id": "underwater-camera",
+      "label": "Underwater Camera",
+      "ipa": "/ˌʌndərˈwɔːtər ˈkæmərə/",
+      "cefr": "C1",
+      "imageNodeId": "45:4199"
+    },
+    {
+      "kind": "card",
+      "id": "echo-sounder",
+      "label": "Echo Sounder",
+      "ipa": "/ˈɛkoʊ ˈsaʊndər/",
+      "cefr": "B2",
+      "imageNodeId": "45:4203"
+    },
+    {
+      "kind": "card",
+      "id": "current-meter",
+      "label": "Current Meter",
+      "ipa": "/ˈkʌrənt ˈmiːtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:4207"
+    },
+    {
+      "kind": "card",
+      "id": "logbook",
+      "label": "Logbook",
+      "ipa": "/ˈlɒɡˌbʊk/",
+      "cefr": "B1",
+      "imageNodeId": "45:4211"
+    },
+    {
+      "kind": "card",
+      "id": "whale",
+      "label": "Whale",
+      "ipa": "/weɪl/",
+      "cefr": "B1",
+      "imageNodeId": "45:4220"
+    },
+    {
+      "kind": "card",
+      "id": "shark",
+      "label": "Shark",
+      "ipa": "/ʃɑːrk/",
+      "cefr": "B1",
+      "imageNodeId": "45:4224"
+    },
+    {
+      "kind": "card",
+      "id": "jellyfish",
+      "label": "Jellyfish",
+      "ipa": "/ˈdʒɛliˌfɪʃ/",
+      "cefr": "B1",
+      "imageNodeId": "45:4228"
+    },
+    {
+      "kind": "card",
+      "id": "giant-squid",
+      "label": "Giant Squid",
+      "ipa": "/ˈdʒaɪənt skwɪd/",
+      "cefr": "B2",
+      "imageNodeId": "45:4232"
+    },
+    {
+      "kind": "card",
+      "id": "anglerfish",
+      "label": "Anglerfish",
+      "ipa": "/ˈæŋɡlərˌfɪʃ/",
+      "cefr": "B2",
+      "imageNodeId": "45:4236"
+    },
+    {
+      "kind": "card",
+      "id": "sea-turtle",
+      "label": "Sea Turtle",
+      "ipa": "/siː ˈtɜːrtəl/",
+      "cefr": "B2",
+      "imageNodeId": "45:4240"
+    },
+    {
+      "kind": "card",
+      "id": "coral",
+      "label": "Coral",
+      "ipa": "/ˈkɒrəl/",
+      "cefr": "B1",
+      "imageNodeId": "45:4244"
+    },
+    {
+      "kind": "card",
+      "id": "seaweed",
+      "label": "Seaweed",
+      "ipa": "/ˈsiːˌwiːd/",
+      "cefr": "B1",
+      "imageNodeId": "45:4248"
+    },
+    {
+      "kind": "card",
+      "id": "plankton",
+      "label": "Plankton",
+      "ipa": "/ˈplæŋktən/",
+      "cefr": "B1",
+      "imageNodeId": "45:4252"
+    },
+    {
+      "kind": "card",
+      "id": "shipwreck",
+      "label": "Shipwreck",
+      "ipa": "/ˈʃɪpˌrɛk/",
+      "cefr": "B1",
+      "imageNodeId": "45:4256"
+    },
+    {
+      "kind": "card",
+      "id": "sonar",
+      "label": "Sonar",
+      "ipa": "/ˈsoʊnɑːr/",
+      "cefr": "B1",
+      "imageNodeId": "39:5310"
+    },
+    {
+      "kind": "card",
+      "id": "radio",
+      "label": "Radio",
+      "ipa": "/ˈreɪdiˌoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "39:5326"
+    },
+    {
+      "kind": "card",
+      "id": "engine",
+      "label": "Engine",
+      "ipa": "/ˈɛndʒɪn/",
+      "cefr": "B1",
+      "imageNodeId": "39:5330"
+    },
+    {
+      "kind": "card",
+      "id": "pump",
+      "label": "Pump",
+      "ipa": "/pʌmp/",
+      "cefr": "B1",
+      "imageNodeId": "39:5334"
+    },
+    {
+      "kind": "card",
+      "id": "valve",
+      "label": "Valve",
+      "ipa": "/vælv/",
+      "cefr": "B1",
+      "imageNodeId": "39:5338"
+    },
+    {
+      "kind": "card",
+      "id": "officer",
+      "label": "Officer",
+      "ipa": "/ˈɒfɪsər/",
+      "cefr": "B1",
+      "imageNodeId": "39:5361"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "549:1614",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "549:1616",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1+ · Topic: The Submarine",
+          "depth": 1,
+          "name": "Level: B1+ · Topic: The Submarine"
+        },
+        {
+          "text": "Under the Waves — Life on Board a Submarine\n\nA submarine is a vessel that travels beneath the surface of the ocean. It can stay underwater for weeks or even months. Life inside is cramped, noisy, and fascinating.\n\nThe outside of the submarine is called the hull — a strong metal shell designed to resist the enormous pressure of deep water. The conning tower rises from the top of the hull and contains the periscope — a tube with mirrors that allows the crew to see the surface while the submarine stays hidden below. A hatch on top provides the only way in or out. Portholes — small, round windows — are found on some older submarines. At the back, a propeller pushes the vessel through the water, and a rudder steers it left or right.\n\nTo dive, the submarine fills its ballast tanks with water, making it heavier than the surrounding sea. To rise, compressed air pushes the water out, making the submarine lighter. This simple principle — controlling weight — is how a submarine moves up and down. A torpedo tube is built into the bow for military submarines. A sonar dome on the front sends sound waves through the water to detect objects.\n\nInside the submarine, the control room is the centre of operations. A navigation screen shows the submarine's position. A depth gauge tells the crew how far below the surface they are. A compass shows direction. A radar screen and a sonar display help the crew detect other vessels. The helm — a steering wheel — controls direction. A throttle controls speed. A communication radio connects the crew to the surface. An alarm warns of danger.\n\nThe captain commands the submarine from the control room. A navigator plots the course using a sea chart and GPS. An engineer maintains the engines and systems. A sonar operator listens for sounds in the water. A radio operator handles communications. A technician repairs equipment. A cook prepares meals in the galley — the submarine's small kitchen. A medic provides medical care. A diver may be on board for special missions. The first officer is second in command.\n\nLiving spaces are tight. Crew members sleep in bunk beds stacked three high. The mess hall is where everyone eats — and the only social space. A storage locker holds personal items. The bathroom and shower are shared. A small laundry handles uniforms. A library and a recreation room provide entertainment during long patrols.\n\nThe ocean outside is monitored constantly. A depth meter tracks the submarine's depth. A buoy can be released to mark a position. An anchor holds the submarine in place when surfaced. A searchlight illuminates the dark water. An underwater camera records images. An echo sounder maps the ocean floor. A current meter measures the movement of the water.\n\nLife on a submarine requires discipline, teamwork, and the ability to live in a small space with the same people for a long time. The ocean is silent, dark, and immense — and somewhere beneath it, a submarine moves quietly through the deep.",
+          "depth": 1,
+          "name": "Under the Waves — Life on Board a Submarine A submarine is a vessel that travels beneath the surface of the ocean. It can stay underwater for weeks or even months. Life inside is cramped, noisy, and fascinating. The outside of the submarine is called the hull — a strong metal shell designed to resist the enormous pressure of deep water. The conning tower rises from the top of the hull and contains the periscope — a tube with mirrors that allows the crew to see the surface while the submarine stays hidden below. A hatch on top provides the only way in or out. Portholes — small, round windows — are found on some older submarines. At the back, a propeller pushes the vessel through the water, and a rudder steers it left or right. To dive, the submarine fills its ballast tanks with water, making it heavier than the surrounding sea. To rise, compressed air pushes the water out, making the submarine lighter. This simple principle — controlling weight — is how a submarine moves up and down. A torpedo tube is built into the bow for military submarines. A sonar dome on the front sends sound waves through the water to detect objects. Inside the submarine, the control room is the centre of operations. A navigation screen shows the submarine's position. A depth gauge tells the crew how far below the surface they are. A compass shows direction. A radar screen and a sonar display help the crew detect other vessels. The helm — a steering wheel — controls direction. A throttle controls speed. A communication radio connects the crew to the surface. An alarm warns of danger. The captain commands the submarine from the control room. A navigator plots the course using a sea chart and GPS. An engineer maintains the engines and systems. A sonar operator listens for sounds in the water. A radio operator handles communications. A technician repairs equipment. A cook prepares meals in the galley — the submarine's small kitchen. A medic provides medical care. A diver may be on board for special missions. The first officer is second in command. Living spaces are tight. Crew members sleep in bunk beds stacked three high. The mess hall is where everyone eats — and the only social space. A storage locker holds personal items. The bathroom and shower are shared. A small laundry handles uniforms. A library and a recreation room provide entertainment during long patrols. The ocean outside is monitored constantly. A depth meter tracks the submarine's depth. A buoy can be released to mark a position. An anchor holds the submarine in place when surfaced. A searchlight illuminates the dark water. An underwater camera records images. An echo sounder maps the ocean floor. A current meter measures the movement of the water. Life on a submarine requires discipline, teamwork, and the ability to live in a small space with the same people for a long time. The ocean is silent, dark, and immense — and somewhere beneath it, a submarine moves quietly through the deep."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. How does a submarine dive and rise? Explain the role of the ballast tanks.",
+          "depth": 1,
+          "name": "1. How does a submarine dive and rise? Explain the role of the ballast tanks."
+        },
+        {
+          "text": "2. Name five crew members on a submarine and describe what each person does.",
+          "depth": 1,
+          "name": "2. Name five crew members on a submarine and describe what each person does."
+        },
+        {
+          "text": "3. What equipment in the control room helps the crew navigate underwater?",
+          "depth": 1,
+          "name": "3. What equipment in the control room helps the crew navigate underwater?"
+        },
+        {
+          "text": "4. What are the living conditions like on a submarine? Describe the spaces available to the crew.",
+          "depth": 1,
+          "name": "4. What are the living conditions like on a submarine? Describe the spaces available to the crew."
+        },
+        {
+          "text": "5. Why does life on a submarine require 'discipline, teamwork, and the ability to live in a small space'?",
+          "depth": 1,
+          "name": "5. Why does life on a submarine require 'discipline, teamwork, and the ability to live in a small space'?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "549:1629",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "in deep water",
+          "depth": 2,
+          "name": "in deep water"
+        },
+        {
+          "text": "in serious trouble or difficulty",
+          "depth": 2,
+          "name": "in serious trouble or difficulty"
+        },
+        {
+          "text": "\"When the depth gauge showed three hundred metres and the alarm sounded, we knew we were in deep water.\"",
+          "depth": 2,
+          "name": "\"When the depth gauge showed three hundred metres and the alarm sounded, we knew we were in deep water.\""
+        },
+        {
+          "text": "run a tight ship",
+          "depth": 2,
+          "name": "run a tight ship"
+        },
+        {
+          "text": "manage an organisation or group strictly and efficiently",
+          "depth": 2,
+          "name": "manage an organisation or group strictly and efficiently"
+        },
+        {
+          "text": "\"The captain runs a tight ship — every crew member knows their role, from the navigator to the sonar operator.\"",
+          "depth": 2,
+          "name": "\"The captain runs a tight ship — every crew member knows their role, from the navigator to the sonar operator.\""
+        },
+        {
+          "text": "all hands on deck",
+          "depth": 2,
+          "name": "all hands on deck"
+        },
+        {
+          "text": "everyone is needed to help with something urgent",
+          "depth": 2,
+          "name": "everyone is needed to help with something urgent"
+        },
+        {
+          "text": "\"When the hull started leaking, it was all hands on deck — even the engineer left the galley.\"",
+          "depth": 2,
+          "name": "\"When the hull started leaking, it was all hands on deck — even the engineer left the galley.\""
+        },
+        {
+          "text": "sink or swim",
+          "depth": 2,
+          "name": "sink or swim"
+        },
+        {
+          "text": "either fail or succeed by your own efforts",
+          "depth": 2,
+          "name": "either fail or succeed by your own efforts"
+        },
+        {
+          "text": "\"On a submarine, you learn fast — it's sink or swim, and there's no room for hesitation.\"",
+          "depth": 2,
+          "name": "\"On a submarine, you learn fast — it's sink or swim, and there's no room for hesitation.\""
+        },
+        {
+          "text": "under the radar",
+          "depth": 2,
+          "name": "under the radar"
+        },
+        {
+          "text": "without being noticed or detected",
+          "depth": 2,
+          "name": "without being noticed or detected"
+        },
+        {
+          "text": "\"The submarine passed under the radar, using silent running to avoid the sonar dome detection.\"",
+          "depth": 2,
+          "name": "\"The submarine passed under the radar, using silent running to avoid the sonar dome detection.\""
+        },
+        {
+          "text": "go overboard",
+          "depth": 2,
+          "name": "go overboard"
+        },
+        {
+          "text": "do too much of something; be excessive",
+          "depth": 2,
+          "name": "do too much of something; be excessive"
+        },
+        {
+          "text": "\"The cook in the galley went overboard with the spices — the mess hall smelled like a restaurant.\"",
+          "depth": 2,
+          "name": "\"The cook in the galley went overboard with the spices — the mess hall smelled like a restaurant.\""
+        },
+        {
+          "text": "batten down the hatches",
+          "depth": 2,
+          "name": "batten down the hatches"
+        },
+        {
+          "text": "prepare for a difficult or dangerous situation",
+          "depth": 2,
+          "name": "prepare for a difficult or dangerous situation"
+        },
+        {
+          "text": "\"The captain ordered the crew to batten down the hatches — close every hatch and seal the conning tower.\"",
+          "depth": 2,
+          "name": "\"The captain ordered the crew to batten down the hatches — close every hatch and seal the conning tower.\""
+        },
+        {
+          "text": "take the helm",
+          "depth": 2,
+          "name": "take the helm"
+        },
+        {
+          "text": "take control or leadership of something",
+          "depth": 2,
+          "name": "take control or leadership of something"
+        },
+        {
+          "text": "\"The navigator took the helm when the captain went to the captain's cabin for rest.\"",
+          "depth": 2,
+          "name": "\"The navigator took the helm when the captain went to the captain's cabin for rest.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "549:1665",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A captain briefing the crew as the submarine prepares to dive",
+          "depth": 1,
+          "name": "Scene: A captain briefing the crew as the submarine prepares to dive"
+        },
+        {
+          "text": "Captain:",
+          "depth": 2,
+          "name": "Captain:"
+        },
+        {
+          "text": "All stations report. Navigator — what's our position?",
+          "depth": 2,
+          "name": "All stations report. Navigator — what's our position?"
+        },
+        {
+          "text": "Navigator:",
+          "depth": 2,
+          "name": "Navigator:"
+        },
+        {
+          "text": "Thirty kilometres from the target zone. The compass and navigation screen confirm our heading.",
+          "depth": 2,
+          "name": "Thirty kilometres from the target zone. The compass and navigation screen confirm our heading."
+        },
+        {
+          "text": "Captain:",
+          "depth": 2,
+          "name": "Captain:"
+        },
+        {
+          "text": "Good. Engineer — ballast tank status?",
+          "depth": 2,
+          "name": "Good. Engineer — ballast tank status?"
+        },
+        {
+          "text": "Engineer:",
+          "depth": 2,
+          "name": "Engineer:"
+        },
+        {
+          "text": "Ballast tanks ready to flood. The propeller and rudder are responding. Hull pressure is normal.",
+          "depth": 2,
+          "name": "Ballast tanks ready to flood. The propeller and rudder are responding. Hull pressure is normal."
+        },
+        {
+          "text": "Captain:",
+          "depth": 2,
+          "name": "Captain:"
+        },
+        {
+          "text": "Sonar operator — anything on the sonar display?",
+          "depth": 2,
+          "name": "Sonar operator — anything on the sonar display?"
+        },
+        {
+          "text": "Sonar Op:",
+          "depth": 2,
+          "name": "Sonar Op:"
+        },
+        {
+          "text": "Clear for now. The sonar dome is picking up some marine traffic on the surface, but nothing close.",
+          "depth": 2,
+          "name": "Clear for now. The sonar dome is picking up some marine traffic on the surface, but nothing close."
+        },
+        {
+          "text": "Captain:",
+          "depth": 2,
+          "name": "Captain:"
+        },
+        {
+          "text": "Close the hatch and seal the conning tower. We're diving to one hundred and fifty metres.",
+          "depth": 2,
+          "name": "Close the hatch and seal the conning tower. We're diving to one hundred and fifty metres."
+        },
+        {
+          "text": "Navigator:",
+          "depth": 2,
+          "name": "Navigator:"
+        },
+        {
+          "text": "Depth gauge reading steady. The periscope is retracted.",
+          "depth": 2,
+          "name": "Depth gauge reading steady. The periscope is retracted."
+        },
+        {
+          "text": "Captain:",
+          "depth": 2,
+          "name": "Captain:"
+        },
+        {
+          "text": "Good. Helm — take us down slowly. Throttle at quarter speed.",
+          "depth": 2,
+          "name": "Good. Helm — take us down slowly. Throttle at quarter speed."
+        },
+        {
+          "text": "Engineer:",
+          "depth": 2,
+          "name": "Engineer:"
+        },
+        {
+          "text": "The alarm just triggered — a minor pressure fluctuation near the torpedo tube compartment. Checking now.",
+          "depth": 2,
+          "name": "The alarm just triggered — a minor pressure fluctuation near the torpedo tube compartment. Checking now."
+        },
+        {
+          "text": "Captain:",
+          "depth": 2,
+          "name": "Captain:"
+        },
+        {
+          "text": "Report back immediately. Everyone stay at your stations. Communication radio — send our position update before we lose surface signal.",
+          "depth": 2,
+          "name": "Report back immediately. Everyone stay at your stations. Communication radio — send our position update before we lose surface signal."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "549:1703",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The submarine can to stay underwater for three months.\"",
+          "depth": 2,
+          "name": "❌ \"The submarine can to stay underwater for three months.\""
+        },
+        {
+          "text": "✅ \"The submarine can stay underwater for three months.\"",
+          "depth": 2,
+          "name": "✅ \"The submarine can stay underwater for three months.\""
+        },
+        {
+          "text": "Modal verbs (can, could, must, should, will) + bare infinitive — no 'to.' 'It can stay.' 'They must dive.' 'We should surface.' This rule has no exceptions. Even 'be able to' — which means the same as 'can' — follows a different structure: 'It is able to stay.'",
+          "depth": 2,
+          "name": "Modal verbs (can, could, must, should, will) + bare infinitive — no 'to.' 'It can stay.' 'They must dive.' 'We should surface.' This rule has no exceptions. Even 'be able to' — which means the same as 'can' — follows a different structure: 'It is able to stay.'"
+        },
+        {
+          "text": "❌ \"The captain told to the crew that they must prepare for diving.\"",
+          "depth": 2,
+          "name": "❌ \"The captain told to the crew that they must prepare for diving.\""
+        },
+        {
+          "text": "✅ \"The captain told the crew that they must prepare for diving.\"",
+          "depth": 2,
+          "name": "✅ \"The captain told the crew that they must prepare for diving.\""
+        },
+        {
+          "text": "'Tell' + person (no 'to'): 'He told the crew.' 'She told us.' 'Say' + to + person: 'He said to the crew.' Never 'told to the crew.' Remember: tell someone, say to someone.",
+          "depth": 2,
+          "name": "'Tell' + person (no 'to'): 'He told the crew.' 'She told us.' 'Say' + to + person: 'He said to the crew.' Never 'told to the crew.' Remember: tell someone, say to someone."
+        },
+        {
+          "text": "❌ \"How deep the submarine can go? Is it dangerous?\"",
+          "depth": 2,
+          "name": "❌ \"How deep the submarine can go? Is it dangerous?\""
+        },
+        {
+          "text": "✅ \"How deep can the submarine go? Is it dangerous?\"",
+          "depth": 2,
+          "name": "✅ \"How deep can the submarine go? Is it dangerous?\""
+        },
+        {
+          "text": "In questions with 'how + adjective/adverb', the auxiliary comes before the subject: 'How deep can it go?' 'How fast does it travel?' 'How long has it been underwater?' Never 'How deep it can go?' in a direct question (that word order is for indirect questions: 'I wonder how deep it can go').",
+          "depth": 2,
+          "name": "In questions with 'how + adjective/adverb', the auxiliary comes before the subject: 'How deep can it go?' 'How fast does it travel?' 'How long has it been underwater?' Never 'How deep it can go?' in a direct question (that word order is for indirect questions: 'I wonder how deep it can go')."
+        },
+        {
+          "text": "❌ \"The crew are working on the submarine since two months.\"",
+          "depth": 2,
+          "name": "❌ \"The crew are working on the submarine since two months.\""
+        },
+        {
+          "text": "✅ \"The crew have been working on the submarine for two months.\"",
+          "depth": 2,
+          "name": "✅ \"The crew have been working on the submarine for two months.\""
+        },
+        {
+          "text": "'For' + duration: 'for two months.' 'Since' + point in time: 'since January.' Also: use present perfect continuous ('have been working') for ongoing actions from past to present, not present simple ('are working').",
+          "depth": 2,
+          "name": "'For' + duration: 'for two months.' 'Since' + point in time: 'since January.' Also: use present perfect continuous ('have been working') for ongoing actions from past to present, not present simple ('are working')."
+        },
+        {
+          "text": "❌ \"There are less space on a submarine than on a ship.\"",
+          "depth": 2,
+          "name": "❌ \"There are less space on a submarine than on a ship.\""
+        },
+        {
+          "text": "✅ \"There is less space on a submarine than on a ship.\"",
+          "depth": 2,
+          "name": "✅ \"There is less space on a submarine than on a ship.\""
+        },
+        {
+          "text": "'Space' (when meaning room/area) is uncountable: 'less space' with 'is.' 'Less' + uncountable, 'fewer' + countable: 'less space', 'fewer rooms.' The verb also changes: 'There is less space' (singular) vs. 'There are fewer rooms' (plural).",
+          "depth": 2,
+          "name": "'Space' (when meaning room/area) is uncountable: 'less space' with 'is.' 'Less' + uncountable, 'fewer' + countable: 'less space', 'fewer rooms.' The verb also changes: 'There is less space' (singular) vs. 'There are fewer rooms' (plural)."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "549:1727",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how submarine and naval vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how submarine and naval vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "submerge",
+          "depth": 2,
+          "name": "submerge"
+        },
+        {
+          "text": "submersion / submersible",
+          "depth": 2,
+          "name": "submersion / submersible"
+        },
+        {
+          "text": "submerge",
+          "depth": 2,
+          "name": "submerge"
+        },
+        {
+          "text": "submerged",
+          "depth": 2,
+          "name": "submerged"
+        },
+        {
+          "text": "navigate",
+          "depth": 2,
+          "name": "navigate"
+        },
+        {
+          "text": "navigation / navigator",
+          "depth": 2,
+          "name": "navigation / navigator"
+        },
+        {
+          "text": "navigate",
+          "depth": 2,
+          "name": "navigate"
+        },
+        {
+          "text": "navigational",
+          "depth": 2,
+          "name": "navigational"
+        },
+        {
+          "text": "propel",
+          "depth": 2,
+          "name": "propel"
+        },
+        {
+          "text": "propulsion / propeller",
+          "depth": 2,
+          "name": "propulsion / propeller"
+        },
+        {
+          "text": "propel",
+          "depth": 2,
+          "name": "propel"
+        },
+        {
+          "text": "propelled",
+          "depth": 2,
+          "name": "propelled"
+        },
+        {
+          "text": "compress",
+          "depth": 2,
+          "name": "compress"
+        },
+        {
+          "text": "compression / compressor",
+          "depth": 2,
+          "name": "compression / compressor"
+        },
+        {
+          "text": "compress",
+          "depth": 2,
+          "name": "compress"
+        },
+        {
+          "text": "compressed",
+          "depth": 2,
+          "name": "compressed"
+        },
+        {
+          "text": "detect",
+          "depth": 2,
+          "name": "detect"
+        },
+        {
+          "text": "detection / detector",
+          "depth": 2,
+          "name": "detection / detector"
+        },
+        {
+          "text": "detect",
+          "depth": 2,
+          "name": "detect"
+        },
+        {
+          "text": "detectable",
+          "depth": 2,
+          "name": "detectable"
+        },
+        {
+          "text": "pressurise",
+          "depth": 2,
+          "name": "pressurise"
+        },
+        {
+          "text": "pressurisation",
+          "depth": 2,
+          "name": "pressurisation"
+        },
+        {
+          "text": "pressurise",
+          "depth": 2,
+          "name": "pressurise"
+        },
+        {
+          "text": "pressurised",
+          "depth": 2,
+          "name": "pressurised"
+        },
+        {
+          "text": "communicate",
+          "depth": 2,
+          "name": "communicate"
+        },
+        {
+          "text": "communication",
+          "depth": 2,
+          "name": "communication"
+        },
+        {
+          "text": "communicate",
+          "depth": 2,
+          "name": "communicate"
+        },
+        {
+          "text": "communicative",
+          "depth": 2,
+          "name": "communicative"
+        },
+        {
+          "text": "torpedo",
+          "depth": 2,
+          "name": "torpedo"
+        },
+        {
+          "text": "torpedo",
+          "depth": 2,
+          "name": "torpedo"
+        },
+        {
+          "text": "torpedo",
+          "depth": 2,
+          "name": "torpedo"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "periscope",
+          "depth": 2,
+          "name": "periscope"
+        },
+        {
+          "text": "periscope",
+          "depth": 2,
+          "name": "periscope"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "periscopic",
+          "depth": 2,
+          "name": "periscopic"
+        },
+        {
+          "text": "buoyant",
+          "depth": 2,
+          "name": "buoyant"
+        },
+        {
+          "text": "buoyancy",
+          "depth": 2,
+          "name": "buoyancy"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "buoyant",
+          "depth": 2,
+          "name": "buoyant"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "549:1787",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The __________ — a strong metal shell — protects the submarine from water pressure.",
+          "depth": 1,
+          "name": "1. The __________ — a strong metal shell — protects the submarine from water pressure."
+        },
+        {
+          "text": "2.  A __________ allows the crew to see the surface while staying underwater.",
+          "depth": 1,
+          "name": "2. A __________ allows the crew to see the surface while staying underwater."
+        },
+        {
+          "text": "3.  The submarine fills its __________ tanks with water to dive deeper.",
+          "depth": 1,
+          "name": "3. The submarine fills its __________ tanks with water to dive deeper."
+        },
+        {
+          "text": "4.  A __________ sends sound waves through the water to detect other objects.",
+          "depth": 1,
+          "name": "4. A __________ sends sound waves through the water to detect other objects."
+        },
+        {
+          "text": "5.  The cook prepares meals in the __________ — the submarine's small kitchen.",
+          "depth": 1,
+          "name": "5. The cook prepares meals in the __________ — the submarine's small kitchen."
+        },
+        {
+          "text": "6.  A __________ gauge tells the crew how far below the surface the submarine is.",
+          "depth": 1,
+          "name": "6. A __________ gauge tells the crew how far below the surface the submarine is."
+        },
+        {
+          "text": "7.  Crew members sleep in __________ beds stacked three high.",
+          "depth": 1,
+          "name": "7. Crew members sleep in __________ beds stacked three high."
+        },
+        {
+          "text": "8.  A __________ at the back of the submarine pushes it through the water.",
+          "depth": 1,
+          "name": "8. A __________ at the back of the submarine pushes it through the water."
+        },
+        {
+          "text": "9.  The __________ plots the submarine's course using sea charts and GPS.",
+          "depth": 1,
+          "name": "9. The __________ plots the submarine's course using sea charts and GPS."
+        },
+        {
+          "text": "10. The __________ hall is where the crew eats and socialises.",
+          "depth": 1,
+          "name": "10. The __________ hall is where the crew eats and socialises."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. hull  2. periscope  3. ballast  4. sonar  5. galley  6. depth  7. bunk  8. propeller  9. navigator  10. mess",
+          "depth": 2,
+          "name": "1. hull 2. periscope 3. ballast 4. sonar 5. galley 6. depth 7. bunk 8. propeller 9. navigator 10. mess"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "549:1805",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Submarine vs Submersible",
+          "depth": 2,
+          "name": "Submarine vs Submersible"
+        },
+        {
+          "text": "A 'submarine' is a large, self-sufficient vessel that can operate independently for long periods. A 'submersible' is smaller and usually launched from a ship — used for research or deep-sea exploration. The Titan submersible disaster (2023) made this distinction widely known.",
+          "depth": 2,
+          "name": "A 'submarine' is a large, self-sufficient vessel that can operate independently for long periods. A 'submersible' is smaller and usually launched from a ship — used for research or deep-sea exploration. The Titan submersible disaster (2023) made this distinction widely known."
+        },
+        {
+          "text": "Nautical Language",
+          "depth": 2,
+          "name": "Nautical Language"
+        },
+        {
+          "text": "Ships and submarines use specialised terms: 'port' (left side), 'starboard' (right side), 'bow' (front), 'stern' (back), 'hull' (body), 'galley' (kitchen), 'bridge' (control area on surface ships). A submarine's main control area is the 'conn' or 'control room'.",
+          "depth": 2,
+          "name": "Ships and submarines use specialised terms: 'port' (left side), 'starboard' (right side), 'bow' (front), 'stern' (back), 'hull' (body), 'galley' (kitchen), 'bridge' (control area on surface ships). A submarine's main control area is the 'conn' or 'control room'."
+        },
+        {
+          "text": "Famous Submarines in Culture",
+          "depth": 2,
+          "name": "Famous Submarines in Culture"
+        },
+        {
+          "text": "Jules Verne's '20,000 Leagues Under the Sea' (1870) featured the fictional submarine Nautilus. 'The Hunt for Red October' (Tom Clancy) and 'Das Boot' (German film) are famous submarine stories. 'Yellow Submarine' is a Beatles song and animated film.",
+          "depth": 2,
+          "name": "Jules Verne's '20,000 Leagues Under the Sea' (1870) featured the fictional submarine Nautilus. 'The Hunt for Red October' (Tom Clancy) and 'Das Boot' (German film) are famous submarine stories. 'Yellow Submarine' is a Beatles song and animated film."
+        },
+        {
+          "text": "Ship and Vessel Vocabulary",
+          "depth": 2,
+          "name": "Ship and Vessel Vocabulary"
+        },
+        {
+          "text": "'Vessel' is the formal word for any ship or boat. Ships are traditionally referred to as 'she': 'She was launched in 1995.' Modern style guides now accept 'it'. 'HMS' = His/Her Majesty's Ship (Royal Navy). 'USS' = United States Ship.",
+          "depth": 2,
+          "name": "'Vessel' is the formal word for any ship or boat. Ships are traditionally referred to as 'she': 'She was launched in 1995.' Modern style guides now accept 'it'. 'HMS' = His/Her Majesty's Ship (Royal Navy). 'USS' = United States Ship."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "549:1821",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "submarine",
+          "depth": 2,
+          "name": "submarine"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "nuclear ~, ~ crew, ~ fleet",
+          "depth": 2,
+          "name": "nuclear ~, ~ crew, ~ fleet"
+        },
+        {
+          "text": "periscope",
+          "depth": 2,
+          "name": "periscope"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "raise the ~, ~ view, ~ depth",
+          "depth": 2,
+          "name": "raise the ~, ~ view, ~ depth"
+        },
+        {
+          "text": "torpedo",
+          "depth": 2,
+          "name": "torpedo"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ tube, fire a ~, ~ attack",
+          "depth": 2,
+          "name": "~ tube, fire a ~, ~ attack"
+        },
+        {
+          "text": "sonar",
+          "depth": 2,
+          "name": "sonar"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ system, ~ contact, ~ ping",
+          "depth": 2,
+          "name": "~ system, ~ contact, ~ ping"
+        },
+        {
+          "text": "hull",
+          "depth": 2,
+          "name": "hull"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ integrity, outer ~, pressure ~",
+          "depth": 2,
+          "name": "~ integrity, outer ~, pressure ~"
+        },
+        {
+          "text": "propeller",
+          "depth": 2,
+          "name": "propeller"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ shaft, ~ blade, ~ speed",
+          "depth": 2,
+          "name": "~ shaft, ~ blade, ~ speed"
+        },
+        {
+          "text": "ballast",
+          "depth": 2,
+          "name": "ballast"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "~ tank, ~ water, drop ~",
+          "depth": 2,
+          "name": "~ tank, ~ water, drop ~"
+        },
+        {
+          "text": "hatch",
+          "depth": 2,
+          "name": "hatch"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "escape ~, ~ cover, open the ~",
+          "depth": 2,
+          "name": "escape ~, ~ cover, open the ~"
+        },
+        {
+          "text": "depth",
+          "depth": 2,
+          "name": "depth"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ gauge, ~ charge, maximum ~",
+          "depth": 2,
+          "name": "~ gauge, ~ charge, maximum ~"
+        },
+        {
+          "text": "vessel",
+          "depth": 2,
+          "name": "vessel"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "naval ~, research ~, ~ crew",
+          "depth": 2,
+          "name": "naval ~, research ~, ~ crew"
+        }
+      ]
+    }
+  }
+}

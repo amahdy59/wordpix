@@ -1,0 +1,2000 @@
+{
+  "unitId": "dental-clinic",
+  "name": "The Dental Clinic",
+  "subtopics": [
+    {
+      "id": "procedures",
+      "title": "Procedures",
+      "wordIds": [
+        "cleaning",
+        "filling",
+        "extraction",
+        "root-canal",
+        "crown",
+        "bridge",
+        "implant",
+        "whitening",
+        "bonding",
+        "sealant",
+        "veneer",
+        "inlay",
+        "onlay",
+        "gum-graft",
+        "bone-graft",
+        "tooth-reshaping",
+        "abscess-drainage",
+        "fluoride-treatment"
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Tools",
+      "wordIds": [
+        "drill",
+        "mirror",
+        "probe",
+        "scaler",
+        "suction",
+        "x-ray-machine",
+        "curing-light",
+        "forceps",
+        "impression-tray",
+        "polisher",
+        "elevator",
+        "luxator",
+        "periosteal-elevator",
+        "bone-file",
+        "dental-handpiece",
+        "ultrasonic-scaler",
+        "apex-locator"
+      ]
+    },
+    {
+      "id": "anatomy",
+      "title": "Anatomy",
+      "wordIds": [
+        "molar",
+        "incisor",
+        "canine",
+        "wisdom-tooth",
+        "gum",
+        "enamel",
+        "root",
+        "nerve",
+        "jaw",
+        "palate",
+        "premolar",
+        "bicuspid",
+        "gingiva",
+        "alveolar-bone",
+        "dental-pulp",
+        "tooth-socket",
+        "dental-arch",
+        "maxilla",
+        "mandible"
+      ]
+    },
+    {
+      "id": "orthodontics",
+      "title": "Orthodontics",
+      "wordIds": [
+        "braces",
+        "retainer",
+        "aligner",
+        "bracket",
+        "wire",
+        "rubber-band",
+        "spacer",
+        "expander",
+        "headgear",
+        "mold",
+        "ceramic-braces",
+        "lingual-braces",
+        "invisalign",
+        "bite-plate",
+        "power-chain",
+        "ligature",
+        "archwire",
+        "dental-wax"
+      ]
+    },
+    {
+      "id": "hygiene",
+      "title": "Hygiene",
+      "wordIds": [
+        "toothbrush",
+        "toothpaste",
+        "floss",
+        "mouthwash",
+        "tongue-scraper",
+        "water-flosser",
+        "fluoride",
+        "plaque",
+        "tartar",
+        "cavity",
+        "electric-toothbrush",
+        "dental-pick",
+        "oral-irrigator",
+        "antibacterial-rinse",
+        "dental-sealant",
+        "disclosing-tablet",
+        "gum-stimulator"
+      ]
+    },
+    {
+      "id": "office",
+      "title": "Office",
+      "wordIds": [
+        "dental-chair",
+        "light",
+        "bib",
+        "tray",
+        "gloves",
+        "mask",
+        "goggles",
+        "waiting-room",
+        "insurance-form",
+        "appointment-card",
+        "panoramic-xray",
+        "intraoral-camera",
+        "amalgam-separator",
+        "nitrous-oxide-system",
+        "dental-compressor",
+        "suction-unit",
+        "emergency-kit"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "cleaning",
+      "label": "Cleaning",
+      "ipa": "/ˈkliːnɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:10615"
+    },
+    {
+      "kind": "card",
+      "id": "filling",
+      "label": "Filling",
+      "ipa": "/ˈfɪlɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:10619"
+    },
+    {
+      "kind": "card",
+      "id": "extraction",
+      "label": "Extraction",
+      "ipa": "/ɪkˈstrækʃən/",
+      "cefr": "C1",
+      "imageNodeId": "119:10623"
+    },
+    {
+      "kind": "card",
+      "id": "root-canal",
+      "label": "Root Canal",
+      "ipa": "/ruːt kəˈnæl/",
+      "cefr": "C1",
+      "imageNodeId": "119:10627"
+    },
+    {
+      "kind": "card",
+      "id": "crown",
+      "label": "Crown",
+      "ipa": "/kraʊn/",
+      "cefr": "B2",
+      "imageNodeId": "119:10631"
+    },
+    {
+      "kind": "card",
+      "id": "bridge",
+      "label": "Bridge",
+      "ipa": "/brɪdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "119:10635"
+    },
+    {
+      "kind": "card",
+      "id": "implant",
+      "label": "Implant",
+      "ipa": "/ˈɪmplænt/",
+      "cefr": "B2",
+      "imageNodeId": "119:10639"
+    },
+    {
+      "kind": "card",
+      "id": "whitening",
+      "label": "Whitening",
+      "ipa": "/ˈwaɪtnɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:10643"
+    },
+    {
+      "kind": "card",
+      "id": "bonding",
+      "label": "Bonding",
+      "ipa": "/ˈbɒndɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:10647"
+    },
+    {
+      "kind": "card",
+      "id": "sealant",
+      "label": "Sealant",
+      "ipa": "/ˈsiːlənt/",
+      "cefr": "B2",
+      "imageNodeId": "119:10651"
+    },
+    {
+      "kind": "card",
+      "id": "veneer",
+      "label": "Veneer",
+      "ipa": "/vɪˈnɪər/",
+      "cefr": "B2",
+      "imageNodeId": "491:1094"
+    },
+    {
+      "kind": "card",
+      "id": "inlay",
+      "label": "Inlay",
+      "ipa": "/ˈɪnleɪ/",
+      "cefr": "B2",
+      "imageNodeId": "491:1098"
+    },
+    {
+      "kind": "card",
+      "id": "onlay",
+      "label": "Onlay",
+      "ipa": "/ˈɒnleɪ/",
+      "cefr": "B2",
+      "imageNodeId": "491:1102"
+    },
+    {
+      "kind": "card",
+      "id": "gum-graft",
+      "label": "Gum Graft",
+      "ipa": "/ɡʌm ɡrɑːft/",
+      "cefr": "C1",
+      "imageNodeId": "491:1106"
+    },
+    {
+      "kind": "card",
+      "id": "bone-graft",
+      "label": "Bone Graft",
+      "ipa": "/boʊn ɡrɑːft/",
+      "cefr": "C1",
+      "imageNodeId": "491:1110"
+    },
+    {
+      "kind": "card",
+      "id": "tooth-reshaping",
+      "label": "Tooth Reshaping",
+      "ipa": "/tuːθ riːˈʃeɪpɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "491:1114"
+    },
+    {
+      "kind": "card",
+      "id": "abscess-drainage",
+      "label": "Abscess Drainage",
+      "ipa": "/ˈæbsɛs ˈdreɪnɪdʒ/",
+      "cefr": "C1",
+      "imageNodeId": "491:1118"
+    },
+    {
+      "kind": "card",
+      "id": "fluoride-treatment",
+      "label": "Fluoride Treatment",
+      "ipa": "/ˈflʊəraɪd ˈtriːtmənt/",
+      "cefr": "C1",
+      "imageNodeId": "491:1122"
+    },
+    {
+      "kind": "card",
+      "id": "drill",
+      "label": "Drill",
+      "ipa": "/drɪl/",
+      "cefr": "B2",
+      "imageNodeId": "119:10660"
+    },
+    {
+      "kind": "card",
+      "id": "mirror",
+      "label": "Mirror",
+      "ipa": "/ˈmɪrər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10664"
+    },
+    {
+      "kind": "card",
+      "id": "probe",
+      "label": "Probe",
+      "ipa": "/proʊb/",
+      "cefr": "B2",
+      "imageNodeId": "119:10668"
+    },
+    {
+      "kind": "card",
+      "id": "scaler",
+      "label": "Scaler",
+      "ipa": "/ˈskeɪlər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10672"
+    },
+    {
+      "kind": "card",
+      "id": "suction",
+      "label": "Suction",
+      "ipa": "/ˈsʌkʃən/",
+      "cefr": "B2",
+      "imageNodeId": "119:10676"
+    },
+    {
+      "kind": "card",
+      "id": "x-ray-machine",
+      "label": "X Ray Machine",
+      "ipa": "/ˈɛksreɪ məˈʃiːn/",
+      "cefr": "C1",
+      "imageNodeId": "119:10680"
+    },
+    {
+      "kind": "card",
+      "id": "curing-light",
+      "label": "Curing Light",
+      "ipa": "/ˈkjʊərɪŋ laɪt/",
+      "cefr": "C1",
+      "imageNodeId": "119:10684"
+    },
+    {
+      "kind": "card",
+      "id": "forceps",
+      "label": "Forceps",
+      "ipa": "/ˈfɔːrsɛps/",
+      "cefr": "B2",
+      "imageNodeId": "119:10688"
+    },
+    {
+      "kind": "card",
+      "id": "impression-tray",
+      "label": "Impression Tray",
+      "ipa": "/ɪmˈprɛʃən treɪ/",
+      "cefr": "C1",
+      "imageNodeId": "119:10692"
+    },
+    {
+      "kind": "card",
+      "id": "polisher",
+      "label": "Polisher",
+      "ipa": "/ˈpɒlɪʃər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10696"
+    },
+    {
+      "kind": "card",
+      "id": "elevator",
+      "label": "Elevator",
+      "ipa": "/ˈɛlɪveɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "491:1126"
+    },
+    {
+      "kind": "card",
+      "id": "luxator",
+      "label": "Luxator",
+      "ipa": "/lʌkˈseɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "491:1130"
+    },
+    {
+      "kind": "card",
+      "id": "periosteal-elevator",
+      "label": "Periosteal Elevator",
+      "ipa": "/ˌpɛriˈɒstiəl ˈɛlɪveɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "491:1134"
+    },
+    {
+      "kind": "card",
+      "id": "bone-file",
+      "label": "Bone File",
+      "ipa": "/boʊn faɪl/",
+      "cefr": "C1",
+      "imageNodeId": "491:1138"
+    },
+    {
+      "kind": "card",
+      "id": "dental-handpiece",
+      "label": "Dental Handpiece",
+      "ipa": "/ˈdɛntl ˈhændpiːs/",
+      "cefr": "C1",
+      "imageNodeId": "491:1142"
+    },
+    {
+      "kind": "card",
+      "id": "ultrasonic-scaler",
+      "label": "Ultrasonic Scaler",
+      "ipa": "/ˌʌltrəˈsɒnɪk ˈskeɪlər/",
+      "cefr": "C1",
+      "imageNodeId": "491:1146"
+    },
+    {
+      "kind": "card",
+      "id": "apex-locator",
+      "label": "Apex Locator",
+      "ipa": "/ˈeɪpɛks loʊˈkeɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "491:1150"
+    },
+    {
+      "kind": "card",
+      "id": "molar",
+      "label": "Molar",
+      "ipa": "/ˈmoʊlər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10705"
+    },
+    {
+      "kind": "card",
+      "id": "incisor",
+      "label": "Incisor",
+      "ipa": "/ɪnˈsaɪzər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10709"
+    },
+    {
+      "kind": "card",
+      "id": "canine",
+      "label": "Canine",
+      "ipa": "/ˈkeɪnaɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:10713"
+    },
+    {
+      "kind": "card",
+      "id": "wisdom-tooth",
+      "label": "Wisdom Tooth",
+      "ipa": "/ˈwɪzdəm tuːθ/",
+      "cefr": "C1",
+      "imageNodeId": "119:10717"
+    },
+    {
+      "kind": "card",
+      "id": "gum",
+      "label": "Gum",
+      "ipa": "/ɡʌm/",
+      "cefr": "B2",
+      "imageNodeId": "119:10721"
+    },
+    {
+      "kind": "card",
+      "id": "enamel",
+      "label": "Enamel",
+      "ipa": "/ɪˈnæməl/",
+      "cefr": "B2",
+      "imageNodeId": "119:10725"
+    },
+    {
+      "kind": "card",
+      "id": "root",
+      "label": "Root",
+      "ipa": "/ruːt/",
+      "cefr": "B2",
+      "imageNodeId": "119:10729"
+    },
+    {
+      "kind": "card",
+      "id": "nerve",
+      "label": "Nerve",
+      "ipa": "/nɜːrv/",
+      "cefr": "B2",
+      "imageNodeId": "119:10733"
+    },
+    {
+      "kind": "card",
+      "id": "jaw",
+      "label": "Jaw",
+      "ipa": "/dʒɔː/",
+      "cefr": "B2",
+      "imageNodeId": "119:10737"
+    },
+    {
+      "kind": "card",
+      "id": "palate",
+      "label": "Palate",
+      "ipa": "/ˈpælɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:10741"
+    },
+    {
+      "kind": "card",
+      "id": "premolar",
+      "label": "Premolar",
+      "ipa": "/priːˈmoʊlər/",
+      "cefr": "B2",
+      "imageNodeId": "491:1154"
+    },
+    {
+      "kind": "card",
+      "id": "bicuspid",
+      "label": "Bicuspid",
+      "ipa": "/baɪˈkʌspɪd/",
+      "cefr": "B2",
+      "imageNodeId": "491:1158"
+    },
+    {
+      "kind": "card",
+      "id": "gingiva",
+      "label": "Gingiva",
+      "ipa": "/ˈdʒɪndʒɪvə/",
+      "cefr": "B2",
+      "imageNodeId": "491:1162"
+    },
+    {
+      "kind": "card",
+      "id": "alveolar-bone",
+      "label": "Alveolar Bone",
+      "ipa": "/ælˈviːələr boʊn/",
+      "cefr": "C1",
+      "imageNodeId": "491:1166"
+    },
+    {
+      "kind": "card",
+      "id": "dental-pulp",
+      "label": "Dental Pulp",
+      "ipa": "/ˈdɛntl pʌlp/",
+      "cefr": "C1",
+      "imageNodeId": "491:1170"
+    },
+    {
+      "kind": "card",
+      "id": "tooth-socket",
+      "label": "Tooth Socket",
+      "ipa": "/tuːθ ˈsɒkɪt/",
+      "cefr": "C1",
+      "imageNodeId": "491:1174"
+    },
+    {
+      "kind": "card",
+      "id": "dental-arch",
+      "label": "Dental Arch",
+      "ipa": "/ˈdɛntl ɑːrtʃ/",
+      "cefr": "C1",
+      "imageNodeId": "491:1178"
+    },
+    {
+      "kind": "card",
+      "id": "maxilla",
+      "label": "Maxilla",
+      "ipa": "/mækˈsɪlə/",
+      "cefr": "B2",
+      "imageNodeId": "491:1182"
+    },
+    {
+      "kind": "card",
+      "id": "mandible",
+      "label": "Mandible",
+      "ipa": "/ˈmændɪbl/",
+      "cefr": "B2",
+      "imageNodeId": "491:1186"
+    },
+    {
+      "kind": "card",
+      "id": "braces",
+      "label": "Braces",
+      "ipa": "/ˈbreɪsɪz/",
+      "cefr": "B2",
+      "imageNodeId": "119:10750"
+    },
+    {
+      "kind": "card",
+      "id": "retainer",
+      "label": "Retainer",
+      "ipa": "/rɪˈteɪnər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10754"
+    },
+    {
+      "kind": "card",
+      "id": "aligner",
+      "label": "Aligner",
+      "ipa": "/əˈlaɪnər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10758"
+    },
+    {
+      "kind": "card",
+      "id": "bracket",
+      "label": "Bracket",
+      "ipa": "/ˈbrækɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:10762"
+    },
+    {
+      "kind": "card",
+      "id": "wire",
+      "label": "Wire",
+      "ipa": "/ˈwaɪər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10766"
+    },
+    {
+      "kind": "card",
+      "id": "rubber-band",
+      "label": "Rubber Band",
+      "ipa": "/ˈrʌbər bænd/",
+      "cefr": "C1",
+      "imageNodeId": "119:10770"
+    },
+    {
+      "kind": "card",
+      "id": "spacer",
+      "label": "Spacer",
+      "ipa": "/ˈspeɪsər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10774"
+    },
+    {
+      "kind": "card",
+      "id": "expander",
+      "label": "Expander",
+      "ipa": "/ɪkˈspændər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10778"
+    },
+    {
+      "kind": "card",
+      "id": "headgear",
+      "label": "Headgear",
+      "ipa": "/ˈhɛdɡɪər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10782"
+    },
+    {
+      "kind": "card",
+      "id": "mold",
+      "label": "Mold",
+      "ipa": "/moʊld/",
+      "cefr": "B2",
+      "imageNodeId": "119:10786"
+    },
+    {
+      "kind": "card",
+      "id": "ceramic-braces",
+      "label": "Ceramic Braces",
+      "ipa": "/sɪˈræmɪk ˈbreɪsɪz/",
+      "cefr": "C1",
+      "imageNodeId": "491:1190"
+    },
+    {
+      "kind": "card",
+      "id": "lingual-braces",
+      "label": "Lingual Braces",
+      "ipa": "/ˈlɪŋɡwəl ˈbreɪsɪz/",
+      "cefr": "C1",
+      "imageNodeId": "491:1194"
+    },
+    {
+      "kind": "card",
+      "id": "invisalign",
+      "label": "Invisalign",
+      "ipa": "/ɪnˈvɪzəlaɪn/",
+      "cefr": "C1",
+      "imageNodeId": "491:1198"
+    },
+    {
+      "kind": "card",
+      "id": "bite-plate",
+      "label": "Bite Plate",
+      "ipa": "/baɪt pleɪt/",
+      "cefr": "C1",
+      "imageNodeId": "491:1202"
+    },
+    {
+      "kind": "card",
+      "id": "power-chain",
+      "label": "Power Chain",
+      "ipa": "/ˈpaʊər tʃeɪn/",
+      "cefr": "C1",
+      "imageNodeId": "491:1206"
+    },
+    {
+      "kind": "card",
+      "id": "ligature",
+      "label": "Ligature",
+      "ipa": "/ˈlɪɡətʃər/",
+      "cefr": "B2",
+      "imageNodeId": "491:1210"
+    },
+    {
+      "kind": "card",
+      "id": "archwire",
+      "label": "Archwire",
+      "ipa": "/ˈɑːrtʃwaɪər/",
+      "cefr": "B2",
+      "imageNodeId": "491:1214"
+    },
+    {
+      "kind": "card",
+      "id": "dental-wax",
+      "label": "Dental Wax",
+      "ipa": "/ˈdɛntl wæks/",
+      "cefr": "C1",
+      "imageNodeId": "491:1218"
+    },
+    {
+      "kind": "card",
+      "id": "toothbrush",
+      "label": "Toothbrush",
+      "ipa": "/ˈtuːθbrʌʃ/",
+      "cefr": "C1",
+      "imageNodeId": "119:10795"
+    },
+    {
+      "kind": "card",
+      "id": "toothpaste",
+      "label": "Toothpaste",
+      "ipa": "/ˈtuːθpeɪst/",
+      "cefr": "C1",
+      "imageNodeId": "119:10799"
+    },
+    {
+      "kind": "card",
+      "id": "floss",
+      "label": "Floss",
+      "ipa": "/flɒs/",
+      "cefr": "B2",
+      "imageNodeId": "119:10803"
+    },
+    {
+      "kind": "card",
+      "id": "mouthwash",
+      "label": "Mouthwash",
+      "ipa": "/ˈmaʊθwɒʃ/",
+      "cefr": "B2",
+      "imageNodeId": "119:10807"
+    },
+    {
+      "kind": "card",
+      "id": "tongue-scraper",
+      "label": "Tongue Scraper",
+      "ipa": "/tʌŋ ˈskreɪpər/",
+      "cefr": "C1",
+      "imageNodeId": "119:10811"
+    },
+    {
+      "kind": "card",
+      "id": "water-flosser",
+      "label": "Water Flosser",
+      "ipa": "/ˈwɔːtər ˈflɒsər/",
+      "cefr": "C1",
+      "imageNodeId": "119:10815"
+    },
+    {
+      "kind": "card",
+      "id": "fluoride",
+      "label": "Fluoride",
+      "ipa": "/ˈflʊəraɪd/",
+      "cefr": "B2",
+      "imageNodeId": "119:10819"
+    },
+    {
+      "kind": "card",
+      "id": "plaque",
+      "label": "Plaque",
+      "ipa": "/plæk/",
+      "cefr": "B2",
+      "imageNodeId": "119:10823"
+    },
+    {
+      "kind": "card",
+      "id": "tartar",
+      "label": "Tartar",
+      "ipa": "/ˈtɑːrtər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10827"
+    },
+    {
+      "kind": "card",
+      "id": "cavity",
+      "label": "Cavity",
+      "ipa": "/ˈkævɪti/",
+      "cefr": "B2",
+      "imageNodeId": "119:10831"
+    },
+    {
+      "kind": "card",
+      "id": "electric-toothbrush",
+      "label": "Electric Toothbrush",
+      "ipa": "/ɪˈlɛktrɪk ˈtuːθbrʌʃ/",
+      "cefr": "C1",
+      "imageNodeId": "491:1222"
+    },
+    {
+      "kind": "card",
+      "id": "dental-pick",
+      "label": "Dental Pick",
+      "ipa": "/ˈdɛntl pɪk/",
+      "cefr": "C1",
+      "imageNodeId": "491:1226"
+    },
+    {
+      "kind": "card",
+      "id": "oral-irrigator",
+      "label": "Oral Irrigator",
+      "ipa": "/ˈɔːrəl ˈɪrɪɡeɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "491:1230"
+    },
+    {
+      "kind": "card",
+      "id": "antibacterial-rinse",
+      "label": "Antibacterial Rinse",
+      "ipa": "/ˌæntɪbækˈtɪəriəl rɪns/",
+      "cefr": "C1",
+      "imageNodeId": "491:1234"
+    },
+    {
+      "kind": "card",
+      "id": "dental-sealant",
+      "label": "Dental Sealant",
+      "ipa": "/ˈdɛntl ˈsiːlənt/",
+      "cefr": "C1",
+      "imageNodeId": "491:1238"
+    },
+    {
+      "kind": "card",
+      "id": "disclosing-tablet",
+      "label": "Disclosing Tablet",
+      "ipa": "/dɪsˈkloʊzɪŋ ˈtæblɪt/",
+      "cefr": "C1",
+      "imageNodeId": "491:1242"
+    },
+    {
+      "kind": "card",
+      "id": "gum-stimulator",
+      "label": "Gum Stimulator",
+      "ipa": "/ɡʌm ˈstɪmjʊleɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "491:1246"
+    },
+    {
+      "kind": "card",
+      "id": "dental-chair",
+      "label": "Dental Chair",
+      "ipa": "/ˈdɛntl tʃɛr/",
+      "cefr": "C1",
+      "imageNodeId": "119:10840"
+    },
+    {
+      "kind": "card",
+      "id": "light",
+      "label": "Light",
+      "ipa": "/laɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:10844"
+    },
+    {
+      "kind": "card",
+      "id": "bib",
+      "label": "Bib",
+      "ipa": "/bɪb/",
+      "cefr": "B2",
+      "imageNodeId": "119:10848"
+    },
+    {
+      "kind": "card",
+      "id": "tray",
+      "label": "Tray",
+      "ipa": "/treɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:10852"
+    },
+    {
+      "kind": "card",
+      "id": "gloves",
+      "label": "Gloves",
+      "ipa": "/ɡlʌvz/",
+      "cefr": "B2",
+      "imageNodeId": "119:10856"
+    },
+    {
+      "kind": "card",
+      "id": "mask",
+      "label": "Mask",
+      "ipa": "/mɑːsk/",
+      "cefr": "B2",
+      "imageNodeId": "119:10860"
+    },
+    {
+      "kind": "card",
+      "id": "goggles",
+      "label": "Goggles",
+      "ipa": "/ˈɡɒɡlz/",
+      "cefr": "B2",
+      "imageNodeId": "119:10864"
+    },
+    {
+      "kind": "card",
+      "id": "waiting-room",
+      "label": "Waiting Room",
+      "ipa": "/ˈweɪtɪŋ ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "119:10868"
+    },
+    {
+      "kind": "card",
+      "id": "insurance-form",
+      "label": "Insurance Form",
+      "ipa": "/ɪnˈʃʊərəns fɔːrm/",
+      "cefr": "C1",
+      "imageNodeId": "119:10872"
+    },
+    {
+      "kind": "card",
+      "id": "appointment-card",
+      "label": "Appointment Card",
+      "ipa": "/əˈpɔɪntmənt kɑːrd/",
+      "cefr": "C1",
+      "imageNodeId": "119:10876"
+    },
+    {
+      "kind": "card",
+      "id": "panoramic-xray",
+      "label": "Panoramic X Ray",
+      "ipa": "/ˌpænəˈræmɪk ˈɛksreɪ/",
+      "cefr": "C1",
+      "imageNodeId": "491:1250"
+    },
+    {
+      "kind": "card",
+      "id": "intraoral-camera",
+      "label": "Intraoral Camera",
+      "ipa": "/ˌɪntrəˈɔːrəl ˈkæmərə/",
+      "cefr": "C1",
+      "imageNodeId": "491:1254"
+    },
+    {
+      "kind": "card",
+      "id": "amalgam-separator",
+      "label": "Amalgam Separator",
+      "ipa": "/əˈmælɡəm ˈsɛpəreɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "491:1258"
+    },
+    {
+      "kind": "card",
+      "id": "nitrous-oxide-system",
+      "label": "Nitrous Oxide System",
+      "ipa": "/ˈnaɪtrəs ˈɒksaɪd ˈsɪstəm/",
+      "cefr": "C1",
+      "imageNodeId": "491:1262"
+    },
+    {
+      "kind": "card",
+      "id": "dental-compressor",
+      "label": "Dental Compressor",
+      "ipa": "/ˈdɛntl kəmˈprɛsər/",
+      "cefr": "C1",
+      "imageNodeId": "491:1266"
+    },
+    {
+      "kind": "card",
+      "id": "suction-unit",
+      "label": "Suction Unit",
+      "ipa": "/ˈsʌkʃən ˈjuːnɪt/",
+      "cefr": "C1",
+      "imageNodeId": "491:1270"
+    },
+    {
+      "kind": "card",
+      "id": "emergency-kit",
+      "label": "Emergency Kit",
+      "ipa": "/ɪˈmɜːrdʒənsi kɪt/",
+      "cefr": "C1",
+      "imageNodeId": "491:1274"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "556:1629",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "556:1631",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2+ · Topic: The Dental Clinic",
+          "depth": 1,
+          "name": "Level: B2+ · Topic: The Dental Clinic"
+        },
+        {
+          "text": "Open Wide — The Language and Science of Modern Dentistry\n\nA visit to the dental clinic begins with paperwork. In the waiting room, the patient fills in an insurance form and receives an appointment card for their next visit. A receptionist confirms the schedule. The atmosphere is deliberately calm — designed to counter the anxiety that dental visits famously provoke.\n\nIn the treatment room, the patient reclines in the dental chair beneath an overhead light. The dentist clips a bib around the patient's chest, pulls on gloves and a mask, and adjusts goggles. The first instrument is the mirror — angled to reflect surfaces the eye cannot reach. A probe checks for soft spots on the enamel. A scaler scrapes plaque and tartar from the gum line. An ultrasonic scaler vibrates at high frequency to dislodge hardened deposits. Suction removes saliva and debris throughout. This routine cleaning — recommended every six months — is the foundation of preventive care.\n\nWhen the mirror and probe reveal a cavity, the dentist reaches for the drill. A dental handpiece bores into the decayed enamel, and the damaged material is removed. A filling — composite resin, amalgam, or ceramic — restores the tooth's shape. For deeper decay that has reached the dental pulp, a root canal is necessary: the nerve is removed, the canal is disinfected, and the tooth is sealed and often fitted with a crown for structural strength. If the tooth cannot be saved, the dentist performs an extraction using forceps, an elevator, or a luxator to loosen the root from the tooth socket in the alveolar bone.\n\nRestoration and replacement form the next tier of treatment. A bridge spans the gap left by a missing tooth, anchored to the adjacent teeth. An implant — a titanium screw inserted into the jaw — provides a permanent artificial root onto which a crown is fixed. Veneers are thin shells bonded to the front of damaged or discoloured teeth. An inlay fits inside the cusp of a molar; an onlay covers the biting surface. Bonding repairs chips and cracks with a tooth-coloured resin hardened by a curing light.\n\nOrthodontics corrects alignment. Traditional braces consist of brackets bonded to each tooth, connected by an archwire and tightened with rubber bands or a power chain. A ligature holds the wire to each bracket. Ceramic braces offer a less visible alternative. Lingual braces sit behind the teeth. An aligner — a clear, removable tray — has become the most popular option for adults: the patient wears a sequence of moulds, each slightly adjusted, that gradually shift the teeth into position. A retainer, worn after treatment, prevents the teeth from moving back. An expander widens a narrow palate in growing children. A bite plate corrects the relationship between the upper maxilla and the lower mandible.\n\nDiagnostic imaging has transformed the profession. A panoramic X-ray captures the entire dental arch — all molars, premolars, canines, and incisors — in a single image. An intraoral camera photographs individual teeth at high magnification. An apex locator measures the length of a root canal during treatment.\n\nHome care remains the first line of defence. A toothbrush — manual or electric — removes plaque twice daily. Floss cleans between teeth where bristles cannot reach. A water flosser dislodges debris with a targeted stream. Mouthwash kills bacteria. A tongue scraper removes bacterial film. Fluoride — in toothpaste, rinse, or professional fluoride treatment — strengthens enamel. A disclosing tablet stains remaining plaque pink, revealing areas the patient has missed.\n\nPrevention costs less than repair, and repair costs less than replacement. The dental clinic exists to manage that hierarchy — ideally keeping every patient at the first level and intervening at the second before the third becomes necessary.",
+          "depth": 1,
+          "name": "Open Wide — The Language and Science of Modern Dentistry A visit to the dental clinic begins with paperwork. In the waiting room, the patient fills in an insurance form and receives an appointment card for their next visit. A receptionist confirms the schedule. The atmosphere is deliberately calm — designed to counter the anxiety that dental visits famously provoke. In the treatment room, the patient reclines in the dental chair beneath an overhead light. The dentist clips a bib around the patient's chest, pulls on gloves and a mask, and adjusts goggles. The first instrument is the mirror — angled to reflect surfaces the eye cannot reach. A probe checks for soft spots on the enamel. A scaler scrapes plaque and tartar from the gum line. An ultrasonic scaler vibrates at high frequency to dislodge hardened deposits. Suction removes saliva and debris throughout. This routine cleaning — recommended every six months — is the foundation of preventive care. When the mirror and probe reveal a cavity, the dentist reaches for the drill. A dental handpiece bores into the decayed enamel, and the damaged material is removed. A filling — composite resin, amalgam, or ceramic — restores the tooth's shape. For deeper decay that has reached the dental pulp, a root canal is necessary: the nerve is removed, the canal is disinfected, and the tooth is sealed and often fitted with a crown for structural strength. If the tooth cannot be saved, the dentist performs an extraction using forceps, an elevator, or a luxator to loosen the root from the tooth socket in the alveolar bone. Restoration and replacement form the next tier of treatment. A bridge spans the gap left by a missing tooth, anchored to the adjacent teeth. An implant — a titanium screw inserted into the jaw — provides a permanent artificial root onto which a crown is fixed. Veneers are thin shells bonded to the front of damaged or discoloured teeth. An inlay fits inside the cusp of a molar; an onlay covers the biting surface. Bonding repairs chips and cracks with a tooth-coloured resin hardened by a curing light. Orthodontics corrects alignment. Traditional braces consist of brackets bonded to each tooth, connected by an archwire and tightened with rubber bands or a power chain. A ligature holds the wire to each bracket. Ceramic braces offer a less visible alternative. Lingual braces sit behind the teeth. An aligner — a clear, removable tray — has become the most popular option for adults: the patient wears a sequence of moulds, each slightly adjusted, that gradually shift the teeth into position. A retainer, worn after treatment, prevents the teeth from moving back. An expander widens a narrow palate in growing children. A bite plate corrects the relationship between the upper maxilla and the lower mandible. Diagnostic imaging has transformed the profession. A panoramic X-ray captures the entire dental arch — all molars, premolars, canines, and incisors — in a single image. An intraoral camera photographs individual teeth at high magnification. An apex locator measures the length of a root canal during treatment. Home care remains the first line of defence. A toothbrush — manual or electric — removes plaque twice daily. Floss cleans between teeth where bristles cannot reach. A water flosser dislodges debris with a targeted stream. Mouthwash kills bacteria. A tongue scraper removes bacterial film. Fluoride — in toothpaste, rinse, or professional fluoride treatment — strengthens enamel. A disclosing tablet stains remaining plaque pink, revealing areas the patient has missed. Prevention costs less than repair, and repair costs less than replacement. The dental clinic exists to manage that hierarchy — ideally keeping every patient at the first level and intervening at the second before the third becomes necessary."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Describe the sequence of a routine dental cleaning, naming the instruments used at each stage.",
+          "depth": 1,
+          "name": "1. Describe the sequence of a routine dental cleaning, naming the instruments used at each stage."
+        },
+        {
+          "text": "2. Explain the difference between a filling, a root canal, and an extraction. When is each procedure necessary?",
+          "depth": 1,
+          "name": "2. Explain the difference between a filling, a root canal, and an extraction. When is each procedure necessary?"
+        },
+        {
+          "text": "3. Compare at least three orthodontic options described in the passage. What are the advantages of each?",
+          "depth": 1,
+          "name": "3. Compare at least three orthodontic options described in the passage. What are the advantages of each?"
+        },
+        {
+          "text": "4. How has diagnostic imaging changed modern dentistry, according to the passage?",
+          "depth": 1,
+          "name": "4. How has diagnostic imaging changed modern dentistry, according to the passage?"
+        },
+        {
+          "text": "5. The passage ends with: 'Prevention costs less than repair, and repair costs less than replacement.' Explain this hierarchy and evaluate whether the passage effectively supports it.",
+          "depth": 1,
+          "name": "5. The passage ends with: 'Prevention costs less than repair, and repair costs less than replacement.' Explain this hierarchy and evaluate whether the passage effectively supports it."
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "556:1644",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "like pulling teeth",
+          "depth": 2,
+          "name": "like pulling teeth"
+        },
+        {
+          "text": "extremely difficult and requiring great effort",
+          "depth": 2,
+          "name": "extremely difficult and requiring great effort"
+        },
+        {
+          "text": "\"Getting my son to brush his teeth is like pulling teeth — harder than an actual extraction at the dental clinic.\"",
+          "depth": 2,
+          "name": "\"Getting my son to brush his teeth is like pulling teeth — harder than an actual extraction at the dental clinic.\""
+        },
+        {
+          "text": "grit your teeth",
+          "depth": 2,
+          "name": "grit your teeth"
+        },
+        {
+          "text": "endure something painful or unpleasant with determination",
+          "depth": 2,
+          "name": "endure something painful or unpleasant with determination"
+        },
+        {
+          "text": "\"I gritted my teeth during the root canal — the drill was loud, but the dentist was gentle.\"",
+          "depth": 2,
+          "name": "\"I gritted my teeth during the root canal — the drill was loud, but the dentist was gentle.\""
+        },
+        {
+          "text": "by the skin of your teeth",
+          "depth": 2,
+          "name": "by the skin of your teeth"
+        },
+        {
+          "text": "barely managing to do something; a very narrow escape",
+          "depth": 2,
+          "name": "barely managing to do something; a very narrow escape"
+        },
+        {
+          "text": "\"I passed the check-up by the skin of my teeth — one more cavity and I'd have needed a filling.\"",
+          "depth": 2,
+          "name": "\"I passed the check-up by the skin of my teeth — one more cavity and I'd have needed a filling.\""
+        },
+        {
+          "text": "a sweet tooth",
+          "depth": 2,
+          "name": "a sweet tooth"
+        },
+        {
+          "text": "a strong liking for sugary foods",
+          "depth": 2,
+          "name": "a strong liking for sugary foods"
+        },
+        {
+          "text": "\"Her sweet tooth caught up with her — three cavities, a cleaning, and a fluoride treatment in one visit.\"",
+          "depth": 2,
+          "name": "\"Her sweet tooth caught up with her — three cavities, a cleaning, and a fluoride treatment in one visit.\""
+        },
+        {
+          "text": "tooth and nail",
+          "depth": 2,
+          "name": "tooth and nail"
+        },
+        {
+          "text": "with great determination and fierce effort",
+          "depth": 2,
+          "name": "with great determination and fierce effort"
+        },
+        {
+          "text": "\"He fought tooth and nail against the crown procedure, but the X-ray machine showed the crack clearly.\"",
+          "depth": 2,
+          "name": "\"He fought tooth and nail against the crown procedure, but the X-ray machine showed the crack clearly.\""
+        },
+        {
+          "text": "sink your teeth into",
+          "depth": 2,
+          "name": "sink your teeth into"
+        },
+        {
+          "text": "become fully involved in something",
+          "depth": 2,
+          "name": "become fully involved in something"
+        },
+        {
+          "text": "\"Once you sink your teeth into proper dental care — flossing, cleaning, and sealant — your smile transforms.\"",
+          "depth": 2,
+          "name": "\"Once you sink your teeth into proper dental care — flossing, cleaning, and sealant — your smile transforms.\""
+        },
+        {
+          "text": "cut your teeth on",
+          "depth": 2,
+          "name": "cut your teeth on"
+        },
+        {
+          "text": "gain your first experience in a particular area",
+          "depth": 2,
+          "name": "gain your first experience in a particular area"
+        },
+        {
+          "text": "\"The new dental assistant cut her teeth on cleanings and polisher work before assisting with extractions.\"",
+          "depth": 2,
+          "name": "\"The new dental assistant cut her teeth on cleanings and polisher work before assisting with extractions.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "556:1676",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A nervous patient visits the dental clinic for a routine check-up and cleaning",
+          "depth": 1,
+          "name": "Scene: A nervous patient visits the dental clinic for a routine check-up and cleaning"
+        },
+        {
+          "text": "Patient:",
+          "depth": 2,
+          "name": "Patient:"
+        },
+        {
+          "text": "I'm a bit nervous. I haven't been to the dentist in two years.",
+          "depth": 2,
+          "name": "I'm a bit nervous. I haven't been to the dentist in two years."
+        },
+        {
+          "text": "Dentist:",
+          "depth": 2,
+          "name": "Dentist:"
+        },
+        {
+          "text": "Don't worry — we'll start with a simple cleaning. The hygienist will use the scaler to remove any build-up, then the polisher for a nice shine.",
+          "depth": 2,
+          "name": "Don't worry — we'll start with a simple cleaning. The hygienist will use the scaler to remove any build-up, then the polisher for a nice shine."
+        },
+        {
+          "text": "Patient:",
+          "depth": 2,
+          "name": "Patient:"
+        },
+        {
+          "text": "Will it hurt? The scraping sound makes me anxious.",
+          "depth": 2,
+          "name": "Will it hurt? The scraping sound makes me anxious."
+        },
+        {
+          "text": "Dentist:",
+          "depth": 2,
+          "name": "Dentist:"
+        },
+        {
+          "text": "The ultrasonic scaler vibrates gently — most patients barely feel it. We'll also use suction to keep your mouth dry and comfortable.",
+          "depth": 2,
+          "name": "The ultrasonic scaler vibrates gently — most patients barely feel it. We'll also use suction to keep your mouth dry and comfortable."
+        },
+        {
+          "text": "Patient:",
+          "depth": 2,
+          "name": "Patient:"
+        },
+        {
+          "text": "Do I need an X-ray?",
+          "depth": 2,
+          "name": "Do I need an X-ray?"
+        },
+        {
+          "text": "Dentist:",
+          "depth": 2,
+          "name": "Dentist:"
+        },
+        {
+          "text": "Yes, let's take one with the X-ray machine. It'll show us if there are any cavities, cracks, or issues below the surface.",
+          "depth": 2,
+          "name": "Yes, let's take one with the X-ray machine. It'll show us if there are any cavities, cracks, or issues below the surface."
+        },
+        {
+          "text": "Patient:",
+          "depth": 2,
+          "name": "Patient:"
+        },
+        {
+          "text": "What if I have a cavity?",
+          "depth": 2,
+          "name": "What if I have a cavity?"
+        },
+        {
+          "text": "Dentist:",
+          "depth": 2,
+          "name": "Dentist:"
+        },
+        {
+          "text": "A small cavity just needs a filling — we numb the area, use the drill briefly, and seal it. For deeper damage, a crown or even a root canal might be needed.",
+          "depth": 2,
+          "name": "A small cavity just needs a filling — we numb the area, use the drill briefly, and seal it. For deeper damage, a crown or even a root canal might be needed."
+        },
+        {
+          "text": "Patient:",
+          "depth": 2,
+          "name": "Patient:"
+        },
+        {
+          "text": "What about whitening? My teeth look a bit dull.",
+          "depth": 2,
+          "name": "What about whitening? My teeth look a bit dull."
+        },
+        {
+          "text": "Dentist:",
+          "depth": 2,
+          "name": "Dentist:"
+        },
+        {
+          "text": "We offer professional whitening with a curing light. It's much more effective than home kits. I'd also recommend a fluoride treatment to strengthen the enamel.",
+          "depth": 2,
+          "name": "We offer professional whitening with a curing light. It's much more effective than home kits. I'd also recommend a fluoride treatment to strengthen the enamel."
+        },
+        {
+          "text": "Patient:",
+          "depth": 2,
+          "name": "Patient:"
+        },
+        {
+          "text": "My wisdom tooth has been bothering me. Could it need an extraction?",
+          "depth": 2,
+          "name": "My wisdom tooth has been bothering me. Could it need an extraction?"
+        },
+        {
+          "text": "Dentist:",
+          "depth": 2,
+          "name": "Dentist:"
+        },
+        {
+          "text": "Let me check the X-ray. If it's impacted, extraction is the best option. I'll use the probe and the mirror to examine it closely first.",
+          "depth": 2,
+          "name": "Let me check the X-ray. If it's impacted, extraction is the best option. I'll use the probe and the mirror to examine it closely first."
+        },
+        {
+          "text": "Dentist:",
+          "depth": 2,
+          "name": "Dentist:"
+        },
+        {
+          "text": "No, six months is fine. We'll keep an eye on it.",
+          "depth": 2,
+          "name": "No, six months is fine. We'll keep an eye on it."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "556:1720",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I have a terrible toothache. I need to go to the dentist to pull out my tooth.\"",
+          "depth": 2,
+          "name": "❌ \"I have a terrible toothache. I need to go to the dentist to pull out my tooth.\""
+        },
+        {
+          "text": "✅ \"I have a terrible toothache. I need to go to the dentist to have my tooth pulled out.\"",
+          "depth": 2,
+          "name": "✅ \"I have a terrible toothache. I need to go to the dentist to have my tooth pulled out.\""
+        },
+        {
+          "text": "Causative 'have + object + past participle': 'have my tooth pulled out' (the dentist does it). 'Pull out my tooth' implies you'll do it yourself. This causative applies to all professional services: 'have a filling done', 'have my teeth cleaned', 'have braces fitted'.",
+          "depth": 2,
+          "name": "Causative 'have + object + past participle': 'have my tooth pulled out' (the dentist does it). 'Pull out my tooth' implies you'll do it yourself. This causative applies to all professional services: 'have a filling done', 'have my teeth cleaned', 'have braces fitted'."
+        },
+        {
+          "text": "❌ \"The dentist told me that I must to floss every day.\"",
+          "depth": 2,
+          "name": "❌ \"The dentist told me that I must to floss every day.\""
+        },
+        {
+          "text": "✅ \"The dentist told me that I must floss every day.\" / \"...had to floss every day.\"",
+          "depth": 2,
+          "name": "✅ \"The dentist told me that I must floss every day.\" / \"...had to floss every day.\""
+        },
+        {
+          "text": "Modal verbs (must, can, should, will, may, might) are NEVER followed by 'to'. 'I must go', not *'I must to go'. In reported speech, 'must' often becomes 'had to': 'The dentist said I had to floss.' But 'must' can remain unchanged in reported speech when the obligation is still current: 'She told me I must be more careful.'",
+          "depth": 2,
+          "name": "Modal verbs (must, can, should, will, may, might) are NEVER followed by 'to'. 'I must go', not *'I must to go'. In reported speech, 'must' often becomes 'had to': 'The dentist said I had to floss.' But 'must' can remain unchanged in reported speech when the obligation is still current: 'She told me I must be more careful.'"
+        },
+        {
+          "text": "❌ \"I've been told I need a brace to straighten my teeth.\"",
+          "depth": 2,
+          "name": "❌ \"I've been told I need a brace to straighten my teeth.\""
+        },
+        {
+          "text": "✅ \"I've been told I need braces to straighten my teeth.\"",
+          "depth": 2,
+          "name": "✅ \"I've been told I need braces to straighten my teeth.\""
+        },
+        {
+          "text": "'Braces' (plural) = the orthodontic device. 'A brace' can mean a support/prop (knee brace, neck brace) but dental braces are always plural — like 'scissors', 'glasses', and 'trousers'. 'She got her braces fitted last week.' 'The braces will be removed in eighteen months.' Exception: 'an aligner' and 'a retainer' are singular.",
+          "depth": 2,
+          "name": "'Braces' (plural) = the orthodontic device. 'A brace' can mean a support/prop (knee brace, neck brace) but dental braces are always plural — like 'scissors', 'glasses', and 'trousers'. 'She got her braces fitted last week.' 'The braces will be removed in eighteen months.' Exception: 'an aligner' and 'a retainer' are singular."
+        },
+        {
+          "text": "❌ \"I wish I would have gone to the dentist sooner.\"",
+          "depth": 2,
+          "name": "❌ \"I wish I would have gone to the dentist sooner.\""
+        },
+        {
+          "text": "✅ \"I wish I had gone to the dentist sooner.\"",
+          "depth": 2,
+          "name": "✅ \"I wish I had gone to the dentist sooner.\""
+        },
+        {
+          "text": "'Wish + past perfect' expresses regret about the past: 'I wish I had gone', 'I wish I hadn't eaten so many sweets.' Never 'wish + would have' for past regret — 'would have' is conditional, not wish-compatible. 'Wish + would' is only for expressing frustration about someone else's behaviour: 'I wish you would stop smoking.'",
+          "depth": 2,
+          "name": "'Wish + past perfect' expresses regret about the past: 'I wish I had gone', 'I wish I hadn't eaten so many sweets.' Never 'wish + would have' for past regret — 'would have' is conditional, not wish-compatible. 'Wish + would' is only for expressing frustration about someone else's behaviour: 'I wish you would stop smoking.'"
+        },
+        {
+          "text": "❌ \"The appointment is in the 3rd of October at 2pm.\"",
+          "depth": 2,
+          "name": "❌ \"The appointment is in the 3rd of October at 2pm.\""
+        },
+        {
+          "text": "✅ \"The appointment is on the 3rd of October at 2pm.\"",
+          "depth": 2,
+          "name": "✅ \"The appointment is on the 3rd of October at 2pm.\""
+        },
+        {
+          "text": "Date prepositions: 'on' + specific day/date ('on Monday', 'on the 3rd of October'). 'In' + month/year/season ('in October', 'in 2024', 'in winter'). 'At' + time ('at 2pm', 'at noon'). These three prepositions of time are non-negotiable — and mixing them ('in Monday', 'on October') is an error that persists even at advanced levels.",
+          "depth": 2,
+          "name": "Date prepositions: 'on' + specific day/date ('on Monday', 'on the 3rd of October'). 'In' + month/year/season ('in October', 'in 2024', 'in winter'). 'At' + time ('at 2pm', 'at noon'). These three prepositions of time are non-negotiable — and mixing them ('in Monday', 'on October') is an error that persists even at advanced levels."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "556:1744",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how dental and medical vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how dental and medical vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "decay",
+          "depth": 2,
+          "name": "decay"
+        },
+        {
+          "text": "decay",
+          "depth": 2,
+          "name": "decay"
+        },
+        {
+          "text": "decay",
+          "depth": 2,
+          "name": "decay"
+        },
+        {
+          "text": "decayed / decaying",
+          "depth": 2,
+          "name": "decayed / decaying"
+        },
+        {
+          "text": "fill",
+          "depth": 2,
+          "name": "fill"
+        },
+        {
+          "text": "filling / filler",
+          "depth": 2,
+          "name": "filling / filler"
+        },
+        {
+          "text": "fill",
+          "depth": 2,
+          "name": "fill"
+        },
+        {
+          "text": "filled",
+          "depth": 2,
+          "name": "filled"
+        },
+        {
+          "text": "extract",
+          "depth": 2,
+          "name": "extract"
+        },
+        {
+          "text": "extraction",
+          "depth": 2,
+          "name": "extraction"
+        },
+        {
+          "text": "extract",
+          "depth": 2,
+          "name": "extract"
+        },
+        {
+          "text": "extracted",
+          "depth": 2,
+          "name": "extracted"
+        },
+        {
+          "text": "numb",
+          "depth": 2,
+          "name": "numb"
+        },
+        {
+          "text": "numbness",
+          "depth": 2,
+          "name": "numbness"
+        },
+        {
+          "text": "numb",
+          "depth": 2,
+          "name": "numb"
+        },
+        {
+          "text": "numb",
+          "depth": 2,
+          "name": "numb"
+        },
+        {
+          "text": "anaesthetise",
+          "depth": 2,
+          "name": "anaesthetise"
+        },
+        {
+          "text": "anaesthetic / anaesthesia",
+          "depth": 2,
+          "name": "anaesthetic / anaesthesia"
+        },
+        {
+          "text": "anaesthetise",
+          "depth": 2,
+          "name": "anaesthetise"
+        },
+        {
+          "text": "anaesthetised",
+          "depth": 2,
+          "name": "anaesthetised"
+        },
+        {
+          "text": "infect",
+          "depth": 2,
+          "name": "infect"
+        },
+        {
+          "text": "infection",
+          "depth": 2,
+          "name": "infection"
+        },
+        {
+          "text": "infect",
+          "depth": 2,
+          "name": "infect"
+        },
+        {
+          "text": "infected / infectious",
+          "depth": 2,
+          "name": "infected / infectious"
+        },
+        {
+          "text": "hygiene",
+          "depth": 2,
+          "name": "hygiene"
+        },
+        {
+          "text": "hygiene / hygienist",
+          "depth": 2,
+          "name": "hygiene / hygienist"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "hygienic",
+          "depth": 2,
+          "name": "hygienic"
+        },
+        {
+          "text": "sensitive",
+          "depth": 2,
+          "name": "sensitive"
+        },
+        {
+          "text": "sensitivity",
+          "depth": 2,
+          "name": "sensitivity"
+        },
+        {
+          "text": "sensitise",
+          "depth": 2,
+          "name": "sensitise"
+        },
+        {
+          "text": "sensitive",
+          "depth": 2,
+          "name": "sensitive"
+        },
+        {
+          "text": "fluoride",
+          "depth": 2,
+          "name": "fluoride"
+        },
+        {
+          "text": "fluoride",
+          "depth": 2,
+          "name": "fluoride"
+        },
+        {
+          "text": "fluoridate",
+          "depth": 2,
+          "name": "fluoridate"
+        },
+        {
+          "text": "fluoridated",
+          "depth": 2,
+          "name": "fluoridated"
+        },
+        {
+          "text": "polish",
+          "depth": 2,
+          "name": "polish"
+        },
+        {
+          "text": "polish",
+          "depth": 2,
+          "name": "polish"
+        },
+        {
+          "text": "polish",
+          "depth": 2,
+          "name": "polish"
+        },
+        {
+          "text": "polished",
+          "depth": 2,
+          "name": "polished"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "556:1804",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A __________ scrapes hardened plaque and tartar from the gum line.",
+          "depth": 1,
+          "name": "1. A __________ scrapes hardened plaque and tartar from the gum line."
+        },
+        {
+          "text": "2.  The dentist used a __________ to examine surfaces the eye cannot reach.",
+          "depth": 1,
+          "name": "2. The dentist used a __________ to examine surfaces the eye cannot reach."
+        },
+        {
+          "text": "3.  A __________ canal involves removing the nerve and sealing the tooth.",
+          "depth": 1,
+          "name": "3. A __________ canal involves removing the nerve and sealing the tooth."
+        },
+        {
+          "text": "4.  An __________ is a titanium screw inserted into the jaw to replace a missing tooth.",
+          "depth": 1,
+          "name": "4. An __________ is a titanium screw inserted into the jaw to replace a missing tooth."
+        },
+        {
+          "text": "5.  The decayed tooth was removed using __________ to grip and extract it.",
+          "depth": 1,
+          "name": "5. The decayed tooth was removed using __________ to grip and extract it."
+        },
+        {
+          "text": "6.  A __________ light hardens the resin used in bonding procedures.",
+          "depth": 1,
+          "name": "6. A __________ light hardens the resin used in bonding procedures."
+        },
+        {
+          "text": "7.  Traditional braces use an __________ connected to brackets on each tooth.",
+          "depth": 1,
+          "name": "7. Traditional braces use an __________ connected to brackets on each tooth."
+        },
+        {
+          "text": "8.  __________ — in toothpaste and professional treatments — strengthens tooth enamel.",
+          "depth": 1,
+          "name": "8. __________ — in toothpaste and professional treatments — strengthens tooth enamel."
+        },
+        {
+          "text": "9.  A panoramic __________ captures the entire dental arch in a single image.",
+          "depth": 1,
+          "name": "9. A panoramic __________ captures the entire dental arch in a single image."
+        },
+        {
+          "text": "10. A __________ tablet stains remaining plaque pink to show areas missed during brushing.",
+          "depth": 1,
+          "name": "10. A __________ tablet stains remaining plaque pink to show areas missed during brushing."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. scaler  2. mirror  3. root  4. implant  5. forceps  6. curing  7. archwire  8. Fluoride  9. X-ray  10. disclosing",
+          "depth": 2,
+          "name": "1. scaler 2. mirror 3. root 4. implant 5. forceps 6. curing 7. archwire 8. Fluoride 9. X-ray 10. disclosing"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "556:1822",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "NHS Dentistry in the UK",
+          "depth": 2,
+          "name": "NHS Dentistry in the UK"
+        },
+        {
+          "text": "NHS dental treatment in England has three fixed price bands (2024): Band 1 (£26.80 — check-up, X-rays, advice), Band 2 (£73.50 — fillings, extractions, root canals), Band 3 (£319.10 — crowns, bridges, dentures). Scotland, Wales, and Northern Ireland have different arrangements. Many people also go private for faster access or cosmetic work.",
+          "depth": 2,
+          "name": "NHS dental treatment in England has three fixed price bands (2024): Band 1 (£26.80 — check-up, X-rays, advice), Band 2 (£73.50 — fillings, extractions, root canals), Band 3 (£319.10 — crowns, bridges, dentures). Scotland, Wales, and Northern Ireland have different arrangements. Many people also go private for faster access or cosmetic work."
+        },
+        {
+          "text": "Dental Phobia",
+          "depth": 2,
+          "name": "Dental Phobia"
+        },
+        {
+          "text": "Fear of the dentist ('dental phobia' or 'odontophobia') is extremely common — affecting up to 36% of the population. Many clinics now specialise in nervous patients, offering sedation options, extra time, and a gentle approach. The phrase 'I'd rather go to the dentist' is used sarcastically to mean 'I'd rather do something unpleasant.'",
+          "depth": 2,
+          "name": "Fear of the dentist ('dental phobia' or 'odontophobia') is extremely common — affecting up to 36% of the population. Many clinics now specialise in nervous patients, offering sedation options, extra time, and a gentle approach. The phrase 'I'd rather go to the dentist' is used sarcastically to mean 'I'd rather do something unpleasant.'"
+        },
+        {
+          "text": "Miswak — Traditional Dental Care",
+          "depth": 2,
+          "name": "Miswak — Traditional Dental Care"
+        },
+        {
+          "text": "The miswak (or siwak) is a teeth-cleaning twig from the Salvadora persica tree, traditionally used across the Muslim world. It has been shown to have antibacterial properties and is recommended in Islamic tradition. Many Muslims use it alongside modern toothbrushes, and it remains widely available in Middle Eastern and South Asian shops.",
+          "depth": 2,
+          "name": "The miswak (or siwak) is a teeth-cleaning twig from the Salvadora persica tree, traditionally used across the Muslim world. It has been shown to have antibacterial properties and is recommended in Islamic tradition. Many Muslims use it alongside modern toothbrushes, and it remains widely available in Middle Eastern and South Asian shops."
+        },
+        {
+          "text": "British Teeth — The Stereotype",
+          "depth": 2,
+          "name": "British Teeth — The Stereotype"
+        },
+        {
+          "text": "A common (unfair) stereotype is that British people have bad teeth. In reality, the UK has excellent dental health statistics — better than many countries. The stereotype comes from the fact that cosmetic dentistry (whitening, veneers) is less culturally emphasised in the UK than in the US, where perfectly white, straight teeth are a beauty standard.",
+          "depth": 2,
+          "name": "A common (unfair) stereotype is that British people have bad teeth. In reality, the UK has excellent dental health statistics — better than many countries. The stereotype comes from the fact that cosmetic dentistry (whitening, veneers) is less culturally emphasised in the UK than in the US, where perfectly white, straight teeth are a beauty standard."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "556:1838",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "cavity",
+          "depth": 2,
+          "name": "cavity"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "tooth ~, ~ filling, ~ check",
+          "depth": 2,
+          "name": "tooth ~, ~ filling, ~ check"
+        },
+        {
+          "text": "filling",
+          "depth": 2,
+          "name": "filling"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "dental ~, ~ material, ~ fell out",
+          "depth": 2,
+          "name": "dental ~, ~ material, ~ fell out"
+        },
+        {
+          "text": "plaque",
+          "depth": 2,
+          "name": "plaque"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "dental ~, ~ build-up, remove ~",
+          "depth": 2,
+          "name": "dental ~, ~ build-up, remove ~"
+        },
+        {
+          "text": "enamel",
+          "depth": 2,
+          "name": "enamel"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "tooth ~, ~ erosion, ~ protection",
+          "depth": 2,
+          "name": "tooth ~, ~ erosion, ~ protection"
+        },
+        {
+          "text": "drill",
+          "depth": 2,
+          "name": "drill"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "dental ~, ~ sound, ~ a tooth",
+          "depth": 2,
+          "name": "dental ~, ~ sound, ~ a tooth"
+        },
+        {
+          "text": "floss",
+          "depth": 2,
+          "name": "floss"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "dental ~, ~ daily, ~ pick",
+          "depth": 2,
+          "name": "dental ~, ~ daily, ~ pick"
+        },
+        {
+          "text": "crown",
+          "depth": 2,
+          "name": "crown"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "dental ~, ~ cap, porcelain ~",
+          "depth": 2,
+          "name": "dental ~, ~ cap, porcelain ~"
+        },
+        {
+          "text": "extraction",
+          "depth": 2,
+          "name": "extraction"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "tooth ~, wisdom tooth ~, ~",
+          "depth": 2,
+          "name": "tooth ~, wisdom tooth ~, ~"
+        },
+        {
+          "text": "molar",
+          "depth": 2,
+          "name": "molar"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "upper ~, ~ tooth, wisdom ~",
+          "depth": 2,
+          "name": "upper ~, ~ tooth, wisdom ~"
+        },
+        {
+          "text": "gum",
+          "depth": 2,
+          "name": "gum"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ disease, ~ line, sore ~s",
+          "depth": 2,
+          "name": "~ disease, ~ line, sore ~s"
+        }
+      ]
+    }
+  }
+}

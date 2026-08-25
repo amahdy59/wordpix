@@ -1,0 +1,675 @@
+{
+  "unitId": "art-studio",
+  "name": "The Art Studio",
+  "subtopics": [
+    {
+      "id": "drawing-sketching",
+      "title": "Drawing & Sketching",
+      "wordIds": [
+        "pencil",
+        "eraser",
+        "sketchbook",
+        "charcoal",
+        "pastel",
+        "colored-pencil",
+        "fine-liner",
+        "blending-stump",
+        "drawing-board",
+        "graphite"
+      ]
+    },
+    {
+      "id": "painting",
+      "title": "Painting",
+      "wordIds": [
+        "paintbrush",
+        "palette",
+        "easel",
+        "canvas",
+        "acrylic-paint",
+        "watercolor",
+        "oil-paint",
+        "palette-knife",
+        "paint-tube",
+        "jar-of-water"
+      ]
+    },
+    {
+      "id": "sculpture-3d",
+      "title": "Sculpture & 3D",
+      "wordIds": [
+        "clay",
+        "sculpting-tool",
+        "wire-armature",
+        "plaster",
+        "mold",
+        "chisel",
+        "carving-knife",
+        "modeling-stand",
+        "kiln",
+        "glaze"
+      ]
+    },
+    {
+      "id": "printmaking-craft",
+      "title": "Printmaking & Craft",
+      "wordIds": [
+        "printing-press",
+        "ink-roller",
+        "stencil",
+        "stamp",
+        "woodcut-block",
+        "screen",
+        "squeegee",
+        "brayer",
+        "registration-mark",
+        "proof"
+      ]
+    },
+    {
+      "id": "art-supplies",
+      "title": "Art Supplies",
+      "wordIds": [
+        "glue",
+        "scissors",
+        "ruler",
+        "craft-paper",
+        "masking-tape",
+        "spray-paint",
+        "varnish",
+        "turpentine",
+        "sponge",
+        "rag"
+      ]
+    },
+    {
+      "id": "techniques-elements",
+      "title": "Techniques & Elements",
+      "wordIds": [
+        "sketch",
+        "portrait",
+        "landscape",
+        "still-life",
+        "abstract",
+        "composition",
+        "perspective",
+        "shading",
+        "highlight",
+        "texture",
+        "marker",
+        "ink",
+        "paper",
+        "draw",
+        "paint",
+        "sculpt",
+        "shade",
+        "blend",
+        "outline",
+        "trace"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "pencil",
+      "label": "Pencil",
+      "ipa": "/ˈpɛnsəl/",
+      "cefr": "A2",
+      "imageNodeId": "45:587"
+    },
+    {
+      "kind": "card",
+      "id": "eraser",
+      "label": "Eraser",
+      "ipa": "/ɪˈreɪsər/",
+      "cefr": "A2",
+      "imageNodeId": "45:591"
+    },
+    {
+      "kind": "card",
+      "id": "sketchbook",
+      "label": "Sketchbook",
+      "ipa": "/ˈskɛtʃˌbʊk/",
+      "cefr": "B1",
+      "imageNodeId": "45:595"
+    },
+    {
+      "kind": "card",
+      "id": "charcoal",
+      "label": "Charcoal",
+      "ipa": "/ˈtʃɑːrˌkoʊl/",
+      "cefr": "A2",
+      "imageNodeId": "45:599"
+    },
+    {
+      "kind": "card",
+      "id": "pastel",
+      "label": "Pastel",
+      "ipa": "/pæˈstɛl/",
+      "cefr": "A2",
+      "imageNodeId": "45:603"
+    },
+    {
+      "kind": "card",
+      "id": "colored-pencil",
+      "label": "Colored Pencil",
+      "ipa": "/ˈkʌlərd ˈpɛnsəl/",
+      "cefr": "B1",
+      "imageNodeId": "45:607"
+    },
+    {
+      "kind": "card",
+      "id": "fine-liner",
+      "label": "Fine Liner",
+      "ipa": "/faɪn ˈlaɪnər/",
+      "cefr": "B1",
+      "imageNodeId": "45:611"
+    },
+    {
+      "kind": "card",
+      "id": "blending-stump",
+      "label": "Blending Stump",
+      "ipa": "/ˈblɛndɪŋ stʌmp/",
+      "cefr": "B1",
+      "imageNodeId": "45:615"
+    },
+    {
+      "kind": "card",
+      "id": "drawing-board",
+      "label": "Drawing Board",
+      "ipa": "/ˈdrɔːɪŋ bɔːrd/",
+      "cefr": "B1",
+      "imageNodeId": "45:619"
+    },
+    {
+      "kind": "card",
+      "id": "graphite",
+      "label": "Graphite",
+      "ipa": "/ˈɡræfaɪt/",
+      "cefr": "A2",
+      "imageNodeId": "45:623"
+    },
+    {
+      "kind": "card",
+      "id": "paintbrush",
+      "label": "Paintbrush",
+      "ipa": "/ˈpeɪntˌbrʌʃ/",
+      "cefr": "B1",
+      "imageNodeId": "45:632"
+    },
+    {
+      "kind": "card",
+      "id": "palette",
+      "label": "Palette",
+      "ipa": "/ˈpælɪt/",
+      "cefr": "A2",
+      "imageNodeId": "45:636"
+    },
+    {
+      "kind": "card",
+      "id": "easel",
+      "label": "Easel",
+      "ipa": "/ˈiːzəl/",
+      "cefr": "A2",
+      "imageNodeId": "45:640"
+    },
+    {
+      "kind": "card",
+      "id": "canvas",
+      "label": "Canvas",
+      "ipa": "/ˈkænvəs/",
+      "cefr": "A2",
+      "imageNodeId": "45:644"
+    },
+    {
+      "kind": "card",
+      "id": "acrylic-paint",
+      "label": "Acrylic Paint",
+      "ipa": "/əˈkrɪlɪk peɪnt/",
+      "cefr": "B1",
+      "imageNodeId": "45:648"
+    },
+    {
+      "kind": "card",
+      "id": "watercolor",
+      "label": "Watercolor",
+      "ipa": "/ˈwɔːtərˌkʌlər/",
+      "cefr": "B1",
+      "imageNodeId": "45:652"
+    },
+    {
+      "kind": "card",
+      "id": "oil-paint",
+      "label": "Oil Paint",
+      "ipa": "/ɔɪl peɪnt/",
+      "cefr": "B1",
+      "imageNodeId": "45:656"
+    },
+    {
+      "kind": "card",
+      "id": "palette-knife",
+      "label": "Palette Knife",
+      "ipa": "/ˈpælɪt naɪf/",
+      "cefr": "B1",
+      "imageNodeId": "45:660"
+    },
+    {
+      "kind": "card",
+      "id": "paint-tube",
+      "label": "Paint Tube",
+      "ipa": "/peɪnt tjuːb/",
+      "cefr": "B1",
+      "imageNodeId": "45:664"
+    },
+    {
+      "kind": "card",
+      "id": "jar-of-water",
+      "label": "Jar of Water",
+      "ipa": "/dʒɑːr əv ˈwɔːtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:668"
+    },
+    {
+      "kind": "card",
+      "id": "clay",
+      "label": "Clay",
+      "ipa": "/kleɪ/",
+      "cefr": "A2",
+      "imageNodeId": "45:677"
+    },
+    {
+      "kind": "card",
+      "id": "sculpting-tool",
+      "label": "Sculpting Tool",
+      "ipa": "/ˈskʌlptɪŋ tuːl/",
+      "cefr": "B1",
+      "imageNodeId": "45:681"
+    },
+    {
+      "kind": "card",
+      "id": "wire-armature",
+      "label": "Wire Armature",
+      "ipa": "/waɪər ˈɑːrmətʃər/",
+      "cefr": "B1",
+      "imageNodeId": "45:685"
+    },
+    {
+      "kind": "card",
+      "id": "plaster",
+      "label": "Plaster",
+      "ipa": "/ˈplæstər/",
+      "cefr": "A2",
+      "imageNodeId": "45:689"
+    },
+    {
+      "kind": "card",
+      "id": "mold",
+      "label": "Mold",
+      "ipa": "/moʊld/",
+      "cefr": "A2",
+      "imageNodeId": "45:693"
+    },
+    {
+      "kind": "card",
+      "id": "chisel",
+      "label": "Chisel",
+      "ipa": "/ˈtʃɪzəl/",
+      "cefr": "A2",
+      "imageNodeId": "45:697"
+    },
+    {
+      "kind": "card",
+      "id": "carving-knife",
+      "label": "Carving Knife",
+      "ipa": "/ˈkɑːrvɪŋ naɪf/",
+      "cefr": "B1",
+      "imageNodeId": "45:701"
+    },
+    {
+      "kind": "card",
+      "id": "modeling-stand",
+      "label": "Modeling Stand",
+      "ipa": "/ˈmɒdəlɪŋ stænd/",
+      "cefr": "B1",
+      "imageNodeId": "45:705"
+    },
+    {
+      "kind": "card",
+      "id": "kiln",
+      "label": "Kiln",
+      "ipa": "/kɪln/",
+      "cefr": "A2",
+      "imageNodeId": "45:709"
+    },
+    {
+      "kind": "card",
+      "id": "glaze",
+      "label": "Glaze",
+      "ipa": "/ɡleɪz/",
+      "cefr": "A2",
+      "imageNodeId": "45:713"
+    },
+    {
+      "kind": "card",
+      "id": "printing-press",
+      "label": "Printing Press",
+      "ipa": "/ˈprɪntɪŋ prɛs/",
+      "cefr": "B1",
+      "imageNodeId": "45:722"
+    },
+    {
+      "kind": "card",
+      "id": "ink-roller",
+      "label": "Ink Roller",
+      "ipa": "/ɪŋk ˈroʊlər/",
+      "cefr": "B1",
+      "imageNodeId": "45:726"
+    },
+    {
+      "kind": "card",
+      "id": "stencil",
+      "label": "Stencil",
+      "ipa": "/ˈstɛnsəl/",
+      "cefr": "A2",
+      "imageNodeId": "45:730"
+    },
+    {
+      "kind": "card",
+      "id": "stamp",
+      "label": "Stamp",
+      "ipa": "/stæmp/",
+      "cefr": "A2",
+      "imageNodeId": "45:734"
+    },
+    {
+      "kind": "card",
+      "id": "woodcut-block",
+      "label": "Woodcut Block",
+      "ipa": "/ˈwʊdˌkʌt blɒk/",
+      "cefr": "B1",
+      "imageNodeId": "45:738"
+    },
+    {
+      "kind": "card",
+      "id": "screen",
+      "label": "Screen",
+      "ipa": "/skriːn/",
+      "cefr": "A2",
+      "imageNodeId": "45:742"
+    },
+    {
+      "kind": "card",
+      "id": "squeegee",
+      "label": "Squeegee",
+      "ipa": "/ˈskwiːdʒiː/",
+      "cefr": "A2",
+      "imageNodeId": "45:746"
+    },
+    {
+      "kind": "card",
+      "id": "brayer",
+      "label": "Brayer",
+      "ipa": "/ˈbreɪər/",
+      "cefr": "A2",
+      "imageNodeId": "45:750"
+    },
+    {
+      "kind": "card",
+      "id": "registration-mark",
+      "label": "Registration Mark",
+      "ipa": "/ˌrɛdʒɪˈstreɪʃən mɑːrk/",
+      "cefr": "B2",
+      "imageNodeId": "45:754"
+    },
+    {
+      "kind": "card",
+      "id": "proof",
+      "label": "Proof",
+      "ipa": "/pruːf/",
+      "cefr": "A2",
+      "imageNodeId": "45:758"
+    },
+    {
+      "kind": "card",
+      "id": "glue",
+      "label": "Glue",
+      "ipa": "/ɡluː/",
+      "cefr": "A2",
+      "imageNodeId": "45:767"
+    },
+    {
+      "kind": "card",
+      "id": "scissors",
+      "label": "Scissors",
+      "ipa": "/ˈsɪzərz/",
+      "cefr": "A2",
+      "imageNodeId": "45:771"
+    },
+    {
+      "kind": "card",
+      "id": "ruler",
+      "label": "Ruler",
+      "ipa": "/ˈruːlər/",
+      "cefr": "A2",
+      "imageNodeId": "45:775"
+    },
+    {
+      "kind": "card",
+      "id": "craft-paper",
+      "label": "Craft Paper",
+      "ipa": "/kræft ˈpeɪpər/",
+      "cefr": "B1",
+      "imageNodeId": "45:779"
+    },
+    {
+      "kind": "card",
+      "id": "masking-tape",
+      "label": "Masking Tape",
+      "ipa": "/ˈmæskɪŋ teɪp/",
+      "cefr": "B1",
+      "imageNodeId": "45:783"
+    },
+    {
+      "kind": "card",
+      "id": "spray-paint",
+      "label": "Spray Paint",
+      "ipa": "/spreɪ peɪnt/",
+      "cefr": "B1",
+      "imageNodeId": "45:787"
+    },
+    {
+      "kind": "card",
+      "id": "varnish",
+      "label": "Varnish",
+      "ipa": "/ˈvɑːrnɪʃ/",
+      "cefr": "A2",
+      "imageNodeId": "45:791"
+    },
+    {
+      "kind": "card",
+      "id": "turpentine",
+      "label": "Turpentine",
+      "ipa": "/ˈtɜːrpənˌtaɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:795"
+    },
+    {
+      "kind": "card",
+      "id": "sponge",
+      "label": "Sponge",
+      "ipa": "/spʌndʒ/",
+      "cefr": "A2",
+      "imageNodeId": "45:799"
+    },
+    {
+      "kind": "card",
+      "id": "rag",
+      "label": "Rag",
+      "ipa": "/ræɡ/",
+      "cefr": "A2",
+      "imageNodeId": "45:803"
+    },
+    {
+      "kind": "card",
+      "id": "sketch",
+      "label": "Sketch",
+      "ipa": "/skɛtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "45:812"
+    },
+    {
+      "kind": "card",
+      "id": "portrait",
+      "label": "Portrait",
+      "ipa": "/ˈpɔːrtrɪt/",
+      "cefr": "A2",
+      "imageNodeId": "45:816"
+    },
+    {
+      "kind": "card",
+      "id": "landscape",
+      "label": "Landscape",
+      "ipa": "/ˈlændskeɪp/",
+      "cefr": "A2",
+      "imageNodeId": "45:820"
+    },
+    {
+      "kind": "card",
+      "id": "still-life",
+      "label": "Still Life",
+      "ipa": "/stɪl laɪf/",
+      "cefr": "B1",
+      "imageNodeId": "45:824"
+    },
+    {
+      "kind": "card",
+      "id": "abstract",
+      "label": "Abstract",
+      "ipa": "/ˈæbstrækt/",
+      "cefr": "A2",
+      "imageNodeId": "45:828"
+    },
+    {
+      "kind": "card",
+      "id": "composition",
+      "label": "Composition",
+      "ipa": "/ˌkɒmpəˈzɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "45:832"
+    },
+    {
+      "kind": "card",
+      "id": "perspective",
+      "label": "Perspective",
+      "ipa": "/pərˈspɛktɪv/",
+      "cefr": "B1",
+      "imageNodeId": "45:836"
+    },
+    {
+      "kind": "card",
+      "id": "shading",
+      "label": "Shading",
+      "ipa": "/ˈʃeɪdɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "45:840"
+    },
+    {
+      "kind": "card",
+      "id": "highlight",
+      "label": "Highlight",
+      "ipa": "/ˈhaɪˌlaɪt/",
+      "cefr": "A2",
+      "imageNodeId": "45:844"
+    },
+    {
+      "kind": "card",
+      "id": "texture",
+      "label": "Texture",
+      "ipa": "/ˈtɛkstʃər/",
+      "cefr": "A2",
+      "imageNodeId": "45:848"
+    },
+    {
+      "kind": "card",
+      "id": "marker",
+      "label": "Marker",
+      "ipa": "/ˈmɑːrkər/",
+      "cefr": "A2",
+      "imageNodeId": "39:3947"
+    },
+    {
+      "kind": "card",
+      "id": "ink",
+      "label": "Ink",
+      "ipa": "/ɪŋk/",
+      "cefr": "A2",
+      "imageNodeId": "39:3970"
+    },
+    {
+      "kind": "card",
+      "id": "paper",
+      "label": "Paper",
+      "ipa": "/ˈpeɪpər/",
+      "cefr": "A2",
+      "imageNodeId": "39:3978"
+    },
+    {
+      "kind": "card",
+      "id": "draw",
+      "label": "Draw",
+      "ipa": "/drɔː/",
+      "cefr": "A2",
+      "imageNodeId": "39:3989"
+    },
+    {
+      "kind": "card",
+      "id": "paint",
+      "label": "Paint",
+      "ipa": "/peɪnt/",
+      "cefr": "A2",
+      "imageNodeId": "39:3993"
+    },
+    {
+      "kind": "card",
+      "id": "sculpt",
+      "label": "Sculpt",
+      "ipa": "/skʌlpt/",
+      "cefr": "A2",
+      "imageNodeId": "39:4001"
+    },
+    {
+      "kind": "card",
+      "id": "shade",
+      "label": "Shade",
+      "ipa": "/ʃeɪd/",
+      "cefr": "A2",
+      "imageNodeId": "39:4005"
+    },
+    {
+      "kind": "card",
+      "id": "blend",
+      "label": "Blend",
+      "ipa": "/blɛnd/",
+      "cefr": "A2",
+      "imageNodeId": "39:4009"
+    },
+    {
+      "kind": "card",
+      "id": "outline",
+      "label": "Outline",
+      "ipa": "/ˈaʊtˌlaɪn/",
+      "cefr": "A2",
+      "imageNodeId": "39:4013"
+    },
+    {
+      "kind": "card",
+      "id": "trace",
+      "label": "Trace",
+      "ipa": "/treɪs/",
+      "cefr": "A2",
+      "imageNodeId": "39:4017"
+    }
+  ],
+  "materials": null
+}

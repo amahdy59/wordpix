@@ -1,0 +1,1586 @@
+{
+  "unitId": "birthday-party",
+  "name": "The Birthday Party",
+  "subtopics": [
+    {
+      "id": "decorations",
+      "title": "Decorations",
+      "wordIds": [
+        "balloon",
+        "banner",
+        "streamer",
+        "confetti",
+        "party-hat",
+        "tablecloth",
+        "centerpiece",
+        "garland",
+        "pinata",
+        "bunting"
+      ]
+    },
+    {
+      "id": "food-drinks",
+      "title": "Food & Drinks",
+      "wordIds": [
+        "cake",
+        "cupcake",
+        "ice-cream",
+        "pizza",
+        "candy",
+        "popcorn",
+        "juice-box",
+        "lemonade",
+        "fruit",
+        "chips"
+      ]
+    },
+    {
+      "id": "activities",
+      "title": "Activities",
+      "wordIds": [
+        "musical-chairs",
+        "pin-the-tail",
+        "treasure-hunt",
+        "face-painting",
+        "balloon-animals",
+        "relay-race",
+        "karaoke",
+        "dance",
+        "limbo",
+        "tag"
+      ]
+    },
+    {
+      "id": "gifts",
+      "title": "Gifts",
+      "wordIds": [
+        "present",
+        "wrapping-paper",
+        "bow",
+        "gift-bag",
+        "card",
+        "ribbon",
+        "tag",
+        "tissue-paper",
+        "surprise",
+        "thank-you-note"
+      ]
+    },
+    {
+      "id": "party-supplies",
+      "title": "Party Supplies",
+      "wordIds": [
+        "plate",
+        "cup",
+        "napkin",
+        "fork",
+        "candle",
+        "lighter",
+        "party-horn",
+        "whistle",
+        "glow-stick",
+        "sticker"
+      ]
+    },
+    {
+      "id": "people-moments",
+      "title": "People & Moments",
+      "wordIds": [
+        "birthday-child",
+        "guest",
+        "clown",
+        "magician",
+        "wish",
+        "blow-candles",
+        "open-gifts",
+        "group-photo",
+        "sing",
+        "celebrate"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "balloon",
+      "label": "Balloon",
+      "ipa": "/bəˈluːn/",
+      "cefr": "B2",
+      "imageNodeId": "119:11399"
+    },
+    {
+      "kind": "card",
+      "id": "banner",
+      "label": "Banner",
+      "ipa": "/ˈbænər/",
+      "cefr": "B2",
+      "imageNodeId": "119:11403"
+    },
+    {
+      "kind": "card",
+      "id": "streamer",
+      "label": "Streamer",
+      "ipa": "/ˈstriːmər/",
+      "cefr": "B2",
+      "imageNodeId": "119:11407"
+    },
+    {
+      "kind": "card",
+      "id": "confetti",
+      "label": "Confetti",
+      "ipa": "/kənˈfɛti/",
+      "cefr": "B2",
+      "imageNodeId": "119:11411"
+    },
+    {
+      "kind": "card",
+      "id": "party-hat",
+      "label": "Party Hat",
+      "ipa": "/ˈpɑːrti hæt/",
+      "cefr": "C1",
+      "imageNodeId": "119:11415"
+    },
+    {
+      "kind": "card",
+      "id": "tablecloth",
+      "label": "Tablecloth",
+      "ipa": "/ˈteɪbəlˌklɒθ/",
+      "cefr": "C1",
+      "imageNodeId": "119:11419"
+    },
+    {
+      "kind": "card",
+      "id": "centerpiece",
+      "label": "Centerpiece",
+      "ipa": "/ˈsɛntərˌpiːs/",
+      "cefr": "C1",
+      "imageNodeId": "119:11423"
+    },
+    {
+      "kind": "card",
+      "id": "garland",
+      "label": "Garland",
+      "ipa": "/ˈɡɑːrlənd/",
+      "cefr": "B2",
+      "imageNodeId": "119:11427"
+    },
+    {
+      "kind": "card",
+      "id": "pinata",
+      "label": "Pinata",
+      "ipa": "/pɪnˈjɑːtə/",
+      "cefr": "B2",
+      "imageNodeId": "119:11431"
+    },
+    {
+      "kind": "card",
+      "id": "bunting",
+      "label": "Bunting",
+      "ipa": "/ˈbʌntɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:11435"
+    },
+    {
+      "kind": "card",
+      "id": "cake",
+      "label": "Cake",
+      "ipa": "/keɪk/",
+      "cefr": "B2",
+      "imageNodeId": "119:11444"
+    },
+    {
+      "kind": "card",
+      "id": "cupcake",
+      "label": "Cupcake",
+      "ipa": "/ˈkʌpˌkeɪk/",
+      "cefr": "B2",
+      "imageNodeId": "119:11448"
+    },
+    {
+      "kind": "card",
+      "id": "ice-cream",
+      "label": "Ice Cream",
+      "ipa": "/aɪs kriːm/",
+      "cefr": "C1",
+      "imageNodeId": "119:11452"
+    },
+    {
+      "kind": "card",
+      "id": "pizza",
+      "label": "Pizza",
+      "ipa": "/ˈpiːtsə/",
+      "cefr": "B2",
+      "imageNodeId": "119:11456"
+    },
+    {
+      "kind": "card",
+      "id": "candy",
+      "label": "Candy",
+      "ipa": "/ˈkændi/",
+      "cefr": "B2",
+      "imageNodeId": "119:11460"
+    },
+    {
+      "kind": "card",
+      "id": "popcorn",
+      "label": "Popcorn",
+      "ipa": "/ˈpɒpˌkɔːrn/",
+      "cefr": "B2",
+      "imageNodeId": "119:11464"
+    },
+    {
+      "kind": "card",
+      "id": "juice-box",
+      "label": "Juice Box",
+      "ipa": "/dʒuːs bɒks/",
+      "cefr": "C1",
+      "imageNodeId": "119:11468"
+    },
+    {
+      "kind": "card",
+      "id": "lemonade",
+      "label": "Lemonade",
+      "ipa": "/ˌlɛməˈneɪd/",
+      "cefr": "B2",
+      "imageNodeId": "119:11472"
+    },
+    {
+      "kind": "card",
+      "id": "fruit",
+      "label": "Fruit",
+      "ipa": "/fruːt/",
+      "cefr": "B2",
+      "imageNodeId": "119:11476"
+    },
+    {
+      "kind": "card",
+      "id": "chips",
+      "label": "Chips",
+      "ipa": "/tʃɪps/",
+      "cefr": "B2",
+      "imageNodeId": "119:11480"
+    },
+    {
+      "kind": "card",
+      "id": "musical-chairs",
+      "label": "Musical Chairs",
+      "ipa": "/ˈmjuːzɪkəl tʃɛərz/",
+      "cefr": "C1",
+      "imageNodeId": "119:11489"
+    },
+    {
+      "kind": "card",
+      "id": "pin-the-tail",
+      "label": "Pin The Tail",
+      "ipa": "/pɪn ðə teɪl/",
+      "cefr": "C1",
+      "imageNodeId": "119:11493"
+    },
+    {
+      "kind": "card",
+      "id": "treasure-hunt",
+      "label": "Treasure Hunt",
+      "ipa": "/ˈtrɛʒər hʌnt/",
+      "cefr": "C1",
+      "imageNodeId": "119:11497"
+    },
+    {
+      "kind": "card",
+      "id": "face-painting",
+      "label": "Face Painting",
+      "ipa": "/feɪs ˈpeɪntɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "119:11501"
+    },
+    {
+      "kind": "card",
+      "id": "balloon-animals",
+      "label": "Balloon Animals",
+      "ipa": "/bəˈluːn ˈænɪməlz/",
+      "cefr": "C1",
+      "imageNodeId": "119:11505"
+    },
+    {
+      "kind": "card",
+      "id": "relay-race",
+      "label": "Relay Race",
+      "ipa": "/ˈriːleɪ reɪs/",
+      "cefr": "C1",
+      "imageNodeId": "119:11509"
+    },
+    {
+      "kind": "card",
+      "id": "karaoke",
+      "label": "Karaoke",
+      "ipa": "/ˌkæriˈoʊki/",
+      "cefr": "B2",
+      "imageNodeId": "119:11513"
+    },
+    {
+      "kind": "card",
+      "id": "dance",
+      "label": "Dance",
+      "ipa": "/dæns/",
+      "cefr": "B2",
+      "imageNodeId": "119:11517"
+    },
+    {
+      "kind": "card",
+      "id": "limbo",
+      "label": "Limbo",
+      "ipa": "/ˈlɪmboʊ/",
+      "cefr": "B2",
+      "imageNodeId": "119:11521"
+    },
+    {
+      "kind": "card",
+      "id": "tag",
+      "label": "Tag",
+      "ipa": "/tæɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:11525"
+    },
+    {
+      "kind": "card",
+      "id": "present",
+      "label": "Present",
+      "ipa": "/ˈprɛzənt/",
+      "cefr": "B2",
+      "imageNodeId": "119:11534"
+    },
+    {
+      "kind": "card",
+      "id": "wrapping-paper",
+      "label": "Wrapping Paper",
+      "ipa": "/ˈræpɪŋ ˈpeɪpər/",
+      "cefr": "C1",
+      "imageNodeId": "119:11538"
+    },
+    {
+      "kind": "card",
+      "id": "bow",
+      "label": "Bow",
+      "ipa": "/boʊ/",
+      "cefr": "B2",
+      "imageNodeId": "119:11542"
+    },
+    {
+      "kind": "card",
+      "id": "gift-bag",
+      "label": "Gift Bag",
+      "ipa": "/ɡɪft bæɡ/",
+      "cefr": "C1",
+      "imageNodeId": "119:11546"
+    },
+    {
+      "kind": "card",
+      "id": "card",
+      "label": "Card",
+      "ipa": "/kɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "119:11550"
+    },
+    {
+      "kind": "card",
+      "id": "ribbon",
+      "label": "Ribbon",
+      "ipa": "/ˈrɪbən/",
+      "cefr": "B2",
+      "imageNodeId": "119:11554"
+    },
+    {
+      "kind": "card",
+      "id": "tag",
+      "label": "Tag",
+      "ipa": "/tæɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:11558"
+    },
+    {
+      "kind": "card",
+      "id": "tissue-paper",
+      "label": "Tissue Paper",
+      "ipa": "/ˈtɪʃuː ˈpeɪpər/",
+      "cefr": "C1",
+      "imageNodeId": "119:11562"
+    },
+    {
+      "kind": "card",
+      "id": "surprise",
+      "label": "Surprise",
+      "ipa": "/sərˈpraɪz/",
+      "cefr": "B2",
+      "imageNodeId": "119:11566"
+    },
+    {
+      "kind": "card",
+      "id": "thank-you-note",
+      "label": "Thank You Note",
+      "ipa": "/θæŋk juː noʊt/",
+      "cefr": "C1",
+      "imageNodeId": "119:11570"
+    },
+    {
+      "kind": "card",
+      "id": "plate",
+      "label": "Plate",
+      "ipa": "/pleɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:11579"
+    },
+    {
+      "kind": "card",
+      "id": "cup",
+      "label": "Cup",
+      "ipa": "/kʌp/",
+      "cefr": "B2",
+      "imageNodeId": "119:11583"
+    },
+    {
+      "kind": "card",
+      "id": "napkin",
+      "label": "Napkin",
+      "ipa": "/ˈnæpkɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:11587"
+    },
+    {
+      "kind": "card",
+      "id": "fork",
+      "label": "Fork",
+      "ipa": "/fɔːrk/",
+      "cefr": "B2",
+      "imageNodeId": "119:11591"
+    },
+    {
+      "kind": "card",
+      "id": "candle",
+      "label": "Candle",
+      "ipa": "/ˈkændəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:11595"
+    },
+    {
+      "kind": "card",
+      "id": "lighter",
+      "label": "Lighter",
+      "ipa": "/ˈlaɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "119:11599"
+    },
+    {
+      "kind": "card",
+      "id": "party-horn",
+      "label": "Party Horn",
+      "ipa": "/ˈpɑːrti hɔːrn/",
+      "cefr": "C1",
+      "imageNodeId": "119:11603"
+    },
+    {
+      "kind": "card",
+      "id": "whistle",
+      "label": "Whistle",
+      "ipa": "/ˈwɪsəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:11607"
+    },
+    {
+      "kind": "card",
+      "id": "glow-stick",
+      "label": "Glow Stick",
+      "ipa": "/ɡloʊ stɪk/",
+      "cefr": "C1",
+      "imageNodeId": "119:11611"
+    },
+    {
+      "kind": "card",
+      "id": "sticker",
+      "label": "Sticker",
+      "ipa": "/ˈstɪkər/",
+      "cefr": "B2",
+      "imageNodeId": "119:11615"
+    },
+    {
+      "kind": "card",
+      "id": "birthday-child",
+      "label": "Birthday Child",
+      "ipa": "/ˈbɜːrθˌdeɪ tʃaɪld/",
+      "cefr": "C1",
+      "imageNodeId": "119:11624"
+    },
+    {
+      "kind": "card",
+      "id": "guest",
+      "label": "Guest",
+      "ipa": "/ɡɛst/",
+      "cefr": "B2",
+      "imageNodeId": "119:11628"
+    },
+    {
+      "kind": "card",
+      "id": "clown",
+      "label": "Clown",
+      "ipa": "/klaʊn/",
+      "cefr": "B2",
+      "imageNodeId": "119:11632"
+    },
+    {
+      "kind": "card",
+      "id": "magician",
+      "label": "Magician",
+      "ipa": "/məˈdʒɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "119:11636"
+    },
+    {
+      "kind": "card",
+      "id": "wish",
+      "label": "Wish",
+      "ipa": "/wɪʃ/",
+      "cefr": "B2",
+      "imageNodeId": "119:11640"
+    },
+    {
+      "kind": "card",
+      "id": "blow-candles",
+      "label": "Blow Candles",
+      "ipa": "/bloʊ ˈkændəlz/",
+      "cefr": "C1",
+      "imageNodeId": "119:11644"
+    },
+    {
+      "kind": "card",
+      "id": "open-gifts",
+      "label": "Open Gifts",
+      "ipa": "/ˈoʊpən ɡɪfts/",
+      "cefr": "C1",
+      "imageNodeId": "119:11648"
+    },
+    {
+      "kind": "card",
+      "id": "group-photo",
+      "label": "Group Photo",
+      "ipa": "/ɡruːp ˈfoʊtoʊ/",
+      "cefr": "C1",
+      "imageNodeId": "119:11652"
+    },
+    {
+      "kind": "card",
+      "id": "sing",
+      "label": "Sing",
+      "ipa": "/sɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:11656"
+    },
+    {
+      "kind": "card",
+      "id": "celebrate",
+      "label": "Celebrate",
+      "ipa": "/ˈsɛlɪˌbreɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:11660"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "556:2169",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "556:2171",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2+ · Topic: The Birthday Party",
+          "depth": 1,
+          "name": "Level: B2+ · Topic: The Birthday Party"
+        },
+        {
+          "text": "Candles, Chaos, and Coming of Age — The Anatomy of a Birthday Party\n\nA birthday party is organised chaos. The tablecloth goes on. Balloons are inflated — some tied to chairs, others clustered into an arch. A banner stretches across the wall: 'Happy Birthday.' Streamers twist from the ceiling. Bunting frames the doorway. A garland of paper flowers lines the buffet table. Confetti scatters across every surface. The party horn sits beside each plate, waiting to be blown at maximum volume the moment the cake appears.\n\nThe food is engineered for speed, not sophistication. Pizza arrives in stacked boxes. Cupcakes sit in rows. A bowl of popcorn empties and refills. Chips, fruit, candy, and a jug of lemonade cover the table. Juice boxes crowd the corner. Ice cream — served in cones or cups — drips steadily onto the floor. Plates, cups, napkins, and forks are colour-coordinated. A candle — or a cluster of numbered candles — sits in the centre of the cake, waiting to be lit.\n\nActivities structure the afternoon. Musical chairs eliminates players one by one — the music stops, someone is left standing. Pin the tail involves a blindfolded child, a cardboard animal, and enthusiastic misdirection from the audience. A treasure hunt sends teams through the house following clues. Face painting transforms guests into tigers and butterflies. Balloon animals twist into dogs and swords. A relay race divides the garden into lanes. Karaoke fills the living room with off-key singing. Limbo lowers the bar until only the smallest competitor survives. Tag spills across the entire property.\n\nThe birthday child opens gifts — one by one, in front of the assembled guests. Wrapping paper tears away to reveal toys, books, and clothes. Gift bags and bows pile up. Tissue paper floats to the ground. A card accompanies each present — some handwritten, some with printed messages. A ribbon curls around the stacked boxes. The ritual demands that each gift is acknowledged, each giver thanked, and a group photo commemorates the moment.\n\nThe climax is the cake. The lights go off. A lighter sparks. The candles flicker. The room sings. The birthday child makes a wish — privately, eyes closed — and blows the candles out in a single breath. The wish, by tradition, must remain unspoken to come true. Applause follows. The cake is cut. Everyone celebrates.\n\nAfterwards, the birthday child writes a thank-you note to each guest — or, more realistically, a parent writes them. Glow sticks dim. Stickers peel off faces. Whistles are confiscated. The clown or magician packs up. The surprise is over.\n\nWhat makes a birthday party interesting to a language learner is the density of social ritual compressed into a few hours — greetings, invitations, compliments, gift-giving formulas, and the precise etiquette of enthusiasm. Every culture celebrates birthdays, but the scripts differ: how old is 'too old' for a party? Who pays? Who brings what? What is said when the candles are blown out? Navigating these unwritten rules is as much a language task as remembering the word for 'balloon'.",
+          "depth": 1,
+          "name": "Candles, Chaos, and Coming of Age — The Anatomy of a Birthday Party A birthday party is organised chaos. The tablecloth goes on. Balloons are inflated — some tied to chairs, others clustered into an arch. A banner stretches across the wall: 'Happy Birthday.' Streamers twist from the ceiling. Bunting frames the doorway. A garland of paper flowers lines the buffet table. Confetti scatters across every surface. The party horn sits beside each plate, waiting to be blown at maximum volume the moment the cake appears. The food is engineered for speed, not sophistication. Pizza arrives in stacked boxes. Cupcakes sit in rows. A bowl of popcorn empties and refills. Chips, fruit, candy, and a jug of lemonade cover the table. Juice boxes crowd the corner. Ice cream — served in cones or cups — drips steadily onto the floor. Plates, cups, napkins, and forks are colour-coordinated. A candle — or a cluster of numbered candles — sits in the centre of the cake, waiting to be lit. Activities structure the afternoon. Musical chairs eliminates players one by one — the music stops, someone is left standing. Pin the tail involves a blindfolded child, a cardboard animal, and enthusiastic misdirection from the audience. A treasure hunt sends teams through the house following clues. Face painting transforms guests into tigers and butterflies. Balloon animals twist into dogs and swords. A relay race divides the garden into lanes. Karaoke fills the living room with off-key singing. Limbo lowers the bar until only the smallest competitor survives. Tag spills across the entire property. The birthday child opens gifts — one by one, in front of the assembled guests. Wrapping paper tears away to reveal toys, books, and clothes. Gift bags and bows pile up. Tissue paper floats to the ground. A card accompanies each present — some handwritten, some with printed messages. A ribbon curls around the stacked boxes. The ritual demands that each gift is acknowledged, each giver thanked, and a group photo commemorates the moment. The climax is the cake. The lights go off. A lighter sparks. The candles flicker. The room sings. The birthday child makes a wish — privately, eyes closed — and blows the candles out in a single breath. The wish, by tradition, must remain unspoken to come true. Applause follows. The cake is cut. Everyone celebrates. Afterwards, the birthday child writes a thank-you note to each guest — or, more realistically, a parent writes them. Glow sticks dim. Stickers peel off faces. Whistles are confiscated. The clown or magician packs up. The surprise is over. What makes a birthday party interesting to a language learner is the density of social ritual compressed into a few hours — greetings, invitations, compliments, gift-giving formulas, and the precise etiquette of enthusiasm. Every culture celebrates birthdays, but the scripts differ: how old is 'too old' for a party? Who pays? Who brings what? What is said when the candles are blown out? Navigating these unwritten rules is as much a language task as remembering the word for 'balloon'."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Describe the physical setup of a birthday party, using at least eight vocabulary items from the passage.",
+          "depth": 1,
+          "name": "1. Describe the physical setup of a birthday party, using at least eight vocabulary items from the passage."
+        },
+        {
+          "text": "2. Explain the rules of three party games mentioned in the passage.",
+          "depth": 1,
+          "name": "2. Explain the rules of three party games mentioned in the passage."
+        },
+        {
+          "text": "3. What social rituals does the passage identify within a birthday party? Why does the author call them 'scripts'?",
+          "depth": 1,
+          "name": "3. What social rituals does the passage identify within a birthday party? Why does the author call them 'scripts'?"
+        },
+        {
+          "text": "4. The author describes a birthday party as 'organised chaos.' What evidence from the passage supports this description?",
+          "depth": 1,
+          "name": "4. The author describes a birthday party as 'organised chaos.' What evidence from the passage supports this description?"
+        },
+        {
+          "text": "5. The passage argues that navigating birthday party etiquette is 'as much a language task as remembering the word for balloon.' Do you agree? Why or why not?",
+          "depth": 1,
+          "name": "5. The passage argues that navigating birthday party etiquette is 'as much a language task as remembering the word for balloon.' Do you agree? Why or why not?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "556:2184",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "have a blast",
+          "depth": 2,
+          "name": "have a blast"
+        },
+        {
+          "text": "have an extremely enjoyable time",
+          "depth": 2,
+          "name": "have an extremely enjoyable time"
+        },
+        {
+          "text": "\"The kids had a blast — balloon animals, face painting, and a piñata full of candy.\"",
+          "depth": 2,
+          "name": "\"The kids had a blast — balloon animals, face painting, and a piñata full of candy.\""
+        },
+        {
+          "text": "the icing on the cake",
+          "depth": 2,
+          "name": "the icing on the cake"
+        },
+        {
+          "text": "something extra that makes a good situation even better",
+          "depth": 2,
+          "name": "something extra that makes a good situation even better"
+        },
+        {
+          "text": "\"The karaoke machine was the icing on the cake — right after the cupcakes and the ice cream.\"",
+          "depth": 2,
+          "name": "\"The karaoke machine was the icing on the cake — right after the cupcakes and the ice cream.\""
+        },
+        {
+          "text": "blow out the candles",
+          "depth": 2,
+          "name": "blow out the candles"
+        },
+        {
+          "text": "make a wish and extinguish birthday candles",
+          "depth": 2,
+          "name": "make a wish and extinguish birthday candles"
+        },
+        {
+          "text": "\"She blew out the candles on the cake while everyone wore their party hats and threw confetti.\"",
+          "depth": 2,
+          "name": "\"She blew out the candles on the cake while everyone wore their party hats and threw confetti.\""
+        },
+        {
+          "text": "steal the show",
+          "depth": 2,
+          "name": "steal the show"
+        },
+        {
+          "text": "attract the most attention or praise at an event",
+          "depth": 2,
+          "name": "attract the most attention or praise at an event"
+        },
+        {
+          "text": "\"The piñata stole the show — even the relay race and musical chairs couldn't compete.\"",
+          "depth": 2,
+          "name": "\"The piñata stole the show — even the relay race and musical chairs couldn't compete.\""
+        },
+        {
+          "text": "party animal",
+          "depth": 2,
+          "name": "party animal"
+        },
+        {
+          "text": "someone who loves parties and social events",
+          "depth": 2,
+          "name": "someone who loves parties and social events"
+        },
+        {
+          "text": "\"He's a real party animal — first on the dance floor, last to leave, and always near the popcorn and chips.\"",
+          "depth": 2,
+          "name": "\"He's a real party animal — first on the dance floor, last to leave, and always near the popcorn and chips.\""
+        },
+        {
+          "text": "wrap it up",
+          "depth": 2,
+          "name": "wrap it up"
+        },
+        {
+          "text": "finish or conclude something; also, literally wrap a present",
+          "depth": 2,
+          "name": "finish or conclude something; also, literally wrap a present"
+        },
+        {
+          "text": "\"Time to wrap it up — put the present in the gift bag, tie the bow, and add the wrapping paper.\"",
+          "depth": 2,
+          "name": "\"Time to wrap it up — put the present in the gift bag, tie the bow, and add the wrapping paper.\""
+        },
+        {
+          "text": "make a wish",
+          "depth": 2,
+          "name": "make a wish"
+        },
+        {
+          "text": "silently express a hope or desire, especially before blowing out candles",
+          "depth": 2,
+          "name": "silently express a hope or desire, especially before blowing out candles"
+        },
+        {
+          "text": "\"She closed her eyes, made a wish, and blew — the streamer and the bunting swayed in the breeze.\"",
+          "depth": 2,
+          "name": "\"She closed her eyes, made a wish, and blew — the streamer and the bunting swayed in the breeze.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "556:2216",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A parent and child plan a birthday party together",
+          "depth": 1,
+          "name": "Scene: A parent and child plan a birthday party together"
+        },
+        {
+          "text": "Child:",
+          "depth": 2,
+          "name": "Child:"
+        },
+        {
+          "text": "Can we have balloons and a banner for my party? And streamers too!",
+          "depth": 2,
+          "name": "Can we have balloons and a banner for my party? And streamers too!"
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "Of course! I'll get balloons, a banner, and confetti. What about a tablecloth and some bunting for the garden?",
+          "depth": 2,
+          "name": "Of course! I'll get balloons, a banner, and confetti. What about a tablecloth and some bunting for the garden?"
+        },
+        {
+          "text": "Child:",
+          "depth": 2,
+          "name": "Child:"
+        },
+        {
+          "text": "Yes! And a piñata! Can we fill it with candy and fruit?",
+          "depth": 2,
+          "name": "Yes! And a piñata! Can we fill it with candy and fruit?"
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "Great idea. What games do you want? Musical chairs? Pin the tail?",
+          "depth": 2,
+          "name": "Great idea. What games do you want? Musical chairs? Pin the tail?"
+        },
+        {
+          "text": "Child:",
+          "depth": 2,
+          "name": "Child:"
+        },
+        {
+          "text": "Both! And a treasure hunt in the garden. Oh, and face painting — I want to be a tiger!",
+          "depth": 2,
+          "name": "Both! And a treasure hunt in the garden. Oh, and face painting — I want to be a tiger!"
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "We can do that. What about food? Pizza, cupcakes, and ice cream?",
+          "depth": 2,
+          "name": "We can do that. What about food? Pizza, cupcakes, and ice cream?"
+        },
+        {
+          "text": "Child:",
+          "depth": 2,
+          "name": "Child:"
+        },
+        {
+          "text": "Yes! And popcorn and chips. And juice boxes and lemonade for everyone.",
+          "depth": 2,
+          "name": "Yes! And popcorn and chips. And juice boxes and lemonade for everyone."
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "What kind of cake do you want? Chocolate or vanilla?",
+          "depth": 2,
+          "name": "What kind of cake do you want? Chocolate or vanilla?"
+        },
+        {
+          "text": "Child:",
+          "depth": 2,
+          "name": "Child:"
+        },
+        {
+          "text": "Chocolate with sprinkles! And seven candles. I want to make a wish and blow them all out at once.",
+          "depth": 2,
+          "name": "Chocolate with sprinkles! And seven candles. I want to make a wish and blow them all out at once."
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "Sounds perfect. We need to wrap the presents too — I have wrapping paper, bows, and gift bags. Should we do balloon animals or karaoke?",
+          "depth": 2,
+          "name": "Sounds perfect. We need to wrap the presents too — I have wrapping paper, bows, and gift bags. Should we do balloon animals or karaoke?"
+        },
+        {
+          "text": "Child:",
+          "depth": 2,
+          "name": "Child:"
+        },
+        {
+          "text": "Both! And can we play tag and limbo and have a relay race? This is going to be the best party ever!",
+          "depth": 2,
+          "name": "Both! And can we play tag and limbo and have a relay race? This is going to be the best party ever!"
+        },
+        {
+          "text": "Friend:",
+          "depth": 2,
+          "name": "Friend:"
+        },
+        {
+          "text": "Sounds like a great party. Do you need help setting up?",
+          "depth": 2,
+          "name": "Sounds like a great party. Do you need help setting up?"
+        },
+        {
+          "text": "Father:",
+          "depth": 2,
+          "name": "Father:"
+        },
+        {
+          "text": "That would be brilliant, actually. Come over about 1 o'clock?",
+          "depth": 2,
+          "name": "That would be brilliant, actually. Come over about 1 o'clock?"
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "556:2260",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I'm so exciting about the party! I can't wait to go.\"",
+          "depth": 2,
+          "name": "❌ \"I'm so exciting about the party! I can't wait to go.\""
+        },
+        {
+          "text": "✅ \"I'm so excited about the party! I can't wait to go.\"",
+          "depth": 2,
+          "name": "✅ \"I'm so excited about the party! I can't wait to go.\""
+        },
+        {
+          "text": "'-ed' adjectives describe how the person feels: 'excited', 'bored', 'tired'. '-ing' adjectives describe the thing causing the feeling: 'exciting', 'boring', 'tiring'. 'The party was exciting' (it caused excitement). 'I was excited' (I felt excitement). Confusing -ed/-ing adjectives is one of the most persistent errors across all levels.",
+          "depth": 2,
+          "name": "'-ed' adjectives describe how the person feels: 'excited', 'bored', 'tired'. '-ing' adjectives describe the thing causing the feeling: 'exciting', 'boring', 'tiring'. 'The party was exciting' (it caused excitement). 'I was excited' (I felt excitement). Confusing -ed/-ing adjectives is one of the most persistent errors across all levels."
+        },
+        {
+          "text": "❌ \"She suggested us to play musical chairs after the cake.\"",
+          "depth": 2,
+          "name": "❌ \"She suggested us to play musical chairs after the cake.\""
+        },
+        {
+          "text": "✅ \"She suggested (that) we play musical chairs after the cake.\" / \"She suggested playing musical chairs.\"",
+          "depth": 2,
+          "name": "✅ \"She suggested (that) we play musical chairs after the cake.\" / \"She suggested playing musical chairs.\""
+        },
+        {
+          "text": "'Suggest' never takes object + infinitive (*suggest us to play). Three correct patterns: (1) suggest + that + subject + base form: 'She suggested that we play...' (2) suggest + -ing: 'She suggested playing...' (3) suggest + noun: 'She suggested a game.' The subjunctive base form ('we play', not 'we played') is standard in suggestions.",
+          "depth": 2,
+          "name": "'Suggest' never takes object + infinitive (*suggest us to play). Three correct patterns: (1) suggest + that + subject + base form: 'She suggested that we play...' (2) suggest + -ing: 'She suggested playing...' (3) suggest + noun: 'She suggested a game.' The subjunctive base form ('we play', not 'we played') is standard in suggestions."
+        },
+        {
+          "text": "❌ \"There was so many children at the party that we ran out of cake.\"",
+          "depth": 2,
+          "name": "❌ \"There was so many children at the party that we ran out of cake.\""
+        },
+        {
+          "text": "✅ \"There were so many children at the party that we ran out of cake.\"",
+          "depth": 2,
+          "name": "✅ \"There were so many children at the party that we ran out of cake.\""
+        },
+        {
+          "text": "'There was' + singular/uncountable: 'There was a cake', 'There was too much noise.' 'There were' + plural: 'There were so many children', 'There were balloons everywhere.' The subject-verb agreement is determined by the noun that follows, not by 'there'. This error is common even at B2+.",
+          "depth": 2,
+          "name": "'There was' + singular/uncountable: 'There was a cake', 'There was too much noise.' 'There were' + plural: 'There were so many children', 'There were balloons everywhere.' The subject-verb agreement is determined by the noun that follows, not by 'there'. This error is common even at B2+."
+        },
+        {
+          "text": "❌ \"I'm used to go to birthday parties every weekend when I was a child.\"",
+          "depth": 2,
+          "name": "❌ \"I'm used to go to birthday parties every weekend when I was a child.\""
+        },
+        {
+          "text": "✅ \"I used to go to birthday parties every weekend when I was a child.\"",
+          "depth": 2,
+          "name": "✅ \"I used to go to birthday parties every weekend when I was a child.\""
+        },
+        {
+          "text": "'Used to + infinitive' = past habit that no longer happens: 'I used to go...' 'Be used to + -ing' = be accustomed to (present): 'I'm used to going to parties' (it's normal for me now). 'Get used to + -ing' = become accustomed: 'I'm getting used to the noise.' Three distinct structures — don't mix them.",
+          "depth": 2,
+          "name": "'Used to + infinitive' = past habit that no longer happens: 'I used to go...' 'Be used to + -ing' = be accustomed to (present): 'I'm used to going to parties' (it's normal for me now). 'Get used to + -ing' = become accustomed: 'I'm getting used to the noise.' Three distinct structures — don't mix them."
+        },
+        {
+          "text": "❌ \"Everyone enjoyed theirselves at the party and didn't want to leave.\"",
+          "depth": 2,
+          "name": "❌ \"Everyone enjoyed theirselves at the party and didn't want to leave.\""
+        },
+        {
+          "text": "✅ \"Everyone enjoyed themselves at the party and didn't want to leave.\"",
+          "depth": 2,
+          "name": "✅ \"Everyone enjoyed themselves at the party and didn't want to leave.\""
+        },
+        {
+          "text": "Reflexive pronouns: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. *'Theirselves' does not exist in standard English. 'Everyone enjoyed themselves.' 'The children behaved themselves.' Note: 'everyone' takes 'themselves' (plural reflexive for indefinite pronoun) — this is accepted standard usage despite the grammatical tension with singular verb agreement.",
+          "depth": 2,
+          "name": "Reflexive pronouns: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. *'Theirselves' does not exist in standard English. 'Everyone enjoyed themselves.' 'The children behaved themselves.' Note: 'everyone' takes 'themselves' (plural reflexive for indefinite pronoun) — this is accepted standard usage despite the grammatical tension with singular verb agreement."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "556:2284",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how celebration vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how celebration vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "celebrate",
+          "depth": 2,
+          "name": "celebrate"
+        },
+        {
+          "text": "celebration",
+          "depth": 2,
+          "name": "celebration"
+        },
+        {
+          "text": "celebrate",
+          "depth": 2,
+          "name": "celebrate"
+        },
+        {
+          "text": "celebratory",
+          "depth": 2,
+          "name": "celebratory"
+        },
+        {
+          "text": "decorate",
+          "depth": 2,
+          "name": "decorate"
+        },
+        {
+          "text": "decoration / decorator",
+          "depth": 2,
+          "name": "decoration / decorator"
+        },
+        {
+          "text": "decorate",
+          "depth": 2,
+          "name": "decorate"
+        },
+        {
+          "text": "decorated / decorative",
+          "depth": 2,
+          "name": "decorated / decorative"
+        },
+        {
+          "text": "surprise",
+          "depth": 2,
+          "name": "surprise"
+        },
+        {
+          "text": "surprise",
+          "depth": 2,
+          "name": "surprise"
+        },
+        {
+          "text": "surprise",
+          "depth": 2,
+          "name": "surprise"
+        },
+        {
+          "text": "surprised / surprising",
+          "depth": 2,
+          "name": "surprised / surprising"
+        },
+        {
+          "text": "invite",
+          "depth": 2,
+          "name": "invite"
+        },
+        {
+          "text": "invitation",
+          "depth": 2,
+          "name": "invitation"
+        },
+        {
+          "text": "invite",
+          "depth": 2,
+          "name": "invite"
+        },
+        {
+          "text": "invited / inviting",
+          "depth": 2,
+          "name": "invited / inviting"
+        },
+        {
+          "text": "entertain",
+          "depth": 2,
+          "name": "entertain"
+        },
+        {
+          "text": "entertainment / entertainer",
+          "depth": 2,
+          "name": "entertainment / entertainer"
+        },
+        {
+          "text": "entertain",
+          "depth": 2,
+          "name": "entertain"
+        },
+        {
+          "text": "entertaining / entertained",
+          "depth": 2,
+          "name": "entertaining / entertained"
+        },
+        {
+          "text": "wrap",
+          "depth": 2,
+          "name": "wrap"
+        },
+        {
+          "text": "wrapping / wrapper",
+          "depth": 2,
+          "name": "wrapping / wrapper"
+        },
+        {
+          "text": "wrap",
+          "depth": 2,
+          "name": "wrap"
+        },
+        {
+          "text": "wrapped",
+          "depth": 2,
+          "name": "wrapped"
+        },
+        {
+          "text": "gift",
+          "depth": 2,
+          "name": "gift"
+        },
+        {
+          "text": "gift",
+          "depth": 2,
+          "name": "gift"
+        },
+        {
+          "text": "gift",
+          "depth": 2,
+          "name": "gift"
+        },
+        {
+          "text": "gifted",
+          "depth": 2,
+          "name": "gifted"
+        },
+        {
+          "text": "candle",
+          "depth": 2,
+          "name": "candle"
+        },
+        {
+          "text": "candle",
+          "depth": 2,
+          "name": "candle"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "candlelit",
+          "depth": 2,
+          "name": "candlelit"
+        },
+        {
+          "text": "balloon",
+          "depth": 2,
+          "name": "balloon"
+        },
+        {
+          "text": "balloon",
+          "depth": 2,
+          "name": "balloon"
+        },
+        {
+          "text": "balloon",
+          "depth": 2,
+          "name": "balloon"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "greet",
+          "depth": 2,
+          "name": "greet"
+        },
+        {
+          "text": "greeting",
+          "depth": 2,
+          "name": "greeting"
+        },
+        {
+          "text": "greet",
+          "depth": 2,
+          "name": "greet"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "556:2344",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The children wore colourful party __________ and blew whistles when the cake arrived.",
+          "depth": 1,
+          "name": "1. The children wore colourful party __________ and blew whistles when the cake arrived."
+        },
+        {
+          "text": "2.  A __________ stretched across the wall reading 'Happy Birthday'.",
+          "depth": 1,
+          "name": "2. A __________ stretched across the wall reading 'Happy Birthday'."
+        },
+        {
+          "text": "3.  She made a __________ before blowing out the candles on her cake.",
+          "depth": 1,
+          "name": "3. She made a __________ before blowing out the candles on her cake."
+        },
+        {
+          "text": "4.  Each gift was wrapped in __________ paper and tied with a ribbon.",
+          "depth": 1,
+          "name": "4. Each gift was wrapped in __________ paper and tied with a ribbon."
+        },
+        {
+          "text": "5.  The __________ hunt sent teams around the house following written clues.",
+          "depth": 1,
+          "name": "5. The __________ hunt sent teams around the house following written clues."
+        },
+        {
+          "text": "6.  A __________ twisted balloons into animal shapes for the children.",
+          "depth": 1,
+          "name": "6. A __________ twisted balloons into animal shapes for the children."
+        },
+        {
+          "text": "7.  __________ chairs is a game where one player is always left standing.",
+          "depth": 1,
+          "name": "7. __________ chairs is a game where one player is always left standing."
+        },
+        {
+          "text": "8.  The birthday child wrote a thank-you __________ to each guest after the party.",
+          "depth": 1,
+          "name": "8. The birthday child wrote a thank-you __________ to each guest after the party."
+        },
+        {
+          "text": "9.  Colourful __________ were scattered across the table as decoration.",
+          "depth": 1,
+          "name": "9. Colourful __________ were scattered across the table as decoration."
+        },
+        {
+          "text": "10. A __________ performed card tricks and made coins disappear.",
+          "depth": 1,
+          "name": "10. A __________ performed card tricks and made coins disappear."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. hats  2. banner  3. wish  4. wrapping  5. treasure  6. clown  7. Musical  8. note  9. confetti  10. magician",
+          "depth": 2,
+          "name": "1. hats 2. banner 3. wish 4. wrapping 5. treasure 6. clown 7. Musical 8. note 9. confetti 10. magician"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "556:2362",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Pass the Parcel",
+          "depth": 2,
+          "name": "Pass the Parcel"
+        },
+        {
+          "text": "A classic British children's party game. A present is wrapped in many layers of paper. Children sit in a circle and pass it around while music plays. When the music stops, whoever holds the parcel removes one layer. The child who unwraps the last layer wins the prize. Modern versions often have a small sweet between each layer so everyone gets something.",
+          "depth": 2,
+          "name": "A classic British children's party game. A present is wrapped in many layers of paper. Children sit in a circle and pass it around while music plays. When the music stops, whoever holds the parcel removes one layer. The child who unwraps the last layer wins the prize. Modern versions often have a small sweet between each layer so everyone gets something."
+        },
+        {
+          "text": "Birthday Bumps",
+          "depth": 2,
+          "name": "Birthday Bumps"
+        },
+        {
+          "text": "In British tradition, 'birthday bumps' means the birthday child is lifted by their arms and legs and gently bounced — once for each year of age plus 'one for luck.' This is mainly a playground tradition and mostly dying out. In some cultures, pulling ears or cheeks is the equivalent.",
+          "depth": 2,
+          "name": "In British tradition, 'birthday bumps' means the birthday child is lifted by their arms and legs and gently bounced — once for each year of age plus 'one for luck.' This is mainly a playground tradition and mostly dying out. In some cultures, pulling ears or cheeks is the equivalent."
+        },
+        {
+          "text": "Milestone Birthdays in Different Cultures",
+          "depth": 2,
+          "name": "Milestone Birthdays in Different Cultures"
+        },
+        {
+          "text": "18th = legal adulthood in the UK (can vote, buy alcohol). 21st = traditionally considered full adulthood (historically when you received a 'key to the door'). In Latin American cultures, a girl's 15th birthday ('quinceañera') is the major celebration. In Jewish tradition, bar/bat mitzvah at 13/12 marks religious adulthood.",
+          "depth": 2,
+          "name": "18th = legal adulthood in the UK (can vote, buy alcohol). 21st = traditionally considered full adulthood (historically when you received a 'key to the door'). In Latin American cultures, a girl's 15th birthday ('quinceañera') is the major celebration. In Jewish tradition, bar/bat mitzvah at 13/12 marks religious adulthood."
+        },
+        {
+          "text": "RSVP — What It Means",
+          "depth": 2,
+          "name": "RSVP — What It Means"
+        },
+        {
+          "text": "'RSVP' appears on party invitations. It stands for 'Répondez s'il vous plaît' (French: 'Please reply'). It means you should tell the host whether you're coming or not. Failing to RSVP is considered rude. 'Please RSVP by the 10th.' In casual use: 'Have you RSVP'd to the party yet?'",
+          "depth": 2,
+          "name": "'RSVP' appears on party invitations. It stands for 'Répondez s'il vous plaît' (French: 'Please reply'). It means you should tell the host whether you're coming or not. Failing to RSVP is considered rude. 'Please RSVP by the 10th.' In casual use: 'Have you RSVP'd to the party yet?'"
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "556:2378",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "candle",
+          "depth": 2,
+          "name": "candle"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "birthday ~, blow out ~, ~ light",
+          "depth": 2,
+          "name": "birthday ~, blow out ~, ~ light"
+        },
+        {
+          "text": "balloon",
+          "depth": 2,
+          "name": "balloon"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ decoration, pop a ~, helium ~",
+          "depth": 2,
+          "name": "~ decoration, pop a ~, helium ~"
+        },
+        {
+          "text": "streamer",
+          "depth": 2,
+          "name": "streamer"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "party ~, ~ decoration, paper ~",
+          "depth": 2,
+          "name": "party ~, ~ decoration, paper ~"
+        },
+        {
+          "text": "present",
+          "depth": 2,
+          "name": "present"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "birthday ~, ~ opening, wrap a ~",
+          "depth": 2,
+          "name": "birthday ~, ~ opening, wrap a ~"
+        },
+        {
+          "text": "invitation",
+          "depth": 2,
+          "name": "invitation"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "party ~, ~ card, send an ~",
+          "depth": 2,
+          "name": "party ~, ~ card, send an ~"
+        },
+        {
+          "text": "milestone",
+          "depth": 2,
+          "name": "milestone"
+        },
+        {
+          "text": "n/adj",
+          "depth": 2,
+          "name": "n/adj"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ birthday, ~ event, ~ age",
+          "depth": 2,
+          "name": "~ birthday, ~ event, ~ age"
+        },
+        {
+          "text": "surprise",
+          "depth": 2,
+          "name": "surprise"
+        },
+        {
+          "text": "n/adj",
+          "depth": 2,
+          "name": "n/adj"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ party, ~ gift, ~ visit",
+          "depth": 2,
+          "name": "~ party, ~ gift, ~ visit"
+        },
+        {
+          "text": "wrapping",
+          "depth": 2,
+          "name": "wrapping"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ paper, gift ~, ~ ribbon",
+          "depth": 2,
+          "name": "~ paper, gift ~, ~ ribbon"
+        },
+        {
+          "text": "voucher",
+          "depth": 2,
+          "name": "voucher"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "gift ~, ~ code, ~ amount",
+          "depth": 2,
+          "name": "gift ~, ~ code, ~ amount"
+        },
+        {
+          "text": "confetti",
+          "depth": 2,
+          "name": "confetti"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "throw ~, ~ cannon, ~ table",
+          "depth": 2,
+          "name": "throw ~, ~ cannon, ~ table"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,489 @@
+{
+  "unitId": "office",
+  "name": "The Office",
+  "subtopics": [
+    {
+      "id": "office-furniture",
+      "title": "Office Furniture",
+      "wordIds": [
+        "desk",
+        "office-chair",
+        "filing-cabinet",
+        "bookshelf",
+        "cubicle",
+        "standing-desk",
+        "conference-table",
+        "whiteboard",
+        "bulletin-board",
+        "partition"
+      ]
+    },
+    {
+      "id": "office-equipment",
+      "title": "Office Equipment",
+      "wordIds": [
+        "computer",
+        "monitor",
+        "keyboard",
+        "mouse",
+        "printer",
+        "scanner",
+        "projector",
+        "shredder",
+        "fax-machine",
+        "copier"
+      ]
+    },
+    {
+      "id": "technology",
+      "title": "Technology",
+      "wordIds": [
+        "laptop",
+        "headset",
+        "webcam",
+        "router",
+        "server",
+        "usb-drive",
+        "external-hard-drive",
+        "docking-station",
+        "phone-system",
+        "video-conferencing"
+      ]
+    },
+    {
+      "id": "office-areas",
+      "title": "Office Areas",
+      "wordIds": [
+        "reception",
+        "lobby",
+        "break-room",
+        "kitchen",
+        "meeting-room",
+        "corner-office",
+        "open-floor-plan",
+        "mailroom",
+        "storage-room",
+        "restroom"
+      ]
+    },
+    {
+      "id": "office-culture",
+      "title": "Office Culture",
+      "wordIds": [
+        "dress-code",
+        "happy-hour",
+        "team-building",
+        "performance-review",
+        "onboarding",
+        "remote-work",
+        "flex-hours",
+        "open-door-policy",
+        "water-cooler",
+        "office-party"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "desk",
+      "label": "Desk",
+      "ipa": "/dɛsk/",
+      "cefr": "B2",
+      "imageNodeId": "467:12805"
+    },
+    {
+      "kind": "card",
+      "id": "office-chair",
+      "label": "Office Chair",
+      "ipa": "/ˈɒfɪs tʃɛər/",
+      "cefr": "C1",
+      "imageNodeId": "467:12809"
+    },
+    {
+      "kind": "card",
+      "id": "filing-cabinet",
+      "label": "Filing Cabinet",
+      "ipa": "/ˈfaɪlɪŋ ˈkæbɪnɪt/",
+      "cefr": "C1",
+      "imageNodeId": "467:12813"
+    },
+    {
+      "kind": "card",
+      "id": "bookshelf",
+      "label": "Bookshelf",
+      "ipa": "/ˈbʊkˌʃɛlf/",
+      "cefr": "B2",
+      "imageNodeId": "467:12817"
+    },
+    {
+      "kind": "card",
+      "id": "cubicle",
+      "label": "Cubicle",
+      "ipa": "/ˈkjuːbɪkəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:12821"
+    },
+    {
+      "kind": "card",
+      "id": "standing-desk",
+      "label": "Standing Desk",
+      "ipa": "/ˈstændɪŋ dɛsk/",
+      "cefr": "C1",
+      "imageNodeId": "467:12825"
+    },
+    {
+      "kind": "card",
+      "id": "conference-table",
+      "label": "Conference Table",
+      "ipa": "/ˈkɒnfərəns ˈteɪbəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:12829"
+    },
+    {
+      "kind": "card",
+      "id": "whiteboard",
+      "label": "Whiteboard",
+      "ipa": "/ˈwaɪtˌbɔːrd/",
+      "cefr": "C1",
+      "imageNodeId": "467:12833"
+    },
+    {
+      "kind": "card",
+      "id": "bulletin-board",
+      "label": "Bulletin Board",
+      "ipa": "/ˈbʊlɪtɪn bɔːrd/",
+      "cefr": "C1",
+      "imageNodeId": "467:12837"
+    },
+    {
+      "kind": "card",
+      "id": "partition",
+      "label": "Partition",
+      "ipa": "/pɑːrˈtɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "467:12841"
+    },
+    {
+      "kind": "card",
+      "id": "computer",
+      "label": "Computer",
+      "ipa": "/kəmˈpjuːtər/",
+      "cefr": "B2",
+      "imageNodeId": "467:12850"
+    },
+    {
+      "kind": "card",
+      "id": "monitor",
+      "label": "Monitor",
+      "ipa": "/ˈmɒnɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "467:12854"
+    },
+    {
+      "kind": "card",
+      "id": "keyboard",
+      "label": "Keyboard",
+      "ipa": "/ˈkiːˌbɔːrd/",
+      "cefr": "B2",
+      "imageNodeId": "467:12858"
+    },
+    {
+      "kind": "card",
+      "id": "mouse",
+      "label": "Mouse",
+      "ipa": "/maʊs/",
+      "cefr": "B2",
+      "imageNodeId": "467:12862"
+    },
+    {
+      "kind": "card",
+      "id": "printer",
+      "label": "Printer",
+      "ipa": "/ˈprɪntər/",
+      "cefr": "B2",
+      "imageNodeId": "467:12866"
+    },
+    {
+      "kind": "card",
+      "id": "scanner",
+      "label": "Scanner",
+      "ipa": "/ˈskænər/",
+      "cefr": "B2",
+      "imageNodeId": "467:12870"
+    },
+    {
+      "kind": "card",
+      "id": "projector",
+      "label": "Projector",
+      "ipa": "/prəˈdʒɛktər/",
+      "cefr": "B2",
+      "imageNodeId": "467:12874"
+    },
+    {
+      "kind": "card",
+      "id": "shredder",
+      "label": "Shredder",
+      "ipa": "/ˈʃrɛdər/",
+      "cefr": "B2",
+      "imageNodeId": "467:12878"
+    },
+    {
+      "kind": "card",
+      "id": "fax-machine",
+      "label": "Fax Machine",
+      "ipa": "/fæks məˈʃiːn/",
+      "cefr": "C1",
+      "imageNodeId": "467:12882"
+    },
+    {
+      "kind": "card",
+      "id": "copier",
+      "label": "Copier",
+      "ipa": "/ˈkɒpiər/",
+      "cefr": "B2",
+      "imageNodeId": "467:12886"
+    },
+    {
+      "kind": "card",
+      "id": "laptop",
+      "label": "Laptop",
+      "ipa": "/ˈlæpˌtɒp/",
+      "cefr": "B2",
+      "imageNodeId": "467:12895"
+    },
+    {
+      "kind": "card",
+      "id": "headset",
+      "label": "Headset",
+      "ipa": "/ˈhɛdˌsɛt/",
+      "cefr": "B2",
+      "imageNodeId": "467:12899"
+    },
+    {
+      "kind": "card",
+      "id": "webcam",
+      "label": "Webcam",
+      "ipa": "/ˈwɛbˌkæm/",
+      "cefr": "B2",
+      "imageNodeId": "467:12903"
+    },
+    {
+      "kind": "card",
+      "id": "router",
+      "label": "Router",
+      "ipa": "/ˈruːtər/",
+      "cefr": "B2",
+      "imageNodeId": "467:12907"
+    },
+    {
+      "kind": "card",
+      "id": "server",
+      "label": "Server",
+      "ipa": "/ˈsɜːrvər/",
+      "cefr": "B2",
+      "imageNodeId": "467:12911"
+    },
+    {
+      "kind": "card",
+      "id": "usb-drive",
+      "label": "USB Drive",
+      "ipa": "/ˌjuːɛsˈbiː draɪv/",
+      "cefr": "C1",
+      "imageNodeId": "467:12915"
+    },
+    {
+      "kind": "card",
+      "id": "external-hard-drive",
+      "label": "External Hard Drive",
+      "ipa": "/ɪkˈstɜːrnəl hɑːrd draɪv/",
+      "cefr": "C1",
+      "imageNodeId": "467:12919"
+    },
+    {
+      "kind": "card",
+      "id": "docking-station",
+      "label": "Docking Station",
+      "ipa": "/ˈdɒkɪŋ ˈsteɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:12923"
+    },
+    {
+      "kind": "card",
+      "id": "phone-system",
+      "label": "Phone System",
+      "ipa": "/foʊn ˈsɪstəm/",
+      "cefr": "C1",
+      "imageNodeId": "467:12927"
+    },
+    {
+      "kind": "card",
+      "id": "video-conferencing",
+      "label": "Video Conferencing",
+      "ipa": "/ˈvɪdioʊ ˈkɒnfərənsɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:12931"
+    },
+    {
+      "kind": "card",
+      "id": "reception",
+      "label": "Reception",
+      "ipa": "/rɪˈsɛpʃən/",
+      "cefr": "B2",
+      "imageNodeId": "467:12940"
+    },
+    {
+      "kind": "card",
+      "id": "lobby",
+      "label": "Lobby",
+      "ipa": "/ˈlɒbi/",
+      "cefr": "B2",
+      "imageNodeId": "467:12944"
+    },
+    {
+      "kind": "card",
+      "id": "break-room",
+      "label": "Break Room",
+      "ipa": "/breɪk ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "467:12948"
+    },
+    {
+      "kind": "card",
+      "id": "kitchen",
+      "label": "Kitchen",
+      "ipa": "/ˈkɪtʃɪn/",
+      "cefr": "B2",
+      "imageNodeId": "467:12952"
+    },
+    {
+      "kind": "card",
+      "id": "meeting-room",
+      "label": "Meeting Room",
+      "ipa": "/ˈmiːtɪŋ ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "467:12956"
+    },
+    {
+      "kind": "card",
+      "id": "corner-office",
+      "label": "Corner Office",
+      "ipa": "/ˈkɔːrnər ˈɒfɪs/",
+      "cefr": "C1",
+      "imageNodeId": "467:12960"
+    },
+    {
+      "kind": "card",
+      "id": "open-floor-plan",
+      "label": "Open Floor Plan",
+      "ipa": "/ˈoʊpən flɔːr plæn/",
+      "cefr": "C1",
+      "imageNodeId": "467:12964"
+    },
+    {
+      "kind": "card",
+      "id": "mailroom",
+      "label": "Mailroom",
+      "ipa": "/ˈmeɪlˌruːm/",
+      "cefr": "B2",
+      "imageNodeId": "467:12968"
+    },
+    {
+      "kind": "card",
+      "id": "storage-room",
+      "label": "Storage Room",
+      "ipa": "/ˈstɔːrɪdʒ ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "467:12972"
+    },
+    {
+      "kind": "card",
+      "id": "restroom",
+      "label": "Restroom",
+      "ipa": "/ˈrɛstˌruːm/",
+      "cefr": "B2",
+      "imageNodeId": "467:12976"
+    },
+    {
+      "kind": "card",
+      "id": "dress-code",
+      "label": "Dress Code",
+      "ipa": "/drɛs koʊd/",
+      "cefr": "C1",
+      "imageNodeId": "467:12985"
+    },
+    {
+      "kind": "card",
+      "id": "happy-hour",
+      "label": "Happy Hour",
+      "ipa": "/ˈhæpi aʊər/",
+      "cefr": "C1",
+      "imageNodeId": "467:12989"
+    },
+    {
+      "kind": "card",
+      "id": "team-building",
+      "label": "Team Building",
+      "ipa": "/tiːm ˈbɪldɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:12993"
+    },
+    {
+      "kind": "card",
+      "id": "performance-review",
+      "label": "Performance Review",
+      "ipa": "/pərˈfɔːrməns rɪˈvjuː/",
+      "cefr": "C1",
+      "imageNodeId": "467:12997"
+    },
+    {
+      "kind": "card",
+      "id": "onboarding",
+      "label": "Onboarding",
+      "ipa": "/ˈɒnˌbɔːrdɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:13001"
+    },
+    {
+      "kind": "card",
+      "id": "remote-work",
+      "label": "Remote Work",
+      "ipa": "/rɪˈmoʊt wɜːrk/",
+      "cefr": "C1",
+      "imageNodeId": "467:13005"
+    },
+    {
+      "kind": "card",
+      "id": "flex-hours",
+      "label": "Flex Hours",
+      "ipa": "/flɛks aʊərz/",
+      "cefr": "C1",
+      "imageNodeId": "467:13009"
+    },
+    {
+      "kind": "card",
+      "id": "open-door-policy",
+      "label": "Open Door Policy",
+      "ipa": "/ˈoʊpən dɔːr ˈpɒlɪsi/",
+      "cefr": "C1",
+      "imageNodeId": "467:13013"
+    },
+    {
+      "kind": "card",
+      "id": "water-cooler",
+      "label": "Water Cooler",
+      "ipa": "/ˈwɔːtər ˈkuːlər/",
+      "cefr": "C1",
+      "imageNodeId": "467:13017"
+    },
+    {
+      "kind": "card",
+      "id": "office-party",
+      "label": "Office Party",
+      "ipa": "/ˈɒfɪs ˈpɑːrti/",
+      "cefr": "C1",
+      "imageNodeId": "467:13021"
+    }
+  ],
+  "materials": null
+}

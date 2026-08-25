@@ -1,0 +1,489 @@
+{
+  "unitId": "human-body-hands-and-feet",
+  "name": "The Human Body (Hands & Feet)",
+  "subtopics": [
+    {
+      "id": "hand-parts",
+      "title": "Hand Parts",
+      "wordIds": [
+        "hand",
+        "palm",
+        "back-of-hand",
+        "wrist",
+        "knuckle",
+        "finger",
+        "thumb",
+        "index-finger",
+        "middle-finger",
+        "ring-finger"
+      ]
+    },
+    {
+      "id": "finger-details",
+      "title": "Finger Details",
+      "wordIds": [
+        "little-finger",
+        "fingertip",
+        "fingerprint",
+        "nail",
+        "cuticle",
+        "joint",
+        "phalanx",
+        "webbing",
+        "crease",
+        "lifeline"
+      ]
+    },
+    {
+      "id": "hand-actions",
+      "title": "Hand Actions",
+      "wordIds": [
+        "grip",
+        "pinch",
+        "grasp",
+        "squeeze",
+        "clench",
+        "point",
+        "snap",
+        "wave",
+        "clap",
+        "fist"
+      ]
+    },
+    {
+      "id": "foot-anatomy",
+      "title": "Foot Anatomy",
+      "wordIds": [
+        "foot",
+        "heel",
+        "sole",
+        "arch",
+        "instep",
+        "ankle",
+        "toe",
+        "ball",
+        "bridge",
+        "toenail"
+      ]
+    },
+    {
+      "id": "hand-foot-care",
+      "title": "Hand & Foot Care",
+      "wordIds": [
+        "manicure",
+        "pedicure",
+        "nail-polish",
+        "nail-file",
+        "lotion",
+        "moisturizer",
+        "exfoliant",
+        "pumice-stone",
+        "cuticle-oil",
+        "hand-cream"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "hand",
+      "label": "Hand",
+      "ipa": "/hænd/",
+      "cefr": "A2",
+      "imageNodeId": "467:861"
+    },
+    {
+      "kind": "card",
+      "id": "palm",
+      "label": "Palm",
+      "ipa": "/pɑːm/",
+      "cefr": "A2",
+      "imageNodeId": "467:865"
+    },
+    {
+      "kind": "card",
+      "id": "back-of-hand",
+      "label": "Back of Hand",
+      "ipa": "/bæk əv hænd/",
+      "cefr": "B2",
+      "imageNodeId": "467:869"
+    },
+    {
+      "kind": "card",
+      "id": "wrist",
+      "label": "Wrist",
+      "ipa": "/rɪst/",
+      "cefr": "A2",
+      "imageNodeId": "467:873"
+    },
+    {
+      "kind": "card",
+      "id": "knuckle",
+      "label": "Knuckle",
+      "ipa": "/ˈnʌkəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:877"
+    },
+    {
+      "kind": "card",
+      "id": "finger",
+      "label": "Finger",
+      "ipa": "/ˈfɪŋɡər/",
+      "cefr": "A2",
+      "imageNodeId": "467:881"
+    },
+    {
+      "kind": "card",
+      "id": "thumb",
+      "label": "Thumb",
+      "ipa": "/θʌm/",
+      "cefr": "A2",
+      "imageNodeId": "467:885"
+    },
+    {
+      "kind": "card",
+      "id": "index-finger",
+      "label": "Index Finger",
+      "ipa": "/ˈɪndɛks ˈfɪŋɡər/",
+      "cefr": "B1",
+      "imageNodeId": "467:889"
+    },
+    {
+      "kind": "card",
+      "id": "middle-finger",
+      "label": "Middle Finger",
+      "ipa": "/ˈmɪdəl ˈfɪŋɡər/",
+      "cefr": "B1",
+      "imageNodeId": "467:893"
+    },
+    {
+      "kind": "card",
+      "id": "ring-finger",
+      "label": "Ring Finger",
+      "ipa": "/rɪŋ ˈfɪŋɡər/",
+      "cefr": "B1",
+      "imageNodeId": "467:897"
+    },
+    {
+      "kind": "card",
+      "id": "little-finger",
+      "label": "Little Finger",
+      "ipa": "/ˈlɪtəl ˈfɪŋɡər/",
+      "cefr": "B1",
+      "imageNodeId": "467:906"
+    },
+    {
+      "kind": "card",
+      "id": "fingertip",
+      "label": "Fingertip",
+      "ipa": "/ˈfɪŋɡərˌtɪp/",
+      "cefr": "A2",
+      "imageNodeId": "467:910"
+    },
+    {
+      "kind": "card",
+      "id": "fingerprint",
+      "label": "Fingerprint",
+      "ipa": "/ˈfɪŋɡərˌprɪnt/",
+      "cefr": "B1",
+      "imageNodeId": "467:914"
+    },
+    {
+      "kind": "card",
+      "id": "nail",
+      "label": "Nail",
+      "ipa": "/neɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:918"
+    },
+    {
+      "kind": "card",
+      "id": "cuticle",
+      "label": "Cuticle",
+      "ipa": "/ˈkjuːtɪkəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:922"
+    },
+    {
+      "kind": "card",
+      "id": "joint",
+      "label": "Joint",
+      "ipa": "/dʒɔɪnt/",
+      "cefr": "A2",
+      "imageNodeId": "467:926"
+    },
+    {
+      "kind": "card",
+      "id": "phalanx",
+      "label": "Phalanx",
+      "ipa": "/ˈfælæŋks/",
+      "cefr": "A2",
+      "imageNodeId": "467:930"
+    },
+    {
+      "kind": "card",
+      "id": "webbing",
+      "label": "Webbing",
+      "ipa": "/ˈwɛbɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:934"
+    },
+    {
+      "kind": "card",
+      "id": "crease",
+      "label": "Crease",
+      "ipa": "/kriːs/",
+      "cefr": "A2",
+      "imageNodeId": "467:938"
+    },
+    {
+      "kind": "card",
+      "id": "lifeline",
+      "label": "Lifeline",
+      "ipa": "/ˈlaɪfˌlaɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:942"
+    },
+    {
+      "kind": "card",
+      "id": "grip",
+      "label": "Grip",
+      "ipa": "/ɡrɪp/",
+      "cefr": "A2",
+      "imageNodeId": "467:951"
+    },
+    {
+      "kind": "card",
+      "id": "pinch",
+      "label": "Pinch",
+      "ipa": "/pɪntʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:955"
+    },
+    {
+      "kind": "card",
+      "id": "grasp",
+      "label": "Grasp",
+      "ipa": "/ɡræsp/",
+      "cefr": "A2",
+      "imageNodeId": "467:959"
+    },
+    {
+      "kind": "card",
+      "id": "squeeze",
+      "label": "Squeeze",
+      "ipa": "/skwiːz/",
+      "cefr": "A2",
+      "imageNodeId": "467:963"
+    },
+    {
+      "kind": "card",
+      "id": "clench",
+      "label": "Clench",
+      "ipa": "/klɛntʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:967"
+    },
+    {
+      "kind": "card",
+      "id": "point",
+      "label": "Point",
+      "ipa": "/pɔɪnt/",
+      "cefr": "A2",
+      "imageNodeId": "467:971"
+    },
+    {
+      "kind": "card",
+      "id": "snap",
+      "label": "Snap",
+      "ipa": "/snæp/",
+      "cefr": "A2",
+      "imageNodeId": "467:975"
+    },
+    {
+      "kind": "card",
+      "id": "wave",
+      "label": "Wave",
+      "ipa": "/weɪv/",
+      "cefr": "A2",
+      "imageNodeId": "467:979"
+    },
+    {
+      "kind": "card",
+      "id": "clap",
+      "label": "Clap",
+      "ipa": "/klæp/",
+      "cefr": "A2",
+      "imageNodeId": "467:983"
+    },
+    {
+      "kind": "card",
+      "id": "fist",
+      "label": "Fist",
+      "ipa": "/fɪst/",
+      "cefr": "A2",
+      "imageNodeId": "467:987"
+    },
+    {
+      "kind": "card",
+      "id": "foot",
+      "label": "Foot",
+      "ipa": "/fʊt/",
+      "cefr": "A2",
+      "imageNodeId": "467:996"
+    },
+    {
+      "kind": "card",
+      "id": "heel",
+      "label": "Heel",
+      "ipa": "/hiːl/",
+      "cefr": "A2",
+      "imageNodeId": "467:1000"
+    },
+    {
+      "kind": "card",
+      "id": "sole",
+      "label": "Sole",
+      "ipa": "/soʊl/",
+      "cefr": "A2",
+      "imageNodeId": "467:1004"
+    },
+    {
+      "kind": "card",
+      "id": "arch",
+      "label": "Arch",
+      "ipa": "/ɑːrtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:1008"
+    },
+    {
+      "kind": "card",
+      "id": "instep",
+      "label": "Instep",
+      "ipa": "/ˈɪnˌstɛp/",
+      "cefr": "A2",
+      "imageNodeId": "467:1012"
+    },
+    {
+      "kind": "card",
+      "id": "ankle",
+      "label": "Ankle",
+      "ipa": "/ˈæŋkəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:1016"
+    },
+    {
+      "kind": "card",
+      "id": "toe",
+      "label": "Toe",
+      "ipa": "/toʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:1020"
+    },
+    {
+      "kind": "card",
+      "id": "ball",
+      "label": "Ball",
+      "ipa": "/bɔːl/",
+      "cefr": "A2",
+      "imageNodeId": "467:1024"
+    },
+    {
+      "kind": "card",
+      "id": "bridge",
+      "label": "Bridge",
+      "ipa": "/brɪdʒ/",
+      "cefr": "A2",
+      "imageNodeId": "467:1028"
+    },
+    {
+      "kind": "card",
+      "id": "toenail",
+      "label": "Toenail",
+      "ipa": "/ˈtoʊˌneɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:1032"
+    },
+    {
+      "kind": "card",
+      "id": "manicure",
+      "label": "Manicure",
+      "ipa": "/ˈmænɪˌkjʊər/",
+      "cefr": "A2",
+      "imageNodeId": "467:1041"
+    },
+    {
+      "kind": "card",
+      "id": "pedicure",
+      "label": "Pedicure",
+      "ipa": "/ˈpɛdɪˌkjʊər/",
+      "cefr": "A2",
+      "imageNodeId": "467:1045"
+    },
+    {
+      "kind": "card",
+      "id": "nail-polish",
+      "label": "Nail Polish",
+      "ipa": "/neɪl ˈpɒlɪʃ/",
+      "cefr": "B1",
+      "imageNodeId": "467:1049"
+    },
+    {
+      "kind": "card",
+      "id": "nail-file",
+      "label": "Nail File",
+      "ipa": "/neɪl faɪl/",
+      "cefr": "B1",
+      "imageNodeId": "467:1053"
+    },
+    {
+      "kind": "card",
+      "id": "lotion",
+      "label": "Lotion",
+      "ipa": "/ˈloʊʃən/",
+      "cefr": "A2",
+      "imageNodeId": "467:1057"
+    },
+    {
+      "kind": "card",
+      "id": "moisturizer",
+      "label": "Moisturizer",
+      "ipa": "/ˈmɔɪstʃəˌraɪzər/",
+      "cefr": "B1",
+      "imageNodeId": "467:1061"
+    },
+    {
+      "kind": "card",
+      "id": "exfoliant",
+      "label": "Exfoliant",
+      "ipa": "/ɪksˈfoʊliənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:1065"
+    },
+    {
+      "kind": "card",
+      "id": "pumice-stone",
+      "label": "Pumice Stone",
+      "ipa": "/ˈpʌmɪs stoʊn/",
+      "cefr": "B1",
+      "imageNodeId": "467:1069"
+    },
+    {
+      "kind": "card",
+      "id": "cuticle-oil",
+      "label": "Cuticle Oil",
+      "ipa": "/ˈkjuːtɪkəl ɔɪl/",
+      "cefr": "B1",
+      "imageNodeId": "467:1073"
+    },
+    {
+      "kind": "card",
+      "id": "hand-cream",
+      "label": "Hand Cream",
+      "ipa": "/hænd kriːm/",
+      "cefr": "B1",
+      "imageNodeId": "467:1077"
+    }
+  ],
+  "materials": null
+}

@@ -1,0 +1,1611 @@
+{
+  "unitId": "playground",
+  "name": "The Playground",
+  "subtopics": [
+    {
+      "id": "play-equipment",
+      "title": "Play Equipment",
+      "wordIds": [
+        "swing",
+        "slide",
+        "seesaw",
+        "climbing-frame",
+        "sandbox",
+        "monkey-bars",
+        "merry-go-round",
+        "spring-rider",
+        "tunnel",
+        "balance-beam"
+      ]
+    },
+    {
+      "id": "sports-equipment",
+      "title": "Sports Equipment",
+      "wordIds": [
+        "ball",
+        "hoop",
+        "bat",
+        "racket",
+        "net",
+        "goal",
+        "whistle",
+        "stopwatch",
+        "helmet",
+        "knee-pad"
+      ]
+    },
+    {
+      "id": "playground-surface",
+      "title": "Playground Surface",
+      "wordIds": [
+        "rubber-mat",
+        "sand",
+        "gravel",
+        "grass",
+        "concrete",
+        "chalk-drawing",
+        "hopscotch",
+        "painted-lines",
+        "puddle",
+        "mud"
+      ]
+    },
+    {
+      "id": "people-at-the-playground",
+      "title": "People at the Playground",
+      "wordIds": [
+        "child",
+        "friend",
+        "parent",
+        "teacher",
+        "baby",
+        "toddler",
+        "teenager",
+        "guard",
+        "coach",
+        "volunteer"
+      ]
+    },
+    {
+      "id": "playground-activities",
+      "title": "Playground Activities",
+      "wordIds": [
+        "swinging",
+        "sliding",
+        "climbing",
+        "running",
+        "jumping",
+        "throwing",
+        "catching",
+        "kicking",
+        "skipping",
+        "hiding"
+      ]
+    },
+    {
+      "id": "playground-features",
+      "title": "Playground Features",
+      "wordIds": [
+        "fence",
+        "gate",
+        "bench",
+        "water-fountain",
+        "shade-structure",
+        "sign",
+        "trash-can",
+        "first-aid-kit",
+        "bell",
+        "flag"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "swing",
+      "label": "Swing",
+      "ipa": "/swɪŋ/",
+      "cefr": "A1",
+      "imageNodeId": "52:15"
+    },
+    {
+      "kind": "card",
+      "id": "slide",
+      "label": "Slide",
+      "ipa": "/slaɪd/",
+      "cefr": "A1",
+      "imageNodeId": "52:19"
+    },
+    {
+      "kind": "card",
+      "id": "seesaw",
+      "label": "Seesaw",
+      "ipa": "/ˈsiːsɔː/",
+      "cefr": "A1",
+      "imageNodeId": "52:23"
+    },
+    {
+      "kind": "card",
+      "id": "climbing-frame",
+      "label": "Climbing Frame",
+      "ipa": "/ˈklaɪmɪŋ freɪm/",
+      "cefr": "A2",
+      "imageNodeId": "52:27"
+    },
+    {
+      "kind": "card",
+      "id": "sandbox",
+      "label": "Sandbox",
+      "ipa": "/ˈsændbɑːks/",
+      "cefr": "A1",
+      "imageNodeId": "52:31"
+    },
+    {
+      "kind": "card",
+      "id": "monkey-bars",
+      "label": "Monkey Bars",
+      "ipa": "/ˈmʌŋki bɑːrz/",
+      "cefr": "A2",
+      "imageNodeId": "52:35"
+    },
+    {
+      "kind": "card",
+      "id": "merry-go-round",
+      "label": "Merry-Go-Round",
+      "ipa": "/ˈmɛri ɡoʊ raʊnd/",
+      "cefr": "B1",
+      "imageNodeId": "52:39"
+    },
+    {
+      "kind": "card",
+      "id": "spring-rider",
+      "label": "Spring Rider",
+      "ipa": "/sprɪŋ ˈraɪdər/",
+      "cefr": "A2",
+      "imageNodeId": "52:43"
+    },
+    {
+      "kind": "card",
+      "id": "tunnel",
+      "label": "Tunnel",
+      "ipa": "/ˈtʌnəl/",
+      "cefr": "A1",
+      "imageNodeId": "52:47"
+    },
+    {
+      "kind": "card",
+      "id": "balance-beam",
+      "label": "Balance Beam",
+      "ipa": "/ˈbæləns biːm/",
+      "cefr": "A2",
+      "imageNodeId": "52:51"
+    },
+    {
+      "kind": "card",
+      "id": "ball",
+      "label": "Ball",
+      "ipa": "/bɔːl/",
+      "cefr": "A1",
+      "imageNodeId": "52:60"
+    },
+    {
+      "kind": "card",
+      "id": "hoop",
+      "label": "Hoop",
+      "ipa": "/huːp/",
+      "cefr": "A1",
+      "imageNodeId": "52:64"
+    },
+    {
+      "kind": "card",
+      "id": "bat",
+      "label": "Bat",
+      "ipa": "/bæt/",
+      "cefr": "A1",
+      "imageNodeId": "52:68"
+    },
+    {
+      "kind": "card",
+      "id": "racket",
+      "label": "Racket",
+      "ipa": "/ˈrækɪt/",
+      "cefr": "A1",
+      "imageNodeId": "52:72"
+    },
+    {
+      "kind": "card",
+      "id": "net",
+      "label": "Net",
+      "ipa": "/nɛt/",
+      "cefr": "A1",
+      "imageNodeId": "52:76"
+    },
+    {
+      "kind": "card",
+      "id": "goal",
+      "label": "Goal",
+      "ipa": "/ɡoʊl/",
+      "cefr": "A1",
+      "imageNodeId": "52:80"
+    },
+    {
+      "kind": "card",
+      "id": "whistle",
+      "label": "Whistle",
+      "ipa": "/ˈwɪsəl/",
+      "cefr": "A1",
+      "imageNodeId": "52:84"
+    },
+    {
+      "kind": "card",
+      "id": "stopwatch",
+      "label": "Stopwatch",
+      "ipa": "/ˈstɑːpwɑːtʃ/",
+      "cefr": "A1",
+      "imageNodeId": "52:88"
+    },
+    {
+      "kind": "card",
+      "id": "helmet",
+      "label": "Helmet",
+      "ipa": "/ˈhɛlmɪt/",
+      "cefr": "A1",
+      "imageNodeId": "52:92"
+    },
+    {
+      "kind": "card",
+      "id": "knee-pad",
+      "label": "Knee Pad",
+      "ipa": "/niː pæd/",
+      "cefr": "A2",
+      "imageNodeId": "52:96"
+    },
+    {
+      "kind": "card",
+      "id": "rubber-mat",
+      "label": "Rubber Mat",
+      "ipa": "/ˈrʌbər mæt/",
+      "cefr": "A2",
+      "imageNodeId": "52:105"
+    },
+    {
+      "kind": "card",
+      "id": "sand",
+      "label": "Sand",
+      "ipa": "/sænd/",
+      "cefr": "A1",
+      "imageNodeId": "52:109"
+    },
+    {
+      "kind": "card",
+      "id": "gravel",
+      "label": "Gravel",
+      "ipa": "/ˈɡrævəl/",
+      "cefr": "A1",
+      "imageNodeId": "52:113"
+    },
+    {
+      "kind": "card",
+      "id": "grass",
+      "label": "Grass",
+      "ipa": "/ɡræs/",
+      "cefr": "A1",
+      "imageNodeId": "52:117"
+    },
+    {
+      "kind": "card",
+      "id": "concrete",
+      "label": "Concrete",
+      "ipa": "/ˈkɑːnkriːt/",
+      "cefr": "A1",
+      "imageNodeId": "52:121"
+    },
+    {
+      "kind": "card",
+      "id": "chalk-drawing",
+      "label": "Chalk Drawing",
+      "ipa": "/tʃɔːk ˈdrɔːɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "52:125"
+    },
+    {
+      "kind": "card",
+      "id": "hopscotch",
+      "label": "Hopscotch",
+      "ipa": "/ˈhɑːpskɑːtʃ/",
+      "cefr": "A1",
+      "imageNodeId": "52:129"
+    },
+    {
+      "kind": "card",
+      "id": "painted-lines",
+      "label": "Painted Lines",
+      "ipa": "/ˈpeɪntɪd laɪnz/",
+      "cefr": "A2",
+      "imageNodeId": "52:133"
+    },
+    {
+      "kind": "card",
+      "id": "puddle",
+      "label": "Puddle",
+      "ipa": "/ˈpʌdəl/",
+      "cefr": "A1",
+      "imageNodeId": "52:137"
+    },
+    {
+      "kind": "card",
+      "id": "mud",
+      "label": "Mud",
+      "ipa": "/mʌd/",
+      "cefr": "A1",
+      "imageNodeId": "52:141"
+    },
+    {
+      "kind": "card",
+      "id": "child",
+      "label": "Child",
+      "ipa": "/tʃaɪld/",
+      "cefr": "A1",
+      "imageNodeId": "52:150"
+    },
+    {
+      "kind": "card",
+      "id": "friend",
+      "label": "Friend",
+      "ipa": "/frɛnd/",
+      "cefr": "A1",
+      "imageNodeId": "52:154"
+    },
+    {
+      "kind": "card",
+      "id": "parent",
+      "label": "Parent",
+      "ipa": "/ˈpɛrənt/",
+      "cefr": "A1",
+      "imageNodeId": "52:158"
+    },
+    {
+      "kind": "card",
+      "id": "teacher",
+      "label": "Teacher",
+      "ipa": "/ˈtiːtʃər/",
+      "cefr": "A1",
+      "imageNodeId": "52:162"
+    },
+    {
+      "kind": "card",
+      "id": "baby",
+      "label": "Baby",
+      "ipa": "/ˈbeɪbi/",
+      "cefr": "A1",
+      "imageNodeId": "52:166"
+    },
+    {
+      "kind": "card",
+      "id": "toddler",
+      "label": "Toddler",
+      "ipa": "/ˈtɑːdlər/",
+      "cefr": "A1",
+      "imageNodeId": "52:170"
+    },
+    {
+      "kind": "card",
+      "id": "teenager",
+      "label": "Teenager",
+      "ipa": "/ˈtiːneɪdʒər/",
+      "cefr": "A1",
+      "imageNodeId": "52:174"
+    },
+    {
+      "kind": "card",
+      "id": "guard",
+      "label": "Guard",
+      "ipa": "/ɡɑːrd/",
+      "cefr": "A1",
+      "imageNodeId": "52:178"
+    },
+    {
+      "kind": "card",
+      "id": "coach",
+      "label": "Coach",
+      "ipa": "/koʊtʃ/",
+      "cefr": "A1",
+      "imageNodeId": "52:182"
+    },
+    {
+      "kind": "card",
+      "id": "volunteer",
+      "label": "Volunteer",
+      "ipa": "/ˌvɑːlənˈtɪr/",
+      "cefr": "A1",
+      "imageNodeId": "52:186"
+    },
+    {
+      "kind": "card",
+      "id": "swinging",
+      "label": "Swinging",
+      "ipa": "/ˈswɪŋɪŋ/",
+      "cefr": "A1",
+      "imageNodeId": "52:195"
+    },
+    {
+      "kind": "card",
+      "id": "sliding",
+      "label": "Sliding",
+      "ipa": "/ˈslaɪdɪŋ/",
+      "cefr": "A1",
+      "imageNodeId": "52:199"
+    },
+    {
+      "kind": "card",
+      "id": "climbing",
+      "label": "Climbing",
+      "ipa": "/ˈklaɪmɪŋ/",
+      "cefr": "A1",
+      "imageNodeId": "52:203"
+    },
+    {
+      "kind": "card",
+      "id": "running",
+      "label": "Running",
+      "ipa": "/ˈrʌnɪŋ/",
+      "cefr": "A1",
+      "imageNodeId": "52:207"
+    },
+    {
+      "kind": "card",
+      "id": "jumping",
+      "label": "Jumping",
+      "ipa": "/ˈdʒʌmpɪŋ/",
+      "cefr": "A1",
+      "imageNodeId": "52:211"
+    },
+    {
+      "kind": "card",
+      "id": "throwing",
+      "label": "Throwing",
+      "ipa": "/ˈθroʊɪŋ/",
+      "cefr": "A1",
+      "imageNodeId": "52:215"
+    },
+    {
+      "kind": "card",
+      "id": "catching",
+      "label": "Catching",
+      "ipa": "/ˈkætʃɪŋ/",
+      "cefr": "A1",
+      "imageNodeId": "52:219"
+    },
+    {
+      "kind": "card",
+      "id": "kicking",
+      "label": "Kicking",
+      "ipa": "/ˈkɪkɪŋ/",
+      "cefr": "A1",
+      "imageNodeId": "52:223"
+    },
+    {
+      "kind": "card",
+      "id": "skipping",
+      "label": "Skipping",
+      "ipa": "/ˈskɪpɪŋ/",
+      "cefr": "A1",
+      "imageNodeId": "52:227"
+    },
+    {
+      "kind": "card",
+      "id": "hiding",
+      "label": "Hiding",
+      "ipa": "/ˈhaɪdɪŋ/",
+      "cefr": "A1",
+      "imageNodeId": "52:231"
+    },
+    {
+      "kind": "card",
+      "id": "fence",
+      "label": "Fence",
+      "ipa": "/fɛns/",
+      "cefr": "A1",
+      "imageNodeId": "52:240"
+    },
+    {
+      "kind": "card",
+      "id": "gate",
+      "label": "Gate",
+      "ipa": "/ɡeɪt/",
+      "cefr": "A1",
+      "imageNodeId": "52:244"
+    },
+    {
+      "kind": "card",
+      "id": "bench",
+      "label": "Bench",
+      "ipa": "/bɛntʃ/",
+      "cefr": "A1",
+      "imageNodeId": "52:248"
+    },
+    {
+      "kind": "card",
+      "id": "water-fountain",
+      "label": "Water Fountain",
+      "ipa": "/ˈwɔːtər ˈfaʊntən/",
+      "cefr": "A2",
+      "imageNodeId": "52:252"
+    },
+    {
+      "kind": "card",
+      "id": "shade-structure",
+      "label": "Shade Structure",
+      "ipa": "/ʃeɪd ˈstrʌktʃər/",
+      "cefr": "B1",
+      "imageNodeId": "52:256"
+    },
+    {
+      "kind": "card",
+      "id": "sign",
+      "label": "Sign",
+      "ipa": "/saɪn/",
+      "cefr": "A1",
+      "imageNodeId": "52:260"
+    },
+    {
+      "kind": "card",
+      "id": "trash-can",
+      "label": "Trash Can",
+      "ipa": "/træʃ kæn/",
+      "cefr": "A2",
+      "imageNodeId": "52:264"
+    },
+    {
+      "kind": "card",
+      "id": "first-aid-kit",
+      "label": "First Aid Kit",
+      "ipa": "/fɜːrst eɪd kɪt/",
+      "cefr": "B1",
+      "imageNodeId": "52:268"
+    },
+    {
+      "kind": "card",
+      "id": "bell",
+      "label": "Bell",
+      "ipa": "/bɛl/",
+      "cefr": "A1",
+      "imageNodeId": "52:272"
+    },
+    {
+      "kind": "card",
+      "id": "flag",
+      "label": "Flag",
+      "ipa": "/flæɡ/",
+      "cefr": "A1",
+      "imageNodeId": "52:276"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "542:2483",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "542:2485",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1 · Topic: The Playground",
+          "depth": 1,
+          "name": "Level: B1 · Topic: The Playground"
+        },
+        {
+          "text": "After School at the Playground\n\nEvery afternoon after school, the playground near our building fills with children. It is a bright, colourful space with equipment for different ages.\n\nThe younger children run straight to the sandbox to build castles and dig with small shovels. Next to the sandbox, there is a row of swings — some for toddlers with safety bars, and bigger ones for older children. My little sister always asks me to push her higher.\n\nThe climbing wall is very popular with the older children. It has coloured holds and a soft mat underneath for safety. Beside it, there is a tall slide with a ladder. The children climb up, slide down, and run back to do it again.\n\nIn the centre of the playground, there is a roundabout that spins when you push it, and a seesaw where two children sit on opposite ends and go up and down. There is also a set of monkey bars that stretches across a metal frame — only the bravest children make it to the other side.\n\nAround the edges, there are benches where parents sit and watch. A drinking fountain stands near the entrance, and there are signs reminding everyone to play safely and take turns.\n\nThe ground is covered with rubber tiles to cushion any falls. The whole area is surrounded by a low fence with a gate that keeps small children inside.\n\nThe playground is where friendships begin. Children learn to share, take turns, and help each other — all while having fun.",
+          "depth": 1,
+          "name": "After School at the Playground Every afternoon after school, the playground near our building fills with children. It is a bright, colourful space with equipment for different ages. The younger children run straight to the sandbox to build castles and dig with small shovels. Next to the sandbox, there is a row of swings — some for toddlers with safety bars, and bigger ones for older children. My little sister always asks me to push her higher. The climbing wall is very popular with the older children. It has coloured holds and a soft mat underneath for safety. Beside it, there is a tall slide with a ladder. The children climb up, slide down, and run back to do it again. In the centre of the playground, there is a roundabout that spins when you push it, and a seesaw where two children sit on opposite ends and go up and down. There is also a set of monkey bars that stretches across a metal frame — only the bravest children make it to the other side. Around the edges, there are benches where parents sit and watch. A drinking fountain stands near the entrance, and there are signs reminding everyone to play safely and take turns. The ground is covered with rubber tiles to cushion any falls. The whole area is surrounded by a low fence with a gate that keeps small children inside. The playground is where friendships begin. Children learn to share, take turns, and help each other — all while having fun."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What do younger children do in the sandbox?",
+          "depth": 1,
+          "name": "1. What do younger children do in the sandbox?"
+        },
+        {
+          "text": "2. What safety feature does the climbing wall have?",
+          "depth": 1,
+          "name": "2. What safety feature does the climbing wall have?"
+        },
+        {
+          "text": "3. How does the roundabout work?",
+          "depth": 1,
+          "name": "3. How does the roundabout work?"
+        },
+        {
+          "text": "4. What covers the ground to prevent injuries?",
+          "depth": 1,
+          "name": "4. What covers the ground to prevent injuries?"
+        },
+        {
+          "text": "5. What social skills do children learn at the playground?",
+          "depth": 1,
+          "name": "5. What social skills do children learn at the playground?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "542:2498",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "swing into action",
+          "depth": 2,
+          "name": "swing into action"
+        },
+        {
+          "text": "start doing something quickly and energetically",
+          "depth": 2,
+          "name": "start doing something quickly and energetically"
+        },
+        {
+          "text": "\"The children swung into action — one grabbed the swing, another ran to the slide, and a third climbed the monkey bars.\"",
+          "depth": 2,
+          "name": "\"The children swung into action — one grabbed the swing, another ran to the slide, and a third climbed the monkey bars.\""
+        },
+        {
+          "text": "a level playing field",
+          "depth": 2,
+          "name": "a level playing field"
+        },
+        {
+          "text": "a fair situation where everyone has equal chances",
+          "depth": 2,
+          "name": "a fair situation where everyone has equal chances"
+        },
+        {
+          "text": "\"The rubber mat under the climbing frame creates a level playing field — everyone can play safely.\"",
+          "depth": 2,
+          "name": "\"The rubber mat under the climbing frame creates a level playing field — everyone can play safely.\""
+        },
+        {
+          "text": "jump through hoops",
+          "depth": 2,
+          "name": "jump through hoops"
+        },
+        {
+          "text": "do many difficult things to achieve something",
+          "depth": 2,
+          "name": "do many difficult things to achieve something"
+        },
+        {
+          "text": "\"To win the relay race, they had to jump through hoops — run past the goal, grab the ball, and cross the net.\"",
+          "depth": 2,
+          "name": "\"To win the relay race, they had to jump through hoops — run past the goal, grab the ball, and cross the net.\""
+        },
+        {
+          "text": "on the ball",
+          "depth": 2,
+          "name": "on the ball"
+        },
+        {
+          "text": "alert and quick to respond",
+          "depth": 2,
+          "name": "alert and quick to respond"
+        },
+        {
+          "text": "\"The teacher was on the ball — she blew the whistle the moment someone fell off the balance beam.\"",
+          "depth": 2,
+          "name": "\"The teacher was on the ball — she blew the whistle the moment someone fell off the balance beam.\""
+        },
+        {
+          "text": "the ball is in your court",
+          "depth": 2,
+          "name": "the ball is in your court"
+        },
+        {
+          "text": "it's your turn to act or make a decision",
+          "depth": 2,
+          "name": "it's your turn to act or make a decision"
+        },
+        {
+          "text": "\"I set up the hopscotch and the chalk drawing — the ball is in your court to pick which game we play first.\"",
+          "depth": 2,
+          "name": "\"I set up the hopscotch and the chalk drawing — the ball is in your court to pick which game we play first.\""
+        },
+        {
+          "text": "have a ball",
+          "depth": 2,
+          "name": "have a ball"
+        },
+        {
+          "text": "have a great time",
+          "depth": 2,
+          "name": "have a great time"
+        },
+        {
+          "text": "\"The children had a ball on the merry-go-round, the seesaw, and the spring rider all afternoon.\"",
+          "depth": 2,
+          "name": "\"The children had a ball on the merry-go-round, the seesaw, and the spring rider all afternoon.\""
+        },
+        {
+          "text": "step up to the plate",
+          "depth": 2,
+          "name": "step up to the plate"
+        },
+        {
+          "text": "take responsibility; accept a challenge",
+          "depth": 2,
+          "name": "take responsibility; accept a challenge"
+        },
+        {
+          "text": "\"She stepped up to the plate and volunteered to climb the climbing frame even though it was her first time.\"",
+          "depth": 2,
+          "name": "\"She stepped up to the plate and volunteered to climb the climbing frame even though it was her first time.\""
+        },
+        {
+          "text": "throw in the towel",
+          "depth": 2,
+          "name": "throw in the towel"
+        },
+        {
+          "text": "give up; quit",
+          "depth": 2,
+          "name": "give up; quit"
+        },
+        {
+          "text": "\"He almost threw in the towel on the monkey bars, but his friend encouraged him to reach the other side.\"",
+          "depth": 2,
+          "name": "\"He almost threw in the towel on the monkey bars, but his friend encouraged him to reach the other side.\""
+        },
+        {
+          "text": "play it safe",
+          "depth": 2,
+          "name": "play it safe"
+        },
+        {
+          "text": "be careful, avoid risks",
+          "depth": 2,
+          "name": "be careful, avoid risks"
+        },
+        {
+          "text": "\"Let's play it safe and stay on the smaller climbing frame.\"",
+          "depth": 2,
+          "name": "\"Let's play it safe and stay on the smaller climbing frame.\""
+        },
+        {
+          "text": "push someone's buttons",
+          "depth": 2,
+          "name": "push someone's buttons"
+        },
+        {
+          "text": "annoy or provoke someone (informal)",
+          "depth": 2,
+          "name": "annoy or provoke someone (informal)"
+        },
+        {
+          "text": "\"My brother knows exactly how to push my buttons.\"",
+          "depth": 2,
+          "name": "\"My brother knows exactly how to push my buttons.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "542:2542",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A parent takes children to the playground after school",
+          "depth": 1,
+          "name": "Scene: A parent takes children to the playground after school"
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "Alright, we're here! Put on your helmet and knee pad before you start playing.",
+          "depth": 2,
+          "name": "Alright, we're here! Put on your helmet and knee pad before you start playing."
+        },
+        {
+          "text": "Child 1:",
+          "depth": 2,
+          "name": "Child 1:"
+        },
+        {
+          "text": "Can I go on the swing first? Then the slide!",
+          "depth": 2,
+          "name": "Can I go on the swing first? Then the slide!"
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "Sure — but be careful on the sand. Don't run on the gravel near the tunnel.",
+          "depth": 2,
+          "name": "Sure — but be careful on the sand. Don't run on the gravel near the tunnel."
+        },
+        {
+          "text": "Child 2:",
+          "depth": 2,
+          "name": "Child 2:"
+        },
+        {
+          "text": "I want the seesaw! Will you sit on the other side?",
+          "depth": 2,
+          "name": "I want the seesaw! Will you sit on the other side?"
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "Of course. After that, try the climbing frame — the rubber mat underneath is nice and soft.",
+          "depth": 2,
+          "name": "Of course. After that, try the climbing frame — the rubber mat underneath is nice and soft."
+        },
+        {
+          "text": "Child 1:",
+          "depth": 2,
+          "name": "Child 1:"
+        },
+        {
+          "text": "Look at me on the monkey bars! I can see the sandbox from up here!",
+          "depth": 2,
+          "name": "Look at me on the monkey bars! I can see the sandbox from up here!"
+        },
+        {
+          "text": "Child 2:",
+          "depth": 2,
+          "name": "Child 2:"
+        },
+        {
+          "text": "I'll race you to the merry-go-round! Last one there plays hopscotch!",
+          "depth": 2,
+          "name": "I'll race you to the merry-go-round! Last one there plays hopscotch!"
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "Watch the puddle near the mud patch! Stay on the grass or the concrete path.",
+          "depth": 2,
+          "name": "Watch the puddle near the mud patch! Stay on the grass or the concrete path."
+        },
+        {
+          "text": "Child 1:",
+          "depth": 2,
+          "name": "Child 1:"
+        },
+        {
+          "text": "Can we play with the ball and the bat? There's a net over by the goal.",
+          "depth": 2,
+          "name": "Can we play with the ball and the bat? There's a net over by the goal."
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "Yes — grab the racket and the hoop too. I'll time you with the stopwatch.",
+          "depth": 2,
+          "name": "Yes — grab the racket and the hoop too. I'll time you with the stopwatch."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "542:2577",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The children play in the slide.\"",
+          "depth": 2,
+          "name": "❌ \"The children play in the slide.\""
+        },
+        {
+          "text": "✅ \"The children play on the slide.\"",
+          "depth": 2,
+          "name": "✅ \"The children play on the slide.\""
+        },
+        {
+          "text": "Use 'on' for equipment you physically sit or stand on: on the slide, on the swings, on the seesaw.",
+          "depth": 2,
+          "name": "Use 'on' for equipment you physically sit or stand on: on the slide, on the swings, on the seesaw."
+        },
+        {
+          "text": "❌ \"She falled from the climbing frame.\"",
+          "depth": 2,
+          "name": "❌ \"She falled from the climbing frame.\""
+        },
+        {
+          "text": "✅ \"She fell from the climbing frame.\"",
+          "depth": 2,
+          "name": "✅ \"She fell from the climbing frame.\""
+        },
+        {
+          "text": "'Fall' is irregular: fall–fell–fallen. There is no 'falled'.",
+          "depth": 2,
+          "name": "'Fall' is irregular: fall–fell–fallen. There is no 'falled'."
+        },
+        {
+          "text": "❌ \"Wait your turn — it's my round.\"",
+          "depth": 2,
+          "name": "❌ \"Wait your turn — it's my round.\""
+        },
+        {
+          "text": "✅ \"Wait your turn — it's my turn.\"",
+          "depth": 2,
+          "name": "✅ \"Wait your turn — it's my turn.\""
+        },
+        {
+          "text": "'Turn' is the correct word. 'Round' is used differently (a round of drinks, a round of golf).",
+          "depth": 2,
+          "name": "'Turn' is the correct word. 'Round' is used differently (a round of drinks, a round of golf)."
+        },
+        {
+          "text": "❌ \"He climbed the ladder up.\"",
+          "depth": 2,
+          "name": "❌ \"He climbed the ladder up.\""
+        },
+        {
+          "text": "✅ \"He climbed up the ladder.\"",
+          "depth": 2,
+          "name": "✅ \"He climbed up the ladder.\""
+        },
+        {
+          "text": "The particle 'up' goes after the verb, not after the noun: 'climb up the ladder', 'go down the slide'.",
+          "depth": 2,
+          "name": "The particle 'up' goes after the verb, not after the noun: 'climb up the ladder', 'go down the slide'."
+        },
+        {
+          "text": "❌ \"The playground has a very funny slide.\"",
+          "depth": 2,
+          "name": "❌ \"The playground has a very funny slide.\""
+        },
+        {
+          "text": "✅ \"The playground has a really fun slide.\"",
+          "depth": 2,
+          "name": "✅ \"The playground has a really fun slide.\""
+        },
+        {
+          "text": "'Fun' describes enjoyable activities. 'Funny' means something that makes you laugh.",
+          "depth": 2,
+          "name": "'Fun' describes enjoyable activities. 'Funny' means something that makes you laugh."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "542:2601",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how playground vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how playground vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "play",
+          "depth": 2,
+          "name": "play"
+        },
+        {
+          "text": "play / player",
+          "depth": 2,
+          "name": "play / player"
+        },
+        {
+          "text": "play",
+          "depth": 2,
+          "name": "play"
+        },
+        {
+          "text": "playful",
+          "depth": 2,
+          "name": "playful"
+        },
+        {
+          "text": "climb",
+          "depth": 2,
+          "name": "climb"
+        },
+        {
+          "text": "climb / climber",
+          "depth": 2,
+          "name": "climb / climber"
+        },
+        {
+          "text": "climb",
+          "depth": 2,
+          "name": "climb"
+        },
+        {
+          "text": "climbing",
+          "depth": 2,
+          "name": "climbing"
+        },
+        {
+          "text": "swing",
+          "depth": 2,
+          "name": "swing"
+        },
+        {
+          "text": "swing",
+          "depth": 2,
+          "name": "swing"
+        },
+        {
+          "text": "swing",
+          "depth": 2,
+          "name": "swing"
+        },
+        {
+          "text": "swinging",
+          "depth": 2,
+          "name": "swinging"
+        },
+        {
+          "text": "slide",
+          "depth": 2,
+          "name": "slide"
+        },
+        {
+          "text": "slide",
+          "depth": 2,
+          "name": "slide"
+        },
+        {
+          "text": "slide",
+          "depth": 2,
+          "name": "slide"
+        },
+        {
+          "text": "sliding",
+          "depth": 2,
+          "name": "sliding"
+        },
+        {
+          "text": "spin",
+          "depth": 2,
+          "name": "spin"
+        },
+        {
+          "text": "spin / spinner",
+          "depth": 2,
+          "name": "spin / spinner"
+        },
+        {
+          "text": "spin",
+          "depth": 2,
+          "name": "spin"
+        },
+        {
+          "text": "spinning",
+          "depth": 2,
+          "name": "spinning"
+        },
+        {
+          "text": "balance",
+          "depth": 2,
+          "name": "balance"
+        },
+        {
+          "text": "balance",
+          "depth": 2,
+          "name": "balance"
+        },
+        {
+          "text": "balance",
+          "depth": 2,
+          "name": "balance"
+        },
+        {
+          "text": "balanced",
+          "depth": 2,
+          "name": "balanced"
+        },
+        {
+          "text": "push",
+          "depth": 2,
+          "name": "push"
+        },
+        {
+          "text": "push",
+          "depth": 2,
+          "name": "push"
+        },
+        {
+          "text": "push",
+          "depth": 2,
+          "name": "push"
+        },
+        {
+          "text": "pushing",
+          "depth": 2,
+          "name": "pushing"
+        },
+        {
+          "text": "jump",
+          "depth": 2,
+          "name": "jump"
+        },
+        {
+          "text": "jump / jumper",
+          "depth": 2,
+          "name": "jump / jumper"
+        },
+        {
+          "text": "jump",
+          "depth": 2,
+          "name": "jump"
+        },
+        {
+          "text": "jumping",
+          "depth": 2,
+          "name": "jumping"
+        },
+        {
+          "text": "safe",
+          "depth": 2,
+          "name": "safe"
+        },
+        {
+          "text": "safety",
+          "depth": 2,
+          "name": "safety"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "safe",
+          "depth": 2,
+          "name": "safe"
+        },
+        {
+          "text": "fall",
+          "depth": 2,
+          "name": "fall"
+        },
+        {
+          "text": "fall",
+          "depth": 2,
+          "name": "fall"
+        },
+        {
+          "text": "fall",
+          "depth": 2,
+          "name": "fall"
+        },
+        {
+          "text": "fallen",
+          "depth": 2,
+          "name": "fallen"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "542:2661",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The children built a sandcastle in the __________.",
+          "depth": 1,
+          "name": "1. The children built a sandcastle in the __________."
+        },
+        {
+          "text": "2.  She held on tight and crossed the __________ bars without falling.",
+          "depth": 1,
+          "name": "2. She held on tight and crossed the __________ bars without falling."
+        },
+        {
+          "text": "3.  My brother pushed the __________ so it spun faster and faster.",
+          "depth": 1,
+          "name": "3. My brother pushed the __________ so it spun faster and faster."
+        },
+        {
+          "text": "4.  There is a soft __________ under the climbing wall for safety.",
+          "depth": 1,
+          "name": "4. There is a soft __________ under the climbing wall for safety."
+        },
+        {
+          "text": "5.  Please take __________ — only one child on the slide at a time.",
+          "depth": 1,
+          "name": "5. Please take __________ — only one child on the slide at a time."
+        },
+        {
+          "text": "6.  She climbed up the __________ and went down the slide.",
+          "depth": 1,
+          "name": "6. She climbed up the __________ and went down the slide."
+        },
+        {
+          "text": "7.  The __________ goes up and down — one child on each end.",
+          "depth": 1,
+          "name": "7. The __________ goes up and down — one child on each end."
+        },
+        {
+          "text": "8.  He pushed his sister gently on the __________.",
+          "depth": 1,
+          "name": "8. He pushed his sister gently on the __________."
+        },
+        {
+          "text": "9.  The playground is surrounded by a low __________ with a gate.",
+          "depth": 1,
+          "name": "9. The playground is surrounded by a low __________ with a gate."
+        },
+        {
+          "text": "10. After playing, they stopped at the __________ to drink water.",
+          "depth": 1,
+          "name": "10. After playing, they stopped at the __________ to drink water."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. sandbox  2. monkey  3. roundabout  4. mat  5. turns  6. ladder  7. seesaw  8. swing  9. fence  10. fountain",
+          "depth": 2,
+          "name": "1. sandbox 2. monkey 3. roundabout 4. mat 5. turns 6. ladder 7. seesaw 8. swing 9. fence 10. fountain"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "542:2679",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Playground Safety Standards",
+          "depth": 2,
+          "name": "Playground Safety Standards"
+        },
+        {
+          "text": "In English-speaking countries, playgrounds must meet strict safety standards. Rubber tiles, soft mulch, or sand cushion falls. Signs list age ranges for each piece of equipment.",
+          "depth": 2,
+          "name": "In English-speaking countries, playgrounds must meet strict safety standards. Rubber tiles, soft mulch, or sand cushion falls. Signs list age ranges for each piece of equipment."
+        },
+        {
+          "text": "🇬🇧 vs 🇺🇸 Vocabulary",
+          "depth": 2,
+          "name": "🇬🇧 vs 🇺🇸 Vocabulary"
+        },
+        {
+          "text": "British: 'roundabout' / American: 'merry-go-round'. British: 'see-saw' / American: 'teeter-totter'. British: 'climbing frame' / American: 'jungle gym'.",
+          "depth": 2,
+          "name": "British: 'roundabout' / American: 'merry-go-round'. British: 'see-saw' / American: 'teeter-totter'. British: 'climbing frame' / American: 'jungle gym'."
+        },
+        {
+          "text": "Taking Turns — A Cultural Value",
+          "depth": 2,
+          "name": "Taking Turns — A Cultural Value"
+        },
+        {
+          "text": "'Take turns' is one of the first social rules children learn. Adults use it too: 'Let's take turns speaking.' Teaching turn-taking is central to British and American education.",
+          "depth": 2,
+          "name": "'Take turns' is one of the first social rules children learn. Adults use it too: 'Let's take turns speaking.' Teaching turn-taking is central to British and American education."
+        },
+        {
+          "text": "Recess vs Break Time",
+          "depth": 2,
+          "name": "Recess vs Break Time"
+        },
+        {
+          "text": "In American schools, children play outside during 'recess'. In British schools, it's called 'break' or 'playtime'. Both refer to the free time between lessons.",
+          "depth": 2,
+          "name": "In American schools, children play outside during 'recess'. In British schools, it's called 'break' or 'playtime'. Both refer to the free time between lessons."
+        },
+        {
+          "text": "Indoor vs Outdoor Playgrounds",
+          "depth": 2,
+          "name": "Indoor vs Outdoor Playgrounds"
+        },
+        {
+          "text": "Many shopping centres and restaurants have 'indoor play areas' or 'soft play centres'. These are common in the UK and are popular on rainy days.",
+          "depth": 2,
+          "name": "Many shopping centres and restaurants have 'indoor play areas' or 'soft play centres'. These are common in the UK and are popular on rainy days."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "542:2698",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "swing",
+          "depth": 2,
+          "name": "swing"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "on the ~s, ~ set, push the ~",
+          "depth": 2,
+          "name": "on the ~s, ~ set, push the ~"
+        },
+        {
+          "text": "slide",
+          "depth": 2,
+          "name": "slide"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "go down the ~, water ~, ~ ladder",
+          "depth": 2,
+          "name": "go down the ~, water ~, ~ ladder"
+        },
+        {
+          "text": "sandbox",
+          "depth": 2,
+          "name": "sandbox"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "play in the ~, ~ toys",
+          "depth": 2,
+          "name": "play in the ~, ~ toys"
+        },
+        {
+          "text": "seesaw",
+          "depth": 2,
+          "name": "seesaw"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "on the ~, ~ partner, go up and down",
+          "depth": 2,
+          "name": "on the ~, ~ partner, go up and down"
+        },
+        {
+          "text": "climbing frame",
+          "depth": 2,
+          "name": "climbing frame"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "on the ~, ~ holds, indoor ~",
+          "depth": 2,
+          "name": "on the ~, ~ holds, indoor ~"
+        },
+        {
+          "text": "monkey bars",
+          "depth": 2,
+          "name": "monkey bars"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "cross the ~, hang from the ~",
+          "depth": 2,
+          "name": "cross the ~, hang from the ~"
+        },
+        {
+          "text": "roundabout",
+          "depth": 2,
+          "name": "roundabout"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "spin the ~, on the ~",
+          "depth": 2,
+          "name": "spin the ~, on the ~"
+        },
+        {
+          "text": "ladder",
+          "depth": 2,
+          "name": "ladder"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "climb the ~, ~ rung, step ~",
+          "depth": 2,
+          "name": "climb the ~, ~ rung, step ~"
+        },
+        {
+          "text": "fence",
+          "depth": 2,
+          "name": "fence"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "garden ~, wooden ~, ~ gate",
+          "depth": 2,
+          "name": "garden ~, wooden ~, ~ gate"
+        },
+        {
+          "text": "bench",
+          "depth": 2,
+          "name": "bench"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "park ~, sit on a ~, wooden ~",
+          "depth": 2,
+          "name": "park ~, sit on a ~, wooden ~"
+        }
+      ]
+    }
+  }
+}

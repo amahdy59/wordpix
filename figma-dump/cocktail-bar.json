@@ -1,0 +1,393 @@
+{
+  "unitId": "cocktail-bar",
+  "name": "The Cocktail Bar",
+  "subtopics": [
+    {
+      "id": "bar-layout",
+      "title": "Bar Layout",
+      "wordIds": [
+        "bar-counter",
+        "bar-stool",
+        "back-bar",
+        "draft-taps",
+        "bottle-display",
+        "ice-well",
+        "speed-rail",
+        "garnish-tray",
+        "bar-mat",
+        "lounge-area"
+      ]
+    },
+    {
+      "id": "glassware",
+      "title": "Glassware",
+      "wordIds": [
+        "cocktail-glass",
+        "highball-glass",
+        "rocks-glass",
+        "shot-glass",
+        "wine-glass",
+        "champagne-flute",
+        "beer-mug",
+        "collins-glass",
+        "coupe-glass",
+        "snifter"
+      ]
+    },
+    {
+      "id": "bar-tools",
+      "title": "Bar Tools",
+      "wordIds": [
+        "cocktail-shaker",
+        "jigger",
+        "muddler",
+        "bar-spoon",
+        "strainer",
+        "ice-tongs",
+        "bottle-opener",
+        "corkscrew",
+        "citrus-press",
+        "zester"
+      ]
+    },
+    {
+      "id": "bar-staff",
+      "title": "Bar Staff",
+      "wordIds": [
+        "bartender",
+        "barback",
+        "mixologist",
+        "bouncer",
+        "host",
+        "cocktail-waitress",
+        "manager",
+        "sommelier",
+        "dj",
+        "promoter"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "bar-counter",
+      "label": "Bar Counter",
+      "ipa": "/bɑːr ˈkaʊntər/",
+      "cefr": "C1",
+      "imageNodeId": "467:18294"
+    },
+    {
+      "kind": "card",
+      "id": "bar-stool",
+      "label": "Bar Stool",
+      "ipa": "/bɑːr stuːl/",
+      "cefr": "C1",
+      "imageNodeId": "467:18298"
+    },
+    {
+      "kind": "card",
+      "id": "back-bar",
+      "label": "Back Bar",
+      "ipa": "/bæk bɑːr/",
+      "cefr": "C1",
+      "imageNodeId": "467:18302"
+    },
+    {
+      "kind": "card",
+      "id": "draft-taps",
+      "label": "Draft Taps",
+      "ipa": "/dræft tæps/",
+      "cefr": "C1",
+      "imageNodeId": "467:18306"
+    },
+    {
+      "kind": "card",
+      "id": "bottle-display",
+      "label": "Bottle Display",
+      "ipa": "/ˈbɒtəl dɪˈspleɪ/",
+      "cefr": "C1",
+      "imageNodeId": "467:18310"
+    },
+    {
+      "kind": "card",
+      "id": "ice-well",
+      "label": "Ice Well",
+      "ipa": "/aɪs wɛl/",
+      "cefr": "C1",
+      "imageNodeId": "467:18314"
+    },
+    {
+      "kind": "card",
+      "id": "speed-rail",
+      "label": "Speed Rail",
+      "ipa": "/spiːd reɪl/",
+      "cefr": "C1",
+      "imageNodeId": "467:18318"
+    },
+    {
+      "kind": "card",
+      "id": "garnish-tray",
+      "label": "Garnish Tray",
+      "ipa": "/ˈɡɑːrnɪʃ treɪ/",
+      "cefr": "C1",
+      "imageNodeId": "467:18322"
+    },
+    {
+      "kind": "card",
+      "id": "bar-mat",
+      "label": "Bar Mat",
+      "ipa": "/bɑːr mæt/",
+      "cefr": "C1",
+      "imageNodeId": "467:18326"
+    },
+    {
+      "kind": "card",
+      "id": "lounge-area",
+      "label": "Lounge Area",
+      "ipa": "/laʊndʒ ˈɛəriə/",
+      "cefr": "C1",
+      "imageNodeId": "467:18330"
+    },
+    {
+      "kind": "card",
+      "id": "cocktail-glass",
+      "label": "Cocktail Glass",
+      "ipa": "/ˈkɒkˌteɪl ɡlæs/",
+      "cefr": "C1",
+      "imageNodeId": "467:18339"
+    },
+    {
+      "kind": "card",
+      "id": "highball-glass",
+      "label": "Highball Glass",
+      "ipa": "/ˈhaɪˌbɔːl ɡlæs/",
+      "cefr": "C1",
+      "imageNodeId": "467:18343"
+    },
+    {
+      "kind": "card",
+      "id": "rocks-glass",
+      "label": "Rocks Glass",
+      "ipa": "/rɒks ɡlæs/",
+      "cefr": "C1",
+      "imageNodeId": "467:18347"
+    },
+    {
+      "kind": "card",
+      "id": "shot-glass",
+      "label": "Shot Glass",
+      "ipa": "/ʃɒt ɡlæs/",
+      "cefr": "C1",
+      "imageNodeId": "467:18351"
+    },
+    {
+      "kind": "card",
+      "id": "wine-glass",
+      "label": "Wine Glass",
+      "ipa": "/waɪn ɡlæs/",
+      "cefr": "C1",
+      "imageNodeId": "467:18355"
+    },
+    {
+      "kind": "card",
+      "id": "champagne-flute",
+      "label": "Champagne Flute",
+      "ipa": "/ʃæmˈpeɪn fluːt/",
+      "cefr": "C1",
+      "imageNodeId": "467:18359"
+    },
+    {
+      "kind": "card",
+      "id": "beer-mug",
+      "label": "Beer Mug",
+      "ipa": "/bɪər mʌɡ/",
+      "cefr": "C1",
+      "imageNodeId": "467:18363"
+    },
+    {
+      "kind": "card",
+      "id": "collins-glass",
+      "label": "Collins Glass",
+      "ipa": "/ˈkɒlɪnz ɡlæs/",
+      "cefr": "C1",
+      "imageNodeId": "467:18367"
+    },
+    {
+      "kind": "card",
+      "id": "coupe-glass",
+      "label": "Coupe Glass",
+      "ipa": "/kuːp ɡlæs/",
+      "cefr": "C1",
+      "imageNodeId": "467:18371"
+    },
+    {
+      "kind": "card",
+      "id": "snifter",
+      "label": "Snifter",
+      "ipa": "/ˈsnɪftər/",
+      "cefr": "B2",
+      "imageNodeId": "467:18375"
+    },
+    {
+      "kind": "card",
+      "id": "cocktail-shaker",
+      "label": "Cocktail Shaker",
+      "ipa": "/ˈkɒkˌteɪl ˈʃeɪkər/",
+      "cefr": "C1",
+      "imageNodeId": "467:18384"
+    },
+    {
+      "kind": "card",
+      "id": "jigger",
+      "label": "Jigger",
+      "ipa": "/ˈdʒɪɡər/",
+      "cefr": "B2",
+      "imageNodeId": "467:18388"
+    },
+    {
+      "kind": "card",
+      "id": "muddler",
+      "label": "Muddler",
+      "ipa": "/ˈmʌdlər/",
+      "cefr": "B2",
+      "imageNodeId": "467:18392"
+    },
+    {
+      "kind": "card",
+      "id": "bar-spoon",
+      "label": "Bar Spoon",
+      "ipa": "/bɑːr spuːn/",
+      "cefr": "C1",
+      "imageNodeId": "467:18396"
+    },
+    {
+      "kind": "card",
+      "id": "strainer",
+      "label": "Strainer",
+      "ipa": "/ˈstreɪnər/",
+      "cefr": "B2",
+      "imageNodeId": "467:18400"
+    },
+    {
+      "kind": "card",
+      "id": "ice-tongs",
+      "label": "Ice Tongs",
+      "ipa": "/aɪs tɒŋz/",
+      "cefr": "C1",
+      "imageNodeId": "467:18404"
+    },
+    {
+      "kind": "card",
+      "id": "bottle-opener",
+      "label": "Bottle Opener",
+      "ipa": "/ˈbɒtəl ˈoʊpənər/",
+      "cefr": "C1",
+      "imageNodeId": "467:18408"
+    },
+    {
+      "kind": "card",
+      "id": "corkscrew",
+      "label": "Corkscrew",
+      "ipa": "/ˈkɔːrkˌskruː/",
+      "cefr": "B2",
+      "imageNodeId": "467:18412"
+    },
+    {
+      "kind": "card",
+      "id": "citrus-press",
+      "label": "Citrus Press",
+      "ipa": "/ˈsɪtrəs prɛs/",
+      "cefr": "C1",
+      "imageNodeId": "467:18416"
+    },
+    {
+      "kind": "card",
+      "id": "zester",
+      "label": "Zester",
+      "ipa": "/ˈzɛstər/",
+      "cefr": "B2",
+      "imageNodeId": "467:18420"
+    },
+    {
+      "kind": "card",
+      "id": "bartender",
+      "label": "Bartender",
+      "ipa": "/ˈbɑːrˌtɛndər/",
+      "cefr": "B2",
+      "imageNodeId": "467:18429"
+    },
+    {
+      "kind": "card",
+      "id": "barback",
+      "label": "Barback",
+      "ipa": "/ˈbɑːrˌbæk/",
+      "cefr": "B2",
+      "imageNodeId": "467:18433"
+    },
+    {
+      "kind": "card",
+      "id": "mixologist",
+      "label": "Mixologist",
+      "ipa": "/mɪkˈsɒlədʒɪst/",
+      "cefr": "C1",
+      "imageNodeId": "467:18437"
+    },
+    {
+      "kind": "card",
+      "id": "bouncer",
+      "label": "Bouncer",
+      "ipa": "/ˈbaʊnsər/",
+      "cefr": "B2",
+      "imageNodeId": "467:18441"
+    },
+    {
+      "kind": "card",
+      "id": "host",
+      "label": "Host",
+      "ipa": "/hoʊst/",
+      "cefr": "B2",
+      "imageNodeId": "467:18445"
+    },
+    {
+      "kind": "card",
+      "id": "cocktail-waitress",
+      "label": "Cocktail Waitress",
+      "ipa": "/ˈkɒkˌteɪl ˈweɪtrɪs/",
+      "cefr": "C1",
+      "imageNodeId": "467:18449"
+    },
+    {
+      "kind": "card",
+      "id": "manager",
+      "label": "Manager",
+      "ipa": "/ˈmænɪdʒər/",
+      "cefr": "B2",
+      "imageNodeId": "467:18453"
+    },
+    {
+      "kind": "card",
+      "id": "sommelier",
+      "label": "Sommelier",
+      "ipa": "/ˌsɒməˈljeɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:18457"
+    },
+    {
+      "kind": "card",
+      "id": "dj",
+      "label": "DJ",
+      "ipa": "/ˌdiːˈdʒeɪ/",
+      "cefr": "B2",
+      "imageNodeId": "467:18461"
+    },
+    {
+      "kind": "card",
+      "id": "promoter",
+      "label": "Promoter",
+      "ipa": "/prəˈmoʊtər/",
+      "cefr": "B2",
+      "imageNodeId": "467:18465"
+    }
+  ],
+  "materials": null
+}

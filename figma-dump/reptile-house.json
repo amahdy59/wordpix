@@ -1,0 +1,1555 @@
+{
+  "unitId": "reptile-house",
+  "name": "The Reptile House",
+  "subtopics": [
+    {
+      "id": "snakes",
+      "title": "Snakes",
+      "wordIds": [
+        "cobra",
+        "python",
+        "rattlesnake",
+        "boa",
+        "viper",
+        "corn-snake",
+        "king-snake",
+        "anaconda",
+        "mamba",
+        "garter-snake"
+      ]
+    },
+    {
+      "id": "lizards",
+      "title": "Lizards",
+      "wordIds": [
+        "gecko",
+        "iguana",
+        "chameleon",
+        "monitor",
+        "skink",
+        "bearded-dragon",
+        "anole",
+        "komodo-dragon",
+        "basilisk",
+        "horned-lizard"
+      ]
+    },
+    {
+      "id": "turtles-crocs",
+      "title": "Turtles & Crocs",
+      "wordIds": [
+        "turtle",
+        "tortoise",
+        "sea-turtle",
+        "snapping-turtle",
+        "crocodile",
+        "alligator",
+        "caiman",
+        "terrapin",
+        "softshell",
+        "gharial"
+      ]
+    },
+    {
+      "id": "anatomy",
+      "title": "Anatomy",
+      "wordIds": ["scale", "shell", "fang", "tongue", "tail", "claw", "eye", "jaw", "skin", "venom"]
+    },
+    {
+      "id": "habitats",
+      "title": "Habitats",
+      "wordIds": [
+        "terrarium",
+        "heat-lamp",
+        "water-dish",
+        "branch",
+        "rock",
+        "sand",
+        "moss",
+        "hide",
+        "log",
+        "misting-system"
+      ]
+    },
+    {
+      "id": "behavior",
+      "title": "Behavior",
+      "wordIds": [
+        "shed",
+        "bask",
+        "hunt",
+        "swim",
+        "burrow",
+        "climb",
+        "camouflage",
+        "hiss",
+        "strike",
+        "coil"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "cobra",
+      "label": "Cobra",
+      "ipa": "/ˈkoʊbrə/",
+      "cefr": "B2",
+      "imageNodeId": "119:7479"
+    },
+    {
+      "kind": "card",
+      "id": "python",
+      "label": "Python",
+      "ipa": "/ˈpaɪθɒn/",
+      "cefr": "B2",
+      "imageNodeId": "119:7483"
+    },
+    {
+      "kind": "card",
+      "id": "rattlesnake",
+      "label": "Rattlesnake",
+      "ipa": "/ˈrætəlˌsneɪk/",
+      "cefr": "C1",
+      "imageNodeId": "119:7487"
+    },
+    {
+      "kind": "card",
+      "id": "boa",
+      "label": "Boa",
+      "ipa": "/ˈboʊə/",
+      "cefr": "B2",
+      "imageNodeId": "119:7491"
+    },
+    {
+      "kind": "card",
+      "id": "viper",
+      "label": "Viper",
+      "ipa": "/ˈvaɪpər/",
+      "cefr": "B2",
+      "imageNodeId": "119:7495"
+    },
+    {
+      "kind": "card",
+      "id": "corn-snake",
+      "label": "Corn Snake",
+      "ipa": "/kɔːrn sneɪk/",
+      "cefr": "C1",
+      "imageNodeId": "119:7499"
+    },
+    {
+      "kind": "card",
+      "id": "king-snake",
+      "label": "King Snake",
+      "ipa": "/kɪŋ sneɪk/",
+      "cefr": "C1",
+      "imageNodeId": "119:7503"
+    },
+    {
+      "kind": "card",
+      "id": "anaconda",
+      "label": "Anaconda",
+      "ipa": "/ˌænəˈkɒndə/",
+      "cefr": "B2",
+      "imageNodeId": "119:7507"
+    },
+    {
+      "kind": "card",
+      "id": "mamba",
+      "label": "Mamba",
+      "ipa": "/ˈmæmbə/",
+      "cefr": "B2",
+      "imageNodeId": "119:7511"
+    },
+    {
+      "kind": "card",
+      "id": "garter-snake",
+      "label": "Garter Snake",
+      "ipa": "/ˈɡɑːrtər sneɪk/",
+      "cefr": "C1",
+      "imageNodeId": "119:7515"
+    },
+    {
+      "kind": "card",
+      "id": "gecko",
+      "label": "Gecko",
+      "ipa": "/ˈɡɛkoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7524"
+    },
+    {
+      "kind": "card",
+      "id": "iguana",
+      "label": "Iguana",
+      "ipa": "/ɪˈɡwɑːnə/",
+      "cefr": "B2",
+      "imageNodeId": "119:7528"
+    },
+    {
+      "kind": "card",
+      "id": "chameleon",
+      "label": "Chameleon",
+      "ipa": "/kəˈmiːliən/",
+      "cefr": "B2",
+      "imageNodeId": "119:7532"
+    },
+    {
+      "kind": "card",
+      "id": "monitor",
+      "label": "Monitor",
+      "ipa": "/ˈmɒnɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "119:7536"
+    },
+    {
+      "kind": "card",
+      "id": "skink",
+      "label": "Skink",
+      "ipa": "/skɪŋk/",
+      "cefr": "B2",
+      "imageNodeId": "119:7540"
+    },
+    {
+      "kind": "card",
+      "id": "bearded-dragon",
+      "label": "Bearded Dragon",
+      "ipa": "/ˈbɪərdɪd ˈdræɡən/",
+      "cefr": "C1",
+      "imageNodeId": "119:7544"
+    },
+    {
+      "kind": "card",
+      "id": "anole",
+      "label": "Anole",
+      "ipa": "/əˈnoʊli/",
+      "cefr": "B2",
+      "imageNodeId": "119:7548"
+    },
+    {
+      "kind": "card",
+      "id": "komodo-dragon",
+      "label": "Komodo Dragon",
+      "ipa": "/kəˈmoʊdoʊ ˈdræɡən/",
+      "cefr": "C1",
+      "imageNodeId": "119:7552"
+    },
+    {
+      "kind": "card",
+      "id": "basilisk",
+      "label": "Basilisk",
+      "ipa": "/ˈbæzɪlɪsk/",
+      "cefr": "B2",
+      "imageNodeId": "119:7556"
+    },
+    {
+      "kind": "card",
+      "id": "horned-lizard",
+      "label": "Horned Lizard",
+      "ipa": "/hɔːrnd ˈlɪzərd/",
+      "cefr": "C1",
+      "imageNodeId": "119:7560"
+    },
+    {
+      "kind": "card",
+      "id": "turtle",
+      "label": "Turtle",
+      "ipa": "/ˈtɜːrtəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:7569"
+    },
+    {
+      "kind": "card",
+      "id": "tortoise",
+      "label": "Tortoise",
+      "ipa": "/ˈtɔːrtəs/",
+      "cefr": "B2",
+      "imageNodeId": "119:7573"
+    },
+    {
+      "kind": "card",
+      "id": "sea-turtle",
+      "label": "Sea Turtle",
+      "ipa": "/siː ˈtɜːrtəl/",
+      "cefr": "C1",
+      "imageNodeId": "119:7577"
+    },
+    {
+      "kind": "card",
+      "id": "snapping-turtle",
+      "label": "Snapping Turtle",
+      "ipa": "/ˈsnæpɪŋ ˈtɜːrtəl/",
+      "cefr": "C1",
+      "imageNodeId": "119:7581"
+    },
+    {
+      "kind": "card",
+      "id": "crocodile",
+      "label": "Crocodile",
+      "ipa": "/ˈkrɒkəˌdaɪl/",
+      "cefr": "B2",
+      "imageNodeId": "119:7585"
+    },
+    {
+      "kind": "card",
+      "id": "alligator",
+      "label": "Alligator",
+      "ipa": "/ˈælɪˌɡeɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "119:7589"
+    },
+    {
+      "kind": "card",
+      "id": "caiman",
+      "label": "Caiman",
+      "ipa": "/ˈkeɪmən/",
+      "cefr": "B2",
+      "imageNodeId": "119:7593"
+    },
+    {
+      "kind": "card",
+      "id": "terrapin",
+      "label": "Terrapin",
+      "ipa": "/ˈtɛrəpɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:7597"
+    },
+    {
+      "kind": "card",
+      "id": "softshell",
+      "label": "Softshell",
+      "ipa": "/ˈsɒftˌʃɛl/",
+      "cefr": "B2",
+      "imageNodeId": "119:7601"
+    },
+    {
+      "kind": "card",
+      "id": "gharial",
+      "label": "Gharial",
+      "ipa": "/ˈɡɛriəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:7605"
+    },
+    {
+      "kind": "card",
+      "id": "scale",
+      "label": "Scale",
+      "ipa": "/skeɪl/",
+      "cefr": "B2",
+      "imageNodeId": "119:7614"
+    },
+    {
+      "kind": "card",
+      "id": "shell",
+      "label": "Shell",
+      "ipa": "/ʃɛl/",
+      "cefr": "B2",
+      "imageNodeId": "119:7618"
+    },
+    {
+      "kind": "card",
+      "id": "fang",
+      "label": "Fang",
+      "ipa": "/fæŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7622"
+    },
+    {
+      "kind": "card",
+      "id": "tongue",
+      "label": "Tongue",
+      "ipa": "/tʌŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7626"
+    },
+    {
+      "kind": "card",
+      "id": "tail",
+      "label": "Tail",
+      "ipa": "/teɪl/",
+      "cefr": "B2",
+      "imageNodeId": "119:7630"
+    },
+    {
+      "kind": "card",
+      "id": "claw",
+      "label": "Claw",
+      "ipa": "/klɔː/",
+      "cefr": "B2",
+      "imageNodeId": "119:7634"
+    },
+    {
+      "kind": "card",
+      "id": "eye",
+      "label": "Eye",
+      "ipa": "/aɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7638"
+    },
+    {
+      "kind": "card",
+      "id": "jaw",
+      "label": "Jaw",
+      "ipa": "/dʒɔː/",
+      "cefr": "B2",
+      "imageNodeId": "119:7642"
+    },
+    {
+      "kind": "card",
+      "id": "skin",
+      "label": "Skin",
+      "ipa": "/skɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:7646"
+    },
+    {
+      "kind": "card",
+      "id": "venom",
+      "label": "Venom",
+      "ipa": "/ˈvɛnəm/",
+      "cefr": "B2",
+      "imageNodeId": "119:7650"
+    },
+    {
+      "kind": "card",
+      "id": "terrarium",
+      "label": "Terrarium",
+      "ipa": "/tɛˈrɛəriəm/",
+      "cefr": "B2",
+      "imageNodeId": "119:7659"
+    },
+    {
+      "kind": "card",
+      "id": "heat-lamp",
+      "label": "Heat Lamp",
+      "ipa": "/hiːt læmp/",
+      "cefr": "C1",
+      "imageNodeId": "119:7663"
+    },
+    {
+      "kind": "card",
+      "id": "water-dish",
+      "label": "Water Dish",
+      "ipa": "/ˈwɔːtər dɪʃ/",
+      "cefr": "C1",
+      "imageNodeId": "119:7667"
+    },
+    {
+      "kind": "card",
+      "id": "branch",
+      "label": "Branch",
+      "ipa": "/brɑːntʃ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7671"
+    },
+    {
+      "kind": "card",
+      "id": "rock",
+      "label": "Rock",
+      "ipa": "/rɒk/",
+      "cefr": "B2",
+      "imageNodeId": "119:7675"
+    },
+    {
+      "kind": "card",
+      "id": "sand",
+      "label": "Sand",
+      "ipa": "/sænd/",
+      "cefr": "B2",
+      "imageNodeId": "119:7679"
+    },
+    {
+      "kind": "card",
+      "id": "moss",
+      "label": "Moss",
+      "ipa": "/mɒs/",
+      "cefr": "B2",
+      "imageNodeId": "119:7683"
+    },
+    {
+      "kind": "card",
+      "id": "hide",
+      "label": "Hide",
+      "ipa": "/haɪd/",
+      "cefr": "B2",
+      "imageNodeId": "119:7687"
+    },
+    {
+      "kind": "card",
+      "id": "log",
+      "label": "Log",
+      "ipa": "/lɒɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7691"
+    },
+    {
+      "kind": "card",
+      "id": "misting-system",
+      "label": "Misting System",
+      "ipa": "/ˈmɪstɪŋ ˈsɪstəm/",
+      "cefr": "C1",
+      "imageNodeId": "119:7695"
+    },
+    {
+      "kind": "card",
+      "id": "shed",
+      "label": "Shed",
+      "ipa": "/ʃɛd/",
+      "cefr": "B2",
+      "imageNodeId": "119:7704"
+    },
+    {
+      "kind": "card",
+      "id": "bask",
+      "label": "Bask",
+      "ipa": "/bæsk/",
+      "cefr": "B2",
+      "imageNodeId": "119:7708"
+    },
+    {
+      "kind": "card",
+      "id": "hunt",
+      "label": "Hunt",
+      "ipa": "/hʌnt/",
+      "cefr": "B2",
+      "imageNodeId": "119:7712"
+    },
+    {
+      "kind": "card",
+      "id": "swim",
+      "label": "Swim",
+      "ipa": "/swɪm/",
+      "cefr": "B2",
+      "imageNodeId": "119:7716"
+    },
+    {
+      "kind": "card",
+      "id": "burrow",
+      "label": "Burrow",
+      "ipa": "/ˈbʌroʊ/",
+      "cefr": "B2",
+      "imageNodeId": "119:7720"
+    },
+    {
+      "kind": "card",
+      "id": "climb",
+      "label": "Climb",
+      "ipa": "/klaɪm/",
+      "cefr": "B2",
+      "imageNodeId": "119:7724"
+    },
+    {
+      "kind": "card",
+      "id": "camouflage",
+      "label": "Camouflage",
+      "ipa": "/ˈkæməˌflɑːʒ/",
+      "cefr": "C1",
+      "imageNodeId": "119:7728"
+    },
+    {
+      "kind": "card",
+      "id": "hiss",
+      "label": "Hiss",
+      "ipa": "/hɪs/",
+      "cefr": "B2",
+      "imageNodeId": "119:7732"
+    },
+    {
+      "kind": "card",
+      "id": "strike",
+      "label": "Strike",
+      "ipa": "/straɪk/",
+      "cefr": "B2",
+      "imageNodeId": "119:7736"
+    },
+    {
+      "kind": "card",
+      "id": "coil",
+      "label": "Coil",
+      "ipa": "/kɔɪl/",
+      "cefr": "B2",
+      "imageNodeId": "119:7740"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "555:3",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "555:5",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2+ · Topic: The Reptile House",
+          "depth": 1,
+          "name": "Level: B2+ · Topic: The Reptile House"
+        },
+        {
+          "text": "Cold Blood, Sharp Senses — Inside the Reptile House\n\nThe reptile house is one of the most fascinating — and misunderstood — sections of any zoo or wildlife centre. Behind glass-fronted terrariums fitted with heat lamps, misting systems, and carefully arranged branches, rocks, and moss, visitors encounter creatures whose evolutionary lineage stretches back over 300 million years. Reptiles may lack the fur and warmth that make mammals appealing, but their adaptations are no less remarkable.\n\nReptiles are ectothermic — they regulate body temperature using external heat sources rather than generating their own. This is why you will see lizards bask on sun-warmed rocks or under heat lamps: they absorb energy to power their metabolism. When they overheat, they retreat to a shaded hide or burrow into sand. This behaviour is not laziness — it is precise thermal regulation that allows reptiles to survive on a fraction of the food a mammal of equivalent size would require.\n\nSnakes exhibit extraordinary diversity. The king cobra — the world's longest venomous snake — delivers venom through hollow fangs, paralysing prey with neurotoxins. A python, by contrast, is a constrictor: it coils around its prey and squeezes until the animal can no longer breathe. The rattlesnake warns predators with a distinctive hiss and the rattle of its tail, while the mamba is notorious for both its speed and its potent strike. Even harmless species like the corn snake and garter snake are superbly adapted hunters, using a forked tongue to detect chemical traces in the air.\n\nLizards are equally diverse. The chameleon changes colour not primarily for camouflage — as commonly believed — but to communicate mood and regulate temperature. The Komodo dragon, the world's largest lizard, uses powerful jaws and bacteria-laden saliva to bring down prey as large as water buffalo. The basilisk — nicknamed the 'Jesus lizard' — can run across the surface of water on its hind legs. Geckos climb vertical glass using millions of microscopic hair-like structures on their feet. Each species occupies a distinct ecological niche.\n\nThe shell of a turtle or tortoise is not merely a protective case — it is part of the animal's skeleton, fused to the spine and ribcage. Sea turtles swim thousands of kilometres between feeding and nesting grounds, while snapping turtles hunt from ambush in freshwater. The distinction between turtles (aquatic, with flippers or webbed feet), tortoises (terrestrial, with dome-shaped shells and stumpy legs), and terrapins (freshwater, with clawed feet) is a useful vocabulary point that reflects genuine biological differences.\n\nCrocodilians — crocodiles, alligators, caimans, and the fish-eating gharial — are the closest living relatives of dinosaurs. A crocodile's jaw can exert the strongest bite force of any living animal, yet the muscles that open the jaw are so weak that a human can hold it shut with bare hands. Their eyes, nostrils, and ears are positioned on top of the head, allowing them to float almost invisibly at the water's surface — a hunting strategy unchanged for 200 million years.",
+          "depth": 1,
+          "name": "Cold Blood, Sharp Senses — Inside the Reptile House The reptile house is one of the most fascinating — and misunderstood — sections of any zoo or wildlife centre. Behind glass-fronted terrariums fitted with heat lamps, misting systems, and carefully arranged branches, rocks, and moss, visitors encounter creatures whose evolutionary lineage stretches back over 300 million years. Reptiles may lack the fur and warmth that make mammals appealing, but their adaptations are no less remarkable. Reptiles are ectothermic — they regulate body temperature using external heat sources rather than generating their own. This is why you will see lizards bask on sun-warmed rocks or under heat lamps: they absorb energy to power their metabolism. When they overheat, they retreat to a shaded hide or burrow into sand. This behaviour is not laziness — it is precise thermal regulation that allows reptiles to survive on a fraction of the food a mammal of equivalent size would require. Snakes exhibit extraordinary diversity. The king cobra — the world's longest venomous snake — delivers venom through hollow fangs, paralysing prey with neurotoxins. A python, by contrast, is a constrictor: it coils around its prey and squeezes until the animal can no longer breathe. The rattlesnake warns predators with a distinctive hiss and the rattle of its tail, while the mamba is notorious for both its speed and its potent strike. Even harmless species like the corn snake and garter snake are superbly adapted hunters, using a forked tongue to detect chemical traces in the air. Lizards are equally diverse. The chameleon changes colour not primarily for camouflage — as commonly believed — but to communicate mood and regulate temperature. The Komodo dragon, the world's largest lizard, uses powerful jaws and bacteria-laden saliva to bring down prey as large as water buffalo. The basilisk — nicknamed the 'Jesus lizard' — can run across the surface of water on its hind legs. Geckos climb vertical glass using millions of microscopic hair-like structures on their feet. Each species occupies a distinct ecological niche. The shell of a turtle or tortoise is not merely a protective case — it is part of the animal's skeleton, fused to the spine and ribcage. Sea turtles swim thousands of kilometres between feeding and nesting grounds, while snapping turtles hunt from ambush in freshwater. The distinction between turtles (aquatic, with flippers or webbed feet), tortoises (terrestrial, with dome-shaped shells and stumpy legs), and terrapins (freshwater, with clawed feet) is a useful vocabulary point that reflects genuine biological differences. Crocodilians — crocodiles, alligators, caimans, and the fish-eating gharial — are the closest living relatives of dinosaurs. A crocodile's jaw can exert the strongest bite force of any living animal, yet the muscles that open the jaw are so weak that a human can hold it shut with bare hands. Their eyes, nostrils, and ears are positioned on top of the head, allowing them to float almost invisibly at the water's surface — a hunting strategy unchanged for 200 million years."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Explain how ectothermy influences the basking and burrowing behaviours described in the passage.",
+          "depth": 1,
+          "name": "1. Explain how ectothermy influences the basking and burrowing behaviours described in the passage."
+        },
+        {
+          "text": "2. Compare the hunting strategies of a python and a king cobra, using specific terminology.",
+          "depth": 1,
+          "name": "2. Compare the hunting strategies of a python and a king cobra, using specific terminology."
+        },
+        {
+          "text": "3. Why does the passage argue that the chameleon's colour change is commonly misunderstood?",
+          "depth": 1,
+          "name": "3. Why does the passage argue that the chameleon's colour change is commonly misunderstood?"
+        },
+        {
+          "text": "4. What biological distinction does the passage draw between turtles, tortoises, and terrapins?",
+          "depth": 1,
+          "name": "4. What biological distinction does the passage draw between turtles, tortoises, and terrapins?"
+        },
+        {
+          "text": "5. What evolutionary advantage does the crocodile's head positioning provide?",
+          "depth": 1,
+          "name": "5. What evolutionary advantage does the crocodile's head positioning provide?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "555:18",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "shed crocodile tears",
+          "depth": 2,
+          "name": "shed crocodile tears"
+        },
+        {
+          "text": "pretend to cry or be sad when you're not really upset",
+          "depth": 2,
+          "name": "pretend to cry or be sad when you're not really upset"
+        },
+        {
+          "text": "\"Don't believe him — he's shedding crocodile tears to get sympathy.\"",
+          "depth": 2,
+          "name": "\"Don't believe him — he's shedding crocodile tears to get sympathy.\""
+        },
+        {
+          "text": "come out of your shell",
+          "depth": 2,
+          "name": "come out of your shell"
+        },
+        {
+          "text": "become less shy and more sociable",
+          "depth": 2,
+          "name": "become less shy and more sociable"
+        },
+        {
+          "text": "\"He used to be so quiet, but he's really come out of his shell this year.\"",
+          "depth": 2,
+          "name": "\"He used to be so quiet, but he's really come out of his shell this year.\""
+        },
+        {
+          "text": "a snake in the grass",
+          "depth": 2,
+          "name": "a snake in the grass"
+        },
+        {
+          "text": "a person who pretends to be a friend but is secretly harmful",
+          "depth": 2,
+          "name": "a person who pretends to be a friend but is secretly harmful"
+        },
+        {
+          "text": "\"Watch out for her — she's a real snake in the grass.\"",
+          "depth": 2,
+          "name": "\"Watch out for her — she's a real snake in the grass.\""
+        },
+        {
+          "text": "be thick-skinned",
+          "depth": 2,
+          "name": "be thick-skinned"
+        },
+        {
+          "text": "not easily offended or upset by criticism",
+          "depth": 2,
+          "name": "not easily offended or upset by criticism"
+        },
+        {
+          "text": "\"You need to be thick-skinned to work in politics.\"",
+          "depth": 2,
+          "name": "\"You need to be thick-skinned to work in politics.\""
+        },
+        {
+          "text": "shed your skin",
+          "depth": 2,
+          "name": "shed your skin"
+        },
+        {
+          "text": "change, renew yourself, or move past an old identity",
+          "depth": 2,
+          "name": "change, renew yourself, or move past an old identity"
+        },
+        {
+          "text": "\"After the divorce, she shed her skin and started fresh.\"",
+          "depth": 2,
+          "name": "\"After the divorce, she shed her skin and started fresh.\""
+        },
+        {
+          "text": "snap at someone",
+          "depth": 2,
+          "name": "snap at someone"
+        },
+        {
+          "text": "speak sharply or irritably to someone (like a crocodile snapping)",
+          "depth": 2,
+          "name": "speak sharply or irritably to someone (like a crocodile snapping)"
+        },
+        {
+          "text": "\"Sorry I snapped at you — I've been under a lot of pressure.\"",
+          "depth": 2,
+          "name": "\"Sorry I snapped at you — I've been under a lot of pressure.\""
+        },
+        {
+          "text": "a cold-blooded killer",
+          "depth": 2,
+          "name": "a cold-blooded killer"
+        },
+        {
+          "text": "someone who kills without emotion or remorse",
+          "depth": 2,
+          "name": "someone who kills without emotion or remorse"
+        },
+        {
+          "text": "\"The detective described the suspect as a cold-blooded killer.\"",
+          "depth": 2,
+          "name": "\"The detective described the suspect as a cold-blooded killer.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "555:50",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A school group visiting the reptile house at a zoo",
+          "depth": 1,
+          "name": "Scene: A school group visiting the reptile house at a zoo"
+        },
+        {
+          "text": "Keeper:",
+          "depth": 2,
+          "name": "Keeper:"
+        },
+        {
+          "text": "Welcome to the Reptile House. It's quite warm in here — about 30 degrees — because reptiles need external heat to stay active.",
+          "depth": 2,
+          "name": "Welcome to the Reptile House. It's quite warm in here — about 30 degrees — because reptiles need external heat to stay active."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Why is that snake just sitting there doing nothing?",
+          "depth": 2,
+          "name": "Why is that snake just sitting there doing nothing?"
+        },
+        {
+          "text": "Keeper:",
+          "depth": 2,
+          "name": "Keeper:"
+        },
+        {
+          "text": "Snakes are ambush predators. They conserve energy by staying very still, then strike with incredible speed when prey comes close.",
+          "depth": 2,
+          "name": "Snakes are ambush predators. They conserve energy by staying very still, then strike with incredible speed when prey comes close."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Is it venomous?",
+          "depth": 2,
+          "name": "Is it venomous?"
+        },
+        {
+          "text": "Keeper:",
+          "depth": 2,
+          "name": "Keeper:"
+        },
+        {
+          "text": "This one's a boa constrictor — non-venomous. It wraps around its prey and squeezes. But the one in the next enclosure is a rattlesnake — definitely venomous!",
+          "depth": 2,
+          "name": "This one's a boa constrictor — non-venomous. It wraps around its prey and squeezes. But the one in the next enclosure is a rattlesnake — definitely venomous!"
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Can I hold the gecko?",
+          "depth": 2,
+          "name": "Can I hold the gecko?"
+        },
+        {
+          "text": "Keeper:",
+          "depth": 2,
+          "name": "Keeper:"
+        },
+        {
+          "text": "Absolutely — but gently. Support its body from underneath. Their skin is delicate, and they can drop their tails if they feel threatened.",
+          "depth": 2,
+          "name": "Absolutely — but gently. Support its body from underneath. Their skin is delicate, and they can drop their tails if they feel threatened."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "Whoa! Will it grow back?",
+          "depth": 2,
+          "name": "Whoa! Will it grow back?"
+        },
+        {
+          "text": "Keeper:",
+          "depth": 2,
+          "name": "Keeper:"
+        },
+        {
+          "text": "Yes, but the new tail is different — it's made of cartilage instead of bone. It works, but it's never quite the same.",
+          "depth": 2,
+          "name": "Yes, but the new tail is different — it's made of cartilage instead of bone. It works, but it's never quite the same."
+        },
+        {
+          "text": "Student:",
+          "depth": 2,
+          "name": "Student:"
+        },
+        {
+          "text": "What's the oldest animal you have here?",
+          "depth": 2,
+          "name": "What's the oldest animal you have here?"
+        },
+        {
+          "text": "Keeper:",
+          "depth": 2,
+          "name": "Keeper:"
+        },
+        {
+          "text": "Our Galapagos tortoise, Hector. He's 97 years old. These tortoises can live well past 150. He'll probably outlive all of us!",
+          "depth": 2,
+          "name": "Our Galapagos tortoise, Hector. He's 97 years old. These tortoises can live well past 150. He'll probably outlive all of us!"
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "555:88",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The snake sheds their skin several times a year.\"",
+          "depth": 2,
+          "name": "❌ \"The snake sheds their skin several times a year.\""
+        },
+        {
+          "text": "✅ \"The snake sheds its skin several times a year.\"",
+          "depth": 2,
+          "name": "✅ \"The snake sheds its skin several times a year.\""
+        },
+        {
+          "text": "'Snake' is singular → 'its' (not 'their'). 'Their' for a singular animal is acceptable in informal speech but incorrect in formal/academic writing at B2+. 'The snake sheds its skin.' 'Snakes shed their skins.' Match pronoun to number consistently.",
+          "depth": 2,
+          "name": "'Snake' is singular → 'its' (not 'their'). 'Their' for a singular animal is acceptable in informal speech but incorrect in formal/academic writing at B2+. 'The snake sheds its skin.' 'Snakes shed their skins.' Match pronoun to number consistently."
+        },
+        {
+          "text": "❌ \"Crocodiles are one of the most oldest species on Earth.\"",
+          "depth": 2,
+          "name": "❌ \"Crocodiles are one of the most oldest species on Earth.\""
+        },
+        {
+          "text": "✅ \"Crocodiles are one of the oldest species on Earth.\"",
+          "depth": 2,
+          "name": "✅ \"Crocodiles are one of the oldest species on Earth.\""
+        },
+        {
+          "text": "Never combine 'most' with '-est'. 'Oldest' is already superlative. 'Most ancient' (multi-syllable) is acceptable. At B2+, this error in academic writing is conspicuous because superlatives appear frequently in scientific comparisons.",
+          "depth": 2,
+          "name": "Never combine 'most' with '-est'. 'Oldest' is already superlative. 'Most ancient' (multi-syllable) is acceptable. At B2+, this error in academic writing is conspicuous because superlatives appear frequently in scientific comparisons."
+        },
+        {
+          "text": "❌ \"The Komodo dragon is a species of lizard which it can grow up to three metres.\"",
+          "depth": 2,
+          "name": "❌ \"The Komodo dragon is a species of lizard which it can grow up to three metres.\""
+        },
+        {
+          "text": "✅ \"The Komodo dragon is a species of lizard which can grow up to three metres.\"",
+          "depth": 2,
+          "name": "✅ \"The Komodo dragon is a species of lizard which can grow up to three metres.\""
+        },
+        {
+          "text": "No pronoun retention in relative clauses: 'which can grow' (not 'which it can grow'). The relative pronoun IS the subject. At B2+, clean relative clauses without redundant pronouns are a basic requirement of academic competence.",
+          "depth": 2,
+          "name": "No pronoun retention in relative clauses: 'which can grow' (not 'which it can grow'). The relative pronoun IS the subject. At B2+, clean relative clauses without redundant pronouns are a basic requirement of academic competence."
+        },
+        {
+          "text": "❌ \"Unlike mammals, reptiles doesn't generate their own body heat.\"",
+          "depth": 2,
+          "name": "❌ \"Unlike mammals, reptiles doesn't generate their own body heat.\""
+        },
+        {
+          "text": "✅ \"Unlike mammals, reptiles do not generate their own body heat.\"",
+          "depth": 2,
+          "name": "✅ \"Unlike mammals, reptiles do not generate their own body heat.\""
+        },
+        {
+          "text": "'Reptiles' is plural → 'do not' (not 'doesn't'). Third person plural: 'they do not / don't'. Third person singular: 'it does not / doesn't'. Subject-verb agreement errors at B2+ undermine credibility in academic writing.",
+          "depth": 2,
+          "name": "'Reptiles' is plural → 'do not' (not 'doesn't'). Third person plural: 'they do not / don't'. Third person singular: 'it does not / doesn't'. Subject-verb agreement errors at B2+ undermine credibility in academic writing."
+        },
+        {
+          "text": "❌ \"Were reptiles to lose their natural habitats, many species will become extinct.\"",
+          "depth": 2,
+          "name": "❌ \"Were reptiles to lose their natural habitats, many species will become extinct.\""
+        },
+        {
+          "text": "✅ \"Were reptiles to lose their natural habitats, many species would become extinct.\"",
+          "depth": 2,
+          "name": "✅ \"Were reptiles to lose their natural habitats, many species would become extinct.\""
+        },
+        {
+          "text": "Inverted second conditional: 'Were X to + infinitive, Y would...' Result clause takes 'would', never 'will'. This formal hypothetical structure appears frequently in B2+ academic and scientific writing about conservation scenarios.",
+          "depth": 2,
+          "name": "Inverted second conditional: 'Were X to + infinitive, Y would...' Result clause takes 'would', never 'will'. This formal hypothetical structure appears frequently in B2+ academic and scientific writing about conservation scenarios."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "555:112",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how reptile and animal vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how reptile and animal vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "venom",
+          "depth": 2,
+          "name": "venom"
+        },
+        {
+          "text": "venom / venomousness",
+          "depth": 2,
+          "name": "venom / venomousness"
+        },
+        {
+          "text": "envenom",
+          "depth": 2,
+          "name": "envenom"
+        },
+        {
+          "text": "venomous",
+          "depth": 2,
+          "name": "venomous"
+        },
+        {
+          "text": "constrict",
+          "depth": 2,
+          "name": "constrict"
+        },
+        {
+          "text": "constriction / constrictor",
+          "depth": 2,
+          "name": "constriction / constrictor"
+        },
+        {
+          "text": "constrict",
+          "depth": 2,
+          "name": "constrict"
+        },
+        {
+          "text": "constricted / constrictive",
+          "depth": 2,
+          "name": "constricted / constrictive"
+        },
+        {
+          "text": "predator",
+          "depth": 2,
+          "name": "predator"
+        },
+        {
+          "text": "predator / predation",
+          "depth": 2,
+          "name": "predator / predation"
+        },
+        {
+          "text": "predate",
+          "depth": 2,
+          "name": "predate"
+        },
+        {
+          "text": "predatory",
+          "depth": 2,
+          "name": "predatory"
+        },
+        {
+          "text": "reptile",
+          "depth": 2,
+          "name": "reptile"
+        },
+        {
+          "text": "reptile",
+          "depth": 2,
+          "name": "reptile"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "reptilian",
+          "depth": 2,
+          "name": "reptilian"
+        },
+        {
+          "text": "hibernate",
+          "depth": 2,
+          "name": "hibernate"
+        },
+        {
+          "text": "hibernation",
+          "depth": 2,
+          "name": "hibernation"
+        },
+        {
+          "text": "hibernate",
+          "depth": 2,
+          "name": "hibernate"
+        },
+        {
+          "text": "hibernating",
+          "depth": 2,
+          "name": "hibernating"
+        },
+        {
+          "text": "camouflage",
+          "depth": 2,
+          "name": "camouflage"
+        },
+        {
+          "text": "camouflage",
+          "depth": 2,
+          "name": "camouflage"
+        },
+        {
+          "text": "camouflage",
+          "depth": 2,
+          "name": "camouflage"
+        },
+        {
+          "text": "camouflaged",
+          "depth": 2,
+          "name": "camouflaged"
+        },
+        {
+          "text": "scale",
+          "depth": 2,
+          "name": "scale"
+        },
+        {
+          "text": "scale / scaling",
+          "depth": 2,
+          "name": "scale / scaling"
+        },
+        {
+          "text": "scale",
+          "depth": 2,
+          "name": "scale"
+        },
+        {
+          "text": "scaly / scaled",
+          "depth": 2,
+          "name": "scaly / scaled"
+        },
+        {
+          "text": "poison",
+          "depth": 2,
+          "name": "poison"
+        },
+        {
+          "text": "poison / poisoning",
+          "depth": 2,
+          "name": "poison / poisoning"
+        },
+        {
+          "text": "poison",
+          "depth": 2,
+          "name": "poison"
+        },
+        {
+          "text": "poisonous / poisoned",
+          "depth": 2,
+          "name": "poisonous / poisoned"
+        },
+        {
+          "text": "shed",
+          "depth": 2,
+          "name": "shed"
+        },
+        {
+          "text": "shedding",
+          "depth": 2,
+          "name": "shedding"
+        },
+        {
+          "text": "shed",
+          "depth": 2,
+          "name": "shed"
+        },
+        {
+          "text": "shed",
+          "depth": 2,
+          "name": "shed"
+        },
+        {
+          "text": "extinct",
+          "depth": 2,
+          "name": "extinct"
+        },
+        {
+          "text": "extinction",
+          "depth": 2,
+          "name": "extinction"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "extinct",
+          "depth": 2,
+          "name": "extinct"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "555:172",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  Reptiles regulate body temperature by __________ on sun-warmed rocks.",
+          "depth": 1,
+          "name": "1. Reptiles regulate body temperature by __________ on sun-warmed rocks."
+        },
+        {
+          "text": "2.  A glass-fronted __________ houses reptiles with heat lamps and misting systems.",
+          "depth": 1,
+          "name": "2. A glass-fronted __________ houses reptiles with heat lamps and misting systems."
+        },
+        {
+          "text": "3.  Snakes deliver venom through hollow __________ .",
+          "depth": 1,
+          "name": "3. Snakes deliver venom through hollow __________ ."
+        },
+        {
+          "text": "4.  A python __________ around its prey and squeezes until it cannot breathe.",
+          "depth": 1,
+          "name": "4. A python __________ around its prey and squeezes until it cannot breathe."
+        },
+        {
+          "text": "5.  Snakes use a forked __________ to detect chemical traces in the air.",
+          "depth": 1,
+          "name": "5. Snakes use a forked __________ to detect chemical traces in the air."
+        },
+        {
+          "text": "6.  The __________ changes colour to communicate mood and regulate temperature.",
+          "depth": 1,
+          "name": "6. The __________ changes colour to communicate mood and regulate temperature."
+        },
+        {
+          "text": "7.  A turtle's __________ is fused to its spine and ribcage.",
+          "depth": 1,
+          "name": "7. A turtle's __________ is fused to its spine and ribcage."
+        },
+        {
+          "text": "8.  The __________ is the closest crocodilian relative specialised for eating fish.",
+          "depth": 1,
+          "name": "8. The __________ is the closest crocodilian relative specialised for eating fish."
+        },
+        {
+          "text": "9.  When threatened, a rattlesnake may __________ and rattle its tail as a warning.",
+          "depth": 1,
+          "name": "9. When threatened, a rattlesnake may __________ and rattle its tail as a warning."
+        },
+        {
+          "text": "10. Reptiles retreat to a shaded __________ or burrow into sand to cool down.",
+          "depth": 1,
+          "name": "10. Reptiles retreat to a shaded __________ or burrow into sand to cool down."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. basking  2. terrarium  3. fangs  4. coils  5. tongue  6. chameleon  7. shell  8. gharial  9. hiss  10. hide",
+          "depth": 2,
+          "name": "1. basking 2. terrarium 3. fangs 4. coils 5. tongue 6. chameleon 7. shell 8. gharial 9. hiss 10. hide"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "555:190",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Venomous vs Poisonous",
+          "depth": 2,
+          "name": "Venomous vs Poisonous"
+        },
+        {
+          "text": "These are commonly confused. 'Venomous' = injects toxin via bite or sting (snakes, spiders, scorpions). 'Poisonous' = harmful if eaten or touched (certain frogs, mushrooms, plants). A snake is venomous, not poisonous — unless you eat it and get sick! 'Don't touch that frog — it's poisonous.' vs 'That snake is venomous — its bite is dangerous.'",
+          "depth": 2,
+          "name": "These are commonly confused. 'Venomous' = injects toxin via bite or sting (snakes, spiders, scorpions). 'Poisonous' = harmful if eaten or touched (certain frogs, mushrooms, plants). A snake is venomous, not poisonous — unless you eat it and get sick! 'Don't touch that frog — it's poisonous.' vs 'That snake is venomous — its bite is dangerous.'"
+        },
+        {
+          "text": "Turtle vs Tortoise (Regional)",
+          "depth": 2,
+          "name": "Turtle vs Tortoise (Regional)"
+        },
+        {
+          "text": "In British English: 'turtle' = lives in water, 'tortoise' = lives on land. In American English: 'turtle' is often used for both. This causes confusion in international contexts. Scientists use 'chelonian' for the entire order, but this is rare in everyday English.",
+          "depth": 2,
+          "name": "In British English: 'turtle' = lives in water, 'tortoise' = lives on land. In American English: 'turtle' is often used for both. This causes confusion in international contexts. Scientists use 'chelonian' for the entire order, but this is rare in everyday English."
+        },
+        {
+          "text": "Reptiles in Idioms and Culture",
+          "depth": 2,
+          "name": "Reptiles in Idioms and Culture"
+        },
+        {
+          "text": "Snakes have negative associations in Western culture (deception, danger — 'a snake in the grass'). But in many other cultures, snakes symbolise wisdom, healing (the medical caduceus), or protection. Turtles often symbolise patience, longevity, and wisdom — 'slow and steady wins the race.'",
+          "depth": 2,
+          "name": "Snakes have negative associations in Western culture (deception, danger — 'a snake in the grass'). But in many other cultures, snakes symbolise wisdom, healing (the medical caduceus), or protection. Turtles often symbolise patience, longevity, and wisdom — 'slow and steady wins the race.'"
+        },
+        {
+          "text": "Handling Reptiles Safely",
+          "depth": 2,
+          "name": "Handling Reptiles Safely"
+        },
+        {
+          "text": "In British English: 'to handle' an animal means to hold and touch it carefully. 'The keeper handled the snake with care.' This is different from 'handle a situation' (deal with/manage). At zoos, trained handlers demonstrate safe techniques — never grab a reptile by the tail or squeeze it tightly.",
+          "depth": 2,
+          "name": "In British English: 'to handle' an animal means to hold and touch it carefully. 'The keeper handled the snake with care.' This is different from 'handle a situation' (deal with/manage). At zoos, trained handlers demonstrate safe techniques — never grab a reptile by the tail or squeeze it tightly."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "555:206",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "reptile",
+          "depth": 2,
+          "name": "reptile"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ house, ~ species, ~ skin",
+          "depth": 2,
+          "name": "~ house, ~ species, ~ skin"
+        },
+        {
+          "text": "venom",
+          "depth": 2,
+          "name": "venom"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "snake ~, ~ gland, deadly ~",
+          "depth": 2,
+          "name": "snake ~, ~ gland, deadly ~"
+        },
+        {
+          "text": "constriction",
+          "depth": 2,
+          "name": "constriction"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "death by ~, ~ method, ~",
+          "depth": 2,
+          "name": "death by ~, ~ method, ~"
+        },
+        {
+          "text": "fang",
+          "depth": 2,
+          "name": "fang"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ mark, venomous ~, ~ length",
+          "depth": 2,
+          "name": "~ mark, venomous ~, ~ length"
+        },
+        {
+          "text": "shed",
+          "depth": 2,
+          "name": "shed"
+        },
+        {
+          "text": "v",
+          "depth": 2,
+          "name": "v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ skin, ~ tail, ~ feathers",
+          "depth": 2,
+          "name": "~ skin, ~ tail, ~ feathers"
+        },
+        {
+          "text": "enclosure",
+          "depth": 2,
+          "name": "enclosure"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ size, heated ~, glass ~",
+          "depth": 2,
+          "name": "~ size, heated ~, glass ~"
+        },
+        {
+          "text": "cold-blooded",
+          "depth": 2,
+          "name": "cold-blooded"
+        },
+        {
+          "text": "adj",
+          "depth": 2,
+          "name": "adj"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ animal, ~ reptile, ~",
+          "depth": 2,
+          "name": "~ animal, ~ reptile, ~"
+        },
+        {
+          "text": "tortoise",
+          "depth": 2,
+          "name": "tortoise"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "giant ~, ~ shell, ~ speed",
+          "depth": 2,
+          "name": "giant ~, ~ shell, ~ speed"
+        },
+        {
+          "text": "predator",
+          "depth": 2,
+          "name": "predator"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "apex ~, ~ prey, natural ~",
+          "depth": 2,
+          "name": "apex ~, ~ prey, natural ~"
+        },
+        {
+          "text": "hibernate",
+          "depth": 2,
+          "name": "hibernate"
+        },
+        {
+          "text": "v",
+          "depth": 2,
+          "name": "v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ through winter, ~ state, ~",
+          "depth": 2,
+          "name": "~ through winter, ~ state, ~"
+        }
+      ]
+    }
+  }
+}

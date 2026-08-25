@@ -1,0 +1,2016 @@
+{
+  "unitId": "hair-salon",
+  "name": "The Hair Salon",
+  "subtopics": [
+    {
+      "id": "haircuts",
+      "title": "Haircuts",
+      "wordIds": [
+        "trim",
+        "layers",
+        "bob",
+        "pixie",
+        "fade",
+        "undercut",
+        "bangs",
+        "buzz-cut",
+        "shag",
+        "crew-cut",
+        "mohawk",
+        "bangs-fringe",
+        "side-part",
+        "comb-over",
+        "braids",
+        "cornrows",
+        "dreadlocks",
+        "extensions",
+        "wig",
+        "hair-net"
+      ]
+    },
+    {
+      "id": "styling",
+      "title": "Styling",
+      "wordIds": [
+        "blow-dry",
+        "curl",
+        "straighten",
+        "braid",
+        "updo",
+        "ponytail",
+        "bun",
+        "waves",
+        "twist",
+        "pin",
+        "hair-rollers",
+        "curling-iron",
+        "flat-iron",
+        "blow-dryer",
+        "diffuser",
+        "hair-cape",
+        "neck-strip",
+        "barber-pole",
+        "shaving-cream",
+        "aftershave",
+        "pomade",
+        "hair-gel",
+        "hair-wax",
+        "mousse",
+        "hair-spray"
+      ]
+    },
+    {
+      "id": "color",
+      "title": "Color",
+      "wordIds": [
+        "highlights",
+        "lowlights",
+        "balayage",
+        "ombre",
+        "root-touch-up",
+        "bleach",
+        "toner",
+        "dye",
+        "foil",
+        "color-wheel",
+        "perm-solution",
+        "neutralizer",
+        "scalp-massage",
+        "hot-towel",
+        "razor-fade",
+        "taper",
+        "undercut",
+        "bob-cut",
+        "layers"
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Tools",
+      "wordIds": [
+        "scissors",
+        "comb",
+        "brush",
+        "clipper",
+        "razor",
+        "flat-iron",
+        "curling-iron",
+        "blow-dryer",
+        "cape",
+        "clip",
+        "hair-clipper",
+        "trimmer",
+        "straight-razor",
+        "thinning-shears",
+        "sectioning-clips"
+      ]
+    },
+    {
+      "id": "products",
+      "title": "Products",
+      "wordIds": [
+        "shampoo",
+        "conditioner",
+        "hairspray",
+        "gel",
+        "mousse",
+        "serum",
+        "oil",
+        "mask",
+        "dry-shampoo",
+        "leave-in",
+        "shampoo",
+        "conditioner",
+        "hair-dye",
+        "highlights",
+        "lowlights",
+        "balayage",
+        "ombre"
+      ]
+    },
+    {
+      "id": "salon",
+      "title": "Salon",
+      "wordIds": [
+        "chair",
+        "mirror",
+        "station",
+        "sink",
+        "waiting-area",
+        "magazine",
+        "reception",
+        "appointment-book",
+        "tip-jar",
+        "smock",
+        "salon-chair",
+        "wash-basin",
+        "styling-station",
+        "mirror"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "trim",
+      "label": "Trim",
+      "ipa": "/trɪm/",
+      "cefr": "B2",
+      "imageNodeId": "119:10223"
+    },
+    {
+      "kind": "card",
+      "id": "layers",
+      "label": "Layers",
+      "ipa": "/ˈleɪərz/",
+      "cefr": "B2",
+      "imageNodeId": "119:10227"
+    },
+    {
+      "kind": "card",
+      "id": "bob",
+      "label": "Bob",
+      "ipa": "/bɒb/",
+      "cefr": "B2",
+      "imageNodeId": "119:10231"
+    },
+    {
+      "kind": "card",
+      "id": "pixie",
+      "label": "Pixie",
+      "ipa": "/ˈpɪksi/",
+      "cefr": "B2",
+      "imageNodeId": "119:10235"
+    },
+    {
+      "kind": "card",
+      "id": "fade",
+      "label": "Fade",
+      "ipa": "/feɪd/",
+      "cefr": "B2",
+      "imageNodeId": "119:10239"
+    },
+    {
+      "kind": "card",
+      "id": "undercut",
+      "label": "Undercut",
+      "ipa": "/ˈʌndərkʌt/",
+      "cefr": "B2",
+      "imageNodeId": "119:10243"
+    },
+    {
+      "kind": "card",
+      "id": "bangs",
+      "label": "Bangs",
+      "ipa": "/bæŋz/",
+      "cefr": "B2",
+      "imageNodeId": "119:10247"
+    },
+    {
+      "kind": "card",
+      "id": "buzz-cut",
+      "label": "Buzz Cut",
+      "ipa": "/bʌz kʌt/",
+      "cefr": "C1",
+      "imageNodeId": "119:10251"
+    },
+    {
+      "kind": "card",
+      "id": "shag",
+      "label": "Shag",
+      "ipa": "/ʃæɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:10255"
+    },
+    {
+      "kind": "card",
+      "id": "crew-cut",
+      "label": "Crew Cut",
+      "ipa": "/kruː kʌt/",
+      "cefr": "C1",
+      "imageNodeId": "119:10259"
+    },
+    {
+      "kind": "card",
+      "id": "mohawk",
+      "label": "Mohawk",
+      "ipa": "/ˈmoʊhɔːk/",
+      "cefr": "B2",
+      "imageNodeId": "492:836"
+    },
+    {
+      "kind": "card",
+      "id": "bangs-fringe",
+      "label": "Bangs/Fringe",
+      "ipa": "/bæŋz frɪndʒ/",
+      "cefr": "C1",
+      "imageNodeId": "492:840"
+    },
+    {
+      "kind": "card",
+      "id": "side-part",
+      "label": "Side Part",
+      "ipa": "/saɪd pɑːrt/",
+      "cefr": "C1",
+      "imageNodeId": "492:844"
+    },
+    {
+      "kind": "card",
+      "id": "comb-over",
+      "label": "Comb Over",
+      "ipa": "/koʊm ˈoʊvər/",
+      "cefr": "C1",
+      "imageNodeId": "492:848"
+    },
+    {
+      "kind": "card",
+      "id": "braids",
+      "label": "Braids",
+      "ipa": "/breɪdz/",
+      "cefr": "B2",
+      "imageNodeId": "492:852"
+    },
+    {
+      "kind": "card",
+      "id": "cornrows",
+      "label": "Cornrows",
+      "ipa": "/ˈkɔːrnroʊz/",
+      "cefr": "B2",
+      "imageNodeId": "492:856"
+    },
+    {
+      "kind": "card",
+      "id": "dreadlocks",
+      "label": "Dreadlocks",
+      "ipa": "/ˈdrɛdlɒks/",
+      "cefr": "C1",
+      "imageNodeId": "492:860"
+    },
+    {
+      "kind": "card",
+      "id": "extensions",
+      "label": "Extensions",
+      "ipa": "/ɪkˈstɛnʃənz/",
+      "cefr": "C1",
+      "imageNodeId": "492:864"
+    },
+    {
+      "kind": "card",
+      "id": "wig",
+      "label": "Wig",
+      "ipa": "/wɪɡ/",
+      "cefr": "B2",
+      "imageNodeId": "492:868"
+    },
+    {
+      "kind": "card",
+      "id": "hair-net",
+      "label": "Hair Net",
+      "ipa": "/hɛr nɛt/",
+      "cefr": "C1",
+      "imageNodeId": "492:872"
+    },
+    {
+      "kind": "card",
+      "id": "blow-dry",
+      "label": "Blow Dry",
+      "ipa": "/bloʊ draɪ/",
+      "cefr": "C1",
+      "imageNodeId": "119:10268"
+    },
+    {
+      "kind": "card",
+      "id": "curl",
+      "label": "Curl",
+      "ipa": "/kɜːrl/",
+      "cefr": "B2",
+      "imageNodeId": "119:10272"
+    },
+    {
+      "kind": "card",
+      "id": "straighten",
+      "label": "Straighten",
+      "ipa": "/ˈstreɪtn/",
+      "cefr": "C1",
+      "imageNodeId": "119:10276"
+    },
+    {
+      "kind": "card",
+      "id": "braid",
+      "label": "Braid",
+      "ipa": "/breɪd/",
+      "cefr": "B2",
+      "imageNodeId": "119:10280"
+    },
+    {
+      "kind": "card",
+      "id": "updo",
+      "label": "Updo",
+      "ipa": "/ˈʌpduː/",
+      "cefr": "B2",
+      "imageNodeId": "119:10284"
+    },
+    {
+      "kind": "card",
+      "id": "ponytail",
+      "label": "Ponytail",
+      "ipa": "/ˈpoʊniteɪl/",
+      "cefr": "B2",
+      "imageNodeId": "119:10288"
+    },
+    {
+      "kind": "card",
+      "id": "bun",
+      "label": "Bun",
+      "ipa": "/bʌn/",
+      "cefr": "B2",
+      "imageNodeId": "119:10292"
+    },
+    {
+      "kind": "card",
+      "id": "waves",
+      "label": "Waves",
+      "ipa": "/weɪvz/",
+      "cefr": "B2",
+      "imageNodeId": "119:10296"
+    },
+    {
+      "kind": "card",
+      "id": "twist",
+      "label": "Twist",
+      "ipa": "/twɪst/",
+      "cefr": "B2",
+      "imageNodeId": "119:10300"
+    },
+    {
+      "kind": "card",
+      "id": "pin",
+      "label": "Pin",
+      "ipa": "/pɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:10304"
+    },
+    {
+      "kind": "card",
+      "id": "hair-rollers",
+      "label": "Hair Rollers",
+      "ipa": "/hɛr ˈroʊlərz/",
+      "cefr": "C1",
+      "imageNodeId": "492:876"
+    },
+    {
+      "kind": "card",
+      "id": "curling-iron",
+      "label": "Curling Iron",
+      "ipa": "/ˈkɜːrlɪŋ ˈaɪərn/",
+      "cefr": "C1",
+      "imageNodeId": "492:880"
+    },
+    {
+      "kind": "card",
+      "id": "flat-iron",
+      "label": "Flat Iron",
+      "ipa": "/flæt ˈaɪərn/",
+      "cefr": "C1",
+      "imageNodeId": "492:884"
+    },
+    {
+      "kind": "card",
+      "id": "blow-dryer",
+      "label": "Blow Dryer",
+      "ipa": "/bloʊ ˈdraɪər/",
+      "cefr": "C1",
+      "imageNodeId": "492:888"
+    },
+    {
+      "kind": "card",
+      "id": "diffuser",
+      "label": "Diffuser",
+      "ipa": "/dɪˈfjuːzər/",
+      "cefr": "B2",
+      "imageNodeId": "492:892"
+    },
+    {
+      "kind": "card",
+      "id": "hair-cape",
+      "label": "Hair Cape",
+      "ipa": "/hɛr keɪp/",
+      "cefr": "C1",
+      "imageNodeId": "492:896"
+    },
+    {
+      "kind": "card",
+      "id": "neck-strip",
+      "label": "Neck Strip",
+      "ipa": "/nɛk strɪp/",
+      "cefr": "C1",
+      "imageNodeId": "492:900"
+    },
+    {
+      "kind": "card",
+      "id": "barber-pole",
+      "label": "Barber Pole",
+      "ipa": "/ˈbɑːrbər poʊl/",
+      "cefr": "C1",
+      "imageNodeId": "492:904"
+    },
+    {
+      "kind": "card",
+      "id": "shaving-cream",
+      "label": "Shaving Cream",
+      "ipa": "/ˈʃeɪvɪŋ kriːm/",
+      "cefr": "C1",
+      "imageNodeId": "492:908"
+    },
+    {
+      "kind": "card",
+      "id": "aftershave",
+      "label": "Aftershave",
+      "ipa": "/ˈɑːftərʃeɪv/",
+      "cefr": "C1",
+      "imageNodeId": "492:912"
+    },
+    {
+      "kind": "card",
+      "id": "pomade",
+      "label": "Pomade",
+      "ipa": "/pəˈmeɪd/",
+      "cefr": "B2",
+      "imageNodeId": "492:916"
+    },
+    {
+      "kind": "card",
+      "id": "hair-gel",
+      "label": "Hair Gel",
+      "ipa": "/hɛr dʒɛl/",
+      "cefr": "C1",
+      "imageNodeId": "492:920"
+    },
+    {
+      "kind": "card",
+      "id": "hair-wax",
+      "label": "Hair Wax",
+      "ipa": "/hɛr wæks/",
+      "cefr": "C1",
+      "imageNodeId": "492:924"
+    },
+    {
+      "kind": "card",
+      "id": "mousse",
+      "label": "Mousse",
+      "ipa": "/muːs/",
+      "cefr": "B2",
+      "imageNodeId": "492:928"
+    },
+    {
+      "kind": "card",
+      "id": "hair-spray",
+      "label": "Hair Spray",
+      "ipa": "/hɛr spreɪ/",
+      "cefr": "C1",
+      "imageNodeId": "492:932"
+    },
+    {
+      "kind": "card",
+      "id": "highlights",
+      "label": "Highlights",
+      "ipa": "/ˈhaɪlaɪts/",
+      "cefr": "C1",
+      "imageNodeId": "119:10313"
+    },
+    {
+      "kind": "card",
+      "id": "lowlights",
+      "label": "Lowlights",
+      "ipa": "/ˈloʊlaɪts/",
+      "cefr": "B2",
+      "imageNodeId": "119:10317"
+    },
+    {
+      "kind": "card",
+      "id": "balayage",
+      "label": "Balayage",
+      "ipa": "/ˌbæləˈjɑːʒ/",
+      "cefr": "B2",
+      "imageNodeId": "119:10321"
+    },
+    {
+      "kind": "card",
+      "id": "ombre",
+      "label": "Ombre",
+      "ipa": "/ˈɒmbreɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:10325"
+    },
+    {
+      "kind": "card",
+      "id": "root-touch-up",
+      "label": "Root Touch Up",
+      "ipa": "/ruːt tʌtʃ ʌp/",
+      "cefr": "C1",
+      "imageNodeId": "119:10329"
+    },
+    {
+      "kind": "card",
+      "id": "bleach",
+      "label": "Bleach",
+      "ipa": "/bliːtʃ/",
+      "cefr": "B2",
+      "imageNodeId": "119:10333"
+    },
+    {
+      "kind": "card",
+      "id": "toner",
+      "label": "Toner",
+      "ipa": "/ˈtoʊnər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10337"
+    },
+    {
+      "kind": "card",
+      "id": "dye",
+      "label": "Dye",
+      "ipa": "/daɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:10341"
+    },
+    {
+      "kind": "card",
+      "id": "foil",
+      "label": "Foil",
+      "ipa": "/fɔɪl/",
+      "cefr": "B2",
+      "imageNodeId": "119:10345"
+    },
+    {
+      "kind": "card",
+      "id": "color-wheel",
+      "label": "Color Wheel",
+      "ipa": "/ˈkʌlər wiːl/",
+      "cefr": "C1",
+      "imageNodeId": "119:10349"
+    },
+    {
+      "kind": "card",
+      "id": "perm-solution",
+      "label": "Perm Solution",
+      "ipa": "/pɜːrm səˈluːʃən/",
+      "cefr": "C1",
+      "imageNodeId": "492:936"
+    },
+    {
+      "kind": "card",
+      "id": "neutralizer",
+      "label": "Neutralizer",
+      "ipa": "/ˈnjuːtrəlaɪzər/",
+      "cefr": "C1",
+      "imageNodeId": "492:940"
+    },
+    {
+      "kind": "card",
+      "id": "scalp-massage",
+      "label": "Scalp Massage",
+      "ipa": "/skælp məˈsɑːʒ/",
+      "cefr": "C1",
+      "imageNodeId": "492:944"
+    },
+    {
+      "kind": "card",
+      "id": "hot-towel",
+      "label": "Hot Towel",
+      "ipa": "/hɒt ˈtaʊəl/",
+      "cefr": "C1",
+      "imageNodeId": "492:948"
+    },
+    {
+      "kind": "card",
+      "id": "razor-fade",
+      "label": "Razor Fade",
+      "ipa": "/ˈreɪzər feɪd/",
+      "cefr": "C1",
+      "imageNodeId": "492:952"
+    },
+    {
+      "kind": "card",
+      "id": "taper",
+      "label": "Taper",
+      "ipa": "/ˈteɪpər/",
+      "cefr": "B2",
+      "imageNodeId": "492:956"
+    },
+    {
+      "kind": "card",
+      "id": "undercut",
+      "label": "Undercut",
+      "ipa": "/ˈʌndərkʌt/",
+      "cefr": "B2",
+      "imageNodeId": "492:960"
+    },
+    {
+      "kind": "card",
+      "id": "bob-cut",
+      "label": "Bob Cut",
+      "ipa": "/bɒb kʌt/",
+      "cefr": "C1",
+      "imageNodeId": "492:964"
+    },
+    {
+      "kind": "card",
+      "id": "layers",
+      "label": "Layers",
+      "ipa": "/ˈleɪərz/",
+      "cefr": "B2",
+      "imageNodeId": "492:968"
+    },
+    {
+      "kind": "card",
+      "id": "scissors",
+      "label": "Scissors",
+      "ipa": "/ˈsɪzərz/",
+      "cefr": "B2",
+      "imageNodeId": "119:10358"
+    },
+    {
+      "kind": "card",
+      "id": "comb",
+      "label": "Comb",
+      "ipa": "/koʊm/",
+      "cefr": "B2",
+      "imageNodeId": "119:10362"
+    },
+    {
+      "kind": "card",
+      "id": "brush",
+      "label": "Brush",
+      "ipa": "/brʌʃ/",
+      "cefr": "B2",
+      "imageNodeId": "119:10366"
+    },
+    {
+      "kind": "card",
+      "id": "clipper",
+      "label": "Clipper",
+      "ipa": "/ˈklɪpər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10370"
+    },
+    {
+      "kind": "card",
+      "id": "razor",
+      "label": "Razor",
+      "ipa": "/ˈreɪzər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10374"
+    },
+    {
+      "kind": "card",
+      "id": "flat-iron",
+      "label": "Flat Iron",
+      "ipa": "/flæt ˈaɪərn/",
+      "cefr": "C1",
+      "imageNodeId": "119:10378"
+    },
+    {
+      "kind": "card",
+      "id": "curling-iron",
+      "label": "Curling Iron",
+      "ipa": "/ˈkɜːrlɪŋ ˈaɪərn/",
+      "cefr": "C1",
+      "imageNodeId": "119:10382"
+    },
+    {
+      "kind": "card",
+      "id": "blow-dryer",
+      "label": "Blow Dryer",
+      "ipa": "/bloʊ ˈdraɪər/",
+      "cefr": "C1",
+      "imageNodeId": "119:10386"
+    },
+    {
+      "kind": "card",
+      "id": "cape",
+      "label": "Cape",
+      "ipa": "/keɪp/",
+      "cefr": "B2",
+      "imageNodeId": "119:10390"
+    },
+    {
+      "kind": "card",
+      "id": "clip",
+      "label": "Clip",
+      "ipa": "/klɪp/",
+      "cefr": "B2",
+      "imageNodeId": "119:10394"
+    },
+    {
+      "kind": "card",
+      "id": "hair-clipper",
+      "label": "Hair Clipper",
+      "ipa": "/hɛr ˈklɪpər/",
+      "cefr": "C1",
+      "imageNodeId": "492:972"
+    },
+    {
+      "kind": "card",
+      "id": "trimmer",
+      "label": "Trimmer",
+      "ipa": "/ˈtrɪmər/",
+      "cefr": "B2",
+      "imageNodeId": "492:976"
+    },
+    {
+      "kind": "card",
+      "id": "straight-razor",
+      "label": "Straight Razor",
+      "ipa": "/streɪt ˈreɪzər/",
+      "cefr": "C1",
+      "imageNodeId": "492:980"
+    },
+    {
+      "kind": "card",
+      "id": "thinning-shears",
+      "label": "Thinning Shears",
+      "ipa": "/ˈθɪnɪŋ ʃɪərz/",
+      "cefr": "C1",
+      "imageNodeId": "492:984"
+    },
+    {
+      "kind": "card",
+      "id": "sectioning-clips",
+      "label": "Sectioning Clips",
+      "ipa": "/ˈsɛkʃənɪŋ klɪps/",
+      "cefr": "C1",
+      "imageNodeId": "492:988"
+    },
+    {
+      "kind": "card",
+      "id": "shampoo",
+      "label": "Shampoo",
+      "ipa": "/ʃæmˈpuː/",
+      "cefr": "B2",
+      "imageNodeId": "119:10403"
+    },
+    {
+      "kind": "card",
+      "id": "conditioner",
+      "label": "Conditioner",
+      "ipa": "/kənˈdɪʃənər/",
+      "cefr": "C1",
+      "imageNodeId": "119:10407"
+    },
+    {
+      "kind": "card",
+      "id": "hairspray",
+      "label": "Hairspray",
+      "ipa": "/ˈhɛrspreɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:10411"
+    },
+    {
+      "kind": "card",
+      "id": "gel",
+      "label": "Gel",
+      "ipa": "/dʒɛl/",
+      "cefr": "B2",
+      "imageNodeId": "119:10415"
+    },
+    {
+      "kind": "card",
+      "id": "mousse",
+      "label": "Mousse",
+      "ipa": "/muːs/",
+      "cefr": "B2",
+      "imageNodeId": "119:10419"
+    },
+    {
+      "kind": "card",
+      "id": "serum",
+      "label": "Serum",
+      "ipa": "/ˈsɪərəm/",
+      "cefr": "B2",
+      "imageNodeId": "119:10423"
+    },
+    {
+      "kind": "card",
+      "id": "oil",
+      "label": "Oil",
+      "ipa": "/ɔɪl/",
+      "cefr": "B2",
+      "imageNodeId": "119:10427"
+    },
+    {
+      "kind": "card",
+      "id": "mask",
+      "label": "Mask",
+      "ipa": "/mɑːsk/",
+      "cefr": "B2",
+      "imageNodeId": "119:10431"
+    },
+    {
+      "kind": "card",
+      "id": "dry-shampoo",
+      "label": "Dry Shampoo",
+      "ipa": "/draɪ ʃæmˈpuː/",
+      "cefr": "C1",
+      "imageNodeId": "119:10435"
+    },
+    {
+      "kind": "card",
+      "id": "leave-in",
+      "label": "Leave In",
+      "ipa": "/liːv ɪn/",
+      "cefr": "C1",
+      "imageNodeId": "119:10439"
+    },
+    {
+      "kind": "card",
+      "id": "shampoo",
+      "label": "Shampoo",
+      "ipa": "/ʃæmˈpuː/",
+      "cefr": "B2",
+      "imageNodeId": "492:992"
+    },
+    {
+      "kind": "card",
+      "id": "conditioner",
+      "label": "Conditioner",
+      "ipa": "/kənˈdɪʃənər/",
+      "cefr": "C1",
+      "imageNodeId": "492:996"
+    },
+    {
+      "kind": "card",
+      "id": "hair-dye",
+      "label": "Hair Dye",
+      "ipa": "/hɛr daɪ/",
+      "cefr": "C1",
+      "imageNodeId": "492:1000"
+    },
+    {
+      "kind": "card",
+      "id": "highlights",
+      "label": "Highlights",
+      "ipa": "/ˈhaɪlaɪts/",
+      "cefr": "C1",
+      "imageNodeId": "492:1004"
+    },
+    {
+      "kind": "card",
+      "id": "lowlights",
+      "label": "Lowlights",
+      "ipa": "/ˈloʊlaɪts/",
+      "cefr": "B2",
+      "imageNodeId": "492:1008"
+    },
+    {
+      "kind": "card",
+      "id": "balayage",
+      "label": "Balayage",
+      "ipa": "/ˌbæləˈjɑːʒ/",
+      "cefr": "B2",
+      "imageNodeId": "492:1012"
+    },
+    {
+      "kind": "card",
+      "id": "ombre",
+      "label": "Ombre",
+      "ipa": "/ˈɒmbreɪ/",
+      "cefr": "B2",
+      "imageNodeId": "492:1016"
+    },
+    {
+      "kind": "card",
+      "id": "chair",
+      "label": "Chair",
+      "ipa": "/tʃɛr/",
+      "cefr": "B2",
+      "imageNodeId": "119:10448"
+    },
+    {
+      "kind": "card",
+      "id": "mirror",
+      "label": "Mirror",
+      "ipa": "/ˈmɪrər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10452"
+    },
+    {
+      "kind": "card",
+      "id": "station",
+      "label": "Station",
+      "ipa": "/ˈsteɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "119:10456"
+    },
+    {
+      "kind": "card",
+      "id": "sink",
+      "label": "Sink",
+      "ipa": "/sɪŋk/",
+      "cefr": "B2",
+      "imageNodeId": "119:10460"
+    },
+    {
+      "kind": "card",
+      "id": "waiting-area",
+      "label": "Waiting Area",
+      "ipa": "/ˈweɪtɪŋ ˈɛriə/",
+      "cefr": "C1",
+      "imageNodeId": "119:10464"
+    },
+    {
+      "kind": "card",
+      "id": "magazine",
+      "label": "Magazine",
+      "ipa": "/ˌmæɡəˈziːn/",
+      "cefr": "B2",
+      "imageNodeId": "119:10468"
+    },
+    {
+      "kind": "card",
+      "id": "reception",
+      "label": "Reception",
+      "ipa": "/rɪˈsɛpʃən/",
+      "cefr": "B2",
+      "imageNodeId": "119:10472"
+    },
+    {
+      "kind": "card",
+      "id": "appointment-book",
+      "label": "Appointment Book",
+      "ipa": "/əˈpɔɪntmənt bʊk/",
+      "cefr": "C1",
+      "imageNodeId": "119:10476"
+    },
+    {
+      "kind": "card",
+      "id": "tip-jar",
+      "label": "Tip Jar",
+      "ipa": "/tɪp dʒɑːr/",
+      "cefr": "C1",
+      "imageNodeId": "119:10480"
+    },
+    {
+      "kind": "card",
+      "id": "smock",
+      "label": "Smock",
+      "ipa": "/smɒk/",
+      "cefr": "B2",
+      "imageNodeId": "119:10484"
+    },
+    {
+      "kind": "card",
+      "id": "salon-chair",
+      "label": "Salon Chair",
+      "ipa": "/səˈlɒn tʃɛr/",
+      "cefr": "C1",
+      "imageNodeId": "492:1020"
+    },
+    {
+      "kind": "card",
+      "id": "wash-basin",
+      "label": "Wash Basin",
+      "ipa": "/wɒʃ ˈbeɪsn/",
+      "cefr": "C1",
+      "imageNodeId": "492:1024"
+    },
+    {
+      "kind": "card",
+      "id": "styling-station",
+      "label": "Styling Station",
+      "ipa": "/ˈstaɪlɪŋ ˈsteɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "492:1028"
+    },
+    {
+      "kind": "card",
+      "id": "mirror",
+      "label": "Mirror",
+      "ipa": "/ˈmɪrər/",
+      "cefr": "B2",
+      "imageNodeId": "492:1032"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "556:1365",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "556:1367",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2+ · Topic: The Hair Salon",
+          "depth": 1,
+          "name": "Level: B2+ · Topic: The Hair Salon"
+        },
+        {
+          "text": "Cut, Colour, Identity — The Language of the Hair Salon\n\nA hair salon is a theatre of transformation. A client walks in, sits in the salon chair, and a stylist fastens a cape around their shoulders, pressing a neck strip against the collar to catch loose hair. The consultation begins: trim or restyle? Layers or a blunt bob? Bangs or a side part? The mirror reflects what exists; the conversation imagines what could be.\n\nCutting is the foundation. Scissors handle precision work — shaping layers, tapering ends, creating texture. A clipper buzzes through a fade or a buzz cut, while thinning shears remove bulk without shortening length. A razor creates soft, feathered edges. Sectioning clips hold hair in place as the stylist works through one section at a time. The comb — flat, wide-toothed, or tail — guides every cut. For men, a straight razor sharpens the hairline; shaving cream and aftershave complete the detail.\n\nColour transforms mood as much as appearance. Highlights lift individual strands with bleach wrapped in foil. Lowlights deepen dimension. A balayage — hand-painted from mid-length to ends — produces a natural sun-kissed gradient. Ombré shifts dramatically from dark roots to lighter tips. A root touch-up covers regrowth between full-colour appointments. After bleaching, a toner neutralises unwanted brassiness. A colour wheel helps the stylist predict how pigments interact — blue cancels orange, purple cancels yellow.\n\nStyling converts a haircut into a finished look. A blow dryer with a diffuser attachment enhances natural waves without disturbing the curl pattern. A curling iron wraps smooth hair into spirals. A flat iron straightens or creates sleek waves depending on the angle. Hair rollers set volume while the client waits. The finished style is held in place with hair spray, shaped with gel or wax, given texture with mousse, or smoothed with serum. An updo, a ponytail, a bun, a braid, or loose waves — each requires a different sequence of heat, product, and pin placement.\n\nHair care products line the shelves behind the reception desk. Shampoo cleanses; conditioner softens. A mask provides deep weekly treatment. Oil nourishes dry ends. Dry shampoo absorbs oil between washes. A leave-in conditioner detangles without rinsing. Each product addresses a specific concern — frizz, breakage, colour fade, or scalp dryness.\n\nThe salon itself is designed around the styling station — a mirror, a counter for tools, and a hydraulic chair that adjusts height. The wash basin reclines the client's head into a sink with warm water. A scalp massage during the wash is both functional (distributing shampoo) and therapeutic. In the waiting area, a stack of magazines and an appointment book sit beside the tip jar.\n\nChemical treatments push transformation further. A perm solution restructures straight hair into permanent curls, followed by a neutraliser that locks the new shape. Extensions — clipped, glued, or sewn — add length. Cornrows and braids weave close to the scalp. The craft requires anatomy knowledge, chemistry awareness, and an understanding of identity — because few choices feel as personal as what sits on top of your head.",
+          "depth": 1,
+          "name": "Cut, Colour, Identity — The Language of the Hair Salon A hair salon is a theatre of transformation. A client walks in, sits in the salon chair, and a stylist fastens a cape around their shoulders, pressing a neck strip against the collar to catch loose hair. The consultation begins: trim or restyle? Layers or a blunt bob? Bangs or a side part? The mirror reflects what exists; the conversation imagines what could be. Cutting is the foundation. Scissors handle precision work — shaping layers, tapering ends, creating texture. A clipper buzzes through a fade or a buzz cut, while thinning shears remove bulk without shortening length. A razor creates soft, feathered edges. Sectioning clips hold hair in place as the stylist works through one section at a time. The comb — flat, wide-toothed, or tail — guides every cut. For men, a straight razor sharpens the hairline; shaving cream and aftershave complete the detail. Colour transforms mood as much as appearance. Highlights lift individual strands with bleach wrapped in foil. Lowlights deepen dimension. A balayage — hand-painted from mid-length to ends — produces a natural sun-kissed gradient. Ombré shifts dramatically from dark roots to lighter tips. A root touch-up covers regrowth between full-colour appointments. After bleaching, a toner neutralises unwanted brassiness. A colour wheel helps the stylist predict how pigments interact — blue cancels orange, purple cancels yellow. Styling converts a haircut into a finished look. A blow dryer with a diffuser attachment enhances natural waves without disturbing the curl pattern. A curling iron wraps smooth hair into spirals. A flat iron straightens or creates sleek waves depending on the angle. Hair rollers set volume while the client waits. The finished style is held in place with hair spray, shaped with gel or wax, given texture with mousse, or smoothed with serum. An updo, a ponytail, a bun, a braid, or loose waves — each requires a different sequence of heat, product, and pin placement. Hair care products line the shelves behind the reception desk. Shampoo cleanses; conditioner softens. A mask provides deep weekly treatment. Oil nourishes dry ends. Dry shampoo absorbs oil between washes. A leave-in conditioner detangles without rinsing. Each product addresses a specific concern — frizz, breakage, colour fade, or scalp dryness. The salon itself is designed around the styling station — a mirror, a counter for tools, and a hydraulic chair that adjusts height. The wash basin reclines the client's head into a sink with warm water. A scalp massage during the wash is both functional (distributing shampoo) and therapeutic. In the waiting area, a stack of magazines and an appointment book sit beside the tip jar. Chemical treatments push transformation further. A perm solution restructures straight hair into permanent curls, followed by a neutraliser that locks the new shape. Extensions — clipped, glued, or sewn — add length. Cornrows and braids weave close to the scalp. The craft requires anatomy knowledge, chemistry awareness, and an understanding of identity — because few choices feel as personal as what sits on top of your head."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Describe the full process a client experiences in a hair salon, from arrival to finished style.",
+          "depth": 1,
+          "name": "1. Describe the full process a client experiences in a hair salon, from arrival to finished style."
+        },
+        {
+          "text": "2. Compare highlights, balayage, and ombré. How do these colouring techniques differ in application and result?",
+          "depth": 1,
+          "name": "2. Compare highlights, balayage, and ombré. How do these colouring techniques differ in application and result?"
+        },
+        {
+          "text": "3. What role does chemistry play in hair salon services? Give specific examples from the passage.",
+          "depth": 1,
+          "name": "3. What role does chemistry play in hair salon services? Give specific examples from the passage."
+        },
+        {
+          "text": "4. Why does the author describe the hair salon as 'a theatre of transformation'? Do you find this metaphor effective?",
+          "depth": 1,
+          "name": "4. Why does the author describe the hair salon as 'a theatre of transformation'? Do you find this metaphor effective?"
+        },
+        {
+          "text": "5. The passage ends by saying 'few choices feel as personal as what sits on top of your head.' To what extent do you agree that hairstyle is tied to identity?",
+          "depth": 1,
+          "name": "5. The passage ends by saying 'few choices feel as personal as what sits on top of your head.' To what extent do you agree that hairstyle is tied to identity?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "556:1380",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "let your hair down",
+          "depth": 2,
+          "name": "let your hair down"
+        },
+        {
+          "text": "relax and enjoy yourself without worrying",
+          "depth": 2,
+          "name": "relax and enjoy yourself without worrying"
+        },
+        {
+          "text": "\"After months of stress, she finally let her hair down — literally untied her bun and asked for a fresh trim with layers.\"",
+          "depth": 2,
+          "name": "\"After months of stress, she finally let her hair down — literally untied her bun and asked for a fresh trim with layers.\""
+        },
+        {
+          "text": "a close shave",
+          "depth": 2,
+          "name": "a close shave"
+        },
+        {
+          "text": "a narrow escape from danger or disaster",
+          "depth": 2,
+          "name": "a narrow escape from danger or disaster"
+        },
+        {
+          "text": "\"That was a close shave — the stylist almost cut the bangs too short, but caught herself just in time.\"",
+          "depth": 2,
+          "name": "\"That was a close shave — the stylist almost cut the bangs too short, but caught herself just in time.\""
+        },
+        {
+          "text": "split hairs",
+          "depth": 2,
+          "name": "split hairs"
+        },
+        {
+          "text": "argue about very small, unimportant differences",
+          "depth": 2,
+          "name": "argue about very small, unimportant differences"
+        },
+        {
+          "text": "\"Stop splitting hairs — a bob and a pixie are very different styles, and the fade on the sides changes everything.\"",
+          "depth": 2,
+          "name": "\"Stop splitting hairs — a bob and a pixie are very different styles, and the fade on the sides changes everything.\""
+        },
+        {
+          "text": "hair-raising",
+          "depth": 2,
+          "name": "hair-raising"
+        },
+        {
+          "text": "extremely frightening or alarming",
+          "depth": 2,
+          "name": "extremely frightening or alarming"
+        },
+        {
+          "text": "\"The hair-raising moment when the blow dryer overheated next to the curling iron — everyone in the salon gasped.\"",
+          "depth": 2,
+          "name": "\"The hair-raising moment when the blow dryer overheated next to the curling iron — everyone in the salon gasped.\""
+        },
+        {
+          "text": "a cut above the rest",
+          "depth": 2,
+          "name": "a cut above the rest"
+        },
+        {
+          "text": "noticeably better than the competition",
+          "depth": 2,
+          "name": "noticeably better than the competition"
+        },
+        {
+          "text": "\"This salon is a cut above the rest — the braids, the extensions, and the updo work are all flawless.\"",
+          "depth": 2,
+          "name": "\"This salon is a cut above the rest — the braids, the extensions, and the updo work are all flawless.\""
+        },
+        {
+          "text": "keep it under your hat",
+          "depth": 2,
+          "name": "keep it under your hat"
+        },
+        {
+          "text": "keep something secret",
+          "depth": 2,
+          "name": "keep something secret"
+        },
+        {
+          "text": "\"Keep it under your hat, but I'm getting cornrows and a completely new look for the wedding — don't tell anyone.\"",
+          "depth": 2,
+          "name": "\"Keep it under your hat, but I'm getting cornrows and a completely new look for the wedding — don't tell anyone.\""
+        },
+        {
+          "text": "by a hair's breadth",
+          "depth": 2,
+          "name": "by a hair's breadth"
+        },
+        {
+          "text": "by a very small margin",
+          "depth": 2,
+          "name": "by a very small margin"
+        },
+        {
+          "text": "\"She won the style competition by a hair's breadth — her twist and pin technique edged out the waves category.\"",
+          "depth": 2,
+          "name": "\"She won the style competition by a hair's breadth — her twist and pin technique edged out the waves category.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "556:1412",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A customer discusses a new hairstyle with their stylist at the salon",
+          "depth": 1,
+          "name": "Scene: A customer discusses a new hairstyle with their stylist at the salon"
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "I want something different. I've had the same ponytail for years. What would suit my face shape?",
+          "depth": 2,
+          "name": "I want something different. I've had the same ponytail for years. What would suit my face shape?"
+        },
+        {
+          "text": "Stylist:",
+          "depth": 2,
+          "name": "Stylist:"
+        },
+        {
+          "text": "With your features, a bob with layers would look great. Or if you want to go shorter, a pixie with a side part.",
+          "depth": 2,
+          "name": "With your features, a bob with layers would look great. Or if you want to go shorter, a pixie with a side part."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "I'm not brave enough for a pixie yet. What about bangs?",
+          "depth": 2,
+          "name": "I'm not brave enough for a pixie yet. What about bangs?"
+        },
+        {
+          "text": "Stylist:",
+          "depth": 2,
+          "name": "Stylist:"
+        },
+        {
+          "text": "Bangs would frame your face nicely. I'd do a soft trim with layers that blend into the bangs. Want me to add some waves with the curling iron?",
+          "depth": 2,
+          "name": "Bangs would frame your face nicely. I'd do a soft trim with layers that blend into the bangs. Want me to add some waves with the curling iron?"
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "Yes! And can you do a blow dry at the end? My hair always looks flat when I do it myself.",
+          "depth": 2,
+          "name": "Yes! And can you do a blow dry at the end? My hair always looks flat when I do it myself."
+        },
+        {
+          "text": "Stylist:",
+          "depth": 2,
+          "name": "Stylist:"
+        },
+        {
+          "text": "Of course. I'll use the diffuser for volume. Do you straighten your hair often? A flat iron can damage it without heat protection.",
+          "depth": 2,
+          "name": "Of course. I'll use the diffuser for volume. Do you straighten your hair often? A flat iron can damage it without heat protection."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "Sometimes. What about for special occasions — can you do an updo or braids?",
+          "depth": 2,
+          "name": "Sometimes. What about for special occasions — can you do an updo or braids?"
+        },
+        {
+          "text": "Stylist:",
+          "depth": 2,
+          "name": "Stylist:"
+        },
+        {
+          "text": "Absolutely. I do updos, braids, twists, and even cornrows. For weddings, a bun with a few pins looks elegant.",
+          "depth": 2,
+          "name": "Absolutely. I do updos, braids, twists, and even cornrows. For weddings, a bun with a few pins looks elegant."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "My sister wants extensions. Do you do those here?",
+          "depth": 2,
+          "name": "My sister wants extensions. Do you do those here?"
+        },
+        {
+          "text": "Stylist:",
+          "depth": 2,
+          "name": "Stylist:"
+        },
+        {
+          "text": "Yes — clip-ins or bonded extensions. We also do wigs and hair nets for theatrical work. Let me start your trim now.",
+          "depth": 2,
+          "name": "Yes — clip-ins or bonded extensions. We also do wigs and hair nets for theatrical work. Let me start your trim now."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "Sounds perfect. Just don't give me a buzz cut — I want to keep some length!",
+          "depth": 2,
+          "name": "Sounds perfect. Just don't give me a buzz cut — I want to keep some length!"
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "556:1450",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I want to cut my hair. Can you recommend a good salon?\"",
+          "depth": 2,
+          "name": "❌ \"I want to cut my hair. Can you recommend a good salon?\""
+        },
+        {
+          "text": "✅ \"I want to get/have my hair cut. Can you recommend a good salon?\"",
+          "depth": 2,
+          "name": "✅ \"I want to get/have my hair cut. Can you recommend a good salon?\""
+        },
+        {
+          "text": "Causative 'have/get + object + past participle': 'I had my hair cut' (someone cut it for me). 'I cut my hair' means you did it yourself with scissors. This causative pattern applies to all salon/medical services: 'I had my nails done', 'I got my eyes tested', 'I had my teeth cleaned'.",
+          "depth": 2,
+          "name": "Causative 'have/get + object + past participle': 'I had my hair cut' (someone cut it for me). 'I cut my hair' means you did it yourself with scissors. This causative pattern applies to all salon/medical services: 'I had my nails done', 'I got my eyes tested', 'I had my teeth cleaned'."
+        },
+        {
+          "text": "❌ \"She has been dying her hair since she was sixteen.\"",
+          "depth": 2,
+          "name": "❌ \"She has been dying her hair since she was sixteen.\""
+        },
+        {
+          "text": "✅ \"She has been dyeing her hair since she was sixteen.\"",
+          "depth": 2,
+          "name": "✅ \"She has been dyeing her hair since she was sixteen.\""
+        },
+        {
+          "text": "'Dye' → 'dyeing' (colouring). 'Die' → 'dying' (ceasing to live). The 'e' is retained in 'dyeing' specifically to distinguish it from 'dying'. This is one of English's most commonly confused spelling pairs. 'The stylist is dyeing her hair blonde.' 'The flowers are dying from lack of water.'",
+          "depth": 2,
+          "name": "'Dye' → 'dyeing' (colouring). 'Die' → 'dying' (ceasing to live). The 'e' is retained in 'dyeing' specifically to distinguish it from 'dying'. This is one of English's most commonly confused spelling pairs. 'The stylist is dyeing her hair blonde.' 'The flowers are dying from lack of water.'"
+        },
+        {
+          "text": "❌ \"I'd like to make an appointment to do highlights, wouldn't I?\"",
+          "depth": 2,
+          "name": "❌ \"I'd like to make an appointment to do highlights, wouldn't I?\""
+        },
+        {
+          "text": "✅ \"I'd like to make an appointment to have highlights done, please.\"",
+          "depth": 2,
+          "name": "✅ \"I'd like to make an appointment to have highlights done, please.\""
+        },
+        {
+          "text": "Two issues: (1) Causative again — 'have highlights done', not 'do highlights' (unless you're the stylist). (2) Question tags must match the main clause's grammar — 'I'd like..., wouldn't I?' is grammatically possible but pragmatically odd when making a request. 'Please' or 'if possible' is the natural softener.",
+          "depth": 2,
+          "name": "Two issues: (1) Causative again — 'have highlights done', not 'do highlights' (unless you're the stylist). (2) Question tags must match the main clause's grammar — 'I'd like..., wouldn't I?' is grammatically possible but pragmatically odd when making a request. 'Please' or 'if possible' is the natural softener."
+        },
+        {
+          "text": "❌ \"My hair needs to cut. It's getting too long.\"",
+          "depth": 2,
+          "name": "❌ \"My hair needs to cut. It's getting too long.\""
+        },
+        {
+          "text": "✅ \"My hair needs cutting.\" / \"My hair needs to be cut.\"",
+          "depth": 2,
+          "name": "✅ \"My hair needs cutting.\" / \"My hair needs to be cut.\""
+        },
+        {
+          "text": "'Need + -ing' (active form, passive meaning): 'My hair needs cutting', 'The colour needs refreshing.' Alternatively: 'need + to be + past participle': 'needs to be cut.' Never 'needs to cut' — that implies the hair itself will do the cutting. This pattern also applies to 'want' and 'require' in formal contexts.",
+          "depth": 2,
+          "name": "'Need + -ing' (active form, passive meaning): 'My hair needs cutting', 'The colour needs refreshing.' Alternatively: 'need + to be + past participle': 'needs to be cut.' Never 'needs to cut' — that implies the hair itself will do the cutting. This pattern also applies to 'want' and 'require' in formal contexts."
+        },
+        {
+          "text": "❌ \"The stylist suggested me a bob cut that would suit my face shape.\"",
+          "depth": 2,
+          "name": "❌ \"The stylist suggested me a bob cut that would suit my face shape.\""
+        },
+        {
+          "text": "✅ \"The stylist suggested a bob cut that would suit my face shape.\"",
+          "depth": 2,
+          "name": "✅ \"The stylist suggested a bob cut that would suit my face shape.\""
+        },
+        {
+          "text": "'Suggest' does not take an indirect object before the thing suggested (*suggest me something). Correct patterns: 'suggest something (to someone)', 'suggest that someone do something', 'suggest doing something'. 'She suggested a bob to me.' 'She suggested that I try a bob.' Compare: 'recommend' follows the same rule — 'She recommended a bob', never *'recommended me a bob'.",
+          "depth": 2,
+          "name": "'Suggest' does not take an indirect object before the thing suggested (*suggest me something). Correct patterns: 'suggest something (to someone)', 'suggest that someone do something', 'suggest doing something'. 'She suggested a bob to me.' 'She suggested that I try a bob.' Compare: 'recommend' follows the same rule — 'She recommended a bob', never *'recommended me a bob'."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "556:1474",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how hair and grooming vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how hair and grooming vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "style",
+          "depth": 2,
+          "name": "style"
+        },
+        {
+          "text": "style / stylist / styling",
+          "depth": 2,
+          "name": "style / stylist / styling"
+        },
+        {
+          "text": "style",
+          "depth": 2,
+          "name": "style"
+        },
+        {
+          "text": "stylish / styled",
+          "depth": 2,
+          "name": "stylish / styled"
+        },
+        {
+          "text": "colour",
+          "depth": 2,
+          "name": "colour"
+        },
+        {
+          "text": "colour / colourist / colouring",
+          "depth": 2,
+          "name": "colour / colourist / colouring"
+        },
+        {
+          "text": "colour",
+          "depth": 2,
+          "name": "colour"
+        },
+        {
+          "text": "coloured / colourful",
+          "depth": 2,
+          "name": "coloured / colourful"
+        },
+        {
+          "text": "trim",
+          "depth": 2,
+          "name": "trim"
+        },
+        {
+          "text": "trim / trimming",
+          "depth": 2,
+          "name": "trim / trimming"
+        },
+        {
+          "text": "trim",
+          "depth": 2,
+          "name": "trim"
+        },
+        {
+          "text": "trimmed",
+          "depth": 2,
+          "name": "trimmed"
+        },
+        {
+          "text": "highlight",
+          "depth": 2,
+          "name": "highlight"
+        },
+        {
+          "text": "highlight / highlights",
+          "depth": 2,
+          "name": "highlight / highlights"
+        },
+        {
+          "text": "highlight",
+          "depth": 2,
+          "name": "highlight"
+        },
+        {
+          "text": "highlighted",
+          "depth": 2,
+          "name": "highlighted"
+        },
+        {
+          "text": "condition",
+          "depth": 2,
+          "name": "condition"
+        },
+        {
+          "text": "condition / conditioner",
+          "depth": 2,
+          "name": "condition / conditioner"
+        },
+        {
+          "text": "condition",
+          "depth": 2,
+          "name": "condition"
+        },
+        {
+          "text": "conditioned",
+          "depth": 2,
+          "name": "conditioned"
+        },
+        {
+          "text": "straighten",
+          "depth": 2,
+          "name": "straighten"
+        },
+        {
+          "text": "straightener / straightening",
+          "depth": 2,
+          "name": "straightener / straightening"
+        },
+        {
+          "text": "straighten",
+          "depth": 2,
+          "name": "straighten"
+        },
+        {
+          "text": "straight / straightened",
+          "depth": 2,
+          "name": "straight / straightened"
+        },
+        {
+          "text": "curl",
+          "depth": 2,
+          "name": "curl"
+        },
+        {
+          "text": "curl / curler / curling",
+          "depth": 2,
+          "name": "curl / curler / curling"
+        },
+        {
+          "text": "curl",
+          "depth": 2,
+          "name": "curl"
+        },
+        {
+          "text": "curly / curled",
+          "depth": 2,
+          "name": "curly / curled"
+        },
+        {
+          "text": "shampoo",
+          "depth": 2,
+          "name": "shampoo"
+        },
+        {
+          "text": "shampoo",
+          "depth": 2,
+          "name": "shampoo"
+        },
+        {
+          "text": "shampoo",
+          "depth": 2,
+          "name": "shampoo"
+        },
+        {
+          "text": "shampooed",
+          "depth": 2,
+          "name": "shampooed"
+        },
+        {
+          "text": "rinse",
+          "depth": 2,
+          "name": "rinse"
+        },
+        {
+          "text": "rinse",
+          "depth": 2,
+          "name": "rinse"
+        },
+        {
+          "text": "rinse",
+          "depth": 2,
+          "name": "rinse"
+        },
+        {
+          "text": "rinsed",
+          "depth": 2,
+          "name": "rinsed"
+        },
+        {
+          "text": "bleach",
+          "depth": 2,
+          "name": "bleach"
+        },
+        {
+          "text": "bleach / bleaching",
+          "depth": 2,
+          "name": "bleach / bleaching"
+        },
+        {
+          "text": "bleach",
+          "depth": 2,
+          "name": "bleach"
+        },
+        {
+          "text": "bleached",
+          "depth": 2,
+          "name": "bleached"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "556:1534",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The stylist fastened a __________ around the client's shoulders to catch loose hair.",
+          "depth": 1,
+          "name": "1. The stylist fastened a __________ around the client's shoulders to catch loose hair."
+        },
+        {
+          "text": "2.  A __________ creates soft, feathered edges on the hair ends.",
+          "depth": 1,
+          "name": "2. A __________ creates soft, feathered edges on the hair ends."
+        },
+        {
+          "text": "3.  After bleaching, a __________ neutralises unwanted yellow or orange tones.",
+          "depth": 1,
+          "name": "3. After bleaching, a __________ neutralises unwanted yellow or orange tones."
+        },
+        {
+          "text": "4.  She used __________ clips to hold sections of hair in place while cutting.",
+          "depth": 1,
+          "name": "4. She used __________ clips to hold sections of hair in place while cutting."
+        },
+        {
+          "text": "5.  A __________ — hand-painted from mid-length to ends — produces a natural gradient.",
+          "depth": 1,
+          "name": "5. A __________ — hand-painted from mid-length to ends — produces a natural gradient."
+        },
+        {
+          "text": "6.  The blow dryer's __________ attachment enhances natural curls without disturbing the pattern.",
+          "depth": 1,
+          "name": "6. The blow dryer's __________ attachment enhances natural curls without disturbing the pattern."
+        },
+        {
+          "text": "7.  He applied __________ to style his hair into a sleek, structured shape.",
+          "depth": 1,
+          "name": "7. He applied __________ to style his hair into a sleek, structured shape."
+        },
+        {
+          "text": "8.  A __________ solution restructures straight hair into permanent curls.",
+          "depth": 1,
+          "name": "8. A __________ solution restructures straight hair into permanent curls."
+        },
+        {
+          "text": "9.  __________ shampoo absorbs oil between washes without using water.",
+          "depth": 1,
+          "name": "9. __________ shampoo absorbs oil between washes without using water."
+        },
+        {
+          "text": "10. The hydraulic salon __________ adjusts height for both stylist and client comfort.",
+          "depth": 1,
+          "name": "10. The hydraulic salon __________ adjusts height for both stylist and client comfort."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. cape  2. razor  3. toner  4. sectioning  5. balayage  6. diffuser  7. gel/wax/pomade  8. perm  9. Dry  10. chair",
+          "depth": 2,
+          "name": "1. cape 2. razor 3. toner 4. sectioning 5. balayage 6. diffuser 7. gel/wax/pomade 8. perm 9. Dry 10. chair"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "556:1552",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Hairdresser vs Stylist vs Barber",
+          "depth": 2,
+          "name": "Hairdresser vs Stylist vs Barber"
+        },
+        {
+          "text": "'Hairdresser' = traditional term for someone who cuts and styles hair (any gender). 'Stylist' = more modern, often implies higher-end services. 'Barber' = traditionally men's short cuts and shaving. In practice, these boundaries are blurring — many salons serve all genders, and barbers now do longer styles too.",
+          "depth": 2,
+          "name": "'Hairdresser' = traditional term for someone who cuts and styles hair (any gender). 'Stylist' = more modern, often implies higher-end services. 'Barber' = traditionally men's short cuts and shaving. In practice, these boundaries are blurring — many salons serve all genders, and barbers now do longer styles too."
+        },
+        {
+          "text": "Tipping Culture at Salons",
+          "depth": 2,
+          "name": "Tipping Culture at Salons"
+        },
+        {
+          "text": "In the UK, tipping your hairdresser is appreciated but not obligatory — £2–5 or 10% is common. In the US, 15–20% is standard and expected. In much of Europe and the Middle East, rounding up the bill is sufficient. Some salons add a service charge, making tipping unnecessary.",
+          "depth": 2,
+          "name": "In the UK, tipping your hairdresser is appreciated but not obligatory — £2–5 or 10% is common. In the US, 15–20% is standard and expected. In much of Europe and the Middle East, rounding up the bill is sufficient. Some salons add a service charge, making tipping unnecessary."
+        },
+        {
+          "text": "The Hairdresser's as a Social Space",
+          "depth": 2,
+          "name": "The Hairdresser's as a Social Space"
+        },
+        {
+          "text": "In British culture, 'going to the hairdresser's' is as much a social event as a grooming one. Hairdressers are famously chatty — conversation about holidays, family, and daily life is expected. Some customers choose their hairdresser as much for the conversation as the cut. 'My hairdresser knows everything about me!'",
+          "depth": 2,
+          "name": "In British culture, 'going to the hairdresser's' is as much a social event as a grooming one. Hairdressers are famously chatty — conversation about holidays, family, and daily life is expected. Some customers choose their hairdresser as much for the conversation as the cut. 'My hairdresser knows everything about me!'"
+        },
+        {
+          "text": "Hijab-Friendly Salons",
+          "depth": 2,
+          "name": "Hijab-Friendly Salons"
+        },
+        {
+          "text": "In many cities worldwide, salons offer private rooms or women-only hours for clients who wear hijab and need privacy to have their hair styled. In Muslim-majority countries this is standard; in Western cities, it's an increasingly offered service. Some salons advertise as 'hijab-friendly' specifically.",
+          "depth": 2,
+          "name": "In many cities worldwide, salons offer private rooms or women-only hours for clients who wear hijab and need privacy to have their hair styled. In Muslim-majority countries this is standard; in Western cities, it's an increasingly offered service. Some salons advertise as 'hijab-friendly' specifically."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "556:1568",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "trim",
+          "depth": 2,
+          "name": "trim"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "hair ~, ~ the ends, quick ~",
+          "depth": 2,
+          "name": "hair ~, ~ the ends, quick ~"
+        },
+        {
+          "text": "highlights",
+          "depth": 2,
+          "name": "highlights"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "blonde ~, ~ foils, ~ colour",
+          "depth": 2,
+          "name": "blonde ~, ~ foils, ~ colour"
+        },
+        {
+          "text": "blow-dry",
+          "depth": 2,
+          "name": "blow-dry"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ hair, wash and ~, ~ brush",
+          "depth": 2,
+          "name": "~ hair, wash and ~, ~ brush"
+        },
+        {
+          "text": "scissors",
+          "depth": 2,
+          "name": "scissors"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "hair ~, ~ cut, sharp ~",
+          "depth": 2,
+          "name": "hair ~, ~ cut, sharp ~"
+        },
+        {
+          "text": "clippers",
+          "depth": 2,
+          "name": "clippers"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "electric ~, ~ guard, hair ~",
+          "depth": 2,
+          "name": "electric ~, ~ guard, hair ~"
+        },
+        {
+          "text": "conditioner",
+          "depth": 2,
+          "name": "conditioner"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "hair ~, deep ~, ~ treatment",
+          "depth": 2,
+          "name": "hair ~, deep ~, ~ treatment"
+        },
+        {
+          "text": "shampoo",
+          "depth": 2,
+          "name": "shampoo"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ bottle, ~ and rinse, dry ~",
+          "depth": 2,
+          "name": "~ bottle, ~ and rinse, dry ~"
+        },
+        {
+          "text": "layers",
+          "depth": 2,
+          "name": "layers"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ cut, add ~, long ~",
+          "depth": 2,
+          "name": "~ cut, add ~, long ~"
+        },
+        {
+          "text": "foils",
+          "depth": 2,
+          "name": "foils"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "~ highlights, wrap in ~, ~",
+          "depth": 2,
+          "name": "~ highlights, wrap in ~, ~"
+        },
+        {
+          "text": "scalp",
+          "depth": 2,
+          "name": "scalp"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ massage, dry ~, ~ treatment",
+          "depth": 2,
+          "name": "~ massage, dry ~, ~ treatment"
+        }
+      ]
+    }
+  }
+}

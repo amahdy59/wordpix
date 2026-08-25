@@ -1,0 +1,1671 @@
+{
+  "unitId": "harbor",
+  "name": "The Harbor",
+  "subtopics": [
+    {
+      "id": "vessels",
+      "title": "Vessels",
+      "wordIds": [
+        "cargo-ship",
+        "fishing-boat",
+        "sailboat",
+        "tugboat",
+        "ferry",
+        "yacht",
+        "kayak",
+        "canoe",
+        "speedboat",
+        "lifeboat",
+        "barge",
+        "container-ship"
+      ]
+    },
+    {
+      "id": "harbor-infrastructure",
+      "title": "Harbor Infrastructure",
+      "wordIds": [
+        "dock",
+        "pier",
+        "wharf",
+        "jetty",
+        "breakwater",
+        "lighthouse",
+        "harbor-master-s-office",
+        "marina",
+        "dry-dock",
+        "shipyard"
+      ]
+    },
+    {
+      "id": "cargo-loading",
+      "title": "Cargo & Loading",
+      "wordIds": [
+        "shipping-container",
+        "crane",
+        "forklift",
+        "pallet",
+        "cargo-net",
+        "loading-ramp",
+        "warehouse",
+        "freight",
+        "anchor",
+        "mooring-line"
+      ]
+    },
+    {
+      "id": "navigation",
+      "title": "Navigation",
+      "wordIds": [
+        "buoy",
+        "beacon",
+        "compass",
+        "chart",
+        "radar",
+        "radio",
+        "binoculars",
+        "flag",
+        "signal-light",
+        "horn"
+      ]
+    },
+    {
+      "id": "fishing",
+      "title": "Fishing",
+      "wordIds": [
+        "fishing-rod",
+        "fishing-net",
+        "tackle-box",
+        "bait",
+        "hook",
+        "reel",
+        "cooler",
+        "fish-basket",
+        "waders",
+        "life-jacket"
+      ]
+    },
+    {
+      "id": "harbor-life",
+      "title": "Harbor Life",
+      "wordIds": [
+        "seagull",
+        "pelican",
+        "seal",
+        "crab",
+        "lobster-trap",
+        "rope",
+        "chain",
+        "barnacle",
+        "tide",
+        "wave",
+        "tanker",
+        "submarine",
+        "container",
+        "captain",
+        "sailor",
+        "cargo",
+        "navigation",
+        "shipping-lane"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "cargo-ship",
+      "label": "Cargo Ship",
+      "ipa": "/ˈkɑːrɡoʊ ʃɪp/",
+      "cefr": "B2",
+      "imageNodeId": "45:7911"
+    },
+    {
+      "kind": "card",
+      "id": "fishing-boat",
+      "label": "Fishing Boat",
+      "ipa": "/ˈfɪʃɪŋ boʊt/",
+      "cefr": "B2",
+      "imageNodeId": "45:7915"
+    },
+    {
+      "kind": "card",
+      "id": "sailboat",
+      "label": "Sailboat",
+      "ipa": "/ˈseɪlˌboʊt/",
+      "cefr": "B1",
+      "imageNodeId": "45:7919"
+    },
+    {
+      "kind": "card",
+      "id": "tugboat",
+      "label": "Tugboat",
+      "ipa": "/ˈtʌɡˌboʊt/",
+      "cefr": "B1",
+      "imageNodeId": "45:7923"
+    },
+    {
+      "kind": "card",
+      "id": "ferry",
+      "label": "Ferry",
+      "ipa": "/ˈfɛri/",
+      "cefr": "B1",
+      "imageNodeId": "45:7927"
+    },
+    {
+      "kind": "card",
+      "id": "yacht",
+      "label": "Yacht",
+      "ipa": "/jɒt/",
+      "cefr": "B1",
+      "imageNodeId": "45:7931"
+    },
+    {
+      "kind": "card",
+      "id": "kayak",
+      "label": "Kayak",
+      "ipa": "/ˈkaɪˌæk/",
+      "cefr": "B1",
+      "imageNodeId": "45:7935"
+    },
+    {
+      "kind": "card",
+      "id": "canoe",
+      "label": "Canoe",
+      "ipa": "/kəˈnuː/",
+      "cefr": "B1",
+      "imageNodeId": "45:7939"
+    },
+    {
+      "kind": "card",
+      "id": "speedboat",
+      "label": "Speedboat",
+      "ipa": "/ˈspiːdˌboʊt/",
+      "cefr": "B1",
+      "imageNodeId": "45:7943"
+    },
+    {
+      "kind": "card",
+      "id": "lifeboat",
+      "label": "Lifeboat",
+      "ipa": "/ˈlaɪfˌboʊt/",
+      "cefr": "B1",
+      "imageNodeId": "45:7947"
+    },
+    {
+      "kind": "card",
+      "id": "barge",
+      "label": "Barge",
+      "ipa": "/bɑːrdʒ/",
+      "cefr": "B1",
+      "imageNodeId": "45:7951"
+    },
+    {
+      "kind": "card",
+      "id": "container-ship",
+      "label": "Container Ship",
+      "ipa": "/kənˈteɪnər ʃɪp/",
+      "cefr": "B2",
+      "imageNodeId": "45:7955"
+    },
+    {
+      "kind": "card",
+      "id": "dock",
+      "label": "Dock",
+      "ipa": "/dɒk/",
+      "cefr": "B1",
+      "imageNodeId": "45:7964"
+    },
+    {
+      "kind": "card",
+      "id": "pier",
+      "label": "Pier",
+      "ipa": "/pɪər/",
+      "cefr": "B1",
+      "imageNodeId": "45:7968"
+    },
+    {
+      "kind": "card",
+      "id": "wharf",
+      "label": "Wharf",
+      "ipa": "/wɔːrf/",
+      "cefr": "B1",
+      "imageNodeId": "45:7972"
+    },
+    {
+      "kind": "card",
+      "id": "jetty",
+      "label": "Jetty",
+      "ipa": "/ˈdʒɛti/",
+      "cefr": "B1",
+      "imageNodeId": "45:7976"
+    },
+    {
+      "kind": "card",
+      "id": "breakwater",
+      "label": "Breakwater",
+      "ipa": "/ˈbreɪkˌwɔːtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:7980"
+    },
+    {
+      "kind": "card",
+      "id": "lighthouse",
+      "label": "Lighthouse",
+      "ipa": "/ˈlaɪtˌhaʊs/",
+      "cefr": "B2",
+      "imageNodeId": "45:7984"
+    },
+    {
+      "kind": "card",
+      "id": "harbor-master-s-office",
+      "label": "Harbor Master's Office",
+      "ipa": "/ˈhɑːrbər ˈmæstərz ˈɒfɪs/",
+      "cefr": "C1",
+      "imageNodeId": "45:7988"
+    },
+    {
+      "kind": "card",
+      "id": "marina",
+      "label": "Marina",
+      "ipa": "/məˈriːnə/",
+      "cefr": "B1",
+      "imageNodeId": "45:7992"
+    },
+    {
+      "kind": "card",
+      "id": "dry-dock",
+      "label": "Dry Dock",
+      "ipa": "/draɪ dɒk/",
+      "cefr": "B2",
+      "imageNodeId": "45:7996"
+    },
+    {
+      "kind": "card",
+      "id": "shipyard",
+      "label": "Shipyard",
+      "ipa": "/ˈʃɪpˌjɑːrd/",
+      "cefr": "B1",
+      "imageNodeId": "45:8000"
+    },
+    {
+      "kind": "card",
+      "id": "shipping-container",
+      "label": "Shipping Container",
+      "ipa": "/ˈʃɪpɪŋ kənˈteɪnər/",
+      "cefr": "C1",
+      "imageNodeId": "45:8009"
+    },
+    {
+      "kind": "card",
+      "id": "crane",
+      "label": "Crane",
+      "ipa": "/kreɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:8013"
+    },
+    {
+      "kind": "card",
+      "id": "forklift",
+      "label": "Forklift",
+      "ipa": "/ˈfɔːrkˌlɪft/",
+      "cefr": "B1",
+      "imageNodeId": "45:8017"
+    },
+    {
+      "kind": "card",
+      "id": "pallet",
+      "label": "Pallet",
+      "ipa": "/ˈpælɪt/",
+      "cefr": "B1",
+      "imageNodeId": "45:8021"
+    },
+    {
+      "kind": "card",
+      "id": "cargo-net",
+      "label": "Cargo Net",
+      "ipa": "/ˈkɑːrɡoʊ nɛt/",
+      "cefr": "B2",
+      "imageNodeId": "45:8025"
+    },
+    {
+      "kind": "card",
+      "id": "loading-ramp",
+      "label": "Loading Ramp",
+      "ipa": "/ˈloʊdɪŋ ræmp/",
+      "cefr": "B2",
+      "imageNodeId": "45:8029"
+    },
+    {
+      "kind": "card",
+      "id": "warehouse",
+      "label": "Warehouse",
+      "ipa": "/ˈwɛərˌhaʊs/",
+      "cefr": "B1",
+      "imageNodeId": "45:8033"
+    },
+    {
+      "kind": "card",
+      "id": "freight",
+      "label": "Freight",
+      "ipa": "/freɪt/",
+      "cefr": "B1",
+      "imageNodeId": "45:8037"
+    },
+    {
+      "kind": "card",
+      "id": "anchor",
+      "label": "Anchor",
+      "ipa": "/ˈæŋkər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8041"
+    },
+    {
+      "kind": "card",
+      "id": "mooring-line",
+      "label": "Mooring Line",
+      "ipa": "/ˈmʊərɪŋ laɪn/",
+      "cefr": "B2",
+      "imageNodeId": "45:8045"
+    },
+    {
+      "kind": "card",
+      "id": "buoy",
+      "label": "Buoy",
+      "ipa": "/ˈbɔɪ/",
+      "cefr": "B1",
+      "imageNodeId": "45:8054"
+    },
+    {
+      "kind": "card",
+      "id": "beacon",
+      "label": "Beacon",
+      "ipa": "/ˈbiːkən/",
+      "cefr": "B1",
+      "imageNodeId": "45:8058"
+    },
+    {
+      "kind": "card",
+      "id": "compass",
+      "label": "Compass",
+      "ipa": "/ˈkʌmpəs/",
+      "cefr": "B1",
+      "imageNodeId": "45:8062"
+    },
+    {
+      "kind": "card",
+      "id": "chart",
+      "label": "Chart",
+      "ipa": "/tʃɑːrt/",
+      "cefr": "B1",
+      "imageNodeId": "45:8066"
+    },
+    {
+      "kind": "card",
+      "id": "radar",
+      "label": "Radar",
+      "ipa": "/ˈreɪdɑːr/",
+      "cefr": "B1",
+      "imageNodeId": "45:8070"
+    },
+    {
+      "kind": "card",
+      "id": "radio",
+      "label": "Radio",
+      "ipa": "/ˈreɪdiˌoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "45:8074"
+    },
+    {
+      "kind": "card",
+      "id": "binoculars",
+      "label": "Binoculars",
+      "ipa": "/bɪˈnɒkjʊlərz/",
+      "cefr": "B2",
+      "imageNodeId": "45:8078"
+    },
+    {
+      "kind": "card",
+      "id": "flag",
+      "label": "Flag",
+      "ipa": "/flæɡ/",
+      "cefr": "B1",
+      "imageNodeId": "45:8082"
+    },
+    {
+      "kind": "card",
+      "id": "signal-light",
+      "label": "Signal Light",
+      "ipa": "/ˈsɪɡnəl laɪt/",
+      "cefr": "B2",
+      "imageNodeId": "45:8086"
+    },
+    {
+      "kind": "card",
+      "id": "horn",
+      "label": "Horn",
+      "ipa": "/hɔːrn/",
+      "cefr": "B1",
+      "imageNodeId": "45:8090"
+    },
+    {
+      "kind": "card",
+      "id": "fishing-rod",
+      "label": "Fishing Rod",
+      "ipa": "/ˈfɪʃɪŋ rɒd/",
+      "cefr": "B2",
+      "imageNodeId": "45:8099"
+    },
+    {
+      "kind": "card",
+      "id": "fishing-net",
+      "label": "Fishing Net",
+      "ipa": "/ˈfɪʃɪŋ nɛt/",
+      "cefr": "B2",
+      "imageNodeId": "45:8103"
+    },
+    {
+      "kind": "card",
+      "id": "tackle-box",
+      "label": "Tackle Box",
+      "ipa": "/ˈtækəl bɒks/",
+      "cefr": "B2",
+      "imageNodeId": "45:8107"
+    },
+    {
+      "kind": "card",
+      "id": "bait",
+      "label": "Bait",
+      "ipa": "/beɪt/",
+      "cefr": "B1",
+      "imageNodeId": "45:8111"
+    },
+    {
+      "kind": "card",
+      "id": "hook",
+      "label": "Hook",
+      "ipa": "/hʊk/",
+      "cefr": "B1",
+      "imageNodeId": "45:8115"
+    },
+    {
+      "kind": "card",
+      "id": "reel",
+      "label": "Reel",
+      "ipa": "/riːl/",
+      "cefr": "B1",
+      "imageNodeId": "45:8119"
+    },
+    {
+      "kind": "card",
+      "id": "cooler",
+      "label": "Cooler",
+      "ipa": "/ˈkuːlər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8123"
+    },
+    {
+      "kind": "card",
+      "id": "fish-basket",
+      "label": "Fish Basket",
+      "ipa": "/fɪʃ ˈbæskɪt/",
+      "cefr": "B2",
+      "imageNodeId": "45:8127"
+    },
+    {
+      "kind": "card",
+      "id": "waders",
+      "label": "Waders",
+      "ipa": "/ˈweɪdərz/",
+      "cefr": "B1",
+      "imageNodeId": "45:8131"
+    },
+    {
+      "kind": "card",
+      "id": "life-jacket",
+      "label": "Life Jacket",
+      "ipa": "/laɪf ˈdʒækɪt/",
+      "cefr": "B2",
+      "imageNodeId": "45:8135"
+    },
+    {
+      "kind": "card",
+      "id": "seagull",
+      "label": "Seagull",
+      "ipa": "/ˈsiːˌɡʌl/",
+      "cefr": "B1",
+      "imageNodeId": "45:8144"
+    },
+    {
+      "kind": "card",
+      "id": "pelican",
+      "label": "Pelican",
+      "ipa": "/ˈpɛlɪkən/",
+      "cefr": "B1",
+      "imageNodeId": "45:8148"
+    },
+    {
+      "kind": "card",
+      "id": "seal",
+      "label": "Seal",
+      "ipa": "/siːl/",
+      "cefr": "B1",
+      "imageNodeId": "45:8152"
+    },
+    {
+      "kind": "card",
+      "id": "crab",
+      "label": "Crab",
+      "ipa": "/kræb/",
+      "cefr": "B1",
+      "imageNodeId": "45:8156"
+    },
+    {
+      "kind": "card",
+      "id": "lobster-trap",
+      "label": "Lobster Trap",
+      "ipa": "/ˈlɒbstər træp/",
+      "cefr": "B2",
+      "imageNodeId": "45:8160"
+    },
+    {
+      "kind": "card",
+      "id": "rope",
+      "label": "Rope",
+      "ipa": "/roʊp/",
+      "cefr": "B1",
+      "imageNodeId": "45:8164"
+    },
+    {
+      "kind": "card",
+      "id": "chain",
+      "label": "Chain",
+      "ipa": "/tʃeɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:8168"
+    },
+    {
+      "kind": "card",
+      "id": "barnacle",
+      "label": "Barnacle",
+      "ipa": "/ˈbɑːrnəkəl/",
+      "cefr": "B1",
+      "imageNodeId": "45:8172"
+    },
+    {
+      "kind": "card",
+      "id": "tide",
+      "label": "Tide",
+      "ipa": "/taɪd/",
+      "cefr": "B1",
+      "imageNodeId": "45:8176"
+    },
+    {
+      "kind": "card",
+      "id": "wave",
+      "label": "Wave",
+      "ipa": "/weɪv/",
+      "cefr": "B1",
+      "imageNodeId": "45:8180"
+    },
+    {
+      "kind": "card",
+      "id": "tanker",
+      "label": "Tanker",
+      "ipa": "/ˈtæŋkər/",
+      "cefr": "B1",
+      "imageNodeId": "39:6877"
+    },
+    {
+      "kind": "card",
+      "id": "submarine",
+      "label": "Submarine",
+      "ipa": "/ˌsʌbməˈriːn/",
+      "cefr": "B1",
+      "imageNodeId": "39:6885"
+    },
+    {
+      "kind": "card",
+      "id": "container",
+      "label": "Container",
+      "ipa": "/kənˈteɪnər/",
+      "cefr": "B1",
+      "imageNodeId": "39:6920"
+    },
+    {
+      "kind": "card",
+      "id": "captain",
+      "label": "Captain",
+      "ipa": "/ˈkæptɪn/",
+      "cefr": "B1",
+      "imageNodeId": "39:6927"
+    },
+    {
+      "kind": "card",
+      "id": "sailor",
+      "label": "Sailor",
+      "ipa": "/ˈseɪlər/",
+      "cefr": "B1",
+      "imageNodeId": "39:6931"
+    },
+    {
+      "kind": "card",
+      "id": "cargo",
+      "label": "Cargo",
+      "ipa": "/ˈkɑːrɡoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "39:6935"
+    },
+    {
+      "kind": "card",
+      "id": "navigation",
+      "label": "Navigation",
+      "ipa": "/ˌnævɪˈɡeɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "39:6939"
+    },
+    {
+      "kind": "card",
+      "id": "shipping-lane",
+      "label": "Shipping Lane",
+      "ipa": "/ˈʃɪpɪŋ leɪn/",
+      "cefr": "B2",
+      "imageNodeId": "39:6951"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "552:542",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "552:544",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2 · Topic: The Harbor",
+          "depth": 1,
+          "name": "Level: B2 · Topic: The Harbor"
+        },
+        {
+          "text": "Where the Sea Meets Industry — A Day at the Harbor\n\nA harbor is where commerce meets the ocean. It is both a workplace and a gateway — a place where goods arrive from distant continents and local fishing boats return with the morning catch. The activity never truly stops; it simply changes rhythm with the tide.\n\nThe largest vessels in the harbor are cargo ships and container ships — enormous steel structures that carry thousands of shipping containers stacked on deck. A tanker transports oil or chemicals in sealed compartments below the waterline. A barge — flat-bottomed and engineered for shallow water — moves freight along rivers and canals. Each vessel is guided into position by a tugboat, a small but powerful craft that pushes or pulls ships that cannot manoeuvre in tight spaces. A ferry carries passengers and vehicles between fixed points. A sailboat tilts in the wind near the marina, while a yacht gleams at a private berth.\n\nThe infrastructure is built for heavy lifting. A dock is the structure where ships are loaded and unloaded. A pier extends into the water to provide additional berthing. A wharf runs parallel to the shoreline. A jetty projects outward to protect the harbor from waves — together with the breakwater, it calms the water inside. A lighthouse warns approaching vessels of rocks and shallow water. The harbor master's office coordinates all traffic. A dry dock allows ships to be lifted out of the water for hull repairs. A shipyard builds new vessels.\n\nLoading and unloading is a choreography of machines. A crane lifts containers from the ship's deck and places them on the dock. A forklift moves pallets of goods into the warehouse. Cargo is secured in cargo nets during transfer. A loading ramp allows vehicles to drive directly onto a ferry. Freight is sorted, documented, and dispatched within hours.\n\nNavigation equipment keeps everything safe. A compass and chart are the oldest tools. Radar detects other vessels in fog. A radio connects the bridge to the harbor master. Binoculars scan the horizon. A buoy marks safe channels. A beacon flashes at the harbor entrance. Signal lights and flags communicate between ships. A horn sounds in poor visibility.\n\nSmaller boats occupy the edges. A fishing boat returns with its catch — a cooler and fish basket full. A fisherman's tackle box holds hooks, bait, and a reel. A fishing net dries on the pier. Waders hang beside a life jacket. A kayak and a canoe are pulled up on the beach. A speedboat waits at a floating dock. A lifeboat sits ready in its davit.\n\nThe harbor's wildlife is inseparable from its character. A seagull circles overhead. A pelican waits on a post. A seal surfaces near the fish market. A crab moves sideways across the rocks. A lobster trap sits stacked on the wharf. Barnacles cover every surface below the waterline. A mooring line — thick rope connecting ship to shore — is wrapped around a bollard. An anchor chain rattles as a vessel prepares to depart.\n\nThe tide rises and falls twice a day, reshaping the harbor's geometry. A wave breaks against the breakwater. The shipping lane — a marked corridor of deep water — guides vessels safely in and out. The captain gives orders. The sailor adjusts the lines. And the harbor continues its ancient, essential work: connecting land to sea, and one economy to another.",
+          "depth": 1,
+          "name": "Where the Sea Meets Industry — A Day at the Harbor A harbor is where commerce meets the ocean. It is both a workplace and a gateway — a place where goods arrive from distant continents and local fishing boats return with the morning catch. The activity never truly stops; it simply changes rhythm with the tide. The largest vessels in the harbor are cargo ships and container ships — enormous steel structures that carry thousands of shipping containers stacked on deck. A tanker transports oil or chemicals in sealed compartments below the waterline. A barge — flat-bottomed and engineered for shallow water — moves freight along rivers and canals. Each vessel is guided into position by a tugboat, a small but powerful craft that pushes or pulls ships that cannot manoeuvre in tight spaces. A ferry carries passengers and vehicles between fixed points. A sailboat tilts in the wind near the marina, while a yacht gleams at a private berth. The infrastructure is built for heavy lifting. A dock is the structure where ships are loaded and unloaded. A pier extends into the water to provide additional berthing. A wharf runs parallel to the shoreline. A jetty projects outward to protect the harbor from waves — together with the breakwater, it calms the water inside. A lighthouse warns approaching vessels of rocks and shallow water. The harbor master's office coordinates all traffic. A dry dock allows ships to be lifted out of the water for hull repairs. A shipyard builds new vessels. Loading and unloading is a choreography of machines. A crane lifts containers from the ship's deck and places them on the dock. A forklift moves pallets of goods into the warehouse. Cargo is secured in cargo nets during transfer. A loading ramp allows vehicles to drive directly onto a ferry. Freight is sorted, documented, and dispatched within hours. Navigation equipment keeps everything safe. A compass and chart are the oldest tools. Radar detects other vessels in fog. A radio connects the bridge to the harbor master. Binoculars scan the horizon. A buoy marks safe channels. A beacon flashes at the harbor entrance. Signal lights and flags communicate between ships. A horn sounds in poor visibility. Smaller boats occupy the edges. A fishing boat returns with its catch — a cooler and fish basket full. A fisherman's tackle box holds hooks, bait, and a reel. A fishing net dries on the pier. Waders hang beside a life jacket. A kayak and a canoe are pulled up on the beach. A speedboat waits at a floating dock. A lifeboat sits ready in its davit. The harbor's wildlife is inseparable from its character. A seagull circles overhead. A pelican waits on a post. A seal surfaces near the fish market. A crab moves sideways across the rocks. A lobster trap sits stacked on the wharf. Barnacles cover every surface below the waterline. A mooring line — thick rope connecting ship to shore — is wrapped around a bollard. An anchor chain rattles as a vessel prepares to depart. The tide rises and falls twice a day, reshaping the harbor's geometry. A wave breaks against the breakwater. The shipping lane — a marked corridor of deep water — guides vessels safely in and out. The captain gives orders. The sailor adjusts the lines. And the harbor continues its ancient, essential work: connecting land to sea, and one economy to another."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What is the difference between a dock, a pier, a wharf, and a jetty? Explain their functions.",
+          "depth": 1,
+          "name": "1. What is the difference between a dock, a pier, a wharf, and a jetty? Explain their functions."
+        },
+        {
+          "text": "2. How do a breakwater and a lighthouse contribute to harbor safety?",
+          "depth": 1,
+          "name": "2. How do a breakwater and a lighthouse contribute to harbor safety?"
+        },
+        {
+          "text": "3. Describe the process of unloading cargo from a container ship, mentioning at least four pieces of equipment.",
+          "depth": 1,
+          "name": "3. Describe the process of unloading cargo from a container ship, mentioning at least four pieces of equipment."
+        },
+        {
+          "text": "4. What navigation tools does the passage mention? Which are traditional and which are modern?",
+          "depth": 1,
+          "name": "4. What navigation tools does the passage mention? Which are traditional and which are modern?"
+        },
+        {
+          "text": "5. How does the passage describe the relationship between the harbor's industrial activity and its wildlife?",
+          "depth": 1,
+          "name": "5. How does the passage describe the relationship between the harbor's industrial activity and its wildlife?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "552:557",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "in the same boat",
+          "depth": 2,
+          "name": "in the same boat"
+        },
+        {
+          "text": "in the same difficult situation as someone else",
+          "depth": 2,
+          "name": "in the same difficult situation as someone else"
+        },
+        {
+          "text": "\"All the fishing boats are stuck in the harbour because of the storm — we're all in the same boat.\"",
+          "depth": 2,
+          "name": "\"All the fishing boats are stuck in the harbour because of the storm — we're all in the same boat.\""
+        },
+        {
+          "text": "rock the boat",
+          "depth": 2,
+          "name": "rock the boat"
+        },
+        {
+          "text": "cause trouble or disturb a stable situation",
+          "depth": 2,
+          "name": "cause trouble or disturb a stable situation"
+        },
+        {
+          "text": "\"The new harbour master rocked the boat by changing the docking rules for every vessel at the pier.\"",
+          "depth": 2,
+          "name": "\"The new harbour master rocked the boat by changing the docking rules for every vessel at the pier.\""
+        },
+        {
+          "text": "weather the storm",
+          "depth": 2,
+          "name": "weather the storm"
+        },
+        {
+          "text": "survive a difficult period successfully",
+          "depth": 2,
+          "name": "survive a difficult period successfully"
+        },
+        {
+          "text": "\"The old lighthouse has weathered countless storms — it's been guiding ships past the breakwater for a century.\"",
+          "depth": 2,
+          "name": "\"The old lighthouse has weathered countless storms — it's been guiding ships past the breakwater for a century.\""
+        },
+        {
+          "text": "plain sailing",
+          "depth": 2,
+          "name": "plain sailing"
+        },
+        {
+          "text": "easy and without problems",
+          "depth": 2,
+          "name": "easy and without problems"
+        },
+        {
+          "text": "\"Once the tugboat guided the cargo ship past the jetty, the rest of the journey was plain sailing.\"",
+          "depth": 2,
+          "name": "\"Once the tugboat guided the cargo ship past the jetty, the rest of the journey was plain sailing.\""
+        },
+        {
+          "text": "know the ropes",
+          "depth": 2,
+          "name": "know the ropes"
+        },
+        {
+          "text": "know how things are done; be experienced",
+          "depth": 2,
+          "name": "know how things are done; be experienced"
+        },
+        {
+          "text": "\"An experienced sailor knows the ropes — how to tie a mooring line, read a chart, and use a compass.\"",
+          "depth": 2,
+          "name": "\"An experienced sailor knows the ropes — how to tie a mooring line, read a chart, and use a compass.\""
+        },
+        {
+          "text": "miss the boat",
+          "depth": 2,
+          "name": "miss the boat"
+        },
+        {
+          "text": "miss an opportunity by being too slow",
+          "depth": 2,
+          "name": "miss an opportunity by being too slow"
+        },
+        {
+          "text": "\"We missed the boat — the ferry left the dock five minutes before we arrived at the wharf.\"",
+          "depth": 2,
+          "name": "\"We missed the boat — the ferry left the dock five minutes before we arrived at the wharf.\""
+        },
+        {
+          "text": "anchor (figuratively)",
+          "depth": 2,
+          "name": "anchor (figuratively)"
+        },
+        {
+          "text": "a person or thing that provides stability",
+          "depth": 2,
+          "name": "a person or thing that provides stability"
+        },
+        {
+          "text": "\"The harbour master's office is the anchor of the whole operation — coordinating every ship, buoy, and beacon.\"",
+          "depth": 2,
+          "name": "\"The harbour master's office is the anchor of the whole operation — coordinating every ship, buoy, and beacon.\""
+        },
+        {
+          "text": "give someone a wide berth",
+          "depth": 2,
+          "name": "give someone a wide berth"
+        },
+        {
+          "text": "stay far away from someone or something",
+          "depth": 2,
+          "name": "stay far away from someone or something"
+        },
+        {
+          "text": "\"Give the tanker a wide berth — it's carrying hazardous cargo and needs clear space in the shipping lane.\"",
+          "depth": 2,
+          "name": "\"Give the tanker a wide berth — it's carrying hazardous cargo and needs clear space in the shipping lane.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "552:593",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A harbour master explaining port operations to a visiting journalist on the dock",
+          "depth": 1,
+          "name": "Scene: A harbour master explaining port operations to a visiting journalist on the dock"
+        },
+        {
+          "text": "Journalist:",
+          "depth": 2,
+          "name": "Journalist:"
+        },
+        {
+          "text": "How many ships pass through this harbour every day?",
+          "depth": 2,
+          "name": "How many ships pass through this harbour every day?"
+        },
+        {
+          "text": "Harbour Master:",
+          "depth": 2,
+          "name": "Harbour Master:"
+        },
+        {
+          "text": "Between thirty and fifty. Container ships, tankers, cargo ships, and ferries. The tugboat guides the larger ones to the dock.",
+          "depth": 2,
+          "name": "Between thirty and fifty. Container ships, tankers, cargo ships, and ferries. The tugboat guides the larger ones to the dock."
+        },
+        {
+          "text": "Journalist:",
+          "depth": 2,
+          "name": "Journalist:"
+        },
+        {
+          "text": "What's the difference between the pier, the wharf, and the jetty?",
+          "depth": 2,
+          "name": "What's the difference between the pier, the wharf, and the jetty?"
+        },
+        {
+          "text": "Harbour Master:",
+          "depth": 2,
+          "name": "Harbour Master:"
+        },
+        {
+          "text": "The pier extends into the water. The wharf runs along the shore. The jetty — and the breakwater beyond it — protects the harbour from waves.",
+          "depth": 2,
+          "name": "The pier extends into the water. The wharf runs along the shore. The jetty — and the breakwater beyond it — protects the harbour from waves."
+        },
+        {
+          "text": "Journalist:",
+          "depth": 2,
+          "name": "Journalist:"
+        },
+        {
+          "text": "I can see the crane lifting containers. Where do they go?",
+          "depth": 2,
+          "name": "I can see the crane lifting containers. Where do they go?"
+        },
+        {
+          "text": "Harbour Master:",
+          "depth": 2,
+          "name": "Harbour Master:"
+        },
+        {
+          "text": "Onto the dock, then a forklift moves them to the warehouse. The loading ramp is for vehicles driving onto the ferry.",
+          "depth": 2,
+          "name": "Onto the dock, then a forklift moves them to the warehouse. The loading ramp is for vehicles driving onto the ferry."
+        },
+        {
+          "text": "Journalist:",
+          "depth": 2,
+          "name": "Journalist:"
+        },
+        {
+          "text": "What's the lighthouse for if modern ships have radar?",
+          "depth": 2,
+          "name": "What's the lighthouse for if modern ships have radar?"
+        },
+        {
+          "text": "Harbour Master:",
+          "depth": 2,
+          "name": "Harbour Master:"
+        },
+        {
+          "text": "Radar can fail. And small vessels — sailboats, kayaks, fishing boats — don't always carry it. The lighthouse, the buoys, and the beacon are still essential.",
+          "depth": 2,
+          "name": "Radar can fail. And small vessels — sailboats, kayaks, fishing boats — don't always carry it. The lighthouse, the buoys, and the beacon are still essential."
+        },
+        {
+          "text": "Journalist:",
+          "depth": 2,
+          "name": "Journalist:"
+        },
+        {
+          "text": "I can see a seal near the fishing boats!",
+          "depth": 2,
+          "name": "I can see a seal near the fishing boats!"
+        },
+        {
+          "text": "Harbour Master:",
+          "depth": 2,
+          "name": "Harbour Master:"
+        },
+        {
+          "text": "They follow the catch. You'll also see seagulls and pelicans. The barnacles on the mooring line tell you the tide level.",
+          "depth": 2,
+          "name": "They follow the catch. You'll also see seagulls and pelicans. The barnacles on the mooring line tell you the tide level."
+        },
+        {
+          "text": "Journalist:",
+          "depth": 2,
+          "name": "Journalist:"
+        },
+        {
+          "text": "What happens in the dry dock over there?",
+          "depth": 2,
+          "name": "What happens in the dry dock over there?"
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "552:631",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The cargo ship was arrived at the harbor yesterday morning.\"",
+          "depth": 2,
+          "name": "❌ \"The cargo ship was arrived at the harbor yesterday morning.\""
+        },
+        {
+          "text": "✅ \"The cargo ship arrived at the harbor yesterday morning.\"",
+          "depth": 2,
+          "name": "✅ \"The cargo ship arrived at the harbor yesterday morning.\""
+        },
+        {
+          "text": "'Arrive' is intransitive — it takes no object and does not form passives. Use active past simple: 'The ship arrived.' Other intransitive verbs that cannot be passivised: 'happen', 'appear', 'exist', 'occur.' Compare transitive: 'The crane lifted the container' → 'The container was lifted by the crane.'",
+          "depth": 2,
+          "name": "'Arrive' is intransitive — it takes no object and does not form passives. Use active past simple: 'The ship arrived.' Other intransitive verbs that cannot be passivised: 'happen', 'appear', 'exist', 'occur.' Compare transitive: 'The crane lifted the container' → 'The container was lifted by the crane.'"
+        },
+        {
+          "text": "❌ \"The captain told to the sailors to prepare the mooring lines.\"",
+          "depth": 2,
+          "name": "❌ \"The captain told to the sailors to prepare the mooring lines.\""
+        },
+        {
+          "text": "✅ \"The captain told the sailors to prepare the mooring lines.\"",
+          "depth": 2,
+          "name": "✅ \"The captain told the sailors to prepare the mooring lines.\""
+        },
+        {
+          "text": "'Tell' + direct object (no 'to'): 'told the sailors.' 'Say' + 'to': 'said to the sailors.' Never 'told to someone.' Pattern: tell + person + to-infinitive: 'He told them to prepare.' Say + that-clause: 'He said that they should prepare.'",
+          "depth": 2,
+          "name": "'Tell' + direct object (no 'to'): 'told the sailors.' 'Say' + 'to': 'said to the sailors.' Never 'told to someone.' Pattern: tell + person + to-infinitive: 'He told them to prepare.' Say + that-clause: 'He said that they should prepare.'"
+        },
+        {
+          "text": "❌ \"There is a few fishing boats near the pier this morning.\"",
+          "depth": 2,
+          "name": "❌ \"There is a few fishing boats near the pier this morning.\""
+        },
+        {
+          "text": "✅ \"There are a few fishing boats near the pier this morning.\"",
+          "depth": 2,
+          "name": "✅ \"There are a few fishing boats near the pier this morning.\""
+        },
+        {
+          "text": "'A few' + plural noun requires 'are': 'There are a few boats.' 'A little' + uncountable requires 'is': 'There is a little fog.' Quantifier agreement: 'a few', 'several', 'many' → plural verb. 'A little', 'much', 'a great deal of' → singular verb.",
+          "depth": 2,
+          "name": "'A few' + plural noun requires 'are': 'There are a few boats.' 'A little' + uncountable requires 'is': 'There is a little fog.' Quantifier agreement: 'a few', 'several', 'many' → plural verb. 'A little', 'much', 'a great deal of' → singular verb."
+        },
+        {
+          "text": "❌ \"The lighthouse has been built in 1892 and still operates today.\"",
+          "depth": 2,
+          "name": "❌ \"The lighthouse has been built in 1892 and still operates today.\""
+        },
+        {
+          "text": "✅ \"The lighthouse was built in 1892 and still operates today.\"",
+          "depth": 2,
+          "name": "✅ \"The lighthouse was built in 1892 and still operates today.\""
+        },
+        {
+          "text": "A finished past action with a specific time ('in 1892') requires past simple, not present perfect. Present perfect ('has been built') connects past to present without specifying when. 'The lighthouse was built in 1892' (past simple — finished). 'The lighthouse has operated for over a century' (present perfect — continuing).",
+          "depth": 2,
+          "name": "A finished past action with a specific time ('in 1892') requires past simple, not present perfect. Present perfect ('has been built') connects past to present without specifying when. 'The lighthouse was built in 1892' (past simple — finished). 'The lighthouse has operated for over a century' (present perfect — continuing)."
+        },
+        {
+          "text": "❌ \"Despite of the strong waves, the ferry crossed the channel safely.\"",
+          "depth": 2,
+          "name": "❌ \"Despite of the strong waves, the ferry crossed the channel safely.\""
+        },
+        {
+          "text": "✅ \"Despite the strong waves, the ferry crossed the channel safely.\" / \"In spite of the strong waves...\"",
+          "depth": 2,
+          "name": "✅ \"Despite the strong waves, the ferry crossed the channel safely.\" / \"In spite of the strong waves...\""
+        },
+        {
+          "text": "'Despite' is NEVER followed by 'of.' 'In spite of' ALWAYS includes 'of.' Both mean the same: 'despite the waves' = 'in spite of the waves.' Common B2 error: blending the two forms into *'despite of.' Follow-up structure: 'despite' + noun/gerund, or 'although' + clause.",
+          "depth": 2,
+          "name": "'Despite' is NEVER followed by 'of.' 'In spite of' ALWAYS includes 'of.' Both mean the same: 'despite the waves' = 'in spite of the waves.' Common B2 error: blending the two forms into *'despite of.' Follow-up structure: 'despite' + noun/gerund, or 'although' + clause."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "552:655",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how maritime vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how maritime vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "harbor",
+          "depth": 2,
+          "name": "harbor"
+        },
+        {
+          "text": "harbor / harboring",
+          "depth": 2,
+          "name": "harbor / harboring"
+        },
+        {
+          "text": "harbor",
+          "depth": 2,
+          "name": "harbor"
+        },
+        {
+          "text": "harbored",
+          "depth": 2,
+          "name": "harbored"
+        },
+        {
+          "text": "navigate",
+          "depth": 2,
+          "name": "navigate"
+        },
+        {
+          "text": "navigation / navigator",
+          "depth": 2,
+          "name": "navigation / navigator"
+        },
+        {
+          "text": "navigate",
+          "depth": 2,
+          "name": "navigate"
+        },
+        {
+          "text": "navigational",
+          "depth": 2,
+          "name": "navigational"
+        },
+        {
+          "text": "anchor",
+          "depth": 2,
+          "name": "anchor"
+        },
+        {
+          "text": "anchor / anchorage",
+          "depth": 2,
+          "name": "anchor / anchorage"
+        },
+        {
+          "text": "anchor",
+          "depth": 2,
+          "name": "anchor"
+        },
+        {
+          "text": "anchored",
+          "depth": 2,
+          "name": "anchored"
+        },
+        {
+          "text": "cargo",
+          "depth": 2,
+          "name": "cargo"
+        },
+        {
+          "text": "cargo",
+          "depth": 2,
+          "name": "cargo"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "dock",
+          "depth": 2,
+          "name": "dock"
+        },
+        {
+          "text": "dock / docking",
+          "depth": 2,
+          "name": "dock / docking"
+        },
+        {
+          "text": "dock",
+          "depth": 2,
+          "name": "dock"
+        },
+        {
+          "text": "docked",
+          "depth": 2,
+          "name": "docked"
+        },
+        {
+          "text": "import",
+          "depth": 2,
+          "name": "import"
+        },
+        {
+          "text": "import / importation",
+          "depth": 2,
+          "name": "import / importation"
+        },
+        {
+          "text": "import",
+          "depth": 2,
+          "name": "import"
+        },
+        {
+          "text": "imported",
+          "depth": 2,
+          "name": "imported"
+        },
+        {
+          "text": "export",
+          "depth": 2,
+          "name": "export"
+        },
+        {
+          "text": "export / exportation",
+          "depth": 2,
+          "name": "export / exportation"
+        },
+        {
+          "text": "export",
+          "depth": 2,
+          "name": "export"
+        },
+        {
+          "text": "exported",
+          "depth": 2,
+          "name": "exported"
+        },
+        {
+          "text": "maritime",
+          "depth": 2,
+          "name": "maritime"
+        },
+        {
+          "text": "maritime",
+          "depth": 2,
+          "name": "maritime"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "maritime",
+          "depth": 2,
+          "name": "maritime"
+        },
+        {
+          "text": "vessel",
+          "depth": 2,
+          "name": "vessel"
+        },
+        {
+          "text": "vessel",
+          "depth": 2,
+          "name": "vessel"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "commerce",
+          "depth": 2,
+          "name": "commerce"
+        },
+        {
+          "text": "commerce",
+          "depth": 2,
+          "name": "commerce"
+        },
+        {
+          "text": "commercialise",
+          "depth": 2,
+          "name": "commercialise"
+        },
+        {
+          "text": "commercial",
+          "depth": 2,
+          "name": "commercial"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "552:715",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A __________ is a small but powerful boat that pushes or pulls larger ships into position.",
+          "depth": 1,
+          "name": "1. A __________ is a small but powerful boat that pushes or pulls larger ships into position."
+        },
+        {
+          "text": "2.  The __________ lifts containers from the ship's deck and places them on the dock.",
+          "depth": 1,
+          "name": "2. The __________ lifts containers from the ship's deck and places them on the dock."
+        },
+        {
+          "text": "3.  A __________ projects outward from the shore to protect the harbor from waves.",
+          "depth": 1,
+          "name": "3. A __________ projects outward from the shore to protect the harbor from waves."
+        },
+        {
+          "text": "4.  The __________ coordinates all vessel traffic entering and leaving the harbor.",
+          "depth": 1,
+          "name": "4. The __________ coordinates all vessel traffic entering and leaving the harbor."
+        },
+        {
+          "text": "5.  A __________ marks safe channels in the water for approaching ships.",
+          "depth": 1,
+          "name": "5. A __________ marks safe channels in the water for approaching ships."
+        },
+        {
+          "text": "6.  __________ cover every surface below the waterline on rocks and harbour walls.",
+          "depth": 1,
+          "name": "6. __________ cover every surface below the waterline on rocks and harbour walls."
+        },
+        {
+          "text": "7.  A __________ transports oil or chemicals in sealed compartments below the waterline.",
+          "depth": 1,
+          "name": "7. A __________ transports oil or chemicals in sealed compartments below the waterline."
+        },
+        {
+          "text": "8.  The __________ — a marked corridor of deep water — guides vessels safely in and out.",
+          "depth": 1,
+          "name": "8. The __________ — a marked corridor of deep water — guides vessels safely in and out."
+        },
+        {
+          "text": "9.  A __________ allows ships to be lifted out of the water for hull repairs.",
+          "depth": 1,
+          "name": "9. A __________ allows ships to be lifted out of the water for hull repairs."
+        },
+        {
+          "text": "10. A thick __________ line connects a ship to the shore, wrapped around a bollard.",
+          "depth": 1,
+          "name": "10. A thick __________ line connects a ship to the shore, wrapped around a bollard."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. tugboat  2. crane  3. jetty/breakwater  4. harbor master  5. buoy  6. Barnacles  7. tanker  8. shipping lane  9. dry dock  10. mooring",
+          "depth": 2,
+          "name": "1. tugboat 2. crane 3. jetty/breakwater 4. harbor master 5. buoy 6. Barnacles 7. tanker 8. shipping lane 9. dry dock 10. mooring"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "552:733",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Harbor vs Harbour vs Port",
+          "depth": 2,
+          "name": "Harbor vs Harbour vs Port"
+        },
+        {
+          "text": "'Harbor' (AmE) / 'Harbour' (BrE) = a sheltered water area. 'Port' = a harbor with commercial facilities for loading/unloading. All ports are harbors, but not all harbors are ports. 'Marina' = a harbor for pleasure boats and yachts.",
+          "depth": 2,
+          "name": "'Harbor' (AmE) / 'Harbour' (BrE) = a sheltered water area. 'Port' = a harbor with commercial facilities for loading/unloading. All ports are harbors, but not all harbors are ports. 'Marina' = a harbor for pleasure boats and yachts."
+        },
+        {
+          "text": "Famous Ports",
+          "depth": 2,
+          "name": "Famous Ports"
+        },
+        {
+          "text": "Dubai's Jebel Ali is one of the world's largest ports. Singapore, Shanghai, and Rotterdam are major global shipping hubs. London's Docklands were once the world's busiest port — now transformed into a financial district with Canary Wharf.",
+          "depth": 2,
+          "name": "Dubai's Jebel Ali is one of the world's largest ports. Singapore, Shanghai, and Rotterdam are major global shipping hubs. London's Docklands were once the world's busiest port — now transformed into a financial district with Canary Wharf."
+        },
+        {
+          "text": "Nautical Terms in Everyday English",
+          "depth": 2,
+          "name": "Nautical Terms in Everyday English"
+        },
+        {
+          "text": "'Give someone a wide berth' (avoid them), 'taken aback' (surprised — originally a sailing term), 'in the doldrums' (depressed — from a windless zone at sea), 'above board' (honest — from keeping hands visible on deck).",
+          "depth": 2,
+          "name": "'Give someone a wide berth' (avoid them), 'taken aback' (surprised — originally a sailing term), 'in the doldrums' (depressed — from a windless zone at sea), 'above board' (honest — from keeping hands visible on deck)."
+        },
+        {
+          "text": "Quay Pronunciation",
+          "depth": 2,
+          "name": "Quay Pronunciation"
+        },
+        {
+          "text": "'Quay' is pronounced /kiː/ (like 'key'), not /kweɪ/. This catches many learners out. 'Wharf' /wɔːf/ is another tricky pronunciation. Plural: 'quays', 'wharves' (or 'wharfs').",
+          "depth": 2,
+          "name": "'Quay' is pronounced /kiː/ (like 'key'), not /kweɪ/. This catches many learners out. 'Wharf' /wɔːf/ is another tricky pronunciation. Plural: 'quays', 'wharves' (or 'wharfs')."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "552:749",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "harbor",
+          "depth": 2,
+          "name": "harbor"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ master, ~ entrance, natural ~",
+          "depth": 2,
+          "name": "~ master, ~ entrance, natural ~"
+        },
+        {
+          "text": "lighthouse",
+          "depth": 2,
+          "name": "lighthouse"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ keeper, ~ beam, coastal ~",
+          "depth": 2,
+          "name": "~ keeper, ~ beam, coastal ~"
+        },
+        {
+          "text": "cargo",
+          "depth": 2,
+          "name": "cargo"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ ship, ~ hold, ~ container",
+          "depth": 2,
+          "name": "~ ship, ~ hold, ~ container"
+        },
+        {
+          "text": "anchor",
+          "depth": 2,
+          "name": "anchor"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "drop ~, ~ chain, ~ point",
+          "depth": 2,
+          "name": "drop ~, ~ chain, ~ point"
+        },
+        {
+          "text": "crane",
+          "depth": 2,
+          "name": "crane"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "gantry ~, ~ operator, ~ lift",
+          "depth": 2,
+          "name": "gantry ~, ~ operator, ~ lift"
+        },
+        {
+          "text": "pier",
+          "depth": 2,
+          "name": "pier"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "fishing ~, ~ head, walk the ~",
+          "depth": 2,
+          "name": "fishing ~, ~ head, walk the ~"
+        },
+        {
+          "text": "buoy",
+          "depth": 2,
+          "name": "buoy"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ marker, navigation ~, mooring ~",
+          "depth": 2,
+          "name": "~ marker, navigation ~, mooring ~"
+        },
+        {
+          "text": "dock",
+          "depth": 2,
+          "name": "dock"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "loading ~, ~ worker, ~ yard",
+          "depth": 2,
+          "name": "loading ~, ~ worker, ~ yard"
+        },
+        {
+          "text": "ferry",
+          "depth": 2,
+          "name": "ferry"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ crossing, ~ terminal, car ~",
+          "depth": 2,
+          "name": "~ crossing, ~ terminal, car ~"
+        },
+        {
+          "text": "container",
+          "depth": 2,
+          "name": "container"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "shipping ~, ~ port, ~ ship",
+          "depth": 2,
+          "name": "shipping ~, ~ port, ~ ship"
+        }
+      ]
+    }
+  }
+}

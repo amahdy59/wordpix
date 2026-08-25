@@ -1,0 +1,393 @@
+{
+  "unitId": "fashion-atelier",
+  "name": "The Fashion Atelier",
+  "subtopics": [
+    {
+      "id": "atelier-equipment",
+      "title": "Atelier Equipment",
+      "wordIds": [
+        "sewing-machine",
+        "dress-form",
+        "mannequin",
+        "cutting-table",
+        "iron",
+        "steamer",
+        "serger",
+        "embroidery-machine",
+        "pattern-paper",
+        "tailor-s-chalk"
+      ]
+    },
+    {
+      "id": "sewing-tools",
+      "title": "Sewing Tools",
+      "wordIds": [
+        "needle",
+        "thread",
+        "scissors",
+        "pinking-shears",
+        "seam-ripper",
+        "pin-cushion",
+        "measuring-tape",
+        "thimble",
+        "bobbin",
+        "zipper-foot"
+      ]
+    },
+    {
+      "id": "design-process",
+      "title": "Design Process",
+      "wordIds": [
+        "sketch",
+        "draping",
+        "pattern-making",
+        "muslin",
+        "toile",
+        "fitting",
+        "alteration",
+        "sample",
+        "prototype",
+        "production"
+      ]
+    },
+    {
+      "id": "fashion-roles",
+      "title": "Fashion Roles",
+      "wordIds": [
+        "fashion-designer",
+        "seamstress",
+        "tailor",
+        "pattern-maker",
+        "textile-designer",
+        "stylist",
+        "fashion-illustrator",
+        "merchandiser",
+        "buyer",
+        "model"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "sewing-machine",
+      "label": "Sewing Machine",
+      "ipa": "/ˈsoʊɪŋ məˈʃiːn/",
+      "cefr": "C1",
+      "imageNodeId": "467:19798"
+    },
+    {
+      "kind": "card",
+      "id": "dress-form",
+      "label": "Dress Form",
+      "ipa": "/drɛs fɔːrm/",
+      "cefr": "C1",
+      "imageNodeId": "467:19802"
+    },
+    {
+      "kind": "card",
+      "id": "mannequin",
+      "label": "Mannequin",
+      "ipa": "/ˈmænɪkɪn/",
+      "cefr": "B2",
+      "imageNodeId": "467:19806"
+    },
+    {
+      "kind": "card",
+      "id": "cutting-table",
+      "label": "Cutting Table",
+      "ipa": "/ˈkʌtɪŋ ˈteɪbəl/",
+      "cefr": "C1",
+      "imageNodeId": "467:19810"
+    },
+    {
+      "kind": "card",
+      "id": "iron",
+      "label": "Iron",
+      "ipa": "/ˈaɪərn/",
+      "cefr": "B2",
+      "imageNodeId": "467:19814"
+    },
+    {
+      "kind": "card",
+      "id": "steamer",
+      "label": "Steamer",
+      "ipa": "/ˈstiːmər/",
+      "cefr": "B2",
+      "imageNodeId": "467:19818"
+    },
+    {
+      "kind": "card",
+      "id": "serger",
+      "label": "Serger",
+      "ipa": "/ˈsɜːrdʒər/",
+      "cefr": "B2",
+      "imageNodeId": "467:19822"
+    },
+    {
+      "kind": "card",
+      "id": "embroidery-machine",
+      "label": "Embroidery Machine",
+      "ipa": "/ɪmˈbrɔɪdəri məˈʃiːn/",
+      "cefr": "C1",
+      "imageNodeId": "467:19826"
+    },
+    {
+      "kind": "card",
+      "id": "pattern-paper",
+      "label": "Pattern Paper",
+      "ipa": "/ˈpætərn ˈpeɪpər/",
+      "cefr": "C1",
+      "imageNodeId": "467:19830"
+    },
+    {
+      "kind": "card",
+      "id": "tailor-s-chalk",
+      "label": "Tailor's Chalk",
+      "ipa": "/ˈteɪlərz tʃɔːk/",
+      "cefr": "C1",
+      "imageNodeId": "467:19834"
+    },
+    {
+      "kind": "card",
+      "id": "needle",
+      "label": "Needle",
+      "ipa": "/ˈniːdəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:19843"
+    },
+    {
+      "kind": "card",
+      "id": "thread",
+      "label": "Thread",
+      "ipa": "/θrɛd/",
+      "cefr": "B2",
+      "imageNodeId": "467:19847"
+    },
+    {
+      "kind": "card",
+      "id": "scissors",
+      "label": "Scissors",
+      "ipa": "/ˈsɪzərz/",
+      "cefr": "B2",
+      "imageNodeId": "467:19851"
+    },
+    {
+      "kind": "card",
+      "id": "pinking-shears",
+      "label": "Pinking Shears",
+      "ipa": "/ˈpɪŋkɪŋ ʃɪərz/",
+      "cefr": "C1",
+      "imageNodeId": "467:19855"
+    },
+    {
+      "kind": "card",
+      "id": "seam-ripper",
+      "label": "Seam Ripper",
+      "ipa": "/siːm ˈrɪpər/",
+      "cefr": "C1",
+      "imageNodeId": "467:19859"
+    },
+    {
+      "kind": "card",
+      "id": "pin-cushion",
+      "label": "Pin Cushion",
+      "ipa": "/pɪn ˈkʊʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:19863"
+    },
+    {
+      "kind": "card",
+      "id": "measuring-tape",
+      "label": "Measuring Tape",
+      "ipa": "/ˈmɛʒərɪŋ teɪp/",
+      "cefr": "C1",
+      "imageNodeId": "467:19867"
+    },
+    {
+      "kind": "card",
+      "id": "thimble",
+      "label": "Thimble",
+      "ipa": "/ˈθɪmbəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:19871"
+    },
+    {
+      "kind": "card",
+      "id": "bobbin",
+      "label": "Bobbin",
+      "ipa": "/ˈbɒbɪn/",
+      "cefr": "B2",
+      "imageNodeId": "467:19875"
+    },
+    {
+      "kind": "card",
+      "id": "zipper-foot",
+      "label": "Zipper Foot",
+      "ipa": "/ˈzɪpər fʊt/",
+      "cefr": "C1",
+      "imageNodeId": "467:19879"
+    },
+    {
+      "kind": "card",
+      "id": "sketch",
+      "label": "Sketch",
+      "ipa": "/skɛtʃ/",
+      "cefr": "B2",
+      "imageNodeId": "467:19888"
+    },
+    {
+      "kind": "card",
+      "id": "draping",
+      "label": "Draping",
+      "ipa": "/ˈdreɪpɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:19892"
+    },
+    {
+      "kind": "card",
+      "id": "pattern-making",
+      "label": "Pattern Making",
+      "ipa": "/ˈpætərn ˈmeɪkɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "467:19896"
+    },
+    {
+      "kind": "card",
+      "id": "muslin",
+      "label": "Muslin",
+      "ipa": "/ˈmʌzlɪn/",
+      "cefr": "B2",
+      "imageNodeId": "467:19900"
+    },
+    {
+      "kind": "card",
+      "id": "toile",
+      "label": "Toile",
+      "ipa": "/twɑːl/",
+      "cefr": "B2",
+      "imageNodeId": "467:19904"
+    },
+    {
+      "kind": "card",
+      "id": "fitting",
+      "label": "Fitting",
+      "ipa": "/ˈfɪtɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:19908"
+    },
+    {
+      "kind": "card",
+      "id": "alteration",
+      "label": "Alteration",
+      "ipa": "/ˌɔːltəˈreɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:19912"
+    },
+    {
+      "kind": "card",
+      "id": "sample",
+      "label": "Sample",
+      "ipa": "/ˈsæmpəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:19916"
+    },
+    {
+      "kind": "card",
+      "id": "prototype",
+      "label": "Prototype",
+      "ipa": "/ˈproʊtəˌtaɪp/",
+      "cefr": "B2",
+      "imageNodeId": "467:19920"
+    },
+    {
+      "kind": "card",
+      "id": "production",
+      "label": "Production",
+      "ipa": "/prəˈdʌkʃən/",
+      "cefr": "C1",
+      "imageNodeId": "467:19924"
+    },
+    {
+      "kind": "card",
+      "id": "fashion-designer",
+      "label": "Fashion Designer",
+      "ipa": "/ˈfæʃən dɪˈzaɪnər/",
+      "cefr": "C1",
+      "imageNodeId": "467:19933"
+    },
+    {
+      "kind": "card",
+      "id": "seamstress",
+      "label": "Seamstress",
+      "ipa": "/ˈsiːmstrɪs/",
+      "cefr": "C1",
+      "imageNodeId": "467:19937"
+    },
+    {
+      "kind": "card",
+      "id": "tailor",
+      "label": "Tailor",
+      "ipa": "/ˈteɪlər/",
+      "cefr": "B2",
+      "imageNodeId": "467:19941"
+    },
+    {
+      "kind": "card",
+      "id": "pattern-maker",
+      "label": "Pattern Maker",
+      "ipa": "/ˈpætərn ˈmeɪkər/",
+      "cefr": "C1",
+      "imageNodeId": "467:19945"
+    },
+    {
+      "kind": "card",
+      "id": "textile-designer",
+      "label": "Textile Designer",
+      "ipa": "/ˈtɛkstaɪl dɪˈzaɪnər/",
+      "cefr": "C1",
+      "imageNodeId": "467:19949"
+    },
+    {
+      "kind": "card",
+      "id": "stylist",
+      "label": "Stylist",
+      "ipa": "/ˈstaɪlɪst/",
+      "cefr": "B2",
+      "imageNodeId": "467:19953"
+    },
+    {
+      "kind": "card",
+      "id": "fashion-illustrator",
+      "label": "Fashion Illustrator",
+      "ipa": "/ˈfæʃən ˈɪləˌstreɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "467:19957"
+    },
+    {
+      "kind": "card",
+      "id": "merchandiser",
+      "label": "Merchandiser",
+      "ipa": "/ˈmɜːrtʃənˌdaɪzər/",
+      "cefr": "C1",
+      "imageNodeId": "467:19961"
+    },
+    {
+      "kind": "card",
+      "id": "buyer",
+      "label": "Buyer",
+      "ipa": "/ˈbaɪər/",
+      "cefr": "B2",
+      "imageNodeId": "467:19965"
+    },
+    {
+      "kind": "card",
+      "id": "model",
+      "label": "Model",
+      "ipa": "/ˈmɒdəl/",
+      "cefr": "B2",
+      "imageNodeId": "467:19969"
+    }
+  ],
+  "materials": null
+}

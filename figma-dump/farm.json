@@ -1,0 +1,1854 @@
+{
+  "unitId": "farm",
+  "name": "The Farm",
+  "subtopics": [
+    {
+      "id": "farm-animals",
+      "title": "Farm Animals",
+      "wordIds": [
+        "cow",
+        "pig",
+        "chicken",
+        "horse",
+        "sheep",
+        "goat",
+        "duck",
+        "donkey",
+        "turkey",
+        "rooster",
+        "hen",
+        "lamb"
+      ]
+    },
+    {
+      "id": "crops-vegetables",
+      "title": "Crops & Vegetables",
+      "wordIds": [
+        "wheat",
+        "corn",
+        "carrot",
+        "potato",
+        "tomato",
+        "lettuce",
+        "onion",
+        "pumpkin",
+        "bean",
+        "pea",
+        "cabbage",
+        "beetroot"
+      ]
+    },
+    {
+      "id": "fruit-trees-berries",
+      "title": "Fruit Trees & Berries",
+      "wordIds": [
+        "apple-tree",
+        "pear-tree",
+        "cherry-tree",
+        "orange-tree",
+        "strawberry",
+        "blueberry",
+        "raspberry",
+        "grape-vine",
+        "peach-tree",
+        "plum-tree"
+      ]
+    },
+    {
+      "id": "farm-buildings",
+      "title": "Farm Buildings",
+      "wordIds": [
+        "barn",
+        "farmhouse",
+        "silo",
+        "chicken-coop",
+        "stable",
+        "greenhouse",
+        "storage-shed",
+        "windmill",
+        "dairy",
+        "well"
+      ]
+    },
+    {
+      "id": "farm-equipment",
+      "title": "Farm Equipment",
+      "wordIds": [
+        "tractor",
+        "plow",
+        "trailer",
+        "hay-bale",
+        "pitchfork",
+        "bucket",
+        "wheelbarrow",
+        "feed-trough",
+        "water-tank",
+        "scarecrow"
+      ]
+    },
+    {
+      "id": "farm-products",
+      "title": "Farm Products",
+      "wordIds": [
+        "milk",
+        "egg",
+        "wool",
+        "honey",
+        "cheese",
+        "butter",
+        "cream",
+        "flour",
+        "jam",
+        "apple-cider",
+        "rabbit",
+        "goose",
+        "hen-house",
+        "shed",
+        "fence",
+        "shovel",
+        "hoe",
+        "rake",
+        "watering-can",
+        "sunflower",
+        "hay",
+        "straw",
+        "farmer",
+        "dog",
+        "cat",
+        "pond",
+        "mud",
+        "sunrise",
+        "sunset",
+        "rain",
+        "harvest",
+        "fence",
+        "saddle"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "cow",
+      "label": "Cow",
+      "ipa": "/kaʊ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1993"
+    },
+    {
+      "kind": "card",
+      "id": "pig",
+      "label": "Pig",
+      "ipa": "/pɪɡ/",
+      "cefr": "A1",
+      "imageNodeId": "44:1997"
+    },
+    {
+      "kind": "card",
+      "id": "chicken",
+      "label": "Chicken",
+      "ipa": "/ˈtʃɪkɪn/",
+      "cefr": "A1",
+      "imageNodeId": "44:2001"
+    },
+    {
+      "kind": "card",
+      "id": "horse",
+      "label": "Horse",
+      "ipa": "/hɔːrs/",
+      "cefr": "A1",
+      "imageNodeId": "44:2005"
+    },
+    {
+      "kind": "card",
+      "id": "sheep",
+      "label": "Sheep",
+      "ipa": "/ʃiːp/",
+      "cefr": "A1",
+      "imageNodeId": "44:2009"
+    },
+    {
+      "kind": "card",
+      "id": "goat",
+      "label": "Goat",
+      "ipa": "/ɡoʊt/",
+      "cefr": "A1",
+      "imageNodeId": "44:2013"
+    },
+    {
+      "kind": "card",
+      "id": "duck",
+      "label": "Duck",
+      "ipa": "/dʌk/",
+      "cefr": "A1",
+      "imageNodeId": "44:2017"
+    },
+    {
+      "kind": "card",
+      "id": "donkey",
+      "label": "Donkey",
+      "ipa": "/ˈdɑːŋki/",
+      "cefr": "A1",
+      "imageNodeId": "44:2021"
+    },
+    {
+      "kind": "card",
+      "id": "turkey",
+      "label": "Turkey",
+      "ipa": "/ˈtɜːrki/",
+      "cefr": "A1",
+      "imageNodeId": "44:2025"
+    },
+    {
+      "kind": "card",
+      "id": "rooster",
+      "label": "Rooster",
+      "ipa": "/ˈruːstər/",
+      "cefr": "A1",
+      "imageNodeId": "44:2029"
+    },
+    {
+      "kind": "card",
+      "id": "hen",
+      "label": "Hen",
+      "ipa": "/hɛn/",
+      "cefr": "A1",
+      "imageNodeId": "44:2033"
+    },
+    {
+      "kind": "card",
+      "id": "lamb",
+      "label": "Lamb",
+      "ipa": "/læm/",
+      "cefr": "A1",
+      "imageNodeId": "44:2037"
+    },
+    {
+      "kind": "card",
+      "id": "wheat",
+      "label": "Wheat",
+      "ipa": "/wiːt/",
+      "cefr": "A1",
+      "imageNodeId": "44:2046"
+    },
+    {
+      "kind": "card",
+      "id": "corn",
+      "label": "Corn",
+      "ipa": "/kɔːrn/",
+      "cefr": "A1",
+      "imageNodeId": "44:2050"
+    },
+    {
+      "kind": "card",
+      "id": "carrot",
+      "label": "Carrot",
+      "ipa": "/ˈkærət/",
+      "cefr": "A1",
+      "imageNodeId": "44:2054"
+    },
+    {
+      "kind": "card",
+      "id": "potato",
+      "label": "Potato",
+      "ipa": "/pəˈteɪtoʊ/",
+      "cefr": "A1",
+      "imageNodeId": "44:2058"
+    },
+    {
+      "kind": "card",
+      "id": "tomato",
+      "label": "Tomato",
+      "ipa": "/təˈmeɪtoʊ/",
+      "cefr": "A1",
+      "imageNodeId": "44:2062"
+    },
+    {
+      "kind": "card",
+      "id": "lettuce",
+      "label": "Lettuce",
+      "ipa": "/ˈlɛtɪs/",
+      "cefr": "A1",
+      "imageNodeId": "44:2066"
+    },
+    {
+      "kind": "card",
+      "id": "onion",
+      "label": "Onion",
+      "ipa": "/ˈʌnjən/",
+      "cefr": "A1",
+      "imageNodeId": "44:2070"
+    },
+    {
+      "kind": "card",
+      "id": "pumpkin",
+      "label": "Pumpkin",
+      "ipa": "/ˈpʌmpkɪn/",
+      "cefr": "A1",
+      "imageNodeId": "44:2074"
+    },
+    {
+      "kind": "card",
+      "id": "bean",
+      "label": "Bean",
+      "ipa": "/biːn/",
+      "cefr": "A1",
+      "imageNodeId": "44:2078"
+    },
+    {
+      "kind": "card",
+      "id": "pea",
+      "label": "Pea",
+      "ipa": "/piː/",
+      "cefr": "A1",
+      "imageNodeId": "44:2082"
+    },
+    {
+      "kind": "card",
+      "id": "cabbage",
+      "label": "Cabbage",
+      "ipa": "/ˈkæbɪdʒ/",
+      "cefr": "A1",
+      "imageNodeId": "44:2086"
+    },
+    {
+      "kind": "card",
+      "id": "beetroot",
+      "label": "Beetroot",
+      "ipa": "/ˈbiːtruːt/",
+      "cefr": "A1",
+      "imageNodeId": "44:2090"
+    },
+    {
+      "kind": "card",
+      "id": "apple-tree",
+      "label": "Apple Tree",
+      "ipa": "/ˈæpəl triː/",
+      "cefr": "A2",
+      "imageNodeId": "44:2099"
+    },
+    {
+      "kind": "card",
+      "id": "pear-tree",
+      "label": "Pear Tree",
+      "ipa": "/pɛr triː/",
+      "cefr": "A2",
+      "imageNodeId": "44:2103"
+    },
+    {
+      "kind": "card",
+      "id": "cherry-tree",
+      "label": "Cherry Tree",
+      "ipa": "/ˈtʃɛri triː/",
+      "cefr": "A2",
+      "imageNodeId": "44:2107"
+    },
+    {
+      "kind": "card",
+      "id": "orange-tree",
+      "label": "Orange Tree",
+      "ipa": "/ˈɔːrɪndʒ triː/",
+      "cefr": "A2",
+      "imageNodeId": "44:2111"
+    },
+    {
+      "kind": "card",
+      "id": "strawberry",
+      "label": "Strawberry",
+      "ipa": "/ˈstrɔːbɛri/",
+      "cefr": "A2",
+      "imageNodeId": "44:2115"
+    },
+    {
+      "kind": "card",
+      "id": "blueberry",
+      "label": "Blueberry",
+      "ipa": "/ˈbluːbɛri/",
+      "cefr": "A1",
+      "imageNodeId": "44:2119"
+    },
+    {
+      "kind": "card",
+      "id": "raspberry",
+      "label": "Raspberry",
+      "ipa": "/ˈræzbɛri/",
+      "cefr": "A1",
+      "imageNodeId": "44:2123"
+    },
+    {
+      "kind": "card",
+      "id": "grape-vine",
+      "label": "Grape Vine",
+      "ipa": "/ɡreɪp vaɪn/",
+      "cefr": "A2",
+      "imageNodeId": "44:2127"
+    },
+    {
+      "kind": "card",
+      "id": "peach-tree",
+      "label": "Peach Tree",
+      "ipa": "/piːtʃ triː/",
+      "cefr": "A2",
+      "imageNodeId": "44:2131"
+    },
+    {
+      "kind": "card",
+      "id": "plum-tree",
+      "label": "Plum Tree",
+      "ipa": "/plʌm triː/",
+      "cefr": "A2",
+      "imageNodeId": "44:2135"
+    },
+    {
+      "kind": "card",
+      "id": "barn",
+      "label": "Barn",
+      "ipa": "/bɑːrn/",
+      "cefr": "A1",
+      "imageNodeId": "44:2144"
+    },
+    {
+      "kind": "card",
+      "id": "farmhouse",
+      "label": "Farmhouse",
+      "ipa": "/ˈfɑːrmhaʊs/",
+      "cefr": "A1",
+      "imageNodeId": "44:2148"
+    },
+    {
+      "kind": "card",
+      "id": "silo",
+      "label": "Silo",
+      "ipa": "/ˈsaɪloʊ/",
+      "cefr": "A1",
+      "imageNodeId": "44:2152"
+    },
+    {
+      "kind": "card",
+      "id": "chicken-coop",
+      "label": "Chicken Coop",
+      "ipa": "/ˈtʃɪkɪn kuːp/",
+      "cefr": "A2",
+      "imageNodeId": "44:2156"
+    },
+    {
+      "kind": "card",
+      "id": "stable",
+      "label": "Stable",
+      "ipa": "/ˈsteɪbəl/",
+      "cefr": "A1",
+      "imageNodeId": "44:2160"
+    },
+    {
+      "kind": "card",
+      "id": "greenhouse",
+      "label": "Greenhouse",
+      "ipa": "/ˈɡriːnhaʊs/",
+      "cefr": "A2",
+      "imageNodeId": "44:2164"
+    },
+    {
+      "kind": "card",
+      "id": "storage-shed",
+      "label": "Storage Shed",
+      "ipa": "/ˈstɔːrɪdʒ ʃɛd/",
+      "cefr": "A2",
+      "imageNodeId": "44:2168"
+    },
+    {
+      "kind": "card",
+      "id": "windmill",
+      "label": "Windmill",
+      "ipa": "/ˈwɪndmɪl/",
+      "cefr": "A1",
+      "imageNodeId": "44:2172"
+    },
+    {
+      "kind": "card",
+      "id": "dairy",
+      "label": "Dairy",
+      "ipa": "/ˈdɛri/",
+      "cefr": "A1",
+      "imageNodeId": "44:2176"
+    },
+    {
+      "kind": "card",
+      "id": "well",
+      "label": "Well",
+      "ipa": "/wɛl/",
+      "cefr": "A1",
+      "imageNodeId": "44:2180"
+    },
+    {
+      "kind": "card",
+      "id": "tractor",
+      "label": "Tractor",
+      "ipa": "/ˈtræktər/",
+      "cefr": "A1",
+      "imageNodeId": "44:2189"
+    },
+    {
+      "kind": "card",
+      "id": "plow",
+      "label": "Plow",
+      "ipa": "/plaʊ/",
+      "cefr": "A1",
+      "imageNodeId": "44:2193"
+    },
+    {
+      "kind": "card",
+      "id": "trailer",
+      "label": "Trailer",
+      "ipa": "/ˈtreɪlər/",
+      "cefr": "A1",
+      "imageNodeId": "44:2197"
+    },
+    {
+      "kind": "card",
+      "id": "hay-bale",
+      "label": "Hay Bale",
+      "ipa": "/heɪ beɪl/",
+      "cefr": "A2",
+      "imageNodeId": "44:2201"
+    },
+    {
+      "kind": "card",
+      "id": "pitchfork",
+      "label": "Pitchfork",
+      "ipa": "/ˈpɪtʃfɔːrk/",
+      "cefr": "A1",
+      "imageNodeId": "44:2205"
+    },
+    {
+      "kind": "card",
+      "id": "bucket",
+      "label": "Bucket",
+      "ipa": "/ˈbʌkɪt/",
+      "cefr": "A1",
+      "imageNodeId": "44:2209"
+    },
+    {
+      "kind": "card",
+      "id": "wheelbarrow",
+      "label": "Wheelbarrow",
+      "ipa": "/ˈwiːlbæroʊ/",
+      "cefr": "A2",
+      "imageNodeId": "44:2213"
+    },
+    {
+      "kind": "card",
+      "id": "feed-trough",
+      "label": "Feed Trough",
+      "ipa": "/fiːd trɔːf/",
+      "cefr": "A2",
+      "imageNodeId": "44:2217"
+    },
+    {
+      "kind": "card",
+      "id": "water-tank",
+      "label": "Water Tank",
+      "ipa": "/ˈwɔːtər tæŋk/",
+      "cefr": "A2",
+      "imageNodeId": "44:2221"
+    },
+    {
+      "kind": "card",
+      "id": "scarecrow",
+      "label": "Scarecrow",
+      "ipa": "/ˈskɛrkroʊ/",
+      "cefr": "A1",
+      "imageNodeId": "44:2225"
+    },
+    {
+      "kind": "card",
+      "id": "milk",
+      "label": "Milk",
+      "ipa": "/mɪlk/",
+      "cefr": "A1",
+      "imageNodeId": "44:2234"
+    },
+    {
+      "kind": "card",
+      "id": "egg",
+      "label": "Egg",
+      "ipa": "/ɛɡ/",
+      "cefr": "A1",
+      "imageNodeId": "44:2238"
+    },
+    {
+      "kind": "card",
+      "id": "wool",
+      "label": "Wool",
+      "ipa": "/wʊl/",
+      "cefr": "A1",
+      "imageNodeId": "44:2242"
+    },
+    {
+      "kind": "card",
+      "id": "honey",
+      "label": "Honey",
+      "ipa": "/ˈhʌni/",
+      "cefr": "A1",
+      "imageNodeId": "44:2246"
+    },
+    {
+      "kind": "card",
+      "id": "cheese",
+      "label": "Cheese",
+      "ipa": "/tʃiːz/",
+      "cefr": "A1",
+      "imageNodeId": "44:2250"
+    },
+    {
+      "kind": "card",
+      "id": "butter",
+      "label": "Butter",
+      "ipa": "/ˈbʌtər/",
+      "cefr": "A1",
+      "imageNodeId": "44:2254"
+    },
+    {
+      "kind": "card",
+      "id": "cream",
+      "label": "Cream",
+      "ipa": "/kriːm/",
+      "cefr": "A1",
+      "imageNodeId": "44:2258"
+    },
+    {
+      "kind": "card",
+      "id": "flour",
+      "label": "Flour",
+      "ipa": "/flaʊər/",
+      "cefr": "A1",
+      "imageNodeId": "44:2262"
+    },
+    {
+      "kind": "card",
+      "id": "jam",
+      "label": "Jam",
+      "ipa": "/dʒæm/",
+      "cefr": "A1",
+      "imageNodeId": "44:2266"
+    },
+    {
+      "kind": "card",
+      "id": "apple-cider",
+      "label": "Apple Cider",
+      "ipa": "/ˈæpəl ˈsaɪdər/",
+      "cefr": "A2",
+      "imageNodeId": "44:2270"
+    },
+    {
+      "kind": "card",
+      "id": "rabbit",
+      "label": "Rabbit",
+      "ipa": "/ˈræbɪt/",
+      "cefr": "A1",
+      "imageNodeId": "52:333"
+    },
+    {
+      "kind": "card",
+      "id": "goose",
+      "label": "Goose",
+      "ipa": "/ɡuːs/",
+      "cefr": "A1",
+      "imageNodeId": "52:337"
+    },
+    {
+      "kind": "card",
+      "id": "hen-house",
+      "label": "Hen House",
+      "ipa": "/hɛn haʊs/",
+      "cefr": "A2",
+      "imageNodeId": "52:358"
+    },
+    {
+      "kind": "card",
+      "id": "shed",
+      "label": "Shed",
+      "ipa": "/ʃɛd/",
+      "cefr": "A1",
+      "imageNodeId": "52:370"
+    },
+    {
+      "kind": "card",
+      "id": "fence",
+      "label": "Fence",
+      "ipa": "/fɛns/",
+      "cefr": "A1",
+      "imageNodeId": "52:382"
+    },
+    {
+      "kind": "card",
+      "id": "shovel",
+      "label": "Shovel",
+      "ipa": "/ˈʃʌvəl/",
+      "cefr": "A1",
+      "imageNodeId": "52:411"
+    },
+    {
+      "kind": "card",
+      "id": "hoe",
+      "label": "Hoe",
+      "ipa": "/hoʊ/",
+      "cefr": "A1",
+      "imageNodeId": "52:415"
+    },
+    {
+      "kind": "card",
+      "id": "rake",
+      "label": "Rake",
+      "ipa": "/reɪk/",
+      "cefr": "A1",
+      "imageNodeId": "52:419"
+    },
+    {
+      "kind": "card",
+      "id": "watering-can",
+      "label": "Watering Can",
+      "ipa": "/ˈwɔːtərɪŋ kæn/",
+      "cefr": "A2",
+      "imageNodeId": "52:427"
+    },
+    {
+      "kind": "card",
+      "id": "sunflower",
+      "label": "Sunflower",
+      "ipa": "/ˈsʌnflaʊər/",
+      "cefr": "A1",
+      "imageNodeId": "52:468"
+    },
+    {
+      "kind": "card",
+      "id": "hay",
+      "label": "Hay",
+      "ipa": "/heɪ/",
+      "cefr": "A1",
+      "imageNodeId": "52:505"
+    },
+    {
+      "kind": "card",
+      "id": "straw",
+      "label": "Straw",
+      "ipa": "/strɔː/",
+      "cefr": "A1",
+      "imageNodeId": "52:509"
+    },
+    {
+      "kind": "card",
+      "id": "farmer",
+      "label": "Farmer",
+      "ipa": "/ˈfɑːrmər/",
+      "cefr": "A1",
+      "imageNodeId": "52:526"
+    },
+    {
+      "kind": "card",
+      "id": "dog",
+      "label": "Dog",
+      "ipa": "/dɔːɡ/",
+      "cefr": "A1",
+      "imageNodeId": "52:534"
+    },
+    {
+      "kind": "card",
+      "id": "cat",
+      "label": "Cat",
+      "ipa": "/kæt/",
+      "cefr": "A1",
+      "imageNodeId": "52:538"
+    },
+    {
+      "kind": "card",
+      "id": "pond",
+      "label": "Pond",
+      "ipa": "/pɑːnd/",
+      "cefr": "A1",
+      "imageNodeId": "52:542"
+    },
+    {
+      "kind": "card",
+      "id": "mud",
+      "label": "Mud",
+      "ipa": "/mʌd/",
+      "cefr": "A1",
+      "imageNodeId": "52:546"
+    },
+    {
+      "kind": "card",
+      "id": "sunrise",
+      "label": "Sunrise",
+      "ipa": "/ˈsʌnraɪz/",
+      "cefr": "A1",
+      "imageNodeId": "52:550"
+    },
+    {
+      "kind": "card",
+      "id": "sunset",
+      "label": "Sunset",
+      "ipa": "/ˈsʌnsɛt/",
+      "cefr": "A1",
+      "imageNodeId": "52:554"
+    },
+    {
+      "kind": "card",
+      "id": "rain",
+      "label": "Rain",
+      "ipa": "/reɪn/",
+      "cefr": "A1",
+      "imageNodeId": "52:558"
+    },
+    {
+      "kind": "card",
+      "id": "harvest",
+      "label": "Harvest",
+      "ipa": "/ˈhɑːrvɪst/",
+      "cefr": "A1",
+      "imageNodeId": "52:562"
+    },
+    {
+      "kind": "card",
+      "id": "fence",
+      "label": "Fence",
+      "ipa": "/fɛns/",
+      "cefr": "A1",
+      "imageNodeId": "39:946"
+    },
+    {
+      "kind": "card",
+      "id": "saddle",
+      "label": "Saddle",
+      "ipa": "/ˈsædəl/",
+      "cefr": "A1",
+      "imageNodeId": "39:962"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "542:2759",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "542:2761",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1 · Topic: The Farm",
+          "depth": 1,
+          "name": "Level: B1 · Topic: The Farm"
+        },
+        {
+          "text": "A Day on the Farm\n\nMy uncle owns a small farm about an hour from the city. Last summer, I spent a week there helping him with daily tasks.\n\nEvery morning started early. At sunrise, we went to the barn to feed the animals. The cows were in a large field surrounded by a wooden fence. My uncle milked them by hand while I carried the buckets to the dairy. The chickens roamed freely in the yard, and I collected eggs from the hen house every morning.\n\nThe farm also had goats, sheep, and a few pigs in a muddy pen. A big sheepdog helped my uncle move the sheep from the field to the barn. The horse stayed in a separate stable and was used for riding around the property.\n\nAfter the animals were taken care of, we worked in the fields. My uncle drove the tractor to plough the soil, and I helped plant seeds in neat rows. The crops included wheat, corn, and sunflowers. A scarecrow stood in the middle of the wheat field to keep birds away.\n\nWater came from a well near the farmhouse, and there was an irrigation system to water the larger fields. The hay was stored in the barn for winter, stacked in large bales.\n\nIn the evening, we sat on the porch of the farmhouse and watched the sunset. Life on the farm is hard work, but it taught me where our food really comes from.",
+          "depth": 1,
+          "name": "A Day on the Farm My uncle owns a small farm about an hour from the city. Last summer, I spent a week there helping him with daily tasks. Every morning started early. At sunrise, we went to the barn to feed the animals. The cows were in a large field surrounded by a wooden fence. My uncle milked them by hand while I carried the buckets to the dairy. The chickens roamed freely in the yard, and I collected eggs from the hen house every morning. The farm also had goats, sheep, and a few pigs in a muddy pen. A big sheepdog helped my uncle move the sheep from the field to the barn. The horse stayed in a separate stable and was used for riding around the property. After the animals were taken care of, we worked in the fields. My uncle drove the tractor to plough the soil, and I helped plant seeds in neat rows. The crops included wheat, corn, and sunflowers. A scarecrow stood in the middle of the wheat field to keep birds away. Water came from a well near the farmhouse, and there was an irrigation system to water the larger fields. The hay was stored in the barn for winter, stacked in large bales. In the evening, we sat on the porch of the farmhouse and watched the sunset. Life on the farm is hard work, but it taught me where our food really comes from."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What was the first task every morning?",
+          "depth": 1,
+          "name": "1. What was the first task every morning?"
+        },
+        {
+          "text": "2. Where did the chickens live on the farm?",
+          "depth": 1,
+          "name": "2. Where did the chickens live on the farm?"
+        },
+        {
+          "text": "3. What did the sheepdog help with?",
+          "depth": 1,
+          "name": "3. What did the sheepdog help with?"
+        },
+        {
+          "text": "4. What crops did the uncle grow?",
+          "depth": 1,
+          "name": "4. What crops did the uncle grow?"
+        },
+        {
+          "text": "5. Where was the hay stored and why?",
+          "depth": 1,
+          "name": "5. Where was the hay stored and why?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "542:2774",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "don't count your chickens before they hatch",
+          "depth": 2,
+          "name": "don't count your chickens before they hatch"
+        },
+        {
+          "text": "don't assume success before it happens",
+          "depth": 2,
+          "name": "don't assume success before it happens"
+        },
+        {
+          "text": "\"We planted wheat and corn, but don't count your chickens before they hatch — the harvest depends on the weather.\"",
+          "depth": 2,
+          "name": "\"We planted wheat and corn, but don't count your chickens before they hatch — the harvest depends on the weather.\""
+        },
+        {
+          "text": "the grass is always greener on the other side",
+          "depth": 2,
+          "name": "the grass is always greener on the other side"
+        },
+        {
+          "text": "other situations always seem better than your own",
+          "depth": 2,
+          "name": "other situations always seem better than your own"
+        },
+        {
+          "text": "\"He wants to grow tomatoes instead of potatoes, but the grass is always greener on the other side.\"",
+          "depth": 2,
+          "name": "\"He wants to grow tomatoes instead of potatoes, but the grass is always greener on the other side.\""
+        },
+        {
+          "text": "separate the wheat from the chaff",
+          "depth": 2,
+          "name": "separate the wheat from the chaff"
+        },
+        {
+          "text": "distinguish valuable things from worthless ones",
+          "depth": 2,
+          "name": "distinguish valuable things from worthless ones"
+        },
+        {
+          "text": "\"At harvest time, we separate the wheat from the chaff — keep the best carrots, onions, and lettuce for market.\"",
+          "depth": 2,
+          "name": "\"At harvest time, we separate the wheat from the chaff — keep the best carrots, onions, and lettuce for market.\""
+        },
+        {
+          "text": "put all your eggs in one basket",
+          "depth": 2,
+          "name": "put all your eggs in one basket"
+        },
+        {
+          "text": "risk everything on a single plan",
+          "depth": 2,
+          "name": "risk everything on a single plan"
+        },
+        {
+          "text": "\"Growing only corn is putting all your eggs in one basket — plant some beans and peas too.\"",
+          "depth": 2,
+          "name": "\"Growing only corn is putting all your eggs in one basket — plant some beans and peas too.\""
+        },
+        {
+          "text": "till the cows come home",
+          "depth": 2,
+          "name": "till the cows come home"
+        },
+        {
+          "text": "for a very long time",
+          "depth": 2,
+          "name": "for a very long time"
+        },
+        {
+          "text": "\"The children played near the goat pen till the cows come home — they didn't want to leave the farm.\"",
+          "depth": 2,
+          "name": "\"The children played near the goat pen till the cows come home — they didn't want to leave the farm.\""
+        },
+        {
+          "text": "like a bull in a china shop",
+          "depth": 2,
+          "name": "like a bull in a china shop"
+        },
+        {
+          "text": "very clumsy or careless in a delicate situation",
+          "depth": 2,
+          "name": "very clumsy or careless in a delicate situation"
+        },
+        {
+          "text": "\"The donkey knocked over the fence like a bull in a china shop and scared the hen and her lamb.\"",
+          "depth": 2,
+          "name": "\"The donkey knocked over the fence like a bull in a china shop and scared the hen and her lamb.\""
+        },
+        {
+          "text": "reap what you sow",
+          "depth": 2,
+          "name": "reap what you sow"
+        },
+        {
+          "text": "face the consequences of your actions",
+          "depth": 2,
+          "name": "face the consequences of your actions"
+        },
+        {
+          "text": "\"If you plant strawberry and blueberry bushes now, you'll reap what you sow next summer.\"",
+          "depth": 2,
+          "name": "\"If you plant strawberry and blueberry bushes now, you'll reap what you sow next summer.\""
+        },
+        {
+          "text": "a wild goose chase",
+          "depth": 2,
+          "name": "a wild goose chase"
+        },
+        {
+          "text": "a pointless or hopeless search",
+          "depth": 2,
+          "name": "a pointless or hopeless search"
+        },
+        {
+          "text": "\"Looking for the missing duck near the grape vine was a wild goose chase — it was hiding behind the pig pen.\"",
+          "depth": 2,
+          "name": "\"Looking for the missing duck near the grape vine was a wild goose chase — it was hiding behind the pig pen.\""
+        },
+        {
+          "text": "go to seed",
+          "depth": 2,
+          "name": "go to seed"
+        },
+        {
+          "text": "decline in quality or appearance",
+          "depth": 2,
+          "name": "decline in quality or appearance"
+        },
+        {
+          "text": "\"The garden went to seed after no one looked after it.\"",
+          "depth": 2,
+          "name": "\"The garden went to seed after no one looked after it.\""
+        },
+        {
+          "text": "make hay while the sun shines",
+          "depth": 2,
+          "name": "make hay while the sun shines"
+        },
+        {
+          "text": "take advantage of a good situation while it lasts",
+          "depth": 2,
+          "name": "take advantage of a good situation while it lasts"
+        },
+        {
+          "text": "\"The weather is perfect — let's make hay while the sun shines.\"",
+          "depth": 2,
+          "name": "\"The weather is perfect — let's make hay while the sun shines.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "542:2818",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A farmer gives a tour of the farm to a group of visitors",
+          "depth": 1,
+          "name": "Scene: A farmer gives a tour of the farm to a group of visitors"
+        },
+        {
+          "text": "Farmer:",
+          "depth": 2,
+          "name": "Farmer:"
+        },
+        {
+          "text": "Welcome to the farm! Over here we have the cow barn. We milk the cows every morning.",
+          "depth": 2,
+          "name": "Welcome to the farm! Over here we have the cow barn. We milk the cows every morning."
+        },
+        {
+          "text": "Visitor 1:",
+          "depth": 2,
+          "name": "Visitor 1:"
+        },
+        {
+          "text": "How many animals do you have? I can see a horse, some sheep, and a goat near the fence.",
+          "depth": 2,
+          "name": "How many animals do you have? I can see a horse, some sheep, and a goat near the fence."
+        },
+        {
+          "text": "Farmer:",
+          "depth": 2,
+          "name": "Farmer:"
+        },
+        {
+          "text": "We have about fifty animals. The pig pen is behind the barn, and the chicken coop is next to the wheat field.",
+          "depth": 2,
+          "name": "We have about fifty animals. The pig pen is behind the barn, and the chicken coop is next to the wheat field."
+        },
+        {
+          "text": "Visitor 2:",
+          "depth": 2,
+          "name": "Visitor 2:"
+        },
+        {
+          "text": "What do the chickens eat? I see a rooster and several hens walking around.",
+          "depth": 2,
+          "name": "What do the chickens eat? I see a rooster and several hens walking around."
+        },
+        {
+          "text": "Farmer:",
+          "depth": 2,
+          "name": "Farmer:"
+        },
+        {
+          "text": "They eat corn and grain. The hen lays eggs every day, and the rooster wakes us at dawn.",
+          "depth": 2,
+          "name": "They eat corn and grain. The hen lays eggs every day, and the rooster wakes us at dawn."
+        },
+        {
+          "text": "Visitor 1:",
+          "depth": 2,
+          "name": "Visitor 1:"
+        },
+        {
+          "text": "What crops do you grow? I noticed a big field of potato and tomato plants.",
+          "depth": 2,
+          "name": "What crops do you grow? I noticed a big field of potato and tomato plants."
+        },
+        {
+          "text": "Farmer:",
+          "depth": 2,
+          "name": "Farmer:"
+        },
+        {
+          "text": "We grow carrot, lettuce, onion, pumpkin, bean, pea, cabbage, and beetroot — everything for the local market.",
+          "depth": 2,
+          "name": "We grow carrot, lettuce, onion, pumpkin, bean, pea, cabbage, and beetroot — everything for the local market."
+        },
+        {
+          "text": "Visitor 2:",
+          "depth": 2,
+          "name": "Visitor 2:"
+        },
+        {
+          "text": "And the fruit trees? I can see an apple tree and a cherry tree over there.",
+          "depth": 2,
+          "name": "And the fruit trees? I can see an apple tree and a cherry tree over there."
+        },
+        {
+          "text": "Farmer:",
+          "depth": 2,
+          "name": "Farmer:"
+        },
+        {
+          "text": "Yes — we also have a pear tree, an orange tree, and a peach tree. The strawberry and blueberry bushes are behind the duck pond.",
+          "depth": 2,
+          "name": "Yes — we also have a pear tree, an orange tree, and a peach tree. The strawberry and blueberry bushes are behind the duck pond."
+        },
+        {
+          "text": "Visitor 1:",
+          "depth": 2,
+          "name": "Visitor 1:"
+        },
+        {
+          "text": "Is that a turkey next to the donkey? They seem like an odd pair.",
+          "depth": 2,
+          "name": "Is that a turkey next to the donkey? They seem like an odd pair."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "542:2853",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The farmer grows animals.\"",
+          "depth": 2,
+          "name": "❌ \"The farmer grows animals.\""
+        },
+        {
+          "text": "✅ \"The farmer raises / keeps animals.\"",
+          "depth": 2,
+          "name": "✅ \"The farmer raises / keeps animals.\""
+        },
+        {
+          "text": "'Grow' is for plants and crops. 'Raise' or 'keep' is for animals.",
+          "depth": 2,
+          "name": "'Grow' is for plants and crops. 'Raise' or 'keep' is for animals."
+        },
+        {
+          "text": "❌ \"The sheep is eating grasses.\"",
+          "depth": 2,
+          "name": "❌ \"The sheep is eating grasses.\""
+        },
+        {
+          "text": "✅ \"The sheep is eating grass.\"",
+          "depth": 2,
+          "name": "✅ \"The sheep is eating grass.\""
+        },
+        {
+          "text": "'Grass' is uncountable in this context. 'Grasses' refers to different species of grass (scientific).",
+          "depth": 2,
+          "name": "'Grass' is uncountable in this context. 'Grasses' refers to different species of grass (scientific)."
+        },
+        {
+          "text": "❌ \"He feeded the chickens this morning.\"",
+          "depth": 2,
+          "name": "❌ \"He feeded the chickens this morning.\""
+        },
+        {
+          "text": "✅ \"He fed the chickens this morning.\"",
+          "depth": 2,
+          "name": "✅ \"He fed the chickens this morning.\""
+        },
+        {
+          "text": "'Feed' is irregular: feed–fed–fed. There is no 'feeded'.",
+          "depth": 2,
+          "name": "'Feed' is irregular: feed–fed–fed. There is no 'feeded'."
+        },
+        {
+          "text": "❌ \"There are many sheeps on the farm.\"",
+          "depth": 2,
+          "name": "❌ \"There are many sheeps on the farm.\""
+        },
+        {
+          "text": "✅ \"There are many sheep on the farm.\"",
+          "depth": 2,
+          "name": "✅ \"There are many sheep on the farm.\""
+        },
+        {
+          "text": "'Sheep' is the same in singular and plural: one sheep, ten sheep. Same for 'fish' and 'deer'.",
+          "depth": 2,
+          "name": "'Sheep' is the same in singular and plural: one sheep, ten sheep. Same for 'fish' and 'deer'."
+        },
+        {
+          "text": "❌ \"The cow gives us a milk.\"",
+          "depth": 2,
+          "name": "❌ \"The cow gives us a milk.\""
+        },
+        {
+          "text": "✅ \"The cow gives us milk.\"",
+          "depth": 2,
+          "name": "✅ \"The cow gives us milk.\""
+        },
+        {
+          "text": "'Milk' is uncountable — no 'a'. Say 'some milk', 'a glass of milk', or 'a bottle of milk'.",
+          "depth": 2,
+          "name": "'Milk' is uncountable — no 'a'. Say 'some milk', 'a glass of milk', or 'a bottle of milk'."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "542:2877",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how farm vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how farm vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "farm",
+          "depth": 2,
+          "name": "farm"
+        },
+        {
+          "text": "farm / farmer",
+          "depth": 2,
+          "name": "farm / farmer"
+        },
+        {
+          "text": "farm",
+          "depth": 2,
+          "name": "farm"
+        },
+        {
+          "text": "farming",
+          "depth": 2,
+          "name": "farming"
+        },
+        {
+          "text": "harvest",
+          "depth": 2,
+          "name": "harvest"
+        },
+        {
+          "text": "harvest / harvester",
+          "depth": 2,
+          "name": "harvest / harvester"
+        },
+        {
+          "text": "harvest",
+          "depth": 2,
+          "name": "harvest"
+        },
+        {
+          "text": "harvested",
+          "depth": 2,
+          "name": "harvested"
+        },
+        {
+          "text": "plough",
+          "depth": 2,
+          "name": "plough"
+        },
+        {
+          "text": "plough",
+          "depth": 2,
+          "name": "plough"
+        },
+        {
+          "text": "plough",
+          "depth": 2,
+          "name": "plough"
+        },
+        {
+          "text": "ploughed",
+          "depth": 2,
+          "name": "ploughed"
+        },
+        {
+          "text": "breed",
+          "depth": 2,
+          "name": "breed"
+        },
+        {
+          "text": "breed / breeder",
+          "depth": 2,
+          "name": "breed / breeder"
+        },
+        {
+          "text": "breed",
+          "depth": 2,
+          "name": "breed"
+        },
+        {
+          "text": "breeding",
+          "depth": 2,
+          "name": "breeding"
+        },
+        {
+          "text": "milk",
+          "depth": 2,
+          "name": "milk"
+        },
+        {
+          "text": "milk",
+          "depth": 2,
+          "name": "milk"
+        },
+        {
+          "text": "milk",
+          "depth": 2,
+          "name": "milk"
+        },
+        {
+          "text": "milky",
+          "depth": 2,
+          "name": "milky"
+        },
+        {
+          "text": "irrigate",
+          "depth": 2,
+          "name": "irrigate"
+        },
+        {
+          "text": "irrigation",
+          "depth": 2,
+          "name": "irrigation"
+        },
+        {
+          "text": "irrigate",
+          "depth": 2,
+          "name": "irrigate"
+        },
+        {
+          "text": "irrigated",
+          "depth": 2,
+          "name": "irrigated"
+        },
+        {
+          "text": "graze",
+          "depth": 2,
+          "name": "graze"
+        },
+        {
+          "text": "grazing",
+          "depth": 2,
+          "name": "grazing"
+        },
+        {
+          "text": "graze",
+          "depth": 2,
+          "name": "graze"
+        },
+        {
+          "text": "grazing",
+          "depth": 2,
+          "name": "grazing"
+        },
+        {
+          "text": "feed",
+          "depth": 2,
+          "name": "feed"
+        },
+        {
+          "text": "feed / feeder",
+          "depth": 2,
+          "name": "feed / feeder"
+        },
+        {
+          "text": "feed",
+          "depth": 2,
+          "name": "feed"
+        },
+        {
+          "text": "fed",
+          "depth": 2,
+          "name": "fed"
+        },
+        {
+          "text": "crop",
+          "depth": 2,
+          "name": "crop"
+        },
+        {
+          "text": "crop",
+          "depth": 2,
+          "name": "crop"
+        },
+        {
+          "text": "crop",
+          "depth": 2,
+          "name": "crop"
+        },
+        {
+          "text": "cropped",
+          "depth": 2,
+          "name": "cropped"
+        },
+        {
+          "text": "fertile",
+          "depth": 2,
+          "name": "fertile"
+        },
+        {
+          "text": "fertility / fertiliser",
+          "depth": 2,
+          "name": "fertility / fertiliser"
+        },
+        {
+          "text": "fertilise",
+          "depth": 2,
+          "name": "fertilise"
+        },
+        {
+          "text": "fertile",
+          "depth": 2,
+          "name": "fertile"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "542:2937",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The farmer drove the __________ across the field to plough the soil.",
+          "depth": 1,
+          "name": "1. The farmer drove the __________ across the field to plough the soil."
+        },
+        {
+          "text": "2.  We collected fresh eggs from the __________ house every morning.",
+          "depth": 1,
+          "name": "2. We collected fresh eggs from the __________ house every morning."
+        },
+        {
+          "text": "3.  The cows grazed peacefully in the __________ behind the barn.",
+          "depth": 1,
+          "name": "3. The cows grazed peacefully in the __________ behind the barn."
+        },
+        {
+          "text": "4.  The __________ stood in the wheat field to scare away the birds.",
+          "depth": 1,
+          "name": "4. The __________ stood in the wheat field to scare away the birds."
+        },
+        {
+          "text": "5.  She carried two __________ of fresh milk to the farmhouse.",
+          "depth": 1,
+          "name": "5. She carried two __________ of fresh milk to the farmhouse."
+        },
+        {
+          "text": "6.  The __________ bales were stacked inside the barn for winter.",
+          "depth": 1,
+          "name": "6. The __________ bales were stacked inside the barn for winter."
+        },
+        {
+          "text": "7.  Water for the crops came from an __________ system in the fields.",
+          "depth": 1,
+          "name": "7. Water for the crops came from an __________ system in the fields."
+        },
+        {
+          "text": "8.  The sheepdog helped __________ up the sheep before dark.",
+          "depth": 1,
+          "name": "8. The sheepdog helped __________ up the sheep before dark."
+        },
+        {
+          "text": "9.  The pigs rolled around in their muddy __________.",
+          "depth": 1,
+          "name": "9. The pigs rolled around in their muddy __________."
+        },
+        {
+          "text": "10. After the harvest, the farmer stored the __________ in large sacks.",
+          "depth": 1,
+          "name": "10. After the harvest, the farmer stored the __________ in large sacks."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. tractor  2. hen  3. field  4. scarecrow  5. buckets  6. hay  7. irrigation  8. round  9. pen  10. grain",
+          "depth": 2,
+          "name": "1. tractor 2. hen 3. field 4. scarecrow 5. buckets 6. hay 7. irrigation 8. round 9. pen 10. grain"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "542:2955",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Farm vs Ranch",
+          "depth": 2,
+          "name": "Farm vs Ranch"
+        },
+        {
+          "text": "In British English, 'farm' is the universal term. In American English, a 'ranch' specifically raises cattle or horses on large open land, while a 'farm' grows crops or keeps smaller animals.",
+          "depth": 2,
+          "name": "In British English, 'farm' is the universal term. In American English, a 'ranch' specifically raises cattle or horses on large open land, while a 'farm' grows crops or keeps smaller animals."
+        },
+        {
+          "text": "🇬🇧 vs 🇺🇸 Vocabulary",
+          "depth": 2,
+          "name": "🇬🇧 vs 🇺🇸 Vocabulary"
+        },
+        {
+          "text": "British: 'plough' / American: 'plow'. British: 'maize' / American: 'corn'. British: 'cockerel' / American: 'rooster'. British: 'tyre' / American: 'tire' (on the tractor).",
+          "depth": 2,
+          "name": "British: 'plough' / American: 'plow'. British: 'maize' / American: 'corn'. British: 'cockerel' / American: 'rooster'. British: 'tyre' / American: 'tire' (on the tractor)."
+        },
+        {
+          "text": "Animal Sounds in English",
+          "depth": 2,
+          "name": "Animal Sounds in English"
+        },
+        {
+          "text": "English animal sounds are specific: cows 'moo', sheep 'baa', chickens 'cluck', pigs 'oink', horses 'neigh', dogs 'bark', roosters 'cock-a-doodle-doo'. These appear in children's books and nursery rhymes.",
+          "depth": 2,
+          "name": "English animal sounds are specific: cows 'moo', sheep 'baa', chickens 'cluck', pigs 'oink', horses 'neigh', dogs 'bark', roosters 'cock-a-doodle-doo'. These appear in children's books and nursery rhymes."
+        },
+        {
+          "text": "Collective Nouns for Animals",
+          "depth": 2,
+          "name": "Collective Nouns for Animals"
+        },
+        {
+          "text": "English uses special group words: 'a herd of cows', 'a flock of sheep', 'a litter of piglets', 'a pack of dogs'. Using the wrong collective noun sounds unnatural.",
+          "depth": 2,
+          "name": "English uses special group words: 'a herd of cows', 'a flock of sheep', 'a litter of piglets', 'a pack of dogs'. Using the wrong collective noun sounds unnatural."
+        },
+        {
+          "text": "Farm-to-Table Movement",
+          "depth": 2,
+          "name": "Farm-to-Table Movement"
+        },
+        {
+          "text": "'Farm-to-table' or 'farm-to-fork' describes food that goes directly from the farm to the consumer. It's a growing trend in restaurants and supermarkets across English-speaking countries.",
+          "depth": 2,
+          "name": "'Farm-to-table' or 'farm-to-fork' describes food that goes directly from the farm to the consumer. It's a growing trend in restaurants and supermarkets across English-speaking countries."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "542:2974",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "barn",
+          "depth": 2,
+          "name": "barn"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ door, in the ~, hay ~",
+          "depth": 2,
+          "name": "~ door, in the ~, hay ~"
+        },
+        {
+          "text": "tractor",
+          "depth": 2,
+          "name": "tractor"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "drive a ~, ~ wheel, farm ~",
+          "depth": 2,
+          "name": "drive a ~, ~ wheel, farm ~"
+        },
+        {
+          "text": "cow",
+          "depth": 2,
+          "name": "cow"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "dairy ~, ~ milk, herd of ~s",
+          "depth": 2,
+          "name": "dairy ~, ~ milk, herd of ~s"
+        },
+        {
+          "text": "chicken",
+          "depth": 2,
+          "name": "chicken"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ coop, fried ~, ~ egg, free-range ~",
+          "depth": 2,
+          "name": "~ coop, fried ~, ~ egg, free-range ~"
+        },
+        {
+          "text": "field",
+          "depth": 2,
+          "name": "field"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "wheat ~, open ~, ~ of corn",
+          "depth": 2,
+          "name": "wheat ~, open ~, ~ of corn"
+        },
+        {
+          "text": "fence",
+          "depth": 2,
+          "name": "fence"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "wooden ~, ~ post, ~ gate",
+          "depth": 2,
+          "name": "wooden ~, ~ post, ~ gate"
+        },
+        {
+          "text": "hay",
+          "depth": 2,
+          "name": "hay"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ bale, ~ stack, ~ fever",
+          "depth": 2,
+          "name": "~ bale, ~ stack, ~ fever"
+        },
+        {
+          "text": "crop",
+          "depth": 2,
+          "name": "crop"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "grow ~s, ~ rotation, cash ~",
+          "depth": 2,
+          "name": "grow ~s, ~ rotation, cash ~"
+        },
+        {
+          "text": "sheep",
+          "depth": 2,
+          "name": "sheep"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "flock of ~, ~ dog, ~ wool",
+          "depth": 2,
+          "name": "flock of ~, ~ dog, ~ wool"
+        },
+        {
+          "text": "harvest",
+          "depth": 2,
+          "name": "harvest"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ time, ~ season, ~ the crops",
+          "depth": 2,
+          "name": "~ time, ~ season, ~ the crops"
+        }
+      ]
+    }
+  }
+}

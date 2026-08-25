@@ -1,0 +1,1566 @@
+{
+  "unitId": "ice-cream-shop",
+  "name": "The Ice Cream Shop",
+  "subtopics": [
+    {
+      "id": "flavors",
+      "title": "Flavors",
+      "wordIds": [
+        "vanilla",
+        "chocolate",
+        "strawberry",
+        "mint",
+        "cookie-dough",
+        "caramel",
+        "mango",
+        "pistachio",
+        "coffee",
+        "bubblegum"
+      ]
+    },
+    {
+      "id": "types-styles",
+      "title": "Types & Styles",
+      "wordIds": [
+        "scoop",
+        "cone",
+        "sundae",
+        "milkshake",
+        "sorbet",
+        "gelato",
+        "frozen-yogurt",
+        "popsicle",
+        "float",
+        "banana-split"
+      ]
+    },
+    {
+      "id": "toppings",
+      "title": "Toppings",
+      "wordIds": [
+        "sprinkles",
+        "whipped-cream",
+        "hot-fudge",
+        "caramel-sauce",
+        "nuts",
+        "cherry",
+        "cookie-crumble",
+        "gummy-bears",
+        "marshmallow",
+        "chocolate-chips"
+      ]
+    },
+    {
+      "id": "serving",
+      "title": "Serving",
+      "wordIds": [
+        "waffle-cone",
+        "sugar-cone",
+        "cup",
+        "spoon",
+        "bowl",
+        "straw",
+        "napkin",
+        "lid",
+        "tray",
+        "take-out-box"
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Equipment",
+      "wordIds": [
+        "freezer",
+        "display-case",
+        "scoop-tool",
+        "blender",
+        "soft-serve-machine",
+        "waffle-iron",
+        "topping-bar",
+        "cash-register",
+        "menu",
+        "chalkboard"
+      ]
+    },
+    {
+      "id": "the-shop",
+      "title": "The Shop",
+      "wordIds": [
+        "counter",
+        "line",
+        "window",
+        "bench",
+        "umbrella",
+        "trash-can",
+        "sign",
+        "awning",
+        "neon-light",
+        "outdoor-seating"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "vanilla",
+      "label": "Vanilla",
+      "ipa": "/vəˈnɪlə/",
+      "cefr": "B1",
+      "imageNodeId": "119:815"
+    },
+    {
+      "kind": "card",
+      "id": "chocolate",
+      "label": "Chocolate",
+      "ipa": "/ˈtʃɒklɪt/",
+      "cefr": "B1",
+      "imageNodeId": "119:819"
+    },
+    {
+      "kind": "card",
+      "id": "strawberry",
+      "label": "Strawberry",
+      "ipa": "/ˈstrɔːˌbɛri/",
+      "cefr": "B2",
+      "imageNodeId": "119:823"
+    },
+    {
+      "kind": "card",
+      "id": "mint",
+      "label": "Mint",
+      "ipa": "/mɪnt/",
+      "cefr": "B1",
+      "imageNodeId": "119:827"
+    },
+    {
+      "kind": "card",
+      "id": "cookie-dough",
+      "label": "Cookie Dough",
+      "ipa": "/ˈkʊki doʊ/",
+      "cefr": "B2",
+      "imageNodeId": "119:831"
+    },
+    {
+      "kind": "card",
+      "id": "caramel",
+      "label": "Caramel",
+      "ipa": "/ˈkærəmɛl/",
+      "cefr": "B1",
+      "imageNodeId": "119:835"
+    },
+    {
+      "kind": "card",
+      "id": "mango",
+      "label": "Mango",
+      "ipa": "/ˈmæŋɡoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "119:839"
+    },
+    {
+      "kind": "card",
+      "id": "pistachio",
+      "label": "Pistachio",
+      "ipa": "/pɪˈstæʃiˌoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "119:843"
+    },
+    {
+      "kind": "card",
+      "id": "coffee",
+      "label": "Coffee",
+      "ipa": "/ˈkɒfi/",
+      "cefr": "B1",
+      "imageNodeId": "119:847"
+    },
+    {
+      "kind": "card",
+      "id": "bubblegum",
+      "label": "Bubblegum",
+      "ipa": "/ˈbʌbəlˌɡʌm/",
+      "cefr": "B1",
+      "imageNodeId": "119:851"
+    },
+    {
+      "kind": "card",
+      "id": "scoop",
+      "label": "Scoop",
+      "ipa": "/skuːp/",
+      "cefr": "B1",
+      "imageNodeId": "119:860"
+    },
+    {
+      "kind": "card",
+      "id": "cone",
+      "label": "Cone",
+      "ipa": "/koʊn/",
+      "cefr": "B1",
+      "imageNodeId": "119:864"
+    },
+    {
+      "kind": "card",
+      "id": "sundae",
+      "label": "Sundae",
+      "ipa": "/ˈsʌndeɪ/",
+      "cefr": "B1",
+      "imageNodeId": "119:868"
+    },
+    {
+      "kind": "card",
+      "id": "milkshake",
+      "label": "Milkshake",
+      "ipa": "/ˈmɪlkˌʃeɪk/",
+      "cefr": "B1",
+      "imageNodeId": "119:872"
+    },
+    {
+      "kind": "card",
+      "id": "sorbet",
+      "label": "Sorbet",
+      "ipa": "/sɔːrˈbeɪ/",
+      "cefr": "B1",
+      "imageNodeId": "119:876"
+    },
+    {
+      "kind": "card",
+      "id": "gelato",
+      "label": "Gelato",
+      "ipa": "/dʒəˈlɑːtoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "119:880"
+    },
+    {
+      "kind": "card",
+      "id": "frozen-yogurt",
+      "label": "Frozen Yogurt",
+      "ipa": "/ˈfroʊzən ˈjoʊɡərt/",
+      "cefr": "B2",
+      "imageNodeId": "119:884"
+    },
+    {
+      "kind": "card",
+      "id": "popsicle",
+      "label": "Popsicle",
+      "ipa": "/ˈpɒpsɪkəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:888"
+    },
+    {
+      "kind": "card",
+      "id": "float",
+      "label": "Float",
+      "ipa": "/floʊt/",
+      "cefr": "B1",
+      "imageNodeId": "119:892"
+    },
+    {
+      "kind": "card",
+      "id": "banana-split",
+      "label": "Banana Split",
+      "ipa": "/bəˈnænə splɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:896"
+    },
+    {
+      "kind": "card",
+      "id": "sprinkles",
+      "label": "Sprinkles",
+      "ipa": "/ˈsprɪŋkəlz/",
+      "cefr": "B1",
+      "imageNodeId": "119:905"
+    },
+    {
+      "kind": "card",
+      "id": "whipped-cream",
+      "label": "Whipped Cream",
+      "ipa": "/wɪpt kriːm/",
+      "cefr": "B2",
+      "imageNodeId": "119:909"
+    },
+    {
+      "kind": "card",
+      "id": "hot-fudge",
+      "label": "Hot Fudge",
+      "ipa": "/hɒt fʌdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "119:913"
+    },
+    {
+      "kind": "card",
+      "id": "caramel-sauce",
+      "label": "Caramel Sauce",
+      "ipa": "/ˈkærəmɛl sɔːs/",
+      "cefr": "B2",
+      "imageNodeId": "119:917"
+    },
+    {
+      "kind": "card",
+      "id": "nuts",
+      "label": "Nuts",
+      "ipa": "/nʌts/",
+      "cefr": "B1",
+      "imageNodeId": "119:921"
+    },
+    {
+      "kind": "card",
+      "id": "cherry",
+      "label": "Cherry",
+      "ipa": "/ˈtʃɛri/",
+      "cefr": "B1",
+      "imageNodeId": "119:925"
+    },
+    {
+      "kind": "card",
+      "id": "cookie-crumble",
+      "label": "Cookie Crumble",
+      "ipa": "/ˈkʊki ˈkrʌmbəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:929"
+    },
+    {
+      "kind": "card",
+      "id": "gummy-bears",
+      "label": "Gummy Bears",
+      "ipa": "/ˈɡʌmi bɛərz/",
+      "cefr": "B2",
+      "imageNodeId": "119:933"
+    },
+    {
+      "kind": "card",
+      "id": "marshmallow",
+      "label": "Marshmallow",
+      "ipa": "/ˌmɑːrʃˈmæloʊ/",
+      "cefr": "B2",
+      "imageNodeId": "119:937"
+    },
+    {
+      "kind": "card",
+      "id": "chocolate-chips",
+      "label": "Chocolate Chips",
+      "ipa": "/ˈtʃɒklɪt tʃɪps/",
+      "cefr": "C1",
+      "imageNodeId": "119:941"
+    },
+    {
+      "kind": "card",
+      "id": "waffle-cone",
+      "label": "Waffle Cone",
+      "ipa": "/ˈwɒfəl koʊn/",
+      "cefr": "B2",
+      "imageNodeId": "119:950"
+    },
+    {
+      "kind": "card",
+      "id": "sugar-cone",
+      "label": "Sugar Cone",
+      "ipa": "/ˈʃʊɡər koʊn/",
+      "cefr": "B2",
+      "imageNodeId": "119:954"
+    },
+    {
+      "kind": "card",
+      "id": "cup",
+      "label": "Cup",
+      "ipa": "/kʌp/",
+      "cefr": "B1",
+      "imageNodeId": "119:958"
+    },
+    {
+      "kind": "card",
+      "id": "spoon",
+      "label": "Spoon",
+      "ipa": "/spuːn/",
+      "cefr": "B1",
+      "imageNodeId": "119:962"
+    },
+    {
+      "kind": "card",
+      "id": "bowl",
+      "label": "Bowl",
+      "ipa": "/boʊl/",
+      "cefr": "B1",
+      "imageNodeId": "119:966"
+    },
+    {
+      "kind": "card",
+      "id": "straw",
+      "label": "Straw",
+      "ipa": "/strɔː/",
+      "cefr": "B1",
+      "imageNodeId": "119:970"
+    },
+    {
+      "kind": "card",
+      "id": "napkin",
+      "label": "Napkin",
+      "ipa": "/ˈnæpkɪn/",
+      "cefr": "B1",
+      "imageNodeId": "119:974"
+    },
+    {
+      "kind": "card",
+      "id": "lid",
+      "label": "Lid",
+      "ipa": "/lɪd/",
+      "cefr": "B1",
+      "imageNodeId": "119:978"
+    },
+    {
+      "kind": "card",
+      "id": "tray",
+      "label": "Tray",
+      "ipa": "/treɪ/",
+      "cefr": "B1",
+      "imageNodeId": "119:982"
+    },
+    {
+      "kind": "card",
+      "id": "take-out-box",
+      "label": "Take Out Box",
+      "ipa": "/teɪk aʊt bɒks/",
+      "cefr": "C1",
+      "imageNodeId": "119:986"
+    },
+    {
+      "kind": "card",
+      "id": "freezer",
+      "label": "Freezer",
+      "ipa": "/ˈfriːzər/",
+      "cefr": "B1",
+      "imageNodeId": "119:995"
+    },
+    {
+      "kind": "card",
+      "id": "display-case",
+      "label": "Display Case",
+      "ipa": "/dɪˈspleɪ keɪs/",
+      "cefr": "B2",
+      "imageNodeId": "119:999"
+    },
+    {
+      "kind": "card",
+      "id": "scoop-tool",
+      "label": "Scoop Tool",
+      "ipa": "/skuːp tuːl/",
+      "cefr": "B2",
+      "imageNodeId": "119:1003"
+    },
+    {
+      "kind": "card",
+      "id": "blender",
+      "label": "Blender",
+      "ipa": "/ˈblɛndər/",
+      "cefr": "B1",
+      "imageNodeId": "119:1007"
+    },
+    {
+      "kind": "card",
+      "id": "soft-serve-machine",
+      "label": "Soft Serve Machine",
+      "ipa": "/sɒft sɜːrv məˈʃiːn/",
+      "cefr": "C1",
+      "imageNodeId": "119:1011"
+    },
+    {
+      "kind": "card",
+      "id": "waffle-iron",
+      "label": "Waffle Iron",
+      "ipa": "/ˈwɒfəl ˈaɪərn/",
+      "cefr": "B2",
+      "imageNodeId": "119:1015"
+    },
+    {
+      "kind": "card",
+      "id": "topping-bar",
+      "label": "Topping Bar",
+      "ipa": "/ˈtɒpɪŋ bɑːr/",
+      "cefr": "B2",
+      "imageNodeId": "119:1019"
+    },
+    {
+      "kind": "card",
+      "id": "cash-register",
+      "label": "Cash Register",
+      "ipa": "/kæʃ ˈrɛdʒɪstər/",
+      "cefr": "B2",
+      "imageNodeId": "119:1023"
+    },
+    {
+      "kind": "card",
+      "id": "menu",
+      "label": "Menu",
+      "ipa": "/ˈmɛnjuː/",
+      "cefr": "B1",
+      "imageNodeId": "119:1027"
+    },
+    {
+      "kind": "card",
+      "id": "chalkboard",
+      "label": "Chalkboard",
+      "ipa": "/ˈtʃɔːkˌbɔːrd/",
+      "cefr": "B2",
+      "imageNodeId": "119:1031"
+    },
+    {
+      "kind": "card",
+      "id": "counter",
+      "label": "Counter",
+      "ipa": "/ˈkaʊntər/",
+      "cefr": "B1",
+      "imageNodeId": "119:1040"
+    },
+    {
+      "kind": "card",
+      "id": "line",
+      "label": "Line",
+      "ipa": "/laɪn/",
+      "cefr": "B1",
+      "imageNodeId": "119:1044"
+    },
+    {
+      "kind": "card",
+      "id": "window",
+      "label": "Window",
+      "ipa": "/ˈwɪndoʊ/",
+      "cefr": "B1",
+      "imageNodeId": "119:1048"
+    },
+    {
+      "kind": "card",
+      "id": "bench",
+      "label": "Bench",
+      "ipa": "/bɛntʃ/",
+      "cefr": "B1",
+      "imageNodeId": "119:1052"
+    },
+    {
+      "kind": "card",
+      "id": "umbrella",
+      "label": "Umbrella",
+      "ipa": "/ʌmˈbrɛlə/",
+      "cefr": "B1",
+      "imageNodeId": "119:1056"
+    },
+    {
+      "kind": "card",
+      "id": "trash-can",
+      "label": "Trash Can",
+      "ipa": "/træʃ kæn/",
+      "cefr": "B2",
+      "imageNodeId": "119:1060"
+    },
+    {
+      "kind": "card",
+      "id": "sign",
+      "label": "Sign",
+      "ipa": "/saɪn/",
+      "cefr": "B1",
+      "imageNodeId": "119:1064"
+    },
+    {
+      "kind": "card",
+      "id": "awning",
+      "label": "Awning",
+      "ipa": "/ˈɔːnɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "119:1068"
+    },
+    {
+      "kind": "card",
+      "id": "neon-light",
+      "label": "Neon Light",
+      "ipa": "/ˈniːɒn laɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:1072"
+    },
+    {
+      "kind": "card",
+      "id": "outdoor-seating",
+      "label": "Outdoor Seating",
+      "ipa": "/ˈaʊtˌdɔːr ˈsiːtɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "119:1076"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "553:1064",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "553:1066",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2 · Topic: The Ice Cream Shop",
+          "depth": 1,
+          "name": "Level: B2 · Topic: The Ice Cream Shop"
+        },
+        {
+          "text": "The Science of Cold Sweetness — Inside an Ice Cream Shop\n\nIce cream seems simple — frozen cream, sugar, flavouring. But the chemistry behind a smooth scoop and the business behind a successful shop are anything but simple. An ice cream shop is where food science meets sensory pleasure.\n\nThe display case is the shop's stage. Behind curved glass, steel trays hold dozens of flavours: vanilla, chocolate, strawberry, mint, cookie dough, caramel, mango, pistachio, coffee, and bubblegum — each in a vivid colour that signals its identity. A scoop tool — a rounded metal spoon with a lever mechanism — carves perfect spheres. The server places each scoop on a cone — a waffle cone for crunch, a sugar cone for sweetness — or in a cup with a spoon. A bowl serves larger portions.\n\nThe menu extends beyond scoops. A sundae layers ice cream, hot fudge or caramel sauce, whipped cream, nuts, sprinkles, a cherry, and sometimes cookie crumble or gummy bears on top. A banana split arranges three scoops between a halved banana with toppings. A milkshake blends ice cream with milk in a blender, served with a straw and a lid. A float drops a scoop into soda. Sorbet — made from fruit, sugar, and water without dairy — is a lighter alternative. Gelato — the Italian version — uses more milk and less cream, served at a slightly warmer temperature for a denser texture. Frozen yogurt emphasises tanginess over richness. A popsicle — fruit juice frozen on a stick — is the simplest form.\n\nToppings transform a basic scoop into a personalised creation. The topping bar offers sprinkles, chocolate chips, marshmallows, cookie crumble, gummy bears, nuts, and whipped cream. Hot fudge and caramel sauce are warmed. A cherry sits on top.\n\nBehind the counter, a freezer maintains temperatures between minus eighteen and minus twenty-three degrees Celsius. A soft serve machine produces the swirled, dispensed variety. A waffle iron bakes fresh cones — the smell is itself an advertisement. A blender mixes milkshakes. The cash register processes orders. The chalkboard displays today's specials.\n\nThe physical space matters. A neon light attracts attention from the street. An awning provides shade. Outdoor seating — a bench under an umbrella — extends the shop into the pavement. A sign identifies the brand. A window allows passers-by to see inside. A trash can handles napkin disposal. A tray carries multiple items. A take out box packages orders for home.\n\nIce cream is a sensory product — the temperature, the texture, the sweetness, and the visual presentation all contribute equally to the experience. A shop that neglects any one of these will lose customers to one that doesn't.",
+          "depth": 1,
+          "name": "The Science of Cold Sweetness — Inside an Ice Cream Shop Ice cream seems simple — frozen cream, sugar, flavouring. But the chemistry behind a smooth scoop and the business behind a successful shop are anything but simple. An ice cream shop is where food science meets sensory pleasure. The display case is the shop's stage. Behind curved glass, steel trays hold dozens of flavours: vanilla, chocolate, strawberry, mint, cookie dough, caramel, mango, pistachio, coffee, and bubblegum — each in a vivid colour that signals its identity. A scoop tool — a rounded metal spoon with a lever mechanism — carves perfect spheres. The server places each scoop on a cone — a waffle cone for crunch, a sugar cone for sweetness — or in a cup with a spoon. A bowl serves larger portions. The menu extends beyond scoops. A sundae layers ice cream, hot fudge or caramel sauce, whipped cream, nuts, sprinkles, a cherry, and sometimes cookie crumble or gummy bears on top. A banana split arranges three scoops between a halved banana with toppings. A milkshake blends ice cream with milk in a blender, served with a straw and a lid. A float drops a scoop into soda. Sorbet — made from fruit, sugar, and water without dairy — is a lighter alternative. Gelato — the Italian version — uses more milk and less cream, served at a slightly warmer temperature for a denser texture. Frozen yogurt emphasises tanginess over richness. A popsicle — fruit juice frozen on a stick — is the simplest form. Toppings transform a basic scoop into a personalised creation. The topping bar offers sprinkles, chocolate chips, marshmallows, cookie crumble, gummy bears, nuts, and whipped cream. Hot fudge and caramel sauce are warmed. A cherry sits on top. Behind the counter, a freezer maintains temperatures between minus eighteen and minus twenty-three degrees Celsius. A soft serve machine produces the swirled, dispensed variety. A waffle iron bakes fresh cones — the smell is itself an advertisement. A blender mixes milkshakes. The cash register processes orders. The chalkboard displays today's specials. The physical space matters. A neon light attracts attention from the street. An awning provides shade. Outdoor seating — a bench under an umbrella — extends the shop into the pavement. A sign identifies the brand. A window allows passers-by to see inside. A trash can handles napkin disposal. A tray carries multiple items. A take out box packages orders for home. Ice cream is a sensory product — the temperature, the texture, the sweetness, and the visual presentation all contribute equally to the experience. A shop that neglects any one of these will lose customers to one that doesn't."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What are the differences between ice cream, gelato, sorbet, and frozen yogurt?",
+          "depth": 1,
+          "name": "1. What are the differences between ice cream, gelato, sorbet, and frozen yogurt?"
+        },
+        {
+          "text": "2. Describe a sundae, naming at least five components from the passage.",
+          "depth": 1,
+          "name": "2. Describe a sundae, naming at least five components from the passage."
+        },
+        {
+          "text": "3. What equipment is used behind the counter? Name four items and their purposes.",
+          "depth": 1,
+          "name": "3. What equipment is used behind the counter? Name four items and their purposes."
+        },
+        {
+          "text": "4. How does the physical design of the shop (neon light, awning, window) attract customers?",
+          "depth": 1,
+          "name": "4. How does the physical design of the shop (neon light, awning, window) attract customers?"
+        },
+        {
+          "text": "5. The passage says ice cream is 'a sensory product.' What four senses does it engage, according to the text?",
+          "depth": 1,
+          "name": "5. The passage says ice cream is 'a sensory product.' What four senses does it engage, according to the text?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "553:1079",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "the cherry on top",
+          "depth": 2,
+          "name": "the cherry on top"
+        },
+        {
+          "text": "an extra good thing added to something already good",
+          "depth": 2,
+          "name": "an extra good thing added to something already good"
+        },
+        {
+          "text": "\"The whipped cream was delicious, but the cherry on top — literally — made the sundae perfect.\"",
+          "depth": 2,
+          "name": "\"The whipped cream was delicious, but the cherry on top — literally — made the sundae perfect.\""
+        },
+        {
+          "text": "cool as a cucumber",
+          "depth": 2,
+          "name": "cool as a cucumber"
+        },
+        {
+          "text": "very calm, even in a stressful situation",
+          "depth": 2,
+          "name": "very calm, even in a stressful situation"
+        },
+        {
+          "text": "\"The server was cool as a cucumber during the rush — scooping vanilla, chocolate, and mango without a pause.\"",
+          "depth": 2,
+          "name": "\"The server was cool as a cucumber during the rush — scooping vanilla, chocolate, and mango without a pause.\""
+        },
+        {
+          "text": "melt away",
+          "depth": 2,
+          "name": "melt away"
+        },
+        {
+          "text": "disappear gradually",
+          "depth": 2,
+          "name": "disappear gradually"
+        },
+        {
+          "text": "\"My stress melted away the moment I sat on the bench outside with a waffle cone and two scoops.\"",
+          "depth": 2,
+          "name": "\"My stress melted away the moment I sat on the bench outside with a waffle cone and two scoops.\""
+        },
+        {
+          "text": "have a sweet tooth",
+          "depth": 2,
+          "name": "have a sweet tooth"
+        },
+        {
+          "text": "love sugary food",
+          "depth": 2,
+          "name": "love sugary food"
+        },
+        {
+          "text": "\"Anyone with a sweet tooth would struggle to choose between the cookie dough, the caramel, and the bubblegum flavours.\"",
+          "depth": 2,
+          "name": "\"Anyone with a sweet tooth would struggle to choose between the cookie dough, the caramel, and the bubblegum flavours.\""
+        },
+        {
+          "text": "the tip of the iceberg",
+          "depth": 2,
+          "name": "the tip of the iceberg"
+        },
+        {
+          "text": "only a small part of something much larger",
+          "depth": 2,
+          "name": "only a small part of something much larger"
+        },
+        {
+          "text": "\"The display case shows twelve flavours, but that's just the tip of the iceberg — the freezer has thirty more.\"",
+          "depth": 2,
+          "name": "\"The display case shows twelve flavours, but that's just the tip of the iceberg — the freezer has thirty more.\""
+        },
+        {
+          "text": "sugar-coat something",
+          "depth": 2,
+          "name": "sugar-coat something"
+        },
+        {
+          "text": "make something seem better or more pleasant than it really is",
+          "depth": 2,
+          "name": "make something seem better or more pleasant than it really is"
+        },
+        {
+          "text": "\"Don't sugar-coat it — tell me honestly, is the pistachio gelato better than the sorbet?\"",
+          "depth": 2,
+          "name": "\"Don't sugar-coat it — tell me honestly, is the pistachio gelato better than the sorbet?\""
+        },
+        {
+          "text": "a scoop (of news/information)",
+          "depth": 2,
+          "name": "a scoop (of news/information)"
+        },
+        {
+          "text": "exclusive information (from the ice cream tool)",
+          "depth": 2,
+          "name": "exclusive information (from the ice cream tool)"
+        },
+        {
+          "text": "\"She got the scoop on the new flavours before anyone else — coffee, mint, and a seasonal strawberry.\"",
+          "depth": 2,
+          "name": "\"She got the scoop on the new flavours before anyone else — coffee, mint, and a seasonal strawberry.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "553:1111",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A family choosing ice cream at the display case of an ice cream shop",
+          "depth": 1,
+          "name": "Scene: A family choosing ice cream at the display case of an ice cream shop"
+        },
+        {
+          "text": "Server:",
+          "depth": 2,
+          "name": "Server:"
+        },
+        {
+          "text": "Welcome! Would you like a cone or a cup? We have waffle cones and sugar cones today.",
+          "depth": 2,
+          "name": "Welcome! Would you like a cone or a cup? We have waffle cones and sugar cones today."
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "A waffle cone for me, please. Two scoops — vanilla and caramel.",
+          "depth": 2,
+          "name": "A waffle cone for me, please. Two scoops — vanilla and caramel."
+        },
+        {
+          "text": "Child:",
+          "depth": 2,
+          "name": "Child:"
+        },
+        {
+          "text": "I want the bubblegum! And can I have sprinkles and chocolate chips on top?",
+          "depth": 2,
+          "name": "I want the bubblegum! And can I have sprinkles and chocolate chips on top?"
+        },
+        {
+          "text": "Server:",
+          "depth": 2,
+          "name": "Server:"
+        },
+        {
+          "text": "Of course! Sprinkles, chocolate chips, and I'll add a cherry. Would you like it in a cup or a cone?",
+          "depth": 2,
+          "name": "Of course! Sprinkles, chocolate chips, and I'll add a cherry. Would you like it in a cup or a cone?"
+        },
+        {
+          "text": "Child:",
+          "depth": 2,
+          "name": "Child:"
+        },
+        {
+          "text": "A cup with a spoon, please! Can I also have gummy bears?",
+          "depth": 2,
+          "name": "A cup with a spoon, please! Can I also have gummy bears?"
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "That's enough toppings. What about you — do you want to try the gelato? It's denser than regular ice cream.",
+          "depth": 2,
+          "name": "That's enough toppings. What about you — do you want to try the gelato? It's denser than regular ice cream."
+        },
+        {
+          "text": "Child:",
+          "depth": 2,
+          "name": "Child:"
+        },
+        {
+          "text": "What's the difference between gelato and sorbet?",
+          "depth": 2,
+          "name": "What's the difference between gelato and sorbet?"
+        },
+        {
+          "text": "Server:",
+          "depth": 2,
+          "name": "Server:"
+        },
+        {
+          "text": "Gelato uses more milk and is served warmer — creamier texture. Sorbet is dairy-free — just fruit, sugar, and water. Great if you want something lighter.",
+          "depth": 2,
+          "name": "Gelato uses more milk and is served warmer — creamier texture. Sorbet is dairy-free — just fruit, sugar, and water. Great if you want something lighter."
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "Can we also get a milkshake? Chocolate, with whipped cream.",
+          "depth": 2,
+          "name": "Can we also get a milkshake? Chocolate, with whipped cream."
+        },
+        {
+          "text": "Server:",
+          "depth": 2,
+          "name": "Server:"
+        },
+        {
+          "text": "Coming right up — I'll blend it now. Straw and lid for takeaway?",
+          "depth": 2,
+          "name": "Coming right up — I'll blend it now. Straw and lid for takeaway?"
+        },
+        {
+          "text": "Parent:",
+          "depth": 2,
+          "name": "Parent:"
+        },
+        {
+          "text": "Yes, please. We'll sit on the bench outside under the awning. The kids love the outdoor seating.",
+          "depth": 2,
+          "name": "Yes, please. We'll sit on the bench outside under the awning. The kids love the outdoor seating."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "553:1149",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I'd like a chocolate ice cream with less sprinkles and more caramel sauce.\"",
+          "depth": 2,
+          "name": "❌ \"I'd like a chocolate ice cream with less sprinkles and more caramel sauce.\""
+        },
+        {
+          "text": "✅ \"I'd like a chocolate ice cream with fewer sprinkles and more caramel sauce.\"",
+          "depth": 2,
+          "name": "✅ \"I'd like a chocolate ice cream with fewer sprinkles and more caramel sauce.\""
+        },
+        {
+          "text": "'Fewer' + countable plural: 'fewer sprinkles', 'fewer toppings', 'fewer scoops.' 'Less' + uncountable: 'less sauce', 'less cream', 'less sugar.' Sprinkles are individual countable items, so 'fewer' is correct. Common trap: when the noun looks uncountable but isn't — 'fewer chips' (countable pieces), but 'less chocolate' (uncountable substance).",
+          "depth": 2,
+          "name": "'Fewer' + countable plural: 'fewer sprinkles', 'fewer toppings', 'fewer scoops.' 'Less' + uncountable: 'less sauce', 'less cream', 'less sugar.' Sprinkles are individual countable items, so 'fewer' is correct. Common trap: when the noun looks uncountable but isn't — 'fewer chips' (countable pieces), but 'less chocolate' (uncountable substance)."
+        },
+        {
+          "text": "❌ \"This gelato tastes more good than the regular ice cream.\"",
+          "depth": 2,
+          "name": "❌ \"This gelato tastes more good than the regular ice cream.\""
+        },
+        {
+          "text": "✅ \"This gelato tastes better than the regular ice cream.\"",
+          "depth": 2,
+          "name": "✅ \"This gelato tastes better than the regular ice cream.\""
+        },
+        {
+          "text": "'Good' has an irregular comparative: 'better' (not *more good). 'Bad' → 'worse.' 'Far' → 'farther/further.' Regular comparatives: 'sweeter', 'creamier', 'smoother' (short adjectives + -er). 'More delicious', 'more expensive' (longer adjectives). Never mix: *'more sweeter', *'more better.'",
+          "depth": 2,
+          "name": "'Good' has an irregular comparative: 'better' (not *more good). 'Bad' → 'worse.' 'Far' → 'farther/further.' Regular comparatives: 'sweeter', 'creamier', 'smoother' (short adjectives + -er). 'More delicious', 'more expensive' (longer adjectives). Never mix: *'more sweeter', *'more better.'"
+        },
+        {
+          "text": "❌ \"She can't decide between the mango or the pistachio flavour.\"",
+          "depth": 2,
+          "name": "❌ \"She can't decide between the mango or the pistachio flavour.\""
+        },
+        {
+          "text": "✅ \"She can't decide between the mango and the pistachio flavour.\"",
+          "depth": 2,
+          "name": "✅ \"She can't decide between the mango and the pistachio flavour.\""
+        },
+        {
+          "text": "'Between' + 'and': 'between A and B.' Never 'between A or B.' 'Choose between vanilla and chocolate.' Compare: 'choose A or B' (without 'between'): 'Choose vanilla or chocolate.' The preposition 'between' requires 'and' because it connects two named options. 'Among' is used for three or more: 'among vanilla, chocolate, and strawberry.'",
+          "depth": 2,
+          "name": "'Between' + 'and': 'between A and B.' Never 'between A or B.' 'Choose between vanilla and chocolate.' Compare: 'choose A or B' (without 'between'): 'Choose vanilla or chocolate.' The preposition 'between' requires 'and' because it connects two named options. 'Among' is used for three or more: 'among vanilla, chocolate, and strawberry.'"
+        },
+        {
+          "text": "❌ \"I'm not used to eat such cold desserts — the sorbet gives me a headache.\"",
+          "depth": 2,
+          "name": "❌ \"I'm not used to eat such cold desserts — the sorbet gives me a headache.\""
+        },
+        {
+          "text": "✅ \"I'm not used to eating such cold desserts — the sorbet gives me a headache.\"",
+          "depth": 2,
+          "name": "✅ \"I'm not used to eating such cold desserts — the sorbet gives me a headache.\""
+        },
+        {
+          "text": "'Be used to' + gerund (-ing): 'used to eating.' 'Used to' + infinitive (past habit): 'I used to eat ice cream every day' (but I stopped). 'Get used to' + gerund: 'I'm getting used to eating cold desserts.' The 'to' in 'be used to' is a preposition (takes -ing), not part of an infinitive.",
+          "depth": 2,
+          "name": "'Be used to' + gerund (-ing): 'used to eating.' 'Used to' + infinitive (past habit): 'I used to eat ice cream every day' (but I stopped). 'Get used to' + gerund: 'I'm getting used to eating cold desserts.' The 'to' in 'be used to' is a preposition (takes -ing), not part of an infinitive."
+        },
+        {
+          "text": "❌ \"There is a outdoor seating area with benches and umbrellas outside the shop.\"",
+          "depth": 2,
+          "name": "❌ \"There is a outdoor seating area with benches and umbrellas outside the shop.\""
+        },
+        {
+          "text": "✅ \"There is an outdoor seating area with benches and umbrellas outside the shop.\"",
+          "depth": 2,
+          "name": "✅ \"There is an outdoor seating area with benches and umbrellas outside the shop.\""
+        },
+        {
+          "text": "'An' before vowel sounds: 'an outdoor', 'an ice cream', 'an umbrella.' 'A' before consonant sounds: 'a bench', 'a waffle cone.' The rule follows sound, not spelling: 'an hour' (silent h), 'a university' (starts with /j/ sound). At B2, watch for less obvious cases: 'an honest mistake', 'a European city.'",
+          "depth": 2,
+          "name": "'An' before vowel sounds: 'an outdoor', 'an ice cream', 'an umbrella.' 'A' before consonant sounds: 'a bench', 'a waffle cone.' The rule follows sound, not spelling: 'an hour' (silent h), 'a university' (starts with /j/ sound). At B2, watch for less obvious cases: 'an honest mistake', 'a European city.'"
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "553:1173",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how dessert and food vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how dessert and food vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "freeze",
+          "depth": 2,
+          "name": "freeze"
+        },
+        {
+          "text": "freezer / freezing",
+          "depth": 2,
+          "name": "freezer / freezing"
+        },
+        {
+          "text": "freeze",
+          "depth": 2,
+          "name": "freeze"
+        },
+        {
+          "text": "frozen / freezing",
+          "depth": 2,
+          "name": "frozen / freezing"
+        },
+        {
+          "text": "melt",
+          "depth": 2,
+          "name": "melt"
+        },
+        {
+          "text": "melt / melting",
+          "depth": 2,
+          "name": "melt / melting"
+        },
+        {
+          "text": "melt",
+          "depth": 2,
+          "name": "melt"
+        },
+        {
+          "text": "melted / molten",
+          "depth": 2,
+          "name": "melted / molten"
+        },
+        {
+          "text": "cream",
+          "depth": 2,
+          "name": "cream"
+        },
+        {
+          "text": "cream / creaminess",
+          "depth": 2,
+          "name": "cream / creaminess"
+        },
+        {
+          "text": "cream",
+          "depth": 2,
+          "name": "cream"
+        },
+        {
+          "text": "creamy",
+          "depth": 2,
+          "name": "creamy"
+        },
+        {
+          "text": "sweeten",
+          "depth": 2,
+          "name": "sweeten"
+        },
+        {
+          "text": "sweetness / sweetener",
+          "depth": 2,
+          "name": "sweetness / sweetener"
+        },
+        {
+          "text": "sweeten",
+          "depth": 2,
+          "name": "sweeten"
+        },
+        {
+          "text": "sweet",
+          "depth": 2,
+          "name": "sweet"
+        },
+        {
+          "text": "flavour",
+          "depth": 2,
+          "name": "flavour"
+        },
+        {
+          "text": "flavour / flavouring",
+          "depth": 2,
+          "name": "flavour / flavouring"
+        },
+        {
+          "text": "flavour",
+          "depth": 2,
+          "name": "flavour"
+        },
+        {
+          "text": "flavoured / flavoursome",
+          "depth": 2,
+          "name": "flavoured / flavoursome"
+        },
+        {
+          "text": "scoop",
+          "depth": 2,
+          "name": "scoop"
+        },
+        {
+          "text": "scoop / scooper",
+          "depth": 2,
+          "name": "scoop / scooper"
+        },
+        {
+          "text": "scoop",
+          "depth": 2,
+          "name": "scoop"
+        },
+        {
+          "text": "scooped",
+          "depth": 2,
+          "name": "scooped"
+        },
+        {
+          "text": "sprinkle",
+          "depth": 2,
+          "name": "sprinkle"
+        },
+        {
+          "text": "sprinkle / sprinkles",
+          "depth": 2,
+          "name": "sprinkle / sprinkles"
+        },
+        {
+          "text": "sprinkle",
+          "depth": 2,
+          "name": "sprinkle"
+        },
+        {
+          "text": "sprinkled",
+          "depth": 2,
+          "name": "sprinkled"
+        },
+        {
+          "text": "whip",
+          "depth": 2,
+          "name": "whip"
+        },
+        {
+          "text": "whip / whipping",
+          "depth": 2,
+          "name": "whip / whipping"
+        },
+        {
+          "text": "whip",
+          "depth": 2,
+          "name": "whip"
+        },
+        {
+          "text": "whipped",
+          "depth": 2,
+          "name": "whipped"
+        },
+        {
+          "text": "crunch",
+          "depth": 2,
+          "name": "crunch"
+        },
+        {
+          "text": "crunch / crunchiness",
+          "depth": 2,
+          "name": "crunch / crunchiness"
+        },
+        {
+          "text": "crunch",
+          "depth": 2,
+          "name": "crunch"
+        },
+        {
+          "text": "crunchy",
+          "depth": 2,
+          "name": "crunchy"
+        },
+        {
+          "text": "refresh",
+          "depth": 2,
+          "name": "refresh"
+        },
+        {
+          "text": "refreshment",
+          "depth": 2,
+          "name": "refreshment"
+        },
+        {
+          "text": "refresh",
+          "depth": 2,
+          "name": "refresh"
+        },
+        {
+          "text": "refreshing",
+          "depth": 2,
+          "name": "refreshing"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "553:1233",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A __________ tool — a rounded metal spoon with a lever — carves perfect spheres of ice cream.",
+          "depth": 1,
+          "name": "1. A __________ tool — a rounded metal spoon with a lever — carves perfect spheres of ice cream."
+        },
+        {
+          "text": "2.  A __________ layers ice cream, hot fudge, whipped cream, nuts, and a cherry.",
+          "depth": 1,
+          "name": "2. A __________ layers ice cream, hot fudge, whipped cream, nuts, and a cherry."
+        },
+        {
+          "text": "3.  __________ is made from fruit, sugar, and water without any dairy.",
+          "depth": 1,
+          "name": "3. __________ is made from fruit, sugar, and water without any dairy."
+        },
+        {
+          "text": "4.  A __________ cone is crunchier and more flavourful than a plain sugar cone.",
+          "depth": 1,
+          "name": "4. A __________ cone is crunchier and more flavourful than a plain sugar cone."
+        },
+        {
+          "text": "5.  The __________ case behind curved glass displays all available flavours.",
+          "depth": 1,
+          "name": "5. The __________ case behind curved glass displays all available flavours."
+        },
+        {
+          "text": "6.  A __________ iron bakes fresh cones, and the smell attracts customers.",
+          "depth": 1,
+          "name": "6. A __________ iron bakes fresh cones, and the smell attracts customers."
+        },
+        {
+          "text": "7.  __________ cream is sprayed from a can to top sundaes and milkshakes.",
+          "depth": 1,
+          "name": "7. __________ cream is sprayed from a can to top sundaes and milkshakes."
+        },
+        {
+          "text": "8.  A __________ split arranges three scoops between a halved fruit with toppings.",
+          "depth": 1,
+          "name": "8. A __________ split arranges three scoops between a halved fruit with toppings."
+        },
+        {
+          "text": "9.  __________ — the Italian version — uses more milk and is served at a warmer temperature.",
+          "depth": 1,
+          "name": "9. __________ — the Italian version — uses more milk and is served at a warmer temperature."
+        },
+        {
+          "text": "10. A __________ drops a scoop of ice cream into a glass of soda.",
+          "depth": 1,
+          "name": "10. A __________ drops a scoop of ice cream into a glass of soda."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. scoop  2. sundae  3. Sorbet  4. waffle  5. display  6. waffle  7. Whipped  8. banana  9. Gelato  10. float",
+          "depth": 2,
+          "name": "1. scoop 2. sundae 3. Sorbet 4. waffle 5. display 6. waffle 7. Whipped 8. banana 9. Gelato 10. float"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "553:1251",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Ice Cream vs Gelato vs Sorbet",
+          "depth": 2,
+          "name": "Ice Cream vs Gelato vs Sorbet"
+        },
+        {
+          "text": "'Ice cream' = made with cream, milk, sugar, and flavourings (high fat content). 'Gelato' = Italian style, more milk less cream, denser and smoother. 'Sorbet' = fruit-based, no dairy (vegan-friendly). 'Frozen yoghurt' (froyo) = yoghurt-based, tangy flavour, often self-serve.",
+          "depth": 2,
+          "name": "'Ice cream' = made with cream, milk, sugar, and flavourings (high fat content). 'Gelato' = Italian style, more milk less cream, denser and smoother. 'Sorbet' = fruit-based, no dairy (vegan-friendly). 'Frozen yoghurt' (froyo) = yoghurt-based, tangy flavour, often self-serve."
+        },
+        {
+          "text": "Ice Lolly vs Popsicle",
+          "depth": 2,
+          "name": "Ice Lolly vs Popsicle"
+        },
+        {
+          "text": "'Ice lolly' (BrE) = 'popsicle' (AmE) = frozen juice or flavoured water on a stick. 'Lollipop' = a hard sweet on a stick (not frozen). 'Mr Whippy' (BrE) = soft-serve ice cream from a van.",
+          "depth": 2,
+          "name": "'Ice lolly' (BrE) = 'popsicle' (AmE) = frozen juice or flavoured water on a stick. 'Lollipop' = a hard sweet on a stick (not frozen). 'Mr Whippy' (BrE) = soft-serve ice cream from a van."
+        },
+        {
+          "text": "99 Flake",
+          "depth": 2,
+          "name": "99 Flake"
+        },
+        {
+          "text": "In the UK, a '99' is a soft-serve ice cream cone with a Cadbury Flake chocolate bar pushed into the top. It's a classic British seaside treat. The origin of the name '99' is debated — nobody is entirely sure why it's called that.",
+          "depth": 2,
+          "name": "In the UK, a '99' is a soft-serve ice cream cone with a Cadbury Flake chocolate bar pushed into the top. It's a classic British seaside treat. The origin of the name '99' is debated — nobody is entirely sure why it's called that."
+        },
+        {
+          "text": "Ordering Ice Cream in English",
+          "depth": 2,
+          "name": "Ordering Ice Cream in English"
+        },
+        {
+          "text": "Useful phrases: 'Can I try the [flavour]?' (tasting before buying). 'I'd like [number] scoops of [flavour] in a [cone/cup], please.' 'What's your most popular flavour?' 'Do you have any dairy-free options?' 'Is that to have here or take away?'",
+          "depth": 2,
+          "name": "Useful phrases: 'Can I try the [flavour]?' (tasting before buying). 'I'd like [number] scoops of [flavour] in a [cone/cup], please.' 'What's your most popular flavour?' 'Do you have any dairy-free options?' 'Is that to have here or take away?'"
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "553:1267",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "scoop",
+          "depth": 2,
+          "name": "scoop"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "ice cream ~, ~ of vanilla, ~ out",
+          "depth": 2,
+          "name": "ice cream ~, ~ of vanilla, ~ out"
+        },
+        {
+          "text": "cone",
+          "depth": 2,
+          "name": "cone"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "waffle ~, sugar ~, ice cream ~",
+          "depth": 2,
+          "name": "waffle ~, sugar ~, ice cream ~"
+        },
+        {
+          "text": "flavour",
+          "depth": 2,
+          "name": "flavour"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ of the day, classic ~, ~ choice",
+          "depth": 2,
+          "name": "~ of the day, classic ~, ~ choice"
+        },
+        {
+          "text": "topping",
+          "depth": 2,
+          "name": "topping"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ bar, chocolate ~, ~ choices",
+          "depth": 2,
+          "name": "~ bar, chocolate ~, ~ choices"
+        },
+        {
+          "text": "sundae",
+          "depth": 2,
+          "name": "sundae"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "banana ~, chocolate ~, ~ glass",
+          "depth": 2,
+          "name": "banana ~, chocolate ~, ~ glass"
+        },
+        {
+          "text": "sprinkles",
+          "depth": 2,
+          "name": "sprinkles"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "rainbow ~, chocolate ~, add ~",
+          "depth": 2,
+          "name": "rainbow ~, chocolate ~, add ~"
+        },
+        {
+          "text": "gelato",
+          "depth": 2,
+          "name": "gelato"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "Italian ~, ~ shop, ~ flavour",
+          "depth": 2,
+          "name": "Italian ~, ~ shop, ~ flavour"
+        },
+        {
+          "text": "sorbet",
+          "depth": 2,
+          "name": "sorbet"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "lemon ~, fruit ~, ~ palate cleanser",
+          "depth": 2,
+          "name": "lemon ~, fruit ~, ~ palate cleanser"
+        },
+        {
+          "text": "whipped",
+          "depth": 2,
+          "name": "whipped"
+        },
+        {
+          "text": "adj",
+          "depth": 2,
+          "name": "adj"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ cream, ~ topping, freshly ~",
+          "depth": 2,
+          "name": "~ cream, ~ topping, freshly ~"
+        },
+        {
+          "text": "vanilla",
+          "depth": 2,
+          "name": "vanilla"
+        },
+        {
+          "text": "n/adj",
+          "depth": 2,
+          "name": "n/adj"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ extract, ~ bean, ~ flavour",
+          "depth": 2,
+          "name": "~ extract, ~ bean, ~ flavour"
+        }
+      ]
+    }
+  }
+}

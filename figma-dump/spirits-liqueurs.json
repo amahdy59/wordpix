@@ -1,0 +1,393 @@
+{
+  "unitId": "spirits-liqueurs",
+  "name": "Spirits & Liqueurs",
+  "subtopics": [
+    {
+      "id": "base-spirits",
+      "title": "Base Spirits",
+      "wordIds": [
+        "vodka",
+        "gin",
+        "rum",
+        "tequila",
+        "whiskey",
+        "bourbon",
+        "scotch",
+        "brandy",
+        "cognac",
+        "mezcal"
+      ]
+    },
+    {
+      "id": "liqueurs",
+      "title": "Liqueurs",
+      "wordIds": [
+        "triple-sec",
+        "amaretto",
+        "kahl-a",
+        "baileys",
+        "grand-marnier",
+        "chartreuse",
+        "campari",
+        "aperol",
+        "drambuie",
+        "cointreau"
+      ]
+    },
+    {
+      "id": "mixers",
+      "title": "Mixers",
+      "wordIds": [
+        "tonic-water",
+        "soda-water",
+        "ginger-beer",
+        "cola",
+        "cranberry-juice",
+        "orange-juice",
+        "lime-juice",
+        "simple-syrup",
+        "grenadine",
+        "bitters"
+      ]
+    },
+    {
+      "id": "garnishes",
+      "title": "Garnishes",
+      "wordIds": [
+        "lemon-twist",
+        "lime-wedge",
+        "orange-peel",
+        "cherry",
+        "olive",
+        "mint-sprig",
+        "cinnamon-stick",
+        "salt-rim",
+        "sugar-rim",
+        "cocktail-umbrella"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "vodka",
+      "label": "Vodka",
+      "ipa": "/ˈvɒdkə/",
+      "cefr": "B2",
+      "imageNodeId": "467:18482"
+    },
+    {
+      "kind": "card",
+      "id": "gin",
+      "label": "Gin",
+      "ipa": "/dʒɪn/",
+      "cefr": "B2",
+      "imageNodeId": "467:18486"
+    },
+    {
+      "kind": "card",
+      "id": "rum",
+      "label": "Rum",
+      "ipa": "/rʌm/",
+      "cefr": "B2",
+      "imageNodeId": "467:18490"
+    },
+    {
+      "kind": "card",
+      "id": "tequila",
+      "label": "Tequila",
+      "ipa": "/tɛˈkiːlə/",
+      "cefr": "B2",
+      "imageNodeId": "467:18494"
+    },
+    {
+      "kind": "card",
+      "id": "whiskey",
+      "label": "Whiskey",
+      "ipa": "/ˈwɪski/",
+      "cefr": "B2",
+      "imageNodeId": "467:18498"
+    },
+    {
+      "kind": "card",
+      "id": "bourbon",
+      "label": "Bourbon",
+      "ipa": "/ˈbɜːrbən/",
+      "cefr": "B2",
+      "imageNodeId": "467:18502"
+    },
+    {
+      "kind": "card",
+      "id": "scotch",
+      "label": "Scotch",
+      "ipa": "/skɒtʃ/",
+      "cefr": "B2",
+      "imageNodeId": "467:18506"
+    },
+    {
+      "kind": "card",
+      "id": "brandy",
+      "label": "Brandy",
+      "ipa": "/ˈbrændi/",
+      "cefr": "B2",
+      "imageNodeId": "467:18510"
+    },
+    {
+      "kind": "card",
+      "id": "cognac",
+      "label": "Cognac",
+      "ipa": "/ˈkɒnjæk/",
+      "cefr": "B2",
+      "imageNodeId": "467:18514"
+    },
+    {
+      "kind": "card",
+      "id": "mezcal",
+      "label": "Mezcal",
+      "ipa": "/mɛsˈkæl/",
+      "cefr": "B2",
+      "imageNodeId": "467:18518"
+    },
+    {
+      "kind": "card",
+      "id": "triple-sec",
+      "label": "Triple Sec",
+      "ipa": "/ˈtrɪpəl sɛk/",
+      "cefr": "C1",
+      "imageNodeId": "467:18527"
+    },
+    {
+      "kind": "card",
+      "id": "amaretto",
+      "label": "Amaretto",
+      "ipa": "/ˌæməˈrɛtoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:18531"
+    },
+    {
+      "kind": "card",
+      "id": "kahl-a",
+      "label": "Kahlúa",
+      "ipa": "/kɑːˈluːə/",
+      "cefr": "B2",
+      "imageNodeId": "467:18535"
+    },
+    {
+      "kind": "card",
+      "id": "baileys",
+      "label": "Baileys",
+      "ipa": "/ˈbeɪliz/",
+      "cefr": "B2",
+      "imageNodeId": "467:18539"
+    },
+    {
+      "kind": "card",
+      "id": "grand-marnier",
+      "label": "Grand Marnier",
+      "ipa": "/ɡrænd mɑːrˈnjeɪ/",
+      "cefr": "C1",
+      "imageNodeId": "467:18543"
+    },
+    {
+      "kind": "card",
+      "id": "chartreuse",
+      "label": "Chartreuse",
+      "ipa": "/ʃɑːrˈtruːz/",
+      "cefr": "C1",
+      "imageNodeId": "467:18547"
+    },
+    {
+      "kind": "card",
+      "id": "campari",
+      "label": "Campari",
+      "ipa": "/kæmˈpɑːri/",
+      "cefr": "B2",
+      "imageNodeId": "467:18551"
+    },
+    {
+      "kind": "card",
+      "id": "aperol",
+      "label": "Aperol",
+      "ipa": "/ˈæpəˌrɒl/",
+      "cefr": "B2",
+      "imageNodeId": "467:18555"
+    },
+    {
+      "kind": "card",
+      "id": "drambuie",
+      "label": "Drambuie",
+      "ipa": "/dræmˈbjuːi/",
+      "cefr": "B2",
+      "imageNodeId": "467:18559"
+    },
+    {
+      "kind": "card",
+      "id": "cointreau",
+      "label": "Cointreau",
+      "ipa": "/ˈkwæntroʊ/",
+      "cefr": "B2",
+      "imageNodeId": "467:18563"
+    },
+    {
+      "kind": "card",
+      "id": "tonic-water",
+      "label": "Tonic Water",
+      "ipa": "/ˈtɒnɪk ˈwɔːtər/",
+      "cefr": "C1",
+      "imageNodeId": "467:18572"
+    },
+    {
+      "kind": "card",
+      "id": "soda-water",
+      "label": "Soda Water",
+      "ipa": "/ˈsoʊdə ˈwɔːtər/",
+      "cefr": "C1",
+      "imageNodeId": "467:18576"
+    },
+    {
+      "kind": "card",
+      "id": "ginger-beer",
+      "label": "Ginger Beer",
+      "ipa": "/ˈdʒɪndʒər bɪər/",
+      "cefr": "C1",
+      "imageNodeId": "467:18580"
+    },
+    {
+      "kind": "card",
+      "id": "cola",
+      "label": "Cola",
+      "ipa": "/ˈkoʊlə/",
+      "cefr": "B2",
+      "imageNodeId": "467:18584"
+    },
+    {
+      "kind": "card",
+      "id": "cranberry-juice",
+      "label": "Cranberry Juice",
+      "ipa": "/ˈkrænˌbɛri dʒuːs/",
+      "cefr": "C1",
+      "imageNodeId": "467:18588"
+    },
+    {
+      "kind": "card",
+      "id": "orange-juice",
+      "label": "Orange Juice",
+      "ipa": "/ˈɒrɪndʒ dʒuːs/",
+      "cefr": "C1",
+      "imageNodeId": "467:18592"
+    },
+    {
+      "kind": "card",
+      "id": "lime-juice",
+      "label": "Lime Juice",
+      "ipa": "/laɪm dʒuːs/",
+      "cefr": "C1",
+      "imageNodeId": "467:18596"
+    },
+    {
+      "kind": "card",
+      "id": "simple-syrup",
+      "label": "Simple Syrup",
+      "ipa": "/ˈsɪmpəl ˈsɪrəp/",
+      "cefr": "C1",
+      "imageNodeId": "467:18600"
+    },
+    {
+      "kind": "card",
+      "id": "grenadine",
+      "label": "Grenadine",
+      "ipa": "/ˌɡrɛnəˈdiːn/",
+      "cefr": "B2",
+      "imageNodeId": "467:18604"
+    },
+    {
+      "kind": "card",
+      "id": "bitters",
+      "label": "Bitters",
+      "ipa": "/ˈbɪtərz/",
+      "cefr": "B2",
+      "imageNodeId": "467:18608"
+    },
+    {
+      "kind": "card",
+      "id": "lemon-twist",
+      "label": "Lemon Twist",
+      "ipa": "/ˈlɛmən twɪst/",
+      "cefr": "C1",
+      "imageNodeId": "467:18617"
+    },
+    {
+      "kind": "card",
+      "id": "lime-wedge",
+      "label": "Lime Wedge",
+      "ipa": "/laɪm wɛdʒ/",
+      "cefr": "C1",
+      "imageNodeId": "467:18621"
+    },
+    {
+      "kind": "card",
+      "id": "orange-peel",
+      "label": "Orange Peel",
+      "ipa": "/ˈɒrɪndʒ piːl/",
+      "cefr": "C1",
+      "imageNodeId": "467:18625"
+    },
+    {
+      "kind": "card",
+      "id": "cherry",
+      "label": "Cherry",
+      "ipa": "/ˈtʃɛri/",
+      "cefr": "B2",
+      "imageNodeId": "467:18629"
+    },
+    {
+      "kind": "card",
+      "id": "olive",
+      "label": "Olive",
+      "ipa": "/ˈɒlɪv/",
+      "cefr": "B2",
+      "imageNodeId": "467:18633"
+    },
+    {
+      "kind": "card",
+      "id": "mint-sprig",
+      "label": "Mint Sprig",
+      "ipa": "/mɪnt sprɪɡ/",
+      "cefr": "C1",
+      "imageNodeId": "467:18637"
+    },
+    {
+      "kind": "card",
+      "id": "cinnamon-stick",
+      "label": "Cinnamon Stick",
+      "ipa": "/ˈsɪnəmən stɪk/",
+      "cefr": "C1",
+      "imageNodeId": "467:18641"
+    },
+    {
+      "kind": "card",
+      "id": "salt-rim",
+      "label": "Salt Rim",
+      "ipa": "/sɔːlt rɪm/",
+      "cefr": "C1",
+      "imageNodeId": "467:18645"
+    },
+    {
+      "kind": "card",
+      "id": "sugar-rim",
+      "label": "Sugar Rim",
+      "ipa": "/ˈʃʊɡər rɪm/",
+      "cefr": "C1",
+      "imageNodeId": "467:18649"
+    },
+    {
+      "kind": "card",
+      "id": "cocktail-umbrella",
+      "label": "Cocktail Umbrella",
+      "ipa": "/ˈkɒkˌteɪl ʌmˈbrɛlə/",
+      "cefr": "C1",
+      "imageNodeId": "467:18653"
+    }
+  ],
+  "materials": null
+}

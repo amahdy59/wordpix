@@ -1,0 +1,1566 @@
+{
+  "unitId": "data-center",
+  "name": "The Data Center",
+  "subtopics": [
+    {
+      "id": "infrastructure",
+      "title": "Infrastructure",
+      "wordIds": [
+        "server-rack",
+        "blade-server",
+        "cable-tray",
+        "raised-floor",
+        "hot-aisle",
+        "cold-aisle",
+        "ups",
+        "generator",
+        "pdu",
+        "patch-panel"
+      ]
+    },
+    {
+      "id": "networking",
+      "title": "Networking",
+      "wordIds": [
+        "switch",
+        "router",
+        "firewall",
+        "load-balancer",
+        "fiber-optic",
+        "ethernet",
+        "bandwidth",
+        "latency",
+        "dns",
+        "vpn"
+      ]
+    },
+    {
+      "id": "storage",
+      "title": "Storage",
+      "wordIds": [
+        "hard-drive",
+        "ssd",
+        "raid",
+        "nas",
+        "san",
+        "backup",
+        "tape-drive",
+        "cloud-storage",
+        "snapshot",
+        "replication"
+      ]
+    },
+    {
+      "id": "cooling",
+      "title": "Cooling",
+      "wordIds": [
+        "air-conditioner",
+        "chiller",
+        "cooling-tower",
+        "fan",
+        "vent",
+        "heat-exchanger",
+        "containment",
+        "thermostat",
+        "humidity-control",
+        "water-cooling"
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "wordIds": [
+        "badge-reader",
+        "biometric",
+        "mantrap",
+        "cctv",
+        "fire-suppression",
+        "access-log",
+        "cage",
+        "lock",
+        "guard",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "operations",
+      "title": "Operations",
+      "wordIds": [
+        "technician",
+        "administrator",
+        "dashboard",
+        "alert",
+        "uptime",
+        "maintenance",
+        "migration",
+        "deployment",
+        "redundancy",
+        "failover"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "server-rack",
+      "label": "Server Rack",
+      "ipa": "/ˈsɜːrvər ræk/",
+      "cefr": "C1",
+      "imageNodeId": "119:12967"
+    },
+    {
+      "kind": "card",
+      "id": "blade-server",
+      "label": "Blade Server",
+      "ipa": "/bleɪd ˈsɜːrvər/",
+      "cefr": "C1",
+      "imageNodeId": "119:12971"
+    },
+    {
+      "kind": "card",
+      "id": "cable-tray",
+      "label": "Cable Tray",
+      "ipa": "/ˈkeɪbəl treɪ/",
+      "cefr": "C1",
+      "imageNodeId": "119:12975"
+    },
+    {
+      "kind": "card",
+      "id": "raised-floor",
+      "label": "Raised Floor",
+      "ipa": "/reɪzd flɔːr/",
+      "cefr": "C1",
+      "imageNodeId": "119:12979"
+    },
+    {
+      "kind": "card",
+      "id": "hot-aisle",
+      "label": "Hot Aisle",
+      "ipa": "/hɒt aɪl/",
+      "cefr": "C1",
+      "imageNodeId": "119:12983"
+    },
+    {
+      "kind": "card",
+      "id": "cold-aisle",
+      "label": "Cold Aisle",
+      "ipa": "/koʊld aɪl/",
+      "cefr": "C1",
+      "imageNodeId": "119:12987"
+    },
+    {
+      "kind": "card",
+      "id": "ups",
+      "label": "Ups",
+      "ipa": "/ˌjuːpiːˈɛs/",
+      "cefr": "B2",
+      "imageNodeId": "119:12991"
+    },
+    {
+      "kind": "card",
+      "id": "generator",
+      "label": "Generator",
+      "ipa": "/ˈdʒɛnəˌreɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "119:12995"
+    },
+    {
+      "kind": "card",
+      "id": "pdu",
+      "label": "Pdu",
+      "ipa": "/ˌpiːdiːˈjuː/",
+      "cefr": "B2",
+      "imageNodeId": "119:12999"
+    },
+    {
+      "kind": "card",
+      "id": "patch-panel",
+      "label": "Patch Panel",
+      "ipa": "/pætʃ ˈpænəl/",
+      "cefr": "C1",
+      "imageNodeId": "119:13003"
+    },
+    {
+      "kind": "card",
+      "id": "switch",
+      "label": "Switch",
+      "ipa": "/swɪtʃ/",
+      "cefr": "B2",
+      "imageNodeId": "119:13012"
+    },
+    {
+      "kind": "card",
+      "id": "router",
+      "label": "Router",
+      "ipa": "/ˈraʊtər/",
+      "cefr": "B2",
+      "imageNodeId": "119:13016"
+    },
+    {
+      "kind": "card",
+      "id": "firewall",
+      "label": "Firewall",
+      "ipa": "/ˈfaɪərˌwɔːl/",
+      "cefr": "B2",
+      "imageNodeId": "119:13020"
+    },
+    {
+      "kind": "card",
+      "id": "load-balancer",
+      "label": "Load Balancer",
+      "ipa": "/loʊd ˈbælənsər/",
+      "cefr": "C1",
+      "imageNodeId": "119:13024"
+    },
+    {
+      "kind": "card",
+      "id": "fiber-optic",
+      "label": "Fiber Optic",
+      "ipa": "/ˈfaɪbər ˈɒptɪk/",
+      "cefr": "C1",
+      "imageNodeId": "119:13028"
+    },
+    {
+      "kind": "card",
+      "id": "ethernet",
+      "label": "Ethernet",
+      "ipa": "/ˈiːθərˌnɛt/",
+      "cefr": "B2",
+      "imageNodeId": "119:13032"
+    },
+    {
+      "kind": "card",
+      "id": "bandwidth",
+      "label": "Bandwidth",
+      "ipa": "/ˈbændˌwɪdθ/",
+      "cefr": "B2",
+      "imageNodeId": "119:13036"
+    },
+    {
+      "kind": "card",
+      "id": "latency",
+      "label": "Latency",
+      "ipa": "/ˈleɪtənsi/",
+      "cefr": "B2",
+      "imageNodeId": "119:13040"
+    },
+    {
+      "kind": "card",
+      "id": "dns",
+      "label": "Dns",
+      "ipa": "/ˌdiːɛnˈɛs/",
+      "cefr": "B2",
+      "imageNodeId": "119:13044"
+    },
+    {
+      "kind": "card",
+      "id": "vpn",
+      "label": "Vpn",
+      "ipa": "/ˌviːpiːˈɛn/",
+      "cefr": "B2",
+      "imageNodeId": "119:13048"
+    },
+    {
+      "kind": "card",
+      "id": "hard-drive",
+      "label": "Hard Drive",
+      "ipa": "/hɑːrd draɪv/",
+      "cefr": "C1",
+      "imageNodeId": "119:13057"
+    },
+    {
+      "kind": "card",
+      "id": "ssd",
+      "label": "Ssd",
+      "ipa": "/ˌɛsɛsˈdiː/",
+      "cefr": "B2",
+      "imageNodeId": "119:13061"
+    },
+    {
+      "kind": "card",
+      "id": "raid",
+      "label": "Raid",
+      "ipa": "/reɪd/",
+      "cefr": "B2",
+      "imageNodeId": "119:13065"
+    },
+    {
+      "kind": "card",
+      "id": "nas",
+      "label": "Nas",
+      "ipa": "/næs/",
+      "cefr": "B2",
+      "imageNodeId": "119:13069"
+    },
+    {
+      "kind": "card",
+      "id": "san",
+      "label": "San",
+      "ipa": "/sæn/",
+      "cefr": "B2",
+      "imageNodeId": "119:13073"
+    },
+    {
+      "kind": "card",
+      "id": "backup",
+      "label": "Backup",
+      "ipa": "/ˈbækˌʌp/",
+      "cefr": "B2",
+      "imageNodeId": "119:13077"
+    },
+    {
+      "kind": "card",
+      "id": "tape-drive",
+      "label": "Tape Drive",
+      "ipa": "/teɪp draɪv/",
+      "cefr": "C1",
+      "imageNodeId": "119:13081"
+    },
+    {
+      "kind": "card",
+      "id": "cloud-storage",
+      "label": "Cloud Storage",
+      "ipa": "/klaʊd ˈstɔːrɪdʒ/",
+      "cefr": "C1",
+      "imageNodeId": "119:13085"
+    },
+    {
+      "kind": "card",
+      "id": "snapshot",
+      "label": "Snapshot",
+      "ipa": "/ˈsnæpˌʃɒt/",
+      "cefr": "B2",
+      "imageNodeId": "119:13089"
+    },
+    {
+      "kind": "card",
+      "id": "replication",
+      "label": "Replication",
+      "ipa": "/ˌrɛplɪˈkeɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "119:13093"
+    },
+    {
+      "kind": "card",
+      "id": "air-conditioner",
+      "label": "Air Conditioner",
+      "ipa": "/ɛər kənˈdɪʃənər/",
+      "cefr": "C1",
+      "imageNodeId": "119:13102"
+    },
+    {
+      "kind": "card",
+      "id": "chiller",
+      "label": "Chiller",
+      "ipa": "/ˈtʃɪlər/",
+      "cefr": "B2",
+      "imageNodeId": "119:13106"
+    },
+    {
+      "kind": "card",
+      "id": "cooling-tower",
+      "label": "Cooling Tower",
+      "ipa": "/ˈkuːlɪŋ ˈtaʊər/",
+      "cefr": "C1",
+      "imageNodeId": "119:13110"
+    },
+    {
+      "kind": "card",
+      "id": "fan",
+      "label": "Fan",
+      "ipa": "/fæn/",
+      "cefr": "B2",
+      "imageNodeId": "119:13114"
+    },
+    {
+      "kind": "card",
+      "id": "vent",
+      "label": "Vent",
+      "ipa": "/vɛnt/",
+      "cefr": "B2",
+      "imageNodeId": "119:13118"
+    },
+    {
+      "kind": "card",
+      "id": "heat-exchanger",
+      "label": "Heat Exchanger",
+      "ipa": "/hiːt ɪksˈtʃeɪndʒər/",
+      "cefr": "C1",
+      "imageNodeId": "119:13122"
+    },
+    {
+      "kind": "card",
+      "id": "containment",
+      "label": "Containment",
+      "ipa": "/kənˈteɪnmənt/",
+      "cefr": "C1",
+      "imageNodeId": "119:13126"
+    },
+    {
+      "kind": "card",
+      "id": "thermostat",
+      "label": "Thermostat",
+      "ipa": "/ˈθɜːrməˌstæt/",
+      "cefr": "C1",
+      "imageNodeId": "119:13130"
+    },
+    {
+      "kind": "card",
+      "id": "humidity-control",
+      "label": "Humidity Control",
+      "ipa": "/hjuːˈmɪdɪti kənˈtroʊl/",
+      "cefr": "C1",
+      "imageNodeId": "119:13134"
+    },
+    {
+      "kind": "card",
+      "id": "water-cooling",
+      "label": "Water Cooling",
+      "ipa": "/ˈwɔːtər ˈkuːlɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "119:13138"
+    },
+    {
+      "kind": "card",
+      "id": "badge-reader",
+      "label": "Badge Reader",
+      "ipa": "/bædʒ ˈriːdər/",
+      "cefr": "C1",
+      "imageNodeId": "119:13147"
+    },
+    {
+      "kind": "card",
+      "id": "biometric",
+      "label": "Biometric",
+      "ipa": "/ˌbaɪoʊˈmɛtrɪk/",
+      "cefr": "B2",
+      "imageNodeId": "119:13151"
+    },
+    {
+      "kind": "card",
+      "id": "mantrap",
+      "label": "Mantrap",
+      "ipa": "/ˈmænˌtræp/",
+      "cefr": "B2",
+      "imageNodeId": "119:13155"
+    },
+    {
+      "kind": "card",
+      "id": "cctv",
+      "label": "Cctv",
+      "ipa": "/ˌsiːsiːtiːˈviː/",
+      "cefr": "B2",
+      "imageNodeId": "119:13159"
+    },
+    {
+      "kind": "card",
+      "id": "fire-suppression",
+      "label": "Fire Suppression",
+      "ipa": "/faɪər səˈprɛʃən/",
+      "cefr": "C1",
+      "imageNodeId": "119:13163"
+    },
+    {
+      "kind": "card",
+      "id": "access-log",
+      "label": "Access Log",
+      "ipa": "/ˈæksɛs lɒɡ/",
+      "cefr": "C1",
+      "imageNodeId": "119:13167"
+    },
+    {
+      "kind": "card",
+      "id": "cage",
+      "label": "Cage",
+      "ipa": "/keɪdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "119:13171"
+    },
+    {
+      "kind": "card",
+      "id": "lock",
+      "label": "Lock",
+      "ipa": "/lɒk/",
+      "cefr": "B2",
+      "imageNodeId": "119:13175"
+    },
+    {
+      "kind": "card",
+      "id": "guard",
+      "label": "Guard",
+      "ipa": "/ɡɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "119:13179"
+    },
+    {
+      "kind": "card",
+      "id": "monitoring",
+      "label": "Monitoring",
+      "ipa": "/ˈmɒnɪtərɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "119:13183"
+    },
+    {
+      "kind": "card",
+      "id": "technician",
+      "label": "Technician",
+      "ipa": "/tɛkˈnɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "119:13192"
+    },
+    {
+      "kind": "card",
+      "id": "administrator",
+      "label": "Administrator",
+      "ipa": "/ədˈmɪnɪˌstreɪtər/",
+      "cefr": "C1",
+      "imageNodeId": "119:13196"
+    },
+    {
+      "kind": "card",
+      "id": "dashboard",
+      "label": "Dashboard",
+      "ipa": "/ˈdæʃˌbɔːrd/",
+      "cefr": "B2",
+      "imageNodeId": "119:13200"
+    },
+    {
+      "kind": "card",
+      "id": "alert",
+      "label": "Alert",
+      "ipa": "/əˈlɜːrt/",
+      "cefr": "B2",
+      "imageNodeId": "119:13204"
+    },
+    {
+      "kind": "card",
+      "id": "uptime",
+      "label": "Uptime",
+      "ipa": "/ˈʌpˌtaɪm/",
+      "cefr": "B2",
+      "imageNodeId": "119:13208"
+    },
+    {
+      "kind": "card",
+      "id": "maintenance",
+      "label": "Maintenance",
+      "ipa": "/ˈmeɪntənəns/",
+      "cefr": "C1",
+      "imageNodeId": "119:13212"
+    },
+    {
+      "kind": "card",
+      "id": "migration",
+      "label": "Migration",
+      "ipa": "/maɪˈɡreɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "119:13216"
+    },
+    {
+      "kind": "card",
+      "id": "deployment",
+      "label": "Deployment",
+      "ipa": "/dɪˈplɔɪmənt/",
+      "cefr": "C1",
+      "imageNodeId": "119:13220"
+    },
+    {
+      "kind": "card",
+      "id": "redundancy",
+      "label": "Redundancy",
+      "ipa": "/rɪˈdʌndənsi/",
+      "cefr": "C1",
+      "imageNodeId": "119:13224"
+    },
+    {
+      "kind": "card",
+      "id": "failover",
+      "label": "Failover",
+      "ipa": "/ˈfeɪlˌoʊvər/",
+      "cefr": "B2",
+      "imageNodeId": "119:13228"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "556:3234",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "556:3236",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2+ · Topic: The Data Centre",
+          "depth": 1,
+          "name": "Level: B2+ · Topic: The Data Centre"
+        },
+        {
+          "text": "The Engine Room of the Internet — Inside a Modern Data Centre\n\nEvery email sent, every video streamed, every search query answered passes through a data centre. These facilities — windowless, climate-controlled, and heavily secured — house the physical infrastructure of the digital world. A single large data centre may contain tens of thousands of servers, consume as much electricity as a small city, and process more data in one second than the entire internet carried in a year during the 1990s.\n\nThe server rack is the basic unit of organisation. Each rack stands roughly two metres tall and holds dozens of blade servers — thin, modular computing units stacked vertically. A cable tray runs overhead, carrying fibre optic and Ethernet cables to a patch panel, which connects each server to the network. The raised floor beneath conceals power cables and cooling ducts. Rows of racks form aisles — the hot aisle faces the exhaust side of the servers, while the cold aisle receives chilled air from below.\n\nNetworking equipment routes data through the facility and beyond. A switch connects devices within the data centre. A router directs traffic between networks. A firewall filters incoming and outgoing data for security threats. A load balancer distributes traffic across multiple servers to prevent any single machine from being overwhelmed. DNS servers translate human-readable web addresses into numerical IP addresses. A VPN encrypts connections for remote access. Bandwidth determines how much data can flow; latency measures how quickly it arrives.\n\nStorage has evolved from spinning hard drives to solid-state drives (SSDs) with no moving parts. A RAID configuration mirrors data across multiple drives for redundancy. A NAS (network-attached storage) provides file-level access over a local network. A SAN (storage area network) offers high-speed block-level access for demanding applications. Backup systems — including tape drives for long-term archival — ensure data survives hardware failure. A snapshot captures the state of a system at a specific moment. Replication copies data to a secondary site in real time, providing disaster recovery. Cloud storage abstracts all of this — the user sees a folder; the data centre sees thousands of coordinated drives.\n\nCooling consumes nearly as much energy as computation. An air conditioner chills the cold aisle. A chiller generates cold water circulated through pipes. A cooling tower on the roof expels heat to the atmosphere. Fans and vents distribute airflow. A heat exchanger transfers warmth from server exhaust to the cooling system. Containment panels seal the hot and cold aisles to prevent mixing. A thermostat and humidity control system maintain conditions within strict tolerances — too hot and processors throttle; too humid and condensation forms on circuit boards.\n\nPower reliability is non-negotiable. A PDU (power distribution unit) feeds electricity from the grid to each rack. A UPS (uninterruptible power supply) provides battery backup during the seconds between a power cut and generator activation. A diesel generator can run the entire facility for days. Redundancy is built into every layer — dual power feeds, dual network paths, dual cooling loops.\n\nSecurity is physical as well as digital. A badge reader controls building access. A biometric scanner — fingerprint or retinal — guards sensitive zones. A mantrap — a double-doored vestibule — prevents tailgating. CCTV monitors every corridor. A fire suppression system uses inert gas rather than water to extinguish flames without damaging equipment. An access log records every entry and exit. Individual racks sit inside locked cages. A guard patrols the perimeter.\n\nThe data centre is invisible by design. Its users never see it, never visit it, and rarely think about it. Yet every tap on a screen, every spoken command to a smart speaker, every transaction at a checkout — all of it passes through a building like this, humming quietly on the edge of a city, doing the work that makes the modern world feel seamless.",
+          "depth": 1,
+          "name": "The Engine Room of the Internet — Inside a Modern Data Centre Every email sent, every video streamed, every search query answered passes through a data centre. These facilities — windowless, climate-controlled, and heavily secured — house the physical infrastructure of the digital world. A single large data centre may contain tens of thousands of servers, consume as much electricity as a small city, and process more data in one second than the entire internet carried in a year during the 1990s. The server rack is the basic unit of organisation. Each rack stands roughly two metres tall and holds dozens of blade servers — thin, modular computing units stacked vertically. A cable tray runs overhead, carrying fibre optic and Ethernet cables to a patch panel, which connects each server to the network. The raised floor beneath conceals power cables and cooling ducts. Rows of racks form aisles — the hot aisle faces the exhaust side of the servers, while the cold aisle receives chilled air from below. Networking equipment routes data through the facility and beyond. A switch connects devices within the data centre. A router directs traffic between networks. A firewall filters incoming and outgoing data for security threats. A load balancer distributes traffic across multiple servers to prevent any single machine from being overwhelmed. DNS servers translate human-readable web addresses into numerical IP addresses. A VPN encrypts connections for remote access. Bandwidth determines how much data can flow; latency measures how quickly it arrives. Storage has evolved from spinning hard drives to solid-state drives (SSDs) with no moving parts. A RAID configuration mirrors data across multiple drives for redundancy. A NAS (network-attached storage) provides file-level access over a local network. A SAN (storage area network) offers high-speed block-level access for demanding applications. Backup systems — including tape drives for long-term archival — ensure data survives hardware failure. A snapshot captures the state of a system at a specific moment. Replication copies data to a secondary site in real time, providing disaster recovery. Cloud storage abstracts all of this — the user sees a folder; the data centre sees thousands of coordinated drives. Cooling consumes nearly as much energy as computation. An air conditioner chills the cold aisle. A chiller generates cold water circulated through pipes. A cooling tower on the roof expels heat to the atmosphere. Fans and vents distribute airflow. A heat exchanger transfers warmth from server exhaust to the cooling system. Containment panels seal the hot and cold aisles to prevent mixing. A thermostat and humidity control system maintain conditions within strict tolerances — too hot and processors throttle; too humid and condensation forms on circuit boards. Power reliability is non-negotiable. A PDU (power distribution unit) feeds electricity from the grid to each rack. A UPS (uninterruptible power supply) provides battery backup during the seconds between a power cut and generator activation. A diesel generator can run the entire facility for days. Redundancy is built into every layer — dual power feeds, dual network paths, dual cooling loops. Security is physical as well as digital. A badge reader controls building access. A biometric scanner — fingerprint or retinal — guards sensitive zones. A mantrap — a double-doored vestibule — prevents tailgating. CCTV monitors every corridor. A fire suppression system uses inert gas rather than water to extinguish flames without damaging equipment. An access log records every entry and exit. Individual racks sit inside locked cages. A guard patrols the perimeter. The data centre is invisible by design. Its users never see it, never visit it, and rarely think about it. Yet every tap on a screen, every spoken command to a smart speaker, every transaction at a checkout — all of it passes through a building like this, humming quietly on the edge of a city, doing the work that makes the modern world feel seamless."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Explain the hot aisle/cold aisle system. Why is this arrangement critical for data centre operations?",
+          "depth": 1,
+          "name": "1. Explain the hot aisle/cold aisle system. Why is this arrangement critical for data centre operations?"
+        },
+        {
+          "text": "2. Describe the networking equipment hierarchy: switch, router, firewall, load balancer. What role does each play?",
+          "depth": 1,
+          "name": "2. Describe the networking equipment hierarchy: switch, router, firewall, load balancer. What role does each play?"
+        },
+        {
+          "text": "3. Compare three different storage technologies mentioned in the passage (SSD, NAS, SAN, tape). When would each be used?",
+          "depth": 1,
+          "name": "3. Compare three different storage technologies mentioned in the passage (SSD, NAS, SAN, tape). When would each be used?"
+        },
+        {
+          "text": "4. The passage states that 'power reliability is non-negotiable.' What systems ensure continuous operation during a power failure?",
+          "depth": 1,
+          "name": "4. The passage states that 'power reliability is non-negotiable.' What systems ensure continuous operation during a power failure?"
+        },
+        {
+          "text": "5. The author describes the data centre as 'invisible by design.' What does this mean, and why is it significant?",
+          "depth": 1,
+          "name": "5. The author describes the data centre as 'invisible by design.' What does this mean, and why is it significant?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "556:3249",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "pull the plug",
+          "depth": 2,
+          "name": "pull the plug"
+        },
+        {
+          "text": "suddenly shut down or stop something from operating",
+          "depth": 2,
+          "name": "suddenly shut down or stop something from operating"
+        },
+        {
+          "text": "\"When the UPS failed and the generator didn't kick in, they had to pull the plug on the blade server before the overheating damaged the hard drive.\"",
+          "depth": 2,
+          "name": "\"When the UPS failed and the generator didn't kick in, they had to pull the plug on the blade server before the overheating damaged the hard drive.\""
+        },
+        {
+          "text": "behind a firewall",
+          "depth": 2,
+          "name": "behind a firewall"
+        },
+        {
+          "text": "protected from external threats or interference",
+          "depth": 2,
+          "name": "protected from external threats or interference"
+        },
+        {
+          "text": "\"All sensitive data sits behind a firewall — the router, the switch, and the load balancer filter every packet.\"",
+          "depth": 2,
+          "name": "\"All sensitive data sits behind a firewall — the router, the switch, and the load balancer filter every packet.\""
+        },
+        {
+          "text": "back up your claims",
+          "depth": 2,
+          "name": "back up your claims"
+        },
+        {
+          "text": "support what you say with evidence; also, literally create data backups",
+          "depth": 2,
+          "name": "support what you say with evidence; also, literally create data backups"
+        },
+        {
+          "text": "\"Back up your claims — and your data. The backup runs nightly to the NAS, with a snapshot replicated to cloud storage.\"",
+          "depth": 2,
+          "name": "\"Back up your claims — and your data. The backup runs nightly to the NAS, with a snapshot replicated to cloud storage.\""
+        },
+        {
+          "text": "bandwidth",
+          "depth": 2,
+          "name": "bandwidth"
+        },
+        {
+          "text": "capacity to handle tasks or information (figurative and literal)",
+          "depth": 2,
+          "name": "capacity to handle tasks or information (figurative and literal)"
+        },
+        {
+          "text": "\"I don't have the bandwidth for another project — just like the fiber optic link that's maxed out between the hot aisle and cold aisle racks.\"",
+          "depth": 2,
+          "name": "\"I don't have the bandwidth for another project — just like the fiber optic link that's maxed out between the hot aisle and cold aisle racks.\""
+        },
+        {
+          "text": "on the same wavelength",
+          "depth": 2,
+          "name": "on the same wavelength"
+        },
+        {
+          "text": "thinking in the same way; in agreement",
+          "depth": 2,
+          "name": "thinking in the same way; in agreement"
+        },
+        {
+          "text": "\"The network team and the cooling team are on the same wavelength — the chiller, the fan, and the air conditioner all run on the same schedule.\"",
+          "depth": 2,
+          "name": "\"The network team and the cooling team are on the same wavelength — the chiller, the fan, and the air conditioner all run on the same schedule.\""
+        },
+        {
+          "text": "a hard drive to succeed",
+          "depth": 2,
+          "name": "a hard drive to succeed"
+        },
+        {
+          "text": "a strong determination to achieve goals (wordplay)",
+          "depth": 2,
+          "name": "a strong determination to achieve goals (wordplay)"
+        },
+        {
+          "text": "\"She has a hard drive to succeed — managing the SSD upgrades, the RAID configuration, and the tape drive archive all in one quarter.\"",
+          "depth": 2,
+          "name": "\"She has a hard drive to succeed — managing the SSD upgrades, the RAID configuration, and the tape drive archive all in one quarter.\""
+        },
+        {
+          "text": "plug and play",
+          "depth": 2,
+          "name": "plug and play"
+        },
+        {
+          "text": "something that works immediately without complicated setup",
+          "depth": 2,
+          "name": "something that works immediately without complicated setup"
+        },
+        {
+          "text": "\"The new patch panel was plug and play — Ethernet cables in, fiber optic out, and the DNS resolved in seconds.\"",
+          "depth": 2,
+          "name": "\"The new patch panel was plug and play — Ethernet cables in, fiber optic out, and the DNS resolved in seconds.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "556:3281",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A data center manager gives a new technician a tour of the facility",
+          "depth": 1,
+          "name": "Scene: A data center manager gives a new technician a tour of the facility"
+        },
+        {
+          "text": "Manager:",
+          "depth": 2,
+          "name": "Manager:"
+        },
+        {
+          "text": "Welcome to the data center. We're standing in the cold aisle — cool air rises through the raised floor and into the server racks.",
+          "depth": 2,
+          "name": "Welcome to the data center. We're standing in the cold aisle — cool air rises through the raised floor and into the server racks."
+        },
+        {
+          "text": "Technician:",
+          "depth": 2,
+          "name": "Technician:"
+        },
+        {
+          "text": "And the hot aisle is on the other side? Where the exhaust goes?",
+          "depth": 2,
+          "name": "And the hot aisle is on the other side? Where the exhaust goes?"
+        },
+        {
+          "text": "Manager:",
+          "depth": 2,
+          "name": "Manager:"
+        },
+        {
+          "text": "Exactly. The hot air flows to the chiller and the cooling tower. The fan units and the air conditioner keep everything below 24 degrees.",
+          "depth": 2,
+          "name": "Exactly. The hot air flows to the chiller and the cooling tower. The fan units and the air conditioner keep everything below 24 degrees."
+        },
+        {
+          "text": "Technician:",
+          "depth": 2,
+          "name": "Technician:"
+        },
+        {
+          "text": "What's in each server rack?",
+          "depth": 2,
+          "name": "What's in each server rack?"
+        },
+        {
+          "text": "Manager:",
+          "depth": 2,
+          "name": "Manager:"
+        },
+        {
+          "text": "Blade servers, switches, and the PDU for power distribution. The cable tray above runs fiber optic and Ethernet to the patch panel.",
+          "depth": 2,
+          "name": "Blade servers, switches, and the PDU for power distribution. The cable tray above runs fiber optic and Ethernet to the patch panel."
+        },
+        {
+          "text": "Technician:",
+          "depth": 2,
+          "name": "Technician:"
+        },
+        {
+          "text": "What happens during a power outage?",
+          "depth": 2,
+          "name": "What happens during a power outage?"
+        },
+        {
+          "text": "Manager:",
+          "depth": 2,
+          "name": "Manager:"
+        },
+        {
+          "text": "The UPS kicks in immediately — battery backup for about fifteen minutes. Then the generator takes over. We've never lost a server rack.",
+          "depth": 2,
+          "name": "The UPS kicks in immediately — battery backup for about fifteen minutes. Then the generator takes over. We've never lost a server rack."
+        },
+        {
+          "text": "Technician:",
+          "depth": 2,
+          "name": "Technician:"
+        },
+        {
+          "text": "How is the data protected?",
+          "depth": 2,
+          "name": "How is the data protected?"
+        },
+        {
+          "text": "Manager:",
+          "depth": 2,
+          "name": "Manager:"
+        },
+        {
+          "text": "Multiple layers. The firewall blocks external threats. The load balancer distributes traffic. We use RAID on the hard drives and SSD for speed-critical data.",
+          "depth": 2,
+          "name": "Multiple layers. The firewall blocks external threats. The load balancer distributes traffic. We use RAID on the hard drives and SSD for speed-critical data."
+        },
+        {
+          "text": "Technician:",
+          "depth": 2,
+          "name": "Technician:"
+        },
+        {
+          "text": "What about backups?",
+          "depth": 2,
+          "name": "What about backups?"
+        },
+        {
+          "text": "Manager:",
+          "depth": 2,
+          "name": "Manager:"
+        },
+        {
+          "text": "Nightly backups to the NAS and the SAN. We also run snapshots with replication to cloud storage. The tape drive handles long-term archive.",
+          "depth": 2,
+          "name": "Nightly backups to the NAS and the SAN. We also run snapshots with replication to cloud storage. The tape drive handles long-term archive."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "556:3319",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The datas are stored on multiple servers for redundancy.\"",
+          "depth": 2,
+          "name": "❌ \"The datas are stored on multiple servers for redundancy.\""
+        },
+        {
+          "text": "✅ \"The data are stored on multiple servers for redundancy.\" / \"The data is stored...\"",
+          "depth": 2,
+          "name": "✅ \"The data are stored on multiple servers for redundancy.\" / \"The data is stored...\""
+        },
+        {
+          "text": "'Data' is a Latin plural (singular: 'datum'). In formal and scientific writing, it takes a plural verb: 'the data are', 'the data show', 'the data were collected.' In everyday English, singular 'the data is' has become widely accepted. Never add an English plural marker: *datas, *informations, *equipments. These uncountable/irregular plurals are a hallmark error.",
+          "depth": 2,
+          "name": "'Data' is a Latin plural (singular: 'datum'). In formal and scientific writing, it takes a plural verb: 'the data are', 'the data show', 'the data were collected.' In everyday English, singular 'the data is' has become widely accepted. Never add an English plural marker: *datas, *informations, *equipments. These uncountable/irregular plurals are a hallmark error."
+        },
+        {
+          "text": "❌ \"The company has invested on building a new data centre.\"",
+          "depth": 2,
+          "name": "❌ \"The company has invested on building a new data centre.\""
+        },
+        {
+          "text": "✅ \"The company has invested in building a new data centre.\"",
+          "depth": 2,
+          "name": "✅ \"The company has invested in building a new data centre.\""
+        },
+        {
+          "text": "'Invest in' — the preposition is always 'in': 'invest in infrastructure', 'invest in training', 'invest in renewable energy.' Other technology-sector collocations: 'depend on', 'rely on', 'result in', 'consist of', 'comply with.' Preposition errors in fixed collocations persist at B2+ because there is no rule — only exposure.",
+          "depth": 2,
+          "name": "'Invest in' — the preposition is always 'in': 'invest in infrastructure', 'invest in training', 'invest in renewable energy.' Other technology-sector collocations: 'depend on', 'rely on', 'result in', 'consist of', 'comply with.' Preposition errors in fixed collocations persist at B2+ because there is no rule — only exposure."
+        },
+        {
+          "text": "❌ \"Each servers in the rack must be connected to the network individually.\"",
+          "depth": 2,
+          "name": "❌ \"Each servers in the rack must be connected to the network individually.\""
+        },
+        {
+          "text": "✅ \"Each server in the rack must be connected to the network individually.\"",
+          "depth": 2,
+          "name": "✅ \"Each server in the rack must be connected to the network individually.\""
+        },
+        {
+          "text": "'Each' + singular noun + singular verb: 'each server', 'each rack', 'each drive.' 'Every' follows the same rule: 'every server is connected.' For plural reference: 'all servers', 'all racks.' 'Each of the servers' takes a singular verb too: 'Each of the servers has been tested.'",
+          "depth": 2,
+          "name": "'Each' + singular noun + singular verb: 'each server', 'each rack', 'each drive.' 'Every' follows the same rule: 'every server is connected.' For plural reference: 'all servers', 'all racks.' 'Each of the servers' takes a singular verb too: 'Each of the servers has been tested.'"
+        },
+        {
+          "text": "❌ \"The system is capable to process millions of requests per second.\"",
+          "depth": 2,
+          "name": "❌ \"The system is capable to process millions of requests per second.\""
+        },
+        {
+          "text": "✅ \"The system is capable of processing millions of requests per second.\"",
+          "depth": 2,
+          "name": "✅ \"The system is capable of processing millions of requests per second.\""
+        },
+        {
+          "text": "'Capable of + -ing': 'capable of processing', 'capable of handling.' Never 'capable to + infinitive.' Compare: 'able to + infinitive': 'able to process.' The two adjectives are near-synonyms but take different structures. Similarly: 'responsible for + -ing', 'interested in + -ing', 'committed to + -ing.'",
+          "depth": 2,
+          "name": "'Capable of + -ing': 'capable of processing', 'capable of handling.' Never 'capable to + infinitive.' Compare: 'able to + infinitive': 'able to process.' The two adjectives are near-synonyms but take different structures. Similarly: 'responsible for + -ing', 'interested in + -ing', 'committed to + -ing.'"
+        },
+        {
+          "text": "❌ \"Not only the cooling system protects the servers, but it also reduces energy costs.\"",
+          "depth": 2,
+          "name": "❌ \"Not only the cooling system protects the servers, but it also reduces energy costs.\""
+        },
+        {
+          "text": "✅ \"Not only does the cooling system protect the servers, but it also reduces energy costs.\"",
+          "depth": 2,
+          "name": "✅ \"Not only does the cooling system protect the servers, but it also reduces energy costs.\""
+        },
+        {
+          "text": "'Not only' at the beginning of a clause triggers inversion: 'Not only does it protect...', 'Not only has the company invested...', 'Not only were the servers upgraded...' The auxiliary verb moves before the subject. Without inversion, the construction is grammatically incomplete at B2+ register.",
+          "depth": 2,
+          "name": "'Not only' at the beginning of a clause triggers inversion: 'Not only does it protect...', 'Not only has the company invested...', 'Not only were the servers upgraded...' The auxiliary verb moves before the subject. Without inversion, the construction is grammatically incomplete at B2+ register."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "556:3343",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how computing and infrastructure vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how computing and infrastructure vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "process",
+          "depth": 2,
+          "name": "process"
+        },
+        {
+          "text": "process / processor / processing",
+          "depth": 2,
+          "name": "process / processor / processing"
+        },
+        {
+          "text": "process",
+          "depth": 2,
+          "name": "process"
+        },
+        {
+          "text": "processed",
+          "depth": 2,
+          "name": "processed"
+        },
+        {
+          "text": "store",
+          "depth": 2,
+          "name": "store"
+        },
+        {
+          "text": "storage / store",
+          "depth": 2,
+          "name": "storage / store"
+        },
+        {
+          "text": "store",
+          "depth": 2,
+          "name": "store"
+        },
+        {
+          "text": "stored",
+          "depth": 2,
+          "name": "stored"
+        },
+        {
+          "text": "distribute",
+          "depth": 2,
+          "name": "distribute"
+        },
+        {
+          "text": "distribution / distributor",
+          "depth": 2,
+          "name": "distribution / distributor"
+        },
+        {
+          "text": "distribute",
+          "depth": 2,
+          "name": "distribute"
+        },
+        {
+          "text": "distributed",
+          "depth": 2,
+          "name": "distributed"
+        },
+        {
+          "text": "corrupt",
+          "depth": 2,
+          "name": "corrupt"
+        },
+        {
+          "text": "corruption",
+          "depth": 2,
+          "name": "corruption"
+        },
+        {
+          "text": "corrupt",
+          "depth": 2,
+          "name": "corrupt"
+        },
+        {
+          "text": "corrupt / corrupted",
+          "depth": 2,
+          "name": "corrupt / corrupted"
+        },
+        {
+          "text": "generate",
+          "depth": 2,
+          "name": "generate"
+        },
+        {
+          "text": "generator / generation",
+          "depth": 2,
+          "name": "generator / generation"
+        },
+        {
+          "text": "generate",
+          "depth": 2,
+          "name": "generate"
+        },
+        {
+          "text": "generated",
+          "depth": 2,
+          "name": "generated"
+        },
+        {
+          "text": "cool",
+          "depth": 2,
+          "name": "cool"
+        },
+        {
+          "text": "coolant / cooling / cooler",
+          "depth": 2,
+          "name": "coolant / cooling / cooler"
+        },
+        {
+          "text": "cool",
+          "depth": 2,
+          "name": "cool"
+        },
+        {
+          "text": "cool / cooled",
+          "depth": 2,
+          "name": "cool / cooled"
+        },
+        {
+          "text": "virtualise",
+          "depth": 2,
+          "name": "virtualise"
+        },
+        {
+          "text": "virtualisation",
+          "depth": 2,
+          "name": "virtualisation"
+        },
+        {
+          "text": "virtualise",
+          "depth": 2,
+          "name": "virtualise"
+        },
+        {
+          "text": "virtualised / virtual",
+          "depth": 2,
+          "name": "virtualised / virtual"
+        },
+        {
+          "text": "redundant",
+          "depth": 2,
+          "name": "redundant"
+        },
+        {
+          "text": "redundancy",
+          "depth": 2,
+          "name": "redundancy"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "redundant",
+          "depth": 2,
+          "name": "redundant"
+        },
+        {
+          "text": "encrypt",
+          "depth": 2,
+          "name": "encrypt"
+        },
+        {
+          "text": "encryption",
+          "depth": 2,
+          "name": "encryption"
+        },
+        {
+          "text": "encrypt",
+          "depth": 2,
+          "name": "encrypt"
+        },
+        {
+          "text": "encrypted",
+          "depth": 2,
+          "name": "encrypted"
+        },
+        {
+          "text": "sustain",
+          "depth": 2,
+          "name": "sustain"
+        },
+        {
+          "text": "sustainability",
+          "depth": 2,
+          "name": "sustainability"
+        },
+        {
+          "text": "sustain",
+          "depth": 2,
+          "name": "sustain"
+        },
+        {
+          "text": "sustainable / sustained",
+          "depth": 2,
+          "name": "sustainable / sustained"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "556:3403",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A __________ rack holds dozens of blade servers stacked vertically.",
+          "depth": 1,
+          "name": "1. A __________ rack holds dozens of blade servers stacked vertically."
+        },
+        {
+          "text": "2.  __________ optic cables carry data at the speed of light between servers.",
+          "depth": 1,
+          "name": "2. __________ optic cables carry data at the speed of light between servers."
+        },
+        {
+          "text": "3.  A __________ distributes incoming traffic across multiple servers to prevent overload.",
+          "depth": 1,
+          "name": "3. A __________ distributes incoming traffic across multiple servers to prevent overload."
+        },
+        {
+          "text": "4.  A __________ captures the state of a system at a specific moment for recovery.",
+          "depth": 1,
+          "name": "4. A __________ captures the state of a system at a specific moment for recovery."
+        },
+        {
+          "text": "5.  The __________ floor conceals power cables and cooling ducts beneath the server room.",
+          "depth": 1,
+          "name": "5. The __________ floor conceals power cables and cooling ducts beneath the server room."
+        },
+        {
+          "text": "6.  A __________ provides battery backup during the seconds between a power cut and generator start.",
+          "depth": 1,
+          "name": "6. A __________ provides battery backup during the seconds between a power cut and generator start."
+        },
+        {
+          "text": "7.  A __________ scanner uses fingerprint or retinal recognition to control access.",
+          "depth": 1,
+          "name": "7. A __________ scanner uses fingerprint or retinal recognition to control access."
+        },
+        {
+          "text": "8.  __________ measures how quickly data travels from source to destination.",
+          "depth": 1,
+          "name": "8. __________ measures how quickly data travels from source to destination."
+        },
+        {
+          "text": "9.  A __________ — a double-doored vestibule — prevents unauthorised entry by tailgating.",
+          "depth": 1,
+          "name": "9. A __________ — a double-doored vestibule — prevents unauthorised entry by tailgating."
+        },
+        {
+          "text": "10. A fire __________ system uses inert gas to extinguish flames without water damage.",
+          "depth": 1,
+          "name": "10. A fire __________ system uses inert gas to extinguish flames without water damage."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. server  2. Fibre  3. load balancer  4. snapshot  5. raised  6. UPS  7. biometric  8. Latency  9. mantrap  10. suppression",
+          "depth": 2,
+          "name": "1. server 2. Fibre 3. load balancer 4. snapshot 5. raised 6. UPS 7. biometric 8. Latency 9. mantrap 10. suppression"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "556:3421",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Data Centre vs Data Center",
+          "depth": 2,
+          "name": "Data Centre vs Data Center"
+        },
+        {
+          "text": "British English: 'data centre'. American English: 'data center'. Both are correct in their variety. The industry globally tends to use the American spelling because US companies dominate the sector. Similarly: 'fibre' (UK) vs 'fiber' (US) in 'fibre optic'.",
+          "depth": 2,
+          "name": "British English: 'data centre'. American English: 'data center'. Both are correct in their variety. The industry globally tends to use the American spelling because US companies dominate the sector. Similarly: 'fibre' (UK) vs 'fiber' (US) in 'fibre optic'."
+        },
+        {
+          "text": "The Cloud — Not Actually in the Sky",
+          "depth": 2,
+          "name": "The Cloud — Not Actually in the Sky"
+        },
+        {
+          "text": "'The cloud' is simply someone else's data centre. When people say 'my files are in the cloud,' they mean on a remote server, not floating in the atmosphere. The metaphor comes from network diagrams where the internet was drawn as a cloud shape. Understanding this demystifies a lot of tech jargon.",
+          "depth": 2,
+          "name": "'The cloud' is simply someone else's data centre. When people say 'my files are in the cloud,' they mean on a remote server, not floating in the atmosphere. The metaphor comes from network diagrams where the internet was drawn as a cloud shape. Understanding this demystifies a lot of tech jargon."
+        },
+        {
+          "text": "Data Centres in the Middle East",
+          "depth": 2,
+          "name": "Data Centres in the Middle East"
+        },
+        {
+          "text": "The Middle East is experiencing rapid data centre growth. Saudi Arabia's Vision 2030 includes major digital infrastructure investment. The UAE hosts some of the region's largest data centres. Challenges include extreme heat (requiring more cooling) and power costs. Some facilities use solar energy to offset electricity consumption.",
+          "depth": 2,
+          "name": "The Middle East is experiencing rapid data centre growth. Saudi Arabia's Vision 2030 includes major digital infrastructure investment. The UAE hosts some of the region's largest data centres. Challenges include extreme heat (requiring more cooling) and power costs. Some facilities use solar energy to offset electricity consumption."
+        },
+        {
+          "text": "Redundancy — Two Meanings",
+          "depth": 2,
+          "name": "Redundancy — Two Meanings"
+        },
+        {
+          "text": "In IT: 'redundancy' = backup systems that take over if the primary fails (positive — 'built-in redundancy'). In employment: 'redundancy' = losing your job because the position is no longer needed (negative — 'She was made redundant'). Context determines the meaning entirely.",
+          "depth": 2,
+          "name": "In IT: 'redundancy' = backup systems that take over if the primary fails (positive — 'built-in redundancy'). In employment: 'redundancy' = losing your job because the position is no longer needed (negative — 'She was made redundant'). Context determines the meaning entirely."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "556:3437",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "server",
+          "depth": 2,
+          "name": "server"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ room, ~ rack, web ~",
+          "depth": 2,
+          "name": "~ room, ~ rack, web ~"
+        },
+        {
+          "text": "rack",
+          "depth": 2,
+          "name": "rack"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "server ~, ~ unit, ~ mount",
+          "depth": 2,
+          "name": "server ~, ~ unit, ~ mount"
+        },
+        {
+          "text": "bandwidth",
+          "depth": 2,
+          "name": "bandwidth"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ limit, high ~, ~ usage",
+          "depth": 2,
+          "name": "~ limit, high ~, ~ usage"
+        },
+        {
+          "text": "uptime",
+          "depth": 2,
+          "name": "uptime"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ guarantee, 99.99% ~, ~ monitoring",
+          "depth": 2,
+          "name": "~ guarantee, 99.99% ~, ~ monitoring"
+        },
+        {
+          "text": "latency",
+          "depth": 2,
+          "name": "latency"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "low ~, ~ reduction, network ~",
+          "depth": 2,
+          "name": "low ~, ~ reduction, network ~"
+        },
+        {
+          "text": "firewall",
+          "depth": 2,
+          "name": "firewall"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ protection, ~ rules, ~ breach",
+          "depth": 2,
+          "name": "~ protection, ~ rules, ~ breach"
+        },
+        {
+          "text": "backup",
+          "depth": 2,
+          "name": "backup"
+        },
+        {
+          "text": "n/adj",
+          "depth": 2,
+          "name": "n/adj"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ system, ~ generator, data ~",
+          "depth": 2,
+          "name": "~ system, ~ generator, data ~"
+        },
+        {
+          "text": "outage",
+          "depth": 2,
+          "name": "outage"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "power ~, service ~, ~ report",
+          "depth": 2,
+          "name": "power ~, service ~, ~ report"
+        },
+        {
+          "text": "scalability",
+          "depth": 2,
+          "name": "scalability"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ plan, cloud ~, ~ test",
+          "depth": 2,
+          "name": "~ plan, cloud ~, ~ test"
+        },
+        {
+          "text": "virtualisation",
+          "depth": 2,
+          "name": "virtualisation"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "server ~, ~ technology, ~ layer",
+          "depth": 2,
+          "name": "server ~, ~ technology, ~ layer"
+        }
+      ]
+    }
+  }
+}

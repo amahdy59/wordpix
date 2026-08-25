@@ -1,0 +1,489 @@
+{
+  "unitId": "accessories-jewelry",
+  "name": "Accessories & Jewelry",
+  "subtopics": [
+    {
+      "id": "head-accessories",
+      "title": "Head Accessories",
+      "wordIds": [
+        "hat",
+        "cap",
+        "beanie",
+        "beret",
+        "headband",
+        "hair-clip",
+        "tiara",
+        "turban",
+        "visor",
+        "fedora"
+      ]
+    },
+    {
+      "id": "neck-wrist",
+      "title": "Neck & Wrist",
+      "wordIds": [
+        "necklace",
+        "pendant",
+        "choker",
+        "chain",
+        "bracelet",
+        "bangle",
+        "watch",
+        "wristband",
+        "cuff",
+        "charm-bracelet"
+      ]
+    },
+    {
+      "id": "rings-earrings",
+      "title": "Rings & Earrings",
+      "wordIds": [
+        "ring",
+        "engagement-ring",
+        "wedding-band",
+        "signet-ring",
+        "earring",
+        "stud",
+        "hoop",
+        "dangle-earring",
+        "ear-cuff",
+        "piercing"
+      ]
+    },
+    {
+      "id": "bags-carriers",
+      "title": "Bags & Carriers",
+      "wordIds": [
+        "handbag",
+        "backpack",
+        "tote-bag",
+        "messenger-bag",
+        "clutch",
+        "wallet",
+        "purse",
+        "briefcase",
+        "duffel-bag",
+        "fanny-pack"
+      ]
+    },
+    {
+      "id": "other-accessories",
+      "title": "Other Accessories",
+      "wordIds": [
+        "sunglasses",
+        "glasses",
+        "scarf",
+        "gloves",
+        "belt",
+        "umbrella",
+        "tie-pin",
+        "brooch",
+        "pocket-watch",
+        "cane"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "hat",
+      "label": "Hat",
+      "ipa": "/hæt/",
+      "cefr": "A2",
+      "imageNodeId": "467:4356"
+    },
+    {
+      "kind": "card",
+      "id": "cap",
+      "label": "Cap",
+      "ipa": "/kæp/",
+      "cefr": "A2",
+      "imageNodeId": "467:4360"
+    },
+    {
+      "kind": "card",
+      "id": "beanie",
+      "label": "Beanie",
+      "ipa": "/ˈbiːni/",
+      "cefr": "A2",
+      "imageNodeId": "467:4364"
+    },
+    {
+      "kind": "card",
+      "id": "beret",
+      "label": "Beret",
+      "ipa": "/bəˈreɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:4368"
+    },
+    {
+      "kind": "card",
+      "id": "headband",
+      "label": "Headband",
+      "ipa": "/ˈhɛdˌbænd/",
+      "cefr": "A2",
+      "imageNodeId": "467:4372"
+    },
+    {
+      "kind": "card",
+      "id": "hair-clip",
+      "label": "Hair Clip",
+      "ipa": "/hɛər klɪp/",
+      "cefr": "B1",
+      "imageNodeId": "467:4376"
+    },
+    {
+      "kind": "card",
+      "id": "tiara",
+      "label": "Tiara",
+      "ipa": "/tiˈɑːrə/",
+      "cefr": "A2",
+      "imageNodeId": "467:4380"
+    },
+    {
+      "kind": "card",
+      "id": "turban",
+      "label": "Turban",
+      "ipa": "/ˈtɜːrbən/",
+      "cefr": "A2",
+      "imageNodeId": "467:4384"
+    },
+    {
+      "kind": "card",
+      "id": "visor",
+      "label": "Visor",
+      "ipa": "/ˈvaɪzər/",
+      "cefr": "A2",
+      "imageNodeId": "467:4388"
+    },
+    {
+      "kind": "card",
+      "id": "fedora",
+      "label": "Fedora",
+      "ipa": "/fɪˈdɔːrə/",
+      "cefr": "A2",
+      "imageNodeId": "467:4392"
+    },
+    {
+      "kind": "card",
+      "id": "necklace",
+      "label": "Necklace",
+      "ipa": "/ˈnɛkləs/",
+      "cefr": "A2",
+      "imageNodeId": "467:4401"
+    },
+    {
+      "kind": "card",
+      "id": "pendant",
+      "label": "Pendant",
+      "ipa": "/ˈpɛndənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:4405"
+    },
+    {
+      "kind": "card",
+      "id": "choker",
+      "label": "Choker",
+      "ipa": "/ˈtʃoʊkər/",
+      "cefr": "A2",
+      "imageNodeId": "467:4409"
+    },
+    {
+      "kind": "card",
+      "id": "chain",
+      "label": "Chain",
+      "ipa": "/tʃeɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:4413"
+    },
+    {
+      "kind": "card",
+      "id": "bracelet",
+      "label": "Bracelet",
+      "ipa": "/ˈbreɪslɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:4417"
+    },
+    {
+      "kind": "card",
+      "id": "bangle",
+      "label": "Bangle",
+      "ipa": "/ˈbæŋɡəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:4421"
+    },
+    {
+      "kind": "card",
+      "id": "watch",
+      "label": "Watch",
+      "ipa": "/wɒtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:4425"
+    },
+    {
+      "kind": "card",
+      "id": "wristband",
+      "label": "Wristband",
+      "ipa": "/ˈrɪstˌbænd/",
+      "cefr": "A2",
+      "imageNodeId": "467:4429"
+    },
+    {
+      "kind": "card",
+      "id": "cuff",
+      "label": "Cuff",
+      "ipa": "/kʌf/",
+      "cefr": "A2",
+      "imageNodeId": "467:4433"
+    },
+    {
+      "kind": "card",
+      "id": "charm-bracelet",
+      "label": "Charm Bracelet",
+      "ipa": "/tʃɑːrm ˈbreɪslɪt/",
+      "cefr": "B1",
+      "imageNodeId": "467:4437"
+    },
+    {
+      "kind": "card",
+      "id": "ring",
+      "label": "Ring",
+      "ipa": "/rɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:4446"
+    },
+    {
+      "kind": "card",
+      "id": "engagement-ring",
+      "label": "Engagement Ring",
+      "ipa": "/ɪnˈɡeɪdʒmənt rɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "467:4450"
+    },
+    {
+      "kind": "card",
+      "id": "wedding-band",
+      "label": "Wedding Band",
+      "ipa": "/ˈwɛdɪŋ bænd/",
+      "cefr": "B1",
+      "imageNodeId": "467:4454"
+    },
+    {
+      "kind": "card",
+      "id": "signet-ring",
+      "label": "Signet Ring",
+      "ipa": "/ˈsɪɡnɪt rɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "467:4458"
+    },
+    {
+      "kind": "card",
+      "id": "earring",
+      "label": "Earring",
+      "ipa": "/ˈɪərˌrɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:4462"
+    },
+    {
+      "kind": "card",
+      "id": "stud",
+      "label": "Stud",
+      "ipa": "/stʌd/",
+      "cefr": "A2",
+      "imageNodeId": "467:4466"
+    },
+    {
+      "kind": "card",
+      "id": "hoop",
+      "label": "Hoop",
+      "ipa": "/huːp/",
+      "cefr": "A2",
+      "imageNodeId": "467:4470"
+    },
+    {
+      "kind": "card",
+      "id": "dangle-earring",
+      "label": "Dangle Earring",
+      "ipa": "/ˈdæŋɡəl ˈɪərˌrɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "467:4474"
+    },
+    {
+      "kind": "card",
+      "id": "ear-cuff",
+      "label": "Ear Cuff",
+      "ipa": "/ɪər kʌf/",
+      "cefr": "B1",
+      "imageNodeId": "467:4478"
+    },
+    {
+      "kind": "card",
+      "id": "piercing",
+      "label": "Piercing",
+      "ipa": "/ˈpɪərsɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:4482"
+    },
+    {
+      "kind": "card",
+      "id": "handbag",
+      "label": "Handbag",
+      "ipa": "/ˈhændˌbæɡ/",
+      "cefr": "A2",
+      "imageNodeId": "467:4491"
+    },
+    {
+      "kind": "card",
+      "id": "backpack",
+      "label": "Backpack",
+      "ipa": "/ˈbækˌpæk/",
+      "cefr": "A2",
+      "imageNodeId": "467:4495"
+    },
+    {
+      "kind": "card",
+      "id": "tote-bag",
+      "label": "Tote Bag",
+      "ipa": "/toʊt bæɡ/",
+      "cefr": "B1",
+      "imageNodeId": "467:4499"
+    },
+    {
+      "kind": "card",
+      "id": "messenger-bag",
+      "label": "Messenger Bag",
+      "ipa": "/ˈmɛsɪndʒər bæɡ/",
+      "cefr": "B1",
+      "imageNodeId": "467:4503"
+    },
+    {
+      "kind": "card",
+      "id": "clutch",
+      "label": "Clutch",
+      "ipa": "/klʌtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:4507"
+    },
+    {
+      "kind": "card",
+      "id": "wallet",
+      "label": "Wallet",
+      "ipa": "/ˈwɒlɪt/",
+      "cefr": "A2",
+      "imageNodeId": "467:4511"
+    },
+    {
+      "kind": "card",
+      "id": "purse",
+      "label": "Purse",
+      "ipa": "/pɜːrs/",
+      "cefr": "A2",
+      "imageNodeId": "467:4515"
+    },
+    {
+      "kind": "card",
+      "id": "briefcase",
+      "label": "Briefcase",
+      "ipa": "/ˈbriːfˌkeɪs/",
+      "cefr": "A2",
+      "imageNodeId": "467:4519"
+    },
+    {
+      "kind": "card",
+      "id": "duffel-bag",
+      "label": "Duffel Bag",
+      "ipa": "/ˈdʌfəl bæɡ/",
+      "cefr": "B1",
+      "imageNodeId": "467:4523"
+    },
+    {
+      "kind": "card",
+      "id": "fanny-pack",
+      "label": "Fanny Pack",
+      "ipa": "/ˈfæni pæk/",
+      "cefr": "B1",
+      "imageNodeId": "467:4527"
+    },
+    {
+      "kind": "card",
+      "id": "sunglasses",
+      "label": "Sunglasses",
+      "ipa": "/ˈsʌnˌɡlæsɪz/",
+      "cefr": "B1",
+      "imageNodeId": "467:4536"
+    },
+    {
+      "kind": "card",
+      "id": "glasses",
+      "label": "Glasses",
+      "ipa": "/ˈɡlæsɪz/",
+      "cefr": "A2",
+      "imageNodeId": "467:4540"
+    },
+    {
+      "kind": "card",
+      "id": "scarf",
+      "label": "Scarf",
+      "ipa": "/skɑːrf/",
+      "cefr": "A2",
+      "imageNodeId": "467:4544"
+    },
+    {
+      "kind": "card",
+      "id": "gloves",
+      "label": "Gloves",
+      "ipa": "/ɡlʌvz/",
+      "cefr": "A2",
+      "imageNodeId": "467:4548"
+    },
+    {
+      "kind": "card",
+      "id": "belt",
+      "label": "Belt",
+      "ipa": "/bɛlt/",
+      "cefr": "A2",
+      "imageNodeId": "467:4552"
+    },
+    {
+      "kind": "card",
+      "id": "umbrella",
+      "label": "Umbrella",
+      "ipa": "/ʌmˈbrɛlə/",
+      "cefr": "A2",
+      "imageNodeId": "467:4556"
+    },
+    {
+      "kind": "card",
+      "id": "tie-pin",
+      "label": "Tie Pin",
+      "ipa": "/taɪ pɪn/",
+      "cefr": "B1",
+      "imageNodeId": "467:4560"
+    },
+    {
+      "kind": "card",
+      "id": "brooch",
+      "label": "Brooch",
+      "ipa": "/broʊtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:4564"
+    },
+    {
+      "kind": "card",
+      "id": "pocket-watch",
+      "label": "Pocket Watch",
+      "ipa": "/ˈpɒkɪt wɒtʃ/",
+      "cefr": "B1",
+      "imageNodeId": "467:4568"
+    },
+    {
+      "kind": "card",
+      "id": "cane",
+      "label": "Cane",
+      "ipa": "/keɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:4572"
+    }
+  ],
+  "materials": null
+}

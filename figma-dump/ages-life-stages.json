@@ -1,0 +1,489 @@
+{
+  "unitId": "ages-life-stages",
+  "name": "Ages & Life Stages",
+  "subtopics": [
+    {
+      "id": "early-life",
+      "title": "Early Life",
+      "wordIds": [
+        "newborn",
+        "baby",
+        "infant",
+        "toddler",
+        "preschooler",
+        "child",
+        "kid",
+        "youngster",
+        "childhood",
+        "growth"
+      ]
+    },
+    {
+      "id": "youth",
+      "title": "Youth",
+      "wordIds": [
+        "teenager",
+        "adolescent",
+        "teen",
+        "youth",
+        "puberty",
+        "growth-spurt",
+        "young-adult",
+        "coming-of-age",
+        "juvenile",
+        "minor"
+      ]
+    },
+    {
+      "id": "adulthood",
+      "title": "Adulthood",
+      "wordIds": [
+        "adult",
+        "grown-up",
+        "young-adult",
+        "middle-aged",
+        "mature",
+        "prime",
+        "independent",
+        "responsible",
+        "experienced",
+        "professional"
+      ]
+    },
+    {
+      "id": "senior-years",
+      "title": "Senior Years",
+      "wordIds": [
+        "elderly",
+        "senior",
+        "retiree",
+        "grandparent",
+        "aging",
+        "wisdom",
+        "retirement",
+        "golden-years",
+        "elder",
+        "longevity"
+      ]
+    },
+    {
+      "id": "life-milestones",
+      "title": "Life Milestones",
+      "wordIds": [
+        "birth",
+        "first-steps",
+        "first-words",
+        "school-start",
+        "graduation",
+        "first-job",
+        "marriage",
+        "parenthood",
+        "retirement",
+        "legacy"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "newborn",
+      "label": "Newborn",
+      "ipa": "/ˈnjuːˌbɔːrn/",
+      "cefr": "A2",
+      "imageNodeId": "467:2439"
+    },
+    {
+      "kind": "card",
+      "id": "baby",
+      "label": "Baby",
+      "ipa": "/ˈbeɪbi/",
+      "cefr": "A2",
+      "imageNodeId": "467:2443"
+    },
+    {
+      "kind": "card",
+      "id": "infant",
+      "label": "Infant",
+      "ipa": "/ˈɪnfənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:2447"
+    },
+    {
+      "kind": "card",
+      "id": "toddler",
+      "label": "Toddler",
+      "ipa": "/ˈtɒdlər/",
+      "cefr": "A2",
+      "imageNodeId": "467:2451"
+    },
+    {
+      "kind": "card",
+      "id": "preschooler",
+      "label": "Preschooler",
+      "ipa": "/ˈpriːˌskuːlər/",
+      "cefr": "B1",
+      "imageNodeId": "467:2455"
+    },
+    {
+      "kind": "card",
+      "id": "child",
+      "label": "Child",
+      "ipa": "/tʃaɪld/",
+      "cefr": "A2",
+      "imageNodeId": "467:2459"
+    },
+    {
+      "kind": "card",
+      "id": "kid",
+      "label": "Kid",
+      "ipa": "/kɪd/",
+      "cefr": "A2",
+      "imageNodeId": "467:2463"
+    },
+    {
+      "kind": "card",
+      "id": "youngster",
+      "label": "Youngster",
+      "ipa": "/ˈjʌŋstər/",
+      "cefr": "A2",
+      "imageNodeId": "467:2467"
+    },
+    {
+      "kind": "card",
+      "id": "childhood",
+      "label": "Childhood",
+      "ipa": "/ˈtʃaɪldhʊd/",
+      "cefr": "A2",
+      "imageNodeId": "467:2471"
+    },
+    {
+      "kind": "card",
+      "id": "growth",
+      "label": "Growth",
+      "ipa": "/ɡroʊθ/",
+      "cefr": "A2",
+      "imageNodeId": "467:2475"
+    },
+    {
+      "kind": "card",
+      "id": "teenager",
+      "label": "Teenager",
+      "ipa": "/ˈtiːnˌeɪdʒər/",
+      "cefr": "A2",
+      "imageNodeId": "467:2484"
+    },
+    {
+      "kind": "card",
+      "id": "adolescent",
+      "label": "Adolescent",
+      "ipa": "/ˌædəˈlɛsənt/",
+      "cefr": "B1",
+      "imageNodeId": "467:2488"
+    },
+    {
+      "kind": "card",
+      "id": "teen",
+      "label": "Teen",
+      "ipa": "/tiːn/",
+      "cefr": "A2",
+      "imageNodeId": "467:2492"
+    },
+    {
+      "kind": "card",
+      "id": "youth",
+      "label": "Youth",
+      "ipa": "/juːθ/",
+      "cefr": "A2",
+      "imageNodeId": "467:2496"
+    },
+    {
+      "kind": "card",
+      "id": "puberty",
+      "label": "Puberty",
+      "ipa": "/ˈpjuːbərti/",
+      "cefr": "A2",
+      "imageNodeId": "467:2500"
+    },
+    {
+      "kind": "card",
+      "id": "growth-spurt",
+      "label": "Growth Spurt",
+      "ipa": "/ɡroʊθ spɜːrt/",
+      "cefr": "B1",
+      "imageNodeId": "467:2504"
+    },
+    {
+      "kind": "card",
+      "id": "young-adult",
+      "label": "Young Adult",
+      "ipa": "/jʌŋ əˈdʌlt/",
+      "cefr": "B1",
+      "imageNodeId": "467:2508"
+    },
+    {
+      "kind": "card",
+      "id": "coming-of-age",
+      "label": "Coming of Age",
+      "ipa": "/ˈkʌmɪŋ əv eɪdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "467:2512"
+    },
+    {
+      "kind": "card",
+      "id": "juvenile",
+      "label": "Juvenile",
+      "ipa": "/ˈdʒuːvəˌnaɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:2516"
+    },
+    {
+      "kind": "card",
+      "id": "minor",
+      "label": "Minor",
+      "ipa": "/ˈmaɪnər/",
+      "cefr": "A2",
+      "imageNodeId": "467:2520"
+    },
+    {
+      "kind": "card",
+      "id": "adult",
+      "label": "Adult",
+      "ipa": "/əˈdʌlt/",
+      "cefr": "A2",
+      "imageNodeId": "467:2529"
+    },
+    {
+      "kind": "card",
+      "id": "grown-up",
+      "label": "Grown-Up",
+      "ipa": "/ˈɡroʊn ʌp/",
+      "cefr": "B1",
+      "imageNodeId": "467:2533"
+    },
+    {
+      "kind": "card",
+      "id": "young-adult",
+      "label": "Young Adult",
+      "ipa": "/jʌŋ əˈdʌlt/",
+      "cefr": "B1",
+      "imageNodeId": "467:2537"
+    },
+    {
+      "kind": "card",
+      "id": "middle-aged",
+      "label": "Middle-Aged",
+      "ipa": "/ˈmɪdəl eɪdʒd/",
+      "cefr": "B1",
+      "imageNodeId": "467:2541"
+    },
+    {
+      "kind": "card",
+      "id": "mature",
+      "label": "Mature",
+      "ipa": "/məˈtʃʊər/",
+      "cefr": "A2",
+      "imageNodeId": "467:2545"
+    },
+    {
+      "kind": "card",
+      "id": "prime",
+      "label": "Prime",
+      "ipa": "/praɪm/",
+      "cefr": "A2",
+      "imageNodeId": "467:2549"
+    },
+    {
+      "kind": "card",
+      "id": "independent",
+      "label": "Independent",
+      "ipa": "/ˌɪndɪˈpɛndənt/",
+      "cefr": "B1",
+      "imageNodeId": "467:2553"
+    },
+    {
+      "kind": "card",
+      "id": "responsible",
+      "label": "Responsible",
+      "ipa": "/rɪˈspɒnsɪbəl/",
+      "cefr": "B1",
+      "imageNodeId": "467:2557"
+    },
+    {
+      "kind": "card",
+      "id": "experienced",
+      "label": "Experienced",
+      "ipa": "/ɪkˈspɪəriənst/",
+      "cefr": "B1",
+      "imageNodeId": "467:2561"
+    },
+    {
+      "kind": "card",
+      "id": "professional",
+      "label": "Professional",
+      "ipa": "/prəˈfɛʃənəl/",
+      "cefr": "B1",
+      "imageNodeId": "467:2565"
+    },
+    {
+      "kind": "card",
+      "id": "elderly",
+      "label": "Elderly",
+      "ipa": "/ˈɛldərli/",
+      "cefr": "A2",
+      "imageNodeId": "467:2574"
+    },
+    {
+      "kind": "card",
+      "id": "senior",
+      "label": "Senior",
+      "ipa": "/ˈsiːnjər/",
+      "cefr": "A2",
+      "imageNodeId": "467:2578"
+    },
+    {
+      "kind": "card",
+      "id": "retiree",
+      "label": "Retiree",
+      "ipa": "/rɪˌtaɪəˈriː/",
+      "cefr": "A2",
+      "imageNodeId": "467:2582"
+    },
+    {
+      "kind": "card",
+      "id": "grandparent",
+      "label": "Grandparent",
+      "ipa": "/ˈɡrændˌpɛərənt/",
+      "cefr": "B1",
+      "imageNodeId": "467:2586"
+    },
+    {
+      "kind": "card",
+      "id": "aging",
+      "label": "Aging",
+      "ipa": "/ˈeɪdʒɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:2590"
+    },
+    {
+      "kind": "card",
+      "id": "wisdom",
+      "label": "Wisdom",
+      "ipa": "/ˈwɪzdəm/",
+      "cefr": "A2",
+      "imageNodeId": "467:2594"
+    },
+    {
+      "kind": "card",
+      "id": "retirement",
+      "label": "Retirement",
+      "ipa": "/rɪˈtaɪərmənt/",
+      "cefr": "B1",
+      "imageNodeId": "467:2598"
+    },
+    {
+      "kind": "card",
+      "id": "golden-years",
+      "label": "Golden Years",
+      "ipa": "/ˈɡoʊldən jɪərz/",
+      "cefr": "B1",
+      "imageNodeId": "467:2602"
+    },
+    {
+      "kind": "card",
+      "id": "elder",
+      "label": "Elder",
+      "ipa": "/ˈɛldər/",
+      "cefr": "A2",
+      "imageNodeId": "467:2606"
+    },
+    {
+      "kind": "card",
+      "id": "longevity",
+      "label": "Longevity",
+      "ipa": "/lɒnˈdʒɛvɪti/",
+      "cefr": "A2",
+      "imageNodeId": "467:2610"
+    },
+    {
+      "kind": "card",
+      "id": "birth",
+      "label": "Birth",
+      "ipa": "/bɜːrθ/",
+      "cefr": "A2",
+      "imageNodeId": "467:2619"
+    },
+    {
+      "kind": "card",
+      "id": "first-steps",
+      "label": "First Steps",
+      "ipa": "/fɜːrst stɛps/",
+      "cefr": "B1",
+      "imageNodeId": "467:2623"
+    },
+    {
+      "kind": "card",
+      "id": "first-words",
+      "label": "First Words",
+      "ipa": "/fɜːrst wɜːrdz/",
+      "cefr": "B1",
+      "imageNodeId": "467:2627"
+    },
+    {
+      "kind": "card",
+      "id": "school-start",
+      "label": "School Start",
+      "ipa": "/skuːl stɑːrt/",
+      "cefr": "B1",
+      "imageNodeId": "467:2631"
+    },
+    {
+      "kind": "card",
+      "id": "graduation",
+      "label": "Graduation",
+      "ipa": "/ˌɡrædʒuˈeɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "467:2635"
+    },
+    {
+      "kind": "card",
+      "id": "first-job",
+      "label": "First Job",
+      "ipa": "/fɜːrst dʒɒb/",
+      "cefr": "B1",
+      "imageNodeId": "467:2639"
+    },
+    {
+      "kind": "card",
+      "id": "marriage",
+      "label": "Marriage",
+      "ipa": "/ˈmærɪdʒ/",
+      "cefr": "A2",
+      "imageNodeId": "467:2643"
+    },
+    {
+      "kind": "card",
+      "id": "parenthood",
+      "label": "Parenthood",
+      "ipa": "/ˈpɛərəntˌhʊd/",
+      "cefr": "B1",
+      "imageNodeId": "467:2647"
+    },
+    {
+      "kind": "card",
+      "id": "retirement",
+      "label": "Retirement",
+      "ipa": "/rɪˈtaɪərmənt/",
+      "cefr": "B1",
+      "imageNodeId": "467:2651"
+    },
+    {
+      "kind": "card",
+      "id": "legacy",
+      "label": "Legacy",
+      "ipa": "/ˈlɛɡəsi/",
+      "cefr": "A2",
+      "imageNodeId": "467:2655"
+    }
+  ],
+  "materials": null
+}

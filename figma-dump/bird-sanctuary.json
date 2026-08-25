@@ -1,0 +1,1566 @@
+{
+  "unitId": "bird-sanctuary",
+  "name": "The Bird Sanctuary",
+  "subtopics": [
+    {
+      "id": "common-birds",
+      "title": "Common Birds",
+      "wordIds": [
+        "robin",
+        "sparrow",
+        "blue-jay",
+        "cardinal",
+        "crow",
+        "pigeon",
+        "dove",
+        "finch",
+        "wren",
+        "starling"
+      ]
+    },
+    {
+      "id": "water-birds",
+      "title": "Water Birds",
+      "wordIds": [
+        "duck",
+        "swan",
+        "goose",
+        "heron",
+        "pelican",
+        "flamingo",
+        "crane",
+        "seagull",
+        "kingfisher",
+        "cormorant"
+      ]
+    },
+    {
+      "id": "birds-of-prey",
+      "title": "Birds of Prey",
+      "wordIds": [
+        "eagle",
+        "hawk",
+        "falcon",
+        "owl",
+        "osprey",
+        "vulture",
+        "kite",
+        "harrier",
+        "kestrel",
+        "condor"
+      ]
+    },
+    {
+      "id": "anatomy",
+      "title": "Anatomy",
+      "wordIds": [
+        "beak",
+        "feather",
+        "wing",
+        "talon",
+        "crest",
+        "tail",
+        "breast",
+        "egg",
+        "nest",
+        "perch"
+      ]
+    },
+    {
+      "id": "behavior",
+      "title": "Behavior",
+      "wordIds": [
+        "fly",
+        "sing",
+        "migrate",
+        "nest-building",
+        "feed",
+        "preen",
+        "soar",
+        "dive",
+        "flock",
+        "roost"
+      ]
+    },
+    {
+      "id": "habitat",
+      "title": "Habitat",
+      "wordIds": [
+        "tree",
+        "branch",
+        "birdhouse",
+        "feeder",
+        "bath",
+        "pond",
+        "wetland",
+        "meadow",
+        "cliff",
+        "hedge"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "robin",
+      "label": "Robin",
+      "ipa": "/ˈrɒbɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:6695"
+    },
+    {
+      "kind": "card",
+      "id": "sparrow",
+      "label": "Sparrow",
+      "ipa": "/ˈspæroʊ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6699"
+    },
+    {
+      "kind": "card",
+      "id": "blue-jay",
+      "label": "Blue Jay",
+      "ipa": "/bluː dʒeɪ/",
+      "cefr": "C1",
+      "imageNodeId": "119:6703"
+    },
+    {
+      "kind": "card",
+      "id": "cardinal",
+      "label": "Cardinal",
+      "ipa": "/ˈkɑːrdɪnəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:6707"
+    },
+    {
+      "kind": "card",
+      "id": "crow",
+      "label": "Crow",
+      "ipa": "/kroʊ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6711"
+    },
+    {
+      "kind": "card",
+      "id": "pigeon",
+      "label": "Pigeon",
+      "ipa": "/ˈpɪdʒɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:6715"
+    },
+    {
+      "kind": "card",
+      "id": "dove",
+      "label": "Dove",
+      "ipa": "/dʌv/",
+      "cefr": "B2",
+      "imageNodeId": "119:6719"
+    },
+    {
+      "kind": "card",
+      "id": "finch",
+      "label": "Finch",
+      "ipa": "/fɪntʃ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6723"
+    },
+    {
+      "kind": "card",
+      "id": "wren",
+      "label": "Wren",
+      "ipa": "/rɛn/",
+      "cefr": "B2",
+      "imageNodeId": "119:6727"
+    },
+    {
+      "kind": "card",
+      "id": "starling",
+      "label": "Starling",
+      "ipa": "/ˈstɑːrlɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6731"
+    },
+    {
+      "kind": "card",
+      "id": "duck",
+      "label": "Duck",
+      "ipa": "/dʌk/",
+      "cefr": "B2",
+      "imageNodeId": "119:6740"
+    },
+    {
+      "kind": "card",
+      "id": "swan",
+      "label": "Swan",
+      "ipa": "/swɒn/",
+      "cefr": "B2",
+      "imageNodeId": "119:6744"
+    },
+    {
+      "kind": "card",
+      "id": "goose",
+      "label": "Goose",
+      "ipa": "/ɡuːs/",
+      "cefr": "B2",
+      "imageNodeId": "119:6748"
+    },
+    {
+      "kind": "card",
+      "id": "heron",
+      "label": "Heron",
+      "ipa": "/ˈhɛrən/",
+      "cefr": "B2",
+      "imageNodeId": "119:6752"
+    },
+    {
+      "kind": "card",
+      "id": "pelican",
+      "label": "Pelican",
+      "ipa": "/ˈpɛlɪkən/",
+      "cefr": "B2",
+      "imageNodeId": "119:6756"
+    },
+    {
+      "kind": "card",
+      "id": "flamingo",
+      "label": "Flamingo",
+      "ipa": "/fləˈmɪŋɡoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6760"
+    },
+    {
+      "kind": "card",
+      "id": "crane",
+      "label": "Crane",
+      "ipa": "/kreɪn/",
+      "cefr": "B2",
+      "imageNodeId": "119:6764"
+    },
+    {
+      "kind": "card",
+      "id": "seagull",
+      "label": "Seagull",
+      "ipa": "/ˈsiːɡʌl/",
+      "cefr": "B2",
+      "imageNodeId": "119:6768"
+    },
+    {
+      "kind": "card",
+      "id": "kingfisher",
+      "label": "Kingfisher",
+      "ipa": "/ˈkɪŋˌfɪʃər/",
+      "cefr": "C1",
+      "imageNodeId": "119:6772"
+    },
+    {
+      "kind": "card",
+      "id": "cormorant",
+      "label": "Cormorant",
+      "ipa": "/ˈkɔːrmərənt/",
+      "cefr": "B2",
+      "imageNodeId": "119:6776"
+    },
+    {
+      "kind": "card",
+      "id": "eagle",
+      "label": "Eagle",
+      "ipa": "/ˈiːɡəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:6785"
+    },
+    {
+      "kind": "card",
+      "id": "hawk",
+      "label": "Hawk",
+      "ipa": "/hɔːk/",
+      "cefr": "B2",
+      "imageNodeId": "119:6789"
+    },
+    {
+      "kind": "card",
+      "id": "falcon",
+      "label": "Falcon",
+      "ipa": "/ˈfɔːlkən/",
+      "cefr": "B2",
+      "imageNodeId": "119:6793"
+    },
+    {
+      "kind": "card",
+      "id": "owl",
+      "label": "Owl",
+      "ipa": "/aʊl/",
+      "cefr": "B2",
+      "imageNodeId": "119:6797"
+    },
+    {
+      "kind": "card",
+      "id": "osprey",
+      "label": "Osprey",
+      "ipa": "/ˈɒspri/",
+      "cefr": "B2",
+      "imageNodeId": "119:6801"
+    },
+    {
+      "kind": "card",
+      "id": "vulture",
+      "label": "Vulture",
+      "ipa": "/ˈvʌltʃər/",
+      "cefr": "B2",
+      "imageNodeId": "119:6805"
+    },
+    {
+      "kind": "card",
+      "id": "kite",
+      "label": "Kite",
+      "ipa": "/kaɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:6809"
+    },
+    {
+      "kind": "card",
+      "id": "harrier",
+      "label": "Harrier",
+      "ipa": "/ˈhæriər/",
+      "cefr": "B2",
+      "imageNodeId": "119:6813"
+    },
+    {
+      "kind": "card",
+      "id": "kestrel",
+      "label": "Kestrel",
+      "ipa": "/ˈkɛstrəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:6817"
+    },
+    {
+      "kind": "card",
+      "id": "condor",
+      "label": "Condor",
+      "ipa": "/ˈkɒndɔːr/",
+      "cefr": "B2",
+      "imageNodeId": "119:6821"
+    },
+    {
+      "kind": "card",
+      "id": "beak",
+      "label": "Beak",
+      "ipa": "/biːk/",
+      "cefr": "B2",
+      "imageNodeId": "119:6830"
+    },
+    {
+      "kind": "card",
+      "id": "feather",
+      "label": "Feather",
+      "ipa": "/ˈfɛðər/",
+      "cefr": "B2",
+      "imageNodeId": "119:6834"
+    },
+    {
+      "kind": "card",
+      "id": "wing",
+      "label": "Wing",
+      "ipa": "/wɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6838"
+    },
+    {
+      "kind": "card",
+      "id": "talon",
+      "label": "Talon",
+      "ipa": "/ˈtælən/",
+      "cefr": "B2",
+      "imageNodeId": "119:6842"
+    },
+    {
+      "kind": "card",
+      "id": "crest",
+      "label": "Crest",
+      "ipa": "/krɛst/",
+      "cefr": "B2",
+      "imageNodeId": "119:6846"
+    },
+    {
+      "kind": "card",
+      "id": "tail",
+      "label": "Tail",
+      "ipa": "/teɪl/",
+      "cefr": "B2",
+      "imageNodeId": "119:6850"
+    },
+    {
+      "kind": "card",
+      "id": "breast",
+      "label": "Breast",
+      "ipa": "/brɛst/",
+      "cefr": "B2",
+      "imageNodeId": "119:6854"
+    },
+    {
+      "kind": "card",
+      "id": "egg",
+      "label": "Egg",
+      "ipa": "/ɛɡ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6858"
+    },
+    {
+      "kind": "card",
+      "id": "nest",
+      "label": "Nest",
+      "ipa": "/nɛst/",
+      "cefr": "B2",
+      "imageNodeId": "119:6862"
+    },
+    {
+      "kind": "card",
+      "id": "perch",
+      "label": "Perch",
+      "ipa": "/pɜːrtʃ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6866"
+    },
+    {
+      "kind": "card",
+      "id": "fly",
+      "label": "Fly",
+      "ipa": "/flaɪ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6875"
+    },
+    {
+      "kind": "card",
+      "id": "sing",
+      "label": "Sing",
+      "ipa": "/sɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6879"
+    },
+    {
+      "kind": "card",
+      "id": "migrate",
+      "label": "Migrate",
+      "ipa": "/ˈmaɪɡreɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:6883"
+    },
+    {
+      "kind": "card",
+      "id": "nest-building",
+      "label": "Nest Building",
+      "ipa": "/nɛst ˈbɪldɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "119:6887"
+    },
+    {
+      "kind": "card",
+      "id": "feed",
+      "label": "Feed",
+      "ipa": "/fiːd/",
+      "cefr": "B2",
+      "imageNodeId": "119:6891"
+    },
+    {
+      "kind": "card",
+      "id": "preen",
+      "label": "Preen",
+      "ipa": "/priːn/",
+      "cefr": "B2",
+      "imageNodeId": "119:6895"
+    },
+    {
+      "kind": "card",
+      "id": "soar",
+      "label": "Soar",
+      "ipa": "/sɔːr/",
+      "cefr": "B2",
+      "imageNodeId": "119:6899"
+    },
+    {
+      "kind": "card",
+      "id": "dive",
+      "label": "Dive",
+      "ipa": "/daɪv/",
+      "cefr": "B2",
+      "imageNodeId": "119:6903"
+    },
+    {
+      "kind": "card",
+      "id": "flock",
+      "label": "Flock",
+      "ipa": "/flɒk/",
+      "cefr": "B2",
+      "imageNodeId": "119:6907"
+    },
+    {
+      "kind": "card",
+      "id": "roost",
+      "label": "Roost",
+      "ipa": "/ruːst/",
+      "cefr": "B2",
+      "imageNodeId": "119:6911"
+    },
+    {
+      "kind": "card",
+      "id": "tree",
+      "label": "Tree",
+      "ipa": "/triː/",
+      "cefr": "B2",
+      "imageNodeId": "119:6920"
+    },
+    {
+      "kind": "card",
+      "id": "branch",
+      "label": "Branch",
+      "ipa": "/brɑːntʃ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6924"
+    },
+    {
+      "kind": "card",
+      "id": "birdhouse",
+      "label": "Birdhouse",
+      "ipa": "/ˈbɜːrdˌhaʊs/",
+      "cefr": "B2",
+      "imageNodeId": "119:6928"
+    },
+    {
+      "kind": "card",
+      "id": "feeder",
+      "label": "Feeder",
+      "ipa": "/ˈfiːdər/",
+      "cefr": "B2",
+      "imageNodeId": "119:6932"
+    },
+    {
+      "kind": "card",
+      "id": "bath",
+      "label": "Bath",
+      "ipa": "/bæθ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6936"
+    },
+    {
+      "kind": "card",
+      "id": "pond",
+      "label": "Pond",
+      "ipa": "/pɒnd/",
+      "cefr": "B2",
+      "imageNodeId": "119:6940"
+    },
+    {
+      "kind": "card",
+      "id": "wetland",
+      "label": "Wetland",
+      "ipa": "/ˈwɛtlənd/",
+      "cefr": "B2",
+      "imageNodeId": "119:6944"
+    },
+    {
+      "kind": "card",
+      "id": "meadow",
+      "label": "Meadow",
+      "ipa": "/ˈmɛdoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6948"
+    },
+    {
+      "kind": "card",
+      "id": "cliff",
+      "label": "Cliff",
+      "ipa": "/klɪf/",
+      "cefr": "B2",
+      "imageNodeId": "119:6952"
+    },
+    {
+      "kind": "card",
+      "id": "hedge",
+      "label": "Hedge",
+      "ipa": "/hɛdʒ/",
+      "cefr": "B2",
+      "imageNodeId": "119:6956"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "554:5051",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "554:5053",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2+ · Topic: The Bird Sanctuary",
+          "depth": 1,
+          "name": "Level: B2+ · Topic: The Bird Sanctuary"
+        },
+        {
+          "text": "Sentinels of the Sky — Birds as Indicators of Environmental Health\n\nBirds have long served as barometers of environmental change. When Rachel Carson published Silent Spring in 1962 — documenting the devastating effects of the pesticide DDT on bird populations — she catalysed the modern environmental movement by demonstrating that the health of bird species could serve as an early warning system for broader ecological damage. Six decades later, the principle remains valid: the state of the world's bird populations continues to provide one of the most reliable indicators of the overall health of ecosystems.\n\nA bird sanctuary — whether a designated nature reserve, a wetland site, or a rehabilitative facility — serves multiple overlapping functions. It provides protected habitat for resident and migratory species, offers a space for scientific research and monitoring, serves as an educational resource for public engagement with conservation, and in many cases operates rescue and rehabilitation programmes for injured, orphaned, or confiscated birds. The best sanctuaries combine these functions into an integrated approach that addresses both immediate welfare needs and long-term population sustainability.\n\nThe scale of global bird decline is sobering. A landmark study published in Science in 2019 estimated that North America had lost approximately 3 billion breeding birds since 1970 — a decline of 29% across nearly all habitats and species groups. In Europe, farmland bird populations have declined by over 50% since 1980, closely correlated with the intensification of agriculture. The State of the World's Birds report (2022) classified one in eight bird species — over 1,400 — as threatened with extinction, with habitat loss, climate change, hunting, and invasive species identified as the primary drivers.\n\nMigratory birds face particular challenges. Species that travel thousands of kilometres between breeding and wintering grounds must navigate an obstacle course of threats: habitat degradation at both ends of their journey, hunting and trapping along migration routes, collisions with buildings and wind turbines, light pollution that disorients nocturnal migrants, and climate-driven changes in the timing and availability of food resources. The bar-tailed godwit, which makes the longest non-stop flight of any bird — over 11,000 kilometres from Alaska to New Zealand — depends on a chain of stopover sites where it can rest and refuel; the degradation of even one critical site can jeopardise the entire migration.\n\nThe economics of bird conservation extend well beyond the ethical case for protecting biodiversity. Birdwatching — one of the fastest-growing recreational activities in the world — generates significant economic value: in the United States alone, the US Fish and Wildlife Service estimates that birdwatching contributes over $100 billion annually to the national economy through equipment, travel, and associated spending. Bird tourism has become a vital source of income for communities adjacent to significant birding sites, creating economic incentives for habitat preservation.\n\nAdvances in technology have transformed ornithological research. Miniaturised GPS trackers attached to individual birds have revealed migration routes, stopover strategies, and habitat preferences with unprecedented precision. Citizen science platforms such as eBird — which has accumulated over 1.5 billion bird observations contributed by volunteers worldwide — have created datasets of a scale that would be impossible through professional research alone. Acoustic monitoring, satellite imaging, and environmental DNA analysis are further expanding our ability to understand and protect bird populations.",
+          "depth": 1,
+          "name": "Sentinels of the Sky — Birds as Indicators of Environmental Health Birds have long served as barometers of environmental change. When Rachel Carson published Silent Spring in 1962 — documenting the devastating effects of the pesticide DDT on bird populations — she catalysed the modern environmental movement by demonstrating that the health of bird species could serve as an early warning system for broader ecological damage. Six decades later, the principle remains valid: the state of the world's bird populations continues to provide one of the most reliable indicators of the overall health of ecosystems. A bird sanctuary — whether a designated nature reserve, a wetland site, or a rehabilitative facility — serves multiple overlapping functions. It provides protected habitat for resident and migratory species, offers a space for scientific research and monitoring, serves as an educational resource for public engagement with conservation, and in many cases operates rescue and rehabilitation programmes for injured, orphaned, or confiscated birds. The best sanctuaries combine these functions into an integrated approach that addresses both immediate welfare needs and long-term population sustainability. The scale of global bird decline is sobering. A landmark study published in Science in 2019 estimated that North America had lost approximately 3 billion breeding birds since 1970 — a decline of 29% across nearly all habitats and species groups. In Europe, farmland bird populations have declined by over 50% since 1980, closely correlated with the intensification of agriculture. The State of the World's Birds report (2022) classified one in eight bird species — over 1,400 — as threatened with extinction, with habitat loss, climate change, hunting, and invasive species identified as the primary drivers. Migratory birds face particular challenges. Species that travel thousands of kilometres between breeding and wintering grounds must navigate an obstacle course of threats: habitat degradation at both ends of their journey, hunting and trapping along migration routes, collisions with buildings and wind turbines, light pollution that disorients nocturnal migrants, and climate-driven changes in the timing and availability of food resources. The bar-tailed godwit, which makes the longest non-stop flight of any bird — over 11,000 kilometres from Alaska to New Zealand — depends on a chain of stopover sites where it can rest and refuel; the degradation of even one critical site can jeopardise the entire migration. The economics of bird conservation extend well beyond the ethical case for protecting biodiversity. Birdwatching — one of the fastest-growing recreational activities in the world — generates significant economic value: in the United States alone, the US Fish and Wildlife Service estimates that birdwatching contributes over $100 billion annually to the national economy through equipment, travel, and associated spending. Bird tourism has become a vital source of income for communities adjacent to significant birding sites, creating economic incentives for habitat preservation. Advances in technology have transformed ornithological research. Miniaturised GPS trackers attached to individual birds have revealed migration routes, stopover strategies, and habitat preferences with unprecedented precision. Citizen science platforms such as eBird — which has accumulated over 1.5 billion bird observations contributed by volunteers worldwide — have created datasets of a scale that would be impossible through professional research alone. Acoustic monitoring, satellite imaging, and environmental DNA analysis are further expanding our ability to understand and protect bird populations."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Why does the passage describe Rachel Carson's Silent Spring as having 'catalysed the modern environmental movement'?",
+          "depth": 1,
+          "name": "1. Why does the passage describe Rachel Carson's Silent Spring as having 'catalysed the modern environmental movement'?"
+        },
+        {
+          "text": "2. Analyse the multiple functions of a bird sanctuary and how they complement one another.",
+          "depth": 1,
+          "name": "2. Analyse the multiple functions of a bird sanctuary and how they complement one another."
+        },
+        {
+          "text": "3. What specific threats do migratory birds face, and why is the concept of 'stopover sites' so critical?",
+          "depth": 1,
+          "name": "3. What specific threats do migratory birds face, and why is the concept of 'stopover sites' so critical?"
+        },
+        {
+          "text": "4. How do the economic arguments for bird conservation complement the ethical ones?",
+          "depth": 1,
+          "name": "4. How do the economic arguments for bird conservation complement the ethical ones?"
+        },
+        {
+          "text": "5. Evaluate how technological advances have changed our understanding of bird populations and conservation.",
+          "depth": 1,
+          "name": "5. Evaluate how technological advances have changed our understanding of bird populations and conservation."
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "554:5066",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "a little bird told me",
+          "depth": 2,
+          "name": "a little bird told me"
+        },
+        {
+          "text": "I heard from a secret source",
+          "depth": 2,
+          "name": "I heard from a secret source"
+        },
+        {
+          "text": "\"A little bird told me you're getting married — congratulations!\"",
+          "depth": 2,
+          "name": "\"A little bird told me you're getting married — congratulations!\""
+        },
+        {
+          "text": "kill two birds with one stone",
+          "depth": 2,
+          "name": "kill two birds with one stone"
+        },
+        {
+          "text": "achieve two things with a single action",
+          "depth": 2,
+          "name": "achieve two things with a single action"
+        },
+        {
+          "text": "\"I'll visit the bank and the post office — kill two birds with one stone.\"",
+          "depth": 2,
+          "name": "\"I'll visit the bank and the post office — kill two birds with one stone.\""
+        },
+        {
+          "text": "the early bird catches the worm",
+          "depth": 2,
+          "name": "the early bird catches the worm"
+        },
+        {
+          "text": "those who start early have an advantage",
+          "depth": 2,
+          "name": "those who start early have an advantage"
+        },
+        {
+          "text": "\"The sale starts at 6am — the early bird catches the worm!\"",
+          "depth": 2,
+          "name": "\"The sale starts at 6am — the early bird catches the worm!\""
+        },
+        {
+          "text": "birds of a feather (flock together)",
+          "depth": 2,
+          "name": "birds of a feather (flock together)"
+        },
+        {
+          "text": "similar people tend to spend time together",
+          "depth": 2,
+          "name": "similar people tend to spend time together"
+        },
+        {
+          "text": "\"They're all tech enthusiasts — birds of a feather.\"",
+          "depth": 2,
+          "name": "\"They're all tech enthusiasts — birds of a feather.\""
+        },
+        {
+          "text": "as free as a bird",
+          "depth": 2,
+          "name": "as free as a bird"
+        },
+        {
+          "text": "completely free, with no worries or responsibilities",
+          "depth": 2,
+          "name": "completely free, with no worries or responsibilities"
+        },
+        {
+          "text": "\"After finishing my exams, I felt as free as a bird.\"",
+          "depth": 2,
+          "name": "\"After finishing my exams, I felt as free as a bird.\""
+        },
+        {
+          "text": "a bird's-eye view",
+          "depth": 2,
+          "name": "a bird's-eye view"
+        },
+        {
+          "text": "a view from high above; an overview",
+          "depth": 2,
+          "name": "a view from high above; an overview"
+        },
+        {
+          "text": "\"The drone gave us a bird's-eye view of the city.\"",
+          "depth": 2,
+          "name": "\"The drone gave us a bird's-eye view of the city.\""
+        },
+        {
+          "text": "ruffle someone's feathers",
+          "depth": 2,
+          "name": "ruffle someone's feathers"
+        },
+        {
+          "text": "annoy or upset someone",
+          "depth": 2,
+          "name": "annoy or upset someone"
+        },
+        {
+          "text": "\"His comments really ruffled a few feathers at the meeting.\"",
+          "depth": 2,
+          "name": "\"His comments really ruffled a few feathers at the meeting.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "554:5098",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A volunteer leading a birdwatching group at a sanctuary",
+          "depth": 1,
+          "name": "Scene: A volunteer leading a birdwatching group at a sanctuary"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "If we're quiet, we should spot some good species from this hide. Has everyone got their binoculars ready?",
+          "depth": 2,
+          "name": "If we're quiet, we should spot some good species from this hide. Has everyone got their binoculars ready?"
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "What should we look for?",
+          "depth": 2,
+          "name": "What should we look for?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "See those tall grey birds standing in the shallows? Those are herons — they stand perfectly still, waiting for fish.",
+          "depth": 2,
+          "name": "See those tall grey birds standing in the shallows? Those are herons — they stand perfectly still, waiting for fish."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "There's something small and blue! It just flew past very fast.",
+          "depth": 2,
+          "name": "There's something small and blue! It just flew past very fast."
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "A kingfisher! Excellent spot. They're hard to see because they move so quickly. That flash of electric blue is unmistakable.",
+          "depth": 2,
+          "name": "A kingfisher! Excellent spot. They're hard to see because they move so quickly. That flash of electric blue is unmistakable."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "What are those black and white birds with orange beaks?",
+          "depth": 2,
+          "name": "What are those black and white birds with orange beaks?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "Oystercatchers. Despite their name, they mostly eat mussels and worms, not oysters.",
+          "depth": 2,
+          "name": "Oystercatchers. Despite their name, they mostly eat mussels and worms, not oysters."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "I can hear a really beautiful song but I can't see the bird.",
+          "depth": 2,
+          "name": "I can hear a really beautiful song but I can't see the bird."
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "That's a blackbird singing from the trees behind us. They have one of the most musical songs of any British bird.",
+          "depth": 2,
+          "name": "That's a blackbird singing from the trees behind us. They have one of the most musical songs of any British bird."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "How many species have been recorded here?",
+          "depth": 2,
+          "name": "How many species have been recorded here?"
+        },
+        {
+          "text": "Guide:",
+          "depth": 2,
+          "name": "Guide:"
+        },
+        {
+          "text": "Over 180 species throughout the year. Spring and autumn are the best times — that's when migrating birds pass through.",
+          "depth": 2,
+          "name": "Over 180 species throughout the year. Spring and autumn are the best times — that's when migrating birds pass through."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "554:5136",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The data shows that bird populations is declining across all habitats.\"",
+          "depth": 2,
+          "name": "❌ \"The data shows that bird populations is declining across all habitats.\""
+        },
+        {
+          "text": "✅ \"The data show/shows that bird populations are declining across all habitats.\"",
+          "depth": 2,
+          "name": "✅ \"The data show/shows that bird populations are declining across all habitats.\""
+        },
+        {
+          "text": "Two issues: (1) 'Data' can be treated as singular ('data shows') or plural ('data show') — both are acceptable at B2+, though plural is more traditional in academic writing. (2) 'Bird populations' is plural: 'populations are declining.' Maintaining agreement across complex sentences is a hallmark of B2+ competence.",
+          "depth": 2,
+          "name": "Two issues: (1) 'Data' can be treated as singular ('data shows') or plural ('data show') — both are acceptable at B2+, though plural is more traditional in academic writing. (2) 'Bird populations' is plural: 'populations are declining.' Maintaining agreement across complex sentences is a hallmark of B2+ competence."
+        },
+        {
+          "text": "❌ \"Not only birds are affected by pesticides, but also insects and other wildlife.\"",
+          "depth": 2,
+          "name": "❌ \"Not only birds are affected by pesticides, but also insects and other wildlife.\""
+        },
+        {
+          "text": "✅ \"Not only are birds affected by pesticides, but also insects and other wildlife.\"",
+          "depth": 2,
+          "name": "✅ \"Not only are birds affected by pesticides, but also insects and other wildlife.\""
+        },
+        {
+          "text": "'Not only' at the start triggers inversion: 'Not only are...', 'Not only do...', 'Not only has...' This emphatic structure is characteristic of formal B2+ writing. Without inversion: 'Birds are not only affected by pesticides but also by habitat loss.'",
+          "depth": 2,
+          "name": "'Not only' at the start triggers inversion: 'Not only are...', 'Not only do...', 'Not only has...' This emphatic structure is characteristic of formal B2+ writing. Without inversion: 'Birds are not only affected by pesticides but also by habitat loss.'"
+        },
+        {
+          "text": "❌ \"The species which its population has declined by 50% is now critically endangered.\"",
+          "depth": 2,
+          "name": "❌ \"The species which its population has declined by 50% is now critically endangered.\""
+        },
+        {
+          "text": "✅ \"The species whose population has declined by 50% is now critically endangered.\"",
+          "depth": 2,
+          "name": "✅ \"The species whose population has declined by 50% is now critically endangered.\""
+        },
+        {
+          "text": "'Whose' is the possessive relative pronoun — it replaces 'its/his/her/their' in relative clauses: 'the species whose population...' (not 'which its'). 'Whose' can refer to both people and things at B2+: 'the country whose forests are disappearing'.",
+          "depth": 2,
+          "name": "'Whose' is the possessive relative pronoun — it replaces 'its/his/her/their' in relative clauses: 'the species whose population...' (not 'which its'). 'Whose' can refer to both people and things at B2+: 'the country whose forests are disappearing'."
+        },
+        {
+          "text": "❌ \"Had it not been for conservation efforts, this species will have gone extinct.\"",
+          "depth": 2,
+          "name": "❌ \"Had it not been for conservation efforts, this species will have gone extinct.\""
+        },
+        {
+          "text": "✅ \"Had it not been for conservation efforts, this species would have gone extinct.\"",
+          "depth": 2,
+          "name": "✅ \"Had it not been for conservation efforts, this species would have gone extinct.\""
+        },
+        {
+          "text": "Third conditional with inversion: 'Had it not been for X, Y would have + past participle.' The result clause always uses 'would have', never 'will have'. This inverted third conditional is a sophisticated B2+ structure used in academic and formal contexts.",
+          "depth": 2,
+          "name": "Third conditional with inversion: 'Had it not been for X, Y would have + past participle.' The result clause always uses 'would have', never 'will have'. This inverted third conditional is a sophisticated B2+ structure used in academic and formal contexts."
+        },
+        {
+          "text": "❌ \"Citizen science platforms have been enabled researchers to access unprecedented datasets.\"",
+          "depth": 2,
+          "name": "❌ \"Citizen science platforms have been enabled researchers to access unprecedented datasets.\""
+        },
+        {
+          "text": "✅ \"Citizen science platforms have enabled researchers to access unprecedented datasets.\"",
+          "depth": 2,
+          "name": "✅ \"Citizen science platforms have enabled researchers to access unprecedented datasets.\""
+        },
+        {
+          "text": "'Have enabled' (present perfect active) — platforms enabled researchers. 'Have been enabled' (passive) — platforms were enabled by something else. The meaning reverses. At B2+, precise active/passive voice selection is critical for clarity in academic writing.",
+          "depth": 2,
+          "name": "'Have enabled' (present perfect active) — platforms enabled researchers. 'Have been enabled' (passive) — platforms were enabled by something else. The meaning reverses. At B2+, precise active/passive voice selection is critical for clarity in academic writing."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "554:5160",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how ornithology and nature vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how ornithology and nature vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "migrate",
+          "depth": 2,
+          "name": "migrate"
+        },
+        {
+          "text": "migration / migrant",
+          "depth": 2,
+          "name": "migration / migrant"
+        },
+        {
+          "text": "migrate",
+          "depth": 2,
+          "name": "migrate"
+        },
+        {
+          "text": "migratory",
+          "depth": 2,
+          "name": "migratory"
+        },
+        {
+          "text": "nest",
+          "depth": 2,
+          "name": "nest"
+        },
+        {
+          "text": "nest / nesting",
+          "depth": 2,
+          "name": "nest / nesting"
+        },
+        {
+          "text": "nest",
+          "depth": 2,
+          "name": "nest"
+        },
+        {
+          "text": "nested",
+          "depth": 2,
+          "name": "nested"
+        },
+        {
+          "text": "hatch",
+          "depth": 2,
+          "name": "hatch"
+        },
+        {
+          "text": "hatch / hatchling",
+          "depth": 2,
+          "name": "hatch / hatchling"
+        },
+        {
+          "text": "hatch",
+          "depth": 2,
+          "name": "hatch"
+        },
+        {
+          "text": "hatched",
+          "depth": 2,
+          "name": "hatched"
+        },
+        {
+          "text": "flock",
+          "depth": 2,
+          "name": "flock"
+        },
+        {
+          "text": "flock",
+          "depth": 2,
+          "name": "flock"
+        },
+        {
+          "text": "flock",
+          "depth": 2,
+          "name": "flock"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "perch",
+          "depth": 2,
+          "name": "perch"
+        },
+        {
+          "text": "perch",
+          "depth": 2,
+          "name": "perch"
+        },
+        {
+          "text": "perch",
+          "depth": 2,
+          "name": "perch"
+        },
+        {
+          "text": "perched",
+          "depth": 2,
+          "name": "perched"
+        },
+        {
+          "text": "breed",
+          "depth": 2,
+          "name": "breed"
+        },
+        {
+          "text": "breed / breeder / breeding",
+          "depth": 2,
+          "name": "breed / breeder / breeding"
+        },
+        {
+          "text": "breed",
+          "depth": 2,
+          "name": "breed"
+        },
+        {
+          "text": "bred",
+          "depth": 2,
+          "name": "bred"
+        },
+        {
+          "text": "prey",
+          "depth": 2,
+          "name": "prey"
+        },
+        {
+          "text": "prey / predator",
+          "depth": 2,
+          "name": "prey / predator"
+        },
+        {
+          "text": "prey (on)",
+          "depth": 2,
+          "name": "prey (on)"
+        },
+        {
+          "text": "predatory",
+          "depth": 2,
+          "name": "predatory"
+        },
+        {
+          "text": "feather",
+          "depth": 2,
+          "name": "feather"
+        },
+        {
+          "text": "feather / plumage",
+          "depth": 2,
+          "name": "feather / plumage"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "feathered / feathery",
+          "depth": 2,
+          "name": "feathered / feathery"
+        },
+        {
+          "text": "soar",
+          "depth": 2,
+          "name": "soar"
+        },
+        {
+          "text": "soar / soaring",
+          "depth": 2,
+          "name": "soar / soaring"
+        },
+        {
+          "text": "soar",
+          "depth": 2,
+          "name": "soar"
+        },
+        {
+          "text": "soaring",
+          "depth": 2,
+          "name": "soaring"
+        },
+        {
+          "text": "observe",
+          "depth": 2,
+          "name": "observe"
+        },
+        {
+          "text": "observation / observer",
+          "depth": 2,
+          "name": "observation / observer"
+        },
+        {
+          "text": "observe",
+          "depth": 2,
+          "name": "observe"
+        },
+        {
+          "text": "observant",
+          "depth": 2,
+          "name": "observant"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "554:5220",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  Rachel Carson's Silent Spring documented the effects of the pesticide __________ on birds.",
+          "depth": 1,
+          "name": "1. Rachel Carson's Silent Spring documented the effects of the pesticide __________ on birds."
+        },
+        {
+          "text": "2.  North America has lost approximately 3 __________ breeding birds since 1970.",
+          "depth": 1,
+          "name": "2. North America has lost approximately 3 __________ breeding birds since 1970."
+        },
+        {
+          "text": "3.  Farmland bird populations in Europe have declined by over 50% since __________ .",
+          "depth": 1,
+          "name": "3. Farmland bird populations in Europe have declined by over 50% since __________ ."
+        },
+        {
+          "text": "4.  One in __________ bird species is classified as threatened with extinction.",
+          "depth": 1,
+          "name": "4. One in __________ bird species is classified as threatened with extinction."
+        },
+        {
+          "text": "5.  The bar-tailed __________ makes the longest non-stop flight of any bird.",
+          "depth": 1,
+          "name": "5. The bar-tailed __________ makes the longest non-stop flight of any bird."
+        },
+        {
+          "text": "6.  Light pollution __________ nocturnal migrants during their journey.",
+          "depth": 1,
+          "name": "6. Light pollution __________ nocturnal migrants during their journey."
+        },
+        {
+          "text": "7.  __________ — a stopover where birds rest and refuel — is critical to migration success.",
+          "depth": 1,
+          "name": "7. __________ — a stopover where birds rest and refuel — is critical to migration success."
+        },
+        {
+          "text": "8.  Birdwatching contributes over $100 billion annually to the US __________ .",
+          "depth": 1,
+          "name": "8. Birdwatching contributes over $100 billion annually to the US __________ ."
+        },
+        {
+          "text": "9.  Miniaturised GPS __________ reveal migration routes with unprecedented precision.",
+          "depth": 1,
+          "name": "9. Miniaturised GPS __________ reveal migration routes with unprecedented precision."
+        },
+        {
+          "text": "10. The citizen science platform __________ has accumulated over 1.5 billion bird observations.",
+          "depth": 1,
+          "name": "10. The citizen science platform __________ has accumulated over 1.5 billion bird observations."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. DDT  2. billion  3. 1980  4. eight  5. godwit  6. disorients  7. Habitat  8. economy  9. trackers  10. eBird",
+          "depth": 2,
+          "name": "1. DDT 2. billion 3. 1980 4. eight 5. godwit 6. disorients 7. Habitat 8. economy 9. trackers 10. eBird"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "554:5238",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "The RSPB",
+          "depth": 2,
+          "name": "The RSPB"
+        },
+        {
+          "text": "The Royal Society for the Protection of Birds (RSPB) is the UK's largest nature conservation charity, with over 1 million members. It manages nature reserves, campaigns against habitat destruction, and runs the annual 'Big Garden Birdwatch' — where the public counts birds in their gardens over one weekend in January.",
+          "depth": 2,
+          "name": "The Royal Society for the Protection of Birds (RSPB) is the UK's largest nature conservation charity, with over 1 million members. It manages nature reserves, campaigns against habitat destruction, and runs the annual 'Big Garden Birdwatch' — where the public counts birds in their gardens over one weekend in January."
+        },
+        {
+          "text": "Common British Garden Birds",
+          "depth": 2,
+          "name": "Common British Garden Birds"
+        },
+        {
+          "text": "Robin (red breast, friendly), Blue tit (blue and yellow, tiny), Blackbird (black with orange beak, beautiful song), Sparrow (small, brown, social), Magpie (black and white, intelligent), Wood pigeon (large, grey, cooing sound), Wren (tiny, loud song), Goldfinch (red face, gold wing bars).",
+          "depth": 2,
+          "name": "Robin (red breast, friendly), Blue tit (blue and yellow, tiny), Blackbird (black with orange beak, beautiful song), Sparrow (small, brown, social), Magpie (black and white, intelligent), Wood pigeon (large, grey, cooing sound), Wren (tiny, loud song), Goldfinch (red face, gold wing bars)."
+        },
+        {
+          "text": "Birdwatching vs Birding",
+          "depth": 2,
+          "name": "Birdwatching vs Birding"
+        },
+        {
+          "text": "'Birdwatching' (traditional British term) = 'birding' (more modern/American term). A birdwatcher/birder keeps a 'life list' (every species ever seen) and a 'year list' (species seen in one year). 'Twitcher' (BrE) = someone who travels long distances to see rare birds. Twitching is more intense than casual birdwatching.",
+          "depth": 2,
+          "name": "'Birdwatching' (traditional British term) = 'birding' (more modern/American term). A birdwatcher/birder keeps a 'life list' (every species ever seen) and a 'year list' (species seen in one year). 'Twitcher' (BrE) = someone who travels long distances to see rare birds. Twitching is more intense than casual birdwatching."
+        },
+        {
+          "text": "Bird Sounds in English",
+          "depth": 2,
+          "name": "Bird Sounds in English"
+        },
+        {
+          "text": "Birds don't just 'sing' — each species has its own verb. Owls 'hoot'. Crows 'caw'. Ducks 'quack'. Pigeons 'coo'. Eagles 'screech'. Sparrows 'chirp' or 'cheep'. Geese 'honk'. Roosters 'crow' (cock-a-doodle-doo!). Knowing these makes your English more vivid and natural.",
+          "depth": 2,
+          "name": "Birds don't just 'sing' — each species has its own verb. Owls 'hoot'. Crows 'caw'. Ducks 'quack'. Pigeons 'coo'. Eagles 'screech'. Sparrows 'chirp' or 'cheep'. Geese 'honk'. Roosters 'crow' (cock-a-doodle-doo!). Knowing these makes your English more vivid and natural."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "554:5254",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "nest",
+          "depth": 2,
+          "name": "nest"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "bird ~, build a ~, ~ box",
+          "depth": 2,
+          "name": "bird ~, build a ~, ~ box"
+        },
+        {
+          "text": "feather",
+          "depth": 2,
+          "name": "feather"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ pattern, ~ colour, ~ soft",
+          "depth": 2,
+          "name": "~ pattern, ~ colour, ~ soft"
+        },
+        {
+          "text": "beak",
+          "depth": 2,
+          "name": "beak"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ shape, ~ size, hooked ~",
+          "depth": 2,
+          "name": "~ shape, ~ size, hooked ~"
+        },
+        {
+          "text": "flock",
+          "depth": 2,
+          "name": "flock"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ of birds, ~ together, large ~",
+          "depth": 2,
+          "name": "~ of birds, ~ together, large ~"
+        },
+        {
+          "text": "migrate",
+          "depth": 2,
+          "name": "migrate"
+        },
+        {
+          "text": "v",
+          "depth": 2,
+          "name": "v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ south, ~ annually, ~ route",
+          "depth": 2,
+          "name": "~ south, ~ annually, ~ route"
+        },
+        {
+          "text": "binoculars",
+          "depth": 2,
+          "name": "binoculars"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ view, use ~, ~ case",
+          "depth": 2,
+          "name": "~ view, use ~, ~ case"
+        },
+        {
+          "text": "wingspan",
+          "depth": 2,
+          "name": "wingspan"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ length, ~ measurement, large ~",
+          "depth": 2,
+          "name": "~ length, ~ measurement, large ~"
+        },
+        {
+          "text": "habitat",
+          "depth": 2,
+          "name": "habitat"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "natural ~, ~ loss, ~ protection",
+          "depth": 2,
+          "name": "natural ~, ~ loss, ~ protection"
+        },
+        {
+          "text": "species",
+          "depth": 2,
+          "name": "species"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "bird ~, rare ~, ~ count",
+          "depth": 2,
+          "name": "bird ~, rare ~, ~ count"
+        },
+        {
+          "text": "sanctuary",
+          "depth": 2,
+          "name": "sanctuary"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "bird ~, wildlife ~, ~ visit",
+          "depth": 2,
+          "name": "bird ~, wildlife ~, ~ visit"
+        }
+      ]
+    }
+  }
+}

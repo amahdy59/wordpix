@@ -1,0 +1,1566 @@
+{
+  "unitId": "river",
+  "name": "The River",
+  "subtopics": [
+    {
+      "id": "water-features",
+      "title": "Water Features",
+      "wordIds": [
+        "current",
+        "rapids",
+        "waterfall",
+        "pool",
+        "bend",
+        "delta",
+        "tributary",
+        "bank",
+        "bed",
+        "estuary"
+      ]
+    },
+    {
+      "id": "wildlife",
+      "title": "Wildlife",
+      "wordIds": [
+        "fish",
+        "frog",
+        "turtle",
+        "heron",
+        "otter",
+        "beaver",
+        "dragonfly",
+        "duck",
+        "salmon",
+        "crayfish"
+      ]
+    },
+    {
+      "id": "plants",
+      "title": "Plants",
+      "wordIds": [
+        "reed",
+        "lily-pad",
+        "cattail",
+        "algae",
+        "willow",
+        "duckweed",
+        "water-lily",
+        "moss",
+        "riverside-grass",
+        "mangrove"
+      ]
+    },
+    {
+      "id": "boats-craft",
+      "title": "Boats & Craft",
+      "wordIds": [
+        "canoe",
+        "kayak",
+        "raft",
+        "rowboat",
+        "motorboat",
+        "paddleboard",
+        "inner-tube",
+        "pontoon",
+        "sailboat",
+        "fishing-boat"
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Equipment",
+      "wordIds": [
+        "paddle",
+        "life-jacket",
+        "fishing-rod",
+        "tackle-box",
+        "net",
+        "bucket",
+        "waders",
+        "anchor",
+        "rope",
+        "cooler"
+      ]
+    },
+    {
+      "id": "activities",
+      "title": "Activities",
+      "wordIds": [
+        "fishing",
+        "swimming",
+        "kayaking",
+        "rafting",
+        "canoeing",
+        "tubing",
+        "wading",
+        "bird-watching",
+        "picnic",
+        "skipping-stones"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "current",
+      "label": "Current",
+      "ipa": "/ˈkʌrənt/",
+      "cefr": "B1",
+      "imageNodeId": "119:5519"
+    },
+    {
+      "kind": "card",
+      "id": "rapids",
+      "label": "Rapids",
+      "ipa": "/ˈræpɪdz/",
+      "cefr": "B1",
+      "imageNodeId": "119:5523"
+    },
+    {
+      "kind": "card",
+      "id": "waterfall",
+      "label": "Waterfall",
+      "ipa": "/ˈwɔːtərˌfɔːl/",
+      "cefr": "B1",
+      "imageNodeId": "119:5527"
+    },
+    {
+      "kind": "card",
+      "id": "pool",
+      "label": "Pool",
+      "ipa": "/puːl/",
+      "cefr": "B1",
+      "imageNodeId": "119:5531"
+    },
+    {
+      "kind": "card",
+      "id": "bend",
+      "label": "Bend",
+      "ipa": "/bɛnd/",
+      "cefr": "B1",
+      "imageNodeId": "119:5535"
+    },
+    {
+      "kind": "card",
+      "id": "delta",
+      "label": "Delta",
+      "ipa": "/ˈdɛltə/",
+      "cefr": "B1",
+      "imageNodeId": "119:5539"
+    },
+    {
+      "kind": "card",
+      "id": "tributary",
+      "label": "Tributary",
+      "ipa": "/ˈtrɪbjʊˌtɛri/",
+      "cefr": "B1",
+      "imageNodeId": "119:5543"
+    },
+    {
+      "kind": "card",
+      "id": "bank",
+      "label": "Bank",
+      "ipa": "/bæŋk/",
+      "cefr": "B1",
+      "imageNodeId": "119:5547"
+    },
+    {
+      "kind": "card",
+      "id": "bed",
+      "label": "Bed",
+      "ipa": "/bɛd/",
+      "cefr": "B1",
+      "imageNodeId": "119:5551"
+    },
+    {
+      "kind": "card",
+      "id": "estuary",
+      "label": "Estuary",
+      "ipa": "/ˈɛstʃuˌɛri/",
+      "cefr": "B1",
+      "imageNodeId": "119:5555"
+    },
+    {
+      "kind": "card",
+      "id": "fish",
+      "label": "Fish",
+      "ipa": "/fɪʃ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5564"
+    },
+    {
+      "kind": "card",
+      "id": "frog",
+      "label": "Frog",
+      "ipa": "/frɒɡ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5568"
+    },
+    {
+      "kind": "card",
+      "id": "turtle",
+      "label": "Turtle",
+      "ipa": "/ˈtɜːrtəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:5572"
+    },
+    {
+      "kind": "card",
+      "id": "heron",
+      "label": "Heron",
+      "ipa": "/ˈhɛrən/",
+      "cefr": "B1",
+      "imageNodeId": "119:5576"
+    },
+    {
+      "kind": "card",
+      "id": "otter",
+      "label": "Otter",
+      "ipa": "/ˈɒtər/",
+      "cefr": "B1",
+      "imageNodeId": "119:5580"
+    },
+    {
+      "kind": "card",
+      "id": "beaver",
+      "label": "Beaver",
+      "ipa": "/ˈbiːvər/",
+      "cefr": "B1",
+      "imageNodeId": "119:5584"
+    },
+    {
+      "kind": "card",
+      "id": "dragonfly",
+      "label": "Dragonfly",
+      "ipa": "/ˈdræɡənˌflaɪ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5588"
+    },
+    {
+      "kind": "card",
+      "id": "duck",
+      "label": "Duck",
+      "ipa": "/dʌk/",
+      "cefr": "B1",
+      "imageNodeId": "119:5592"
+    },
+    {
+      "kind": "card",
+      "id": "salmon",
+      "label": "Salmon",
+      "ipa": "/ˈsæmən/",
+      "cefr": "B1",
+      "imageNodeId": "119:5596"
+    },
+    {
+      "kind": "card",
+      "id": "crayfish",
+      "label": "Crayfish",
+      "ipa": "/ˈkreɪˌfɪʃ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5600"
+    },
+    {
+      "kind": "card",
+      "id": "reed",
+      "label": "Reed",
+      "ipa": "/riːd/",
+      "cefr": "B1",
+      "imageNodeId": "119:5609"
+    },
+    {
+      "kind": "card",
+      "id": "lily-pad",
+      "label": "Lily Pad",
+      "ipa": "/ˈlɪli pæd/",
+      "cefr": "B2",
+      "imageNodeId": "119:5613"
+    },
+    {
+      "kind": "card",
+      "id": "cattail",
+      "label": "Cattail",
+      "ipa": "/ˈkætˌteɪl/",
+      "cefr": "B1",
+      "imageNodeId": "119:5617"
+    },
+    {
+      "kind": "card",
+      "id": "algae",
+      "label": "Algae",
+      "ipa": "/ˈælˌdʒiː/",
+      "cefr": "B1",
+      "imageNodeId": "119:5621"
+    },
+    {
+      "kind": "card",
+      "id": "willow",
+      "label": "Willow",
+      "ipa": "/ˈwɪloʊ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5625"
+    },
+    {
+      "kind": "card",
+      "id": "duckweed",
+      "label": "Duckweed",
+      "ipa": "/ˈdʌkˌwiːd/",
+      "cefr": "B1",
+      "imageNodeId": "119:5629"
+    },
+    {
+      "kind": "card",
+      "id": "water-lily",
+      "label": "Water Lily",
+      "ipa": "/ˈwɔːtər ˈlɪli/",
+      "cefr": "B2",
+      "imageNodeId": "119:5633"
+    },
+    {
+      "kind": "card",
+      "id": "moss",
+      "label": "Moss",
+      "ipa": "/mɒs/",
+      "cefr": "B1",
+      "imageNodeId": "119:5637"
+    },
+    {
+      "kind": "card",
+      "id": "riverside-grass",
+      "label": "Riverside Grass",
+      "ipa": "/ˈrɪvərˌsaɪd ɡræs/",
+      "cefr": "C1",
+      "imageNodeId": "119:5641"
+    },
+    {
+      "kind": "card",
+      "id": "mangrove",
+      "label": "Mangrove",
+      "ipa": "/ˈmæŋɡroʊv/",
+      "cefr": "B1",
+      "imageNodeId": "119:5645"
+    },
+    {
+      "kind": "card",
+      "id": "canoe",
+      "label": "Canoe",
+      "ipa": "/kəˈnuː/",
+      "cefr": "B1",
+      "imageNodeId": "119:5654"
+    },
+    {
+      "kind": "card",
+      "id": "kayak",
+      "label": "Kayak",
+      "ipa": "/ˈkaɪˌæk/",
+      "cefr": "B1",
+      "imageNodeId": "119:5658"
+    },
+    {
+      "kind": "card",
+      "id": "raft",
+      "label": "Raft",
+      "ipa": "/ræft/",
+      "cefr": "B1",
+      "imageNodeId": "119:5662"
+    },
+    {
+      "kind": "card",
+      "id": "rowboat",
+      "label": "Rowboat",
+      "ipa": "/ˈroʊˌboʊt/",
+      "cefr": "B1",
+      "imageNodeId": "119:5666"
+    },
+    {
+      "kind": "card",
+      "id": "motorboat",
+      "label": "Motorboat",
+      "ipa": "/ˈmoʊtərˌboʊt/",
+      "cefr": "B1",
+      "imageNodeId": "119:5670"
+    },
+    {
+      "kind": "card",
+      "id": "paddleboard",
+      "label": "Paddleboard",
+      "ipa": "/ˈpædəlˌbɔːrd/",
+      "cefr": "B2",
+      "imageNodeId": "119:5674"
+    },
+    {
+      "kind": "card",
+      "id": "inner-tube",
+      "label": "Inner Tube",
+      "ipa": "/ˈɪnər tjuːb/",
+      "cefr": "B2",
+      "imageNodeId": "119:5678"
+    },
+    {
+      "kind": "card",
+      "id": "pontoon",
+      "label": "Pontoon",
+      "ipa": "/pɒnˈtuːn/",
+      "cefr": "B1",
+      "imageNodeId": "119:5682"
+    },
+    {
+      "kind": "card",
+      "id": "sailboat",
+      "label": "Sailboat",
+      "ipa": "/ˈseɪlˌboʊt/",
+      "cefr": "B1",
+      "imageNodeId": "119:5686"
+    },
+    {
+      "kind": "card",
+      "id": "fishing-boat",
+      "label": "Fishing Boat",
+      "ipa": "/ˈfɪʃɪŋ boʊt/",
+      "cefr": "B2",
+      "imageNodeId": "119:5690"
+    },
+    {
+      "kind": "card",
+      "id": "paddle",
+      "label": "Paddle",
+      "ipa": "/ˈpædəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:5699"
+    },
+    {
+      "kind": "card",
+      "id": "life-jacket",
+      "label": "Life Jacket",
+      "ipa": "/laɪf ˈdʒækɪt/",
+      "cefr": "B2",
+      "imageNodeId": "119:5703"
+    },
+    {
+      "kind": "card",
+      "id": "fishing-rod",
+      "label": "Fishing Rod",
+      "ipa": "/ˈfɪʃɪŋ rɒd/",
+      "cefr": "B2",
+      "imageNodeId": "119:5707"
+    },
+    {
+      "kind": "card",
+      "id": "tackle-box",
+      "label": "Tackle Box",
+      "ipa": "/ˈtækəl bɒks/",
+      "cefr": "B2",
+      "imageNodeId": "119:5711"
+    },
+    {
+      "kind": "card",
+      "id": "net",
+      "label": "Net",
+      "ipa": "/nɛt/",
+      "cefr": "B1",
+      "imageNodeId": "119:5715"
+    },
+    {
+      "kind": "card",
+      "id": "bucket",
+      "label": "Bucket",
+      "ipa": "/ˈbʌkɪt/",
+      "cefr": "B1",
+      "imageNodeId": "119:5719"
+    },
+    {
+      "kind": "card",
+      "id": "waders",
+      "label": "Waders",
+      "ipa": "/ˈweɪdərz/",
+      "cefr": "B1",
+      "imageNodeId": "119:5723"
+    },
+    {
+      "kind": "card",
+      "id": "anchor",
+      "label": "Anchor",
+      "ipa": "/ˈæŋkər/",
+      "cefr": "B1",
+      "imageNodeId": "119:5727"
+    },
+    {
+      "kind": "card",
+      "id": "rope",
+      "label": "Rope",
+      "ipa": "/roʊp/",
+      "cefr": "B1",
+      "imageNodeId": "119:5731"
+    },
+    {
+      "kind": "card",
+      "id": "cooler",
+      "label": "Cooler",
+      "ipa": "/ˈkuːlər/",
+      "cefr": "B1",
+      "imageNodeId": "119:5735"
+    },
+    {
+      "kind": "card",
+      "id": "fishing",
+      "label": "Fishing",
+      "ipa": "/ˈfɪʃɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5744"
+    },
+    {
+      "kind": "card",
+      "id": "swimming",
+      "label": "Swimming",
+      "ipa": "/ˈswɪmɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5748"
+    },
+    {
+      "kind": "card",
+      "id": "kayaking",
+      "label": "Kayaking",
+      "ipa": "/ˈkaɪˌækɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5752"
+    },
+    {
+      "kind": "card",
+      "id": "rafting",
+      "label": "Rafting",
+      "ipa": "/ˈræftɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5756"
+    },
+    {
+      "kind": "card",
+      "id": "canoeing",
+      "label": "Canoeing",
+      "ipa": "/kəˈnuːɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5760"
+    },
+    {
+      "kind": "card",
+      "id": "tubing",
+      "label": "Tubing",
+      "ipa": "/ˈtjuːbɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5764"
+    },
+    {
+      "kind": "card",
+      "id": "wading",
+      "label": "Wading",
+      "ipa": "/ˈweɪdɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5768"
+    },
+    {
+      "kind": "card",
+      "id": "bird-watching",
+      "label": "Bird Watching",
+      "ipa": "/bɜːrd ˈwɒtʃɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:5772"
+    },
+    {
+      "kind": "card",
+      "id": "picnic",
+      "label": "Picnic",
+      "ipa": "/ˈpɪknɪk/",
+      "cefr": "B1",
+      "imageNodeId": "119:5776"
+    },
+    {
+      "kind": "card",
+      "id": "skipping-stones",
+      "label": "Skipping Stones",
+      "ipa": "/ˈskɪpɪŋ stoʊnz/",
+      "cefr": "C1",
+      "imageNodeId": "119:5780"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "554:4259",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "554:4261",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2 · Topic: The River",
+          "depth": 1,
+          "name": "Level: B2 · Topic: The River"
+        },
+        {
+          "text": "From Source to Sea — The Life of a River\n\nA river is a moving landscape — a body of water that is never the same twice. It begins as a trickle on a mountainside and ends, thousands of kilometres later, where fresh water meets salt water at the coast. Between those two points, the river shapes everything it touches: the land, the wildlife, the vegetation, and the human communities along its banks.\n\nThe anatomy of a river is defined by its flow. The current is the movement of water downstream. Rapids are sections where the current accelerates over rocks, creating turbulent white water. A waterfall is where the river drops vertically over a cliff edge. A pool is a deep, calm section. A bend is where the river changes direction. A tributary is a smaller river that feeds into a larger one. The bank is the land along each side. The bed is the river's floor — sand, gravel, or rock. A delta forms where the river deposits sediment as it enters the sea. An estuary is the tidal zone where river and ocean mix.\n\nAquatic wildlife is abundant. Fish — including salmon, which famously swim upstream to spawn — are the most visible inhabitants. A frog sits on a rock at the water's edge. A turtle suns itself on a log. A heron — a tall, patient wading bird — stands motionless in the shallows, waiting for fish. An otter slides down the bank and hunts in the current. A beaver builds dams from branches, creating ponds that reshape the landscape. A dragonfly patrols the surface. A duck paddles in calm water. Crayfish hide beneath rocks on the bed.\n\nRiverside vegetation frames the water. Reeds grow in dense clusters at the bank. A lily pad floats on the surface, anchored by a stem to the bed below. A cattail — a tall plant with a brown, cylindrical seed head — lines marshy areas. Algae covers submerged rocks. A willow — its branches trailing in the current — is the river's signature tree. Duckweed — tiny floating plants — can cover still water entirely. A water lily opens its flower on the surface. Moss covers rocks above the waterline. Riverside grass extends to the bank's edge. A mangrove — in tropical regions — stabilises the estuary with its tangled root system.\n\nHuman activity on the river is both recreational and practical. A canoe and a kayak are paddled with a paddle. A raft carries groups through rapids — rafting is a popular adventure sport. A rowboat is propelled with oars. A motorboat uses an engine. A paddleboard requires balance and a single paddle. An inner tube allows passengers to float downstream — tubing is the most relaxed river activity. A pontoon — a flat, stable platform — is used for fishing parties. A sailboat and a fishing boat serve different purposes.\n\nEquipment varies by activity. A life jacket is essential for safety. A fishing rod, a tackle box, a net, a bucket, waders, and a cooler equip the angler. An anchor holds a boat in position. A rope secures it to the bank.\n\nActivities along the river include fishing, swimming, kayaking, rafting, canoeing, tubing, wading, bird watching, picnicking on the bank, and skipping stones across the surface.\n\nA river is infrastructure — it irrigates farmland, generates electricity, transports goods, and provides drinking water. But it is also an ecosystem, a recreation space, and a landscape that has shaped human settlement for millennia. To understand a river is to understand how geography becomes civilisation.",
+          "depth": 1,
+          "name": "From Source to Sea — The Life of a River A river is a moving landscape — a body of water that is never the same twice. It begins as a trickle on a mountainside and ends, thousands of kilometres later, where fresh water meets salt water at the coast. Between those two points, the river shapes everything it touches: the land, the wildlife, the vegetation, and the human communities along its banks. The anatomy of a river is defined by its flow. The current is the movement of water downstream. Rapids are sections where the current accelerates over rocks, creating turbulent white water. A waterfall is where the river drops vertically over a cliff edge. A pool is a deep, calm section. A bend is where the river changes direction. A tributary is a smaller river that feeds into a larger one. The bank is the land along each side. The bed is the river's floor — sand, gravel, or rock. A delta forms where the river deposits sediment as it enters the sea. An estuary is the tidal zone where river and ocean mix. Aquatic wildlife is abundant. Fish — including salmon, which famously swim upstream to spawn — are the most visible inhabitants. A frog sits on a rock at the water's edge. A turtle suns itself on a log. A heron — a tall, patient wading bird — stands motionless in the shallows, waiting for fish. An otter slides down the bank and hunts in the current. A beaver builds dams from branches, creating ponds that reshape the landscape. A dragonfly patrols the surface. A duck paddles in calm water. Crayfish hide beneath rocks on the bed. Riverside vegetation frames the water. Reeds grow in dense clusters at the bank. A lily pad floats on the surface, anchored by a stem to the bed below. A cattail — a tall plant with a brown, cylindrical seed head — lines marshy areas. Algae covers submerged rocks. A willow — its branches trailing in the current — is the river's signature tree. Duckweed — tiny floating plants — can cover still water entirely. A water lily opens its flower on the surface. Moss covers rocks above the waterline. Riverside grass extends to the bank's edge. A mangrove — in tropical regions — stabilises the estuary with its tangled root system. Human activity on the river is both recreational and practical. A canoe and a kayak are paddled with a paddle. A raft carries groups through rapids — rafting is a popular adventure sport. A rowboat is propelled with oars. A motorboat uses an engine. A paddleboard requires balance and a single paddle. An inner tube allows passengers to float downstream — tubing is the most relaxed river activity. A pontoon — a flat, stable platform — is used for fishing parties. A sailboat and a fishing boat serve different purposes. Equipment varies by activity. A life jacket is essential for safety. A fishing rod, a tackle box, a net, a bucket, waders, and a cooler equip the angler. An anchor holds a boat in position. A rope secures it to the bank. Activities along the river include fishing, swimming, kayaking, rafting, canoeing, tubing, wading, bird watching, picnicking on the bank, and skipping stones across the surface. A river is infrastructure — it irrigates farmland, generates electricity, transports goods, and provides drinking water. But it is also an ecosystem, a recreation space, and a landscape that has shaped human settlement for millennia. To understand a river is to understand how geography becomes civilisation."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Describe the anatomy of a river from source to sea, naming at least six features.",
+          "depth": 1,
+          "name": "1. Describe the anatomy of a river from source to sea, naming at least six features."
+        },
+        {
+          "text": "2. What wildlife lives in and around the river? Name five species and describe their behaviour.",
+          "depth": 1,
+          "name": "2. What wildlife lives in and around the river? Name five species and describe their behaviour."
+        },
+        {
+          "text": "3. What riverside vegetation does the passage mention? How are these plants adapted to water?",
+          "depth": 1,
+          "name": "3. What riverside vegetation does the passage mention? How are these plants adapted to water?"
+        },
+        {
+          "text": "4. Compare three types of watercraft mentioned in the passage. What is each used for?",
+          "depth": 1,
+          "name": "4. Compare three types of watercraft mentioned in the passage. What is each used for?"
+        },
+        {
+          "text": "5. The passage says 'a river is infrastructure.' What practical functions does it serve for humans?",
+          "depth": 1,
+          "name": "5. The passage says 'a river is infrastructure.' What practical functions does it serve for humans?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "554:4274",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "go with the flow",
+          "depth": 2,
+          "name": "go with the flow"
+        },
+        {
+          "text": "accept things as they happen without trying to change them",
+          "depth": 2,
+          "name": "accept things as they happen without trying to change them"
+        },
+        {
+          "text": "\"On the raft, you learn to go with the flow — let the current carry you past the bend and around the bank.\"",
+          "depth": 2,
+          "name": "\"On the raft, you learn to go with the flow — let the current carry you past the bend and around the bank.\""
+        },
+        {
+          "text": "in deep water",
+          "depth": 2,
+          "name": "in deep water"
+        },
+        {
+          "text": "in serious trouble or a difficult situation",
+          "depth": 2,
+          "name": "in serious trouble or a difficult situation"
+        },
+        {
+          "text": "\"The kayak tipped at the rapids and we were in deep water — the current was too strong to swim against.\"",
+          "depth": 2,
+          "name": "\"The kayak tipped at the rapids and we were in deep water — the current was too strong to swim against.\""
+        },
+        {
+          "text": "test the waters",
+          "depth": 2,
+          "name": "test the waters"
+        },
+        {
+          "text": "try something cautiously before fully committing",
+          "depth": 2,
+          "name": "try something cautiously before fully committing"
+        },
+        {
+          "text": "\"Before paddling the canoe into the rapids, we tested the waters near the pool by the bank.\"",
+          "depth": 2,
+          "name": "\"Before paddling the canoe into the rapids, we tested the waters near the pool by the bank.\""
+        },
+        {
+          "text": "bridge over troubled water",
+          "depth": 2,
+          "name": "bridge over troubled water"
+        },
+        {
+          "text": "help someone through a difficult time",
+          "depth": 2,
+          "name": "help someone through a difficult time"
+        },
+        {
+          "text": "\"The guide was our bridge over troubled water — she steered the raft safely through the rapids.\"",
+          "depth": 2,
+          "name": "\"The guide was our bridge over troubled water — she steered the raft safely through the rapids.\""
+        },
+        {
+          "text": "up the creek without a paddle",
+          "depth": 2,
+          "name": "up the creek without a paddle"
+        },
+        {
+          "text": "in a difficult situation with no solution",
+          "depth": 2,
+          "name": "in a difficult situation with no solution"
+        },
+        {
+          "text": "\"The rowboat lost an oar at the bend — we were up the creek without a paddle, drifting toward the waterfall.\"",
+          "depth": 2,
+          "name": "\"The rowboat lost an oar at the bend — we were up the creek without a paddle, drifting toward the waterfall.\""
+        },
+        {
+          "text": "still waters run deep",
+          "depth": 2,
+          "name": "still waters run deep"
+        },
+        {
+          "text": "a quiet person may have deep, complex thoughts or feelings",
+          "depth": 2,
+          "name": "a quiet person may have deep, complex thoughts or feelings"
+        },
+        {
+          "text": "\"The river looked calm at the pool, but still waters run deep — beneath the lily pad, the current was powerful.\"",
+          "depth": 2,
+          "name": "\"The river looked calm at the pool, but still waters run deep — beneath the lily pad, the current was powerful.\""
+        },
+        {
+          "text": "make waves",
+          "depth": 2,
+          "name": "make waves"
+        },
+        {
+          "text": "cause trouble or create a significant effect",
+          "depth": 2,
+          "name": "cause trouble or create a significant effect"
+        },
+        {
+          "text": "\"The beaver dam made waves downstream, flooding the bank where the heron and the otter usually hunted.\"",
+          "depth": 2,
+          "name": "\"The beaver dam made waves downstream, flooding the bank where the heron and the otter usually hunted.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "554:4306",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: Two friends prepare for a kayaking trip down a river",
+          "depth": 1,
+          "name": "Scene: Two friends prepare for a kayaking trip down a river"
+        },
+        {
+          "text": "Friend 1:",
+          "depth": 2,
+          "name": "Friend 1:"
+        },
+        {
+          "text": "The current looks strong today. Should we take the kayak or the canoe?",
+          "depth": 2,
+          "name": "The current looks strong today. Should we take the kayak or the canoe?"
+        },
+        {
+          "text": "Friend 2:",
+          "depth": 2,
+          "name": "Friend 2:"
+        },
+        {
+          "text": "Kayak for sure — it handles the rapids better. The canoe is safer for the calm pool sections.",
+          "depth": 2,
+          "name": "Kayak for sure — it handles the rapids better. The canoe is safer for the calm pool sections."
+        },
+        {
+          "text": "Friend 1:",
+          "depth": 2,
+          "name": "Friend 1:"
+        },
+        {
+          "text": "Look at that waterfall upstream! The water feeds into the tributary on the left.",
+          "depth": 2,
+          "name": "Look at that waterfall upstream! The water feeds into the tributary on the left."
+        },
+        {
+          "text": "Friend 2:",
+          "depth": 2,
+          "name": "Friend 2:"
+        },
+        {
+          "text": "Beautiful. See the heron standing on the bank? And there's an otter diving near the reed bed.",
+          "depth": 2,
+          "name": "Beautiful. See the heron standing on the bank? And there's an otter diving near the reed bed."
+        },
+        {
+          "text": "Friend 1:",
+          "depth": 2,
+          "name": "Friend 1:"
+        },
+        {
+          "text": "What's that on the lily pad? A frog?",
+          "depth": 2,
+          "name": "What's that on the lily pad? A frog?"
+        },
+        {
+          "text": "Friend 2:",
+          "depth": 2,
+          "name": "Friend 2:"
+        },
+        {
+          "text": "Yes — and a dragonfly just landed on the cattail. The duckweed near the bed means the water is clean.",
+          "depth": 2,
+          "name": "Yes — and a dragonfly just landed on the cattail. The duckweed near the bed means the water is clean."
+        },
+        {
+          "text": "Friend 1:",
+          "depth": 2,
+          "name": "Friend 1:"
+        },
+        {
+          "text": "Careful at the bend — the current speeds up. Hold onto your paddle.",
+          "depth": 2,
+          "name": "Careful at the bend — the current speeds up. Hold onto your paddle."
+        },
+        {
+          "text": "Friend 2:",
+          "depth": 2,
+          "name": "Friend 2:"
+        },
+        {
+          "text": "I see the rapids ahead. There's a beaver dam near the far bank. Let's steer right.",
+          "depth": 2,
+          "name": "I see the rapids ahead. There's a beaver dam near the far bank. Let's steer right."
+        },
+        {
+          "text": "Friend 1:",
+          "depth": 2,
+          "name": "Friend 1:"
+        },
+        {
+          "text": "We made it! That pool below the rapids is calm. Want to stop and fish for salmon?",
+          "depth": 2,
+          "name": "We made it! That pool below the rapids is calm. Want to stop and fish for salmon?"
+        },
+        {
+          "text": "Friend 2:",
+          "depth": 2,
+          "name": "Friend 2:"
+        },
+        {
+          "text": "Sure. There's a turtle on that rock, and I can see crayfish near the algae. Let's anchor the raft by the willow.",
+          "depth": 2,
+          "name": "Sure. There's a turtle on that rock, and I can see crayfish near the algae. Let's anchor the raft by the willow."
+        },
+        {
+          "text": "Friend 1:",
+          "depth": 2,
+          "name": "Friend 1:"
+        },
+        {
+          "text": "This is incredible. The river widens at the delta — you can see where it meets the estuary from here.",
+          "depth": 2,
+          "name": "This is incredible. The river widens at the delta — you can see where it meets the estuary from here."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "554:4344",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The river is more deeper near the bend than it is in the shallow sections upstream.\"",
+          "depth": 2,
+          "name": "❌ \"The river is more deeper near the bend than it is in the shallow sections upstream.\""
+        },
+        {
+          "text": "✅ \"The river is deeper near the bend than it is in the shallow sections upstream.\"",
+          "depth": 2,
+          "name": "✅ \"The river is deeper near the bend than it is in the shallow sections upstream.\""
+        },
+        {
+          "text": "Never combine 'more' with '-er.' Short adjectives: add '-er': 'deeper', 'wider', 'faster.' Longer adjectives: use 'more': 'more turbulent', 'more dangerous.' Never *'more deeper', *'more wider.' Irregular forms: 'good → better', 'bad → worse', 'far → farther/further.' The same rule applies to superlatives: 'deepest' (not *most deepest).",
+          "depth": 2,
+          "name": "Never combine 'more' with '-er.' Short adjectives: add '-er': 'deeper', 'wider', 'faster.' Longer adjectives: use 'more': 'more turbulent', 'more dangerous.' Never *'more deeper', *'more wider.' Irregular forms: 'good → better', 'bad → worse', 'far → farther/further.' The same rule applies to superlatives: 'deepest' (not *most deepest)."
+        },
+        {
+          "text": "❌ \"We've been kayaking on this river since three hours and we're only halfway.\"",
+          "depth": 2,
+          "name": "❌ \"We've been kayaking on this river since three hours and we're only halfway.\""
+        },
+        {
+          "text": "✅ \"We've been kayaking on this river for three hours and we're only halfway.\"",
+          "depth": 2,
+          "name": "✅ \"We've been kayaking on this river for three hours and we're only halfway.\""
+        },
+        {
+          "text": "'For' + duration: 'for three hours.' 'Since' + point in time: 'since noon', 'since the morning.' Never *'since three hours.' Present perfect continuous emphasises ongoing activity with duration: 'We've been kayaking for three hours' = we started three hours ago and we're still kayaking.",
+          "depth": 2,
+          "name": "'For' + duration: 'for three hours.' 'Since' + point in time: 'since noon', 'since the morning.' Never *'since three hours.' Present perfect continuous emphasises ongoing activity with duration: 'We've been kayaking for three hours' = we started three hours ago and we're still kayaking."
+        },
+        {
+          "text": "❌ \"The salmon swims upstream for to spawn in the same river where it was born.\"",
+          "depth": 2,
+          "name": "❌ \"The salmon swims upstream for to spawn in the same river where it was born.\""
+        },
+        {
+          "text": "✅ \"The salmon swims upstream to spawn in the same river where it was born.\"",
+          "depth": 2,
+          "name": "✅ \"The salmon swims upstream to spawn in the same river where it was born.\""
+        },
+        {
+          "text": "'To' + infinitive expresses purpose: 'to spawn' = in order to spawn. Never *'for to spawn.' 'For' + gerund can express purpose in some structures: 'This equipment is for fishing.' But 'for to + verb' is archaic/dialectal and always incorrect in standard English. Use 'to + infinitive' or 'in order to + infinitive.'",
+          "depth": 2,
+          "name": "'To' + infinitive expresses purpose: 'to spawn' = in order to spawn. Never *'for to spawn.' 'For' + gerund can express purpose in some structures: 'This equipment is for fishing.' But 'for to + verb' is archaic/dialectal and always incorrect in standard English. Use 'to + infinitive' or 'in order to + infinitive.'"
+        },
+        {
+          "text": "❌ \"Despite the current was strong, the otter managed to catch a fish near the rapids.\"",
+          "depth": 2,
+          "name": "❌ \"Despite the current was strong, the otter managed to catch a fish near the rapids.\""
+        },
+        {
+          "text": "✅ \"Despite the strong current, the otter managed to catch a fish near the rapids.\" / \"Although the current was strong, the otter managed to catch a fish.\"",
+          "depth": 2,
+          "name": "✅ \"Despite the strong current, the otter managed to catch a fish near the rapids.\" / \"Although the current was strong, the otter managed to catch a fish.\""
+        },
+        {
+          "text": "'Despite' + noun/gerund: 'despite the strong current.' 'Although' + full clause: 'although the current was strong.' Never *'despite + subject + verb.' This is one of the most common B2 errors. 'In spite of' follows 'despite': 'in spite of the strong current.'",
+          "depth": 2,
+          "name": "'Despite' + noun/gerund: 'despite the strong current.' 'Although' + full clause: 'although the current was strong.' Never *'despite + subject + verb.' This is one of the most common B2 errors. 'In spite of' follows 'despite': 'in spite of the strong current.'"
+        },
+        {
+          "text": "❌ \"There are less fish in the river now than there were twenty years ago due to pollution.\"",
+          "depth": 2,
+          "name": "❌ \"There are less fish in the river now than there were twenty years ago due to pollution.\""
+        },
+        {
+          "text": "✅ \"There are fewer fish in the river now than there were twenty years ago due to pollution.\"",
+          "depth": 2,
+          "name": "✅ \"There are fewer fish in the river now than there were twenty years ago due to pollution.\""
+        },
+        {
+          "text": "'Fewer' + countable: 'fewer fish.' Note: 'fish' has an unusual plural — 'fish' (same form for singular and plural): 'one fish', 'many fish.' 'Fishes' exists but refers to multiple species. Since individual fish can be counted, use 'fewer.' 'Less' + uncountable: 'less pollution', 'less oxygen in the water.'",
+          "depth": 2,
+          "name": "'Fewer' + countable: 'fewer fish.' Note: 'fish' has an unusual plural — 'fish' (same form for singular and plural): 'one fish', 'many fish.' 'Fishes' exists but refers to multiple species. Since individual fish can be counted, use 'fewer.' 'Less' + uncountable: 'less pollution', 'less oxygen in the water.'"
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "554:4368",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how water and geography vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how water and geography vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "flow",
+          "depth": 2,
+          "name": "flow"
+        },
+        {
+          "text": "flow / flowing",
+          "depth": 2,
+          "name": "flow / flowing"
+        },
+        {
+          "text": "flow",
+          "depth": 2,
+          "name": "flow"
+        },
+        {
+          "text": "flowing",
+          "depth": 2,
+          "name": "flowing"
+        },
+        {
+          "text": "flood",
+          "depth": 2,
+          "name": "flood"
+        },
+        {
+          "text": "flood / flooding",
+          "depth": 2,
+          "name": "flood / flooding"
+        },
+        {
+          "text": "flood",
+          "depth": 2,
+          "name": "flood"
+        },
+        {
+          "text": "flooded",
+          "depth": 2,
+          "name": "flooded"
+        },
+        {
+          "text": "erode",
+          "depth": 2,
+          "name": "erode"
+        },
+        {
+          "text": "erosion",
+          "depth": 2,
+          "name": "erosion"
+        },
+        {
+          "text": "erode",
+          "depth": 2,
+          "name": "erode"
+        },
+        {
+          "text": "eroded",
+          "depth": 2,
+          "name": "eroded"
+        },
+        {
+          "text": "deposit",
+          "depth": 2,
+          "name": "deposit"
+        },
+        {
+          "text": "deposit / deposition",
+          "depth": 2,
+          "name": "deposit / deposition"
+        },
+        {
+          "text": "deposit",
+          "depth": 2,
+          "name": "deposit"
+        },
+        {
+          "text": "deposited",
+          "depth": 2,
+          "name": "deposited"
+        },
+        {
+          "text": "pollute",
+          "depth": 2,
+          "name": "pollute"
+        },
+        {
+          "text": "pollution / pollutant",
+          "depth": 2,
+          "name": "pollution / pollutant"
+        },
+        {
+          "text": "pollute",
+          "depth": 2,
+          "name": "pollute"
+        },
+        {
+          "text": "polluted / polluting",
+          "depth": 2,
+          "name": "polluted / polluting"
+        },
+        {
+          "text": "drain",
+          "depth": 2,
+          "name": "drain"
+        },
+        {
+          "text": "drain / drainage",
+          "depth": 2,
+          "name": "drain / drainage"
+        },
+        {
+          "text": "drain",
+          "depth": 2,
+          "name": "drain"
+        },
+        {
+          "text": "drained",
+          "depth": 2,
+          "name": "drained"
+        },
+        {
+          "text": "meander",
+          "depth": 2,
+          "name": "meander"
+        },
+        {
+          "text": "meander",
+          "depth": 2,
+          "name": "meander"
+        },
+        {
+          "text": "meander",
+          "depth": 2,
+          "name": "meander"
+        },
+        {
+          "text": "meandering",
+          "depth": 2,
+          "name": "meandering"
+        },
+        {
+          "text": "irrigate",
+          "depth": 2,
+          "name": "irrigate"
+        },
+        {
+          "text": "irrigation",
+          "depth": 2,
+          "name": "irrigation"
+        },
+        {
+          "text": "irrigate",
+          "depth": 2,
+          "name": "irrigate"
+        },
+        {
+          "text": "irrigated",
+          "depth": 2,
+          "name": "irrigated"
+        },
+        {
+          "text": "navigate",
+          "depth": 2,
+          "name": "navigate"
+        },
+        {
+          "text": "navigation / navigator",
+          "depth": 2,
+          "name": "navigation / navigator"
+        },
+        {
+          "text": "navigate",
+          "depth": 2,
+          "name": "navigate"
+        },
+        {
+          "text": "navigable",
+          "depth": 2,
+          "name": "navigable"
+        },
+        {
+          "text": "evaporate",
+          "depth": 2,
+          "name": "evaporate"
+        },
+        {
+          "text": "evaporation",
+          "depth": 2,
+          "name": "evaporation"
+        },
+        {
+          "text": "evaporate",
+          "depth": 2,
+          "name": "evaporate"
+        },
+        {
+          "text": "evaporated",
+          "depth": 2,
+          "name": "evaporated"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "554:4428",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The __________ is the movement of water downstream through the river channel.",
+          "depth": 1,
+          "name": "1. The __________ is the movement of water downstream through the river channel."
+        },
+        {
+          "text": "2.  __________ are sections where the current accelerates over rocks, creating white water.",
+          "depth": 1,
+          "name": "2. __________ are sections where the current accelerates over rocks, creating white water."
+        },
+        {
+          "text": "3.  A __________ is a smaller river that feeds into a larger one.",
+          "depth": 1,
+          "name": "3. A __________ is a smaller river that feeds into a larger one."
+        },
+        {
+          "text": "4.  A __________ — a tall, patient wading bird — stands motionless waiting for fish.",
+          "depth": 1,
+          "name": "4. A __________ — a tall, patient wading bird — stands motionless waiting for fish."
+        },
+        {
+          "text": "5.  A __________ builds dams from branches, creating ponds that reshape the landscape.",
+          "depth": 1,
+          "name": "5. A __________ builds dams from branches, creating ponds that reshape the landscape."
+        },
+        {
+          "text": "6.  A __________ pad floats on the water's surface, anchored by a stem to the bed below.",
+          "depth": 1,
+          "name": "6. A __________ pad floats on the water's surface, anchored by a stem to the bed below."
+        },
+        {
+          "text": "7.  A __________ forms where the river deposits sediment as it enters the sea.",
+          "depth": 1,
+          "name": "7. A __________ forms where the river deposits sediment as it enters the sea."
+        },
+        {
+          "text": "8.  A life __________ is essential safety equipment for all water activities.",
+          "depth": 1,
+          "name": "8. A life __________ is essential safety equipment for all water activities."
+        },
+        {
+          "text": "9.  An __________ is the tidal zone where river water and ocean water mix.",
+          "depth": 1,
+          "name": "9. An __________ is the tidal zone where river water and ocean water mix."
+        },
+        {
+          "text": "10. A __________ — a tall plant with a brown cylindrical seed head — lines marshy areas.",
+          "depth": 1,
+          "name": "10. A __________ — a tall plant with a brown cylindrical seed head — lines marshy areas."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. current  2. Rapids  3. tributary  4. heron  5. beaver  6. lily  7. delta  8. jacket  9. estuary  10. cattail",
+          "depth": 2,
+          "name": "1. current 2. Rapids 3. tributary 4. heron 5. beaver 6. lily 7. delta 8. jacket 9. estuary 10. cattail"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "554:4446",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "River vs Stream vs Brook vs Creek",
+          "depth": 2,
+          "name": "River vs Stream vs Brook vs Creek"
+        },
+        {
+          "text": "'River' = large body of flowing water. 'Stream' = smaller, narrower flow. 'Brook' (BrE) = a very small stream. 'Creek' (AmE) = a small stream (in BrE, 'creek' means a narrow inlet of the sea). 'Canal' = man-made waterway. 'Estuary' = the wide tidal mouth of a river.",
+          "depth": 2,
+          "name": "'River' = large body of flowing water. 'Stream' = smaller, narrower flow. 'Brook' (BrE) = a very small stream. 'Creek' (AmE) = a small stream (in BrE, 'creek' means a narrow inlet of the sea). 'Canal' = man-made waterway. 'Estuary' = the wide tidal mouth of a river."
+        },
+        {
+          "text": "Famous British Rivers",
+          "depth": 2,
+          "name": "Famous British Rivers"
+        },
+        {
+          "text": "The Thames = flows through London, 346km long. The Severn = the longest river in the UK (354km). The Avon = there are several; Shakespeare's Stratford is on the River Avon. The Tyne = flows through Newcastle. 'River' + name is standard in BrE: 'the River Thames', not 'the Thames River'.",
+          "depth": 2,
+          "name": "The Thames = flows through London, 346km long. The Severn = the longest river in the UK (354km). The Avon = there are several; Shakespeare's Stratford is on the River Avon. The Tyne = flows through Newcastle. 'River' + name is standard in BrE: 'the River Thames', not 'the Thames River'."
+        },
+        {
+          "text": "River Safety",
+          "depth": 2,
+          "name": "River Safety"
+        },
+        {
+          "text": "Rivers can be dangerous. Currents are often stronger than they appear. Cold water shock can cause drowning even for strong swimmers. Hidden rocks, weeds, and deep drops are common hazards. The Royal Life Saving Society advises: never swim in rivers alone, always check depth and current, and be aware of weirs (low dams that create deadly undercurrents).",
+          "depth": 2,
+          "name": "Rivers can be dangerous. Currents are often stronger than they appear. Cold water shock can cause drowning even for strong swimmers. Hidden rocks, weeds, and deep drops are common hazards. The Royal Life Saving Society advises: never swim in rivers alone, always check depth and current, and be aware of weirs (low dams that create deadly undercurrents)."
+        },
+        {
+          "text": "Water Cycle Vocabulary",
+          "depth": 2,
+          "name": "Water Cycle Vocabulary"
+        },
+        {
+          "text": "'Evaporation' = water turns to vapour (liquid → gas). 'Condensation' = vapour turns to water droplets (gas → liquid) — forming clouds. 'Precipitation' = water falling as rain, snow, sleet, or hail. 'Runoff' = water flowing over land into rivers. 'Infiltration' = water soaking into the ground. 'Groundwater' = water stored underground.",
+          "depth": 2,
+          "name": "'Evaporation' = water turns to vapour (liquid → gas). 'Condensation' = vapour turns to water droplets (gas → liquid) — forming clouds. 'Precipitation' = water falling as rain, snow, sleet, or hail. 'Runoff' = water flowing over land into rivers. 'Infiltration' = water soaking into the ground. 'Groundwater' = water stored underground."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "554:4462",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "river",
+          "depth": 2,
+          "name": "river"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ bank, ~ bed, ~ mouth",
+          "depth": 2,
+          "name": "~ bank, ~ bed, ~ mouth"
+        },
+        {
+          "text": "current",
+          "depth": 2,
+          "name": "current"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "strong ~, ~ direction, water ~",
+          "depth": 2,
+          "name": "strong ~, ~ direction, water ~"
+        },
+        {
+          "text": "tributary",
+          "depth": 2,
+          "name": "tributary"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ river, ~ stream, major ~",
+          "depth": 2,
+          "name": "~ river, ~ stream, major ~"
+        },
+        {
+          "text": "source",
+          "depth": 2,
+          "name": "source"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ of the river, ~ spring, ~ location",
+          "depth": 2,
+          "name": "~ of the river, ~ spring, ~ location"
+        },
+        {
+          "text": "floodplain",
+          "depth": 2,
+          "name": "floodplain"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ area, ~ soil, ~ farming",
+          "depth": 2,
+          "name": "~ area, ~ soil, ~ farming"
+        },
+        {
+          "text": "meander",
+          "depth": 2,
+          "name": "meander"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "river ~, ~ bend, ~ loop",
+          "depth": 2,
+          "name": "river ~, ~ bend, ~ loop"
+        },
+        {
+          "text": "sediment",
+          "depth": 2,
+          "name": "sediment"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ deposit, ~ layer, river ~",
+          "depth": 2,
+          "name": "~ deposit, ~ layer, river ~"
+        },
+        {
+          "text": "bank",
+          "depth": 2,
+          "name": "bank"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "river ~, ~ erosion, ~ side",
+          "depth": 2,
+          "name": "river ~, ~ erosion, ~ side"
+        },
+        {
+          "text": "waterfall",
+          "depth": 2,
+          "name": "waterfall"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ height, ~ pool, ~ spray",
+          "depth": 2,
+          "name": "~ height, ~ pool, ~ spray"
+        },
+        {
+          "text": "dam",
+          "depth": 2,
+          "name": "dam"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ wall, ~ reservoir, hydroelectric ~",
+          "depth": 2,
+          "name": "~ wall, ~ reservoir, hydroelectric ~"
+        }
+      ]
+    }
+  }
+}

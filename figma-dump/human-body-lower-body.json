@@ -1,0 +1,489 @@
+{
+  "unitId": "human-body-lower-body",
+  "name": "The Human Body (Lower Body)",
+  "subtopics": [
+    {
+      "id": "upper-leg",
+      "title": "Upper Leg",
+      "wordIds": [
+        "thigh",
+        "quadricep",
+        "hamstring",
+        "hip-joint",
+        "groin",
+        "inner-thigh",
+        "outer-thigh",
+        "femur",
+        "hip-flexor",
+        "iliac-crest"
+      ]
+    },
+    {
+      "id": "knee-lower-leg",
+      "title": "Knee & Lower Leg",
+      "wordIds": [
+        "knee",
+        "kneecap",
+        "shin",
+        "calf",
+        "tibia",
+        "fibula",
+        "achilles-tendon",
+        "popliteal",
+        "meniscus",
+        "ligament"
+      ]
+    },
+    {
+      "id": "foot-ankle",
+      "title": "Foot & Ankle",
+      "wordIds": [
+        "foot",
+        "ankle",
+        "heel",
+        "sole",
+        "arch",
+        "instep",
+        "ball-of-foot",
+        "ankle-bone",
+        "plantar",
+        "metatarsal"
+      ]
+    },
+    {
+      "id": "toes",
+      "title": "Toes",
+      "wordIds": [
+        "big-toe",
+        "little-toe",
+        "toenail",
+        "toe-pad",
+        "toe-joint",
+        "bunion",
+        "callus",
+        "blister",
+        "cuticle",
+        "nail-bed"
+      ]
+    },
+    {
+      "id": "leg-movements",
+      "title": "Leg Movements",
+      "wordIds": [
+        "walk",
+        "run",
+        "jump",
+        "squat",
+        "lunge",
+        "kick",
+        "kneel",
+        "crouch",
+        "stride",
+        "tiptoe"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "thigh",
+      "label": "Thigh",
+      "ipa": "/θaɪ/",
+      "cefr": "A2",
+      "imageNodeId": "467:628"
+    },
+    {
+      "kind": "card",
+      "id": "quadricep",
+      "label": "Quadricep",
+      "ipa": "/ˈkwɒdrɪˌsɛp/",
+      "cefr": "A2",
+      "imageNodeId": "467:632"
+    },
+    {
+      "kind": "card",
+      "id": "hamstring",
+      "label": "Hamstring",
+      "ipa": "/ˈhæmˌstrɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "467:636"
+    },
+    {
+      "kind": "card",
+      "id": "hip-joint",
+      "label": "Hip Joint",
+      "ipa": "/hɪp dʒɔɪnt/",
+      "cefr": "B1",
+      "imageNodeId": "467:640"
+    },
+    {
+      "kind": "card",
+      "id": "groin",
+      "label": "Groin",
+      "ipa": "/ɡrɔɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:644"
+    },
+    {
+      "kind": "card",
+      "id": "inner-thigh",
+      "label": "Inner Thigh",
+      "ipa": "/ˈɪnər θaɪ/",
+      "cefr": "B1",
+      "imageNodeId": "467:648"
+    },
+    {
+      "kind": "card",
+      "id": "outer-thigh",
+      "label": "Outer Thigh",
+      "ipa": "/ˈaʊtər θaɪ/",
+      "cefr": "B1",
+      "imageNodeId": "467:652"
+    },
+    {
+      "kind": "card",
+      "id": "femur",
+      "label": "Femur",
+      "ipa": "/ˈfiːmər/",
+      "cefr": "A2",
+      "imageNodeId": "467:656"
+    },
+    {
+      "kind": "card",
+      "id": "hip-flexor",
+      "label": "Hip Flexor",
+      "ipa": "/hɪp ˈflɛksər/",
+      "cefr": "B1",
+      "imageNodeId": "467:660"
+    },
+    {
+      "kind": "card",
+      "id": "iliac-crest",
+      "label": "Iliac Crest",
+      "ipa": "/ˈɪliˌæk krɛst/",
+      "cefr": "B1",
+      "imageNodeId": "467:664"
+    },
+    {
+      "kind": "card",
+      "id": "knee",
+      "label": "Knee",
+      "ipa": "/niː/",
+      "cefr": "A2",
+      "imageNodeId": "467:673"
+    },
+    {
+      "kind": "card",
+      "id": "kneecap",
+      "label": "Kneecap",
+      "ipa": "/ˈniːˌkæp/",
+      "cefr": "A2",
+      "imageNodeId": "467:677"
+    },
+    {
+      "kind": "card",
+      "id": "shin",
+      "label": "Shin",
+      "ipa": "/ʃɪn/",
+      "cefr": "A2",
+      "imageNodeId": "467:681"
+    },
+    {
+      "kind": "card",
+      "id": "calf",
+      "label": "Calf",
+      "ipa": "/kæf/",
+      "cefr": "A2",
+      "imageNodeId": "467:685"
+    },
+    {
+      "kind": "card",
+      "id": "tibia",
+      "label": "Tibia",
+      "ipa": "/ˈtɪbiə/",
+      "cefr": "A2",
+      "imageNodeId": "467:689"
+    },
+    {
+      "kind": "card",
+      "id": "fibula",
+      "label": "Fibula",
+      "ipa": "/ˈfɪbjʊlə/",
+      "cefr": "A2",
+      "imageNodeId": "467:693"
+    },
+    {
+      "kind": "card",
+      "id": "achilles-tendon",
+      "label": "Achilles Tendon",
+      "ipa": "/əˈkɪliːz ˈtɛndən/",
+      "cefr": "B2",
+      "imageNodeId": "467:697"
+    },
+    {
+      "kind": "card",
+      "id": "popliteal",
+      "label": "Popliteal",
+      "ipa": "/ˌpɒplɪˈtiːəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:701"
+    },
+    {
+      "kind": "card",
+      "id": "meniscus",
+      "label": "Meniscus",
+      "ipa": "/mɪˈnɪskəs/",
+      "cefr": "A2",
+      "imageNodeId": "467:705"
+    },
+    {
+      "kind": "card",
+      "id": "ligament",
+      "label": "Ligament",
+      "ipa": "/ˈlɪɡəmənt/",
+      "cefr": "A2",
+      "imageNodeId": "467:709"
+    },
+    {
+      "kind": "card",
+      "id": "foot",
+      "label": "Foot",
+      "ipa": "/fʊt/",
+      "cefr": "A2",
+      "imageNodeId": "467:718"
+    },
+    {
+      "kind": "card",
+      "id": "ankle",
+      "label": "Ankle",
+      "ipa": "/ˈæŋkəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:722"
+    },
+    {
+      "kind": "card",
+      "id": "heel",
+      "label": "Heel",
+      "ipa": "/hiːl/",
+      "cefr": "A2",
+      "imageNodeId": "467:726"
+    },
+    {
+      "kind": "card",
+      "id": "sole",
+      "label": "Sole",
+      "ipa": "/soʊl/",
+      "cefr": "A2",
+      "imageNodeId": "467:730"
+    },
+    {
+      "kind": "card",
+      "id": "arch",
+      "label": "Arch",
+      "ipa": "/ɑːrtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:734"
+    },
+    {
+      "kind": "card",
+      "id": "instep",
+      "label": "Instep",
+      "ipa": "/ˈɪnˌstɛp/",
+      "cefr": "A2",
+      "imageNodeId": "467:738"
+    },
+    {
+      "kind": "card",
+      "id": "ball-of-foot",
+      "label": "Ball of Foot",
+      "ipa": "/bɔːl əv fʊt/",
+      "cefr": "B2",
+      "imageNodeId": "467:742"
+    },
+    {
+      "kind": "card",
+      "id": "ankle-bone",
+      "label": "Ankle Bone",
+      "ipa": "/ˈæŋkəl boʊn/",
+      "cefr": "B1",
+      "imageNodeId": "467:746"
+    },
+    {
+      "kind": "card",
+      "id": "plantar",
+      "label": "Plantar",
+      "ipa": "/ˈplæntər/",
+      "cefr": "A2",
+      "imageNodeId": "467:750"
+    },
+    {
+      "kind": "card",
+      "id": "metatarsal",
+      "label": "Metatarsal",
+      "ipa": "/ˌmɛtəˈtɑːrsəl/",
+      "cefr": "B1",
+      "imageNodeId": "467:754"
+    },
+    {
+      "kind": "card",
+      "id": "big-toe",
+      "label": "Big Toe",
+      "ipa": "/bɪɡ toʊ/",
+      "cefr": "B1",
+      "imageNodeId": "467:763"
+    },
+    {
+      "kind": "card",
+      "id": "little-toe",
+      "label": "Little Toe",
+      "ipa": "/ˈlɪtəl toʊ/",
+      "cefr": "B1",
+      "imageNodeId": "467:767"
+    },
+    {
+      "kind": "card",
+      "id": "toenail",
+      "label": "Toenail",
+      "ipa": "/ˈtoʊˌneɪl/",
+      "cefr": "A2",
+      "imageNodeId": "467:771"
+    },
+    {
+      "kind": "card",
+      "id": "toe-pad",
+      "label": "Toe Pad",
+      "ipa": "/toʊ pæd/",
+      "cefr": "B1",
+      "imageNodeId": "467:775"
+    },
+    {
+      "kind": "card",
+      "id": "toe-joint",
+      "label": "Toe Joint",
+      "ipa": "/toʊ dʒɔɪnt/",
+      "cefr": "B1",
+      "imageNodeId": "467:779"
+    },
+    {
+      "kind": "card",
+      "id": "bunion",
+      "label": "Bunion",
+      "ipa": "/ˈbʌnjən/",
+      "cefr": "A2",
+      "imageNodeId": "467:783"
+    },
+    {
+      "kind": "card",
+      "id": "callus",
+      "label": "Callus",
+      "ipa": "/ˈkæləs/",
+      "cefr": "A2",
+      "imageNodeId": "467:787"
+    },
+    {
+      "kind": "card",
+      "id": "blister",
+      "label": "Blister",
+      "ipa": "/ˈblɪstər/",
+      "cefr": "A2",
+      "imageNodeId": "467:791"
+    },
+    {
+      "kind": "card",
+      "id": "cuticle",
+      "label": "Cuticle",
+      "ipa": "/ˈkjuːtɪkəl/",
+      "cefr": "A2",
+      "imageNodeId": "467:795"
+    },
+    {
+      "kind": "card",
+      "id": "nail-bed",
+      "label": "Nail Bed",
+      "ipa": "/neɪl bɛd/",
+      "cefr": "B1",
+      "imageNodeId": "467:799"
+    },
+    {
+      "kind": "card",
+      "id": "walk",
+      "label": "Walk",
+      "ipa": "/wɔːk/",
+      "cefr": "A2",
+      "imageNodeId": "467:808"
+    },
+    {
+      "kind": "card",
+      "id": "run",
+      "label": "Run",
+      "ipa": "/rʌn/",
+      "cefr": "A2",
+      "imageNodeId": "467:812"
+    },
+    {
+      "kind": "card",
+      "id": "jump",
+      "label": "Jump",
+      "ipa": "/dʒʌmp/",
+      "cefr": "A2",
+      "imageNodeId": "467:816"
+    },
+    {
+      "kind": "card",
+      "id": "squat",
+      "label": "Squat",
+      "ipa": "/skwɒt/",
+      "cefr": "A2",
+      "imageNodeId": "467:820"
+    },
+    {
+      "kind": "card",
+      "id": "lunge",
+      "label": "Lunge",
+      "ipa": "/lʌndʒ/",
+      "cefr": "A2",
+      "imageNodeId": "467:824"
+    },
+    {
+      "kind": "card",
+      "id": "kick",
+      "label": "Kick",
+      "ipa": "/kɪk/",
+      "cefr": "A2",
+      "imageNodeId": "467:828"
+    },
+    {
+      "kind": "card",
+      "id": "kneel",
+      "label": "Kneel",
+      "ipa": "/niːl/",
+      "cefr": "A2",
+      "imageNodeId": "467:832"
+    },
+    {
+      "kind": "card",
+      "id": "crouch",
+      "label": "Crouch",
+      "ipa": "/kraʊtʃ/",
+      "cefr": "A2",
+      "imageNodeId": "467:836"
+    },
+    {
+      "kind": "card",
+      "id": "stride",
+      "label": "Stride",
+      "ipa": "/straɪd/",
+      "cefr": "A2",
+      "imageNodeId": "467:840"
+    },
+    {
+      "kind": "card",
+      "id": "tiptoe",
+      "label": "Tiptoe",
+      "ipa": "/ˈtɪpˌtoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "467:844"
+    }
+  ],
+  "materials": null
+}

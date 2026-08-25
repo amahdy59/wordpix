@@ -1,0 +1,1707 @@
+{
+  "unitId": "tailor-shop",
+  "name": "The Tailor Shop",
+  "subtopics": [
+    {
+      "id": "sewing-equipment",
+      "title": "Sewing Equipment",
+      "wordIds": [
+        "sewing-machine",
+        "needle",
+        "thread",
+        "bobbin",
+        "thimble",
+        "pin-cushion",
+        "straight-pin",
+        "seam-ripper",
+        "sewing-scissors",
+        "rotary-cutter"
+      ]
+    },
+    {
+      "id": "measuring-cutting",
+      "title": "Measuring & Cutting",
+      "wordIds": [
+        "tape-measure",
+        "ruler",
+        "pattern",
+        "fabric-marker",
+        "chalk",
+        "cutting-mat",
+        "dress-form",
+        "mannequin",
+        "t-square",
+        "french-curve"
+      ]
+    },
+    {
+      "id": "fabrics",
+      "title": "Fabrics",
+      "wordIds": [
+        "cotton",
+        "silk",
+        "wool",
+        "linen",
+        "denim",
+        "leather",
+        "chiffon",
+        "polyester",
+        "velvet",
+        "corduroy"
+      ]
+    },
+    {
+      "id": "fasteners-trim",
+      "title": "Fasteners & Trim",
+      "wordIds": [
+        "button",
+        "zipper",
+        "hook-and-eye",
+        "snap",
+        "buckle",
+        "ribbon",
+        "lace",
+        "elastic-band",
+        "velcro",
+        "bias-tape"
+      ]
+    },
+    {
+      "id": "garment-parts",
+      "title": "Garment Parts",
+      "wordIds": [
+        "collar",
+        "sleeve",
+        "cuff",
+        "hem",
+        "pocket",
+        "lapel",
+        "waistband",
+        "seam",
+        "dart",
+        "lining"
+      ]
+    },
+    {
+      "id": "shop-features",
+      "title": "Shop Features",
+      "wordIds": [
+        "fitting-room",
+        "full-length-mirror",
+        "ironing-board",
+        "steam-iron",
+        "hanging-rack",
+        "shelf",
+        "drawer",
+        "label",
+        "order-form",
+        "receipt",
+        "scissors",
+        "pin",
+        "iron",
+        "fabric",
+        "elastic",
+        "interfacing",
+        "dress",
+        "suit",
+        "skirt",
+        "trousers",
+        "jacket",
+        "shirt",
+        "blouse",
+        "vest"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "sewing-machine",
+      "label": "Sewing Machine",
+      "ipa": "/ˈsoʊɪŋ məˈʃiːn/",
+      "cefr": "B2",
+      "imageNodeId": "45:6513"
+    },
+    {
+      "kind": "card",
+      "id": "needle",
+      "label": "Needle",
+      "ipa": "/ˈniːdəl/",
+      "cefr": "B1",
+      "imageNodeId": "45:6517"
+    },
+    {
+      "kind": "card",
+      "id": "thread",
+      "label": "Thread",
+      "ipa": "/θrɛd/",
+      "cefr": "B1",
+      "imageNodeId": "45:6521"
+    },
+    {
+      "kind": "card",
+      "id": "bobbin",
+      "label": "Bobbin",
+      "ipa": "/ˈbɒbɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:6525"
+    },
+    {
+      "kind": "card",
+      "id": "thimble",
+      "label": "Thimble",
+      "ipa": "/ˈθɪmbəl/",
+      "cefr": "B1",
+      "imageNodeId": "45:6529"
+    },
+    {
+      "kind": "card",
+      "id": "pin-cushion",
+      "label": "Pin Cushion",
+      "ipa": "/pɪn ˈkʊʃən/",
+      "cefr": "B2",
+      "imageNodeId": "45:6533"
+    },
+    {
+      "kind": "card",
+      "id": "straight-pin",
+      "label": "Straight Pin",
+      "ipa": "/streɪt pɪn/",
+      "cefr": "B2",
+      "imageNodeId": "45:6537"
+    },
+    {
+      "kind": "card",
+      "id": "seam-ripper",
+      "label": "Seam Ripper",
+      "ipa": "/siːm ˈrɪpər/",
+      "cefr": "B2",
+      "imageNodeId": "45:6541"
+    },
+    {
+      "kind": "card",
+      "id": "sewing-scissors",
+      "label": "Sewing Scissors",
+      "ipa": "/ˈsoʊɪŋ ˈsɪzərz/",
+      "cefr": "C1",
+      "imageNodeId": "45:6545"
+    },
+    {
+      "kind": "card",
+      "id": "rotary-cutter",
+      "label": "Rotary Cutter",
+      "ipa": "/ˈroʊtəri ˈkʌtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:6549"
+    },
+    {
+      "kind": "card",
+      "id": "tape-measure",
+      "label": "Tape Measure",
+      "ipa": "/teɪp ˈmɛʒər/",
+      "cefr": "B2",
+      "imageNodeId": "45:6558"
+    },
+    {
+      "kind": "card",
+      "id": "ruler",
+      "label": "Ruler",
+      "ipa": "/ˈruːlər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6562"
+    },
+    {
+      "kind": "card",
+      "id": "pattern",
+      "label": "Pattern",
+      "ipa": "/ˈpætərn/",
+      "cefr": "B1",
+      "imageNodeId": "45:6566"
+    },
+    {
+      "kind": "card",
+      "id": "fabric-marker",
+      "label": "Fabric Marker",
+      "ipa": "/ˈfæbrɪk ˈmɑːrkər/",
+      "cefr": "B2",
+      "imageNodeId": "45:6570"
+    },
+    {
+      "kind": "card",
+      "id": "chalk",
+      "label": "Chalk",
+      "ipa": "/tʃɔːk/",
+      "cefr": "B1",
+      "imageNodeId": "45:6574"
+    },
+    {
+      "kind": "card",
+      "id": "cutting-mat",
+      "label": "Cutting Mat",
+      "ipa": "/ˈkʌtɪŋ mæt/",
+      "cefr": "B2",
+      "imageNodeId": "45:6578"
+    },
+    {
+      "kind": "card",
+      "id": "dress-form",
+      "label": "Dress Form",
+      "ipa": "/drɛs fɔːrm/",
+      "cefr": "B2",
+      "imageNodeId": "45:6582"
+    },
+    {
+      "kind": "card",
+      "id": "mannequin",
+      "label": "Mannequin",
+      "ipa": "/ˈmænɪkɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:6586"
+    },
+    {
+      "kind": "card",
+      "id": "t-square",
+      "label": "T-Square",
+      "ipa": "/ˈtiːˌskwɛər/",
+      "cefr": "B2",
+      "imageNodeId": "45:6590"
+    },
+    {
+      "kind": "card",
+      "id": "french-curve",
+      "label": "French Curve",
+      "ipa": "/frɛntʃ kɜːrv/",
+      "cefr": "B2",
+      "imageNodeId": "45:6594"
+    },
+    {
+      "kind": "card",
+      "id": "cotton",
+      "label": "Cotton",
+      "ipa": "/ˈkɒtən/",
+      "cefr": "B1",
+      "imageNodeId": "45:6603"
+    },
+    {
+      "kind": "card",
+      "id": "silk",
+      "label": "Silk",
+      "ipa": "/sɪlk/",
+      "cefr": "B1",
+      "imageNodeId": "45:6607"
+    },
+    {
+      "kind": "card",
+      "id": "wool",
+      "label": "Wool",
+      "ipa": "/wʊl/",
+      "cefr": "B1",
+      "imageNodeId": "45:6611"
+    },
+    {
+      "kind": "card",
+      "id": "linen",
+      "label": "Linen",
+      "ipa": "/ˈlɪnɪn/",
+      "cefr": "B1",
+      "imageNodeId": "45:6615"
+    },
+    {
+      "kind": "card",
+      "id": "denim",
+      "label": "Denim",
+      "ipa": "/ˈdɛnɪm/",
+      "cefr": "B1",
+      "imageNodeId": "45:6619"
+    },
+    {
+      "kind": "card",
+      "id": "leather",
+      "label": "Leather",
+      "ipa": "/ˈlɛðər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6623"
+    },
+    {
+      "kind": "card",
+      "id": "chiffon",
+      "label": "Chiffon",
+      "ipa": "/ʃɪˈfɒn/",
+      "cefr": "B1",
+      "imageNodeId": "45:6627"
+    },
+    {
+      "kind": "card",
+      "id": "polyester",
+      "label": "Polyester",
+      "ipa": "/ˌpɒliˈɛstər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6631"
+    },
+    {
+      "kind": "card",
+      "id": "velvet",
+      "label": "Velvet",
+      "ipa": "/ˈvɛlvɪt/",
+      "cefr": "B1",
+      "imageNodeId": "45:6635"
+    },
+    {
+      "kind": "card",
+      "id": "corduroy",
+      "label": "Corduroy",
+      "ipa": "/ˈkɔːrdəˌrɔɪ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6639"
+    },
+    {
+      "kind": "card",
+      "id": "button",
+      "label": "Button",
+      "ipa": "/ˈbʌtən/",
+      "cefr": "B1",
+      "imageNodeId": "45:6648"
+    },
+    {
+      "kind": "card",
+      "id": "zipper",
+      "label": "Zipper",
+      "ipa": "/ˈzɪpər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6652"
+    },
+    {
+      "kind": "card",
+      "id": "hook-and-eye",
+      "label": "Hook and Eye",
+      "ipa": "/hʊk ənd aɪ/",
+      "cefr": "C1",
+      "imageNodeId": "45:6656"
+    },
+    {
+      "kind": "card",
+      "id": "snap",
+      "label": "Snap",
+      "ipa": "/snæp/",
+      "cefr": "B1",
+      "imageNodeId": "45:6660"
+    },
+    {
+      "kind": "card",
+      "id": "buckle",
+      "label": "Buckle",
+      "ipa": "/ˈbʌkəl/",
+      "cefr": "B1",
+      "imageNodeId": "45:6664"
+    },
+    {
+      "kind": "card",
+      "id": "ribbon",
+      "label": "Ribbon",
+      "ipa": "/ˈrɪbən/",
+      "cefr": "B1",
+      "imageNodeId": "45:6668"
+    },
+    {
+      "kind": "card",
+      "id": "lace",
+      "label": "Lace",
+      "ipa": "/leɪs/",
+      "cefr": "B1",
+      "imageNodeId": "45:6672"
+    },
+    {
+      "kind": "card",
+      "id": "elastic-band",
+      "label": "Elastic Band",
+      "ipa": "/ɪˈlæstɪk bænd/",
+      "cefr": "B2",
+      "imageNodeId": "45:6676"
+    },
+    {
+      "kind": "card",
+      "id": "velcro",
+      "label": "Velcro",
+      "ipa": "/ˈvɛlkroʊ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6680"
+    },
+    {
+      "kind": "card",
+      "id": "bias-tape",
+      "label": "Bias Tape",
+      "ipa": "/ˈbaɪəs teɪp/",
+      "cefr": "B2",
+      "imageNodeId": "45:6684"
+    },
+    {
+      "kind": "card",
+      "id": "collar",
+      "label": "Collar",
+      "ipa": "/ˈkɒlər/",
+      "cefr": "B1",
+      "imageNodeId": "45:6693"
+    },
+    {
+      "kind": "card",
+      "id": "sleeve",
+      "label": "Sleeve",
+      "ipa": "/sliːv/",
+      "cefr": "B1",
+      "imageNodeId": "45:6697"
+    },
+    {
+      "kind": "card",
+      "id": "cuff",
+      "label": "Cuff",
+      "ipa": "/kʌf/",
+      "cefr": "B1",
+      "imageNodeId": "45:6701"
+    },
+    {
+      "kind": "card",
+      "id": "hem",
+      "label": "Hem",
+      "ipa": "/hɛm/",
+      "cefr": "B1",
+      "imageNodeId": "45:6705"
+    },
+    {
+      "kind": "card",
+      "id": "pocket",
+      "label": "Pocket",
+      "ipa": "/ˈpɒkɪt/",
+      "cefr": "B1",
+      "imageNodeId": "45:6709"
+    },
+    {
+      "kind": "card",
+      "id": "lapel",
+      "label": "Lapel",
+      "ipa": "/ləˈpɛl/",
+      "cefr": "B1",
+      "imageNodeId": "45:6713"
+    },
+    {
+      "kind": "card",
+      "id": "waistband",
+      "label": "Waistband",
+      "ipa": "/ˈweɪstˌbænd/",
+      "cefr": "B1",
+      "imageNodeId": "45:6717"
+    },
+    {
+      "kind": "card",
+      "id": "seam",
+      "label": "Seam",
+      "ipa": "/siːm/",
+      "cefr": "B1",
+      "imageNodeId": "45:6721"
+    },
+    {
+      "kind": "card",
+      "id": "dart",
+      "label": "Dart",
+      "ipa": "/dɑːrt/",
+      "cefr": "B1",
+      "imageNodeId": "45:6725"
+    },
+    {
+      "kind": "card",
+      "id": "lining",
+      "label": "Lining",
+      "ipa": "/ˈlaɪnɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "45:6729"
+    },
+    {
+      "kind": "card",
+      "id": "fitting-room",
+      "label": "Fitting Room",
+      "ipa": "/ˈfɪtɪŋ ruːm/",
+      "cefr": "B2",
+      "imageNodeId": "45:6738"
+    },
+    {
+      "kind": "card",
+      "id": "full-length-mirror",
+      "label": "Full-Length Mirror",
+      "ipa": "/fʊl lɛŋθ ˈmɪrər/",
+      "cefr": "C1",
+      "imageNodeId": "45:6742"
+    },
+    {
+      "kind": "card",
+      "id": "ironing-board",
+      "label": "Ironing Board",
+      "ipa": "/ˈaɪərnɪŋ bɔːrd/",
+      "cefr": "B2",
+      "imageNodeId": "45:6746"
+    },
+    {
+      "kind": "card",
+      "id": "steam-iron",
+      "label": "Steam Iron",
+      "ipa": "/stiːm ˈaɪərn/",
+      "cefr": "B2",
+      "imageNodeId": "45:6750"
+    },
+    {
+      "kind": "card",
+      "id": "hanging-rack",
+      "label": "Hanging Rack",
+      "ipa": "/ˈhæŋɪŋ ræk/",
+      "cefr": "B2",
+      "imageNodeId": "45:6754"
+    },
+    {
+      "kind": "card",
+      "id": "shelf",
+      "label": "Shelf",
+      "ipa": "/ʃɛlf/",
+      "cefr": "B1",
+      "imageNodeId": "45:6758"
+    },
+    {
+      "kind": "card",
+      "id": "drawer",
+      "label": "Drawer",
+      "ipa": "/drɔːr/",
+      "cefr": "B1",
+      "imageNodeId": "45:6762"
+    },
+    {
+      "kind": "card",
+      "id": "label",
+      "label": "Label",
+      "ipa": "/ˈleɪbəl/",
+      "cefr": "B1",
+      "imageNodeId": "45:6766"
+    },
+    {
+      "kind": "card",
+      "id": "order-form",
+      "label": "Order Form",
+      "ipa": "/ˈɔːrdər fɔːrm/",
+      "cefr": "B2",
+      "imageNodeId": "45:6770"
+    },
+    {
+      "kind": "card",
+      "id": "receipt",
+      "label": "Receipt",
+      "ipa": "/rɪˈsiːt/",
+      "cefr": "B1",
+      "imageNodeId": "45:6774"
+    },
+    {
+      "kind": "card",
+      "id": "scissors",
+      "label": "Scissors",
+      "ipa": "/ˈsɪzərz/",
+      "cefr": "B1",
+      "imageNodeId": "39:6300"
+    },
+    {
+      "kind": "card",
+      "id": "pin",
+      "label": "Pin",
+      "ipa": "/pɪn/",
+      "cefr": "B1",
+      "imageNodeId": "39:6308"
+    },
+    {
+      "kind": "card",
+      "id": "iron",
+      "label": "Iron",
+      "ipa": "/ˈaɪərn/",
+      "cefr": "B1",
+      "imageNodeId": "39:6316"
+    },
+    {
+      "kind": "card",
+      "id": "fabric",
+      "label": "Fabric",
+      "ipa": "/ˈfæbrɪk/",
+      "cefr": "B1",
+      "imageNodeId": "39:6327"
+    },
+    {
+      "kind": "card",
+      "id": "elastic",
+      "label": "Elastic",
+      "ipa": "/ɪˈlæstɪk/",
+      "cefr": "B1",
+      "imageNodeId": "39:6339"
+    },
+    {
+      "kind": "card",
+      "id": "interfacing",
+      "label": "Interfacing",
+      "ipa": "/ˌɪntərˈfeɪsɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "39:6347"
+    },
+    {
+      "kind": "card",
+      "id": "dress",
+      "label": "Dress",
+      "ipa": "/drɛs/",
+      "cefr": "B1",
+      "imageNodeId": "39:6362"
+    },
+    {
+      "kind": "card",
+      "id": "suit",
+      "label": "Suit",
+      "ipa": "/suːt/",
+      "cefr": "B1",
+      "imageNodeId": "39:6366"
+    },
+    {
+      "kind": "card",
+      "id": "skirt",
+      "label": "Skirt",
+      "ipa": "/skɜːrt/",
+      "cefr": "B1",
+      "imageNodeId": "39:6370"
+    },
+    {
+      "kind": "card",
+      "id": "trousers",
+      "label": "Trousers",
+      "ipa": "/ˈtraʊzərz/",
+      "cefr": "B1",
+      "imageNodeId": "39:6374"
+    },
+    {
+      "kind": "card",
+      "id": "jacket",
+      "label": "Jacket",
+      "ipa": "/ˈdʒækɪt/",
+      "cefr": "B1",
+      "imageNodeId": "39:6378"
+    },
+    {
+      "kind": "card",
+      "id": "shirt",
+      "label": "Shirt",
+      "ipa": "/ʃɜːrt/",
+      "cefr": "B1",
+      "imageNodeId": "39:6382"
+    },
+    {
+      "kind": "card",
+      "id": "blouse",
+      "label": "Blouse",
+      "ipa": "/blaʊs/",
+      "cefr": "B1",
+      "imageNodeId": "39:6386"
+    },
+    {
+      "kind": "card",
+      "id": "vest",
+      "label": "Vest",
+      "ipa": "/vɛst/",
+      "cefr": "B1",
+      "imageNodeId": "39:6390"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "549:3761",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "549:3763",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1+ · Topic: The Tailor Shop",
+          "depth": 1,
+          "name": "Level: B1+ · Topic: The Tailor Shop"
+        },
+        {
+          "text": "Thread, Needle, and Precision — The Art of the Tailor\n\nA tailor shop is a quiet, focused place. A sewing machine hums in the background. Fabric rolls line the shelves. A dress form — a body-shaped stand — wears a half-finished jacket. A tape measure hangs from the tailor's neck. The work is slow, precise, and personal — every garment is made to fit one body.\n\nThe tailor's tools are simple but essential. A needle and thread do the hand-stitching. A bobbin holds thread inside the sewing machine. A thimble protects the finger when pushing a needle through thick fabric. A pin cushion holds straight pins that keep fabric in place before sewing. A seam ripper removes mistakes — unpicking stitches one by one. Sewing scissors cut fabric cleanly. A rotary cutter — a round blade on a handle — cuts straight lines on a cutting mat. A ruler and a tape measure ensure accuracy. A T-square draws right angles. A French curve — a curved ruler — helps draw armholes and necklines.\n\nBefore cutting, the tailor works with a pattern — a paper template of each piece. A fabric marker or chalk draws the cutting lines on the fabric. The pattern includes markings for darts — small folds that shape fabric to follow the curves of the body — and for the seam, the line where two pieces of fabric are stitched together.\n\nFabrics vary in weight, texture, and purpose. Cotton is breathable and easy to sew — ideal for shirts and summer clothes. Silk is smooth and luxurious — used for formal wear. Wool is warm and durable — common in suits and winter coats. Linen is light and cool — popular in hot climates. Denim is tough — the fabric of jeans. Leather is used for jackets and bags. Chiffon is sheer and delicate — used in evening dresses. Polyester is cheap and wrinkle-resistant. Velvet is soft and rich. Corduroy has a ribbed texture.\n\nFastenings hold a garment together. A button passes through a buttonhole. A zipper opens and closes with a slider. A hook and eye is a small metal fastener used where buttons would be too bulky. A snap clicks together with pressure. A buckle adjusts a belt or strap. Ribbon decorates. Lace adds elegance. An elastic band provides stretch. Velcro sticks to itself. Bias tape finishes raw edges.\n\nEvery garment has named parts. A collar frames the neck. A sleeve covers the arm. A cuff finishes the end of the sleeve. A hem is the finished bottom edge. A pocket holds small items. A lapel folds back on a jacket front. A waistband sits at the waist of trousers or a skirt. A seam joins two pieces of fabric. A dart shapes the fabric to fit the body.\n\nA mannequin in the shop window displays the finished product. The tailor checks the fit — adjusting a hem here, taking in a seam there. The garment is pressed with a steam iron.\n\nIn a world of fast fashion, a tailor offers something rare: clothing made for you, by someone who understands how fabric, body, and design come together.",
+          "depth": 1,
+          "name": "Thread, Needle, and Precision — The Art of the Tailor A tailor shop is a quiet, focused place. A sewing machine hums in the background. Fabric rolls line the shelves. A dress form — a body-shaped stand — wears a half-finished jacket. A tape measure hangs from the tailor's neck. The work is slow, precise, and personal — every garment is made to fit one body. The tailor's tools are simple but essential. A needle and thread do the hand-stitching. A bobbin holds thread inside the sewing machine. A thimble protects the finger when pushing a needle through thick fabric. A pin cushion holds straight pins that keep fabric in place before sewing. A seam ripper removes mistakes — unpicking stitches one by one. Sewing scissors cut fabric cleanly. A rotary cutter — a round blade on a handle — cuts straight lines on a cutting mat. A ruler and a tape measure ensure accuracy. A T-square draws right angles. A French curve — a curved ruler — helps draw armholes and necklines. Before cutting, the tailor works with a pattern — a paper template of each piece. A fabric marker or chalk draws the cutting lines on the fabric. The pattern includes markings for darts — small folds that shape fabric to follow the curves of the body — and for the seam, the line where two pieces of fabric are stitched together. Fabrics vary in weight, texture, and purpose. Cotton is breathable and easy to sew — ideal for shirts and summer clothes. Silk is smooth and luxurious — used for formal wear. Wool is warm and durable — common in suits and winter coats. Linen is light and cool — popular in hot climates. Denim is tough — the fabric of jeans. Leather is used for jackets and bags. Chiffon is sheer and delicate — used in evening dresses. Polyester is cheap and wrinkle-resistant. Velvet is soft and rich. Corduroy has a ribbed texture. Fastenings hold a garment together. A button passes through a buttonhole. A zipper opens and closes with a slider. A hook and eye is a small metal fastener used where buttons would be too bulky. A snap clicks together with pressure. A buckle adjusts a belt or strap. Ribbon decorates. Lace adds elegance. An elastic band provides stretch. Velcro sticks to itself. Bias tape finishes raw edges. Every garment has named parts. A collar frames the neck. A sleeve covers the arm. A cuff finishes the end of the sleeve. A hem is the finished bottom edge. A pocket holds small items. A lapel folds back on a jacket front. A waistband sits at the waist of trousers or a skirt. A seam joins two pieces of fabric. A dart shapes the fabric to fit the body. A mannequin in the shop window displays the finished product. The tailor checks the fit — adjusting a hem here, taking in a seam there. The garment is pressed with a steam iron. In a world of fast fashion, a tailor offers something rare: clothing made for you, by someone who understands how fabric, body, and design come together."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Name five tools the tailor uses and explain what each one is for.",
+          "depth": 1,
+          "name": "1. Name five tools the tailor uses and explain what each one is for."
+        },
+        {
+          "text": "2. Describe five different fabrics from the passage and explain when each one is used.",
+          "depth": 1,
+          "name": "2. Describe five different fabrics from the passage and explain when each one is used."
+        },
+        {
+          "text": "3. What fastenings does the passage mention? Name at least five.",
+          "depth": 1,
+          "name": "3. What fastenings does the passage mention? Name at least five."
+        },
+        {
+          "text": "4. What are the named parts of a garment? List at least six.",
+          "depth": 1,
+          "name": "4. What are the named parts of a garment? List at least six."
+        },
+        {
+          "text": "5. The passage contrasts tailoring with 'fast fashion.' What does tailoring offer that fast fashion does not?",
+          "depth": 1,
+          "name": "5. The passage contrasts tailoring with 'fast fashion.' What does tailoring offer that fast fashion does not?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "549:3776",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "tailor-made",
+          "depth": 2,
+          "name": "tailor-made"
+        },
+        {
+          "text": "perfectly designed or suited for a particular purpose or person",
+          "depth": 2,
+          "name": "perfectly designed or suited for a particular purpose or person"
+        },
+        {
+          "text": "\"The silk dress was tailor-made for the wedding — every measurement taken on the dress form.\"",
+          "depth": 2,
+          "name": "\"The silk dress was tailor-made for the wedding — every measurement taken on the dress form.\""
+        },
+        {
+          "text": "cut from the same cloth",
+          "depth": 2,
+          "name": "cut from the same cloth"
+        },
+        {
+          "text": "very similar in character or origin",
+          "depth": 2,
+          "name": "very similar in character or origin"
+        },
+        {
+          "text": "\"The two suits were literally cut from the same cloth — the same bolt of wool fabric.\"",
+          "depth": 2,
+          "name": "\"The two suits were literally cut from the same cloth — the same bolt of wool fabric.\""
+        },
+        {
+          "text": "come apart at the seams",
+          "depth": 2,
+          "name": "come apart at the seams"
+        },
+        {
+          "text": "fail; break down; start to go wrong",
+          "depth": 2,
+          "name": "fail; break down; start to go wrong"
+        },
+        {
+          "text": "\"The old jacket came apart at the seams — the thread had worn through after years of use.\"",
+          "depth": 2,
+          "name": "\"The old jacket came apart at the seams — the thread had worn through after years of use.\""
+        },
+        {
+          "text": "hang by a thread",
+          "depth": 2,
+          "name": "hang by a thread"
+        },
+        {
+          "text": "be in a very dangerous or uncertain situation",
+          "depth": 2,
+          "name": "be in a very dangerous or uncertain situation"
+        },
+        {
+          "text": "\"The button was hanging by a thread — one more wear and it would have fallen off.\"",
+          "depth": 2,
+          "name": "\"The button was hanging by a thread — one more wear and it would have fallen off.\""
+        },
+        {
+          "text": "a stitch in time saves nine",
+          "depth": 2,
+          "name": "a stitch in time saves nine"
+        },
+        {
+          "text": "fixing a small problem now prevents a bigger one later",
+          "depth": 2,
+          "name": "fixing a small problem now prevents a bigger one later"
+        },
+        {
+          "text": "\"The seam ripper caught the error early — a stitch in time saves nine.\"",
+          "depth": 2,
+          "name": "\"The seam ripper caught the error early — a stitch in time saves nine.\""
+        },
+        {
+          "text": "pin someone down",
+          "depth": 2,
+          "name": "pin someone down"
+        },
+        {
+          "text": "make someone give a definite answer or commitment",
+          "depth": 2,
+          "name": "make someone give a definite answer or commitment"
+        },
+        {
+          "text": "\"I tried to pin the tailor down on a delivery date, but she said the chiffon hadn't arrived yet.\"",
+          "depth": 2,
+          "name": "\"I tried to pin the tailor down on a delivery date, but she said the chiffon hadn't arrived yet.\""
+        },
+        {
+          "text": "measure twice, cut once",
+          "depth": 2,
+          "name": "measure twice, cut once"
+        },
+        {
+          "text": "plan carefully before taking action",
+          "depth": 2,
+          "name": "plan carefully before taking action"
+        },
+        {
+          "text": "\"In tailoring, you measure twice and cut once — the tape measure and the chalk are used before the scissors ever touch the fabric.\"",
+          "depth": 2,
+          "name": "\"In tailoring, you measure twice and cut once — the tape measure and the chalk are used before the scissors ever touch the fabric.\""
+        },
+        {
+          "text": "the whole nine yards",
+          "depth": 2,
+          "name": "the whole nine yards"
+        },
+        {
+          "text": "everything; the full amount",
+          "depth": 2,
+          "name": "everything; the full amount"
+        },
+        {
+          "text": "\"She wanted the whole nine yards — linen trousers, a cotton shirt, a silk tie, and a velvet waistcoat.\"",
+          "depth": 2,
+          "name": "\"She wanted the whole nine yards — linen trousers, a cotton shirt, a silk tie, and a velvet waistcoat.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "549:3812",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A customer being measured for a custom suit at a tailor shop",
+          "depth": 1,
+          "name": "Scene: A customer being measured for a custom suit at a tailor shop"
+        },
+        {
+          "text": "Tailor:",
+          "depth": 2,
+          "name": "Tailor:"
+        },
+        {
+          "text": "Welcome. What can I make for you today?",
+          "depth": 2,
+          "name": "Welcome. What can I make for you today?"
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "I need a suit for a formal event. Something classic — maybe wool or linen?",
+          "depth": 2,
+          "name": "I need a suit for a formal event. Something classic — maybe wool or linen?"
+        },
+        {
+          "text": "Tailor:",
+          "depth": 2,
+          "name": "Tailor:"
+        },
+        {
+          "text": "Wool is excellent for structure. Linen is lighter but creases more easily. Let me take your measurements first. Stand on the platform near the dress form.",
+          "depth": 2,
+          "name": "Wool is excellent for structure. Linen is lighter but creases more easily. Let me take your measurements first. Stand on the platform near the dress form."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "Should I remove my jacket?",
+          "depth": 2,
+          "name": "Should I remove my jacket?"
+        },
+        {
+          "text": "Tailor:",
+          "depth": 2,
+          "name": "Tailor:"
+        },
+        {
+          "text": "Yes, please. I'll use the tape measure for your chest, shoulders, waist, and sleeve length. I'll mark everything with chalk on the pattern.",
+          "depth": 2,
+          "name": "Yes, please. I'll use the tape measure for your chest, shoulders, waist, and sleeve length. I'll mark everything with chalk on the pattern."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "What's that curved ruler on the table?",
+          "depth": 2,
+          "name": "What's that curved ruler on the table?"
+        },
+        {
+          "text": "Tailor:",
+          "depth": 2,
+          "name": "Tailor:"
+        },
+        {
+          "text": "A French curve — I use it for drawing smooth necklines and armholes on the pattern. The T-square is for straight lines.",
+          "depth": 2,
+          "name": "A French curve — I use it for drawing smooth necklines and armholes on the pattern. The T-square is for straight lines."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "Can you show me the fabric options?",
+          "depth": 2,
+          "name": "Can you show me the fabric options?"
+        },
+        {
+          "text": "Tailor:",
+          "depth": 2,
+          "name": "Tailor:"
+        },
+        {
+          "text": "Of course. We have cotton, silk, wool, linen, denim for casual wear, and polyester blends. For a formal suit, I'd recommend this wool. Feel the weight.",
+          "depth": 2,
+          "name": "Of course. We have cotton, silk, wool, linen, denim for casual wear, and polyester blends. For a formal suit, I'd recommend this wool. Feel the weight."
+        },
+        {
+          "text": "Customer:",
+          "depth": 2,
+          "name": "Customer:"
+        },
+        {
+          "text": "That's perfect. How long will it take?",
+          "depth": 2,
+          "name": "That's perfect. How long will it take?"
+        },
+        {
+          "text": "Tailor:",
+          "depth": 2,
+          "name": "Tailor:"
+        },
+        {
+          "text": "Two weeks. I'll cut the fabric on the cutting mat with the rotary cutter, then assemble it on the sewing machine. The bobbin and the needle do the rest.",
+          "depth": 2,
+          "name": "Two weeks. I'll cut the fabric on the cutting mat with the rotary cutter, then assemble it on the sewing machine. The bobbin and the needle do the rest."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "549:3850",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I need to repair my trousers. The zip is broke.\"",
+          "depth": 2,
+          "name": "❌ \"I need to repair my trousers. The zip is broke.\""
+        },
+        {
+          "text": "✅ \"I need to repair my trousers. The zip is broken.\"",
+          "depth": 2,
+          "name": "✅ \"I need to repair my trousers. The zip is broken.\""
+        },
+        {
+          "text": "'Break – broke – broken.' 'Broke' = past simple: 'The zip broke yesterday.' 'Broken' = past participle (used with 'is/has'): 'The zip is broken.' 'I have broken a button.' Never use the past simple form after 'is/has/have.'",
+          "depth": 2,
+          "name": "'Break – broke – broken.' 'Broke' = past simple: 'The zip broke yesterday.' 'Broken' = past participle (used with 'is/has'): 'The zip is broken.' 'I have broken a button.' Never use the past simple form after 'is/has/have.'"
+        },
+        {
+          "text": "❌ \"She sewed the button in my shirt yesterday.\"",
+          "depth": 2,
+          "name": "❌ \"She sewed the button in my shirt yesterday.\""
+        },
+        {
+          "text": "✅ \"She sewed the button on my shirt yesterday.\" / \"She sewed the button onto my shirt.\"",
+          "depth": 2,
+          "name": "✅ \"She sewed the button on my shirt yesterday.\" / \"She sewed the button onto my shirt.\""
+        },
+        {
+          "text": "Buttons go 'on' or 'onto' a garment: 'She sewed the button on my shirt.' 'On' for location (it's on the shirt). 'Onto' for the action (she attached it onto the shirt). 'In' describes something inside: 'The thread is in the needle.'",
+          "depth": 2,
+          "name": "Buttons go 'on' or 'onto' a garment: 'She sewed the button on my shirt.' 'On' for location (it's on the shirt). 'Onto' for the action (she attached it onto the shirt). 'In' describes something inside: 'The thread is in the needle.'"
+        },
+        {
+          "text": "❌ \"This dress is made of a silk. It's very expensive.\"",
+          "depth": 2,
+          "name": "❌ \"This dress is made of a silk. It's very expensive.\""
+        },
+        {
+          "text": "✅ \"This dress is made of silk. It's very expensive.\"",
+          "depth": 2,
+          "name": "✅ \"This dress is made of silk. It's very expensive.\""
+        },
+        {
+          "text": "Fabric names used as materials don't take 'a': 'made of silk', 'made of cotton', 'made of wool.' The article is used when specifying a particular type: 'a fine silk from China.' But general material: no article. 'The shirt is cotton.' 'The jacket is leather.'",
+          "depth": 2,
+          "name": "Fabric names used as materials don't take 'a': 'made of silk', 'made of cotton', 'made of wool.' The article is used when specifying a particular type: 'a fine silk from China.' But general material: no article. 'The shirt is cotton.' 'The jacket is leather.'"
+        },
+        {
+          "text": "❌ \"Can you make this trouser shorter, please?\"",
+          "depth": 2,
+          "name": "❌ \"Can you make this trouser shorter, please?\""
+        },
+        {
+          "text": "✅ \"Can you make these trousers shorter, please?\"",
+          "depth": 2,
+          "name": "✅ \"Can you make these trousers shorter, please?\""
+        },
+        {
+          "text": "'Trousers' is always plural in English: 'these trousers', 'a pair of trousers.' Same for: 'jeans', 'shorts', 'scissors', 'glasses.' 'This pair of trousers is too long.' 'These trousers are too long.' Both are correct.",
+          "depth": 2,
+          "name": "'Trousers' is always plural in English: 'these trousers', 'a pair of trousers.' Same for: 'jeans', 'shorts', 'scissors', 'glasses.' 'This pair of trousers is too long.' 'These trousers are too long.' Both are correct."
+        },
+        {
+          "text": "❌ \"He asked me that how much the suit costs.\"",
+          "depth": 2,
+          "name": "❌ \"He asked me that how much the suit costs.\""
+        },
+        {
+          "text": "✅ \"He asked me how much the suit costs.\"",
+          "depth": 2,
+          "name": "✅ \"He asked me how much the suit costs.\""
+        },
+        {
+          "text": "Indirect questions don't include 'that' before a question word. 'He asked me how much...' 'She asked where the shop was.' 'They asked when it would be ready.' The pattern is: ask + (person) + question word + statement order. Never 'asked that how' or 'asked that where.'",
+          "depth": 2,
+          "name": "Indirect questions don't include 'that' before a question word. 'He asked me how much...' 'She asked where the shop was.' 'They asked when it would be ready.' The pattern is: ask + (person) + question word + statement order. Never 'asked that how' or 'asked that where.'"
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "549:3874",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how tailoring and clothing vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how tailoring and clothing vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "tailor",
+          "depth": 2,
+          "name": "tailor"
+        },
+        {
+          "text": "tailor / tailoring",
+          "depth": 2,
+          "name": "tailor / tailoring"
+        },
+        {
+          "text": "tailor",
+          "depth": 2,
+          "name": "tailor"
+        },
+        {
+          "text": "tailored",
+          "depth": 2,
+          "name": "tailored"
+        },
+        {
+          "text": "stitch",
+          "depth": 2,
+          "name": "stitch"
+        },
+        {
+          "text": "stitch / stitching",
+          "depth": 2,
+          "name": "stitch / stitching"
+        },
+        {
+          "text": "stitch",
+          "depth": 2,
+          "name": "stitch"
+        },
+        {
+          "text": "stitched",
+          "depth": 2,
+          "name": "stitched"
+        },
+        {
+          "text": "sew",
+          "depth": 2,
+          "name": "sew"
+        },
+        {
+          "text": "sewing / seam / seamstress",
+          "depth": 2,
+          "name": "sewing / seam / seamstress"
+        },
+        {
+          "text": "sew",
+          "depth": 2,
+          "name": "sew"
+        },
+        {
+          "text": "sewn",
+          "depth": 2,
+          "name": "sewn"
+        },
+        {
+          "text": "measure",
+          "depth": 2,
+          "name": "measure"
+        },
+        {
+          "text": "measurement",
+          "depth": 2,
+          "name": "measurement"
+        },
+        {
+          "text": "measure",
+          "depth": 2,
+          "name": "measure"
+        },
+        {
+          "text": "measured / measurable",
+          "depth": 2,
+          "name": "measured / measurable"
+        },
+        {
+          "text": "alter",
+          "depth": 2,
+          "name": "alter"
+        },
+        {
+          "text": "alteration",
+          "depth": 2,
+          "name": "alteration"
+        },
+        {
+          "text": "alter",
+          "depth": 2,
+          "name": "alter"
+        },
+        {
+          "text": "altered",
+          "depth": 2,
+          "name": "altered"
+        },
+        {
+          "text": "hem",
+          "depth": 2,
+          "name": "hem"
+        },
+        {
+          "text": "hem / hemline",
+          "depth": 2,
+          "name": "hem / hemline"
+        },
+        {
+          "text": "hem",
+          "depth": 2,
+          "name": "hem"
+        },
+        {
+          "text": "hemmed",
+          "depth": 2,
+          "name": "hemmed"
+        },
+        {
+          "text": "pin",
+          "depth": 2,
+          "name": "pin"
+        },
+        {
+          "text": "pin / pinning",
+          "depth": 2,
+          "name": "pin / pinning"
+        },
+        {
+          "text": "pin",
+          "depth": 2,
+          "name": "pin"
+        },
+        {
+          "text": "pinned",
+          "depth": 2,
+          "name": "pinned"
+        },
+        {
+          "text": "press",
+          "depth": 2,
+          "name": "press"
+        },
+        {
+          "text": "press / pressing",
+          "depth": 2,
+          "name": "press / pressing"
+        },
+        {
+          "text": "press",
+          "depth": 2,
+          "name": "press"
+        },
+        {
+          "text": "pressed",
+          "depth": 2,
+          "name": "pressed"
+        },
+        {
+          "text": "fit",
+          "depth": 2,
+          "name": "fit"
+        },
+        {
+          "text": "fit / fitting",
+          "depth": 2,
+          "name": "fit / fitting"
+        },
+        {
+          "text": "fit",
+          "depth": 2,
+          "name": "fit"
+        },
+        {
+          "text": "fitted / fitting",
+          "depth": 2,
+          "name": "fitted / fitting"
+        },
+        {
+          "text": "thread",
+          "depth": 2,
+          "name": "thread"
+        },
+        {
+          "text": "thread",
+          "depth": 2,
+          "name": "thread"
+        },
+        {
+          "text": "thread",
+          "depth": 2,
+          "name": "thread"
+        },
+        {
+          "text": "threaded",
+          "depth": 2,
+          "name": "threaded"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "549:3934",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A __________ and thread are used for hand-stitching fabric.",
+          "depth": 1,
+          "name": "1. A __________ and thread are used for hand-stitching fabric."
+        },
+        {
+          "text": "2.  A __________ measure hangs from the tailor's neck for taking measurements.",
+          "depth": 1,
+          "name": "2. A __________ measure hangs from the tailor's neck for taking measurements."
+        },
+        {
+          "text": "3.  A seam __________ removes mistakes by unpicking stitches one by one.",
+          "depth": 1,
+          "name": "3. A seam __________ removes mistakes by unpicking stitches one by one."
+        },
+        {
+          "text": "4.  A __________ is a paper template showing how to cut each piece of fabric.",
+          "depth": 1,
+          "name": "4. A __________ is a paper template showing how to cut each piece of fabric."
+        },
+        {
+          "text": "5.  __________ is a warm, durable fabric commonly used for suits and winter coats.",
+          "depth": 1,
+          "name": "5. __________ is a warm, durable fabric commonly used for suits and winter coats."
+        },
+        {
+          "text": "6.  A __________ opens and closes with a slider to fasten garments.",
+          "depth": 1,
+          "name": "6. A __________ opens and closes with a slider to fasten garments."
+        },
+        {
+          "text": "7.  A __________ is a small fold in fabric that shapes it to follow body curves.",
+          "depth": 1,
+          "name": "7. A __________ is a small fold in fabric that shapes it to follow body curves."
+        },
+        {
+          "text": "8.  The __________ is the finished bottom edge of a dress or pair of trousers.",
+          "depth": 1,
+          "name": "8. The __________ is the finished bottom edge of a dress or pair of trousers."
+        },
+        {
+          "text": "9.  A __________ protects the finger when pushing a needle through thick fabric.",
+          "depth": 1,
+          "name": "9. A __________ protects the finger when pushing a needle through thick fabric."
+        },
+        {
+          "text": "10. __________ is a tough fabric used to make jeans.",
+          "depth": 1,
+          "name": "10. __________ is a tough fabric used to make jeans."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. needle  2. tape  3. ripper  4. pattern  5. Wool  6. zipper  7. dart  8. hem  9. thimble  10. Denim",
+          "depth": 2,
+          "name": "1. needle 2. tape 3. ripper 4. pattern 5. Wool 6. zipper 7. dart 8. hem 9. thimble 10. Denim"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "549:3952",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Savile Row",
+          "depth": 2,
+          "name": "Savile Row"
+        },
+        {
+          "text": "Savile Row in London is the world's most famous street for bespoke tailoring. A 'Savile Row suit' implies the highest quality. 'Bespoke' is a British term meaning custom-made to order — it originally meant 'spoken for' (already reserved by a customer).",
+          "depth": 2,
+          "name": "Savile Row in London is the world's most famous street for bespoke tailoring. A 'Savile Row suit' implies the highest quality. 'Bespoke' is a British term meaning custom-made to order — it originally meant 'spoken for' (already reserved by a customer)."
+        },
+        {
+          "text": "Tailor vs Seamstress vs Dressmaker",
+          "depth": 2,
+          "name": "Tailor vs Seamstress vs Dressmaker"
+        },
+        {
+          "text": "'Tailor' traditionally referred to someone who makes men's clothing (suits, jackets). 'Seamstress' = a woman who sews. 'Dressmaker' = someone who makes women's clothes. Today, 'tailor' is used for all genders and all garment types.",
+          "depth": 2,
+          "name": "'Tailor' traditionally referred to someone who makes men's clothing (suits, jackets). 'Seamstress' = a woman who sews. 'Dressmaker' = someone who makes women's clothes. Today, 'tailor' is used for all genders and all garment types."
+        },
+        {
+          "text": "Off-the-Peg vs Bespoke vs Made-to-Measure",
+          "depth": 2,
+          "name": "Off-the-Peg vs Bespoke vs Made-to-Measure"
+        },
+        {
+          "text": "'Off the peg' (BrE) / 'off the rack' (AmE) = ready-made in standard sizes. 'Made to measure' = adjusted to your measurements from a standard pattern. 'Bespoke' = created entirely from scratch to your specifications — the most expensive option.",
+          "depth": 2,
+          "name": "'Off the peg' (BrE) / 'off the rack' (AmE) = ready-made in standard sizes. 'Made to measure' = adjusted to your measurements from a standard pattern. 'Bespoke' = created entirely from scratch to your specifications — the most expensive option."
+        },
+        {
+          "text": "Sewing Vocabulary",
+          "depth": 2,
+          "name": "Sewing Vocabulary"
+        },
+        {
+          "text": "'Sew' /səʊ/ — past: 'sewed', past participle: 'sewn' (not 'sew/sowed'). Don't confuse with 'sow' /saʊ/ (plant seeds). 'Seam' = the line where two pieces of fabric are joined. 'Hem' = the folded edge. 'Dart' = a small fold stitched to shape a garment.",
+          "depth": 2,
+          "name": "'Sew' /səʊ/ — past: 'sewed', past participle: 'sewn' (not 'sew/sowed'). Don't confuse with 'sow' /saʊ/ (plant seeds). 'Seam' = the line where two pieces of fabric are joined. 'Hem' = the folded edge. 'Dart' = a small fold stitched to shape a garment."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "549:3968",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "tailor",
+          "depth": 2,
+          "name": "tailor"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "master ~, ~ shop, bespoke ~",
+          "depth": 2,
+          "name": "master ~, ~ shop, bespoke ~"
+        },
+        {
+          "text": "fabric",
+          "depth": 2,
+          "name": "fabric"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ choice, ~ roll, ~ pattern",
+          "depth": 2,
+          "name": "~ choice, ~ roll, ~ pattern"
+        },
+        {
+          "text": "needle",
+          "depth": 2,
+          "name": "needle"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ and thread, sewing ~, ~ eye",
+          "depth": 2,
+          "name": "~ and thread, sewing ~, ~ eye"
+        },
+        {
+          "text": "thread",
+          "depth": 2,
+          "name": "thread"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "cotton ~, ~ spool, ~ colour",
+          "depth": 2,
+          "name": "cotton ~, ~ spool, ~ colour"
+        },
+        {
+          "text": "seam",
+          "depth": 2,
+          "name": "seam"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "side ~, ~ allowance, ~ ripper",
+          "depth": 2,
+          "name": "side ~, ~ allowance, ~ ripper"
+        },
+        {
+          "text": "button",
+          "depth": 2,
+          "name": "button"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ hole, sew on a ~, ~ fastening",
+          "depth": 2,
+          "name": "~ hole, sew on a ~, ~ fastening"
+        },
+        {
+          "text": "zip",
+          "depth": 2,
+          "name": "zip"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "broken ~, ~ fastener, ~ pull",
+          "depth": 2,
+          "name": "broken ~, ~ fastener, ~ pull"
+        },
+        {
+          "text": "hem",
+          "depth": 2,
+          "name": "hem"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "trouser ~, ~ length, ~ tape",
+          "depth": 2,
+          "name": "trouser ~, ~ length, ~ tape"
+        },
+        {
+          "text": "lining",
+          "depth": 2,
+          "name": "lining"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "jacket ~, silk ~, ~ fabric",
+          "depth": 2,
+          "name": "jacket ~, silk ~, ~ fabric"
+        },
+        {
+          "text": "thimble",
+          "depth": 2,
+          "name": "thimble"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "~ finger, sewing ~, silver ~",
+          "depth": 2,
+          "name": "~ finger, sewing ~, silver ~"
+        }
+      ]
+    }
+  }
+}

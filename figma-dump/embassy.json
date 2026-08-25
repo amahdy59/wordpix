@@ -1,0 +1,1692 @@
+{
+  "unitId": "embassy",
+  "name": "The Embassy",
+  "subtopics": [
+    {
+      "id": "building-features",
+      "title": "Building Features",
+      "wordIds": [
+        "embassy-building",
+        "flag-pole",
+        "national-flag",
+        "security-gate",
+        "guard-booth",
+        "reception-hall",
+        "waiting-room",
+        "conference-room",
+        "garden",
+        "courtyard"
+      ]
+    },
+    {
+      "id": "documents",
+      "title": "Documents",
+      "wordIds": [
+        "passport",
+        "visa",
+        "application-form",
+        "identity-card",
+        "birth-certificate",
+        "photograph",
+        "stamp",
+        "seal",
+        "letter",
+        "envelope"
+      ]
+    },
+    {
+      "id": "office-equipment",
+      "title": "Office Equipment",
+      "wordIds": [
+        "desk",
+        "computer",
+        "printer",
+        "telephone",
+        "fax-machine",
+        "scanner",
+        "filing-cabinet",
+        "safe",
+        "shredder",
+        "laminator"
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "wordIds": [
+        "security-camera",
+        "metal-detector",
+        "x-ray-machine",
+        "security-guard",
+        "badge",
+        "visitor-pass",
+        "turnstile",
+        "alarm-system",
+        "intercom",
+        "bulletproof-glass"
+      ]
+    },
+    {
+      "id": "diplomatic-roles",
+      "title": "Diplomatic Roles",
+      "wordIds": [
+        "ambassador",
+        "consul",
+        "diplomat",
+        "secretary",
+        "translator",
+        "protocol-officer",
+        "cultural-attach",
+        "legal-advisor",
+        "driver",
+        "receptionist"
+      ]
+    },
+    {
+      "id": "cultural-items",
+      "title": "Cultural Items",
+      "wordIds": [
+        "national-emblem",
+        "map",
+        "globe",
+        "clock-with-time-zones",
+        "painting",
+        "sculpture",
+        "book",
+        "gift",
+        "certificate",
+        "plaque",
+        "application",
+        "identification",
+        "form",
+        "interpreter",
+        "guard",
+        "clerk",
+        "attach",
+        "flag",
+        "reception",
+        "ceremony",
+        "treaty",
+        "negotiation",
+        "alliance",
+        "summit"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "embassy-building",
+      "label": "Embassy Building",
+      "ipa": "/ˈɛmbəsi ˈbɪldɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "45:8475"
+    },
+    {
+      "kind": "card",
+      "id": "flag-pole",
+      "label": "Flag Pole",
+      "ipa": "/flæɡ poʊl/",
+      "cefr": "B2",
+      "imageNodeId": "45:8479"
+    },
+    {
+      "kind": "card",
+      "id": "national-flag",
+      "label": "National Flag",
+      "ipa": "/ˈnæʃənəl flæɡ/",
+      "cefr": "B2",
+      "imageNodeId": "45:8483"
+    },
+    {
+      "kind": "card",
+      "id": "security-gate",
+      "label": "Security Gate",
+      "ipa": "/sɪˈkjʊərɪti ɡeɪt/",
+      "cefr": "B2",
+      "imageNodeId": "45:8487"
+    },
+    {
+      "kind": "card",
+      "id": "guard-booth",
+      "label": "Guard Booth",
+      "ipa": "/ɡɑːrd buːθ/",
+      "cefr": "B2",
+      "imageNodeId": "45:8491"
+    },
+    {
+      "kind": "card",
+      "id": "reception-hall",
+      "label": "Reception Hall",
+      "ipa": "/rɪˈsɛpʃən hɔːl/",
+      "cefr": "B2",
+      "imageNodeId": "45:8495"
+    },
+    {
+      "kind": "card",
+      "id": "waiting-room",
+      "label": "Waiting Room",
+      "ipa": "/ˈweɪtɪŋ ruːm/",
+      "cefr": "B2",
+      "imageNodeId": "45:8499"
+    },
+    {
+      "kind": "card",
+      "id": "conference-room",
+      "label": "Conference Room",
+      "ipa": "/ˈkɒnfərəns ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "45:8503"
+    },
+    {
+      "kind": "card",
+      "id": "garden",
+      "label": "Garden",
+      "ipa": "/ˈɡɑːrdən/",
+      "cefr": "B1",
+      "imageNodeId": "45:8507"
+    },
+    {
+      "kind": "card",
+      "id": "courtyard",
+      "label": "Courtyard",
+      "ipa": "/ˈkɔːrtˌjɑːrd/",
+      "cefr": "B1",
+      "imageNodeId": "45:8511"
+    },
+    {
+      "kind": "card",
+      "id": "passport",
+      "label": "Passport",
+      "ipa": "/ˈpæspɔːrt/",
+      "cefr": "B1",
+      "imageNodeId": "45:8520"
+    },
+    {
+      "kind": "card",
+      "id": "visa",
+      "label": "Visa",
+      "ipa": "/ˈviːzə/",
+      "cefr": "B1",
+      "imageNodeId": "45:8524"
+    },
+    {
+      "kind": "card",
+      "id": "application-form",
+      "label": "Application Form",
+      "ipa": "/ˌæplɪˈkeɪʃən fɔːrm/",
+      "cefr": "C1",
+      "imageNodeId": "45:8528"
+    },
+    {
+      "kind": "card",
+      "id": "identity-card",
+      "label": "Identity Card",
+      "ipa": "/aɪˈdɛntɪti kɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "45:8532"
+    },
+    {
+      "kind": "card",
+      "id": "birth-certificate",
+      "label": "Birth Certificate",
+      "ipa": "/bɜːrθ sərˈtɪfɪkɪt/",
+      "cefr": "C1",
+      "imageNodeId": "45:8536"
+    },
+    {
+      "kind": "card",
+      "id": "photograph",
+      "label": "Photograph",
+      "ipa": "/ˈfoʊtəˌɡræf/",
+      "cefr": "B2",
+      "imageNodeId": "45:8540"
+    },
+    {
+      "kind": "card",
+      "id": "stamp",
+      "label": "Stamp",
+      "ipa": "/stæmp/",
+      "cefr": "B1",
+      "imageNodeId": "45:8544"
+    },
+    {
+      "kind": "card",
+      "id": "seal",
+      "label": "Seal",
+      "ipa": "/siːl/",
+      "cefr": "B1",
+      "imageNodeId": "45:8548"
+    },
+    {
+      "kind": "card",
+      "id": "letter",
+      "label": "Letter",
+      "ipa": "/ˈlɛtər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8552"
+    },
+    {
+      "kind": "card",
+      "id": "envelope",
+      "label": "Envelope",
+      "ipa": "/ˈɛnvəˌloʊp/",
+      "cefr": "B1",
+      "imageNodeId": "45:8556"
+    },
+    {
+      "kind": "card",
+      "id": "desk",
+      "label": "Desk",
+      "ipa": "/dɛsk/",
+      "cefr": "B1",
+      "imageNodeId": "45:8565"
+    },
+    {
+      "kind": "card",
+      "id": "computer",
+      "label": "Computer",
+      "ipa": "/kəmˈpjuːtər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8569"
+    },
+    {
+      "kind": "card",
+      "id": "printer",
+      "label": "Printer",
+      "ipa": "/ˈprɪntər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8573"
+    },
+    {
+      "kind": "card",
+      "id": "telephone",
+      "label": "Telephone",
+      "ipa": "/ˈtɛlɪˌfoʊn/",
+      "cefr": "B1",
+      "imageNodeId": "45:8577"
+    },
+    {
+      "kind": "card",
+      "id": "fax-machine",
+      "label": "Fax Machine",
+      "ipa": "/fæks məˈʃiːn/",
+      "cefr": "B2",
+      "imageNodeId": "45:8581"
+    },
+    {
+      "kind": "card",
+      "id": "scanner",
+      "label": "Scanner",
+      "ipa": "/ˈskænər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8585"
+    },
+    {
+      "kind": "card",
+      "id": "filing-cabinet",
+      "label": "Filing Cabinet",
+      "ipa": "/ˈfaɪlɪŋ ˈkæbɪnɪt/",
+      "cefr": "B2",
+      "imageNodeId": "45:8589"
+    },
+    {
+      "kind": "card",
+      "id": "safe",
+      "label": "Safe",
+      "ipa": "/seɪf/",
+      "cefr": "B1",
+      "imageNodeId": "45:8593"
+    },
+    {
+      "kind": "card",
+      "id": "shredder",
+      "label": "Shredder",
+      "ipa": "/ˈʃrɛdər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8597"
+    },
+    {
+      "kind": "card",
+      "id": "laminator",
+      "label": "Laminator",
+      "ipa": "/ˈlæmɪˌneɪtər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8601"
+    },
+    {
+      "kind": "card",
+      "id": "security-camera",
+      "label": "Security Camera",
+      "ipa": "/sɪˈkjʊərɪti ˈkæmərə/",
+      "cefr": "C1",
+      "imageNodeId": "45:8610"
+    },
+    {
+      "kind": "card",
+      "id": "metal-detector",
+      "label": "Metal Detector",
+      "ipa": "/ˈmɛtəl dɪˈtɛktər/",
+      "cefr": "B2",
+      "imageNodeId": "45:8614"
+    },
+    {
+      "kind": "card",
+      "id": "x-ray-machine",
+      "label": "X-Ray Machine",
+      "ipa": "/ˈɛksˌreɪ məˈʃiːn/",
+      "cefr": "C1",
+      "imageNodeId": "45:8618"
+    },
+    {
+      "kind": "card",
+      "id": "security-guard",
+      "label": "Security Guard",
+      "ipa": "/sɪˈkjʊərɪti ɡɑːrd/",
+      "cefr": "B2",
+      "imageNodeId": "45:8622"
+    },
+    {
+      "kind": "card",
+      "id": "badge",
+      "label": "Badge",
+      "ipa": "/bædʒ/",
+      "cefr": "B1",
+      "imageNodeId": "45:8626"
+    },
+    {
+      "kind": "card",
+      "id": "visitor-pass",
+      "label": "Visitor Pass",
+      "ipa": "/ˈvɪzɪtər pæs/",
+      "cefr": "B2",
+      "imageNodeId": "45:8630"
+    },
+    {
+      "kind": "card",
+      "id": "turnstile",
+      "label": "Turnstile",
+      "ipa": "/ˈtɜːrnˌstaɪl/",
+      "cefr": "B1",
+      "imageNodeId": "45:8634"
+    },
+    {
+      "kind": "card",
+      "id": "alarm-system",
+      "label": "Alarm System",
+      "ipa": "/əˈlɑːrm ˈsɪstəm/",
+      "cefr": "B2",
+      "imageNodeId": "45:8638"
+    },
+    {
+      "kind": "card",
+      "id": "intercom",
+      "label": "Intercom",
+      "ipa": "/ˈɪntərˌkɒm/",
+      "cefr": "B1",
+      "imageNodeId": "45:8642"
+    },
+    {
+      "kind": "card",
+      "id": "bulletproof-glass",
+      "label": "Bulletproof Glass",
+      "ipa": "/ˈbʊlɪtˌpruːf ɡlæs/",
+      "cefr": "C1",
+      "imageNodeId": "45:8646"
+    },
+    {
+      "kind": "card",
+      "id": "ambassador",
+      "label": "Ambassador",
+      "ipa": "/æmˈbæsədər/",
+      "cefr": "B2",
+      "imageNodeId": "45:8655"
+    },
+    {
+      "kind": "card",
+      "id": "consul",
+      "label": "Consul",
+      "ipa": "/ˈkɒnsəl/",
+      "cefr": "B1",
+      "imageNodeId": "45:8659"
+    },
+    {
+      "kind": "card",
+      "id": "diplomat",
+      "label": "Diplomat",
+      "ipa": "/ˈdɪpləˌmæt/",
+      "cefr": "B1",
+      "imageNodeId": "45:8663"
+    },
+    {
+      "kind": "card",
+      "id": "secretary",
+      "label": "Secretary",
+      "ipa": "/ˈsɛkrɪˌtɛri/",
+      "cefr": "B1",
+      "imageNodeId": "45:8667"
+    },
+    {
+      "kind": "card",
+      "id": "translator",
+      "label": "Translator",
+      "ipa": "/trænsˈleɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "45:8671"
+    },
+    {
+      "kind": "card",
+      "id": "protocol-officer",
+      "label": "Protocol Officer",
+      "ipa": "/ˈproʊtəˌkɒl ˈɒfɪsər/",
+      "cefr": "C1",
+      "imageNodeId": "45:8675"
+    },
+    {
+      "kind": "card",
+      "id": "cultural-attach",
+      "label": "Cultural Attaché",
+      "ipa": "/ˈkʌltʃərəl əˈtæʃeɪ/",
+      "cefr": "C1",
+      "imageNodeId": "45:8679"
+    },
+    {
+      "kind": "card",
+      "id": "legal-advisor",
+      "label": "Legal Advisor",
+      "ipa": "/ˈliːɡəl ədˈvaɪzər/",
+      "cefr": "B2",
+      "imageNodeId": "45:8683"
+    },
+    {
+      "kind": "card",
+      "id": "driver",
+      "label": "Driver",
+      "ipa": "/ˈdraɪvər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8687"
+    },
+    {
+      "kind": "card",
+      "id": "receptionist",
+      "label": "Receptionist",
+      "ipa": "/rɪˈsɛpʃənɪst/",
+      "cefr": "B2",
+      "imageNodeId": "45:8691"
+    },
+    {
+      "kind": "card",
+      "id": "national-emblem",
+      "label": "National Emblem",
+      "ipa": "/ˈnæʃənəl ˈɛmbləm/",
+      "cefr": "C1",
+      "imageNodeId": "45:8700"
+    },
+    {
+      "kind": "card",
+      "id": "map",
+      "label": "Map",
+      "ipa": "/mæp/",
+      "cefr": "B1",
+      "imageNodeId": "45:8704"
+    },
+    {
+      "kind": "card",
+      "id": "globe",
+      "label": "Globe",
+      "ipa": "/ɡloʊb/",
+      "cefr": "B1",
+      "imageNodeId": "45:8708"
+    },
+    {
+      "kind": "card",
+      "id": "clock-with-time-zones",
+      "label": "Clock with Time Zones",
+      "ipa": "/klɒk wɪð taɪm zoʊnz/",
+      "cefr": "C1",
+      "imageNodeId": "45:8712"
+    },
+    {
+      "kind": "card",
+      "id": "painting",
+      "label": "Painting",
+      "ipa": "/ˈpeɪntɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "45:8716"
+    },
+    {
+      "kind": "card",
+      "id": "sculpture",
+      "label": "Sculpture",
+      "ipa": "/ˈskʌlptʃər/",
+      "cefr": "B1",
+      "imageNodeId": "45:8720"
+    },
+    {
+      "kind": "card",
+      "id": "book",
+      "label": "Book",
+      "ipa": "/bʊk/",
+      "cefr": "B1",
+      "imageNodeId": "45:8724"
+    },
+    {
+      "kind": "card",
+      "id": "gift",
+      "label": "Gift",
+      "ipa": "/ɡɪft/",
+      "cefr": "B1",
+      "imageNodeId": "45:8728"
+    },
+    {
+      "kind": "card",
+      "id": "certificate",
+      "label": "Certificate",
+      "ipa": "/sərˈtɪfɪkɪt/",
+      "cefr": "B2",
+      "imageNodeId": "45:8732"
+    },
+    {
+      "kind": "card",
+      "id": "plaque",
+      "label": "Plaque",
+      "ipa": "/plæk/",
+      "cefr": "B1",
+      "imageNodeId": "45:8736"
+    },
+    {
+      "kind": "card",
+      "id": "application",
+      "label": "Application",
+      "ipa": "/ˌæplɪˈkeɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "39:7091"
+    },
+    {
+      "kind": "card",
+      "id": "identification",
+      "label": "Identification",
+      "ipa": "/aɪˌdɛntɪfɪˈkeɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "39:7099"
+    },
+    {
+      "kind": "card",
+      "id": "form",
+      "label": "Form",
+      "ipa": "/fɔːrm/",
+      "cefr": "B1",
+      "imageNodeId": "39:7103"
+    },
+    {
+      "kind": "card",
+      "id": "interpreter",
+      "label": "Interpreter",
+      "ipa": "/ɪnˈtɜːrprɪtər/",
+      "cefr": "B2",
+      "imageNodeId": "39:7130"
+    },
+    {
+      "kind": "card",
+      "id": "guard",
+      "label": "Guard",
+      "ipa": "/ɡɑːrd/",
+      "cefr": "B1",
+      "imageNodeId": "39:7134"
+    },
+    {
+      "kind": "card",
+      "id": "clerk",
+      "label": "Clerk",
+      "ipa": "/klɜːrk/",
+      "cefr": "B1",
+      "imageNodeId": "39:7138"
+    },
+    {
+      "kind": "card",
+      "id": "attach",
+      "label": "Attaché",
+      "ipa": "/əˈtæʃeɪ/",
+      "cefr": "B1",
+      "imageNodeId": "39:7142"
+    },
+    {
+      "kind": "card",
+      "id": "flag",
+      "label": "Flag",
+      "ipa": "/flæɡ/",
+      "cefr": "B1",
+      "imageNodeId": "39:7153"
+    },
+    {
+      "kind": "card",
+      "id": "reception",
+      "label": "Reception",
+      "ipa": "/rɪˈsɛpʃən/",
+      "cefr": "B1",
+      "imageNodeId": "39:7161"
+    },
+    {
+      "kind": "card",
+      "id": "ceremony",
+      "label": "Ceremony",
+      "ipa": "/ˈsɛrɪˌmoʊni/",
+      "cefr": "B1",
+      "imageNodeId": "39:7165"
+    },
+    {
+      "kind": "card",
+      "id": "treaty",
+      "label": "Treaty",
+      "ipa": "/ˈtriːti/",
+      "cefr": "B1",
+      "imageNodeId": "39:7169"
+    },
+    {
+      "kind": "card",
+      "id": "negotiation",
+      "label": "Negotiation",
+      "ipa": "/nɪˌɡoʊʃiˈeɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "39:7173"
+    },
+    {
+      "kind": "card",
+      "id": "alliance",
+      "label": "Alliance",
+      "ipa": "/əˈlaɪəns/",
+      "cefr": "B1",
+      "imageNodeId": "39:7177"
+    },
+    {
+      "kind": "card",
+      "id": "summit",
+      "label": "Summit",
+      "ipa": "/ˈsʌmɪt/",
+      "cefr": "B1",
+      "imageNodeId": "39:7181"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "553:3",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "553:5",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2 · Topic: The Embassy",
+          "depth": 1,
+          "name": "Level: B2 · Topic: The Embassy"
+        },
+        {
+          "text": "Sovereign Ground in a Foreign City — Inside an Embassy\n\nAn embassy is a nation's official representation in another country. It is simultaneously a government office, a legal aid centre, and a cultural outpost. For citizens living or travelling abroad, it is the closest thing to home territory — because, under international law, the embassy building and its grounds are treated as sovereign space.\n\nThe embassy building is typically a substantial structure in the capital city's diplomatic quarter. A national flag flies from a flag pole at the entrance. A national emblem is displayed above the door. A security gate controls access. A guard booth houses a security guard who checks identification before visitors enter. A metal detector and an X-ray machine screen bags and belongings. A turnstile counts entries. Security cameras record all movement. A bulletproof glass partition separates staff from the public in high-risk locations. An alarm system and an intercom connect every room to the security office.\n\nInside, the reception hall is the first space visitors see. A receptionist directs them to the waiting room, where rows of chairs face a ticket-number display. The atmosphere is formal and quiet — more like a government ministry than a commercial office. A clock with time zones shows the hour in both countries simultaneously. A painting and a sculpture reflect national culture. A map and a globe sit in the corridor. A book — often a gift edition of the country's constitution or literary heritage — is displayed in a glass case.\n\nThe consular section handles the practical business. Citizens abroad apply for a new passport, renew an identity card, or register a birth certificate. Foreign nationals submit a visa application form with a photograph, supporting documents, and a fee. A clerk reviews each application. A stamp and a seal authenticate documents. A letter of approval or refusal is placed in an envelope and posted or collected. A laminator seals ID cards. A printer produces certificates. A scanner digitises documents. A fax machine — still in use in diplomacy — transmits confidential papers. A filing cabinet and a safe store sensitive records. A shredder destroys outdated or classified material.\n\nThe diplomatic section operates at a higher level. An ambassador — the head of mission — represents the home government. A consul manages citizen services. A diplomat conducts negotiations. A cultural attaché promotes arts, language, and education. A protocol officer ensures that ceremonies and meetings follow diplomatic etiquette. A translator and an interpreter bridge languages during meetings. A legal advisor handles treaties and international agreements. A secretary manages correspondence and scheduling. A driver provides secure transport.\n\nThe conference room hosts formal meetings — treaty negotiations, alliance discussions, and summit preparation. Flags of both nations stand at either end of the table. A certificate or a plaque commemorates past agreements. A gift — often exchanged between visiting dignitaries — is displayed in the reception hall.\n\nFor citizens in crisis — lost passports, legal trouble, natural disasters, or conflict zones — the embassy is a lifeline. Emergency consular assistance operates around the clock. The embassy can issue temporary travel documents, contact families, and coordinate with local authorities.\n\nDiplomacy is slow, formal, and deliberate by design. Every ceremony, every negotiation, every stamped form represents a relationship between two nations — maintained not by technology but by the people who staff these buildings.",
+          "depth": 1,
+          "name": "Sovereign Ground in a Foreign City — Inside an Embassy An embassy is a nation's official representation in another country. It is simultaneously a government office, a legal aid centre, and a cultural outpost. For citizens living or travelling abroad, it is the closest thing to home territory — because, under international law, the embassy building and its grounds are treated as sovereign space. The embassy building is typically a substantial structure in the capital city's diplomatic quarter. A national flag flies from a flag pole at the entrance. A national emblem is displayed above the door. A security gate controls access. A guard booth houses a security guard who checks identification before visitors enter. A metal detector and an X-ray machine screen bags and belongings. A turnstile counts entries. Security cameras record all movement. A bulletproof glass partition separates staff from the public in high-risk locations. An alarm system and an intercom connect every room to the security office. Inside, the reception hall is the first space visitors see. A receptionist directs them to the waiting room, where rows of chairs face a ticket-number display. The atmosphere is formal and quiet — more like a government ministry than a commercial office. A clock with time zones shows the hour in both countries simultaneously. A painting and a sculpture reflect national culture. A map and a globe sit in the corridor. A book — often a gift edition of the country's constitution or literary heritage — is displayed in a glass case. The consular section handles the practical business. Citizens abroad apply for a new passport, renew an identity card, or register a birth certificate. Foreign nationals submit a visa application form with a photograph, supporting documents, and a fee. A clerk reviews each application. A stamp and a seal authenticate documents. A letter of approval or refusal is placed in an envelope and posted or collected. A laminator seals ID cards. A printer produces certificates. A scanner digitises documents. A fax machine — still in use in diplomacy — transmits confidential papers. A filing cabinet and a safe store sensitive records. A shredder destroys outdated or classified material. The diplomatic section operates at a higher level. An ambassador — the head of mission — represents the home government. A consul manages citizen services. A diplomat conducts negotiations. A cultural attaché promotes arts, language, and education. A protocol officer ensures that ceremonies and meetings follow diplomatic etiquette. A translator and an interpreter bridge languages during meetings. A legal advisor handles treaties and international agreements. A secretary manages correspondence and scheduling. A driver provides secure transport. The conference room hosts formal meetings — treaty negotiations, alliance discussions, and summit preparation. Flags of both nations stand at either end of the table. A certificate or a plaque commemorates past agreements. A gift — often exchanged between visiting dignitaries — is displayed in the reception hall. For citizens in crisis — lost passports, legal trouble, natural disasters, or conflict zones — the embassy is a lifeline. Emergency consular assistance operates around the clock. The embassy can issue temporary travel documents, contact families, and coordinate with local authorities. Diplomacy is slow, formal, and deliberate by design. Every ceremony, every negotiation, every stamped form represents a relationship between two nations — maintained not by technology but by the people who staff these buildings."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. What does it mean that an embassy is treated as 'sovereign space'? How does security reflect this?",
+          "depth": 1,
+          "name": "1. What does it mean that an embassy is treated as 'sovereign space'? How does security reflect this?"
+        },
+        {
+          "text": "2. Describe the consular section's work. What services does it provide to citizens abroad?",
+          "depth": 1,
+          "name": "2. Describe the consular section's work. What services does it provide to citizens abroad?"
+        },
+        {
+          "text": "3. What are the roles of the ambassador, consul, cultural attaché, and protocol officer?",
+          "depth": 1,
+          "name": "3. What are the roles of the ambassador, consul, cultural attaché, and protocol officer?"
+        },
+        {
+          "text": "4. How does the embassy assist citizens in crisis situations? Give examples from the passage.",
+          "depth": 1,
+          "name": "4. How does the embassy assist citizens in crisis situations? Give examples from the passage."
+        },
+        {
+          "text": "5. Why does the passage describe diplomacy as 'slow, formal, and deliberate by design'? Do you agree?",
+          "depth": 1,
+          "name": "5. Why does the passage describe diplomacy as 'slow, formal, and deliberate by design'? Do you agree?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "553:18",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "cut through red tape",
+          "depth": 2,
+          "name": "cut through red tape"
+        },
+        {
+          "text": "overcome unnecessary bureaucracy or official rules",
+          "depth": 2,
+          "name": "overcome unnecessary bureaucracy or official rules"
+        },
+        {
+          "text": "\"The consul helped the family cut through the red tape — their visa application was processed in days instead of weeks.\"",
+          "depth": 2,
+          "name": "\"The consul helped the family cut through the red tape — their visa application was processed in days instead of weeks.\""
+        },
+        {
+          "text": "break diplomatic ties",
+          "depth": 2,
+          "name": "break diplomatic ties"
+        },
+        {
+          "text": "end a formal relationship between countries",
+          "depth": 2,
+          "name": "end a formal relationship between countries"
+        },
+        {
+          "text": "\"When a country breaks diplomatic ties, it closes its embassy and withdraws the ambassador.\"",
+          "depth": 2,
+          "name": "\"When a country breaks diplomatic ties, it closes its embassy and withdraws the ambassador.\""
+        },
+        {
+          "text": "behind closed doors",
+          "depth": 2,
+          "name": "behind closed doors"
+        },
+        {
+          "text": "in private; secretly",
+          "depth": 2,
+          "name": "in private; secretly"
+        },
+        {
+          "text": "\"The treaty negotiation took place behind closed doors in the embassy's conference room.\"",
+          "depth": 2,
+          "name": "\"The treaty negotiation took place behind closed doors in the embassy's conference room.\""
+        },
+        {
+          "text": "extend an olive branch",
+          "depth": 2,
+          "name": "extend an olive branch"
+        },
+        {
+          "text": "make a peace offering; try to end a disagreement",
+          "depth": 2,
+          "name": "make a peace offering; try to end a disagreement"
+        },
+        {
+          "text": "\"The ambassador extended an olive branch by inviting the foreign minister to a ceremony at the embassy.\"",
+          "depth": 2,
+          "name": "\"The ambassador extended an olive branch by inviting the foreign minister to a ceremony at the embassy.\""
+        },
+        {
+          "text": "on foreign soil",
+          "depth": 2,
+          "name": "on foreign soil"
+        },
+        {
+          "text": "in another country",
+          "depth": 2,
+          "name": "in another country"
+        },
+        {
+          "text": "\"The embassy is your government's representative on foreign soil — it's where you go when you need help abroad.\"",
+          "depth": 2,
+          "name": "\"The embassy is your government's representative on foreign soil — it's where you go when you need help abroad.\""
+        },
+        {
+          "text": "play your cards right",
+          "depth": 2,
+          "name": "play your cards right"
+        },
+        {
+          "text": "act cleverly to get what you want",
+          "depth": 2,
+          "name": "act cleverly to get what you want"
+        },
+        {
+          "text": "\"If you play your cards right with the application form, the consul may approve your visa faster.\"",
+          "depth": 2,
+          "name": "\"If you play your cards right with the application form, the consul may approve your visa faster.\""
+        },
+        {
+          "text": "open doors",
+          "depth": 2,
+          "name": "open doors"
+        },
+        {
+          "text": "create opportunities or remove obstacles",
+          "depth": 2,
+          "name": "create opportunities or remove obstacles"
+        },
+        {
+          "text": "\"A diplomatic passport opens doors — the security gate process is much faster for accredited diplomats.\"",
+          "depth": 2,
+          "name": "\"A diplomatic passport opens doors — the security gate process is much faster for accredited diplomats.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "553:50",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A citizen visiting the embassy to apply for a new passport after losing the original abroad",
+          "depth": 1,
+          "name": "Scene: A citizen visiting the embassy to apply for a new passport after losing the original abroad"
+        },
+        {
+          "text": "Receptionist:",
+          "depth": 2,
+          "name": "Receptionist:"
+        },
+        {
+          "text": "Good morning. Do you have an appointment? Please show your visitor pass to the security guard at the gate.",
+          "depth": 2,
+          "name": "Good morning. Do you have an appointment? Please show your visitor pass to the security guard at the gate."
+        },
+        {
+          "text": "Citizen:",
+          "depth": 2,
+          "name": "Citizen:"
+        },
+        {
+          "text": "Yes, I booked online. I need to apply for a replacement passport — mine was stolen.",
+          "depth": 2,
+          "name": "Yes, I booked online. I need to apply for a replacement passport — mine was stolen."
+        },
+        {
+          "text": "Receptionist:",
+          "depth": 2,
+          "name": "Receptionist:"
+        },
+        {
+          "text": "I'm sorry to hear that. Take a seat in the waiting room. A clerk from the consular section will call you shortly.",
+          "depth": 2,
+          "name": "I'm sorry to hear that. Take a seat in the waiting room. A clerk from the consular section will call you shortly."
+        },
+        {
+          "text": "Clerk:",
+          "depth": 2,
+          "name": "Clerk:"
+        },
+        {
+          "text": "Please come to window three. I'll need your identity card, a birth certificate, and a photograph for the application form.",
+          "depth": 2,
+          "name": "Please come to window three. I'll need your identity card, a birth certificate, and a photograph for the application form."
+        },
+        {
+          "text": "Citizen:",
+          "depth": 2,
+          "name": "Citizen:"
+        },
+        {
+          "text": "I have the photograph and my identity card, but the birth certificate is at home. Can I send a scanned copy?",
+          "depth": 2,
+          "name": "I have the photograph and my identity card, but the birth certificate is at home. Can I send a scanned copy?"
+        },
+        {
+          "text": "Clerk:",
+          "depth": 2,
+          "name": "Clerk:"
+        },
+        {
+          "text": "We can accept a scanned copy by email, but the original must be presented before we issue the passport. I'll stamp the form to confirm today's visit.",
+          "depth": 2,
+          "name": "We can accept a scanned copy by email, but the original must be presented before we issue the passport. I'll stamp the form to confirm today's visit."
+        },
+        {
+          "text": "Citizen:",
+          "depth": 2,
+          "name": "Citizen:"
+        },
+        {
+          "text": "How long will the new passport take?",
+          "depth": 2,
+          "name": "How long will the new passport take?"
+        },
+        {
+          "text": "Clerk:",
+          "depth": 2,
+          "name": "Clerk:"
+        },
+        {
+          "text": "About ten working days. We'll issue a temporary travel document today so you can return home. The consul needs to sign the seal.",
+          "depth": 2,
+          "name": "About ten working days. We'll issue a temporary travel document today so you can return home. The consul needs to sign the seal."
+        },
+        {
+          "text": "Citizen:",
+          "depth": 2,
+          "name": "Citizen:"
+        },
+        {
+          "text": "Is there a fee?",
+          "depth": 2,
+          "name": "Is there a fee?"
+        },
+        {
+          "text": "Clerk:",
+          "depth": 2,
+          "name": "Clerk:"
+        },
+        {
+          "text": "Yes — payable at the reception. The receptionist will give you a receipt. Do you need a translator for any of the documents?",
+          "depth": 2,
+          "name": "Yes — payable at the reception. The receptionist will give you a receipt. Do you need a translator for any of the documents?"
+        },
+        {
+          "text": "Citizen:",
+          "depth": 2,
+          "name": "Citizen:"
+        },
+        {
+          "text": "No, thank you. Everything is in English. Can I also update my address in the embassy records?",
+          "depth": 2,
+          "name": "No, thank you. Everything is in English. Can I also update my address in the embassy records?"
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "553:88",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"The ambassador gave an advice to the citizens waiting at the embassy.\"",
+          "depth": 2,
+          "name": "❌ \"The ambassador gave an advice to the citizens waiting at the embassy.\""
+        },
+        {
+          "text": "✅ \"The ambassador gave advice to the citizens waiting at the embassy.\"",
+          "depth": 2,
+          "name": "✅ \"The ambassador gave advice to the citizens waiting at the embassy.\""
+        },
+        {
+          "text": "'Advice' is uncountable — never 'an advice' or 'advices.' Use 'a piece of advice', 'some advice.' Same pattern: 'information' (not *an information), 'furniture' (not *a furniture), 'equipment' (not *an equipment). The verb form is 'advise' (with 's' and different pronunciation): 'The consul advised them to apply early.'",
+          "depth": 2,
+          "name": "'Advice' is uncountable — never 'an advice' or 'advices.' Use 'a piece of advice', 'some advice.' Same pattern: 'information' (not *an information), 'furniture' (not *a furniture), 'equipment' (not *an equipment). The verb form is 'advise' (with 's' and different pronunciation): 'The consul advised them to apply early.'"
+        },
+        {
+          "text": "❌ \"She asked me where was the visa section located.\"",
+          "depth": 2,
+          "name": "❌ \"She asked me where was the visa section located.\""
+        },
+        {
+          "text": "✅ \"She asked me where the visa section was located.\"",
+          "depth": 2,
+          "name": "✅ \"She asked me where the visa section was located.\""
+        },
+        {
+          "text": "Indirect (embedded) questions use statement word order, not question inversion: 'where the section was' (not *where was the section). Same rule: 'I don't know what time it is' (not *what time is it). 'Could you tell me how I can apply?' (not *how can I apply). Direct question → inversion: 'Where is the section?' Indirect → no inversion: 'I asked where the section was.'",
+          "depth": 2,
+          "name": "Indirect (embedded) questions use statement word order, not question inversion: 'where the section was' (not *where was the section). Same rule: 'I don't know what time it is' (not *what time is it). 'Could you tell me how I can apply?' (not *how can I apply). Direct question → inversion: 'Where is the section?' Indirect → no inversion: 'I asked where the section was.'"
+        },
+        {
+          "text": "❌ \"The diplomat suggested us to sign the treaty before the summit.\"",
+          "depth": 2,
+          "name": "❌ \"The diplomat suggested us to sign the treaty before the summit.\""
+        },
+        {
+          "text": "✅ \"The diplomat suggested that we sign the treaty before the summit.\"",
+          "depth": 2,
+          "name": "✅ \"The diplomat suggested that we sign the treaty before the summit.\""
+        },
+        {
+          "text": "'Suggest' never takes object + infinitive (*suggest us to sign). Use: suggest + that-clause: 'suggested that we sign' (subjunctive). Suggest + gerund: 'suggested signing.' Same restriction applies to 'recommend' and 'propose.' Verbs that DO take object + infinitive: 'advise us to sign', 'urge us to sign', 'encourage us to sign.'",
+          "depth": 2,
+          "name": "'Suggest' never takes object + infinitive (*suggest us to sign). Use: suggest + that-clause: 'suggested that we sign' (subjunctive). Suggest + gerund: 'suggested signing.' Same restriction applies to 'recommend' and 'propose.' Verbs that DO take object + infinitive: 'advise us to sign', 'urge us to sign', 'encourage us to sign.'"
+        },
+        {
+          "text": "❌ \"Every applicants must submit their photograph with the form.\"",
+          "depth": 2,
+          "name": "❌ \"Every applicants must submit their photograph with the form.\""
+        },
+        {
+          "text": "✅ \"Every applicant must submit their photograph with the form.\"",
+          "depth": 2,
+          "name": "✅ \"Every applicant must submit their photograph with the form.\""
+        },
+        {
+          "text": "'Every' + singular noun: 'every applicant', 'every document', 'every embassy.' 'All' + plural: 'all applicants.' 'Each' + singular: 'each applicant.' Using 'their' with 'every' (singular) is accepted in modern English for gender neutrality: 'Every applicant must submit their photograph.'",
+          "depth": 2,
+          "name": "'Every' + singular noun: 'every applicant', 'every document', 'every embassy.' 'All' + plural: 'all applicants.' 'Each' + singular: 'each applicant.' Using 'their' with 'every' (singular) is accepted in modern English for gender neutrality: 'Every applicant must submit their photograph.'"
+        },
+        {
+          "text": "❌ \"The passport has been expired, so she needs to renew it at the consulate.\"",
+          "depth": 2,
+          "name": "❌ \"The passport has been expired, so she needs to renew it at the consulate.\""
+        },
+        {
+          "text": "✅ \"The passport has expired, so she needs to renew it at the consulate.\"",
+          "depth": 2,
+          "name": "✅ \"The passport has expired, so she needs to renew it at the consulate.\""
+        },
+        {
+          "text": "'Expire' is intransitive — it cannot be passive. 'The passport has expired' (active — the passport reached its end date). Never *'has been expired.' Other intransitive verbs that cannot be passivised: 'arrive', 'happen', 'exist', 'disappear.' Compare transitive: 'The consul has approved the application' → 'The application has been approved.'",
+          "depth": 2,
+          "name": "'Expire' is intransitive — it cannot be passive. 'The passport has expired' (active — the passport reached its end date). Never *'has been expired.' Other intransitive verbs that cannot be passivised: 'arrive', 'happen', 'exist', 'disappear.' Compare transitive: 'The consul has approved the application' → 'The application has been approved.'"
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "553:112",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how diplomacy and government vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how diplomacy and government vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "diplomat",
+          "depth": 2,
+          "name": "diplomat"
+        },
+        {
+          "text": "diplomat / diplomacy",
+          "depth": 2,
+          "name": "diplomat / diplomacy"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "diplomatic",
+          "depth": 2,
+          "name": "diplomatic"
+        },
+        {
+          "text": "ambassador",
+          "depth": 2,
+          "name": "ambassador"
+        },
+        {
+          "text": "ambassador / ambassadorship",
+          "depth": 2,
+          "name": "ambassador / ambassadorship"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "ambassadorial",
+          "depth": 2,
+          "name": "ambassadorial"
+        },
+        {
+          "text": "negotiate",
+          "depth": 2,
+          "name": "negotiate"
+        },
+        {
+          "text": "negotiation / negotiator",
+          "depth": 2,
+          "name": "negotiation / negotiator"
+        },
+        {
+          "text": "negotiate",
+          "depth": 2,
+          "name": "negotiate"
+        },
+        {
+          "text": "negotiable",
+          "depth": 2,
+          "name": "negotiable"
+        },
+        {
+          "text": "represent",
+          "depth": 2,
+          "name": "represent"
+        },
+        {
+          "text": "representation / representative",
+          "depth": 2,
+          "name": "representation / representative"
+        },
+        {
+          "text": "represent",
+          "depth": 2,
+          "name": "represent"
+        },
+        {
+          "text": "representative",
+          "depth": 2,
+          "name": "representative"
+        },
+        {
+          "text": "consulate",
+          "depth": 2,
+          "name": "consulate"
+        },
+        {
+          "text": "consul / consulate",
+          "depth": 2,
+          "name": "consul / consulate"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "consular",
+          "depth": 2,
+          "name": "consular"
+        },
+        {
+          "text": "immigrate",
+          "depth": 2,
+          "name": "immigrate"
+        },
+        {
+          "text": "immigration / immigrant",
+          "depth": 2,
+          "name": "immigration / immigrant"
+        },
+        {
+          "text": "immigrate",
+          "depth": 2,
+          "name": "immigrate"
+        },
+        {
+          "text": "immigrant",
+          "depth": 2,
+          "name": "immigrant"
+        },
+        {
+          "text": "evacuate",
+          "depth": 2,
+          "name": "evacuate"
+        },
+        {
+          "text": "evacuation / evacuee",
+          "depth": 2,
+          "name": "evacuation / evacuee"
+        },
+        {
+          "text": "evacuate",
+          "depth": 2,
+          "name": "evacuate"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "authorize",
+          "depth": 2,
+          "name": "authorize"
+        },
+        {
+          "text": "authority / authorization",
+          "depth": 2,
+          "name": "authority / authorization"
+        },
+        {
+          "text": "authorize",
+          "depth": 2,
+          "name": "authorize"
+        },
+        {
+          "text": "authorized",
+          "depth": 2,
+          "name": "authorized"
+        },
+        {
+          "text": "reside",
+          "depth": 2,
+          "name": "reside"
+        },
+        {
+          "text": "residence / resident",
+          "depth": 2,
+          "name": "residence / resident"
+        },
+        {
+          "text": "reside",
+          "depth": 2,
+          "name": "reside"
+        },
+        {
+          "text": "residential",
+          "depth": 2,
+          "name": "residential"
+        },
+        {
+          "text": "translate",
+          "depth": 2,
+          "name": "translate"
+        },
+        {
+          "text": "translation / translator",
+          "depth": 2,
+          "name": "translation / translator"
+        },
+        {
+          "text": "translate",
+          "depth": 2,
+          "name": "translate"
+        },
+        {
+          "text": "translated",
+          "depth": 2,
+          "name": "translated"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "553:172",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The __________ — the head of mission — represents the home government in the host country.",
+          "depth": 1,
+          "name": "1. The __________ — the head of mission — represents the home government in the host country."
+        },
+        {
+          "text": "2.  A __________ application form must be submitted with a photograph and supporting documents.",
+          "depth": 1,
+          "name": "2. A __________ application form must be submitted with a photograph and supporting documents."
+        },
+        {
+          "text": "3.  A __________ and a seal are used to authenticate official documents.",
+          "depth": 1,
+          "name": "3. A __________ and a seal are used to authenticate official documents."
+        },
+        {
+          "text": "4.  The cultural __________ promotes arts, language, and educational exchange.",
+          "depth": 1,
+          "name": "4. The cultural __________ promotes arts, language, and educational exchange."
+        },
+        {
+          "text": "5.  A __________ glass partition separates staff from the public in high-risk embassies.",
+          "depth": 1,
+          "name": "5. A __________ glass partition separates staff from the public in high-risk embassies."
+        },
+        {
+          "text": "6.  A __________ destroys outdated or classified documents to prevent information leaks.",
+          "depth": 1,
+          "name": "6. A __________ destroys outdated or classified documents to prevent information leaks."
+        },
+        {
+          "text": "7.  A __________ officer ensures that ceremonies and meetings follow diplomatic etiquette.",
+          "depth": 1,
+          "name": "7. A __________ officer ensures that ceremonies and meetings follow diplomatic etiquette."
+        },
+        {
+          "text": "8.  A __________ bridges languages during formal meetings between diplomats.",
+          "depth": 1,
+          "name": "8. A __________ bridges languages during formal meetings between diplomats."
+        },
+        {
+          "text": "9.  A __________ with time zones shows the hour in both countries simultaneously.",
+          "depth": 1,
+          "name": "9. A __________ with time zones shows the hour in both countries simultaneously."
+        },
+        {
+          "text": "10. The security __________ at the entrance checks identification before visitors enter.",
+          "depth": 1,
+          "name": "10. The security __________ at the entrance checks identification before visitors enter."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. ambassador  2. visa  3. stamp  4. attaché  5. bulletproof  6. shredder  7. protocol  8. translator/interpreter  9. clock  10. guard",
+          "depth": 2,
+          "name": "1. ambassador 2. visa 3. stamp 4. attaché 5. bulletproof 6. shredder 7. protocol 8. translator/interpreter 9. clock 10. guard"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "553:190",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Embassy vs Consulate vs High Commission",
+          "depth": 2,
+          "name": "Embassy vs Consulate vs High Commission"
+        },
+        {
+          "text": "'Embassy' = main diplomatic office in a capital city. 'Consulate' = smaller office in other cities (mainly visa/passport services). 'High Commission' = the term used instead of 'embassy' between Commonwealth countries (e.g. the British High Commission in Australia).",
+          "depth": 2,
+          "name": "'Embassy' = main diplomatic office in a capital city. 'Consulate' = smaller office in other cities (mainly visa/passport services). 'High Commission' = the term used instead of 'embassy' between Commonwealth countries (e.g. the British High Commission in Australia)."
+        },
+        {
+          "text": "Visa Types",
+          "depth": 2,
+          "name": "Visa Types"
+        },
+        {
+          "text": "'Tourist visa' = short visit for holidays. 'Work visa / work permit' = permission to work. 'Student visa' = permission to study. 'Transit visa' = passing through a country on the way elsewhere. 'Diplomatic visa' = for officials on government business.",
+          "depth": 2,
+          "name": "'Tourist visa' = short visit for holidays. 'Work visa / work permit' = permission to work. 'Student visa' = permission to study. 'Transit visa' = passing through a country on the way elsewhere. 'Diplomatic visa' = for officials on government business."
+        },
+        {
+          "text": "Formal Register",
+          "depth": 2,
+          "name": "Formal Register"
+        },
+        {
+          "text": "Embassy language is very formal. 'I wish to enquire about...' (not 'I want to ask about...'). 'Please be advised that...' (not 'Just so you know...'). 'Your application is under review' (not 'We're looking at it'). Learners should practise this formal register.",
+          "depth": 2,
+          "name": "Embassy language is very formal. 'I wish to enquire about...' (not 'I want to ask about...'). 'Please be advised that...' (not 'Just so you know...'). 'Your application is under review' (not 'We're looking at it'). Learners should practise this formal register."
+        },
+        {
+          "text": "British vs American Spelling",
+          "depth": 2,
+          "name": "British vs American Spelling"
+        },
+        {
+          "text": "'Travelling / travelling' (BrE) vs 'traveling' (AmE). 'Honour' (BrE) vs 'honor' (AmE). 'Defence' (BrE) vs 'defense' (AmE). Embassy documents may use either depending on the country. British embassies use British spelling; American embassies use American spelling.",
+          "depth": 2,
+          "name": "'Travelling / travelling' (BrE) vs 'traveling' (AmE). 'Honour' (BrE) vs 'honor' (AmE). 'Defence' (BrE) vs 'defense' (AmE). Embassy documents may use either depending on the country. British embassies use British spelling; American embassies use American spelling."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "553:206",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "embassy",
+          "depth": 2,
+          "name": "embassy"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ building, ~ staff, foreign ~",
+          "depth": 2,
+          "name": "~ building, ~ staff, foreign ~"
+        },
+        {
+          "text": "ambassador",
+          "depth": 2,
+          "name": "ambassador"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ residence, appoint an ~, ~ to France",
+          "depth": 2,
+          "name": "~ residence, appoint an ~, ~ to France"
+        },
+        {
+          "text": "visa",
+          "depth": 2,
+          "name": "visa"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ application, tourist ~, ~ stamp",
+          "depth": 2,
+          "name": "~ application, tourist ~, ~ stamp"
+        },
+        {
+          "text": "passport",
+          "depth": 2,
+          "name": "passport"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ control, ~ holder, renew a ~",
+          "depth": 2,
+          "name": "~ control, ~ holder, renew a ~"
+        },
+        {
+          "text": "diplomat",
+          "depth": 2,
+          "name": "diplomat"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "senior ~, career ~, ~ corps",
+          "depth": 2,
+          "name": "senior ~, career ~, ~ corps"
+        },
+        {
+          "text": "consulate",
+          "depth": 2,
+          "name": "consulate"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ general, ~ office, ~ services",
+          "depth": 2,
+          "name": "~ general, ~ office, ~ services"
+        },
+        {
+          "text": "immunity",
+          "depth": 2,
+          "name": "immunity"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "diplomatic ~, grant ~, ~ from prosecution",
+          "depth": 2,
+          "name": "diplomatic ~, grant ~, ~ from prosecution"
+        },
+        {
+          "text": "negotiate",
+          "depth": 2,
+          "name": "negotiate"
+        },
+        {
+          "text": "v",
+          "depth": 2,
+          "name": "v"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ a deal, ~ terms, ~ peace",
+          "depth": 2,
+          "name": "~ a deal, ~ terms, ~ peace"
+        },
+        {
+          "text": "evacuate",
+          "depth": 2,
+          "name": "evacuate"
+        },
+        {
+          "text": "v",
+          "depth": 2,
+          "name": "v"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ citizens, ~ the building, emergency ~",
+          "depth": 2,
+          "name": "~ citizens, ~ the building, emergency ~"
+        },
+        {
+          "text": "sovereignty",
+          "depth": 2,
+          "name": "sovereignty"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "national ~, ~ rights, territorial ~",
+          "depth": 2,
+          "name": "national ~, ~ rights, territorial ~"
+        }
+      ]
+    }
+  }
+}

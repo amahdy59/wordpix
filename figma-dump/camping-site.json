@@ -1,0 +1,1729 @@
+{
+  "unitId": "camping-site",
+  "name": "The Camping Site",
+  "subtopics": [
+    {
+      "id": "shelter-sleep",
+      "title": "Shelter & Sleep",
+      "wordIds": [
+        "tent",
+        "sleeping-bag",
+        "air-mattress",
+        "tarp",
+        "hammock",
+        "tent-pole",
+        "tent-peg",
+        "rain-fly",
+        "groundsheet",
+        "pillow"
+      ]
+    },
+    {
+      "id": "campfire-cooking",
+      "title": "Campfire & Cooking",
+      "wordIds": [
+        "campfire",
+        "firewood",
+        "matches",
+        "lighter",
+        "grill",
+        "camp-stove",
+        "cooler",
+        "water-jug",
+        "thermos",
+        "camping-pot",
+        "marshmallow",
+        "skewer"
+      ]
+    },
+    {
+      "id": "navigation-light",
+      "title": "Navigation & Light",
+      "wordIds": [
+        "compass",
+        "map",
+        "gps-device",
+        "flashlight",
+        "headlamp",
+        "lantern",
+        "binoculars",
+        "whistle",
+        "signal-mirror",
+        "trail-marker"
+      ]
+    },
+    {
+      "id": "outdoor-gear",
+      "title": "Outdoor Gear",
+      "wordIds": [
+        "backpack",
+        "hiking-boots",
+        "walking-stick",
+        "water-bottle",
+        "pocket-knife",
+        "rope",
+        "carabiner",
+        "dry-bag",
+        "first-aid-kit",
+        "sunscreen"
+      ]
+    },
+    {
+      "id": "nature-trail",
+      "title": "Nature & Trail",
+      "wordIds": [
+        "trail",
+        "river",
+        "waterfall",
+        "mountain",
+        "valley",
+        "pine-tree",
+        "wildflower",
+        "mushroom",
+        "rock",
+        "cliff",
+        "meadow",
+        "lake"
+      ]
+    },
+    {
+      "id": "camp-activities",
+      "title": "Camp Activities",
+      "wordIds": [
+        "hiking",
+        "fishing",
+        "swimming",
+        "canoeing",
+        "bird-watching",
+        "star-gazing",
+        "photography",
+        "rock-climbing",
+        "mountain-biking",
+        "cooking",
+        "hike",
+        "fish",
+        "cook",
+        "roast-marshmallow",
+        "star-gaze",
+        "paddle",
+        "set-up-tent",
+        "explore"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "tent",
+      "label": "Tent",
+      "ipa": "/tɛnt/",
+      "cefr": "A2",
+      "imageNodeId": "44:8293"
+    },
+    {
+      "kind": "card",
+      "id": "sleeping-bag",
+      "label": "Sleeping Bag",
+      "ipa": "/ˈsliːpɪŋ bæɡ/",
+      "cefr": "B1",
+      "imageNodeId": "44:8297"
+    },
+    {
+      "kind": "card",
+      "id": "air-mattress",
+      "label": "Air Mattress",
+      "ipa": "/ɛər ˈmætrɪs/",
+      "cefr": "B1",
+      "imageNodeId": "44:8301"
+    },
+    {
+      "kind": "card",
+      "id": "tarp",
+      "label": "Tarp",
+      "ipa": "/tɑːrp/",
+      "cefr": "A2",
+      "imageNodeId": "44:8305"
+    },
+    {
+      "kind": "card",
+      "id": "hammock",
+      "label": "Hammock",
+      "ipa": "/ˈhæmək/",
+      "cefr": "A2",
+      "imageNodeId": "44:8309"
+    },
+    {
+      "kind": "card",
+      "id": "tent-pole",
+      "label": "Tent Pole",
+      "ipa": "/tɛnt poʊl/",
+      "cefr": "B1",
+      "imageNodeId": "44:8313"
+    },
+    {
+      "kind": "card",
+      "id": "tent-peg",
+      "label": "Tent Peg",
+      "ipa": "/tɛnt pɛɡ/",
+      "cefr": "B1",
+      "imageNodeId": "44:8317"
+    },
+    {
+      "kind": "card",
+      "id": "rain-fly",
+      "label": "Rain Fly",
+      "ipa": "/reɪn flaɪ/",
+      "cefr": "B1",
+      "imageNodeId": "44:8321"
+    },
+    {
+      "kind": "card",
+      "id": "groundsheet",
+      "label": "Groundsheet",
+      "ipa": "/ˈɡraʊndˌʃiːt/",
+      "cefr": "B1",
+      "imageNodeId": "44:8325"
+    },
+    {
+      "kind": "card",
+      "id": "pillow",
+      "label": "Pillow",
+      "ipa": "/ˈpɪloʊ/",
+      "cefr": "A2",
+      "imageNodeId": "44:8329"
+    },
+    {
+      "kind": "card",
+      "id": "campfire",
+      "label": "Campfire",
+      "ipa": "/ˈkæmpˌfaɪər/",
+      "cefr": "A2",
+      "imageNodeId": "44:8338"
+    },
+    {
+      "kind": "card",
+      "id": "firewood",
+      "label": "Firewood",
+      "ipa": "/ˈfaɪərˌwʊd/",
+      "cefr": "A2",
+      "imageNodeId": "44:8342"
+    },
+    {
+      "kind": "card",
+      "id": "matches",
+      "label": "Matches",
+      "ipa": "/ˈmætʃɪz/",
+      "cefr": "A2",
+      "imageNodeId": "44:8346"
+    },
+    {
+      "kind": "card",
+      "id": "lighter",
+      "label": "Lighter",
+      "ipa": "/ˈlaɪtər/",
+      "cefr": "A2",
+      "imageNodeId": "44:8350"
+    },
+    {
+      "kind": "card",
+      "id": "grill",
+      "label": "Grill",
+      "ipa": "/ɡrɪl/",
+      "cefr": "A2",
+      "imageNodeId": "44:8354"
+    },
+    {
+      "kind": "card",
+      "id": "camp-stove",
+      "label": "Camp Stove",
+      "ipa": "/kæmp stoʊv/",
+      "cefr": "B1",
+      "imageNodeId": "44:8358"
+    },
+    {
+      "kind": "card",
+      "id": "cooler",
+      "label": "Cooler",
+      "ipa": "/ˈkuːlər/",
+      "cefr": "A2",
+      "imageNodeId": "44:8362"
+    },
+    {
+      "kind": "card",
+      "id": "water-jug",
+      "label": "Water Jug",
+      "ipa": "/ˈwɔːtər dʒʌɡ/",
+      "cefr": "B1",
+      "imageNodeId": "44:8366"
+    },
+    {
+      "kind": "card",
+      "id": "thermos",
+      "label": "Thermos",
+      "ipa": "/ˈθɜːrməs/",
+      "cefr": "A2",
+      "imageNodeId": "44:8370"
+    },
+    {
+      "kind": "card",
+      "id": "camping-pot",
+      "label": "Camping Pot",
+      "ipa": "/ˈkæmpɪŋ pɒt/",
+      "cefr": "B1",
+      "imageNodeId": "44:8374"
+    },
+    {
+      "kind": "card",
+      "id": "marshmallow",
+      "label": "Marshmallow",
+      "ipa": "/ˌmɑːrʃˈmæloʊ/",
+      "cefr": "B1",
+      "imageNodeId": "44:8378"
+    },
+    {
+      "kind": "card",
+      "id": "skewer",
+      "label": "Skewer",
+      "ipa": "/ˈskjuːər/",
+      "cefr": "A2",
+      "imageNodeId": "44:8382"
+    },
+    {
+      "kind": "card",
+      "id": "compass",
+      "label": "Compass",
+      "ipa": "/ˈkʌmpəs/",
+      "cefr": "A2",
+      "imageNodeId": "44:8391"
+    },
+    {
+      "kind": "card",
+      "id": "map",
+      "label": "Map",
+      "ipa": "/mæp/",
+      "cefr": "A2",
+      "imageNodeId": "44:8395"
+    },
+    {
+      "kind": "card",
+      "id": "gps-device",
+      "label": "GPS Device",
+      "ipa": "/ˌdʒiːpiːˈɛs dɪˈvaɪs/",
+      "cefr": "B1",
+      "imageNodeId": "44:8399"
+    },
+    {
+      "kind": "card",
+      "id": "flashlight",
+      "label": "Flashlight",
+      "ipa": "/ˈflæʃˌlaɪt/",
+      "cefr": "B1",
+      "imageNodeId": "44:8403"
+    },
+    {
+      "kind": "card",
+      "id": "headlamp",
+      "label": "Headlamp",
+      "ipa": "/ˈhɛdˌlæmp/",
+      "cefr": "A2",
+      "imageNodeId": "44:8407"
+    },
+    {
+      "kind": "card",
+      "id": "lantern",
+      "label": "Lantern",
+      "ipa": "/ˈlæntərn/",
+      "cefr": "A2",
+      "imageNodeId": "44:8411"
+    },
+    {
+      "kind": "card",
+      "id": "binoculars",
+      "label": "Binoculars",
+      "ipa": "/bɪˈnɒkjʊlərz/",
+      "cefr": "B1",
+      "imageNodeId": "44:8415"
+    },
+    {
+      "kind": "card",
+      "id": "whistle",
+      "label": "Whistle",
+      "ipa": "/ˈwɪsəl/",
+      "cefr": "A2",
+      "imageNodeId": "44:8419"
+    },
+    {
+      "kind": "card",
+      "id": "signal-mirror",
+      "label": "Signal Mirror",
+      "ipa": "/ˈsɪɡnəl ˈmɪrər/",
+      "cefr": "B1",
+      "imageNodeId": "44:8423"
+    },
+    {
+      "kind": "card",
+      "id": "trail-marker",
+      "label": "Trail Marker",
+      "ipa": "/treɪl ˈmɑːrkər/",
+      "cefr": "B1",
+      "imageNodeId": "44:8427"
+    },
+    {
+      "kind": "card",
+      "id": "backpack",
+      "label": "Backpack",
+      "ipa": "/ˈbækˌpæk/",
+      "cefr": "A2",
+      "imageNodeId": "44:8436"
+    },
+    {
+      "kind": "card",
+      "id": "hiking-boots",
+      "label": "Hiking Boots",
+      "ipa": "/ˈhaɪkɪŋ buːts/",
+      "cefr": "B1",
+      "imageNodeId": "44:8440"
+    },
+    {
+      "kind": "card",
+      "id": "walking-stick",
+      "label": "Walking Stick",
+      "ipa": "/ˈwɔːkɪŋ stɪk/",
+      "cefr": "B1",
+      "imageNodeId": "44:8444"
+    },
+    {
+      "kind": "card",
+      "id": "water-bottle",
+      "label": "Water Bottle",
+      "ipa": "/ˈwɔːtər ˈbɒtəl/",
+      "cefr": "B1",
+      "imageNodeId": "44:8448"
+    },
+    {
+      "kind": "card",
+      "id": "pocket-knife",
+      "label": "Pocket Knife",
+      "ipa": "/ˈpɒkɪt naɪf/",
+      "cefr": "B1",
+      "imageNodeId": "44:8452"
+    },
+    {
+      "kind": "card",
+      "id": "rope",
+      "label": "Rope",
+      "ipa": "/roʊp/",
+      "cefr": "A2",
+      "imageNodeId": "44:8456"
+    },
+    {
+      "kind": "card",
+      "id": "carabiner",
+      "label": "Carabiner",
+      "ipa": "/ˌkærəˈbiːnər/",
+      "cefr": "A2",
+      "imageNodeId": "44:8460"
+    },
+    {
+      "kind": "card",
+      "id": "dry-bag",
+      "label": "Dry Bag",
+      "ipa": "/draɪ bæɡ/",
+      "cefr": "B1",
+      "imageNodeId": "44:8464"
+    },
+    {
+      "kind": "card",
+      "id": "first-aid-kit",
+      "label": "First Aid Kit",
+      "ipa": "/fɜːrst eɪd kɪt/",
+      "cefr": "B2",
+      "imageNodeId": "44:8468"
+    },
+    {
+      "kind": "card",
+      "id": "sunscreen",
+      "label": "Sunscreen",
+      "ipa": "/ˈsʌnˌskriːn/",
+      "cefr": "A2",
+      "imageNodeId": "44:8472"
+    },
+    {
+      "kind": "card",
+      "id": "trail",
+      "label": "Trail",
+      "ipa": "/treɪl/",
+      "cefr": "A2",
+      "imageNodeId": "44:8481"
+    },
+    {
+      "kind": "card",
+      "id": "river",
+      "label": "River",
+      "ipa": "/ˈrɪvər/",
+      "cefr": "A2",
+      "imageNodeId": "44:8485"
+    },
+    {
+      "kind": "card",
+      "id": "waterfall",
+      "label": "Waterfall",
+      "ipa": "/ˈwɔːtərˌfɔːl/",
+      "cefr": "A2",
+      "imageNodeId": "44:8489"
+    },
+    {
+      "kind": "card",
+      "id": "mountain",
+      "label": "Mountain",
+      "ipa": "/ˈmaʊntɪn/",
+      "cefr": "A2",
+      "imageNodeId": "44:8493"
+    },
+    {
+      "kind": "card",
+      "id": "valley",
+      "label": "Valley",
+      "ipa": "/ˈvæli/",
+      "cefr": "A2",
+      "imageNodeId": "44:8497"
+    },
+    {
+      "kind": "card",
+      "id": "pine-tree",
+      "label": "Pine Tree",
+      "ipa": "/paɪn triː/",
+      "cefr": "B1",
+      "imageNodeId": "44:8501"
+    },
+    {
+      "kind": "card",
+      "id": "wildflower",
+      "label": "Wildflower",
+      "ipa": "/ˈwaɪldˌflaʊər/",
+      "cefr": "B1",
+      "imageNodeId": "44:8505"
+    },
+    {
+      "kind": "card",
+      "id": "mushroom",
+      "label": "Mushroom",
+      "ipa": "/ˈmʌʃruːm/",
+      "cefr": "A2",
+      "imageNodeId": "44:8509"
+    },
+    {
+      "kind": "card",
+      "id": "rock",
+      "label": "Rock",
+      "ipa": "/rɒk/",
+      "cefr": "A2",
+      "imageNodeId": "44:8513"
+    },
+    {
+      "kind": "card",
+      "id": "cliff",
+      "label": "Cliff",
+      "ipa": "/klɪf/",
+      "cefr": "A2",
+      "imageNodeId": "44:8517"
+    },
+    {
+      "kind": "card",
+      "id": "meadow",
+      "label": "Meadow",
+      "ipa": "/ˈmɛdoʊ/",
+      "cefr": "A2",
+      "imageNodeId": "44:8521"
+    },
+    {
+      "kind": "card",
+      "id": "lake",
+      "label": "Lake",
+      "ipa": "/leɪk/",
+      "cefr": "A2",
+      "imageNodeId": "44:8525"
+    },
+    {
+      "kind": "card",
+      "id": "hiking",
+      "label": "Hiking",
+      "ipa": "/ˈhaɪkɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "44:8534"
+    },
+    {
+      "kind": "card",
+      "id": "fishing",
+      "label": "Fishing",
+      "ipa": "/ˈfɪʃɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "44:8538"
+    },
+    {
+      "kind": "card",
+      "id": "swimming",
+      "label": "Swimming",
+      "ipa": "/ˈswɪmɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "44:8542"
+    },
+    {
+      "kind": "card",
+      "id": "canoeing",
+      "label": "Canoeing",
+      "ipa": "/kəˈnuːɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "44:8546"
+    },
+    {
+      "kind": "card",
+      "id": "bird-watching",
+      "label": "Bird Watching",
+      "ipa": "/bɜːrd ˈwɒtʃɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "44:8550"
+    },
+    {
+      "kind": "card",
+      "id": "star-gazing",
+      "label": "Star Gazing",
+      "ipa": "/stɑːr ˈɡeɪzɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "44:8554"
+    },
+    {
+      "kind": "card",
+      "id": "photography",
+      "label": "Photography",
+      "ipa": "/fəˈtɒɡrəfi/",
+      "cefr": "B1",
+      "imageNodeId": "44:8558"
+    },
+    {
+      "kind": "card",
+      "id": "rock-climbing",
+      "label": "Rock Climbing",
+      "ipa": "/rɒk ˈklaɪmɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "44:8562"
+    },
+    {
+      "kind": "card",
+      "id": "mountain-biking",
+      "label": "Mountain Biking",
+      "ipa": "/ˈmaʊntɪn ˈbaɪkɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "44:8566"
+    },
+    {
+      "kind": "card",
+      "id": "cooking",
+      "label": "Cooking",
+      "ipa": "/ˈkʊkɪŋ/",
+      "cefr": "A2",
+      "imageNodeId": "44:8570"
+    },
+    {
+      "kind": "card",
+      "id": "hike",
+      "label": "Hike",
+      "ipa": "/haɪk/",
+      "cefr": "A2",
+      "imageNodeId": "39:3424"
+    },
+    {
+      "kind": "card",
+      "id": "fish",
+      "label": "Fish",
+      "ipa": "/fɪʃ/",
+      "cefr": "A2",
+      "imageNodeId": "39:3428"
+    },
+    {
+      "kind": "card",
+      "id": "cook",
+      "label": "Cook",
+      "ipa": "/kʊk/",
+      "cefr": "A2",
+      "imageNodeId": "39:3432"
+    },
+    {
+      "kind": "card",
+      "id": "roast-marshmallow",
+      "label": "Roast Marshmallow",
+      "ipa": "/roʊst ˌmɑːrʃˈmæloʊ/",
+      "cefr": "B2",
+      "imageNodeId": "39:3436"
+    },
+    {
+      "kind": "card",
+      "id": "star-gaze",
+      "label": "Star Gaze",
+      "ipa": "/stɑːr ɡeɪz/",
+      "cefr": "B1",
+      "imageNodeId": "39:3440"
+    },
+    {
+      "kind": "card",
+      "id": "paddle",
+      "label": "Paddle",
+      "ipa": "/ˈpædəl/",
+      "cefr": "A2",
+      "imageNodeId": "39:3444"
+    },
+    {
+      "kind": "card",
+      "id": "set-up-tent",
+      "label": "Set Up Tent",
+      "ipa": "/sɛt ʌp tɛnt/",
+      "cefr": "B2",
+      "imageNodeId": "39:3448"
+    },
+    {
+      "kind": "card",
+      "id": "explore",
+      "label": "Explore",
+      "ipa": "/ɪkˈsplɔːr/",
+      "cefr": "A2",
+      "imageNodeId": "39:3452"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "547:2787",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "547:2789",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B1 · Topic: The Camping Site",
+          "depth": 1,
+          "name": "Level: B1 · Topic: The Camping Site"
+        },
+        {
+          "text": "A Weekend in the Countryside\n\nLast summer, my family went camping for the first time. We drove to a campsite in the Lake District, about three hours from our home.\n\nWhen we arrived, the campsite warden showed us to our pitch — a flat area of grass where we could set up our tent. My father and I unpacked the car and started putting up the tent. It took about forty minutes because neither of us had done it before. The instructions were confusing, but eventually we managed to get all the poles in place and hammer the pegs into the ground with a mallet.\n\nThe campsite had basic facilities: a shower block with hot water, a toilet block, a washing-up area for cleaning dishes, and a small shop that sold essentials like bread, milk, and firewood.\n\nIn the evening, we lit a campfire in the fire pit and cooked sausages on a portable barbecue. We also roasted marshmallows on sticks. The sky was incredibly clear, and we could see thousands of stars — something we never see in the city because of light pollution.\n\nThe next morning, I woke up early. The air was cool and fresh, and I could hear birds singing. We had breakfast outside — cereal, toast cooked on a camping stove, and hot chocolate.\n\nAfter breakfast, we went on a hike through the woods and along the lake. We saw rabbits, squirrels, and a heron standing in the shallow water. The walk took about two hours.\n\nWhen it was time to leave on Sunday afternoon, we took down the tent, packed up our gear, and made sure we left no rubbish behind. The campsite rule is 'Leave no trace.'",
+          "depth": 1,
+          "name": "A Weekend in the Countryside Last summer, my family went camping for the first time. We drove to a campsite in the Lake District, about three hours from our home. When we arrived, the campsite warden showed us to our pitch — a flat area of grass where we could set up our tent. My father and I unpacked the car and started putting up the tent. It took about forty minutes because neither of us had done it before. The instructions were confusing, but eventually we managed to get all the poles in place and hammer the pegs into the ground with a mallet. The campsite had basic facilities: a shower block with hot water, a toilet block, a washing-up area for cleaning dishes, and a small shop that sold essentials like bread, milk, and firewood. In the evening, we lit a campfire in the fire pit and cooked sausages on a portable barbecue. We also roasted marshmallows on sticks. The sky was incredibly clear, and we could see thousands of stars — something we never see in the city because of light pollution. The next morning, I woke up early. The air was cool and fresh, and I could hear birds singing. We had breakfast outside — cereal, toast cooked on a camping stove, and hot chocolate. After breakfast, we went on a hike through the woods and along the lake. We saw rabbits, squirrels, and a heron standing in the shallow water. The walk took about two hours. When it was time to leave on Sunday afternoon, we took down the tent, packed up our gear, and made sure we left no rubbish behind. The campsite rule is 'Leave no trace.'"
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Where did the family go camping?",
+          "depth": 1,
+          "name": "1. Where did the family go camping?"
+        },
+        {
+          "text": "2. Why did setting up the tent take so long?",
+          "depth": 1,
+          "name": "2. Why did setting up the tent take so long?"
+        },
+        {
+          "text": "3. What facilities did the campsite have?",
+          "depth": 1,
+          "name": "3. What facilities did the campsite have?"
+        },
+        {
+          "text": "4. Why could they see more stars at the campsite than at home?",
+          "depth": 1,
+          "name": "4. Why could they see more stars at the campsite than at home?"
+        },
+        {
+          "text": "5. What does 'Leave no trace' mean?",
+          "depth": 1,
+          "name": "5. What does 'Leave no trace' mean?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "547:2802",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "rough it",
+          "depth": 2,
+          "name": "rough it"
+        },
+        {
+          "text": "live without normal comforts",
+          "depth": 2,
+          "name": "live without normal comforts"
+        },
+        {
+          "text": "\"We had to rough it — no electricity, no hot water.\"",
+          "depth": 2,
+          "name": "\"We had to rough it — no electricity, no hot water.\""
+        },
+        {
+          "text": "in the middle of nowhere",
+          "depth": 2,
+          "name": "in the middle of nowhere"
+        },
+        {
+          "text": "in a very remote, isolated place",
+          "depth": 2,
+          "name": "in a very remote, isolated place"
+        },
+        {
+          "text": "\"The campsite was in the middle of nowhere.\"",
+          "depth": 2,
+          "name": "\"The campsite was in the middle of nowhere.\""
+        },
+        {
+          "text": "pitch a tent",
+          "depth": 2,
+          "name": "pitch a tent"
+        },
+        {
+          "text": "set up a tent",
+          "depth": 2,
+          "name": "set up a tent"
+        },
+        {
+          "text": "\"We pitched our tent near the river.\"",
+          "depth": 2,
+          "name": "\"We pitched our tent near the river.\""
+        },
+        {
+          "text": "under the stars",
+          "depth": 2,
+          "name": "under the stars"
+        },
+        {
+          "text": "sleeping outdoors",
+          "depth": 2,
+          "name": "sleeping outdoors"
+        },
+        {
+          "text": "\"We slept under the stars on a warm night.\"",
+          "depth": 2,
+          "name": "\"We slept under the stars on a warm night.\""
+        },
+        {
+          "text": "the great outdoors",
+          "depth": 2,
+          "name": "the great outdoors"
+        },
+        {
+          "text": "nature; the countryside",
+          "depth": 2,
+          "name": "nature; the countryside"
+        },
+        {
+          "text": "\"I love spending time in the great outdoors.\"",
+          "depth": 2,
+          "name": "\"I love spending time in the great outdoors.\""
+        },
+        {
+          "text": "pack up",
+          "depth": 2,
+          "name": "pack up"
+        },
+        {
+          "text": "put things away; prepare to leave",
+          "depth": 2,
+          "name": "put things away; prepare to leave"
+        },
+        {
+          "text": "\"We packed up early on Sunday morning.\"",
+          "depth": 2,
+          "name": "\"We packed up early on Sunday morning.\""
+        },
+        {
+          "text": "set off",
+          "depth": 2,
+          "name": "set off"
+        },
+        {
+          "text": "begin a journey",
+          "depth": 2,
+          "name": "begin a journey"
+        },
+        {
+          "text": "\"We set off at dawn to beat the traffic.\"",
+          "depth": 2,
+          "name": "\"We set off at dawn to beat the traffic.\""
+        },
+        {
+          "text": "put up / take down",
+          "depth": 2,
+          "name": "put up / take down"
+        },
+        {
+          "text": "erect / dismantle (a tent, structure)",
+          "depth": 2,
+          "name": "erect / dismantle (a tent, structure)"
+        },
+        {
+          "text": "\"It took thirty minutes to put up the tent and ten to take it down.\"",
+          "depth": 2,
+          "name": "\"It took thirty minutes to put up the tent and ten to take it down.\""
+        },
+        {
+          "text": "light a fire",
+          "depth": 2,
+          "name": "light a fire"
+        },
+        {
+          "text": "start a fire burning",
+          "depth": 2,
+          "name": "start a fire burning"
+        },
+        {
+          "text": "\"Dad lit a fire to keep us warm.\"",
+          "depth": 2,
+          "name": "\"Dad lit a fire to keep us warm.\""
+        },
+        {
+          "text": "happy camper",
+          "depth": 2,
+          "name": "happy camper"
+        },
+        {
+          "text": "a contented, satisfied person",
+          "depth": 2,
+          "name": "a contented, satisfied person"
+        },
+        {
+          "text": "\"After a good meal and a warm sleeping bag, I was a happy camper.\"",
+          "depth": 2,
+          "name": "\"After a good meal and a warm sleeping bag, I was a happy camper.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "547:2846",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A family arriving at the campsite reception",
+          "depth": 1,
+          "name": "Scene: A family arriving at the campsite reception"
+        },
+        {
+          "text": "Warden:",
+          "depth": 2,
+          "name": "Warden:"
+        },
+        {
+          "text": "Good afternoon! Do you have a booking?",
+          "depth": 2,
+          "name": "Good afternoon! Do you have a booking?"
+        },
+        {
+          "text": "Father:",
+          "depth": 2,
+          "name": "Father:"
+        },
+        {
+          "text": "Yes, under the name Hussain. Two nights, Friday and Saturday.",
+          "depth": 2,
+          "name": "Yes, under the name Hussain. Two nights, Friday and Saturday."
+        },
+        {
+          "text": "Warden:",
+          "depth": 2,
+          "name": "Warden:"
+        },
+        {
+          "text": "Perfect. You're on pitch 14 — it's a lovely spot near the stream.",
+          "depth": 2,
+          "name": "Perfect. You're on pitch 14 — it's a lovely spot near the stream."
+        },
+        {
+          "text": "Father:",
+          "depth": 2,
+          "name": "Father:"
+        },
+        {
+          "text": "Are campfires allowed?",
+          "depth": 2,
+          "name": "Are campfires allowed?"
+        },
+        {
+          "text": "Warden:",
+          "depth": 2,
+          "name": "Warden:"
+        },
+        {
+          "text": "Yes, but only in the fire pits provided. No fires directly on the grass, please.",
+          "depth": 2,
+          "name": "Yes, but only in the fire pits provided. No fires directly on the grass, please."
+        },
+        {
+          "text": "Father:",
+          "depth": 2,
+          "name": "Father:"
+        },
+        {
+          "text": "Where are the shower facilities?",
+          "depth": 2,
+          "name": "Where are the shower facilities?"
+        },
+        {
+          "text": "Warden:",
+          "depth": 2,
+          "name": "Warden:"
+        },
+        {
+          "text": "The shower block is behind the reception building. It's open twenty-four hours.",
+          "depth": 2,
+          "name": "The shower block is behind the reception building. It's open twenty-four hours."
+        },
+        {
+          "text": "Son:",
+          "depth": 2,
+          "name": "Son:"
+        },
+        {
+          "text": "Is there Wi-Fi?",
+          "depth": 2,
+          "name": "Is there Wi-Fi?"
+        },
+        {
+          "text": "Warden:",
+          "depth": 2,
+          "name": "Warden:"
+        },
+        {
+          "text": "I'm afraid not. That's the joy of camping — unplugging from technology!",
+          "depth": 2,
+          "name": "I'm afraid not. That's the joy of camping — unplugging from technology!"
+        },
+        {
+          "text": "Father:",
+          "depth": 2,
+          "name": "Father:"
+        },
+        {
+          "text": "What time is check-out on Sunday?",
+          "depth": 2,
+          "name": "What time is check-out on Sunday?"
+        },
+        {
+          "text": "Warden:",
+          "depth": 2,
+          "name": "Warden:"
+        },
+        {
+          "text": "Midday, please. And remember — leave no trace. Take all your rubbish with you.",
+          "depth": 2,
+          "name": "Midday, please. And remember — leave no trace. Take all your rubbish with you."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "547:2884",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"We made a camping last weekend.\"",
+          "depth": 2,
+          "name": "❌ \"We made a camping last weekend.\""
+        },
+        {
+          "text": "✅ \"We went camping last weekend.\"",
+          "depth": 2,
+          "name": "✅ \"We went camping last weekend.\""
+        },
+        {
+          "text": "In English, you 'go camping' — not 'make a camping' or 'do a camping'. Similarly: go hiking, go fishing, go swimming.",
+          "depth": 2,
+          "name": "In English, you 'go camping' — not 'make a camping' or 'do a camping'. Similarly: go hiking, go fishing, go swimming."
+        },
+        {
+          "text": "❌ \"We slept in a camp.\"",
+          "depth": 2,
+          "name": "❌ \"We slept in a camp.\""
+        },
+        {
+          "text": "✅ \"We slept at a campsite.\" / \"We slept in a tent.\"",
+          "depth": 2,
+          "name": "✅ \"We slept at a campsite.\" / \"We slept in a tent.\""
+        },
+        {
+          "text": "A 'camp' usually refers to a military camp or a children's summer camp. The place where you pitch a tent is called a 'campsite'.",
+          "depth": 2,
+          "name": "A 'camp' usually refers to a military camp or a children's summer camp. The place where you pitch a tent is called a 'campsite'."
+        },
+        {
+          "text": "❌ \"The fire was very hot. I could not come near.\"",
+          "depth": 2,
+          "name": "❌ \"The fire was very hot. I could not come near.\""
+        },
+        {
+          "text": "✅ \"The fire was very hot. I could not go/get near it.\"",
+          "depth": 2,
+          "name": "✅ \"The fire was very hot. I could not go/get near it.\""
+        },
+        {
+          "text": "Use 'go near' or 'get near' for approaching something. 'Come' implies movement toward the speaker, not toward an object.",
+          "depth": 2,
+          "name": "Use 'go near' or 'get near' for approaching something. 'Come' implies movement toward the speaker, not toward an object."
+        },
+        {
+          "text": "❌ \"We saw much stars in the sky.\"",
+          "depth": 2,
+          "name": "❌ \"We saw much stars in the sky.\""
+        },
+        {
+          "text": "✅ \"We saw many stars in the sky.\"",
+          "depth": 2,
+          "name": "✅ \"We saw many stars in the sky.\""
+        },
+        {
+          "text": "Use 'many' with countable nouns (stars, trees, people). Use 'much' with uncountable nouns (water, time, money).",
+          "depth": 2,
+          "name": "Use 'many' with countable nouns (stars, trees, people). Use 'much' with uncountable nouns (water, time, money)."
+        },
+        {
+          "text": "❌ \"I am afraid of the dark.\" (wrong for B1 — it's actually correct!)",
+          "depth": 2,
+          "name": "❌ \"I am afraid of the dark.\" (wrong for B1 — it's actually correct!)"
+        },
+        {
+          "text": "✅ \"I am afraid of the dark.\" — This IS correct!",
+          "depth": 2,
+          "name": "✅ \"I am afraid of the dark.\" — This IS correct!"
+        },
+        {
+          "text": "A reminder that 'afraid of + noun/gerund' is the right pattern. Common similar phrases: afraid of heights, afraid of spiders, afraid of flying.",
+          "depth": 2,
+          "name": "A reminder that 'afraid of + noun/gerund' is the right pattern. Common similar phrases: afraid of heights, afraid of spiders, afraid of flying."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "547:2908",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how camping vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how camping vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "camp",
+          "depth": 2,
+          "name": "camp"
+        },
+        {
+          "text": "camp / camper / camping",
+          "depth": 2,
+          "name": "camp / camper / camping"
+        },
+        {
+          "text": "camp",
+          "depth": 2,
+          "name": "camp"
+        },
+        {
+          "text": "camping",
+          "depth": 2,
+          "name": "camping"
+        },
+        {
+          "text": "hike",
+          "depth": 2,
+          "name": "hike"
+        },
+        {
+          "text": "hike / hiker",
+          "depth": 2,
+          "name": "hike / hiker"
+        },
+        {
+          "text": "hike",
+          "depth": 2,
+          "name": "hike"
+        },
+        {
+          "text": "hiking",
+          "depth": 2,
+          "name": "hiking"
+        },
+        {
+          "text": "explore",
+          "depth": 2,
+          "name": "explore"
+        },
+        {
+          "text": "exploration / explorer",
+          "depth": 2,
+          "name": "exploration / explorer"
+        },
+        {
+          "text": "explore",
+          "depth": 2,
+          "name": "explore"
+        },
+        {
+          "text": "exploratory",
+          "depth": 2,
+          "name": "exploratory"
+        },
+        {
+          "text": "shelter",
+          "depth": 2,
+          "name": "shelter"
+        },
+        {
+          "text": "shelter",
+          "depth": 2,
+          "name": "shelter"
+        },
+        {
+          "text": "shelter",
+          "depth": 2,
+          "name": "shelter"
+        },
+        {
+          "text": "sheltered",
+          "depth": 2,
+          "name": "sheltered"
+        },
+        {
+          "text": "equip",
+          "depth": 2,
+          "name": "equip"
+        },
+        {
+          "text": "equipment",
+          "depth": 2,
+          "name": "equipment"
+        },
+        {
+          "text": "equip",
+          "depth": 2,
+          "name": "equip"
+        },
+        {
+          "text": "equipped",
+          "depth": 2,
+          "name": "equipped"
+        },
+        {
+          "text": "portable",
+          "depth": 2,
+          "name": "portable"
+        },
+        {
+          "text": "portability",
+          "depth": 2,
+          "name": "portability"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "portable",
+          "depth": 2,
+          "name": "portable"
+        },
+        {
+          "text": "waterproof",
+          "depth": 2,
+          "name": "waterproof"
+        },
+        {
+          "text": "waterproofing",
+          "depth": 2,
+          "name": "waterproofing"
+        },
+        {
+          "text": "waterproof",
+          "depth": 2,
+          "name": "waterproof"
+        },
+        {
+          "text": "waterproof",
+          "depth": 2,
+          "name": "waterproof"
+        },
+        {
+          "text": "navigate",
+          "depth": 2,
+          "name": "navigate"
+        },
+        {
+          "text": "navigation / navigator",
+          "depth": 2,
+          "name": "navigation / navigator"
+        },
+        {
+          "text": "navigate",
+          "depth": 2,
+          "name": "navigate"
+        },
+        {
+          "text": "navigational",
+          "depth": 2,
+          "name": "navigational"
+        },
+        {
+          "text": "survive",
+          "depth": 2,
+          "name": "survive"
+        },
+        {
+          "text": "survival / survivor",
+          "depth": 2,
+          "name": "survival / survivor"
+        },
+        {
+          "text": "survive",
+          "depth": 2,
+          "name": "survive"
+        },
+        {
+          "text": "surviving",
+          "depth": 2,
+          "name": "surviving"
+        },
+        {
+          "text": "adventure",
+          "depth": 2,
+          "name": "adventure"
+        },
+        {
+          "text": "adventure / adventurer",
+          "depth": 2,
+          "name": "adventure / adventurer"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "adventurous",
+          "depth": 2,
+          "name": "adventurous"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "547:2968",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  We __________ our tent on a flat piece of grass near the stream.",
+          "depth": 1,
+          "name": "1. We __________ our tent on a flat piece of grass near the stream."
+        },
+        {
+          "text": "2.  The campsite __________ showed us to our pitch when we arrived.",
+          "depth": 1,
+          "name": "2. The campsite __________ showed us to our pitch when we arrived."
+        },
+        {
+          "text": "3.  Don't forget to bring a __________ bag to stay warm at night.",
+          "depth": 1,
+          "name": "3. Don't forget to bring a __________ bag to stay warm at night."
+        },
+        {
+          "text": "4.  We cooked dinner on a portable __________ stove.",
+          "depth": 1,
+          "name": "4. We cooked dinner on a portable __________ stove."
+        },
+        {
+          "text": "5.  The __________ block has hot showers available twenty-four hours.",
+          "depth": 1,
+          "name": "5. The __________ block has hot showers available twenty-four hours."
+        },
+        {
+          "text": "6.  We hammered the tent __________ into the ground with a mallet.",
+          "depth": 1,
+          "name": "6. We hammered the tent __________ into the ground with a mallet."
+        },
+        {
+          "text": "7.  Always bring a __________ in case it rains on your camping trip.",
+          "depth": 1,
+          "name": "7. Always bring a __________ in case it rains on your camping trip."
+        },
+        {
+          "text": "8.  We went on a two-hour __________ through the woods and along the lake.",
+          "depth": 1,
+          "name": "8. We went on a two-hour __________ through the woods and along the lake."
+        },
+        {
+          "text": "9.  The campsite rule is 'Leave no __________' — take all rubbish with you.",
+          "depth": 1,
+          "name": "9. The campsite rule is 'Leave no __________' — take all rubbish with you."
+        },
+        {
+          "text": "10. We roasted __________ over the campfire as a treat.",
+          "depth": 1,
+          "name": "10. We roasted __________ over the campfire as a treat."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. pitched  2. warden  3. sleeping  4. camping  5. shower  6. pegs  7. waterproof  8. hike  9. trace  10. marshmallows",
+          "depth": 2,
+          "name": "1. pitched 2. warden 3. sleeping 4. camping 5. shower 6. pegs 7. waterproof 8. hike 9. trace 10. marshmallows"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "547:2986",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Camping in the UK",
+          "depth": 2,
+          "name": "Camping in the UK"
+        },
+        {
+          "text": "The UK has thousands of campsites, from basic fields to luxury 'glamping' sites. The Lake District, Snowdonia, and the Scottish Highlands are popular camping destinations. Wild camping (camping outside official sites) is generally not allowed in England and Wales but is legal in Scotland.",
+          "depth": 2,
+          "name": "The UK has thousands of campsites, from basic fields to luxury 'glamping' sites. The Lake District, Snowdonia, and the Scottish Highlands are popular camping destinations. Wild camping (camping outside official sites) is generally not allowed in England and Wales but is legal in Scotland."
+        },
+        {
+          "text": "🇬🇧 vs 🇺🇸 Terms",
+          "depth": 2,
+          "name": "🇬🇧 vs 🇺🇸 Terms"
+        },
+        {
+          "text": "British: 'campsite' / American: 'campground'. British: 'torch' / American: 'flashlight'. British: 'cool box' / American: 'cooler'. British: 'caravan' / American: 'RV' (recreational vehicle) or 'trailer'.",
+          "depth": 2,
+          "name": "British: 'campsite' / American: 'campground'. British: 'torch' / American: 'flashlight'. British: 'cool box' / American: 'cooler'. British: 'caravan' / American: 'RV' (recreational vehicle) or 'trailer'."
+        },
+        {
+          "text": "Glamping",
+          "depth": 2,
+          "name": "Glamping"
+        },
+        {
+          "text": "'Glamping' = glamorous + camping. It means camping with luxury comforts: proper beds, electricity, heating, and sometimes even hot tubs. Yurts, bell tents, treehouses, and shepherd's huts are popular glamping options.",
+          "depth": 2,
+          "name": "'Glamping' = glamorous + camping. It means camping with luxury comforts: proper beds, electricity, heating, and sometimes even hot tubs. Yurts, bell tents, treehouses, and shepherd's huts are popular glamping options."
+        },
+        {
+          "text": "The Countryside Code",
+          "depth": 2,
+          "name": "The Countryside Code"
+        },
+        {
+          "text": "In England and Wales, the Countryside Code asks visitors to: respect other people, protect the natural environment, and enjoy the outdoors responsibly. Key rules: close gates behind you, keep dogs under control, and take litter home.",
+          "depth": 2,
+          "name": "In England and Wales, the Countryside Code asks visitors to: respect other people, protect the natural environment, and enjoy the outdoors responsibly. Key rules: close gates behind you, keep dogs under control, and take litter home."
+        },
+        {
+          "text": "Duke of Edinburgh Award",
+          "depth": 2,
+          "name": "Duke of Edinburgh Award"
+        },
+        {
+          "text": "The 'DofE' is a popular programme for UK young people aged 14–24. It includes an expedition section where participants camp outdoors and navigate routes using maps and compasses. It's excellent vocabulary for camping and outdoor activities.",
+          "depth": 2,
+          "name": "The 'DofE' is a popular programme for UK young people aged 14–24. It includes an expedition section where participants camp outdoors and navigate routes using maps and compasses. It's excellent vocabulary for camping and outdoor activities."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "547:3005",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "tent",
+          "depth": 2,
+          "name": "tent"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "pitch a ~, ~ poles, ~ pegs",
+          "depth": 2,
+          "name": "pitch a ~, ~ poles, ~ pegs"
+        },
+        {
+          "text": "campfire",
+          "depth": 2,
+          "name": "campfire"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "light a ~, ~ stories, sit around a ~",
+          "depth": 2,
+          "name": "light a ~, ~ stories, sit around a ~"
+        },
+        {
+          "text": "sleeping bag",
+          "depth": 2,
+          "name": "sleeping bag"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "warm ~, zip up the ~, ~ liner",
+          "depth": 2,
+          "name": "warm ~, zip up the ~, ~ liner"
+        },
+        {
+          "text": "torch",
+          "depth": 2,
+          "name": "torch"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ light, hand ~, ~ batteries",
+          "depth": 2,
+          "name": "~ light, hand ~, ~ batteries"
+        },
+        {
+          "text": "compass",
+          "depth": 2,
+          "name": "compass"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "read a ~, ~ direction, ~ needle",
+          "depth": 2,
+          "name": "read a ~, ~ direction, ~ needle"
+        },
+        {
+          "text": "rucksack",
+          "depth": 2,
+          "name": "rucksack"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "pack a ~, ~ straps, hiking ~",
+          "depth": 2,
+          "name": "pack a ~, ~ straps, hiking ~"
+        },
+        {
+          "text": "campsite",
+          "depth": 2,
+          "name": "campsite"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "book a ~, ~ facilities, ~ pitch",
+          "depth": 2,
+          "name": "book a ~, ~ facilities, ~ pitch"
+        },
+        {
+          "text": "firewood",
+          "depth": 2,
+          "name": "firewood"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "collect ~, dry ~, ~ bundle",
+          "depth": 2,
+          "name": "collect ~, dry ~, ~ bundle"
+        },
+        {
+          "text": "binoculars",
+          "depth": 2,
+          "name": "binoculars"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "look through ~, ~ case, bird ~",
+          "depth": 2,
+          "name": "look through ~, ~ case, bird ~"
+        },
+        {
+          "text": "hiking",
+          "depth": 2,
+          "name": "hiking"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "go ~, ~ trail, ~ boots",
+          "depth": 2,
+          "name": "go ~, ~ trail, ~ boots"
+        }
+      ]
+    }
+  }
+}

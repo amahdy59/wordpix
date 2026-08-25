@@ -1,0 +1,1566 @@
+{
+  "unitId": "forest",
+  "name": "The Forest",
+  "subtopics": [
+    {
+      "id": "trees",
+      "title": "Trees",
+      "wordIds": [
+        "oak",
+        "maple",
+        "birch",
+        "pine",
+        "willow",
+        "cedar",
+        "elm",
+        "redwood",
+        "beech",
+        "spruce"
+      ]
+    },
+    {
+      "id": "plants-fungi",
+      "title": "Plants & Fungi",
+      "wordIds": [
+        "fern",
+        "moss",
+        "mushroom",
+        "ivy",
+        "berry-bush",
+        "wildflower",
+        "lichen",
+        "vine",
+        "acorn",
+        "pinecone"
+      ]
+    },
+    {
+      "id": "animals",
+      "title": "Animals",
+      "wordIds": [
+        "deer",
+        "squirrel",
+        "rabbit",
+        "fox",
+        "bear",
+        "owl",
+        "woodpecker",
+        "raccoon",
+        "hedgehog",
+        "badger"
+      ]
+    },
+    {
+      "id": "insects",
+      "title": "Insects",
+      "wordIds": [
+        "butterfly",
+        "beetle",
+        "ant",
+        "firefly",
+        "dragonfly",
+        "spider",
+        "caterpillar",
+        "ladybug",
+        "bee",
+        "moth"
+      ]
+    },
+    {
+      "id": "features",
+      "title": "Features",
+      "wordIds": [
+        "trail",
+        "stream",
+        "clearing",
+        "log",
+        "stump",
+        "canopy",
+        "undergrowth",
+        "bridge",
+        "waterfall",
+        "pond"
+      ]
+    },
+    {
+      "id": "seasons",
+      "title": "Seasons",
+      "wordIds": [
+        "spring-bloom",
+        "summer-green",
+        "autumn-leaves",
+        "winter-snow",
+        "bird-nest",
+        "migration",
+        "hibernation",
+        "seedling",
+        "fallen-leaf",
+        "icicle"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "oak",
+      "label": "Oak",
+      "ipa": "/oʊk/",
+      "cefr": "B1",
+      "imageNodeId": "119:5127"
+    },
+    {
+      "kind": "card",
+      "id": "maple",
+      "label": "Maple",
+      "ipa": "/ˈmeɪpəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:5131"
+    },
+    {
+      "kind": "card",
+      "id": "birch",
+      "label": "Birch",
+      "ipa": "/bɜːrtʃ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5135"
+    },
+    {
+      "kind": "card",
+      "id": "pine",
+      "label": "Pine",
+      "ipa": "/paɪn/",
+      "cefr": "B1",
+      "imageNodeId": "119:5139"
+    },
+    {
+      "kind": "card",
+      "id": "willow",
+      "label": "Willow",
+      "ipa": "/ˈwɪloʊ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5143"
+    },
+    {
+      "kind": "card",
+      "id": "cedar",
+      "label": "Cedar",
+      "ipa": "/ˈsiːdər/",
+      "cefr": "B1",
+      "imageNodeId": "119:5147"
+    },
+    {
+      "kind": "card",
+      "id": "elm",
+      "label": "Elm",
+      "ipa": "/ɛlm/",
+      "cefr": "B1",
+      "imageNodeId": "119:5151"
+    },
+    {
+      "kind": "card",
+      "id": "redwood",
+      "label": "Redwood",
+      "ipa": "/ˈrɛdˌwʊd/",
+      "cefr": "B1",
+      "imageNodeId": "119:5155"
+    },
+    {
+      "kind": "card",
+      "id": "beech",
+      "label": "Beech",
+      "ipa": "/biːtʃ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5159"
+    },
+    {
+      "kind": "card",
+      "id": "spruce",
+      "label": "Spruce",
+      "ipa": "/spruːs/",
+      "cefr": "B1",
+      "imageNodeId": "119:5163"
+    },
+    {
+      "kind": "card",
+      "id": "fern",
+      "label": "Fern",
+      "ipa": "/fɜːrn/",
+      "cefr": "B1",
+      "imageNodeId": "119:5172"
+    },
+    {
+      "kind": "card",
+      "id": "moss",
+      "label": "Moss",
+      "ipa": "/mɒs/",
+      "cefr": "B1",
+      "imageNodeId": "119:5176"
+    },
+    {
+      "kind": "card",
+      "id": "mushroom",
+      "label": "Mushroom",
+      "ipa": "/ˈmʌʃruːm/",
+      "cefr": "B1",
+      "imageNodeId": "119:5180"
+    },
+    {
+      "kind": "card",
+      "id": "ivy",
+      "label": "Ivy",
+      "ipa": "/ˈaɪvi/",
+      "cefr": "B1",
+      "imageNodeId": "119:5184"
+    },
+    {
+      "kind": "card",
+      "id": "berry-bush",
+      "label": "Berry Bush",
+      "ipa": "/ˈbɛri bʊʃ/",
+      "cefr": "B2",
+      "imageNodeId": "119:5188"
+    },
+    {
+      "kind": "card",
+      "id": "wildflower",
+      "label": "Wildflower",
+      "ipa": "/ˈwaɪldˌflaʊər/",
+      "cefr": "B2",
+      "imageNodeId": "119:5192"
+    },
+    {
+      "kind": "card",
+      "id": "lichen",
+      "label": "Lichen",
+      "ipa": "/ˈlaɪkən/",
+      "cefr": "B1",
+      "imageNodeId": "119:5196"
+    },
+    {
+      "kind": "card",
+      "id": "vine",
+      "label": "Vine",
+      "ipa": "/vaɪn/",
+      "cefr": "B1",
+      "imageNodeId": "119:5200"
+    },
+    {
+      "kind": "card",
+      "id": "acorn",
+      "label": "Acorn",
+      "ipa": "/ˈeɪkɔːrn/",
+      "cefr": "B1",
+      "imageNodeId": "119:5204"
+    },
+    {
+      "kind": "card",
+      "id": "pinecone",
+      "label": "Pinecone",
+      "ipa": "/ˈpaɪnˌkoʊn/",
+      "cefr": "B1",
+      "imageNodeId": "119:5208"
+    },
+    {
+      "kind": "card",
+      "id": "deer",
+      "label": "Deer",
+      "ipa": "/dɪər/",
+      "cefr": "B1",
+      "imageNodeId": "119:5217"
+    },
+    {
+      "kind": "card",
+      "id": "squirrel",
+      "label": "Squirrel",
+      "ipa": "/ˈskwɪrəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:5221"
+    },
+    {
+      "kind": "card",
+      "id": "rabbit",
+      "label": "Rabbit",
+      "ipa": "/ˈræbɪt/",
+      "cefr": "B1",
+      "imageNodeId": "119:5225"
+    },
+    {
+      "kind": "card",
+      "id": "fox",
+      "label": "Fox",
+      "ipa": "/fɒks/",
+      "cefr": "B1",
+      "imageNodeId": "119:5229"
+    },
+    {
+      "kind": "card",
+      "id": "bear",
+      "label": "Bear",
+      "ipa": "/bɛər/",
+      "cefr": "B1",
+      "imageNodeId": "119:5233"
+    },
+    {
+      "kind": "card",
+      "id": "owl",
+      "label": "Owl",
+      "ipa": "/aʊl/",
+      "cefr": "B1",
+      "imageNodeId": "119:5237"
+    },
+    {
+      "kind": "card",
+      "id": "woodpecker",
+      "label": "Woodpecker",
+      "ipa": "/ˈwʊdˌpɛkər/",
+      "cefr": "B2",
+      "imageNodeId": "119:5241"
+    },
+    {
+      "kind": "card",
+      "id": "raccoon",
+      "label": "Raccoon",
+      "ipa": "/ræˈkuːn/",
+      "cefr": "B1",
+      "imageNodeId": "119:5245"
+    },
+    {
+      "kind": "card",
+      "id": "hedgehog",
+      "label": "Hedgehog",
+      "ipa": "/ˈhɛdʒˌhɒɡ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5249"
+    },
+    {
+      "kind": "card",
+      "id": "badger",
+      "label": "Badger",
+      "ipa": "/ˈbædʒər/",
+      "cefr": "B1",
+      "imageNodeId": "119:5253"
+    },
+    {
+      "kind": "card",
+      "id": "butterfly",
+      "label": "Butterfly",
+      "ipa": "/ˈbʌtərˌflaɪ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5262"
+    },
+    {
+      "kind": "card",
+      "id": "beetle",
+      "label": "Beetle",
+      "ipa": "/ˈbiːtəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:5266"
+    },
+    {
+      "kind": "card",
+      "id": "ant",
+      "label": "Ant",
+      "ipa": "/ænt/",
+      "cefr": "B1",
+      "imageNodeId": "119:5270"
+    },
+    {
+      "kind": "card",
+      "id": "firefly",
+      "label": "Firefly",
+      "ipa": "/ˈfaɪərˌflaɪ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5274"
+    },
+    {
+      "kind": "card",
+      "id": "dragonfly",
+      "label": "Dragonfly",
+      "ipa": "/ˈdræɡənˌflaɪ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5278"
+    },
+    {
+      "kind": "card",
+      "id": "spider",
+      "label": "Spider",
+      "ipa": "/ˈspaɪdər/",
+      "cefr": "B1",
+      "imageNodeId": "119:5282"
+    },
+    {
+      "kind": "card",
+      "id": "caterpillar",
+      "label": "Caterpillar",
+      "ipa": "/ˈkætərˌpɪlər/",
+      "cefr": "B2",
+      "imageNodeId": "119:5286"
+    },
+    {
+      "kind": "card",
+      "id": "ladybug",
+      "label": "Ladybug",
+      "ipa": "/ˈleɪdiˌbʌɡ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5290"
+    },
+    {
+      "kind": "card",
+      "id": "bee",
+      "label": "Bee",
+      "ipa": "/biː/",
+      "cefr": "B1",
+      "imageNodeId": "119:5294"
+    },
+    {
+      "kind": "card",
+      "id": "moth",
+      "label": "Moth",
+      "ipa": "/mɒθ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5298"
+    },
+    {
+      "kind": "card",
+      "id": "trail",
+      "label": "Trail",
+      "ipa": "/treɪl/",
+      "cefr": "B1",
+      "imageNodeId": "119:5307"
+    },
+    {
+      "kind": "card",
+      "id": "stream",
+      "label": "Stream",
+      "ipa": "/striːm/",
+      "cefr": "B1",
+      "imageNodeId": "119:5311"
+    },
+    {
+      "kind": "card",
+      "id": "clearing",
+      "label": "Clearing",
+      "ipa": "/ˈklɪərɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5315"
+    },
+    {
+      "kind": "card",
+      "id": "log",
+      "label": "Log",
+      "ipa": "/lɒɡ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5319"
+    },
+    {
+      "kind": "card",
+      "id": "stump",
+      "label": "Stump",
+      "ipa": "/stʌmp/",
+      "cefr": "B1",
+      "imageNodeId": "119:5323"
+    },
+    {
+      "kind": "card",
+      "id": "canopy",
+      "label": "Canopy",
+      "ipa": "/ˈkænəpi/",
+      "cefr": "B1",
+      "imageNodeId": "119:5327"
+    },
+    {
+      "kind": "card",
+      "id": "undergrowth",
+      "label": "Undergrowth",
+      "ipa": "/ˈʌndərˌɡroʊθ/",
+      "cefr": "B2",
+      "imageNodeId": "119:5331"
+    },
+    {
+      "kind": "card",
+      "id": "bridge",
+      "label": "Bridge",
+      "ipa": "/brɪdʒ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5335"
+    },
+    {
+      "kind": "card",
+      "id": "waterfall",
+      "label": "Waterfall",
+      "ipa": "/ˈwɔːtərˌfɔːl/",
+      "cefr": "B1",
+      "imageNodeId": "119:5339"
+    },
+    {
+      "kind": "card",
+      "id": "pond",
+      "label": "Pond",
+      "ipa": "/pɒnd/",
+      "cefr": "B1",
+      "imageNodeId": "119:5343"
+    },
+    {
+      "kind": "card",
+      "id": "spring-bloom",
+      "label": "Spring Bloom",
+      "ipa": "/sprɪŋ bluːm/",
+      "cefr": "B2",
+      "imageNodeId": "119:5352"
+    },
+    {
+      "kind": "card",
+      "id": "summer-green",
+      "label": "Summer Green",
+      "ipa": "/ˈsʌmər ɡriːn/",
+      "cefr": "B2",
+      "imageNodeId": "119:5356"
+    },
+    {
+      "kind": "card",
+      "id": "autumn-leaves",
+      "label": "Autumn Leaves",
+      "ipa": "/ˈɔːtəm liːvz/",
+      "cefr": "B2",
+      "imageNodeId": "119:5360"
+    },
+    {
+      "kind": "card",
+      "id": "winter-snow",
+      "label": "Winter Snow",
+      "ipa": "/ˈwɪntər snoʊ/",
+      "cefr": "B2",
+      "imageNodeId": "119:5364"
+    },
+    {
+      "kind": "card",
+      "id": "bird-nest",
+      "label": "Bird Nest",
+      "ipa": "/bɜːrd nɛst/",
+      "cefr": "B2",
+      "imageNodeId": "119:5368"
+    },
+    {
+      "kind": "card",
+      "id": "migration",
+      "label": "Migration",
+      "ipa": "/maɪˈɡreɪʃən/",
+      "cefr": "B1",
+      "imageNodeId": "119:5372"
+    },
+    {
+      "kind": "card",
+      "id": "hibernation",
+      "label": "Hibernation",
+      "ipa": "/ˌhaɪbərˈneɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "119:5376"
+    },
+    {
+      "kind": "card",
+      "id": "seedling",
+      "label": "Seedling",
+      "ipa": "/ˈsiːdlɪŋ/",
+      "cefr": "B1",
+      "imageNodeId": "119:5380"
+    },
+    {
+      "kind": "card",
+      "id": "fallen-leaf",
+      "label": "Fallen Leaf",
+      "ipa": "/ˈfɔːlən liːf/",
+      "cefr": "B2",
+      "imageNodeId": "119:5384"
+    },
+    {
+      "kind": "card",
+      "id": "icicle",
+      "label": "Icicle",
+      "ipa": "/ˈaɪsɪkəl/",
+      "cefr": "B1",
+      "imageNodeId": "119:5388"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "554:3995",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "554:3997",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2 · Topic: The Forest",
+          "depth": 1,
+          "name": "Level: B2 · Topic: The Forest"
+        },
+        {
+          "text": "Layers of Life — Reading the Forest\n\nA forest is not a collection of trees. It is a layered ecosystem — a vertical architecture of canopy, undergrowth, and forest floor, each layer hosting its own community of plants, animals, and processes. To walk through a forest is to move through a living building.\n\nThe canopy is the roof. The tallest trees — oak, maple, birch, pine, willow, cedar, elm, redwood, beech, and spruce — compete for sunlight, spreading their branches to capture as much light as possible. Beneath them, the undergrowth consists of smaller trees, shrubs, and young saplings waiting for a gap in the canopy above. On the forest floor, ferns and moss thrive in the dim light. A mushroom breaks down dead wood. Ivy climbs trunks. A berry bush offers food to wildlife. Wildflowers bloom where light penetrates. Lichen encrusts rocks and bark. A vine loops between branches. An acorn — the seed of an oak — lies on the ground, ready to germinate. A pinecone releases the seeds of a conifer.\n\nThe forest changes with the seasons. Spring bloom fills the floor with colour before the canopy closes. Summer green creates a dense, humid interior. Autumn leaves — gold, orange, crimson — fall and carpet the ground. Winter snow reveals the structure of bare branches. A bird nest, emptied in autumn, waits for spring. Migration takes some birds south. Hibernation sends bears and hedgehogs underground. A seedling pushes through a fallen leaf. An icicle hangs from a branch after a freeze.\n\nWildlife occupies every layer. A deer moves through the undergrowth at dawn. A squirrel leaps between branches. A rabbit hides beneath a shrub. A fox hunts at the forest edge. A bear — omnivorous and powerful — dominates the food chain. An owl perches silently, hunting at night. A woodpecker drills into bark for insects. A raccoon forages after dark. A hedgehog curls into a ball when threatened. A badger digs elaborate underground networks.\n\nInsects are the forest's most numerous inhabitants. A butterfly navigates by sunlight. A beetle breaks down dead wood. An ant builds colonies of millions. A firefly glows at dusk — bioluminescence used for mating signals. A dragonfly patrols near water. A spider spins a web between branches. A caterpillar eats leaves before transforming into a moth or butterfly. A ladybug feeds on aphids. A bee pollinates wildflowers. A moth flies at night, navigating by moonlight.\n\nThe physical features of the forest create its character. A trail — a narrow path worn by feet and hooves — leads through the trees. A stream crosses the trail, spanned by a bridge. A clearing — an open area within the forest — lets sunlight reach the floor. A log lies across the path — a fallen tree slowly returning its nutrients to the soil. A stump is what remains after a tree has been cut. A waterfall drops from a rock ledge into a pool. A pond collects rainwater in a natural depression.\n\nThe forest produces oxygen, filters water, stores carbon, and supports biodiversity on a scale no other terrestrial ecosystem matches. It is not scenery — it is infrastructure. Every oak, every mushroom, every beetle is performing a function that, in aggregate, keeps the atmosphere breathable and the climate stable.",
+          "depth": 1,
+          "name": "Layers of Life — Reading the Forest A forest is not a collection of trees. It is a layered ecosystem — a vertical architecture of canopy, undergrowth, and forest floor, each layer hosting its own community of plants, animals, and processes. To walk through a forest is to move through a living building. The canopy is the roof. The tallest trees — oak, maple, birch, pine, willow, cedar, elm, redwood, beech, and spruce — compete for sunlight, spreading their branches to capture as much light as possible. Beneath them, the undergrowth consists of smaller trees, shrubs, and young saplings waiting for a gap in the canopy above. On the forest floor, ferns and moss thrive in the dim light. A mushroom breaks down dead wood. Ivy climbs trunks. A berry bush offers food to wildlife. Wildflowers bloom where light penetrates. Lichen encrusts rocks and bark. A vine loops between branches. An acorn — the seed of an oak — lies on the ground, ready to germinate. A pinecone releases the seeds of a conifer. The forest changes with the seasons. Spring bloom fills the floor with colour before the canopy closes. Summer green creates a dense, humid interior. Autumn leaves — gold, orange, crimson — fall and carpet the ground. Winter snow reveals the structure of bare branches. A bird nest, emptied in autumn, waits for spring. Migration takes some birds south. Hibernation sends bears and hedgehogs underground. A seedling pushes through a fallen leaf. An icicle hangs from a branch after a freeze. Wildlife occupies every layer. A deer moves through the undergrowth at dawn. A squirrel leaps between branches. A rabbit hides beneath a shrub. A fox hunts at the forest edge. A bear — omnivorous and powerful — dominates the food chain. An owl perches silently, hunting at night. A woodpecker drills into bark for insects. A raccoon forages after dark. A hedgehog curls into a ball when threatened. A badger digs elaborate underground networks. Insects are the forest's most numerous inhabitants. A butterfly navigates by sunlight. A beetle breaks down dead wood. An ant builds colonies of millions. A firefly glows at dusk — bioluminescence used for mating signals. A dragonfly patrols near water. A spider spins a web between branches. A caterpillar eats leaves before transforming into a moth or butterfly. A ladybug feeds on aphids. A bee pollinates wildflowers. A moth flies at night, navigating by moonlight. The physical features of the forest create its character. A trail — a narrow path worn by feet and hooves — leads through the trees. A stream crosses the trail, spanned by a bridge. A clearing — an open area within the forest — lets sunlight reach the floor. A log lies across the path — a fallen tree slowly returning its nutrients to the soil. A stump is what remains after a tree has been cut. A waterfall drops from a rock ledge into a pool. A pond collects rainwater in a natural depression. The forest produces oxygen, filters water, stores carbon, and supports biodiversity on a scale no other terrestrial ecosystem matches. It is not scenery — it is infrastructure. Every oak, every mushroom, every beetle is performing a function that, in aggregate, keeps the atmosphere breathable and the climate stable."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Describe the three vertical layers of the forest. What lives in each?",
+          "depth": 1,
+          "name": "1. Describe the three vertical layers of the forest. What lives in each?"
+        },
+        {
+          "text": "2. How does the forest change across the four seasons? Give specific examples from the passage.",
+          "depth": 1,
+          "name": "2. How does the forest change across the four seasons? Give specific examples from the passage."
+        },
+        {
+          "text": "3. Name five forest animals and describe how each is adapted to forest life.",
+          "depth": 1,
+          "name": "3. Name five forest animals and describe how each is adapted to forest life."
+        },
+        {
+          "text": "4. What role do insects play in the forest ecosystem? Give three examples with their functions.",
+          "depth": 1,
+          "name": "4. What role do insects play in the forest ecosystem? Give three examples with their functions."
+        },
+        {
+          "text": "5. The passage says the forest 'is not scenery — it is infrastructure.' What does this mean?",
+          "depth": 1,
+          "name": "5. The passage says the forest 'is not scenery — it is infrastructure.' What does this mean?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "554:4010",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "can't see the forest for the trees",
+          "depth": 2,
+          "name": "can't see the forest for the trees"
+        },
+        {
+          "text": "too focused on small details to see the bigger picture",
+          "depth": 2,
+          "name": "too focused on small details to see the bigger picture"
+        },
+        {
+          "text": "\"She studied every oak and maple but couldn't see the forest for the trees — the whole ecosystem was changing.\"",
+          "depth": 2,
+          "name": "\"She studied every oak and maple but couldn't see the forest for the trees — the whole ecosystem was changing.\""
+        },
+        {
+          "text": "out of the woods",
+          "depth": 2,
+          "name": "out of the woods"
+        },
+        {
+          "text": "past a dangerous or difficult situation",
+          "depth": 2,
+          "name": "past a dangerous or difficult situation"
+        },
+        {
+          "text": "\"After navigating through the dense birch and spruce, we were finally out of the woods — literally.\"",
+          "depth": 2,
+          "name": "\"After navigating through the dense birch and spruce, we were finally out of the woods — literally.\""
+        },
+        {
+          "text": "bark up the wrong tree",
+          "depth": 2,
+          "name": "bark up the wrong tree"
+        },
+        {
+          "text": "pursue a mistaken approach or direct blame at the wrong person",
+          "depth": 2,
+          "name": "pursue a mistaken approach or direct blame at the wrong person"
+        },
+        {
+          "text": "\"The ranger was barking up the wrong tree — the bark damage wasn't from a bear but from a woodpecker.\"",
+          "depth": 2,
+          "name": "\"The ranger was barking up the wrong tree — the bark damage wasn't from a bear but from a woodpecker.\""
+        },
+        {
+          "text": "a neck of the woods",
+          "depth": 2,
+          "name": "a neck of the woods"
+        },
+        {
+          "text": "a particular area or neighbourhood",
+          "depth": 2,
+          "name": "a particular area or neighbourhood"
+        },
+        {
+          "text": "\"In this neck of the woods, you'll find redwood and cedar towering above the fern and moss.\"",
+          "depth": 2,
+          "name": "\"In this neck of the woods, you'll find redwood and cedar towering above the fern and moss.\""
+        },
+        {
+          "text": "go out on a limb",
+          "depth": 2,
+          "name": "go out on a limb"
+        },
+        {
+          "text": "take a risk or say something bold",
+          "depth": 2,
+          "name": "take a risk or say something bold"
+        },
+        {
+          "text": "\"I'll go out on a limb and say that vine-covered elm is at least two hundred years old.\"",
+          "depth": 2,
+          "name": "\"I'll go out on a limb and say that vine-covered elm is at least two hundred years old.\""
+        },
+        {
+          "text": "turn over a new leaf",
+          "depth": 2,
+          "name": "turn over a new leaf"
+        },
+        {
+          "text": "make a fresh start or change behaviour for the better",
+          "depth": 2,
+          "name": "make a fresh start or change behaviour for the better"
+        },
+        {
+          "text": "\"After years of ignoring nature, he turned over a new leaf — now he identifies every mushroom, pinecone, and berry bush on the trail.\"",
+          "depth": 2,
+          "name": "\"After years of ignoring nature, he turned over a new leaf — now he identifies every mushroom, pinecone, and berry bush on the trail.\""
+        },
+        {
+          "text": "the root of the problem",
+          "depth": 2,
+          "name": "the root of the problem"
+        },
+        {
+          "text": "the fundamental cause of an issue",
+          "depth": 2,
+          "name": "the fundamental cause of an issue"
+        },
+        {
+          "text": "\"The root of the problem was clear — ivy and vine were choking the young willow saplings.\"",
+          "depth": 2,
+          "name": "\"The root of the problem was clear — ivy and vine were choking the young willow saplings.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "554:4042",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A park ranger leads a group of visitors on a guided nature walk through the forest",
+          "depth": 1,
+          "name": "Scene: A park ranger leads a group of visitors on a guided nature walk through the forest"
+        },
+        {
+          "text": "Ranger:",
+          "depth": 2,
+          "name": "Ranger:"
+        },
+        {
+          "text": "Welcome to the old-growth forest. These oak and maple trees are over a hundred years old. Watch your step — the moss can be slippery.",
+          "depth": 2,
+          "name": "Welcome to the old-growth forest. These oak and maple trees are over a hundred years old. Watch your step — the moss can be slippery."
+        },
+        {
+          "text": "Visitor 1:",
+          "depth": 2,
+          "name": "Visitor 1:"
+        },
+        {
+          "text": "What's that tall tree with the reddish bark?",
+          "depth": 2,
+          "name": "What's that tall tree with the reddish bark?"
+        },
+        {
+          "text": "Ranger:",
+          "depth": 2,
+          "name": "Ranger:"
+        },
+        {
+          "text": "That's a redwood. Next to it is a cedar, and the white-barked one is a birch. Each species plays a different role in the ecosystem.",
+          "depth": 2,
+          "name": "That's a redwood. Next to it is a cedar, and the white-barked one is a birch. Each species plays a different role in the ecosystem."
+        },
+        {
+          "text": "Visitor 2:",
+          "depth": 2,
+          "name": "Visitor 2:"
+        },
+        {
+          "text": "I see mushrooms growing on that fallen elm. Are they safe to eat?",
+          "depth": 2,
+          "name": "I see mushrooms growing on that fallen elm. Are they safe to eat?"
+        },
+        {
+          "text": "Ranger:",
+          "depth": 2,
+          "name": "Ranger:"
+        },
+        {
+          "text": "Never eat wild mushrooms unless you're an expert. See the lichen and fern growing alongside? They prefer the same damp conditions.",
+          "depth": 2,
+          "name": "Never eat wild mushrooms unless you're an expert. See the lichen and fern growing alongside? They prefer the same damp conditions."
+        },
+        {
+          "text": "Visitor 1:",
+          "depth": 2,
+          "name": "Visitor 1:"
+        },
+        {
+          "text": "Look — a squirrel just ran up the pine! And there's an acorn on the ground.",
+          "depth": 2,
+          "name": "Look — a squirrel just ran up the pine! And there's an acorn on the ground."
+        },
+        {
+          "text": "Ranger:",
+          "depth": 2,
+          "name": "Ranger:"
+        },
+        {
+          "text": "Squirrels bury acorns and pinecones for winter. You might also spot a fox or a raccoon near the berry bush over there.",
+          "depth": 2,
+          "name": "Squirrels bury acorns and pinecones for winter. You might also spot a fox or a raccoon near the berry bush over there."
+        },
+        {
+          "text": "Visitor 2:",
+          "depth": 2,
+          "name": "Visitor 2:"
+        },
+        {
+          "text": "I hear tapping — is that a woodpecker?",
+          "depth": 2,
+          "name": "I hear tapping — is that a woodpecker?"
+        },
+        {
+          "text": "Ranger:",
+          "depth": 2,
+          "name": "Ranger:"
+        },
+        {
+          "text": "Yes! It's on the beech tree. If we're quiet, we might see an owl or a hedgehog. Fireflies come out at dusk too.",
+          "depth": 2,
+          "name": "Yes! It's on the beech tree. If we're quiet, we might see an owl or a hedgehog. Fireflies come out at dusk too."
+        },
+        {
+          "text": "Visitor 1:",
+          "depth": 2,
+          "name": "Visitor 1:"
+        },
+        {
+          "text": "The ivy and vine are so thick here. Does that harm the trees?",
+          "depth": 2,
+          "name": "The ivy and vine are so thick here. Does that harm the trees?"
+        },
+        {
+          "text": "Ranger:",
+          "depth": 2,
+          "name": "Ranger:"
+        },
+        {
+          "text": "It can. Too much ivy chokes the willow and spruce. We clear it to let the wildflowers and young saplings get sunlight.",
+          "depth": 2,
+          "name": "It can. Too much ivy chokes the willow and spruce. We clear it to let the wildflowers and young saplings get sunlight."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "554:4080",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"We saw a deer, a squirrel, and a fox — the wildlife were amazing in the forest.\"",
+          "depth": 2,
+          "name": "❌ \"We saw a deer, a squirrel, and a fox — the wildlife were amazing in the forest.\""
+        },
+        {
+          "text": "✅ \"We saw a deer, a squirrel, and a fox — the wildlife was amazing in the forest.\"",
+          "depth": 2,
+          "name": "✅ \"We saw a deer, a squirrel, and a fox — the wildlife was amazing in the forest.\""
+        },
+        {
+          "text": "'Wildlife' is an uncountable noun — always singular: 'the wildlife is', 'the wildlife was.' Never 'wildlife were' or 'a wildlife.' For countable reference: 'wild animals', 'species.' Similarly: 'livestock is' (not *are), 'poultry is' (not *are) when referring to the group. 'The deer' can be singular or plural (same form): 'a deer was' / 'three deer were.'",
+          "depth": 2,
+          "name": "'Wildlife' is an uncountable noun — always singular: 'the wildlife is', 'the wildlife was.' Never 'wildlife were' or 'a wildlife.' For countable reference: 'wild animals', 'species.' Similarly: 'livestock is' (not *are), 'poultry is' (not *are) when referring to the group. 'The deer' can be singular or plural (same form): 'a deer was' / 'three deer were.'"
+        },
+        {
+          "text": "❌ \"The forest has much different species of trees, including oak, maple, and birch.\"",
+          "depth": 2,
+          "name": "❌ \"The forest has much different species of trees, including oak, maple, and birch.\""
+        },
+        {
+          "text": "✅ \"The forest has many different species of trees, including oak, maple, and birch.\"",
+          "depth": 2,
+          "name": "✅ \"The forest has many different species of trees, including oak, maple, and birch.\""
+        },
+        {
+          "text": "'Many' + countable plural: 'many species', 'many trees.' 'Much' + uncountable: 'much vegetation', 'much biodiversity.' In positive sentences, 'a lot of' replaces both: 'a lot of species', 'a lot of vegetation.' 'Much' is more natural in negative/question forms: 'There isn't much undergrowth.' 'Is there much wildlife?'",
+          "depth": 2,
+          "name": "'Many' + countable plural: 'many species', 'many trees.' 'Much' + uncountable: 'much vegetation', 'much biodiversity.' In positive sentences, 'a lot of' replaces both: 'a lot of species', 'a lot of vegetation.' 'Much' is more natural in negative/question forms: 'There isn't much undergrowth.' 'Is there much wildlife?'"
+        },
+        {
+          "text": "❌ \"Despite it was raining heavily, we continued walking along the forest trail.\"",
+          "depth": 2,
+          "name": "❌ \"Despite it was raining heavily, we continued walking along the forest trail.\""
+        },
+        {
+          "text": "✅ \"Despite the heavy rain, we continued walking along the forest trail.\" / \"Although it was raining heavily, we continued walking.\"",
+          "depth": 2,
+          "name": "✅ \"Despite the heavy rain, we continued walking along the forest trail.\" / \"Although it was raining heavily, we continued walking.\""
+        },
+        {
+          "text": "'Despite' + noun/gerund: 'despite the rain', 'despite getting wet.' 'Although' + clause: 'although it was raining.' Never *'despite + clause.' 'In spite of' = 'despite': 'in spite of the rain.' Choose the structure that fits the grammar — both convey the same meaning.",
+          "depth": 2,
+          "name": "'Despite' + noun/gerund: 'despite the rain', 'despite getting wet.' 'Although' + clause: 'although it was raining.' Never *'despite + clause.' 'In spite of' = 'despite': 'in spite of the rain.' Choose the structure that fits the grammar — both convey the same meaning."
+        },
+        {
+          "text": "❌ \"A squirrel was sat on the stump eating an acorn when we walked past.\"",
+          "depth": 2,
+          "name": "❌ \"A squirrel was sat on the stump eating an acorn when we walked past.\""
+        },
+        {
+          "text": "✅ \"A squirrel was sitting on the stump eating an acorn when we walked past.\"",
+          "depth": 2,
+          "name": "✅ \"A squirrel was sitting on the stump eating an acorn when we walked past.\""
+        },
+        {
+          "text": "'Was sitting' (past continuous) = ongoing action in progress. *'Was sat' is dialectal British English but non-standard in formal writing. Standard forms: 'was sitting' (active, in progress), 'was seated' (formal/passive — someone placed in a seat). Same issue: *'was stood' → 'was standing.' Use the -ing form for actions in progress.",
+          "depth": 2,
+          "name": "'Was sitting' (past continuous) = ongoing action in progress. *'Was sat' is dialectal British English but non-standard in formal writing. Standard forms: 'was sitting' (active, in progress), 'was seated' (formal/passive — someone placed in a seat). Same issue: *'was stood' → 'was standing.' Use the -ing form for actions in progress."
+        },
+        {
+          "text": "❌ \"There are less forests in the world today than there were a hundred years ago.\"",
+          "depth": 2,
+          "name": "❌ \"There are less forests in the world today than there were a hundred years ago.\""
+        },
+        {
+          "text": "✅ \"There are fewer forests in the world today than there were a hundred years ago.\"",
+          "depth": 2,
+          "name": "✅ \"There are fewer forests in the world today than there were a hundred years ago.\""
+        },
+        {
+          "text": "'Fewer' + countable plural: 'fewer forests', 'fewer trees', 'fewer species.' 'Less' + uncountable: 'less forest cover', 'less biodiversity', 'less vegetation.' Note: 'forest' as a countable noun (individual forests) takes 'fewer'; 'forest' as an uncountable concept (forest cover/area) takes 'less.' Context determines the choice.",
+          "depth": 2,
+          "name": "'Fewer' + countable plural: 'fewer forests', 'fewer trees', 'fewer species.' 'Less' + uncountable: 'less forest cover', 'less biodiversity', 'less vegetation.' Note: 'forest' as a countable noun (individual forests) takes 'fewer'; 'forest' as an uncountable concept (forest cover/area) takes 'less.' Context determines the choice."
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "554:4104",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how nature and ecology vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how nature and ecology vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "forest",
+          "depth": 2,
+          "name": "forest"
+        },
+        {
+          "text": "forest / forestry / forester",
+          "depth": 2,
+          "name": "forest / forestry / forester"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "forested",
+          "depth": 2,
+          "name": "forested"
+        },
+        {
+          "text": "deforest",
+          "depth": 2,
+          "name": "deforest"
+        },
+        {
+          "text": "deforestation",
+          "depth": 2,
+          "name": "deforestation"
+        },
+        {
+          "text": "deforest",
+          "depth": 2,
+          "name": "deforest"
+        },
+        {
+          "text": "deforested",
+          "depth": 2,
+          "name": "deforested"
+        },
+        {
+          "text": "conserve",
+          "depth": 2,
+          "name": "conserve"
+        },
+        {
+          "text": "conservation / conservationist",
+          "depth": 2,
+          "name": "conservation / conservationist"
+        },
+        {
+          "text": "conserve",
+          "depth": 2,
+          "name": "conserve"
+        },
+        {
+          "text": "conserved",
+          "depth": 2,
+          "name": "conserved"
+        },
+        {
+          "text": "decompose",
+          "depth": 2,
+          "name": "decompose"
+        },
+        {
+          "text": "decomposition / decomposer",
+          "depth": 2,
+          "name": "decomposition / decomposer"
+        },
+        {
+          "text": "decompose",
+          "depth": 2,
+          "name": "decompose"
+        },
+        {
+          "text": "decomposed",
+          "depth": 2,
+          "name": "decomposed"
+        },
+        {
+          "text": "erode",
+          "depth": 2,
+          "name": "erode"
+        },
+        {
+          "text": "erosion",
+          "depth": 2,
+          "name": "erosion"
+        },
+        {
+          "text": "erode",
+          "depth": 2,
+          "name": "erode"
+        },
+        {
+          "text": "eroded",
+          "depth": 2,
+          "name": "eroded"
+        },
+        {
+          "text": "sustain",
+          "depth": 2,
+          "name": "sustain"
+        },
+        {
+          "text": "sustainability",
+          "depth": 2,
+          "name": "sustainability"
+        },
+        {
+          "text": "sustain",
+          "depth": 2,
+          "name": "sustain"
+        },
+        {
+          "text": "sustainable / sustained",
+          "depth": 2,
+          "name": "sustainable / sustained"
+        },
+        {
+          "text": "pollinate",
+          "depth": 2,
+          "name": "pollinate"
+        },
+        {
+          "text": "pollination / pollinator",
+          "depth": 2,
+          "name": "pollination / pollinator"
+        },
+        {
+          "text": "pollinate",
+          "depth": 2,
+          "name": "pollinate"
+        },
+        {
+          "text": "pollinated",
+          "depth": 2,
+          "name": "pollinated"
+        },
+        {
+          "text": "photosynthesise",
+          "depth": 2,
+          "name": "photosynthesise"
+        },
+        {
+          "text": "photosynthesis",
+          "depth": 2,
+          "name": "photosynthesis"
+        },
+        {
+          "text": "photosynthesise",
+          "depth": 2,
+          "name": "photosynthesise"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "branch",
+          "depth": 2,
+          "name": "branch"
+        },
+        {
+          "text": "branch",
+          "depth": 2,
+          "name": "branch"
+        },
+        {
+          "text": "branch",
+          "depth": 2,
+          "name": "branch"
+        },
+        {
+          "text": "branched / branching",
+          "depth": 2,
+          "name": "branched / branching"
+        },
+        {
+          "text": "shelter",
+          "depth": 2,
+          "name": "shelter"
+        },
+        {
+          "text": "shelter",
+          "depth": 2,
+          "name": "shelter"
+        },
+        {
+          "text": "shelter",
+          "depth": 2,
+          "name": "shelter"
+        },
+        {
+          "text": "sheltered",
+          "depth": 2,
+          "name": "sheltered"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "554:4164",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  The __________ is the top layer of the forest formed by the tallest trees' branches.",
+          "depth": 1,
+          "name": "1. The __________ is the top layer of the forest formed by the tallest trees' branches."
+        },
+        {
+          "text": "2.  The __________ consists of smaller trees, shrubs, and saplings beneath the canopy.",
+          "depth": 1,
+          "name": "2. The __________ consists of smaller trees, shrubs, and saplings beneath the canopy."
+        },
+        {
+          "text": "3.  A __________ breaks down dead wood on the forest floor, recycling nutrients.",
+          "depth": 1,
+          "name": "3. A __________ breaks down dead wood on the forest floor, recycling nutrients."
+        },
+        {
+          "text": "4.  A __________ — an open area within the forest — lets sunlight reach the ground.",
+          "depth": 1,
+          "name": "4. A __________ — an open area within the forest — lets sunlight reach the ground."
+        },
+        {
+          "text": "5.  An __________ — the seed of an oak tree — lies on the ground ready to germinate.",
+          "depth": 1,
+          "name": "5. An __________ — the seed of an oak tree — lies on the ground ready to germinate."
+        },
+        {
+          "text": "6.  __________ sends bears and hedgehogs underground during the coldest months.",
+          "depth": 1,
+          "name": "6. __________ sends bears and hedgehogs underground during the coldest months."
+        },
+        {
+          "text": "7.  A __________ glows at dusk, using bioluminescence as a mating signal.",
+          "depth": 1,
+          "name": "7. A __________ glows at dusk, using bioluminescence as a mating signal."
+        },
+        {
+          "text": "8.  A __________ is what remains after a tree has been cut down, slowly decaying.",
+          "depth": 1,
+          "name": "8. A __________ is what remains after a tree has been cut down, slowly decaying."
+        },
+        {
+          "text": "9.  __________ encrusts rocks and bark, surviving in conditions too harsh for other plants.",
+          "depth": 1,
+          "name": "9. __________ encrusts rocks and bark, surviving in conditions too harsh for other plants."
+        },
+        {
+          "text": "10. A __________ drills into tree bark to find insects hidden beneath the surface.",
+          "depth": 1,
+          "name": "10. A __________ drills into tree bark to find insects hidden beneath the surface."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. canopy  2. undergrowth  3. mushroom  4. clearing  5. acorn  6. Hibernation  7. firefly  8. stump  9. Lichen  10. woodpecker",
+          "depth": 2,
+          "name": "1. canopy 2. undergrowth 3. mushroom 4. clearing 5. acorn 6. Hibernation 7. firefly 8. stump 9. Lichen 10. woodpecker"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "554:4182",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Forest vs Wood vs Woodland",
+          "depth": 2,
+          "name": "Forest vs Wood vs Woodland"
+        },
+        {
+          "text": "'Forest' = a large, dense area of trees. 'Wood' or 'woods' = a smaller area of trees ('a walk in the woods'). 'Woodland' = a general term for land covered with trees, often used in conservation. 'Grove' = a small group of trees. 'Copse' = a very small, dense group of trees.",
+          "depth": 2,
+          "name": "'Forest' = a large, dense area of trees. 'Wood' or 'woods' = a smaller area of trees ('a walk in the woods'). 'Woodland' = a general term for land covered with trees, often used in conservation. 'Grove' = a small group of trees. 'Copse' = a very small, dense group of trees."
+        },
+        {
+          "text": "Ancient Woodland",
+          "depth": 2,
+          "name": "Ancient Woodland"
+        },
+        {
+          "text": "In the UK, 'ancient woodland' means woodland that has existed continuously since at least 1600 (in England/Wales) or 1750 (in Scotland). These are incredibly valuable habitats. Once destroyed, ancient woodland cannot be recreated. The Woodland Trust campaigns to protect them.",
+          "depth": 2,
+          "name": "In the UK, 'ancient woodland' means woodland that has existed continuously since at least 1600 (in England/Wales) or 1750 (in Scotland). These are incredibly valuable habitats. Once destroyed, ancient woodland cannot be recreated. The Woodland Trust campaigns to protect them."
+        },
+        {
+          "text": "Forest Bathing",
+          "depth": 2,
+          "name": "Forest Bathing"
+        },
+        {
+          "text": "'Shinrin-yoku' (forest bathing) originated in Japan in the 1980s. It means slowly and mindfully spending time among trees — not exercising, just being present. Studies show it reduces stress hormones, lowers blood pressure, and boosts the immune system. It's now practised worldwide.",
+          "depth": 2,
+          "name": "'Shinrin-yoku' (forest bathing) originated in Japan in the 1980s. It means slowly and mindfully spending time among trees — not exercising, just being present. Studies show it reduces stress hormones, lowers blood pressure, and boosts the immune system. It's now practised worldwide."
+        },
+        {
+          "text": "Common British Trees",
+          "depth": 2,
+          "name": "Common British Trees"
+        },
+        {
+          "text": "Oak = strong, long-lived, produces acorns. Beech = smooth grey bark, golden autumn leaves. Birch = white bark, delicate leaves. Ash = compound leaves, winged seeds. Horse chestnut = produces conkers (a children's game). Yew = evergreen, found in churchyards, extremely long-lived (some over 2,000 years).",
+          "depth": 2,
+          "name": "Oak = strong, long-lived, produces acorns. Beech = smooth grey bark, golden autumn leaves. Birch = white bark, delicate leaves. Ash = compound leaves, winged seeds. Horse chestnut = produces conkers (a children's game). Yew = evergreen, found in churchyards, extremely long-lived (some over 2,000 years)."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "554:4198",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "canopy",
+          "depth": 2,
+          "name": "canopy"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "forest ~, tree ~, ~ cover",
+          "depth": 2,
+          "name": "forest ~, tree ~, ~ cover"
+        },
+        {
+          "text": "trunk",
+          "depth": 2,
+          "name": "trunk"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "tree ~, ~ diameter, ~ bark",
+          "depth": 2,
+          "name": "tree ~, ~ diameter, ~ bark"
+        },
+        {
+          "text": "branch",
+          "depth": 2,
+          "name": "branch"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "tree ~, ~ out, ~ off",
+          "depth": 2,
+          "name": "tree ~, ~ out, ~ off"
+        },
+        {
+          "text": "roots",
+          "depth": 2,
+          "name": "roots"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "tree ~, deep ~, ~ system",
+          "depth": 2,
+          "name": "tree ~, deep ~, ~ system"
+        },
+        {
+          "text": "bark",
+          "depth": 2,
+          "name": "bark"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "tree ~, ~ texture, ~ peeling",
+          "depth": 2,
+          "name": "tree ~, ~ texture, ~ peeling"
+        },
+        {
+          "text": "undergrowth",
+          "depth": 2,
+          "name": "undergrowth"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "thick ~, ~ clearing, ~ path",
+          "depth": 2,
+          "name": "thick ~, ~ clearing, ~ path"
+        },
+        {
+          "text": "deciduous",
+          "depth": 2,
+          "name": "deciduous"
+        },
+        {
+          "text": "adj",
+          "depth": 2,
+          "name": "adj"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ tree, ~ forest, ~ woodland",
+          "depth": 2,
+          "name": "~ tree, ~ forest, ~ woodland"
+        },
+        {
+          "text": "coniferous",
+          "depth": 2,
+          "name": "coniferous"
+        },
+        {
+          "text": "adj",
+          "depth": 2,
+          "name": "adj"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ forest, ~ tree, ~ woodland",
+          "depth": 2,
+          "name": "~ forest, ~ tree, ~ woodland"
+        },
+        {
+          "text": "ecosystem",
+          "depth": 2,
+          "name": "ecosystem"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "forest ~, ~ balance, ~ diversity",
+          "depth": 2,
+          "name": "forest ~, ~ balance, ~ diversity"
+        },
+        {
+          "text": "habitat",
+          "depth": 2,
+          "name": "habitat"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "natural ~, ~ loss, wildlife ~",
+          "depth": 2,
+          "name": "natural ~, ~ loss, wildlife ~"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2161 @@
+{
+  "unitId": "spa",
+  "name": "The Spa",
+  "subtopics": [
+    {
+      "id": "treatments",
+      "title": "Treatments",
+      "wordIds": [
+        "massage",
+        "facial",
+        "body-wrap",
+        "scrub",
+        "manicure",
+        "pedicure",
+        "aromatherapy",
+        "hot-stone",
+        "deep-tissue",
+        "reflexology",
+        "swedish",
+        "exfoliation",
+        "body-scrub",
+        "seaweed-wrap",
+        "facial-mask",
+        "clay-mask",
+        "cucumber",
+        "thai-massage",
+        "sports-massage",
+        "lymphatic-drainage",
+        "cupping-therapy",
+        "hot-stone-therapy",
+        "cold-therapy",
+        "hydrotherapy",
+        "flotation-tank",
+        "mineral-bath",
+        "seaweed-wrap",
+        "paraffin-wax-treatment",
+        "manicure",
+        "pedicure",
+        "foot-soak",
+        "scalp-treatment",
+        "facial-steamer",
+        "dermaroller",
+        "led-light-therapy"
+      ]
+    },
+    {
+      "id": "facilities",
+      "title": "Facilities",
+      "wordIds": [
+        "sauna",
+        "steam-room",
+        "hot-tub",
+        "pool",
+        "relaxation-room",
+        "shower",
+        "locker-room",
+        "reception",
+        "garden",
+        "terrace",
+        "plunge-pool",
+        "salt-room",
+        "mud-bath",
+        "towel-warmer",
+        "infrared-sauna",
+        "cryotherapy",
+        "salt-scrub",
+        "sugar-scrub",
+        "coffee-scrub",
+        "clay-wrap",
+        "detox-wrap"
+      ]
+    },
+    {
+      "id": "products",
+      "title": "Products",
+      "wordIds": [
+        "essential-oil",
+        "lotion",
+        "cream",
+        "mask",
+        "serum",
+        "salt",
+        "mud",
+        "candle",
+        "incense",
+        "herb",
+        "diffuser",
+        "moisturizer",
+        "toner",
+        "cleanser",
+        "eye-cream",
+        "aloe-vera-gel",
+        "jojoba-oil",
+        "coconut-oil",
+        "eucalyptus-oil",
+        "lavender-oil",
+        "tea-tree-oil",
+        "peppermint-oil",
+        "lip-balm"
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Equipment",
+      "wordIds": [
+        "massage-table",
+        "robe",
+        "slippers",
+        "towel",
+        "headband",
+        "eye-mask",
+        "cushion",
+        "diffuser",
+        "heated-bed",
+        "basin",
+        "headrest",
+        "heated-blanket",
+        "meditation-cushion",
+        "zen-garden",
+        "water-feature",
+        "bamboo-mat",
+        "stone-pathway"
+      ]
+    },
+    {
+      "id": "wellness",
+      "title": "Wellness",
+      "wordIds": [
+        "meditation",
+        "yoga",
+        "breathing",
+        "mindfulness",
+        "stretching",
+        "detox",
+        "hydration",
+        "sleep",
+        "balance",
+        "relaxation",
+        "herbal-tea",
+        "infused-water",
+        "ambient-music",
+        "acupuncture",
+        "shiatsu",
+        "hot-wax",
+        "meditation-room"
+      ]
+    },
+    {
+      "id": "staff",
+      "title": "Staff",
+      "wordIds": [
+        "therapist",
+        "esthetician",
+        "receptionist",
+        "nail-technician",
+        "masseuse",
+        "yoga-instructor",
+        "attendant",
+        "concierge",
+        "nutritionist",
+        "trainer",
+        "meditation-room",
+        "meditation-room"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "kind": "card",
+      "id": "massage",
+      "label": "Massage",
+      "ipa": "/məˈsɑːʒ/",
+      "cefr": "B2",
+      "imageNodeId": "119:9831"
+    },
+    {
+      "kind": "card",
+      "id": "facial",
+      "label": "Facial",
+      "ipa": "/ˈfeɪʃəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:9835"
+    },
+    {
+      "kind": "card",
+      "id": "body-wrap",
+      "label": "Body Wrap",
+      "ipa": "/ˈbɒdi ræp/",
+      "cefr": "C1",
+      "imageNodeId": "119:9839"
+    },
+    {
+      "kind": "card",
+      "id": "scrub",
+      "label": "Scrub",
+      "ipa": "/skrʌb/",
+      "cefr": "B2",
+      "imageNodeId": "119:9843"
+    },
+    {
+      "kind": "card",
+      "id": "manicure",
+      "label": "Manicure",
+      "ipa": "/ˈmænɪkjʊər/",
+      "cefr": "B2",
+      "imageNodeId": "119:9847"
+    },
+    {
+      "kind": "card",
+      "id": "pedicure",
+      "label": "Pedicure",
+      "ipa": "/ˈpɛdɪkjʊər/",
+      "cefr": "B2",
+      "imageNodeId": "119:9851"
+    },
+    {
+      "kind": "card",
+      "id": "aromatherapy",
+      "label": "Aromatherapy",
+      "ipa": "/əˌroʊməˈθɛrəpi/",
+      "cefr": "C1",
+      "imageNodeId": "119:9855"
+    },
+    {
+      "kind": "card",
+      "id": "hot-stone",
+      "label": "Hot Stone",
+      "ipa": "/hɒt stoʊn/",
+      "cefr": "C1",
+      "imageNodeId": "119:9859"
+    },
+    {
+      "kind": "card",
+      "id": "deep-tissue",
+      "label": "Deep Tissue",
+      "ipa": "/diːp ˈtɪʃuː/",
+      "cefr": "C1",
+      "imageNodeId": "119:9863"
+    },
+    {
+      "kind": "card",
+      "id": "reflexology",
+      "label": "Reflexology",
+      "ipa": "/ˌriːflɛkˈsɒlədʒi/",
+      "cefr": "C1",
+      "imageNodeId": "119:9867"
+    },
+    {
+      "kind": "card",
+      "id": "swedish",
+      "label": "Swedish Massage",
+      "ipa": "/ˈswiːdɪʃ məˈsɑːʒ/",
+      "cefr": "C1",
+      "imageNodeId": "491:1713"
+    },
+    {
+      "kind": "card",
+      "id": "exfoliation",
+      "label": "Exfoliation",
+      "ipa": "/ɛksˌfoʊliˈeɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "491:1717"
+    },
+    {
+      "kind": "card",
+      "id": "body-scrub",
+      "label": "Body Scrub",
+      "ipa": "/ˈbɒdi skrʌb/",
+      "cefr": "C1",
+      "imageNodeId": "491:1721"
+    },
+    {
+      "kind": "card",
+      "id": "seaweed-wrap",
+      "label": "Seaweed Wrap",
+      "ipa": "/ˈsiːwiːd ræp/",
+      "cefr": "C1",
+      "imageNodeId": "491:1725"
+    },
+    {
+      "kind": "card",
+      "id": "facial-mask",
+      "label": "Facial Mask",
+      "ipa": "/ˈfeɪʃəl mɑːsk/",
+      "cefr": "C1",
+      "imageNodeId": "491:1729"
+    },
+    {
+      "kind": "card",
+      "id": "clay-mask",
+      "label": "Clay Mask",
+      "ipa": "/kleɪ mɑːsk/",
+      "cefr": "C1",
+      "imageNodeId": "491:1733"
+    },
+    {
+      "kind": "card",
+      "id": "cucumber",
+      "label": "Cucumber Slices",
+      "ipa": "/ˈkjuːkʌmbər ˈslaɪsɪz/",
+      "cefr": "C1",
+      "imageNodeId": "491:1737"
+    },
+    {
+      "kind": "card",
+      "id": "thai-massage",
+      "label": "Thai Massage",
+      "ipa": "/taɪ məˈsɑːʒ/",
+      "cefr": "C1",
+      "imageNodeId": "494:1123"
+    },
+    {
+      "kind": "card",
+      "id": "sports-massage",
+      "label": "Sports Massage",
+      "ipa": "/spɔːrts məˈsɑːʒ/",
+      "cefr": "C1",
+      "imageNodeId": "494:1127"
+    },
+    {
+      "kind": "card",
+      "id": "lymphatic-drainage",
+      "label": "Lymphatic Drainage",
+      "ipa": "/lɪmˈfætɪk ˈdreɪnɪdʒ/",
+      "cefr": "C1",
+      "imageNodeId": "494:1131"
+    },
+    {
+      "kind": "card",
+      "id": "cupping-therapy",
+      "label": "Cupping Therapy",
+      "ipa": "/ˈkʌpɪŋ ˈθɛrəpi/",
+      "cefr": "C1",
+      "imageNodeId": "494:1135"
+    },
+    {
+      "kind": "card",
+      "id": "hot-stone-therapy",
+      "label": "Hot Stone Therapy",
+      "ipa": "/hɒt stoʊn ˈθɛrəpi/",
+      "cefr": "C1",
+      "imageNodeId": "494:1139"
+    },
+    {
+      "kind": "card",
+      "id": "cold-therapy",
+      "label": "Cold Therapy",
+      "ipa": "/koʊld ˈθɛrəpi/",
+      "cefr": "C1",
+      "imageNodeId": "494:1143"
+    },
+    {
+      "kind": "card",
+      "id": "hydrotherapy",
+      "label": "Hydrotherapy",
+      "ipa": "/ˌhaɪdroʊˈθɛrəpi/",
+      "cefr": "C1",
+      "imageNodeId": "494:1147"
+    },
+    {
+      "kind": "card",
+      "id": "flotation-tank",
+      "label": "Flotation Tank",
+      "ipa": "/floʊˈteɪʃən tæŋk/",
+      "cefr": "C1",
+      "imageNodeId": "494:1151"
+    },
+    {
+      "kind": "card",
+      "id": "mineral-bath",
+      "label": "Mineral Bath",
+      "ipa": "/ˈmɪnərəl bɑːθ/",
+      "cefr": "C1",
+      "imageNodeId": "494:1155"
+    },
+    {
+      "kind": "card",
+      "id": "seaweed-wrap",
+      "label": "Seaweed Wrap",
+      "ipa": "/ˈsiːwiːd ræp/",
+      "cefr": "C1",
+      "imageNodeId": "494:1159"
+    },
+    {
+      "kind": "card",
+      "id": "paraffin-wax-treatment",
+      "label": "Paraffin Wax Treatment",
+      "ipa": "/ˈpærəfɪn wæks ˈtriːtmənt/",
+      "cefr": "C1",
+      "imageNodeId": "494:1163"
+    },
+    {
+      "kind": "card",
+      "id": "manicure",
+      "label": "Manicure",
+      "ipa": "/ˈmænɪkjʊər/",
+      "cefr": "B2",
+      "imageNodeId": "494:1167"
+    },
+    {
+      "kind": "card",
+      "id": "pedicure",
+      "label": "Pedicure",
+      "ipa": "/ˈpɛdɪkjʊər/",
+      "cefr": "B2",
+      "imageNodeId": "494:1171"
+    },
+    {
+      "kind": "card",
+      "id": "foot-soak",
+      "label": "Foot Soak",
+      "ipa": "/fʊt soʊk/",
+      "cefr": "C1",
+      "imageNodeId": "494:1175"
+    },
+    {
+      "kind": "card",
+      "id": "scalp-treatment",
+      "label": "Scalp Treatment",
+      "ipa": "/skælp ˈtriːtmənt/",
+      "cefr": "C1",
+      "imageNodeId": "494:1179"
+    },
+    {
+      "kind": "card",
+      "id": "facial-steamer",
+      "label": "Facial Steamer",
+      "ipa": "/ˈfeɪʃəl ˈstiːmər/",
+      "cefr": "C1",
+      "imageNodeId": "494:1183"
+    },
+    {
+      "kind": "card",
+      "id": "dermaroller",
+      "label": "Dermaroller",
+      "ipa": "/ˈdɜːrməroʊlər/",
+      "cefr": "C1",
+      "imageNodeId": "494:1187"
+    },
+    {
+      "kind": "card",
+      "id": "led-light-therapy",
+      "label": "LED Light Therapy",
+      "ipa": "/ˌɛlˌiːˈdiː laɪt ˈθɛrəpi/",
+      "cefr": "C1",
+      "imageNodeId": "494:1191"
+    },
+    {
+      "kind": "card",
+      "id": "sauna",
+      "label": "Sauna",
+      "ipa": "/ˈsɔːnə/",
+      "cefr": "B2",
+      "imageNodeId": "119:9876"
+    },
+    {
+      "kind": "card",
+      "id": "steam-room",
+      "label": "Steam Room",
+      "ipa": "/stiːm ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "119:9880"
+    },
+    {
+      "kind": "card",
+      "id": "hot-tub",
+      "label": "Hot Tub",
+      "ipa": "/hɒt tʌb/",
+      "cefr": "C1",
+      "imageNodeId": "119:9884"
+    },
+    {
+      "kind": "card",
+      "id": "pool",
+      "label": "Pool",
+      "ipa": "/puːl/",
+      "cefr": "B2",
+      "imageNodeId": "119:9888"
+    },
+    {
+      "kind": "card",
+      "id": "relaxation-room",
+      "label": "Relaxation Room",
+      "ipa": "/ˌriːlækˈseɪʃən ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "119:9892"
+    },
+    {
+      "kind": "card",
+      "id": "shower",
+      "label": "Shower",
+      "ipa": "/ˈʃaʊər/",
+      "cefr": "B2",
+      "imageNodeId": "119:9896"
+    },
+    {
+      "kind": "card",
+      "id": "locker-room",
+      "label": "Locker Room",
+      "ipa": "/ˈlɒkər ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "119:9900"
+    },
+    {
+      "kind": "card",
+      "id": "reception",
+      "label": "Reception",
+      "ipa": "/rɪˈsɛpʃən/",
+      "cefr": "B2",
+      "imageNodeId": "119:9904"
+    },
+    {
+      "kind": "card",
+      "id": "garden",
+      "label": "Garden",
+      "ipa": "/ˈɡɑːrdn/",
+      "cefr": "B2",
+      "imageNodeId": "119:9908"
+    },
+    {
+      "kind": "card",
+      "id": "terrace",
+      "label": "Terrace",
+      "ipa": "/ˈtɛrəs/",
+      "cefr": "B2",
+      "imageNodeId": "119:9912"
+    },
+    {
+      "kind": "card",
+      "id": "plunge-pool",
+      "label": "Plunge Pool",
+      "ipa": "/plʌndʒ puːl/",
+      "cefr": "C1",
+      "imageNodeId": "491:1741"
+    },
+    {
+      "kind": "card",
+      "id": "salt-room",
+      "label": "Salt Room",
+      "ipa": "/sɔːlt ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "491:1745"
+    },
+    {
+      "kind": "card",
+      "id": "mud-bath",
+      "label": "Mud Bath",
+      "ipa": "/mʌd bɑːθ/",
+      "cefr": "C1",
+      "imageNodeId": "491:1749"
+    },
+    {
+      "kind": "card",
+      "id": "towel-warmer",
+      "label": "Towel Warmer",
+      "ipa": "/ˈtaʊəl ˈwɔːrmər/",
+      "cefr": "C1",
+      "imageNodeId": "491:1753"
+    },
+    {
+      "kind": "card",
+      "id": "infrared-sauna",
+      "label": "Infrared Sauna",
+      "ipa": "/ˌɪnfrəˈrɛd ˈsɔːnə/",
+      "cefr": "C1",
+      "imageNodeId": "494:1195"
+    },
+    {
+      "kind": "card",
+      "id": "cryotherapy",
+      "label": "Cryotherapy",
+      "ipa": "/ˌkraɪoʊˈθɛrəpi/",
+      "cefr": "C1",
+      "imageNodeId": "494:1199"
+    },
+    {
+      "kind": "card",
+      "id": "salt-scrub",
+      "label": "Salt Scrub",
+      "ipa": "/sɔːlt skrʌb/",
+      "cefr": "C1",
+      "imageNodeId": "494:1203"
+    },
+    {
+      "kind": "card",
+      "id": "sugar-scrub",
+      "label": "Sugar Scrub",
+      "ipa": "/ˈʃʊɡər skrʌb/",
+      "cefr": "C1",
+      "imageNodeId": "494:1207"
+    },
+    {
+      "kind": "card",
+      "id": "coffee-scrub",
+      "label": "Coffee Scrub",
+      "ipa": "/ˈkɒfi skrʌb/",
+      "cefr": "C1",
+      "imageNodeId": "494:1211"
+    },
+    {
+      "kind": "card",
+      "id": "clay-wrap",
+      "label": "Clay Wrap",
+      "ipa": "/kleɪ ræp/",
+      "cefr": "C1",
+      "imageNodeId": "494:1215"
+    },
+    {
+      "kind": "card",
+      "id": "detox-wrap",
+      "label": "Detox Wrap",
+      "ipa": "/ˈdiːtɒks ræp/",
+      "cefr": "C1",
+      "imageNodeId": "494:1219"
+    },
+    {
+      "kind": "card",
+      "id": "essential-oil",
+      "label": "Essential Oil",
+      "ipa": "/ɪˈsɛnʃəl ɔɪl/",
+      "cefr": "C1",
+      "imageNodeId": "119:9921"
+    },
+    {
+      "kind": "card",
+      "id": "lotion",
+      "label": "Lotion",
+      "ipa": "/ˈloʊʃən/",
+      "cefr": "B2",
+      "imageNodeId": "119:9925"
+    },
+    {
+      "kind": "card",
+      "id": "cream",
+      "label": "Cream",
+      "ipa": "/kriːm/",
+      "cefr": "B2",
+      "imageNodeId": "119:9929"
+    },
+    {
+      "kind": "card",
+      "id": "mask",
+      "label": "Mask",
+      "ipa": "/mɑːsk/",
+      "cefr": "B2",
+      "imageNodeId": "119:9933"
+    },
+    {
+      "kind": "card",
+      "id": "serum",
+      "label": "Serum",
+      "ipa": "/ˈsɪərəm/",
+      "cefr": "B2",
+      "imageNodeId": "119:9937"
+    },
+    {
+      "kind": "card",
+      "id": "salt",
+      "label": "Salt",
+      "ipa": "/sɔːlt/",
+      "cefr": "B2",
+      "imageNodeId": "119:9941"
+    },
+    {
+      "kind": "card",
+      "id": "mud",
+      "label": "Mud",
+      "ipa": "/mʌd/",
+      "cefr": "B2",
+      "imageNodeId": "119:9945"
+    },
+    {
+      "kind": "card",
+      "id": "candle",
+      "label": "Candle",
+      "ipa": "/ˈkændl/",
+      "cefr": "B2",
+      "imageNodeId": "119:9949"
+    },
+    {
+      "kind": "card",
+      "id": "incense",
+      "label": "Incense",
+      "ipa": "/ˈɪnsɛns/",
+      "cefr": "B2",
+      "imageNodeId": "119:9953"
+    },
+    {
+      "kind": "card",
+      "id": "herb",
+      "label": "Herb",
+      "ipa": "/hɜːrb/",
+      "cefr": "B2",
+      "imageNodeId": "119:9957"
+    },
+    {
+      "kind": "card",
+      "id": "diffuser",
+      "label": "Diffuser",
+      "ipa": "/dɪˈfjuːzər/",
+      "cefr": "B2",
+      "imageNodeId": "491:1757"
+    },
+    {
+      "kind": "card",
+      "id": "moisturizer",
+      "label": "Moisturizer",
+      "ipa": "/ˈmɔɪstʃəraɪzər/",
+      "cefr": "C1",
+      "imageNodeId": "491:1761"
+    },
+    {
+      "kind": "card",
+      "id": "toner",
+      "label": "Toner",
+      "ipa": "/ˈtoʊnər/",
+      "cefr": "B2",
+      "imageNodeId": "491:1765"
+    },
+    {
+      "kind": "card",
+      "id": "cleanser",
+      "label": "Cleanser",
+      "ipa": "/ˈklɛnzər/",
+      "cefr": "B2",
+      "imageNodeId": "491:1769"
+    },
+    {
+      "kind": "card",
+      "id": "eye-cream",
+      "label": "Eye Cream",
+      "ipa": "/aɪ kriːm/",
+      "cefr": "C1",
+      "imageNodeId": "491:1773"
+    },
+    {
+      "kind": "card",
+      "id": "aloe-vera-gel",
+      "label": "Aloe Vera Gel",
+      "ipa": "/ˈæloʊ ˈvɪərə dʒɛl/",
+      "cefr": "C1",
+      "imageNodeId": "494:1224"
+    },
+    {
+      "kind": "card",
+      "id": "jojoba-oil",
+      "label": "Jojoba Oil",
+      "ipa": "/həˈhoʊbə ɔɪl/",
+      "cefr": "C1",
+      "imageNodeId": "494:1228"
+    },
+    {
+      "kind": "card",
+      "id": "coconut-oil",
+      "label": "Coconut Oil",
+      "ipa": "/ˈkoʊkənʌt ɔɪl/",
+      "cefr": "C1",
+      "imageNodeId": "494:1232"
+    },
+    {
+      "kind": "card",
+      "id": "eucalyptus-oil",
+      "label": "Eucalyptus Oil",
+      "ipa": "/ˌjuːkəˈlɪptəs ɔɪl/",
+      "cefr": "C1",
+      "imageNodeId": "494:1236"
+    },
+    {
+      "kind": "card",
+      "id": "lavender-oil",
+      "label": "Lavender Oil",
+      "ipa": "/ˈlævɪndər ɔɪl/",
+      "cefr": "C1",
+      "imageNodeId": "494:1240"
+    },
+    {
+      "kind": "card",
+      "id": "tea-tree-oil",
+      "label": "Tea Tree Oil",
+      "ipa": "/tiː triː ɔɪl/",
+      "cefr": "C1",
+      "imageNodeId": "494:1244"
+    },
+    {
+      "kind": "card",
+      "id": "peppermint-oil",
+      "label": "Peppermint Oil",
+      "ipa": "/ˈpɛpərmɪnt ɔɪl/",
+      "cefr": "C1",
+      "imageNodeId": "494:1248"
+    },
+    {
+      "kind": "card",
+      "id": "lip-balm",
+      "label": "Lip Balm",
+      "ipa": "/lɪp bɑːm/",
+      "cefr": "C1",
+      "imageNodeId": "491:1777"
+    },
+    {
+      "kind": "card",
+      "id": "massage-table",
+      "label": "Massage Table",
+      "ipa": "/məˈsɑːʒ ˈteɪbl/",
+      "cefr": "C1",
+      "imageNodeId": "119:9966"
+    },
+    {
+      "kind": "card",
+      "id": "robe",
+      "label": "Robe",
+      "ipa": "/roʊb/",
+      "cefr": "B2",
+      "imageNodeId": "119:9970"
+    },
+    {
+      "kind": "card",
+      "id": "slippers",
+      "label": "Slippers",
+      "ipa": "/ˈslɪpərz/",
+      "cefr": "B2",
+      "imageNodeId": "119:9974"
+    },
+    {
+      "kind": "card",
+      "id": "towel",
+      "label": "Towel",
+      "ipa": "/ˈtaʊəl/",
+      "cefr": "B2",
+      "imageNodeId": "119:9978"
+    },
+    {
+      "kind": "card",
+      "id": "headband",
+      "label": "Headband",
+      "ipa": "/ˈhɛdbænd/",
+      "cefr": "B2",
+      "imageNodeId": "119:9982"
+    },
+    {
+      "kind": "card",
+      "id": "eye-mask",
+      "label": "Eye Mask",
+      "ipa": "/aɪ mɑːsk/",
+      "cefr": "C1",
+      "imageNodeId": "119:9986"
+    },
+    {
+      "kind": "card",
+      "id": "cushion",
+      "label": "Cushion",
+      "ipa": "/ˈkʊʃən/",
+      "cefr": "B2",
+      "imageNodeId": "119:9990"
+    },
+    {
+      "kind": "card",
+      "id": "diffuser",
+      "label": "Diffuser",
+      "ipa": "/dɪˈfjuːzər/",
+      "cefr": "B2",
+      "imageNodeId": "119:9994"
+    },
+    {
+      "kind": "card",
+      "id": "heated-bed",
+      "label": "Heated Bed",
+      "ipa": "/ˈhiːtɪd bɛd/",
+      "cefr": "C1",
+      "imageNodeId": "119:9998"
+    },
+    {
+      "kind": "card",
+      "id": "basin",
+      "label": "Basin",
+      "ipa": "/ˈbeɪsn/",
+      "cefr": "B2",
+      "imageNodeId": "119:10002"
+    },
+    {
+      "kind": "card",
+      "id": "headrest",
+      "label": "Headrest",
+      "ipa": "/ˈhɛdrɛst/",
+      "cefr": "B2",
+      "imageNodeId": "491:1781"
+    },
+    {
+      "kind": "card",
+      "id": "heated-blanket",
+      "label": "Heated Blanket",
+      "ipa": "/ˈhiːtɪd ˈblæŋkɪt/",
+      "cefr": "C1",
+      "imageNodeId": "491:1785"
+    },
+    {
+      "kind": "card",
+      "id": "meditation-cushion",
+      "label": "Meditation Cushion",
+      "ipa": "/ˌmɛdɪˈteɪʃən ˈkʊʃən/",
+      "cefr": "C1",
+      "imageNodeId": "494:1252"
+    },
+    {
+      "kind": "card",
+      "id": "zen-garden",
+      "label": "Zen Garden",
+      "ipa": "/zɛn ˈɡɑːrdn/",
+      "cefr": "C1",
+      "imageNodeId": "494:1256"
+    },
+    {
+      "kind": "card",
+      "id": "water-feature",
+      "label": "Water Feature",
+      "ipa": "/ˈwɔːtər ˈfiːtʃər/",
+      "cefr": "C1",
+      "imageNodeId": "494:1260"
+    },
+    {
+      "kind": "card",
+      "id": "bamboo-mat",
+      "label": "Bamboo Mat",
+      "ipa": "/bæmˈbuː mæt/",
+      "cefr": "C1",
+      "imageNodeId": "494:1264"
+    },
+    {
+      "kind": "card",
+      "id": "stone-pathway",
+      "label": "Stone Pathway",
+      "ipa": "/stoʊn ˈpæθweɪ/",
+      "cefr": "C1",
+      "imageNodeId": "494:1268"
+    },
+    {
+      "kind": "card",
+      "id": "meditation",
+      "label": "Meditation",
+      "ipa": "/ˌmɛdɪˈteɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "119:10011"
+    },
+    {
+      "kind": "card",
+      "id": "yoga",
+      "label": "Yoga",
+      "ipa": "/ˈjoʊɡə/",
+      "cefr": "B2",
+      "imageNodeId": "119:10015"
+    },
+    {
+      "kind": "card",
+      "id": "breathing",
+      "label": "Breathing",
+      "ipa": "/ˈbriːðɪŋ/",
+      "cefr": "B2",
+      "imageNodeId": "119:10019"
+    },
+    {
+      "kind": "card",
+      "id": "mindfulness",
+      "label": "Mindfulness",
+      "ipa": "/ˈmaɪndfʊlnəs/",
+      "cefr": "C1",
+      "imageNodeId": "119:10023"
+    },
+    {
+      "kind": "card",
+      "id": "stretching",
+      "label": "Stretching",
+      "ipa": "/ˈstrɛtʃɪŋ/",
+      "cefr": "C1",
+      "imageNodeId": "119:10027"
+    },
+    {
+      "kind": "card",
+      "id": "detox",
+      "label": "Detox",
+      "ipa": "/ˈdiːtɒks/",
+      "cefr": "B2",
+      "imageNodeId": "119:10031"
+    },
+    {
+      "kind": "card",
+      "id": "hydration",
+      "label": "Hydration",
+      "ipa": "/haɪˈdreɪʃən/",
+      "cefr": "B2",
+      "imageNodeId": "119:10035"
+    },
+    {
+      "kind": "card",
+      "id": "sleep",
+      "label": "Sleep",
+      "ipa": "/sliːp/",
+      "cefr": "B2",
+      "imageNodeId": "119:10039"
+    },
+    {
+      "kind": "card",
+      "id": "balance",
+      "label": "Balance",
+      "ipa": "/ˈbæləns/",
+      "cefr": "B2",
+      "imageNodeId": "119:10043"
+    },
+    {
+      "kind": "card",
+      "id": "relaxation",
+      "label": "Relaxation",
+      "ipa": "/ˌriːlækˈseɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "119:10047"
+    },
+    {
+      "kind": "card",
+      "id": "herbal-tea",
+      "label": "Herbal Tea",
+      "ipa": "/ˈhɜːrbl tiː/",
+      "cefr": "C1",
+      "imageNodeId": "491:1789"
+    },
+    {
+      "kind": "card",
+      "id": "infused-water",
+      "label": "Infused Water",
+      "ipa": "/ɪnˈfjuːzd ˈwɔːtər/",
+      "cefr": "C1",
+      "imageNodeId": "491:1793"
+    },
+    {
+      "kind": "card",
+      "id": "ambient-music",
+      "label": "Ambient Music",
+      "ipa": "/ˈæmbiənt ˈmjuːzɪk/",
+      "cefr": "C1",
+      "imageNodeId": "491:1797"
+    },
+    {
+      "kind": "card",
+      "id": "acupuncture",
+      "label": "Acupuncture",
+      "ipa": "/ˈækjʊpʌŋktʃər/",
+      "cefr": "C1",
+      "imageNodeId": "491:1801"
+    },
+    {
+      "kind": "card",
+      "id": "shiatsu",
+      "label": "Shiatsu",
+      "ipa": "/ʃiˈɑːtsuː/",
+      "cefr": "B2",
+      "imageNodeId": "491:1805"
+    },
+    {
+      "kind": "card",
+      "id": "hot-wax",
+      "label": "Hot Wax",
+      "ipa": "/hɒt wæks/",
+      "cefr": "C1",
+      "imageNodeId": "491:1809"
+    },
+    {
+      "kind": "card",
+      "id": "meditation-room",
+      "label": "Meditation Room",
+      "ipa": "/ˌmɛdɪˈteɪʃən ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "494:1272"
+    },
+    {
+      "kind": "card",
+      "id": "therapist",
+      "label": "Therapist",
+      "ipa": "/ˈθɛrəpɪst/",
+      "cefr": "B2",
+      "imageNodeId": "119:10056"
+    },
+    {
+      "kind": "card",
+      "id": "esthetician",
+      "label": "Esthetician",
+      "ipa": "/ˌɛsθɪˈtɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "119:10060"
+    },
+    {
+      "kind": "card",
+      "id": "receptionist",
+      "label": "Receptionist",
+      "ipa": "/rɪˈsɛpʃənɪst/",
+      "cefr": "C1",
+      "imageNodeId": "119:10064"
+    },
+    {
+      "kind": "card",
+      "id": "nail-technician",
+      "label": "Nail Technician",
+      "ipa": "/neɪl tɛkˈnɪʃən/",
+      "cefr": "C1",
+      "imageNodeId": "119:10068"
+    },
+    {
+      "kind": "card",
+      "id": "masseuse",
+      "label": "Masseuse",
+      "ipa": "/mæˈsuːz/",
+      "cefr": "B2",
+      "imageNodeId": "119:10072"
+    },
+    {
+      "kind": "card",
+      "id": "yoga-instructor",
+      "label": "Yoga Instructor",
+      "ipa": "/ˈjoʊɡə ɪnˈstrʌktər/",
+      "cefr": "C1",
+      "imageNodeId": "119:10076"
+    },
+    {
+      "kind": "card",
+      "id": "attendant",
+      "label": "Attendant",
+      "ipa": "/əˈtɛndənt/",
+      "cefr": "B2",
+      "imageNodeId": "119:10080"
+    },
+    {
+      "kind": "card",
+      "id": "concierge",
+      "label": "Concierge",
+      "ipa": "/ˌkɒnsiˈɛrʒ/",
+      "cefr": "B2",
+      "imageNodeId": "119:10084"
+    },
+    {
+      "kind": "card",
+      "id": "nutritionist",
+      "label": "Nutritionist",
+      "ipa": "/njuːˈtrɪʃənɪst/",
+      "cefr": "C1",
+      "imageNodeId": "119:10088"
+    },
+    {
+      "kind": "card",
+      "id": "trainer",
+      "label": "Trainer",
+      "ipa": "/ˈtreɪnər/",
+      "cefr": "B2",
+      "imageNodeId": "119:10092"
+    },
+    {
+      "kind": "card",
+      "id": "meditation-room",
+      "label": "Meditation Room",
+      "ipa": "/ˌmɛdɪˈteɪʃən ruːm/",
+      "cefr": "C1",
+      "imageNodeId": "491:1813"
+    },
+    {
+      "kind": "card",
+      "id": "meditation-room",
+      "label": "Meditation Instructor",
+      "ipa": "/ˌmɛdɪˈteɪʃən ɪnˈstrʌktər/",
+      "cefr": "C1",
+      "imageNodeId": "494:1276"
+    }
+  ],
+  "materials": {
+    "learning-divider": {
+      "nodeId": "556:1098",
+      "lines": [
+        {
+          "text": "📚  Learning Materials",
+          "depth": 1,
+          "name": "📚 Learning Materials"
+        }
+      ]
+    },
+    "reading-passage": {
+      "nodeId": "556:1100",
+      "lines": [
+        {
+          "text": "📖 Reading Passage",
+          "depth": 1,
+          "name": "📖 Reading Passage"
+        },
+        {
+          "text": "Level: B2+ · Topic: The Spa",
+          "depth": 1,
+          "name": "Level: B2+ · Topic: The Spa"
+        },
+        {
+          "text": "The Architecture of Rest — What a Spa Actually Does to Your Body\n\nA spa promises relaxation, but the science behind it is more precise than most visitors realise. Each treatment targets a specific physiological response — and understanding what happens beneath the skin transforms a luxury visit into an informed health decision.\n\nThe journey typically begins in the reception, where a concierge checks the booking and offers a robe, slippers, and a headband. The client changes in the locker room and enters the relaxation room — dimly lit, scented with essential oil from a diffuser, furnished with heated beds and meditation cushions. Ambient music plays. Herbal tea or infused water sits on a tray. The environment is engineered to trigger the parasympathetic nervous system — the body's 'rest and digest' mode.\n\nA Swedish massage uses long, flowing strokes to improve circulation and ease muscle tension. A deep tissue massage applies sustained pressure to the fascia and deeper muscle layers — effective for chronic pain but temporarily uncomfortable. A hot stone therapy session places heated basalt stones along the spine; the warmth penetrates deep into muscle tissue, increasing blood flow. A sports massage targets specific muscle groups strained by athletic activity. Reflexology applies pressure to points on the feet believed to correspond to organs and systems throughout the body. A Thai massage combines stretching with rhythmic compression — the client remains clothed and lies on a mat. Shiatsu, rooted in Japanese tradition, uses finger pressure along energy meridians.\n\nHydrotherapy — the therapeutic use of water — takes several forms. A hot tub loosens stiff joints. A plunge pool, typically kept near 10°C, follows a sauna session to constrict blood vessels and reduce inflammation. A mineral bath soaks the body in naturally occurring salts. A flotation tank suspends the client in dense salt water, eliminating sensory input and inducing deep relaxation. A steam room opens the pores and promotes sweating, while a sauna — dry heat between 70°C and 100°C — raises the heart rate to mimic mild exercise. An infrared sauna uses light waves to heat the body directly rather than heating the air. Cryotherapy exposes the body briefly to extreme cold, claimed to reduce pain and accelerate recovery.\n\nSkin treatments occupy a dedicated wing. A facial begins with a cleanser, followed by exfoliation to remove dead cells. A facial steamer opens pores before extraction. A clay mask draws out impurities; cucumber slices reduce puffiness around the eyes. A serum — concentrated active ingredients — is applied before a moisturiser seals in hydration. LED light therapy uses different wavelengths: red for collagen stimulation, blue for acne bacteria. A dermaroller — covered in micro-needles — stimulates the skin's healing response. Body scrubs use salt, sugar, or coffee grounds to polish the skin. A body wrap — seaweed, clay, or detox formula — is applied and sealed in plastic to intensify absorption.\n\nNail care completes the menu. A manicure and pedicure include a foot soak, cuticle work, shaping, and polish. A paraffin wax treatment coats the hands in warm wax to soften the skin.\n\nBeyond treatments, the spa environment supports broader wellness practices. A yoga session on the terrace. A breathing exercise in the meditation room. A mindfulness class in the garden beside a water feature and a zen garden. A nutritionist offers dietary guidance. A trainer designs stretching routines. The spa, at its best, is not an escape from daily life but a laboratory for learning how rest, hydration, movement, and sleep interact — and how deliberately activating each one can sustain the body long after the robe has been returned.",
+          "depth": 1,
+          "name": "The Architecture of Rest — What a Spa Actually Does to Your Body A spa promises relaxation, but the science behind it is more precise than most visitors realise. Each treatment targets a specific physiological response — and understanding what happens beneath the skin transforms a luxury visit into an informed health decision. The journey typically begins in the reception, where a concierge checks the booking and offers a robe, slippers, and a headband. The client changes in the locker room and enters the relaxation room — dimly lit, scented with essential oil from a diffuser, furnished with heated beds and meditation cushions. Ambient music plays. Herbal tea or infused water sits on a tray. The environment is engineered to trigger the parasympathetic nervous system — the body's 'rest and digest' mode. A Swedish massage uses long, flowing strokes to improve circulation and ease muscle tension. A deep tissue massage applies sustained pressure to the fascia and deeper muscle layers — effective for chronic pain but temporarily uncomfortable. A hot stone therapy session places heated basalt stones along the spine; the warmth penetrates deep into muscle tissue, increasing blood flow. A sports massage targets specific muscle groups strained by athletic activity. Reflexology applies pressure to points on the feet believed to correspond to organs and systems throughout the body. A Thai massage combines stretching with rhythmic compression — the client remains clothed and lies on a mat. Shiatsu, rooted in Japanese tradition, uses finger pressure along energy meridians. Hydrotherapy — the therapeutic use of water — takes several forms. A hot tub loosens stiff joints. A plunge pool, typically kept near 10°C, follows a sauna session to constrict blood vessels and reduce inflammation. A mineral bath soaks the body in naturally occurring salts. A flotation tank suspends the client in dense salt water, eliminating sensory input and inducing deep relaxation. A steam room opens the pores and promotes sweating, while a sauna — dry heat between 70°C and 100°C — raises the heart rate to mimic mild exercise. An infrared sauna uses light waves to heat the body directly rather than heating the air. Cryotherapy exposes the body briefly to extreme cold, claimed to reduce pain and accelerate recovery. Skin treatments occupy a dedicated wing. A facial begins with a cleanser, followed by exfoliation to remove dead cells. A facial steamer opens pores before extraction. A clay mask draws out impurities; cucumber slices reduce puffiness around the eyes. A serum — concentrated active ingredients — is applied before a moisturiser seals in hydration. LED light therapy uses different wavelengths: red for collagen stimulation, blue for acne bacteria. A dermaroller — covered in micro-needles — stimulates the skin's healing response. Body scrubs use salt, sugar, or coffee grounds to polish the skin. A body wrap — seaweed, clay, or detox formula — is applied and sealed in plastic to intensify absorption. Nail care completes the menu. A manicure and pedicure include a foot soak, cuticle work, shaping, and polish. A paraffin wax treatment coats the hands in warm wax to soften the skin. Beyond treatments, the spa environment supports broader wellness practices. A yoga session on the terrace. A breathing exercise in the meditation room. A mindfulness class in the garden beside a water feature and a zen garden. A nutritionist offers dietary guidance. A trainer designs stretching routines. The spa, at its best, is not an escape from daily life but a laboratory for learning how rest, hydration, movement, and sleep interact — and how deliberately activating each one can sustain the body long after the robe has been returned."
+        },
+        {
+          "text": "Comprehension Questions",
+          "depth": 1,
+          "name": "Comprehension Questions"
+        },
+        {
+          "text": "1. Compare three different types of massage described in the passage. What specific benefit does each offer?",
+          "depth": 1,
+          "name": "1. Compare three different types of massage described in the passage. What specific benefit does each offer?"
+        },
+        {
+          "text": "2. Explain how hydrotherapy works, using at least four specific treatments from the passage.",
+          "depth": 1,
+          "name": "2. Explain how hydrotherapy works, using at least four specific treatments from the passage."
+        },
+        {
+          "text": "3. Describe the sequence of a professional facial treatment. Why is each step necessary?",
+          "depth": 1,
+          "name": "3. Describe the sequence of a professional facial treatment. Why is each step necessary?"
+        },
+        {
+          "text": "4. The author describes the spa environment as 'engineered to trigger the parasympathetic nervous system.' What evidence supports this claim?",
+          "depth": 1,
+          "name": "4. The author describes the spa environment as 'engineered to trigger the parasympathetic nervous system.' What evidence supports this claim?"
+        },
+        {
+          "text": "5. The passage redefines a spa as 'a laboratory for learning.' To what extent does this scientific framing change how you perceive spa culture?",
+          "depth": 1,
+          "name": "5. The passage redefines a spa as 'a laboratory for learning.' To what extent does this scientific framing change how you perceive spa culture?"
+        }
+      ]
+    },
+    "idioms-phrases": {
+      "nodeId": "556:1113",
+      "lines": [
+        {
+          "text": "💬 Idioms, Phrasal Verbs & Key Phrases",
+          "depth": 1,
+          "name": "💬 Idioms, Phrasal Verbs & Key Phrases"
+        },
+        {
+          "text": "recharge your batteries",
+          "depth": 2,
+          "name": "recharge your batteries"
+        },
+        {
+          "text": "rest and relax to regain energy",
+          "depth": 2,
+          "name": "rest and relax to regain energy"
+        },
+        {
+          "text": "\"A deep tissue massage and twenty minutes in the sauna — that's how you recharge your batteries.\"",
+          "depth": 2,
+          "name": "\"A deep tissue massage and twenty minutes in the sauna — that's how you recharge your batteries.\""
+        },
+        {
+          "text": "pamper yourself",
+          "depth": 2,
+          "name": "pamper yourself"
+        },
+        {
+          "text": "treat yourself to luxurious care and attention",
+          "depth": 2,
+          "name": "treat yourself to luxurious care and attention"
+        },
+        {
+          "text": "\"Pamper yourself with a facial, a manicure, and a paraffin wax treatment — you deserve it.\"",
+          "depth": 2,
+          "name": "\"Pamper yourself with a facial, a manicure, and a paraffin wax treatment — you deserve it.\""
+        },
+        {
+          "text": "melt away",
+          "depth": 2,
+          "name": "melt away"
+        },
+        {
+          "text": "gradually disappear, especially stress or tension",
+          "depth": 2,
+          "name": "gradually disappear, especially stress or tension"
+        },
+        {
+          "text": "\"The tension in my shoulders melted away during the hot stone therapy and the Swedish massage.\"",
+          "depth": 2,
+          "name": "\"The tension in my shoulders melted away during the hot stone therapy and the Swedish massage.\""
+        },
+        {
+          "text": "take the edge off",
+          "depth": 2,
+          "name": "take the edge off"
+        },
+        {
+          "text": "reduce the intensity of something unpleasant",
+          "depth": 2,
+          "name": "reduce the intensity of something unpleasant"
+        },
+        {
+          "text": "\"The aromatherapy and the foot soak really took the edge off after a stressful week.\"",
+          "depth": 2,
+          "name": "\"The aromatherapy and the foot soak really took the edge off after a stressful week.\""
+        },
+        {
+          "text": "in hot water",
+          "depth": 2,
+          "name": "in hot water"
+        },
+        {
+          "text": "in trouble or a difficult situation",
+          "depth": 2,
+          "name": "in trouble or a difficult situation"
+        },
+        {
+          "text": "\"I was in hot water with my boss, so I booked a hydrotherapy session and a mineral bath to de-stress.\"",
+          "depth": 2,
+          "name": "\"I was in hot water with my boss, so I booked a hydrotherapy session and a mineral bath to de-stress.\""
+        },
+        {
+          "text": "a breath of fresh air",
+          "depth": 2,
+          "name": "a breath of fresh air"
+        },
+        {
+          "text": "something refreshingly new or different",
+          "depth": 2,
+          "name": "something refreshingly new or different"
+        },
+        {
+          "text": "\"The steam room followed by cold therapy was a breath of fresh air — I felt completely revitalised.\"",
+          "depth": 2,
+          "name": "\"The steam room followed by cold therapy was a breath of fresh air — I felt completely revitalised.\""
+        },
+        {
+          "text": "under the skin",
+          "depth": 2,
+          "name": "under the skin"
+        },
+        {
+          "text": "deeply affecting someone emotionally",
+          "depth": 2,
+          "name": "deeply affecting someone emotionally"
+        },
+        {
+          "text": "\"The scalp treatment and the facial steamer get under the skin — literally and figuratively — leaving you glowing.\"",
+          "depth": 2,
+          "name": "\"The scalp treatment and the facial steamer get under the skin — literally and figuratively — leaving you glowing.\""
+        }
+      ]
+    },
+    "mini-dialogue": {
+      "nodeId": "556:1145",
+      "lines": [
+        {
+          "text": "🗣️ Mini Dialogue",
+          "depth": 1,
+          "name": "🗣️ Mini Dialogue"
+        },
+        {
+          "text": "Scene: A first-time visitor asks the spa receptionist about available treatments",
+          "depth": 1,
+          "name": "Scene: A first-time visitor asks the spa receptionist about available treatments"
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "Hi, I've never been to a spa before. What do you recommend for someone who's really stressed?",
+          "depth": 2,
+          "name": "Hi, I've never been to a spa before. What do you recommend for someone who's really stressed?"
+        },
+        {
+          "text": "Receptionist:",
+          "depth": 2,
+          "name": "Receptionist:"
+        },
+        {
+          "text": "I'd start with a Swedish massage — it's gentle and relaxing. Or if you prefer something stronger, try a deep tissue massage.",
+          "depth": 2,
+          "name": "I'd start with a Swedish massage — it's gentle and relaxing. Or if you prefer something stronger, try a deep tissue massage."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "What's the difference between those and a hot stone massage?",
+          "depth": 2,
+          "name": "What's the difference between those and a hot stone massage?"
+        },
+        {
+          "text": "Receptionist:",
+          "depth": 2,
+          "name": "Receptionist:"
+        },
+        {
+          "text": "Hot stone therapy uses heated stones on your back and shoulders to release deep tension. It's very popular with first-timers.",
+          "depth": 2,
+          "name": "Hot stone therapy uses heated stones on your back and shoulders to release deep tension. It's very popular with first-timers."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "I'd love something for my face too. Do you have facials?",
+          "depth": 2,
+          "name": "I'd love something for my face too. Do you have facials?"
+        },
+        {
+          "text": "Receptionist:",
+          "depth": 2,
+          "name": "Receptionist:"
+        },
+        {
+          "text": "Absolutely. We have a classic facial with a clay mask, a facial steamer, and cucumber slices. Or try our LED light therapy for skin renewal.",
+          "depth": 2,
+          "name": "Absolutely. We have a classic facial with a clay mask, a facial steamer, and cucumber slices. Or try our LED light therapy for skin renewal."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "What about hands and feet?",
+          "depth": 2,
+          "name": "What about hands and feet?"
+        },
+        {
+          "text": "Receptionist:",
+          "depth": 2,
+          "name": "Receptionist:"
+        },
+        {
+          "text": "A manicure and pedicure package is lovely. We also offer a foot soak and a paraffin wax treatment to soften your skin.",
+          "depth": 2,
+          "name": "A manicure and pedicure package is lovely. We also offer a foot soak and a paraffin wax treatment to soften your skin."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "Do you have a sauna or a steam room?",
+          "depth": 2,
+          "name": "Do you have a sauna or a steam room?"
+        },
+        {
+          "text": "Receptionist:",
+          "depth": 2,
+          "name": "Receptionist:"
+        },
+        {
+          "text": "Both! The sauna is dry heat, and the steam room is moist heat. We also have a mineral bath and a flotation tank for total relaxation.",
+          "depth": 2,
+          "name": "Both! The sauna is dry heat, and the steam room is moist heat. We also have a mineral bath and a flotation tank for total relaxation."
+        },
+        {
+          "text": "Visitor:",
+          "depth": 2,
+          "name": "Visitor:"
+        },
+        {
+          "text": "This all sounds amazing. Can I book the hot stone massage, the facial, and some time in the sauna?",
+          "depth": 2,
+          "name": "This all sounds amazing. Can I book the hot stone massage, the facial, and some time in the sauna?"
+        },
+        {
+          "text": "Receptionist:",
+          "depth": 2,
+          "name": "Receptionist:"
+        },
+        {
+          "text": "Perfect combination. I'll schedule a body scrub before the massage — the exfoliation makes the treatment even more effective.",
+          "depth": 2,
+          "name": "Perfect combination. I'll schedule a body scrub before the massage — the exfoliation makes the treatment even more effective."
+        }
+      ]
+    },
+    "common-mistakes": {
+      "nodeId": "556:1186",
+      "lines": [
+        {
+          "text": "⚠️ Common Mistakes",
+          "depth": 1,
+          "name": "⚠️ Common Mistakes"
+        },
+        {
+          "text": "❌ \"I look forward to have a massage after this stressful week.\"",
+          "depth": 2,
+          "name": "❌ \"I look forward to have a massage after this stressful week.\""
+        },
+        {
+          "text": "✅ \"I look forward to having a massage after this stressful week.\"",
+          "depth": 2,
+          "name": "✅ \"I look forward to having a massage after this stressful week.\""
+        },
+        {
+          "text": "'Look forward to + -ing': the 'to' is a preposition, not an infinitive marker. 'I look forward to seeing you', 'to receiving your reply', 'to hearing from you'. The same structure applies to 'be used to + -ing', 'object to + -ing', 'be committed to + -ing'. Recognising preposition-to versus infinitive-to is a key B2+ skill.",
+          "depth": 2,
+          "name": "'Look forward to + -ing': the 'to' is a preposition, not an infinitive marker. 'I look forward to seeing you', 'to receiving your reply', 'to hearing from you'. The same structure applies to 'be used to + -ing', 'object to + -ing', 'be committed to + -ing'. Recognising preposition-to versus infinitive-to is a key B2+ skill."
+        },
+        {
+          "text": "❌ \"The spa has a great amount of treatments to choose from.\"",
+          "depth": 2,
+          "name": "❌ \"The spa has a great amount of treatments to choose from.\""
+        },
+        {
+          "text": "✅ \"The spa has a great number of treatments to choose from.\"",
+          "depth": 2,
+          "name": "✅ \"The spa has a great number of treatments to choose from.\""
+        },
+        {
+          "text": "'Number of' + countable plural: 'a number of treatments', 'a number of options'. 'Amount of' + uncountable: 'a large amount of water', 'a certain amount of stress'. At B2+, quantity expressions must match noun countability: much/little/amount = uncountable; many/few/number = countable.",
+          "depth": 2,
+          "name": "'Number of' + countable plural: 'a number of treatments', 'a number of options'. 'Amount of' + uncountable: 'a large amount of water', 'a certain amount of stress'. At B2+, quantity expressions must match noun countability: much/little/amount = uncountable; many/few/number = countable."
+        },
+        {
+          "text": "❌ \"The hot stone massage is more relaxing than any massage I've ever had.\"",
+          "depth": 2,
+          "name": "❌ \"The hot stone massage is more relaxing than any massage I've ever had.\""
+        },
+        {
+          "text": "✅ \"The hot stone massage is more relaxing than any other massage I've ever had.\"",
+          "depth": 2,
+          "name": "✅ \"The hot stone massage is more relaxing than any other massage I've ever had.\""
+        },
+        {
+          "text": "When comparing one member of a group to the rest, include 'other' to exclude it from its own comparison: 'more relaxing than any other massage.' Without 'other', the sentence illogically compares the hot stone massage to all massages — including itself. This also applies to superlatives within a set.",
+          "depth": 2,
+          "name": "When comparing one member of a group to the rest, include 'other' to exclude it from its own comparison: 'more relaxing than any other massage.' Without 'other', the sentence illogically compares the hot stone massage to all massages — including itself. This also applies to superlatives within a set."
+        },
+        {
+          "text": "❌ \"She recommended me to try the hydrotherapy pool.\"",
+          "depth": 2,
+          "name": "❌ \"She recommended me to try the hydrotherapy pool.\""
+        },
+        {
+          "text": "✅ \"She recommended that I try the hydrotherapy pool.\" / \"She recommended trying the hydrotherapy pool.\"",
+          "depth": 2,
+          "name": "✅ \"She recommended that I try the hydrotherapy pool.\" / \"She recommended trying the hydrotherapy pool.\""
+        },
+        {
+          "text": "'Recommend' never takes object + infinitive (*recommend me to try). Correct: (1) recommend + that + subject + base form: 'She recommended that I try...' (2) recommend + -ing: 'She recommended trying...' (3) recommend + noun: 'She recommended the pool.' The same restriction applies to 'suggest', 'propose', and 'advise' (though 'advise' does allow: 'She advised me to try').",
+          "depth": 2,
+          "name": "'Recommend' never takes object + infinitive (*recommend me to try). Correct: (1) recommend + that + subject + base form: 'She recommended that I try...' (2) recommend + -ing: 'She recommended trying...' (3) recommend + noun: 'She recommended the pool.' The same restriction applies to 'suggest', 'propose', and 'advise' (though 'advise' does allow: 'She advised me to try')."
+        },
+        {
+          "text": "❌ \"Despite she was tired, she completed the full yoga session.\"",
+          "depth": 2,
+          "name": "❌ \"Despite she was tired, she completed the full yoga session.\""
+        },
+        {
+          "text": "✅ \"Despite being tired, she completed the full yoga session.\" / \"Although she was tired, she completed the full yoga session.\"",
+          "depth": 2,
+          "name": "✅ \"Despite being tired, she completed the full yoga session.\" / \"Although she was tired, she completed the full yoga session.\""
+        },
+        {
+          "text": "'Despite' + noun/gerund (no clause): 'despite being tired', 'despite the pain'. 'Although' + full clause: 'although she was tired'. Mixing them (*despite she was, *although the pain) is a persistent B2 error. 'In spite of' works like 'despite': 'in spite of being tired.'",
+          "depth": 2,
+          "name": "'Despite' + noun/gerund (no clause): 'despite being tired', 'despite the pain'. 'Although' + full clause: 'although she was tired'. Mixing them (*despite she was, *although the pain) is a persistent B2 error. 'In spite of' works like 'despite': 'in spite of being tired.'"
+        }
+      ]
+    },
+    "word-formation": {
+      "nodeId": "556:1210",
+      "lines": [
+        {
+          "text": "🔤 Word Formation",
+          "depth": 1,
+          "name": "🔤 Word Formation"
+        },
+        {
+          "text": "Learn how wellness and body care vocabulary changes across word forms.",
+          "depth": 1,
+          "name": "Learn how wellness and body care vocabulary changes across word forms."
+        },
+        {
+          "text": "Base Word",
+          "depth": 2,
+          "name": "Base Word"
+        },
+        {
+          "text": "Noun",
+          "depth": 2,
+          "name": "Noun"
+        },
+        {
+          "text": "Verb",
+          "depth": 2,
+          "name": "Verb"
+        },
+        {
+          "text": "Adjective",
+          "depth": 2,
+          "name": "Adjective"
+        },
+        {
+          "text": "relax",
+          "depth": 2,
+          "name": "relax"
+        },
+        {
+          "text": "relaxation",
+          "depth": 2,
+          "name": "relaxation"
+        },
+        {
+          "text": "relax",
+          "depth": 2,
+          "name": "relax"
+        },
+        {
+          "text": "relaxed / relaxing",
+          "depth": 2,
+          "name": "relaxed / relaxing"
+        },
+        {
+          "text": "massage",
+          "depth": 2,
+          "name": "massage"
+        },
+        {
+          "text": "massage / masseur",
+          "depth": 2,
+          "name": "massage / masseur"
+        },
+        {
+          "text": "massage",
+          "depth": 2,
+          "name": "massage"
+        },
+        {
+          "text": "massaged",
+          "depth": 2,
+          "name": "massaged"
+        },
+        {
+          "text": "moisturise",
+          "depth": 2,
+          "name": "moisturise"
+        },
+        {
+          "text": "moisturiser / moisture",
+          "depth": 2,
+          "name": "moisturiser / moisture"
+        },
+        {
+          "text": "moisturise",
+          "depth": 2,
+          "name": "moisturise"
+        },
+        {
+          "text": "moisturised / moist",
+          "depth": 2,
+          "name": "moisturised / moist"
+        },
+        {
+          "text": "exfoliate",
+          "depth": 2,
+          "name": "exfoliate"
+        },
+        {
+          "text": "exfoliation / exfoliant",
+          "depth": 2,
+          "name": "exfoliation / exfoliant"
+        },
+        {
+          "text": "exfoliate",
+          "depth": 2,
+          "name": "exfoliate"
+        },
+        {
+          "text": "exfoliated",
+          "depth": 2,
+          "name": "exfoliated"
+        },
+        {
+          "text": "cleanse",
+          "depth": 2,
+          "name": "cleanse"
+        },
+        {
+          "text": "cleanser / cleansing",
+          "depth": 2,
+          "name": "cleanser / cleansing"
+        },
+        {
+          "text": "cleanse",
+          "depth": 2,
+          "name": "cleanse"
+        },
+        {
+          "text": "cleansed / clean",
+          "depth": 2,
+          "name": "cleansed / clean"
+        },
+        {
+          "text": "soothe",
+          "depth": 2,
+          "name": "soothe"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "soothe",
+          "depth": 2,
+          "name": "soothe"
+        },
+        {
+          "text": "soothing / soothed",
+          "depth": 2,
+          "name": "soothing / soothed"
+        },
+        {
+          "text": "rejuvenate",
+          "depth": 2,
+          "name": "rejuvenate"
+        },
+        {
+          "text": "rejuvenation",
+          "depth": 2,
+          "name": "rejuvenation"
+        },
+        {
+          "text": "rejuvenate",
+          "depth": 2,
+          "name": "rejuvenate"
+        },
+        {
+          "text": "rejuvenated / rejuvenating",
+          "depth": 2,
+          "name": "rejuvenated / rejuvenating"
+        },
+        {
+          "text": "circulate",
+          "depth": 2,
+          "name": "circulate"
+        },
+        {
+          "text": "circulation",
+          "depth": 2,
+          "name": "circulation"
+        },
+        {
+          "text": "circulate",
+          "depth": 2,
+          "name": "circulate"
+        },
+        {
+          "text": "circulatory",
+          "depth": 2,
+          "name": "circulatory"
+        },
+        {
+          "text": "therapy",
+          "depth": 2,
+          "name": "therapy"
+        },
+        {
+          "text": "therapy / therapist",
+          "depth": 2,
+          "name": "therapy / therapist"
+        },
+        {
+          "text": "—",
+          "depth": 2,
+          "name": "—"
+        },
+        {
+          "text": "therapeutic",
+          "depth": 2,
+          "name": "therapeutic"
+        },
+        {
+          "text": "tension",
+          "depth": 2,
+          "name": "tension"
+        },
+        {
+          "text": "tension / tenseness",
+          "depth": 2,
+          "name": "tension / tenseness"
+        },
+        {
+          "text": "tense",
+          "depth": 2,
+          "name": "tense"
+        },
+        {
+          "text": "tense / tensed",
+          "depth": 2,
+          "name": "tense / tensed"
+        }
+      ]
+    },
+    "exercises": {
+      "nodeId": "556:1270",
+      "lines": [
+        {
+          "text": "🧩 Fill-in-the-Blank Exercises",
+          "depth": 1,
+          "name": "🧩 Fill-in-the-Blank Exercises"
+        },
+        {
+          "text": "Complete each sentence with a word from this page.",
+          "depth": 1,
+          "name": "Complete each sentence with a word from this page."
+        },
+        {
+          "text": "1.  A __________ tissue massage applies sustained pressure to deeper muscle layers.",
+          "depth": 1,
+          "name": "1. A __________ tissue massage applies sustained pressure to deeper muscle layers."
+        },
+        {
+          "text": "2.  The therapist placed heated __________ along the client's spine to relax the muscles.",
+          "depth": 1,
+          "name": "2. The therapist placed heated __________ along the client's spine to relax the muscles."
+        },
+        {
+          "text": "3.  A __________ tank suspends the body in dense salt water to eliminate sensory input.",
+          "depth": 1,
+          "name": "3. A __________ tank suspends the body in dense salt water to eliminate sensory input."
+        },
+        {
+          "text": "4.  The facial began with a __________ to remove makeup and surface impurities.",
+          "depth": 1,
+          "name": "4. The facial began with a __________ to remove makeup and surface impurities."
+        },
+        {
+          "text": "5.  A __________ mask draws out impurities from the pores during a facial treatment.",
+          "depth": 1,
+          "name": "5. A __________ mask draws out impurities from the pores during a facial treatment."
+        },
+        {
+          "text": "6.  The __________ room provides dry heat between 70°C and 100°C.",
+          "depth": 1,
+          "name": "6. The __________ room provides dry heat between 70°C and 100°C."
+        },
+        {
+          "text": "7.  __________ oil was added to the diffuser to create a calming atmosphere.",
+          "depth": 1,
+          "name": "7. __________ oil was added to the diffuser to create a calming atmosphere."
+        },
+        {
+          "text": "8.  A body __________ uses salt or sugar grounds to polish and exfoliate the skin.",
+          "depth": 1,
+          "name": "8. A body __________ uses salt or sugar grounds to polish and exfoliate the skin."
+        },
+        {
+          "text": "9.  After the sauna, she entered the __________ pool to constrict blood vessels.",
+          "depth": 1,
+          "name": "9. After the sauna, she entered the __________ pool to constrict blood vessels."
+        },
+        {
+          "text": "10. The spa provided a __________, slippers, and headband upon arrival.",
+          "depth": 1,
+          "name": "10. The spa provided a __________, slippers, and headband upon arrival."
+        },
+        {
+          "text": "Answer Key",
+          "depth": 2,
+          "name": "Answer Key"
+        },
+        {
+          "text": "1. deep  2. stones  3. flotation  4. cleanser  5. clay  6. sauna  7. Essential/Lavender  8. scrub  9. plunge  10. robe",
+          "depth": 2,
+          "name": "1. deep 2. stones 3. flotation 4. cleanser 5. clay 6. sauna 7. Essential/Lavender 8. scrub 9. plunge 10. robe"
+        }
+      ]
+    },
+    "cultural-notes": {
+      "nodeId": "556:1288",
+      "lines": [
+        {
+          "text": "🌍 Cultural & Usage Notes",
+          "depth": 1,
+          "name": "🌍 Cultural & Usage Notes"
+        },
+        {
+          "text": "Hammam Tradition",
+          "depth": 2,
+          "name": "Hammam Tradition"
+        },
+        {
+          "text": "The hammam (Turkish bath) is a centuries-old bathing tradition in the Islamic world. It involves a sequence of warm, hot, and cool rooms, with body scrubbing and water dousing. Hammams are important social spaces — historically separate for men and women. Many modern spas in the Middle East, North Africa, and Turkey still feature traditional hammam experiences.",
+          "depth": 2,
+          "name": "The hammam (Turkish bath) is a centuries-old bathing tradition in the Islamic world. It involves a sequence of warm, hot, and cool rooms, with body scrubbing and water dousing. Hammams are important social spaces — historically separate for men and women. Many modern spas in the Middle East, North Africa, and Turkey still feature traditional hammam experiences."
+        },
+        {
+          "text": "Spa Etiquette — Clothing Norms",
+          "depth": 2,
+          "name": "Spa Etiquette — Clothing Norms"
+        },
+        {
+          "text": "Clothing norms vary enormously between countries. In German-speaking countries and Scandinavia, saunas are nude — wearing a swimsuit is considered unhygienic. In the UK and US, swimwear is always worn in communal areas. In Islamic cultures, gender separation and modest covering are standard. Always check local customs to avoid embarrassment.",
+          "depth": 2,
+          "name": "Clothing norms vary enormously between countries. In German-speaking countries and Scandinavia, saunas are nude — wearing a swimsuit is considered unhygienic. In the UK and US, swimwear is always worn in communal areas. In Islamic cultures, gender separation and modest covering are standard. Always check local customs to avoid embarrassment."
+        },
+        {
+          "text": "Wellbeing vs Wellness",
+          "depth": 2,
+          "name": "Wellbeing vs Wellness"
+        },
+        {
+          "text": "'Wellbeing' (British) and 'wellness' (American) overlap but aren't identical. 'Wellbeing' is broader — mental, physical, and social health. 'Wellness' is more commercially focused — spas, supplements, fitness. In British English, 'wellness' sometimes carries a slightly sceptical tone, associated with unproven treatments.",
+          "depth": 2,
+          "name": "'Wellbeing' (British) and 'wellness' (American) overlap but aren't identical. 'Wellbeing' is broader — mental, physical, and social health. 'Wellness' is more commercially focused — spas, supplements, fitness. In British English, 'wellness' sometimes carries a slightly sceptical tone, associated with unproven treatments."
+        },
+        {
+          "text": "Day Spa vs Resort Spa vs Medical Spa",
+          "depth": 2,
+          "name": "Day Spa vs Resort Spa vs Medical Spa"
+        },
+        {
+          "text": "A 'day spa' = visit for a few hours, no overnight stay. A 'resort spa' = part of a hotel or resort, often included in a holiday package. A 'medical spa' (or 'medi-spa') = offers clinical treatments like Botox, chemical peels, and laser treatments, supervised by medical professionals. These distinctions matter when booking.",
+          "depth": 2,
+          "name": "A 'day spa' = visit for a few hours, no overnight stay. A 'resort spa' = part of a hotel or resort, often included in a holiday package. A 'medical spa' (or 'medi-spa') = offers clinical treatments like Botox, chemical peels, and laser treatments, supervised by medical professionals. These distinctions matter when booking."
+        }
+      ]
+    },
+    "vocabulary-metadata": {
+      "nodeId": "556:1304",
+      "lines": [
+        {
+          "text": "📊 Vocabulary Reference Data",
+          "depth": 1,
+          "name": "📊 Vocabulary Reference Data"
+        },
+        {
+          "text": "Structured reference for study tools and AI agents.",
+          "depth": 1,
+          "name": "Structured reference for study tools and AI agents."
+        },
+        {
+          "text": "Word",
+          "depth": 2,
+          "name": "Word"
+        },
+        {
+          "text": "POS",
+          "depth": 2,
+          "name": "POS"
+        },
+        {
+          "text": "Freq",
+          "depth": 2,
+          "name": "Freq"
+        },
+        {
+          "text": "Key Collocations",
+          "depth": 2,
+          "name": "Key Collocations"
+        },
+        {
+          "text": "massage",
+          "depth": 2,
+          "name": "massage"
+        },
+        {
+          "text": "n/v",
+          "depth": 2,
+          "name": "n/v"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "deep tissue ~, Swedish ~, ~ oil",
+          "depth": 2,
+          "name": "deep tissue ~, Swedish ~, ~ oil"
+        },
+        {
+          "text": "sauna",
+          "depth": 2,
+          "name": "sauna"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ session, ~ heat, wood ~",
+          "depth": 2,
+          "name": "~ session, ~ heat, wood ~"
+        },
+        {
+          "text": "facial",
+          "depth": 2,
+          "name": "facial"
+        },
+        {
+          "text": "n/adj",
+          "depth": 2,
+          "name": "n/adj"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ mask, ~ treatment, ~ cream",
+          "depth": 2,
+          "name": "~ mask, ~ treatment, ~ cream"
+        },
+        {
+          "text": "therapist",
+          "depth": 2,
+          "name": "therapist"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★★",
+          "depth": 2,
+          "name": "★★★"
+        },
+        {
+          "text": "~ room, qualified ~, massage ~",
+          "depth": 2,
+          "name": "~ room, qualified ~, massage ~"
+        },
+        {
+          "text": "robe",
+          "depth": 2,
+          "name": "robe"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "bath ~, ~ and slippers, spa ~",
+          "depth": 2,
+          "name": "bath ~, ~ and slippers, spa ~"
+        },
+        {
+          "text": "jacuzzi",
+          "depth": 2,
+          "name": "jacuzzi"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ jets, ~ tub, outdoor ~",
+          "depth": 2,
+          "name": "~ jets, ~ tub, outdoor ~"
+        },
+        {
+          "text": "exfoliate",
+          "depth": 2,
+          "name": "exfoliate"
+        },
+        {
+          "text": "v",
+          "depth": 2,
+          "name": "v"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "~ skin, ~ scrub, ~ gently",
+          "depth": 2,
+          "name": "~ skin, ~ scrub, ~ gently"
+        },
+        {
+          "text": "moisturiser",
+          "depth": 2,
+          "name": "moisturiser"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ cream, apply ~, daily ~",
+          "depth": 2,
+          "name": "~ cream, apply ~, daily ~"
+        },
+        {
+          "text": "locker",
+          "depth": 2,
+          "name": "locker"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★★",
+          "depth": 2,
+          "name": "★★"
+        },
+        {
+          "text": "~ room, ~ key, ~ number",
+          "depth": 2,
+          "name": "~ room, ~ key, ~ number"
+        },
+        {
+          "text": "serum",
+          "depth": 2,
+          "name": "serum"
+        },
+        {
+          "text": "n",
+          "depth": 2,
+          "name": "n"
+        },
+        {
+          "text": "★",
+          "depth": 2,
+          "name": "★"
+        },
+        {
+          "text": "face ~, ~ application, anti-ageing ~",
+          "depth": 2,
+          "name": "face ~, ~ application, anti-ageing ~"
+        }
+      ]
+    }
+  }
+}
