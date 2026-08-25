@@ -20,7 +20,8 @@ interface Props {
  */
 export const LearnWordsScreen = memo(function LearnWordsScreen({ lessonId, dispatch }: Props) {
   const group = useMemo(() => resolveGroup(lessonId), [lessonId]);
-  const words = useMemo(() => getWords(group.wordIds), [group.wordIds]);
+  const unitId = useMemo(() => resolveUnitForLesson(lessonId).id, [lessonId]);
+  const words = useMemo(() => getWords(group.wordIds, unitId), [group.wordIds, unitId]);
   const topics = useMemo(() => resolveUnitForLesson(lessonId).topics, [lessonId]);
 
   const [activeId, setActiveId] = useState<string>(words[0].id);

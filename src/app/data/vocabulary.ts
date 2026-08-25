@@ -113,7 +113,6 @@ const LOADERS: Record<string, () => Promise<VocabularyItem[]>> = {
   harbor: () => import("./units/harbor").then((m) => m.VOCABULARY),
   "home-features": () => import("./units/home-features").then((m) => m.VOCABULARY),
   hotel: () => import("./units/hotel").then((m) => m.VOCABULARY),
-  "human-body": () => import("./units/human-body").then((m) => m.VOCABULARY),
   "ice-cream-shop": () => import("./units/ice-cream-shop").then((m) => m.VOCABULARY),
   "indoor-hobbies": () => import("./units/indoor-hobbies").then((m) => m.VOCABULARY),
   "insect-world": () => import("./units/insect-world").then((m) => m.VOCABULARY),
@@ -206,13 +205,35 @@ const LOADERS: Record<string, () => Promise<VocabularyItem[]>> = {
   "wine-cellar": () => import("./units/wine-cellar").then((m) => m.VOCABULARY),
   "wine-tasting": () => import("./units/wine-tasting").then((m) => m.VOCABULARY),
   winemaking: () => import("./units/winemaking").then((m) => m.VOCABULARY),
+  "human-body-head-and-face": () =>
+    import("./units/human-body-head-and-face").then((m) => m.VOCABULARY),
+  "human-body-upper-body": () => import("./units/human-body-upper-body").then((m) => m.VOCABULARY),
+  "human-body-lower-body": () => import("./units/human-body-lower-body").then((m) => m.VOCABULARY),
+  "human-body-hands-and-feet": () =>
+    import("./units/human-body-hands-and-feet").then((m) => m.VOCABULARY),
 };
 
 const byUnit = new Map<string, VocabularyItem[]>();
 const byId = new Map<string, VocabularyItem>();
 
+/**
+ * Per-unit id maps, because word ids are not unique across the course.
+ *
+ * 10,848 word entries share only 7,675 ids. 1,841 ids appear in more than one
+ * unit and "mirror" appears in fifteen, so a single global map cannot answer
+ * "the mirror" — only "some mirror", whichever unit wrote that key last. A
+ * bathroom lesson would render the gym's mirror photograph, and nothing about
+ * it looks wrong, because it is a mirror.
+ *
+ * Callers that know their unit resolve here first and get their own copy.
+ * `byId` stays as the fallback for the places that genuinely span units, like
+ * a review session drawn from the whole schedule.
+ */
+const unitIndex = new Map<string, Map<string, VocabularyItem>>();
+
 function register(unitId: string, words: VocabularyItem[]): VocabularyItem[] {
   byUnit.set(unitId, words);
+  unitIndex.set(unitId, new Map(words.map((word) => [word.id, word])));
   for (const word of words) byId.set(word.id, word);
   return words;
 }
@@ -244,9 +265,19 @@ export function findLoadedWord(wordId: string): VocabularyItem | undefined {
   return byId.get(wordId);
 }
 
-/** Looks up vocabulary items by id, preserving the order of `wordIds`. */
-export function getWords(wordIds: string[]): VocabularyItem[] {
-  return wordIds.map((id) => byId.get(id)).filter((item): item is VocabularyItem => Boolean(item));
+/**
+ * Looks up vocabulary items by id, preserving the order of `wordIds`.
+ *
+ * Pass `unitId` whenever the caller knows which unit the words belong to — a
+ * lesson always does. Without it the lookup can only return whichever unit's
+ * copy of a shared id reached the global map last, which is how a bathroom
+ * drill ends up showing the gym's mirror.
+ */
+export function getWords(wordIds: string[], unitId?: string): VocabularyItem[] {
+  const preferred = unitId ? unitIndex.get(unitId) : undefined;
+  return wordIds
+    .map((id) => preferred?.get(id) ?? byId.get(id))
+    .filter((item): item is VocabularyItem => Boolean(item));
 }
 
 /**

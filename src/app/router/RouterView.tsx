@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import type { Screen, Action, TabId } from "../types";
-import { resolveGroup, DEFAULT_UNIT_ID } from "../data/lessons";
+import { resolveGroup, resolveUnitForLesson, DEFAULT_UNIT_ID } from "../data/lessons";
 import { getWords } from "../data/vocabulary";
 import { UnitVocabularyGate } from "./UnitVocabularyGate";
 import { useI18n } from "../context/I18nContext";
@@ -158,10 +158,16 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       }
 
       const ex: ExStep = exSequence[state.step];
-      const groupWords = getWords(state.wordQueue);
+      // Resolve within the lesson's own unit. Word ids repeat across the
+      // course — "mirror" belongs to fifteen units — so an unscoped lookup
+      // can hand this drill another unit's photograph of the same thing.
+      const lessonUnitId = resolveUnitForLesson(state.lessonId).id;
+      const groupWords = getWords(state.wordQueue, lessonUnitId);
 
       const activeGroupWords =
-        groupWords.length > 0 ? groupWords : getWords(resolveGroup(state.lessonId).wordIds);
+        groupWords.length > 0
+          ? groupWords
+          : getWords(resolveGroup(state.lessonId).wordIds, lessonUnitId);
 
       if (activeGroupWords.length === 0) return <ExploreWorlds dispatch={dispatch} />;
 

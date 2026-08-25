@@ -4,7 +4,12 @@ import { HomeIndicator } from "../shared/HomeIndicator";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
 import { Trophy, Star, CheckCircle2, Layers, Sparkles, ShieldCheck } from "lucide-react";
-import { COURSE_UNITS, resolveGroup, getNextGroupChronological } from "../data/lessons";
+import {
+  COURSE_UNITS,
+  resolveGroup,
+  resolveUnitForLesson,
+  getNextGroupChronological,
+} from "../data/lessons";
 import { getWords } from "../data/vocabulary";
 import { useProgress } from "../data/progress";
 import { useSound } from "../shared/useSound";
@@ -95,7 +100,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   const xpBreakdown = sessionRecord?.xp;
   const xp = xpBreakdown?.total ?? 0;
 
-  const groupWords = getWords(wordQueue);
+  const groupWords = getWords(wordQueue, resolveUnitForLesson(lessonId).id);
   const nextGroup = getNextGroupChronological(lessonId);
 
   return (

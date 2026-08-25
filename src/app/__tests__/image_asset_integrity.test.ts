@@ -21,27 +21,14 @@ import { HEADER_BYTES, isRealArtwork } from "../../../scripts/lib/image-format.m
  * threshold. Magic bytes settle it exactly — real artwork is a recognised
  * raster container, and anything else is a placeholder however big it is.
  *
- * The real artwork lives in Figma as image fills. `scripts/figma-sync.mjs`
- * pulls it down, and the "Sync content from Figma" workflow runs that on a
- * GitHub runner. Until it has been run for every unit this is a ratchet rather
- * than a pass/fail gate: the count may only go down. Lower the baseline
- * whenever artwork lands, and the day it reaches zero, replace the ratchet
- * with a flat assertion that no placeholder survives.
+ * The real artwork lives in Figma. `scripts/figma-sync.mjs` pulls it down, and
+ * the "Sync content from Figma" workflow runs that on a GitHub runner. This
+ * used to be a ratchet — a placeholder count that could only go down — because
+ * 200 images in `human-body` had no counterpart in the design file to import.
+ * That unit has since been replaced by the four Figma splits it always
+ * corresponded to, so the ratchet is gone and this is a flat assertion: no
+ * placeholder survives anywhere.
  */
-
-/**
- * Placeholders still outstanding. This number may only decrease.
- *
- * After the first full Figma import it is 200 — every one of them in
- * `human-body`, the single app unit the design file has no counterpart for:
- * Figma split it into four units (head & face, upper body, lower body, hands
- * & feet) that the app has not adopted yet. Adopting them, or renaming to
- * match, takes this to zero.
- */
-const PLACEHOLDER_BASELINE = 200;
-
-/** The only unit still allowed to contain placeholders. */
-const UNIMPORTED_UNITS = new Set(["human-body"]);
 
 const PUBLIC_DIR = join(process.cwd(), "public");
 
@@ -79,32 +66,14 @@ describe("word image assets", () => {
     expect(missing.map(({ word }) => word.img)).toEqual([]);
   }, 60000);
 
-  it("never regresses the number of placeholder images", () => {
+  it("contains no placeholder artwork at all", () => {
+    // Was an allow-list of three good units, then a deny-list of one bad one,
+    // and now neither: every unit in the course has real photographs behind
+    // every word. The last exception was `human-body`, which the design file
+    // never had — it is split four ways there, and adopting that split is what
+    // finally imported those 200 images.
     const placeholders = words.filter(({ word }) => assetState(word.img) === "placeholder");
-
-    expect(
-      placeholders.length,
-      placeholders.length > PLACEHOLDER_BASELINE
-        ? `Placeholder count rose to ${placeholders.length} (baseline ${PLACEHOLDER_BASELINE}). ` +
-            "Real artwork was probably overwritten by generated tiles."
-        : `Placeholder count is now ${placeholders.length}; lower PLACEHOLDER_BASELINE to match.`
-    ).toBeLessThanOrEqual(PLACEHOLDER_BASELINE);
-  }, 60000);
-
-  it("keeps every imported unit free of placeholders", () => {
-    // Inverted from an allow-list of three good units to a deny-list of one
-    // bad one: after the full import, real artwork is the rule and a
-    // placeholder is the exception that has to be named.
-    for (const unit of Object.values(COURSE_UNITS)) {
-      if (UNIMPORTED_UNITS.has(unit.id)) continue;
-      const bad = (unitWords.get(unit.id) ?? []).filter(
-        (word) => assetState(word.img) === "placeholder"
-      );
-      expect(
-        bad.map((w) => w.img),
-        `${unit.id} contains placeholder artwork`
-      ).toEqual([]);
-    }
+    expect(placeholders.map(({ unitId, word }) => `${unitId}: ${word.img}`)).toEqual([]);
   }, 60000);
 });
 
