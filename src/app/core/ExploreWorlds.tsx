@@ -66,13 +66,14 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
         const unit = COURSE_UNITS[uid];
         if (unit) {
           unitCount++;
-          const unitWords = unit.vocabulary || [];
-          total += unitWords.length;
-          const unitMastered = unitWords.filter(
-            (w) => (progress.wordMastery[w.id] || 0) >= 3
-          ).length;
+          // Ids are all this needs: how many words, and how many are strong.
+          // Reading `unit.vocabulary` here used to pull all 182 units into the
+          // main bundle so that Explore could count to sixty.
+          const wordIds = unit.wordIds;
+          total += wordIds.length;
+          const unitMastered = wordIds.filter((id) => (progress.wordMastery[id] || 0) >= 3).length;
           mastered += unitMastered;
-          if (unitWords.length > 0 && unitMastered === unitWords.length) {
+          if (wordIds.length > 0 && unitMastered === wordIds.length) {
             completedUnits++;
           }
         }
@@ -141,7 +142,11 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
           return (
             unit.name.toLowerCase().includes(q) ||
             unit.description.toLowerCase().includes(q) ||
-            (unit.vocabulary && unit.vocabulary.some((v) => v.label.toLowerCase().includes(q)))
+            // Word ids are the label slugged — "bathtub" for "Bathtub" — for
+            // 10,826 of the 10,848 items, so they carry search without the
+            // labels themselves being in the bundle. The exceptions are
+            // accented words: searching "rosé" misses where "rose" matches.
+            unit.wordIds.some((id) => id.replace(/-/g, " ").includes(q))
           );
         });
 
@@ -379,11 +384,10 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                       className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2"
                     >
                       {units.map((unit) => {
-                        const unitWords = unit.vocabulary || [];
-                        const wordsPracticedCount = unitWords.filter(
-                          (w) => (progress.wordMastery[w.id] || 0) >= 3
+                        const wordsPracticedCount = unit.wordIds.filter(
+                          (id) => (progress.wordMastery[id] || 0) >= 3
                         ).length;
-                        const totalWords = unitWords.length;
+                        const totalWords = unit.wordIds.length;
                         const unitPercent =
                           totalWords > 0 ? Math.round((wordsPracticedCount / totalWords) * 100) : 0;
                         const isComplete = unitPercent === 100 && totalWords > 0;

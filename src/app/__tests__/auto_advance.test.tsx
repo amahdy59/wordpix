@@ -3,7 +3,7 @@ import { act, renderHook } from "@testing-library/react";
 import { useDrillQueue } from "../exercises/useDrillQueue";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
 import { DEFAULT_ACCESSIBILITY } from "../context/LearnerContext";
-import { getWords } from "../data/lessons";
+import { getWords } from "../data/vocabulary";
 
 const WORDS = getWords(["bed", "nightstand", "dresser"]);
 

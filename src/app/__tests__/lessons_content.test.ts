@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { BEDROOM_GROUPS, BEDROOM_VOCABULARY, COURSE_UNITS } from "../data/lessons";
+import { BEDROOM_GROUPS, BEDROOM_VOCABULARY, COURSE_UNITS, type CourseUnit } from "../data/lessons";
+import { loadAllUnitVocabulary } from "../data/vocabulary";
 import { getImageAltText } from "../shared/WordImage";
 
 function normalized(value: string): string {
@@ -10,7 +11,13 @@ function normalized(value: string): string {
 }
 
 const units = Object.values(COURSE_UNITS);
-const vocabulary = units.flatMap((unit) => unit.vocabulary);
+
+// Vocabulary lives one chunk per unit now, so a suite that checks every word
+// in the course loads them all up front instead of reading them off the
+// catalogue object.
+const unitWords = await loadAllUnitVocabulary();
+const wordsOf = (unit: CourseUnit) => unitWords.get(unit.id) ?? [];
+const vocabulary = units.flatMap(wordsOf);
 
 describe("Vocabulary descriptions", () => {
   it("gives every word a useful description", () => {
@@ -38,7 +45,7 @@ describe("Vocabulary descriptions", () => {
     units.forEach((unit) => {
       unit.groups.forEach((group) => {
         const descriptions = group.wordIds.map(
-          (id) => unit.vocabulary.find((word) => word.id === id)?.description
+          (id) => wordsOf(unit).find((word) => word.id === id)?.description
         );
         expect(descriptions.every(Boolean), `${unit.id}/${group.id} missing descriptions`).toBe(
           true
@@ -59,7 +66,7 @@ describe("Lesson story integrity", () => {
 
         const story = normalized(group.story ?? "");
         group.wordIds.forEach((wordId) => {
-          const word = unit.vocabulary.find((item) => item.id === wordId);
+          const word = wordsOf(unit).find((item) => item.id === wordId);
           expect(word, `${unit.id}/${group.id} references missing word ${wordId}`).toBeDefined();
           expect(story, `${unit.id}/${group.id} story omits ${word?.label}`).toContain(
             normalized(word?.label ?? "")
@@ -73,7 +80,7 @@ describe("Lesson story integrity", () => {
 describe("Lesson data integrity", () => {
   it("keeps every group inside its owning unit", () => {
     units.forEach((unit) => {
-      const ids = new Set(unit.vocabulary.map((word) => word.id));
+      const ids = new Set(wordsOf(unit).map((word) => word.id));
       unit.groups.forEach((group) => {
         group.wordIds.forEach((wordId) => {
           expect(
@@ -99,7 +106,7 @@ describe("Lesson data integrity", () => {
 
   it("has no duplicate word ids within a unit", () => {
     units.forEach((unit) => {
-      const ids = unit.vocabulary.map((word) => word.id);
+      const ids = wordsOf(unit).map((word) => word.id);
       expect(new Set(ids).size, `${unit.id} repeats a word id`).toBe(ids.length);
     });
   }, 30000);
@@ -107,7 +114,7 @@ describe("Lesson data integrity", () => {
   it("assigns every word to a declared topic or unit", () => {
     units.forEach((unit) => {
       const topics = new Set([...unit.topics.map((topic) => topic.id), unit.id]);
-      unit.vocabulary.forEach((word) => {
+      wordsOf(unit).forEach((word) => {
         expect(
           topics.has(word.topic),
           `${unit.id}/${word.id} has unknown topic "${word.topic}"`

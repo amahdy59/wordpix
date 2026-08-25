@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { closeSync, openSync, readSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { COURSE_UNITS } from "../data/lessons";
+import { loadAllUnitVocabulary } from "../data/vocabulary";
 // The same detector the sync script and the audit use, so the three can never
 // disagree about what counts as a real image.
 // @ts-expect-error -- plain .mjs helper shared with the build scripts
@@ -64,9 +65,13 @@ function assetState(imgPath: string): AssetState {
   }
 }
 
+// Loaded once for the whole file: vocabulary is per-unit chunks now, and
+// every assertion here spans the entire catalogue.
+const unitWords = await loadAllUnitVocabulary();
+
 describe("word image assets", () => {
   const words = Object.values(COURSE_UNITS).flatMap((unit) =>
-    unit.vocabulary.map((word) => ({ unitId: unit.id, word }))
+    (unitWords.get(unit.id) ?? []).map((word) => ({ unitId: unit.id, word }))
   );
 
   it("resolves every referenced image to a file on disk", () => {
@@ -92,7 +97,9 @@ describe("word image assets", () => {
     // placeholder is the exception that has to be named.
     for (const unit of Object.values(COURSE_UNITS)) {
       if (UNIMPORTED_UNITS.has(unit.id)) continue;
-      const bad = unit.vocabulary.filter((word) => assetState(word.img) === "placeholder");
+      const bad = (unitWords.get(unit.id) ?? []).filter(
+        (word) => assetState(word.img) === "placeholder"
+      );
       expect(
         bad.map((w) => w.img),
         `${unit.id} contains placeholder artwork`

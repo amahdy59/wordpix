@@ -18,6 +18,7 @@ import {
   Library,
 } from "lucide-react";
 import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/lessons";
+import { findLoadedWord } from "../data/vocabulary";
 import { hasLearningMaterials } from "../learning/registry";
 import { useProgress } from "../data/progress";
 import { resolveAssetUrl } from "../../utils/assetUrl";
@@ -110,7 +111,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
   };
 
   const handleTakeAssessment = () => {
-    const allWordIds = world.vocabulary.map((v) => v.id);
+    const allWordIds = world.wordIds;
     const shuffled = [...allWordIds].sort(() => 0.5 - Math.random());
     const selected = shuffled.slice(0, 20);
 
@@ -218,10 +219,9 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
             const isNextToStudy = nextGroupId === g.id;
 
             // Calc group progress from useProgress
-            const groupWords = g.wordIds
-              .map((id) => world.vocabulary.find((v) => v.id === id))
-              .filter(Boolean);
-            const learnedCount = groupWords.filter((w) => isWordLearned(w!.id)).length;
+            // Mastery is keyed by word id, so the ids alone answer this;
+            // the words themselves are only needed for the thumbnail below.
+            const learnedCount = g.wordIds.filter((id) => isWordLearned(id)).length;
             const isCompleted = learnedCount === g.wordIds.length && g.wordIds.length > 0;
             const progressPct =
               g.wordIds.length > 0 ? Math.round((learnedCount / g.wordIds.length) * 100) : 0;
@@ -323,7 +323,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                     >
                       {(() => {
                         const firstWordId = g.wordIds[0];
-                        const firstWord = world.vocabulary.find((v) => v.id === firstWordId);
+                        const firstWord = findLoadedWord(firstWordId);
                         return firstWord?.img ? (
                           <img
                             src={resolveAssetUrl(firstWord.img)}

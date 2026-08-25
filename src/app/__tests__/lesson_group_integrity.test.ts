@@ -5,10 +5,10 @@ import {
   BEDROOM_GROUPS,
   BEDROOM_VOCABULARY,
   REVIEW_GROUP_ID,
-  getWords,
   nextGroupToStudy,
   resolveGroup,
 } from "../data/lessons";
+import { getWords } from "../data/vocabulary";
 import { RICH_CONTEXT_SENTENCES } from "../exercises/exerciseContent";
 
 /**

@@ -1,7 +1,8 @@
 import { memo, useState, useEffect, useCallback, useRef, useMemo } from "react";
 import type { Action } from "../types";
 import { useAudio } from "../shared/useAudio";
-import { resolveGroup, resolveUnitForLesson, getWords } from "../data/lessons";
+import { resolveGroup, resolveUnitForLesson } from "../data/lessons";
+import { getWords } from "../data/vocabulary";
 import { SceneCanvas } from "./SceneCanvas";
 import { VocabSidebar } from "./VocabSidebar";
 
@@ -37,7 +38,7 @@ export const LearnWordsScreen = memo(function LearnWordsScreen({ lessonId, dispa
       return () => clearTimeout(t);
     }
     return undefined;
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Cleanup audio on unmount
