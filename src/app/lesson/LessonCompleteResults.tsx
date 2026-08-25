@@ -4,7 +4,8 @@ import { HomeIndicator } from "../shared/HomeIndicator";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
 import { Trophy, Star, CheckCircle2, Layers, Sparkles, ShieldCheck } from "lucide-react";
-import { COURSE_UNITS, resolveGroup, getWords, getNextGroupChronological } from "../data/lessons";
+import { COURSE_UNITS, resolveGroup, getNextGroupChronological } from "../data/lessons";
+import { getWords } from "../data/vocabulary";
 import { useProgress } from "../data/progress";
 import { useSound } from "../shared/useSound";
 
@@ -52,7 +53,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
         const unit =
           Object.values(COURSE_UNITS).find((u) => u.id === unitId) || COURSE_UNITS[unitId || ""];
         if (unit) {
-          const allWordIds = unit.vocabulary.map((v) => v.id);
+          const allWordIds = unit.wordIds;
           recordUnitAssessmentCompletion(true, allWordIds);
         }
       }

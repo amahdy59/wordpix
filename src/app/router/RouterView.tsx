@@ -1,7 +1,9 @@
 import { lazy, Suspense } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import type { Screen, Action, TabId } from "../types";
-import { getWords, resolveGroup, DEFAULT_UNIT_ID } from "../data/lessons";
+import { resolveGroup, DEFAULT_UNIT_ID } from "../data/lessons";
+import { getWords } from "../data/vocabulary";
+import { UnitVocabularyGate } from "./UnitVocabularyGate";
 import { useI18n } from "../context/I18nContext";
 import { useLearner } from "../context/LearnerContext";
 import { AppShell } from "../shared/AppShell";
@@ -245,7 +247,11 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
         transition={{ duration: 0.2, ease: "easeInOut" }}
         className="flex-1 flex flex-col w-full min-h-full"
       >
-        <Suspense fallback={<LoadingFallback />}>{renderContent()}</Suspense>
+        <Suspense fallback={<LoadingFallback />}>
+          <UnitVocabularyGate screen={state} fallback={<LoadingFallback />}>
+            {renderContent}
+          </UnitVocabularyGate>
+        </Suspense>
       </motion.div>
     </AnimatePresence>
   );

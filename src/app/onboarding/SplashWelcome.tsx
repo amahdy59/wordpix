@@ -78,7 +78,7 @@ export function SplashWelcome({ dispatch }: Props) {
         <div className="relative z-10 flex items-center gap-2 text-white/60 text-xs font-sans font-semibold">
           <Globe className="size-4" />
           <span>
-            Start with {flagshipWorld.name} ({flagshipWorld.vocabulary.length} words)
+            Start with {flagshipWorld.name} ({flagshipWorld.wordIds.length} words)
           </span>
         </div>
       </div>
@@ -139,7 +139,7 @@ export function SplashWelcome({ dispatch }: Props) {
             <div className="absolute bottom-3 start-4 flex items-center gap-2 text-white">
               <Layers className="size-4" />
               <span className="font-sans font-bold text-xs">
-                {flagshipWorld.vocabulary.length} {flagshipWorld.name} Words Ready
+                {flagshipWorld.wordIds.length} {flagshipWorld.name} Words Ready
               </span>
             </div>
           </div>

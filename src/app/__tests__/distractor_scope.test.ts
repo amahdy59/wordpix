@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { getDistractors } from "../exercises/exerciseContent";
 import { COURSE_UNITS, resolveGroup, type VocabularyItem } from "../data/lessons";
+import { loadAllUnitVocabulary } from "../data/vocabulary";
 
 /**
  * Distractors have to come from the lesson the learner is actually in.
@@ -11,8 +12,10 @@ import { COURSE_UNITS, resolveGroup, type VocabularyItem } from "../data/lessons
  * have never been taught, so the question stops measuring recognition.
  */
 
-const bathroom = COURSE_UNITS["bathroom"];
-const wordsById = new Map(bathroom.vocabulary.map((w) => [w.id, w]));
+// Vocabulary is loaded per unit now, so a suite that reasons about words has
+// to pull the units it examines rather than reading them off the catalogue.
+const allUnitWords = await loadAllUnitVocabulary();
+const wordsById = new Map((allUnitWords.get("bathroom") ?? []).map((w) => [w.id, w]));
 const lessonWords = (groupId: string): VocabularyItem[] =>
   resolveGroup(groupId)
     .wordIds.map((id) => wordsById.get(id)!)
@@ -58,7 +61,7 @@ describe("distractor scoping", () => {
 
   it("stays inside the lesson for every lesson of every unit", () => {
     for (const unit of Object.values(COURSE_UNITS)) {
-      const byId = new Map(unit.vocabulary.map((w) => [w.id, w]));
+      const byId = new Map((allUnitWords.get(unit.id) ?? []).map((w) => [w.id, w]));
       for (const group of unit.groups) {
         const lesson = group.wordIds.map((id) => byId.get(id)!).filter(Boolean);
         if (lesson.length < 4) continue; // covered by the fallback case above

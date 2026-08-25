@@ -38,7 +38,7 @@ describe("unit learning materials", () => {
       expect(unit).toBeDefined();
 
       const grouped = (materials.subtopics ?? []).flatMap((t) => t.wordIds);
-      const unitWordIds = unit.vocabulary.map((w) => w.id);
+      const unitWordIds = unit.wordIds;
 
       // No duplicates across sub-topics.
       expect(new Set(grouped).size).toBe(grouped.length);

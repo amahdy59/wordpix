@@ -1,4 +1,5 @@
-import { ALL_VOCABULARY, type VocabularyItem } from "../data/lessons";
+import { type VocabularyItem } from "../data/lessons";
+import { loadedVocabulary } from "../data/vocabulary";
 import { shuffleArray } from "../../utils/shuffle";
 
 export const CONFUSION_PAIRS: Record<string, string[]> = {
@@ -465,7 +466,7 @@ export function getSemanticDistractors(
   if (pool.length >= count) return pool.slice(0, count);
 
   const chosen = new Set(pool.map((item) => item.id));
-  const sameTopic = ALL_VOCABULARY.filter(
+  const sameTopic = loadedVocabulary().filter(
     (item) => eligible(item) && item.topic === word.topic && !chosen.has(item.id)
   );
   const topicConfusion = sameTopic.filter((item) => confusionIds.includes(item.id));

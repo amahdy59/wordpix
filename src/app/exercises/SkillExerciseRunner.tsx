@@ -1,7 +1,7 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import { Volume2, RotateCcw, CheckCircle2, XCircle } from "lucide-react";
 import type { Action } from "../types";
-import { COURSE_UNITS } from "../data/lessons";
+import { findLoadedWord } from "../data/vocabulary";
 import { LessonHeader } from "../shared/LessonHeader";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
@@ -77,14 +77,14 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
     [task]
   );
 
-  const imageWord = useMemo(() => {
-    if (!task?.imageWordId) return undefined;
-    for (const unit of Object.values(COURSE_UNITS)) {
-      const found = unit.vocabulary.find((w) => w.id === task.imageWordId);
-      if (found) return found;
-    }
-    return undefined;
-  }, [task]);
+  // A linear scan over every unit's words used to be the only way to resolve
+  // this id, and it was also what kept all 182 units in the main bundle. The
+  // id map covers whatever has been loaded, which includes the unit this
+  // exercise belongs to.
+  const imageWord = useMemo(
+    () => (task?.imageWordId ? findLoadedWord(task.imageWordId) : undefined),
+    [task]
+  );
 
   // Speak the prompt audio when a listening task opens.
   useEffect(() => {
