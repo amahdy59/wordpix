@@ -84,8 +84,51 @@ When the count reaches zero, replace the ratchet with a flat assertion.
 
 ## Repository size
 
-Real photographs are far larger than the placeholders they replace. At the
-default `--max-width 640` and quality 82, expect roughly 30–60 KB per image and
-several hundred megabytes across all 182 units. If that becomes unwieldy,
-lower `--max-width`, or move `public/word-images` to Git LFS before the first
-full run rather than after.
+Real photographs are far larger than the placeholders they replace, so the
+sync caps resolution at what the app actually renders:
+
+| Asset | Rendered at | Cap | Typical size |
+| --- | --- | --- | --- |
+| Word card | 214x128 CSS | `--max-width 480` | ~33 KB |
+| Scene illustration | 912x400 CSS | `--scene-width 1600` | ~200 KB |
+
+480px covers a 2x display with room to spare. Measured on real artwork, the
+choice of cap dominates everything else:
+
+| Cap | Avg per card | All 10,848 |
+| --- | --- | --- |
+| 1024 (what earlier imports used) | 136 KB | ~1.5 GB |
+| 640 | 53 KB | ~0.59 GB |
+| **480** | **33 KB** | **~0.36 GB** |
+| 360 | 20 KB | ~0.22 GB |
+
+### Why not Git LFS
+
+Plain git, deliberately. LFS looks like the obvious answer for a few hundred
+megabytes of binaries, but it fits this repository badly:
+
+- GitHub's free tier includes 1 GB of LFS storage and 1 GB of bandwidth per
+  month. The Pages deploy checks the repository out on every push to main, so
+  a full image set would exhaust the monthly bandwidth in a couple of deploys.
+- `actions/checkout` does not fetch LFS objects unless told to. Miss that and
+  the build silently ships pointer files instead of images — the same class of
+  bug as the placeholders, and just as invisible to a test that only checks
+  that a path resolves.
+- Contributors need `git lfs install` before a clone gives them working images.
+
+At the 480px cap the artwork is comparable to what the repository already
+carries, so the added complexity buys nothing.
+
+## Re-optimizing artwork already committed
+
+`scripts/optimize-images.mjs` caps files that were imported before these
+limits existed. It skips placeholders, so a run cannot disguise a missing
+import as real artwork, and it never writes a file that would grow.
+
+```bash
+node scripts/optimize-images.mjs          # report only
+node scripts/optimize-images.mjs --write  # apply
+```
+
+The first run rewrote 1,150 files at up to 1920px wide, taking committed
+artwork from 90.6 MB to 29.1 MB with no visible change at render size.

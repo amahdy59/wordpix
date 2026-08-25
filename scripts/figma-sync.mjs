@@ -16,7 +16,8 @@
  *   --force         re-download assets that already exist locally
  *   --dry-run       report what would happen, write nothing
  *   --concurrency N parallel downloads (default 6)
- *   --max-width N   downscale artwork wider than this (default 640)
+ *   --max-width N   downscale card artwork wider than this (default 480)
+ *   --scene-width N downscale scene artwork wider than this (default 1600)
  *
  * Images are skipped when a real file is already present, so an interrupted
  * run resumes cheaply. "Real" means larger than PLACEHOLDER_MAX_BYTES — the
@@ -52,7 +53,14 @@ const OPTS = {
   dryRun: has("--dry-run"),
   units: valuesOf("--unit"),
   concurrency: Number(valuesOf("--concurrency")[0] ?? 6),
-  maxWidth: Number(valuesOf("--max-width")[0] ?? 640),
+  // Cards render at 214x128 CSS, so 480 covers a 2x display with room to
+  // spare. Measured on real artwork: 480 averages ~33 KB per card against
+  // ~136 KB at the 1024 the earlier imports used, which is the difference
+  // between roughly 0.36 GB and 1.5 GB across all 10,848 images.
+  maxWidth: Number(valuesOf("--max-width")[0] ?? 480),
+  // Scene illustrations are the full-width hero of a unit (912x400 in the
+  // design), so they need a much higher cap than the cards.
+  sceneWidth: Number(valuesOf("--scene-width")[0] ?? 1600),
 };
 
 if (!OPTS.images && !OPTS.content) {
@@ -209,10 +217,10 @@ async function loadSharp() {
   return sharpModule;
 }
 
-async function toWebp(pngBuffer) {
+async function toWebp(pngBuffer, maxWidth) {
   const sharp = await loadSharp();
   return sharp(pngBuffer)
-    .resize({ width: OPTS.maxWidth, withoutEnlargement: true })
+    .resize({ width: maxWidth, withoutEnlargement: true })
     .webp({ quality: 82 })
     .toBuffer();
 }
@@ -223,14 +231,24 @@ async function downloadImages(unit, cards) {
     if (card.kind !== "card" || !card.imageNodeId) continue;
     const dest = join(ROOT, "public", "word-images", unit.id, `${card.id}.webp`);
     if (!OPTS.force && !(await isPlaceholder(dest))) continue;
-    targets.push({ nodeId: card.imageNodeId, dest, label: `${unit.id}/${card.id}` });
+    targets.push({
+      nodeId: card.imageNodeId,
+      dest,
+      label: `${unit.id}/${card.id}`,
+      maxWidth: OPTS.maxWidth,
+    });
   }
 
   const sceneNode = [...walk(unit.unitNode)].find(({ node }) => node.name === "asset")?.node;
   if (sceneNode) {
     const dest = join(ROOT, "public", "scene-images", `${unit.id}-hero.webp`);
     if (OPTS.force || (await isPlaceholder(dest))) {
-      targets.push({ nodeId: sceneNode.id, dest, label: `${unit.id}/scene` });
+      targets.push({
+        nodeId: sceneNode.id,
+        dest,
+        label: `${unit.id}/scene`,
+        maxWidth: OPTS.sceneWidth,
+      });
     }
   }
 
@@ -271,7 +289,7 @@ async function downloadImages(unit, cards) {
       return;
     }
     const rendered = Buffer.from(await res.arrayBuffer());
-    const webp = await toWebp(rendered);
+    const webp = await toWebp(rendered, t.maxWidth);
     if (!isRealWebp(webp)) {
       console.warn(`  ! ${t.label} did not convert to webp, not written`);
       skipped++;

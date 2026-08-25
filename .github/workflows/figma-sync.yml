@@ -32,9 +32,13 @@ on:
         type: boolean
         default: false
       max_width:
-        description: 'Downscale artwork wider than this'
+        description: 'Downscale card artwork wider than this'
         required: false
-        default: '640'
+        default: '480'
+      scene_width:
+        description: 'Downscale scene artwork wider than this'
+        required: false
+        default: '1600'
       dry_run:
         description: 'Report only, write nothing'
         type: boolean
@@ -66,13 +70,11 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Install sharp
-        # Figma exports png; sharp converts to the webp the app already
-        # references. Installed here rather than committed as a dependency the
-        # app itself never uses at runtime.
-        run: pnpm add -D --ignore-scripts=false sharp
+        # sharp is a devDependency and needs its native binary, so the repo's
+        # usual ignored build scripts are allowed through here.
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm rebuild sharp
 
       - name: Run sync
         env:
@@ -89,6 +91,7 @@ jobs:
           [ "${{ inputs.force }}" = "true" ] && args="$args --force"
           [ "${{ inputs.dry_run }}" = "true" ] && args="$args --dry-run"
           args="$args --max-width ${{ inputs.max_width }}"
+          args="$args --scene-width ${{ inputs.scene_width }}"
 
           for unit in ${{ inputs.units }}; do
             args="$args --unit $unit"
