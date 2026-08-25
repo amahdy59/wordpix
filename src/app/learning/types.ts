@@ -40,6 +40,20 @@ export interface ReadingPassage {
   level: string;
   text: string;
   questions: ComprehensionQuestion[];
+  /**
+   * Questions that could not be turned into multiple choice honestly.
+   *
+   * Figma authors comprehension questions open-ended. Some convert cleanly —
+   * "What do you use to brush your teeth?" has a vocabulary item for an
+   * answer. Others do not: "What is the purpose of the shower curtain?"
+   * mechanically resolves to "shower curtain", which is a question answering
+   * itself, and "Name three items..." has no single-item answer at all.
+   *
+   * Rather than ship a quiz with degenerate options, those are kept verbatim
+   * and shown as reflection prompts — answerable against the passage, just
+   * not scored.
+   */
+  openQuestions?: string[];
 }
 
 /**

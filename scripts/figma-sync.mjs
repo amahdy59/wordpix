@@ -166,15 +166,54 @@ const textOf = (node) => (node?.characters ?? node?.name ?? "").trim();
  * a Learning Materials frame belongs to the most recent unit frame before it.
  */
 function pairFrames(pageChildren) {
+  // Pairing used to walk document order and attach a "Learning Materials"
+  // frame to whichever unit frame preceded it. That is fragile twice over:
+  // the child array order is not the canvas layout, and the name has to match
+  // exactly. Pairing by geometry instead — a materials frame belongs to the
+  // nearest unit frame to its left whose vertical extent it overlaps — matches
+  // what a designer sees, which is the arrangement they actually maintain.
+  const isMaterials = (frame) => /learning\s*materials?/i.test(frame.name);
+  const box = (frame) => frame.absoluteBoundingBox ?? { x: 0, y: 0, width: 0, height: 0 };
+
   const units = [];
+  const materials = [];
+
   for (const frame of pageChildren) {
-    if (/^learning materials$/i.test(frame.name)) {
-      if (units.length) units[units.length - 1].materialsNode = frame;
+    if (frame.type !== "FRAME") continue;
+    if (isMaterials(frame)) {
+      materials.push(frame);
       continue;
     }
-    if (frame.type !== "FRAME") continue;
-    units.push({ id: slug(frame.name.replace(/^the\s+/i, "")), name: frame.name, unitNode: frame });
+    units.push({
+      id: slug(frame.name.replace(/^the\s+/i, "")),
+      name: frame.name,
+      unitNode: frame,
+    });
   }
+
+  for (const frame of materials) {
+    const m = box(frame);
+    let best = null;
+    let bestDistance = Infinity;
+
+    for (const unit of units) {
+      const u = box(unit.unitNode);
+      const verticallyOverlaps = u.y < m.y + m.height && m.y < u.y + u.height;
+      if (!verticallyOverlaps) continue;
+      // Materials sit to the right of their unit; measure from the unit's
+      // right edge so the nearest one to the left wins.
+      const distance = m.x - (u.x + u.width);
+      if (distance < -m.width) continue; // entirely to the left, not a pair
+      const score = Math.abs(distance);
+      if (score < bestDistance) {
+        bestDistance = score;
+        best = unit;
+      }
+    }
+
+    if (best && !best.materialsNode) best.materialsNode = frame;
+  }
+
   return units;
 }
 
