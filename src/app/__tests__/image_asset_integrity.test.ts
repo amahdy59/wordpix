@@ -100,3 +100,56 @@ describe("word image assets", () => {
     }
   }, 60000);
 });
+
+/**
+ * Hero artwork, which the suite above never looked at.
+ *
+ * The word-image checks walked `unit.vocabulary` and stopped there, so
+ * `unit.heroImage` — the illustration on every unit's entry screen — was
+ * outside every assertion in this file. That gap turned into 148 broken
+ * images in production.
+ *
+ * The AVIF migration retargeted image paths by rewriting quoted absolute
+ * literals like `"/word-images/bathroom/sink.webp"`. Hero paths are not
+ * written that way; they are template literals,
+ * `` `${LOCAL_SCENE_IMAGES}/bathroom-hero.webp` ``, so the rewrite passed
+ * over them and left them pointing at `.webp`. The prune step that follows
+ * deletes any superseded file nothing references — and it searched for the
+ * same literal form, so it read all 148 retargeted-in-name-only heroes as
+ * unreferenced and removed them. Two tools agreeing on a path format neither
+ * hero paths nor a human would have guessed.
+ *
+ * The lesson is the assertion, not the fix: check the asset a screen actually
+ * loads, not the spelling of the path that leads to it.
+ */
+describe("unit hero images", () => {
+  /**
+   * `human-body` has no hero and never has. It is the one unit the Figma file
+   * has no counterpart for — the design splits it into four units the app has
+   * not adopted — so there is nothing to import. Named here so the assertion
+   * below can stay exact instead of being softened into a ratchet.
+   */
+  const UNITS_WITHOUT_HERO = new Set(["human-body"]);
+
+  const heroes = Object.values(COURSE_UNITS)
+    .filter((unit) => !UNITS_WITHOUT_HERO.has(unit.id))
+    .map((unit) => ({ unitId: unit.id, hero: unit.heroImage }));
+
+  it("covers essentially every unit", () => {
+    // Cheap guard against the filter above quietly swallowing the suite.
+    expect(heroes.length).toBeGreaterThan(150);
+  });
+
+  it("resolves every hero image to a file on disk", () => {
+    const missing = heroes.filter(({ hero }) => assetState(hero) === "missing");
+    expect(
+      missing.map(({ unitId, hero }) => `${unitId}: ${hero}`),
+      "A unit entry screen points at artwork that is not there."
+    ).toEqual([]);
+  }, 60000);
+
+  it("resolves every hero image to real artwork, not a placeholder", () => {
+    const placeholders = heroes.filter(({ hero }) => assetState(hero) === "placeholder");
+    expect(placeholders.map(({ unitId, hero }) => `${unitId}: ${hero}`)).toEqual([]);
+  }, 60000);
+});
