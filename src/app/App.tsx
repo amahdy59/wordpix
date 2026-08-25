@@ -66,6 +66,15 @@ function AppInner() {
       dispatch({ type: "GO_LEARN_WORDS", lessonId: screen.lessonId });
       return;
     }
+    // The two unit-scoped destinations carry which unit they mean, and this
+    // used to drop it on the floor: `GO` accepts `unitId`, the route resolves
+    // it, and nothing passed it along. Every shared or bookmarked link to a
+    // unit — #/learn/bathroom, #/learn/bakery/study — therefore opened The
+    // Bedroom, because the reducer fell back to DEFAULT_UNIT_ID.
+    if (screen.id === "lesson-entry" || screen.id === "learning-materials") {
+      dispatch({ type: "GO", to: screen.id, unitId: screen.unitId });
+      return;
+    }
     dispatch({ type: "GO", to: screen.id });
   }, []);
 

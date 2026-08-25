@@ -1,12 +1,16 @@
 import { describe, expect, it } from "vitest";
 import { COURSE_UNITS } from "../data/lessons";
+import { loadAllUnitVocabulary } from "../data/vocabulary";
 import { getWordFallbackDataUrl } from "../shared/WordImage";
 
-describe("lesson image mapping", () => {
-  const vocabulary = Object.values(COURSE_UNITS).flatMap((unit) =>
-    unit.vocabulary.map((word) => ({ unitId: unit.id, word }))
-  );
+// Vocabulary now lives one chunk per unit, so a check that spans the whole
+// catalogue has to ask for it rather than read it off the catalogue object.
+const loaded = await loadAllUnitVocabulary();
+const vocabulary = Object.values(COURSE_UNITS).flatMap((unit) =>
+  (loaded.get(unit.id) ?? []).map((word) => ({ unitId: unit.id, word }))
+);
 
+describe("lesson image mapping", () => {
   it("ensures every vocabulary word has a self-hosted local asset path", () => {
     for (const { word } of vocabulary) {
       expect(word.img).toContain("word-images/");

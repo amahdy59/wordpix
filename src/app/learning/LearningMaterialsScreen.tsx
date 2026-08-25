@@ -17,6 +17,7 @@ import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { BackButton } from "../shared/BackButton";
 import { COURSE_UNITS, DEFAULT_UNIT_ID, type VocabularyItem } from "../data/lessons";
+import { loadedUnitVocabulary } from "../data/vocabulary";
 import { loadLearningMaterials } from "./registry";
 import { BLANK_TOKEN, type PhraseKind, type UnitLearningMaterials } from "./types";
 import { resolveAssetUrl } from "../../utils/assetUrl";
@@ -190,7 +191,7 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
         {status === "ready" && materials && (
           <>
             {section === "words" && (
-              <WordsSection materials={materials} unitVocabulary={unit.vocabulary} />
+              <WordsSection materials={materials} unitVocabulary={loadedUnitVocabulary(unit.id)} />
             )}
             {section === "passage" && <PassageSection materials={materials} />}
             {section === "phrases" && <PhrasesSection materials={materials} />}

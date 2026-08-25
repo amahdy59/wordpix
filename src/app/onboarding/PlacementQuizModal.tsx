@@ -1,11 +1,13 @@
 import { memo, useState } from "react";
 import { createPortal } from "react-dom";
 import { WordImage } from "../shared/WordImage";
-import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/lessons";
+import { BEDROOM_VOCABULARY } from "../data/lessons";
 
 // Placement always starts from the default world's vocabulary — there is only
-// one world to place a learner into today.
-const PLACEMENT_VOCABULARY = COURSE_UNITS[DEFAULT_UNIT_ID].vocabulary;
+// one world to place a learner into today. This is also why bedroom is the
+// one unit kept in the main bundle: placement runs before a learner has
+// chosen anything, so its words cannot be fetched on demand.
+const PLACEMENT_VOCABULARY = BEDROOM_VOCABULARY;
 import { useModalA11y } from "../shared/useModalA11y";
 import { Sparkles, X } from "lucide-react";
 

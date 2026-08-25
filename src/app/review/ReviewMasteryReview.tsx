@@ -11,7 +11,8 @@ import {
 } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { getWords, REVIEW_GROUP_ID, type VocabularyItem } from "../data/lessons";
+import { REVIEW_GROUP_ID, type VocabularyItem } from "../data/lessons";
+import { getWords } from "../data/vocabulary";
 
 /** Words per review session. */
 const REVIEW_SESSION_SIZE = 5;

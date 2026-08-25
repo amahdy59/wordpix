@@ -1,4 +1,5 @@
 import { COURSE_UNITS, DEFAULT_UNIT_ID } from "./app/data/lessons";
+import { loadUnitVocabulary } from "./app/data/vocabulary";
 import { resolveAssetUrl } from "./utils/assetUrl";
 
 const CACHE_NAME = "wordpix-cache-v2";
@@ -48,11 +49,13 @@ export interface OfflineReadiness {
   ready: boolean;
 }
 
-function imageUrlsForWorld(worldId: string): string[] {
+async function imageUrlsForWorld(worldId: string): Promise<string[]> {
   // Looks the world up in the registry rather than special-casing a literal
   // id, so an unregistered world correctly reports nothing cacheable instead
   // of silently inheriting bedroom's "ready" claim.
-  return COURSE_UNITS[worldId]?.vocabulary.map((word) => resolveAssetUrl(word.img)) ?? [];
+  if (!COURSE_UNITS[worldId]) return [];
+  const words = await loadUnitVocabulary(worldId);
+  return words.map((word) => resolveAssetUrl(word.img));
 }
 
 /**
@@ -66,7 +69,7 @@ function imageUrlsForWorld(worldId: string): string[] {
  * pictures."
  */
 export async function getOfflineReadiness(worldId = DEFAULT_UNIT_ID): Promise<OfflineReadiness> {
-  const urls = imageUrlsForWorld(worldId);
+  const urls = await imageUrlsForWorld(worldId);
   const total = urls.length;
 
   if (total === 0 || typeof caches === "undefined") {
