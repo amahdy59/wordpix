@@ -61,13 +61,25 @@ export interface ReadingPassage {
  * Keeping that as a discriminant is what lets one dataset feed two separate
  * browsable sections without duplicating the content.
  */
-export type PhraseKind = "idiom" | "phrasal-verb";
+export type PhraseKind = "idiom" | "phrasal-verb" | "collocation";
 
 export interface PhraseEntry {
   id: string;
   phrase: string;
   kind: PhraseKind;
+  /**
+   * True when `kind` was inferred rather than read from the design file.
+   *
+   * The file uses two templates. One tags each entry "(idiom)" or
+   * "(phrasal verb)"; the other carries no tag, so the kind is inferred from
+   * the shape of the phrase — a short verb-plus-particle is a phrasal verb,
+   * anything else an idiom. The heuristic is good but not perfect
+   * ("build on something" reads as an idiom to it), so the flag lets the UI
+   * present an inference as an inference.
+   */
+  kindInferred?: boolean;
   meaning: string;
+  /** Empty when the design file gives the phrase no example sentence. */
   example: string;
 }
 
@@ -89,8 +101,15 @@ export interface CommonMistake {
   note: string;
 }
 
-/** A row of the Noun/Verb/Adjective/Adverb table. `null` is Figma's "—". */
+/**
+ * A row of the word-formation table. `null` is Figma's "—".
+ *
+ * Column layout varies between units: some lead with a Base Word column and
+ * omit Adverb, so every column is optional and the renderer shows only those
+ * a unit actually has.
+ */
 export interface WordFormationRow {
+  base?: string | null;
   noun: string | null;
   verb: string | null;
   adjective: string | null;

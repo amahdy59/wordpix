@@ -9,6 +9,7 @@
  *   --check     report what would be generated, write nothing
  *   --unit X    restrict to one unit (repeatable)
  *   --overwrite regenerate hand-authored modules too (see below)
+ *   --include-new emit modules for units Figma has that the app does not
  *
  * Hand-authored modules are left alone. A generated module is stamped
  * GENERATED in its header; anything without that stamp was written by a person
@@ -24,8 +25,12 @@
 
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync, readFileSync } from "node:fs";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+
+const execFileAsync = promisify(execFile);
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DUMP_DIR = join(ROOT, "figma-dump");
@@ -35,6 +40,7 @@ const REGISTRY = join(ROOT, "src", "app", "learning", "registry.ts");
 const args = process.argv.slice(2);
 const CHECK = args.includes("--check");
 const OVERWRITE = args.includes("--overwrite");
+const INCLUDE_NEW = args.includes("--include-new");
 const ONLY = args.reduce((acc, a, i) => (a === "--unit" && args[i + 1] ? [...acc, args[i + 1]] : acc), []);
 
 /** Strips a leading emoji/pictograph and surrounding whitespace from a heading. */
@@ -48,149 +54,126 @@ const textsOf = (block) => (block?.lines ?? []).map((l) => l.text.trim()).filter
 
 /* --------------------------------------------------------------- parsers */
 
-function parsePassage(block, unitId, vocabulary) {
+function parsePassage(block, unitId) {
   const lines = textsOf(block);
   if (lines.length < 3) return undefined;
 
+  const questionsStart = lines.findIndex((l) => /^comprehension questions$/i.test(l));
+  const before = questionsStart === -1 ? lines.slice(1) : lines.slice(1, questionsStart);
+  if (!before.length) return undefined;
+
+  // Templates differ in where the passage sits: one puts it immediately after
+  // the heading, another inserts a "Level: B1 · Topic: …" line first. Taking
+  // the longest line ahead of the questions finds the prose in both, rather
+  // than a metadata line that rendered as an empty passage.
+  const text = before.reduce((longest, line) => (line.length > longest.length ? line : longest), "");
+  if (text.length < 80) return undefined;
+
   const heading = stripLeadingEmoji(lines[0]);
-  const level = heading.match(/\(([^)]+)\)/)?.[1] ?? "B1";
+  const level =
+    heading.match(/\(([A-C][12])\)/)?.[1] ??
+    before.join(" ").match(/level:\s*([A-C][12])/i)?.[1] ??
+    "B1";
   const title = heading.replace(/\s*\([^)]*\)\s*$/, "").trim() || "Reading Passage";
 
-  const text = lines[1];
-  const questionsStart = lines.findIndex((l) => /^comprehension questions$/i.test(l));
   const rawQuestions =
     questionsStart === -1 ? [] : lines.slice(questionsStart + 1).map(stripNumbering).filter(Boolean);
 
-  // Figma authors these open-ended. Only the ones a single vocabulary item
-  // genuinely answers become multiple choice; the rest are kept verbatim as
-  // reflection prompts. Converting everything mechanically produced questions
-  // that answered themselves ("What is the purpose of the shower curtain?" ->
-  // "Shower Curtain") and multi-part questions with a one-word answer.
-  const questions = [];
-  const openQuestions = [];
-
-  rawQuestions.forEach((question, i) => {
-    const answer = answerFromPassage(question, text, vocabulary);
-    if (!answer || !isSingleItemQuestion(question, answer)) {
-      openQuestions.push(question);
-      return;
-    }
-    const distractors = pickDistractors(vocabulary, answer, 3, `${unitId}-${i}`);
-    if (distractors.length < 3) {
-      openQuestions.push(question);
-      return;
-    }
-    const options = shuffleStable([answer, ...distractors], `${unitId}-q${i}`);
-    questions.push({
-      id: `${unitId}-q${questions.length + 1}`,
-      question,
-      options,
-      correctIndex: options.indexOf(answer),
-      explanation: `The passage names ${answer.toLowerCase()}.`,
-    });
-  });
-
+  // Every generated question is a prompt, never a quiz.
+  //
+  // Mechanical conversion to multiple choice was tried and produces answers
+  // that are confidently wrong: for "Where does the writer keep jackets and
+  // shirts?" it picked "Dresser" where the passage says wardrobe. Picking a
+  // vocabulary word that merely appears near the question's words is not
+  // comprehension, and a wrong answer marked correct teaches the wrong thing —
+  // worse than no quiz at all.
+  //
+  // Hand-authored modules still carry real multiple choice, because a person
+  // can read the passage and choose distractors that discriminate. Until that
+  // is done per unit, the questions stand as Figma wrote them.
   return {
     title,
     level,
     text,
-    questions,
-    ...(openQuestions.length ? { openQuestions } : {}),
+    questions: [],
+    ...(rawQuestions.length ? { openQuestions: rawQuestions } : {}),
   };
 }
 
 /**
- * Whether a question is honestly answerable by naming one vocabulary item.
+ * Two shapes appear in the file.
  *
- * Two disqualifiers, both learned from the generated output. If the answer
- * already appears in the question, the question answers itself. If the
- * question asks for several things, or for a reason or a method, no single
- * item answers it.
+ * The older one tags the kind inline and packs meaning and example together:
+ *   "throw in the towel" / "(idiom) To give up. \"After three failed…\""
+ *
+ * The newer one splits them over three lines and carries no tag at all:
+ *   "hit the pillow" / "go to bed and fall asleep quickly" / "\"After a long…\""
+ *
+ * Both are parsed. Where the tag is absent the kind is inferred from the shape
+ * of the phrase — a verb followed by a particle is a phrasal verb, anything
+ * else an idiom — and marked `kindInferred` so the app can be honest about it
+ * rather than presenting a guess as a fact.
  */
-function isSingleItemQuestion(question, answer) {
-  const q = question.toLowerCase();
-  if (q.includes(answer.toLowerCase())) return false;
-  if (/^(name|list|describe|explain|how|why|what happens)\b/.test(q)) return false;
-  if (/\b(three|two|several|some|ways|reasons|purpose)\b/.test(q)) return false;
-  return true;
+const PARTICLES = new Set([
+  "up", "down", "in", "out", "on", "off", "over", "through", "away", "back",
+  "around", "along", "apart", "aside", "together", "across", "after", "into",
+]);
+
+function inferKind(phrase) {
+  const words = phrase.toLowerCase().split(/\s+/);
+  const last = words[words.length - 1];
+  if (words.length <= 3 && PARTICLES.has(last)) return "phrasal-verb";
+  return "idiom";
 }
 
-/**
- * Best-effort answer for an open question: the unit word that appears in the
- * passage sentence most similar to the question. Imperfect by nature — the
- * generated explanation says only that the passage supports it, and the
- * report flags units whose questions could not be resolved confidently.
- */
-function answerFromPassage(question, passage, vocabulary) {
-  const qWords = new Set(
-    question.toLowerCase().replace(/[^a-z\s]/g, " ").split(/\s+/).filter((w) => w.length > 3)
-  );
-  let best = null;
-  let bestScore = -1;
-  for (const sentence of passage.split(/(?<=[.!?])\s+/)) {
-    const lower = sentence.toLowerCase();
-    const overlap = [...qWords].filter((w) => lower.includes(w)).length;
-    for (const word of vocabulary) {
-      if (!lower.includes(word.toLowerCase())) continue;
-      const score = overlap * 10 + word.length;
-      if (score > bestScore) {
-        bestScore = score;
-        best = word;
-      }
-    }
-  }
-  return best ?? vocabulary[0] ?? "";
-}
+const isExampleLine = (line) => /^["“]/.test(line);
 
-/** Deterministic pseudo-random so regenerating produces an identical file. */
-function seeded(seed) {
-  let h = 2166136261;
-  for (let i = 0; i < seed.length; i++) {
-    h ^= seed.charCodeAt(i);
-    h = Math.imul(h, 16777619);
-  }
-  return () => {
-    h += 0x6d2b79f5;
-    let t = h;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
-
-function shuffleStable(items, seed) {
-  const rand = seeded(seed);
-  const out = [...items];
-  for (let i = out.length - 1; i > 0; i--) {
-    const j = Math.floor(rand() * (i + 1));
-    [out[i], out[j]] = [out[j], out[i]];
-  }
-  return out;
-}
-
-function pickDistractors(vocabulary, answer, count, seed) {
-  const pool = vocabulary.filter((w) => w.toLowerCase() !== answer.toLowerCase());
-  return shuffleStable(pool, seed).slice(0, count);
-}
+const KIND_BY_TAG = {
+  idiom: "idiom",
+  "phrasal verb": "phrasal-verb",
+  collocation: "collocation",
+};
 
 function parsePhrases(block, unitId) {
   const lines = textsOf(block).slice(1);
   const entries = [];
-  for (let i = 0; i + 1 < lines.length; i += 2) {
+
+  for (let i = 0; i < lines.length; ) {
     const phrase = lines[i];
-    const detail = lines[i + 1];
-    const kindMatch = detail.match(/^\((idiom|phrasal verb)\)\s*/i);
-    if (!kindMatch) continue;
-    const rest = detail.slice(kindMatch[0].length);
-    const exampleMatch = rest.match(/["“](.+)["”]\s*$/);
+    const next = lines[i + 1];
+    if (!next) break;
+
+    // Only these three are kind tags. Other parentheticals — "(of a plane)" —
+    // are context notes belonging to the meaning, and must not be eaten.
+    const tagged = next.match(/^\((idiom|phrasal verb|collocation)\)\s*/i);
+    if (tagged) {
+      const rest = next.slice(tagged[0].length);
+      const example = rest.match(/["“](.+)["”]\s*$/);
+      entries.push({
+        id: `${unitId}-${slugify(phrase)}`,
+        phrase,
+        kind: KIND_BY_TAG[tagged[1].toLowerCase()],
+        meaning: (example ? rest.slice(0, example.index) : rest).trim(),
+        example: example ? example[1].trim() : "",
+      });
+      i += 2;
+      continue;
+    }
+
+    // Untagged: phrase, meaning, then an optional quoted example.
+    const third = lines[i + 2];
+    const hasExample = third && isExampleLine(third);
     entries.push({
       id: `${unitId}-${slugify(phrase)}`,
       phrase,
-      kind: kindMatch[1].toLowerCase() === "idiom" ? "idiom" : "phrasal-verb",
-      meaning: (exampleMatch ? rest.slice(0, exampleMatch.index) : rest).trim(),
-      example: exampleMatch ? exampleMatch[1].trim() : "",
+      kind: inferKind(phrase),
+      kindInferred: true,
+      meaning: next.trim(),
+      example: hasExample ? third.replace(/^["“]|["”]$/g, "").trim() : "",
     });
+    i += hasExample ? 3 : 2;
   }
+
   return entries.length ? entries : undefined;
 }
 
@@ -206,28 +189,54 @@ function parseDialogue(block) {
   return dialogue.length ? { title: title || "Mini Dialogue", lines: dialogue } : undefined;
 }
 
+/** Both ✗/✓ and ❌/✅ appear in the file; accept either marker. */
+const WRONG_MARK = /^(✗|❌)\s*/;
+const RIGHT_MARK = /^(✓|✅)\s*/;
+
 function parseMistakes(block, unitId) {
   const lines = textsOf(block).slice(1);
   const out = [];
   for (let i = 0; i + 2 < lines.length; i += 3) {
-    const wrong = lines[i].replace(/^✗\s*/, "").trim();
-    const right = lines[i + 1].replace(/^✓\s*/, "").trim();
-    if (!lines[i].startsWith("✗")) continue;
+    if (!WRONG_MARK.test(lines[i]) || !RIGHT_MARK.test(lines[i + 1])) continue;
+    const wrong = lines[i].replace(WRONG_MARK, "").trim();
+    const right = lines[i + 1].replace(RIGHT_MARK, "").trim();
     out.push({ id: `${unitId}-${slugify(right).slice(0, 40)}`, wrong, right, note: lines[i + 2] });
   }
   return out.length ? out : undefined;
 }
 
+/**
+ * Column layout varies: some units use Noun/Verb/Adjective/Adverb, others lead
+ * with a Base Word column and drop Adverb. Read the header row rather than
+ * assuming four columns — assuming produced rows shifted by one, which is
+ * worse than no table at all.
+ */
+const WF_HEADERS = ["base word", "noun", "verb", "adjective", "adverb"];
+
 function parseWordFormation(block) {
   const lines = textsOf(block).slice(1);
-  const headerEnd = lines.findIndex((l) => /^adverb$/i.test(l));
-  if (headerEnd === -1) return undefined;
-  const cells = lines.slice(headerEnd + 1);
+  const firstHeader = lines.findIndex((l) => WF_HEADERS.includes(l.toLowerCase()));
+  if (firstHeader === -1) return undefined;
+
+  const headers = [];
+  let i = firstHeader;
+  while (i < lines.length && WF_HEADERS.includes(lines[i].toLowerCase())) {
+    headers.push(lines[i].toLowerCase());
+    i++;
+  }
+  if (headers.length < 2) return undefined;
+
+  const cells = lines.slice(i);
   const rows = [];
-  for (let i = 0; i + 3 < cells.length; i += 4) {
-    const [noun, verb, adjective, adverb] = cells.slice(i, i + 4).map((c) => (c === "—" ? null : c));
-    if ([noun, verb, adjective, adverb].every((c) => c === null)) continue;
-    rows.push({ noun, verb, adjective, adverb });
+  for (let c = 0; c + headers.length - 1 < cells.length; c += headers.length) {
+    const slice = cells.slice(c, c + headers.length).map((v) => (v === "—" ? null : v));
+    const row = { noun: null, verb: null, adjective: null, adverb: null };
+    headers.forEach((h, idx) => {
+      if (h === "base word") row.base = slice[idx];
+      else row[h] = slice[idx];
+    });
+    if ([row.noun, row.verb, row.adjective, row.adverb].every((v) => v === null)) continue;
+    rows.push(row);
   }
   return rows.length ? rows : undefined;
 }
@@ -283,6 +292,39 @@ function parseWordMeta(block) {
   return rows.length ? rows : undefined;
 }
 
+function dedupeSubtopics(subtopics) {
+  const seen = new Set();
+  const out = [];
+  for (const topic of subtopics) {
+    const wordIds = (topic.wordIds ?? []).filter((id) => {
+      if (seen.has(id)) return false;
+      seen.add(id);
+      return true;
+    });
+    if (wordIds.length) out.push({ id: topic.id, title: topic.title ?? topic.id, wordIds });
+  }
+  return out;
+}
+
+/** Same canonicalisation the sync uses, so both sides agree on unit identity. */
+const canonicalKey = (value) =>
+  value
+    .toLowerCase()
+    .replace(/^the[\s-]+/, "")
+    .replace(/^l\d+[\s-]+/, "")
+    .replace(/\band\b/g, "")
+    .replace(/[^a-z0-9]/g, "");
+
+/** Unit ids the app actually registers, keyed canonically. */
+async function readAppUnitIds() {
+  const source = await readFile(join(ROOT, "src", "app", "data", "lessons.ts"), "utf8");
+  const start = source.indexOf("export const COURSE_UNITS");
+  if (start === -1) return new Map();
+  const body = source.slice(start, source.indexOf("\nexport const COURSE_MODULES", start));
+  const ids = [...body.matchAll(/^ {2}"?([a-zA-Z0-9_-]+)"?: \{/gm)].map((m) => m[1]);
+  return new Map(ids.map((id) => [canonicalKey(id), id]));
+}
+
 const slugify = (s) =>
   s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "item";
 
@@ -314,8 +356,15 @@ export const ${constName}: UnitLearningMaterials = ${ts({
 `;
 }
 
-const constNameFor = (unitId) =>
-  `${unitId.toUpperCase().replace(/[^A-Z0-9]+/g, "_")}_LEARNING`;
+/**
+ * An identifier cannot start with a digit, so "3d-printer-lab" becomes
+ * _3D_PRINTER_LAB_LEARNING — the same shape lessons.ts already uses for its
+ * vocabulary constant.
+ */
+const constNameFor = (unitId) => {
+  const name = `${unitId.toUpperCase().replace(/[^A-Z0-9]+/g, "_")}_LEARNING`;
+  return /^\d/.test(name) ? `_${name}` : name;
+};
 
 function renderRegistry(unitIds) {
   const entries = unitIds
@@ -373,14 +422,27 @@ export async function loadLearningMaterials(
 
 /* ------------------------------------------------------------------ main */
 
+const appUnitIds = await readAppUnitIds();
 const files = (await readdir(DUMP_DIR)).filter((f) => f.endsWith(".json"));
 const generated = [];
 const skipped = [];
 const handAuthored = [];
+const unmapped = [];
 
 for (const file of files) {
   const unit = JSON.parse(await readFile(join(DUMP_DIR, file), "utf8"));
-  const unitId = unit.unitId;
+
+  // Emit only for units the app registers. A module for a unit that does not
+  // exist cannot be reached, and the integrity test rightly fails on it: the
+  // sub-topic check resolves word ids against the unit's vocabulary, and there
+  // is none. Same gate the artwork sync uses.
+  const appId = appUnitIds.get(canonicalKey(unit.unitId));
+  if (!appId && !INCLUDE_NEW) {
+    if (unit.materials) unmapped.push(unit.unitId);
+    continue;
+  }
+
+  const unitId = appId ?? unit.unitId;
   if (ONLY.length && !ONLY.includes(unitId)) continue;
 
   if (!unit.materials) {
@@ -394,15 +456,16 @@ for (const file of files) {
     continue;
   }
 
-  const vocabulary = unit.cards.map((c) => c.label).filter(Boolean);
   const blocks = unit.materials;
 
   const materials = {
     name: unit.name,
-    subtopics: (unit.subtopics ?? [])
-      .filter((t) => t.wordIds?.length)
-      .map((t) => ({ id: t.id, title: t.title ?? t.id, wordIds: t.wordIds })),
-    passage: parsePassage(blocks["reading-passage"], unitId, vocabulary),
+    // A handful of units repeat a card — 28 units carry 74 duplicates between
+    // them. Keeping the first occurrence means the grid shows each word once;
+    // `audit-figma-vs-app.mjs` reports the duplicates so they can be fixed at
+    // source rather than silently absorbed here forever.
+    subtopics: dedupeSubtopics(unit.subtopics ?? []),
+    passage: parsePassage(blocks["reading-passage"], unitId),
     phrases: parsePhrases(blocks["idioms-phrases"], unitId),
     dialogue: parseDialogue(blocks["mini-dialogue"]),
     mistakes: parseMistakes(blocks["common-mistakes"], unitId),
@@ -436,11 +499,36 @@ if (!CHECK) {
   await writeFile(REGISTRY, renderRegistry(registered));
 }
 
+// Format what was written, so regenerating is idempotent.
+//
+// Without this the commit hook formats the files and the next run produces a
+// diff on every one of them — 84 files of pure indentation noise that hides
+// whether the content actually changed. A generated pipeline is only useful
+// if "regenerate and see no diff" means "nothing drifted".
+if (!CHECK && generated.length) {
+  const targets = generated.map((g) => join(OUT_DIR, `${g.unitId}.ts`));
+  try {
+    await execFileAsync("npx", ["prettier", "--write", "--log-level", "warn", REGISTRY, ...targets], {
+      cwd: ROOT,
+      maxBuffer: 32 * 1024 * 1024,
+    });
+  } catch (err) {
+    console.warn(`Could not format generated files: ${err.message}`);
+  }
+}
+
 console.log(
   `${CHECK ? "Would generate" : "Generated"} ${generated.length} unit module(s); ` +
     `${handAuthored.length} hand-authored kept; ${skipped.length} skipped.`
 );
 if (handAuthored.length) console.log(`Kept by hand: ${handAuthored.join(", ")}`);
+if (unmapped.length) {
+  console.log(
+    `\n${unmapped.length} unit(s) have materials in Figma but no unit in the app ` +
+      `(skipped; pass --include-new to emit anyway):`
+  );
+  for (const id of unmapped) console.log(`  ${id}`);
+}
 const thin = generated.filter((g) => g.filled < 4);
 if (thin.length) {
   console.log(`\n${thin.length} unit(s) parsed fewer than 4 of 8 blocks:`);
