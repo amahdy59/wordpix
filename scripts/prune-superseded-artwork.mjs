@@ -62,11 +62,26 @@ async function* walk(dir) {
   }
 }
 
-// Every artwork path the app still references, so a file in use is never
-// deleted even if a same-named replacement happens to exist.
+/**
+ * Every artwork file the app still references, so a file in use is never
+ * deleted even if a same-named replacement happens to exist.
+ *
+ * Matched by file name rather than by full path, and that is a deliberate
+ * loosening. The previous version looked for quoted absolute literals like
+ * `"/scene-images/bathroom-hero.webp"`. Hero images are not written that way —
+ * they are template literals, `${LOCAL_SCENE_IMAGES}/bathroom-hero.webp` — so
+ * all 148 of them read as unreferenced and were deleted out from under the
+ * data still pointing at them.
+ *
+ * A name-based check cannot know how a path was assembled, which is exactly
+ * why it is the safer question for a tool whose only action is `unlink`. It
+ * errs towards keeping a file: two units sharing an image name means neither
+ * copy is pruned. That costs disk. The precise version cost 148 broken
+ * screens in production, and this is not a trade worth making twice.
+ */
 const lessons = await readFile(LESSONS, "utf8");
 const referenced = new Set(
-  [...lessons.matchAll(/"(\/(?:word-images|scene-images)\/[^"]+)"/g)].map((m) => m[1])
+  [...lessons.matchAll(/([A-Za-z0-9._-]+\.(?:webp|avif|png|jpe?g))/g)].map((m) => m[1])
 );
 
 let deleted = 0;
@@ -85,8 +100,8 @@ for (const dir of SEARCH_DIRS) {
       continue;
     }
 
-    const publicPath = `/${relative(PUBLIC, file).split(/[\\/]/).join("/")}`;
-    if (referenced.has(publicPath)) {
+    const fileName = relative(PUBLIC, file).split(/[\\/]/).pop();
+    if (referenced.has(fileName)) {
       keptInUse++;
       continue;
     }

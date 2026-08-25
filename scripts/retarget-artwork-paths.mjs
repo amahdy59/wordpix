@@ -57,24 +57,46 @@ let alreadyThere = 0;
 let leftAlone = 0;
 const missing = [];
 
+/**
+ * The two ways `lessons.ts` spells an artwork path.
+ *
+ * Word images are quoted absolute literals. Hero images are not — they are
+ * template literals built from a constant, `${LOCAL_SCENE_IMAGES}/x.webp`.
+ * Matching only the first form is what left 148 heroes pointing at `.webp`
+ * while the prune deleted the files underneath them, so both forms are
+ * handled here and `stem` is normalised to a real public path either way.
+ */
+const PATH_FORMS = [
+  {
+    pattern: /"(\/(?:word-images|scene-images)\/[^"]+?)\.(webp|png|jpg|jpeg|avif)"/g,
+    toPublicPath: (stem) => stem,
+    rebuild: (stem, ext) => `"${stem}.${ext}"`,
+  },
+  {
+    pattern: /\$\{LOCAL_SCENE_IMAGES\}\/([a-z0-9-]+)\.(webp|png|jpg|jpeg|avif)/g,
+    toPublicPath: (stem) => `/scene-images/${stem}`,
+    rebuild: (stem, ext) => `\${LOCAL_SCENE_IMAGES}/${stem}.${ext}`,
+  },
+];
+
 // Only local artwork under public/ is a candidate; remote URLs are left as is.
-const updated = source.replace(
-  /"(\/(?:word-images|scene-images)\/[^"]+?)\.(webp|png|jpg|jpeg|avif)"/g,
-  (whole, stem, currentExt) => {
+let updated = source;
+for (const { pattern, toPublicPath, rebuild } of PATH_FORMS) {
+  updated = updated.replace(pattern, (whole, stem, currentExt) => {
     if (currentExt === EXT) {
       alreadyThere++;
       return whole;
     }
-    const candidate = `${stem}.${EXT}`;
+    const candidate = `${toPublicPath(stem)}.${EXT}`;
     if (hasRealArtwork(candidate)) {
       switched++;
-      return `"${candidate}"`;
+      return rebuild(stem, EXT);
     }
     leftAlone++;
     if (missing.length < 20) missing.push(candidate);
     return whole;
-  }
-);
+  });
+}
 
 console.log(`Retarget artwork paths → .${EXT}`);
 console.log(`  switched            ${switched}`);
