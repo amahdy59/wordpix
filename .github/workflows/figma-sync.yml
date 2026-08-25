@@ -47,6 +47,10 @@ on:
         description: 'Parallel downloads'
         required: false
         default: '16'
+      retarget_paths:
+        description: 'Repoint lessons.ts at the new artwork and prune the old (turn OFF for batched runs)'
+        type: boolean
+        default: true
       include_new:
         description: 'Also fetch units Figma has that the app does not'
         type: boolean
@@ -122,8 +126,14 @@ jobs:
           echo "figma-sync$args"
           node scripts/figma-sync.mjs $args
 
+      # Skipped for batched runs. Every batch would rewrite the same 10,848
+      # `img:` paths in lessons.ts, so parallel batches would each produce a
+      # conflicting version of one file — and a batch can only see its own
+      # units' artwork anyway, so it would revert the other batches' paths.
+      # Batched imports therefore carry artwork only, and the repoint runs once
+      # over the merged result.
       - name: Repoint the data at the new artwork
-        if: inputs.images && inputs.dry_run != true
+        if: inputs.images && inputs.dry_run != true && inputs.retarget_paths
         run: |
           # Only paths with a real file behind them are switched, so a card the
           # sync could not render keeps the artwork it still has rather than
