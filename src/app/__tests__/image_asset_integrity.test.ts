@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { statSync } from "node:fs";
+import { closeSync, openSync, readSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { COURSE_UNITS } from "../data/lessons";
 
@@ -7,34 +7,51 @@ import { COURSE_UNITS } from "../data/lessons";
  * Guards against the failure this suite could not previously see.
  *
  * Every referenced image path resolved to a file on disk, and a test asserting
- * exactly that passed — while 10,285 of those files were ~1.4 KB generated
- * placeholder tiles rather than photographs. Checking that a path exists says
- * nothing about whether there is an image behind it.
+ * exactly that passed — while most of those files were generated placeholder
+ * tiles rather than photographs. Checking that a path exists says nothing
+ * about whether there is an image behind it.
  *
- * The real artwork lives in Figma as image fills; `scripts/figma-sync.mjs`
- * pulls it down. Until that has been run for every unit, this is a ratchet
- * rather than a pass/fail gate: the count may only go down. Lower the baseline
- * whenever images land, and the day it reaches zero, replace the ratchet with
- * a flat assertion that no placeholder survives.
+ * File size was the second wrong answer: the placeholders are SVG documents
+ * saved under a `.webp` extension, so a large one would slip through a size
+ * threshold. Magic bytes settle it exactly — real artwork is a RIFF/WEBP
+ * container, and anything else is a placeholder however big it is.
+ *
+ * The real artwork lives in Figma as image fills. `scripts/figma-sync.mjs`
+ * pulls it down, and the "Sync content from Figma" workflow runs that on a
+ * GitHub runner. Until it has been run for every unit this is a ratchet rather
+ * than a pass/fail gate: the count may only go down. Lower the baseline
+ * whenever artwork lands, and the day it reaches zero, replace the ratchet
+ * with a flat assertion that no placeholder survives.
  */
-
-/** At or below this many bytes, a .webp is a generated tile, not a photo. */
-const PLACEHOLDER_MAX_BYTES = 3000;
 
 /**
  * Placeholders present when the guard was introduced. This number may only
  * decrease. If a change pushes it up, real artwork has been overwritten.
  */
-const PLACEHOLDER_BASELINE = 10285;
+const PLACEHOLDER_BASELINE = 10274;
 
 const PUBLIC_DIR = join(process.cwd(), "public");
 
-function sizeOf(imgPath: string): number | null {
+type AssetState = "missing" | "real" | "placeholder";
+
+function assetState(imgPath: string): AssetState {
   const relative = imgPath.replace(/^\.?\//, "");
+  const absolute = join(PUBLIC_DIR, relative);
+
+  let fd: number | undefined;
   try {
-    return statSync(join(PUBLIC_DIR, relative)).size;
+    if (statSync(absolute).size < 12) return "placeholder";
+    fd = openSync(absolute, "r");
+    const header = Buffer.alloc(12);
+    readSync(fd, header, 0, 12, 0);
+    const isWebp =
+      header.subarray(0, 4).toString("ascii") === "RIFF" &&
+      header.subarray(8, 12).toString("ascii") === "WEBP";
+    return isWebp ? "real" : "placeholder";
   } catch {
-    return null;
+    return "missing";
+  } finally {
+    if (fd !== undefined) closeSync(fd);
   }
 }
 
@@ -44,15 +61,12 @@ describe("word image assets", () => {
   );
 
   it("resolves every referenced image to a file on disk", () => {
-    const missing = words.filter(({ word }) => sizeOf(word.img) === null);
+    const missing = words.filter(({ word }) => assetState(word.img) === "missing");
     expect(missing.map(({ word }) => word.img)).toEqual([]);
   }, 60000);
 
   it("never regresses the number of placeholder images", () => {
-    const placeholders = words.filter(({ word }) => {
-      const size = sizeOf(word.img);
-      return size !== null && size <= PLACEHOLDER_MAX_BYTES;
-    });
+    const placeholders = words.filter(({ word }) => assetState(word.img) === "placeholder");
 
     expect(
       placeholders.length,
@@ -69,10 +83,7 @@ describe("word image assets", () => {
     for (const unitId of IMPORTED_UNITS) {
       const unit = COURSE_UNITS[unitId];
       if (!unit) continue;
-      const bad = unit.vocabulary.filter((word) => {
-        const size = sizeOf(word.img);
-        return size !== null && size <= PLACEHOLDER_MAX_BYTES;
-      });
+      const bad = unit.vocabulary.filter((word) => assetState(word.img) === "placeholder");
       expect(
         bad.map((w) => w.img),
         `${unitId} lost real artwork`
