@@ -43,6 +43,10 @@ on:
         description: 'AVIF quality (lower is smaller; 55 is the tuned default)'
         required: false
         default: '55'
+      concurrency:
+        description: 'Parallel downloads'
+        required: false
+        default: '16'
       include_new:
         description: 'Also fetch units Figma has that the app does not'
         type: boolean
@@ -109,6 +113,7 @@ jobs:
           args="$args --max-width ${{ inputs.max_width }}"
           args="$args --scene-width ${{ inputs.scene_width }}"
           args="$args --quality ${{ inputs.quality }}"
+          args="$args --concurrency ${{ inputs.concurrency }}"
 
           for unit in ${{ inputs.units }}; do
             args="$args --unit $unit"

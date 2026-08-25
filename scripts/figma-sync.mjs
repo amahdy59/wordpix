@@ -80,7 +80,14 @@ const OPTS = {
   units: valuesOf("--unit"),
   includeNew: has("--include-new"),
   debugPairing: has("--debug-pairing"),
-  concurrency: Number(valuesOf("--concurrency")[0] ?? 6),
+  /**
+   * 6 was fine when a card was a 33 KB render; originals are whole
+   * photographs, and the bathroom run measured ~1.5s per image — about four
+   * and a half hours across all 10,848, past the job timeout. The time is
+   * almost all download latency rather than encoding, so more requests in
+   * flight is the lever that matters.
+   */
+  concurrency: Number(valuesOf("--concurrency")[0] ?? 16),
   /**
    * The 480 this used to be was measured against the wrong element.
    *
