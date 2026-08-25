@@ -74,8 +74,41 @@ describe("LearningMaterialsScreen", () => {
     expect(screen.getByText("1 of 10 correct")).toBeInTheDocument();
   });
 
+  it("shows unconvertible comprehension questions as unscored prompts", async () => {
+    // Figma authors these open-ended, and some do not convert to multiple
+    // choice honestly. They must still reach the learner rather than vanish.
+    render(<LearningMaterialsScreen unitId="bedroom" dispatch={vi.fn()} />);
+
+    await waitFor(() => screen.getByRole("heading", { name: /think about it/i }));
+    const prompts = screen
+      .getByRole("heading", { name: /think about it/i })
+      .closest("div")!
+      .querySelectorAll("li");
+    expect(prompts.length).toBeGreaterThan(0);
+
+    // They are prompts, not a quiz: no options to click inside that block.
+    expect(
+      screen
+        .getByRole("heading", { name: /think about it/i })
+        .closest("div")!
+        .querySelectorAll("button").length
+    ).toBe(0);
+  });
+
+  it("marks an inferred idiom or phrasal-verb label as inferred", async () => {
+    const user = userEvent.setup();
+    render(<LearningMaterialsScreen unitId="bedroom" dispatch={vi.fn()} />);
+
+    await waitFor(() => screen.getByRole("button", { name: /Idioms & Phrasal Verbs/i }));
+    await user.click(screen.getByRole("button", { name: /Idioms & Phrasal Verbs/i }));
+
+    // The source file tags kinds for some units and not others; where it does
+    // not, the label has to read as a guess rather than a fact.
+    expect(screen.getAllByText(/\(inferred\)/).length).toBeGreaterThan(0);
+  });
+
   it("tells the learner when a unit has not been imported yet", async () => {
-    render(<LearningMaterialsScreen unitId="kitchen" dispatch={vi.fn()} />);
+    render(<LearningMaterialsScreen unitId="art-studio" dispatch={vi.fn()} />);
     await waitFor(() => expect(screen.getByText(/no study materials yet/i)).toBeInTheDocument());
   });
 });

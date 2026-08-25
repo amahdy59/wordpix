@@ -52,6 +52,7 @@ const SECTION_META: Record<SectionId, { label: string; icon: typeof BookOpen }> 
 const PHRASE_KIND_LABEL: Record<PhraseKind, string> = {
   idiom: "idiom",
   "phrasal-verb": "phrasal verb",
+  collocation: "collocation",
 };
 
 /** Which sections this unit actually has content for, in reading order. */
@@ -286,6 +287,28 @@ function PassageSection({ materials }: { materials: UnitLearningMaterials }) {
             <MultipleChoice key={q.id} index={index} {...q} />
           ))}
         </div>
+
+        {/*
+          Questions the import could not turn into multiple choice honestly —
+          ones asking for a reason, a method, or several items. Shown as
+          prompts to think through against the passage rather than dropped, or
+          worse, converted into a quiz that answers itself.
+        */}
+        {passage.openQuestions && passage.openQuestions.length > 0 && (
+          <div className="mt-5 rounded-xl border border-border p-4 bg-background">
+            <h3 className="font-sans font-bold text-foreground">Think about it</h3>
+            <p className="font-sans text-sm text-muted-foreground mt-1">
+              No multiple choice for these — answer them against the passage.
+            </p>
+            <ul className="mt-3 space-y-2 list-disc ps-5">
+              {passage.openQuestions.map((question) => (
+                <li key={question} className="font-sans text-foreground">
+                  {question}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </section>
     </>
   );
@@ -359,6 +382,7 @@ function PhrasesSection({ materials }: { materials: UnitLearningMaterials }) {
     all: phrases.length,
     idiom: phrases.filter((p) => p.kind === "idiom").length,
     "phrasal-verb": phrases.filter((p) => p.kind === "phrasal-verb").length,
+    collocation: phrases.filter((p) => p.kind === "collocation").length,
   };
 
   return (
@@ -368,7 +392,7 @@ function PhrasesSection({ materials }: { materials: UnitLearningMaterials }) {
       </h2>
 
       <div role="group" aria-label="Filter phrases" className="mt-3 flex gap-2 flex-wrap">
-        {(["all", "idiom", "phrasal-verb"] as const).map((key) => (
+        {(["all", "idiom", "phrasal-verb", "collocation"] as const).map((key) => (
           <button
             key={key}
             type="button"
@@ -390,8 +414,17 @@ function PhrasesSection({ materials }: { materials: UnitLearningMaterials }) {
           <li key={phrase.id} className="rounded-xl border border-border p-3">
             <div className="flex items-center gap-2 flex-wrap">
               <p className="font-sans font-bold text-foreground">{phrase.phrase}</p>
-              <span className="font-sans text-[10px] uppercase tracking-wide font-bold px-2 py-0.5 rounded-full bg-secondary text-primary border border-primary/20">
+              <span
+                className="font-sans text-[10px] uppercase tracking-wide font-bold px-2 py-0.5 rounded-full bg-secondary text-primary border border-primary/20"
+                title={
+                  phrase.kindInferred
+                    ? "Kind inferred from the phrase, not tagged in the source"
+                    : undefined
+                }
+              >
                 {PHRASE_KIND_LABEL[phrase.kind]}
+                {phrase.kindInferred && <span aria-hidden>*</span>}
+                {phrase.kindInferred && <span className="sr-only"> (inferred)</span>}
               </span>
             </div>
             <p className="font-sans text-sm text-foreground mt-1">{phrase.meaning}</p>
@@ -452,7 +485,20 @@ function MistakesSection({ materials }: { materials: UnitLearningMaterials }) {
   );
 }
 
+const WORD_FORM_COLUMNS = [
+  { key: "base", label: "Base Word" },
+  { key: "noun", label: "Noun" },
+  { key: "verb", label: "Verb" },
+  { key: "adjective", label: "Adjective" },
+  { key: "adverb", label: "Adverb" },
+] as const;
+
 function WordFormationSection({ materials }: { materials: UnitLearningMaterials }) {
+  const rows = materials.wordFormation ?? [];
+  // Units differ in which columns they carry; showing a column that is empty
+  // for every row is just a wall of em dashes.
+  const columns = WORD_FORM_COLUMNS.filter(({ key }) => rows.some((row) => row[key] != null));
+
   return (
     <section className={CARD} aria-labelledby="word-formation-heading">
       <h2 id="word-formation-heading" className="font-sans font-bold text-lg text-foreground">
@@ -460,28 +506,26 @@ function WordFormationSection({ materials }: { materials: UnitLearningMaterials 
       </h2>
       <div className="mt-3 overflow-x-auto">
         <table className="w-full text-start border-collapse min-w-[32rem]">
-          <caption className="sr-only">
-            Noun, verb, adjective and adverb forms for this unit&apos;s key words
-          </caption>
+          <caption className="sr-only">Word forms for this unit&apos;s key words</caption>
           <thead>
             <tr className="border-b border-border">
-              {["Noun", "Verb", "Adjective", "Adverb"].map((h) => (
+              {columns.map(({ label }) => (
                 <th
-                  key={h}
+                  key={label}
                   scope="col"
                   className="text-start font-sans font-bold text-sm text-muted-foreground py-2 pe-3"
                 >
-                  {h}
+                  {label}
                 </th>
               ))}
             </tr>
           </thead>
           <tbody>
-            {materials.wordFormation?.map((row) => (
-              <tr key={`${row.noun}-${row.verb}`} className="border-b border-border/50">
-                {[row.noun, row.verb, row.adjective, row.adverb].map((cell, i) => (
-                  <td key={i} className="font-sans text-sm text-foreground py-2 pe-3">
-                    {cell ?? <span className="text-muted-foreground">—</span>}
+            {rows.map((row, rowIndex) => (
+              <tr key={`${row.base ?? row.noun}-${rowIndex}`} className="border-b border-border/50">
+                {columns.map(({ key }) => (
+                  <td key={key} className="font-sans text-sm text-foreground py-2 pe-3">
+                    {row[key] ?? <span className="text-muted-foreground">—</span>}
                   </td>
                 ))}
               </tr>
