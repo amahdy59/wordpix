@@ -126,7 +126,8 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
       <header className="px-4 pt-2 pb-3 border-b border-border">
         <div className="flex items-center gap-3">
           <BackButton onClick={handleBack} aria-label={`Back to ${unit.name}`} />
-          <div>
+          {/* min-w-0 so a long unit name wraps instead of pushing the header wide. */}
+          <div className="min-w-0">
             <p className="font-sans text-xs font-bold uppercase tracking-wide text-muted-foreground">
               Study Materials
             </p>
@@ -270,10 +271,10 @@ function PassageSection({ materials }: { materials: UnitLearningMaterials }) {
     <>
       <section className={CARD} aria-labelledby="passage-heading">
         <div className="flex items-center gap-2">
-          <h2 id="passage-heading" className="font-sans font-bold text-lg text-foreground">
+          <h2 id="passage-heading" className="font-sans font-bold text-lg text-foreground min-w-0">
             {passage.title}
           </h2>
-          <span className="font-sans text-[11px] font-bold px-2 py-0.5 rounded-full bg-secondary text-primary border border-primary/20">
+          <span className="font-sans text-[11px] font-bold px-2 py-0.5 rounded-full bg-secondary text-primary border border-primary/20 shrink-0">
             {passage.level}
           </span>
         </div>
@@ -456,7 +457,14 @@ function DialogueSection({ materials }: { materials: UnitLearningMaterials }) {
             <span className="font-sans font-bold text-primary shrink-0 min-w-14">
               {line.speaker}:
             </span>
-            <span className="font-sans text-foreground">{line.text}</span>
+            {/*
+              min-w-0 is what lets this wrap. A flex item defaults to
+              `min-width: auto`, so a dialogue line would not go narrower than
+              its own longest unbroken run of text — the row grew past the card
+              and every line was clipped at the right edge of a phone screen,
+              with no way to scroll to the rest of the sentence.
+            */}
+            <span className="font-sans text-foreground min-w-0 break-words">{line.text}</span>
           </li>
         ))}
       </ol>

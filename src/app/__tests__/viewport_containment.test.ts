@@ -64,3 +64,39 @@ describe("study section tabs are tappable", () => {
     expect(tabs.slice(0, 200)).toMatch(/min-h-\[44px\]/);
   });
 });
+
+describe("study material text wraps instead of being clipped", () => {
+  const source = read("learning/LearningMaterialsScreen.tsx");
+
+  /**
+   * Reported from a real phone: every dialogue line was cut off at the right
+   * edge with no way to read the rest of the sentence.
+   *
+   * The cause is the flexbox default that has now bitten three times in this
+   * codebase. A flex item gets `min-width: auto`, so it refuses to shrink
+   * below its own content — a long line of dialogue made the row wider than
+   * the card instead of wrapping inside it.
+   *
+   * The browser pass missed it because the audit dismissed anything inside an
+   * `overflow-x: auto` ancestor as an intentional scroller. Being inside a
+   * scroller does not make truncated prose acceptable, so the check now looks
+   * at whether text runs past the viewport regardless of its ancestors.
+   */
+  it("lets a dialogue line shrink and wrap", () => {
+    const line = source.slice(source.indexOf("{line.speaker}:"));
+    expect(line.slice(0, 800)).toMatch(/\{line\.text\}/);
+    const textSpan = line.slice(line.indexOf("{line.text}") - 200, line.indexOf("{line.text}"));
+    expect(textSpan).toMatch(/min-w-0/);
+    expect(textSpan).toMatch(/break-words/);
+  });
+
+  it("lets a long passage title shrink beside its level badge", () => {
+    const heading = source.slice(source.indexOf('id="passage-heading"'));
+    expect(heading.slice(0, 120)).toMatch(/min-w-0/);
+  });
+
+  it("lets a long unit name shrink beside the back button", () => {
+    const header = source.slice(source.indexOf("Back to ${unit.name}"));
+    expect(header.slice(0, 200)).toMatch(/min-w-0/);
+  });
+});
