@@ -16,6 +16,7 @@
  *   --force         re-download assets that already exist locally
  *   --dry-run       report what would happen, write nothing
  *   --concurrency N parallel downloads (default 6)
+ *   --max-width N   downscale artwork wider than this (default 640)
  *
  * Images are skipped when a real file is already present, so an interrupted
  * run resumes cheaply. "Real" means larger than PLACEHOLDER_MAX_BYTES — the
@@ -23,7 +24,7 @@
  * existence check would happily treat as done.
  */
 
-import { mkdir, readFile, writeFile, stat } from "node:fs/promises";
+import { mkdir, open, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -33,10 +34,11 @@ const TOKEN = process.env.FIGMA_TOKEN;
 const API = "https://api.figma.com/v1";
 
 /**
- * Anything at or below this is a generated placeholder, not a photograph.
- * Kept in sync with the build guard in src/app/__tests__/lesson-images.test.ts.
+ * Figma's export API renders to png, jpg, svg or pdf — there is no webp
+ * option. Artwork is fetched as png and converted locally, so the filenames
+ * the vocabulary data already points at keep working.
  */
-const PLACEHOLDER_MAX_BYTES = 3000;
+const FIGMA_EXPORT_FORMAT = "png";
 
 const args = process.argv.slice(2);
 const has = (flag) => args.includes(flag);
@@ -50,6 +52,7 @@ const OPTS = {
   dryRun: has("--dry-run"),
   units: valuesOf("--unit"),
   concurrency: Number(valuesOf("--concurrency")[0] ?? 6),
+  maxWidth: Number(valuesOf("--max-width")[0] ?? 640),
 };
 
 if (!OPTS.images && !OPTS.content) {
@@ -159,13 +162,59 @@ function collectMaterials(materialsNode) {
   return blocks;
 }
 
+/**
+ * True when the file is not real raster artwork.
+ *
+ * Size was the wrong test. The repository is full of files named `.webp` whose
+ * contents are SVG — a letter on a gradient — so they are placeholders no
+ * matter how many bytes they happen to occupy. Reading the magic bytes
+ * identifies them exactly: real artwork is a RIFF/WEBP container.
+ */
 async function isPlaceholder(path) {
+  let handle;
   try {
-    const s = await stat(path);
-    return s.size <= PLACEHOLDER_MAX_BYTES;
+    handle = await open(path, "r");
+    const { buffer, bytesRead } = await handle.read(Buffer.alloc(12), 0, 12, 0);
+    if (bytesRead < 12) return true;
+    return !isRealWebp(buffer);
   } catch {
     return true; // missing counts as "needs downloading"
+  } finally {
+    await handle?.close();
   }
+}
+
+function isRealWebp(buffer) {
+  return (
+    buffer.subarray(0, 4).toString("ascii") === "RIFF" &&
+    buffer.subarray(8, 12).toString("ascii") === "WEBP"
+  );
+}
+
+/**
+ * sharp is loaded lazily and only when artwork is actually being written, so
+ * `--content` and `--dry-run` runs need no native dependency at all.
+ */
+let sharpModule;
+async function loadSharp() {
+  if (sharpModule) return sharpModule;
+  try {
+    sharpModule = (await import("sharp")).default;
+  } catch {
+    throw new Error(
+      "sharp is required to convert Figma's png exports to webp.\n" +
+        "Install it first:  pnpm add -D sharp"
+    );
+  }
+  return sharpModule;
+}
+
+async function toWebp(pngBuffer) {
+  const sharp = await loadSharp();
+  return sharp(pngBuffer)
+    .resize({ width: OPTS.maxWidth, withoutEnlargement: true })
+    .webp({ quality: 82 })
+    .toBuffer();
 }
 
 async function downloadImages(unit, cards) {
@@ -199,7 +248,9 @@ async function downloadImages(unit, cards) {
   for (let i = 0; i < targets.length; i += 40) {
     const batch = targets.slice(i, i + 40);
     const ids = batch.map((t) => t.nodeId).join(",");
-    const { images, err } = await api(`/images/${FILE_KEY}?ids=${encodeURIComponent(ids)}&format=webp&scale=2`);
+    const { images, err } = await api(
+      `/images/${FILE_KEY}?ids=${encodeURIComponent(ids)}&format=${FIGMA_EXPORT_FORMAT}&scale=2`
+    );
     if (err) throw new Error(`image render failed: ${err}`);
     Object.assign(urls, images);
   }
@@ -219,14 +270,15 @@ async function downloadImages(unit, cards) {
       skipped++;
       return;
     }
-    const buf = Buffer.from(await res.arrayBuffer());
-    if (buf.byteLength <= PLACEHOLDER_MAX_BYTES) {
-      console.warn(`  ! ${t.label} rendered ${buf.byteLength}B — looks empty, not written`);
+    const rendered = Buffer.from(await res.arrayBuffer());
+    const webp = await toWebp(rendered);
+    if (!isRealWebp(webp)) {
+      console.warn(`  ! ${t.label} did not convert to webp, not written`);
       skipped++;
       return;
     }
     await mkdir(dirname(t.dest), { recursive: true });
-    await writeFile(t.dest, buf);
+    await writeFile(t.dest, webp);
     downloaded++;
   });
 
