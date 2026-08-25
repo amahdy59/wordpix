@@ -64,6 +64,7 @@ const OPTS = {
   dryRun: has("--dry-run"),
   units: valuesOf("--unit"),
   includeNew: has("--include-new"),
+  debugPairing: has("--debug-pairing"),
   concurrency: Number(valuesOf("--concurrency")[0] ?? 6),
   // Cards render at 214x128 CSS, so 480 covers a 2x display with room to
   // spare. Measured on real artwork: 480 averages ~33 KB per card against
@@ -189,6 +190,18 @@ function pairFrames(pageChildren) {
       name: frame.name,
       unitNode: frame,
     });
+  }
+
+  if (OPTS.debugPairing) {
+    console.log(`PAIRING: ${units.length} unit frame(s), ${materials.length} materials frame(s)`);
+    for (const u of units.slice(0, 6)) {
+      const b = box(u.unitNode);
+      console.log(`  UNIT ${u.id} x=${b.x} y=${b.y} w=${b.width} h=${b.height}`);
+    }
+    for (const f of materials.slice(0, 6)) {
+      const b = box(f);
+      console.log(`  MATS "${f.name}" x=${b.x} y=${b.y} w=${b.width} h=${b.height}`);
+    }
   }
 
   for (const frame of materials) {
