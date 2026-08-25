@@ -29,6 +29,11 @@ const LearnWordsScreen = lazy(() =>
 const LessonCompleteResults = lazy(() =>
   import("../lesson/LessonCompleteResults").then((m) => ({ default: m.LessonCompleteResults }))
 );
+const LearningMaterialsScreen = lazy(() =>
+  import("../learning/LearningMaterialsScreen").then((m) => ({
+    default: m.LearningMaterialsScreen,
+  }))
+);
 
 const ExerciseListenRepeat = lazy(() =>
   import("../exercises/ExerciseListenRepeat").then((m) => ({ default: m.ExerciseListenRepeat }))
@@ -107,6 +112,14 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       return <LessonWorldEntry unitId={state.unitId ?? DEFAULT_UNIT_ID} dispatch={dispatch} />;
     if (state.id === "learn-words")
       return <LearnWordsScreen lessonId={state.lessonId} dispatch={dispatch} />;
+    if (state.id === "learning-materials")
+      return (
+        <LearningMaterialsScreen
+          key={state.unitId ?? DEFAULT_UNIT_ID}
+          unitId={state.unitId ?? DEFAULT_UNIT_ID}
+          dispatch={dispatch}
+        />
+      );
     if (state.id === "skill-hub") return <SkillExerciseHub dispatch={dispatch} />;
 
     if (state.id === "skill-exercise") {

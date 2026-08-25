@@ -64,6 +64,8 @@ export type Screen =
   | { id: "lesson-entry"; unitId?: string }
   /** Self-paced word browsing for one group — no session, no scoring. */
   | { id: "learn-words"; lessonId: string }
+  /** Reference and self-paced practice for one unit, imported from Figma. */
+  | { id: "learning-materials"; unitId?: string }
   | { id: "skill-hub" }
   | { id: "skill-exercise"; exerciseId: SkillExerciseId }
   | {
@@ -88,12 +90,14 @@ export type Screen =
     };
 
 /** Every destination GO can reach. Previously widened by an `as TabId` cast. */
-export type GoTarget = TabId | "lesson-entry" | "lesson-complete" | "skill-hub" | "onboarding";
+export type GoTarget =
+  TabId | "lesson-entry" | "lesson-complete" | "skill-hub" | "onboarding" | "learning-materials";
 
 export type Action =
   | { type: "ONBOARD_NEXT" }
-  | { type: "GO"; to: Exclude<GoTarget, "lesson-entry"> }
+  | { type: "GO"; to: Exclude<GoTarget, "lesson-entry" | "learning-materials"> }
   | { type: "GO"; to: "lesson-entry"; unitId?: string }
+  | { type: "GO"; to: "learning-materials"; unitId?: string }
   | { type: "OPEN_SKILL_EXERCISE"; exerciseId: SkillExerciseId }
   /** Enters self-paced word browsing for one group. */
   | { type: "GO_LEARN_WORDS"; lessonId: string }

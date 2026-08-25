@@ -27,6 +27,7 @@ import {
 } from "lucide-react";
 import { WordInspectorModal } from "../shared/WordInspectorModal";
 import { getOrGenerateStoryBundle } from "../data/storyTalesDictionary";
+import { resolveAssetUrl } from "../../utils/assetUrl";
 
 interface Props {
   step: number;
@@ -84,7 +85,7 @@ export const ExerciseStory = memo(function ExerciseStory({
     return map;
   }, [words]);
 
-  const heroImage = words[0]?.img || "./word-images/bed.webp";
+  const heroImage = resolveAssetUrl(words[0]?.img || "./word-images/bed.webp");
 
   const handlePlayWord = (wordLabel: string, wordId?: string) => {
     if (wordId) setActiveWordId(wordId);
@@ -570,7 +571,11 @@ export const ExerciseStory = memo(function ExerciseStory({
                     }}
                   >
                     <div className="size-20 sm:size-24 rounded-xl overflow-hidden bg-muted shrink-0 border border-border relative">
-                      <img src={item.img} alt={item.label} className="size-full object-cover" />
+                      <img
+                        src={resolveAssetUrl(item.img)}
+                        alt={item.label}
+                        className="size-full object-cover"
+                      />
                       <button
                         type="button"
                         onClick={(e) => {

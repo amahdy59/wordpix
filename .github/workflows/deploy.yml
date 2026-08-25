@@ -10,18 +10,15 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
 
 jobs:
-  validate-and-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  # Validation runs for every push and pull request. It deliberately declares
+  # no `environment`: a job-level environment is evaluated before the runner is
+  # assigned, and the github-pages environment only permits deployments from
+  # main — so on a pull request the whole job was rejected in about a second,
+  # with no runner, no steps, and no logs. The deploy steps were already
+  # guarded by an `if`, but the guard never got the chance to run.
+  validate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -50,6 +47,10 @@ jobs:
       - name: Run Unit Tests Gate
         run: pnpm test
 
+      - name: Setup Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: actions/configure-pages@v5
+
       - name: Build project
         run: pnpm run build
         env:
@@ -59,17 +60,29 @@ jobs:
       - name: Copy index.html to 404.html for SPA fallback
         run: cp dist/index.html dist/404.html
 
-      - name: Setup Pages
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: actions/configure-pages@v5
-
       - name: Upload artifact
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
 
+  # Only this job touches the protected environment, and only from main.
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    # Scoped to the deploy job so a burst of pull request validations cannot
+    # cancel each other over a group they never use.
+    concurrency:
+      group: "pages"
+      cancel-in-progress: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         id: deployment
         uses: actions/deploy-pages@v4
