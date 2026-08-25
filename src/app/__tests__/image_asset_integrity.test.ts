@@ -25,10 +25,18 @@ import { COURSE_UNITS } from "../data/lessons";
  */
 
 /**
- * Placeholders present when the guard was introduced. This number may only
- * decrease. If a change pushes it up, real artwork has been overwritten.
+ * Placeholders still outstanding. This number may only decrease.
+ *
+ * After the first full Figma import it is 200 — every one of them in
+ * `human-body`, the single app unit the design file has no counterpart for:
+ * Figma split it into four units (head & face, upper body, lower body, hands
+ * & feet) that the app has not adopted yet. Adopting them, or renaming to
+ * match, takes this to zero.
  */
-const PLACEHOLDER_BASELINE = 10274;
+const PLACEHOLDER_BASELINE = 200;
+
+/** The only unit still allowed to contain placeholders. */
+const UNIMPORTED_UNITS = new Set(["human-body"]);
 
 const PUBLIC_DIR = join(process.cwd(), "public");
 
@@ -77,16 +85,16 @@ describe("word image assets", () => {
     ).toBeLessThanOrEqual(PLACEHOLDER_BASELINE);
   }, 60000);
 
-  it("keeps the fully-imported units free of placeholders", () => {
-    // These three units have real artwork today; they must stay that way.
-    const IMPORTED_UNITS = ["bathroom", "classroom", "playground"];
-    for (const unitId of IMPORTED_UNITS) {
-      const unit = COURSE_UNITS[unitId];
-      if (!unit) continue;
+  it("keeps every imported unit free of placeholders", () => {
+    // Inverted from an allow-list of three good units to a deny-list of one
+    // bad one: after the full import, real artwork is the rule and a
+    // placeholder is the exception that has to be named.
+    for (const unit of Object.values(COURSE_UNITS)) {
+      if (UNIMPORTED_UNITS.has(unit.id)) continue;
       const bad = unit.vocabulary.filter((word) => assetState(word.img) === "placeholder");
       expect(
         bad.map((w) => w.img),
-        `${unitId} lost real artwork`
+        `${unit.id} contains placeholder artwork`
       ).toEqual([]);
     }
   }, 60000);
