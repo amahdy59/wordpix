@@ -27,10 +27,14 @@
  * under an image extension, which both weaker checks happily treated as done.
  */
 
-import { mkdir, open, readFile, writeFile } from "node:fs/promises";
+import { appendFile, mkdir, open, readFile, writeFile } from "node:fs/promises";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { HEADER_BYTES, isRealArtwork } from "./lib/image-format.mjs";
+
+const execFileAsync = promisify(execFile);
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const FILE_KEY = process.env.FIGMA_FILE_KEY ?? "gRlyhrMavAHXUAT5brWFWu";
@@ -113,6 +117,18 @@ const OPTS = {
    * webp 82 and webp 88 by eye while costing half the bytes.
    */
   quality: Number(valuesOf("--quality")[0] ?? 55),
+  /**
+   * Commit and push after this many units, so a run that dies keeps what it
+   * already fetched.
+   *
+   * Every failure in this import so far has cost the whole run: a cancel at
+   * 245 minutes and a socket error at 79 both threw away everything, because
+   * the branch was only pushed once the sync had finished. With checkpoints a
+   * re-run skips what is already real on the branch and continues.
+   */
+  checkpointEvery: Number(valuesOf("--checkpoint-every")[0] ?? 0),
+  /** Fetch one image, report its real size, and stop. */
+  probe: has("--probe"),
 };
 
 if (!OPTS.images && !OPTS.content) {
@@ -420,6 +436,111 @@ async function downloadImage(url, { retries = 3 } = {}) {
   }
 }
 
+/**
+ * Writes a line to the run's job summary as well as stdout.
+ *
+ * Job logs cannot be read while a job is still running — the REST endpoint
+ * 404s until it completes — so a four-hour run was completely opaque: there
+ * was no way to tell a job that was nearly done from one that was stuck, which
+ * is exactly the question that matters when a timeout is approaching. The step
+ * summary is readable live, so progress goes there too.
+ */
+async function report(line) {
+  console.log(line);
+  const summary = process.env.GITHUB_STEP_SUMMARY;
+  if (!summary) return;
+  try {
+    await appendFile(summary, `${line}\n`);
+  } catch {
+    // Progress reporting must never be the thing that fails a run.
+  }
+}
+
+/** Wall-clock progress with a rate and a projection, for timeout decisions. */
+function progressLine(done, total, startedAt) {
+  const elapsedMs = Date.now() - startedAt;
+  const perUnit = elapsedMs / Math.max(done, 1);
+  const remaining = ((total - done) * perUnit) / 60000;
+  const mins = (elapsedMs / 60000).toFixed(1);
+  return `  [${done}/${total} units · ${mins} min elapsed · ~${remaining.toFixed(0)} min left]`;
+}
+
+/**
+ * Runs the checkpoint command, if one is configured.
+ *
+ * The command comes from the environment rather than being built here: this
+ * script knows about Figma and images, not about git branches or CI, and
+ * keeping the push out of it means the checkpoint can be tested by pointing
+ * SYNC_CHECKPOINT_CMD at `echo`.
+ */
+async function checkpoint(label) {
+  const command = process.env.SYNC_CHECKPOINT_CMD;
+  if (!command) return;
+  await report(`  · checkpoint after ${label}`);
+  try {
+    const { stdout, stderr } = await execFileAsync("bash", ["-lc", command], {
+      maxBuffer: 8 * 1024 * 1024,
+    });
+    const tail = `${stdout}${stderr}`.trim().split("\n").slice(-3).join(" | ");
+    if (tail) console.log(`    ${tail}`);
+  } catch (error) {
+    // A failed push must not lose the images still being fetched.
+    console.warn(`    ! checkpoint failed: ${error.message.split("\n")[0]}`);
+  }
+}
+
+/**
+ * Fetches a single image and reports what actually came back.
+ *
+ * The first AVIF import asked for 1024px and got 642, because a card frame is
+ * 214px wide in Figma and the render scale caps at 4 — an assumption that cost
+ * a full run to discover. One image answers the question in seconds, so check
+ * before committing to ten thousand.
+ */
+async function probeUnit(unit, cards) {
+  const card = cards.find((c) => c.kind === "card" && c.imageNodeId);
+  if (!card) {
+    await report(`  probe: ${unit.id} has no card with an image`);
+    return;
+  }
+
+  const fills = await resolveOriginalFills();
+  const originalUrl = card.imageRef ? fills.get(card.imageRef) : undefined;
+  const { images } = await api(
+    `/images/${FILE_KEY}?ids=${encodeURIComponent(card.imageNodeId)}` +
+      `&format=${FIGMA_EXPORT_FORMAT}&scale=${FIGMA_EXPORT_SCALE}`
+  );
+  const renderUrl = images?.[card.imageNodeId];
+
+  const sharp = await loadSharp();
+  for (const [source, url] of [
+    ["original fill", originalUrl],
+    [`node render @${FIGMA_EXPORT_SCALE}x`, renderUrl],
+  ]) {
+    if (!url) {
+      await report(`  probe ${source.padEnd(22)} unavailable`);
+      continue;
+    }
+    try {
+      const buf = await downloadImage(url);
+      const meta = await sharp(buf).metadata();
+      const encoded = await toAvif(buf, OPTS.maxWidth);
+      const out = await sharp(encoded).metadata();
+      await report(
+        `  probe ${source.padEnd(22)} source ${meta.width}x${meta.height} → ` +
+          `${out.width}x${out.height} ${IMAGE_EXT} q${OPTS.quality} ` +
+          `(${(encoded.length / 1024).toFixed(1)} KB)`
+      );
+    } catch (error) {
+      await report(`  probe ${source.padEnd(22)} failed: ${error.message}`);
+    }
+  }
+  await report(
+    `  probe: --max-width ${OPTS.maxWidth} is ` +
+      `${OPTS.maxWidth > 0 ? "only reachable if a source above is at least that wide" : "unset"}`
+  );
+}
+
 async function downloadImages(unit, cards) {
   const targets = [];
   for (const card of cards) {
@@ -582,11 +703,15 @@ async function main() {
 
   const totals = { downloaded: 0, skipped: 0, materials: 0 };
 
+  const startedAt = Date.now();
+  let unitsDone = 0;
+  let sinceCheckpoint = 0;
+
   for (const unit of units) {
     const cards = collectCards(unit.unitNode);
     const cardCount = cards.filter((c) => c.kind === "card").length;
     const subtopics = cards.filter((c) => c.kind === "subtopic").map((c) => c.subtopic);
-    console.log(`\n${unit.name} — ${cardCount} cards, ${subtopics.length} sub-topics`);
+    await report(`\n${unit.name} — ${cardCount} cards, ${subtopics.length} sub-topics`);
 
     if (OPTS.content) {
       const payload = {
@@ -607,11 +732,30 @@ async function main() {
       else totals.materials++;
     }
 
+    if (OPTS.probe) {
+      await probeUnit(unit, cards);
+      break;
+    }
+
     if (OPTS.images) {
       const r = await downloadImages(unit, cards);
       totals.downloaded += r.downloaded;
       totals.skipped += r.skipped;
     }
+
+    unitsDone++;
+    sinceCheckpoint++;
+    await report(progressLine(unitsDone, units.length, startedAt));
+
+    if (OPTS.checkpointEvery > 0 && sinceCheckpoint >= OPTS.checkpointEvery) {
+      sinceCheckpoint = 0;
+      await checkpoint(`${unitsDone}/${units.length} units`);
+    }
+  }
+
+  // Anything since the last checkpoint would otherwise die with the runner.
+  if (OPTS.checkpointEvery > 0 && sinceCheckpoint > 0) {
+    await checkpoint(`${unitsDone}/${units.length} units (final)`);
   }
 
   console.log(

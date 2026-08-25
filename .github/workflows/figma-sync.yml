@@ -51,6 +51,18 @@ on:
         description: 'Repoint lessons.ts at the new artwork and prune the old (turn OFF for batched runs)'
         type: boolean
         default: true
+      branch:
+        description: 'Branch to push artwork to. Reuse the same name to RESUME a failed run.'
+        required: false
+        default: ''
+      checkpoint_every:
+        description: 'Commit and push after this many units (0 = only at the end)'
+        required: false
+        default: '10'
+      probe:
+        description: 'Fetch one image, report the resolution actually available, and stop'
+        type: boolean
+        default: false
       include_new:
         description: 'Also fetch units Figma has that the app does not'
         type: boolean
@@ -98,9 +110,34 @@ jobs:
           pnpm install --frozen-lockfile
           pnpm rebuild sharp
 
+      - name: Resolve the artwork branch, resuming if it already exists
+        id: branch
+        run: |
+          name="${{ inputs.branch }}"
+          [ -z "$name" ] && name="chore/figma-sync-${{ github.run_number }}"
+          echo "name=$name" >> "$GITHUB_OUTPUT"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Resuming: whatever a previous run already pushed is checked out, and
+          # the sync's magic-byte skip then leaves every real image alone. This
+          # is what turns a failed run from "start again" into "carry on".
+          if git ls-remote --exit-code --heads origin "$name" >/dev/null 2>&1; then
+            echo "Resuming from existing branch $name"
+            git fetch --depth=1 origin "$name"
+            git checkout -B "$name" FETCH_HEAD
+            echo "### Resuming \`$name\`" >> "$GITHUB_STEP_SUMMARY"
+          else
+            git checkout -B "$name"
+            echo "### Fresh run on \`$name\`" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Run sync
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          SYNC_BRANCH: ${{ steps.branch.outputs.name }}
+          SYNC_CHECKPOINT_CMD: bash scripts/ci/checkpoint-push.sh
         run: |
           if [ -z "$FIGMA_TOKEN" ]; then
             echo "::error::FIGMA_TOKEN secret is not set. Add it under Settings → Secrets and variables → Actions."
@@ -118,6 +155,8 @@ jobs:
           args="$args --scene-width ${{ inputs.scene_width }}"
           args="$args --quality ${{ inputs.quality }}"
           args="$args --concurrency ${{ inputs.concurrency }}"
+          args="$args --checkpoint-every ${{ inputs.checkpoint_every }}"
+          [ "${{ inputs.probe }}" = "true" ] && args="$args --probe"
 
           for unit in ${{ inputs.units }}; do
             args="$args --unit $unit"
@@ -174,10 +213,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          branch="chore/figma-sync-${{ github.run_number }}"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$branch"
+          branch="${{ steps.branch.outputs.name }}"
           git add public figma-dump src/app/data/lessons.ts
           git commit -m "chore(assets): sync artwork and content from Figma
 
