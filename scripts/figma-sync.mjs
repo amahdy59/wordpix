@@ -378,6 +378,48 @@ async function resolveOriginalFills() {
   return originalFillsCache;
 }
 
+/**
+ * Downloads one image, retrying the failures that are worth retrying.
+ *
+ * `fetch` rejects rather than resolving when the socket itself fails — a reset
+ * connection, a DNS blip, a TLS error. That rejection used to propagate
+ * straight out of the worker pool and end the process: batch 1 of the AVIF
+ * import died on its 27th unit with nothing but "fetch failed", throwing away
+ * 26 units of completed downloads because none of it had been pushed yet.
+ *
+ * One flaky image out of ten thousand must cost that image, not the run. So a
+ * transport error and a 5xx are retried with backoff, and anything still
+ * failing after that returns null for the caller to count as skipped. A 4xx is
+ * not retried: an expired or malformed URL will not fix itself, and the caller
+ * has a fallback URL to try instead.
+ */
+async function downloadImage(url, { retries = 3 } = {}) {
+  for (let attempt = 0; ; attempt++) {
+    let res;
+    try {
+      res = await fetch(url);
+    } catch (error) {
+      if (attempt >= retries) throw new Error(`network: ${error.message}`);
+      await new Promise((r) => setTimeout(r, 500 * 2 ** attempt));
+      continue;
+    }
+
+    if (res.ok) {
+      try {
+        return Buffer.from(await res.arrayBuffer());
+      } catch (error) {
+        // The body can still die mid-stream after a 200.
+        if (attempt >= retries) throw new Error(`body: ${error.message}`);
+        await new Promise((r) => setTimeout(r, 500 * 2 ** attempt));
+        continue;
+      }
+    }
+
+    if (res.status < 500 || attempt >= retries) throw new Error(`HTTP ${res.status}`);
+    await new Promise((r) => setTimeout(r, 500 * 2 ** attempt));
+  }
+}
+
 async function downloadImages(unit, cards) {
   const targets = [];
   for (const card of cards) {
@@ -443,20 +485,38 @@ async function downloadImages(unit, cards) {
       skipped++;
       return;
     }
-    let res = await fetch(url);
-    if (!res.ok && originalUrl && urls[t.nodeId]) {
-      // A stale or expired fill URL must not cost us the image entirely.
-      res = await fetch(urls[t.nodeId]);
-    } else if (res.ok && originalUrl) {
-      fromOriginal++;
+    let body;
+    try {
+      body = await downloadImage(url);
+      if (body && originalUrl) fromOriginal++;
+    } catch (error) {
+      console.warn(`  ! ${t.label} → ${error.message}`);
+      body = null;
     }
-    if (!res.ok) {
-      console.warn(`  ! ${t.label} → ${res.status}`);
+
+    // A stale or expired fill URL must not cost us the image entirely.
+    if (!body && originalUrl && urls[t.nodeId]) {
+      try {
+        body = await downloadImage(urls[t.nodeId]);
+      } catch (error) {
+        console.warn(`  ! ${t.label} (render fallback) → ${error.message}`);
+        body = null;
+      }
+    }
+
+    if (!body) {
       skipped++;
       return;
     }
-    const rendered = Buffer.from(await res.arrayBuffer());
-    const encoded = await toAvif(rendered, t.maxWidth);
+
+    let encoded;
+    try {
+      encoded = await toAvif(body, t.maxWidth);
+    } catch (error) {
+      console.warn(`  ! ${t.label} failed to encode → ${error.message}`);
+      skipped++;
+      return;
+    }
     if (!isRealArtwork(encoded.subarray(0, HEADER_BYTES))) {
       console.warn(`  ! ${t.label} did not convert to ${IMAGE_EXT}, not written`);
       skipped++;
