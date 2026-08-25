@@ -148,7 +148,11 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
                       type="button"
                       onClick={() => setSection(id)}
                       aria-current={isActive ? "true" : undefined}
-                      className={`inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-sans font-bold border transition-colors outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+                      // These are the primary navigation of the study screen
+                      // and sat at 34px tall, under the 44px touch minimum —
+                      // on the one screen that is a horizontal scroller, where
+                      // a mistimed tap scrolls instead of selecting.
+                      className={`inline-flex items-center gap-2 rounded-full px-4 min-h-[44px] text-sm font-sans font-bold border transition-colors outline-none focus-visible:ring-2 focus-visible:ring-primary ${
                         isActive
                           ? "bg-primary text-primary-foreground border-primary"
                           : "bg-wp-card text-muted-foreground border-border hover:border-primary/50"

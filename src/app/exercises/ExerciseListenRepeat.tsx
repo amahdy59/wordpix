@@ -209,7 +209,16 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
         {/* Fluid Target Image Banner with integrated bottom overlay */}
         <div className="w-full relative rounded-2xl sm:rounded-3xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[4/3] sm:aspect-[16/10] max-h-[46dvh] sm:max-h-[52dvh]">
-          <WordImage word={currentWord} className="w-full h-full absolute inset-0 object-cover" />
+          <WordImage
+            word={currentWord}
+            className="w-full h-full absolute inset-0 object-cover"
+            // The question's own picture is the largest thing on screen and
+            // the one the answer depends on, so it is the LCP element. It
+            // inherited WordImage's lazy default, which defers discovery of
+            // exactly the image the learner is waiting for.
+            loading="eager"
+            fetchPriority="high"
+          />
 
           {/* Top Badges */}
           <div className="absolute top-2.5 start-2.5 sm:top-3.5 sm:start-3.5 bg-black/60 backdrop-blur-md text-white font-sans font-bold text-[10px] sm:text-xs px-2.5 py-1 rounded-xl border border-white/20 shadow-md flex items-center gap-1.5 z-10 pointer-events-none">

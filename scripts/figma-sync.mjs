@@ -17,18 +17,24 @@
  *   --dry-run       report what would happen, write nothing
  *   --concurrency N parallel downloads (default 6)
  *   --include-new   also fetch units Figma has that the app does not
- *   --max-width N   downscale card artwork wider than this (default 480)
- *   --scene-width N downscale scene artwork wider than this (default 1600)
+ *   --max-width N   downscale card artwork wider than this (default 1024)
+ *   --scene-width N downscale scene artwork wider than this (default 1920)
+ *   --quality N     AVIF quality (default 55)
  *
  * Images are skipped when a real file is already present, so an interrupted
- * run resumes cheaply. "Real" means larger than PLACEHOLDER_MAX_BYTES — the
- * repo is currently full of ~1.4 KB generated placeholder tiles that a plain
- * existence check would happily treat as done.
+ * run resumes cheaply. "Real" is decided by the file's magic bytes rather than
+ * its size or its existence: the repo was once full of SVG placeholders saved
+ * under an image extension, which both weaker checks happily treated as done.
  */
 
-import { mkdir, open, readFile, writeFile } from "node:fs/promises";
+import { appendFile, mkdir, open, readFile, writeFile } from "node:fs/promises";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { HEADER_BYTES, isRealArtwork } from "./lib/image-format.mjs";
+
+const execFileAsync = promisify(execFile);
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const FILE_KEY = process.env.FIGMA_FILE_KEY ?? "gRlyhrMavAHXUAT5brWFWu";
@@ -36,11 +42,24 @@ const TOKEN = process.env.FIGMA_TOKEN;
 const API = "https://api.figma.com/v1";
 
 /**
- * Figma's export API renders to png, jpg, svg or pdf — there is no webp
- * option. Artwork is fetched as png and converted locally, so the filenames
- * the vocabulary data already points at keep working.
+ * Figma's export API renders to png, jpg, svg or pdf only. Artwork is fetched
+ * as png and converted locally.
  */
 const FIGMA_EXPORT_FORMAT = "png";
+/**
+ * Figma renders at this multiple of the frame's design size.
+ *
+ * 4 is the API's maximum, and it is not enough on its own: a card frame is
+ * 214px wide in the design, so even at 4 a render tops out at 856px against
+ * the 1344 device pixels the exercise card wants. Measured at scale 3 the
+ * cards came back 642x384.
+ *
+ * This is therefore the fallback path. Artwork normally comes from the
+ * original uploaded fills instead — see resolveOriginalFills.
+ */
+const FIGMA_EXPORT_SCALE = 4;
+/** Artwork is written in this format. Figma cannot export it, so sharp converts. */
+const IMAGE_EXT = "avif";
 
 /**
  * A frame is a content unit only if it holds this many cards.
@@ -65,15 +84,51 @@ const OPTS = {
   units: valuesOf("--unit"),
   includeNew: has("--include-new"),
   debugPairing: has("--debug-pairing"),
-  concurrency: Number(valuesOf("--concurrency")[0] ?? 6),
-  // Cards render at 214x128 CSS, so 480 covers a 2x display with room to
-  // spare. Measured on real artwork: 480 averages ~33 KB per card against
-  // ~136 KB at the 1024 the earlier imports used, which is the difference
-  // between roughly 0.36 GB and 1.5 GB across all 10,848 images.
-  maxWidth: Number(valuesOf("--max-width")[0] ?? 480),
+  /**
+   * 6 was fine when a card was a 33 KB render; originals are whole
+   * photographs, and the bathroom run measured ~1.5s per image — about four
+   * and a half hours across all 10,848, past the job timeout. The time is
+   * almost all download latency rather than encoding, so more requests in
+   * flight is the lever that matters.
+   */
+  concurrency: Number(valuesOf("--concurrency")[0] ?? 16),
+  /**
+   * The 480 this used to be was measured against the wrong element.
+   *
+   * It was sized for the 214x128 option tile, but the same file is also the
+   * hero of every Context Fill and Quick Quiz question, where it fills a
+   * 672 CSS px card — 1344 device pixels on a retina screen. Feeding 480 px
+   * into that is a 2.8x upscale, and it looked exactly as soft as that
+   * sounds.
+   *
+   * 1024 covers the card at 2x with a little room. It is affordable only
+   * because the format changed with it: at AVIF q55 a card averages ~31 KB,
+   * against ~67 KB for the same pixels as webp q88 — so full retina detail
+   * costs ~0.5 GB across all 10,848 images where webp would have cost 1.1 GB
+   * and blown through the 1 GB GitHub Pages limit.
+   */
+  maxWidth: Number(valuesOf("--max-width")[0] ?? 1024),
   // Scene illustrations are the full-width hero of a unit (912x400 in the
   // design), so they need a much higher cap than the cards.
-  sceneWidth: Number(valuesOf("--scene-width")[0] ?? 1600),
+  sceneWidth: Number(valuesOf("--scene-width")[0] ?? 1920),
+  /**
+   * AVIF quality. 55 is not comparable to a JPEG or webp 55 — AVIF's scale
+   * runs lower for the same perceptual result, and 55 here sits between
+   * webp 82 and webp 88 by eye while costing half the bytes.
+   */
+  quality: Number(valuesOf("--quality")[0] ?? 55),
+  /**
+   * Commit and push after this many units, so a run that dies keeps what it
+   * already fetched.
+   *
+   * Every failure in this import so far has cost the whole run: a cancel at
+   * 245 minutes and a socket error at 79 both threw away everything, because
+   * the branch was only pushed once the sync had finished. With checkpoints a
+   * re-run skips what is already real on the branch and continues.
+   */
+  checkpointEvery: Number(valuesOf("--checkpoint-every")[0] ?? 0),
+  /** Fetch one image, report its real size, and stop. */
+  probe: has("--probe"),
 };
 
 if (!OPTS.images && !OPTS.content) {
@@ -223,7 +278,17 @@ function collectCards(unitNode) {
       const lbl = (node.children ?? []).find((c) => c.name === "lbl");
       const [label, ipa, cefr] = (lbl?.children ?? []).map(textOf);
       if (subtopic) subtopic.wordIds.push(id);
-      cards.push({ kind: "card", id, label, ipa, cefr, imageNodeId: image?.id });
+      cards.push({
+        kind: "card",
+        id,
+        label,
+        ipa,
+        cefr,
+        imageNodeId: image?.id,
+        // The photograph as uploaded, before Figma scaled it into a 214px
+        // card. See resolveOriginalFills for why this is worth having.
+        imageRef: (image?.fills ?? []).find((f) => f.type === "IMAGE" && f.imageRef)?.imageRef,
+      });
     }
   }
   return cards;
@@ -256,21 +321,14 @@ async function isPlaceholder(path) {
   let handle;
   try {
     handle = await open(path, "r");
-    const { buffer, bytesRead } = await handle.read(Buffer.alloc(12), 0, 12, 0);
+    const { buffer, bytesRead } = await handle.read(Buffer.alloc(HEADER_BYTES), 0, HEADER_BYTES, 0);
     if (bytesRead < 12) return true;
-    return !isRealWebp(buffer);
+    return !isRealArtwork(buffer.subarray(0, bytesRead));
   } catch {
     return true; // missing counts as "needs downloading"
   } finally {
     await handle?.close();
   }
-}
-
-function isRealWebp(buffer) {
-  return (
-    buffer.subarray(0, 4).toString("ascii") === "RIFF" &&
-    buffer.subarray(8, 12).toString("ascii") === "WEBP"
-  );
 }
 
 /**
@@ -291,22 +349,207 @@ async function loadSharp() {
   return sharpModule;
 }
 
-async function toWebp(pngBuffer, maxWidth) {
+async function toAvif(pngBuffer, maxWidth) {
   const sharp = await loadSharp();
   return sharp(pngBuffer)
     .resize({ width: maxWidth, withoutEnlargement: true })
-    .webp({ quality: 82 })
+    // effort 4 is sharp's default. Higher squeezes out a few more percent but
+    // costs seconds per image, and this encodes ten thousand of them.
+    .avif({ quality: OPTS.quality, effort: 4 })
     .toBuffer();
+}
+
+/**
+ * Maps every image fill in the file to the original file the designer uploaded.
+ *
+ * Rendering a node caps out well below what the artwork actually contains. A
+ * card frame is 214px wide in the design and Figma's render scale stops at 4,
+ * so the best a node render can give is 856px — measured at scale 3 the cards
+ * came back 642x384, which is still short of the 1344 device pixels the
+ * exercise card wants on a retina screen.
+ *
+ * The uploaded photographs are much larger than the box they were placed in.
+ * This endpoint hands them over at full size, so the only limit left is the
+ * one we choose.
+ *
+ * The trade is framing: an original is uncropped, where a node render bakes in
+ * whatever crop the fill's transform applies. Every surface in the app draws
+ * these with `object-cover`, so the final framing is the app's decision either
+ * way — and detail that was never downloaded cannot be recovered later.
+ *
+ * Returns an empty map on failure; callers fall back to rendering the node.
+ */
+let originalFillsCache;
+async function resolveOriginalFills() {
+  if (originalFillsCache) return originalFillsCache;
+  try {
+    const { meta, err } = await api(`/files/${FILE_KEY}/images`);
+    if (err) throw new Error(err);
+    originalFillsCache = new Map(Object.entries(meta?.images ?? {}));
+    console.log(`  original image fills available: ${originalFillsCache.size}`);
+  } catch (error) {
+    console.warn(`  ! could not list original image fills (${error.message}); rendering nodes instead`);
+    originalFillsCache = new Map();
+  }
+  return originalFillsCache;
+}
+
+/**
+ * Downloads one image, retrying the failures that are worth retrying.
+ *
+ * `fetch` rejects rather than resolving when the socket itself fails — a reset
+ * connection, a DNS blip, a TLS error. That rejection used to propagate
+ * straight out of the worker pool and end the process: batch 1 of the AVIF
+ * import died on its 27th unit with nothing but "fetch failed", throwing away
+ * 26 units of completed downloads because none of it had been pushed yet.
+ *
+ * One flaky image out of ten thousand must cost that image, not the run. So a
+ * transport error and a 5xx are retried with backoff, and anything still
+ * failing after that returns null for the caller to count as skipped. A 4xx is
+ * not retried: an expired or malformed URL will not fix itself, and the caller
+ * has a fallback URL to try instead.
+ */
+async function downloadImage(url, { retries = 3 } = {}) {
+  for (let attempt = 0; ; attempt++) {
+    let res;
+    try {
+      res = await fetch(url);
+    } catch (error) {
+      if (attempt >= retries) throw new Error(`network: ${error.message}`);
+      await new Promise((r) => setTimeout(r, 500 * 2 ** attempt));
+      continue;
+    }
+
+    if (res.ok) {
+      try {
+        return Buffer.from(await res.arrayBuffer());
+      } catch (error) {
+        // The body can still die mid-stream after a 200.
+        if (attempt >= retries) throw new Error(`body: ${error.message}`);
+        await new Promise((r) => setTimeout(r, 500 * 2 ** attempt));
+        continue;
+      }
+    }
+
+    if (res.status < 500 || attempt >= retries) throw new Error(`HTTP ${res.status}`);
+    await new Promise((r) => setTimeout(r, 500 * 2 ** attempt));
+  }
+}
+
+/**
+ * Writes a line to the run's job summary as well as stdout.
+ *
+ * Job logs cannot be read while a job is still running — the REST endpoint
+ * 404s until it completes — so a four-hour run was completely opaque: there
+ * was no way to tell a job that was nearly done from one that was stuck, which
+ * is exactly the question that matters when a timeout is approaching. The step
+ * summary is readable live, so progress goes there too.
+ */
+async function report(line) {
+  console.log(line);
+  const summary = process.env.GITHUB_STEP_SUMMARY;
+  if (!summary) return;
+  try {
+    await appendFile(summary, `${line}\n`);
+  } catch {
+    // Progress reporting must never be the thing that fails a run.
+  }
+}
+
+/** Wall-clock progress with a rate and a projection, for timeout decisions. */
+function progressLine(done, total, startedAt) {
+  const elapsedMs = Date.now() - startedAt;
+  const perUnit = elapsedMs / Math.max(done, 1);
+  const remaining = ((total - done) * perUnit) / 60000;
+  const mins = (elapsedMs / 60000).toFixed(1);
+  return `  [${done}/${total} units · ${mins} min elapsed · ~${remaining.toFixed(0)} min left]`;
+}
+
+/**
+ * Runs the checkpoint command, if one is configured.
+ *
+ * The command comes from the environment rather than being built here: this
+ * script knows about Figma and images, not about git branches or CI, and
+ * keeping the push out of it means the checkpoint can be tested by pointing
+ * SYNC_CHECKPOINT_CMD at `echo`.
+ */
+async function checkpoint(label) {
+  const command = process.env.SYNC_CHECKPOINT_CMD;
+  if (!command) return;
+  await report(`  · checkpoint after ${label}`);
+  try {
+    const { stdout, stderr } = await execFileAsync("bash", ["-lc", command], {
+      maxBuffer: 8 * 1024 * 1024,
+    });
+    const tail = `${stdout}${stderr}`.trim().split("\n").slice(-3).join(" | ");
+    if (tail) console.log(`    ${tail}`);
+  } catch (error) {
+    // A failed push must not lose the images still being fetched.
+    console.warn(`    ! checkpoint failed: ${error.message.split("\n")[0]}`);
+  }
+}
+
+/**
+ * Fetches a single image and reports what actually came back.
+ *
+ * The first AVIF import asked for 1024px and got 642, because a card frame is
+ * 214px wide in Figma and the render scale caps at 4 — an assumption that cost
+ * a full run to discover. One image answers the question in seconds, so check
+ * before committing to ten thousand.
+ */
+async function probeUnit(unit, cards) {
+  const card = cards.find((c) => c.kind === "card" && c.imageNodeId);
+  if (!card) {
+    await report(`  probe: ${unit.id} has no card with an image`);
+    return;
+  }
+
+  const fills = await resolveOriginalFills();
+  const originalUrl = card.imageRef ? fills.get(card.imageRef) : undefined;
+  const { images } = await api(
+    `/images/${FILE_KEY}?ids=${encodeURIComponent(card.imageNodeId)}` +
+      `&format=${FIGMA_EXPORT_FORMAT}&scale=${FIGMA_EXPORT_SCALE}`
+  );
+  const renderUrl = images?.[card.imageNodeId];
+
+  const sharp = await loadSharp();
+  for (const [source, url] of [
+    ["original fill", originalUrl],
+    [`node render @${FIGMA_EXPORT_SCALE}x`, renderUrl],
+  ]) {
+    if (!url) {
+      await report(`  probe ${source.padEnd(22)} unavailable`);
+      continue;
+    }
+    try {
+      const buf = await downloadImage(url);
+      const meta = await sharp(buf).metadata();
+      const encoded = await toAvif(buf, OPTS.maxWidth);
+      const out = await sharp(encoded).metadata();
+      await report(
+        `  probe ${source.padEnd(22)} source ${meta.width}x${meta.height} → ` +
+          `${out.width}x${out.height} ${IMAGE_EXT} q${OPTS.quality} ` +
+          `(${(encoded.length / 1024).toFixed(1)} KB)`
+      );
+    } catch (error) {
+      await report(`  probe ${source.padEnd(22)} failed: ${error.message}`);
+    }
+  }
+  await report(
+    `  probe: --max-width ${OPTS.maxWidth} is ` +
+      `${OPTS.maxWidth > 0 ? "only reachable if a source above is at least that wide" : "unset"}`
+  );
 }
 
 async function downloadImages(unit, cards) {
   const targets = [];
   for (const card of cards) {
     if (card.kind !== "card" || !card.imageNodeId) continue;
-    const dest = join(ROOT, "public", "word-images", unit.id, `${card.id}.webp`);
+    const dest = join(ROOT, "public", "word-images", unit.id, `${card.id}.${IMAGE_EXT}`);
     if (!OPTS.force && !(await isPlaceholder(dest))) continue;
     targets.push({
       nodeId: card.imageNodeId,
+      imageRef: card.imageRef,
       dest,
       label: `${unit.id}/${card.id}`,
       maxWidth: OPTS.maxWidth,
@@ -315,7 +558,7 @@ async function downloadImages(unit, cards) {
 
   const sceneNode = [...walk(unit.unitNode)].find(({ node }) => node.name === "asset")?.node;
   if (sceneNode) {
-    const dest = join(ROOT, "public", "scene-images", `${unit.id}-hero.webp`);
+    const dest = join(ROOT, "public", "scene-images", `${unit.id}-hero.${IMAGE_EXT}`);
     if (OPTS.force || (await isPlaceholder(dest))) {
       targets.push({
         nodeId: sceneNode.id,
@@ -341,7 +584,7 @@ async function downloadImages(unit, cards) {
     const batch = targets.slice(i, i + 40);
     const ids = batch.map((t) => t.nodeId).join(",");
     const { images, err } = await api(
-      `/images/${FILE_KEY}?ids=${encodeURIComponent(ids)}&format=${FIGMA_EXPORT_FORMAT}&scale=2`
+      `/images/${FILE_KEY}?ids=${encodeURIComponent(ids)}&format=${FIGMA_EXPORT_FORMAT}&scale=${FIGMA_EXPORT_SCALE}`
     );
     if (err) throw new Error(`image render failed: ${err}`);
     Object.assign(urls, images);
@@ -349,32 +592,65 @@ async function downloadImages(unit, cards) {
 
   let downloaded = 0;
   let skipped = 0;
+  const fills = await resolveOriginalFills();
+
+  let fromOriginal = 0;
   await pooled(targets, OPTS.concurrency, async (t) => {
-    const url = urls[t.nodeId];
+    // Prefer the uploaded photograph; fall back to the rendered node. A render
+    // is capped by the 214px card frame, so it is the lower-detail option
+    // whenever an original exists.
+    const originalUrl = t.imageRef ? fills.get(t.imageRef) : undefined;
+    const url = originalUrl ?? urls[t.nodeId];
     if (!url) {
       console.warn(`  ! no render for ${t.label} (empty frame in Figma?)`);
       skipped++;
       return;
     }
-    const res = await fetch(url);
-    if (!res.ok) {
-      console.warn(`  ! ${t.label} → ${res.status}`);
+    let body;
+    try {
+      body = await downloadImage(url);
+      if (body && originalUrl) fromOriginal++;
+    } catch (error) {
+      console.warn(`  ! ${t.label} → ${error.message}`);
+      body = null;
+    }
+
+    // A stale or expired fill URL must not cost us the image entirely.
+    if (!body && originalUrl && urls[t.nodeId]) {
+      try {
+        body = await downloadImage(urls[t.nodeId]);
+      } catch (error) {
+        console.warn(`  ! ${t.label} (render fallback) → ${error.message}`);
+        body = null;
+      }
+    }
+
+    if (!body) {
       skipped++;
       return;
     }
-    const rendered = Buffer.from(await res.arrayBuffer());
-    const webp = await toWebp(rendered, t.maxWidth);
-    if (!isRealWebp(webp)) {
-      console.warn(`  ! ${t.label} did not convert to webp, not written`);
+
+    let encoded;
+    try {
+      encoded = await toAvif(body, t.maxWidth);
+    } catch (error) {
+      console.warn(`  ! ${t.label} failed to encode → ${error.message}`);
+      skipped++;
+      return;
+    }
+    if (!isRealArtwork(encoded.subarray(0, HEADER_BYTES))) {
+      console.warn(`  ! ${t.label} did not convert to ${IMAGE_EXT}, not written`);
       skipped++;
       return;
     }
     await mkdir(dirname(t.dest), { recursive: true });
-    await writeFile(t.dest, webp);
+    await writeFile(t.dest, encoded);
     downloaded++;
   });
 
-  console.log(`  ${unit.id}: ${downloaded} downloaded, ${skipped} skipped`);
+  console.log(
+    `  ${unit.id}: ${downloaded} downloaded (${fromOriginal} from original fills), ${skipped} skipped`
+  );
   return { downloaded, skipped };
 }
 
@@ -427,11 +703,15 @@ async function main() {
 
   const totals = { downloaded: 0, skipped: 0, materials: 0 };
 
+  const startedAt = Date.now();
+  let unitsDone = 0;
+  let sinceCheckpoint = 0;
+
   for (const unit of units) {
     const cards = collectCards(unit.unitNode);
     const cardCount = cards.filter((c) => c.kind === "card").length;
     const subtopics = cards.filter((c) => c.kind === "subtopic").map((c) => c.subtopic);
-    console.log(`\n${unit.name} — ${cardCount} cards, ${subtopics.length} sub-topics`);
+    await report(`\n${unit.name} — ${cardCount} cards, ${subtopics.length} sub-topics`);
 
     if (OPTS.content) {
       const payload = {
@@ -452,11 +732,30 @@ async function main() {
       else totals.materials++;
     }
 
+    if (OPTS.probe) {
+      await probeUnit(unit, cards);
+      break;
+    }
+
     if (OPTS.images) {
       const r = await downloadImages(unit, cards);
       totals.downloaded += r.downloaded;
       totals.skipped += r.skipped;
     }
+
+    unitsDone++;
+    sinceCheckpoint++;
+    await report(progressLine(unitsDone, units.length, startedAt));
+
+    if (OPTS.checkpointEvery > 0 && sinceCheckpoint >= OPTS.checkpointEvery) {
+      sinceCheckpoint = 0;
+      await checkpoint(`${unitsDone}/${units.length} units`);
+    }
+  }
+
+  // Anything since the last checkpoint would otherwise die with the runner.
+  if (OPTS.checkpointEvery > 0 && sinceCheckpoint > 0) {
+    await checkpoint(`${unitsDone}/${units.length} units (final)`);
   }
 
   console.log(

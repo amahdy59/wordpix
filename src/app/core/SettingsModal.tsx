@@ -33,6 +33,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
     includeListening,
     timedExercises,
     autoAdvance,
+    spokenFeedback,
     reduceMotion,
   } = accessibility;
   const [confirmReset, setConfirmReset] = useState(false);
@@ -512,6 +513,30 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     }`}
                   >
                     {autoAdvance ? "On" : "Off"}
+                  </button>
+                </div>
+
+                <div className="flex items-center justify-between gap-3">
+                  <div>
+                    <span className="font-sans font-bold text-foreground text-sm">
+                      Speak Answers Aloud
+                    </span>
+                    <p className="font-sans text-xs text-muted-foreground">
+                      Says the word after each answer &mdash; &ldquo;Correct! This is a
+                      faucet.&rdquo; Turn off to keep the chime only.
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setAccessibility({ spokenFeedback: !spokenFeedback })}
+                    aria-pressed={spokenFeedback}
+                    className={`shrink-0 px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                      spokenFeedback
+                        ? "bg-wp-green text-wp-text-on-green border-wp-green"
+                        : "bg-muted text-muted-foreground border-border"
+                    }`}
+                  >
+                    {spokenFeedback ? "On" : "Off"}
                   </button>
                 </div>
 

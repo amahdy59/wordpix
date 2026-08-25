@@ -292,7 +292,12 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
 
                 {/* Group Card Container */}
                 <div
-                  className={`relative flex-1 bg-wp-card rounded-2xl border p-5 text-start transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-4 min-h-[88px] ${
+                  // min-w-0 is what lets this shrink. A flex item defaults to
+                  // `min-width: auto`, so `flex-1` alone will not go narrower
+                  // than the card's own content — on a 320px screen it stayed
+                  // 277px wide and hung 65px off the right edge, with nothing
+                  // scrolling to reveal it.
+                  className={`relative flex-1 min-w-0 bg-wp-card rounded-2xl border p-5 text-start transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-4 min-h-[88px] ${
                     isCompleted
                       ? "border-wp-green/30 bg-wp-green-light/10 hover:bg-wp-green-light/20 shadow-sm"
                       : isNextToStudy
@@ -364,7 +369,14 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                   </button>
 
                   {/* Actions Area */}
-                  <div className="flex items-center gap-2.5 shrink-0 mt-3 sm:mt-0">
+                  {/*
+                    Wraps because the row cannot always fit. Four 44px controls
+                    with gaps need 206px, and on a 320px screen the card only
+                    offers about 172px — `shrink-0` then held the row at its
+                    full width and pushed the last button off the screen edge.
+                    Wrapping to a second line keeps every control reachable.
+                  */}
+                  <div className="flex flex-wrap items-center gap-2.5 shrink-0 mt-3 sm:mt-0">
                     <span
                       className={`font-sans font-bold text-xs px-3.5 py-1.5 rounded-full border transition-colors ${
                         isCompleted

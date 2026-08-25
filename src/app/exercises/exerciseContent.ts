@@ -428,30 +428,58 @@ export function getRichSentence(word: VocabularyItem): RichSentence {
 }
 
 /**
- * Generates semantically and visually related distractors instead of purely random picks.
+ * Picks wrong answers that are worth thinking about, from words the learner
+ * has actually been taught.
+ *
+ * `lessonWords` is the current lesson's word list and is the pool that matters.
+ * Without it this fell back to the whole unit — and a unit is much bigger than
+ * a lesson (bathroom is 67 words split into lessons of 15), so a learner
+ * halfway through "The Bathroom 1" was shown options from words three lessons
+ * away. Those are not distractors, they are unknowns: you cannot rule out a
+ * picture whose word you have never seen, so the question stops testing
+ * recognition and starts testing luck.
+ *
+ * Tier order within the lesson: confusion pairs first, because a near-miss is
+ * what makes the question teach something, then the rest of the lesson.
+ *
+ * The unit-wide tier survives only as a last resort, for a lesson too small to
+ * fill the options by itself — some units end in a short chunk (bathroom's
+ * last group has 7 words, but a 3-word tail is possible). Showing three
+ * choices instead of four would leak the answer by arithmetic, so a slightly
+ * unfamiliar option beats a missing one.
  */
-export function getSemanticDistractors(word: VocabularyItem, count = 3): VocabularyItem[] {
+export function getSemanticDistractors(
+  word: VocabularyItem,
+  count = 3,
+  lessonWords?: readonly VocabularyItem[]
+): VocabularyItem[] {
   const confusionIds = CONFUSION_PAIRS[word.id] ?? [];
-  const confusionWords = confusionIds
-    .map((id) => ALL_VOCABULARY.find((item) => item.id === id))
-    .filter((item): item is VocabularyItem => item !== undefined && !item.hasWoman);
+  const eligible = (item: VocabularyItem) => item.id !== word.id && !item.hasWoman;
 
+  const withinLesson = (lessonWords ?? []).filter(eligible);
+  const lessonConfusion = withinLesson.filter((item) => confusionIds.includes(item.id));
+  const lessonRest = withinLesson.filter((item) => !confusionIds.includes(item.id));
+
+  // Shuffle within each tier so we get variety, but preserve tier priority.
+  const pool = [...shuffleArray(lessonConfusion), ...shuffleArray(lessonRest)];
+  if (pool.length >= count) return pool.slice(0, count);
+
+  const chosen = new Set(pool.map((item) => item.id));
   const sameTopic = ALL_VOCABULARY.filter(
-    (item) =>
-      item.id !== word.id &&
-      item.topic === word.topic &&
-      !confusionIds.includes(item.id) &&
-      !item.hasWoman
+    (item) => eligible(item) && item.topic === word.topic && !chosen.has(item.id)
   );
+  const topicConfusion = sameTopic.filter((item) => confusionIds.includes(item.id));
+  const topicRest = sameTopic.filter((item) => !confusionIds.includes(item.id));
 
-  // Shuffle within each tier so we get variety, but preserve tier priority:
-  // confusion pairs always fill slots first, same-topic fills any remainder.
-  const pool = [...shuffleArray(confusionWords), ...shuffleArray(sameTopic)];
-  return pool.slice(0, count);
+  return [...pool, ...shuffleArray(topicConfusion), ...shuffleArray(topicRest)].slice(0, count);
 }
 
-export function getDistractors(word: VocabularyItem, count = 3): VocabularyItem[] {
-  return getSemanticDistractors(word, count);
+export function getDistractors(
+  word: VocabularyItem,
+  count = 3,
+  lessonWords?: readonly VocabularyItem[]
+): VocabularyItem[] {
+  return getSemanticDistractors(word, count, lessonWords);
 }
 
 export function articleFor(label: string): "a" | "an" {

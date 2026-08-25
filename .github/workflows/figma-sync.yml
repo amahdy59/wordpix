@@ -34,11 +34,35 @@ on:
       max_width:
         description: 'Downscale card artwork wider than this'
         required: false
-        default: '480'
+        default: '1024'
       scene_width:
         description: 'Downscale scene artwork wider than this'
         required: false
-        default: '1600'
+        default: '1920'
+      quality:
+        description: 'AVIF quality (lower is smaller; 55 is the tuned default)'
+        required: false
+        default: '55'
+      concurrency:
+        description: 'Parallel downloads'
+        required: false
+        default: '16'
+      retarget_paths:
+        description: 'Repoint lessons.ts at the new artwork and prune the old (turn OFF for batched runs)'
+        type: boolean
+        default: true
+      branch:
+        description: 'Branch to push artwork to. Reuse the same name to RESUME a failed run.'
+        required: false
+        default: ''
+      checkpoint_every:
+        description: 'Commit and push after this many units (0 = only at the end)'
+        required: false
+        default: '10'
+      probe:
+        description: 'Fetch one image, report the resolution actually available, and stop'
+        type: boolean
+        default: false
       include_new:
         description: 'Also fetch units Figma has that the app does not'
         type: boolean
@@ -59,9 +83,11 @@ permissions:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    # A full run fetches roughly ten thousand images; the default 360 minutes
-    # is plenty, but be explicit so a hung fetch cannot idle for six hours.
-    timeout-minutes: 120
+    # A full run fetches roughly ten thousand images and encodes every one of
+    # them to AVIF, which is several times slower than the webp it replaced.
+    # The webp import finished inside two hours; this needs the headroom, and
+    # 350 still stops a hung fetch short of the six-hour ceiling.
+    timeout-minutes: 350
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -84,9 +110,34 @@ jobs:
           pnpm install --frozen-lockfile
           pnpm rebuild sharp
 
+      - name: Resolve the artwork branch, resuming if it already exists
+        id: branch
+        run: |
+          name="${{ inputs.branch }}"
+          [ -z "$name" ] && name="chore/figma-sync-${{ github.run_number }}"
+          echo "name=$name" >> "$GITHUB_OUTPUT"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Resuming: whatever a previous run already pushed is checked out, and
+          # the sync's magic-byte skip then leaves every real image alone. This
+          # is what turns a failed run from "start again" into "carry on".
+          if git ls-remote --exit-code --heads origin "$name" >/dev/null 2>&1; then
+            echo "Resuming from existing branch $name"
+            git fetch --depth=1 origin "$name"
+            git checkout -B "$name" FETCH_HEAD
+            echo "### Resuming \`$name\`" >> "$GITHUB_STEP_SUMMARY"
+          else
+            git checkout -B "$name"
+            echo "### Fresh run on \`$name\`" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Run sync
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          SYNC_BRANCH: ${{ steps.branch.outputs.name }}
+          SYNC_CHECKPOINT_CMD: bash scripts/ci/checkpoint-push.sh
         run: |
           if [ -z "$FIGMA_TOKEN" ]; then
             echo "::error::FIGMA_TOKEN secret is not set. Add it under Settings → Secrets and variables → Actions."
@@ -102,6 +153,10 @@ jobs:
           [ "${{ inputs.debug_pairing }}" = "true" ] && args="$args --debug-pairing"
           args="$args --max-width ${{ inputs.max_width }}"
           args="$args --scene-width ${{ inputs.scene_width }}"
+          args="$args --quality ${{ inputs.quality }}"
+          args="$args --concurrency ${{ inputs.concurrency }}"
+          args="$args --checkpoint-every ${{ inputs.checkpoint_every }}"
+          [ "${{ inputs.probe }}" = "true" ] && args="$args --probe"
 
           for unit in ${{ inputs.units }}; do
             args="$args --unit $unit"
@@ -110,24 +165,56 @@ jobs:
           echo "figma-sync$args"
           node scripts/figma-sync.mjs $args
 
+      # Skipped for batched runs. Every batch would rewrite the same 10,848
+      # `img:` paths in lessons.ts, so parallel batches would each produce a
+      # conflicting version of one file — and a batch can only see its own
+      # units' artwork anyway, so it would revert the other batches' paths.
+      # Batched imports therefore carry artwork only, and the repoint runs once
+      # over the merged result.
+      - name: Repoint the data at the new artwork
+        if: inputs.images && inputs.dry_run != true && inputs.retarget_paths
+        run: |
+          # Only paths with a real file behind them are switched, so a card the
+          # sync could not render keeps the artwork it still has rather than
+          # becoming a broken image.
+          node scripts/retarget-artwork-paths.mjs --ext avif
+          node scripts/prune-superseded-artwork.mjs --ext avif
+
       - name: Report what changed
         id: changes
         run: |
-          added=$(git status --porcelain public figma-dump | wc -l)
+          added=$(git status --porcelain public figma-dump src/app/data/lessons.ts | wc -l)
           echo "count=$added" >> "$GITHUB_OUTPUT"
-          echo "### Figma sync" >> "$GITHUB_STEP_SUMMARY"
-          echo "$added file(s) changed." >> "$GITHUB_STEP_SUMMARY"
+
+          # GitHub Pages refuses to publish a site over 1 GB, and artwork is
+          # nearly all of this one. Measuring here turns "the deploy failed a
+          # week later" into a number on the run that produced it.
+          bytes=$(du -sb public | cut -f1)
+          mb=$((bytes / 1024 / 1024))
+          echo "size_mb=$mb" >> "$GITHUB_OUTPUT"
+
+          {
+            echo "### Figma sync"
+            echo ""
+            echo "- $added file(s) changed"
+            echo "- \`public/\` is now ${mb} MB"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          if [ "$mb" -gt 950 ]; then
+            echo "::error::public/ is ${mb} MB, at or over the 1 GB GitHub Pages limit. Re-run with a lower --quality or --max-width."
+            exit 1
+          fi
+          if [ "$mb" -gt 700 ]; then
+            echo "::warning::public/ is ${mb} MB, approaching the 1 GB GitHub Pages limit."
+          fi
 
       - name: Open a pull request
         if: steps.changes.outputs.count != '0' && inputs.dry_run != true
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          branch="chore/figma-sync-${{ github.run_number }}"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$branch"
-          git add public figma-dump
+          branch="${{ steps.branch.outputs.name }}"
+          git add public figma-dump src/app/data/lessons.ts
           git commit -m "chore(assets): sync artwork and content from Figma
 
           Ran scripts/figma-sync.mjs via the Sync content from Figma workflow.
@@ -142,9 +229,9 @@ jobs:
             --title "chore(assets): sync artwork and content from Figma" \
             --body "Automated run of \`scripts/figma-sync.mjs\` (workflow run #${{ github.run_number }}).
 
-          ${{ steps.changes.outputs.count }} file(s) changed.
+          ${{ steps.changes.outputs.count }} file(s) changed. \`public/\` is now ${{ steps.changes.outputs.size_mb }} MB.
 
-          Check before merging: the placeholder ratchet in \`image_asset_integrity.test.ts\` should drop, and no real artwork should be replaced by a placeholder.
+          Check before merging: the placeholder ratchet in \`image_asset_integrity.test.ts\` should drop, no real artwork should be replaced by a placeholder, and the size above should stay well clear of the 1 GB GitHub Pages limit.
 
           ---
           _Generated by [Claude Code](https://claude.ai/code)_" \
