@@ -96,7 +96,17 @@ export const ExerciseShell = memo(function ExerciseShell({
           className="flex-1 overflow-y-auto overflow-x-hidden px-3 sm:px-6 lg:px-10 py-3 sm:py-6 flex flex-col items-center min-h-0 w-full scroll-smooth"
           aria-label={`${title} exercise`}
         >
-          <div className="w-full max-w-4xl min-h-full mx-auto flex flex-col gap-3.5 sm:gap-5 justify-center my-auto pb-4 sm:pb-8">
+          {/*
+            Content flows from the top on a phone and only centres once there
+            is genuinely room to spare.
+
+            `min-h-full justify-center my-auto` centred every drill inside a
+            box at least as tall as the viewport. On a desktop that reads as
+            balance; on a 390x844 phone it pushed a third of the screen into
+            empty space above the picture and another slab below it, so the
+            exercise floated in a void with its controls shoved off the fold.
+          */}
+          <div className="w-full max-w-4xl mx-auto flex flex-col gap-3.5 sm:gap-5 justify-start sm:justify-center sm:min-h-full sm:my-auto pb-4 sm:pb-8">
             {children}
           </div>
         </main>
