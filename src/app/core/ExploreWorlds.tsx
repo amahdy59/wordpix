@@ -399,12 +399,28 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                           >
                             {/* Unit Image Banner */}
                             <div className="h-36 sm:h-44 relative rounded-xl overflow-hidden shrink-0 border border-border shadow-wp-xs">
-                              <img
-                                alt={`${unit.name} visual learning scene`}
-                                className="absolute inset-0 object-cover size-full"
-                                src={resolveAssetUrl(unit.heroImage)}
-                                loading="lazy"
-                              />
+                              {unit.heroImage ? (
+                                <img
+                                  alt={`${unit.name} visual learning scene`}
+                                  className="absolute inset-0 object-cover size-full"
+                                  src={resolveAssetUrl(unit.heroImage)}
+                                  loading="lazy"
+                                />
+                              ) : (
+                                // Seven units have word cards in Figma but no
+                                // scene illustration. A named panel reads as a
+                                // deliberate cover; a broken <img> reads as a
+                                // bug, and the unit is perfectly usable either
+                                // way.
+                                <div
+                                  className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/25 via-primary/10 to-transparent p-4"
+                                  aria-hidden
+                                >
+                                  <span className="font-sans font-bold text-center text-balance text-foreground/70 text-sm sm:text-base">
+                                    {unit.name}
+                                  </span>
+                                </div>
+                              )}
                               {isComplete ? (
                                 <Badge
                                   variant="green"

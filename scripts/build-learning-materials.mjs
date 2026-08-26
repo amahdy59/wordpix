@@ -303,7 +303,12 @@ function dedupeSubtopics(subtopics) {
     });
     if (wordIds.length) out.push({ id: topic.id, title: topic.title ?? topic.id, wordIds });
   }
-  return out;
+  // Undefined rather than [] when a unit has no `topic-*` frames at all. Every
+  // block here is optional so that a missing one hides its section; an empty
+  // array is a *present* block with nothing in it, which reads to callers as
+  // "this unit groups its words into zero sub-topics" instead of "this unit
+  // does not group its words".
+  return out.length ? out : undefined;
 }
 
 /** Same canonicalisation the sync uses, so both sides agree on unit identity. */
