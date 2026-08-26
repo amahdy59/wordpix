@@ -450,7 +450,13 @@ function DialogueSection({ materials }: { materials: UnitLearningMaterials }) {
   return (
     <section className={CARD} aria-labelledby="dialogue-heading">
       <h2 id="dialogue-heading" className="font-sans font-bold text-lg text-foreground">
-        Mini Dialogue — {dialogue.title}
+        {/*
+          Figma leaves the title as the block heading itself when a unit has no
+          custom one, which rendered "Mini Dialogue — Mini Dialogue".
+        */}
+        {dialogue.title && dialogue.title.toLowerCase() !== "mini dialogue"
+          ? `Mini Dialogue — ${dialogue.title}`
+          : "Mini Dialogue"}
       </h2>
       {/*
         The stage direction Figma prints above the exchange. It used to be
@@ -463,7 +469,15 @@ function DialogueSection({ materials }: { materials: UnitLearningMaterials }) {
       <ol className="mt-3 space-y-2">
         {dialogue.lines.map((line, i) => (
           <li key={`${line.speaker}-${i}`} className="flex gap-3">
-            <span className="font-sans font-bold text-primary shrink-0 min-w-14">
+            {/*
+              Bounded, not shrink-0. An unbounded no-shrink column will hold
+              whatever it is given: when bad data put a whole sentence in
+              `speaker`, the row grew past the viewport, the page gained a
+              horizontal scrollbar, and the line beside it was squeezed to one
+              character per row. A max-width plus wrapping keeps a malformed
+              value ugly instead of load-bearing.
+            */}
+            <span className="font-sans font-bold text-primary shrink-0 min-w-14 max-w-32 break-words">
               {line.speaker}:
             </span>
             {/*
