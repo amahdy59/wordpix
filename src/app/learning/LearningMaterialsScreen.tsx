@@ -315,7 +315,13 @@ function WordsSection({
   );
 }
 
-function PassageSection({ materials }: { materials: UnitLearningMaterials }) {
+export function PassageSection({
+  materials,
+}: {
+  materials: UnitLearningMaterials;
+  unitId?: string;
+  onInspectWord?: (word: VocabularyItem) => void;
+}) {
   const passage = materials.passage;
   if (!passage) return null;
   return (
@@ -429,7 +435,7 @@ function MultipleChoice({
   );
 }
 
-function PhrasesSection({ materials }: { materials: UnitLearningMaterials }) {
+export function PhrasesSection({ materials }: { materials: UnitLearningMaterials }) {
   const [filter, setFilter] = useState<"all" | PhraseKind>("all");
   const phrases = materials.phrases ?? [];
   const shown = filter === "all" ? phrases : phrases.filter((p) => p.kind === filter);
@@ -494,7 +500,13 @@ function PhrasesSection({ materials }: { materials: UnitLearningMaterials }) {
   );
 }
 
-function DialogueSection({ materials }: { materials: UnitLearningMaterials }) {
+export function DialogueSection({
+  materials,
+}: {
+  materials: UnitLearningMaterials;
+  unitId?: string;
+  onInspectWord?: (word: VocabularyItem) => void;
+}) {
   const dialogue = materials.dialogue;
   if (!dialogue) return null;
   return (
@@ -545,7 +557,7 @@ function DialogueSection({ materials }: { materials: UnitLearningMaterials }) {
   );
 }
 
-function MistakesSection({ materials }: { materials: UnitLearningMaterials }) {
+export function MistakesSection({ materials }: { materials: UnitLearningMaterials }) {
   return (
     <section className={CARD} aria-labelledby="mistakes-heading">
       <h2 id="mistakes-heading" className="font-sans font-bold text-lg text-foreground">
@@ -578,7 +590,7 @@ const WORD_FORM_COLUMNS = [
   { key: "adverb", label: "Adverb" },
 ] as const;
 
-function WordFormationSection({ materials }: { materials: UnitLearningMaterials }) {
+export function WordFormationSection({ materials }: { materials: UnitLearningMaterials }) {
   const rows = materials.wordFormation ?? [];
   // Units differ in which columns they carry; showing a column that is empty
   // for every row is just a wall of em dashes.
@@ -703,7 +715,7 @@ function PracticeSection({ materials }: { materials: UnitLearningMaterials }) {
   );
 }
 
-function CultureSection({ materials }: { materials: UnitLearningMaterials }) {
+export function CultureSection({ materials }: { materials: UnitLearningMaterials }) {
   return (
     <section className={CARD} aria-labelledby="culture-heading">
       <h2 id="culture-heading" className="font-sans font-bold text-lg text-foreground">
@@ -721,7 +733,7 @@ function CultureSection({ materials }: { materials: UnitLearningMaterials }) {
   );
 }
 
-function ReferenceSection({ materials }: { materials: UnitLearningMaterials }) {
+export function ReferenceSection({ materials }: { materials: UnitLearningMaterials }) {
   return (
     <section className={CARD} aria-labelledby="reference-heading">
       <h2 id="reference-heading" className="font-sans font-bold text-lg text-foreground">

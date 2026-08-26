@@ -81,7 +81,7 @@ export function StudyShell({ unitId, unit, materials, dispatch }: Props) {
           nodes={nodes}
           progress={progress}
           onContinue={handleContinue}
-          onSelectArea={(area) => setCurrentArea(area)}
+          onSelectArea={(area: StudyArea) => setCurrentArea(area)}
           onSelectNode={handleNodeSelect}
           dispatch={dispatch}
         />
