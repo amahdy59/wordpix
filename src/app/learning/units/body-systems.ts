@@ -178,6 +178,43 @@ export const BODY_SYSTEMS_LEARNING: UnitLearningMaterials = {
       example: "Communication is at the heart of every relationship — the circulatory core.",
     },
   ],
+  dialogue: {
+    title: "A Biology Review Session",
+    lines: [
+      {
+        speaker: "Student 1",
+        text: "OK, let's review. The circulatory system moves blood using the heart and blood vessels. What about the respiratory system?",
+      },
+      {
+        speaker: "Student 2",
+        text: "That's the lungs and airways — gas exchange. Oxygen comes in, carbon dioxide goes out. The digestive system is next, right?",
+      },
+      {
+        speaker: "Student 1",
+        text: "Yes — it breaks food down into nutrients. The nervous system controls everything through the brain, spinal cord, and nerves.",
+      },
+      {
+        speaker: "Student 2",
+        text: "The muscular system moves the body, and the skeletal system gives it structure. What about the immune system?",
+      },
+      {
+        speaker: "Student 1",
+        text: "White blood cells, antibodies, and lymph nodes — they fight disease. The endocrine system is the hormone one, with the thyroid and pituitary gland.",
+      },
+      {
+        speaker: "Student 2",
+        text: "The urinary system filters waste through the kidneys. And the integumentary system is skin, hair, and nails — our outer barrier.",
+      },
+      {
+        speaker: "Student 1",
+        text: "Don't forget the lymphatic system — it drains fluid and supports immunity. And the reproductive system creates new life.",
+      },
+      {
+        speaker: "Student 2",
+        text: "And everything works together to maintain homeostasis — the body's internal balance. I think we're ready for the test!",
+      },
+    ],
+  },
   mistakes: [
     {
       id: "body-systems-the-circulatory-system-carries-oxygen",

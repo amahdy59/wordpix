@@ -196,20 +196,40 @@ export const DANCE_STUDIO_LEARNING: UnitLearningMaterials = {
         text: "Good morning, everyone. Change into your leotards and ballet shoes. Beginners, grab a pair of leg warmers — the floor is cold today.",
       },
       {
+        speaker: "Student 1",
+        text: "Should I use pointe shoes for the barre exercises, or just regular ballet shoes?",
+      },
+      {
         speaker: "Instructor",
         text: "Regular for now. We'll move to pointe work after the warm-up. Start with a plié — feet in first position.",
+      },
+      {
+        speaker: "Student 2",
+        text: "My tights have a hole. Can I borrow a pair from the changing room?",
       },
       {
         speaker: "Instructor",
         text: "Check the dance bag by the wall mirror. Now — relevé, hold your balance. Check your posture in the mirror.",
       },
       {
+        speaker: "Student 1",
+        text: "I can never get the pirouette right. I keep losing my balance.",
+      },
+      {
         speaker: "Instructor",
         text: "Spot your turn — fix your eyes on one point in the mirror and snap your head around. Let's try it. Ready — and turn.",
       },
       {
+        speaker: "Student 3",
+        text: "What's an arabesque again? Is that the one where you extend your leg behind?",
+      },
+      {
         speaker: "Instructor",
         text: "Exactly — one leg supporting, the other extended behind you. Arms long. Think of a straight line from your fingertips to your toes.",
+      },
+      {
+        speaker: "Student 2",
+        text: "Are we practising the jeté today? I've been working on the jump at home.",
       },
       {
         speaker: "Instructor",

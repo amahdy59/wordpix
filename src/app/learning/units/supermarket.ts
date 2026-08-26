@@ -571,6 +571,52 @@ export const SUPERMARKET_LEARNING: UnitLearningMaterials = {
         "Bread, milk, and eggs — the daily bread — are always placed at the back of the store near the dairy section.",
     },
   ],
+  dialogue: {
+    title: "Mini Dialogue",
+    scene: "Two flatmates doing their weekly grocery shop at the supermarket",
+    lines: [
+      {
+        speaker: "Flatmate 1",
+        text: "Grab a shopping cart. I've got the list — we need bananas, tomatoes, lettuce, carrots, and onions from the produce section.",
+      },
+      {
+        speaker: "Flatmate 2",
+        text: "I'll weigh the grapes on the scale. Do we need any herbs — basil, cilantro, rosemary?",
+      },
+      {
+        speaker: "Flatmate 1",
+        text: "Basil and thyme. Then head to the dairy section — we need milk, yogurt, eggs, and butter. Oh, and cream cheese.",
+      },
+      {
+        speaker: "Flatmate 2",
+        text: "Should I get regular milk or oat milk?",
+      },
+      {
+        speaker: "Flatmate 1",
+        text: "Both. Check the expiration date on the yogurt. And grab a bag of flour and some pasta from the centre aisle.",
+      },
+      {
+        speaker: "Flatmate 2",
+        text: "What about protein? Chicken or salmon this week?",
+      },
+      {
+        speaker: "Flatmate 1",
+        text: "Chicken drumsticks from the butcher at the deli counter. And a tin of tuna for lunches. The ketchup and olive oil are in aisle seven.",
+      },
+      {
+        speaker: "Flatmate 2",
+        text: "I found a coupon for laundry detergent — fifty percent off! And paper towels are on sale.",
+      },
+      {
+        speaker: "Flatmate 1",
+        text: "Grab those. We also need dish soap and trash bags from the household aisle.",
+      },
+      {
+        speaker: "Flatmate 2",
+        text: "Checkout or self-checkout?",
+      },
+    ],
+  },
   mistakes: [
     {
       id: "supermarket-can-i-have-some-information-about-the-sa",

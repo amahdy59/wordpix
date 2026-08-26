@@ -205,6 +205,52 @@ export const BEDROOM_LEARNING: UnitLearningMaterials = {
       example: "All I need is a good night's sleep and I'll feel better.",
     },
   ],
+  dialogue: {
+    title: "Mini Dialogue",
+    scene: "Two siblings share a bedroom and discuss how to organise the space",
+    lines: [
+      {
+        speaker: "Sibling 1",
+        text: "This room is too messy. We need to organise everything. Let's start with the wardrobe.",
+      },
+      {
+        speaker: "Sibling 2",
+        text: "Fine. I'll put my clothes in the dresser and the chest of drawers. You take the bookshelf.",
+      },
+      {
+        speaker: "Sibling 1",
+        text: "Deal. Can we move the desk under the window? The light is better there.",
+      },
+      {
+        speaker: "Sibling 2",
+        text: "Good idea. And let's put the chair and the stool near the desk. Where should the mirror go?",
+      },
+      {
+        speaker: "Sibling 1",
+        text: "On the wall above the dresser. I also want a rug next to the bed — the carpet is cold in the morning.",
+      },
+      {
+        speaker: "Sibling 2",
+        text: "What about the bed frame? The headboard is wobbly. And I need a new mattress — mine is too soft.",
+      },
+      {
+        speaker: "Sibling 1",
+        text: "Ask Mum. She said we could get new pillowcases and a duvet cover too. The old sheet has a hole in it.",
+      },
+      {
+        speaker: "Sibling 2",
+        text: "I want a comforter instead of a blanket. And more cushions for the bed.",
+      },
+      {
+        speaker: "Sibling 1",
+        text: "Fine, but no more than two. Let's fix the curtain — it keeps falling off. And the blinds are broken.",
+      },
+      {
+        speaker: "Sibling 2",
+        text: "I'll ask Dad. Can we get a new lamp for the nightstand? The ceiling light is too bright at night.",
+      },
+    ],
+  },
   mistakes: [
     {
       id: "bedroom-i-did-my-homework-at-the-desk",

@@ -204,12 +204,24 @@ export const NEWSPAPER_OFFICE_LEARNING: UnitLearningMaterials = {
         text: "Right, what do we have for today's front page? The headline needs to be strong — we go to print at three.",
       },
       {
+        speaker: "Reporter 1",
+        text: "I've got an exclusive from the correspondent in the capital. The article's almost done — I just need a photograph.",
+      },
+      {
         speaker: "Editor",
         text: "Talk to the photographer. Make sure the caption is accurate — the proofreader caught two errors yesterday.",
       },
       {
+        speaker: "Reporter 2",
+        text: "I've finished the column on local transport. Where do you want it — page four?",
+      },
+      {
         speaker: "Editor",
         text: "Page three, above the classified ads. The copy editor has already checked it, so it's ready for layout.",
+      },
+      {
+        speaker: "Reporter 1",
+        text: "The politician called again. She wants to give us a quote, but only off the record.",
       },
       {
         speaker: "Editor",

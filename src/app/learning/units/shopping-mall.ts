@@ -183,6 +183,56 @@ export const SHOPPING_MALL_LEARNING: UnitLearningMaterials = {
         "Take the escalator to the second floor — the electronics store and the bookstore are up there.",
     },
   ],
+  dialogue: {
+    title: "Mini Dialogue",
+    scene: "Two friends navigating a busy shopping mall on a Saturday afternoon",
+    lines: [
+      {
+        speaker: "Friend 1",
+        text: "Let's check the directory first. I need the shoe store and the electronics store.",
+      },
+      {
+        speaker: "Friend 2",
+        text: "The shoe store is on this floor near the entrance. The electronics store is upstairs — take the escalator past the fountain.",
+      },
+      {
+        speaker: "Friend 1",
+        text: "I want to try on these trainers. Where's the fitting room?",
+      },
+      {
+        speaker: "Friend 2",
+        text: "Behind the mannequin display. Check the size tag — and ask the sales clerk if they have your size in stock.",
+      },
+      {
+        speaker: "Friend 1",
+        text: "Perfect. I'll pay with my credit card at the register. Can you hold my shopping bag?",
+      },
+      {
+        speaker: "Friend 2",
+        text: "Sure. I'll wait on the bench. Are you hungry? The food court is on the upper floor.",
+      },
+      {
+        speaker: "Friend 1",
+        text: "Starving. Let's go up. I'll grab fast food — you pick a table near the drink station.",
+      },
+      {
+        speaker: "Friend 2",
+        text: "There's a queue at every counter. And we need a high chair for your niece.",
+      },
+      {
+        speaker: "Friend 1",
+        text: "Found one. After lunch, can we check the toy store? I want to get something from the gift wrapping service.",
+      },
+      {
+        speaker: "Friend 2",
+        text: "And I need the pharmacy for sunscreen. Let's also stop at the information desk — I want to ask about the delivery pickup.",
+      },
+      {
+        speaker: "Friend 1",
+        text: "Good plan. We can push the stroller down the aisle instead of carrying everything. Meet at the parking garage at five?",
+      },
+    ],
+  },
   mistakes: [
     {
       id: "shopping-mall-i-need-to-buy-new-trousers-and-shoes-for",

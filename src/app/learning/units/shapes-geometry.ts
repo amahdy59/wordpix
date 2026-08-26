@@ -188,16 +188,32 @@ export const SHAPES_GEOMETRY_LEARNING: UnitLearningMaterials = {
         text: "Today we're reviewing shapes. Can anyone tell me the difference between a square and a rectangle?",
       },
       {
+        speaker: "Student 1",
+        text: "A square has four equal sides, but a rectangle only has opposite sides that are equal — it has length and width.",
+      },
+      {
         speaker: "Teacher",
         text: "Correct! Now, what about triangles? How many types are there?",
+      },
+      {
+        speaker: "Student 2",
+        text: "Three — equilateral with all sides equal, isosceles with two equal sides, and scalene with no equal sides.",
       },
       {
         speaker: "Teacher",
         text: "Excellent. Let's move to 3D shapes. What shape is a football?",
       },
       {
+        speaker: "Student 1",
+        text: "A sphere! And a dice is a cube — six square faces.",
+      },
+      {
         speaker: "Teacher",
         text: "Perfect. Now, what do we call two lines that run side by side and never meet?",
+      },
+      {
+        speaker: "Student 2",
+        text: "Parallel lines! And if they meet at 90 degrees, they're perpendicular.",
       },
     ],
   },

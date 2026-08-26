@@ -120,20 +120,40 @@ export const FIRE_STATION_LEARNING: UnitLearningMaterials = {
         text: "Welcome to the fire station! I'm the fire chief. This is where our firefighters live and train.",
       },
       {
+        speaker: "Student 1",
+        text: "Is that a fire engine? It's huge!",
+      },
+      {
         speaker: "Fire Chief",
         text: "That's our main fire truck. Next to it is the ladder truck for tall buildings, and the water tanker for areas without a hydrant.",
+      },
+      {
+        speaker: "Student 2",
+        text: "What about the ambulance and the helicopter?",
       },
       {
         speaker: "Fire Chief",
         text: "The ambulance is for the paramedic team. The helicopter and the rescue vehicle are used by the rescue team for big emergencies. We even have a fire boat for the harbor.",
       },
       {
+        speaker: "Student 1",
+        text: "Can we see the equipment? I want to see the fire hose!",
+      },
+      {
         speaker: "Fire Chief",
         text: "Of course. Here's the fire hose with the nozzle, the fire extinguisher, and the ladder. The axe and the pike pole are for breaking through walls.",
       },
       {
+        speaker: "Student 2",
+        text: "What do firefighters wear? That helmet looks heavy.",
+      },
+      {
         speaker: "Fire Chief",
         text: "This is the turnout coat, the fire boots, and the gloves. The face mask and visor protect our eyes. And this is the breathing apparatus with the oxygen tank.",
+      },
+      {
+        speaker: "Student 1",
+        text: "What's that camera?",
       },
       {
         speaker: "Fire Chief",

@@ -177,8 +177,15 @@ function parsePhrases(block, unitId) {
   return entries.length ? entries : undefined;
 }
 
-/** A line that is only a speaker label: "Mom:", "Technician:". */
-const SPEAKER_LABEL = /^([A-Z][A-Za-z .'-]{0,18}):$/;
+/**
+ * A line that is only a speaker label: "Mom:", "Technician:", "Sibling 1:".
+ *
+ * Digits are part of the character class, not an afterthought. Eight units
+ * name their speakers "Sibling 1" / "Flatmate 2" / "Student A", and a class of
+ * letters-only silently dropped every one of their lines — the dialogue did
+ * not render wrong, it disappeared.
+ */
+const SPEAKER_LABEL = /^([A-Z][A-Za-z0-9 .'-]{0,18}):$/;
 
 /**
  * Turns a flattened dialogue block back into speaker/line pairs.

@@ -120,20 +120,40 @@ export const SPORTS_CENTER_LEARNING: UnitLearningMaterials = {
         text: "Welcome to the sports center! We offer over fifteen different sports here. What are you interested in?",
       },
       {
+        speaker: "Member 1",
+        text: "I love soccer and basketball. Where are the courts?",
+      },
+      {
         speaker: "Coach",
         text: "Soccer is on the main field — we have a goal, a net, and cones set up. Basketball is in the hall with the hoop and the scoreboard.",
+      },
+      {
+        speaker: "Member 2",
+        text: "What about tennis and badminton? I brought my racket.",
       },
       {
         speaker: "Coach",
         text: "Courts are upstairs. We provide the ball and the net. You can also try volleyball and table tennis on the same floor.",
       },
       {
+        speaker: "Member 1",
+        text: "Do you have track and field? I want to try sprinting and hurdles.",
+      },
+      {
         speaker: "Coach",
         text: "Yes — running, relay race, long jump, and high jump are outside. The javelin and discus area is behind the field.",
       },
       {
+        speaker: "Member 2",
+        text: "What equipment do we need? I have a helmet and a glove from baseball.",
+      },
+      {
         speaker: "Coach",
         text: "For most sports, we provide the bat, the ball, and the shin guard. Bring your own knee pad and helmet for football and rugby.",
+      },
+      {
+        speaker: "Member 1",
+        text: "Is there bowling or golf here too?",
       },
     ],
   },

@@ -208,6 +208,56 @@ export const ROBOTICS_LAB_LEARNING: UnitLearningMaterials = {
         "The transistor burned out, so we had to go back to square one and rebuild the circuit board.",
     },
   ],
+  dialogue: {
+    title: "Mini Dialogue",
+    scene: "Two students building a robot for a competition in the robotics lab",
+    lines: [
+      {
+        speaker: "Student 1",
+        text: "The frame is assembled. I've attached the wheels and the axle. Can you hand me the motor?",
+      },
+      {
+        speaker: "Student 2",
+        text: "Here. And the gear set — you'll need it to connect the motor to the wheel. Where's the battery pack?",
+      },
+      {
+        speaker: "Student 1",
+        text: "On the shelf. Before we connect it, let's finish the circuit board. Pass me the soldering iron and the solder.",
+      },
+      {
+        speaker: "Student 2",
+        text: "Done. I'll mount the sensor on the front of the frame. Should the camera module go next to it?",
+      },
+      {
+        speaker: "Student 1",
+        text: "Yes — the camera needs a clear view for obstacle detection. Wire it to the microchip on the breadboard.",
+      },
+      {
+        speaker: "Student 2",
+        text: "I need the wire stripper and the pliers. The wire is too thick for the connector.",
+      },
+      {
+        speaker: "Student 1",
+        text: "Use the wire cutter first, then strip the end. Check the connection with the multimeter before powering on.",
+      },
+      {
+        speaker: "Student 2",
+        text: "The LED is flickering. Is that a resistor problem?",
+      },
+      {
+        speaker: "Student 1",
+        text: "Probably — check the resistor value. If it's too high, the LED won't get enough current. You might need a different capacitor too.",
+      },
+      {
+        speaker: "Student 2",
+        text: "What about the gripper? The arm doesn't close properly.",
+      },
+      {
+        speaker: "Student 1",
+        text: "Tighten the screws with the Allen key. And use the hot glue gun to secure the diode to the arm. We need it to signal when the gripper is closed.",
+      },
+    ],
+  },
   mistakes: [
     {
       id: "robotics-lab-the-robot-was-programmed-to-follow-a-bla",

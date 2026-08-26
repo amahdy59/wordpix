@@ -200,16 +200,32 @@ export const SKELETON_LEARNING: UnitLearningMaterials = {
         text: "Today we study the skeleton. Can anyone tell me how many bones an adult has?",
       },
       {
+        speaker: "Student 1",
+        text: "206! The skull alone has 22 bones fused together to protect the brain.",
+      },
+      {
         speaker: "Teacher",
         text: "Correct. And the spine has 33 vertebrae stacked on top of each other, ending at the tailbone.",
+      },
+      {
+        speaker: "Student 2",
+        text: "What holds bones together at the joints? Is it cartilage?",
       },
       {
         speaker: "Teacher",
         text: "Ligaments hold bones together. Cartilage cushions the joint so the bones don't grind. Without it, every movement would hurt.",
       },
       {
+        speaker: "Student 1",
+        text: "What's inside the bone? I read about marrow somewhere.",
+      },
+      {
         speaker: "Teacher",
         text: "Bone marrow produces blood cells. The periosteum — a thin membrane — covers the outside. And calcium keeps the whole structure strong.",
+      },
+      {
+        speaker: "Student 2",
+        text: "What happens when a bone breaks? Is that a fracture or a dislocation?",
       },
     ],
   },

@@ -189,6 +189,54 @@ export const WEDDING_LEARNING: UnitLearningMaterials = {
     scene: "Two friends discuss wedding preparations a week before the ceremony",
     lines: [
       {
+        speaker: "Friend 1",
+        text: "The wedding is next Saturday! Have you finished writing your vows?",
+      },
+      {
+        speaker: "Friend 2",
+        text: "Almost. The officiant wants to review them before the ceremony. Have the rings arrived?",
+      },
+      {
+        speaker: "Friend 1",
+        text: "Yes — they're beautiful. The groomsman is keeping them safe until the ceremony at the altar.",
+      },
+      {
+        speaker: "Friend 2",
+        text: "What about the reception? Is the band confirmed?",
+      },
+      {
+        speaker: "Friend 1",
+        text: "The band is set. The dance floor is ready, the centerpiece for each table setting looks stunning, and the photo booth is installed.",
+      },
+      {
+        speaker: "Friend 2",
+        text: "And the cake? Last time we spoke, you hadn't decided on the design.",
+      },
+      {
+        speaker: "Friend 1",
+        text: "Three tiers with white roses. The cake topper matches the bouquet and the boutonniere. We also ordered sparklers for the exit.",
+      },
+      {
+        speaker: "Friend 2",
+        text: "What's the flower girl wearing? And does she know what to do walking down the aisle?",
+      },
+      {
+        speaker: "Friend 1",
+        text: "She's been practising all week — scattering petals before the bride. The bridesmaid will guide her.",
+      },
+      {
+        speaker: "Friend 2",
+        text: "Who's giving the toast?",
+      },
+      {
+        speaker: "Friend 1",
+        text: "The best man. He's been rehearsing — something about the first dance and how the groom had cold feet before proposing.",
+      },
+      {
+        speaker: "Friend 2",
+        text: "It's going to be perfect. I can already picture the recessional and the blessing. Don't forget the tuxedo fitting tomorrow!",
+      },
+      {
         speaker: "Ali",
         text: "Definitely. I wouldn't miss it!",
       },

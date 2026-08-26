@@ -184,6 +184,56 @@ export const RIVER_LEARNING: UnitLearningMaterials = {
         "The beaver dam made waves downstream, flooding the bank where the heron and the otter usually hunted.",
     },
   ],
+  dialogue: {
+    title: "Mini Dialogue",
+    scene: "Two friends prepare for a kayaking trip down a river",
+    lines: [
+      {
+        speaker: "Friend 1",
+        text: "The current looks strong today. Should we take the kayak or the canoe?",
+      },
+      {
+        speaker: "Friend 2",
+        text: "Kayak for sure — it handles the rapids better. The canoe is safer for the calm pool sections.",
+      },
+      {
+        speaker: "Friend 1",
+        text: "Look at that waterfall upstream! The water feeds into the tributary on the left.",
+      },
+      {
+        speaker: "Friend 2",
+        text: "Beautiful. See the heron standing on the bank? And there's an otter diving near the reed bed.",
+      },
+      {
+        speaker: "Friend 1",
+        text: "What's that on the lily pad? A frog?",
+      },
+      {
+        speaker: "Friend 2",
+        text: "Yes — and a dragonfly just landed on the cattail. The duckweed near the bed means the water is clean.",
+      },
+      {
+        speaker: "Friend 1",
+        text: "Careful at the bend — the current speeds up. Hold onto your paddle.",
+      },
+      {
+        speaker: "Friend 2",
+        text: "I see the rapids ahead. There's a beaver dam near the far bank. Let's steer right.",
+      },
+      {
+        speaker: "Friend 1",
+        text: "We made it! That pool below the rapids is calm. Want to stop and fish for salmon?",
+      },
+      {
+        speaker: "Friend 2",
+        text: "Sure. There's a turtle on that rock, and I can see crayfish near the algae. Let's anchor the raft by the willow.",
+      },
+      {
+        speaker: "Friend 1",
+        text: "This is incredible. The river widens at the delta — you can see where it meets the estuary from here.",
+      },
+    ],
+  },
   mistakes: [
     {
       id: "river-the-river-is-deeper-near-the-bend-than-i",

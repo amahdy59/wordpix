@@ -207,6 +207,56 @@ export const FESTIVAL_LEARNING: UnitLearningMaterials = {
         "The organisers went all out this year — banners, ribbons, a live band, and a crepe stand on every corner.",
     },
   ],
+  dialogue: {
+    title: "Mini Dialogue",
+    scene: "Two friends exploring a street festival together",
+    lines: [
+      {
+        speaker: "Friend 1",
+        text: "Look at all the bunting and banners! The whole street is decorated. And those lanterns are beautiful.",
+      },
+      {
+        speaker: "Friend 2",
+        text: "I love the paper flowers on the garland — they must have taken hours. And there's confetti everywhere!",
+      },
+      {
+        speaker: "Friend 1",
+        text: "Are you hungry? I can smell the barbecue from here. There's also a kebab stand and a taco stall.",
+      },
+      {
+        speaker: "Friend 2",
+        text: "Let's start with samosas and spring rolls — the queue is shorter. We can get a waffle or a crepe for dessert.",
+      },
+      {
+        speaker: "Friend 1",
+        text: "What's that over there? Children are lining up for something.",
+      },
+      {
+        speaker: "Friend 2",
+        text: "A piñata! They're taking turns hitting it with a stick. And look — there's a balloon artist making animals.",
+      },
+      {
+        speaker: "Friend 1",
+        text: "I want to try the fruit skewers. And the roasted corn smells incredible.",
+      },
+      {
+        speaker: "Friend 2",
+        text: "Grab me a lemonade while you're there? Or a smoothie if they have mango.",
+      },
+      {
+        speaker: "Friend 1",
+        text: "There's also hot chocolate and milkshakes at the stand near the flag pole.",
+      },
+      {
+        speaker: "Friend 2",
+        text: "This festival is amazing. The streamers, the ribbons, the food — they've really gone all out this year.",
+      },
+      {
+        speaker: "Friend 1",
+        text: "And there are doughnuts and fried chicken on the other side! Let's walk past the wreath display first.",
+      },
+    ],
+  },
   mistakes: [
     {
       id: "festival-we-went-to-a-very-fun-festival-last-week",

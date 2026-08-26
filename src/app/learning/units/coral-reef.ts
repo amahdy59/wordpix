@@ -217,20 +217,40 @@ export const CORAL_REEF_LEARNING: UnitLearningMaterials = {
         text: "Stay on the surface and follow me. Don't touch the coral — even a gentle brush can damage it.",
       },
       {
+        speaker: "Snorkeller 1",
+        text: "What are those bright blue fish darting between the coral branches?",
+      },
+      {
         speaker: "Biologist",
         text: "Those are parrotfish. They eat algae off the coral surface — without them, the reef would be smothered.",
+      },
+      {
+        speaker: "Snorkeller 2",
+        text: "I can see a sea turtle! It's enormous!",
       },
       {
         speaker: "Biologist",
         text: "A green sea turtle — they come to the reef to feed on seagrass and algae. Watch how gracefully it moves through the current.",
       },
       {
+        speaker: "Snorkeller 1",
+        text: "What's that spiny creature on the sand beneath us? It looks dangerous.",
+      },
+      {
         speaker: "Biologist",
         text: "A sea urchin. Don't step on one — the spines are sharp and painful. Stay horizontal and float above the reef bed.",
       },
       {
+        speaker: "Snorkeller 2",
+        text: "The colours are incredible. Why are some sections of coral white?",
+      },
+      {
         speaker: "Biologist",
         text: "That's bleaching — when water temperatures rise, the coral expels the algae that gives it colour. If it lasts too long, the coral dies.",
+      },
+      {
+        speaker: "Snorkeller 1",
+        text: "Is that a clownfish in that anemone? Like the one in the film?",
       },
       {
         speaker: "Biologist",
