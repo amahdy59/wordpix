@@ -11,7 +11,10 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "assets:verify": "node scripts/verify_r2.cjs",
+    "audio:corpus": "node scripts/build_audio_corpus.cjs",
+    "audio:generate": "node scripts/generate_audio.cjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.9.1",
