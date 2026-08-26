@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useLearner } from "../context/LearnerContext";
 import { getCachedAudio, saveCachedAudio } from "../../lib/persistence/db";
+import { audioUrl } from "./assetUrls";
 
 export type AudioStatus = "idle" | "loading" | "playing" | "error" | "unsupported";
 
@@ -259,17 +260,74 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
           });
       };
 
-      const apiKey =
-        import.meta.env?.VITE_ELEVENLABS_API_KEY ||
-        (typeof window !== "undefined" ? localStorage.getItem("wordpix_elevenlabs_key") : null);
+      /**
+       * A clip the build already generated and uploaded.
+       *
+       * This is the normal path. The vocabulary and the learning materials are
+       * synthesised once by scripts/generate_audio.cjs and served as immutable
+       * static files, so playback costs nothing and needs no credentials. The
+       * object key is a hash of the text, derived identically here and in the
+       * generator, so no manifest of what exists has to ship with the app — a
+       * miss simply 404s and falls through to the paths below.
+       */
+      const playPregenerated = async (): Promise<boolean> => {
+        const url = await audioUrl(cleanText);
+        if (!url) return false;
+        const cacheKey = `cdn:${url}`;
 
-      if (apiKey) {
+        if (audioCache.has(cacheKey)) {
+          setStatus("loading");
+          playBlobUrl(audioCache.get(cacheKey)!);
+          return true;
+        }
+
+        const stored = await getCachedAudio(cacheKey).catch(() => null);
+        if (stored) {
+          const objectUrl = URL.createObjectURL(stored);
+          audioCache.set(cacheKey, objectUrl);
+          setStatus("loading");
+          playBlobUrl(objectUrl);
+          return true;
+        }
+
+        const res = await fetch(url);
+        if (!res.ok) return false;
+        const blob = await res.blob();
+        saveCachedAudio(cacheKey, blob);
+        const objectUrl = URL.createObjectURL(blob);
+        audioCache.set(cacheKey, objectUrl);
+        setStatus("loading");
+        playBlobUrl(objectUrl);
+        return true;
+      };
+
+      /**
+       * Only a key the learner supplied themselves.
+       *
+       * This used to fall back to import.meta.env.VITE_ELEVENLABS_API_KEY.
+       * Vite inlines every VITE_* value into the client bundle, so the shared
+       * account key was served to every visitor in plain JavaScript and could
+       * be lifted straight out of the deployed site. Pre-generated clips (see
+       * scripts/generate_audio.cjs) cover the vocabulary without any key at
+       * all; a learner who wants neural audio for arbitrary text can still
+       * paste their own, which stays in their browser.
+       */
+      const apiKey =
+        typeof window !== "undefined" ? localStorage.getItem("wordpix_elevenlabs_key") : null;
+
+      const playRemainingFallbacks = () => {
+        if (apiKey) {
+          playWithLearnerKey(apiKey);
+          return;
+        }
+        playNeuralCloudStream(cleanText, targetLang);
+      };
+
+      const playWithLearnerKey = (apiKey: string) => {
         const voiceId =
-          import.meta.env?.VITE_ELEVENLABS_VOICE_ID ||
           (typeof window !== "undefined"
             ? localStorage.getItem("wordpix_elevenlabs_voice_id")
-            : null) ||
-          "Xb7hH8MSUJpSbSDYk0k2";
+            : null) || "Xb7hH8MSUJpSbSDYk0k2";
         const cacheKey = `eleven:${voiceId}:${cleanText.toLowerCase()}`;
 
         if (audioCache.has(cacheKey)) {
@@ -328,9 +386,13 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
           });
 
         return;
-      }
+      };
 
-      playNeuralCloudStream(cleanText, targetLang);
+      playPregenerated()
+        .catch(() => false)
+        .then((played) => {
+          if (!played) playRemainingFallbacks();
+        });
     },
     [lang, effectiveRate, pitch, volume]
   );
