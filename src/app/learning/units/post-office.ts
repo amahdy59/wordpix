@@ -113,51 +113,47 @@ export const POST_OFFICE_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A customer sends several items at the post office",
     lines: [
       {
-        speaker: "Scene: A customer sends several items at the post office",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Hello, I need to send a letter, a postcard, and a package today.",
       },
       {
-        speaker: "Hello, I need to send a letter, a postcard, and a package today.",
-        text: "Clerk:",
+        speaker: "Clerk",
+        text: "Sure. Let's start with the letter. Do you have an envelope and a stamp?",
       },
       {
-        speaker: "Sure. Let's start with the letter. Do you have an envelope and a stamp?",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "I have the envelope, but I need to buy a stamp. I also need a label and a sticker for the package.",
       },
       {
-        speaker:
-          "I have the envelope, but I need to buy a stamp. I also need a label and a sticker for the package.",
-        text: "Clerk:",
+        speaker: "Clerk",
+        text: "No problem. Write the address and the return address clearly. Don't forget the zip code.",
       },
       {
-        speaker:
-          "No problem. Write the address and the return address clearly. Don't forget the zip code.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Can I send the package by express mail? I need a tracking number for it.",
       },
       {
-        speaker: "Can I send the package by express mail? I need a tracking number for it.",
-        text: "Clerk:",
+        speaker: "Clerk",
+        text: "Yes — express mail or certified mail both come with a tracking number. Let me put the parcel on the scale to check the weight.",
       },
       {
-        speaker:
-          "Yes — express mail or certified mail both come with a tracking number. Let me put the parcel on the scale to check the weight.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "How about registered mail? My grandmother sent me something by registered mail last month — I had to give my signature at the counter for pickup.",
       },
       {
-        speaker:
-          "How about registered mail? My grandmother sent me something by registered mail last month — I had to give my signature at the counter for pickup.",
-        text: "Clerk:",
+        speaker: "Clerk",
+        text: "Registered mail requires a signature on delivery. The mail carrier or the delivery driver will ask for it at the door.",
       },
       {
-        speaker:
-          "Registered mail requires a signature on delivery. The mail carrier or the delivery driver will ask for it at the door.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Where do I drop the postcard? In the mailbox outside or the post box inside?",
       },
       {
-        speaker: "Where do I drop the postcard? In the mailbox outside or the post box inside?",
-        text: "Clerk:",
+        speaker: "Clerk",
+        text: "Either one — just use the slot. The sorter will process it tonight. The courier picks up parcels separately.",
       },
     ],
   },

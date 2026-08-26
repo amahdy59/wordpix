@@ -206,53 +206,47 @@ export const GARDEN_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "Two neighbors work together to plant a new flower garden",
     lines: [
       {
-        speaker: "Scene: Two neighbors work together to plant a new flower garden",
-        text: "Ali:",
+        speaker: "Ali",
+        text: "Thanks for helping me today. I want to plant a rose, a tulip, and some sunflower seeds along the fence.",
       },
       {
-        speaker:
-          "Thanks for helping me today. I want to plant a rose, a tulip, and some sunflower seeds along the fence.",
-        text: "Yusuf:",
+        speaker: "Yusuf",
+        text: "Great plan. Where's the shovel? I'll start digging near the cherry tree.",
       },
       {
-        speaker: "Great plan. Where's the shovel? I'll start digging near the cherry tree.",
-        text: "Ali:",
+        speaker: "Ali",
+        text: "In the shed, next to the rake and the wheelbarrow. Grab the trowel and the garden gloves too.",
       },
       {
-        speaker:
-          "In the shed, next to the rake and the wheelbarrow. Grab the trowel and the garden gloves too.",
-        text: "Yusuf:",
+        speaker: "Yusuf",
+        text: "Found them. Should I use the watering can or the hose for these new plants?",
       },
       {
-        speaker: "Found them. Should I use the watering can or the hose for these new plants?",
-        text: "Ali:",
+        speaker: "Ali",
+        text: "The hose — it's faster. Connect it to the sprinkler for the flower beds, and use the watering can for the orchid pots.",
       },
       {
-        speaker:
-          "The hose — it's faster. Connect it to the sprinkler for the flower beds, and use the watering can for the orchid pots.",
-        text: "Yusuf:",
+        speaker: "Yusuf",
+        text: "This soil is hard. I'll use the spade to break it up. What goes in first — the daisy or the lily?",
       },
       {
-        speaker:
-          "This soil is hard. I'll use the spade to break it up. What goes in first — the daisy or the lily?",
-        text: "Ali:",
+        speaker: "Ali",
+        text: "The lily — it needs deeper root space. The daisy and the daffodil go in the front row near the hedge.",
       },
       {
-        speaker:
-          "The lily — it needs deeper root space. The daisy and the daffodil go in the front row near the hedge.",
-        text: "Yusuf:",
+        speaker: "Yusuf",
+        text: "The lavender smells wonderful already. Should we put it near the bush or the vine?",
       },
       {
-        speaker:
-          "The lavender smells wonderful already. Should we put it near the bush or the vine?",
-        text: "Ali:",
+        speaker: "Ali",
+        text: "Near the bush. The carnation and the violet go along the path, and the fern stays in the shade under the pine tree.",
       },
       {
-        speaker:
-          "Near the bush. The carnation and the violet go along the path, and the fern stays in the shade under the pine tree.",
-        text: "Yusuf:",
+        speaker: "Yusuf",
+        text: "I'll trim the ivy with the pruner while you finish. The lawn mower is running low on fuel, by the way.",
       },
     ],
   },

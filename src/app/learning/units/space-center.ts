@@ -105,52 +105,51 @@ export const SPACE_CENTER_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A guide explaining the rocket exhibit to visitors",
     lines: [
       {
-        speaker: "Scene: A guide explaining the rocket exhibit to visitors",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "This is a full-size replica of the Saturn V rocket used in the Apollo missions.",
       },
       {
-        speaker: "This is a full-size replica of the Saturn V rocket used in the Apollo missions.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "How tall is it?",
       },
       {
-        speaker: "How tall is it?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "About one hundred and eleven metres — taller than the Statue of Liberty.",
       },
       {
-        speaker: "About one hundred and eleven metres — taller than the Statue of Liberty.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "How fast does a rocket travel?",
       },
       {
-        speaker: "How fast does a rocket travel?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "To escape Earth's gravity, it needs to reach about forty thousand kilometres per hour.",
       },
       {
-        speaker:
-          "To escape Earth's gravity, it needs to reach about forty thousand kilometres per hour.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "That's incredible! How long does it take to reach the Moon?",
       },
       {
-        speaker: "That's incredible! How long does it take to reach the Moon?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Apollo 11 took about three days to get there.",
       },
       {
-        speaker: "Apollo 11 took about three days to get there.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "Do astronauts feel scared during launch?",
       },
       {
-        speaker: "Do astronauts feel scared during launch?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Many say they feel excited rather than scared. They've trained for years, so they trust the equipment.",
       },
       {
-        speaker:
-          "Many say they feel excited rather than scared. They've trained for years, so they trust the equipment.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "Can ordinary people go to space now?",
       },
       {
-        speaker: "Can ordinary people go to space now?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Yes, space tourism is growing. Companies like SpaceX offer private flights, but they're still very expensive.",
       },
     ],
   },

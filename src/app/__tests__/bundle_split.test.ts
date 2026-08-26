@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { readFileSync, readdirSync, statSync } from "node:fs";
-import { join, resolve } from "node:path";
+import { join, resolve, sep } from "node:path";
 
 /**
  * Keeps the vocabulary split from quietly undoing itself.
@@ -34,7 +34,13 @@ function sourceFiles(dir: string, found: string[] = []): string[] {
 }
 
 const shipped = sourceFiles(srcDir).map((path) => ({
-  path: path.slice(srcDir.length + 1),
+  // Normalised to forward slashes so the comparisons below hold on Windows,
+  // where path.join yields "app\data\vocabulary.ts" and every equality
+  // check against a posix-style literal silently fails.
+  path: path
+    .slice(srcDir.length + 1)
+    .split(sep)
+    .join("/"),
   text: readFileSync(path, "utf8"),
 }));
 

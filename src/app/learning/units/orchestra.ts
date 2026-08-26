@@ -213,58 +213,51 @@ export const ORCHESTRA_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A conductor leading a rehearsal with the string and brass sections of an orchestra",
     lines: [
       {
-        speaker:
-          "Scene: A conductor leading a rehearsal with the string and brass sections of an orchestra",
-        text: "Conductor:",
+        speaker: "Conductor",
+        text: "Let's begin with the second movement. Strings — violins, violas, cellos — have your bows ready. Double bass, I need you softer this time.",
       },
       {
-        speaker:
-          "Let's begin with the second movement. Strings — violins, violas, cellos — have your bows ready. Double bass, I need you softer this time.",
-        text: "Violinist:",
+        speaker: "Violinist",
+        text: "Should I use the mute for this section? The score says pianissimo.",
       },
       {
-        speaker: "Should I use the mute for this section? The score says pianissimo.",
-        text: "Conductor:",
+        speaker: "Conductor",
+        text: "Yes — mutes on for all the violins. Check your tuning pegs before we start. The chin rest should be comfortable.",
       },
       {
-        speaker:
-          "Yes — mutes on for all the violins. Check your tuning pegs before we start. The chin rest should be comfortable.",
-        text: "Cellist:",
+        speaker: "Cellist",
+        text: "The string on my cello snapped during the last rehearsal. I've replaced it, but it's still stretching.",
       },
       {
-        speaker:
-          "The string on my cello snapped during the last rehearsal. I've replaced it, but it's still stretching.",
-        text: "Conductor:",
+        speaker: "Conductor",
+        text: "Give it a few minutes. Harp — you enter at bar forty-two. Don't rush the arpeggios.",
       },
       {
-        speaker:
-          "Give it a few minutes. Harp — you enter at bar forty-two. Don't rush the arpeggios.",
-        text: "Harpist:",
+        speaker: "Harpist",
+        text: "Understood. Should I match the tempo of the flute or follow the clarinet line?",
       },
       {
-        speaker: "Understood. Should I match the tempo of the flute or follow the clarinet line?",
-        text: "Conductor:",
+        speaker: "Conductor",
+        text: "Follow the clarinet. Brass section — trumpets, trombones, French horn, tuba — I need the crescendo at bar sixty to be gradual, not sudden.",
       },
       {
-        speaker:
-          "Follow the clarinet. Brass section — trumpets, trombones, French horn, tuba — I need the crescendo at bar sixty to be gradual, not sudden.",
-        text: "Trumpet:",
+        speaker: "Trumpet",
+        text: "The valve on my trumpet is sticking. Can I have a moment to oil it?",
       },
       {
-        speaker: "The valve on my trumpet is sticking. Can I have a moment to oil it?",
-        text: "Conductor:",
+        speaker: "Conductor",
+        text: "Quickly. Trombone — your slide needs to be smoother in the transition. And the bell should face slightly upward.",
       },
       {
-        speaker:
-          "Quickly. Trombone — your slide needs to be smoother in the transition. And the bell should face slightly upward.",
-        text: "Percussionist:",
+        speaker: "Percussionist",
+        text: "When does the timpani enter? I have it marked at bar seventy, but the snare drum part starts earlier.",
       },
       {
-        speaker:
-          "When does the timpani enter? I have it marked at bar seventy, but the snare drum part starts earlier.",
-        text: "Conductor:",
+        speaker: "Conductor",
+        text: "Timpani at seventy, snare at sixty-five. The bass drum is only in the finale. Right — from the top. Bows up. And... begin.",
       },
     ],
   },

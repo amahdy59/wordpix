@@ -183,57 +183,6 @@ export const MOUNTAIN_LEARNING: UnitLearningMaterials = {
         "After crossing the alpine meadow and passing the tree line, they reached new heights — literally and figuratively.",
     },
   ],
-  dialogue: {
-    title: "Mini Dialogue",
-    lines: [
-      {
-        speaker: "Scene: Two hikers discuss their route as they climb a mountain trail",
-        text: "Hiker 1:",
-      },
-      {
-        speaker: "The trail splits here. Do we take the ridge path or go through the valley?",
-        text: "Hiker 2:",
-      },
-      {
-        speaker:
-          "The ridge path has better views — you can see the peak from there. But it's exposed to the wind.",
-        text: "Hiker 1:",
-      },
-      {
-        speaker: "Look at that fog rolling in. I can barely see the cliff ahead.",
-        text: "Hiker 2:",
-      },
-      {
-        speaker:
-          "Let's stay on the slope and follow the tree line. There are pine trees for shelter and the fern-covered path is easier on the knees.",
-        text: "Hiker 1:",
-      },
-      {
-        speaker:
-          "Watch that boulder — the moss makes it slippery. And there's a crevasse just past the ledge.",
-        text: "Hiker 2:",
-      },
-      {
-        speaker:
-          "I see it. There's lichen on the rocks here too. Let's rest on the plateau — my legs need a break.",
-        text: "Hiker 1:",
-      },
-      {
-        speaker:
-          "Look — a mountain goat on the ridge! And is that an eagle circling above the summit?",
-        text: "Hiker 2:",
-      },
-      {
-        speaker:
-          "Yes! And there's a marmot by those wildflowers near the alpine meadow. The wildlife up here is incredible.",
-        text: "Hiker 1:",
-      },
-      {
-        speaker: "How far to the summit from here?",
-        text: "Hiker 2:",
-      },
-    ],
-  },
   mistakes: [
     {
       id: "mountain-the-scenery-from-the-summit-was-breathta",

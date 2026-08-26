@@ -113,51 +113,47 @@ export const RESTAURANT_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A couple has dinner at a restaurant for their anniversary",
     lines: [
       {
-        speaker: "Scene: A couple has dinner at a restaurant for their anniversary",
-        text: "Host:",
+        speaker: "Host",
+        text: "Good evening! Welcome. Table for two? I have a lovely booth by the window with a candle and a centerpiece.",
       },
       {
-        speaker:
-          "Good evening! Welcome. Table for two? I have a lovely booth by the window with a candle and a centerpiece.",
-        text: "Husband:",
+        speaker: "Husband",
+        text: "That sounds perfect. Thank you.",
       },
       {
-        speaker: "That sounds perfect. Thank you.",
-        text: "Waitress:",
+        speaker: "Waitress",
+        text: "Here's the menu. Can I start you with something to drink? We have fresh juice, tea, or coffee.",
       },
       {
-        speaker:
-          "Here's the menu. Can I start you with something to drink? We have fresh juice, tea, or coffee.",
-        text: "Wife:",
+        speaker: "Wife",
+        text: "I'll have tea in a cup with a saucer, please. And my husband will have water in a glass — no straw.",
       },
       {
-        speaker:
-          "I'll have tea in a cup with a saucer, please. And my husband will have water in a glass — no straw.",
-        text: "Waitress:",
+        speaker: "Waitress",
+        text: "Of course. The salt shaker and pepper shaker are on the table. Shall I bring a napkin for the high chair? I see you have a little one.",
       },
       {
-        speaker:
-          "Of course. The salt shaker and pepper shaker are on the table. Shall I bring a napkin for the high chair? I see you have a little one.",
-        text: "Husband:",
+        speaker: "Husband",
+        text: "Yes, please. What does the chef recommend tonight?",
       },
       {
-        speaker: "Yes, please. What does the chef recommend tonight?",
-        text: "Waitress:",
+        speaker: "Waitress",
+        text: "The grilled fish is wonderful. It comes on a plate with vegetables. The soup is served in a bowl.",
       },
       {
-        speaker:
-          "The grilled fish is wonderful. It comes on a plate with vegetables. The soup is served in a bowl.",
-        text: "Wife:",
+        speaker: "Wife",
+        text: "I'll have the fish. Can I get chopsticks instead of a fork and knife?",
       },
       {
-        speaker: "I'll have the fish. Can I get chopsticks instead of a fork and knife?",
-        text: "Waitress:",
+        speaker: "Waitress",
+        text: "Absolutely. And for you, sir?",
       },
       {
-        speaker: "Absolutely. And for you, sir?",
-        text: "Husband:",
+        speaker: "Husband",
+        text: "The steak, please — with a spoon for the mashed potatoes. And could we see the wine list? A wine glass for each of us.",
       },
     ],
   },

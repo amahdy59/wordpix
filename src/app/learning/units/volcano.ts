@@ -202,61 +202,55 @@ export const VOLCANO_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A volcanologist briefing a journalist at a monitoring station near an active volcano",
     lines: [
       {
-        speaker:
-          "Scene: A volcanologist briefing a journalist at a monitoring station near an active volcano",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "Professor, the seismograph has been recording tremors all morning. Is an eruption coming?",
       },
       {
-        speaker:
-          "Professor, the seismograph has been recording tremors all morning. Is an eruption coming?",
-        text: "Volcanologist:",
+        speaker: "Volcanologist",
+        text: "The tremors suggest magma is moving beneath the cone, but the tiltmeter readings are stable for now.",
       },
       {
-        speaker:
-          "The tremors suggest magma is moving beneath the cone, but the tiltmeter readings are stable for now.",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "What would a full eruption look like from here?",
       },
       {
-        speaker: "What would a full eruption look like from here?",
-        text: "Volcanologist:",
+        speaker: "Volcanologist",
+        text: "First, you'd see gas emissions from the crater and steam vents on the slopes. Then an ash cloud would rise.",
       },
       {
-        speaker:
-          "First, you'd see gas emissions from the crater and steam vents on the slopes. Then an ash cloud would rise.",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "And the lava?",
       },
       {
-        speaker: "And the lava?",
-        text: "Volcanologist:",
+        speaker: "Volcanologist",
+        text: "A lava flow would come down the cone through existing vents. The most dangerous element is a pyroclastic flow — superheated gas and rock moving at hundreds of kilometres per hour.",
       },
       {
-        speaker:
-          "A lava flow would come down the cone through existing vents. The most dangerous element is a pyroclastic flow — superheated gas and rock moving at hundreds of kilometres per hour.",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "What about the mudflow risk? There's a river valley below us.",
       },
       {
-        speaker: "What about the mudflow risk? There's a river valley below us.",
-        text: "Volcanologist:",
+        speaker: "Volcanologist",
+        text: "If the eruption melts the snow on the summit, the mudflow would follow the river valley. That's why the evacuation zone is so large.",
       },
       {
-        speaker:
-          "If the eruption melts the snow on the summit, the mudflow would follow the river valley. That's why the evacuation zone is so large.",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "What equipment do you use to monitor everything?",
       },
       {
-        speaker: "What equipment do you use to monitor everything?",
-        text: "Volcanologist:",
+        speaker: "Volcanologist",
+        text: "The seismograph detects vibrations. The gas analyzer measures sulphur and carbon dioxide. The thermal camera maps heat changes on the surface.",
       },
       {
-        speaker:
-          "The seismograph detects vibrations. The gas analyzer measures sulphur and carbon dioxide. The thermal camera maps heat changes on the surface.",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "What are those dark rocks near the geyser?",
       },
       {
-        speaker: "What are those dark rocks near the geyser?",
-        text: "Volcanologist:",
+        speaker: "Volcanologist",
+        text: "Basalt from older lava flows. And the glassy black ones are obsidian — volcanic glass. The pumice next to them is so light it floats on water.",
       },
     ],
   },

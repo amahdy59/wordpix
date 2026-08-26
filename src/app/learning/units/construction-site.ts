@@ -219,56 +219,51 @@ export const CONSTRUCTION_SITE_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A site manager shows a new worker around the construction site",
     lines: [
       {
-        speaker: "Scene: A site manager shows a new worker around the construction site",
-        text: "Manager:",
+        speaker: "Manager",
+        text: "Welcome to the construction site. Safety first — put on your helmet. Let me show you the heavy machinery.",
       },
       {
-        speaker:
-          "Welcome to the construction site. Safety first — put on your helmet. Let me show you the heavy machinery.",
-        text: "Worker:",
+        speaker: "Worker",
+        text: "Is that a crane lifting the steel beam? It's enormous!",
       },
       {
-        speaker: "Is that a crane lifting the steel beam? It's enormous!",
-        text: "Manager:",
+        speaker: "Manager",
+        text: "Yes — the crane handles the heavy loads. The bulldozer clears the ground, and the excavator digs the foundation.",
       },
       {
-        speaker:
-          "Yes — the crane handles the heavy loads. The bulldozer clears the ground, and the excavator digs the foundation.",
-        text: "Worker:",
+        speaker: "Worker",
+        text: "What about the dump truck and the cement mixer? I see them near the entrance.",
       },
       {
-        speaker: "What about the dump truck and the cement mixer? I see them near the entrance.",
-        text: "Manager:",
+        speaker: "Manager",
+        text: "The dump truck hauls dirt and gravel. The cement mixer pours the cement for the foundation. The forklift moves the brick pallets.",
       },
       {
-        speaker:
-          "The dump truck hauls dirt and gravel. The cement mixer pours the cement for the foundation. The forklift moves the brick pallets.",
-        text: "Worker:",
+        speaker: "Worker",
+        text: "I see a steamroller on the road. And is that a backhoe?",
       },
       {
-        speaker: "I see a steamroller on the road. And is that a backhoe?",
-        text: "Manager:",
+        speaker: "Manager",
+        text: "Correct. The pile driver is behind the backhoe — it drives the steel supports into the ground. The boom lift takes workers to the upper floors.",
       },
       {
-        speaker:
-          "Correct. The pile driver is behind the backhoe — it drives the steel supports into the ground. The boom lift takes workers to the upper floors.",
-        text: "Worker:",
+        speaker: "Worker",
+        text: "What materials are we using? I see plywood, glass pane, and pipe stacked over there.",
       },
       {
-        speaker:
-          "What materials are we using? I see plywood, glass pane, and pipe stacked over there.",
-        text: "Manager:",
+        speaker: "Manager",
+        text: "We use brick, cement, steel beam, plywood, glass pane, pipe, cable, bolt, nail, screw, rebar, and drywall. Each has its place.",
       },
       {
-        speaker:
-          "We use brick, cement, steel beam, plywood, glass pane, pipe, cable, bolt, nail, screw, rebar, and drywall. Each has its place.",
-        text: "Worker:",
+        speaker: "Worker",
+        text: "Where are the hand tools? I brought my own hammer and wrench.",
       },
       {
-        speaker: "Where are the hand tools? I brought my own hammer and wrench.",
-        text: "Manager:",
+        speaker: "Manager",
+        text: "The tool shed has the screwdriver, drill, saw, tape measure, level, pliers, chisel, utility knife, allen key, and socket set. Sign them out before use.",
       },
     ],
   },

@@ -237,52 +237,27 @@ export const FARM_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A farmer gives a tour of the farm to a group of visitors",
     lines: [
       {
-        speaker: "Scene: A farmer gives a tour of the farm to a group of visitors",
-        text: "Farmer:",
+        speaker: "Farmer",
+        text: "Welcome to the farm! Over here we have the cow barn. We milk the cows every morning.",
       },
       {
-        speaker:
-          "Welcome to the farm! Over here we have the cow barn. We milk the cows every morning.",
-        text: "Visitor 1:",
+        speaker: "Farmer",
+        text: "We have about fifty animals. The pig pen is behind the barn, and the chicken coop is next to the wheat field.",
       },
       {
-        speaker:
-          "How many animals do you have? I can see a horse, some sheep, and a goat near the fence.",
-        text: "Farmer:",
+        speaker: "Farmer",
+        text: "They eat corn and grain. The hen lays eggs every day, and the rooster wakes us at dawn.",
       },
       {
-        speaker:
-          "We have about fifty animals. The pig pen is behind the barn, and the chicken coop is next to the wheat field.",
-        text: "Visitor 2:",
+        speaker: "Farmer",
+        text: "We grow carrot, lettuce, onion, pumpkin, bean, pea, cabbage, and beetroot — everything for the local market.",
       },
       {
-        speaker: "What do the chickens eat? I see a rooster and several hens walking around.",
-        text: "Farmer:",
-      },
-      {
-        speaker:
-          "They eat corn and grain. The hen lays eggs every day, and the rooster wakes us at dawn.",
-        text: "Visitor 1:",
-      },
-      {
-        speaker: "What crops do you grow? I noticed a big field of potato and tomato plants.",
-        text: "Farmer:",
-      },
-      {
-        speaker:
-          "We grow carrot, lettuce, onion, pumpkin, bean, pea, cabbage, and beetroot — everything for the local market.",
-        text: "Visitor 2:",
-      },
-      {
-        speaker: "And the fruit trees? I can see an apple tree and a cherry tree over there.",
-        text: "Farmer:",
-      },
-      {
-        speaker:
-          "Yes — we also have a pear tree, an orange tree, and a peach tree. The strawberry and blueberry bushes are behind the duck pond.",
-        text: "Visitor 1:",
+        speaker: "Farmer",
+        text: "Yes — we also have a pear tree, an orange tree, and a peach tree. The strawberry and blueberry bushes are behind the duck pond.",
       },
     ],
   },

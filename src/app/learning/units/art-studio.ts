@@ -191,56 +191,51 @@ export const ART_STUDIO_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue: Choosing Art Supplies",
+    scene: "A director preparing the crew for a live news broadcast in a TV studio",
     lines: [
       {
-        speaker: "Scene: A director preparing the crew for a live news broadcast in a TV studio",
-        text: "Director:",
+        speaker: "Director",
+        text: "Customer: Excuse me, I'm looking for some oil paints. Where can I find them?",
       },
       {
-        speaker: "Customer: Excuse me, I'm looking for some oil paints. Where can I find them?",
-        text: "Camera Op:",
+        speaker: "Camera Op",
+        text: "Shop Assistant: They're on aisle three, next to the acrylic paints. Are you looking for a specific brand?",
       },
       {
-        speaker:
-          "Shop Assistant: They're on aisle three, next to the acrylic paints. Are you looking for a specific brand?",
-        text: "Director:",
+        speaker: "Director",
+        text: "Customer: I usually use Windsor & Newton, but I'm open to trying something new. What would you recommend?",
       },
       {
-        speaker:
-          "Customer: I usually use Windsor & Newton, but I'm open to trying something new. What would you recommend?",
-        text: "Sound Eng:",
+        speaker: "Sound Eng",
+        text: "Shop Assistant: Gamblin is quite popular with our regular customers. The colours are rich and they blend really well.",
       },
       {
-        speaker:
-          "Shop Assistant: Gamblin is quite popular with our regular customers. The colours are rich and they blend really well.",
-        text: "Director:",
+        speaker: "Director",
+        text: "Customer: That sounds good. I also need a few new brushes — flat ones for backgrounds.",
       },
       {
-        speaker:
-          "Customer: That sounds good. I also need a few new brushes — flat ones for backgrounds.",
-        text: "Lighting Tech:",
+        speaker: "Lighting Tech",
+        text: "Shop Assistant: We have a nice set of flat brushes in natural bristle. They're perfect for oil painting.",
       },
       {
-        speaker:
-          "Shop Assistant: We have a nice set of flat brushes in natural bristle. They're perfect for oil painting.",
-        text: "Director:",
+        speaker: "Director",
+        text: "Customer: Great, I'll take those. Do you carry canvas boards as well?",
       },
       {
-        speaker: "Customer: Great, I'll take those. Do you carry canvas boards as well?",
-        text: "Stage Mgr:",
+        speaker: "Stage Mgr",
+        text: "Shop Assistant: Yes, we have them in several sizes. They're right by the easels at the back of the shop.",
       },
       {
-        speaker:
-          "Shop Assistant: Yes, we have them in several sizes. They're right by the easels at the back of the shop.",
-        text: "Makeup:",
+        speaker: "Makeup",
+        text: "Almost done. The studio lights wash out skin tone, so I've added extra contrast.",
       },
       {
-        speaker: "Almost done. The studio lights wash out skin tone, so I've added extra contrast.",
-        text: "Director:",
+        speaker: "Director",
+        text: "Teleprompter loaded? The script writer sent the final edit ten minutes ago.",
       },
       {
-        speaker: "Teleprompter loaded? The script writer sent the final edit ten minutes ago.",
-        text: "Producer:",
+        speaker: "Producer",
+        text: "Loaded and scrolling at the right speed. The satellite dish is receiving the live feed from our correspondent. We're ready.",
       },
     ],
   },

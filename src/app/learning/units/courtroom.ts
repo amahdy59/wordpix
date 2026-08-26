@@ -199,53 +199,51 @@ export const COURTROOM_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A trial in progress — the defense attorney is questioning a witness",
     lines: [
       {
-        speaker: "Scene: A trial in progress — the defense attorney is questioning a witness",
-        text: "Bailiff:",
+        speaker: "Bailiff",
+        text: "All rise. The Honourable Judge Williams presiding. Court is now in session.",
       },
       {
-        speaker: "All rise. The Honourable Judge Williams presiding. Court is now in session.",
-        text: "Judge:",
+        speaker: "Judge",
+        text: "Be seated. The prosecution may call its next witness.",
       },
       {
-        speaker: "Be seated. The prosecution may call its next witness.",
-        text: "Prosecutor:",
+        speaker: "Prosecutor",
+        text: "The prosecution calls Dr. Sarah Chen to the witness stand.",
       },
       {
-        speaker: "The prosecution calls Dr. Sarah Chen to the witness stand.",
-        text: "Clerk:",
+        speaker: "Clerk",
+        text: "Please place your hand on the oath card. Do you swear to tell the truth, the whole truth, and nothing but the truth?",
       },
       {
-        speaker:
-          "Please place your hand on the oath card. Do you swear to tell the truth, the whole truth, and nothing but the truth?",
-        text: "Witness:",
+        speaker: "Witness",
+        text: "I do.",
       },
       {
-        speaker: "I do.",
-        text: "Prosecutor:",
+        speaker: "Prosecutor",
+        text: "Dr. Chen, can you describe the evidence you examined in the case file?",
       },
       {
-        speaker: "Dr. Chen, can you describe the evidence you examined in the case file?",
-        text: "Witness:",
+        speaker: "Witness",
+        text: "I analysed the contents of the evidence bag — fingerprints, fibres, and a document with the defendant's signature.",
       },
       {
-        speaker:
-          "I analysed the contents of the evidence bag — fingerprints, fibres, and a document with the defendant's signature.",
-        text: "Defense Att:",
+        speaker: "Defense Att",
+        text: "Objection, Your Honour. The witness is drawing conclusions, not stating facts.",
       },
       {
-        speaker: "Objection, Your Honour. The witness is drawing conclusions, not stating facts.",
-        text: "Judge:",
+        speaker: "Judge",
+        text: "Sustained. The witness will limit her testimony to what she directly observed. The jury will disregard the last statement.",
       },
       {
-        speaker:
-          "Sustained. The witness will limit her testimony to what she directly observed. The jury will disregard the last statement.",
-        text: "Prosecutor:",
+        speaker: "Prosecutor",
+        text: "Let me rephrase. Dr. Chen, what did the laboratory results show?",
       },
       {
-        speaker: "Let me rephrase. Dr. Chen, what did the laboratory results show?",
-        text: "Witness:",
+        speaker: "Witness",
+        text: "The fingerprints matched the defendant's. The court reporter can verify this from the original hearing transcript.",
       },
     ],
   },

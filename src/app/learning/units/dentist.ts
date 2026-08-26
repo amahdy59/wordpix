@@ -250,55 +250,51 @@ export const DENTIST_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A dentist examining a patient during a routine check-up",
     lines: [
       {
-        speaker: "Scene: A dentist examining a patient during a routine check-up",
-        text: "Dentist:",
+        speaker: "Dentist",
+        text: "Please sit back in the dental chair and rest your head on the headrest. I'll adjust the overhead light.",
       },
       {
-        speaker:
-          "Please sit back in the dental chair and rest your head on the headrest. I'll adjust the overhead light.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "I'm a bit nervous. Will this hurt?",
       },
       {
-        speaker: "I'm a bit nervous. Will this hurt?",
-        text: "Dentist:",
+        speaker: "Dentist",
+        text: "Not at all. This is just a check-up. I'll start with the dental mirror to look at each tooth. Open wide, please.",
       },
       {
-        speaker:
-          "Not at all. This is just a check-up. I'll start with the dental mirror to look at each tooth. Open wide, please.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "What's that scraping tool?",
       },
       {
-        speaker: "What's that scraping tool?",
-        text: "Dentist:",
+        speaker: "Dentist",
+        text: "The scaler — it removes tartar from between your teeth. And this is the probe — I use it to check for cavities.",
       },
       {
-        speaker:
-          "The scaler — it removes tartar from between your teeth. And this is the probe — I use it to check for cavities.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "I can taste something metallic. Is that normal?",
       },
       {
-        speaker: "I can taste something metallic. Is that normal?",
-        text: "Dentist:",
+        speaker: "Dentist",
+        text: "That's the polisher. I'm cleaning the surface of each tooth. Spit into the rinse bowl when you need to.",
       },
       {
-        speaker:
-          "That's the polisher. I'm cleaning the surface of each tooth. Spit into the rinse bowl when you need to.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "Will I need an X-ray today?",
       },
       {
-        speaker: "Will I need an X-ray today?",
-        text: "Dentist:",
+        speaker: "Dentist",
+        text: "Yes — the X-ray machine will show us what's happening below the gum line. Put on this protective apron.",
       },
       {
-        speaker:
-          "Yes — the X-ray machine will show us what's happening below the gum line. Put on this protective apron.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "The suction tube feels strange but it really helps.",
       },
       {
-        speaker: "The suction tube feels strange but it really helps.",
-        text: "Dentist:",
+        speaker: "Dentist",
+        text: "It keeps the area dry. I can see a small cavity on the upper left. We'll need to use the dental drill and a filling tool next week.",
       },
     ],
   },

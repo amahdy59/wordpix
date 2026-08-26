@@ -186,62 +186,55 @@ export const MECHANIC_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A car owner brings their vehicle to a mechanic for strange engine noises",
     lines: [
       {
-        speaker: "Scene: A car owner brings their vehicle to a mechanic for strange engine noises",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "Hi, my car has been making a strange rattling noise, especially when I accelerate.",
       },
       {
-        speaker:
-          "Hi, my car has been making a strange rattling noise, especially when I accelerate.",
-        text: "Mechanic:",
+        speaker: "Mechanic",
+        text: "Let me put it on the lift and take a look. Could be the exhaust or the muffler. When did it start?",
       },
       {
-        speaker:
-          "Let me put it on the lift and take a look. Could be the exhaust or the muffler. When did it start?",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "About a week ago. I also noticed the engine light came on.",
       },
       {
-        speaker: "About a week ago. I also noticed the engine light came on.",
-        text: "Mechanic:",
+        speaker: "Mechanic",
+        text: "I'll run the diagnostic scanner first. That'll tell us if it's the alternator, the spark plug, or something else.",
       },
       {
-        speaker:
-          "I'll run the diagnostic scanner first. That'll tell us if it's the alternator, the spark plug, or something else.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "While you're at it, can you check the brakes? I've been hearing a squeaking sound too.",
       },
       {
-        speaker:
-          "While you're at it, can you check the brakes? I've been hearing a squeaking sound too.",
-        text: "Mechanic:",
+        speaker: "Mechanic",
+        text: "Sure. Sounds like the brake pad might be worn. I'll check the suspension and the steering while I'm under there.",
       },
       {
-        speaker:
-          "Sure. Sounds like the brake pad might be worn. I'll check the suspension and the steering while I'm under there.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "How long will it take? I need the car for work tomorrow.",
       },
       {
-        speaker: "How long will it take? I need the car for work tomorrow.",
-        text: "Mechanic:",
+        speaker: "Mechanic",
+        text: "A couple of hours. The creeper makes it easy to slide underneath. I'll also check the oil filter and the air filter.",
       },
       {
-        speaker:
-          "A couple of hours. The creeper makes it easy to slide underneath. I'll also check the oil filter and the air filter.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "What about the battery? It's been slow to start in the mornings.",
       },
       {
-        speaker: "What about the battery? It's been slow to start in the mornings.",
-        text: "Mechanic:",
+        speaker: "Mechanic",
+        text: "I'll test it with the multimeter. If it's weak, replacing it takes twenty minutes. The radiator and the cooling system look fine from here.",
       },
       {
-        speaker:
-          "I'll test it with the multimeter. If it's weak, replacing it takes twenty minutes. The radiator and the cooling system look fine from here.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "Great. I'll wait in the front. Just let me know the total before you start any major work — I don't want any surprises.",
       },
       {
-        speaker:
-          "Great. I'll wait in the front. Just let me know the total before you start any major work — I don't want any surprises.",
-        text: "Mechanic:",
+        speaker: "Mechanic",
+        text: "Absolutely. I'll book you in for the MOT as well.",
       },
     ],
   },

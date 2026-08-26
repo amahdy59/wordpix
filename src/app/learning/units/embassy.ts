@@ -200,59 +200,52 @@ export const EMBASSY_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene:
+      "A citizen visiting the embassy to apply for a new passport after losing the original abroad",
     lines: [
       {
-        speaker:
-          "Scene: A citizen visiting the embassy to apply for a new passport after losing the original abroad",
-        text: "Receptionist:",
+        speaker: "Receptionist",
+        text: "Good morning. Do you have an appointment? Please show your visitor pass to the security guard at the gate.",
       },
       {
-        speaker:
-          "Good morning. Do you have an appointment? Please show your visitor pass to the security guard at the gate.",
-        text: "Citizen:",
+        speaker: "Citizen",
+        text: "Yes, I booked online. I need to apply for a replacement passport — mine was stolen.",
       },
       {
-        speaker:
-          "Yes, I booked online. I need to apply for a replacement passport — mine was stolen.",
-        text: "Receptionist:",
+        speaker: "Receptionist",
+        text: "I'm sorry to hear that. Take a seat in the waiting room. A clerk from the consular section will call you shortly.",
       },
       {
-        speaker:
-          "I'm sorry to hear that. Take a seat in the waiting room. A clerk from the consular section will call you shortly.",
-        text: "Clerk:",
+        speaker: "Clerk",
+        text: "Please come to window three. I'll need your identity card, a birth certificate, and a photograph for the application form.",
       },
       {
-        speaker:
-          "Please come to window three. I'll need your identity card, a birth certificate, and a photograph for the application form.",
-        text: "Citizen:",
+        speaker: "Citizen",
+        text: "I have the photograph and my identity card, but the birth certificate is at home. Can I send a scanned copy?",
       },
       {
-        speaker:
-          "I have the photograph and my identity card, but the birth certificate is at home. Can I send a scanned copy?",
-        text: "Clerk:",
+        speaker: "Clerk",
+        text: "We can accept a scanned copy by email, but the original must be presented before we issue the passport. I'll stamp the form to confirm today's visit.",
       },
       {
-        speaker:
-          "We can accept a scanned copy by email, but the original must be presented before we issue the passport. I'll stamp the form to confirm today's visit.",
-        text: "Citizen:",
+        speaker: "Citizen",
+        text: "How long will the new passport take?",
       },
       {
-        speaker: "How long will the new passport take?",
-        text: "Clerk:",
+        speaker: "Clerk",
+        text: "About ten working days. We'll issue a temporary travel document today so you can return home. The consul needs to sign the seal.",
       },
       {
-        speaker:
-          "About ten working days. We'll issue a temporary travel document today so you can return home. The consul needs to sign the seal.",
-        text: "Citizen:",
+        speaker: "Citizen",
+        text: "Is there a fee?",
       },
       {
-        speaker: "Is there a fee?",
-        text: "Clerk:",
+        speaker: "Clerk",
+        text: "Yes — payable at the reception. The receptionist will give you a receipt. Do you need a translator for any of the documents?",
       },
       {
-        speaker:
-          "Yes — payable at the reception. The receptionist will give you a receipt. Do you need a translator for any of the documents?",
-        text: "Citizen:",
+        speaker: "Citizen",
+        text: "No, thank you. Everything is in English. Can I also update my address in the embassy records?",
       },
     ],
   },

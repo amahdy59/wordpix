@@ -113,55 +113,47 @@ export const BEACH_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A group of friends spend a day at the beach",
     lines: [
       {
-        speaker: "Scene: A group of friends spend a day at the beach",
-        text: "Ahmed:",
+        speaker: "Ahmed",
+        text: "We're here! Let's set up near the shore. I'll put the umbrella and the beach chair on the sand.",
       },
       {
-        speaker:
-          "We're here! Let's set up near the shore. I'll put the umbrella and the beach chair on the sand.",
-        text: "Khalid:",
+        speaker: "Khalid",
+        text: "I'll spread the towel and get the cooler. Don't forget the sunscreen — the sun is strong today.",
       },
       {
-        speaker:
-          "I'll spread the towel and get the cooler. Don't forget the sunscreen — the sun is strong today.",
-        text: "Ahmed:",
+        speaker: "Ahmed",
+        text: "Look at that wave! Perfect for surfing. Did you bring the goggles and the snorkel?",
       },
       {
-        speaker:
-          "Look at that wave! Perfect for surfing. Did you bring the goggles and the snorkel?",
-        text: "Khalid:",
+        speaker: "Khalid",
+        text: "They're in the bag with the fins and the flip-flops. I want to try snorkeling near the reef first.",
       },
       {
-        speaker:
-          "They're in the bag with the fins and the flip-flops. I want to try snorkeling near the reef first.",
-        text: "Ahmed:",
+        speaker: "Ahmed",
+        text: "The tide pool over there has little fish and crabs. The children are already exploring the cove.",
       },
       {
-        speaker:
-          "The tide pool over there has little fish and crabs. The children are already exploring the cove.",
-        text: "Khalid:",
+        speaker: "Khalid",
+        text: "I can see the cliff from here. And the dune behind us is huge — great view of the horizon.",
       },
       {
-        speaker:
-          "I can see the cliff from here. And the dune behind us is huge — great view of the horizon.",
-        text: "Ahmed:",
+        speaker: "Ahmed",
+        text: "After swimming, should we try kayaking or paddleboarding? The bay looks calm enough.",
       },
       {
-        speaker:
-          "After swimming, should we try kayaking or paddleboarding? The bay looks calm enough.",
-        text: "Khalid:",
+        speaker: "Khalid",
+        text: "Let's do paddleboarding first, then maybe jet skiing if there's time. The lagoon is sheltered from the ocean current.",
       },
       {
-        speaker:
-          "Let's do paddleboarding first, then maybe jet skiing if there's time. The lagoon is sheltered from the ocean current.",
-        text: "Ahmed:",
+        speaker: "Ahmed",
+        text: "Put on your sunglasses and hat — we'll be out for a while. I'm wearing my swim trunks already.",
       },
       {
-        speaker:
-          "Put on your sunglasses and hat — we'll be out for a while. I'm wearing my swim trunks already.",
-        text: "Khalid:",
+        speaker: "Khalid",
+        text: "What about boogie boarding? The waves near the shore are just right for beginners.",
       },
     ],
   },

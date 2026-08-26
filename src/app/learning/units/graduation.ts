@@ -186,58 +186,51 @@ export const GRADUATION_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A graduate and their family celebrate after the commencement ceremony",
     lines: [
       {
-        speaker: "Scene: A graduate and their family celebrate after the commencement ceremony",
-        text: "Graduate:",
+        speaker: "Graduate",
+        text: "I can't believe it's over. Four years — and now I have my diploma!",
       },
       {
-        speaker: "I can't believe it's over. Four years — and now I have my diploma!",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "We're so proud. The speech you gave at the podium was beautiful. The whole auditorium gave you applause.",
       },
       {
-        speaker:
-          "We're so proud. The speech you gave at the podium was beautiful. The whole auditorium gave you applause.",
-        text: "Graduate:",
+        speaker: "Graduate",
+        text: "I was so nervous at the microphone. But once I started, the words just came. Did you see the valedictorian's speech?",
       },
       {
-        speaker:
-          "I was so nervous at the microphone. But once I started, the words just came. Did you see the valedictorian's speech?",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "Yes — she was incredible. And the procession with everyone in their cap and gown was so moving.",
       },
       {
-        speaker:
-          "Yes — she was incredible. And the procession with everyone in their cap and gown was so moving.",
-        text: "Graduate:",
+        speaker: "Graduate",
+        text: "I loved wearing the honor cord and the stole. And look — my tassel is on the left now!",
       },
       {
-        speaker:
-          "I loved wearing the honor cord and the stole. And look — my tassel is on the left now!",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "Don't forget your class ring and the pin from your department. Those are keepsakes for life.",
       },
       {
-        speaker:
-          "Don't forget your class ring and the pin from your department. Those are keepsakes for life.",
-        text: "Graduate:",
+        speaker: "Graduate",
+        text: "The best part was the cap toss at the end. Everyone threw their caps in the air — the music was playing and the balloons went up.",
       },
       {
-        speaker:
-          "The best part was the cap toss at the end. Everyone threw their caps in the air — the music was playing and the balloons went up.",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "Let's take a class photo before everyone leaves. Stand on the stage by the banner.",
       },
       {
-        speaker:
-          "Let's take a class photo before everyone leaves. Stand on the stage by the banner.",
-        text: "Graduate:",
+        speaker: "Graduate",
+        text: "Can we get the yearbook signed first? I want everyone to write something.",
       },
       {
-        speaker: "Can we get the yearbook signed first? I want everyone to write something.",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "Of course. Then we'll head to the party — there's cake, more balloons, and your whole family waiting.",
       },
       {
-        speaker:
-          "Of course. Then we'll head to the party — there's cake, more balloons, and your whole family waiting.",
-        text: "Graduate:",
+        speaker: "Graduate",
+        text: "This is the best day of my life. From the handshake on stage to this moment — I'll never forget my alma mater.",
       },
     ],
   },

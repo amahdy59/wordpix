@@ -211,50 +211,47 @@ export const LIBRARY_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A librarian helps a student find books for a school project",
     lines: [
       {
-        speaker: "Scene: A librarian helps a student find books for a school project",
-        text: "Student:",
+        speaker: "Student",
+        text: "Excuse me, I need help finding books about ancient civilizations for my project.",
       },
       {
-        speaker: "Excuse me, I need help finding books about ancient civilizations for my project.",
-        text: "Librarian:",
+        speaker: "Librarian",
+        text: "Of course. Let's start at the help desk. Are you looking for fiction or non-fiction?",
       },
       {
-        speaker:
-          "Of course. Let's start at the help desk. Are you looking for fiction or non-fiction?",
-        text: "Student:",
+        speaker: "Student",
+        text: "Non-fiction, mostly. Maybe a reference book and an encyclopedia?",
       },
       {
-        speaker: "Non-fiction, mostly. Maybe a reference book and an encyclopedia?",
-        text: "Librarian:",
+        speaker: "Librarian",
+        text: "Check the reference section on the second bookshelf. The encyclopedia is next to the atlas and the biography shelf.",
       },
       {
-        speaker:
-          "Check the reference section on the second bookshelf. The encyclopedia is next to the atlas and the biography shelf.",
-        text: "Student:",
+        speaker: "Student",
+        text: "I also need a picture book with maps. Is there one in the children's section?",
       },
       {
-        speaker: "I also need a picture book with maps. Is there one in the children's section?",
-        text: "Librarian:",
+        speaker: "Librarian",
+        text: "Yes — there's a great one on the cart near the reading table. I was just returning it from the return desk.",
       },
       {
-        speaker:
-          "Yes — there's a great one on the cart near the reading table. I was just returning it from the return desk.",
-        text: "Student:",
+        speaker: "Student",
+        text: "Can I use the study room? I want to spread out my notebook and read quietly.",
       },
       {
-        speaker: "Can I use the study room? I want to spread out my notebook and read quietly.",
-        text: "Librarian:",
+        speaker: "Librarian",
+        text: "The study room is booked, but there's an empty study desk near the lamp. Or try the armchair in the periodicals area — it's very quiet.",
       },
       {
-        speaker:
-          "The study room is booked, but there's an empty study desk near the lamp. Or try the armchair in the periodicals area — it's very quiet.",
-        text: "Student:",
+        speaker: "Student",
+        text: "Is searching the computer desk catalog easy? I've never tried it.",
       },
       {
-        speaker: "Is searching the computer desk catalog easy? I've never tried it.",
-        text: "Librarian:",
+        speaker: "Librarian",
+        text: "Very easy. Type your topic, and it shows which bookshelf and section to look in. The media center computers work the same way.",
       },
     ],
   },

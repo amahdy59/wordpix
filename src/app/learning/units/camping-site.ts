@@ -223,58 +223,51 @@ export const CAMPING_SITE_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A group of friends sets up camp for their first overnight trip",
     lines: [
       {
-        speaker: "Scene: A group of friends sets up camp for their first overnight trip",
-        text: "Ali:",
+        speaker: "Ali",
+        text: "We made it! Let's set up the tent before it gets dark. Where's the tent pole and the tent peg?",
       },
       {
-        speaker:
-          "We made it! Let's set up the tent before it gets dark. Where's the tent pole and the tent peg?",
-        text: "Omar:",
+        speaker: "Omar",
+        text: "In the backpack. I'll lay the groundsheet and the tarp first. Can you attach the rain fly?",
       },
       {
-        speaker:
-          "In the backpack. I'll lay the groundsheet and the tarp first. Can you attach the rain fly?",
-        text: "Ali:",
+        speaker: "Ali",
+        text: "Done. I brought a sleeping bag, an air mattress, and a pillow for each of us. The hammock goes between those two trees.",
       },
       {
-        speaker:
-          "Done. I brought a sleeping bag, an air mattress, and a pillow for each of us. The hammock goes between those two trees.",
-        text: "Omar:",
+        speaker: "Omar",
+        text: "Time to build the campfire. Pass me the firewood, the matches, and the lighter.",
       },
       {
-        speaker: "Time to build the campfire. Pass me the firewood, the matches, and the lighter.",
-        text: "Ali:",
+        speaker: "Ali",
+        text: "Here. Set up the grill and the camp stove too. I'll fill the water jug and the thermos from the stream.",
       },
       {
-        speaker:
-          "Here. Set up the grill and the camp stove too. I'll fill the water jug and the thermos from the stream.",
-        text: "Omar:",
+        speaker: "Omar",
+        text: "I packed the cooler with food and the camping pot. We can roast marshmallows on a skewer later.",
       },
       {
-        speaker:
-          "I packed the cooler with food and the camping pot. We can roast marshmallows on a skewer later.",
-        text: "Ali:",
+        speaker: "Ali",
+        text: "Where's the flashlight? And the headlamp? It's getting dark.",
       },
       {
-        speaker: "Where's the flashlight? And the headlamp? It's getting dark.",
-        text: "Omar:",
+        speaker: "Omar",
+        text: "The flashlight is in the side pocket. The lantern goes on the table. I also brought the binoculars for stargazing.",
       },
       {
-        speaker:
-          "The flashlight is in the side pocket. The lantern goes on the table. I also brought the binoculars for stargazing.",
-        text: "Ali:",
+        speaker: "Ali",
+        text: "Good thinking. We should check the compass and the map for tomorrow's hike. The GPS device has the trail marked.",
       },
       {
-        speaker:
-          "Good thinking. We should check the compass and the map for tomorrow's hike. The GPS device has the trail marked.",
-        text: "Omar:",
+        speaker: "Omar",
+        text: "I see a trail marker on that tree. Put on your hiking boots — the path starts there.",
       },
       {
-        speaker:
-          "I see a trail marker on that tree. Put on your hiking boots — the path starts there.",
-        text: "Ali:",
+        speaker: "Ali",
+        text: "Keep the whistle and the signal mirror in your pocket, just in case. Safety first!",
       },
     ],
   },

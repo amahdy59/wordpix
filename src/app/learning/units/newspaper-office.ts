@@ -197,59 +197,39 @@ export const NEWSPAPER_OFFICE_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A morning meeting in the newsroom between an editor and reporters",
     lines: [
       {
-        speaker: "Scene: A morning meeting in the newsroom between an editor and reporters",
-        text: "Editor:",
+        speaker: "Editor",
+        text: "Right, what do we have for today's front page? The headline needs to be strong — we go to print at three.",
       },
       {
-        speaker:
-          "Right, what do we have for today's front page? The headline needs to be strong — we go to print at three.",
-        text: "Reporter 1:",
+        speaker: "Editor",
+        text: "Talk to the photographer. Make sure the caption is accurate — the proofreader caught two errors yesterday.",
       },
       {
-        speaker:
-          "I've got an exclusive from the correspondent in the capital. The article's almost done — I just need a photograph.",
-        text: "Editor:",
+        speaker: "Editor",
+        text: "Page three, above the classified ads. The copy editor has already checked it, so it's ready for layout.",
       },
       {
-        speaker:
-          "Talk to the photographer. Make sure the caption is accurate — the proofreader caught two errors yesterday.",
-        text: "Reporter 2:",
+        speaker: "Editor",
+        text: "Then it's useless. We need something we can print. Did the intern finish checking the facts?",
       },
       {
-        speaker: "I've finished the column on local transport. Where do you want it — page four?",
-        text: "Editor:",
+        speaker: "Intern",
+        text: "Yes — I verified every source using my notebook and the voice recorder from yesterday's interview.",
       },
       {
-        speaker:
-          "Page three, above the classified ads. The copy editor has already checked it, so it's ready for layout.",
-        text: "Reporter 1:",
+        speaker: "Editor",
+        text: "Good. What about the editorial? The publisher wants it to address the education budget.",
       },
       {
-        speaker:
-          "The politician called again. She wants to give us a quote, but only off the record.",
-        text: "Editor:",
+        speaker: "Columnist",
+        text: "I've drafted it. The cartoonist is working on an illustration to go next to it on the back page.",
       },
       {
-        speaker:
-          "Then it's useless. We need something we can print. Did the intern finish checking the facts?",
-        text: "Intern:",
-      },
-      {
-        speaker:
-          "Yes — I verified every source using my notebook and the voice recorder from yesterday's interview.",
-        text: "Editor:",
-      },
-      {
-        speaker:
-          "Good. What about the editorial? The publisher wants it to address the education budget.",
-        text: "Columnist:",
-      },
-      {
-        speaker:
-          "I've drafted it. The cartoonist is working on an illustration to go next to it on the back page.",
-        text: "Editor:",
+        speaker: "Editor",
+        text: "Perfect. Check the pinboard for any updates, then start writing. We have six hours until the press pass deadline.",
       },
     ],
   },

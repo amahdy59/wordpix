@@ -207,54 +207,51 @@ export const TAILOR_SHOP_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A customer being measured for a custom suit at a tailor shop",
     lines: [
       {
-        speaker: "Scene: A customer being measured for a custom suit at a tailor shop",
-        text: "Tailor:",
+        speaker: "Tailor",
+        text: "Welcome. What can I make for you today?",
       },
       {
-        speaker: "Welcome. What can I make for you today?",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "I need a suit for a formal event. Something classic — maybe wool or linen?",
       },
       {
-        speaker: "I need a suit for a formal event. Something classic — maybe wool or linen?",
-        text: "Tailor:",
+        speaker: "Tailor",
+        text: "Wool is excellent for structure. Linen is lighter but creases more easily. Let me take your measurements first. Stand on the platform near the dress form.",
       },
       {
-        speaker:
-          "Wool is excellent for structure. Linen is lighter but creases more easily. Let me take your measurements first. Stand on the platform near the dress form.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Should I remove my jacket?",
       },
       {
-        speaker: "Should I remove my jacket?",
-        text: "Tailor:",
+        speaker: "Tailor",
+        text: "Yes, please. I'll use the tape measure for your chest, shoulders, waist, and sleeve length. I'll mark everything with chalk on the pattern.",
       },
       {
-        speaker:
-          "Yes, please. I'll use the tape measure for your chest, shoulders, waist, and sleeve length. I'll mark everything with chalk on the pattern.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "What's that curved ruler on the table?",
       },
       {
-        speaker: "What's that curved ruler on the table?",
-        text: "Tailor:",
+        speaker: "Tailor",
+        text: "A French curve — I use it for drawing smooth necklines and armholes on the pattern. The T-square is for straight lines.",
       },
       {
-        speaker:
-          "A French curve — I use it for drawing smooth necklines and armholes on the pattern. The T-square is for straight lines.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Can you show me the fabric options?",
       },
       {
-        speaker: "Can you show me the fabric options?",
-        text: "Tailor:",
+        speaker: "Tailor",
+        text: "Of course. We have cotton, silk, wool, linen, denim for casual wear, and polyester blends. For a formal suit, I'd recommend this wool. Feel the weight.",
       },
       {
-        speaker:
-          "Of course. We have cotton, silk, wool, linen, denim for casual wear, and polyester blends. For a formal suit, I'd recommend this wool. Feel the weight.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "That's perfect. How long will it take?",
       },
       {
-        speaker: "That's perfect. How long will it take?",
-        text: "Tailor:",
+        speaker: "Tailor",
+        text: "Two weeks. I'll cut the fabric on the cutting mat with the rotary cutter, then assemble it on the sewing machine. The bobbin and the needle do the rest.",
       },
     ],
   },

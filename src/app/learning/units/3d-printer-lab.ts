@@ -212,56 +212,51 @@ export const _3D_PRINTER_LAB_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A lab technician helping a student set up a 3D print for the first time",
     lines: [
       {
-        speaker: "Scene: A lab technician helping a student set up a 3D print for the first time",
-        text: "Technician:",
+        speaker: "Technician",
+        text: "First, open your design in the 3D software on the computer. Have you finished the model?",
       },
       {
-        speaker:
-          "First, open your design in the 3D software on the computer. Have you finished the model?",
-        text: "Student:",
+        speaker: "Student",
+        text: "Yes — I designed it on the graphics tablet and checked the dimensions with a ruler and a caliper.",
       },
       {
-        speaker:
-          "Yes — I designed it on the graphics tablet and checked the dimensions with a ruler and a caliper.",
-        text: "Technician:",
+        speaker: "Technician",
+        text: "Good. Now we need to slice the model — the software converts it into layers for the print head. Choose PLA filament for your first print.",
       },
       {
-        speaker:
-          "Good. Now we need to slice the model — the software converts it into layers for the print head. Choose PLA filament for your first print.",
-        text: "Student:",
+        speaker: "Student",
+        text: "What's the difference between PLA and ABS filament?",
       },
       {
-        speaker: "What's the difference between PLA and ABS filament?",
-        text: "Technician:",
+        speaker: "Technician",
+        text: "PLA is easier to print and biodegradable. ABS is stronger but needs a heated build plate. We also have PETG, nylon, and even flexible filament.",
       },
       {
-        speaker:
-          "PLA is easier to print and biodegradable. ABS is stronger but needs a heated build plate. We also have PETG, nylon, and even flexible filament.",
-        text: "Student:",
+        speaker: "Student",
+        text: "The filament spool is loaded. What's next?",
       },
       {
-        speaker: "The filament spool is loaded. What's next?",
-        text: "Technician:",
+        speaker: "Technician",
+        text: "Check the nozzle — make sure it's clean. The extruder pushes the filament through the nozzle as the print head moves along the guide rail.",
       },
       {
-        speaker:
-          "Check the nozzle — make sure it's clean. The extruder pushes the filament through the nozzle as the print head moves along the guide rail.",
-        text: "Student:",
+        speaker: "Student",
+        text: "What's the belt for?",
       },
       {
-        speaker: "What's the belt for?",
-        text: "Technician:",
+        speaker: "Technician",
+        text: "The belt connects the stepper motor to the print head — it controls precise movement. The cooling fan prevents the filament from deforming.",
       },
       {
-        speaker:
-          "The belt connects the stepper motor to the print head — it controls precise movement. The cooling fan prevents the filament from deforming.",
-        text: "Student:",
+        speaker: "Student",
+        text: "My model has an overhang. Will it need support?",
       },
       {
-        speaker: "My model has an overhang. Will it need support?",
-        text: "Technician:",
+        speaker: "Technician",
+        text: "Yes — the software will add support material automatically. You'll remove it after printing. Apply the glue stick to the build plate for adhesion.",
       },
     ],
   },

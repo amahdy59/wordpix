@@ -228,55 +228,51 @@ export const PHOTOGRAPHY_STUDIO_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A photographer setting up equipment for a portrait session in the studio",
     lines: [
       {
-        speaker: "Scene: A photographer setting up equipment for a portrait session in the studio",
-        text: "Photographer:",
+        speaker: "Photographer",
+        text: "Can you set up the light stand on the left and attach the softbox? I want soft, even light on the backdrop.",
       },
       {
-        speaker:
-          "Can you set up the light stand on the left and attach the softbox? I want soft, even light on the backdrop.",
-        text: "Assistant:",
+        speaker: "Assistant",
+        text: "Done. Should I also set up the reflector on the right to fill in the shadows?",
       },
       {
-        speaker: "Done. Should I also set up the reflector on the right to fill in the shadows?",
-        text: "Photographer:",
+        speaker: "Photographer",
+        text: "Yes — the silver side. And put a diffuser on the strobe to soften it. I don't want harsh highlights.",
       },
       {
-        speaker:
-          "Yes — the silver side. And put a diffuser on the strobe to soften it. I don't want harsh highlights.",
-        text: "Assistant:",
+        speaker: "Assistant",
+        text: "Which lens are you using? The telephoto lens or the wide-angle?",
       },
       {
-        speaker: "Which lens are you using? The telephoto lens or the wide-angle?",
-        text: "Photographer:",
+        speaker: "Photographer",
+        text: "The telephoto for the headshots. Switch to the wide-angle lens later for the full-body shots. Make sure the tripod is stable.",
       },
       {
-        speaker:
-          "The telephoto for the headshots. Switch to the wide-angle lens later for the full-body shots. Make sure the tripod is stable.",
-        text: "Assistant:",
+        speaker: "Assistant",
+        text: "The memory card is almost full. Do you have a spare in the camera bag?",
       },
       {
-        speaker: "The memory card is almost full. Do you have a spare in the camera bag?",
-        text: "Photographer:",
+        speaker: "Photographer",
+        text: "There's one in the side pocket. And check the ring light — I want it on for the close-ups. It gives a nice catchlight in the eyes.",
       },
       {
-        speaker:
-          "There's one in the side pocket. And check the ring light — I want it on for the close-ups. It gives a nice catchlight in the eyes.",
-        text: "Assistant:",
+        speaker: "Assistant",
+        text: "The background paper is wrinkled. Should I clamp it tighter?",
       },
       {
-        speaker: "The background paper is wrinkled. Should I clamp it tighter?",
-        text: "Photographer:",
+        speaker: "Photographer",
+        text: "Use the clamp and a sandbag at the base. And tape the extension cord down with gaffer tape — I nearly tripped on it earlier.",
       },
       {
-        speaker:
-          "Use the clamp and a sandbag at the base. And tape the extension cord down with gaffer tape — I nearly tripped on it earlier.",
-        text: "Assistant:",
+        speaker: "Assistant",
+        text: "The makeup station is ready. The wardrobe rack has three outfits.",
       },
       {
-        speaker: "The makeup station is ready. The wardrobe rack has three outfits.",
-        text: "Photographer:",
+        speaker: "Photographer",
+        text: "Perfect. Let's start. I'll frame the first shot through the viewfinder. Hit the shutter button when I say 'go.'",
       },
     ],
   },

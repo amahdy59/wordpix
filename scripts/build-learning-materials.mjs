@@ -177,16 +177,59 @@ function parsePhrases(block, unitId) {
   return entries.length ? entries : undefined;
 }
 
+/** A line that is only a speaker label: "Mom:", "Technician:". */
+const SPEAKER_LABEL = /^([A-Z][A-Za-z .'-]{0,18}):$/;
+
+/**
+ * Turns a flattened dialogue block back into speaker/line pairs.
+ *
+ * This used to pair blindly from index 1 — `lines[i]` speaker, `lines[i + 1]`
+ * text, stepping two. That holds only when the header is immediately followed
+ * by the first speaker. Most units print a stage direction first:
+ *
+ *   0  🗣️ Mini Dialogue
+ *   1  Scene: A lab technician helping a student set up a 3D print
+ *   2  Technician:
+ *   3  First, open your design in the 3D software…
+ *
+ * which shifted every pair by one, so the scene became a speaker, each spoken
+ * line became a speaker, and each speaker label became the spoken text. 91 of
+ * 196 units shipped that way — 923 dialogue lines rendering as a bubble
+ * reading "Technician:" with nothing said.
+ *
+ * Anchoring on the speaker label instead of on position makes the layout
+ * irrelevant: any preamble is skipped, and a missing or duplicated line
+ * desynchronises nothing.
+ */
 function parseDialogue(block) {
   const lines = textsOf(block);
   if (!lines.length) return undefined;
   const title = stripLeadingEmoji(lines[0]).replace(/^mini dialogue\s*[—-]\s*/i, "").trim();
+
+  let scene;
   const dialogue = [];
-  for (let i = 1; i + 1 < lines.length; i += 2) {
-    const speaker = lines[i].replace(/:$/, "").trim();
-    dialogue.push({ speaker, text: lines[i + 1] });
+  for (let i = 1; i < lines.length; i += 1) {
+    const sceneMatch = /^Scene:\s*(.+)$/i.exec(lines[i]);
+    if (sceneMatch && !scene) {
+      scene = sceneMatch[1].trim();
+      continue;
+    }
+    const speaker = SPEAKER_LABEL.exec(lines[i]);
+    if (!speaker) continue;
+    const text = lines[i + 1];
+    // A trailing speaker with nothing after it is dropped rather than emitted
+    // with empty text.
+    if (!text || SPEAKER_LABEL.test(text)) continue;
+    dialogue.push({ speaker: speaker[1].trim(), text: text.trim() });
+    i += 1;
   }
-  return dialogue.length ? { title: title || "Mini Dialogue", lines: dialogue } : undefined;
+
+  if (!dialogue.length) return undefined;
+  return {
+    title: title || "Mini Dialogue",
+    ...(scene ? { scene } : {}),
+    lines: dialogue,
+  };
 }
 
 /** Both ✗/✓ and ❌/✅ appear in the file; accept either marker. */
@@ -513,10 +556,17 @@ if (!CHECK) {
 if (!CHECK && generated.length) {
   const targets = generated.map((g) => join(OUT_DIR, `${g.unitId}.ts`));
   try {
-    await execFileAsync("npx", ["prettier", "--write", "--log-level", "warn", REGISTRY, ...targets], {
-      cwd: ROOT,
-      maxBuffer: 32 * 1024 * 1024,
-    });
+    // Run prettier's own script with the current node binary rather than going
+    // through npx. execFile does not use a shell, so "npx" is ENOENT on
+    // Windows and "npx.cmd" is EINVAL (node refuses to spawn .cmd unshelled).
+    // Either way the failure only warned — so a Windows run silently emitted
+    // 195 unformatted modules that still typechecked and still committed.
+    const prettierBin = join(ROOT, "node_modules", "prettier", "bin", "prettier.cjs");
+    await execFileAsync(
+      process.execPath,
+      [prettierBin, "--write", "--log-level", "warn", REGISTRY, ...targets],
+      { cwd: ROOT, maxBuffer: 32 * 1024 * 1024 }
+    );
   } catch (err) {
     console.warn(`Could not format generated files: ${err.message}`);
   }

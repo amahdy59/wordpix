@@ -186,66 +186,11 @@ export const WEDDING_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "Two friends discuss wedding preparations a week before the ceremony",
     lines: [
       {
-        speaker: "Scene: Two friends discuss wedding preparations a week before the ceremony",
-        text: "Friend 1:",
-      },
-      {
-        speaker: "The wedding is next Saturday! Have you finished writing your vows?",
-        text: "Friend 2:",
-      },
-      {
-        speaker:
-          "Almost. The officiant wants to review them before the ceremony. Have the rings arrived?",
-        text: "Friend 1:",
-      },
-      {
-        speaker:
-          "Yes — they're beautiful. The groomsman is keeping them safe until the ceremony at the altar.",
-        text: "Friend 2:",
-      },
-      {
-        speaker: "What about the reception? Is the band confirmed?",
-        text: "Friend 1:",
-      },
-      {
-        speaker:
-          "The band is set. The dance floor is ready, the centerpiece for each table setting looks stunning, and the photo booth is installed.",
-        text: "Friend 2:",
-      },
-      {
-        speaker: "And the cake? Last time we spoke, you hadn't decided on the design.",
-        text: "Friend 1:",
-      },
-      {
-        speaker:
-          "Three tiers with white roses. The cake topper matches the bouquet and the boutonniere. We also ordered sparklers for the exit.",
-        text: "Friend 2:",
-      },
-      {
-        speaker:
-          "What's the flower girl wearing? And does she know what to do walking down the aisle?",
-        text: "Friend 1:",
-      },
-      {
-        speaker:
-          "She's been practising all week — scattering petals before the bride. The bridesmaid will guide her.",
-        text: "Friend 2:",
-      },
-      {
-        speaker: "Who's giving the toast?",
-        text: "Friend 1:",
-      },
-      {
-        speaker:
-          "The best man. He's been rehearsing — something about the first dance and how the groom had cold feet before proposing.",
-        text: "Friend 2:",
-      },
-      {
-        speaker:
-          "It's going to be perfect. I can already picture the recessional and the blessing. Don't forget the tuxedo fitting tomorrow!",
-        text: "Ali:",
+        speaker: "Ali",
+        text: "Definitely. I wouldn't miss it!",
       },
     ],
   },

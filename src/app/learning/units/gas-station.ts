@@ -186,61 +186,55 @@ export const GAS_STATION_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A driver pulls into a full-service gas station for the first time",
     lines: [
       {
-        speaker: "Scene: A driver pulls into a full-service gas station for the first time",
-        text: "Driver:",
+        speaker: "Driver",
+        text: "Hi, I need to fill up. Is this a self-service station or full-service?",
       },
       {
-        speaker: "Hi, I need to fill up. Is this a self-service station or full-service?",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "Full-service! Just pop the fuel cap and I'll handle the nozzle. Unleaded or diesel?",
       },
       {
-        speaker:
-          "Full-service! Just pop the fuel cap and I'll handle the nozzle. Unleaded or diesel?",
-        text: "Driver:",
+        speaker: "Driver",
+        text: "Unleaded, please. And can you check the tire pressure while you're at it?",
       },
       {
-        speaker: "Unleaded, please. And can you check the tire pressure while you're at it?",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "Sure. The air pump is right behind the gas pump. I'll use the pressure gauge — what PSI do you need?",
       },
       {
-        speaker:
-          "Sure. The air pump is right behind the gas pump. I'll use the pressure gauge — what PSI do you need?",
-        text: "Driver:",
+        speaker: "Driver",
+        text: "32 PSI all around. Also, my windshield is filthy. Is there a squeegee somewhere?",
       },
       {
-        speaker: "32 PSI all around. Also, my windshield is filthy. Is there a squeegee somewhere?",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "I'll clean it for you. There's washer fluid in the bucket by the pump. Want me to check under the hood too?",
       },
       {
-        speaker:
-          "I'll clean it for you. There's washer fluid in the bucket by the pump. Want me to check under the hood too?",
-        text: "Driver:",
+        speaker: "Driver",
+        text: "Please. The oil dipstick and the engine coolant — I haven't checked them in weeks.",
       },
       {
-        speaker:
-          "Please. The oil dipstick and the engine coolant — I haven't checked them in weeks.",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "Oil looks fine. Coolant is a bit low — I'll top it off. The fuel gauge says your tank is almost full now.",
       },
       {
-        speaker:
-          "Oil looks fine. Coolant is a bit low — I'll top it off. The fuel gauge says your tank is almost full now.",
-        text: "Driver:",
+        speaker: "Driver",
+        text: "Perfect. How much do I owe? Can I pay at the register inside the convenience store?",
       },
       {
-        speaker:
-          "Perfect. How much do I owe? Can I pay at the register inside the convenience store?",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "You can pay here or inside. Cash or card — the receipt prints automatically.",
       },
       {
-        speaker: "You can pay here or inside. Cash or card — the receipt prints automatically.",
-        text: "Driver:",
+        speaker: "Driver",
+        text: "I'll pay here. And I'll grab a coffee from the convenience store before I head out. Thanks for the help!",
       },
       {
-        speaker:
-          "I'll pay here. And I'll grab a coffee from the convenience store before I head out. Thanks for the help!",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "Yes, the automatic car wash is behind the building. Tokens are £8 from this counter.",
       },
     ],
   },

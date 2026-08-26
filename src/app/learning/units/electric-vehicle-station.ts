@@ -186,56 +186,51 @@ export const ELECTRIC_VEHICLE_STATION_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A first-time EV owner visits a charging station and asks an attendant for help",
     lines: [
       {
-        speaker:
-          "Scene: A first-time EV owner visits a charging station and asks an attendant for help",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "Hi, this is my first time charging. I have no idea what to do.",
       },
       {
-        speaker: "Hi, this is my first time charging. I have no idea what to do.",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "No problem! First, park in the parking spot under the canopy. Open your charging port — it's usually near the fuel cap area.",
       },
       {
-        speaker:
-          "No problem! First, park in the parking spot under the canopy. Open your charging port — it's usually near the fuel cap area.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "Which charger do I use? There are so many types.",
       },
       {
-        speaker: "Which charger do I use? There are so many types.",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "Your car supports Level 2 and DC fast charger. The DC fast charger is much quicker — about thirty minutes to eighty percent. The connector is the large plug on the right.",
       },
       {
-        speaker:
-          "Your car supports Level 2 and DC fast charger. The DC fast charger is much quicker — about thirty minutes to eighty percent. The connector is the large plug on the right.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "How do I start the session?",
       },
       {
-        speaker: "How do I start the session?",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "Tap your RFID card on the payment terminal, or scan the QR code with the mobile app. Then connect the cable to the adapter on your car.",
       },
       {
-        speaker:
-          "Tap your RFID card on the payment terminal, or scan the QR code with the mobile app. Then connect the cable to the adapter on your car.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "What's happening inside the car while it charges?",
       },
       {
-        speaker: "What's happening inside the car while it charges?",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "The onboard charger converts the power. The BMS monitors each cell in the battery pack, and the thermal management system keeps everything cool. The inverter handles the conversion.",
       },
       {
-        speaker:
-          "The onboard charger converts the power. The BMS monitors each cell in the battery pack, and the thermal management system keeps everything cool. The inverter handles the conversion.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "Is it safe to sit inside while charging?",
       },
       {
-        speaker: "Is it safe to sit inside while charging?",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "Absolutely. You can wait on the bench too. The signage shows the estimated time, and the mobile app sends a notification when it's done.",
       },
       {
-        speaker:
-          "Absolutely. You can wait on the bench too. The signage shows the estimated time, and the mobile app sends a notification when it's done.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "What about the solar panel on the canopy? Does that help?",
       },
     ],
   },

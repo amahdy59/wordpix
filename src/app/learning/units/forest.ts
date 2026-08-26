@@ -186,56 +186,31 @@ export const FOREST_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A park ranger leads a group of visitors on a guided nature walk through the forest",
     lines: [
       {
-        speaker:
-          "Scene: A park ranger leads a group of visitors on a guided nature walk through the forest",
-        text: "Ranger:",
+        speaker: "Ranger",
+        text: "Welcome to the old-growth forest. These oak and maple trees are over a hundred years old. Watch your step — the moss can be slippery.",
       },
       {
-        speaker:
-          "Welcome to the old-growth forest. These oak and maple trees are over a hundred years old. Watch your step — the moss can be slippery.",
-        text: "Visitor 1:",
+        speaker: "Ranger",
+        text: "That's a redwood. Next to it is a cedar, and the white-barked one is a birch. Each species plays a different role in the ecosystem.",
       },
       {
-        speaker: "What's that tall tree with the reddish bark?",
-        text: "Ranger:",
+        speaker: "Ranger",
+        text: "Never eat wild mushrooms unless you're an expert. See the lichen and fern growing alongside? They prefer the same damp conditions.",
       },
       {
-        speaker:
-          "That's a redwood. Next to it is a cedar, and the white-barked one is a birch. Each species plays a different role in the ecosystem.",
-        text: "Visitor 2:",
+        speaker: "Ranger",
+        text: "Squirrels bury acorns and pinecones for winter. You might also spot a fox or a raccoon near the berry bush over there.",
       },
       {
-        speaker: "I see mushrooms growing on that fallen elm. Are they safe to eat?",
-        text: "Ranger:",
+        speaker: "Ranger",
+        text: "Yes! It's on the beech tree. If we're quiet, we might see an owl or a hedgehog. Fireflies come out at dusk too.",
       },
       {
-        speaker:
-          "Never eat wild mushrooms unless you're an expert. See the lichen and fern growing alongside? They prefer the same damp conditions.",
-        text: "Visitor 1:",
-      },
-      {
-        speaker: "Look — a squirrel just ran up the pine! And there's an acorn on the ground.",
-        text: "Ranger:",
-      },
-      {
-        speaker:
-          "Squirrels bury acorns and pinecones for winter. You might also spot a fox or a raccoon near the berry bush over there.",
-        text: "Visitor 2:",
-      },
-      {
-        speaker: "I hear tapping — is that a woodpecker?",
-        text: "Ranger:",
-      },
-      {
-        speaker:
-          "Yes! It's on the beech tree. If we're quiet, we might see an owl or a hedgehog. Fireflies come out at dusk too.",
-        text: "Visitor 1:",
-      },
-      {
-        speaker: "The ivy and vine are so thick here. Does that harm the trees?",
-        text: "Ranger:",
+        speaker: "Ranger",
+        text: "It can. Too much ivy chokes the willow and spruce. We clear it to let the wildflowers and young saplings get sunlight.",
       },
     ],
   },

@@ -221,51 +221,47 @@ export const AMUSEMENT_PARK_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A family spends a day at the amusement park",
     lines: [
       {
-        speaker: "Scene: A family spends a day at the amusement park",
-        text: "Dad:",
+        speaker: "Dad",
+        text: "We're here! What do you want to ride first — the roller coaster or the Ferris wheel?",
       },
       {
-        speaker:
-          "We're here! What do you want to ride first — the roller coaster or the Ferris wheel?",
-        text: "Son:",
+        speaker: "Son",
+        text: "The roller coaster! Then the drop tower and the spinning ride!",
       },
       {
-        speaker: "The roller coaster! Then the drop tower and the spinning ride!",
-        text: "Daughter:",
+        speaker: "Daughter",
+        text: "I want the water slide and the log flume first. Then the pirate ship!",
       },
       {
-        speaker: "I want the water slide and the log flume first. Then the pirate ship!",
-        text: "Mom:",
+        speaker: "Mom",
+        text: "Let's start together on the carousel. Then you two can try the loop ride and the launch coaster.",
       },
       {
-        speaker:
-          "Let's start together on the carousel. Then you two can try the loop ride and the launch coaster.",
-        text: "Son:",
+        speaker: "Son",
+        text: "Can we do the bumper cars and the go-karts after? The pendulum ride looks amazing too!",
       },
       {
-        speaker:
-          "Can we do the bumper cars and the go-karts after? The pendulum ride looks amazing too!",
-        text: "Dad:",
+        speaker: "Dad",
+        text: "Sure. Your sister can try the tea cups, the flying swings, and the boat ride. The train ride and the monorail go around the whole park.",
       },
       {
-        speaker:
-          "Sure. Your sister can try the tea cups, the flying swings, and the boat ride. The train ride and the monorail go around the whole park.",
-        text: "Daughter:",
+        speaker: "Daughter",
+        text: "I want to see the haunted house and the fun house! Are they scary?",
       },
       {
-        speaker: "I want to see the haunted house and the fun house! Are they scary?",
-        text: "Mom:",
+        speaker: "Mom",
+        text: "A little — but you'll be fine. After that, let's play some games. The ring toss and the balloon dart are fun.",
       },
       {
-        speaker:
-          "A little — but you'll be fine. After that, let's play some games. The ring toss and the balloon dart are fun.",
-        text: "Son:",
+        speaker: "Son",
+        text: "I want to try the basketball throw and the whack-a-mole! And the strength test!",
       },
       {
-        speaker: "I want to try the basketball throw and the whack-a-mole! And the strength test!",
-        text: "Dad:",
+        speaker: "Dad",
+        text: "Don't forget the water gun game and the claw machine. The prize booth has a stuffed animal and a giant teddy bear.",
       },
     ],
   },

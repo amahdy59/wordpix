@@ -209,64 +209,59 @@ export const SOLAR_FARM_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "An engineer giving a journalist a tour of a newly opened solar farm",
     lines: [
       {
-        speaker: "Scene: An engineer giving a journalist a tour of a newly opened solar farm",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "How many solar panels does this farm have?",
       },
       {
-        speaker: "How many solar panels does this farm have?",
-        text: "Engineer:",
+        speaker: "Engineer",
+        text: "Over twelve thousand. Each one sits on a mounting frame that tilts — the tracker adjusts the angle to follow the sun throughout the day.",
       },
       {
-        speaker:
-          "Over twelve thousand. Each one sits on a mounting frame that tilts — the tracker adjusts the angle to follow the sun throughout the day.",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "What happens when the sun goes down?",
       },
       {
-        speaker: "What happens when the sun goes down?",
-        text: "Engineer:",
+        speaker: "Engineer",
+        text: "The battery storage units take over. During the day, excess energy charges the batteries through the charge controller. At night, they supply the grid.",
       },
       {
-        speaker:
-          "The battery storage units take over. During the day, excess energy charges the batteries through the charge controller. At night, they supply the grid.",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "What's that building behind the security fence?",
       },
       {
-        speaker: "What's that building behind the security fence?",
-        text: "Engineer:",
+        speaker: "Engineer",
+        text: "The control room. We monitor output, weather conditions from the weather station, and security cameras from there. The substation is next to it.",
       },
       {
-        speaker:
-          "The control room. We monitor output, weather conditions from the weather station, and security cameras from there. The substation is next to it.",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "How does the electricity reach people's homes?",
       },
       {
-        speaker: "How does the electricity reach people's homes?",
-        text: "Engineer:",
+        speaker: "Engineer",
+        text: "From the solar panel through the junction box and the combiner box to the inverter, which converts DC to AC. Then the transformer steps up the voltage for the grid connection.",
       },
       {
-        speaker:
-          "From the solar panel through the junction box and the combiner box to the inverter, which converts DC to AC. Then the transformer steps up the voltage for the grid connection.",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "What tools do your technicians use in the field?",
       },
       {
-        speaker: "What tools do your technicians use in the field?",
-        text: "Engineer:",
+        speaker: "Engineer",
+        text: "A multimeter for testing, a drill and a wrench for mounting, a wire cutter and a crimping tool for connections. Cable ties and conduit keep everything tidy.",
       },
       {
-        speaker:
-          "A multimeter for testing, a drill and a wrench for mounting, a wire cutter and a crimping tool for connections. Cable ties and conduit keep everything tidy.",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "What about lightning?",
       },
       {
-        speaker: "What about lightning?",
-        text: "Engineer:",
+        speaker: "Engineer",
+        text: "The lightning rod and the ground rod protect the entire farm. Each row has a cable tray running along the access road for organised wiring.",
       },
       {
-        speaker:
-          "The lightning rod and the ground rod protect the entire farm. Each row has a cable tray running along the access road for organised wiring.",
-        text: "Engineer:",
+        speaker: "Engineer",
+        text: "In many regions, yes. The cost of solar has dropped by over ninety percent in the last decade.",
       },
     ],
   },

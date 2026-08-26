@@ -245,61 +245,55 @@ export const SPA_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A first-time visitor asks the spa receptionist about available treatments",
     lines: [
       {
-        speaker: "Scene: A first-time visitor asks the spa receptionist about available treatments",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "Hi, I've never been to a spa before. What do you recommend for someone who's really stressed?",
       },
       {
-        speaker:
-          "Hi, I've never been to a spa before. What do you recommend for someone who's really stressed?",
-        text: "Receptionist:",
+        speaker: "Receptionist",
+        text: "I'd start with a Swedish massage — it's gentle and relaxing. Or if you prefer something stronger, try a deep tissue massage.",
       },
       {
-        speaker:
-          "I'd start with a Swedish massage — it's gentle and relaxing. Or if you prefer something stronger, try a deep tissue massage.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "What's the difference between those and a hot stone massage?",
       },
       {
-        speaker: "What's the difference between those and a hot stone massage?",
-        text: "Receptionist:",
+        speaker: "Receptionist",
+        text: "Hot stone therapy uses heated stones on your back and shoulders to release deep tension. It's very popular with first-timers.",
       },
       {
-        speaker:
-          "Hot stone therapy uses heated stones on your back and shoulders to release deep tension. It's very popular with first-timers.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "I'd love something for my face too. Do you have facials?",
       },
       {
-        speaker: "I'd love something for my face too. Do you have facials?",
-        text: "Receptionist:",
+        speaker: "Receptionist",
+        text: "Absolutely. We have a classic facial with a clay mask, a facial steamer, and cucumber slices. Or try our LED light therapy for skin renewal.",
       },
       {
-        speaker:
-          "Absolutely. We have a classic facial with a clay mask, a facial steamer, and cucumber slices. Or try our LED light therapy for skin renewal.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "What about hands and feet?",
       },
       {
-        speaker: "What about hands and feet?",
-        text: "Receptionist:",
+        speaker: "Receptionist",
+        text: "A manicure and pedicure package is lovely. We also offer a foot soak and a paraffin wax treatment to soften your skin.",
       },
       {
-        speaker:
-          "A manicure and pedicure package is lovely. We also offer a foot soak and a paraffin wax treatment to soften your skin.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "Do you have a sauna or a steam room?",
       },
       {
-        speaker: "Do you have a sauna or a steam room?",
-        text: "Receptionist:",
+        speaker: "Receptionist",
+        text: "Both! The sauna is dry heat, and the steam room is moist heat. We also have a mineral bath and a flotation tank for total relaxation.",
       },
       {
-        speaker:
-          "Both! The sauna is dry heat, and the steam room is moist heat. We also have a mineral bath and a flotation tank for total relaxation.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "This all sounds amazing. Can I book the hot stone massage, the facial, and some time in the sauna?",
       },
       {
-        speaker:
-          "This all sounds amazing. Can I book the hot stone massage, the facial, and some time in the sauna?",
-        text: "Receptionist:",
+        speaker: "Receptionist",
+        text: "Perfect combination. I'll schedule a body scrub before the massage — the exfoliation makes the treatment even more effective.",
       },
     ],
   },

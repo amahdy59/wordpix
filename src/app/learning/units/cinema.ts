@@ -105,51 +105,51 @@ export const CINEMA_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "Buying tickets at the cinema box office",
     lines: [
       {
-        speaker: "Scene: Buying tickets at the cinema box office",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Two tickets for the seven o'clock showing of Galaxy Quest, please.",
       },
       {
-        speaker: "Two tickets for the seven o'clock showing of Galaxy Quest, please.",
-        text: "Cashier:",
+        speaker: "Cashier",
+        text: "Standard or premium?",
       },
       {
-        speaker: "Standard or premium?",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "What's the difference?",
       },
       {
-        speaker: "What's the difference?",
-        text: "Cashier:",
+        speaker: "Cashier",
+        text: "Premium seats are in the middle with extra legroom. They're fourteen pounds each. Standard is nine.",
       },
       {
-        speaker:
-          "Premium seats are in the middle with extra legroom. They're fourteen pounds each. Standard is nine.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Standard is fine, thanks.",
       },
       {
-        speaker: "Standard is fine, thanks.",
-        text: "Cashier:",
+        speaker: "Cashier",
+        text: "That's eighteen pounds altogether. Cash or card?",
       },
       {
-        speaker: "That's eighteen pounds altogether. Cash or card?",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Card, please. Which screen is it?",
       },
       {
-        speaker: "Card, please. Which screen is it?",
-        text: "Cashier:",
+        speaker: "Cashier",
+        text: "Screen 4, first floor. Go up the stairs and turn right.",
       },
       {
-        speaker: "Screen 4, first floor. Go up the stairs and turn right.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "What time do the trailers start?",
       },
       {
-        speaker: "What time do the trailers start?",
-        text: "Cashier:",
+        speaker: "Cashier",
+        text: "Trailers begin at ten to seven. The main feature starts at seven fifteen.",
       },
       {
-        speaker: "Trailers begin at ten to seven. The main feature starts at seven fifteen.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Great, thank you!",
       },
     ],
   },

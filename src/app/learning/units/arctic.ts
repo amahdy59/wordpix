@@ -205,61 +205,55 @@ export const ARCTIC_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A researcher briefing a new team member at an Arctic research station near a glacier",
     lines: [
       {
-        speaker:
-          "Scene: A researcher briefing a new team member at an Arctic research station near a glacier",
-        text: "Researcher:",
+        speaker: "Researcher",
+        text: "Welcome to the station. First rule: never go near the glacier alone. Crevasses can be hidden under fresh snow.",
       },
       {
-        speaker:
-          "Welcome to the station. First rule: never go near the glacier alone. Crevasses can be hidden under fresh snow.",
-        text: "New member:",
+        speaker: "New member",
+        text: "Understood. What's our main research focus this season?",
       },
       {
-        speaker: "Understood. What's our main research focus this season?",
-        text: "Researcher:",
+        speaker: "Researcher",
+        text: "Polar bear migration patterns. The pack ice is breaking up earlier each year, which affects their hunting range.",
       },
       {
-        speaker:
-          "Polar bear migration patterns. The pack ice is breaking up earlier each year, which affects their hunting range.",
-        text: "New member:",
+        speaker: "New member",
+        text: "I read that Arctic foxes change colour with the season. Have you seen that here?",
       },
       {
-        speaker: "I read that Arctic foxes change colour with the season. Have you seen that here?",
-        text: "Researcher:",
+        speaker: "Researcher",
+        text: "Every year. White in winter to blend with the snowfield, brown in summer to match the tundra. Perfect camouflage.",
       },
       {
-        speaker:
-          "Every year. White in winter to blend with the snowfield, brown in summer to match the tundra. Perfect camouflage.",
-        text: "New member:",
+        speaker: "New member",
+        text: "What about the narwhals? I'd love to see one near the fjord.",
       },
       {
-        speaker: "What about the narwhals? I'd love to see one near the fjord.",
-        text: "Researcher:",
+        speaker: "Researcher",
+        text: "We spotted a pod last week near the coastline. They tend to surface where the ice sheet meets open water.",
       },
       {
-        speaker:
-          "We spotted a pod last week near the coastline. They tend to surface where the ice sheet meets open water.",
-        text: "New member:",
+        speaker: "New member",
+        text: "It's incredible how cold it is. My mittens and parka barely feel like enough.",
       },
       {
-        speaker: "It's incredible how cold it is. My mittens and parka barely feel like enough.",
-        text: "Researcher:",
+        speaker: "Researcher",
+        text: "You'll adjust. The frost never really stops, but the layers help. And don't forget your snow boots — the slush near the frozen lake will soak through anything else.",
       },
       {
-        speaker:
-          "You'll adjust. The frost never really stops, but the layers help. And don't forget your snow boots — the slush near the frozen lake will soak through anything else.",
-        text: "New member:",
+        speaker: "New member",
+        text: "What's that bird on the cliff? The one with the colourful beak?",
       },
       {
-        speaker: "What's that bird on the cliff? The one with the colourful beak?",
-        text: "Researcher:",
+        speaker: "Researcher",
+        text: "A puffin. They nest on the cliffs above the bay. And look — a snowy owl on that icicle-covered ledge. Welcome to the Arctic.",
       },
       {
-        speaker:
-          "A puffin. They nest on the cliffs above the bay. And look — a snowy owl on that icicle-covered ledge. Welcome to the Arctic.",
-        text: "Resch:",
+        speaker: "Resch",
+        text: "It does. Polar bears depend on sea ice to hunt seals. Less ice means less food.",
       },
     ],
   },

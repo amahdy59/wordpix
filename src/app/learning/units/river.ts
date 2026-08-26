@@ -184,61 +184,6 @@ export const RIVER_LEARNING: UnitLearningMaterials = {
         "The beaver dam made waves downstream, flooding the bank where the heron and the otter usually hunted.",
     },
   ],
-  dialogue: {
-    title: "Mini Dialogue",
-    lines: [
-      {
-        speaker: "Scene: Two friends prepare for a kayaking trip down a river",
-        text: "Friend 1:",
-      },
-      {
-        speaker: "The current looks strong today. Should we take the kayak or the canoe?",
-        text: "Friend 2:",
-      },
-      {
-        speaker:
-          "Kayak for sure — it handles the rapids better. The canoe is safer for the calm pool sections.",
-        text: "Friend 1:",
-      },
-      {
-        speaker: "Look at that waterfall upstream! The water feeds into the tributary on the left.",
-        text: "Friend 2:",
-      },
-      {
-        speaker:
-          "Beautiful. See the heron standing on the bank? And there's an otter diving near the reed bed.",
-        text: "Friend 1:",
-      },
-      {
-        speaker: "What's that on the lily pad? A frog?",
-        text: "Friend 2:",
-      },
-      {
-        speaker:
-          "Yes — and a dragonfly just landed on the cattail. The duckweed near the bed means the water is clean.",
-        text: "Friend 1:",
-      },
-      {
-        speaker: "Careful at the bend — the current speeds up. Hold onto your paddle.",
-        text: "Friend 2:",
-      },
-      {
-        speaker:
-          "I see the rapids ahead. There's a beaver dam near the far bank. Let's steer right.",
-        text: "Friend 1:",
-      },
-      {
-        speaker:
-          "We made it! That pool below the rapids is calm. Want to stop and fish for salmon?",
-        text: "Friend 2:",
-      },
-      {
-        speaker:
-          "Sure. There's a turtle on that rock, and I can see crayfish near the algae. Let's anchor the raft by the willow.",
-        text: "Friend 1:",
-      },
-    ],
-  },
   mistakes: [
     {
       id: "river-the-river-is-deeper-near-the-bend-than-i",

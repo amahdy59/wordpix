@@ -188,62 +188,56 @@ export const LAUNDROMAT_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene:
+      "A university student visits a laundromat for the first time and asks a regular for help",
     lines: [
       {
-        speaker:
-          "Scene: A university student visits a laundromat for the first time and asks a regular for help",
-        text: "Student:",
+        speaker: "Student",
+        text: "Excuse me — I've never used one of these before. How do I start the washing machine?",
       },
       {
-        speaker:
-          "Excuse me — I've never used one of these before. How do I start the washing machine?",
-        text: "Regular:",
+        speaker: "Regular",
+        text: "First, sort your clothes — darks, whites, delicates. Then load them into the drum. Don't overfill it.",
       },
       {
-        speaker:
-          "First, sort your clothes — darks, whites, delicates. Then load them into the drum. Don't overfill it.",
-        text: "Student:",
+        speaker: "Student",
+        text: "Got it. Where do I put the laundry detergent?",
       },
       {
-        speaker: "Got it. Where do I put the laundry detergent?",
-        text: "Regular:",
+        speaker: "Regular",
+        text: "In the detergent dispenser on top. You can add fabric softener in the second slot. Skip the bleach unless you're doing whites.",
       },
       {
-        speaker:
-          "In the detergent dispenser on top. You can add fabric softener in the second slot. Skip the bleach unless you're doing whites.",
-        text: "Student:",
+        speaker: "Student",
+        text: "How do I pay? I don't see a card reader.",
       },
       {
-        speaker: "How do I pay? I don't see a card reader.",
-        text: "Regular:",
+        speaker: "Regular",
+        text: "It's coin-operated — you need quarters for the coin slot. There's a change machine by the folding table.",
       },
       {
-        speaker:
-          "It's coin-operated — you need quarters for the coin slot. There's a change machine by the folding table.",
-        text: "Student:",
+        speaker: "Student",
+        text: "Which cycle should I choose? There are so many settings on the dial.",
       },
       {
-        speaker: "Which cycle should I choose? There are so many settings on the dial.",
-        text: "Regular:",
+        speaker: "Regular",
+        text: "For everyday clothes, use the normal cycle. Delicates need a gentle wash. Set the water temperature to warm — cold for darks.",
       },
       {
-        speaker:
-          "For everyday clothes, use the normal cycle. Delicates need a gentle wash. Set the water temperature to warm — cold for darks.",
-        text: "Student:",
+        speaker: "Student",
+        text: "The machine is done. Now what — straight into the dryer?",
       },
       {
-        speaker: "The machine is done. Now what — straight into the dryer?",
-        text: "Regular:",
+        speaker: "Regular",
+        text: "Check the lint trap first — clean it out or your clothes won't dry properly. Then choose medium heat and set the timer.",
       },
       {
-        speaker:
-          "Check the lint trap first — clean it out or your clothes won't dry properly. Then choose medium heat and set the timer.",
-        text: "Student:",
+        speaker: "Student",
+        text: "Thanks! While these dry, I'll fold the first load. Is there an ironing board here too?",
       },
       {
-        speaker:
-          "Thanks! While these dry, I'll fold the first load. Is there an ironing board here too?",
-        text: "Regular:",
+        speaker: "Regular",
+        text: "The dryers are over there. Twenty minutes should be enough for a normal load. Check your labels first — some things shouldn't go in the dryer.",
       },
     ],
   },

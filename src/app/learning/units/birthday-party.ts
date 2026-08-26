@@ -184,63 +184,59 @@ export const BIRTHDAY_PARTY_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A parent and child plan a birthday party together",
     lines: [
       {
-        speaker: "Scene: A parent and child plan a birthday party together",
-        text: "Child:",
+        speaker: "Child",
+        text: "Can we have balloons and a banner for my party? And streamers too!",
       },
       {
-        speaker: "Can we have balloons and a banner for my party? And streamers too!",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "Of course! I'll get balloons, a banner, and confetti. What about a tablecloth and some bunting for the garden?",
       },
       {
-        speaker:
-          "Of course! I'll get balloons, a banner, and confetti. What about a tablecloth and some bunting for the garden?",
-        text: "Child:",
+        speaker: "Child",
+        text: "Yes! And a piñata! Can we fill it with candy and fruit?",
       },
       {
-        speaker: "Yes! And a piñata! Can we fill it with candy and fruit?",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "Great idea. What games do you want? Musical chairs? Pin the tail?",
       },
       {
-        speaker: "Great idea. What games do you want? Musical chairs? Pin the tail?",
-        text: "Child:",
+        speaker: "Child",
+        text: "Both! And a treasure hunt in the garden. Oh, and face painting — I want to be a tiger!",
       },
       {
-        speaker:
-          "Both! And a treasure hunt in the garden. Oh, and face painting — I want to be a tiger!",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "We can do that. What about food? Pizza, cupcakes, and ice cream?",
       },
       {
-        speaker: "We can do that. What about food? Pizza, cupcakes, and ice cream?",
-        text: "Child:",
+        speaker: "Child",
+        text: "Yes! And popcorn and chips. And juice boxes and lemonade for everyone.",
       },
       {
-        speaker: "Yes! And popcorn and chips. And juice boxes and lemonade for everyone.",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "What kind of cake do you want? Chocolate or vanilla?",
       },
       {
-        speaker: "What kind of cake do you want? Chocolate or vanilla?",
-        text: "Child:",
+        speaker: "Child",
+        text: "Chocolate with sprinkles! And seven candles. I want to make a wish and blow them all out at once.",
       },
       {
-        speaker:
-          "Chocolate with sprinkles! And seven candles. I want to make a wish and blow them all out at once.",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "Sounds perfect. We need to wrap the presents too — I have wrapping paper, bows, and gift bags. Should we do balloon animals or karaoke?",
       },
       {
-        speaker:
-          "Sounds perfect. We need to wrap the presents too — I have wrapping paper, bows, and gift bags. Should we do balloon animals or karaoke?",
-        text: "Child:",
+        speaker: "Child",
+        text: "Both! And can we play tag and limbo and have a relay race? This is going to be the best party ever!",
       },
       {
-        speaker:
-          "Both! And can we play tag and limbo and have a relay race? This is going to be the best party ever!",
-        text: "Friend:",
+        speaker: "Friend",
+        text: "Sounds like a great party. Do you need help setting up?",
       },
       {
-        speaker: "Sounds like a great party. Do you need help setting up?",
-        text: "Father:",
+        speaker: "Father",
+        text: "That would be brilliant, actually. Come over about 1 o'clock?",
       },
     ],
   },

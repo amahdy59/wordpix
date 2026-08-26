@@ -208,63 +208,6 @@ export const ROBOTICS_LAB_LEARNING: UnitLearningMaterials = {
         "The transistor burned out, so we had to go back to square one and rebuild the circuit board.",
     },
   ],
-  dialogue: {
-    title: "Mini Dialogue",
-    lines: [
-      {
-        speaker: "Scene: Two students building a robot for a competition in the robotics lab",
-        text: "Student 1:",
-      },
-      {
-        speaker:
-          "The frame is assembled. I've attached the wheels and the axle. Can you hand me the motor?",
-        text: "Student 2:",
-      },
-      {
-        speaker:
-          "Here. And the gear set — you'll need it to connect the motor to the wheel. Where's the battery pack?",
-        text: "Student 1:",
-      },
-      {
-        speaker:
-          "On the shelf. Before we connect it, let's finish the circuit board. Pass me the soldering iron and the solder.",
-        text: "Student 2:",
-      },
-      {
-        speaker:
-          "Done. I'll mount the sensor on the front of the frame. Should the camera module go next to it?",
-        text: "Student 1:",
-      },
-      {
-        speaker:
-          "Yes — the camera needs a clear view for obstacle detection. Wire it to the microchip on the breadboard.",
-        text: "Student 2:",
-      },
-      {
-        speaker:
-          "I need the wire stripper and the pliers. The wire is too thick for the connector.",
-        text: "Student 1:",
-      },
-      {
-        speaker:
-          "Use the wire cutter first, then strip the end. Check the connection with the multimeter before powering on.",
-        text: "Student 2:",
-      },
-      {
-        speaker: "The LED is flickering. Is that a resistor problem?",
-        text: "Student 1:",
-      },
-      {
-        speaker:
-          "Probably — check the resistor value. If it's too high, the LED won't get enough current. You might need a different capacitor too.",
-        text: "Student 2:",
-      },
-      {
-        speaker: "What about the gripper? The arm doesn't close properly.",
-        text: "Student 1:",
-      },
-    ],
-  },
   mistakes: [
     {
       id: "robotics-lab-the-robot-was-programmed-to-follow-a-bla",

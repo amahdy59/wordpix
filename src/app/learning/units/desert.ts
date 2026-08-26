@@ -199,56 +199,31 @@ export const DESERT_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "Two hikers navigating a desert trail with a guide near a canyon",
     lines: [
       {
-        speaker: "Scene: Two hikers navigating a desert trail with a guide near a canyon",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Fill your water canteen now — the next oasis is at least three hours away across the plateau.",
       },
       {
-        speaker:
-          "Fill your water canteen now — the next oasis is at least three hours away across the plateau.",
-        text: "Hiker 1:",
+        speaker: "Guide",
+        text: "They're here — they just hide from the sun. Fennec foxes come out at night. Meerkats dig underground burrows.",
       },
       {
-        speaker:
-          "How do animals survive out here? I haven't seen anything except sand dunes and cactus.",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Good spot — that's a desert iguana. See how it uses the shade of the barrel cactus to regulate its temperature?",
       },
       {
-        speaker:
-          "They're here — they just hide from the sun. Fennec foxes come out at night. Meerkats dig underground burrows.",
-        text: "Hiker 2:",
+        speaker: "Guide",
+        text: "Yes, the mesa has a sheltered canyon on the far side. Put your sun hat on — we'll be in direct sun until the rocky outcrop.",
       },
       {
-        speaker: "What's that moving near the prickly pear? It looks like a lizard.",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Stand still. That's a rattlesnake — it's warning us. Step back slowly. It won't chase; it just wants to be left alone.",
       },
       {
-        speaker:
-          "Good spot — that's a desert iguana. See how it uses the shade of the barrel cactus to regulate its temperature?",
-        text: "Hiker 1:",
-      },
-      {
-        speaker: "I can see a mesa in the distance. Is that where we're heading?",
-        text: "Guide:",
-      },
-      {
-        speaker:
-          "Yes, the mesa has a sheltered canyon on the far side. Put your sun hat on — we'll be in direct sun until the rocky outcrop.",
-        text: "Hiker 2:",
-      },
-      {
-        speaker: "I just heard a rattle. Should I be worried?",
-        text: "Guide:",
-      },
-      {
-        speaker:
-          "Stand still. That's a rattlesnake — it's warning us. Step back slowly. It won't chase; it just wants to be left alone.",
-        text: "Hiker 1:",
-      },
-      {
-        speaker: "Look at that bird running along the dry riverbed!",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "A roadrunner — they prefer running to flying. And up there, circling above the butte, that's a vulture. It's spotted something we can't see.",
       },
     ],
   },

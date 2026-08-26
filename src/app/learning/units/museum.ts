@@ -105,58 +105,55 @@ export const MUSEUM_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "At the museum information desk",
     lines: [
       {
-        speaker: "Scene: At the museum information desk",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "Excuse me, how much is the entrance fee?",
       },
       {
-        speaker: "Excuse me, how much is the entrance fee?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "The permanent collection is free. The temporary exhibition is eight pounds for adults.",
       },
       {
-        speaker:
-          "The permanent collection is free. The temporary exhibition is eight pounds for adults.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "Is there a discount for students?",
       },
       {
-        speaker: "Is there a discount for students?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "Yes, students pay five pounds with a valid student ID.",
       },
       {
-        speaker: "Yes, students pay five pounds with a valid student ID.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "Are audio guides available?",
       },
       {
-        speaker: "Are audio guides available?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "Yes, they're four pounds each. Available in English, Arabic, French, and Spanish.",
       },
       {
-        speaker:
-          "Yes, they're four pounds each. Available in English, Arabic, French, and Spanish.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "How long does a typical visit take?",
       },
       {
-        speaker: "How long does a typical visit take?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "Most visitors spend about two to three hours, but you're welcome to stay as long as you like.",
       },
       {
-        speaker:
-          "Most visitors spend about two to three hours, but you're welcome to stay as long as you like.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "Is photography allowed?",
       },
       {
-        speaker: "Is photography allowed?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "Yes, in most galleries, but no flash photography, please. Some temporary exhibits don't allow photos at all.",
       },
       {
-        speaker:
-          "Yes, in most galleries, but no flash photography, please. Some temporary exhibits don't allow photos at all.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "Thank you. Where does the tour start?",
       },
       {
-        speaker: "Thank you. Where does the tour start?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "Go through the main hall and turn left for the ancient civilisations wing.",
       },
     ],
   },

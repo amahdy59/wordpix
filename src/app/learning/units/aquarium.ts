@@ -105,47 +105,47 @@ export const AQUARIUM_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A family at the aquarium touch pool",
     lines: [
       {
-        speaker: "Scene: A family at the aquarium touch pool",
-        text: "Child:",
+        speaker: "Child",
+        text: "Can I really touch the starfish?",
       },
       {
-        speaker: "Can I really touch the starfish?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Yes! Just use two fingers and touch very gently on the top.",
       },
       {
-        speaker: "Yes! Just use two fingers and touch very gently on the top.",
-        text: "Child:",
+        speaker: "Child",
+        text: "It feels rough and bumpy. Why is that?",
       },
       {
-        speaker: "It feels rough and bumpy. Why is that?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Starfish have tiny spines on their skin for protection.",
       },
       {
-        speaker: "Starfish have tiny spines on their skin for protection.",
-        text: "Child:",
+        speaker: "Child",
+        text: "What about the crab? Can I pick it up?",
       },
       {
-        speaker: "What about the crab? Can I pick it up?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "No, we don't pick up the animals. But you can watch the hermit crab move around.",
       },
       {
-        speaker: "No, we don't pick up the animals. But you can watch the hermit crab move around.",
-        text: "Father:",
+        speaker: "Father",
+        text: "What does the hermit crab eat?",
       },
       {
-        speaker: "What does the hermit crab eat?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "They eat algae and small bits of food they find on the ocean floor. They're scavengers.",
       },
       {
-        speaker:
-          "They eat algae and small bits of food they find on the ocean floor. They're scavengers.",
-        text: "Child:",
+        speaker: "Child",
+        text: "Look! That starfish has only four arms!",
       },
       {
-        speaker: "Look! That starfish has only four arms!",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Good observation! It probably lost one arm, but don't worry — it will grow back.",
       },
     ],
   },

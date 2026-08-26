@@ -113,55 +113,31 @@ export const FIRE_STATION_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A fire chief gives a tour of the fire station to school children",
     lines: [
       {
-        speaker: "Scene: A fire chief gives a tour of the fire station to school children",
-        text: "Fire Chief:",
+        speaker: "Fire Chief",
+        text: "Welcome to the fire station! I'm the fire chief. This is where our firefighters live and train.",
       },
       {
-        speaker:
-          "Welcome to the fire station! I'm the fire chief. This is where our firefighters live and train.",
-        text: "Student 1:",
+        speaker: "Fire Chief",
+        text: "That's our main fire truck. Next to it is the ladder truck for tall buildings, and the water tanker for areas without a hydrant.",
       },
       {
-        speaker: "Is that a fire engine? It's huge!",
-        text: "Fire Chief:",
+        speaker: "Fire Chief",
+        text: "The ambulance is for the paramedic team. The helicopter and the rescue vehicle are used by the rescue team for big emergencies. We even have a fire boat for the harbor.",
       },
       {
-        speaker:
-          "That's our main fire truck. Next to it is the ladder truck for tall buildings, and the water tanker for areas without a hydrant.",
-        text: "Student 2:",
+        speaker: "Fire Chief",
+        text: "Of course. Here's the fire hose with the nozzle, the fire extinguisher, and the ladder. The axe and the pike pole are for breaking through walls.",
       },
       {
-        speaker: "What about the ambulance and the helicopter?",
-        text: "Fire Chief:",
+        speaker: "Fire Chief",
+        text: "This is the turnout coat, the fire boots, and the gloves. The face mask and visor protect our eyes. And this is the breathing apparatus with the oxygen tank.",
       },
       {
-        speaker:
-          "The ambulance is for the paramedic team. The helicopter and the rescue vehicle are used by the rescue team for big emergencies. We even have a fire boat for the harbor.",
-        text: "Student 1:",
-      },
-      {
-        speaker: "Can we see the equipment? I want to see the fire hose!",
-        text: "Fire Chief:",
-      },
-      {
-        speaker:
-          "Of course. Here's the fire hose with the nozzle, the fire extinguisher, and the ladder. The axe and the pike pole are for breaking through walls.",
-        text: "Student 2:",
-      },
-      {
-        speaker: "What do firefighters wear? That helmet looks heavy.",
-        text: "Fire Chief:",
-      },
-      {
-        speaker:
-          "This is the turnout coat, the fire boots, and the gloves. The face mask and visor protect our eyes. And this is the breathing apparatus with the oxygen tank.",
-        text: "Student 1:",
-      },
-      {
-        speaker: "What's that camera?",
-        text: "Fire Chief:",
+        speaker: "Fire Chief",
+        text: "The thermal camera — it sees heat through smoke. The radio keeps us connected to the dispatcher, and the siren tells everyone we're coming.",
       },
     ],
   },

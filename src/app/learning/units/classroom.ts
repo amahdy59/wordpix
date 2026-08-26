@@ -217,54 +217,47 @@ export const CLASSROOM_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A teacher prepares the classroom for a new school year with a student helper",
     lines: [
       {
-        speaker:
-          "Scene: A teacher prepares the classroom for a new school year with a student helper",
-        text: "Teacher:",
+        speaker: "Teacher",
+        text: "Thank you for helping me set up. Can you put a pencil, a pen, and an eraser on each desk?",
       },
       {
-        speaker:
-          "Thank you for helping me set up. Can you put a pencil, a pen, and an eraser on each desk?",
-        text: "Student:",
+        speaker: "Student",
+        text: "Sure. Should I add a ruler and a marker too? There are extras in the pencil case on the shelf.",
       },
       {
-        speaker:
-          "Sure. Should I add a ruler and a marker too? There are extras in the pencil case on the shelf.",
-        text: "Teacher:",
+        speaker: "Teacher",
+        text: "Yes, please. And put one notebook, one textbook, and one workbook in every chair pocket.",
       },
       {
-        speaker:
-          "Yes, please. And put one notebook, one textbook, and one workbook in every chair pocket.",
-        text: "Student:",
+        speaker: "Student",
+        text: "What about the folder and the binder? They're heavy.",
       },
       {
-        speaker: "What about the folder and the binder? They're heavy.",
-        text: "Teacher:",
+        speaker: "Teacher",
+        text: "Leave those on the shelf for now. Stack the sheets of paper and the sticky notes near the projector.",
       },
       {
-        speaker:
-          "Leave those on the shelf for now. Stack the sheets of paper and the sticky notes near the projector.",
-        text: "Student:",
+        speaker: "Student",
+        text: "I found some colored pencils, crayons, and a pencil sharpener in the locker. Where do they go?",
       },
       {
-        speaker:
-          "I found some colored pencils, crayons, and a pencil sharpener in the locker. Where do they go?",
-        text: "Teacher:",
+        speaker: "Teacher",
+        text: "Put the colored pencils and crayons in the art box near the whiteboard. The highlighter goes in the desk drawer.",
       },
       {
-        speaker:
-          "Put the colored pencils and crayons in the art box near the whiteboard. The highlighter goes in the desk drawer.",
-        text: "Student:",
+        speaker: "Student",
+        text: "The globe is dusty. Should I clean it? And the clock on the wall — it's stopped.",
       },
       {
-        speaker: "The globe is dusty. Should I clean it? And the clock on the wall — it's stopped.",
-        text: "Teacher:",
+        speaker: "Teacher",
+        text: "Clean the globe, yes. I'll fix the clock later. Can you pin the class schedule on the bulletin board?",
       },
       {
-        speaker:
-          "Clean the globe, yes. I'll fix the clock later. Can you pin the class schedule on the bulletin board?",
-        text: "Student:",
+        speaker: "Student",
+        text: "Done! I also found scissors, a glue stick, and some tape in the backpack someone left behind.",
       },
     ],
   },

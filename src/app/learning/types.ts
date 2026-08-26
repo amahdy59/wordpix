@@ -90,6 +90,15 @@ export interface DialogueLine {
 
 export interface MiniDialogue {
   title: string;
+  /**
+   * The stage direction Figma prints above the exchange, e.g. "A lab
+   * technician helping a student set up a 3D print for the first time".
+   *
+   * Optional because not every unit has one — and because mis-reading it as a
+   * speaker is what corrupted 91 units' dialogue before the parser anchored on
+   * speaker labels instead of on line position.
+   */
+  scene?: string;
   lines: DialogueLine[];
 }
 

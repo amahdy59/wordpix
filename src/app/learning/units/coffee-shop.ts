@@ -185,55 +185,51 @@ export const COFFEE_SHOP_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A customer ordering at the counter of a busy coffee shop",
     lines: [
       {
-        speaker: "Scene: A customer ordering at the counter of a busy coffee shop",
-        text: "Barista:",
+        speaker: "Barista",
+        text: "Welcome! What can I get you?",
       },
       {
-        speaker: "Welcome! What can I get you?",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "I'd like a cappuccino, please. What's the difference between that and a flat white?",
       },
       {
-        speaker:
-          "I'd like a cappuccino, please. What's the difference between that and a flat white?",
-        text: "Barista:",
+        speaker: "Barista",
+        text: "A cappuccino has more foam. A flat white has microfoam — thinner and smoother. The espresso base is the same.",
       },
       {
-        speaker:
-          "A cappuccino has more foam. A flat white has microfoam — thinner and smoother. The espresso base is the same.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "I'll try the flat white. Can you use oat milk?",
       },
       {
-        speaker: "I'll try the flat white. Can you use oat milk?",
-        text: "Barista:",
+        speaker: "Barista",
+        text: "Of course. I'll steam it with the steam wand. Would you like anything to eat? The croissants and scones are fresh.",
       },
       {
-        speaker:
-          "Of course. I'll steam it with the steam wand. Would you like anything to eat? The croissants and scones are fresh.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "A blueberry muffin, please. Can I sit on the couch near the bookshelf?",
       },
       {
-        speaker: "A blueberry muffin, please. Can I sit on the couch near the bookshelf?",
-        text: "Barista:",
+        speaker: "Barista",
+        text: "Absolutely. The wifi sign is on the wall — password is on the menu board. There's an outlet next to the plant for charging.",
       },
       {
-        speaker:
-          "Absolutely. The wifi sign is on the wall — password is on the menu board. There's an outlet next to the plant for charging.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "What's a macchiato, by the way? I see it on the menu.",
       },
       {
-        speaker: "What's a macchiato, by the way? I see it on the menu.",
-        text: "Barista:",
+        speaker: "Barista",
+        text: "It's espresso with a small spot of foam — 'macchiato' means 'stained' in Italian. Stronger than a latte, much smaller.",
       },
       {
-        speaker:
-          "It's espresso with a small spot of foam — 'macchiato' means 'stained' in Italian. Stronger than a latte, much smaller.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "And cold brew? Is that just iced coffee?",
       },
       {
-        speaker: "And cold brew? Is that just iced coffee?",
-        text: "Barista:",
+        speaker: "Barista",
+        text: "No — cold brew is steeped in cold water for up to twenty-four hours. It's smoother and less acidic. Iced coffee is brewed hot and chilled.",
       },
     ],
   },

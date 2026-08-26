@@ -211,61 +211,11 @@ export const SPACE_STATION_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "Two astronauts preparing for a spacewalk outside the space station",
     lines: [
       {
-        speaker: "Scene: Two astronauts preparing for a spacewalk outside the space station",
-        text: "Astronaut 1:",
-      },
-      {
-        speaker: "Suit check. Helmet sealed? Visor clear? Gloves locked?",
-        text: "Astronaut 2:",
-      },
-      {
-        speaker:
-          "All locked. The oxygen tank is at full capacity. Communication headset is working — I can hear ground control.",
-        text: "Astronaut 1:",
-      },
-      {
-        speaker:
-          "Good. Attach your tether before we open the airlock. Without it, one push and you drift into open space.",
-        text: "Astronaut 2:",
-      },
-      {
-        speaker: "Tether's clipped. Is the jet pack charged in case of emergency?",
-        text: "Astronaut 1:",
-      },
-      {
-        speaker:
-          "Fully charged. Tool belt has everything — wrench, screwdriver, and the replacement part for the radiator panel.",
-        text: "Astronaut 2:",
-      },
-      {
-        speaker: "Which module are we working on? The one near the solar array?",
-        text: "Astronaut 1:",
-      },
-      {
-        speaker:
-          "Yes — we need to repair the antenna on the truss. The docking port camera stopped sending images to the control panel.",
-        text: "Astronaut 2:",
-      },
-      {
-        speaker:
-          "I can see the cupola from here. The view of Earth through those windows never gets old.",
-        text: "Astronaut 1:",
-      },
-      {
-        speaker:
-          "Focus. We have four hours before we need to return through the hatch. Boots magnetised?",
-        text: "Astronaut 2:",
-      },
-      {
-        speaker: "Magnetised and locked. Ready when you are.",
-        text: "Astronaut 1:",
-      },
-      {
-        speaker:
-          "Opening the airlock now. Stay close to the truss. And remember — slow, deliberate movements. Nothing fast in zero gravity.",
-        text: "Astro:",
+        speaker: "Astro",
+        text: "Study science and maths, stay physically fit, and never stop being curious.",
       },
     ],
   },

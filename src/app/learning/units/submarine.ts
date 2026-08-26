@@ -200,55 +200,51 @@ export const SUBMARINE_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A captain briefing the crew as the submarine prepares to dive",
     lines: [
       {
-        speaker: "Scene: A captain briefing the crew as the submarine prepares to dive",
-        text: "Captain:",
+        speaker: "Captain",
+        text: "All stations report. Navigator — what's our position?",
       },
       {
-        speaker: "All stations report. Navigator — what's our position?",
-        text: "Navigator:",
+        speaker: "Navigator",
+        text: "Thirty kilometres from the target zone. The compass and navigation screen confirm our heading.",
       },
       {
-        speaker:
-          "Thirty kilometres from the target zone. The compass and navigation screen confirm our heading.",
-        text: "Captain:",
+        speaker: "Captain",
+        text: "Good. Engineer — ballast tank status?",
       },
       {
-        speaker: "Good. Engineer — ballast tank status?",
-        text: "Engineer:",
+        speaker: "Engineer",
+        text: "Ballast tanks ready to flood. The propeller and rudder are responding. Hull pressure is normal.",
       },
       {
-        speaker:
-          "Ballast tanks ready to flood. The propeller and rudder are responding. Hull pressure is normal.",
-        text: "Captain:",
+        speaker: "Captain",
+        text: "Sonar operator — anything on the sonar display?",
       },
       {
-        speaker: "Sonar operator — anything on the sonar display?",
-        text: "Sonar Op:",
+        speaker: "Sonar Op",
+        text: "Clear for now. The sonar dome is picking up some marine traffic on the surface, but nothing close.",
       },
       {
-        speaker:
-          "Clear for now. The sonar dome is picking up some marine traffic on the surface, but nothing close.",
-        text: "Captain:",
+        speaker: "Captain",
+        text: "Close the hatch and seal the conning tower. We're diving to one hundred and fifty metres.",
       },
       {
-        speaker:
-          "Close the hatch and seal the conning tower. We're diving to one hundred and fifty metres.",
-        text: "Navigator:",
+        speaker: "Navigator",
+        text: "Depth gauge reading steady. The periscope is retracted.",
       },
       {
-        speaker: "Depth gauge reading steady. The periscope is retracted.",
-        text: "Captain:",
+        speaker: "Captain",
+        text: "Good. Helm — take us down slowly. Throttle at quarter speed.",
       },
       {
-        speaker: "Good. Helm — take us down slowly. Throttle at quarter speed.",
-        text: "Engineer:",
+        speaker: "Engineer",
+        text: "The alarm just triggered — a minor pressure fluctuation near the torpedo tube compartment. Checking now.",
       },
       {
-        speaker:
-          "The alarm just triggered — a minor pressure fluctuation near the torpedo tube compartment. Checking now.",
-        text: "Captain:",
+        speaker: "Captain",
+        text: "Report back immediately. Everyone stay at your stations. Communication radio — send our position update before we lose surface signal.",
       },
     ],
   },

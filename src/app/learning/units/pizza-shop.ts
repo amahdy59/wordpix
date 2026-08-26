@@ -184,63 +184,59 @@ export const PIZZA_SHOP_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A customer ordering at the counter of a busy pizza shop",
     lines: [
       {
-        speaker: "Scene: A customer ordering at the counter of a busy pizza shop",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Hi — can I get a large Margherita and a medium pepperoni, please?",
       },
       {
-        speaker: "Hi — can I get a large Margherita and a medium pepperoni, please?",
-        text: "Server:",
+        speaker: "Server",
+        text: "Of course. The Margherita is tomato sauce, mozzarella, and fresh basil. Extra toppings on the pepperoni?",
       },
       {
-        speaker:
-          "Of course. The Margherita is tomato sauce, mozzarella, and fresh basil. Extra toppings on the pepperoni?",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Add mushroom and olive to the pepperoni. And what's a calzone exactly?",
       },
       {
-        speaker: "Add mushroom and olive to the pepperoni. And what's a calzone exactly?",
-        text: "Server:",
+        speaker: "Server",
+        text: "A calzone is folded dough with the filling sealed inside — like a pizza pocket. We fill it with mozzarella, sausage, and pepper.",
       },
       {
-        speaker:
-          "A calzone is folded dough with the filling sealed inside — like a pizza pocket. We fill it with mozzarella, sausage, and pepper.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Sounds great. I'll add one of those. How long does the brick oven take?",
       },
       {
-        speaker: "Sounds great. I'll add one of those. How long does the brick oven take?",
-        text: "Server:",
+        speaker: "Server",
+        text: "About four minutes at full heat. The pizza stone distributes the heat evenly. The chef uses the pizza peel to slide them in and out.",
       },
       {
-        speaker:
-          "About four minutes at full heat. The pizza stone distributes the heat evenly. The chef uses the pizza peel to slide them in and out.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Can I also get garlic bread and a salad on the side?",
       },
       {
-        speaker: "Can I also get garlic bread and a salad on the side?",
-        text: "Server:",
+        speaker: "Server",
+        text: "Sure. And to drink? We have soda, lemonade, and water.",
       },
       {
-        speaker: "Sure. And to drink? We have soda, lemonade, and water.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Two sodas. Is there dipping sauce for the crust?",
       },
       {
-        speaker: "Two sodas. Is there dipping sauce for the crust?",
-        text: "Server:",
+        speaker: "Server",
+        text: "Yes — garlic butter and marinara. The shaker on the counter has chilli flakes and parmesan.",
       },
       {
-        speaker:
-          "Yes — garlic butter and marinara. The shaker on the counter has chilli flakes and parmesan.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Perfect. For here — we'll take the booth by the window. Can the pizza cutter divide the large into eight slices?",
       },
       {
-        speaker:
-          "Perfect. For here — we'll take the booth by the window. Can the pizza cutter divide the large into eight slices?",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "It's 42 Oak Lane. How long will it take?",
       },
       {
-        speaker: "It's 42 Oak Lane. How long will it take?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "About thirty to forty minutes. That'll be £24.49 altogether.",
       },
     ],
   },

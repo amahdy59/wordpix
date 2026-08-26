@@ -210,56 +210,52 @@ export const LABORATORY_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene:
+      "A professor supervising a student's first chemistry experiment in a university laboratory",
     lines: [
       {
-        speaker:
-          "Scene: A professor supervising a student's first chemistry experiment in a university laboratory",
-        text: "Professor:",
+        speaker: "Professor",
+        text: "Before we start, put on your lab coat, safety goggles, and latex gloves. No exceptions.",
       },
       {
-        speaker:
-          "Before we start, put on your lab coat, safety goggles, and latex gloves. No exceptions.",
-        text: "Student:",
+        speaker: "Student",
+        text: "Done. Where's the first aid kit, just in case?",
       },
       {
-        speaker: "Done. Where's the first aid kit, just in case?",
-        text: "Professor:",
+        speaker: "Professor",
+        text: "On the wall beside the eyewash station. The chemical shower is in the corner. Now — take a beaker from the shelf.",
       },
       {
-        speaker:
-          "On the wall beside the eyewash station. The chemical shower is in the corner. Now — take a beaker from the shelf.",
-        text: "Student:",
+        speaker: "Student",
+        text: "Should I use the Erlenmeyer flask or the volumetric flask for measuring?",
       },
       {
-        speaker: "Should I use the Erlenmeyer flask or the volumetric flask for measuring?",
-        text: "Professor:",
+        speaker: "Professor",
+        text: "The graduated cylinder for precise measurements. Use the pipette for small quantities and the dropper for drops.",
       },
       {
-        speaker:
-          "The graduated cylinder for precise measurements. Use the pipette for small quantities and the dropper for drops.",
-        text: "Student:",
+        speaker: "Student",
+        text: "The Bunsen burner won't light. Is there a problem with the gas line?",
       },
       {
-        speaker: "The Bunsen burner won't light. Is there a problem with the gas line?",
-        text: "Professor:",
+        speaker: "Professor",
+        text: "Use the hot plate instead. Place the test tube in the clamp above it. Hold it with tongs — never your fingers.",
       },
       {
-        speaker:
-          "Use the hot plate instead. Place the test tube in the clamp above it. Hold it with tongs — never your fingers.",
-        text: "Student:",
+        speaker: "Student",
+        text: "What's the funnel for? Filtering?",
       },
       {
-        speaker: "What's the funnel for? Filtering?",
-        text: "Professor:",
+        speaker: "Professor",
+        text: "Exactly. Filter the solution through the funnel into a clean flask. Then check the pH with the pH meter.",
       },
       {
-        speaker:
-          "Exactly. Filter the solution through the funnel into a clean flask. Then check the pH with the pH meter.",
-        text: "Student:",
+        speaker: "Student",
+        text: "The centrifuge is spinning. How long should the sample stay in?",
       },
       {
-        speaker: "The centrifuge is spinning. How long should the sample stay in?",
-        text: "Professor:",
+        speaker: "Professor",
+        text: "Five minutes at medium speed. While you wait, examine yesterday's Petri dish under the microscope. Record everything in the logbook.",
       },
     ],
   },

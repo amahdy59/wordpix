@@ -223,52 +223,47 @@ export const LIVING_ROOM_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A family organizes and redecorates their living room together",
     lines: [
       {
-        speaker: "Scene: A family organizes and redecorates their living room together",
-        text: "Mom:",
+        speaker: "Mom",
+        text: "This living room is a mess. Let's start by moving the sofa away from the window.",
       },
       {
-        speaker: "This living room is a mess. Let's start by moving the sofa away from the window.",
-        text: "Dad:",
+        speaker: "Dad",
+        text: "Good idea. I'll slide the coffee table to the center and move the armchair next to the bookshelf.",
       },
       {
-        speaker:
-          "Good idea. I'll slide the coffee table to the center and move the armchair next to the bookshelf.",
-        text: "Son:",
+        speaker: "Son",
+        text: "Where should I put the remote control? It keeps falling behind the ottoman.",
       },
       {
-        speaker: "Where should I put the remote control? It keeps falling behind the ottoman.",
-        text: "Mom:",
+        speaker: "Mom",
+        text: "Leave it on the side table for now. Can you sort the magazine rack? It's overflowing.",
       },
       {
-        speaker:
-          "Leave it on the side table for now. Can you sort the magazine rack? It's overflowing.",
-        text: "Daughter:",
+        speaker: "Daughter",
+        text: "I'll dust the shelf and rearrange the display case. Should I plug in the floor lamp too?",
       },
       {
-        speaker:
-          "I'll dust the shelf and rearrange the display case. Should I plug in the floor lamp too?",
-        text: "Dad:",
+        speaker: "Dad",
+        text: "Yes — plug the floor lamp in near the power strip behind the TV stand. And check if the cable is tangled.",
       },
       {
-        speaker:
-          "Yes — plug the floor lamp in near the power strip behind the TV stand. And check if the cable is tangled.",
-        text: "Son:",
+        speaker: "Son",
+        text: "The sound bar isn't working. I think the plug came out of the outlet.",
       },
       {
-        speaker: "The sound bar isn't working. I think the plug came out of the outlet.",
-        text: "Mom:",
+        speaker: "Mom",
+        text: "Let your father handle the sound bar. You can hang the coat rack by the door and move the shoe rack underneath.",
       },
       {
-        speaker:
-          "Let your father handle the sound bar. You can hang the coat rack by the door and move the shoe rack underneath.",
-        text: "Daughter:",
+        speaker: "Daughter",
+        text: "Should we keep the dining chair next to the dining table, or push the bench against the wall?",
       },
       {
-        speaker:
-          "Should we keep the dining chair next to the dining table, or push the bench against the wall?",
-        text: "Dad:",
+        speaker: "Dad",
+        text: "Push the bench to the wall. And let's swap the table lamp with the stool — the cabinet looks better with more light.",
       },
     ],
   },

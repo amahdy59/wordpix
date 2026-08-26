@@ -199,56 +199,51 @@ export const POTTERY_STUDIO_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "An instructor teaching a beginner how to throw a pot on the potter's wheel",
     lines: [
       {
-        speaker:
-          "Scene: An instructor teaching a beginner how to throw a pot on the potter's wheel",
-        text: "Instructor:",
+        speaker: "Instructor",
+        text: "Before we start throwing, you need to wedge the clay. Push and fold it to remove air bubbles — like kneading bread.",
       },
       {
-        speaker:
-          "Before we start throwing, you need to wedge the clay. Push and fold it to remove air bubbles — like kneading bread.",
-        text: "Student:",
+        speaker: "Student",
+        text: "How long do I wedge it?",
       },
       {
-        speaker: "How long do I wedge it?",
-        text: "Instructor:",
+        speaker: "Instructor",
+        text: "About three minutes. Then we'll centre it on the potter's wheel. Centering is the hardest part — keep your hands steady.",
       },
       {
-        speaker:
-          "About three minutes. Then we'll centre it on the potter's wheel. Centering is the hardest part — keep your hands steady.",
-        text: "Student:",
+        speaker: "Student",
+        text: "The clay keeps sliding off to one side.",
       },
       {
-        speaker: "The clay keeps sliding off to one side.",
-        text: "Instructor:",
+        speaker: "Instructor",
+        text: "Wet your hands and press firmly. Use the sponge to keep the surface moist. There — it's centred now. Open the middle with your thumbs.",
       },
       {
-        speaker:
-          "Wet your hands and press firmly. Use the sponge to keep the surface moist. There — it's centred now. Open the middle with your thumbs.",
-        text: "Student:",
+        speaker: "Student",
+        text: "What's the difference between throwing and coiling?",
       },
       {
-        speaker: "What's the difference between throwing and coiling?",
-        text: "Instructor:",
+        speaker: "Instructor",
+        text: "Throwing uses the wheel. Coiling rolls ropes of clay and stacks them by hand. Slab building uses flat sheets. Pinching shapes with your fingers.",
       },
       {
-        speaker:
-          "Throwing uses the wheel. Coiling rolls ropes of clay and stacks them by hand. Slab building uses flat sheets. Pinching shapes with your fingers.",
-        text: "Student:",
+        speaker: "Student",
+        text: "What tools do I need for trimming?",
       },
       {
-        speaker: "What tools do I need for trimming?",
-        text: "Instructor:",
+        speaker: "Instructor",
+        text: "The loop tool and the trimming tool — you'll use them tomorrow when the pot is leather-hard. The wire cutter separates it from the wheel.",
       },
       {
-        speaker:
-          "The loop tool and the trimming tool — you'll use them tomorrow when the pot is leather-hard. The wire cutter separates it from the wheel.",
-        text: "Student:",
+        speaker: "Student",
+        text: "And then we glaze it?",
       },
       {
-        speaker: "And then we glaze it?",
-        text: "Instructor:",
+        speaker: "Instructor",
+        text: "After the first firing. You'll choose a glaze colour, maybe add an underglaze pattern or an oxide wash. The stamp can add texture too.",
       },
     ],
   },

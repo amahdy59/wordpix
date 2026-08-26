@@ -105,46 +105,47 @@ export const SCIENCE_LAB_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "Students working together in the science lab",
     lines: [
       {
-        speaker: "Scene: Students working together in the science lab",
-        text: "Omar:",
+        speaker: "Omar",
+        text: "Can you pass me the measuring cylinder?",
       },
       {
-        speaker: "Can you pass me the measuring cylinder?",
-        text: "Yusuf:",
+        speaker: "Yusuf",
+        text: "Here. How much vinegar do we need?",
       },
       {
-        speaker: "Here. How much vinegar do we need?",
-        text: "Omar:",
+        speaker: "Omar",
+        text: "Fifty millilitres. Make sure you read it at eye level.",
       },
       {
-        speaker: "Fifty millilitres. Make sure you read it at eye level.",
-        text: "Yusuf:",
+        speaker: "Yusuf",
+        text: "Right. Now I'll add the baking soda.",
       },
       {
-        speaker: "Right. Now I'll add the baking soda.",
-        text: "Omar:",
+        speaker: "Omar",
+        text: "Wait — put your goggles on first!",
       },
       {
-        speaker: "Wait — put your goggles on first!",
-        text: "Yusuf:",
+        speaker: "Yusuf",
+        text: "Oh, thanks. Safety first. Okay, adding it now...",
       },
       {
-        speaker: "Oh, thanks. Safety first. Okay, adding it now...",
-        text: "Omar:",
+        speaker: "Omar",
+        text: "Look at it fizzing! That's the carbon dioxide being released.",
       },
       {
-        speaker: "Look at it fizzing! That's the carbon dioxide being released.",
-        text: "Yusuf:",
+        speaker: "Yusuf",
+        text: "Should I test it with litmus paper?",
       },
       {
-        speaker: "Should I test it with litmus paper?",
-        text: "Omar:",
+        speaker: "Omar",
+        text: "Yes. Use the blue one — if it turns red, it's acidic.",
       },
       {
-        speaker: "Yes. Use the blue one — if it turns red, it's acidic.",
-        text: "Yusuf:",
+        speaker: "Yusuf",
+        text: "It turned red. Let's write it down in our notebooks.",
       },
     ],
   },
