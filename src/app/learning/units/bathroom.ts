@@ -12,6 +12,399 @@ import type { UnitLearningMaterials } from "../types";
 export const BATHROOM_LEARNING: UnitLearningMaterials = {
   unitId: "bathroom",
 
+  registerLabels: [
+    {
+      word: "bathtub",
+      register: "Neutral",
+      emoji: "🟢",
+      description:
+        "Standard word. In British English, often shortened to 'bath'. 'I\\'ll have a bath' (UK) vs 'I\\'ll take a bath' (US).",
+    },
+    {
+      word: "lavatory",
+      register: "Formal",
+      emoji: "🎩",
+      description:
+        "Very formal/old-fashioned for toilet. Used on aeroplanes ('lavatory occupied') and in upper-class British English.",
+    },
+    {
+      word: "toilet",
+      register: "Neutral (UK) / Direct (US)",
+      emoji: "🟢",
+      description:
+        "In the UK, 'toilet' is the standard neutral word. In the US, 'restroom' or 'bathroom' is more polite in public.",
+    },
+    {
+      word: "loo",
+      register: "Informal (UK)",
+      emoji: "💬",
+      description:
+        "British slang for toilet. Very common in casual speech: 'Where\\'s the loo?' Never used in formal writing.",
+    },
+    {
+      word: "faucet / tap",
+      register: "Neutral",
+      emoji: "🟢",
+      description: "Americans say 'faucet'; British say 'tap.' Both are neutral in their regions.",
+    },
+    {
+      word: "shampoo",
+      register: "Neutral",
+      emoji: "🟢",
+      description:
+        "Used universally across all registers. Originally from Hindi 'chāmpo' (to press/massage).",
+    },
+    {
+      word: "toiletries",
+      register: "Neutral / Slightly formal",
+      emoji: "🟢",
+      description:
+        "Collective term for bathroom products. Neutral in shops; slightly formal in speech — people usually name specific items.",
+    },
+  ],
+
+  pronunciationGuide: [
+    { word: "towel", ipa: "/ˈtaʊ.əl/", stress: "Stress on first syllable" },
+    { word: "sink", ipa: "/sɪŋk/", stress: "Single syllable word" },
+    { word: "shower", ipa: "/ˈʃaʊ.ər/", stress: "Stress on first syllable" },
+    { word: "toothbrush", ipa: "/ˈtuːθ.brʌʃ/", stress: "Stress on first syllable" },
+    { word: "soap", ipa: "/səʊp/", stress: "Single syllable word" },
+    { word: "bathtub", ipa: "/ˈbɑːθ.tʌb/", stress: "Stress on first syllable" },
+    { word: "tap", ipa: "/tæp/", stress: "Single syllable word" },
+    { word: "razor", ipa: "/ˈreɪ.zər/", stress: "Stress on first syllable" },
+    { word: "sponge", ipa: "/spʌndʒ/", stress: "Single syllable word" },
+    { word: "mirror", ipa: "/ˈmɪr.ər/", stress: "Stress on first syllable" },
+  ],
+
+  priorityTiers: {
+    essential: ["toilet", "sink", "shower", "bathtub", "mirror", "towel"],
+    important: ["toothbrush", "soap", "faucet", "shampoo", "toilet paper", "mat"],
+    goodToKnow: ["drain", "curtain", "cabinet", "plunger"],
+  },
+
+  visualVocabularyMap: [
+    {
+      category: "Washing & Bathing",
+      emoji: "🚿",
+      items: [
+        { word: "bathtub", related: ["bath", "bubble bath", "bath mat"] },
+        { word: "shower", related: ["showerhead", "shower curtain", "shower gel"] },
+        { word: "soap", related: ["bar of soap", "liquid soap", "soap dish"] },
+        { word: "shampoo", related: ["conditioner", "body wash", "lotion"] },
+      ],
+    },
+    {
+      category: "Dental Care",
+      emoji: "🪥",
+      items: [
+        { word: "toothbrush", related: ["electric toothbrush", "bristles"] },
+        { word: "toothpaste", related: ["fluoride", "mint flavour"] },
+        { word: "floss", related: ["dental floss", "flossing"] },
+        { word: "mouthwash", related: ["rinse", "gargle"] },
+      ],
+    },
+    {
+      category: "Fixtures & Fittings",
+      emoji: "🚽",
+      items: [
+        { word: "toilet", related: ["seat", "lid", "flush", "bowl"] },
+        { word: "sink", related: ["basin", "tap/faucet", "drain", "plug"] },
+        { word: "mirror", related: ["cabinet", "vanity"] },
+        { word: "towel rack", related: ["hook", "ring", "rail"] },
+      ],
+    },
+    {
+      category: "Products & Accessories",
+      emoji: "🧴",
+      items: [
+        { word: "towel", related: ["bath towel", "hand towel", "face cloth"] },
+        { word: "razor", related: ["blade", "shaving cream/foam"] },
+        { word: "hairdryer", related: ["blow dryer", "diffuser"] },
+        { word: "scale", related: ["bathroom scale", "weighing scale"] },
+      ],
+    },
+  ],
+
+  collocations: [
+    {
+      phrase: "take a shower",
+      variations: "take a hot/cold/quick shower, take a long shower",
+      example: "I always take a quick shower before breakfast.",
+    },
+    {
+      phrase: "run a bath",
+      variations: "run a warm/hot bath, run a bath for someone",
+      example: "She ran a warm bath after a tiring day at work.",
+    },
+    {
+      phrase: "brush your teeth",
+      variations: "brush your teeth twice a day, brush your teeth thoroughly",
+      example: "The dentist recommends brushing your teeth for two minutes.",
+    },
+    {
+      phrase: "flush the toilet",
+      variations: "flush the toilet after use, forget to flush the toilet",
+      example: "Please remember to flush the toilet when you're finished.",
+    },
+    {
+      phrase: "turn on the tap",
+      variations: "turn on/off the tap, leave the tap running, dripping tap",
+      example: "Don't leave the tap running while you brush your teeth.",
+    },
+    {
+      phrase: "hang up a towel",
+      variations: "hang up a wet/dry towel, hang a towel on the rack",
+      example: "Please hang up your towel after using it.",
+    },
+    {
+      phrase: "wash your hands",
+      variations: "wash your hands with soap, wash your hands thoroughly",
+      example: "Always wash your hands before eating a meal.",
+    },
+    {
+      phrase: "look in the mirror",
+      variations: "look in/at the mirror, check the mirror, bathroom mirror",
+      example: "He looked in the mirror and noticed he needed a haircut.",
+    },
+    {
+      phrase: "use the sink",
+      variations: "use the bathroom/kitchen sink, block the sink, clean the sink",
+      example: "The children used the sink to wash the paintbrushes.",
+    },
+    {
+      phrase: "wipe the surface",
+      variations: "wipe the surface clean/dry, wipe down a surface",
+      example: "She wiped the bathroom surface with a damp cloth.",
+    },
+  ],
+
+  synonymsAntonyms: [
+    { word: "clean", synonym: "spotless", antonym: "dirty" },
+    { word: "wet", synonym: "damp", antonym: "dry" },
+    { word: "hot", synonym: "warm", antonym: "cold" },
+    { word: "full", synonym: "filled", antonym: "empty" },
+    { word: "soft", synonym: "gentle", antonym: "hard" },
+    { word: "shiny", synonym: "bright", antonym: "dull" },
+    { word: "fresh", synonym: "new", antonym: "stale" },
+    { word: "quick", synonym: "fast", antonym: "slow" },
+  ],
+
+  additionalExercises: {
+    matching: [
+      { word: "toothbrush", definition: "a small tool with bristles used to clean your teeth" },
+      { word: "towel", definition: "a piece of cloth used to dry your body" },
+      { word: "mirror", definition: "a glass surface that reflects your image" },
+      { word: "shower", definition: "a device that sprays water so you can wash your whole body" },
+      { word: "soap", definition: "a substance used with water to clean your skin" },
+    ],
+    multipleChoice: [
+      {
+        id: "mc1",
+        question: "You use a ______ to dry yourself after a shower.",
+        options: ["towel", "mirror", "soap"],
+        correctIndex: 0,
+      },
+      {
+        id: "mc2",
+        question: "We brush our teeth with a ______.",
+        options: ["soap", "toothbrush", "towel"],
+        correctIndex: 1,
+      },
+      {
+        id: "mc3",
+        question: "You look at your face in the ______.",
+        options: ["mirror", "shower", "soap"],
+        correctIndex: 0,
+      },
+      {
+        id: "mc4",
+        question: "Before you leave the bathroom, you should turn off the ______.",
+        options: ["mirror", "shower", "towel"],
+        correctIndex: 1,
+      },
+      {
+        id: "mc5",
+        question: "We wash our hands with water and ______.",
+        options: ["soap", "mirror", "towel"],
+        correctIndex: 0,
+      },
+    ],
+    rewrite: [
+      {
+        id: "rw1",
+        sentence: "I have a shower every morning. (USUALLY)",
+        hintWord: "USUALLY",
+        answer: "I usually have a shower every morning.",
+      },
+      {
+        id: "rw2",
+        sentence: "This towel is bigger than that one. (THAN)",
+        hintWord: "THAN",
+        answer: "This towel is bigger than that one.",
+      },
+      {
+        id: "rw3",
+        sentence: "Someone cleans the bathroom every day. (IS)",
+        hintWord: "IS",
+        answer: "The bathroom is cleaned every day.",
+      },
+      {
+        id: "rw4",
+        sentence: "I have used this toothbrush for two months. (FOR)",
+        hintWord: "FOR",
+        answer: "I have used this toothbrush for two months.",
+      },
+      {
+        id: "rw5",
+        sentence: "If it rains, we won't go swimming. (IF)",
+        hintWord: "IF",
+        answer: "If it rains, we will not go swimming.",
+      },
+    ],
+  },
+
+  collocationsQuiz: [
+    {
+      id: "cq1",
+      question: "__________ a bath",
+      options: ["make", "take", "do", "get"],
+      correctIndex: 1,
+      explanation: "'take a bath' (US) or 'have a bath' (UK).",
+    },
+    {
+      id: "cq2",
+      question: "__________ the toilet",
+      options: ["pull", "push", "flush", "wash"],
+      correctIndex: 2,
+      explanation: "'flush the toilet' is the standard collocation.",
+    },
+    {
+      id: "cq3",
+      question: "__________ your teeth",
+      options: ["clean", "wash", "brush", "scrub"],
+      correctIndex: 2,
+      explanation: "'brush your teeth' is the natural phrase.",
+    },
+    {
+      id: "cq4",
+      question: "__________ a shower",
+      options: ["make", "take", "do", "give"],
+      correctIndex: 1,
+      explanation: "'take a shower' (US) or 'have a shower' (UK).",
+    },
+    {
+      id: "cq5",
+      question: "__________ the tap",
+      options: ["open", "turn on", "start", "switch"],
+      correctIndex: 1,
+      explanation: "'turn on/off the tap' is standard.",
+    },
+    {
+      id: "cq6",
+      question: "__________ your hands",
+      options: ["clean", "wash", "rinse", "all correct"],
+      correctIndex: 3,
+      explanation: "wash (with soap), rinse (with water), clean (general).",
+    },
+    {
+      id: "cq7",
+      question: "hot __________ water",
+      options: ["flowing", "running", "moving", "going"],
+      correctIndex: 1,
+      explanation: "'hot running water' is the standard phrase.",
+    },
+  ],
+
+  errorCorrection: [
+    {
+      id: "ec1",
+      wrong: "I brushed my teeth with a comb this morning.",
+      right: "I brushed my teeth with a toothbrush this morning.",
+    },
+    {
+      id: "ec2",
+      wrong: "She washed her hair with soap in the shower.",
+      right: "She washed her hair with shampoo in the shower.",
+    },
+    {
+      id: "ec3",
+      wrong: "He dried his hands with a sponge after washing them.",
+      right: "He dried his hands with a towel after washing them.",
+    },
+    {
+      id: "ec4",
+      wrong: "I took a shower in the kitchen sink this evening.",
+      right: "I took a shower in the bathtub this evening.",
+    },
+    {
+      id: "ec5",
+      wrong: "There is a big mirror above the stove in the bathroom.",
+      right: "There is a big mirror above the sink in the bathroom.",
+    },
+  ],
+
+  writingPrompts: [
+    {
+      id: "wp1",
+      type: "short",
+      title: "Short Writing Task",
+      prompt: "Describe your bathroom at home in 2-3 sentences. What items are in it?",
+    },
+    {
+      id: "wp2",
+      type: "paragraph",
+      title: "Guided Paragraph",
+      prompt:
+        "Write a paragraph (5-7 sentences) about your daily bathroom routine in the morning. Explain what you do first, next, and last, and how long it takes.",
+    },
+    {
+      id: "wp3",
+      type: "creative",
+      title: "Creative Challenge",
+      prompt:
+        "Imagine you are designing a bathroom for a treehouse. Describe what special items you would include and why.",
+      suggestedVocabulary: [
+        "sink",
+        "mirror",
+        "toothbrush",
+        "towel",
+        "shower",
+        "bathtub",
+        "soap",
+        "toilet",
+      ],
+    },
+  ],
+
+  selfAssessment: [
+    {
+      wordPair: "bathtub / shower",
+      question: "Can you describe the difference and say which you prefer?",
+    },
+    {
+      wordPair: "toilet / sink",
+      question: "Can you explain these to a plumber or hotel receptionist?",
+    },
+    {
+      wordPair: "toothbrush / toothpaste",
+      question: "Can you ask for these in a shop if you forgot yours while travelling?",
+    },
+    {
+      wordPair: "towel",
+      question: "Can you ask for different types? (bath towel, hand towel, face cloth)",
+    },
+    {
+      wordPair: "soap / shampoo / conditioner",
+      question: "Can you name all three and explain what each is for?",
+    },
+    { wordPair: "tap / faucet", question: "Can you use the right word for UK vs US English?" },
+    {
+      wordPair: "mirror / cabinet",
+      question: "Can you describe your bathroom to a friend using these words?",
+    },
+    { wordPair: "drain / plug", question: "Can you explain a plumbing problem using these words?" },
+  ],
+
   subtopics: [
     {
       id: "fixtures-fittings",

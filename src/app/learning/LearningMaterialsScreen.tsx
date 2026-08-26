@@ -12,9 +12,20 @@ import {
   CheckCircle2,
   XCircle,
 } from "lucide-react";
+import { HomeIndicator } from "../shared/HomeIndicator";
+import {
+  VocabularyDetailsSection,
+  PronunciationSection,
+  PriorityTiersSection,
+  CollocationsSection,
+  SynonymsAntonymsSection,
+  AdditionalExercisesSection,
+  ErrorCorrectionSection,
+  WritingPromptsSection,
+  SelfAssessmentSection,
+} from "./ExtraSections";
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
-import { HomeIndicator } from "../shared/HomeIndicator";
 import { BackButton } from "../shared/BackButton";
 import { COURSE_UNITS, DEFAULT_UNIT_ID, type VocabularyItem } from "../data/lessons";
 import { loadedUnitVocabulary } from "../data/vocabulary";
@@ -30,23 +41,42 @@ interface Props {
 type SectionId =
   | "words"
   | "passage"
+  | "vocabulary-details"
+  | "pronunciation"
+  | "priority-tiers"
+  | "collocations"
+  | "synonyms-antonyms"
   | "phrases"
-  | "dialogue"
-  | "mistakes"
   | "word-formation"
-  | "practice"
+  | "dialogue"
   | "culture"
+  | "mistakes"
+  | "practice"
+  | "additional-exercises"
+  | "error-correction"
+  | "writing-prompts"
+  | "self-assessment"
   | "reference";
 
-const SECTION_META: Record<SectionId, { label: string; icon: typeof BookOpen }> = {
+import type * as React from "react";
+const SECTION_META: Record<SectionId, { label: string; icon: React.ElementType }> = {
   words: { label: "Words", icon: Layers },
   passage: { label: "Reading", icon: BookOpen },
-  phrases: { label: "Idioms & Phrasal Verbs", icon: MessageSquareQuote },
-  dialogue: { label: "Dialogue", icon: MessagesSquare },
-  mistakes: { label: "Common Mistakes", icon: AlertTriangle },
+  "vocabulary-details": { label: "Vocabulary Details", icon: Layers },
+  pronunciation: { label: "Pronunciation Guide", icon: Type },
+  "priority-tiers": { label: "Priority Tiers", icon: AlertTriangle },
+  collocations: { label: "Collocations", icon: MessageSquareQuote },
+  "synonyms-antonyms": { label: "Synonyms & Antonyms", icon: PencilLine },
+  phrases: { label: "Idioms & Phrases", icon: MessageSquareQuote },
   "word-formation": { label: "Word Forms", icon: Type },
-  practice: { label: "Practice", icon: PencilLine },
+  dialogue: { label: "Dialogue", icon: MessagesSquare },
   culture: { label: "Culture & Usage", icon: Globe },
+  mistakes: { label: "Common Mistakes", icon: AlertTriangle },
+  practice: { label: "Fill in the Blanks", icon: PencilLine },
+  "additional-exercises": { label: "Additional Exercises", icon: PencilLine },
+  "error-correction": { label: "Error Correction", icon: AlertTriangle },
+  "writing-prompts": { label: "Writing Prompts", icon: PencilLine },
+  "self-assessment": { label: "Self-Assessment", icon: CheckCircle2 },
   reference: { label: "Reference", icon: Table2 },
 };
 
@@ -61,12 +91,21 @@ function availableSections(m: UnitLearningMaterials): SectionId[] {
   const present: [SectionId, boolean][] = [
     ["words", Boolean(m.subtopics?.length)],
     ["passage", Boolean(m.passage)],
+    ["vocabulary-details", Boolean(m.registerLabels?.length || m.visualVocabularyMap?.length)],
+    ["pronunciation", Boolean(m.pronunciationGuide?.length)],
+    ["priority-tiers", Boolean(m.priorityTiers)],
+    ["collocations", Boolean(m.collocations?.length || m.collocationsQuiz?.length)],
+    ["synonyms-antonyms", Boolean(m.synonymsAntonyms?.length)],
     ["phrases", Boolean(m.phrases?.length)],
-    ["dialogue", Boolean(m.dialogue?.lines.length)],
-    ["mistakes", Boolean(m.mistakes?.length)],
     ["word-formation", Boolean(m.wordFormation?.length)],
-    ["practice", Boolean(m.blankExercises?.length)],
+    ["dialogue", Boolean(m.dialogue?.lines.length)],
     ["culture", Boolean(m.culturalNotes?.length)],
+    ["mistakes", Boolean(m.mistakes?.length)],
+    ["practice", Boolean(m.blankExercises?.length)],
+    ["additional-exercises", Boolean(m.additionalExercises)],
+    ["error-correction", Boolean(m.errorCorrection?.length)],
+    ["writing-prompts", Boolean(m.writingPrompts?.length)],
+    ["self-assessment", Boolean(m.selfAssessment?.length)],
     ["reference", Boolean(m.wordMeta?.length)],
   ];
   return present.filter(([, ok]) => ok).map(([id]) => id);
@@ -194,12 +233,23 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
               <WordsSection materials={materials} unitVocabulary={loadedUnitVocabulary(unit.id)} />
             )}
             {section === "passage" && <PassageSection materials={materials} />}
+            {section === "vocabulary-details" && <VocabularyDetailsSection materials={materials} />}
+            {section === "pronunciation" && <PronunciationSection materials={materials} />}
+            {section === "priority-tiers" && <PriorityTiersSection materials={materials} />}
+            {section === "collocations" && <CollocationsSection materials={materials} />}
+            {section === "synonyms-antonyms" && <SynonymsAntonymsSection materials={materials} />}
             {section === "phrases" && <PhrasesSection materials={materials} />}
-            {section === "dialogue" && <DialogueSection materials={materials} />}
-            {section === "mistakes" && <MistakesSection materials={materials} />}
             {section === "word-formation" && <WordFormationSection materials={materials} />}
-            {section === "practice" && <PracticeSection materials={materials} />}
+            {section === "dialogue" && <DialogueSection materials={materials} />}
             {section === "culture" && <CultureSection materials={materials} />}
+            {section === "mistakes" && <MistakesSection materials={materials} />}
+            {section === "practice" && <PracticeSection materials={materials} />}
+            {section === "additional-exercises" && (
+              <AdditionalExercisesSection materials={materials} />
+            )}
+            {section === "error-correction" && <ErrorCorrectionSection materials={materials} />}
+            {section === "writing-prompts" && <WritingPromptsSection materials={materials} />}
+            {section === "self-assessment" && <SelfAssessmentSection materials={materials} />}
             {section === "reference" && <ReferenceSection materials={materials} />}
           </>
         )}

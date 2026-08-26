@@ -150,6 +150,82 @@ export interface WordMetaEntry {
 /** The placeholder token used inside `BlankExercise.sentence`. */
 export const BLANK_TOKEN = "____";
 
+export interface RegisterLabel {
+  word: string;
+  register: string;
+  emoji: string;
+  description: string;
+}
+
+export interface PronunciationEntry {
+  word: string;
+  ipa: string;
+  stress: string;
+}
+
+export interface PriorityTiers {
+  essential: string[];
+  important: string[];
+  goodToKnow: string[];
+}
+
+export interface VisualVocabularyCategory {
+  category: string;
+  emoji: string;
+  items: { word: string; related: string[] }[];
+}
+
+export interface CollocationEntry {
+  phrase: string;
+  variations: string;
+  example: string;
+}
+
+export interface SynonymAntonymEntry {
+  word: string;
+  synonym: string;
+  antonym: string;
+}
+
+export interface MatchingExercise {
+  word: string;
+  definition: string;
+}
+
+export interface MultipleChoiceExercise {
+  id: string;
+  question: string;
+  options: string[];
+  correctIndex: number;
+  explanation?: string;
+}
+
+export interface RewriteExercise {
+  id: string;
+  sentence: string;
+  hintWord: string;
+  answer: string;
+}
+
+export interface ErrorCorrectionExercise {
+  id: string;
+  wrong: string;
+  right: string;
+}
+
+export interface WritingPrompt {
+  id: string;
+  type: string;
+  title: string;
+  prompt: string;
+  suggestedVocabulary?: string[];
+}
+
+export interface SelfAssessmentItem {
+  wordPair: string;
+  question: string;
+}
+
 export interface UnitLearningMaterials {
   unitId: string;
   subtopics?: SubtopicGroup[];
@@ -161,4 +237,19 @@ export interface UnitLearningMaterials {
   blankExercises?: BlankExercise[];
   culturalNotes?: CulturalNote[];
   wordMeta?: WordMetaEntry[];
+  registerLabels?: RegisterLabel[];
+  pronunciationGuide?: PronunciationEntry[];
+  priorityTiers?: PriorityTiers;
+  visualVocabularyMap?: VisualVocabularyCategory[];
+  collocations?: CollocationEntry[];
+  synonymsAntonyms?: SynonymAntonymEntry[];
+  additionalExercises?: {
+    matching?: MatchingExercise[];
+    multipleChoice?: MultipleChoiceExercise[];
+    rewrite?: RewriteExercise[];
+  };
+  collocationsQuiz?: MultipleChoiceExercise[];
+  errorCorrection?: ErrorCorrectionExercise[];
+  writingPrompts?: WritingPrompt[];
+  selfAssessment?: SelfAssessmentItem[];
 }
