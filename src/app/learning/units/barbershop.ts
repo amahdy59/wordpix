@@ -186,61 +186,56 @@ export const BARBERSHOP_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene:
+      "A regular customer visits the barbershop for a haircut and a shave before a special event",
     lines: [
       {
-        speaker:
-          "Scene: A regular customer visits the barbershop for a haircut and a shave before a special event",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Morning! I've got a wedding this weekend. I need a fresh cut and a clean shave.",
       },
       {
-        speaker: "Morning! I've got a wedding this weekend. I need a fresh cut and a clean shave.",
-        text: "Barber:",
+        speaker: "Barber",
+        text: "Let's get you looking sharp. The usual fade, or something different this time?",
       },
       {
-        speaker: "Let's get you looking sharp. The usual fade, or something different this time?",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "A taper on the sides and a bit longer on top. Maybe a pompadour? What do you think?",
       },
       {
-        speaker:
-          "A taper on the sides and a bit longer on top. Maybe a pompadour? What do you think?",
-        text: "Barber:",
+        speaker: "Barber",
+        text: "A pompadour would look great. I'll use the clippers for the taper, then the scissors for the length on top. Want a line up too?",
       },
       {
-        speaker:
-          "A pompadour would look great. I'll use the clippers for the taper, then the scissors for the length on top. Want a line up too?",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Definitely. A clean line up makes all the difference. What about the beard?",
       },
       {
-        speaker: "Definitely. A clean line up makes all the difference. What about the beard?",
-        text: "Barber:",
+        speaker: "Barber",
+        text: "I'll shape it with the trimmer and clean the edges with the razor. Then a hot towel and some conditioning to soften it.",
       },
       {
-        speaker:
-          "I'll shape it with the trimmer and clean the edges with the razor. Then a hot towel and some conditioning to soften it.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Sounds perfect. Can you do a proper shave on the neck too?",
       },
       {
-        speaker: "Sounds perfect. Can you do a proper shave on the neck too?",
-        text: "Barber:",
+        speaker: "Barber",
+        text: "Of course. I'll lather up the shaving brush and use the strop to sharpen the razor. Nothing beats a straight razor shave.",
       },
       {
-        speaker:
-          "Of course. I'll lather up the shaving brush and use the strop to sharpen the razor. Nothing beats a straight razor shave.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "What product should I use for the pompadour — gel or pomade?",
       },
       {
-        speaker: "What product should I use for the pompadour — gel or pomade?",
-        text: "Barber:",
+        speaker: "Barber",
+        text: "Pomade gives a natural shine without the stiffness. Wax works too if you want more hold. Mousse is better for volume.",
       },
       {
-        speaker:
-          "Pomade gives a natural shine without the stiffness. Wax works too if you want more hold. Mousse is better for volume.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "I'll go with pomade. Hit me with the spray bottle to finish — and let me check the mirror. I want to look my best.",
       },
       {
-        speaker:
-          "I'll go with pomade. Hit me with the spray bottle to finish — and let me check the mirror. I want to look my best.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Perfect. Thanks.",
       },
     ],
   },

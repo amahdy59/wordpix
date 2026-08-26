@@ -206,57 +206,51 @@ export const RADIO_STATION_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A producer and radio host preparing for the morning show in the control room",
     lines: [
       {
-        speaker:
-          "Scene: A producer and radio host preparing for the morning show in the control room",
-        text: "Producer:",
+        speaker: "Producer",
+        text: "We're on air in five minutes. The playlist is loaded. The jingle is cued. Is the mixing console set?",
       },
       {
-        speaker:
-          "We're on air in five minutes. The playlist is loaded. The jingle is cued. Is the mixing console set?",
-        text: "Host:",
+        speaker: "Host",
+        text: "Levels are good. The headphones are comfortable and the pop filter is in position. Is the teleprompter — sorry, the cue card — ready?",
       },
       {
-        speaker:
-          "Levels are good. The headphones are comfortable and the pop filter is in position. Is the teleprompter — sorry, the cue card — ready?",
-        text: "Producer:",
+        speaker: "Producer",
+        text: "Right here. Your first segment is the weather update, then the traffic report. The news anchor has the bulletin at half past.",
       },
       {
-        speaker:
-          "Right here. Your first segment is the weather update, then the traffic report. The news anchor has the bulletin at half past.",
-        text: "Host:",
+        speaker: "Host",
+        text: "Who's the guest for the interview segment?",
       },
       {
-        speaker: "Who's the guest for the interview segment?",
-        text: "Producer:",
+        speaker: "Producer",
+        text: "A local author. The sound engineer has tested the second microphone in the recording booth. The acoustic panels are dampening the echo well.",
       },
       {
-        speaker:
-          "A local author. The sound engineer has tested the second microphone in the recording booth. The acoustic panels are dampening the echo well.",
-        text: "Host:",
+        speaker: "Host",
+        text: "What about the commercial break? How long is it?",
       },
       {
-        speaker: "What about the commercial break? How long is it?",
-        text: "Producer:",
+        speaker: "Producer",
+        text: "Three minutes — two commercials and a station ID. The sound effect for the transition is loaded.",
       },
       {
-        speaker:
-          "Three minutes — two commercials and a station ID. The sound effect for the transition is loaded.",
-        text: "Host:",
+        speaker: "Host",
+        text: "Good. And the music block after the interview?",
       },
       {
-        speaker: "Good. And the music block after the interview?",
-        text: "Producer:",
+        speaker: "Producer",
+        text: "Four songs. I've checked the waveform on the audio software — all levels are balanced. The digital recorder is running for the podcast version.",
       },
       {
-        speaker:
-          "Four songs. I've checked the waveform on the audio software — all levels are balanced. The digital recorder is running for the podcast version.",
-        text: "Host:",
+        speaker: "Host",
+        text: "The on-air light just turned red. Are we live?",
       },
       {
-        speaker: "The on-air light just turned red. Are we live?",
-        text: "Producer:",
+        speaker: "Producer",
+        text: "In ten seconds. The transmitter is active. The antenna is broadcasting across the city. Deep breath — and... you're on.",
       },
     ],
   },

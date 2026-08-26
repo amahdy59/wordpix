@@ -179,55 +179,51 @@ export const BIRD_SANCTUARY_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A volunteer leading a birdwatching group at a sanctuary",
     lines: [
       {
-        speaker: "Scene: A volunteer leading a birdwatching group at a sanctuary",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "If we're quiet, we should spot some good species from this hide. Has everyone got their binoculars ready?",
       },
       {
-        speaker:
-          "If we're quiet, we should spot some good species from this hide. Has everyone got their binoculars ready?",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "What should we look for?",
       },
       {
-        speaker: "What should we look for?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "See those tall grey birds standing in the shallows? Those are herons — they stand perfectly still, waiting for fish.",
       },
       {
-        speaker:
-          "See those tall grey birds standing in the shallows? Those are herons — they stand perfectly still, waiting for fish.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "There's something small and blue! It just flew past very fast.",
       },
       {
-        speaker: "There's something small and blue! It just flew past very fast.",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "A kingfisher! Excellent spot. They're hard to see because they move so quickly. That flash of electric blue is unmistakable.",
       },
       {
-        speaker:
-          "A kingfisher! Excellent spot. They're hard to see because they move so quickly. That flash of electric blue is unmistakable.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "What are those black and white birds with orange beaks?",
       },
       {
-        speaker: "What are those black and white birds with orange beaks?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Oystercatchers. Despite their name, they mostly eat mussels and worms, not oysters.",
       },
       {
-        speaker:
-          "Oystercatchers. Despite their name, they mostly eat mussels and worms, not oysters.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "I can hear a really beautiful song but I can't see the bird.",
       },
       {
-        speaker: "I can hear a really beautiful song but I can't see the bird.",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "That's a blackbird singing from the trees behind us. They have one of the most musical songs of any British bird.",
       },
       {
-        speaker:
-          "That's a blackbird singing from the trees behind us. They have one of the most musical songs of any British bird.",
-        text: "Visitor:",
+        speaker: "Visitor",
+        text: "How many species have been recorded here?",
       },
       {
-        speaker: "How many species have been recorded here?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Over 180 species throughout the year. Spring and autumn are the best times — that's when migrating birds pass through.",
       },
     ],
   },

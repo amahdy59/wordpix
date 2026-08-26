@@ -452,6 +452,14 @@ function DialogueSection({ materials }: { materials: UnitLearningMaterials }) {
       <h2 id="dialogue-heading" className="font-sans font-bold text-lg text-foreground">
         Mini Dialogue — {dialogue.title}
       </h2>
+      {/*
+        The stage direction Figma prints above the exchange. It used to be
+        parsed as the first speaker, which is what shifted every subsequent
+        speaker/line pair by one.
+      */}
+      {dialogue.scene && (
+        <p className="mt-1 font-sans text-sm text-muted-foreground italic">{dialogue.scene}</p>
+      )}
       <ol className="mt-3 space-y-2">
         {dialogue.lines.map((line, i) => (
           <li key={`${line.speaker}-${i}`} className="flex gap-3">

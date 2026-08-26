@@ -223,57 +223,51 @@ export const HAIR_SALON_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A customer discusses a new hairstyle with their stylist at the salon",
     lines: [
       {
-        speaker: "Scene: A customer discusses a new hairstyle with their stylist at the salon",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "I want something different. I've had the same ponytail for years. What would suit my face shape?",
       },
       {
-        speaker:
-          "I want something different. I've had the same ponytail for years. What would suit my face shape?",
-        text: "Stylist:",
+        speaker: "Stylist",
+        text: "With your features, a bob with layers would look great. Or if you want to go shorter, a pixie with a side part.",
       },
       {
-        speaker:
-          "With your features, a bob with layers would look great. Or if you want to go shorter, a pixie with a side part.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "I'm not brave enough for a pixie yet. What about bangs?",
       },
       {
-        speaker: "I'm not brave enough for a pixie yet. What about bangs?",
-        text: "Stylist:",
+        speaker: "Stylist",
+        text: "Bangs would frame your face nicely. I'd do a soft trim with layers that blend into the bangs. Want me to add some waves with the curling iron?",
       },
       {
-        speaker:
-          "Bangs would frame your face nicely. I'd do a soft trim with layers that blend into the bangs. Want me to add some waves with the curling iron?",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Yes! And can you do a blow dry at the end? My hair always looks flat when I do it myself.",
       },
       {
-        speaker:
-          "Yes! And can you do a blow dry at the end? My hair always looks flat when I do it myself.",
-        text: "Stylist:",
+        speaker: "Stylist",
+        text: "Of course. I'll use the diffuser for volume. Do you straighten your hair often? A flat iron can damage it without heat protection.",
       },
       {
-        speaker:
-          "Of course. I'll use the diffuser for volume. Do you straighten your hair often? A flat iron can damage it without heat protection.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Sometimes. What about for special occasions — can you do an updo or braids?",
       },
       {
-        speaker: "Sometimes. What about for special occasions — can you do an updo or braids?",
-        text: "Stylist:",
+        speaker: "Stylist",
+        text: "Absolutely. I do updos, braids, twists, and even cornrows. For weddings, a bun with a few pins looks elegant.",
       },
       {
-        speaker:
-          "Absolutely. I do updos, braids, twists, and even cornrows. For weddings, a bun with a few pins looks elegant.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "My sister wants extensions. Do you do those here?",
       },
       {
-        speaker: "My sister wants extensions. Do you do those here?",
-        text: "Stylist:",
+        speaker: "Stylist",
+        text: "Yes — clip-ins or bonded extensions. We also do wigs and hair nets for theatrical work. Let me start your trim now.",
       },
       {
-        speaker:
-          "Yes — clip-ins or bonded extensions. We also do wigs and hair nets for theatrical work. Let me start your trim now.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Sounds perfect. Just don't give me a buzz cut — I want to keep some length!",
       },
     ],
   },

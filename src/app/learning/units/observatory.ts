@@ -208,55 +208,31 @@ export const OBSERVATORY_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "An astronomer leading a public viewing night at the observatory",
     lines: [
       {
-        speaker: "Scene: An astronomer leading a public viewing night at the observatory",
-        text: "Astronomer:",
+        speaker: "Astronomer",
+        text: "Welcome to the observatory. Tonight we'll observe Saturn, the Orion Nebula, and — if the sky stays clear — a meteor shower.",
       },
       {
-        speaker:
-          "Welcome to the observatory. Tonight we'll observe Saturn, the Orion Nebula, and — if the sky stays clear — a meteor shower.",
-        text: "Visitor 1:",
+        speaker: "Astronomer",
+        text: "That's our reflecting telescope — the mirror inside gathers light from objects billions of light-years away. The rotating roof opens to any part of the sky.",
       },
       {
-        speaker: "Is that the main telescope? The dome is enormous!",
-        text: "Astronomer:",
+        speaker: "Astronomer",
+        text: "We use the finder scope first — a small auxiliary telescope — then the telescope mount tracks the object as the Earth rotates. The star chart helps with identification.",
       },
       {
-        speaker:
-          "That's our reflecting telescope — the mirror inside gathers light from objects billions of light-years away. The rotating roof opens to any part of the sky.",
-        text: "Visitor 2:",
+        speaker: "Astronomer",
+        text: "A star produces its own light. A planet orbits a star and reflects light. A comet is ice and dust — it develops a glowing tail when it approaches the Sun.",
       },
       {
-        speaker: "How do you find a specific star in all that darkness?",
-        text: "Astronomer:",
+        speaker: "Astronomer",
+        text: "The spectrograph — it breaks starlight into a spectrum, revealing the star's temperature and composition. The CCD camera captures images digitally.",
       },
       {
-        speaker:
-          "We use the finder scope first — a small auxiliary telescope — then the telescope mount tracks the object as the Earth rotates. The star chart helps with identification.",
-        text: "Visitor 1:",
-      },
-      {
-        speaker: "What's the difference between a planet, a star, and a comet?",
-        text: "Astronomer:",
-      },
-      {
-        speaker:
-          "A star produces its own light. A planet orbits a star and reflects light. A comet is ice and dust — it develops a glowing tail when it approaches the Sun.",
-        text: "Visitor 2:",
-      },
-      {
-        speaker: "What's that instrument next to the computer monitor?",
-        text: "Astronomer:",
-      },
-      {
-        speaker:
-          "The spectrograph — it breaks starlight into a spectrum, revealing the star's temperature and composition. The CCD camera captures images digitally.",
-        text: "Visitor 1:",
-      },
-      {
-        speaker: "Why are the pathway lights red instead of white?",
-        text: "Astronomer:",
+        speaker: "Astronomer",
+        text: "Red flashlights preserve night vision. White light destroys your ability to see faint objects. It takes thirty minutes for your eyes to fully adapt to darkness.",
       },
     ],
   },

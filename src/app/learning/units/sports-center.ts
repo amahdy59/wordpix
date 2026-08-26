@@ -113,51 +113,27 @@ export const SPORTS_CENTER_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A coach introduces new members to the sports center during an open day",
     lines: [
       {
-        speaker: "Scene: A coach introduces new members to the sports center during an open day",
-        text: "Coach:",
+        speaker: "Coach",
+        text: "Welcome to the sports center! We offer over fifteen different sports here. What are you interested in?",
       },
       {
-        speaker:
-          "Welcome to the sports center! We offer over fifteen different sports here. What are you interested in?",
-        text: "Member 1:",
+        speaker: "Coach",
+        text: "Soccer is on the main field — we have a goal, a net, and cones set up. Basketball is in the hall with the hoop and the scoreboard.",
       },
       {
-        speaker: "I love soccer and basketball. Where are the courts?",
-        text: "Coach:",
+        speaker: "Coach",
+        text: "Courts are upstairs. We provide the ball and the net. You can also try volleyball and table tennis on the same floor.",
       },
       {
-        speaker:
-          "Soccer is on the main field — we have a goal, a net, and cones set up. Basketball is in the hall with the hoop and the scoreboard.",
-        text: "Member 2:",
+        speaker: "Coach",
+        text: "Yes — running, relay race, long jump, and high jump are outside. The javelin and discus area is behind the field.",
       },
       {
-        speaker: "What about tennis and badminton? I brought my racket.",
-        text: "Coach:",
-      },
-      {
-        speaker:
-          "Courts are upstairs. We provide the ball and the net. You can also try volleyball and table tennis on the same floor.",
-        text: "Member 1:",
-      },
-      {
-        speaker: "Do you have track and field? I want to try sprinting and hurdles.",
-        text: "Coach:",
-      },
-      {
-        speaker:
-          "Yes — running, relay race, long jump, and high jump are outside. The javelin and discus area is behind the field.",
-        text: "Member 2:",
-      },
-      {
-        speaker: "What equipment do we need? I have a helmet and a glove from baseball.",
-        text: "Coach:",
-      },
-      {
-        speaker:
-          "For most sports, we provide the bat, the ball, and the shin guard. Bring your own knee pad and helmet for football and rugby.",
-        text: "Member 1:",
+        speaker: "Coach",
+        text: "For most sports, we provide the bat, the ball, and the shin guard. Bring your own knee pad and helmet for football and rugby.",
       },
     ],
   },

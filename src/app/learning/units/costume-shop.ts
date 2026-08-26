@@ -205,56 +205,51 @@ export const COSTUME_SHOP_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A parent and child choosing costumes for a school play at a costume shop",
     lines: [
       {
-        speaker: "Scene: A parent and child choosing costumes for a school play at a costume shop",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "The school play is next Friday. We need a costume. What character are you playing?",
       },
       {
-        speaker:
-          "The school play is next Friday. We need a costume. What character are you playing?",
-        text: "Child:",
+        speaker: "Child",
+        text: "A wizard! I need a cape, a wand, and a hat.",
       },
       {
-        speaker: "A wizard! I need a cape, a wand, and a hat.",
-        text: "Shop Asst:",
+        speaker: "Shop Asst",
+        text: "We have a wizard set right here — cape, pointed hat, and a wand with a star on top. Want to try it on?",
       },
       {
-        speaker:
-          "We have a wizard set right here — cape, pointed hat, and a wand with a star on top. Want to try it on?",
-        text: "Child:",
+        speaker: "Child",
+        text: "This is great! But can I also look at the knight costumes? My friend is going as a pirate.",
       },
       {
-        speaker:
-          "This is great! But can I also look at the knight costumes? My friend is going as a pirate.",
-        text: "Shop Asst:",
+        speaker: "Shop Asst",
+        text: "The knight section has a shield, a sword, and a crown. The pirate costumes are next to them — with an eye patch and a hat.",
       },
       {
-        speaker:
-          "The knight section has a shield, a sword, and a crown. The pirate costumes are next to them — with an eye patch and a hat.",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "What about animal costumes? My younger one needs something too.",
       },
       {
-        speaker: "What about animal costumes? My younger one needs something too.",
-        text: "Shop Asst:",
+        speaker: "Shop Asst",
+        text: "We have cat ears, a bunny tail, a lion mane headband, butterfly wings, and a full bear onesie. The dinosaur suit is very popular.",
       },
       {
-        speaker:
-          "We have cat ears, a bunny tail, a lion mane headband, butterfly wings, and a full bear onesie. The dinosaur suit is very popular.",
-        text: "Child:",
+        speaker: "Child",
+        text: "Look — a robot costume! And a superhero mask with a cape!",
       },
       {
-        speaker: "Look — a robot costume! And a superhero mask with a cape!",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "Focus. Wizard costume. Does the wig come with it?",
       },
       {
-        speaker: "Focus. Wizard costume. Does the wig come with it?",
-        text: "Shop Asst:",
+        speaker: "Shop Asst",
+        text: "The wig is separate. We also have a mask if you want a mysterious look. The tiara is for the princess and fairy costumes.",
       },
       {
-        speaker:
-          "The wig is separate. We also have a mask if you want a mysterious look. The tiara is for the princess and fairy costumes.",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "We'll take the wizard cape, the hat, and the wand. Can you wrap the monkey mask as a gift for his friend?",
       },
     ],
   },

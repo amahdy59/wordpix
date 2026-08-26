@@ -237,50 +237,47 @@ export const MARKET_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A mother and son shop for groceries at the local market",
     lines: [
       {
-        speaker: "Scene: A mother and son shop for groceries at the local market",
-        text: "Mother:",
+        speaker: "Mother",
+        text: "Let's start with the fruit section. We need apple, banana, and orange for the week.",
       },
       {
-        speaker:
-          "Let's start with the fruit section. We need apple, banana, and orange for the week.",
-        text: "Son:",
+        speaker: "Son",
+        text: "Can we get strawberry and watermelon too? And maybe a mango?",
       },
       {
-        speaker: "Can we get strawberry and watermelon too? And maybe a mango?",
-        text: "Mother:",
+        speaker: "Mother",
+        text: "The mango looks good today. Grab a pear and a peach too — and check if the pineapple is ripe.",
       },
       {
-        speaker:
-          "The mango looks good today. Grab a pear and a peach too — and check if the pineapple is ripe.",
-        text: "Son:",
+        speaker: "Son",
+        text: "What about lemon and lime? You said we need them for cooking.",
       },
       {
-        speaker: "What about lemon and lime? You said we need them for cooking.",
-        text: "Mother:",
+        speaker: "Mother",
+        text: "Yes, good memory. Now let's move to vegetables. We need carrot, broccoli, and onion.",
       },
       {
-        speaker:
-          "Yes, good memory. Now let's move to vegetables. We need carrot, broccoli, and onion.",
-        text: "Son:",
+        speaker: "Son",
+        text: "I'll get the pepper and tomato. Should I pick up cucumber and lettuce for the salad?",
       },
       {
-        speaker:
-          "I'll get the pepper and tomato. Should I pick up cucumber and lettuce for the salad?",
-        text: "Mother:",
+        speaker: "Mother",
+        text: "Please. And add potato, mushroom, spinach, garlic, and corn to the basket.",
       },
       {
-        speaker: "Please. And add potato, mushroom, spinach, garlic, and corn to the basket.",
-        text: "Son:",
+        speaker: "Son",
+        text: "That's a lot! What about the meat section?",
       },
       {
-        speaker: "That's a lot! What about the meat section?",
-        text: "Mother:",
+        speaker: "Mother",
+        text: "We need chicken and beef for dinner. Your father wants fish — maybe salmon.",
       },
       {
-        speaker: "We need chicken and beef for dinner. Your father wants fish — maybe salmon.",
-        text: "Son:",
+        speaker: "Son",
+        text: "Can we get shrimp too? And sausage for breakfast? I also like ham and bacon.",
       },
     ],
   },

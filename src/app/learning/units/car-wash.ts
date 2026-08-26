@@ -185,60 +185,55 @@ export const CAR_WASH_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A car owner visits a car wash for the first time and asks about the different services",
     lines: [
       {
-        speaker:
-          "Scene: A car owner visits a car wash for the first time and asks about the different services",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "Hi, my car is filthy. What options do you have?",
       },
       {
-        speaker: "Hi, my car is filthy. What options do you have?",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "We offer three levels: a basic automatic wash with rinse and dry, a foam wash with wax, or a full hand wash with detailing.",
       },
       {
-        speaker:
-          "We offer three levels: a basic automatic wash with rinse and dry, a foam wash with wax, or a full hand wash with detailing.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "What's included in the full hand wash?",
       },
       {
-        speaker: "What's included in the full hand wash?",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "We start with the pressure washer on the hood, roof, door, and trunk. Then the foam cannon, followed by a hand scrub with a sponge and car soap.",
       },
       {
-        speaker:
-          "We start with the pressure washer on the hood, roof, door, and trunk. Then the foam cannon, followed by a hand scrub with a sponge and car soap.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "What about the wheels and the underside?",
       },
       {
-        speaker: "What about the wheels and the underside?",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "The wheel wash and undercarriage rinse are included. We also apply tire shine and use the clay bar on stubborn spots.",
       },
       {
-        speaker:
-          "The wheel wash and undercarriage rinse are included. We also apply tire shine and use the clay bar on stubborn spots.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "And the inside? The seats and the dashboard are dusty.",
       },
       {
-        speaker: "And the inside? The seats and the dashboard are dusty.",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "The interior detail covers vacuum, interior cleaner on the seats, glass cleaner on all windows, and a protectant on the dashboard. We finish with an air freshener.",
       },
       {
-        speaker:
-          "The interior detail covers vacuum, interior cleaner on the seats, glass cleaner on all windows, and a protectant on the dashboard. We finish with an air freshener.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "Do you use a brush or is it touchless?",
       },
       {
-        speaker: "Do you use a brush or is it touchless?",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "The automatic bay is touchless — just rollers and dryer. The hand wash uses a soft sponge and microfiber towel only. No scratches.",
       },
       {
-        speaker:
-          "The automatic bay is touchless — just rollers and dryer. The hand wash uses a soft sponge and microfiber towel only. No scratches.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "I'll go with the full hand wash. How long does it take?",
       },
       {
-        speaker: "I'll go with the full hand wash. How long does it take?",
-        text: "Attendant:",
+        speaker: "Attendant",
+        text: "About forty-five minutes. You can wait in the lounge. We'll apply polish and degreaser where needed — your car will look brand new.",
       },
     ],
   },

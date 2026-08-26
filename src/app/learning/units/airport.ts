@@ -105,50 +105,51 @@ export const AIRPORT_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "At the check-in desk",
     lines: [
       {
-        speaker: "Scene: At the check-in desk",
-        text: "Agent:",
+        speaker: "Agent",
+        text: "Good morning. May I see your passport and booking reference, please?",
       },
       {
-        speaker: "Good morning. May I see your passport and booking reference, please?",
-        text: "Passenger:",
+        speaker: "Passenger",
+        text: "Here you are. My flight is to Istanbul at eleven fifteen.",
       },
       {
-        speaker: "Here you are. My flight is to Istanbul at eleven fifteen.",
-        text: "Agent:",
+        speaker: "Agent",
+        text: "Thank you. Would you like a window seat or an aisle seat?",
       },
       {
-        speaker: "Thank you. Would you like a window seat or an aisle seat?",
-        text: "Passenger:",
+        speaker: "Passenger",
+        text: "A window seat, please.",
       },
       {
-        speaker: "A window seat, please.",
-        text: "Agent:",
+        speaker: "Agent",
+        text: "Certainly. Are you checking in any luggage?",
       },
       {
-        speaker: "Certainly. Are you checking in any luggage?",
-        text: "Passenger:",
+        speaker: "Passenger",
+        text: "Yes, one suitcase.",
       },
       {
-        speaker: "Yes, one suitcase.",
-        text: "Agent:",
+        speaker: "Agent",
+        text: "Please place it on the scale. It's eighteen kilos — that's within the limit.",
       },
       {
-        speaker: "Please place it on the scale. It's eighteen kilos — that's within the limit.",
-        text: "Passenger:",
+        speaker: "Passenger",
+        text: "Do I need to print my boarding pass?",
       },
       {
-        speaker: "Do I need to print my boarding pass?",
-        text: "Agent:",
+        speaker: "Agent",
+        text: "No, I've printed it for you. Your gate is B7. Boarding starts at ten forty-five.",
       },
       {
-        speaker: "No, I've printed it for you. Your gate is B7. Boarding starts at ten forty-five.",
-        text: "Passenger:",
+        speaker: "Passenger",
+        text: "Thank you. Where is the security checkpoint?",
       },
       {
-        speaker: "Thank you. Where is the security checkpoint?",
-        text: "Agent:",
+        speaker: "Agent",
+        text: "Go straight ahead and follow the signs. Have a pleasant flight!",
       },
     ],
   },

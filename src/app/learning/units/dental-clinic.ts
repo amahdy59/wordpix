@@ -232,65 +232,59 @@ export const DENTAL_CLINIC_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A nervous patient visits the dental clinic for a routine check-up and cleaning",
     lines: [
       {
-        speaker:
-          "Scene: A nervous patient visits the dental clinic for a routine check-up and cleaning",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "I'm a bit nervous. I haven't been to the dentist in two years.",
       },
       {
-        speaker: "I'm a bit nervous. I haven't been to the dentist in two years.",
-        text: "Dentist:",
+        speaker: "Dentist",
+        text: "Don't worry — we'll start with a simple cleaning. The hygienist will use the scaler to remove any build-up, then the polisher for a nice shine.",
       },
       {
-        speaker:
-          "Don't worry — we'll start with a simple cleaning. The hygienist will use the scaler to remove any build-up, then the polisher for a nice shine.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "Will it hurt? The scraping sound makes me anxious.",
       },
       {
-        speaker: "Will it hurt? The scraping sound makes me anxious.",
-        text: "Dentist:",
+        speaker: "Dentist",
+        text: "The ultrasonic scaler vibrates gently — most patients barely feel it. We'll also use suction to keep your mouth dry and comfortable.",
       },
       {
-        speaker:
-          "The ultrasonic scaler vibrates gently — most patients barely feel it. We'll also use suction to keep your mouth dry and comfortable.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "Do I need an X-ray?",
       },
       {
-        speaker: "Do I need an X-ray?",
-        text: "Dentist:",
+        speaker: "Dentist",
+        text: "Yes, let's take one with the X-ray machine. It'll show us if there are any cavities, cracks, or issues below the surface.",
       },
       {
-        speaker:
-          "Yes, let's take one with the X-ray machine. It'll show us if there are any cavities, cracks, or issues below the surface.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "What if I have a cavity?",
       },
       {
-        speaker: "What if I have a cavity?",
-        text: "Dentist:",
+        speaker: "Dentist",
+        text: "A small cavity just needs a filling — we numb the area, use the drill briefly, and seal it. For deeper damage, a crown or even a root canal might be needed.",
       },
       {
-        speaker:
-          "A small cavity just needs a filling — we numb the area, use the drill briefly, and seal it. For deeper damage, a crown or even a root canal might be needed.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "What about whitening? My teeth look a bit dull.",
       },
       {
-        speaker: "What about whitening? My teeth look a bit dull.",
-        text: "Dentist:",
+        speaker: "Dentist",
+        text: "We offer professional whitening with a curing light. It's much more effective than home kits. I'd also recommend a fluoride treatment to strengthen the enamel.",
       },
       {
-        speaker:
-          "We offer professional whitening with a curing light. It's much more effective than home kits. I'd also recommend a fluoride treatment to strengthen the enamel.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "My wisdom tooth has been bothering me. Could it need an extraction?",
       },
       {
-        speaker: "My wisdom tooth has been bothering me. Could it need an extraction?",
-        text: "Dentist:",
+        speaker: "Dentist",
+        text: "Let me check the X-ray. If it's impacted, extraction is the best option. I'll use the probe and the mirror to examine it closely first.",
       },
       {
-        speaker:
-          "Let me check the X-ray. If it's impacted, extraction is the best option. I'll use the probe and the mirror to examine it closely first.",
-        text: "Dentist:",
+        speaker: "Dentist",
+        text: "No, six months is fine. We'll keep an eye on it.",
       },
     ],
   },

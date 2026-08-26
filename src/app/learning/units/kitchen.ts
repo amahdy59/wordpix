@@ -223,50 +223,47 @@ export const KITCHEN_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A parent teaches their child to make breakfast in the kitchen",
     lines: [
       {
-        speaker: "Scene: A parent teaches their child to make breakfast in the kitchen",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "Good morning! Let's make breakfast together. Take the eggs out of the refrigerator.",
       },
       {
-        speaker:
-          "Good morning! Let's make breakfast together. Take the eggs out of the refrigerator.",
-        text: "Child:",
+        speaker: "Child",
+        text: "OK. Should I use the frying pan or the saucepan?",
       },
       {
-        speaker: "OK. Should I use the frying pan or the saucepan?",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "The frying pan for the eggs. Put it on the stove and turn the heat to medium.",
       },
       {
-        speaker: "The frying pan for the eggs. Put it on the stove and turn the heat to medium.",
-        text: "Child:",
+        speaker: "Child",
+        text: "Can I make toast too? Where's the toaster?",
       },
       {
-        speaker: "Can I make toast too? Where's the toaster?",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "Next to the coffee maker on the counter. Use the knife to spread the butter, and the spoon for the jam.",
       },
       {
-        speaker:
-          "Next to the coffee maker on the counter. Use the knife to spread the butter, and the spoon for the jam.",
-        text: "Child:",
+        speaker: "Child",
+        text: "I want to try the blender for a smoothie. Can I?",
       },
       {
-        speaker: "I want to try the blender for a smoothie. Can I?",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "Sure — put the fruit in the blender, add milk, and press the button. Use a bowl if you want cereal instead.",
       },
       {
-        speaker:
-          "Sure — put the fruit in the blender, add milk, and press the button. Use a bowl if you want cereal instead.",
-        text: "Child:",
+        speaker: "Child",
+        text: "The kettle is boiling. Should I make tea?",
       },
       {
-        speaker: "The kettle is boiling. Should I make tea?",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "Yes please. Cups are in the cabinet above the dishwasher. Use the spatula to flip the eggs — they're almost done.",
       },
       {
-        speaker:
-          "Yes please. Cups are in the cabinet above the dishwasher. Use the spatula to flip the eggs — they're almost done.",
-        text: "Child:",
+        speaker: "Child",
+        text: "Where do I put the dirty dishes? The sink is full.",
       },
     ],
   },

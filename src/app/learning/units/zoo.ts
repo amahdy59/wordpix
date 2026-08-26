@@ -105,48 +105,47 @@ export const ZOO_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A family visiting the zoo",
     lines: [
       {
-        speaker: "Scene: A family visiting the zoo",
-        text: "Father:",
+        speaker: "Father",
+        text: "Which section shall we visit first?",
       },
       {
-        speaker: "Which section shall we visit first?",
-        text: "Son:",
+        speaker: "Son",
+        text: "Can we see the lions? They're my favourite!",
       },
       {
-        speaker: "Can we see the lions? They're my favourite!",
-        text: "Father:",
+        speaker: "Father",
+        text: "Of course. The big cats area is just past the entrance.",
       },
       {
-        speaker: "Of course. The big cats area is just past the entrance.",
-        text: "Son:",
+        speaker: "Son",
+        text: "Look, Dad! That lion is sleeping. Is it okay?",
       },
       {
-        speaker: "Look, Dad! That lion is sleeping. Is it okay?",
-        text: "Father:",
+        speaker: "Father",
+        text: "Yes, lions sleep up to twenty hours a day. They're most active at dawn and dusk.",
       },
       {
-        speaker: "Yes, lions sleep up to twenty hours a day. They're most active at dawn and dusk.",
-        text: "Son:",
+        speaker: "Son",
+        text: "Wow, that's a lot! Can we feed them?",
       },
       {
-        speaker: "Wow, that's a lot! Can we feed them?",
-        text: "Father:",
+        speaker: "Father",
+        text: "No, only the zookeepers are allowed to feed the animals. It's for everyone's safety.",
       },
       {
-        speaker:
-          "No, only the zookeepers are allowed to feed the animals. It's for everyone's safety.",
-        text: "Son:",
+        speaker: "Son",
+        text: "What about the giraffes? I saw a sign that says 'Giraffe Feeding Experience'.",
       },
       {
-        speaker: "What about the giraffes? I saw a sign that says 'Giraffe Feeding Experience'.",
-        text: "Father:",
+        speaker: "Father",
+        text: "Good idea. Let me check the times. It says the next feeding session is at two o'clock.",
       },
       {
-        speaker:
-          "Good idea. Let me check the times. It says the next feeding session is at two o'clock.",
-        text: "Son:",
+        speaker: "Son",
+        text: "Perfect! That gives us time to visit the penguins first.",
       },
     ],
   },

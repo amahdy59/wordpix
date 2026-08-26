@@ -186,64 +186,59 @@ export const POLICE_STATION_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A citizen visits the police station to report a stolen bicycle",
     lines: [
       {
-        speaker: "Scene: A citizen visits the police station to report a stolen bicycle",
-        text: "Citizen:",
+        speaker: "Citizen",
+        text: "Good morning. I'd like to report a theft — someone stole my bicycle from outside the library.",
       },
       {
-        speaker:
-          "Good morning. I'd like to report a theft — someone stole my bicycle from outside the library.",
-        text: "Front Desk:",
+        speaker: "Front Desk",
+        text: "I'm sorry to hear that. Let me get a patrol officer to take your statement. Please have a seat.",
       },
       {
-        speaker:
-          "I'm sorry to hear that. Let me get a patrol officer to take your statement. Please have a seat.",
-        text: "Officer:",
+        speaker: "Officer",
+        text: "When did you notice the bicycle was missing?",
       },
       {
-        speaker: "When did you notice the bicycle was missing?",
-        text: "Citizen:",
+        speaker: "Citizen",
+        text: "About an hour ago. I locked it to the rack at 9 a.m. and it was gone by 10.",
       },
       {
-        speaker: "About an hour ago. I locked it to the rack at 9 a.m. and it was gone by 10.",
-        text: "Officer:",
+        speaker: "Officer",
+        text: "Do you have any photos or the serial number? That helps the detective track it down.",
       },
       {
-        speaker:
-          "Do you have any photos or the serial number? That helps the detective track it down.",
-        text: "Citizen:",
+        speaker: "Citizen",
+        text: "I have a photo on my phone. It's a blue mountain bike with a silver bell.",
       },
       {
-        speaker: "I have a photo on my phone. It's a blue mountain bike with a silver bell.",
-        text: "Officer:",
+        speaker: "Officer",
+        text: "Good. I'll file the report and alert the dispatcher. Our traffic officers will keep an eye out on their patrol.",
       },
       {
-        speaker:
-          "Good. I'll file the report and alert the dispatcher. Our traffic officers will keep an eye out on their patrol.",
-        text: "Citizen:",
+        speaker: "Citizen",
+        text: "Are there security cameras in that area?",
       },
       {
-        speaker: "Are there security cameras in that area?",
-        text: "Officer:",
+        speaker: "Officer",
+        text: "Yes. The forensic analyst can pull the footage. We also have a K9 unit that patrols that neighbourhood.",
       },
       {
-        speaker:
-          "Yes. The forensic analyst can pull the footage. We also have a K9 unit that patrols that neighbourhood.",
-        text: "Citizen:",
+        speaker: "Citizen",
+        text: "What happens if you find the person who took it?",
       },
       {
-        speaker: "What happens if you find the person who took it?",
-        text: "Officer:",
+        speaker: "Officer",
+        text: "We'll bring them in for questioning in the interrogation room. If there's enough evidence, the sergeant will book them.",
       },
       {
-        speaker:
-          "We'll bring them in for questioning in the interrogation room. If there's enough evidence, the sergeant will book them.",
-        text: "Citizen:",
+        speaker: "Citizen",
+        text: "Will you be able to find it?",
       },
       {
-        speaker: "Will you be able to find it?",
-        text: "Officer:",
+        speaker: "Officer",
+        text: "We'll do our best. Many stolen bikes turn up for sale online — keep an eye on local selling sites.",
       },
     ],
   },

@@ -186,57 +186,31 @@ export const SAVANNA_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A safari guide explains the savanna ecosystem to a group of tourists at sunrise",
     lines: [
       {
-        speaker:
-          "Scene: A safari guide explains the savanna ecosystem to a group of tourists at sunrise",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Welcome to the savanna. The sun is just rising over the horizon — this is when the grassland comes alive.",
       },
       {
-        speaker:
-          "Welcome to the savanna. The sun is just rising over the horizon — this is when the grassland comes alive.",
-        text: "Tourist 1:",
+        speaker: "Guide",
+        text: "Yes — a male resting after a night hunt. See the vulture in the baobab nearby? It's waiting for leftovers.",
       },
       {
-        speaker: "Is that a lion under the acacia tree?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "A giraffe — the tallest animal on the savanna. It's feeding on the acacia leaves. The elephant herd is coming from the left.",
       },
       {
-        speaker:
-          "Yes — a male resting after a night hunt. See the vulture in the baobab nearby? It's waiting for leftovers.",
-        text: "Tourist 2:",
+        speaker: "Guide",
+        text: "A wildebeest migration. Thousands of them crossing the dry riverbed. The cheetah and the leopard are watching from the kopje.",
       },
       {
-        speaker:
-          "There's a herd of zebra near the watering hole. And what's that tall shape behind them?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Meerkats — they're lookouts. If they spot an eagle or a jackal, they'll sound the alarm for the whole group.",
       },
       {
-        speaker:
-          "A giraffe — the tallest animal on the savanna. It's feeding on the acacia leaves. The elephant herd is coming from the left.",
-        text: "Tourist 1:",
-      },
-      {
-        speaker: "I see dust rising over there. What's happening?",
-        text: "Guide:",
-      },
-      {
-        speaker:
-          "A wildebeest migration. Thousands of them crossing the dry riverbed. The cheetah and the leopard are watching from the kopje.",
-        text: "Tourist 2:",
-      },
-      {
-        speaker: "What are those small animals standing on the termite mound?",
-        text: "Guide:",
-      },
-      {
-        speaker:
-          "Meerkats — they're lookouts. If they spot an eagle or a jackal, they'll sound the alarm for the whole group.",
-        text: "Tourist 1:",
-      },
-      {
-        speaker: "Are those flamingos in the water?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Yes, near the hippo. And the rhino and the buffalo are on the far bank. Even the warthog and the baboon have come to drink.",
       },
     ],
   },

@@ -205,56 +205,51 @@ export const HARBOR_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A harbour master explaining port operations to a visiting journalist on the dock",
     lines: [
       {
-        speaker:
-          "Scene: A harbour master explaining port operations to a visiting journalist on the dock",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "How many ships pass through this harbour every day?",
       },
       {
-        speaker: "How many ships pass through this harbour every day?",
-        text: "Harbour Master:",
+        speaker: "Harbour Master",
+        text: "Between thirty and fifty. Container ships, tankers, cargo ships, and ferries. The tugboat guides the larger ones to the dock.",
       },
       {
-        speaker:
-          "Between thirty and fifty. Container ships, tankers, cargo ships, and ferries. The tugboat guides the larger ones to the dock.",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "What's the difference between the pier, the wharf, and the jetty?",
       },
       {
-        speaker: "What's the difference between the pier, the wharf, and the jetty?",
-        text: "Harbour Master:",
+        speaker: "Harbour Master",
+        text: "The pier extends into the water. The wharf runs along the shore. The jetty — and the breakwater beyond it — protects the harbour from waves.",
       },
       {
-        speaker:
-          "The pier extends into the water. The wharf runs along the shore. The jetty — and the breakwater beyond it — protects the harbour from waves.",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "I can see the crane lifting containers. Where do they go?",
       },
       {
-        speaker: "I can see the crane lifting containers. Where do they go?",
-        text: "Harbour Master:",
+        speaker: "Harbour Master",
+        text: "Onto the dock, then a forklift moves them to the warehouse. The loading ramp is for vehicles driving onto the ferry.",
       },
       {
-        speaker:
-          "Onto the dock, then a forklift moves them to the warehouse. The loading ramp is for vehicles driving onto the ferry.",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "What's the lighthouse for if modern ships have radar?",
       },
       {
-        speaker: "What's the lighthouse for if modern ships have radar?",
-        text: "Harbour Master:",
+        speaker: "Harbour Master",
+        text: "Radar can fail. And small vessels — sailboats, kayaks, fishing boats — don't always carry it. The lighthouse, the buoys, and the beacon are still essential.",
       },
       {
-        speaker:
-          "Radar can fail. And small vessels — sailboats, kayaks, fishing boats — don't always carry it. The lighthouse, the buoys, and the beacon are still essential.",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "I can see a seal near the fishing boats!",
       },
       {
-        speaker: "I can see a seal near the fishing boats!",
-        text: "Harbour Master:",
+        speaker: "Harbour Master",
+        text: "They follow the catch. You'll also see seagulls and pelicans. The barnacles on the mooring line tell you the tide level.",
       },
       {
-        speaker:
-          "They follow the catch. You'll also see seagulls and pelicans. The barnacles on the mooring line tell you the tide level.",
-        text: "Journalist:",
+        speaker: "Journalist",
+        text: "What happens in the dry dock over there?",
       },
     ],
   },

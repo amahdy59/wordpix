@@ -197,57 +197,51 @@ export const TV_STUDIO_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A director preparing the crew for a live news broadcast in a TV studio",
     lines: [
       {
-        speaker: "Scene: A director preparing the crew for a live news broadcast in a TV studio",
-        text: "Director:",
+        speaker: "Director",
+        text: "We're live in two minutes. Camera operator, check your angles. Is the anchor desk framed properly?",
       },
       {
-        speaker:
-          "We're live in two minutes. Camera operator, check your angles. Is the anchor desk framed properly?",
-        text: "Camera Op:",
+        speaker: "Camera Op",
+        text: "Framed and focused. The tripod's stable. Should I keep the dolly ready for the interview section?",
       },
       {
-        speaker:
-          "Framed and focused. The tripod's stable. Should I keep the dolly ready for the interview section?",
-        text: "Director:",
+        speaker: "Director",
+        text: "Yes. Sound — is the boom microphone positioned above the desk? I don't want it in the shot again.",
       },
       {
-        speaker:
-          "Yes. Sound — is the boom microphone positioned above the desk? I don't want it in the shot again.",
-        text: "Sound Eng:",
+        speaker: "Sound Eng",
+        text: "Boom's clear. Clip microphones are live on both presenters. Levels look good on the monitor wall.",
       },
       {
-        speaker:
-          "Boom's clear. Clip microphones are live on both presenters. Levels look good on the monitor wall.",
-        text: "Director:",
+        speaker: "Director",
+        text: "Lighting — the softbox is too bright on the left. Can you adjust the spotlight on the platform?",
       },
       {
-        speaker:
-          "Lighting — the softbox is too bright on the left. Can you adjust the spotlight on the platform?",
-        text: "Lighting Tech:",
+        speaker: "Lighting Tech",
+        text: "On it. I'll dim the spotlight and add a fill from the right. The green screen behind the weather area is lit evenly.",
       },
       {
-        speaker:
-          "On it. I'll dim the spotlight and add a fill from the right. The green screen behind the weather area is lit evenly.",
-        text: "Director:",
+        speaker: "Director",
+        text: "Good. Stage manager — are the props in place for the cooking segment?",
       },
       {
-        speaker: "Good. Stage manager — are the props in place for the cooking segment?",
-        text: "Stage Mgr:",
+        speaker: "Stage Mgr",
+        text: "All set. The floor markings are taped for the guest's position. Makeup is finishing the presenter now.",
       },
       {
-        speaker:
-          "All set. The floor markings are taped for the guest's position. Makeup is finishing the presenter now.",
-        text: "Makeup:",
+        speaker: "Makeup",
+        text: "Almost done. The studio lights wash out skin tone, so I've added extra contrast.",
       },
       {
-        speaker: "Almost done. The studio lights wash out skin tone, so I've added extra contrast.",
-        text: "Director:",
+        speaker: "Director",
+        text: "Teleprompter loaded? The script writer sent the final edit ten minutes ago.",
       },
       {
-        speaker: "Teleprompter loaded? The script writer sent the final edit ten minutes ago.",
-        text: "Producer:",
+        speaker: "Producer",
+        text: "Loaded and scrolling at the right speed. The satellite dish is receiving the live feed from our correspondent. We're ready.",
       },
     ],
   },

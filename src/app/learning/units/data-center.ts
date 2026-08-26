@@ -186,55 +186,51 @@ export const DATA_CENTER_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A data center manager gives a new technician a tour of the facility",
     lines: [
       {
-        speaker: "Scene: A data center manager gives a new technician a tour of the facility",
-        text: "Manager:",
+        speaker: "Manager",
+        text: "Welcome to the data center. We're standing in the cold aisle — cool air rises through the raised floor and into the server racks.",
       },
       {
-        speaker:
-          "Welcome to the data center. We're standing in the cold aisle — cool air rises through the raised floor and into the server racks.",
-        text: "Technician:",
+        speaker: "Technician",
+        text: "And the hot aisle is on the other side? Where the exhaust goes?",
       },
       {
-        speaker: "And the hot aisle is on the other side? Where the exhaust goes?",
-        text: "Manager:",
+        speaker: "Manager",
+        text: "Exactly. The hot air flows to the chiller and the cooling tower. The fan units and the air conditioner keep everything below 24 degrees.",
       },
       {
-        speaker:
-          "Exactly. The hot air flows to the chiller and the cooling tower. The fan units and the air conditioner keep everything below 24 degrees.",
-        text: "Technician:",
+        speaker: "Technician",
+        text: "What's in each server rack?",
       },
       {
-        speaker: "What's in each server rack?",
-        text: "Manager:",
+        speaker: "Manager",
+        text: "Blade servers, switches, and the PDU for power distribution. The cable tray above runs fiber optic and Ethernet to the patch panel.",
       },
       {
-        speaker:
-          "Blade servers, switches, and the PDU for power distribution. The cable tray above runs fiber optic and Ethernet to the patch panel.",
-        text: "Technician:",
+        speaker: "Technician",
+        text: "What happens during a power outage?",
       },
       {
-        speaker: "What happens during a power outage?",
-        text: "Manager:",
+        speaker: "Manager",
+        text: "The UPS kicks in immediately — battery backup for about fifteen minutes. Then the generator takes over. We've never lost a server rack.",
       },
       {
-        speaker:
-          "The UPS kicks in immediately — battery backup for about fifteen minutes. Then the generator takes over. We've never lost a server rack.",
-        text: "Technician:",
+        speaker: "Technician",
+        text: "How is the data protected?",
       },
       {
-        speaker: "How is the data protected?",
-        text: "Manager:",
+        speaker: "Manager",
+        text: "Multiple layers. The firewall blocks external threats. The load balancer distributes traffic. We use RAID on the hard drives and SSD for speed-critical data.",
       },
       {
-        speaker:
-          "Multiple layers. The firewall blocks external threats. The load balancer distributes traffic. We use RAID on the hard drives and SSD for speed-critical data.",
-        text: "Technician:",
+        speaker: "Technician",
+        text: "What about backups?",
       },
       {
-        speaker: "What about backups?",
-        text: "Manager:",
+        speaker: "Manager",
+        text: "Nightly backups to the NAS and the SAN. We also run snapshots with replication to cloud storage. The tape drive handles long-term archive.",
       },
     ],
   },

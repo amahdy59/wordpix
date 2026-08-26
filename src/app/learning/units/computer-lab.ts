@@ -199,52 +199,47 @@ export const COMPUTER_LAB_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A teacher helping a student set up a workstation in the computer lab",
     lines: [
       {
-        speaker: "Scene: A teacher helping a student set up a workstation in the computer lab",
-        text: "Teacher:",
+        speaker: "Teacher",
+        text: "First, turn on the desktop computer using the button on the front of the monitor.",
       },
       {
-        speaker:
-          "First, turn on the desktop computer using the button on the front of the monitor.",
-        text: "Student:",
+        speaker: "Student",
+        text: "Done. But the screen is just showing an icon spinning. Is it loading the operating system?",
       },
       {
-        speaker:
-          "Done. But the screen is just showing an icon spinning. Is it loading the operating system?",
-        text: "Teacher:",
+        speaker: "Teacher",
+        text: "Yes, give it a moment. While it boots up, connect the keyboard and the mouse to the USB ports.",
       },
       {
-        speaker:
-          "Yes, give it a moment. While it boots up, connect the keyboard and the mouse to the USB ports.",
-        text: "Student:",
+        speaker: "Student",
+        text: "Should I use the trackpad on the laptop instead? I brought mine today.",
       },
       {
-        speaker: "Should I use the trackpad on the laptop instead? I brought mine today.",
-        text: "Teacher:",
+        speaker: "Teacher",
+        text: "Either works. Once you're logged in, open the browser and go to our cloud storage folder.",
       },
       {
-        speaker:
-          "Either works. Once you're logged in, open the browser and go to our cloud storage folder.",
-        text: "Student:",
+        speaker: "Student",
+        text: "The Wi-Fi isn't connecting. Can I use the ethernet cable instead?",
       },
       {
-        speaker: "The Wi-Fi isn't connecting. Can I use the ethernet cable instead?",
-        text: "Teacher:",
+        speaker: "Teacher",
+        text: "Yes — plug it into the network switch behind the desk. That goes through the modem and the firewall, so it's actually faster.",
       },
       {
-        speaker:
-          "Yes — plug it into the network switch behind the desk. That goes through the modem and the firewall, so it's actually faster.",
-        text: "Student:",
+        speaker: "Student",
+        text: "I found the file. Should I download it or work online?",
       },
       {
-        speaker: "I found the file. Should I download it or work online?",
-        text: "Teacher:",
+        speaker: "Teacher",
+        text: "Download it first — if the server goes down, you won't lose your work. Save a copy to your USB drive as backup.",
       },
       {
-        speaker:
-          "Download it first — if the server goes down, you won't lose your work. Save a copy to your USB drive as backup.",
-        text: "Student:",
+        speaker: "Student",
+        text: "The printer isn't responding. There's an error on the toolbar.",
       },
     ],
   },

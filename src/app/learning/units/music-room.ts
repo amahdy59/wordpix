@@ -105,46 +105,47 @@ export const MUSIC_ROOM_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "Two students in the music room after class",
     lines: [
       {
-        speaker: "Scene: Two students in the music room after class",
-        text: "Layla:",
+        speaker: "Layla",
+        text: "Have you decided what instrument you want to play for the concert?",
       },
       {
-        speaker: "Have you decided what instrument you want to play for the concert?",
-        text: "Tariq:",
+        speaker: "Tariq",
+        text: "I think I'll stick with the drums. What about you?",
       },
       {
-        speaker: "I think I'll stick with the drums. What about you?",
-        text: "Layla:",
+        speaker: "Layla",
+        text: "I'm learning the keyboard, but I'm not very confident yet.",
       },
       {
-        speaker: "I'm learning the keyboard, but I'm not very confident yet.",
-        text: "Tariq:",
+        speaker: "Tariq",
+        text: "You should practise the melody while I practise the rhythm.",
       },
       {
-        speaker: "You should practise the melody while I practise the rhythm.",
-        text: "Layla:",
+        speaker: "Layla",
+        text: "That's a good idea. Shall we rehearse after school on Wednesdays?",
       },
       {
-        speaker: "That's a good idea. Shall we rehearse after school on Wednesdays?",
-        text: "Tariq:",
+        speaker: "Tariq",
+        text: "Sure. The music room is open until five. We just need to book it.",
       },
       {
-        speaker: "Sure. The music room is open until five. We just need to book it.",
-        text: "Layla:",
+        speaker: "Layla",
+        text: "I'll ask Mrs Clarke. Do you know how to read sheet music?",
       },
       {
-        speaker: "I'll ask Mrs Clarke. Do you know how to read sheet music?",
-        text: "Tariq:",
+        speaker: "Tariq",
+        text: "A little. I know the basic notes but I struggle with the timing.",
       },
       {
-        speaker: "A little. I know the basic notes but I struggle with the timing.",
-        text: "Layla:",
+        speaker: "Layla",
+        text: "Me too. The difference between quavers and crotchets confuses me.",
       },
       {
-        speaker: "Me too. The difference between quavers and crotchets confuses me.",
-        text: "Tariq:",
+        speaker: "Tariq",
+        text: "We'll figure it out. Practice makes perfect!",
       },
     ],
   },

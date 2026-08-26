@@ -186,56 +186,52 @@ export const DRONE_WORKSHOP_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene:
+      "An instructor teaches a beginner how to build and fly a quadcopter at the drone workshop",
     lines: [
       {
-        speaker:
-          "Scene: An instructor teaches a beginner how to build and fly a quadcopter at the drone workshop",
-        text: "Instructor:",
+        speaker: "Instructor",
+        text: "Welcome to the workshop. Today we're building a quadcopter from scratch. First, let's attach the motor to the frame.",
       },
       {
-        speaker:
-          "Welcome to the workshop. Today we're building a quadcopter from scratch. First, let's attach the motor to the frame.",
-        text: "Beginner:",
+        speaker: "Beginner",
+        text: "How many propellers does a quadcopter need?",
       },
       {
-        speaker: "How many propellers does a quadcopter need?",
-        text: "Instructor:",
+        speaker: "Instructor",
+        text: "Four — one per motor. A hexacopter has six. Make sure each propeller is tightened with the hex wrench. Next, we'll wire the ESC to the flight controller.",
       },
       {
-        speaker:
-          "Four — one per motor. A hexacopter has six. Make sure each propeller is tightened with the hex wrench. Next, we'll wire the ESC to the flight controller.",
-        text: "Beginner:",
+        speaker: "Beginner",
+        text: "What does the ESC do?",
       },
       {
-        speaker: "What does the ESC do?",
-        text: "Instructor:",
+        speaker: "Instructor",
+        text: "It controls the speed of each motor. The flight controller talks to the ESC, the GPS module, and the receiver — it's the brain of the drone.",
       },
       {
-        speaker:
-          "It controls the speed of each motor. The flight controller talks to the ESC, the GPS module, and the receiver — it's the brain of the drone.",
-        text: "Beginner:",
+        speaker: "Beginner",
+        text: "And the camera? I want to take aerial photos.",
       },
       {
-        speaker: "And the camera? I want to take aerial photos.",
-        text: "Instructor:",
+        speaker: "Instructor",
+        text: "We'll mount the camera on the gimbal — that keeps it steady during flight. Connect the antenna to the transmitter for the video feed.",
       },
       {
-        speaker:
-          "We'll mount the camera on the gimbal — that keeps it steady during flight. Connect the antenna to the transmitter for the video feed.",
-        text: "Beginner:",
+        speaker: "Beginner",
+        text: "What about the battery? How long can it fly?",
       },
       {
-        speaker: "What about the battery? How long can it fly?",
-        text: "Instructor:",
+        speaker: "Instructor",
+        text: "About twenty minutes on a full charge. Always check the battery voltage with the multimeter before each flight.",
       },
       {
-        speaker:
-          "About twenty minutes on a full charge. Always check the battery voltage with the multimeter before each flight.",
-        text: "Beginner:",
+        speaker: "Beginner",
+        text: "I'm nervous about crashing. What safety features are there?",
       },
       {
-        speaker: "I'm nervous about crashing. What safety features are there?",
-        text: "Instructor:",
+        speaker: "Instructor",
+        text: "The failsafe mode and return to home are built in. If you lose signal, the drone flies back to the launch point automatically. Set the trim before takeoff for stability.",
       },
     ],
   },

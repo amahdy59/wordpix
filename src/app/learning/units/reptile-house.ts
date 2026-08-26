@@ -168,55 +168,51 @@ export const REPTILE_HOUSE_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A school group visiting the reptile house at a zoo",
     lines: [
       {
-        speaker: "Scene: A school group visiting the reptile house at a zoo",
-        text: "Keeper:",
+        speaker: "Keeper",
+        text: "Welcome to the Reptile House. It's quite warm in here — about 30 degrees — because reptiles need external heat to stay active.",
       },
       {
-        speaker:
-          "Welcome to the Reptile House. It's quite warm in here — about 30 degrees — because reptiles need external heat to stay active.",
-        text: "Student:",
+        speaker: "Student",
+        text: "Why is that snake just sitting there doing nothing?",
       },
       {
-        speaker: "Why is that snake just sitting there doing nothing?",
-        text: "Keeper:",
+        speaker: "Keeper",
+        text: "Snakes are ambush predators. They conserve energy by staying very still, then strike with incredible speed when prey comes close.",
       },
       {
-        speaker:
-          "Snakes are ambush predators. They conserve energy by staying very still, then strike with incredible speed when prey comes close.",
-        text: "Student:",
+        speaker: "Student",
+        text: "Is it venomous?",
       },
       {
-        speaker: "Is it venomous?",
-        text: "Keeper:",
+        speaker: "Keeper",
+        text: "This one's a boa constrictor — non-venomous. It wraps around its prey and squeezes. But the one in the next enclosure is a rattlesnake — definitely venomous!",
       },
       {
-        speaker:
-          "This one's a boa constrictor — non-venomous. It wraps around its prey and squeezes. But the one in the next enclosure is a rattlesnake — definitely venomous!",
-        text: "Student:",
+        speaker: "Student",
+        text: "Can I hold the gecko?",
       },
       {
-        speaker: "Can I hold the gecko?",
-        text: "Keeper:",
+        speaker: "Keeper",
+        text: "Absolutely — but gently. Support its body from underneath. Their skin is delicate, and they can drop their tails if they feel threatened.",
       },
       {
-        speaker:
-          "Absolutely — but gently. Support its body from underneath. Their skin is delicate, and they can drop their tails if they feel threatened.",
-        text: "Student:",
+        speaker: "Student",
+        text: "Whoa! Will it grow back?",
       },
       {
-        speaker: "Whoa! Will it grow back?",
-        text: "Keeper:",
+        speaker: "Keeper",
+        text: "Yes, but the new tail is different — it's made of cartilage instead of bone. It works, but it's never quite the same.",
       },
       {
-        speaker:
-          "Yes, but the new tail is different — it's made of cartilage instead of bone. It works, but it's never quite the same.",
-        text: "Student:",
+        speaker: "Student",
+        text: "What's the oldest animal you have here?",
       },
       {
-        speaker: "What's the oldest animal you have here?",
-        text: "Keeper:",
+        speaker: "Keeper",
+        text: "Our Galapagos tortoise, Hector. He's 97 years old. These tortoises can live well past 150. He'll probably outlive all of us!",
       },
     ],
   },

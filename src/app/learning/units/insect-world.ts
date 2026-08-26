@@ -178,55 +178,51 @@ export const INSECT_WORLD_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A class visiting an insect exhibit at a natural history museum",
     lines: [
       {
-        speaker: "Scene: A class visiting an insect exhibit at a natural history museum",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Welcome to the Insect Gallery. Did you know that insects make up about 80% of all known animal species?",
       },
       {
-        speaker:
-          "Welcome to the Insect Gallery. Did you know that insects make up about 80% of all known animal species?",
-        text: "Student:",
+        speaker: "Student",
+        text: "Are spiders insects?",
       },
       {
-        speaker: "Are spiders insects?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Great question — no! Spiders are arachnids. They have eight legs, not six, and they have two body sections instead of three.",
       },
       {
-        speaker:
-          "Great question — no! Spiders are arachnids. They have eight legs, not six, and they have two body sections instead of three.",
-        text: "Student:",
+        speaker: "Student",
+        text: "What's the biggest insect in the world?",
       },
       {
-        speaker: "What's the biggest insect in the world?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "The giant weta from New Zealand — it can weigh as much as a small bird! For flying insects, the Atlas moth has the largest wingspan, up to 30 centimetres.",
       },
       {
-        speaker:
-          "The giant weta from New Zealand — it can weigh as much as a small bird! For flying insects, the Atlas moth has the largest wingspan, up to 30 centimetres.",
-        text: "Student:",
+        speaker: "Student",
+        text: "Why do bees make honey?",
       },
       {
-        speaker: "Why do bees make honey?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Bees collect nectar from flowers and convert it into honey as food for the colony. A single hive can produce over 25 kilograms of honey per year.",
       },
       {
-        speaker:
-          "Bees collect nectar from flowers and convert it into honey as food for the colony. A single hive can produce over 25 kilograms of honey per year.",
-        text: "Student:",
+        speaker: "Student",
+        text: "Do all insects bite?",
       },
       {
-        speaker: "Do all insects bite?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "No. Most insects are harmless to humans. Mosquitoes bite because they need blood to produce eggs. Bees only sting in self-defence — and a honeybee dies after stinging.",
       },
       {
-        speaker:
-          "No. Most insects are harmless to humans. Mosquitoes bite because they need blood to produce eggs. Bees only sting in self-defence — and a honeybee dies after stinging.",
-        text: "Student:",
+        speaker: "Student",
+        text: "Why are insects important?",
       },
       {
-        speaker: "Why are insects important?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "They pollinate our crops, decompose waste, provide food for other animals, and maintain healthy ecosystems. Without insects, life on Earth would collapse.",
       },
     ],
   },

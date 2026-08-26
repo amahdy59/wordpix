@@ -207,61 +207,6 @@ export const FESTIVAL_LEARNING: UnitLearningMaterials = {
         "The organisers went all out this year — banners, ribbons, a live band, and a crepe stand on every corner.",
     },
   ],
-  dialogue: {
-    title: "Mini Dialogue",
-    lines: [
-      {
-        speaker: "Scene: Two friends exploring a street festival together",
-        text: "Friend 1:",
-      },
-      {
-        speaker:
-          "Look at all the bunting and banners! The whole street is decorated. And those lanterns are beautiful.",
-        text: "Friend 2:",
-      },
-      {
-        speaker:
-          "I love the paper flowers on the garland — they must have taken hours. And there's confetti everywhere!",
-        text: "Friend 1:",
-      },
-      {
-        speaker:
-          "Are you hungry? I can smell the barbecue from here. There's also a kebab stand and a taco stall.",
-        text: "Friend 2:",
-      },
-      {
-        speaker:
-          "Let's start with samosas and spring rolls — the queue is shorter. We can get a waffle or a crepe for dessert.",
-        text: "Friend 1:",
-      },
-      {
-        speaker: "What's that over there? Children are lining up for something.",
-        text: "Friend 2:",
-      },
-      {
-        speaker:
-          "A piñata! They're taking turns hitting it with a stick. And look — there's a balloon artist making animals.",
-        text: "Friend 1:",
-      },
-      {
-        speaker: "I want to try the fruit skewers. And the roasted corn smells incredible.",
-        text: "Friend 2:",
-      },
-      {
-        speaker: "Grab me a lemonade while you're there? Or a smoothie if they have mango.",
-        text: "Friend 1:",
-      },
-      {
-        speaker: "There's also hot chocolate and milkshakes at the stand near the flag pole.",
-        text: "Friend 2:",
-      },
-      {
-        speaker:
-          "This festival is amazing. The streamers, the ribbons, the food — they've really gone all out this year.",
-        text: "Friend 1:",
-      },
-    ],
-  },
   mistakes: [
     {
       id: "festival-we-went-to-a-very-fun-festival-last-week",

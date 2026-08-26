@@ -217,55 +217,51 @@ export const GYM_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A personal trainer guiding a new member through equipment in the gym",
     lines: [
       {
-        speaker: "Scene: A personal trainer guiding a new member through equipment in the gym",
-        text: "Trainer:",
+        speaker: "Trainer",
+        text: "Welcome! Let's start with a quick tour. This section has all the cardio machines — the treadmill, the stationary bike, the elliptical, and the stair climber.",
       },
       {
-        speaker:
-          "Welcome! Let's start with a quick tour. This section has all the cardio machines — the treadmill, the stationary bike, the elliptical, and the stair climber.",
-        text: "Member:",
+        speaker: "Member",
+        text: "What's the difference between the spin bike and the stationary bike?",
       },
       {
-        speaker: "What's the difference between the spin bike and the stationary bike?",
-        text: "Trainer:",
+        speaker: "Trainer",
+        text: "The spin bike has a heavier flywheel — it feels more like real cycling. The stationary bike is easier on the joints. Try both.",
       },
       {
-        speaker:
-          "The spin bike has a heavier flywheel — it feels more like real cycling. The stationary bike is easier on the joints. Try both.",
-        text: "Member:",
+        speaker: "Member",
+        text: "I want to build strength too. Where do I start?",
       },
       {
-        speaker: "I want to build strength too. Where do I start?",
-        text: "Trainer:",
+        speaker: "Trainer",
+        text: "Over here — the weight area. Dumbbells and kettlebells on that rack. The barbell and the weight bench are for pressing. The squat rack is for legs.",
       },
       {
-        speaker:
-          "Over here — the weight area. Dumbbells and kettlebells on that rack. The barbell and the weight bench are for pressing. The squat rack is for legs.",
-        text: "Member:",
+        speaker: "Member",
+        text: "What's the cable machine for?",
       },
       {
-        speaker: "What's the cable machine for?",
-        text: "Trainer:",
+        speaker: "Trainer",
+        text: "It's versatile — you can do dozens of exercises by adjusting the height and attachment. The leg press is next to it for quadriceps.",
       },
       {
-        speaker:
-          "It's versatile — you can do dozens of exercises by adjusting the height and attachment. The leg press is next to it for quadriceps.",
-        text: "Member:",
+        speaker: "Member",
+        text: "I've seen people using that thick rope. What is it?",
       },
       {
-        speaker: "I've seen people using that thick rope. What is it?",
-        text: "Trainer:",
+        speaker: "Trainer",
+        text: "The battle rope — great for cardio and upper body. And the punching bag beside it is excellent for stress relief.",
       },
       {
-        speaker:
-          "The battle rope — great for cardio and upper body. And the punching bag beside it is excellent for stress relief.",
-        text: "Member:",
+        speaker: "Member",
+        text: "Should I stretch before or after?",
       },
       {
-        speaker: "Should I stretch before or after?",
-        text: "Trainer:",
+        speaker: "Trainer",
+        text: "Both. Use the exercise mat and the foam roller for stretching. Put your water in the shaker bottle and your phone in the armband. And always use the lock on your locker.",
       },
     ],
   },

@@ -186,60 +186,55 @@ export const COMMUNITY_CENTER_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A newcomer visits the community center to find out about available activities",
     lines: [
       {
-        speaker:
-          "Scene: A newcomer visits the community center to find out about available activities",
-        text: "Newcomer:",
+        speaker: "Newcomer",
+        text: "Hi, I just moved to the neighbourhood. What activities do you offer here?",
       },
       {
-        speaker: "Hi, I just moved to the neighbourhood. What activities do you offer here?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "Welcome! We have everything — the gymnasium has basketball, volleyball, and badminton. Upstairs there's a yoga class and a dance class.",
       },
       {
-        speaker:
-          "Welcome! We have everything — the gymnasium has basketball, volleyball, and badminton. Upstairs there's a yoga class and a dance class.",
-        text: "Newcomer:",
+        speaker: "Newcomer",
+        text: "I love cooking. Do you have anything like that?",
       },
       {
-        speaker: "I love cooking. Do you have anything like that?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "Absolutely. The cooking class runs every Wednesday evening in the kitchen. There's also a pottery class in the art room.",
       },
       {
-        speaker:
-          "Absolutely. The cooking class runs every Wednesday evening in the kitchen. There's also a pottery class in the art room.",
-        text: "Newcomer:",
+        speaker: "Newcomer",
+        text: "What about things for kids? I have a five-year-old.",
       },
       {
-        speaker: "What about things for kids? I have a five-year-old.",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "We have a daycare during the day, and a painting class for children on Saturdays. The computer lab has coding workshops for older kids.",
       },
       {
-        speaker:
-          "We have a daycare during the day, and a painting class for children on Saturdays. The computer lab has coding workshops for older kids.",
-        text: "Newcomer:",
+        speaker: "Newcomer",
+        text: "Are there any evening social events?",
       },
       {
-        speaker: "Are there any evening social events?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "Every Friday is film night in the auditorium. We also have a book club in the library and a meditation session in the meeting room.",
       },
       {
-        speaker:
-          "Every Friday is film night in the auditorium. We also have a book club in the library and a meditation session in the meeting room.",
-        text: "Newcomer:",
+        speaker: "Newcomer",
+        text: "I'd love to try something physical. What's available besides yoga?",
       },
       {
-        speaker: "I'd love to try something physical. What's available besides yoga?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "Zumba, aerobics, karate, and weight training — all in the gymnasium. Swimming is at the pool next door. We also have stretching and table tennis.",
       },
       {
-        speaker:
-          "Zumba, aerobics, karate, and weight training — all in the gymnasium. Swimming is at the pool next door. We also have stretching and table tennis.",
-        text: "Newcomer:",
+        speaker: "Newcomer",
+        text: "This is fantastic. How do I sign up? Is there a membership fee?",
       },
       {
-        speaker: "This is fantastic. How do I sign up? Is there a membership fee?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "Yes, our café is run by volunteers. Tea, coffee, and home-baked cakes. It's open every morning.",
       },
     ],
   },

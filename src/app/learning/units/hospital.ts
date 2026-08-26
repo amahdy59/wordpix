@@ -113,52 +113,47 @@ export const HOSPITAL_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A patient visits the hospital for a routine check-up",
     lines: [
       {
-        speaker: "Scene: A patient visits the hospital for a routine check-up",
-        text: "Receptionist:",
+        speaker: "Receptionist",
+        text: "Good morning. Please sign in and have a seat in the waiting room. The doctor will be with you shortly.",
       },
       {
-        speaker:
-          "Good morning. Please sign in and have a seat in the waiting room. The doctor will be with you shortly.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "Thank you. I have an appointment with the pediatrician for my son.",
       },
       {
-        speaker: "Thank you. I have an appointment with the pediatrician for my son.",
-        text: "Nurse:",
+        speaker: "Nurse",
+        text: "Come this way, please. I'll check his temperature and weight first, then the doctor will see you in the patient room.",
       },
       {
-        speaker:
-          "Come this way, please. I'll check his temperature and weight first, then the doctor will see you in the patient room.",
-        text: "Doctor:",
+        speaker: "Doctor",
+        text: "Hello! I'm the pediatrician. Let me examine him. The lab technician will run a quick blood test too.",
       },
       {
-        speaker:
-          "Hello! I'm the pediatrician. Let me examine him. The lab technician will run a quick blood test too.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "He's been coughing. Should we see the pulmonologist?",
       },
       {
-        speaker: "He's been coughing. Should we see the pulmonologist?",
-        text: "Doctor:",
+        speaker: "Doctor",
+        text: "Let me listen first. If needed, I'll refer you to the pulmonologist or the ENT specialist. The radiologist can do a chest scan.",
       },
       {
-        speaker:
-          "Let me listen first. If needed, I'll refer you to the pulmonologist or the ENT specialist. The radiologist can do a chest scan.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "What about his skin rash? The dermatologist we saw last month gave us cream.",
       },
       {
-        speaker: "What about his skin rash? The dermatologist we saw last month gave us cream.",
-        text: "Doctor:",
+        speaker: "Doctor",
+        text: "I'll take a look. If it hasn't improved, we'll schedule a follow-up with the dermatologist. The pharmacist downstairs can refill the prescription.",
       },
       {
-        speaker:
-          "I'll take a look. If it hasn't improved, we'll schedule a follow-up with the dermatologist. The pharmacist downstairs can refill the prescription.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "My wife is in the maternity ward — we just had a baby. The midwife and the orderly have been wonderful.",
       },
       {
-        speaker:
-          "My wife is in the maternity ward — we just had a baby. The midwife and the orderly have been wonderful.",
-        text: "Doctor:",
+        speaker: "Doctor",
+        text: "Congratulations! The nursery here is excellent. The dietitian can also help with feeding advice.",
       },
     ],
   },

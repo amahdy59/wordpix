@@ -210,55 +210,31 @@ export const CORAL_REEF_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A marine biologist guiding a group of snorkellers above a coral reef",
     lines: [
       {
-        speaker: "Scene: A marine biologist guiding a group of snorkellers above a coral reef",
-        text: "Biologist:",
+        speaker: "Biologist",
+        text: "Stay on the surface and follow me. Don't touch the coral — even a gentle brush can damage it.",
       },
       {
-        speaker:
-          "Stay on the surface and follow me. Don't touch the coral — even a gentle brush can damage it.",
-        text: "Snorkeller 1:",
+        speaker: "Biologist",
+        text: "Those are parrotfish. They eat algae off the coral surface — without them, the reef would be smothered.",
       },
       {
-        speaker: "What are those bright blue fish darting between the coral branches?",
-        text: "Biologist:",
+        speaker: "Biologist",
+        text: "A green sea turtle — they come to the reef to feed on seagrass and algae. Watch how gracefully it moves through the current.",
       },
       {
-        speaker:
-          "Those are parrotfish. They eat algae off the coral surface — without them, the reef would be smothered.",
-        text: "Snorkeller 2:",
+        speaker: "Biologist",
+        text: "A sea urchin. Don't step on one — the spines are sharp and painful. Stay horizontal and float above the reef bed.",
       },
       {
-        speaker: "I can see a sea turtle! It's enormous!",
-        text: "Biologist:",
+        speaker: "Biologist",
+        text: "That's bleaching — when water temperatures rise, the coral expels the algae that gives it colour. If it lasts too long, the coral dies.",
       },
       {
-        speaker:
-          "A green sea turtle — they come to the reef to feed on seagrass and algae. Watch how gracefully it moves through the current.",
-        text: "Snorkeller 1:",
-      },
-      {
-        speaker: "What's that spiny creature on the sand beneath us? It looks dangerous.",
-        text: "Biologist:",
-      },
-      {
-        speaker:
-          "A sea urchin. Don't step on one — the spines are sharp and painful. Stay horizontal and float above the reef bed.",
-        text: "Snorkeller 2:",
-      },
-      {
-        speaker: "The colours are incredible. Why are some sections of coral white?",
-        text: "Biologist:",
-      },
-      {
-        speaker:
-          "That's bleaching — when water temperatures rise, the coral expels the algae that gives it colour. If it lasts too long, the coral dies.",
-        text: "Snorkeller 1:",
-      },
-      {
-        speaker: "Is that a clownfish in that anemone? Like the one in the film?",
-        text: "Biologist:",
+        speaker: "Biologist",
+        text: "Exactly. The clownfish lives inside the anemone's tentacles — they protect each other. It's one of the reef's most famous partnerships.",
       },
     ],
   },

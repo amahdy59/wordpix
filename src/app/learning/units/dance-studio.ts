@@ -189,55 +189,31 @@ export const DANCE_STUDIO_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A ballet instructor leading a class at the barre in a dance studio",
     lines: [
       {
-        speaker: "Scene: A ballet instructor leading a class at the barre in a dance studio",
-        text: "Instructor:",
+        speaker: "Instructor",
+        text: "Good morning, everyone. Change into your leotards and ballet shoes. Beginners, grab a pair of leg warmers — the floor is cold today.",
       },
       {
-        speaker:
-          "Good morning, everyone. Change into your leotards and ballet shoes. Beginners, grab a pair of leg warmers — the floor is cold today.",
-        text: "Student 1:",
+        speaker: "Instructor",
+        text: "Regular for now. We'll move to pointe work after the warm-up. Start with a plié — feet in first position.",
       },
       {
-        speaker: "Should I use pointe shoes for the barre exercises, or just regular ballet shoes?",
-        text: "Instructor:",
+        speaker: "Instructor",
+        text: "Check the dance bag by the wall mirror. Now — relevé, hold your balance. Check your posture in the mirror.",
       },
       {
-        speaker:
-          "Regular for now. We'll move to pointe work after the warm-up. Start with a plié — feet in first position.",
-        text: "Student 2:",
+        speaker: "Instructor",
+        text: "Spot your turn — fix your eyes on one point in the mirror and snap your head around. Let's try it. Ready — and turn.",
       },
       {
-        speaker: "My tights have a hole. Can I borrow a pair from the changing room?",
-        text: "Instructor:",
+        speaker: "Instructor",
+        text: "Exactly — one leg supporting, the other extended behind you. Arms long. Think of a straight line from your fingertips to your toes.",
       },
       {
-        speaker:
-          "Check the dance bag by the wall mirror. Now — relevé, hold your balance. Check your posture in the mirror.",
-        text: "Student 1:",
-      },
-      {
-        speaker: "I can never get the pirouette right. I keep losing my balance.",
-        text: "Instructor:",
-      },
-      {
-        speaker:
-          "Spot your turn — fix your eyes on one point in the mirror and snap your head around. Let's try it. Ready — and turn.",
-        text: "Student 3:",
-      },
-      {
-        speaker: "What's an arabesque again? Is that the one where you extend your leg behind?",
-        text: "Instructor:",
-      },
-      {
-        speaker:
-          "Exactly — one leg supporting, the other extended behind you. Arms long. Think of a straight line from your fingertips to your toes.",
-        text: "Student 2:",
-      },
-      {
-        speaker: "Are we practising the jeté today? I've been working on the jump at home.",
-        text: "Instructor:",
+        speaker: "Instructor",
+        text: "Yes, after the barre. We'll finish with a short pas de deux exercise. Grab water from the water fountain — we start in two minutes.",
       },
     ],
   },

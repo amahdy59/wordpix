@@ -204,57 +204,31 @@ export const JUNGLE_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A wildlife guide leading visitors along a jungle trail near a waterfall",
     lines: [
       {
-        speaker: "Scene: A wildlife guide leading visitors along a jungle trail near a waterfall",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Welcome to the trail. Stay close — the canopy is so thick here that it's easy to lose sight of the group.",
       },
       {
-        speaker:
-          "Welcome to the trail. Stay close — the canopy is so thick here that it's easy to lose sight of the group.",
-        text: "Visitor 1:",
+        speaker: "Guide",
+        text: "That's a liana — a woody vine that uses trees for support. And those purple flowers near the root are wild orchids.",
       },
       {
-        speaker:
-          "It's incredible. I've never seen so many vines and ferns in one place. What's that plant climbing the trunk?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Probably a tapir — they're shy and avoid humans. If it were a jaguar, you wouldn't hear it at all.",
       },
       {
-        speaker:
-          "That's a liana — a woody vine that uses trees for support. And those purple flowers near the root are wild orchids.",
-        text: "Visitor 2:",
+        speaker: "Guide",
+        text: "Good eye! And look — a sloth on that branch. They move so slowly that moss actually grows on their fur.",
       },
       {
-        speaker: "I just heard something moving in the bamboo. Should we be worried?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Some, yes. But most of that sound is beetles and dragonflies. The jungle has more insect species than any other ecosystem.",
       },
       {
-        speaker:
-          "Probably a tapir — they're shy and avoid humans. If it were a jaguar, you wouldn't hear it at all.",
-        text: "Visitor 1:",
-      },
-      {
-        speaker: "Is that a toucan up in the canopy? The colours are stunning!",
-        text: "Guide:",
-      },
-      {
-        speaker:
-          "Good eye! And look — a sloth on that branch. They move so slowly that moss actually grows on their fur.",
-        text: "Visitor 2:",
-      },
-      {
-        speaker: "What's the buzzing sound? Mosquitoes?",
-        text: "Guide:",
-      },
-      {
-        speaker:
-          "Some, yes. But most of that sound is beetles and dragonflies. The jungle has more insect species than any other ecosystem.",
-        text: "Visitor 1:",
-      },
-      {
-        speaker:
-          "Can we get closer to the waterfall? I'd love to see the tree frogs near the stream.",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Absolutely. Watch your step on the moss — it's slippery. And keep your eyes open for chameleons. They blend in perfectly with the leaves.",
       },
     ],
   },

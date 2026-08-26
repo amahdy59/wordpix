@@ -179,55 +179,51 @@ export const BUTTERFLY_GARDEN_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A family visiting a butterfly garden greenhouse",
     lines: [
       {
-        speaker: "Scene: A family visiting a butterfly garden greenhouse",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Welcome to the Tropical Butterfly House! It's warm and humid in here — about 28 degrees — so the butterflies feel at home.",
       },
       {
-        speaker:
-          "Welcome to the Tropical Butterfly House! It's warm and humid in here — about 28 degrees — so the butterflies feel at home.",
-        text: "Child:",
+        speaker: "Child",
+        text: "Wow, there's one on my arm! Is it okay?",
       },
       {
-        speaker: "Wow, there's one on my arm! Is it okay?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "That's perfectly fine! It's tasting you with its feet — butterflies have taste sensors on the bottom of their legs.",
       },
       {
-        speaker:
-          "That's perfectly fine! It's tasting you with its feet — butterflies have taste sensors on the bottom of their legs.",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "How many species do you have here?",
       },
       {
-        speaker: "How many species do you have here?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "We have around 50 species from Central America, Southeast Asia, and Africa. That big blue one is a Blue Morpho from Costa Rica.",
       },
       {
-        speaker:
-          "We have around 50 species from Central America, Southeast Asia, and Africa. That big blue one is a Blue Morpho from Costa Rica.",
-        text: "Child:",
+        speaker: "Child",
+        text: "What's that green thing hanging from the leaf?",
       },
       {
-        speaker: "What's that green thing hanging from the leaf?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "That's a chrysalis. There's a caterpillar inside transforming into a butterfly. In about ten days, a butterfly will emerge.",
       },
       {
-        speaker:
-          "That's a chrysalis. There's a caterpillar inside transforming into a butterfly. In about ten days, a butterfly will emerge.",
-        text: "Child:",
+        speaker: "Child",
+        text: "Can we see it come out?",
       },
       {
-        speaker: "Can we see it come out?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Sometimes! Our emergence display has chrysalises at different stages. If you're lucky, you might see one opening.",
       },
       {
-        speaker:
-          "Sometimes! Our emergence display has chrysalises at different stages. If you're lucky, you might see one opening.",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "What flowers attract butterflies best?",
       },
       {
-        speaker: "What flowers attract butterflies best?",
-        text: "Guide:",
+        speaker: "Guide",
+        text: "Bright colours and sweet nectar — lantana, buddleia, and hibiscus are favourites. If you plant these at home, you'll attract butterflies to your garden too.",
       },
     ],
   },

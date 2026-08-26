@@ -186,59 +186,55 @@ export const VET_CLINIC_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A pet owner brings their dog to the vet clinic for its annual check-up",
     lines: [
       {
-        speaker: "Scene: A pet owner brings their dog to the vet clinic for its annual check-up",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "Hi, I'm here for Max's annual check-up. He also needs his vaccination booster.",
       },
       {
-        speaker: "Hi, I'm here for Max's annual check-up. He also needs his vaccination booster.",
-        text: "Vet:",
+        speaker: "Vet",
+        text: "Great. Let me weigh him on the scale first. He's gained a kilo since last year — has his diet changed?",
       },
       {
-        speaker:
-          "Great. Let me weigh him on the scale first. He's gained a kilo since last year — has his diet changed?",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "He's been getting extra treats. Is that a problem?",
       },
       {
-        speaker: "He's been getting extra treats. Is that a problem?",
-        text: "Vet:",
+        speaker: "Vet",
+        text: "A little extra weight is fine, but let's keep an eye on it. I'll listen to his heart with the stethoscope now.",
       },
       {
-        speaker:
-          "A little extra weight is fine, but let's keep an eye on it. I'll listen to his heart with the stethoscope now.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "He's been scratching his ears a lot lately. Could it be an infection?",
       },
       {
-        speaker: "He's been scratching his ears a lot lately. Could it be an infection?",
-        text: "Vet:",
+        speaker: "Vet",
+        text: "Let me check with the otoscope. Yes — there's some redness. I'll prescribe medication and ear drops.",
       },
       {
-        speaker:
-          "Let me check with the otoscope. Yes — there's some redness. I'll prescribe medication and ear drops.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "Does he need a blood test this year?",
       },
       {
-        speaker: "Does he need a blood test this year?",
-        text: "Vet:",
+        speaker: "Vet",
+        text: "At his age, yes. I'll draw a sample with the syringe. We should also check his microchip is still reading properly.",
       },
       {
-        speaker:
-          "At his age, yes. I'll draw a sample with the syringe. We should also check his microchip is still reading properly.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "What about his teeth? His breath has been awful.",
       },
       {
-        speaker: "What about his teeth? His breath has been awful.",
-        text: "Vet:",
+        speaker: "Vet",
+        text: "He's due for a dental cleaning. I'll schedule that with a light anaesthetic. I'll also check his temperature with the thermometer.",
       },
       {
-        speaker:
-          "He's due for a dental cleaning. I'll schedule that with a light anaesthetic. I'll also check his temperature with the thermometer.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "Anything else? I want to make sure he's in top shape. He's my best friend.",
       },
       {
-        speaker: "Anything else? I want to make sure he's in top shape. He's my best friend.",
-        text: "Vet:",
+        speaker: "Vet",
+        text: "Let me check her records... Yes, everything is current. I'll prescribe some antibiotics and a special diet for a few days. If she doesn't improve, bring her back.",
       },
     ],
   },

@@ -186,56 +186,51 @@ export const BICYCLE_SHOP_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A customer visits a bicycle shop looking for their first commuter bike",
     lines: [
       {
-        speaker: "Scene: A customer visits a bicycle shop looking for their first commuter bike",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Hi, I'm looking for a bike for commuting — about ten kilometres each way. What would you recommend?",
       },
       {
-        speaker:
-          "Hi, I'm looking for a bike for commuting — about ten kilometres each way. What would you recommend?",
-        text: "Shop Owner:",
+        speaker: "Shop Owner",
+        text: "For commuting, a hybrid is your best bet. It has a sturdy frame, comfortable seat, and smooth gear shifts. Or an electric bike if you want less effort on hills.",
       },
       {
-        speaker:
-          "For commuting, a hybrid is your best bet. It has a sturdy frame, comfortable seat, and smooth gear shifts. Or an electric bike if you want less effort on hills.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "What's the difference between a road bike and a hybrid?",
       },
       {
-        speaker: "What's the difference between a road bike and a hybrid?",
-        text: "Shop Owner:",
+        speaker: "Shop Owner",
+        text: "A road bike has thinner tires and a lighter frame — built for speed. A hybrid has wider tires, an upright handlebar, and better comfort for daily rides.",
       },
       {
-        speaker:
-          "A road bike has thinner tires and a lighter frame — built for speed. A hybrid has wider tires, an upright handlebar, and better comfort for daily rides.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "I'll try the hybrid. What accessories do I need?",
       },
       {
-        speaker: "I'll try the hybrid. What accessories do I need?",
-        text: "Shop Owner:",
+        speaker: "Shop Owner",
+        text: "A helmet is essential. Then a lock, a front and rear light, and a bell. I'd also recommend a rack for your bag.",
       },
       {
-        speaker:
-          "A helmet is essential. Then a lock, a front and rear light, and a bell. I'd also recommend a rack for your bag.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "What about maintenance? I don't know much about bikes.",
       },
       {
-        speaker: "What about maintenance? I don't know much about bikes.",
-        text: "Shop Owner:",
+        speaker: "Shop Owner",
+        text: "Keep the chain oiled, check the tire pressure with a pump weekly, and test the brake before every ride. Bring it in for a tune-up every few months.",
       },
       {
-        speaker:
-          "Keep the chain oiled, check the tire pressure with a pump weekly, and test the brake before every ride. Bring it in for a tune-up every few months.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Do the pedals come with the bike, or do I choose separately?",
       },
       {
-        speaker: "Do the pedals come with the bike, or do I choose separately?",
-        text: "Shop Owner:",
+        speaker: "Shop Owner",
+        text: "Standard pedals are included. If you want clip-in pedals, you'll need cycling shoes too. We also have gloves and a water bottle holder.",
       },
       {
-        speaker:
-          "Standard pedals are included. If you want clip-in pedals, you'll need cycling shoes too. We also have gloves and a water bottle holder.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Great. Can I take it for a test ride around the block? I want to feel the gear and the handlebar before I decide.",
       },
     ],
   },

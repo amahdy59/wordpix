@@ -203,32 +203,16 @@ export const FREELANCING_REMOTE_WORK_LEARNING: UnitLearningMaterials = {
         text: "I've just gone freelance after five years in an agency. Any advice on getting started?",
       },
       {
-        speaker: "Experienced Freelancer",
-        text: "First — register as self-employed with HMRC immediately. You'll do Self Assessment tax returns, so keep meticulous records of every invoice and every expense from day one.",
-      },
-      {
         speaker: "New Freelancer",
         text: "How do I set my rates? I don't want to undercharge, but I'm scared of pricing myself out.",
-      },
-      {
-        speaker: "Experienced Freelancer",
-        text: "Research market rates for your skill level and experience. Calculate your costs — rent, equipment, software, tax, pension — then add a profit margin. Don't forget you're covering your own sick pay, holidays, and training. A day rate should be roughly double your equivalent salaried hourly rate.",
       },
       {
         speaker: "New Freelancer",
         text: "What about finding clients? I've only ever worked for one employer.",
       },
       {
-        speaker: "Experienced Freelancer",
-        text: "Start with your existing network — former colleagues, clients you've worked with, industry contacts. LinkedIn is essential. A simple portfolio website helps. And don't be afraid to say no to bad briefs or low budgets — it protects your time for better opportunities.",
-      },
-      {
         speaker: "New Freelancer",
         text: "I'm worried about the isolation — I'm used to being surrounded by colleagues.",
-      },
-      {
-        speaker: "Experienced Freelancer",
-        text: "Join a coworking space — even two days a week gives you social contact and structure. Freelancer communities on Slack and at networking events help too. The freedom is wonderful, but you have to actively build the social side yourself.",
       },
     ],
   },

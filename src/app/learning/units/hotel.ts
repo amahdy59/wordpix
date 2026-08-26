@@ -186,62 +186,55 @@ export const HOTEL_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A guest checks into a hotel and asks the front desk clerk about facilities",
     lines: [
       {
-        speaker:
-          "Scene: A guest checks into a hotel and asks the front desk clerk about facilities",
-        text: "Guest:",
+        speaker: "Guest",
+        text: "Good evening. I have a reservation under Khalid — a double room for three nights.",
       },
       {
-        speaker:
-          "Good evening. I have a reservation under Khalid — a double room for three nights.",
-        text: "Front Desk:",
+        speaker: "Front Desk",
+        text: "Welcome! Let me pull that up. Yes, room 412 — here's your key card. The elevator is to your left past the lobby.",
       },
       {
-        speaker:
-          "Welcome! Let me pull that up. Yes, room 412 — here's your key card. The elevator is to your left past the lobby.",
-        text: "Guest:",
+        speaker: "Guest",
+        text: "Thank you. Is there a luggage cart? I have several suitcases.",
       },
       {
-        speaker: "Thank you. Is there a luggage cart? I have several suitcases.",
-        text: "Front Desk:",
+        speaker: "Front Desk",
+        text: "Of course. The bellhop will bring one right away. He can take your bags up to the room.",
       },
       {
-        speaker:
-          "Of course. The bellhop will bring one right away. He can take your bags up to the room.",
-        text: "Guest:",
+        speaker: "Guest",
+        text: "Great. What time is breakfast served in the dining hall?",
       },
       {
-        speaker: "Great. What time is breakfast served in the dining hall?",
-        text: "Front Desk:",
+        speaker: "Front Desk",
+        text: "From 6:30 to 10 a.m. on the ground floor. You can also order room service anytime — the menu is on the nightstand.",
       },
       {
-        speaker:
-          "From 6:30 to 10 a.m. on the ground floor. You can also order room service anytime — the menu is on the nightstand.",
-        text: "Guest:",
+        speaker: "Guest",
+        text: "Is there a swimming pool or a fitness center?",
       },
       {
-        speaker: "Is there a swimming pool or a fitness center?",
-        text: "Front Desk:",
+        speaker: "Front Desk",
+        text: "Both! The pool is on the rooftop, and the fitness center is next to the laundry room on the second floor. Towels are provided.",
       },
       {
-        speaker:
-          "Both! The pool is on the rooftop, and the fitness center is next to the laundry room on the second floor. Towels are provided.",
-        text: "Guest:",
+        speaker: "Guest",
+        text: "Perfect. One more thing — can I get extra pillows and a bathrobe?",
       },
       {
-        speaker: "Perfect. One more thing — can I get extra pillows and a bathrobe?",
-        text: "Front Desk:",
+        speaker: "Front Desk",
+        text: "Absolutely. I'll have housekeeping bring them up. There's also a mini fridge and an iron in the closet.",
       },
       {
-        speaker:
-          "Absolutely. I'll have housekeeping bring them up. There's also a mini fridge and an iron in the closet.",
-        text: "Guest:",
+        speaker: "Guest",
+        text: "Wonderful. And checkout is at noon? I'll leave the do-not-disturb sign up until then.",
       },
       {
-        speaker:
-          "Wonderful. And checkout is at noon? I'll leave the do-not-disturb sign up until then.",
-        text: "Reception:",
+        speaker: "Reception",
+        text: "Certainly. The concierge can give you a list. Their desk is just around the corner.",
       },
     ],
   },

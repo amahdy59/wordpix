@@ -179,53 +179,51 @@ export const BUS_STATION_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A tourist asking for help at a bus station",
     lines: [
       {
-        speaker: "Scene: A tourist asking for help at a bus station",
-        text: "Tourist:",
+        speaker: "Tourist",
+        text: "Excuse me, I need to get to the university. Which bus do I take?",
       },
       {
-        speaker: "Excuse me, I need to get to the university. Which bus do I take?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "You need the number 7 or the 7A. They both go past the university campus.",
       },
       {
-        speaker: "You need the number 7 or the 7A. They both go past the university campus.",
-        text: "Tourist:",
+        speaker: "Tourist",
+        text: "Where do I catch it?",
       },
       {
-        speaker: "Where do I catch it?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "Bay 4, just over there. The next one's due in about eight minutes.",
       },
       {
-        speaker: "Bay 4, just over there. The next one's due in about eight minutes.",
-        text: "Tourist:",
+        speaker: "Tourist",
+        text: "Can I buy a ticket from you, or do I pay on the bus?",
       },
       {
-        speaker: "Can I buy a ticket from you, or do I pay on the bus?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "You can do either. A single to the university is two pounds fifty. Or if you're travelling more today, a day pass is five pounds.",
       },
       {
-        speaker:
-          "You can do either. A single to the university is two pounds fifty. Or if you're travelling more today, a day pass is five pounds.",
-        text: "Tourist:",
+        speaker: "Tourist",
+        text: "I'll take a day pass, please. Do I need exact change on the bus?",
       },
       {
-        speaker: "I'll take a day pass, please. Do I need exact change on the bus?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "No, you can tap your card on the reader. But since you're buying here, I'll print you one. There you go.",
       },
       {
-        speaker:
-          "No, you can tap your card on the reader. But since you're buying here, I'll print you one. There you go.",
-        text: "Tourist:",
+        speaker: "Tourist",
+        text: "Does the driver announce the stops?",
       },
       {
-        speaker: "Does the driver announce the stops?",
-        text: "Staff:",
+        speaker: "Staff",
+        text: "Yes, there's an automated announcement. But just in case, the university stop is the one right after the big roundabout — you'll see the campus buildings.",
       },
       {
-        speaker:
-          "Yes, there's an automated announcement. But just in case, the university stop is the one right after the big roundabout — you'll see the campus buildings.",
-        text: "Tourist:",
+        speaker: "Tourist",
+        text: "Thank you so much!",
       },
     ],
   },

@@ -186,54 +186,51 @@ export const ICE_CREAM_SHOP_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A family choosing ice cream at the display case of an ice cream shop",
     lines: [
       {
-        speaker: "Scene: A family choosing ice cream at the display case of an ice cream shop",
-        text: "Server:",
+        speaker: "Server",
+        text: "Welcome! Would you like a cone or a cup? We have waffle cones and sugar cones today.",
       },
       {
-        speaker:
-          "Welcome! Would you like a cone or a cup? We have waffle cones and sugar cones today.",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "A waffle cone for me, please. Two scoops — vanilla and caramel.",
       },
       {
-        speaker: "A waffle cone for me, please. Two scoops — vanilla and caramel.",
-        text: "Child:",
+        speaker: "Child",
+        text: "I want the bubblegum! And can I have sprinkles and chocolate chips on top?",
       },
       {
-        speaker: "I want the bubblegum! And can I have sprinkles and chocolate chips on top?",
-        text: "Server:",
+        speaker: "Server",
+        text: "Of course! Sprinkles, chocolate chips, and I'll add a cherry. Would you like it in a cup or a cone?",
       },
       {
-        speaker:
-          "Of course! Sprinkles, chocolate chips, and I'll add a cherry. Would you like it in a cup or a cone?",
-        text: "Child:",
+        speaker: "Child",
+        text: "A cup with a spoon, please! Can I also have gummy bears?",
       },
       {
-        speaker: "A cup with a spoon, please! Can I also have gummy bears?",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "That's enough toppings. What about you — do you want to try the gelato? It's denser than regular ice cream.",
       },
       {
-        speaker:
-          "That's enough toppings. What about you — do you want to try the gelato? It's denser than regular ice cream.",
-        text: "Child:",
+        speaker: "Child",
+        text: "What's the difference between gelato and sorbet?",
       },
       {
-        speaker: "What's the difference between gelato and sorbet?",
-        text: "Server:",
+        speaker: "Server",
+        text: "Gelato uses more milk and is served warmer — creamier texture. Sorbet is dairy-free — just fruit, sugar, and water. Great if you want something lighter.",
       },
       {
-        speaker:
-          "Gelato uses more milk and is served warmer — creamier texture. Sorbet is dairy-free — just fruit, sugar, and water. Great if you want something lighter.",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "Can we also get a milkshake? Chocolate, with whipped cream.",
       },
       {
-        speaker: "Can we also get a milkshake? Chocolate, with whipped cream.",
-        text: "Server:",
+        speaker: "Server",
+        text: "Coming right up — I'll blend it now. Straw and lid for takeaway?",
       },
       {
-        speaker: "Coming right up — I'll blend it now. Straw and lid for takeaway?",
-        text: "Parent:",
+        speaker: "Parent",
+        text: "Yes, please. We'll sit on the bench outside under the awning. The kids love the outdoor seating.",
       },
     ],
   },

@@ -217,62 +217,47 @@ export const THEATER_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A stage manager preparing the cast and crew before a dress rehearsal",
     lines: [
       {
-        speaker: "Scene: A stage manager preparing the cast and crew before a dress rehearsal",
-        text: "Stage Mgr:",
+        speaker: "Stage Mgr",
+        text: "Everyone, we have thirty minutes to curtain. The spotlight needs re-angling — it's hitting the wings, not the apron.",
       },
       {
-        speaker:
-          "Everyone, we have thirty minutes to curtain. The spotlight needs re-angling — it's hitting the wings, not the apron.",
-        text: "Actor 1:",
+        speaker: "Stage Mgr",
+        text: "Pin it shorter. And check your mask — it slipped during yesterday's run. Wardrobe, can you help?",
       },
       {
-        speaker:
-          "My costume isn't fitting properly. The robe keeps catching on the trapdoor when I exit in Act Two.",
-        text: "Stage Mgr:",
+        speaker: "Wardrobe",
+        text: "I'll fix the robe now. The crown and gloves are on the props table backstage.",
       },
       {
-        speaker:
-          "Pin it shorter. And check your mask — it slipped during yesterday's run. Wardrobe, can you help?",
-        text: "Wardrobe:",
+        speaker: "Stage Mgr",
+        text: "Check behind the proscenium. The throne and the goblet should already be in position for Act Three.",
       },
       {
-        speaker: "I'll fix the robe now. The crown and gloves are on the props table backstage.",
-        text: "Actor 2:",
+        speaker: "Technician",
+        text: "The fly system is ready. The backdrop changes at Scene Four and Scene Seven. The cyclorama is lit for the night sky.",
       },
       {
-        speaker: "Where's the sword for the duel scene? It wasn't on the prop shelf.",
-        text: "Stage Mgr:",
+        speaker: "Stage Mgr",
+        text: "Good. Lighting — test the spotlight on the balcony scene. I want warm tones, not cold.",
       },
       {
-        speaker:
-          "Check behind the proscenium. The throne and the goblet should already be in position for Act Three.",
-        text: "Technician:",
+        speaker: "Director",
+        text: "Cast, remember: the audience in the orchestra seats can see your face paint clearly. Keep your expressions sharp.",
       },
       {
-        speaker:
-          "The fly system is ready. The backdrop changes at Scene Four and Scene Seven. The cyclorama is lit for the night sky.",
-        text: "Stage Mgr:",
+        speaker: "Stage Mgr",
+        text: "Box office says we're nearly sold out. Every seat — balcony, box seats, and the front row — is taken.",
       },
       {
-        speaker:
-          "Good. Lighting — test the spotlight on the balcony scene. I want warm tones, not cold.",
-        text: "Director:",
+        speaker: "Director",
+        text: "Then let's give them something to remember. Places, everyone. Break a leg.",
       },
       {
-        speaker:
-          "Cast, remember: the audience in the orchestra seats can see your face paint clearly. Keep your expressions sharp.",
-        text: "Stage Mgr:",
-      },
-      {
-        speaker:
-          "Box office says we're nearly sold out. Every seat — balcony, box seats, and the front row — is taken.",
-        text: "Director:",
-      },
-      {
-        speaker: "Then let's give them something to remember. Places, everyone. Break a leg.",
-        text: "Clerk:",
+        speaker: "Clerk",
+        text: "Programmes are available from the ushers inside the auditorium. They're four pounds.",
       },
     ],
   },

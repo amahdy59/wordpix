@@ -237,55 +237,51 @@ export const EYE_DOCTOR_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A patient visits the eye doctor for a routine eye examination",
     lines: [
       {
-        speaker: "Scene: A patient visits the eye doctor for a routine eye examination",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "I've been getting headaches when I read. I think I need new glasses.",
       },
       {
-        speaker: "I've been getting headaches when I read. I think I need new glasses.",
-        text: "Doctor:",
+        speaker: "Doctor",
+        text: "Let's start with the eye chart. Cover your left eye and read the smallest line you can see.",
       },
       {
-        speaker:
-          "Let's start with the eye chart. Cover your left eye and read the smallest line you can see.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "I can read down to line five, but line six is blurry.",
       },
       {
-        speaker: "I can read down to line five, but line six is blurry.",
-        text: "Doctor:",
+        speaker: "Doctor",
+        text: "That's helpful. Now I'll use the phoropter for a refraction test — tell me which lens is clearer, one or two.",
       },
       {
-        speaker:
-          "That's helpful. Now I'll use the phoropter for a refraction test — tell me which lens is clearer, one or two.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "Lens two is much sharper. Do I need bifocals?",
       },
       {
-        speaker: "Lens two is much sharper. Do I need bifocals?",
-        text: "Doctor:",
+        speaker: "Doctor",
+        text: "Your near vision has changed. I'd recommend progressive lenses — they're smoother than bifocals. Let me check your eye pressure with the tonometer.",
       },
       {
-        speaker:
-          "Your near vision has changed. I'd recommend progressive lenses — they're smoother than bifocals. Let me check your eye pressure with the tonometer.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "Is that the air puff test? I always dread that part.",
       },
       {
-        speaker: "Is that the air puff test? I always dread that part.",
-        text: "Doctor:",
+        speaker: "Doctor",
+        text: "It's quick — just a gentle puff. I'll also look at the back of your eye with the ophthalmoscope. We may need pupil dilation for a closer look.",
       },
       {
-        speaker:
-          "It's quick — just a gentle puff. I'll also look at the back of your eye with the ophthalmoscope. We may need pupil dilation for a closer look.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "Will dilation affect my driving?",
       },
       {
-        speaker: "Will dilation affect my driving?",
-        text: "Doctor:",
+        speaker: "Doctor",
+        text: "Yes — bring sunglasses. Your vision will be blurry for a few hours. The slit lamp exam is next — chin on the rest, please.",
       },
       {
-        speaker:
-          "Yes — bring sunglasses. Your vision will be blurry for a few hours. The slit lamp exam is next — chin on the rest, please.",
-        text: "Patient:",
+        speaker: "Patient",
+        text: "Everything looks healthy? Can I pick out a new frame today?",
       },
     ],
   },

@@ -186,59 +186,55 @@ export const SUBWAY_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A tourist asks a commuter for help navigating the subway system",
     lines: [
       {
-        speaker: "Scene: A tourist asks a commuter for help navigating the subway system",
-        text: "Tourist:",
+        speaker: "Tourist",
+        text: "Excuse me — I need to get to the museum. Which line do I take?",
       },
       {
-        speaker: "Excuse me — I need to get to the museum. Which line do I take?",
-        text: "Commuter:",
+        speaker: "Commuter",
+        text: "Check the line map on the wall. You need the Blue Line — take it three stops, then transfer at Central concourse.",
       },
       {
-        speaker:
-          "Check the line map on the wall. You need the Blue Line — take it three stops, then transfer at Central concourse.",
-        text: "Tourist:",
+        speaker: "Tourist",
+        text: "Where do I buy a ticket? I don't have a metro card.",
       },
       {
-        speaker: "Where do I buy a ticket? I don't have a metro card.",
-        text: "Commuter:",
+        speaker: "Commuter",
+        text: "The ticket machine is at the mezzanine level, near the entrance. You can get a single ride or a weekly pass.",
       },
       {
-        speaker:
-          "The ticket machine is at the mezzanine level, near the entrance. You can get a single ride or a weekly pass.",
-        text: "Tourist:",
+        speaker: "Tourist",
+        text: "Can I pay with contactless?",
       },
       {
-        speaker: "Can I pay with contactless?",
-        text: "Commuter:",
+        speaker: "Commuter",
+        text: "Yes — just tap at the gate. Or you can top up a metro card at the machine. The fare is shown on the screen.",
       },
       {
-        speaker:
-          "Yes — just tap at the gate. Or you can top up a metro card at the machine. The fare is shown on the screen.",
-        text: "Tourist:",
+        speaker: "Tourist",
+        text: "Which way to the platform? The direction signs are confusing.",
       },
       {
-        speaker: "Which way to the platform? The direction signs are confusing.",
-        text: "Commuter:",
+        speaker: "Commuter",
+        text: "Take the escalator down. Northbound platform is on the left. Check the transfer sign if you need to switch lines.",
       },
       {
-        speaker:
-          "Take the escalator down. Northbound platform is on the left. Check the transfer sign if you need to switch lines.",
-        text: "Tourist:",
+        speaker: "Tourist",
+        text: "It's crowded. Is there anything to hold onto in the car?",
       },
       {
-        speaker: "It's crowded. Is there anything to hold onto in the car?",
-        text: "Commuter:",
+        speaker: "Commuter",
+        text: "Grab the handrail or the pole near the door. If you get a seat, watch the exit sign — your stop is the third one.",
       },
       {
-        speaker:
-          "Grab the handrail or the pole near the door. If you get a seat, watch the exit sign — your stop is the third one.",
-        text: "Tourist:",
+        speaker: "Tourist",
+        text: "What if I miss my stop?",
       },
       {
-        speaker: "What if I miss my stop?",
-        text: "Local:",
+        speaker: "Local",
+        text: "Follow the signs for the Blue Line — down the escalator and turn left.",
       },
     ],
   },

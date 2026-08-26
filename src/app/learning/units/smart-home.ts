@@ -185,55 +185,51 @@ export const SMART_HOME_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A tech-savvy homeowner shows a friend around their smart home setup",
     lines: [
       {
-        speaker: "Scene: A tech-savvy homeowner shows a friend around their smart home setup",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "Welcome! Let me show you the setup. Say the wake word and the smart speaker lights up.",
       },
       {
-        speaker:
-          "Welcome! Let me show you the setup. Say the wake word and the smart speaker lights up.",
-        text: "Friend:",
+        speaker: "Friend",
+        text: "That's cool. What can it do?",
       },
       {
-        speaker: "That's cool. What can it do?",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "Everything — voice commands for the lights, the playlist, a news briefing, reminders, and a timer for cooking. It even works as an intercom between rooms.",
       },
       {
-        speaker:
-          "Everything — voice commands for the lights, the playlist, a news briefing, reminders, and a timer for cooking. It even works as an intercom between rooms.",
-        text: "Friend:",
+        speaker: "Friend",
+        text: "What about those coloured lights in the hallway?",
       },
       {
-        speaker: "What about those coloured lights in the hallway?",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "Those are smart bulbs with a dimmer. I set a scene — warm white for evenings, daylight for mornings. The light strip under the cabinets is colour changing.",
       },
       {
-        speaker:
-          "Those are smart bulbs with a dimmer. I set a scene — warm white for evenings, daylight for mornings. The light strip under the cabinets is colour changing.",
-        text: "Friend:",
+        speaker: "Friend",
+        text: "And the security? I noticed the doorbell camera outside.",
       },
       {
-        speaker: "And the security? I noticed the doorbell camera outside.",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "The doorbell camera has night vision. There's also a security camera in the garden, a motion detector at the back door, and a fingerprint reader on the smart lock.",
       },
       {
-        speaker:
-          "The doorbell camera has night vision. There's also a security camera in the garden, a motion detector at the back door, and a fingerprint reader on the smart lock.",
-        text: "Friend:",
+        speaker: "Friend",
+        text: "What happens if someone triggers the motion sensor?",
       },
       {
-        speaker: "What happens if someone triggers the motion sensor?",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "The alarm system goes off, the security camera starts recording to cloud storage, and I get an app alert on my phone instantly.",
       },
       {
-        speaker:
-          "The alarm system goes off, the security camera starts recording to cloud storage, and I get an app alert on my phone instantly.",
-        text: "Friend:",
+        speaker: "Friend",
+        text: "What about heating and cooling?",
       },
       {
-        speaker: "What about heating and cooling?",
-        text: "Owner:",
+        speaker: "Owner",
+        text: "The smart thermostat handles that. It reads the temperature sensor and the humidity sensor in each zone and adjusts automatically. I can control it from the mobile app.",
       },
     ],
   },

@@ -249,56 +249,51 @@ export const PHARMACY_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A customer collecting a prescription at the pharmacy counter",
     lines: [
       {
-        speaker: "Scene: A customer collecting a prescription at the pharmacy counter",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Good morning. I'm here to pick up a prescription — it should be under the name Ahmed Hassan.",
       },
       {
-        speaker:
-          "Good morning. I'm here to pick up a prescription — it should be under the name Ahmed Hassan.",
-        text: "Pharmacist:",
+        speaker: "Pharmacist",
+        text: "Let me check the computer. Yes — I have it here. The doctor prescribed a capsule for the infection and a cream for the rash.",
       },
       {
-        speaker:
-          "Let me check the computer. Yes — I have it here. The doctor prescribed a capsule for the infection and a cream for the rash.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "How often do I take the capsule?",
       },
       {
-        speaker: "How often do I take the capsule?",
-        text: "Pharmacist:",
+        speaker: "Pharmacist",
+        text: "One capsule twice a day, with food. The label printer has put the instructions on the pill bottle. Read them carefully.",
       },
       {
-        speaker:
-          "One capsule twice a day, with food. The label printer has put the instructions on the pill bottle. Read them carefully.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "And the cream?",
       },
       {
-        speaker: "And the cream?",
-        text: "Pharmacist:",
+        speaker: "Pharmacist",
+        text: "Apply the ointment to the affected area three times daily. It comes in an ointment tube — keep it in a cool place.",
       },
       {
-        speaker:
-          "Apply the ointment to the affected area three times daily. It comes in an ointment tube — keep it in a cool place.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "I also need something for a cough. Do I need a prescription?",
       },
       {
-        speaker: "I also need something for a cough. Do I need a prescription?",
-        text: "Pharmacist:",
+        speaker: "Pharmacist",
+        text: "No — cough syrup is over the counter. It's on the medicine shelf behind you. We also have lozenges if you prefer.",
       },
       {
-        speaker:
-          "No — cough syrup is over the counter. It's on the medicine shelf behind you. We also have lozenges if you prefer.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "What about eye drops? My eyes have been dry lately.",
       },
       {
-        speaker: "What about eye drops? My eyes have been dry lately.",
-        text: "Pharmacist:",
+        speaker: "Pharmacist",
+        text: "These eye drops are good for dryness. And if your allergies are bad, try the nasal spray — also available without a prescription.",
       },
       {
-        speaker:
-          "These eye drops are good for dryness. And if your allergies are bad, try the nasal spray — also available without a prescription.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Can I pay for everything together at the cash register?",
       },
     ],
   },

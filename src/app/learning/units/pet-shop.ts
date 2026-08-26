@@ -258,53 +258,47 @@ export const PET_SHOP_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A family visits a pet shop to choose their first pet",
     lines: [
       {
-        speaker: "Scene: A family visits a pet shop to choose their first pet",
-        text: "Father:",
+        speaker: "Father",
+        text: "Alright, we agreed — one pet. Let's look around first. What do you think about a dog?",
       },
       {
-        speaker:
-          "Alright, we agreed — one pet. Let's look around first. What do you think about a dog?",
-        text: "Daughter:",
+        speaker: "Daughter",
+        text: "I love the golden retriever! But the labrador and the beagle are adorable too.",
       },
       {
-        speaker: "I love the golden retriever! But the labrador and the beagle are adorable too.",
-        text: "Son:",
+        speaker: "Son",
+        text: "I want a husky! Or maybe a dalmatian. What about the German shepherd?",
       },
       {
-        speaker: "I want a husky! Or maybe a dalmatian. What about the German shepherd?",
-        text: "Father:",
+        speaker: "Father",
+        text: "Those are big dogs. A poodle, a chihuahua, or a pug might be better for our apartment.",
       },
       {
-        speaker:
-          "Those are big dogs. A poodle, a chihuahua, or a pug might be better for our apartment.",
-        text: "Mother:",
+        speaker: "Mother",
+        text: "What about a cat instead? The Persian is beautiful, and the Siamese is very friendly.",
       },
       {
-        speaker:
-          "What about a cat instead? The Persian is beautiful, and the Siamese is very friendly.",
-        text: "Daughter:",
+        speaker: "Daughter",
+        text: "The Maine Coon is huge! I also like the tabby and the Bengal — they're so playful.",
       },
       {
-        speaker:
-          "The Maine Coon is huge! I also like the tabby and the Bengal — they're so playful.",
-        text: "Son:",
+        speaker: "Son",
+        text: "Can we get a ragdoll? Or the British Shorthair? The Scottish Fold has the cutest ears.",
       },
       {
-        speaker:
-          "Can we get a ragdoll? Or the British Shorthair? The Scottish Fold has the cutest ears.",
-        text: "Father:",
+        speaker: "Father",
+        text: "Cats are easier to care for. But what about something smaller — a hamster, a rabbit, or a guinea pig?",
       },
       {
-        speaker:
-          "Cats are easier to care for. But what about something smaller — a hamster, a rabbit, or a guinea pig?",
-        text: "Daughter:",
+        speaker: "Daughter",
+        text: "The goldfish are pretty! And the parrot can talk. There's a canary singing over there too.",
       },
       {
-        speaker:
-          "The goldfish are pretty! And the parrot can talk. There's a canary singing over there too.",
-        text: "Son:",
+        speaker: "Son",
+        text: "The turtle is cool — and look at the gerbil running on its wheel!",
       },
     ],
   },

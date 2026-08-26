@@ -220,54 +220,47 @@ export const BAKERY_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "A customer orders items for a family celebration at a local bakery",
     lines: [
       {
-        speaker: "Scene: A customer orders items for a family celebration at a local bakery",
-        text: "Baker:",
+        speaker: "Baker",
+        text: "Good morning! What can I get for you today?",
       },
       {
-        speaker: "Good morning! What can I get for you today?",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "I need a birthday cake for my daughter. Do you have chocolate cake or carrot cake?",
       },
       {
-        speaker:
-          "I need a birthday cake for my daughter. Do you have chocolate cake or carrot cake?",
-        text: "Baker:",
+        speaker: "Baker",
+        text: "Both! The chocolate cake is our most popular, but the cheesecake and the apple pie are wonderful too.",
       },
       {
-        speaker:
-          "Both! The chocolate cake is our most popular, but the cheesecake and the apple pie are wonderful too.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "I'll take the chocolate cake. Can I also get a dozen croissants and some muffins?",
       },
       {
-        speaker:
-          "I'll take the chocolate cake. Can I also get a dozen croissants and some muffins?",
-        text: "Baker:",
+        speaker: "Baker",
+        text: "Of course. The croissant is fresh from the oven. Would you like the blueberry muffin or the banana muffin?",
       },
       {
-        speaker:
-          "Of course. The croissant is fresh from the oven. Would you like the blueberry muffin or the banana muffin?",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Blueberry, please. I also need a baguette and some sourdough for dinner. And maybe a pita and a focaccia.",
       },
       {
-        speaker:
-          "Blueberry, please. I also need a baguette and some sourdough for dinner. And maybe a pita and a focaccia.",
-        text: "Baker:",
+        speaker: "Baker",
+        text: "The whole wheat bread and the rye bread are freshly baked too. The ciabatta just came out — and the brioche is still warm.",
       },
       {
-        speaker:
-          "The whole wheat bread and the rye bread are freshly baked too. The ciabatta just came out — and the brioche is still warm.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Everything smells amazing. What about pastries? The children love donuts and cinnamon rolls.",
       },
       {
-        speaker:
-          "Everything smells amazing. What about pastries? The children love donuts and cinnamon rolls.",
-        text: "Baker:",
+        speaker: "Baker",
+        text: "I'll box up donuts, cinnamon rolls, and a danish. We also have éclairs, scones, and strudel if you want variety.",
       },
       {
-        speaker:
-          "I'll box up donuts, cinnamon rolls, and a danish. We also have éclairs, scones, and strudel if you want variety.",
-        text: "Customer:",
+        speaker: "Customer",
+        text: "Add a few macarons and a profiterole box too. And a cherry pie and a lemon tart for the adults.",
       },
     ],
   },

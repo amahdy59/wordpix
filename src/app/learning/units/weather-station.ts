@@ -190,53 +190,47 @@ export const WEATHER_STATION_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "Two art students discussing their final project",
     lines: [
       {
-        speaker: "Scene: Two art students discussing their final project",
-        text: "Yusuf:",
+        speaker: "Yusuf",
+        text: "Have you started your final piece yet? The deadline's in three weeks.",
       },
       {
-        speaker: "Have you started your final piece yet? The deadline's in three weeks.",
-        text: "Fatima:",
+        speaker: "Fatima",
+        text: "I've been working on some preliminary sketches, but I haven't decided on a medium. I'm torn between acrylics and mixed media.",
       },
       {
-        speaker:
-          "I've been working on some preliminary sketches, but I haven't decided on a medium. I'm torn between acrylics and mixed media.",
-        text: "Yusuf:",
+        speaker: "Yusuf",
+        text: "What's the theme again? I've forgotten what Professor Hassan said.",
       },
       {
-        speaker: "What's the theme again? I've forgotten what Professor Hassan said.",
-        text: "Fatima:",
+        speaker: "Fatima",
+        text: "'Transformation.' We can interpret it however we like, but it has to include at least three different techniques.",
       },
       {
-        speaker:
-          "'Transformation.' We can interpret it however we like, but it has to include at least three different techniques.",
-        text: "Yusuf:",
+        speaker: "Yusuf",
+        text: "That's what I've been struggling with. I've done two oil studies, but I can't figure out the third technique. I was thinking about adding collage elements.",
       },
       {
-        speaker:
-          "That's what I've been struggling with. I've done two oil studies, but I can't figure out the third technique. I was thinking about adding collage elements.",
-        text: "Fatima:",
+        speaker: "Fatima",
+        text: "That could work really well. Have you seen Layla's piece? She's been experimenting with texture — she's mixed sand into her paint.",
       },
       {
-        speaker:
-          "That could work really well. Have you seen Layla's piece? She's been experimenting with texture — she's mixed sand into her paint.",
-        text: "Yusuf:",
+        speaker: "Yusuf",
+        text: "I saw it yesterday. It's impressive, but it must have taken ages. The surface needs to dry completely between each layer.",
       },
       {
-        speaker:
-          "I saw it yesterday. It's impressive, but it must have taken ages. The surface needs to dry completely between each layer.",
-        text: "Fatima:",
+        speaker: "Fatima",
+        text: "True. If we'd started earlier, we'd have more time to experiment. I think I'll keep it simple — sketches, watercolour washes, and ink details.",
       },
       {
-        speaker:
-          "True. If we'd started earlier, we'd have more time to experiment. I think I'll keep it simple — sketches, watercolour washes, and ink details.",
-        text: "Yusuf:",
+        speaker: "Yusuf",
+        text: "Sounds good. Shall we book one of the shared studios this weekend? It's easier to work when someone else is there.",
       },
       {
-        speaker:
-          "Sounds good. Shall we book one of the shared studios this weekend? It's easier to work when someone else is there.",
-        text: "Fatima:",
+        speaker: "Fatima",
+        text: "Definitely. I'll reserve the one with the north-facing windows — the light's much better in there.",
       },
     ],
   },

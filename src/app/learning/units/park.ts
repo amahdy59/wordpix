@@ -222,53 +222,47 @@ export const PARK_LEARNING: UnitLearningMaterials = {
   ],
   dialogue: {
     title: "Mini Dialogue",
+    scene: "Two friends explore a city park on a sunny afternoon",
     lines: [
       {
-        speaker: "Scene: Two friends explore a city park on a sunny afternoon",
-        text: "Omar:",
+        speaker: "Omar",
+        text: "What a beautiful day! Let's sit on that bench near the fountain and plan our route.",
       },
       {
-        speaker:
-          "What a beautiful day! Let's sit on that bench near the fountain and plan our route.",
-        text: "Tariq:",
+        speaker: "Tariq",
+        text: "Sure. I brought sandwiches — should we find a picnic table or just sit on the grass?",
       },
       {
-        speaker:
-          "Sure. I brought sandwiches — should we find a picnic table or just sit on the grass?",
-        text: "Omar:",
+        speaker: "Omar",
+        text: "The picnic table by the pond looks perfect. I can see a duck and a swan swimming near the bridge.",
       },
       {
-        speaker:
-          "The picnic table by the pond looks perfect. I can see a duck and a swan swimming near the bridge.",
-        text: "Tariq:",
+        speaker: "Tariq",
+        text: "Look — there's a squirrel on the shade tree! And a pigeon sitting on the statue.",
       },
       {
-        speaker: "Look — there's a squirrel on the shade tree! And a pigeon sitting on the statue.",
-        text: "Omar:",
+        speaker: "Omar",
+        text: "There's a robin too, in the flower bed. This meadow is full of birds — even a sparrow on the lamp post.",
       },
       {
-        speaker:
-          "There's a robin too, in the flower bed. This meadow is full of birds — even a sparrow on the lamp post.",
-        text: "Tariq:",
+        speaker: "Tariq",
+        text: "After lunch, should we go walking around the hill or jogging along the stream?",
       },
       {
-        speaker: "After lunch, should we go walking around the hill or jogging along the stream?",
-        text: "Omar:",
+        speaker: "Omar",
+        text: "Let's try cycling first — I saw a bike rack near the gazebo. We can ride past the drinking fountain.",
       },
       {
-        speaker:
-          "Let's try cycling first — I saw a bike rack near the gazebo. We can ride past the drinking fountain.",
-        text: "Tariq:",
+        speaker: "Tariq",
+        text: "Good idea. Watch out for that frog near the pebble path — and there's a turtle by the pond too!",
       },
       {
-        speaker:
-          "Good idea. Watch out for that frog near the pebble path — and there's a turtle by the pond too!",
-        text: "Omar:",
+        speaker: "Omar",
+        text: "A goose just landed on the grass. And I think I see a rabbit hiding behind that acorn pile near the pinecone.",
       },
       {
-        speaker:
-          "A goose just landed on the grass. And I think I see a rabbit hiding behind that acorn pile near the pinecone.",
-        text: "Tariq:",
+        speaker: "Tariq",
+        text: "This park has everything. Should we have a picnic here next weekend too?",
       },
     ],
   },
