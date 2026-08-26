@@ -1,0 +1,2462 @@
+<USER_REQUEST>
+I like the study materials section so much but I find it a bit overwelming.  I need to restructure it so that it's focused clear, much more organized and relevant for users. 
+* I think there's an information section, study section and practice section from what I see. 
+what about the following analaysis and suggestions: I reviewed the deployed route and the current implementation/content behind the Bathroom Study page. The underlying material is actually quite rich; the main weakness is that the interface exposes that richness as a content library instead of turning it into a guided learning experience.
+The current screen can expose up to 18 separate sections—Words, Reading, Vocabulary Details, Pronunciation, Priority Tiers, Collocations, Synonyms & Antonyms, Idioms & Phrasal Verbs, Word Forms, Dialogue, Culture, Common Mistakes, Practice, Additional Exercises, Error Correction, Writing Prompts, Self-Assessment, and Reference—all in one horizontally scrolling navigation row. It also deliberately sits outside the scored lesson system, so activity here does not advance or record learning progress.
+My overall assessment
+Area
+Current state
+What I would change
+Information architecture
+Too many equal-level destinations
+Reduce to 4 primary areas
+UX
+Learner must decide what to study
+Give them a recommended path + Continue button
+Visual hierarchy
+Many similar cards and pills
+Introduce clear page/module hierarchy
+Learning design
+Rich material, but fragmented
+Sequence from recognition → recall → context → production
+Vocabulary
+Large catalogue presented together
+Introduce core vocabulary progressively
+Practice
+Exercises are scattered across sections
+Consolidate them into one Practice experience
+Progress
+Study page intentionally doesn't track it
+Track completion, confidence and weak words
+Mobile
+18-item horizontal navigation
+Remove the enormous horizontal nav entirely
+Accessibility
+Good foundations, some structural issues
+Improve navigation semantics, focus and feedback
+Motivation
+Feels like reference material
+Make progress and achievable study goals visible
+1. The biggest problem: the IA
+Right now the information architecture essentially says:
+“Here are 18 types of educational material. Pick one.”
+That's useful to a teacher or course designer. It is not the mental model you want to give a learner.
+For example, the learner shouldn't have to understand the pedagogical difference between:
+Vocabulary Details → Priority Tiers → Collocations → Synonyms & Antonyms → Idioms & Phrasal Verbs → Word Forms → Reference
+Those are your content types. They are not learner goals.
+The Bathroom page currently constructs all available sections in exactly this kind of flat hierarchy.
+Instead, I would reduce the entire page to:
+1. Learn
+Learn the vocabulary and pronunciation.
+2. Use It
+See the vocabulary used naturally in phrases, conversation and reading.
+3. Practice
+Retrieve and produce the language yourself.
+4. Reference
+Look something up when you need it.
+That single change would improve the page enormously.
+2. I would completely change the initial page
+At the moment, the implementation defaults to Reading whenever a passage exists.
+For Bathroom, that's especially questionable because the passage itself is marked B1 and immediately uses a large vocabulary set including faucet, hand soap, mouthwash, conditioner, shower curtain, bath mat, dental floss, cotton swabs, etc.
+So a beginner can enter "Study Bathroom" and immediately get a fairly dense B1 reading passage.
+I wouldn't make any content section the default.
+Instead, create a small Bathroom Study Home.
+Something like:
+← Bathroom THE BATHROOM Learn the words you need for everyday bathroom situations. A1–B1 · 67 words ━━━━━━━━━━━━━━ 28% complete Continue learning Core Bathroom Words ~5 min [ Continue ] YOUR STUDY PATH ✓ 1. Essential words ● 2. Pronunciation ○ 3. Useful phrases ○ 4. Conversation ○ 5. Reading in context ○ 6. Practice ○ 7. Review Explore all material →
+Immediately I know:
+what I'm learning;
+approximately how much there is;
+where I am;
+what I should do next;
+whether I can explore freely.
+That's much stronger than starting with 18 tabs.
+3. The Bathroom unit itself needs another layer of prioritization
+The Bathroom unit contains 67 vocabulary items spread across five lesson groups.
+But interestingly, you already have a priority system in the learning data:
+Essential: toilet, sink, shower, bathtub, mirror, towel
+Important: toothbrush, soap, faucet, shampoo, toilet paper, mat
+Good to know: drain, curtain, cabinet, plunger
+That's good content architecture.
+But "Priority Tiers" should not be a page in the navigation.
+The learner shouldn't click:
+Priority Tiers
+Instead, use that information invisibly to construct the curriculum:
+Start here — 6 essentials
+toilet · sink · shower · bathtub · mirror · towel
+Then:
+Everyday essentials — 6 more
+toothbrush · toothpaste · soap · shampoo · faucet · toilet paper
+Then:
+More useful bathroom words
+And eventually:
+Explore all 67 words
+This changes the experience from:
+Memorise an intimidating vocabulary catalogue.
+to:
+Learn six words. Great. Now six more.
+Much more achievable.
+4. Your vocabulary cards currently aren't really "learning cards"
+The current Words implementation shows:
+image → English word → phonetic transcription
+and nothing else. The image is displayed in a fixed 4:3 crop using object-cover.
+That's visually neat, but pedagogically thin.
+A vocabulary card should become interactive:
+┌─────────────────────────┐ │ │ │ [ SHOWER ] │ │ image │ │ │ ├─────────────────────────┤ │ shower 🔊 │ │ /ˈʃaʊ.ər/ │ │ │ │ a place/device used │ │ to wash your body │ │ │ │ I take a shower every │ │ morning. │ │ │ │ [I know this] [Practice]│ └─────────────────────────┘
+But don't show everything simultaneously.
+Default card:
+Image + word + audio
+Tap:
+meaning + example + pronunciation
+Tap "Practice":
+retrieve the word without seeing it
+That supports progressive disclosure and reduces cognitive load.
+For Arabic-speaking learners, I'd also make the Arabic gloss optional/revealable, rather than permanently displayed.
+5. Audio should become central, not secondary
+This is probably my biggest learning-experience recommendation after the IA.
+You're teaching vocabulary, and the app already positions itself around visual discovery and audio practice. ([github.com](https://github.com/amahdy59/wordpix))
+Yet this Study page turns pronunciation into a separate textual section containing things such as:
+towel /ˈtaʊ.əl/
+Stress on first syllable
+IPA is useful, but especially for A1 learners it should support audio rather than replace it.
+Every target word should have:
+🔊 Normal · 🐢 Slow
+And ideally:
+🎤 Say it
+Then pronunciation details can remain under an expandable Pronunciation control.
+I would actually eliminate Pronunciation Guide as a top-level destination. Put pronunciation where the word is learned.
+6. Consolidate the overlapping sections
+This is the restructuring I would use:
+Current content
+New location
+Words
+Learn → Vocabulary
+Priority Tiers
+Integrated into Vocabulary
+Vocabulary Details
+Vocabulary card/details drawer
+Pronunciation Guide
+Integrated into Vocabulary
+Word Forms
+Learn → Word details, optional
+Collocations
+Use It → Useful phrases
+Idioms & Phrasal Verbs
+Use It → Useful phrases
+Synonyms & Antonyms
+Reference / word details
+Dialogue
+Use It → Conversation
+Reading
+Use It → Reading
+Culture & Usage
+Contextual callouts
+Common Mistakes
+Contextual callouts + Practice
+Practice
+Practice
+Additional Exercises
+Practice
+Error Correction
+Practice
+Writing Prompts
+Practice → Create
+Self-Assessment
+Review
+Reference
+Reference → All words
+Notice what happens:
+18 navigation choices become 4.
+Nothing is deleted.
+The system simply gains hierarchy.
+7. The ideal learning sequence
+Your existing content is excellent for creating a much stronger sequence.
+The Bathroom data already contains images, lexical groups, useful collocations such as take a shower, brush your teeth, flush the toilet, turn on the tap, a morning dialogue, a contextual passage, error correction, writing prompts and self-assessment.
+I would make the guided path:
+See it → Hear it → Recognize it → Recall it → Use it → Understand it in context → Produce it → Review it
+Concretely:
+STEP 1 Learn the essential words Picture + audio + word ↓ STEP 2 Can you remember them? Picture → choose / type / speak ↓ STEP 3 Useful combinations brush your teeth take a shower turn on the faucet ↓ STEP 4 Real conversation Getting Ready in the Morning Listen + read + tap vocabulary ↓ STEP 5 Reading in context Morning bathroom routine Target words highlighted ↓ STEP 6 Practice Fill gaps → matching → error correction ↓ STEP 7 Use the language Speaking / writing task ↓ STEP 8 Review Weak words + can-do check
+That's a course.
+The current implementation is closer to a digital workbook index.
+8. There is an important problem in the vocabulary grouping
+One existing subtopic is called Cleaning Items, but it includes:
+sponge, brush, bucket, gloves, spray bottle, cloth, plunger, squeegee, tissue
+and then suddenly:
+wash hands, brush teeth, take shower, dry off, flush, comb hair, apply lotion, gargle.
+Those are two completely different semantic types.
+Split this into:
+Cleaning Tools
+sponge · bucket · gloves · spray bottle · cloth · plunger · squeegee
+and:
+Bathroom Actions
+wash your hands · brush your teeth · take a shower · dry off · flush · comb your hair · apply lotion · gargle
+This also lets you make actions visually distinct from objects.
+For example:
+🖼 Objects → photograph
+🎬 Actions → short animation/video or human-action illustration
+That would substantially improve semantic encoding.
+9. Don't make all 67 words look equally important
+This is particularly important.
+A learner sees:
+faucet
+rubber duck
+squeegee
+plunger
+toothbrush
+toilet
+cotton swab
+If every one gets identical visual weight, your UI implicitly says:
+All of these deserve equal learning effort.
+They don't.
+I'd visually indicate:
+CORE
+Very common and immediately useful.
+USEFUL
+EXTRA
+But not with academic terminology such as "Priority Tier."
+Even better, hide the distinction initially:
+12 words to learn today
+55 more words to explore
+That makes the curriculum feel finite.
+10. "Reading" should be an experience, not a block of text
+The current reading section renders the passage and then comprehension questions below it.
+I'd turn it into interactive comprehensible input.
+For example:
+Morning Routine
+▶ Listen to the story · 0:52
+Every morning starts in the bathroom.
+You turn on the faucet at the sink...
+Target vocabulary is subtly highlighted.
+Tap faucet:
+🚰 faucet 🔊 /ˈfɔː.sɪt/ tap 🇬🇧
+Then:
+Show translation
+Read without vocabulary help
+And then comprehension.
+This combines vocabulary and context instead of separating them artificially.
+11. Dialogue is a missed opportunity
+You already have a fairly natural "Getting Ready in the Morning" dialogue between Mom and Ali.
+Right now it's essentially text.
+I'd turn it into:
+Listen
+Listen + read
+Role-play
+Then:
+You are Ali.
+Audio:
+Mom: Did you brush your teeth yet?
+Learner responds:
+Yes, I used ______ and ______.
+That creates actual communicative retrieval.
+Much better than simply reading a transcript.
+12. Practice needs one unified engine
+Currently practice is fragmented among:
+Practice / Additional Exercises / Collocations Quiz / Error Correction / Writing / Reading questions
+The data contains plenty of good exercise material.
+Put all of it in one place:
+Practice Bathroom 12 questions · ~4 minutes 1 Picture recall 2 Listen and choose 3 Fill the blank 4 Choose the natural phrase 5 Fix the mistake 6 Use it yourself [ Start practice ]
+Then dynamically prioritize words the learner gets wrong.
+That is much stronger than presenting exercise formats as navigation categories.
+13. Wrong answers should create learning, not merely feedback
+The current reading MCQs lock all options after one selection and then display the explanation.
+Good: there is immediate feedback.
+But I would improve it:
+Incorrect
+Not quite. A shower curtain keeps water inside the bathtub.
+Try again
+Then if wrong again:
+Show answer
+And most importantly:
+Review "shower curtain" later
+The application already documents a pattern elsewhere where incorrect words are re-queued later in exercises. ([github.com](https://github.com/amahdy59/wordpix))
+Bring the same retrieval philosophy to Study Materials.
+14. Progress is currently disconnected from the learning experience
+This is architectural rather than visual.
+The source explicitly says the page is:
+outside the scored lesson state machine
+and that nothing here records attempts or advances progress.
+For a reference page, that's fine.
+For a page called Study, I think it's the wrong choice.
+Don't necessarily create a score.
+Instead track lightweight learning state:
+○ Not studied ◐ Learning ✓ Comfortable ↻ Review
+And record:
+sections completed;
+words encountered;
+words successfully recalled;
+weak words;
+last position;
+confidence/self-assessment.
+Then reopening Bathroom becomes:
+Welcome back. Continue with Bathroom Actions?
+rather than resetting the learner into Reading.
+15. Visual design: simplify significantly
+The current design uses a shared rounded-card treatment extensively and puts every section inside the same relatively narrow max-w-3xl content area.
+There's nothing inherently wrong with the card style, but too many containers with the same visual weight produce card soup.
+I would establish three layers:
+Page layer
+Very quiet background.
+Learning layer
+Large, important learning object.
+Image, word, story, exercise.
+Supporting layer
+Definitions, notes, tips, metadata.
+Less prominent.
+So instead of:
+[card] [card] [card] [card]
+you get:
+Bathroom Actions 4 / 8 Learn these 6 expressions ━━━━━━━━━━━━━━━━━━━━━ [large visual] brush your teeth 🔊 🎤 ← → ───────────────────────── Tip: We say "brush your teeth," not "wash your teeth." [ Continue ]
+Much calmer.
+16. Keep the illustrations prominent
+Because WordPix's differentiator is visual vocabulary learning, imagery should be treated as the teaching medium, not decoration.
+On the vocabulary screen I would make the photograph considerably larger.
+Also be careful with object-cover: the current cards crop images to 4:3.
+For visual vocabulary, cropping an object can literally damage the teaching signal.
+Use either:
+curated focal-point cropping, or
+object-contain with a controlled backdrop
+when the complete object's silhouette matters.
+17. Mobile should be redesigned, not merely made responsive
+The current section navigation is an overflow-x-auto horizontal row. With potentially 18 destinations, the majority of the page architecture is physically hidden off-screen.
+I would not try to improve that carousel.
+Remove it.
+Mobile header:
+‹ Bathroom Study 28% complete ━━━━━━━━━━ [ Continue ] Learn Use It Practice Reference
+Once inside Learn:
+‹ Learn Bathroom vocabulary 2 of 6 [actual lesson]
+And have a sticky bottom action:
+Continue →
+This gives thumb-friendly navigation and dramatically reduces cognitive overhead.
+18. Desktop can use more space intelligently
+The same mobile approach doesn't have to simply stretch on desktop.
+Desktop could use:
+┌────────────────────────────────────────────────────────────┐ │ Bathroom 28% complete │ ├─────────────────┬──────────────────────────────────────────┤ │ │ │ │ LEARN │ Essential Bathroom Words │ │ ✓ Core words │ │ │ ● Actions │ [ large learning area ] │ │ ○ Pronunciation │ │ │ │ │ │ USE IT │ │ │ ○ Phrases │ │ │ ○ Conversation │ │ │ ○ Reading │ │ │ │ Continue → │ ├─────────────────┴──────────────────────────────────────────┤
+The hierarchy is always visible without overwhelming the actual lesson.
+19. Your content levels need clearer treatment
+There is another interesting design issue.
+The vocabulary spans highly basic terms, whereas the contextual passage is explicitly marked B1, and the page also includes idioms such as:
+throw in the towel
+come clean
+wash your hands of
+down the drain
+scrub up well
+That's actually excellent enrichment.
+But it shouldn't appear as though these are all equally appropriate for the same learner at the same time.
+I'd introduce:
+Core · A1–A2
+Everyday vocabulary and actions
+Level Up · B1
+Reading, richer collocations, cultural usage
+Challenge · B1+
+Idioms, word formation, extended writing
+That means you can keep the richness without increasing beginner cognitive load.
+20. Self-assessment is actually very good—use it better
+Your existing self-assessment contains communicative goals such as:
+Can you ask for toothbrush/toothpaste in a shop while travelling?
+and:
+Can you explain a plumbing problem using drain/plug?
+Those are better learning outcomes than:
+“You've studied 67 words.”
+I'd elevate those into Can-do goals throughout the unit.
+At the beginning:
+By the end of this topic, I can…
+Ask for bathroom items.
+Describe my morning routine.
+Understand common bathroom instructions.
+Explain a simple bathroom problem.
+At the end:
+Can you do these now?
+That's much more meaningful.
+The arrangement I recommend
+If I were redesigning this page, the final architecture would be:
+BATHROOM A1–B1 · 67 words [ Progress ] [ Continue studying ] ──────────────────────────── LEARN Build your vocabulary 01 Essential words 02 Toiletries 03 Bathroom objects 04 Bathroom actions 05 Pronunciation ──────────────────────────── USE IT See English in real situations 01 Useful phrases 02 Morning conversation 03 Reading 04 Common mistakes 05 Culture & UK/US English ──────────────────────────── PRACTICE Make yourself remember 01 Picture recall 02 Listening 03 Fill the gaps 04 Collocations 05 Fix the mistake 06 Speak / Write ──────────────────────────── REVIEW What needs another look? 7 strong 4 learning 3 review [ Review weak words ] ──────────────────────────── REFERENCE All 67 words Word forms Synonyms & antonyms Full glossary
+That's the structure I would build toward.
+What I would change first
+If you don't want a huge redesign immediately, these are the highest-impact interventions in order:
+Replace the 18-section horizontal navigation with Learn / Use It / Practice / Reference.
+Stop landing users directly on Reading; create a Study Home/Continue state.
+Turn the existing priority data into "Essential words first" rather than a Priority Tiers page.
+Limit each learning moment to a small vocabulary chunk rather than exposing 67 items at once.
+Put audio directly on every word, phrase, dialogue and reading experience.
+Merge the fragmented exercises into one Practice flow and retain wrong answers for review.
+Track lightweight study progress and resume position.
+Split Cleaning Items from Bathroom Actions.
+Move pronunciation, word details, synonyms and word forms closer to individual words rather than making them primary destinations.
+Make dialogue/reading interactive and vocabulary-aware rather than static text.
+The first three alone would substantially change how polished the page feels. The rest would move WordPix from a good collection of language-learning material toward a genuinely well-designed learning system.
+One important note: I was able to inspect the deployed route and the current source/content powering this screen, including its navigation and styling implementation; the public-page crawler itself only exposes the SPA shell, so I haven't treated pixel-level browser rendering differences as confirmed issues. ([amahdy59.github.io](https://amahdy59.github.io/wordpix/))
+If you want, I can next turn this into a developer-ready redesign specification for your AI coding agent, including the exact page hierarchy, component structure, mobile/desktop behavior, what to keep/remove, and strict instructions to avoid breaking the existing lesson system.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-08-26T20:48:56+03:00.
+
+The user has uploaded 1 image(s):
+- C:/Users/AhmedMahdy/.gemini/antigravity/brain/316148d3-04f9-47af-9bea-38e323c6722d/.user_uploaded/media_1787764440037.png
+You can embed this image in an artifact if you need the USER to review it.
+</ADDITIONAL_METADATA>
+<USER_REQUEST>
+I’ve structured this so you can hand it directly to an AI coding agent. It preserves the existing route and lesson engine, focuses the refactor on the Study experience, and includes explicit **do-not-break constraints**.
+
+# WordPix Study Page — Developer-Ready Redesign Specification
+
+## 1. Objective
+
+Redesign the existing WordPix Study experience at:
+
+`#/learn/:unitId/study`
+
+with **The Bathroom** as the pilot unit.
+
+The redesign must transform the page from a flat library of study materials into a guided learning environment that helps learners:
+
+1. know what to study next;
+2. learn vocabulary in manageable chunks;
+3. hear and recognize words;
+4. retrieve words from memory;
+5. understand them in context;
+6. use them in meaningful language;
+7. review weak vocabulary;
+8. freely browse reference material when needed.
+
+The redesign must improve:
+
+* information architecture;
+* mobile and desktop UX;
+* visual hierarchy;
+* learning progression;
+* accessibility;
+* cognitive load;
+* vocabulary retention;
+* responsive behavior;
+* learner orientation and progress.
+
+Do **not** turn the Study area into another copy of the existing scored lesson flow.
+
+---
+
+# 2. Critical implementation constraint
+
+The current `LearningMaterialsScreen` is intentionally outside the scored lesson state machine.
+
+Preserve this architectural boundary.
+
+Do **not**:
+
+* rewrite the existing scored lesson engine;
+* change lesson completion logic;
+* change existing lesson scoring;
+* change routes used by normal lessons;
+* modify `COURSE_UNITS` in ways that break current lessons;
+* make Study completion equivalent to lesson completion;
+* remove existing learning-material data because it is no longer directly visible.
+
+The current source explicitly treats Study as independent self-paced/reference material. 
+
+Instead, introduce a separate lightweight **Study Progress** state.
+
+---
+
+# 3. Current problem to solve
+
+The current Study page exposes up to 18 peer-level sections including:
+
+* Words
+* Reading
+* Vocabulary Details
+* Pronunciation Guide
+* Priority Tiers
+* Collocations
+* Synonyms & Antonyms
+* Idioms & Phrasal Verbs
+* Word Forms
+* Dialogue
+* Culture
+* Common Mistakes
+* Practice
+* Additional Exercises
+* Error Correction
+* Writing Prompts
+* Self-Assessment
+* Reference
+
+These are rendered as one horizontally scrolling navigation strip. 
+
+This exposes the **content model** directly to the learner.
+
+The learner should not have to understand whether they should study "Priority Tiers", "Vocabulary Details", "Word Formation", or "Collocations" next.
+
+The new design must organize content around **learner goals**, not internal content types.
+
+---
+
+# 4. New information architecture
+
+Replace the current flat navigation with this hierarchy:
+
+```text
+Study Home
+
+├── Learn
+│   ├── Essential Words
+│   ├── Topic Vocabulary
+│   ├── Bathroom Actions
+│   └── Pronunciation integrated into words
+│
+├── Use It
+│   ├── Useful Phrases
+│   ├── Conversation
+│   ├── Reading
+│   ├── Common Mistakes
+│   └── Culture & Usage
+│
+├── Practice
+│   ├── Picture Recall
+│   ├── Listening / Recognition
+│   ├── Fill the Blank
+│   ├── Matching
+│   ├── Collocation Practice
+│   ├── Error Correction
+│   └── Speak / Write
+│
+├── Review
+│   ├── Weak Words
+│   ├── Recently Studied
+│   └── Can-Do Self Assessment
+│
+└── Reference
+    ├── All Words
+    ├── Word Details
+    ├── Word Forms
+    ├── Synonyms & Antonyms
+    └── Full Phrase Reference
+```
+
+Do not show all these sub-items simultaneously on mobile.
+
+The **primary Study navigation must contain no more than four major content areas plus Review/Home**:
+
+* Learn
+* Use It
+* Practice
+* Reference
+
+Review should be contextually surfaced rather than competing equally with the primary four.
+
+---
+
+# 5. Route behavior
+
+Keep the existing route:
+
+```text
+#/learn/:unitId/study
+```
+
+Do not create 18 routes.
+
+Nested Study navigation may remain internal state.
+
+Optional URL enhancement:
+
+```text
+#/learn/bathroom/study
+#/learn/bathroom/study/learn
+#/learn/bathroom/study/use
+#/learn/bathroom/study/practice
+#/learn/bathroom/study/reference
+```
+
+Only introduce nested URLs if doing so fits the existing router cleanly.
+
+Do not introduce a new routing library solely for this redesign.
+
+Browser Back behavior must remain predictable.
+
+---
+
+# 6. Study Home
+
+The default screen must no longer automatically open Reading.
+
+Currently `LearningMaterialsScreen` initializes to `passage` and prefers Reading whenever a passage exists. 
+
+Replace that behavior with a dedicated Study Home.
+
+## Required layout
+
+```text
+← The Bathroom
+
+STUDY
+
+The Bathroom
+Learn the words and expressions you need
+for everyday bathroom situations.
+
+A1–B1 · 67 words
+
+[progress bar if learner has started]
+
+Continue learning
+Essential Bathroom Words
+6 words · ~3–5 min
+
+[ Continue ]
+
+YOUR STUDY PATH
+
+1. Learn essential words
+2. Learn everyday vocabulary
+3. Use useful phrases
+4. Conversation
+5. Reading in context
+6. Practice
+7. Review
+
+Explore
+
+[ Learn ] [ Use It ]
+[ Practice ] [ Reference ]
+```
+
+Do not overwhelm the Home screen with all available content.
+
+---
+
+# 7. Continue Learning logic
+
+The most prominent CTA on Study Home must be:
+
+**Continue**
+
+Its destination should follow this priority:
+
+```text
+1. Resume last unfinished study node.
+2. If none exists, start Essential Words.
+3. If Essential Words complete, recommend next unfinished node.
+4. If guided path complete, recommend Review.
+```
+
+Never make the learner manually decide what comes next unless they deliberately choose Explore.
+
+Suggested derived helper:
+
+```ts
+getRecommendedStudyNode(
+  curriculum,
+  progress
+): StudyNode
+```
+
+Keep sequencing logic outside presentation components.
+
+---
+
+# 8. Curriculum adapter
+
+Do not rewrite all existing learning-material files.
+
+Create an adapter that maps the existing `UnitLearningMaterials` structure into learner-facing Study sections.
+
+Existing material fields are already optional and independently structured. 
+
+Suggested architecture:
+
+```text
+learning/
+├── LearningMaterialsScreen.tsx
+├── study/
+│   ├── StudyHome.tsx
+│   ├── StudyShell.tsx
+│   ├── StudyNavigation.tsx
+│   ├── StudyProgress.tsx
+│   ├── LearnArea.tsx
+│   ├── UseItArea.tsx
+│   ├── PracticeArea.tsx
+│   ├── ReviewArea.tsx
+│   ├── ReferenceArea.tsx
+│   ├── VocabularyCard.tsx
+│   ├── VocabularyDetail.tsx
+│   ├── ReadingExperience.tsx
+│   ├── DialogueExperience.tsx
+│   ├── PracticeSession.tsx
+│   ├── CanDoAssessment.tsx
+│   ├── curriculum.ts
+│   ├── progress.ts
+│   └── types.ts
+```
+
+Exact filenames may be adjusted to match the codebase conventions.
+
+Avoid leaving another 700+ line monolithic screen.
+
+---
+
+# 9. Suggested Study data model
+
+Introduce a learner-facing curriculum abstraction.
+
+Example:
+
+```ts
+type StudyArea =
+  | "learn"
+  | "use"
+  | "practice"
+  | "review"
+  | "reference";
+
+interface StudyNode {
+  id: string;
+  area: StudyArea;
+  title: string;
+  description?: string;
+  estimatedMinutes?: number;
+  level?: string;
+
+  type:
+    | "vocabulary"
+    | "phrases"
+    | "dialogue"
+    | "reading"
+    | "practice"
+    | "mistakes"
+    | "culture"
+    | "assessment"
+    | "reference";
+
+  source?: string;
+  wordIds?: string[];
+}
+```
+
+The UI should render `StudyNode`s rather than deciding curriculum ordering itself.
+
+---
+
+# 10. Bathroom learning sequence
+
+For the Bathroom pilot, use this recommended guided sequence.
+
+## Stage 1 — Essential words
+
+Use existing priority data.
+
+The Bathroom material already identifies essential vocabulary including:
+
+* toilet
+* sink
+* shower
+* bathtub
+* mirror
+* towel
+
+and a second important tier. 
+
+Do not expose a page called **Priority Tiers**.
+
+Instead use that data to determine teaching order.
+
+UI label:
+
+**Start here · Essential words**
+
+---
+
+## Stage 2 — Everyday bathroom vocabulary
+
+Group the remaining vocabulary semantically.
+
+Recommended groups:
+
+### Fixtures & Fittings
+
+* bathtub
+* shower
+* toilet
+* sink
+* faucet
+* drain
+* mirror
+* towel rack
+* cabinet
+* tiles
+
+### Toiletries
+
+Use existing Toiletries data.
+
+### Bathroom Supplies
+
+Use existing Bathroom Supplies data.
+
+### Bath & Shower
+
+Use existing Bath & Shower data.
+
+### Personal Care
+
+Use existing Personal Care data.
+
+---
+
+# 11. Fix Bathroom content grouping
+
+The current `cleaning-items` group mixes cleaning equipment and personal actions.
+
+It currently contains things such as:
+
+* sponge
+* bucket
+* spray bottle
+* cloth
+* plunger
+
+alongside:
+
+* wash hands
+* brush teeth
+* take shower
+* dry off
+* flush
+* comb hair
+* apply lotion
+* gargle
+
+These should not remain in the same semantic category. 
+
+Split into:
+
+```text
+Cleaning Tools
+--------------
+sponge
+brush
+bucket
+gloves
+spray bottle
+cloth
+plunger
+squeegee
+tissue
+
+Bathroom Actions
+----------------
+wash hands
+brush teeth
+take shower
+dry off
+flush
+comb hair
+apply lotion
+gargle
+```
+
+Do not change vocabulary IDs.
+
+Only change grouping.
+
+---
+
+# 12. Vocabulary chunk size
+
+Avoid presenting 15–20 new vocabulary items as one learning moment.
+
+Target:
+
+```text
+4–8 items per learning chunk
+6 preferred
+```
+
+A category containing more than approximately eight items should be internally split into smaller sets.
+
+Example:
+
+```text
+Toiletries 1
+soap
+shampoo
+conditioner
+toothbrush
+toothpaste
+
+Toiletries 2
+towel
+comb
+hairbrush
+lotion
+deodorant
+```
+
+This chunking exists only at Study-curriculum level.
+
+Do not alter the original unit lesson groups unless necessary.
+
+---
+
+# 13. Vocabulary card redesign
+
+Current Word cards mostly expose:
+
+```text
+image
+word
+phonetic text
+```
+
+and crop images into a fixed 4:3 `object-cover` container. 
+
+Replace the Study vocabulary card with a learning-focused component.
+
+## Default state
+
+```text
+┌────────────────────────────┐
+│                            │
+│        LARGE IMAGE         │
+│                            │
+├────────────────────────────┤
+│ shower                 🔊  │
+│ /ˈʃaʊ.ər/                   │
+└────────────────────────────┘
+```
+
+Required:
+
+* large visual;
+* word;
+* pronunciation;
+* audio button if audio exists;
+* minimum 44×44 px interactive controls;
+* clear keyboard focus state.
+
+---
+
+# 14. Vocabulary progressive disclosure
+
+Do not show definitions, grammar, related words, examples, pronunciation guidance and metadata simultaneously.
+
+Use progressive disclosure.
+
+Primary card:
+
+```text
+Image
+Word
+Audio
+IPA
+```
+
+Expandable/tappable details:
+
+```text
+Meaning
+Example sentence
+Related phrases
+UK/US note
+Word forms
+Register
+Frequency
+```
+
+This reduces cognitive load.
+
+---
+
+# 15. Image treatment
+
+Do not blindly apply `object-cover` to every learning image.
+
+For vocabulary where the complete object matters:
+
+```text
+object-contain
+```
+
+with a controlled neutral image background is preferred.
+
+If existing images have known focal points, `object-cover` is acceptable.
+
+Requirements:
+
+* never crop the primary identifying feature;
+* avoid stretched images;
+* preserve aspect ratio;
+* lazy-load non-current images;
+* preload only current/next vocabulary assets;
+* do not load an entire 67-image set at maximum resolution when entering Study.
+
+---
+
+# 16. Audio integration
+
+Pronunciation must no longer exist only as a standalone Study destination.
+
+Integrate pronunciation at the moment the learner encounters the word.
+
+Preferred vocabulary actions:
+
+```text
+🔊 Listen
+```
+
+Optional if audio infrastructure supports it cleanly:
+
+```text
+Normal
+Slow
+```
+
+Do not synthesize fake slow audio by altering playback in a way that destroys intelligibility.
+
+The separate Pronunciation Guide may continue to exist inside **Reference**, but it should no longer be required for normal learning.
+
+---
+
+# 17. Learn screen behavior
+
+Desktop example:
+
+```text
+The Bathroom                        2 / 6
+
+Essential Words
+Learn these everyday bathroom words.
+
+━━━━━━━━━━━━━━━━━━━━
+
+             [ IMAGE ]
+
+               sink
+
+              /sɪŋk/
+
+             [ 🔊 ]
+
+< Previous                      Next >
+```
+
+Mobile:
+
+One primary vocabulary item at a time.
+
+Do not make the learner scroll through dozens of cards before progressing.
+
+Optional secondary mode:
+
+**View all 6**
+
+for learners who prefer a grid.
+
+Default learning mode should emphasize one item.
+
+---
+
+# 18. Retrieval step
+
+After a vocabulary chunk has been presented, immediately introduce retrieval.
+
+Example:
+
+```text
+What is this?
+
+[ image of sink ]
+
+sink
+soap
+mirror
+shower
+```
+
+Then later:
+
+```text
+[ image ]
+
+Type the word:
+[____________]
+```
+
+Recognition should precede more difficult recall.
+
+Learning sequence:
+
+```text
+See
+→ Hear
+→ Recognize
+→ Recall
+→ Use
+```
+
+Do not mark a word "comfortable" merely because the learner viewed it.
+
+---
+
+# 19. Word status model
+
+Use lightweight Study statuses.
+
+```ts
+type StudyWordStatus =
+  | "new"
+  | "learning"
+  | "comfortable"
+  | "review";
+```
+
+Suggested behavior:
+
+```text
+new
+↓ encountered
+learning
+↓ successful retrieval
+comfortable
+
+incorrect retrieval
+↓
+review
+```
+
+Do not present these states as grades.
+
+---
+
+# 20. Study progress storage
+
+Keep Study progress independent from scored lesson progress.
+
+Suggested structure:
+
+```ts
+interface UnitStudyProgress {
+  version: 1;
+  unitId: string;
+
+  lastNodeId?: string;
+
+  completedNodeIds: string[];
+
+  wordStatus: Record<string, StudyWordStatus>;
+
+  reviewWordIds: string[];
+
+  updatedAt: string;
+}
+```
+
+Persist locally using the application's existing persistence conventions.
+
+If no compatible persistence abstraction exists, a small versioned localStorage utility is acceptable.
+
+Example storage key:
+
+```text
+wordpix.studyProgress.v1
+```
+
+Requirements:
+
+* schema version;
+* defensive parsing;
+* invalid persisted data must fail safely;
+* no crash on unavailable localStorage;
+* do not store unnecessary personal data.
+
+---
+
+# 21. Use It area
+
+This section should answer:
+
+> How does this vocabulary behave in real English?
+
+Recommended internal sequence:
+
+```text
+Useful Phrases
+Conversation
+Reading
+Common Mistakes
+Culture & Usage
+```
+
+Do not show Collocations, Idioms and Phrasal Verbs as three competing top-level navigation categories.
+
+Merge them into a learner-facing **Useful Phrases** experience.
+
+Allow filters only inside that screen if useful.
+
+---
+
+# 22. Useful Phrases
+
+Example:
+
+```text
+Useful bathroom English
+
+take a shower            🔊
+brush your teeth         🔊
+wash your hands          🔊
+flush the toilet         🔊
+turn on the faucet       🔊
+dry yourself off         🔊
+```
+
+Each item may expand into:
+
+```text
+Meaning
+Example
+Related variation
+```
+
+Avoid excessive terminology such as:
+
+> "This is a lexical collocation."
+
+unless explicitly shown in Reference.
+
+---
+
+# 23. Dialogue redesign
+
+The existing Dialogue renderer displays static speaker/text rows.
+
+Convert it into a learning experience.
+
+Modes:
+
+```text
+1. Listen
+2. Listen + Read
+3. Role-play
+```
+
+If dialogue audio is unavailable, retain Read and Role-play but do not fake audio.
+
+## Read mode
+
+Use clear conversation bubbles or structured dialogue rows.
+
+Do not overdecorate with chat UI if it reduces readability.
+
+## Role-play mode
+
+Example:
+
+```text
+You are Ali.
+
+Mom:
+Did you brush your teeth yet?
+
+Your turn:
+[ reveal Ali's reply ]
+```
+
+Optional future enhancement:
+
+speech recording.
+
+Do not block this redesign on speech recognition.
+
+---
+
+# 24. Reading redesign
+
+Current Reading is essentially a passage card followed by comprehension questions. 
+
+Replace it with an interactive reading experience.
+
+Required structure:
+
+```text
+Morning Routine
+
+B1 · ~2 min
+
+[ Listen ] if audio exists
+
+────────────────────
+
+Every morning starts in the bathroom...
+```
+
+Target vocabulary should be visually recognizable but not aggressively highlighted.
+
+Suggested styling:
+
+* subtle dotted underline;
+* slightly stronger weight;
+* accessible contrast.
+
+Tap/click target word:
+
+```text
+faucet
+/ˈfɔː.sɪt/
+
+tap in UK English
+
+[ Listen ]
+```
+
+Do not navigate away from Reading to inspect a word.
+
+Use a popover on desktop and bottom sheet/dialog on mobile.
+
+---
+
+# 25. Reading support modes
+
+Optional controls:
+
+```text
+Vocabulary help: On / Off
+```
+
+Potential later enhancement:
+
+```text
+Translation help
+```
+
+Do not display translation automatically if the product's learning approach prioritizes English comprehension.
+
+Keep it learner-controlled.
+
+---
+
+# 26. Reading questions
+
+Maintain comprehension questions but improve answer behavior.
+
+Current multiple-choice logic disables all answers after the first click. 
+
+Recommended behavior:
+
+### First incorrect attempt
+
+```text
+Not quite.
+
+Hint or concise explanation.
+
+[ Try again ]
+```
+
+### Second incorrect attempt
+
+```text
+The answer is: shower curtain
+
+Explanation...
+```
+
+Correct answer:
+
+```text
+Correct ✓
+
+Explanation...
+```
+
+Do not rely on green/red alone.
+
+Always pair state with icon and text.
+
+---
+
+# 27. Practice architecture
+
+Merge these existing areas:
+
+* Practice
+* Additional Exercises
+* Collocations Quiz
+* Error Correction
+
+under one learner-facing **Practice** area.
+
+The underlying source structures can remain separate.
+
+Create a practice-session adapter.
+
+Example:
+
+```ts
+interface StudyPracticeItem {
+  id: string;
+
+  type:
+    | "image-choice"
+    | "multiple-choice"
+    | "matching"
+    | "typed-recall"
+    | "fill-blank"
+    | "rewrite"
+    | "error-correction";
+
+  targetWordIds?: string[];
+}
+```
+
+Do not immediately rewrite every existing exercise component.
+
+Reuse existing exercise renderers where appropriate.
+
+---
+
+# 28. Practice Home
+
+Instead of presenting exercise types as separate pages:
+
+```text
+Practice Bathroom
+
+12 questions · ~4 min
+
+You will practice:
+• vocabulary recall
+• useful phrases
+• reading vocabulary
+• common mistakes
+
+[ Start Practice ]
+```
+
+Learners should experience a mixed session.
+
+---
+
+# 29. Practice difficulty order
+
+Prefer:
+
+```text
+Recognition
+↓
+Controlled recall
+↓
+Context completion
+↓
+Error detection
+↓
+Production
+```
+
+Example sequence:
+
+```text
+Picture → choose word
+
+Audio → choose word
+
+Picture → type word
+
+Sentence → fill blank
+
+Choose natural collocation
+
+Correct the mistake
+
+Write/say a sentence
+```
+
+Do not begin a beginner session with free writing.
+
+---
+
+# 30. Weak-word review
+
+Any target vocabulary repeatedly answered incorrectly should enter:
+
+```text
+reviewWordIds
+```
+
+Review should preferentially include:
+
+1. incorrectly recalled words;
+2. words marked "review";
+3. older learning words;
+4. recently introduced words not yet retrieved successfully.
+
+A simple deterministic algorithm is sufficient.
+
+Do not implement a complex spaced-repetition system unless one already exists in the project.
+
+---
+
+# 31. Review screen
+
+Example:
+
+```text
+Review
+
+4 words need another look
+
+shower curtain
+faucet
+drain
+squeegee
+
+[ Review 4 words ]
+
+────────────────────
+
+Your progress
+
+12 Comfortable
+8 Learning
+4 Review
+43 Not studied
+```
+
+Do not use competitive or punitive wording.
+
+---
+
+# 32. Self-assessment redesign
+
+The Bathroom materials already include useful real-world self-assessment prompts such as asking for toiletries while travelling or explaining a plumbing problem. 
+
+Transform these into **Can-Do Goals**.
+
+At Study Home:
+
+```text
+By the end of this topic, I can:
+
+○ Ask for common bathroom items.
+○ Describe my morning routine.
+○ Understand common bathroom phrases.
+○ Explain a simple bathroom problem.
+```
+
+At Review:
+
+```text
+Can you do this now?
+
+Ask for a toothbrush and toothpaste in a shop.
+
+[ Not yet ] [ With help ] [ Yes ]
+```
+
+Persist self-assessment separately from scored correctness.
+
+---
+
+# 33. Reference area
+
+Reference is the only place where encyclopedic density is acceptable.
+
+It should contain:
+
+```text
+Search
+Filters
+
+All words
+Pronunciation guide
+Word forms
+Synonyms & antonyms
+Register/formality
+Idioms/phrasal verbs
+Collocations
+```
+
+Reference is for lookup.
+
+It should not dictate the guided learning order.
+
+---
+
+# 34. All Words screen
+
+Provide:
+
+```text
+Search bathroom vocabulary...
+
+[ All ]
+[ Fixtures ]
+[ Toiletries ]
+[ Actions ]
+[ Personal Care ]
+[ Cleaning ]
+```
+
+Each row/card:
+
+```text
+[image]  toothbrush
+         /ˈtuːθ.brʌʃ/       🔊
+```
+
+Allow learner to open Word Details.
+
+Do not default to showing every possible metadata field.
+
+---
+
+# 35. Navigation design — mobile
+
+Remove the 18-item horizontal chip scroller entirely.
+
+Recommended mobile Study Home navigation:
+
+```text
+Learn
+Use It
+Practice
+Reference
+```
+
+Use either:
+
+* 2×2 cards on Study Home; or
+* compact segmented navigation when inside Study.
+
+Inside learning activities, prioritize:
+
+```text
+Back                  Progress
+
+Activity title
+
+Learning content
+
+[ Previous ] [ Continue ]
+```
+
+Primary continuation action should be reachable without scrolling excessively.
+
+A bottom action area may become sticky where appropriate.
+
+Respect safe-area insets.
+
+---
+
+# 36. Navigation design — desktop
+
+Desktop may use a compact left sidebar.
+
+Example:
+
+```text
+┌────────────────┬─────────────────────────────────────┐
+│ The Bathroom   │ Essential Bathroom Words            │
+│ 28%            │                                     │
+│                │                                     │
+│ LEARN          │       main learning content         │
+│ ● Essential    │                                     │
+│ ○ Vocabulary   │                                     │
+│ ○ Actions      │                                     │
+│                │                                     │
+│ USE IT         │                                     │
+│ ○ Phrases      │                                     │
+│ ○ Conversation │                                     │
+│ ○ Reading      │                                     │
+│                │                          Continue → │
+└────────────────┴─────────────────────────────────────┘
+```
+
+The sidebar should not exceed approximately 240–280px.
+
+Do not place Reference subcategories permanently in the sidebar.
+
+---
+
+# 37. Responsive breakpoints
+
+Use the application's existing Tailwind breakpoints.
+
+Do not add arbitrary JavaScript viewport detection where responsive CSS is sufficient.
+
+Required behaviors:
+
+### Small phones
+
+* one-column;
+* no horizontal page scrolling;
+* no table wider than viewport without controlled scroll;
+* 16px minimum side padding;
+* 44px minimum interactive targets;
+* vocabulary learning uses one primary card at a time.
+
+### Tablets
+
+* optionally 2-column navigation/cards;
+* keep content width controlled.
+
+### Desktop
+
+* optional sidebar;
+* main reading width roughly 60–75 characters;
+* don't stretch paragraphs across the entire viewport.
+
+---
+
+# 38. Visual hierarchy
+
+Avoid "card soup".
+
+Do not place every paragraph inside an equally styled rounded card.
+
+Use three visual levels:
+
+## Level 1 — Learning focus
+
+Large image, word, question, dialogue or reading.
+
+Highest hierarchy.
+
+## Level 2 — Supporting information
+
+Definition, example, hint, pronunciation.
+
+Medium hierarchy.
+
+## Level 3 — Metadata
+
+Level, count, type, optional references.
+
+Low hierarchy.
+
+Use borders and containers only when they create meaningful grouping.
+
+---
+
+# 39. Visual design language
+
+Retain the existing WordPix design tokens.
+
+Prefer existing:
+
+```text
+background
+foreground
+muted-foreground
+primary
+secondary
+border
+wp-card
+wp-green
+wp-amber
+destructive
+```
+
+Do not introduce a parallel color system.
+
+Do not hard-code decorative hex colors if design tokens already exist.
+
+---
+
+# 40. Typography
+
+Maintain the application's current font stack unless there is a documented typography system change elsewhere.
+
+Hierarchy guidance:
+
+```text
+Page title       24–32
+Activity title   20–24
+Word             24–32
+Section heading  18–20
+Body             16 minimum where feasible
+Metadata         12–14
+```
+
+Avoid 10–11px instructional text on mobile.
+
+IPA may be smaller but must remain readable.
+
+---
+
+# 41. Accessibility requirements
+
+All redesigned Study components must support:
+
+* keyboard navigation;
+* visible focus states;
+* semantic headings;
+* correct button semantics;
+* `aria-current` for actual navigation state;
+* meaningful status announcements;
+* no information communicated using color alone;
+* minimum touch target approximately 44×44;
+* WCAG-compatible text contrast;
+* reduced motion preference;
+* logical screen-reader reading order.
+
+For visual vocabulary images:
+
+If the image is redundant with an immediately visible word label, empty `alt=""` may remain appropriate.
+
+If the learner is being asked to identify an image **without the answer visible**, provide accessible exercise semantics without leaking the answer in `alt`.
+
+Do not make quiz answers available through image alt text before answering.
+
+---
+
+# 42. Motion
+
+Use subtle motion only.
+
+Allowed:
+
+* 150–250ms fade/slide;
+* progress transition;
+* answer-state feedback;
+* vocabulary card transition.
+
+Avoid:
+
+* page-scale zooming;
+* long spring animations;
+* excessive card movement;
+* blocking animation between every vocabulary word.
+
+Respect:
+
+```css
+prefers-reduced-motion
+```
+
+---
+
+# 43. Performance
+
+Study must remain lightweight.
+
+Requirements:
+
+* lazy-load unit learning materials as currently done;
+* lazy-load vocabulary imagery;
+* preload only next likely content;
+* avoid rendering all 67 detailed vocabulary cards simultaneously;
+* memoize derived curriculum where useful;
+* avoid unnecessary global state updates;
+* avoid large dependencies solely for Study navigation or animation;
+* preserve current unit-level code splitting if present.
+
+Do not add a carousel library for simple vocabulary navigation.
+
+---
+
+# 44. Empty and partial content states
+
+`UnitLearningMaterials` fields are intentionally optional. 
+
+The redesign must gracefully handle units with incomplete content.
+
+Example:
+
+If a unit has:
+
+```text
+Words
+Reading
+Practice
+```
+
+but no dialogue, phrases or culture:
+
+do not display empty destinations.
+
+Derived Study areas should only expose available content.
+
+If Use It contains only Reading:
+
+show Reading directly or a simple Use It screen containing only that module.
+
+Do not render:
+
+```text
+No dialogue available
+No phrases available
+No culture available
+```
+
+unless that information genuinely benefits the learner.
+
+---
+
+# 45. Backward compatibility
+
+The redesign must work with all existing units.
+
+Bathroom may define a better guided sequence, but shared components must not hard-code:
+
+```ts
+if (unitId === "bathroom")
+```
+
+throughout the UI.
+
+If unit-specific curriculum customization is necessary, isolate it.
+
+Example:
+
+```ts
+const STUDY_CURRICULUM_OVERRIDES = {
+  bathroom: {...}
+}
+```
+
+with a generic fallback generated from `UnitLearningMaterials`.
+
+---
+
+# 46. Generic fallback curriculum
+
+For units without custom sequencing:
+
+```text
+Learn
+→ subtopics / vocabulary
+
+Use It
+→ collocations
+→ phrases
+→ dialogue
+→ passage
+→ mistakes
+→ cultural notes
+
+Practice
+→ existing exercises
+
+Review
+→ self assessment / weak vocabulary
+
+Reference
+→ metadata
+→ pronunciation
+→ word forms
+→ synonyms
+```
+
+This allows the redesigned system to scale immediately.
+
+---
+
+# 47. Existing content mapping
+
+Use this migration mapping:
+
+```text
+words
+→ Learn
+
+priority-tiers
+→ curriculum ordering; no standalone primary page
+
+pronunciation
+→ integrated into Learn + Reference
+
+vocabulary-details
+→ word details / Reference
+
+collocations
+→ Use It → Useful Phrases
+
+phrases
+→ Use It → Useful Phrases
+
+dialogue
+→ Use It → Conversation
+
+passage
+→ Use It → Reading
+
+culture
+→ Use It → Culture
+
+mistakes
+→ Use It / Practice
+
+practice
+→ Practice
+
+additional-exercises
+→ Practice
+
+error-correction
+→ Practice
+
+writing-prompts
+→ Practice → Create
+
+self-assessment
+→ Review → Can-Do Goals
+
+synonyms-antonyms
+→ Reference
+
+word-formation
+→ Reference
+
+reference
+→ Reference
+```
+
+Do not delete the original material types.
+
+---
+
+# 48. Recommended component hierarchy
+
+```text
+LearningMaterialsScreen
+└── StudyShell
+    ├── StudyHeader
+    ├── StudyHome
+    │   ├── StudyHero
+    │   ├── ContinueCard
+    │   ├── GuidedPath
+    │   ├── CanDoPreview
+    │   └── StudyAreaGrid
+    │
+    ├── LearnArea
+    │   ├── VocabularySession
+    │   │   ├── VocabularyCard
+    │   │   ├── AudioButton
+    │   │   ├── WordDetails
+    │   │   └── RetrievalCheck
+    │
+    ├── UseItArea
+    │   ├── PhraseExperience
+    │   ├── DialogueExperience
+    │   ├── ReadingExperience
+    │   ├── MistakeCallout
+    │   └── CultureNote
+    │
+    ├── PracticeArea
+    │   └── PracticeSession
+    │
+    ├── ReviewArea
+    │   ├── WeakWordReview
+    │   └── CanDoAssessment
+    │
+    └── ReferenceArea
+        ├── VocabularyBrowser
+        └── WordInspector
+```
+
+Avoid giant components with many conditional render branches.
+
+---
+
+# 49. State separation
+
+Use three conceptual layers:
+
+```text
+Content State
+UnitLearningMaterials
+
+Curriculum State
+Derived StudyNode[]
+
+Learner State
+UnitStudyProgress
+```
+
+Do not mutate content objects with learner progress.
+
+---
+
+# 50. Error handling
+
+If loading materials fails:
+
+```text
+We couldn't load the study materials.
+
+[ Try again ]
+[ Back to The Bathroom ]
+```
+
+Current generic empty state may remain for units genuinely lacking learning materials.
+
+Distinguish:
+
+```text
+loading error
+```
+
+from:
+
+```text
+no materials exist
+```
+
+if this can be implemented without unnecessary complexity.
+
+---
+
+# 51. Loading state
+
+Replace plain loading text where appropriate with a minimal skeleton matching the Study Home structure.
+
+Do not render elaborate animated skeletons.
+
+Keep:
+
+* page heading placeholder;
+* continue card placeholder;
+* 2–4 small navigation placeholders.
+
+Respect reduced motion.
+
+---
+
+# 52. Recommended first implementation scope
+
+Implement this in phases to reduce regression risk.
+
+## Phase 1 — IA and shell
+
+* create Study Home;
+* replace 18-chip navigation;
+* create Learn / Use It / Practice / Reference;
+* add generic curriculum adapter;
+* preserve all existing content renderers behind the new architecture.
+
+## Phase 2 — Learning experience
+
+* redesign vocabulary experience;
+* integrate priority order;
+* integrate pronunciation;
+* split Bathroom Cleaning / Actions;
+* add Continue flow.
+
+## Phase 3 — Context experiences
+
+* redesign dialogue;
+* redesign reading;
+* add inline vocabulary inspection;
+* merge phrase experiences.
+
+## Phase 4 — Practice
+
+* unified Practice Home;
+* mixed practice session;
+* improved answer feedback;
+* weak-word collection.
+
+## Phase 5 — Progress and review
+
+* StudyProgress persistence;
+* resume;
+* review weak words;
+* Can-Do assessment;
+* progress display.
+
+Do not attempt every enhancement in one giant unreviewed refactor.
+
+---
+
+# 53. Features explicitly out of scope for the first redesign
+
+Do not block the redesign on:
+
+* user accounts;
+* cloud sync;
+* AI-generated exercises;
+* speech recognition;
+* automatic pronunciation scoring;
+* full spaced repetition algorithm;
+* streaks;
+* leaderboards;
+* XP;
+* badges;
+* translation APIs;
+* backend work.
+
+These may be considered later.
+
+---
+
+# 54. Acceptance criteria — Information Architecture
+
+The work is acceptable only if:
+
+* [ ] The 18-item horizontal section navigation is gone.
+* [ ] Study opens on a Study Home rather than directly on Reading.
+* [ ] Learners see a clear Continue action.
+* [ ] Learn, Use It, Practice and Reference are immediately understandable.
+* [ ] Existing learning material remains reachable somewhere.
+* [ ] Priority Tiers is no longer a primary learner-facing destination.
+* [ ] Pronunciation is integrated into vocabulary learning.
+* [ ] Reference material remains accessible without cluttering the guided path.
+
+---
+
+# 55. Acceptance criteria — Learning Experience
+
+* [ ] Essential vocabulary is taught before lower-priority vocabulary.
+* [ ] New words are chunked into manageable sets.
+* [ ] Learners encounter retrieval after vocabulary presentation.
+* [ ] Vocabulary is subsequently used in phrases/context.
+* [ ] Dialogue and Reading appear after relevant vocabulary.
+* [ ] Practice mixes suitable exercise formats.
+* [ ] Incorrect vocabulary can enter Review.
+* [ ] Self-assessment uses meaningful Can-Do outcomes.
+* [ ] Viewing a word alone does not automatically imply mastery.
+
+---
+
+# 56. Acceptance criteria — Mobile
+
+Test at minimum:
+
+```text
+320px
+360px
+375px
+390px
+430px
+```
+
+Requirements:
+
+* [ ] No accidental horizontal page scrolling.
+* [ ] No hidden primary navigation.
+* [ ] No 18-chip horizontal scroller.
+* [ ] Buttons meet touch-target requirements.
+* [ ] Reading text remains comfortable.
+* [ ] Vocabulary image is sufficiently large.
+* [ ] Dialogue wraps correctly.
+* [ ] Tables/reference content do not break viewport width.
+* [ ] Bottom actions do not overlap browser safe areas.
+
+---
+
+# 57. Acceptance criteria — Desktop
+
+Test at minimum:
+
+```text
+768px
+1024px
+1280px
+1440px
+```
+
+Requirements:
+
+* [ ] Content does not stretch excessively.
+* [ ] Reading line length remains comfortable.
+* [ ] Sidebar, if used, does not dominate the screen.
+* [ ] Main learning object has clear visual priority.
+* [ ] Vocabulary image quality remains good.
+* [ ] Navigation and Continue location remain obvious.
+
+---
+
+# 58. Acceptance criteria — Accessibility
+
+* [ ] Entire Study flow works using keyboard only.
+* [ ] Focus is always visible.
+* [ ] Focus order matches visual order.
+* [ ] Screen-reader users can identify current Study area.
+* [ ] Answer correctness is not communicated with color alone.
+* [ ] Quiz images do not expose the answer through alt text.
+* [ ] Touch controls meet minimum target size.
+* [ ] Reduced-motion users do not receive unnecessary transitions.
+* [ ] Heading hierarchy remains valid.
+* [ ] Dynamic answer feedback is appropriately announced.
+
+---
+
+# 59. Regression requirements
+
+Before completion, verify that these existing flows are unchanged:
+
+```text
+Unit entry
+Scene discovery
+Existing normal vocabulary lessons
+Existing lesson exercises
+Lesson completion
+Lesson score/progress
+Back navigation
+Explore navigation
+Other units
+```
+
+Do not submit the redesign if Study improvements regress the normal lesson system.
+
+---
+
+# 60. Testing requirements
+
+Add tests where the project already supports testing.
+
+At minimum verify:
+
+### Curriculum adapter
+
+```text
+available content
+→ correct learner-facing area
+```
+
+### Missing content
+
+```text
+undefined material blocks
+→ no broken Study destinations
+```
+
+### Progress parser
+
+```text
+valid persisted state
+invalid JSON
+old version
+missing fields
+```
+
+### Recommendation logic
+
+```text
+new learner
+→ Essential Words
+
+partially complete learner
+→ unfinished node
+
+completed guided path
+→ Review
+```
+
+### Responsive behavior
+
+Manual testing remains required.
+
+---
+
+# 61. Content-specific Bathroom verification
+
+After implementation verify:
+
+* [ ] Bathroom contains 67 vocabulary items overall.
+* [ ] Essential words appear first.
+* [ ] Cleaning equipment is separated from Bathroom Actions.
+* [ ] `wash-hands`, `brush-teeth`, `take-shower`, `dry-off`, `flush`, `comb-hair`, `apply-lotion`, and `gargle` retain their existing IDs.
+* [ ] Reading remains available.
+* [ ] Dialogue remains available.
+* [ ] Collocations remain available.
+* [ ] Idioms/phrasal verbs remain available.
+* [ ] Common mistakes remain available.
+* [ ] Existing exercises remain available.
+* [ ] Writing prompts remain available.
+* [ ] Self-assessment content is preserved.
+* [ ] Reference metadata remains available.
+
+The Bathroom unit currently spans five lesson groups, and its Study material already contains the semantic subtopics, priority vocabulary and Can-Do style self-assessment needed to support this redesign.   
+
+---
+
+# 62. Developer decision rules
+
+When uncertain during implementation, use these priorities in order:
+
+```text
+1. Do not break existing lessons.
+2. Reduce learner cognitive load.
+3. Preserve existing content.
+4. Make the next action obvious.
+5. Prefer progressive disclosure.
+6. Prefer recognition before recall.
+7. Prefer contextual use after vocabulary acquisition.
+8. Prefer reusable unit-agnostic components.
+9. Prefer existing design tokens/components.
+10. Avoid unnecessary dependencies.
+```
+
+---
+
+# 63. Things the implementation agent must NOT do
+
+Do not:
+
+* replace the complete app architecture;
+* introduce a new state-management framework solely for Study;
+* introduce a new routing library solely for Study;
+* hard-code the complete redesign only for Bathroom;
+* delete learning materials that are no longer top-level;
+* make every section a dashboard card;
+* create another large horizontal navigation strip;
+* expose all 67 words as the default learning screen;
+* mark words mastered merely because they were viewed;
+* turn Study progress into existing lesson score;
+* automatically add gamification;
+* rewrite vocabulary IDs;
+* rename existing assets unless necessary;
+* replace functioning existing components without reason;
+* add large animation libraries;
+* introduce inaccessible custom controls;
+* change global colors or typography without explicit need.
+
+---
+
+# 64. Final target experience
+
+A learner entering:
+
+```text
+The Bathroom → Study
+```
+
+should understand the interface within a few seconds.
+
+The experience should communicate:
+
+```text
+Where am I?
+The Bathroom.
+
+What am I learning?
+Everyday bathroom English.
+
+What should I do first?
+Learn six essential words.
+
+How much do I need to do?
+A small, achievable chunk.
+
+What happens next?
+I use the words in phrases and real situations.
+
+How do I know whether I learned them?
+I retrieve them during practice.
+
+What happens when I struggle?
+Those words return in Review.
+
+Can I explore everything?
+Yes, through Reference.
+```
+
+That learner experience is the primary success criterion.
+
+The Study page should feel like a **guided language-learning product with optional depth**, not a collection of educational reference cards.
+
+I’d have the coding agent implement **Phases 1–2 first and stop for visual/functional review before touching Reading, Dialogue, or practice logic**. That gives you the large IA/UX improvement while keeping the regression surface manageable. The present data model is already flexible enough that this can be done largely as a presentation/curriculum layer instead of a destructive content migration. 
+
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-08-26T20:57:30+03:00.
+</ADDITIONAL_METADATA>
