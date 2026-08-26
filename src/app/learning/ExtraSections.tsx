@@ -318,7 +318,7 @@ export function SelfAssessmentSection({ materials }: { materials: UnitLearningMa
               {[1, 2, 3].map((score) => (
                 <button
                   key={score}
-                  className="size-8 rounded-full border border-border text-xs font-bold hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"
+                  className="min-h-[44px] w-[44px] rounded-full border border-border text-xs font-bold hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"
                 >
                   {score}
                 </button>

@@ -1,4 +1,5 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
+import type * as React from "react";
 import {
   BookOpen,
   MessageSquareQuote,
@@ -58,7 +59,6 @@ type SectionId =
   | "self-assessment"
   | "reference";
 
-import type * as React from "react";
 const SECTION_META: Record<SectionId, { label: string; icon: React.ElementType }> = {
   words: { label: "Words", icon: Layers },
   passage: { label: "Reading", icon: BookOpen },
@@ -67,12 +67,12 @@ const SECTION_META: Record<SectionId, { label: string; icon: React.ElementType }
   "priority-tiers": { label: "Priority Tiers", icon: AlertTriangle },
   collocations: { label: "Collocations", icon: MessageSquareQuote },
   "synonyms-antonyms": { label: "Synonyms & Antonyms", icon: PencilLine },
-  phrases: { label: "Idioms & Phrases", icon: MessageSquareQuote },
+  phrases: { label: "Idioms & Phrasal Verbs", icon: MessageSquareQuote },
   "word-formation": { label: "Word Forms", icon: Type },
   dialogue: { label: "Dialogue", icon: MessagesSquare },
   culture: { label: "Culture & Usage", icon: Globe },
   mistakes: { label: "Common Mistakes", icon: AlertTriangle },
-  practice: { label: "Fill in the Blanks", icon: PencilLine },
+  practice: { label: "Practice", icon: PencilLine },
   "additional-exercises": { label: "Additional Exercises", icon: PencilLine },
   "error-correction": { label: "Error Correction", icon: AlertTriangle },
   "writing-prompts": { label: "Writing Prompts", icon: PencilLine },
