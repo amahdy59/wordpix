@@ -100,20 +100,34 @@ describe("word image assets", () => {
  */
 describe("unit hero images", () => {
   /**
-   * `human-body` has no hero and never has. It is the one unit the Figma file
-   * has no counterpart for — the design splits it into four units the app has
-   * not adopted — so there is nothing to import. Named here so the assertion
-   * below can stay exact instead of being softened into a ratchet.
+   * A unit either declares a hero or it does not, and both are legitimate.
+   *
+   * Seven units — fire-station, zoo, aquarium, cinema, music-room,
+   * science-lab, space-center — have word cards in Figma but no scene
+   * illustration, so `heroImage` is genuinely absent rather than broken.
+   * Explore renders a named panel for those instead of an `<img>`.
+   *
+   * That distinction is what this suite checks. An absent hero is fine; a
+   * hero that names a file which is not there is the bug that put 148 broken
+   * images into production, and it stays an exact assertion.
    */
-  const UNITS_WITHOUT_HERO = new Set(["human-body"]);
-
   const heroes = Object.values(COURSE_UNITS)
-    .filter((unit) => !UNITS_WITHOUT_HERO.has(unit.id))
+    .filter((unit): unit is typeof unit & { heroImage: string } => Boolean(unit.heroImage))
     .map((unit) => ({ unitId: unit.id, hero: unit.heroImage }));
 
   it("covers essentially every unit", () => {
-    // Cheap guard against the filter above quietly swallowing the suite.
+    // Cheap guard against the filter above quietly swallowing the suite: most
+    // units do have a hero, and a sudden collapse here means something else.
     expect(heroes.length).toBeGreaterThan(150);
+  });
+
+  it("omits the hero rather than naming a file that is not there", () => {
+    // The failure mode this replaces: a unit with no scene art still declaring
+    // `<id>-hero.avif`, which type-checks, renders, and 404s.
+    const withoutHero = Object.values(COURSE_UNITS).filter((unit) => !unit.heroImage);
+    for (const unit of withoutHero) {
+      expect(unit.heroImage, `${unit.id} should have no hero at all`).toBeUndefined();
+    }
   });
 
   it("resolves every hero image to a file on disk", () => {

@@ -37,9 +37,18 @@ describe("unit learning materials", () => {
       const unit = COURSE_UNITS[unitId];
       expect(unit).toBeDefined();
 
-      const grouped = (materials.subtopics ?? []).flatMap((t) => t.wordIds);
+      // Sub-topics come from `topic-*` frames, and not every unit has them —
+      // fifteen units carry word cards and materials but no topic grouping.
+      // The block is absent for those, and the Study screen hides the section
+      // rather than showing an empty one, so there is nothing here to check.
+      if (!materials.subtopics) return;
+
+      const grouped = materials.subtopics.flatMap((t) => t.wordIds);
       const unitWordIds = unit.wordIds;
 
+      // An empty block would mean "grouped into zero sub-topics", which is a
+      // different claim from "not grouped" and always a bug.
+      expect(materials.subtopics.length).toBeGreaterThan(0);
       // No duplicates across sub-topics.
       expect(new Set(grouped).size).toBe(grouped.length);
       // Every grouped id is a real word in this unit.

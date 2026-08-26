@@ -20,7 +20,9 @@ const LOADERS: Record<string, () => Promise<UnitLearningMaterials>> = {
     import("./units/accessories-jewelry").then((m) => m.ACCESSORIES_JEWELRY_LEARNING),
   "ages-life-stages": () =>
     import("./units/ages-life-stages").then((m) => m.AGES_LIFE_STAGES_LEARNING),
+  airport: () => import("./units/airport").then((m) => m.AIRPORT_LEARNING),
   "amusement-park": () => import("./units/amusement-park").then((m) => m.AMUSEMENT_PARK_LEARNING),
+  aquarium: () => import("./units/aquarium").then((m) => m.AQUARIUM_LEARNING),
   "architect-s-studio": () =>
     import("./units/architect-s-studio").then((m) => m.ARCHITECT_S_STUDIO_LEARNING),
   "architecture-styles": () =>
@@ -35,6 +37,7 @@ const LOADERS: Record<string, () => Promise<UnitLearningMaterials>> = {
   barbershop: () => import("./units/barbershop").then((m) => m.BARBERSHOP_LEARNING),
   "basic-emotions": () => import("./units/basic-emotions").then((m) => m.BASIC_EMOTIONS_LEARNING),
   bathroom: () => import("./units/bathroom").then((m) => m.BATHROOM_LEARNING),
+  beach: () => import("./units/beach").then((m) => m.BEACH_LEARNING),
   bedroom: () => import("./units/bedroom").then((m) => m.BEDROOM_LEARNING),
   beverages: () => import("./units/beverages").then((m) => m.BEVERAGES_LEARNING),
   "bicycle-shop": () => import("./units/bicycle-shop").then((m) => m.BICYCLE_SHOP_LEARNING),
@@ -53,6 +56,7 @@ const LOADERS: Record<string, () => Promise<UnitLearningMaterials>> = {
     import("./units/car-parts-mechanics").then((m) => m.CAR_PARTS_MECHANICS_LEARNING),
   "car-types": () => import("./units/car-types").then((m) => m.CAR_TYPES_LEARNING),
   "car-wash": () => import("./units/car-wash").then((m) => m.CAR_WASH_LEARNING),
+  cinema: () => import("./units/cinema").then((m) => m.CINEMA_LEARNING),
   "classic-cocktails": () =>
     import("./units/classic-cocktails").then((m) => m.CLASSIC_COCKTAILS_LEARNING),
   classroom: () => import("./units/classroom").then((m) => m.CLASSROOM_LEARNING),
@@ -113,6 +117,7 @@ const LOADERS: Record<string, () => Promise<UnitLearningMaterials>> = {
   festival: () => import("./units/festival").then((m) => m.FESTIVAL_LEARNING),
   "financial-services": () =>
     import("./units/financial-services").then((m) => m.FINANCIAL_SERVICES_LEARNING),
+  "fire-station": () => import("./units/fire-station").then((m) => m.FIRE_STATION_LEARNING),
   "first-aid-room": () => import("./units/first-aid-room").then((m) => m.FIRST_AID_ROOM_LEARNING),
   "five-senses": () => import("./units/five-senses").then((m) => m.FIVE_SENSES_LEARNING),
   footwear: () => import("./units/footwear").then((m) => m.FOOTWEAR_LEARNING),
@@ -133,6 +138,7 @@ const LOADERS: Record<string, () => Promise<UnitLearningMaterials>> = {
   "hand-actions": () => import("./units/hand-actions").then((m) => m.HAND_ACTIONS_LEARNING),
   harbor: () => import("./units/harbor").then((m) => m.HARBOR_LEARNING),
   "home-features": () => import("./units/home-features").then((m) => m.HOME_FEATURES_LEARNING),
+  hospital: () => import("./units/hospital").then((m) => m.HOSPITAL_LEARNING),
   hotel: () => import("./units/hotel").then((m) => m.HOTEL_LEARNING),
   "ice-cream-shop": () => import("./units/ice-cream-shop").then((m) => m.ICE_CREAM_SHOP_LEARNING),
   "indoor-hobbies": () => import("./units/indoor-hobbies").then((m) => m.INDOOR_HOBBIES_LEARNING),
@@ -167,6 +173,8 @@ const LOADERS: Record<string, () => Promise<UnitLearningMaterials>> = {
   "movement-verbs": () => import("./units/movement-verbs").then((m) => m.MOVEMENT_VERBS_LEARNING),
   "moving-settling-in": () =>
     import("./units/moving-settling-in").then((m) => m.MOVING_SETTLING_IN_LEARNING),
+  museum: () => import("./units/museum").then((m) => m.MUSEUM_LEARNING),
+  "music-room": () => import("./units/music-room").then((m) => m.MUSIC_ROOM_LEARNING),
   "newspaper-office": () =>
     import("./units/newspaper-office").then((m) => m.NEWSPAPER_OFFICE_LEARNING),
   "numbers-counting": () =>
@@ -190,6 +198,7 @@ const LOADERS: Record<string, () => Promise<UnitLearningMaterials>> = {
   "pizza-shop": () => import("./units/pizza-shop").then((m) => m.PIZZA_SHOP_LEARNING),
   playground: () => import("./units/playground").then((m) => m.PLAYGROUND_LEARNING),
   "police-station": () => import("./units/police-station").then((m) => m.POLICE_STATION_LEARNING),
+  "post-office": () => import("./units/post-office").then((m) => m.POST_OFFICE_LEARNING),
   "pottery-studio": () => import("./units/pottery-studio").then((m) => m.POTTERY_STUDIO_LEARNING),
   "prepositions-of-place": () =>
     import("./units/prepositions-of-place").then((m) => m.PREPOSITIONS_OF_PLACE_LEARNING),
@@ -201,12 +210,14 @@ const LOADERS: Record<string, () => Promise<UnitLearningMaterials>> = {
     import("./units/relationships-roles").then((m) => m.RELATIONSHIPS_ROLES_LEARNING),
   "reptile-house": () => import("./units/reptile-house").then((m) => m.REPTILE_HOUSE_LEARNING),
   "research-study": () => import("./units/research-study").then((m) => m.RESEARCH_STUDY_LEARNING),
+  restaurant: () => import("./units/restaurant").then((m) => m.RESTAURANT_LEARNING),
   "rights-regulations": () =>
     import("./units/rights-regulations").then((m) => m.RIGHTS_REGULATIONS_LEARNING),
   river: () => import("./units/river").then((m) => m.RIVER_LEARNING),
   "robotics-lab": () => import("./units/robotics-lab").then((m) => m.ROBOTICS_LAB_LEARNING),
   "runway-show": () => import("./units/runway-show").then((m) => m.RUNWAY_SHOW_LEARNING),
   savanna: () => import("./units/savanna").then((m) => m.SAVANNA_LEARNING),
+  "science-lab": () => import("./units/science-lab").then((m) => m.SCIENCE_LAB_LEARNING),
   "seasonings-condiments": () =>
     import("./units/seasonings-condiments").then((m) => m.SEASONINGS_CONDIMENTS_LEARNING),
   "seasons-weather": () =>
@@ -222,11 +233,13 @@ const LOADERS: Record<string, () => Promise<UnitLearningMaterials>> = {
     import("./units/social-situations").then((m) => m.SOCIAL_SITUATIONS_LEARNING),
   "solar-farm": () => import("./units/solar-farm").then((m) => m.SOLAR_FARM_LEARNING),
   spa: () => import("./units/spa").then((m) => m.SPA_LEARNING),
+  "space-center": () => import("./units/space-center").then((m) => m.SPACE_CENTER_LEARNING),
   "space-station": () => import("./units/space-station").then((m) => m.SPACE_STATION_LEARNING),
   "spatial-relations": () =>
     import("./units/spatial-relations").then((m) => m.SPATIAL_RELATIONS_LEARNING),
   "spirits-liqueurs": () =>
     import("./units/spirits-liqueurs").then((m) => m.SPIRITS_LIQUEURS_LEARNING),
+  "sports-center": () => import("./units/sports-center").then((m) => m.SPORTS_CENTER_LEARNING),
   "sports-equipment": () =>
     import("./units/sports-equipment").then((m) => m.SPORTS_EQUIPMENT_LEARNING),
   "startup-culture": () =>
@@ -241,6 +254,7 @@ const LOADERS: Record<string, () => Promise<UnitLearningMaterials>> = {
   "telling-time": () => import("./units/telling-time").then((m) => m.TELLING_TIME_LEARNING),
   theater: () => import("./units/theater").then((m) => m.THEATER_LEARNING),
   "toys-games": () => import("./units/toys-games").then((m) => m.TOYS_GAMES_LEARNING),
+  "train-station": () => import("./units/train-station").then((m) => m.TRAIN_STATION_LEARNING),
   "tv-studio": () => import("./units/tv-studio").then((m) => m.TV_STUDIO_LEARNING),
   "university-campus": () =>
     import("./units/university-campus").then((m) => m.UNIVERSITY_CAMPUS_LEARNING),
@@ -254,6 +268,7 @@ const LOADERS: Record<string, () => Promise<UnitLearningMaterials>> = {
   "wine-cellar": () => import("./units/wine-cellar").then((m) => m.WINE_CELLAR_LEARNING),
   "wine-tasting": () => import("./units/wine-tasting").then((m) => m.WINE_TASTING_LEARNING),
   winemaking: () => import("./units/winemaking").then((m) => m.WINEMAKING_LEARNING),
+  zoo: () => import("./units/zoo").then((m) => m.ZOO_LEARNING),
 };
 
 const cache = new Map<string, UnitLearningMaterials>();

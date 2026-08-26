@@ -211,6 +211,21 @@ const LOADERS: Record<string, () => Promise<VocabularyItem[]>> = {
   "human-body-lower-body": () => import("./units/human-body-lower-body").then((m) => m.VOCABULARY),
   "human-body-hands-and-feet": () =>
     import("./units/human-body-hands-and-feet").then((m) => m.VOCABULARY),
+  beach: () => import("./units/beach").then((m) => m.VOCABULARY),
+  restaurant: () => import("./units/restaurant").then((m) => m.VOCABULARY),
+  "sports-center": () => import("./units/sports-center").then((m) => m.VOCABULARY),
+  "fire-station": () => import("./units/fire-station").then((m) => m.VOCABULARY),
+  hospital: () => import("./units/hospital").then((m) => m.VOCABULARY),
+  "post-office": () => import("./units/post-office").then((m) => m.VOCABULARY),
+  zoo: () => import("./units/zoo").then((m) => m.VOCABULARY),
+  airport: () => import("./units/airport").then((m) => m.VOCABULARY),
+  aquarium: () => import("./units/aquarium").then((m) => m.VOCABULARY),
+  museum: () => import("./units/museum").then((m) => m.VOCABULARY),
+  "train-station": () => import("./units/train-station").then((m) => m.VOCABULARY),
+  cinema: () => import("./units/cinema").then((m) => m.VOCABULARY),
+  "music-room": () => import("./units/music-room").then((m) => m.VOCABULARY),
+  "science-lab": () => import("./units/science-lab").then((m) => m.VOCABULARY),
+  "space-center": () => import("./units/space-center").then((m) => m.VOCABULARY),
 };
 
 const byUnit = new Map<string, VocabularyItem[]>();
