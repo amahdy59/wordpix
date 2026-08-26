@@ -224,12 +224,20 @@ export const THEATER_LEARNING: UnitLearningMaterials = {
         text: "Everyone, we have thirty minutes to curtain. The spotlight needs re-angling — it's hitting the wings, not the apron.",
       },
       {
+        speaker: "Actor 1",
+        text: "My costume isn't fitting properly. The robe keeps catching on the trapdoor when I exit in Act Two.",
+      },
+      {
         speaker: "Stage Mgr",
         text: "Pin it shorter. And check your mask — it slipped during yesterday's run. Wardrobe, can you help?",
       },
       {
         speaker: "Wardrobe",
         text: "I'll fix the robe now. The crown and gloves are on the props table backstage.",
+      },
+      {
+        speaker: "Actor 2",
+        text: "Where's the sword for the duel scene? It wasn't on the prop shelf.",
       },
       {
         speaker: "Stage Mgr",

@@ -183,6 +183,52 @@ export const MOUNTAIN_LEARNING: UnitLearningMaterials = {
         "After crossing the alpine meadow and passing the tree line, they reached new heights — literally and figuratively.",
     },
   ],
+  dialogue: {
+    title: "Mini Dialogue",
+    scene: "Two hikers discuss their route as they climb a mountain trail",
+    lines: [
+      {
+        speaker: "Hiker 1",
+        text: "The trail splits here. Do we take the ridge path or go through the valley?",
+      },
+      {
+        speaker: "Hiker 2",
+        text: "The ridge path has better views — you can see the peak from there. But it's exposed to the wind.",
+      },
+      {
+        speaker: "Hiker 1",
+        text: "Look at that fog rolling in. I can barely see the cliff ahead.",
+      },
+      {
+        speaker: "Hiker 2",
+        text: "Let's stay on the slope and follow the tree line. There are pine trees for shelter and the fern-covered path is easier on the knees.",
+      },
+      {
+        speaker: "Hiker 1",
+        text: "Watch that boulder — the moss makes it slippery. And there's a crevasse just past the ledge.",
+      },
+      {
+        speaker: "Hiker 2",
+        text: "I see it. There's lichen on the rocks here too. Let's rest on the plateau — my legs need a break.",
+      },
+      {
+        speaker: "Hiker 1",
+        text: "Look — a mountain goat on the ridge! And is that an eagle circling above the summit?",
+      },
+      {
+        speaker: "Hiker 2",
+        text: "Yes! And there's a marmot by those wildflowers near the alpine meadow. The wildlife up here is incredible.",
+      },
+      {
+        speaker: "Hiker 1",
+        text: "How far to the summit from here?",
+      },
+      {
+        speaker: "Hiker 2",
+        text: "Maybe another hour. The slope gets steeper above the tree line, but there's a flat ledge where we can catch our breath.",
+      },
+    ],
+  },
   mistakes: [
     {
       id: "mountain-the-scenery-from-the-summit-was-breathta",

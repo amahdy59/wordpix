@@ -244,20 +244,40 @@ export const FARM_LEARNING: UnitLearningMaterials = {
         text: "Welcome to the farm! Over here we have the cow barn. We milk the cows every morning.",
       },
       {
+        speaker: "Visitor 1",
+        text: "How many animals do you have? I can see a horse, some sheep, and a goat near the fence.",
+      },
+      {
         speaker: "Farmer",
         text: "We have about fifty animals. The pig pen is behind the barn, and the chicken coop is next to the wheat field.",
+      },
+      {
+        speaker: "Visitor 2",
+        text: "What do the chickens eat? I see a rooster and several hens walking around.",
       },
       {
         speaker: "Farmer",
         text: "They eat corn and grain. The hen lays eggs every day, and the rooster wakes us at dawn.",
       },
       {
+        speaker: "Visitor 1",
+        text: "What crops do you grow? I noticed a big field of potato and tomato plants.",
+      },
+      {
         speaker: "Farmer",
         text: "We grow carrot, lettuce, onion, pumpkin, bean, pea, cabbage, and beetroot — everything for the local market.",
       },
       {
+        speaker: "Visitor 2",
+        text: "And the fruit trees? I can see an apple tree and a cherry tree over there.",
+      },
+      {
         speaker: "Farmer",
         text: "Yes — we also have a pear tree, an orange tree, and a peach tree. The strawberry and blueberry bushes are behind the duck pond.",
+      },
+      {
+        speaker: "Visitor 1",
+        text: "Is that a turkey next to the donkey? They seem like an odd pair.",
       },
     ],
   },

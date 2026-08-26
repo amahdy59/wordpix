@@ -193,20 +193,40 @@ export const SAVANNA_LEARNING: UnitLearningMaterials = {
         text: "Welcome to the savanna. The sun is just rising over the horizon — this is when the grassland comes alive.",
       },
       {
+        speaker: "Tourist 1",
+        text: "Is that a lion under the acacia tree?",
+      },
+      {
         speaker: "Guide",
         text: "Yes — a male resting after a night hunt. See the vulture in the baobab nearby? It's waiting for leftovers.",
+      },
+      {
+        speaker: "Tourist 2",
+        text: "There's a herd of zebra near the watering hole. And what's that tall shape behind them?",
       },
       {
         speaker: "Guide",
         text: "A giraffe — the tallest animal on the savanna. It's feeding on the acacia leaves. The elephant herd is coming from the left.",
       },
       {
+        speaker: "Tourist 1",
+        text: "I see dust rising over there. What's happening?",
+      },
+      {
         speaker: "Guide",
         text: "A wildebeest migration. Thousands of them crossing the dry riverbed. The cheetah and the leopard are watching from the kopje.",
       },
       {
+        speaker: "Tourist 2",
+        text: "What are those small animals standing on the termite mound?",
+      },
+      {
         speaker: "Guide",
         text: "Meerkats — they're lookouts. If they spot an eagle or a jackal, they'll sound the alarm for the whole group.",
+      },
+      {
+        speaker: "Tourist 1",
+        text: "Are those flamingos in the water?",
       },
       {
         speaker: "Guide",

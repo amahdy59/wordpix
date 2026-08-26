@@ -211,20 +211,40 @@ export const JUNGLE_LEARNING: UnitLearningMaterials = {
         text: "Welcome to the trail. Stay close — the canopy is so thick here that it's easy to lose sight of the group.",
       },
       {
+        speaker: "Visitor 1",
+        text: "It's incredible. I've never seen so many vines and ferns in one place. What's that plant climbing the trunk?",
+      },
+      {
         speaker: "Guide",
         text: "That's a liana — a woody vine that uses trees for support. And those purple flowers near the root are wild orchids.",
+      },
+      {
+        speaker: "Visitor 2",
+        text: "I just heard something moving in the bamboo. Should we be worried?",
       },
       {
         speaker: "Guide",
         text: "Probably a tapir — they're shy and avoid humans. If it were a jaguar, you wouldn't hear it at all.",
       },
       {
+        speaker: "Visitor 1",
+        text: "Is that a toucan up in the canopy? The colours are stunning!",
+      },
+      {
         speaker: "Guide",
         text: "Good eye! And look — a sloth on that branch. They move so slowly that moss actually grows on their fur.",
       },
       {
+        speaker: "Visitor 2",
+        text: "What's the buzzing sound? Mosquitoes?",
+      },
+      {
         speaker: "Guide",
         text: "Some, yes. But most of that sound is beetles and dragonflies. The jungle has more insect species than any other ecosystem.",
+      },
+      {
+        speaker: "Visitor 1",
+        text: "Can we get closer to the waterfall? I'd love to see the tree frogs near the stream.",
       },
       {
         speaker: "Guide",

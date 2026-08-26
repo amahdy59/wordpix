@@ -206,20 +206,40 @@ export const DESERT_LEARNING: UnitLearningMaterials = {
         text: "Fill your water canteen now — the next oasis is at least three hours away across the plateau.",
       },
       {
+        speaker: "Hiker 1",
+        text: "How do animals survive out here? I haven't seen anything except sand dunes and cactus.",
+      },
+      {
         speaker: "Guide",
         text: "They're here — they just hide from the sun. Fennec foxes come out at night. Meerkats dig underground burrows.",
+      },
+      {
+        speaker: "Hiker 2",
+        text: "What's that moving near the prickly pear? It looks like a lizard.",
       },
       {
         speaker: "Guide",
         text: "Good spot — that's a desert iguana. See how it uses the shade of the barrel cactus to regulate its temperature?",
       },
       {
+        speaker: "Hiker 1",
+        text: "I can see a mesa in the distance. Is that where we're heading?",
+      },
+      {
         speaker: "Guide",
         text: "Yes, the mesa has a sheltered canyon on the far side. Put your sun hat on — we'll be in direct sun until the rocky outcrop.",
       },
       {
+        speaker: "Hiker 2",
+        text: "I just heard a rattle. Should I be worried?",
+      },
+      {
         speaker: "Guide",
         text: "Stand still. That's a rattlesnake — it's warning us. Step back slowly. It won't chase; it just wants to be left alone.",
+      },
+      {
+        speaker: "Hiker 1",
+        text: "Look at that bird running along the dry riverbed!",
       },
       {
         speaker: "Guide",

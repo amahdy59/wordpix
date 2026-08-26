@@ -193,20 +193,40 @@ export const FOREST_LEARNING: UnitLearningMaterials = {
         text: "Welcome to the old-growth forest. These oak and maple trees are over a hundred years old. Watch your step — the moss can be slippery.",
       },
       {
+        speaker: "Visitor 1",
+        text: "What's that tall tree with the reddish bark?",
+      },
+      {
         speaker: "Ranger",
         text: "That's a redwood. Next to it is a cedar, and the white-barked one is a birch. Each species plays a different role in the ecosystem.",
+      },
+      {
+        speaker: "Visitor 2",
+        text: "I see mushrooms growing on that fallen elm. Are they safe to eat?",
       },
       {
         speaker: "Ranger",
         text: "Never eat wild mushrooms unless you're an expert. See the lichen and fern growing alongside? They prefer the same damp conditions.",
       },
       {
+        speaker: "Visitor 1",
+        text: "Look — a squirrel just ran up the pine! And there's an acorn on the ground.",
+      },
+      {
         speaker: "Ranger",
         text: "Squirrels bury acorns and pinecones for winter. You might also spot a fox or a raccoon near the berry bush over there.",
       },
       {
+        speaker: "Visitor 2",
+        text: "I hear tapping — is that a woodpecker?",
+      },
+      {
         speaker: "Ranger",
         text: "Yes! It's on the beech tree. If we're quiet, we might see an owl or a hedgehog. Fireflies come out at dusk too.",
+      },
+      {
+        speaker: "Visitor 1",
+        text: "The ivy and vine are so thick here. Does that harm the trees?",
       },
       {
         speaker: "Ranger",

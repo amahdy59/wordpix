@@ -214,6 +214,50 @@ export const SPACE_STATION_LEARNING: UnitLearningMaterials = {
     scene: "Two astronauts preparing for a spacewalk outside the space station",
     lines: [
       {
+        speaker: "Astronaut 1",
+        text: "Suit check. Helmet sealed? Visor clear? Gloves locked?",
+      },
+      {
+        speaker: "Astronaut 2",
+        text: "All locked. The oxygen tank is at full capacity. Communication headset is working — I can hear ground control.",
+      },
+      {
+        speaker: "Astronaut 1",
+        text: "Good. Attach your tether before we open the airlock. Without it, one push and you drift into open space.",
+      },
+      {
+        speaker: "Astronaut 2",
+        text: "Tether's clipped. Is the jet pack charged in case of emergency?",
+      },
+      {
+        speaker: "Astronaut 1",
+        text: "Fully charged. Tool belt has everything — wrench, screwdriver, and the replacement part for the radiator panel.",
+      },
+      {
+        speaker: "Astronaut 2",
+        text: "Which module are we working on? The one near the solar array?",
+      },
+      {
+        speaker: "Astronaut 1",
+        text: "Yes — we need to repair the antenna on the truss. The docking port camera stopped sending images to the control panel.",
+      },
+      {
+        speaker: "Astronaut 2",
+        text: "I can see the cupola from here. The view of Earth through those windows never gets old.",
+      },
+      {
+        speaker: "Astronaut 1",
+        text: "Focus. We have four hours before we need to return through the hatch. Boots magnetised?",
+      },
+      {
+        speaker: "Astronaut 2",
+        text: "Magnetised and locked. Ready when you are.",
+      },
+      {
+        speaker: "Astronaut 1",
+        text: "Opening the airlock now. Stay close to the truss. And remember — slow, deliberate movements. Nothing fast in zero gravity.",
+      },
+      {
         speaker: "Astro",
         text: "Study science and maths, stay physically fit, and never stop being curious.",
       },

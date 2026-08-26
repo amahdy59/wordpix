@@ -215,20 +215,40 @@ export const OBSERVATORY_LEARNING: UnitLearningMaterials = {
         text: "Welcome to the observatory. Tonight we'll observe Saturn, the Orion Nebula, and — if the sky stays clear — a meteor shower.",
       },
       {
+        speaker: "Visitor 1",
+        text: "Is that the main telescope? The dome is enormous!",
+      },
+      {
         speaker: "Astronomer",
         text: "That's our reflecting telescope — the mirror inside gathers light from objects billions of light-years away. The rotating roof opens to any part of the sky.",
+      },
+      {
+        speaker: "Visitor 2",
+        text: "How do you find a specific star in all that darkness?",
       },
       {
         speaker: "Astronomer",
         text: "We use the finder scope first — a small auxiliary telescope — then the telescope mount tracks the object as the Earth rotates. The star chart helps with identification.",
       },
       {
+        speaker: "Visitor 1",
+        text: "What's the difference between a planet, a star, and a comet?",
+      },
+      {
         speaker: "Astronomer",
         text: "A star produces its own light. A planet orbits a star and reflects light. A comet is ice and dust — it develops a glowing tail when it approaches the Sun.",
       },
       {
+        speaker: "Visitor 2",
+        text: "What's that instrument next to the computer monitor?",
+      },
+      {
         speaker: "Astronomer",
         text: "The spectrograph — it breaks starlight into a spectrum, revealing the star's temperature and composition. The CCD camera captures images digitally.",
+      },
+      {
+        speaker: "Visitor 1",
+        text: "Why are the pathway lights red instead of white?",
       },
       {
         speaker: "Astronomer",

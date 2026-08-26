@@ -218,16 +218,36 @@ export const PLAYGROUND_LEARNING: UnitLearningMaterials = {
         text: "Alright, we're here! Put on your helmet and knee pad before you start playing.",
       },
       {
+        speaker: "Child 1",
+        text: "Can I go on the swing first? Then the slide!",
+      },
+      {
         speaker: "Parent",
         text: "Sure — but be careful on the sand. Don't run on the gravel near the tunnel.",
+      },
+      {
+        speaker: "Child 2",
+        text: "I want the seesaw! Will you sit on the other side?",
       },
       {
         speaker: "Parent",
         text: "Of course. After that, try the climbing frame — the rubber mat underneath is nice and soft.",
       },
       {
+        speaker: "Child 1",
+        text: "Look at me on the monkey bars! I can see the sandbox from up here!",
+      },
+      {
+        speaker: "Child 2",
+        text: "I'll race you to the merry-go-round! Last one there plays hopscotch!",
+      },
+      {
         speaker: "Parent",
         text: "Watch the puddle near the mud patch! Stay on the grass or the concrete path.",
+      },
+      {
+        speaker: "Child 1",
+        text: "Can we play with the ball and the bat? There's a net over by the goal.",
       },
       {
         speaker: "Parent",
