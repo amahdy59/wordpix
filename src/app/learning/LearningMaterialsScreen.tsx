@@ -183,7 +183,9 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
           <StatusBar />
           <header className="px-4 py-3 border-b border-border flex items-center gap-3">
             <BackButton onClick={handleBack} aria-label={`Back to ${unit.name}`} />
-            <h1 className="font-sans font-bold text-xl text-foreground">{unit.name}</h1>
+            <div className="min-w-0">
+              <h1 className="font-sans font-bold text-xl text-foreground">{unit.name}</h1>
+            </div>
           </header>
           <div className="flex-1 flex flex-col items-center justify-center p-8 text-center">
             <p className="font-sans text-muted-foreground mb-4">
