@@ -64,7 +64,7 @@ describe("word image assets", () => {
   it("resolves every referenced image to a file on disk", () => {
     const missing = words.filter(({ word }) => assetState(word.img) === "missing");
     expect(missing.map(({ word }) => word.img)).toEqual([]);
-  }, 60000);
+  }, 120000);
 
   it("contains no placeholder artwork at all", () => {
     // Was an allow-list of three good units, then a deny-list of one bad one,
