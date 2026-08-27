@@ -1,4 +1,4 @@
-import type { StudyNode } from "./types";
+﻿import type { StudyNode } from "./types";
 import type { UnitLearningMaterials } from "../types";
 import {
   PassageSection,
@@ -36,7 +36,7 @@ export function UseItArea({
             <button
               key={n.id}
               onClick={() => onSelectNode(n.id)}
-              className="w-full text-left p-4 rounded-xl border border-border bg-card hover:bg-muted"
+              className="w-full text-start p-4 rounded-xl border border-border bg-card hover:bg-muted"
             >
               <h3 className="font-bold">{n.title}</h3>
             </button>

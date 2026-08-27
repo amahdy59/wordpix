@@ -43,7 +43,7 @@ export function VocabularyCard({ word, meta, materials }: Props) {
           </span>
           <button
             onClick={handleAudio}
-            className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center hover:bg-primary/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            className="w-[44px] h-[44px] shrink-0 rounded-full bg-primary/10 text-primary flex items-center justify-center hover:bg-primary/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             aria-label={`Listen to ${word.label}`}
           >
             <Volume2 className="w-5 h-5" />
@@ -55,7 +55,7 @@ export function VocabularyCard({ word, meta, materials }: Props) {
             <SecondaryButton label="Show Details" onClick={() => setShowDetails(true)} />
           </div>
         ) : (
-          <div className="w-full text-left space-y-4 animate-in fade-in slide-in-from-bottom-2 duration-200">
+          <div className="w-full text-start space-y-4 animate-in fade-in slide-in-from-bottom-2 duration-200">
             {word.description && (
               <div>
                 <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-1">

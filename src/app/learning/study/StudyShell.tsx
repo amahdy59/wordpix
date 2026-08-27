@@ -88,10 +88,10 @@ export function StudyShell({ unitId, unit, materials, dispatch }: Props) {
       ) : (
         <div className="flex flex-col h-full lg:flex-row">
           {/* Desktop Sidebar placeholder */}
-          <div className="hidden lg:flex flex-col w-64 border-r p-4 shrink-0 overflow-y-auto">
+          <div className="hidden lg:flex flex-col w-64 border-e p-4 shrink-0 overflow-y-auto">
             <button
               onClick={handleBackToHome}
-              className="mb-6 text-sm font-medium hover:underline text-left"
+              className="mb-6 text-sm font-medium hover:underline text-start min-h-[44px]"
             >
               ← {unit.name}
             </button>
@@ -104,7 +104,7 @@ export function StudyShell({ unitId, unit, materials, dispatch }: Props) {
                 <button
                   key={node.id}
                   onClick={() => handleNodeSelect(node.id)}
-                  className={`text-left py-2 px-3 rounded-md mb-1 text-sm ${
+                  className={`text-start py-2 px-3 rounded-md mb-1 text-sm min-h-[44px] ${
                     currentNodeId === node.id
                       ? "bg-primary/10 text-primary font-medium"
                       : "hover:bg-muted"
@@ -117,7 +117,10 @@ export function StudyShell({ unitId, unit, materials, dispatch }: Props) {
 
           {/* Mobile Header */}
           <div className="lg:hidden flex items-center p-4 border-b shrink-0">
-            <button onClick={handleBackToHome} className="p-2 -ml-2 mr-2">
+            <button
+              onClick={handleBackToHome}
+              className="min-h-[44px] min-w-[44px] p-2 -ms-2 me-2 flex items-center justify-center"
+            >
               ←
             </button>
             <div className="font-medium text-sm flex-1 truncate">

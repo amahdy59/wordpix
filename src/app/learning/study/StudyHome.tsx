@@ -34,10 +34,10 @@ export function StudyHome({
         key={n.id}
         type="button"
         onClick={() => onSelectNode(n.id)}
-        className="w-full text-left p-3 rounded-lg hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary flex items-center group min-h-[44px]"
+        className="w-full text-start p-3 rounded-lg hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary flex items-center group min-h-[44px]"
         aria-label={n.title}
       >
-        <span className="w-6 h-6 rounded-full border-2 border-muted-foreground/30 mr-3 flex-shrink-0 flex items-center justify-center group-hover:border-primary">
+        <span className="w-6 h-6 rounded-full border-2 border-muted-foreground/30 me-3 flex-shrink-0 flex items-center justify-center group-hover:border-primary">
           {progress.completedNodeIds.includes(n.id) && (
             <span className="w-3 h-3 bg-primary rounded-full" />
           )}
@@ -95,7 +95,7 @@ export function StudyHome({
             <button
               type="button"
               onClick={() => onSelectArea(area)}
-              className="text-xl font-semibold mb-4 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded block w-full text-left uppercase"
+              className="text-xl font-semibold mb-4 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded block w-full text-start uppercase"
             >
               {area === "use" ? "USE IT" : area}
             </button>

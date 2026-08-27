@@ -1,4 +1,4 @@
-﻿import { useState, useMemo, useRef, useEffect } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import type { UnitLearningMaterials } from "../types";
 import { loadedUnitVocabulary } from "../../data/vocabulary";
 import { BLANK_TOKEN } from "../types";
@@ -208,7 +208,7 @@ export function PracticeArea({ materials }: Props) {
                     disabled={hasAnswered}
                     onClick={() => setInputValue(String(i))}
                     aria-pressed={picked}
-                    className={`w-full text-left p-4 rounded-xl border ${picked ? "border-primary bg-primary/10" : "border-border hover:border-primary/50"} transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]`}
+                    className={`w-full text-start p-4 rounded-xl border ${picked ? "border-primary bg-primary/10" : "border-border hover:border-primary/50"} transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]`}
                   >
                     {opt}
                   </button>
@@ -271,7 +271,7 @@ export function PracticeArea({ materials }: Props) {
           <button
             type="button"
             onClick={handleNext}
-            className={`px-6 py-2 rounded-full font-bold text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${isCorrect ? "bg-wp-green hover:bg-wp-green/90 focus-visible:ring-wp-green" : "bg-destructive hover:bg-destructive/90 focus-visible:ring-destructive"}`}
+            className={`px-6 py-2 min-h-[44px] rounded-full font-bold text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${isCorrect ? "bg-wp-green hover:bg-wp-green/90 focus-visible:ring-wp-green" : "bg-destructive hover:bg-destructive/90 focus-visible:ring-destructive"}`}
           >
             Next
           </button>
