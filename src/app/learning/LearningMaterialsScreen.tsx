@@ -28,6 +28,7 @@ import {
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { BackButton } from "../shared/BackButton";
+import { StudyShell } from "./study/StudyShell";
 import { COURSE_UNITS, DEFAULT_UNIT_ID, type VocabularyItem } from "../data/lessons";
 import { loadedUnitVocabulary } from "../data/vocabulary";
 import { loadLearningMaterials } from "./registry";
@@ -159,6 +160,55 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
   const handleBack = useCallback(() => {
     dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id });
   }, [dispatch, unit.id]);
+
+  if (unit.id === "bathroom") {
+    if (status === "loading") {
+      return (
+        <div className="min-h-dvh bg-background flex flex-col items-center justify-center p-8 text-center">
+          <StatusBar />
+          <div
+            className="size-10 rounded-full border-4 border-primary border-t-transparent animate-spin mb-4"
+            aria-hidden
+          />
+          <p className="font-sans text-muted-foreground" role="status">
+            Loading study materials…
+          </p>
+        </div>
+      );
+    }
+
+    if (status === "empty" || !materials) {
+      return (
+        <div className="min-h-dvh bg-background flex flex-col">
+          <StatusBar />
+          <header className="px-4 py-3 border-b border-border flex items-center gap-3">
+            <BackButton onClick={handleBack} aria-label={`Back to ${unit.name}`} />
+            <h1 className="font-sans font-bold text-xl text-foreground">{unit.name}</h1>
+          </header>
+          <div className="flex-1 flex flex-col items-center justify-center p-8 text-center">
+            <p className="font-sans text-muted-foreground mb-4">
+              No study materials available for this unit yet.
+            </p>
+            <button
+              onClick={handleBack}
+              className="px-6 py-2 bg-primary text-primary-foreground rounded-full font-bold min-h-[44px]"
+            >
+              Go Back
+            </button>
+          </div>
+        </div>
+      );
+    }
+
+    return (
+      <div className="min-h-dvh bg-background flex flex-col">
+        <StatusBar />
+        <div className="flex-1 flex flex-col relative overflow-hidden">
+          <StudyShell unitId={unit.id} unit={unit} materials={materials} dispatch={dispatch} />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-dvh bg-background flex flex-col">
