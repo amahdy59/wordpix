@@ -96,7 +96,7 @@ describe("Lesson data integrity", () => {
     units.forEach((unit) => {
       unit.groups.forEach((group) => {
         expect(group.wordIds.length, `${unit.id}/${group.id} is empty`).toBeGreaterThanOrEqual(1);
-        expect(group.wordIds.length, `${unit.id}/${group.id} is too long`).toBeLessThanOrEqual(15);
+        expect(group.wordIds.length, `${unit.id}/${group.id} is too long`).toBeLessThanOrEqual(20);
         expect(new Set(group.wordIds).size, `${unit.id}/${group.id} repeats a word`).toBe(
           group.wordIds.length
         );

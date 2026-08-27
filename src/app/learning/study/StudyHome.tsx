@@ -1,7 +1,8 @@
-﻿import type { CourseUnit } from "../../data/lessons";
+import type { CourseUnit } from "../../data/lessons";
 import type { StudyNode, UnitStudyProgress, StudyArea } from "./types";
 import type { Action } from "../../types";
 import { PrimaryButton } from "../../shared/PrimaryButton";
+import { resolveAssetUrl } from "../../../utils/assetUrl";
 
 interface Props {
   unit: CourseUnit;
@@ -67,6 +68,17 @@ export function StudyHome({
         <p className="text-muted-foreground mb-6">
           Learn the words and expressions you need for everyday situations.
         </p>
+
+        {unit.heroImage && (
+          <div className="mb-6 rounded-xl overflow-hidden bg-muted aspect-[2/1] relative border border-border/50">
+            <img
+              src={resolveAssetUrl(unit.heroImage)}
+              alt={`${unit.name} Scene`}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        )}
+
         <div className="h-2 w-full bg-muted rounded-full overflow-hidden mb-2">
           <div className="h-full bg-primary" style={{ width: `${percent}%` }} />
         </div>

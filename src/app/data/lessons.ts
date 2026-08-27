@@ -84,9 +84,9 @@ export { VOCABULARY as BEDROOM_VOCABULARY } from "./units/bedroom";
 export const BATHROOM_GROUPS: Lesson[] = [
   {
     id: "bathroom-1",
-    name: "The Bathroom 1",
+    name: "Fixtures & Fittings",
     description:
-      "Learn about Bathtub, Shower, Toilet, Sink, Faucet, Drain, Mirror, Towel Rack, Cabinet, Tiles, Soap, Shampoo, Con...",
+      "Learn about Bathtub, Shower, Toilet, Sink, Faucet, Drain, Mirror, Towel Rack, Cabinet, and Tiles.",
     topicId: "bathroom-1",
     wordIds: [
       "bathtub",
@@ -99,27 +99,38 @@ export const BATHROOM_GROUPS: Lesson[] = [
       "towel-rack",
       "cabinet",
       "tiles",
+    ],
+    story:
+      "In this section, you will learn about Bathtub, Shower, Toilet, Sink, Faucet, Drain, Mirror, Towel Rack, Cabinet, and Tiles. These are essential items to know.",
+  },
+  {
+    id: "bathroom-2",
+    name: "Toiletries",
+    description:
+      "Learn about Soap, Shampoo, Conditioner, Toothbrush, Toothpaste, Towel, Comb, Hairbrush, Lotion, and Deodorant.",
+    topicId: "bathroom-2",
+    wordIds: [
       "soap",
       "shampoo",
       "conditioner",
       "toothbrush",
       "toothpaste",
-    ],
-    story:
-      "In this section, you will learn about Bathtub, Shower, Toilet, Sink, Faucet, Drain, Mirror, Towel Rack, Cabinet, Tiles, Soap, Shampoo, Conditioner, Toothbrush, Toothpaste. These are essential items to know.",
-  },
-  {
-    id: "bathroom-2",
-    name: "The Bathroom 2",
-    description:
-      "Learn about Towel, Comb, Hairbrush, Lotion, Deodorant, Tissue, Toilet Paper, Cotton Balls, Cotton Swab, Razor, N...",
-    topicId: "bathroom-2",
-    wordIds: [
       "towel",
       "comb",
       "hairbrush",
       "lotion",
       "deodorant",
+    ],
+    story:
+      "In this section, you will learn about Soap, Shampoo, Conditioner, Toothbrush, Toothpaste, Towel, Comb, Hairbrush, Lotion, and Deodorant. These are essential items to know.",
+  },
+  {
+    id: "bathroom-3",
+    name: "Bathroom Supplies",
+    description:
+      "Learn about Toilet Paper, Cotton Balls, Cotton Swab, Razor, Nail Clipper, Hair Dryer, Scale, Laundry Basket, First Aid Kit, and Thermometer.",
+    topicId: "bathroom-3",
+    wordIds: [
       "toilet-paper",
       "cotton-balls",
       "cotton-swab",
@@ -132,14 +143,14 @@ export const BATHROOM_GROUPS: Lesson[] = [
       "thermometer",
     ],
     story:
-      "In this section, you will learn about Towel, Comb, Hairbrush, Lotion, Deodorant, Toilet Paper, Cotton Balls, Cotton Swab, Razor, Nail Clipper, Hair Dryer, Scale, Laundry Basket, First Aid Kit, Thermometer. These are essential items to know.",
+      "In this section, you will learn about Toilet Paper, Cotton Balls, Cotton Swab, Razor, Nail Clipper, Hair Dryer, Scale, Laundry Basket, First Aid Kit, and Thermometer. These are essential items to know.",
   },
   {
-    id: "bathroom-3",
-    name: "The Bathroom 3",
+    id: "bathroom-4",
+    name: "Bath & Shower",
     description:
-      "Learn about Thermometer, Bath Mat, Shower Curtain, Shower Head, Bath Towel, Hand Towel, Washcloth, Soap Dish, Sh...",
-    topicId: "bathroom-3",
+      "Learn about Bath Mat, Shower Curtain, Shower Head, Bath Towel, Hand Towel, Washcloth, Soap Dish, Shampoo Bottle, Rubber Duck, and Shower Gel.",
+    topicId: "bathroom-4",
     wordIds: [
       "bath-mat",
       "shower-curtain",
@@ -151,27 +162,38 @@ export const BATHROOM_GROUPS: Lesson[] = [
       "shampoo-bottle",
       "rubber-duck",
       "shower-gel",
+    ],
+    story:
+      "In this section, you will learn about Bath Mat, Shower Curtain, Shower Head, Bath Towel, Hand Towel, Washcloth, Soap Dish, Shampoo Bottle, Rubber Duck, and Shower Gel. These are essential items to know.",
+  },
+  {
+    id: "bathroom-5",
+    name: "Personal Care",
+    description:
+      "Learn about Face Cream, Sunscreen, Lip Balm, Hand Soap, Body Wash, Mouthwash, Dental Floss, Face Wash, Hand Sanitizer, and Wet Wipes.",
+    topicId: "bathroom-5",
+    wordIds: [
       "face-cream",
       "sunscreen",
       "lip-balm",
       "hand-soap",
       "body-wash",
-    ],
-    story:
-      "In this section, you will learn about Bath Mat, Shower Curtain, Shower Head, Bath Towel, Hand Towel, Washcloth, Soap Dish, Shampoo Bottle, Rubber Duck, Shower Gel, Face Cream, Sunscreen, Lip Balm, Hand Soap, Body Wash. These are essential items to know.",
-  },
-  {
-    id: "bathroom-4",
-    name: "The Bathroom 4",
-    description:
-      "Learn about Body Wash, Mouthwash, Dental Floss, Face Wash, Hand Sanitizer, Wet Wipes, Sponge, Brush, Bucket, Glo...",
-    topicId: "bathroom-4",
-    wordIds: [
       "mouthwash",
       "dental-floss",
       "face-wash",
       "hand-sanitizer",
       "wet-wipes",
+    ],
+    story:
+      "In this section, you will learn about Face Cream, Sunscreen, Lip Balm, Hand Soap, Body Wash, Mouthwash, Dental Floss, Face Wash, Hand Sanitizer, and Wet Wipes. These are essential items to know.",
+  },
+  {
+    id: "bathroom-6",
+    name: "Cleaning Items",
+    description:
+      "Learn about Sponge, Brush, Bucket, Gloves, Spray Bottle, Cloth, Plunger, Squeegee, Tissue, Wash Hands, Brush Teeth, Take Shower, Dry Off, Flush, Comb Hair, Apply Lotion, and Gargle.",
+    topicId: "bathroom-6",
+    wordIds: [
       "sponge",
       "brush",
       "bucket",
@@ -182,17 +204,6 @@ export const BATHROOM_GROUPS: Lesson[] = [
       "squeegee",
       "tissue",
       "wash-hands",
-    ],
-    story:
-      "In this section, you will learn about Mouthwash, Dental Floss, Face Wash, Hand Sanitizer, Wet Wipes, Sponge, Brush, Bucket, Gloves, Spray Bottle, Cloth, Plunger, Squeegee, Tissue, Wash Hands. These are essential items to know.",
-  },
-  {
-    id: "bathroom-5",
-    name: "The Bathroom 5",
-    description:
-      "Learn about Brush Teeth, Take Shower, Dry Off, Flush, Comb Hair, Apply Lotion, Gargle...",
-    topicId: "bathroom-5",
-    wordIds: [
       "brush-teeth",
       "take-shower",
       "dry-off",
@@ -202,7 +213,7 @@ export const BATHROOM_GROUPS: Lesson[] = [
       "gargle",
     ],
     story:
-      "In this section, you will learn about Brush Teeth, Take Shower, Dry Off, Flush, Comb Hair, Apply Lotion, Gargle. These are essential items to know.",
+      "In this section, you will learn about Sponge, Brush, Bucket, Gloves, Spray Bottle, Cloth, Plunger, Squeegee, Tissue, Wash Hands, Brush Teeth, Take Shower, Dry Off, Flush, Comb Hair, Apply Lotion, and Gargle. These are essential items to know.",
   },
 ];
 
