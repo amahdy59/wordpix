@@ -1,6 +1,13 @@
-import { useState, useMemo, useRef, useEffect } from "react";
-import type { UnitLearningMaterials } from "../types";
+import { useState, useMemo } from "react";
+import type {
+  UnitLearningMaterials,
+  BlankExercise,
+  MultipleChoiceExercise,
+  RewriteExercise,
+  ErrorCorrectionExercise,
+} from "../types";
 import { loadedUnitVocabulary } from "../../data/vocabulary";
+import type { VocabularyItem } from "../../data/lessons";
 import { BLANK_TOKEN } from "../types";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { loadStudyProgress, saveStudyProgress, recordWordPractice } from "./progress";
@@ -9,138 +16,261 @@ interface Props {
   materials: UnitLearningMaterials;
 }
 
-interface BlankExerciseData {
-  sentence: string;
-  answer: string;
-}
-interface MultipleChoiceData {
-  question: string;
-  options: string[];
-  correctIndex: number;
-}
-interface RewriteData {
-  sentence: string;
-  hintWord: string;
-  answer: string;
-}
-interface ErrorCorrectionData {
-  wrong: string;
-  right: string;
-}
-
 type PracticeItem =
-  | { type: "blank"; data: BlankExerciseData; answerText: string }
-  | { type: "multipleChoice"; data: MultipleChoiceData; answerText: string }
-  | { type: "rewrite"; data: RewriteData; answerText: string }
-  | { type: "errorCorrection"; data: ErrorCorrectionData; answerText: string };
-
-export function PracticeArea({ materials }: Props) {
-  const items = useMemo(() => {
-    const list: PracticeItem[] = [];
-    materials.blankExercises?.forEach((e) =>
-      list.push({
-        type: "blank",
-        data: e as BlankExerciseData,
-        answerText: (e as BlankExerciseData).answer,
-      })
-    );
-    materials.additionalExercises?.multipleChoice?.forEach((e) =>
-      list.push({
-        type: "multipleChoice",
-        data: e as MultipleChoiceData,
-        answerText: (e as MultipleChoiceData).options[(e as MultipleChoiceData).correctIndex],
-      })
-    );
-    materials.collocationsQuiz?.forEach((e) =>
-      list.push({
-        type: "multipleChoice",
-        data: e as MultipleChoiceData,
-        answerText: (e as MultipleChoiceData).options[(e as MultipleChoiceData).correctIndex],
-      })
-    );
-    materials.additionalExercises?.rewrite?.forEach((e) =>
-      list.push({ type: "rewrite", data: e as RewriteData, answerText: (e as RewriteData).answer })
-    );
-    materials.errorCorrection?.forEach((e) =>
-      list.push({
-        type: "errorCorrection",
-        data: e as ErrorCorrectionData,
-        answerText: (e as ErrorCorrectionData).right,
-      })
-    );
-    const shuffled = [...list];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor((crypto.getRandomValues(new Uint32Array(1))[0] / 0xffffffff) * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  | {
+      id: string;
+      type: "blank";
+      data: BlankExercise;
+      answerText: string;
+      options: string[];
+      correctIndex: number;
     }
-    return shuffled;
-  }, [materials]);
+  | { id: string; type: "multipleChoice"; data: MultipleChoiceExercise; answerText: string }
+  | { id: string; type: "rewrite"; data: RewriteExercise; answerText: string }
+  | { id: string; type: "errorCorrection"; data: ErrorCorrectionExercise; answerText: string };
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [inputValue, setInputValue] = useState("");
+function shuffle<T>(array: T[]): T[] {
+  const copy = [...array];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+function SentenceBuilder({
+  sentence,
+  hint,
+  onCorrect,
+}: {
+  sentence: string;
+  hint: React.ReactNode;
+  onCorrect: () => void;
+}) {
+  const words = useMemo(() => sentence.split(" "), [sentence]);
+  const [available, setAvailable] = useState<string[]>(() => shuffle(words));
+  const [selected, setSelected] = useState<string[]>([]);
   const [hasAnswered, setHasAnswered] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
 
-  const inputRef = useRef<HTMLInputElement>(null);
+  const handleSelect = (idx: number) => {
+    const w = available[idx];
+    setAvailable(available.filter((_, i) => i !== idx));
+    setSelected([...selected, w]);
+  };
 
-  const currentItem = items[currentIndex];
-  const isFinished = currentIndex >= items.length;
+  const handleDeselect = (idx: number) => {
+    const w = selected[idx];
+    setSelected(selected.filter((_, i) => i !== idx));
+    setAvailable([...available, w]);
+  };
 
-  const vocab = useMemo(() => loadedUnitVocabulary(materials.unitId), [materials.unitId]);
-
-  useEffect(() => {
-    if (
-      !isFinished &&
-      currentItem &&
-      (currentItem.type === "blank" ||
-        currentItem.type === "rewrite" ||
-        currentItem.type === "errorCorrection")
-    ) {
-      inputRef.current?.focus();
-    }
-  }, [currentIndex, isFinished, currentItem]);
-
-  function handleCheck() {
-    if (!currentItem) return;
-    let correct = false;
-    const normalize = (s: string) => s.trim().toLowerCase();
-
-    if (
-      currentItem.type === "blank" ||
-      currentItem.type === "rewrite" ||
-      currentItem.type === "errorCorrection"
-    ) {
-      correct = normalize(inputValue) === normalize(currentItem.answerText);
-    } else if (currentItem.type === "multipleChoice") {
-      correct = parseInt(inputValue, 10) === currentItem.data.correctIndex;
-    }
-
+  const checkAnswer = () => {
+    const answer = selected.join(" ");
+    const correct = answer === sentence;
     setIsCorrect(correct);
     setHasAnswered(true);
+    if (correct) onCorrect();
+  };
 
-    let targetWord = currentItem.answerText;
-    if (currentItem.type === "multipleChoice") {
-      targetWord = currentItem.data.options[currentItem.data.correctIndex];
-    } else if (currentItem.type === "rewrite") {
-      targetWord = currentItem.data.hintWord;
+  const reset = () => {
+    setAvailable(shuffle(words));
+    setSelected([]);
+    setHasAnswered(false);
+    setIsCorrect(false);
+  };
+
+  return (
+    <div className="rounded-xl border border-border p-4 bg-card shadow-sm">
+      <div className="mb-4">{hint}</div>
+      <div className="min-h-[44px] flex flex-wrap gap-2 p-2 border-b-2 border-dashed border-border mb-4 bg-muted/30 rounded">
+        {selected.map((w, i) => (
+          <button
+            key={i}
+            onClick={() => !hasAnswered && handleDeselect(i)}
+            disabled={hasAnswered}
+            className="px-3 py-1.5 bg-background border border-border rounded-md shadow-sm font-medium hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+          >
+            {w}
+          </button>
+        ))}
+      </div>
+      <div className="flex flex-wrap gap-2 mb-4">
+        {available.map((w, i) => (
+          <button
+            key={i}
+            onClick={() => !hasAnswered && handleSelect(i)}
+            disabled={hasAnswered}
+            className="px-3 py-1.5 bg-muted text-muted-foreground border border-transparent rounded-md font-medium hover:bg-muted/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+          >
+            {w}
+          </button>
+        ))}
+      </div>
+
+      {hasAnswered ? (
+        <div
+          className={`p-4 rounded-xl flex items-center justify-between ${isCorrect ? "bg-wp-green-light/20 text-wp-green" : "bg-destructive/10 text-destructive"}`}
+        >
+          <div className="flex items-center gap-3">
+            {isCorrect ? <CheckCircle2 className="w-5 h-5" /> : <XCircle className="w-5 h-5" />}
+            <span className="font-bold">{isCorrect ? "Correct!" : "Incorrect"}</span>
+          </div>
+          {!isCorrect && (
+            <button
+              onClick={reset}
+              className="px-4 py-2 bg-background border border-border rounded-full text-sm font-bold hover:bg-muted min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            >
+              Try Again
+            </button>
+          )}
+        </div>
+      ) : (
+        <button
+          onClick={checkAnswer}
+          disabled={selected.length === 0}
+          className="w-full py-2 bg-primary text-primary-foreground rounded-full font-bold disabled:opacity-50 min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+        >
+          Check
+        </button>
+      )}
+    </div>
+  );
+}
+
+function MultipleChoiceQuiz({
+  question,
+  options,
+  correctIndex,
+  onCorrect,
+}: {
+  question: React.ReactNode;
+  options: string[];
+  correctIndex: number;
+  onCorrect: () => void;
+}) {
+  const [picked, setPicked] = useState<number | null>(null);
+  const answered = picked !== null;
+
+  const handlePick = (i: number) => {
+    setPicked(i);
+    if (i === correctIndex) {
+      onCorrect();
     }
+  };
 
+  return (
+    <div className="rounded-xl border border-border p-4 bg-card shadow-sm">
+      <div className="mb-4 font-bold text-lg">{question}</div>
+      <div className="space-y-3">
+        {options.map((opt, i) => {
+          const isCorrect = i === correctIndex;
+          const isPicked = picked === i;
+          const state = !answered ? "idle" : isCorrect ? "correct" : isPicked ? "wrong" : "idle";
+
+          return (
+            <button
+              key={i}
+              type="button"
+              disabled={answered}
+              onClick={() => handlePick(i)}
+              className={`w-full text-start p-4 rounded-xl border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] ${
+                state === "correct"
+                  ? "border-wp-green bg-wp-green-light/20 text-wp-green font-bold"
+                  : state === "wrong"
+                    ? "border-destructive bg-destructive/10 text-destructive font-bold"
+                    : "border-border hover:border-primary/50"
+              }`}
+            >
+              <span className="flex items-center gap-2">
+                {state === "correct" && <CheckCircle2 className="w-5 h-5 shrink-0" />}
+                {state === "wrong" && <XCircle className="w-5 h-5 shrink-0" />}
+                {opt}
+              </span>
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+export function PracticeArea({ materials }: Props) {
+  const vocab = useMemo(() => loadedUnitVocabulary(materials.unitId), [materials.unitId]);
+
+  const items = useMemo(() => {
+    const list: PracticeItem[] = [];
+    let idCounter = 0;
+
+    materials.blankExercises?.forEach((e) => {
+      const distractors = shuffle(
+        vocab
+          .map((v: VocabularyItem) => v.label)
+          .filter((l: string) => l.toLowerCase() !== e.answer.toLowerCase())
+      ).slice(0, 3);
+      const options = shuffle([e.answer, ...distractors]) as string[];
+      const correctIndex = options.indexOf(e.answer);
+      list.push({
+        id: `practice-${idCounter++}`,
+        type: "blank",
+        data: e,
+        answerText: e.answer,
+        options,
+        correctIndex,
+      });
+    });
+
+    materials.additionalExercises?.multipleChoice?.forEach((e) =>
+      list.push({
+        id: `practice-${idCounter++}`,
+        type: "multipleChoice",
+        data: e,
+        answerText: e.options[e.correctIndex],
+      })
+    );
+
+    materials.collocationsQuiz?.forEach((e) =>
+      list.push({
+        id: `practice-${idCounter++}`,
+        type: "multipleChoice",
+        data: e,
+        answerText: e.options[e.correctIndex],
+      })
+    );
+
+    materials.additionalExercises?.rewrite?.forEach((e) =>
+      list.push({
+        id: `practice-${idCounter++}`,
+        type: "rewrite",
+        data: e,
+        answerText: e.answer,
+      })
+    );
+
+    materials.errorCorrection?.forEach((e) =>
+      list.push({
+        id: `practice-${idCounter++}`,
+        type: "errorCorrection",
+        data: e,
+        answerText: e.right,
+      })
+    );
+
+    return shuffle(list);
+  }, [materials, vocab]);
+
+  const [finished, setFinished] = useState(false);
+
+  const handleCorrect = (word: string) => {
     const matchedVocab = vocab.find(
-      (v) => v.label.toLowerCase() === targetWord.trim().toLowerCase()
+      (v: VocabularyItem) => v.label.toLowerCase() === word.trim().toLowerCase()
     );
     if (matchedVocab) {
       let progress = loadStudyProgress(materials.unitId);
-      progress = recordWordPractice(progress, matchedVocab.id, correct);
+      progress = recordWordPractice(progress, matchedVocab.id, true);
       saveStudyProgress(progress);
     }
-  }
-
-  function handleNext() {
-    setInputValue("");
-    setHasAnswered(false);
-    setIsCorrect(false);
-    setCurrentIndex((i) => i + 1);
-  }
+  };
 
   if (items.length === 0) {
     return (
@@ -148,7 +278,7 @@ export function PracticeArea({ materials }: Props) {
     );
   }
 
-  if (isFinished) {
+  if (finished) {
     return (
       <div className="p-8 max-w-3xl mx-auto w-full text-center">
         <CheckCircle2 className="w-16 h-16 text-wp-green mx-auto mb-4" />
@@ -159,133 +289,123 @@ export function PracticeArea({ materials }: Props) {
   }
 
   return (
-    <div className="max-w-2xl mx-auto w-full p-4 md:p-8">
-      <div className="mb-6 flex justify-between items-center">
-        <h2 className="text-xl font-bold">Practice Session</h2>
-        <span className="text-sm font-bold text-muted-foreground">
-          {currentIndex + 1} / {items.length}
-        </span>
+    <div className="w-full pb-24 relative">
+      <div className="sticky top-0 z-10 bg-background/95 backdrop-blur py-4 border-b border-border mb-6 shadow-sm">
+        <div className="max-w-3xl mx-auto flex justify-between items-center px-4 md:px-8">
+          <h2 className="text-xl font-bold">Practice Session</h2>
+          <span className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full">
+            {items.length} Questions
+          </span>
+        </div>
       </div>
 
-      <div className="rounded-xl border border-border p-6 bg-card shadow-sm mb-6">
-        {currentItem.type === "blank" && (
-          <div>
-            <p className="text-muted-foreground mb-4">Fill in the blank:</p>
-            <p className="font-bold text-lg mb-6 leading-loose">
-              {currentItem.data.sentence
-                .split(BLANK_TOKEN)
-                .map((part: string, i: number, arr: string[]) => (
+      <div className="max-w-3xl mx-auto px-4 md:px-8 space-y-8">
+        {items.map((item, index) => {
+          if (item.type === "blank") {
+            const parts = item.data.sentence.split(BLANK_TOKEN);
+            const questionNode = (
+              <p>
+                {parts.map((part, i) => (
                   <span key={i}>
                     {part}
-                    {i < arr.length - 1 && (
-                      <input
-                        ref={inputRef}
-                        type="text"
-                        aria-label="Fill in the blank"
-                        className="mx-2 w-32 border-b-2 border-primary bg-transparent text-center outline-none focus:border-wp-green focus-visible:ring-2 focus-visible:ring-primary"
-                        value={inputValue}
-                        onChange={(e) => setInputValue(e.target.value)}
-                        disabled={hasAnswered}
-                      />
+                    {i < parts.length - 1 && (
+                      <span className="inline-block w-16 border-b-2 border-primary mx-1" />
                     )}
                   </span>
                 ))}
-            </p>
-          </div>
-        )}
+              </p>
+            );
+            return (
+              <div key={item.id}>
+                <p className="text-sm text-muted-foreground font-bold uppercase tracking-wider mb-2">
+                  Question {index + 1}
+                </p>
+                <MultipleChoiceQuiz
+                  question={questionNode}
+                  options={item.options}
+                  correctIndex={item.correctIndex}
+                  onCorrect={() => handleCorrect(item.answerText)}
+                />
+              </div>
+            );
+          }
 
-        {currentItem.type === "multipleChoice" && (
-          <div>
-            <p className="text-muted-foreground mb-4">Choose the correct answer:</p>
-            <p className="font-bold text-lg mb-6">{currentItem.data.question}</p>
-            <div className="space-y-3" role="group" aria-label="Answer options">
-              {currentItem.data.options.map((opt: string, i: number) => {
-                const picked = inputValue === String(i);
-                return (
-                  <button
-                    key={i}
-                    type="button"
-                    disabled={hasAnswered}
-                    onClick={() => setInputValue(String(i))}
-                    aria-pressed={picked}
-                    className={`w-full text-start p-4 rounded-xl border ${picked ? "border-primary bg-primary/10" : "border-border hover:border-primary/50"} transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]`}
-                  >
-                    {opt}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        )}
+          if (item.type === "multipleChoice") {
+            return (
+              <div key={item.id}>
+                <p className="text-sm text-muted-foreground font-bold uppercase tracking-wider mb-2">
+                  Question {index + 1}
+                </p>
+                <MultipleChoiceQuiz
+                  question={item.data.question}
+                  options={item.data.options}
+                  correctIndex={item.data.correctIndex}
+                  onCorrect={() => handleCorrect(item.answerText)}
+                />
+              </div>
+            );
+          }
 
-        {currentItem.type === "rewrite" && (
-          <div>
-            <p className="text-muted-foreground mb-4">
-              Rewrite using &lsquo;{currentItem.data.hintWord}&rsquo;:
-            </p>
-            <p className="font-bold text-lg mb-6">{currentItem.data.sentence}</p>
-            <input
-              ref={inputRef}
-              type="text"
-              aria-label="Rewrite the sentence"
-              className="w-full p-4 rounded-xl border border-border bg-transparent outline-none focus:border-primary focus-visible:ring-2 focus-visible:ring-primary"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              disabled={hasAnswered}
-              placeholder="Type your answer here..."
-            />
-          </div>
-        )}
+          if (item.type === "rewrite") {
+            const hint = (
+              <>
+                <p className="text-muted-foreground mb-2 text-sm font-bold uppercase">
+                  Rewrite using &apos;{item.data.hintWord}&apos;
+                </p>
+                <p className="font-bold">{item.data.sentence}</p>
+              </>
+            );
+            return (
+              <div key={item.id}>
+                <p className="text-sm text-muted-foreground font-bold uppercase tracking-wider mb-2">
+                  Question {index + 1}
+                </p>
+                <SentenceBuilder
+                  sentence={item.answerText}
+                  hint={hint}
+                  onCorrect={() => handleCorrect(item.data.hintWord)}
+                />
+              </div>
+            );
+          }
 
-        {currentItem.type === "errorCorrection" && (
-          <div>
-            <p className="text-muted-foreground mb-4">Correct the mistake:</p>
-            <p className="font-bold text-lg mb-6">{currentItem.data.wrong}</p>
-            <input
-              ref={inputRef}
-              type="text"
-              aria-label="Type the corrected sentence"
-              className="w-full p-4 rounded-xl border border-border bg-transparent outline-none focus:border-primary focus-visible:ring-2 focus-visible:ring-primary"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              disabled={hasAnswered}
-              placeholder="Type the correct sentence..."
-            />
-          </div>
-        )}
-      </div>
+          if (item.type === "errorCorrection") {
+            const hint = (
+              <>
+                <p className="text-muted-foreground mb-2 text-sm font-bold uppercase">
+                  Correct the mistake
+                </p>
+                <p className="font-bold text-destructive line-through decoration-2">
+                  {item.data.wrong}
+                </p>
+              </>
+            );
+            return (
+              <div key={item.id}>
+                <p className="text-sm text-muted-foreground font-bold uppercase tracking-wider mb-2">
+                  Question {index + 1}
+                </p>
+                <SentenceBuilder
+                  sentence={item.answerText}
+                  hint={hint}
+                  onCorrect={() => handleCorrect(item.answerText)}
+                />
+              </div>
+            );
+          }
 
-      {hasAnswered ? (
-        <div
-          className={`p-4 rounded-xl flex items-center justify-between ${isCorrect ? "bg-wp-green-light/20 text-wp-green" : "bg-destructive/10 text-destructive"}`}
-        >
-          <div className="flex items-center gap-3">
-            {isCorrect ? <CheckCircle2 className="w-6 h-6" /> : <XCircle className="w-6 h-6" />}
-            <div>
-              <p className="font-bold">{isCorrect ? "Correct!" : "Incorrect"}</p>
-              {!isCorrect && (
-                <p className="text-sm opacity-90 mt-1">Answer: {currentItem.answerText}</p>
-              )}
-            </div>
-          </div>
+          return null;
+        })}
+
+        <div className="pt-8 pb-12 text-center border-t border-border mt-12">
           <button
-            type="button"
-            onClick={handleNext}
-            className={`px-6 py-2 min-h-[44px] rounded-full font-bold text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${isCorrect ? "bg-wp-green hover:bg-wp-green/90 focus-visible:ring-wp-green" : "bg-destructive hover:bg-destructive/90 focus-visible:ring-destructive"}`}
+            onClick={() => setFinished(true)}
+            className="px-8 py-3 bg-primary text-primary-foreground font-bold rounded-full min-h-[44px] hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
           >
-            Next
+            Finish Practice Session
           </button>
         </div>
-      ) : (
-        <button
-          type="button"
-          onClick={handleCheck}
-          disabled={!inputValue.trim()}
-          className="w-full py-4 rounded-xl bg-primary text-primary-foreground font-bold disabled:opacity-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 min-h-[44px]"
-        >
-          Check Answer
-        </button>
-      )}
+      </div>
     </div>
   );
 }
