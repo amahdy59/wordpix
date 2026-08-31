@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import type {
   UnitLearningMaterials,
   BlankExercise,
@@ -48,10 +48,18 @@ function SentenceBuilder({
   onComplete: (correct: boolean) => void;
 }) {
   const words = useMemo(() => sentence.split(" "), [sentence]);
-  const [available, setAvailable] = useState<string[]>(() => shuffle(words));
+  // Reset local state when sentence changes
+  const [available, setAvailable] = useState<string[]>([]);
   const [selected, setSelected] = useState<string[]>([]);
   const [hasAnswered, setHasAnswered] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
+
+  useEffect(() => {
+    setAvailable(shuffle(words));
+    setSelected([]);
+    setHasAnswered(false);
+    setIsCorrect(false);
+  }, [words]);
 
   const handleSelect = (idx: number) => {
     const w = available[idx];
@@ -81,9 +89,9 @@ function SentenceBuilder({
   };
 
   return (
-    <div className="rounded-2xl border-2 border-border/50 p-5 bg-card shadow-sm">
-      <div className="mb-5">{hint}</div>
-      <div className="min-h-[56px] flex flex-wrap gap-2 p-3 border-b-2 border-dashed border-border mb-5 bg-muted/20 rounded-lg">
+    <div className="rounded-2xl border-2 border-border/50 p-6 bg-card shadow-sm h-full flex flex-col justify-center">
+      <div className="mb-6">{hint}</div>
+      <div className="min-h-[56px] flex flex-wrap gap-2 p-4 border-b-2 border-dashed border-border mb-6 bg-muted/20 rounded-xl">
         {selected.map((w, i) => (
           <button
             key={i}
@@ -95,7 +103,7 @@ function SentenceBuilder({
           </button>
         ))}
       </div>
-      <div className="flex flex-wrap gap-2 mb-6">
+      <div className="flex flex-wrap gap-2 mb-8">
         {available.map((w, i) => (
           <button
             key={i}
@@ -110,26 +118,26 @@ function SentenceBuilder({
 
       {hasAnswered ? (
         <div
-          className={`p-4 rounded-xl flex items-center justify-between ${
+          className={`p-5 rounded-xl flex flex-col sm:flex-row items-center sm:justify-between gap-4 ${
             isCorrect
-              ? "bg-wp-green-light/20 text-wp-green border-2 border-wp-green"
-              : "bg-destructive/10 text-destructive border-2 border-destructive"
+              ? "bg-wp-green-light/20 text-wp-green border-2 border-wp-green animate-in zoom-in-95 duration-200"
+              : "bg-destructive/10 text-destructive border-2 border-destructive animate-in shake duration-300"
           }`}
         >
           <div className="flex items-center gap-3">
             {isCorrect ? (
-              <CheckCircle2 className="w-6 h-6 shrink-0" />
+              <CheckCircle2 className="w-8 h-8 shrink-0" />
             ) : (
-              <XCircle className="w-6 h-6 shrink-0" />
+              <XCircle className="w-8 h-8 shrink-0" />
             )}
-            <span className="font-bold text-lg">
+            <span className="font-bold text-xl">
               {isCorrect ? "Great job!" : "Not quite right"}
             </span>
           </div>
           {!isCorrect && (
             <button
               onClick={reset}
-              className="px-5 py-2.5 bg-background border-2 border-current rounded-xl font-bold hover:opacity-80 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 min-h-[44px]"
+              className="px-6 py-3 bg-background border-2 border-current rounded-xl font-bold text-lg hover:opacity-80 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 min-h-[44px]"
             >
               Try Again
             </button>
@@ -139,7 +147,7 @@ function SentenceBuilder({
         <button
           onClick={checkAnswer}
           disabled={selected.length === 0}
-          className="w-full py-3.5 bg-primary text-primary-foreground rounded-xl font-bold text-lg disabled:opacity-50 transition-transform active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 shadow-sm min-h-[44px]"
+          className="w-full py-4 bg-primary text-primary-foreground rounded-xl font-bold text-xl disabled:opacity-50 transition-transform active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 shadow-sm min-h-[44px]"
         >
           Check Answer
         </button>
@@ -162,15 +170,20 @@ function MultipleChoiceQuiz({
   const [picked, setPicked] = useState<number | null>(null);
   const answered = picked !== null;
 
+  // Reset when question changes
+  useEffect(() => {
+    setPicked(null);
+  }, [question, options]);
+
   const handlePick = (i: number) => {
     setPicked(i);
     onComplete(i === correctIndex);
   };
 
   return (
-    <div className="rounded-2xl border-2 border-border/50 p-5 bg-card shadow-sm">
-      <div className="mb-6 font-bold text-xl text-foreground leading-relaxed">{question}</div>
-      <div className="grid gap-3">
+    <div className="rounded-2xl border-2 border-border/50 p-6 bg-card shadow-sm h-full flex flex-col justify-center">
+      <div className="mb-8 font-bold text-2xl text-foreground leading-relaxed">{question}</div>
+      <div className="grid gap-4">
         {options.map((opt, i) => {
           const isCorrect = i === correctIndex;
           const isPicked = picked === i;
@@ -182,17 +195,17 @@ function MultipleChoiceQuiz({
               type="button"
               disabled={answered}
               onClick={() => handlePick(i)}
-              className={`w-full text-start p-4 rounded-xl border-2 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary text-lg min-h-[44px] ${
+              className={`w-full text-start p-5 rounded-xl border-2 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary text-xl min-h-[56px] ${
                 state === "correct"
-                  ? "border-wp-green bg-wp-green-light/10 text-wp-green font-bold shadow-sm scale-[1.02]"
+                  ? "border-wp-green bg-wp-green-light/10 text-wp-green font-bold shadow-sm scale-[1.02] z-10"
                   : state === "wrong"
                     ? "border-destructive bg-destructive/5 text-destructive font-bold"
                     : "border-border/50 hover:border-primary/50 hover:bg-muted/30 font-medium active:scale-[0.98]"
               }`}
             >
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-4">
                 <div
-                  className={`w-6 h-6 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${
+                  className={`w-8 h-8 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${
                     state === "correct"
                       ? "border-wp-green bg-wp-green"
                       : state === "wrong"
@@ -200,7 +213,7 @@ function MultipleChoiceQuiz({
                         : "border-muted-foreground/30"
                   }`}
                 >
-                  {state === "correct" && <Check className="w-4 h-4 text-white" strokeWidth={3} />}
+                  {state === "correct" && <Check className="w-5 h-5 text-white" strokeWidth={3} />}
                 </div>
                 {opt}
               </div>
@@ -209,14 +222,14 @@ function MultipleChoiceQuiz({
         })}
       </div>
       {answered && picked !== correctIndex && (
-        <div className="mt-5 p-4 rounded-xl bg-destructive/10 border-2 border-destructive text-destructive font-bold flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <XCircle className="w-5 h-5 shrink-0" />
-            <span>Incorrect</span>
+        <div className="mt-6 p-5 rounded-xl bg-destructive/10 border-2 border-destructive text-destructive font-bold flex flex-col sm:flex-row items-center sm:justify-between gap-4 animate-in shake duration-300">
+          <div className="flex items-center gap-3">
+            <XCircle className="w-7 h-7 shrink-0" />
+            <span className="text-xl">Incorrect</span>
           </div>
           <button
             onClick={() => setPicked(null)}
-            className="px-4 py-2 border-2 border-current rounded-lg text-sm hover:opacity-80 transition-opacity min-h-[44px]"
+            className="px-6 py-3 border-2 border-current rounded-xl text-lg hover:opacity-80 transition-opacity min-h-[44px]"
           >
             Try Again
           </button>
@@ -290,9 +303,15 @@ export function PracticeArea({ materials }: Props) {
     return shuffle(list);
   }, [materials, vocab]);
 
-  // Track completed items (correctly answered)
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [completedItems, setCompletedItems] = useState<Set<string>>(new Set());
+  const [isCurrentCorrect, setIsCurrentCorrect] = useState(false);
   const [finished, setFinished] = useState(false);
+
+  // When moving to a new question, reset the local correctness state
+  useEffect(() => {
+    setIsCurrentCorrect(false);
+  }, [currentIndex]);
 
   const handleComplete = (itemId: string, word: string, isCorrect: boolean) => {
     if (isCorrect) {
@@ -310,47 +329,147 @@ export function PracticeArea({ materials }: Props) {
         progress = recordWordPractice(progress, matchedVocab.id, true);
         saveStudyProgress(progress);
       }
+
+      setIsCurrentCorrect(true);
+    }
+  };
+
+  const handleNext = () => {
+    if (currentIndex < items.length - 1) {
+      setCurrentIndex((i) => i + 1);
+    } else {
+      setFinished(true);
     }
   };
 
   if (items.length === 0) {
     return (
-      <div className="p-8 text-center text-muted-foreground">No practice exercises available.</div>
+      <div className="p-8 text-center text-muted-foreground flex-1 flex items-center justify-center">
+        No practice exercises available.
+      </div>
     );
   }
 
   if (finished) {
     return (
-      <div className="p-8 max-w-3xl mx-auto w-full text-center animate-in fade-in zoom-in duration-500">
-        <div className="w-24 h-24 bg-wp-green-light/20 text-wp-green rounded-full flex items-center justify-center mx-auto mb-6">
-          <CheckCircle2 className="w-12 h-12" />
+      <div className="flex-1 flex flex-col items-center justify-center p-8 max-w-3xl mx-auto w-full text-center animate-in fade-in zoom-in duration-500">
+        <div className="w-28 h-28 bg-wp-green-light/20 text-wp-green rounded-full flex items-center justify-center mx-auto mb-8 shadow-sm">
+          <CheckCircle2 className="w-14 h-14" />
         </div>
-        <h2 className="text-3xl font-bold mb-3 text-foreground">Practice Complete!</h2>
-        <p className="text-lg text-muted-foreground">
-          Amazing job! You have finished all exercises in this session.
+        <h2 className="text-4xl font-bold mb-4 text-foreground">Practice Complete!</h2>
+        <p className="text-xl text-muted-foreground mb-8">
+          Amazing job! You have finished all {items.length} exercises in this session.
         </p>
       </div>
     );
   }
 
   const progressPercent = Math.round((completedItems.size / items.length) * 100);
+  const item = items[currentIndex];
+
+  const renderQuestion = () => {
+    if (item.type === "blank") {
+      const parts = item.data.sentence.split(BLANK_TOKEN);
+      const questionNode = (
+        <p>
+          {parts.map((part, i) => (
+            <span key={i}>
+              {part}
+              {i < parts.length - 1 && (
+                <span className="inline-block w-20 border-b-4 border-primary mx-1 translate-y-[2px]" />
+              )}
+            </span>
+          ))}
+        </p>
+      );
+      return (
+        <MultipleChoiceQuiz
+          key={item.id}
+          question={questionNode}
+          options={item.options}
+          correctIndex={item.correctIndex}
+          onComplete={(correct) => handleComplete(item.id, item.answerText, correct)}
+        />
+      );
+    }
+
+    if (item.type === "multipleChoice") {
+      return (
+        <MultipleChoiceQuiz
+          key={item.id}
+          question={item.data.question}
+          options={item.data.options}
+          correctIndex={item.data.correctIndex}
+          onComplete={(correct) => handleComplete(item.id, item.answerText, correct)}
+        />
+      );
+    }
+
+    if (item.type === "rewrite") {
+      const hint = (
+        <div className="flex flex-col gap-2">
+          <span className="text-primary font-bold text-sm uppercase tracking-wider">
+            Rewrite the sentence
+          </span>
+          <p className="text-muted-foreground text-lg">
+            Include the word <span className="font-bold text-foreground">"{item.data.hintWord}"</span> in
+            your answer.
+          </p>
+          <p className="font-medium text-xl mt-3 text-foreground border-s-4 border-primary/30 ps-4">
+            {item.data.sentence}
+          </p>
+        </div>
+      );
+      return (
+        <SentenceBuilder
+          key={item.id}
+          sentence={item.answerText}
+          hint={hint}
+          onComplete={(correct) => handleComplete(item.id, item.data.hintWord, correct)}
+        />
+      );
+    }
+
+    if (item.type === "errorCorrection") {
+      const hint = (
+        <div className="flex flex-col gap-2">
+          <span className="text-primary font-bold text-sm uppercase tracking-wider">
+            Correct the mistake
+          </span>
+          <p className="font-medium text-xl mt-3 text-destructive border-s-4 border-destructive/30 ps-4 line-through decoration-2">
+            {item.data.wrong}
+          </p>
+        </div>
+      );
+      return (
+        <SentenceBuilder
+          key={item.id}
+          sentence={item.answerText}
+          hint={hint}
+          onComplete={(correct) => handleComplete(item.id, item.answerText, correct)}
+        />
+      );
+    }
+
+    return null;
+  };
 
   return (
-    <div className="w-full pb-32 relative">
+    <div className="flex-1 flex flex-col h-full bg-background relative overflow-hidden">
       {/* Sticky Header with Progress Bar */}
-      <div className="sticky top-0 z-20 bg-background/95 backdrop-blur-md pt-4 pb-4 border-b border-border mb-8 shadow-sm">
+      <div className="sticky top-0 z-20 bg-background/95 backdrop-blur-md pt-5 pb-5 border-b border-border shadow-sm shrink-0">
         <div className="max-w-3xl mx-auto px-4 md:px-8">
-          <div className="flex justify-between items-center mb-3">
-            <h2 className="text-xl font-bold tracking-tight">Practice Session</h2>
-            <span className="text-sm font-bold text-primary bg-primary/10 px-3 py-1 rounded-full">
+          <div className="flex justify-between items-center mb-4">
+            <h2 className="text-2xl font-bold tracking-tight">Practice Session</h2>
+            <span className="text-base font-bold text-primary bg-primary/10 px-4 py-1.5 rounded-full">
               {completedItems.size} / {items.length}
             </span>
           </div>
           {/* Progress Bar Track */}
-          <div className="w-full h-3 bg-secondary rounded-full overflow-hidden">
+          <div className="w-full h-4 bg-secondary rounded-full overflow-hidden">
             {/* Progress Bar Fill */}
             <div
-              className="h-full bg-primary transition-all duration-500 ease-out rounded-full"
+              className="h-full bg-primary transition-all duration-700 ease-out rounded-full"
               style={{ width: `${progressPercent}%` }}
               role="progressbar"
               aria-valuenow={progressPercent}
@@ -361,130 +480,25 @@ export function PracticeArea({ materials }: Props) {
         </div>
       </div>
 
-      <div className="max-w-3xl mx-auto px-4 md:px-8 space-y-12">
-        {items.map((item, index) => {
-          const isCompleted = completedItems.has(item.id);
-
-          const renderQuestion = () => {
-            if (item.type === "blank") {
-              const parts = item.data.sentence.split(BLANK_TOKEN);
-              const questionNode = (
-                <p>
-                  {parts.map((part, i) => (
-                    <span key={i}>
-                      {part}
-                      {i < parts.length - 1 && (
-                        <span className="inline-block w-16 border-b-2 border-primary mx-1 translate-y-[2px]" />
-                      )}
-                    </span>
-                  ))}
-                </p>
-              );
-              return (
-                <MultipleChoiceQuiz
-                  question={questionNode}
-                  options={item.options}
-                  correctIndex={item.correctIndex}
-                  onComplete={(correct) => handleComplete(item.id, item.answerText, correct)}
-                />
-              );
-            }
-
-            if (item.type === "multipleChoice") {
-              return (
-                <MultipleChoiceQuiz
-                  question={item.data.question}
-                  options={item.data.options}
-                  correctIndex={item.data.correctIndex}
-                  onComplete={(correct) => handleComplete(item.id, item.answerText, correct)}
-                />
-              );
-            }
-
-            if (item.type === "rewrite") {
-              const hint = (
-                <div className="flex flex-col gap-1">
-                  <span className="text-primary font-bold text-sm uppercase tracking-wider">
-                    Rewrite the sentence
-                  </span>
-                  <p className="text-muted-foreground">
-                    Include the word{" "}
-                    <span className="font-bold text-foreground">"{item.data.hintWord}"</span> in
-                    your answer.
-                  </p>
-                  <p className="font-medium text-lg mt-2 text-foreground border-s-4 border-primary/30 ps-3">
-                    {item.data.sentence}
-                  </p>
-                </div>
-              );
-              return (
-                <SentenceBuilder
-                  sentence={item.answerText}
-                  hint={hint}
-                  onComplete={(correct) => handleComplete(item.id, item.data.hintWord, correct)}
-                />
-              );
-            }
-
-            if (item.type === "errorCorrection") {
-              const hint = (
-                <div className="flex flex-col gap-1">
-                  <span className="text-primary font-bold text-sm uppercase tracking-wider">
-                    Correct the mistake
-                  </span>
-                  <p className="font-medium text-lg mt-2 text-destructive border-s-4 border-destructive/30 ps-3 line-through decoration-2">
-                    {item.data.wrong}
-                  </p>
-                </div>
-              );
-              return (
-                <SentenceBuilder
-                  sentence={item.answerText}
-                  hint={hint}
-                  onComplete={(correct) => handleComplete(item.id, item.answerText, correct)}
-                />
-              );
-            }
-
-            return null;
-          };
-
-          return (
-            <div
-              key={item.id}
-              className={`transition-opacity duration-300 ${isCompleted ? "opacity-50 hover:opacity-100" : "opacity-100"}`}
-            >
-              <div className="flex items-center gap-3 mb-3">
-                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-secondary text-secondary-foreground font-bold text-sm shrink-0">
-                  {index + 1}
-                </span>
-                {isCompleted && (
-                  <span className="text-xs font-bold uppercase tracking-wider text-wp-green flex items-center gap-1">
-                    <CheckCircle2 className="w-4 h-4" /> Completed
-                  </span>
-                )}
-              </div>
-              {renderQuestion()}
-            </div>
-          );
-        })}
-
-        <div className="pt-8 text-center border-t border-border mt-16">
-          <button
-            onClick={() => setFinished(true)}
-            disabled={completedItems.size < items.length}
-            className="w-full sm:w-auto px-12 py-4 bg-primary text-primary-foreground font-bold text-lg rounded-xl hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 transition-all disabled:opacity-50 disabled:cursor-not-allowed group flex items-center justify-center gap-2 mx-auto"
-          >
-            Complete Session
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
-          {completedItems.size < items.length && (
-            <p className="text-sm text-muted-foreground mt-3 font-medium">
-              Complete {items.length - completedItems.size} more{" "}
-              {items.length - completedItems.size === 1 ? "question" : "questions"} to finish.
-            </p>
-          )}
+      <div className="flex-1 overflow-y-auto px-4 py-8 md:py-12 relative flex justify-center pb-40">
+        <div className="max-w-3xl w-full mx-auto animate-in fade-in slide-in-from-bottom-8 duration-500 fill-mode-forwards" key={currentIndex}>
+          {renderQuestion()}
         </div>
+      </div>
+
+      {/* Floating Action Bar - appears when correct */}
+      <div
+        className={`absolute bottom-0 inset-x-0 p-6 bg-background/80 backdrop-blur-xl border-t border-border shadow-[0_-10px_40px_rgba(0,0,0,0.1)] transition-transform duration-500 flex justify-center ${
+          isCurrentCorrect ? "translate-y-0" : "translate-y-full"
+        }`}
+      >
+        <button
+          onClick={handleNext}
+          className="w-full max-w-3xl py-4 bg-wp-green text-white rounded-xl font-bold text-xl hover:bg-wp-green/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-wp-green/30 transition-all active:scale-[0.98] flex items-center justify-center gap-3 min-h-[44px]"
+        >
+          {currentIndex < items.length - 1 ? "Continue" : "Finish Practice"}
+          <ArrowRight className="w-6 h-6" />
+        </button>
       </div>
     </div>
   );

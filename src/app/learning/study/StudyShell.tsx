@@ -87,32 +87,45 @@ export function StudyShell({ unitId, unit, materials, dispatch }: Props) {
         />
       ) : (
         <div className="flex flex-col h-full lg:flex-row">
-          {/* Desktop Sidebar placeholder */}
-          <div className="hidden lg:flex flex-col w-64 border-e p-4 shrink-0 overflow-y-auto">
+          {/* Desktop Sidebar */}
+          <div className="hidden lg:flex flex-col w-72 border-e bg-muted/10 p-5 shrink-0 overflow-y-auto">
             <button
               onClick={handleBackToHome}
-              className="mb-6 text-sm font-medium hover:underline text-start min-h-[44px]"
+              className="mb-8 text-sm font-bold flex items-center gap-2 hover:text-primary transition-colors min-h-[44px]"
             >
-              ← {unit.name}
+              &larr; {unit.name}
             </button>
-            <div className="text-sm font-bold text-muted-foreground mb-4 tracking-wider uppercase">
-              {currentArea}
-            </div>
-            {nodes
-              .filter((n) => n.area === currentArea)
-              .map((node) => (
-                <button
-                  key={node.id}
-                  onClick={() => handleNodeSelect(node.id)}
-                  className={`text-start py-2 px-3 rounded-md mb-1 text-sm min-h-[44px] ${
-                    currentNodeId === node.id
-                      ? "bg-primary/10 text-primary font-medium"
-                      : "hover:bg-muted"
-                  }`}
-                >
-                  {node.title}
-                </button>
-              ))}
+            
+            {(["learn", "use", "practice", "reference"] as StudyArea[]).map((area) => {
+              const areaNodes = nodes.filter((n) => n.area === area);
+              if (areaNodes.length === 0) return null;
+              
+              return (
+                <div key={area} className="mb-6">
+                  <div className="text-xs font-black text-muted-foreground mb-3 tracking-widest uppercase ps-2">
+                    {area}
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    {areaNodes.map((node) => {
+                      const isActive = currentNodeId === node.id;
+                      return (
+                        <button
+                          key={node.id}
+                          onClick={() => handleNodeSelect(node.id)}
+                          className={`text-start py-2.5 px-3 rounded-xl text-sm font-medium transition-colors min-h-[44px] ${
+                            isActive
+                              ? "bg-primary/10 text-primary font-bold shadow-sm"
+                              : "text-foreground/70 hover:bg-secondary hover:text-foreground"
+                          }`}
+                        >
+                          {node.title}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
           {/* Mobile Header */}
