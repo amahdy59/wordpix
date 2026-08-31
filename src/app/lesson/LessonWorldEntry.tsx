@@ -188,7 +188,14 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
           {hasLearningMaterials(world.id) && (
             <button
               type="button"
-              onClick={() => dispatch({ type: "GO", to: "learning-materials", unitId: world.id })}
+              onClick={() =>
+                dispatch({
+                  type: "GO",
+                  to: "learning-materials",
+                  unitId: world.id,
+                  area: "learn",
+                })
+              }
               className="group cursor-pointer min-h-[60px] mt-3 w-full relative overflow-hidden rounded-2xl border-2 border-border bg-wp-card p-4 text-start transition-all duration-300 hover:border-primary/50 hover:-translate-y-1 active:translate-y-0 active:scale-[0.98] shadow-sm hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary flex flex-col sm:flex-row sm:items-center justify-between gap-4"
             >
               <div className="flex items-start sm:items-center gap-4">

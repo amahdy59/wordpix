@@ -25,6 +25,8 @@ interface Props {
   materials: UnitLearningMaterials;
   progress: UnitStudyProgress;
   onProgressUpdate: (p: UnitStudyProgress) => void;
+  nodeId: string;
+  onNextActivity: () => void;
 }
 
 type PracticeItem =
@@ -339,7 +341,13 @@ function MultipleChoiceQuiz({
   );
 }
 
-export function PracticeArea({ materials, progress, onProgressUpdate }: Props) {
+export function PracticeArea({
+  materials,
+  progress,
+  onProgressUpdate,
+  nodeId,
+  onNextActivity,
+}: Props) {
   const vocab = useMemo(() => loadedUnitVocabulary(materials.unitId), [materials.unitId]);
 
   // Deterministic seed derived from unit ID
@@ -403,7 +411,9 @@ export function PracticeArea({ materials, progress, onProgressUpdate }: Props) {
     return stableShuffle(list, 42);
   }, [materials, vocab]);
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(() =>
+    Math.min(progress.nodePositions?.[nodeId] ?? 0, Math.max(items.length - 1, 0))
+  );
   const [firstTryCorrectCount, setFirstTryCorrectCount] = useState(0);
   const [isCurrentAnswered, setIsCurrentAnswered] = useState(false);
   const [reviewAddedWords, setReviewAddedWords] = useState<string[]>([]);
@@ -434,9 +444,21 @@ export function PracticeArea({ materials, progress, onProgressUpdate }: Props) {
 
   const handleNext = () => {
     if (currentIndex < items.length - 1) {
-      setCurrentIndex((i) => i + 1);
+      const nextIndex = currentIndex + 1;
+      setCurrentIndex(nextIndex);
+      onProgressUpdate({
+        ...progress,
+        nodePositions: { ...progress.nodePositions, [nodeId]: nextIndex },
+      });
       setIsCurrentAnswered(false);
     } else {
+      onProgressUpdate({
+        ...progress,
+        completedNodeIds: progress.completedNodeIds.includes(nodeId)
+          ? progress.completedNodeIds
+          : [...progress.completedNodeIds, nodeId],
+        nodePositions: { ...progress.nodePositions, [nodeId]: 0 },
+      });
       setFinished(true);
     }
   };
@@ -492,13 +514,19 @@ export function PracticeArea({ materials, progress, onProgressUpdate }: Props) {
           </div>
         )}
 
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-3">
           <button
             onClick={handleRestart}
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-bold rounded-full hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm min-h-[44px]"
           >
             <RotateCcw className="size-4" aria-hidden />
             Practice Again
+          </button>
+          <button
+            onClick={onNextActivity}
+            className="inline-flex items-center gap-2 px-6 py-3 border border-primary text-primary font-bold rounded-full hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+          >
+            Continue to Review
           </button>
         </div>
       </div>

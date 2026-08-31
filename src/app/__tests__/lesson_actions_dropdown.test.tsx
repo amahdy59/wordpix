@@ -93,4 +93,22 @@ describe("Lesson Actions Dropdown & Navigation", () => {
     fireEvent.keyDown(document, { key: "Escape" });
     expect(trigger).toHaveAttribute("aria-expanded", "false");
   });
+
+  it("opens the first study activity directly from the unit entry", () => {
+    const dispatch = vi.fn();
+    render(
+      <I18nProvider>
+        <LessonWorldEntry unitId="bedroom" dispatch={dispatch} />
+      </I18nProvider>
+    );
+
+    fireEvent.click(screen.getByRole("button", { name: /study materials/i }));
+
+    expect(dispatch).toHaveBeenCalledWith({
+      type: "GO",
+      to: "learning-materials",
+      unitId: "bedroom",
+      area: "learn",
+    });
+  });
 });

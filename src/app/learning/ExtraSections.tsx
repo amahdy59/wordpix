@@ -299,21 +299,29 @@ export function SelfAssessmentSection({
   materials,
   progress,
   onProgressUpdate,
+  completionNodeId,
 }: {
   materials: UnitLearningMaterials;
   progress?: UnitStudyProgress;
   onProgressUpdate?: (p: UnitStudyProgress) => void;
+  completionNodeId?: string;
 }) {
   if (!materials.selfAssessment) return null;
 
   const handleScore = (itemId: string, score: number) => {
     if (!progress || !onProgressUpdate) return;
+    const selfAssessment = {
+      ...(progress.selfAssessment || {}),
+      [itemId]: score,
+    };
+    const completedNodeIds =
+      completionNodeId && Object.keys(selfAssessment).length >= materials.selfAssessment!.length
+        ? Array.from(new Set([...progress.completedNodeIds, completionNodeId]))
+        : progress.completedNodeIds;
     onProgressUpdate({
       ...progress,
-      selfAssessment: {
-        ...(progress.selfAssessment || {}),
-        [itemId]: score,
-      },
+      selfAssessment,
+      completedNodeIds,
     });
   };
 
@@ -350,21 +358,25 @@ export function SelfAssessmentSection({
                 {[1, 2, 3].map((score) => {
                   const isSelected = currentScore === score;
                   return (
-                    <button
+                    <label
                       key={score}
-                      type="button"
-                      role="radio"
-                      aria-checked={isSelected}
-                      aria-label={`${score} of 3: ${confidenceLabels[score - 1]}`}
-                      onClick={() => handleScore(itemId, score)}
-                      className={`min-h-[44px] w-[44px] rounded-full border text-xs font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+                      className={`relative flex min-h-[44px] w-[44px] cursor-pointer items-center justify-center rounded-full border text-xs font-bold transition-all focus-within:outline-none focus-within:ring-2 focus-within:ring-primary ${
                         isSelected
                           ? "bg-primary text-primary-foreground border-primary shadow-sm scale-105"
                           : "border-border text-muted-foreground hover:bg-secondary hover:text-foreground hover:border-primary/50 active:scale-95"
                       }`}
                     >
+                      <input
+                        className="sr-only"
+                        type="radio"
+                        name={`confidence-${itemId}`}
+                        value={score}
+                        checked={isSelected}
+                        aria-label={`${score} of 3: ${confidenceLabels[score - 1]}`}
+                        onChange={() => handleScore(itemId, score)}
+                      />
                       {score}
-                    </button>
+                    </label>
                   );
                 })}
               </div>

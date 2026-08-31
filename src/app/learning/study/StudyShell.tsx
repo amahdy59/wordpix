@@ -25,6 +25,8 @@ import type { Action } from "../../types";
 import { WordInspectorModal } from "../../shared/WordInspectorModal";
 import type { VocabularyItem } from "../../data/lessons";
 
+const STUDY_AREAS: StudyArea[] = ["learn", "use", "practice", "review", "reference"];
+
 interface Props {
   unitId: string;
   unit: CourseUnit;
@@ -47,12 +49,22 @@ export function StudyShell({
   // The curriculum adapter
   const nodes = generateCurriculum(materials);
 
-  // Navigation state driven by URL
-  const currentArea = (initialArea as StudyArea | undefined) || "home";
-  const currentNodeId = initialNodeId || null;
+  // Navigation state is URL-driven. Area-only links intentionally open the
+  // first activity, keeping the unit entry-to-learning path to one click.
+  const requestedArea = STUDY_AREAS.includes(initialArea as StudyArea)
+    ? (initialArea as StudyArea)
+    : undefined;
+  const requestedNode = nodes.find(
+    (node) => node.id === initialNodeId && (!requestedArea || node.area === requestedArea)
+  );
+  const activeNode =
+    requestedNode ??
+    (requestedArea ? nodes.find((node) => node.area === requestedArea) : undefined);
+  const currentArea: StudyArea | "home" = activeNode?.area ?? "home";
+  const currentNodeId = activeNode?.id ?? null;
 
   const [expandedAreas, setExpandedAreas] = useState<Set<StudyArea>>(
-    () => new Set<StudyArea>(["learn", "use", "practice", "reference"])
+    () => new Set<StudyArea>(currentArea === "home" ? ["learn"] : [currentArea])
   );
 
   // Vocabulary inspector
@@ -79,6 +91,15 @@ export function StudyShell({
       focusRef.current.focus({ preventScroll: true });
     }
   }, [currentNodeId]);
+
+  useEffect(() => {
+    if (!isMobileDrawerOpen) return;
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") closeDrawer();
+    };
+    window.addEventListener("keydown", handleEscape);
+    return () => window.removeEventListener("keydown", handleEscape);
+  }, [isMobileDrawerOpen]);
 
   const handleContinue = () => {
     // 1. Resume last unfinished
@@ -122,6 +143,23 @@ export function StudyShell({
       setProgress((prev) => ({ ...prev, lastNodeId: node.id }));
       setIsMobileDrawerOpen(false);
     }
+  };
+
+  const completeNode = (nodeId: string) => {
+    setProgress((current) =>
+      current.completedNodeIds.includes(nodeId)
+        ? current
+        : { ...current, completedNodeIds: [...current.completedNodeIds, nodeId] }
+    );
+  };
+
+  const handleNextActivity = () => {
+    if (!activeNode) return;
+    completeNode(activeNode.id);
+    const activeIndex = nodes.findIndex((node) => node.id === activeNode.id);
+    const nextNode = nodes.slice(activeIndex + 1).find((node) => node.area !== "reference");
+    if (nextNode) handleNodeSelect(nextNode.id);
+    else handleBackToHome();
   };
 
   const handleBackToHome = () => {
@@ -181,8 +219,6 @@ export function StudyShell({
       review: { label: "Review", description: "Check your confidence", icon: Check },
       reference: { label: "Reference", description: "Browse language details", icon: LibraryBig },
     };
-
-  const activeNode = nodes.find((n) => n.id === currentNodeId);
 
   return (
     <div className="flex flex-col h-full bg-background text-foreground">
@@ -245,10 +281,10 @@ export function StudyShell({
             </div>
 
             <nav className="space-y-3 p-4">
-              {(["learn", "use", "practice", "review", "reference"] as StudyArea[]).map((area) => {
+              {STUDY_AREAS.map((area) => {
                 const areaNodes = nodes.filter((n) => n.area === area);
                 if (areaNodes.length === 0) return null;
-                const expanded = expandedAreas.has(area);
+                const expanded = expandedAreas.has(area) || currentArea === area;
                 const progressValue = areaProgress(area);
                 const AreaIcon = areaMeta[area].icon;
 
@@ -281,7 +317,14 @@ export function StudyShell({
                             {areaMeta[area].description}
                           </span>
                           {area !== "reference" && (
-                            <span className="mt-2 block h-1.5 overflow-hidden rounded-full bg-secondary">
+                            <span
+                              className="mt-2 block h-1.5 overflow-hidden rounded-full bg-secondary"
+                              role="progressbar"
+                              aria-label={`${areaMeta[area].label} progress`}
+                              aria-valuenow={progressValue}
+                              aria-valuemin={0}
+                              aria-valuemax={100}
+                            >
                               <span
                                 className="block h-full rounded-full bg-primary"
                                 style={{ width: `${progressValue}%` }}
@@ -358,9 +401,9 @@ export function StudyShell({
               <div className="truncate text-xs font-bold uppercase tracking-wider text-muted-foreground">
                 {unit.name} / {areaMeta[currentArea].label}
               </div>
-              <div className="truncate text-sm font-bold text-foreground">
+              <h1 className="truncate text-sm font-bold text-foreground">
                 {activeNode?.title || areaMeta[currentArea].description}
-              </div>
+              </h1>
             </div>
             <button
               ref={contentsBtnRef}
@@ -395,10 +438,12 @@ export function StudyShell({
             </header>
             {currentArea === "learn" && activeNode && (
               <LearnArea
+                key={activeNode.id}
                 node={activeNode}
                 materials={materials}
                 progress={progress}
                 onProgressUpdate={setProgress}
+                onNextActivity={handleNextActivity}
               />
             )}
             {currentArea === "use" && (
@@ -409,6 +454,8 @@ export function StudyShell({
                 allNodes={nodes.filter((n) => n.area === "use")}
                 unitId={unitId}
                 onInspectWord={setInspectedWord}
+                onCompleteNode={completeNode}
+                onNextActivity={handleNextActivity}
               />
             )}
             {currentArea === "practice" && (
@@ -416,6 +463,8 @@ export function StudyShell({
                 materials={materials}
                 progress={progress}
                 onProgressUpdate={setProgress}
+                nodeId={activeNode?.id ?? "practice-session"}
+                onNextActivity={handleNextActivity}
               />
             )}
             {currentArea === "review" && (

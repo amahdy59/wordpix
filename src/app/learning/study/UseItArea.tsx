@@ -25,6 +25,8 @@ interface Props {
   allNodes: StudyNode[];
   unitId: string;
   onInspectWord: (word: VocabularyItem) => void;
+  onCompleteNode: (nodeId: string) => void;
+  onNextActivity: () => void;
 }
 
 const USE_GOALS: Record<string, { goal: string; icon: typeof BookOpen }> = {
@@ -57,6 +59,8 @@ export function UseItArea({
   allNodes,
   unitId,
   onInspectWord,
+  onCompleteNode,
+  onNextActivity,
 }: Props) {
   if (!node) {
     return (
@@ -147,14 +151,23 @@ export function UseItArea({
 
         {nextNode ? (
           <button
-            onClick={() => onSelectNode(nextNode.id)}
+            onClick={() => {
+              onCompleteNode(node.id);
+              onSelectNode(nextNode.id);
+            }}
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-primary-foreground text-sm font-bold hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm min-h-[44px]"
           >
             <span>{nextNode.title}</span>
             <ArrowRight className="size-4" aria-hidden />
           </button>
         ) : (
-          <div />
+          <button
+            onClick={onNextActivity}
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-primary-foreground text-sm font-bold hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm min-h-[44px]"
+          >
+            <span>Continue to next activity</span>
+            <ArrowRight className="size-4" aria-hidden />
+          </button>
         )}
       </div>
     </div>

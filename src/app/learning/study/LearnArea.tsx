@@ -10,15 +10,18 @@ interface Props {
   materials: UnitLearningMaterials;
   progress?: UnitStudyProgress;
   onProgressUpdate: (update: React.SetStateAction<UnitStudyProgress>) => void;
+  onNextActivity: () => void;
 }
 
-export function LearnArea({ node, materials, onProgressUpdate }: Props) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+export function LearnArea({ node, materials, progress, onProgressUpdate, onNextActivity }: Props) {
+  const words = getWords(node.wordIds || [], materials.unitId);
+  const [currentIndex, setCurrentIndex] = useState(() =>
+    Math.min(progress?.nodePositions?.[node.id] ?? 0, Math.max(words.length - 1, 0))
+  );
   const [isRevealed, setIsRevealed] = useState(false);
   const [needsPracticeCount, setNeedsPracticeCount] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
 
-  const words = getWords(node.wordIds || [], materials.unitId);
   const wordMetaMap = Object.fromEntries((materials.wordMeta || []).map((m) => [m.word, m]));
 
   if (words.length === 0) {
@@ -35,7 +38,12 @@ export function LearnArea({ node, materials, onProgressUpdate }: Props) {
 
   const advanceCard = () => {
     if (!isLast) {
-      setCurrentIndex((prev) => prev + 1);
+      const next = currentIndex + 1;
+      setCurrentIndex(next);
+      onProgressUpdate((current) => ({
+        ...current,
+        nodePositions: { ...current.nodePositions, [node.id]: next },
+      }));
       setIsRevealed(false);
     } else {
       setIsComplete(true);
@@ -44,6 +52,7 @@ export function LearnArea({ node, materials, onProgressUpdate }: Props) {
           return {
             ...prev,
             completedNodeIds: [...prev.completedNodeIds, node.id],
+            nodePositions: { ...prev.nodePositions, [node.id]: 0 },
           };
         }
         return prev;
@@ -91,6 +100,10 @@ export function LearnArea({ node, materials, onProgressUpdate }: Props) {
     setIsRevealed(false);
     setIsComplete(false);
     setNeedsPracticeCount(0);
+    onProgressUpdate((current) => ({
+      ...current,
+      nodePositions: { ...current.nodePositions, [node.id]: 0 },
+    }));
   };
 
   if (isComplete) {
@@ -108,13 +121,19 @@ export function LearnArea({ node, materials, onProgressUpdate }: Props) {
             : `Fantastic! You recalled all ${words.length} words with confidence.`}
         </p>
 
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-3">
           <button
             onClick={handleRestart}
             className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-full font-bold text-sm hover:bg-secondary transition-colors min-h-[44px]"
           >
             <RotateCcw className="size-4" aria-hidden />
             Review Again
+          </button>
+          <button
+            onClick={onNextActivity}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-bold text-sm hover:bg-primary/90 transition-colors min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+          >
+            Continue to next activity
           </button>
         </div>
       </div>
@@ -179,8 +198,13 @@ export function LearnArea({ node, materials, onProgressUpdate }: Props) {
             <button
               onClick={() => {
                 if (currentIndex > 0) {
-                  setCurrentIndex((i) => i - 1);
+                  const previous = currentIndex - 1;
+                  setCurrentIndex(previous);
                   setIsRevealed(false);
+                  onProgressUpdate((current) => ({
+                    ...current,
+                    nodePositions: { ...current.nodePositions, [node.id]: previous },
+                  }));
                 }
               }}
               disabled={currentIndex === 0}

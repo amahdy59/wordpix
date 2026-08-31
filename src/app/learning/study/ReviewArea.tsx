@@ -1,8 +1,8 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import type { UnitLearningMaterials } from "../types";
 import { clearReviewWord } from "./progress";
 import { loadedUnitVocabulary } from "../../data/vocabulary";
-import { CheckCircle2, Trophy, RotateCcw, Sparkles } from "lucide-react";
+import { CheckCircle2, Trophy, RotateCcw, Sparkles, Eye } from "lucide-react";
 import { SelfAssessmentSection } from "../ExtraSections";
 import { WordImage } from "../../shared/WordImage";
 import type { UnitStudyProgress } from "./types";
@@ -18,6 +18,7 @@ interface Props {
 export function ReviewArea({ materials, progress, onProgressUpdate }: Props) {
   const vocab = useMemo(() => loadedUnitVocabulary(materials.unitId), [materials.unitId]);
   const { speak, stop } = useAudio({ lang: "en-US", rate: 0.9 });
+  const [revealedWordIds, setRevealedWordIds] = useState<Set<string>>(new Set());
 
   const weakWords = useMemo(() => {
     return progress.reviewWordIds.map((id) => vocab.find((v) => v.id === id)).filter(Boolean);
@@ -27,10 +28,12 @@ export function ReviewArea({ materials, progress, onProgressUpdate }: Props) {
     onProgressUpdate(clearReviewWord(progress, wordId));
   }
 
-  function handleClearAll() {
-    onProgressUpdate({
-      ...progress,
-      reviewWordIds: [],
+  function toggleReveal(wordId: string, revealed: boolean) {
+    setRevealedWordIds((current) => {
+      const next = new Set(current);
+      if (revealed) next.add(wordId);
+      else next.delete(wordId);
+      return next;
     });
   }
 
@@ -61,7 +64,7 @@ export function ReviewArea({ materials, progress, onProgressUpdate }: Props) {
           aria-labelledby="weak-words-heading"
           className="rounded-2xl border border-border p-6 bg-card shadow-sm"
         >
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+          <div className="mb-6">
             <div>
               <h3
                 id="weak-words-heading"
@@ -71,75 +74,92 @@ export function ReviewArea({ materials, progress, onProgressUpdate }: Props) {
                 Due for Review ({weakWords.length})
               </h3>
               <p className="text-xs text-muted-foreground mt-0.5">
-                Review these terms with audio and mark them as learned once you can recall them
-                reliably.
+                Use the image as a prompt, recall the English word, then reveal the answer. Remove
+                it only when you remembered it before revealing.
               </p>
             </div>
-            <button
-              onClick={handleClearAll}
-              className="text-xs font-bold text-muted-foreground hover:text-foreground px-3 py-2 rounded-xl border border-border hover:bg-secondary transition-colors self-start sm:self-auto min-h-[44px]"
-            >
-              Clear All
-            </button>
           </div>
 
           <ul className="space-y-3">
-            {weakWords.map((word) => (
-              <li
-                key={word!.id}
-                className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 border border-border rounded-xl bg-background hover:border-primary/40 transition-colors"
-              >
-                <div className="flex items-center gap-4 min-w-0">
-                  {word!.img && (
-                    <div className="size-14 rounded-xl bg-secondary/30 border border-border/50 p-1 shrink-0 flex items-center justify-center overflow-hidden">
-                      <WordImage
-                        word={word!}
-                        className="size-full object-contain"
-                        sizePreset="thumb"
-                        altMode="decorative"
-                      />
-                    </div>
-                  )}
-                  <div className="min-w-0">
-                    <div className="flex items-center gap-2">
-                      <p className="font-bold text-base text-foreground truncate">{word!.label}</p>
-                      <button
-                        onClick={() => {
-                          stop();
-                          speak(word!.label);
-                        }}
-                        className="size-7 rounded-full bg-secondary text-primary inline-flex items-center justify-center hover:bg-primary/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shrink-0"
-                        aria-label={`Listen to ${word!.label}`}
-                      >
-                        <Volume2 className="size-3.5" aria-hidden />
-                      </button>
-                    </div>
-                    {word!.phonetic && (
-                      <p className="text-xs text-muted-foreground font-mono mt-0.5">
-                        {word!.phonetic}
-                      </p>
+            {weakWords.map((word) => {
+              const revealed = revealedWordIds.has(word!.id);
+              return (
+                <li
+                  key={word!.id}
+                  className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 border border-border rounded-xl bg-background hover:border-primary/40 transition-colors"
+                >
+                  <div className="flex items-center gap-4 min-w-0">
+                    {word!.img && (
+                      <div className="size-14 rounded-xl bg-secondary/30 border border-border/50 p-1 shrink-0 flex items-center justify-center overflow-hidden">
+                        <WordImage
+                          word={word!}
+                          className="size-full object-contain"
+                          sizePreset="thumb"
+                          altMode="decorative"
+                        />
+                      </div>
                     )}
-                    {word!.description && (
-                      <p className="text-xs text-muted-foreground line-clamp-1 mt-1">
-                        {word!.description}
-                      </p>
+                    <div className="min-w-0">
+                      {revealed ? (
+                        <div className="flex items-center gap-2">
+                          <p className="font-bold text-base text-foreground truncate">
+                            {word!.label}
+                          </p>
+                          <button
+                            onClick={() => {
+                              stop();
+                              speak(word!.label);
+                            }}
+                            className="size-11 rounded-full bg-secondary text-primary inline-flex items-center justify-center hover:bg-primary/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shrink-0"
+                            aria-label={`Listen to ${word!.label}`}
+                          >
+                            <Volume2 className="size-3.5" aria-hidden />
+                          </button>
+                        </div>
+                      ) : (
+                        <p className="font-bold text-sm text-foreground">Recall the English word</p>
+                      )}
+                      {revealed && word!.phonetic && (
+                        <p className="text-xs text-muted-foreground font-mono mt-0.5">
+                          {word!.phonetic}
+                        </p>
+                      )}
+                      {revealed && word!.description && (
+                        <p className="text-xs text-muted-foreground line-clamp-1 mt-1">
+                          {word!.description}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap items-center justify-end gap-2 shrink-0 self-end sm:self-center">
+                    {!revealed ? (
+                      <button
+                        onClick={() => toggleReveal(word!.id, true)}
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-primary-foreground font-bold text-xs hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                      >
+                        <Eye className="size-4" aria-hidden /> Reveal answer
+                      </button>
+                    ) : (
+                      <>
+                        <button
+                          onClick={() => toggleReveal(word!.id, false)}
+                          className="px-4 py-2 rounded-full border border-border text-foreground font-bold text-xs hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                        >
+                          Keep practicing
+                        </button>
+                        <button
+                          onClick={() => handleClearWord(word!.id)}
+                          className="px-4 py-2 rounded-full border border-primary text-primary font-bold text-xs hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                        >
+                          I remembered it
+                        </button>
+                      </>
                     )}
                   </div>
-                </div>
-
-                <div className="flex items-center gap-3 shrink-0 self-end sm:self-center">
-                  <span className="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-wp-amber/10 text-wp-amber border border-wp-amber/20">
-                    Needs practice
-                  </span>
-                  <button
-                    onClick={() => handleClearWord(word!.id)}
-                    className="px-4 py-2 rounded-full border border-primary text-primary font-bold text-xs hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
-                  >
-                    Mark as Learned
-                  </button>
-                </div>
-              </li>
-            ))}
+                </li>
+              );
+            })}
           </ul>
         </section>
       ) : (
@@ -171,6 +191,7 @@ export function ReviewArea({ materials, progress, onProgressUpdate }: Props) {
         materials={materials}
         progress={progress}
         onProgressUpdate={onProgressUpdate}
+        completionNodeId="review-assessment"
       />
     </div>
   );

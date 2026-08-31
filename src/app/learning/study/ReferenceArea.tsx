@@ -62,7 +62,7 @@ export function ReferenceArea({ materials }: Props) {
             <p className="text-xs font-black uppercase tracking-[0.18em] text-primary">
               Language toolkit
             </p>
-            <h1 className="mt-1 text-2xl font-black tracking-tight md:text-3xl">Reference</h1>
+            <h2 className="mt-1 text-2xl font-black tracking-tight md:text-3xl">Reference</h2>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground md:text-base">
               Browse the details you need without losing your place. Expand one section at a time,
               or keep several open while comparing language patterns.
@@ -78,20 +78,22 @@ export function ReferenceArea({ materials }: Props) {
             className="group overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
             open={section.open}
           >
-            <summary className="flex min-h-[64px] cursor-pointer list-none items-center gap-4 px-4 py-3 hover:bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring md:px-5 [&::-webkit-details-marker]:hidden">
-              <span className="min-w-0 flex-1">
-                <span className="block font-bold">{section.title}</span>
-                <span className="mt-0.5 block text-sm text-muted-foreground">
-                  {section.description}
+            <summary className="min-h-[64px] cursor-pointer list-none px-4 py-3 hover:bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring md:px-5 [&::-webkit-details-marker]:hidden">
+              <h3 className="flex items-center gap-4">
+                <span className="min-w-0 flex-1">
+                  <span className="block font-bold">{section.title}</span>
+                  <span className="mt-0.5 block text-sm font-normal text-muted-foreground">
+                    {section.description}
+                  </span>
                 </span>
-              </span>
-              <ChevronDown
-                aria-hidden
-                className="shrink-0 text-muted-foreground transition-transform group-open:rotate-180"
-                size={20}
-              />
+                <ChevronDown
+                  aria-hidden
+                  className="shrink-0 text-muted-foreground transition-transform group-open:rotate-180"
+                  size={20}
+                />
+              </h3>
             </summary>
-            <div className="border-t border-border bg-background/40 p-3 md:p-5">
+            <div className="border-t border-border bg-background/40 p-3 md:p-5 [&>section]:rounded-none [&>section]:border-0 [&>section]:bg-transparent [&>section]:p-0 [&>section]:shadow-none">
               {section.content}
             </div>
           </details>

@@ -23,6 +23,17 @@ describe("LearningMaterialsScreen", () => {
     expect(screen.getByRole("button", { name: /Continue/i })).toBeInTheDocument();
   });
 
+  it("opens an area-only study link on its first activity", async () => {
+    render(<LearningMaterialsScreen unitId="bathroom" area="learn" dispatch={vi.fn()} />);
+
+    await waitFor(() =>
+      expect(
+        screen.getByRole("heading", { level: 2, name: /Essential words/i })
+      ).toBeInTheDocument()
+    );
+    expect(screen.queryByText(/Your Study Path/i)).not.toBeInTheDocument();
+  });
+
   it("filters phrases down to phrasal verbs without losing the idioms", async () => {
     const user = userEvent.setup();
     const materials = (await loadLearningMaterials("bedroom"))!;

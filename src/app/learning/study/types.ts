@@ -32,6 +32,7 @@ export interface UnitStudyProgress {
   completedNodeIds: string[];
   wordStatus: Record<string, StudyWordStatus>;
   reviewWordIds: string[];
+  nodePositions?: Record<string, number>;
   selfAssessment?: Record<string, number>;
   updatedAt: string;
 }

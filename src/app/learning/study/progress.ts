@@ -32,8 +32,7 @@ export function saveStudyProgress(progress: UnitStudyProgress) {
     const raw = localStorage.getItem(STORAGE_KEY);
     const data = raw ? JSON.parse(raw) : {};
 
-    progress.updatedAt = new Date().toISOString();
-    data[progress.unitId] = progress;
+    data[progress.unitId] = { ...progress, updatedAt: new Date().toISOString() };
 
     localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
   } catch (e) {
@@ -68,5 +67,6 @@ export function recordWordPractice(
 export function clearReviewWord(progress: UnitStudyProgress, wordId: string): UnitStudyProgress {
   const newProgress = { ...progress };
   newProgress.reviewWordIds = newProgress.reviewWordIds.filter((id) => id !== wordId);
+  newProgress.wordStatus = { ...newProgress.wordStatus, [wordId]: "comfortable" };
   return newProgress;
 }

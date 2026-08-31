@@ -770,7 +770,7 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
                           stop();
                           speak(entry.word);
                         }}
-                        className="size-7 rounded-full bg-secondary text-primary inline-flex items-center justify-center hover:bg-primary/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                        className="size-11 rounded-full bg-secondary text-primary inline-flex items-center justify-center hover:bg-primary/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                         aria-label={`Pronounce ${entry.word}`}
                       >
                         <Volume2 className="size-3.5" aria-hidden />
