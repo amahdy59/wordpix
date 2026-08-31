@@ -64,11 +64,19 @@ export function UseItArea({
 }: Props) {
   if (!node) {
     return (
-      <div className="p-8 max-w-3xl mx-auto w-full">
-        <h2 className="text-2xl font-bold mb-2">Use It</h2>
-        <p className="text-muted-foreground mb-6">
-          Apply your vocabulary across authentic reading, conversation, and usage scenarios.
-        </p>
+      <div className="p-4 sm:p-6 md:p-8 max-w-4xl mx-auto w-full space-y-6">
+        <div>
+          <span className="text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full inline-block">
+            Use in Context
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mt-2">
+            Apply in Everyday Situations
+          </h2>
+          <p className="text-sm sm:text-base text-muted-foreground mt-1.5 leading-relaxed max-w-2xl">
+            Explore authentic reading passages, spoken dialogues, idioms, common mistakes, and
+            cultural insights.
+          </p>
+        </div>
         <div className="grid gap-4 sm:grid-cols-2">
           {allNodes.map((n) => {
             const meta = USE_GOALS[n.type] || USE_GOALS.reading;
@@ -77,15 +85,17 @@ export function UseItArea({
               <button
                 key={n.id}
                 onClick={() => onSelectNode(n.id)}
-                className="w-full text-start p-5 rounded-2xl border border-border bg-card hover:bg-secondary/40 transition-all hover:border-primary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm"
+                className="w-full text-start p-5 sm:p-6 rounded-3xl border border-border bg-card hover:bg-secondary/40 transition-all hover:border-primary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs group"
               >
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="p-2 rounded-xl bg-primary/10 text-primary">
+                <div className="flex items-center gap-3.5 mb-3">
+                  <span className="p-3 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                     <Icon className="size-5" aria-hidden />
                   </span>
                   <h3 className="font-bold text-lg text-foreground">{n.title}</h3>
                 </div>
-                <p className="text-xs text-muted-foreground line-clamp-2">{meta.goal}</p>
+                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
+                  {meta.goal}
+                </p>
               </button>
             );
           })}
@@ -101,25 +111,29 @@ export function UseItArea({
   const Icon = meta.icon;
 
   return (
-    <div className="max-w-3xl mx-auto w-full p-4 md:p-8 space-y-8">
+    <div className="max-w-4xl mx-auto w-full p-4 sm:p-6 md:p-8 space-y-8">
       {/* Activity Header with Learning Goal */}
-      <div className="border-b border-border pb-6">
-        <div className="flex items-center gap-3 mb-2">
-          <span className="p-2 rounded-xl bg-primary/10 text-primary shrink-0">
+      <div className="border-b border-border/70 pb-5">
+        <div className="flex items-center gap-3.5 mb-2">
+          <span className="p-3 rounded-2xl bg-primary/10 text-primary shrink-0 shadow-2xs">
             <Icon className="size-6" aria-hidden />
           </span>
-          <div>
+          <div className="min-w-0">
             <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
               Use in Context · {currentIndex + 1} of {allNodes.length}
             </span>
-            <h2 className="text-2xl font-bold text-foreground">{node.title}</h2>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground truncate">
+              {node.title}
+            </h2>
           </div>
         </div>
-        <p className="text-sm text-muted-foreground mt-2 max-w-2xl leading-relaxed">{meta.goal}</p>
+        <p className="text-xs sm:text-sm text-muted-foreground mt-2 max-w-2xl leading-relaxed">
+          {meta.goal}
+        </p>
       </div>
 
       {/* Activity Content */}
-      <div className="max-w-2xl">
+      <div className="w-full">
         {node.type === "reading" && (
           <PassageSection materials={materials} unitId={unitId} onInspectWord={onInspectWord} />
         )}
@@ -136,17 +150,17 @@ export function UseItArea({
       </div>
 
       {/* Previous / Next Activity Navigation Footer */}
-      <div className="flex justify-between items-center pt-6 border-t border-border mt-12">
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-6 border-t border-border/70 mt-12">
         {prevNode ? (
           <button
             onClick={() => onSelectNode(prevNode.id)}
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-border text-sm font-bold text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border border-border text-sm font-bold text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[48px]"
           >
             <ArrowLeft className="size-4" aria-hidden />
             <span>{prevNode.title}</span>
           </button>
         ) : (
-          <div />
+          <div className="hidden sm:block" />
         )}
 
         {nextNode ? (
@@ -155,7 +169,7 @@ export function UseItArea({
               onCompleteNode(node.id);
               onSelectNode(nextNode.id);
             }}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-primary-foreground text-sm font-bold hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm min-h-[44px]"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-primary text-primary-foreground text-sm font-bold hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
           >
             <span>{nextNode.title}</span>
             <ArrowRight className="size-4" aria-hidden />
@@ -163,7 +177,7 @@ export function UseItArea({
         ) : (
           <button
             onClick={onNextActivity}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-primary-foreground text-sm font-bold hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm min-h-[44px]"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-primary text-primary-foreground text-sm font-bold hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
           >
             <span>Continue to next activity</span>
             <ArrowRight className="size-4" aria-hidden />

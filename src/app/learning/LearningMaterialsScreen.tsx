@@ -9,6 +9,7 @@ import { COURSE_UNITS, DEFAULT_UNIT_ID, type VocabularyItem } from "../data/less
 import { loadLearningMaterials } from "./registry";
 import { BLANK_TOKEN, type PhraseKind, type UnitLearningMaterials } from "./types";
 import { resolveAssetUrl } from "../../utils/assetUrl";
+import { InteractiveText } from "./study/InteractiveText";
 
 interface Props {
   unitId?: string;
@@ -139,34 +140,32 @@ export function WordsSection({
     <>
       {materials.subtopics?.map((topic) => (
         <section key={topic.id} className={CARD} aria-labelledby={`subtopic-${topic.id}`}>
-          <div className="flex items-baseline gap-2">
-            <h2 id={`subtopic-${topic.id}`} className="font-sans font-bold text-lg text-foreground">
+          <div className="flex items-baseline justify-between gap-2 border-b border-border/60 pb-3">
+            <h2 id={`subtopic-${topic.id}`} className="font-bold text-lg text-foreground">
               {topic.title}
             </h2>
-            <span className="font-sans text-xs text-muted-foreground">
+            <span className="text-xs font-bold text-muted-foreground bg-secondary/80 px-2.5 py-0.5 rounded-full">
               {topic.wordIds.length} items
             </span>
           </div>
-          <ul className="mt-3 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          <ul className="mt-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5">
             {topic.wordIds.map((id) => {
               const word = byId.get(id);
               if (!word) return null;
               return (
                 <li
                   key={id}
-                  className="rounded-xl border border-border overflow-hidden bg-background"
+                  className="rounded-2xl border border-border overflow-hidden bg-background hover:border-primary/40 transition-colors shadow-2xs"
                 >
                   <img
                     src={resolveAssetUrl(word.img)}
                     alt=""
                     loading="lazy"
-                    className="w-full aspect-[4/3] object-cover"
+                    className="w-full aspect-[4/3] object-cover bg-muted"
                   />
-                  <div className="p-2">
-                    <p className="font-sans font-bold text-sm text-foreground truncate">
-                      {word.label}
-                    </p>
-                    <p className="font-sans text-[11px] text-muted-foreground truncate">
+                  <div className="p-3">
+                    <p className="font-bold text-sm text-foreground truncate">{word.label}</p>
+                    <p className="text-xs text-muted-foreground font-mono truncate mt-0.5">
                       {word.phonetic}
                     </p>
                   </div>
@@ -182,6 +181,8 @@ export function WordsSection({
 
 export function PassageSection({
   materials,
+  unitId,
+  onInspectWord,
 }: {
   materials: UnitLearningMaterials;
   unitId?: string;
@@ -190,54 +191,53 @@ export function PassageSection({
   const passage = materials.passage;
   if (!passage) return null;
   return (
-    <>
+    <div className="space-y-6">
       <section className={CARD} aria-labelledby="passage-heading">
-        <div className="flex items-center gap-2">
-          <h2 id="passage-heading" className="font-sans font-bold text-lg text-foreground min-w-0">
+        <div className="flex items-center justify-between gap-3 border-b border-border/60 pb-3.5">
+          <h2 id="passage-heading" className="font-bold text-xl text-foreground min-w-0">
             {passage.title}
           </h2>
-          <span className="font-sans text-[11px] font-bold px-2 py-0.5 rounded-full bg-secondary text-primary border border-primary/20 shrink-0">
+          <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 shrink-0">
             {passage.level}
           </span>
         </div>
-        <p className="mt-3 font-sans text-foreground leading-relaxed whitespace-pre-line">
-          {passage.text}
-        </p>
+        <div className="mt-4 text-foreground text-base sm:text-lg leading-relaxed whitespace-pre-line">
+          {unitId && onInspectWord ? (
+            <InteractiveText text={passage.text} unitId={unitId} onInspectWord={onInspectWord} />
+          ) : (
+            <p>{passage.text}</p>
+          )}
+        </div>
       </section>
 
       <section className={CARD} aria-labelledby="comprehension-heading">
-        <h2 id="comprehension-heading" className="font-sans font-bold text-lg text-foreground">
+        <h2 id="comprehension-heading" className="font-bold text-lg text-foreground mb-1">
           Comprehension Questions
         </h2>
-        <div className="mt-3 space-y-4">
+        <p className="text-xs text-muted-foreground mb-4">
+          Test your understanding of the story above.
+        </p>
+        <div className="space-y-4">
           {passage.questions.map((q, index) => (
             <MultipleChoice key={q.id} index={index} {...q} />
           ))}
         </div>
 
-        {/*
-          Questions the import could not turn into multiple choice honestly —
-          ones asking for a reason, a method, or several items. Shown as
-          prompts to think through against the passage rather than dropped, or
-          worse, converted into a quiz that answers itself.
-        */}
         {passage.openQuestions && passage.openQuestions.length > 0 && (
-          <div className="mt-5 rounded-xl border border-border p-4 bg-background">
-            <h3 className="font-sans font-bold text-foreground">Think about it</h3>
-            <p className="font-sans text-sm text-muted-foreground mt-1">
-              No multiple choice for these — answer them against the passage.
+          <div className="mt-6 rounded-2xl border border-border/80 p-5 bg-secondary/20">
+            <h3 className="font-bold text-base text-foreground">Think about it</h3>
+            <p className="text-xs text-muted-foreground mt-0.5">
+              Reflect on these questions against the passage to deepen your understanding:
             </p>
-            <ul className="mt-3 space-y-2 list-disc ps-5">
+            <ul className="mt-3 space-y-2.5 list-disc ps-5 text-sm text-foreground leading-relaxed">
               {passage.openQuestions.map((question) => (
-                <li key={question} className="font-sans text-foreground">
-                  {question}
-                </li>
+                <li key={question}>{question}</li>
               ))}
             </ul>
           </div>
         )}
       </section>
-    </>
+    </div>
   );
 }
 
@@ -258,11 +258,11 @@ function MultipleChoice({
   const answered = picked !== null;
 
   return (
-    <div className="rounded-xl border border-border p-4">
-      <p className="font-sans font-bold text-foreground">
+    <div className="rounded-2xl border border-border p-4 sm:p-5 bg-background">
+      <p className="font-bold text-sm sm:text-base text-foreground mb-3">
         {index + 1}. {question}
       </p>
-      <ul className="mt-3 space-y-2">
+      <ul className="space-y-2">
         {options.map((option, i) => {
           const isCorrect = i === correctIndex;
           const isPicked = picked === i;
@@ -273,18 +273,18 @@ function MultipleChoice({
                 type="button"
                 disabled={answered}
                 onClick={() => setPicked(i)}
-                className={`w-full text-start rounded-lg border px-3 py-2 font-sans text-sm transition-colors outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+                className={`w-full text-start rounded-xl border px-3.5 py-2.5 text-sm font-medium transition-colors outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] flex items-center justify-between ${
                   state === "correct"
-                    ? "border-wp-green bg-wp-green-light/20 text-wp-green"
+                    ? "border-wp-green bg-wp-green-light/20 text-wp-green font-bold"
                     : state === "wrong"
-                      ? "border-destructive bg-destructive/10 text-destructive"
-                      : "border-border text-foreground hover:border-primary/50 disabled:opacity-70"
+                      ? "border-destructive bg-destructive/10 text-destructive font-bold"
+                      : "border-border text-foreground hover:border-primary/50 hover:bg-secondary/40 disabled:opacity-70"
                 }`}
               >
-                <span className="inline-flex items-center gap-2">
+                <span className="inline-flex items-center gap-2.5">
                   {state === "correct" && <CheckCircle2 className="size-4 shrink-0" aria-hidden />}
                   {state === "wrong" && <XCircle className="size-4 shrink-0" aria-hidden />}
-                  {option}
+                  <span>{option}</span>
                 </span>
               </button>
             </li>
@@ -292,9 +292,13 @@ function MultipleChoice({
         })}
       </ul>
       {answered && (
-        <p role="status" className="mt-3 font-sans text-sm text-muted-foreground">
+        <div
+          role="status"
+          className="mt-3.5 pt-3 border-t border-border/60 text-xs sm:text-sm text-muted-foreground leading-relaxed"
+        >
+          <span className="font-bold text-foreground">Explanation: </span>
           {explanation}
-        </p>
+        </div>
       )}
     </div>
   );
@@ -314,21 +318,26 @@ export function PhrasesSection({ materials }: { materials: UnitLearningMaterials
 
   return (
     <section className={CARD} aria-labelledby="phrases-heading">
-      <h2 id="phrases-heading" className="font-sans font-bold text-lg text-foreground">
-        Idioms, Phrasal Verbs &amp; Key Phrases
-      </h2>
+      <div className="border-b border-border/60 pb-3">
+        <h2 id="phrases-heading" className="font-bold text-lg sm:text-xl text-foreground">
+          Idioms, Phrasal Verbs &amp; Key Phrases
+        </h2>
+        <p className="text-xs text-muted-foreground mt-0.5">
+          Essential figurative and conversational language for this topic.
+        </p>
+      </div>
 
-      <div role="group" aria-label="Filter phrases" className="mt-3 flex gap-2 flex-wrap">
+      <div role="group" aria-label="Filter phrases" className="mt-4 flex gap-2 flex-wrap">
         {(["all", "idiom", "phrasal-verb", "collocation"] as const).map((key) => (
           <button
             key={key}
             type="button"
             onClick={() => setFilter(key)}
             aria-pressed={filter === key}
-            className={`rounded-full px-3 py-1 text-xs font-sans font-bold border transition-colors outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+            className={`rounded-xl px-3.5 py-2 text-xs font-bold border transition-colors outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] ${
               filter === key
-                ? "bg-primary text-primary-foreground border-primary"
-                : "bg-background text-muted-foreground border-border hover:border-primary/50"
+                ? "bg-primary text-primary-foreground border-primary shadow-xs"
+                : "bg-background text-muted-foreground border-border hover:border-primary/50 hover:bg-secondary/40"
             }`}
           >
             {key === "all" ? "All" : `${PHRASE_KIND_LABEL[key]}s`} ({counts[key]})
@@ -336,13 +345,16 @@ export function PhrasesSection({ materials }: { materials: UnitLearningMaterials
         ))}
       </div>
 
-      <ul className="mt-4 space-y-3">
+      <ul className="mt-5 space-y-3.5">
         {shown.map((phrase) => (
-          <li key={phrase.id} className="rounded-xl border border-border p-3">
-            <div className="flex items-center gap-2 flex-wrap">
-              <p className="font-sans font-bold text-foreground">{phrase.phrase}</p>
+          <li
+            key={phrase.id}
+            className="rounded-2xl border border-border p-4 bg-background hover:border-primary/40 transition-colors"
+          >
+            <div className="flex items-center gap-2.5 flex-wrap">
+              <p className="font-bold text-base text-foreground">{phrase.phrase}</p>
               <span
-                className="font-sans text-[10px] uppercase tracking-wide font-bold px-2 py-0.5 rounded-full bg-secondary text-primary border border-primary/20"
+                className="text-[11px] uppercase tracking-wide font-bold px-2.5 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20"
                 title={
                   phrase.kindInferred
                     ? "Kind inferred from the phrase, not tagged in the source"
@@ -354,8 +366,8 @@ export function PhrasesSection({ materials }: { materials: UnitLearningMaterials
                 {phrase.kindInferred && <span className="sr-only"> (inferred)</span>}
               </span>
             </div>
-            <p className="font-sans text-sm text-foreground mt-1">{phrase.meaning}</p>
-            <p className="font-sans text-sm text-muted-foreground italic mt-1">
+            <p className="text-sm text-foreground mt-1.5 leading-relaxed">{phrase.meaning}</p>
+            <p className="text-xs sm:text-sm text-muted-foreground italic mt-1.5 border-s-2 border-primary/30 ps-2.5">
               &ldquo;{phrase.example}&rdquo;
             </p>
           </li>
@@ -367,6 +379,8 @@ export function PhrasesSection({ materials }: { materials: UnitLearningMaterials
 
 export function DialogueSection({
   materials,
+  unitId,
+  onInspectWord,
 }: {
   materials: UnitLearningMaterials;
   unitId?: string;
@@ -378,39 +392,39 @@ export function DialogueSection({
 
   return (
     <section className={CARD} aria-labelledby="dialogue-heading">
-      <h2 id="dialogue-heading" className="font-sans font-bold text-lg text-foreground">
-        {dialogue.title && dialogue.title.toLowerCase() !== "mini dialogue"
-          ? `Mini Dialogue — ${dialogue.title}`
-          : "Mini Dialogue"}
-      </h2>
-      {dialogue.scene && (
-        <p className="mt-1 font-sans text-sm text-muted-foreground italic">{dialogue.scene}</p>
-      )}
-      <ol className="mt-4 space-y-3">
+      <div className="border-b border-border/60 pb-3">
+        <h2 id="dialogue-heading" className="font-bold text-lg sm:text-xl text-foreground">
+          {dialogue.title && dialogue.title.toLowerCase() !== "mini dialogue"
+            ? `Mini Dialogue — ${dialogue.title}`
+            : "Mini Dialogue"}
+        </h2>
+        {dialogue.scene && (
+          <p className="mt-1 text-xs sm:text-sm text-muted-foreground italic">{dialogue.scene}</p>
+        )}
+      </div>
+
+      <ol className="mt-5 space-y-3.5">
         {dialogue.lines.map((line, i) => (
           <li
             key={`${line.speaker}-${i}`}
-            className="flex items-start gap-3 p-3 rounded-xl bg-background border border-border"
+            className="flex items-start gap-3 p-3.5 rounded-2xl bg-background border border-border hover:border-primary/40 transition-colors"
           >
-            <span className="font-sans font-bold text-primary shrink-0 min-w-16 max-w-28 break-words text-sm pt-0.5">
+            <span className="font-bold text-primary shrink-0 min-w-16 max-w-28 break-words text-xs sm:text-sm pt-1 bg-primary/10 px-2.5 py-1 rounded-lg text-center">
               {line.speaker}:
             </span>
-            {/*
-              min-w-0 is what lets this wrap. A flex item defaults to
-              min-width: auto, so a dialogue line would not go narrower than
-              its own longest unbroken run of text — the row grew past the card
-              and every line was clipped at the right edge of a phone screen,
-              with no way to scroll to the rest of the sentence.
-            */}
-            <span className="font-sans text-foreground text-sm flex-1 min-w-0 break-words leading-relaxed">
-              {line.text}
+            <span className="text-foreground text-sm sm:text-base flex-1 min-w-0 break-words leading-relaxed pt-0.5">
+              {unitId && onInspectWord ? (
+                <InteractiveText text={line.text} unitId={unitId} onInspectWord={onInspectWord} />
+              ) : (
+                line.text
+              )}
             </span>
             <button
               onClick={() => {
                 stop();
                 speak(line.text);
               }}
-              className="size-8 shrink-0 rounded-full bg-secondary text-primary flex items-center justify-center hover:bg-primary/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              className="size-11 shrink-0 rounded-xl bg-secondary text-primary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] min-w-[44px]"
               aria-label={`Listen to ${line.speaker}'s line`}
             >
               <Volume2 className="size-4" aria-hidden />
@@ -436,19 +450,25 @@ export function MistakesSection({ materials }: { materials: UnitLearningMaterial
 
   return (
     <section className={CARD} aria-labelledby="mistakes-heading">
-      <h2 id="mistakes-heading" className="font-sans font-bold text-lg text-foreground">
-        Common Mistakes &amp; Corrections
-      </h2>
-      <p className="text-xs text-muted-foreground mt-1 mb-4">
-        Try spot the mistake and correct it yourself before revealing the answer.
-      </p>
-      <ul className="space-y-3">
+      <div className="border-b border-border/60 pb-3 mb-4">
+        <h2 id="mistakes-heading" className="font-bold text-lg sm:text-xl text-foreground">
+          Common Mistakes &amp; Corrections
+        </h2>
+        <p className="text-xs text-muted-foreground mt-0.5">
+          Try to spot the mistake and correct it yourself before revealing the answer.
+        </p>
+      </div>
+
+      <ul className="space-y-3.5">
         {materials.mistakes?.map((mistake) => {
           const isRevealed = revealedIds.has(mistake.id);
           return (
-            <li key={mistake.id} className="rounded-xl border border-border p-4 bg-background">
-              <div className="flex justify-between items-start gap-2">
-                <p className="font-sans text-sm text-destructive font-medium">
+            <li
+              key={mistake.id}
+              className="rounded-2xl border border-border p-4 sm:p-5 bg-background"
+            >
+              <div className="flex justify-between items-start gap-3">
+                <p className="text-sm sm:text-base text-destructive font-medium leading-relaxed">
                   <span aria-hidden className="font-bold">
                     ✗{" "}
                   </span>
@@ -459,30 +479,30 @@ export function MistakesSection({ materials }: { materials: UnitLearningMaterial
                   type="button"
                   onClick={() => toggleReveal(mistake.id)}
                   aria-expanded={isRevealed}
-                  className="shrink-0 inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-secondary text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[36px]"
+                  className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-secondary text-foreground hover:bg-secondary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                 >
                   {isRevealed ? (
                     <>
-                      <EyeOff className="size-3.5" aria-hidden /> Hide
+                      <EyeOff className="size-4" aria-hidden /> Hide
                     </>
                   ) : (
                     <>
-                      <Eye className="size-3.5" aria-hidden /> Reveal
+                      <Eye className="size-4" aria-hidden /> Reveal
                     </>
                   )}
                 </button>
               </div>
 
               {isRevealed && (
-                <div className="mt-3 pt-3 border-t border-border/60 space-y-1.5 animate-in fade-in duration-150">
-                  <p className="font-sans text-sm text-wp-green font-medium">
+                <div className="mt-3.5 pt-3.5 border-t border-border/60 space-y-2 animate-in fade-in duration-150">
+                  <p className="text-sm sm:text-base text-wp-green font-bold">
                     <span aria-hidden className="font-bold">
                       ✓{" "}
                     </span>
                     <span className="sr-only">Correct: </span>
                     {mistake.right}
                   </p>
-                  <p className="font-sans text-xs text-muted-foreground leading-relaxed">
+                  <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                     <span className="font-bold text-foreground">Explanation: </span>
                     {mistake.note}
                   </p>
@@ -506,37 +526,44 @@ const WORD_FORM_COLUMNS = [
 
 export function WordFormationSection({ materials }: { materials: UnitLearningMaterials }) {
   const rows = materials.wordFormation ?? [];
-  // Units differ in which columns they carry; showing a column that is empty
-  // for every row is just a wall of em dashes.
   const columns = WORD_FORM_COLUMNS.filter(({ key }) => rows.some((row) => row[key] != null));
 
   return (
     <section className={CARD} aria-labelledby="word-formation-heading">
-      <h2 id="word-formation-heading" className="font-sans font-bold text-lg text-foreground">
-        Word Formation
-      </h2>
-      <div className="mt-3 overflow-x-auto">
+      <div className="border-b border-border/60 pb-3 mb-4">
+        <h2 id="word-formation-heading" className="font-bold text-lg sm:text-xl text-foreground">
+          Word Formation &amp; Word Families
+        </h2>
+        <p className="text-xs text-muted-foreground mt-0.5">
+          See how base words transform across parts of speech.
+        </p>
+      </div>
+
+      <div className="overflow-x-auto rounded-2xl border border-border/80 bg-background">
         <table className="w-full text-start border-collapse min-w-[32rem]">
           <caption className="sr-only">Word forms for this unit&apos;s key words</caption>
           <thead>
-            <tr className="border-b border-border">
+            <tr className="border-b border-border bg-secondary/30">
               {columns.map(({ label }) => (
                 <th
                   key={label}
                   scope="col"
-                  className="text-start font-sans font-bold text-sm text-muted-foreground py-2 pe-3"
+                  className="text-start font-bold text-xs uppercase tracking-wider text-muted-foreground py-3 px-4"
                 >
                   {label}
                 </th>
               ))}
             </tr>
           </thead>
-          <tbody>
+          <tbody className="divide-y divide-border/50">
             {rows.map((row, rowIndex) => (
-              <tr key={`${row.base ?? row.noun}-${rowIndex}`} className="border-b border-border/50">
+              <tr
+                key={`${row.base ?? row.noun}-${rowIndex}`}
+                className="hover:bg-secondary/20 transition-colors"
+              >
                 {columns.map(({ key }) => (
-                  <td key={key} className="font-sans text-sm text-foreground py-2 pe-3">
-                    {row[key] ?? <span className="text-muted-foreground">—</span>}
+                  <td key={key} className="text-sm text-foreground py-3 px-4 font-medium">
+                    {row[key] ?? <span className="text-muted-foreground/60">—</span>}
                   </td>
                 ))}
               </tr>
@@ -550,10 +577,6 @@ export function WordFormationSection({ materials }: { materials: UnitLearningMat
 
 /**
  * Fill-in-the-blank practice.
- *
- * Not routed through `ExerciseContextFill`: that drill asks a learner to pick
- * an image for a sentence, and several answers here ("dry", "laundry") have no
- * picture to pick. Typed answers keep the exercise faithful to the design.
  */
 export function PracticeSection({ materials }: { materials: UnitLearningMaterials }) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
@@ -567,21 +590,26 @@ export function PracticeSection({ materials }: { materials: UnitLearningMaterial
 
   return (
     <section className={CARD} aria-labelledby="practice-heading">
-      <h2 id="practice-heading" className="font-sans font-bold text-lg text-foreground">
-        Fill in the Blanks
-      </h2>
-      <p className="font-sans text-sm text-muted-foreground mt-1">
-        Complete each sentence with a word from this unit.
-      </p>
+      <div className="border-b border-border/60 pb-3 mb-4">
+        <h2 id="practice-heading" className="font-bold text-lg sm:text-xl text-foreground">
+          Fill in the Blanks
+        </h2>
+        <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">
+          Complete each sentence with a word from this unit.
+        </p>
+      </div>
 
-      <ol className="mt-4 space-y-3">
+      <ol className="space-y-3.5">
         {items.map((item, index) => {
           const value = answers[item.id] ?? "";
           const isCorrect = normalise(value) === normalise(item.answer);
           const [before, after] = item.sentence.split(BLANK_TOKEN);
           return (
-            <li key={item.id} className="font-sans text-foreground">
-              <label className="flex flex-wrap items-center gap-1.5">
+            <li
+              key={item.id}
+              className="text-foreground p-3.5 rounded-2xl border border-border bg-background"
+            >
+              <label className="flex flex-wrap items-center gap-2 text-sm sm:text-base font-medium">
                 <span>
                   {index + 1}. {before}
                 </span>
@@ -593,17 +621,19 @@ export function PracticeSection({ materials }: { materials: UnitLearningMaterial
                     setChecked(false);
                   }}
                   aria-label={`Answer for sentence ${index + 1}`}
-                  className={`w-36 rounded-lg border px-2 py-1 bg-background text-foreground outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+                  className={`min-w-36 rounded-xl border px-3 py-1.5 bg-background text-foreground text-sm font-bold outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] transition-colors ${
                     checked
                       ? isCorrect
-                        ? "border-wp-green"
-                        : "border-destructive"
-                      : "border-border"
+                        ? "border-wp-green bg-wp-green-light/20 text-wp-green"
+                        : "border-destructive bg-destructive/10 text-destructive"
+                      : "border-border hover:border-primary/50"
                   }`}
                 />
                 <span>{after}</span>
                 {checked && !isCorrect && (
-                  <span className="font-sans text-sm text-muted-foreground">→ {item.answer}</span>
+                  <span className="text-xs sm:text-sm text-muted-foreground font-bold ms-1">
+                    → Correct: <span className="text-wp-green">{item.answer}</span>
+                  </span>
                 )}
               </label>
             </li>
@@ -611,16 +641,19 @@ export function PracticeSection({ materials }: { materials: UnitLearningMaterial
         })}
       </ol>
 
-      <div className="mt-4 flex items-center gap-3">
+      <div className="mt-6 pt-4 border-t border-border/60 flex flex-wrap items-center gap-4">
         <button
           type="button"
           onClick={() => setChecked(true)}
-          className="rounded-xl bg-primary text-primary-foreground font-sans font-bold px-4 py-2 outline-none focus-visible:ring-2 focus-visible:ring-primary"
+          className="rounded-xl bg-primary text-primary-foreground font-bold px-5 py-2.5 outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-primary/90 transition-colors min-h-[44px] shadow-xs"
         >
           Check answers
         </button>
         {checked && (
-          <p role="status" className="font-sans text-sm text-foreground">
+          <p
+            role="status"
+            className="text-sm font-bold text-foreground bg-secondary/80 px-3.5 py-2 rounded-xl"
+          >
             {correctCount} of {items.length} correct
           </p>
         )}
@@ -632,14 +665,24 @@ export function PracticeSection({ materials }: { materials: UnitLearningMaterial
 export function CultureSection({ materials }: { materials: UnitLearningMaterials }) {
   return (
     <section className={CARD} aria-labelledby="culture-heading">
-      <h2 id="culture-heading" className="font-sans font-bold text-lg text-foreground">
-        Cultural &amp; Usage Notes
-      </h2>
-      <ul className="mt-3 space-y-3">
+      <div className="border-b border-border/60 pb-3 mb-4">
+        <h2 id="culture-heading" className="font-bold text-lg sm:text-xl text-foreground">
+          Cultural &amp; Usage Notes
+        </h2>
+        <p className="text-xs text-muted-foreground mt-0.5">
+          Real-world etiquette, social nuance, and situational context.
+        </p>
+      </div>
+      <ul className="space-y-3.5">
         {materials.culturalNotes?.map((note) => (
-          <li key={note.id} className="rounded-xl border border-border p-3">
-            <p className="font-sans font-bold text-foreground">{note.title}</p>
-            <p className="font-sans text-sm text-muted-foreground mt-1">{note.body}</p>
+          <li
+            key={note.id}
+            className="rounded-2xl border border-border p-4 sm:p-5 bg-background hover:border-primary/40 transition-colors"
+          >
+            <p className="font-bold text-base text-foreground">{note.title}</p>
+            <p className="text-xs sm:text-sm text-muted-foreground mt-1.5 leading-relaxed">
+              {note.body}
+            </p>
           </li>
         ))}
       </ul>
@@ -671,12 +714,17 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
 
   return (
     <section className={CARD} aria-labelledby="reference-heading">
-      <h2 id="reference-heading" className="font-sans font-bold text-lg text-foreground">
-        Vocabulary Reference
-      </h2>
+      <div className="border-b border-border/60 pb-3 mb-4">
+        <h2 id="reference-heading" className="font-bold text-lg sm:text-xl text-foreground">
+          Vocabulary Reference
+        </h2>
+        <p className="text-xs text-muted-foreground mt-0.5">
+          Comprehensive dictionary lookup with frequency ratings, parts of speech, and collocations.
+        </p>
+      </div>
 
       {/* Filter and Search Bar */}
-      <div className="mt-4 flex flex-col sm:flex-row gap-3">
+      <div className="flex flex-col sm:flex-row gap-3">
         <div className="flex-1">
           <label htmlFor="vocab-ref-search" className="sr-only">
             Search vocabulary reference
@@ -687,7 +735,7 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search word or collocation…"
-            className="w-full px-4 py-2 bg-background border border-border rounded-xl text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+            className="w-full px-4 py-2.5 bg-background border border-border rounded-xl text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
           />
         </div>
 
@@ -703,7 +751,7 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
               id="pos-filter"
               value={posFilter}
               onChange={(e) => setPosFilter(e.target.value)}
-              className="px-3 py-2 bg-background border border-border rounded-xl text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+              className="px-3.5 py-2 bg-background border border-border rounded-xl text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
             >
               {partsOfSpeech.map((pos) => (
                 <option key={pos} value={pos}>
@@ -716,40 +764,42 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
       </div>
 
       {/* Frequency & Notation Legend */}
-      <div className="mt-3 p-3 bg-secondary/30 rounded-xl border border-border/60 text-xs text-muted-foreground flex flex-wrap gap-x-6 gap-y-2">
+      <div className="mt-3.5 p-3.5 bg-secondary/30 rounded-2xl border border-border/60 text-xs text-muted-foreground flex flex-wrap gap-x-6 gap-y-2">
         <div>
           <span className="font-bold text-foreground">Frequency: </span>
-          <span className="text-wp-amber">★★★</span> Core / Most common ·{" "}
+          <span className="text-wp-amber">★★★</span> Core ·{" "}
           <span className="text-wp-amber">★★</span> Frequent ·{" "}
           <span className="text-wp-amber">★</span> Topic-specific
         </div>
         <div>
           <span className="font-bold text-foreground">Notation: </span>
-          <code className="px-1 bg-muted rounded font-mono">~</code> replaces the base word in
-          phrases
+          <code className="px-1.5 py-0.5 bg-muted rounded font-mono text-foreground font-bold">
+            ~
+          </code>{" "}
+          replaces base word in phrases
         </div>
       </div>
 
       {/* Accessible Table */}
-      <div className="mt-4 overflow-x-auto">
+      <div className="mt-4 overflow-x-auto rounded-2xl border border-border/80 bg-background">
         <table className="w-full border-collapse min-w-[34rem]">
           <caption className="sr-only">
             Vocabulary reference table with word, part of speech, frequency rating, and collocations
           </caption>
           <thead>
-            <tr className="border-b border-border">
+            <tr className="border-b border-border bg-secondary/30">
               {["Word", "Part of speech", "Frequency", "Key collocations"].map((h) => (
                 <th
                   key={h}
                   scope="col"
-                  className="text-start font-sans font-bold text-sm text-muted-foreground py-2.5 pe-3"
+                  className="text-start font-bold text-xs uppercase tracking-wider text-muted-foreground py-3 px-4"
                 >
                   {h}
                 </th>
               ))}
             </tr>
           </thead>
-          <tbody>
+          <tbody className="divide-y divide-border/50">
             {filtered.length === 0 ? (
               <tr>
                 <td colSpan={4} className="py-8 text-center text-sm text-muted-foreground">
@@ -758,10 +808,10 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
               </tr>
             ) : (
               filtered.map((entry) => (
-                <tr key={entry.word} className="border-b border-border/50 align-top">
+                <tr key={entry.word} className="hover:bg-secondary/20 transition-colors align-top">
                   <th
                     scope="row"
-                    className="font-sans font-bold text-sm text-foreground py-3 pe-3 text-start"
+                    className="font-bold text-sm text-foreground py-3 px-4 text-start"
                   >
                     <div className="flex items-center gap-2">
                       <span>{entry.word}</span>
@@ -770,23 +820,21 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
                           stop();
                           speak(entry.word);
                         }}
-                        className="size-11 rounded-full bg-secondary text-primary inline-flex items-center justify-center hover:bg-primary/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                        className="size-11 shrink-0 rounded-xl bg-secondary/80 text-primary inline-flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] min-w-[44px]"
                         aria-label={`Pronounce ${entry.word}`}
                       >
-                        <Volume2 className="size-3.5" aria-hidden />
+                        <Volume2 className="size-4" aria-hidden />
                       </button>
                     </div>
                   </th>
-                  <td className="font-sans text-sm text-muted-foreground py-3 pe-3">
-                    {entry.partOfSpeech}
-                  </td>
-                  <td className="font-sans text-sm py-3 pe-3">
-                    <span aria-hidden className="text-wp-amber font-mono">
+                  <td className="text-sm text-muted-foreground py-3 px-4">{entry.partOfSpeech}</td>
+                  <td className="text-sm py-3 px-4">
+                    <span aria-hidden className="text-wp-amber font-mono text-base">
                       {"★".repeat(entry.frequency)}
                     </span>
                     <span className="sr-only">{entry.frequency} out of 3 frequency rating</span>
                   </td>
-                  <td className="font-sans text-sm text-foreground py-3 pe-3">
+                  <td className="text-sm text-foreground py-3 px-4 font-medium">
                     {entry.collocations.join(", ")}
                   </td>
                 </tr>

@@ -3,7 +3,7 @@ import type { StudyNode, UnitStudyProgress, StudyWordStatus } from "./types";
 import type { UnitLearningMaterials } from "../types";
 import { getWords } from "../../data/vocabulary";
 import { VocabularyCard } from "./VocabularyCard";
-import { CheckCircle2, RotateCcw, ThumbsUp, HelpCircle } from "lucide-react";
+import { CheckCircle2, RotateCcw, ThumbsUp, HelpCircle, ArrowLeft, ArrowRight } from "lucide-react";
 
 interface Props {
   node: StudyNode;
@@ -109,11 +109,11 @@ export function LearnArea({ node, materials, progress, onProgressUpdate, onNextA
   if (isComplete) {
     return (
       <div className="max-w-2xl mx-auto w-full p-6 md:p-12 text-center flex flex-col items-center animate-in fade-in zoom-in-95 duration-300">
-        <div className="size-20 rounded-full bg-wp-green-light/20 text-wp-green flex items-center justify-center mb-6 shadow-sm">
+        <div className="size-20 rounded-3xl bg-wp-green-light/20 text-wp-green flex items-center justify-center mb-6 shadow-xs border border-wp-green/30">
           <CheckCircle2 className="size-10" aria-hidden />
         </div>
-        <h2 className="text-3xl font-bold text-foreground mb-3">{node.title} Complete!</h2>
-        <p className="text-muted-foreground text-base max-w-md mb-8">
+        <h2 className="text-3xl font-extrabold text-foreground mb-3">{node.title} Complete!</h2>
+        <p className="text-muted-foreground text-base max-w-md mb-8 leading-relaxed">
           {needsPracticeCount > 0
             ? `You reviewed ${words.length} words. ${needsPracticeCount} ${
                 needsPracticeCount === 1 ? "word was" : "words were"
@@ -121,19 +121,20 @@ export function LearnArea({ node, materials, progress, onProgressUpdate, onNextA
             : `Fantastic! You recalled all ${words.length} words with confidence.`}
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-3">
+        <div className="flex flex-col sm:flex-row gap-3.5 w-full sm:w-auto">
           <button
             onClick={handleRestart}
-            className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-full font-bold text-sm hover:bg-secondary transition-colors min-h-[44px]"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-border rounded-2xl font-bold text-sm hover:bg-secondary transition-colors min-h-[48px]"
           >
             <RotateCcw className="size-4" aria-hidden />
-            Review Again
+            <span>Review Again</span>
           </button>
           <button
             onClick={onNextActivity}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-bold text-sm hover:bg-primary/90 transition-colors min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground rounded-2xl font-bold text-sm hover:bg-primary/90 transition-colors min-h-[48px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs"
           >
-            Continue to next activity
+            <span>Continue to next activity</span>
+            <ArrowRight className="size-4" aria-hidden />
           </button>
         </div>
       </div>
@@ -145,23 +146,27 @@ export function LearnArea({ node, materials, progress, onProgressUpdate, onNextA
   );
 
   return (
-    <div className="max-w-2xl mx-auto w-full p-4 md:p-8 flex flex-col items-center">
+    <div className="max-w-2xl mx-auto w-full p-4 sm:p-6 md:p-8 flex flex-col items-center">
       {/* Header & Progress */}
       <div className="w-full mb-6">
-        <div className="flex justify-between items-baseline mb-2">
-          <div>
-            <h2 className="text-xl sm:text-2xl font-bold text-foreground">{node.title}</h2>
+        <div className="flex justify-between items-baseline gap-3 mb-3">
+          <div className="min-w-0">
+            <h2 className="text-xl sm:text-2xl font-extrabold text-foreground truncate">
+              {node.title}
+            </h2>
             {node.description && (
-              <p className="text-sm text-muted-foreground">{node.description}</p>
+              <p className="text-xs sm:text-sm text-muted-foreground mt-0.5 truncate">
+                {node.description}
+              </p>
             )}
           </div>
-          <span className="text-xs font-bold text-muted-foreground bg-secondary px-3 py-1 rounded-full">
+          <span className="text-xs font-bold text-muted-foreground bg-secondary/80 px-3 py-1.5 rounded-full shrink-0">
             {currentIndex + 1} of {words.length}
           </span>
         </div>
 
         {/* Accessible Progress Bar */}
-        <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
+        <div className="w-full h-2.5 bg-secondary rounded-full overflow-hidden">
           <div
             className="h-full bg-primary transition-all duration-300 rounded-full"
             style={{ width: `${progressPercent}%` }}
@@ -194,7 +199,7 @@ export function LearnArea({ node, materials, progress, onProgressUpdate, onNextA
       {/* Action Controls */}
       <div className="w-full mt-6">
         {!isRevealed ? (
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center gap-3">
             <button
               onClick={() => {
                 if (currentIndex > 0) {
@@ -208,32 +213,33 @@ export function LearnArea({ node, materials, progress, onProgressUpdate, onNextA
                 }
               }}
               disabled={currentIndex === 0}
-              className="px-4 py-2 text-sm font-bold text-muted-foreground hover:text-foreground disabled:opacity-40 disabled:hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-lg min-h-[44px]"
+              className="inline-flex items-center gap-1.5 px-4 py-2.5 text-sm font-bold text-muted-foreground hover:text-foreground disabled:opacity-40 disabled:hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl min-h-[44px] hover:bg-secondary/60 transition-colors"
             >
-              ← Previous
+              <ArrowLeft className="size-4" aria-hidden />
+              <span>Previous</span>
             </button>
             <button
               onClick={() => setIsRevealed(true)}
-              className="px-6 py-2.5 bg-primary text-primary-foreground font-bold rounded-full hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+              className="px-7 py-3 bg-primary text-primary-foreground font-bold rounded-2xl hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] shadow-xs"
             >
               Reveal
             </button>
           </div>
         ) : (
-          <div className="flex flex-col sm:flex-row gap-3 w-full">
+          <div className="flex flex-col sm:flex-row gap-3.5 w-full">
             <button
               onClick={handleNeedsPractice}
-              className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-wp-amber/40 bg-wp-amber/10 text-wp-amber font-bold text-sm hover:bg-wp-amber/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-wp-amber min-h-[44px]"
+              className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 px-5 rounded-2xl border border-wp-amber/40 bg-wp-amber/10 text-wp-amber font-bold text-sm hover:bg-wp-amber/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-wp-amber min-h-[48px]"
             >
               <HelpCircle className="size-4" aria-hidden />
-              Needs Practice
+              <span>Needs Practice</span>
             </button>
             <button
               onClick={handleGotIt}
-              className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm min-h-[44px]"
+              className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 px-5 rounded-2xl bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
             >
               <ThumbsUp className="size-4" aria-hidden />
-              Got It
+              <span>Got It</span>
             </button>
           </div>
         )}

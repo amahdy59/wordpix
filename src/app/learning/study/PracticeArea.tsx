@@ -122,7 +122,7 @@ function SentenceBuilder({
   };
 
   return (
-    <div className="rounded-2xl border border-border p-6 bg-card shadow-sm h-full flex flex-col justify-center">
+    <div className="rounded-3xl border border-border p-6 sm:p-7 bg-card shadow-xs h-full flex flex-col justify-center">
       <div className="mb-6">{hint}</div>
 
       {/* Screen reader instruction */}
@@ -132,12 +132,12 @@ function SentenceBuilder({
 
       {/* Answer Slot */}
       <div
-        className="min-h-[64px] flex flex-wrap gap-2 p-4 border-2 border-dashed border-border mb-6 bg-secondary/20 rounded-xl items-center"
+        className="min-h-[72px] flex flex-wrap gap-2.5 p-4 sm:p-5 border-2 border-dashed border-border mb-6 bg-secondary/20 rounded-2xl items-center"
         aria-label="Your assembled sentence"
       >
         {selected.length === 0 ? (
           <span className="text-sm text-muted-foreground italic select-none">
-            Tap words below to build the sentence…
+            Tap words below in order to build the sentence…
           </span>
         ) : (
           selected.map((token) => (
@@ -146,7 +146,7 @@ function SentenceBuilder({
               type="button"
               onClick={() => !hasAnswered && handleDeselect(token)}
               disabled={hasAnswered}
-              className="px-4 py-2 bg-background border border-primary/40 rounded-xl shadow-sm font-bold text-sm text-primary hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all active:scale-95 min-h-[44px]"
+              className="px-4 py-2.5 bg-background border-2 border-primary/50 rounded-xl shadow-2xs font-bold text-sm text-primary hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all active:scale-95 min-h-[44px]"
             >
               {token.text}
             </button>
@@ -155,14 +155,14 @@ function SentenceBuilder({
       </div>
 
       {/* Word Bank */}
-      <div className="flex flex-wrap gap-2 mb-8" aria-label="Available word bank">
+      <div className="flex flex-wrap gap-2.5 mb-8" aria-label="Available word bank">
         {available.map((token) => (
           <button
             key={token.id}
             type="button"
             onClick={() => !hasAnswered && handleSelect(token)}
             disabled={hasAnswered}
-            className="px-4 py-2 bg-secondary text-secondary-foreground border border-border rounded-xl font-bold text-sm hover:bg-secondary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all active:scale-95 min-h-[44px]"
+            className="px-4 py-2.5 bg-secondary text-secondary-foreground border border-border rounded-xl font-bold text-sm hover:bg-secondary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all active:scale-95 min-h-[44px]"
           >
             {token.text}
           </button>
@@ -174,7 +174,7 @@ function SentenceBuilder({
         <div
           role="status"
           aria-live="polite"
-          className={`p-4 rounded-xl flex flex-col sm:flex-row items-center sm:justify-between gap-4 border ${
+          className={`p-4 sm:p-5 rounded-2xl flex flex-col sm:flex-row items-center sm:justify-between gap-4 border ${
             isCorrect
               ? "bg-wp-green-light/20 text-wp-green border-wp-green"
               : "bg-destructive/10 text-destructive border-destructive"
@@ -182,11 +182,11 @@ function SentenceBuilder({
         >
           <div className="flex items-center gap-3">
             {isCorrect ? (
-              <CheckCircle2 className="w-6 h-6 shrink-0" />
+              <CheckCircle2 className="size-6 shrink-0" />
             ) : (
-              <XCircle className="w-6 h-6 shrink-0" />
+              <XCircle className="size-6 shrink-0" />
             )}
-            <span className="font-bold text-base">
+            <span className="font-bold text-sm sm:text-base">
               {isCorrect ? "Correct sentence!" : `Correct answer: "${sentence}"`}
             </span>
           </div>
@@ -194,7 +194,7 @@ function SentenceBuilder({
             <button
               type="button"
               onClick={reset}
-              className="px-4 py-2 bg-background border border-current rounded-xl font-bold text-sm hover:opacity-80 transition-opacity focus-visible:outline-none focus-visible:ring-2 min-h-[44px]"
+              className="px-4 py-2 bg-background border border-current rounded-xl font-bold text-xs sm:text-sm hover:opacity-80 transition-opacity focus-visible:outline-none focus-visible:ring-2 min-h-[44px]"
             >
               Try Again
             </button>
@@ -205,15 +205,16 @@ function SentenceBuilder({
           <button
             type="button"
             onClick={handleDontKnow}
-            className="inline-flex items-center justify-center gap-2 px-4 py-3 border border-border text-muted-foreground hover:text-foreground rounded-xl font-bold text-sm hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+            className="inline-flex items-center justify-center gap-2 px-5 py-3 border border-border text-muted-foreground hover:text-foreground rounded-2xl font-bold text-sm hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[48px]"
           >
-            <HelpCircle className="size-4" aria-hidden />I don&apos;t know
+            <HelpCircle className="size-4" aria-hidden />
+            <span>I don&apos;t know</span>
           </button>
           <button
             type="button"
             onClick={checkAnswer}
             disabled={selected.length === 0}
-            className="flex-1 py-3 bg-primary text-primary-foreground rounded-xl font-bold text-base disabled:opacity-50 transition-transform active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm min-h-[44px]"
+            className="flex-1 py-3 bg-primary text-primary-foreground rounded-2xl font-bold text-base disabled:opacity-50 transition-transform active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
           >
             Check Answer
           </button>
@@ -255,8 +256,10 @@ function MultipleChoiceQuiz({
   };
 
   return (
-    <div className="rounded-2xl border border-border p-6 bg-card shadow-sm h-full flex flex-col justify-center">
-      <div className="mb-6 font-bold text-xl text-foreground leading-relaxed">{question}</div>
+    <div className="rounded-3xl border border-border p-6 sm:p-7 bg-card shadow-xs h-full flex flex-col justify-center">
+      <div className="mb-6 font-extrabold text-lg sm:text-xl text-foreground leading-relaxed">
+        {question}
+      </div>
       <div className="grid gap-3">
         {options.map((opt, i) => {
           const isCorrect = i === correctIndex;
@@ -272,9 +275,9 @@ function MultipleChoiceQuiz({
               type="button"
               disabled={answered}
               onClick={() => handlePick(i)}
-              className={`w-full text-start p-4 rounded-xl border transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary text-base min-h-[52px] ${
+              className={`w-full text-start p-4 rounded-2xl border transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary text-sm sm:text-base min-h-[56px] ${
                 state === "correct"
-                  ? "border-wp-green bg-wp-green-light/10 text-wp-green font-bold shadow-sm"
+                  ? "border-wp-green bg-wp-green-light/10 text-wp-green font-bold shadow-xs"
                   : state === "wrong"
                     ? "border-destructive bg-destructive/5 text-destructive font-bold"
                     : "border-border hover:border-primary/50 hover:bg-secondary/40 font-medium active:scale-[0.99]"
@@ -304,11 +307,11 @@ function MultipleChoiceQuiz({
       {answered ? (
         <div role="status" aria-live="polite" className="mt-4">
           {picked === correctIndex ? (
-            <p className="text-sm font-bold text-wp-green flex items-center gap-1.5">
-              <CheckCircle2 className="size-4" aria-hidden /> Excellent! That is correct.
+            <p className="text-sm font-bold text-wp-green flex items-center gap-2 bg-wp-green-light/20 p-3 rounded-xl border border-wp-green/30">
+              <CheckCircle2 className="size-5 shrink-0" aria-hidden /> Excellent! That is correct.
             </p>
           ) : (
-            <div className="p-4 rounded-xl bg-destructive/10 border border-destructive text-destructive font-bold flex items-center justify-between gap-3 text-sm">
+            <div className="p-4 rounded-2xl bg-destructive/10 border border-destructive text-destructive font-bold flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-sm">
               <div className="flex items-center gap-2">
                 <XCircle className="size-5 shrink-0" />
                 <span>Correct answer: {options[correctIndex]}</span>
@@ -319,7 +322,7 @@ function MultipleChoiceQuiz({
                   setPicked(null);
                   setGaveUp(false);
                 }}
-                className="px-3 py-1.5 border border-current rounded-lg text-xs hover:opacity-80 transition-opacity min-h-[36px]"
+                className="px-3.5 py-1.5 border border-current rounded-xl text-xs hover:opacity-80 transition-opacity min-h-[44px] self-start sm:self-auto"
               >
                 Try Again
               </button>
@@ -331,9 +334,10 @@ function MultipleChoiceQuiz({
           <button
             type="button"
             onClick={handleDontKnow}
-            className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-bold text-muted-foreground hover:text-foreground hover:bg-secondary rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+            className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-bold text-muted-foreground hover:text-foreground hover:bg-secondary rounded-xl transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
           >
-            <HelpCircle className="size-3.5" aria-hidden />I don&apos;t know
+            <HelpCircle className="size-4" aria-hidden />
+            <span>I don&apos;t know</span>
           </button>
         </div>
       )}
@@ -483,10 +487,10 @@ export function PracticeArea({
     const scorePercent = Math.round((firstTryCorrectCount / items.length) * 100);
     return (
       <div className="flex-1 flex flex-col items-center justify-center p-6 md:p-12 max-w-2xl mx-auto w-full text-center animate-in fade-in zoom-in-95 duration-300">
-        <div className="size-20 rounded-full bg-wp-green-light/20 text-wp-green flex items-center justify-center mb-6 shadow-sm">
+        <div className="size-20 rounded-3xl bg-wp-green-light/20 text-wp-green flex items-center justify-center mb-6 shadow-xs border border-wp-green/30">
           <Award className="size-10" aria-hidden />
         </div>
-        <h2 className="text-3xl font-bold mb-2 text-foreground">Practice Session Complete!</h2>
+        <h2 className="text-3xl font-extrabold mb-2 text-foreground">Practice Session Complete!</h2>
         <p className="text-muted-foreground text-base mb-6">
           You scored{" "}
           <span className="font-bold text-foreground">
@@ -496,7 +500,7 @@ export function PracticeArea({
         </p>
 
         {reviewAddedWords.length > 0 && (
-          <div className="w-full bg-secondary/30 border border-border rounded-2xl p-5 mb-8 text-start">
+          <div className="w-full bg-secondary/30 border border-border rounded-3xl p-5 mb-8 text-start">
             <h3 className="font-bold text-sm text-foreground mb-2 flex items-center gap-2">
               <RotateCcw className="size-4 text-wp-amber" />
               Words sent to your Review queue ({reviewAddedWords.length}):
@@ -514,19 +518,20 @@ export function PracticeArea({
           </div>
         )}
 
-        <div className="flex flex-col sm:flex-row gap-3">
+        <div className="flex flex-col sm:flex-row gap-3.5 w-full sm:w-auto">
           <button
             onClick={handleRestart}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-bold rounded-full hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm min-h-[44px]"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-border text-foreground font-bold rounded-2xl hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-2xs min-h-[48px]"
           >
             <RotateCcw className="size-4" aria-hidden />
-            Practice Again
+            <span>Practice Again</span>
           </button>
           <button
             onClick={onNextActivity}
-            className="inline-flex items-center gap-2 px-6 py-3 border border-primary text-primary font-bold rounded-full hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground font-bold rounded-2xl hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[48px] shadow-xs"
           >
-            Continue to Review
+            <span>Continue to Review</span>
+            <ArrowRight className="size-4" aria-hidden />
           </button>
         </div>
       </div>
@@ -635,23 +640,25 @@ export function PracticeArea({
   };
 
   return (
-    <div className="max-w-2xl mx-auto w-full p-4 md:p-8 flex flex-col items-center">
+    <div className="max-w-2xl mx-auto w-full p-4 sm:p-6 md:p-8 flex flex-col items-center">
       {/* Header & Progress */}
       <div className="w-full mb-6">
-        <div className="flex justify-between items-baseline mb-2">
-          <div>
-            <h2 className="text-xl sm:text-2xl font-bold text-foreground">Practice Session</h2>
-            <p className="text-sm text-muted-foreground">
+        <div className="flex justify-between items-baseline gap-3 mb-3">
+          <div className="min-w-0">
+            <h2 className="text-xl sm:text-2xl font-extrabold text-foreground truncate">
+              Practice Session
+            </h2>
+            <p className="text-xs sm:text-sm text-muted-foreground truncate mt-0.5">
               Test your recall across different question types
             </p>
           </div>
-          <span className="text-xs font-bold text-muted-foreground bg-secondary px-3 py-1 rounded-full">
+          <span className="text-xs font-bold text-muted-foreground bg-secondary/80 px-3 py-1.5 rounded-full shrink-0">
             {currentIndex + 1} of {items.length}
           </span>
         </div>
 
         {/* Accessible Progress Bar */}
-        <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
+        <div className="w-full h-2.5 bg-secondary rounded-full overflow-hidden">
           <div
             className="h-full bg-primary transition-all duration-300 rounded-full"
             style={{ width: `${progressPercent}%` }}
@@ -679,7 +686,7 @@ export function PracticeArea({
         <div className="w-full mt-6 flex justify-end animate-in fade-in slide-in-from-bottom-2 duration-200">
           <button
             onClick={handleNext}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-bold text-base hover:bg-primary/90 transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm min-h-[44px]"
+            className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground rounded-2xl font-bold text-base hover:bg-primary/90 transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
           >
             <span>{currentIndex < items.length - 1 ? "Next Exercise" : "Finish Practice"}</span>
             <ArrowRight className="size-4" aria-hidden />
