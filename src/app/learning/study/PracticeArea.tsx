@@ -89,7 +89,7 @@ function SentenceBuilder({
             key={i}
             onClick={() => !hasAnswered && handleDeselect(i)}
             disabled={hasAnswered}
-            className="px-4 py-2 bg-background border-2 border-border rounded-lg shadow-sm font-bold text-base hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all active:scale-95"
+            className="px-4 py-2 bg-background border-2 border-border rounded-lg shadow-sm font-bold text-base hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all active:scale-95 min-h-[44px]"
           >
             {w}
           </button>
@@ -101,7 +101,7 @@ function SentenceBuilder({
             key={i}
             onClick={() => !hasAnswered && handleSelect(i)}
             disabled={hasAnswered}
-            className="px-4 py-2 bg-muted text-muted-foreground border-2 border-transparent rounded-lg font-bold text-base hover:bg-muted/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all active:scale-95"
+            className="px-4 py-2 bg-muted text-muted-foreground border-2 border-transparent rounded-lg font-bold text-base hover:bg-muted/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all active:scale-95 min-h-[44px]"
           >
             {w}
           </button>
@@ -129,7 +129,7 @@ function SentenceBuilder({
           {!isCorrect && (
             <button
               onClick={reset}
-              className="px-5 py-2.5 bg-background border-2 border-current rounded-xl font-bold hover:opacity-80 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+              className="px-5 py-2.5 bg-background border-2 border-current rounded-xl font-bold hover:opacity-80 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 min-h-[44px]"
             >
               Try Again
             </button>
@@ -139,7 +139,7 @@ function SentenceBuilder({
         <button
           onClick={checkAnswer}
           disabled={selected.length === 0}
-          className="w-full py-3.5 bg-primary text-primary-foreground rounded-xl font-bold text-lg disabled:opacity-50 transition-transform active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 shadow-sm"
+          className="w-full py-3.5 bg-primary text-primary-foreground rounded-xl font-bold text-lg disabled:opacity-50 transition-transform active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 shadow-sm min-h-[44px]"
         >
           Check Answer
         </button>
@@ -182,7 +182,7 @@ function MultipleChoiceQuiz({
               type="button"
               disabled={answered}
               onClick={() => handlePick(i)}
-              className={`w-full text-start p-4 rounded-xl border-2 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary text-lg ${
+              className={`w-full text-start p-4 rounded-xl border-2 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary text-lg min-h-[44px] ${
                 state === "correct"
                   ? "border-wp-green bg-wp-green-light/10 text-wp-green font-bold shadow-sm scale-[1.02]"
                   : state === "wrong"
@@ -216,7 +216,7 @@ function MultipleChoiceQuiz({
           </div>
           <button
             onClick={() => setPicked(null)}
-            className="px-4 py-2 border-2 border-current rounded-lg text-sm hover:opacity-80 transition-opacity"
+            className="px-4 py-2 border-2 border-current rounded-lg text-sm hover:opacity-80 transition-opacity min-h-[44px]"
           >
             Try Again
           </button>
@@ -412,7 +412,7 @@ export function PracticeArea({ materials }: Props) {
                     <span className="font-bold text-foreground">"{item.data.hintWord}"</span> in
                     your answer.
                   </p>
-                  <p className="font-medium text-lg mt-2 text-foreground border-l-4 border-primary/30 pl-3">
+                  <p className="font-medium text-lg mt-2 text-foreground border-s-4 border-primary/30 ps-3">
                     {item.data.sentence}
                   </p>
                 </div>
@@ -432,7 +432,7 @@ export function PracticeArea({ materials }: Props) {
                   <span className="text-primary font-bold text-sm uppercase tracking-wider">
                     Correct the mistake
                   </span>
-                  <p className="font-medium text-lg mt-2 text-destructive border-l-4 border-destructive/30 pl-3 line-through decoration-2">
+                  <p className="font-medium text-lg mt-2 text-destructive border-s-4 border-destructive/30 ps-3 line-through decoration-2">
                     {item.data.wrong}
                   </p>
                 </div>

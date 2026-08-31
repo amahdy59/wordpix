@@ -37,8 +37,16 @@ import { HEADER_BYTES, isRealArtwork } from "./lib/image-format.mjs";
 const execFileAsync = promisify(execFile);
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-const FILE_KEY = process.env.FIGMA_FILE_KEY ?? "gRlyhrMavAHXUAT5brWFWu";
-const TOKEN = process.env.FIGMA_TOKEN;
+function fileKeyFromLink(value) {
+  const match = value?.match(/(?:www\.)?figma\.com\/(?:design|file)\/([A-Za-z0-9]+)/);
+  return match?.[1];
+}
+
+const FILE_KEY =
+  process.env.FIGMA_FILE_KEY ??
+  fileKeyFromLink(process.env.FIGMA_FILE_LINK ?? process.env.Figma_File_Link) ??
+  "gRlyhrMavAHXUAT5brWFWu";
+const TOKEN = process.env.FIGMA_TOKEN ?? process.env.Figma_Token;
 const API = "https://api.figma.com/v1";
 
 /**
@@ -129,6 +137,7 @@ const OPTS = {
   checkpointEvery: Number(valuesOf("--checkpoint-every")[0] ?? 0),
   /** Fetch one image, report its real size, and stop. */
   probe: has("--probe"),
+  skipUnits: Number(valuesOf("--skip-units")[0] ?? 0),
 };
 
 if (!OPTS.images && !OPTS.content) {
@@ -141,9 +150,19 @@ if (!TOKEN) {
 }
 
 /** Fetch with retry — Figma rate-limits hard on large files. */
-async function api(path, { retries = 4 } = {}) {
+async function api(path, { retries = 8, timeoutMs = 90_000 } = {}) {
   for (let attempt = 0; ; attempt++) {
-    const res = await fetch(`${API}${path}`, { headers: { "X-Figma-Token": TOKEN } });
+    let res;
+    try {
+      res = await fetch(`${API}${path}`, {
+        headers: { "X-Figma-Token": TOKEN },
+        signal: AbortSignal.timeout(timeoutMs),
+      });
+    } catch (error) {
+      if (attempt >= retries) throw error;
+      await new Promise((r) => setTimeout(r, 2000 * 2 ** attempt));
+      continue;
+    }
     if (res.ok) return res.json();
     const retriable = res.status === 429 || res.status >= 500;
     if (!retriable || attempt >= retries) {
@@ -206,6 +225,39 @@ async function readAppUnitIds() {
   } catch {
     return new Map();
   }
+}
+
+/**
+ * The Figma file is large enough that its complete document response is prone
+ * to being terminated in transit. Read the page/frame index first, then fetch
+ * only lesson and Learning Materials frames in small batches.
+ */
+async function readImportFrames(appUnits) {
+  const file = await api(`/files/${FILE_KEY}?depth=2`);
+  const topLevelFrames = (file.document?.children ?? []).flatMap((page) => page.children ?? []);
+  const isMaterials = (frame) => /learning\s*materials?/i.test(frame.name);
+  const relevant = topLevelFrames.filter(
+    (frame) =>
+      frame.type === "FRAME" &&
+      ((OPTS.content && isMaterials(frame)) || appUnits.has(canonicalKey(frame.name)))
+  );
+  console.log(`Found ${relevant.length} relevant top-level frames.`);
+  const hydrated = new Map();
+  let loaded = 0;
+  await pooled(relevant, Math.min(2, OPTS.concurrency), async (frame) => {
+    const { nodes } = await api(
+      `/files/${FILE_KEY}/nodes?ids=${encodeURIComponent(frame.id)}&depth=5`
+    );
+    const node = nodes?.[frame.id]?.document;
+    if (node) hydrated.set(frame.id, node);
+    loaded += 1;
+    if (loaded % 5 === 0 || loaded === relevant.length) {
+      console.log(`  loaded frame ${loaded}/${relevant.length}`);
+    }
+  });
+
+  console.log(`Loaded ${hydrated.size}/${relevant.length} lesson and material frames.`);
+  return relevant.map((frame) => hydrated.get(frame.id)).filter(Boolean);
 }
 
 /** Depth-first walk over a Figma node tree. */
@@ -656,12 +708,9 @@ async function downloadImages(unit, cards) {
 
 async function main() {
   console.log(`Reading Figma file ${FILE_KEY} …`);
-  const file = await api(`/files/${FILE_KEY}`);
-  const pages = file.document.children ?? [];
-  const frames = pages.flatMap((p) => p.children ?? []);
-  let units = pairFrames(frames);
-
   const appUnits = await readAppUnitIds();
+  const frames = await readImportFrames(appUnits);
+  let units = pairFrames(frames);
   const discovered = units.length;
 
   // Drop design-system, wireframe and flow frames, then resolve each remaining
@@ -688,6 +737,7 @@ async function main() {
   }
 
   if (OPTS.units.length) units = units.filter((u) => OPTS.units.includes(u.id));
+  if (OPTS.skipUnits > 0) units = units.slice(OPTS.skipUnits);
 
   console.log(
     `Discovered ${discovered} frame(s); ${units.length} unit(s) selected ` +
