@@ -1,40 +1,11 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
-import type * as React from "react";
-import {
-  BookOpen,
-  MessageSquareQuote,
-  MessagesSquare,
-  AlertTriangle,
-  Type,
-  PencilLine,
-  Globe,
-  Table2,
-  Layers,
-  CheckCircle2,
-  XCircle,
-  Volume2,
-  Eye,
-  EyeOff,
-} from "lucide-react";
+import { CheckCircle2, XCircle, Volume2, Eye, EyeOff } from "lucide-react";
 import { useAudio } from "../shared/useAudio";
-import { HomeIndicator } from "../shared/HomeIndicator";
-import {
-  VocabularyDetailsSection,
-  PronunciationSection,
-  PriorityTiersSection,
-  CollocationsSection,
-  SynonymsAntonymsSection,
-  AdditionalExercisesSection,
-  ErrorCorrectionSection,
-  WritingPromptsSection,
-  SelfAssessmentSection,
-} from "./ExtraSections";
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { BackButton } from "../shared/BackButton";
 import { StudyShell } from "./study/StudyShell";
 import { COURSE_UNITS, DEFAULT_UNIT_ID, type VocabularyItem } from "../data/lessons";
-import { loadedUnitVocabulary } from "../data/vocabulary";
 import { loadLearningMaterials } from "./registry";
 import { BLANK_TOKEN, type PhraseKind, type UnitLearningMaterials } from "./types";
 import { resolveAssetUrl } from "../../utils/assetUrl";
@@ -46,77 +17,11 @@ interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
-type SectionId =
-  | "words"
-  | "passage"
-  | "vocabulary-details"
-  | "pronunciation"
-  | "priority-tiers"
-  | "collocations"
-  | "synonyms-antonyms"
-  | "phrases"
-  | "word-formation"
-  | "dialogue"
-  | "culture"
-  | "mistakes"
-  | "practice"
-  | "additional-exercises"
-  | "error-correction"
-  | "writing-prompts"
-  | "self-assessment"
-  | "reference";
-
-const SECTION_META: Record<SectionId, { label: string; icon: React.ElementType }> = {
-  words: { label: "Words", icon: Layers },
-  passage: { label: "Reading", icon: BookOpen },
-  "vocabulary-details": { label: "Vocabulary Details", icon: Layers },
-  pronunciation: { label: "Pronunciation Guide", icon: Type },
-  "priority-tiers": { label: "Priority Tiers", icon: AlertTriangle },
-  collocations: { label: "Collocations", icon: MessageSquareQuote },
-  "synonyms-antonyms": { label: "Synonyms & Antonyms", icon: PencilLine },
-  phrases: { label: "Idioms & Phrasal Verbs", icon: MessageSquareQuote },
-  "word-formation": { label: "Word Forms", icon: Type },
-  dialogue: { label: "Dialogue", icon: MessagesSquare },
-  culture: { label: "Culture & Usage", icon: Globe },
-  mistakes: { label: "Common Mistakes", icon: AlertTriangle },
-  practice: { label: "Practice", icon: PencilLine },
-  "additional-exercises": { label: "Additional Exercises", icon: PencilLine },
-  "error-correction": { label: "Error Correction", icon: AlertTriangle },
-  "writing-prompts": { label: "Writing Prompts", icon: PencilLine },
-  "self-assessment": { label: "Self-Assessment", icon: CheckCircle2 },
-  reference: { label: "Reference", icon: Table2 },
-};
-
 const PHRASE_KIND_LABEL: Record<PhraseKind, string> = {
   idiom: "idiom",
   "phrasal-verb": "phrasal verb",
   collocation: "collocation",
 };
-
-/** Which sections this unit actually has content for, in reading order. */
-function availableSections(m: UnitLearningMaterials): SectionId[] {
-  const present: [SectionId, boolean][] = [
-    ["words", Boolean(m.subtopics?.length)],
-    ["passage", Boolean(m.passage)],
-    ["vocabulary-details", Boolean(m.registerLabels?.length || m.visualVocabularyMap?.length)],
-    ["pronunciation", Boolean(m.pronunciationGuide?.length)],
-    ["priority-tiers", Boolean(m.priorityTiers)],
-    ["collocations", Boolean(m.collocations?.length || m.collocationsQuiz?.length)],
-    ["synonyms-antonyms", Boolean(m.synonymsAntonyms?.length)],
-    ["phrases", Boolean(m.phrases?.length)],
-    ["word-formation", Boolean(m.wordFormation?.length)],
-    ["dialogue", Boolean(m.dialogue?.lines.length)],
-    ["culture", Boolean(m.culturalNotes?.length)],
-    ["mistakes", Boolean(m.mistakes?.length)],
-    ["practice", Boolean(m.blankExercises?.length)],
-    ["additional-exercises", Boolean(m.additionalExercises)],
-    ["error-correction", Boolean(m.errorCorrection?.length)],
-    ["writing-prompts", Boolean(m.writingPrompts?.length)],
-    ["self-assessment", Boolean(m.selfAssessment?.length)],
-    ["reference", Boolean(m.wordMeta?.length)],
-  ];
-  return present.filter(([, ok]) => ok).map(([id]) => id);
-}
 
 const CARD = "bg-wp-card rounded-2xl border border-border p-5 shadow-sm";
 
@@ -136,11 +41,8 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
   const unit = COURSE_UNITS[unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
   const [materials, setMaterials] = useState<UnitLearningMaterials | null>(null);
   const [status, setStatus] = useState<"loading" | "ready" | "empty">("loading");
-  const [section, setSection] = useState<SectionId>("passage");
 
-  // No reset-on-change here: RouterView keys this screen by unit id, so a
-  // different unit remounts with fresh "loading" state rather than needing an
-  // effect to clear the previous unit's materials.
+  // RouterView keys this screen by unit id, so a different unit remounts with fresh state.
   useEffect(() => {
     let cancelled = false;
     loadLearningMaterials(unit.id)
@@ -152,8 +54,6 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
         }
         setMaterials(loaded);
         setStatus("ready");
-        const sections = availableSections(loaded);
-        setSection(sections.includes("passage") ? "passage" : (sections[0] ?? "passage"));
       })
       .catch(() => {
         if (!cancelled) setStatus("empty");
@@ -163,65 +63,45 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
     };
   }, [unit.id]);
 
-  const sections = useMemo(() => (materials ? availableSections(materials) : []), [materials]);
-
   const handleBack = useCallback(() => {
     dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id });
   }, [dispatch, unit.id]);
 
-  if (unit.id === "bathroom") {
-    if (status === "loading") {
-      return (
-        <div className="min-h-dvh bg-background flex flex-col items-center justify-center p-8 text-center">
-          <StatusBar />
-          <div
-            className="size-10 rounded-full border-4 border-primary border-t-transparent animate-spin mb-4"
-            aria-hidden
-          />
-          <p className="font-sans text-muted-foreground" role="status">
-            Loading study materials…
-          </p>
-        </div>
-      );
-    }
+  if (status === "loading") {
+    return (
+      <div className="min-h-dvh bg-background flex flex-col items-center justify-center p-8 text-center">
+        <StatusBar />
+        <div
+          className="size-10 rounded-full border-4 border-primary border-t-transparent animate-spin mb-4"
+          aria-hidden
+        />
+        <p className="font-sans text-muted-foreground" role="status">
+          Loading study materials…
+        </p>
+      </div>
+    );
+  }
 
-    if (status === "empty" || !materials) {
-      return (
-        <div className="min-h-dvh bg-background flex flex-col">
-          <StatusBar />
-          <header className="px-4 py-3 border-b border-border flex items-center gap-3">
-            <BackButton onClick={handleBack} aria-label={`Back to ${unit.name}`} />
-            <div className="min-w-0">
-              <h1 className="font-sans font-bold text-xl text-foreground">{unit.name}</h1>
-            </div>
-          </header>
-          <div className="flex-1 flex flex-col items-center justify-center p-8 text-center">
-            <p className="font-sans text-muted-foreground mb-4">
-              No study materials available for this unit yet.
-            </p>
-            <button
-              onClick={handleBack}
-              className="px-6 py-2 bg-primary text-primary-foreground rounded-full font-bold min-h-[44px]"
-            >
-              Go Back
-            </button>
-          </div>
-        </div>
-      );
-    }
-
+  if (status === "empty" || !materials) {
     return (
       <div className="min-h-dvh bg-background flex flex-col">
         <StatusBar />
-        <div className="flex-1 flex flex-col relative overflow-hidden">
-          <StudyShell
-            unitId={unit.id}
-            unit={unit}
-            materials={materials}
-            initialArea={area}
-            initialNodeId={nodeId}
-            dispatch={dispatch}
-          />
+        <header className="px-4 py-3 border-b border-border flex items-center gap-3">
+          <BackButton onClick={handleBack} aria-label={`Back to ${unit.name}`} />
+          <div className="min-w-0">
+            <h1 className="font-sans font-bold text-xl text-foreground">{unit.name}</h1>
+          </div>
+        </header>
+        <div className="flex-1 flex flex-col items-center justify-center p-8 text-center">
+          <p className="font-sans text-muted-foreground mb-4">
+            No study materials available for this unit yet.
+          </p>
+          <button
+            onClick={handleBack}
+            className="px-6 py-3 bg-primary text-primary-foreground rounded-2xl font-bold min-h-[48px] shadow-sm hover:bg-primary/90 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          >
+            Go Back
+          </button>
         </div>
       </div>
     );
@@ -230,105 +110,23 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
   return (
     <div className="min-h-dvh bg-background flex flex-col">
       <StatusBar />
-      <header className="px-4 pt-2 pb-3 border-b border-border">
-        <div className="flex items-center gap-3">
-          <BackButton onClick={handleBack} aria-label={`Back to ${unit.name}`} />
-          {/* min-w-0 so a long unit name wraps instead of pushing the header wide. */}
-          <div className="min-w-0">
-            <p className="font-sans text-xs font-bold uppercase tracking-wide text-muted-foreground">
-              Study Materials
-            </p>
-            <h1 className="font-sans font-bold text-xl text-foreground leading-tight">
-              {unit.name}
-            </h1>
-          </div>
-        </div>
-
-        {sections.length > 0 && (
-          <nav aria-label="Study sections" className="mt-3 -mx-4 px-4 overflow-x-auto">
-            <ul className="flex gap-2 w-max">
-              {sections.map((id) => {
-                const { label, icon: Icon } = SECTION_META[id];
-                const isActive = id === section;
-                return (
-                  <li key={id}>
-                    <button
-                      type="button"
-                      onClick={() => setSection(id)}
-                      aria-current={isActive ? "true" : undefined}
-                      // These are the primary navigation of the study screen
-                      // and sat at 34px tall, under the 44px touch minimum —
-                      // on the one screen that is a horizontal scroller, where
-                      // a mistimed tap scrolls instead of selecting.
-                      className={`inline-flex items-center gap-2 rounded-full px-4 min-h-[44px] text-sm font-sans font-bold border transition-colors outline-none focus-visible:ring-2 focus-visible:ring-primary ${
-                        isActive
-                          ? "bg-primary text-primary-foreground border-primary"
-                          : "bg-wp-card text-muted-foreground border-border hover:border-primary/50"
-                      }`}
-                    >
-                      <Icon className="size-4" aria-hidden />
-                      {label}
-                    </button>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
-        )}
-      </header>
-
-      <main className="flex-1 px-4 py-5 space-y-4 max-w-3xl w-full mx-auto">
-        {status === "loading" && (
-          <p role="status" className="font-sans text-muted-foreground">
-            Loading study materials…
-          </p>
-        )}
-
-        {status === "empty" && (
-          <div className={CARD}>
-            <p className="font-sans font-bold text-foreground">No study materials yet</p>
-            <p className="font-sans text-sm text-muted-foreground mt-1">
-              {unit.name} has not been imported from the design file yet. The word lessons are
-              unaffected.
-            </p>
-          </div>
-        )}
-
-        {status === "ready" && materials && (
-          <>
-            {section === "words" && (
-              <WordsSection materials={materials} unitVocabulary={loadedUnitVocabulary(unit.id)} />
-            )}
-            {section === "passage" && <PassageSection materials={materials} />}
-            {section === "vocabulary-details" && <VocabularyDetailsSection materials={materials} />}
-            {section === "pronunciation" && <PronunciationSection materials={materials} />}
-            {section === "priority-tiers" && <PriorityTiersSection materials={materials} />}
-            {section === "collocations" && <CollocationsSection materials={materials} />}
-            {section === "synonyms-antonyms" && <SynonymsAntonymsSection materials={materials} />}
-            {section === "phrases" && <PhrasesSection materials={materials} />}
-            {section === "word-formation" && <WordFormationSection materials={materials} />}
-            {section === "dialogue" && <DialogueSection materials={materials} />}
-            {section === "culture" && <CultureSection materials={materials} />}
-            {section === "mistakes" && <MistakesSection materials={materials} />}
-            {section === "practice" && <PracticeSection materials={materials} />}
-            {section === "additional-exercises" && (
-              <AdditionalExercisesSection materials={materials} />
-            )}
-            {section === "error-correction" && <ErrorCorrectionSection materials={materials} />}
-            {section === "writing-prompts" && <WritingPromptsSection materials={materials} />}
-            {section === "self-assessment" && <SelfAssessmentSection materials={materials} />}
-            {section === "reference" && <ReferenceSection materials={materials} />}
-          </>
-        )}
-      </main>
-      <HomeIndicator />
+      <div className="flex-1 flex flex-col relative overflow-hidden">
+        <StudyShell
+          unitId={unit.id}
+          unit={unit}
+          materials={materials}
+          initialArea={area}
+          initialNodeId={nodeId}
+          dispatch={dispatch}
+        />
+      </div>
     </div>
   );
 });
 
 /* ---------------------------------------------------------------- sections */
 
-function WordsSection({
+export function WordsSection({
   materials,
   unitVocabulary,
 }: {
@@ -757,7 +555,7 @@ export function WordFormationSection({ materials }: { materials: UnitLearningMat
  * an image for a sentence, and several answers here ("dry", "laundry") have no
  * picture to pick. Typed answers keep the exercise faithful to the design.
  */
-function PracticeSection({ materials }: { materials: UnitLearningMaterials }) {
+export function PracticeSection({ materials }: { materials: UnitLearningMaterials }) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [checked, setChecked] = useState(false);
 

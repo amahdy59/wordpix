@@ -6,6 +6,9 @@ import {
   Dumbbell,
   LibraryBig,
   MessageCircleMore,
+  ArrowLeft,
+  X,
+  Menu,
 } from "lucide-react";
 import type { UnitLearningMaterials } from "../types";
 import type { CourseUnit } from "../../data/lessons";
@@ -208,16 +211,16 @@ export function StudyShell({
               <div className="flex-1 min-w-0">
                 <button
                   onClick={handleBackToHome}
-                  className="flex min-h-[44px] w-full items-center gap-2 rounded-xl px-2 text-start text-sm font-bold hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  className="flex min-h-[44px] w-full items-center gap-2.5 rounded-xl px-2 py-1.5 text-start text-sm font-bold text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 >
-                  <span aria-hidden>&larr;</span>
-                  <span className="truncate">{unit.name}</span>
+                  <ArrowLeft className="size-4 shrink-0" aria-hidden />
+                  <span className="truncate">{unit.name} Overview</span>
                 </button>
 
                 <div className="mt-4">
                   <div className="mb-2 flex items-center justify-between text-xs font-bold">
                     <span className="text-muted-foreground">Unit progress</span>
-                    <span>{overallProgress}%</span>
+                    <span className="text-primary font-bold">{overallProgress}%</span>
                   </div>
                   <div className="h-2 overflow-hidden rounded-full bg-secondary">
                     <div
@@ -234,10 +237,10 @@ export function StudyShell({
               </div>
               <button
                 onClick={closeDrawer}
-                className="lg:hidden flex size-11 items-center justify-center rounded-xl bg-secondary text-foreground hover:bg-secondary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring shrink-0"
-                aria-label="Close menu"
+                className="lg:hidden flex size-11 items-center justify-center rounded-xl bg-secondary text-foreground hover:bg-secondary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring shrink-0"
+                aria-label="Close navigation menu"
               >
-                ✕
+                <X className="size-5" aria-hidden />
               </button>
             </div>
 
@@ -343,28 +346,29 @@ export function StudyShell({
           </aside>
 
           {/* Mobile Header */}
-          <div className="sticky top-0 z-20 flex shrink-0 items-center border-b bg-background/95 p-3 backdrop-blur lg:hidden">
+          <div className="sticky top-0 z-20 flex shrink-0 items-center justify-between border-b border-border bg-background/95 px-4 py-2.5 backdrop-blur lg:hidden gap-3">
             <button
               onClick={handleBackToHome}
-              className="min-h-[44px] min-w-[44px] p-2 -ms-2 me-2 flex items-center justify-center"
-              aria-label="Back to home"
+              className="size-11 rounded-xl hover:bg-secondary flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              aria-label={`Back to ${unit.name} overview`}
             >
-              ←
+              <ArrowLeft className="size-5" aria-hidden />
             </button>
             <div className="min-w-0 flex-1">
               <div className="truncate text-xs font-bold uppercase tracking-wider text-muted-foreground">
                 {unit.name} / {areaMeta[currentArea].label}
               </div>
-              <div className="truncate text-sm font-bold">
+              <div className="truncate text-sm font-bold text-foreground">
                 {activeNode?.title || areaMeta[currentArea].description}
               </div>
             </div>
             <button
               ref={contentsBtnRef}
               onClick={() => setIsMobileDrawerOpen(true)}
-              className="ms-3 min-h-[44px] rounded bg-secondary px-3 py-2 text-sm font-bold"
+              className="shrink-0 min-h-[44px] inline-flex items-center gap-2 rounded-full border border-border bg-secondary/70 px-4 py-2 text-xs font-bold text-foreground hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
-              Contents
+              <Menu className="size-4" aria-hidden />
+              <span>Contents</span>
             </button>
           </div>
 

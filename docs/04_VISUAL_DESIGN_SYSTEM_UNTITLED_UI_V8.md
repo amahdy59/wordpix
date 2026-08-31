@@ -158,20 +158,28 @@ Rules:
 
 ## Component variant discipline
 
-For every component, define:
+### Button System & Hierarchy
 
-- purpose;
-- anatomy;
-- sizes;
-- variants;
-- states;
-- content limits;
-- theme behavior;
-- child/adult behavior;
-- RTL behavior;
-- keyboard and screen-reader behavior;
-- responsive behavior;
-- do/don’t examples.
+All interactive buttons across the application must strictly adhere to the following hierarchy:
+
+| Variant                     | Purpose & Appearance                                                                                  | Sizing & Spacing Tokens                                                                                                   | Focus & Interaction Tokens                                                                                                                                                 |
+| :-------------------------- | :---------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Primary CTA**             | Primary page or flow action (e.g., "Continue", "Reveal Word", "Got It"). Solid brand fill.            | `min-h-[48px]` to `min-h-[56px]`, `px-6 py-3`, `rounded-2xl` (or `rounded-xl`), font weight 700.                          | `hover:bg-primary/90`, `active:scale-[0.98]`, `focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2`. No text underlines.                              |
+| **Secondary / Outline**     | Alternative action (e.g., "Previous", "Show Details", "Practice Again"). Card background with border. | `min-h-[48px]`, `px-5 py-2.5`, `rounded-2xl` (or `rounded-xl`), `border border-border bg-card text-foreground font-bold`. | `hover:bg-secondary hover:border-primary/40`, `active:scale-[0.98]`, `focus-visible:ring-2 focus-visible:ring-ring`.                                                       |
+| **Pill / Filter Chip**      | Topic & category switching (e.g., "All", "Idioms", "Phrasal Verbs").                                  | `min-h-[44px]`, `px-4 py-2`, `rounded-full`, text size `text-xs` to `text-sm font-bold`.                                  | **Selected**: `bg-primary text-primary-foreground border-primary`. **Unselected**: `border-border bg-card text-muted-foreground hover:bg-secondary hover:text-foreground`. |
+| **Icon Action**             | Compact utility action (e.g., Audio playback, Close menu, Back).                                      | `size-11` (`44x44px`), `rounded-xl` or `rounded-full`, centered icon.                                                     | `bg-secondary text-primary hover:bg-primary/20 transition-colors`, explicit `aria-label`.                                                                                  |
+| **Status / Category Badge** | Non-interactive metadata chips (e.g., "Needs practice", "A1-A2", "3 min").                            | `px-2.5 py-1`, `rounded-lg`, `text-xs font-semibold`, `bg-secondary text-secondary-foreground border border-border/50`.   | Static element; generous horizontal and vertical padding prevents clipped glyphs.                                                                                          |
+
+### Spacing, Padding, and Margin Scale
+
+All layout containers and components must use the project 4px/8px modular spacing scale:
+
+- **Layout Viewports & Screens**: `p-4 sm:p-6 md:p-8`
+- **Component Cards & Sections**: `p-5 md:p-6`, rounded with `rounded-2xl`
+- **Interactive Rows & List Items**: `p-3.5 sm:p-4`, `gap-3 sm:gap-4`, rounded with `rounded-xl`
+- **Section-to-Section Rhythm**: `space-y-6 md:space-y-8`
+- **Internal Card Flow Rhythm**: `space-y-3` to `space-y-4`
+- **Button / Input Height Rule**: Every clickable element strictly enforces `min-h-[44px]` (WCAG 2.5.5 Level AAA touch target criterion).
 
 Do not create a new variant solely to fix one screen. First check whether the need is a semantic token, layout wrapper, or content issue.
 
@@ -179,16 +187,16 @@ Do not create a new variant solely to fix one screen. First check whether the ne
 
 Maintain a mapping table:
 
-| Figma | Code |
-|---|---|
+| Figma               | Code                                   |
+| ------------------- | -------------------------------------- |
 | Variable collection | CSS custom properties or token package |
-| Component property | Typed component prop |
-| Variant | Enumerated prop or composition |
-| Boolean property | Boolean prop |
-| Slot | `children` or named slot |
-| Mode | Theme/data attribute |
-| Interaction note | Testable behavior |
-| Deprecated style | Deprecated token with migration note |
+| Component property  | Typed component prop                   |
+| Variant             | Enumerated prop or composition         |
+| Boolean property    | Boolean prop                           |
+| Slot                | `children` or named slot               |
+| Mode                | Theme/data attribute                   |
+| Interaction note    | Testable behavior                      |
+| Deprecated style    | Deprecated token with migration note   |
 
 Rules:
 

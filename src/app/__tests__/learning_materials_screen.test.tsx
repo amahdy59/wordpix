@@ -1,57 +1,32 @@
 import { describe, expect, it, vi } from "vitest";
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { LearningMaterialsScreen } from "../learning/LearningMaterialsScreen";
+import {
+  LearningMaterialsScreen,
+  PassageSection,
+  PhrasesSection,
+  PracticeSection,
+} from "../learning/LearningMaterialsScreen";
+import { loadLearningMaterials, unitsWithLearningMaterials } from "../learning/registry";
 import { hashToRoute, screenToHash } from "../router/useHashRouter";
 import { reducer } from "../store/reducer";
 import { COURSE_UNITS } from "../data/lessons";
-import { unitsWithLearningMaterials } from "../learning/registry";
 
 describe("LearningMaterialsScreen", () => {
-  it("opens on the reading passage and offers a section for each imported block", async () => {
+  it("opens on the study home with unit study path and activities", async () => {
     render(<LearningMaterialsScreen unitId="bedroom" dispatch={vi.fn()} />);
 
     await waitFor(() =>
-      expect(screen.getByRole("heading", { name: /reading passage/i })).toBeInTheDocument()
+      expect(screen.getByRole("heading", { name: /Bedroom/i })).toBeInTheDocument()
     );
-    expect(screen.getByText(/My New Bedroom/)).toBeInTheDocument();
-
-    for (const label of [
-      "Words",
-      "Reading",
-      "Idioms & Phrasal Verbs",
-      "Dialogue",
-      "Common Mistakes",
-      "Word Forms",
-      "Practice",
-      "Culture & Usage",
-      "Reference",
-    ]) {
-      expect(screen.getByRole("button", { name: new RegExp(label, "i") })).toBeInTheDocument();
-    }
-  });
-
-  it.skip("reveals the explanation only after a comprehension answer is chosen", async () => {
-    const user = userEvent.setup();
-    render(<LearningMaterialsScreen unitId="bedroom" dispatch={vi.fn()} />);
-
-    await waitFor(() => screen.getByRole("heading", { name: /comprehension questions/i }));
-
-    const explanation = /floss cleans between teeth rather than brushing them/i;
-    expect(screen.queryByText(explanation)).not.toBeInTheDocument();
-
-    await user.click(
-      screen.getByRole("button", { name: /What was the first piece of furniture/i })
-    );
-    expect(screen.getByText(explanation)).toBeInTheDocument();
+    expect(screen.getByText(/Your Study Path/i)).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Continue/i })).toBeInTheDocument();
   });
 
   it("filters phrases down to phrasal verbs without losing the idioms", async () => {
     const user = userEvent.setup();
-    render(<LearningMaterialsScreen unitId="bedroom" dispatch={vi.fn()} />);
-
-    await waitFor(() => screen.getByRole("button", { name: /Idioms & Phrasal Verbs/i }));
-    await user.click(screen.getByRole("button", { name: /Idioms & Phrasal Verbs/i }));
+    const materials = (await loadLearningMaterials("bedroom"))!;
+    render(<PhrasesSection materials={materials} />);
 
     expect(screen.getByText("hit the pillow")).toBeInTheDocument();
     expect(screen.getByText("put away")).toBeInTheDocument();
@@ -66,10 +41,8 @@ describe("LearningMaterialsScreen", () => {
 
   it("marks fill-in-the-blank answers only once the learner asks", async () => {
     const user = userEvent.setup();
-    render(<LearningMaterialsScreen unitId="bedroom" dispatch={vi.fn()} />);
-
-    await waitFor(() => screen.getByRole("button", { name: /Practice/i }));
-    await user.click(screen.getByRole("button", { name: /Practice/i }));
+    const materials = (await loadLearningMaterials("bedroom"))!;
+    render(<PracticeSection materials={materials} />);
 
     await user.type(screen.getByLabelText("Answer for sentence 1"), "wardrobe");
     expect(screen.queryByText(/of 10 correct/i)).not.toBeInTheDocument();
@@ -79,9 +52,8 @@ describe("LearningMaterialsScreen", () => {
   });
 
   it("shows unconvertible comprehension questions as unscored prompts", async () => {
-    // Figma authors these open-ended, and some do not convert to multiple
-    // choice honestly. They must still reach the learner rather than vanish.
-    render(<LearningMaterialsScreen unitId="bedroom" dispatch={vi.fn()} />);
+    const materials = (await loadLearningMaterials("bedroom"))!;
+    render(<PassageSection materials={materials} />);
 
     await waitFor(() => screen.getByRole("heading", { name: /think about it/i }));
     const prompts = screen
@@ -90,7 +62,6 @@ describe("LearningMaterialsScreen", () => {
       .querySelectorAll("li");
     expect(prompts.length).toBeGreaterThan(0);
 
-    // They are prompts, not a quiz: no options to click inside that block.
     expect(
       screen
         .getByRole("heading", { name: /think about it/i })
@@ -100,29 +71,21 @@ describe("LearningMaterialsScreen", () => {
   });
 
   it("marks an inferred idiom or phrasal-verb label as inferred", async () => {
-    const user = userEvent.setup();
-    render(<LearningMaterialsScreen unitId="bedroom" dispatch={vi.fn()} />);
+    const materials = (await loadLearningMaterials("bedroom"))!;
+    render(<PhrasesSection materials={materials} />);
 
-    await waitFor(() => screen.getByRole("button", { name: /Idioms & Phrasal Verbs/i }));
-    await user.click(screen.getByRole("button", { name: /Idioms & Phrasal Verbs/i }));
-
-    // The source file tags kinds for some units and not others; where it does
-    // not, the label has to read as a guess rather than a fact.
     expect(screen.getAllByText(/\(inferred\)/).length).toBeGreaterThan(0);
   });
 
   it("tells the learner when a unit has not been imported yet", async () => {
-    // Named `art-studio` until the design file grew materials for it, which is
-    // exactly the brittleness worth removing: the unit without materials is
-    // whichever one Figma has not covered yet, not a fixed id. Today that is
-    // `human-body` â€” the one unit the file splits four ways â€” and the day that
-    // is imported too, this test has nothing left to check and says so.
     const withMaterials = new Set(unitsWithLearningMaterials());
     const gap = Object.keys(COURSE_UNITS).find((id) => !withMaterials.has(id));
-    expect(gap, "every unit now has materials â€” delete this test").toBeDefined();
+    expect(gap, "every unit now has materials — delete this test").toBeDefined();
 
     render(<LearningMaterialsScreen unitId={gap!} dispatch={vi.fn()} />);
-    await waitFor(() => expect(screen.getByText(/no study materials yet/i)).toBeInTheDocument());
+    await waitFor(() =>
+      expect(screen.getByText(/no study materials available/i)).toBeInTheDocument()
+    );
   });
 });
 

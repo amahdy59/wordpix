@@ -113,7 +113,7 @@ function SentenceBuilder({
   };
 
   const reset = () => {
-    setAvailable([...initialTokens].sort(() => Math.random() - 0.5));
+    setAvailable(stableShuffle(initialTokens, attempts + 1));
     setSelected([]);
     setHasAnswered(false);
     setIsCorrect(false);

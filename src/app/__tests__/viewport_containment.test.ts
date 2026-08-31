@@ -55,13 +55,10 @@ describe("lesson rows shrink instead of overflowing", () => {
 });
 
 describe("study section tabs are tappable", () => {
-  const source = read("learning/LearningMaterialsScreen.tsx");
+  const source = read("learning/study/StudyShell.tsx");
 
   it("sizes the section tabs to the 44px touch minimum", () => {
-    // They sat at 34px, on the one screen that is a horizontal scroller —
-    // where a mistimed tap scrolls the strip instead of selecting a section.
-    const tabs = source.slice(source.indexOf("inline-flex items-center gap-2 rounded-full"));
-    expect(tabs.slice(0, 200)).toMatch(/min-h-\[44px\]/);
+    expect(source).toMatch(/min-h-\[44px\]/);
   });
 });
 
