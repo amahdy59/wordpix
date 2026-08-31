@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import type {
   UnitLearningMaterials,
   BlankExercise,
@@ -48,18 +48,10 @@ function SentenceBuilder({
   onComplete: (correct: boolean) => void;
 }) {
   const words = useMemo(() => sentence.split(" "), [sentence]);
-  // Reset local state when sentence changes
-  const [available, setAvailable] = useState<string[]>([]);
+  const [available, setAvailable] = useState<string[]>(() => shuffle(words));
   const [selected, setSelected] = useState<string[]>([]);
   const [hasAnswered, setHasAnswered] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
-
-  useEffect(() => {
-    setAvailable(shuffle(words));
-    setSelected([]);
-    setHasAnswered(false);
-    setIsCorrect(false);
-  }, [words]);
 
   const handleSelect = (idx: number) => {
     const w = available[idx];
@@ -169,11 +161,6 @@ function MultipleChoiceQuiz({
 }) {
   const [picked, setPicked] = useState<number | null>(null);
   const answered = picked !== null;
-
-  // Reset when question changes
-  useEffect(() => {
-    setPicked(null);
-  }, [question, options]);
 
   const handlePick = (i: number) => {
     setPicked(i);
@@ -308,11 +295,6 @@ export function PracticeArea({ materials }: Props) {
   const [isCurrentCorrect, setIsCurrentCorrect] = useState(false);
   const [finished, setFinished] = useState(false);
 
-  // When moving to a new question, reset the local correctness state
-  useEffect(() => {
-    setIsCurrentCorrect(false);
-  }, [currentIndex]);
-
   const handleComplete = (itemId: string, word: string, isCorrect: boolean) => {
     if (isCorrect) {
       setCompletedItems((prev) => {
@@ -337,6 +319,7 @@ export function PracticeArea({ materials }: Props) {
   const handleNext = () => {
     if (currentIndex < items.length - 1) {
       setCurrentIndex((i) => i + 1);
+      setIsCurrentCorrect(false);
     } else {
       setFinished(true);
     }
@@ -412,8 +395,9 @@ export function PracticeArea({ materials }: Props) {
             Rewrite the sentence
           </span>
           <p className="text-muted-foreground text-lg">
-            Include the word <span className="font-bold text-foreground">"{item.data.hintWord}"</span> in
-            your answer.
+            Include the word{" "}
+            <span className="font-bold text-foreground">"{item.data.hintWord}"</span> in your
+            answer.
           </p>
           <p className="font-medium text-xl mt-3 text-foreground border-s-4 border-primary/30 ps-4">
             {item.data.sentence}
@@ -481,7 +465,10 @@ export function PracticeArea({ materials }: Props) {
       </div>
 
       <div className="flex-1 overflow-y-auto px-4 py-8 md:py-12 relative flex justify-center pb-40">
-        <div className="max-w-3xl w-full mx-auto animate-in fade-in slide-in-from-bottom-8 duration-500 fill-mode-forwards" key={currentIndex}>
+        <div
+          className="max-w-3xl w-full mx-auto animate-in fade-in slide-in-from-bottom-8 duration-500 fill-mode-forwards"
+          key={currentIndex}
+        >
           {renderQuestion()}
         </div>
       </div>
