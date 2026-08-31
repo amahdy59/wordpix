@@ -9,11 +9,22 @@ import type {
 import { loadedUnitVocabulary } from "../../data/vocabulary";
 import type { VocabularyItem } from "../../data/lessons";
 import { BLANK_TOKEN } from "../types";
-import { CheckCircle2, XCircle, Check, ArrowRight } from "lucide-react";
-import { loadStudyProgress, saveStudyProgress, recordWordPractice } from "./progress";
+import {
+  CheckCircle2,
+  XCircle,
+  Check,
+  ArrowRight,
+  HelpCircle,
+  RotateCcw,
+  Award,
+} from "lucide-react";
+import { recordWordPractice } from "./progress";
+import type { UnitStudyProgress } from "./types";
 
 interface Props {
   materials: UnitLearningMaterials;
+  progress: UnitStudyProgress;
+  onProgressUpdate: (p: UnitStudyProgress) => void;
 }
 
 type PracticeItem =
@@ -29,10 +40,18 @@ type PracticeItem =
   | { id: string; type: "rewrite"; data: RewriteExercise; answerText: string }
   | { id: string; type: "errorCorrection"; data: ErrorCorrectionExercise; answerText: string };
 
-function shuffle<T>(array: T[]): T[] {
+interface Token {
+  id: string;
+  text: string;
+}
+
+function stableShuffle<T>(array: T[], seed: number): T[] {
   const copy = [...array];
+  let s = seed;
   for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    s = (s * 9301 + 49297) % 233280;
+    const rnd = s / 233280;
+    const j = Math.floor(rnd * (i + 1));
     [copy[i], copy[j]] = [copy[j], copy[i]];
   }
   return copy;
@@ -45,104 +64,158 @@ function SentenceBuilder({
 }: {
   sentence: string;
   hint: React.ReactNode;
-  onComplete: (correct: boolean) => void;
+  onComplete: (correct: boolean, isFirstTry: boolean) => void;
 }) {
-  const words = useMemo(() => sentence.split(" "), [sentence]);
-  const [available, setAvailable] = useState<string[]>(() => shuffle(words));
-  const [selected, setSelected] = useState<string[]>([]);
+  const targetWords = useMemo(() => sentence.trim().split(/\s+/), [sentence]);
+
+  const initialTokens: Token[] = useMemo(() => {
+    const raw = targetWords.map((word, idx) => ({ id: `token-${idx}-${word}`, text: word }));
+    let shuffled = stableShuffle(raw, sentence.length * 31 + targetWords.length);
+    // Ensure it doesn't accidentally start in the exact correct order if length > 1
+    if (shuffled.length > 1 && shuffled.map((t) => t.text).join(" ") === sentence) {
+      shuffled = [shuffled[1], shuffled[0], ...shuffled.slice(2)];
+    }
+    return shuffled;
+  }, [targetWords, sentence]);
+
+  const [available, setAvailable] = useState<Token[]>(initialTokens);
+  const [selected, setSelected] = useState<Token[]>([]);
   const [hasAnswered, setHasAnswered] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
+  const [attempts, setAttempts] = useState(0);
 
-  const handleSelect = (idx: number) => {
-    const w = available[idx];
-    setAvailable(available.filter((_, i) => i !== idx));
-    setSelected([...selected, w]);
+  const handleSelect = (token: Token) => {
+    setAvailable((prev) => prev.filter((t) => t.id !== token.id));
+    setSelected((prev) => [...prev, token]);
   };
 
-  const handleDeselect = (idx: number) => {
-    const w = selected[idx];
-    setSelected(selected.filter((_, i) => i !== idx));
-    setAvailable([...available, w]);
+  const handleDeselect = (token: Token) => {
+    setSelected((prev) => prev.filter((t) => t.id !== token.id));
+    setAvailable((prev) => [...prev, token]);
   };
 
   const checkAnswer = () => {
-    const answer = selected.join(" ");
+    const answer = selected.map((t) => t.text).join(" ");
     const correct = answer === sentence;
     setIsCorrect(correct);
     setHasAnswered(true);
-    onComplete(correct);
+    setAttempts((a) => a + 1);
+    onComplete(correct, attempts === 0);
+  };
+
+  const handleDontKnow = () => {
+    setSelected(targetWords.map((word, idx) => ({ id: `sol-${idx}`, text: word })));
+    setAvailable([]);
+    setIsCorrect(false);
+    setHasAnswered(true);
+    setAttempts((a) => a + 1);
+    onComplete(false, false);
   };
 
   const reset = () => {
-    setAvailable(shuffle(words));
+    setAvailable([...initialTokens].sort(() => Math.random() - 0.5));
     setSelected([]);
     setHasAnswered(false);
     setIsCorrect(false);
   };
 
   return (
-    <div className="rounded-2xl border-2 border-border/50 p-6 bg-card shadow-sm h-full flex flex-col justify-center">
+    <div className="rounded-2xl border border-border p-6 bg-card shadow-sm h-full flex flex-col justify-center">
       <div className="mb-6">{hint}</div>
-      <div className="min-h-[56px] flex flex-wrap gap-2 p-4 border-b-2 border-dashed border-border mb-6 bg-muted/20 rounded-xl">
-        {selected.map((w, i) => (
-          <button
-            key={i}
-            onClick={() => !hasAnswered && handleDeselect(i)}
-            disabled={hasAnswered}
-            className="px-4 py-2 bg-background border-2 border-border rounded-lg shadow-sm font-bold text-base hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all active:scale-95 min-h-[44px]"
-          >
-            {w}
-          </button>
-        ))}
+
+      {/* Screen reader instruction */}
+      <p className="sr-only">
+        Select word tokens in order to build the sentence. Press a selected word to remove it.
+      </p>
+
+      {/* Answer Slot */}
+      <div
+        className="min-h-[64px] flex flex-wrap gap-2 p-4 border-2 border-dashed border-border mb-6 bg-secondary/20 rounded-xl items-center"
+        aria-label="Your assembled sentence"
+      >
+        {selected.length === 0 ? (
+          <span className="text-sm text-muted-foreground italic select-none">
+            Tap words below to build the sentence…
+          </span>
+        ) : (
+          selected.map((token) => (
+            <button
+              key={token.id}
+              type="button"
+              onClick={() => !hasAnswered && handleDeselect(token)}
+              disabled={hasAnswered}
+              className="px-4 py-2 bg-background border border-primary/40 rounded-xl shadow-sm font-bold text-sm text-primary hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all active:scale-95 min-h-[44px]"
+            >
+              {token.text}
+            </button>
+          ))
+        )}
       </div>
-      <div className="flex flex-wrap gap-2 mb-8">
-        {available.map((w, i) => (
+
+      {/* Word Bank */}
+      <div className="flex flex-wrap gap-2 mb-8" aria-label="Available word bank">
+        {available.map((token) => (
           <button
-            key={i}
-            onClick={() => !hasAnswered && handleSelect(i)}
+            key={token.id}
+            type="button"
+            onClick={() => !hasAnswered && handleSelect(token)}
             disabled={hasAnswered}
-            className="px-4 py-2 bg-muted text-muted-foreground border-2 border-transparent rounded-lg font-bold text-base hover:bg-muted/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all active:scale-95 min-h-[44px]"
+            className="px-4 py-2 bg-secondary text-secondary-foreground border border-border rounded-xl font-bold text-sm hover:bg-secondary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all active:scale-95 min-h-[44px]"
           >
-            {w}
+            {token.text}
           </button>
         ))}
       </div>
 
+      {/* Feedback Announcement & Controls */}
       {hasAnswered ? (
         <div
-          className={`p-5 rounded-xl flex flex-col sm:flex-row items-center sm:justify-between gap-4 ${
+          role="status"
+          aria-live="polite"
+          className={`p-4 rounded-xl flex flex-col sm:flex-row items-center sm:justify-between gap-4 border ${
             isCorrect
-              ? "bg-wp-green-light/20 text-wp-green border-2 border-wp-green animate-in zoom-in-95 duration-200"
-              : "bg-destructive/10 text-destructive border-2 border-destructive animate-in shake duration-300"
+              ? "bg-wp-green-light/20 text-wp-green border-wp-green"
+              : "bg-destructive/10 text-destructive border-destructive"
           }`}
         >
           <div className="flex items-center gap-3">
             {isCorrect ? (
-              <CheckCircle2 className="w-8 h-8 shrink-0" />
+              <CheckCircle2 className="w-6 h-6 shrink-0" />
             ) : (
-              <XCircle className="w-8 h-8 shrink-0" />
+              <XCircle className="w-6 h-6 shrink-0" />
             )}
-            <span className="font-bold text-xl">
-              {isCorrect ? "Great job!" : "Not quite right"}
+            <span className="font-bold text-base">
+              {isCorrect ? "Correct sentence!" : `Correct answer: "${sentence}"`}
             </span>
           </div>
           {!isCorrect && (
             <button
+              type="button"
               onClick={reset}
-              className="px-6 py-3 bg-background border-2 border-current rounded-xl font-bold text-lg hover:opacity-80 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 min-h-[44px]"
+              className="px-4 py-2 bg-background border border-current rounded-xl font-bold text-sm hover:opacity-80 transition-opacity focus-visible:outline-none focus-visible:ring-2 min-h-[44px]"
             >
               Try Again
             </button>
           )}
         </div>
       ) : (
-        <button
-          onClick={checkAnswer}
-          disabled={selected.length === 0}
-          className="w-full py-4 bg-primary text-primary-foreground rounded-xl font-bold text-xl disabled:opacity-50 transition-transform active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 shadow-sm min-h-[44px]"
-        >
-          Check Answer
-        </button>
+        <div className="flex flex-col sm:flex-row gap-3">
+          <button
+            type="button"
+            onClick={handleDontKnow}
+            className="inline-flex items-center justify-center gap-2 px-4 py-3 border border-border text-muted-foreground hover:text-foreground rounded-xl font-bold text-sm hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+          >
+            <HelpCircle className="size-4" aria-hidden />I don&apos;t know
+          </button>
+          <button
+            type="button"
+            onClick={checkAnswer}
+            disabled={selected.length === 0}
+            className="flex-1 py-3 bg-primary text-primary-foreground rounded-xl font-bold text-base disabled:opacity-50 transition-transform active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm min-h-[44px]"
+          >
+            Check Answer
+          </button>
+        </div>
       )}
     </div>
   );
@@ -157,24 +230,39 @@ function MultipleChoiceQuiz({
   question: React.ReactNode;
   options: string[];
   correctIndex: number;
-  onComplete: (correct: boolean) => void;
+  onComplete: (correct: boolean, isFirstTry: boolean) => void;
 }) {
   const [picked, setPicked] = useState<number | null>(null);
-  const answered = picked !== null;
+  const [gaveUp, setGaveUp] = useState(false);
+  const [attempts, setAttempts] = useState(0);
+
+  const answered = picked !== null || gaveUp;
 
   const handlePick = (i: number) => {
     setPicked(i);
-    onComplete(i === correctIndex);
+    const correct = i === correctIndex;
+    onComplete(correct, attempts === 0);
+    setAttempts((a) => a + 1);
+  };
+
+  const handleDontKnow = () => {
+    setGaveUp(true);
+    setPicked(null);
+    onComplete(false, false);
+    setAttempts((a) => a + 1);
   };
 
   return (
-    <div className="rounded-2xl border-2 border-border/50 p-6 bg-card shadow-sm h-full flex flex-col justify-center">
-      <div className="mb-8 font-bold text-2xl text-foreground leading-relaxed">{question}</div>
-      <div className="grid gap-4">
+    <div className="rounded-2xl border border-border p-6 bg-card shadow-sm h-full flex flex-col justify-center">
+      <div className="mb-6 font-bold text-xl text-foreground leading-relaxed">{question}</div>
+      <div className="grid gap-3">
         {options.map((opt, i) => {
           const isCorrect = i === correctIndex;
           const isPicked = picked === i;
-          const state = !answered ? "idle" : isCorrect ? "correct" : isPicked ? "wrong" : "idle";
+          const showAnswer = isCorrect && (isPicked || gaveUp);
+          const showWrong = isPicked && !isCorrect;
+
+          const state = !answered ? "idle" : showAnswer ? "correct" : showWrong ? "wrong" : "idle";
 
           return (
             <button
@@ -182,43 +270,68 @@ function MultipleChoiceQuiz({
               type="button"
               disabled={answered}
               onClick={() => handlePick(i)}
-              className={`w-full text-start p-5 rounded-xl border-2 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary text-xl min-h-[56px] ${
+              className={`w-full text-start p-4 rounded-xl border transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary text-base min-h-[52px] ${
                 state === "correct"
-                  ? "border-wp-green bg-wp-green-light/10 text-wp-green font-bold shadow-sm scale-[1.02] z-10"
+                  ? "border-wp-green bg-wp-green-light/10 text-wp-green font-bold shadow-sm"
                   : state === "wrong"
                     ? "border-destructive bg-destructive/5 text-destructive font-bold"
-                    : "border-border/50 hover:border-primary/50 hover:bg-muted/30 font-medium active:scale-[0.98]"
+                    : "border-border hover:border-primary/50 hover:bg-secondary/40 font-medium active:scale-[0.99]"
               }`}
             >
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3">
                 <div
-                  className={`w-8 h-8 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${
+                  className={`size-6 rounded-full border flex items-center justify-center shrink-0 transition-colors ${
                     state === "correct"
-                      ? "border-wp-green bg-wp-green"
+                      ? "border-wp-green bg-wp-green text-white"
                       : state === "wrong"
-                        ? "border-destructive bg-destructive"
-                        : "border-muted-foreground/30"
+                        ? "border-destructive bg-destructive text-white"
+                        : "border-border"
                   }`}
                 >
-                  {state === "correct" && <Check className="w-5 h-5 text-white" strokeWidth={3} />}
+                  {state === "correct" && <Check className="size-3.5" strokeWidth={3} />}
+                  {state === "wrong" && <XCircle className="size-3.5" />}
                 </div>
-                {opt}
+                <span>{opt}</span>
               </div>
             </button>
           );
         })}
       </div>
-      {answered && picked !== correctIndex && (
-        <div className="mt-6 p-5 rounded-xl bg-destructive/10 border-2 border-destructive text-destructive font-bold flex flex-col sm:flex-row items-center sm:justify-between gap-4 animate-in shake duration-300">
-          <div className="flex items-center gap-3">
-            <XCircle className="w-7 h-7 shrink-0" />
-            <span className="text-xl">Incorrect</span>
-          </div>
+
+      {/* Screen reader status & action button */}
+      {answered ? (
+        <div role="status" aria-live="polite" className="mt-4">
+          {picked === correctIndex ? (
+            <p className="text-sm font-bold text-wp-green flex items-center gap-1.5">
+              <CheckCircle2 className="size-4" aria-hidden /> Excellent! That is correct.
+            </p>
+          ) : (
+            <div className="p-4 rounded-xl bg-destructive/10 border border-destructive text-destructive font-bold flex items-center justify-between gap-3 text-sm">
+              <div className="flex items-center gap-2">
+                <XCircle className="size-5 shrink-0" />
+                <span>Correct answer: {options[correctIndex]}</span>
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  setPicked(null);
+                  setGaveUp(false);
+                }}
+                className="px-3 py-1.5 border border-current rounded-lg text-xs hover:opacity-80 transition-opacity min-h-[36px]"
+              >
+                Try Again
+              </button>
+            </div>
+          )}
+        </div>
+      ) : (
+        <div className="mt-4 flex justify-end">
           <button
-            onClick={() => setPicked(null)}
-            className="px-6 py-3 border-2 border-current rounded-xl text-lg hover:opacity-80 transition-opacity min-h-[44px]"
+            type="button"
+            onClick={handleDontKnow}
+            className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-bold text-muted-foreground hover:text-foreground hover:bg-secondary rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
           >
-            Try Again
+            <HelpCircle className="size-3.5" aria-hidden />I don&apos;t know
           </button>
         </div>
       )}
@@ -226,23 +339,23 @@ function MultipleChoiceQuiz({
   );
 }
 
-export function PracticeArea({ materials }: Props) {
+export function PracticeArea({ materials, progress, onProgressUpdate }: Props) {
   const vocab = useMemo(() => loadedUnitVocabulary(materials.unitId), [materials.unitId]);
 
+  // Deterministic seed derived from unit ID
   const items = useMemo(() => {
     const list: PracticeItem[] = [];
     let idCounter = 0;
 
     materials.blankExercises?.forEach((e) => {
-      const distractors = shuffle(
-        vocab
-          .map((v: VocabularyItem) => v.label)
-          .filter((l: string) => l.toLowerCase() !== e.answer.toLowerCase())
-      ).slice(0, 3);
-      const options = shuffle([e.answer, ...distractors]) as string[];
+      const distractors = vocab
+        .map((v: VocabularyItem) => v.label)
+        .filter((l: string) => l.toLowerCase() !== e.answer.toLowerCase())
+        .slice(0, 3);
+      const options = [e.answer, ...distractors].sort();
       const correctIndex = options.indexOf(e.answer);
       list.push({
-        id: `practice-${idCounter++}`,
+        id: `practice-b-${idCounter++}`,
         type: "blank",
         data: e,
         answerText: e.answer,
@@ -253,7 +366,7 @@ export function PracticeArea({ materials }: Props) {
 
     materials.additionalExercises?.multipleChoice?.forEach((e) =>
       list.push({
-        id: `practice-${idCounter++}`,
+        id: `practice-mc-${idCounter++}`,
         type: "multipleChoice",
         data: e,
         answerText: e.options[e.correctIndex],
@@ -262,7 +375,7 @@ export function PracticeArea({ materials }: Props) {
 
     materials.collocationsQuiz?.forEach((e) =>
       list.push({
-        id: `practice-${idCounter++}`,
+        id: `practice-col-${idCounter++}`,
         type: "multipleChoice",
         data: e,
         answerText: e.options[e.correctIndex],
@@ -271,7 +384,7 @@ export function PracticeArea({ materials }: Props) {
 
     materials.additionalExercises?.rewrite?.forEach((e) =>
       list.push({
-        id: `practice-${idCounter++}`,
+        id: `practice-rw-${idCounter++}`,
         type: "rewrite",
         data: e,
         answerText: e.answer,
@@ -280,49 +393,60 @@ export function PracticeArea({ materials }: Props) {
 
     materials.errorCorrection?.forEach((e) =>
       list.push({
-        id: `practice-${idCounter++}`,
+        id: `practice-ec-${idCounter++}`,
         type: "errorCorrection",
         data: e,
         answerText: e.right,
       })
     );
 
-    return shuffle(list);
+    return stableShuffle(list, 42);
   }, [materials, vocab]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [completedItems, setCompletedItems] = useState<Set<string>>(new Set());
-  const [isCurrentCorrect, setIsCurrentCorrect] = useState(false);
+  const [firstTryCorrectCount, setFirstTryCorrectCount] = useState(0);
+  const [isCurrentAnswered, setIsCurrentAnswered] = useState(false);
+  const [reviewAddedWords, setReviewAddedWords] = useState<string[]>([]);
   const [finished, setFinished] = useState(false);
 
-  const handleComplete = (itemId: string, word: string, isCorrect: boolean) => {
-    if (isCorrect) {
-      setCompletedItems((prev) => {
-        const next = new Set(prev);
-        next.add(itemId);
-        return next;
-      });
-
-      const matchedVocab = vocab.find(
-        (v: VocabularyItem) => v.label.toLowerCase() === word.trim().toLowerCase()
-      );
-      if (matchedVocab) {
-        let progress = loadStudyProgress(materials.unitId);
-        progress = recordWordPractice(progress, matchedVocab.id, true);
-        saveStudyProgress(progress);
+  const handleComplete = (
+    _itemId: string,
+    word: string,
+    isCorrect: boolean,
+    isFirstTry: boolean
+  ) => {
+    const matchedVocab = vocab.find(
+      (v: VocabularyItem) => v.label.toLowerCase() === word.trim().toLowerCase()
+    );
+    if (matchedVocab) {
+      onProgressUpdate(recordWordPractice(progress, matchedVocab.id, isCorrect));
+      if (!isCorrect && !reviewAddedWords.includes(matchedVocab.label)) {
+        setReviewAddedWords((prev) => [...prev, matchedVocab.label]);
       }
-
-      setIsCurrentCorrect(true);
     }
+
+    if (isCorrect && isFirstTry) {
+      setFirstTryCorrectCount((c) => c + 1);
+    }
+
+    setIsCurrentAnswered(true);
   };
 
   const handleNext = () => {
     if (currentIndex < items.length - 1) {
       setCurrentIndex((i) => i + 1);
-      setIsCurrentCorrect(false);
+      setIsCurrentAnswered(false);
     } else {
       setFinished(true);
     }
+  };
+
+  const handleRestart = () => {
+    setCurrentIndex(0);
+    setFirstTryCorrectCount(0);
+    setIsCurrentAnswered(false);
+    setReviewAddedWords([]);
+    setFinished(false);
   };
 
   if (items.length === 0) {
@@ -334,36 +458,72 @@ export function PracticeArea({ materials }: Props) {
   }
 
   if (finished) {
+    const scorePercent = Math.round((firstTryCorrectCount / items.length) * 100);
     return (
-      <div className="flex-1 flex flex-col items-center justify-center p-8 max-w-3xl mx-auto w-full text-center animate-in fade-in zoom-in duration-500">
-        <div className="w-28 h-28 bg-wp-green-light/20 text-wp-green rounded-full flex items-center justify-center mx-auto mb-8 shadow-sm">
-          <CheckCircle2 className="w-14 h-14" />
+      <div className="flex-1 flex flex-col items-center justify-center p-6 md:p-12 max-w-2xl mx-auto w-full text-center animate-in fade-in zoom-in-95 duration-300">
+        <div className="size-20 rounded-full bg-wp-green-light/20 text-wp-green flex items-center justify-center mb-6 shadow-sm">
+          <Award className="size-10" aria-hidden />
         </div>
-        <h2 className="text-4xl font-bold mb-4 text-foreground">Practice Complete!</h2>
-        <p className="text-xl text-muted-foreground mb-8">
-          Amazing job! You have finished all {items.length} exercises in this session.
+        <h2 className="text-3xl font-bold mb-2 text-foreground">Practice Session Complete!</h2>
+        <p className="text-muted-foreground text-base mb-6">
+          You scored{" "}
+          <span className="font-bold text-foreground">
+            {firstTryCorrectCount} / {items.length}
+          </span>{" "}
+          ({scorePercent}%) on your first try.
         </p>
+
+        {reviewAddedWords.length > 0 && (
+          <div className="w-full bg-secondary/30 border border-border rounded-2xl p-5 mb-8 text-start">
+            <h3 className="font-bold text-sm text-foreground mb-2 flex items-center gap-2">
+              <RotateCcw className="size-4 text-wp-amber" />
+              Words sent to your Review queue ({reviewAddedWords.length}):
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {reviewAddedWords.map((w) => (
+                <span
+                  key={w}
+                  className="px-3 py-1 bg-background border border-border rounded-full text-xs font-bold text-foreground"
+                >
+                  {w}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div className="flex gap-4">
+          <button
+            onClick={handleRestart}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-bold rounded-full hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm min-h-[44px]"
+          >
+            <RotateCcw className="size-4" aria-hidden />
+            Practice Again
+          </button>
+        </div>
       </div>
     );
   }
 
-  const progressPercent = Math.round((completedItems.size / items.length) * 100);
+  const progressPercent = Math.round(
+    ((currentIndex + (isCurrentAnswered ? 1 : 0)) / items.length) * 100
+  );
   const item = items[currentIndex];
 
   const renderQuestion = () => {
     if (item.type === "blank") {
       const parts = item.data.sentence.split(BLANK_TOKEN);
       const questionNode = (
-        <p>
+        <span>
           {parts.map((part, i) => (
             <span key={i}>
               {part}
               {i < parts.length - 1 && (
-                <span className="inline-block w-20 border-b-4 border-primary mx-1 translate-y-[2px]" />
+                <span className="inline-block w-16 border-b-2 border-primary mx-1 translate-y-[2px]" />
               )}
             </span>
           ))}
-        </p>
+        </span>
       );
       return (
         <MultipleChoiceQuiz
@@ -371,7 +531,9 @@ export function PracticeArea({ materials }: Props) {
           question={questionNode}
           options={item.options}
           correctIndex={item.correctIndex}
-          onComplete={(correct) => handleComplete(item.id, item.answerText, correct)}
+          onComplete={(correct, isFirstTry) =>
+            handleComplete(item.id, item.answerText, correct, isFirstTry)
+          }
         />
       );
     }
@@ -383,7 +545,9 @@ export function PracticeArea({ materials }: Props) {
           question={item.data.question}
           options={item.data.options}
           correctIndex={item.data.correctIndex}
-          onComplete={(correct) => handleComplete(item.id, item.answerText, correct)}
+          onComplete={(correct, isFirstTry) =>
+            handleComplete(item.id, item.answerText, correct, isFirstTry)
+          }
         />
       );
     }
@@ -391,15 +555,15 @@ export function PracticeArea({ materials }: Props) {
     if (item.type === "rewrite") {
       const hint = (
         <div className="flex flex-col gap-2">
-          <span className="text-primary font-bold text-sm uppercase tracking-wider">
+          <span className="text-primary font-bold text-xs uppercase tracking-wider">
             Rewrite the sentence
           </span>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-sm">
             Include the word{" "}
             <span className="font-bold text-foreground">"{item.data.hintWord}"</span> in your
             answer.
           </p>
-          <p className="font-medium text-xl mt-3 text-foreground border-s-4 border-primary/30 ps-4">
+          <p className="font-medium text-base mt-2 text-foreground border-s-4 border-primary/30 ps-3">
             {item.data.sentence}
           </p>
         </div>
@@ -409,7 +573,9 @@ export function PracticeArea({ materials }: Props) {
           key={item.id}
           sentence={item.answerText}
           hint={hint}
-          onComplete={(correct) => handleComplete(item.id, item.data.hintWord, correct)}
+          onComplete={(correct, isFirstTry) =>
+            handleComplete(item.id, item.data.hintWord, correct, isFirstTry)
+          }
         />
       );
     }
@@ -417,10 +583,10 @@ export function PracticeArea({ materials }: Props) {
     if (item.type === "errorCorrection") {
       const hint = (
         <div className="flex flex-col gap-2">
-          <span className="text-primary font-bold text-sm uppercase tracking-wider">
+          <span className="text-primary font-bold text-xs uppercase tracking-wider">
             Correct the mistake
           </span>
-          <p className="font-medium text-xl mt-3 text-destructive border-s-4 border-destructive/30 ps-4 line-through decoration-2">
+          <p className="font-medium text-base mt-2 text-destructive border-s-4 border-destructive/30 ps-3 line-through decoration-2">
             {item.data.wrong}
           </p>
         </div>
@@ -430,7 +596,9 @@ export function PracticeArea({ materials }: Props) {
           key={item.id}
           sentence={item.answerText}
           hint={hint}
-          onComplete={(correct) => handleComplete(item.id, item.answerText, correct)}
+          onComplete={(correct, isFirstTry) =>
+            handleComplete(item.id, item.answerText, correct, isFirstTry)
+          }
         />
       );
     }
@@ -439,54 +607,57 @@ export function PracticeArea({ materials }: Props) {
   };
 
   return (
-    <div className="flex-1 flex flex-col h-full bg-background relative overflow-hidden">
-      {/* Sticky Header with Progress Bar */}
-      <div className="sticky top-0 z-20 bg-background/95 backdrop-blur-md pt-5 pb-5 border-b border-border shadow-sm shrink-0">
-        <div className="max-w-3xl mx-auto px-4 md:px-8">
-          <div className="flex justify-between items-center mb-4">
-            <h2 className="text-2xl font-bold tracking-tight">Practice Session</h2>
-            <span className="text-base font-bold text-primary bg-primary/10 px-4 py-1.5 rounded-full">
-              {completedItems.size} / {items.length}
-            </span>
+    <div className="max-w-2xl mx-auto w-full p-4 md:p-8 flex flex-col items-center">
+      {/* Header & Progress */}
+      <div className="w-full mb-6">
+        <div className="flex justify-between items-baseline mb-2">
+          <div>
+            <h2 className="text-xl sm:text-2xl font-bold text-foreground">Practice Session</h2>
+            <p className="text-sm text-muted-foreground">
+              Test your recall across different question types
+            </p>
           </div>
-          {/* Progress Bar Track */}
-          <div className="w-full h-4 bg-secondary rounded-full overflow-hidden">
-            {/* Progress Bar Fill */}
-            <div
-              className="h-full bg-primary transition-all duration-700 ease-out rounded-full"
-              style={{ width: `${progressPercent}%` }}
-              role="progressbar"
-              aria-valuenow={progressPercent}
-              aria-valuemin={0}
-              aria-valuemax={100}
-            />
-          </div>
+          <span className="text-xs font-bold text-muted-foreground bg-secondary px-3 py-1 rounded-full">
+            {currentIndex + 1} of {items.length}
+          </span>
+        </div>
+
+        {/* Accessible Progress Bar */}
+        <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
+          <div
+            className="h-full bg-primary transition-all duration-300 rounded-full"
+            style={{ width: `${progressPercent}%` }}
+            role="progressbar"
+            aria-valuenow={progressPercent}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-label={`Practice progress: ${currentIndex + 1} of ${items.length}`}
+          />
         </div>
       </div>
 
-      <div className="flex-1 overflow-y-auto px-4 py-8 md:py-12 relative flex justify-center pb-40">
-        <div
-          className="max-w-3xl w-full mx-auto animate-in fade-in slide-in-from-bottom-8 duration-500 fill-mode-forwards"
-          key={currentIndex}
-        >
-          {renderQuestion()}
-        </div>
+      {/* Screen reader announcement */}
+      <div className="sr-only" role="status" aria-live="polite">
+        Exercise {currentIndex + 1} of {items.length}
       </div>
 
-      {/* Floating Action Bar - appears when correct */}
-      <div
-        className={`absolute bottom-0 inset-x-0 p-6 bg-background/80 backdrop-blur-xl border-t border-border shadow-[0_-10px_40px_rgba(0,0,0,0.1)] transition-transform duration-500 flex justify-center ${
-          isCurrentCorrect ? "translate-y-0" : "translate-y-full"
-        }`}
-      >
-        <button
-          onClick={handleNext}
-          className="w-full max-w-3xl py-4 bg-wp-green text-white rounded-xl font-bold text-xl hover:bg-wp-green/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-wp-green/30 transition-all active:scale-[0.98] flex items-center justify-center gap-3 min-h-[44px]"
-        >
-          {currentIndex < items.length - 1 ? "Continue" : "Finish Practice"}
-          <ArrowRight className="w-6 h-6" />
-        </button>
+      {/* Exercise Container */}
+      <div className="w-full" key={item.id}>
+        {renderQuestion()}
       </div>
+
+      {/* Flow Action Bar - No fixed overlay */}
+      {isCurrentAnswered && (
+        <div className="w-full mt-6 flex justify-end animate-in fade-in slide-in-from-bottom-2 duration-200">
+          <button
+            onClick={handleNext}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-bold text-base hover:bg-primary/90 transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm min-h-[44px]"
+          >
+            <span>{currentIndex < items.length - 1 ? "Next Exercise" : "Finish Practice"}</span>
+            <ArrowRight className="size-4" aria-hidden />
+          </button>
+        </div>
+      )}
     </div>
   );
 }

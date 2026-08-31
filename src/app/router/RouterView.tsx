@@ -119,6 +119,8 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
         <LearningMaterialsScreen
           key={state.unitId ?? DEFAULT_UNIT_ID}
           unitId={state.unitId ?? DEFAULT_UNIT_ID}
+          area={state.area}
+          nodeId={state.nodeId}
           dispatch={dispatch}
         />
       );

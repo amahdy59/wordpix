@@ -55,7 +55,9 @@ const WORLD_ID_GROUP = Object.keys(COURSE_UNITS)
 const LESSON_ENTRY_PATTERN = new RegExp(`^#\\/learn\\/(${WORLD_ID_GROUP})$`);
 const LESSON_STEP_PATTERN = new RegExp(`^#\\/learn\\/(${WORLD_ID_GROUP})\\/step-(\\d+)$`);
 const LESSON_COMPLETE_PATTERN = new RegExp(`^#\\/learn\\/(${WORLD_ID_GROUP})\\/complete$`);
-const LEARNING_MATERIALS_PATTERN = new RegExp(`^#\\/learn\\/(${WORLD_ID_GROUP})\\/study$`);
+const LEARNING_MATERIALS_PATTERN = new RegExp(
+  `^#\\/learn\\/(${WORLD_ID_GROUP})\\/study(?:\\/([^/]+)(?:\\/([^/]+))?)?$`
+);
 const SKILL_EXERCISE_PATTERN = /^#\/skills\/([a-z-]+)$/;
 
 export function screenToHash(screen: Screen): { hash: string; title: string } {
@@ -70,7 +72,12 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
   }
   if (screen.id === "learning-materials") {
     const world = COURSE_UNITS[screen.unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
-    return { hash: `#/learn/${world.id}/study`, title: `WordPix — ${world.name} Study Materials` };
+    let hash = `#/learn/${world.id}/study`;
+    if (screen.area) {
+      hash += `/${screen.area}`;
+      if (screen.nodeId) hash += `/${screen.nodeId}`;
+    }
+    return { hash, title: `WordPix — ${world.name} Study Materials` };
   }
   if (screen.id === "skill-hub") return { hash: "#/skills", title: "WordPix — Skill Exercises" };
   if (screen.id === "skill-exercise") {
@@ -117,7 +124,12 @@ export function hashToRoute(hash: string): RouteIntent | null {
     if (!world) return null;
     return {
       kind: "screen",
-      screen: { id: "learning-materials", unitId: world.id },
+      screen: {
+        id: "learning-materials",
+        unitId: world.id,
+        area: studyMatch[2],
+        nodeId: studyMatch[3],
+      },
       title: `WordPix — ${world.name} Study Materials`,
     };
   }

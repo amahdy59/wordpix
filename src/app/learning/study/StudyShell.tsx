@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
   BookOpen,
   Check,
@@ -16,6 +16,7 @@ import { LearnArea } from "./LearnArea";
 import { UseItArea } from "./UseItArea";
 import { PracticeArea } from "./PracticeArea";
 import { ReferenceArea } from "./ReferenceArea";
+import { ReviewArea } from "./ReviewArea";
 import type { UnitStudyProgress, StudyArea } from "./types";
 import type { Action } from "../../types";
 import { WordInspectorModal } from "../../shared/WordInspectorModal";
@@ -25,19 +26,28 @@ interface Props {
   unitId: string;
   unit: CourseUnit;
   materials: UnitLearningMaterials;
+  initialArea?: string;
+  initialNodeId?: string;
   dispatch: React.Dispatch<Action>;
 }
 
-export function StudyShell({ unitId, unit, materials, dispatch }: Props) {
+export function StudyShell({
+  unitId,
+  unit,
+  materials,
+  initialArea,
+  initialNodeId,
+  dispatch,
+}: Props) {
   const [progress, setProgress] = useState<UnitStudyProgress>(() => loadStudyProgress(unitId));
 
   // The curriculum adapter
   const nodes = generateCurriculum(materials);
 
-  // Navigation state: "home" | "learn" | "use" | "practice" | "reference"
-  const [currentArea, setCurrentArea] = useState<StudyArea | "home">("home");
-  // If inside an area, which node is active?
-  const [currentNodeId, setCurrentNodeId] = useState<string | null>(null);
+  // Navigation state driven by URL
+  const currentArea = (initialArea as StudyArea | undefined) || "home";
+  const currentNodeId = initialNodeId || null;
+
   const [expandedAreas, setExpandedAreas] = useState<Set<StudyArea>>(
     () => new Set<StudyArea>(["learn", "use", "practice", "reference"])
   );
@@ -45,17 +55,40 @@ export function StudyShell({ unitId, unit, materials, dispatch }: Props) {
   // Vocabulary inspector
   const [inspectedWord, setInspectedWord] = useState<VocabularyItem | null>(null);
 
+  // Focus management wrapper ref
+  const focusRef = React.useRef<HTMLDivElement>(null);
+
+  // Mobile drawer state
+  const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
+  const contentsBtnRef = React.useRef<HTMLButtonElement>(null);
+
+  const closeDrawer = () => {
+    setIsMobileDrawerOpen(false);
+    contentsBtnRef.current?.focus();
+  };
+
   useEffect(() => {
     saveStudyProgress(progress);
   }, [progress]);
+
+  useEffect(() => {
+    if (currentNodeId && focusRef.current) {
+      focusRef.current.focus({ preventScroll: true });
+    }
+  }, [currentNodeId]);
 
   const handleContinue = () => {
     // 1. Resume last unfinished
     if (progress.lastNodeId) {
       const node = nodes.find((n) => n.id === progress.lastNodeId);
       if (node) {
-        setCurrentArea(node.area);
-        setCurrentNodeId(node.id);
+        dispatch({
+          type: "GO",
+          to: "learning-materials",
+          unitId: unit.id,
+          area: node.area,
+          nodeId: node.id,
+        });
         return;
       }
     }
@@ -63,30 +96,46 @@ export function StudyShell({ unitId, unit, materials, dispatch }: Props) {
     // 2. Start first
     const firstNode = nodes[0];
     if (firstNode) {
-      setCurrentArea(firstNode.area);
-      setCurrentNodeId(firstNode.id);
+      dispatch({
+        type: "GO",
+        to: "learning-materials",
+        unitId: unit.id,
+        area: firstNode.area,
+        nodeId: firstNode.id,
+      });
     }
   };
 
   const handleNodeSelect = (nodeId: string) => {
     const node = nodes.find((n) => n.id === nodeId);
     if (node) {
-      setCurrentArea(node.area);
-      setCurrentNodeId(node.id);
+      dispatch({
+        type: "GO",
+        to: "learning-materials",
+        unitId: unit.id,
+        area: node.area,
+        nodeId: node.id,
+      });
       setProgress((prev) => ({ ...prev, lastNodeId: node.id }));
+      setIsMobileDrawerOpen(false);
     }
   };
 
   const handleBackToHome = () => {
-    setCurrentArea("home");
-    setCurrentNodeId(null);
+    dispatch({ type: "GO", to: "learning-materials", unitId: unit.id });
   };
 
   const handleAreaSelect = (area: StudyArea) => {
     const firstNode = nodes.find((node) => node.area === area);
-    setCurrentArea(area);
-    setCurrentNodeId(firstNode?.id ?? null);
+    dispatch({
+      type: "GO",
+      to: "learning-materials",
+      unitId: unit.id,
+      area: area,
+      nodeId: firstNode?.id,
+    });
     setExpandedAreas((current) => new Set(current).add(area));
+    setIsMobileDrawerOpen(false);
   };
 
   const toggleArea = (area: StudyArea) => {
@@ -114,8 +163,11 @@ export function StudyShell({ unitId, unit, materials, dispatch }: Props) {
     );
   };
 
-  const overallProgress = nodes.length
-    ? Math.round(nodes.reduce((total, node) => total + nodeProgress(node.id), 0) / nodes.length)
+  const coreNodes = nodes.filter((n) => n.area !== "reference");
+  const overallProgress = coreNodes.length
+    ? Math.round(
+        coreNodes.reduce((total, node) => total + nodeProgress(node.id), 0) / coreNodes.length
+      )
     : 0;
 
   const areaMeta: Record<StudyArea, { label: string; description: string; icon: typeof BookOpen }> =
@@ -143,32 +195,50 @@ export function StudyShell({ unitId, unit, materials, dispatch }: Props) {
         />
       ) : (
         <div className="flex min-h-0 flex-1 flex-col lg:flex-row">
-          {/* Desktop Sidebar */}
+          {/* Desktop Sidebar / Mobile Drawer */}
           <aside
             aria-label={`${unit.name} study navigation`}
-            className="hidden h-full w-80 shrink-0 flex-col overflow-y-auto border-e border-border bg-card/95 lg:flex"
+            className={`
+              fixed inset-0 z-40 bg-card/95 backdrop-blur
+              lg:static lg:flex lg:w-80 lg:shrink-0 lg:flex-col lg:overflow-y-auto lg:border-e lg:border-border lg:bg-card/95
+              ${isMobileDrawerOpen ? "flex flex-col overflow-y-auto" : "hidden"}
+            `}
           >
-            <div className="sticky top-0 z-10 border-b border-border bg-card/95 p-5 backdrop-blur">
-              <button
-                onClick={handleBackToHome}
-                className="flex min-h-[44px] w-full items-center gap-2 rounded-xl px-2 text-start text-sm font-bold hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-              >
-                <span aria-hidden>&larr;</span>
-                <span className="truncate">{unit.name}</span>
-              </button>
+            <div className="sticky top-0 z-10 border-b border-border bg-card/95 p-5 backdrop-blur flex justify-between items-start gap-2">
+              <div className="flex-1 min-w-0">
+                <button
+                  onClick={handleBackToHome}
+                  className="flex min-h-[44px] w-full items-center gap-2 rounded-xl px-2 text-start text-sm font-bold hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                >
+                  <span aria-hidden>&larr;</span>
+                  <span className="truncate">{unit.name}</span>
+                </button>
 
-              <div className="mt-4" aria-label={`Overall progress: ${overallProgress}%`}>
-                <div className="mb-2 flex items-center justify-between text-xs font-bold">
-                  <span className="text-muted-foreground">Unit progress</span>
-                  <span>{overallProgress}%</span>
-                </div>
-                <div className="h-2 overflow-hidden rounded-full bg-secondary">
-                  <div
-                    className="h-full rounded-full bg-primary transition-[width]"
-                    style={{ width: `${overallProgress}%` }}
-                  />
+                <div className="mt-4">
+                  <div className="mb-2 flex items-center justify-between text-xs font-bold">
+                    <span className="text-muted-foreground">Unit progress</span>
+                    <span>{overallProgress}%</span>
+                  </div>
+                  <div className="h-2 overflow-hidden rounded-full bg-secondary">
+                    <div
+                      className="h-full rounded-full bg-primary transition-[width]"
+                      style={{ width: `${overallProgress}%` }}
+                      role="progressbar"
+                      aria-valuenow={overallProgress}
+                      aria-valuemin={0}
+                      aria-valuemax={100}
+                      aria-label={`Overall progress for ${unit.name}: ${overallProgress}%`}
+                    />
+                  </div>
                 </div>
               </div>
+              <button
+                onClick={closeDrawer}
+                className="lg:hidden flex size-11 items-center justify-center rounded-xl bg-secondary text-foreground hover:bg-secondary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring shrink-0"
+                aria-label="Close menu"
+              >
+                ✕
+              </button>
             </div>
 
             <nav className="space-y-3 p-4">
@@ -184,39 +254,45 @@ export function StudyShell({ unitId, unit, materials, dispatch }: Props) {
                     key={area}
                     className="overflow-hidden rounded-2xl border border-border bg-background/70"
                   >
-                    <button
-                      type="button"
-                      aria-expanded={expanded}
-                      aria-controls={`study-nav-${area}`}
-                      onClick={() => toggleArea(area)}
-                      className="flex min-h-[64px] w-full items-center gap-3 px-3 py-2 text-start hover:bg-secondary/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring"
-                    >
-                      <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                        <AreaIcon aria-hidden size={20} />
-                      </span>
-                      <span className="min-w-0 flex-1">
-                        <span className="flex items-center justify-between gap-2">
-                          <span className="font-bold">{areaMeta[area].label}</span>
-                          <span className="text-xs font-bold text-muted-foreground">
-                            {progressValue}%
+                    <h2 className="m-0 p-0">
+                      <button
+                        type="button"
+                        aria-expanded={expanded}
+                        aria-controls={`study-nav-${area}`}
+                        onClick={() => toggleArea(area)}
+                        className="flex min-h-[64px] w-full items-center gap-3 px-3 py-2 text-start hover:bg-secondary/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring"
+                      >
+                        <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                          <AreaIcon aria-hidden size={20} />
+                        </span>
+                        <span className="min-w-0 flex-1">
+                          <span className="flex items-center justify-between gap-2">
+                            <span className="font-bold">{areaMeta[area].label}</span>
+                            {area !== "reference" && (
+                              <span className="text-xs font-bold text-muted-foreground">
+                                {progressValue}%
+                              </span>
+                            )}
                           </span>
+                          <span className="mt-1 block text-xs text-muted-foreground">
+                            {areaMeta[area].description}
+                          </span>
+                          {area !== "reference" && (
+                            <span className="mt-2 block h-1.5 overflow-hidden rounded-full bg-secondary">
+                              <span
+                                className="block h-full rounded-full bg-primary"
+                                style={{ width: `${progressValue}%` }}
+                              />
+                            </span>
+                          )}
                         </span>
-                        <span className="mt-1 block text-xs text-muted-foreground">
-                          {areaMeta[area].description}
-                        </span>
-                        <span className="mt-2 block h-1.5 overflow-hidden rounded-full bg-secondary">
-                          <span
-                            className="block h-full rounded-full bg-primary"
-                            style={{ width: `${progressValue}%` }}
-                          />
-                        </span>
-                      </span>
-                      <ChevronDown
-                        aria-hidden
-                        size={18}
-                        className={`shrink-0 transition-transform ${expanded ? "rotate-180" : ""}`}
-                      />
-                    </button>
+                        <ChevronDown
+                          aria-hidden
+                          size={18}
+                          className={`shrink-0 transition-transform ${expanded ? "rotate-180" : ""}`}
+                        />
+                      </button>
+                    </h2>
 
                     <div
                       id={`study-nav-${area}`}
@@ -271,6 +347,7 @@ export function StudyShell({ unitId, unit, materials, dispatch }: Props) {
             <button
               onClick={handleBackToHome}
               className="min-h-[44px] min-w-[44px] p-2 -ms-2 me-2 flex items-center justify-center"
+              aria-label="Back to home"
             >
               ←
             </button>
@@ -282,38 +359,34 @@ export function StudyShell({ unitId, unit, materials, dispatch }: Props) {
                 {activeNode?.title || areaMeta[currentArea].description}
               </div>
             </div>
-            <span className="ms-3 text-sm font-bold">{overallProgress}%</span>
+            <button
+              ref={contentsBtnRef}
+              onClick={() => setIsMobileDrawerOpen(true)}
+              className="ms-3 min-h-[44px] rounded bg-secondary px-3 py-2 text-sm font-bold"
+            >
+              Contents
+            </button>
           </div>
 
           {/* Content Area */}
           <main
             id="study-content"
-            className="relative min-w-0 flex-1 overflow-y-auto"
+            className="relative min-w-0 flex-1 overflow-y-auto outline-none"
             tabIndex={-1}
+            ref={focusRef}
           >
             <header className="sticky top-0 z-10 hidden border-b border-border bg-background/90 px-6 py-3 backdrop-blur lg:block">
               <div className="mx-auto flex max-w-5xl items-center justify-between gap-4">
-                <div className="min-w-0">
+                <nav aria-label="Breadcrumb" className="min-w-0">
                   <p className="truncate text-xs font-bold uppercase tracking-wider text-muted-foreground">
-                    {unit.name} / {areaMeta[currentArea].label}
+                    <span>{unit.name}</span>
+                    <span className="mx-1.5 opacity-60">/</span>
+                    <span className="text-primary">{areaMeta[currentArea].label}</span>
                   </p>
-                  <p className="truncate text-sm font-bold">
+                  <h1 className="truncate text-sm font-bold text-foreground mt-0.5">
                     {activeNode?.title ?? areaMeta[currentArea].description}
-                  </p>
-                </div>
-                <div
-                  className="flex items-center gap-3"
-                  aria-label={`Unit progress: ${overallProgress}%`}
-                >
-                  <span className="text-xs font-bold text-muted-foreground">Unit progress</span>
-                  <div className="h-2 w-28 overflow-hidden rounded-full bg-secondary">
-                    <div
-                      className="h-full rounded-full bg-primary"
-                      style={{ width: `${overallProgress}%` }}
-                    />
-                  </div>
-                  <span className="text-sm font-bold">{overallProgress}%</span>
-                </div>
+                  </h1>
+                </nav>
               </div>
             </header>
             {currentArea === "learn" && activeNode && (
@@ -334,7 +407,20 @@ export function StudyShell({ unitId, unit, materials, dispatch }: Props) {
                 onInspectWord={setInspectedWord}
               />
             )}
-            {currentArea === "practice" && <PracticeArea materials={materials} />}
+            {currentArea === "practice" && (
+              <PracticeArea
+                materials={materials}
+                progress={progress}
+                onProgressUpdate={setProgress}
+              />
+            )}
+            {currentArea === "review" && (
+              <ReviewArea
+                materials={materials}
+                progress={progress}
+                onProgressUpdate={setProgress}
+              />
+            )}
             {currentArea === "reference" && <ReferenceArea materials={materials} />}
           </main>
         </div>

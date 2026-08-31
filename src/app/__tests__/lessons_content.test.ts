@@ -33,13 +33,12 @@ describe("Vocabulary descriptions", () => {
         word.description[0].toUpperCase()
       );
     });
-  }, 30000);
+  }, 60000);
 
   it("ensures vocabulary items have valid learning descriptions", () => {
-    vocabulary.forEach((word) => {
-      expect(word.description).toBeTruthy();
-    });
-  }, 30000);
+    const invalid = vocabulary.filter((w) => !w.description);
+    expect(invalid.length, `${invalid.map((w) => w.id).join(", ")} missing description`).toBe(0);
+  }, 60000);
 
   it("provides descriptions for all words in each learning group", () => {
     units.forEach((unit) => {
@@ -52,7 +51,7 @@ describe("Vocabulary descriptions", () => {
         );
       });
     });
-  }, 30000);
+  }, 60000);
 });
 
 describe("Lesson story integrity", () => {

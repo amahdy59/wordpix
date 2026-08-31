@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { beforeAll, describe, expect, it } from "vitest";
 import { COURSE_UNITS } from "../data/lessons";
 import { loadLearningMaterials, unitsWithLearningMaterials } from "../learning/registry";
 import { BLANK_TOKEN, type UnitLearningMaterials } from "../learning/types";
@@ -25,40 +25,31 @@ describe("unit learning materials", () => {
   describe.each(unitIds)("%s", (unitId) => {
     let materials: UnitLearningMaterials;
 
-    it("loads", async () => {
-      const loaded = await loadLearningMaterials(unitId);
-      expect(loaded).not.toBeNull();
-      materials = loaded!;
+    beforeAll(async () => {
+      materials = (await loadLearningMaterials(unitId))!;
+    }, 30000);
+
+    it("loads", () => {
+      expect(materials).not.toBeNull();
       expect(materials.unitId).toBe(unitId);
     });
 
-    it("groups every word of the unit into exactly one sub-topic", async () => {
-      materials = (await loadLearningMaterials(unitId))!;
+    it("groups every word of the unit into exactly one sub-topic", () => {
       const unit = COURSE_UNITS[unitId];
       expect(unit).toBeDefined();
 
-      // Sub-topics come from `topic-*` frames, and not every unit has them —
-      // fifteen units carry word cards and materials but no topic grouping.
-      // The block is absent for those, and the Study screen hides the section
-      // rather than showing an empty one, so there is nothing here to check.
       if (!materials.subtopics) return;
 
       const grouped = materials.subtopics.flatMap((t) => t.wordIds);
       const unitWordIds = unit.wordIds;
 
-      // An empty block would mean "grouped into zero sub-topics", which is a
-      // different claim from "not grouped" and always a bug.
       expect(materials.subtopics.length).toBeGreaterThan(0);
-      // No duplicates across sub-topics.
       expect(new Set(grouped).size).toBe(grouped.length);
-      // Every grouped id is a real word in this unit.
       expect(grouped.filter((id) => !unitWordIds.includes(id))).toEqual([]);
-      // Every word of the unit is placed.
       expect(unitWordIds.filter((id) => !grouped.includes(id))).toEqual([]);
     });
 
-    it("gives every comprehension question exactly one answer in range", async () => {
-      materials = (await loadLearningMaterials(unitId))!;
+    it("gives every comprehension question exactly one answer in range", () => {
       for (const q of materials.passage?.questions ?? []) {
         expect(q.options.length, `${q.id} needs at least two options`).toBeGreaterThan(1);
         expect(new Set(q.options).size, `${q.id} has duplicate options`).toBe(q.options.length);
@@ -68,18 +59,14 @@ describe("unit learning materials", () => {
       }
     });
 
-    it("tags every phrase as an idiom or a phrasal verb", async () => {
-      materials = (await loadLearningMaterials(unitId))!;
+    it("tags every phrase as an idiom or a phrasal verb", () => {
       for (const phrase of materials.phrases ?? []) {
         expect(["idiom", "phrasal-verb", "collocation"]).toContain(phrase.kind);
         expect(phrase.meaning.trim().length).toBeGreaterThan(0);
-        // An example is optional: not every entry in the design file has one,
-        // and an entry with a meaning is still worth showing.
       }
     });
 
-    it("gives every fill-in-the-blank exactly one blank and an answer", async () => {
-      materials = (await loadLearningMaterials(unitId))!;
+    it("gives every fill-in-the-blank exactly one blank and an answer", () => {
       for (const item of materials.blankExercises ?? []) {
         const occurrences = item.sentence.split(BLANK_TOKEN).length - 1;
         expect(occurrences, `${item.id} must contain exactly one ${BLANK_TOKEN}`).toBe(1);
@@ -87,8 +74,7 @@ describe("unit learning materials", () => {
       }
     });
 
-    it("keeps word-formation rows and reference entries non-empty", async () => {
-      materials = (await loadLearningMaterials(unitId))!;
+    it("keeps word-formation rows and reference entries non-empty", () => {
       for (const row of materials.wordFormation ?? []) {
         const filled = [row.noun, row.verb, row.adjective, row.adverb].filter(Boolean);
         expect(filled.length, "a row with no forms is a bad import").toBeGreaterThan(0);

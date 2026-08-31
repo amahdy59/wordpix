@@ -12,7 +12,11 @@ import {
   Layers,
   CheckCircle2,
   XCircle,
+  Volume2,
+  Eye,
+  EyeOff,
 } from "lucide-react";
+import { useAudio } from "../shared/useAudio";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import {
   VocabularyDetailsSection,
@@ -37,6 +41,8 @@ import { resolveAssetUrl } from "../../utils/assetUrl";
 
 interface Props {
   unitId?: string;
+  area?: string;
+  nodeId?: string;
   dispatch: React.Dispatch<Action>;
 }
 
@@ -123,6 +129,8 @@ const CARD = "bg-wp-card rounded-2xl border border-border p-5 shadow-sm";
  */
 export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
   unitId,
+  area,
+  nodeId,
   dispatch,
 }: Props) {
   const unit = COURSE_UNITS[unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
@@ -206,7 +214,14 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
       <div className="min-h-dvh bg-background flex flex-col">
         <StatusBar />
         <div className="flex-1 flex flex-col relative overflow-hidden">
-          <StudyShell unitId={unit.id} unit={unit} materials={materials} dispatch={dispatch} />
+          <StudyShell
+            unitId={unit.id}
+            unit={unit}
+            materials={materials}
+            initialArea={area}
+            initialNodeId={nodeId}
+            dispatch={dispatch}
+          />
         </div>
       </div>
     );
@@ -560,48 +575,48 @@ export function DialogueSection({
   onInspectWord?: (word: VocabularyItem) => void;
 }) {
   const dialogue = materials.dialogue;
+  const { speak, stop } = useAudio({ lang: "en-US", rate: 0.9 });
   if (!dialogue) return null;
+
   return (
     <section className={CARD} aria-labelledby="dialogue-heading">
       <h2 id="dialogue-heading" className="font-sans font-bold text-lg text-foreground">
-        {/*
-          Figma leaves the title as the block heading itself when a unit has no
-          custom one, which rendered "Mini Dialogue — Mini Dialogue".
-        */}
         {dialogue.title && dialogue.title.toLowerCase() !== "mini dialogue"
           ? `Mini Dialogue — ${dialogue.title}`
           : "Mini Dialogue"}
       </h2>
-      {/*
-        The stage direction Figma prints above the exchange. It used to be
-        parsed as the first speaker, which is what shifted every subsequent
-        speaker/line pair by one.
-      */}
       {dialogue.scene && (
         <p className="mt-1 font-sans text-sm text-muted-foreground italic">{dialogue.scene}</p>
       )}
-      <ol className="mt-3 space-y-2">
+      <ol className="mt-4 space-y-3">
         {dialogue.lines.map((line, i) => (
-          <li key={`${line.speaker}-${i}`} className="flex gap-3">
-            {/*
-              Bounded, not shrink-0. An unbounded no-shrink column will hold
-              whatever it is given: when bad data put a whole sentence in
-              `speaker`, the row grew past the viewport, the page gained a
-              horizontal scrollbar, and the line beside it was squeezed to one
-              character per row. A max-width plus wrapping keeps a malformed
-              value ugly instead of load-bearing.
-            */}
-            <span className="font-sans font-bold text-primary shrink-0 min-w-14 max-w-32 break-words">
+          <li
+            key={`${line.speaker}-${i}`}
+            className="flex items-start gap-3 p-3 rounded-xl bg-background border border-border"
+          >
+            <span className="font-sans font-bold text-primary shrink-0 min-w-16 max-w-28 break-words text-sm pt-0.5">
               {line.speaker}:
             </span>
             {/*
               min-w-0 is what lets this wrap. A flex item defaults to
-              `min-width: auto`, so a dialogue line would not go narrower than
+              min-width: auto, so a dialogue line would not go narrower than
               its own longest unbroken run of text — the row grew past the card
               and every line was clipped at the right edge of a phone screen,
               with no way to scroll to the rest of the sentence.
             */}
-            <span className="font-sans text-foreground min-w-0 break-words">{line.text}</span>
+            <span className="font-sans text-foreground text-sm flex-1 min-w-0 break-words leading-relaxed">
+              {line.text}
+            </span>
+            <button
+              onClick={() => {
+                stop();
+                speak(line.text);
+              }}
+              className="size-8 shrink-0 rounded-full bg-secondary text-primary flex items-center justify-center hover:bg-primary/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              aria-label={`Listen to ${line.speaker}'s line`}
+            >
+              <Volume2 className="size-4" aria-hidden />
+            </button>
           </li>
         ))}
       </ol>
@@ -610,25 +625,74 @@ export function DialogueSection({
 }
 
 export function MistakesSection({ materials }: { materials: UnitLearningMaterials }) {
+  const [revealedIds, setRevealedIds] = useState<Set<string>>(new Set());
+
+  const toggleReveal = (id: string) => {
+    setRevealedIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  };
+
   return (
     <section className={CARD} aria-labelledby="mistakes-heading">
       <h2 id="mistakes-heading" className="font-sans font-bold text-lg text-foreground">
-        Common Mistakes
+        Common Mistakes &amp; Corrections
       </h2>
-      <ul className="mt-3 space-y-3">
-        {materials.mistakes?.map((mistake) => (
-          <li key={mistake.id} className="rounded-xl border border-border p-3">
-            <p className="font-sans text-sm text-destructive">
-              <span aria-hidden>✗</span> <span className="sr-only">Incorrect: </span>
-              {mistake.wrong}
-            </p>
-            <p className="font-sans text-sm text-wp-green mt-1">
-              <span aria-hidden>✓</span> <span className="sr-only">Correct: </span>
-              {mistake.right}
-            </p>
-            <p className="font-sans text-xs text-muted-foreground mt-2">{mistake.note}</p>
-          </li>
-        ))}
+      <p className="text-xs text-muted-foreground mt-1 mb-4">
+        Try spot the mistake and correct it yourself before revealing the answer.
+      </p>
+      <ul className="space-y-3">
+        {materials.mistakes?.map((mistake) => {
+          const isRevealed = revealedIds.has(mistake.id);
+          return (
+            <li key={mistake.id} className="rounded-xl border border-border p-4 bg-background">
+              <div className="flex justify-between items-start gap-2">
+                <p className="font-sans text-sm text-destructive font-medium">
+                  <span aria-hidden className="font-bold">
+                    ✗{" "}
+                  </span>
+                  <span className="sr-only">Incorrect: </span>
+                  {mistake.wrong}
+                </p>
+                <button
+                  type="button"
+                  onClick={() => toggleReveal(mistake.id)}
+                  aria-expanded={isRevealed}
+                  className="shrink-0 inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-secondary text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[36px]"
+                >
+                  {isRevealed ? (
+                    <>
+                      <EyeOff className="size-3.5" aria-hidden /> Hide
+                    </>
+                  ) : (
+                    <>
+                      <Eye className="size-3.5" aria-hidden /> Reveal
+                    </>
+                  )}
+                </button>
+              </div>
+
+              {isRevealed && (
+                <div className="mt-3 pt-3 border-t border-border/60 space-y-1.5 animate-in fade-in duration-150">
+                  <p className="font-sans text-sm text-wp-green font-medium">
+                    <span aria-hidden className="font-bold">
+                      ✓{" "}
+                    </span>
+                    <span className="sr-only">Correct: </span>
+                    {mistake.right}
+                  </p>
+                  <p className="font-sans text-xs text-muted-foreground leading-relaxed">
+                    <span className="font-bold text-foreground">Explanation: </span>
+                    {mistake.note}
+                  </p>
+                </div>
+              )}
+            </li>
+          );
+        })}
       </ul>
     </section>
   );
@@ -786,20 +850,101 @@ export function CultureSection({ materials }: { materials: UnitLearningMaterials
 }
 
 export function ReferenceSection({ materials }: { materials: UnitLearningMaterials }) {
+  const [search, setSearch] = useState("");
+  const [posFilter, setPosFilter] = useState("all");
+  const { speak, stop } = useAudio({ lang: "en-US", rate: 0.9 });
+
+  const rawEntries = useMemo(() => materials.wordMeta ?? [], [materials.wordMeta]);
+  const partsOfSpeech = useMemo(() => {
+    const set = new Set(rawEntries.map((e) => e.partOfSpeech).filter(Boolean));
+    return ["all", ...Array.from(set)];
+  }, [rawEntries]);
+
+  const filtered = useMemo(() => {
+    return rawEntries.filter((entry) => {
+      const matchSearch =
+        !search.trim() ||
+        entry.word.toLowerCase().includes(search.toLowerCase()) ||
+        entry.collocations.some((c) => c.toLowerCase().includes(search.toLowerCase()));
+      const matchPos = posFilter === "all" || entry.partOfSpeech === posFilter;
+      return matchSearch && matchPos;
+    });
+  }, [rawEntries, search, posFilter]);
+
   return (
     <section className={CARD} aria-labelledby="reference-heading">
       <h2 id="reference-heading" className="font-sans font-bold text-lg text-foreground">
         Vocabulary Reference
       </h2>
-      <div className="mt-3 overflow-x-auto">
+
+      {/* Filter and Search Bar */}
+      <div className="mt-4 flex flex-col sm:flex-row gap-3">
+        <div className="flex-1">
+          <label htmlFor="vocab-ref-search" className="sr-only">
+            Search vocabulary reference
+          </label>
+          <input
+            id="vocab-ref-search"
+            type="search"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Search word or collocation…"
+            className="w-full px-4 py-2 bg-background border border-border rounded-xl text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+          />
+        </div>
+
+        {partsOfSpeech.length > 2 && (
+          <div className="flex items-center gap-2">
+            <label
+              htmlFor="pos-filter"
+              className="text-xs font-bold text-muted-foreground shrink-0"
+            >
+              Part of speech:
+            </label>
+            <select
+              id="pos-filter"
+              value={posFilter}
+              onChange={(e) => setPosFilter(e.target.value)}
+              className="px-3 py-2 bg-background border border-border rounded-xl text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+            >
+              {partsOfSpeech.map((pos) => (
+                <option key={pos} value={pos}>
+                  {pos === "all" ? "All parts of speech" : pos}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
+      </div>
+
+      {/* Frequency & Notation Legend */}
+      <div className="mt-3 p-3 bg-secondary/30 rounded-xl border border-border/60 text-xs text-muted-foreground flex flex-wrap gap-x-6 gap-y-2">
+        <div>
+          <span className="font-bold text-foreground">Frequency: </span>
+          <span className="text-wp-amber">★★★</span> Core / Most common ·{" "}
+          <span className="text-wp-amber">★★</span> Frequent ·{" "}
+          <span className="text-wp-amber">★</span> Topic-specific
+        </div>
+        <div>
+          <span className="font-bold text-foreground">Notation: </span>
+          <code className="px-1 bg-muted rounded font-mono">~</code> replaces the base word in
+          phrases
+        </div>
+      </div>
+
+      {/* Accessible Table */}
+      <div className="mt-4 overflow-x-auto">
         <table className="w-full border-collapse min-w-[34rem]">
+          <caption className="sr-only">
+            Vocabulary reference table with word, part of speech, frequency rating, and collocations
+          </caption>
           <thead>
             <tr className="border-b border-border">
               {["Word", "Part of speech", "Frequency", "Key collocations"].map((h) => (
                 <th
                   key={h}
                   scope="col"
-                  className="text-start font-sans font-bold text-sm text-muted-foreground py-2 pe-3"
+                  className="text-start font-sans font-bold text-sm text-muted-foreground py-2.5 pe-3"
                 >
                   {h}
                 </th>
@@ -807,25 +952,48 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
             </tr>
           </thead>
           <tbody>
-            {materials.wordMeta?.map((entry) => (
-              <tr key={entry.word} className="border-b border-border/50 align-top">
-                <td className="font-sans font-bold text-sm text-foreground py-2 pe-3">
-                  {entry.word}
-                </td>
-                <td className="font-sans text-sm text-muted-foreground py-2 pe-3">
-                  {entry.partOfSpeech}
-                </td>
-                <td className="font-sans text-sm py-2 pe-3">
-                  <span aria-hidden className="text-wp-amber">
-                    {"★".repeat(entry.frequency)}
-                  </span>
-                  <span className="sr-only">{entry.frequency} out of 3</span>
-                </td>
-                <td className="font-sans text-sm text-foreground py-2 pe-3">
-                  {entry.collocations.join(", ")}
+            {filtered.length === 0 ? (
+              <tr>
+                <td colSpan={4} className="py-8 text-center text-sm text-muted-foreground">
+                  No vocabulary matches your search.
                 </td>
               </tr>
-            ))}
+            ) : (
+              filtered.map((entry) => (
+                <tr key={entry.word} className="border-b border-border/50 align-top">
+                  <th
+                    scope="row"
+                    className="font-sans font-bold text-sm text-foreground py-3 pe-3 text-start"
+                  >
+                    <div className="flex items-center gap-2">
+                      <span>{entry.word}</span>
+                      <button
+                        onClick={() => {
+                          stop();
+                          speak(entry.word);
+                        }}
+                        className="size-7 rounded-full bg-secondary text-primary inline-flex items-center justify-center hover:bg-primary/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                        aria-label={`Pronounce ${entry.word}`}
+                      >
+                        <Volume2 className="size-3.5" aria-hidden />
+                      </button>
+                    </div>
+                  </th>
+                  <td className="font-sans text-sm text-muted-foreground py-3 pe-3">
+                    {entry.partOfSpeech}
+                  </td>
+                  <td className="font-sans text-sm py-3 pe-3">
+                    <span aria-hidden className="text-wp-amber font-mono">
+                      {"★".repeat(entry.frequency)}
+                    </span>
+                    <span className="sr-only">{entry.frequency} out of 3 frequency rating</span>
+                  </td>
+                  <td className="font-sans text-sm text-foreground py-3 pe-3">
+                    {entry.collocations.join(", ")}
+                  </td>
+                </tr>
+              ))
+            )}
           </tbody>
         </table>
       </div>

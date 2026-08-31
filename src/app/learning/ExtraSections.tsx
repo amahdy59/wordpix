@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { UnitLearningMaterials, RewriteExercise, MatchingExercise } from "./types";
 import { CheckCircle2, XCircle } from "lucide-react";
+import type { UnitStudyProgress } from "./study/types";
 
 const CARD = "bg-wp-card rounded-2xl border border-border p-5 shadow-sm";
 
@@ -294,38 +295,82 @@ export function WritingPromptsSection({ materials }: { materials: UnitLearningMa
   );
 }
 
-export function SelfAssessmentSection({ materials }: { materials: UnitLearningMaterials }) {
+export function SelfAssessmentSection({
+  materials,
+  progress,
+  onProgressUpdate,
+}: {
+  materials: UnitLearningMaterials;
+  progress?: UnitStudyProgress;
+  onProgressUpdate?: (p: UnitStudyProgress) => void;
+}) {
   if (!materials.selfAssessment) return null;
+
+  const handleScore = (itemId: string, score: number) => {
+    if (!progress || !onProgressUpdate) return;
+    onProgressUpdate({
+      ...progress,
+      selfAssessment: {
+        ...(progress.selfAssessment || {}),
+        [itemId]: score,
+      },
+    });
+  };
+
+  const confidenceLabels = ["I recognise it", "I can use it", "I can explain it"];
+
   return (
-    <section className={CARD}>
-      <h2 className="font-sans font-bold text-lg text-foreground mb-3">
-        Self-Assessment Checklist
+    <section className={CARD} aria-labelledby="self-assessment-heading">
+      <h2 id="self-assessment-heading" className="font-sans font-bold text-lg text-foreground mb-1">
+        Self-Assessment &amp; Can-Do Checklist
       </h2>
-      <p className="font-sans text-sm text-muted-foreground mb-4">
-        Rate your confidence: 1 = I recognise it · 2 = I can use it · 3 = I can explain it
+      <p className="font-sans text-xs text-muted-foreground mb-4">
+        Rate your confidence: <span className="font-bold text-foreground">1</span> = Recognize ·{" "}
+        <span className="font-bold text-foreground">2</span> = Can use ·{" "}
+        <span className="font-bold text-foreground">3</span> = Can explain
       </p>
       <div className="space-y-3">
-        {materials.selfAssessment.map((item, i) => (
-          <div
-            key={i}
-            className="flex flex-col sm:flex-row justify-between sm:items-center gap-3 p-3 border border-border rounded-xl bg-background"
-          >
-            <div>
-              <p className="font-sans font-bold text-foreground">{item.wordPair}</p>
-              <p className="font-sans text-sm text-muted-foreground">{item.question}</p>
+        {materials.selfAssessment.map((item, i) => {
+          const itemId = `sa-${i}`;
+          const currentScore = progress?.selfAssessment?.[itemId];
+          return (
+            <div
+              key={i}
+              className="flex flex-col sm:flex-row justify-between sm:items-center gap-3 p-4 border border-border rounded-xl bg-background"
+            >
+              <div className="min-w-0 flex-1">
+                <p className="font-sans font-bold text-base text-foreground">{item.wordPair}</p>
+                <p className="font-sans text-xs text-muted-foreground mt-0.5">{item.question}</p>
+              </div>
+              <div
+                role="radiogroup"
+                aria-label={`Confidence rating for ${item.wordPair}`}
+                className="flex gap-2 shrink-0 items-center"
+              >
+                {[1, 2, 3].map((score) => {
+                  const isSelected = currentScore === score;
+                  return (
+                    <button
+                      key={score}
+                      type="button"
+                      role="radio"
+                      aria-checked={isSelected}
+                      aria-label={`${score} of 3: ${confidenceLabels[score - 1]}`}
+                      onClick={() => handleScore(itemId, score)}
+                      className={`min-h-[44px] w-[44px] rounded-full border text-xs font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+                        isSelected
+                          ? "bg-primary text-primary-foreground border-primary shadow-sm scale-105"
+                          : "border-border text-muted-foreground hover:bg-secondary hover:text-foreground hover:border-primary/50 active:scale-95"
+                      }`}
+                    >
+                      {score}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
-            <div className="flex gap-2 shrink-0">
-              {[1, 2, 3].map((score) => (
-                <button
-                  key={score}
-                  className="min-h-[44px] w-[44px] rounded-full border border-border text-xs font-bold hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"
-                >
-                  {score}
-                </button>
-              ))}
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
