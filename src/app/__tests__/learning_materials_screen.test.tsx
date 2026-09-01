@@ -98,15 +98,12 @@ describe("LearningMaterialsScreen", () => {
     expect(screen.queryByText(/\(inferred\)/)).not.toBeInTheDocument();
   });
 
-  it("tells the learner when a unit has not been imported yet", async () => {
+  it("covers every course unit with registered learning materials", () => {
     const withMaterials = new Set(unitsWithLearningMaterials());
-    const gap = Object.keys(COURSE_UNITS).find((id) => !withMaterials.has(id));
-    expect(gap, "every unit now has materials — delete this test").toBeDefined();
-
-    render(<LearningMaterialsScreen unitId={gap!} dispatch={vi.fn()} />);
-    await waitFor(() =>
-      expect(screen.getByText(/no study materials available/i)).toBeInTheDocument()
-    );
+    expect(withMaterials.size).toBe(Object.keys(COURSE_UNITS).length);
+    for (const unitId of Object.keys(COURSE_UNITS)) {
+      expect(withMaterials.has(unitId)).toBe(true);
+    }
   });
 });
 

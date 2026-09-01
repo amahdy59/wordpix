@@ -140,6 +140,14 @@ const LOADERS: Record<string, () => Promise<UnitLearningMaterials>> = {
   "home-features": () => import("./units/home-features").then((m) => m.HOME_FEATURES_LEARNING),
   hospital: () => import("./units/hospital").then((m) => m.HOSPITAL_LEARNING),
   hotel: () => import("./units/hotel").then((m) => m.HOTEL_LEARNING),
+  "human-body-hands-and-feet": () =>
+    import("./units/human-body-hands-and-feet").then((m) => m.HUMAN_BODY_HANDS_AND_FEET_LEARNING),
+  "human-body-head-and-face": () =>
+    import("./units/human-body-head-and-face").then((m) => m.HUMAN_BODY_HEAD_AND_FACE_LEARNING),
+  "human-body-lower-body": () =>
+    import("./units/human-body-lower-body").then((m) => m.HUMAN_BODY_LOWER_BODY_LEARNING),
+  "human-body-upper-body": () =>
+    import("./units/human-body-upper-body").then((m) => m.HUMAN_BODY_UPPER_BODY_LEARNING),
   "ice-cream-shop": () => import("./units/ice-cream-shop").then((m) => m.ICE_CREAM_SHOP_LEARNING),
   "indoor-hobbies": () => import("./units/indoor-hobbies").then((m) => m.INDOOR_HOBBIES_LEARNING),
   "insect-world": () => import("./units/insect-world").then((m) => m.INSECT_WORLD_LEARNING),
