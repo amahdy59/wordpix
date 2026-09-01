@@ -62,9 +62,11 @@ export function InteractiveText({ text, unitId, onInspectWord, className }: Prop
           return (
             <button
               key={index}
+              type="button"
               onClick={() => onInspectWord(word)}
-              className="text-primary font-medium hover:underline focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary rounded-sm px-[2px] -mx-[2px]"
+              className="text-primary font-medium hover:underline focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary rounded-xs px-[2px] -mx-[2px]"
               title={`Tap to inspect "${part}"`}
+              aria-label={`Inspect vocabulary word: ${part}`}
             >
               {part}
             </button>
