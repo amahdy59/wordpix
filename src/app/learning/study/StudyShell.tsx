@@ -9,6 +9,7 @@ import {
   ArrowLeft,
   X,
   Menu,
+  Languages,
 } from "lucide-react";
 import type { UnitLearningMaterials } from "../types";
 import type { CourseUnit } from "../../data/lessons";
@@ -65,6 +66,27 @@ export function StudyShell({
   const [expandedAreas, setExpandedAreas] = useState<Set<StudyArea>>(
     () => new Set<StudyArea>(currentArea === "home" ? ["learn"] : [currentArea])
   );
+
+  // Immersion Mode state (masks Arabic glosses for full English thinking)
+  const [immersionMode, setImmersionMode] = useState<boolean>(() => {
+    try {
+      return localStorage.getItem("wordpix:immersion_mode") === "true";
+    } catch {
+      return false;
+    }
+  });
+
+  const toggleImmersionMode = () => {
+    setImmersionMode((prev) => {
+      const next = !prev;
+      try {
+        localStorage.setItem("wordpix:immersion_mode", String(next));
+      } catch {
+        // Fallback for private browsing
+      }
+      return next;
+    });
+  };
 
   // Vocabulary inspector modal state
   const [inspectedWord, setInspectedWord] = useState<VocabularyItem | null>(null);
@@ -295,6 +317,27 @@ export function StudyShell({
         </div>
 
         <div className="flex items-center gap-2.5 shrink-0">
+          {/* Immersion Mode Toggle */}
+          <button
+            type="button"
+            onClick={toggleImmersionMode}
+            aria-pressed={immersionMode}
+            aria-label={`Language scaffold mode: ${immersionMode ? "English Immersion (Arabic masked)" : "Bilingual (Arabic shown)"}. Click to toggle.`}
+            title={
+              immersionMode
+                ? "Immersion Mode active (Arabic hidden)"
+                : "Bilingual Mode active (Arabic visible)"
+            }
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-xs font-bold transition-colors min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+              immersionMode
+                ? "bg-wp-teal/10 text-wp-teal border-wp-teal/30"
+                : "bg-secondary text-muted-foreground hover:text-foreground border-border"
+            }`}
+          >
+            <Languages className="size-4 shrink-0" aria-hidden />
+            <span className="hidden md:inline">{immersionMode ? "Immersion" : "Bilingual"}</span>
+          </button>
+
           {/* Progress Pill on Header */}
           <div
             className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/80 border border-border/80 text-xs font-bold"
@@ -576,6 +619,7 @@ export function StudyShell({
                   progress={progress}
                   onProgressUpdate={setProgress}
                   onNextActivity={handleNextActivity}
+                  immersionMode={immersionMode}
                 />
               )}
               {currentArea === "use" && (

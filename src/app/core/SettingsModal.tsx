@@ -1,10 +1,25 @@
 import { memo, useState } from "react";
-import { X, Sun, Moon, Volume2, Type, Sliders, ShieldCheck, Eye, Sparkles } from "lucide-react";
+import {
+  X,
+  Sun,
+  Moon,
+  Volume2,
+  Type,
+  Sliders,
+  ShieldCheck,
+  Eye,
+  Sparkles,
+  CloudDownload,
+  CheckCircle2,
+  Wifi,
+} from "lucide-react";
 import { useLearner } from "../context/LearnerContext";
 import { useTheme } from "../shared/ThemeToggle";
 import { useI18n, SUPPORTED_LANGS } from "../context/I18nContext";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useAudio } from "../shared/useAudio";
+import { COURSE_UNITS } from "../data/lessons";
+import { loadUnitVocabulary } from "../data/vocabulary";
 
 /** Speech rates offered in Settings, slowest first. */
 const SPEECH_RATES = [0.5, 0.75, 1] as const;
@@ -37,6 +52,31 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
     reduceMotion,
   } = accessibility;
   const [confirmReset, setConfirmReset] = useState(false);
+  const [isPreloading, setIsPreloading] = useState(false);
+  const [preloadProgress, setPreloadProgress] = useState(0);
+  const [preloadDone, setPreloadDone] = useState(false);
+
+  const handlePreloadAll = async () => {
+    if (isPreloading) return;
+    setIsPreloading(true);
+    setPreloadDone(false);
+    setPreloadProgress(0);
+
+    const unitIds = Object.keys(COURSE_UNITS);
+    const batchSize = 10;
+    let completed = 0;
+
+    for (let i = 0; i < unitIds.length; i += batchSize) {
+      const batch = unitIds.slice(i, i + batchSize);
+      await Promise.all(batch.map((id) => loadUnitVocabulary(id)));
+      completed += batch.length;
+      setPreloadProgress(Math.round((completed / unitIds.length) * 100));
+    }
+
+    setIsPreloading(false);
+    setPreloadDone(true);
+  };
+
   const [elevenLabsKey, setElevenLabsKey] = useState(() => {
     if (typeof window === "undefined") return "";
     return localStorage.getItem("wordpix_elevenlabs_key") || "";
@@ -603,7 +643,65 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
             </div>
           </section>
 
-          {/* SECTION 5: DATA MANAGEMENT */}
+          {/* SECTION 5: OFFLINE READINESS & PRELOAD */}
+          <section className="flex flex-col gap-3">
+            <h3 className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
+              <CloudDownload className="size-4 text-primary" />
+              <span>Offline Readiness &amp; Storage</span>
+            </h3>
+
+            <div className="bg-muted/30 rounded-2xl p-4 border border-border flex flex-col gap-3">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div>
+                  <span className="font-sans font-bold text-foreground text-sm flex items-center gap-2">
+                    <Wifi className="size-4 text-wp-teal" />
+                    <span>Preload Full Curriculum (200 Units)</span>
+                  </span>
+                  <p className="font-sans text-xs text-muted-foreground mt-0.5">
+                    Caches all vocabulary and study guides locally so you can practice seamlessly
+                    offline.
+                  </p>
+                </div>
+
+                <button
+                  type="button"
+                  disabled={isPreloading}
+                  onClick={handlePreloadAll}
+                  className="px-4 py-2.5 rounded-xl bg-primary text-primary-foreground font-sans font-bold text-xs shadow-xs hover:opacity-90 disabled:opacity-50 transition-all shrink-0 flex items-center justify-center gap-2 min-h-[44px]"
+                >
+                  {isPreloading ? (
+                    <span>Downloading {preloadProgress}%…</span>
+                  ) : preloadDone ? (
+                    <>
+                      <CheckCircle2 className="size-4 text-wp-green" />
+                      <span>Ready Offline!</span>
+                    </>
+                  ) : (
+                    <>
+                      <CloudDownload className="size-4" />
+                      <span>Preload All Units</span>
+                    </>
+                  )}
+                </button>
+              </div>
+
+              {isPreloading && (
+                <div className="w-full h-2 bg-secondary rounded-full overflow-hidden mt-1">
+                  <div
+                    className="h-full bg-primary transition-all duration-200 rounded-full"
+                    style={{ width: `${preloadProgress}%` }}
+                    role="progressbar"
+                    aria-valuenow={preloadProgress}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    aria-label={`Offline curriculum download progress: ${preloadProgress}%`}
+                  />
+                </div>
+              )}
+            </div>
+          </section>
+
+          {/* SECTION 6: DATA MANAGEMENT */}
           <section className="flex flex-col gap-3 pt-2">
             <div className="bg-wp-rose/10 border border-wp-rose/20 rounded-2xl p-4 flex items-center justify-between gap-4">
               <div>

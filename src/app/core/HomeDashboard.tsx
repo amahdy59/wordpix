@@ -1,10 +1,20 @@
 import { memo, useMemo } from "react";
-import { ArrowRight, RotateCcw, WifiOff, CheckCircle2 } from "lucide-react";
+import {
+  ArrowRight,
+  RotateCcw,
+  WifiOff,
+  CheckCircle2,
+  Trophy,
+  Library,
+  Target,
+  BookOpen,
+} from "lucide-react";
 import { getDueWordsForReview, type WordLearningState } from "../../features/gamification/sm2";
 import { motion } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { nextGroupToStudy, resolveUnitForLesson, REVIEW_GROUP_ID } from "../data/lessons";
+import { getLocalDateString } from "../../features/gamification/streak";
 
 import { useOfflineReadiness } from "../shared/useOfflineReadiness";
 import { useI18n } from "../context/I18nContext";
@@ -50,6 +60,22 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
   );
   const activeUnit = useMemo(() => resolveUnitForLesson(activeLesson.id), [activeLesson.id]);
   const dueWords = useMemo(() => getDueWordsForReview(progress.wordMemory), [progress.wordMemory]);
+  const todayStr = getLocalDateString(new Date());
+
+  const todayReviewedCount = useMemo(() => {
+    let count = 0;
+    Object.values(progress.wordMemory).forEach((w) => {
+      if (w.lastReviewedAt) {
+        const lastStr = getLocalDateString(new Date(w.lastReviewedAt));
+        if (lastStr === todayStr) count++;
+      }
+    });
+    return count;
+  }, [progress.wordMemory, todayStr]);
+
+  const dailyWordTarget = 10;
+  const dailyTargetPct = Math.min(100, Math.round((todayReviewedCount / dailyWordTarget) * 100));
+  const isDailyTargetMet = todayReviewedCount >= dailyWordTarget;
 
   const offline = useOfflineReadiness(activeUnit.id);
 
@@ -96,6 +122,36 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
         animate="visible"
         className="flex flex-col gap-6 max-w-2xl mx-auto w-full mt-4"
       >
+        {/* SECTION 0: DAILY TARGET PROGRESS */}
+        <motion.div variants={staggerItem}>
+          <Card variant="default" className="border-primary/20 bg-primary/5">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2 font-sans font-bold text-sm text-foreground">
+                <Target className="size-4 text-primary" aria-hidden />
+                <span>Daily Vocabulary Target</span>
+              </div>
+              {isDailyTargetMet ? (
+                <Badge variant="green" size="sm" className="flex items-center gap-1 font-bold">
+                  <Trophy className="size-3.5" />
+                  <span>Target Met!</span>
+                </Badge>
+              ) : (
+                <Badge variant="muted" size="sm">
+                  {num(todayReviewedCount)} / {num(dailyWordTarget)} words
+                </Badge>
+              )}
+            </div>
+            <div className="mt-2.5">
+              <ProgressBar
+                progressPercent={dailyTargetPct}
+                label="Today's words practiced"
+                labelRight={`${dailyTargetPct}%`}
+                ariaLabel={`Daily word target: ${todayReviewedCount} of ${dailyWordTarget} words (${dailyTargetPct}%)`}
+              />
+            </div>
+          </Card>
+        </motion.div>
+
         {/* SECTION 1: TODAY */}
         <motion.div variants={staggerItem}>
           <Section id="section-today" title={t("dashboard.today")}>
@@ -127,23 +183,46 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                 />
               </div>
 
-              <motion.button
-                whileHover={{ scale: 1.015 }}
-                whileTap={{ scale: 0.98 }}
-                type="button"
-                onClick={() =>
-                  dispatch({
-                    type: "START_LESSON",
-                    lessonId: activeLesson.id,
-                    mode: "NEW_LESSON",
-                    wordQueue: activeLesson.wordIds,
-                  })
-                }
-                className="w-full bg-primary hover:opacity-90 active:opacity-80 rounded-2xl py-4 font-sans font-black text-primary-foreground text-lg min-h-[56px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-md transition-colors flex items-center justify-center gap-2 mt-4"
-              >
-                <span>{t("dashboard.continueSession")}</span>
-                <ArrowRight className="size-5" />
-              </motion.button>
+              <div className="flex flex-col sm:flex-row items-center gap-3 mt-4">
+                <motion.button
+                  whileHover={{ scale: 1.015 }}
+                  whileTap={{ scale: 0.98 }}
+                  type="button"
+                  onClick={() =>
+                    dispatch({
+                      type: "START_LESSON",
+                      lessonId: activeLesson.id,
+                      mode: "NEW_LESSON",
+                      wordQueue: activeLesson.wordIds,
+                    })
+                  }
+                  className="flex-1 w-full bg-primary hover:opacity-90 active:opacity-80 rounded-2xl py-3.5 font-sans font-black text-primary-foreground text-base min-h-[52px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-md transition-colors flex items-center justify-center gap-2"
+                >
+                  <BookOpen className="size-5 shrink-0" />
+                  <span>{t("dashboard.continueSession")}</span>
+                  <ArrowRight className="size-5 shrink-0 rtl:rotate-180" />
+                </motion.button>
+
+                <motion.button
+                  whileHover={{ scale: 1.015 }}
+                  whileTap={{ scale: 0.98 }}
+                  type="button"
+                  onClick={() =>
+                    dispatch({
+                      type: "GO",
+                      to: "learning-materials",
+                      unitId: activeUnit.id,
+                      area: "learn",
+                    })
+                  }
+                  title={`Study materials for ${activeUnit.name}`}
+                  aria-label={`Study materials for ${activeUnit.name}`}
+                  className="w-full sm:w-auto px-5 py-3.5 bg-secondary text-primary hover:bg-primary/10 border border-primary/20 rounded-2xl font-sans font-bold text-sm min-h-[52px] flex items-center justify-center gap-2 transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue"
+                >
+                  <Library className="size-4 shrink-0" />
+                  <span>Study Guide</span>
+                </motion.button>
+              </div>
             </Card>
           </Section>
         </motion.div>

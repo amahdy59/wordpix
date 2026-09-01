@@ -11,11 +11,21 @@ interface Props {
   materials: UnitLearningMaterials;
   isRevealed: boolean;
   onReveal: () => void;
+  immersionMode?: boolean;
 }
 
-export function VocabularyCard({ word, meta, materials, isRevealed, onReveal }: Props) {
-  const { speak, stop } = useAudio({ lang: "en-US", rate: 0.9 });
+export function VocabularyCard({
+  word,
+  meta,
+  materials,
+  isRevealed,
+  onReveal,
+  immersionMode = false,
+}: Props) {
+  const [speechRate, setSpeechRate] = useState<0.8 | 1.0 | 1.2>(0.9 as 1.0);
+  const { speak, stop } = useAudio({ lang: "en-US", rate: speechRate });
   const [showDetails, setShowDetails] = useState(false);
+  const [showImmersionArabic, setShowImmersionArabic] = useState(false);
 
   // Look up pronunciation details if available
   const pronunciation = materials.pronunciationGuide?.find(
@@ -25,6 +35,10 @@ export function VocabularyCard({ word, meta, materials, isRevealed, onReveal }: 
   const handleAudio = () => {
     stop();
     speak(word.label);
+  };
+
+  const cycleSpeed = () => {
+    setSpeechRate((prev) => (prev === 0.8 ? 1.0 : prev === 1.0 ? 1.2 : 0.8));
   };
 
   return (
@@ -42,11 +56,15 @@ export function VocabularyCard({ word, meta, materials, isRevealed, onReveal }: 
               Try to recall this word in English before revealing.
             </p>
             <button
+              type="button"
               onClick={onReveal}
               className="inline-flex items-center justify-center gap-2 px-7 py-3 bg-primary text-primary-foreground rounded-2xl font-bold text-base hover:bg-primary/90 transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[48px] shadow-xs"
             >
               <Eye className="size-5" aria-hidden />
               <span>Reveal Word</span>
+              <kbd className="hidden sm:inline-flex ms-1 px-2 py-0.5 text-xs bg-primary-foreground/20 rounded font-mono font-normal">
+                Space
+              </kbd>
             </button>
           </div>
         ) : (
@@ -55,16 +73,27 @@ export function VocabularyCard({ word, meta, materials, isRevealed, onReveal }: 
               {word.label}
             </h3>
 
-            <div className="flex items-center gap-3 mb-3">
-              <span className="text-base text-muted-foreground font-mono bg-secondary/60 px-3 py-0.5 rounded-xl">
+            <div className="flex items-center gap-2 sm:gap-3 mb-3">
+              <span className="text-sm sm:text-base text-muted-foreground font-mono bg-secondary/60 px-3 py-0.5 rounded-xl">
                 {pronunciation?.ipa || word.phonetic}
               </span>
               <button
+                type="button"
                 onClick={handleAudio}
                 className="size-10 shrink-0 rounded-xl bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] min-w-[44px]"
                 aria-label={`Listen to ${word.label}`}
+                title={`Listen to ${word.label} (Press A)`}
               >
                 <Volume2 className="size-5" aria-hidden />
+              </button>
+              <button
+                type="button"
+                onClick={cycleSpeed}
+                className="px-2.5 py-1 text-xs font-mono font-bold rounded-xl bg-secondary text-muted-foreground hover:text-foreground hover:bg-secondary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                aria-label={`Speech playback speed: ${speechRate}x. Click to change.`}
+                title="Change speech playback speed"
+              >
+                {speechRate}x
               </button>
             </div>
 
@@ -99,6 +128,29 @@ export function VocabularyCard({ word, meta, materials, isRevealed, onReveal }: 
                       <p className="text-foreground text-sm leading-relaxed">{word.description}</p>
                     </div>
                   )}
+
+                  {immersionMode ? (
+                    <div>
+                      {!showImmersionArabic ? (
+                        <button
+                          type="button"
+                          onClick={() => setShowImmersionArabic(true)}
+                          className="text-xs font-bold text-primary hover:underline py-1.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary min-h-[44px] flex items-center gap-1.5"
+                        >
+                          <Eye className="size-3.5" />
+                          <span>Reveal Arabic Meaning</span>
+                        </button>
+                      ) : (
+                        <div
+                          className="p-2.5 rounded-xl bg-background/80 border border-border/50 text-xs font-bold text-foreground"
+                          dir="rtl"
+                          lang="ar"
+                        >
+                          {word.description}
+                        </div>
+                      )}
+                    </div>
+                  ) : null}
 
                   {meta?.collocations && meta.collocations.length > 0 && (
                     <div>
