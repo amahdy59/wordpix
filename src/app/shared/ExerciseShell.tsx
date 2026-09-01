@@ -66,7 +66,7 @@ export const ExerciseShell = memo(function ExerciseShell({
     typeof progress === "number" ? 100 : progress ? progress.total : EXERCISE_STEP_COUNT;
 
   return (
-    <div className="bg-background flex flex-col lg:flex-row min-h-dvh lg:h-dvh lg:min-h-0 lg:overflow-hidden relative">
+    <div className="bg-background flex flex-col lg:flex-row h-dvh max-h-dvh overflow-hidden relative">
       <ExitConfirmModal
         isOpen={showExitModal}
         onCancel={() => setShowExitModal(false)}

@@ -18,7 +18,7 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
   return (
     <aside
       className="hidden lg:flex flex-col items-center xl:items-stretch bg-wp-card border-e border-border
-                 w-[80px] xl:w-[240px] shrink-0 py-6 xl:py-8 justify-between select-none z-30 transition-all duration-300"
+                 w-[80px] xl:w-[240px] shrink-0 h-dvh sticky top-0 start-0 overflow-y-auto py-6 xl:py-8 justify-between select-none z-30 transition-all duration-300"
       aria-label="Sidebar navigation"
     >
       <SettingsModal isOpen={showSettingsModal} onClose={() => setShowSettingsModal(false)} />
@@ -60,9 +60,10 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
                   relative size-12 xl:h-12 xl:w-full xl:px-4 rounded-xl flex items-center justify-center xl:justify-start
                   focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2
                   focus-visible:outline-primary transition-all group
-                  ${isActive
-                    ? "bg-secondary text-primary border border-primary/20 shadow-wp-xs xl:shadow-none xl:border-transparent xl:bg-primary/10"
-                    : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                  ${
+                    isActive
+                      ? "bg-secondary text-primary border border-primary/20 shadow-wp-xs xl:shadow-none xl:border-transparent xl:bg-primary/10"
+                      : "text-muted-foreground hover:bg-muted hover:text-foreground"
                   }
                 `}
               >
@@ -96,9 +97,9 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
             Settings
           </span>
         </button>
-        
+
         <ThemeToggle compact="responsive" />
-        
+
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "profile" })}

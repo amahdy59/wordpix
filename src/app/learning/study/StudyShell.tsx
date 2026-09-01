@@ -224,7 +224,7 @@ export function StudyShell({
     };
 
   return (
-    <div className="flex flex-col h-full bg-background text-foreground">
+    <div className="flex flex-col h-full bg-background text-foreground overflow-hidden">
       {/* 1. Global Sticky Header across Home & Activities */}
       <header className="sticky top-0 z-30 flex shrink-0 items-center justify-between border-b border-border bg-background/95 px-4 py-2.5 backdrop-blur shadow-xs gap-3">
         <div className="flex items-center gap-3 min-w-0">
@@ -310,12 +310,12 @@ export function StudyShell({
             })}
           </div>
 
-          {/* Mobile Drawer Button */}
+          {/* Mobile Drawer Toggle */}
           <button
             ref={contentsBtnRef}
             onClick={() => setIsMobileDrawerOpen(true)}
-            className="lg:hidden shrink-0 min-h-[44px] min-w-[44px] inline-flex items-center gap-2 rounded-xl border border-border bg-secondary/80 px-3.5 py-2 text-xs font-bold text-foreground hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
-            aria-label="Open study activities menu"
+            className="lg:hidden flex items-center gap-1.5 px-3 py-2 rounded-xl bg-secondary text-foreground text-xs font-bold border border-border hover:bg-secondary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+            aria-label="Open study curriculum contents menu"
           >
             <Menu className="size-4" aria-hidden />
             <span>Contents</span>
@@ -324,13 +324,13 @@ export function StudyShell({
       </header>
 
       {/* 2. Main Two-Pane Structure */}
-      <div className="flex min-h-0 flex-1 flex-col lg:flex-row relative">
+      <div className="flex min-h-0 flex-1 flex-col lg:flex-row relative overflow-hidden">
         {/* Sticky Desktop Left Sidebar & Mobile Drawer */}
         <aside
           aria-label={`${unit.name} study navigation`}
           className={`
             fixed inset-0 z-40 bg-card/95 backdrop-blur
-            lg:static lg:flex lg:w-80 lg:shrink-0 lg:flex-col lg:overflow-y-auto lg:border-e lg:border-border lg:bg-card/70 lg:backdrop-blur
+            lg:static lg:flex lg:w-80 lg:shrink-0 lg:flex-col lg:h-full lg:overflow-y-auto lg:border-e lg:border-border lg:bg-card/70 lg:backdrop-blur
             ${isMobileDrawerOpen ? "flex flex-col overflow-y-auto" : "hidden"}
           `}
         >

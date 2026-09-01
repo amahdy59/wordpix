@@ -289,18 +289,26 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       )}
 
       {state.id === "learn-words" && (
-        <div className="min-h-dvh bg-background flex flex-col">
+        <div className="h-dvh max-h-dvh overflow-hidden bg-background flex flex-col">
           <SkipLink />
-          <div id="main-content" tabIndex={-1} className="w-full flex-1 flex flex-col outline-none">
+          <div
+            id="main-content"
+            tabIndex={-1}
+            className="w-full flex-1 flex flex-col outline-none overflow-hidden"
+          >
             {animatedContent}
           </div>
         </div>
       )}
 
       {state.id !== "onboarding" && !TABBED_IDS.has(state.id) && state.id !== "learn-words" && (
-        <div className="min-h-dvh bg-background flex flex-col">
+        <div className="h-dvh max-h-dvh overflow-hidden bg-background flex flex-col">
           <SkipLink />
-          <div id="main-content" tabIndex={-1} className="w-full flex-1 flex flex-col outline-none">
+          <div
+            id="main-content"
+            tabIndex={-1}
+            className="w-full flex-1 flex flex-col outline-none overflow-hidden"
+          >
             {animatedContent}
           </div>
         </div>

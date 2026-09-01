@@ -59,9 +59,19 @@ describe("AppShell responsive components", () => {
     expect(source).toMatch(/lg:flex-row/);
   });
 
-  it("SidebarNav is hidden on mobile and visible on desktop", () => {
+  it("SidebarNav is hidden on mobile, visible on desktop, and sticky with full dvh height", () => {
     const source = stripComments(read("shared/SidebarNav.tsx"));
     expect(source).toMatch(/hidden\s+lg:flex/);
+    expect(source).toMatch(/sticky/);
+    expect(source).toMatch(/top-0/);
+    expect(source).toMatch(/h-dvh/);
+  });
+
+  it("MobileHeader is sticky at viewport top on mobile", () => {
+    const source = stripComments(read("shared/MobileHeader.tsx"));
+    expect(source).toMatch(/sticky/);
+    expect(source).toMatch(/top-0/);
+    expect(source).toMatch(/shrink-0/);
   });
 
   it("BottomTabBar is visible on mobile and hidden on desktop", () => {

@@ -125,11 +125,11 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
   };
 
   return (
-    <div className="bg-background flex flex-col min-h-dvh relative">
+    <div className="h-dvh max-h-dvh bg-background flex flex-col overflow-hidden">
       <StatusBar />
 
       {/* Header Bar */}
-      <header className="sticky top-0 z-40 flex items-center justify-between px-5 py-4 border-b border-border bg-wp-card shrink-0 shadow-sm">
+      <header className="sticky top-0 z-40 shrink-0 flex items-center justify-between px-5 py-4 border-b border-border bg-wp-card shadow-sm">
         <div className="flex items-center gap-3">
           <BackButton onClick={() => dispatch({ type: "GO", to: "explore" })} />
           <div>

@@ -109,7 +109,7 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
   }
 
   return (
-    <div className="min-h-dvh bg-background flex flex-col">
+    <div className="h-dvh max-h-dvh bg-background flex flex-col overflow-hidden">
       <StatusBar />
       <div className="flex-1 flex flex-col relative overflow-hidden">
         <StudyShell

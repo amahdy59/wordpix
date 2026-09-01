@@ -18,12 +18,12 @@ interface Props {
  */
 export const AppShell = memo(function AppShell({ activeTab, dispatch, children }: Props) {
   return (
-    <div className="min-h-dvh w-full max-w-full overflow-x-hidden bg-background flex flex-col lg:flex-row relative">
+    <div className="h-dvh max-h-dvh w-full max-w-full overflow-hidden bg-background flex flex-col lg:flex-row relative">
       {/* Left sidebar — visible on md+ only. Hugs the left edge natively. */}
       <SidebarNav activeTab={activeTab} dispatch={dispatch} />
 
       {/* Main Content Column */}
-      <div className="flex-1 flex flex-col min-w-0 h-dvh relative">
+      <div className="flex-1 flex flex-col min-w-0 h-dvh overflow-hidden relative">
         {/* Mobile Header - hidden on lg+ */}
         <MobileHeader dispatch={dispatch} />
 

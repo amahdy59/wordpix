@@ -32,7 +32,7 @@ export const MobileHeader = memo(function MobileHeader({ dispatch }: Props) {
         Nothing scrolled sideways to reveal it, which is why it went unnoticed.
       */}
       <header
-        className="lg:hidden sticky top-0 z-40 w-full flex items-center justify-between px-4 h-[calc(3.5rem+env(safe-area-inset-top))] pt-[env(safe-area-inset-top)] bg-background/85 backdrop-blur-xl border-b border-border"
+        className="lg:hidden sticky top-0 z-40 shrink-0 w-full flex items-center justify-between px-4 h-[calc(3.5rem+env(safe-area-inset-top))] pt-[env(safe-area-inset-top)] bg-background/85 backdrop-blur-xl border-b border-border"
         aria-label="Mobile top navigation"
       >
         {/* Brand / Home Shortcut */}
