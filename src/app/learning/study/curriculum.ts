@@ -3,11 +3,10 @@ import type { StudyNode } from "./types";
 
 export function generateCurriculum(materials: UnitLearningMaterials): StudyNode[] {
   const nodes: StudyNode[] = [];
-  const { unitId } = materials;
 
   // 1. Learn Area
-  if (unitId === "bathroom" && materials.priorityTiers?.essential) {
-    // Force essential words to be the first node
+  if (materials.priorityTiers?.essential && materials.priorityTiers.essential.length > 0) {
+    // Lead with essential words when priority tiers exist
     nodes.push({
       id: "learn-essential",
       area: "learn",
@@ -15,7 +14,7 @@ export function generateCurriculum(materials: UnitLearningMaterials): StudyNode[
       description: "Start here — the core vocabulary.",
       type: "vocabulary",
       wordIds: materials.priorityTiers.essential,
-      estimatedMinutes: 3,
+      estimatedMinutes: Math.max(1, Math.ceil(materials.priorityTiers.essential.length / 2)),
     });
 
     // The rest of the subtopics
@@ -37,7 +36,7 @@ export function generateCurriculum(materials: UnitLearningMaterials): StudyNode[
       }
     });
   } else {
-    // Generic fallback for other units
+    // Standard subtopics for units without separate priority tiers
     materials.subtopics?.forEach((subtopic) => {
       nodes.push({
         id: `learn-${subtopic.id}`,
@@ -122,14 +121,24 @@ export function generateCurriculum(materials: UnitLearningMaterials): StudyNode[
     });
   }
 
-  // 4. Review Area
+  // 4. Review Area (Universal across all units)
   if (materials.selfAssessment && materials.selfAssessment.length > 0) {
     nodes.push({
       id: "review-assessment",
       area: "review",
       title: "Can-do goals",
+      description: "Check your confidence & review difficult words",
       type: "assessment",
-      estimatedMinutes: 2,
+      estimatedMinutes: 3,
+    });
+  } else {
+    nodes.push({
+      id: "review-difficult",
+      area: "review",
+      title: "Difficult words",
+      description: "Strengthen words queued for review",
+      type: "assessment",
+      estimatedMinutes: 3,
     });
   }
 

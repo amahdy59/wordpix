@@ -112,13 +112,13 @@ export function LearnArea({ node, materials, progress, onProgressUpdate, onNextA
         <div className="size-20 rounded-3xl bg-wp-green-light/20 text-wp-green flex items-center justify-center mb-6 shadow-xs border border-wp-green/30">
           <CheckCircle2 className="size-10" aria-hidden />
         </div>
-        <h2 className="text-3xl font-extrabold text-foreground mb-3">{node.title} Complete!</h2>
+        <h1 className="text-3xl font-extrabold text-foreground mb-3">{node.title} Complete!</h1>
         <p className="text-muted-foreground text-base max-w-md mb-8 leading-relaxed">
           {needsPracticeCount > 0
             ? `You reviewed ${words.length} words. ${needsPracticeCount} ${
                 needsPracticeCount === 1 ? "word was" : "words were"
-              } added to your Review queue for spaced practice.`
-            : `Fantastic! You recalled all ${words.length} words with confidence.`}
+              } queued in your Review list for focused practice.`
+            : `You reviewed all ${words.length} words in this set with confidence.`}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3.5 w-full sm:w-auto">
@@ -146,27 +146,25 @@ export function LearnArea({ node, materials, progress, onProgressUpdate, onNextA
   );
 
   return (
-    <div className="max-w-2xl mx-auto w-full p-4 sm:p-6 md:p-8 flex flex-col items-center">
-      {/* Header & Progress */}
-      <div className="w-full mb-6">
-        <div className="flex justify-between items-baseline gap-3 mb-3">
+    <div className="max-w-2xl mx-auto w-full h-full flex flex-col px-4 sm:px-6 md:px-8 py-3 sm:py-4">
+      {/* Header & Progress — fixed height, never scrolls */}
+      <div className="w-full shrink-0 mb-3">
+        <div className="flex justify-between items-baseline gap-3 mb-2">
           <div className="min-w-0">
-            <h2 className="text-xl sm:text-2xl font-extrabold text-foreground truncate">
+            <h1 className="text-lg sm:text-xl font-extrabold text-foreground truncate">
               {node.title}
-            </h2>
+            </h1>
             {node.description && (
-              <p className="text-xs sm:text-sm text-muted-foreground mt-0.5 truncate">
-                {node.description}
-              </p>
+              <p className="text-xs text-muted-foreground mt-0.5 truncate">{node.description}</p>
             )}
           </div>
-          <span className="text-xs font-bold text-muted-foreground bg-secondary/80 px-3 py-1.5 rounded-full shrink-0">
+          <span className="text-xs font-bold text-muted-foreground bg-secondary/80 px-3 py-1 rounded-full shrink-0">
             {currentIndex + 1} of {words.length}
           </span>
         </div>
 
         {/* Accessible Progress Bar */}
-        <div className="w-full h-2.5 bg-secondary rounded-full overflow-hidden">
+        <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
           <div
             className="h-full bg-primary transition-all duration-300 rounded-full"
             style={{ width: `${progressPercent}%` }}
@@ -184,8 +182,8 @@ export function LearnArea({ node, materials, progress, onProgressUpdate, onNextA
         Word {currentIndex + 1} of {words.length}: {isRevealed ? currentWord.label : "Hidden"}
       </div>
 
-      {/* Vocabulary Card with Recall Mode */}
-      <div className="w-full">
+      {/* Vocabulary Card — fills remaining vertical space between header & buttons */}
+      <div className="w-full flex-1 min-h-0">
         <VocabularyCard
           key={currentWord.id}
           word={currentWord}
@@ -196,8 +194,8 @@ export function LearnArea({ node, materials, progress, onProgressUpdate, onNextA
         />
       </div>
 
-      {/* Action Controls */}
-      <div className="w-full mt-6">
+      {/* Action Controls — fixed at bottom, never scrolls */}
+      <div className="w-full shrink-0 pt-3">
         {!isRevealed ? (
           <div className="flex justify-between items-center gap-3">
             <button
@@ -226,17 +224,17 @@ export function LearnArea({ node, materials, progress, onProgressUpdate, onNextA
             </button>
           </div>
         ) : (
-          <div className="flex flex-col sm:flex-row gap-3.5 w-full">
+          <div className="flex flex-col sm:flex-row gap-3 w-full">
             <button
               onClick={handleNeedsPractice}
-              className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 px-5 rounded-2xl border border-wp-amber/40 bg-wp-amber/10 text-wp-amber font-bold text-sm hover:bg-wp-amber/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-wp-amber min-h-[48px]"
+              className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-5 rounded-2xl border border-wp-amber/40 bg-wp-amber/10 text-wp-amber font-bold text-sm hover:bg-wp-amber/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-wp-amber min-h-[48px]"
             >
               <HelpCircle className="size-4" aria-hidden />
               <span>Needs Practice</span>
             </button>
             <button
               onClick={handleGotIt}
-              className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 px-5 rounded-2xl bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
+              className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-5 rounded-2xl bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
             >
               <ThumbsUp className="size-4" aria-hidden />
               <span>Got It</span>

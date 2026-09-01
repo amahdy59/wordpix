@@ -41,7 +41,8 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
 }: Props) {
   const unit = COURSE_UNITS[unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
   const [materials, setMaterials] = useState<UnitLearningMaterials | null>(null);
-  const [status, setStatus] = useState<"loading" | "ready" | "empty">("loading");
+  const [status, setStatus] = useState<"loading" | "ready" | "empty" | "error">("loading");
+  const [loadAttempt, setLoadAttempt] = useState(0);
 
   // RouterView keys this screen by unit id, so a different unit remounts with fresh state.
   useEffect(() => {
@@ -57,12 +58,12 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
         setStatus("ready");
       })
       .catch(() => {
-        if (!cancelled) setStatus("empty");
+        if (!cancelled) setStatus("error");
       });
     return () => {
       cancelled = true;
     };
-  }, [unit.id]);
+  }, [unit.id, loadAttempt]);
 
   const handleBack = useCallback(() => {
     dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id });
@@ -79,6 +80,49 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
         <p className="font-sans text-muted-foreground" role="status">
           Loading study materials…
         </p>
+      </div>
+    );
+  }
+
+  if (status === "error") {
+    return (
+      <div className="min-h-dvh bg-background flex flex-col">
+        <StatusBar />
+        <header className="px-4 py-3 border-b border-border flex items-center gap-3">
+          <BackButton onClick={handleBack} aria-label={`Back to ${unit.name}`} />
+          <div className="min-w-0">
+            <h1 className="font-sans font-bold text-xl text-foreground">{unit.name}</h1>
+          </div>
+        </header>
+        <div
+          className="flex-1 flex flex-col items-center justify-center p-8 text-center"
+          role="alert"
+        >
+          <p className="font-sans text-destructive font-bold mb-2">
+            Failed to load study materials.
+          </p>
+          <p className="font-sans text-muted-foreground text-sm mb-6 max-w-sm">
+            There was a problem loading content for this unit. Please check your connection and try
+            again.
+          </p>
+          <div className="flex gap-3">
+            <button
+              onClick={() => {
+                setStatus("loading");
+                setLoadAttempt((c) => c + 1);
+              }}
+              className="px-6 py-3 bg-primary text-primary-foreground rounded-2xl font-bold min-h-[48px] shadow-sm hover:bg-primary/90 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              Try Again
+            </button>
+            <button
+              onClick={handleBack}
+              className="px-6 py-3 border border-border text-foreground rounded-2xl font-bold min-h-[48px] hover:bg-secondary transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              Go Back
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
@@ -189,19 +233,38 @@ export function PassageSection({
   onInspectWord?: (word: VocabularyItem) => void;
 }) {
   const passage = materials.passage;
+  const { speak, stop, isPlaying } = useAudio({ lang: "en-US", rate: 0.85 });
   if (!passage) return null;
   return (
     <div className="space-y-6">
       <section className={CARD} aria-labelledby="passage-heading">
-        <div className="flex items-center justify-between gap-3 border-b border-border/60 pb-3.5">
-          <h2 id="passage-heading" className="font-bold text-xl text-foreground min-w-0">
-            {passage.title}
-          </h2>
-          <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 shrink-0">
-            {passage.level}
-          </span>
+        <div className="flex items-center justify-between gap-3 border-b border-border/60 pb-3.5 flex-wrap">
+          <div className="min-w-0 flex items-center gap-3">
+            <h2 id="passage-heading" className="font-bold text-xl text-foreground truncate min-w-0">
+              {passage.title}
+            </h2>
+            <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 shrink-0">
+              {passage.level}
+            </span>
+          </div>
+          <button
+            type="button"
+            onClick={() => {
+              if (isPlaying) stop();
+              else speak(passage.text);
+            }}
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-secondary text-primary hover:bg-primary hover:text-primary-foreground font-bold text-xs transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+            aria-label={isPlaying ? "Stop reading passage" : "Listen to full passage"}
+          >
+            <Volume2 className="size-4" aria-hidden />
+            <span>{isPlaying ? "Stop" : "Read Aloud"}</span>
+          </button>
         </div>
-        <div className="mt-4 text-foreground text-base sm:text-lg leading-relaxed whitespace-pre-line">
+        <div
+          className="mt-4 text-foreground text-base sm:text-lg leading-relaxed whitespace-pre-line"
+          lang="en"
+          dir="ltr"
+        >
           {unitId && onInspectWord ? (
             <InteractiveText text={passage.text} unitId={unitId} onInspectWord={onInspectWord} />
           ) : (
@@ -308,6 +371,7 @@ export function PhrasesSection({ materials }: { materials: UnitLearningMaterials
   const [filter, setFilter] = useState<"all" | PhraseKind>("all");
   const phrases = materials.phrases ?? [];
   const shown = filter === "all" ? phrases : phrases.filter((p) => p.kind === filter);
+  const { speak, stop } = useAudio({ lang: "en-US", rate: 0.9 });
 
   const counts = {
     all: phrases.length,
@@ -328,48 +392,54 @@ export function PhrasesSection({ materials }: { materials: UnitLearningMaterials
       </div>
 
       <div role="group" aria-label="Filter phrases" className="mt-4 flex gap-2 flex-wrap">
-        {(["all", "idiom", "phrasal-verb", "collocation"] as const).map((key) => (
-          <button
-            key={key}
-            type="button"
-            onClick={() => setFilter(key)}
-            aria-pressed={filter === key}
-            className={`rounded-xl px-3.5 py-2 text-xs font-bold border transition-colors outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] ${
-              filter === key
-                ? "bg-primary text-primary-foreground border-primary shadow-xs"
-                : "bg-background text-muted-foreground border-border hover:border-primary/50 hover:bg-secondary/40"
-            }`}
-          >
-            {key === "all" ? "All" : `${PHRASE_KIND_LABEL[key]}s`} ({counts[key]})
-          </button>
-        ))}
+        {(["all", "idiom", "phrasal-verb", "collocation"] as const)
+          .filter((key) => counts[key] > 0)
+          .map((key) => (
+            <button
+              key={key}
+              type="button"
+              onClick={() => setFilter(key)}
+              aria-pressed={filter === key}
+              className={`rounded-xl px-3.5 py-2 text-xs font-bold border transition-colors outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] ${
+                filter === key
+                  ? "bg-primary text-primary-foreground border-primary shadow-xs"
+                  : "bg-background text-muted-foreground border-border hover:border-primary/50 hover:bg-secondary/40"
+              }`}
+            >
+              {key === "all" ? "All" : `${PHRASE_KIND_LABEL[key]}s`} ({counts[key]})
+            </button>
+          ))}
       </div>
 
-      <ul className="mt-5 space-y-3.5">
+      <ul className="mt-5 space-y-3.5" lang="en" dir="ltr">
         {shown.map((phrase) => (
           <li
             key={phrase.id}
-            className="rounded-2xl border border-border p-4 bg-background hover:border-primary/40 transition-colors"
+            className="rounded-2xl border border-border p-4 bg-background hover:border-primary/40 transition-colors flex flex-col sm:flex-row justify-between sm:items-start gap-3"
           >
-            <div className="flex items-center gap-2.5 flex-wrap">
-              <p className="font-bold text-base text-foreground">{phrase.phrase}</p>
-              <span
-                className="text-[11px] uppercase tracking-wide font-bold px-2.5 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20"
-                title={
-                  phrase.kindInferred
-                    ? "Kind inferred from the phrase, not tagged in the source"
-                    : undefined
-                }
-              >
-                {PHRASE_KIND_LABEL[phrase.kind]}
-                {phrase.kindInferred && <span aria-hidden>*</span>}
-                {phrase.kindInferred && <span className="sr-only"> (inferred)</span>}
-              </span>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2.5 flex-wrap">
+                <p className="font-bold text-base text-foreground">{phrase.phrase}</p>
+                <span className="text-[11px] uppercase tracking-wide font-bold px-2.5 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">
+                  {PHRASE_KIND_LABEL[phrase.kind]}
+                </span>
+              </div>
+              <p className="text-sm text-foreground mt-1.5 leading-relaxed">{phrase.meaning}</p>
+              <p className="text-xs sm:text-sm text-muted-foreground italic mt-1.5 border-s-2 border-primary/30 ps-2.5">
+                &ldquo;{phrase.example}&rdquo;
+              </p>
             </div>
-            <p className="text-sm text-foreground mt-1.5 leading-relaxed">{phrase.meaning}</p>
-            <p className="text-xs sm:text-sm text-muted-foreground italic mt-1.5 border-s-2 border-primary/30 ps-2.5">
-              &ldquo;{phrase.example}&rdquo;
-            </p>
+            <button
+              type="button"
+              onClick={() => {
+                stop();
+                speak(phrase.phrase);
+              }}
+              className="size-11 shrink-0 rounded-xl bg-secondary text-primary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary self-end sm:self-start min-h-[44px] min-w-[44px]"
+              aria-label={`Listen to phrase: ${phrase.phrase}`}
+            >
+              <Volume2 className="size-4" aria-hidden />
+            </button>
           </li>
         ))}
       </ul>
@@ -387,23 +457,39 @@ export function DialogueSection({
   onInspectWord?: (word: VocabularyItem) => void;
 }) {
   const dialogue = materials.dialogue;
-  const { speak, stop } = useAudio({ lang: "en-US", rate: 0.9 });
+  const { speak, stop, isPlaying } = useAudio({ lang: "en-US", rate: 0.9 });
   if (!dialogue) return null;
+
+  const fullDialogueText = dialogue.lines.map((l) => `${l.speaker}: ${l.text}`).join(". ");
 
   return (
     <section className={CARD} aria-labelledby="dialogue-heading">
-      <div className="border-b border-border/60 pb-3">
-        <h2 id="dialogue-heading" className="font-bold text-lg sm:text-xl text-foreground">
-          {dialogue.title && dialogue.title.toLowerCase() !== "mini dialogue"
-            ? `Mini Dialogue — ${dialogue.title}`
-            : "Mini Dialogue"}
-        </h2>
-        {dialogue.scene && (
-          <p className="mt-1 text-xs sm:text-sm text-muted-foreground italic">{dialogue.scene}</p>
-        )}
+      <div className="border-b border-border/60 pb-3 flex items-center justify-between gap-3 flex-wrap">
+        <div className="min-w-0">
+          <h2 id="dialogue-heading" className="font-bold text-lg sm:text-xl text-foreground">
+            {dialogue.title && dialogue.title.toLowerCase() !== "mini dialogue"
+              ? `Mini Dialogue — ${dialogue.title}`
+              : "Mini Dialogue"}
+          </h2>
+          {dialogue.scene && (
+            <p className="mt-1 text-xs sm:text-sm text-muted-foreground italic">{dialogue.scene}</p>
+          )}
+        </div>
+        <button
+          type="button"
+          onClick={() => {
+            if (isPlaying) stop();
+            else speak(fullDialogueText);
+          }}
+          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-secondary text-primary hover:bg-primary hover:text-primary-foreground font-bold text-xs transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+          aria-label={isPlaying ? "Stop dialogue audio" : "Play entire dialogue audio"}
+        >
+          <Volume2 className="size-4" aria-hidden />
+          <span>{isPlaying ? "Stop" : "Play All"}</span>
+        </button>
       </div>
 
-      <ol className="mt-5 space-y-3.5">
+      <ol className="mt-5 space-y-3.5" lang="en" dir="ltr">
         {dialogue.lines.map((line, i) => (
           <li
             key={`${line.speaker}-${i}`}
@@ -468,7 +554,11 @@ export function MistakesSection({ materials }: { materials: UnitLearningMaterial
               className="rounded-2xl border border-border p-4 sm:p-5 bg-background"
             >
               <div className="flex justify-between items-start gap-3">
-                <p className="text-sm sm:text-base text-destructive font-medium leading-relaxed">
+                <p
+                  className="text-sm sm:text-base text-destructive font-medium leading-relaxed"
+                  lang="en"
+                  dir="ltr"
+                >
                   <span aria-hidden className="font-bold">
                     ✗{" "}
                   </span>
@@ -479,6 +569,11 @@ export function MistakesSection({ materials }: { materials: UnitLearningMaterial
                   type="button"
                   onClick={() => toggleReveal(mistake.id)}
                   aria-expanded={isRevealed}
+                  aria-label={
+                    isRevealed
+                      ? `Hide correction for: ${mistake.wrong}`
+                      : `Reveal correction for: ${mistake.wrong}`
+                  }
                   className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-secondary text-foreground hover:bg-secondary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                 >
                   {isRevealed ? (
@@ -495,7 +590,7 @@ export function MistakesSection({ materials }: { materials: UnitLearningMaterial
 
               {isRevealed && (
                 <div className="mt-3.5 pt-3.5 border-t border-border/60 space-y-2 animate-in fade-in duration-150">
-                  <p className="text-sm sm:text-base text-wp-green font-bold">
+                  <p className="text-sm sm:text-base text-wp-green font-bold" lang="en" dir="ltr">
                     <span aria-hidden className="font-bold">
                       ✓{" "}
                     </span>

@@ -75,6 +75,7 @@ export function StudyShell({
   // Mobile drawer state
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
   const contentsBtnRef = React.useRef<HTMLButtonElement>(null);
+  const drawerRef = React.useRef<HTMLElement>(null);
 
   const closeDrawer = () => {
     setIsMobileDrawerOpen(false);
@@ -85,19 +86,42 @@ export function StudyShell({
     saveStudyProgress(progress);
   }, [progress]);
 
+  // Scroll reset & focus transfer on route/activity change
   useEffect(() => {
-    if (currentNodeId && focusRef.current) {
-      focusRef.current.focus({ preventScroll: true });
+    if (focusRef.current) {
+      focusRef.current.scrollTop = 0;
+      if (currentNodeId) {
+        focusRef.current.focus({ preventScroll: true });
+      }
     }
-  }, [currentNodeId]);
+  }, [currentNodeId, currentArea]);
 
+  // Focus trap and Escape key listener for mobile drawer modal
   useEffect(() => {
     if (!isMobileDrawerOpen) return;
-    const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") closeDrawer();
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        closeDrawer();
+        return;
+      }
+      if (event.key === "Tab" && drawerRef.current) {
+        const focusable = drawerRef.current.querySelectorAll<HTMLElement>(
+          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        );
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          last.focus();
+          event.preventDefault();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          first.focus();
+          event.preventDefault();
+        }
+      }
     };
-    window.addEventListener("keydown", handleEscape);
-    return () => window.removeEventListener("keydown", handleEscape);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isMobileDrawerOpen]);
 
   const handleContinue = () => {
@@ -140,6 +164,7 @@ export function StudyShell({
         nodeId: node.id,
       });
       setProgress((prev) => ({ ...prev, lastNodeId: node.id }));
+      setExpandedAreas((current) => new Set(current).add(node.area));
       setIsMobileDrawerOpen(false);
     }
   };
@@ -254,17 +279,17 @@ export function StudyShell({
               <span className="truncate">{unit.name}</span>
               {currentArea !== "home" && (
                 <>
-                  <span className="opacity-50" aria-hidden>
+                  <span className="opacity-40" aria-hidden>
                     /
                   </span>
                   <span className="text-primary font-bold">{areaMeta[currentArea].label}</span>
                 </>
               )}
             </nav>
-            <div className="truncate text-sm sm:text-base font-bold text-foreground mt-0.5">
+            <div className="truncate text-sm sm:text-base font-extrabold text-foreground mt-0.5 tracking-tight">
               {currentArea === "home"
-                ? `${unit.name} Study Materials`
-                : (activeNode?.title ?? areaMeta[currentArea].description)}
+                ? `${unit.name} Overview`
+                : (activeNode?.title ?? areaMeta[currentArea].label)}
             </div>
           </div>
         </div>
@@ -325,8 +350,20 @@ export function StudyShell({
 
       {/* 2. Main Two-Pane Structure */}
       <div className="flex min-h-0 flex-1 flex-col lg:flex-row relative overflow-hidden">
-        {/* Sticky Desktop Left Sidebar & Mobile Drawer */}
+        {/* Mobile Backdrop */}
+        {isMobileDrawerOpen && (
+          <div
+            className="fixed inset-0 z-30 bg-black/50 backdrop-blur-xs lg:hidden"
+            onClick={closeDrawer}
+            aria-hidden="true"
+          />
+        )}
+
+        {/* Sticky Desktop Left Sidebar & Mobile Drawer Modal */}
         <aside
+          ref={drawerRef}
+          role={isMobileDrawerOpen ? "dialog" : undefined}
+          aria-modal={isMobileDrawerOpen ? "true" : undefined}
           aria-label={`${unit.name} study navigation`}
           className={`
             fixed inset-0 z-40 bg-card/95 backdrop-blur
@@ -350,7 +387,7 @@ export function StudyShell({
 
               <div className="mt-3.5 pt-3 border-t border-border/60">
                 <div className="mb-1.5 flex items-center justify-between text-xs font-bold">
-                  <span className="text-muted-foreground">Unit Mastery</span>
+                  <span className="text-muted-foreground">Course Completion</span>
                   <span className="text-primary font-bold">{overallProgress}%</span>
                 </div>
                 <div className="h-2 overflow-hidden rounded-full bg-secondary">
@@ -380,7 +417,7 @@ export function StudyShell({
             {STUDY_AREAS.map((area) => {
               const areaNodes = nodes.filter((n) => n.area === area);
               if (areaNodes.length === 0) return null;
-              const expanded = expandedAreas.has(area) || currentArea === area;
+              const expanded = expandedAreas.has(area);
               const progressValue = areaProgress(area);
               const AreaIcon = areaMeta[area].icon;
               const isCurrentAreaActive = currentArea === area;
@@ -428,11 +465,7 @@ export function StudyShell({
                         {area !== "reference" && (
                           <span
                             className="mt-1.5 block h-1.5 overflow-hidden rounded-full bg-secondary"
-                            role="progressbar"
-                            aria-label={`${areaMeta[area].label} progress`}
-                            aria-valuenow={progressValue}
-                            aria-valuemin={0}
-                            aria-valuemax={100}
+                            aria-hidden="true"
                           >
                             <span
                               className="block h-full rounded-full bg-primary transition-all duration-300"
@@ -521,6 +554,7 @@ export function StudyShell({
           className="relative min-w-0 flex-1 overflow-y-auto outline-none"
           tabIndex={-1}
           ref={focusRef}
+          aria-hidden={isMobileDrawerOpen ? "true" : undefined}
         >
           {currentArea === "home" ? (
             <StudyHome

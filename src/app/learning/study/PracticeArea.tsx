@@ -1,11 +1,5 @@
-import { useState, useMemo } from "react";
-import type {
-  UnitLearningMaterials,
-  BlankExercise,
-  MultipleChoiceExercise,
-  RewriteExercise,
-  ErrorCorrectionExercise,
-} from "../types";
+import { useState, useMemo, useEffect, useCallback } from "react";
+import type { UnitLearningMaterials, BlankExercise, MultipleChoiceExercise } from "../types";
 import { loadedUnitVocabulary } from "../../data/vocabulary";
 import type { VocabularyItem } from "../../data/lessons";
 import { BLANK_TOKEN } from "../types";
@@ -17,6 +11,7 @@ import {
   HelpCircle,
   RotateCcw,
   Award,
+  Sparkles,
 } from "lucide-react";
 import { recordWordPractice } from "./progress";
 import type { UnitStudyProgress } from "./types";
@@ -38,14 +33,12 @@ type PracticeItem =
       options: string[];
       correctIndex: number;
     }
-  | { id: string; type: "multipleChoice"; data: MultipleChoiceExercise; answerText: string }
-  | { id: string; type: "rewrite"; data: RewriteExercise; answerText: string }
-  | { id: string; type: "errorCorrection"; data: ErrorCorrectionExercise; answerText: string };
-
-interface Token {
-  id: string;
-  text: string;
-}
+  | {
+      id: string;
+      type: "multipleChoice";
+      data: MultipleChoiceExercise;
+      answerText: string;
+    };
 
 function stableShuffle<T>(array: T[], seed: number): T[] {
   const copy = [...array];
@@ -59,171 +52,7 @@ function stableShuffle<T>(array: T[], seed: number): T[] {
   return copy;
 }
 
-function SentenceBuilder({
-  sentence,
-  hint,
-  onComplete,
-}: {
-  sentence: string;
-  hint: React.ReactNode;
-  onComplete: (correct: boolean, isFirstTry: boolean) => void;
-}) {
-  const targetWords = useMemo(() => sentence.trim().split(/\s+/), [sentence]);
-
-  const initialTokens: Token[] = useMemo(() => {
-    const raw = targetWords.map((word, idx) => ({ id: `token-${idx}-${word}`, text: word }));
-    let shuffled = stableShuffle(raw, sentence.length * 31 + targetWords.length);
-    // Ensure it doesn't accidentally start in the exact correct order if length > 1
-    if (shuffled.length > 1 && shuffled.map((t) => t.text).join(" ") === sentence) {
-      shuffled = [shuffled[1], shuffled[0], ...shuffled.slice(2)];
-    }
-    return shuffled;
-  }, [targetWords, sentence]);
-
-  const [available, setAvailable] = useState<Token[]>(initialTokens);
-  const [selected, setSelected] = useState<Token[]>([]);
-  const [hasAnswered, setHasAnswered] = useState(false);
-  const [isCorrect, setIsCorrect] = useState(false);
-  const [attempts, setAttempts] = useState(0);
-
-  const handleSelect = (token: Token) => {
-    setAvailable((prev) => prev.filter((t) => t.id !== token.id));
-    setSelected((prev) => [...prev, token]);
-  };
-
-  const handleDeselect = (token: Token) => {
-    setSelected((prev) => prev.filter((t) => t.id !== token.id));
-    setAvailable((prev) => [...prev, token]);
-  };
-
-  const checkAnswer = () => {
-    const answer = selected.map((t) => t.text).join(" ");
-    const correct = answer === sentence;
-    setIsCorrect(correct);
-    setHasAnswered(true);
-    setAttempts((a) => a + 1);
-    onComplete(correct, attempts === 0);
-  };
-
-  const handleDontKnow = () => {
-    setSelected(targetWords.map((word, idx) => ({ id: `sol-${idx}`, text: word })));
-    setAvailable([]);
-    setIsCorrect(false);
-    setHasAnswered(true);
-    setAttempts((a) => a + 1);
-    onComplete(false, false);
-  };
-
-  const reset = () => {
-    setAvailable(stableShuffle(initialTokens, attempts + 1));
-    setSelected([]);
-    setHasAnswered(false);
-    setIsCorrect(false);
-  };
-
-  return (
-    <div className="rounded-3xl border border-border p-6 sm:p-7 bg-card shadow-xs h-full flex flex-col justify-center">
-      <div className="mb-6">{hint}</div>
-
-      {/* Screen reader instruction */}
-      <p className="sr-only">
-        Select word tokens in order to build the sentence. Press a selected word to remove it.
-      </p>
-
-      {/* Answer Slot */}
-      <div
-        className="min-h-[72px] flex flex-wrap gap-2.5 p-4 sm:p-5 border-2 border-dashed border-border mb-6 bg-secondary/20 rounded-2xl items-center"
-        aria-label="Your assembled sentence"
-      >
-        {selected.length === 0 ? (
-          <span className="text-sm text-muted-foreground italic select-none">
-            Tap words below in order to build the sentence…
-          </span>
-        ) : (
-          selected.map((token) => (
-            <button
-              key={token.id}
-              type="button"
-              onClick={() => !hasAnswered && handleDeselect(token)}
-              disabled={hasAnswered}
-              className="px-4 py-2.5 bg-background border-2 border-primary/50 rounded-xl shadow-2xs font-bold text-sm text-primary hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all active:scale-95 min-h-[44px]"
-            >
-              {token.text}
-            </button>
-          ))
-        )}
-      </div>
-
-      {/* Word Bank */}
-      <div className="flex flex-wrap gap-2.5 mb-8" aria-label="Available word bank">
-        {available.map((token) => (
-          <button
-            key={token.id}
-            type="button"
-            onClick={() => !hasAnswered && handleSelect(token)}
-            disabled={hasAnswered}
-            className="px-4 py-2.5 bg-secondary text-secondary-foreground border border-border rounded-xl font-bold text-sm hover:bg-secondary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all active:scale-95 min-h-[44px]"
-          >
-            {token.text}
-          </button>
-        ))}
-      </div>
-
-      {/* Feedback Announcement & Controls */}
-      {hasAnswered ? (
-        <div
-          role="status"
-          aria-live="polite"
-          className={`p-4 sm:p-5 rounded-2xl flex flex-col sm:flex-row items-center sm:justify-between gap-4 border ${
-            isCorrect
-              ? "bg-wp-green-light/20 text-wp-green border-wp-green"
-              : "bg-destructive/10 text-destructive border-destructive"
-          }`}
-        >
-          <div className="flex items-center gap-3">
-            {isCorrect ? (
-              <CheckCircle2 className="size-6 shrink-0" />
-            ) : (
-              <XCircle className="size-6 shrink-0" />
-            )}
-            <span className="font-bold text-sm sm:text-base">
-              {isCorrect ? "Correct sentence!" : `Correct answer: "${sentence}"`}
-            </span>
-          </div>
-          {!isCorrect && (
-            <button
-              type="button"
-              onClick={reset}
-              className="px-4 py-2 bg-background border border-current rounded-xl font-bold text-xs sm:text-sm hover:opacity-80 transition-opacity focus-visible:outline-none focus-visible:ring-2 min-h-[44px]"
-            >
-              Try Again
-            </button>
-          )}
-        </div>
-      ) : (
-        <div className="flex flex-col sm:flex-row gap-3">
-          <button
-            type="button"
-            onClick={handleDontKnow}
-            className="inline-flex items-center justify-center gap-2 px-5 py-3 border border-border text-muted-foreground hover:text-foreground rounded-2xl font-bold text-sm hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[48px]"
-          >
-            <HelpCircle className="size-4" aria-hidden />
-            <span>I don&apos;t know</span>
-          </button>
-          <button
-            type="button"
-            onClick={checkAnswer}
-            disabled={selected.length === 0}
-            className="flex-1 py-3 bg-primary text-primary-foreground rounded-2xl font-bold text-base disabled:opacity-50 transition-transform active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
-          >
-            Check Answer
-          </button>
-        </div>
-      )}
-    </div>
-  );
-}
-
+const ROUND_SIZE = 8;
 function MultipleChoiceQuiz({
   question,
   options,
@@ -241,22 +70,40 @@ function MultipleChoiceQuiz({
 
   const answered = picked !== null || gaveUp;
 
-  const handlePick = (i: number) => {
-    setPicked(i);
-    const correct = i === correctIndex;
-    onComplete(correct, attempts === 0);
-    setAttempts((a) => a + 1);
-  };
+  const handlePick = useCallback(
+    (i: number) => {
+      if (answered) return;
+      setPicked(i);
+      const correct = i === correctIndex;
+      onComplete(correct, attempts === 0);
+      setAttempts((a) => a + 1);
+    },
+    [answered, correctIndex, onComplete, attempts]
+  );
 
   const handleDontKnow = () => {
+    if (answered) return;
     setGaveUp(true);
     setPicked(null);
     onComplete(false, false);
     setAttempts((a) => a + 1);
   };
 
+  // Keyboard shortcut listener (1-4)
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (answered) return;
+      const num = parseInt(e.key, 10);
+      if (num >= 1 && num <= options.length) {
+        handlePick(num - 1);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [answered, options.length, handlePick]);
+
   return (
-    <div className="rounded-3xl border border-border p-6 sm:p-7 bg-card shadow-xs h-full flex flex-col justify-center">
+    <div className="rounded-3xl border border-border p-6 sm:p-7 bg-card shadow-xs h-full flex flex-col justify-center animate-in fade-in duration-200">
       <div className="mb-6 font-extrabold text-lg sm:text-xl text-foreground leading-relaxed">
         {question}
       </div>
@@ -285,18 +132,23 @@ function MultipleChoiceQuiz({
             >
               <div className="flex items-center gap-3">
                 <div
-                  className={`size-6 rounded-full border flex items-center justify-center shrink-0 transition-colors ${
+                  className={`size-6 rounded-full border flex items-center justify-center shrink-0 transition-colors text-xs font-bold ${
                     state === "correct"
                       ? "border-wp-green bg-wp-green text-white"
                       : state === "wrong"
                         ? "border-destructive bg-destructive text-white"
-                        : "border-border"
+                        : "border-border text-muted-foreground bg-secondary/50"
                   }`}
                 >
-                  {state === "correct" && <Check className="size-3.5" strokeWidth={3} />}
-                  {state === "wrong" && <XCircle className="size-3.5" />}
+                  {state === "correct" ? (
+                    <Check className="size-3.5" strokeWidth={3} />
+                  ) : state === "wrong" ? (
+                    <XCircle className="size-3.5" />
+                  ) : (
+                    i + 1
+                  )}
                 </div>
-                <span>{opt}</span>
+                <span className="flex-1">{opt}</span>
               </div>
             </button>
           );
@@ -322,7 +174,7 @@ function MultipleChoiceQuiz({
                   setPicked(null);
                   setGaveUp(false);
                 }}
-                className="px-3.5 py-1.5 border border-current rounded-xl text-xs hover:opacity-80 transition-opacity min-h-[44px] self-start sm:self-auto"
+                className="px-3.5 py-1.5 border border-current rounded-xl text-xs hover:opacity-80 transition-opacity min-h-[44px] self-start sm:self-auto font-bold"
               >
                 Try Again
               </button>
@@ -345,6 +197,77 @@ function MultipleChoiceQuiz({
   );
 }
 
+function RoundCheckpointCard({
+  roundNumber,
+  totalRounds,
+  roundCorrect,
+  roundTotal,
+  onContinueNextRound,
+  onFinishPractice,
+  isFinalRound,
+}: {
+  roundNumber: number;
+  totalRounds: number;
+  roundCorrect: number;
+  roundTotal: number;
+  onContinueNextRound: () => void;
+  onFinishPractice: () => void;
+  isFinalRound: boolean;
+}) {
+  const percent = Math.round((roundCorrect / roundTotal) * 100);
+  return (
+    <div className="rounded-3xl border border-border p-6 sm:p-8 bg-card shadow-xs text-center animate-in fade-in zoom-in-95 duration-200 flex flex-col items-center max-w-lg mx-auto w-full">
+      <div className="size-16 rounded-2xl bg-wp-green-light/20 text-wp-green flex items-center justify-center mb-4 border border-wp-green/30 shadow-xs">
+        <Sparkles className="size-8" aria-hidden />
+      </div>
+      <div className="text-xs font-bold uppercase tracking-wider text-primary mb-1">
+        Round {roundNumber} of {totalRounds} Complete
+      </div>
+      <h2 className="text-2xl font-extrabold text-foreground mb-2">
+        {percent >= 80 ? "Round Mastered!" : "Round Checkpoint"}
+      </h2>
+      <p className="text-muted-foreground text-sm mb-6">
+        You answered{" "}
+        <span className="font-bold text-foreground">
+          {roundCorrect} of {roundTotal}
+        </span>{" "}
+        questions correctly in this round ({percent}%).
+      </p>
+
+      <div className="flex flex-col sm:flex-row gap-3 w-full justify-center">
+        {!isFinalRound ? (
+          <>
+            <button
+              type="button"
+              onClick={onFinishPractice}
+              className="px-5 py-3 border border-border text-foreground rounded-2xl font-bold text-sm hover:bg-secondary transition-colors min-h-[48px]"
+            >
+              Finish for Now
+            </button>
+            <button
+              type="button"
+              onClick={onContinueNextRound}
+              className="px-6 py-3 bg-primary text-primary-foreground rounded-2xl font-bold text-sm hover:bg-primary/90 transition-colors shadow-xs flex items-center justify-center gap-2 min-h-[48px]"
+            >
+              <span>Start Round {roundNumber + 1}</span>
+              <ArrowRight className="size-4" aria-hidden />
+            </button>
+          </>
+        ) : (
+          <button
+            type="button"
+            onClick={onFinishPractice}
+            className="px-7 py-3.5 bg-primary text-primary-foreground rounded-2xl font-bold text-base hover:bg-primary/90 transition-colors shadow-xs flex items-center justify-center gap-2 min-h-[48px]"
+          >
+            <span>View Full Summary</span>
+            <ArrowRight className="size-4" aria-hidden />
+          </button>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export function PracticeArea({
   materials,
   progress,
@@ -353,8 +276,9 @@ export function PracticeArea({
   onNextActivity,
 }: Props) {
   const vocab = useMemo(() => loadedUnitVocabulary(materials.unitId), [materials.unitId]);
+  const [attemptCount, setAttemptCount] = useState(0);
 
-  // Deterministic seed derived from unit ID
+  // Deterministic items pool derived from materials
   const items = useMemo(() => {
     const list: PracticeItem[] = [];
     let idCounter = 0;
@@ -394,26 +318,65 @@ export function PracticeArea({
       })
     );
 
-    materials.additionalExercises?.rewrite?.forEach((e) =>
+    // Convert rewrite exercises to multiple choice
+    const allRewrites = materials.additionalExercises?.rewrite ?? [];
+    allRewrites.forEach((e, idx) => {
+      const correct = e.answer;
+      // Build distractors from other rewrite answers, then fill with the original sentence
+      const otherAnswers = allRewrites.filter((_, i) => i !== idx).map((r) => r.answer);
+      const distractors = [e.sentence.replace(/\s*\([A-Z]+\)\s*$/, ""), ...otherAnswers]
+        .filter((d) => d !== correct)
+        .slice(0, 3);
+      // Pad distractors if needed
+      while (distractors.length < 3) {
+        distractors.push(`${correct.split(" ").reverse().join(" ")}`);
+      }
+      const options = stableShuffle([correct, ...distractors.slice(0, 3)], idx * 71 + 13);
+      const correctIndex = options.indexOf(correct);
       list.push({
         id: `practice-rw-${idCounter++}`,
-        type: "rewrite",
-        data: e,
-        answerText: e.answer,
-      })
-    );
+        type: "multipleChoice",
+        data: {
+          id: e.id,
+          question: `Rewrite using "${e.hintWord}": "${e.sentence.replace(/\s*\([A-Z]+\)\s*$/, "")}"`,
+          options,
+          correctIndex,
+          explanation: `The correct rewrite is: "${correct}"`,
+        },
+        answerText: correct,
+      });
+    });
 
-    materials.errorCorrection?.forEach((e) =>
+    // Convert error correction exercises to multiple choice
+    const allErrors = materials.errorCorrection ?? [];
+    allErrors.forEach((e, idx) => {
+      const correct = e.right;
+      // Use the wrong version and other correct answers as distractors
+      const otherCorrect = allErrors.filter((_, i) => i !== idx).map((ec) => ec.right);
+      const distractors = [e.wrong, ...otherCorrect].filter((d) => d !== correct).slice(0, 3);
+      while (distractors.length < 3) {
+        distractors.push(e.wrong);
+      }
+      const options = stableShuffle([correct, ...distractors.slice(0, 3)], idx * 53 + 7);
+      const correctIndex = options.indexOf(correct);
       list.push({
         id: `practice-ec-${idCounter++}`,
-        type: "errorCorrection",
-        data: e,
-        answerText: e.right,
-      })
-    );
+        type: "multipleChoice",
+        data: {
+          id: e.id,
+          question: `Which sentence is correct?`,
+          options,
+          correctIndex,
+          explanation: `The mistake was: "${e.wrong}"`,
+        },
+        answerText: correct,
+      });
+    });
 
-    return stableShuffle(list, 42);
-  }, [materials, vocab]);
+    // Writing prompts are excluded — they're open-ended and not quizzable
+
+    return stableShuffle(list, 42 + attemptCount * 7919);
+  }, [materials, vocab, attemptCount]);
 
   const [currentIndex, setCurrentIndex] = useState(() =>
     Math.min(progress.nodePositions?.[nodeId] ?? 0, Math.max(items.length - 1, 0))
@@ -421,7 +384,16 @@ export function PracticeArea({
   const [firstTryCorrectCount, setFirstTryCorrectCount] = useState(0);
   const [isCurrentAnswered, setIsCurrentAnswered] = useState(false);
   const [reviewAddedWords, setReviewAddedWords] = useState<string[]>([]);
+  const [showingCheckpoint, setShowingCheckpoint] = useState(false);
   const [finished, setFinished] = useState(false);
+
+  // Round tracking (e.g. 8 questions per round)
+  const totalRounds = Math.max(1, Math.ceil(items.length / ROUND_SIZE));
+  const currentRound = Math.min(totalRounds, Math.floor(currentIndex / ROUND_SIZE) + 1);
+  const indexInRound = (currentIndex % ROUND_SIZE) + 1;
+  const currentRoundTotal = Math.min(ROUND_SIZE, items.length - (currentRound - 1) * ROUND_SIZE);
+
+  const [roundCorrectCounts, setRoundCorrectCounts] = useState<Record<number, number>>({});
 
   const handleComplete = (
     _itemId: string,
@@ -429,25 +401,51 @@ export function PracticeArea({
     isCorrect: boolean,
     isFirstTry: boolean
   ) => {
-    const matchedVocab = vocab.find(
-      (v: VocabularyItem) => v.label.toLowerCase() === word.trim().toLowerCase()
-    );
-    if (matchedVocab) {
-      onProgressUpdate(recordWordPractice(progress, matchedVocab.id, isCorrect));
-      if (!isCorrect && !reviewAddedWords.includes(matchedVocab.label)) {
-        setReviewAddedWords((prev) => [...prev, matchedVocab.label]);
+    if (word) {
+      const matchedVocab = vocab.find(
+        (v: VocabularyItem) => v.label.toLowerCase() === word.trim().toLowerCase()
+      );
+      if (matchedVocab) {
+        onProgressUpdate(recordWordPractice(progress, matchedVocab.id, isCorrect));
+        if (!isCorrect && !reviewAddedWords.includes(matchedVocab.label)) {
+          setReviewAddedWords((prev) => [...prev, matchedVocab.label]);
+        }
       }
     }
 
     if (isCorrect && isFirstTry) {
       setFirstTryCorrectCount((c) => c + 1);
+      setRoundCorrectCounts((prev) => ({
+        ...prev,
+        [currentRound]: (prev[currentRound] ?? 0) + 1,
+      }));
     }
 
     setIsCurrentAnswered(true);
   };
 
+  const handleFinishPractice = () => {
+    onProgressUpdate({
+      ...progress,
+      completedNodeIds: progress.completedNodeIds.includes(nodeId)
+        ? progress.completedNodeIds
+        : [...progress.completedNodeIds, nodeId],
+      nodePositions: { ...progress.nodePositions, [nodeId]: 0 },
+    });
+    setShowingCheckpoint(false);
+    setFinished(true);
+  };
+
   const handleNext = () => {
-    if (currentIndex < items.length - 1) {
+    const isEndOfRound = (currentIndex + 1) % ROUND_SIZE === 0;
+    const isLastItem = currentIndex >= items.length - 1;
+
+    if (isEndOfRound && !isLastItem) {
+      setShowingCheckpoint(true);
+      return;
+    }
+
+    if (!isLastItem) {
       const nextIndex = currentIndex + 1;
       setCurrentIndex(nextIndex);
       onProgressUpdate({
@@ -456,22 +454,29 @@ export function PracticeArea({
       });
       setIsCurrentAnswered(false);
     } else {
-      onProgressUpdate({
-        ...progress,
-        completedNodeIds: progress.completedNodeIds.includes(nodeId)
-          ? progress.completedNodeIds
-          : [...progress.completedNodeIds, nodeId],
-        nodePositions: { ...progress.nodePositions, [nodeId]: 0 },
-      });
-      setFinished(true);
+      handleFinishPractice();
     }
   };
 
+  const handleContinueNextRound = () => {
+    setShowingCheckpoint(false);
+    const nextIndex = currentIndex + 1;
+    setCurrentIndex(nextIndex);
+    onProgressUpdate({
+      ...progress,
+      nodePositions: { ...progress.nodePositions, [nodeId]: nextIndex },
+    });
+    setIsCurrentAnswered(false);
+  };
+
   const handleRestart = () => {
+    setAttemptCount((c) => c + 1);
     setCurrentIndex(0);
     setFirstTryCorrectCount(0);
+    setRoundCorrectCounts({});
     setIsCurrentAnswered(false);
     setReviewAddedWords([]);
+    setShowingCheckpoint(false);
     setFinished(false);
   };
 
@@ -484,27 +489,28 @@ export function PracticeArea({
   }
 
   if (finished) {
-    const scorePercent = Math.round((firstTryCorrectCount / items.length) * 100);
+    const answeredCount = Math.max(1, currentIndex + (isCurrentAnswered ? 1 : 0));
+    const scorePercent = Math.round((firstTryCorrectCount / answeredCount) * 100);
     return (
       <div className="flex-1 flex flex-col items-center justify-center p-6 md:p-12 max-w-2xl mx-auto w-full text-center animate-in fade-in zoom-in-95 duration-300">
         <div className="size-20 rounded-3xl bg-wp-green-light/20 text-wp-green flex items-center justify-center mb-6 shadow-xs border border-wp-green/30">
           <Award className="size-10" aria-hidden />
         </div>
-        <h2 className="text-3xl font-extrabold mb-2 text-foreground">Practice Session Complete!</h2>
+        <h1 className="text-3xl font-extrabold mb-2 text-foreground">Practice Session Complete!</h1>
         <p className="text-muted-foreground text-base mb-6">
           You scored{" "}
           <span className="font-bold text-foreground">
-            {firstTryCorrectCount} / {items.length}
+            {firstTryCorrectCount} / {answeredCount}
           </span>{" "}
           ({scorePercent}%) on your first try.
         </p>
 
         {reviewAddedWords.length > 0 && (
           <div className="w-full bg-secondary/30 border border-border rounded-3xl p-5 mb-8 text-start">
-            <h3 className="font-bold text-sm text-foreground mb-2 flex items-center gap-2">
+            <h2 className="font-bold text-sm text-foreground mb-2 flex items-center gap-2">
               <RotateCcw className="size-4 text-wp-amber" />
-              Words sent to your Review queue ({reviewAddedWords.length}):
-            </h3>
+              Words queued for Review ({reviewAddedWords.length}):
+            </h2>
             <div className="flex flex-wrap gap-2">
               {reviewAddedWords.map((w) => (
                 <span
@@ -530,10 +536,29 @@ export function PracticeArea({
             onClick={onNextActivity}
             className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground font-bold rounded-2xl hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[48px] shadow-xs"
           >
-            <span>Continue to Review</span>
+            <span>
+              {reviewAddedWords.length > 0 ? "Continue to Review" : "Continue to next activity"}
+            </span>
             <ArrowRight className="size-4" aria-hidden />
           </button>
         </div>
+      </div>
+    );
+  }
+
+  if (showingCheckpoint) {
+    return (
+      <div className="max-w-2xl mx-auto w-full p-4 sm:p-6 md:p-8 flex flex-col items-center">
+        <h1 className="sr-only">Round Checkpoint</h1>
+        <RoundCheckpointCard
+          roundNumber={currentRound}
+          totalRounds={totalRounds}
+          roundCorrect={roundCorrectCounts[currentRound] ?? 0}
+          roundTotal={ROUND_SIZE}
+          onContinueNextRound={handleContinueNextRound}
+          onFinishPractice={handleFinishPractice}
+          isFinalRound={currentRound >= totalRounds}
+        />
       </div>
     );
   }
@@ -585,57 +610,6 @@ export function PracticeArea({
       );
     }
 
-    if (item.type === "rewrite") {
-      const hint = (
-        <div className="flex flex-col gap-2">
-          <span className="text-primary font-bold text-xs uppercase tracking-wider">
-            Rewrite the sentence
-          </span>
-          <p className="text-muted-foreground text-sm">
-            Include the word{" "}
-            <span className="font-bold text-foreground">"{item.data.hintWord}"</span> in your
-            answer.
-          </p>
-          <p className="font-medium text-base mt-2 text-foreground border-s-4 border-primary/30 ps-3">
-            {item.data.sentence}
-          </p>
-        </div>
-      );
-      return (
-        <SentenceBuilder
-          key={item.id}
-          sentence={item.answerText}
-          hint={hint}
-          onComplete={(correct, isFirstTry) =>
-            handleComplete(item.id, item.data.hintWord, correct, isFirstTry)
-          }
-        />
-      );
-    }
-
-    if (item.type === "errorCorrection") {
-      const hint = (
-        <div className="flex flex-col gap-2">
-          <span className="text-primary font-bold text-xs uppercase tracking-wider">
-            Correct the mistake
-          </span>
-          <p className="font-medium text-base mt-2 text-destructive border-s-4 border-destructive/30 ps-3 line-through decoration-2">
-            {item.data.wrong}
-          </p>
-        </div>
-      );
-      return (
-        <SentenceBuilder
-          key={item.id}
-          sentence={item.answerText}
-          hint={hint}
-          onComplete={(correct, isFirstTry) =>
-            handleComplete(item.id, item.answerText, correct, isFirstTry)
-          }
-        />
-      );
-    }
-
     return null;
   };
 
@@ -645,12 +619,17 @@ export function PracticeArea({
       <div className="w-full mb-6">
         <div className="flex justify-between items-baseline gap-3 mb-3">
           <div className="min-w-0">
-            <h2 className="text-xl sm:text-2xl font-extrabold text-foreground truncate">
+            <div className="flex items-center gap-2">
+              <span className="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-extrabold text-xs">
+                Round {currentRound} of {totalRounds}
+              </span>
+              <span className="text-xs text-muted-foreground font-medium">
+                Question {indexInRound} of {currentRoundTotal}
+              </span>
+            </div>
+            <h1 className="text-xl sm:text-2xl font-extrabold text-foreground truncate mt-1">
               Practice Session
-            </h2>
-            <p className="text-xs sm:text-sm text-muted-foreground truncate mt-0.5">
-              Test your recall across different question types
-            </p>
+            </h1>
           </div>
           <span className="text-xs font-bold text-muted-foreground bg-secondary/80 px-3 py-1.5 rounded-full shrink-0">
             {currentIndex + 1} of {items.length}
@@ -673,7 +652,7 @@ export function PracticeArea({
 
       {/* Screen reader announcement */}
       <div className="sr-only" role="status" aria-live="polite">
-        Exercise {currentIndex + 1} of {items.length}
+        Round {currentRound} of {totalRounds}, Exercise {indexInRound} of {currentRoundTotal}
       </div>
 
       {/* Exercise Container */}
@@ -688,7 +667,13 @@ export function PracticeArea({
             onClick={handleNext}
             className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground rounded-2xl font-bold text-base hover:bg-primary/90 transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-xs min-h-[48px]"
           >
-            <span>{currentIndex < items.length - 1 ? "Next Exercise" : "Finish Practice"}</span>
+            <span>
+              {(currentIndex + 1) % ROUND_SIZE === 0 && currentIndex < items.length - 1
+                ? "Round Checkpoint"
+                : currentIndex < items.length - 1
+                  ? "Next Exercise"
+                  : "Finish Practice"}
+            </span>
             <ArrowRight className="size-4" aria-hidden />
           </button>
         </div>

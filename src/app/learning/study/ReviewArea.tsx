@@ -47,16 +47,16 @@ export function ReviewArea({ materials, progress, onProgressUpdate }: Props) {
           </span>
           <div className="min-w-0">
             <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
-              Spaced Repetition &amp; Mastery
+              Review Queue &amp; Confidence
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground truncate">
-              Review &amp; Assessment
-            </h2>
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-foreground truncate">
+              Difficult Words &amp; Review
+            </h1>
           </div>
         </div>
         <p className="text-xs sm:text-sm text-muted-foreground mt-2 max-w-2xl leading-relaxed">
-          Strengthen long-term retention. Words you marked for review or missed in exercises appear
-          here until you master them.
+          Strengthen vocabulary retention. Words you marked for practice or missed in exercises
+          appear here for focused recall.
         </p>
       </div>
 

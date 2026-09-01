@@ -71,7 +71,27 @@ function pickVoice(synth: SpeechSynthesis, targetLang: string): SpeechSynthesisV
   );
 }
 
+const MAX_AUDIO_CACHE_SIZE = 64;
 const audioCache = new Map<string, string>();
+
+function cacheAudioUrl(key: string, url: string) {
+  if (audioCache.has(key)) return;
+  if (audioCache.size >= MAX_AUDIO_CACHE_SIZE) {
+    const oldestKey = audioCache.keys().next().value;
+    if (oldestKey) {
+      const oldUrl = audioCache.get(oldestKey);
+      if (oldUrl && oldUrl.startsWith("blob:")) {
+        try {
+          URL.revokeObjectURL(oldUrl);
+        } catch {
+          // ignore revocation error
+        }
+      }
+      audioCache.delete(oldestKey);
+    }
+  }
+  audioCache.set(key, url);
+}
 
 export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Options = {}) {
   // The learner's Settings speech rate is the default; an explicit `rate` prop
@@ -214,7 +234,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
           .then((storedBlob) => {
             if (storedBlob) {
               const url = URL.createObjectURL(storedBlob);
-              audioCache.set(cacheKey, url);
+              cacheAudioUrl(cacheKey, url);
               playBlobUrl(url);
               return;
             }
@@ -230,7 +250,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
               .then((blob) => {
                 saveCachedAudio(cacheKey, blob);
                 const url = URL.createObjectURL(blob);
-                audioCache.set(cacheKey, url);
+                cacheAudioUrl(cacheKey, url);
                 playBlobUrl(url);
               })
               .catch(() => {
@@ -284,7 +304,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
         const stored = await getCachedAudio(cacheKey).catch(() => null);
         if (stored) {
           const objectUrl = URL.createObjectURL(stored);
-          audioCache.set(cacheKey, objectUrl);
+          cacheAudioUrl(cacheKey, objectUrl);
           setStatus("loading");
           playBlobUrl(objectUrl);
           return true;
@@ -295,7 +315,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
         const blob = await res.blob();
         saveCachedAudio(cacheKey, blob);
         const objectUrl = URL.createObjectURL(blob);
-        audioCache.set(cacheKey, objectUrl);
+        cacheAudioUrl(cacheKey, objectUrl);
         setStatus("loading");
         playBlobUrl(objectUrl);
         return true;
@@ -346,7 +366,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
           .then((storedBlob) => {
             if (storedBlob) {
               const url = URL.createObjectURL(storedBlob);
-              audioCache.set(cacheKey, url);
+              cacheAudioUrl(cacheKey, url);
               playBlobUrl(url);
               return;
             }
@@ -373,7 +393,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
               .then((blob) => {
                 saveCachedAudio(cacheKey, blob);
                 const url = URL.createObjectURL(blob);
-                audioCache.set(cacheKey, url);
+                cacheAudioUrl(cacheKey, url);
                 playBlobUrl(url);
               })
               .catch((err) => {

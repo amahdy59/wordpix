@@ -2,6 +2,40 @@ import { useMemo } from "react";
 import { loadedUnitVocabulary } from "../../data/vocabulary";
 import type { VocabularyItem } from "../../data/lessons";
 
+interface UnitMatcher {
+  regex: RegExp | null;
+  vocabMap: Map<string, VocabularyItem>;
+}
+
+const unitMatcherCache = new Map<string, UnitMatcher>();
+
+function getUnitMatcher(unitId: string): UnitMatcher {
+  const cached = unitMatcherCache.get(unitId);
+  if (cached) return cached;
+
+  const vocabulary = loadedUnitVocabulary(unitId);
+  if (!vocabulary || vocabulary.length === 0) {
+    const emptyMatcher: UnitMatcher = { regex: null, vocabMap: new Map() };
+    unitMatcherCache.set(unitId, emptyMatcher);
+    return emptyMatcher;
+  }
+
+  // Sort by length descending to match longest phrases first (e.g. "wash hands" before "wash")
+  const sortedVocab = [...vocabulary].sort((a, b) => b.label.length - a.label.length);
+  const escapeRegExp = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const pattern = sortedVocab.map((v) => escapeRegExp(v.label)).join("|");
+  const regex = new RegExp(`\\b(${pattern})\\b`, "gi");
+
+  const vocabMap = new Map<string, VocabularyItem>();
+  for (const item of vocabulary) {
+    vocabMap.set(item.label.toLowerCase(), item);
+  }
+
+  const matcher: UnitMatcher = { regex, vocabMap };
+  unitMatcherCache.set(unitId, matcher);
+  return matcher;
+}
+
 interface Props {
   text: string;
   unitId: string;
@@ -10,32 +44,18 @@ interface Props {
 }
 
 export function InteractiveText({ text, unitId, onInspectWord, className }: Props) {
-  const vocabulary = useMemo(() => loadedUnitVocabulary(unitId), [unitId]);
-
   const { parts, matchedWords } = useMemo(() => {
-    if (vocabulary.length === 0) return { parts: [text], matchedWords: [] };
+    const matcher = getUnitMatcher(unitId);
+    if (!matcher.regex) return { parts: [text], matchedWords: [] };
 
-    // Sort by length descending to match longest phrases first (e.g. "wash hands" before "wash")
-    const sortedVocab = [...vocabulary].sort((a, b) => b.label.length - a.label.length);
-
-    // Create an escaped regex for the labels
-    const escapeRegExp = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    const pattern = sortedVocab.map((v) => escapeRegExp(v.label)).join("|");
-
-    // \b is tricky because some words might have special characters, but we'll try standard boundary
-    const regex = new RegExp(`\\b(${pattern})\\b`, "gi");
-
-    const parts = text.split(regex);
-    const matchedWords = parts.map((part) => {
-      const lower = part.toLowerCase();
-      return sortedVocab.find((v) => v.label.toLowerCase() === lower);
-    });
+    const parts = text.split(matcher.regex);
+    const matchedWords = parts.map((part) => matcher.vocabMap.get(part.toLowerCase()));
 
     return { parts, matchedWords };
-  }, [text, vocabulary]);
+  }, [text, unitId]);
 
   return (
-    <span className={className}>
+    <span className={className} lang="en" dir="ltr">
       {parts.map((part, index) => {
         const word = matchedWords[index];
         if (word) {
@@ -44,7 +64,7 @@ export function InteractiveText({ text, unitId, onInspectWord, className }: Prop
               key={index}
               onClick={() => onInspectWord(word)}
               className="text-primary font-medium hover:underline focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary rounded-sm px-[2px] -mx-[2px]"
-              title="Tap to see meaning"
+              title={`Tap to inspect "${part}"`}
             >
               {part}
             </button>

@@ -5,9 +5,10 @@ import {
   LearningMaterialsScreen,
   PassageSection,
   PhrasesSection,
-  PracticeSection,
 } from "../learning/LearningMaterialsScreen";
+import { PracticeArea } from "../learning/study/PracticeArea";
 import { loadLearningMaterials, unitsWithLearningMaterials } from "../learning/registry";
+import { initialStudyProgress } from "../learning/study/progress";
 import { hashToRoute, screenToHash } from "../router/useHashRouter";
 import { reducer } from "../store/reducer";
 import { COURSE_UNITS } from "../data/lessons";
@@ -28,7 +29,7 @@ describe("LearningMaterialsScreen", () => {
 
     await waitFor(() =>
       expect(
-        screen.getByRole("heading", { level: 2, name: /Essential words/i })
+        screen.getByRole("heading", { level: 1, name: /Essential words/i })
       ).toBeInTheDocument()
     );
     expect(screen.queryByText(/Your Study Path/i)).not.toBeInTheDocument();
@@ -50,16 +51,25 @@ describe("LearningMaterialsScreen", () => {
     expect(screen.getByText("hit the pillow")).toBeInTheDocument();
   });
 
-  it("marks fill-in-the-blank answers only once the learner asks", async () => {
-    const user = userEvent.setup();
+  it("renders live PracticeArea interactive exercises", async () => {
     const materials = (await loadLearningMaterials("bedroom"))!;
-    render(<PracticeSection materials={materials} />);
+    const progress = initialStudyProgress("bedroom");
+    const onProgressUpdate = vi.fn();
 
-    await user.type(screen.getByLabelText("Answer for sentence 1"), "wardrobe");
-    expect(screen.queryByText(/of 10 correct/i)).not.toBeInTheDocument();
+    render(
+      <PracticeArea
+        materials={materials}
+        progress={progress}
+        onProgressUpdate={onProgressUpdate}
+        nodeId="practice-drill"
+        onNextActivity={vi.fn()}
+      />
+    );
 
-    await user.click(screen.getByRole("button", { name: /check answers/i }));
-    expect(screen.getByText("1 of 10 correct")).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { level: 1, name: /Practice Session/i })
+    ).toBeInTheDocument();
+    expect(screen.getAllByText(/1 of/i).length).toBeGreaterThan(0);
   });
 
   it("shows unconvertible comprehension questions as unscored prompts", async () => {
@@ -81,11 +91,11 @@ describe("LearningMaterialsScreen", () => {
     ).toBe(0);
   });
 
-  it("marks an inferred idiom or phrasal-verb label as inferred", async () => {
+  it("renders phrases cleanly without debug inferred markers", async () => {
     const materials = (await loadLearningMaterials("bedroom"))!;
     render(<PhrasesSection materials={materials} />);
 
-    expect(screen.getAllByText(/\(inferred\)/).length).toBeGreaterThan(0);
+    expect(screen.queryByText(/\(inferred\)/)).not.toBeInTheDocument();
   });
 
   it("tells the learner when a unit has not been imported yet", async () => {

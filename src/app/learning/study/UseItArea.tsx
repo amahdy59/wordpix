@@ -69,9 +69,9 @@ export function UseItArea({
           <span className="text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full inline-block">
             Use in Context
           </span>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mt-2">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-foreground mt-2">
             Apply in Everyday Situations
-          </h2>
+          </h1>
           <p className="text-sm sm:text-base text-muted-foreground mt-1.5 leading-relaxed max-w-2xl">
             Explore authentic reading passages, spoken dialogues, idioms, common mistakes, and
             cultural insights.
@@ -91,7 +91,7 @@ export function UseItArea({
                   <span className="p-3 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                     <Icon className="size-5" aria-hidden />
                   </span>
-                  <h3 className="font-bold text-lg text-foreground">{n.title}</h3>
+                  <h2 className="font-bold text-lg text-foreground">{n.title}</h2>
                 </div>
                 <p className="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
                   {meta.goal}
@@ -122,9 +122,9 @@ export function UseItArea({
             <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
               Use in Context · {currentIndex + 1} of {allNodes.length}
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground truncate">
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-foreground truncate">
               {node.title}
-            </h2>
+            </h1>
           </div>
         </div>
         <p className="text-xs sm:text-sm text-muted-foreground mt-2 max-w-2xl leading-relaxed">

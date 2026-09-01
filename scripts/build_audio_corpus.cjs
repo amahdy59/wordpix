@@ -53,25 +53,35 @@ const SCENE_DIRECTION = /^Scene:\s/i;
 /** Matches a double-quoted TS string literal, honouring backslash escapes. */
 const quoted = (field) => new RegExp("\\n\\s*" + field + ': "((?:[^"\\\\]|\\\\.)*)"', "g");
 
+const requestedUnits = (() => {
+  const arg = process.argv.find((a) => a.startsWith("--unit=") || a.startsWith("--units="));
+  if (!arg) return null;
+  const val = arg.includes("=") ? arg.slice(arg.indexOf("=") + 1) : "";
+  return new Set(val.split(",").map((s) => s.trim().toLowerCase()).filter(Boolean));
+})();
+
 function collect() {
   const tiers = { words: [], materials: [], lexicon: [], stories: [] };
 
-  // Vocabulary is one file per unit (src/app/data/units/<id>.ts), split so
-  // that opening one unit does not download all 182.
+  // Vocabulary is one file per unit (src/app/data/units/<id>.ts)
   const unitsDir = path.join(ROOT, "src/app/data/units");
   for (const file of fs.readdirSync(unitsDir)) {
     if (!file.endsWith(".ts")) continue;
+    const unitId = file.replace(".ts", "").toLowerCase();
+    if (requestedUnits && !requestedUnits.has(unitId)) continue;
+
     tiers.words.push(
       ...captures(fs.readFileSync(path.join(unitsDir, file), "utf8"), quoted("label"))
     );
   }
 
-  // Learning materials likewise (src/app/learning/units/<id>.ts). Read with
-  // targeted patterns rather than parsed, because these are TypeScript
-  // modules with imports, not JSON.
+  // Learning materials likewise (src/app/learning/units/<id>.ts)
   const learningDir = path.join(ROOT, "src/app/learning/units");
   for (const file of fs.readdirSync(learningDir)) {
     if (!file.endsWith(".ts") || file === "index.ts") continue;
+    const unitId = file.replace(".ts", "").toLowerCase();
+    if (requestedUnits && !requestedUnits.has(unitId)) continue;
+
     const raw = fs.readFileSync(path.join(learningDir, file), "utf8");
 
     tiers.materials.push(...captures(raw, quoted("text")));
@@ -86,14 +96,16 @@ function collect() {
     );
   }
 
-  const lexicon = read("src/app/data/lexiconDictionary.ts");
-  tiers.lexicon.push(...captures(lexicon, quoted("en")));
-  for (const block of lexicon.matchAll(/collocations: \[([^\]]*)\]/g)) {
-    tiers.lexicon.push(...captures(block[1], /"([^"]+)"/g));
-  }
+  if (!requestedUnits) {
+    const lexicon = read("src/app/data/lexiconDictionary.ts");
+    tiers.lexicon.push(...captures(lexicon, quoted("en")));
+    for (const block of lexicon.matchAll(/collocations: \[([^\]]*)\]/g)) {
+      tiers.lexicon.push(...captures(block[1], /"([^"]+)"/g));
+    }
 
-  const stories = read("src/app/data/storyTalesDictionary.ts");
-  tiers.stories.push(...captures(stories, quoted("text")));
+    const stories = read("src/app/data/storyTalesDictionary.ts");
+    tiers.stories.push(...captures(stories, quoted("text")));
+  }
 
   return tiers;
 }

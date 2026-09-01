@@ -63,14 +63,16 @@ export function StudyHome({
   const percent = Math.round((completedCoreNodes.length / (coreNodes.length || 1)) * 100);
   const reviewDueCount = progress.reviewWordIds.length;
 
-  const continueNode = progress.lastNodeId
-    ? nodes.find((n) => n.id === progress.lastNodeId)
-    : nodes[0];
+  // Prioritize the first incomplete core node, falling back to last active or first
+  const continueNode =
+    coreNodes.find((n) => !progress.completedNodeIds.includes(n.id)) ??
+    (progress.lastNodeId ? nodes.find((n) => n.id === progress.lastNodeId) : null) ??
+    nodes[0];
 
   const getAreaNodes = (area: StudyArea) => nodes.filter((n) => n.area === area);
 
   return (
-    <div className="max-w-4xl mx-auto w-full p-4 sm:p-6 md:p-8 space-y-8">
+    <div className="max-w-4xl mx-auto w-full p-4 sm:p-6 md:p-8 space-y-6 sm:space-y-8">
       {/* Breadcrumb Navigation */}
       <nav aria-label="Breadcrumb" className="flex items-center justify-between">
         <button
@@ -84,39 +86,40 @@ export function StudyHome({
       </nav>
 
       {/* Unit Banner */}
-      <div className="space-y-5">
+      <div className="space-y-4">
         <div>
           <span className="text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full inline-block">
             Unit Study Materials
           </span>
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-foreground mt-2 tracking-tight">
+          <h1 className="text-2xl sm:text-4xl font-extrabold text-foreground mt-2 tracking-tight">
             {unit.name}
           </h1>
-          <p className="text-muted-foreground text-sm sm:text-base mt-2 max-w-2xl leading-relaxed">
+          <p className="text-muted-foreground text-sm sm:text-base mt-1.5 max-w-2xl leading-relaxed">
             Master the vocabulary, natural collocations, contextual reading, and everyday
             expressions for {unit.name.toLowerCase()}.
           </p>
         </div>
 
         {unit.heroImage && (
-          <div className="rounded-3xl overflow-hidden bg-muted aspect-[2.4/1] relative border border-border/60 shadow-sm">
+          <div className="rounded-2xl sm:rounded-3xl overflow-hidden bg-muted h-36 sm:h-52 relative border border-border/60 shadow-xs">
             <img
               src={resolveAssetUrl(unit.heroImage)}
               alt={`${unit.name} environment scene`}
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
         )}
 
         {/* Progress Summary Card */}
-        <div className="p-5 sm:p-6 rounded-3xl border border-border bg-card shadow-xs space-y-4">
+        <div className="p-4 sm:p-6 rounded-2xl sm:rounded-3xl border border-border bg-card shadow-xs space-y-3 sm:space-y-4">
           <div className="flex justify-between items-center text-sm font-bold">
-            <span className="text-foreground">Course Completion</span>
+            <span className="text-foreground">Activity Progress</span>
             <span className="text-primary font-mono text-base">{percent}%</span>
           </div>
 
           {/* Accessible Progress Bar */}
-          <div className="w-full h-3 bg-secondary rounded-full overflow-hidden">
+          <div className="w-full h-2.5 sm:h-3 bg-secondary rounded-full overflow-hidden">
             <div
               className="h-full bg-primary transition-all duration-500 rounded-full"
               style={{ width: `${percent}%` }}
@@ -124,11 +127,11 @@ export function StudyHome({
               aria-valuenow={percent}
               aria-valuemin={0}
               aria-valuemax={100}
-              aria-label={`Overall unit study progress: ${percent}%`}
+              aria-label={`Activities completed: ${completedCoreNodes.length} of ${coreNodes.length}`}
             />
           </div>
 
-          <div className="flex flex-wrap gap-4 text-xs font-medium text-muted-foreground pt-1">
+          <div className="flex flex-wrap gap-4 text-xs font-medium text-muted-foreground pt-0.5">
             <span className="inline-flex items-center gap-1.5 font-bold text-foreground">
               <CheckCircle2 className="size-4 text-wp-green" />
               {completedCoreNodes.length} of {coreNodes.length} activities completed
@@ -136,7 +139,7 @@ export function StudyHome({
             {reviewDueCount > 0 && (
               <span className="inline-flex items-center gap-1.5 text-wp-amber font-bold">
                 <Clock className="size-4" />
-                {reviewDueCount} {reviewDueCount === 1 ? "word" : "words"} due for review
+                {reviewDueCount} {reviewDueCount === 1 ? "word" : "words"} in Review queue
               </span>
             )}
           </div>
@@ -144,16 +147,16 @@ export function StudyHome({
       </div>
 
       {/* Continue Action */}
-      <div className="bg-gradient-to-br from-card via-card to-primary/5 border border-border/80 rounded-3xl p-6 sm:p-7 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-5">
+      <div className="bg-gradient-to-br from-card via-card to-primary/5 border border-border/80 rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-5">
         <div className="text-center sm:text-start flex-1 min-w-0">
           <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-primary mb-1">
             <Sparkles className="size-3.5" aria-hidden />
             <span>Next Recommended Step</span>
           </div>
-          <h2 className="text-xl font-bold text-foreground truncate">
+          <h2 className="text-lg sm:text-xl font-bold text-foreground truncate">
             {continueNode ? continueNode.title : "Start Learning"}
           </h2>
-          <p className="text-xs sm:text-sm text-muted-foreground mt-1 leading-relaxed">
+          <p className="text-xs sm:text-sm text-muted-foreground mt-0.5 sm:mt-1 leading-relaxed">
             {continueNode?.description
               ? continueNode.description
               : continueNode?.estimatedMinutes
