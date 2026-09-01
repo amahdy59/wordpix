@@ -37015,7 +37015,7 @@ export const ALL_GROUPS = Object.values(COURSE_UNITS).flatMap((world) => world.g
  * required on START_LESSON so nothing reaches it by omission.
  */
 export function resolveGroup(lessonId: string, wordIds: string[] = []): Lesson {
-  if (lessonId === REVIEW_GROUP_ID) {
+  if (lessonId === REVIEW_GROUP_ID || lessonId === "spaced-review") {
     return {
       id: REVIEW_GROUP_ID,
       name: "Daily Review",
@@ -37032,6 +37032,22 @@ export function resolveGroup(lessonId: string, wordIds: string[] = []): Lesson {
     return ALL_GROUPS[0];
   }
   return group;
+}
+
+/**
+ * Maps a vocabulary item id to its owning unit id across all registered course units.
+ */
+const WORD_TO_UNIT_MAP = new Map<string, string>();
+for (const [unitId, unit] of Object.entries(COURSE_UNITS)) {
+  for (const wId of unit.wordIds) {
+    if (!WORD_TO_UNIT_MAP.has(wId)) {
+      WORD_TO_UNIT_MAP.set(wId, unitId);
+    }
+  }
+}
+
+export function resolveUnitIdForWord(wordId: string): string | undefined {
+  return WORD_TO_UNIT_MAP.get(wordId);
 }
 
 /**

@@ -3,12 +3,13 @@ import {
   Compass,
   ArrowRight,
   Sparkles,
-  BookOpen,
   ChevronDown,
   CheckCircle2,
   Award,
   Search,
   X,
+  Library,
+  Play,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { Action } from "../types";
@@ -466,21 +467,41 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                                 ariaLabel={`${unit.name} progress: ${unitPercent}%`}
                               />
 
-                              <motion.button
-                                whileHover={{ scale: 1.01 }}
-                                whileTap={{ scale: 0.98 }}
-                                type="button"
-                                onClick={() =>
-                                  dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })
-                                }
-                                className="w-full bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-2.5 px-4 font-sans font-bold text-wp-text-on-blue text-xs sm:text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-colors flex items-center justify-center gap-2 min-h-[44px]"
-                              >
-                                <BookOpen className="size-4" />
-                                <span>
-                                  {wordsPracticedCount > 0 ? "Continue Unit" : "Start Unit"}
-                                </span>
-                                <ArrowRight className="size-4 rtl:rotate-180" />
-                              </motion.button>
+                              <div className="flex items-center gap-2">
+                                <motion.button
+                                  whileHover={{ scale: 1.01 }}
+                                  whileTap={{ scale: 0.98 }}
+                                  type="button"
+                                  onClick={() =>
+                                    dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })
+                                  }
+                                  className="flex-1 bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-2.5 px-3.5 font-sans font-bold text-wp-text-on-blue text-xs sm:text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue shadow-wp-xs transition-colors flex items-center justify-center gap-1.5 min-h-[44px]"
+                                >
+                                  <Play className="size-3.5 shrink-0" />
+                                  <span>{wordsPracticedCount > 0 ? "Continue" : "Start Unit"}</span>
+                                  <ArrowRight className="size-3.5 rtl:rotate-180 shrink-0" />
+                                </motion.button>
+
+                                <motion.button
+                                  whileHover={{ scale: 1.01 }}
+                                  whileTap={{ scale: 0.98 }}
+                                  type="button"
+                                  onClick={() =>
+                                    dispatch({
+                                      type: "GO",
+                                      to: "learning-materials",
+                                      unitId: unit.id,
+                                      area: "learn",
+                                    })
+                                  }
+                                  title={`Study materials for ${unit.name}`}
+                                  aria-label={`Study materials for ${unit.name}`}
+                                  className="px-3.5 py-2.5 bg-secondary text-primary hover:bg-primary/10 border border-primary/20 rounded-xl font-sans font-bold text-xs sm:text-sm min-h-[44px] flex items-center justify-center gap-1.5 transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue shrink-0"
+                                >
+                                  <Library className="size-4 shrink-0" />
+                                  <span>Study</span>
+                                </motion.button>
+                              </div>
                             </div>
                           </div>
                         );

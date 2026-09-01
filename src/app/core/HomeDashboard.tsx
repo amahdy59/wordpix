@@ -4,7 +4,7 @@ import { getDueWordsForReview, type WordLearningState } from "../../features/gam
 import { motion } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { nextGroupToStudy, resolveUnitForLesson } from "../data/lessons";
+import { nextGroupToStudy, resolveUnitForLesson, REVIEW_GROUP_ID } from "../data/lessons";
 
 import { useOfflineReadiness } from "../shared/useOfflineReadiness";
 import { useI18n } from "../context/I18nContext";
@@ -181,7 +181,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                   if (dueWords.length > 0) {
                     dispatch({
                       type: "START_LESSON",
-                      lessonId: "spaced-review",
+                      lessonId: REVIEW_GROUP_ID,
                       mode: "SMART_REVIEW",
                       wordQueue: dueWords.slice(0, 15).map((w: WordLearningState) => w.wordId),
                     });

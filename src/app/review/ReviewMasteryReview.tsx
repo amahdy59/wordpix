@@ -1,4 +1,4 @@
-import { memo, useMemo } from "react";
+import { memo, useMemo, useState, useEffect } from "react";
 import {
   Flame,
   BookOpen,
@@ -11,8 +11,8 @@ import {
 } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { REVIEW_GROUP_ID, type VocabularyItem } from "../data/lessons";
-import { getWords } from "../data/vocabulary";
+import { REVIEW_GROUP_ID, resolveUnitIdForWord, type VocabularyItem } from "../data/lessons";
+import { getWords, loadUnitVocabulary } from "../data/vocabulary";
 
 /** Words per review session. */
 const REVIEW_SESSION_SIZE = 5;
@@ -25,8 +25,28 @@ interface Props {
 
 export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch }: Props) {
   const { progress } = useProgress();
+  const [loadedCount, setLoadedCount] = useState(0);
 
   const todayStr = getLocalDateString(new Date());
+
+  useEffect(() => {
+    const memoryWordIds = Object.keys(progress.wordMemory);
+    const unitIds = new Set<string>();
+    for (const wId of memoryWordIds) {
+      const uId = resolveUnitIdForWord(wId);
+      if (uId) unitIds.add(uId);
+    }
+    if (unitIds.size === 0) return;
+    let isCancelled = false;
+    Promise.all([...unitIds].map((id) => loadUnitVocabulary(id))).then(() => {
+      if (!isCancelled) {
+        setLoadedCount((c) => c + 1);
+      }
+    });
+    return () => {
+      isCancelled = true;
+    };
+  }, [progress.wordMemory]);
 
   const memoryItems = useMemo(() => {
     const memory = progress.wordMemory;
@@ -60,7 +80,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
     });
 
     return items;
-  }, [progress.wordMemory, todayStr]);
+  }, [progress.wordMemory, todayStr, loadedCount]);
 
   const overdueList = memoryItems.filter((i) => i.status === "overdue");
   const dueTodayList = memoryItems.filter((i) => i.status === "today");
