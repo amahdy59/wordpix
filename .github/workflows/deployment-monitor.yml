@@ -1,0 +1,207 @@
+﻿name: Deployment Monitor & Auto-Heal
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Triggers
+# ─────────────────────────────────────────────────────────────────────────────
+on:
+  # 1. Right after a deploy succeeds — extended health check + issue tracking
+  workflow_run:
+    workflows: ["Deploy to GitHub Pages"]
+    types: [completed]
+
+  # 2. Scheduled heartbeat — catches silent regressions between pushes
+  schedule:
+    - cron: "*/30 * * * *"   # every 30 minutes
+
+  # 3. Manual trigger with optional URL override
+  workflow_dispatch:
+    inputs:
+      deploy_url:
+        description: "Override deployment URL (leave blank for default)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write     # push auto-heal commits
+  issues: write       # open/close failure issues
+  actions: write      # re-trigger failed workflow runs
+
+env:
+  DEPLOY_URL: ${{ github.event.inputs.deploy_url || 'https://amahdy59.github.io/wordpix' }}
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  # ───────────────────────────────────────────────────────────────────────────
+  # Skip if the triggering deploy itself failed (CI will already surface that)
+  # ───────────────────────────────────────────────────────────────────────────
+  check-trigger:
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.gate.outputs.should_run }}
+    steps:
+      - name: Determine whether to run health check
+        id: gate
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_run" ]]; then
+            CONCLUSION="${{ github.event.workflow_run.conclusion }}"
+            echo "Triggering deploy conclusion: $CONCLUSION"
+            if [[ "$CONCLUSION" != "success" ]]; then
+              echo "should_run=false" >> "$GITHUB_OUTPUT"
+              echo "Skipping — deploy pipeline itself did not succeed."
+            else
+              echo "should_run=true" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Health check
+  # ───────────────────────────────────────────────────────────────────────────
+  health-check:
+    needs: check-trigger
+    if: needs.check-trigger.outputs.should_run == 'true'
+    runs-on: ubuntu-latest
+    outputs:
+      status: ${{ steps.check.outputs.status }}
+      summary: ${{ steps.check.outputs.summary }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # Wait up to 3 min for GitHub Pages CDN propagation after a fresh deploy
+      - name: Wait for CDN propagation (deploy trigger only)
+        if: github.event_name == 'workflow_run'
+        run: sleep 90
+
+      - name: Run Deployment Doctor
+        id: check
+        run: |
+          set +e
+          OUTPUT=$(node scripts/deployment-doctor.mjs --url "$DEPLOY_URL" --json 2>&1)
+          CODE=$?
+          set -e
+
+          echo "Exit code: $CODE"
+          echo "$OUTPUT" | jq -r '"Checks: \(.checks | length), Failures: \(.failures), Warnings: \(.warnings)"'
+
+          FAILURES=$(echo "$OUTPUT" | jq -r '.failures')
+          WARNINGS=$(echo "$OUTPUT" | jq -r '.warnings')
+
+          if [[ "$CODE" == "0" ]]; then
+            echo "status=healthy" >> "$GITHUB_OUTPUT"
+            echo "summary=All checks passed ✅" >> "$GITHUB_OUTPUT"
+          elif [[ "$CODE" == "1" ]]; then
+            echo "status=degraded" >> "$GITHUB_OUTPUT"
+            echo "summary=Deployment degraded — $WARNINGS warning(s), likely CDN propagation lag ⚠️" >> "$GITHUB_OUTPUT"
+          elif [[ "$CODE" == "2" ]]; then
+            echo "status=broken" >> "$GITHUB_OUTPUT"
+            DETAIL=$(echo "$OUTPUT" | jq -r '[.checks[] | select(.status=="fail") | "• \(.name): \(.detail)"] | join("\n")')
+            echo "summary=Deployment broken — $FAILURES failure(s):\n$DETAIL ❌" >> "$GITHUB_OUTPUT"
+          else
+            echo "status=unreachable" >> "$GITHUB_OUTPUT"
+            echo "summary=Site unreachable after retries 🔴" >> "$GITHUB_OUTPUT"
+          fi
+
+          # Pass healthy/degraded, fail on broken/unreachable
+          exit $([[ "$CODE" -le 1 ]] && echo 0 || echo $CODE)
+        env:
+          DEPLOY_URL: ${{ env.DEPLOY_URL }}
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Auto-heal: retry transient failures
+  # ───────────────────────────────────────────────────────────────────────────
+  auto-retry:
+    needs: [check-trigger, health-check]
+    if: |
+      needs.check-trigger.outputs.should_run == 'true' &&
+      needs.health-check.outputs.status == 'degraded' &&
+      github.event_name == 'workflow_run'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Re-trigger deploy workflow (transient CDN lag)
+        run: |
+          echo "Deployment is degraded (CDN lag). Triggering a fresh deploy run..."
+          gh workflow run deploy.yml --ref main
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Issue management: open on failure, close on recovery
+  # ───────────────────────────────────────────────────────────────────────────
+  manage-issue:
+    needs: [check-trigger, health-check]
+    if: needs.check-trigger.outputs.should_run == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Close resolved deployment issues
+        if: needs.health-check.outputs.status == 'healthy'
+        run: |
+          OPEN=$(gh issue list --label "deployment-failure" --state open --json number --jq '.[].number')
+          for NUM in $OPEN; do
+            gh issue comment "$NUM" --body "✅ **Auto-resolved** — deployment health check passed at $(date -u '+%Y-%m-%d %H:%M UTC'). Closing automatically."
+            gh issue close "$NUM" --reason completed
+            echo "Closed issue #$NUM"
+          done
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Open or update failure issue
+        if: needs.health-check.outputs.status == 'broken' || needs.health-check.outputs.status == 'unreachable'
+        run: |
+          STATUS="${{ needs.health-check.outputs.status }}"
+          SUMMARY="${{ needs.health-check.outputs.summary }}"
+          TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M UTC')
+          RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+          BODY="## 🚨 Deployment ${STATUS^} — $TIMESTAMP
+
+          **Status:** \`$STATUS\`
+          **URL:** ${{ env.DEPLOY_URL }}
+          **Monitor run:** $RUN_URL
+          **Triggered by:** ${{ github.event_name }}
+
+          ### Failures
+          $SUMMARY
+
+          ### What to do
+          1. Check the [deploy workflow](https://github.com/${{ github.repository }}/actions/workflows/deploy.yml) for build errors.
+          2. Run \`node scripts/deployment-doctor.mjs\` locally for a live diagnosis.
+          3. If the build is clean locally, re-trigger via \`gh workflow run deploy.yml\`.
+          4. This issue will be **auto-closed** when the next health check passes.
+
+          ---
+          *Opened automatically by the Deployment Monitor workflow.*"
+
+          # Reuse existing open issue if present; otherwise open a new one
+          EXISTING=$(gh issue list --label "deployment-failure" --state open --json number --jq '.[0].number // empty')
+          if [[ -n "$EXISTING" ]]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+            echo "Updated existing issue #$EXISTING"
+          else
+            gh issue create \
+              --title "🚨 Deployment $STATUS — $TIMESTAMP" \
+              --body "$BODY" \
+              --label "deployment-failure" \
+              --label "bug"
+            echo "Opened new issue"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

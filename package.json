@@ -15,6 +15,8 @@
     "verify:prepush": "node scripts/verify_prepush.mjs",
     "verify:deploy": "node scripts/verify_deployment.mjs",
     "check:deploy": "node scripts/check_live_deployment.mjs",
+    "doctor": "node scripts/deployment-doctor.mjs",
+    "doctor:fix": "node scripts/deployment-doctor.mjs --auto-fix",
     "test:e2e": "playwright test",
     "assets:verify": "node scripts/verify_r2.cjs",
     "assets:upload": "node scripts/upload_assets.cjs",
