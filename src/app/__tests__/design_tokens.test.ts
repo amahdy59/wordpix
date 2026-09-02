@@ -41,7 +41,9 @@ describe("Design token integrity", () => {
     const referenced = referencedCustomProperties(allCss);
     const undeclared = [...referenced].filter((name) => !declared.has(name)).sort();
 
-    expect(undeclared, `var() references with no declaration: ${undeclared.join(", ")}`).toEqual([]);
+    expect(undeclared, `var() references with no declaration: ${undeclared.join(", ")}`).toEqual(
+      []
+    );
   });
 
   it("declares the full type scale", () => {
@@ -59,7 +61,8 @@ describe("Design token integrity", () => {
     });
 
     sizes.forEach((size, i) => {
-      if (i > 0) expect(size, `step ${i} is not larger than the one before`).toBeGreaterThan(sizes[i - 1]);
+      if (i > 0)
+        expect(size, `step ${i} is not larger than the one before`).toBeGreaterThan(sizes[i - 1]);
     });
   });
 
@@ -69,6 +72,15 @@ describe("Design token integrity", () => {
       expect(declared.has(`--wp-${accent}`), `missing --wp-${accent}`).toBe(true);
       expect(declared.has(`--wp-text-on-${accent}`), `missing --wp-text-on-${accent}`).toBe(true);
     });
+  });
+
+  it("declares Arabic typographic rhythm tokens with adequate line headroom", () => {
+    const declared = declaredCustomProperties(themeCss);
+    expect(declared.has("--wp-line-height-arabic")).toBe(true);
+    expect(declared.has("--wp-letter-spacing-arabic")).toBe(true);
+    const lineHeightMatch = themeCss.match(/--wp-line-height-arabic:\s*([\d.]+)/);
+    expect(lineHeightMatch).not.toBeNull();
+    expect(Number(lineHeightMatch![1])).toBeGreaterThanOrEqual(1.6);
   });
 });
 
@@ -109,7 +121,8 @@ describe("Components use tokens, not raw palette values", () => {
    * light and dark mode; accent tints used bg-amber-500/10 alongside the
    * --wp-amber they duplicated.
    */
-  const FORBIDDEN = /\b(?:bg|text|border|fill|from|via|to)-(?:slate|amber|rose|teal|violet|emerald|indigo)-\d/;
+  const FORBIDDEN =
+    /\b(?:bg|text|border|fill|from|via|to)-(?:slate|amber|rose|teal|violet|emerald|indigo)-\d/;
 
   it.each(componentFiles.map((f) => [relative(resolve(__dirname, ".."), f), f]))(
     "%s uses only semantic colour tokens",
@@ -130,15 +143,17 @@ describe("Components use tokens, not raw palette values", () => {
 
   it("declares the immersive panel surface as a token with a paired foreground", () => {
     const declared = declaredCustomProperties(themeCss);
-    ["--wp-panel", "--wp-panel-raised", "--wp-panel-border", "--wp-text-on-panel"].forEach((token) => {
-      expect(declared.has(token), `missing ${token}`).toBe(true);
-    });
+    ["--wp-panel", "--wp-panel-raised", "--wp-panel-border", "--wp-text-on-panel"].forEach(
+      (token) => {
+        expect(declared.has(token), `missing ${token}`).toBe(true);
+      }
+    );
   });
 });
 
 describe("Named type styles are actually used", () => {
-  const componentSources = ["PrimaryButton.tsx", "SecondaryButton.tsx", "LessonHeader.tsx"].map((file) =>
-    readFileSync(resolve(__dirname, "../shared", file), "utf8")
+  const componentSources = ["PrimaryButton.tsx", "SecondaryButton.tsx", "LessonHeader.tsx"].map(
+    (file) => readFileSync(resolve(__dirname, "../shared", file), "utf8")
   );
 
   // A type ladder nothing imports is documentation, not a design system. These

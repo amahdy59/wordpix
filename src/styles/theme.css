@@ -65,9 +65,12 @@
   --wp-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
   --wp-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
 
-  /* Font families */
+  /* Font families & Typographic Rhythm */
   --wp-font-base: "Inter", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --wp-font-arabic: "Noto Sans Arabic", "Cairo", sans-serif;
+  --wp-line-height-arabic: 1.65;
+  --wp-letter-spacing-arabic: 0px;
+  --font-arabic-line-height: var(--wp-line-height-arabic);
 
   /* Type scale — consumed by the .wp-text-* and .wp-type-* utilities in
      globals.css. These were referenced there from the start but never actually

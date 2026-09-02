@@ -132,12 +132,18 @@
     line-height: 1.5;
   }
 
-  /* Arabic body — Noto Sans Arabic, rose color */
-  .wp-type-arabic {
+  /* Arabic body — Noto Sans Arabic, rose color with adequate typographic headroom */
+  .wp-type-arabic,
+  .font-arabic,
+  :lang(ar) {
     font-family: var(--wp-font-arabic);
+    line-height: var(--wp-line-height-arabic);
+    letter-spacing: var(--wp-letter-spacing-arabic);
+  }
+
+  .wp-type-arabic {
     font-size: var(--wp-text-sm);
     font-weight: 600;
-    line-height: 1.5;
     color: var(--wp-brand);
     direction: rtl;
   }
