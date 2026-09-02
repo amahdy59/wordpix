@@ -634,7 +634,44 @@ export function WordFormationSection({ materials }: { materials: UnitLearningMat
         </p>
       </div>
 
-      <div className="overflow-x-auto rounded-2xl border border-border/80 bg-background">
+      {/* Mobile Stacked Word Family Cards (<640px) */}
+      <div className="block sm:hidden space-y-3">
+        {rows.map((row, rowIndex) => (
+          <div
+            key={`${row.base ?? row.noun}-${rowIndex}`}
+            className="rounded-2xl border border-border p-4 bg-background flex flex-col gap-2.5 shadow-xs"
+          >
+            <div className="flex items-center justify-between border-b border-border/50 pb-2">
+              <span className="font-sans font-black text-base text-foreground">
+                {row.base || row.noun || "Word"}
+              </span>
+              <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground bg-muted px-2 py-0.5 rounded-md">
+                Word Family
+              </span>
+            </div>
+            <div className="grid grid-cols-2 gap-2 text-xs">
+              {columns.map(({ label, key }) => {
+                const val = row[key];
+                if (!val) return null;
+                return (
+                  <div
+                    key={key}
+                    className="flex flex-col gap-0.5 bg-secondary/30 rounded-xl p-2 border border-border/40"
+                  >
+                    <span className="text-[10px] font-bold uppercase text-muted-foreground">
+                      {label}
+                    </span>
+                    <span className="font-semibold text-foreground text-sm">{val}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Desktop / Tablet Semantic Table (>=640px) */}
+      <div className="hidden sm:block overflow-x-auto rounded-2xl border border-border/80 bg-background">
         <table className="w-full text-start border-collapse min-w-[32rem]">
           <caption className="sr-only">Word forms for this unit&apos;s key words</caption>
           <thead>

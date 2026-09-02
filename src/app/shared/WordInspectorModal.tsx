@@ -28,7 +28,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/70 backdrop-blur-sm">
+      <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-6 bg-black/70 backdrop-blur-sm">
         {/* Backdrop dismiss */}
         <div className="absolute inset-0" onClick={onClose} aria-hidden="true" />
 
@@ -41,7 +41,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
           role="dialog"
           aria-modal="true"
           aria-labelledby="word-inspector-title"
-          className="relative w-full max-w-xl bg-wp-card border border-border rounded-3xl shadow-wp-lg overflow-hidden flex flex-col max-h-[92dvh] z-10"
+          className="relative w-full max-w-xl bg-wp-card border-t sm:border border-border rounded-t-[28px] sm:rounded-3xl shadow-wp-lg overflow-hidden flex flex-col max-h-[92dvh] z-10 pb-[env(safe-area-inset-bottom)] sm:pb-0"
         >
           {/* Top Header with Image & Close Button */}
           <div className="relative h-44 sm:h-52 w-full bg-muted overflow-hidden shrink-0">

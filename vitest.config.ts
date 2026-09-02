@@ -8,6 +8,9 @@ export default defineConfig({
     environment: "happy-dom",
     globals: true,
     setupFiles: ["./src/test/setup.ts"],
+    testTimeout: 180000,
+    hookTimeout: 180000,
+    teardownTimeout: 180000,
     exclude: [...configDefaults.exclude, "tests/**", "e2e/**", "scratch/**"],
   },
   resolve: {

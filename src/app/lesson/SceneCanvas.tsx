@@ -2,7 +2,6 @@ import { memo } from "react";
 import { ArrowLeft, BookOpen, Sparkles, List } from "lucide-react";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
-import { CloseButton } from "../shared/CloseButton";
 import { AudioButton } from "../shared/AudioButton";
 import { WordImage } from "../shared/WordImage";
 import type { VocabularyItem } from "../data/lessons";
@@ -32,7 +31,10 @@ export const SceneCanvas = memo(function SceneCanvas({
   onBrowseWords,
 }: Props) {
   return (
-    <section className="relative flex-1 lg:flex-[3] min-w-0 min-h-0 flex flex-col bg-background h-full overflow-hidden" aria-label="Vocabulary word view">
+    <section
+      className="relative flex-1 lg:flex-[3] min-w-0 min-h-0 flex flex-col bg-background h-full overflow-hidden"
+      aria-label="Vocabulary word view"
+    >
       {/* Mobile status bar */}
       <div className="lg:hidden shrink-0">
         <StatusBar />
@@ -47,7 +49,9 @@ export const SceneCanvas = memo(function SceneCanvas({
         >
           <ArrowLeft className="size-5" aria-hidden />
         </button>
-        <p className="flex-1 font-sans font-bold text-foreground text-sm truncate px-1">{groupName}</p>
+        <p className="flex-1 font-sans font-bold text-foreground text-sm truncate px-1">
+          {groupName}
+        </p>
         <button
           type="button"
           onClick={onBrowseWords}
@@ -71,11 +75,16 @@ export const SceneCanvas = memo(function SceneCanvas({
             <ArrowLeft className="size-4" aria-hidden />
             Back
           </button>
-          <div className="size-9 rounded-xl bg-primary flex items-center justify-center shadow-wp-xs" aria-hidden>
+          <div
+            className="size-9 rounded-xl bg-primary flex items-center justify-center shadow-wp-xs"
+            aria-hidden
+          >
             <BookOpen className="size-5 text-primary-foreground" />
           </div>
           <div>
-            <h1 className="font-sans font-bold text-foreground text-base leading-none">{groupName}</h1>
+            <h1 className="font-sans font-bold text-foreground text-base leading-none">
+              {groupName}
+            </h1>
             <p className="font-sans text-muted-foreground text-xs mt-0.5">
               Viewing {activeWord.label}
             </p>
@@ -108,7 +117,12 @@ export const SceneCanvas = memo(function SceneCanvas({
         <div className="w-full max-w-2xl z-20 mt-3 pointer-events-auto shrink-0">
           <div className="bg-wp-card/95 backdrop-blur-xl border border-border/80 rounded-2xl p-3 lg:p-4 shadow-wp-md flex items-center gap-3 lg:gap-4 w-full">
             <div className="size-14 lg:size-16 rounded-xl overflow-hidden shrink-0 border border-border bg-muted flex items-center justify-center">
-              <WordImage word={activeWord} width="64" height="64" className="size-full object-cover" />
+              <WordImage
+                word={activeWord}
+                width="64"
+                height="64"
+                className="size-full object-cover"
+              />
             </div>
 
             <div className="flex-1 min-w-0 flex flex-col gap-1">
@@ -152,10 +166,6 @@ export const SceneCanvas = memo(function SceneCanvas({
               Play Game
             </button>
           </div>
-        </div>
-
-        <div className="absolute top-3 end-3 z-30 lg:hidden">
-          <CloseButton onClick={onClose} aria-label="Close lesson and return to lesson overview" />
         </div>
       </div>
 

@@ -93,3 +93,45 @@ describe("Card Grid Responsive Aspect Ratios", () => {
     expect(source).not.toMatch(/grid-rows-2/);
   });
 });
+
+describe("HomeDashboard 2-Column Responsive Desktop Grid", () => {
+  const source = stripComments(read("core/HomeDashboard.tsx"));
+
+  it("adapts from single column on mobile to 12-column grid on lg+ screens", () => {
+    expect(source).toMatch(/grid\s+grid-cols-1\s+lg:grid-cols-12/);
+    expect(source).toMatch(/lg:col-span-7/);
+    expect(source).toMatch(/lg:col-span-5/);
+  });
+});
+
+describe("ExploreWorlds 3-Column Responsive Grid", () => {
+  const source = stripComments(read("core/ExploreWorlds.tsx"));
+
+  it("supports 3-column layout on xl screens and responsive aspect ratio for banners", () => {
+    expect(source).toMatch(/xl:grid-cols-3/);
+    expect(source).toMatch(/aspect-\[16\/9\]/);
+  });
+});
+
+describe("Responsive Bottom-Sheet Modal Behavior", () => {
+  it("SettingsModal uses bottom-sheet styling on mobile and centered dialog on sm+", () => {
+    const source = stripComments(read("core/SettingsModal.tsx"));
+    expect(source).toMatch(/items-end\s+sm:items-center/);
+    expect(source).toMatch(/rounded-t-\[28px\]\s+sm:rounded-3xl/);
+  });
+
+  it("WordInspectorModal uses bottom-sheet styling on mobile and centered dialog on sm+", () => {
+    const source = stripComments(read("shared/WordInspectorModal.tsx"));
+    expect(source).toMatch(/items-end\s+sm:items-center/);
+    expect(source).toMatch(/rounded-t-\[28px\]\s+sm:rounded-3xl/);
+  });
+});
+
+describe("Word Formation Responsive Stacked Cards", () => {
+  const source = stripComments(read("learning/LearningMaterialsScreen.tsx"));
+
+  it("provides mobile stacked cards alongside desktop semantic table", () => {
+    expect(source).toMatch(/block\s+sm:hidden/);
+    expect(source).toMatch(/hidden\s+sm:block/);
+  });
+});

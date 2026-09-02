@@ -382,7 +382,7 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.25, ease: "easeInOut" }}
-                      className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2"
+                      className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 pt-2"
                     >
                       {units.map((unit) => {
                         const wordsPracticedCount = unit.wordIds.filter(
@@ -398,8 +398,8 @@ export const ExploreWorlds = memo(function ExploreWorlds({ dispatch }: Props) {
                             key={unit.id}
                             className="bg-wp-card rounded-2xl border border-border p-4 flex flex-col justify-between gap-4 shadow-wp-xs hover:border-primary/50 transition-colors relative overflow-hidden"
                           >
-                            {/* Unit Image Banner */}
-                            <div className="h-36 sm:h-44 relative rounded-xl overflow-hidden shrink-0 border border-border shadow-wp-xs">
+                            {/* Unit Image Banner with responsive aspect ratio */}
+                            <div className="relative aspect-[16/9] min-h-[140px] max-h-[190px] rounded-xl overflow-hidden shrink-0 border border-border shadow-wp-xs">
                               {unit.heroImage ? (
                                 <img
                                   alt={`${unit.name} visual learning scene`}
