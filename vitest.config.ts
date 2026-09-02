@@ -11,10 +11,10 @@ export default defineConfig({
     testTimeout: 180000,
     hookTimeout: 180000,
     teardownTimeout: 180000,
-    pool: "forks",
+    pool: "threads",
     poolOptions: {
-      forks: {
-        singleFork: true,
+      threads: {
+        singleThread: true,
       },
     },
     exclude: [...configDefaults.exclude, "tests/**", "e2e/**", "scratch/**"],
