@@ -115,6 +115,22 @@
   --sidebar-accent-foreground: var(--wp-brand);
   --sidebar-border: var(--wp-border);
   --sidebar-ring: var(--wp-brand);
+
+  /* ── Semantic Learning-State Tokens ────────────────────────────────────────
+     Components should reference these instead of raw --wp-* color names.
+     Themes can evolve (e.g., swap green for blue) without touching components. */
+  --feedback-success: var(--wp-green);
+  --feedback-success-surface: var(--wp-green-light);
+  --feedback-success-border: color-mix(in srgb, var(--wp-green) 30%, transparent);
+  --feedback-error: var(--wp-rose);
+  --feedback-error-surface: var(--wp-rose-light);
+  --feedback-error-border: color-mix(in srgb, var(--wp-rose) 30%, transparent);
+  --feedback-warning: var(--wp-amber);
+  --feedback-warning-surface: color-mix(in srgb, var(--wp-amber) 15%, transparent);
+  --mastery-active: var(--wp-teal);
+  --mastery-surface: var(--wp-teal-light);
+  --progress-active: var(--wp-brand);
+  --streak-active: var(--wp-amber);
 }
 
 .dark {

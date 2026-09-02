@@ -12,6 +12,8 @@ import { initialStudyProgress } from "../learning/study/progress";
 import { hashToRoute, screenToHash } from "../router/useHashRouter";
 import { reducer } from "../store/reducer";
 import { COURSE_UNITS } from "../data/lessons";
+import { I18nProvider } from "../context/I18nContext";
+import { LearnerProvider } from "../context/LearnerContext";
 
 describe("LearningMaterialsScreen", () => {
   it("opens on the study home with unit study path and activities", async () => {
@@ -57,13 +59,17 @@ describe("LearningMaterialsScreen", () => {
     const onProgressUpdate = vi.fn();
 
     render(
-      <PracticeArea
-        materials={materials}
-        progress={progress}
-        onProgressUpdate={onProgressUpdate}
-        nodeId="practice-drill"
-        onNextActivity={vi.fn()}
-      />
+      <I18nProvider>
+        <LearnerProvider>
+          <PracticeArea
+            materials={materials}
+            progress={progress}
+            onProgressUpdate={onProgressUpdate}
+            nodeId="practice-drill"
+            onNextActivity={vi.fn()}
+          />
+        </LearnerProvider>
+      </I18nProvider>
     );
 
     expect(

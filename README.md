@@ -10,7 +10,7 @@ An interactive, visual-first English vocabulary learning application tailored fo
 - 🎮 **Gamified Lesson Loop**: A 6-step flow — Scene Discovery, Listen & Repeat, Recall Match, Context Fill, Sentence Builder, Quick Quiz — with SM-2 spaced repetition, streaks, and an itemised XP economy.
 - ⏭️ **Continuous, Rosetta-Stone-style pacing**: Answering _is_ the submit. Choosing an option commits it, feedback appears inline beside the question rather than in a modal, and the drill moves on by itself — roughly 0.9s after a correct answer, 2.2s after a wrong one so the correct answer can be read. Listen & Repeat walks through the group on its own, with a Pause control.
 - 🔁 **Missed words come back**: A wrong answer is not a wall. The correct option is revealed, the drill advances, and the missed word is re-queued to be asked again later in the same drill (once, so a drill always terminates).
-- ♿ **WCAG 2.2 AAA Accessibility**, enforced by tests rather than asserted:
+- ♿ **Accessibility**, designed toward WCAG 2.2 AA with selected enhanced targets (7:1 contrast ratio, 44×44px touch targets):
   - Minimum 44×44px touch targets — verified per component.
   - 7:1 contrast on every text and accent pairing, in light and dark, computed from the theme tokens.
   - Full keyboard operation, focus-trapped dialogs, and `prefers-reduced-motion` support.
@@ -18,6 +18,7 @@ An interactive, visual-first English vocabulary learning application tailored fo
   - **Move On Automatically** can be switched off, which replaces the timed advance with a Next button. The advance is a time limit on reading feedback, so WCAG 2.2.1 requires it be defeatable before it is ever met.
   - Answer controls use `aria-disabled` rather than `disabled` once answered, so keyboard focus is never dropped to `<body>` mid-drill.
   - ARIA live region announcements on navigation and SpeechSynthesis.
+  - _Note: Full WCAG 2.2 AAA conformance is in progress — see [`docs/02_ACCESSIBILITY_WCAG_2.2_BASELINE_AND_ENHANCED_TARGETS.md`](docs/02_ACCESSIBILITY_WCAG_2.2_BASELINE_AND_ENHANCED_TARGETS.md) for the current status and remaining gaps._
 - 🌐 **Bilingual & RTL**: Interface language switcher (English / العربية) with `dir` mirroring throughout via CSS logical properties. Lesson content is currently English-only.
 
 ### Skill Exercise Hub
