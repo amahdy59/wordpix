@@ -27,7 +27,7 @@ describe("unit learning materials", () => {
 
     beforeAll(async () => {
       materials = (await loadLearningMaterials(unitId))!;
-    }, 30000);
+    });
 
     it("loads", () => {
       expect(materials).not.toBeNull();
