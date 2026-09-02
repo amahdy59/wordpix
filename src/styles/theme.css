@@ -164,6 +164,21 @@
   --wp-text: #f8fafc; /* slate-50 */
   --wp-text-secondary: #cbd5e1; /* slate-300 — 9.85:1 on card (slate-400 was 5.71:1) */
   --wp-text-on-brand: #2e1065; /* 8.28:1 */
+
+  /* Dark Semantic Bridge Tokens */
+  --background: var(--wp-surface);
+  --foreground: var(--wp-text);
+  --card: var(--wp-card);
+  --card-foreground: var(--wp-text);
+  --popover: var(--wp-card);
+  --popover-foreground: var(--wp-text);
+  --primary: var(--wp-brand);
+  --primary-foreground: var(--wp-text-on-brand);
+  --secondary: var(--wp-brand-light);
+  --secondary-foreground: var(--wp-brand);
+  --muted: var(--wp-surface);
+  --muted-foreground: var(--wp-text-secondary);
+  --border: var(--wp-border);
 }
 
 /* ─── High contrast mode ─────────────────────────────────────────────────────

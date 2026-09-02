@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useLearner } from "../context/LearnerContext";
 import { getCachedAudio, saveCachedAudio } from "../../lib/persistence/db";
-import { audioUrl } from "./assetUrls";
+import { audioUrl, hasAssetHost } from "./assetUrls";
 
 export type AudioStatus = "idle" | "loading" | "playing" | "error" | "unsupported";
 
@@ -74,6 +74,35 @@ function pickVoice(synth: SpeechSynthesis, targetLang: string): SpeechSynthesisV
 const MAX_AUDIO_CACHE_SIZE = 64;
 const audioCache = new Map<string, string>();
 
+/**
+ * Whether `speechSynthesis` has been unlocked by a real user gesture yet.
+ *
+ * Mobile Safari and Chrome only honour `speak()` inside the short window that
+ * follows a tap. Every path in `speak` below is asynchronous before it reaches
+ * synthesis — a SHA-256 digest, a CDN fetch, possibly an ElevenLabs round trip
+ * — and by the time any of them resolves the window has closed, so the
+ * fallback ran and produced silence. That is the whole of the "audio does not
+ * work on my phone" report: not an error, just nothing.
+ *
+ * The fix is to spend the gesture immediately on a silent utterance, which
+ * unlocks the engine for the rest of the session. Module scope, not a ref:
+ * the unlock is per document, and every `useAudio` instance shares it.
+ */
+let synthesisUnlocked = false;
+
+function unlockSynthesis(synth: SpeechSynthesis): void {
+  if (synthesisUnlocked) return;
+  synthesisUnlocked = true;
+  try {
+    const primer = new SpeechSynthesisUtterance(" ");
+    primer.volume = 0;
+    synth.speak(primer);
+  } catch {
+    // An engine that refuses the primer will refuse the real utterance too;
+    // there is nothing to recover here and nothing to report.
+  }
+}
+
 function cacheAudioUrl(key: string, url: string) {
   if (audioCache.has(key)) return;
   if (audioCache.size >= MAX_AUDIO_CACHE_SIZE) {
@@ -120,6 +149,15 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
   const stallTimerRef = useRef<number | null>(null);
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
   const isMountedRef = useRef(true);
+  /**
+   * Which `speak` call is allowed to make noise.
+   *
+   * Tapping two words in quick succession used to start two chains of
+   * promises, and whichever CDN fetch happened to finish last won — so the
+   * voice could name the previous card. Every async continuation checks its
+   * own generation against this before touching audio or state.
+   */
+  const requestRef = useRef(0);
 
   useEffect(() => {
     return () => {
@@ -132,6 +170,13 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
       const targetLang = overrideLang ?? lang;
       const cleanText = text.replace(/[-_]/g, " ").trim();
 
+      const generation = ++requestRef.current;
+      /** True while this call is still the one the learner is waiting on. */
+      const isCurrent = () => isMountedRef.current && requestRef.current === generation;
+
+      // Spend the gesture now, before the first `await`. See `unlockSynthesis`.
+      if (synthRef.current) unlockSynthesis(synthRef.current);
+
       const clearStall = () => {
         if (stallTimerRef.current !== null) {
           window.clearTimeout(stallTimerRef.current);
@@ -140,7 +185,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
       };
 
       const fallbackToSynthesis = (fallbackText: string, fallbackLang: string) => {
-        if (!isMountedRef.current) return;
+        if (!isCurrent()) return;
         const synth = synthRef.current;
         if (!synth) {
           setStatus("unsupported");
@@ -193,6 +238,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
       }
 
       const playBlobUrl = (blobUrl: string) => {
+        if (!isCurrent()) return;
         const audio = new Audio(blobUrl);
         audio.playbackRate = effectiveRate;
         audio.onplay = () => {
@@ -213,71 +259,6 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
           clearStall();
           fallbackToSynthesis(cleanText, targetLang);
         });
-      };
-
-      const playNeuralCloudStream = (phrase: string, speechLang: string) => {
-        const cacheKey = `neural_v2:${speechLang}:${phrase.toLowerCase()}`;
-
-        if (audioCache.has(cacheKey)) {
-          setStatus("loading");
-          playBlobUrl(audioCache.get(cacheKey)!);
-          return;
-        }
-
-        setStatus("loading");
-        clearStall();
-        stallTimerRef.current = window.setTimeout(() => {
-          setStatus((current) => (current === "loading" ? "error" : current));
-        }, SPEECH_START_TIMEOUT_MS * 2);
-
-        getCachedAudio(cacheKey)
-          .then((storedBlob) => {
-            if (storedBlob) {
-              const url = URL.createObjectURL(storedBlob);
-              cacheAudioUrl(cacheKey, url);
-              playBlobUrl(url);
-              return;
-            }
-
-            const langParam = speechLang.toLowerCase().startsWith("ar") ? "ar" : "en";
-            const neuralUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${langParam}&client=tw-ob&q=${encodeURIComponent(phrase)}`;
-
-            fetch(neuralUrl)
-              .then((res) => {
-                if (!res.ok) throw new Error(`Neural CDN status ${res.status}`);
-                return res.blob();
-              })
-              .then((blob) => {
-                saveCachedAudio(cacheKey, blob);
-                const url = URL.createObjectURL(blob);
-                cacheAudioUrl(cacheKey, url);
-                playBlobUrl(url);
-              })
-              .catch(() => {
-                const directAudio = new Audio(neuralUrl);
-                directAudio.playbackRate = effectiveRate;
-                directAudio.onplay = () => {
-                  clearStall();
-                  setStatus("playing");
-                };
-                directAudio.onended = () => {
-                  clearStall();
-                  setStatus("idle");
-                };
-                directAudio.onerror = () => {
-                  clearStall();
-                  fallbackToSynthesis(phrase, speechLang);
-                };
-                currentAudioRef.current = directAudio;
-                directAudio.play().catch(() => {
-                  clearStall();
-                  fallbackToSynthesis(phrase, speechLang);
-                });
-              });
-          })
-          .catch(() => {
-            fallbackToSynthesis(phrase, speechLang);
-          });
       };
 
       /**
@@ -310,15 +291,87 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
           return true;
         }
 
-        const res = await fetch(url);
-        if (!res.ok) return false;
-        const blob = await res.blob();
-        saveCachedAudio(cacheKey, blob);
-        const objectUrl = URL.createObjectURL(blob);
-        cacheAudioUrl(cacheKey, objectUrl);
-        setStatus("loading");
-        playBlobUrl(objectUrl);
-        return true;
+        // Stream the clip straight from the CDN rather than fetching its bytes.
+        //
+        // `fetch` is subject to CORS and the asset bucket sends no
+        // `Access-Control-Allow-Origin`, so every one of these requests failed
+        // and every word in the app quietly fell through to the robot voice —
+        // the pre-generated audio was never heard at all. A media element has
+        // no such restriction: `<audio>` may play a cross-origin file, it just
+        // may not let script read the samples. Playing is all this needs.
+        //
+        // A missing clip still 404s, `onerror` fires, and the caller falls
+        // through to synthesis exactly as before.
+        const played = await playStreamed(url);
+        if (played) cacheInBackground(url, cacheKey);
+        return played;
+      };
+
+      /**
+       * Plays a URL through a media element, resolving to whether it started.
+       *
+       * Resolving on `play` rather than on `ended` matters: the caller only
+       * needs to know whether to fall through to another source, and waiting
+       * for the clip to finish would hold that decision for its whole duration.
+       */
+      const playStreamed = (url: string): Promise<boolean> =>
+        new Promise((resolve) => {
+          if (!isCurrent()) {
+            resolve(true);
+            return;
+          }
+          const audio = new Audio(url);
+          audio.playbackRate = effectiveRate;
+          audio.volume = volume;
+          let settled = false;
+          const settle = (ok: boolean) => {
+            if (settled) return;
+            settled = true;
+            resolve(ok);
+          };
+          audio.onplay = () => {
+            clearStall();
+            if (isCurrent()) setStatus("playing");
+            settle(true);
+          };
+          audio.onended = () => {
+            clearStall();
+            if (isCurrent()) setStatus("idle");
+          };
+          audio.onerror = () => {
+            clearStall();
+            settle(false);
+          };
+          currentAudioRef.current = audio;
+          setStatus("loading");
+          audio.play().catch(() => {
+            clearStall();
+            settle(false);
+          });
+        });
+
+      /**
+       * Warms the offline cache without holding up playback.
+       *
+       * This is the only thing the old `fetch` was really for. It stays a
+       * fetch — IndexedDB needs the bytes — but it now runs after the learner
+       * is already hearing the word, and its failure is invisible. Once the
+       * bucket sends CORS headers this starts succeeding and offline playback
+       * comes back; until then the app is merely online-only, not silent.
+       */
+      const cacheInBackground = (url: string, cacheKey: string): void => {
+        if (audioCache.has(cacheKey)) return;
+        void fetch(url)
+          .then((res) => (res.ok ? res.blob() : null))
+          .then((blob) => {
+            if (!blob) return;
+            saveCachedAudio(cacheKey, blob);
+            cacheAudioUrl(cacheKey, URL.createObjectURL(blob));
+          })
+          .catch(() => {
+            // No CORS on the bucket, or the learner went offline mid-clip.
+            // Either way the word already played; there is nothing to say.
+          });
       };
 
       /**
@@ -340,7 +393,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
           playWithLearnerKey(apiKey);
           return;
         }
-        playNeuralCloudStream(cleanText, targetLang);
+        fallbackToSynthesis(cleanText, targetLang);
       };
 
       const playWithLearnerKey = (apiKey: string) => {
@@ -396,17 +449,24 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
                 cacheAudioUrl(cacheKey, url);
                 playBlobUrl(url);
               })
-              .catch((err) => {
-                console.error("ElevenLabs error, falling back to neural stream", err);
-                playNeuralCloudStream(cleanText, targetLang);
+              .catch(() => {
+                fallbackToSynthesis(cleanText, targetLang);
               });
           })
           .catch(() => {
-            playNeuralCloudStream(cleanText, targetLang);
+            fallbackToSynthesis(cleanText, targetLang);
           });
 
         return;
       };
+
+      // With no bucket configured there is no clip to look for, and going
+      // through the async chain anyway would only delay the voice — on a phone,
+      // past the point where it can still play at all.
+      if (!hasAssetHost() && !apiKey) {
+        fallbackToSynthesis(cleanText, targetLang);
+        return;
+      }
 
       playPregenerated()
         .catch(() => false)
@@ -418,6 +478,9 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
   );
 
   const stop = useCallback(() => {
+    // Retiring the generation stops any fetch still in flight from playing
+    // after the learner has asked for silence.
+    requestRef.current += 1;
     if (stallTimerRef.current !== null) {
       clearTimeout(stallTimerRef.current);
       stallTimerRef.current = null;

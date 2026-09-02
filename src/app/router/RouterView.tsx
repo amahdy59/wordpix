@@ -1,8 +1,9 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useMemo } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import type { Screen, Action, TabId } from "../types";
 import { resolveGroup, resolveUnitForLesson, DEFAULT_UNIT_ID } from "../data/lessons";
 import { getWords } from "../data/vocabulary";
+import type { VocabularyItem } from "../data/lessons";
 import { UnitVocabularyGate } from "./UnitVocabularyGate";
 import { useI18n } from "../context/I18nContext";
 import { useLearner } from "../context/LearnerContext";
@@ -92,14 +93,108 @@ export const SkipLink = () => {
   );
 };
 
+type LessonScreen = Extract<Screen, { id: "lesson" }>;
+
+/** An empty list that keeps its identity, so a miss does not remount a drill. */
+const NO_WORDS: VocabularyItem[] = [];
+
+/**
+ * One step of a lesson, and the words it drills.
+ *
+ * This is a component rather than a branch of `renderContent` because of one
+ * line: the `useMemo` below. `getWords` builds a fresh array every call, and
+ * calling it inline meant `words` arrived at each drill with a new identity on
+ * every render of `RouterView` — which happens on every learner-state change,
+ * including the XP and SRS writes that answering a question triggers.
+ *
+ * Downstream, every drill shuffles its options in a `useMemo` keyed on that
+ * array. A new identity re-ran the shuffle, so the four picture cards
+ * reordered underneath the learner at the moment they answered: the tick
+ * landed on a card in a different place from the one they had touched, and the
+ * next question's options had already moved before it was asked. Holding the
+ * array still fixes that, and lets the memoised drills skip the re-render
+ * entirely.
+ *
+ * Rendered inside `UnitVocabularyGate`, so the unit's words are in memory by
+ * the time this runs and the lookup can stay synchronous.
+ */
+function LessonRoute({
+  state,
+  dispatch,
+}: {
+  state: LessonScreen;
+  dispatch: React.Dispatch<Action>;
+}) {
+  const { state: learnerState } = useLearner();
+  const isBeginner =
+    learnerState.preferences.englishLevel === "A1" ||
+    learnerState.preferences.englishLevel === "A2";
+  const isAssessment = state.mode === "UNIT_ASSESSMENT" || state.mode === "PRE_LESSON_ASSESSMENT";
+
+  const exSequence = isAssessment
+    ? (["quiz"] as const)
+    : isBeginner
+      ? (["listen", "recall", "fill", "quiz", "story"] as const)
+      : (["listen", "recall", "fill", "builder", "quiz", "story"] as const);
+
+  const { lessonId, wordQueue } = state;
+  // Joined, not the array itself: `wordQueue` is rebuilt by the reducer on
+  // every attempt, so depending on its identity would defeat the memo.
+  const wordQueueKey = wordQueue.join("|");
+  const activeGroupWords = useMemo(() => {
+    // Resolve within the lesson's own unit. Word ids repeat across the
+    // course — "mirror" belongs to fifteen units — so an unscoped lookup
+    // can hand this drill another unit's photograph of the same thing.
+    const lessonUnitId = resolveUnitForLesson(lessonId).id;
+    const ids = wordQueueKey ? wordQueueKey.split("|") : [];
+    const groupWords = getWords(ids, lessonUnitId);
+    if (groupWords.length > 0) return groupWords;
+    const fallback = getWords(resolveGroup(lessonId).wordIds, lessonUnitId);
+    return fallback.length > 0 ? fallback : NO_WORDS;
+  }, [lessonId, wordQueueKey]);
+
+  if (state.step >= exSequence.length) {
+    return (
+      <LessonCompleteResults
+        sessionId={state.sessionId}
+        lessonId={state.lessonId}
+        unitId={state.unitId}
+        mode={state.mode}
+        attempts={state.attempts}
+        wordQueue={state.wordQueue}
+        dispatch={dispatch}
+      />
+    );
+  }
+
+  if (activeGroupWords.length === 0) return <ExploreWorlds dispatch={dispatch} />;
+
+  const ex: ExStep = exSequence[state.step];
+  const drillProps = {
+    words: activeGroupWords,
+    step: state.step,
+    lessonId: state.lessonId,
+    dispatch,
+  };
+
+  if (ex === "listen") return <ExerciseListenRepeat {...drillProps} />;
+  if (ex === "recall") return <ExerciseRecallMatch {...drillProps} />;
+  if (ex === "fill") return <ExerciseContextFill {...drillProps} />;
+  if (ex === "builder") return <ExerciseSentenceBuilder {...drillProps} />;
+  if (ex === "quiz") return <ExerciseQuickQuiz {...drillProps} />;
+  if (ex === "story") return <ExerciseStory {...drillProps} />;
+  return null;
+}
+
 export interface RouterViewProps {
   state: Screen;
   dispatch: React.Dispatch<Action>;
 }
 
 export function RouterView({ state, dispatch }: RouterViewProps) {
-  const { state: learnerState } = useLearner();
-
+  // The learner state that used to be read here moved into `LessonRoute`,
+  // which is the only branch that wanted it. Reading it at this level meant
+  // every XP or streak write re-rendered the whole route tree.
   function renderContent() {
     if (state.id === "onboarding") {
       if (state.step === "splash") return <SplashWelcome dispatch={dispatch} />;
@@ -132,102 +227,7 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       return <SkillExercise dispatch={dispatch} />;
     }
 
-    if (state.id === "lesson") {
-      const isBeginner =
-        learnerState.preferences.englishLevel === "A1" ||
-        learnerState.preferences.englishLevel === "A2";
-      const isAssessment =
-        state.mode === "UNIT_ASSESSMENT" || state.mode === "PRE_LESSON_ASSESSMENT";
-
-      const exSequence = isAssessment
-        ? (["quiz"] as const)
-        : isBeginner
-          ? (["listen", "recall", "fill", "quiz", "story"] as const)
-          : (["listen", "recall", "fill", "builder", "quiz", "story"] as const);
-
-      if (state.step >= exSequence.length) {
-        return (
-          <LessonCompleteResults
-            sessionId={state.sessionId}
-            lessonId={state.lessonId}
-            unitId={state.unitId}
-            mode={state.mode}
-            attempts={state.attempts}
-            wordQueue={state.wordQueue}
-            dispatch={dispatch}
-          />
-        );
-      }
-
-      const ex: ExStep = exSequence[state.step];
-      // Resolve within the lesson's own unit. Word ids repeat across the
-      // course — "mirror" belongs to fifteen units — so an unscoped lookup
-      // can hand this drill another unit's photograph of the same thing.
-      const lessonUnitId = resolveUnitForLesson(state.lessonId).id;
-      const groupWords = getWords(state.wordQueue, lessonUnitId);
-
-      const activeGroupWords =
-        groupWords.length > 0
-          ? groupWords
-          : getWords(resolveGroup(state.lessonId).wordIds, lessonUnitId);
-
-      if (activeGroupWords.length === 0) return <ExploreWorlds dispatch={dispatch} />;
-
-      if (ex === "listen")
-        return (
-          <ExerciseListenRepeat
-            words={activeGroupWords}
-            step={state.step}
-            lessonId={state.lessonId}
-            dispatch={dispatch}
-          />
-        );
-      if (ex === "recall")
-        return (
-          <ExerciseRecallMatch
-            words={activeGroupWords}
-            step={state.step}
-            lessonId={state.lessonId}
-            dispatch={dispatch}
-          />
-        );
-      if (ex === "fill")
-        return (
-          <ExerciseContextFill
-            words={activeGroupWords}
-            step={state.step}
-            lessonId={state.lessonId}
-            dispatch={dispatch}
-          />
-        );
-      if (ex === "builder")
-        return (
-          <ExerciseSentenceBuilder
-            words={activeGroupWords}
-            step={state.step}
-            lessonId={state.lessonId}
-            dispatch={dispatch}
-          />
-        );
-      if (ex === "quiz")
-        return (
-          <ExerciseQuickQuiz
-            words={activeGroupWords}
-            step={state.step}
-            lessonId={state.lessonId}
-            dispatch={dispatch}
-          />
-        );
-      if (ex === "story")
-        return (
-          <ExerciseStory
-            words={activeGroupWords}
-            step={state.step}
-            lessonId={state.lessonId}
-            dispatch={dispatch}
-          />
-        );
-    }
+    if (state.id === "lesson") return <LessonRoute state={state} dispatch={dispatch} />;
     if (state.id === "lesson-complete") {
       return (
         <LessonCompleteResults

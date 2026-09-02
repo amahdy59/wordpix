@@ -563,7 +563,8 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     </span>
                     <p className="font-sans text-xs text-muted-foreground">
                       Says the word after each answer &mdash; &ldquo;Correct! This is a
-                      faucet.&rdquo; Turn off to keep the chime only.
+                      faucet.&rdquo; / &ldquo;These are pliers.&rdquo; Turn off to keep the chime
+                      only.
                     </p>
                   </div>
                   <button

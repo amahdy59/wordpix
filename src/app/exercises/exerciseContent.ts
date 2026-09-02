@@ -1,6 +1,7 @@
 import { type VocabularyItem } from "../data/lessons";
 import { loadedVocabulary } from "../data/vocabulary";
 import { shuffleArray } from "../../utils/shuffle";
+import { articleFor, classifyLabel, spokenLabel } from "../content/wordGrammar";
 
 export const CONFUSION_PAIRS: Record<string, string[]> = {
   pillow: ["blanket", "nightstand", "bed", "dresser"],
@@ -415,16 +416,47 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
   },
 };
 
+/**
+ * Frames for the fallback sentence, one per grammatical class.
+ *
+ * `RICH_CONTEXT_SENTENCES` only covers the bedroom unit, so almost every word
+ * in the corpus reaches the drills through this fallback — which makes its
+ * grammar the app’s most-read sentence by a wide margin. It used to be
+ * `This is ${article} ${label}` unconditionally, and so taught "This is a
+ * pliers", "This is a water" and "This is a run".
+ *
+ * The `term` frame drops the quotation marks that `identifySentence` uses.
+ * Sentence Builder turns `words` into draggable tiles, and a tile reading
+ * `“run”` would ask the learner to place punctuation.
+ */
+function fallbackFrame(word: VocabularyItem): { lead: string[]; spoken: string } {
+  const kind = classifyLabel(word.label, word.topic);
+  const spoken = spokenLabel(word.label, kind);
+  switch (kind) {
+    case "count":
+      return { lead: ["This", "is", articleFor(word.label)], spoken };
+    case "pair":
+      return { lead: ["This", "is", "a", "pair", "of"], spoken };
+    case "plural":
+      return { lead: ["These", "are"], spoken };
+    case "term":
+      return { lead: ["The", "word", "is"], spoken };
+    default:
+      return { lead: ["This", "is"], spoken };
+  }
+}
+
 export function getRichSentence(word: VocabularyItem): RichSentence {
   if (RICH_CONTEXT_SENTENCES[word.id]) {
     return RICH_CONTEXT_SENTENCES[word.id];
   }
-  const article = articleFor(word.label);
+  const { lead, spoken } = fallbackFrame(word);
+  const clozeBefore = lead.join(" ");
   return {
-    clozeBefore: `This is ${article}`,
-    clozeAfter: `.`,
-    full: `This is ${article} ${word.label.toLowerCase()}.`,
-    words: ["This", "is", article, word.label.toLowerCase()],
+    clozeBefore,
+    clozeAfter: ".",
+    full: `${clozeBefore} ${spoken}.`,
+    words: [...lead, spoken],
   };
 }
 
@@ -483,6 +515,9 @@ export function getDistractors(
   return getSemanticDistractors(word, count, lessonWords);
 }
 
-export function articleFor(label: string): "a" | "an" {
-  return /^[aeiou]/i.test(label) ? "an" : "a";
-}
+/**
+ * Re-exported so existing callers keep working. The implementation moved to
+ * `content/wordGrammar`, where it can consider sound rather than spelling —
+ * "an hour", "a uniform", "an MRI scan".
+ */
+export { articleFor };

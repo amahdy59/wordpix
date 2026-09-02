@@ -104,7 +104,9 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       spoken.speakFeedback({
         correct,
         targetLabel: currentTargetWord.label,
+        targetTopic: currentTargetWord.topic,
         chosenLabel: card.label,
+        chosenTopic: currentTargetWord.topic,
       });
 
       dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });

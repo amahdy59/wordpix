@@ -3,6 +3,7 @@ import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getRichSentence, getDistractors } from "./exerciseContent";
+import { identifySentence } from "../content/wordGrammar";
 import { shuffleArray } from "../../utils/shuffle";
 import { WordImage } from "../shared/WordImage";
 import { useSound } from "../shared/useSound";
@@ -73,7 +74,9 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       spoken.speakFeedback({
         correct,
         targetLabel: currentTargetWord.label,
+        targetTopic: currentTargetWord.topic,
         chosenLabel: options.find((o) => o.id === id)?.label,
+        chosenTopic: currentTargetWord.topic,
       });
 
       dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
@@ -278,13 +281,13 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         {/* Screen-reader announcement */}
         <span aria-live="polite" aria-atomic="true" className="sr-only">
           {feedback === "correct"
-            ? `Correct! This is a ${currentTargetWord.label}. ${richSentence.full}`
+            ? `Correct! ${identifySentence(currentTargetWord.label, currentTargetWord.topic)} ${richSentence.full}`
             : feedback === "incorrect"
               ? `Incorrect. The correct answer is ${currentTargetWord.label}.`
               : ""}
         </span>
 
-        {/* Continue strip â€” appears below grid after answer, replaces old AnswerFeedback bar */}
+        {/* Continue strip — appears below grid after answer, replaces old AnswerFeedback bar */}
         <AnimatePresence>
           {feedback !== null && !accessibility.autoAdvance && (
             <motion.div
@@ -301,8 +304,8 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
             >
               <span className="font-sans font-semibold text-foreground text-sm">
                 {feedback === "correct"
-                  ? `âœ“ This is a ${currentTargetWord.label}.`
-                  : `âœ— The answer is "${currentTargetWord.label}".`}
+                  ? `✓ ${identifySentence(currentTargetWord.label, currentTargetWord.topic)}`
+                  : `✗ ${identifySentence(currentTargetWord.label, currentTargetWord.topic)}`}
               </span>
               <button
                 type="button"

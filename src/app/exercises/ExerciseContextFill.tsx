@@ -2,7 +2,7 @@ import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { articleFor } from "./exerciseContent";
+import { identifyParts, identifySentence } from "../content/wordGrammar";
 import { WordImage } from "../shared/WordImage";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";
@@ -44,6 +44,14 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
     return shuffleArray([currentTargetWord, ...shuffled]);
   }, [currentTargetWord, words]);
 
+  // Split so the word itself can carry the accent colour while the frame
+  // around it stays plain — and so the frame is the grammatical one for this
+  // word, not an unconditional "This is a ".
+  const answerParts = useMemo(
+    () => identifyParts(currentTargetWord.label, currentTargetWord.topic),
+    [currentTargetWord]
+  );
+
   const advanceNext = useCallback(() => {
     if (feedback !== null) queue.submit(feedback === "correct");
     setSelectedId(null);
@@ -73,7 +81,9 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       spoken.speakFeedback({
         correct,
         targetLabel: currentTargetWord.label,
+        targetTopic: currentTargetWord.topic,
         chosenLabel: options.find((o) => o.id === id)?.label,
+        chosenTopic: currentTargetWord.topic,
       });
 
       dispatch({ type: "LESSON_ATTEMPT", wordId: currentTargetWord.id, correct });
@@ -200,10 +210,9 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
                   transition={{ delay: 0.18 }}
                   className="font-sans font-black text-white text-lg sm:text-xl drop-shadow-lg text-center px-6"
                 >
-                  This is {articleFor(currentTargetWord.label)}{" "}
-                  <span className="text-wp-amber capitalize">
-                    {currentTargetWord.label.toLowerCase()}
-                  </span>
+                  {answerParts.before}
+                  <span className="text-wp-amber">{answerParts.word}</span>
+                  {answerParts.after}
                 </motion.p>
 
                 {!accessibility.autoAdvance && (
@@ -225,14 +234,14 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
 
           <span aria-live="polite" aria-atomic="true" className="sr-only">
             {feedback === "correct"
-              ? `Correct. This is a ${currentTargetWord.label}.`
+              ? `Correct. ${identifySentence(currentTargetWord.label, currentTargetWord.topic)}`
               : feedback === "incorrect"
-                ? `Incorrect. The answer is ${currentTargetWord.label}.`
+                ? `Incorrect. ${identifySentence(currentTargetWord.label, currentTargetWord.topic)}`
                 : ""}
           </span>
         </div>
 
-        {/* Word choice buttons � always neutral styling, no feedback colours */}
+        {/* Word choice buttons — always neutral styling, no feedback colours */}
         <div
           role="group"
           aria-label="Word choices"

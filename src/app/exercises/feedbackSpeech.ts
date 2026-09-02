@@ -1,4 +1,4 @@
-import { articleFor } from "./exerciseContent";
+import { contrastSentence, identifySentence } from "../content/wordGrammar";
 
 /**
  * The sentence spoken back after an answer.
@@ -21,6 +21,13 @@ import { articleFor } from "./exerciseContent";
  * And the opener rotates. This plays after every single question — the same
  * five words several hundred times a session stops being encouragement and
  * starts being noise, so praise varies while the informative half does not.
+ *
+ * The naming half is built by `wordGrammar`, not here. It used to be a
+ * lowercase label with `a` or `an` glued on, which is right for `Lamp` and
+ * wrong for most of the corpus: "Correct! This is a pliers." was read aloud to
+ * learners, as were "a water", "a run" and "a Monday". Pass `targetTopic` and
+ * `chosenTopic` wherever the caller has them — the topic is what tells the
+ * classifier that `Slides` are sandals in one unit and glass plates in another.
  */
 
 /** Openers for a correct answer, rotated so repetition does not grate. */
@@ -33,8 +40,13 @@ export interface FeedbackSpeechInput {
   correct: boolean;
   /** The word the picture actually shows. */
   targetLabel: string;
+  /** The target's unit id, which sharpens the grammar classification. */
+  targetTopic?: string;
   /** What the learner picked. Omitted when they ran out of time. */
   chosenLabel?: string | null;
+  /** The chosen word's unit id. Defaults to the target's, since distractors
+   *  are drawn from the same lesson. */
+  chosenTopic?: string;
   /**
    * Which opener to use. Callers pass a counter that advances per question;
    * taking it as an argument keeps this function pure and testable rather than
@@ -43,30 +55,27 @@ export interface FeedbackSpeechInput {
   variant?: number;
 }
 
-/** `"Bath Towel"` → `"a bath towel"`. */
-function withArticle(label: string): string {
-  const spoken = label.toLowerCase();
-  return `${articleFor(spoken)} ${spoken}`;
-}
-
 export function buildFeedbackSpeech({
   correct,
   targetLabel,
+  targetTopic,
   chosenLabel,
+  chosenTopic,
   variant = 0,
 }: FeedbackSpeechInput): string {
-  const target = withArticle(targetLabel);
+  const target = identifySentence(targetLabel, targetTopic);
   // A negative or fractional counter would index out of the array; floor and
   // take the absolute value so any caller's counter is safe.
   const pick = <T>(list: readonly T[]): T => list[Math.abs(Math.floor(variant)) % list.length] as T;
 
-  if (correct) return `${pick(PRAISE)} This is ${target}.`;
+  if (correct) return `${pick(PRAISE)} ${target}`;
 
   // The learner picked the right word but the drill scored it wrong, or the
   // chosen label is simply unknown — either way there is no contrast to draw.
   const sameWord =
     chosenLabel != null && chosenLabel.toLowerCase().trim() === targetLabel.toLowerCase().trim();
-  if (!chosenLabel || sameWord) return `${pick(CORRECTION)} This is ${target}.`;
+  if (!chosenLabel || sameWord) return `${pick(CORRECTION)} ${target}`;
 
-  return `${pick(CORRECTION)} That's ${withArticle(chosenLabel)}. This is ${target}.`;
+  const chosen = contrastSentence(chosenLabel, chosenTopic ?? targetTopic);
+  return `${pick(CORRECTION)} ${chosen} ${target}`;
 }

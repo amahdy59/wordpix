@@ -26,6 +26,47 @@ describe("buildFeedbackSpeech", () => {
     expect(buildFeedbackSpeech({ correct: true, targetLabel: "Towel", variant: 0 })).toBe(
       "Correct! This is a towel."
     );
+    // Sound, not spelling: the old rule read these off the first letter and
+    // said "a hourglass" and "an uniform" to learners.
+    expect(buildFeedbackSpeech({ correct: true, targetLabel: "Hourglass", variant: 0 })).toBe(
+      "Correct! This is an hourglass."
+    );
+    expect(buildFeedbackSpeech({ correct: true, targetLabel: "Uniform", variant: 0 })).toBe(
+      "Correct! This is a uniform."
+    );
+  });
+
+  it("agrees with the number and countability of the word", () => {
+    // The bug this suite was extended for. Every one of these used to come
+    // back as "This is a <label>."
+    expect(buildFeedbackSpeech({ correct: true, targetLabel: "Pliers", variant: 0 })).toBe(
+      "Correct! This is a pair of pliers."
+    );
+    expect(buildFeedbackSpeech({ correct: true, targetLabel: "Eggs", variant: 0 })).toBe(
+      "Correct! These are eggs."
+    );
+    expect(buildFeedbackSpeech({ correct: true, targetLabel: "Water", variant: 0 })).toBe(
+      "Correct! This is water."
+    );
+    expect(
+      buildFeedbackSpeech({
+        correct: true,
+        targetLabel: "Run",
+        targetTopic: "movement-verbs",
+        variant: 0,
+      })
+    ).toBe("Correct! The word is “run”.");
+  });
+
+  it("keeps both halves of a contrast in agreement", () => {
+    expect(
+      buildFeedbackSpeech({
+        correct: false,
+        targetLabel: "Pliers",
+        chosenLabel: "Eggs",
+        variant: 0,
+      })
+    ).toBe("Not quite. Those are eggs. This is a pair of pliers.");
   });
 
   it("lowercases multi-word labels", () => {

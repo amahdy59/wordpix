@@ -45,7 +45,12 @@ export const SPOKEN_ADVANCE_DELAY_MS = {
 interface SpeakInput {
   correct: boolean;
   targetLabel: string;
+  /** The target word's unit id. Passed straight to the grammar classifier,
+   *  which needs it to tell `Slides` the sandals from `Slides` the glass
+   *  plates. */
+  targetTopic?: string;
   chosenLabel?: string | null;
+  chosenTopic?: string;
 }
 
 export interface SpokenFeedback {
@@ -106,7 +111,7 @@ export function useSpokenFeedback(): SpokenFeedback {
   }, []);
 
   const speakFeedback = useCallback(
-    ({ correct, targetLabel, chosenLabel }: SpeakInput) => {
+    ({ correct, targetLabel, targetTopic, chosenLabel, chosenTopic }: SpeakInput) => {
       if (!enabled) return;
       const synth = getSynth();
       if (!synth) return;
@@ -119,7 +124,9 @@ export function useSpokenFeedback(): SpokenFeedback {
       const phrase = buildFeedbackSpeech({
         correct,
         targetLabel,
+        targetTopic,
         chosenLabel,
+        chosenTopic,
         variant: variantRef.current++,
       });
 
