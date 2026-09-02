@@ -49,6 +49,8 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
   }, [progress.wordMemory]);
 
   const memoryItems = useMemo(() => {
+    // Recompute whenever vocabulary chunks finish async preloading
+    if (loadedCount < 0) return [];
     const memory = progress.wordMemory;
     const items: Array<{
       word: VocabularyItem;
