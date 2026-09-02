@@ -129,6 +129,17 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
     else setIndex((i) => i + 1);
   }, [index, definition.tasks.length, finish, resetAnswer]);
 
+  // Auto-advance on correct answer
+  useEffect(() => {
+    if (verdict === "correct") {
+      const timer = setTimeout(() => {
+        next();
+      }, 750);
+      return () => clearTimeout(timer);
+    }
+    return undefined;
+  }, [verdict, next]);
+
   // Number keys select options, matching the core lesson exercises.
   useEffect(() => {
     if (!task || task.kind !== "choice" || verdict) return undefined;

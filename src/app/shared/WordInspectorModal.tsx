@@ -1,5 +1,5 @@
 import { memo, useRef } from "react";
-import { X, Volume2, Sparkles, BookOpen, Layers, Zap } from "lucide-react";
+import { X, Volume2, BookOpen, Layers, Zap } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { VocabularyItem } from "../data/lessons";
 import { getLexiconEntry } from "../data/lexiconDictionary";
@@ -41,7 +41,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
           role="dialog"
           aria-modal="true"
           aria-labelledby="word-inspector-title"
-          className="relative w-full max-w-xl bg-wp-card border-t sm:border border-border rounded-t-[28px] sm:rounded-3xl shadow-wp-lg overflow-hidden flex flex-col max-h-[92dvh] z-10 pb-[env(safe-area-inset-bottom)] sm:pb-0"
+          className="relative w-full max-w-xl bg-wp-card border-t sm:border border-border rounded-t-[28px] sm:rounded-3xl shadow-wp-lg overflow-hidden flex flex-col max-h-[90dvh] z-10 pb-[env(safe-area-inset-bottom)] sm:pb-0 pointer-events-auto"
         >
           {/* Top Header with Image & Close Button */}
           <div className="relative h-44 sm:h-52 w-full bg-muted overflow-hidden shrink-0">
@@ -54,7 +54,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
               type="button"
               onClick={onClose}
               aria-label="Close word details"
-              className="absolute top-3 end-3 size-11 min-h-[44px] min-w-[44px] rounded-full bg-black/60 hover:bg-black/90 text-white flex items-center justify-center backdrop-blur-md transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white"
+              className="absolute top-3 end-3 size-11 min-h-[44px] min-w-[44px] rounded-full bg-black/60 hover:bg-black/90 text-white flex items-center justify-center backdrop-blur-md transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white cursor-pointer"
             >
               <X className="size-5" />
             </button>
@@ -62,17 +62,13 @@ export const WordInspectorModal = memo(function WordInspectorModal({
             {/* Word Header on bottom of image */}
             <div className="absolute bottom-3 start-3 end-3 sm:bottom-3.5 sm:start-4 sm:end-4 flex flex-wrap sm:flex-nowrap items-end justify-between gap-2 sm:gap-3">
               <div className="min-w-0 flex-1">
-                <span className="text-[10px] sm:text-xs font-sans font-bold uppercase tracking-wider text-wp-amber flex items-center gap-1.5 drop-shadow">
-                  <Sparkles className="size-3 sm:size-3.5 shrink-0" />
-                  <span>Oxford / Cambridge Lexicon</span>
-                </span>
                 <h2
                   id="word-inspector-title"
-                  className="font-sans font-black text-white text-xl sm:text-2xl lg:text-3xl leading-tight capitalize drop-shadow break-words"
+                  className="font-sans font-black text-white text-2xl sm:text-3xl leading-tight capitalize drop-shadow break-words"
                 >
                   {word.label.toLowerCase()}
                 </h2>
-                <p className="font-sans text-white/90 text-xs sm:text-sm drop-shadow font-mono break-words">
+                <p className="font-sans text-white/90 text-xs sm:text-sm drop-shadow font-mono break-words mt-0.5">
                   {entry.phonetic || word.phonetic}
                 </p>
               </div>
@@ -82,45 +78,29 @@ export const WordInspectorModal = memo(function WordInspectorModal({
                 type="button"
                 onClick={() => speak(word.label)}
                 aria-label={`Pronounce ${word.label}`}
-                className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 min-h-[44px] rounded-full bg-primary text-primary-foreground font-sans font-bold text-xs sm:text-sm shadow-md hover:opacity-90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-white shrink-0"
+                className="flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-4 py-2 min-h-[44px] rounded-full bg-primary text-primary-foreground font-sans font-bold text-xs sm:text-sm shadow-md hover:opacity-90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-white shrink-0 cursor-pointer"
               >
-                <Volume2 className="size-3.5 sm:size-4" />
+                <Volume2 className="size-4" />
                 <span>Listen</span>
               </button>
             </div>
           </div>
 
           {/* Scrollable Content Body */}
-          <div className="flex-1 min-h-0 p-4 sm:p-6 overflow-y-auto flex flex-col gap-4">
+          <div className="flex-1 min-h-0 p-4 sm:p-6 overflow-y-auto overscroll-contain touch-pan-y flex flex-col gap-4">
             {/* Arabic Translation Card */}
             <div className="bg-primary/5 border border-primary/20 rounded-2xl p-4 flex items-center justify-between gap-3">
-              <div>
-                <span className="font-sans text-xs font-bold text-muted-foreground uppercase tracking-wider">
-                  Verified Arabic Meaning
-                </span>
-                <p
-                  className="font-arabic font-black text-foreground text-xl sm:text-2xl mt-0.5"
-                  dir="rtl"
-                  lang="ar"
-                >
-                  {entry.arabic}
-                </p>
-              </div>
-              <span className="text-xs font-sans font-bold px-3 py-1 bg-primary/10 text-primary rounded-full uppercase tracking-wider border border-primary/20">
+              <p
+                className="font-arabic font-black text-foreground text-xl sm:text-2xl"
+                dir="rtl"
+                lang="ar"
+              >
+                {entry.arabic}
+              </p>
+              <span className="text-xs font-sans font-bold px-3 py-1 bg-primary/10 text-primary rounded-full uppercase tracking-wider border border-primary/20 shrink-0">
                 {entry.partOfSpeech}
               </span>
             </div>
-
-            {/* Pronunciation Tip */}
-            {entry.pronunciationTip && (
-              <div className="bg-wp-amber/10 border border-wp-amber/25 rounded-2xl p-3.5 flex items-start gap-2.5">
-                <Sparkles className="size-4 text-wp-amber shrink-0 mt-0.5" />
-                <p className="font-sans text-xs text-foreground leading-relaxed">
-                  <strong className="font-bold">Pronunciation Guide: </strong>
-                  {entry.pronunciationTip}
-                </p>
-              </div>
-            )}
 
             {/* Authentic Collocations (Up to 6) */}
             {entry.collocations && entry.collocations.length > 0 && (

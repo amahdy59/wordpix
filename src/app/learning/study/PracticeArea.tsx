@@ -148,6 +148,17 @@ export function PracticeArea({
     dispatch({ type: "NEXT", totalItems: items.length, roundSize: ROUND_SIZE });
   }, [progress, onProgressUpdate, nodeId, currentIndex, items.length]);
 
+  // Auto-advance to next question upon correct answer
+  useEffect(() => {
+    if (phase === "answered_correct") {
+      const timer = setTimeout(() => {
+        handleNext();
+      }, 700);
+      return () => clearTimeout(timer);
+    }
+    return undefined;
+  }, [phase, handleNext]);
+
   const handleContinueNextRound = useCallback(() => {
     const isLast = currentIndex + 1 >= items.length;
     if (isLast) {

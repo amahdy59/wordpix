@@ -656,6 +656,46 @@ export function StudyShell({
         </main>
       </div>
 
+      {/* 3. Mobile Bottom Horizontal Navigation Bar */}
+      <nav
+        aria-label="Study Areas Mobile Navigation"
+        className="lg:hidden shrink-0 border-t border-border bg-card/95 backdrop-blur px-2 py-1 flex items-center justify-around z-20 pb-[max(env(safe-area-inset-bottom),6px)]"
+      >
+        <button
+          type="button"
+          onClick={handleBackToHome}
+          className={`flex flex-col items-center justify-center py-1 px-2 rounded-xl text-[11px] font-bold transition-all min-h-[44px] min-w-[44px] ${
+            currentArea === "home"
+              ? "text-primary bg-primary/10 shadow-2xs font-extrabold"
+              : "text-muted-foreground hover:text-foreground"
+          }`}
+          aria-current={currentArea === "home" ? "page" : undefined}
+        >
+          <BookOpen className="size-4 mb-0.5" aria-hidden />
+          <span>Home</span>
+        </button>
+        {STUDY_AREAS.map((area) => {
+          const isActive = currentArea === area;
+          const Icon = areaMeta[area].icon;
+          return (
+            <button
+              key={area}
+              type="button"
+              onClick={() => handleAreaSelect(area)}
+              className={`flex flex-col items-center justify-center py-1 px-2 rounded-xl text-[11px] font-bold transition-all min-h-[44px] min-w-[44px] ${
+                isActive
+                  ? "text-primary bg-primary/10 shadow-2xs font-extrabold"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+              aria-current={isActive ? "page" : undefined}
+            >
+              <Icon className="size-4 mb-0.5" aria-hidden />
+              <span>{areaMeta[area].label.split(" ")[0]}</span>
+            </button>
+          );
+        })}
+      </nav>
+
       {/* Vocabulary Inspector Modal */}
       <WordInspectorModal
         word={inspectedWord}

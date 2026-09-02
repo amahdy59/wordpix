@@ -111,23 +111,23 @@ export function UseItArea({
   const Icon = meta.icon;
 
   return (
-    <div className="max-w-4xl mx-auto w-full p-4 sm:p-6 md:p-8 space-y-8">
+    <div className="max-w-4xl mx-auto w-full p-3.5 sm:p-6 md:p-8 space-y-4 sm:space-y-6">
       {/* Activity Header with Learning Goal */}
-      <div className="border-b border-border/70 pb-5">
-        <div className="flex items-center gap-3.5 mb-2">
-          <span className="p-3 rounded-2xl bg-primary/10 text-primary shrink-0 shadow-2xs">
-            <Icon className="size-6" aria-hidden />
+      <div className="border-b border-border/70 pb-3.5 sm:pb-5">
+        <div className="flex items-center gap-2.5 sm:gap-3.5 mb-1.5 sm:mb-2">
+          <span className="p-2 sm:p-3 rounded-xl sm:rounded-2xl bg-primary/10 text-primary shrink-0 shadow-2xs">
+            <Icon className="size-5 sm:size-6" aria-hidden />
           </span>
           <div className="min-w-0">
-            <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-muted-foreground">
               Use in Context · {currentIndex + 1} of {allNodes.length}
             </span>
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-foreground truncate">
+            <h1 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-foreground truncate">
               {node.title}
             </h1>
           </div>
         </div>
-        <p className="text-xs sm:text-sm text-muted-foreground mt-2 max-w-2xl leading-relaxed">
+        <p className="text-xs sm:text-sm text-muted-foreground mt-1 max-w-2xl leading-relaxed">
           {meta.goal}
         </p>
       </div>
@@ -138,7 +138,7 @@ export function UseItArea({
           <PassageSection materials={materials} unitId={unitId} onInspectWord={onInspectWord} />
         )}
         {node.type === "phrases" && (
-          <div className="space-y-8">
+          <div className="space-y-4 sm:space-y-6">
             <PhrasesSection materials={materials} />
           </div>
         )}

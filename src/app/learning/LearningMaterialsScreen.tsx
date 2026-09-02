@@ -24,7 +24,7 @@ const PHRASE_KIND_LABEL: Record<PhraseKind, string> = {
   collocation: "collocation",
 };
 
-const CARD = "bg-wp-card rounded-2xl border border-border p-5 shadow-sm";
+const CARD = "bg-wp-card rounded-2xl sm:rounded-3xl border border-border p-3.5 sm:p-5 shadow-xs";
 
 /**
  * Study materials for one unit: the eight content blocks Figma carries beside
