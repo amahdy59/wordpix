@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { closeSync, openSync, readSync, statSync } from "node:fs";
+import { closeSync, openSync, readSync, readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { COURSE_UNITS } from "../data/lessons";
 import { loadAllUnitVocabulary } from "../data/vocabulary";
@@ -36,15 +36,36 @@ type AssetState = "missing" | "real" | "placeholder";
 
 const stateCache = new Map<string, AssetState>();
 
+// Pre-index public files once to avoid repeated slow disk lookups on Windows
+const existingPublicFiles = new Set<string>();
+try {
+  const entries = readdirSync(PUBLIC_DIR, { recursive: true, withFileTypes: true });
+  for (const entry of entries) {
+    if (entry.isFile()) {
+      const parent = entry.parentPath || (entry as unknown as { path?: string }).path || PUBLIC_DIR;
+      const full = join(parent, entry.name);
+      existingPublicFiles.add(full.toLowerCase());
+    }
+  }
+} catch {
+  // Fallback if readdir fails
+}
+
 function assetState(imgPath: string): AssetState {
   if (stateCache.has(imgPath)) return stateCache.get(imgPath)!;
   const relative = imgPath.replace(/^\.?\//, "");
   const absolute = join(PUBLIC_DIR, relative);
 
+  if (existingPublicFiles.size > 0 && !existingPublicFiles.has(absolute.toLowerCase())) {
+    stateCache.set(imgPath, "missing");
+    return "missing";
+  }
+
   let state: AssetState;
   let fd: number | undefined;
   try {
-    if (statSync(absolute).size < 12) {
+    const stat = statSync(absolute);
+    if (stat.size < 12) {
       state = "placeholder";
     } else {
       fd = openSync(absolute, "r");

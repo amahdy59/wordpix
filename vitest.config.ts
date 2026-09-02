@@ -12,6 +12,12 @@ export default defineConfig({
     hookTimeout: 180000,
     teardownTimeout: 180000,
     pool: "forks",
+    poolOptions: {
+      forks: {
+        maxForks: 4,
+        minForks: 1,
+      },
+    },
     exclude: [...configDefaults.exclude, "tests/**", "e2e/**", "scratch/**"],
   },
   resolve: {
