@@ -34,22 +34,31 @@ const PUBLIC_DIR = join(process.cwd(), "public");
 
 type AssetState = "missing" | "real" | "placeholder";
 
+const stateCache = new Map<string, AssetState>();
+
 function assetState(imgPath: string): AssetState {
+  if (stateCache.has(imgPath)) return stateCache.get(imgPath)!;
   const relative = imgPath.replace(/^\.?\//, "");
   const absolute = join(PUBLIC_DIR, relative);
 
+  let state: AssetState;
   let fd: number | undefined;
   try {
-    if (statSync(absolute).size < 12) return "placeholder";
-    fd = openSync(absolute, "r");
-    const header = Buffer.alloc(HEADER_BYTES);
-    const bytesRead = readSync(fd, header, 0, HEADER_BYTES, 0);
-    return isRealArtwork(header.subarray(0, bytesRead)) ? "real" : "placeholder";
+    if (statSync(absolute).size < 12) {
+      state = "placeholder";
+    } else {
+      fd = openSync(absolute, "r");
+      const header = Buffer.alloc(HEADER_BYTES);
+      const bytesRead = readSync(fd, header, 0, HEADER_BYTES, 0);
+      state = isRealArtwork(header.subarray(0, bytesRead)) ? "real" : "placeholder";
+    }
   } catch {
-    return "missing";
+    state = "missing";
   } finally {
     if (fd !== undefined) closeSync(fd);
   }
+  stateCache.set(imgPath, state);
+  return state;
 }
 
 // Loaded once for the whole file: vocabulary is per-unit chunks now, and
