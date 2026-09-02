@@ -18,6 +18,8 @@
     "check:doctor": "node scripts/deployment-doctor.mjs",
     "doctor": "node scripts/deployment-doctor.mjs",
     "doctor:fix": "node scripts/deployment-doctor.mjs --auto-fix",
+    "deploy:watch": "node scripts/watch_deployment.mjs",
+    "ship": "git push origin main; node scripts/watch_deployment.mjs",
     "test:e2e": "playwright test",
     "assets:verify": "node scripts/verify_r2.cjs",
     "assets:upload": "node scripts/upload_assets.cjs",

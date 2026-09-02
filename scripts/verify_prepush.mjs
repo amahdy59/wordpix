@@ -36,6 +36,11 @@ const steps = [
     command: "pnpm run build",
     description: "Ensuring zero-error production build output",
   },
+  {
+    name: "E2E Accessibility & Responsive Matrix",
+    command: "pnpm run test:e2e",
+    description: "Running cross-viewport Playwright axe accessibility and navigation suite",
+  },
 ];
 
 async function runPrepushVerification() {

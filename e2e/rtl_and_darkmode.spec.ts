@@ -14,14 +14,13 @@ test.describe("Multi-Viewport RTL & Dark Mode Matrix", () => {
     });
     expect(isOverflowing).toBe(false);
 
-    // Switch to Arabic / RTL if language switch button exists or set via context/state
+    // Switch to Arabic / RTL
     await page.evaluate(() => {
       document.documentElement.setAttribute("dir", "rtl");
       document.documentElement.setAttribute("lang", "ar");
     });
 
-    const dir = await page.evaluate(() => document.documentElement.getAttribute("dir"));
-    expect(dir).toBe("rtl");
+    await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
 
     // Re-verify no horizontal overflow under RTL
     const isRtlOverflowing = await page.evaluate(() => {

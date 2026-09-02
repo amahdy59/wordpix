@@ -5,7 +5,8 @@ test("home page should not have any automatically detectable accessibility issue
   page,
 }) => {
   await page.goto("/");
-  await page.waitForSelector("text=Start");
+  await page.waitForLoadState("domcontentloaded");
+  await page.locator("#root").waitFor({ state: "visible", timeout: 15_000 });
 
   const accessibilityScanResults = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
