@@ -30,7 +30,7 @@ const mockNode: StudyNode = {
   title: "Essential Bedroom Words",
   area: "learn",
   type: "vocabulary",
-  wordIds: ["bedroom-bed", "bedroom-pillow"],
+  wordIds: ["bed", "pillow"],
 };
 
 const mockProgress: UnitStudyProgress = {
@@ -43,13 +43,14 @@ const mockProgress: UnitStudyProgress = {
   updatedAt: new Date().toISOString(),
 };
 
-const mockWord: VocabularyItem = {
-  id: "bedroom-bed",
+const mockWord: VocabularyItem & { arabic: string } = {
+  id: "bed",
   label: "bed",
   phonetic: "/bɛd/",
   img: "artwork/bedroom/bed.webp",
   topic: "bedroom",
   description: "A comfortable piece of furniture for sleeping.",
+  arabic: "سرير",
 };
 
 describe("Study Flow & Keyboard Navigation", () => {
@@ -69,7 +70,7 @@ describe("Study Flow & Keyboard Navigation", () => {
     );
 
     // Initial state: hidden
-    expect(screen.getByRole("button", { name: /Reveal/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Reveal Word/i })).toBeInTheDocument();
 
     // Trigger Space hotkey to reveal
     fireEvent.keyDown(window, { key: " " });
@@ -99,7 +100,7 @@ describe("Study Flow & Keyboard Navigation", () => {
     );
 
     // Click reveal button directly
-    fireEvent.click(screen.getByRole("button", { name: /Reveal/i }));
+    fireEvent.click(screen.getByRole("button", { name: /Reveal Word/i }));
 
     // Press '1' for Needs Practice
     fireEvent.keyDown(window, { key: "1" });
@@ -150,7 +151,7 @@ describe("Immersion Mode & Multisensory Audio", () => {
     expect(revealArabicBtn).toBeInTheDocument();
 
     await user.click(revealArabicBtn);
-    expect(screen.getByText("A comfortable piece of furniture for sleeping.")).toBeInTheDocument();
+    expect(screen.getByText("سرير")).toBeInTheDocument();
   });
 
   it("cycles speech playback speed when clicked", async () => {
@@ -168,7 +169,7 @@ describe("Immersion Mode & Multisensory Audio", () => {
     );
 
     const speedBtn = screen.getByRole("button", { name: /Speech playback speed:/i });
-    expect(speedBtn).toHaveTextContent("1x");
+    expect(speedBtn).toHaveTextContent("1.0x");
 
     await user.click(speedBtn);
     expect(speedBtn).toHaveTextContent("1.2x");
@@ -177,6 +178,6 @@ describe("Immersion Mode & Multisensory Audio", () => {
     expect(speedBtn).toHaveTextContent("0.8x");
 
     await user.click(speedBtn);
-    expect(speedBtn).toHaveTextContent("1x");
+    expect(speedBtn).toHaveTextContent("1.0x");
   });
 });

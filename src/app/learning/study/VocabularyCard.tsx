@@ -22,7 +22,7 @@ export function VocabularyCard({
   onReveal,
   immersionMode = false,
 }: Props) {
-  const [speechRate, setSpeechRate] = useState<0.8 | 1.0 | 1.2>(0.9 as 1.0);
+  const [speechRate, setSpeechRate] = useState<0.8 | 1.0 | 1.2>(1.0);
   const { speak, stop } = useAudio({ lang: "en-US", rate: speechRate });
   const [showDetails, setShowDetails] = useState(false);
   const [showImmersionArabic, setShowImmersionArabic] = useState(false);
@@ -38,7 +38,7 @@ export function VocabularyCard({
   };
 
   const cycleSpeed = () => {
-    setSpeechRate((prev) => (prev === 0.8 ? 1.0 : prev === 1.0 ? 1.2 : 0.8));
+    setSpeechRate((prev) => (prev === 1.0 ? 1.2 : prev === 1.2 ? 0.8 : 1.0));
   };
 
   return (
@@ -77,6 +77,18 @@ export function VocabularyCard({
               <span className="text-sm sm:text-base text-muted-foreground font-mono bg-secondary/60 px-3 py-0.5 rounded-xl">
                 {pronunciation?.ipa || word.phonetic}
               </span>
+              {!immersionMode &&
+                ((word as { arabic?: string; ar?: string }).arabic ||
+                  (word as { arabic?: string; ar?: string }).ar) && (
+                  <span
+                    className="text-sm sm:text-base text-muted-foreground font-bold bg-secondary/40 px-3 py-0.5 rounded-xl"
+                    dir="rtl"
+                    lang="ar"
+                  >
+                    {(word as { arabic?: string; ar?: string }).arabic ||
+                      (word as { arabic?: string; ar?: string }).ar}
+                  </span>
+                )}
               <button
                 type="button"
                 onClick={handleAudio}
@@ -90,10 +102,10 @@ export function VocabularyCard({
                 type="button"
                 onClick={cycleSpeed}
                 className="px-2.5 py-1 text-xs font-mono font-bold rounded-xl bg-secondary text-muted-foreground hover:text-foreground hover:bg-secondary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
-                aria-label={`Speech playback speed: ${speechRate}x. Click to change.`}
+                aria-label={`Speech playback speed: ${speechRate.toFixed(1)}x. Click to change.`}
                 title="Change speech playback speed"
               >
-                {speechRate}x
+                {speechRate.toFixed(1)}x
               </button>
             </div>
 
@@ -129,7 +141,9 @@ export function VocabularyCard({
                     </div>
                   )}
 
-                  {immersionMode ? (
+                  {immersionMode &&
+                  ((word as { arabic?: string; ar?: string }).arabic ||
+                    (word as { arabic?: string; ar?: string }).ar) ? (
                     <div>
                       {!showImmersionArabic ? (
                         <button
@@ -146,7 +160,8 @@ export function VocabularyCard({
                           dir="rtl"
                           lang="ar"
                         >
-                          {word.description}
+                          {(word as { arabic?: string; ar?: string }).arabic ||
+                            (word as { arabic?: string; ar?: string }).ar}
                         </div>
                       )}
                     </div>

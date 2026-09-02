@@ -1,10 +1,15 @@
-import { describe, expect, it, vi } from "vitest";
+import { describe, expect, it, vi, beforeEach } from "vitest";
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { HomeDashboard } from "../core/HomeDashboard";
 import { SettingsModal } from "../core/SettingsModal";
 import { LearnerProvider } from "../context/LearnerContext";
 import { I18nProvider } from "../context/I18nContext";
+
+vi.mock("../data/vocabulary", () => ({
+  loadUnitVocabulary: vi.fn().mockResolvedValue([]),
+  getWords: vi.fn().mockReturnValue([]),
+}));
 
 function renderWithProviders(ui: React.ReactElement) {
   return render(
@@ -15,12 +20,22 @@ function renderWithProviders(ui: React.ReactElement) {
 }
 
 describe("HomeDashboard Gamification & Daily Goals", () => {
+  beforeEach(() => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue({
+        ok: true,
+        json: async () => ({ version: "1.0.0", notes: [] }),
+      })
+    );
+  });
+
   it("renders daily vocabulary target and study guide shortcut", () => {
     const dispatch = vi.fn();
     renderWithProviders(<HomeDashboard dispatch={dispatch} />);
 
     expect(screen.getByText("Daily Vocabulary Target")).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /Study Guide/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Study materials for/i })).toBeInTheDocument();
   });
 });
 
@@ -45,7 +60,7 @@ describe("SettingsModal Offline Preloader", () => {
       () => {
         expect(screen.getByText(/Ready Offline!/i)).toBeInTheDocument();
       },
-      { timeout: 10000 }
+      { timeout: 5000 }
     );
   });
 });
