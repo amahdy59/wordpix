@@ -8,13 +8,12 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import {
   Keyboard,
   Volume2,
-  Sparkles,
   ChevronRight,
   ChevronLeft,
   Mic,
   MicOff,
   CheckCircle2,
-  Info,
+  BookOpen,
 } from "lucide-react";
 import { WordImage } from "../shared/WordImage";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
@@ -134,10 +133,30 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [words.length, inspectedWord, handleToggle]);
 
+  // Touch swipe gesture support for mobile
+  const touchStartX = useRef<number | null>(null);
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const diff = e.changedTouches[0].clientX - touchStartX.current;
+    if (Math.abs(diff) > 40) {
+      if (diff < 0 && activeWordIndex < words.length - 1) {
+        handleSelectWordIndex(activeWordIndex + 1);
+      } else if (diff > 0 && activeWordIndex > 0) {
+        handleSelectWordIndex(activeWordIndex - 1);
+      }
+    }
+    touchStartX.current = null;
+  };
+
+  const lexiconEntry = getLexiconEntry(currentWord.id, currentWord.label);
+
   return (
     <ExerciseShell
       step={step}
-      title="Pronunciation & Audio Drill"
+      title="Vocabulary Flashcards"
       words={words}
       lessonId={lessonId}
       dispatch={dispatch}
@@ -162,7 +181,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               dispatch({ type: "LESSON_NEXT" });
             }}
           />
-          <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1 mt-1">
+          <div className="hidden sm:flex w-full items-center text-xs font-sans font-semibold text-muted-foreground px-1 mt-1">
             <div className="flex items-center gap-1.5 text-wp-amber font-bold">
               <Keyboard className="size-4" aria-hidden />
               <span>Use Left/Right arrows to navigate · Space to play audio</span>
@@ -207,133 +226,128 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           })}
         </div>
 
-        {/* Fluid Target Image Banner with integrated bottom overlay */}
-        <div className="w-full relative rounded-2xl sm:rounded-3xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 aspect-[4/3] sm:aspect-[16/10] max-h-[46dvh] sm:max-h-[52dvh]">
-          <WordImage
-            word={currentWord}
-            className="w-full h-full absolute inset-0 object-cover"
-            // The question's own picture is the largest thing on screen and
-            // the one the answer depends on, so it is the LCP element. It
-            // inherited WordImage's lazy default, which defers discovery of
-            // exactly the image the learner is waiting for.
-            loading="eager"
-            fetchPriority="high"
-          />
+        {/* Main Flashcard Container with Swipe Support */}
+        <div
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+          className="w-full flex flex-col gap-3.5 bg-wp-card border border-border rounded-2xl sm:rounded-3xl p-3 sm:p-5 shadow-wp-md"
+        >
+          {/* Image Container with Floating Chevron Navigation Arrows */}
+          <div className="w-full relative rounded-xl sm:rounded-2xl overflow-hidden border border-border/70 bg-muted shrink-0 aspect-[4/3] sm:aspect-[16/10] max-h-[36dvh] sm:max-h-[42dvh]">
+            <WordImage
+              word={currentWord}
+              className="w-full h-full absolute inset-0 object-cover"
+              loading="eager"
+              fetchPriority="high"
+            />
 
-          {/* Top Badges */}
-          <div className="absolute top-2.5 start-2.5 sm:top-3.5 sm:start-3.5 bg-black/60 backdrop-blur-md text-white font-sans font-bold text-[10px] sm:text-xs px-2.5 py-1 rounded-xl border border-white/20 shadow-md flex items-center gap-1.5 z-10 pointer-events-none">
-            <Sparkles className="size-3 text-wp-amber motion-safe:animate-pulse" />
-            <span>Target Visual</span>
+            {/* Left Floating Chevron Navigation Arrow */}
+            <button
+              type="button"
+              disabled={activeWordIndex === 0}
+              onClick={(e) => {
+                e.stopPropagation();
+                handleSelectWordIndex(activeWordIndex - 1);
+              }}
+              className="absolute start-2 sm:start-3 top-1/2 -translate-y-1/2 size-10 sm:size-12 min-h-[44px] min-w-[44px] rounded-full bg-black/60 hover:bg-black/85 text-white backdrop-blur-md flex items-center justify-center transition-all disabled:opacity-0 disabled:pointer-events-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-white z-20 shadow-md cursor-pointer"
+              aria-label="Previous word"
+            >
+              <ChevronLeft className="size-6" />
+            </button>
+
+            {/* Right Floating Chevron Navigation Arrow */}
+            <button
+              type="button"
+              disabled={activeWordIndex === words.length - 1}
+              onClick={(e) => {
+                e.stopPropagation();
+                handleSelectWordIndex(activeWordIndex + 1);
+              }}
+              className="absolute end-2 sm:end-3 top-1/2 -translate-y-1/2 size-10 sm:size-12 min-h-[44px] min-w-[44px] rounded-full bg-black/60 hover:bg-black/85 text-white backdrop-blur-md flex items-center justify-center transition-all disabled:opacity-0 disabled:pointer-events-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-white z-20 shadow-md cursor-pointer"
+              aria-label="Next word"
+            >
+              <ChevronRight className="size-6" />
+            </button>
           </div>
 
-          {/* Floating Navigation Arrows */}
-          <button
-            type="button"
-            disabled={activeWordIndex === 0}
-            onClick={() => handleSelectWordIndex(activeWordIndex - 1)}
-            className="absolute start-2 sm:start-3 top-1/2 -translate-y-1/2 size-9 sm:size-11 min-h-[44px] min-w-[44px] rounded-full bg-black/45 hover:bg-black/70 text-white backdrop-blur-sm flex items-center justify-center transition-all disabled:opacity-0 disabled:pointer-events-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-white z-10"
-            aria-label="Previous word"
-          >
-            <ChevronLeft className="size-5 sm:size-6" />
-          </button>
-          <button
-            type="button"
-            disabled={activeWordIndex === words.length - 1}
-            onClick={() => handleSelectWordIndex(activeWordIndex + 1)}
-            className="absolute end-2 sm:end-3 top-1/2 -translate-y-1/2 size-9 sm:size-11 min-h-[44px] min-w-[44px] rounded-full bg-black/45 hover:bg-black/70 text-white backdrop-blur-sm flex items-center justify-center transition-all disabled:opacity-0 disabled:pointer-events-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-white z-10"
-            aria-label="Next word"
-          >
-            <ChevronRight className="size-5 sm:size-6" />
-          </button>
-
-          {/* Bottom Integrated Overlay for Word Info & Interactive Controls */}
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/75 to-transparent pt-10 pb-3 px-3 sm:px-5 flex flex-wrap sm:flex-nowrap items-end justify-between gap-2 sm:gap-3 z-10">
-            {/* Left side: Word label, Phonetics, Arabic Translation, Info button */}
-            <div className="flex flex-col min-w-0 flex-1">
-              <div className="flex items-baseline gap-1.5 sm:gap-2 flex-wrap">
-                <span className="font-sans font-black text-white text-lg sm:text-2xl lg:text-3xl leading-tight capitalize drop-shadow">
-                  {currentWord.label}
-                </span>
-                <span className="font-sans font-medium text-white/80 text-xs sm:text-sm drop-shadow font-mono">
-                  /
-                  {getLexiconEntry(currentWord.id, currentWord.label).phonetic
-                    ? getLexiconEntry(currentWord.id, currentWord.label).phonetic!.replace(
-                        /^\/|\/$/g,
-                        ""
-                      )
-                    : currentWord.phonetic.replace(/^\/|\/$/g, "")}
-                  /
-                </span>
-                <button
-                  type="button"
-                  onClick={() => setInspectedWord(currentWord)}
-                  aria-label={`Inspect full dictionary entry for ${currentWord.label}`}
-                  className="size-8 min-h-[44px] min-w-[44px] rounded-lg bg-white/20 hover:bg-white/30 text-white flex items-center justify-center backdrop-blur-sm transition-colors"
-                >
-                  <Info className="size-4" />
-                </button>
-              </div>
-
-              {/* Arabic Translation with diacritics */}
-              <div className="flex items-center gap-1.5 sm:gap-2 mt-0.5 flex-wrap">
-                <span
-                  className="font-arabic font-bold text-wp-amber text-xs sm:text-sm md:text-base drop-shadow"
+          {/* Dedicated Word Info & Actions Section Below Image */}
+          <div className="flex flex-col gap-3">
+            {/* Word Name, Phonetic, and Arabic Meaning */}
+            <div className="flex items-center justify-between gap-3 flex-wrap sm:flex-nowrap border-b border-border/60 pb-3">
+              <div className="flex flex-col min-w-0">
+                <div className="flex items-baseline gap-2 flex-wrap">
+                  <h2 className="font-sans font-black text-foreground text-2xl sm:text-3xl leading-tight capitalize">
+                    {currentWord.label}
+                  </h2>
+                  <span className="font-sans font-medium text-muted-foreground text-xs sm:text-sm font-mono">
+                    /
+                    {lexiconEntry.phonetic
+                      ? lexiconEntry.phonetic.replace(/^\/|\/$/g, "")
+                      : currentWord.phonetic.replace(/^\/|\/$/g, "")}
+                    /
+                  </span>
+                </div>
+                <p
+                  className="font-arabic font-bold text-wp-amber text-base sm:text-lg mt-0.5"
                   dir="rtl"
                   lang="ar"
                 >
-                  {getLexiconEntry(currentWord.id, currentWord.label).arabic}
-                </span>
-                <span className="text-[11px] font-sans text-white/60">·</span>
+                  {lexiconEntry.arabic}
+                </p>
+              </div>
+
+              {/* Action Buttons: Listen & Speak */}
+              <div className="flex items-center gap-2 shrink-0">
+                {/* Listen button */}
                 <button
                   type="button"
-                  onClick={() => setInspectedWord(currentWord)}
-                  className="text-[11px] sm:text-xs font-sans font-semibold text-white/80 hover:text-white underline min-h-[44px] flex items-center"
+                  onClick={handleToggle}
+                  aria-label={`Play audio pronunciation for ${currentWord.label}`}
+                  className="flex items-center gap-2 px-4 py-2.5 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-md hover:bg-primary/90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer group"
                 >
-                  Details &amp; Collocations
+                  <Volume2 className={`size-5 ${isPlaying ? "motion-safe:animate-pulse" : ""}`} />
+                  <span>{isPlaying ? "Playing..." : "Listen"}</span>
                 </button>
+
+                {/* Microphone Practice Button */}
+                {speechStatus !== "unsupported" && (
+                  <button
+                    type="button"
+                    onClick={() => (isListening ? stopListening() : listen(currentWord.label))}
+                    aria-label={
+                      isListening
+                        ? "Stop recording speech"
+                        : `Practice speaking ${currentWord.label}`
+                    }
+                    className={`size-11 min-h-[44px] min-w-[44px] rounded-xl transition-all flex items-center justify-center border shadow-xs focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer group ${
+                      speechSuccess
+                        ? "bg-wp-green text-wp-text-on-green border-wp-green scale-105"
+                        : isListening
+                          ? "bg-wp-rose text-white border-wp-rose motion-safe:animate-pulse"
+                          : "bg-secondary text-foreground hover:bg-secondary/80 border-border"
+                    }`}
+                  >
+                    {speechSuccess ? (
+                      <CheckCircle2 className="size-5" />
+                    ) : isListening ? (
+                      <MicOff className="size-5" />
+                    ) : (
+                      <Mic className="size-5" />
+                    )}
+                  </button>
+                )}
               </div>
             </div>
 
-            {/* Right side: Audio and Mic Action Buttons */}
-            <div className="flex items-center gap-2 shrink-0">
-              {/* Listen button */}
-              <button
-                type="button"
-                onClick={handleToggle}
-                aria-label={`Play audio pronunciation for ${currentWord.label}`}
-                className="size-11 sm:size-12 min-h-[44px] min-w-[44px] rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-lg hover:scale-105 transition-transform focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-white group"
-              >
-                <Volume2
-                  className={`size-5 sm:size-6 ${isPlaying ? "motion-safe:animate-pulse" : ""}`}
-                />
-              </button>
-
-              {/* Microphone Speaking Practice Button */}
-              {speechStatus !== "unsupported" && (
-                <button
-                  type="button"
-                  onClick={() => (isListening ? stopListening() : listen(currentWord.label))}
-                  aria-label={
-                    isListening ? "Stop recording speech" : `Practice speaking ${currentWord.label}`
-                  }
-                  className={`size-11 sm:size-12 min-h-[44px] min-w-[44px] rounded-full transition-all flex items-center justify-center shadow-lg focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-white group ${
-                    speechSuccess
-                      ? "bg-wp-green text-wp-text-on-green scale-105"
-                      : isListening
-                        ? "bg-wp-rose text-white motion-safe:animate-pulse"
-                        : "bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm"
-                  }`}
-                >
-                  {speechSuccess ? (
-                    <CheckCircle2 className="size-5 sm:size-6" />
-                  ) : isListening ? (
-                    <MicOff className="size-5 sm:size-6" />
-                  ) : (
-                    <Mic className="size-5 sm:size-6" />
-                  )}
-                </button>
-              )}
-            </div>
+            {/* View Full Details Button */}
+            <button
+              type="button"
+              onClick={() => setInspectedWord(currentWord)}
+              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 min-h-[44px] rounded-xl bg-secondary/80 hover:bg-secondary text-foreground text-xs sm:text-sm font-sans font-semibold border border-border hover:border-primary/40 active:scale-[0.99] transition-all cursor-pointer"
+            >
+              <BookOpen className="size-4 text-primary" />
+              <span>View Word Details, Collocations & Examples</span>
+            </button>
           </div>
         </div>
 

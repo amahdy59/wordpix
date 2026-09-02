@@ -39244,6 +39244,279 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
   },
 };
 
+// Comprehensive Arabic gloss mapping for vocabulary items across units
+const EXTENDED_VOCABULARY_GLOSSES: Record<
+  string,
+  {
+    ar: string;
+    phonetic?: string;
+    pos?: "noun" | "verb" | "adjective" | "phrase";
+    collocations?: string[];
+    exampleEn?: string;
+    exampleAr?: string;
+  }
+> = {
+  pipe: {
+    ar: "أُنْبُوب / مَاسُورَة",
+    phonetic: "/paɪp/",
+    pos: "noun",
+    collocations: ["water pipe", "metal pipe", "fix the pipe", "install a pipe"],
+    exampleEn: "The plumber fixed the leaking water pipe under the sink.",
+    exampleAr:
+      "أَصْلَحَ السَّبَّاكُ مَاسُورَةَ المِيَاهِ الَّتِي كَانَتْ تُسَرِّبُ تَحْتَ الحَوْضِ.",
+  },
+  crane: {
+    ar: "رَافِعَة / وَنْش",
+    phonetic: "/kreɪn/",
+    pos: "noun",
+    collocations: ["tower crane", "operate a crane", "heavy crane", "construction crane"],
+    exampleEn: "The tall crane lifted the heavy steel beams to the top floor.",
+    exampleAr:
+      "رَفَعَتِ الرَّافِعَةُ الطَّوِيلَةُ العَوَارِضَ الفُولاذِيَّةَ الثَّقِيلَةَ إِلَى الطَّابَقِ العُلْوِيِّ.",
+  },
+  bulldozer: {
+    ar: "جَرَّافَة",
+    phonetic: "/ˈbʊlˌdoʊzər/",
+    pos: "noun",
+    collocations: ["drive a bulldozer", "powerful bulldozer", "clear ground with a bulldozer"],
+    exampleEn: "The bulldozer cleared the rocky ground for the new road.",
+    exampleAr: "قَامَتِ الجَرَّافَةُ بِتَمْهِيدِ الأَرْضِ الصَّخْرِيَّةِ لِلطَّرِيقِ الجَدِيدِ.",
+  },
+  excavator: {
+    ar: "حَفَّارَة",
+    phonetic: "/ˈɛkskəˌveɪtər/",
+    pos: "noun",
+    collocations: ["hydraulic excavator", "operate an excavator", "dig with an excavator"],
+    exampleEn: "The excavator dug a deep foundation trench for the building.",
+    exampleAr: "حَفَرَتِ الحَفَّارَةُ خَنْدَقَ الأَسَاسِ العَمِيقَ لِلْمَبْنَى.",
+  },
+  "dump-truck": {
+    ar: "شَاحِنَةُ تَفْرِيغ (قَلاب)",
+    phonetic: "/dʌmp trʌk/",
+    pos: "noun",
+    collocations: ["drive a dump truck", "load the dump truck", "heavy dump truck"],
+    exampleEn: "The dump truck unloaded gravel onto the construction site.",
+    exampleAr: "فَرَّغَتْ شَاحِنَةُ التَّفْرِيغِ الحَصَى فِي مَوْقِعِ البِنَاءِ.",
+  },
+  "cement-mixer": {
+    ar: "خَلَّاطَةُ أَسْمَنْت",
+    phonetic: "/sɪˈmɛnt ˈmɪksər/",
+    pos: "noun",
+    collocations: ["turn on the cement mixer", "pour concrete from the mixer"],
+    exampleEn: "The cement mixer rotates continuously to keep the concrete fresh.",
+    exampleAr:
+      "تَدُورُ خَلَّاطَةُ الأَسْمَنْتِ بِاسْتِمْرَارٍ لِلْحِفَاظِ عَلَى الخَرَسَانَةِ طَرِيَّةً.",
+  },
+  forklift: {
+    ar: "رَافِعَةٌ شَوْكِيَّة",
+    phonetic: "/ˈfɔːrkˌlɪft/",
+    pos: "noun",
+    collocations: ["drive a forklift", "lift pallets with a forklift"],
+    exampleEn: "The warehouse worker used a forklift to stack the heavy crates.",
+    exampleAr:
+      "اسْتَخْدَمَ عَامِلُ المَسْتَوْدَعِ رَافِعَةً شَوْكِيَّةً لِرَصِّ الصَّنَادِيقِ الثَّقِيلَةِ.",
+  },
+  steamroller: {
+    ar: "مِدْحَلَة / حَادِلَة",
+    phonetic: "/ˈstiːmˌroʊlər/",
+    pos: "noun",
+    collocations: ["heavy steamroller", "flatten asphalt with a steamroller"],
+    exampleEn: "The steamroller flattened the hot asphalt on the highway.",
+    exampleAr:
+      "قَامَتِ المِدْحَلَةُ بِتَسْوِيَةِ الأَسْفَلْتِ السَّاخِنِ عَلَى الطَّرِيقِ السَّرِيعِ.",
+  },
+  backhoe: {
+    ar: "حَفَّارٌ جَرَّاف (بَاكْهُو)",
+    phonetic: "/ˈbækˌhoʊ/",
+    pos: "noun",
+    collocations: ["operate a backhoe", "dig with a backhoe"],
+    exampleEn: "The backhoe is versatile for both digging and loading dirt.",
+    exampleAr:
+      "يُعَدُّ الحَفَّارُ الجَرَّافُ مُتَعَدِّدَ الاسْتِخْدَامَاتِ لِلْحَفْرِ وَتَحْمِيلِ التُّرَابِ.",
+  },
+  "pile-driver": {
+    ar: "دَقَّاقُ الرَّكَائِز",
+    phonetic: "/paɪl ˈdraɪvər/",
+    pos: "noun",
+    collocations: ["drive foundation piles", "heavy pile driver"],
+    exampleEn: "The pile driver pounded steel pillars deep into the earth.",
+    exampleAr: "دَقَّ دَقَّاقُ الرَّكَائِزِ الأَعْمِدَةَ الفُولاذِيَّةَ عَمِيقًا فِي الأَرْضِ.",
+  },
+  scaffolding: {
+    ar: "سَقَّالَاتُ البِنَاء",
+    phonetic: "/ˈskæfəldɪŋ/",
+    pos: "noun",
+    collocations: ["erect scaffolding", "climb the scaffolding", "safe scaffolding"],
+    exampleEn: "Workers set up sturdy scaffolding around the skyscraper exterior.",
+    exampleAr: "نَصَبَ العُمَّالُ سَقَّالَاتٍ مَتِينَةً حَوْلَ وَاجِهَةِ نَاطِحَةِ السَّحَابِ.",
+  },
+  rebar: {
+    ar: "حَدِيدُ التَّسْلِيح",
+    phonetic: "/ˈriːˌbɑːr/",
+    pos: "noun",
+    collocations: ["reinforce with rebar", "tie rebar", "steel rebar"],
+    exampleEn: "Concrete foundations are reinforced with strong steel rebar.",
+    exampleAr: "تُدَعَّمُ الأَسَاسَاتُ الخَرَسَانِيَّةُ بِحَدِيدِ تَسْلِيحٍ قَوِيٍّ.",
+  },
+  drywall: {
+    ar: "أَلْوَاحُ الجِبْس (جِبْسُومْ بُورْد)",
+    phonetic: "/ˈdraɪˌwɔːl/",
+    pos: "noun",
+    collocations: ["install drywall", "tape and mud drywall", "cut drywall"],
+    exampleEn: "The builders hung sheets of drywall to create interior room walls.",
+    exampleAr:
+      "قَامَ البَنَّاؤُونَ بِتَرْكِيبِ أَلْوَاحِ الجِبْسِ لِإِنْشَاءِ الجُدْرَانِ الدَّاخِلِيَّةِ لِلْغُرَفِ.",
+  },
+  cable: {
+    ar: "كَابْل / سِلْكٌ كَهْرَبَائِيّ",
+    phonetic: "/ˈkeɪbəl/",
+    pos: "noun",
+    collocations: ["power cable", "connect a cable", "thick cable"],
+    exampleEn: "Electricians ran high-voltage power cables through the conduit.",
+    exampleAr:
+      "مَدَّ الكَهْرَبَائِيُّونَ كَابْلَاتِ كَهْرَبَاءَ عَالِيَةَ الجُهْدِ عَبْرَ المَمَرَّاتِ.",
+  },
+  bolt: {
+    ar: "مِسْمَارٌ لَوْلَبِيّ (صَامُولَة / بُرْغِي)",
+    phonetic: "/boʊlt/",
+    pos: "noun",
+    collocations: ["tighten a bolt", "loosen a bolt", "steel bolt", "nut and bolt"],
+    exampleEn: "He tightened the steel bolt with an adjustable wrench.",
+    exampleAr:
+      "أَحْكَمَ رَبْطَ المِسْمَارِ اللَّوْلَبِيِّ الفُولاذِيِّ بِمِفْتَاحِ رَبْطٍ قَابِلٍ لِلتَّعْدِيلِ.",
+  },
+  screw: {
+    ar: "بُرْغِي / مِسْمَارُ قَلَاوُوظ",
+    phonetic: "/skruː/",
+    pos: "noun",
+    collocations: ["drive a screw", "tighten a screw", "wood screw"],
+    exampleEn: "Use a screwdriver to fasten the screw securely into the wooden frame.",
+    exampleAr:
+      "اسْتَخْدِمْ مِفَكَّ بَرَاغِي لِتَثْبِيتِ البُرْغِيِّ بِإِحْكَامٍ فِي الإِطَارِ الخَشَبِيِّ.",
+  },
+  wrench: {
+    ar: "مِفْتَاحُ رَبْط (مِفْتَاحُ صَوَامِيل)",
+    phonetic: "/rɛntʃ/",
+    pos: "noun",
+    collocations: ["use a wrench", "adjustable wrench", "socket wrench"],
+    exampleEn: "The mechanic grabbed a wrench to tighten the loose pipe fitting.",
+    exampleAr:
+      "تَنَاوَلَ المِيكَانِيكِيُّ مِفْتَاحَ رَبْطٍ لِشَدِّ وَصْلَةِ المَاسُورَةِ المَرْتَخِيَةِ.",
+  },
+  screwdriver: {
+    ar: "مِفَكُّ بَرَاغِي",
+    phonetic: "/ˈskruːˌdraɪvər/",
+    pos: "noun",
+    collocations: ["Phillips screwdriver", "flathead screwdriver", "turn with a screwdriver"],
+    exampleEn: "A flathead screwdriver is essential for assembling this furniture.",
+    exampleAr: "يُعَدُّ مِفَكُّ البَرَاغِي المُسَطَّحُ ضَرُورِيًّا لِتَجْمِيعِ هَذَا الأَثَاثِ.",
+  },
+  saw: {
+    ar: "مِنْشَار",
+    phonetic: "/sɔː/",
+    pos: "noun",
+    collocations: ["hand saw", "circular saw", "cut with a saw"],
+    exampleEn: "The carpenter used a sharp hand saw to cut the wooden plank.",
+    exampleAr:
+      "اسْتَخْدَمَ النَّجَّارُ مِنْشَارًا يَدَوِيًّا حَادًّا لِقَطْعِ اللَّوْحِ الخَشَبِيِّ.",
+  },
+  "tape-measure": {
+    ar: "شَرِيطُ قِيَاس (مِتْرُ قِيَاس)",
+    phonetic: "/teɪp ˈmɛʒər/",
+    pos: "noun",
+    collocations: ["pull out the tape measure", "accurate tape measure", "measure with a tape"],
+    exampleEn: "Always measure twice with a tape measure before making your cut.",
+    exampleAr: "قِسْ دَائِمًا مَرَّتَيْنِ بِشَرِيطِ القِيَاسِ قَبْلَ إِجْرَاءِ القَطْعِ.",
+  },
+  drill: {
+    ar: "مِثْقَاب (دْرِيل)",
+    phonetic: "/drɪl/",
+    pos: "noun",
+    collocations: ["electric drill", "drill a hole", "cordless drill"],
+    exampleEn: "She used a cordless drill to bore holes in the concrete wall.",
+    exampleAr:
+      "اسْتَخْدَمَتْ مِثْقَابًا لاسِلْكِيًّا لِعَمَلِ ثُقُوبٍ فِي الجِدَارِ الخَرَسَانِيِّ.",
+  },
+  hammer: {
+    ar: "مِطْرَقَة (شَاكُوش)",
+    phonetic: "/ˈhæmər/",
+    pos: "noun",
+    collocations: ["hit with a hammer", "claw hammer", "swing a hammer"],
+    exampleEn: "The builder drove nails into the wood with a heavy hammer.",
+    exampleAr: "دَقَّ البَنَّاءُ المَسَامِيرَ فِي الخَشَبِ بِمِطْرَقَةٍ ثَقِيلَةٍ.",
+  },
+  pliers: {
+    ar: "زَرَدِيَّة / كَمَّاشَة",
+    phonetic: "/ˈplaɪərz/",
+    pos: "noun",
+    collocations: ["grip with pliers", "wire-cutting pliers", "needle-nose pliers"],
+    exampleEn: "Use pliers to bend the metal wire safely into place.",
+    exampleAr:
+      "اسْتَخْدِمِ الزَّرَدِيَّةَ لِثَنْيِ السِّلْكِ المَعْدِنِيِّ بِأَمَانٍ فِي مَكَانِهِ.",
+  },
+  toolbox: {
+    ar: "صُنْدُوقُ العُدَّة (الأَدَوَات)",
+    phonetic: "/ˈtuːlˌbɑːks/",
+    pos: "noun",
+    collocations: ["carry a toolbox", "metal toolbox", "organize the toolbox"],
+    exampleEn: "He keeps all his wrenches, screws, and nails organized in a sturdy toolbox.",
+    exampleAr:
+      "يَحْتَفِظُ بِجَمِيعِ مَفَاتِيحِ الرَّبْطِ وَالبَرَاغِي وَالمَسَامِيرِ مُرَتَّبَةً فِي صُنْدُوقِ عُدَّةٍ مَتِينٍ.",
+  },
+  "hard-hat": {
+    ar: "خُوذَةُ أَمَان (خُوذَةُ حِمَايَة)",
+    phonetic: "/hɑːrd hæt/",
+    pos: "noun",
+    collocations: ["wear a hard hat", "safety hard hat", "mandatory hard hat"],
+    exampleEn: "Every visitor must wear a protective hard hat on the construction site.",
+    exampleAr:
+      "يَجِبُ عَلَى كُلِّ زَائِرٍ ارْتِدَاءُ خُوذَةِ أَمَانٍ وَاقِيَةٍ فِي مَوْقِعِ البِنَاءِ.",
+  },
+  "safety-vest": {
+    ar: "سُتْرَةُ أَمَان (سُتْرَةٌ عَاكِسَة)",
+    phonetic: "/ˈseɪfti vɛst/",
+    pos: "noun",
+    collocations: ["high-visibility safety vest", "wear a safety vest"],
+    exampleEn: "Bright orange safety vests help workers stay visible in low light.",
+    exampleAr:
+      "تُسَاعِدُ سُتَرَاتُ الأَمَانِ البُرْتُقَالِيَّةُ السَّاطِعَةُ العُمَّالَ عَلَى البَقَاءِ مَرْئِيِّينَ فِي الضَّوْءِ الخَافِتِ.",
+  },
+  gloves: {
+    ar: "قُفَّازَاتُ حِمَايَة",
+    phonetic: "/ɡlʌvz/",
+    pos: "noun",
+    collocations: ["wear work gloves", "leather gloves", "protective gloves"],
+    exampleEn: "Tough work gloves protect your hands from sharp metal edges and splinters.",
+    exampleAr:
+      "تَحْمِي قُفَّازَاتُ العَمَلِ المَتِينَةُ يَدَيْكَ مِنَ الحَوَافِّ المَعْدِنِيَّةِ الحَادَّةِ وَالشَّظَايَا.",
+  },
+  "safety-goggles": {
+    ar: "نَظَّارَاتُ وِقَايَة",
+    phonetic: "/ˈseɪfti ˈɡɑːɡəlz/",
+    pos: "noun",
+    collocations: ["wear safety goggles", "protective goggles", "eye protection"],
+    exampleEn: "Safety goggles shield your eyes against flying dust and wood chips.",
+    exampleAr:
+      "تَحْمِي نَظَّارَاتُ الوِقَايَةِ عَيْنَيْكَ مِنَ الغُبَارِ المُتَطَايِرِ وَشَظَايَا الخَشَبِ.",
+  },
+  wheelbarrow: {
+    ar: "عَرَبَةُ يَد (عَرَبَةُ الحَدِيقَة)",
+    phonetic: "/ˈwiːlˌbæroʊ/",
+    pos: "noun",
+    collocations: ["push a wheelbarrow", "load the wheelbarrow", "heavy wheelbarrow"],
+    exampleEn: "He wheeled bricks across the yard in a sturdy steel wheelbarrow.",
+    exampleAr: "نَقَلَ الطُّوبَ عَبْرَ السَّاحَةِ فِي عَرَبَةِ يَدٍ فُولاذِيَّةٍ مَتِينَةٍ.",
+  },
+  ladder: {
+    ar: "سُلَّم",
+    phonetic: "/ˈlædər/",
+    pos: "noun",
+    collocations: ["climb a ladder", "step ladder", "extension ladder"],
+    exampleEn: "The painter climbed the ladder carefully to reach the ceiling trim.",
+    exampleAr: "صَعِدَ الدَّهَّانُ السُّلَّمَ بِحَذَرٍ لِلْوُصُولِ إِلَى حَوَافِّ السَّقْفِ.",
+  },
+};
+
 export function getLexiconEntry(wordId: string, fallbackLabel?: string): LexiconEntry {
   const normalized = wordId.toLowerCase().trim();
   if (LEXICON_DICTIONARY[normalized]) {
@@ -39257,6 +39530,28 @@ export function getLexiconEntry(wordId: string, fallbackLabel?: string): Lexicon
   );
   if (foundKey) {
     return LEXICON_DICTIONARY[foundKey];
+  }
+
+  // Check extended gloss dictionary
+  if (EXTENDED_VOCABULARY_GLOSSES[normalized]) {
+    const ext = EXTENDED_VOCABULARY_GLOSSES[normalized];
+    const label = fallbackLabel || wordId.replace(/[-_]/g, " ");
+    return {
+      id: wordId,
+      arabic: ext.ar,
+      phonetic: ext.phonetic,
+      partOfSpeech: ext.pos || "noun",
+      collocations: ext.collocations || ["use regularly", "check carefully", "keep handy"],
+      sentences: [
+        {
+          context: "Everyday Usage",
+          en: ext.exampleEn || `The ${label} is used in daily life.`,
+          ar: ext.exampleAr || `يُسْتَخْدَمُ هَذَا العُنْصُرُ فِي الحَيَاةِ اليَوْمِيَّةِ.`,
+        },
+      ],
+      exampleSentence: ext.exampleEn || `The ${label} is used in daily life.`,
+      exampleArabic: ext.exampleAr || `يُسْتَخْدَمُ هَذَا العُنْصُرُ فِي الحَيَاةِ اليَوْمِيَّةِ.`,
+    };
   }
 
   const label = fallbackLabel || wordId.replace(/[-_]/g, " ");

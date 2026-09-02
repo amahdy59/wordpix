@@ -22,8 +22,9 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: "pnpm run dev",
+    command: "pnpm run preview --port 5173",
     url: "http://localhost:5173",
     reuseExistingServer: !process.env.CI,
+    timeout: 120_000,
   },
 });

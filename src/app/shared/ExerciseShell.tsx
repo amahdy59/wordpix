@@ -83,7 +83,7 @@ export const ExerciseShell = memo(function ExerciseShell({
       {/* ── RIGHT PANEL: Desktop & Mobile Exercise Main View ────────────────── */}
       <div className="flex-1 flex flex-col h-dvh overflow-hidden relative">
         <LessonHeader
-          title={`${group.name}: ${title}`}
+          title={title}
           subtitle={subtitle}
           current={currentProgress}
           total={totalProgress}
@@ -94,7 +94,7 @@ export const ExerciseShell = memo(function ExerciseShell({
         {/* Expansive Main Content Area with adaptive scroll for all viewports */}
         <main
           className="flex-1 overflow-y-auto overflow-x-hidden px-3 sm:px-6 lg:px-10 py-3 sm:py-6 flex flex-col items-center min-h-0 w-full scroll-smooth"
-          aria-label={`${title} exercise`}
+          aria-label={`${group.name}: ${title} exercise`}
         >
           {/*
             Content flows from the top on a phone and only centres once there

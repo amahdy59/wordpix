@@ -1,4 +1,4 @@
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 /* ─── WordPix Semantic Color Tokens (Light & Dark Modes) ────────────────────
    Brand: Violet (#7C3AED / #A78BFA) — smart & inviting for A0-B1 learners

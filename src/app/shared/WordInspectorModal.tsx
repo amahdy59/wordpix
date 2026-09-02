@@ -64,9 +64,9 @@ export const WordInspectorModal = memo(function WordInspectorModal({
               <div className="min-w-0 flex-1">
                 <h2
                   id="word-inspector-title"
-                  className="font-sans font-black text-white text-2xl sm:text-3xl leading-tight capitalize drop-shadow break-words"
+                  className="font-sans font-black text-white text-2xl sm:text-3xl leading-tight drop-shadow break-words"
                 >
-                  {word.label.toLowerCase()}
+                  {word.label}
                 </h2>
                 <p className="font-sans text-white/90 text-xs sm:text-sm drop-shadow font-mono break-words mt-0.5">
                   {entry.phonetic || word.phonetic}

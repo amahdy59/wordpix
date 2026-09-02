@@ -14,11 +14,12 @@ test.describe("Multi-Viewport RTL & Dark Mode Matrix", () => {
     });
     expect(isOverflowing).toBe(false);
 
-    // Switch to Arabic / RTL
+    // Switch to Arabic / RTL via storage
     await page.evaluate(() => {
-      document.documentElement.setAttribute("dir", "rtl");
-      document.documentElement.setAttribute("lang", "ar");
+      localStorage.setItem("wordpix:interface-lang", "ar");
     });
+    await page.reload();
+    await page.waitForLoadState("domcontentloaded");
 
     await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
 
@@ -30,13 +31,9 @@ test.describe("Multi-Viewport RTL & Dark Mode Matrix", () => {
   });
 
   test("dark mode toggles theme class and passes accessibility contrast", async ({ page }) => {
+    await page.emulateMedia({ colorScheme: "dark" });
     await page.goto("/");
     await page.waitForLoadState("domcontentloaded");
-
-    // Toggle dark class on document root
-    await page.evaluate(() => {
-      document.documentElement.classList.add("dark");
-    });
 
     const hasDarkClass = await page.evaluate(() =>
       document.documentElement.classList.contains("dark")
