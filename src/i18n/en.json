@@ -107,5 +107,11 @@
       "dark": "Dark",
       "system": "System"
     }
+  },
+  "vocabularyPreload": {
+    "title": "Load vocabulary ({count} units)",
+    "description": "Loads vocabulary for this visit. Images, audio and study guides are not downloaded by this action.",
+    "done": "Vocabulary loaded",
+    "error": "Some vocabulary could not be loaded. Check your connection and try again."
   }
 }

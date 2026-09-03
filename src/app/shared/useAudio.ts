@@ -402,10 +402,12 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
        */
       const cacheInBackground = (url: string, cacheKey: string): void => {
         if (audioCache.has(cacheKey)) return;
-        void fetch(url)
+        // The media request may have cached a response without CORS headers.
+        // Re-fetch with Origin so IndexedDB receives readable audio bytes.
+        void fetch(url, { cache: "reload" })
           .then((res) => (res.ok ? res.blob() : null))
           .then((blob) => {
-            if (!blob) return;
+            if (!blob || blob.size === 0) return;
             saveCachedAudio(cacheKey, blob);
             cacheAudioUrl(cacheKey, URL.createObjectURL(blob));
           })

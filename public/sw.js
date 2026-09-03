@@ -31,7 +31,9 @@ self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches
       .keys()
-      .then((keys) => Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))))
+      .then((keys) =>
+        Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)))
+      )
       .then(() => self.clients.claim())
   );
 });
@@ -57,13 +59,21 @@ self.addEventListener("fetch", (event) => {
   // a deep link still opens offline.
   if (request.mode === "navigate") {
     event.respondWith(
-      fetch(request).catch(() => caches.match("./index.html").then((cached) => cached || Response.error()))
+      fetch(request).catch(() =>
+        caches.match("./index.html").then((cached) => cached || Response.error())
+      )
     );
     return;
   }
 
   event.respondWith(
-    caches.match(request).then((cachedResponse) => {
+    caches.match(request).then((cached) => {
+      // An opaque <audio>/<img> response cannot satisfy a CORS fetch used to
+      // persist audio bytes. Respect explicit reloads and fetch a readable copy.
+      const cachedResponse =
+        request.cache !== "reload" && (request.mode === "no-cors" || cached?.type !== "opaque")
+          ? cached
+          : undefined;
       const networkFetch = fetch(request)
         .then((networkResponse) => {
           if (isCacheableResponse(networkResponse)) {
@@ -72,7 +82,10 @@ self.addEventListener("fetch", (event) => {
           }
           return networkResponse;
         })
-        .catch(() => cachedResponse);
+        .catch((error) => {
+          if (cachedResponse) return cachedResponse;
+          throw error;
+        });
 
       // Stale-while-revalidate: cached copy immediately, refresh in background.
       return cachedResponse || networkFetch;

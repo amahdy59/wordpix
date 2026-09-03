@@ -5,6 +5,9 @@ import path from "path";
 export default defineConfig({
   plugins: [react()],
   test: {
+    // Unit tests must not inherit the live CDN from a developer's .env.local.
+    // Real playback/caching is checked by scripts/verify_audio_offline.mjs.
+    env: { VITE_ASSET_BASE_URL: "" },
     environment: "happy-dom",
     globals: true,
     setupFiles: ["./src/test/setup.ts"],

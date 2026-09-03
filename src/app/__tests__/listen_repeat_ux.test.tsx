@@ -15,10 +15,22 @@ vi.mock("../shared/useAudio", () => ({
   }),
 }));
 
+const speech = vi.hoisted(() => ({ listen: vi.fn(), stop: vi.fn(), reset: vi.fn() }));
+vi.mock("../shared/useSpeechRecognition", () => ({
+  useSpeechRecognition: () => ({
+    ...speech,
+    status: "idle",
+    isListening: false,
+    attempt: null,
+    audioLevel: 0,
+  }),
+}));
+
 describe("Listen and repeat mobile focus", () => {
   beforeEach(() => {
     audio.speak.mockClear();
     audio.stop.mockClear();
+    speech.listen.mockClear();
   });
 
   it("keeps the image clean and exposes one clearly labelled details action", () => {
@@ -74,5 +86,37 @@ describe("Listen and repeat mobile focus", () => {
 
     fireEvent.click(screen.getByRole("button", { name: /Continue to sentences/i }));
     expect(dispatch).toHaveBeenCalledWith({ type: "LESSON_NEXT" });
+  });
+  it("starts the microphone only on request and stops playback first", () => {
+    render(
+      <ExerciseListenRepeat
+        step={1}
+        words={BEDROOM_VOCABULARY.slice(0, 2)}
+        lessonId="bedroom-1"
+        dispatch={vi.fn()}
+      />
+    );
+    expect(speech.listen).not.toHaveBeenCalled();
+    fireEvent.click(screen.getByRole("button", { name: /Practice speaking/ }));
+    expect(audio.stop).toHaveBeenCalled();
+    expect(speech.listen).toHaveBeenCalledWith(BEDROOM_VOCABULARY[0].label);
+    expect(audio.stop.mock.invocationCallOrder.at(-1)).toBeLessThan(
+      speech.listen.mock.invocationCallOrder.at(-1)!
+    );
+  });
+
+  it("does not navigate on a predominantly vertical swipe", () => {
+    render(
+      <ExerciseListenRepeat
+        step={1}
+        words={BEDROOM_VOCABULARY.slice(0, 2)}
+        lessonId="bedroom-1"
+        dispatch={vi.fn()}
+      />
+    );
+    const hero = document.querySelector('img[fetchpriority="high"]')!;
+    fireEvent.touchStart(hero, { touches: [{ clientX: 200, clientY: 100 }] });
+    fireEvent.touchEnd(hero, { changedTouches: [{ clientX: 145, clientY: 250 }] });
+    expect(screen.getByRole("progressbar")).toHaveAttribute("aria-valuetext", "Word 1 of 2");
   });
 });

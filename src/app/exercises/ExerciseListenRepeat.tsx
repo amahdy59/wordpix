@@ -77,22 +77,32 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
   const handleToggle = useCallback(() => {
     if (isPlaying) stop();
-    else playWord();
-  }, [isPlaying, stop, playWord]);
+    else {
+      if (isListening) stopListening();
+      playWord();
+    }
+  }, [isPlaying, stop, playWord, isListening, stopListening]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (
         inspectedWord ||
+        e.altKey ||
+        e.ctrlKey ||
+        e.metaKey ||
+        document.querySelector('[role="dialog"][aria-modal="true"]') ||
+        (e.target instanceof HTMLElement &&
+          (e.target.isContentEditable || e.target.tagName === "SELECT")) ||
         e.target instanceof HTMLInputElement ||
         e.target instanceof HTMLTextAreaElement
       )
         return;
 
-      if (e.key === "ArrowLeft") {
+      const isRtl = document.documentElement.dir === "rtl";
+      if (e.key === (isRtl ? "ArrowRight" : "ArrowLeft")) {
         e.preventDefault();
         handleSelectWordIndex(activeWordIndex - 1);
-      } else if (e.key === "ArrowRight") {
+      } else if (e.key === (isRtl ? "ArrowLeft" : "ArrowRight")) {
         e.preventDefault();
         handleSelectWordIndex(activeWordIndex + 1);
       } else if (
@@ -110,13 +120,17 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
   // Touch swipe gesture support for mobile
   const touchStartX = useRef<number | null>(null);
+  const touchStartY = useRef(0);
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
   };
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (touchStartX.current === null) return;
-    const diff = e.changedTouches[0].clientX - touchStartX.current;
-    if (Math.abs(diff) > 40) {
+    const horizontal = e.changedTouches[0].clientX - touchStartX.current;
+    const vertical = e.changedTouches[0].clientY - touchStartY.current;
+    const diff = document.documentElement.dir === "rtl" ? -horizontal : horizontal;
+    if (Math.abs(diff) > 40 && Math.abs(horizontal) > Math.abs(vertical)) {
       if (diff < 0 && activeWordIndex < words.length - 1) {
         handleSelectWordIndex(activeWordIndex + 1);
       } else if (diff > 0 && activeWordIndex > 0) {
@@ -130,6 +144,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
   return (
     <ExerciseShell
+      layout="media"
       step={step}
       title="Listen & repeat"
       words={words}
@@ -146,7 +161,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         </>
       }
       footer={
-        <div className="grid grid-cols-[auto_1fr] gap-3">
+        <div className="flex items-center justify-between gap-3">
           <button
             type="button"
             aria-label="Previous word"
@@ -154,7 +169,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
             onClick={() => handleSelectWordIndex(activeWordIndex - 1)}
             className="min-h-[48px] min-w-[48px] sm:px-5 rounded-xl border border-border bg-wp-card text-foreground font-sans font-bold flex items-center justify-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            <ChevronLeft className="size-5" aria-hidden />
+            <ChevronLeft className="size-5 rtl:rotate-180" aria-hidden />
             <span className="hidden sm:inline">Previous</span>
           </button>
           <button
@@ -168,10 +183,10 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                 handleSelectWordIndex(activeWordIndex + 1);
               }
             }}
-            className="min-h-[48px] px-5 rounded-xl bg-wp-blue text-wp-text-on-blue font-sans font-bold flex items-center justify-center gap-2 shadow-wp-xs active:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue"
+            className="min-h-[48px] px-5 flex-1 sm:flex-none sm:min-w-56 rounded-xl bg-primary text-primary-foreground font-sans font-bold flex items-center justify-center gap-2 shadow-wp-xs active:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <span>{isLastWord ? "Continue to sentences" : "Next word"}</span>
-            <ChevronRight className="size-5" aria-hidden />
+            <ChevronRight className="size-5 rtl:rotate-180" aria-hidden />
           </button>
         </div>
       }
@@ -182,11 +197,11 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           : `Word ${activeWordIndex + 1} of ${words.length}: ${currentWord.label}`}
       </div>
 
-      <div className="relative flex flex-col gap-3.5 w-full max-w-2xl mx-auto min-h-0 justify-start sm:h-full sm:justify-center">
+      <div className="relative flex flex-col gap-4 w-full min-h-0">
         {/* Direct word selection is useful on larger screens but duplicates
             progress and navigation on a phone. */}
         <nav
-          className="hidden sm:flex justify-center gap-2 shrink-0 overflow-x-auto py-1 px-1 scrollbar-none"
+          className="hidden lg:flex gap-2 shrink-0 overflow-x-auto py-1 px-1 mx-auto max-w-full"
           aria-label="Group vocabulary words"
         >
           {words.map((w, index) => {
@@ -217,25 +232,25 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         <div
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
-          className="w-full flex flex-col gap-3.5 bg-wp-card border border-border rounded-2xl sm:rounded-3xl p-3 sm:p-5 shadow-wp-md"
+          className="w-full min-w-0 grid grid-cols-1 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] gap-4 lg:gap-0 bg-wp-card border border-border rounded-2xl sm:rounded-3xl p-3 sm:p-4 shadow-wp-md"
         >
           {/* The picture is the learning material, so it stays unobstructed. */}
-          <div className="w-full relative rounded-xl sm:rounded-2xl overflow-hidden bg-muted shrink-0 aspect-[4/3] sm:aspect-[16/10] max-h-[36dvh] sm:max-h-[42dvh]">
+          <div className="w-full min-w-0 relative rounded-xl sm:rounded-2xl overflow-hidden bg-muted aspect-[4/3] max-h-[32dvh] sm:max-h-[38dvh] lg:aspect-auto lg:h-[clamp(20rem,58dvh,38rem)] lg:max-h-none">
             <WordImage
               word={currentWord}
-              className="w-full h-full absolute inset-0 object-cover"
+              className="w-full h-full absolute inset-0 object-contain"
               loading="eager"
               fetchPriority="high"
             />
           </div>
 
           {/* Dedicated Word Info & Actions Section Below Image */}
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col justify-center gap-4 min-w-0 px-1 pb-1 sm:px-3 lg:px-8 xl:px-12 lg:py-6">
             {/* Word Name, Phonetic, and Arabic Meaning */}
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-5 lg:gap-7">
               <div className="flex flex-col min-w-0">
-                <div className="flex items-baseline gap-2 flex-wrap">
-                  <h2 className="font-sans font-black text-foreground text-2xl sm:text-3xl leading-tight capitalize">
+                <div className="flex flex-col gap-1.5 lg:gap-3" lang="en" dir="ltr">
+                  <h2 className="font-sans font-black text-foreground text-3xl sm:text-4xl xl:text-5xl leading-tight capitalize break-words">
                     {currentWord.label}
                   </h2>
                   <span className="font-sans font-medium text-muted-foreground text-xs sm:text-sm font-mono">
@@ -251,7 +266,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                     Arabic. */}
                 {hasArabicGloss(lexiconEntry) && (
                   <p
-                    className="font-arabic font-bold text-wp-amber text-base sm:text-lg mt-0.5"
+                    className="font-arabic font-bold text-foreground text-lg sm:text-xl mt-2 lg:mt-4 text-start self-start"
                     dir="rtl"
                     lang="ar"
                   >
@@ -262,28 +277,35 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
               {/* Action Buttons: Listen & Speak */}
               <div
-                className="grid grid-cols-1 min-[360px]:grid-cols-2 gap-2"
+                className="grid grid-cols-1 min-[360px]:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3"
                 aria-label="Pronunciation practice"
               >
                 {/* Listen button */}
                 <button
                   type="button"
                   onClick={handleToggle}
-                  aria-label={`Play audio pronunciation for ${currentWord.label}`}
+                  aria-pressed={isPlaying}
+                  aria-label={`${isPlaying ? "Stop" : "Play"} audio pronunciation for ${currentWord.label}`}
                   className="flex items-center justify-center gap-2 px-4 py-2.5 min-h-[48px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-md hover:bg-primary/90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer"
                 >
                   <Volume2
                     className={`size-5 ${isPlaying ? "motion-safe:animate-pulse" : ""}`}
                     aria-hidden
                   />
-                  <span>{isPlaying ? "Playing..." : "Listen"}</span>
+                  <span>{isPlaying ? "Stop audio" : "Listen"}</span>
                 </button>
 
                 {/* Microphone Practice Button */}
                 {speechStatus !== "unsupported" && (
                   <button
                     type="button"
-                    onClick={() => (isListening ? stopListening() : listen(currentWord.label))}
+                    onClick={() => {
+                      if (isListening) stopListening();
+                      else {
+                        stop();
+                        listen(currentWord.label);
+                      }
+                    }}
                     aria-label={
                       isListening
                         ? "Stop recording speech"
@@ -325,7 +347,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
             <button
               type="button"
               onClick={() => setInspectedWord(currentWord)}
-              className="self-start flex items-center justify-center gap-2 py-2.5 px-3 min-h-[44px] rounded-xl text-primary text-xs sm:text-sm font-sans font-semibold hover:bg-primary/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer"
+              className="w-full flex items-center justify-start gap-2 py-3 px-4 min-h-[48px] rounded-xl bg-secondary border border-border text-primary text-xs sm:text-sm font-sans font-semibold hover:bg-primary/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer"
             >
               <BookOpen className="size-4" aria-hidden />
               <span>Word details</span>

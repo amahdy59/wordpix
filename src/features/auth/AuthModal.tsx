@@ -29,6 +29,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (isLoading) return;
     setState({ status: "submitting" });
 
     try {
@@ -42,6 +43,14 @@ export function AuthModal({ onClose }: AuthModalProps) {
       } else {
         const { data, error } = await supabase.auth.signUp({ email, password });
         if (error) throw error;
+        if (!data.session) {
+          setState({
+            status: "success",
+            message:
+              "Check your email to confirm your account, then sign in. Your progress remains on this device.",
+          });
+          return;
+        }
         authUserId = data.user?.id;
         setState({ status: "success", message: "Account created successfully!" });
       }

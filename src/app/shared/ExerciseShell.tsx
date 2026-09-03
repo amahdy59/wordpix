@@ -24,6 +24,7 @@ interface Props {
   progress?: { current: number; total: number } | number;
   /** Noun used by the progress bar, for example "Word" or "Question". */
   progressLabel?: string;
+  layout?: "standard" | "media";
 }
 
 const STEP_LABELS = [
@@ -49,8 +50,10 @@ export const ExerciseShell = memo(function ExerciseShell({
   footer,
   progress,
   progressLabel,
+  layout = "standard",
 }: Props) {
   const [showExitModal, setShowExitModal] = useState(false);
+  const Content = layout === "media" ? "section" : "main";
 
   // `lessonId` used to default to "essential-furniture" and fall back to the
   // first group on an unknown id, so a review session — or any lesson whose id
@@ -89,7 +92,7 @@ export const ExerciseShell = memo(function ExerciseShell({
         />
 
         {/* Expansive Main Content Area with adaptive scroll for all viewports */}
-        <main
+        <Content
           className="flex-1 overflow-y-auto overflow-x-hidden px-3 sm:px-6 lg:px-10 py-3 sm:py-6 flex flex-col items-center min-h-0 w-full scroll-smooth"
           aria-label={`${group.name}: ${title} exercise`}
         >
@@ -103,13 +106,21 @@ export const ExerciseShell = memo(function ExerciseShell({
             empty space above the picture and another slab below it, so the
             exercise floated in a void with its controls shoved off the fold.
           */}
-          <div className="w-full max-w-4xl mx-auto flex flex-col gap-3.5 sm:gap-5 justify-start sm:justify-center sm:min-h-full sm:my-auto pb-4 sm:pb-8">
+          <div
+            className={
+              layout === "media"
+                ? "w-full max-w-[1440px] mx-auto flex flex-col gap-4 my-auto py-1"
+                : "w-full max-w-4xl mx-auto flex flex-col gap-3.5 sm:gap-5 justify-start sm:justify-center sm:min-h-full sm:my-auto pb-4 sm:pb-8"
+            }
+          >
             {children}
           </div>
-        </main>
+        </Content>
 
         {/* Pinned Footer */}
-        <footer className="shrink-0 px-4 sm:px-6 lg:px-10 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] sm:pb-6 pt-3 border-t border-border/60 bg-background flex flex-col max-w-6xl mx-auto w-full">
+        <footer
+          className={`shrink-0 px-3 sm:px-6 lg:px-10 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] pt-3 border-t border-border/60 bg-background flex flex-col mx-auto w-full ${layout === "media" ? "max-w-[1520px]" : "max-w-6xl sm:pb-6"}`}
+        >
           <div className="flex flex-col gap-1.5 w-full">{footer}</div>
         </footer>
 

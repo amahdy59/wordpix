@@ -1,8 +1,9 @@
-import { describe, expect, it, vi, beforeEach } from "vitest";
+import { describe, expect, it, vi, beforeEach, afterEach } from "vitest";
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { HomeDashboard } from "../core/HomeDashboard";
 import { SettingsModal } from "../core/SettingsModal";
+import { loadUnitVocabulary } from "../data/vocabulary";
 import { LearnerProvider } from "../context/LearnerContext";
 import { I18nProvider } from "../context/I18nContext";
 
@@ -10,6 +11,10 @@ vi.mock("../data/vocabulary", () => ({
   loadUnitVocabulary: vi.fn().mockResolvedValue([]),
   getWords: vi.fn().mockReturnValue([]),
 }));
+
+vi.mock("../shared/useAudio", () => ({ useAudio: () => ({ speak: vi.fn() }) }));
+
+afterEach(() => vi.unstubAllGlobals());
 
 function renderWithProviders(ui: React.ReactElement) {
   return render(
@@ -30,16 +35,30 @@ describe("HomeDashboard Gamification & Daily Goals", () => {
     );
   });
 
-  it("renders daily vocabulary target and study guide shortcut", () => {
+  it("renders daily vocabulary target and study guide shortcut", async () => {
+    localStorage.removeItem("wordpix_last_seen_version");
     const dispatch = vi.fn();
     renderWithProviders(<HomeDashboard dispatch={dispatch} />);
 
+    await screen.findByRole("button", { name: "Dismiss release notes" });
     expect(screen.getByText("Daily Vocabulary Target")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Study materials for/i })).toBeInTheDocument();
   });
 });
 
 describe("SettingsModal Offline Preloader", () => {
+  beforeEach(() => vi.mocked(loadUnitVocabulary).mockReset().mockResolvedValue([]));
+  it("reports loading failure and allows retry without claiming offline readiness", async () => {
+    vi.mocked(loadUnitVocabulary).mockRejectedValueOnce(new Error("offline"));
+    const user = userEvent.setup();
+    renderWithProviders(<SettingsModal isOpen onClose={vi.fn()} />);
+    await user.click(screen.getByRole("button", { name: /Preload All Units/i }));
+    expect(await screen.findByRole("alert")).toHaveTextContent("could not be loaded");
+    expect(screen.queryByText(/Vocabulary loaded|Ready Offline!/i)).not.toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: /Preload All Units/i }));
+    expect(await screen.findByText("Vocabulary loaded")).toBeInTheDocument();
+    expect(screen.queryByRole("alert")).not.toBeInTheDocument();
+  });
   it("renders offline readiness section and handles course preloading", async () => {
     const user = userEvent.setup();
     const onClose = vi.fn();
@@ -47,7 +66,7 @@ describe("SettingsModal Offline Preloader", () => {
     renderWithProviders(<SettingsModal isOpen={true} onClose={onClose} />);
 
     expect(screen.getByText(/Offline Readiness & Storage/i)).toBeInTheDocument();
-    expect(screen.getByText(/Preload Full Curriculum \(200 Units\)/i)).toBeInTheDocument();
+    expect(screen.getByText(/Load vocabulary \(200 units\)/i)).toBeInTheDocument();
 
     const preloadBtn = screen.getByRole("button", { name: /Preload All Units/i });
     expect(preloadBtn).toBeInTheDocument();
@@ -55,10 +74,10 @@ describe("SettingsModal Offline Preloader", () => {
     // Trigger preload
     await user.click(preloadBtn);
 
-    // Should complete and show Ready Offline badge
+    // Completion describes vocabulary loading, not offline asset availability.
     await waitFor(
       () => {
-        expect(screen.getByText(/Ready Offline!/i)).toBeInTheDocument();
+        expect(screen.getByText(/Vocabulary loaded/i)).toBeInTheDocument();
       },
       { timeout: 5000 }
     );

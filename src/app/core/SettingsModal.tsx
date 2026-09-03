@@ -55,26 +55,33 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
   const [isPreloading, setIsPreloading] = useState(false);
   const [preloadProgress, setPreloadProgress] = useState(0);
   const [preloadDone, setPreloadDone] = useState(false);
+  const [preloadError, setPreloadError] = useState(false);
 
   const handlePreloadAll = async () => {
     if (isPreloading) return;
     setIsPreloading(true);
     setPreloadDone(false);
+    setPreloadError(false);
     setPreloadProgress(0);
 
     const unitIds = Object.keys(COURSE_UNITS);
     const batchSize = 10;
     let completed = 0;
 
-    for (let i = 0; i < unitIds.length; i += batchSize) {
-      const batch = unitIds.slice(i, i + batchSize);
-      await Promise.all(batch.map((id) => loadUnitVocabulary(id)));
-      completed += batch.length;
-      setPreloadProgress(Math.round((completed / unitIds.length) * 100));
-    }
+    try {
+      for (let i = 0; i < unitIds.length; i += batchSize) {
+        const batch = unitIds.slice(i, i + batchSize);
+        await Promise.all(batch.map((id) => loadUnitVocabulary(id)));
+        completed += batch.length;
+        setPreloadProgress(Math.round((completed / unitIds.length) * 100));
+      }
 
-    setIsPreloading(false);
-    setPreloadDone(true);
+      setPreloadDone(true);
+    } catch {
+      setPreloadError(true);
+    } finally {
+      setIsPreloading(false);
+    }
   };
 
   const [elevenLabsKey, setElevenLabsKey] = useState(() => {
@@ -656,11 +663,12 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 <div>
                   <span className="font-sans font-bold text-foreground text-sm flex items-center gap-2">
                     <Wifi className="size-4 text-wp-teal" />
-                    <span>Preload Full Curriculum (200 Units)</span>
+                    <span>
+                      {t("vocabularyPreload.title", { count: Object.keys(COURSE_UNITS).length })}
+                    </span>
                   </span>
                   <p className="font-sans text-xs text-muted-foreground mt-0.5">
-                    Caches all vocabulary and study guides locally so you can practice seamlessly
-                    offline.
+                    {t("vocabularyPreload.description")}
                   </p>
                 </div>
 
@@ -675,7 +683,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                   ) : preloadDone ? (
                     <>
                       <CheckCircle2 className="size-4 text-wp-green" />
-                      <span>Ready Offline!</span>
+                      <span>{t("vocabularyPreload.done")}</span>
                     </>
                   ) : (
                     <>
@@ -686,6 +694,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 </button>
               </div>
 
+              {preloadError && <p role="alert">{t("vocabularyPreload.error")}</p>}
               {isPreloading && (
                 <div className="w-full h-2 bg-secondary rounded-full overflow-hidden mt-1">
                   <div
