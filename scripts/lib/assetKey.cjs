@@ -19,9 +19,16 @@
  */
 const crypto = require("crypto");
 
+/** Known voice identifiers */
+const VOICES = {
+  nichalia: "XfNU2rGpBa01ckF309OY", // 🥇 Nichalia Schwartz - Bright and Friendly
+  shelley: "4CrZuIW9am7gYAxgo2Af",  // Shelley - Clear, Confident and British
+  alice: "Xb7hH8MSUJpSbSDYk0k2",    // Alice - Clear, Engaging Educator
+};
+
 /** Current voice settings. Changing any of these re-keys the whole corpus. */
 const AUDIO_PROFILE = {
-  voiceId: "Xb7hH8MSUJpSbSDYk0k2",
+  voiceId: process.env.ELEVENLABS_VOICE_ID || VOICES.alice,
   modelId: "eleven_turbo_v2_5",
   stability: 0.7,
   similarityBoost: 0.75,
@@ -70,4 +77,11 @@ function audioKey(text, profile = AUDIO_PROFILE) {
   return `audio/${hash.slice(0, 2)}/${hash}.mp3`;
 }
 
-module.exports = { AUDIO_PROFILE, normaliseText, profileFingerprint, audioHash, audioKey };
+module.exports = {
+  VOICES,
+  AUDIO_PROFILE,
+  normaliseText,
+  profileFingerprint,
+  audioHash,
+  audioKey,
+};

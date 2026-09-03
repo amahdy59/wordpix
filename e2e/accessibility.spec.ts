@@ -5,8 +5,10 @@ test("home page should not have any automatically detectable accessibility issue
   page,
 }) => {
   await page.goto("/");
-  await page.waitForLoadState("domcontentloaded");
+  await page.waitForLoadState("networkidle");
   await page.locator("#root").waitFor({ state: "visible", timeout: 15_000 });
+  // Wait for entrance fade-in transition to complete to 100% opacity
+  await page.waitForTimeout(400);
 
   const accessibilityScanResults = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
@@ -18,12 +20,10 @@ test("home page should not have any automatically detectable accessibility issue
 test("practice route should not have automatically detectable accessibility issues", async ({
   page,
 }) => {
-  // Navigate to the first unit's practice area via URL state
-  await page.goto("/?unit=bathroom&area=practice");
-
-  // Wait for either the practice session or an empty state message
-  const practiceTitle = page.getByRole("heading", { level: 1 });
-  await practiceTitle.waitFor({ timeout: 10_000 }).catch(() => null);
+  // Navigate to the practice route via hash router
+  await page.goto("/#/practice");
+  await page.waitForLoadState("networkidle");
+  await page.waitForTimeout(400);
 
   const accessibilityScanResults = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])

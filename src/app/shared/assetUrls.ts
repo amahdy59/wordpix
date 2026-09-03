@@ -15,9 +15,16 @@
  * that by comparing this output against the generator's for the same inputs.
  */
 
+/** Known voice identifiers */
+export const VOICES = {
+  nichalia: "XfNU2rGpBa01ckF309OY", // 🥇 Nichalia Schwartz - Bright and Friendly
+  shelley: "4CrZuIW9am7gYAxgo2Af", // Shelley - Clear, Confident and British
+  alice: "Xb7hH8MSUJpSbSDYk0k2", // Alice - Clear, Engaging Educator
+} as const;
+
 /** Must mirror AUDIO_PROFILE in scripts/lib/assetKey.cjs. */
 export const AUDIO_PROFILE = {
-  voiceId: "Xb7hH8MSUJpSbSDYk0k2",
+  voiceId: (import.meta.env?.VITE_ELEVENLABS_VOICE_ID as string) || VOICES.alice,
   modelId: "eleven_turbo_v2_5",
   stability: 0.7,
   similarityBoost: 0.75,

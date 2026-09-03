@@ -9,7 +9,7 @@
 const fs = require("fs");
 const path = require("path");
 
-function loadEnv(file = ".env.local") {
+function loadEnvFile(file) {
   const full = path.join(__dirname, "..", "..", file);
   if (!fs.existsSync(full)) return;
 
@@ -28,6 +28,11 @@ function loadEnv(file = ".env.local") {
     }
     if (!(key in process.env)) process.env[key] = value;
   }
+}
+
+function loadEnv() {
+  loadEnvFile(".env");
+  loadEnvFile(".env.local");
 }
 
 module.exports = { loadEnv };

@@ -122,7 +122,7 @@ export function SplashWelcome({ dispatch }: Props) {
 
           <div className="md:hidden inline-flex items-center gap-2 bg-secondary px-3.5 py-1.5 rounded-full border border-primary/30 shadow-wp-xs">
             <Sparkles className="size-3.5 text-primary motion-safe:animate-pulse" />
-            <span className="font-sans font-semibold text-xs text-foreground">
+            <span className="font-sans font-semibold text-xs text-secondary-foreground">
               Visual English Learning Engine
             </span>
           </div>
