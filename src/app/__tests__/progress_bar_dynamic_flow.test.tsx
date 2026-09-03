@@ -59,5 +59,7 @@ describe("Dynamic Progress Bar Tracking Across Exercises", () => {
     const bar = screen.getByRole("progressbar");
     const expectedPct = Math.round((1 / BEDROOM_VOCABULARY.length) * 100).toString();
     expect(bar).toHaveAttribute("aria-valuenow", expectedPct);
+    expect(bar).toHaveAccessibleName("Word progress");
+    expect(bar).toHaveAttribute("aria-valuetext", `Word 1 of ${BEDROOM_VOCABULARY.length}`);
   });
 });

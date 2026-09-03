@@ -84,12 +84,16 @@ const LoadingFallback = () => {
 export const SkipLink = () => {
   const { t } = useI18n();
   return (
-    <a
-      href="#main-content"
-      className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:start-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg font-sans font-semibold text-sm z-50 motion-safe:transition-none"
-    >
-      {t("app.skipToContent")}
-    </a>
+    // Wrapped in a nav landmark: a skip link is navigation, and leaving it
+    // bare left the one piece of page content that no landmark contained.
+    <nav aria-label={t("app.skipToContent")}>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:start-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg font-sans font-semibold text-sm z-50 motion-safe:transition-none"
+      >
+        {t("app.skipToContent")}
+      </a>
+    </nav>
   );
 };
 
@@ -269,13 +273,13 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       {state.id === "onboarding" && (
         <div className="min-h-dvh bg-secondary flex items-center justify-center p-0 md:p-8">
           <SkipLink />
-          <div
+          <main
             id="main-content"
             tabIndex={-1}
             className="min-h-dvh md:min-h-0 w-full max-w-5xl md:rounded-3xl md:overflow-hidden md:shadow-wp-md md:border md:border-border outline-none flex flex-col"
           >
             {animatedContent}
-          </div>
+          </main>
         </div>
       )}
 
@@ -291,26 +295,26 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       {state.id === "learn-words" && (
         <div className="h-dvh max-h-dvh overflow-hidden bg-background flex flex-col">
           <SkipLink />
-          <div
+          <main
             id="main-content"
             tabIndex={-1}
             className="w-full flex-1 flex flex-col outline-none overflow-hidden"
           >
             {animatedContent}
-          </div>
+          </main>
         </div>
       )}
 
       {state.id !== "onboarding" && !TABBED_IDS.has(state.id) && state.id !== "learn-words" && (
         <div className="h-dvh max-h-dvh overflow-hidden bg-background flex flex-col">
           <SkipLink />
-          <div
+          <main
             id="main-content"
             tabIndex={-1}
             className="w-full flex-1 flex flex-col outline-none overflow-hidden"
           >
             {animatedContent}
-          </div>
+          </main>
         </div>
       )}
     </>

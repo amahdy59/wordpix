@@ -2,11 +2,9 @@ import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
 import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { PrimaryButton } from "../shared/PrimaryButton";
 import { useAudio } from "../shared/useAudio";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import {
-  Keyboard,
   Volume2,
   ChevronRight,
   ChevronLeft,
@@ -18,7 +16,7 @@ import {
 import { WordImage } from "../shared/WordImage";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useSpeechRecognition } from "../shared/useSpeechRecognition";
-import { getLexiconEntry } from "../data/lexiconDictionary";
+import { getLexiconEntry, hasArabicGloss } from "../data/lexiconDictionary";
 import { WordInspectorModal } from "../shared/WordInspectorModal";
 
 interface Props {
@@ -36,11 +34,9 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 }: Props) {
   const [activeWordIndex, setActiveWordIndex] = useState<number>(0);
   const [inspectedWord, setInspectedWord] = useState<VocabularyItem | null>(null);
-  const [speechSuccess, setSpeechSuccess] = useState<boolean>(false);
   const { accessibility } = useAccessibility();
   const speed = accessibility.speechRate;
   const { speak, stop, isPlaying, isSupported, isError } = useAudio({ lang: "en-US", rate: speed });
-  const mountedRef = useRef(false);
 
   const currentWord = words[activeWordIndex] || words[0];
   const isLastWord = activeWordIndex === words.length - 1;
@@ -53,44 +49,23 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
     isListening,
     attempt,
     audioLevel,
+    reset: resetSpeech,
   } = useSpeechRecognition({ lang: "en-US" });
-
-  useEffect(() => {
-    if (attempt?.matched) {
-      setSpeechSuccess(true);
-    }
-  }, [attempt]);
-
-  // Reset speech success when switching words
-  useEffect(() => {
-    setSpeechSuccess(false);
-  }, [activeWordIndex]);
 
   const playWord = useCallback(() => speak(currentWord.label), [speak, currentWord.label]);
 
-  useEffect(() => {
-    if (!mountedRef.current && isSupported) {
-      mountedRef.current = true;
-      const t = setTimeout(() => playWord(), 600);
-      return () => clearTimeout(t);
-    }
-    return undefined;
-  }, [isSupported, playWord]);
-
   useEffect(() => () => stop(), [stop]);
 
-  // Speaks whichever word becomes active, however it was reached — the timer
-  // above, an arrow, or the group strip.
-  useEffect(() => {
-    if (!mountedRef.current) return undefined;
-    stop();
-    const t = setTimeout(() => speak(currentWord.label), 140);
-    return () => clearTimeout(t);
-  }, [activeWordIndex, currentWord.label, speak, stop]);
-
-  const handleSelectWordIndex = useCallback((index: number) => {
-    setActiveWordIndex(index);
-  }, []);
+  const handleSelectWordIndex = useCallback(
+    (index: number) => {
+      const nextIndex = Math.min(Math.max(index, 0), words.length - 1);
+      if (nextIndex === activeWordIndex) return;
+      stop();
+      resetSpeech();
+      setActiveWordIndex(nextIndex);
+    },
+    [activeWordIndex, resetSpeech, stop, words.length]
+  );
   const group = useMemo(
     () =>
       resolveGroup(
@@ -116,10 +91,10 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
       if (e.key === "ArrowLeft") {
         e.preventDefault();
-        setActiveWordIndex((prev) => Math.max(0, prev - 1));
+        handleSelectWordIndex(activeWordIndex - 1);
       } else if (e.key === "ArrowRight") {
         e.preventDefault();
-        setActiveWordIndex((prev) => Math.min(words.length - 1, prev + 1));
+        handleSelectWordIndex(activeWordIndex + 1);
       } else if (
         e.code === "Space" &&
         (e.target === document.body || e.target === document.documentElement)
@@ -131,7 +106,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [words.length, inspectedWord, handleToggle]);
+  }, [activeWordIndex, handleSelectWordIndex, inspectedWord, handleToggle]);
 
   // Touch swipe gesture support for mobile
   const touchStartX = useRef<number | null>(null);
@@ -156,49 +131,62 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   return (
     <ExerciseShell
       step={step}
-      title="Vocabulary Flashcards"
+      title="Listen & repeat"
       words={words}
       lessonId={lessonId}
       dispatch={dispatch}
       progress={{ current: activeWordIndex + 1, total: words.length }}
+      progressLabel="Word"
       subtitle={
         <>
-          <span className="uppercase tracking-wider">{group.name}</span>
-          <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
-            <Volume2 className="size-3" aria-hidden />
-            <span>
-              Word {activeWordIndex + 1} of {words.length}
-            </span>
+          <span>{group.name}</span>
+          <span className="text-foreground font-semibold" aria-hidden="true">
+            {activeWordIndex + 1} of {words.length}
           </span>
         </>
       }
       footer={
-        <div className="flex flex-col gap-2">
-          <PrimaryButton
-            label="Continue to Context Sentences →"
+        <div className="grid grid-cols-[auto_1fr] gap-3">
+          <button
+            type="button"
+            aria-label="Previous word"
+            disabled={activeWordIndex === 0}
+            onClick={() => handleSelectWordIndex(activeWordIndex - 1)}
+            className="min-h-[48px] min-w-[48px] sm:px-5 rounded-xl border border-border bg-wp-card text-foreground font-sans font-bold flex items-center justify-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            <ChevronLeft className="size-5" aria-hidden />
+            <span className="hidden sm:inline">Previous</span>
+          </button>
+          <button
+            type="button"
             onClick={() => {
-              stop();
-              dispatch({ type: "LESSON_NEXT" });
+              if (isLastWord) {
+                stop();
+                resetSpeech();
+                dispatch({ type: "LESSON_NEXT" });
+              } else {
+                handleSelectWordIndex(activeWordIndex + 1);
+              }
             }}
-          />
-          <div className="hidden sm:flex w-full items-center text-xs font-sans font-semibold text-muted-foreground px-1 mt-1">
-            <div className="flex items-center gap-1.5 text-wp-amber font-bold">
-              <Keyboard className="size-4" aria-hidden />
-              <span>Use Left/Right arrows to navigate · Space to play audio</span>
-            </div>
-          </div>
+            className="min-h-[48px] px-5 rounded-xl bg-wp-blue text-wp-text-on-blue font-sans font-bold flex items-center justify-center gap-2 shadow-wp-xs active:opacity-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue"
+          >
+            <span>{isLastWord ? "Continue to sentences" : "Next word"}</span>
+            <ChevronRight className="size-5" aria-hidden />
+          </button>
         </div>
       }
     >
       <div role="status" aria-live="polite" aria-atomic="true" className="sr-only">
-        {isPlaying ? `Now playing: ${currentWord.label}` : ""}
+        {isPlaying
+          ? `Playing ${currentWord.label}`
+          : `Word ${activeWordIndex + 1} of ${words.length}: ${currentWord.label}`}
       </div>
 
-      <div className="relative flex flex-col gap-2.5 sm:gap-3.5 w-full max-w-2xl mx-auto h-full min-h-0 justify-center">
-        {/* Compact Word Selector Thumbnails Strip */}
-        <div
-          className="flex justify-center gap-1.5 sm:gap-2 shrink-0 overflow-x-auto py-1 px-1 scrollbar-none"
-          role="tablist"
+      <div className="relative flex flex-col gap-3.5 w-full max-w-2xl mx-auto min-h-0 justify-start sm:h-full sm:justify-center">
+        {/* Direct word selection is useful on larger screens but duplicates
+            progress and navigation on a phone. */}
+        <nav
+          className="hidden sm:flex justify-center gap-2 shrink-0 overflow-x-auto py-1 px-1 scrollbar-none"
           aria-label="Group vocabulary words"
         >
           {words.map((w, index) => {
@@ -207,8 +195,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               <button
                 key={w.id}
                 type="button"
-                role="tab"
-                aria-selected={isSelected}
+                aria-current={isSelected ? "true" : undefined}
                 onClick={() => handleSelectWordIndex(index)}
                 className={`relative size-10 sm:size-12 min-h-[44px] min-w-[44px] rounded-xl overflow-hidden transition-all shrink-0 ${
                   isSelected
@@ -224,7 +211,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               </button>
             );
           })}
-        </div>
+        </nav>
 
         {/* Main Flashcard Container with Swipe Support */}
         <div
@@ -232,48 +219,20 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           onTouchEnd={handleTouchEnd}
           className="w-full flex flex-col gap-3.5 bg-wp-card border border-border rounded-2xl sm:rounded-3xl p-3 sm:p-5 shadow-wp-md"
         >
-          {/* Image Container with Floating Chevron Navigation Arrows */}
-          <div className="w-full relative rounded-xl sm:rounded-2xl overflow-hidden border border-border/70 bg-muted shrink-0 aspect-[4/3] sm:aspect-[16/10] max-h-[36dvh] sm:max-h-[42dvh]">
+          {/* The picture is the learning material, so it stays unobstructed. */}
+          <div className="w-full relative rounded-xl sm:rounded-2xl overflow-hidden bg-muted shrink-0 aspect-[4/3] sm:aspect-[16/10] max-h-[36dvh] sm:max-h-[42dvh]">
             <WordImage
               word={currentWord}
               className="w-full h-full absolute inset-0 object-cover"
               loading="eager"
               fetchPriority="high"
             />
-
-            {/* Left Floating Chevron Navigation Arrow */}
-            <button
-              type="button"
-              disabled={activeWordIndex === 0}
-              onClick={(e) => {
-                e.stopPropagation();
-                handleSelectWordIndex(activeWordIndex - 1);
-              }}
-              className="absolute start-2 sm:start-3 top-1/2 -translate-y-1/2 size-10 sm:size-12 min-h-[44px] min-w-[44px] rounded-full bg-black/60 hover:bg-black/85 text-white backdrop-blur-md flex items-center justify-center transition-all disabled:opacity-0 disabled:pointer-events-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-white z-20 shadow-md cursor-pointer"
-              aria-label="Previous word"
-            >
-              <ChevronLeft className="size-6" />
-            </button>
-
-            {/* Right Floating Chevron Navigation Arrow */}
-            <button
-              type="button"
-              disabled={activeWordIndex === words.length - 1}
-              onClick={(e) => {
-                e.stopPropagation();
-                handleSelectWordIndex(activeWordIndex + 1);
-              }}
-              className="absolute end-2 sm:end-3 top-1/2 -translate-y-1/2 size-10 sm:size-12 min-h-[44px] min-w-[44px] rounded-full bg-black/60 hover:bg-black/85 text-white backdrop-blur-md flex items-center justify-center transition-all disabled:opacity-0 disabled:pointer-events-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-white z-20 shadow-md cursor-pointer"
-              aria-label="Next word"
-            >
-              <ChevronRight className="size-6" />
-            </button>
           </div>
 
           {/* Dedicated Word Info & Actions Section Below Image */}
           <div className="flex flex-col gap-3">
             {/* Word Name, Phonetic, and Arabic Meaning */}
-            <div className="flex items-center justify-between gap-3 flex-wrap sm:flex-nowrap border-b border-border/60 pb-3">
+            <div className="flex flex-col gap-3">
               <div className="flex flex-col min-w-0">
                 <div className="flex items-baseline gap-2 flex-wrap">
                   <h2 className="font-sans font-black text-foreground text-2xl sm:text-3xl leading-tight capitalize">
@@ -287,25 +246,36 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                     /
                   </span>
                 </div>
-                <p
-                  className="font-arabic font-bold text-wp-amber text-base sm:text-lg mt-0.5"
-                  dir="rtl"
-                  lang="ar"
-                >
-                  {lexiconEntry.arabic}
-                </p>
+                {/* Dropped entirely when there is no gloss: an English string
+                    in here would be laid out right-to-left and announced as
+                    Arabic. */}
+                {hasArabicGloss(lexiconEntry) && (
+                  <p
+                    className="font-arabic font-bold text-wp-amber text-base sm:text-lg mt-0.5"
+                    dir="rtl"
+                    lang="ar"
+                  >
+                    {lexiconEntry.arabic}
+                  </p>
+                )}
               </div>
 
               {/* Action Buttons: Listen & Speak */}
-              <div className="flex items-center gap-2 shrink-0">
+              <div
+                className="grid grid-cols-1 min-[360px]:grid-cols-2 gap-2"
+                aria-label="Pronunciation practice"
+              >
                 {/* Listen button */}
                 <button
                   type="button"
                   onClick={handleToggle}
                   aria-label={`Play audio pronunciation for ${currentWord.label}`}
-                  className="flex items-center gap-2 px-4 py-2.5 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-md hover:bg-primary/90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer group"
+                  className="flex items-center justify-center gap-2 px-4 py-2.5 min-h-[48px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-md hover:bg-primary/90 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer"
                 >
-                  <Volume2 className={`size-5 ${isPlaying ? "motion-safe:animate-pulse" : ""}`} />
+                  <Volume2
+                    className={`size-5 ${isPlaying ? "motion-safe:animate-pulse" : ""}`}
+                    aria-hidden
+                  />
                   <span>{isPlaying ? "Playing..." : "Listen"}</span>
                 </button>
 
@@ -319,34 +289,46 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                         ? "Stop recording speech"
                         : `Practice speaking ${currentWord.label}`
                     }
-                    className={`size-11 min-h-[44px] min-w-[44px] rounded-xl transition-all flex items-center justify-center border shadow-xs focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer group ${
-                      speechSuccess
-                        ? "bg-wp-green text-wp-text-on-green border-wp-green scale-105"
+                    className={`min-h-[48px] px-4 py-2.5 rounded-xl transition-all flex items-center justify-center gap-2 border font-sans font-bold text-sm shadow-xs focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer ${
+                      attempt?.matched
+                        ? "bg-wp-green text-wp-text-on-green border-wp-green"
                         : isListening
                           ? "bg-wp-rose text-white border-wp-rose motion-safe:animate-pulse"
-                          : "bg-secondary text-foreground hover:bg-secondary/80 border-border"
+                          : "bg-wp-card text-foreground hover:bg-secondary border-border"
                     }`}
                   >
-                    {speechSuccess ? (
-                      <CheckCircle2 className="size-5" />
+                    {attempt?.matched ? (
+                      <CheckCircle2 className="size-5" aria-hidden />
                     ) : isListening ? (
-                      <MicOff className="size-5" />
+                      <MicOff className="size-5" aria-hidden />
                     ) : (
-                      <Mic className="size-5" />
+                      <Mic className="size-5" aria-hidden />
                     )}
+                    <span>
+                      {attempt?.matched
+                        ? "Recognized"
+                        : isListening
+                          ? "Stop listening"
+                          : "Practice speaking"}
+                    </span>
                   </button>
                 )}
               </div>
             </div>
 
-            {/* View Full Details Button */}
+            {speechStatus !== "unsupported" && !attempt && speechStatus === "idle" && (
+              <p className="font-sans text-xs text-muted-foreground">
+                Speaking is optional. Your microphone starts only when you choose Practice speaking.
+              </p>
+            )}
+
             <button
               type="button"
               onClick={() => setInspectedWord(currentWord)}
-              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 min-h-[44px] rounded-xl bg-secondary/80 hover:bg-secondary text-foreground text-xs sm:text-sm font-sans font-semibold border border-border hover:border-primary/40 active:scale-[0.99] transition-all cursor-pointer"
+              className="self-start flex items-center justify-center gap-2 py-2.5 px-3 min-h-[44px] rounded-xl text-primary text-xs sm:text-sm font-sans font-semibold hover:bg-primary/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer"
             >
-              <BookOpen className="size-4 text-primary" />
-              <span>View Word Details, Collocations & Examples</span>
+              <BookOpen className="size-4" aria-hidden />
+              <span>Word details</span>
             </button>
           </div>
         </div>
@@ -355,7 +337,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         {speechStatus === "listening" && (
           <div className="bg-primary/10 border border-primary/30 rounded-xl px-3 py-2 flex items-center justify-between gap-2 shrink-0">
             <div className="flex items-center gap-2">
-              <Mic className="size-4 text-primary animate-bounce" />
+              <Mic className="size-4 text-primary motion-safe:animate-bounce" aria-hidden />
               <span className="font-sans text-xs font-bold text-primary">
                 Listening... Say &ldquo;{currentWord.label}&rdquo; clearly!
               </span>
@@ -375,20 +357,45 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           </div>
         )}
 
-        {attempt && attempt.matched && (
-          <div className="bg-wp-green/10 border border-wp-green/30 rounded-xl px-3 py-1.5 flex items-center justify-between gap-2 shrink-0">
+        {attempt?.matched && (
+          <div
+            role="status"
+            className="bg-wp-green/10 border border-wp-green/30 rounded-xl px-3 py-2 flex items-center gap-2 shrink-0"
+          >
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="size-3.5 text-wp-green" />
+              <CheckCircle2 className="size-3.5 text-wp-green" aria-hidden />
               <span className="font-sans text-xs font-bold text-wp-green">
-                Pronunciation Recognized! 🎉
+                Word recognized. Nice work!
               </span>
             </div>
-            {attempt.accuracy > 0 && (
-              <span className="text-[11px] font-black px-2 py-0.5 rounded-full bg-wp-green text-white">
-                {attempt.accuracy}% Match · {attempt.grade.toUpperCase()}
-              </span>
-            )}
           </div>
+        )}
+
+        {attempt && !attempt.matched && (
+          <div
+            role="status"
+            className="bg-wp-amber/10 border border-wp-amber/30 rounded-xl px-3 py-2"
+          >
+            <p className="font-sans text-xs font-bold text-wp-amber">
+              Try again—say &ldquo;{currentWord.label}&rdquo; slowly, or continue without speaking.
+            </p>
+          </div>
+        )}
+
+        {speechStatus === "denied" && (
+          <p role="status" className="font-sans text-muted-foreground text-xs text-center">
+            Microphone access is blocked. You can continue without speaking.
+          </p>
+        )}
+        {speechStatus === "no-speech" && (
+          <p role="status" className="font-sans text-muted-foreground text-xs text-center">
+            I couldn&rsquo;t hear you. Try again or continue without speaking.
+          </p>
+        )}
+        {speechStatus === "error" && (
+          <p role="status" className="font-sans text-muted-foreground text-xs text-center">
+            Speaking practice is unavailable right now. You can continue normally.
+          </p>
         )}
 
         {!isSupported && (

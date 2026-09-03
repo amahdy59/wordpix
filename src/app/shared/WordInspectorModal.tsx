@@ -1,8 +1,9 @@
 import { memo, useRef } from "react";
+import { createPortal } from "react-dom";
 import { X, Volume2, BookOpen, Layers, Zap } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { VocabularyItem } from "../data/lessons";
-import { getLexiconEntry } from "../data/lexiconDictionary";
+import { getLexiconEntry, hasArabicGloss } from "../data/lexiconDictionary";
 import { useAudio } from "./useAudio";
 import { useModalA11y } from "./useModalA11y";
 import { resolveAssetUrl } from "../../utils/assetUrl";
@@ -26,7 +27,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
 
   const entry = getLexiconEntry(word.id, word.label);
 
-  return (
+  return createPortal(
     <AnimatePresence>
       <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-6 bg-black/70 backdrop-blur-sm">
         {/* Backdrop dismiss */}
@@ -88,15 +89,23 @@ export const WordInspectorModal = memo(function WordInspectorModal({
 
           {/* Scrollable Content Body */}
           <div className="flex-1 min-h-0 p-4 sm:p-6 overflow-y-auto overscroll-contain touch-pan-y flex flex-col gap-4">
-            {/* Arabic Translation Card */}
+            {/* Arabic Translation Card. The part of speech is worth showing on
+                its own, so the card stays when the gloss is missing and only
+                the Arabic line drops out — see `hasArabicGloss`. */}
             <div className="bg-primary/5 border border-primary/20 rounded-2xl p-4 flex items-center justify-between gap-3">
-              <p
-                className="font-arabic font-black text-foreground text-xl sm:text-2xl"
-                dir="rtl"
-                lang="ar"
-              >
-                {entry.arabic}
-              </p>
+              {hasArabicGloss(entry) ? (
+                <p
+                  className="font-arabic font-black text-foreground text-xl sm:text-2xl"
+                  dir="rtl"
+                  lang="ar"
+                >
+                  {entry.arabic}
+                </p>
+              ) : (
+                <p className="font-sans text-sm text-muted-foreground italic">
+                  Translation not available yet
+                </p>
+              )}
               <span className="text-xs font-sans font-bold px-3 py-1 bg-primary/10 text-primary rounded-full uppercase tracking-wider border border-primary/20 shrink-0">
                 {entry.partOfSpeech}
               </span>
@@ -229,6 +238,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
           </div>
         </motion.div>
       </div>
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 });

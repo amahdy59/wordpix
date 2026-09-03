@@ -529,7 +529,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
 
   if (!state) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50 text-gray-400">
+      <div className="min-h-dvh flex items-center justify-center bg-background text-muted-foreground">
         Loading profile...
       </div>
     );

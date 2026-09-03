@@ -21,6 +21,8 @@ interface Props {
   current: number;
   /** Total number of steps in the flow (default 6) */
   total?: number;
+  /** Noun announced for this progress value. */
+  progressLabel?: string;
   onBack: () => void;
   onClose: () => void;
 }
@@ -34,6 +36,7 @@ export const LessonHeader = memo(function LessonHeader({
   subtitle,
   current,
   total = 6,
+  progressLabel = "Step",
   onBack,
   onClose,
 }: Props) {
@@ -42,7 +45,14 @@ export const LessonHeader = memo(function LessonHeader({
   const pct = Math.round((safeCurrent / safeTotal) * 100);
 
   return (
-    <div className="content-stretch flex flex-col gap-[8px] px-5 py-3 md:px-8 md:py-4 relative shrink-0 w-full">
+    // A `header`, not a `div`. The exercise screens do not go through AppShell,
+    // so this row — the title, the back and close buttons, and the progress
+    // bar — was the only content on the page outside any landmark, which axe
+    // flags and which leaves a screen-reader user unable to jump to it.
+    <header
+      aria-label="Lesson"
+      className="content-stretch flex flex-col gap-[8px] px-5 py-3 md:px-8 md:py-4 relative shrink-0 w-full"
+    >
       <div className="content-stretch flex items-center justify-between relative shrink-0 w-full gap-3">
         <div className="shrink-0">
           <BackButton onClick={onBack} />
@@ -63,11 +73,11 @@ export const LessonHeader = memo(function LessonHeader({
       {/* Progress bar */}
       <div
         role="progressbar"
-        aria-label="Lesson progress"
+        aria-label={`${progressLabel} progress`}
         aria-valuenow={pct}
         aria-valuemin={0}
         aria-valuemax={100}
-        aria-valuetext={`Step ${safeCurrent} of ${safeTotal}`}
+        aria-valuetext={`${progressLabel} ${safeCurrent} of ${safeTotal}`}
         className="bg-primary/20 h-[8px] relative rounded-full shrink-0 w-full overflow-hidden"
       >
         <div
@@ -75,6 +85,6 @@ export const LessonHeader = memo(function LessonHeader({
           style={{ width: `${pct}%` }}
         />
       </div>
-    </div>
+    </header>
   );
 });

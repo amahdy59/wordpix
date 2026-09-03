@@ -308,7 +308,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                     isCompleted
                       ? "border-wp-green/30 bg-wp-green-light/10 hover:bg-wp-green-light/20 shadow-sm"
                       : isNextToStudy
-                        ? "border-primary border-[2px] bg-secondary shadow-md hover:scale-[1.01]"
+                        ? "border-primary border-[2px] bg-secondary shadow-md"
                         : "border-border hover:border-primary/50 hover:bg-secondary/50 shadow-sm hover:shadow-md"
                   }`}
                 >

@@ -105,7 +105,20 @@ function AppInner() {
         transition={{ type: "spring", bounce: 0, duration: 0.4 }}
       >
         <UpdatePrompt />
-        <div id="a11y-live-region" className="sr-only" aria-live="polite" aria-atomic="true" />
+        {/*
+          `role="status"` rather than a bare div.
+          The element is visually hidden but is still page content, so axe's
+          `region` rule counted it as sitting outside every landmark. A status
+          region is a landmark in its own right, which is also a more honest
+          description of what this is than "div with aria-live".
+        */}
+        <div
+          id="a11y-live-region"
+          role="status"
+          className="sr-only"
+          aria-live="polite"
+          aria-atomic="true"
+        />
         <RouterView state={state} dispatch={dispatch} />
       </MotionConfig>
     </ErrorBoundary>

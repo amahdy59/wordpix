@@ -14,10 +14,19 @@
  * anything, and --max-chars refuses to exceed a budget mid-run, so a mistake
  * in tier selection cannot quietly consume a month's character allowance.
  *
+ * The ledger is an optimisation, not the source of truth — the bucket is. If
+ * the two drift (a ledger committed from a run whose uploads failed, a bucket
+ * lifecycle rule, an object deleted by hand) then a clip is skipped that does
+ * not exist, and the app falls back to the robot voice forever with nothing to
+ * say why. --reconcile re-checks the ledger against the bucket and drops what
+ * is not really there, so the next run regenerates it.
+ *
  * Usage:
  *   node scripts/generate_audio.cjs --dry-run
+ *   node scripts/generate_audio.cjs --tier=words        # highest value, cheapest
  *   node scripts/generate_audio.cjs --limit=60          # one unit's worth
  *   node scripts/generate_audio.cjs --max-chars=120000
+ *   node scripts/generate_audio.cjs --reconcile         # ledger vs bucket
  *
  * Requires ELEVENLABS_API_KEY (no VITE_ prefix — this key must never reach the
  * browser) plus the R2_* variables, in .env.local or the CI environment.
@@ -41,6 +50,11 @@ const arg = (name, fallback = null) => {
 const flag = (name) => process.argv.includes(`--${name}`);
 
 const DRY_RUN = flag("dry-run");
+const RECONCILE = flag("reconcile");
+const TIERS = (arg("tier", "") || arg("tiers", ""))
+  .split(",")
+  .map((t) => t.trim())
+  .filter(Boolean);
 const LIMIT = Number(arg("limit", 0)) || Infinity;
 const MAX_CHARS = Number(arg("max-chars", 0)) || Infinity;
 const CONCURRENCY = Number(arg("concurrency", 4));
@@ -113,12 +127,59 @@ async function withRetry(fn, label, attempts = 4) {
   }
 }
 
+/**
+ * Re-checks every ledger entry against the bucket and forgets the ones that
+ * are not there.
+ *
+ * Reads only — HEAD costs nothing and spends no ElevenLabs characters — so
+ * this is safe to run on a schedule. What it protects against is the silent
+ * case: a ledger that says "paid for" about an object that no longer exists
+ * means the generator skips it forever and the app never gets that clip.
+ */
+async function reconcile(corpus, ledger) {
+  const r2 = createClient();
+  await r2.verify();
+
+  const hashes = corpus.map((e) => e.hash).filter((h) => ledger.clips[h]);
+  console.log(`checking ${hashes.length} ledger entries against ${r2.config.bucket}…`);
+
+  const dropped = [];
+  let index = 0;
+  await Promise.all(
+    Array.from({ length: CONCURRENCY * 2 }, async () => {
+      while (index < hashes.length) {
+        const hash = hashes[index++];
+        const key = `audio/${hash.slice(0, 2)}/${hash}.mp3`;
+        if (!(await r2.exists(key))) {
+          dropped.push(hash);
+          delete ledger.clips[hash];
+        }
+      }
+    })
+  );
+
+  if (dropped.length) writeLedger(ledger);
+  console.log(`
+present : ${hashes.length - dropped.length}`);
+  console.log(`dropped : ${dropped.length} (ledger claimed these but the bucket does not have them)`);
+  if (dropped.length) console.log("\nRe-run without --reconcile to regenerate them.");
+}
+
 async function main() {
   if (!fs.existsSync(CORPUS)) {
     throw new Error("No corpus. Run: node scripts/build_audio_corpus.cjs");
   }
-  const corpus = JSON.parse(fs.readFileSync(CORPUS, "utf8"));
+  const allClips = JSON.parse(fs.readFileSync(CORPUS, "utf8"));
+  const corpus = TIERS.length ? allClips.filter((e) => TIERS.includes(e.tier)) : allClips;
+  if (TIERS.length) {
+    console.log(`tiers      : ${TIERS.join(", ")} (${corpus.length} of ${allClips.length} clips)`);
+  }
   const ledger = readLedger();
+
+  if (RECONCILE) {
+    await reconcile(corpus, ledger);
+    return;
+  }
 
   const pending = corpus.filter((entry) => !ledger.clips[entry.hash]).slice(0, LIMIT);
   const alreadyPaid = corpus.length - corpus.filter((e) => !ledger.clips[e.hash]).length;

@@ -120,9 +120,15 @@ describe("Components use tokens, not raw palette values", () => {
    * and audio bars were hardcoded bg-slate-950/900 and stayed fixed in both
    * light and dark mode; accent tints used bg-amber-500/10 alongside the
    * --wp-amber they duplicated.
+   *
+   * The hue list is the whole Tailwind palette rather than the handful that
+   * had offended so far. A narrower list is a rule that only catches the
+   * mistakes already made: the onboarding CTA sat on `bg-blue-700` through
+   * several rounds of this check precisely because `blue` was not named, and
+   * so it never picked up the high-contrast theme the tokens carry.
    */
   const FORBIDDEN =
-    /\b(?:bg|text|border|fill|from|via|to)-(?:slate|amber|rose|teal|violet|emerald|indigo)-\d/;
+    /\b(?:bg|text|border|fill|from|via|to|outline|ring|divide|shadow|accent|caret|decoration|placeholder)-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose)-\d/;
 
   it.each(componentFiles.map((f) => [relative(resolve(__dirname, ".."), f), f]))(
     "%s uses only semantic colour tokens",

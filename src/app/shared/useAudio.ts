@@ -160,6 +160,15 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
   const requestRef = useRef(0);
 
   useEffect(() => {
+    // Set on mount, not only cleared on unmount.
+    //
+    // A ref survives StrictMode's deliberate mount-unmount-remount in
+    // development, so the cleanup left this `false` for the rest of the
+    // session and every audio path bailed on its first guard: no speech, and a
+    // "Playing sound…" chip that never cleared because the chain stopped
+    // halfway. Assigning on mount restores the flag for the remount, and is
+    // what makes this correct under any future remount too.
+    isMountedRef.current = true;
     return () => {
       isMountedRef.current = false;
     };
@@ -173,6 +182,19 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
       const generation = ++requestRef.current;
       /** True while this call is still the one the learner is waiting on. */
       const isCurrent = () => isMountedRef.current && requestRef.current === generation;
+      /**
+       * Publishes status only while this call still owns the player.
+       *
+       * Every step below is separated from the last by an `await`, and a
+       * `stop()` or a newer `speak()` can land in any of those gaps. A raw
+       * `setStatus` then wrote *after* the newer owner had already settled the
+       * UI, and "loading" — written by a request that had since been
+       * abandoned — stuck permanently: the drill showed "Playing sound…" for
+       * the rest of the session and the replay button did nothing.
+       */
+      const publish = (next: AudioStatus) => {
+        if (isCurrent()) setStatus(next);
+      };
 
       // Spend the gesture now, before the first `await`. See `unlockSynthesis`.
       if (synthRef.current) unlockSynthesis(synthRef.current);
@@ -188,12 +210,12 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
         if (!isCurrent()) return;
         const synth = synthRef.current;
         if (!synth) {
-          setStatus("unsupported");
+          publish("unsupported");
           return;
         }
 
         synth.cancel();
-        setStatus("loading");
+        publish("loading");
 
         const utterance = new SpeechSynthesisUtterance(fallbackText);
         utterance.lang = fallbackLang;
@@ -207,25 +229,22 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
         utterance.onstart = () => {
           if (!isMountedRef.current) return;
           clearStall();
-          setStatus("playing");
+          publish("playing");
         };
         utterance.onend = () => {
           if (!isMountedRef.current) return;
           clearStall();
-          setStatus("idle");
+          publish("idle");
         };
         utterance.onerror = (e) => {
           if (!isMountedRef.current) return;
           clearStall();
-          if (e.error !== "interrupted" && e.error !== "canceled") {
-            setStatus("error");
-          } else {
-            setStatus("idle");
-          }
+          publish(e.error !== "interrupted" && e.error !== "canceled" ? "error" : "idle");
         };
 
         clearStall();
         stallTimerRef.current = window.setTimeout(() => {
+          if (!isCurrent()) return;
           setStatus((current) => (current === "loading" ? "error" : current));
         }, SPEECH_START_TIMEOUT_MS);
 
@@ -241,13 +260,13 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
         if (!isCurrent()) return;
         const audio = new Audio(blobUrl);
         audio.playbackRate = effectiveRate;
-        audio.onplay = () => {
+        audio.onplaying = () => {
           clearStall();
-          setStatus("playing");
+          publish("playing");
         };
         audio.onended = () => {
           clearStall();
-          setStatus("idle");
+          publish("idle");
         };
         audio.onerror = () => {
           clearStall();
@@ -277,7 +296,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
         const cacheKey = `cdn:${url}`;
 
         if (audioCache.has(cacheKey)) {
-          setStatus("loading");
+          publish("loading");
           playBlobUrl(audioCache.get(cacheKey)!);
           return true;
         }
@@ -286,7 +305,7 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
         if (stored) {
           const objectUrl = URL.createObjectURL(stored);
           cacheAudioUrl(cacheKey, objectUrl);
-          setStatus("loading");
+          publish("loading");
           playBlobUrl(objectUrl);
           return true;
         }
@@ -323,27 +342,49 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
           const audio = new Audio(url);
           audio.playbackRate = effectiveRate;
           audio.volume = volume;
+          let started = false;
           let settled = false;
           const settle = (ok: boolean) => {
             if (settled) return;
             settled = true;
             resolve(ok);
           };
-          audio.onplay = () => {
+
+          // `playing`, not `play`.
+          //
+          // `play` fires the moment `play()` is called and the element is no
+          // longer paused — before the browser has looked at the response. A
+          // 404 therefore announced itself as a successful start, the caller
+          // skipped its fallback, and the status stayed on "playing" for good
+          // because a clip that never began also never ends. `playing` fires
+          // only once frames are actually being rendered.
+          audio.onplaying = () => {
+            started = true;
             clearStall();
-            if (isCurrent()) setStatus("playing");
+            publish("playing");
             settle(true);
           };
           audio.onended = () => {
             clearStall();
-            if (isCurrent()) setStatus("idle");
+            publish("idle");
           };
           audio.onerror = () => {
             clearStall();
-            settle(false);
+            // An error after playback began is the end of the clip as far as
+            // the UI is concerned; before it, it is a miss to fall through on.
+            if (started) publish("idle");
+            else settle(false);
           };
           currentAudioRef.current = audio;
-          setStatus("loading");
+          publish("loading");
+
+          // Nothing guarantees either event arrives — a request can hang on a
+          // dead connection. Without this the drill would wait for it forever.
+          clearStall();
+          stallTimerRef.current = window.setTimeout(() => {
+            if (!started) settle(false);
+          }, SPEECH_START_TIMEOUT_MS);
+
           audio.play().catch(() => {
             clearStall();
             settle(false);
@@ -404,14 +445,15 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
         const cacheKey = `eleven:${voiceId}:${cleanText.toLowerCase()}`;
 
         if (audioCache.has(cacheKey)) {
-          setStatus("loading");
+          publish("loading");
           playBlobUrl(audioCache.get(cacheKey)!);
           return;
         }
 
-        setStatus("loading");
+        publish("loading");
         clearStall();
         stallTimerRef.current = window.setTimeout(() => {
+          if (!isCurrent()) return;
           setStatus((current) => (current === "loading" ? "error" : current));
         }, SPEECH_START_TIMEOUT_MS * 2);
 

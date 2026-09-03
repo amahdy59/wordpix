@@ -4,7 +4,6 @@ import { resolveGroup, type VocabularyItem } from "../data/lessons";
 import { LessonHeader } from "./LessonHeader";
 import { HomeIndicator } from "./HomeIndicator";
 import { ExitConfirmModal } from "./ExitConfirmModal";
-import { KeyboardShortcutsModal } from "./KeyboardShortcutsModal";
 
 export type ExerciseMode = "teach" | "guided" | "retrieval" | "assessment";
 
@@ -23,6 +22,8 @@ interface Props {
   footer: React.ReactNode;
   /** Optional current / total progress inside the exercise to drive progress bar dynamically */
   progress?: { current: number; total: number } | number;
+  /** Noun used by the progress bar, for example "Word" or "Question". */
+  progressLabel?: string;
 }
 
 const STEP_LABELS = [
@@ -47,9 +48,9 @@ export const ExerciseShell = memo(function ExerciseShell({
   children,
   footer,
   progress,
+  progressLabel,
 }: Props) {
   const [showExitModal, setShowExitModal] = useState(false);
-  const [showShortcutsModal, setShowShortcutsModal] = useState(false);
 
   // `lessonId` used to default to "essential-furniture" and fall back to the
   // first group on an unknown id, so a review session — or any lesson whose id
@@ -75,11 +76,6 @@ export const ExerciseShell = memo(function ExerciseShell({
           dispatch({ type: "GO", to: "home" });
         }}
       />
-      <KeyboardShortcutsModal
-        isOpen={showShortcutsModal}
-        onClose={() => setShowShortcutsModal(false)}
-      />
-
       {/* ── RIGHT PANEL: Desktop & Mobile Exercise Main View ────────────────── */}
       <div className="flex-1 flex flex-col h-dvh overflow-hidden relative">
         <LessonHeader
@@ -87,6 +83,7 @@ export const ExerciseShell = memo(function ExerciseShell({
           subtitle={subtitle}
           current={currentProgress}
           total={totalProgress}
+          progressLabel={progressLabel}
           onBack={() => dispatch({ type: "LESSON_PREVIOUS" })}
           onClose={() => setShowExitModal(true)}
         />

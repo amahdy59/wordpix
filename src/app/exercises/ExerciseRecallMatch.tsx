@@ -68,12 +68,17 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   useEffect(() => {
     stop();
     const wordId = currentTargetWord.id;
-    if (!hasSpokenRef.current[wordId]) {
+    if (hasSpokenRef.current[wordId]) return undefined;
+    // The flag is set when the prompt actually plays, not when it is
+    // scheduled. Setting it up front meant a cleanup that ran before the
+    // timer — StrictMode's double effect in development does exactly that —
+    // cancelled the only playback and then marked the word as already spoken,
+    // so the question was asked with no audio and no way to get it back.
+    const t = setTimeout(() => {
       hasSpokenRef.current[wordId] = true;
-      const t = setTimeout(() => speak(currentTargetWord.label), 400);
-      return () => clearTimeout(t);
-    }
-    return undefined;
+      speak(currentTargetWord.label);
+    }, 400);
+    return () => clearTimeout(t);
   }, [currentTargetWord.id, currentTargetWord.label, speak, stop]);
 
   const replayAudio = useCallback(() => {
@@ -182,8 +187,13 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
           </span>
         </>
       }
+      // The keyboard hint is shown only where there is a keyboard.
+      // `pointer-fine` asks the device directly, which a width breakpoint only
+      // guesses at: a tablet in landscape is wide and still has nothing to
+      // press "1" with, and telling a learner to press a key they do not have
+      // is noise in the one strip of the screen reserved for what to do next.
       footer={
-        <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
+        <div className="w-full hidden pointer-fine:flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-wp-amber font-bold">
             <Keyboard className="size-4" aria-hidden />
             <span>Press 1-{displayCards.length} to choose · R to replay audio</span>
@@ -233,11 +243,27 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
           </button>
         </div>
 
-        {/* Card Image Selection Grid with explicit responsive aspect ratio */}
+        {/*
+          The option cards are capped by viewport *height*, not only shaped by
+          width.
+
+          `min-h` was keyed to width breakpoints — 210px each from `md` up —
+          but what runs out on a short window is height. Two rows of 210px plus
+          the header, the prompt card and the footer overflowed anything under
+          about 600px tall, so options three and four sat below the fold with
+          nothing to say they were there: the learner chose from the two they
+          could see. `max-h` in `dvh` lets the row shrink instead, and
+          `object-cover` on the image keeps the crop sensible as it does.
+
+          Below 700px of height — a landscape phone, a split-screen window —
+          shrinking the rows is not enough on its own, so the four options
+          become a single row instead of a 2x2 block and all of them stay above
+          the fold.
+        */}
         <div
           role="group"
           aria-label="Choose matching picture for audio prompt"
-          className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-5 w-full"
+          className="grid grid-cols-2 [@media(min-width:640px)_and_(max-height:700px)]:grid-cols-4 gap-3 sm:gap-4 md:gap-5 w-full"
         >
           {displayCards.map((card, idx) => {
             const isSelected = selectedId === card.id;
@@ -269,7 +295,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 aria-pressed={isSelected}
                 aria-disabled={feedback !== null}
                 onClick={() => handleCardClick(card)}
-                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full aspect-[4/3] min-h-[130px] sm:min-h-[170px] md:min-h-[210px] block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary shadow-wp-sm ${cardStateStyle}`}
+                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full aspect-[4/3] min-h-[110px] max-h-[min(30dvh,220px)] block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary shadow-wp-sm ${cardStateStyle}`}
               >
                 <span
                   aria-hidden

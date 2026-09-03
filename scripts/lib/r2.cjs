@@ -65,9 +65,18 @@ function readConfig(env = process.env) {
   };
 }
 
-/** Builds the Authorization header for one request. */
-function sign({ config, method, key, payloadHash, extraHeaders = {}, now }) {
-  const url = new URL(`${config.endpoint}/${config.bucket}/${encodeKey(key)}`);
+/**
+ * Builds the Authorization header for one request.
+ *
+ * `key` may be empty, which addresses the bucket itself — that is how the CORS
+ * configuration is read and written. `query` carries the sub-resource
+ * (`?cors`); it has to be part of the canonical request or the signature will
+ * not match the one R2 computes.
+ */
+function sign({ config, method, key, query = "", payloadHash, extraHeaders = {}, now }) {
+  const suffix = key ? `/${encodeKey(key)}` : "";
+  const url = new URL(`${config.endpoint}/${config.bucket}${suffix}`);
+  if (query) url.search = `?${query}`;
   const amzDate = now.toISOString().replace(/[:-]|\.\d{3}/g, "");
   const dateStamp = amzDate.slice(0, 8);
 
@@ -87,10 +96,23 @@ function sign({ config, method, key, payloadHash, extraHeaders = {}, now }) {
   const canonicalHeaders = sortedNames.map((n) => `${n}:${lower[n]}\n`).join("");
   const signedHeaders = sortedNames.join(";");
 
+  // Sorted by parameter name with both halves encoded, per AWS. A valueless
+  // sub-resource such as `cors` still contributes a trailing `=`.
+  const canonicalQuery = query
+    ? query
+        .split("&")
+        .map((pair) => {
+          const [name, value = ""] = pair.split("=");
+          return `${encodeSegment(name)}=${encodeSegment(value)}`;
+        })
+        .sort()
+        .join("&")
+    : "";
+
   const canonicalRequest = [
     method,
     url.pathname,
-    "", // no query string is used by any call here
+    canonicalQuery,
     canonicalHeaders,
     signedHeaders,
     payloadHash,
@@ -124,12 +146,13 @@ function sign({ config, method, key, payloadHash, extraHeaders = {}, now }) {
 function createClient(env = process.env) {
   const config = readConfig(env);
 
-  async function request(method, key, { body, extraHeaders, expect } = {}) {
+  async function request(method, key, { body, extraHeaders, expect, query } = {}) {
     const payload = body ?? Buffer.alloc(0);
     const { url, headers } = sign({
       config,
       method,
       key,
+      query,
       payloadHash: sha256Hex(payload),
       extraHeaders,
       now: new Date(),
@@ -143,7 +166,9 @@ function createClient(env = process.env) {
 
     if (expect && !expect.includes(res.status)) {
       const text = res.status === 404 ? "" : await res.text().catch(() => "");
-      throw new Error(`R2 ${method} ${key} -> ${res.status} ${res.statusText} ${text.slice(0, 300)}`);
+      throw new Error(
+        `R2 ${method} ${key || "(bucket)"} -> ${res.status} ${res.statusText} ${text.slice(0, 300)}`
+      );
     }
     return res;
   }
@@ -185,6 +210,60 @@ function createClient(env = process.env) {
 
     async remove(key) {
       await request("DELETE", key, { expect: [200, 204, 404] });
+    },
+
+    /**
+     * Reads the bucket's CORS configuration, or null when none is set.
+     *
+     * Returned as raw XML. Nothing here needs to interpret it — the only
+     * question ever asked is "is one configured, and does it mention this
+     * origin" — and adding an XML parser to answer that would be a dependency
+     * bought for one string search.
+     */
+    async getCors() {
+      const res = await request("GET", "", { query: "cors", expect: [200, 404] });
+      if (res.status === 404) return null;
+      return res.text();
+    },
+
+    /**
+     * Sets the bucket's CORS configuration.
+     *
+     * Without one, a browser may still *play* an object from the bucket — a
+     * media element is not subject to CORS — but it may not `fetch` the bytes.
+     * That is the difference between audio that works and audio that can also
+     * be cached for offline use, which is why this is part of the pipeline
+     * rather than a console setting someone remembers to click.
+     */
+    async putCors(origins, { methods = ["GET", "HEAD"], maxAgeSeconds = 86400 } = {}) {
+      const rules = origins
+        .map(
+          (origin) =>
+            "<CORSRule>" +
+            `<AllowedOrigin>${origin}</AllowedOrigin>` +
+            methods.map((m) => `<AllowedMethod>${m}</AllowedMethod>`).join("") +
+            "<AllowedHeader>*</AllowedHeader>" +
+            "<ExposeHeader>Content-Length</ExposeHeader>" +
+            "<ExposeHeader>Content-Type</ExposeHeader>" +
+            `<MaxAgeSeconds>${maxAgeSeconds}</MaxAgeSeconds>` +
+            "</CORSRule>"
+        )
+        .join("");
+      const body = Buffer.from(
+        `<?xml version="1.0" encoding="UTF-8"?><CORSConfiguration>${rules}</CORSConfiguration>`,
+        "utf8"
+      );
+      await request("PUT", "", {
+        body,
+        query: "cors",
+        extraHeaders: {
+          "content-type": "application/xml",
+          "content-length": String(body.length),
+          // R2 requires the legacy MD5 checksum on this call.
+          "content-md5": crypto.createHash("md5").update(body).digest("base64"),
+        },
+        expect: [200, 204],
+      });
     },
 
     /**

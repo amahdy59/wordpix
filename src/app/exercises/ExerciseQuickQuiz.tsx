@@ -150,8 +150,13 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
           </span>
         </>
       }
+      // The keyboard hint is shown only where there is a keyboard.
+      // `pointer-fine` asks the device directly, which a width breakpoint only
+      // guesses at: a tablet in landscape is wide and still has nothing to
+      // press "1" with, and telling a learner to press a key they do not have
+      // is noise in the one strip of the screen reserved for what to do next.
       footer={
-        <div className="w-full flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
+        <div className="w-full hidden pointer-fine:flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
           <div className="flex items-center gap-1.5 text-wp-amber font-bold">
             <Keyboard className="size-4" aria-hidden />
             <span>Press 1-{options.length} to choose an option</span>
@@ -177,7 +182,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         <div
           role="group"
           aria-label={`Which image matches ${currentTargetWord.label}?`}
-          className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-5 w-full"
+          className="grid grid-cols-2 [@media(min-width:640px)_and_(max-height:700px)]:grid-cols-4 gap-3 sm:gap-4 md:gap-5 w-full"
         >
           {options.map((option, idx) => {
             const isSelected = selectedId === option.id;
@@ -205,7 +210,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 aria-pressed={isSelected}
                 aria-disabled={feedback !== null}
                 onClick={() => handleSelect(option.id)}
-                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full aspect-[4/3] min-h-[130px] sm:min-h-[170px] md:min-h-[210px] border-2 block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-sm ${borderStyle}`}
+                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full aspect-[4/3] min-h-[110px] max-h-[min(30dvh,220px)] border-2 block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors duration-200 shadow-wp-sm ${borderStyle}`}
               >
                 {/* Keyboard shortcut badge */}
                 <span

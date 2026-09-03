@@ -125,6 +125,15 @@ describe("Responsive Bottom-Sheet Modal Behavior", () => {
     expect(source).toMatch(/items-end\s+sm:items-center/);
     expect(source).toMatch(/rounded-t-\[28px\]\s+sm:rounded-3xl/);
   });
+
+  it("keeps the lesson options sheet fixed to the viewport on touch devices", () => {
+    const source = stripComments(read("lesson/LessonWorldEntry.tsx"));
+
+    // A transformed card becomes the containing block for its fixed menu.
+    // Sticky mobile hover then sized the sheet against the card, not the viewport.
+    expect(source).not.toContain("hover:scale-[1.01]");
+    expect(source).toMatch(/fixed\s+inset-x-4\s+bottom-6/);
+  });
 });
 
 describe("Word Formation Responsive Stacked Cards", () => {
