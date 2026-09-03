@@ -148,29 +148,39 @@ function createClient(env = process.env) {
 
   async function request(method, key, { body, extraHeaders, expect, query } = {}) {
     const payload = body ?? Buffer.alloc(0);
-    const { url, headers } = sign({
-      config,
-      method,
-      key,
-      query,
-      payloadHash: sha256Hex(payload),
-      extraHeaders,
-      now: new Date(),
-    });
+    const payloadHash = sha256Hex(payload);
 
-    const res = await fetch(url, {
-      method,
-      headers,
-      body: method === "GET" || method === "HEAD" ? undefined : payload,
-    });
+    for (let attempt = 1; ; attempt += 1) {
+      try {
+        const { url, headers } = sign({
+          config,
+          method,
+          key,
+          query,
+          payloadHash,
+          extraHeaders,
+          now: new Date(),
+        });
 
-    if (expect && !expect.includes(res.status)) {
-      const text = res.status === 404 ? "" : await res.text().catch(() => "");
-      throw new Error(
-        `R2 ${method} ${key || "(bucket)"} -> ${res.status} ${res.statusText} ${text.slice(0, 300)}`
-      );
+        const res = await fetch(url, {
+          method,
+          headers,
+          body: method === "GET" || method === "HEAD" ? undefined : payload,
+        });
+
+        if (expect && !expect.includes(res.status)) {
+          const text = res.status === 404 ? "" : await res.text().catch(() => "");
+          throw new Error(
+            `R2 ${method} ${key || "(bucket)"} -> ${res.status} ${res.statusText} ${text.slice(0, 300)}`
+          );
+        }
+        return res;
+      } catch (err) {
+        if (attempt >= 4) throw err;
+        const wait = 1000 * 2 ** attempt;
+        await new Promise((r) => setTimeout(r, wait));
+      }
     }
-    return res;
   }
 
   return {

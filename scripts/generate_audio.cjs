@@ -265,6 +265,16 @@ async function main() {
         }
 
         const audio = await withRetry(() => synthesise(entry.text, apiKey), label);
+
+        // Save local backup copy for offline Google Drive archival
+        try {
+          const localPath = path.join(ROOT, "audio_backup", key);
+          fs.mkdirSync(path.dirname(localPath), { recursive: true });
+          fs.writeFileSync(localPath, audio);
+        } catch (backupErr) {
+          console.warn(`  local backup failed for ${key}: ${backupErr.message}`);
+        }
+
         await withRetry(() => r2.put(key, audio, { contentType: "audio/mpeg" }), key);
 
         spentChars += entry.chars;

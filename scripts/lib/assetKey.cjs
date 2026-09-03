@@ -28,7 +28,7 @@ const VOICES = {
 
 /** Current voice settings. Changing any of these re-keys the whole corpus. */
 const AUDIO_PROFILE = {
-  voiceId: process.env.ELEVENLABS_VOICE_ID || VOICES.alice,
+  voiceId: process.env.ELEVENLABS_VOICE_ID || VOICES.nichalia,
   modelId: "eleven_turbo_v2_5",
   stability: 0.7,
   similarityBoost: 0.75,

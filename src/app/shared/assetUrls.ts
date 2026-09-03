@@ -24,7 +24,7 @@ export const VOICES = {
 
 /** Must mirror AUDIO_PROFILE in scripts/lib/assetKey.cjs. */
 export const AUDIO_PROFILE = {
-  voiceId: (import.meta.env?.VITE_ELEVENLABS_VOICE_ID as string) || VOICES.alice,
+  voiceId: (import.meta.env?.VITE_ELEVENLABS_VOICE_ID as string) || VOICES.nichalia,
   modelId: "eleven_turbo_v2_5",
   stability: 0.7,
   similarityBoost: 0.75,
