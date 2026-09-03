@@ -81,11 +81,16 @@ function writeLedger(ledger) {
   fs.mkdirSync(path.dirname(LEDGER), { recursive: true });
   const ordered = {};
   for (const key of Object.keys(ledger.clips).sort()) ordered[key] = ledger.clips[key];
-  fs.writeFileSync(
-    LEDGER,
-    JSON.stringify({ profile: ledger.profile, clips: ordered }, null, 1) + "\n",
-    "utf8"
-  );
+  const content = JSON.stringify({ profile: ledger.profile, clips: ordered }, null, 1) + "\n";
+  // OneDrive/antivirus agents frequently hold the target file open during cloud sync,
+  // causing writeFileSync to fail with UNKNOWN/EPERM. Write to the OS temp dir
+  // (outside OneDrive) first, then copyFile over the target. copyFile does a
+  // kernel-level copy that tolerates readers on the destination; rename would fail
+  // cross-device, and writing directly to LEDGER races the sync agent.
+  const tmp = path.join(require("os").tmpdir(), "audio-ledger.tmp.json");
+  fs.writeFileSync(tmp, content, "utf8");
+  fs.copyFileSync(tmp, LEDGER);
+  fs.rmSync(tmp, { force: true });
 }
 
 async function synthesise(text, apiKey) {
