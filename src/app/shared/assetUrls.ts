@@ -22,9 +22,15 @@ export const VOICES = {
   alice: "Xb7hH8MSUJpSbSDYk0k2", // Alice - Clear, Engaging Educator
 } as const;
 
-/** Must mirror AUDIO_PROFILE in scripts/lib/assetKey.cjs. */
+/**
+ * Must mirror AUDIO_PROFILE in scripts/lib/assetKey.cjs.
+ *
+ * Hardcoded to the voice the corpus was generated with. VITE_ELEVENLABS_VOICE_ID
+ * is for a learner's personal key (see useAudio.ts) and must NOT influence this
+ * profile — a mismatch silently makes every pre-generated URL 404.
+ */
 export const AUDIO_PROFILE = {
-  voiceId: (import.meta.env?.VITE_ELEVENLABS_VOICE_ID as string) || VOICES.nichalia,
+  voiceId: VOICES.nichalia,
   modelId: "eleven_turbo_v2_5",
   stability: 0.7,
   similarityBoost: 0.75,
