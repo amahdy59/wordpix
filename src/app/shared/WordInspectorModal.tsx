@@ -10,12 +10,16 @@ import { resolveAssetUrl } from "../../utils/assetUrl";
 
 interface Props {
   word: VocabularyItem | null;
+  lessonPanel?: boolean;
+  bilingual?: boolean;
   isOpen: boolean;
   onClose: () => void;
 }
 
 export const WordInspectorModal = memo(function WordInspectorModal({
   word,
+  lessonPanel = false,
+  bilingual = true,
   isOpen,
   onClose,
 }: Props) {
@@ -29,7 +33,9 @@ export const WordInspectorModal = memo(function WordInspectorModal({
 
   return createPortal(
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-6 bg-black/70 backdrop-blur-sm">
+      <div
+        className={`fixed inset-0 z-50 flex items-end ${lessonPanel ? "lg:items-stretch lg:justify-end" : "sm:items-center justify-center sm:p-6"} bg-black/70`}
+      >
         {/* Backdrop dismiss */}
         <div className="absolute inset-0" onClick={onClose} aria-hidden="true" />
 
@@ -42,7 +48,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
           role="dialog"
           aria-modal="true"
           aria-labelledby="word-inspector-title"
-          className="relative w-full max-w-xl bg-wp-card border-t sm:border border-border rounded-t-[28px] sm:rounded-3xl shadow-wp-lg overflow-hidden flex flex-col max-h-[90dvh] z-10 pb-[env(safe-area-inset-bottom)] sm:pb-0 pointer-events-auto"
+          className={`${lessonPanel ? "lg:max-w-sm lg:h-dvh lg:!max-h-dvh lg:!rounded-none" : "max-w-xl sm:rounded-3xl"} relative w-full bg-wp-card border-t sm:border border-border rounded-t-[28px] lg:rounded-3xl shadow-wp-lg overflow-hidden flex flex-col max-h-[90dvh] z-10 pb-[env(safe-area-inset-bottom)] sm:pb-0 pointer-events-auto`}
         >
           {/* Top Header with Image & Close Button */}
           <div className="relative h-44 sm:h-52 w-full bg-muted overflow-hidden shrink-0">
@@ -93,7 +99,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
                 its own, so the card stays when the gloss is missing and only
                 the Arabic line drops out — see `hasArabicGloss`. */}
             <div className="bg-primary/5 border border-primary/20 rounded-2xl p-4 flex items-center justify-between gap-3">
-              {hasArabicGloss(entry) ? (
+              {bilingual && hasArabicGloss(entry) ? (
                 <p
                   className="font-arabic font-black text-foreground text-xl sm:text-2xl"
                   dir="rtl"
@@ -101,11 +107,11 @@ export const WordInspectorModal = memo(function WordInspectorModal({
                 >
                   {entry.arabic}
                 </p>
-              ) : (
+              ) : bilingual ? (
                 <p className="font-sans text-sm text-muted-foreground italic">
                   Translation not available yet
                 </p>
-              )}
+              ) : null}
               <span className="text-xs font-sans font-bold px-3 py-1 bg-primary/10 text-primary rounded-full uppercase tracking-wider border border-primary/20 shrink-0">
                 {entry.partOfSpeech}
               </span>
@@ -158,13 +164,15 @@ export const WordInspectorModal = memo(function WordInspectorModal({
                           <span>{pv.phrase}</span>
                           <Volume2 className="size-3.5" />
                         </button>
-                        <span
-                          className="font-arabic text-xs font-bold text-foreground bg-background/80 px-2.5 py-1 rounded-lg border border-border"
-                          dir="rtl"
-                          lang="ar"
-                        >
-                          {pv.arabic}
-                        </span>
+                        {bilingual && (
+                          <span
+                            className="font-arabic text-xs font-bold text-foreground bg-background/80 px-2.5 py-1 rounded-lg border border-border"
+                            dir="rtl"
+                            lang="ar"
+                          >
+                            {pv.arabic}
+                          </span>
+                        )}
                       </div>
                       <p className="font-sans text-xs text-muted-foreground italic">
                         &ldquo;{pv.example}&rdquo;
@@ -212,13 +220,15 @@ export const WordInspectorModal = memo(function WordInspectorModal({
                       <p className="font-sans text-foreground text-sm sm:text-base leading-relaxed">
                         &ldquo;{sentence.en}&rdquo;
                       </p>
-                      <p
-                        className="font-arabic text-muted-foreground text-xs sm:text-sm"
-                        dir="rtl"
-                        lang="ar"
-                      >
-                        {sentence.ar}
-                      </p>
+                      {bilingual && (
+                        <p
+                          className="font-arabic text-muted-foreground text-xs sm:text-sm"
+                          dir="rtl"
+                          lang="ar"
+                        >
+                          {sentence.ar}
+                        </p>
+                      )}
                     </div>
                   ))}
                 </div>

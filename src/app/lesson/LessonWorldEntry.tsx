@@ -1,14 +1,10 @@
 import { memo, useState, useEffect } from "react";
 import type { Action } from "../types";
-import { StatusBar } from "../shared/StatusBar";
-import { HomeIndicator } from "../shared/HomeIndicator";
-import { BackButton } from "../shared/BackButton";
+
 import {
   ArrowRight,
   Layers,
-  CheckCircle2,
   GraduationCap,
-  Check,
   MoreVertical,
   BookOpen,
   Compass,
@@ -18,10 +14,10 @@ import {
   Library,
 } from "lucide-react";
 import { COURSE_UNITS, DEFAULT_UNIT_ID } from "../data/lessons";
-import { findLoadedWord } from "../data/vocabulary";
+import { getWords } from "../data/vocabulary";
+import { GroupThumbnail } from "./GroupThumbnail";
 import { hasLearningMaterials } from "../learning/registry";
 import { useProgress } from "../data/progress";
-import { resolveAssetUrl } from "../../utils/assetUrl";
 
 interface Props {
   unitId?: string;
@@ -50,17 +46,15 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
     );
   };
 
-  const [nextGroupId] = useState<string>(() => {
-    const nextGroup = world.groups.find((g) => g.wordIds.some((id) => !isWordLearned(id)));
-    return nextGroup
-      ? nextGroup.id
-      : (world.groups[world.groups.length - 1]?.id ?? world.groups[0]?.id ?? "group_default");
-  });
+  const startedGroups = world.groups.filter((g) => g.wordIds.some(isWordLearned)).length;
+  const secondaryAction =
+    "min-h-12 rounded-xl border border-border bg-wp-card px-4 py-2 text-foreground font-semibold inline-flex items-center justify-center gap-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary hover:bg-secondary";
 
   // Close menu on click outside or Escape
   useEffect(() => {
     if (!openMenuId) return;
 
+    document.querySelector<HTMLElement>(`#menu-dropdown-${openMenuId} [role="menuitem"]`)?.focus();
     const handlePointerDown = (e: PointerEvent) => {
       const target = e.target as HTMLElement | null;
       if (!target?.closest(`[data-menu-container="${openMenuId}"]`)) {
@@ -125,466 +119,363 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
   };
 
   return (
-    <div className="h-dvh max-h-dvh bg-background flex flex-col overflow-hidden">
-      <StatusBar />
-
-      {/* Header Bar */}
-      <header className="sticky top-0 z-40 shrink-0 flex items-center justify-between px-5 py-4 border-b border-border bg-wp-card shadow-sm">
-        <div className="flex items-center gap-3">
-          <BackButton onClick={() => dispatch({ type: "GO", to: "explore" })} />
-          <div>
-            <h1 className="font-sans font-black text-foreground text-xl leading-none">
-              {world.name}
-            </h1>
-            <p className="font-sans text-muted-foreground text-xs mt-1">Select a Group to Learn</p>
-          </div>
-        </div>
-        <span className="font-sans font-semibold text-xs bg-secondary text-primary px-3 py-1.5 rounded-full border border-primary/20">
-          Level 1 · A1
-        </span>
-      </header>
-
-      {/* Main Timeline Layout */}
-      <main className="flex-1 flex flex-col p-5 lg:p-8 w-full max-w-3xl mx-auto overflow-y-auto overflow-x-hidden">
-        <div className="flex flex-col gap-1 mb-8">
-          <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider">
-            <Layers className="size-4" />
-            <span>WordPix Immersion</span>
-          </div>
-          <h2 className="font-sans font-black text-foreground text-3xl leading-tight">
-            Select a Word Group
-          </h2>
-          <p className="font-sans text-muted-foreground text-sm max-w-md mt-1 mb-4">
-            Follow the learning path. Each group teaches a set of related vocabulary words across
-            interactive exercises.
-          </p>
-
+    <div className="h-dvh bg-background flex flex-col overflow-hidden">
+      <header className="shrink-0 flex items-center justify-between gap-3 p-4 lg:px-8 border-b border-border bg-wp-card">
+        <div className="flex items-center gap-3 min-w-0">
           <button
             type="button"
-            onClick={handleTakeAssessment}
-            className="group cursor-pointer min-h-[60px] relative overflow-hidden rounded-2xl border-2 border-primary/20 bg-primary/5 p-4 text-start transition-all duration-300 hover:border-primary/50 hover:bg-primary/10 hover:-translate-y-1 active:translate-y-0 active:scale-[0.98] shadow-sm hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+            aria-label="Back to units"
+            onClick={() => dispatch({ type: "GO", to: "explore" })}
+            className="min-h-11 min-w-11 px-3 inline-flex items-center justify-center gap-2 rounded-xl border border-border focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            <div className="flex items-start sm:items-center gap-4">
-              <div className="size-12 rounded-xl bg-primary/20 text-primary flex items-center justify-center shrink-0">
-                <GraduationCap className="size-6" />
-              </div>
-              <div>
-                <p className="font-sans font-bold text-lg text-primary leading-tight">
-                  Test out of this unit
-                </p>
-                <p className="font-sans text-muted-foreground text-sm mt-1">
-                  Already know these words? Pass a 20-word test to skip ahead.
-                </p>
-              </div>
-            </div>
-            <ArrowRight className="size-5 text-primary shrink-0 transition-transform group-hover:translate-x-1" />
+            <ArrowRight className="size-5 rotate-180 rtl:rotate-0" aria-hidden />
+            <span className="hidden sm:inline">Back</span>
           </button>
-
-          {/*
-            Study materials sit beside the drills rather than inside them: the
-            passage, idioms, dialogue and usage notes are reference the learner
-            reads at their own pace, with nothing scored.
-          */}
-          {hasLearningMaterials(world.id) && (
-            <button
-              type="button"
-              onClick={() =>
-                dispatch({
-                  type: "GO",
-                  to: "learning-materials",
-                  unitId: world.id,
-                  area: "learn",
-                })
-              }
-              className="group cursor-pointer min-h-[60px] mt-3 w-full relative overflow-hidden rounded-2xl border-2 border-border bg-wp-card p-4 text-start transition-all duration-300 hover:border-primary/50 hover:-translate-y-1 active:translate-y-0 active:scale-[0.98] shadow-sm hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary flex flex-col sm:flex-row sm:items-center justify-between gap-4"
-            >
-              <div className="flex items-start sm:items-center gap-4">
-                <div className="size-12 rounded-xl bg-secondary text-primary flex items-center justify-center shrink-0">
-                  <Library className="size-6" />
-                </div>
-                <div>
-                  <p className="font-sans font-bold text-lg text-foreground leading-tight">
-                    Study materials
-                  </p>
-                  <p className="font-sans text-muted-foreground text-sm mt-1">
-                    Reading passage, idioms and phrasal verbs, dialogue, common mistakes and usage
-                    notes.
-                  </p>
-                </div>
-              </div>
-              <ArrowRight className="size-5 text-primary shrink-0 transition-transform group-hover:translate-x-1" />
-            </button>
-          )}
+          <div className="min-w-0">
+            <h1 className="font-bold text-foreground text-xl">{world.name}</h1>
+            <p className="text-muted-foreground text-sm">Choose a vocabulary group</p>
+          </div>
         </div>
-
-        {/* Timeline container */}
-        <div className="relative flex flex-col gap-6 ps-2 pb-16">
-          {/* Continuous vertical line */}
-          <div className="absolute top-4 bottom-4 start-[27px] w-[2px] bg-border" aria-hidden />
-
-          {world.groups.map((g, index) => {
-            const isNextToStudy = nextGroupId === g.id;
-
-            // Calc group progress from useProgress
-            // Mastery is keyed by word id, so the ids alone answer this;
-            // the words themselves are only needed for the thumbnail below.
-            const learnedCount = g.wordIds.filter((id) => isWordLearned(id)).length;
-            const isCompleted = learnedCount === g.wordIds.length && g.wordIds.length > 0;
-            const progressPct =
-              g.wordIds.length > 0 ? Math.round((learnedCount / g.wordIds.length) * 100) : 0;
-            const hasStarted = learnedCount > 0 && !isCompleted;
-            const isMenuOpen = openMenuId === g.id;
-
-            return (
-              <div
-                key={g.id}
-                className="relative flex items-stretch gap-5 lg:gap-8 group"
-                data-menu-container={g.id}
-              >
-                {/* Timeline Node */}
-                <div className="relative z-10 mt-2 shrink-0 flex items-center justify-center">
-                  {/* Outer glow ring for completed */}
-                  {isCompleted && (
-                    <div
-                      className="absolute inset-0 rounded-full bg-wp-green/20 scale-125"
-                      aria-hidden
-                    />
-                  )}
-                  <div
-                    className={`relative flex size-10 items-center justify-center rounded-full border-2 transition-all duration-300 ${
-                      isCompleted
-                        ? "border-wp-green bg-wp-green text-white shadow-md shadow-wp-green/30"
-                        : isNextToStudy
-                          ? "border-primary bg-primary text-primary-foreground shadow-md shadow-primary/25 ring-4 ring-primary/20"
-                          : hasStarted
-                            ? "border-wp-amber bg-wp-amber/20 text-wp-amber shadow-sm"
-                            : "border-border bg-wp-card text-muted-foreground group-hover:border-primary/50 group-hover:text-foreground"
-                    }`}
-                    aria-label={
-                      isCompleted
-                        ? `Group ${index + 1}: ${g.name} – Completed`
-                        : hasStarted
-                          ? `Group ${index + 1}: ${g.name} – ${progressPct}% completed`
-                          : `Group ${index + 1}: ${g.name}`
-                    }
-                  >
-                    {isCompleted ? (
-                      <Check className="size-5.5 text-white stroke-[3]" aria-hidden />
-                    ) : (
-                      <span className="font-sans font-black text-sm leading-none">{index + 1}</span>
-                    )}
-
-                    {/* Partial-progress arc indicator for in-progress groups */}
-                    {hasStarted && (
-                      <svg
-                        className="absolute inset-0 size-full -rotate-90 pointer-events-none"
-                        viewBox="0 0 40 40"
-                        aria-hidden
-                      >
-                        <circle
-                          cx="20"
-                          cy="20"
-                          r="18"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="3"
-                          strokeDasharray={`${progressPct * 1.131} 113.1`}
-                          className="text-wp-amber"
-                          strokeLinecap="round"
-                        />
-                      </svg>
-                    )}
-                  </div>
-                </div>
-
-                {/* Group Card Container */}
-                <div
-                  // min-w-0 is what lets this shrink. A flex item defaults to
-                  // `min-width: auto`, so `flex-1` alone will not go narrower
-                  // than the card's own content — on a 320px screen it stayed
-                  // 277px wide and hung 65px off the right edge, with nothing
-                  // scrolling to reveal it.
-                  className={`relative flex-1 min-w-0 bg-wp-card rounded-2xl border p-5 text-start transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-4 min-h-[88px] ${
-                    isCompleted
-                      ? "border-wp-green/30 bg-wp-green-light/10 hover:bg-wp-green-light/20 shadow-sm"
-                      : isNextToStudy
-                        ? "border-primary border-[2px] bg-secondary shadow-md"
-                        : "border-border hover:border-primary/50 hover:bg-secondary/50 shadow-sm hover:shadow-md"
-                  }`}
+        <span className="shrink-0 inline-flex items-center gap-1 font-semibold text-sm bg-secondary text-primary px-3 py-2 rounded-xl">
+          A1<span className="hidden sm:inline"> Beginner</span>
+        </span>
+      </header>
+      <section aria-label="Word groups" className="flex-1 overflow-y-auto min-h-0">
+        <div className="w-full max-w-[1040px] mx-auto p-4 lg:p-8 pb-[max(6rem,env(safe-area-inset-bottom))]">
+          <div className="mb-6">
+            <p className="text-primary font-bold text-sm uppercase tracking-wider">
+              WordPix Immersion
+            </p>
+            <h2 className="font-black text-foreground text-3xl sm:text-4xl mt-2">
+              Select a Word Group
+            </h2>
+            <p className="text-muted-foreground mt-2">
+              Choose a group to continue your learning path.
+            </p>
+            <div className="flex flex-wrap gap-3 mt-4">
+              <button type="button" onClick={handleTakeAssessment} className={secondaryAction}>
+                <GraduationCap className="size-5" aria-hidden />
+                Test out<span className="hidden sm:inline">of this unit</span>
+              </button>
+              {hasLearningMaterials(world.id) && (
+                <button
+                  type="button"
+                  onClick={() =>
+                    dispatch({
+                      type: "GO",
+                      to: "learning-materials",
+                      unitId: world.id,
+                      area: "learn",
+                    })
+                  }
+                  className={secondaryAction}
                 >
-                  {/* Clickable Info Area */}
+                  <Library className="size-5" aria-hidden />
+                  Study materials
+                </button>
+              )}
+            </div>
+          </div>
+          <div className="rounded-xl bg-secondary/50 p-4 mb-4 sm:hidden">
+            <p className="font-semibold text-foreground">
+              {startedGroups} of {world.groups.length} groups started
+            </p>
+            <div
+              role="progressbar"
+              aria-label="Groups started"
+              aria-valuemin={0}
+              aria-valuemax={world.groups.length}
+              aria-valuenow={startedGroups}
+              className="h-2 my-2 bg-border rounded-full overflow-hidden"
+            >
+              <div
+                className="h-full bg-primary rounded-full"
+                style={{ width: `${(startedGroups / world.groups.length) * 100}%` }}
+              />
+            </div>
+            <p className="text-muted-foreground">
+              {startedGroups ? "Continue where you left off" : "Choose a group to begin"}
+            </p>
+          </div>
+          <ul className="flex flex-col gap-4">
+            {world.groups.map((g, index) => {
+              const learnedCount = g.wordIds.filter(isWordLearned).length;
+              const isCompleted = learnedCount === g.wordIds.length && g.wordIds.length > 0;
+              const hasStarted = learnedCount > 0 && !isCompleted;
+              const action = isCompleted ? "Review" : hasStarted ? "Continue" : "Start";
+              const count = learnedCount
+                ? `${learnedCount} of ${g.wordIds.length} learned`
+                : `${g.wordIds.length} words`;
+              const words = getWords(g.wordIds, world.id);
+              const samples = words.slice(0, 4).map((word) => word.label);
+              const remainder = g.wordIds.length - samples.length;
+              const isMenuOpen = openMenuId === g.id;
+              return (
+                <li
+                  key={g.id}
+                  data-menu-container={g.id}
+                  className={`relative rounded-2xl border flex items-center gap-1 sm:pe-2 ${hasStarted ? "border-primary/30 bg-secondary/50" : "border-border bg-wp-card"}`}
+                >
                   <button
                     type="button"
                     onClick={() => handleStartGroup(g.id)}
-                    className="cursor-pointer flex items-start sm:items-center gap-4 flex-1 text-start outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl"
-                    aria-label={`${isCompleted ? "Review" : "Start"} lesson: ${g.name}`}
+                    aria-label={`${action} lesson: ${g.name}. Group ${index + 1}. ${isCompleted ? "Completed. " : hasStarted ? "In progress. " : ""}${count}.`}
+                    className="min-w-0 flex-1 rounded-xl p-4 pb-14 sm:pb-4 flex items-center gap-3 sm:gap-6 text-start focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary hover:bg-secondary/50"
                   >
-                    <div
-                      className={`hidden sm:flex size-12 rounded-xl overflow-hidden shrink-0 border transition-colors ${
-                        isCompleted
-                          ? "border-wp-green/30"
-                          : isNextToStudy
-                            ? "border-primary"
-                            : "border-border/50 bg-muted/50 group-hover:border-primary/30"
-                      }`}
-                    >
-                      {(() => {
-                        const firstWordId = g.wordIds[0];
-                        const firstWord = findLoadedWord(firstWordId);
-                        return firstWord?.img ? (
-                          <img
-                            src={resolveAssetUrl(firstWord.img)}
-                            alt=""
-                            className="size-full object-cover transition-transform duration-500 group-hover:scale-110"
-                          />
-                        ) : (
-                          <div className="size-full flex items-center justify-center text-muted-foreground">
-                            <Layers className="size-5" />
-                          </div>
-                        );
-                      })()}
-                    </div>
-                    <div>
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <p
-                          className={`font-sans font-bold text-lg leading-tight transition-colors ${
-                            isCompleted
-                              ? "text-wp-green"
-                              : isNextToStudy
-                                ? "text-primary"
-                                : "text-foreground group-hover:text-primary"
-                          }`}
-                        >
-                          {g.name}
-                        </p>
-                        {isCompleted && (
-                          <span className="inline-flex items-center gap-1 text-[10px] font-sans font-bold text-wp-green bg-wp-green-light px-2 py-0.5 rounded-full border border-wp-green/20">
-                            <CheckCircle2 className="size-3" aria-hidden />
-                            Completed
-                          </span>
-                        )}
-                        {hasStarted && !isCompleted && (
-                          <span className="inline-flex items-center gap-1 text-[10px] font-sans font-bold text-wp-amber bg-wp-amber/10 px-2 py-0.5 rounded-full border border-wp-amber/20">
-                            {learnedCount}/{g.wordIds.length} words
-                          </span>
-                        )}
-                      </div>
-                      <p className="font-sans text-muted-foreground text-sm mt-1">
-                        {g.description}
-                      </p>
-                    </div>
-                  </button>
-
-                  {/* Actions Area */}
-                  {/*
-                    Wraps because the row cannot always fit. Four 44px controls
-                    with gaps need 206px, and on a 320px screen the card only
-                    offers about 172px — `shrink-0` then held the row at its
-                    full width and pushed the last button off the screen edge.
-                    Wrapping to a second line keeps every control reachable.
-                  */}
-                  <div className="flex flex-wrap items-center gap-2.5 shrink-0 mt-3 sm:mt-0">
-                    <span
-                      className={`font-sans font-bold text-xs px-3.5 py-1.5 rounded-full border transition-colors ${
-                        isCompleted
-                          ? "bg-wp-green-light text-wp-green border-wp-green/20"
-                          : isNextToStudy
-                            ? "bg-primary text-primary-foreground border-primary"
-                            : "bg-background text-primary border-primary/20 group-hover:bg-primary/10"
-                      }`}
-                    >
-                      {g.wordIds.length} Words
+                    <span className="shrink-0 w-20 h-20 min-[380px]:w-24 min-[380px]:h-24 sm:w-28 sm:h-24 rounded-xl overflow-hidden bg-muted">
+                      {words[0] ? (
+                        <GroupThumbnail
+                          key={`${world.id}/${g.id}`}
+                          word={words[0]}
+                          group={g}
+                          unitId={world.id}
+                          eager={index === 0}
+                        />
+                      ) : (
+                        <Layers className="size-full p-6 text-muted-foreground" aria-hidden />
+                      )}
                     </span>
-
-                    {/* Main Start/Review Button */}
+                    <span className="min-w-0 flex-1">
+                      <span className="block font-bold text-lg text-foreground">{g.name}</span>
+                      {samples.length > 0 && (
+                        <span className="block text-sm text-muted-foreground mt-1 break-words">
+                          {samples.join(" · ")}
+                          {remainder > 0 ? ` · +${remainder}` : ""}
+                        </span>
+                      )}
+                      {learnedCount > 0 && (
+                        <span className="inline-block text-sm font-semibold text-primary bg-secondary rounded-lg px-2 mt-2">
+                          {isCompleted ? "Completed" : "In progress"}
+                        </span>
+                      )}
+                      <span className="block text-sm text-foreground mt-2">{count}</span>
+                      {learnedCount > 0 && (
+                        <span
+                          className="block mt-2 h-1.5 max-w-64 rounded-full bg-border overflow-hidden"
+                          aria-hidden
+                        >
+                          <span
+                            className="block h-full bg-primary"
+                            style={{ width: `${(learnedCount / g.wordIds.length) * 100}%` }}
+                          />
+                        </span>
+                      )}
+                    </span>
+                    <span
+                      aria-hidden
+                      className={`hidden md:inline-flex min-h-12 min-w-32 items-center justify-center gap-3 px-4 rounded-xl font-semibold ${hasStarted ? "bg-primary text-primary-foreground" : "border border-border text-primary bg-wp-card"}`}
+                    >
+                      {action}
+                      <ArrowRight className="size-5 rtl:rotate-180" />
+                    </span>
+                    <ChevronRight
+                      className="size-5 shrink-0 text-primary md:hidden rtl:rotate-180"
+                      aria-hidden
+                    />
+                  </button>
+                  {learnedCount > 0 && (
+                    <progress
+                      className="sr-only"
+                      aria-label={`${g.name} words learned`}
+                      value={learnedCount}
+                      max={g.wordIds.length}
+                    />
+                  )}
+                  {/* Lesson Options Dropdown Trigger Button */}
+                  <div className="absolute bottom-2 end-2 sm:relative sm:bottom-auto sm:end-auto">
                     <button
                       type="button"
-                      onClick={() => handleStartGroup(g.id)}
-                      className={`cursor-pointer rounded-xl px-4 py-2.5 font-sans font-bold text-sm min-h-[44px]
-                        shadow-md transition-all flex items-center gap-2 hover:opacity-90 active:scale-95 outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${
-                          isCompleted
-                            ? "bg-wp-green text-white shadow-wp-green/20"
-                            : "bg-wp-blue text-wp-text-on-blue shadow-wp-blue/20"
-                        }`}
+                      id={`menu-trigger-${g.id}`}
+                      aria-haspopup="menu"
+                      aria-expanded={isMenuOpen}
+                      aria-controls={`menu-dropdown-${g.id}`}
+                      aria-label={`More options and quick navigation for ${g.name}`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setOpenMenuId(isMenuOpen ? null : g.id);
+                        setExpandedStepMenuId(null);
+                      }}
+                      className={`cursor-pointer min-w-[44px] min-h-[44px] size-11 flex items-center justify-center rounded-xl border transition-all outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${
+                        isMenuOpen
+                          ? "border-primary bg-primary/10 text-primary shadow-sm"
+                          : "border-border bg-wp-card hover:bg-secondary text-foreground hover:text-primary"
+                      }`}
                     >
-                      {isCompleted ? "Review" : "Start"}
-                      <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                      <MoreVertical className="size-5" aria-hidden />
                     </button>
 
-                    {/* Lesson Options Dropdown Trigger Button */}
-                    <div className="relative">
-                      <button
-                        type="button"
-                        id={`menu-trigger-${g.id}`}
-                        aria-haspopup="menu"
-                        aria-expanded={isMenuOpen}
-                        aria-controls={`menu-dropdown-${g.id}`}
-                        aria-label={`More options and quick navigation for ${g.name}`}
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          setOpenMenuId(isMenuOpen ? null : g.id);
-                          setExpandedStepMenuId(null);
-                        }}
-                        className={`cursor-pointer min-w-[44px] min-h-[44px] size-11 flex items-center justify-center rounded-xl border transition-all outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${
-                          isMenuOpen
-                            ? "border-primary bg-primary/10 text-primary shadow-sm"
-                            : "border-border bg-wp-card hover:bg-secondary text-foreground hover:text-primary"
-                        }`}
-                      >
-                        <MoreVertical className="size-5" aria-hidden />
-                      </button>
+                    {/* Accessible Dropdown Menu Modal / Sheet */}
+                    {isMenuOpen && (
+                      <>
+                        {/* Backdrop on mobile */}
+                        <div
+                          className="fixed inset-0 z-40 bg-black/40 backdrop-blur-xs sm:hidden"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setOpenMenuId(null);
+                            setExpandedStepMenuId(null);
+                          }}
+                          aria-hidden="true"
+                        />
 
-                      {/* Accessible Dropdown Menu Modal / Sheet */}
-                      {isMenuOpen && (
-                        <>
-                          {/* Backdrop on mobile */}
-                          <div
-                            className="fixed inset-0 z-40 bg-black/40 backdrop-blur-xs sm:hidden"
-                            onClick={(e) => {
-                              e.stopPropagation();
+                        <div
+                          id={`menu-dropdown-${g.id}`}
+                          role="menu"
+                          tabIndex={-1}
+                          onBlur={(event) => {
+                            if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
                               setOpenMenuId(null);
                               setExpandedStepMenuId(null);
-                            }}
-                            aria-hidden="true"
-                          />
-
-                          <div
-                            id={`menu-dropdown-${g.id}`}
-                            role="menu"
-                            aria-labelledby={`menu-trigger-${g.id}`}
-                            className="fixed inset-x-4 bottom-6 sm:bottom-auto sm:inset-x-auto sm:absolute sm:end-0 sm:top-full sm:mt-2 w-auto sm:w-72 z-50 bg-wp-card rounded-2xl border border-border shadow-2xl p-2.5 focus:outline-none animate-in fade-in zoom-in-95 duration-150"
-                          >
-                            <div className="px-3 py-2 border-b border-border/60 mb-1">
-                              <p className="font-sans font-bold text-xs text-foreground uppercase tracking-wider">
-                                Lesson Options
-                              </p>
-                              <p className="font-sans text-xs text-muted-foreground truncate">
-                                {g.name}
-                              </p>
-                            </div>
-
-                            {/* 1. Read Story Directly */}
-                            <button
-                              type="button"
-                              role="menuitem"
-                              onClick={() => handleStartGroup(g.id, 5)}
-                              className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
-                            >
-                              <div className="size-8 rounded-lg bg-wp-amber/10 text-wp-amber flex items-center justify-center shrink-0">
-                                <BookOpen className="size-4" />
-                              </div>
-                              <div className="flex-1">
-                                <p className="font-sans font-semibold text-sm leading-tight text-foreground">
-                                  Read Story
-                                </p>
-                                <p className="font-sans text-xs text-muted-foreground">
-                                  Jump to story & quiz
-                                </p>
-                              </div>
-                            </button>
-
-                            {/* 2. Browse Words */}
-                            <button
-                              type="button"
-                              role="menuitem"
-                              onClick={() => handleBrowseWords(g.id)}
-                              className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
-                            >
-                              <div className="size-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                                <Compass className="size-4" />
-                              </div>
-                              <div className="flex-1">
-                                <p className="font-sans font-semibold text-sm leading-tight text-foreground">
-                                  Browse Words
-                                </p>
-                                <p className="font-sans text-xs text-muted-foreground">
-                                  Vocabulary flashcards & audio
-                                </p>
-                              </div>
-                            </button>
-
-                            {/* 3. Practice Drills */}
-                            <button
-                              type="button"
-                              role="menuitem"
-                              onClick={() => handleStartGroup(g.id, 0)}
-                              className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
-                            >
-                              <div className="size-8 rounded-lg bg-wp-green-light text-wp-green flex items-center justify-center shrink-0">
-                                <Play className="size-4 fill-current" />
-                              </div>
-                              <div className="flex-1">
-                                <p className="font-sans font-semibold text-sm leading-tight text-foreground">
-                                  Practice All Drills
-                                </p>
-                                <p className="font-sans text-xs text-muted-foreground">
-                                  Complete 6-step curriculum
-                                </p>
-                              </div>
-                            </button>
-
-                            {/* 4. Jump to Specific Step Accordion / Submenu */}
-                            <div className="border-t border-border/60 mt-1 pt-1">
-                              <button
-                                type="button"
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  setExpandedStepMenuId(expandedStepMenuId === g.id ? null : g.id);
-                                }}
-                                className="cursor-pointer w-full text-start flex items-center justify-between px-3 py-2 rounded-xl hover:bg-secondary transition-colors text-muted-foreground hover:text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[40px]"
-                                aria-expanded={expandedStepMenuId === g.id}
-                              >
-                                <div className="flex items-center gap-2">
-                                  <ListOrdered className="size-4 text-primary" />
-                                  <span className="font-sans font-medium text-xs">
-                                    Jump to Step...
-                                  </span>
-                                </div>
-                                <ChevronRight
-                                  className={`size-3.5 transition-transform ${
-                                    expandedStepMenuId === g.id ? "rotate-90" : ""
-                                  }`}
-                                />
-                              </button>
-
-                              {expandedStepMenuId === g.id && (
-                                <div className="ps-2 pe-1 py-1 space-y-0.5 max-h-48 overflow-y-auto">
-                                  {STEP_LABELS.map((item) => (
-                                    <button
-                                      key={item.step}
-                                      type="button"
-                                      role="menuitem"
-                                      onClick={() => handleStartGroup(g.id, item.step)}
-                                      className="cursor-pointer w-full text-start flex items-center gap-2 px-2.5 py-1.5 rounded-lg hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary min-h-[36px]"
-                                    >
-                                      <span className="text-sm">{item.icon}</span>
-                                      <div className="flex-1 min-w-0">
-                                        <p className="font-sans font-medium text-xs truncate">
-                                          {item.name}
-                                        </p>
-                                      </div>
-                                    </button>
-                                  ))}
-                                </div>
-                              )}
-                            </div>
+                            }
+                          }}
+                          onKeyDown={(event) => {
+                            if (!["ArrowDown", "ArrowUp", "Home", "End"].includes(event.key))
+                              return;
+                            event.preventDefault();
+                            const items = Array.from(
+                              event.currentTarget.querySelectorAll<HTMLButtonElement>("button")
+                            );
+                            const current = items.indexOf(
+                              document.activeElement as HTMLButtonElement
+                            );
+                            const next =
+                              event.key === "Home"
+                                ? 0
+                                : event.key === "End"
+                                  ? items.length - 1
+                                  : (current +
+                                      (event.key === "ArrowDown" ? 1 : -1) +
+                                      items.length) %
+                                    items.length;
+                            items[next]?.focus();
+                          }}
+                          aria-labelledby={`menu-trigger-${g.id}`}
+                          className="fixed inset-x-4 bottom-6 sm:bottom-auto sm:inset-x-auto sm:absolute sm:end-0 sm:top-full sm:mt-2 w-auto sm:w-72 z-50 bg-wp-card rounded-2xl border border-border shadow-2xl p-2.5 focus:outline-none animate-in fade-in zoom-in-95 duration-150"
+                        >
+                          <div className="px-3 py-2 border-b border-border/60 mb-1">
+                            <p className="font-sans font-bold text-xs text-foreground uppercase tracking-wider">
+                              Lesson Options
+                            </p>
+                            <p className="font-sans text-xs text-muted-foreground truncate">
+                              {g.name}
+                            </p>
                           </div>
-                        </>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </main>
 
-      <div className="fixed bottom-0 start-0 end-0 z-40 flex justify-center pb-5 pointer-events-none">
-        <div className="pointer-events-auto">
-          <HomeIndicator />
+                          {/* 1. Read Story Directly */}
+                          <button
+                            type="button"
+                            role="menuitem"
+                            onClick={() => handleStartGroup(g.id, 5)}
+                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                          >
+                            <div className="size-8 rounded-lg bg-wp-amber/10 text-wp-amber flex items-center justify-center shrink-0">
+                              <BookOpen className="size-4" />
+                            </div>
+                            <div className="flex-1">
+                              <p className="font-sans font-semibold text-sm leading-tight text-foreground">
+                                Read Story
+                              </p>
+                              <p className="font-sans text-xs text-muted-foreground">
+                                Jump to story & quiz
+                              </p>
+                            </div>
+                          </button>
+
+                          {/* 2. Browse Words */}
+                          <button
+                            type="button"
+                            role="menuitem"
+                            onClick={() => handleBrowseWords(g.id)}
+                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                          >
+                            <div className="size-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                              <Compass className="size-4" />
+                            </div>
+                            <div className="flex-1">
+                              <p className="font-sans font-semibold text-sm leading-tight text-foreground">
+                                Browse Words
+                              </p>
+                              <p className="font-sans text-xs text-muted-foreground">
+                                Vocabulary flashcards & audio
+                              </p>
+                            </div>
+                          </button>
+
+                          {/* 3. Practice Drills */}
+                          <button
+                            type="button"
+                            role="menuitem"
+                            onClick={() => handleStartGroup(g.id, 0)}
+                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                          >
+                            <div className="size-8 rounded-lg bg-wp-green-light text-wp-green flex items-center justify-center shrink-0">
+                              <Play className="size-4 fill-current" />
+                            </div>
+                            <div className="flex-1">
+                              <p className="font-sans font-semibold text-sm leading-tight text-foreground">
+                                Practice All Drills
+                              </p>
+                              <p className="font-sans text-xs text-muted-foreground">
+                                Complete 6-step curriculum
+                              </p>
+                            </div>
+                          </button>
+
+                          {/* 4. Jump to Specific Step Accordion / Submenu */}
+                          <div className="border-t border-border/60 mt-1 pt-1">
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setExpandedStepMenuId(expandedStepMenuId === g.id ? null : g.id);
+                              }}
+                              className="cursor-pointer w-full text-start flex items-center justify-between px-3 py-2 rounded-xl hover:bg-secondary transition-colors text-muted-foreground hover:text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                              aria-expanded={expandedStepMenuId === g.id}
+                            >
+                              <div className="flex items-center gap-2">
+                                <ListOrdered className="size-4 text-primary" />
+                                <span className="font-sans font-medium text-xs">
+                                  Jump to Step...
+                                </span>
+                              </div>
+                              <ChevronRight
+                                className={`size-3.5 transition-transform ${
+                                  expandedStepMenuId === g.id ? "rotate-90" : ""
+                                }`}
+                              />
+                            </button>
+
+                            {expandedStepMenuId === g.id && (
+                              <div className="ps-2 pe-1 py-1 space-y-0.5 max-h-48 overflow-y-auto">
+                                {STEP_LABELS.map((item) => (
+                                  <button
+                                    key={item.step}
+                                    type="button"
+                                    role="menuitem"
+                                    onClick={() => handleStartGroup(g.id, item.step)}
+                                    className="cursor-pointer w-full text-start flex items-center gap-2 px-2.5 py-1.5 rounded-lg hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary min-h-[44px]"
+                                  >
+                                    <span className="text-sm">{item.icon}</span>
+                                    <div className="flex-1 min-w-0">
+                                      <p className="font-sans font-medium text-xs truncate">
+                                        {item.name}
+                                      </p>
+                                    </div>
+                                  </button>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </div>
-      </div>
+      </section>
     </div>
   );
 });

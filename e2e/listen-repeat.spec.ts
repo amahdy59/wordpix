@@ -19,12 +19,15 @@ test("mobile listen-and-repeat keeps one focused learning path", async ({ page }
 
   await page.goto("/#/learn/construction-site");
   await page.getByRole("heading", { name: /Construction Site/i }).waitFor({ timeout: 15000 });
-  await page.getByRole("button", { name: "Start", exact: true }).first().click();
+  await page
+    .getByRole("button", { name: /^Start lesson:/ })
+    .first()
+    .click();
 
   await expect(page.getByRole("heading", { name: "Listen & repeat" })).toBeVisible();
   await expect(page.getByText("Target Visual")).toHaveCount(0);
   await expect(page.getByText(/Use Left\/Right arrows/i)).toHaveCount(0);
-  await expect(page.getByRole("navigation", { name: "Group vocabulary words" })).toBeHidden();
+  await expect(page.getByRole("navigation", { name: "Group vocabulary words" })).toHaveCount(0);
   await expect(page.getByRole("button", { name: "Word details" })).toHaveCount(1);
 
   const hero = page.locator('img[fetchpriority="high"]');
@@ -63,7 +66,10 @@ for (const viewport of [
   test(`listen layout uses available space at ${viewport.width}px`, async ({ page }, testInfo) => {
     await page.setViewportSize(viewport);
     await page.goto("/#/learn/construction-site");
-    await page.getByRole("button", { name: "Start", exact: true }).first().click();
+    await page
+      .getByRole("button", { name: /^Start lesson:/ })
+      .first()
+      .click();
     await expect(page.getByRole("heading", { name: "Listen & repeat" })).toBeVisible();
     const hero = page.locator('img[fetchpriority="high"]');
     const listen = page.getByRole("button", { name: /Play audio pronunciation/ });
@@ -77,11 +83,35 @@ for (const viewport of [
       const buttonBox = (await listen.boundingBox())!;
       expect(imageBox.x + imageBox.width).toBeLessThan(buttonBox.x);
       expect(imageBox.width).toBeGreaterThan(450);
+      const cardBox = (await hero.locator("xpath=../..").boundingBox())!;
+      expect(imageBox.width / (cardBox.width - 32)).toBeGreaterThan(0.62);
+      expect(imageBox.width / (cardBox.width - 32)).toBeLessThan(0.66);
       expect(buttonBox.y + buttonBox.height).toBeLessThan(viewport.height - 70);
     }
+    await page.getByRole("button", { name: "Immersion", exact: true }).click();
+    await expect(page.locator('[lang="ar"]:visible')).toHaveCount(0);
+    await page.getByRole("button", { name: "Bilingual", exact: true }).click();
+    await page.getByRole("button", { name: "Next word", exact: true }).focus();
+    await page.keyboard.press("ArrowRight");
+    await expect(page.getByRole("progressbar", { name: "Word progress" })).toHaveAttribute(
+      "aria-valuenow",
+      "2"
+    );
+    await page.keyboard.press("ArrowLeft");
     const details = page.getByRole("button", { name: "Word details", exact: true });
     await details.click();
     await expect(page.getByRole("dialog")).toBeVisible();
+    await expect
+      .poll(async () => {
+        const box = (await page.getByRole("dialog").boundingBox())!;
+        return viewport.width >= 1024
+          ? Math.abs(box.x + box.width - viewport.width)
+          : Math.abs(box.y + box.height - viewport.height);
+      })
+      .toBeLessThan(1);
+    await expect(
+      page.getByRole("dialog").getByRole("button", { name: "Close word details" })
+    ).toBeVisible();
     await page.keyboard.press("Escape");
     await expect(page.getByRole("dialog")).toHaveCount(0);
     await expect(details).toBeFocused();

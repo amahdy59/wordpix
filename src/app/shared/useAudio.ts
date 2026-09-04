@@ -6,6 +6,8 @@ import { audioUrl, hasAssetHost } from "./assetUrls";
 export type AudioStatus = "idle" | "loading" | "playing" | "error" | "unsupported";
 
 interface Options {
+  onEnded?: () => void;
+  onError?: () => void;
   lang?: string;
   rate?: number;
   pitch?: number;
@@ -122,7 +124,20 @@ function cacheAudioUrl(key: string, url: string) {
   audioCache.set(key, url);
 }
 
-export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Options = {}) {
+export function useAudio({
+  lang = "en-US",
+  rate,
+  pitch = 1,
+  volume = 1,
+  onEnded,
+  onError,
+}: Options = {}) {
+  const endedRef = useRef(onEnded);
+  const errorRef = useRef(onError);
+  useEffect(() => {
+    endedRef.current = onEnded;
+    errorRef.current = onError;
+  }, [onEnded, onError]);
   // The learner's Settings speech rate is the default; an explicit `rate` prop
   // still wins so individual drills can slow playback further.
   const { state } = useLearner();
@@ -193,7 +208,10 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
        * the rest of the session and the replay button did nothing.
        */
       const publish = (next: AudioStatus) => {
-        if (isCurrent()) setStatus(next);
+        if (isCurrent()) {
+          setStatus(next);
+          if (next === "error" || next === "unsupported") errorRef.current?.();
+        }
       };
 
       // Spend the gesture now, before the first `await`. See `unlockSynthesis`.
@@ -232,9 +250,11 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
           publish("playing");
         };
         utterance.onend = () => {
+          if (!isCurrent()) return;
           if (!isMountedRef.current) return;
           clearStall();
           publish("idle");
+          endedRef.current?.();
         };
         utterance.onerror = (e) => {
           if (!isMountedRef.current) return;
@@ -265,8 +285,10 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
           publish("playing");
         };
         audio.onended = () => {
+          if (!isCurrent()) return;
           clearStall();
           publish("idle");
+          endedRef.current?.();
         };
         audio.onerror = () => {
           clearStall();
@@ -365,14 +387,16 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
             settle(true);
           };
           audio.onended = () => {
+            if (!isCurrent()) return;
             clearStall();
             publish("idle");
+            endedRef.current?.();
           };
           audio.onerror = () => {
             clearStall();
             // An error after playback began is the end of the clip as far as
             // the UI is concerned; before it, it is a miss to fall through on.
-            if (started) publish("idle");
+            if (started) publish("error");
             else settle(false);
           };
           currentAudioRef.current = audio;
@@ -540,6 +564,8 @@ export function useAudio({ lang = "en-US", rate, pitch = 1, volume = 1 }: Option
   useEffect(
     () => () => {
       if (stallTimerRef.current !== null) clearTimeout(stallTimerRef.current);
+      requestRef.current += 1;
+      currentAudioRef.current?.pause();
       synthRef.current?.cancel();
     },
     []

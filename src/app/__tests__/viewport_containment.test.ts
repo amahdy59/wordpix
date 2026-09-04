@@ -39,20 +39,7 @@ describe("mobile header fits the viewport", () => {
   });
 });
 
-describe("lesson rows shrink instead of overflowing", () => {
-  const source = read("lesson/LessonWorldEntry.tsx");
-
-  it("lets the lesson card shrink below its content width", () => {
-    // `flex-1` alone keeps `min-width: auto`, so the card refused to go below
-    // 277px and hung off the edge of a 320px screen.
-    expect(source).toMatch(/flex-1 min-w-0 bg-wp-card/);
-  });
-
-  it("wraps the row of action buttons", () => {
-    // Four 44px controls need 206px; a 320px screen offers about 172px.
-    expect(source).toMatch(/flex flex-wrap items-center gap-2\.5 shrink-0/);
-  });
-});
+// Group-card containment is measured in e2e/word-groups.spec.ts.
 
 describe("study section tabs are tappable", () => {
   const source = read("learning/study/StudyShell.tsx");

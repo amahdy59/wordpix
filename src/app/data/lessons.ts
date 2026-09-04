@@ -2,6 +2,8 @@
 // Synchronized from Figma Design (Node 44:2 — The Bedroom)
 
 export interface VocabularyItem {
+  /** Subject location in percent, used by responsive cover crops. */
+  imageFocalPoint?: { x: number; y: number };
   id: string;
   label: string;
   phonetic: string;
@@ -35,6 +37,8 @@ export interface TopicCategory {
 }
 
 export interface Lesson {
+  /** Percentage coordinates of the subject in the group cover; defaults to center. */
+  thumbnailFocalPoint?: { x: number; y: number };
   id: string;
   name: string;
   topicId: string;
@@ -84,6 +88,7 @@ export { VOCABULARY as BEDROOM_VOCABULARY } from "./units/bedroom";
 export const BATHROOM_GROUPS: Lesson[] = [
   {
     id: "bathroom-1",
+    thumbnailFocalPoint: { x: 50, y: 65 },
     name: "Fixtures & Fittings",
     description:
       "Learn about Bathtub, Shower, Toilet, Sink, Faucet, Drain, Mirror, Towel Rack, Cabinet, and Tiles.",
@@ -105,6 +110,7 @@ export const BATHROOM_GROUPS: Lesson[] = [
   },
   {
     id: "bathroom-2",
+    thumbnailFocalPoint: { x: 50, y: 70 },
     name: "Toiletries",
     description:
       "Learn about Soap, Shampoo, Conditioner, Toothbrush, Toothpaste, Towel, Comb, Hairbrush, Lotion, and Deodorant.",
@@ -126,6 +132,7 @@ export const BATHROOM_GROUPS: Lesson[] = [
   },
   {
     id: "bathroom-3",
+    thumbnailFocalPoint: { x: 50, y: 55 },
     name: "Bathroom Supplies",
     description:
       "Learn about Toilet Paper, Cotton Balls, Cotton Swab, Razor, Nail Clipper, Hair Dryer, Scale, Laundry Basket, First Aid Kit, and Thermometer.",
@@ -147,6 +154,7 @@ export const BATHROOM_GROUPS: Lesson[] = [
   },
   {
     id: "bathroom-4",
+    thumbnailFocalPoint: { x: 50, y: 65 },
     name: "Bath & Shower",
     description:
       "Learn about Bath Mat, Shower Curtain, Shower Head, Bath Towel, Hand Towel, Washcloth, Soap Dish, Shampoo Bottle, Rubber Duck, and Shower Gel.",
@@ -168,6 +176,7 @@ export const BATHROOM_GROUPS: Lesson[] = [
   },
   {
     id: "bathroom-5",
+    thumbnailFocalPoint: { x: 50, y: 80 },
     name: "Personal Care",
     description:
       "Learn about Face Cream, Sunscreen, Lip Balm, Hand Soap, Body Wash, Mouthwash, Dental Floss, Face Wash, Hand Sanitizer, and Wet Wipes.",
@@ -189,6 +198,7 @@ export const BATHROOM_GROUPS: Lesson[] = [
   },
   {
     id: "bathroom-6",
+    thumbnailFocalPoint: { x: 50, y: 85 },
     name: "Cleaning Items",
     description:
       "Learn about Sponge, Brush, Bucket, Gloves, Spray Bottle, Cloth, Plunger, Squeegee, Tissue, Wash Hands, Brush Teeth, Take Shower, Dry Off, Flush, Comb Hair, Apply Lotion, and Gargle.",

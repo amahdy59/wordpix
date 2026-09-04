@@ -1,3 +1,4 @@
+import { imageObjectPosition } from "./imageObjectPosition";
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { VocabularyItem } from "../data/lessons";
 import { resolveAssetUrl } from "../../utils/assetUrl";
@@ -8,6 +9,7 @@ export type ImageSizePreset = "thumb" | "card" | "hero";
 interface Props {
   word: VocabularyItem;
   className?: string;
+  objectPosition?: string;
   loading?: "eager" | "lazy";
   decoding?: "async" | "auto" | "sync";
   fetchPriority?: "high" | "low" | "auto";
@@ -133,6 +135,7 @@ export function getImageAltText(
 export const WordImage = memo(function WordImage({
   word,
   className,
+  objectPosition,
   loading = "lazy",
   decoding = "async",
   fetchPriority = "auto",
@@ -192,6 +195,7 @@ export const WordImage = memo(function WordImage({
       srcSet={failed || retryToken > 0 ? undefined : srcSet}
       alt={altText}
       className={className ? className + " object-center" : "object-center"}
+      style={{ objectPosition: objectPosition ?? imageObjectPosition(word) }}
       loading={loading}
       decoding={decoding}
       width={width}

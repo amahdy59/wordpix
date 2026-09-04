@@ -120,11 +120,7 @@ describe("Responsive Bottom-Sheet Modal Behavior", () => {
     expect(source).toMatch(/rounded-t-\[28px\]\s+sm:rounded-3xl/);
   });
 
-  it("WordInspectorModal uses bottom-sheet styling on mobile and centered dialog on sm+", () => {
-    const source = stripComments(read("shared/WordInspectorModal.tsx"));
-    expect(source).toMatch(/items-end\s+sm:items-center/);
-    expect(source).toMatch(/rounded-t-\[28px\]\s+sm:rounded-3xl/);
-  });
+  // Word-details sheet/drawer geometry is measured in e2e/listen-repeat.spec.ts.
 
   it("keeps the lesson options sheet fixed to the viewport on touch devices", () => {
     const source = stripComments(read("lesson/LessonWorldEntry.tsx"));
