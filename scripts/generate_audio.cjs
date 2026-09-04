@@ -81,7 +81,7 @@ function writeLedger(ledger) {
   fs.mkdirSync(path.dirname(LEDGER), { recursive: true });
   const ordered = {};
   for (const key of Object.keys(ledger.clips).sort()) ordered[key] = ledger.clips[key];
-  const content = JSON.stringify({ profile: ledger.profile, clips: ordered }, null, 1) + "\n";
+  const content = JSON.stringify({ profile: ledger.profile, clips: ordered }, null, 2) + "\n";
   // OneDrive/antivirus agents frequently hold the target file open during cloud sync,
   // causing writeFileSync to fail with UNKNOWN/EPERM. Write to the OS temp dir
   // (outside OneDrive) first, then copyFile over the target. copyFile does a
@@ -126,7 +126,9 @@ async function withRetry(fn, label, attempts = 4) {
       const retriable = status === 429 || status >= 500 || status === 0;
       if (!retriable || attempt >= attempts) throw error;
       const waitMs = Math.min(30000, 1000 * 2 ** attempt);
-      console.warn(`  retry ${attempt}/${attempts - 1} for ${label} in ${waitMs}ms (${error.message.slice(0, 80)})`);
+      console.warn(
+        `  retry ${attempt}/${attempts - 1} for ${label} in ${waitMs}ms (${error.message.slice(0, 80)})`
+      );
       await new Promise((r) => setTimeout(r, waitMs));
     }
   }
@@ -166,7 +168,9 @@ async function reconcile(corpus, ledger) {
   if (dropped.length) writeLedger(ledger);
   console.log(`
 present : ${hashes.length - dropped.length}`);
-  console.log(`dropped : ${dropped.length} (ledger claimed these but the bucket does not have them)`);
+  console.log(
+    `dropped : ${dropped.length} (ledger claimed these but the bucket does not have them)`
+  );
   if (dropped.length) console.log("\nRe-run without --reconcile to regenerate them.");
 }
 

@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { LearnArea } from "../learning/study/LearnArea";
 import { VocabularyCard } from "../learning/study/VocabularyCard";
@@ -53,58 +53,41 @@ const mockWord: VocabularyItem & { arabic: string } = {
   arabic: "سرير",
 };
 
-describe("Study Flow & Keyboard Navigation", () => {
-  it("reveals flashcard on Space keydown and handles Got It shortcut", () => {
+describe("Study vocabulary grid", () => {
+  it("shows the whole lesson and marks a word learned", async () => {
     const onProgressUpdate = vi.fn();
-    const onNextActivity = vi.fn();
-
     render(
       <LearnArea
         node={mockNode}
         materials={mockMaterials}
         progress={mockProgress}
         onProgressUpdate={onProgressUpdate}
-        onNextActivity={onNextActivity}
+        onNextActivity={vi.fn()}
         immersionMode={false}
       />
     );
-
-    // Initial state: hidden
-    expect(screen.getByRole("button", { name: /Reveal Word/i })).toBeInTheDocument();
-
-    // Trigger Space hotkey to reveal
-    fireEvent.keyDown(window, { key: " " });
-
-    // After reveal: action buttons appear
-    expect(screen.getByRole("button", { name: /Got It/i })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /Needs Practice/i })).toBeInTheDocument();
-
-    // Trigger '2' hotkey for Got It
-    fireEvent.keyDown(window, { key: "2" });
-    expect(onProgressUpdate).toHaveBeenCalled();
+    expect(screen.getAllByRole("article")).toHaveLength(2);
+    expect(screen.getByRole("heading", { name: "Bed" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Pillow" })).toBeInTheDocument();
+    await userEvent.click(screen.getAllByRole("button", { name: "Learned" })[0]);
+    const update = onProgressUpdate.mock.calls[0][0];
+    expect(update(mockProgress).wordStatus.bed).toBe("learning");
   });
 
-  it("handles Needs Practice shortcut and records review status", () => {
+  it("queues a selected word for review", async () => {
     const onProgressUpdate = vi.fn();
-    const onNextActivity = vi.fn();
-
     render(
       <LearnArea
         node={mockNode}
         materials={mockMaterials}
         progress={mockProgress}
         onProgressUpdate={onProgressUpdate}
-        onNextActivity={onNextActivity}
-        immersionMode={false}
+        onNextActivity={vi.fn()}
       />
     );
-
-    // Click reveal button directly
-    fireEvent.click(screen.getByRole("button", { name: /Reveal Word/i }));
-
-    // Press '1' for Needs Practice
-    fireEvent.keyDown(window, { key: "1" });
-    expect(onProgressUpdate).toHaveBeenCalled();
+    await userEvent.click(screen.getAllByRole("button", { name: "Review" })[0]);
+    const update = onProgressUpdate.mock.calls[0][0];
+    expect(update(mockProgress).reviewWordIds).toContain("bed");
   });
 });
 

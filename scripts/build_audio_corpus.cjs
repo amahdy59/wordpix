@@ -29,6 +29,7 @@
 const fs = require("fs");
 const path = require("path");
 const { audioHash } = require("./lib/assetKey.cjs");
+const { normaliseAudioText } = require("./lib/audioText.cjs");
 
 const ROOT = path.join(__dirname, "..");
 const OUT = path.join(ROOT, "scratch", "audio_corpus.json");
@@ -57,7 +58,12 @@ const requestedUnits = (() => {
   const arg = process.argv.find((a) => a.startsWith("--unit=") || a.startsWith("--units="));
   if (!arg) return null;
   const val = arg.includes("=") ? arg.slice(arg.indexOf("=") + 1) : "";
-  return new Set(val.split(",").map((s) => s.trim().toLowerCase()).filter(Boolean));
+  return new Set(
+    val
+      .split(",")
+      .map((s) => s.trim().toLowerCase())
+      .filter(Boolean)
+  );
 })();
 
 function collect() {
@@ -114,7 +120,12 @@ function collect() {
 
 const requested = (() => {
   const arg = process.argv.find((a) => a.startsWith("--tiers="));
-  return arg ? arg.slice("--tiers=".length).split(",").map((s) => s.trim()) : null;
+  return arg
+    ? arg
+        .slice("--tiers=".length)
+        .split(",")
+        .map((s) => s.trim())
+    : null;
 })();
 
 const tiers = collect();
@@ -125,7 +136,7 @@ for (const [tier, texts] of Object.entries(tiers)) {
   let added = 0;
   let chars = 0;
   for (const rawText of texts) {
-    const text = String(rawText).replace(/\\"/g, '"').replace(/\\n/g, " ").trim();
+    const text = normaliseAudioText(rawText);
     // Single characters and empty strings are not worth a network round trip.
     if (text.length < 2) continue;
     if (SPEAKER_LABEL.test(text) || SCENE_DIRECTION.test(text)) continue;

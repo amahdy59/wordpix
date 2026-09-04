@@ -100,20 +100,22 @@ for (const viewport of [
     await page.keyboard.press("ArrowLeft");
     const details = page.getByRole("button", { name: "Word details", exact: true });
     await details.click();
-    await expect(page.getByRole("dialog")).toBeVisible();
-    await expect
-      .poll(async () => {
-        const box = (await page.getByRole("dialog").boundingBox())!;
-        return viewport.width >= 1024
-          ? Math.abs(box.x + box.width - viewport.width)
-          : Math.abs(box.y + box.height - viewport.height);
-      })
-      .toBeLessThan(1);
-    await expect(
-      page.getByRole("dialog").getByRole("button", { name: "Close word details" })
-    ).toBeVisible();
+    const detailsSurface =
+      viewport.width >= 1024
+        ? page.getByRole("complementary", { name: /^Details for / })
+        : page.getByRole("dialog");
+    await expect(detailsSurface).toBeVisible();
+    if (viewport.width < 1024) {
+      await expect
+        .poll(async () => {
+          const box = (await detailsSurface.boundingBox())!;
+          return Math.abs(box.y + box.height - viewport.height);
+        })
+        .toBeLessThan(1);
+    }
+    await expect(detailsSurface.getByRole("button", { name: "Close word details" })).toBeVisible();
     await page.keyboard.press("Escape");
-    await expect(page.getByRole("dialog")).toHaveCount(0);
+    await expect(detailsSurface).toHaveCount(0);
     await expect(details).toBeFocused();
     await page.getByRole("region", { name: /Listen & repeat exercise/ }).evaluate((element) => {
       element.scrollTop = 0;

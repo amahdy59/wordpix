@@ -4,12 +4,13 @@ import { resolveGroup, resolveUnitForLesson, type VocabularyItem } from "../data
 import { ExitConfirmModal } from "../shared/ExitConfirmModal";
 import { useAudio } from "../shared/useAudio";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
-import { ChevronRight, ChevronLeft, Mic, CheckCircle2, BookOpen } from "lucide-react";
+import { ChevronRight, ChevronLeft, Mic, CheckCircle2, BookOpen, X } from "lucide-react";
 import { WordImage } from "../shared/WordImage";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useSpeechRecognition } from "../shared/useSpeechRecognition";
 import { getLexiconEntry, hasArabicGloss } from "../data/lexiconDictionary";
 import { WordInspectorModal } from "../shared/WordInspectorModal";
+import { WordDetailsContent } from "../shared/WordDetailsContent";
 
 interface Props {
   step: number;
@@ -26,6 +27,9 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 }: Props) {
   const [activeWordIndex, setActiveWordIndex] = useState<number>(0);
   const [inspectedWord, setInspectedWord] = useState<VocabularyItem | null>(null);
+  const [desktopDetails, setDesktopDetails] = useState(false);
+  const detailsTriggerRef = useRef<HTMLButtonElement>(null);
+  const detailsCloseRef = useRef<HTMLButtonElement>(null);
   const [bilingual, setBilingual] = useState(true);
   const [continuous, setContinuous] = useState(false);
   const [playbackError, setPlaybackError] = useState(false);
@@ -56,6 +60,16 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
   const currentWord = words[activeWordIndex] || words[0];
   const isLastWord = activeWordIndex === words.length - 1;
+  useEffect(() => {
+    const query = window.matchMedia("(min-width: 1024px)");
+    const update = () => setDesktopDetails(query.matches);
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
+  useEffect(() => {
+    if (desktopDetails && inspectedWord) detailsCloseRef.current?.focus();
+  }, [desktopDetails, inspectedWord]);
   usePrefetchImage(isLastWord ? null : words[activeWordIndex + 1]);
 
   const {
@@ -130,6 +144,12 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (inspectedWord && e.key === "Escape") {
+        e.preventDefault();
+        setInspectedWord(null);
+        requestAnimationFrame(() => detailsTriggerRef.current?.focus());
+        return;
+      }
       if (
         inspectedWord ||
         (e.target instanceof HTMLElement && !!e.target.closest("[data-listen-selector]")) ||
@@ -268,7 +288,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           <div
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
-            className="w-full min-w-0 grid grid-cols-1 lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)] gap-4 lg:gap-0 bg-wp-card border border-border rounded-2xl sm:rounded-3xl p-4 shadow-wp-md relative"
+            className={`w-full min-w-0 grid grid-cols-1 ${inspectedWord && desktopDetails ? "lg:grid-cols-[minmax(0,1.5fr)_minmax(18rem,0.9fr)_minmax(19rem,0.9fr)]" : "lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)]"} gap-4 lg:gap-0 bg-wp-card border border-border rounded-2xl sm:rounded-3xl p-4 shadow-wp-md relative`}
           >
             <button
               type="button"
@@ -412,13 +432,15 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                 />
               </div>
               <button
+                ref={detailsTriggerRef}
                 type="button"
                 onClick={() => {
                   pausePlayback();
                   resetSpeech();
                   setInspectedWord(currentWord);
                 }}
-                aria-haspopup="dialog"
+                aria-haspopup={desktopDetails ? undefined : "dialog"}
+                aria-controls={desktopDetails ? "word-details-panel" : undefined}
                 aria-expanded={!!inspectedWord}
                 className="w-full flex items-center justify-start gap-2 py-3 px-4 min-h-[48px] rounded-xl bg-secondary border border-border text-primary text-xs sm:text-sm font-sans font-semibold hover:bg-primary/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer"
               >
@@ -427,6 +449,42 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                 <ChevronRight className="size-5 ms-auto" aria-hidden />
               </button>
             </div>
+
+            {inspectedWord && desktopDetails && (
+              <aside
+                id="word-details-panel"
+                aria-label={`Details for ${inspectedWord.label}`}
+                className="hidden lg:flex min-h-0 max-h-[32rem] ms-4 border-s border-border bg-muted/20 rounded-e-2xl flex-col overflow-hidden"
+              >
+                <div className="shrink-0 flex items-center justify-between gap-3 p-4 border-b border-border bg-wp-card">
+                  <div className="min-w-0">
+                    <p className="text-xs font-bold uppercase tracking-wide text-primary">
+                      Word details
+                    </p>
+                    <h2 className="font-black text-xl text-foreground truncate">
+                      {inspectedWord.label}
+                    </h2>
+                  </div>
+                  <button
+                    ref={detailsCloseRef}
+                    type="button"
+                    onClick={() => {
+                      setInspectedWord(null);
+                      requestAnimationFrame(() => detailsTriggerRef.current?.focus());
+                    }}
+                    aria-label="Close word details"
+                    className="size-11 grid place-items-center rounded-xl border border-border text-foreground hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  >
+                    <X className="size-5" aria-hidden />
+                  </button>
+                </div>
+                <WordDetailsContent
+                  word={inspectedWord}
+                  bilingual={bilingual}
+                  className="bg-wp-card"
+                />
+              </aside>
+            )}
           </div>
 
           {/* Real-Time Speech Feedback Banner with Live Waveform */}
@@ -512,9 +570,33 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           )}
         </div>
 
-        <p className="hidden lg:block text-center text-sm text-muted-foreground mt-6">
-          Use ← → to navigate
-        </p>
+        <div
+          aria-label="Keyboard shortcuts"
+          className="hidden lg:flex justify-center items-center gap-5 mt-5 text-sm text-muted-foreground"
+        >
+          <span className="font-semibold text-foreground">Keyboard shortcuts</span>
+          <span className="flex items-center gap-2">
+            <kbd className="min-w-9 h-8 px-2 grid place-items-center rounded-lg border border-border bg-wp-card shadow-wp-xs font-mono text-foreground">
+              ←
+            </kbd>
+            <kbd className="min-w-9 h-8 px-2 grid place-items-center rounded-lg border border-border bg-wp-card shadow-wp-xs font-mono text-foreground">
+              →
+            </kbd>
+            Change word
+          </span>
+          <span className="flex items-center gap-2">
+            <kbd className="h-8 px-3 grid place-items-center rounded-lg border border-border bg-wp-card shadow-wp-xs font-mono text-foreground">
+              Space
+            </kbd>
+            Listen or pause
+          </span>
+          <span className="flex items-center gap-2">
+            <kbd className="h-8 px-3 grid place-items-center rounded-lg border border-border bg-wp-card shadow-wp-xs font-mono text-foreground">
+              Esc
+            </kbd>
+            Close details
+          </span>
+        </div>
       </section>
       <ExitConfirmModal
         isOpen={showExit}
@@ -525,7 +607,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         lessonPanel
         bilingual={bilingual}
         word={inspectedWord}
-        isOpen={!!inspectedWord}
+        isOpen={!!inspectedWord && !desktopDetails}
         onClose={() => setInspectedWord(null)}
       />
     </div>

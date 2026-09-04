@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { act, fireEvent, render, screen } from "@testing-library/react";
+import { act, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { ExerciseListenRepeat } from "../exercises/ExerciseListenRepeat";
 import { BEDROOM_VOCABULARY } from "../data/lessons";
 
@@ -59,6 +59,34 @@ describe("Listen and repeat mobile focus", () => {
     expect(screen.queryByText("Target Visual")).toBeNull();
     expect(screen.getAllByRole("button", { name: "Word details" })).toHaveLength(1);
     expect(screen.queryByText(/Use Left\/Right arrows/i)).toBeNull();
+  });
+
+  it("shows desktop details inside the learning card with clear shortcuts", async () => {
+    const original = window.matchMedia;
+    window.matchMedia = vi.fn().mockReturnValue({
+      matches: true,
+      addEventListener: vi.fn(),
+      removeEventListener: vi.fn(),
+    }) as typeof window.matchMedia;
+    render(
+      <ExerciseListenRepeat
+        step={1}
+        words={BEDROOM_VOCABULARY.slice(0, 2)}
+        lessonId="bedroom-1"
+        dispatch={vi.fn()}
+      />
+    );
+    const trigger = screen.getByRole("button", { name: "Word details" });
+    fireEvent.click(trigger);
+    const panel = await screen.findByRole("complementary", { name: /Details for/i });
+    expect(panel).toHaveClass("overflow-hidden");
+    expect(panel.querySelector(".overflow-y-auto")).not.toBeNull();
+    expect(screen.getByLabelText("Keyboard shortcuts")).toHaveTextContent("Change word");
+    expect(screen.getByLabelText("Keyboard shortcuts")).toHaveTextContent("Listen or pause");
+    fireEvent.keyDown(window, { key: "Escape" });
+    expect(screen.queryByRole("complementary", { name: /Details for/i })).toBeNull();
+    await waitFor(() => expect(trigger).toHaveFocus());
+    window.matchMedia = original;
   });
 
   it("waits for the learner to request audio", () => {
