@@ -138,7 +138,7 @@ describe("Listen and repeat mobile focus", () => {
           dispatch={vi.fn()}
         />
       );
-      fireEvent.click(screen.getByRole("button", { name: "Continuous", exact: true }));
+      fireEvent.click(screen.getByRole("button", { name: "Continuous" }));
       expect(audio.speak).toHaveBeenLastCalledWith(BEDROOM_VOCABULARY[0].label);
       act(() => {
         audio.ended?.();
@@ -149,7 +149,7 @@ describe("Listen and repeat mobile focus", () => {
         audio.ended?.();
         vi.advanceTimersByTime(5000);
       });
-      expect(screen.getByRole("button", { name: "Manual", exact: true })).toHaveAttribute(
+      expect(screen.getByRole("button", { name: "Manual" })).toHaveAttribute(
         "aria-pressed",
         "true"
       );
@@ -170,9 +170,9 @@ describe("Listen and repeat mobile focus", () => {
           dispatch={vi.fn()}
         />
       );
-      fireEvent.click(screen.getByRole("button", { name: "Continuous", exact: true }));
+      fireEvent.click(screen.getByRole("button", { name: "Continuous" }));
       act(() => audio.ended?.());
-      fireEvent.click(screen.getByRole("button", { name: "Word details", exact: true }));
+      fireEvent.click(screen.getByRole("button", { name: "Word details" }));
       act(() => vi.advanceTimersByTime(5000));
       expect(screen.getByRole("progressbar", { hidden: true })).toHaveAttribute(
         "aria-valuenow",
@@ -192,9 +192,9 @@ describe("Listen and repeat mobile focus", () => {
       />
     );
     expect(document.querySelector('[lang="ar"]')).not.toBeNull();
-    fireEvent.click(screen.getAllByRole("button", { name: "Immersion", exact: true })[0]);
+    fireEvent.click(screen.getAllByRole("button", { name: "Immersion" })[0]);
     expect(document.querySelector('[lang="ar"]')).toBeNull();
-    fireEvent.click(screen.getByRole("button", { name: "Word details", exact: true }));
+    fireEvent.click(screen.getByRole("button", { name: "Word details" }));
     expect(document.querySelector('[lang="ar"]')).toBeNull();
   });
 
@@ -209,12 +209,12 @@ describe("Listen and repeat mobile focus", () => {
           dispatch={vi.fn()}
         />
       );
-      fireEvent.click(screen.getByRole("button", { name: "Continuous", exact: true }));
+      fireEvent.click(screen.getByRole("button", { name: "Continuous" }));
       act(() => audio.ended?.());
       fireEvent.click(screen.getByRole("button", { name: /Stop audio pronunciation/ }));
       act(() => vi.advanceTimersByTime(5000));
       expect(screen.getByRole("progressbar")).toHaveAttribute("aria-valuenow", "1");
-      expect(screen.getByRole("button", { name: "Manual", exact: true })).toHaveAttribute(
+      expect(screen.getByRole("button", { name: "Manual" })).toHaveAttribute(
         "aria-pressed",
         "true"
       );
