@@ -50,6 +50,27 @@ describe("email authentication", () => {
     reload.mockRestore();
   });
 
+  it("keeps a failed migration open and retries sync without another login", async () => {
+    vi.mocked(supabase.auth.signInWithPassword).mockResolvedValue({
+      data: { user: { id: "existing-user" }, session: { access_token: "test-token" } },
+      error: null,
+    } as Awaited<ReturnType<typeof supabase.auth.signInWithPassword>>);
+    vi.mocked(migrateGuestToAccount).mockRejectedValueOnce(new Error("Sync pending"));
+    const reload = vi.spyOn(window.location, "reload").mockImplementation(() => {});
+    const close = vi.fn();
+    render(<AuthModal onClose={close} />);
+    const user = await fillCredentials();
+    await user.click(screen.getByRole("button", { name: "Sign In" }));
+    expect(await screen.findByRole("alert")).toHaveTextContent("Sync pending");
+    expect(reload).not.toHaveBeenCalled();
+    expect(close).not.toHaveBeenCalled();
+    vi.mocked(migrateGuestToAccount).mockResolvedValueOnce();
+    await user.click(screen.getByRole("button", { name: "Retry sync" }));
+    expect(supabase.auth.signInWithPassword).toHaveBeenCalledOnce();
+    expect(reload).toHaveBeenCalledOnce();
+    reload.mockRestore();
+  });
+
   it("preserves input and guest data after a rejected login", async () => {
     vi.mocked(supabase.auth.signInWithPassword).mockRejectedValue(new Error("Invalid credentials"));
     const close = vi.fn();

@@ -19,6 +19,7 @@ type AuthMode = "login" | "signup";
 export function AuthModal({ onClose }: AuthModalProps) {
   const containerRef = useModalA11y({ isOpen: true, onDismiss: onClose });
 
+  const [syncUserId, setSyncUserId] = useState<string>();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [mode, setMode] = useState<AuthMode>("login");
@@ -33,13 +34,14 @@ export function AuthModal({ onClose }: AuthModalProps) {
     setState({ status: "submitting" });
 
     try {
-      let authUserId: string | undefined;
+      let authUserId = syncUserId;
 
-      if (isLogin) {
+      if (authUserId) {
+        // Authentication already succeeded; retry only the migration.
+      } else if (isLogin) {
         const { data, error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
         authUserId = data.user?.id;
-        setState({ status: "success", message: "Signed in successfully!" });
       } else {
         const { data, error } = await supabase.auth.signUp({ email, password });
         if (error) throw error;
@@ -52,17 +54,12 @@ export function AuthModal({ onClose }: AuthModalProps) {
           return;
         }
         authUserId = data.user?.id;
-        setState({ status: "success", message: "Account created successfully!" });
       }
 
-      // Guest to Account Migration
-      if (authUserId) {
-        try {
-          await migrateGuestToAccount(authUserId);
-        } catch (e) {
-          console.error("Failed to migrate guest data", e);
-        }
-      }
+      if (!authUserId) throw new Error("Sign-in did not return an account. Please try again.");
+      setSyncUserId(authUserId);
+      await migrateGuestToAccount(authUserId);
+      setState({ status: "success", message: "Signed in and progress synced." });
 
       // For MVP, reload to re-initialize contexts and pull fresh data if needed,
       // or at least to reflect the logged in state cleanly without complex re-renders.
@@ -134,7 +131,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
               className="w-full px-4 py-2 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              disabled={isLoading}
+              disabled={isLoading || !!syncUserId}
             />
           </div>
           <div>
@@ -148,7 +145,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
               className="w-full px-4 py-2 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              disabled={isLoading}
+              disabled={isLoading || !!syncUserId}
             />
           </div>
 
@@ -157,7 +154,13 @@ export function AuthModal({ onClose }: AuthModalProps) {
             disabled={isLoading}
             className="w-full py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors disabled:opacity-50 min-h-[44px]"
           >
-            {isLoading ? "Loading..." : isLogin ? "Sign In" : "Create Account"}
+            {isLoading
+              ? "Loading..."
+              : syncUserId
+                ? "Retry sync"
+                : isLogin
+                  ? "Sign In"
+                  : "Create Account"}
           </button>
         </form>
 
@@ -169,7 +172,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
               setMode(isLogin ? "signup" : "login");
               setState({ status: "idle" });
             }}
-            disabled={isLoading}
+            disabled={isLoading || !!syncUserId}
           >
             {isLogin ? "Don't have an account? Sign up" : "Already have an account? Sign in"}
           </button>
@@ -180,7 +183,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
             onClick={onClose}
             disabled={isLoading}
           >
-            Continue as Guest
+            {syncUserId ? "Close (sync pending)" : "Continue as Guest"}
           </button>
         </div>
       </div>

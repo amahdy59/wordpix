@@ -81,9 +81,11 @@ describe("AppShell responsive components", () => {
 });
 
 describe("Card Grid Responsive Aspect Ratios", () => {
-  it("ExerciseRecallMatch uses aspect-[4/3] to prevent image squashing", () => {
+  it("ExerciseRecallMatch uses portrait mobile and landscape desktop image containers", () => {
     const source = stripComments(read("exercises/ExerciseRecallMatch.tsx"));
-    expect(source).toMatch(/aspect-\[4\/3\]/);
+    expect(source).toMatch(/aspect-\[4\/5\]/);
+    expect(source).toMatch(/sm:aspect-\[16\/9\]/);
+    expect(source).toContain("object-cover");
     expect(source).not.toMatch(/grid-rows-2/);
   });
 

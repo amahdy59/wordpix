@@ -6,7 +6,7 @@ import { getDistractors } from "./exerciseContent";
 import { shuffleArray } from "../../utils/shuffle";
 import { WordImage } from "../shared/WordImage";
 import { useAudio } from "../shared/useAudio";
-import { Volume2, CheckCircle2, XCircle, RefreshCw, Keyboard, ArrowRight } from "lucide-react";
+import { Volume2, CheckCircle2, XCircle, Keyboard, ArrowRight } from "lucide-react";
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
@@ -171,19 +171,18 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   return (
     <ExerciseShell
       step={step}
-      title="Audio Recall Match"
+      title="Audio Match"
+      layout="media"
+      progressLabel="Question"
       words={words}
       lessonId={lessonId}
       dispatch={dispatch}
       progress={{ current: queue.position, total: queue.total }}
       subtitle={
         <>
-          <span className="uppercase tracking-wider">{group.name}</span>
-          <span className="text-primary font-semibold bg-secondary border border-primary/20 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
-            <Volume2 className="size-3" aria-hidden />
-            <span>
-              Question {queue.position} of {queue.total}
-            </span>
+          <span>{group.name}</span>
+          <span>
+            {queue.position} of {queue.total}
           </span>
         </>
       }
@@ -193,73 +192,36 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       // press "1" with, and telling a learner to press a key they do not have
       // is noise in the one strip of the screen reserved for what to do next.
       footer={
-        <div className="w-full hidden pointer-fine:flex items-center text-xs font-sans font-semibold text-muted-foreground px-1">
-          <div className="flex items-center gap-1.5 text-wp-amber font-bold">
+        <div className="w-full hidden pointer-fine:flex items-center justify-center text-xs font-sans font-semibold text-muted-foreground px-1">
+          <div className="flex items-center gap-1.5 text-muted-foreground font-medium">
             <Keyboard className="size-4" aria-hidden />
             <span>Press 1-{displayCards.length} to choose · R to replay audio</span>
           </div>
         </div>
       }
     >
-      <div className="relative flex flex-col gap-3.5 sm:gap-5 w-full max-w-2xl mx-auto my-auto">
-        {/* Sleek, Compact Target Audio Play Bar */}
-        <div className="bg-wp-panel text-wp-text-on-panel rounded-2xl p-3.5 sm:p-4 flex items-center justify-between shadow-wp-sm border border-wp-panel-border shrink-0">
-          <button
-            type="button"
-            onClick={replayAudio}
-            aria-label="Replay target audio prompt"
-            className="flex items-center gap-3 min-h-[44px] hover:opacity-90 transition-opacity text-start rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-white"
-          >
-            <div className="size-10 sm:size-11 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-md shrink-0">
-              <Volume2
-                className={`size-5 sm:size-6 ${isPlaying ? "motion-safe:animate-pulse text-wp-amber" : ""}`}
-              />
-            </div>
-            <div>
-              <h2 className="font-sans font-black text-sm sm:text-base text-white leading-tight flex items-center gap-2">
-                <span>Listen &amp; Match Picture</span>
-                {isPlaying && (
-                  <span className="text-[10px] bg-wp-amber/20 text-wp-amber px-2 py-0.5 rounded-full border border-wp-amber/30">
-                    Playing sound…
-                  </span>
-                )}
-              </h2>
-              <p className="font-sans text-white/80 text-xs sm:text-sm mt-0.5">
-                {queue.isRetry
-                  ? "One more time — tap the picture you hear."
-                  : "Tap image card matching the spoken word."}
-              </p>
-            </div>
-          </button>
-
+      <div className="relative flex flex-col gap-4 md:gap-6 w-full max-w-5xl mx-auto">
+        <div className="flex flex-col items-center gap-2">
           <button
             type="button"
             onClick={replayAudio}
             aria-label="Replay audio"
-            className="flex items-center gap-1.5 px-3.5 min-h-[44px] min-w-[44px] justify-center rounded-xl bg-white/10 text-white/90 hover:text-white text-xs sm:text-sm font-sans font-bold border border-white/15 backdrop-blur-md transition-colors shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-white"
+            className="min-h-12 px-6 rounded-xl border border-border bg-wp-card text-primary font-bold flex items-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            <RefreshCw className="size-3.5 sm:size-4" />
-            <span className="hidden sm:inline">Replay</span>
+            <Volume2
+              className={`size-5 ${isPlaying ? "motion-safe:animate-pulse" : ""}`}
+              aria-hidden
+            />
+            Replay
           </button>
+          <p className="sr-only" role="status">
+            {isPlaying
+              ? "Playing audio"
+              : queue.isRetry
+                ? "Try again. Choose the picture you hear."
+                : "Choose the picture you hear."}
+          </p>
         </div>
-
-        {/*
-          The option cards are capped by viewport *height*, not only shaped by
-          width.
-
-          `min-h` was keyed to width breakpoints — 210px each from `md` up —
-          but what runs out on a short window is height. Two rows of 210px plus
-          the header, the prompt card and the footer overflowed anything under
-          about 600px tall, so options three and four sat below the fold with
-          nothing to say they were there: the learner chose from the two they
-          could see. `max-h` in `dvh` lets the row shrink instead, and
-          `object-cover` on the image keeps the crop sensible as it does.
-
-          Below 700px of height — a landscape phone, a split-screen window —
-          shrinking the rows is not enough on its own, so the four options
-          become a single row instead of a 2x2 block and all of them stay above
-          the fold.
-        */}
         <div
           role="group"
           aria-label="Choose matching picture for audio prompt"
@@ -295,13 +257,13 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 aria-pressed={isSelected}
                 aria-disabled={feedback !== null}
                 onClick={() => handleCardClick(card)}
-                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full aspect-[4/3] min-h-[110px] max-h-[min(30dvh,220px)] block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary shadow-wp-sm ${cardStateStyle}`}
+                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden w-full aspect-[4/5] sm:aspect-[16/9] min-h-[110px] max-h-[min(32dvh,300px)] block focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary shadow-wp-sm ${cardStateStyle}`}
               >
                 <span
                   aria-hidden
-                  className="hidden sm:block absolute top-2 start-2 sm:top-2.5 sm:start-2.5 z-10 bg-black/60 text-white text-[10px] sm:text-[11px] font-mono font-bold px-2 py-0.5 rounded border border-white/20 shadow-sm backdrop-blur-md pointer-events-none"
+                  className="absolute top-2 start-2 z-10 size-9 md:size-11 flex items-center justify-center bg-wp-card text-foreground text-base font-bold rounded-lg border border-border shadow-sm pointer-events-none"
                 >
-                  [{idx + 1}]
+                  {idx + 1}
                 </span>
 
                 <div className="size-full relative bg-muted after:absolute after:inset-0 after:border-[4px] after:border-transparent group-hover:after:border-primary/20 after:rounded-2xl sm:after:rounded-3xl after:transition-colors">

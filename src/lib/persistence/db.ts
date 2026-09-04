@@ -6,7 +6,7 @@ import type {
 } from "../../app/context/LearnerContext";
 import type { WordLearningState } from "../../features/gamification/sm2";
 
-export type SyncOperation =
+export type SyncOperation = { ownerId?: string } & (
   | {
       id: string;
       type: "update_preferences";
@@ -49,9 +49,16 @@ export type SyncOperation =
       createdAt: string;
       status: "pending" | "syncing" | "failed";
       retryCount: number;
-    };
+    }
+);
+
+export interface SyncMetadata {
+  ownerId: string;
+  migration?: { id: string; state: LearnerStateSchema; queueIds: string[] };
+}
 
 interface WordPixDB extends DBSchema {
+  sync_metadata: { key: string; value: SyncMetadata };
   learner_state: {
     key: string;
     value: LearnerStateSchema;
@@ -73,7 +80,7 @@ interface WordPixDB extends DBSchema {
 }
 
 const DB_NAME = "wordpix_offline_db";
-const DB_VERSION = 2;
+const DB_VERSION = 3;
 
 export const LEARNER_STATE_KEY = "primary_state";
 
@@ -84,6 +91,7 @@ export async function getDB() {
   }
   return openDB<WordPixDB>(DB_NAME, DB_VERSION, {
     upgrade(db) {
+      if (!db.objectStoreNames.contains("sync_metadata")) db.createObjectStore("sync_metadata");
       if (!db.objectStoreNames.contains("learner_state")) {
         db.createObjectStore("learner_state");
       }
@@ -137,7 +145,9 @@ export async function queueMutation<T extends SyncOperation["type"]>(
   try {
     const db = await getDB();
     if (!db) return;
+    const metadata = await db.get("sync_metadata", "account");
     const op = {
+      ownerId: metadata?.ownerId,
       id: crypto.randomUUID(),
       type,
       payload,

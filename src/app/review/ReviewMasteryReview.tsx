@@ -7,6 +7,7 @@ import {
   Clock,
   AlertCircle,
   CheckCircle2,
+  ChevronRight,
   Layers,
 } from "lucide-react";
 import type { Action } from "../types";
@@ -14,10 +15,12 @@ import { useProgress } from "../data/progress";
 import { REVIEW_GROUP_ID, resolveUnitIdForWord, type VocabularyItem } from "../data/lessons";
 import { getWords, loadUnitVocabulary } from "../data/vocabulary";
 
-/** Words per review session. */
-const REVIEW_SESSION_SIZE = 5;
+import { WordInspectorModal } from "../shared/WordInspectorModal";
 import { WordImage } from "../shared/WordImage";
 import { calculateDaysBetween, getLocalDateString } from "../../features/gamification/streak";
+
+/** Words per review session. */
+const REVIEW_SESSION_SIZE = 5;
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -26,6 +29,9 @@ interface Props {
 export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch }: Props) {
   const { progress } = useProgress();
   const [loadedCount, setLoadedCount] = useState(0);
+  const [loadError, setLoadError] = useState(false);
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({});
+  const [selectedWord, setSelectedWord] = useState<VocabularyItem | null>(null);
 
   const todayStr = getLocalDateString(new Date());
 
@@ -38,11 +44,16 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
     }
     if (unitIds.size === 0) return;
     let isCancelled = false;
-    Promise.all([...unitIds].map((id) => loadUnitVocabulary(id))).then(() => {
-      if (!isCancelled) {
-        setLoadedCount((c) => c + 1);
-      }
-    });
+    setLoadError(false);
+    Promise.all([...unitIds].map((id) => loadUnitVocabulary(id)))
+      .then(() => {
+        if (!isCancelled) {
+          setLoadedCount((c) => c + 1);
+        }
+      })
+      .catch(() => {
+        if (!isCancelled) setLoadError(true);
+      });
     return () => {
       isCancelled = true;
     };
@@ -84,29 +95,20 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
     return items;
   }, [progress.wordMemory, todayStr, loadedCount]);
 
-  const overdueList = memoryItems.filter((i) => i.status === "overdue");
+  const overdueList = memoryItems
+    .filter((i) => i.status === "overdue")
+    .sort((a, b) => b.daysDiff - a.daysDiff);
   const dueTodayList = memoryItems.filter((i) => i.status === "today");
-  const upcomingList = memoryItems.filter((i) => i.status === "upcoming");
+  const upcomingList = memoryItems
+    .filter((i) => i.status === "upcoming")
+    .sort((a, b) => a.daysDiff - b.daysDiff);
 
   const totalDue = overdueList.length + dueTodayList.length;
 
-  /**
-   * Builds the review queue from what is actually due.
-   *
-   * A short queue used to be padded from `BEDROOM_VOCABULARY.slice(0, 5)` —
-   * bed, nightstand, dresser, wardrobe, desk — so a review with two due words
-   * became three furniture words the learner had not asked to review. Padding
-   * now draws on the words with the weakest memory instead, and the session
-   * carries the review group id rather than inheriting the furniture one.
-   */
   const startReviewSession = () => {
-    const dueQueue = [...overdueList, ...dueTodayList].map((i) => i.word.id);
-    const weakestFirst = memoryItems
-      .filter((i) => !dueQueue.includes(i.word.id))
-      .sort((a, b) => a.daysDiff - b.daysDiff)
-      .map((i) => i.word.id);
-
-    const queue = [...dueQueue, ...weakestFirst].slice(0, REVIEW_SESSION_SIZE);
+    const queue = [...overdueList, ...dueTodayList]
+      .slice(0, REVIEW_SESSION_SIZE)
+      .map((item) => item.word.id);
     if (queue.length === 0) return;
 
     dispatch({
@@ -117,221 +119,182 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
     });
   };
 
-  const canStartReview = memoryItems.length > 0;
+  const sessionSize = Math.min(REVIEW_SESSION_SIZE, totalDue);
+  const sections = [
+    {
+      key: "overdue",
+      title: "Overdue",
+      items: overdueList,
+      Icon: AlertCircle,
+      tint: "bg-wp-rose/5 border-wp-rose/20",
+      note: "Review these first",
+    },
+    {
+      key: "today",
+      title: "Due today",
+      items: dueTodayList,
+      Icon: Clock,
+      tint: "bg-wp-amber/5 border-wp-amber/20",
+      note: "Ready to review",
+    },
+    {
+      key: "upcoming",
+      title: "Upcoming",
+      items: upcomingList,
+      Icon: CheckCircle2,
+      tint: "bg-primary/5 border-primary/20",
+      note: "Scheduled for later",
+    },
+  ];
+  const focus =
+    "focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary";
 
   return (
-    <div className="flex flex-col gap-6 p-5 md:p-8 pb-8 max-w-4xl w-full mx-auto">
-      {/* Page header */}
-      <header className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+    <div className="flex flex-col gap-4 md:gap-6 p-4 md:p-8 max-w-6xl w-full mx-auto">
+      <header className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
-          <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider mb-1">
-            <BookOpen className="size-4" />
-            <span>Smart Daily Review</span>
-          </div>
-          <h1 className="font-sans font-black text-foreground text-2xl md:text-3xl leading-tight">
-            Daily Vocabulary Review
+          <p className="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-wider mb-2">
+            <BookOpen className="size-4" aria-hidden />
+            Daily vocabulary review
+          </p>
+          <h1 className="font-black text-foreground text-2xl md:text-3xl leading-tight">
+            Keep your vocabulary fresh
           </h1>
-          <p className="font-sans font-medium text-muted-foreground text-sm mt-0.5">
-            {totalDue > 0
-              ? `${totalDue} words are ready for a memory review`
-              : memoryItems.length === 0
-                ? "Complete your first lesson to begin your memory review."
-                : "All reviews complete for today! Keep up the great work."}
+          <p className="text-muted-foreground text-sm mt-2">
+            Review words at the right time to remember them for longer.
           </p>
         </div>
-
-        <div className="bg-secondary rounded-xl px-3 py-2 flex items-center gap-1.5 border border-primary/20 shrink-0 shadow-wp-xs">
-          <Flame className="size-4 text-wp-amber" />
-          <span className="font-sans font-bold text-foreground text-sm">
-            {progress.streak} Day Streak
-          </span>
-        </div>
+        <p className="flex items-center gap-2 text-sm font-bold text-foreground shrink-0">
+          <Flame className="size-5 text-primary" aria-hidden />
+          {progress.streak} day streak
+        </p>
       </header>
-
-      {/* Review Queue Sections */}
-      {memoryItems.length === 0 ? (
-        <div className="bg-wp-card rounded-2xl border border-border p-8 flex flex-col items-center gap-3 text-center">
-          <div className="size-14 rounded-2xl bg-secondary text-primary flex items-center justify-center">
-            <RotateCcw className="size-7" />
-          </div>
-          <div>
-            <h2 className="font-sans font-bold text-foreground text-lg">No Memory Data Yet</h2>
-            <p className="font-sans text-muted-foreground text-sm mt-1 max-w-xs mx-auto">
-              Complete any lesson to discover words and build your personalized memory schedule.
-            </p>
-          </div>
-        </div>
-      ) : (
-        <div className="flex flex-col gap-6">
-          {/* OVERDUE SECTION */}
-          {overdueList.length > 0 && (
-            <section aria-label="Overdue words" className="flex flex-col gap-3">
-              <div className="flex items-center gap-2 text-wp-rose font-sans font-bold text-sm">
-                <AlertCircle className="size-4" />
-                <span>OVERDUE ({overdueList.length})</span>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {overdueList.map(({ word, daysDiff, mastery }) => (
-                  <div
-                    key={word.id}
-                    className="bg-wp-card rounded-2xl border border-wp-rose/30 p-4 flex items-center gap-4 shadow-wp-xs"
-                  >
-                    <div className="relative rounded-xl shrink-0 size-14 overflow-hidden border border-border bg-muted">
-                      <WordImage
-                        word={word}
-                        width="56"
-                        height="56"
-                        className="size-full object-cover"
-                      />
-                    </div>
-                    <div className="flex flex-col gap-1 flex-1 min-w-0">
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <p className="font-sans font-bold text-foreground text-base">
-                          {word.label}
-                        </p>
-                        <span className="font-sans font-bold text-wp-rose bg-wp-rose/10 rounded-full px-2 py-0.5 text-[10px]">
-                          {daysDiff}d overdue
-                        </span>
-                      </div>
-                      <p className="font-sans text-muted-foreground text-xs font-medium">
-                        /{word.phonetic}/ · {mastery}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* DUE TODAY SECTION */}
-          {dueTodayList.length > 0 && (
-            <section aria-label="Due today words" className="flex flex-col gap-3">
-              <div className="flex items-center gap-2 text-wp-amber font-sans font-bold text-sm">
-                <Clock className="size-4" />
-                <span>DUE TODAY ({dueTodayList.length})</span>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {dueTodayList.map(({ word, mastery }) => (
-                  <div
-                    key={word.id}
-                    className="bg-wp-card rounded-2xl border border-wp-amber/30 p-4 flex items-center gap-4 shadow-wp-xs"
-                  >
-                    <div className="relative rounded-xl shrink-0 size-14 overflow-hidden border border-border bg-muted">
-                      <WordImage
-                        word={word}
-                        width="56"
-                        height="56"
-                        className="size-full object-cover"
-                      />
-                    </div>
-                    <div className="flex flex-col gap-1 flex-1 min-w-0">
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <p className="font-sans font-bold text-foreground text-base">
-                          {word.label}
-                        </p>
-                        <span className="font-sans font-bold text-wp-amber bg-wp-amber/10 rounded-full px-2 py-0.5 text-[10px]">
-                          Due now
-                        </span>
-                      </div>
-                      <p className="font-sans text-muted-foreground text-xs font-medium">
-                        /{word.phonetic}/ · {mastery}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* UPCOMING SECTION */}
-          {upcomingList.length > 0 && (
-            <section aria-label="Upcoming words" className="flex flex-col gap-3">
-              <div className="flex items-center gap-2 text-wp-teal font-sans font-bold text-sm">
-                <CheckCircle2 className="size-4" />
-                <span>UPCOMING ({upcomingList.length})</span>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {upcomingList.map(({ word, daysDiff, mastery }) => (
-                  <div
-                    key={word.id}
-                    className="bg-wp-card rounded-2xl border border-border p-4 flex items-center gap-4 opacity-75 shadow-wp-xs"
-                  >
-                    <div className="relative rounded-xl shrink-0 size-14 overflow-hidden border border-border bg-muted">
-                      <WordImage
-                        word={word}
-                        width="56"
-                        height="56"
-                        className="size-full object-cover"
-                      />
-                    </div>
-                    <div className="flex flex-col gap-1 flex-1 min-w-0">
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <p className="font-sans font-bold text-foreground text-base">
-                          {word.label}
-                        </p>
-                        <span className="font-sans font-medium text-muted-foreground bg-muted rounded-full px-2 py-0.5 text-[10px]">
-                          In {daysDiff}d
-                        </span>
-                      </div>
-                      <p className="font-sans text-muted-foreground text-xs font-medium">
-                        /{word.phonetic}/ · {mastery}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </section>
-          )}
-        </div>
+      {loadError && (
+        <p role="alert" className="text-foreground">
+          Some vocabulary could not load. Reload the page to try again.
+        </p>
       )}
-
-      {/*
-        The one route to the skill-exercise hub.
-        It sits below the review queue because spaced repetition is the point of
-        this tab and the drills are the optional extra — not the other way
-        round, which is how it read when this card was the first thing on both
-        Home and Explore.
-      */}
-      <section aria-label="Skill drills" className="border-t border-border pt-6">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div className="flex items-center gap-3.5">
-            <div className="size-11 rounded-xl bg-secondary text-primary flex items-center justify-center shrink-0 border border-primary/20">
-              <Layers className="size-5" aria-hidden />
-            </div>
-            <div>
-              <h2 className="font-sans font-bold text-foreground text-base">Skill Drills</h2>
-              <p className="font-sans text-muted-foreground text-xs mt-0.5 max-w-md">
-                Standalone listening, reading, speaking and writing practice, separate from your
-                lesson progress.
-              </p>
-            </div>
-          </div>
+      <section
+        aria-label="Today's review"
+        className="rounded-2xl border border-primary/15 bg-secondary p-4 md:p-6 flex items-center gap-4 md:gap-8"
+      >
+        <div className="size-28 md:size-36 rounded-full border-8 border-primary/20 border-t-primary flex flex-col items-center justify-center shrink-0 text-foreground">
+          <span className="text-3xl md:text-4xl font-black">{totalDue}</span>
+          <span className="text-xs font-semibold">words due</span>
+        </div>
+        <div className="min-w-0 flex-1">
+          <h2 className="hidden sm:block text-xl font-bold text-foreground mb-1">Today's review</h2>
+          <p className="text-sm text-foreground">
+            {overdueList.length} overdue · {dueTodayList.length} due today
+          </p>
           <button
             type="button"
-            onClick={() => dispatch({ type: "GO", to: "skill-hub" })}
-            className="shrink-0 bg-secondary hover:bg-primary/10 text-primary border border-primary/20 rounded-xl py-3 px-5 font-sans font-bold text-sm min-h-[44px] transition-all flex items-center justify-center gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            onClick={startReviewSession}
+            disabled={totalDue === 0 || loadError}
+            className={`mt-3 min-h-12 rounded-xl px-4 md:px-6 bg-primary text-primary-foreground font-bold text-sm flex items-center justify-center gap-2 disabled:opacity-60 ${focus}`}
           >
-            <span>Browse drills</span>
-            <ArrowRight className="size-4" aria-hidden />
+            {totalDue ? `Review ${sessionSize} now` : "All caught up"}
+            <ArrowRight className="size-4 shrink-0" aria-hidden />
           </button>
         </div>
+        <p className="hidden lg:block max-w-48 text-sm text-foreground bg-primary/5 rounded-xl p-4">
+          A little and often helps you remember for longer.
+        </p>
       </section>
-
-      {/* Start review CTA — nothing to review means nothing to start, rather
-          than quietly launching a furniture lesson instead. */}
-      <footer>
+      {memoryItems.length === 0 && !loadError && (
+        <section className="rounded-2xl border border-border p-6 text-center text-foreground">
+          <RotateCcw className="size-7 mx-auto mb-3 text-primary" aria-hidden />
+          <h2 className="font-bold">No memory data yet</h2>
+          <p className="text-sm text-muted-foreground mt-2">
+            Complete a lesson to build your personalized review schedule.
+          </p>
+        </section>
+      )}
+      {sections
+        .filter(({ items }) => items.length > 0)
+        .map(({ key, title, items, Icon, tint, note }) => (
+          <section
+            key={key}
+            aria-label={`${title} words`}
+            className={`rounded-2xl border p-3 md:p-4 ${tint}`}
+          >
+            <div className="flex items-center gap-2 mb-3 text-foreground">
+              <Icon className="size-5 shrink-0" aria-hidden />
+              <h2 className="font-bold">{title}</h2>
+              <span className="text-xs rounded-full bg-wp-card px-2 py-1">
+                {items.length} words
+              </span>
+              <span className="hidden md:block ms-auto text-xs">{note}</span>
+            </div>
+            <div id={`review-${key}`} className="grid grid-cols-1 md:grid-cols-3 gap-3">
+              {items.map(({ word, daysDiff }, index) => (
+                <button
+                  key={word.id}
+                  type="button"
+                  onClick={() => setSelectedWord(word)}
+                  className={`${!expanded[key] && index > 0 ? (index < 3 ? "hidden md:flex" : "hidden") : "flex"} min-w-0 text-start items-center gap-3 bg-wp-card border border-border rounded-xl p-2 shadow-wp-xs ${focus}`}
+                >
+                  <WordImage
+                    word={word}
+                    width="72"
+                    height="72"
+                    className="size-16 md:size-18 shrink-0 rounded-lg object-cover"
+                  />
+                  <span className="flex-1 min-w-0">
+                    <span className="block font-bold text-sm text-foreground break-words">
+                      {word.label}
+                    </span>
+                    <span className="block mt-1 text-xs text-muted-foreground">
+                      {key === "overdue"
+                        ? `${daysDiff} ${daysDiff === 1 ? "day" : "days"} overdue`
+                        : key === "today"
+                          ? "Due today"
+                          : `In ${daysDiff} ${daysDiff === 1 ? "day" : "days"}`}
+                    </span>
+                  </span>
+                  <ChevronRight className="size-4 shrink-0 text-primary" aria-hidden />
+                </button>
+              ))}
+            </div>
+            {items.length > 1 && (
+              <button
+                type="button"
+                aria-expanded={!!expanded[key]}
+                aria-controls={`review-${key}`}
+                onClick={() => setExpanded((value) => ({ ...value, [key]: !value[key] }))}
+                className={`${items.length <= 3 ? "md:hidden" : ""} min-h-11 mt-2 px-2 text-primary text-sm font-semibold rounded-lg ${focus}`}
+              >
+                {expanded[key] ? "Show fewer" : `View all ${items.length}`}
+              </button>
+            )}
+          </section>
+        ))}
+      <section
+        aria-label="Skill drills"
+        className="border-t border-border pt-5 flex flex-col sm:flex-row sm:items-center gap-4"
+      >
+        <Layers className="hidden sm:block size-10 text-primary shrink-0" aria-hidden />
+        <div className="flex-1">
+          <h2 className="font-bold text-lg text-foreground">Skill Drills</h2>
+          <p className="text-muted-foreground text-sm mt-1">
+            Extra listening, reading, speaking and writing practice, separate from your review
+            schedule.
+          </p>
+        </div>
         <button
           type="button"
-          onClick={startReviewSession}
-          disabled={!canStartReview}
-          className="bg-wp-blue hover:opacity-90 active:opacity-80 rounded-xl py-4 w-full font-sans font-bold text-wp-text-on-blue text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue min-h-[52px] shadow-wp-xs transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+          onClick={() => dispatch({ type: "GO", to: "skill-hub" })}
+          className={`min-h-12 px-5 rounded-xl border border-primary/20 bg-secondary text-primary font-bold text-sm flex items-center justify-center gap-2 ${focus}`}
         >
-          <span>
-            {canStartReview ? `Start Review Session (${totalDue} due)` : "Nothing to review yet"}
-          </span>
-          <ArrowRight className="size-5" aria-hidden />
+          Browse drills
+          <ArrowRight className="size-4" aria-hidden />
         </button>
-      </footer>
+      </section>
+      <WordInspectorModal
+        word={selectedWord}
+        isOpen={selectedWord !== null}
+        onClose={() => setSelectedWord(null)}
+      />
     </div>
   );
 });
