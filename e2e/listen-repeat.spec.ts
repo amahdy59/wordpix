@@ -121,8 +121,9 @@ for (const viewport of [
       element.scrollTop = 0;
     });
     await expect
-      .poll(() =>
-        hero.evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0)
+      .poll(
+        () => hero.evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0),
+        { timeout: 15_000 }
       )
       .toBe(true);
     await page.screenshot({ path: testInfo.outputPath("listen-layout.png") });

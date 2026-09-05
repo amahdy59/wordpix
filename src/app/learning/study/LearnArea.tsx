@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { ArrowRight, BookOpen, Check, RotateCcw, Volume2 } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import { ArrowRight, BookOpen, Search, Volume2 } from "lucide-react";
 import type { StudyNode, UnitStudyProgress, StudyWordStatus } from "./types";
 import type { UnitLearningMaterials } from "../types";
 import { getWords } from "../../data/vocabulary";
@@ -29,6 +29,9 @@ export function LearnArea({
   const words = getWords(node.wordIds || [], materials.unitId);
   const [inspectedWord, setInspectedWord] = useState<VocabularyItem | null>(null);
   const [playingWordId, setPlayingWordId] = useState<string | null>(null);
+  const [query, setQuery] = useState("");
+  const [filter, setFilter] = useState<"all" | StudyWordStatus>("all");
+  const [announcement, setAnnouncement] = useState("");
   const { speak, stop, isPlaying } = useAudio({
     lang: "en-US",
     rate: 0.95,
@@ -41,15 +44,31 @@ export function LearnArea({
       progress?.wordStatus[word.id] === "comfortable"
   ).length;
 
-  const setWordStatus = (wordId: string, status: StudyWordStatus) =>
+  const visibleWords = useMemo(() => {
+    const normalizedQuery = query.trim().toLocaleLowerCase();
+    return words.filter((word) => {
+      const status = progress?.wordStatus[word.id] || "new";
+      return (
+        (filter === "all" || filter === status) &&
+        (!normalizedQuery || word.label.toLocaleLowerCase().includes(normalizedQuery))
+      );
+    });
+  }, [filter, progress?.wordStatus, query, words]);
+
+  useEffect(() => () => stop(), [stop]);
+
+  const setWordStatus = (word: VocabularyItem, status: StudyWordStatus) => {
     onProgressUpdate((current) => ({
       ...current,
-      wordStatus: { ...current.wordStatus, [wordId]: status },
+      wordStatus: { ...current.wordStatus, [word.id]: status },
       reviewWordIds:
         status === "review"
-          ? [...new Set([...current.reviewWordIds, wordId])]
-          : current.reviewWordIds.filter((id) => id !== wordId),
+          ? [...new Set([...current.reviewWordIds, word.id])]
+          : current.reviewWordIds.filter((id) => id !== word.id),
     }));
+    const label = status === "comfortable" ? "learned" : status;
+    setAnnouncement(`${word.label} marked ${label}.`);
+  };
   const finish = () => {
     onProgressUpdate((current) => ({
       ...current,
@@ -77,23 +96,65 @@ export function LearnArea({
           </p>
         </div>
         <p className="shrink-0 text-sm font-semibold text-foreground">
-          {studiedCount} of {words.length} marked learned
+          {studiedCount} of {words.length} in progress or learned
         </p>
       </header>
+      <section
+        aria-label="Filter vocabulary"
+        className="grid gap-3 rounded-2xl border border-border bg-wp-card p-3 sm:grid-cols-[minmax(0,1fr)_12rem]"
+      >
+        <label className="relative block">
+          <span className="sr-only">Search words</span>
+          <Search
+            className="pointer-events-none absolute start-3 top-1/2 size-5 -translate-y-1/2 text-muted-foreground"
+            aria-hidden
+          />
+          <input
+            type="search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Search words"
+            className="min-h-11 w-full rounded-xl border border-border bg-background pe-3 ps-10 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          />
+        </label>
+        <label className="grid grid-cols-[auto_1fr] items-center gap-2 text-sm font-semibold text-foreground">
+          <span>Show</span>
+          <select
+            value={filter}
+            onChange={(event) => setFilter(event.target.value as "all" | StudyWordStatus)}
+            className="min-h-11 min-w-0 rounded-xl border border-border bg-background px-3 text-sm text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            <option value="all">All words</option>
+            <option value="new">New</option>
+            <option value="learning">Learning</option>
+            <option value="comfortable">Learned</option>
+            <option value="review">Review again</option>
+          </select>
+        </label>
+      </section>
+      <p className="sr-only" role="status" aria-live="polite">
+        {announcement}
+      </p>
       <div
+        role="list"
         className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4"
         aria-label={`${node.title} vocabulary`}
       >
-        {words.map((word) => {
-          const entry = getLexiconEntry(word.id, word.label);
+        {visibleWords.map((word) => {
+          const entry = getLexiconEntry(word.id, word.label, materials.unitId);
           const status = progress?.wordStatus[word.id] || "new";
           const learned = status === "learning" || status === "comfortable";
           return (
             <article
               key={word.id}
+              role="listitem"
               className="bg-wp-card rounded-2xl border border-border shadow-wp-xs overflow-hidden flex flex-col"
             >
-              <WordImage word={word} className="w-full aspect-[16/9] object-cover" />
+              <WordImage
+                word={word}
+                altMode="decorative"
+                className="w-full aspect-[3/2] max-h-56 object-cover"
+              />
               <div className="p-4 flex flex-col gap-3 flex-1">
                 <div className="flex items-start gap-3">
                   <div className="min-w-0 flex-1">
@@ -105,10 +166,16 @@ export function LearnArea({
                   <button
                     type="button"
                     onClick={() => {
+                      if (isPlaying && playingWordId === word.id) {
+                        stop();
+                        setPlayingWordId(null);
+                        return;
+                      }
                       stop();
+                      setPlayingWordId(word.id);
                       speak(word.label);
                     }}
-                    aria-label={`Listen to ${word.label}`}
+                    aria-label={`${isPlaying && playingWordId === word.id ? "Stop" : "Listen to"} ${word.label}`}
                     aria-pressed={isPlaying && playingWordId === word.id}
                     className="size-11 grid place-items-center rounded-xl bg-primary text-primary-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                   >
@@ -137,36 +204,51 @@ export function LearnArea({
                   onClick={() => setInspectedWord(word)}
                   className="min-h-11 text-start text-primary font-semibold rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
                 >
-                  Examples and word details
+                  View examples
                 </button>
-                <div className="grid grid-cols-2 gap-2">
-                  <button
-                    type="button"
-                    aria-pressed={learned}
-                    onClick={() => setWordStatus(word.id, "learning")}
-                    className={`min-h-11 rounded-xl border font-bold text-sm flex items-center justify-center gap-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${learned ? "bg-primary text-primary-foreground border-primary" : "bg-wp-card text-foreground border-border"}`}
+                <label className="grid grid-cols-[auto_1fr] items-center gap-2 border-t border-border pt-3 text-sm font-semibold text-foreground">
+                  <span>Status</span>
+                  <select
+                    value={status}
+                    onChange={(event) => setWordStatus(word, event.target.value as StudyWordStatus)}
+                    aria-label={`${word.label} learning status`}
+                    className={`min-h-11 min-w-0 rounded-xl border px-3 text-sm font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                      learned
+                        ? "border-primary bg-primary text-primary-foreground"
+                        : status === "review"
+                          ? "border-wp-amber bg-wp-amber/15 text-foreground"
+                          : "border-border bg-background text-foreground"
+                    }`}
                   >
-                    <Check className="size-4" aria-hidden />
-                    Learned
-                  </button>
-                  <button
-                    type="button"
-                    aria-pressed={status === "review"}
-                    onClick={() => setWordStatus(word.id, "review")}
-                    className={`min-h-11 rounded-xl border font-bold text-sm flex items-center justify-center gap-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${status === "review" ? "bg-wp-amber/15 text-foreground border-wp-amber" : "bg-wp-card text-foreground border-border"}`}
-                  >
-                    <RotateCcw className="size-4" aria-hidden />
-                    Review
-                  </button>
-                </div>
+                    <option value="new">New</option>
+                    <option value="learning">Learning</option>
+                    <option value="comfortable">Learned</option>
+                    <option value="review">Review again</option>
+                  </select>
+                </label>
               </div>
             </article>
           );
         })}
       </div>
+      {visibleWords.length === 0 && (
+        <div className="rounded-2xl border border-dashed border-border p-8 text-center">
+          <p className="font-semibold text-foreground">No words match these filters.</p>
+          <button
+            type="button"
+            onClick={() => {
+              setQuery("");
+              setFilter("all");
+            }}
+            className="mt-2 min-h-11 rounded-xl px-4 font-semibold text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
+          >
+            Clear filters
+          </button>
+        </div>
+      )}
       <footer className="border border-border bg-background rounded-2xl p-3 flex flex-col sm:flex-row sm:items-center gap-3 justify-between">
         <p className="text-sm text-muted-foreground">
-          You can return anytime. Only your Learned and Review choices update progress.
+          You can return anytime. Your status choices save automatically.
         </p>
         <button
           type="button"
@@ -179,6 +261,7 @@ export function LearnArea({
       </footer>
       <WordInspectorModal
         word={inspectedWord}
+        unitId={materials.unitId}
         bilingual={!immersionMode}
         isOpen={!!inspectedWord}
         onClose={() => setInspectedWord(null)}

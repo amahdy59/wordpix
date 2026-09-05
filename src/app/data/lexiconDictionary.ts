@@ -38431,8 +38431,29 @@ const EXTENDED_VOCABULARY_GLOSSES: Record<
   },
 };
 
-export function getLexiconEntry(wordId: string, fallbackLabel?: string): LexiconEntry {
+export function getLexiconEntry(
+  wordId: string,
+  fallbackLabel?: string,
+  unitId?: string
+): LexiconEntry {
   const normalized = wordId.toLowerCase().trim();
+  if (unitId === "bathroom" && normalized === "shower") {
+    return {
+      ...LEXICON_DICTIONARY.shower,
+      arabic: "دُشّ",
+      collocations: ["take a shower", "have a shower", "quick shower"],
+      phrasalVerbs: [],
+      sentences: [
+        {
+          context: "Daily routine",
+          en: "I take a shower every morning.",
+          ar: "أستحم كل صباح.",
+        },
+      ],
+      exampleSentence: "I take a shower every morning.",
+      exampleArabic: "أستحم كل صباح.",
+    };
+  }
   if (LEXICON_DICTIONARY[normalized]) {
     return LEXICON_DICTIONARY[normalized];
   }

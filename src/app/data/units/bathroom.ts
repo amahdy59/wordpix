@@ -4,7 +4,7 @@
 // never downloads it. Loaded through data/vocabulary.ts, not imported directly
 // by screens.
 import type { VocabularyItem } from "../lessons";
-import { PLACEHOLDER_DESCRIPTION } from "../placeholderDescription";
+import { BATHROOM_DEFINITIONS } from "../definitions/bathroom";
 
 export const VOCABULARY: VocabularyItem[] = [
   {
@@ -13,7 +13,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbæθtʌb/",
     cefr: "A1",
     img: "/word-images/bathroom/bathtub.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["bathtub"],
     topic: "bathroom",
   },
   {
@@ -22,7 +22,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈʃaʊər/",
     cefr: "A1",
     img: "/word-images/bathroom/shower.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["shower"],
     topic: "bathroom",
   },
   {
@@ -31,7 +31,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɔɪlɪt/",
     cefr: "A1",
     img: "/word-images/bathroom/toilet.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["toilet"],
     topic: "bathroom",
   },
   {
@@ -40,7 +40,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sɪŋk/",
     cefr: "A1",
     img: "/word-images/bathroom/sink.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["sink"],
     topic: "bathroom",
   },
   {
@@ -49,7 +49,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfɔːsɪt/",
     cefr: "A1",
     img: "/word-images/bathroom/faucet.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["faucet"],
     topic: "bathroom",
   },
   {
@@ -58,7 +58,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dreɪn/",
     cefr: "A1",
     img: "/word-images/bathroom/drain.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["drain"],
     topic: "bathroom",
   },
   {
@@ -67,7 +67,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɪrər/",
     cefr: "A1",
     img: "/word-images/bathroom/mirror.avif",
-    description: "A flat glass panel that shows your own reflection.",
+    description: BATHROOM_DEFINITIONS["mirror"],
     topic: "bathroom",
   },
   {
@@ -76,7 +76,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtaʊəl ræk/",
     cefr: "A2",
     img: "/word-images/bathroom/towel-rack.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["towel-rack"],
     topic: "bathroom",
   },
   {
@@ -85,7 +85,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkæbɪnɪt/",
     cefr: "A1",
     img: "/word-images/bathroom/cabinet.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["cabinet"],
     topic: "bathroom",
   },
   {
@@ -94,7 +94,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/taɪlz/",
     cefr: "A1",
     img: "/word-images/bathroom/tiles.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["tiles"],
     topic: "bathroom",
   },
   {
@@ -103,7 +103,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/soʊp/",
     cefr: "A1",
     img: "/word-images/bathroom/soap.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["soap"],
     topic: "bathroom",
   },
   {
@@ -112,7 +112,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ʃæmˈpuː/",
     cefr: "A1",
     img: "/word-images/bathroom/shampoo.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["shampoo"],
     topic: "bathroom",
   },
   {
@@ -121,7 +121,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kənˈdɪʃənər/",
     cefr: "A2",
     img: "/word-images/bathroom/conditioner.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["conditioner"],
     topic: "bathroom",
   },
   {
@@ -130,7 +130,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtuːθbrʌʃ/",
     cefr: "A2",
     img: "/word-images/bathroom/toothbrush.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["toothbrush"],
     topic: "bathroom",
   },
   {
@@ -139,7 +139,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtuːθpeɪst/",
     cefr: "A2",
     img: "/word-images/bathroom/toothpaste.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["toothpaste"],
     topic: "bathroom",
   },
   {
@@ -148,7 +148,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtaʊəl/",
     cefr: "A1",
     img: "/word-images/bathroom/towel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["towel"],
     topic: "bathroom",
   },
   {
@@ -157,7 +157,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/koʊm/",
     cefr: "A1",
     img: "/word-images/bathroom/comb.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["comb"],
     topic: "bathroom",
   },
   {
@@ -166,7 +166,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhɛrbrʌʃ/",
     cefr: "A1",
     img: "/word-images/bathroom/hairbrush.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["hairbrush"],
     topic: "bathroom",
   },
   {
@@ -175,7 +175,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈloʊʃən/",
     cefr: "A1",
     img: "/word-images/bathroom/lotion.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["lotion"],
     topic: "bathroom",
   },
   {
@@ -184,7 +184,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/diˈoʊdərənt/",
     cefr: "A1",
     img: "/word-images/bathroom/deodorant.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["deodorant"],
     topic: "bathroom",
   },
   {
@@ -193,7 +193,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɔɪlɪt ˈpeɪpər/",
     cefr: "A2",
     img: "/word-images/bathroom/toilet-paper.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["toilet-paper"],
     topic: "bathroom",
   },
   {
@@ -202,7 +202,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɑːtən bɔːlz/",
     cefr: "A2",
     img: "/word-images/bathroom/cotton-balls.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["cotton-balls"],
     topic: "bathroom",
   },
   {
@@ -211,7 +211,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɑːtən swɑːb/",
     cefr: "A2",
     img: "/word-images/bathroom/cotton-swab.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["cotton-swab"],
     topic: "bathroom",
   },
   {
@@ -220,7 +220,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈreɪzər/",
     cefr: "A1",
     img: "/word-images/bathroom/razor.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["razor"],
     topic: "bathroom",
   },
   {
@@ -229,7 +229,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/neɪl ˈklɪpər/",
     cefr: "A2",
     img: "/word-images/bathroom/nail-clipper.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["nail-clipper"],
     topic: "bathroom",
   },
   {
@@ -238,7 +238,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/hɛr ˈdraɪər/",
     cefr: "A2",
     img: "/word-images/bathroom/hair-dryer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["hair-dryer"],
     topic: "bathroom",
   },
   {
@@ -247,7 +247,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/skeɪl/",
     cefr: "A1",
     img: "/word-images/bathroom/scale.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["scale"],
     topic: "bathroom",
   },
   {
@@ -256,7 +256,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈlɔːndri ˈbæskɪt/",
     cefr: "A2",
     img: "/word-images/bathroom/laundry-basket.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["laundry-basket"],
     topic: "bathroom",
   },
   {
@@ -265,7 +265,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fɜːrst eɪd kɪt/",
     cefr: "B1",
     img: "/word-images/bathroom/first-aid-kit.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["first-aid-kit"],
     topic: "bathroom",
   },
   {
@@ -274,7 +274,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/θərˈmɑːmɪtər/",
     cefr: "A2",
     img: "/word-images/bathroom/thermometer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["thermometer"],
     topic: "bathroom",
   },
   {
@@ -283,7 +283,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bæθ mæt/",
     cefr: "A2",
     img: "/word-images/bathroom/bath-mat.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["bath-mat"],
     topic: "bathroom",
   },
   {
@@ -292,7 +292,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈʃaʊər ˈkɜːrtən/",
     cefr: "A2",
     img: "/word-images/bathroom/shower-curtain.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["shower-curtain"],
     topic: "bathroom",
   },
   {
@@ -301,7 +301,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈʃaʊər hɛd/",
     cefr: "A2",
     img: "/word-images/bathroom/shower-head.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["shower-head"],
     topic: "bathroom",
   },
   {
@@ -310,7 +310,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bæθ ˈtaʊəl/",
     cefr: "A2",
     img: "/word-images/bathroom/bath-towel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["bath-towel"],
     topic: "bathroom",
   },
   {
@@ -319,7 +319,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/hænd ˈtaʊəl/",
     cefr: "A2",
     img: "/word-images/bathroom/hand-towel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["hand-towel"],
     topic: "bathroom",
   },
   {
@@ -328,7 +328,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɑːʃklɔːθ/",
     cefr: "A1",
     img: "/word-images/bathroom/washcloth.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["washcloth"],
     topic: "bathroom",
   },
   {
@@ -337,7 +337,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/soʊp dɪʃ/",
     cefr: "A2",
     img: "/word-images/bathroom/soap-dish.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["soap-dish"],
     topic: "bathroom",
   },
   {
@@ -346,7 +346,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ʃæmˈpuː ˈbɑːtəl/",
     cefr: "A2",
     img: "/word-images/bathroom/shampoo-bottle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["shampoo-bottle"],
     topic: "bathroom",
   },
   {
@@ -355,7 +355,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈrʌbər dʌk/",
     cefr: "A2",
     img: "/word-images/bathroom/rubber-duck.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["rubber-duck"],
     topic: "bathroom",
   },
   {
@@ -364,7 +364,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈʃaʊər dʒɛl/",
     cefr: "A2",
     img: "/word-images/bathroom/shower-gel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["shower-gel"],
     topic: "bathroom",
   },
   {
@@ -373,7 +373,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/feɪs kriːm/",
     cefr: "A2",
     img: "/word-images/bathroom/face-cream.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["face-cream"],
     topic: "bathroom",
   },
   {
@@ -382,7 +382,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsʌnskriːn/",
     cefr: "A1",
     img: "/word-images/bathroom/sunscreen.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["sunscreen"],
     topic: "bathroom",
   },
   {
@@ -391,7 +391,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/lɪp bɑːm/",
     cefr: "A2",
     img: "/word-images/bathroom/lip-balm.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["lip-balm"],
     topic: "bathroom",
   },
   {
@@ -400,7 +400,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/hænd soʊp/",
     cefr: "A2",
     img: "/word-images/bathroom/hand-soap.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["hand-soap"],
     topic: "bathroom",
   },
   {
@@ -409,7 +409,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbɑːdi wɑːʃ/",
     cefr: "A2",
     img: "/word-images/bathroom/body-wash.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["body-wash"],
     topic: "bathroom",
   },
   {
@@ -418,7 +418,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmaʊθwɑːʃ/",
     cefr: "A1",
     img: "/word-images/bathroom/mouthwash.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["mouthwash"],
     topic: "bathroom",
   },
   {
@@ -427,7 +427,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdɛntəl flɑːs/",
     cefr: "A2",
     img: "/word-images/bathroom/dental-floss.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["dental-floss"],
     topic: "bathroom",
   },
   {
@@ -436,7 +436,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/feɪs wɑːʃ/",
     cefr: "A2",
     img: "/word-images/bathroom/face-wash.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["face-wash"],
     topic: "bathroom",
   },
   {
@@ -445,7 +445,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/hænd ˈsænɪtaɪzər/",
     cefr: "A2",
     img: "/word-images/bathroom/hand-sanitizer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["hand-sanitizer"],
     topic: "bathroom",
   },
   {
@@ -454,7 +454,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/wɛt waɪps/",
     cefr: "A2",
     img: "/word-images/bathroom/wet-wipes.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["wet-wipes"],
     topic: "bathroom",
   },
   {
@@ -472,7 +472,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/brʌʃ/",
     cefr: "A1",
     img: "/word-images/bathroom/brush.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["brush"],
     topic: "bathroom",
   },
   {
@@ -481,7 +481,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbʌkɪt/",
     cefr: "A1",
     img: "/word-images/bathroom/bucket.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["bucket"],
     topic: "bathroom",
   },
   {
@@ -490,7 +490,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡlʌvz/",
     cefr: "A1",
     img: "/word-images/bathroom/gloves.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["gloves"],
     topic: "bathroom",
   },
   {
@@ -499,7 +499,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/spreɪ ˈbɑːtəl/",
     cefr: "A2",
     img: "/word-images/bathroom/spray-bottle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["spray-bottle"],
     topic: "bathroom",
   },
   {
@@ -508,7 +508,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/klɔːθ/",
     cefr: "A1",
     img: "/word-images/bathroom/cloth.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["cloth"],
     topic: "bathroom",
   },
   {
@@ -517,7 +517,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈplʌndʒər/",
     cefr: "A1",
     img: "/word-images/bathroom/plunger.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["plunger"],
     topic: "bathroom",
   },
   {
@@ -526,7 +526,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈskwiːdʒiː/",
     cefr: "A1",
     img: "/word-images/bathroom/squeegee.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["squeegee"],
     topic: "bathroom",
   },
   {
@@ -535,7 +535,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɪʃuː/",
     cefr: "A1",
     img: "/word-images/bathroom/tissue.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["tissue"],
     topic: "bathroom",
   },
   {
@@ -544,7 +544,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/wɑːʃ hændz/",
     cefr: "A2",
     img: "/word-images/bathroom/wash-hands.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["wash-hands"],
     topic: "bathroom",
   },
   {
@@ -553,7 +553,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/brʌʃ tiːθ/",
     cefr: "A2",
     img: "/word-images/bathroom/brush-teeth.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["brush-teeth"],
     topic: "bathroom",
   },
   {
@@ -562,7 +562,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/teɪk ˈʃaʊər/",
     cefr: "A2",
     img: "/word-images/bathroom/take-shower.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["take-shower"],
     topic: "bathroom",
   },
   {
@@ -571,7 +571,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/draɪ ɔːf/",
     cefr: "A2",
     img: "/word-images/bathroom/dry-off.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["dry-off"],
     topic: "bathroom",
   },
   {
@@ -580,7 +580,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/flʌʃ/",
     cefr: "A1",
     img: "/word-images/bathroom/flush.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["flush"],
     topic: "bathroom",
   },
   {
@@ -589,7 +589,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/koʊm hɛr/",
     cefr: "A2",
     img: "/word-images/bathroom/comb-hair.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["comb-hair"],
     topic: "bathroom",
   },
   {
@@ -598,7 +598,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/əˈplaɪ ˈloʊʃən/",
     cefr: "A2",
     img: "/word-images/bathroom/apply-lotion.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["apply-lotion"],
     topic: "bathroom",
   },
   {
@@ -607,7 +607,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɡɑːrɡəl/",
     cefr: "A1",
     img: "/word-images/bathroom/gargle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: BATHROOM_DEFINITIONS["gargle"],
     topic: "bathroom",
   },
 ];

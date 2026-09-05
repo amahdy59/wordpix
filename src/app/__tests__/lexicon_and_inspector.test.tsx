@@ -58,6 +58,13 @@ describe("Lexicon Dictionary & Inspector", () => {
     expect(hasArabicGloss(getLexiconEntry("toilet"))).toBe(true);
   });
 
+  it("uses the bathroom sense for a reused shower word id", () => {
+    const entry = getLexiconEntry("shower", "Shower", "bathroom");
+    expect(entry.arabic).toBe("دُشّ");
+    expect(entry.collocations).toContain("take a shower");
+    expect(entry.exampleSentence).not.toMatch(/beach|sand|saltwater/i);
+  });
+
   it("has no placeholder entries left in the dictionary", () => {
     // The stubs read `arabic: "<Label> (Arabic)"` with the English sentence
     // copied into the `ar` field, and shipped to learners as real content.

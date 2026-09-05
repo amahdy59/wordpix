@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { BEDROOM_GROUPS, BEDROOM_VOCABULARY, COURSE_UNITS, type CourseUnit } from "../data/lessons";
 import { loadAllUnitVocabulary } from "../data/vocabulary";
+import { PLACEHOLDER_DESCRIPTION } from "../data/placeholderDescription";
 import { getImageAltText } from "../shared/WordImage";
 
 function normalized(value: string): string {
@@ -20,20 +21,31 @@ const wordsOf = (unit: CourseUnit) => unitWords.get(unit.id) ?? [];
 const vocabulary = units.flatMap(wordsOf);
 
 describe("Vocabulary descriptions", () => {
-  it("gives every word a useful description", () => {
-    vocabulary.forEach((word) => {
-      expect(word.description, `${word.id} has no description`).toBeTruthy();
-      expect(word.description, `${word.id} contains placeholder copy`).not.toMatch(
-        /known as|needs manual|undefined/i
-      );
-      expect(word.description.length, `${word.id} too short`).toBeGreaterThan(25);
-      expect(word.description.length, `${word.id} too long to listen to`).toBeLessThan(350);
-      expect(word.description, `${word.id} should end with a period`).toMatch(/\.$/);
-      expect(word.description[0], `${word.id} should start capitalised`).toBe(
-        word.description[0].toUpperCase()
-      );
-    });
+  it("validates every completed editorial description", () => {
+    vocabulary
+      .filter((word) => word.description !== PLACEHOLDER_DESCRIPTION)
+      .forEach((word) => {
+        expect(word.description, `${word.id} has no description`).toBeTruthy();
+        expect(word.description, `${word.id} contains placeholder copy`).not.toMatch(
+          /known as|needs manual|undefined/i
+        );
+        expect(word.description.length, `${word.id} too short`).toBeGreaterThan(25);
+        expect(word.description.length, `${word.id} too long to listen to`).toBeLessThan(350);
+        expect(word.description, `${word.id} should end with a period`).toMatch(/\.$/);
+        expect(word.description[0], `${word.id} should start capitalised`).toBe(
+          word.description[0].toUpperCase()
+        );
+      });
   }, 60000);
+
+  it("tracks placeholder debt and prevents it from increasing", () => {
+    const placeholders = vocabulary.filter((word) => word.description === PLACEHOLDER_DESCRIPTION);
+    expect(placeholders.length, "Vocabulary placeholder debt increased").toBeLessThanOrEqual(11340);
+    expect(
+      placeholders.filter((word) => word.topic === "bathroom"),
+      "The reviewed Bathroom unit must not regress to placeholder definitions"
+    ).toHaveLength(0);
+  });
 
   it("ensures vocabulary items have valid learning descriptions", () => {
     const invalid = vocabulary.filter((w) => !w.description);

@@ -699,6 +699,7 @@ export function StudyShell({
       {/* Vocabulary Inspector Modal */}
       <WordInspectorModal
         word={inspectedWord}
+        unitId={materials.unitId}
         isOpen={!!inspectedWord}
         onClose={() => setInspectedWord(null)}
       />

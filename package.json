@@ -10,6 +10,7 @@
     "assets:verify": "node scripts/verify_r2.cjs",
     "audio:corpus": "node scripts/build_audio_corpus.cjs",
     "audio:generate": "node scripts/generate_audio.cjs",
+    "content:definitions:audit": "node scripts/audit_vocabulary_descriptions.mjs",
     "audio:plan": "node scripts/generate_audio.cjs --dry-run",
     "audio:reconcile": "node scripts/generate_audio.cjs --reconcile",
     "build": "node scripts/build_group_thumbnails.mjs && vite build",

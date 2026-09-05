@@ -66,12 +66,15 @@ describe("Study vocabulary grid", () => {
         immersionMode={false}
       />
     );
-    expect(screen.getAllByRole("article")).toHaveLength(2);
+    expect(screen.getAllByRole("listitem")).toHaveLength(2);
     expect(screen.getByRole("heading", { name: "Bed" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Pillow" })).toBeInTheDocument();
-    await userEvent.click(screen.getAllByRole("button", { name: "Learned" })[0]);
+    await userEvent.selectOptions(
+      screen.getByRole("combobox", { name: "Bed learning status" }),
+      "comfortable"
+    );
     const update = onProgressUpdate.mock.calls[0][0];
-    expect(update(mockProgress).wordStatus.bed).toBe("learning");
+    expect(update(mockProgress).wordStatus.bed).toBe("comfortable");
   });
 
   it("queues a selected word for review", async () => {
@@ -85,9 +88,35 @@ describe("Study vocabulary grid", () => {
         onNextActivity={vi.fn()}
       />
     );
-    await userEvent.click(screen.getAllByRole("button", { name: "Review" })[0]);
+    await userEvent.selectOptions(
+      screen.getByRole("combobox", { name: "Bed learning status" }),
+      "review"
+    );
     const update = onProgressUpdate.mock.calls[0][0];
     expect(update(mockProgress).reviewWordIds).toContain("bed");
+  });
+
+  it("filters the grid by search and announces status changes", async () => {
+    const onProgressUpdate = vi.fn();
+    render(
+      <LearnArea
+        node={mockNode}
+        materials={mockMaterials}
+        progress={mockProgress}
+        onProgressUpdate={onProgressUpdate}
+        onNextActivity={vi.fn()}
+      />
+    );
+
+    await userEvent.type(screen.getByRole("searchbox", { name: "Search words" }), "pillow");
+    expect(screen.queryByRole("heading", { name: "Bed" })).not.toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Pillow" })).toBeInTheDocument();
+
+    await userEvent.selectOptions(
+      screen.getByRole("combobox", { name: "Pillow learning status" }),
+      "review"
+    );
+    expect(screen.getByRole("status")).toHaveTextContent("Pillow marked review.");
   });
 });
 

@@ -214,7 +214,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
       onChange={(value) => setBilingual(value === "Bilingual")}
     />
   );
-  const lexiconEntry = getLexiconEntry(currentWord.id, currentWord.label);
+  const lexiconEntry = getLexiconEntry(currentWord.id, currentWord.label, unit.id);
 
   return (
     <div className="h-dvh bg-background flex flex-col overflow-hidden">
@@ -607,6 +607,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         lessonPanel
         bilingual={bilingual}
         word={inspectedWord}
+        unitId={unit.id}
         isOpen={!!inspectedWord && !desktopDetails}
         onClose={() => setInspectedWord(null)}
       />

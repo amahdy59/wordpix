@@ -11,6 +11,7 @@ import { WordDetailsContent } from "./WordDetailsContent";
 
 interface Props {
   word: VocabularyItem | null;
+  unitId?: string;
   lessonPanel?: boolean;
   bilingual?: boolean;
   isOpen: boolean;
@@ -19,6 +20,7 @@ interface Props {
 
 export const WordInspectorModal = memo(function WordInspectorModal({
   word,
+  unitId,
   lessonPanel = false,
   bilingual = true,
   isOpen,
@@ -30,7 +32,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
 
   if (!isOpen || !word) return null;
 
-  const entry = getLexiconEntry(word.id, word.label);
+  const entry = getLexiconEntry(word.id, word.label, unitId);
 
   return createPortal(
     <AnimatePresence>
