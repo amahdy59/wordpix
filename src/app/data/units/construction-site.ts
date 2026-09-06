@@ -4,7 +4,6 @@
 // never downloads it. Loaded through data/vocabulary.ts, not imported directly
 // by screens.
 import type { VocabularyItem } from "../lessons";
-import { PLACEHOLDER_DESCRIPTION } from "../placeholderDescription";
 
 export const VOCABULARY: VocabularyItem[] = [
   {
@@ -13,7 +12,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kreɪn/",
     cefr: "A2",
     img: "/word-images/construction-site/crane.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tall machine with a long arm used to lift heavy materials.",
     topic: "construction-site",
   },
   {
@@ -22,7 +21,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbʊlˌdoʊzər/",
     cefr: "A2",
     img: "/word-images/construction-site/bulldozer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A powerful vehicle with a broad blade for moving earth or clearing ground.",
     topic: "construction-site",
   },
   {
@@ -31,7 +30,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɛkskəˌveɪtər/",
     cefr: "A2",
     img: "/word-images/construction-site/excavator.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large machine with a bucket used for digging and moving earth.",
     topic: "construction-site",
   },
   {
@@ -40,7 +39,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dʌmp trʌk/",
     cefr: "B1",
     img: "/word-images/construction-site/dump-truck.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A truck with a container that carries and unloads loose materials.",
     topic: "construction-site",
   },
   {
@@ -49,7 +48,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sɪˈmɛnt ˈmɪksər/",
     cefr: "B1",
     img: "/word-images/construction-site/cement-mixer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A vehicle that mixes cement, water, and other materials.",
     topic: "construction-site",
   },
   {
@@ -58,7 +57,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfɔːrkˌlɪft/",
     cefr: "A2",
     img: "/word-images/construction-site/forklift.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A vehicle with lifting forks used to move heavy loads.",
     topic: "construction-site",
   },
   {
@@ -67,7 +66,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈstiːmˌroʊlər/",
     cefr: "B1",
     img: "/word-images/construction-site/steamroller.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A heavy machine with a large roller used to flatten ground or roads.",
     topic: "construction-site",
   },
   {
@@ -76,7 +75,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbækˌhoʊ/",
     cefr: "A2",
     img: "/word-images/construction-site/backhoe.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A machine with a digging bucket on an arm at its back.",
     topic: "construction-site",
   },
   {
@@ -85,7 +84,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/paɪl ˈdraɪvər/",
     cefr: "B1",
     img: "/word-images/construction-site/pile-driver.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A machine that drives piles deep into the ground.",
     topic: "construction-site",
   },
   {
@@ -94,7 +93,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/buːm lɪft/",
     cefr: "B1",
     img: "/word-images/construction-site/boom-lift.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A machine with a raised platform used to lift workers.",
     topic: "construction-site",
   },
   {
@@ -103,7 +102,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/brɪk/",
     cefr: "A2",
     img: "/word-images/construction-site/brick.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small rectangular block used to build walls.",
     topic: "construction-site",
   },
   {
@@ -112,7 +111,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sɪˈmɛnt/",
     cefr: "A2",
     img: "/word-images/construction-site/cement.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A hard building material made by mixing cement, sand, and water.",
     topic: "construction-site",
   },
   {
@@ -121,7 +120,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/stiːl biːm/",
     cefr: "B1",
     img: "/word-images/construction-site/steel-beam.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long strong piece of steel used to support a structure.",
     topic: "construction-site",
   },
   {
@@ -130,7 +129,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈplaɪˌwʊd/",
     cefr: "A2",
     img: "/word-images/construction-site/plywood.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A strong flat board made from thin layers of wood.",
     topic: "construction-site",
   },
   {
@@ -139,7 +138,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡlæs peɪn/",
     cefr: "B1",
     img: "/word-images/construction-site/glass-pane.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flat piece of glass fitted into a window or wall.",
     topic: "construction-site",
   },
   {
@@ -148,7 +147,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/paɪp/",
     cefr: "A2",
     img: "/word-images/construction-site/pipe.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A hollow tube used to carry liquids or gases.",
     topic: "construction-site",
   },
   {
@@ -157,7 +156,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkeɪbəl/",
     cefr: "A2",
     img: "/word-images/construction-site/cable.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flexible wire or group of wires used to carry electricity.",
     topic: "construction-site",
   },
   {
@@ -166,7 +165,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/boʊlt/",
     cefr: "A2",
     img: "/word-images/construction-site/bolt.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A metal fastener with a threaded shaft and a nut.",
     topic: "construction-site",
   },
   {
@@ -175,7 +174,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/neɪl/",
     cefr: "A2",
     img: "/word-images/construction-site/nail.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small sharp metal pin used to join pieces of wood.",
     topic: "construction-site",
   },
   {
@@ -184,7 +183,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/skruː/",
     cefr: "A2",
     img: "/word-images/construction-site/screw.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A metal fastener with a spiral thread turned by a screwdriver.",
     topic: "construction-site",
   },
   {
@@ -193,7 +192,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈriːˌbɑːr/",
     cefr: "A2",
     img: "/word-images/construction-site/rebar.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Steel bars placed inside concrete to make it stronger.",
     topic: "construction-site",
   },
   {
@@ -202,7 +201,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdraɪˌwɔːl/",
     cefr: "A2",
     img: "/word-images/construction-site/drywall.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A board material used to make the inside walls of a building.",
     topic: "construction-site",
   },
   {
@@ -211,7 +210,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhæmər/",
     cefr: "A2",
     img: "/word-images/construction-site/hammer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool with a heavy head used for hitting nails.",
     topic: "construction-site",
   },
   {
@@ -220,7 +219,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/rɛntʃ/",
     cefr: "A2",
     img: "/word-images/construction-site/wrench.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool used for turning nuts, bolts, or pipes.",
     topic: "construction-site",
   },
   {
@@ -229,7 +228,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈskruːˌdraɪvər/",
     cefr: "B1",
     img: "/word-images/construction-site/screwdriver.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A hand tool with a handle and a tip for turning screws.",
     topic: "construction-site",
   },
   {
@@ -238,7 +237,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/drɪl/",
     cefr: "A2",
     img: "/word-images/construction-site/drill.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool with a rotating bit used for making holes.",
     topic: "construction-site",
   },
   {
@@ -247,7 +246,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sɔː/",
     cefr: "A2",
     img: "/word-images/construction-site/saw.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool with a toothed blade used for cutting wood or other materials.",
     topic: "construction-site",
   },
   {
@@ -256,7 +255,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/teɪp ˈmɛʒər/",
     cefr: "B1",
     img: "/word-images/construction-site/tape-measure.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flexible strip used for measuring length.",
     topic: "construction-site",
   },
   {
@@ -265,7 +264,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈlɛvəl/",
     cefr: "A2",
     img: "/word-images/construction-site/level.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool used to check whether a surface is horizontal or vertical.",
     topic: "construction-site",
   },
   {
@@ -274,7 +273,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈplaɪərz/",
     cefr: "A2",
     img: "/word-images/construction-site/pliers.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A hand tool with two handles used for gripping or cutting.",
     topic: "construction-site",
   },
   {
@@ -283,7 +282,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtʃɪzəl/",
     cefr: "A2",
     img: "/word-images/construction-site/chisel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sharp tool used for cutting materials.",
     topic: "construction-site",
   },
   {
@@ -292,7 +291,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/juːˈtɪlɪti naɪf/",
     cefr: "B1",
     img: "/word-images/construction-site/utility-knife.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small knife with a replaceable blade for cutting materials.",
     topic: "construction-site",
   },
   {
@@ -301,7 +300,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈælən kiː/",
     cefr: "B1",
     img: "/word-images/construction-site/allen-key.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool with a six-sided key used to turn certain screws.",
     topic: "construction-site",
   },
   {
@@ -310,7 +309,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsɒkɪt sɛt/",
     cefr: "B1",
     img: "/word-images/construction-site/socket-set.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A collection of tools used for turning different sizes of nuts.",
     topic: "construction-site",
   },
   {
@@ -319,7 +318,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/hɑːrd hæt/",
     cefr: "B1",
     img: "/word-images/construction-site/hard-hat.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A hard hat worn to protect the head at a work site.",
     topic: "construction-site",
   },
   {
@@ -328,7 +327,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈseɪfti vɛst/",
     cefr: "B1",
     img: "/word-images/construction-site/safety-vest.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A bright protective garment that makes a worker easy to see.",
     topic: "construction-site",
   },
   {
@@ -337,7 +336,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/stiːl toʊ buːts/",
     cefr: "B2",
     img: "/word-images/construction-site/steel-toe-boots.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Boots with protective metal covering over the toes.",
     topic: "construction-site",
   },
   {
@@ -346,7 +345,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈseɪfti ˈɡɒɡəlz/",
     cefr: "B1",
     img: "/word-images/construction-site/safety-goggles.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Protective glasses worn to guard the eyes.",
     topic: "construction-site",
   },
   {
@@ -355,7 +354,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪər plʌɡz/",
     cefr: "B1",
     img: "/word-images/construction-site/ear-plugs.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Small plugs worn in the ears to reduce loud noise.",
     topic: "construction-site",
   },
   {
@@ -364,7 +363,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dʌst mæsk/",
     cefr: "B1",
     img: "/word-images/construction-site/dust-mask.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A covering worn over the nose and mouth to block dust.",
     topic: "construction-site",
   },
   {
@@ -373,7 +372,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhɑːrnɪs/",
     cefr: "A2",
     img: "/word-images/construction-site/harness.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A safety belt and straps used to protect someone working at height.",
     topic: "construction-site",
   },
   {
@@ -382,7 +381,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈseɪfti nɛt/",
     cefr: "B1",
     img: "/word-images/construction-site/safety-net.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A net placed below workers to catch people or falling objects.",
     topic: "construction-site",
   },
   {
@@ -391,7 +390,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɔːʃən teɪp/",
     cefr: "B1",
     img: "/word-images/construction-site/caution-tape.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Bright tape used to mark an unsafe area.",
     topic: "construction-site",
   },
   {
@@ -400,7 +399,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtræfɪk koʊn/",
     cefr: "B1",
     img: "/word-images/construction-site/traffic-cone.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A coloured cone used to warn drivers and mark a work area.",
     topic: "construction-site",
   },
   {
@@ -409,7 +408,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈskæfəldɪŋ/",
     cefr: "B1",
     img: "/word-images/construction-site/scaffolding.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A temporary structure of poles and platforms for workers and materials.",
     topic: "construction-site",
   },
   {
@@ -418,7 +417,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/faʊnˈdeɪʃən/",
     cefr: "B1",
     img: "/word-images/construction-site/foundation.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The strong lowest part of a building that supports everything above it.",
     topic: "construction-site",
   },
   {
@@ -427,7 +426,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/freɪm/",
     cefr: "A2",
     img: "/word-images/construction-site/frame.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The supporting shape or structure of a building.",
     topic: "construction-site",
   },
   {
@@ -436,7 +435,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ruːf trʌs/",
     cefr: "B1",
     img: "/word-images/construction-site/roof-truss.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A triangular framework that supports a roof.",
     topic: "construction-site",
   },
   {
@@ -445,7 +444,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɒŋkriːt slæb/",
     cefr: "B1",
     img: "/word-images/construction-site/concrete-slab.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flat layer of concrete used as a floor or base.",
     topic: "construction-site",
   },
   {
@@ -454,7 +453,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ræmp/",
     cefr: "A2",
     img: "/word-images/construction-site/ramp.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sloping surface used to move people or equipment between levels.",
     topic: "construction-site",
   },
   {
@@ -463,7 +462,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fɛns/",
     cefr: "A2",
     img: "/word-images/construction-site/fence.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A barrier that surrounds a work area.",
     topic: "construction-site",
   },
   {
@@ -472,7 +471,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡeɪt/",
     cefr: "A2",
     img: "/word-images/construction-site/gate.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A door in a fence used for entering and leaving.",
     topic: "construction-site",
   },
   {
@@ -481,7 +480,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kənˈteɪnər/",
     cefr: "A2",
     img: "/word-images/construction-site/container.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large box used for storing or transporting materials.",
     topic: "construction-site",
   },
   {
@@ -490,7 +489,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɔːrtəbəl ˈtɔɪlɪt/",
     cefr: "B2",
     img: "/word-images/construction-site/portable-toilet.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small movable toilet used at a work site.",
     topic: "construction-site",
   },
   {
@@ -499,7 +498,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɑːrkɪˌtɛkt/",
     cefr: "A2",
     img: "/word-images/construction-site/architect.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who designs buildings and prepares their plans.",
     topic: "construction-site",
   },
   {
@@ -508,7 +507,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌɛndʒɪˈnɪər/",
     cefr: "A2",
     img: "/word-images/construction-site/engineer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who designs and checks technical parts of a building project.",
     topic: "construction-site",
   },
   {
@@ -517,7 +516,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfɔːrmən/",
     cefr: "A2",
     img: "/word-images/construction-site/foreman.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who supervises a group of workers.",
     topic: "construction-site",
   },
   {
@@ -526,7 +525,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪˌlɛkˈtrɪʃən/",
     cefr: "B1",
     img: "/word-images/construction-site/electrician.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A skilled worker who installs and repairs electrical systems.",
     topic: "construction-site",
   },
   {
@@ -535,7 +534,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈplʌmər/",
     cefr: "A2",
     img: "/word-images/construction-site/plumber.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A skilled worker who installs and repairs water pipes.",
     topic: "construction-site",
   },
   {
@@ -544,7 +543,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɑːrpəntər/",
     cefr: "A2",
     img: "/word-images/construction-site/carpenter.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A skilled worker who builds and repairs things made of wood.",
     topic: "construction-site",
   },
   {
@@ -553,7 +552,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbrɪkˌleɪər/",
     cefr: "B1",
     img: "/word-images/construction-site/bricklayer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who builds walls with bricks.",
     topic: "construction-site",
   },
   {
@@ -562,7 +561,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpeɪntər/",
     cefr: "A2",
     img: "/word-images/construction-site/painter.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A worker who covers walls or objects with paint.",
     topic: "construction-site",
   },
   {
@@ -571,7 +570,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɛldər/",
     cefr: "A2",
     img: "/word-images/construction-site/welder.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A skilled worker who joins pieces of metal using heat.",
     topic: "construction-site",
   },
   {
@@ -580,7 +579,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kreɪn ˈɒpəˌreɪtər/",
     cefr: "B1",
     img: "/word-images/construction-site/crane-operator.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who operates a crane.",
     topic: "construction-site",
   },
   {
@@ -589,7 +588,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/stiːl/",
     cefr: "A2",
     img: "/word-images/construction-site/steel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A strong metal used to build and support structures.",
     topic: "construction-site",
   },
   {
@@ -598,7 +597,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/wʊd/",
     cefr: "A2",
     img: "/word-images/construction-site/wood.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A hard material from trees used for building and making objects.",
     topic: "construction-site",
   },
   {
@@ -616,7 +615,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbluːˌprɪnt/",
     cefr: "A2",
     img: "/word-images/construction-site/blueprint.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A detailed drawing that shows how a building should be made.",
     topic: "construction-site",
   },
 ];
