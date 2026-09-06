@@ -4,7 +4,6 @@
 // never downloads it. Loaded through data/vocabulary.ts, not imported directly
 // by screens.
 import type { VocabularyItem } from "../lessons";
-import { PLACEHOLDER_DESCRIPTION } from "../placeholderDescription";
 
 export const VOCABULARY: VocabularyItem[] = [
   {
@@ -13,7 +12,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsoʊfə/",
     cefr: "A1",
     img: "/word-images/living-room/sofa.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A comfortable seat with a back and space for several people.",
     topic: "living-room",
   },
   {
@@ -22,7 +21,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɑːrmtʃɛr/",
     cefr: "A1",
     img: "/word-images/living-room/armchair.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A comfortable chair with arms for one person.",
     topic: "living-room",
   },
   {
@@ -31,7 +30,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɔːfi ˈteɪbəl/",
     cefr: "A2",
     img: "/word-images/living-room/coffee-table.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A low table near a sofa for holding drinks and books.",
     topic: "living-room",
   },
   {
@@ -40,7 +39,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/saɪd ˈteɪbəl/",
     cefr: "A2",
     img: "/word-images/living-room/side-table.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small table beside a chair for holding useful items.",
     topic: "living-room",
   },
   {
@@ -49,7 +48,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɑːtəmən/",
     cefr: "A1",
     img: "/word-images/living-room/ottoman.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A padded seat without a back, often used to rest your feet.",
     topic: "living-room",
   },
   {
@@ -58,7 +57,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈrɑːkɪŋ tʃɛr/",
     cefr: "A2",
     img: "/word-images/living-room/rocking-chair.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A chair that moves gently backward and forward on curved runners.",
     topic: "living-room",
   },
   {
@@ -67,7 +66,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdaɪnɪŋ ˈteɪbəl/",
     cefr: "A2",
     img: "/word-images/living-room/dining-table.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A table where people sit to eat meals together.",
     topic: "living-room",
   },
   {
@@ -76,7 +75,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdaɪnɪŋ tʃɛr/",
     cefr: "A2",
     img: "/word-images/living-room/dining-chair.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A chair designed for sitting at a dining table.",
     topic: "living-room",
   },
   {
@@ -85,7 +84,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɛntʃ/",
     cefr: "A1",
     img: "/word-images/living-room/bench.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long seat that several people can share.",
     topic: "living-room",
   },
   {
@@ -112,7 +111,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/tiː viː stænd/",
     cefr: "A2",
     img: "/word-images/living-room/tv-stand.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A stand or cabinet that supports a television.",
     topic: "living-room",
   },
   {
@@ -121,7 +120,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkæbɪnɪt/",
     cefr: "A1",
     img: "/word-images/living-room/cabinet.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A piece of furniture with doors or drawers for storing things.",
     topic: "living-room",
   },
   {
@@ -130,7 +129,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsaɪdbɔːrd/",
     cefr: "A1",
     img: "/word-images/living-room/sideboard.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long piece of furniture with cupboards for storing or displaying items.",
     topic: "living-room",
   },
   {
@@ -139,7 +138,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ʃɛlf/",
     cefr: "A1",
     img: "/word-images/living-room/shelf.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flat board fixed to a wall or inside furniture for storage.",
     topic: "living-room",
   },
   {
@@ -148,7 +147,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/drɔːr/",
     cefr: "A1",
     img: "/word-images/living-room/drawer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sliding box in furniture used to store small things.",
     topic: "living-room",
   },
   {
@@ -157,7 +156,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌmæɡəˈziːn ræk/",
     cefr: "A2",
     img: "/word-images/living-room/magazine-rack.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A stand with narrow sections for holding magazines.",
     topic: "living-room",
   },
   {
@@ -166,7 +165,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dɪˈspleɪ keɪs/",
     cefr: "A2",
     img: "/word-images/living-room/display-case.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A glass-fronted cabinet used to display special objects.",
     topic: "living-room",
   },
   {
@@ -175,7 +174,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/koʊt ræk/",
     cefr: "A2",
     img: "/word-images/living-room/coat-rack.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A stand with hooks for hanging coats and clothing.",
     topic: "living-room",
   },
   {
@@ -184,7 +183,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ʃuː ræk/",
     cefr: "A2",
     img: "/word-images/living-room/shoe-rack.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A stand or shelf for storing shoes near an entrance.",
     topic: "living-room",
   },
   {
@@ -193,7 +192,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɛləvɪʒən/",
     cefr: "A2",
     img: "/word-images/living-room/television.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that receives moving pictures and sound for watching programmes.",
     topic: "living-room",
   },
   {
@@ -220,7 +219,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡeɪm kənˈsoʊl/",
     cefr: "A2",
     img: "/word-images/living-room/game-console.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device used to play electronic games on a screen.",
     topic: "living-room",
   },
   {
@@ -229,7 +228,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/diː viː diː ˈpleɪər/",
     cefr: "A2",
     img: "/word-images/living-room/dvd-player.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A machine that plays films or programmes recorded on DVDs.",
     topic: "living-room",
   },
   {
@@ -238,7 +237,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/saʊnd bɑːr/",
     cefr: "A2",
     img: "/word-images/living-room/sound-bar.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long speaker placed below or near a television.",
     topic: "living-room",
   },
   {
@@ -247,7 +246,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwaɪfaɪ ˈruːtər/",
     cefr: "B1",
     img: "/word-images/living-room/wi-fi-router.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that connects wireless devices to the internet.",
     topic: "living-room",
   },
   {
@@ -256,7 +255,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpaʊər strɪp/",
     cefr: "A2",
     img: "/word-images/living-room/power-strip.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A block with several sockets for powering electrical devices.",
     topic: "living-room",
   },
   {
@@ -265,7 +264,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkeɪbəl/",
     cefr: "A1",
     img: "/word-images/living-room/cable.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flexible wire used to connect electrical devices.",
     topic: "living-room",
   },
   {
@@ -274,7 +273,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/plʌɡ/",
     cefr: "A1",
     img: "/word-images/living-room/plug.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small object that fits into a socket to connect an appliance to electricity.",
     topic: "living-room",
   },
   {
@@ -283,7 +282,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/flɔːr læmp/",
     cefr: "A2",
     img: "/word-images/living-room/floor-lamp.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tall lamp that stands on the floor and lights part of a room.",
     topic: "living-room",
   },
   {
@@ -292,7 +291,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈteɪbəl læmp/",
     cefr: "A2",
     img: "/word-images/living-room/table-lamp.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small lamp that stands on a table or desk.",
     topic: "living-room",
   },
   {
@@ -310,7 +309,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌʃændəˈlɪr/",
     cefr: "A2",
     img: "/word-images/living-room/chandelier.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A decorative light with several arms hanging from the ceiling.",
     topic: "living-room",
   },
   {
@@ -319,7 +318,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/laɪt bʌlb/",
     cefr: "A2",
     img: "/word-images/living-room/light-bulb.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The small glass part of a lamp that produces light.",
     topic: "living-room",
   },
   {
@@ -337,7 +336,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkændəl ˈhoʊldər/",
     cefr: "A2",
     img: "/word-images/living-room/candle-holder.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A holder that keeps a candle upright while it burns.",
     topic: "living-room",
   },
   {
@@ -346,7 +345,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/strɪŋ laɪts/",
     cefr: "A2",
     img: "/word-images/living-room/string-lights.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Small electric lights connected along a wire for decoration.",
     topic: "living-room",
   },
   {
@@ -364,7 +363,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/wɔːl klɑːk/",
     cefr: "A2",
     img: "/word-images/living-room/wall-clock.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that shows the time, usually with hands or numbers.",
     topic: "living-room",
   },
   {
@@ -382,7 +381,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/θroʊ ˈblæŋkɪt/",
     cefr: "A2",
     img: "/word-images/living-room/throw-blanket.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A warm cover placed over a person or piece of furniture.",
     topic: "living-room",
   },
   {
@@ -418,7 +417,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈteɪbəlklɔːθ/",
     cefr: "A2",
     img: "/word-images/living-room/tablecloth.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A piece of cloth spread over a table for decoration or protection.",
     topic: "living-room",
   },
   {
@@ -427,7 +426,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpleɪsmæt/",
     cefr: "A1",
     img: "/word-images/living-room/placemat.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small mat placed under a plate or bowl.",
     topic: "living-room",
   },
   {
@@ -436,7 +435,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkoʊstər/",
     cefr: "A1",
     img: "/word-images/living-room/coaster.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small mat placed under a cup or glass.",
     topic: "living-room",
   },
   {
@@ -445,7 +444,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdɔːrmæt/",
     cefr: "A1",
     img: "/word-images/living-room/doormat.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small mat placed at a doorway for wiping shoes.",
     topic: "living-room",
   },
   {
@@ -454,7 +453,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtæpɪstri/",
     cefr: "A1",
     img: "/word-images/living-room/tapestry.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A decorative cloth or picture made to hang on a wall.",
     topic: "living-room",
   },
   {
@@ -481,7 +480,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfoʊtoʊ freɪm/",
     cefr: "A2",
     img: "/word-images/living-room/photo-frame.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A thin border used to hold and display a photograph.",
     topic: "living-room",
   },
   {
@@ -490,7 +489,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpeɪntɪŋ/",
     cefr: "A1",
     img: "/word-images/living-room/painting.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A picture made with paint and shown on a wall.",
     topic: "living-room",
   },
   {
@@ -499,7 +498,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bʊk/",
     cefr: "A1",
     img: "/word-images/living-room/book.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A set of printed pages bound together for reading.",
     topic: "living-room",
   },
   {
@@ -508,7 +507,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌmæɡəˈziːn/",
     cefr: "A1",
     img: "/word-images/living-room/magazine.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A thin publication with articles and pictures, released regularly.",
     topic: "living-room",
   },
   {
@@ -517,7 +516,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈnuːzpeɪpər/",
     cefr: "A1",
     img: "/word-images/living-room/newspaper.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A printed publication with daily news and stories.",
     topic: "living-room",
   },
   {
@@ -526,7 +525,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɔːrd ɡeɪm/",
     cefr: "A2",
     img: "/word-images/living-room/board-game.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A game played with pieces, cards, or a board according to rules.",
     topic: "living-room",
   },
   {
@@ -535,7 +534,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpʌzəl/",
     cefr: "A1",
     img: "/word-images/living-room/puzzle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A game or problem made from pieces that must be joined together.",
     topic: "living-room",
   },
   {
@@ -544,7 +543,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpleɪɪŋ kɑːrdz/",
     cefr: "A2",
     img: "/word-images/living-room/playing-cards.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A set of cards used for games.",
     topic: "living-room",
   },
   {
@@ -598,7 +597,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/wɑːtʃ tiː viː/",
     cefr: "A2",
     img: "/word-images/living-room/watch-tv.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To watch programmes or films on a television.",
     topic: "living-room",
   },
   {
@@ -607,7 +606,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/riːd bʊk/",
     cefr: "A2",
     img: "/word-images/living-room/read-book.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To look at and understand words in a book.",
     topic: "living-room",
   },
   {
@@ -616,7 +615,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pleɪ ɡeɪmz/",
     cefr: "A2",
     img: "/word-images/living-room/play-games.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To take part in a game for enjoyment.",
     topic: "living-room",
   },
   {
@@ -625,7 +624,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈlɪsən tə ˈmjuːzɪk/",
     cefr: "B1",
     img: "/word-images/living-room/listen-to-music.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To hear music for enjoyment.",
     topic: "living-room",
   },
   {
@@ -634,7 +633,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/rɪˈlæks/",
     cefr: "A1",
     img: "/word-images/living-room/relax.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To rest quietly and enjoy a calm feeling.",
     topic: "living-room",
   },
   {
@@ -643,7 +642,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sɪt daʊn/",
     cefr: "A2",
     img: "/word-images/living-room/sit-down.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To lower your body into a seated position.",
     topic: "living-room",
   },
   {
@@ -652,7 +651,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/tʃæt/",
     cefr: "A1",
     img: "/word-images/living-room/chat.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To talk informally with another person.",
     topic: "living-room",
   },
   {
@@ -661,7 +660,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/teɪk ə næp/",
     cefr: "B1",
     img: "/word-images/living-room/take-a-nap.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To sleep for a short time during the day.",
     topic: "living-room",
   },
 ];

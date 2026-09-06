@@ -40,10 +40,12 @@ describe("Vocabulary descriptions", () => {
 
   it("tracks placeholder debt and prevents it from increasing", () => {
     const placeholders = vocabulary.filter((word) => word.description === PLACEHOLDER_DESCRIPTION);
-    expect(placeholders.length, "Vocabulary placeholder debt increased").toBeLessThanOrEqual(11338);
+    expect(placeholders.length, "Vocabulary placeholder debt increased").toBeLessThanOrEqual(11136);
     expect(
-      placeholders.filter((word) => ["bathroom", "kitchen"].includes(word.topic)),
-      "Completed Bathroom and Kitchen definitions must not regress to placeholders"
+      placeholders.filter((word) =>
+        ["bathroom", "kitchen", "living-room", "farm", "garden"].includes(word.topic)
+      ),
+      "Completed unit definitions must not regress to placeholders"
     ).toHaveLength(0);
   });
 

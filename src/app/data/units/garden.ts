@@ -4,7 +4,6 @@
 // never downloads it. Loaded through data/vocabulary.ts, not imported directly
 // by screens.
 import type { VocabularyItem } from "../lessons";
-import { PLACEHOLDER_DESCRIPTION } from "../placeholderDescription";
 
 export const VOCABULARY: VocabularyItem[] = [
   {
@@ -13,7 +12,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/roʊz/",
     cefr: "A1",
     img: "/word-images/garden/rose.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flower with soft petals, often having thorns on its stem.",
     topic: "garden",
   },
   {
@@ -22,7 +21,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtuːlɪp/",
     cefr: "A1",
     img: "/word-images/garden/tulip.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A spring flower that grows from a bulb and has a cup-shaped bloom.",
     topic: "garden",
   },
   {
@@ -31,7 +30,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsʌnflaʊər/",
     cefr: "A1",
     img: "/word-images/garden/sunflower.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tall plant with a large yellow flower and edible seeds.",
     topic: "garden",
   },
   {
@@ -40,7 +39,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdeɪzi/",
     cefr: "A1",
     img: "/word-images/garden/daisy.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small flower with a yellow centre and white petals.",
     topic: "garden",
   },
   {
@@ -49,7 +48,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈlɪli/",
     cefr: "A1",
     img: "/word-images/garden/lily.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flower grown from a bulb, often with a strong sweet smell.",
     topic: "garden",
   },
   {
@@ -58,7 +57,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdæfədɪl/",
     cefr: "A1",
     img: "/word-images/garden/daffodil.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A yellow spring flower with a trumpet-shaped centre.",
     topic: "garden",
   },
   {
@@ -67,7 +66,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈvaɪələt/",
     cefr: "A1",
     img: "/word-images/garden/violet.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small plant with purple flowers.",
     topic: "garden",
   },
   {
@@ -76,7 +75,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɔːrkɪd/",
     cefr: "A1",
     img: "/word-images/garden/orchid.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tropical flower with unusual shapes and bright colours.",
     topic: "garden",
   },
   {
@@ -85,7 +84,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kɑːrˈneɪʃən/",
     cefr: "A1",
     img: "/word-images/garden/carnation.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flower with many soft petals, often used in bouquets.",
     topic: "garden",
   },
   {
@@ -94,7 +93,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈlævəndər/",
     cefr: "A1",
     img: "/word-images/garden/lavender.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small purple plant with a strong pleasant smell.",
     topic: "garden",
   },
   {
@@ -103,7 +102,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/oʊk triː/",
     cefr: "A2",
     img: "/word-images/garden/oak-tree.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large tree with broad leaves and acorns.",
     topic: "garden",
   },
   {
@@ -112,7 +111,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/paɪn triː/",
     cefr: "A2",
     img: "/word-images/garden/pine-tree.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tall evergreen tree with thin needle-like leaves.",
     topic: "garden",
   },
   {
@@ -121,7 +120,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈæpəl triː/",
     cefr: "A2",
     img: "/word-images/garden/apple-tree.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tree grown for its round fruit, which may be red, green, or yellow.",
     topic: "garden",
   },
   {
@@ -130,7 +129,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtʃɛri triː/",
     cefr: "A2",
     img: "/word-images/garden/cherry-tree.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tree that produces small round cherries.",
     topic: "garden",
   },
   {
@@ -139,7 +138,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pɑːm triː/",
     cefr: "A2",
     img: "/word-images/garden/palm-tree.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tall tree with long leaves growing in warm climates.",
     topic: "garden",
   },
   {
@@ -148,7 +147,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/hɛdʒ/",
     cefr: "A1",
     img: "/word-images/garden/hedge.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A row of bushes planted close together as a boundary.",
     topic: "garden",
   },
   {
@@ -157,7 +156,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bʊʃ/",
     cefr: "A1",
     img: "/word-images/garden/bush.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small woody plant with many branches.",
     topic: "garden",
   },
   {
@@ -166,7 +165,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈaɪvi/",
     cefr: "A1",
     img: "/word-images/garden/ivy.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A climbing plant with green leaves that grows on walls and trees.",
     topic: "garden",
   },
   {
@@ -175,7 +174,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/vaɪn/",
     cefr: "A1",
     img: "/word-images/garden/vine.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A climbing or trailing plant with a long thin stem.",
     topic: "garden",
   },
   {
@@ -184,7 +183,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fɜːrn/",
     cefr: "A1",
     img: "/word-images/garden/fern.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A plant with soft green leaves and no flowers.",
     topic: "garden",
   },
   {
@@ -193,7 +192,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈʃʌvəl/",
     cefr: "A1",
     img: "/word-images/garden/shovel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A hand tool with a broad blade for digging soil.",
     topic: "garden",
   },
   {
@@ -202,7 +201,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/reɪk/",
     cefr: "A1",
     img: "/word-images/garden/rake.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A garden tool with a row of teeth for gathering leaves or loosening soil.",
     topic: "garden",
   },
   {
@@ -211,7 +210,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɔːtərɪŋ kæn/",
     cefr: "A2",
     img: "/word-images/garden/watering-can.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A container with a handle and narrow spout for watering plants.",
     topic: "garden",
   },
   {
@@ -220,7 +219,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwiːlbæroʊ/",
     cefr: "A2",
     img: "/word-images/garden/wheelbarrow.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool with a large open tray and one or two wheels.",
     topic: "garden",
   },
   {
@@ -229,7 +228,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/hoʊz/",
     cefr: "A1",
     img: "/word-images/garden/hose.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long flexible tube used for carrying water.",
     topic: "garden",
   },
   {
@@ -238,7 +237,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɡɑːrdən ɡlʌvz/",
     cefr: "A2",
     img: "/word-images/garden/garden-gloves.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Strong gloves worn to protect hands while gardening.",
     topic: "garden",
   },
   {
@@ -247,7 +246,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpruːnər/",
     cefr: "A1",
     img: "/word-images/garden/pruner.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool with sharp blades for cutting small branches.",
     topic: "garden",
   },
   {
@@ -256,7 +255,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtraʊəl/",
     cefr: "A1",
     img: "/word-images/garden/trowel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small hand tool with a pointed blade for planting.",
     topic: "garden",
   },
   {
@@ -265,7 +264,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/lɔːn ˈmoʊər/",
     cefr: "A2",
     img: "/word-images/garden/lawn-mower.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A machine with rotating blades used to cut grass.",
     topic: "garden",
   },
   {
@@ -274,7 +273,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/speɪd/",
     cefr: "A1",
     img: "/word-images/garden/spade.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A digging tool with a flat or pointed blade.",
     topic: "garden",
   },
   {
@@ -283,7 +282,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɪtʃfɔːrk/",
     cefr: "A1",
     img: "/word-images/garden/pitchfork.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long-handled tool with pointed prongs for lifting or loosening material.",
     topic: "garden",
   },
   {
@@ -292,7 +291,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsprɪŋklər/",
     cefr: "A1",
     img: "/word-images/garden/sprinkler.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that sprays water over plants or grass.",
     topic: "garden",
   },
   {
@@ -301,7 +300,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ruːt/",
     cefr: "A1",
     img: "/word-images/garden/root.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The part of a plant that grows underground and takes in water.",
     topic: "garden",
   },
   {
@@ -310,7 +309,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/stɛm/",
     cefr: "A1",
     img: "/word-images/garden/stem.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The main stalk of a plant that supports leaves and flowers.",
     topic: "garden",
   },
   {
@@ -319,7 +318,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/liːf/",
     cefr: "A1",
     img: "/word-images/garden/leaf.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flat green part of a plant that uses light to make food.",
     topic: "garden",
   },
   {
@@ -328,7 +327,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɛtəl/",
     cefr: "A1",
     img: "/word-images/garden/petal.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The colourful part of a flower that attracts insects.",
     topic: "garden",
   },
   {
@@ -337,7 +336,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bræntʃ/",
     cefr: "A1",
     img: "/word-images/garden/branch.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A woody part that grows from a tree trunk or large branch.",
     topic: "garden",
   },
   {
@@ -346,7 +345,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɑːrk/",
     cefr: "A1",
     img: "/word-images/garden/bark.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The rough outer covering of a tree trunk.",
     topic: "garden",
   },
   {
@@ -355,7 +354,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bʌd/",
     cefr: "A1",
     img: "/word-images/garden/bud.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small unopened flower that will open later.",
     topic: "garden",
   },
   {
@@ -364,7 +363,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/siːd/",
     cefr: "A1",
     img: "/word-images/garden/seed.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small object from which a new plant grows.",
     topic: "garden",
   },
   {
@@ -373,7 +372,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/θɔːrn/",
     cefr: "A1",
     img: "/word-images/garden/thorn.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sharp pointed growth on a plant that can hurt you.",
     topic: "garden",
   },
   {
@@ -382,7 +381,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbɛri/",
     cefr: "A1",
     img: "/word-images/garden/berry.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small soft fruit that may grow on a bush or tree.",
     topic: "garden",
   },
   {
@@ -391,7 +390,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbʌtərflaɪ/",
     cefr: "A1",
     img: "/word-images/garden/butterfly.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flying insect with colourful wings.",
     topic: "garden",
   },
   {
@@ -400,7 +399,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈleɪdibʌɡ/",
     cefr: "A1",
     img: "/word-images/garden/ladybug.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small red or black insect with spots on its back.",
     topic: "garden",
   },
   {
@@ -409,7 +408,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/biː/",
     cefr: "A1",
     img: "/word-images/garden/bee.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flying insect that collects nectar and makes honey.",
     topic: "garden",
   },
   {
@@ -418,7 +417,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/wɜːrm/",
     cefr: "A1",
     img: "/word-images/garden/worm.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small animal with a long soft body and no legs.",
     topic: "garden",
   },
   {
@@ -427,7 +426,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sneɪl/",
     cefr: "A1",
     img: "/word-images/garden/snail.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small slow-moving animal with a spiral shell.",
     topic: "garden",
   },
   {
@@ -436,7 +435,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ænt/",
     cefr: "A1",
     img: "/word-images/garden/ant.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small insect with six legs that lives in organised groups.",
     topic: "garden",
   },
   {
@@ -445,7 +444,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkætərpɪlər/",
     cefr: "A2",
     img: "/word-images/garden/caterpillar.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A young insect that looks like a worm before becoming a butterfly or moth.",
     topic: "garden",
   },
   {
@@ -454,7 +453,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈspaɪdər/",
     cefr: "A1",
     img: "/word-images/garden/spider.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small animal with eight legs that makes webs.",
     topic: "garden",
   },
   {
@@ -463,7 +462,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdræɡənflaɪ/",
     cefr: "A1",
     img: "/word-images/garden/dragonfly.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flying insect with a long body and two pairs of wings.",
     topic: "garden",
   },
   {
@@ -472,7 +471,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɡræshɑːpər/",
     cefr: "A2",
     img: "/word-images/garden/grasshopper.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A jumping insect with long back legs that eats plants.",
     topic: "garden",
   },
   {
@@ -481,7 +480,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/lɔːn/",
     cefr: "A1",
     img: "/word-images/garden/lawn.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An area covered with short green plants.",
     topic: "garden",
   },
   {
@@ -490,7 +489,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈflaʊər bɛd/",
     cefr: "A2",
     img: "/word-images/garden/flower-bed.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An area of soil where flowers are grown.",
     topic: "garden",
   },
   {
@@ -499,7 +498,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pæθ/",
     cefr: "A1",
     img: "/word-images/garden/path.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A narrow track through a garden for walking.",
     topic: "garden",
   },
   {
@@ -508,7 +507,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fɛns/",
     cefr: "A1",
     img: "/word-images/garden/fence.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A barrier made of posts or wire around land.",
     topic: "garden",
   },
   {
@@ -517,7 +516,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡeɪt/",
     cefr: "A1",
     img: "/word-images/garden/gate.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A door in a fence or wall that allows people to enter.",
     topic: "garden",
   },
   {
@@ -526,7 +525,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɡriːnhaʊs/",
     cefr: "A2",
     img: "/word-images/garden/greenhouse.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A building with glass walls or a roof for growing plants.",
     topic: "garden",
   },
   {
@@ -535,7 +534,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɜːrd ˈfiːdər/",
     cefr: "A2",
     img: "/word-images/garden/bird-feeder.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A container filled with seeds that attracts birds.",
     topic: "garden",
   },
   {
@@ -544,7 +543,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɡɑːrdən ʃɛd/",
     cefr: "A2",
     img: "/word-images/garden/garden-shed.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small building used for storing garden tools.",
     topic: "garden",
   },
   {
@@ -553,7 +552,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbɜːrdbæθ/",
     cefr: "A1",
     img: "/word-images/garden/birdbath.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A shallow bowl or basin where birds drink and bathe.",
     topic: "garden",
   },
   {
@@ -562,7 +561,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɑːmpoʊst bɪn/",
     cefr: "A2",
     img: "/word-images/garden/compost-bin.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A container where plant and food waste turns into soil.",
     topic: "garden",
   },
   {
@@ -571,7 +570,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈflaʊər/",
     cefr: "A1",
     img: "/word-images/garden/flower.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The colourful part of a plant that often grows from a stem.",
     topic: "garden",
   },
   {
@@ -580,7 +579,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/triː/",
     cefr: "A1",
     img: "/word-images/garden/tree.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tall plant with a woody trunk and branches.",
     topic: "garden",
   },
   {
@@ -589,7 +588,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡræs/",
     cefr: "A1",
     img: "/word-images/garden/grass.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Green plants with narrow blades that cover the ground.",
     topic: "garden",
   },
   {
@@ -598,7 +597,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡlʌvz/",
     cefr: "A1",
     img: "/word-images/garden/gloves.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Hand coverings that protect your hands while working.",
     topic: "garden",
   },
   {
@@ -607,7 +606,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɜːrd/",
     cefr: "A1",
     img: "/word-images/garden/bird.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An animal with feathers, wings, and a beak.",
     topic: "garden",
   },
 ];

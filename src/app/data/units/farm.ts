@@ -4,7 +4,6 @@
 // never downloads it. Loaded through data/vocabulary.ts, not imported directly
 // by screens.
 import type { VocabularyItem } from "../lessons";
-import { PLACEHOLDER_DESCRIPTION } from "../placeholderDescription";
 
 export const VOCABULARY: VocabularyItem[] = [
   {
@@ -13,7 +12,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kaʊ/",
     cefr: "A1",
     img: "/word-images/farm/cow.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large farm animal kept for milk, meat, and sometimes leather.",
     topic: "farm",
   },
   {
@@ -22,7 +21,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pɪɡ/",
     cefr: "A1",
     img: "/word-images/farm/pig.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A farm animal with a short snout, kept for meat.",
     topic: "farm",
   },
   {
@@ -31,7 +30,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtʃɪkɪn/",
     cefr: "A1",
     img: "/word-images/farm/chicken.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A bird kept on farms for eggs and meat.",
     topic: "farm",
   },
   {
@@ -40,7 +39,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/hɔːrs/",
     cefr: "A1",
     img: "/word-images/farm/horse.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large strong animal used for riding or farm work.",
     topic: "farm",
   },
   {
@@ -49,7 +48,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ʃiːp/",
     cefr: "A1",
     img: "/word-images/farm/sheep.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A farm animal with thick wool covering its body.",
     topic: "farm",
   },
   {
@@ -58,7 +57,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡoʊt/",
     cefr: "A1",
     img: "/word-images/farm/goat.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A farm animal with horns that can provide milk or meat.",
     topic: "farm",
   },
   {
@@ -67,7 +66,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dʌk/",
     cefr: "A1",
     img: "/word-images/farm/duck.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A water bird often kept for eggs, meat, or feathers.",
     topic: "farm",
   },
   {
@@ -76,7 +75,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdɑːŋki/",
     cefr: "A1",
     img: "/word-images/farm/donkey.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A strong animal related to a horse, known for carrying loads.",
     topic: "farm",
   },
   {
@@ -85,7 +84,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɜːrki/",
     cefr: "A1",
     img: "/word-images/farm/turkey.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large farm bird with a fan-shaped tail, often eaten at holidays.",
     topic: "farm",
   },
   {
@@ -94,7 +93,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈruːstər/",
     cefr: "A1",
     img: "/word-images/farm/rooster.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An adult male chicken with a bright comb and long tail feathers.",
     topic: "farm",
   },
   {
@@ -103,7 +102,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/hɛn/",
     cefr: "A1",
     img: "/word-images/farm/hen.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An adult female chicken that lays eggs.",
     topic: "farm",
   },
   {
@@ -112,7 +111,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/læm/",
     cefr: "A1",
     img: "/word-images/farm/lamb.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A young sheep with soft wool and a short tail.",
     topic: "farm",
   },
   {
@@ -121,7 +120,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/wiːt/",
     cefr: "A1",
     img: "/word-images/farm/wheat.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A cereal plant whose grains are ground into flour.",
     topic: "farm",
   },
   {
@@ -130,7 +129,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kɔːrn/",
     cefr: "A1",
     img: "/word-images/farm/corn.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tall cereal plant with yellow grains used for food or animal feed.",
     topic: "farm",
   },
   {
@@ -139,7 +138,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkærət/",
     cefr: "A1",
     img: "/word-images/farm/carrot.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long orange root vegetable that grows underground.",
     topic: "farm",
   },
   {
@@ -148,7 +147,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pəˈteɪtoʊ/",
     cefr: "A1",
     img: "/word-images/farm/potato.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A round underground vegetable often boiled, baked, or fried.",
     topic: "farm",
   },
   {
@@ -157,7 +156,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/təˈmeɪtoʊ/",
     cefr: "A1",
     img: "/word-images/farm/tomato.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A soft red fruit used in salads, sauces, and cooking.",
     topic: "farm",
   },
   {
@@ -166,7 +165,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈlɛtɪs/",
     cefr: "A1",
     img: "/word-images/farm/lettuce.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A leafy green vegetable often used in salads.",
     topic: "farm",
   },
   {
@@ -175,7 +174,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈʌnjən/",
     cefr: "A1",
     img: "/word-images/farm/onion.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A strong-smelling vegetable with layers used in cooking.",
     topic: "farm",
   },
   {
@@ -184,7 +183,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpʌmpkɪn/",
     cefr: "A1",
     img: "/word-images/farm/pumpkin.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large round orange vegetable with thick skin and many seeds.",
     topic: "farm",
   },
   {
@@ -193,7 +192,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/biːn/",
     cefr: "A1",
     img: "/word-images/farm/bean.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small edible seed that grows inside a pod.",
     topic: "farm",
   },
   {
@@ -202,7 +201,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/piː/",
     cefr: "A1",
     img: "/word-images/farm/pea.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small round green seed that grows in a pod.",
     topic: "farm",
   },
   {
@@ -211,7 +210,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkæbɪdʒ/",
     cefr: "A1",
     img: "/word-images/farm/cabbage.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A leafy vegetable with a tight round head.",
     topic: "farm",
   },
   {
@@ -220,7 +219,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbiːtruːt/",
     cefr: "A1",
     img: "/word-images/farm/beetroot.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A round root vegetable with dark red or purple skin.",
     topic: "farm",
   },
   {
@@ -229,7 +228,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈæpəl triː/",
     cefr: "A2",
     img: "/word-images/farm/apple-tree.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tree grown for its round fruit, which may be red, green, or yellow.",
     topic: "farm",
   },
   {
@@ -238,7 +237,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pɛr triː/",
     cefr: "A2",
     img: "/word-images/farm/pear-tree.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tree grown for its sweet, juicy pears.",
     topic: "farm",
   },
   {
@@ -247,7 +246,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtʃɛri triː/",
     cefr: "A2",
     img: "/word-images/farm/cherry-tree.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tree that produces small round cherries.",
     topic: "farm",
   },
   {
@@ -256,7 +255,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɔːrɪndʒ triː/",
     cefr: "A2",
     img: "/word-images/farm/orange-tree.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tree that produces oranges.",
     topic: "farm",
   },
   {
@@ -265,7 +264,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈstrɔːbɛri/",
     cefr: "A2",
     img: "/word-images/farm/strawberry.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small red fruit with tiny seeds on its surface.",
     topic: "farm",
   },
   {
@@ -274,7 +273,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbluːbɛri/",
     cefr: "A1",
     img: "/word-images/farm/blueberry.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small round blue or purple fruit that grows on a bush.",
     topic: "farm",
   },
   {
@@ -283,7 +282,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈræzbɛri/",
     cefr: "A1",
     img: "/word-images/farm/raspberry.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A soft red berry that grows on a bush.",
     topic: "farm",
   },
   {
@@ -292,7 +291,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡreɪp vaɪn/",
     cefr: "A2",
     img: "/word-images/farm/grape-vine.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A climbing plant that produces bunches of grapes.",
     topic: "farm",
   },
   {
@@ -301,7 +300,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/piːtʃ triː/",
     cefr: "A2",
     img: "/word-images/farm/peach-tree.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tree that produces soft, juicy fruit with fuzzy skin.",
     topic: "farm",
   },
   {
@@ -310,7 +309,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/plʌm triː/",
     cefr: "A2",
     img: "/word-images/farm/plum-tree.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tree that produces smooth-skinned fruit with a stone inside.",
     topic: "farm",
   },
   {
@@ -319,7 +318,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɑːrn/",
     cefr: "A1",
     img: "/word-images/farm/barn.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large farm building used for animals, hay, or equipment.",
     topic: "farm",
   },
   {
@@ -328,7 +327,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfɑːrmhaʊs/",
     cefr: "A1",
     img: "/word-images/farm/farmhouse.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A house where a farmer and family live.",
     topic: "farm",
   },
   {
@@ -337,7 +336,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsaɪloʊ/",
     cefr: "A1",
     img: "/word-images/farm/silo.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tall container used to store grain or other dry materials.",
     topic: "farm",
   },
   {
@@ -346,7 +345,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtʃɪkɪn kuːp/",
     cefr: "A2",
     img: "/word-images/farm/chicken-coop.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A building where chickens are kept.",
     topic: "farm",
   },
   {
@@ -355,7 +354,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsteɪbəl/",
     cefr: "A1",
     img: "/word-images/farm/stable.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A building where horses are kept and cared for.",
     topic: "farm",
   },
   {
@@ -364,7 +363,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɡriːnhaʊs/",
     cefr: "A2",
     img: "/word-images/farm/greenhouse.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A building with glass walls or a roof for growing plants.",
     topic: "farm",
   },
   {
@@ -373,7 +372,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈstɔːrɪdʒ ʃɛd/",
     cefr: "A2",
     img: "/word-images/farm/storage-shed.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small building used for storing farm tools and supplies.",
     topic: "farm",
   },
   {
@@ -382,7 +381,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɪndmɪl/",
     cefr: "A1",
     img: "/word-images/farm/windmill.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A machine with large blades that uses wind to produce power.",
     topic: "farm",
   },
   {
@@ -391,7 +390,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdɛri/",
     cefr: "A1",
     img: "/word-images/farm/dairy.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A place where milk is processed into dairy products.",
     topic: "farm",
   },
   {
@@ -400,7 +399,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/wɛl/",
     cefr: "A1",
     img: "/word-images/farm/well.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A deep hole in the ground used for collecting water.",
     topic: "farm",
   },
   {
@@ -409,7 +408,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtræktər/",
     cefr: "A1",
     img: "/word-images/farm/tractor.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large vehicle used for pulling equipment and doing farm work.",
     topic: "farm",
   },
   {
@@ -418,7 +417,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/plaʊ/",
     cefr: "A1",
     img: "/word-images/farm/plow.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool with a heavy blade used for turning soil.",
     topic: "farm",
   },
   {
@@ -427,7 +426,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtreɪlər/",
     cefr: "A1",
     img: "/word-images/farm/trailer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A vehicle without an engine that is pulled by another vehicle.",
     topic: "farm",
   },
   {
@@ -436,7 +435,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/heɪ beɪl/",
     cefr: "A2",
     img: "/word-images/farm/hay-bale.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A bundle of dried grass used as animal food or bedding.",
     topic: "farm",
   },
   {
@@ -445,7 +444,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɪtʃfɔːrk/",
     cefr: "A1",
     img: "/word-images/farm/pitchfork.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long-handled tool with pointed prongs for lifting hay.",
     topic: "farm",
   },
   {
@@ -454,7 +453,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbʌkɪt/",
     cefr: "A1",
     img: "/word-images/farm/bucket.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A round open container used for carrying liquids or materials.",
     topic: "farm",
   },
   {
@@ -463,7 +462,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwiːlbæroʊ/",
     cefr: "A2",
     img: "/word-images/farm/wheelbarrow.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool with a large open tray and one or two wheels.",
     topic: "farm",
   },
   {
@@ -472,7 +471,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fiːd trɔːf/",
     cefr: "A2",
     img: "/word-images/farm/feed-trough.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A container from which farm animals eat or drink.",
     topic: "farm",
   },
   {
@@ -481,7 +480,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɔːtər tæŋk/",
     cefr: "A2",
     img: "/word-images/farm/water-tank.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large container used for storing water.",
     topic: "farm",
   },
   {
@@ -490,7 +489,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈskɛrkroʊ/",
     cefr: "A1",
     img: "/word-images/farm/scarecrow.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A model of a person placed in a field to frighten birds away.",
     topic: "farm",
   },
   {
@@ -517,7 +516,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/wʊl/",
     cefr: "A1",
     img: "/word-images/farm/wool.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Soft hair from sheep, used to make warm cloth.",
     topic: "farm",
   },
   {
@@ -553,7 +552,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kriːm/",
     cefr: "A1",
     img: "/word-images/farm/cream.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The thick part of milk used to make butter and other foods.",
     topic: "farm",
   },
   {
@@ -571,7 +570,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dʒæm/",
     cefr: "A1",
     img: "/word-images/farm/jam.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sweet spread made by cooking fruit with sugar.",
     topic: "farm",
   },
   {
@@ -580,7 +579,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈæpəl ˈsaɪdər/",
     cefr: "A2",
     img: "/word-images/farm/apple-cider.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sweet drink made by pressing apples.",
     topic: "farm",
   },
   {
@@ -589,7 +588,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈræbɪt/",
     cefr: "A1",
     img: "/word-images/farm/rabbit.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small furry animal often kept on farms for meat or pets.",
     topic: "farm",
   },
   {
@@ -598,7 +597,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡuːs/",
     cefr: "A1",
     img: "/word-images/farm/goose.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large water bird with a long neck and white feathers.",
     topic: "farm",
   },
   {
@@ -607,7 +606,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/hɛn haʊs/",
     cefr: "A2",
     img: "/word-images/farm/hen-house.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A building where hens are kept and lay eggs.",
     topic: "farm",
   },
   {
@@ -616,7 +615,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ʃɛd/",
     cefr: "A1",
     img: "/word-images/farm/shed.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small farm building used for storage or animals.",
     topic: "farm",
   },
   {
@@ -625,7 +624,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fɛns/",
     cefr: "A1",
     img: "/word-images/farm/fence.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A barrier made of posts or wire around land.",
     topic: "farm",
   },
   {
@@ -634,7 +633,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈʃʌvəl/",
     cefr: "A1",
     img: "/word-images/farm/shovel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A hand tool with a broad blade for digging soil.",
     topic: "farm",
   },
   {
@@ -643,7 +642,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/hoʊ/",
     cefr: "A1",
     img: "/word-images/farm/hoe.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A hand tool with a short handle and a blade for breaking soil.",
     topic: "farm",
   },
   {
@@ -652,7 +651,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/reɪk/",
     cefr: "A1",
     img: "/word-images/farm/rake.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A garden tool with a row of teeth for gathering leaves or loosening soil.",
     topic: "farm",
   },
   {
@@ -661,7 +660,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɔːtərɪŋ kæn/",
     cefr: "A2",
     img: "/word-images/farm/watering-can.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A container with a handle and narrow spout for watering plants.",
     topic: "farm",
   },
   {
@@ -670,7 +669,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsʌnflaʊər/",
     cefr: "A1",
     img: "/word-images/farm/sunflower.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tall plant with a large yellow flower and edible seeds.",
     topic: "farm",
   },
   {
@@ -679,7 +678,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/heɪ/",
     cefr: "A1",
     img: "/word-images/farm/hay.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Dried grass used as food for farm animals.",
     topic: "farm",
   },
   {
@@ -688,7 +687,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/strɔː/",
     cefr: "A1",
     img: "/word-images/farm/straw.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Dry stalks left after grain plants are cut, used for bedding.",
     topic: "farm",
   },
   {
@@ -697,7 +696,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfɑːrmər/",
     cefr: "A1",
     img: "/word-images/farm/farmer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who owns or works on a farm.",
     topic: "farm",
   },
   {
@@ -706,7 +705,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dɔːɡ/",
     cefr: "A1",
     img: "/word-images/farm/dog.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A domesticated animal often kept on a farm for guarding or companionship.",
     topic: "farm",
   },
   {
@@ -715,7 +714,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kæt/",
     cefr: "A1",
     img: "/word-images/farm/cat.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small domesticated animal that may live on a farm.",
     topic: "farm",
   },
   {
@@ -724,7 +723,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pɑːnd/",
     cefr: "A1",
     img: "/word-images/farm/pond.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small area of still water, larger than a puddle.",
     topic: "farm",
   },
   {
@@ -733,7 +732,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/mʌd/",
     cefr: "A1",
     img: "/word-images/farm/mud.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Wet soft earth that sticks to shoes and animals.",
     topic: "farm",
   },
   {
@@ -742,7 +741,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsʌnraɪz/",
     cefr: "A1",
     img: "/word-images/farm/sunrise.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The time when the sun first appears in the sky.",
     topic: "farm",
   },
   {
@@ -751,7 +750,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsʌnsɛt/",
     cefr: "A1",
     img: "/word-images/farm/sunset.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The time when the sun goes down in the evening.",
     topic: "farm",
   },
   {
@@ -760,7 +759,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/reɪn/",
     cefr: "A1",
     img: "/word-images/farm/rain.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Water that falls from clouds in drops.",
     topic: "farm",
   },
   {
@@ -769,7 +768,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhɑːrvɪst/",
     cefr: "A1",
     img: "/word-images/farm/harvest.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The gathering of crops when they are ready.",
     topic: "farm",
   },
   {
@@ -778,7 +777,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsædəl/",
     cefr: "A1",
     img: "/word-images/farm/saddle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A seat fixed on a horse for a rider.",
     topic: "farm",
   },
 ];
