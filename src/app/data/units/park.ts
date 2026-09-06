@@ -4,7 +4,6 @@
 // never downloads it. Loaded through data/vocabulary.ts, not imported directly
 // by screens.
 import type { VocabularyItem } from "../lessons";
-import { PLACEHOLDER_DESCRIPTION } from "../placeholderDescription";
 
 export const VOCABULARY: VocabularyItem[] = [
   {
@@ -13,7 +12,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɛntʃ/",
     cefr: "A1",
     img: "/word-images/park/bench.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long seat where people can sit outdoors.",
     topic: "park",
   },
   {
@@ -22,7 +21,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfaʊntən/",
     cefr: "A1",
     img: "/word-images/park/fountain.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A structure that sends water upward and lets it fall back down.",
     topic: "park",
   },
   {
@@ -31,7 +30,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡəˈziːboʊ/",
     cefr: "A1",
     img: "/word-images/park/gazebo.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small roofed structure in a park where people can rest.",
     topic: "park",
   },
   {
@@ -40,7 +39,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/brɪdʒ/",
     cefr: "A1",
     img: "/word-images/park/bridge.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A structure built over water or a low place for people to cross.",
     topic: "park",
   },
   {
@@ -49,7 +48,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈstætʃuː/",
     cefr: "A1",
     img: "/word-images/park/statue.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A carved figure made to look like a person or animal.",
     topic: "park",
   },
   {
@@ -67,7 +66,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/læmp poʊst/",
     cefr: "A2",
     img: "/word-images/park/lamp-post.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tall post with a light that brightens paths after dark.",
     topic: "park",
   },
   {
@@ -76,7 +75,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɪknɪk ˈteɪbəl/",
     cefr: "A2",
     img: "/word-images/park/picnic-table.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A table with attached seats where people eat outdoors.",
     topic: "park",
   },
   {
@@ -85,7 +84,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdrɪŋkɪŋ ˈfaʊntən/",
     cefr: "B1",
     img: "/word-images/park/drinking-fountain.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A public device that supplies drinking water.",
     topic: "park",
   },
   {
@@ -94,7 +93,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/baɪk ræk/",
     cefr: "A2",
     img: "/word-images/park/bike-rack.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A frame where bicycles can be locked safely.",
     topic: "park",
   },
   {
@@ -103,7 +102,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pɑːnd/",
     cefr: "A1",
     img: "/word-images/park/pond.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small area of still water surrounded by land.",
     topic: "park",
   },
   {
@@ -112,7 +111,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/striːm/",
     cefr: "A1",
     img: "/word-images/park/stream.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A narrow flow of water moving through the ground.",
     topic: "park",
   },
   {
@@ -121,7 +120,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/hɪl/",
     cefr: "A1",
     img: "/word-images/park/hill.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An area of land that rises above the surrounding ground.",
     topic: "park",
   },
   {
@@ -130,7 +129,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɛdoʊ/",
     cefr: "A1",
     img: "/word-images/park/meadow.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An open area of grass, often with wild flowers.",
     topic: "park",
   },
   {
@@ -139,7 +138,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ʃeɪd triː/",
     cefr: "A2",
     img: "/word-images/park/shade-tree.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tree planted to provide a cool place away from the sun.",
     topic: "park",
   },
   {
@@ -148,7 +147,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈflaʊər bɛd/",
     cefr: "A2",
     img: "/word-images/park/flower-bed.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An area of soil where flowers are grown.",
     topic: "park",
   },
   {
@@ -157,7 +156,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡræs/",
     cefr: "A1",
     img: "/word-images/park/grass.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A green plant with narrow blades that covers the ground.",
     topic: "park",
   },
   {
@@ -166,7 +165,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɛbəl/",
     cefr: "A1",
     img: "/word-images/park/pebble.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small smooth piece of stone found on the ground.",
     topic: "park",
   },
   {
@@ -175,7 +174,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpaɪnkoʊn/",
     cefr: "A1",
     img: "/word-images/park/pinecone.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A brown seed that grows on some pine trees.",
     topic: "park",
   },
   {
@@ -184,7 +183,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈeɪkɔːrn/",
     cefr: "A1",
     img: "/word-images/park/acorn.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A nut produced by an oak tree.",
     topic: "park",
   },
   {
@@ -193,7 +192,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dʌk/",
     cefr: "A1",
     img: "/word-images/park/duck.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A water bird with a flat bill and webbed feet.",
     topic: "park",
   },
   {
@@ -202,7 +201,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/swɑːn/",
     cefr: "A1",
     img: "/word-images/park/swan.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large white water bird with a long curved neck.",
     topic: "park",
   },
   {
@@ -211,7 +210,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈskwɜːrəl/",
     cefr: "A1",
     img: "/word-images/park/squirrel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small animal with a bushy tail that gathers nuts.",
     topic: "park",
   },
   {
@@ -220,7 +219,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɪdʒən/",
     cefr: "A1",
     img: "/word-images/park/pigeon.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A common bird with grey feathers that lives near people.",
     topic: "park",
   },
   {
@@ -229,7 +228,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈrɑːbɪn/",
     cefr: "A1",
     img: "/word-images/park/robin.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small songbird with a red or orange breast.",
     topic: "park",
   },
   {
@@ -238,7 +237,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/frɑːɡ/",
     cefr: "A1",
     img: "/word-images/park/frog.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small animal that lives near water and catches insects.",
     topic: "park",
   },
   {
@@ -247,7 +246,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɜːrtəl/",
     cefr: "A1",
     img: "/word-images/park/turtle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A slow-moving animal with a hard shell.",
     topic: "park",
   },
   {
@@ -256,7 +255,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈræbɪt/",
     cefr: "A1",
     img: "/word-images/park/rabbit.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small furry animal with long ears.",
     topic: "park",
   },
   {
@@ -265,7 +264,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡuːs/",
     cefr: "A1",
     img: "/word-images/park/goose.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large water bird with a long neck and webbed feet.",
     topic: "park",
   },
   {
@@ -274,7 +273,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈspæroʊ/",
     cefr: "A1",
     img: "/word-images/park/sparrow.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small bird that often travels in groups.",
     topic: "park",
   },
   {
@@ -283,7 +282,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɔːkɪŋ/",
     cefr: "A1",
     img: "/word-images/park/walking.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Moving on foot at a steady pace for exercise or travel.",
     topic: "park",
   },
   {
@@ -292,7 +291,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdʒɑːɡɪŋ/",
     cefr: "A1",
     img: "/word-images/park/jogging.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Moving on foot faster than walking.",
     topic: "park",
   },
   {
@@ -301,7 +300,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsaɪklɪŋ/",
     cefr: "A1",
     img: "/word-images/park/cycling.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Riding a bicycle for travel, exercise, or enjoyment.",
     topic: "park",
   },
   {
@@ -310,7 +309,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɪknɪk/",
     cefr: "A1",
     img: "/word-images/park/picnic.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Eating a meal outdoors, often on a blanket or table.",
     topic: "park",
   },
   {
@@ -319,7 +318,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈriːdɪŋ/",
     cefr: "A1",
     img: "/word-images/park/reading.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Looking at words in a book or other text.",
     topic: "park",
   },
   {
@@ -328,7 +327,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsɪtɪŋ/",
     cefr: "A1",
     img: "/word-images/park/sitting.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Resting on a seat with your body supported.",
     topic: "park",
   },
   {
@@ -337,7 +336,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈstrɛtʃɪŋ/",
     cefr: "A2",
     img: "/word-images/park/stretching.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Moving your body to loosen muscles and improve flexibility.",
     topic: "park",
   },
   {
@@ -346,7 +345,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dɔːɡ ˈwɔːkɪŋ/",
     cefr: "A2",
     img: "/word-images/park/dog-walking.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Taking a dog outside while it walks beside you.",
     topic: "park",
   },
   {
@@ -355,7 +354,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fəˈtɑːɡrəfi/",
     cefr: "A2",
     img: "/word-images/park/photography.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Taking pictures with a camera.",
     topic: "park",
   },
   {
@@ -364,7 +363,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɜːrd ˈwɑːtʃɪŋ/",
     cefr: "A2",
     img: "/word-images/park/bird-watching.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Watching birds to identify and enjoy them.",
     topic: "park",
   },
   {
@@ -373,7 +372,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kaɪt/",
     cefr: "A1",
     img: "/word-images/park/kite.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A light frame covered with paper or cloth that flies on a string.",
     topic: "park",
   },
   {
@@ -382,7 +381,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfrɪzbiː/",
     cefr: "A1",
     img: "/word-images/park/frisbee.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flat flying disc thrown between people.",
     topic: "park",
   },
   {
@@ -391,7 +390,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsɑːkər bɔːl/",
     cefr: "A2",
     img: "/word-images/park/soccer-ball.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A round ball used for playing soccer.",
     topic: "park",
   },
   {
@@ -400,7 +399,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dʒʌmp roʊp/",
     cefr: "A2",
     img: "/word-images/park/jump-rope.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A toy with a rope that is swung under the feet.",
     topic: "park",
   },
   {
@@ -409,7 +408,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈskeɪtbɔːrd/",
     cefr: "A2",
     img: "/word-images/park/skateboard.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A board with wheels used for riding while standing.",
     topic: "park",
   },
   {
@@ -418,7 +417,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈroʊlər skeɪts/",
     cefr: "A2",
     img: "/word-images/park/roller-skates.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Shoes with small wheels used for skating on hard ground.",
     topic: "park",
   },
   {
@@ -427,7 +426,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbædmɪntən/",
     cefr: "A1",
     img: "/word-images/park/badminton.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A game played by hitting a shuttlecock over a net.",
     topic: "park",
   },
   {
@@ -436,7 +435,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɛnɪs bɔːl/",
     cefr: "A2",
     img: "/word-images/park/tennis-ball.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small ball used in tennis.",
     topic: "park",
   },
   {
@@ -445,7 +444,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈjoʊɡə mæt/",
     cefr: "A2",
     img: "/word-images/park/yoga-mat.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A soft mat used during yoga exercises.",
     topic: "park",
   },
   {
@@ -454,7 +453,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbaɪsɪkəl/",
     cefr: "A1",
     img: "/word-images/park/bicycle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A two-wheeled vehicle moved by pedalling.",
     topic: "park",
   },
   {
@@ -463,7 +462,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pɑːrk mæp/",
     cefr: "A2",
     img: "/word-images/park/park-map.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sign or diagram showing paths and places in a park.",
     topic: "park",
   },
   {
@@ -472,7 +471,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/treɪl saɪn/",
     cefr: "A2",
     img: "/word-images/park/trail-sign.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sign that shows the direction or name of a trail.",
     topic: "park",
   },
   {
@@ -481,7 +480,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/noʊ ˈswɪmɪŋ saɪn/",
     cefr: "B1",
     img: "/word-images/park/no-swimming-sign.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sign telling people that swimming is not allowed.",
     topic: "park",
   },
   {
@@ -490,7 +489,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kiːp ɔːf ɡræs/",
     cefr: "B1",
     img: "/word-images/park/keep-off-grass.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sign asking people not to walk on the grass.",
     topic: "park",
   },
   {
@@ -499,7 +498,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dɔːɡ əˈlaʊd/",
     cefr: "A2",
     img: "/word-images/park/dog-allowed.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sign showing that dogs may enter an area.",
     topic: "park",
   },
   {
@@ -508,7 +507,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkrɔːswɔːk/",
     cefr: "A1",
     img: "/word-images/park/crosswalk.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A marked place where people cross a road safely.",
     topic: "park",
   },
   {
@@ -517,7 +516,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/spiːd bʌmp/",
     cefr: "A2",
     img: "/word-images/park/speed-bump.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A raised strip across a road that makes vehicles slow down.",
     topic: "park",
   },
   {
@@ -526,7 +525,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪˈmɜːrdʒənsi foʊn/",
     cefr: "B1",
     img: "/word-images/park/emergency-phone.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A telephone placed outdoors for urgent calls.",
     topic: "park",
   },
   {
@@ -535,7 +534,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌɪnfərˈmeɪʃən bɔːrd/",
     cefr: "B1",
     img: "/word-images/park/information-board.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A board displaying useful facts, rules, or directions.",
     topic: "park",
   },
   {
@@ -544,7 +543,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/riːˈsaɪklɪŋ bɪn/",
     cefr: "A2",
     img: "/word-images/park/recycling-bin.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A container used for items that can be processed again.",
     topic: "park",
   },
   {
@@ -553,7 +552,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pæθ/",
     cefr: "A1",
     img: "/word-images/park/path.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A route made for walking through or between places.",
     topic: "park",
   },
   {
@@ -562,7 +561,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/oʊk triː/",
     cefr: "A2",
     img: "/word-images/park/oak-tree.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large tree with lobed leaves and acorns.",
     topic: "park",
   },
   {
@@ -571,7 +570,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ʃeɪd/",
     cefr: "A1",
     img: "/word-images/park/shade.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Protection from sunlight provided by a tree or roof.",
     topic: "park",
   },
   {
@@ -580,7 +579,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡræs lɔːn/",
     cefr: "A2",
     img: "/word-images/park/grass-lawn.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An area of ground covered evenly with short grass.",
     topic: "park",
   },
   {
@@ -589,7 +588,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/wɔːk/",
     cefr: "A1",
     img: "/word-images/park/walk.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To move on foot at a regular pace.",
     topic: "park",
   },
   {
@@ -598,7 +597,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dʒɑːɡ/",
     cefr: "A1",
     img: "/word-images/park/jog.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To move on foot faster than walking.",
     topic: "park",
   },
   {
@@ -607,7 +606,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsaɪkəl/",
     cefr: "A1",
     img: "/word-images/park/cycle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To ride a bicycle for travel, exercise, or enjoyment.",
     topic: "park",
   },
   {
@@ -616,7 +615,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fiːd dʌks/",
     cefr: "A2",
     img: "/word-images/park/feed-ducks.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To give food to ducks in a pond or park.",
     topic: "park",
   },
   {
@@ -625,7 +624,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/flaɪ kaɪt/",
     cefr: "A2",
     img: "/word-images/park/fly-kite.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To send a kite into the air and control it with a string.",
     topic: "park",
   },
   {
@@ -634,7 +633,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈroʊlər skeɪt/",
     cefr: "A2",
     img: "/word-images/park/roller-skate.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To move on roller skates across a smooth surface.",
     topic: "park",
   },
   {
@@ -643,7 +642,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sɪt daʊn/",
     cefr: "A2",
     img: "/word-images/park/sit-down.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "To lower your body into a seated position.",
     topic: "park",
   },
 ];

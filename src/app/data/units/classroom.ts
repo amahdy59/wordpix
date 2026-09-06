@@ -4,7 +4,6 @@
 // never downloads it. Loaded through data/vocabulary.ts, not imported directly
 // by screens.
 import type { VocabularyItem } from "../lessons";
-import { PLACEHOLDER_DESCRIPTION } from "../placeholderDescription";
 
 export const VOCABULARY: VocabularyItem[] = [
   {
@@ -13,7 +12,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɛnsəl/",
     cefr: "A1",
     img: "/word-images/classroom/pencil.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A thin tool with a pointed end used for writing.",
     topic: "classroom",
   },
   {
@@ -22,7 +21,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pɛn/",
     cefr: "A1",
     img: "/word-images/classroom/pen.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A narrow instrument filled with ink for writing.",
     topic: "classroom",
   },
   {
@@ -31,7 +30,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪˈreɪsər/",
     cefr: "A1",
     img: "/word-images/classroom/eraser.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool used to remove pencil marks from paper.",
     topic: "classroom",
   },
   {
@@ -40,7 +39,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈruːlər/",
     cefr: "A1",
     img: "/word-images/classroom/ruler.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A straight tool used for measuring and drawing lines.",
     topic: "classroom",
   },
   {
@@ -49,7 +48,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɑːrkər/",
     cefr: "A1",
     img: "/word-images/classroom/marker.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A pen or stick filled with coloured ink for writing.",
     topic: "classroom",
   },
   {
@@ -58,7 +57,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkreɪɑːn/",
     cefr: "A1",
     img: "/word-images/classroom/crayon.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A coloured wax stick used for drawing.",
     topic: "classroom",
   },
   {
@@ -67,7 +66,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkʌlərd ˈpɛnsəl/",
     cefr: "A2",
     img: "/word-images/classroom/colored-pencil.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A pencil filled with coloured material for drawing.",
     topic: "classroom",
   },
   {
@@ -76,7 +75,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhaɪlaɪtər/",
     cefr: "A2",
     img: "/word-images/classroom/highlighter.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A bright pen used to mark important words.",
     topic: "classroom",
   },
   {
@@ -85,7 +84,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɛnsəl ˈʃɑːrpənər/",
     cefr: "B1",
     img: "/word-images/classroom/pencil-sharpener.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool with a sharp blade for making pencils pointed.",
     topic: "classroom",
   },
   {
@@ -94,7 +93,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɛnsəl keɪs/",
     cefr: "A2",
     img: "/word-images/classroom/pencil-case.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small container used to hold pencils and pens.",
     topic: "classroom",
   },
   {
@@ -103,7 +102,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈnoʊtbʊk/",
     cefr: "A1",
     img: "/word-images/classroom/notebook.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A set of blank pages used for writing notes.",
     topic: "classroom",
   },
   {
@@ -112,7 +111,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɛkstbʊk/",
     cefr: "A1",
     img: "/word-images/classroom/textbook.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A book used for learning a subject.",
     topic: "classroom",
   },
   {
@@ -121,7 +120,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɜːrkbʊk/",
     cefr: "A1",
     img: "/word-images/classroom/workbook.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A book with exercises for practising a subject.",
     topic: "classroom",
   },
   {
@@ -130,7 +129,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfoʊldər/",
     cefr: "A1",
     img: "/word-images/classroom/folder.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A cover used to keep papers together.",
     topic: "classroom",
   },
   {
@@ -139,7 +138,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbaɪndər/",
     cefr: "A1",
     img: "/word-images/classroom/binder.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A thick cover with rings that holds loose pages.",
     topic: "classroom",
   },
   {
@@ -148,7 +147,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ʃiːt əv ˈpeɪpər/",
     cefr: "B1",
     img: "/word-images/classroom/sheet-of-paper.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A single piece of paper used for writing or drawing.",
     topic: "classroom",
   },
   {
@@ -157,7 +156,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈstɪki noʊt/",
     cefr: "A2",
     img: "/word-images/classroom/sticky-note.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small piece of paper with a removable sticky back.",
     topic: "classroom",
   },
   {
@@ -166,7 +165,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɪndɛks kɑːrd/",
     cefr: "A2",
     img: "/word-images/classroom/index-card.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small card used for notes or study facts.",
     topic: "classroom",
   },
   {
@@ -175,7 +174,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdɪkʃənɛri/",
     cefr: "A2",
     img: "/word-images/classroom/dictionary.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A book that explains the meanings of words.",
     topic: "classroom",
   },
   {
@@ -184,7 +183,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɪnˌsaɪkləˈpiːdiə/",
     cefr: "A2",
     img: "/word-images/classroom/encyclopedia.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A book containing information about many subjects.",
     topic: "classroom",
   },
   {
@@ -211,7 +210,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwaɪtbɔːrd/",
     cefr: "A2",
     img: "/word-images/classroom/whiteboard.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A board with a smooth white surface for writing.",
     topic: "classroom",
   },
   {
@@ -220,7 +219,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/prəˈdʒɛktər/",
     cefr: "A1",
     img: "/word-images/classroom/projector.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that displays images on a wall or screen.",
     topic: "classroom",
   },
   {
@@ -229,7 +228,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/skriːn/",
     cefr: "A1",
     img: "/word-images/classroom/screen.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flat surface that shows pictures or information.",
     topic: "classroom",
   },
   {
@@ -247,7 +246,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡloʊb/",
     cefr: "A1",
     img: "/word-images/classroom/globe.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A round model or map of the Earth.",
     topic: "classroom",
   },
   {
@@ -256,7 +255,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ʃɛlf/",
     cefr: "A1",
     img: "/word-images/classroom/shelf.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flat board or unit used for storing books or objects.",
     topic: "classroom",
   },
   {
@@ -265,7 +264,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈlɑːkər/",
     cefr: "A1",
     img: "/word-images/classroom/locker.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small locked compartment for a student’s belongings.",
     topic: "classroom",
   },
   {
@@ -274,7 +273,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbʊlɪtɪn bɔːrd/",
     cefr: "A2",
     img: "/word-images/classroom/bulletin-board.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A board where notices and student work are displayed.",
     topic: "classroom",
   },
   {
@@ -292,7 +291,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsɪzərz/",
     cefr: "A1",
     img: "/word-images/classroom/scissors.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool with two sharp blades for cutting paper.",
     topic: "classroom",
   },
   {
@@ -301,7 +300,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡluː stɪk/",
     cefr: "A2",
     img: "/word-images/classroom/glue-stick.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small tube of glue used to join paper.",
     topic: "classroom",
   },
   {
@@ -310,7 +309,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/teɪp/",
     cefr: "A1",
     img: "/word-images/classroom/tape.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A strip of sticky material used to attach things.",
     topic: "classroom",
   },
   {
@@ -319,7 +318,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsteɪplər/",
     cefr: "A1",
     img: "/word-images/classroom/stapler.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool that pushes metal staples through paper.",
     topic: "classroom",
   },
   {
@@ -328,7 +327,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpeɪpər klɪp/",
     cefr: "A2",
     img: "/word-images/classroom/paper-clip.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small bent piece of metal used to hold papers.",
     topic: "classroom",
   },
   {
@@ -337,7 +336,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈrʌbər bænd/",
     cefr: "A2",
     img: "/word-images/classroom/rubber-band.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A flexible loop used to hold things together.",
     topic: "classroom",
   },
   {
@@ -346,7 +345,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈθʌmtæk/",
     cefr: "A1",
     img: "/word-images/classroom/thumbtack.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small pin used to attach paper to a board.",
     topic: "classroom",
   },
   {
@@ -355,7 +354,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkælkjəleɪtər/",
     cefr: "A2",
     img: "/word-images/classroom/calculator.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device used for doing mathematical calculations.",
     topic: "classroom",
   },
   {
@@ -364,7 +363,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkʌmpəs/",
     cefr: "A1",
     img: "/word-images/classroom/compass.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tool used for drawing circles and measuring angles.",
     topic: "classroom",
   },
   {
@@ -373,7 +372,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kəmˈpjuːtər/",
     cefr: "A1",
     img: "/word-images/classroom/computer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An electronic machine used for writing, learning, or research.",
     topic: "classroom",
   },
   {
@@ -400,7 +399,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkiːbɔːrd/",
     cefr: "A1",
     img: "/word-images/classroom/keyboard.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A set of keys used to enter letters and numbers.",
     topic: "classroom",
   },
   {
@@ -409,7 +408,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/maʊs/",
     cefr: "A1",
     img: "/word-images/classroom/mouse.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small device moved by hand to control a computer pointer.",
     topic: "classroom",
   },
   {
@@ -418,7 +417,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈprɪntər/",
     cefr: "A1",
     img: "/word-images/classroom/printer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A machine that puts words or pictures onto paper.",
     topic: "classroom",
   },
   {
@@ -427,7 +426,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/juː ɛs biː draɪv/",
     cefr: "A2",
     img: "/word-images/classroom/usb-drive.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small device used to store or transfer computer files.",
     topic: "classroom",
   },
   {
@@ -445,7 +444,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/prəˈdʒɛktər rɪˈmoʊt/",
     cefr: "B1",
     img: "/word-images/classroom/projector-remote.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device used to control a projector from a distance.",
     topic: "classroom",
   },
   {
@@ -463,7 +462,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtiːtʃər/",
     cefr: "A1",
     img: "/word-images/classroom/teacher.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who teaches a class.",
     topic: "classroom",
   },
   {
@@ -472,7 +471,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈstuːdənt/",
     cefr: "A1",
     img: "/word-images/classroom/student.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who studies at a school.",
     topic: "classroom",
   },
   {
@@ -481,7 +480,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈprɪnsəpəl/",
     cefr: "A1",
     img: "/word-images/classroom/principal.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The person responsible for managing a school.",
     topic: "classroom",
   },
   {
@@ -490,7 +489,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/laɪˈbrɛriən/",
     cefr: "A1",
     img: "/word-images/classroom/librarian.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who works in or manages a library.",
     topic: "classroom",
   },
   {
@@ -499,7 +498,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdʒænɪtər/",
     cefr: "A1",
     img: "/word-images/classroom/janitor.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who cleans and maintains a building.",
     topic: "classroom",
   },
   {
@@ -508,7 +507,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/skuːl nɜːrs/",
     cefr: "A2",
     img: "/word-images/classroom/school-nurse.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A nurse who cares for students at school.",
     topic: "classroom",
   },
   {
@@ -517,7 +516,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsʌbstɪtuːt ˈtiːtʃər/",
     cefr: "B1",
     img: "/word-images/classroom/substitute-teacher.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A teacher who temporarily replaces another teacher.",
     topic: "classroom",
   },
   {
@@ -526,7 +525,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtiːtʃɪŋ əˈsɪstənt/",
     cefr: "B1",
     img: "/word-images/classroom/teaching-assistant.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A helper who supports a teacher in the classroom.",
     topic: "classroom",
   },
   {
@@ -535,7 +534,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkaʊnsələr/",
     cefr: "A1",
     img: "/word-images/classroom/counselor.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who helps students with personal or school problems.",
     topic: "classroom",
   },
   {
@@ -544,7 +543,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sɪˈkjʊrɪti ɡɑːrd/",
     cefr: "A2",
     img: "/word-images/classroom/security-guard.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who protects a building and its people.",
     topic: "classroom",
   },
   {
@@ -553,7 +552,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhoʊmwɜːrk/",
     cefr: "A1",
     img: "/word-images/classroom/homework.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Work that a student must complete at home.",
     topic: "classroom",
   },
   {
@@ -562,7 +561,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/tɛst/",
     cefr: "A1",
     img: "/word-images/classroom/test.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A set of questions used to measure learning.",
     topic: "classroom",
   },
   {
@@ -571,7 +570,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈriːsɛs/",
     cefr: "A1",
     img: "/word-images/classroom/recess.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A short break from lessons when students can play.",
     topic: "classroom",
   },
   {
@@ -580,7 +579,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɛl/",
     cefr: "A1",
     img: "/word-images/classroom/bell.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that makes a ringing sound.",
     topic: "classroom",
   },
   {
@@ -589,7 +588,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡreɪd/",
     cefr: "A1",
     img: "/word-images/classroom/grade.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A mark or result showing how well work was done.",
     topic: "classroom",
   },
   {
@@ -598,7 +597,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈjuːnɪfɔːrm/",
     cefr: "A1",
     img: "/word-images/classroom/uniform.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Special clothes worn by students at a school.",
     topic: "classroom",
   },
 ];

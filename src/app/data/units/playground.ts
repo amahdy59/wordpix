@@ -4,7 +4,6 @@
 // never downloads it. Loaded through data/vocabulary.ts, not imported directly
 // by screens.
 import type { VocabularyItem } from "../lessons";
-import { PLACEHOLDER_DESCRIPTION } from "../placeholderDescription";
 
 export const VOCABULARY: VocabularyItem[] = [
   {
@@ -13,7 +12,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/swɪŋ/",
     cefr: "A1",
     img: "/word-images/playground/swing.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A seat that moves forward and backward from a frame.",
     topic: "playground",
   },
   {
@@ -22,7 +21,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/slaɪd/",
     cefr: "A1",
     img: "/word-images/playground/slide.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A smooth surface children slide down for fun.",
     topic: "playground",
   },
   {
@@ -31,7 +30,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsiːsɔː/",
     cefr: "A1",
     img: "/word-images/playground/seesaw.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A board with seats that moves up and down around a centre.",
     topic: "playground",
   },
   {
@@ -40,7 +39,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈklaɪmɪŋ freɪm/",
     cefr: "A2",
     img: "/word-images/playground/climbing-frame.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A structure with bars and platforms for climbing.",
     topic: "playground",
   },
   {
@@ -49,7 +48,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsændbɑːks/",
     cefr: "A1",
     img: "/word-images/playground/sandbox.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A shallow box or area filled with sand for playing.",
     topic: "playground",
   },
   {
@@ -58,7 +57,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmʌŋki bɑːrz/",
     cefr: "A2",
     img: "/word-images/playground/monkey-bars.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A set of overhead bars that children swing across.",
     topic: "playground",
   },
   {
@@ -67,7 +66,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɛri ɡoʊ raʊnd/",
     cefr: "B1",
     img: "/word-images/playground/merry-go-round.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A circular platform that spins when children push it.",
     topic: "playground",
   },
   {
@@ -76,7 +75,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sprɪŋ ˈraɪdər/",
     cefr: "A2",
     img: "/word-images/playground/spring-rider.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A spring-mounted seat that rocks when ridden.",
     topic: "playground",
   },
   {
@@ -85,7 +84,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtʌnəl/",
     cefr: "A1",
     img: "/word-images/playground/tunnel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A narrow passage with an opening at both ends.",
     topic: "playground",
   },
   {
@@ -94,7 +93,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbæləns biːm/",
     cefr: "A2",
     img: "/word-images/playground/balance-beam.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A narrow beam used for practising balance.",
     topic: "playground",
   },
   {
@@ -103,7 +102,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɔːl/",
     cefr: "A1",
     img: "/word-images/playground/ball.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A round object thrown, kicked, or used in games.",
     topic: "playground",
   },
   {
@@ -112,7 +111,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/huːp/",
     cefr: "A1",
     img: "/word-images/playground/hoop.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A circular ring used for throwing or shooting a ball.",
     topic: "playground",
   },
   {
@@ -121,7 +120,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bæt/",
     cefr: "A1",
     img: "/word-images/playground/bat.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A wooden stick used to hit a ball.",
     topic: "playground",
   },
   {
@@ -130,7 +129,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈrækɪt/",
     cefr: "A1",
     img: "/word-images/playground/racket.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A bat used to hit a ball in some sports.",
     topic: "playground",
   },
   {
@@ -139,7 +138,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/nɛt/",
     cefr: "A1",
     img: "/word-images/playground/net.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A net stretched across a court or between players.",
     topic: "playground",
   },
   {
@@ -148,7 +147,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡoʊl/",
     cefr: "A1",
     img: "/word-images/playground/goal.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A frame or net where players score points.",
     topic: "playground",
   },
   {
@@ -157,7 +156,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɪsəl/",
     cefr: "A1",
     img: "/word-images/playground/whistle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small object blown to make a loud signal.",
     topic: "playground",
   },
   {
@@ -166,7 +165,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈstɑːpwɑːtʃ/",
     cefr: "A1",
     img: "/word-images/playground/stopwatch.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A watch that measures how long an activity takes.",
     topic: "playground",
   },
   {
@@ -175,7 +174,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhɛlmɪt/",
     cefr: "A1",
     img: "/word-images/playground/helmet.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A hard covering worn to protect the head.",
     topic: "playground",
   },
   {
@@ -184,7 +183,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/niː pæd/",
     cefr: "A2",
     img: "/word-images/playground/knee-pad.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Protective pads worn over the knees.",
     topic: "playground",
   },
   {
@@ -193,7 +192,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈrʌbər mæt/",
     cefr: "A2",
     img: "/word-images/playground/rubber-mat.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A soft surface placed under play equipment to reduce falls.",
     topic: "playground",
   },
   {
@@ -202,7 +201,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sænd/",
     cefr: "A1",
     img: "/word-images/playground/sand.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Small loose grains of rock or mineral material.",
     topic: "playground",
   },
   {
@@ -211,7 +210,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɡrævəl/",
     cefr: "A1",
     img: "/word-images/playground/gravel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Small pieces of stone used to cover the ground.",
     topic: "playground",
   },
   {
@@ -220,7 +219,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡræs/",
     cefr: "A1",
     img: "/word-images/playground/grass.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A green plant with narrow blades that covers the ground.",
     topic: "playground",
   },
   {
@@ -229,7 +228,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɑːnkriːt/",
     cefr: "A1",
     img: "/word-images/playground/concrete.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A hard building material used for paths and surfaces.",
     topic: "playground",
   },
   {
@@ -238,7 +237,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/tʃɔːk ˈdrɔːɪŋ/",
     cefr: "A2",
     img: "/word-images/playground/chalk-drawing.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A picture or design made with chalk.",
     topic: "playground",
   },
   {
@@ -247,7 +246,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhɑːpskɑːtʃ/",
     cefr: "A1",
     img: "/word-images/playground/hopscotch.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A game where players jump through numbered squares.",
     topic: "playground",
   },
   {
@@ -256,7 +255,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpeɪntɪd laɪnz/",
     cefr: "A2",
     img: "/word-images/playground/painted-lines.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Lines painted on the ground to mark areas or games.",
     topic: "playground",
   },
   {
@@ -265,7 +264,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpʌdəl/",
     cefr: "A1",
     img: "/word-images/playground/puddle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small pool of water left after rain.",
     topic: "playground",
   },
   {
@@ -274,7 +273,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/mʌd/",
     cefr: "A1",
     img: "/word-images/playground/mud.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Wet soft earth that sticks to shoes and feet.",
     topic: "playground",
   },
   {
@@ -283,7 +282,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/tʃaɪld/",
     cefr: "A1",
     img: "/word-images/playground/child.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A young person who has not become an adult.",
     topic: "playground",
   },
   {
@@ -292,7 +291,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/frɛnd/",
     cefr: "A1",
     img: "/word-images/playground/friend.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person of any age who plays or spends time with you.",
     topic: "playground",
   },
   {
@@ -301,7 +300,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɛrənt/",
     cefr: "A1",
     img: "/word-images/playground/parent.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An adult who cares for a child.",
     topic: "playground",
   },
   {
@@ -310,7 +309,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtiːtʃər/",
     cefr: "A1",
     img: "/word-images/playground/teacher.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who teaches children or students.",
     topic: "playground",
   },
   {
@@ -319,7 +318,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbeɪbi/",
     cefr: "A1",
     img: "/word-images/playground/baby.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A very young child who cannot yet walk well.",
     topic: "playground",
   },
   {
@@ -328,7 +327,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɑːdlər/",
     cefr: "A1",
     img: "/word-images/playground/toddler.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A young child who is learning to walk and speak.",
     topic: "playground",
   },
   {
@@ -337,7 +336,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtiːneɪdʒər/",
     cefr: "A1",
     img: "/word-images/playground/teenager.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A young person between childhood and adulthood.",
     topic: "playground",
   },
   {
@@ -346,7 +345,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡɑːrd/",
     cefr: "A1",
     img: "/word-images/playground/guard.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An adult who watches children to keep them safe.",
     topic: "playground",
   },
   {
@@ -355,7 +354,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/koʊtʃ/",
     cefr: "A1",
     img: "/word-images/playground/coach.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who trains players in a sport.",
     topic: "playground",
   },
   {
@@ -364,7 +363,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌvɑːlənˈtɪr/",
     cefr: "A1",
     img: "/word-images/playground/volunteer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who freely helps without being paid.",
     topic: "playground",
   },
   {
@@ -373,7 +372,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈswɪŋɪŋ/",
     cefr: "A1",
     img: "/word-images/playground/swinging.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Moving back and forward on a swing.",
     topic: "playground",
   },
   {
@@ -382,7 +381,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈslaɪdɪŋ/",
     cefr: "A1",
     img: "/word-images/playground/sliding.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Moving down a slide for fun at a playground.",
     topic: "playground",
   },
   {
@@ -391,7 +390,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈklaɪmɪŋ/",
     cefr: "A1",
     img: "/word-images/playground/climbing.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Moving up or over something using hands and feet.",
     topic: "playground",
   },
   {
@@ -400,7 +399,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈrʌnɪŋ/",
     cefr: "A1",
     img: "/word-images/playground/running.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Moving quickly on foot during play or exercise.",
     topic: "playground",
   },
   {
@@ -409,7 +408,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdʒʌmpɪŋ/",
     cefr: "A1",
     img: "/word-images/playground/jumping.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Pushing off the ground and becoming airborne.",
     topic: "playground",
   },
   {
@@ -418,7 +417,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈθroʊɪŋ/",
     cefr: "A1",
     img: "/word-images/playground/throwing.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Sending an object through the air with your hand.",
     topic: "playground",
   },
   {
@@ -427,7 +426,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkætʃɪŋ/",
     cefr: "A1",
     img: "/word-images/playground/catching.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Stopping and holding an object thrown toward you.",
     topic: "playground",
   },
   {
@@ -436,7 +435,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɪkɪŋ/",
     cefr: "A1",
     img: "/word-images/playground/kicking.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Hitting a ball with your foot.",
     topic: "playground",
   },
   {
@@ -445,7 +444,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈskɪpɪŋ/",
     cefr: "A1",
     img: "/word-images/playground/skipping.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Jumping over a rope as it passes under your feet.",
     topic: "playground",
   },
   {
@@ -454,7 +453,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhaɪdɪŋ/",
     cefr: "A1",
     img: "/word-images/playground/hiding.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Staying out of sight so others cannot see you.",
     topic: "playground",
   },
   {
@@ -463,7 +462,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fɛns/",
     cefr: "A1",
     img: "/word-images/playground/fence.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A barrier that surrounds a playground or area.",
     topic: "playground",
   },
   {
@@ -472,7 +471,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡeɪt/",
     cefr: "A1",
     img: "/word-images/playground/gate.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A door in a fence used for entering and leaving.",
     topic: "playground",
   },
   {
@@ -481,7 +480,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɛntʃ/",
     cefr: "A1",
     img: "/word-images/playground/bench.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long seat where people can rest.",
     topic: "playground",
   },
   {
@@ -490,7 +489,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɔːtər ˈfaʊntən/",
     cefr: "A2",
     img: "/word-images/playground/water-fountain.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A public device that supplies drinking water.",
     topic: "playground",
   },
   {
@@ -499,7 +498,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ʃeɪd ˈstrʌktʃər/",
     cefr: "B1",
     img: "/word-images/playground/shade-structure.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A roof or structure that provides shade.",
     topic: "playground",
   },
   {
@@ -508,7 +507,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/saɪn/",
     cefr: "A1",
     img: "/word-images/playground/sign.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A board showing rules or information.",
     topic: "playground",
   },
   {
@@ -526,7 +525,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fɜːrst eɪd kɪt/",
     cefr: "B1",
     img: "/word-images/playground/first-aid-kit.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small box containing materials for treating minor injuries.",
     topic: "playground",
   },
   {
@@ -535,7 +534,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bɛl/",
     cefr: "A1",
     img: "/word-images/playground/bell.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A device that makes a ringing sound.",
     topic: "playground",
   },
   {
@@ -544,7 +543,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/flæɡ/",
     cefr: "A1",
     img: "/word-images/playground/flag.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A piece of cloth attached to a pole as a symbol.",
     topic: "playground",
   },
 ];
