@@ -4,7 +4,6 @@
 // never downloads it. Loaded through data/vocabulary.ts, not imported directly
 // by screens.
 import type { VocabularyItem } from "../lessons";
-import { PLACEHOLDER_DESCRIPTION } from "../placeholderDescription";
 
 export const VOCABULARY: VocabularyItem[] = [
   {
@@ -13,7 +12,8 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈroʊlər ˈkoʊstər/",
     cefr: "B1",
     img: "/word-images/amusement-park/roller-coaster.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description:
+      "A train of cars that travels quickly along a raised track with steep drops and turns.",
     topic: "amusement-park",
   },
   {
@@ -22,7 +22,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfɛrɪs wiːl/",
     cefr: "B1",
     img: "/word-images/amusement-park/ferris-wheel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large wheel with seats that carries people high above the ground.",
     topic: "amusement-park",
   },
   {
@@ -31,7 +31,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/drɒp ˈtaʊər/",
     cefr: "B1",
     img: "/word-images/amusement-park/drop-tower.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A tall ride that lifts people before dropping them quickly.",
     topic: "amusement-park",
   },
   {
@@ -40,7 +40,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈspɪnɪŋ raɪd/",
     cefr: "B1",
     img: "/word-images/amusement-park/spinning-ride.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A ride that turns around and around while carrying passengers.",
     topic: "amusement-park",
   },
   {
@@ -49,7 +49,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɔːtər slaɪd/",
     cefr: "B1",
     img: "/word-images/amusement-park/water-slide.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long slippery chute used for sliding down with water.",
     topic: "amusement-park",
   },
   {
@@ -58,7 +58,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/lɒɡ fluːm/",
     cefr: "B1",
     img: "/word-images/amusement-park/log-flume.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A water ride in which boats travel through a channel and drop suddenly.",
     topic: "amusement-park",
   },
   {
@@ -67,7 +67,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpaɪrət ʃɪp/",
     cefr: "B1",
     img: "/word-images/amusement-park/pirate-ship.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A boat-shaped ride that swings back and forth like a pirate ship.",
     topic: "amusement-park",
   },
   {
@@ -76,7 +76,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/luːp raɪd/",
     cefr: "B1",
     img: "/word-images/amusement-park/loop-ride.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A ride that turns passengers upside down in a complete circle.",
     topic: "amusement-park",
   },
   {
@@ -85,7 +85,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/lɔːntʃ ˈkoʊstər/",
     cefr: "B1",
     img: "/word-images/amusement-park/launch-coaster.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A roller coaster that speeds forward from its starting point.",
     topic: "amusement-park",
   },
   {
@@ -94,7 +94,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɛndjʊləm raɪd/",
     cefr: "B1",
     img: "/word-images/amusement-park/pendulum-ride.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A ride that swings passengers from side to side like a pendulum.",
     topic: "amusement-park",
   },
   {
@@ -103,7 +103,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌkærəˈsɛl/",
     cefr: "A2",
     img: "/word-images/amusement-park/carousel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A ride with decorated seats that moves slowly around a centre.",
     topic: "amusement-park",
   },
   {
@@ -112,7 +112,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbʌmpər kɑːrz/",
     cefr: "B1",
     img: "/word-images/amusement-park/bumper-cars.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Small cars that people drive into one another for fun.",
     topic: "amusement-park",
   },
   {
@@ -121,7 +121,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡoʊ kɑːrts/",
     cefr: "B1",
     img: "/word-images/amusement-park/go-karts.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Small motor vehicles raced around a short track.",
     topic: "amusement-park",
   },
   {
@@ -130,7 +130,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/treɪn raɪd/",
     cefr: "B1",
     img: "/word-images/amusement-park/train-ride.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A ride in which passengers travel in a train around the park.",
     topic: "amusement-park",
   },
   {
@@ -139,7 +139,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/tiː kʌps/",
     cefr: "B1",
     img: "/word-images/amusement-park/tea-cups.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A spinning ride with seats shaped like teacups.",
     topic: "amusement-park",
   },
   {
@@ -148,7 +148,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈflaɪɪŋ swɪŋz/",
     cefr: "B1",
     img: "/word-images/amusement-park/flying-swings.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A ride with seats that swing through the air in circles.",
     topic: "amusement-park",
   },
   {
@@ -157,7 +157,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/boʊt raɪd/",
     cefr: "B1",
     img: "/word-images/amusement-park/boat-ride.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A ride in which people travel on a boat.",
     topic: "amusement-park",
   },
   {
@@ -166,7 +166,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɒnəˌreɪl/",
     cefr: "A2",
     img: "/word-images/amusement-park/monorail.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An elevated train that moves around a park.",
     topic: "amusement-park",
   },
   {
@@ -175,7 +175,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhɔːntɪd haʊs/",
     cefr: "B1",
     img: "/word-images/amusement-park/haunted-house.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A building designed to frighten visitors with dark rooms and surprises.",
     topic: "amusement-park",
   },
   {
@@ -184,7 +184,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fʌn haʊs/",
     cefr: "B1",
     img: "/word-images/amusement-park/fun-house.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A building with funny rooms, mirrors, and unusual paths.",
     topic: "amusement-park",
   },
   {
@@ -193,7 +193,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/rɪŋ tɒs/",
     cefr: "B1",
     img: "/word-images/amusement-park/ring-toss.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A game where players throw rings over targets to win prizes.",
     topic: "amusement-park",
   },
   {
@@ -202,7 +202,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bəˈluːn dɑːrt/",
     cefr: "B1",
     img: "/word-images/amusement-park/balloon-dart.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A game where darts are thrown at balloons to pop them.",
     topic: "amusement-park",
   },
   {
@@ -211,7 +211,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbæskɪtˌbɔːl θroʊ/",
     cefr: "B2",
     img: "/word-images/amusement-park/basketball-throw.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A game where players throw a ball into a basketball hoop.",
     topic: "amusement-park",
   },
   {
@@ -220,7 +220,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/klɔː məˈʃiːn/",
     cefr: "B1",
     img: "/word-images/amusement-park/claw-machine.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A machine that uses a mechanical claw to pick up a prize.",
     topic: "amusement-park",
   },
   {
@@ -229,7 +229,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/wæk ə moʊl/",
     cefr: "B2",
     img: "/word-images/amusement-park/whack-a-mole.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A game in which players hit small targets that appear and disappear.",
     topic: "amusement-park",
   },
   {
@@ -238,7 +238,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/strɛŋθ tɛst/",
     cefr: "B1",
     img: "/word-images/amusement-park/strength-test.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A game that tests how strongly someone can hit or pull.",
     topic: "amusement-park",
   },
   {
@@ -247,7 +247,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɔːtər ɡʌn ɡeɪm/",
     cefr: "B2",
     img: "/word-images/amusement-park/water-gun-game.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A game where players spray water at a moving target.",
     topic: "amusement-park",
   },
   {
@@ -256,7 +256,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/praɪz buːθ/",
     cefr: "B1",
     img: "/word-images/amusement-park/prize-booth.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A stall where winners choose or receive prizes.",
     topic: "amusement-park",
   },
   {
@@ -265,7 +265,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/stʌft ˈænɪməl/",
     cefr: "B1",
     img: "/word-images/amusement-park/stuffed-animal.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A soft toy filled with material that can be won as a prize.",
     topic: "amusement-park",
   },
   {
@@ -274,7 +274,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdʒaɪənt ˈtɛdi bɛər/",
     cefr: "B2",
     img: "/word-images/amusement-park/giant-teddy-bear.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A very large soft toy shaped like a teddy bear.",
     topic: "amusement-park",
   },
   {
@@ -283,7 +283,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkɒtən ˈkændi/",
     cefr: "B1",
     img: "/word-images/amusement-park/cotton-candy.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A light, fluffy sweet made from spun sugar.",
     topic: "amusement-park",
   },
   {
@@ -292,7 +292,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfʌnəl keɪk/",
     cefr: "B1",
     img: "/word-images/amusement-park/funnel-cake.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sweet cake made by pouring batter through a funnel and frying it.",
     topic: "amusement-park",
   },
   {
@@ -301,7 +301,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kɔːrn dɒɡ/",
     cefr: "B1",
     img: "/word-images/amusement-park/corn-dog.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sausage covered in batter and served on a stick.",
     topic: "amusement-park",
   },
   {
@@ -310,7 +310,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɒpˌkɔːrn/",
     cefr: "A2",
     img: "/word-images/amusement-park/popcorn.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Small pieces of corn heated until they burst into white pieces.",
     topic: "amusement-park",
   },
   {
@@ -319,7 +319,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈkændi ˈæpəl/",
     cefr: "B1",
     img: "/word-images/amusement-park/candy-apple.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An apple covered with a hard sweet coating.",
     topic: "amusement-park",
   },
   {
@@ -328,7 +328,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtʃʊroʊ/",
     cefr: "A2",
     img: "/word-images/amusement-park/churro.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long fried pastry covered with sugar and cinnamon.",
     topic: "amusement-park",
   },
   {
@@ -337,7 +337,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sɒft ˈprɛtsəl/",
     cefr: "B1",
     img: "/word-images/amusement-park/soft-pretzel.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A twisted baked snack sprinkled with salt.",
     topic: "amusement-park",
   },
   {
@@ -346,7 +346,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/aɪs kriːm koʊn/",
     cefr: "B2",
     img: "/word-images/amusement-park/ice-cream-cone.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Ice cream served in a cone-shaped wafer.",
     topic: "amusement-park",
   },
   {
@@ -355,7 +355,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌlɛməˈneɪd/",
     cefr: "A2",
     img: "/word-images/amusement-park/lemonade.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A cold sweet drink made with lemons, water, and sugar.",
     topic: "amusement-park",
   },
   {
@@ -364,7 +364,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/snoʊ koʊn/",
     cefr: "B1",
     img: "/word-images/amusement-park/snow-cone.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Shaved ice covered with sweet flavoured syrup.",
     topic: "amusement-park",
   },
   {
@@ -373,7 +373,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɛntrəns ɡeɪt/",
     cefr: "B1",
     img: "/word-images/amusement-park/entrance-gate.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A gate where visitors enter an amusement park.",
     topic: "amusement-park",
   },
   {
@@ -382,7 +382,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɪkɪt buːθ/",
     cefr: "B1",
     img: "/word-images/amusement-park/ticket-booth.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A place where visitors buy or collect tickets.",
     topic: "amusement-park",
   },
   {
@@ -391,7 +391,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/mæp bɔːrd/",
     cefr: "B1",
     img: "/word-images/amusement-park/map-board.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A board showing rides, areas, and paths in the park.",
     topic: "amusement-park",
   },
   {
@@ -400,7 +400,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈrɛstruːm/",
     cefr: "A2",
     img: "/word-images/amusement-park/restroom.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A public room containing toilets and washing facilities.",
     topic: "amusement-park",
   },
   {
@@ -409,7 +409,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fɜːrst eɪd/",
     cefr: "B1",
     img: "/word-images/amusement-park/first-aid.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A place where people receive treatment for minor injuries.",
     topic: "amusement-park",
   },
   {
@@ -418,7 +418,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/lɒst ənd faʊnd/",
     cefr: "B2",
     img: "/word-images/amusement-park/lost-and-found.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A place where lost objects and people are reported or collected.",
     topic: "amusement-park",
   },
   {
@@ -427,7 +427,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌsuːvəˈnɪər ʃɒp/",
     cefr: "B1",
     img: "/word-images/amusement-park/souvenir-shop.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A shop selling gifts and objects to remember a visit.",
     topic: "amusement-park",
   },
   {
@@ -436,7 +436,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfoʊtoʊ spɒt/",
     cefr: "B1",
     img: "/word-images/amusement-park/photo-spot.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A place arranged for visitors to take photographs.",
     topic: "amusement-park",
   },
   {
@@ -445,7 +445,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/steɪdʒ/",
     cefr: "A2",
     img: "/word-images/amusement-park/stage.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A raised area where performers entertain an audience.",
     topic: "amusement-park",
   },
   {
@@ -454,7 +454,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfaʊntɪn/",
     cefr: "A2",
     img: "/word-images/amusement-park/fountain.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A structure that sends water upward and lets it fall back down.",
     topic: "amusement-park",
   },
   {
@@ -463,7 +463,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pəˈreɪd/",
     cefr: "A2",
     img: "/word-images/amusement-park/parade.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A public procession with performers, music, and decorated vehicles.",
     topic: "amusement-park",
   },
   {
@@ -472,7 +472,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfaɪərˌwɜːrks/",
     cefr: "A2",
     img: "/word-images/amusement-park/fireworks.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Bright coloured lights that explode in the night sky.",
     topic: "amusement-park",
   },
   {
@@ -481,7 +481,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmæskɒt/",
     cefr: "A2",
     img: "/word-images/amusement-park/mascot.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person in a special costume representing the park or a character.",
     topic: "amusement-park",
   },
   {
@@ -490,7 +490,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/stɪlt ˈwɔːkər/",
     cefr: "B1",
     img: "/word-images/amusement-park/stilt-walker.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A performer who walks on very tall stilts.",
     topic: "amusement-park",
   },
   {
@@ -499,7 +499,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdʒʌɡlər/",
     cefr: "A2",
     img: "/word-images/amusement-park/juggler.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A performer who keeps objects moving through the air.",
     topic: "amusement-park",
   },
   {
@@ -508,7 +508,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/feɪs ˈpeɪntər/",
     cefr: "B1",
     img: "/word-images/amusement-park/face-painter.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A person who paints designs on people’s faces.",
     topic: "amusement-park",
   },
   {
@@ -517,7 +517,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/striːt pərˈfɔːrmər/",
     cefr: "B2",
     img: "/word-images/amusement-park/street-performer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An entertainer who performs in a public place.",
     topic: "amusement-park",
   },
   {
@@ -526,7 +526,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/məˈdʒɪʃən/",
     cefr: "A2",
     img: "/word-images/amusement-park/magician.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A performer who uses tricks and illusions to entertain people.",
     topic: "amusement-park",
   },
   {
@@ -535,7 +535,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dæns ʃoʊ/",
     cefr: "B1",
     img: "/word-images/amusement-park/dance-show.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A performance in which people move to music.",
     topic: "amusement-park",
   },
   {
@@ -544,7 +544,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈmɑːrtʃɪŋ bænd/",
     cefr: "B1",
     img: "/word-images/amusement-park/marching-band.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A musical group that marches while playing instruments.",
     topic: "amusement-park",
   },
   {
@@ -553,7 +553,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɡoʊ kɑːrt/",
     cefr: "B1",
     img: "/word-images/amusement-park/go-kart.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small vehicle used for racing around a track.",
     topic: "amusement-park",
   },
   {
@@ -562,7 +562,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/swɪŋ raɪd/",
     cefr: "B1",
     img: "/word-images/amusement-park/swing-ride.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A ride in which seats swing through the air.",
     topic: "amusement-park",
   },
   {
@@ -571,7 +571,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ɑːrˈkeɪd/",
     cefr: "A2",
     img: "/word-images/amusement-park/arcade.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A building filled with electronic games and machines.",
     topic: "amusement-park",
   },
   {
@@ -580,7 +580,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfoʊtoʊ buːθ/",
     cefr: "B1",
     img: "/word-images/amusement-park/photo-booth.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small enclosed space where people take photographs.",
     topic: "amusement-park",
   },
   {
@@ -589,7 +589,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/steɪdʒ ʃoʊ/",
     cefr: "B1",
     img: "/word-images/amusement-park/stage-show.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A performance presented on a stage.",
     topic: "amusement-park",
   },
   {
@@ -598,7 +598,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pəˈreɪd floʊt/",
     cefr: "B1",
     img: "/word-images/amusement-park/parade-float.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A decorated vehicle used in a parade.",
     topic: "amusement-park",
   },
   {
@@ -607,7 +607,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɪkɪt/",
     cefr: "A2",
     img: "/word-images/amusement-park/ticket.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A printed or electronic pass that allows entry to a ride or park.",
     topic: "amusement-park",
   },
   {
@@ -616,7 +616,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈrɪstˌbænd/",
     cefr: "A2",
     img: "/word-images/amusement-park/wristband.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A band worn around the wrist to show admission or permission.",
     topic: "amusement-park",
   },
   {
@@ -625,7 +625,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/pɑːrk mæp/",
     cefr: "B1",
     img: "/word-images/amusement-park/park-map.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sign or diagram showing rides and paths in a park.",
     topic: "amusement-park",
   },
   {
@@ -634,7 +634,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌsuːvəˈnɪər/",
     cefr: "A2",
     img: "/word-images/amusement-park/souvenir.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An object bought to remember a visit or place.",
     topic: "amusement-park",
   },
 ];
