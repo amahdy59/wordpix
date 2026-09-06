@@ -4,7 +4,6 @@
 // never downloads it. Loaded through data/vocabulary.ts, not imported directly
 // by screens.
 import type { VocabularyItem } from "../lessons";
-import { PLACEHOLDER_DESCRIPTION } from "../placeholderDescription";
 
 export const VOCABULARY: VocabularyItem[] = [
   {
@@ -13,7 +12,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsʌnˌʃaɪn/",
     cefr: "A2",
     img: "/word-images/weather-station/sunshine.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Bright light from the sun.",
     topic: "weather-station",
   },
   {
@@ -22,7 +21,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/klɪər skaɪ/",
     cefr: "B1",
     img: "/word-images/weather-station/clear-sky.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sky without clouds, allowing the sun or stars to be seen.",
     topic: "weather-station",
   },
   {
@@ -31,7 +30,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpɑːrtli ˈklaʊdi/",
     cefr: "B1",
     img: "/word-images/weather-station/partly-cloudy.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sky with some clouds and some clear areas.",
     topic: "weather-station",
   },
   {
@@ -40,7 +39,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/wɔːrm briːz/",
     cefr: "B1",
     img: "/word-images/weather-station/warm-breeze.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A light wind that feels warm.",
     topic: "weather-station",
   },
   {
@@ -49,7 +48,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/draɪ ɛər/",
     cefr: "B1",
     img: "/word-images/weather-station/dry-air.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Air containing little moisture.",
     topic: "weather-station",
   },
   {
@@ -58,7 +57,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bluː skaɪ/",
     cefr: "B1",
     img: "/word-images/weather-station/blue-sky.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A sky that looks blue because few clouds block the sunlight.",
     topic: "weather-station",
   },
   {
@@ -67,7 +66,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/kɑːm/",
     cefr: "A2",
     img: "/word-images/weather-station/calm.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Without much wind or movement.",
     topic: "weather-station",
   },
   {
@@ -76,7 +75,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/maɪld ˈtɛmpərɪtʃər/",
     cefr: "B2",
     img: "/word-images/weather-station/mild-temperature.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A temperature that is comfortably warm but not hot.",
     topic: "weather-station",
   },
   {
@@ -85,7 +84,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈplɛzənt/",
     cefr: "A2",
     img: "/word-images/weather-station/pleasant.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Pleasant and comfortable to experience.",
     topic: "weather-station",
   },
   {
@@ -94,7 +93,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈbɑːmi/",
     cefr: "A2",
     img: "/word-images/weather-station/balmy.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Warm and pleasant, especially in a gentle way.",
     topic: "weather-station",
   },
   {
@@ -103,7 +102,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/reɪn/",
     cefr: "A2",
     img: "/word-images/weather-station/rain.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Water that falls from clouds in drops.",
     topic: "weather-station",
   },
   {
@@ -112,7 +111,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdrɪzəl/",
     cefr: "A2",
     img: "/word-images/weather-station/drizzle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Light rain falling in very small drops.",
     topic: "weather-station",
   },
   {
@@ -121,7 +120,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈdaʊnˌpɔːr/",
     cefr: "A2",
     img: "/word-images/weather-station/downpour.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A period of very heavy rain.",
     topic: "weather-station",
   },
   {
@@ -130,7 +129,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈpʌdəl/",
     cefr: "A2",
     img: "/word-images/weather-station/puddle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small pool of water left after rain.",
     topic: "weather-station",
   },
   {
@@ -139,7 +138,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/flʌd/",
     cefr: "A2",
     img: "/word-images/weather-station/flood.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A large amount of water covering normally dry land.",
     topic: "weather-station",
   },
   {
@@ -148,7 +147,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈreɪnˌboʊ/",
     cefr: "A2",
     img: "/word-images/weather-station/rainbow.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A curved band of colours seen when sunlight shines through rain.",
     topic: "weather-station",
   },
   {
@@ -157,7 +156,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ʌmˈbrɛlə/",
     cefr: "A2",
     img: "/word-images/weather-station/umbrella.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A covering used to protect someone from rain.",
     topic: "weather-station",
   },
   {
@@ -166,7 +165,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈreɪnˌkoʊt/",
     cefr: "A2",
     img: "/word-images/weather-station/raincoat.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A waterproof coat worn in rainy weather.",
     topic: "weather-station",
   },
   {
@@ -175,7 +174,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/reɪn buːts/",
     cefr: "B1",
     img: "/word-images/weather-station/rain-boots.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Waterproof shoes worn in wet weather.",
     topic: "weather-station",
   },
   {
@@ -184,7 +183,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/wɛt roʊd/",
     cefr: "B1",
     img: "/word-images/weather-station/wet-road.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A road made wet by rain and sometimes slippery for vehicles.",
     topic: "weather-station",
   },
   {
@@ -193,7 +192,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/snoʊ/",
     cefr: "A2",
     img: "/word-images/weather-station/snow.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Frozen water that falls from clouds as soft white flakes.",
     topic: "weather-station",
   },
   {
@@ -202,7 +201,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsnoʊˌfleɪk/",
     cefr: "A2",
     img: "/word-images/weather-station/snowflake.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A small piece of frozen water shaped like a six-sided crystal.",
     topic: "weather-station",
   },
   {
@@ -211,7 +210,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/aɪs/",
     cefr: "A2",
     img: "/word-images/weather-station/ice.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Water frozen into a hard solid state.",
     topic: "weather-station",
   },
   {
@@ -220,7 +219,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/frɒst/",
     cefr: "A2",
     img: "/word-images/weather-station/frost.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A thin layer of ice that forms on surfaces in cold weather.",
     topic: "weather-station",
   },
   {
@@ -229,7 +228,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/heɪl/",
     cefr: "A2",
     img: "/word-images/weather-station/hail.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Small balls of ice that fall from clouds during a storm.",
     topic: "weather-station",
   },
   {
@@ -238,7 +237,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sliːt/",
     cefr: "A2",
     img: "/word-images/weather-station/sleet.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Frozen or partly frozen rain that falls as small ice pellets.",
     topic: "weather-station",
   },
   {
@@ -247,7 +246,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈaɪsɪkəl/",
     cefr: "A2",
     img: "/word-images/weather-station/icicle.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long pointed piece of ice hanging down from a surface.",
     topic: "weather-station",
   },
   {
@@ -256,7 +255,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsnoʊˌstɔːrm/",
     cefr: "A2",
     img: "/word-images/weather-station/snowstorm.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A severe storm with a lot of falling snow.",
     topic: "weather-station",
   },
   {
@@ -265,7 +264,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfroʊzən pɒnd/",
     cefr: "B1",
     img: "/word-images/weather-station/frozen-pond.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A pond covered with a layer of ice.",
     topic: "weather-station",
   },
   {
@@ -274,7 +273,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/fɒɡ/",
     cefr: "A2",
     img: "/word-images/weather-station/fog.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A thick cloud near the ground that makes it difficult to see.",
     topic: "weather-station",
   },
   {
@@ -283,7 +282,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈθʌndərˌstɔːrm/",
     cefr: "B1",
     img: "/word-images/weather-station/thunderstorm.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A storm with heavy rain, strong winds, thunder, and lightning.",
     topic: "weather-station",
   },
   {
@@ -292,7 +291,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈlaɪtnɪŋ/",
     cefr: "A2",
     img: "/word-images/weather-station/lightning.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A bright flash of electricity in the sky.",
     topic: "weather-station",
   },
   {
@@ -301,7 +300,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈθʌndər/",
     cefr: "A2",
     img: "/word-images/weather-station/thunder.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The loud sound that follows lightning.",
     topic: "weather-station",
   },
   {
@@ -310,7 +309,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/tɔːrˈneɪdoʊ/",
     cefr: "A2",
     img: "/word-images/weather-station/tornado.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A violent column of air that spins around and moves across land.",
     topic: "weather-station",
   },
   {
@@ -319,7 +318,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈhʌrɪˌkeɪn/",
     cefr: "A2",
     img: "/word-images/weather-station/hurricane.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A very powerful storm with strong winds that forms over the sea.",
     topic: "weather-station",
   },
   {
@@ -328,7 +327,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/strɒŋ wɪnd/",
     cefr: "B1",
     img: "/word-images/weather-station/strong-wind.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Wind blowing strongly or with great force.",
     topic: "weather-station",
   },
   {
@@ -337,7 +336,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/dʌst stɔːrm/",
     cefr: "B1",
     img: "/word-images/weather-station/dust-storm.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A storm that carries large amounts of dust through the air.",
     topic: "weather-station",
   },
   {
@@ -346,7 +345,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/hiːt weɪv/",
     cefr: "B1",
     img: "/word-images/weather-station/heat-wave.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A period of unusually hot weather.",
     topic: "weather-station",
   },
   {
@@ -355,7 +354,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/draʊt/",
     cefr: "A2",
     img: "/word-images/weather-station/drought.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A long period with very little or no rain.",
     topic: "weather-station",
   },
   {
@@ -364,7 +363,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈblɪzərd/",
     cefr: "A2",
     img: "/word-images/weather-station/blizzard.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A severe snowstorm with strong winds and poor visibility.",
     topic: "weather-station",
   },
   {
@@ -373,7 +372,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/θərˈmɒmɪtər/",
     cefr: "B1",
     img: "/word-images/weather-station/thermometer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An instrument that measures temperature.",
     topic: "weather-station",
   },
   {
@@ -382,7 +381,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/bəˈrɒmɪtər/",
     cefr: "A2",
     img: "/word-images/weather-station/barometer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An instrument that measures air pressure and helps predict weather changes.",
     topic: "weather-station",
   },
   {
@@ -391,7 +390,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˌænɪˈmɒmɪtər/",
     cefr: "B1",
     img: "/word-images/weather-station/anemometer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An instrument that measures the speed of the wind.",
     topic: "weather-station",
   },
   {
@@ -400,7 +399,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/reɪn ɡeɪdʒ/",
     cefr: "B1",
     img: "/word-images/weather-station/rain-gauge.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An instrument that collects and measures rainfall.",
     topic: "weather-station",
   },
   {
@@ -409,7 +408,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɛðər veɪn/",
     cefr: "B1",
     img: "/word-images/weather-station/weather-vane.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An instrument that points in the direction from which the wind is blowing.",
     topic: "weather-station",
   },
   {
@@ -418,7 +417,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/haɪˈɡrɒmɪtər/",
     cefr: "B1",
     img: "/word-images/weather-station/hygrometer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "An instrument that measures the amount of moisture in the air.",
     topic: "weather-station",
   },
   {
@@ -427,7 +426,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɛðər ˈsætəˌlaɪt/",
     cefr: "B2",
     img: "/word-images/weather-station/weather-satellite.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A satellite that observes weather from space.",
     topic: "weather-station",
   },
   {
@@ -436,7 +435,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈreɪdɑːr dɪʃ/",
     cefr: "B1",
     img: "/word-images/weather-station/radar-dish.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A dish-shaped device used to send or receive radar signals.",
     topic: "weather-station",
   },
   {
@@ -445,7 +444,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɛðər bəˈluːn/",
     cefr: "B2",
     img: "/word-images/weather-station/weather-balloon.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A balloon carrying instruments high into the atmosphere to measure weather.",
     topic: "weather-station",
   },
   {
@@ -454,7 +453,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/wɪnd sɒk/",
     cefr: "B1",
     img: "/word-images/weather-station/wind-sock.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A fabric tube that shows the direction and strength of the wind.",
     topic: "weather-station",
   },
   {
@@ -463,7 +462,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/sprɪŋ/",
     cefr: "A2",
     img: "/word-images/weather-station/spring.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The season between winter and summer.",
     topic: "weather-station",
   },
   {
@@ -472,7 +471,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsʌmər/",
     cefr: "A2",
     img: "/word-images/weather-station/summer.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The warmest season of the year.",
     topic: "weather-station",
   },
   {
@@ -481,7 +480,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈɔːtəm/",
     cefr: "A2",
     img: "/word-images/weather-station/autumn.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The season between summer and winter.",
     topic: "weather-station",
   },
   {
@@ -490,7 +489,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɪntər/",
     cefr: "A2",
     img: "/word-images/weather-station/winter.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The coldest season of the year.",
     topic: "weather-station",
   },
   {
@@ -499,7 +498,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈtɛmpərɪtʃər/",
     cefr: "B1",
     img: "/word-images/weather-station/temperature.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "How hot or cold something is.",
     topic: "weather-station",
   },
   {
@@ -508,7 +507,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/hjuːˈmɪdɪti/",
     cefr: "A2",
     img: "/word-images/weather-station/humidity.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The amount of water vapour in the air.",
     topic: "weather-station",
   },
   {
@@ -517,7 +516,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/wɪnd spiːd/",
     cefr: "B1",
     img: "/word-images/weather-station/wind-speed.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "How fast the wind is moving.",
     topic: "weather-station",
   },
   {
@@ -526,7 +525,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/klaʊd ˈkʌvər/",
     cefr: "B1",
     img: "/word-images/weather-station/cloud-cover.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The amount of the sky covered by clouds.",
     topic: "weather-station",
   },
   {
@@ -535,7 +534,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsʌnˌraɪz/",
     cefr: "A2",
     img: "/word-images/weather-station/sunrise.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The time when the sun first appears in the sky.",
     topic: "weather-station",
   },
   {
@@ -544,7 +543,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsʌnˌsɛt/",
     cefr: "A2",
     img: "/word-images/weather-station/sunset.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "The time when the sun disappears below the horizon.",
     topic: "weather-station",
   },
   {
@@ -553,7 +552,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsʌni/",
     cefr: "A2",
     img: "/word-images/weather-station/sunny.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Having plenty of sunshine and few clouds.",
     topic: "weather-station",
   },
   {
@@ -562,7 +561,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈklaʊdi/",
     cefr: "A2",
     img: "/word-images/weather-station/cloudy.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Covered with many clouds and little direct sunshine.",
     topic: "weather-station",
   },
   {
@@ -571,7 +570,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈreɪni/",
     cefr: "A2",
     img: "/word-images/weather-station/rainy.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Having or bringing rain from clouds in the sky.",
     topic: "weather-station",
   },
   {
@@ -580,7 +579,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsnoʊi/",
     cefr: "A2",
     img: "/word-images/weather-station/snowy.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Having or bringing snow from cold clouds in the sky.",
     topic: "weather-station",
   },
   {
@@ -589,7 +588,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈwɪndi/",
     cefr: "A2",
     img: "/word-images/weather-station/windy.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Having a lot of wind moving through the air.",
     topic: "weather-station",
   },
   {
@@ -598,7 +597,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈstɔːrmi/",
     cefr: "A2",
     img: "/word-images/weather-station/stormy.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Having strong wind, rain, thunder, or lightning.",
     topic: "weather-station",
   },
   {
@@ -607,7 +606,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈfɒɡi/",
     cefr: "A2",
     img: "/word-images/weather-station/foggy.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Covered by fog or containing thick fog.",
     topic: "weather-station",
   },
   {
@@ -616,7 +615,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈreɪdɑːr/",
     cefr: "A2",
     img: "/word-images/weather-station/radar.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A system that uses radio waves to detect objects or weather.",
     topic: "weather-station",
   },
   {
@@ -625,7 +624,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/ˈsætəˌlaɪt/",
     cefr: "A2",
     img: "/word-images/weather-station/satellite.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "A machine sent into space to collect information and send it back.",
     topic: "weather-station",
   },
   {
@@ -634,7 +633,7 @@ export const VOCABULARY: VocabularyItem[] = [
     phonetic: "/djuː/",
     cefr: "A2",
     img: "/word-images/weather-station/dew.avif",
-    description: PLACEHOLDER_DESCRIPTION,
+    description: "Small drops of water that form on cool surfaces overnight.",
     topic: "weather-station",
   },
 ];
