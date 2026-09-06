@@ -592,7 +592,7 @@ export function StudyShell({
         </aside>
 
         {/* Main Content Area */}
-        <main
+        <div
           id="study-content"
           className="relative min-w-0 flex-1 overflow-y-auto outline-none"
           tabIndex={-1}
@@ -653,7 +653,7 @@ export function StudyShell({
               {currentArea === "reference" && <ReferenceArea materials={materials} />}
             </>
           )}
-        </main>
+        </div>
       </div>
 
       {/* 3. Mobile Bottom Horizontal Navigation Bar */}

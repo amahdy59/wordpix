@@ -37,6 +37,7 @@ test("study vocabulary grid is accessible and contained", async ({ page }) => {
     timeout: 15_000,
   });
   await expect(page.getByRole("list", { name: /vocabulary/i })).toBeVisible();
+  await expect(page.getByRole("main")).toHaveCount(1);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(
     true
   );
